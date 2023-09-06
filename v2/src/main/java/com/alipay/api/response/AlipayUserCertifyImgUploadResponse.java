@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.certify.img.upload response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 07:59:18
+ * @since 1.0, 2023-08-24 21:57:12
  */
 public class AlipayUserCertifyImgUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6383833494443495364L;
+	private static final long serialVersionUID = 1262758145922936768L;
 
 	/** 
 	 * 证件ID

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 逆向物流信息
  *
  * @author auto create
- * @since 1.0, 2023-02-06 14:15:22
+ * @since 1.0, 2023-09-06 16:36:54
  */
 public class AssetReverseGoodsItem extends AlipayObject {
 
-	private static final long serialVersionUID = 2394223558396565681L;
+	private static final long serialVersionUID = 3722915189515364356L;
 
 	/**
 	 * 备注

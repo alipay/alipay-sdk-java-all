@@ -11,20 +11,20 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PaymentVoucherAlipayBalanceRechargeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1331519433713791914L;
+	private static final long serialVersionUID = 6732297776772595178L;
 
 	/**
 	 * 出资的支付宝登录账号
-限制:
-1、登录账号和用户ID必须且只能二选一
+ 限制:
+ 1、登录账号和用户ID必须且只能二选一
 	 */
 	@ApiField("logon_id")
 	private String logonId;
 
 	/**
 	 * 出资的支付宝用户id
-限制:
-1、登录账号和用户ID必须且只能二选一
+ 限制:
+ 1、登录账号和用户ID必须且只能二选一
 	 */
 	@ApiField("user_id")
 	private String userId;

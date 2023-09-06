@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.electronicid.userbarcode.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 10:14:21
+ * @since 1.0, 2023-08-23 20:53:52
  */
 public class AlipayUserElectronicidUserbarcodeCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7851286292326581774L;
+	private static final long serialVersionUID = 7793919528923286583L;
 
 	/** 
 	 * 用户电子身份证码串

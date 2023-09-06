@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 变更小程序云服务开通状态
  *
  * @author auto create
- * @since 1.0, 2022-12-19 10:38:46
+ * @since 1.0, 2023-08-31 17:35:29
  */
 public class AlipayOpenMiniCloudSupportModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8634294371958815312L;
+	private static final long serialVersionUID = 5788488291484155349L;
 
 	/**
 	 * 要变更云服务状态的小程序应用id

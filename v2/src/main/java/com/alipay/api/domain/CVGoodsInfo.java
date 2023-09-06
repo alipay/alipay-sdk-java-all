@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * CV商品信息
  *
  * @author auto create
- * @since 1.0, 2022-11-30 16:42:35
+ * @since 1.0, 2023-09-04 16:43:05
  */
 public class CVGoodsInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8492926841912822944L;
+	private static final long serialVersionUID = 2779586225851422935L;
 
 	/**
 	 * 对应算法id

@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.sp.image.upload request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 23:06:43
+ * @since 1.0, 2023-08-23 20:20:58
  */
 public class AlipayOpenSpImageUploadRequest implements AlipayUploadRequest<AlipayOpenSpImageUploadResponse> {
 

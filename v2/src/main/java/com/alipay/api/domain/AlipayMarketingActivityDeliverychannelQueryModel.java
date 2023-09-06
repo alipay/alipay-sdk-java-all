@@ -11,18 +11,10 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingActivityDeliverychannelQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2378114876366754112L;
+	private static final long serialVersionUID = 8742735327954787667L;
 
 	/**
-	 * 当前服务商所代理的商户信息.
-
-在查询可投放的渠道信息时，会使用商户信息来进行渠道权限、准入等条件的判断.
-
-如果属于商户自运营，则该对象可以不填写。
-
-如果属于服务商自运营，则对象中的businessType设置为ISV模式.默认使用当前操作人的信息作为商户信息
-
-如果属于服务商代运营模式，则对象中的businessType设置为ISV_FOR_MERCHANT模式
+	 * "当前服务商所代理的商户信息. 在查询可投放的渠道信息时，会使用商户信息来进行渠道权限、准入等条件的判断. 如果属于商户自运营，则该对象可以不填写。 如果属于服务商自运营，则对象中的businessType设置为ISV模式.默认使用当前操作人的信息作为商户信息 如果属于服务商代运营模式，则对象中的businessType设置为ISV_FOR_MERCHANT模式"
 	 */
 	@ApiField("belong_merchant_info")
 	private DeliveryAgencyMerchantInfo belongMerchantInfo;

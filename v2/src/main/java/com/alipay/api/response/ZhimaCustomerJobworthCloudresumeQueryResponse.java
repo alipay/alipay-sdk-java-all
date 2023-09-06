@@ -16,14 +16,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.customer.jobworth.cloudresume.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-07 15:46:56
+ * @since 1.0, 2023-09-06 14:26:42
  */
 public class ZhimaCustomerJobworthCloudresumeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2881839893272727215L;
+	private static final long serialVersionUID = 8815441726549997963L;
 
 	/** 
-	 * 出身日期
+	 * 出生日期
 	 */
 	@ApiField("birthday")
 	private String birthday;
@@ -122,7 +122,7 @@ FINISH_SCHOOL:已毕业
 	private List<CloudResumeWorkExperience> workExperiences;
 
 	/** 
-	 * 工作开始日期
+	 * 工作开始日期（时间戳）
 	 */
 	@ApiField("work_start_date")
 	private Long workStartDate;

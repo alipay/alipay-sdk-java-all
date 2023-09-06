@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zoloz.identification.customer.idcard.certify request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 07:06:16
+ * @since 1.0, 2023-09-04 02:10:04
  */
 public class ZolozIdentificationCustomerIdcardCertifyRequest implements AlipayRequest<ZolozIdentificationCustomerIdcardCertifyResponse> {
 

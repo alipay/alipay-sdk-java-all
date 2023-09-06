@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 大模型处理结果
  *
  * @author auto create
- * @since 1.0, 2023-08-18 11:07:04
+ * @since 1.0, 2023-09-05 20:40:45
  */
 public class NLResultDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6367412554271312969L;
+	private static final long serialVersionUID = 7827646123934929834L;
 
 	/**
 	 * 用户app token

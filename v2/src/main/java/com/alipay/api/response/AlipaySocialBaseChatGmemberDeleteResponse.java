@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.base.chat.gmember.delete response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 07:10:53
+ * @since 1.0, 2023-09-04 00:53:15
  */
 public class AlipaySocialBaseChatGmemberDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5627362438615399331L;
+	private static final long serialVersionUID = 8337999347647962793L;
 
 	/** 
 	 * 删除结果

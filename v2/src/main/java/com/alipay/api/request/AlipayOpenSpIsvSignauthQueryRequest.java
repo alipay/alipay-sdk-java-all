@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.sp.isv.signauth.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 21:44:07
+ * @since 1.0, 2023-09-04 01:28:25
  */
 public class AlipayOpenSpIsvSignauthQueryRequest implements AlipayRequest<AlipayOpenSpIsvSignauthQueryResponse> {
 

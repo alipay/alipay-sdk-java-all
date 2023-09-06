@@ -10,11 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询凭证
  *
  * @author auto create
- * @since 1.0, 2023-07-13 22:20:48
+ * @since 1.0, 2023-08-28 11:19:52
  */
 public class AlipayMarketingCertificateCertificationBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8256974892551429979L;
+	private static final long serialVersionUID = 4361366519453388628L;
+
+	/**
+	 * 凭证ID列表
+	 */
+	@ApiListField("certificate_id_list")
+	@ApiField("string")
+	private List<String> certificateIdList;
 
 	/**
 	 * 三方码列表。取值为支付宝调用三方凭证发放spi时商户返回的三方码 当前字段已废弃(统一平台码与三方码字段，后续使用凭证id)
@@ -41,6 +48,13 @@ public class AlipayMarketingCertificateCertificationBatchqueryModel extends Alip
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public List<String> getCertificateIdList() {
+		return this.certificateIdList;
+	}
+	public void setCertificateIdList(List<String> certificateIdList) {
+		this.certificateIdList = certificateIdList;
+	}
 
 	public List<String> getCodeList() {
 		return this.codeList;

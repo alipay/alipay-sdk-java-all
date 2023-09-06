@@ -11,10 +11,10 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PromoApplyItemDetailInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6568427447324747825L;
+	private static final long serialVersionUID = 3772127575925569421L;
 
 	/**
-	 * 优惠申领金额或者数量，金额时单位为分
+	 * 优惠申领金额或者数量，金额时单位：分。需要根据budget_type字段区分金额和数量
 	 */
 	@ApiField("apply_amount")
 	private String applyAmount;
@@ -26,7 +26,7 @@ public class PromoApplyItemDetailInfoVO extends AlipayObject {
 	private String budgetType;
 
 	/**
-	 * 会员等级
+	 * 支付宝会员等级
 	 */
 	@ApiField("member_level")
 	private String memberLevel;

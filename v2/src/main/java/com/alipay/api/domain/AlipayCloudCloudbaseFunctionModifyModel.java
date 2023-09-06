@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改云函数
  *
  * @author auto create
- * @since 1.0, 2023-08-08 22:44:20
+ * @since 1.0, 2023-08-31 11:53:29
  */
 public class AlipayCloudCloudbaseFunctionModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5425477769219292541L;
+	private static final long serialVersionUID = 6862858255894259741L;
 
 	/**
 	 * 小程序id
@@ -39,7 +39,7 @@ public class AlipayCloudCloudbaseFunctionModifyModel extends AlipayObject {
 
 	/**
 	 * 运行环境
- - nodejs12
+ - nodejs16
  - nodejs18
  - python39
  - php74

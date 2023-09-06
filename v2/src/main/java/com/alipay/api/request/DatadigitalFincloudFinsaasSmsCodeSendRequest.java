@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: datadigital.fincloud.finsaas.sms.code.send request
  * 
  * @author auto create
- * @since 1.0, 2023-06-26 17:47:00
+ * @since 1.0, 2023-09-03 23:51:43
  */
 public class DatadigitalFincloudFinsaasSmsCodeSendRequest implements AlipayRequest<DatadigitalFincloudFinsaasSmsCodeSendResponse> {
 

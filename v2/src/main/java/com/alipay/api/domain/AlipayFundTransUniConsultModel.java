@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundTransUniConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2233423158364741166L;
+	private static final long serialVersionUID = 8179152624888666521L;
 
 	/**
 	 * 描述特定的业务场景，可传的参数如下： DIRECT_TRANSFER：单笔无密转账到支付宝，其他场景以对应的产品接入指南文档为准。

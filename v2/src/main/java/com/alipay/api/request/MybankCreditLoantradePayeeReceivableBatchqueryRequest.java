@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.loantrade.payee.receivable.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 10:01:53
+ * @since 1.0, 2023-08-24 22:11:46
  */
 public class MybankCreditLoantradePayeeReceivableBatchqueryRequest implements AlipayRequest<MybankCreditLoantradePayeeReceivableBatchqueryResponse> {
 

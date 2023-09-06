@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 自建推广页列表批量查询
  *
  * @author auto create
- * @since 1.0, 2022-10-25 15:33:51
+ * @since 1.0, 2023-09-05 12:05:36
  */
 public class AlipayDataDataserviceAdPromotepageBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7135264399872489411L;
+	private static final long serialVersionUID = 8144956799871581876L;
 
 	/**
 	 * 代理商访问灯火平台的token

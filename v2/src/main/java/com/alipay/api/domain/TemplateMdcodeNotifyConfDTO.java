@@ -11,11 +11,13 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TemplateMdcodeNotifyConfDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5328727819631873864L;
+	private static final long serialVersionUID = 2758896918617534524L;
 
 	/**
 	 * 扩展参数信息；
+
 格式为key-value键值对；
+
 支付宝POST请求指定url时，除BizCardNo等固定参数外，将带上ext_params中配置的所有key-value参数。
 	 */
 	@ApiField("ext_params")
@@ -23,7 +25,9 @@ public class TemplateMdcodeNotifyConfDTO extends AlipayObject {
 
 	/**
 	 * 商户接收发码通知的地址链接；
+
 只支持https地址；
+
 用户打开会员卡时，支付宝提交POST请求此url地址，通知商户发码。
 	 */
 	@ApiField("url")

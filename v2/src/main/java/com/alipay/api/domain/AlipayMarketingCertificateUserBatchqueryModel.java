@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 条件查询用户凭证
  *
  * @author auto create
- * @since 1.0, 2023-08-18 14:58:39
+ * @since 1.0, 2023-08-28 11:19:17
  */
 public class AlipayMarketingCertificateUserBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8756956777829278217L;
+	private static final long serialVersionUID = 6443756316366652975L;
 
 	/**
 	 * 凭证归属的商户id。该参数为空时取当前请求商户id
 	 */
 	@ApiField("belong_merchant_id")
 	private String belongMerchantId;
+
+	/**
+	 * 凭证状态筛选
+	 */
+	@ApiField("certificate_status")
+	private String certificateStatus;
 
 	/**
 	 * 支付宝用户openId
@@ -54,6 +60,13 @@ public class AlipayMarketingCertificateUserBatchqueryModel extends AlipayObject 
 	}
 	public void setBelongMerchantId(String belongMerchantId) {
 		this.belongMerchantId = belongMerchantId;
+	}
+
+	public String getCertificateStatus() {
+		return this.certificateStatus;
+	}
+	public void setCertificateStatus(String certificateStatus) {
+		this.certificateStatus = certificateStatus;
 	}
 
 	public String getOpenId() {

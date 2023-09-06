@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.morpho.app.rollback response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 07:50:37
+ * @since 1.0, 2023-08-24 21:47:38
  */
 public class AlipayOpenMiniMorphoAppRollbackResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7473176567811761485L;
+	private static final long serialVersionUID = 6139313777124855866L;
 
 	
 

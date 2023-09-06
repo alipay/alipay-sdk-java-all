@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 本地商品类目信息
  *
  * @author auto create
- * @since 1.0, 2023-05-22 17:35:43
+ * @since 1.0, 2023-08-31 19:33:47
  */
 public class LocalAppxCategoryVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4335419817993367575L;
+	private static final long serialVersionUID = 5669132445719226232L;
 
 	/**
 	 * 类目编号
@@ -33,6 +33,12 @@ public class LocalAppxCategoryVO extends AlipayObject {
 	 */
 	@ApiField("cat_name")
 	private String catName;
+
+	/**
+	 * 仅叶子节点有类目状态
+	 */
+	@ApiField("cat_status")
+	private String catStatus;
 
 	/**
 	 * 父类目编号
@@ -66,6 +72,13 @@ public class LocalAppxCategoryVO extends AlipayObject {
 	}
 	public void setCatName(String catName) {
 		this.catName = catName;
+	}
+
+	public String getCatStatus() {
+		return this.catStatus;
+	}
+	public void setCatStatus(String catStatus) {
+		this.catStatus = catStatus;
 	}
 
 	public String getfCatId() {

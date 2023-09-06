@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.info.share response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 21:51:57
+ * @since 1.0, 2023-09-03 23:21:47
  */
 public class AlipayUserInfoShareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2324868833418876755L;
+	private static final long serialVersionUID = 4169371565322713775L;
 
 	/** 
 	 * 详细地址。
@@ -199,10 +199,15 @@ public class AlipayUserInfoShareResponse extends AlipayResponse {
 
 	/** 
 	 * 公司类型，包括（用户类型是公司类型时才有此字段）：
+
 CO(公司)
+
 INST(事业单位),
+
 COMM(社会团体),
+
 NGO(民办非企业组织),
+
 STATEORGAN(党政国家机关)
 	 */
 	@ApiField("firm_type")
@@ -260,6 +265,7 @@ M：男性。
 
 	/** 
 	 * 余额账户是否被冻结。
+
 T--被冻结；F--未冻结
 	 */
 	@ApiField("is_balance_frozen")

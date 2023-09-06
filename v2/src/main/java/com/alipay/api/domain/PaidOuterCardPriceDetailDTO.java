@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PaidOuterCardPriceDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8757795976159887181L;
+	private static final long serialVersionUID = 4249263794338266992L;
 
 	/**
 	 * 方案描述
@@ -26,8 +26,7 @@ public class PaidOuterCardPriceDetailDTO extends AlipayObject {
 	private String price;
 
 	/**
-	 * 售卖金额类型。目前支持
-FIXED：固定金额
+	 * 售卖金额类型
 	 */
 	@ApiField("price_type")
 	private String priceType;

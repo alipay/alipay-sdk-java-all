@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.customer.zmcard.score.certify response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-02 10:29:06
+ * @since 1.0, 2023-08-24 21:21:44
  */
 public class ZhimaCustomerZmcardScoreCertifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1671974539186284585L;
+	private static final long serialVersionUID = 1893956869516294774L;
 
 	/** 
 	 * 1.用户未开通芝麻返回ZM_ACCOUNT_NOT_EXISTED；2.用户未授权返回ZM_AUTH_NOT_EXIST；3.商户未开通芝麻证服务场景返回MERCHANT_ILLEGAL_AUTH_LEVEL；4. 完成准入判断返回SUCCESS；5. 查询出现异常返回 SYSTEM_FAILURE。

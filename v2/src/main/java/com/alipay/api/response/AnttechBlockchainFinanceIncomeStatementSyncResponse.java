@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.finance.income.statement.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-28 19:31:55
+ * @since 1.0, 2023-08-24 22:06:42
  */
 public class AnttechBlockchainFinanceIncomeStatementSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1411753287673143995L;
+	private static final long serialVersionUID = 2592139876915884935L;
 
 	/** 
 	 * 结算单同步流水号，同步成功后返回

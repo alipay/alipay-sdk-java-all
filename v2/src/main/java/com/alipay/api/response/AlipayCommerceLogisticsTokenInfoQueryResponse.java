@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.logistics.token.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 19:51:57
+ * @since 1.0, 2023-09-03 23:06:45
  */
 public class AlipayCommerceLogisticsTokenInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1719718999754914131L;
+	private static final long serialVersionUID = 1823299652227794888L;
 
 	/** 
 	 * 收件信息

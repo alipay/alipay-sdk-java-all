@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.royalty.rate.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 21:37:46
+ * @since 1.0, 2023-08-24 21:17:40
  */
 public class AlipayTradeRoyaltyRateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8139275297457472323L;
+	private static final long serialVersionUID = 4697144844453616222L;
 
 	/** 
 	 * 最大分账比例，百分比整数，取值范围0～100

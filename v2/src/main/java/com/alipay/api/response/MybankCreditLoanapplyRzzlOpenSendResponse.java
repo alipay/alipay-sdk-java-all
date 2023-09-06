@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.loanapply.rzzl.open.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 19:34:17
+ * @since 1.0, 2023-09-03 22:58:04
  */
 public class MybankCreditLoanapplyRzzlOpenSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3448365429288218488L;
+	private static final long serialVersionUID = 1119434815625446769L;
 
 	
 

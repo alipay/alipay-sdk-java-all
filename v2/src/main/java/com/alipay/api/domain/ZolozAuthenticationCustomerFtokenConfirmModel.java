@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ZolozAuthenticationCustomerFtokenConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5479517297638194984L;
+	private static final long serialVersionUID = 1159355819893372136L;
 
 	/**
 	 * ftoken信息

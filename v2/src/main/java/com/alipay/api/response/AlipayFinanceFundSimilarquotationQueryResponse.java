@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.finance.fund.similarquotation.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 21:34:33
+ * @since 1.0, 2023-08-24 22:18:17
  */
 public class AlipayFinanceFundSimilarquotationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6615657647553767788L;
+	private static final long serialVersionUID = 7143759271619587863L;
 
 	/** 
 	 * 近半年的参与同类收益率排名的基金数量

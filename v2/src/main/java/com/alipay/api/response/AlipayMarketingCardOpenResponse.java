@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.card.open response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 05:51:42
+ * @since 1.0, 2023-09-05 14:56:42
  */
 public class AlipayMarketingCardOpenResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8575186469287466222L;
+	private static final long serialVersionUID = 6293128138363867847L;
 
 	/** 
 	 * 商户卡信息（包括支付宝分配的业务卡号）
@@ -23,10 +23,15 @@ public class AlipayMarketingCardOpenResponse extends AlipayResponse {
 
 	/** 
 	 * 实际记录的领卡渠道（可能跟商户传入值不同）；
+
 可直接标识领卡渠道，也可配合open_card_channel_id标识领卡渠道类型：
+
 例如：
+
 线下门店领取:20161534000000000008863（直接标识领卡渠道，门店shopId）
+
 线下扫二维码领取:QR（标识领卡类型）;
+
 线下活动领取:20170522000000000003609（直接标识领卡渠道，商户活动ID）
 	 */
 	@ApiField("open_card_channel")

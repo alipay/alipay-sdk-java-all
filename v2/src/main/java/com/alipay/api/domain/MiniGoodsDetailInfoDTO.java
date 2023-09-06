@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MiniGoodsDetailInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5565727474353979585L;
+	private static final long serialVersionUID = 8151945392188597317L;
 
 	/**
 	 * 商品描述信息
@@ -32,8 +32,7 @@ public class MiniGoodsDetailInfoDTO extends AlipayObject {
 	private String goodsCategory;
 
 	/**
-	 * 商品的编号，该参数传入支付券上绑定商品goods_id,
-倘若无支付券需要消费，该字段传入商品最小粒度的商品ID（如：若商品有sku粒度，则传商户sku粒度的ID）
+	 * 商户侧商品的编号，应传入商品最小粒度的商品ID（例如商品有sku粒度，则传商户sku粒度的ID）。如果需要关联使用支付券，需要和支付券上绑定商品goods_id相同
 	 */
 	@ApiField("goods_id")
 	private String goodsId;
@@ -45,7 +44,8 @@ public class MiniGoodsDetailInfoDTO extends AlipayObject {
 	private String goodsName;
 
 	/**
-	 * 商品未上报服务库时，需传入 上传商品文件 获取的 material_id。如果该商品已经上报服务库，可不传
+	 * 商品未上报商品库时，需传入 上传商品文件接口alipay.merchant.item.file.upload
+ 获取的 material_id。如果该商品已经上报商品库，可不传
 	 */
 	@ApiField("image_material_id")
 	private String imageMaterialId;
@@ -57,13 +57,13 @@ public class MiniGoodsDetailInfoDTO extends AlipayObject {
 	private String itemCnt;
 
 	/**
-	 * 提报商品库的商品，若有外部商品sku_id则必传
+	 * 商户商品ID
 	 */
 	@ApiField("out_item_id")
 	private String outItemId;
 
 	/**
-	 * 提报商品库的商品，sku维度的商品该字段必传
+	 * 商户商品sku_id，提报商品库的商品，该字段必传
 	 */
 	@ApiField("out_sku_id")
 	private String outSkuId;
@@ -81,13 +81,13 @@ public class MiniGoodsDetailInfoDTO extends AlipayObject {
 	private RentInfoDTO rentInfo;
 
 	/**
-	 * 商品单价，单位：元
+	 * 商品单价，单位：元,精确到小数点后两位
 	 */
 	@ApiField("sale_price")
 	private String salePrice;
 
 	/**
-	 * 商品真实单价，单位：元
+	 * 商品真实单价，单位：元,精确到小数点后两位
 	 */
 	@ApiField("sale_real_price")
 	private String saleRealPrice;

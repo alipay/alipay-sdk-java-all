@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.oceanbase.passaccount.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 07:26:56
+ * @since 1.0, 2023-08-23 20:06:45
  */
 public class AnttechOceanbasePassaccountBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2268472536894689644L;
+	private static final long serialVersionUID = 4741369442418382854L;
 
 	/** 
 	 * 通行证列表

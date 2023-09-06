@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.fnc.gfacceptance.syncbill.cancel request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 06:08:53
+ * @since 1.0, 2023-08-24 22:49:56
  */
 public class AlipayBossFncGfacceptanceSyncbillCancelRequest implements AlipayRequest<AlipayBossFncGfacceptanceSyncbillCancelResponse> {
 

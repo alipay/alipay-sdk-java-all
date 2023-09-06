@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 教育经历
  *
  * @author auto create
- * @since 1.0, 2023-08-04 16:57:54
+ * @since 1.0, 2023-09-05 17:27:16
  */
 public class CloudResumeEducationExperience extends AlipayObject {
 
-	private static final long serialVersionUID = 1186523367149853817L;
+	private static final long serialVersionUID = 6883743399431226942L;
 
 	/**
 	 * 学历

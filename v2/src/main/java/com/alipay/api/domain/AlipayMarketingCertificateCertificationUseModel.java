@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 同步凭证核销状态
  *
  * @author auto create
- * @since 1.0, 2023-07-05 22:59:20
+ * @since 1.0, 2023-08-31 20:38:17
  */
 public class AlipayMarketingCertificateCertificationUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2768299666182996476L;
+	private static final long serialVersionUID = 3229854482793772144L;
 
 	/**
 	 * 核销时间。格式为：yyyy-MM-dd HH:mm:ss
@@ -54,6 +54,12 @@ public class AlipayMarketingCertificateCertificationUseModel extends AlipayObjec
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
+
+	/**
+	 * 商家侧核销对应的交易订单id
+	 */
+	@ApiField("out_order_id")
+	private String outOrderId;
 
 	/**
 	 * 核销门店id
@@ -107,6 +113,13 @@ public class AlipayMarketingCertificateCertificationUseModel extends AlipayObjec
 	}
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
+	}
+
+	public String getOutOrderId() {
+		return this.outOrderId;
+	}
+	public void setOutOrderId(String outOrderId) {
+		this.outOrderId = outOrderId;
 	}
 
 	public String getShopId() {

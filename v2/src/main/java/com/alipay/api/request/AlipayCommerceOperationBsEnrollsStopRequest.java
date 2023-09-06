@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.bs.enrolls.stop request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 22:26:49
+ * @since 1.0, 2023-08-24 22:11:44
  */
 public class AlipayCommerceOperationBsEnrollsStopRequest implements AlipayRequest<AlipayCommerceOperationBsEnrollsStopResponse> {
 

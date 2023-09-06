@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PaidOuterCardCycleSellConfDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5631914619169165964L;
+	private static final long serialVersionUID = 1218965851366454257L;
 
 	/**
 	 * 用户开通连续购买地址
@@ -30,7 +30,7 @@ public class PaidOuterCardCycleSellConfDTO extends AlipayObject {
 	private List<String> cycleType;
 
 	/**
-	 * 是否支持用户连续购买。true代表支持，false代表不支持。
+	 * 是否支持用户连续购买
 	 */
 	@ApiField("support_cycle_sell")
 	private Boolean supportCycleSell;

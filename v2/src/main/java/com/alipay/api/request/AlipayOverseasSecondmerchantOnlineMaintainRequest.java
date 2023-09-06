@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.overseas.secondmerchant.online.maintain request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 06:52:03
+ * @since 1.0, 2023-08-23 20:50:57
  */
 public class AlipayOverseasSecondmerchantOnlineMaintainRequest implements AlipayRequest<AlipayOverseasSecondmerchantOnlineMaintainResponse> {
 

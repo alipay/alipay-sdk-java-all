@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.invite.rta.consult request
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 02:14:20
+ * @since 1.0, 2023-08-31 17:36:43
  */
 public class AlipayUserInviteRtaConsultRequest implements AlipayRequest<AlipayUserInviteRtaConsultResponse> {
 

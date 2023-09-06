@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.indirect.filetask.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 07:07:00
+ * @since 1.0, 2023-09-04 00:46:49
  */
 public class AlipayMerchantIndirectFiletaskConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2325455395396944846L;
+	private static final long serialVersionUID = 1173742518777352969L;
 
 	/** 
 	 * 下载文件时配合返回的file_url使用，用于用户请求鉴权。请求file_url时，需要在请求header中添加 x-mass-token=${auth_token}

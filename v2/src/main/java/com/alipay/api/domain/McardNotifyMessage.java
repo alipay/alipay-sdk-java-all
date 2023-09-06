@@ -11,12 +11,15 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class McardNotifyMessage extends AlipayObject {
 
-	private static final long serialVersionUID = 6456962436622998294L;
+	private static final long serialVersionUID = 3691415653137744334L;
 
 	/**
 	 * 用户提醒信息，按如下格式拼装，需要ISV提供change_reason。
+
 积分变动模板：{change_reason}，您的积分有变动
+
 余额变动模板：{change_reason}，您的余额有变动
+
 等级变更无需提供原因。
 	 */
 	@ApiField("change_reason")

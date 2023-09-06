@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.family.archive.initialize request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 20:40:20
+ * @since 1.0, 2023-09-04 00:25:16
  */
 public class AlipayUserFamilyArchiveInitializeRequest implements AlipayRequest<AlipayUserFamilyArchiveInitializeResponse> {
 

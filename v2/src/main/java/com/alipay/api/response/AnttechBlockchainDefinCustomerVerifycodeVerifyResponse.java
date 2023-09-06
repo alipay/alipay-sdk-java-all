@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.defin.customer.verifycode.verify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 20:40:03
+ * @since 1.0, 2023-08-23 20:00:43
  */
 public class AnttechBlockchainDefinCustomerVerifycodeVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4684566612448117562L;
+	private static final long serialVersionUID = 6429927631755676223L;
 
 	
 

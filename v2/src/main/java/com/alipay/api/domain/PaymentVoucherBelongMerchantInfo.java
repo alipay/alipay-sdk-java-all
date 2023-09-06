@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PaymentVoucherBelongMerchantInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6697638843688252968L;
+	private static final long serialVersionUID = 2282236229886417887L;
 
 	/**
 	 * 商户支付宝id，默认品牌名和品牌logo将从该商户信息中获取
@@ -20,7 +20,7 @@ public class PaymentVoucherBelongMerchantInfo extends AlipayObject {
 	private String merchantId;
 
 	/**
-	 * 商户id类型。
+	 * 商户支付宝id类型。
 	 */
 	@ApiField("merchant_id_type")
 	private String merchantIdType;

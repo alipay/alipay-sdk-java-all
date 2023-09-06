@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.renthouse.bill.order.download request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 06:21:57
+ * @since 1.0, 2023-09-04 00:35:19
  */
 public class AlipayEcoRenthouseBillOrderDownloadRequest implements AlipayRequest<AlipayEcoRenthouseBillOrderDownloadResponse> {
 

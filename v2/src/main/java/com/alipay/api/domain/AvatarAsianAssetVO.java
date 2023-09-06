@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 亚运一站通资产vo
  *
  * @author auto create
- * @since 1.0, 2023-01-04 10:58:07
+ * @since 1.0, 2023-08-28 20:43:56
  */
 public class AvatarAsianAssetVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3884157261987583735L;
+	private static final long serialVersionUID = 2884769318248863495L;
 
 	/**
 	 * 额外参数

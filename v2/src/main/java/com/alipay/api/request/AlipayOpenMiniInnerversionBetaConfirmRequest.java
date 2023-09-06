@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.innerversion.beta.confirm request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 08:27:24
+ * @since 1.0, 2023-08-23 19:43:57
  */
 public class AlipayOpenMiniInnerversionBetaConfirmRequest implements AlipayRequest<AlipayOpenMiniInnerversionBetaConfirmResponse> {
 

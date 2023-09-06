@@ -8,15 +8,16 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.recycle.security.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 08:11:50
+ * @since 1.0, 2023-09-04 01:16:43
  */
 public class AlipayCommerceRecycleSecurityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4485776637786299773L;
+	private static final long serialVersionUID = 5826538237756713327L;
 
 	/** 
 	 * 订单风险评估等级，
 LOW_RISK：风险较低
+MEDIUM_RISK：风险中等
 HIGH_RISK：风险较高
 	 */
 	@ApiField("risk_level")

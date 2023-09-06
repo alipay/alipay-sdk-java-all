@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.prod.antlaw.manualfile.upload response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 05:33:58
+ * @since 1.0, 2023-09-04 00:21:10
  */
 public class AlipayBossProdAntlawManualfileUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8765158912572916728L;
+	private static final long serialVersionUID = 3651727273776826586L;
 
 	/** 
 	 * 业务编号

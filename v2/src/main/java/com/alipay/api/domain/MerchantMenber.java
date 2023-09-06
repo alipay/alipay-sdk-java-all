@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MerchantMenber extends AlipayObject {
 
-	private static final long serialVersionUID = 4365387939365834884L;
+	private static final long serialVersionUID = 4286737278461777559L;
 
 	/**
 	 * 生日 yyyy-MM-dd
@@ -26,7 +26,7 @@ public class MerchantMenber extends AlipayObject {
 	private String cell;
 
 	/**
-	 * 性别（男：MALE；女：FEMALE）
+	 * 性别
 	 */
 	@ApiField("gende")
 	private String gende;

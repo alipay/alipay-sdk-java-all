@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.public.contact.follow.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 19:17:54
+ * @since 1.0, 2023-08-24 22:58:34
  */
 public class AlipayOpenPublicContactFollowBatchqueryRequest implements AlipayRequest<AlipayOpenPublicContactFollowBatchqueryResponse> {
 

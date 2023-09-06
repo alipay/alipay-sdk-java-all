@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.printer.status.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 07:58:15
+ * @since 1.0, 2023-09-04 02:05:07
  */
 public class AlipayEcoPrinterStatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4131692115673466533L;
+	private static final long serialVersionUID = 1737958694823461789L;
 
 	/** 
 	 * 0离线 1在线 2缺纸

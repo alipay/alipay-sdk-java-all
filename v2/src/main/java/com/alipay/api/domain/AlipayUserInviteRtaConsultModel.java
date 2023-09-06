@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部流量投放前的rta查询
  *
  * @author auto create
- * @since 1.0, 2021-07-26 18:02:26
+ * @since 1.0, 2023-08-31 17:32:18
  */
 public class AlipayUserInviteRtaConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4592952362974544562L;
+	private static final long serialVersionUID = 4854443149757471165L;
 
 	/**
 	 * 加密类型，空表示不加密
 	 */
 	@ApiField("encrypt_type")
 	private String encryptType;
+
+	/**
+	 * userId的映射字段，OpenId改造
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 设备标识信息，包括IMEI，IDFA，OAID。
@@ -27,7 +33,7 @@ public class AlipayUserInviteRtaConsultModel extends AlipayObject {
 	private String principal;
 
 	/**
-	 * 查询的设备类型（IMEI、IDFA、OAID）
+	 * 查询的设备类型（IMEI、IDFA、OAID、USERID、OPENID）
 	 */
 	@ApiField("principal_type")
 	private String principalType;
@@ -43,6 +49,13 @@ public class AlipayUserInviteRtaConsultModel extends AlipayObject {
 	}
 	public void setEncryptType(String encryptType) {
 		this.encryptType = encryptType;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getPrincipal() {

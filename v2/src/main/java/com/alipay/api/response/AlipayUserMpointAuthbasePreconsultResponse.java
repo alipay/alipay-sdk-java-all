@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.mpoint.authbase.preconsult response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-20 13:50:56
+ * @since 1.0, 2023-08-24 22:44:27
  */
 public class AlipayUserMpointAuthbasePreconsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6899211161396361614L;
+	private static final long serialVersionUID = 8512769239674422216L;
 
 	
 

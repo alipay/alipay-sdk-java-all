@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.travel.promotion.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 20:37:00
+ * @since 1.0, 2023-08-24 22:56:48
  */
 public class AlipayOverseasTravelPromotionGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6685444792931697755L;
+	private static final long serialVersionUID = 2447873389715171576L;
 
 	/** 
 	 * 优惠信息列表

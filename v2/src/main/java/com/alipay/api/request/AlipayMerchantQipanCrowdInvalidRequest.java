@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.qipan.crowd.invalid request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 04:16:55
+ * @since 1.0, 2023-09-04 00:21:48
  */
 public class AlipayMerchantQipanCrowdInvalidRequest implements AlipayRequest<AlipayMerchantQipanCrowdInvalidResponse> {
 

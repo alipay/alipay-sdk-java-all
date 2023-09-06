@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.expand.asset.qrcode.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 23:05:22
+ * @since 1.0, 2023-09-04 02:05:18
  */
 public class AntMerchantExpandAssetQrcodeQueryRequest implements AlipayRequest<AntMerchantExpandAssetQrcodeQueryResponse> {
 

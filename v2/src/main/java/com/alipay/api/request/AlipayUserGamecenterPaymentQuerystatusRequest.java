@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.gamecenter.payment.querystatus request
  * 
  * @author auto create
- * @since 1.0, 2023-06-07 17:16:49
+ * @since 1.0, 2023-08-24 22:01:44
  */
 public class AlipayUserGamecenterPaymentQuerystatusRequest implements AlipayRequest<AlipayUserGamecenterPaymentQuerystatusResponse> {
 

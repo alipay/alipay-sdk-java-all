@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.cityservice.pushmsg.permit.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 04:25:05
+ * @since 1.0, 2023-09-04 02:15:49
  */
 public class AlipayEcoCityservicePushmsgPermitQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5341795717295821491L;
+	private static final long serialVersionUID = 5859454942869188849L;
 
 	/** 
 	 * 根据查询条件返回匹配用户列表,包含用户id以及消息推送授权状态

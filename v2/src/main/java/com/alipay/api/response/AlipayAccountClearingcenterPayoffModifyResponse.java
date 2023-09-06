@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.account.clearingcenter.payoff.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 19:37:08
+ * @since 1.0, 2023-08-24 21:10:41
  */
 public class AlipayAccountClearingcenterPayoffModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1395292555751957479L;
+	private static final long serialVersionUID = 7219631452147753576L;
 
 	/** 
 	 * 返回结果

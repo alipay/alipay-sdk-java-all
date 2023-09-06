@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.store.miniapp.bind request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 06:04:58
+ * @since 1.0, 2023-08-23 21:11:10
  */
 public class AlipayMerchantStoreMiniappBindRequest implements AlipayRequest<AlipayMerchantStoreMiniappBindResponse> {
 

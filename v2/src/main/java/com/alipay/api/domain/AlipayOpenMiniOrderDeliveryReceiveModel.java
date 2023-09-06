@@ -11,28 +11,28 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniOrderDeliveryReceiveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2655856222695943517L;
+	private static final long serialVersionUID = 2311682874415681268L;
 
 	/**
-	 * 用户openId
+	 * 买家open_id；open_id和user_id二选一
 	 */
 	@ApiField("open_id")
 	private String openId;
 
 	/**
-	 * 订单ID
+	 * 交易组件订单号；order_id和out_order_id二选一
 	 */
 	@ApiField("order_id")
 	private String orderId;
 
 	/**
-	 * 由商家自定义，64个字符以内，仅支持字母、数字、下划线且需保证在商户端不重复。order_id、out_order_id，二选一
+	 * 商户订单号，创建订单请求由商户传入；order_id和out_order_id二选一
 	 */
 	@ApiField("out_order_id")
 	private String outOrderId;
 
 	/**
-	 * 用户UID
+	 * 买家支付宝用户ID；open_id和user_id二选一
 	 */
 	@ApiField("user_id")
 	private String userId;

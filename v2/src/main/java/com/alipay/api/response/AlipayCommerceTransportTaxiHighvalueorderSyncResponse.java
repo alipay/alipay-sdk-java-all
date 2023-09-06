@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.taxi.highvalueorder.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 09:47:02
+ * @since 1.0, 2023-08-24 22:01:48
  */
 public class AlipayCommerceTransportTaxiHighvalueorderSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7328968816316626455L;
+	private static final long serialVersionUID = 2645962759861343233L;
 
 	/** 
 	 * 状态码

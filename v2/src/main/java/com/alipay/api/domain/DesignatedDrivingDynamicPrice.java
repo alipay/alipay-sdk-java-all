@@ -11,10 +11,10 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DesignatedDrivingDynamicPrice extends AlipayObject {
 
-	private static final long serialVersionUID = 7781571624454167345L;
+	private static final long serialVersionUID = 7187352791989736898L;
 
 	/**
-	 * 调价金额
+	 * 调价金额，元
 	 */
 	@ApiField("dynamic_fee")
 	private String dynamicFee;
@@ -38,7 +38,7 @@ public class DesignatedDrivingDynamicPrice extends AlipayObject {
 	private String dynamicTitle;
 
 	/**
-	 * 加价的最大值，部分isv给的数据是加价最大值，部分isv给的是加价后的总金额
+	 * 加价的最大值，部分isv给的数据是加价最大值，部分isv给的是加价后的总金额，单位元
 	 */
 	@ApiField("fee_max")
 	private String feeMax;

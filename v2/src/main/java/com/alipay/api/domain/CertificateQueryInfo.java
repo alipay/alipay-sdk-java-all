@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 凭证信息
  *
  * @author auto create
- * @since 1.0, 2023-08-18 18:12:07
+ * @since 1.0, 2023-08-24 17:30:29
  */
 public class CertificateQueryInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3641122853918162413L;
+	private static final long serialVersionUID = 4718797817231879367L;
 
 	/**
 	 * 凭证实例的金额信息，在异常场景下可能为空，需要判断是否有值才可进行使用。
@@ -56,6 +56,12 @@ public class CertificateQueryInfo extends AlipayObject {
 	 */
 	@ApiField("status")
 	private String status;
+
+	/**
+	 * 核销规则
+	 */
+	@ApiField("use_rule_info")
+	private CertificateUseRuleInfo useRuleInfo;
 
 	/**
 	 * 开始生效时间
@@ -116,6 +122,13 @@ public class CertificateQueryInfo extends AlipayObject {
 	}
 	public void setStatus(String status) {
 		this.status = status;
+	}
+
+	public CertificateUseRuleInfo getUseRuleInfo() {
+		return this.useRuleInfo;
+	}
+	public void setUseRuleInfo(CertificateUseRuleInfo useRuleInfo) {
+		this.useRuleInfo = useRuleInfo;
 	}
 
 	public Date getValidBeginTime() {

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.qipan.crowdwithtag.query request
  * 
  * @author auto create
- * @since 1.0, 2023-07-11 22:36:53
+ * @since 1.0, 2023-09-04 00:11:42
  */
 public class AlipayMarketingQipanCrowdwithtagQueryRequest implements AlipayRequest<AlipayMarketingQipanCrowdwithtagQueryResponse> {
 

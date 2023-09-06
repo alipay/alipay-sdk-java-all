@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 对象存储获取文件上传地址
  *
  * @author auto create
- * @since 1.0, 2023-07-27 15:13:16
+ * @since 1.0, 2023-09-01 19:09:51
  */
 public class AlipayCloudCloudrunObjectstorageUploadurlGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8729335882949287963L;
+	private static final long serialVersionUID = 5884737385793333475L;
 
 	/**
 	 * 内部使用，uiam角色扮演token
@@ -30,6 +30,15 @@ public class AlipayCloudCloudrunObjectstorageUploadurlGetModel extends AlipayObj
 	 */
 	@ApiField("path")
 	private String path;
+
+	/**
+	 * 上传文件要使用的方法，支持PUT/POST。
+默认PUT，可选值：POST/PUT
+● POST：通过POST Form的方式上传
+● PUT：通过PUT方法上传
+	 */
+	@ApiField("upload_method")
+	private String uploadMethod;
 
 	public String getAssumeToken() {
 		return this.assumeToken;
@@ -50,6 +59,13 @@ public class AlipayCloudCloudrunObjectstorageUploadurlGetModel extends AlipayObj
 	}
 	public void setPath(String path) {
 		this.path = path;
+	}
+
+	public String getUploadMethod() {
+		return this.uploadMethod;
+	}
+	public void setUploadMethod(String uploadMethod) {
+		this.uploadMethod = uploadMethod;
 	}
 
 }

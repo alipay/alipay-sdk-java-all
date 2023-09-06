@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.bkcsplatform.pushwindowresult.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-13 14:36:56
+ * @since 1.0, 2023-09-03 23:31:42
  */
 public class AlipayIserviceBkcsplatformPushwindowresultQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2886796943167373986L;
+	private static final long serialVersionUID = 7163286499646641623L;
 
 	/** 
 	 * 用户输入的验证码

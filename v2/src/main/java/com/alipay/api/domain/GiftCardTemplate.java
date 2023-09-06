@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 礼品卡模版
  *
  * @author auto create
- * @since 1.0, 2022-10-14 16:13:15
+ * @since 1.0, 2023-08-24 12:26:56
  */
 public class GiftCardTemplate extends AlipayObject {
 
-	private static final long serialVersionUID = 6858617391451661475L;
+	private static final long serialVersionUID = 5568323895396497228L;
 
 	/**
 	 * 开卡模版扩展参数

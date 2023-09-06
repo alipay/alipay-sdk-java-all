@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.mindv.troublefreerule.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 08:55:30
+ * @since 1.0, 2023-09-03 23:09:36
  */
 public class AlipayIserviceMindvTroublefreeruleConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2239533347529232546L;
+	private static final long serialVersionUID = 4398996794894677756L;
 
 	/** 
 	 * 返回 true 表示未被防打扰过滤，返回false表示已被过滤

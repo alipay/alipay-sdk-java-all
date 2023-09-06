@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.digitalmgmt.punchout.product.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-11 11:11:53
+ * @since 1.0, 2023-08-24 22:51:43
  */
 public class AlipayDigitalmgmtPunchoutProductSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7477316174257784612L;
+	private static final long serialVersionUID = 7157331195983236251L;
 
 	/** 
 	 * 返回值信息

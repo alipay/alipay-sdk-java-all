@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.resourceusage.monthly.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-22 20:21:41
+ * @since 1.0, 2023-08-31 12:06:43
  */
 public class AlipayCloudCloudbaseResourceusageMonthlyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2138256211593782586L;
+	private static final long serialVersionUID = 8893339624196328913L;
 
 	/** 
 	 * 各计费项用量列表

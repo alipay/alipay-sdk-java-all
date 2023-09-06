@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppOrderItemPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1628966834495187364L;
+	private static final long serialVersionUID = 2367778661653743398L;
 
 	/**
 	 * 支付宝侧对预下单订单项的唯一标识

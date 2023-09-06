@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 电商申请报案
  *
  * @author auto create
- * @since 1.0, 2022-11-28 18:18:21
+ * @since 1.0, 2023-08-24 19:53:17
  */
 public class AlipayInsSceneEcommerceClaimApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3269738457914784396L;
+	private static final long serialVersionUID = 2292292893232861239L;
 
 	/**
 	 * 申请报案金额（单位：分）
@@ -34,6 +34,12 @@ public class AlipayInsSceneEcommerceClaimApplyModel extends AlipayObject {
 	 */
 	@ApiField("buyer")
 	private EcomBuyerDTO buyer;
+
+	/**
+	 * 理赔支付模式
+	 */
+	@ApiField("claim_pay_mode")
+	private String claimPayMode;
 
 	/**
 	 * 商品
@@ -96,6 +102,13 @@ public class AlipayInsSceneEcommerceClaimApplyModel extends AlipayObject {
 	}
 	public void setBuyer(EcomBuyerDTO buyer) {
 		this.buyer = buyer;
+	}
+
+	public String getClaimPayMode() {
+		return this.claimPayMode;
+	}
+	public void setClaimPayMode(String claimPayMode) {
+		this.claimPayMode = claimPayMode;
 	}
 
 	public EcomItemDTO getItem() {

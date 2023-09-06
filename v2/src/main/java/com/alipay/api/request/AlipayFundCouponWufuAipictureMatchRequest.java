@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.coupon.wufu.aipicture.match request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 04:36:56
+ * @since 1.0, 2023-08-23 20:26:45
  */
 public class AlipayFundCouponWufuAipictureMatchRequest implements AlipayRequest<AlipayFundCouponWufuAipictureMatchResponse> {
 

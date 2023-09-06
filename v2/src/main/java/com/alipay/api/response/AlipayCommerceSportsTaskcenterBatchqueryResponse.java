@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.sports.taskcenter.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-11 20:16:58
+ * @since 1.0, 2023-08-24 22:21:42
  */
 public class AlipayCommerceSportsTaskcenterBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3484729153529967779L;
+	private static final long serialVersionUID = 6232621474863255526L;
 
 	/** 
 	 * 用户任务简单对象列表

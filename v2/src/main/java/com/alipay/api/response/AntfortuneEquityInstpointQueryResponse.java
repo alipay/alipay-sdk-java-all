@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.equity.instpoint.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 09:13:10
+ * @since 1.0, 2023-08-23 20:09:36
  */
 public class AntfortuneEquityInstpointQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4522578431464257573L;
+	private static final long serialVersionUID = 4529765856468795642L;
 
 	/** 
 	 * 当前积分值，表示用户在商户下的可用积分总值

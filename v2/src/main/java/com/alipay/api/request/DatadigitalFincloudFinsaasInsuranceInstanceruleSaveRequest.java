@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: datadigital.fincloud.finsaas.insurance.instancerule.save request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 03:41:53
+ * @since 1.0, 2023-09-04 00:41:45
  */
 public class DatadigitalFincloudFinsaasInsuranceInstanceruleSaveRequest implements AlipayRequest<DatadigitalFincloudFinsaasInsuranceInstanceruleSaveResponse> {
 

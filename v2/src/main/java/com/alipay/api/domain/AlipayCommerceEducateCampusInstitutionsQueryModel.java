@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceEducateCampusInstitutionsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1511673612691826283L;
+	private static final long serialVersionUID = 6241815717629694715L;
 
 	/**
 	 * 城市编码，编码标准为中华人民共和国行政区划代码，参见 2020年12月中华人民共和国县以上行政区划代码。

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 文档回归测试勿动msgto不带openid不含中文参数
  *
  * @author auto create
- * @since 1.0, 2022-11-20 16:00:05
+ * @since 1.0, 2023-08-25 16:46:34
  */
 public class AlipayBossCommMsgtoCeBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8569359572642737328L;
+	private static final long serialVersionUID = 5233325843889453461L;
 
 	/**
 	 * 特殊可选，Date类型

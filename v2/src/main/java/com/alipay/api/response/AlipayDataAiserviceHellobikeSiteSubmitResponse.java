@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.aiservice.hellobike.site.submit response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 20:24:59
+ * @since 1.0, 2023-08-23 21:12:44
  */
 public class AlipayDataAiserviceHellobikeSiteSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6891133881728555688L;
+	private static final long serialVersionUID = 5364288419551135662L;
 
 	/** 
 	 * 结果

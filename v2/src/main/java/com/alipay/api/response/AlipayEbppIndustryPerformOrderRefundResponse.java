@@ -8,47 +8,60 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.perform.order.refund response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 19:36:36
+ * @since 1.0, 2023-09-06 10:36:42
  */
 public class AlipayEbppIndustryPerformOrderRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6861413436422172516L;
+	private static final long serialVersionUID = 6374653696785656776L;
 
 	/** 
-	 * 账单金额(订单原价，金额分)
+	 * 账单金额(订单原价，单位元)
 	 */
 	@ApiField("bill_amount")
 	private String billAmount;
 
 	/** 
-	 * 订单号
+	 * 业务受理平台业务28位订单号
 	 */
 	@ApiField("bill_no")
 	private String billNo;
 
 	/** 
-	 * 机构code
+	 * 行业业务受理平台分配的机构编码
 	 */
 	@ApiField("inst_code")
 	private String instCode;
 
 	/** 
-	 * 外部唯一订单号
+	 * 商户订单号。
+订单支付时传入的商户订单号，商家自定义且保证商家系统中唯一。
 	 */
 	@ApiField("out_no")
 	private String outNo;
 
 	/** 
-	 * 实际支付金额
+	 * 用户实际支付金额
 	 */
 	@ApiField("pay_amount")
 	private String payAmount;
 
 	/** 
-	 * 服务code
+	 * 退款金额
+	 */
+	@ApiField("refund_amount")
+	private String refundAmount;
+
+	/** 
+	 * 行业业务受理平台分配的业务服务编码
 	 */
 	@ApiField("service_code")
 	private String serviceCode;
+
+	/** 
+	 * 支付宝交易订单号
+	 */
+	@ApiField("trade_no")
+	private String tradeNo;
 
 	public void setBillAmount(String billAmount) {
 		this.billAmount = billAmount;
@@ -85,11 +98,25 @@ public class AlipayEbppIndustryPerformOrderRefundResponse extends AlipayResponse
 		return this.payAmount;
 	}
 
+	public void setRefundAmount(String refundAmount) {
+		this.refundAmount = refundAmount;
+	}
+	public String getRefundAmount( ) {
+		return this.refundAmount;
+	}
+
 	public void setServiceCode(String serviceCode) {
 		this.serviceCode = serviceCode;
 	}
 	public String getServiceCode( ) {
 		return this.serviceCode;
+	}
+
+	public void setTradeNo(String tradeNo) {
+		this.tradeNo = tradeNo;
+	}
+	public String getTradeNo( ) {
+		return this.tradeNo;
 	}
 
 }

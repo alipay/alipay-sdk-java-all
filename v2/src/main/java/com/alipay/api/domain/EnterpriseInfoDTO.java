@@ -9,33 +9,32 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业信息
  *
  * @author auto create
- * @since 1.0, 2023-06-02 18:09:10
+ * @since 1.0, 2023-08-24 20:42:11
  */
 public class EnterpriseInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4777546518469859596L;
+	private static final long serialVersionUID = 6331318181167983566L;
 
 	/**
-	 * 账户id
+	 * 共同账户id
 	 */
 	@ApiField("account_id")
 	private String accountId;
 
 	/**
-	 * 因公签约状态 UNACTIVATED:未激活 ACTIVATED:已激活 说明：表示签约资金因公付
+	 * 因公签约状态
 	 */
 	@ApiField("activate")
 	private String activate;
 
 	/**
-	 * 企业认证等级 10初级认证  30 高级认证
+	 * 企业认证等级
 	 */
 	@ApiField("auth_level")
 	private String authLevel;
 
 	/**
-	 * 认证状态 
-NO_AUTH：未认证 IN_AUTH：认证中 HAS_AUTH：已认证
+	 * 认证状态
 	 */
 	@ApiField("auth_status")
 	private String authStatus;
@@ -47,7 +46,7 @@ NO_AUTH：未认证 IN_AUTH：认证中 HAS_AUTH：已认证
 	private Date authTime;
 
 	/**
-	 * 企业名称
+	 * 企业简称
 	 */
 	@ApiField("enterprise_alias")
 	private String enterpriseAlias;
@@ -113,13 +112,13 @@ NO_AUTH：未认证 IN_AUTH：认证中 HAS_AUTH：已认证
 	private String platformOutId;
 
 	/**
-	 * 企业服务协议状态 UNSIGNED:未签约 SIGNED:已签约 TERMINATED:已解约 说明：表示签约企业码服务协议
+	 * 企业码服务协议签约状态
 	 */
 	@ApiField("sign_status")
 	private String signStatus;
 
 	/**
-	 * 企业当前状态 SYNC：数据同步中 NORMAL：正常 WITHDRAW：注销
+	 * 企业当前状态
 	 */
 	@ApiField("status")
 	private String status;

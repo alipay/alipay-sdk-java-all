@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.bill.freezebalance.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 08:15:38
+ * @since 1.0, 2023-08-23 20:30:15
  */
 public class AlipayDataBillFreezebalanceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3791733312845543447L;
+	private static final long serialVersionUID = 3622625827256626243L;
 
 	/** 
 	 * 冻结金额

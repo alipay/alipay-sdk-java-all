@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingCardTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6665165521171295138L;
+	private static final long serialVersionUID = 5679549648654735499L;
 
 	/**
 	 * 业务卡号前缀，由商户指定
@@ -30,9 +30,7 @@ public class AlipayMarketingCardTemplateCreateModel extends AlipayObject {
 	private String bizNoSuffixLen;
 
 	/**
-	 * 卡行动点配置；
-行动点，即用户可点击跳转的区块，类似按钮控件的交互；
-单张卡最多定制3个行动点。如果各项的配置内容完全一样，展示时会进行去重。
+	 * "卡行动点配置； 行动点，即用户可点击跳转的区块，类似按钮控件的交互； 单张卡最多定制3个行动点。如果各项的配置内容完全一样，展示时会进行去重。"
 	 */
 	@ApiListField("card_action_list")
 	@ApiField("template_action_info_d_t_o")
@@ -52,8 +50,7 @@ public class AlipayMarketingCardTemplateCreateModel extends AlipayObject {
 	private String cardSpecTag;
 
 	/**
-	 * 卡类型。可选类型如下：
-OUT_MEMBER_CARD：外部权益卡
+	 * 卡类型
 	 */
 	@ApiField("card_type")
 	private String cardType;
@@ -66,17 +63,14 @@ OUT_MEMBER_CARD：外部权益卡
 	private List<TemplateColumnInfoDTO> columnInfoList;
 
 	/**
-	 * 字段规则列表，会员卡开卡过程中，会员卡信息的生成规则，
-例如：卡有效期为开卡后两年内有效，则设置为：DATE_IN_FUTURE
+	 * "字段规则列表，会员卡开卡过程中，会员卡信息的生成规则， 例如：卡有效期为开卡后两年内有效，则设置为：DATE_IN_FUTURE"
 	 */
 	@ApiListField("field_rule_list")
 	@ApiField("template_field_rule_d_t_o")
 	private List<TemplateFieldRuleDTO> fieldRuleList;
 
 	/**
-	 * 商户动态码通知参数配置：
-当write_off_type指定为商户动态码mdbarcode或mdqrcode时必填；
-在此字段配置用户打开会员卡时支付宝通知商户生成动态码（发码）的通知参数，如接收通知地址等。
+	 * "商户动态码通知参数配置： 当write_off_type指定为商户动态码mdbarcode或mdqrcode时必填； 在此字段配置用户打开会员卡时支付宝通知商户生成动态码（发码）的通知参数，如接收通知地址等。"
 	 */
 	@ApiField("mdcode_notify_conf")
 	private TemplateMdcodeNotifyConfDTO mdcodeNotifyConf;
@@ -107,8 +101,7 @@ OUT_MEMBER_CARD：外部权益卡
 	private String requestId;
 
 	/**
-	 * 服务Code
-HUABEI_FUWU：花呗服务（只有需要花呗服务时，才需要加入该标识）
+	 * 服务标签列表
 	 */
 	@ApiListField("service_label_list")
 	@ApiField("string")
@@ -122,15 +115,14 @@ HUABEI_FUWU：花呗服务（只有需要花呗服务时，才需要加入该标
 	private List<String> shopIds;
 
 	/**
-	 * spi_app_id:若使用openspi模式开卡，该字段必填，为实现spi.alipay.user.opencard.get接口的app_id
+	 * spi应用id，若使用openspi模式开卡，该字段必填，为实现spi.alipay.user.opencard.get接口的app_id。若是第三方代理模式，可以设置成服务商的 APPID 或者是商家自己的 APPID；
+若不是第三方代理模式，只能设置商家自己的 APPID。
 	 */
 	@ApiField("spi_app_id")
 	private String spiAppId;
 
 	/**
-	 * 权益信息，
-1、在卡包的卡详情页面会自动添加“会员权益”栏位，展现此字段配置的会员卡权益信息，
-2、如果添加门店渠道，则可在门店页展现会员卡的权益
+	 * "权益信息， 1、在卡包的卡详情页面会自动添加“会员权益”栏位，展现此字段配置的会员卡权益信息， 2、如果添加门店渠道，则可在门店页展现会员卡的权益"
 	 */
 	@ApiListField("template_benefit_info")
 	@ApiField("template_benefit_info_d_t_o")

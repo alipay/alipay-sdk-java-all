@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.data.district.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 07:27:21
+ * @since 1.0, 2023-08-24 21:22:27
  */
 public class AlipayInsDataDistrictQueryRequest implements AlipayRequest<AlipayInsDataDistrictQueryResponse> {
 

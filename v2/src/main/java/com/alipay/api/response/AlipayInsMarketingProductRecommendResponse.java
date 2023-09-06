@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.marketing.product.recommend response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 05:04:08
+ * @since 1.0, 2023-09-03 23:50:31
  */
 public class AlipayInsMarketingProductRecommendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6422125384749897265L;
+	private static final long serialVersionUID = 7845422118251373238L;
 
 	/** 
 	 * 产品列表

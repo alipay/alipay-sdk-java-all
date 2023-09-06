@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.widget.goods.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 21:46:57
+ * @since 1.0, 2023-09-04 00:11:46
  */
 public class AlipayOpenMiniWidgetGoodsModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3324842239658964186L;
+	private static final long serialVersionUID = 8269699172528145256L;
 
 	/** 
 	 * 商品修改返回的提交ID，用于查询商品信息的审核状态

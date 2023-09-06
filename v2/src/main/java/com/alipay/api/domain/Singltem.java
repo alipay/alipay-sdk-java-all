@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class Singltem extends AlipayObject {
 
-	private static final long serialVersionUID = 1153289979877923451L;
+	private static final long serialVersionUID = 5735252499728481985L;
 
 	/**
 	 * 外部商品ID

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: techrisk.innovate.cloudbaseenv.workspace.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-20 21:11:57
+ * @since 1.0, 2023-09-04 01:51:42
  */
 public class TechriskInnovateCloudbaseenvWorkspaceBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7766114371197949275L;
+	private static final long serialVersionUID = 1469722639241346277L;
 
 	/** 
 	 * 环境变量集合

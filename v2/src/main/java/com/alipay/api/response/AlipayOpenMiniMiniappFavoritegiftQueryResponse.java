@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.miniapp.favoritegift.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 19:56:56
+ * @since 1.0, 2023-08-23 20:21:46
  */
 public class AlipayOpenMiniMiniappFavoritegiftQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7181967644482388693L;
+	private static final long serialVersionUID = 7771284467348279593L;
 
 	/** 
 	 * 收藏有礼查询用户对应小程序的查询结果列表

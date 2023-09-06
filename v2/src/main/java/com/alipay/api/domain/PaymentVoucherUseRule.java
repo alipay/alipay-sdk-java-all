@@ -14,24 +14,21 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PaymentVoucherUseRule extends AlipayObject {
 
-	private static final long serialVersionUID = 6562413896472545888L;
+	private static final long serialVersionUID = 3714183487136399186L;
 
 	/**
 	 * 可核销的支付宝小程序id
-
-限制： 
-1、必须是支付宝小程序
-2、如果包含重复的小程序id会自动进行去重操作。
+ 
+ 限制： 
+ 1、必须是支付宝小程序
+ 2、如果包含重复的小程序id会自动进行去重操作。
 	 */
 	@ApiListField("available_app_ids")
 	@ApiField("string")
 	private List<String> availableAppIds;
 
 	/**
-	 * 可核销商品详情
-
-限制:
-1、available_goods与unavailable_goods_ids只能二选一或者同时为空
+	 * "可核销商品详情 限制: 1、available_goods与unavailable_goods_ids只能二选一或者同时为空"
 	 */
 	@ApiField("available_goods")
 	private PaymentVoucherAvailableGoods availableGoods;
@@ -44,27 +41,25 @@ public class PaymentVoucherUseRule extends AlipayObject {
 
 	/**
 	 * 可核销支付门店id。
-限制： 
-1、available_store_ids中的门店id必须是支付宝门店id。 
-2、available_store_ids如果包含重复的门店id会自动进行去重操作。
+ 限制： 
+ 1、available_store_ids中的门店id必须是支付宝门店id。 
+ 2、available_store_ids如果包含重复的门店id会自动进行去重操作。
 	 */
 	@ApiListField("available_store_ids")
 	@ApiField("string")
 	private List<String> availableStoreIds;
 
 	/**
-	 * 固定面额满减券使用规则。
-限制:
-1、voucher_type为FIX_VOUCHER时必填
+	 * "固定面额满减券使用规则。 限制: 1、voucher_type为FIX_VOUCHER时必填"
 	 */
 	@ApiField("fix_voucher")
 	private PaymentFixVoucher fixVoucher;
 
 	/**
 	 * 不可核销商品编码，商家自定义商品编码。当用户支付时，交易中的商品编码和支付券配置的商品编码有任一匹配时，不可以使用优惠券。
-
-限制:
-1、available_goods与unavailable_goods_ids只能二选一或者同时为空
+ 
+ 限制:
+ 1、available_goods与unavailable_goods_ids只能二选一或者同时为空
 	 */
 	@ApiListField("unavailable_goods_ids")
 	@ApiField("string")
@@ -78,9 +73,9 @@ public class PaymentVoucherUseRule extends AlipayObject {
 
 	/**
 	 * 核销跳转链接
-限制:
-1、只有use_mode为SELF_LINK时该值有效且必传。
-2、核销跳转链接必须是支付宝小程序链接。
+ 限制:
+ 1、只有use_mode为SELF_LINK时该值有效且必传。
+ 2、核销跳转链接必须是支付宝小程序链接。
 	 */
 	@ApiField("use_url")
 	private String useUrl;

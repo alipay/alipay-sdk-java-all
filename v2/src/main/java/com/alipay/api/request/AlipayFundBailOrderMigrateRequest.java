@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.bail.order.migrate request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 21:21:57
+ * @since 1.0, 2023-09-04 00:21:49
  */
 public class AlipayFundBailOrderMigrateRequest implements AlipayRequest<AlipayFundBailOrderMigrateResponse> {
 

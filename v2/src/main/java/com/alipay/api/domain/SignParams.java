@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 签约参数。用于sdk支付并签约中传入签约信息。
  *
  * @author auto create
- * @since 1.0, 2023-08-21 17:34:59
+ * @since 1.0, 2023-09-04 14:36:49
  */
 public class SignParams extends AlipayObject {
 
-	private static final long serialVersionUID = 1279632591985146126L;
+	private static final long serialVersionUID = 8759214672757462556L;
 
 	/**
 	 * 请按当前接入的方式进行填充，且输入值必须为文档中的参数取值范围。
@@ -54,6 +57,13 @@ public class SignParams extends AlipayObject {
 	 */
 	@ApiField("product_code")
 	private String productCode;
+
+	/**
+	 * 商户指定优先渠道扣款参数
+	 */
+	@ApiListField("recommend_sort_channel_params")
+	@ApiField("open_api_specified_channel_params_pojo")
+	private List<OpenApiSpecifiedChannelParamsPojo> recommendSortChannelParams;
 
 	/**
 	 * 签约成功后商户用于接收异步通知的地址。如果不传入，签约与支付的异步通知都会发到外层notify_url参数传入的地址；如果外层也未传入，签约与支付的异步通知都会发到商户appid配置的网关地址。
@@ -120,6 +130,13 @@ public class SignParams extends AlipayObject {
 	}
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
+	}
+
+	public List<OpenApiSpecifiedChannelParamsPojo> getRecommendSortChannelParams() {
+		return this.recommendSortChannelParams;
+	}
+	public void setRecommendSortChannelParams(List<OpenApiSpecifiedChannelParamsPojo> recommendSortChannelParams) {
+		this.recommendSortChannelParams = recommendSortChannelParams;
 	}
 
 	public String getSignNotifyUrl() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CouponTemplateConsumeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5461756532916446939L;
+	private static final long serialVersionUID = 8473552783625359967L;
 
 	/**
 	 * 该活动上剩余红包金额，分为单位 888代表剩余8.88元 请注意：该结果可能存在2个小时之内的时间延迟，特殊情况下可能延迟会更久

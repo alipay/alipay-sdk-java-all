@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.defin.dataservice.regiongroup.match response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 08:06:50
+ * @since 1.0, 2023-08-23 19:51:46
  */
 public class AnttechBlockchainDefinDataserviceRegiongroupMatchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1885511886437738474L;
+	private static final long serialVersionUID = 2838985242663311138L;
 
 	/** 
 	 * 匹配条件的区块分组编码列表

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.thirdparty.reward.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 09:08:03
+ * @since 1.0, 2023-09-04 01:19:01
  */
 public class AlipayFundTransThirdpartyRewardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8782527153757518385L;
+	private static final long serialVersionUID = 8864653341342457414L;
 
 	/** 
 	 * 打赏金额，单位：人民币分

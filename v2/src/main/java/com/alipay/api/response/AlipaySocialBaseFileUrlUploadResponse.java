@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.base.file.url.upload response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 05:14:00
+ * @since 1.0, 2023-09-04 01:57:02
  */
 public class AlipaySocialBaseFileUrlUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8145276424961395934L;
+	private static final long serialVersionUID = 4861137646982764824L;
 
 	/** 
 	 * 文件id

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.invoice.title.fuzzy.query request
  * 
  * @author auto create
- * @since 1.0, 2023-07-10 17:18:42
+ * @since 1.0, 2023-08-23 19:41:05
  */
 public class AlipayEbppInvoiceTitleFuzzyQueryRequest implements AlipayRequest<AlipayEbppInvoiceTitleFuzzyQueryResponse> {
 

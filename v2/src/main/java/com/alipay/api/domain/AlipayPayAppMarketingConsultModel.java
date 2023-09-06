@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户前置营销内容咨询接口
  *
  * @author auto create
- * @since 1.0, 2023-07-18 16:56:46
+ * @since 1.0, 2023-08-31 10:37:52
  */
 public class AlipayPayAppMarketingConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6374578255472266911L;
+	private static final long serialVersionUID = 5124893855641832591L;
 
 	/**
 	 * 业务场景，用于区分商户具体的咨场景，示例：ORDER_PAGE：下单页营销咨询；其他新场景接入时需与支付宝协商约定

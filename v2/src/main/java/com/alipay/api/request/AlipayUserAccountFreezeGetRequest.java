@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.account.freeze.get request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 04:24:20
+ * @since 1.0, 2023-09-04 01:57:38
  */
 public class AlipayUserAccountFreezeGetRequest implements AlipayRequest<AlipayUserAccountFreezeGetResponse> {
 

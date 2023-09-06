@@ -13,10 +13,10 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MiniOrderExtInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1825558691292271313L;
+	private static final long serialVersionUID = 2558744174629518562L;
 
 	/**
-	 * 预约上门取件的时间点,时间格式为 yyyy-MM-dd HH:mm:ss
+	 * 预约上门取件的时间,格式为 yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("door_time")
 	private Date doorTime;

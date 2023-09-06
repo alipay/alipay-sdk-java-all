@@ -11,10 +11,10 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCardTemplateBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8738751769749139861L;
+	private static final long serialVersionUID = 4413624695465737316L;
 
 	/**
-	 *  查询起始页码，第一页为 1。
+	 * 查询起始页码，第一页为 1。
 	 */
 	@ApiField("page_no")
 	private Long pageNo;

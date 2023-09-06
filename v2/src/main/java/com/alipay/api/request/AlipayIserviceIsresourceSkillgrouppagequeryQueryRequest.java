@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.isresource.skillgrouppagequery.query request
  * 
  * @author auto create
- * @since 1.0, 2023-07-10 10:04:17
+ * @since 1.0, 2023-08-24 21:41:44
  */
 public class AlipayIserviceIsresourceSkillgrouppagequeryQueryRequest implements AlipayRequest<AlipayIserviceIsresourceSkillgrouppagequeryQueryResponse> {
 

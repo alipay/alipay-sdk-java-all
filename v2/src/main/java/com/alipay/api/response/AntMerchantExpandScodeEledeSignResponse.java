@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.scode.elede.sign response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 07:07:18
+ * @since 1.0, 2023-09-04 01:30:19
  */
 public class AntMerchantExpandScodeEledeSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8836227916166627129L;
+	private static final long serialVersionUID = 4742613778374759149L;
 
 	/** 
 	 * 打标接口返回结果

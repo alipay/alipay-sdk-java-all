@@ -14,10 +14,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingCardTemplateModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5283765592829264691L;
+	private static final long serialVersionUID = 6454536167294642816L;
 
 	/**
 	 * 业务卡号前缀，由商户指定
+
 支付宝业务卡号生成规则：biz_no_prefix(商户指定)卡号前缀 + biz_no_suffix(实时生成）卡号后缀
 	 */
 	@ApiField("biz_no_prefix")
@@ -30,9 +31,7 @@ public class AlipayMarketingCardTemplateModifyModel extends AlipayObject {
 	private String bizNoSuffixLen;
 
 	/**
-	 * 卡行动点配置；
-行动点，即用户可点击跳转的区块，类似按钮控件的交互；
-单张卡最多定制4个行动点。
+	 * "卡行动点配置； 行动点，即用户可点击跳转的区块，类似按钮控件的交互； 单张卡最多定制4个行动点。"
 	 */
 	@ApiListField("card_action_list")
 	@ApiField("template_action_info_d_t_o")
@@ -59,19 +58,14 @@ public class AlipayMarketingCardTemplateModifyModel extends AlipayObject {
 	private List<TemplateColumnInfoDTO> columnInfoList;
 
 	/**
-	 * 字段规则列表，会员卡开卡过程中，会员卡信息的生成规则，
-例如：卡有效期为开卡后两年内有效，则设置为：DATE_IN_FUTURE
-注意：商家会员卡场景不支持修改该内容。
-
+	 * "字段规则列表，会员卡开卡过程中，会员卡信息的生成规则， 例如：卡有效期为开卡后两年内有效，则设置为：DATE_IN_FUTURE 注意：商家会员卡场景不支持修改该内容。 "
 	 */
 	@ApiListField("field_rule_list")
 	@ApiField("template_field_rule_d_t_o")
 	private List<TemplateFieldRuleDTO> fieldRuleList;
 
 	/**
-	 * 商户动态码通知参数配置：
-当write_off_type指定为商户动态码mdbarcode或mdqrcode时必填；
-在此字段配置用户打开会员卡时支付宝通知商户生成动态码（发码）的通知参数，如接收通知地址等。
+	 * "商户动态码通知参数配置： 当write_off_type指定为商户动态码mdbarcode或mdqrcode时必填； 在此字段配置用户打开会员卡时支付宝通知商户生成动态码（发码）的通知参数，如接收通知地址等。"
 	 */
 	@ApiField("mdcode_notify_conf")
 	private TemplateMdcodeNotifyConfDTO mdcodeNotifyConf;
@@ -110,15 +104,14 @@ public class AlipayMarketingCardTemplateModifyModel extends AlipayObject {
 	private List<String> shopIds;
 
 	/**
-	 * spi_app_id：若使用openspi模式开卡，该字段必填，为实现spi.alipay.user.opencard.get接口的app_id
+	 * spi应用id，若使用openspi模式开卡，该字段必填，为实现spi.alipay.user.opencard.get接口的app_id。若是第三方代理模式，可以设置成服务商的 APPID 或者是商家自己的 APPID；
+若不是第三方代理模式，只能设置商家自己的 APPID。
 	 */
 	@ApiField("spi_app_id")
 	private String spiAppId;
 
 	/**
-	 * 权益信息，
-1、在卡包的卡详情页面会自动添加权益栏位，展现会员卡特权，
-2、如果添加门店渠道，则可在门店页展现会员卡的权益
+	 * "权益信息， 1、在卡包的卡详情页面会自动添加权益栏位，展现会员卡特权， 2、如果添加门店渠道，则可在门店页展现会员卡的权益"
 	 */
 	@ApiListField("template_benefit_info")
 	@ApiField("template_benefit_info_d_t_o")
@@ -137,7 +130,7 @@ public class AlipayMarketingCardTemplateModifyModel extends AlipayObject {
 	private TemplateStyleInfoDTO templateStyleInfo;
 
 	/**
-	 *  卡包详情页面中展现出的卡码（可用于扫码核销）
+	 * 卡包详情页面中展现出的卡码（可用于扫码核销）
 
 (1) 静态码
 qrcode: 二维码，扫码得商户开卡传入的external_card_no
@@ -151,9 +144,6 @@ dbarcode: 动态条形码，扫码得到的码值可配合会员卡查询接口�
 mdqrcode: 商户动态二维码，扫码得商户自主传入的码值
 mdbarcode: 商户动态条码，扫码得商户自主传入的码值。
 如需使用商户动态码，请联系支付宝技术支持获取相关文档。
-
-(4)无码值-商家不需要核销码
- none:商家无需核销码
 	 */
 	@ApiField("write_off_type")
 	private String writeOffType;

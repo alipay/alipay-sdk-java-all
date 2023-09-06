@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.merchant.operator.batch.delete response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 08:50:00
+ * @since 1.0, 2023-08-23 20:50:25
  */
 public class KoubeiMerchantOperatorBatchDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6398271319129814272L;
+	private static final long serialVersionUID = 5712127424721816742L;
 
 	/** 
 	 * 批量删除，不保证事务，可能有部分成功，部分失败;

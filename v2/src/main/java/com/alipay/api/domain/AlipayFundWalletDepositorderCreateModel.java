@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户充值创建订单
  *
  * @author auto create
- * @since 1.0, 2023-08-09 11:08:53
+ * @since 1.0, 2023-09-04 14:59:51
  */
 public class AlipayFundWalletDepositorderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5677837575885757488L;
+	private static final long serialVersionUID = 6216519139799485654L;
 
 	/**
 	 * 充值的本金金额
@@ -77,7 +77,7 @@ public class AlipayFundWalletDepositorderCreateModel extends AlipayObject {
 	private String remark;
 
 	/**
-	 * 订单 有效期
+	 * 订单失效时间。绝对超时时间，格式为yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("time_expire")
 	private Date timeExpire;

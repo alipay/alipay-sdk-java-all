@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenMiniOrderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7239889418551432366L;
+	private static final long serialVersionUID = 7229864613558398141L;
 
 	/**
 	 * 部分商品退款信息
@@ -24,26 +24,26 @@ public class AlipayOpenMiniOrderRefundModel extends AlipayObject {
 	private List<MiniRefundGoodsInfoDTO> itemInfos;
 
 	/**
-	 * 用户open_id
+	 * 买家open_id；open_id和user_id二选一
 	 */
 	@ApiField("open_id")
 	private String openId;
 
 	/**
-	 * 交易组件订单号
+	 * 交易组件订单号；order_id和out_order_id二选一
 	 */
 	@ApiField("order_id")
 	private String orderId;
 
 	/**
-	 * 由商家自定义，64个字符以内，仅支持字母、数字、下划线且需保证在商户端不重复。order_id、out_order_id，二选一
+	 * 商户订单号，创建订单请求由商户传入；order_id和out_order_id二选一
 	 */
 	@ApiField("out_order_id")
 	private String outOrderId;
 
 	/**
-	 * 商户自定义退款流水id,标识一次退款请求，需要保证在交易号下唯一。
-注：针对同一次退款请求，如果调用接口失败或异常了，重试时需要保证退款请求号不能变更，防止该笔交易重复退款。支付宝会保证同样的退款请求号多次请求只会退一次。
+	 * 外部退款流水号,标识一次退款请求，需要保证在订单号下唯一。
+注：针对同一次退款请求，如果调用接口失败或异常了，重试时需要保证退款流水号不能变更，防止该笔交易重复退款。支付宝会保证同样的退款流水号多次请求只会退一次。
 	 */
 	@ApiField("out_refund_id")
 	private String outRefundId;

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.huabei.auth.agreement.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 07:47:01
+ * @since 1.0, 2023-08-24 21:26:49
  */
 public class AlipayPcreditHuabeiAuthAgreementQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7734472547751135956L;
+	private static final long serialVersionUID = 3412777394658985832L;
 
 	/** 
 	 * 协议名称

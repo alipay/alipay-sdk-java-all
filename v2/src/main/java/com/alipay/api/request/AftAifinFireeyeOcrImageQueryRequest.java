@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: aft.aifin.fireeye.ocr.image.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 05:17:52
+ * @since 1.0, 2023-09-04 00:38:07
  */
 public class AftAifinFireeyeOcrImageQueryRequest implements AlipayRequest<AftAifinFireeyeOcrImageQueryResponse> {
 

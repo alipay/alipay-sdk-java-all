@@ -17,11 +17,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.item.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 22:37:52
+ * @since 1.0, 2023-08-24 21:20:33
  */
 public class KoubeiCateringItemQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1288284439428741637L;
+	private static final long serialVersionUID = 6841434986329854173L;
 
 	/** 
 	 * 商品可用时段列表。最多添加三条规则。该内容仅用于展示，不影响实际核销。

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.finance.income.statement.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-06-28 19:31:55
+ * @since 1.0, 2023-08-24 22:06:42
  */
 public class AnttechBlockchainFinanceIncomeStatementSyncRequest implements AlipayRequest<AnttechBlockchainFinanceIncomeStatementSyncResponse> {
 

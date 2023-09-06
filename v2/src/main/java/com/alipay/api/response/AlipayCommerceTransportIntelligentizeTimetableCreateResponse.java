@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.intelligentize.timetable.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 06:00:28
+ * @since 1.0, 2023-09-03 23:26:13
  */
 public class AlipayCommerceTransportIntelligentizeTimetableCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7641524864199823594L;
+	private static final long serialVersionUID = 3537819228538457862L;
 
 	/** 
 	 * 扩展信息，json格式，由双方约定取值

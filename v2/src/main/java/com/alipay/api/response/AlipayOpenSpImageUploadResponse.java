@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.image.upload response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 23:06:43
+ * @since 1.0, 2023-08-23 20:20:58
  */
 public class AlipayOpenSpImageUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2422894379657711344L;
+	private static final long serialVersionUID = 3545593159215794975L;
 
 	/** 
 	 * 图片在文件存储平台的标识

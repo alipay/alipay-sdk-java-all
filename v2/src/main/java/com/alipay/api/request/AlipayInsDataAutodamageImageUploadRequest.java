@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.data.autodamage.image.upload request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 05:16:18
+ * @since 1.0, 2023-08-24 22:56:30
  */
 public class AlipayInsDataAutodamageImageUploadRequest implements AlipayUploadRequest<AlipayInsDataAutodamageImageUploadResponse> {
 

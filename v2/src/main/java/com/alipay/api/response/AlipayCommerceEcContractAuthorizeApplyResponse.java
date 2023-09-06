@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.contract.authorize.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-09 15:11:42
+ * @since 1.0, 2023-08-28 21:01:42
  */
 public class AlipayCommerceEcContractAuthorizeApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8211977386553849373L;
+	private static final long serialVersionUID = 7195522844288773281L;
 
 	/** 
 	 * 签约授权地址

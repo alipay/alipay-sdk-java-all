@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.logistics.token.info.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 19:51:57
+ * @since 1.0, 2023-09-03 23:06:45
  */
 public class AlipayCommerceLogisticsTokenInfoQueryRequest implements AlipayRequest<AlipayCommerceLogisticsTokenInfoQueryResponse> {
 

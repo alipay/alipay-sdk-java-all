@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.finance.quotation.stocktools.freeuser.exchange request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 21:31:51
+ * @since 1.0, 2023-09-04 01:31:47
  */
 public class AlipayFinanceQuotationStocktoolsFreeuserExchangeRequest implements AlipayRequest<AlipayFinanceQuotationStocktoolsFreeuserExchangeResponse> {
 

@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业财受理结果
  *
  * @author auto create
- * @since 1.0, 2022-11-09 15:18:31
+ * @since 1.0, 2023-09-06 14:23:06
  */
 public class GFAOpenAPIAcceptanceResult extends AlipayObject {
 
-	private static final long serialVersionUID = 7813197199115722787L;
+	private static final long serialVersionUID = 1551113529293277767L;
 
 	/**
 	 * 受理单id
 	 */
 	@ApiField("acceptance_id")
 	private String acceptanceId;
+
+	/**
+	 * 业财受理结果业务信息
+	 */
+	@ApiField("data")
+	private String data;
 
 	/**
 	 * 接口调用失败是否需要重试
@@ -66,6 +72,13 @@ public class GFAOpenAPIAcceptanceResult extends AlipayObject {
 	}
 	public void setAcceptanceId(String acceptanceId) {
 		this.acceptanceId = acceptanceId;
+	}
+
+	public String getData() {
+		return this.data;
+	}
+	public void setData(String data) {
+		this.data = data;
 	}
 
 	public Boolean getNeedRetry() {

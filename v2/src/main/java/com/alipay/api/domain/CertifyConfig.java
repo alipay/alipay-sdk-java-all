@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 酒店扫码核验业务场景下， 插件小程序页面展示的配置
  *
  * @author auto create
- * @since 1.0, 2023-08-03 14:24:27
+ * @since 1.0, 2023-08-24 17:39:09
  */
 public class CertifyConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 4317161692157189686L;
+	private static final long serialVersionUID = 7466982246582635174L;
 
 	/**
 	 * 核验模式，可选范围：【FACE : 人脸认证 ，
@@ -19,6 +19,12 @@ public class CertifyConfig extends AlipayObject {
 	 */
 	@ApiField("certify_biz_code")
 	private String certifyBizCode;
+
+	/**
+	 * 组件编码,用于表示使用场景
+	 */
+	@ApiField("component_out_id")
+	private String componentOutId;
 
 	/**
 	 * 是否要地址，可选范围【0， 1】
@@ -54,11 +60,24 @@ public class CertifyConfig extends AlipayObject {
 	@ApiField("need_user_nation")
 	private String needUserNation;
 
+	/**
+	 * 核验渠道， IOT核验-IOTMBS，会员中心验证-MEMBER
+	 */
+	@ApiField("verify_channel")
+	private String verifyChannel;
+
 	public String getCertifyBizCode() {
 		return this.certifyBizCode;
 	}
 	public void setCertifyBizCode(String certifyBizCode) {
 		this.certifyBizCode = certifyBizCode;
+	}
+
+	public String getComponentOutId() {
+		return this.componentOutId;
+	}
+	public void setComponentOutId(String componentOutId) {
+		this.componentOutId = componentOutId;
 	}
 
 	public String getNeedAddress() {
@@ -94,6 +113,13 @@ public class CertifyConfig extends AlipayObject {
 	}
 	public void setNeedUserNation(String needUserNation) {
 		this.needUserNation = needUserNation;
+	}
+
+	public String getVerifyChannel() {
+		return this.verifyChannel;
+	}
+	public void setVerifyChannel(String verifyChannel) {
+		this.verifyChannel = verifyChannel;
 	}
 
 }

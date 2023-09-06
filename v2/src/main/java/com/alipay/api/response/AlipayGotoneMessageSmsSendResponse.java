@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.gotone.message.sms.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 04:36:55
+ * @since 1.0, 2023-08-24 21:31:47
  */
 public class AlipayGotoneMessageSmsSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1565825356869839579L;
+	private static final long serialVersionUID = 1789563187332948613L;
 
 	/** 
 	 * 返回结果

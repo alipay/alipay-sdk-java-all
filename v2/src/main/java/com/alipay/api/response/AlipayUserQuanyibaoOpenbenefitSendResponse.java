@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.quanyibao.openbenefit.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 23:21:51
+ * @since 1.0, 2023-08-24 21:56:47
  */
 public class AlipayUserQuanyibaoOpenbenefitSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3149129795255264837L;
+	private static final long serialVersionUID = 7853471359387439911L;
 
 	/** 
 	 * 权益宝权益发放的业务号，与入参中third_biz_no关联且唯一

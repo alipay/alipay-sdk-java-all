@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenSearchBoxApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2253889234236143667L;
+	private static final long serialVersionUID = 1391986147317768737L;
 
 	/**
 	 * 小程序直达配置的常用服务中带有门店信息时，可添加简称触发词
@@ -78,16 +78,14 @@ public class AlipayOpenSearchBoxApplyModel extends AlipayObject {
 	private String merchantId;
 
 	/**
-	 * 关联账号信息，1-2个。
-内部字段均需设置。当为品牌直达时，数组中的第1个账号会被设置为"账号1"，也就是将作为搜索直达专区头部的跳转地址
+	 * "关联账号信息，1-2个。 内部字段均需设置。当为品牌直达时，数组中的第1个账号会被设置为"账号1"，也就是将作为搜索直达专区头部的跳转地址"
 	 */
 	@ApiListField("related_accounts")
 	@ApiField("search_box_app_info")
 	private List<SearchBoxAppInfo> relatedAccounts;
 
 	/**
-	 * 服务信息，服务必须审核通过才能申请搜索直达。品牌直达最多可配置同一品牌认证下的小程序4个，小程序直达最多可配置2个。
-内部字段均需设置。
+	 * "服务信息，服务必须审核通过才能申请搜索直达。品牌直达最多可配置同一品牌认证下的小程序4个，小程序直达最多可配置2个。 内部字段均需设置。"
 	 */
 	@ApiListField("service_infos")
 	@ApiField("search_box_service_info")

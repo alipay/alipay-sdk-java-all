@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品数据删除
  *
  * @author auto create
- * @since 1.0, 2023-08-14 10:09:15
+ * @since 1.0, 2023-08-30 20:18:40
  */
 public class TechriskInnovateMpcpromoDataDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7419379773126217962L;
+	private static final long serialVersionUID = 6791672696834694223L;
 
 	/**
 	 * 商品列表ids

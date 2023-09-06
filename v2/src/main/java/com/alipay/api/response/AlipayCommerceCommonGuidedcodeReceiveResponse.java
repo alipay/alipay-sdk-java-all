@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.common.guidedcode.receive response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-06 14:47:00
+ * @since 1.0, 2023-09-04 00:41:45
  */
 public class AlipayCommerceCommonGuidedcodeReceiveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2593847437157491528L;
+	private static final long serialVersionUID = 3742113311768984456L;
 
 	/** 
 	 * 二维码地址

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.isresource.skillgrouppagequery.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-10 10:04:17
+ * @since 1.0, 2023-08-24 21:41:44
  */
 public class AlipayIserviceIsresourceSkillgrouppagequeryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8647785366131871183L;
+	private static final long serialVersionUID = 5365483133112784378L;
 
 	/** 
 	 * 技能组列表

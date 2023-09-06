@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.clive.readmessage.batchsend request
  * 
  * @author auto create
- * @since 1.0, 2023-06-20 15:31:57
+ * @since 1.0, 2023-09-04 00:56:43
  */
 public class AlipayIserviceCliveReadmessageBatchsendRequest implements AlipayRequest<AlipayIserviceCliveReadmessageBatchsendResponse> {
 

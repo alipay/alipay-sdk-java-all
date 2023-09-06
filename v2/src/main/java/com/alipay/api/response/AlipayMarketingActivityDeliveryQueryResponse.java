@@ -18,7 +18,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingActivityDeliveryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7283669463183499624L;
+	private static final long serialVersionUID = 7424248359472819582L;
 
 	/** 
 	 * 运营计划基础信息。
@@ -45,8 +45,7 @@ public class AlipayMarketingActivityDeliveryQueryResponse extends AlipayResponse
 	private String deliveryId;
 
 	/** 
-	 * [已废弃]
-投放信息列表
+	 * "[已废弃] 投放信息列表"
 	 */
 	@ApiListField("delivery_info_list")
 	@ApiField("promo_delivery_info")

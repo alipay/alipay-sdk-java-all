@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.vehicleowner.settlement.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-08-18 15:46:49
+ * @since 1.0, 2023-09-04 02:46:47
  */
 public class AlipayCommerceTransportVehicleownerSettlementApplyRequest implements AlipayRequest<AlipayCommerceTransportVehicleownerSettlementApplyResponse> {
 

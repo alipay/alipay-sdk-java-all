@@ -15,28 +15,28 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ItemOrderBillDetailResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 7413357947139571326L;
+	private static final long serialVersionUID = 5223436312249361546L;
 
 	/**
-	 * 订单创建时间
+	 * 订单创建时间，格式为 yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("create_time")
 	private Date createTime;
 
 	/**
-	 * 收费类目
+	 * 支付宝公域会根据商家的具体成交场景和成交的商品类目来收取一定的技术服务费，技术服务费=结算基数*技术服务费费率，其中费率的部分由商品的类目来计算出。具体详情请查阅：https://opendocs.alipay.com/b/07w1gp
 	 */
 	@ApiField("fee_categories")
 	private String feeCategories;
 
 	/**
-	 * 订单所属小程序id
+	 * 订单关联小程序应用ID
 	 */
 	@ApiField("mini_app_id")
 	private String miniAppId;
 
 	/**
-	 * 平台订单号
+	 * 交易组件订单号
 	 */
 	@ApiField("order_id")
 	private String orderId;
@@ -48,7 +48,7 @@ public class ItemOrderBillDetailResponse extends AlipayObject {
 	private String orderName;
 
 	/**
-	 * 订单总价（元）
+	 * 订单总价，单位：元,精确到小数点后两位
 	 */
 	@ApiField("order_price")
 	private String orderPrice;
@@ -60,49 +60,49 @@ public class ItemOrderBillDetailResponse extends AlipayObject {
 	private String orderStatus;
 
 	/**
-	 * 商家订单号
+	 * 商户订单号
 	 */
 	@ApiField("out_trade_no")
 	private String outTradeNo;
 
 	/**
-	 * 订单支付金额（元）
+	 * 订单支付金额，单位：元，精确到小数点后两位
 	 */
 	@ApiField("pay_amount")
 	private String payAmount;
 
 	/**
-	 * 平台技术服务费（元）
+	 * 平台技术服务费，单位：元，精确到小数点后两位
 	 */
 	@ApiField("platform_service")
 	private String platformService;
 
 	/**
-	 * 退平台技术服务费（元）
+	 * 退平台技术服务费，单位：元，精确到小数点后两位
 	 */
 	@ApiField("platform_service_refund")
 	private String platformServiceRefund;
 
 	/**
-	 * 商家前置优惠金额（元）
+	 * 商家前置优惠金额，单位：元，精确到小数点后两位
 	 */
 	@ApiField("pre_promotion")
 	private String prePromotion;
 
 	/**
-	 * 订单预计结算时间
+	 * 订单预计结算时间，用户支付后确认收货前告知账期的天数， 表述为确认收货后X天结算；用户确认收货后，表述为预计时间格式为yyyy-MM-dd
 	 */
 	@ApiField("predict_settle_time")
 	private String predictSettleTime;
 
 	/**
-	 * 订单实收金额（元）
+	 * 订单实收金额，单位：元，精确到小数点后两位
 	 */
 	@ApiField("receipt_amount")
 	private String receiptAmount;
 
 	/**
-	 * 订单退款金额（元）
+	 * 退款金额，单位：元，精确到小数点后两位
 	 */
 	@ApiField("refund_fee")
 	private String refundFee;
@@ -133,7 +133,7 @@ public class ItemOrderBillDetailResponse extends AlipayObject {
 	private Date settleTime;
 
 	/**
-	 * 订单结算金额（元）
+	 * 订单结算金额，单位：元,精确到小数点后两位
 	 */
 	@ApiField("settlement_amount")
 	private String settlementAmount;

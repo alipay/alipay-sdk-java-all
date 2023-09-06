@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: datadigital.fincloud.finsaas.crowd.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 05:53:48
+ * @since 1.0, 2023-09-04 01:59:30
  */
 public class DatadigitalFincloudFinsaasCrowdDeleteRequest implements AlipayRequest<DatadigitalFincloudFinsaasCrowdDeleteResponse> {
 

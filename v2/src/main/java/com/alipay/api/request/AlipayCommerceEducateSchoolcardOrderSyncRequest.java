@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.schoolcard.order.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 02:36:47
+ * @since 1.0, 2023-08-24 18:58:09
  */
 public class AlipayCommerceEducateSchoolcardOrderSyncRequest implements AlipayRequest<AlipayCommerceEducateSchoolcardOrderSyncResponse> {
 

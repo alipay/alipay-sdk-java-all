@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.edu.kt.billing.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 10:01:54
+ * @since 1.0, 2023-08-24 21:21:48
  */
 public class AlipayEcoEduKtBillingModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4646392115616195313L;
+	private static final long serialVersionUID = 5519526523174933489L;
 
 	/** 
 	 * 如果成功，返回Y

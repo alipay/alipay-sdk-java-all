@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.msaas.mediarecog.mmtcaftscv.machinetype.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 10:22:22
+ * @since 1.0, 2023-09-04 01:36:25
  */
 public class AlipayMsaasMediarecogMmtcaftscvMachinetypeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4537395216625979325L;
+	private static final long serialVersionUID = 4419541383396964274L;
 
 	/** 
 	 * 视觉货柜机型信息列表

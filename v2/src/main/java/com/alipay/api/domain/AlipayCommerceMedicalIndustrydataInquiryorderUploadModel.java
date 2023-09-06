@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 问诊订单回流接口
  *
  * @author auto create
- * @since 1.0, 2022-12-27 11:01:27
+ * @since 1.0, 2023-09-06 16:03:52
  */
 public class AlipayCommerceMedicalIndustrydataInquiryorderUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2182449257697385989L;
+	private static final long serialVersionUID = 2584539531856343935L;
 
 	/**
 	 * 支付宝开放id
@@ -20,13 +20,19 @@ public class AlipayCommerceMedicalIndustrydataInquiryorderUploadModel extends Al
 	private String alipayOpenId;
 
 	/**
+	 * 支付宝交易号
+	 */
+	@ApiField("alipay_trade_no")
+	private String alipayTradeNo;
+
+	/**
 	 * 支付宝用户id
 	 */
 	@ApiField("alipay_user_id")
 	private String alipayUserId;
 
 	/**
-	 * 订单金额
+	 * 订单金额，精确到小数点后2位，单位为元
 	 */
 	@ApiField("amount")
 	private String amount;
@@ -50,8 +56,8 @@ public class AlipayCommerceMedicalIndustrydataInquiryorderUploadModel extends Al
 	private String hospitalName;
 
 	/**
-	 * 图文问诊/电话问诊/视频问诊
-IMAGE_INQUIRY/PHONE_INQUIRY/VIDEO_INQUIRY
+	 * 图文问诊/电话问诊/视频问诊/快速图文/快速电话/快速视频
+IMAGE_INQUIRY/PHONE_INQUIRY/VIDEO_INQUIRY/QUICK_IMAGE_INQUIRY/QUICK_PHONE_INQUIRY/QUICK_VIDEO_INQUIRY
 	 */
 	@ApiField("inquiry_mode")
 	private String inquiryMode;
@@ -75,7 +81,7 @@ IMAGE_INQUIRY/PHONE_INQUIRY/VIDEO_INQUIRY
 	private String merchantOrderLinkPage;
 
 	/**
-	 * 待支付/待接诊 / 待问诊 / 问诊中 / 已完成 / 已取消 / 已退款：WAIT_PAY/WAIT_RECEPTION/WAIT_INQUIRY/IN_INQUIRY/FINISHED/CANCELED/REFUNDED
+	 * 待支付/待接诊 / 待问诊 / 问诊中 / 已完成 / 已取消 / 已退款/退款中/取消中：WAIT_PAY/WAIT_RECEPTION/WAIT_INQUIRY/IN_INQUIRY/FINISHED/CANCELED/REFUNDED/REFUNDING/CANCELING
 	 */
 	@ApiField("merchant_order_status")
 	private String merchantOrderStatus;
@@ -91,6 +97,12 @@ IMAGE_INQUIRY/PHONE_INQUIRY/VIDEO_INQUIRY
 	 */
 	@ApiField("order_create_time")
 	private String orderCreateTime;
+
+	/**
+	 * 订单隐藏标志，默认为N
+	 */
+	@ApiField("order_hidden_flag")
+	private String orderHiddenFlag;
 
 	/**
 	 * 订单修改时间
@@ -123,6 +135,18 @@ IMAGE_INQUIRY/PHONE_INQUIRY/VIDEO_INQUIRY
 	private String platformCode;
 
 	/**
+	 * 实际支付金额，精确到小数点后2位，单位为元
+	 */
+	@ApiField("real_amount")
+	private String realAmount;
+
+	/**
+	 * 退款金额，精确到小数点后2位，单位为元
+	 */
+	@ApiField("refund_amount")
+	private String refundAmount;
+
+	/**
 	 * 预约问诊时间
 	 */
 	@ApiField("scheduled_time")
@@ -133,6 +157,13 @@ IMAGE_INQUIRY/PHONE_INQUIRY/VIDEO_INQUIRY
 	}
 	public void setAlipayOpenId(String alipayOpenId) {
 		this.alipayOpenId = alipayOpenId;
+	}
+
+	public String getAlipayTradeNo() {
+		return this.alipayTradeNo;
+	}
+	public void setAlipayTradeNo(String alipayTradeNo) {
+		this.alipayTradeNo = alipayTradeNo;
 	}
 
 	public String getAlipayUserId() {
@@ -219,6 +250,13 @@ IMAGE_INQUIRY/PHONE_INQUIRY/VIDEO_INQUIRY
 		this.orderCreateTime = orderCreateTime;
 	}
 
+	public String getOrderHiddenFlag() {
+		return this.orderHiddenFlag;
+	}
+	public void setOrderHiddenFlag(String orderHiddenFlag) {
+		this.orderHiddenFlag = orderHiddenFlag;
+	}
+
 	public String getOrderModifiedTime() {
 		return this.orderModifiedTime;
 	}
@@ -252,6 +290,20 @@ IMAGE_INQUIRY/PHONE_INQUIRY/VIDEO_INQUIRY
 	}
 	public void setPlatformCode(String platformCode) {
 		this.platformCode = platformCode;
+	}
+
+	public String getRealAmount() {
+		return this.realAmount;
+	}
+	public void setRealAmount(String realAmount) {
+		this.realAmount = realAmount;
+	}
+
+	public String getRefundAmount() {
+		return this.refundAmount;
+	}
+	public void setRefundAmount(String refundAmount) {
+		this.refundAmount = refundAmount;
 	}
 
 	public String getScheduledTime() {

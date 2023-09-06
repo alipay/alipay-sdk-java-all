@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MiniRefundGoodsInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2451588297852823812L;
+	private static final long serialVersionUID = 3245898685677515747L;
 
 	/**
 	 * 商品退款凭证信息，在本地生活等场景下，需要填入凭证号进行退款。
@@ -20,25 +20,25 @@ public class MiniRefundGoodsInfoDTO extends AlipayObject {
 	private MiniRefundCertificateDTO certificateInfo;
 
 	/**
-	 * 与alipay.open.mini.order.create接口所传的商品goods_id保持一致
+	 * 商户侧商品的编号，应与alipay.open.mini.order.create接口所传的商品goods_id保持一致
 	 */
 	@ApiField("goods_id")
 	private String goodsId;
 
 	/**
-	 * 提报商品库的商品ID
+	 * 商户商品ID
 	 */
 	@ApiField("out_item_id")
 	private String outItemId;
 
 	/**
-	 * 提报商品库的商品，sku维度的商品该字段必传
+	 * 商户商品sku_id,提报商品库的商品，sku维度的商品该字段必传
 	 */
 	@ApiField("out_sku_id")
 	private String outSkuId;
 
 	/**
-	 * 商品退款金额
+	 * 商品退款金额，单位：元，精确到小数点后两位
 	 */
 	@ApiField("refund_amount")
 	private String refundAmount;

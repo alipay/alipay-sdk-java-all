@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.user.system.oauth.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 21:00:39
+ * @since 1.0, 2023-09-04 01:17:12
  */
 public class MybankCreditUserSystemOauthQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2853833258939719913L;
+	private static final long serialVersionUID = 6354858873857887824L;
 
 	/** 
 	 * 访问令牌。通过该令牌调用需要授权类接口

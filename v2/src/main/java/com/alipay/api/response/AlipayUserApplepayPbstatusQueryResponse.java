@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.applepay.pbstatus.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 19:24:32
+ * @since 1.0, 2023-09-03 23:14:45
  */
 public class AlipayUserApplepayPbstatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3351684475883941446L;
+	private static final long serialVersionUID = 8312743872616933522L;
 
 	/** 
 	 * 卡状态列表

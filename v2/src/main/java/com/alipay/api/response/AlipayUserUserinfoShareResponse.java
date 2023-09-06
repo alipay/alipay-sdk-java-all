@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserUserinfoShareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2511313414846423958L;
+	private static final long serialVersionUID = 7464138494715737217L;
 
 	/** 
 	 * 详细地址。
@@ -49,13 +49,21 @@ public class AlipayUserUserinfoShareResponse extends AlipayResponse {
 
 	/** 
 	 * 【注意】当is_balance_frozen为“F”时，改字段不会返回.
+
 CTU ---- CTU冻结，允许用户开启
+
 ALIBABA ---- ALIBABA冻结，允许用户开启
+
 SERVER ---- 后台冻结，允许用户开启
-USER ----  用户冻结 
+
+USER ---- 用户冻结 
+
 CTU_N---- CTU冻结，不允许用户开启
+
 ALIBABA_N ---- ALIBABA冻结，不允许用户开启
+
 SERVER_N ---- 后台冻结，不允许用户开启
+
 UNKNOWN ---- 降级、或查询超时
 	 */
 	@ApiField("balance_freeze_type")
@@ -75,15 +83,25 @@ UNKNOWN ---- 降级、或查询超时
 
 	/** 
 	 * 0:身份证
+
 1:护照
+
 2:军官证
+
 3:士兵证
+
 4:回乡证
+
 5:临时身份证
+
 6:户口簿
+
 7:警官证
+
 8:台胞证
+
 9:营业执照
+
 10其它证件
 	 */
 	@ApiField("cert_type_value")
@@ -270,6 +288,7 @@ W代表已注册，未激活的账户
 
 	/** 
 	 * 用户类型（1/2）
+
 1代表公司账户2代表个人账户
 	 */
 	@ApiField("user_type_value")

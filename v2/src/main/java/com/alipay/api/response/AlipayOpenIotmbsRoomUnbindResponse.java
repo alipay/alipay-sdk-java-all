@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotmbs.room.unbind response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 06:41:38
+ * @since 1.0, 2023-08-23 20:24:49
  */
 public class AlipayOpenIotmbsRoomUnbindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1139551169917476667L;
+	private static final long serialVersionUID = 1882236146225678592L;
 
 	/** 
 	 * 成功true失败false

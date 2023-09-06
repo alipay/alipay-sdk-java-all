@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudCloudrunStaticsiteDomainBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5399423981398494954L;
+	private static final long serialVersionUID = 2134186983724492951L;
 
 	/** 
 	 * 域名列表

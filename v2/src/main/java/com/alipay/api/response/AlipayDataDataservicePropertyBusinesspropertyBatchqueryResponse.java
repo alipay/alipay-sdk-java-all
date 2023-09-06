@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.property.businessproperty.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 21:52:42
+ * @since 1.0, 2023-08-23 21:37:45
  */
 public class AlipayDataDataservicePropertyBusinesspropertyBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5723854833267343593L;
+	private static final long serialVersionUID = 3131459284637713847L;
 
 	/** 
 	 * 业务画像标签元信息列表

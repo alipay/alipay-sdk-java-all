@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.ad.user.match response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 09:19:42
+ * @since 1.0, 2023-09-04 00:46:40
  */
 public class AlipayCommerceTransportAdUserMatchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5451525925898859126L;
+	private static final long serialVersionUID = 1232673271432696564L;
 
 	/** 
 	 * 广告投放端用户ID

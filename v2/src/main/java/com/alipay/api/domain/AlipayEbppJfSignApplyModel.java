@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 缴费户号代扣签约申请接口
  *
  * @author auto create
- * @since 1.0, 2023-08-21 09:57:49
+ * @since 1.0, 2023-09-06 16:38:51
  */
 public class AlipayEbppJfSignApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5891551626515189992L;
+	private static final long serialVersionUID = 3524171328695182562L;
 
 	/**
 	 * 签约户号

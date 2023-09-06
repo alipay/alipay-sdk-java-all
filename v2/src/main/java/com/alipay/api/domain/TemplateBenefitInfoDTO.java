@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class TemplateBenefitInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5391483531572393167L;
+	private static final long serialVersionUID = 2255497485252966182L;
 
 	/**
 	 * 权益描述信息
@@ -31,7 +31,7 @@ public class TemplateBenefitInfoDTO extends AlipayObject {
 	private Date endDate;
 
 	/**
-	 * 开始时间
+	 * 权益开始时间
 	 */
 	@ApiField("start_date")
 	private Date startDate;

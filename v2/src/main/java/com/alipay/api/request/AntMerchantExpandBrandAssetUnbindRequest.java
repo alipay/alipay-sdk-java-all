@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.expand.brand.asset.unbind request
  * 
  * @author auto create
- * @since 1.0, 2023-06-01 11:41:55
+ * @since 1.0, 2023-09-04 00:36:43
  */
 public class AntMerchantExpandBrandAssetUnbindRequest implements AlipayRequest<AntMerchantExpandBrandAssetUnbindResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InviteResultDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2742335344349971435L;
+	private static final long serialVersionUID = 5756259474799955693L;
 
 	/**
 	 * （被邀请人）用户唯一标识<br>

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.eprint.printer.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 19:46:15
+ * @since 1.0, 2023-08-24 22:51:46
  */
 public class AlipayEcoEprintPrinterDeleteRequest implements AlipayRequest<AlipayEcoEprintPrinterDeleteResponse> {
 

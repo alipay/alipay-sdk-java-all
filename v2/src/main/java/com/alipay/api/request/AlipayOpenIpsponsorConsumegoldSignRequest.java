@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.ipsponsor.consumegold.sign request
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 19:59:10
+ * @since 1.0, 2023-08-23 20:30:00
  */
 public class AlipayOpenIpsponsorConsumegoldSignRequest implements AlipayRequest<AlipayOpenIpsponsorConsumegoldSignResponse> {
 

@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.coupon.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 19:50:37
+ * @since 1.0, 2023-09-03 23:43:34
  */
 public class AlipayInsSceneCouponSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1638411884464737619L;
+	private static final long serialVersionUID = 1476243652718145818L;
 
 	/** 
 	 * 发奖凭证

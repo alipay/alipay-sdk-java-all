@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签约问询
  *
  * @author auto create
- * @since 1.0, 2023-08-22 20:31:10
+ * @since 1.0, 2023-08-29 17:18:32
  */
 public class AlipayCloudCloudbaseWalletSignConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8474792764876876493L;
+	private static final long serialVersionUID = 2459958228536497135L;
 
 	/**
 	 * 支付宝用户ID

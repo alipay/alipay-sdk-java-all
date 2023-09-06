@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账户流水查询
  *
  * @author auto create
- * @since 1.0, 2022-09-20 17:02:13
+ * @since 1.0, 2023-09-06 20:27:42
  */
 public class AlipayFincoreFunddsAccountlogWitnessQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5547738658834151173L;
+	private static final long serialVersionUID = 3275775317144712433L;
 
 	/**
 	 * 子户account_no,查询监管户流水不需要填写

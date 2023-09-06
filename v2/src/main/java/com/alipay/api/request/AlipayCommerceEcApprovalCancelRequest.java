@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.ec.approval.cancel request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 21:16:55
+ * @since 1.0, 2023-09-03 23:51:44
  */
 public class AlipayCommerceEcApprovalCancelRequest implements AlipayRequest<AlipayCommerceEcApprovalCancelResponse> {
 

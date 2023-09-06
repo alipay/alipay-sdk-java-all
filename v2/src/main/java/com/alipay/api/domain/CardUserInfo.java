@@ -11,10 +11,10 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CardUserInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6527669535188127272L;
+	private static final long serialVersionUID = 8344397965169913283L;
 
 	/**
-	 * 开放id
+	 * 用户open_id
 	 */
 	@ApiField("open_id")
 	private String openId;
@@ -28,7 +28,7 @@ public class CardUserInfo extends AlipayObject {
 	private String userUniId;
 
 	/**
-	 * 用户唯一标识user_uni_id类型
+	 * 用户唯一标识类型
 	 */
 	@ApiField("user_uni_id_type")
 	private String userUniIdType;

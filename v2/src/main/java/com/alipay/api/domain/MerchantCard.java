@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MerchantCard extends AlipayObject {
 
-	private static final long serialVersionUID = 8446741591117828945L;
+	private static final long serialVersionUID = 3795767783587333677L;
 
 	/**
 	 * 资金卡余额，单位：元，精确到小数点后两位。
@@ -25,8 +25,11 @@ public class MerchantCard extends AlipayObject {
 
 	/**
 	 * 支付宝业务卡号
+
 说明：
+
 1、开卡成功后返回该参数，需要保存留用；
+
 2、开卡/更新/删卡/查询卡接口请求中不需要传该参数；
 	 */
 	@ApiField("biz_card_no")
@@ -40,8 +43,11 @@ public class MerchantCard extends AlipayObject {
 
 	/**
 	 * 商户外部会员卡卡号
+
 说明：
+
 1、会员卡开卡接口，如果卡类型为外部会员卡，请求中则必须提供该参数；
+
 2、更新、查询、删除等接口，请求中则不需要提供该参数值；
 	 */
 	@ApiField("external_card_no")
@@ -50,8 +56,12 @@ public class MerchantCard extends AlipayObject {
 	/**
 	 * 卡面展示图片的图片ID，通过接口（alipay.offline.material.image.upload）上传图片
 
+
+
 这里预期展示的是个人照片；
+
 图片说明：1M以内，格式bmp、png、jpeg、jpg、gif；
+
 图片尺寸为230*295px，可等比放大；
 	 */
 	@ApiField("front_image_id")

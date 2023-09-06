@@ -14,19 +14,16 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingActivityDeliveryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2744329615167327696L;
+	private static final long serialVersionUID = 4691247196526744972L;
 
 	/**
-	 * 服务商代商户创建投放必选。
-bussinessType设置为ISV_FOR_MERCHANT。
+	 * "服务商代商户创建投放必选。 bussinessType设置为ISV_FOR_MERCHANT。"
 	 */
 	@ApiField("belong_merchant_info")
 	private DeliveryAgencyMerchantInfo belongMerchantInfo;
 
 	/**
-	 * [已废弃]
-待查询的投放配置列表。
-最大数量限制20个。
+	 * "[已废弃] 待查询的投放配置列表。 最大数量限制20个。"
 	 */
 	@ApiListField("delivery_config_list")
 	@ApiField("delivery_config")

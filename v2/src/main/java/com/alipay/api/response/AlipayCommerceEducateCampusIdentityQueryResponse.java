@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.campus.identity.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 08:14:21
+ * @since 1.0, 2023-09-04 01:28:48
  */
 public class AlipayCommerceEducateCampusIdentityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8861779265911462131L;
+	private static final long serialVersionUID = 6293816114693659554L;
 
 	/** 
 	 * 查询用户是否目前是大学生

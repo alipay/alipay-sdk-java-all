@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.ridehailing.antforestenergy.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 19:31:57
+ * @since 1.0, 2023-09-04 01:31:46
  */
 public class AlipayCommerceTransportRidehailingAntforestenergySendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3764715421164598314L;
+	private static final long serialVersionUID = 8738232815512825358L;
 
 	/** 
 	 * 发放能量总额

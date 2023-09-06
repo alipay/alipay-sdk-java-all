@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 通知机构用户入库请求对象
  *
  * @author auto create
- * @since 1.0, 2023-07-06 16:50:02
+ * @since 1.0, 2023-08-31 17:27:51
  */
 public class IotVspOrgUserAddNotifyUserInfoRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 6696933519146421553L;
+	private static final long serialVersionUID = 5646437131463155664L;
 
 	/**
 	 * 授权码

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.logistics.logisticscompany.instantdelivery.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 06:20:09
+ * @since 1.0, 2023-08-24 21:45:51
  */
 public class AlipayCommerceLogisticsLogisticscompanyInstantdeliveryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5336296835691919135L;
+	private static final long serialVersionUID = 7833321863553681896L;
 
 	/** 
 	 * 即时配送公司列表

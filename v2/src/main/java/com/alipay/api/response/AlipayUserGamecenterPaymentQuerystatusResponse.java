@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.gamecenter.payment.querystatus response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-07 17:16:49
+ * @since 1.0, 2023-08-24 22:01:44
  */
 public class AlipayUserGamecenterPaymentQuerystatusResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1522883115269388465L;
+	private static final long serialVersionUID = 3636876949813998695L;
 
 	/** 
 	 * 开发者在下单的时候传入的cp_extra字段

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.edu.kt.settleinfo.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 09:54:04
+ * @since 1.0, 2023-09-04 01:16:23
  */
 public class AlipayEcoEduKtSettleinfoQueryRequest implements AlipayRequest<AlipayEcoEduKtSettleinfoQueryResponse> {
 

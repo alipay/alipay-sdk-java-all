@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 添加员工
  *
  * @author auto create
- * @since 1.0, 2023-08-21 11:13:27
+ * @since 1.0, 2023-08-24 15:18:54
  */
 public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8528244555627335242L;
+	private static final long serialVersionUID = 4467556727779356556L;
 
 	/**
 	 * 员工所属部门
@@ -107,6 +107,12 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	 */
 	@ApiField("sign_return_url")
 	private String signReturnUrl;
+
+	/**
+	 * 签约链接是否需要携带员工身份信息(手机/邮箱)
+	 */
+	@ApiField("sign_url_carry_info")
+	private Boolean signUrlCarryInfo;
 
 	public List<String> getDepartmentIds() {
 		return this.departmentIds;
@@ -211,6 +217,13 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	}
 	public void setSignReturnUrl(String signReturnUrl) {
 		this.signReturnUrl = signReturnUrl;
+	}
+
+	public Boolean getSignUrlCarryInfo() {
+		return this.signUrlCarryInfo;
+	}
+	public void setSignUrlCarryInfo(Boolean signUrlCarryInfo) {
+		this.signUrlCarryInfo = signUrlCarryInfo;
 	}
 
 }

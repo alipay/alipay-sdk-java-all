@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.msaas.mediarecog.mmtcaftscv.template.verify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 10:28:50
+ * @since 1.0, 2023-09-04 00:50:42
  */
 public class AlipayMsaasMediarecogMmtcaftscvTemplateVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4839653972962484475L;
+	private static final long serialVersionUID = 6243263129826395595L;
 
 	/** 
 	 * 模板识别精确度(单位 %)

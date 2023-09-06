@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.lottery.camp.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 09:07:02
+ * @since 1.0, 2023-08-23 21:49:05
  */
 public class AlipayOpenLotteryCampCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3711997866864165812L;
+	private static final long serialVersionUID = 2862812951468943855L;
 
 	/** 
 	 * 返回新建的活动ID

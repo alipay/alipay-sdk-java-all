@@ -11,10 +11,10 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenOperationOpenapiEnventrackingQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6486157291665259924L;
+	private static final long serialVersionUID = 7454533847163872653L;
 
 	/**
-	 * test
+	 * 参数描述
 	 */
 	@ApiField("u_tset")
 	private String uTset;

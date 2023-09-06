@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创意内容元数据
  *
  * @author auto create
- * @since 1.0, 2023-05-18 11:45:44
+ * @since 1.0, 2023-09-05 17:39:58
  */
 public class DspCreativeElement extends AlipayObject {
 
-	private static final long serialVersionUID = 4493117723597781239L;
+	private static final long serialVersionUID = 3358975631837643253L;
 
 	/**
 	 * 创意属性名

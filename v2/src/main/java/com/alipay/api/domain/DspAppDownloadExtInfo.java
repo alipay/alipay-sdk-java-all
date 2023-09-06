@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 应用下载扩展信息
  *
  * @author auto create
- * @since 1.0, 2023-05-18 11:45:44
+ * @since 1.0, 2023-09-05 17:39:58
  */
 public class DspAppDownloadExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2522982676349743832L;
+	private static final long serialVersionUID = 8399272715992155863L;
 
 	/**
 	 * 应用名称

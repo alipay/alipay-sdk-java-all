@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数字人场景布景信息
  *
  * @author auto create
- * @since 1.0, 2023-05-29 15:24:37
+ * @since 1.0, 2023-08-24 23:09:00
  */
 public class StageSceneryVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3881574228863899658L;
+	private static final long serialVersionUID = 3835212299993584789L;
 
 	/**
 	 * 布景预览图信息

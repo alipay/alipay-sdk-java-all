@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.fund.bind.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 07:51:56
+ * @since 1.0, 2023-08-23 20:11:45
  */
 public class AlipayCommerceFundBindQueryRequest implements AlipayRequest<AlipayCommerceFundBindQueryResponse> {
 

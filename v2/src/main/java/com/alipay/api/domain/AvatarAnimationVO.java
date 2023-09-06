@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 虚拟形象动画信息
  *
  * @author auto create
- * @since 1.0, 2023-05-29 15:24:37
+ * @since 1.0, 2023-08-24 23:09:38
  */
 public class AvatarAnimationVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1532376254568999544L;
+	private static final long serialVersionUID = 8478482993715648197L;
 
 	/**
 	 * 对于动画的具体描述

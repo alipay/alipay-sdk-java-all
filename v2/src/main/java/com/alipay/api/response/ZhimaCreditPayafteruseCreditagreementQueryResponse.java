@@ -9,17 +9,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.payafteruse.creditagreement.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-14 11:26:42
+ * @since 1.0, 2023-09-03 23:06:43
  */
 public class ZhimaCreditPayafteruseCreditagreementQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1288945565187632617L;
+	private static final long serialVersionUID = 8459615425389195414L;
 
 	/** 
 	 * 开通/授权状态，VALID: 有效，INVALID: 无效
 	 */
 	@ApiField("agreement_status")
 	private String agreementStatus;
+
+	/** 
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("alipay_user_id")
+	private String alipayUserId;
 
 	/** 
 	 * 开通时间，agreement_status为VALID有效。
@@ -40,6 +46,12 @@ public class ZhimaCreditPayafteruseCreditagreementQueryResponse extends AlipayRe
 	private String extInfo;
 
 	/** 
+	 * 开放ID
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/** 
 	 * 商户外部协议号
 	 */
 	@ApiField("out_agreement_no")
@@ -50,6 +62,13 @@ public class ZhimaCreditPayafteruseCreditagreementQueryResponse extends AlipayRe
 	}
 	public String getAgreementStatus( ) {
 		return this.agreementStatus;
+	}
+
+	public void setAlipayUserId(String alipayUserId) {
+		this.alipayUserId = alipayUserId;
+	}
+	public String getAlipayUserId( ) {
+		return this.alipayUserId;
 	}
 
 	public void setBizTime(Date bizTime) {
@@ -71,6 +90,13 @@ public class ZhimaCreditPayafteruseCreditagreementQueryResponse extends AlipayRe
 	}
 	public String getExtInfo( ) {
 		return this.extInfo;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setOutAgreementNo(String outAgreementNo) {

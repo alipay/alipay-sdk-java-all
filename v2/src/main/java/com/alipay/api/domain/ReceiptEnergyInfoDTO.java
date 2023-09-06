@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ReceiptEnergyInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8614524259929922956L;
+	private static final long serialVersionUID = 7464956629582593448L;
 
 	/**
 	 * 失败错误码

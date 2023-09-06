@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 光华平台商品修改接口
  *
  * @author auto create
- * @since 1.0, 2023-08-18 17:25:52
+ * @since 1.0, 2023-09-05 19:14:16
  */
 public class AlipayEcoCityserviceOpeneventAppitemModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5665371519159118361L;
+	private static final long serialVersionUID = 6614435773483386625L;
 
 	/**
 	 * 通过商品创建接口或者门户创建的商品在光华侧的唯一编码。app_code和product_id二者必填其中一个

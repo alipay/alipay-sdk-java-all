@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.common.tasktemplate.publish response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-06 14:47:01
+ * @since 1.0, 2023-09-04 01:51:43
  */
 public class AlipayCommerceCommonTasktemplatePublishResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2433854659725249583L;
+	private static final long serialVersionUID = 7138724798998318179L;
 
 	/** 
 	 * 任务模板发布结果

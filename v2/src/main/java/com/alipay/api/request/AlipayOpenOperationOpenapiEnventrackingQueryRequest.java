@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.operation.openapi.enventracking.query request
  * 
  * @author auto create
- * @since 1.0, 2023-07-12 19:29:22
+ * @since 1.0, 2023-09-05 17:21:43
  */
 public class AlipayOpenOperationOpenapiEnventrackingQueryRequest implements AlipayRequest<AlipayOpenOperationOpenapiEnventrackingQueryResponse> {
 

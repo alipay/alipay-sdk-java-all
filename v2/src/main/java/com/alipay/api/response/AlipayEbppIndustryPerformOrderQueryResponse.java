@@ -9,20 +9,26 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.perform.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-20 16:14:08
+ * @since 1.0, 2023-09-06 10:36:42
  */
 public class AlipayEbppIndustryPerformOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1323723778583982273L;
+	private static final long serialVersionUID = 4691648865672966294L;
 
 	/** 
-	 * 账单金额(订单原价，金额分)
+	 * 分账状态
+	 */
+	@ApiField("alloc_status")
+	private String allocStatus;
+
+	/** 
+	 * 账单金额(订单原价，单位元)
 	 */
 	@ApiField("bill_amount")
 	private String billAmount;
 
 	/** 
-	 * 订单号
+	 * 业务受理平台业务28位订单号
 	 */
 	@ApiField("bill_no")
 	private String billNo;
@@ -32,6 +38,18 @@ public class AlipayEbppIndustryPerformOrderQueryResponse extends AlipayResponse 
 	 */
 	@ApiField("chargeoff_status")
 	private String chargeoffStatus;
+
+	/** 
+	 * 创单类型
+	 */
+	@ApiField("create_type")
+	private String createType;
+
+	/** 
+	 * 分账完成时间
+	 */
+	@ApiField("gmt_alloc")
+	private Date gmtAlloc;
 
 	/** 
 	 * 销账完结时间
@@ -46,13 +64,19 @@ public class AlipayEbppIndustryPerformOrderQueryResponse extends AlipayResponse 
 	private Date gmtChargeoffStart;
 
 	/** 
-	 * 支付时间
+	 * 订单创建时间
+	 */
+	@ApiField("gmt_create")
+	private Date gmtCreate;
+
+	/** 
+	 * 支付成功时间
 	 */
 	@ApiField("gmt_pay")
 	private Date gmtPay;
 
 	/** 
-	 * 退款时间
+	 * 退款成功时间
 	 */
 	@ApiField("gmt_refund")
 	private Date gmtRefund;
@@ -64,13 +88,13 @@ public class AlipayEbppIndustryPerformOrderQueryResponse extends AlipayResponse 
 	private Date gmtSettle;
 
 	/** 
-	 * 机构code
+	 * 行业业务受理平台分配的机构编码
 	 */
 	@ApiField("inst_code")
 	private String instCode;
 
 	/** 
-	 * 主机构code
+	 * 行业业务受理平台分配的父机构编码
 	 */
 	@ApiField("inst_group")
 	private String instGroup;
@@ -82,7 +106,8 @@ public class AlipayEbppIndustryPerformOrderQueryResponse extends AlipayResponse 
 	private String itemId;
 
 	/** 
-	 * 外部唯一订单号
+	 * 商户订单号。
+订单支付时传入的商户订单号，商家自定义且保证商家系统中唯一。
 	 */
 	@ApiField("out_no")
 	private String outNo;
@@ -94,13 +119,13 @@ public class AlipayEbppIndustryPerformOrderQueryResponse extends AlipayResponse 
 	private String payAmount;
 
 	/** 
-	 * 服务code
+	 * 行业业务受理平台分配的业务服务编码
 	 */
 	@ApiField("service_code")
 	private String serviceCode;
 
 	/** 
-	 * 结算状态
+	 * 实时结算状态
 	 */
 	@ApiField("settle_status")
 	private String settleStatus;
@@ -112,10 +137,23 @@ public class AlipayEbppIndustryPerformOrderQueryResponse extends AlipayResponse 
 	private String status;
 
 	/** 
-	 * 交易订单号
+	 * 支付宝交易订单号
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;
+
+	/** 
+	 * 行业业务受理平台分配的商户服务唯一编码
+	 */
+	@ApiField("unique_code")
+	private String uniqueCode;
+
+	public void setAllocStatus(String allocStatus) {
+		this.allocStatus = allocStatus;
+	}
+	public String getAllocStatus( ) {
+		return this.allocStatus;
+	}
 
 	public void setBillAmount(String billAmount) {
 		this.billAmount = billAmount;
@@ -138,6 +176,20 @@ public class AlipayEbppIndustryPerformOrderQueryResponse extends AlipayResponse 
 		return this.chargeoffStatus;
 	}
 
+	public void setCreateType(String createType) {
+		this.createType = createType;
+	}
+	public String getCreateType( ) {
+		return this.createType;
+	}
+
+	public void setGmtAlloc(Date gmtAlloc) {
+		this.gmtAlloc = gmtAlloc;
+	}
+	public Date getGmtAlloc( ) {
+		return this.gmtAlloc;
+	}
+
 	public void setGmtChargeoffFinish(Date gmtChargeoffFinish) {
 		this.gmtChargeoffFinish = gmtChargeoffFinish;
 	}
@@ -150,6 +202,13 @@ public class AlipayEbppIndustryPerformOrderQueryResponse extends AlipayResponse 
 	}
 	public Date getGmtChargeoffStart( ) {
 		return this.gmtChargeoffStart;
+	}
+
+	public void setGmtCreate(Date gmtCreate) {
+		this.gmtCreate = gmtCreate;
+	}
+	public Date getGmtCreate( ) {
+		return this.gmtCreate;
 	}
 
 	public void setGmtPay(Date gmtPay) {
@@ -234,6 +293,13 @@ public class AlipayEbppIndustryPerformOrderQueryResponse extends AlipayResponse 
 	}
 	public String getTradeNo( ) {
 		return this.tradeNo;
+	}
+
+	public void setUniqueCode(String uniqueCode) {
+		this.uniqueCode = uniqueCode;
+	}
+	public String getUniqueCode( ) {
+		return this.uniqueCode;
 	}
 
 }

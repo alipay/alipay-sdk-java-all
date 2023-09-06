@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.account.exrate.pricing.notify request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 07:18:41
+ * @since 1.0, 2023-08-23 19:51:43
  */
 public class AlipayAccountExratePricingNotifyRequest implements AlipayRequest<AlipayAccountExratePricingNotifyResponse> {
 

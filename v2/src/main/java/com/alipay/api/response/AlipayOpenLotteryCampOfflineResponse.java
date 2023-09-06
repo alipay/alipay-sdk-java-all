@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.lottery.camp.offline response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 21:10:47
+ * @since 1.0, 2023-08-23 19:45:31
  */
 public class AlipayOpenLotteryCampOfflineResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4766264961813337578L;
+	private static final long serialVersionUID = 5645425418835234794L;
 
 	
 

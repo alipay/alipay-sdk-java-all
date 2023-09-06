@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class DeliveryDetailInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6486965287595676918L;
+	private static final long serialVersionUID = 2188967387521215285L;
 
 	/**
 	 * 物流信息
@@ -24,7 +24,7 @@ public class DeliveryDetailInfoVO extends AlipayObject {
 	private List<DeliveryInfoVO> deliveryList;
 
 	/**
-	 * 是否发货完成
+	 * 发货完成标志位，false:未发完 ，true:已发完
 	 */
 	@ApiField("finish_all_delivery")
 	private String finishAllDelivery;

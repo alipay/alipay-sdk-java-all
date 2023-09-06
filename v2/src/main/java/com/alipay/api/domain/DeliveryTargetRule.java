@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class DeliveryTargetRule extends AlipayObject {
 
-	private static final long serialVersionUID = 4482473578336823874L;
+	private static final long serialVersionUID = 8717437862524221789L;
 
 	/**
 	 * 指定品牌id。
@@ -37,9 +37,7 @@ public class DeliveryTargetRule extends AlipayObject {
 	private DeliveryCityCodeRule deliveryCityCodeRule;
 
 	/**
-	 * 曝光商户选取列表。
-说明：需要传入您期望曝光的商户的商户号，传入为空时默认使用投放优惠券活动的适用范围。
-限制：曝光商户号需与投放归属商户号相同，或传入有跨主体授权关系的商户号或有弱绑定关系的M3账号
+	 * "曝光商户选取列表。 说明：需要传入您期望曝光的商户的商户号，传入为空时默认使用投放优惠券活动的适用范围。 限制：曝光商户号需与投放归属商户号相同，或传入有跨主体授权关系的商户号或有弱绑定关系的M3账号"
 	 */
 	@ApiListField("delivery_merchant_infos")
 	@ApiField("delivery_merchant_info")

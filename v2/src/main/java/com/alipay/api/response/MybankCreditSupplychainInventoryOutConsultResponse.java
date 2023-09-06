@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.supplychain.inventory.out.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 23:13:41
+ * @since 1.0, 2023-08-24 22:22:07
  */
 public class MybankCreditSupplychainInventoryOutConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3549449639318962916L;
+	private static final long serialVersionUID = 5594935273454117362L;
 
 	/** 
 	 * 警戒额度

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.wallet.sign.consult request
  * 
  * @author auto create
- * @since 1.0, 2023-08-22 20:31:41
+ * @since 1.0, 2023-08-29 17:18:32
  */
 public class AlipayCloudCloudbaseWalletSignConsultRequest implements AlipayRequest<AlipayCloudCloudbaseWalletSignConsultResponse> {
 

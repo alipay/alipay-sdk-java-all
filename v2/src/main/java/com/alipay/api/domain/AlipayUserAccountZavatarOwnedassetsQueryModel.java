@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 亚运一站通获得服装展示列表
  *
  * @author auto create
- * @since 1.0, 2023-01-06 14:52:04
+ * @since 1.0, 2023-08-30 15:24:17
  */
 public class AlipayUserAccountZavatarOwnedassetsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3139666442947956717L;
+	private static final long serialVersionUID = 7289945424469988572L;
 
 	/**
 	 * 场景信息

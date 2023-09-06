@@ -14,16 +14,16 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class OrderItemInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8337899847345222187L;
+	private static final long serialVersionUID = 6276592876988277363L;
 
 	/**
-	 * 商品个数
+	 * 商品数量
 	 */
 	@ApiField("item_cnt")
 	private Long itemCnt;
 
 	/**
-	 * 商品itemId
+	 * 支付宝平台侧商品ID
 	 */
 	@ApiField("item_id")
 	private String itemId;
@@ -42,25 +42,25 @@ public class OrderItemInfoVO extends AlipayObject {
 	private List<OrderCertificateInfoVO> orderCertificateInfos;
 
 	/**
-	 * 外部商品id
+	 * 商户商品ID
 	 */
 	@ApiField("out_item_id")
 	private String outItemId;
 
 	/**
-	 * 外部商品skuid
+	 * 商户商品sku_id
 	 */
 	@ApiField("out_sku_id")
 	private String outSkuId;
 
 	/**
-	 * 生成订单时商品的售卖价（单位：分），可以跟上传商品接口的价格不一致
+	 * 商品单价，单位：元,精确到小数点后两位，可以跟上传商品接口的价格不一致
 	 */
 	@ApiField("sale_price")
 	private String salePrice;
 
 	/**
-	 * 商品skuid
+	 * 支付宝侧商品skuid
 	 */
 	@ApiField("sku_id")
 	private String skuId;

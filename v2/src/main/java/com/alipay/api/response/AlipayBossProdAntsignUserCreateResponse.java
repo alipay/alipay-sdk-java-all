@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.prod.antsign.user.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 20:04:52
+ * @since 1.0, 2023-09-03 23:00:03
  */
 public class AlipayBossProdAntsignUserCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6885711539558229765L;
+	private static final long serialVersionUID = 6462633439958274376L;
 
 	/** 
 	 * 用户id

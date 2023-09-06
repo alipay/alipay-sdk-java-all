@@ -15,16 +15,16 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenMiniOrderItembillBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6779837757247896623L;
+	private static final long serialVersionUID = 8716235344957887812L;
 
 	/**
-	 * 小程序订单结算日期，格式为"yyyy-MM-dd"，如"2023-03-22"
+	 * 订单创建日期，格式为yyyy-MM-dd
 	 */
 	@ApiField("create_time")
 	private Date createTime;
 
 	/**
-	 * 小程序ID，必填
+	 * 小程序应用ID
 	 */
 	@ApiField("mini_app_id")
 	private String miniAppId;
@@ -61,7 +61,7 @@ public class AlipayOpenMiniOrderItembillBatchqueryModel extends AlipayObject {
 	private String settleStatus;
 
 	/**
-	 * 小程序订单结算日期，格式为"yyyy-MM-dd"，如"2023-03-22"
+	 * 订单结算日期，格式为yyyy-MM-dd
 	 */
 	@ApiField("settlement_date")
 	private Date settlementDate;

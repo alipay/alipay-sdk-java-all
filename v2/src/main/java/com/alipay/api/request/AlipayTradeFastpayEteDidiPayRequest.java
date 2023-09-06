@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.trade.fastpay.ete.didi.pay request
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 19:48:08
+ * @since 1.0, 2023-08-23 20:10:21
  */
 public class AlipayTradeFastpayEteDidiPayRequest implements AlipayRequest<AlipayTradeFastpayEteDidiPayResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.gamecenter.coin.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-14 20:36:56
+ * @since 1.0, 2023-08-23 20:16:41
  */
 public class AlipayUserGamecenterCoinQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1374894965689343418L;
+	private static final long serialVersionUID = 6576644199372487962L;
 
 	/** 
 	 * 用户游戏币余额，单位个，整数

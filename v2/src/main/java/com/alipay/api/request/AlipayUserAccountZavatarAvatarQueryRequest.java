@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.account.zavatar.avatar.query request
  * 
  * @author auto create
- * @since 1.0, 2023-08-22 21:16:40
+ * @since 1.0, 2023-08-25 21:01:42
  */
 public class AlipayUserAccountZavatarAvatarQueryRequest implements AlipayRequest<AlipayUserAccountZavatarAvatarQueryResponse> {
 

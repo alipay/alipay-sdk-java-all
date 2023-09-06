@@ -14,10 +14,10 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class VoucherDetailInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2137176555944439917L;
+	private static final long serialVersionUID = 7393766274723764869L;
 
 	/**
-	 * 优惠券金额，单位为元
+	 * 优惠券金额，单位：元，精确到小数点后两位。
 	 */
 	@ApiField("amount")
 	private String amount;
@@ -35,7 +35,7 @@ public class VoucherDetailInfoDTO extends AlipayObject {
 	private String memo;
 
 	/**
-	 * 商户出资，单位为元
+	 * 商户出资，单位为元,精确到小数点后两位
 	 */
 	@ApiField("merchant_contribute")
 	private String merchantContribute;
@@ -60,19 +60,19 @@ public class VoucherDetailInfoDTO extends AlipayObject {
 	private List<ContributeDetailInfo> otherContributeDetail;
 
 	/**
-	 * 购买该张券时内部出资的部分（包含支付宝/口碑出资的部分）
+	 * 购买该张券时内部出资的部分（包含支付宝/口碑出资的部分），单位：元，精确到小数点后两位
 	 */
 	@ApiField("purchase_ant_contribute")
 	private String purchaseAntContribute;
 
 	/**
-	 * 购买该张券的资金中买家自己出资的部分
+	 * 购买该张券的资金中买家自己出资的部分，单位：元，精确到小数点后两位
 	 */
 	@ApiField("purchase_buyer_contribute")
 	private String purchaseBuyerContribute;
 
 	/**
-	 * 购买该张券的资金中商户出资的部分
+	 * 购买该张券的资金中商户出资的部分，单位：元，精确到小数点后两位
 	 */
 	@ApiField("purchase_merchant_contribute")
 	private String purchaseMerchantContribute;

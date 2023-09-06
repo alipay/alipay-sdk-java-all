@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.prod.antsign.user.create request
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 20:04:52
+ * @since 1.0, 2023-09-03 23:00:03
  */
 public class AlipayBossProdAntsignUserCreateRequest implements AlipayRequest<AlipayBossProdAntsignUserCreateResponse> {
 

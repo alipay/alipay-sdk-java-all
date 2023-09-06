@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.data.feedbackurl.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 09:50:33
+ * @since 1.0, 2023-09-04 00:56:09
  */
 public class ZhimaDataFeedbackurlQueryRequest implements AlipayRequest<ZhimaDataFeedbackurlQueryResponse> {
 

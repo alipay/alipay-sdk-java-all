@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.ccm.ols.chatrecord.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 20:15:41
+ * @since 1.0, 2023-09-04 00:54:33
  */
 public class AlipayIserviceCcmOlsChatrecordQueryRequest implements AlipayRequest<AlipayIserviceCcmOlsChatrecordQueryResponse> {
 

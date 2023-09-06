@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.grade.authbase.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 05:56:57
+ * @since 1.0, 2023-08-24 22:11:45
  */
 public class AlipayUserGradeAuthbaseQueryRequest implements AlipayRequest<AlipayUserGradeAuthbaseQueryResponse> {
 

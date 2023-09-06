@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.signatory.info.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 04:06:40
+ * @since 1.0, 2023-08-23 21:15:23
  */
 public class AlipayUserSignatoryInfoQueryRequest implements AlipayRequest<AlipayUserSignatoryInfoQueryResponse> {
 

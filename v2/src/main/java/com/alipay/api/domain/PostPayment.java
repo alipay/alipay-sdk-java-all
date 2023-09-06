@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用于传递芝麻免押后付费项目相关信息，json格式
  *
  * @author auto create
- * @since 1.0, 2023-07-26 17:59:37
+ * @since 1.0, 2023-08-29 11:03:58
  */
 public class PostPayment extends AlipayObject {
 
-	private static final long serialVersionUID = 2377988632682464392L;
+	private static final long serialVersionUID = 2723117616186747729L;
 
 	/**
-	 * 后付费金额
+	 * 后付费金额，单位为：元（人民币），精确到小数点后两位。
 	 */
 	@ApiField("amount")
 	private String amount;

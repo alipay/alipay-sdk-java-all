@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TemplateActionInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3562553156231967732L;
+	private static final long serialVersionUID = 3888235153175221748L;
 
 	/**
 	 * 行动点业务CODE，商户自定义
@@ -32,14 +32,16 @@ public class TemplateActionInfoDTO extends AlipayObject {
 	private String text;
 
 	/**
-	 * 行动点跳转链接，当url_type取"url"或不填时必填
+	 * 行动点跳转链接，当url_type填"url"或不填时必填，支持http(s)和支付宝schema地址等
 	 */
 	@ApiField("url")
 	private String url;
 
 	/**
-	 * 跳转链接类型，当前支持url和miniAppUrl，不填则默认为url类型：
-url：对应填写url参数，支持http(s)和支付宝schema地址等；
+	 * 跳转链接类型，不填则默认为url类型：
+
+url：对应填写url参数
+
 miniAppUrl: 对应填写mini_app_url参数，跳转至指定的支付宝小程序页面
 	 */
 	@ApiField("url_type")

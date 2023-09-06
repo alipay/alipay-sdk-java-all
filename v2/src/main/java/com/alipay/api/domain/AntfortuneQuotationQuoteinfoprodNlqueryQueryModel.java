@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁财富大模型服务
  *
  * @author auto create
- * @since 1.0, 2023-08-18 11:07:33
+ * @since 1.0, 2023-08-23 18:52:50
  */
 public class AntfortuneQuotationQuoteinfoprodNlqueryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7467192296493892616L;
+	private static final long serialVersionUID = 4833225821945343369L;
 
 	/**
 	 * 应用标识，需要与接口人确定后赋予

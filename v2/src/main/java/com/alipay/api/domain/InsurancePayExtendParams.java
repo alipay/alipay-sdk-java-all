@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医保支付扩展参数
  *
  * @author auto create
- * @since 1.0, 2023-08-18 14:31:43
+ * @since 1.0, 2023-08-24 11:31:02
  */
 public class InsurancePayExtendParams extends AlipayObject {
 
-	private static final long serialVersionUID = 3354857825949218916L;
+	private static final long serialVersionUID = 7831283689597284594L;
 
 	/**
 	 * 医保卡Id；即医保电子凭证授权码

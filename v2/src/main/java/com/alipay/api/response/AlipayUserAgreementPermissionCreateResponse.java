@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.agreement.permission.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-21 15:21:51
+ * @since 1.0, 2023-09-04 00:31:42
  */
 public class AlipayUserAgreementPermissionCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4126131398119362326L;
+	private static final long serialVersionUID = 1136323275374995159L;
 
 	/** 
 	 * 商户代扣扣款许可

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ETC发行方信息查询
  *
  * @author auto create
- * @since 1.0, 2023-01-31 16:11:50
+ * @since 1.0, 2023-08-28 16:31:43
  */
 public class AlipayCommerceTransportEtcSellerconfigQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1218698156873261247L;
+	private static final long serialVersionUID = 3326364455924235287L;
 
 	/**
 	 * 外部宿主商户（ISV）的appid

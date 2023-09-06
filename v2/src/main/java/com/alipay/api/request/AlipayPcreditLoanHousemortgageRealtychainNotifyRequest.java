@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.loan.housemortgage.realtychain.notify request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 05:31:01
+ * @since 1.0, 2023-09-04 02:07:57
  */
 public class AlipayPcreditLoanHousemortgageRealtychainNotifyRequest implements AlipayRequest<AlipayPcreditLoanHousemortgageRealtychainNotifyResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.seller.activity.sign request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 09:02:31
+ * @since 1.0, 2023-08-23 21:11:55
  */
 public class AlipayInsSceneSellerActivitySignRequest implements AlipayRequest<AlipayInsSceneSellerActivitySignResponse> {
 

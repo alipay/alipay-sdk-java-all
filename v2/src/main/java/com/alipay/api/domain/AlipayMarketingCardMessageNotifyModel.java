@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCardMessageNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1834461229131496429L;
+	private static final long serialVersionUID = 1457985782697988166L;
 
 	/**
 	 * 消息通知详情，包含消息通知需要的信息，map 格式存储。
@@ -50,7 +50,7 @@ public class AlipayMarketingCardMessageNotifyModel extends AlipayObject {
 	private String targetCardNo;
 
 	/**
-	 * 卡号ID类型。支持： BIZ_CARD：支付宝业务卡号（商户会员卡场景使用）。
+	 * 卡号ID类型
 	 */
 	@ApiField("target_card_no_type")
 	private String targetCardNoType;

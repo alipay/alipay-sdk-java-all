@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户姓名模型
  *
  * @author auto create
- * @since 1.0, 2021-07-28 12:10:09
+ * @since 1.0, 2023-09-04 10:11:33
  */
 public class TransferUserName extends AlipayObject {
 
-	private static final long serialVersionUID = 3376892746561242881L;
+	private static final long serialVersionUID = 8844896135298963296L;
 
 	/**
 	 * 姓

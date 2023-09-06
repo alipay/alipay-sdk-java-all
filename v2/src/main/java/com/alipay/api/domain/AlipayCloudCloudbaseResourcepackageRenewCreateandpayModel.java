@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 续费下单并支付
  *
  * @author auto create
- * @since 1.0, 2023-08-22 19:33:22
+ * @since 1.0, 2023-08-31 11:46:47
  */
 public class AlipayCloudCloudbaseResourcepackageRenewCreateandpayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5758842774252899674L;
+	private static final long serialVersionUID = 8314391657748129419L;
 
 	/**
 	 * 小程序id

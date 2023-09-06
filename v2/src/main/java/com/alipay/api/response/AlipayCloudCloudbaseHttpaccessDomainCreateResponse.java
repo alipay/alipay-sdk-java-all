@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.httpaccess.domain.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-09 10:41:38
+ * @since 1.0, 2023-08-31 12:16:42
  */
 public class AlipayCloudCloudbaseHttpaccessDomainCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2785153486674663796L;
+	private static final long serialVersionUID = 2289135633666955123L;
 
 	/** 
 	 * 是否创建成功

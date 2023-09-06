@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.bill.msg.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 08:06:50
+ * @since 1.0, 2023-08-24 22:06:46
  */
 public class AlipayCommerceBillMsgApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8266267427362814759L;
+	private static final long serialVersionUID = 2677225691369466798L;
 
 	/** 
 	 * 是否成功

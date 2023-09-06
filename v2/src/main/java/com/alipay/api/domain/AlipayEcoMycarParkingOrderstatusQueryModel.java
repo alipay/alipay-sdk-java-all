@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单状态查询接口
  *
  * @author auto create
- * @since 1.0, 2020-12-31 11:39:24
+ * @since 1.0, 2023-08-28 11:43:33
  */
 public class AlipayEcoMycarParkingOrderstatusQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7142283351331843912L;
+	private static final long serialVersionUID = 7699584346445397362L;
 
 	/**
 	 * 如果商户订单号为空，停车场id和车牌号不能为空，商户订单号优先查询

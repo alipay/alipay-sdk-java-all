@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.ifaatam.messagenotify.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 07:21:17
+ * @since 1.0, 2023-09-03 23:09:47
  */
 public class AlipaySecurityProdIfaatamMessagenotifySendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1169573493469635117L;
+	private static final long serialVersionUID = 7864362264134561794L;
 
 	/** 
 	 * 接口调用返回状态码

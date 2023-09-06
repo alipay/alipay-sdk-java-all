@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.public.odps.crowd.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 19:32:05
+ * @since 1.0, 2023-08-24 21:39:40
  */
 public class AlipayOpenPublicOdpsCrowdSyncRequest implements AlipayRequest<AlipayOpenPublicOdpsCrowdSyncResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 计费项详情
  *
  * @author auto create
- * @since 1.0, 2023-08-22 20:56:11
+ * @since 1.0, 2023-08-29 17:51:49
  */
 public class FeeItem extends AlipayObject {
 
-	private static final long serialVersionUID = 5459596618867182338L;
+	private static final long serialVersionUID = 6852421126293235628L;
 
 	/**
 	 * 计费项编码

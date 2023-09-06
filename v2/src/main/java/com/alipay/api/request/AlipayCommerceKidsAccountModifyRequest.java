@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.kids.account.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-06-12 14:22:17
+ * @since 1.0, 2023-08-24 23:03:51
  */
 public class AlipayCommerceKidsAccountModifyRequest implements AlipayRequest<AlipayCommerceKidsAccountModifyResponse> {
 

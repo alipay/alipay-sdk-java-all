@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.logistics.express.price.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 04:17:02
+ * @since 1.0, 2023-09-04 01:48:35
  */
 public class AlipayEcoLogisticsExpressPriceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8162471597895569977L;
+	private static final long serialVersionUID = 1617897375671698734L;
 
 	/** 
 	 * 续重价格（单位：元）

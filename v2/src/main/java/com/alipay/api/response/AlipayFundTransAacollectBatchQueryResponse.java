@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.aacollect.batch.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 05:45:16
+ * @since 1.0, 2023-09-04 00:11:52
  */
 public class AlipayFundTransAacollectBatchQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5794931358519251912L;
+	private static final long serialVersionUID = 5126942127712683632L;
 
 	/** 
 	 * 批次说明

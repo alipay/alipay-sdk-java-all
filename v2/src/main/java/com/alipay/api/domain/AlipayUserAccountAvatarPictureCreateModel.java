@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数字人图片云渲染
  *
  * @author auto create
- * @since 1.0, 2023-08-15 15:54:42
+ * @since 1.0, 2023-08-30 15:23:51
  */
 public class AlipayUserAccountAvatarPictureCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5282238467276456684L;
+	private static final long serialVersionUID = 8823362651983774716L;
+
+	/**
+	 * json扩展信息
+	 */
+	@ApiField("ext_param")
+	private String extParam;
 
 	/**
 	 * 调用场景节点信息
@@ -30,6 +36,13 @@ public class AlipayUserAccountAvatarPictureCreateModel extends AlipayObject {
 	 */
 	@ApiField("template_id")
 	private String templateId;
+
+	public String getExtParam() {
+		return this.extParam;
+	}
+	public void setExtParam(String extParam) {
+		this.extParam = extParam;
+	}
 
 	public String getNodeCode() {
 		return this.nodeCode;

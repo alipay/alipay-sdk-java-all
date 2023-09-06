@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询任务执行历史列表
  *
  * @author auto create
- * @since 1.0, 2023-08-08 23:37:24
+ * @since 1.0, 2023-08-23 15:21:55
  */
 public class AlipayCloudCloudbaseDatabaseTaskQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8357652465649538615L;
+	private static final long serialVersionUID = 4886119531647824166L;
 
 	/**
 	 * 小程序id
@@ -27,6 +27,12 @@ public class AlipayCloudCloudbaseDatabaseTaskQueryModel extends AlipayObject {
 	 */
 	@ApiField("biz_env_id")
 	private String bizEnvId;
+
+	/**
+	 * 集合名称
+	 */
+	@ApiField("collection_name")
+	private String collectionName;
 
 	/**
 	 * 是否逆序
@@ -65,6 +71,13 @@ public class AlipayCloudCloudbaseDatabaseTaskQueryModel extends AlipayObject {
 	}
 	public void setBizEnvId(String bizEnvId) {
 		this.bizEnvId = bizEnvId;
+	}
+
+	public String getCollectionName() {
+		return this.collectionName;
+	}
+	public void setCollectionName(String collectionName) {
+		this.collectionName = collectionName;
 	}
 
 	public Boolean getDesc() {

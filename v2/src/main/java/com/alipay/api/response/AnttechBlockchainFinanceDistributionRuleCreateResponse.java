@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.finance.distribution.rule.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-29 16:46:51
+ * @since 1.0, 2023-09-04 00:26:43
  */
 public class AnttechBlockchainFinanceDistributionRuleCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5585569265135612122L;
+	private static final long serialVersionUID = 4661771862519373532L;
 
 	/** 
 	 * 收益分配规则Id

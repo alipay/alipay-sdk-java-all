@@ -7,11 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量添加员工接口，添加成功的员工信息
  *
  * @author auto create
- * @since 1.0, 2023-04-02 13:31:32
+ * @since 1.0, 2023-08-31 17:09:33
  */
 public class EcEmployeeBatchAddSuccessInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2296222391779198992L;
+	private static final long serialVersionUID = 2365715471117948716L;
+
+	/**
+	 * 证件号
+	 */
+	@ApiField("employee_cert_no")
+	private String employeeCertNo;
+
+	/**
+	 * 证件类型
+	 */
+	@ApiField("employee_cert_type")
+	private String employeeCertType;
 
 	/**
 	 * 员工邮箱
@@ -42,6 +54,32 @@ public class EcEmployeeBatchAddSuccessInfo extends AlipayObject {
 	 */
 	@ApiField("employee_no")
 	private String employeeNo;
+
+	/**
+	 * 加密证件号
+	 */
+	@ApiField("encrypt_cert_no")
+	private String encryptCertNo;
+
+	/**
+	 * 加密手机号
+	 */
+	@ApiField("encrypt_mobile")
+	private String encryptMobile;
+
+	public String getEmployeeCertNo() {
+		return this.employeeCertNo;
+	}
+	public void setEmployeeCertNo(String employeeCertNo) {
+		this.employeeCertNo = employeeCertNo;
+	}
+
+	public String getEmployeeCertType() {
+		return this.employeeCertType;
+	}
+	public void setEmployeeCertType(String employeeCertType) {
+		this.employeeCertType = employeeCertType;
+	}
 
 	public String getEmployeeEmail() {
 		return this.employeeEmail;
@@ -76,6 +114,20 @@ public class EcEmployeeBatchAddSuccessInfo extends AlipayObject {
 	}
 	public void setEmployeeNo(String employeeNo) {
 		this.employeeNo = employeeNo;
+	}
+
+	public String getEncryptCertNo() {
+		return this.encryptCertNo;
+	}
+	public void setEncryptCertNo(String encryptCertNo) {
+		this.encryptCertNo = encryptCertNo;
+	}
+
+	public String getEncryptMobile() {
+		return this.encryptMobile;
+	}
+	public void setEncryptMobile(String encryptMobile) {
+		this.encryptMobile = encryptMobile;
 	}
 
 }

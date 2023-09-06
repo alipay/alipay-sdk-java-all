@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.file.path.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 04:15:43
+ * @since 1.0, 2023-08-23 19:47:22
  */
 public class AlipayEcoFilePathQueryRequest implements AlipayRequest<AlipayEcoFilePathQueryResponse> {
 

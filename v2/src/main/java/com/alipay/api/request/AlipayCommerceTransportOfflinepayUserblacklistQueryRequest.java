@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.offlinepay.userblacklist.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 20:03:33
+ * @since 1.0, 2023-09-04 01:33:00
  */
 public class AlipayCommerceTransportOfflinepayUserblacklistQueryRequest implements AlipayRequest<AlipayCommerceTransportOfflinepayUserblacklistQueryResponse> {
 

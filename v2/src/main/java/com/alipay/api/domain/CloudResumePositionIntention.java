@@ -7,22 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 求职期望
  *
  * @author auto create
- * @since 1.0, 2023-08-02 17:40:18
+ * @since 1.0, 2023-09-05 19:51:47
  */
 public class CloudResumePositionIntention extends AlipayObject {
 
-	private static final long serialVersionUID = 6283155665729118393L;
+	private static final long serialVersionUID = 5648922939138429883L;
 
 	/**
-	 * 意向城市
+	 * 意向城市Code
 	 */
 	@ApiField("intention_city")
 	private String intentionCity;
 
 	/**
-	 * 职业id
+	 * 职业id 当前字段已废弃(这个字段在目前版本不对外暴露)
 	 */
 	@ApiField("job_id")
+	@Deprecated
 	private String jobId;
 
 	/**
@@ -32,9 +33,10 @@ public class CloudResumePositionIntention extends AlipayObject {
 	private String jobName;
 
 	/**
-	 * 行业id
+	 * 行业id 当前字段已废弃(这个字段在目前版本不对外暴露)
 	 */
 	@ApiField("profession_id")
+	@Deprecated
 	private String professionId;
 
 	/**

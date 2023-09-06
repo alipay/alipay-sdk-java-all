@@ -14,20 +14,24 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class TemplateStyleInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7425728898621535647L;
+	private static final long serialVersionUID = 8277551233614792935L;
 
 	/**
 	 * 背景图片Id，通过接口（alipay.offline.material.image.upload）上传图片
 
+
+
 图片说明：2M以内，格式：bmp、png、jpeg、jpg、gif；
+
 尺寸不小于1020*643px；
+
 图片不得有圆角，不得拉伸变形
 	 */
 	@ApiField("background_id")
 	private String backgroundId;
 
 	/**
-	 * banner图片地址。 通过接口（alipay.offline.material.image.upload）上传图片。
+	 * banner图片id。 通过接口（alipay.offline.material.image.upload）上传图片。
 	 */
 	@ApiField("banner_img_id")
 	private String bannerImgId;
@@ -51,20 +55,19 @@ public class TemplateStyleInfoDTO extends AlipayObject {
 	private String brandName;
 
 	/**
-	 * 钱包端显示名称（字符串长度）
+	 * 钱包端显示名称
 	 */
 	@ApiField("card_show_name")
 	private String cardShowName;
 
 	/**
 	 * 注意：此字段已废弃。
-卡片颜色
 	 */
 	@ApiField("color")
 	private String color;
 
 	/**
-	 * 栏位信息布局。目前只支持list（列表）或grid（宫格）形式。如果为空则默认为list。
+	 * 如果为空则默认为list。
 	 */
 	@ApiField("column_info_layout")
 	private String columnInfoLayout;
@@ -78,8 +81,11 @@ public class TemplateStyleInfoDTO extends AlipayObject {
 
 	/**
 	 * 设置是否在卡面展示（个人头像）图片信息，默认不展示；
+
 当前仅用于身份验证信息类型的个人头像图片；
+
 图片id随创建卡/更新卡时传入；
+
 详见会员卡产品文档。
 	 */
 	@ApiField("front_image_enable")
@@ -87,8 +93,11 @@ public class TemplateStyleInfoDTO extends AlipayObject {
 
 	/**
 	 * 设置是否在卡面展示文案信息，默认不展示；
+
 文案信息分行展示，最多展示4行文案，每行文案分为label和value两部分；
+
 文案实际内容随创建卡/更新卡时传入；
+
 详见会员卡产品说明文档。
 	 */
 	@ApiField("front_text_list_enable")
@@ -97,8 +106,12 @@ public class TemplateStyleInfoDTO extends AlipayObject {
 	/**
 	 * logo的图片ID，通过接口（alipay.offline.material.image.upload）上传图片
 
+
+
 图片说明：1M以内，格式bmp、png、jpeg、jpg、gif；
+
 尺寸不小于500*500px的正方形；
+
 请优先使用商家LOGO；
 	 */
 	@ApiField("logo_id")
@@ -111,7 +124,7 @@ public class TemplateStyleInfoDTO extends AlipayObject {
 	private String slogan;
 
 	/**
-	 * 标语图片， 通过接口（alipay.offline.material.image.upload）上传图片
+	 * 标语图片id， 通过接口（alipay.offline.material.image.upload）上传图片
 	 */
 	@ApiField("slogan_img_id")
 	private String sloganImgId;

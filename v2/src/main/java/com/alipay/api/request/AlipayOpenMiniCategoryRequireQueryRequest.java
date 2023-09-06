@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.category.require.query request
  * 
  * @author auto create
- * @since 1.0, 2023-07-11 22:57:01
+ * @since 1.0, 2023-08-23 21:23:30
  */
 public class AlipayOpenMiniCategoryRequireQueryRequest implements AlipayRequest<AlipayOpenMiniCategoryRequireQueryResponse> {
 

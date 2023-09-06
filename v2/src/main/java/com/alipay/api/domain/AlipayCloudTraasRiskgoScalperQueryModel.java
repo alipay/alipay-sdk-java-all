@@ -1,17 +1,21 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 小程序云行业黄牛风险识别
  *
  * @author auto create
- * @since 1.0, 2023-06-09 15:19:41
+ * @since 1.0, 2023-08-23 15:16:16
  */
 public class AlipayCloudTraasRiskgoScalperQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1526677565248149815L;
+	private static final long serialVersionUID = 3845937587338245443L;
 
 	/**
 	 * 设备唯一号码
@@ -38,6 +42,24 @@ public class AlipayCloudTraasRiskgoScalperQueryModel extends AlipayObject {
 	private String certNo;
 
 	/**
+	 * 证件类型
+	 */
+	@ApiField("cert_type")
+	private String certType;
+
+	/**
+	 * 填写风险咨询对象所关联的账号的真实身份认证时间
+	 */
+	@ApiField("certificate_date")
+	private Date certificateDate;
+
+	/**
+	 * 填入渠道信息，辅助判断该咨询的风险来源
+	 */
+	@ApiField("channel")
+	private String channel;
+
+	/**
 	 * 外部会员账号
 	 */
 	@ApiField("customer_id")
@@ -50,9 +72,10 @@ public class AlipayCloudTraasRiskgoScalperQueryModel extends AlipayObject {
 	private String emailAddress;
 
 	/**
-	 * app所在环境信息
+	 * app所在环境信息 当前字段已废弃(能力升级之后环境字段不再需要)
 	 */
 	@ApiField("env_id")
+	@Deprecated
 	private String envId;
 
 	/**
@@ -68,9 +91,10 @@ public class AlipayCloudTraasRiskgoScalperQueryModel extends AlipayObject {
 	private String imsi;
 
 	/**
-	 * 基础行业信息
+	 * 如果business_code无法涵盖您的行业，在此填写中文描述 当前字段已废弃(能力升级之后该字段不再需要)
 	 */
 	@ApiField("industry")
+	@Deprecated
 	private String industry;
 
 	/**
@@ -98,6 +122,18 @@ public class AlipayCloudTraasRiskgoScalperQueryModel extends AlipayObject {
 	private String lbs;
 
 	/**
+	 * 登陆账号的身份证号码
+	 */
+	@ApiField("login_cert")
+	private String loginCert;
+
+	/**
+	 * 填写风险咨询对象关联账号的登录手机号
+	 */
+	@ApiField("login_phone")
+	private String loginPhone;
+
+	/**
 	 * mac地址或设备唯一标识，如无法提供，可填写为空值（null）
 	 */
 	@ApiField("mac_address")
@@ -122,7 +158,7 @@ public class AlipayCloudTraasRiskgoScalperQueryModel extends AlipayObject {
 	private String merPid;
 
 	/**
-	 * 用于输入用户注册支付宝的手机号码。如参数无法提供，请填写“null”
+	 * 用于直接输入风险咨询对象的手机号码。如参数无法提供，请填写“null”
 	 */
 	@ApiField("mobile_no")
 	private String mobileNo;
@@ -134,13 +170,21 @@ public class AlipayCloudTraasRiskgoScalperQueryModel extends AlipayObject {
 	private String openId;
 
 	/**
-	 * 订单商品数量（json格式描述）
+	 * 订单所有商品信息（json格式描述） 当前字段已废弃(字段类型更新，新字段为： order_items_info_list)
 	 */
 	@ApiField("order_items_info")
+	@Deprecated
 	private RiskImagePlusQueryOrderInfo orderItemsInfo;
 
 	/**
-	 * 支付宝内部交易号
+	 * 订单所有商品信息（json格式描述）
+	 */
+	@ApiListField("order_items_info_list")
+	@ApiField("risk_image_plus_query_order_info")
+	private List<RiskImagePlusQueryOrderInfo> orderItemsInfoList;
+
+	/**
+	 * 填入所咨询的唯一支付宝交易号
 	 */
 	@ApiField("order_no")
 	private String orderNo;
@@ -150,6 +194,24 @@ public class AlipayCloudTraasRiskgoScalperQueryModel extends AlipayObject {
 	 */
 	@ApiField("out_order_no")
 	private String outOrderNo;
+
+	/**
+	 * 填写风险咨询对象所关联账号的注册身份证信息
+	 */
+	@ApiField("registration_cert")
+	private String registrationCert;
+
+	/**
+	 * 填写风险咨询对象所关联的账号的注册时间
+	 */
+	@ApiField("registration_date")
+	private Date registrationDate;
+
+	/**
+	 * 填写咨询对象所关联的注册手机号
+	 */
+	@ApiField("registration_phone")
+	private String registrationPhone;
 
 	/**
 	 * 用于代表商户风险类型，请按示例值填写
@@ -164,7 +226,7 @@ public class AlipayCloudTraasRiskgoScalperQueryModel extends AlipayObject {
 	private String role;
 
 	/**
-	 * 用户购买或使用服务时产生的具体金额。如参数无法提供，请填写“null”，人民币，单位：元
+	 * 用户购买或使用服务时产生的具体金额总数。如参数无法提供，请填写“null”，人民币，单位：元
 	 */
 	@ApiField("sales_amount")
 	private String salesAmount;
@@ -225,6 +287,27 @@ public class AlipayCloudTraasRiskgoScalperQueryModel extends AlipayObject {
 	}
 	public void setCertNo(String certNo) {
 		this.certNo = certNo;
+	}
+
+	public String getCertType() {
+		return this.certType;
+	}
+	public void setCertType(String certType) {
+		this.certType = certType;
+	}
+
+	public Date getCertificateDate() {
+		return this.certificateDate;
+	}
+	public void setCertificateDate(Date certificateDate) {
+		this.certificateDate = certificateDate;
+	}
+
+	public String getChannel() {
+		return this.channel;
+	}
+	public void setChannel(String channel) {
+		this.channel = channel;
 	}
 
 	public String getCustomerId() {
@@ -297,6 +380,20 @@ public class AlipayCloudTraasRiskgoScalperQueryModel extends AlipayObject {
 		this.lbs = lbs;
 	}
 
+	public String getLoginCert() {
+		return this.loginCert;
+	}
+	public void setLoginCert(String loginCert) {
+		this.loginCert = loginCert;
+	}
+
+	public String getLoginPhone() {
+		return this.loginPhone;
+	}
+	public void setLoginPhone(String loginPhone) {
+		this.loginPhone = loginPhone;
+	}
+
 	public String getMacAddress() {
 		return this.macAddress;
 	}
@@ -346,6 +443,13 @@ public class AlipayCloudTraasRiskgoScalperQueryModel extends AlipayObject {
 		this.orderItemsInfo = orderItemsInfo;
 	}
 
+	public List<RiskImagePlusQueryOrderInfo> getOrderItemsInfoList() {
+		return this.orderItemsInfoList;
+	}
+	public void setOrderItemsInfoList(List<RiskImagePlusQueryOrderInfo> orderItemsInfoList) {
+		this.orderItemsInfoList = orderItemsInfoList;
+	}
+
 	public String getOrderNo() {
 		return this.orderNo;
 	}
@@ -358,6 +462,27 @@ public class AlipayCloudTraasRiskgoScalperQueryModel extends AlipayObject {
 	}
 	public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
+	}
+
+	public String getRegistrationCert() {
+		return this.registrationCert;
+	}
+	public void setRegistrationCert(String registrationCert) {
+		this.registrationCert = registrationCert;
+	}
+
+	public Date getRegistrationDate() {
+		return this.registrationDate;
+	}
+	public void setRegistrationDate(Date registrationDate) {
+		this.registrationDate = registrationDate;
+	}
+
+	public String getRegistrationPhone() {
+		return this.registrationPhone;
+	}
+	public void setRegistrationPhone(String registrationPhone) {
+		this.registrationPhone = registrationPhone;
 	}
 
 	public String getRiskType() {

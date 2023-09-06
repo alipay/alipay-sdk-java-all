@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.expand.item.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-07-05 10:57:50
+ * @since 1.0, 2023-08-24 22:26:16
  */
 public class AntMerchantExpandItemDeleteRequest implements AlipayRequest<AntMerchantExpandItemDeleteResponse> {
 

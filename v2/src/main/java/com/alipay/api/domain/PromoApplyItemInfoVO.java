@@ -14,10 +14,10 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PromoApplyItemInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5217389723562459452L;
+	private static final long serialVersionUID = 7312938326832716913L;
 
 	/**
-	 * 商品平台侧ID
+	 * 支付宝平台侧商品ID
 	 */
 	@ApiField("item_id")
 	private String itemId;
@@ -30,7 +30,7 @@ public class PromoApplyItemInfoVO extends AlipayObject {
 	private List<PromoApplyItemDetailInfoVO> promoApplyItemDetailInfos;
 
 	/**
-	 * 商品skuid
+	 * 支付宝侧商品skuid
 	 */
 	@ApiField("sku_id")
 	private String skuId;

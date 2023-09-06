@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账单详情
  *
  * @author auto create
- * @since 1.0, 2023-08-22 20:14:45
+ * @since 1.0, 2023-09-05 11:51:33
  */
 public class Bill extends AlipayObject {
 
-	private static final long serialVersionUID = 7871561461983254127L;
+	private static final long serialVersionUID = 2457268517815898824L;
 
 	/**
 	 * 出账日期
@@ -43,9 +43,10 @@ public class Bill extends AlipayObject {
 	private String bizAppId;
 
 	/**
-	 * 环境id
+	 * 环境id 当前字段已废弃(改用env_id替代)
 	 */
 	@ApiField("biz_env_id")
+	@Deprecated
 	private String bizEnvId;
 
 	/**
@@ -62,6 +63,12 @@ public class Bill extends AlipayObject {
 	 */
 	@ApiField("discount_amount")
 	private String discountAmount;
+
+	/**
+	 * 环境ID
+	 */
+	@ApiField("env_id")
+	private String envId;
 
 	/**
 	 * 环境名称
@@ -173,6 +180,13 @@ public class Bill extends AlipayObject {
 	}
 	public void setDiscountAmount(String discountAmount) {
 		this.discountAmount = discountAmount;
+	}
+
+	public String getEnvId() {
+		return this.envId;
+	}
+	public void setEnvId(String envId) {
+		this.envId = envId;
 	}
 
 	public String getEnvName() {

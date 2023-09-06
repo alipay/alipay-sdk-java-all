@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.contract.borrow.initialize response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 09:12:55
+ * @since 1.0, 2023-08-24 21:53:33
  */
 public class ZhimaCreditContractBorrowInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4389177833799868519L;
+	private static final long serialVersionUID = 4251159299992814245L;
 
 	/** 
 	 * url：mode=0(二维码主扫模式)下，返回的url，在借还的机具上渲染为二维码后，用户使用支付宝扫一扫唤起该页面

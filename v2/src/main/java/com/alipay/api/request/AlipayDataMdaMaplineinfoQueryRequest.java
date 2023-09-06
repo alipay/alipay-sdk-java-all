@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.mda.maplineinfo.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 21:41:48
+ * @since 1.0, 2023-09-04 02:01:45
  */
 public class AlipayDataMdaMaplineinfoQueryRequest implements AlipayRequest<AlipayDataMdaMaplineinfoQueryResponse> {
 

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.riskprofile.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 10:38:19
+ * @since 1.0, 2023-08-23 20:29:28
  */
 public class AlipaySecurityRiskRiskprofileQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6739731988782737218L;
+	private static final long serialVersionUID = 4121784137862534591L;
 
 	/** 
 	 * success 字段为false 是返回失败原因

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.perform.order.refund request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 19:36:36
+ * @since 1.0, 2023-09-06 10:36:42
  */
 public class AlipayEbppIndustryPerformOrderRefundRequest implements AlipayRequest<AlipayEbppIndustryPerformOrderRefundResponse> {
 

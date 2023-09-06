@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改账户状态
  *
  * @author auto create
- * @since 1.0, 2022-08-30 15:13:12
+ * @since 1.0, 2023-09-06 20:26:07
  */
 public class AlipayFincoreFunddsAccountWitnessModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7681389457213483129L;
+	private static final long serialVersionUID = 1112987537851969635L;
 
 	/**
 	 * 必填。账号,即开户时返回的asttshipcore账号。

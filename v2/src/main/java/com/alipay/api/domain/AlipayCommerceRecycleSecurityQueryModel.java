@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 安全回收-用户风险等级查询接口
  *
  * @author auto create
- * @since 1.0, 2023-02-23 17:36:16
+ * @since 1.0, 2023-08-28 10:21:55
  */
 public class AlipayCommerceRecycleSecurityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7731676225296711982L;
+	private static final long serialVersionUID = 1647993651979732786L;
 
 	/**
 	 * 风险咨询主体设备号

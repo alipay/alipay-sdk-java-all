@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景参数模型
  *
  * @author auto create
- * @since 1.0, 2023-06-30 10:21:24
+ * @since 1.0, 2023-08-29 15:56:22
  */
 public class SceneParams extends AlipayObject {
 
-	private static final long serialVersionUID = 2839941471588982379L;
+	private static final long serialVersionUID = 2722298758612713634L;
 
 	/**
 	 * 人脸接入必传，身份核验授权authFlag，R仅授权人脸认证结果，A为认证结果和人脸图像

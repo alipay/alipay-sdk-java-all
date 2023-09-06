@@ -1,19 +1,21 @@
 package com.alipay.api.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 国家医保局线上业务下单支付接口
  *
  * @author auto create
- * @since 1.0, 2023-07-10 10:09:27
+ * @since 1.0, 2023-08-30 22:02:51
  */
 public class AlipayCommerceMedicalPaymentCreateandpayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4654669438283917541L;
+	private static final long serialVersionUID = 8317445288438633454L;
 
 	/**
 	 * 个人账户支付金额
@@ -76,6 +78,12 @@ public class AlipayCommerceMedicalPaymentCreateandpayModel extends AlipayObject 
 	private String orgNo;
 
 	/**
+	 * 医保其他报销金额，单位是元
+	 */
+	@ApiField("other_amount")
+	private String otherAmount;
+
+	/**
 	 * 第三方平台商单号
 	 */
 	@ApiField("out_trade_no")
@@ -104,6 +112,13 @@ public class AlipayCommerceMedicalPaymentCreateandpayModel extends AlipayObject 
 	 */
 	@ApiField("real_amount")
 	private String realAmount;
+
+	/**
+	 * 补充计算金额参数列表
+	 */
+	@ApiListField("subsidy_amount_params")
+	@ApiField("subsidy_amount_param")
+	private List<SubsidyAmountParam> subsidyAmountParams;
 
 	/**
 	 * 订单总金额
@@ -187,6 +202,13 @@ public class AlipayCommerceMedicalPaymentCreateandpayModel extends AlipayObject 
 		this.orgNo = orgNo;
 	}
 
+	public String getOtherAmount() {
+		return this.otherAmount;
+	}
+	public void setOtherAmount(String otherAmount) {
+		this.otherAmount = otherAmount;
+	}
+
 	public String getOutTradeNo() {
 		return this.outTradeNo;
 	}
@@ -220,6 +242,13 @@ public class AlipayCommerceMedicalPaymentCreateandpayModel extends AlipayObject 
 	}
 	public void setRealAmount(String realAmount) {
 		this.realAmount = realAmount;
+	}
+
+	public List<SubsidyAmountParam> getSubsidyAmountParams() {
+		return this.subsidyAmountParams;
+	}
+	public void setSubsidyAmountParams(List<SubsidyAmountParam> subsidyAmountParams) {
+		this.subsidyAmountParams = subsidyAmountParams;
 	}
 
 	public String getTotalAmount() {

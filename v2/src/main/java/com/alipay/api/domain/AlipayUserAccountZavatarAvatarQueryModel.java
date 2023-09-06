@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数字形象查询接口
  *
  * @author auto create
- * @since 1.0, 2023-08-22 21:14:20
+ * @since 1.0, 2023-08-25 20:57:53
  */
 public class AlipayUserAccountZavatarAvatarQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8217887326283278939L;
+	private static final long serialVersionUID = 2216211846584419214L;
 
 	/**
 	 * 数字人形象的版本参数

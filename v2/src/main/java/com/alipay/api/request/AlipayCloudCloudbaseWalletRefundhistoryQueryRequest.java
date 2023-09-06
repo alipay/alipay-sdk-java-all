@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.wallet.refundhistory.query request
  * 
  * @author auto create
- * @since 1.0, 2023-08-22 20:21:41
+ * @since 1.0, 2023-09-01 16:06:42
  */
 public class AlipayCloudCloudbaseWalletRefundhistoryQueryRequest implements AlipayRequest<AlipayCloudCloudbaseWalletRefundhistoryQueryResponse> {
 

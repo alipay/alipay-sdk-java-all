@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 工作经历
  *
  * @author auto create
- * @since 1.0, 2023-08-04 16:56:57
+ * @since 1.0, 2023-08-29 11:10:27
  */
 public class CloudResumeWorkExperience extends AlipayObject {
 
-	private static final long serialVersionUID = 3378865221372257976L;
+	private static final long serialVersionUID = 1667937833823481368L;
 
 	/**
 	 * 公司名称

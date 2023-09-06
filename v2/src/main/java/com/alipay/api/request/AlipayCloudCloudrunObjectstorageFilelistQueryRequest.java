@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudrun.objectstorage.filelist.query request
  * 
  * @author auto create
- * @since 1.0, 2023-08-04 11:26:56
+ * @since 1.0, 2023-08-30 19:36:42
  */
 public class AlipayCloudCloudrunObjectstorageFilelistQueryRequest implements AlipayRequest<AlipayCloudCloudrunObjectstorageFilelistQueryResponse> {
 

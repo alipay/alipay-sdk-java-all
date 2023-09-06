@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.iotdata.anomalydetection.bai.verify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 20:40:36
+ * @since 1.0, 2023-08-23 20:45:33
  */
 public class AlipayDataIotdataAnomalydetectionBaiVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4617285679294265923L;
+	private static final long serialVersionUID = 2427216336546335389L;
 
 	/** 
 	 * 结果为json字串，表示异常的详细信息，例如货物异常是新增和消失区域在图像上的坐标值

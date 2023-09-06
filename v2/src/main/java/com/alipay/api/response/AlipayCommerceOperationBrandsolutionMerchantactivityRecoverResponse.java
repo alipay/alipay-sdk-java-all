@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.brandsolution.merchantactivity.recover response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 08:04:11
+ * @since 1.0, 2023-09-04 00:40:54
  */
 public class AlipayCommerceOperationBrandsolutionMerchantactivityRecoverResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3849454353416178134L;
+	private static final long serialVersionUID = 3614963453982759423L;
 
 	/** 
 	 * 批量修改结果

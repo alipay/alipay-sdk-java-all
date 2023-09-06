@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.ccm.function.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 15:08:29
+ * @since 1.0, 2023-09-04 02:15:38
  */
 public class AlipayIserviceCcmFunctionQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6478562365447925499L;
+	private static final long serialVersionUID = 1273766242526551829L;
 
 	/** 
 	 * 功能点列表

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.digitalmgmt.punchout.basket.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-11 11:11:53
+ * @since 1.0, 2023-09-03 23:46:43
  */
 public class AlipayDigitalmgmtPunchoutBasketCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7646786486261372658L;
+	private static final long serialVersionUID = 1563781261688542499L;
 
 	/** 
 	 * 合并成功后跳转链接

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pay.app.paysharingprod.familypay.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 21:56:57
+ * @since 1.0, 2023-09-04 01:51:45
  */
 public class AlipayPayAppPaysharingprodFamilypayQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7679259661714834289L;
+	private static final long serialVersionUID = 5339224977211691967L;
 
 	/** 
 	 * 指定查询卡时返回该字段

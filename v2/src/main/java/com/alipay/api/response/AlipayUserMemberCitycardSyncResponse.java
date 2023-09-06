@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.member.citycard.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 07:27:00
+ * @since 1.0, 2023-09-04 00:14:47
  */
 public class AlipayUserMemberCitycardSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8513956668397649464L;
+	private static final long serialVersionUID = 3328715924884988326L;
 
 	
 

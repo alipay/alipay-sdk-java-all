@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.digitalmgmt.punchout.product.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-07-11 11:11:53
+ * @since 1.0, 2023-08-24 22:51:43
  */
 public class AlipayDigitalmgmtPunchoutProductSyncRequest implements AlipayRequest<AlipayDigitalmgmtPunchoutProductSyncResponse> {
 

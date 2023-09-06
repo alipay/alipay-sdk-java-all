@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * manjiangtestttt
  *
  * @author auto create
- * @since 1.0, 2023-07-27 20:49:20
+ * @since 1.0, 2023-09-01 16:13:55
  */
 public class AlipayOpenManjiangtesttttDepositbackModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7332697252731256968L;
+	private static final long serialVersionUID = 5286347566918691941L;
 
 	/**
-	 * 1
+	 * 5
 	 */
 	@ApiField("sss")
 	private String sss;

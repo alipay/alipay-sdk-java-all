@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.supplychain.wf.thirdpartylogistics.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 20:31:53
+ * @since 1.0, 2023-09-03 23:06:47
  */
 public class MybankCreditSupplychainWfThirdpartylogisticsSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7213797785668211897L;
+	private static final long serialVersionUID = 2246731376643861563L;
 
 	
 

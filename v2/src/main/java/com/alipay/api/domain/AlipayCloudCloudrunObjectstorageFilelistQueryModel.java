@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询对象存储文件列表
  *
  * @author auto create
- * @since 1.0, 2023-08-02 17:37:52
+ * @since 1.0, 2023-08-30 19:34:53
  */
 public class AlipayCloudCloudrunObjectstorageFilelistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5291689986664192537L;
+	private static final long serialVersionUID = 3435516479325815171L;
 
 	/**
 	 * 内部使用 uiam角色扮演token
@@ -46,6 +46,12 @@ public class AlipayCloudCloudrunObjectstorageFilelistQueryModel extends AlipayOb
 	 */
 	@ApiField("page_size")
 	private Long pageSize;
+
+	/**
+	 * 父级目录过滤参数，传入此参数表示查询所传目录下的文件列表
+	 */
+	@ApiField("parent_directory")
+	private String parentDirectory;
 
 	/**
 	 * 按前缀进行模糊搜索
@@ -86,6 +92,13 @@ public class AlipayCloudCloudrunObjectstorageFilelistQueryModel extends AlipayOb
 	}
 	public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
+	}
+
+	public String getParentDirectory() {
+		return this.parentDirectory;
+	}
+	public void setParentDirectory(String parentDirectory) {
+		this.parentDirectory = parentDirectory;
 	}
 
 	public String getPrefix() {

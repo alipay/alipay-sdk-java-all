@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MergePayOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 2641293698327721338L;
+	private static final long serialVersionUID = 5482572524945778787L;
 
 	/**
 	 * 订单金额

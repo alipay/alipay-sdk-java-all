@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.live.channel.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 11:26:58
+ * @since 1.0, 2023-08-23 20:36:46
  */
 public class AlipayMerchantLiveChannelQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4777422612192959772L;
+	private static final long serialVersionUID = 8896768833776591149L;
 
 	/** 
 	 * 渠道内容，包含主播、文章的上游信息。字符串内容为Map，需要转换

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingActivityVoucherCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6164524352598114784L;
+	private static final long serialVersionUID = 1147394851966854394L;
 
 	/**
 	 * 活动基础信息
@@ -22,7 +22,7 @@ public class AlipayMarketingActivityVoucherCreateModel extends AlipayObject {
 	private ActivityBaseInfo activityBaseInfo;
 
 	/**
-	 * 活动名称。 不对用户进行展示，仅供商家在后台管理活动使用。
+	 * 活动名称。
 	 */
 	@ApiField("activity_name")
 	private String activityName;
@@ -41,11 +41,11 @@ public class AlipayMarketingActivityVoucherCreateModel extends AlipayObject {
 
 	/**
 	 * 用作幂等控制。
-
-幂等作用：
-参数不变的情况下，再次请求返回与上一次相同的结果。
-
-外部接入方需保证业务单号唯一。
+ 
+ 幂等作用：
+ 参数不变的情况下，再次请求返回与上一次相同的结果。
+ 
+ 外部接入方需保证业务单号唯一。
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
@@ -117,7 +117,7 @@ public class AlipayMarketingActivityVoucherCreateModel extends AlipayObject {
 	private PaymentVoucherSendRule voucherSendRule;
 
 	/**
-	 * 优惠类型
+	 * 券类型
 	 */
 	@ApiField("voucher_type")
 	private String voucherType;

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.iotmbs.userpermission.identify request
  * 
  * @author auto create
- * @since 1.0, 2023-06-09 16:26:56
+ * @since 1.0, 2023-08-23 21:06:42
  */
 public class AlipayOpenIotmbsUserpermissionIdentifyRequest implements AlipayRequest<AlipayOpenIotmbsUserpermissionIdentifyResponse> {
 

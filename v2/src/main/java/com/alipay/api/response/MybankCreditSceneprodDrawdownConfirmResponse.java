@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.sceneprod.drawdown.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 19:50:03
+ * @since 1.0, 2023-08-23 19:55:11
  */
 public class MybankCreditSceneprodDrawdownConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5523142368491568997L;
+	private static final long serialVersionUID = 3478993224746627426L;
 
 	/** 
 	 * 网商针对一次客户主动申请生成的申请单据编号

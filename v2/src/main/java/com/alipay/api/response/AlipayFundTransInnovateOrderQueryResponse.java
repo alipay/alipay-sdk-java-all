@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.innovate.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-18 10:49:59
+ * @since 1.0, 2023-08-24 21:46:42
  */
 public class AlipayFundTransInnovateOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4457413945378897158L;
+	private static final long serialVersionUID = 7773164329739919112L;
 
 	/** 
 	 * 预计到账时间，转账到银行卡专用，格式为yyyy-MM-dd HH:mm:ss，转账受理失败不返回。
@@ -34,6 +34,12 @@ public class AlipayFundTransInnovateOrderQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("fail_reason")
 	private String failReason;
+
+	/** 
+	 * 资金的单据号
+	 */
+	@ApiField("fund_order_id")
+	private String fundOrderId;
 
 	/** 
 	 * 预计收费金额（元），转账到银行卡专用，数字格式，精确到小数点后2位，转账失败或转账受理失败不返回。
@@ -96,6 +102,13 @@ public class AlipayFundTransInnovateOrderQueryResponse extends AlipayResponse {
 	}
 	public String getFailReason( ) {
 		return this.failReason;
+	}
+
+	public void setFundOrderId(String fundOrderId) {
+		this.fundOrderId = fundOrderId;
+	}
+	public String getFundOrderId( ) {
+		return this.fundOrderId;
 	}
 
 	public void setOrderFee(String orderFee) {

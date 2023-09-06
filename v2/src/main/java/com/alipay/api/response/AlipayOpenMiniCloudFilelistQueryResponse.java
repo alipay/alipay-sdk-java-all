@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.cloud.filelist.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 19:42:00
+ * @since 1.0, 2023-09-03 23:21:57
  */
 public class AlipayOpenMiniCloudFilelistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2351358552391479321L;
+	private static final long serialVersionUID = 4189792116583749272L;
 
 	/** 
 	 * 文件列表

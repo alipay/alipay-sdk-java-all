@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.benefit.receive.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-28 14:21:57
+ * @since 1.0, 2023-09-04 00:56:43
  */
 public class AlipayCommerceOperationBenefitReceiveConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1161471711634757481L;
+	private static final long serialVersionUID = 2812154466188447443L;
 
 	/** 
 	 * 咨询结果，true表示通过，false不通过

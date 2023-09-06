@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * etc办理资料接口
  *
  * @author auto create
- * @since 1.0, 2019-05-25 14:25:26
+ * @since 1.0, 2023-08-28 16:33:50
  */
 public class AlipayCommerceTransportEtcMediaGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1221419837822999417L;
+	private static final long serialVersionUID = 7196397926182577693L;
 
 	/**
 	 * 业务标识。

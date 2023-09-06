@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fincore.compliance.rcservsmart.funddatasync.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 09:16:56
+ * @since 1.0, 2023-08-24 21:06:46
  */
 public class AlipayFincoreComplianceRcservsmartFunddatasyncSyncRequest implements AlipayRequest<AlipayFincoreComplianceRcservsmartFunddatasyncSyncResponse> {
 

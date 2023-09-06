@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 员工信息
  *
  * @author auto create
- * @since 1.0, 2023-04-03 19:18:09
+ * @since 1.0, 2023-09-04 20:35:20
  */
 public class EmployeeInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3754936191524613545L;
+	private static final long serialVersionUID = 1136282443262959656L;
 
 	/**
 	 * 是否激活
@@ -36,6 +36,18 @@ public class EmployeeInfoDTO extends AlipayObject {
 	private String email;
 
 	/**
+	 * 证件号，手机号，邮箱三个必填其一
+	 */
+	@ApiField("employee_cert_no")
+	private String employeeCertNo;
+
+	/**
+	 * 证件类型，当证件号不为空时必填
+	 */
+	@ApiField("employee_cert_type")
+	private String employeeCertType;
+
+	/**
 	 * 员工id
 	 */
 	@ApiField("employee_id")
@@ -52,6 +64,18 @@ public class EmployeeInfoDTO extends AlipayObject {
 	 */
 	@ApiField("employee_no")
 	private String employeeNo;
+
+	/**
+	 * 加密身份证号，当加密类型不为空时必填
+	 */
+	@ApiField("encrypt_cert_no")
+	private String encryptCertNo;
+
+	/**
+	 * 加密手机号，当加密类型不为空时必填
+	 */
+	@ApiField("encrypt_mobile")
+	private String encryptMobile;
 
 	/**
 	 * 变更时间
@@ -123,6 +147,20 @@ public class EmployeeInfoDTO extends AlipayObject {
 		this.email = email;
 	}
 
+	public String getEmployeeCertNo() {
+		return this.employeeCertNo;
+	}
+	public void setEmployeeCertNo(String employeeCertNo) {
+		this.employeeCertNo = employeeCertNo;
+	}
+
+	public String getEmployeeCertType() {
+		return this.employeeCertType;
+	}
+	public void setEmployeeCertType(String employeeCertType) {
+		this.employeeCertType = employeeCertType;
+	}
+
 	public String getEmployeeId() {
 		return this.employeeId;
 	}
@@ -142,6 +180,20 @@ public class EmployeeInfoDTO extends AlipayObject {
 	}
 	public void setEmployeeNo(String employeeNo) {
 		this.employeeNo = employeeNo;
+	}
+
+	public String getEncryptCertNo() {
+		return this.encryptCertNo;
+	}
+	public void setEncryptCertNo(String encryptCertNo) {
+		this.encryptCertNo = encryptCertNo;
+	}
+
+	public String getEncryptMobile() {
+		return this.encryptMobile;
+	}
+	public void setEncryptMobile(String encryptMobile) {
+		this.encryptMobile = encryptMobile;
 	}
 
 	public String getGmtCreate() {

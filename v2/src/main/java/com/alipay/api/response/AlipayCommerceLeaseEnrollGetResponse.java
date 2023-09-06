@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.lease.enroll.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-11 11:07:41
+ * @since 1.0, 2023-08-23 20:41:42
  */
 public class AlipayCommerceLeaseEnrollGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6888337861179486311L;
+	private static final long serialVersionUID = 3382479652886739287L;
 
 	/** 
 	 * 商品ID

@@ -14,7 +14,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.agent.common.sign request
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 04:16:43
+ * @since 1.0, 2023-09-05 16:05:55
  */
 public class AlipayOpenAgentCommonSignRequest implements AlipayUploadRequest<AlipayOpenAgentCommonSignResponse> {
 
@@ -96,6 +96,26 @@ public class AlipayOpenAgentCommonSignRequest implements AlipayUploadRequest<Ali
 当签约且授权标识 sign_and_auth=true 时，该费率信息必填。
 	 */
 	private String rate;
+
+	/** 
+	* 门店所在城市
+	 */
+	private String shopCityCode;
+
+	/** 
+	* 门店详细地址
+	 */
+	private String shopDetailAddress;
+
+	/** 
+	* 门店所在区/县
+	 */
+	private String shopDistrictCode;
+
+	/** 
+	* 门店所在省份
+	 */
+	private String shopProvinceCode;
 
 	/** 
 	* 店铺内景图片，最小5KB，最大5M，图片格式必须为：png、bmp、gif、jpg、jpeg。
@@ -268,6 +288,34 @@ public class AlipayOpenAgentCommonSignRequest implements AlipayUploadRequest<Ali
 		return this.rate;
 	}
 
+	public void setShopCityCode(String shopCityCode) {
+		this.shopCityCode = shopCityCode;
+	}
+	public String getShopCityCode() {
+		return this.shopCityCode;
+	}
+
+	public void setShopDetailAddress(String shopDetailAddress) {
+		this.shopDetailAddress = shopDetailAddress;
+	}
+	public String getShopDetailAddress() {
+		return this.shopDetailAddress;
+	}
+
+	public void setShopDistrictCode(String shopDistrictCode) {
+		this.shopDistrictCode = shopDistrictCode;
+	}
+	public String getShopDistrictCode() {
+		return this.shopDistrictCode;
+	}
+
+	public void setShopProvinceCode(String shopProvinceCode) {
+		this.shopProvinceCode = shopProvinceCode;
+	}
+	public String getShopProvinceCode() {
+		return this.shopProvinceCode;
+	}
+
 	public void setShopScenePic(FileItem shopScenePic) {
 		this.shopScenePic = shopScenePic;
 	}
@@ -430,6 +478,10 @@ public class AlipayOpenAgentCommonSignRequest implements AlipayUploadRequest<Ali
 		txtParams.put("mini_app_id", this.miniAppId);
 		txtParams.put("product_code", this.productCode);
 		txtParams.put("rate", this.rate);
+		txtParams.put("shop_city_code", this.shopCityCode);
+		txtParams.put("shop_detail_address", this.shopDetailAddress);
+		txtParams.put("shop_district_code", this.shopDistrictCode);
+		txtParams.put("shop_province_code", this.shopProvinceCode);
 		txtParams.put("special_license_type", this.specialLicenseType);
 		txtParams.put("web_sites", this.webSites == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.webSites, true));
 		txtParams.put("web_status", this.webStatus);

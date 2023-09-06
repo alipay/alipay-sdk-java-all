@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * wzw公有complex
  *
  * @author auto create
- * @since 1.0, 2023-08-08 11:01:31
+ * @since 1.0, 2023-09-06 17:49:40
  */
 public class PublicComplex extends AlipayObject {
 
-	private static final long serialVersionUID = 8722678266385334785L;
+	private static final long serialVersionUID = 5652374352214399416L;
 
 	/**
 	 * test
@@ -35,6 +35,12 @@ public class PublicComplex extends AlipayObject {
 	 */
 	@ApiField("test_date")
 	private Date testDate;
+
+	/**
+	 * test
+	 */
+	@ApiField("test_new")
+	private String testNew;
 
 	/**
 	 * test
@@ -87,6 +93,13 @@ public class PublicComplex extends AlipayObject {
 	}
 	public void setTestDate(Date testDate) {
 		this.testDate = testDate;
+	}
+
+	public String getTestNew() {
+		return this.testNew;
+	}
+	public void setTestNew(String testNew) {
+		this.testNew = testNew;
 	}
 
 	public List<Long> getTestNumber() {

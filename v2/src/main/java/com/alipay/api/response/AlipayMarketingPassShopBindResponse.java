@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.pass.shop.bind response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 08:32:29
+ * @since 1.0, 2023-08-23 21:52:10
  */
 public class AlipayMarketingPassShopBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3489114455428546999L;
+	private static final long serialVersionUID = 1424259126674826412L;
 
 	/** 
 	 * 本次调用绑定的门店数量

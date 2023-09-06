@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.morse.marketing.bills.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 21:26:49
+ * @since 1.0, 2023-09-04 00:16:45
  */
 public class AnttechMorseMarketingBillsBatchqueryRequest implements AlipayRequest<AnttechMorseMarketingBillsBatchqueryResponse> {
 

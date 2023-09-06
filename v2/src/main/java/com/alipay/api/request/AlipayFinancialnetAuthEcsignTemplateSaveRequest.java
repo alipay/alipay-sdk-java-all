@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.financialnet.auth.ecsign.template.save request
  * 
  * @author auto create
- * @since 1.0, 2023-07-27 11:31:55
+ * @since 1.0, 2023-09-03 23:56:42
  */
 public class AlipayFinancialnetAuthEcsignTemplateSaveRequest implements AlipayRequest<AlipayFinancialnetAuthEcsignTemplateSaveResponse> {
 

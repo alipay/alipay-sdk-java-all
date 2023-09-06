@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.operation.openbizmock.testpathkey.query request
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 04:56:43
+ * @since 1.0, 2023-09-05 18:21:43
  */
 public class AlipayOpenOperationOpenbizmockTestpathkeyQueryRequest implements AlipayUploadRequest<AlipayOpenOperationOpenbizmockTestpathkeyQueryResponse> {
 
@@ -54,6 +54,11 @@ public class AlipayOpenOperationOpenbizmockTestpathkeyQueryRequest implements Al
 	* ceshi
 	 */
 	private String keykey;
+
+	/** 
+	* 1
+	 */
+	private String testPrice;
 
 	public void setA(String a) {
 		this.a = a;
@@ -102,6 +107,13 @@ public class AlipayOpenOperationOpenbizmockTestpathkeyQueryRequest implements Al
 	}
 	public String getKeykey() {
 		return this.keykey;
+	}
+
+	public void setTestPrice(String testPrice) {
+		this.testPrice = testPrice;
+	}
+	public String getTestPrice() {
+		return this.testPrice;
 	}
 	private String terminalType;
 	private String terminalInfo;
@@ -170,6 +182,7 @@ public class AlipayOpenOperationOpenbizmockTestpathkeyQueryRequest implements Al
 		txtParams.put("d", this.d);
 		txtParams.put("e", this.e);
 		txtParams.put("keykey", this.keykey);
+		txtParams.put("test_price", this.testPrice);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}

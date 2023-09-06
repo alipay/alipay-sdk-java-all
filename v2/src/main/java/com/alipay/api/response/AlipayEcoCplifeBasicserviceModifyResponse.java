@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.cplife.basicservice.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 19:17:07
+ * @since 1.0, 2023-08-23 21:23:47
  */
 public class AlipayEcoCplifeBasicserviceModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6324188757416514945L;
+	private static final long serialVersionUID = 3798684419341734458L;
 
 	/** 
 	 * 服务变更成功后，若从当前状态到下一状态需要完成下一步条件代码，则返回该字段，否则不返回。

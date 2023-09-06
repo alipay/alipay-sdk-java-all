@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 消息母板查询接口
  *
  * @author auto create
- * @since 1.0, 2023-02-27 14:37:15
+ * @since 1.0, 2023-08-23 19:23:16
  */
 public class AlipayOpenMiniMessageTemplatelibBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4476134343526499477L;
+	private static final long serialVersionUID = 1439718731441426851L;
 
 	/**
 	 * 若需要查询带push的消息模板则传true，否则传false

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fincore.compliance.template.instancebycomponent.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 05:16:55
+ * @since 1.0, 2023-09-04 01:01:46
  */
 public class AlipayFincoreComplianceTemplateInstancebycomponentCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4253916971845272294L;
+	private static final long serialVersionUID = 5243427741687768773L;
 
 	/** 
 	 * 业务单据号

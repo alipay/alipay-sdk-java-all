@@ -13,12 +13,15 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MdCodeInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2797325454914854878L;
+	private static final long serialVersionUID = 4699941583176991369L;
 
 	/**
 	 * 本次回传动态码的状态：
+
 SUCCESS: 本次发码成功
+
 FAIL_RETRY: 本次发码失败，且需要支付宝重试（重新通知商户发码）
+
 FAIL_NOT_RETRY: 本次发码失败，且无需支付宝重试（无需重新通知商户发码）
 	 */
 	@ApiField("code_status")
@@ -26,7 +29,9 @@ FAIL_NOT_RETRY: 本次发码失败，且无需支付宝重试（无需重新通�
 
 	/**
 	 * 动态码的码值：
+
 code_status为SUCCESS时必填；
+
 基于此码值生成条形码或二维码用于扫码核销。
 	 */
 	@ApiField("code_value")
@@ -34,13 +39,16 @@ code_status为SUCCESS时必填；
 
 	/**
 	 * 当前动态码的过期（失效）时间：
+
  code_status为SUCCESS时必填。
 	 */
 	@ApiField("expire_time")
 	private Date expireTime;
 
 	/**
-	 * 商户回传动态码的时间戳。
+	 * 商户回传动态码的时间戳 (单位秒)。
+
+
 
 即商户调接口回传动态码时刻对应的long类型时间戳，用于区分不同的发码请求。
 	 */

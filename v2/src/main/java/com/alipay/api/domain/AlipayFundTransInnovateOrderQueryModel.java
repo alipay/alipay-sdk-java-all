@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金开放订单查询
  *
  * @author auto create
- * @since 1.0, 2023-08-17 11:08:12
+ * @since 1.0, 2023-08-24 21:46:17
  */
 public class AlipayFundTransInnovateOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3236519768266255771L;
+	private static final long serialVersionUID = 5641944959512539441L;
 
 	/**
 	 * 描述特定的业务场景，如果传递了out_biz_no则该字段为必传。房租为：HOUSE_RENT

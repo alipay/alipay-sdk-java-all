@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.account.exrate.config.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 04:05:38
+ * @since 1.0, 2023-09-04 01:53:54
  */
 public class AlipayAccountExrateConfigQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3569387465252419652L;
+	private static final long serialVersionUID = 2529781728129564144L;
 
 	/** 
 	 * scheduler配置的自定义键值对

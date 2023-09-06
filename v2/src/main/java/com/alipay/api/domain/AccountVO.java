@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 银行账号信息
  *
  * @author auto create
- * @since 1.0, 2023-06-21 14:50:32
+ * @since 1.0, 2023-09-06 16:13:49
  */
 public class AccountVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2399915539379345418L;
+	private static final long serialVersionUID = 5172282573238239216L;
 
 	/**
 	 * 户名

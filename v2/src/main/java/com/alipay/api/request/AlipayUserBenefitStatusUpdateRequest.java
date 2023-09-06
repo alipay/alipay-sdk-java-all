@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.benefit.status.update request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 22:11:06
+ * @since 1.0, 2023-08-23 19:55:44
  */
 public class AlipayUserBenefitStatusUpdateRequest implements AlipayRequest<AlipayUserBenefitStatusUpdateResponse> {
 

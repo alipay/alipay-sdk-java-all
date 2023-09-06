@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 逆向指令增加逆向业务场景及逆向物流单号
  *
  * @author auto create
- * @since 1.0, 2023-06-15 19:30:09
+ * @since 1.0, 2023-09-06 17:38:05
  */
 public class AssetReverseItem extends AlipayObject {
 
-	private static final long serialVersionUID = 5134315397224555618L;
+	private static final long serialVersionUID = 3729162621676811343L;
 
 	/**
 	 * 行为类型
@@ -34,8 +37,9 @@ public class AssetReverseItem extends AlipayObject {
 	/**
 	 * returning goods info
 	 */
-	@ApiField("asset_reverse_goods_items")
-	private AssetReverseGoodsItem assetReverseGoodsItems;
+	@ApiListField("asset_reverse_goods_items")
+	@ApiField("asset_reverse_goods_item")
+	private List<AssetReverseGoodsItem> assetReverseGoodsItems;
 
 	/**
 	 * 取消订单或退货唯一Id
@@ -187,10 +191,10 @@ USER_WITH_GOODS_SELF_MAIL_BACK-用户已收到货-用户直接寄回，供应商
 		this.applyOrderItemId = applyOrderItemId;
 	}
 
-	public AssetReverseGoodsItem getAssetReverseGoodsItems() {
+	public List<AssetReverseGoodsItem> getAssetReverseGoodsItems() {
 		return this.assetReverseGoodsItems;
 	}
-	public void setAssetReverseGoodsItems(AssetReverseGoodsItem assetReverseGoodsItems) {
+	public void setAssetReverseGoodsItems(List<AssetReverseGoodsItem> assetReverseGoodsItems) {
 		this.assetReverseGoodsItems = assetReverseGoodsItems;
 	}
 

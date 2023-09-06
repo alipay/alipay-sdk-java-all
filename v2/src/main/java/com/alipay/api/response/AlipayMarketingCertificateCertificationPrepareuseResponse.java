@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.certificate.certification.prepareuse response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 05:01:43
+ * @since 1.0, 2023-08-31 21:21:41
  */
 public class AlipayMarketingCertificateCertificationPrepareuseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5386263917527338377L;
+	private static final long serialVersionUID = 2125171283674711752L;
 
 	/** 
 	 * 凭证信息列表

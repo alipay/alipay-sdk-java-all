@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.bkcsplatform.pushwindowresult.query request
  * 
  * @author auto create
- * @since 1.0, 2023-06-13 14:36:56
+ * @since 1.0, 2023-09-03 23:31:42
  */
 public class AlipayIserviceBkcsplatformPushwindowresultQueryRequest implements AlipayRequest<AlipayIserviceBkcsplatformPushwindowresultQueryResponse> {
 

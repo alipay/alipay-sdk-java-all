@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 自然月维度用量信息
  *
  * @author auto create
- * @since 1.0, 2023-08-22 20:20:45
+ * @since 1.0, 2023-08-31 12:03:07
  */
 public class AlipayCloudCloudbaseResourceusageMonthlyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2824635816717154727L;
+	private static final long serialVersionUID = 8179222885621725922L;
 
 	/**
 	 * 小程序id

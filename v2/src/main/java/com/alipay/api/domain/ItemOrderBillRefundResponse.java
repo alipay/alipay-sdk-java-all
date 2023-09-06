@@ -11,10 +11,10 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ItemOrderBillRefundResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 4572216422363496522L;
+	private static final long serialVersionUID = 8729544741131845819L;
 
 	/**
-	 * 退款金额（元）
+	 * 退款金额，单位：元，精确到小数点后两位
 	 */
 	@ApiField("refund_fee")
 	private String refundFee;

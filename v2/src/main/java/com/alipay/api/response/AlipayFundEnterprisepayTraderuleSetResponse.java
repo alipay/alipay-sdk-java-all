@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.enterprisepay.traderule.set response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 08:40:18
+ * @since 1.0, 2023-09-04 00:24:05
  */
 public class AlipayFundEnterprisepayTraderuleSetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7769934462533276879L;
+	private static final long serialVersionUID = 2454127598115215753L;
 
 	
 

@@ -11,16 +11,16 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DeliveryItemInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8523924348396135597L;
+	private static final long serialVersionUID = 1692232212174954595L;
 
 	/**
-	 * 商家侧item id
+	 * 商户商品ID
 	 */
 	@ApiField("out_item_id")
 	private String outItemId;
 
 	/**
-	 * 商家侧sku id
+	 * 商户商品sku_id
 	 */
 	@ApiField("out_sku_id")
 	private String outSkuId;

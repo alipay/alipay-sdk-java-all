@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车主服务黑名单同步接口
  *
  * @author auto create
- * @since 1.0, 2020-06-22 17:12:13
+ * @since 1.0, 2023-08-28 16:37:33
  */
 public class AlipayCommerceTransportVehicleownerBlacklistSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5441976612887764625L;
+	private static final long serialVersionUID = 2815891117822176264L;
 
 	/**
 	 * 支付宝生成的签约协议编号

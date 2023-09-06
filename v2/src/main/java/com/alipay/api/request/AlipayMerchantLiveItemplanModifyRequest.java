@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.live.itemplan.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 19:32:00
+ * @since 1.0, 2023-09-04 02:06:45
  */
 public class AlipayMerchantLiveItemplanModifyRequest implements AlipayRequest<AlipayMerchantLiveItemplanModifyResponse> {
 

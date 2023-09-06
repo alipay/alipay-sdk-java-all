@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingActivityOrdervoucherUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4739679433871382667L;
+	private static final long serialVersionUID = 8295486217516467131L;
 
 	/**
 	 * 优惠券活动id
@@ -30,13 +30,7 @@ public class AlipayMarketingActivityOrdervoucherUseModel extends AlipayObject {
 	private Date bizDt;
 
 	/**
-	 * 商品明细信息。
-
-
-
-限制：
-
-当前交易中存在商品信息，则建议传入商品明细信息。
+	 * "商品明细信息。 限制： 当前交易中存在商品信息，则建议传入商品明细信息。"
 	 */
 	@ApiListField("goods_detail")
 	@ApiField("goods_detail_d_t_o")

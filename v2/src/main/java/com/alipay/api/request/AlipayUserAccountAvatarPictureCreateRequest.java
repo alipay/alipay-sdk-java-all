@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.account.avatar.picture.create request
  * 
  * @author auto create
- * @since 1.0, 2023-08-15 15:54:42
+ * @since 1.0, 2023-09-03 23:21:41
  */
 public class AlipayUserAccountAvatarPictureCreateRequest implements AlipayRequest<AlipayUserAccountAvatarPictureCreateResponse> {
 

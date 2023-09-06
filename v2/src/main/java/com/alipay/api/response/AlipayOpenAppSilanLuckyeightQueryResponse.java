@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.silan.luckyeight.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 19:32:59
+ * @since 1.0, 2023-09-04 01:47:28
  */
 public class AlipayOpenAppSilanLuckyeightQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2441268832234819572L;
+	private static final long serialVersionUID = 3783232121165844488L;
 
 	
 

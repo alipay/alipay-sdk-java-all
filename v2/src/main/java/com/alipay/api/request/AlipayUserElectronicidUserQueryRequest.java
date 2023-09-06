@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.electronicid.user.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 20:25:15
+ * @since 1.0, 2023-08-24 22:43:57
  */
 public class AlipayUserElectronicidUserQueryRequest implements AlipayRequest<AlipayUserElectronicidUserQueryResponse> {
 

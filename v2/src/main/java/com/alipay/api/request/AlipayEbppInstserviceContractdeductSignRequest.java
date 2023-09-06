@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.instservice.contractdeduct.sign request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 07:57:00
+ * @since 1.0, 2023-08-24 21:41:48
  */
 public class AlipayEbppInstserviceContractdeductSignRequest implements AlipayRequest<AlipayEbppInstserviceContractdeductSignResponse> {
 

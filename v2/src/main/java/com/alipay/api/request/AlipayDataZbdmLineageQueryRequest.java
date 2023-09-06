@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.zbdm.lineage.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 19:34:15
+ * @since 1.0, 2023-08-23 20:49:55
  */
 public class AlipayDataZbdmLineageQueryRequest implements AlipayRequest<AlipayDataZbdmLineageQueryResponse> {
 

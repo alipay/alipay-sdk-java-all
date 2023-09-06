@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.contract.management.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 21:50:56
+ * @since 1.0, 2023-09-04 00:01:04
  */
 public class AlipayBossContractManagementCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1642887986873524562L;
+	private static final long serialVersionUID = 7799624741753683994L;
 
 	/** 
 	 * 撤销操作提示

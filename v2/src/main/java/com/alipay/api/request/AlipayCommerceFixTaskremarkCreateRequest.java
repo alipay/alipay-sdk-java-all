@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.fix.taskremark.create request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 19:34:00
+ * @since 1.0, 2023-08-23 20:58:36
  */
 public class AlipayCommerceFixTaskremarkCreateRequest implements AlipayRequest<AlipayCommerceFixTaskremarkCreateResponse> {
 
