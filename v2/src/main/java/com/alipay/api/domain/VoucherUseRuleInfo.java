@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VoucherUseRuleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7633465565638353471L;
+	private static final long serialVersionUID = 8762867873118467328L;
 
 	/**
 	 * 核销次数限制。
@@ -20,7 +20,7 @@ public class VoucherUseRuleInfo extends AlipayObject {
 	private Long quantityLimitPerUser;
 
 	/**
-	 * 核销周期。
+	 * 周期限领配置,限制每人在固定周期内领取张数(voucher_quantity_limit_per_user),默认LIFE_CYCLE
 	 */
 	@ApiField("quantity_limit_per_user_period_type")
 	private String quantityLimitPerUserPeriodType;

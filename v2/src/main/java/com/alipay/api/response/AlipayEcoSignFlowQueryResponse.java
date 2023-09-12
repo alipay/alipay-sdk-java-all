@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.sign.flow.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 05:41:26
+ * @since 1.0, 2023-09-11 19:23:25
  */
 public class AlipayEcoSignFlowQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3429141783747233576L;
+	private static final long serialVersionUID = 7781249557552483421L;
 
 	/** 
 	 * 文件主题

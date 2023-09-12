@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.innerbaseinfo.applogo.upload request
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 05:32:18
+ * @since 1.0, 2023-09-11 17:02:44
  */
 public class AlipayOpenMiniInnerbaseinfoApplogoUploadRequest implements AlipayUploadRequest<AlipayOpenMiniInnerbaseinfoApplogoUploadResponse> {
 

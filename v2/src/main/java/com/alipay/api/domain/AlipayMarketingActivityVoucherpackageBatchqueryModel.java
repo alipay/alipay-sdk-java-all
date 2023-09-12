@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingActivityVoucherpackageBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6665927969348823194L;
+	private static final long serialVersionUID = 1869197841811977465L;
 
 	/**
 	 * 分页参数，需要查询的页码，起始页是1
@@ -34,7 +34,7 @@ public class AlipayMarketingActivityVoucherpackageBatchqueryModel extends Alipay
 	private Date voucherPackagePurchaseStartTime;
 
 	/**
-	 * 券包状态：不指定可查全部状态，指定时只支持查单个状态
+	 * 券包状态
 	 */
 	@ApiField("voucher_package_status")
 	private String voucherPackageStatus;

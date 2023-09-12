@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 履约信息查询接口
  *
  * @author auto create
- * @since 1.0, 2023-07-03 11:39:06
+ * @since 1.0, 2023-09-11 14:52:08
  */
 public class AlipayOpenAppDeliveryInfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2851483391142387118L;
+	private static final long serialVersionUID = 5615885297192155318L;
 
 	/**
 	 * 查询的履约ID列表，与履约类型不能同时为空。建议接入方在履约同步时持久化存储履约ID信息，最大支持上限500

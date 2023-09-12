@@ -11,10 +11,10 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VoucherUseDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4877895566947293218L;
+	private static final long serialVersionUID = 7444573179845693237L;
 
 	/**
-	 * 本次核销次数
+	 * 本次核销次数（不包含撤销核销的次数）
 	 */
 	@ApiField("voucher_use_times")
 	private Long voucherUseTimes;

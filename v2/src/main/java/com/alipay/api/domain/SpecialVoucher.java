@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SpecialVoucher extends AlipayObject {
 
-	private static final long serialVersionUID = 7567593462972762924L;
+	private static final long serialVersionUID = 2184252827765426789L;
 
 	/**
 	 * 门槛金额。说明：该字段可不填，认为无门槛;
@@ -20,14 +20,13 @@ public class SpecialVoucher extends AlipayObject {
 	private String floorAmount;
 
 	/**
-	 * 商品名称。说明：
-该字段可不填，填入则origin_amount必填。
+	 * 商品名称。
 	 */
 	@ApiField("goods_name")
 	private String goodsName;
 
 	/**
-	 * 原价。说明：该字段可不填，填入则商品名称goods_name必填;
+	 * 原价。说明：该字段可不填，填入商品名称goods_name则必填;
 	 */
 	@ApiField("origin_amount")
 	private String originAmount;

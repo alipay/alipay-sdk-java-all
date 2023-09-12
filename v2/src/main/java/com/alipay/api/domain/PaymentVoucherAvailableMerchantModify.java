@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PaymentVoucherAvailableMerchantModify extends AlipayObject {
 
-	private static final long serialVersionUID = 5492474595919929163L;
+	private static final long serialVersionUID = 3475526215563156469L;
 
 	/**
 	 * 优惠券可以核销的直连商户PID。默认不修改。
@@ -28,7 +28,7 @@ public class PaymentVoucherAvailableMerchantModify extends AlipayObject {
 	/**
 	 * 优惠券可以核销的间连商户SMID。默认不修改。
  限制： 
-1、核销商户范围只能增大不能减小。
+ 1、核销商户范围只能增大不能减小。
 	 */
 	@ApiListField("available_smids")
 	@ApiField("string")

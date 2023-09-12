@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PaymentVoucherDisplayInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5139326853389995866L;
+	private static final long serialVersionUID = 2527562453721746267L;
 
 	/**
 	 * 商户品牌名称。
@@ -42,9 +42,9 @@ public class PaymentVoucherDisplayInfo extends AlipayObject {
 	private List<String> voucherDetailImages;
 
 	/**
-	 * 券详情页封面图，会展示在用户支付宝卡包券详情页 需要通过 alipay.marketing.material.image.upload接口上传图片，指定file_key为PROMO_VOUCHER_IMAGE，接口返回的resource_id即为该参数的值 限制: 该字段在兑换券场景下必传 上传图片尺寸670*335，支持格式：png、jpg、jpeg、bmp，大小不超过2MB
- 限制:
- 1.指定可核销商品(available_goods)时必传
+	 * 券详情页封面图，会展示在用户支付宝卡包券详情页 需要通过  alipay.marketing.material.image.upload接口上传图片，指定file_key为PROMO_VOUCHER_IMAGE，接口返回的resource_id即为该参数的值  限制: 该字段在兑换券场景下必传 上传图片尺寸670*335，支持格式：png、jpg、jpeg、bmp，大小不超过2MB
+限制:
+1.指定可核销商品(available_goods)时必传
 	 */
 	@ApiField("voucher_image")
 	private String voucherImage;

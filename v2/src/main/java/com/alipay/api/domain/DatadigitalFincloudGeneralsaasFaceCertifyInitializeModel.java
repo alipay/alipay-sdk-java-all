@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸核身服务初始化
  *
  * @author auto create
- * @since 1.0, 2023-05-22 20:12:51
+ * @since 1.0, 2023-09-08 12:58:23
  */
 public class DatadigitalFincloudGeneralsaasFaceCertifyInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7228841119526757279L;
+	private static final long serialVersionUID = 5343273164999927887L;
 
 	/**
 	 * H5人脸核身场景码。入参支持的场景码。
@@ -26,16 +26,16 @@ public class DatadigitalFincloudGeneralsaasFaceCertifyInitializeModel extends Al
 	private String faceContrastPicture;
 
 	/**
-	 * 需要验证的身份信息(json)字段说明如下： identity_type： 身份信息参数类型，固定为 CERT_INFO cert_name：真实姓名，必填 cert_no：证件号码，必填 phone_no：手机号码，选填 cert_type：证件类型，必填，枚举支持： IDENTITY_CARD：身份证
+	 * 需要验证的身份信息
 	 */
 	@ApiField("identity_param")
-	private String identityParam;
+	private OpenCertifyIdentifyInfo identityParam;
 
 	/**
-	 * 商户个性化配置，格式为json，详细支持的字段说明为： return_url：需要回跳的目标地址，必填，一般指定为商户业务页面 face_reserve_strategy：人脸保存策略，非必填；reserve(保存活体人脸)/never(不保存活体人脸)，不传默认为reserve
+	 * 商户个性化配置信息
 	 */
 	@ApiField("merchant_config")
-	private String merchantConfig;
+	private OpenCertifyMerchantConfigs merchantConfig;
 
 	/**
 	 * 商户请求的唯一标识，商户要保证其唯一性，值为32位长度的字母数字组合。建议：前面几位字符是商户自定义的简称，中间可以使用一段时间，后段可以使用一个随机或递增序列
@@ -57,17 +57,17 @@ public class DatadigitalFincloudGeneralsaasFaceCertifyInitializeModel extends Al
 		this.faceContrastPicture = faceContrastPicture;
 	}
 
-	public String getIdentityParam() {
+	public OpenCertifyIdentifyInfo getIdentityParam() {
 		return this.identityParam;
 	}
-	public void setIdentityParam(String identityParam) {
+	public void setIdentityParam(OpenCertifyIdentifyInfo identityParam) {
 		this.identityParam = identityParam;
 	}
 
-	public String getMerchantConfig() {
+	public OpenCertifyMerchantConfigs getMerchantConfig() {
 		return this.merchantConfig;
 	}
-	public void setMerchantConfig(String merchantConfig) {
+	public void setMerchantConfig(OpenCertifyMerchantConfigs merchantConfig) {
 		this.merchantConfig = merchantConfig;
 	}
 

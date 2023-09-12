@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.instantdelivery.merchantshop.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 17:59:36
+ * @since 1.0, 2023-09-11 19:47:47
  */
 public class AlipayOpenInstantdeliveryMerchantshopBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7175289688876287514L;
+	private static final long serialVersionUID = 3253987754542812679L;
 
 	/** 
 	 * 当前页码

@@ -14,13 +14,10 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingActivityOrdervoucherCodedepositModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8322939491454768277L;
+	private static final long serialVersionUID = 8268988238876682471L;
 
 	/**
 	 * 活动id
-
-限制
-请在接收alipay.marketing.activity.message.created消息后，再进行调用。
 	 */
 	@ApiField("activity_id")
 	private String activityId;

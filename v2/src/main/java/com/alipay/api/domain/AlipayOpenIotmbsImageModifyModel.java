@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenIotmbsImageModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4378599668729642361L;
+	private static final long serialVersionUID = 3363527951637932163L;
 
 	/**
 	 * 配置的图片id列表

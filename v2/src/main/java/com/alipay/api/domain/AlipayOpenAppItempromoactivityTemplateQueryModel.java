@@ -1,0 +1,29 @@
+package com.alipay.api.domain;
+
+import com.alipay.api.AlipayObject;
+import com.alipay.api.internal.mapping.ApiField;
+
+/**
+ * 查询指定商品营销活动信息
+ *
+ * @author auto create
+ * @since 1.0, 2023-09-08 15:07:13
+ */
+public class AlipayOpenAppItempromoactivityTemplateQueryModel extends AlipayObject {
+
+	private static final long serialVersionUID = 8833246951162677521L;
+
+	/**
+	 * 营销活动类型
+	 */
+	@ApiField("promotion_type")
+	private String promotionType;
+
+	public String getPromotionType() {
+		return this.promotionType;
+	}
+	public void setPromotionType(String promotionType) {
+		this.promotionType = promotionType;
+	}
+
+}

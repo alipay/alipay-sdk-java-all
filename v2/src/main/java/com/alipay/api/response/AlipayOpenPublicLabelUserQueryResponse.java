@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.label.user.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-23 20:16:46
+ * @since 1.0, 2023-09-11 19:21:50
  */
 public class AlipayOpenPublicLabelUserQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6592542436731862248L;
+	private static final long serialVersionUID = 7683215892866677379L;
 
 	/** 
 	 * 用户标签id列表，以英文逗号分隔

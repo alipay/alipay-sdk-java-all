@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分期码扩展字段
  *
  * @author auto create
- * @since 1.0, 2023-08-08 11:11:56
+ * @since 1.0, 2023-09-08 10:32:51
  */
 public class FqQrCodeExtendParams extends AlipayObject {
 
-	private static final long serialVersionUID = 8786125263449222658L;
+	private static final long serialVersionUID = 1857566363226722896L;
 
 	/**
 	 * 当码类型是clerkQrcode(店员码)的时候需要传递此字段

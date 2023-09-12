@@ -20,20 +20,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.card.template.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-27 22:16:42
+ * @since 1.0, 2023-09-11 16:26:44
  */
 public class AlipayMarketingCardTemplateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5282417686958967879L;
+	private static final long serialVersionUID = 2793475459968858384L;
 
 	/** 
-	 * 业务卡号前缀，由商户指定 支付宝业务卡号生成规则：biz_no_prefix(商户指定)卡号前缀 + biz_no_suffix(实时生成）卡号后缀
+	 * 业务卡号前缀，由商户指定
+
+支付宝业务卡号生成规则：biz_no_prefix(商户指定)卡号前缀 + biz_no_suffix(实时生成）卡号后缀
 	 */
 	@ApiField("biz_no_prefix")
 	private String bizNoPrefix;
 
 	/** 
 	 * 业务卡号后缀的长度
+
 支付宝业务卡号生成规则：biz_no_prefix(商户指定)卡号前缀 + biz_no_suffix(实时生成）卡号后缀
 	 */
 	@ApiField("biz_no_suffix_len")
@@ -120,7 +123,7 @@ OUT_MEMBER_CARD：外部权益卡
 	private List<String> shopIds;
 
 	/** 
-	 * spi应用id，若使用openspi模式开卡，该字段为创建模版时，设置的实现spi.alipay.user.opencard.get接口的app_id。
+	 * spi应用id，若使用openspi模式开卡，该字段为创建模版时，设置的实现spi.alipay.user.opencard.get接口的app_id
 	 */
 	@ApiField("spi_app_id")
 	private String spiAppId;

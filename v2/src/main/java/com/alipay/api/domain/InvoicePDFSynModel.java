@@ -7,16 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票同步简单模式下的发票信息入参模型
  *
  * @author auto create
- * @since 1.0, 2022-12-26 16:47:34
+ * @since 1.0, 2023-09-11 20:05:28
  */
 public class InvoicePDFSynModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1351367916966186238L;
+	private static final long serialVersionUID = 4416269316387724648L;
 
 	/**
-	 * 支付宝开票申请id。
-当userId为空时，必填；
-如果在开票过程中，是通过支付宝提交的申请到开票服务方，支付宝会带上开票申请在支付宝生成的申请id，开票服务方在回传发票的时候只需要回传这个申请id，不用获取用户的userId，支付宝可以根据申请id将发票归集到对应的用户名下
+	 * 支付宝开票申请id
 	 */
 	@ApiField("apply_id")
 	private String applyId;
@@ -28,13 +26,14 @@ public class InvoicePDFSynModel extends AlipayObject {
 	private String extendFields;
 
 	/**
-	 * base64化的字符串
+	 * base64化的字符串，与file_download_url不可同时为空。
 	 */
 	@ApiField("file_base")
 	private String fileBase;
 
 	/**
-	 * PDF类型文件填写PDF，
+	 * 文件类型，必填。
+PDF类型文件填写PDF，
 OFD类型文件填写ofd，
 JPG类型文件填写JPG(JPG文件请先询问对接人当前是否支持)
 	 */
@@ -42,10 +41,16 @@ JPG类型文件填写JPG(JPG文件请先询问对接人当前是否支持)
 	private String fileDownloadType;
 
 	/**
-	 * 发票文件下载地址。
+	 * 发票文件下载地址，和file_base不可同时为空。
 	 */
 	@ApiField("file_download_url")
 	private String fileDownloadUrl;
+
+	/**
+	 * 支付宝登录账号
+	 */
+	@ApiField("login_id")
+	private String loginId;
 
 	/**
 	 * 支付宝用户id，当apply_id为空时，open_id必填
@@ -60,8 +65,7 @@ JPG类型文件填写JPG(JPG文件请先询问对接人当前是否支持)
 	private String outInvoiceId;
 
 	/**
-	 * 支付宝用户userId；
-当apply_id为空时，userId必填
+	 * 支付宝用户userId
 	 */
 	@ApiField("user_id")
 	private String userId;
@@ -105,6 +109,13 @@ JPG类型文件填写JPG(JPG文件请先询问对接人当前是否支持)
 	}
 	public void setFileDownloadUrl(String fileDownloadUrl) {
 		this.fileDownloadUrl = fileDownloadUrl;
+	}
+
+	public String getLoginId() {
+		return this.loginId;
+	}
+	public void setLoginId(String loginId) {
+		this.loginId = loginId;
 	}
 
 	public String getOpenId() {

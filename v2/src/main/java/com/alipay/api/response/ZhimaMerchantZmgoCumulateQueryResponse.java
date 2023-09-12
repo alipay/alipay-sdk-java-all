@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.merchant.zmgo.cumulate.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-23 21:31:47
+ * @since 1.0, 2023-09-11 16:16:48
  */
 public class ZhimaMerchantZmgoCumulateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8364142865789341841L;
+	private static final long serialVersionUID = 1426571633968434795L;
 
 	/** 
 	 * 总共累计金额

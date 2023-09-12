@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.marketing.campaign.intelligent.promo.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 03:02:02
+ * @since 1.0, 2023-09-11 18:42:01
  */
 public class KoubeiMarketingCampaignIntelligentPromoBatchqueryRequest implements AlipayRequest<KoubeiMarketingCampaignIntelligentPromoBatchqueryResponse> {
 

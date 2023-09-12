@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.userinfo.share response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 18:15:13
+ * @since 1.0, 2023-09-12 06:45:40
  */
 public class AlipayUserUserinfoShareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7464138494715737217L;
+	private static final long serialVersionUID = 6458558236146866426L;
 
 	/** 
 	 * 详细地址。
@@ -56,7 +56,7 @@ ALIBABA ---- ALIBABA冻结，允许用户开启
 
 SERVER ---- 后台冻结，允许用户开启
 
-USER ---- 用户冻结 
+USER ----  用户冻结 
 
 CTU_N---- CTU冻结，不允许用户开启
 

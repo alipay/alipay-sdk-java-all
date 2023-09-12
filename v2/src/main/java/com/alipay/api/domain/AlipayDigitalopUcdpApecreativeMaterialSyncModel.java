@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 同步素材信息接口
  *
  * @author auto create
- * @since 1.0, 2023-08-31 16:20:05
+ * @since 1.0, 2023-09-12 15:50:54
  */
 public class AlipayDigitalopUcdpApecreativeMaterialSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8853452817247439561L;
+	private static final long serialVersionUID = 6355169811488934938L;
+
+	/**
+	 * 创建类型，1为只要根据风格合图，2为根据风格和布局合图
+	 */
+	@ApiField("create_type")
+	private Long createType;
 
 	/**
 	 * 创意组id,如果不填，重新创建一个创意组，如果填了 在原有的创意组中更新信息
@@ -40,6 +46,13 @@ public class AlipayDigitalopUcdpApecreativeMaterialSyncModel extends AlipayObjec
 	 */
 	@ApiField("project_id")
 	private String projectId;
+
+	public Long getCreateType() {
+		return this.createType;
+	}
+	public void setCreateType(Long createType) {
+		this.createType = createType;
+	}
 
 	public String getGroupId() {
 		return this.groupId;

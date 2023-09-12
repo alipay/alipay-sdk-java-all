@@ -16,11 +16,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.pay response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-15 13:51:41
+ * @since 1.0, 2023-09-11 17:26:43
  */
 public class AlipayTradePayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8735792377318323261L;
+	private static final long serialVersionUID = 1756254321179449384L;
 
 	/** 
 	 * 先享后付2.0垫资金额,不返回表示没有走垫资，非空表示垫资支付的金额

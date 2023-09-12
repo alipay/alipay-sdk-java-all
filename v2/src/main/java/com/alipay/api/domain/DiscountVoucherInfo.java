@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DiscountVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7573951379396157135L;
+	private static final long serialVersionUID = 6892134711298315924L;
 
 	/**
 	 * 封顶金额。
@@ -26,7 +26,7 @@ public class DiscountVoucherInfo extends AlipayObject {
 	private String discount;
 
 	/**
-	 * 门槛金额。
+	 * 门槛金额。说明：该字段可不填，认为无门槛;
 	 */
 	@ApiField("floor_amount")
 	private String floorAmount;

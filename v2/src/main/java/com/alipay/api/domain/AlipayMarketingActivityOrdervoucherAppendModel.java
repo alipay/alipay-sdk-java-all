@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingActivityOrdervoucherAppendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5878769878838212457L;
+	private static final long serialVersionUID = 4262727377961745487L;
 
 	/**
 	 * 活动id
@@ -37,7 +37,7 @@ public class AlipayMarketingActivityOrdervoucherAppendModel extends AlipayObject
 	private String outBizNo;
 
 	/**
-	 * 券总预算值。
+	 * 发行券的数量。
 
 限制：
 券总预算<= 999999

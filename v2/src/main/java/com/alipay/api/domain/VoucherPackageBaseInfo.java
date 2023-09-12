@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VoucherPackageBaseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7399869225319758926L;
+	private static final long serialVersionUID = 8279834976878551379L;
 
 	/**
 	 * 券包购买结束时间
@@ -40,7 +40,7 @@ public class VoucherPackageBaseInfo extends AlipayObject {
 	private String voucherPackageName;
 
 	/**
-	 * 券包状态。 CREATED：已创建, ENABLE： 已发布（包含进行中和已过期，已过期以voucher_package_purchase_end_time为准）, PAUSED： 已暂停, DISABLE： 已停止;
+	 * 券包状态
 	 */
 	@ApiField("voucher_package_status")
 	private String voucherPackageStatus;

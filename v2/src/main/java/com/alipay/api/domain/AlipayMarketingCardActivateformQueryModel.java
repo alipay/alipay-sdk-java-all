@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCardActivateformQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2643842199239168363L;
+	private static final long serialVersionUID = 3845438537363915177L;
 
 	/**
 	 * 开放表单信息查询业务类型
@@ -22,7 +22,7 @@ public class AlipayMarketingCardActivateformQueryModel extends AlipayObject {
 	/**
 	 * 查询用户表单提交信息的请求id。
 
-网页移动应用&小程序应用：与auth_code 一起通过alipay.marketing.card.activateurl.apply(获取会员卡领卡投放链接)接口callback地址回传。
+网页移动应用&小程序应用：与auth_code  一起通过alipay.marketing.card.activateurl.apply(获取会员卡领卡投放链接)接口callback地址回传。
 
 注意：auth_code（用户授权码）用于换取用户授权令牌 accessToken，后续调用接口需传入accessToken。
 	 */

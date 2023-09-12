@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ExchangeVoucher extends AlipayObject {
 
-	private static final long serialVersionUID = 1419594419878712474L;
+	private static final long serialVersionUID = 7617268587379467971L;
 
 	/**
 	 * 券的价值
@@ -38,8 +38,7 @@ public class ExchangeVoucher extends AlipayObject {
 	private String customerServiceUrl;
 
 	/**
-	 * 优惠门槛金额，表示只有当订单金额大于等于门槛金额时券才能使用。该字段为空时表示无门槛。
-门槛金额的校验由服务商(商户)核销时自行校验，支付宝侧只做展示使用。
+	 * 门槛金额。说明：该字段可不填，认为无门槛;
 	 */
 	@ApiField("floor_amount")
 	private String floorAmount;

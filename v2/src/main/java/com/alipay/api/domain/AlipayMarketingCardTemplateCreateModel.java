@@ -14,10 +14,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingCardTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5679549648654735499L;
+	private static final long serialVersionUID = 1453677215687424462L;
 
 	/**
 	 * 业务卡号前缀，由商户指定
+
 支付宝业务卡号生成规则：biz_no_prefix(商户指定)卡号前缀 + biz_no_suffix(实时生成）卡号后缀
 	 */
 	@ApiField("biz_no_prefix")
@@ -135,7 +136,7 @@ public class AlipayMarketingCardTemplateCreateModel extends AlipayObject {
 	private TemplateStyleInfoDTO templateStyleInfo;
 
 	/**
-	 *  卡包详情页面中展现出的卡码（可用于扫码核销）
+	 * 卡包详情页面中展现出的卡码（可用于扫码核销）
 
 (1) 静态码
 qrcode: 二维码，扫码得商户开卡传入的external_card_no
@@ -148,10 +149,7 @@ dbarcode: 动态条形码，扫码得到的码值可配合会员卡查询接口�
 (3) 动态码-商家自主生成码值（码值、时效性都由商户控制）
 mdqrcode: 商户动态二维码，扫码得商户自主传入的码值
 mdbarcode: 商户动态条码，扫码得商户自主传入的码值
-如需使用商户动态码，对接详情参见 <a href="https://opendocs.alipay.com/open/02y7gt">商户动态发码</a>。
-
-(4)无码值-商家不需要核销码
- none:商家无需核销码
+如需使用商户动态码，对接详情参见 <a  href="https://opendocs.alipay.com/open/02y7gt">商户动态发码</a>。
 	 */
 	@ApiField("write_off_type")
 	private String writeOffType;

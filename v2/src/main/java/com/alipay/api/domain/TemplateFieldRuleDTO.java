@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TemplateFieldRuleDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1657844637185913864L;
+	private static final long serialVersionUID = 6736498929956734574L;
 
 	/**
 	 * 字段名称
@@ -22,9 +22,9 @@ public class TemplateFieldRuleDTO extends AlipayObject {
 	/**
 	 * 规则名
 
-1、ASSIGN_FROM_REQUEST: 以rule_value为key值，表示该栏位的值从会员卡开卡接口中获取，会员卡开卡接口的card_info中获取对应参数值
+1、ASSIGN_FROM_REQUEST:   以rule_value为key值，表示该栏位的值从会员卡开卡接口中获取，会员卡开卡接口的card_info中获取对应参数值
 
-2、DATE_IN_FUTURE: 生成一个未来的日期（格式YYYY-MM-DD)，当选择DATE_IN_FUTURE的时候，field_name 必须是OpenDate或ValidDate， 值为(10m或10d 分别表示10个月或10天)
+2、DATE_IN_FUTURE: 生成一个未来的日期（格式YYYY-MM-DD)，当选择DATE_IN_FUTURE的时候，field_name  必须是OpenDate或ValidDate， 值为(10m或10d 分别表示10个月或10天)
 
 3、CONST: 常量，会员卡开卡接口进行开卡的时候使用模板创建时候设置的值，即取rule_value的值
 	 */

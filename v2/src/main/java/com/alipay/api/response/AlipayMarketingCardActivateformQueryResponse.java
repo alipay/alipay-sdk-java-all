@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.card.activateform.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 00:31:46
+ * @since 1.0, 2023-09-11 19:06:48
  */
 public class AlipayMarketingCardActivateformQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7176996236757999619L;
+	private static final long serialVersionUID = 6883374518647237212L;
 
 	/** 
 	 * 表单提交信息各个字段的值JSON数组
@@ -45,13 +45,13 @@ OPEN_FORM_FIELD_ADDRESS – 地址
 
 1. 证件类型字段(OPEN_FORM_FIELD_CERT_TYPE)返回结果取值如下:
 
- 0 -- 身份证
+    0 -- 身份证
 
- 1 -- 护照
+    1 -- 护照
 
- 2 -- 港澳居民通行证
+    2 -- 港澳居民通行证
 
- 3 -- 台湾居民通行证
+    3 -- 台湾居民通行证
 	 */
 	@ApiField("infos")
 	private String infos;

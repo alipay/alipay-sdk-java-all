@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 统一收单交易退款接口
  *
  * @author auto create
- * @since 1.0, 2023-09-04 17:03:17
+ * @since 1.0, 2023-09-07 13:28:52
  */
 public class AlipayTradeRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1889631985697894827L;
+	private static final long serialVersionUID = 2113592479389597579L;
 
 	/**
 	 * 退款包含的商品列表信息，Json格式。
@@ -122,7 +122,7 @@ public class AlipayTradeRefundModel extends AlipayObject {
 
 	/**
 	 * 支付宝交易号。
-和商户订单号 out_trade_no 不能同时为空。
+和商户订单号 out_trade_no 不能同时为空，两者同时存在时，优先取值trade_no
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;

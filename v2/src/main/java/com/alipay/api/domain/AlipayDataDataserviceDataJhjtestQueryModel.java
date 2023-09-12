@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * jhj预发测试
  *
  * @author auto create
- * @since 1.0, 2023-09-06 18:02:49
+ * @since 1.0, 2023-09-08 13:45:57
  */
 public class AlipayDataDataserviceDataJhjtestQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7826564345633752118L;
+	private static final long serialVersionUID = 5335588959521423678L;
+
+	/**
+	 * 1
+	 */
+	@ApiField("inner")
+	private String inner;
 
 	/**
 	 * aa
@@ -54,6 +60,25 @@ public class AlipayDataDataserviceDataJhjtestQueryModel extends AlipayObject {
 	 */
 	@ApiField("input_e")
 	private String inputE;
+
+	/**
+	 * test
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/**
+	 * 经度
+	 */
+	@ApiField("uid")
+	private String uid;
+
+	public String getInner() {
+		return this.inner;
+	}
+	public void setInner(String inner) {
+		this.inner = inner;
+	}
 
 	public String getInputA() {
 		return this.inputA;
@@ -102,6 +127,20 @@ public class AlipayDataDataserviceDataJhjtestQueryModel extends AlipayObject {
 	}
 	public void setInputE(String inputE) {
 		this.inputE = inputE;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+
+	public String getUid() {
+		return this.uid;
+	}
+	public void setUid(String uid) {
+		this.uid = uid;
 	}
 
 }

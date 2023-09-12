@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品修改信息
  *
  * @author auto create
- * @since 1.0, 2023-08-11 12:14:46
+ * @since 1.0, 2023-09-08 10:34:18
  */
 public class GoodsInfoModifyDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5475468859315855353L;
+	private static final long serialVersionUID = 8342371597274985219L;
 
 	/**
 	 * 提报商品库的商品，若有外部商品sku_id则必传

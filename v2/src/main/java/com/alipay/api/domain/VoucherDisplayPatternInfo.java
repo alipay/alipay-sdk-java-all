@@ -14,10 +14,10 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class VoucherDisplayPatternInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6537642312166317259L;
+	private static final long serialVersionUID = 1384326689119671562L;
 
 	/**
-	 * 商家logo 需要通过 alipay.marketing.material.image.upload接口上传图片，指定file_key为PROMO_BRAND_LOGO，返回的resource_id即为该参数的值。
+	 * 商家logo 需要通过  alipay.marketing.material.image.upload接口上传图片，指定file_key为PROMO_BRAND_LOGO，返回的resource_id即为该参数的值。
 	 */
 	@ApiField("brand_logo")
 	private String brandLogo;
@@ -29,7 +29,7 @@ public class VoucherDisplayPatternInfo extends AlipayObject {
 	private String brandLogoUrl;
 
 	/**
-	 * 商户品牌名称。 如果不设置品牌名称，则默认使用支付宝商家系统中维护的商家别名。 如果没有维护商家别名，则使用默认名称： 商家优惠。 用户领取优惠券后，品牌名称会对用户进行展示。
+	 * 商户品牌名称。
 	 */
 	@ApiField("brand_name")
 	private String brandName;
@@ -60,7 +60,7 @@ public class VoucherDisplayPatternInfo extends AlipayObject {
 	private List<String> voucherDetailImageUrls;
 
 	/**
-	 * 券详细图列表，会展示在用户支付宝卡包券详情页 需要通过 alipay.marketing.material.image.upload接口上传图片，指定file_key为PROMO_VOUCHER_DETAIL_IMAGE ,接口返回的resource_id即为该参数的值 上传图片尺寸600*600，支持格式：png、jpg、jpeg、bmp，大小不超过2MB。
+	 * 券详细图列表，会展示在用户支付宝卡包券详情页 需要通过  alipay.marketing.material.image.upload接口上传图片，指定file_key为PROMO_VOUCHER_DETAIL_IMAGE  ,接口返回的resource_id即为该参数的值 上传图片尺寸600*600，支持格式：png、jpg、jpeg、bmp，大小不超过2MB。
 	 */
 	@ApiListField("voucher_detail_images")
 	@ApiField("string")
@@ -68,7 +68,7 @@ public class VoucherDisplayPatternInfo extends AlipayObject {
 
 	/**
 	 * 券详情页封面图，会展示在用户支付宝卡包券详情页。
-需要通过 alipay.marketing.material.image.upload接口上传图片，指定file_key为PROMO_VOUCHER_IMAGE，接口返回的resource_id即为该参数的值。
+需要通过  alipay.marketing.material.image.upload接口上传图片，指定file_key为PROMO_VOUCHER_IMAGE，接口返回的resource_id即为该参数的值。
 	 */
 	@ApiField("voucher_image")
 	private String voucherImage;

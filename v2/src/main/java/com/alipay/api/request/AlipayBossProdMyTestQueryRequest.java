@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.prod.my.test.query request
  * 
  * @author auto create
- * @since 1.0, 2023-08-24 21:16:36
+ * @since 1.0, 2023-09-11 18:48:27
  */
 public class AlipayBossProdMyTestQueryRequest implements AlipayRequest<AlipayBossProdMyTestQueryResponse> {
 

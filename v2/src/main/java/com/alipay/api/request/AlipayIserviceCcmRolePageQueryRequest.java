@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.ccm.role.page.query request
  * 
  * @author auto create
- * @since 1.0, 2023-08-23 20:39:02
+ * @since 1.0, 2023-09-11 16:27:28
  */
 public class AlipayIserviceCcmRolePageQueryRequest implements AlipayRequest<AlipayIserviceCcmRolePageQueryResponse> {
 

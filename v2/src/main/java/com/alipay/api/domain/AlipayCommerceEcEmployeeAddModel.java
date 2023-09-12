@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 添加员工
  *
  * @author auto create
- * @since 1.0, 2023-08-24 15:18:54
+ * @since 1.0, 2023-09-07 19:24:51
  */
 public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4467556727779356556L;
+	private static final long serialVersionUID = 1293259747238769951L;
 
 	/**
 	 * 员工所属部门
@@ -58,6 +58,18 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	 */
 	@ApiField("employee_no")
 	private String employeeNo;
+
+	/**
+	 * 加密证件号（默认转大写后用SHA256加密）与证件类型搭配使用，不可与证件号同时存在
+	 */
+	@ApiField("encrypt_cert_no")
+	private String encryptCertNo;
+
+	/**
+	 * 加密手机号（默认使用SHA256加密，不可与手机号同时存在）
+	 */
+	@ApiField("encrypt_mobile")
+	private String encryptMobile;
 
 	/**
 	 * 企业id
@@ -161,6 +173,20 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	}
 	public void setEmployeeNo(String employeeNo) {
 		this.employeeNo = employeeNo;
+	}
+
+	public String getEncryptCertNo() {
+		return this.encryptCertNo;
+	}
+	public void setEncryptCertNo(String encryptCertNo) {
+		this.encryptCertNo = encryptCertNo;
+	}
+
+	public String getEncryptMobile() {
+		return this.encryptMobile;
+	}
+	public void setEncryptMobile(String encryptMobile) {
+		this.encryptMobile = encryptMobile;
 	}
 
 	public String getEnterpriseId() {

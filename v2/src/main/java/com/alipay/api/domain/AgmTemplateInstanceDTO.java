@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 模板中心模板实例模型
  *
  * @author auto create
- * @since 1.0, 2023-03-01 16:09:04
+ * @since 1.0, 2023-09-07 18:56:20
  */
 public class AgmTemplateInstanceDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4313273518823751785L;
+	private static final long serialVersionUID = 6254122163289144698L;
 
 	/**
 	 * 模板文件名称
@@ -48,6 +48,12 @@ public class AgmTemplateInstanceDTO extends AlipayObject {
 	 */
 	@ApiField("preview_url")
 	private String previewUrl;
+
+	/**
+	 * 模板编码
+	 */
+	@ApiField("template_code")
+	private String templateCode;
 
 	public String getFileName() {
 		return this.fileName;
@@ -89,6 +95,13 @@ public class AgmTemplateInstanceDTO extends AlipayObject {
 	}
 	public void setPreviewUrl(String previewUrl) {
 		this.previewUrl = previewUrl;
+	}
+
+	public String getTemplateCode() {
+		return this.templateCode;
+	}
+	public void setTemplateCode(String templateCode) {
+		this.templateCode = templateCode;
 	}
 
 }

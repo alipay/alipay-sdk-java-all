@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票消息
  *
  * @author auto create
- * @since 1.0, 2023-08-29 21:11:12
+ * @since 1.0, 2023-09-11 20:03:02
  */
 public class InputInvoiceMqDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8548869313999163195L;
+	private static final long serialVersionUID = 4377784132344441515L;
 
 	/**
 	 * 错误代码
@@ -30,6 +30,12 @@ public class InputInvoiceMqDTO extends AlipayObject {
 	 */
 	@ApiField("id")
 	private Long id;
+
+	/**
+	 * 发票模型,如果process_result为PRE_CHECK时,会将发票验真后的数据填充到此模型中
+	 */
+	@ApiField("input_invoice_dto")
+	private InputInvoiceCheckResponse inputInvoiceDto;
 
 	/**
 	 * 发票代码
@@ -67,6 +73,12 @@ public class InputInvoiceMqDTO extends AlipayObject {
 	@ApiField("related_order")
 	private String relatedOrder;
 
+	/**
+	 * 从发起验真接口获取taskId
+	 */
+	@ApiField("task_id")
+	private String taskId;
+
 	public String getErrorCode() {
 		return this.errorCode;
 	}
@@ -86,6 +98,13 @@ public class InputInvoiceMqDTO extends AlipayObject {
 	}
 	public void setId(Long id) {
 		this.id = id;
+	}
+
+	public InputInvoiceCheckResponse getInputInvoiceDto() {
+		return this.inputInvoiceDto;
+	}
+	public void setInputInvoiceDto(InputInvoiceCheckResponse inputInvoiceDto) {
+		this.inputInvoiceDto = inputInvoiceDto;
 	}
 
 	public String getInvoiceCode() {
@@ -128,6 +147,13 @@ public class InputInvoiceMqDTO extends AlipayObject {
 	}
 	public void setRelatedOrder(String relatedOrder) {
 		this.relatedOrder = relatedOrder;
+	}
+
+	public String getTaskId() {
+		return this.taskId;
+	}
+	public void setTaskId(String taskId) {
+		this.taskId = taskId;
 	}
 
 }

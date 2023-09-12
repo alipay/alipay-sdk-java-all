@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.tradecomplain.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 14:26:48
+ * @since 1.0, 2023-09-11 19:45:19
  */
 public class AlipayMerchantTradecomplainBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8845771475663733219L;
+	private static final long serialVersionUID = 5256982229747892645L;
 
 	/** 
 	 * 当前页码数

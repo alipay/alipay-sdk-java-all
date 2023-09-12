@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.public.matchuser.label.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-08-23 21:24:51
+ * @since 1.0, 2023-09-12 06:52:34
  */
 public class AlipayOpenPublicMatchuserLabelDeleteRequest implements AlipayRequest<AlipayOpenPublicMatchuserLabelDeleteResponse> {
 

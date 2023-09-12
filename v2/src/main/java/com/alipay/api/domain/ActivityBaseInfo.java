@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ActivityBaseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1442787267749464629L;
+	private static final long serialVersionUID = 3298425474775291718L;
 
 	/**
 	 * 活动id
@@ -20,7 +20,7 @@ public class ActivityBaseInfo extends AlipayObject {
 	private String activityId;
 
 	/**
-	 * 活动名称。 不对用户进行展示，仅供商家在后台管理活动使用。
+	 * 活动名称。
 	 */
 	@ApiField("activity_name")
 	private String activityName;
@@ -38,7 +38,7 @@ public class ActivityBaseInfo extends AlipayObject {
 	private String activityProductType;
 
 	/**
-	 * 活动状态。 已激活状态表示活动正常运行。已终止状态表示商家终止活动，不可再发放。
+	 * 活动状态 。 ACTIVE:活动已激活，表示活动已经生效，等到活动开始(publish_start_time)之后用户就可以参与活动。  PAUSE:活动已暂停，表示商户临时暂停该活动，该状态下用户不能参与活动。
 	 */
 	@ApiField("activity_status")
 	private String activityStatus;
@@ -50,7 +50,7 @@ public class ActivityBaseInfo extends AlipayObject {
 	private BelongMerchantInfo belongMerchantInfo;
 
 	/**
-	 * 码模式。  MERCHANT_UPLOAD：商户上传自定义code，发券时系统随机选取上传的券code发放 MERCHANT_API：发奖时指定券码发奖，此模式无须提前上传券码。
+	 * 码模式。   MERCHANT_UPLOAD：商户上传自定义code，发券时系统随机选取上传的券code发放  MERCHANT_API：发奖时指定券码发奖，此模式无须提前上传券码。
 	 */
 	@ApiField("code_mode")
 	private String codeMode;

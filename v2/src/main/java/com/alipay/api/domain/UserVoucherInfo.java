@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class UserVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1571633215281366552L;
+	private static final long serialVersionUID = 7196415475585736322L;
 
 	/**
 	 * 活动基础信息。
@@ -22,7 +22,7 @@ public class UserVoucherInfo extends AlipayObject {
 	private ActivityBaseInfo activityBaseInfo;
 
 	/**
-	 * 活动 id。
+	 * 活动id
 	 */
 	@ApiField("activity_id")
 	private String activityId;
@@ -40,7 +40,7 @@ public class UserVoucherInfo extends AlipayObject {
 	private Date availableEndTime;
 
 	/**
-	 * 券归属商户 pid。
+	 * 归属商户PID
 	 */
 	@ApiField("belong_merchant_id")
 	private String belongMerchantId;
@@ -94,7 +94,7 @@ public class UserVoucherInfo extends AlipayObject {
 	private String voucherId;
 
 	/**
-	 * 券名称。展示在支付宝卡包中的券名称。
+	 * 对消费者展示的券(商品)名称。
 	 */
 	@ApiField("voucher_name")
 	private String voucherName;
@@ -112,7 +112,7 @@ public class UserVoucherInfo extends AlipayObject {
 	private String voucherStatus;
 
 	/**
-	 * 券类型。
+	 * 券类型
 	 */
 	@ApiField("voucher_type")
 	private String voucherType;

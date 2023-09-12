@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 进项票同步验真入参
  *
  * @author auto create
- * @since 1.0, 2023-07-26 14:56:32
+ * @since 1.0, 2023-09-11 19:47:14
  */
 public class InvoiceSyncCheckDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3114892711158961415L;
+	private static final long serialVersionUID = 1158925796324243685L;
 
 	/**
 	 * ou代码
@@ -60,6 +60,18 @@ public class InvoiceSyncCheckDTO extends AlipayObject {
 	 */
 	@ApiField("invoice_no")
 	private String invoiceNo;
+
+	/**
+	 * 发票类型
+	 */
+	@ApiField("invoice_type")
+	private String invoiceType;
+
+	/**
+	 * 平台code
+	 */
+	@ApiField("platform_code")
+	private String platformCode;
 
 	/**
 	 * 税额,单位元,两位小数
@@ -121,6 +133,20 @@ public class InvoiceSyncCheckDTO extends AlipayObject {
 	}
 	public void setInvoiceNo(String invoiceNo) {
 		this.invoiceNo = invoiceNo;
+	}
+
+	public String getInvoiceType() {
+		return this.invoiceType;
+	}
+	public void setInvoiceType(String invoiceType) {
+		this.invoiceType = invoiceType;
+	}
+
+	public String getPlatformCode() {
+		return this.platformCode;
+	}
+	public void setPlatformCode(String platformCode) {
+		this.platformCode = platformCode;
 	}
 
 	public String getTaxAmt() {

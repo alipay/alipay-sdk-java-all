@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建签约任务文件列表及审批流附件列表VO
  *
  * @author auto create
- * @since 1.0, 2022-12-07 14:05:40
+ * @since 1.0, 2023-09-11 16:56:51
  */
 public class CreateESignTaskFileVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5118872483439646924L;
+	private static final long serialVersionUID = 6492693465532182558L;
 
 	/**
 	 * 文件唯一id 64 位  appName+

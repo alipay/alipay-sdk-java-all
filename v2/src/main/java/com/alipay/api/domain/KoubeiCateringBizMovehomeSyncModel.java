@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KoubeiCateringBizMovehomeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5376597285581473376L;
+	private static final long serialVersionUID = 8785354744849845395L;
 
 	/**
 	 * leads信息列表

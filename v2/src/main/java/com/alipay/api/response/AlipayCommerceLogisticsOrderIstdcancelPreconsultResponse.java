@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.logistics.order.istdcancel.preconsult response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 03:07:07
+ * @since 1.0, 2023-09-11 16:39:58
  */
 public class AlipayCommerceLogisticsOrderIstdcancelPreconsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8756479725211873944L;
+	private static final long serialVersionUID = 3695518713959824585L;
 
 	/** 
 	 * 是否允许取消

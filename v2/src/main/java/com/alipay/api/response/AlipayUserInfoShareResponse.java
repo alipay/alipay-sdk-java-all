@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.info.share response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-03 23:21:47
+ * @since 1.0, 2023-09-11 16:31:50
  */
 public class AlipayUserInfoShareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4169371565322713775L;
+	private static final long serialVersionUID = 1556578299881198633L;
 
 	/** 
 	 * 详细地址。
@@ -252,7 +252,7 @@ M：男性。
 	private String identityCardProvince;
 
 	/** 
-	 * 是否是金融机构或特殊单位，"I"表示金融机构, "C"表示无余额账户的单位账户, "V", 表示虚拟主体(类似机构仅内部户无余额户), "N"表示非金融机构且非无余额账户的单位账户,"?"表示匿名用户
+	 * 是否是金融机构或特殊单位，"I"表示金融机构, "C"表示无余额账户的单位账户,  "V", 表示虚拟主体(类似机构仅内部户无余额户),  "N"表示非金融机构且非无余额账户的单位账户,"?"表示匿名用户
 	 */
 	@ApiField("inst_or_corp")
 	private String instOrCorp;

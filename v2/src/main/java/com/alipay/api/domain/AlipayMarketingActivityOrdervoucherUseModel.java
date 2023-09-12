@@ -15,10 +15,10 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingActivityOrdervoucherUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8295486217516467131L;
+	private static final long serialVersionUID = 3523243915657411323L;
 
 	/**
-	 * 优惠券活动id
+	 * 活动id
 	 */
 	@ApiField("activity_id")
 	private String activityId;
@@ -61,7 +61,7 @@ public class AlipayMarketingActivityOrdervoucherUseModel extends AlipayObject {
 	/**
 	 * 用户核销优惠券的代运营商业关系门店id，调用接口alipay.business.relation.shop.create创建门店返回的real_shop_id。
 限制:
-传入的门店id必须是创建商家券voucher_use_rule. voucher_available_scope. order_voucher_available_shop对象中real_shop_ids中的门店id
+传入的门店id必须是创建商家券voucher_use_rule. voucher_available_scope.  order_voucher_available_shop对象中real_shop_ids中的门店id
 	 */
 	@ApiField("real_shop_id")
 	private String realShopId;
@@ -69,19 +69,13 @@ public class AlipayMarketingActivityOrdervoucherUseModel extends AlipayObject {
 	/**
 	 * 用户核销优惠券的支付门店id,调用接口ant.merchant.expand.shop.create创建门店返回的门店id。
 限制:
-传入的门店id必须是创建商家券voucher_use_rule. voucher_available_scope. order_voucher_available_shop对象中shop_ids中的门店id
+传入的门店id必须是创建商家券voucher_use_rule. voucher_available_scope.  order_voucher_available_shop对象中shop_ids中的门店id
 	 */
 	@ApiField("store_id")
 	private String storeId;
 
 	/**
 	 * 订单优惠前的总金额
-
-
-
-限制：
-
-该笔订单的资金总额，取值范围[0.01,100000000]，精确到小数点后2位。
 	 */
 	@ApiField("total_fee")
 	private String totalFee;

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.apply.status.notify response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-23 19:51:48
+ * @since 1.0, 2023-09-11 20:01:49
  */
 public class AlipayEbppInvoiceApplyStatusNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8495293939331547124L;
+	private static final long serialVersionUID = 6778852665227922461L;
 
 	/** 
 	 * update_success=false时返回。

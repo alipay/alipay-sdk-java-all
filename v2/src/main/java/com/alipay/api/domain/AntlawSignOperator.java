@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntlawSignOperator extends AlipayObject {
 
-	private static final long serialVersionUID = 2852248384482153524L;
+	private static final long serialVersionUID = 1877835343648482625L;
 
 	/**
 	 * 证件类型，包括IDENTIFY（身份证号），USCC（统一社会信用码）

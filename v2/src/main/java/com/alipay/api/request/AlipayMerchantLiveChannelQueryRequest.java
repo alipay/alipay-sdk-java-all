@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.live.channel.query request
  * 
  * @author auto create
- * @since 1.0, 2023-08-23 20:36:46
+ * @since 1.0, 2023-09-11 17:11:48
  */
 public class AlipayMerchantLiveChannelQueryRequest implements AlipayRequest<AlipayMerchantLiveChannelQueryResponse> {
 

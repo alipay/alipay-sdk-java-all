@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class OrderVoucherAvailableShop extends AlipayObject {
 
-	private static final long serialVersionUID = 2228514262115123381L;
+	private static final long serialVersionUID = 8182974394773323478L;
 
 	/**
 	 * 商户全部门店可用。
@@ -23,14 +23,14 @@ public class OrderVoucherAvailableShop extends AlipayObject {
 	private OrderVoucherMerchantAllShop orderVoucherMerchantAllShop;
 
 	/**
-	 * 代运营商业关系门店列表，列表中的门店id是调用接口alipay.business.relation.shop.create创建门店返回的real_shop_id 接口参数是列表类型。
+	 * 代运营商业关系门店列表，列表中的门店id是调用接口alipay.business.relation.shop.create创建门店返回的real_shop_id  接口参数是列表类型。
 	 */
 	@ApiListField("real_shop_ids")
 	@ApiField("string")
 	private List<String> realShopIds;
 
 	/**
-	 * 券可使用的门店列表。列表中的门店id是通过调用接口ant.merchant.expand.shop.create创建门店返回的支付宝门店id 接口参数是列表类型。
+	 * 券可使用的门店列表。列表中的门店id是通过调用接口ant.merchant.expand.shop.create创建门店返回的支付宝门店id  接口参数是列表类型。
 	 */
 	@ApiListField("shop_ids")
 	@ApiField("string")

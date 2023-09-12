@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.tips.statistic.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-24 15:46:54
+ * @since 1.0, 2023-09-11 16:31:45
  */
 public class AlipayOpenMiniTipsStatisticQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7383837536977373348L;
+	private static final long serialVersionUID = 3637431477382434445L;
 
 	/** 
 	 * 昨日（接口调用当日的前一天）小程序收藏人数，时间内未创建投放活动，则响应时不传出参数。

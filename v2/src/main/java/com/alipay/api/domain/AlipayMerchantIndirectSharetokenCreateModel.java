@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间连支付红包吱口令获取
  *
  * @author auto create
- * @since 1.0, 2023-06-30 15:31:55
+ * @since 1.0, 2023-09-08 17:47:39
  */
 public class AlipayMerchantIndirectSharetokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8259242234664278919L;
+	private static final long serialVersionUID = 1593742911645752439L;
 
 	/**
 	 * 通过吱口令打开支付宝后的页面跳转链接，例如服务商支付页URL

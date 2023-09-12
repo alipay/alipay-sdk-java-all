@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业码账单开放模型
  *
  * @author auto create
- * @since 1.0, 2023-09-04 14:21:38
+ * @since 1.0, 2023-09-11 17:29:34
  */
 public class EcConsumeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2769195249949269527L;
+	private static final long serialVersionUID = 4764167165399928658L;
 
 	/**
 	 * 共同账户ID
@@ -173,6 +173,12 @@ public class EcConsumeInfo extends AlipayObject {
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/**
+	 * 收款方全称（如果是个人会显示脱敏后的名称）
+	 */
+	@ApiField("opposite_full_name")
+	private String oppositeFullName;
 
 	/**
 	 * 订单完结标识
@@ -457,6 +463,13 @@ OTHER：其他
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public String getOppositeFullName() {
+		return this.oppositeFullName;
+	}
+	public void setOppositeFullName(String oppositeFullName) {
+		this.oppositeFullName = oppositeFullName;
 	}
 
 	public String getOrderCompleteLabel() {

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.public.life.label.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 00:31:49
+ * @since 1.0, 2023-09-11 16:39:43
  */
 public class AlipayOpenPublicLifeLabelBatchqueryRequest implements AlipayRequest<AlipayOpenPublicLifeLabelBatchqueryResponse> {
 

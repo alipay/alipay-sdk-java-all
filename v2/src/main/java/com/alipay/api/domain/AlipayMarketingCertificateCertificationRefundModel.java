@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingCertificateCertificationRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8132347391139998395L;
+	private static final long serialVersionUID = 1652392412195993149L;
 
 	/**
 	 * 撤销核销时间。格式为：yyyy-MM-dd HH:mm:ss

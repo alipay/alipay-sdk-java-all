@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.deliverychannel.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-03 23:44:21
+ * @since 1.0, 2023-09-11 18:04:19
  */
 public class AlipayMarketingActivityDeliverychannelQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6317163714997142523L;
+	private static final long serialVersionUID = 2698343676834268964L;
 
 	/** 
 	 * "可投放的渠道信息列表。 用于表达当前可以投放的渠道列表信息"

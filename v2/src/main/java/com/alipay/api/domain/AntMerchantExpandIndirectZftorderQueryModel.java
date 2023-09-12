@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 直付通商户入驻进度查询
  *
  * @author auto create
- * @since 1.0, 2023-08-08 10:44:43
+ * @since 1.0, 2023-09-11 17:45:32
  */
 public class AntMerchantExpandIndirectZftorderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1893887572437652886L;
+	private static final long serialVersionUID = 2768878923541416649L;
 
 	/**
 	 * 进件申请时的外部商户id，与order_id二选一必填

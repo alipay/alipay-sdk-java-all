@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenMiniMessageTemplateApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2697793619461311426L;
+	private static final long serialVersionUID = 6137611894746282317L;
 
 	/**
 	 * 消息关键词列表，需要传入2到5个关键词，关键词内容需要与对应母板关键词对应。注意需传入json数组格式，[{"name":"第一个关键词"},{"name":"第二个关键词"}]

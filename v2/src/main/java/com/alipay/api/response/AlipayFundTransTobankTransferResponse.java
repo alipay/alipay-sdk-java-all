@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundTransTobankTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2258736899833816897L;
+	private static final long serialVersionUID = 6619274929161129294L;
 
 	/** 
 	 * 预计到账时间，格式为yyyy-MM-ddHH:mm:ss，转账受理失败不返回。

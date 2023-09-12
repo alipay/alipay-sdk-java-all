@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易组件查询订单接口
  *
  * @author auto create
- * @since 1.0, 2023-08-08 11:35:19
+ * @since 1.0, 2023-09-08 18:00:00
  */
 public class AlipayOpenMiniOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6663329687691763671L;
+	private static final long serialVersionUID = 4523627269996594874L;
 
 	/**
 	 * 买家open_id，和uid二选一
@@ -20,13 +20,13 @@ public class AlipayOpenMiniOrderQueryModel extends AlipayObject {
 	private String openId;
 
 	/**
-	 * 交易组件订单号,和商家自定义交易号二选一
+	 * 交易组件订单号；order_id和out_order_id二选一
 	 */
 	@ApiField("order_id")
 	private String orderId;
 
 	/**
-	 * 商家自定义订单号，和小程序交易组件交易号二选一
+	 * 商户订单号，创建订单请求由商户传入；order_id和out_order_id二选一
 	 */
 	@ApiField("out_order_id")
 	private String outOrderId;

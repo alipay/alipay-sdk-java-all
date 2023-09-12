@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.public.payee.bind.create request
  * 
  * @author auto create
- * @since 1.0, 2023-08-24 22:57:01
+ * @since 1.0, 2023-09-12 06:50:48
  */
 public class AlipayOpenPublicPayeeBindCreateRequest implements AlipayRequest<AlipayOpenPublicPayeeBindCreateResponse> {
 

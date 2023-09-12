@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.indirect.smidbind.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 01:01:59
+ * @since 1.0, 2023-09-11 18:09:48
  */
 public class AlipayMerchantIndirectSmidbindQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4755913285387234671L;
+	private static final long serialVersionUID = 1153646681328926879L;
 
 	/** 
 	 * 确认状态，枚举：已确认（AUTHORIZED）/未确认（UNAUTHORIZED）/已销户（CLOSED）/smid不存在（SMID_NOT_EXIST）

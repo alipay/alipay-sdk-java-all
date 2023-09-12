@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 蚂蚁财务智付核心批量根据业务单据号和关联单据号查询开票账单信息
  *
  * @author auto create
- * @since 1.0, 2023-08-25 14:59:23
+ * @since 1.0, 2023-09-11 18:02:10
  */
 public class AlipayBossFncGfsmartpayInvoicebillserviceBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5873593897811842792L;
+	private static final long serialVersionUID = 7718633118482841328L;
 
 	/**
 	 * 业务身份
@@ -36,6 +36,12 @@ public class AlipayBossFncGfsmartpayInvoicebillserviceBatchqueryModel extends Al
 	@ApiField("string")
 	private List<String> relatedDocumentNos;
 
+	/**
+	 * 影子标记
+	 */
+	@ApiField("test_mode")
+	private Boolean testMode;
+
 	public String getBizCode() {
 		return this.bizCode;
 	}
@@ -55,6 +61,13 @@ public class AlipayBossFncGfsmartpayInvoicebillserviceBatchqueryModel extends Al
 	}
 	public void setRelatedDocumentNos(List<String> relatedDocumentNos) {
 		this.relatedDocumentNos = relatedDocumentNos;
+	}
+
+	public Boolean getTestMode() {
+		return this.testMode;
+	}
+	public void setTestMode(Boolean testMode) {
+		this.testMode = testMode;
 	}
 
 }

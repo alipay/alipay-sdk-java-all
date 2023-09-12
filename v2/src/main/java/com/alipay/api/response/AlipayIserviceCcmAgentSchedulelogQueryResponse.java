@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.ccm.agent.schedulelog.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 18:36:42
+ * @since 1.0, 2023-09-11 16:18:47
  */
 public class AlipayIserviceCcmAgentSchedulelogQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7572595426658581818L;
+	private static final long serialVersionUID = 4555279761945933635L;
 
 	/** 
 	 * 客服状态变更流水日志集合

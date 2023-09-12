@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CustomerGuideModify extends AlipayObject {
 
-	private static final long serialVersionUID = 7638934828891432189L;
+	private static final long serialVersionUID = 2769243259362728878L;
 
 	/**
 	 * 券可用的小程序 appId，卡包详情页可跳转到该 appId。
@@ -50,7 +50,7 @@ public class CustomerGuideModify extends AlipayObject {
 	private List<String> shopIds;
 
 	/**
-	 * 后续废弃。券可使用的门店列表。列表中的门店id是通过调用接口ant.merchant.expand.shop.create创建门店返回的支付宝门店 id 接口参数是列表类型。
+	 * 后续废弃。券可使用的门店列表。列表中的门店id是通过调用接口ant.merchant.expand.shop.create创建门店返回的支付宝门店  id 接口参数是列表类型。
 接口参数是列表类型。
 	 */
 	@ApiListField("store_ids")

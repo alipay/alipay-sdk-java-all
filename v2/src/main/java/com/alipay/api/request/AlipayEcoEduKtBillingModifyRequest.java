@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.edu.kt.billing.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-08-24 21:21:48
+ * @since 1.0, 2023-09-11 17:20:36
  */
 public class AlipayEcoEduKtBillingModifyRequest implements AlipayRequest<AlipayEcoEduKtBillingModifyResponse> {
 

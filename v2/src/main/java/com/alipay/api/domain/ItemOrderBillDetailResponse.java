@@ -15,10 +15,10 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ItemOrderBillDetailResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 5223436312249361546L;
+	private static final long serialVersionUID = 5564527994886619392L;
 
 	/**
-	 * 订单创建时间，格式为 yyyy-MM-dd HH:mm:ss
+	 * 订单创建时间，格式为  yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("create_time")
 	private Date createTime;
@@ -90,7 +90,7 @@ public class ItemOrderBillDetailResponse extends AlipayObject {
 	private String prePromotion;
 
 	/**
-	 * 订单预计结算时间，用户支付后确认收货前告知账期的天数， 表述为确认收货后X天结算；用户确认收货后，表述为预计时间格式为yyyy-MM-dd
+	 * 订单预计结算时间，用户支付后确认收货前告知账期的天数，  表述为确认收货后X天结算；用户确认收货后，表述为预计时间格式为yyyy-MM-dd
 	 */
 	@ApiField("predict_settle_time")
 	private String predictSettleTime;

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 蚂蚁财务智付核心录入发票
  *
  * @author auto create
- * @since 1.0, 2023-08-25 16:44:05
+ * @since 1.0, 2023-09-11 18:02:06
  */
 public class AlipayBossFncGfsmartpayInvoiceserviceCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7731289432366629751L;
+	private static final long serialVersionUID = 8194671779989963197L;
 
 	/**
 	 * 发票录入人
@@ -35,6 +35,12 @@ public class AlipayBossFncGfsmartpayInvoiceserviceCreateModel extends AlipayObje
 	@ApiField("is_batch")
 	private Boolean isBatch;
 
+	/**
+	 * 影子标记
+	 */
+	@ApiField("test_mode")
+	private Boolean testMode;
+
 	public String getEntryBy() {
 		return this.entryBy;
 	}
@@ -54,6 +60,13 @@ public class AlipayBossFncGfsmartpayInvoiceserviceCreateModel extends AlipayObje
 	}
 	public void setIsBatch(Boolean isBatch) {
 		this.isBatch = isBatch;
+	}
+
+	public Boolean getTestMode() {
+		return this.testMode;
+	}
+	public void setTestMode(Boolean testMode) {
+		this.testMode = testMode;
 	}
 
 }

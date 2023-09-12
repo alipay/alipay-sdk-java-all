@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MiniGoodsDetailInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8151945392188597317L;
+	private static final long serialVersionUID = 1514164158886196671L;
 
 	/**
 	 * 商品描述信息
@@ -44,7 +44,7 @@ public class MiniGoodsDetailInfoDTO extends AlipayObject {
 	private String goodsName;
 
 	/**
-	 * 商品未上报商品库时，需传入 上传商品文件接口alipay.merchant.item.file.upload
+	 * 商品未上报商品库时，需传入  上传商品文件接口alipay.merchant.item.file.upload
  获取的 material_id。如果该商品已经上报商品库，可不传
 	 */
 	@ApiField("image_material_id")

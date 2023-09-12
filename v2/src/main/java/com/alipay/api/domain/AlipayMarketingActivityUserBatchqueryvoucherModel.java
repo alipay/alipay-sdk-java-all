@@ -11,16 +11,16 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingActivityUserBatchqueryvoucherModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2622291685976686991L;
+	private static final long serialVersionUID = 7563355922995177933L;
 
 	/**
-	 * 活动 id
+	 * 活动id
 	 */
 	@ApiField("activity_id")
 	private String activityId;
 
 	/**
-	 * 券归属商户
+	 * 归属商户PID
 	 */
 	@ApiField("belong_merchant_id")
 	private String belongMerchantId;
@@ -32,7 +32,7 @@ public class AlipayMarketingActivityUserBatchqueryvoucherModel extends AlipayObj
 	private String merchantAccessMode;
 
 	/**
-	 * 支付宝用户openId
+	 * 领券的支付宝用户openId
 	 */
 	@ApiField("open_id")
 	private String openId;
@@ -56,7 +56,7 @@ public class AlipayMarketingActivityUserBatchqueryvoucherModel extends AlipayObj
 	private String senderMerchantId;
 
 	/**
-	 * 支付宝用户 id
+	 * 支付宝user_id账号
 	 */
 	@ApiField("user_id")
 	private String userId;

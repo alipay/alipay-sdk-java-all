@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.mpoint.pay response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 15:17:01
+ * @since 1.0, 2023-09-07 20:14:53
  */
 public class AlipayUserMpointPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1554923725321836429L;
+	private static final long serialVersionUID = 1788618255813317751L;
 
 	
 

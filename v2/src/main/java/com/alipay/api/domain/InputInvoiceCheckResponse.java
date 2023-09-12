@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票验真返回
  *
  * @author auto create
- * @since 1.0, 2023-07-26 14:56:32
+ * @since 1.0, 2023-09-11 19:47:48
  */
 public class InputInvoiceCheckResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 3579158278451345216L;
+	private static final long serialVersionUID = 5826924414395153872L;
 
 	/**
 	 * 购方地址电话
@@ -166,6 +166,12 @@ public class InputInvoiceCheckResponse extends AlipayObject {
 	 */
 	@ApiField("seller_tax_no")
 	private String sellerTaxNo;
+
+	/**
+	 * 异步验真时返回任务id,通过该id获取验真结果
+	 */
+	@ApiField("task_id")
+	private String taskId;
 
 	/**
 	 * 税额,单位元,两位小数
@@ -346,6 +352,13 @@ public class InputInvoiceCheckResponse extends AlipayObject {
 	}
 	public void setSellerTaxNo(String sellerTaxNo) {
 		this.sellerTaxNo = sellerTaxNo;
+	}
+
+	public String getTaskId() {
+		return this.taskId;
+	}
+	public void setTaskId(String taskId) {
+		this.taskId = taskId;
 	}
 
 	public String getTaxAmount() {

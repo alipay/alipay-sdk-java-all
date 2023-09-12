@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class VoucherAvailableGoodsInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1538332641421465413L;
+	private static final long serialVersionUID = 8391131494788949475L;
 
 	/**
 	 * 可优惠商品编码，商家自定义商品编码。当用户支付时，交易中的商品编码和支付券配置的商品编码有任一匹配时，可以使用优惠券。
@@ -31,7 +31,7 @@ public class VoucherAvailableGoodsInfo extends AlipayObject {
 	private List<String> excludeGoodsSkuIds;
 
 	/**
-	 * 商品描述
+	 * 商品描述信息。 用于券面展示，向用户介绍商品
 	 */
 	@ApiField("goods_description")
 	private String goodsDescription;
@@ -62,7 +62,7 @@ public class VoucherAvailableGoodsInfo extends AlipayObject {
 	private String goodsName;
 
 	/**
-	 * 商品原价
+	 * 原价。说明：该字段可不填，填入商品名称goods_name则必填;
 	 */
 	@ApiField("origin_amount")
 	private String originAmount;

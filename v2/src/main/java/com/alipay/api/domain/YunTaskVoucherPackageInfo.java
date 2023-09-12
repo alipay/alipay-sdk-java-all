@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class YunTaskVoucherPackageInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7472541652767866718L;
+	private static final long serialVersionUID = 1418529214321983451L;
 
 	/**
 	 * 券包名称

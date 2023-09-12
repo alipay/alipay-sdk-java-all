@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDigitalmgmtWelfarefoundationVolunteersBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3792689285247863182L;
+	private static final long serialVersionUID = 1694827646433337129L;
 
 	/** 
 	 * 志愿者活动时

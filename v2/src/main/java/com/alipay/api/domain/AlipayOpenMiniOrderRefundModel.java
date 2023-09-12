@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 交易组件订单退款接口
  *
  * @author auto create
- * @since 1.0, 2023-07-26 11:09:40
+ * @since 1.0, 2023-09-08 17:54:25
  */
 public class AlipayOpenMiniOrderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7229864613558398141L;
+	private static final long serialVersionUID = 2733146228165987565L;
 
 	/**
 	 * 部分商品退款信息
@@ -49,7 +49,7 @@ public class AlipayOpenMiniOrderRefundModel extends AlipayObject {
 	private String outRefundId;
 
 	/**
-	 * 退款金额,单位"元"
+	 * 退款金额,单位：元，精确到小数点后两位
 	 */
 	@ApiField("refund")
 	private String refund;
@@ -62,7 +62,7 @@ public class AlipayOpenMiniOrderRefundModel extends AlipayObject {
 	private String refundReason;
 
 	/**
-	 * 用户UID
+	 * 买家支付宝用户ID；open_id和user_id二选一
 	 */
 	@ApiField("user_id")
 	private String userId;

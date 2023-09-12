@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPassTemplateAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2663672487262866356L;
+	private static final long serialVersionUID = 6868991596431531265L;
 
 	/**
 	 * 模板内容信息，遵循JSON规范，详情参见tpl_content <a href="https://opendocs.alipay.com/open/016d5g">参数详细说明</a>。

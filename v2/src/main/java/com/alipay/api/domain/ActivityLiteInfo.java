@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ActivityLiteInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6166164556577176623L;
+	private static final long serialVersionUID = 4764675491355281129L;
 
 	/**
 	 * 活动基础信息。
@@ -28,19 +28,19 @@ public class ActivityLiteInfo extends AlipayObject {
 	private String activityId;
 
 	/**
-	 * 活动名称。 不对支付宝用户进行展示，仅供商家在后台管理活动使用。
+	 * 活动名称
 	 */
 	@ApiField("activity_name")
 	private String activityName;
 
 	/**
-	 * 活动状态。
+	 * 活动状态 。 ACTIVE:活动已激活，表示活动已经生效，等到活动开始(publish_start_time)之后用户就可以参与活动。  PAUSE:活动已暂停，表示商户临时暂停该活动，该状态下用户不能参与活动。
 	 */
 	@ApiField("activity_status")
 	private String activityStatus;
 
 	/**
-	 * 归属商户 PID。
+	 * 归属商户PID
 	 */
 	@ApiField("belong_merchant_id")
 	private String belongMerchantId;
@@ -58,7 +58,7 @@ public class ActivityLiteInfo extends AlipayObject {
 	private String publishEndTime;
 
 	/**
-	 * 券发放开始时间。格式为：yyyy-MM-dd HH:mm:ss。
+	 * 券发放开始时间。 格式为：yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("publish_start_time")
 	private Date publishStartTime;

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class UserVoucherBaseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4356681379172851742L;
+	private static final long serialVersionUID = 8359378167511135869L;
 
 	/**
 	 * 若商家券操作过关联商户订单信息，则该字段返回商家券已关联的商户订单号。
@@ -40,7 +40,7 @@ public class UserVoucherBaseInfo extends AlipayObject {
 	private Date validEndTime;
 
 	/**
-	 * 支付宝券id
+	 * 用户券 id。支付宝为用户优惠券唯一分配的 id。
 	 */
 	@ApiField("voucher_id")
 	private String voucherId;
@@ -52,7 +52,7 @@ public class UserVoucherBaseInfo extends AlipayObject {
 	private Long voucherMaxUseTimes;
 
 	/**
-	 * 券名称
+	 * 对消费者展示的券(商品)名称。
 	 */
 	@ApiField("voucher_name")
 	private String voucherName;

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.ccm.agent.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 17:06:41
+ * @since 1.0, 2023-09-11 16:01:44
  */
 public class AlipayIserviceCcmAgentModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7543676164539545846L;
+	private static final long serialVersionUID = 6384641942229136744L;
 
 	
 

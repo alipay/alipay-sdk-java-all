@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.expand.shop.receiptaccount.save request
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 01:44:44
+ * @since 1.0, 2023-09-11 19:22:21
  */
 public class AntMerchantExpandShopReceiptaccountSaveRequest implements AlipayRequest<AntMerchantExpandShopReceiptaccountSaveResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.trade.royalty.relation.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 18:35:51
+ * @since 1.0, 2023-09-11 18:38:06
  */
 public class AlipayTradeRoyaltyRelationBatchqueryRequest implements AlipayRequest<AlipayTradeRoyaltyRelationBatchqueryResponse> {
 

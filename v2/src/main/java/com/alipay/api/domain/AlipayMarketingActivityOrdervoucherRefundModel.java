@@ -13,10 +13,10 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingActivityOrdervoucherRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1778248832266491935L;
+	private static final long serialVersionUID = 7811516158658624131L;
 
 	/**
-	 * 优惠券活动id
+	 * 活动id
 	 */
 	@ApiField("activity_id")
 	private String activityId;
@@ -27,12 +27,6 @@ public class AlipayMarketingActivityOrdervoucherRefundModel extends AlipayObject
 
 
 格式为：yyyy-MM-dd HH:mm:ss
-
-
-
-特别说明：
-
-支付宝的退款时间按照外部退款的时间为准。
 	 */
 	@ApiField("biz_dt")
 	private Date bizDt;
@@ -61,10 +55,6 @@ public class AlipayMarketingActivityOrdervoucherRefundModel extends AlipayObject
 
 	/**
 	 * 当前订单的退款总金额(包含优惠券金额)，单位为元。
-
-限制：
-
-该笔订单的资金总额，取值范围[0.01,100000000]，精确到小数点后2位。
 	 */
 	@ApiField("total_fee")
 	private String totalFee;

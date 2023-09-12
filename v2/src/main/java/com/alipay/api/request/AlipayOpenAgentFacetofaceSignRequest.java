@@ -14,7 +14,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.agent.facetoface.sign request
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 18:20:13
+ * @since 1.0, 2023-09-11 19:34:26
  */
 public class AlipayOpenAgentFacetofaceSignRequest implements AlipayUploadRequest<AlipayOpenAgentFacetofaceSignResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundCouponWufuCardQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8128147653347443628L;
+	private static final long serialVersionUID = 2377144535992841837L;
 
 	/**
 	 * 业务场景码

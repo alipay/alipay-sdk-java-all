@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业务订单信息
  *
  * @author auto create
- * @since 1.0, 2023-08-29 10:57:01
+ * @since 1.0, 2023-09-08 10:32:51
  */
 public class BizOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7845486156644358893L;
+	private static final long serialVersionUID = 5231821138769213151L;
 
 	/**
 	 * 订单金额，单位元

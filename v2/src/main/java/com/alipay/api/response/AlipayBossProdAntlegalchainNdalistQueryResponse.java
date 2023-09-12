@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBossProdAntlegalchainNdalistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1413225654395896285L;
+	private static final long serialVersionUID = 1184168991729413563L;
 
 	/** 
 	 * 每页条数

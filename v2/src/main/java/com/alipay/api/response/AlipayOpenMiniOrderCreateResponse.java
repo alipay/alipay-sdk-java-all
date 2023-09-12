@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.order.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-30 17:06:44
+ * @since 1.0, 2023-09-08 14:11:41
  */
 public class AlipayOpenMiniOrderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8357246491511522679L;
+	private static final long serialVersionUID = 8853539615892693329L;
 
 	/** 
 	 * 交易组件订单号。可以把获取到的order_id作为alipay.trade.create（统一收单交易创建接口）extend_params.trade_component_order_id的入参进行关联。

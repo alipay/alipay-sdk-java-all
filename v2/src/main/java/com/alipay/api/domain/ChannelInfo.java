@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 渠道信息
  *
  * @author auto create
- * @since 1.0, 2023-05-11 15:13:26
+ * @since 1.0, 2023-09-08 10:32:51
  */
 public class ChannelInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3734651288692267734L;
+	private static final long serialVersionUID = 2745224446791997957L;
 
 	/**
 	 * 资产ID

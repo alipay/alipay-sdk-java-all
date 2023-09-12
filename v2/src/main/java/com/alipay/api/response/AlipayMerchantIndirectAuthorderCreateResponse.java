@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.indirect.authorder.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 05:36:42
+ * @since 1.0, 2023-09-11 18:41:47
  */
 public class AlipayMerchantIndirectAuthorderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8811254439527788146L;
+	private static final long serialVersionUID = 6629871161975682878L;
 
 	/** 
 	 * 申请单号

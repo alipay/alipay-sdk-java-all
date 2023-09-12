@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class IdTypeTestComplexParam extends AlipayObject {
 
-	private static final long serialVersionUID = 1267453271133699567L;
+	private static final long serialVersionUID = 7626185357413235896L;
 
 	/**
 	 * idType

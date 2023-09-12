@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 素材信息
  *
  * @author auto create
- * @since 1.0, 2023-05-18 11:45:44
+ * @since 1.0, 2023-09-07 20:04:32
  */
 public class DspCreative extends AlipayObject {
 
-	private static final long serialVersionUID = 1272492756771597985L;
+	private static final long serialVersionUID = 6858441663859379257L;
 
 	/**
 	 * 应用下载
@@ -36,6 +36,13 @@ public class DspCreative extends AlipayObject {
 	 */
 	@ApiField("creative_id")
 	private String creativeId;
+
+	/**
+	 * 创意标签，包含创意来源等信息
+	 */
+	@ApiListField("creative_tags")
+	@ApiField("string")
+	private List<String> creativeTags;
 
 	/**
 	 * 唤端链接
@@ -92,6 +99,13 @@ public class DspCreative extends AlipayObject {
 	}
 	public void setCreativeId(String creativeId) {
 		this.creativeId = creativeId;
+	}
+
+	public List<String> getCreativeTags() {
+		return this.creativeTags;
+	}
+	public void setCreativeTags(List<String> creativeTags) {
+		this.creativeTags = creativeTags;
 	}
 
 	public String getDeeplinkUrl() {

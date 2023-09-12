@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.huabei.auth.accumulation.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 02:46:46
+ * @since 1.0, 2023-09-11 19:46:48
  */
 public class AlipayPcreditHuabeiAuthAccumulationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1355589165324951463L;
+	private static final long serialVersionUID = 5862695111329413276L;
 
 	/** 
 	 * 本周期内支付宝端根据用户消费情况试算出的应付费用，仅供参考使用。

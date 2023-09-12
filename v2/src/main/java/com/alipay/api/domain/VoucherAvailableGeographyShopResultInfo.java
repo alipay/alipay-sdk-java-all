@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class VoucherAvailableGeographyShopResultInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5444627354779899964L;
+	private static final long serialVersionUID = 5179726525444389838L;
 
 	/**
 	 * 全部门店结果。
@@ -37,14 +37,14 @@ public class VoucherAvailableGeographyShopResultInfo extends AlipayObject {
 	private List<VoucherFailShopInfo> failAvailableShopInfos;
 
 	/**
-	 * 代运营商业关系门店列表，列表中的门店id是调用接口alipay.business.relation.shop.create创建门店返回的real_shop_id 接口参数是列表类型。
+	 * 代运营商业关系门店列表，列表中的门店id是调用接口alipay.business.relation.shop.create创建门店返回的real_shop_id  接口参数是列表类型。
 	 */
 	@ApiListField("success_available_real_shop_ids")
 	@ApiField("string")
 	private List<String> successAvailableRealShopIds;
 
 	/**
-	 * 券可使用的门店列表。列表中的门店id是通过调用接口ant.merchant.expand.shop.create创建门店返回的支付宝门店id 接口参数是列表类型。
+	 * 券可使用的门店列表。列表中的门店id是通过调用接口ant.merchant.expand.shop.create创建门店返回的支付宝门店id  接口参数是列表类型。
 	 */
 	@ApiListField("success_available_shop_ids")
 	@ApiField("string")

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.ec.employee.add request
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 09:44:32
+ * @since 1.0, 2023-09-11 17:31:44
  */
 public class AlipayCommerceEcEmployeeAddRequest implements AlipayRequest<AlipayCommerceEcEmployeeAddResponse> {
 

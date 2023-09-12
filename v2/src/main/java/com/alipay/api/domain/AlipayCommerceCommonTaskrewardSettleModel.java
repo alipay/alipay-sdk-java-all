@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceCommonTaskrewardSettleModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5494269393427248377L;
+	private static final long serialVersionUID = 4895333519693845666L;
 
 	/**
 	 * 导购员的userId

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁财务智付核心查询付款进度
  *
  * @author auto create
- * @since 1.0, 2023-08-25 15:04:47
+ * @since 1.0, 2023-09-11 18:02:01
  */
 public class AlipayBossFncGfsmartpayPaymentinstructionQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6876922963586771226L;
+	private static final long serialVersionUID = 1511368152522436218L;
 
 	/**
 	 * 业务身份
@@ -30,6 +30,12 @@ public class AlipayBossFncGfsmartpayPaymentinstructionQueryModel extends AlipayO
 	 */
 	@ApiField("related_document_nos")
 	private String relatedDocumentNos;
+
+	/**
+	 * 影子标记
+	 */
+	@ApiField("test_mode")
+	private Boolean testMode;
 
 	public String getBizCode() {
 		return this.bizCode;
@@ -50,6 +56,13 @@ public class AlipayBossFncGfsmartpayPaymentinstructionQueryModel extends AlipayO
 	}
 	public void setRelatedDocumentNos(String relatedDocumentNos) {
 		this.relatedDocumentNos = relatedDocumentNos;
+	}
+
+	public Boolean getTestMode() {
+		return this.testMode;
+	}
+	public void setTestMode(Boolean testMode) {
+		this.testMode = testMode;
 	}
 
 }

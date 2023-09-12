@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudCloudrunObjectstorageFilelistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3316392857942767838L;
+	private static final long serialVersionUID = 4334339596918833875L;
 
 	/** 
 	 * 分页游标下一页标记，文件列表游标索引，next_token为文件分页参数，在本接口的响应中获取，传入next_token以获取下一页数据，若next_token为空代表当前已到页尾，没有下一页

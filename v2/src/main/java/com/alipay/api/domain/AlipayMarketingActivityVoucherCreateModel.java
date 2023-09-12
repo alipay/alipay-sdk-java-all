@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingActivityVoucherCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1147394851966854394L;
+	private static final long serialVersionUID = 2171378284739338675L;
 
 	/**
 	 * 活动基础信息
@@ -41,17 +41,17 @@ public class AlipayMarketingActivityVoucherCreateModel extends AlipayObject {
 
 	/**
 	 * 用作幂等控制。
- 
- 幂等作用：
- 参数不变的情况下，再次请求返回与上一次相同的结果。
- 
- 外部接入方需保证业务单号唯一。
+
+幂等作用：
+参数不变的情况下，再次请求返回与上一次相同的结果。
+
+外部接入方需保证业务单号唯一。
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
 
 	/**
-	 * 券发放结束时间。 格式为：yyyy-MM-dd HH:mm:ss 限制： 券发放结束时间 publish_end_time 与 券发放开始时间 publish_start_time 间隔必须小于等于180天
+	 * 券发放结束时间。 格式为：yyyy-MM-dd HH:mm:ss 限制： 券发放结束时间 publish_end_time 与 券发放开始时间  publish_start_time 间隔必须小于等于180天
 	 */
 	@ApiField("publish_end_time")
 	private Date publishEndTime;

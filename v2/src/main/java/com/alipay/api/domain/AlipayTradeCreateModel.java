@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户通过该接口进行交易的创建下单
  *
  * @author auto create
- * @since 1.0, 2023-08-22 14:45:53
+ * @since 1.0, 2023-09-07 11:24:22
  */
 public class AlipayTradeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2254443678657354118L;
+	private static final long serialVersionUID = 3471417944633837947L;
 
 	/**
 	 * 签约参数。如果希望使用支付并签约，需要在这里传入签约信息。
@@ -132,6 +132,12 @@ buyer_logon_id和buyer_id两者传其一，和buyer_id不能同时为空，建�
 	 */
 	@ApiField("op_app_id")
 	private String opAppId;
+
+	/**
+	 * 买家支付宝用户唯一标识（商户实际经营主体的小程序应用关联的买家open_id）
+	 */
+	@ApiField("op_buyer_open_id")
+	private String opBuyerOpenId;
 
 	/**
 	 * 商户操作员编号。
@@ -374,6 +380,13 @@ buyer_logon_id和buyer_id两者传其一，和buyer_id不能同时为空，建�
 	}
 	public void setOpAppId(String opAppId) {
 		this.opAppId = opAppId;
+	}
+
+	public String getOpBuyerOpenId() {
+		return this.opBuyerOpenId;
+	}
+	public void setOpBuyerOpenId(String opBuyerOpenId) {
+		this.opBuyerOpenId = opBuyerOpenId;
 	}
 
 	public String getOperatorId() {

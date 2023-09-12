@@ -18,11 +18,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.user.queryvoucher response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 04:41:45
+ * @since 1.0, 2023-09-11 19:16:48
  */
 public class AlipayMarketingActivityUserQueryvoucherResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1895115547497857588L;
+	private static final long serialVersionUID = 6732271832526851334L;
 
 	/** 
 	 * 活动基础信息
@@ -43,13 +43,13 @@ public class AlipayMarketingActivityUserQueryvoucherResponse extends AlipayRespo
 	private String associateTradeNo;
 
 	/** 
-	 * 券可用开始时间
+	 * 券可用开始时间。格式为：yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("available_begin_time")
 	private Date availableBeginTime;
 
 	/** 
-	 * 券可用结束时间
+	 * 券可用结束时间。格式为：yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("available_end_time")
 	private Date availableEndTime;
@@ -91,7 +91,7 @@ public class AlipayMarketingActivityUserQueryvoucherResponse extends AlipayRespo
 	private VoucherDisplayPatternInfo voucherDisplayPatternInfo;
 
 	/** 
-	 * 券名称
+	 * 对消费者展示的券(商品)名称。
 	 */
 	@ApiField("voucher_name")
 	private String voucherName;

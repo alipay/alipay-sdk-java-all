@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.shortlink.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 17:15:46
+ * @since 1.0, 2023-09-12 06:49:06
  */
 public class AlipayOpenPublicShortlinkCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4161535721959495236L;
+	private static final long serialVersionUID = 2256615971969533816L;
 
 	/** 
 	 * 生成的带参推广短链接

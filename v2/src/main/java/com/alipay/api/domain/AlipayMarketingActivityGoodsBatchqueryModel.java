@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingActivityGoodsBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4249461847193565254L;
+	private static final long serialVersionUID = 7657733116777477373L;
 
 	/**
 	 * 活动id
@@ -32,11 +32,7 @@ public class AlipayMarketingActivityGoodsBatchqueryModel extends AlipayObject {
 	private String merchantAccessMode;
 
 	/**
-	 * 商户PID,默认为当前接口调用商户 
-限制: 
-接口调用者必须有商户代运营权限。 
-
-代运营授权流程https://opendocs.alipay.com/mini/01hm6i#%E4%BB%A3%E8%BF%90%E8%90%A5%E6%8E%88%E6%9D%83
+	 * 商户PID,默认为当前接口调用商户。
 	 */
 	@ApiField("merchant_id")
 	private String merchantId;

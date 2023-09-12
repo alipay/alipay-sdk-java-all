@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingCardConsumeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3425548779284973763L;
+	private static final long serialVersionUID = 2667769652843712517L;
 
 	/**
 	 * 用户实际付的现金金额
@@ -62,7 +62,7 @@ public class AlipayMarketingCardConsumeSyncModel extends AlipayObject {
 	private String swipeCertType;
 
 	/**
-	 * 支付宝业务卡号，即通过<a href="https://opendocs.alipay.com/apis/009zw3">alipay.marketing.card.open</a>(会员卡开卡)接口开卡后获取的 card_info.biz_card_no 值。
+	 * 支付宝业务卡号，即通过<a  href="https://opendocs.alipay.com/apis/009zw3">alipay.marketing.card.open</a>(会员卡开卡)接口开卡后获取的  card_info.biz_card_no 值。
 	 */
 	@ApiField("target_card_no")
 	private String targetCardNo;

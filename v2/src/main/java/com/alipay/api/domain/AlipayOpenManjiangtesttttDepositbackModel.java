@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenManjiangtesttttDepositbackModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5286347566918691941L;
+	private static final long serialVersionUID = 3239757635527582481L;
 
 	/**
 	 * 5
