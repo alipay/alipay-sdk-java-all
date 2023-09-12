@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 淘客任务明星用户集合
  *
  * @author auto create
- * @since 1.0, 2023-06-16 14:38:58
+ * @since 1.0, 2023-09-12 19:57:32
  */
 public class StarUidAmountRatioDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6359487418356891929L;
+	private static final long serialVersionUID = 5668471586893116798L;
 
 	/**
 	 * 分佣比率
@@ -29,6 +29,13 @@ public class StarUidAmountRatioDTO extends AlipayObject {
 	@ApiField("string")
 	private List<String> uidList;
 
+	/**
+	 * 淘客用户openId集合
+	 */
+	@ApiListField("user_open_id_list")
+	@ApiField("string")
+	private List<String> userOpenIdList;
+
 	public String getRatio() {
 		return this.ratio;
 	}
@@ -41,6 +48,13 @@ public class StarUidAmountRatioDTO extends AlipayObject {
 	}
 	public void setUidList(List<String> uidList) {
 		this.uidList = uidList;
+	}
+
+	public List<String> getUserOpenIdList() {
+		return this.userOpenIdList;
+	}
+	public void setUserOpenIdList(List<String> userOpenIdList) {
+		this.userOpenIdList = userOpenIdList;
 	}
 
 }

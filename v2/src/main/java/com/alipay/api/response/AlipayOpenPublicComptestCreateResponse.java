@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenPublicComptestCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2499477158896129798L;
+	private static final long serialVersionUID = 3133378695828278242L;
 
 	/** 
 	 * 1

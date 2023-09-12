@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenIotmbsHoteldeviceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6282816916165994877L;
+	private static final long serialVersionUID = 2862469287968755433L;
 
 	/**
 	 * 设备ID

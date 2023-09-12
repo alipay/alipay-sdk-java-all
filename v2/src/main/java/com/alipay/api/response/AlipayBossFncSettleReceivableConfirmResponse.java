@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBossFncSettleReceivableConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1373541553996767583L;
+	private static final long serialVersionUID = 3396642329794635337L;
 
 	/** 
 	 * 应收确认结果列表

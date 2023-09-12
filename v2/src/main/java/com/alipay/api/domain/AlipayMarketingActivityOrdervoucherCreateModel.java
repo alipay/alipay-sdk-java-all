@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建订单券
  *
  * @author auto create
- * @since 1.0, 2023-08-14 14:17:42
+ * @since 1.0, 2023-09-12 17:30:52
  */
 public class AlipayMarketingActivityOrdervoucherCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7319324428112164978L;
+	private static final long serialVersionUID = 3337661882538168537L;
 
 	/**
 	 * 活动基础信息
@@ -22,7 +22,7 @@ public class AlipayMarketingActivityOrdervoucherCreateModel extends AlipayObject
 	private ActivityBaseInfo activityBaseInfo;
 
 	/**
-	 * 活动名称。
+	 * 活动名称。不对用户进行展示，仅供商家在后台管理活动使用。
 	 */
 	@ApiField("activity_name")
 	private String activityName;
@@ -59,7 +59,7 @@ public class AlipayMarketingActivityOrdervoucherCreateModel extends AlipayObject
 
 	/**
 	 * 外部业务单号，用作幂等控制。
-幂等作用：参数不变的情况下，再次请求返回与上一次相同的结果。外部接入方需保证业务单号唯一
+幂等作用：参数不变的情况下，再次请求返回与上一次相同的结果。
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;

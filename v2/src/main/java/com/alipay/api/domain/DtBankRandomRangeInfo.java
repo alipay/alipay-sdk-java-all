@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DtBankRandomRangeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1776612558121571498L;
+	private static final long serialVersionUID = 1337415399272569443L;
 
 	/**
 	 * 随机区间上限，单位分

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenSearchboxDowngradePreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2286281877544592427L;
+	private static final long serialVersionUID = 2822689957319236751L;
 
 	/**
 	 * 搜索直达boxId

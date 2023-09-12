@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PaymentVoucherAlipayBalanceRechargeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5671719453499943616L;
+	private static final long serialVersionUID = 5545694711543476581L;
 
 	/**
 	 * 出资的支付宝登录账号

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FengdieActivityCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2847118556353537164L;
+	private static final long serialVersionUID = 5817641137569365878L;
 
 	/**
 	 * 云凤蝶站点的 id

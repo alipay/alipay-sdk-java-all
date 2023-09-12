@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenIotmbsRoomstateSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6886852221666721684L;
+	private static final long serialVersionUID = 8712936956197387165L;
 
 	/** 
 	 * 成功true失败false

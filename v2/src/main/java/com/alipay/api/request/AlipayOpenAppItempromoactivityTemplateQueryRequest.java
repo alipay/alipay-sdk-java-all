@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.itempromoactivity.template.query request
  * 
  * @author auto create
- * @since 1.0, 2023-09-08 15:11:44
+ * @since 1.0, 2023-09-12 20:21:42
  */
 public class AlipayOpenAppItempromoactivityTemplateQueryRequest implements AlipayRequest<AlipayOpenAppItempromoactivityTemplateQueryResponse> {
 

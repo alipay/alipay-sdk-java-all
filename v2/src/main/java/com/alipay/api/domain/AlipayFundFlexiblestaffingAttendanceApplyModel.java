@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundFlexiblestaffingAttendanceApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2164564757121724376L;
+	private static final long serialVersionUID = 1394585414977189938L;
 
 	/**
 	 * 授权跳转类型

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniInnerclientinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6821827781133832628L;
+	private static final long serialVersionUID = 2737573899249823853L;
 
 	/**
 	 * 端创建时提供的bundle_id
