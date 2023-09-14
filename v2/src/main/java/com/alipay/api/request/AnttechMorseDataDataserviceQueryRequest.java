@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.morse.data.dataservice.query request
  * 
  * @author auto create
- * @since 1.0, 2023-09-08 16:41:44
+ * @since 1.0, 2023-09-13 15:11:43
  */
 public class AnttechMorseDataDataserviceQueryRequest implements AlipayRequest<AnttechMorseDataDataserviceQueryResponse> {
 

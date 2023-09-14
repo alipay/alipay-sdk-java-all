@@ -21,7 +21,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiCateringItemQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4391863338451555542L;
+	private static final long serialVersionUID = 7493663537561391314L;
 
 	/** 
 	 * 商品可用时段列表。最多添加三条规则。该内容仅用于展示，不影响实际核销。

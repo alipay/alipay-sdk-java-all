@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序云身份核验服务结果确认接口
  *
  * @author auto create
- * @since 1.0, 2023-06-30 10:35:03
+ * @since 1.0, 2023-09-13 14:53:52
  */
 public class AlipaySecurityRiskMiniprogramVerifyidentityConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2659651689553923634L;
+	private static final long serialVersionUID = 7164161434529195283L;
 
 	/**
 	 * 接入业务方业务唯一性id
@@ -20,7 +20,7 @@ public class AlipaySecurityRiskMiniprogramVerifyidentityConfirmModel extends Ali
 	private String bizId;
 
 	/**
-	 * 身份核验场景CODE，与初始化时传入一致，如login, riskVerify, payment, changePassword.
+	 * 身份核验场景CODE，为接入场景的英文名称，比如登陆login, 风险校验riskVerify, 支付payment等，需保证同一商户下多种接入场景code的唯一性
 	 */
 	@ApiField("scene_code")
 	private String sceneCode;

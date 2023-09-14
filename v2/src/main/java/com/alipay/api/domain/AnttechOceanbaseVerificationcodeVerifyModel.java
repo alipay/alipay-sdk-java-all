@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * OB业务校验验证码
  *
  * @author auto create
- * @since 1.0, 2021-12-03 10:46:02
+ * @since 1.0, 2023-09-13 14:55:56
  */
 public class AnttechOceanbaseVerificationcodeVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6285337695241227422L;
+	private static final long serialVersionUID = 1129388928628741241L;
 
 	/**
 	 * 验证码

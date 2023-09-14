@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询风格表
  *
  * @author auto create
- * @since 1.0, 2023-09-12 20:52:27
+ * @since 1.0, 2023-09-13 16:13:15
  */
 public class AlipayDigitalopUcdpApecreativeStyleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8742445875691416683L;
+	private static final long serialVersionUID = 8781385918956349574L;
 
 	/**
 	 * page唯一用于分页。如果传空，默认为第一页

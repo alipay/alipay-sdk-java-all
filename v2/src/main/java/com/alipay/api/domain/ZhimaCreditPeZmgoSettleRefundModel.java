@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCreditPeZmgoSettleRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2341269528613272276L;
+	private static final long serialVersionUID = 5823918452841517953L;
 
 	/**
 	 * 签约芝麻GO的业务协议号，在签约成功、结算成功等通知中回回传给商户。

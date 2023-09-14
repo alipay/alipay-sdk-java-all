@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票红冲申请模型
  *
  * @author auto create
- * @since 1.0, 2023-06-06 11:12:58
+ * @since 1.0, 2023-09-13 10:06:17
  */
 public class OutputInvoiceRedApplyVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3392242457933955273L;
+	private static final long serialVersionUID = 1757634359645141829L;
 
 	/**
 	 * 蓝字发票代码

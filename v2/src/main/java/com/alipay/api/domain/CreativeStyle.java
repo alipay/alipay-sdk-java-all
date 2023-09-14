@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询出的风格数据列表
  *
  * @author auto create
- * @since 1.0, 2023-09-12 20:52:00
+ * @since 1.0, 2023-09-13 16:15:53
  */
 public class CreativeStyle extends AlipayObject {
 
-	private static final long serialVersionUID = 8835385827882524178L;
+	private static final long serialVersionUID = 1347166799964511175L;
 
 	/**
 	 * 查询出的风格id

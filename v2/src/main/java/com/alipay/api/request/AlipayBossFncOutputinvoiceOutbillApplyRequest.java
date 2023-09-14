@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.fnc.outputinvoice.outbill.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-07-04 14:21:55
+ * @since 1.0, 2023-09-13 10:21:43
  */
 public class AlipayBossFncOutputinvoiceOutbillApplyRequest implements AlipayRequest<AlipayBossFncOutputinvoiceOutbillApplyResponse> {
 

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 同步素材信息接口
  *
  * @author auto create
- * @since 1.0, 2023-09-12 15:50:54
+ * @since 1.0, 2023-09-13 11:01:44
  */
 public class AlipayDigitalopUcdpApecreativeMaterialSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2797239225943324576L;
+	private static final long serialVersionUID = 1284859617515759989L;
 
 	/**
 	 * 创建类型，1为只要根据风格合图，2为根据风格和布局合图

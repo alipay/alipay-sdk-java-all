@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenIotmbsFacedbDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8261966261181339317L;
+	private static final long serialVersionUID = 2225838142612885236L;
 
 	/** 
 	 * 成功true失败false

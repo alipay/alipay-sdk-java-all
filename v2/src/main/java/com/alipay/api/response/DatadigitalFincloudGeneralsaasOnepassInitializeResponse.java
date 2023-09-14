@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.fincloud.generalsaas.onepass.initialize response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 04:56:43
+ * @since 1.0, 2023-09-13 18:01:44
  */
 public class DatadigitalFincloudGeneralsaasOnepassInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5286618945212291484L;
+	private static final long serialVersionUID = 8416161417453298532L;
 
 	/** 
 	 * 本机校验流水ID，请保留方便排查问题

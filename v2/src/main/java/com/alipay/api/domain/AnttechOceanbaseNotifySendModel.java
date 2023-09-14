@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * OB业务发送通知
  *
  * @author auto create
- * @since 1.0, 2021-12-03 10:46:15
+ * @since 1.0, 2023-09-13 14:57:27
  */
 public class AnttechOceanbaseNotifySendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2389746673731384781L;
+	private static final long serialVersionUID = 5312193929543627371L;
 
 	/**
 	 * 用户通行证id

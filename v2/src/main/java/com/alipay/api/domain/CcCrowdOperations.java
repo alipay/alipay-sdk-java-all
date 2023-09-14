@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CcCrowdOperations extends AlipayObject {
 
-	private static final long serialVersionUID = 7199267888673679424L;
+	private static final long serialVersionUID = 5188199515481298492L;
 
 	/**
 	 * 人群ID

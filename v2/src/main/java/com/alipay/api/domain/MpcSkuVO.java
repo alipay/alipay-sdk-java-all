@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序智能营销sku的结构
  *
  * @author auto create
- * @since 1.0, 2023-08-31 16:56:46
+ * @since 1.0, 2023-09-13 14:18:13
  */
 public class MpcSkuVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3688133277124413564L;
+	private static final long serialVersionUID = 7491843663542124718L;
 
 	/**
 	 * 商品编码

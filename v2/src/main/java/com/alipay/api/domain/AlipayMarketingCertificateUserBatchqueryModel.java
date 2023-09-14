@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 条件查询用户凭证
  *
  * @author auto create
- * @since 1.0, 2023-08-28 11:19:17
+ * @since 1.0, 2023-09-13 21:37:40
  */
 public class AlipayMarketingCertificateUserBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8527344376966725742L;
+	private static final long serialVersionUID = 4484811229842729855L;
 
 	/**
 	 * 凭证归属的商户id。该参数为空时取当前请求商户id

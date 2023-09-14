@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序云身份核验服务初始化接口
  *
  * @author auto create
- * @since 1.0, 2023-06-30 10:21:24
+ * @since 1.0, 2023-09-13 14:54:07
  */
 public class AlipaySecurityRiskMiniprogramVerifyidentityInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6381778392412954688L;
+	private static final long serialVersionUID = 2489721395568684599L;
 
 	/**
 	 * 用户姓名
@@ -47,14 +47,14 @@ public class AlipaySecurityRiskMiniprogramVerifyidentityInitializeModel extends 
 	private String openId;
 
 	/**
-	 * 核验服务名称，同时请求多种服务用数组组合，人脸：MIC_FACEVERIFY_LV2_ACCOUNT
+	 * 核验服务名称，目前仅支持人脸，后续支持多因子核身产品
 	 */
 	@ApiListField("product_code")
 	@ApiField("string")
 	private List<String> productCode;
 
 	/**
-	 * 身份核验场景CODE，场景节点，如login, riskVerify, payment, changePassword.
+	 * 身份核验场景CODE，为接入场景的英文名称，比如登陆login, 风险校验riskVerify, 支付payment等，需保证同一商户下多种接入场景code的唯一性
 	 */
 	@ApiField("scene_code")
 	private String sceneCode;

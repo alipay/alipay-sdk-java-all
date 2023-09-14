@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SubAccountBalanceFreezeResultOpenApiDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5247715583655628651L;
+	private static final long serialVersionUID = 2258814445214119241L;
 
 	/**
 	 * 冻结号(实际通过outBizNo作为冻结号)

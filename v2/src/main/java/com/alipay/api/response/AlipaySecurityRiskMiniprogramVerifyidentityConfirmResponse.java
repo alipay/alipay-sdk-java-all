@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.miniprogram.verifyidentity.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 05:41:42
+ * @since 1.0, 2023-09-13 15:36:44
  */
 public class AlipaySecurityRiskMiniprogramVerifyidentityConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3166368594386218163L;
+	private static final long serialVersionUID = 2588433222376853481L;
 
 	/** 
 	 * 返回给调用方的数据集合，具体数据由对接过程中双方共同确认
@@ -22,10 +22,10 @@ public class AlipaySecurityRiskMiniprogramVerifyidentityConfirmResponse extends 
 	private CheckBizData bizData;
 
 	/** 
-	 * 身份核验结果
+	 * 身份校验结果
 	 */
 	@ApiField("verify_result")
-	private String verifyResult;
+	private Boolean verifyResult;
 
 	public void setBizData(CheckBizData bizData) {
 		this.bizData = bizData;
@@ -34,10 +34,10 @@ public class AlipaySecurityRiskMiniprogramVerifyidentityConfirmResponse extends 
 		return this.bizData;
 	}
 
-	public void setVerifyResult(String verifyResult) {
+	public void setVerifyResult(Boolean verifyResult) {
 		this.verifyResult = verifyResult;
 	}
-	public String getVerifyResult( ) {
+	public Boolean getVerifyResult( ) {
 		return this.verifyResult;
 	}
 

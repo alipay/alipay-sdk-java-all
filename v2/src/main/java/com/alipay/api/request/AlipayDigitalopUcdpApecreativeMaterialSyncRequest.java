@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.digitalop.ucdp.apecreative.material.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-09-12 15:51:43
+ * @since 1.0, 2023-09-13 11:01:44
  */
 public class AlipayDigitalopUcdpApecreativeMaterialSyncRequest implements AlipayRequest<AlipayDigitalopUcdpApecreativeMaterialSyncResponse> {
 

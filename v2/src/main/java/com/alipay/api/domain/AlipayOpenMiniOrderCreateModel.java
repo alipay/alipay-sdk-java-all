@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5785958843187865636L;
+	private static final long serialVersionUID = 1323994679995694761L;
 
 	/**
 	 * 订单收货地址
@@ -111,7 +111,7 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 
 	/**
 	 * 订单相对超时时间。从交易创建时间开始计算。
-该笔订单允许的最晚付款时间，逾期将关闭交易。取值范围：1m～15d。m-分钟，h-小时，d-天。 该参数数值不接受小数点， 如 1.5h，可转换为 90m。
+该笔订单允许的最晚付款时间，逾期将关闭交易。取值范围：1m～15d。m-分钟，h-小时，d-天。 该参数数值不接受小数点， 如 1.5h，可转换为  90m。
 默认值为3h。
 	 */
 	@ApiField("timeout_express")

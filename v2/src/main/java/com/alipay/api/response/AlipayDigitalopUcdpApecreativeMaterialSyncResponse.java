@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.digitalop.ucdp.apecreative.material.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-12 15:51:43
+ * @since 1.0, 2023-09-13 11:01:44
  */
 public class AlipayDigitalopUcdpApecreativeMaterialSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7419477641387624359L;
+	private static final long serialVersionUID = 8223962177933856615L;
 
 	/** 
 	 * 如果有创意组id 传进来的，就直接返回，如果是新建的，返回的是新建的创意组id

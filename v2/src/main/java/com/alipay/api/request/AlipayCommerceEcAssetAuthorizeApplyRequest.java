@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.ec.asset.authorize.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-08-17 11:16:42
+ * @since 1.0, 2023-09-13 21:26:42
  */
 public class AlipayCommerceEcAssetAuthorizeApplyRequest implements AlipayRequest<AlipayCommerceEcAssetAuthorizeApplyResponse> {
 

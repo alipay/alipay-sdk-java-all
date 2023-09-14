@@ -7,17 +7,35 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租金信息
  *
  * @author auto create
- * @since 1.0, 2023-08-08 15:34:03
+ * @since 1.0, 2023-09-13 11:56:04
  */
 public class RentInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2748636178865172292L;
+	private static final long serialVersionUID = 3629495851222882162L;
+
+	/**
+	 * 续租总期数，仅续租且订单修改时传入，1-12的整数，包含边界值
+	 */
+	@ApiField("addon_period_num")
+	private String addonPeriodNum;
+
+	/**
+	 * 续租总金额，仅续租且订单修改时传入，单位元
+	 */
+	@ApiField("addon_real_rent_price")
+	private String addonRealRentPrice;
 
 	/**
 	 * 买断价，单位元
 	 */
 	@ApiField("buyout_price")
 	private String buyoutPrice;
+
+	/**
+	 * 尾期租金用在非每期分期租金一致场景，例如一笔订单总金额100，首期33.33，每期33.33，尾期33.34，，单位元
+	 */
+	@ApiField("finish_real_rent_price")
+	private String finishRealRentPrice;
 
 	/**
 	 * 首期租金,单位元
@@ -37,11 +55,32 @@ public class RentInfoDTO extends AlipayObject {
 	@ApiField("period_real_rent_price")
 	private String periodRealRentPrice;
 
+	public String getAddonPeriodNum() {
+		return this.addonPeriodNum;
+	}
+	public void setAddonPeriodNum(String addonPeriodNum) {
+		this.addonPeriodNum = addonPeriodNum;
+	}
+
+	public String getAddonRealRentPrice() {
+		return this.addonRealRentPrice;
+	}
+	public void setAddonRealRentPrice(String addonRealRentPrice) {
+		this.addonRealRentPrice = addonRealRentPrice;
+	}
+
 	public String getBuyoutPrice() {
 		return this.buyoutPrice;
 	}
 	public void setBuyoutPrice(String buyoutPrice) {
 		this.buyoutPrice = buyoutPrice;
+	}
+
+	public String getFinishRealRentPrice() {
+		return this.finishRealRentPrice;
+	}
+	public void setFinishRealRentPrice(String finishRealRentPrice) {
+		this.finishRealRentPrice = finishRealRentPrice;
 	}
 
 	public String getInitialRentPrice() {

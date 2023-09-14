@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntPcinstpromoPcinstpromoChannelvoucherconfigQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3685948774357648446L;
+	private static final long serialVersionUID = 6114823858288459141L;
 
 	/**
 	 * P站配置的活动id

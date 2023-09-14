@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.oceanbase.passinfo.logininfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-08-26 14:00:31
+ * @since 1.0, 2023-09-13 14:54:37
  */
 public class AnttechOceanbasePassinfoLogininfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2115968585327482818L;
+	private static final long serialVersionUID = 6281216158964439591L;
 
 	/** 
 	 * 自然实体id。当获取个人信息时为空，当获取企业信息时是企业id。

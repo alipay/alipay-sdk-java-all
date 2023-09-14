@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品规则属性，包括propertyName和propertyValue，常用的propertyName值如：“颜色”，“尺码”，“规则”，”内存“
  *
  * @author auto create
- * @since 1.0, 2023-09-04 14:57:34
+ * @since 1.0, 2023-09-13 14:18:13
  */
 public class MpcProperty extends AlipayObject {
 
-	private static final long serialVersionUID = 1747986448957772553L;
+	private static final long serialVersionUID = 7425467249149275663L;
 
 	/**
 	 * 属性分类
