@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AesElecSignFileDO extends AlipayObject {
 
-	private static final long serialVersionUID = 1233415429126876124L;
+	private static final long serialVersionUID = 6283273173895333222L;
 
 	/**
 	 * 文件id，唯一关联签约人组件信息

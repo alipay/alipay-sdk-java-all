@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ScenicExplanationPoint extends AlipayObject {
 
-	private static final long serialVersionUID = 6214431768997833952L;
+	private static final long serialVersionUID = 7432752471153251458L;
 
 	/**
 	 * 景点语音讲解的讲解时长，单位秒（s）。

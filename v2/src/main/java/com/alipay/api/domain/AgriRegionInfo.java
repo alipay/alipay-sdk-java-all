@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AgriRegionInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1215994841757682418L;
+	private static final long serialVersionUID = 3688638492868654181L;
 
 	/**
 	 * 坐标信息

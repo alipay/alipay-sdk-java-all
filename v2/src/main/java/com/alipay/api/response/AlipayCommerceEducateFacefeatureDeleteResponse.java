@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceEducateFacefeatureDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3398788333514215318L;
+	private static final long serialVersionUID = 3348895372546919536L;
 
 	/** 
 	 * 出库失败的faceId集合。

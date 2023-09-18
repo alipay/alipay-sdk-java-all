@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class TaskPrizeSendInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4444171523386135357L;
+	private static final long serialVersionUID = 4813939191151685764L;
 
 	/**
 	 * 任务对应的发奖流水详情

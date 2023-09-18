@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayAccountFinriskGiriskrequestCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6367528537489697657L;
+	private static final long serialVersionUID = 6512617733181516225L;
 
 	/**
 	 * 请求系统

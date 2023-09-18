@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlbumPopularityInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3138646776234446288L;
+	private static final long serialVersionUID = 5572558351486832835L;
 
 	/**
 	 * 专辑购买量

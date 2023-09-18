@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class JobWorthCourseTeacher extends AlipayObject {
 
-	private static final long serialVersionUID = 3854653929912969455L;
+	private static final long serialVersionUID = 5576924826642784976L;
 
 	/**
 	 * 教师描述信息，由商户自行设置，配置的文案将会在课程详情页透出

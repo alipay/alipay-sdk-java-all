@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDigitalmgmtRcvCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3844197427671974736L;
+	private static final long serialVersionUID = 8688121695628123596L;
 
 	/** 
 	 * rcv编码列表
