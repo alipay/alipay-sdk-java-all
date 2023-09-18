@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建关联普通二维码模式
  *
  * @author auto create
- * @since 1.0, 2023-06-28 14:50:50
+ * @since 1.0, 2023-09-14 11:45:49
  */
 public class AlipayOpenMiniQrcodePatternCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6564631985361293121L;
+	private static final long serialVersionUID = 2789825722867481976L;
 
 	/**
 	 * 调用类型，目前支持三种调用类型：DELEGATE、MERCHANT和ISV，不同调用类型会导致模式归属者不同

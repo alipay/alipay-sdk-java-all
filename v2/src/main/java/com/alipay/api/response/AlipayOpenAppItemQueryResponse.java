@@ -16,11 +16,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.item.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-11 14:53:58
+ * @since 1.0, 2023-09-18 17:36:44
  */
 public class AlipayOpenAppItemQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6625493451132349113L;
+	private static final long serialVersionUID = 5652442628356241634L;
 
 	/** 
 	 * 商品属性列表，kv形式
@@ -66,13 +66,14 @@ public class AlipayOpenAppItemQueryResponse extends AlipayResponse {
 	private String directPath;
 
 	/** 
-	 * 商品主图，图片文件id，图片宽高为750px*750px，宽高比1:1。文件id通过alipay.open.file.upload上传资源获取。
+	 * 商品主图的文件id，图片宽高为750px*750px，宽高比1:1，800kb以内。
+支持jpg、jpeg、png格式的图片。文件id通过alipay.open.file.upload 上传资源获取file_id，或通过alipay.marketing.image.enhance.upload获取image_id均可上传成功
 	 */
 	@ApiField("head_img")
 	private String headImg;
 
 	/** 
-	 * 商品子图文件id列表，不超过 3 个图片，图片宽高为750px*750px，宽高比1:1。文件id通过alipay.open.file.upload上传资源获取。
+	 * 商品子图，作为平台详情页组件的轮播图，图片宽高为750px*750px，宽高比1:1，800kb以内，不超过 3 个图片。 支持jpg、jpeg、png格式的图片。文件id通过alipay.open.file.upload 上传资源获取file_id，或通过alipay.marketing.image.enhance.upload获取image_id均可上传成功。
 	 */
 	@ApiListField("image_list")
 	@ApiField("string")

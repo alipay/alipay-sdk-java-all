@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数字身份电子凭证同步接口
  *
  * @author auto create
- * @since 1.0, 2022-11-01 19:22:15
+ * @since 1.0, 2023-09-14 12:31:38
  */
 public class AlipayUserDigitalidentityCertificateSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5163378256929769289L;
+	private static final long serialVersionUID = 7627155311651353211L;
 
 	/**
 	 * 含义：申领信息核验模式，该字段用于控制传入的信息与支付宝侧信息的核验对比方式，以防止凭证被归属到错误的用户。对比信息包括姓名/证件号等。 
@@ -24,9 +24,9 @@ public class AlipayUserDigitalidentityCertificateSyncModel extends AlipayObject 
 
 	/**
 	 * 含义：凭证ID，同一自然人同一凭证多次申领时要求该ID唯一且幂等相同。 
-如何设置：
-【身份码】：用于系统内唯一性标示，由机构确定，若无合适值也可使用user_id； 
-【非身份码】：凭证号，除用于唯一性标示外还被用于页面展示，由机构确定
+如何设置：（区分是否为【身份码】和【非身份码】主要看凭证实例标识是否以IDCODE结尾，可见文档开头「注意」说明）
+【身份码】：身份证号码，用于系统内唯一性标示还被用于页面展示，由机构侧传入； 
+【非身份码】：证件号，发证机构生成的证件号，要求对C端用户可理解，如：行驶证传车牌号、驾驶证传身份证号码、结婚证传结婚证号等，除用于唯一性标示外还被用于页面展示，由机构侧传入。
 	 */
 	@ApiField("certificate_id")
 	private String certificateId;

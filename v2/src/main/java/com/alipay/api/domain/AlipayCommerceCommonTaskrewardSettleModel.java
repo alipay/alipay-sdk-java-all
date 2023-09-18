@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 淘客激励发放
  *
  * @author auto create
- * @since 1.0, 2023-06-20 14:32:02
+ * @since 1.0, 2023-09-18 16:49:55
  */
 public class AlipayCommerceCommonTaskrewardSettleModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5538692355229965728L;
+	private static final long serialVersionUID = 1367613419413625149L;
 
 	/**
 	 * 导购员的userId
@@ -48,6 +48,12 @@ public class AlipayCommerceCommonTaskrewardSettleModel extends AlipayObject {
 	 */
 	@ApiField("task_instance_id")
 	private String taskInstanceId;
+
+	/**
+	 * 商户侧判定的有效交易金额
+	 */
+	@ApiField("valid_trade_amount")
+	private String validTradeAmount;
 
 	public String getHunterId() {
 		return this.hunterId;
@@ -89,6 +95,13 @@ public class AlipayCommerceCommonTaskrewardSettleModel extends AlipayObject {
 	}
 	public void setTaskInstanceId(String taskInstanceId) {
 		this.taskInstanceId = taskInstanceId;
+	}
+
+	public String getValidTradeAmount() {
+		return this.validTradeAmount;
+	}
+	public void setValidTradeAmount(String validTradeAmount) {
+		this.validTradeAmount = validTradeAmount;
 	}
 
 }

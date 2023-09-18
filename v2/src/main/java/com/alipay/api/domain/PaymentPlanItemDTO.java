@@ -9,16 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 付款计划行信息
  *
  * @author auto create
- * @since 1.0, 2023-08-18 10:19:17
+ * @since 1.0, 2023-09-15 09:58:58
  */
 public class PaymentPlanItemDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8455655774774236992L;
+	private static final long serialVersionUID = 5199526459671135777L;
 
 	/**
-	 * ext
+	 * 废弃 当前字段已废弃(不支持json字段的信息透出)
 	 */
 	@ApiField("ext")
+	@Deprecated
 	private String ext;
 
 	/**

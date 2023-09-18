@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMerchantWeikeSettleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2689854442777771697L;
+	private static final long serialVersionUID = 7895843974334596584L;
 
 	/** 
 	 * 外部业务号

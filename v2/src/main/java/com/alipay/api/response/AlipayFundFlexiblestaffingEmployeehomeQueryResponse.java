@@ -1,6 +1,7 @@
 package com.alipay.api.response;
 
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.domain.EmployeeCardInfoResDTO;
 import com.alipay.api.domain.RentAgreementInfoDTO;
 import com.alipay.api.domain.RentServiceInfoDTO;
 
@@ -10,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.flexiblestaffing.employeehome.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-08 17:21:22
+ * @since 1.0, 2023-09-15 16:21:44
  */
 public class AlipayFundFlexiblestaffingEmployeehomeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1557984875436254865L;
+	private static final long serialVersionUID = 7229122968853796533L;
 
 	/** 
 	 * 授权状态
@@ -27,6 +28,12 @@ public class AlipayFundFlexiblestaffingEmployeehomeQueryResponse extends AlipayR
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
+
+	/** 
+	 * 零工卡信息
+	 */
+	@ApiField("employee_card_info")
+	private EmployeeCardInfoResDTO employeeCardInfo;
 
 	/** 
 	 * 商户端为以订单号
@@ -64,6 +71,13 @@ public class AlipayFundFlexiblestaffingEmployeehomeQueryResponse extends AlipayR
 	}
 	public String getBizScene( ) {
 		return this.bizScene;
+	}
+
+	public void setEmployeeCardInfo(EmployeeCardInfoResDTO employeeCardInfo) {
+		this.employeeCardInfo = employeeCardInfo;
+	}
+	public EmployeeCardInfoResDTO getEmployeeCardInfo( ) {
+		return this.employeeCardInfo;
 	}
 
 	public void setOutBizNo(String outBizNo) {

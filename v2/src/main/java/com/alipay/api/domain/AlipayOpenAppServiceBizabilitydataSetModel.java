@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 服务业务能力数据上传
  *
  * @author auto create
- * @since 1.0, 2023-06-30 17:19:24
+ * @since 1.0, 2023-09-18 13:55:27
  */
 public class AlipayOpenAppServiceBizabilitydataSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7496334143567951898L;
+	private static final long serialVersionUID = 6584319116888634391L;
 
 	/**
 	 * 操作类型.PUT:新增或覆盖,REMOVE:删除

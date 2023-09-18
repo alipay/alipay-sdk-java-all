@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.common.tasktemplate.createormodify request
  * 
  * @author auto create
- * @since 1.0, 2023-07-06 14:32:01
+ * @since 1.0, 2023-09-15 10:56:44
  */
 public class AlipayCommerceCommonTasktemplateCreateormodifyRequest implements AlipayRequest<AlipayCommerceCommonTasktemplateCreateormodifyResponse> {
 

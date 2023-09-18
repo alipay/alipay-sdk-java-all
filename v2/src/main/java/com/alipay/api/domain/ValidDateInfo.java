@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ValidDateInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7256199734786698117L;
+	private static final long serialVersionUID = 6897292216441937926L;
 
 	/**
 	 * 截至时间

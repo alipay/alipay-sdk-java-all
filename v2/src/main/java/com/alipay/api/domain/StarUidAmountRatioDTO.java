@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 淘客任务明星用户集合
  *
  * @author auto create
- * @since 1.0, 2023-09-12 19:57:32
+ * @since 1.0, 2023-09-15 10:53:50
  */
 public class StarUidAmountRatioDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4592742652844925644L;
+	private static final long serialVersionUID = 7691919118589276198L;
 
 	/**
 	 * 分佣比率

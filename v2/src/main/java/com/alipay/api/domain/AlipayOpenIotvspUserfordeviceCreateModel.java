@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 录入机构用户信息（机具端核身采集）
  *
  * @author auto create
- * @since 1.0, 2023-05-10 13:14:15
+ * @since 1.0, 2023-09-18 14:10:21
  */
 public class AlipayOpenIotvspUserfordeviceCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8726648989829982116L;
+	private static final long serialVersionUID = 1618163748562345473L;
 
 	/**
 	 * 详细地址

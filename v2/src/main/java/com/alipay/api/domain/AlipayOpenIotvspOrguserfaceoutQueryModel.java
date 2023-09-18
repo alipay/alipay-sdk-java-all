@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * iot核身聚合平台的机构人员出库事件的查询接口
  *
  * @author auto create
- * @since 1.0, 2022-01-27 14:36:29
+ * @since 1.0, 2023-09-18 14:08:41
  */
 public class AlipayOpenIotvspOrguserfaceoutQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6544832324749339661L;
+	private static final long serialVersionUID = 6329376773521229512L;
 
 	/**
 	 * 出库事件id

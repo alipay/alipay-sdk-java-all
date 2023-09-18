@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class StopInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3587167431152152192L;
+	private static final long serialVersionUID = 5338396797335613649L;
 
 	/**
 	 * 经停时长，单位：s

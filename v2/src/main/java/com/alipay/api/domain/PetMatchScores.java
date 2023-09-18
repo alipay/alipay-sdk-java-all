@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PetMatchScores extends AlipayObject {
 
-	private static final long serialVersionUID = 5377292424716266665L;
+	private static final long serialVersionUID = 6136228951114488639L;
 
 	/**
 	 * 宠物ID

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 接收单行信息
  *
  * @author auto create
- * @since 1.0, 2023-08-18 10:17:10
+ * @since 1.0, 2023-09-15 09:58:53
  */
 public class RcvLineResultOutDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1439558819256385224L;
+	private static final long serialVersionUID = 1685815696834596873L;
 
 	/**
 	 * 费用归属月份

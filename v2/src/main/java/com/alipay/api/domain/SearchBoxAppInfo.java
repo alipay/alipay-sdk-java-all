@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SearchBoxAppInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7192427457388238199L;
+	private static final long serialVersionUID = 1719724552112996421L;
 
 	/**
 	 * 应用名称
@@ -20,7 +20,7 @@ public class SearchBoxAppInfo extends AlipayObject {
 	private String appName;
 
 	/**
-	 * 应用类型，TINY_APP-小程序/PUBLIC_APP-生活号/SHOP_APP-门店应用
+	 * 应用类型，TINY_APP-小程序/PUBLIC_APP-生活号
 	 */
 	@ApiField("app_type")
 	private String appType;

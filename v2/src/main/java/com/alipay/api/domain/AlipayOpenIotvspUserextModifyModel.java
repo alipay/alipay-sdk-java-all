@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户额外信息（ext）更新接口
  *
  * @author auto create
- * @since 1.0, 2023-06-07 10:19:32
+ * @since 1.0, 2023-09-18 14:09:08
  */
 public class AlipayOpenIotvspUserextModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5699525326789229293L;
+	private static final long serialVersionUID = 5373143436915987296L;
 
 	/**
 	 * 姓名

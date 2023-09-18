@@ -11,10 +11,10 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceEducateSchoolcardOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5379621439481869762L;
+	private static final long serialVersionUID = 8373191685236233592L;
 
 	/**
-	 * 实际金额（总支付金额）
+	 * 实际金额（总支付金额），单位为【元】
 	 */
 	@ApiField("actual_amount")
 	private String actualAmount;
@@ -32,19 +32,19 @@ public class AlipayCommerceEducateSchoolcardOrderSyncModel extends AlipayObject 
 	private String cardBalance;
 
 	/**
-	 * 卡号
+	 * 128
 	 */
 	@ApiField("card_no")
 	private String cardNo;
 
 	/**
-	 * 卡类型
+	 * 校园卡类型
 	 */
 	@ApiField("card_type")
 	private String cardType;
 
 	/**
-	 * 该笔订单真实的创建时间，需精确到毫秒。时间格式为 yyyy-MM-dd HH:mm:ss.SSS。同一笔订单保持不变
+	 * 该笔订单真实的创建时间，需精确到毫秒。
 	 */
 	@ApiField("create_time")
 	private String createTime;
@@ -68,13 +68,13 @@ public class AlipayCommerceEducateSchoolcardOrderSyncModel extends AlipayObject 
 	private String merchantName;
 
 	/**
-	 * 订单修改时间，时间格式为 yyyy-MM-dd HH:mm:ss.SSS。用于订单状态或数据变化较快的顺序控制，防止乱序。order_modified_time较晚的同步会被最终存储，order_modified_time相同的两次同步会被幂等处理。
+	 * 订单修改时间
 	 */
 	@ApiField("modified_time")
 	private String modifiedTime;
 
 	/**
-	 * 蚂蚁统一会员ID
+	 * 用户open_id
 	 */
 	@ApiField("open_id")
 	private String openId;
@@ -93,15 +93,12 @@ public class AlipayCommerceEducateSchoolcardOrderSyncModel extends AlipayObject 
 
 	/**
 	 * 订单状态
-消费成功 CONSUME_S ；已退款：REFUNDED；
-开卡成功 CARD_ACTIVED；消费失败：UN_CHARGE
-充值成功 RECHARGE_S
 	 */
 	@ApiField("order_status")
 	private String orderStatus;
 
 	/**
-	 * 外部业务号
+	 * 外部业务号，由商家自定义，128个字符以内，仅支持字母、数字、下划线且需保证在商户端不重复。
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
@@ -119,19 +116,19 @@ public class AlipayCommerceEducateSchoolcardOrderSyncModel extends AlipayObject 
 	private String payMode;
 
 	/**
-	 * 返佣pid
+	 * 系统商编号。该参数作为系统商返佣数据提取的依据，请填写系统商签约协议的PID
 	 */
 	@ApiField("rake_back_pid")
 	private String rakeBackPid;
 
 	/**
-	 * 学校内标
+	 * 学校内标，录入学校接口返回的参数
 	 */
 	@ApiField("school_id")
 	private String schoolId;
 
 	/**
-	 * 学校pid
+	 * 学校收款账号
 	 */
 	@ApiField("school_pid")
 	private String schoolPid;
@@ -149,7 +146,9 @@ public class AlipayCommerceEducateSchoolcardOrderSyncModel extends AlipayObject 
 	private String type;
 
 	/**
-	 * 蚂蚁统一会员ID
+	 * 买家支付宝用户ID。
+2088开头的16位纯数字，小程序场景下获取用户ID请参考：用户授权;
+其它场景下获取用户ID请参考：网页授权获取用户信息;
 	 */
 	@ApiField("user_id")
 	private String userId;

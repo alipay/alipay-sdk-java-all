@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingRecruitEnrollCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3252553288594968989L;
+	private static final long serialVersionUID = 8858283367521489566L;
 
 	/**
 	 * 报名ID

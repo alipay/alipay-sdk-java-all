@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AnttechBlockchainDefinInsuranceApplyCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8536531516225926529L;
+	private static final long serialVersionUID = 5795865859559496384L;
 
 	/** 
 	 * 保额

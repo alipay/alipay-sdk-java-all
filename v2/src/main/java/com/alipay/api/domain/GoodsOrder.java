@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GoodsOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 7563795129643815373L;
+	private static final long serialVersionUID = 3446638568819622938L;
 
 	/**
 	 * 商品名称
@@ -20,7 +20,7 @@ public class GoodsOrder extends AlipayObject {
 	private String goodsName;
 
 	/**
-	 * 商品图片素材Id；商品文件上传接口返回material_id。不传则暂时默认约定图片，具体可以咨询支付宝行业小二
+	 * 商品图片素材Id
 	 */
 	@ApiField("goods_picture_id")
 	private String goodsPictureId;

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SettleExtendParams extends AlipayObject {
 
-	private static final long serialVersionUID = 5399158156614923922L;
+	private static final long serialVersionUID = 4683943465448321767L;
 
 	/**
 	 * 本笔交易的分账操作是否已完结，可传入的值：true/false。

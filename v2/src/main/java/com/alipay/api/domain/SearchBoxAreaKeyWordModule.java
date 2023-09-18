@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SearchBoxAreaKeyWordModule extends AlipayObject {
 
-	private static final long serialVersionUID = 5838385632765663753L;
+	private static final long serialVersionUID = 6538929165541195833L;
 
 	/**
 	 * 地域触发词信息 (最近一次审核内容)
@@ -20,13 +20,13 @@ public class SearchBoxAreaKeyWordModule extends AlipayObject {
 	private SearchBoxKeywordInfo latestAuditAreaKeywordInfo;
 
 	/**
-	 * 模块id
+	 * 模块配置ID
 	 */
 	@ApiField("module_id")
 	private String moduleId;
 
 	/**
-	 * 搜索直达模块类型，BOX_EXCLUSIVE_BASE-基础信息/BOX_EXCLUSIVE_KEYWORD-关键词/BOX_EXCLUSIVE_FUNCTIONS-功能服务/BOX_EXCLUSIVE_ACCOUNTS-关联账号/BOX_ATMOSPHERE_IMAGE-氛围图
+	 * 搜索直达模块类型
 	 */
 	@ApiField("module_type")
 	private String moduleType;

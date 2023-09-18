@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 多媒体afts平台视觉付交易初始化接口
  *
  * @author auto create
- * @since 1.0, 2022-11-03 15:40:49
+ * @since 1.0, 2023-09-18 15:29:59
  */
 public class AlipayMsaasMediarecogAftscvpayTransactionInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4279788187338796636L;
+	private static final long serialVersionUID = 8891583648156511627L;
 
 	/**
 	 * 货柜类型，static为静态货柜，dynamic为动态货柜

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class BoxBusinessDistrictModule extends AlipayObject {
 
-	private static final long serialVersionUID = 3152473118535418673L;
+	private static final long serialVersionUID = 1489759717288347775L;
 
 	/**
 	 * 商圈选择
@@ -24,13 +24,13 @@ public class BoxBusinessDistrictModule extends AlipayObject {
 	private List<BoxBusinessDistrictInfo> businessDistrictInfos;
 
 	/**
-	 * 模块ID
+	 * 模块配置ID
 	 */
 	@ApiField("module_id")
 	private String moduleId;
 
 	/**
-	 * 搜索直达模块类型，BOX_EXCLUSIVE_BASE-基础信息/BOX_EXCLUSIVE_KEYWORD-关键词/BOX_EXCLUSIVE_FUNCTIONS-功能服务/BOX_EXCLUSIVE_ACCOUNTS-关联账号/BOX_ATMOSPHERE_IMAGE-氛围图/BOX_BUSINESS_DISTRICT-商圈信息/BOX_EXCLUSIVE_AREA_KEYWORD-地域触发词
+	 * 搜索直达模块类型
 	 */
 	@ApiField("module_type")
 	private String moduleType;

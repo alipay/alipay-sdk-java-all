@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预算明细
  *
  * @author auto create
- * @since 1.0, 2020-07-01 11:28:13
+ * @since 1.0, 2023-09-14 13:55:51
  */
 public class BillRepayBudgetVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5845759192492551265L;
+	private static final long serialVersionUID = 2726754391993574717L;
 
 	/**
 	 * 申请金额，和入参一致

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEbppIndustryJobSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4743671975817346678L;
+	private static final long serialVersionUID = 1443638473275715376L;
 
 	/**
 	 * 学历要求
@@ -25,7 +25,7 @@ public class AlipayEbppIndustryJobSyncModel extends AlipayObject {
 	/**
 	 * 岗位详细地址
 如果是线下岗位，则传具体岗位地址信息
-如果是线上岗位，则传空
+如果是线上岗位，也需要传具体的region_code
 	 */
 	@ApiField("address")
 	private JobAddress address;

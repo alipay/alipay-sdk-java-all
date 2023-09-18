@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物料生产订单物流详情, 包括物流订单号, 物流公司名称等信息
  *
  * @author auto create
- * @since 1.0, 2020-12-21 14:23:30
+ * @since 1.0, 2023-09-14 19:24:56
  */
 public class ItemDeliveryDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3362297422867948959L;
+	private static final long serialVersionUID = 5538363398471298348L;
 
 	/**
 	 * 已生产数量, 分批反馈时候必传.

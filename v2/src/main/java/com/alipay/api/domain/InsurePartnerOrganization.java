@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 投保合作商信息
  *
  * @author auto create
- * @since 1.0, 2023-08-15 18:54:35
+ * @since 1.0, 2023-09-18 16:19:32
  */
 public class InsurePartnerOrganization extends AlipayObject {
 
-	private static final long serialVersionUID = 1328918165842695992L;
+	private static final long serialVersionUID = 4849543133584938925L;
 
 	/**
 	 * 支付宝账号，本次场景是和蚂蚁保签约的平台账号

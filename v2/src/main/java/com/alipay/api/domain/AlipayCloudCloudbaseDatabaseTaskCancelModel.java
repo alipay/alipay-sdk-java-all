@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCloudCloudbaseDatabaseTaskCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5272914222166826188L;
+	private static final long serialVersionUID = 2147759637888987241L;
 
 	/**
 	 * 小程序id

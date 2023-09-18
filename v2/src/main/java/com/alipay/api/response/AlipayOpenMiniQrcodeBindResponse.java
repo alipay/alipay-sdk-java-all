@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.qrcode.bind response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-11 16:26:44
+ * @since 1.0, 2023-09-14 11:45:13
  */
 public class AlipayOpenMiniQrcodeBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8812629629645252896L;
+	private static final long serialVersionUID = 5386947885841358379L;
 
 	/** 
 	 * 路由规则组，用于唯一标记一条路由规则

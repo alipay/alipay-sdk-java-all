@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TradePrecreateConfirmOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6485115776642721624L;
+	private static final long serialVersionUID = 1335783651444135918L;
 
 	/**
 	 * 对交易或商品的描述

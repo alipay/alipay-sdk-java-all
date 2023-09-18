@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序云智能应用上传数据接口
  *
  * @author auto create
- * @since 1.0, 2023-07-13 09:41:51
+ * @since 1.0, 2023-09-18 11:31:57
  */
 public class TechriskInnovateMpcpromoDataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5739917835933547414L;
+	private static final long serialVersionUID = 4164961965211751494L;
 
 	/**
 	 * 商品数据的列表
@@ -24,16 +24,23 @@ public class TechriskInnovateMpcpromoDataSyncModel extends AlipayObject {
 	private List<MpcpromoGoodsList> dataList;
 
 	/**
-	 * 数据类型 : USER（用户数据）、ITEM（商品数据）
+	 * 数据类型 : VOUCHER（商家券数据）、ITEM（商品数据）
 	 */
 	@ApiField("data_type")
 	private String dataType;
 
 	/**
-	 * 行业类别:   goodsLease（常规/租赁 商品数据）
+	 * 行业类别:   goodsLease（常规/租赁 商品数据）,voucherNormal（常规商家券）
 	 */
 	@ApiField("industry")
 	private String industry;
+
+	/**
+	 * mpcpromo商家券数据
+	 */
+	@ApiListField("voucher_list")
+	@ApiField("mpcpromo_voucher_list")
+	private List<MpcpromoVoucherList> voucherList;
 
 	public List<MpcpromoGoodsList> getDataList() {
 		return this.dataList;
@@ -54,6 +61,13 @@ public class TechriskInnovateMpcpromoDataSyncModel extends AlipayObject {
 	}
 	public void setIndustry(String industry) {
 		this.industry = industry;
+	}
+
+	public List<MpcpromoVoucherList> getVoucherList() {
+		return this.voucherList;
+	}
+	public void setVoucherList(List<MpcpromoVoucherList> voucherList) {
+		this.voucherList = voucherList;
 	}
 
 }

@@ -13,10 +13,10 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenMiniTipsDeliveryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5361936321528467343L;
+	private static final long serialVersionUID = 6859925151857643262L;
 
 	/** 
-	 * 收藏引导文案内容
+	 * 收藏引导文案内容，不得超过14个字
 	 */
 	@ApiField("delivery_content")
 	private String deliveryContent;
@@ -52,7 +52,7 @@ public class AlipayOpenMiniTipsDeliveryQueryResponse extends AlipayResponse {
 	private String matchType;
 
 	/** 
-	 * 目标页面地址
+	 * 目标页面地址，当匹配类型为TARGETURL时，投放文案仅在当前页面生效
 	 */
 	@ApiField("match_url")
 	private String matchUrl;

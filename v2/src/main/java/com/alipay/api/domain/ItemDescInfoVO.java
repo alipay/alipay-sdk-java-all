@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品详情信息
  *
  * @author auto create
- * @since 1.0, 2023-09-12 15:42:44
+ * @since 1.0, 2023-09-14 15:03:31
  */
 public class ItemDescInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1175353585171183291L;
+	private static final long serialVersionUID = 8158244498293368128L;
 
 	/**
 	 * 商品详情描述文本（不超过2000字）。若接入商品详情页组件，将在详情页组件处透出。
@@ -23,7 +23,7 @@ public class ItemDescInfoVO extends AlipayObject {
 	private String desc;
 
 	/**
-	 * 商品详情描述图片（最多10张），图片宽为750px，高度小于3000px。文件id通过alipay.open.file.upload上传资源获取。若接入商品详情页组件，将在详情页组件处透出。
+	 * 商品详情描述图片（最多10张），图片宽为750px，高度小于3000px。文件id通过alipay.open.file.upload 上传资源获取file_id，或通过alipay.marketing.image.enhance.upload获取image_id均可上传成功 。若接入商品详情页组件且未完成自定义改动，则会将在详情页组件处透出。
 	 */
 	@ApiListField("imgs")
 	@ApiField("string")

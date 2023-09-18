@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单分期
  *
  * @author auto create
- * @since 1.0, 2023-08-25 18:08:54
+ * @since 1.0, 2023-09-18 14:20:17
  */
 public class AlipayOpenMiniOrderInstallmentCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7815488938182951375L;
+	private static final long serialVersionUID = 3431553218914691139L;
+
+	/**
+	 * 续租场景分期数，当分期类型为RELET时，该字段必填
+	 */
+	@ApiField("addon_period_num")
+	private Long addonPeriodNum;
 
 	/**
 	 * 分期是否已经完结。
@@ -34,13 +40,13 @@ true:已完结
 	private String orderId;
 
 	/**
-	 * 外部商户订单号，与order_id二者选一
+	 * 外部商户订单号
 	 */
 	@ApiField("out_order_id")
 	private String outOrderId;
 
 	/**
-	 * 期数
+	 * 普通分期数，当分期类型为RENT或BUYOUT时，该字段必填
 	 */
 	@ApiField("period_num")
 	private Long periodNum;
@@ -62,6 +68,13 @@ true:已完结
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public Long getAddonPeriodNum() {
+		return this.addonPeriodNum;
+	}
+	public void setAddonPeriodNum(Long addonPeriodNum) {
+		this.addonPeriodNum = addonPeriodNum;
+	}
 
 	public Boolean getIsFinishPerformance() {
 		return this.isFinishPerformance;

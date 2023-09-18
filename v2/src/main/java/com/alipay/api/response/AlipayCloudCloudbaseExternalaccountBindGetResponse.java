@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.externalaccount.bind.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-08 13:46:52
+ * @since 1.0, 2023-09-14 13:36:44
  */
 public class AlipayCloudCloudbaseExternalaccountBindGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5639775691269495168L;
+	private static final long serialVersionUID = 1473256356454745279L;
 
 	/** 
 	 * 生成的小程序accessToken
@@ -42,6 +42,18 @@ public class AlipayCloudCloudbaseExternalaccountBindGetResponse extends AlipayRe
 	@ApiField("status")
 	private String status;
 
+	/** 
+	 * 哈希后的用户ID
+	 */
+	@ApiField("user_hash_id")
+	private String userHashId;
+
+	/** 
+	 * 钱包签约状态
+	 */
+	@ApiField("wallet_sign_status")
+	private String walletSignStatus;
+
 	public void setAccessToken(String accessToken) {
 		this.accessToken = accessToken;
 	}
@@ -68,6 +80,20 @@ public class AlipayCloudCloudbaseExternalaccountBindGetResponse extends AlipayRe
 	}
 	public String getStatus( ) {
 		return this.status;
+	}
+
+	public void setUserHashId(String userHashId) {
+		this.userHashId = userHashId;
+	}
+	public String getUserHashId( ) {
+		return this.userHashId;
+	}
+
+	public void setWalletSignStatus(String walletSignStatus) {
+		this.walletSignStatus = walletSignStatus;
+	}
+	public String getWalletSignStatus( ) {
+		return this.walletSignStatus;
 	}
 
 }

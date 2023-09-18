@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniTipsDeliveryCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7831368547291478569L;
+	private static final long serialVersionUID = 1598197629125453275L;
 
 	/**
 	 * 收藏引导文案内容，不得超过14个字
@@ -40,7 +40,7 @@ public class AlipayOpenMiniTipsDeliveryCreateModel extends AlipayObject {
 	private String matchType;
 
 	/**
-	 * 目标页面地址
+	 * 目标页面地址，当匹配类型为TARGETURL时，投放文案仅在当前页面生效
 	 */
 	@ApiField("match_url")
 	private String matchUrl;

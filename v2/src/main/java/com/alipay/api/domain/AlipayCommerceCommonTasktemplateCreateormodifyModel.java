@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 淘客任务模板上传
  *
  * @author auto create
- * @since 1.0, 2023-06-20 14:33:07
+ * @since 1.0, 2023-09-15 10:53:50
  */
 public class AlipayCommerceCommonTasktemplateCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1427559183275928894L;
+	private static final long serialVersionUID = 5622483596786475337L;
 
 	/**
 	 * 小程序跳转链接
@@ -74,6 +74,12 @@ public class AlipayCommerceCommonTasktemplateCreateormodifyModel extends AlipayO
 	 */
 	@ApiField("organizer_name")
 	private String organizerName;
+
+	/**
+	 * 生成吱口令的定制文案
+	 */
+	@ApiField("pre_content")
+	private String preContent;
 
 	/**
 	 * 任务模板描述
@@ -174,6 +180,13 @@ public class AlipayCommerceCommonTasktemplateCreateormodifyModel extends AlipayO
 	}
 	public void setOrganizerName(String organizerName) {
 		this.organizerName = organizerName;
+	}
+
+	public String getPreContent() {
+		return this.preContent;
+	}
+	public void setPreContent(String preContent) {
+		this.preContent = preContent;
 	}
 
 	public String getTaskDesc() {

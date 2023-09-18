@@ -10,11 +10,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.certification.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-09 12:50:24
+ * @since 1.0, 2023-09-15 14:26:43
  */
 public class ZhimaCreditEpCertificationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2329684871354765859L;
+	private static final long serialVersionUID = 3711648673728825235L;
+
+	/** 
+	 * 代理人提交认证时的扫脸时间
+	 */
+	@ApiField("attorney_face_time")
+	private String attorneyFaceTime;
 
 	/** 
 	 * 代理函有效访问地址，有效时间1小时，接口返回后开始计时，auth_status为SUCCESS时返回，特定场景下返回
@@ -103,6 +109,18 @@ FAIL，代表失败
 	private Boolean hasLiXinCertificate;
 
 	/** 
+	 * 法代有效证件号码
+	 */
+	@ApiField("legal_person_cert_no")
+	private String legalPersonCertNo;
+
+	/** 
+	 * 法代提交认证时的扫脸时间
+	 */
+	@ApiField("legal_person_face_time")
+	private String legalPersonFaceTime;
+
+	/** 
 	 * 法人身份证反面有效访问定制，有效时间1小时，接口返回后开始计时，auth_status为SUCCESS时返回，特定场景下返回
 	 */
 	@ApiField("legal_person_id_card_back")
@@ -115,6 +133,12 @@ FAIL，代表失败
 	private String legalPersonIdCardFront;
 
 	/** 
+	 * 法代姓名,代理人模式时返回
+	 */
+	@ApiField("legal_person_name")
+	private String legalPersonName;
+
+	/** 
 	 * 是否是立信企业 true:是;false:否
 	 */
 	@ApiField("li_xin_ep")
@@ -125,6 +149,13 @@ FAIL，代表失败
 	 */
 	@ApiField("user_name")
 	private String userName;
+
+	public void setAttorneyFaceTime(String attorneyFaceTime) {
+		this.attorneyFaceTime = attorneyFaceTime;
+	}
+	public String getAttorneyFaceTime( ) {
+		return this.attorneyFaceTime;
+	}
 
 	public void setAttorneyLetter(String attorneyLetter) {
 		this.attorneyLetter = attorneyLetter;
@@ -217,6 +248,20 @@ FAIL，代表失败
 		return this.hasLiXinCertificate;
 	}
 
+	public void setLegalPersonCertNo(String legalPersonCertNo) {
+		this.legalPersonCertNo = legalPersonCertNo;
+	}
+	public String getLegalPersonCertNo( ) {
+		return this.legalPersonCertNo;
+	}
+
+	public void setLegalPersonFaceTime(String legalPersonFaceTime) {
+		this.legalPersonFaceTime = legalPersonFaceTime;
+	}
+	public String getLegalPersonFaceTime( ) {
+		return this.legalPersonFaceTime;
+	}
+
 	public void setLegalPersonIdCardBack(String legalPersonIdCardBack) {
 		this.legalPersonIdCardBack = legalPersonIdCardBack;
 	}
@@ -229,6 +274,13 @@ FAIL，代表失败
 	}
 	public String getLegalPersonIdCardFront( ) {
 		return this.legalPersonIdCardFront;
+	}
+
+	public void setLegalPersonName(String legalPersonName) {
+		this.legalPersonName = legalPersonName;
+	}
+	public String getLegalPersonName( ) {
+		return this.legalPersonName;
 	}
 
 	public void setLiXinEp(Boolean liXinEp) {

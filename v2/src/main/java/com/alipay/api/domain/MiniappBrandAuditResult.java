@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MiniappBrandAuditResult extends AlipayObject {
 
-	private static final long serialVersionUID = 2519853623977688628L;
+	private static final long serialVersionUID = 1714868871595343742L;
 
 	/**
 	 * 小程序提交品牌认证时的品牌id
@@ -27,13 +27,6 @@ public class MiniappBrandAuditResult extends AlipayObject {
 
 	/**
 	 * 小程序提交品牌认证后的认证状态
-AUDITING(审核中)
-AUDIT_PASS(审核通过)
-AUDIT_REJECT(驳回审核)
-INVALID(已失效)
-NEAR_INVALID(即将过期失效)
-CANCEL(取消认证)
-NO_BRAND(未认证)
 	 */
 	@ApiField("brand_status")
 	private String brandStatus;

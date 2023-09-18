@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 淘客税筹授权查询
  *
  * @author auto create
- * @since 1.0, 2023-09-12 11:30:07
+ * @since 1.0, 2023-09-15 10:45:16
  */
 public class AlipayCommerceCommonUsertaxbillsignQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4816454549189459139L;
+	private static final long serialVersionUID = 7254299887836373153L;
 
 	/**
 	 * 淘客的userId

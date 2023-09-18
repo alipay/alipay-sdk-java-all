@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoMycarCommercializationCertificateAppendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4194927732474846186L;
+	private static final long serialVersionUID = 8336977277441392466L;
 
 	/**
 	 * 补增凭证详情

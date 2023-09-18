@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DownloadUrlRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 4844922952995492894L;
+	private static final long serialVersionUID = 6175882231325699345L;
 
 	/**
 	 * 文件下载地址过期时间，单位为秒，传0表示长期有效。注意：非公开(public-read) acl的文件无法获取长期有效的下载地址

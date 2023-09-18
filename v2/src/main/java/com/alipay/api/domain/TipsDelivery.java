@@ -13,10 +13,10 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TipsDelivery extends AlipayObject {
 
-	private static final long serialVersionUID = 8623272474157359669L;
+	private static final long serialVersionUID = 1874192172266972748L;
 
 	/**
-	 * 收藏引导文案内容
+	 * 收藏引导文案内容，不得超过14个字
 	 */
 	@ApiField("delivery_content")
 	private String deliveryContent;
@@ -28,7 +28,7 @@ public class TipsDelivery extends AlipayObject {
 	private String deliveryId;
 
 	/**
-	 * 收藏引导投放活动的名称
+	 * 收藏引导活动名称
 	 */
 	@ApiField("delivery_name")
 	private String deliveryName;
@@ -40,7 +40,7 @@ public class TipsDelivery extends AlipayObject {
 	private Date endTime;
 
 	/**
-	 * 文案审核驳回理由，仅AUDIT_REJECTED生效
+	 * 文案审核驳回理由，仅状态为AUDIT_REJECTED时有效
 	 */
 	@ApiField("fail_reason")
 	private String failReason;
@@ -52,7 +52,7 @@ public class TipsDelivery extends AlipayObject {
 	private String matchType;
 
 	/**
-	 * 目标页面地址
+	 * 目标页面地址，当匹配类型为TARGETURL时，投放文案仅在当前页面生效
 	 */
 	@ApiField("match_url")
 	private String matchUrl;
