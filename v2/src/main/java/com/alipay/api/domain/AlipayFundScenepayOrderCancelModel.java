@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景支付业务单据撤销
  *
  * @author auto create
- * @since 1.0, 2023-03-22 13:17:14
+ * @since 1.0, 2023-09-20 13:52:27
  */
 public class AlipayFundScenepayOrderCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6751151786949618458L;
+	private static final long serialVersionUID = 8515279714652337529L;
 
 	/**
 	 * 业务单号由场景支付业务单创建接口获得

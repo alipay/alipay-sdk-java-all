@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SearchPartAgreeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5338991222561665354L;
+	private static final long serialVersionUID = 6224635874751146489L;
 
 	/**
 	 * 剔除数据名称
@@ -20,13 +20,13 @@ public class SearchPartAgreeInfo extends AlipayObject {
 	private String auditInfo;
 
 	/**
-	 * 剔除数据的operator信息
+	 * 审核operator信息
 	 */
 	@ApiField("audit_operator")
 	private String auditOperator;
 
 	/**
-	 * 剔除原因
+	 * 审核原因
 	 */
 	@ApiField("audit_reason")
 	private String auditReason;

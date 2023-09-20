@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SearchOrderDetailDataServiceItems extends AlipayObject {
 
-	private static final long serialVersionUID = 3497933256373417866L;
+	private static final long serialVersionUID = 5147673818549585281L;
 
 	/**
 	 * 服务工单详情area_codes
@@ -38,7 +38,7 @@ public class SearchOrderDetailDataServiceItems extends AlipayObject {
 	private String categoryAttributeValue;
 
 	/**
-	 * 类目id
+	 * 类目编码
 	 */
 	@ApiField("category_code")
 	private String categoryCode;
@@ -56,7 +56,7 @@ public class SearchOrderDetailDataServiceItems extends AlipayObject {
 	private String channelType;
 
 	/**
-	 * 描述
+	 * 描述信息
 	 */
 	@ApiField("desc")
 	private String desc;

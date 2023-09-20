@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class UserInfomation extends AlipayObject {
 
-	private static final long serialVersionUID = 1799838352993789933L;
+	private static final long serialVersionUID = 7729472535791999134L;
 
 	/**
 	 * 证件号
@@ -23,7 +23,7 @@ public class UserInfomation extends AlipayObject {
 	private String certNo;
 
 	/**
-	 * 身份证：IDENTITY_CARD、护照：PASSPORT、军官证：OFFICER_CARD、士兵证：SOLDIER_CARD、户口本：HOKOU等。
+	 * 证件类型。
 	 */
 	@ApiField("cert_type")
 	private String certType;
@@ -48,7 +48,7 @@ public class UserInfomation extends AlipayObject {
 	private String name;
 
 	/**
-	 * 用户（user_id）在应用（appId）下的唯一用户标识
+	 * 用户open_id
 	 */
 	@ApiField("open_id")
 	private String openId;

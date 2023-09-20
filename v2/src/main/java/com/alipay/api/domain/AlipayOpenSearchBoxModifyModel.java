@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenSearchBoxModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5463321413952268585L;
+	private static final long serialVersionUID = 7788866744778436935L;
 
 	/**
 	 * 小程序直达配置的常用服务中带有门店信息时，可添加简称触发词
@@ -56,8 +56,7 @@ public class AlipayOpenSearchBoxModifyModel extends AlipayObject {
 	private List<String> businessDistrictIds;
 
 	/**
-	 * 自定义关键词，最多可配置6个，限1-8个中文字符。当修改触发词模块时(module_type=BOX_EXCLUSIVE_KEYWORD)传入。
-小程序直达不支持设置
+	 * 1024
 	 */
 	@ApiField("custom_keywords")
 	private String customKeywords;

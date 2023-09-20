@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 专享价成员解约接口
  *
  * @author auto create
- * @since 1.0, 2022-12-30 16:10:53
+ * @since 1.0, 2023-09-20 13:53:38
  */
 public class AlipayFundIdentitypayMemberUnsignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3757792994535281499L;
+	private static final long serialVersionUID = 2136453927141792617L;
 
 	/**
 	 * 解约场景码

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户行为上报接口
  *
  * @author auto create
- * @since 1.0, 2023-07-25 17:55:25
+ * @since 1.0, 2023-09-20 00:10:31
  */
 public class TechriskInnovateMpcpromoBehaviorSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1271862291566188776L;
+	private static final long serialVersionUID = 3765695726391532295L;
 
 	/**
 	 * 行为类型：click（点击）、expose（曝光）、order（下单）、pay（支付）、collect（收藏）、like（点赞）、comment（评论）、share（分享）、cart（加购物车）、drawback（退款）、consult（咨询）等

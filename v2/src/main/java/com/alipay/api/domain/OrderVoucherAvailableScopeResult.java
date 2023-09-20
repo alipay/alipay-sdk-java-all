@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 结果
  *
  * @author auto create
- * @since 1.0, 2022-08-24 16:06:33
+ * @since 1.0, 2023-09-19 13:43:35
  */
 public class OrderVoucherAvailableScopeResult extends AlipayObject {
 
-	private static final long serialVersionUID = 7684552126956896453L;
+	private static final long serialVersionUID = 7554575583286676517L;
 
 	/**
 	 * 可用门店请求结果。

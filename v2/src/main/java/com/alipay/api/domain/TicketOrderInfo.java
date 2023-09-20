@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class TicketOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1793218469488437812L;
+	private static final long serialVersionUID = 7663786188361148526L;
 
 	/**
 	 * 目的地信息
@@ -42,7 +42,7 @@ public class TicketOrderInfo extends AlipayObject {
 	private Long effectiveNum;
 
 	/**
-	 * 结束时间
+	 * 凭证结束时间
 	 */
 	@ApiField("end_time")
 	private Date endTime;
@@ -125,7 +125,7 @@ public class TicketOrderInfo extends AlipayObject {
 	private Date ticketCreateTime;
 
 	/**
-	 * 凭证修改时间，精确到毫秒
+	 * 凭证修改时间
 	 */
 	@ApiField("ticket_modify_time")
 	private Date ticketModifyTime;

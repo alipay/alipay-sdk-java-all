@@ -15,11 +15,10 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class OrderJourneyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5157996632993768295L;
+	private static final long serialVersionUID = 4234637795594535984L;
 
 	/**
 	 * 操作动作
--DELETE 删除，删除后的行程不再展示
 	 */
 	@ApiField("action")
 	private String action;
@@ -64,14 +63,12 @@ public class OrderJourneyInfo extends AlipayObject {
 
 	/**
 	 * 商户行程单号
-注：同一个pid下的行程单号需唯一。同一个pid下外部行程单号唯一
 	 */
 	@ApiField("merchant_journey_no")
 	private String merchantJourneyNo;
 
 	/**
 	 * 行程状态
-注：行程状态必须与支付宝侧进行约定
 	 */
 	@ApiField("status")
 	private String status;

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.csccmng.openapi.transfer request
  * 
  * @author auto create
- * @since 1.0, 2023-05-23 14:26:47
+ * @since 1.0, 2023-09-19 14:41:45
  */
 public class AlipayIserviceCsccmngOpenapiTransferRequest implements AlipayRequest<AlipayIserviceCsccmngOpenapiTransferResponse> {
 

@@ -15,10 +15,10 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMerchantOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8246551729277835164L;
+	private static final long serialVersionUID = 6285364995498476811L;
 
 	/**
-	 * 订单金额，单位为【元】。SERVICE_ORDER且不涉及金额可不传入该字段，其他场景必传
+	 * 订单金额
 	 */
 	@ApiField("amount")
 	private String amount;
@@ -36,7 +36,7 @@ public class AlipayMerchantOrderSyncModel extends AlipayObject {
 	private UserInfomation buyerInfo;
 
 	/**
-	 * OpenId是用户（buyer_id）在应用（AppId）下的唯一用户标识.
+	 * 用户open_id
 	 */
 	@ApiField("buyer_open_id")
 	private String buyerOpenId;
@@ -48,7 +48,7 @@ public class AlipayMerchantOrderSyncModel extends AlipayObject {
 	private String categoryId;
 
 	/**
-	 * 优惠金额，单位为【元】
+	 * 优惠金额
 	 */
 	@ApiField("discount_amount")
 	private String discountAmount;
@@ -96,26 +96,24 @@ public class AlipayMerchantOrderSyncModel extends AlipayObject {
 
 	/**
 	 * 订单创建时间
-当order_type为SERVICE_ORDER时必传
 	 */
 	@ApiField("order_create_time")
 	private Date orderCreateTime;
 
 	/**
-	 * 订单修改时间。用于订单状态或数据变化较快的顺序控制，SERVICE_ORDER按照行业标准化接入场景必须传入该字段控制乱序。order_modified_time较晚的同步会被最终存储，order_modified_time相同的两次同步会被幂等处理
+	 * 订单修改时间
 	 */
 	@ApiField("order_modified_time")
 	private Date orderModifiedTime;
 
 	/**
 	 * 订单支付时间
-当pay_channel为非ALIPAY时，且订单状态已流转到“支付”或支付后时，需要将支付时间传入
 	 */
 	@ApiField("order_pay_time")
 	private Date orderPayTime;
 
 	/**
-	 * 订单类型，新接入商户统一传入SERVICE_ORDER(服务订单)
+	 * 订单类型
 	 */
 	@ApiField("order_type")
 	private String orderType;
@@ -129,7 +127,6 @@ out_biz_no唯一对应一笔订单，相同的订单需传入相同的out_biz_no
 
 	/**
 	 * 交易对应的签约商户userId
-注意：该字段自2020-02-16日起，可以不传入
 	 */
 	@ApiField("partner_id")
 	private String partnerId;
@@ -154,13 +151,12 @@ out_biz_no唯一对应一笔订单，相同的订单需传入相同的out_biz_no
 
 	/**
 	 * 卖家userId
-注意：该字段自2020-02-16日起，可以不传入
 	 */
 	@ApiField("seller_id")
 	private String sellerId;
 
 	/**
-	 * 是否需要小程序订单代理发送模版消息，Y代表需要发送，N代表不需要发送，不传默认不发送
+	 * 是否需要小程序订单代理发送模版消息。不传默认不发送
 	 */
 	@ApiField("send_msg")
 	private String sendMsg;
@@ -178,17 +174,13 @@ out_biz_no唯一对应一笔订单，相同的订单需传入相同的out_biz_no
 	private OrderShopInfo shopInfo;
 
 	/**
-	 * 用于区分用户下单的订单来源，如
-Alipay-支付宝端内（默认）
-DingTalk-钉钉小程序
+	 * 用于区分用户下单的订单来源
 	 */
 	@ApiField("source_app")
 	private String sourceApp;
 
 	/**
 	 * 同步内容
--JOURNEY_ONLY 仅行程信息
--ALL 全部(默认)
 	 */
 	@ApiField("sync_content")
 	private String syncContent;
@@ -214,9 +206,6 @@ DingTalk-钉钉小程序
 
 	/**
 	 * 交易号类型
-1. TRADE-交易，为空默认为TRADE
-2. TRANSFER-转账
-3. ENTRUST-受托
 	 */
 	@ApiField("trade_type")
 	private String tradeType;

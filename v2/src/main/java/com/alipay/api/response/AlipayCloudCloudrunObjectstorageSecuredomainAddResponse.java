@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudrun.objectstorage.securedomain.add response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-02 18:57:03
+ * @since 1.0, 2023-09-19 10:22:27
  */
 public class AlipayCloudCloudrunObjectstorageSecuredomainAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5293283611315496664L;
+	private static final long serialVersionUID = 1543791378864963826L;
 
 	/** 
 	 * 安全域名

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudrun.objectstorage.cacherule.add response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-03 16:02:01
+ * @since 1.0, 2023-09-19 10:22:34
  */
 public class AlipayCloudCloudrunObjectstorageCacheruleAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3582651187844725179L;
+	private static final long serialVersionUID = 7177211497226456994L;
 
 	/** 
 	 * 缓存规则

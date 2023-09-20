@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenSearchBoxactivityModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3239364114335655159L;
+	private static final long serialVersionUID = 5557418999728548544L;
 
 	/**
 	 * 活动链接，必须为关联的小程序的页面链接（链接以 alipays 开头），可参考<a href="https://opendocs.alipay.com/support/01rb18"> 小程序scheme链接介绍 </a>
@@ -71,7 +71,7 @@ public class AlipayOpenSearchBoxactivityModifyModel extends AlipayObject {
 	private String targetAppid;
 
 	/**
-	 * 跳转小程序名称
+	 * 目标小程序名称
 	 */
 	@ApiField("target_appname")
 	private String targetAppname;

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EnviromentalInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8278717517357859998L;
+	private static final long serialVersionUID = 3644832276659483826L;
 
 	/**
 	 * environmental_info不为空时,必填; 环保类型: A:减塑/不使用购 物袋; B:无纸质小票; C:直饮水; D:酒店绿色入住 E:酒 店-减碳-不洗涤; F:景区订单; G:高校订单; H:充电宝订单; I:物流订单; J:电子发票; K:停车缴费; L:酒店信用住

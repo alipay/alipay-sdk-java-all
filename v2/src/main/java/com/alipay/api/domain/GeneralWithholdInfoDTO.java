@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 代扣签约信息模型
  *
  * @author auto create
- * @since 1.0, 2023-06-16 17:00:59
+ * @since 1.0, 2023-09-20 13:55:28
  */
 public class GeneralWithholdInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2447762695797228523L;
+	private static final long serialVersionUID = 4783747523419945961L;
 
 	/**
 	 * 代扣签约串

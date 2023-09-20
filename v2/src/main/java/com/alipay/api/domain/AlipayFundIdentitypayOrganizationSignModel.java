@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 专享价组织签约接口
  *
  * @author auto create
- * @since 1.0, 2022-04-11 17:04:07
+ * @since 1.0, 2023-09-20 13:51:26
  */
 public class AlipayFundIdentitypayOrganizationSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3277173578339764759L;
+	private static final long serialVersionUID = 8662835184338733188L;
 
 	/**
 	 * 签约场景码

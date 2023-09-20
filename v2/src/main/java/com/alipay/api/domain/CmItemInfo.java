@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CmItemInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3171947442628227861L;
+	private static final long serialVersionUID = 6229123728216332387L;
 
 	/**
 	 * 商品描述
@@ -89,14 +89,14 @@ public class CmItemInfo extends AlipayObject {
 	private String standardCategoryId;
 
 	/**
-	 * 商品状态：
-EFFECT（有效）、INVALID（无效）
+	 * 商品状态
 	 */
 	@ApiField("status")
 	private String status;
 
 	/**
 	 * 商品归属主体ID
+
 例：商品归属主体类型为店铺，则商品归属主体ID为店铺ID；归属主体为小程序，则归属主体ID为小程序ID
 	 */
 	@ApiField("target_id")
@@ -104,7 +104,9 @@ EFFECT（有效）、INVALID（无效）
 
 	/**
 	 * 商品归属主体类型:
+
 5（店铺）
+
 8（小程序）
 	 */
 	@ApiField("target_type")
@@ -112,6 +114,7 @@ EFFECT（有效）、INVALID（无效）
 
 	/**
 	 * 商品类型：
+
 STANDARD_GOODS（标品）、NON_STANDARD_GOODS（非标品）
 	 */
 	@ApiField("type")

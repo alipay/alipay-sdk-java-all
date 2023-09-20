@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class InteligentConstraintInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7855911464723586434L;
+	private static final long serialVersionUID = 2326252481513436814L;
 
 	/**
 	 * 人群组id，目前只支持返回时带出。

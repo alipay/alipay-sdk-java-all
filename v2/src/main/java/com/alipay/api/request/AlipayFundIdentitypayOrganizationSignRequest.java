@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.identitypay.organization.sign request
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 01:37:47
+ * @since 1.0, 2023-09-20 13:51:26
  */
 public class AlipayFundIdentitypayOrganizationSignRequest implements AlipayRequest<AlipayFundIdentitypayOrganizationSignResponse> {
 

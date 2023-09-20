@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 券可用门店修改信息
  *
  * @author auto create
- * @since 1.0, 2022-08-24 15:38:48
+ * @since 1.0, 2023-09-19 13:43:47
  */
 public class OrderVoucherAvailableShopModify extends AlipayObject {
 
-	private static final long serialVersionUID = 8278156134593934666L;
+	private static final long serialVersionUID = 8752588646955716677L;
 
 	/**
 	 * 商户全部门店可用。

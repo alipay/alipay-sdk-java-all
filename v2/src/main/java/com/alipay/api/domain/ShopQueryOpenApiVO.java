@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ShopQueryOpenApiVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5432298555574115473L;
+	private static final long serialVersionUID = 5583232162321431241L;
 
 	/**
 	 * 经营地址
@@ -42,7 +42,7 @@ public class ShopQueryOpenApiVO extends AlipayObject {
 	private String contactPhone;
 
 	/**
-	 * 新版门店类目标准二级类目code。类目标准及与原shop_category映射关系参见文档https://ur.alipay.com/3oJ26c0veETkLXgTbtQnYY
+	 * 新版门店类目标准二级类目code
 	 */
 	@ApiField("new_shop_category")
 	private String newShopCategory;
@@ -60,7 +60,7 @@ public class ShopQueryOpenApiVO extends AlipayObject {
 	private String shopId;
 
 	/**
-	 * 当前名称、地址、经纬度信息准确一致，可用于数字化经营场景消费（01=已认证,02=待优化,99=未知）
+	 * 当前名称、地址、经纬度信息准确一致，可用于数字化经营场景消费
 	 */
 	@ApiField("shop_info_status")
 	private String shopInfoStatus;
@@ -72,13 +72,13 @@ public class ShopQueryOpenApiVO extends AlipayObject {
 	private String shopName;
 
 	/**
-	 * 门店状态，01正常，03冻结
+	 * 门店状态
 	 */
 	@ApiField("shop_status")
 	private String shopStatus;
 
 	/**
-	 * 店铺经营类型，01表示直营，02表示加盟
+	 * 店铺经营类型
 	 */
 	@ApiField("shop_type")
 	private String shopType;

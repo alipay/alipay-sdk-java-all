@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class OrderJourneyElement extends AlipayObject {
 
-	private static final long serialVersionUID = 7222399361936722834L;
+	private static final long serialVersionUID = 2688521292328149763L;
 
 	/**
 	 * 达到地信息
@@ -29,13 +29,13 @@ public class OrderJourneyElement extends AlipayObject {
 	private JourneyLocation departure;
 
 	/**
-	 * 行程时长，单位为秒
+	 * 行程时长
 	 */
 	@ApiField("duration")
 	private String duration;
 
 	/**
-	 * 结束时间（格式化）
+	 * 结束时间
 	 */
 	@ApiField("end_time")
 	private String endTime;
@@ -80,13 +80,13 @@ public class OrderJourneyElement extends AlipayObject {
 	private JourneyMerchantInfo serviceProvider;
 
 	/**
-	 * 开始时间格式化
+	 * 开始时间
 	 */
 	@ApiField("start_time")
 	private String startTime;
 
 	/**
-	 * 开始时间描述（非格式化）
+	 * 开始时间描述（非结构化）
 	 */
 	@ApiField("start_time_desc")
 	private String startTimeDesc;

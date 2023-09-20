@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景支付参与者业务参数模型
  *
  * @author auto create
- * @since 1.0, 2023-08-08 21:07:40
+ * @since 1.0, 2023-09-20 13:55:06
  */
 public class ScenePayParticipantBizParamDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4347291234257884831L;
+	private static final long serialVersionUID = 3354926572946613442L;
 
 	/**
 	 * 由各业务场景定义，具体参考场景解决方案接入文档

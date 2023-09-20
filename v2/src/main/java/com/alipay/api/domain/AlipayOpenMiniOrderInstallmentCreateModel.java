@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单分期
  *
  * @author auto create
- * @since 1.0, 2023-09-18 14:20:17
+ * @since 1.0, 2023-09-19 14:55:39
  */
 public class AlipayOpenMiniOrderInstallmentCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3868368247326835882L;
+	private static final long serialVersionUID = 3126323569334877262L;
 
 	/**
 	 * 续租场景分期数，当分期类型为RELET时，该字段必填

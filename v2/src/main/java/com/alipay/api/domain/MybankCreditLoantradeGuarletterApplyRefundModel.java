@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保函退保申请
  *
  * @author auto create
- * @since 1.0, 2022-08-24 17:39:24
+ * @since 1.0, 2023-09-18 20:02:44
  */
 public class MybankCreditLoantradeGuarletterApplyRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5238885577871398468L;
+	private static final long serialVersionUID = 5463965733398849643L;
 
 	/**
 	 * 保函单号

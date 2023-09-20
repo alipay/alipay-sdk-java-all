@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class SubServiceKeyWordInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4393891856128538528L;
+	private static final long serialVersionUID = 8693526136522775729L;
 
 	/**
 	 * 小程序名称
@@ -30,7 +30,7 @@ public class SubServiceKeyWordInfo extends AlipayObject {
 	private List<KeyWordInfo> keywordInfo;
 
 	/**
-	 * 小程序id
+	 * 小程序ID
 	 */
 	@ApiField("mini_app_id")
 	private String miniAppId;

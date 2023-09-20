@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AnttechMorseMarketingShopDataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6846882587598926882L;
+	private static final long serialVersionUID = 1383292247145727174L;
 
 	/**
 	 * 收款账号

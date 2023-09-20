@@ -10,14 +10,26 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 全部门店可用
  *
  * @author auto create
- * @since 1.0, 2023-07-24 23:20:09
+ * @since 1.0, 2023-09-19 11:17:00
  */
 public class VoucherAvailableGeographyAllShopInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7393581547489583944L;
+	private static final long serialVersionUID = 5345241191636513217L;
 
 	/**
-	 * 券不可使用的门店列表。指定商户全部门店可用时可通过该字段排除部分不可用门店。  列表中的门店id是通过调用接口ant.merchant.expand.shop.create创建门店返回的支付宝门店id 接口参数是列表类型。
+	 * 全部门店可用的品牌ID
+提示:
+1.目前只支持传入当前券归属商户的品牌ID
+2.品牌ID可以在登录b.alipay.com-账户中心-品牌管理里查看。如果没有品牌，可以先创建品牌。Sop：
+注意事项
+1.只支持传入单个品牌ID
+2.传入品牌ID后，券的商户品牌和logo仍以voucher_display_pattern_info传入为准。
+	 */
+	@ApiField("available_brand_id")
+	private String availableBrandId;
+
+	/**
+	 * 券不可使用的门店列表。指定商户全部门店可用时可通过该字段排除部分不可用门店。 列表中的门店id是通过调用接口ant.merchant.expand.shop.create创建门店返回的支付宝门店id 接口参数是列表类型。
 	 */
 	@ApiListField("exclude_shop_ids")
 	@ApiField("string")
@@ -29,6 +41,13 @@ public class VoucherAvailableGeographyAllShopInfo extends AlipayObject {
 	@ApiListField("merchant_ids")
 	@ApiField("string")
 	private List<String> merchantIds;
+
+	public String getAvailableBrandId() {
+		return this.availableBrandId;
+	}
+	public void setAvailableBrandId(String availableBrandId) {
+		this.availableBrandId = availableBrandId;
+	}
 
 	public List<String> getExcludeShopIds() {
 		return this.excludeShopIds;

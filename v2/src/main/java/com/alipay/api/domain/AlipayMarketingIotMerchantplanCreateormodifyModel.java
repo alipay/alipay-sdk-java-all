@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingIotMerchantplanCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7753432924861118135L;
+	private static final long serialVersionUID = 5214839241972819139L;
 
 	/**
 	 * 操作类型：CREATE（新增） / MODIFY（修改）

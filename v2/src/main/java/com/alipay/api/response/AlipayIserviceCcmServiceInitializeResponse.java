@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayIserviceCcmServiceInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1675799469179217761L;
+	private static final long serialVersionUID = 5335663494814139218L;
 
 	/** 
 	 * spi在ccm中的唯一标识，与biz_code一一对应

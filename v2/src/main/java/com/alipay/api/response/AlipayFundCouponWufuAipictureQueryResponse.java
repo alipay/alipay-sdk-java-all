@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundCouponWufuAipictureQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5732642382893923558L;
+	private static final long serialVersionUID = 1683254833321715163L;
 
 	/** 
 	 * AI年画图片列表

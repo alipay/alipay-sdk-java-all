@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 集团电商资金管控
  *
  * @author auto create
- * @since 1.0, 2023-03-02 13:28:50
+ * @since 1.0, 2023-09-20 15:58:51
  */
 public class AlipayTradeSettleEfundUnfreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1148732252126465284L;
+	private static final long serialVersionUID = 4898255196332362984L;
 
 	/**
 	 * 解冻金额，单位元

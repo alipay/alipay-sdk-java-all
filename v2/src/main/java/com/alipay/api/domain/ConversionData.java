@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 转化数据详情
  *
  * @author auto create
- * @since 1.0, 2023-09-18 10:19:47
+ * @since 1.0, 2023-09-19 14:42:25
  */
 public class ConversionData extends AlipayObject {
 
-	private static final long serialVersionUID = 7661315685836916156L;
+	private static final long serialVersionUID = 3256429817114665316L;
 
 	/**
 	 * 转化流水号，用于幂等
@@ -91,6 +91,12 @@ TB_LIVE -  淘宝直播
 	 */
 	@ApiField("group_id")
 	private String groupId;
+
+	/**
+	 * XLIGHT - 灯火归因；MERCHANT-商家归因； 默认为XLIGHT
+	 */
+	@ApiField("join_channel")
+	private String joinChannel;
 
 	/**
 	 * 计划ID
@@ -232,6 +238,13 @@ PID - 2088pid
 	}
 	public void setGroupId(String groupId) {
 		this.groupId = groupId;
+	}
+
+	public String getJoinChannel() {
+		return this.joinChannel;
+	}
+	public void setJoinChannel(String joinChannel) {
+		this.joinChannel = joinChannel;
 	}
 
 	public String getPlanId() {

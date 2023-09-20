@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.zcardprod.user.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 18:16:29
+ * @since 1.0, 2023-09-20 13:52:51
  */
 public class AlipayFundZcardprodUserQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6372667555393897737L;
+	private static final long serialVersionUID = 5599812142659795282L;
 
 	/** 
 	 * 资产id

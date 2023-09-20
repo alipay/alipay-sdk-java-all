@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保函发票申请
  *
  * @author auto create
- * @since 1.0, 2022-08-24 17:36:42
+ * @since 1.0, 2023-09-18 20:01:22
  */
 public class MybankCreditLoantradeGuarletterInvoiceApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8767979326939768248L;
+	private static final long serialVersionUID = 7248946126324178393L;
 
 	/**
 	 * 公司地址，专票时必填

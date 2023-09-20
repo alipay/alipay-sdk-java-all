@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改券有效期对象
  *
  * @author auto create
- * @since 1.0, 2022-08-24 14:45:48
+ * @since 1.0, 2023-09-19 13:43:47
  */
 public class VoucherValidPeriodModify extends AlipayObject {
 
-	private static final long serialVersionUID = 5241485566362555734L;
+	private static final long serialVersionUID = 2695441311425274312L;
 
 	/**
 	 * 券可使用的开始时间。格式为：yyyy-MM-dd HH:mm:ss。

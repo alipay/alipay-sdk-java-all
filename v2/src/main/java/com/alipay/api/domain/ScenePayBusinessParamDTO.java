@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业务参数模型
  *
  * @author auto create
- * @since 1.0, 2023-06-25 13:31:25
+ * @since 1.0, 2023-09-20 13:54:27
  */
 public class ScenePayBusinessParamDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1644984125783937556L;
+	private static final long serialVersionUID = 4625244221565261991L;
 
 	/**
 	 * 业务自定义参数，交易异步通知和业务单同步查询时会返回

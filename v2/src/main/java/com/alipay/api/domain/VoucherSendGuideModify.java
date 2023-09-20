@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券发放引导可修改信息
  *
  * @author auto create
- * @since 1.0, 2022-08-24 14:44:02
+ * @since 1.0, 2023-09-19 12:03:18
  */
 public class VoucherSendGuideModify extends AlipayObject {
 
-	private static final long serialVersionUID = 8372831861587792368L;
+	private static final long serialVersionUID = 8231981968368815525L;
 
 	/**
 	 * 领（购）券详情页链接，从支付宝公域跳转到服务商（商户）自定义领(购)券详情页。说明：当 voucher_type=EXCHANGE_VOUCHER 时，该字段可修改，其他不允许修改。

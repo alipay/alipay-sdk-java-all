@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AntMerchantExpandShopModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8224332842567671275L;
+	private static final long serialVersionUID = 2316833185695351273L;
 
 	/**
 	 * "门店结算卡信息。本业务当前只允许传入一张结算卡。 说明：本参数仅直付通业务使用，其余业务无需关注。"
@@ -43,27 +43,25 @@ public class AntMerchantExpandShopModifyModel extends AlipayObject {
 	private List<ShopBusinessTime> businessTime;
 
 	/**
-	 * 营业执照图片url。其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。若无需更新本信息项，可以不填写
+	 * 营业执照图片KEY
 	 */
 	@ApiField("cert_image")
 	private String certImage;
 
 	/**
-	 * 营业执照名称，填写值为营业执照或统一社会信用代码证上的名称。若无需更新本信息项，可以不填写
-注意：若传入 cert_no 则本参数必填。
+	 * 营业执照名称，填写值为营业执照或统一社会信用代码证上的名称。
 	 */
 	@ApiField("cert_name")
 	private String certName;
 
 	/**
-	 * 证件号码。请填写店铺营业执照号。若无需更新本信息项，可以不填写，以原有值为准
+	 * 证件号码。请填写店铺营业执照号。
 	 */
 	@ApiField("cert_no")
 	private String certNo;
 
 	/**
-	 * 证件类型，取值范围：201：营业执照；2011:多证合一(统一社会信用代码)。若无需更新本信息项，可以不填写。
-注意：若传入 cert_no 则本参数必填。
+	 * 证件类型
 	 */
 	@ApiField("cert_type")
 	private String certType;
@@ -75,13 +73,13 @@ public class AntMerchantExpandShopModifyModel extends AlipayObject {
 	private ContactInfo contactInfos;
 
 	/**
-	 * 店铺联系手机。若无需更新本信息项，可以不填写，以原有值为准
+	 * 店铺联系手机，与店铺联系固话二选一必填
 	 */
 	@ApiField("contact_mobile")
 	private String contactMobile;
 
 	/**
-	 * 店铺的联系固话。若无需更新本信息项，可以不填写，以原有值为准
+	 * 店铺的联系固话，和店铺联系手机二选一必填
 	 */
 	@ApiField("contact_phone")
 	private String contactPhone;
@@ -118,7 +116,7 @@ public class AntMerchantExpandShopModifyModel extends AlipayObject {
 	private String licenseAuthLetterImage;
 
 	/**
-	 * 备注。若无需更新本信息项，可以不填写
+	 * 备注
 	 */
 	@ApiField("memo")
 	private String memo;

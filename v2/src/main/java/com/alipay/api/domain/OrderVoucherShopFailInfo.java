@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家券失败门店详情
  *
  * @author auto create
- * @since 1.0, 2022-08-24 14:46:52
+ * @since 1.0, 2023-09-19 13:43:35
  */
 public class OrderVoucherShopFailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8222895214851549414L;
+	private static final long serialVersionUID = 3443447297543345157L;
 
 	/**
 	 * 请求失败提示信息。

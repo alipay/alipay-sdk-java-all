@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBossBaseProcessInstanceCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7577723918685571326L;
+	private static final long serialVersionUID = 3394978562363786364L;
 
 	
 

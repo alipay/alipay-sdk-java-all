@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AntMerchantExpandShopCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4818394927397468487L;
+	private static final long serialVersionUID = 8781313836768992986L;
 
 	/**
 	 * "门店结算卡信息。本业务当前只允许传入一张结算卡。 说明：本参数仅直付通业务使用，其余业务无需关注。"
@@ -43,14 +43,13 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	private List<ShopBusinessTime> businessTime;
 
 	/**
-	 * 营业执照图片，需传入<a href="https://opendocs.alipay.com/apis/api_1/ant.merchant.expand.indirect.image.upload">ant.merchant.expand.indirect.image.upload</a> 接口上传图片后得到的 image_id。
+	 * 营业执照图片KEY
 	 */
 	@ApiField("cert_image")
 	private String certImage;
 
 	/**
 	 * 营业执照名称，填写值为营业执照或统一社会信用代码证上的名称。
-注意：若传入 cert_no，则本参数必填。
 	 */
 	@ApiField("cert_name")
 	private String certName;
@@ -62,8 +61,7 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	private String certNo;
 
 	/**
-	 * 证件类型，取值范围：201：营业执照；2011:多证合一(统一社会信用代码)。
-注意：若传入 cert_no，则本参数必填。
+	 * 证件类型
 	 */
 	@ApiField("cert_type")
 	private String certType;

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.zcardprod.user.unbind response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-23 19:56:46
+ * @since 1.0, 2023-09-20 13:52:17
  */
 public class AlipayFundZcardprodUserUnbindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7663959956236317859L;
+	private static final long serialVersionUID = 5755672964623526219L;
 
 	
 

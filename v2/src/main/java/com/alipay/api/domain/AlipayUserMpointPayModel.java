@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁会员积分支付接口（需要用户授权）
  *
  * @author auto create
- * @since 1.0, 2023-09-07 20:14:53
+ * @since 1.0, 2023-09-20 13:24:52
  */
 public class AlipayUserMpointPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3519942664631457482L;
+	private static final long serialVersionUID = 8593637367364573881L;
 
 	/**
 	 * 业务子类型，由会员方面分配
@@ -24,6 +24,12 @@ public class AlipayUserMpointPayModel extends AlipayObject {
 	 */
 	@ApiField("biz_type")
 	private String bizType;
+
+	/**
+	 * 积分扣减订单详情
+	 */
+	@ApiField("deduct_order_detail")
+	private DeductOrderDetail deductOrderDetail;
 
 	/**
 	 * 业务流水号，会用于幂等性校验，所以请保证每次请求的业务流水号的唯一性
@@ -49,6 +55,13 @@ public class AlipayUserMpointPayModel extends AlipayObject {
 	}
 	public void setBizType(String bizType) {
 		this.bizType = bizType;
+	}
+
+	public DeductOrderDetail getDeductOrderDetail() {
+		return this.deductOrderDetail;
+	}
+	public void setDeductOrderDetail(DeductOrderDetail deductOrderDetail) {
+		this.deductOrderDetail = deductOrderDetail;
 	}
 
 	public String getOutBizNo() {

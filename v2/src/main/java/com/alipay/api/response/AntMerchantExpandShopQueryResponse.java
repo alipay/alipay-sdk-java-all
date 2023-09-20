@@ -20,7 +20,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1783867556147631482L;
+	private static final long serialVersionUID = 3851866875423793351L;
 
 	/** 
 	 * 品牌id
@@ -122,7 +122,7 @@ public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 	private String memo;
 
 	/** 
-	 * 新版门店类目标准二级类目code。类目标准及与原shop_category映射关系参见文档https://gw.alipayobjects.com/os/bmw-prod/4b3f82df-e53e-4b84-bc41-fe025101e726.xlsx
+	 * 新版门店类目标准二级类目code
 	 */
 	@ApiField("new_shop_category")
 	private String newShopCategory;
@@ -166,7 +166,7 @@ public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 	private String shopId;
 
 	/** 
-	 * 当前名称、地址、经纬度信息准确一致，可用于数字化经营场景消费（01=已认证，02=待优化，03=审核中，99=未知）
+	 * 当前名称、地址、经纬度信息准确一致，可用于数字化经营场景消费
 	 */
 	@ApiField("shop_info_status")
 	private String shopInfoStatus;

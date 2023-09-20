@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询静态站点缓存配置
  *
  * @author auto create
- * @since 1.0, 2023-08-02 13:56:25
+ * @since 1.0, 2023-09-19 10:21:41
  */
 public class AlipayCloudCloudrunStaticsiteCacheruleBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7725146212538636899L;
+	private static final long serialVersionUID = 1324376346565195541L;
 
 	/**
 	 * 内部使用，uiam角色扮演token

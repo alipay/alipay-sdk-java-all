@@ -11,17 +11,16 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntMerchantExpandItemOpenQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3436483231823536813L;
+	private static final long serialVersionUID = 6851298863285921753L;
 
 	/**
 	 * 场景码（具体值请参见产品文档）。
-小程序订单中心场景固定为 APP_ORDER。
 	 */
 	@ApiField("scene")
 	private String scene;
 
 	/**
-	 * 商品状态：EFFECT（有效）、INVALID（无效）
+	 * 商品状态
 	 */
 	@ApiField("status")
 	private String status;

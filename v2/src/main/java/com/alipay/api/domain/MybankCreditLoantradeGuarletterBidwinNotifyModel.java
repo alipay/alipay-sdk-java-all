@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保函中标通知
  *
  * @author auto create
- * @since 1.0, 2022-08-24 17:39:16
+ * @since 1.0, 2023-09-18 20:03:10
  */
 public class MybankCreditLoantradeGuarletterBidwinNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7183228334565668879L;
+	private static final long serialVersionUID = 1795112289213472797L;
 
 	/**
 	 * 标的明细

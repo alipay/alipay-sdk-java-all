@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ItemOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2697676412825511954L;
+	private static final long serialVersionUID = 2281326848288483398L;
 
 	/**
 	 * 扩展信息，请参见产品文档。小程序订单助手业务中，扩展参数必须传递素材id；其他业务场景参见对应的产品文档。
@@ -24,7 +24,7 @@ public class ItemOrderInfo extends AlipayObject {
 	private List<OrderExtInfo> extInfo;
 
 	/**
-	 * 商品 id
+	 * 商品ID
 	 */
 	@ApiField("item_id")
 	private String itemId;
@@ -36,8 +36,7 @@ public class ItemOrderInfo extends AlipayObject {
 	private String itemName;
 
 	/**
-	 * 商品数量（单位：自拟）。
-小程序订单助手业务中，为必传；其他业务场景参见对应的产品文档。
+	 * 商品数量（单位：自拟）
 	 */
 	@ApiField("quantity")
 	private Long quantity;
@@ -49,7 +48,7 @@ public class ItemOrderInfo extends AlipayObject {
 	private String skuId;
 
 	/**
-	 * 商品状态枚举，默认无需传入，如需使用请联系业务负责人
+	 * 商品状态枚举
 	 */
 	@ApiField("status")
 	private String status;

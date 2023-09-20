@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 更新自定义域名证书
  *
  * @author auto create
- * @since 1.0, 2023-08-03 15:57:29
+ * @since 1.0, 2023-09-19 10:21:06
  */
 public class AlipayCloudCloudrunStaticsiteDomaincertModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6226355532339952934L;
+	private static final long serialVersionUID = 7869582692489668989L;
 
 	/**
 	 * 内部使用，uiam角色扮演token

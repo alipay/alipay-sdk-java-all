@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudrun.staticsite.domain.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-03 16:11:59
+ * @since 1.0, 2023-09-19 10:20:49
  */
 public class AlipayCloudCloudrunStaticsiteDomainBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6373576615669577531L;
+	private static final long serialVersionUID = 2753117495416155788L;
 
 	/** 
 	 * 域名列表

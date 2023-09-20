@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 云存储文件目录批量删除
  *
  * @author auto create
- * @since 1.0, 2022-09-14 15:35:54
+ * @since 1.0, 2023-09-20 11:12:19
  */
 public class AlipayOpenMiniCloudFileDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8582394953934749349L;
+	private static final long serialVersionUID = 6574983132268179571L;
 
 	/**
 	 * 云环境ID,在云托管平台获取

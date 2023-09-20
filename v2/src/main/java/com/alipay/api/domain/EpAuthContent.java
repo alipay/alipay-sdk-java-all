@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EpAuthContent extends AlipayObject {
 
-	private static final long serialVersionUID = 5816379545675195611L;
+	private static final long serialVersionUID = 2177664568872886599L;
 
 	/**
 	 * 企业信用等级

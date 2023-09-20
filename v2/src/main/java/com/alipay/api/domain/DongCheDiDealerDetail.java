@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 懂车帝经销商详情模型
  *
  * @author auto create
- * @since 1.0, 2023-09-18 17:24:27
+ * @since 1.0, 2023-09-19 10:56:16
  */
 public class DongCheDiDealerDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1682885393256745886L;
+	private static final long serialVersionUID = 2562769466643672854L;
 
 	/**
 	 * 地址

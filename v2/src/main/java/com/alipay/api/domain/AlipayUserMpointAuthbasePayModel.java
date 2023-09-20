@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝会员积分扣减接口
  *
  * @author auto create
- * @since 1.0, 2023-09-07 16:51:57
+ * @since 1.0, 2023-09-20 13:25:18
  */
 public class AlipayUserMpointAuthbasePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3178173672918537993L;
+	private static final long serialVersionUID = 3146811333522326323L;
 
 	/**
 	 * 业务子类型，由会员方面分配
@@ -24,6 +24,12 @@ public class AlipayUserMpointAuthbasePayModel extends AlipayObject {
 	 */
 	@ApiField("biz_type")
 	private String bizType;
+
+	/**
+	 * 积分扣减订单详情
+	 */
+	@ApiField("deduct_order_detail")
+	private DeductOrderDetail deductOrderDetail;
 
 	/**
 	 * 用户标识
@@ -61,6 +67,13 @@ public class AlipayUserMpointAuthbasePayModel extends AlipayObject {
 	}
 	public void setBizType(String bizType) {
 		this.bizType = bizType;
+	}
+
+	public DeductOrderDetail getDeductOrderDetail() {
+		return this.deductOrderDetail;
+	}
+	public void setDeductOrderDetail(DeductOrderDetail deductOrderDetail) {
+		this.deductOrderDetail = deductOrderDetail;
 	}
 
 	public String getOpenId() {

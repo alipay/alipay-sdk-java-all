@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券可用范围可修改信息
  *
  * @author auto create
- * @since 1.0, 2022-08-24 15:53:27
+ * @since 1.0, 2023-09-19 13:43:47
  */
 public class VoucherAvailableScopeModify extends AlipayObject {
 
-	private static final long serialVersionUID = 7268533427271399966L;
+	private static final long serialVersionUID = 4184615526957428561L;
 
 	/**
 	 * 可用范围修改类型。

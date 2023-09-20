@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 统一境内收单跨境结算接口
  *
  * @author auto create
- * @since 1.0, 2023-06-20 22:48:15
+ * @since 1.0, 2023-09-20 15:56:44
  */
 public class AlipayTradeOverseasSettleModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3555139114718677467L;
+	private static final long serialVersionUID = 8266345496619662889L;
 
 	/**
 	 * 跨境结算的人民币金额，单位为元；等于交易金额 (实际为实收金额)，加上净补差金额，减去已退款金额，减去净收费金额，再减去净分账金额，

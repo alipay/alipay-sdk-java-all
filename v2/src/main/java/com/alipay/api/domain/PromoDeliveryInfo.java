@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PromoDeliveryInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7366559554883623571L;
+	private static final long serialVersionUID = 6712315859855236248L;
 
 	/**
 	 * 活动id
@@ -26,7 +26,7 @@ public class PromoDeliveryInfo extends AlipayObject {
 	private String boothCode;
 
 	/**
-	 * 可投放的渠道标识. 说明： 针对不同的boot_code，channel值各不相同.接口使用者可以认为channel是不同booth_code展位下的渠道的唯一标识。 例如： booth_code为PAYMENT_RESULT。 channel为某个商户的pid。
+	 * 可投放的渠道标识.
 	 */
 	@ApiField("channel")
 	private String channel;

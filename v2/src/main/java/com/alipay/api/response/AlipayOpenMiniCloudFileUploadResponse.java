@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.cloud.file.upload response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 18:26:43
+ * @since 1.0, 2023-09-20 14:16:44
  */
 public class AlipayOpenMiniCloudFileUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5779953866552493486L;
+	private static final long serialVersionUID = 7171434617759556937L;
 
 	/** 
 	 * 文件访问地址

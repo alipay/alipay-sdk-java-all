@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景支付-授权解除
  *
  * @author auto create
- * @since 1.0, 2023-08-10 10:56:25
+ * @since 1.0, 2023-09-20 13:53:10
  */
 public class AlipayFundScenepayAuthorizeCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5491682893885654898L;
+	private static final long serialVersionUID = 7819585373277829177L;
 
 	/**
 	 * - MERCHANT_AUTHORIZATION 商户授权
