@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改IP黑白名单
  *
  * @author auto create
- * @since 1.0, 2023-08-03 16:08:39
+ * @since 1.0, 2023-09-20 16:54:11
  */
 public class AlipayCloudCloudrunObjectstorageIplimitModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6555394961826334714L;
+	private static final long serialVersionUID = 6423698872491843329L;
 
 	/**
 	 * 内部使用，uiam角色扮演token

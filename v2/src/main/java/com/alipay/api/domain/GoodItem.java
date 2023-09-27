@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品元素
  *
  * @author auto create
- * @since 1.0, 2023-07-31 17:12:16
+ * @since 1.0, 2023-09-25 14:24:15
  */
 public class GoodItem extends AlipayObject {
 
-	private static final long serialVersionUID = 3199173972713374157L;
+	private static final long serialVersionUID = 7762995335334858387L;
 
 	/**
 	 * 商品可用的城市列表
@@ -78,6 +78,19 @@ public class GoodItem extends AlipayObject {
 	private String detailUrl;
 
 	/**
+	 * 折扣率
+0.75（75折）
+	 */
+	@ApiField("discount_rate")
+	private String discountRate;
+
+	/**
+	 * 商品是否包邮，如 1：包邮 2：不包邮 3：满足条件包邮
+	 */
+	@ApiField("free_shipping_val")
+	private String freeShippingVal;
+
+	/**
 	 * 租赁商品的新日描述
 	 */
 	@ApiField("fresh_degree")
@@ -96,10 +109,29 @@ public class GoodItem extends AlipayObject {
 	private String id;
 
 	/**
+	 * 行业类型  
+LEASE（租赁）
+	 */
+	@ApiField("industry_type")
+	private String industryType;
+
+	/**
+	 * 租赁信息
+	 */
+	@ApiField("lease_industry_info")
+	private LeaseIndustryBean leaseIndustryInfo;
+
+	/**
 	 * 商品归属的小程序ID
 	 */
 	@ApiField("mini_app_id")
 	private String miniAppId;
+
+	/**
+	 * 时间戳（毫秒）
+	 */
+	@ApiField("operate_time")
+	private String operateTime;
 
 	/**
 	 * 商品原价/划线价
@@ -113,6 +145,12 @@ public class GoodItem extends AlipayObject {
 	@ApiListField("pic_url_list")
 	@ApiField("string")
 	private List<String> picUrlList;
+
+	/**
+	 * 商品累计点赞次数
+	 */
+	@ApiField("praise_cnt")
+	private Long praiseCnt;
 
 	/**
 	 * 商品的logo图片列表，可用于用户展示的图片，建议600*600
@@ -158,6 +196,12 @@ public class GoodItem extends AlipayObject {
 	private String selfPickup;
 
 	/**
+	 * 商品累计分享次数
+	 */
+	@ApiField("share_cnt")
+	private Long shareCnt;
+
+	/**
 	 * 百分比，值范国0.00%-100.00%，保留两位小数
 	 */
 	@ApiField("shipment_rate")
@@ -168,6 +212,12 @@ public class GoodItem extends AlipayObject {
 	 */
 	@ApiField("shipments")
 	private String shipments;
+
+	/**
+	 * 商品运费，单位分
+	 */
+	@ApiField("shipping_price")
+	private String shippingPrice;
 
 	/**
 	 * 商品所属店铺id（如有）
@@ -287,6 +337,20 @@ public class GoodItem extends AlipayObject {
 		this.detailUrl = detailUrl;
 	}
 
+	public String getDiscountRate() {
+		return this.discountRate;
+	}
+	public void setDiscountRate(String discountRate) {
+		this.discountRate = discountRate;
+	}
+
+	public String getFreeShippingVal() {
+		return this.freeShippingVal;
+	}
+	public void setFreeShippingVal(String freeShippingVal) {
+		this.freeShippingVal = freeShippingVal;
+	}
+
 	public String getFreshDegree() {
 		return this.freshDegree;
 	}
@@ -308,11 +372,32 @@ public class GoodItem extends AlipayObject {
 		this.id = id;
 	}
 
+	public String getIndustryType() {
+		return this.industryType;
+	}
+	public void setIndustryType(String industryType) {
+		this.industryType = industryType;
+	}
+
+	public LeaseIndustryBean getLeaseIndustryInfo() {
+		return this.leaseIndustryInfo;
+	}
+	public void setLeaseIndustryInfo(LeaseIndustryBean leaseIndustryInfo) {
+		this.leaseIndustryInfo = leaseIndustryInfo;
+	}
+
 	public String getMiniAppId() {
 		return this.miniAppId;
 	}
 	public void setMiniAppId(String miniAppId) {
 		this.miniAppId = miniAppId;
+	}
+
+	public String getOperateTime() {
+		return this.operateTime;
+	}
+	public void setOperateTime(String operateTime) {
+		this.operateTime = operateTime;
 	}
 
 	public String getOriginPrice() {
@@ -327,6 +412,13 @@ public class GoodItem extends AlipayObject {
 	}
 	public void setPicUrlList(List<String> picUrlList) {
 		this.picUrlList = picUrlList;
+	}
+
+	public Long getPraiseCnt() {
+		return this.praiseCnt;
+	}
+	public void setPraiseCnt(Long praiseCnt) {
+		this.praiseCnt = praiseCnt;
 	}
 
 	public List<String> getPromoPicUrlList() {
@@ -378,6 +470,13 @@ public class GoodItem extends AlipayObject {
 		this.selfPickup = selfPickup;
 	}
 
+	public Long getShareCnt() {
+		return this.shareCnt;
+	}
+	public void setShareCnt(Long shareCnt) {
+		this.shareCnt = shareCnt;
+	}
+
 	public String getShipmentRate() {
 		return this.shipmentRate;
 	}
@@ -390,6 +489,13 @@ public class GoodItem extends AlipayObject {
 	}
 	public void setShipments(String shipments) {
 		this.shipments = shipments;
+	}
+
+	public String getShippingPrice() {
+		return this.shippingPrice;
+	}
+	public void setShippingPrice(String shippingPrice) {
+		this.shippingPrice = shippingPrice;
 	}
 
 	public String getShopId() {

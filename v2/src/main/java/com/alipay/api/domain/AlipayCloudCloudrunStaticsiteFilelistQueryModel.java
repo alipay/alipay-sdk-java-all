@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 静态站点查询文件列表
  *
  * @author auto create
- * @since 1.0, 2023-08-03 15:27:35
+ * @since 1.0, 2023-09-21 12:45:10
  */
 public class AlipayCloudCloudrunStaticsiteFilelistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6887615248294457848L;
+	private static final long serialVersionUID = 3397126894919394488L;
 
 	/**
 	 * 内部使用，uiam角色扮演token

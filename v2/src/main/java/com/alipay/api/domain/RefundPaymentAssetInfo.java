@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 收款资产明细
  *
  * @author auto create
- * @since 1.0, 2023-03-07 10:26:38
+ * @since 1.0, 2023-09-25 21:30:16
  */
 public class RefundPaymentAssetInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7752959353638179974L;
+	private static final long serialVersionUID = 8471232153757771699L;
 
 	/**
 	 * 银行卡结构id
@@ -44,7 +44,7 @@ public class RefundPaymentAssetInfo extends AlipayObject {
 	private String receiverLogonId;
 
 	/**
-	 * 单据退款金额
+	 * 单据退款金额，单位元
 	 */
 	@ApiField("refund_amount")
 	private String refundAmount;

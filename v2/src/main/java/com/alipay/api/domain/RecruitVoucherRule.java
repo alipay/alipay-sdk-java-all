@@ -15,10 +15,10 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RecruitVoucherRule extends AlipayObject {
 
-	private static final long serialVersionUID = 8736411897411449688L;
+	private static final long serialVersionUID = 1395367337445832769L;
 
 	/**
-	 * 券面额（每张代金券可以抵扣的金额）的的最大值。 币种为人民币，单位为元。小数点以后最多保留两位。 该字段为空时表示不限制。
+	 * 券面额（每张代金券可以抵扣的金额）的最大值。 币种为人民币，单位为元。小数点以后最多保留两位。 该字段为空时表示不限制。
 	 */
 	@ApiField("amount_max")
 	private String amountMax;
@@ -158,17 +158,17 @@ public class RecruitVoucherRule extends AlipayObject {
 
 枚举值：
 商家券类型：
-	ALL_FIX_ORDER_VOUCHER 全场满减券；
-	ITEM_FIX_ORDER_VOUCHER 单品满减券；
-	ALL_DISCOUNT_ORDER_VOUCHER 全场折扣券；
-	ITEM_DISCOUNT_ORDER_VOUCHER 单品折扣券；
-	ITEM_SPE_ORDER_VOUCHER 单品特价券；
-	EXCHANGE_GROUP_BUY_ORDER_VOUCHER 兑换团购券；
-	EXCHANGE_FIX_ORDER_VOUCHER 兑换代金券；
+ALL_FIX_ORDER_VOUCHER 全场满减券；
+ITEM_FIX_ORDER_VOUCHER 单品满减券；
+ALL_DISCOUNT_ORDER_VOUCHER 全场折扣券；
+ITEM_DISCOUNT_ORDER_VOUCHER 单品折扣券；
+ITEM_SPE_ORDER_VOUCHER 单品特价券；
+EXCHANGE_GROUP_BUY_ORDER_VOUCHER 兑换团购券；
+EXCHANGE_FIX_ORDER_VOUCHER 兑换代金券；
 
 支付券类型：
-	ALL_FIX_VOUCHER 全场满减券；
-	ITEM_FIX_VOUCHER 单品满减券；
+ALL_FIX_VOUCHER 全场满减券；
+ITEM_FIX_VOUCHER 单品满减券；
 
 创建商家券参考https://opendocs.alipay.com/apis/01xm17
 创建支付券参考https://opendocs.alipay.com/pre-apis/027185（仅供受邀用户使用）

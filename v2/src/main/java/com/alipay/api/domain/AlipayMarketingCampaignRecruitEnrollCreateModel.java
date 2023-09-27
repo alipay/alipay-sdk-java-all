@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCampaignRecruitEnrollCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3343956423142185164L;
+	private static final long serialVersionUID = 4258184147578431725L;
 
 	/**
 	 * 活动报名基本信息。
@@ -33,8 +33,7 @@ public class AlipayMarketingCampaignRecruitEnrollCreateModel extends AlipayObjec
 	private RecruitEnrollMaterial enrollMaterial;
 
 	/**
-	 * 幂等ID。
-由商家/ISV 自定义，仅支持字母、数字、下划线且需保证每次操作唯一。
+	 * 外部操作流水号。由商家/ISV 自定义，仅支持字母、数字、下划线且需保证每次操作唯一。
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;

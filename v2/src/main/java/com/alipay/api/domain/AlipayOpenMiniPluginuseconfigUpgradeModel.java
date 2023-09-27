@@ -11,10 +11,16 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniPluginuseconfigUpgradeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4659255816536796486L;
+	private static final long serialVersionUID = 5314511652464354538L;
 
 	/**
-	 * 端参数，枚举列举：支付宝：com.alipay.alipaywallet，高德：com.amap.app
+	 * 小程序客户端类型，默认为支付宝端。常见支持如下客户端：
+com.alipay.alipaywallet：支付宝端；
+com.alibaba.android.rimet：DINGDING端；
+com.amap.app：高德端；
+com.alibaba.ailabs.genie.webapps：天猫精灵端；
+com.alipay.iot.xpaas：支付宝IoT端。
+如需更多端投放，请联系业务BD。
 	 */
 	@ApiField("bundle_id")
 	private String bundleId;
@@ -32,7 +38,7 @@ public class AlipayOpenMiniPluginuseconfigUpgradeModel extends AlipayObject {
 	private String pluginId;
 
 	/**
-	 * 灰度策略值。枚举支持：p10、p30、p50。其中 p10 代表 10% 的用户，p30 代表 30% 的用户，p50 代表 50% 的用户。
+	 * 灰度策略值
 	 */
 	@ApiField("strategy_value")
 	private String strategyValue;

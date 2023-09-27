@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class JobAddress extends AlipayObject {
 
-	private static final long serialVersionUID = 5439514362455662178L;
+	private static final long serialVersionUID = 3691716678477228634L;
 
 	/**
 	 * 详细办公地址

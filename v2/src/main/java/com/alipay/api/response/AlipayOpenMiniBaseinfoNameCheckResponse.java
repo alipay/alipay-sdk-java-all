@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenMiniBaseinfoNameCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5126682793564573856L;
+	private static final long serialVersionUID = 8213945784955875737L;
 
 	/** 
 	 * 校验结果code
@@ -21,7 +21,7 @@ public class AlipayOpenMiniBaseinfoNameCheckResponse extends AlipayResponse {
 	private String checkCode;
 
 	/** 
-	 * 校验说明
+	 * 名称校验结果详细说明
 	 */
 	@ApiField("check_memo")
 	private String checkMemo;

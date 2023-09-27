@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniVersionBuildQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1546383964835598273L;
+	private static final long serialVersionUID = 8522123116148952193L;
 
 	/**
 	 * 小程序版本号
@@ -20,10 +20,13 @@ public class AlipayOpenMiniVersionBuildQueryModel extends AlipayObject {
 	private String appVersion;
 
 	/**
-	 * 小程序投放的端参数，默认为支付宝端。支持： 
-com.alipay.alipaywallet：支付宝端。
-com.alipay.iot.xpaas：IOT端。
-例如：投放到支付宝钱包为支付宝端需传入 com.alipay.alipaywallet。
+	 * 小程序客户端类型，默认为支付宝端。常见支持如下客户端：
+com.alipay.alipaywallet：支付宝端；
+com.alibaba.android.rimet：DINGDING端；
+com.amap.app：高德端；
+com.alibaba.ailabs.genie.webapps：天猫精灵端；
+com.alipay.iot.xpaas：支付宝IoT端。
+如需更多端投放，请联系业务BD。
 	 */
 	@ApiField("bundle_id")
 	private String bundleId;

@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序云营销商品数据回填结构
  *
  * @author auto create
- * @since 1.0, 2023-09-04 14:57:56
+ * @since 1.0, 2023-09-21 16:27:42
  */
 public class MpcItemVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8462162985299899153L;
+	private static final long serialVersionUID = 2526692827366952561L;
 
 	/**
 	 * 支付商品类目
 	 */
 	@ApiField("category_id")
 	private String categoryId;
+
+	/**
+	 * 1=官方插件版;0=自定义详情页版
+	 */
+	@ApiField("detail_page_model")
+	private String detailPageModel;
 
 	/**
 	 * 副图
@@ -60,6 +66,12 @@ public class MpcItemVO extends AlipayObject {
 	private String path;
 
 	/**
+	 * 价格
+	 */
+	@ApiField("price")
+	private String price;
+
+	/**
 	 * 商品标题
 	 */
 	@ApiField("title")
@@ -70,6 +82,13 @@ public class MpcItemVO extends AlipayObject {
 	}
 	public void setCategoryId(String categoryId) {
 		this.categoryId = categoryId;
+	}
+
+	public String getDetailPageModel() {
+		return this.detailPageModel;
+	}
+	public void setDetailPageModel(String detailPageModel) {
+		this.detailPageModel = detailPageModel;
 	}
 
 	public String getImgUrl() {
@@ -112,6 +131,13 @@ public class MpcItemVO extends AlipayObject {
 	}
 	public void setPath(String path) {
 		this.path = path;
+	}
+
+	public String getPrice() {
+		return this.price;
+	}
+	public void setPrice(String price) {
+		this.price = price;
 	}
 
 	public String getTitle() {

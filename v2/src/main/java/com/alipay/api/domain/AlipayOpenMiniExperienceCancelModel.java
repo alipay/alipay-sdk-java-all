@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniExperienceCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3743235595255847818L;
+	private static final long serialVersionUID = 4784973137633539973L;
 
 	/**
 	 * 小程序版本号
@@ -20,7 +20,13 @@ public class AlipayOpenMiniExperienceCancelModel extends AlipayObject {
 	private String appVersion;
 
 	/**
-	 * 小程序客户端类型，默认为支付宝端。支付宝端：com.alipay.alipaywallet,DINGDING端：com.alibaba.android.rimet,高德端:com.amap.app,天猫精灵端:com.alibaba.ailabs.genie.webapps,支付宝IOT:com.alipay.iot.xpaas
+	 * 小程序客户端类型，默认为支付宝端。常见支持如下客户端：
+com.alipay.alipaywallet：支付宝端；
+com.alibaba.android.rimet：DINGDING端；
+com.amap.app：高德端；
+com.alibaba.ailabs.genie.webapps：天猫精灵端；
+com.alipay.iot.xpaas：支付宝IoT端。
+如需更多端投放，请联系业务BD。
 	 */
 	@ApiField("bundle_id")
 	private String bundleId;

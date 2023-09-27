@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PosDiscountDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5314268664642812248L;
+	private static final long serialVersionUID = 2333848935759493793L;
 
 	/**
 	 * 活动id

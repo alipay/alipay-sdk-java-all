@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.agent.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-11 18:52:10
+ * @since 1.0, 2023-09-20 16:42:19
  */
 public class AlipayOpenAgentCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8439381244489714133L;
+	private static final long serialVersionUID = 8264641581838784416L;
 
 	/** 
 	 * 本次代商户操作的全局唯一事务编号，后续代商户创建小程序、代签约当面付等产品、提交事务等接口都需要传递该batch_no值，且要确认只有 init 状态的batch_no才能发起调用。

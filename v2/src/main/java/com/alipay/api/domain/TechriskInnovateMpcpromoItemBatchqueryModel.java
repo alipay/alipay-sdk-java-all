@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序云智能营销授权店铺商品查询
  *
  * @author auto create
- * @since 1.0, 2023-09-13 19:49:53
+ * @since 1.0, 2023-09-21 23:23:52
  */
 public class TechriskInnovateMpcpromoItemBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4758414188762536739L;
+	private static final long serialVersionUID = 8214574699473496526L;
 
 	/**
 	 * 被授权小程序的appId

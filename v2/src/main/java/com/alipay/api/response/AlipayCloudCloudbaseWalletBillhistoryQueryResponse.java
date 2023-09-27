@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.wallet.billhistory.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-31 12:06:43
+ * @since 1.0, 2023-09-27 14:56:44
  */
 public class AlipayCloudCloudbaseWalletBillhistoryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6331624879579891882L;
+	private static final long serialVersionUID = 4583542775647736412L;
 
 	/** 
 	 * 账单详情列表

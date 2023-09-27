@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * IDP解决方案查询商品基本信息
  *
  * @author auto create
- * @since 1.0, 2023-09-20 14:49:42
+ * @since 1.0, 2023-09-26 17:30:18
  */
 public class AlipayDataIotdataIdpsolutionProductinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2339464381446945373L;
+	private static final long serialVersionUID = 4347233361838373199L;
 
 	/**
-	 * 商品编码+商品查询
+	 * 商品编码
 	 */
 	@ApiField("bar_code")
 	private String barCode;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 设置券事件通知应用
  *
  * @author auto create
- * @since 1.0, 2023-07-03 15:46:49
+ * @since 1.0, 2023-09-26 11:30:19
  */
 public class AlipayMarketingActivityMessageBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5547257521693523483L;
+	private static final long serialVersionUID = 1485351412168334675L;
 
 	/**
 	 * 活动id

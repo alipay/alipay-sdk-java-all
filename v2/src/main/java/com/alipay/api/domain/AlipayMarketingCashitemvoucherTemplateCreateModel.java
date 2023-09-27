@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 有资金单品券创建
  *
  * @author auto create
- * @since 1.0, 2021-10-14 16:20:48
+ * @since 1.0, 2023-09-26 11:34:51
  */
 public class AlipayMarketingCashitemvoucherTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8647351119288716886L;
+	private static final long serialVersionUID = 3155657621628163363L;
 
 	/**
 	 * 代金券面额。 当voucher_type为有资金单品代金券（ITEM_BALANCE_FIX_VOUCHER）时必选。币种为人民币，单位为元。该数值不能小于0.1，且不能大于999元，代表订单金额达到使用门槛后，本券可抵扣相应面额资金。 代金券面额以门槛消费金额为基准，换算成折扣，不能低于9.95折。 当voucher_type为有资金单品折扣券（ITEM_BALANCE_DISCOUNT_VOUCHER）和有资金单品特价券（ITEM_BALANCE_SPE_VOUCHER）时此值必须为空。

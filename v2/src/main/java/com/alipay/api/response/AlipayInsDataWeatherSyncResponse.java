@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayInsDataWeatherSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2524697478358915555L;
+	private static final long serialVersionUID = 6796634824873578232L;
 
 	
 

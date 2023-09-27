@@ -64,10 +64,7 @@ public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadReque
 	private String appVersion;
 
 	/** 
-	* 审核类型：
-NONE： 不拆分准入、营销（默认）
-BASE_PROMOTE：准入、营销拆分审核
-建议设置成“BASE_PROMOTE”，小程序将会更容易上架。将小程序发布审核拆分成“准入”、“营销”。原先小程序需要两个环节都审核通过才能上架，现在小程序只需要准入通过即可上架，但是无法在营销场景（支付宝泛搜、支付宝首页推荐等）展现给用户，小程序可通过精搜或者扫码等方式使用。如果小程序需要进行营销，可发布新版本，当准入&营销都通过后，小程序也可被营销。点击查看支付宝小程序营销规范：https://opendocs.alipay.com/b/03al2q
+	* 审核类型，建议设置成“BASE_PROMOTE”，小程序将会更容易上架。将小程序发布审核拆分成“准入”、“营销”。原先小程序需要两个环节都审核通过才能上架，现在小程序只需要准入通过即可上架，但是无法在营销场景（支付宝泛搜、支付宝首页推荐等）展现给用户，小程序可通过精搜或者扫码等方式使用。如果小程序需要进行营销，可发布新版本，当准入&营销都通过后，小程序也可被营销。点击查看支付宝小程序营销规范：https://opendocs.alipay.com/b/03al2q
 	 */
 	private String auditRule;
 
@@ -258,7 +255,7 @@ com.alipay.iot.xpaas：支付宝IoT端。
 	private FileItem thirdSpecialLicensePic;
 
 	/** 
-	* 小程序版本描述，30-500个字符。
+	* 小程序版本描述，介绍此版本的主要变更和功能，5-500个字符。
 	 */
 	private String versionDesc;
 

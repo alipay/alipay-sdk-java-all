@@ -11,16 +11,17 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantQipanCrowdBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7629274554421277956L;
+	private static final long serialVersionUID = 1854819488422444111L;
 
 	/**
 	 * 人群名称
+最大长度为15个字符
 	 */
 	@ApiField("crowd_name")
 	private String crowdName;
 
 	/**
-	 * 页数，本参数为空或小于1默认显示第一页；
+	 * 页码，本参数为空或小于1默认显示第一页；
 	 */
 	@ApiField("page_number")
 	private String pageNumber;

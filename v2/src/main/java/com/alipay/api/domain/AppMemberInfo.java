@@ -11,16 +11,16 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AppMemberInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7821326158172119456L;
+	private static final long serialVersionUID = 6533145963554333686L;
 
 	/**
-	 * 邀请时间
+	 * 邀请时间，格式为yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("gmt_invite")
 	private String gmtInvite;
 
 	/**
-	 * 加入时间
+	 * 加入时间，格式为yyyy-MM-dd
 	 */
 	@ApiField("gmt_join")
 	private String gmtJoin;
@@ -56,7 +56,7 @@ public class AppMemberInfo extends AlipayObject {
 	private String role;
 
 	/**
-	 * 成员的状态，VALID-有效，UNCONFIRMED-未确认，TIMEOUT-已经失效，REFUSED-用户拒绝
+	 * 成员的状态
 	 */
 	@ApiField("status")
 	private String status;

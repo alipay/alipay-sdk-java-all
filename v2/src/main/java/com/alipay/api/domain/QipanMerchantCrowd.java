@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class QipanMerchantCrowd extends AlipayObject {
 
-	private static final long serialVersionUID = 5693551796827243768L;
+	private static final long serialVersionUID = 5879523566847258463L;
 
 	/**
 	 * 安全应用范围，参考文档 <a href="https://opendocs.alipay.com/pre-open/04phhq" target="_blank">安全应用范围枚举</a>
@@ -31,13 +31,14 @@ public class QipanMerchantCrowd extends AlipayObject {
 	private String crowdCode;
 
 	/**
-	 * 人群描述
+	 * 支付宝人群描述
 	 */
 	@ApiField("crowd_desc")
 	private String crowdDesc;
 
 	/**
 	 * 人群名称
+最大长度为15个字符
 	 */
 	@ApiField("crowd_name")
 	private String crowdName;
@@ -70,9 +71,7 @@ false - 人群不支持标签二次加工
 	private Boolean processable;
 
 	/**
-	 * INIT-初始化中
-EFFECTIVE-生效
-INEFFECTIVE-失效
+	 * 人群状态
 	 */
 	@ApiField("status")
 	private String status;

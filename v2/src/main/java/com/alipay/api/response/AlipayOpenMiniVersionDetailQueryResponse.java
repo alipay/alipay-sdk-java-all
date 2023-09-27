@@ -19,7 +19,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenMiniVersionDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7858849781596951211L;
+	private static final long serialVersionUID = 7828559559913591661L;
 
 	/** 
 	 * 小程序应用描述
@@ -58,9 +58,7 @@ public class AlipayOpenMiniVersionDetailQueryResponse extends AlipayResponse {
 	private String appVersion;
 
 	/** 
-	 * 准入审核结果：
-PASS：通过
-REJECT：驳回
+	 * 准入审核结果
 （提审时 audit_rule 传 BASE_PROMOTE 时有该字段）
 	 */
 	@ApiField("base_audit")
@@ -74,20 +72,23 @@ REJECT：驳回
 	private MiniAppAuditReason baseAuditRecord;
 
 	/** 
-	 * 是否可上架-true/false
+	 * 是否可上架
+true：可上架
+false：不可上架
+（version_status 为PROMOTE_AUDIT_REJECT有值）
 （提审时 audit_rule 传 BASE_PROMOTE 时有该字段）
 	 */
 	@ApiField("can_release")
 	private String canRelease;
 
 	/** 
-	 * 小程序版本提交审核的时间
+	 * 小程序版本提交审核的时间，格式为yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("gmt_apply_audit")
 	private String gmtApplyAudit;
 
 	/** 
-	 * 小程序版本审核结束时间
+	 * 小程序版本审核结束时间，格式为yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("gmt_audit_end")
 	private String gmtAuditEnd;

@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序云营销发奖风险识别
  *
  * @author auto create
- * @since 1.0, 2023-06-09 15:21:56
+ * @since 1.0, 2023-09-21 22:32:05
  */
 public class AlipayCloudTraasRiskgoAwardingQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2867764758597726361L;
+	private static final long serialVersionUID = 7573738651747187372L;
+
+	/**
+	 * 可填入活动id的唯一值，或其他活动信息
+	 */
+	@ApiField("activity_info")
+	private String activityInfo;
 
 	/**
 	 * 银行卡号，如无法提供，可填写为空值“null”字符串
@@ -38,9 +44,10 @@ public class AlipayCloudTraasRiskgoAwardingQueryModel extends AlipayObject {
 	private String customerId;
 
 	/**
-	 * app所在环境名称
+	 * app所在环境名称 当前字段已废弃(环境信息不再需要，故废弃)
 	 */
 	@ApiField("env_id")
+	@Deprecated
 	private String envId;
 
 	/**
@@ -56,9 +63,10 @@ public class AlipayCloudTraasRiskgoAwardingQueryModel extends AlipayObject {
 	private String imsi;
 
 	/**
-	 * 行业信息
+	 * 行业信息 当前字段已废弃(行业信息统一至business_code字段，不再保存该字段)
 	 */
 	@ApiField("industry")
+	@Deprecated
 	private String industry;
 
 	/**
@@ -110,6 +118,12 @@ public class AlipayCloudTraasRiskgoAwardingQueryModel extends AlipayObject {
 	private String opposingUserid;
 
 	/**
+	 * 填入想要咨询风控的二维码值，需为唯一值
+	 */
+	@ApiField("qr_code")
+	private String qrCode;
+
+	/**
 	 * 用户匹配服务类型, 请按照示例值填写
 	 */
 	@ApiField("risk_type")
@@ -140,6 +154,12 @@ public class AlipayCloudTraasRiskgoAwardingQueryModel extends AlipayObject {
 	private String service;
 
 	/**
+	 * 服务二级分类，按照文档介绍填写，如无可不填
+	 */
+	@ApiField("service_category")
+	private String serviceCategory;
+
+	/**
 	 * 门店行业类目
 	 */
 	@ApiField("store_mcc_desc")
@@ -156,6 +176,13 @@ public class AlipayCloudTraasRiskgoAwardingQueryModel extends AlipayObject {
 	 */
 	@ApiField("user_name")
 	private String userName;
+
+	public String getActivityInfo() {
+		return this.activityInfo;
+	}
+	public void setActivityInfo(String activityInfo) {
+		this.activityInfo = activityInfo;
+	}
 
 	public String getBankCardNo() {
 		return this.bankCardNo;
@@ -269,6 +296,13 @@ public class AlipayCloudTraasRiskgoAwardingQueryModel extends AlipayObject {
 		this.opposingUserid = opposingUserid;
 	}
 
+	public String getQrCode() {
+		return this.qrCode;
+	}
+	public void setQrCode(String qrCode) {
+		this.qrCode = qrCode;
+	}
+
 	public String getRiskType() {
 		return this.riskType;
 	}
@@ -302,6 +336,13 @@ public class AlipayCloudTraasRiskgoAwardingQueryModel extends AlipayObject {
 	}
 	public void setService(String service) {
 		this.service = service;
+	}
+
+	public String getServiceCategory() {
+		return this.serviceCategory;
+	}
+	public void setServiceCategory(String serviceCategory) {
+		this.serviceCategory = serviceCategory;
 	}
 
 	public String getStoreMccDesc() {

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车主ETC服务行程上送申请接口
  *
  * @author auto create
- * @since 1.0, 2022-12-29 15:39:37
+ * @since 1.0, 2023-09-21 14:51:49
  */
 public class AlipayCommerceTransportEtcSettlementApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8696867984321848389L;
+	private static final long serialVersionUID = 2774671235274116986L;
 
 	/**
 	 * ETC平台协议号

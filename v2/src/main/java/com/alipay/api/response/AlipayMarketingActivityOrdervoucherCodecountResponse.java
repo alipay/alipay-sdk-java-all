@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.ordervoucher.codecount response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-11 19:11:44
+ * @since 1.0, 2023-09-26 11:29:57
  */
 public class AlipayMarketingActivityOrdervoucherCodecountResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3861762212996153955L;
+	private static final long serialVersionUID = 4589186816582288933L;
 
 	/** 
 	 * 已经导入的券码数量

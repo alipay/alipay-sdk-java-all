@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingQipanCrowdwithtagCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7322825484324298543L;
+	private static final long serialVersionUID = 2561773728856694694L;
 
 	/**
 	 * 安全应用范围，参考文档 <a href="https://opendocs.alipay.com/pre-open/04phhq" target="_blank">安全应用范围枚举</a>
@@ -24,7 +24,7 @@ public class AlipayMarketingQipanCrowdwithtagCreateModel extends AlipayObject {
 	private List<String> applyChannelList;
 
 	/**
-	 * 棋盘商家人群描述
+	 * 支付宝人群描述
 	 */
 	@ApiField("crowd_desc")
 	private String crowdDesc;
@@ -36,7 +36,8 @@ public class AlipayMarketingQipanCrowdwithtagCreateModel extends AlipayObject {
 	private String crowdId;
 
 	/**
-	 * 商家棋盘人群名称
+	 * 人群名称
+最大长度为15个字符
 	 */
 	@ApiField("crowd_name")
 	private String crowdName;

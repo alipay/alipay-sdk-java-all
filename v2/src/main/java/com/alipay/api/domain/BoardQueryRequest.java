@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BoardQueryRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 1572374981356349349L;
+	private static final long serialVersionUID = 8359321538735486488L;
 
 	/**
 	 * 人群id，人群概览查询时必传
@@ -26,7 +26,7 @@ public class BoardQueryRequest extends AlipayObject {
 	private Boolean excludeImport;
 
 	/**
-	 * 数据日期，格式yyyyMMdd，比如"20221230"
+	 * 数据日期，格式yyyyMMdd
 	 */
 	@ApiField("report_date")
 	private String reportDate;

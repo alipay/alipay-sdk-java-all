@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序云营销抢购风险识别
  *
  * @author auto create
- * @since 1.0, 2023-06-09 15:22:21
+ * @since 1.0, 2023-09-21 22:24:19
  */
 public class AlipayCloudTraasRiskgoPurchaseQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5637265688337598272L;
+	private static final long serialVersionUID = 6519468766844265765L;
+
+	/**
+	 * 可填入活动id唯一值，或其他活动信息
+	 */
+	@ApiField("activity_info")
+	private String activityInfo;
 
 	/**
 	 * 银行卡号，如无法提供，可填写为空值（null）
@@ -38,15 +44,17 @@ public class AlipayCloudTraasRiskgoPurchaseQueryModel extends AlipayObject {
 	private String companyName;
 
 	/**
-	 * app所在环境
+	 * app所在环境 当前字段已废弃(app环境信息不再需要,故废弃)
 	 */
 	@ApiField("env_id")
+	@Deprecated
 	private String envId;
 
 	/**
-	 * 所属行业信息
+	 * 所属行业信息 当前字段已废弃(行业信息统一至business_code字段，不再保留该字段)
 	 */
 	@ApiField("industry")
+	@Deprecated
 	private String industry;
 
 	/**
@@ -126,6 +134,13 @@ public class AlipayCloudTraasRiskgoPurchaseQueryModel extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getActivityInfo() {
+		return this.activityInfo;
+	}
+	public void setActivityInfo(String activityInfo) {
+		this.activityInfo = activityInfo;
+	}
 
 	public String getBankCardNo() {
 		return this.bankCardNo;

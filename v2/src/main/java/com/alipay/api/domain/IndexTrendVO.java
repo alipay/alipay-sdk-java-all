@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IndexTrendVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5543845682378998123L;
+	private static final long serialVersionUID = 2616843664658527591L;
 
 	/**
 	 * 一个数据对应的结束日期（含边界），格式yyyymmdd
@@ -26,7 +26,7 @@ public class IndexTrendVO extends AlipayObject {
 	private String indexDesc;
 
 	/**
-	 * 指标key
+	 * 指标key，全局唯一，查询内容参考：<a href="https://opendocs.alipay.com/pre-open/04phhq#%E8%B6%8B%E5%8A%BF%E5%88%86%E6%9E%90%E4%B8%8D%E5%90%8Cindex_key%E6%9F%A5%E8%AF%A2" target="_blank">趋势分析不同index_key查询</a>
 	 */
 	@ApiField("index_key")
 	private String indexKey;
@@ -44,7 +44,7 @@ public class IndexTrendVO extends AlipayObject {
 	private String indexValue;
 
 	/**
-	 * 数据产出日期
+	 * 数据产出日期，格式为yyyyMMdd
 	 */
 	@ApiField("report_date")
 	private String reportDate;

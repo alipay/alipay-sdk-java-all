@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ReplyRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 7554593688636755952L;
+	private static final long serialVersionUID = 7282741855889928368L;
 
 	/**
 	 * 回复内容
@@ -44,11 +44,7 @@ public class ReplyRecord extends AlipayObject {
 	private String replierRole;
 
 	/**
-	 * 状态。只在replier_role = ‘AUDITOR’时有值。
-appealSuccess：申诉通过
-appealFailed：申诉不通过
-rectifyPass：整改通过
-rectifyReject：整改不通过
+	 * 状态。只在replier_role = ‘AUDITOR’时有值
 	 */
 	@ApiField("status")
 	private String status;

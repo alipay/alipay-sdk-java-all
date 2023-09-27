@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDigitalmgmtHrcampuscoreNiukeexamreportResultUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5875673854447391394L;
+	private static final long serialVersionUID = 5416233318466443288L;
 
 	/** 
 	 * 牛客笔试报告回调结果

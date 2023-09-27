@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudrun.staticsite.filelist.query request
  * 
  * @author auto create
- * @since 1.0, 2023-08-03 15:32:03
+ * @since 1.0, 2023-09-21 14:36:44
  */
 public class AlipayCloudCloudrunStaticsiteFilelistQueryRequest implements AlipayRequest<AlipayCloudCloudrunStaticsiteFilelistQueryResponse> {
 

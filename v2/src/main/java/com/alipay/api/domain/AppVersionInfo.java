@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AppVersionInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6233179736225269761L;
+	private static final long serialVersionUID = 5635431596477417468L;
 
 	/**
 	 * 版本号，一般为x.y.x格式，其中x、y、z都是数字
@@ -22,16 +22,20 @@ public class AppVersionInfo extends AlipayObject {
 	private String appVersion;
 
 	/**
-	 * 准入审核结果：
-PASS：通过
-REJECT：驳回
+	 * 准入审核结果
 （提审时 audit_rule 传 BASE_PROMOTE 时有该字段）
 	 */
 	@ApiField("base_audit")
 	private String baseAudit;
 
 	/**
-	 * 端信息，默认为支付宝端
+	 * 小程序客户端类型，默认为支付宝端。常见支持如下客户端：
+com.alipay.alipaywallet：支付宝端；
+com.alibaba.android.rimet：DINGDING端；
+com.amap.app：高德端；
+com.alibaba.ailabs.genie.webapps：天猫精灵端；
+com.alipay.iot.xpaas：支付宝IoT端。
+如需更多端投放，请联系业务BD。
 	 */
 	@ApiField("bundle_id")
 	private String bundleId;
@@ -62,13 +66,13 @@ REJECT：驳回
 	private String promoteAudit;
 
 	/**
-	 * 版本描述，介绍此版本的主要变更和功能
+	 * 小程序版本描述，介绍此版本的主要变更和功能，5-500个字符。
 	 */
 	@ApiField("version_description")
 	private String versionDescription;
 
 	/**
-	 * 版本状态，可选值为：INIT: 开发中, AUDITING: 审核中, AUDIT_REJECT: 审核驳回, WAIT_RELEASE: 待上架, GRAY: 灰度中, RELEASE: 已上架, OFFLINE: 已下架, AUDIT_OFFLINE: 被强制下架;
+	 * 版本状态
 	 */
 	@ApiField("version_status")
 	private String versionStatus;

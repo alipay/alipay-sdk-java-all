@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 前置营销优惠咨询
  *
  * @author auto create
- * @since 1.0, 2023-06-05 13:59:38
+ * @since 1.0, 2023-09-26 11:23:24
  */
 public class AlipayMarketingActivityDeductConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1328243694933512842L;
+	private static final long serialVersionUID = 3226419988724745368L;
 
 	/**
 	 * 券指定的核销appid（如果配券时指定了核销范围为线上小程序及相应的appid则此处必传）

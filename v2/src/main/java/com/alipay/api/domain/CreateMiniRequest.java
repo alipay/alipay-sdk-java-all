@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CreateMiniRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 1898968741792561612L;
+	private static final long serialVersionUID = 2296887499542124525L;
 
 	/**
 	 * 商家登录支付宝的邮箱帐号或手机号，当前仅支持企业支付宝帐号
@@ -26,7 +26,7 @@ public class CreateMiniRequest extends AlipayObject {
 	private String appName;
 
 	/**
-	 * 营业执照企业名称
+	 * 营业执照企业名称，如果是“无主体名称个体工商户”则填“个体户+法人姓名”，例如“个体户张三”
 	 */
 	@ApiField("cert_name")
 	private String certName;
@@ -69,7 +69,7 @@ true为支持
 	private String licensePic;
 
 	/**
-	 * 开发者外部订单号，通过开发者账号+outOrderNo做业务幂等
+	 * 开发者外部订单号，通过开发者账号+外部订单号做业务幂等
 	 */
 	@ApiField("out_order_no")
 	private String outOrderNo;

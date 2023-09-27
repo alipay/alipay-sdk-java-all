@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KeyWordInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5866394168127856311L;
+	private static final long serialVersionUID = 2455643949783249886L;
 
 	/**
 	 * 审核单号

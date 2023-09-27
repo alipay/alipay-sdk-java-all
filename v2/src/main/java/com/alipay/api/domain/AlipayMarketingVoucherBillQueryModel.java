@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户票使用记录查询接口
  *
  * @author auto create
- * @since 1.0, 2022-11-13 19:20:47
+ * @since 1.0, 2023-09-26 11:43:10
  */
 public class AlipayMarketingVoucherBillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4563934248972912395L;
+	private static final long serialVersionUID = 1561955339284657777L;
 
 	/**
 	 * 支付宝用户的openid

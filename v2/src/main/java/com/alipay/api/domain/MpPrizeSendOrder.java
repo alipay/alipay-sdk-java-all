@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 中奖流水
  *
  * @author auto create
- * @since 1.0, 2022-11-30 16:17:13
+ * @since 1.0, 2023-09-21 13:58:03
  */
 public class MpPrizeSendOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 6589515379534632915L;
+	private static final long serialVersionUID = 1491224232868179282L;
 
 	/**
 	 * 活动id

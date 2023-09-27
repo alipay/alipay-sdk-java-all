@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataMdaMiniappstaticQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2476527663828687766L;
+	private static final long serialVersionUID = 8434995695882614772L;
 
 	/** 
 	 * 住宿

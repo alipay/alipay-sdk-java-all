@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.auth.userauth.token.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 06:46:47
+ * @since 1.0, 2023-09-26 20:05:18
  */
 public class AlipayOpenAuthUserauthTokenCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6799588642557368941L;
+	private static final long serialVersionUID = 5271458458931452646L;
 
 	/** 
 	 * 授权开始时间

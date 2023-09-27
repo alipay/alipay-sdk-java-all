@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.certificate.order.refundconfirmcommit response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-13 21:38:19
+ * @since 1.0, 2023-09-26 13:50:18
  */
 public class AlipayMarketingCertificateOrderRefundconfirmcommitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8353443722128749165L;
+	private static final long serialVersionUID = 6172736724466969367L;
 
 	
 

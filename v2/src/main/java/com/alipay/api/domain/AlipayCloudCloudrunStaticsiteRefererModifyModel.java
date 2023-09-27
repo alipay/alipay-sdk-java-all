@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 配置防盗链
  *
  * @author auto create
- * @since 1.0, 2023-08-03 16:04:10
+ * @since 1.0, 2023-09-20 16:40:09
  */
 public class AlipayCloudCloudrunStaticsiteRefererModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3836334272627568269L;
+	private static final long serialVersionUID = 5654433467127798666L;
 
 	/**
 	 * 内部使用，uiam角色扮演token

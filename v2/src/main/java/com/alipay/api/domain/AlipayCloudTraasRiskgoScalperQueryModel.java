@@ -11,11 +11,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序云行业黄牛风险识别
  *
  * @author auto create
- * @since 1.0, 2023-08-23 15:16:16
+ * @since 1.0, 2023-09-21 22:24:51
  */
 public class AlipayCloudTraasRiskgoScalperQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8541966358566411958L;
+	private static final long serialVersionUID = 3418714894125744724L;
+
+	/**
+	 * 可填入活动id唯一值，或其他活动信息
+	 */
+	@ApiField("activity_info")
+	private String activityInfo;
 
 	/**
 	 * 设备唯一号码
@@ -260,6 +266,13 @@ public class AlipayCloudTraasRiskgoScalperQueryModel extends AlipayObject {
 	 */
 	@ApiField("user_name")
 	private String userName;
+
+	public String getActivityInfo() {
+		return this.activityInfo;
+	}
+	public void setActivityInfo(String activityInfo) {
+		this.activityInfo = activityInfo;
+	}
 
 	public String getApdid() {
 		return this.apdid;

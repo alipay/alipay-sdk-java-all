@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MiniInstantiateInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2431213673491516637L;
+	private static final long serialVersionUID = 4724939273151583857L;
 
 	/**
 	 * 小程序名称
@@ -26,7 +26,7 @@ public class MiniInstantiateInfo extends AlipayObject {
 	private String latestVersion;
 
 	/**
-	 * 版本状态，可选值为：INIT: 开发中, AUDITING: 审核中, AUDIT_REJECT: 审核驳回, WAIT_RELEASE: 待上架, BASE_AUDIT_PASS: 准入不可营销, GRAY: 灰度中, RELEASE: 已上架, OFFLINE: 已下架, AUDIT_OFFLINE: 被强制下架;
+	 * 版本状态
 	 */
 	@ApiField("latest_version_status")
 	private String latestVersionStatus;

@@ -7,11 +7,19 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询账单记录
  *
  * @author auto create
- * @since 1.0, 2023-08-31 12:04:00
+ * @since 1.0, 2023-09-27 14:54:14
  */
 public class AlipayCloudCloudbaseWalletBillhistoryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6492443431917892187L;
+	private static final long serialVersionUID = 5715718571139191989L;
+
+	/**
+	 * 消费类型
+ - PREPAY(预付费)
+ - OFFLINE(后付费)
+	 */
+	@ApiField("bill_type")
+	private String billType;
 
 	/**
 	 * 小程序id
@@ -48,6 +56,13 @@ public class AlipayCloudCloudbaseWalletBillhistoryQueryModel extends AlipayObjec
 	 */
 	@ApiField("start_date")
 	private String startDate;
+
+	public String getBillType() {
+		return this.billType;
+	}
+	public void setBillType(String billType) {
+		this.billType = billType;
+	}
 
 	public String getBizAppId() {
 		return this.bizAppId;

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.cashlessticket.template.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 22:23:44
+ * @since 1.0, 2023-09-26 11:40:17
  */
 public class AlipayMarketingCashlessticketTemplateModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4291639656395321168L;
+	private static final long serialVersionUID = 8656252422887215572L;
 
 	
 

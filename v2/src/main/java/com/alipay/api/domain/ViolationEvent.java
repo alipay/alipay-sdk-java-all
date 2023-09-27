@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ViolationEvent extends AlipayObject {
 
-	private static final long serialVersionUID = 7126513628482231359L;
+	private static final long serialVersionUID = 6729575653162238962L;
 
 	/**
 	 * 商家是否可以申诉
@@ -58,13 +58,13 @@ public class ViolationEvent extends AlipayObject {
 	private String targetType;
 
 	/**
-	 * 违规记录ID
+	 * 支付宝侧生成的违规记录唯一标识
 	 */
 	@ApiField("violation_record_id")
 	private String violationRecordId;
 
 	/**
-	 * 违规时间
+	 * 违规时间，格式为 yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("violation_time")
 	private String violationTime;

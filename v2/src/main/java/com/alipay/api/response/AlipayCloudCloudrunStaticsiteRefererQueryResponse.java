@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudrun.staticsite.referer.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-02 19:01:53
+ * @since 1.0, 2023-09-21 14:36:44
  */
 public class AlipayCloudCloudrunStaticsiteRefererQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3484942575218877676L;
+	private static final long serialVersionUID = 6224215855834877454L;
 
 	/** 
 	 * referer配置

@@ -11,10 +11,10 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySocialBaseContentlibStandardcontentBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6544172862879876596L;
+	private static final long serialVersionUID = 8237817435735584611L;
 
 	/**
-	 * 指示是否返回内容详情,  默认为false
+	 * 指示是否返回内容详情, 默认为false
 false: 仅返回内容ID列表
 true:返回 content_details
 	 */
@@ -41,10 +41,6 @@ true:返回 content_details
 
 	/**
 	 * 内容状态，默认查询所有状态
-0-审核中 
-1-发布成功 
-2-审核不通过 
-3-己删除
 	 */
 	@ApiField("status")
 	private String status;

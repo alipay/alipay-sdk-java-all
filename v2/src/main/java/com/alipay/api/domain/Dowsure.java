@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class Dowsure extends AlipayObject {
 
-	private static final long serialVersionUID = 3238863916296489254L;
+	private static final long serialVersionUID = 2622453643247118154L;
 
 	/**
 	 * 豆沙包卖家申请单编号

@@ -7,11 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询商品推荐的个性化结果
  *
  * @author auto create
- * @since 1.0, 2023-09-20 00:10:15
+ * @since 1.0, 2023-09-26 12:09:48
  */
 public class TechriskInnovateMpcpromoItemQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6167644264425562433L;
+	private static final long serialVersionUID = 5137457471386845927L;
+
+	/**
+	 * 页码
+	 */
+	@ApiField("page_no")
+	private Long pageNo;
+
+	/**
+	 * 分页展示时，每页展示的数量
+	 */
+	@ApiField("page_size")
+	private Long pageSize;
 
 	/**
 	 * 当前appid下的推荐场景id
@@ -24,6 +36,20 @@ public class TechriskInnovateMpcpromoItemQueryModel extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public Long getPageNo() {
+		return this.pageNo;
+	}
+	public void setPageNo(Long pageNo) {
+		this.pageNo = pageNo;
+	}
+
+	public Long getPageSize() {
+		return this.pageSize;
+	}
+	public void setPageSize(Long pageSize) {
+		this.pageSize = pageSize;
+	}
 
 	public String getSceneId() {
 		return this.sceneId;

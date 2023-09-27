@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CardExtendParamsDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6289459734796685743L;
+	private static final long serialVersionUID = 5113899284761941144L;
 
 	/**
 	 * 是否需要开通钱包

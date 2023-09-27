@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudrun.objectstorage.iplimit.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-03 16:11:59
+ * @since 1.0, 2023-09-21 11:26:43
  */
 public class AlipayCloudCloudrunObjectstorageIplimitModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7259773674676737653L;
+	private static final long serialVersionUID = 8244676538331412453L;
 
 	/** 
 	 * IP黑白名单配置

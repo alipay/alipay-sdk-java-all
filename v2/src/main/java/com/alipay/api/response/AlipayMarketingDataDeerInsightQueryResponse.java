@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingDataDeerInsightQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1839339693119638679L;
+	private static final long serialVersionUID = 7562585173427947331L;
 
 	/** 
 	 * 凤蝶洞察信息

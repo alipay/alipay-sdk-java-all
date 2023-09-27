@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudrun.staticsite.referer.query request
  * 
  * @author auto create
- * @since 1.0, 2023-08-02 19:01:53
+ * @since 1.0, 2023-09-21 14:36:44
  */
 public class AlipayCloudCloudrunStaticsiteRefererQueryRequest implements AlipayRequest<AlipayCloudCloudrunStaticsiteRefererQueryResponse> {
 

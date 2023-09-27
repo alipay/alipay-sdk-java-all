@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DatadigitalFincloudFinsaasBcmPageparamQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8432168467751176663L;
+	private static final long serialVersionUID = 5791775397139149629L;
 
 	/**
 	 * 城市名称

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PortraitDataVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7664688355963135363L;
+	private static final long serialVersionUID = 1766651328563742724L;
 
 	/**
 	 * 覆盖率，画像值中去除未知和其他后的总量占当前画像总量的比例
@@ -48,7 +48,7 @@ public class PortraitDataVO extends AlipayObject {
 	private String portraitName;
 
 	/**
-	 * 数据日期
+	 * 数据日期，格式为yyyyMMdd
 	 */
 	@ApiField("report_date")
 	private String reportDate;

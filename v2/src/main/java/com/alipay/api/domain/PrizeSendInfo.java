@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 任务发奖流水详情
  *
  * @author auto create
- * @since 1.0, 2022-07-05 10:20:05
+ * @since 1.0, 2023-09-21 14:00:20
  */
 public class PrizeSendInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8135354414477421643L;
+	private static final long serialVersionUID = 2551225853759323761L;
 
 	/**
 	 * 创建时间

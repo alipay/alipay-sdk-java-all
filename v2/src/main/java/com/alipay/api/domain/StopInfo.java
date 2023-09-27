@@ -7,17 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 航班经停信息
  *
  * @author auto create
- * @since 1.0, 2023-09-07 12:42:30
+ * @since 1.0, 2023-09-21 09:50:17
  */
 public class StopInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3453382552186455186L;
-
-	/**
-	 * 经停时长，单位：s
-	 */
-	@ApiField("shop_time")
-	private Long shopTime;
+	private static final long serialVersionUID = 8265881648928396358L;
 
 	/**
 	 * 经停机场三字码
@@ -43,12 +37,11 @@ public class StopInfo extends AlipayObject {
 	@ApiField("stop_city_name")
 	private String stopCityName;
 
-	public Long getShopTime() {
-		return this.shopTime;
-	}
-	public void setShopTime(Long shopTime) {
-		this.shopTime = shopTime;
-	}
+	/**
+	 * 经停时长，单位：s
+	 */
+	@ApiField("stop_time")
+	private Long stopTime;
 
 	public String getStopAirport() {
 		return this.stopAirport;
@@ -76,6 +69,13 @@ public class StopInfo extends AlipayObject {
 	}
 	public void setStopCityName(String stopCityName) {
 		this.stopCityName = stopCityName;
+	}
+
+	public Long getStopTime() {
+		return this.stopTime;
+	}
+	public void setStopTime(Long stopTime) {
+		this.stopTime = stopTime;
 	}
 
 }

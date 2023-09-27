@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 快递信息
  *
  * @author auto create
- * @since 1.0, 2023-09-12 15:20:30
+ * @since 1.0, 2023-09-26 19:22:15
  */
 public class DeliveryInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2757864135557283213L;
+	private static final long serialVersionUID = 2131879834886973937L;
 
 	/**
 	 * 快递公司ID,物流公司ID列表请查看

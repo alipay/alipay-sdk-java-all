@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.info.share response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-16 09:55:51
+ * @since 1.0, 2023-09-26 17:31:46
  */
 public class AlipayMerchantInfoShareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8367225166271545798L;
+	private static final long serialVersionUID = 4145922164467314422L;
 
 	/** 
 	 * 证件地址-具体地址
@@ -37,6 +37,12 @@ public class AlipayMerchantInfoShareResponse extends AlipayResponse {
 	 */
 	@ApiField("cert_no")
 	private String certNo;
+
+	/** 
+	 * 表示证件照片是否存在，目前只针对partner_type为个人【PRIVATE】生效
+	 */
+	@ApiField("cert_pic_exist")
+	private String certPicExist;
 
 	/** 
 	 * 企业主体证件类型，取值: BUSINESS_LICENSE: 营业执照 INST_RGST_CTF: 事业单位登记证书 COMM_RGST_CTF: 社会团体登记证书 NGO_CTF: 民办非企业单位证书 APRV_FILE: 党政机关批准设计文件 ORG_CERT: 全国组织机构代码证书
@@ -124,6 +130,13 @@ public class AlipayMerchantInfoShareResponse extends AlipayResponse {
 	}
 	public String getCertNo( ) {
 		return this.certNo;
+	}
+
+	public void setCertPicExist(String certPicExist) {
+		this.certPicExist = certPicExist;
+	}
+	public String getCertPicExist( ) {
+		return this.certPicExist;
 	}
 
 	public void setCertType(String certType) {

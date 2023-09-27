@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建文件夹
  *
  * @author auto create
- * @since 1.0, 2023-08-02 14:15:56
+ * @since 1.0, 2023-09-20 16:54:23
  */
 public class AlipayCloudCloudrunObjectstorageDirectoryCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8223126388172366787L;
+	private static final long serialVersionUID = 1742243475635316979L;
 
 	/**
 	 * 定义文件的访问权限。
@@ -26,7 +26,7 @@ public class AlipayCloudCloudrunObjectstorageDirectoryCreateModel extends Alipay
 	private String assumeToken;
 
 	/**
-	 * 环境ID
+	 * 环境ID，唯一，开通小程序云系统会生成环境ID，请从开通页面获取
 	 */
 	@ApiField("env")
 	private String env;

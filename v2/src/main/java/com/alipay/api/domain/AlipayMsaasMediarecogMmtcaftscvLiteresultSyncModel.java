@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * lite货柜人工识别结果
  *
  * @author auto create
- * @since 1.0, 2022-10-19 09:59:17
+ * @since 1.0, 2023-09-27 16:41:02
  */
 public class AlipayMsaasMediarecogMmtcaftscvLiteresultSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7159272413648523224L;
+	private static final long serialVersionUID = 6699684866532254695L;
 
 	/**
 	 * 人工识别结果

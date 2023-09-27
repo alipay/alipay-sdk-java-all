@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.employee.invite.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-11 16:36:44
+ * @since 1.0, 2023-09-21 13:26:43
  */
 public class AlipayCommerceEcEmployeeInviteQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3568994481571135257L;
+	private static final long serialVersionUID = 2713751754695713734L;
 
 	/** 
 	 * 企业id
@@ -25,6 +25,12 @@ public class AlipayCommerceEcEmployeeInviteQueryResponse extends AlipayResponse 
 	 */
 	@ApiField("mini_app_sign_url")
 	private String miniAppSignUrl;
+
+	/** 
+	 * 签约吱口令
+	 */
+	@ApiField("share_code")
+	private String shareCode;
 
 	/** 
 	 * 邀请链接
@@ -44,6 +50,13 @@ public class AlipayCommerceEcEmployeeInviteQueryResponse extends AlipayResponse 
 	}
 	public String getMiniAppSignUrl( ) {
 		return this.miniAppSignUrl;
+	}
+
+	public void setShareCode(String shareCode) {
+		this.shareCode = shareCode;
+	}
+	public String getShareCode( ) {
+		return this.shareCode;
 	}
 
 	public void setSignUrl(String signUrl) {

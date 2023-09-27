@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KbdishTimeRangeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8859681428381334225L;
+	private static final long serialVersionUID = 6688859875856948666L;
 
 	/**
 	 * 结束时间点

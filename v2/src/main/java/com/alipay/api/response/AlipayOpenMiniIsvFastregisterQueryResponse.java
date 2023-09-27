@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenMiniIsvFastregisterQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4139827595361666779L;
+	private static final long serialVersionUID = 5552647363311412818L;
 
 	/** 
 	 * 小程序应用名
@@ -21,7 +21,7 @@ public class AlipayOpenMiniIsvFastregisterQueryResponse extends AlipayResponse {
 	private String appName;
 
 	/** 
-	 * appid
+	 * 服务商appid
 	 */
 	@ApiField("isv_app_id")
 	private String isvAppId;

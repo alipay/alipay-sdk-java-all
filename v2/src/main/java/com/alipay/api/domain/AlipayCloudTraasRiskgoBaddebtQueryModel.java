@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序云行业坏账风险识别
  *
  * @author auto create
- * @since 1.0, 2023-06-09 15:20:03
+ * @since 1.0, 2023-09-21 22:24:16
  */
 public class AlipayCloudTraasRiskgoBaddebtQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3744391767668871127L;
+	private static final long serialVersionUID = 7829547355972379772L;
+
+	/**
+	 * 可填入活动id唯一值，或其他活动信息
+	 */
+	@ApiField("activity_info")
+	private String activityInfo;
 
 	/**
 	 * 终端唯一标识
@@ -32,15 +38,17 @@ public class AlipayCloudTraasRiskgoBaddebtQueryModel extends AlipayObject {
 	private String certNo;
 
 	/**
-	 * app所在环境id
+	 * app所在环境id 当前字段已废弃(环境信息不再需要，故废弃)
 	 */
 	@ApiField("env_id")
+	@Deprecated
 	private String envId;
 
 	/**
-	 * 所属行业信息
+	 * 所属行业信息 当前字段已废弃(行业信息统一至business_code 字段，不再保留该字段)
 	 */
 	@ApiField("industry")
+	@Deprecated
 	private String industry;
 
 	/**
@@ -92,7 +100,7 @@ public class AlipayCloudTraasRiskgoBaddebtQueryModel extends AlipayObject {
 	private String role;
 
 	/**
-	 * 风险咨询对应的自身业务场景/环节
+	 * 风险咨询对应的自身业务场景或事咨询环节，如有疑问可沟通
 	 */
 	@ApiField("scene")
 	private String scene;
@@ -102,6 +110,12 @@ public class AlipayCloudTraasRiskgoBaddebtQueryModel extends AlipayObject {
 	 */
 	@ApiField("service")
 	private String service;
+
+	/**
+	 * 服务二级分类，按照文档介绍填写，如无可不填
+	 */
+	@ApiField("service_category")
+	private String serviceCategory;
 
 	/**
 	 * 用户购买或使用服务时产生的具体金额。如参数无法提供，请填写“null”；单位:元
@@ -126,6 +140,13 @@ public class AlipayCloudTraasRiskgoBaddebtQueryModel extends AlipayObject {
 	 */
 	@ApiField("user_name")
 	private String userName;
+
+	public String getActivityInfo() {
+		return this.activityInfo;
+	}
+	public void setActivityInfo(String activityInfo) {
+		this.activityInfo = activityInfo;
+	}
 
 	public String getApdid() {
 		return this.apdid;
@@ -230,6 +251,13 @@ public class AlipayCloudTraasRiskgoBaddebtQueryModel extends AlipayObject {
 	}
 	public void setService(String service) {
 		this.service = service;
+	}
+
+	public String getServiceCategory() {
+		return this.serviceCategory;
+	}
+	public void setServiceCategory(String serviceCategory) {
+		this.serviceCategory = serviceCategory;
 	}
 
 	public String getTotalAmount() {

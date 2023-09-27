@@ -9,14 +9,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.traas.riskgo.scalper.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 00:46:44
+ * @since 1.0, 2023-09-21 22:31:45
  */
 public class AlipayCloudTraasRiskgoScalperQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5618614668291953316L;
+	private static final long serialVersionUID = 3273132192847439785L;
 
 	/** 
-	 * risk_result:风险分析结果，类型为列表，包含风险分析结果和描述。分别是 risk_type:industry_scalper_common; risk_value:("noRisk","rank1",...,"rank5",...,); risk_desc:是否有风险/风险等级; rank1到rank5风险等级从低到高。以上仅为示例具体等级分类可能存在个性化配置，可以咨询蚂蚁风控同学。
+	 * risk_result:风险分析结果，类型为列表，包含风险分析结果和描述。分别是 risk_type:[固定值]; risk_value:仅为样例("rank0","rank1",...,"rank5",...); risk_desc:[风险等级]; 每一次返回，根据配置的不同，可以返回同样的风险结果类型，也可以返回不同的风险结果类型。其中rank0代表无匹配的风险结果/查询无结果， 其余等级随着数字增大代表风险越大。 不同场景对应的等级个数不相同，可查看介绍文档
 	 */
 	@ApiField("risk_result")
 	private RiskImagePlusQueryResult riskResult;

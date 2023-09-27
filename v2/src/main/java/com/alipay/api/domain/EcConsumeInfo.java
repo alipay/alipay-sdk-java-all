@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业码账单开放模型
  *
  * @author auto create
- * @since 1.0, 2023-09-11 17:29:34
+ * @since 1.0, 2023-09-21 10:01:06
  */
 public class EcConsumeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2558763346584834591L;
+	private static final long serialVersionUID = 3325142233641338453L;
 
 	/**
 	 * 共同账户ID
@@ -121,8 +121,7 @@ public class EcConsumeInfo extends AlipayObject {
 	private String expenseTypeSubCategory;
 
 	/**
-	 * 账单扩展信息，Json格式
-汇总信息
+	 * 账单扩展信息，JsonMap格式, key值枚举 [{"value": "SUMMARY_INFO","name": "账单汇总信息"},{"value": "MERCHANT_EXTEND_INFO","name": "商户扩展信息"}, {"value": "TERMINAL_INFO","name": "终端设备信息"},{"value": "BENEFIT_INFO","name": "优惠扩展信息"}, {"value": "CONSUMPTION_LOCATION","name": "消费上报位置"},{"value": "THIRD_PARTY_PAYMENT_INFO","name": "代收款详情"}]
 	 */
 	@ApiField("ext_infos")
 	private String extInfos;

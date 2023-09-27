@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.iotdata.idpsolution.productinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-20 14:51:44
+ * @since 1.0, 2023-09-26 17:31:46
  */
 public class AlipayDataIotdataIdpsolutionProductinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4254652374332623167L;
+	private static final long serialVersionUID = 7878541934237969797L;
 
 	/** 
 	 * 商品品牌名称

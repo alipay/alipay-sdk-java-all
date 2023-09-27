@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单数据同步接口
  *
  * @author auto create
- * @since 1.0, 2023-09-11 15:50:04
+ * @since 1.0, 2023-09-21 20:21:18
  */
 public class AlipayMerchantOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6285364995498476811L;
+	private static final long serialVersionUID = 2582798992827948628L;
 
 	/**
 	 * 订单金额
@@ -61,7 +61,7 @@ public class AlipayMerchantOrderSyncModel extends AlipayObject {
 	private List<DiscountInfoData> discountInfoList;
 
 	/**
-	 * 扩展信息，请参见 <a href="https://opendocs.alipay.com/mini/introduce/ordercenter">小程序订单中心</a>；<a href="https://opendocs.alipay.com/mini/00nnt3">扫码点餐</a>产品文档。
+	 * 扩展信息，请参见 <a href="https://opendocs.alipay.com/mini/introduce/ordercenter">小程序订单中心</a>
 	 */
 	@ApiListField("ext_info")
 	@ApiField("order_ext_info")

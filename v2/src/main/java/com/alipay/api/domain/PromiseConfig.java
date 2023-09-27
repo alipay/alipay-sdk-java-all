@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用服务守护配置
  *
  * @author auto create
- * @since 1.0, 2019-11-15 09:40:23
+ * @since 1.0, 2023-09-26 10:52:22
  */
 public class PromiseConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 5116471569823492199L;
+	private static final long serialVersionUID = 1183547962185839413L;
 
 	/**
 	 * 提醒用户完成行为的守约方式，可取值：promise_link(跳转到去守约页面完成守约)；promise_remind(文字提醒守约)。

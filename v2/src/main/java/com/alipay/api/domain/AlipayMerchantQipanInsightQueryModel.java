@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMerchantQipanInsightQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1587635738334533353L;
+	private static final long serialVersionUID = 8734639394775348118L;
 
 	/**
 	 * 人群id，按人群分析时必传
@@ -36,7 +36,7 @@ public class AlipayMerchantQipanInsightQueryModel extends AlipayObject {
 	private String relationType;
 
 	/**
-	 * 数据日期，格式yyyyMMdd，比如"20221230"
+	 * 数据日期，格式为yyyyMMdd
 	 */
 	@ApiField("report_date")
 	private String reportDate;
