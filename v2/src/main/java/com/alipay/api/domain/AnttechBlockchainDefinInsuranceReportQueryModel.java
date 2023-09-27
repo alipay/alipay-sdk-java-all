@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechBlockchainDefinInsuranceReportQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2114745457512488183L;
+	private static final long serialVersionUID = 4446986758382358814L;
 
 	/**
 	 * 统一客户平台的业务线编码

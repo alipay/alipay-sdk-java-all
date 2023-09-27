@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TuitionRefundRoyaltyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2221723243795211539L;
+	private static final long serialVersionUID = 7686232529161486181L;
 
 	/**
 	 * 退分账金额，单位元

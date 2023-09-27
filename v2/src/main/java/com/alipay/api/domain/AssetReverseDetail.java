@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AssetReverseDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3363679687144271383L;
+	private static final long serialVersionUID = 5488516372168441199L;
 
 	/**
 	 * 退货数量

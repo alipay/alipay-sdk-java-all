@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GoodsSalesVolume extends AlipayObject {
 
-	private static final long serialVersionUID = 1479315536183462515L;
+	private static final long serialVersionUID = 1658676348818135118L;
 
 	/**
 	 * 商品销量周期。使用枚举值

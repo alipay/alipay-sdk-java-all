@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class OneStopCheckTaskDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5221934441747589552L;
+	private static final long serialVersionUID = 6365664219522877734L;
 
 	/**
 	 * 应用信息

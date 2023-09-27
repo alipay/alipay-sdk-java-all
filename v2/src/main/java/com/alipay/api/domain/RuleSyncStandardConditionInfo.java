@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RuleSyncStandardConditionInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7248721713229857473L;
+	private static final long serialVersionUID = 6537732112659833299L;
 
 	/**
 	 * 规则因子

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PremiumPaymentDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1744597114971967786L;
+	private static final long serialVersionUID = 5278351914599786719L;
 
 	/**
 	 * 收款账号名

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechBlockchainDefinDataserviceWeatherinfosQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8783324853617973187L;
+	private static final long serialVersionUID = 3482758522584411362L;
 
 	/**
 	 * 纬度

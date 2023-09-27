@@ -8,17 +8,43 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.aittest.openapi.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-27 18:26:45
+ * @since 1.0, 2023-09-27 21:11:44
  */
 public class AlipayOpenAittestOpenapiQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7895322648689254415L;
+	private static final long serialVersionUID = 6545983935312773121L;
+
+	/** 
+	 * 测试 demo 响应内容
+	 */
+	@ApiField("demo_content")
+	private String demoContent;
+
+	/** 
+	 * 调用 demo 接口响应
+	 */
+	@ApiField("demo_msg")
+	private String demoMsg;
 
 	/** 
 	 * ID
 	 */
 	@ApiField("id")
 	private String id;
+
+	public void setDemoContent(String demoContent) {
+		this.demoContent = demoContent;
+	}
+	public String getDemoContent( ) {
+		return this.demoContent;
+	}
+
+	public void setDemoMsg(String demoMsg) {
+		this.demoMsg = demoMsg;
+	}
+	public String getDemoMsg( ) {
+		return this.demoMsg;
+	}
 
 	public void setId(String id) {
 		this.id = id;

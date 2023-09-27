@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMerchantQipanInsightcityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2378442757429334691L;
+	private static final long serialVersionUID = 8383335462231589283L;
 
 	/** 
 	 * 画像值中去除未知和其他后的总量占当前画像总量的比例

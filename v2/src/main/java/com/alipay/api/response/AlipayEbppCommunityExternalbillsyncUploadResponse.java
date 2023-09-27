@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppCommunityExternalbillsyncUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1131426394531281197L;
+	private static final long serialVersionUID = 7381458688898746183L;
 
 	/** 
 	 * 失败总数
