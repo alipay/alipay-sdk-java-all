@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 灵工保领域事件
  *
  * @author auto create
- * @since 1.0, 2023-09-26 11:15:37
+ * @since 1.0, 2023-10-10 12:02:47
  */
 public class EmployeeInsureDomainEvent extends AlipayObject {
 
-	private static final long serialVersionUID = 7586135293119511288L;
+	private static final long serialVersionUID = 8577229182684193815L;
 
 	/**
 	 * 投保雇员主体信息

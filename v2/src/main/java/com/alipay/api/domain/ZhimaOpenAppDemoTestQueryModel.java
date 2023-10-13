@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 测试文档预览
  *
  * @author auto create
- * @since 1.0, 2023-09-26 15:08:01
+ * @since 1.0, 2023-10-06 23:06:24
  */
 public class ZhimaOpenAppDemoTestQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7646455775448119755L;
+	private static final long serialVersionUID = 2885577555898336454L;
 
 	/**
 	 * copy_complex

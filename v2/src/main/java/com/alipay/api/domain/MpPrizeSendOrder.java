@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 中奖流水
  *
  * @author auto create
- * @since 1.0, 2023-09-21 13:58:03
+ * @since 1.0, 2023-10-09 15:47:19
  */
 public class MpPrizeSendOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 7741167525789968224L;
+	private static final long serialVersionUID = 2254148855484941194L;
 
 	/**
 	 * 活动id
@@ -42,6 +42,12 @@ public class MpPrizeSendOrder extends AlipayObject {
 	 */
 	@ApiField("out_prize_id")
 	private String outPrizeId;
+
+	/**
+	 * 奖品对客信息
+	 */
+	@ApiField("prize_custom_display_info")
+	private PrizeCustomDisplayInfo prizeCustomDisplayInfo;
 
 	/**
 	 * 奖品唯一标识
@@ -112,6 +118,13 @@ public class MpPrizeSendOrder extends AlipayObject {
 	}
 	public void setOutPrizeId(String outPrizeId) {
 		this.outPrizeId = outPrizeId;
+	}
+
+	public PrizeCustomDisplayInfo getPrizeCustomDisplayInfo() {
+		return this.prizeCustomDisplayInfo;
+	}
+	public void setPrizeCustomDisplayInfo(PrizeCustomDisplayInfo prizeCustomDisplayInfo) {
+		this.prizeCustomDisplayInfo = prizeCustomDisplayInfo;
 	}
 
 	public String getPrizeFlag() {

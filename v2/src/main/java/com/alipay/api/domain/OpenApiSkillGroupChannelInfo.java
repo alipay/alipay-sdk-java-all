@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 技能组渠道信息
  *
  * @author auto create
- * @since 1.0, 2023-07-10 10:05:48
+ * @since 1.0, 2023-09-28 09:33:14
  */
 public class OpenApiSkillGroupChannelInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6223275691198364964L;
+	private static final long serialVersionUID = 4361397142962839913L;
 
 	/**
 	 * Cc管理员的id

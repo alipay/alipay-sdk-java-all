@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class StoreQuotation extends AlipayObject {
 
-	private static final long serialVersionUID = 1829461291741393946L;
+	private static final long serialVersionUID = 5529387613174689769L;
 
 	/**
 	 * 评论数（取用户对商户评论数的总和）	N

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户参赛上报跑步数据信息
  *
  * @author auto create
- * @since 1.0, 2022-12-20 10:08:05
+ * @since 1.0, 2023-10-11 21:24:56
  */
 public class UserOnlineGameDataInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4564773758254883176L;
+	private static final long serialVersionUID = 7388115354489238932L;
 
 	/**
 	 * 运动结束时间

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 通行证账号
  *
  * @author auto create
- * @since 1.0, 2023-08-14 17:21:58
+ * @since 1.0, 2023-10-08 11:04:47
  */
 public class PassAccountDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6229542141795361438L;
+	private static final long serialVersionUID = 8129929234862919695L;
 
 	/**
 	 * 账号名称

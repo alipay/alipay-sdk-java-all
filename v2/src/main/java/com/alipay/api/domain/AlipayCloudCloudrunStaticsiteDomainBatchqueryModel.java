@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询域名列表
  *
  * @author auto create
- * @since 1.0, 2023-09-19 10:20:49
+ * @since 1.0, 2023-10-12 17:16:17
  */
 public class AlipayCloudCloudrunStaticsiteDomainBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3267429454254492373L;
+	private static final long serialVersionUID = 1853497146427897824L;
 
 	/**
 	 * 内部使用，uiam角色扮演token

@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.quotation.nimitz.dim.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 00:36:46
+ * @since 1.0, 2023-10-09 11:41:46
  */
 public class AntfortuneQuotationNimitzDimQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6731731538653144679L;
+	private static final long serialVersionUID = 6885823414597299234L;
 
 	/** 
 	 * Nimitz 维度查询返回值，json形式

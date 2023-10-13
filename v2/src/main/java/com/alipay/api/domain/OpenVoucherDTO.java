@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenVoucherDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2726665796344353338L;
+	private static final long serialVersionUID = 7423852641585849875L;
 
 	/**
 	 * 可用金额，单位元

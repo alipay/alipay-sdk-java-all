@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.sports.lesson.userlessonrecord.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 03:51:46
+ * @since 1.0, 2023-10-11 21:26:45
  */
 public class AlipayCommerceSportsLessonUserlessonrecordSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8633418264488485956L;
+	private static final long serialVersionUID = 5526342658492456179L;
 
 	/** 
 	 * 运动币数量

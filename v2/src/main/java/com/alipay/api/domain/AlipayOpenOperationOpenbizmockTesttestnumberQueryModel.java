@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 测试number类型
  *
  * @author auto create
- * @since 1.0, 2023-05-31 15:26:41
+ * @since 1.0, 2023-10-06 23:38:02
  */
 public class AlipayOpenOperationOpenbizmockTesttestnumberQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4262411659556844267L;
+	private static final long serialVersionUID = 7215918378892521192L;
 
 	/**
 	 * 1
@@ -28,8 +28,26 @@ public class AlipayOpenOperationOpenbizmockTesttestnumberQueryModel extends Alip
 	/**
 	 * 1
 	 */
+	@ApiField("c")
+	private String c;
+
+	/**
+	 * 1
+	 */
 	@ApiField("keykey")
 	private Long keykey;
+
+	/**
+	 * test
+	 */
+	@ApiField("test_1")
+	private String test1;
+
+	/**
+	 * tst
+	 */
+	@ApiField("test_2")
+	private String test2;
 
 	public Long getA() {
 		return this.a;
@@ -45,11 +63,32 @@ public class AlipayOpenOperationOpenbizmockTesttestnumberQueryModel extends Alip
 		this.b = b;
 	}
 
+	public String getC() {
+		return this.c;
+	}
+	public void setC(String c) {
+		this.c = c;
+	}
+
 	public Long getKeykey() {
 		return this.keykey;
 	}
 	public void setKeykey(Long keykey) {
 		this.keykey = keykey;
+	}
+
+	public String getTest1() {
+		return this.test1;
+	}
+	public void setTest1(String test1) {
+		this.test1 = test1;
+	}
+
+	public String getTest2() {
+		return this.test2;
+	}
+	public void setTest2(String test2) {
+		this.test2 = test2;
 	}
 
 }

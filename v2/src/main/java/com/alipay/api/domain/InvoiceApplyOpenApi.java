@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开票受理单据
  *
  * @author auto create
- * @since 1.0, 2023-09-13 10:42:34
+ * @since 1.0, 2023-10-12 20:48:08
  */
 public class InvoiceApplyOpenApi extends AlipayObject {
 
-	private static final long serialVersionUID = 2672411834779542318L;
+	private static final long serialVersionUID = 1154292385574377312L;
 
 	/**
 	 * 金额
@@ -56,6 +56,30 @@ public class InvoiceApplyOpenApi extends AlipayObject {
 	private String invoiceDate;
 
 	/**
+	 * 单位
+	 */
+	@ApiField("invoice_line_measurement_unit")
+	private String invoiceLineMeasurementUnit;
+
+	/**
+	 * 数量
+	 */
+	@ApiField("invoice_line_quantity")
+	private String invoiceLineQuantity;
+
+	/**
+	 * 单价
+	 */
+	@ApiField("invoice_line_unit_amount")
+	private String invoiceLineUnitAmount;
+
+	/**
+	 * 发票备注
+	 */
+	@ApiField("invoice_note")
+	private String invoiceNote;
+
+	/**
 	 * 货物名称
 	 */
 	@ApiField("invoice_product_name")
@@ -72,6 +96,12 @@ public class InvoiceApplyOpenApi extends AlipayObject {
 	 */
 	@ApiField("invoice_specification")
 	private String invoiceSpecification;
+
+	/**
+	 * 此属性可以用作发票的拆分KEY
+	 */
+	@ApiField("invoice_split_key")
+	private String invoiceSplitKey;
 
 	/**
 	 * 开票类型
@@ -132,6 +162,12 @@ public class InvoiceApplyOpenApi extends AlipayObject {
 	 */
 	@ApiField("source")
 	private String source;
+
+	/**
+	 * 税收分类编码，非必填
+	 */
+	@ApiField("tax_classification_code")
+	private String taxClassificationCode;
 
 	/**
 	 * 税率
@@ -200,6 +236,34 @@ public class InvoiceApplyOpenApi extends AlipayObject {
 		this.invoiceDate = invoiceDate;
 	}
 
+	public String getInvoiceLineMeasurementUnit() {
+		return this.invoiceLineMeasurementUnit;
+	}
+	public void setInvoiceLineMeasurementUnit(String invoiceLineMeasurementUnit) {
+		this.invoiceLineMeasurementUnit = invoiceLineMeasurementUnit;
+	}
+
+	public String getInvoiceLineQuantity() {
+		return this.invoiceLineQuantity;
+	}
+	public void setInvoiceLineQuantity(String invoiceLineQuantity) {
+		this.invoiceLineQuantity = invoiceLineQuantity;
+	}
+
+	public String getInvoiceLineUnitAmount() {
+		return this.invoiceLineUnitAmount;
+	}
+	public void setInvoiceLineUnitAmount(String invoiceLineUnitAmount) {
+		this.invoiceLineUnitAmount = invoiceLineUnitAmount;
+	}
+
+	public String getInvoiceNote() {
+		return this.invoiceNote;
+	}
+	public void setInvoiceNote(String invoiceNote) {
+		this.invoiceNote = invoiceNote;
+	}
+
 	public String getInvoiceProductName() {
 		return this.invoiceProductName;
 	}
@@ -219,6 +283,13 @@ public class InvoiceApplyOpenApi extends AlipayObject {
 	}
 	public void setInvoiceSpecification(String invoiceSpecification) {
 		this.invoiceSpecification = invoiceSpecification;
+	}
+
+	public String getInvoiceSplitKey() {
+		return this.invoiceSplitKey;
+	}
+	public void setInvoiceSplitKey(String invoiceSplitKey) {
+		this.invoiceSplitKey = invoiceSplitKey;
 	}
 
 	public String getInvoiceType() {
@@ -289,6 +360,13 @@ public class InvoiceApplyOpenApi extends AlipayObject {
 	}
 	public void setSource(String source) {
 		this.source = source;
+	}
+
+	public String getTaxClassificationCode() {
+		return this.taxClassificationCode;
+	}
+	public void setTaxClassificationCode(String taxClassificationCode) {
+		this.taxClassificationCode = taxClassificationCode;
 	}
 
 	public String getTaxRate() {

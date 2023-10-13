@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建额度防控规则
  *
  * @author auto create
- * @since 1.0, 2023-09-19 14:38:34
+ * @since 1.0, 2023-10-10 17:03:15
  */
 public class AlipayCloudCloudbaseQuotacontrolRuleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8358811836386141246L;
+	private static final long serialVersionUID = 8616318122884377693L;
 
 	/**
 	 * 小程序id

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayInsAutoUserOilRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5645836472593239277L;
+	private static final long serialVersionUID = 1231644962149816956L;
 
 	/**
 	 * 原始使用积分时候的request_id，只有使用过的积分才能返回

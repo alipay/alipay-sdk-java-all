@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.clive.visitor.offline request
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 16:44:04
+ * @since 1.0, 2023-10-07 15:24:06
  */
 public class AlipayIserviceCliveVisitorOfflineRequest implements AlipayRequest<AlipayIserviceCliveVisitorOfflineResponse> {
 

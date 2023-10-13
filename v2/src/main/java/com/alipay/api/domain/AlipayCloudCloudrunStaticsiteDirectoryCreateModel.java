@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 静态站点创建文件夹
  *
  * @author auto create
- * @since 1.0, 2023-09-19 10:19:59
+ * @since 1.0, 2023-10-09 13:59:16
  */
 public class AlipayCloudCloudrunStaticsiteDirectoryCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1377222432641762974L;
+	private static final long serialVersionUID = 4793164785121755765L;
 
 	/**
 	 * 内部使用，uiam角色扮演token

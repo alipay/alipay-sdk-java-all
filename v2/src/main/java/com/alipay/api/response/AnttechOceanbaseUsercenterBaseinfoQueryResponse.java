@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.oceanbase.usercenter.baseinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-22 15:46:44
+ * @since 1.0, 2023-10-08 09:46:28
  */
 public class AnttechOceanbaseUsercenterBaseinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4765356726962667151L;
+	private static final long serialVersionUID = 3435728439531279758L;
 
 	/** 
 	 * MEMBER=会员，HUAWEIMP_BUYER=华为云MP买家

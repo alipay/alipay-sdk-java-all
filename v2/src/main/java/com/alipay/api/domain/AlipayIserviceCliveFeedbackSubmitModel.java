@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 访客提交评价
  *
  * @author auto create
- * @since 1.0, 2021-08-27 09:56:48
+ * @since 1.0, 2023-10-07 15:24:51
  */
 public class AlipayIserviceCliveFeedbackSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6788172737952281562L;
+	private static final long serialVersionUID = 8188393118915648946L;
 
 	/**
 	 * 会话ID

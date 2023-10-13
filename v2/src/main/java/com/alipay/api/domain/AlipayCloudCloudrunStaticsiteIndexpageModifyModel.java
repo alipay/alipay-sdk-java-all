@@ -1,23 +1,33 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 修改索引
  *
  * @author auto create
- * @since 1.0, 2023-09-21 11:42:23
+ * @since 1.0, 2023-10-12 17:16:17
  */
 public class AlipayCloudCloudrunStaticsiteIndexpageModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4437518533857182373L;
+	private static final long serialVersionUID = 6624219998483629789L;
 
 	/**
 	 * 内部使用，uiam角色扮演token
 	 */
 	@ApiField("assume_token")
 	private String assumeToken;
+
+	/**
+	 * 需要修改索引配置的域名列表
+	 */
+	@ApiListField("domain_list")
+	@ApiField("string")
+	private List<String> domainList;
 
 	/**
 	 * 环境ID，唯一，开通小程序云系统会生成环境ID，请从开通页面获取
@@ -36,6 +46,13 @@ public class AlipayCloudCloudrunStaticsiteIndexpageModifyModel extends AlipayObj
 	}
 	public void setAssumeToken(String assumeToken) {
 		this.assumeToken = assumeToken;
+	}
+
+	public List<String> getDomainList() {
+		return this.domainList;
+	}
+	public void setDomainList(List<String> domainList) {
+		this.domainList = domainList;
 	}
 
 	public String getEnv() {

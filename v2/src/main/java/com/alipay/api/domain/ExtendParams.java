@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业务扩展参数
  *
  * @author auto create
- * @since 1.0, 2023-08-01 21:14:54
+ * @since 1.0, 2023-10-12 14:35:05
  */
 public class ExtendParams extends AlipayObject {
 
-	private static final long serialVersionUID = 4349875595389939478L;
+	private static final long serialVersionUID = 2357559124619542242L;
 
 	/**
 	 * 卡类型

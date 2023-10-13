@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询招商报名详情接口
  *
  * @author auto create
- * @since 1.0, 2023-06-09 10:52:18
+ * @since 1.0, 2023-10-09 16:05:02
  */
 public class AlipayMarketingCampaignRecruitEnrollQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3439112318147227724L;
+	private static final long serialVersionUID = 1541633946537341563L;
 
 	/**
 	 * 活动报名ID。

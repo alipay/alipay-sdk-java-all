@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.indirect.iotdata.batchcreate request
  * 
  * @author auto create
- * @since 1.0, 2023-07-10 15:38:30
+ * @since 1.0, 2023-10-13 14:31:47
  */
 public class AlipayMerchantIndirectIotdataBatchcreateRequest implements AlipayRequest<AlipayMerchantIndirectIotdataBatchcreateResponse> {
 

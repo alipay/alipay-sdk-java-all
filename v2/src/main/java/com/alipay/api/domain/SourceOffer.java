@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 内容所带的服务
  *
  * @author auto create
- * @since 1.0, 2023-02-27 15:09:22
+ * @since 1.0, 2023-10-10 11:50:47
  */
 public class SourceOffer extends AlipayObject {
 
-	private static final long serialVersionUID = 3295553866441686754L;
+	private static final long serialVersionUID = 6112616652691388311L;
 
 	/**
 	 * offerId，根据offer类型对应不同ID。支持小程序的APPID/小程序服务的服务编码/优惠券的活动ID

@@ -7,20 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间连iot播报回传
  *
  * @author auto create
- * @since 1.0, 2023-08-21 17:31:53
+ * @since 1.0, 2023-10-13 15:33:55
  */
 public class AlipayMerchantIndirectIotQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7185348823772258217L;
+	private static final long serialVersionUID = 7753923971294367412L;
 
 	/**
-	 * 不同物联网平台接入渠道不同值，支付宝物联网平台传设备SN号，阿里云物联网平台传设备deviceName
+	 * 合约机和lite接入模式传设备SN号，千里传音模式传设备deviceName
 	 */
 	@ApiField("device_id")
 	private String deviceId;
 
 	/**
-	 * 固定枚举值,支付宝物联网平台传SN，阿里云物联网平台传ALIYUN
+	 * 可选字段，兼容可能的bizTid传入场景，可不填
 	 */
 	@ApiField("device_id_type")
 	private String deviceIdType;
@@ -34,7 +34,7 @@ BEFORE_PAY 支付前
 	private String occasion;
 
 	/**
-	 * 固定枚举值（阿里云物联网平台：ALIYUN，支付宝物联网平台：SDK）
+	 * 固定枚举值（千里传音：ALIYUN，合约机：SDK，lite模式：LITE）
 	 */
 	@ApiField("play_mode")
 	private String playMode;
@@ -46,7 +46,7 @@ BEFORE_PAY 支付前
 	private String smid;
 
 	/**
-	 * 不同物联网平台接入渠道不同值，支付宝物联网平台传设备sourceId号，阿里云物联网平台传设备productKey
+	 * 合约机模式必传设备sourceId号，千里传音模式必传设备的productKey，lite模式必传分配给服务商的设备型号编码
 	 */
 	@ApiField("suppler_id")
 	private String supplerId;

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPayPaysharingprodSharepeerpayApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2238342274699999126L;
+	private static final long serialVersionUID = 8218774639618396765L;
 
 	/** 
 	 * 支付宝好友分享代付链接

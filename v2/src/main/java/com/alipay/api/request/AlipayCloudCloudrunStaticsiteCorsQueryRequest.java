@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudrun.staticsite.cors.query request
  * 
  * @author auto create
- * @since 1.0, 2023-09-19 10:20:40
+ * @since 1.0, 2023-10-09 13:51:46
  */
 public class AlipayCloudCloudrunStaticsiteCorsQueryRequest implements AlipayRequest<AlipayCloudCloudrunStaticsiteCorsQueryResponse> {
 

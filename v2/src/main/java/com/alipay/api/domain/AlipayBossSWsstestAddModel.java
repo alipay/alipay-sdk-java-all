@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 1cv
  *
  * @author auto create
- * @since 1.0, 2023-08-02 19:56:43
+ * @since 1.0, 2023-10-11 20:09:23
  */
 public class AlipayBossSWsstestAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6386761829991563593L;
+	private static final long serialVersionUID = 2898736129418837518L;
 
 	/**
 	 * 1
@@ -30,6 +30,12 @@ public class AlipayBossSWsstestAddModel extends AlipayObject {
 	 */
 	@ApiField("sss")
 	private String sss;
+
+	/**
+	 * 1
+	 */
+	@ApiField("sssdsds")
+	private Long sssdsds;
 
 	/**
 	 * 1
@@ -68,6 +74,13 @@ public class AlipayBossSWsstestAddModel extends AlipayObject {
 	}
 	public void setSss(String sss) {
 		this.sss = sss;
+	}
+
+	public Long getSssdsds() {
+		return this.sssdsds;
+	}
+	public void setSssdsds(Long sssdsds) {
+		this.sssdsds = sssdsds;
 	}
 
 	public ParamValidateTest getTest2() {

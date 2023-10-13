@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 外部单据申请开票
  *
  * @author auto create
- * @since 1.0, 2023-09-13 10:21:23
+ * @since 1.0, 2023-10-13 15:24:15
  */
 public class AlipayBossFncOutputinvoiceOutbillApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1894583668449819495L;
+	private static final long serialVersionUID = 6193931249643432733L;
 
 	/**
 	 * 调用方身份识别标记(应用名称) 与业务单据号联合唯一 必填
@@ -58,6 +58,12 @@ public class AlipayBossFncOutputinvoiceOutbillApplyModel extends AlipayObject {
 	 */
 	@ApiField("operator")
 	private String operator;
+
+	/**
+	 * 默认:false（需要按照规则渲染）,为true时代表外部控制发票样式 不通过规则渲染
+	 */
+	@ApiField("render_without_rule")
+	private Boolean renderWithoutRule;
 
 	/**
 	 * 调用来源系统
@@ -112,6 +118,13 @@ public class AlipayBossFncOutputinvoiceOutbillApplyModel extends AlipayObject {
 	}
 	public void setOperator(String operator) {
 		this.operator = operator;
+	}
+
+	public Boolean getRenderWithoutRule() {
+		return this.renderWithoutRule;
+	}
+	public void setRenderWithoutRule(Boolean renderWithoutRule) {
+		this.renderWithoutRule = renderWithoutRule;
 	}
 
 	public String getSource() {

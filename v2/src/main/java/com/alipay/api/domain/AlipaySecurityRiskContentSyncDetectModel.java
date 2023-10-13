@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 内容风险同步识别对外开放接口
  *
  * @author auto create
- * @since 1.0, 2023-09-19 18:25:58
+ * @since 1.0, 2023-10-09 11:53:24
  */
 public class AlipaySecurityRiskContentSyncDetectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7168629659998662649L;
+	private static final long serialVersionUID = 6783349529858711918L;
 
 	/**
 	 * 来源渠道，请与蚂蚁业务同学沟通获取
@@ -36,7 +36,13 @@ public class AlipaySecurityRiskContentSyncDetectModel extends AlipayObject {
 	private List<String> dataList;
 
 	/**
-	 * 服务码列表
+	 * OPENID
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/**
+	 * 服务码列表，不同客户可能存在差异，请于蚂蚁内容安全客户经理联系获取具体传入值
 	 */
 	@ApiField("products")
 	private String products;
@@ -78,6 +84,13 @@ public class AlipaySecurityRiskContentSyncDetectModel extends AlipayObject {
 	}
 	public void setDataList(List<String> dataList) {
 		this.dataList = dataList;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getProducts() {

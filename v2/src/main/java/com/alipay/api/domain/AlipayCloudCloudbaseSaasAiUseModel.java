@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * AI SaaS 基础服务
  *
  * @author auto create
- * @since 1.0, 2023-08-31 16:19:52
+ * @since 1.0, 2023-10-13 14:33:53
  */
 public class AlipayCloudCloudbaseSaasAiUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8712261764443739265L;
+	private static final long serialVersionUID = 5259966719372735939L;
 
 	/**
 	 * 应用名称
@@ -38,13 +38,13 @@ public class AlipayCloudCloudbaseSaasAiUseModel extends AlipayObject {
 	private String param;
 
 	/**
-	 * 模型服务编码，具体值咨询模型服务提供者
+	 * 模型服务编码，具体值可查看<a href="https://opendocs.alipay.com/pre-open/09s5qm?pathHash=f2ec2bf8">接口参数说明</a>
 	 */
 	@ApiField("service_code")
 	private String serviceCode;
 
 	/**
-	 * 模型服务uri，具体值咨询模型服务提供者
+	 * 模型服务uri，具体值可查看<a href="https://opendocs.alipay.com/pre-open/09s5qm?pathHash=f2ec2bf8">接口参数说明</a>
 	 */
 	@ApiField("uri")
 	private String uri;

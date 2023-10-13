@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.clive.chat.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-03 23:31:43
+ * @since 1.0, 2023-10-07 15:24:39
  */
 public class AlipayIserviceCliveChatSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8785663676787245393L;
+	private static final long serialVersionUID = 6858387433566249348L;
 
 	
 

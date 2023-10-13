@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询条件过滤
  *
  * @author auto create
- * @since 1.0, 2023-09-19 14:03:34
+ * @since 1.0, 2023-10-10 19:35:11
  */
 public class MonitorFilter extends AlipayObject {
 
-	private static final long serialVersionUID = 7149575478777947111L;
+	private static final long serialVersionUID = 3683978262137655138L;
 
 	/**
 	 * 按照函数名称过滤

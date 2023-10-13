@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序云智能应用上传数据接口
  *
  * @author auto create
- * @since 1.0, 2023-09-18 11:31:57
+ * @since 1.0, 2023-10-11 15:25:00
  */
 public class TechriskInnovateMpcpromoDataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8677432833541572415L;
+	private static final long serialVersionUID = 3168326837574461293L;
 
 	/**
 	 * 商品数据的列表
@@ -36,7 +36,14 @@ public class TechriskInnovateMpcpromoDataSyncModel extends AlipayObject {
 	private String industry;
 
 	/**
-	 * mpcpromo商家券数据
+	 * 店铺数据
+	 */
+	@ApiListField("shop_list")
+	@ApiField("mpcpromo_shop_list")
+	private List<MpcpromoShopList> shopList;
+
+	/**
+	 * 商家券数据
 	 */
 	@ApiListField("voucher_list")
 	@ApiField("mpcpromo_voucher_list")
@@ -61,6 +68,13 @@ public class TechriskInnovateMpcpromoDataSyncModel extends AlipayObject {
 	}
 	public void setIndustry(String industry) {
 		this.industry = industry;
+	}
+
+	public List<MpcpromoShopList> getShopList() {
+		return this.shopList;
+	}
+	public void setShopList(List<MpcpromoShopList> shopList) {
+		this.shopList = shopList;
 	}
 
 	public List<MpcpromoVoucherList> getVoucherList() {

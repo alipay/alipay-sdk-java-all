@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 语音播报记录数据回传批量上传接口
  *
  * @author auto create
- * @since 1.0, 2023-07-10 15:38:30
+ * @since 1.0, 2023-10-13 14:30:55
  */
 public class AlipayMerchantIndirectIotdataBatchcreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8126393367739169743L;
+	private static final long serialVersionUID = 4212856236659789436L;
 
 	/**
 	 * 播报记录详情字段按照要求传入，列表长度不超过20

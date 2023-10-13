@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 销项发票预览接口
  *
  * @author auto create
- * @since 1.0, 2023-09-27 13:58:00
+ * @since 1.0, 2023-10-13 15:46:50
  */
 public class AlipayBossFncOutputinvoicePreviewModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5568168612468347463L;
+	private static final long serialVersionUID = 6873341219271668668L;
 
 	/**
 	 * 调用方身份识别标记(应用名称) 与业务单据号联合唯一
@@ -78,6 +78,12 @@ public class AlipayBossFncOutputinvoicePreviewModel extends AlipayObject {
 	@ApiListField("output_invoice_apply_orders")
 	@ApiField("invoice_apply_open_api")
 	private List<InvoiceApplyOpenApi> outputInvoiceApplyOrders;
+
+	/**
+	 * 默认:false（需要按照规则渲染）,为true时代表外部控制发票样式 不通过规则渲染
+	 */
+	@ApiField("render_without_rule")
+	private Boolean renderWithoutRule;
 
 	/**
 	 * 来源系统的名称
@@ -153,6 +159,13 @@ public class AlipayBossFncOutputinvoicePreviewModel extends AlipayObject {
 	}
 	public void setOutputInvoiceApplyOrders(List<InvoiceApplyOpenApi> outputInvoiceApplyOrders) {
 		this.outputInvoiceApplyOrders = outputInvoiceApplyOrders;
+	}
+
+	public Boolean getRenderWithoutRule() {
+		return this.renderWithoutRule;
+	}
+	public void setRenderWithoutRule(Boolean renderWithoutRule) {
+		this.renderWithoutRule = renderWithoutRule;
 	}
 
 	public String getSource() {

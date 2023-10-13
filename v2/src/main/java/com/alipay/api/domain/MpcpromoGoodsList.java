@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * mpcpromo商品数据
  *
  * @author auto create
- * @since 1.0, 2023-07-13 10:30:51
+ * @since 1.0, 2023-10-11 15:58:16
  */
 public class MpcpromoGoodsList extends AlipayObject {
 
-	private static final long serialVersionUID = 8859535294612338416L;
+	private static final long serialVersionUID = 3554639449771132145L;
 
 	/**
 	 * 商品可用的城市列表
@@ -89,6 +89,12 @@ public class MpcpromoGoodsList extends AlipayObject {
 	 */
 	@ApiField("fresh_degree")
 	private String freshDegree;
+
+	/**
+	 * 商品归属的宿主小程序appid
+	 */
+	@ApiField("host_app_id")
+	private String hostAppId;
 
 	/**
 	 * 物品的唯一id
@@ -326,6 +332,13 @@ public class MpcpromoGoodsList extends AlipayObject {
 	}
 	public void setFreshDegree(String freshDegree) {
 		this.freshDegree = freshDegree;
+	}
+
+	public String getHostAppId() {
+		return this.hostAppId;
+	}
+	public void setHostAppId(String hostAppId) {
+		this.hostAppId = hostAppId;
 	}
 
 	public String getId() {

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 访客已读消息批量更新
  *
  * @author auto create
- * @since 1.0, 2023-06-20 15:28:18
+ * @since 1.0, 2023-10-07 15:25:02
  */
 public class AlipayIserviceCliveReadmessageBatchsendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5116194847615437953L;
+	private static final long serialVersionUID = 1669594483369846557L;
 
 	/**
 	 * 会话id

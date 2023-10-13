@@ -7,20 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花呗分期分期码绑定
  *
  * @author auto create
- * @since 1.0, 2023-07-11 14:38:29
+ * @since 1.0, 2023-10-13 13:58:16
  */
 public class AlipayPcreditHuabeiFqqrcodeHbfqBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2558469722649236921L;
+	private static final long serialVersionUID = 7681573745959882749L;
 
 	/**
-	 * 根据业务场景填写对应的绑定类型.
+	 * 根据业务场景填写对应的绑定类型;直联场景传'DIRECT',间联场景传'BANK_AGENT',直付通场景传'PLATFORM_BUSINESS_MODE'
 	 */
 	@ApiField("bind_type")
 	private String bindType;
 
 	/**
-	 * 绑定的码类型名称
+	 * 绑定的码类型名称,分期码场景传'fqQrcode',店员码场景传'clerkQrcode'
 	 */
 	@ApiField("code_type")
 	private String codeType;

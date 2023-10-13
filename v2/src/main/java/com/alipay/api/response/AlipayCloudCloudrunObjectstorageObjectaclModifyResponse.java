@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudrun.objectstorage.objectacl.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-19 10:20:24
+ * @since 1.0, 2023-10-09 13:51:46
  */
 public class AlipayCloudCloudrunObjectstorageObjectaclModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6798587886465546311L;
+	private static final long serialVersionUID = 8421146174236625956L;
 
 	/** 
 	 * 文件acl，取值default：默认，acl继承自桶的acl；private: 私有，公网无法直接访问获取；public-read: 公开，公网可以直接访问获取

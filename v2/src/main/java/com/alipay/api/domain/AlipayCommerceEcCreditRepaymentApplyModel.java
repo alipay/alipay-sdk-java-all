@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 申请授信还款
  *
  * @author auto create
- * @since 1.0, 2023-09-22 14:22:50
+ * @since 1.0, 2023-10-10 15:10:51
  */
 public class AlipayCommerceEcCreditRepaymentApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2831133485935778842L;
+	private static final long serialVersionUID = 1795676985257468969L;
 
 	/**
 	 * 通过企业码1.0接口签约的共同账户，和agreement_no搭配使用

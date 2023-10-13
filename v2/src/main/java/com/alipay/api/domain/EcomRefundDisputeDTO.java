@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EcomRefundDisputeDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7884124664325228444L;
+	private static final long serialVersionUID = 1192748651512467625L;
 
 	/**
 	 * 买家id

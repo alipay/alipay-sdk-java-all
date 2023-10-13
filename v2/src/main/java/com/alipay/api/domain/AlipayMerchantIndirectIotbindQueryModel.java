@@ -7,26 +7,26 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间连IoT绑定关系查询
  *
  * @author auto create
- * @since 1.0, 2023-02-03 15:19:09
+ * @since 1.0, 2023-10-13 15:34:40
  */
 public class AlipayMerchantIndirectIotbindQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4873789222794517389L;
+	private static final long serialVersionUID = 2325292913648387577L;
 
 	/**
-	 * 不同物联网平台接入渠道不同值，支付宝物联网平台传设备SN号，阿里云物联网平台传设备deviceName
+	 * 合约机和lite接入模式传设备SN号，千里传音接入模式传设备deviceName
 	 */
 	@ApiField("device_id")
 	private String deviceId;
 
 	/**
-	 * 固定枚举值（阿里云物联网平台：ALIYUN，支付宝物联网平台：SDK）
+	 * 固定枚举值（千里传音模式：ALIYUN，合约机模式：SDK，支音lite模式：LITE）
 	 */
 	@ApiField("mode")
 	private String mode;
 
 	/**
-	 * 不同物联网平台接入渠道不同值，支付宝物联网平台传设备sourceId号，阿里云物联网平台传设备productKey
+	 * 合约机模式必传设备sourceId号，千里传音模式必传设备的productKey，lite模式必传分配给服务商的设备型号编码
 	 */
 	@ApiField("supplier_id")
 	private String supplierId;

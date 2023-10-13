@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 城服用户消息触达
  *
  * @author auto create
- * @since 1.0, 2023-08-17 10:25:08
+ * @since 1.0, 2023-10-10 16:50:43
  */
 public class AlipayEcoCityserviceMessageSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2287599666521129115L;
+	private static final long serialVersionUID = 8219188563331684775L;
 
 	/**
 	 * 消息条数，默认1，需和msg_list数组中消息实际条数保持一致，上限1000条

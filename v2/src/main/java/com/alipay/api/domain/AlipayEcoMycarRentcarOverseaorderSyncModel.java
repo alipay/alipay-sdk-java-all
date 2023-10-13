@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝租车境外租车订单同步
  *
  * @author auto create
- * @since 1.0, 2023-09-21 16:40:24
+ * @since 1.0, 2023-10-10 19:13:52
  */
 public class AlipayEcoMycarRentcarOverseaorderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5481375726453366171L;
+	private static final long serialVersionUID = 7351681397324199297L;
 
 	/**
 	 * 续租交易信息

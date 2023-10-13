@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 阿里集团专用产品开通申请
  *
  * @author auto create
- * @since 1.0, 2023-03-06 20:46:14
+ * @since 1.0, 2023-10-13 17:15:18
  */
 public class AlipayOpenAligroupProductopenApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5789231654872955149L;
+	private static final long serialVersionUID = 6839733258943788949L;
 
 	/**
 	 * 申请资质信息
@@ -27,6 +27,12 @@ public class AlipayOpenAligroupProductopenApplyModel extends AlipayObject {
 	 */
 	@ApiField("channel_code")
 	private String channelCode;
+
+	/**
+	 * 业务透传给CTU的属性，接入CTU事件时需要用到，以kv格式透传
+	 */
+	@ApiField("ctu_event_property")
+	private String ctuEventProperty;
 
 	/**
 	 * 订单明细行
@@ -65,6 +71,13 @@ public class AlipayOpenAligroupProductopenApplyModel extends AlipayObject {
 	}
 	public void setChannelCode(String channelCode) {
 		this.channelCode = channelCode;
+	}
+
+	public String getCtuEventProperty() {
+		return this.ctuEventProperty;
+	}
+	public void setCtuEventProperty(String ctuEventProperty) {
+		this.ctuEventProperty = ctuEventProperty;
 	}
 
 	public List<ApplyOrderLineDTO> getOrderLines() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户前置营销内容咨询接口
  *
  * @author auto create
- * @since 1.0, 2023-09-18 19:00:19
+ * @since 1.0, 2023-10-12 21:22:50
  */
 public class AlipayPayAppMarketingConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8569976128112955676L;
+	private static final long serialVersionUID = 6742543638498569343L;
 
 	/**
 	 * 业务场景，用于区分商户具体的咨场景，示例：ORDER_PAGE：下单页营销咨询；其他新场景接入时需与支付宝协商约定
@@ -38,7 +38,7 @@ public class AlipayPayAppMarketingConsultModel extends AlipayObject {
 	private List<String> confusedMobileList;
 
 	/**
-	 * 设备号密文，使用SHA256加密；设备号类型由device_type字段指定；（设备号或morse匿名查询，两种匹配方式至少有一种参数不能为空）
+	 * 设备号，设备号类型由device_type字段指定；（设备号或morse匿名查询，两种匹配方式至少有一种参数不能为空）
 	 */
 	@ApiField("device_id")
 	private String deviceId;
@@ -109,6 +109,12 @@ public class AlipayPayAppMarketingConsultModel extends AlipayObject {
 	 */
 	@ApiField("out_trade_no")
 	private String outTradeNo;
+
+	/**
+	 * 商户ID
+	 */
+	@ApiField("partner_id")
+	private String partnerId;
 
 	/**
 	 * 销售产品码，商家和支付宝签约的产品码
@@ -250,6 +256,13 @@ public class AlipayPayAppMarketingConsultModel extends AlipayObject {
 	}
 	public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
+	}
+
+	public String getPartnerId() {
+		return this.partnerId;
+	}
+	public void setPartnerId(String partnerId) {
+		this.partnerId = partnerId;
 	}
 
 	public String getProductCode() {

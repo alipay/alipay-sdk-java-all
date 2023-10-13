@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudrun.staticsite.filelist.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-09-19 10:20:16
+ * @since 1.0, 2023-10-10 10:06:46
  */
 public class AlipayCloudCloudrunStaticsiteFilelistDeleteRequest implements AlipayRequest<AlipayCloudCloudrunStaticsiteFilelistDeleteResponse> {
 

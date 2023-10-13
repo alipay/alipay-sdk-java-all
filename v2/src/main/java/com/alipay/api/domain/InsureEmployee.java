@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 投保雇员信息
+ * 投保人信息
  *
  * @author auto create
- * @since 1.0, 2023-09-26 10:08:40
+ * @since 1.0, 2023-10-10 11:43:19
  */
 public class InsureEmployee extends AlipayObject {
 
-	private static final long serialVersionUID = 4778816234273282661L;
+	private static final long serialVersionUID = 3337118664619969478L;
 
 	/**
 	 * 证件名称
@@ -30,6 +30,12 @@ public class InsureEmployee extends AlipayObject {
 	 */
 	@ApiField("cert_type")
 	private String certType;
+
+	/**
+	 * 零工卡卡号
+	 */
+	@ApiField("employee_card_no")
+	private String employeeCardNo;
 
 	/**
 	 * 员工工种信息
@@ -74,6 +80,13 @@ public class InsureEmployee extends AlipayObject {
 	}
 	public void setCertType(String certType) {
 		this.certType = certType;
+	}
+
+	public String getEmployeeCardNo() {
+		return this.employeeCardNo;
+	}
+	public void setEmployeeCardNo(String employeeCardNo) {
+		this.employeeCardNo = employeeCardNo;
 	}
 
 	public String getJob() {

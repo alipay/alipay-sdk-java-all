@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 内容风险子标签明细
  *
  * @author auto create
- * @since 1.0, 2022-11-22 14:50:48
+ * @since 1.0, 2023-09-28 10:28:25
  */
 public class SubCheckLabel extends AlipayObject {
 
-	private static final long serialVersionUID = 7163637626723666752L;
+	private static final long serialVersionUID = 2728891253181798915L;
 
 	/**
 	 * 机器审核内容的类型：0:图片内容,1:图片上的文字
@@ -20,14 +20,13 @@ public class SubCheckLabel extends AlipayObject {
 	private Long hitStrategy;
 
 	/**
-	 * 置信度分数：0-1之间取值，1为置信度最高，0为置信度最低
+	 * 置信度分数：0-100之间取值，100为置信度最高，0为置信度最低
 	 */
 	@ApiField("rate")
 	private String rate;
 
 	/**
-	 * 二级子分类，详细编码请参考文档对应细分类编码：
-TODO
+	 * 二级子分类，详细编码请与蚂蚁内容安全客户经理沟通获取
 	 */
 	@ApiField("sub_label")
 	private String subLabel;

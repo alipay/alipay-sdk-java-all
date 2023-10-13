@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.open.app.demo.test.query request
  * 
  * @author auto create
- * @since 1.0, 2023-09-26 16:51:45
+ * @since 1.0, 2023-10-06 23:06:44
  */
 public class ZhimaOpenAppDemoTestQueryRequest implements AlipayRequest<ZhimaOpenAppDemoTestQueryResponse> {
 

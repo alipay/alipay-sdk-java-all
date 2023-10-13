@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 职能人员查询
  *
  * @author auto create
- * @since 1.0, 2022-02-23 21:16:38
+ * @since 1.0, 2023-10-12 19:57:38
  */
 public class AlipayBossBaseAntauthorizeOrgroleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2527993669995453352L;
+	private static final long serialVersionUID = 4781579764984532611L;
 
 	/**
 	 * 场景用户查询对象-组织视角

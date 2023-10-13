@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 给客服发送系统消息
  *
  * @author auto create
- * @since 1.0, 2022-04-28 16:36:16
+ * @since 1.0, 2023-10-07 15:25:45
  */
 public class AlipayIserviceCliveSystemSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1291233758883162169L;
+	private static final long serialVersionUID = 1784426132586991321L;
 
 	/**
 	 * 系统消息内容，纯文本

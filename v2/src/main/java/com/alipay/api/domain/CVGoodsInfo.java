@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * CV商品信息
  *
  * @author auto create
- * @since 1.0, 2023-09-04 16:43:05
+ * @since 1.0, 2023-10-09 20:17:51
  */
 public class CVGoodsInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4651578395441458459L;
+	private static final long serialVersionUID = 4481495636185286524L;
 
 	/**
 	 * 对应算法id
@@ -84,6 +84,13 @@ public class CVGoodsInfo extends AlipayObject {
 	 */
 	@ApiField("standard_goods")
 	private Boolean standardGoods;
+
+	/**
+	 * 1:是标准可售卖商品
+0:非标准可售卖商品
+	 */
+	@ApiField("standard_saleable_goods")
+	private Long standardSaleableGoods;
 
 	/**
 	 * 样本重量[克]：多个,分割
@@ -179,6 +186,13 @@ public class CVGoodsInfo extends AlipayObject {
 	}
 	public void setStandardGoods(Boolean standardGoods) {
 		this.standardGoods = standardGoods;
+	}
+
+	public Long getStandardSaleableGoods() {
+		return this.standardSaleableGoods;
+	}
+	public void setStandardSaleableGoods(Long standardSaleableGoods) {
+		this.standardSaleableGoods = standardSaleableGoods;
 	}
 
 	public String getWeightList() {

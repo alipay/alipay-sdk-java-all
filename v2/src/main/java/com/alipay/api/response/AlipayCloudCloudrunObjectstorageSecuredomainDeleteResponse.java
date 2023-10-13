@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudrun.objectstorage.securedomain.delete response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-02 18:57:03
+ * @since 1.0, 2023-10-12 17:16:45
  */
 public class AlipayCloudCloudrunObjectstorageSecuredomainDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7186623838315553872L;
+	private static final long serialVersionUID = 6873588841522519112L;
 
 	/** 
 	 * 安全域名

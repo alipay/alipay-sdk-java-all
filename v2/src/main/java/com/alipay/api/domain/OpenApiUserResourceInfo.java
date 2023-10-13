@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户资源信息
  *
  * @author auto create
- * @since 1.0, 2023-07-10 10:05:48
+ * @since 1.0, 2023-09-28 09:33:14
  */
 public class OpenApiUserResourceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6554999648394149219L;
+	private static final long serialVersionUID = 8652666356465278225L;
 
 	/**
 	 * 客服小二的2088id

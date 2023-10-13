@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudrun.staticsite.indexpage.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-19 10:21:14
+ * @since 1.0, 2023-10-09 13:36:45
  */
 public class AlipayCloudCloudrunStaticsiteIndexpageQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5819457138671929233L;
+	private static final long serialVersionUID = 3654811876828159796L;
 
 	/** 
 	 * 索引文件名

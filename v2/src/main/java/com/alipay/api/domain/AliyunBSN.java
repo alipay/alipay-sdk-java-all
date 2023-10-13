@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 已申请备案服务码
  *
  * @author auto create
- * @since 1.0, 2023-09-19 14:02:20
+ * @since 1.0, 2023-10-10 19:35:21
  */
 public class AliyunBSN extends AlipayObject {
 
-	private static final long serialVersionUID = 4476167551154262722L;
+	private static final long serialVersionUID = 8652848511875352485L;
 
 	/**
 	 * 备案服务码分配时间

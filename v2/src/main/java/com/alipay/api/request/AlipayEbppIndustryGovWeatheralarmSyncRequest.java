@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.gov.weatheralarm.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-09-19 09:36:43
+ * @since 1.0, 2023-10-11 13:56:45
  */
 public class AlipayEbppIndustryGovWeatheralarmSyncRequest implements AlipayRequest<AlipayEbppIndustryGovWeatheralarmSyncResponse> {
 

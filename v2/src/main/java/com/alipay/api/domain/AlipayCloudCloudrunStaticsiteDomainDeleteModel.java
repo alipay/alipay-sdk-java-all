@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 删除自定义域名
  *
  * @author auto create
- * @since 1.0, 2023-09-19 10:20:57
+ * @since 1.0, 2023-10-09 13:45:19
  */
 public class AlipayCloudCloudrunStaticsiteDomainDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6464923961426373994L;
+	private static final long serialVersionUID = 4374235528997865552L;
 
 	/**
 	 * 内部使用，uiam角色扮演token

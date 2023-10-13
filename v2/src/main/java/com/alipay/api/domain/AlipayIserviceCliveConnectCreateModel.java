@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 建立连接
  *
  * @author auto create
- * @since 1.0, 2021-08-27 09:56:23
+ * @since 1.0, 2023-10-07 15:24:20
  */
 public class AlipayIserviceCliveConnectCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1488784732692695894L;
+	private static final long serialVersionUID = 5389151293465864974L;
 
 	/**
 	 * 客户端类型

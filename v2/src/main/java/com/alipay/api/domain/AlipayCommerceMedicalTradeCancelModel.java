@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付撤销接口
  *
  * @author auto create
- * @since 1.0, 2023-08-28 17:36:07
+ * @since 1.0, 2023-10-09 21:15:15
  */
 public class AlipayCommerceMedicalTradeCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5248124758752398397L;
+	private static final long serialVersionUID = 1171944286841367769L;
 
 	/**
 	 * 支付时传入的商户交易号，和trade_no不能同时为空，如果都传则以trade_no优先

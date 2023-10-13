@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业务参数模型
  *
  * @author auto create
- * @since 1.0, 2023-09-20 13:54:27
+ * @since 1.0, 2023-10-13 14:51:37
  */
 public class ScenePayBusinessParamDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4493332413143929594L;
+	private static final long serialVersionUID = 3583759769134839948L;
 
 	/**
 	 * 业务自定义参数，交易异步通知和业务单同步查询时会返回
 	 */
 	@ApiField("custom_params")
 	private String customParams;
+
+	/**
+	 * 命中门店信息
+	 */
+	@ApiField("hit_store_info")
+	private StoreInfoDTO hitStoreInfo;
 
 	/**
 	 * 商圈中本次交易发生的商铺的识别号，在同一商铺类型下唯一
@@ -68,6 +74,13 @@ public class ScenePayBusinessParamDTO extends AlipayObject {
 	}
 	public void setCustomParams(String customParams) {
 		this.customParams = customParams;
+	}
+
+	public StoreInfoDTO getHitStoreInfo() {
+		return this.hitStoreInfo;
+	}
+	public void setHitStoreInfo(StoreInfoDTO hitStoreInfo) {
+		this.hitStoreInfo = hitStoreInfo;
 	}
 
 	public String getMallCellId() {

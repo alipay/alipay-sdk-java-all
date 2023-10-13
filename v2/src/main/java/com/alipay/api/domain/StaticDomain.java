@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 静态站点域名信息
  *
  * @author auto create
- * @since 1.0, 2023-08-02 14:17:38
+ * @since 1.0, 2023-10-10 15:12:45
  */
 public class StaticDomain extends AlipayObject {
 
-	private static final long serialVersionUID = 3725852693525525691L;
+	private static final long serialVersionUID = 7561593754577723513L;
 
 	/**
 	 * 域名cname
@@ -30,6 +30,24 @@ public class StaticDomain extends AlipayObject {
 	 */
 	@ApiField("domain_type")
 	private String domainType;
+
+	/**
+	 * true: 已启用HTTPS，false: 未启用HTTPS
+	 */
+	@ApiField("enable_https")
+	private Boolean enableHttps;
+
+	/**
+	 * 域名的自定义错误页面
+	 */
+	@ApiField("error_page")
+	private ErrorPageSetting errorPage;
+
+	/**
+	 * 默认索引文件，请求的域名路径以 / 结尾时，默认跳转到此文件路径
+	 */
+	@ApiField("index_file")
+	private String indexFile;
 
 	/**
 	 * 域名状态。
@@ -62,6 +80,27 @@ deleted：域名已经被销毁
 	}
 	public void setDomainType(String domainType) {
 		this.domainType = domainType;
+	}
+
+	public Boolean getEnableHttps() {
+		return this.enableHttps;
+	}
+	public void setEnableHttps(Boolean enableHttps) {
+		this.enableHttps = enableHttps;
+	}
+
+	public ErrorPageSetting getErrorPage() {
+		return this.errorPage;
+	}
+	public void setErrorPage(ErrorPageSetting errorPage) {
+		this.errorPage = errorPage;
+	}
+
+	public String getIndexFile() {
+		return this.indexFile;
+	}
+	public void setIndexFile(String indexFile) {
+		this.indexFile = indexFile;
 	}
 
 	public String getStatus() {

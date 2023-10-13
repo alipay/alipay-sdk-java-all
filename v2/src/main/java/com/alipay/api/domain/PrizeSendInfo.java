@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 任务发奖流水详情
  *
  * @author auto create
- * @since 1.0, 2023-09-21 14:00:20
+ * @since 1.0, 2023-10-12 20:46:28
  */
 public class PrizeSendInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8274447749563862779L;
+	private static final long serialVersionUID = 5194119578727482869L;
 
 	/**
 	 * 创建时间
@@ -34,10 +34,22 @@ public class PrizeSendInfo extends AlipayObject {
 	private Long modulus;
 
 	/**
+	 * openid
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/**
 	 * 奖品价格
 	 */
 	@ApiField("price")
 	private String price;
+
+	/**
+	 * 奖品对客信息
+	 */
+	@ApiField("prize_custom_display_info")
+	private PrizeCustomDisplayInfo prizeCustomDisplayInfo;
 
 	/**
 	 * 奖品id
@@ -90,11 +102,25 @@ public class PrizeSendInfo extends AlipayObject {
 		this.modulus = modulus;
 	}
 
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+
 	public String getPrice() {
 		return this.price;
 	}
 	public void setPrice(String price) {
 		this.price = price;
+	}
+
+	public PrizeCustomDisplayInfo getPrizeCustomDisplayInfo() {
+		return this.prizeCustomDisplayInfo;
+	}
+	public void setPrizeCustomDisplayInfo(PrizeCustomDisplayInfo prizeCustomDisplayInfo) {
+		this.prizeCustomDisplayInfo = prizeCustomDisplayInfo;
 	}
 
 	public String getPrizeId() {

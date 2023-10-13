@@ -7,38 +7,38 @@ import com.alipay.api.internal.mapping.ApiField;
  * 语音播报数据记录详情
  *
  * @author auto create
- * @since 1.0, 2023-08-18 11:36:09
+ * @since 1.0, 2023-10-13 10:17:43
  */
 public class SpeechRecordDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3464441989275324992L;
+	private static final long serialVersionUID = 1467315341851134269L;
 
 	/**
-	 * 播报关联的支付宝运营计划id
+	 * 播报关联的支付宝运营计划id，对接支付宝播报接口后，该字段可不传，其他场景必传
 	 */
 	@ApiField("alipay_plan_id")
 	private String alipayPlanId;
 
 	/**
-	 * 设备在线地址必传
+	 * 设备在线地址，ip字段和地址字段（device_address且device_province且device_city且device_district）必须至少传一个
 	 */
 	@ApiField("device_address")
 	private String deviceAddress;
 
 	/**
-	 * 设备所在城市中文名称
+	 * 设备所在城市中文名称，ip字段和地址字段（device_address且device_province且device_city且device_district）必须至少传一个
 	 */
 	@ApiField("device_city")
 	private String deviceCity;
 
 	/**
-	 * 设备所在区中文名称
+	 * 设备所在区中文名称，ip字段和地址字段（device_address且device_province且device_city且device_district）必须至少传一个
 	 */
 	@ApiField("device_district")
 	private String deviceDistrict;
 
 	/**
-	 * 设备ip地址需要传入公网有效ip
+	 * 设备ip地址需要传入公网有效ip，ip字段和地址字段（device_address且device_province且device_city且device_district）必须至少传一个
 	 */
 	@ApiField("device_ip")
 	private String deviceIp;
@@ -68,7 +68,7 @@ public class SpeechRecordDetail extends AlipayObject {
 	private String deviceOsVersion;
 
 	/**
-	 * 设备所在省中文名称
+	 * 设备所在省中文名称，ip字段和地址字段（device_address且device_province且device_city且device_district）必须至少传一个
 	 */
 	@ApiField("device_province")
 	private String deviceProvince;

@@ -7,20 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间连iot设备和间连商户解绑
  *
  * @author auto create
- * @since 1.0, 2022-10-14 17:00:15
+ * @since 1.0, 2023-10-13 15:20:18
  */
 public class AlipayMerchantIndirectIotUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1133472256699218617L;
+	private static final long serialVersionUID = 2594688842188652988L;
 
 	/**
-	 * 不同物联网平台接入渠道不同值，支付宝物联网平台传设备SN号，阿里云物联网平台传设备deviceName
+	 * 合约机和lite接入模式传设备SN号，千里传音模式传设备deviceName
 	 */
 	@ApiField("device_id")
 	private String deviceId;
 
 	/**
-	 * 固定枚举值（阿里云物联网平台：ALIYUN，支付宝物联网平台：SDK）
+	 * 固定枚举值（千里传音：ALIYUN，合约机：SDK，lite模式：LITE）
 	 */
 	@ApiField("mode")
 	private String mode;
@@ -32,7 +32,7 @@ public class AlipayMerchantIndirectIotUnbindModel extends AlipayObject {
 	private String smid;
 
 	/**
-	 * 不同物联网平台接入渠道不同值，支付宝物联网平台传设备sourceId号，阿里云物联网平台传设备productKey
+	 * 合约机模式必传设备sourceId号，千里传音模式必传设备的productKey，lite模式必传分配给服务商的设备型号编码
 	 */
 	@ApiField("supplier_id")
 	private String supplierId;

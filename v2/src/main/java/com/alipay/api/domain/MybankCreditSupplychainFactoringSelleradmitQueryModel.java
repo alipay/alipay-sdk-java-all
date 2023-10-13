@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保理门店准入查询
  *
  * @author auto create
- * @since 1.0, 2022-07-21 17:29:04
+ * @since 1.0, 2023-10-12 10:37:39
  */
 public class MybankCreditSupplychainFactoringSelleradmitQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7846412339434497536L;
+	private static final long serialVersionUID = 8352529219734782511L;
 
 	/**
 	 * isv支付宝id

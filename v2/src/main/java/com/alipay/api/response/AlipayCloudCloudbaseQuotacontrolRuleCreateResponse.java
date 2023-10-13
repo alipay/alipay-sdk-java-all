@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.quotacontrol.rule.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-19 14:41:43
+ * @since 1.0, 2023-10-10 17:06:45
  */
 public class AlipayCloudCloudbaseQuotacontrolRuleCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7399774617398925242L;
+	private static final long serialVersionUID = 3474949713528949534L;
 
 	/** 
 	 * 创建结果

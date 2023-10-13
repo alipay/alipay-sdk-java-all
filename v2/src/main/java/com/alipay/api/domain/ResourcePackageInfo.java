@@ -10,11 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 资源包列表信息
  *
  * @author auto create
- * @since 1.0, 2023-08-29 17:51:49
+ * @since 1.0, 2023-10-11 09:44:08
  */
 public class ResourcePackageInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3863161461976348964L;
+	private static final long serialVersionUID = 2289219615677192279L;
+
+	/**
+	 * 是否可以变配
+	 */
+	@ApiField("can_alter")
+	private Boolean canAlter;
+
+	/**
+	 * 不能变配的原因
+	 */
+	@ApiField("error_msg")
+	private String errorMsg;
 
 	/**
 	 * 原始单价(分)
@@ -32,10 +44,10 @@ public class ResourcePackageInfo extends AlipayObject {
 	/**
 	 * 资源包规格编码
  - public_cloudd_cd_cn_free_bag(免费版)
- - public_cloudd_cd_cn_basic_bag(基础版)
+ - public_cloudd_cd_cn_base_bag(基础版)
  - public_cloudd_cd_cn_standard_bag(标准版)
  - public_cloudd_cd_cn_pro_bag(专业版)
- - public_cloudd_cd_cn_enterprise_bag(企业版)
+ - public_cloudd_cd_cn_ent_bag(企业版)
  - public_cloudd_cd_cn_flagship_bag(旗舰版)
 	 */
 	@ApiField("spec_code")
@@ -58,6 +70,20 @@ public class ResourcePackageInfo extends AlipayObject {
 	 */
 	@ApiField("trade_unit_amount")
 	private String tradeUnitAmount;
+
+	public Boolean getCanAlter() {
+		return this.canAlter;
+	}
+	public void setCanAlter(Boolean canAlter) {
+		this.canAlter = canAlter;
+	}
+
+	public String getErrorMsg() {
+		return this.errorMsg;
+	}
+	public void setErrorMsg(String errorMsg) {
+		this.errorMsg = errorMsg;
+	}
 
 	public String getOriginalUnitAmount() {
 		return this.originalUnitAmount;

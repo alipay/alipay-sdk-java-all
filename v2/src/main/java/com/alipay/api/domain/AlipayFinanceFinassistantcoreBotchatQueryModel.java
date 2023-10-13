@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询支小宝回复
  *
  * @author auto create
- * @since 1.0, 2023-09-05 21:35:59
+ * @since 1.0, 2023-10-07 20:54:46
  */
 public class AlipayFinanceFinassistantcoreBotchatQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2378568762182945214L;
+	private static final long serialVersionUID = 2439317587399392652L;
+
+	/**
+	 * 会话中每一轮的标识
+	 */
+	@ApiField("chat")
+	private String chat;
 
 	/**
 	 * 用户问询的问题
@@ -30,6 +36,13 @@ public class AlipayFinanceFinassistantcoreBotchatQueryModel extends AlipayObject
 	 */
 	@ApiField("user_type")
 	private String userType;
+
+	public String getChat() {
+		return this.chat;
+	}
+	public void setChat(String chat) {
+		this.chat = chat;
+	}
 
 	public String getQuestion() {
 		return this.question;

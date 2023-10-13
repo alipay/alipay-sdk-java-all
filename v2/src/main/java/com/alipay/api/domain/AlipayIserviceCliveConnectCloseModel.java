@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 关闭会话
  *
  * @author auto create
- * @since 1.0, 2021-08-27 09:57:25
+ * @since 1.0, 2023-10-07 15:23:38
  */
 public class AlipayIserviceCliveConnectCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6575832845523468946L;
+	private static final long serialVersionUID = 1883357475363799972L;
 
 	/**
 	 * 若是会话已经建立，关闭时必须传该conversation_id来请求关闭。若未建立，传visitor_token来请求关闭。

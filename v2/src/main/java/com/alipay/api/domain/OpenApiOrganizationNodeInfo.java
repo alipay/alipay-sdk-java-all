@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 组织节点结构体
  *
  * @author auto create
- * @since 1.0, 2023-07-10 10:05:48
+ * @since 1.0, 2023-09-28 09:33:14
  */
 public class OpenApiOrganizationNodeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4648324918362341743L;
+	private static final long serialVersionUID = 6258912983132919694L;
 
 	/**
 	 * 组织节点名称

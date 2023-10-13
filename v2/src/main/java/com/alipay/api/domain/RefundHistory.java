@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 提现记录
  *
  * @author auto create
- * @since 1.0, 2023-08-22 20:14:19
+ * @since 1.0, 2023-10-11 09:46:17
  */
 public class RefundHistory extends AlipayObject {
 
-	private static final long serialVersionUID = 1411817287171641287L;
+	private static final long serialVersionUID = 7381367543766521213L;
 
 	/**
 	 * 提现金额(分)
@@ -30,6 +30,12 @@ public class RefundHistory extends AlipayObject {
 	 */
 	@ApiField("finish_time")
 	private String finishTime;
+
+	/**
+	 * 提现错误信息
+	 */
+	@ApiField("message")
+	private String message;
 
 	/**
 	 * 提现单号
@@ -62,6 +68,13 @@ public class RefundHistory extends AlipayObject {
 	}
 	public void setFinishTime(String finishTime) {
 		this.finishTime = finishTime;
+	}
+
+	public String getMessage() {
+		return this.message;
+	}
+	public void setMessage(String message) {
+		this.message = message;
 	}
 
 	public String getRefundOrderNo() {

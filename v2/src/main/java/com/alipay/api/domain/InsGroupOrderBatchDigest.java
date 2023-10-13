@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsGroupOrderBatchDigest extends AlipayObject {
 
-	private static final long serialVersionUID = 1878274936741668883L;
+	private static final long serialVersionUID = 7579929628682292535L;
 
 	/**
 	 * 批次单号

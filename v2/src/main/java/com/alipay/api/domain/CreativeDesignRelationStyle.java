@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 布局id关联的风格信息
  *
  * @author auto create
- * @since 1.0, 2023-07-27 10:00:48
+ * @since 1.0, 2023-10-12 15:21:13
  */
 public class CreativeDesignRelationStyle extends AlipayObject {
 
-	private static final long serialVersionUID = 8635141557369347446L;
+	private static final long serialVersionUID = 1871412295554611484L;
+
+	/**
+	 * 合成图片所需要的模版id
+	 */
+	@ApiField("pic_template_id")
+	private String picTemplateId;
 
 	/**
 	 * style_design_content_url风格和布局唯一确定的背景图，返回的两者结合的图片地址。
@@ -30,6 +36,13 @@ public class CreativeDesignRelationStyle extends AlipayObject {
 	 */
 	@ApiField("style_mock_img")
 	private String styleMockImg;
+
+	public String getPicTemplateId() {
+		return this.picTemplateId;
+	}
+	public void setPicTemplateId(String picTemplateId) {
+		this.picTemplateId = picTemplateId;
+	}
 
 	public String getStyleDesignRelationMockImg() {
 		return this.styleDesignRelationMockImg;

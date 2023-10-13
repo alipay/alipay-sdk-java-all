@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 技能组信息
  *
  * @author auto create
- * @since 1.0, 2023-07-10 10:05:48
+ * @since 1.0, 2023-09-28 09:33:14
  */
 public class OpenApiSkillGroupInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6838392262359362622L;
+	private static final long serialVersionUID = 8223172817485638948L;
 
 	/**
 	 * 旧平台组织节点id

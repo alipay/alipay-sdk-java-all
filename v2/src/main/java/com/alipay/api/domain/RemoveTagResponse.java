@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RemoveTagResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 8154577893784441548L;
+	private static final long serialVersionUID = 1196464741883227114L;
 
 	/**
 	 * 批量去标接口结果列表

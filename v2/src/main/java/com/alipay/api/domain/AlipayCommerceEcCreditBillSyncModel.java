@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 授信还款账单同步
  *
  * @author auto create
- * @since 1.0, 2023-09-20 11:33:18
+ * @since 1.0, 2023-10-10 14:51:19
  */
 public class AlipayCommerceEcCreditBillSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2219719329287668825L;
+	private static final long serialVersionUID = 1198872932324865775L;
 
 	/**
 	 * 账单月

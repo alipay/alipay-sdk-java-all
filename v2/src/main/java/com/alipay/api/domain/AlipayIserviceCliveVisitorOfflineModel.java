@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 取消排队
  *
  * @author auto create
- * @since 1.0, 2021-08-27 09:57:15
+ * @since 1.0, 2023-10-07 15:24:06
  */
 public class AlipayIserviceCliveVisitorOfflineModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7761997112325815325L;
+	private static final long serialVersionUID = 4471811599985584557L;
 
 	/**
 	 * 访客id

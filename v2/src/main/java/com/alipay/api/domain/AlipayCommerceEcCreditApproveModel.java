@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业授信审批通知
  *
  * @author auto create
- * @since 1.0, 2023-09-20 11:33:56
+ * @since 1.0, 2023-10-10 14:46:50
  */
 public class AlipayCommerceEcCreditApproveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2895846169794556552L;
+	private static final long serialVersionUID = 6285114975215811797L;
 
 	/**
 	 * 资方授信申请流水号， 资方内部生成

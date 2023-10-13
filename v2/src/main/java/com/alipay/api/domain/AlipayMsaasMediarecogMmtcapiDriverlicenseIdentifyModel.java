@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMsaasMediarecogMmtcapiDriverlicenseIdentifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6521358439141969288L;
+	private static final long serialVersionUID = 3344843283217681653L;
 
 	/**
 	 * 图片地址

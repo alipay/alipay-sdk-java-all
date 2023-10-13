@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 方舟工作台服务记录查询接口
  *
  * @author auto create
- * @since 1.0, 2023-04-26 17:09:19
+ * @since 1.0, 2023-10-07 15:25:32
  */
 public class AlipayIserviceCsplatformServicerecordBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7544239147619834781L;
+	private static final long serialVersionUID = 6878365639144784459L;
 
 	/**
 	 * 外部业务号

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账单详情
  *
  * @author auto create
- * @since 1.0, 2023-09-26 17:02:18
+ * @since 1.0, 2023-10-11 09:46:01
  */
 public class Bill extends AlipayObject {
 
-	private static final long serialVersionUID = 3738335397158997488L;
+	private static final long serialVersionUID = 1763898833534352448L;
 
 	/**
 	 * 出账日期
@@ -41,13 +41,6 @@ public class Bill extends AlipayObject {
 	 */
 	@ApiField("biz_app_id")
 	private String bizAppId;
-
-	/**
-	 * 环境id 当前字段已废弃(改用env_id替代)
-	 */
-	@ApiField("biz_env_id")
-	@Deprecated
-	private String bizEnvId;
 
 	/**
 	 * 币种
@@ -159,13 +152,6 @@ public class Bill extends AlipayObject {
 	}
 	public void setBizAppId(String bizAppId) {
 		this.bizAppId = bizAppId;
-	}
-
-	public String getBizEnvId() {
-		return this.bizEnvId;
-	}
-	public void setBizEnvId(String bizEnvId) {
-		this.bizEnvId = bizEnvId;
 	}
 
 	public String getCurrency() {

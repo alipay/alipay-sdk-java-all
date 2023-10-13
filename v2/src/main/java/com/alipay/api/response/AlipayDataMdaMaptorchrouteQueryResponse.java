@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataMdaMaptorchrouteQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6239714513933594836L;
+	private static final long serialVersionUID = 5111173271559459864L;
 
 	/** 
 	 * 火炬传递路线

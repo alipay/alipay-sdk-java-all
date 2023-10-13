@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.credit.bill.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-20 13:36:44
+ * @since 1.0, 2023-10-10 15:06:45
  */
 public class AlipayCommerceEcCreditBillSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6592925686791442364L;
+	private static final long serialVersionUID = 7133584638848199816L;
 
 	/** 
 	 * 结果

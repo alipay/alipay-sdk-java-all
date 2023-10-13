@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: antfortune.quotation.nimitz.dim.query request
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 00:36:46
+ * @since 1.0, 2023-10-09 11:41:46
  */
 public class AntfortuneQuotationNimitzDimQueryRequest implements AlipayRequest<AntfortuneQuotationNimitzDimQueryResponse> {
 

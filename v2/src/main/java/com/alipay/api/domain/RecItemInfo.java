@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RecItemInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1662943289432275276L;
+	private static final long serialVersionUID = 8776845891665794841L;
 
 	/**
 	 * 归属地区

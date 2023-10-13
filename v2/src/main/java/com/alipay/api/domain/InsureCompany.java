@@ -7,23 +7,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * 投保企业信息
  *
  * @author auto create
- * @since 1.0, 2023-09-18 16:19:46
+ * @since 1.0, 2023-10-10 11:42:50
  */
 public class InsureCompany extends AlipayObject {
 
-	private static final long serialVersionUID = 6678388242918918116L;
+	private static final long serialVersionUID = 6576239255423569418L;
 
 	/**
-	 * 支付宝账号ID
+	 * 参与方唯一标识，当alipay_account_type为ALIPAY_USER_ID是表示支付宝2088uid,当alipay_account_type为ALIPAY_LOGON_ID时表示支付宝登录号
 	 */
 	@ApiField("alipay_account_no")
 	private String alipayAccountNo;
 
 	/**
-	 * 支付宝账号ID
+	 * 账号主体id
 	 */
 	@ApiField("alipay_account_open_id")
 	private String alipayAccountOpenId;
+
+	/**
+	 * 账号主体类型，默认ALIPAY_USER_ID
+	 */
+	@ApiField("alipay_account_type")
+	private String alipayAccountType;
 
 	/**
 	 * 商户/企业名称
@@ -91,6 +97,13 @@ public class InsureCompany extends AlipayObject {
 	}
 	public void setAlipayAccountOpenId(String alipayAccountOpenId) {
 		this.alipayAccountOpenId = alipayAccountOpenId;
+	}
+
+	public String getAlipayAccountType() {
+		return this.alipayAccountType;
+	}
+	public void setAlipayAccountType(String alipayAccountType) {
+		this.alipayAccountType = alipayAccountType;
 	}
 
 	public String getCertName() {
