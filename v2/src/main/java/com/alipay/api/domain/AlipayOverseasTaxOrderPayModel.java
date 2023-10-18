@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOverseasTaxOrderPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3253812424147692387L;
+	private static final long serialVersionUID = 3366274723423667639L;
 
 	/**
 	 * 退税数据有效天数，15到30天，超过指定天数未处理的退税单会过期而退税失败

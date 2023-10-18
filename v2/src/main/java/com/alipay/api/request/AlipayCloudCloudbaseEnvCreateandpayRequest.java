@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.env.createandpay request
  * 
  * @author auto create
- * @since 1.0, 2023-09-05 11:07:17
+ * @since 1.0, 2023-10-16 20:23:17
  */
 public class AlipayCloudCloudbaseEnvCreateandpayRequest implements AlipayRequest<AlipayCloudCloudbaseEnvCreateandpayResponse> {
 

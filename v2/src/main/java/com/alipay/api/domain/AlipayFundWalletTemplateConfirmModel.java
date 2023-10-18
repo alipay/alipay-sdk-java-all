@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户确认开通钱包
  *
  * @author auto create
- * @since 1.0, 2023-09-04 14:59:17
+ * @since 1.0, 2023-10-16 23:21:50
  */
 public class AlipayFundWalletTemplateConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7779735495664424646L;
+	private static final long serialVersionUID = 5239553512811436765L;
 
 	/**
 	 * 开户场景
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
+
+	/**
+	 * 商户确认开通场景钱包能力扩展参数
+	 */
+	@ApiField("consume_extend")
+	private ConsumeExtend consumeExtend;
 
 	/**
 	 * 礼品卡模版信息
@@ -48,6 +54,13 @@ public class AlipayFundWalletTemplateConfirmModel extends AlipayObject {
 	}
 	public void setBizScene(String bizScene) {
 		this.bizScene = bizScene;
+	}
+
+	public ConsumeExtend getConsumeExtend() {
+		return this.consumeExtend;
+	}
+	public void setConsumeExtend(ConsumeExtend consumeExtend) {
+		this.consumeExtend = consumeExtend;
 	}
 
 	public GiftCardTemplate getGiftCardTemplate() {

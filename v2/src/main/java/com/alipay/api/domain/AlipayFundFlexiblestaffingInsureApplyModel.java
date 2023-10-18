@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 灵工打卡投保申请
  *
  * @author auto create
- * @since 1.0, 2023-09-18 13:51:22
+ * @since 1.0, 2023-10-16 20:57:40
  */
 public class AlipayFundFlexiblestaffingInsureApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4765971593725459916L;
+	private static final long serialVersionUID = 1251197113624899544L;
 
 	/**
 	 * 场景码，固定值

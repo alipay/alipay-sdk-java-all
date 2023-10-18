@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 进件商户绑码消息查询
  *
  * @author auto create
- * @since 1.0, 2023-06-27 13:46:16
+ * @since 1.0, 2023-10-13 22:09:51
  */
 public class AlipayCommerceOperationDcsMerchantqrcodeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4814636415992311678L;
+	private static final long serialVersionUID = 5663642586674292353L;
 
 	/**
 	 * 进件商户PID
@@ -20,16 +20,24 @@ public class AlipayCommerceOperationDcsMerchantqrcodeQueryModel extends AlipayOb
 	private String applyMerchantPid;
 
 	/**
-	 * 运营服务商PID
+	 * 运营服务商PID 当前字段已废弃(通过网关上下文活动对应的参数)
 	 */
 	@ApiField("isv_pid")
+	@Deprecated
 	private String isvPid;
 
 	/**
-	 * 被运营商户PID
+	 * 被运营商户PID 当前字段已废弃(通过网关上下文活动对应的参数)
 	 */
 	@ApiField("merchant_pid")
+	@Deprecated
 	private String merchantPid;
+
+	/**
+	 * 联营计划标识
+	 */
+	@ApiField("plan_id")
+	private String planId;
 
 	/**
 	 * 通过商户传递标识(直连/间连), 返回对应商户PID
@@ -56,6 +64,13 @@ public class AlipayCommerceOperationDcsMerchantqrcodeQueryModel extends AlipayOb
 	}
 	public void setMerchantPid(String merchantPid) {
 		this.merchantPid = merchantPid;
+	}
+
+	public String getPlanId() {
+		return this.planId;
+	}
+	public void setPlanId(String planId) {
+		this.planId = planId;
 	}
 
 	public String getRoleId() {

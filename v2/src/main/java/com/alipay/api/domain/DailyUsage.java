@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 各计费项用量
  *
  * @author auto create
- * @since 1.0, 2023-08-22 20:16:04
+ * @since 1.0, 2023-10-16 20:20:40
  */
 public class DailyUsage extends AlipayObject {
 
-	private static final long serialVersionUID = 5219962361793879571L;
+	private static final long serialVersionUID = 4713994617688916754L;
 
 	/**
 	 * 日期

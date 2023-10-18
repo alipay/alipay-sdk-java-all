@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 提现状态查询
  *
  * @author auto create
- * @since 1.0, 2023-08-29 17:19:30
+ * @since 1.0, 2023-10-16 20:24:47
  */
 public class AlipayCloudCloudbaseWalletRefundstatusGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8451419985643962425L;
+	private static final long serialVersionUID = 7399561286875493248L;
 
 	/**
 	 * 小程序id

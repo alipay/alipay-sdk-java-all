@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserAntpaasTokenThirdTrustLoginModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3346415714736142262L;
+	private static final long serialVersionUID = 1145882537799322777L;
 
 	/**
 	 * 登录的目标业务，目前已经分配的有autoins，代表车险业务

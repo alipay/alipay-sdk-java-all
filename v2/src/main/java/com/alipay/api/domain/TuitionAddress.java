@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 地址信息
  *
  * @author auto create
- * @since 1.0, 2021-08-16 15:53:46
+ * @since 1.0, 2023-10-16 17:52:26
  */
 public class TuitionAddress extends AlipayObject {
 
-	private static final long serialVersionUID = 7837777191633274114L;
+	private static final long serialVersionUID = 3283538766132942874L;
 
 	/**
 	 * 地址

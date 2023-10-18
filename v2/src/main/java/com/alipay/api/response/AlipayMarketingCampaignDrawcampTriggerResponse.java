@@ -3,6 +3,7 @@ package com.alipay.api.response;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.PrizeCustomDisplayInfo;
 import com.alipay.api.domain.MpPrizeSendOrder;
 
 import com.alipay.api.AlipayResponse;
@@ -11,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.drawcamp.trigger response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-10 19:21:05
+ * @since 1.0, 2023-10-15 14:36:45
  */
 public class AlipayMarketingCampaignDrawcampTriggerResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2158786811429965658L;
+	private static final long serialVersionUID = 3491372585975579921L;
 
 	/** 
 	 * 活动id
@@ -46,6 +47,12 @@ public class AlipayMarketingCampaignDrawcampTriggerResponse extends AlipayRespon
 	 */
 	@ApiField("out_prize_id")
 	private String outPrizeId;
+
+	/** 
+	 * 对客信息
+	 */
+	@ApiField("prize_custom_display_info")
+	private PrizeCustomDisplayInfo prizeCustomDisplayInfo;
 
 	/** 
 	 * 奖品唯一标识
@@ -123,6 +130,13 @@ public class AlipayMarketingCampaignDrawcampTriggerResponse extends AlipayRespon
 	}
 	public String getOutPrizeId( ) {
 		return this.outPrizeId;
+	}
+
+	public void setPrizeCustomDisplayInfo(PrizeCustomDisplayInfo prizeCustomDisplayInfo) {
+		this.prizeCustomDisplayInfo = prizeCustomDisplayInfo;
+	}
+	public PrizeCustomDisplayInfo getPrizeCustomDisplayInfo( ) {
+		return this.prizeCustomDisplayInfo;
 	}
 
 	public void setPrizeFlag(String prizeFlag) {

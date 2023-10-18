@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 凭证撤销核销结果
  *
  * @author auto create
- * @since 1.0, 2023-05-31 11:00:48
+ * @since 1.0, 2023-10-16 15:00:14
  */
 public class CertificateReverseResult extends AlipayObject {
 
-	private static final long serialVersionUID = 4656263527531148184L;
+	private static final long serialVersionUID = 2634347222919173238L;
+
+	/**
+	 * 凭证id
+	 */
+	@ApiField("certificate_id")
+	private String certificateId;
 
 	/**
 	 * 结果说明
@@ -30,6 +36,13 @@ public class CertificateReverseResult extends AlipayObject {
 	 */
 	@ApiField("use_order_no")
 	private String useOrderNo;
+
+	public String getCertificateId() {
+		return this.certificateId;
+	}
+	public void setCertificateId(String certificateId) {
+		this.certificateId = certificateId;
+	}
 
 	public String getMsg() {
 		return this.msg;

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.wallet.template.confirm request
  * 
  * @author auto create
- * @since 1.0, 2023-09-06 16:56:46
+ * @since 1.0, 2023-10-16 23:26:44
  */
 public class AlipayFundWalletTemplateConfirmRequest implements AlipayRequest<AlipayFundWalletTemplateConfirmResponse> {
 

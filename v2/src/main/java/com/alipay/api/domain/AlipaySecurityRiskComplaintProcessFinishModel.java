@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipaySecurityRiskComplaintProcessFinishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2678761816292896418L;
+	private static final long serialVersionUID = 2752339965359292925L;
 
 	/**
 	 * 本次进行处理的投诉id列表(主表主键)

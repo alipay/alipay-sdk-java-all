@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserSafeboxRecordSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5694473716918517418L;
+	private static final long serialVersionUID = 2294379297844287742L;
 
 	/**
 	 * 用钢铁匣公钥加密后的内容

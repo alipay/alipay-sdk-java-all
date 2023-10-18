@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 检查是否满足备案服务码申请条件
  *
  * @author auto create
- * @since 1.0, 2023-09-14 14:32:16
+ * @since 1.0, 2023-10-16 20:22:11
  */
 public class AlipayCloudCloudbaseBsnCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1751121367469969282L;
+	private static final long serialVersionUID = 2525424375329221915L;
 
 	/**
 	 * 小程序id

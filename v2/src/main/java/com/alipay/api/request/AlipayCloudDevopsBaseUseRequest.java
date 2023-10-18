@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.devops.base.use request
  * 
  * @author auto create
- * @since 1.0, 2023-08-30 20:51:43
+ * @since 1.0, 2023-10-16 17:31:45
  */
 public class AlipayCloudDevopsBaseUseRequest implements AlipayRequest<AlipayCloudDevopsBaseUseResponse> {
 

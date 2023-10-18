@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 已绑定小程序信息
  *
  * @author auto create
- * @since 1.0, 2020-07-06 10:10:19
+ * @since 1.0, 2023-10-16 19:51:48
  */
 public class BindedMiniAppInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1127572567231313614L;
+	private static final long serialVersionUID = 1899173671951971293L;
 
 	/**
 	 * 开发者名称
 	 */
 	@ApiField("dev_name")
 	private String devName;
+
+	/**
+	 * 当前进行锁定的版本号
+	 */
+	@ApiField("locked_version")
+	private String lockedVersion;
 
 	/**
 	 * 小程序应用ID
@@ -51,6 +57,12 @@ false：小程序当前未在架
 	private Boolean online;
 
 	/**
+	 * 当前小程序在AMPE最新的上架可用版本
+	 */
+	@ApiField("online_version")
+	private String onlineVersion;
+
+	/**
 	 * 当前小程序是否加入AMPE计划，小程序开发者可以自行进行AMPE的开通和关闭
 	 */
 	@ApiField("support_ampe")
@@ -61,6 +73,13 @@ false：小程序当前未在架
 	}
 	public void setDevName(String devName) {
 		this.devName = devName;
+	}
+
+	public String getLockedVersion() {
+		return this.lockedVersion;
+	}
+	public void setLockedVersion(String lockedVersion) {
+		this.lockedVersion = lockedVersion;
 	}
 
 	public String getMiniAppId() {
@@ -96,6 +115,13 @@ false：小程序当前未在架
 	}
 	public void setOnline(Boolean online) {
 		this.online = online;
+	}
+
+	public String getOnlineVersion() {
+		return this.onlineVersion;
+	}
+	public void setOnlineVersion(String onlineVersion) {
+		this.onlineVersion = onlineVersion;
 	}
 
 	public Boolean getSupportAmpe() {

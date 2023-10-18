@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FeedbackSubItem extends AlipayObject {
 
-	private static final long serialVersionUID = 4733711699445519717L;
+	private static final long serialVersionUID = 5783584523856525554L;
 
 	/**
 	 * 评价子项的评分

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 产品信息
  *
  * @author auto create
- * @since 1.0, 2020-07-07 20:24:48
+ * @since 1.0, 2023-10-16 19:33:09
  */
 public class AmpeProductInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1522225541152445968L;
+	private static final long serialVersionUID = 2333482961917222912L;
 
 	/**
 	 * 类目描述

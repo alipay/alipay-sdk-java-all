@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 申请考勤链接（投保）
  *
  * @author auto create
- * @since 1.0, 2023-09-18 16:49:12
+ * @since 1.0, 2023-10-16 20:55:36
  */
 public class AlipayFundFlexiblestaffingAttendanceApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5416116495763878748L;
+	private static final long serialVersionUID = 1347984645832535522L;
 
 	/**
 	 * 授权跳转类型
@@ -56,7 +56,13 @@ public class AlipayFundFlexiblestaffingAttendanceApplyModel extends AlipayObject
 	private String insureType;
 
 	/**
-	 * 合作商信息,本次为和蚂蚁签约的平台信息，固定值
+	 * 外部业务号
+	 */
+	@ApiField("out_biz_no")
+	private String outBizNo;
+
+	/**
+	 * 合作商信息,本次场景和投保企业信息报错一致
 	 */
 	@ApiField("partner_organization")
 	private InsurePartnerOrganization partnerOrganization;
@@ -114,6 +120,13 @@ public class AlipayFundFlexiblestaffingAttendanceApplyModel extends AlipayObject
 	}
 	public void setInsureType(String insureType) {
 		this.insureType = insureType;
+	}
+
+	public String getOutBizNo() {
+		return this.outBizNo;
+	}
+	public void setOutBizNo(String outBizNo) {
+		this.outBizNo = outBizNo;
 	}
 
 	public InsurePartnerOrganization getPartnerOrganization() {

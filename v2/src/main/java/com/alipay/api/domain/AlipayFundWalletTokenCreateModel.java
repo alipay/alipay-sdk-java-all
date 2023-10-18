@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户绑定申请token
  *
  * @author auto create
- * @since 1.0, 2023-09-26 15:51:20
+ * @since 1.0, 2023-10-16 22:40:49
  */
 public class AlipayFundWalletTokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5851932138879694489L;
+	private static final long serialVersionUID = 1477398756227778172L;
 
 	/**
 	 * alipay.user.agreement.page.sign返回的代扣签约串
 	 */
 	@ApiField("agreement_pay_sign")
 	private String agreementPaySign;
+
+	/**
+	 * 1. 格式必须为： https://开头域名链接地址 或者 alipays://开头的支付宝小程序链接。 2. 需要保证传入的 returnUrl 链接能够有效访问
+	 */
+	@ApiField("back_url")
+	private String backUrl;
 
 	/**
 	 * 业务场景
@@ -56,6 +62,12 @@ public class AlipayFundWalletTokenCreateModel extends AlipayObject {
 	private String realName;
 
 	/**
+	 * 是否跳过结果页,true为跳过，false为不跳过。默认不跳过
+	 */
+	@ApiField("skip_result")
+	private Boolean skipResult;
+
+	/**
 	 * 场景钱包模版id
 	 */
 	@ApiField("wallet_template_id")
@@ -66,6 +78,13 @@ public class AlipayFundWalletTokenCreateModel extends AlipayObject {
 	}
 	public void setAgreementPaySign(String agreementPaySign) {
 		this.agreementPaySign = agreementPaySign;
+	}
+
+	public String getBackUrl() {
+		return this.backUrl;
+	}
+	public void setBackUrl(String backUrl) {
+		this.backUrl = backUrl;
 	}
 
 	public String getBizScene() {
@@ -108,6 +127,13 @@ public class AlipayFundWalletTokenCreateModel extends AlipayObject {
 	}
 	public void setRealName(String realName) {
 		this.realName = realName;
+	}
+
+	public Boolean getSkipResult() {
+		return this.skipResult;
+	}
+	public void setSkipResult(Boolean skipResult) {
+		this.skipResult = skipResult;
 	}
 
 	public String getWalletTemplateId() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 凭证核销详情
  *
  * @author auto create
- * @since 1.0, 2023-09-14 00:02:31
+ * @since 1.0, 2023-10-16 15:13:15
  */
 public class CertificateUseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3493421688186537752L;
+	private static final long serialVersionUID = 7129488256466487373L;
 
 	/**
 	 * 三方码
@@ -25,6 +25,12 @@ public class CertificateUseInfo extends AlipayObject {
 	@ApiField("encrypted_code")
 	private String encryptedCode;
 
+	/**
+	 * 凭证核销次数。不传默认为1
+	 */
+	@ApiField("use_count")
+	private Long useCount;
+
 	public String getCode() {
 		return this.code;
 	}
@@ -37,6 +43,13 @@ public class CertificateUseInfo extends AlipayObject {
 	}
 	public void setEncryptedCode(String encryptedCode) {
 		this.encryptedCode = encryptedCode;
+	}
+
+	public Long getUseCount() {
+		return this.useCount;
+	}
+	public void setUseCount(Long useCount) {
+		this.useCount = useCount;
 	}
 
 }

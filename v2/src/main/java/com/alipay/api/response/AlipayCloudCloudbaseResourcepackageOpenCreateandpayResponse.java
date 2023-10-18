@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.resourcepackage.open.createandpay response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-05 15:36:43
+ * @since 1.0, 2023-10-16 20:22:52
  */
 public class AlipayCloudCloudbaseResourcepackageOpenCreateandpayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2598162579577443461L;
+	private static final long serialVersionUID = 3143724277648972257L;
 
 	/** 
 	 * 外部环境id

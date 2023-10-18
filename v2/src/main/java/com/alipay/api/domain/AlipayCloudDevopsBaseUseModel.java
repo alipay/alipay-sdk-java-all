@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 云测设备能力使用
  *
  * @author auto create
- * @since 1.0, 2023-08-30 20:49:52
+ * @since 1.0, 2023-10-16 17:27:32
  */
 public class AlipayCloudDevopsBaseUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3251538169159962164L;
+	private static final long serialVersionUID = 6312646873156117583L;
 
 	/**
 	 * 使用条件

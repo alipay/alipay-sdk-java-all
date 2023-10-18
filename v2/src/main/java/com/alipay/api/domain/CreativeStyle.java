@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询出的风格数据列表
  *
  * @author auto create
- * @since 1.0, 2023-09-13 16:15:53
+ * @since 1.0, 2023-10-16 18:01:56
  */
 public class CreativeStyle extends AlipayObject {
 
-	private static final long serialVersionUID = 7667418234427847374L;
+	private static final long serialVersionUID = 5653379425745629878L;
 
 	/**
 	 * 查询出的风格id
@@ -25,6 +25,12 @@ public class CreativeStyle extends AlipayObject {
 	@ApiField("mock_img")
 	private String mockImg;
 
+	/**
+	 * 合成图片所需要的模版id
+	 */
+	@ApiField("pic_template_id")
+	private String picTemplateId;
+
 	public String getId() {
 		return this.id;
 	}
@@ -37,6 +43,13 @@ public class CreativeStyle extends AlipayObject {
 	}
 	public void setMockImg(String mockImg) {
 		this.mockImg = mockImg;
+	}
+
+	public String getPicTemplateId() {
+		return this.picTemplateId;
+	}
+	public void setPicTemplateId(String picTemplateId) {
+		this.picTemplateId = picTemplateId;
 	}
 
 }

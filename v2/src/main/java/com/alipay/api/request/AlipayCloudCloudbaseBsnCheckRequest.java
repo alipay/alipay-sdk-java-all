@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.bsn.check request
  * 
  * @author auto create
- * @since 1.0, 2023-09-14 14:36:44
+ * @since 1.0, 2023-10-16 20:22:11
  */
 public class AlipayCloudCloudbaseBsnCheckRequest implements AlipayRequest<AlipayCloudCloudbaseBsnCheckResponse> {
 

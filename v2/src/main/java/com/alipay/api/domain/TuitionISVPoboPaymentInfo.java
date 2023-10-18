@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 留学缴费VCC代付单payment信息
  *
  * @author auto create
- * @since 1.0, 2023-06-29 15:26:31
+ * @since 1.0, 2023-10-16 17:52:26
  */
 public class TuitionISVPoboPaymentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7619648669895153814L;
+	private static final long serialVersionUID = 4581284563159825249L;
 
 	/**
 	 * amount+留学VCC场景

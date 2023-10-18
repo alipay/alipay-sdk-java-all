@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 网关配置
  *
  * @author auto create
- * @since 1.0, 2023-08-22 20:16:22
+ * @since 1.0, 2023-10-16 20:20:49
  */
 public class GatewayConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 6586624231519494273L;
+	private static final long serialVersionUID = 7549636686968745117L;
 
 	/**
 	 * 网关域名

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 凭证核销准备详情
  *
  * @author auto create
- * @since 1.0, 2023-09-13 22:07:04
+ * @since 1.0, 2023-10-16 15:24:26
  */
 public class CertificatePrepareInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1859264935248615958L;
+	private static final long serialVersionUID = 8654881817582937471L;
 
 	/**
 	 * 凭证实例的金额信息，在异常场景下可能为空，需要判断是否有值才可进行使用。
@@ -34,10 +34,22 @@ public class CertificatePrepareInfo extends AlipayObject {
 	private String encryptedCode;
 
 	/**
+	 * 购买商品的订单id
+	 */
+	@ApiField("order_id")
+	private String orderId;
+
+	/**
 	 * 商品信息
 	 */
 	@ApiField("sku_info")
 	private CertificateSkuInfo skuInfo;
+
+	/**
+	 * 商品类型为次卡时该值必填
+	 */
+	@ApiField("times_card_info")
+	private CertificateTimesCardInfo timesCardInfo;
 
 	/**
 	 * 券的有效期开始时间
@@ -72,11 +84,25 @@ public class CertificatePrepareInfo extends AlipayObject {
 		this.encryptedCode = encryptedCode;
 	}
 
+	public String getOrderId() {
+		return this.orderId;
+	}
+	public void setOrderId(String orderId) {
+		this.orderId = orderId;
+	}
+
 	public CertificateSkuInfo getSkuInfo() {
 		return this.skuInfo;
 	}
 	public void setSkuInfo(CertificateSkuInfo skuInfo) {
 		this.skuInfo = skuInfo;
+	}
+
+	public CertificateTimesCardInfo getTimesCardInfo() {
+		return this.timesCardInfo;
+	}
+	public void setTimesCardInfo(CertificateTimesCardInfo timesCardInfo) {
+		this.timesCardInfo = timesCardInfo;
 	}
 
 	public Date getValidBeginTime() {

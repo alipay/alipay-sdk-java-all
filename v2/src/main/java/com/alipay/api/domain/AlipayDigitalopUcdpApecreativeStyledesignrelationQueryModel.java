@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询风格表布局表及关联表信息
  *
  * @author auto create
- * @since 1.0, 2023-07-27 20:51:52
+ * @since 1.0, 2023-10-16 21:08:32
  */
 public class AlipayDigitalopUcdpApecreativeStyledesignrelationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1114592193869577521L;
+	private static final long serialVersionUID = 4267123875892391271L;
 
 	/**
 	 * designId 唯一用来查询所有的布局风格关以及关联表的信息。
@@ -30,6 +30,12 @@ public class AlipayDigitalopUcdpApecreativeStyledesignrelationQueryModel extends
 	 */
 	@ApiField("page_size")
 	private String pageSize;
+
+	/**
+	 * 布局图片的行业信息。通过行业信息来查询图片。
+	 */
+	@ApiField("profession")
+	private String profession;
 
 	/**
 	 * projectId唯一用于鉴权使用
@@ -56,6 +62,13 @@ public class AlipayDigitalopUcdpApecreativeStyledesignrelationQueryModel extends
 	}
 	public void setPageSize(String pageSize) {
 		this.pageSize = pageSize;
+	}
+
+	public String getProfession() {
+		return this.profession;
+	}
+	public void setProfession(String profession) {
+		this.profession = profession;
 	}
 
 	public String getProjectId() {

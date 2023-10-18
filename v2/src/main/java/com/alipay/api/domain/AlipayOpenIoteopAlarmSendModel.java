@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenIoteopAlarmSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2868968654612366916L;
+	private static final long serialVersionUID = 7858999156554175187L;
 
 	/**
 	 * 报警规则id

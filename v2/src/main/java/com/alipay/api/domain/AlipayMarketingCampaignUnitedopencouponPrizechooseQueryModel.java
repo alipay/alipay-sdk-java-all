@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCampaignUnitedopencouponPrizechooseQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8195591225612325494L;
+	private static final long serialVersionUID = 8352558556591967983L;
 
 	/**
 	 * 用户支付宝绑定手机号。user_id、login_id、bind_mobile三个参数至少有一个非空。

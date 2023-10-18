@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataBillTransferQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4328719663449142982L;
+	private static final long serialVersionUID = 6337587687216481766L;
 
 	/**
 	 * 充值、转账、提现流水业务时间的结束范围。与起始时间间隔不超过31天。查询结果为起始时间至结束时间的左闭右开区间

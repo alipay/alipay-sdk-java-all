@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.bsn.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-19 14:06:44
+ * @since 1.0, 2023-10-16 20:21:57
  */
 public class AlipayCloudCloudbaseBsnQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5267774836788349137L;
+	private static final long serialVersionUID = 5615691856745599982L;
 
 	/** 
 	 * 已申请备案服务码列表

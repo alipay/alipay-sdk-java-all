@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.dcs.merchantqrcode.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-27 13:46:56
+ * @since 1.0, 2023-10-16 09:26:46
  */
 public class AlipayCommerceOperationDcsMerchantqrcodeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8248925431953113375L;
+	private static final long serialVersionUID = 4569681434854357187L;
 
 	/** 
 	 * 支付宝进件商户PID, 仅支持进件绑码过查询

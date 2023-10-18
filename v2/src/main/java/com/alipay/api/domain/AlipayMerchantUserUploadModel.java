@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMerchantUserUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7356317137279555393L;
+	private static final long serialVersionUID = 3862644726385214885L;
 
 	/**
 	 * 商家用户列表，注意：上传数量不能大于1000

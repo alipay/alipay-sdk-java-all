@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.digitalop.ucdp.apecreative.styledesignrelation.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-27 20:51:57
+ * @since 1.0, 2023-10-16 21:11:45
  */
 public class AlipayDigitalopUcdpApecreativeStyledesignrelationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4672233298127974837L;
+	private static final long serialVersionUID = 6273297694412537272L;
 
 	/** 
 	 * 布局id 和对应的关联信息

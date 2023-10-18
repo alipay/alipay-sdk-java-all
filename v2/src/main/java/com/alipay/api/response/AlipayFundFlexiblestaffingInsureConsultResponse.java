@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.flexiblestaffing.insure.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-22 14:51:45
+ * @since 1.0, 2023-10-16 21:06:46
  */
 public class AlipayFundFlexiblestaffingInsureConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3438867149822515379L;
+	private static final long serialVersionUID = 4871289521363359378L;
 
 	/** 
 	 * 推荐的产品方案列表

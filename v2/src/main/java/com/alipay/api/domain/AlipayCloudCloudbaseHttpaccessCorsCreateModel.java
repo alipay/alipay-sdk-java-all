@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 添加跨域安全域名
  *
  * @author auto create
- * @since 1.0, 2023-08-09 11:07:01
+ * @since 1.0, 2023-10-17 15:40:58
  */
 public class AlipayCloudCloudbaseHttpaccessCorsCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2353253911216423784L;
+	private static final long serialVersionUID = 3859263279461585183L;
 
 	/**
 	 * 小程序id
