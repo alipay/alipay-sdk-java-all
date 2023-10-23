@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用户信息
  *
  * @author auto create
- * @since 1.0, 2023-09-28 09:33:14
+ * @since 1.0, 2023-10-18 11:35:03
  */
 public class OpenApiUserInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2787694726436522373L;
+	private static final long serialVersionUID = 8127314946511751845L;
 
 	/**
 	 * 旧平台用户id
@@ -78,6 +78,12 @@ public class OpenApiUserInfo extends AlipayObject {
 	 */
 	@ApiField("user_resource_info")
 	private OpenApiUserResourceInfo userResourceInfo;
+
+	/**
+	 * 用户服务信息
+	 */
+	@ApiField("user_serve_info")
+	private OpenApiUserServeInfo userServeInfo;
 
 	/**
 	 * 工作状态
@@ -153,6 +159,13 @@ public class OpenApiUserInfo extends AlipayObject {
 	}
 	public void setUserResourceInfo(OpenApiUserResourceInfo userResourceInfo) {
 		this.userResourceInfo = userResourceInfo;
+	}
+
+	public OpenApiUserServeInfo getUserServeInfo() {
+		return this.userServeInfo;
+	}
+	public void setUserServeInfo(OpenApiUserServeInfo userServeInfo) {
+		this.userServeInfo = userServeInfo;
 	}
 
 	public String getWorkStatus() {

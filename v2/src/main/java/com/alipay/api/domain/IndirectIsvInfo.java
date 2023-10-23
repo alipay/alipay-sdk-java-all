@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IndirectIsvInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3371315256353637927L;
+	private static final long serialVersionUID = 4541182231319477937L;
 
 	/**
 	 * 是否绑定间连天梭

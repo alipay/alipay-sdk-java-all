@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝租车门店报价
  *
  * @author auto create
- * @since 1.0, 2023-08-02 17:23:09
+ * @since 1.0, 2023-10-19 18:22:59
  */
 public class RentCarStoreQuotation extends AlipayObject {
 
-	private static final long serialVersionUID = 2298766593864633369L;
+	private static final long serialVersionUID = 6728175693821671431L;
 
 	/**
 	 * 评论数（取用户对商户评论数的总和）
@@ -33,6 +33,12 @@ public class RentCarStoreQuotation extends AlipayObject {
 	 */
 	@ApiField("distance")
 	private Long distance;
+
+	/**
+	 * 在当前随心租卡片、租期、门店、车型下，随心租可以使用的天数
+	 */
+	@ApiField("easy_card_usable_day_count")
+	private Long easyCardUsableDayCount;
 
 	/**
 	 * isv优惠金额，单位分。仅用于展示，不会参与到优惠计算中
@@ -108,6 +114,12 @@ public class RentCarStoreQuotation extends AlipayObject {
 	@ApiField("unit_amount")
 	private Long unitAmount;
 
+	/**
+	 * 使用随心租后用户需要支付的总价
+	 */
+	@ApiField("use_easy_card_total_amount")
+	private Long useEasyCardTotalAmount;
+
 	public Long getCommentNum() {
 		return this.commentNum;
 	}
@@ -127,6 +139,13 @@ public class RentCarStoreQuotation extends AlipayObject {
 	}
 	public void setDistance(Long distance) {
 		this.distance = distance;
+	}
+
+	public Long getEasyCardUsableDayCount() {
+		return this.easyCardUsableDayCount;
+	}
+	public void setEasyCardUsableDayCount(Long easyCardUsableDayCount) {
+		this.easyCardUsableDayCount = easyCardUsableDayCount;
 	}
 
 	public Long getIsvDiscountAmount() {
@@ -211,6 +230,13 @@ public class RentCarStoreQuotation extends AlipayObject {
 	}
 	public void setUnitAmount(Long unitAmount) {
 		this.unitAmount = unitAmount;
+	}
+
+	public Long getUseEasyCardTotalAmount() {
+		return this.useEasyCardTotalAmount;
+	}
+	public void setUseEasyCardTotalAmount(Long useEasyCardTotalAmount) {
+		this.useEasyCardTotalAmount = useEasyCardTotalAmount;
 	}
 
 }

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.open.pobo.notify response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-16 18:04:18
+ * @since 1.0, 2023-10-23 14:42:13
  */
 public class AlipayOverseasOpenPoboNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8637578449354112112L;
+	private static final long serialVersionUID = 7441794858499755776L;
 
 	/** 
 	 * 结果返回

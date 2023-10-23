@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPcreditLoanCollateralValuationSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8169536972818685885L;
+	private static final long serialVersionUID = 4397855677775647551L;
 
 	/**
 	 * 业务流水号，即用户授信申请的单号，每次授信申请由借呗平台生成的唯一编号，通知估值时给到机构

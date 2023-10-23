@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 新增发放规则
  *
  * @author auto create
- * @since 1.0, 2023-06-27 13:48:51
+ * @since 1.0, 2023-10-18 16:13:09
  */
 public class AlipayEbppInvoiceIssueruleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5743731381228969681L;
+	private static final long serialVersionUID = 7343311683725154932L;
 
 	/**
 	 * 共同账户id
@@ -91,6 +91,12 @@ public class AlipayEbppInvoiceIssueruleCreateModel extends AlipayObject {
 	 */
 	@ApiField("issue_type")
 	private String issueType;
+
+	/**
+	 * 填写该字段可用于创建幂等，防止重复创建
+	 */
+	@ApiField("outer_source_id")
+	private String outerSourceId;
 
 	/**
 	 * 额度类型，枚举：COUPON（点券）、CAP（余额）、ISV（外算额度）
@@ -199,6 +205,13 @@ target_type为制度时：制度id
 	}
 	public void setIssueType(String issueType) {
 		this.issueType = issueType;
+	}
+
+	public String getOuterSourceId() {
+		return this.outerSourceId;
+	}
+	public void setOuterSourceId(String outerSourceId) {
+		this.outerSourceId = outerSourceId;
 	}
 
 	public String getQuotaType() {

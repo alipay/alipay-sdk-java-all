@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取上门寄件链接接口
  *
  * @author auto create
- * @since 1.0, 2023-04-06 16:02:14
+ * @since 1.0, 2023-10-23 11:59:46
  */
 public class AlipayInsSceneEcommerceHomedeliverylinkAuthModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8221639833471839786L;
+	private static final long serialVersionUID = 5695967247275575333L;
 
 	/**
 	 * 买家联系地址

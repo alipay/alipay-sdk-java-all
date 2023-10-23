@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.httpaccess.cors.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-17 15:40:58
+ * @since 1.0, 2023-10-18 14:51:45
  */
 public class AlipayCloudCloudbaseHttpaccessCorsCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3662721438644643263L;
+	private static final long serialVersionUID = 8445582374778816315L;
 
 	/** 
 	 * 是否添加成功

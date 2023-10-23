@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoCplifeRoominfoUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5351943895977953935L;
+	private static final long serialVersionUID = 5615679244631878462L;
 
 	/** 
 	 * 业主所在物业小区ID(支付宝平台唯一小区ID标示)

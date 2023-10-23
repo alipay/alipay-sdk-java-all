@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PaidOuterCardTemplateConfDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2326241878288141319L;
+	private static final long serialVersionUID = 2262787217116667795L;
 
 	/**
 	 * 连续售卖配置

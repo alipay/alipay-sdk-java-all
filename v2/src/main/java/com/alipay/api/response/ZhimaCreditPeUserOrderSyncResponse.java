@@ -8,11 +8,32 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.pe.user.order.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-26 14:52:00
+ * @since 1.0, 2023-10-19 19:01:47
  */
 public class ZhimaCreditPeUserOrderSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1164194193139716812L;
+	private static final long serialVersionUID = 2758851953985432722L;
+
+	/** 
+	 * 芝麻信用服务业务订单号
+	 */
+	@ApiField("credit_biz_order_id")
+	private String creditBizOrderId;
+
+	/** 
+	 * 信用服务订单状态.
+
+INIT: 下单状态; 
+
+WAIT_FULFILL: 
+订单待守约；
+
+CLOSED：订单取消；
+
+COMPLETE：订单已守约
+	 */
+	@ApiField("order_status")
+	private String orderStatus;
 
 	/** 
 	 * 外部请求幂等号，即接口入参的out_request_no，接口处理完之后回传
@@ -25,6 +46,20 @@ public class ZhimaCreditPeUserOrderSyncResponse extends AlipayResponse {
 	 */
 	@ApiField("success")
 	private Boolean success;
+
+	public void setCreditBizOrderId(String creditBizOrderId) {
+		this.creditBizOrderId = creditBizOrderId;
+	}
+	public String getCreditBizOrderId( ) {
+		return this.creditBizOrderId;
+	}
+
+	public void setOrderStatus(String orderStatus) {
+		this.orderStatus = orderStatus;
+	}
+	public String getOrderStatus( ) {
+		return this.orderStatus;
+	}
 
 	public void setOutRequestNo(String outRequestNo) {
 		this.outRequestNo = outRequestNo;

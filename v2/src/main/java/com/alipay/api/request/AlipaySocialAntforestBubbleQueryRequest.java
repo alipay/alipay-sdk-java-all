@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.antforest.bubble.query request
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 01:16:44
+ * @since 1.0, 2023-10-19 16:41:51
  */
 public class AlipaySocialAntforestBubbleQueryRequest implements AlipayRequest<AlipaySocialAntforestBubbleQueryResponse> {
 

@@ -1,0 +1,73 @@
+package com.alipay.api.domain;
+
+import java.util.List;
+
+import com.alipay.api.AlipayObject;
+import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
+
+/**
+ * 商品数据变更内容
+ *
+ * @author auto create
+ * @since 1.0, 2023-10-14 14:59:29
+ */
+public class AppItemDataDiffVO extends AlipayObject {
+
+	private static final long serialVersionUID = 8124666282466836545L;
+
+	/**
+	 * 商品主图的文件id，图片宽高为750px*750px，宽高比1:1，800kb以内。 支持jpg、jpeg、png格式的图片。文件id通过alipay.open.file.upload 上传资源获取file_id，或通过alipay.marketing.image.enhance.upload获取image_id均可上传成功
+	 */
+	@ApiField("head_img")
+	private String headImg;
+
+	/**
+	 * 商品子图，作为平台详情页组件的轮播图，图片宽高为750px*750px，宽高比1:1，800kb以内，不超过 3 个图片。 支持jpg、jpeg、png格式的图片。文件id通过alipay.open.file.upload 上传资源获取file_id，或通过alipay.marketing.image.enhance.upload获取image_id均可上传成功
+	 */
+	@ApiListField("image_list")
+	@ApiField("string")
+	private List<String> imageList;
+
+	/**
+	 * 商品sku变更内容列表
+	 */
+	@ApiListField("skus")
+	@ApiField("app_item_sku_diff_v_o")
+	private List<AppItemSkuDiffVO> skus;
+
+	/**
+	 * 商品名称，字符类型，最少不低于3，最长不超过60个字。注：1.商品标题只允许汉字、数字、英文字母、特殊字符集；2.商品标题不得仅为数字、字母、特殊字符集或上述三种的组合
+	 */
+	@ApiField("title")
+	private String title;
+
+	public String getHeadImg() {
+		return this.headImg;
+	}
+	public void setHeadImg(String headImg) {
+		this.headImg = headImg;
+	}
+
+	public List<String> getImageList() {
+		return this.imageList;
+	}
+	public void setImageList(List<String> imageList) {
+		this.imageList = imageList;
+	}
+
+	public List<AppItemSkuDiffVO> getSkus() {
+		return this.skus;
+	}
+	public void setSkus(List<AppItemSkuDiffVO> skus) {
+		this.skus = skus;
+	}
+
+	public String getTitle() {
+		return this.title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+}

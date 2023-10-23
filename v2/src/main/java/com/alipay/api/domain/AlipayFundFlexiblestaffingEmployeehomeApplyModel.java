@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开卡申请
  *
  * @author auto create
- * @since 1.0, 2023-10-13 09:10:11
+ * @since 1.0, 2023-10-19 11:29:38
  */
 public class AlipayFundFlexiblestaffingEmployeehomeApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6217581219384488969L;
+	private static final long serialVersionUID = 6693398681571356245L;
 
 	/**
 	 * 授权跳转类型
@@ -48,6 +48,12 @@ public class AlipayFundFlexiblestaffingEmployeehomeApplyModel extends AlipayObje
 	 */
 	@ApiField("expire_time")
 	private String expireTime;
+
+	/**
+	 * 商户外部单号，用于开通场景下的幂等判断
+	 */
+	@ApiField("out_biz_no")
+	private String outBizNo;
 
 	/**
 	 * 主体信息。新开通零工卡时必须提供，基于已有零工卡开通服务时可选，如果传递则会按照实际情况校验。
@@ -107,6 +113,13 @@ public class AlipayFundFlexiblestaffingEmployeehomeApplyModel extends AlipayObje
 	}
 	public void setExpireTime(String expireTime) {
 		this.expireTime = expireTime;
+	}
+
+	public String getOutBizNo() {
+		return this.outBizNo;
+	}
+	public void setOutBizNo(String outBizNo) {
+		this.outBizNo = outBizNo;
 	}
 
 	public ParticipantInfoDTO getPrincipalInfo() {

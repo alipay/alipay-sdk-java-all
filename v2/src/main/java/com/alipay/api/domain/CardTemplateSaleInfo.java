@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 卡模版售卖信息
  *
  * @author auto create
- * @since 1.0, 2023-10-09 10:12:18
+ * @since 1.0, 2023-10-20 10:55:43
  */
 public class CardTemplateSaleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3821815173233763365L;
+	private static final long serialVersionUID = 5659342575677421745L;
 
 	/**
 	 * 售卖结束时间

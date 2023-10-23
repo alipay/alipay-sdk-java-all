@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.extension.sms.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-09-14 17:41:44
+ * @since 1.0, 2023-10-18 15:01:46
  */
 public class AlipayCloudCloudbaseExtensionSmsApplyRequest implements AlipayRequest<AlipayCloudCloudbaseExtensionSmsApplyResponse> {
 

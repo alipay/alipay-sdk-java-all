@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 卡周期信息
  *
  * @author auto create
- * @since 1.0, 2023-10-09 10:11:19
+ * @since 1.0, 2023-10-20 10:55:43
  */
 public class CardCycleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7388755945331921488L;
+	private static final long serialVersionUID = 1637475739496824625L;
 
 	/**
 	 * 周期计费类型

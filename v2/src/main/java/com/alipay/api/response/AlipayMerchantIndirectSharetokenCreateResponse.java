@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.indirect.sharetoken.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-07 13:16:44
+ * @since 1.0, 2023-10-20 14:16:48
  */
 public class AlipayMerchantIndirectSharetokenCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3595239355855822831L;
+	private static final long serialVersionUID = 1715458272156672444L;
 
 	/** 
 	 * 业务token,用来串联业务操作行为及分析

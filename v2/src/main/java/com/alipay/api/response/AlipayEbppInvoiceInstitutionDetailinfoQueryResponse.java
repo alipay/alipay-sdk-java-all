@@ -13,11 +13,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.institution.detailinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-11 17:06:45
+ * @since 1.0, 2023-10-18 16:01:46
  */
 public class AlipayEbppInvoiceInstitutionDetailinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6893511991798512158L;
+	private static final long serialVersionUID = 6823521573457424864L;
+
+	/** 
+	 * 若适用范围为EMPLOYEE_ALL，则表示制度对企业下全员生效，owner_id_list不返回；若适配范围为EMPLOYEE_SELECT，owner_id_list返回员工对应的id信息，返回的id类型通过owner_type区分；若适配范围为EMPLOYEE_DEPARTMENT，则表示对指定的部门生效，返回owner_id_list为部门id列表
+	 */
+	@ApiField("adapter_type")
+	private String adapterType;
 
 	/** 
 	 * 费控咨询模式
@@ -75,6 +81,26 @@ public class AlipayEbppInvoiceInstitutionDetailinfoQueryResponse extends AlipayR
 	private List<IssueRuleInfo> issueRuleInfoList;
 
 	/** 
+	 * 外部唯一标识
+	 */
+	@ApiField("outer_source_id")
+	private String outerSourceId;
+
+	/** 
+	 * 适配id列表
+	 */
+	@ApiListField("owner_id_list")
+	@ApiField("string")
+	private List<String> ownerIdList;
+
+	/** 
+	 * 适配开放id列表
+	 */
+	@ApiListField("owner_open_id_list")
+	@ApiField("string")
+	private List<String> ownerOpenIdList;
+
+	/** 
 	 * 因公场景
 	 */
 	@ApiField("scene_type")
@@ -92,6 +118,13 @@ public class AlipayEbppInvoiceInstitutionDetailinfoQueryResponse extends AlipayR
 	 */
 	@ApiField("standard_info_list")
 	private StandardInfo standardInfoList;
+
+	public void setAdapterType(String adapterType) {
+		this.adapterType = adapterType;
+	}
+	public String getAdapterType( ) {
+		return this.adapterType;
+	}
 
 	public void setConsultMode(String consultMode) {
 		this.consultMode = consultMode;
@@ -154,6 +187,27 @@ public class AlipayEbppInvoiceInstitutionDetailinfoQueryResponse extends AlipayR
 	}
 	public List<IssueRuleInfo> getIssueRuleInfoList( ) {
 		return this.issueRuleInfoList;
+	}
+
+	public void setOuterSourceId(String outerSourceId) {
+		this.outerSourceId = outerSourceId;
+	}
+	public String getOuterSourceId( ) {
+		return this.outerSourceId;
+	}
+
+	public void setOwnerIdList(List<String> ownerIdList) {
+		this.ownerIdList = ownerIdList;
+	}
+	public List<String> getOwnerIdList( ) {
+		return this.ownerIdList;
+	}
+
+	public void setOwnerOpenIdList(List<String> ownerOpenIdList) {
+		this.ownerOpenIdList = ownerOpenIdList;
+	}
+	public List<String> getOwnerOpenIdList( ) {
+		return this.ownerOpenIdList;
 	}
 
 	public void setSceneType(String sceneType) {

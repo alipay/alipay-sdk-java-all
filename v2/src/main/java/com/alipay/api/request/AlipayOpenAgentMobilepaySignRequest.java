@@ -14,7 +14,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.agent.mobilepay.sign request
  * 
  * @author auto create
- * @since 1.0, 2023-09-27 17:56:53
+ * @since 1.0, 2023-10-20 19:36:47
  */
 public class AlipayOpenAgentMobilepaySignRequest implements AlipayUploadRequest<AlipayOpenAgentMobilepaySignResponse> {
 
@@ -32,7 +32,17 @@ public class AlipayOpenAgentMobilepaySignRequest implements AlipayUploadRequest<
 	private FileItem appDemo;
 
 	/** 
-	* 应用在哪些市场上架，枚举值为：苹果,应用宝,豌豆荚,其他
+	* 应用首页截图，最小5KB，图片格式必须为：png、bmp、gif、jpg、jpeg
+	 */
+	private FileItem appHomeScreenshot;
+
+	/** 
+	* 商品或服务页截图，最小5KB，图片格式必须为：png、bmp、gif、jpg、jpeg
+	 */
+	private FileItem appItemScreenshot;
+
+	/** 
+	* 应用在哪些市场上架，枚举值为：苹果,应用宝,华为,360,小米,豌豆荚,其他
 	 */
 	private List<String> appMarket;
 
@@ -42,7 +52,12 @@ public class AlipayOpenAgentMobilepaySignRequest implements AlipayUploadRequest<
 	private String appName;
 
 	/** 
-	* 应用上架状态，枚举值为 已上架，未上架
+	* 应用内支付页截图，最小5KB，图片格式必须为：png、bmp、gif、jpg、jpeg
+	 */
+	private FileItem appPayScreenshot;
+
+	/** 
+	* 应用上架状态，枚举值为 已上线，未上线
 	 */
 	private String appStatus;
 
@@ -118,6 +133,11 @@ public class AlipayOpenAgentMobilepaySignRequest implements AlipayUploadRequest<
 	private String mccCode;
 
 	/** 
+	* 传参：APP，代表设备类型是APP
+	 */
+	private String mobileType;
+
+	/** 
 	* 应用内支付页截图，最小5KB，图片格式必须为：png、bmp、gif、jpg、jpeg
 	 */
 	private FileItem payScreenshot;
@@ -127,6 +147,11 @@ public class AlipayOpenAgentMobilepaySignRequest implements AlipayUploadRequest<
 <a href="https://opendocs.alipay.com/open/01n22g#%E5%95%86%E5%AE%B6%E7%BB%8F%E8%90%A5%E7%B1%BB%E7%9B%AE">商家经营类目</a> 中的“需要的特殊资质证书”，最小5KB，图片格式必须为：png、bmp、gif、jpg、jpeg
 	 */
 	private FileItem specialLicensePic;
+
+	/** 
+	* 传参：mobile，代表交易场景是移动设备
+	 */
+	private String tradeScene;
 
 	public void setAppAuthPic(FileItem appAuthPic) {
 		this.appAuthPic = appAuthPic;
@@ -142,6 +167,20 @@ public class AlipayOpenAgentMobilepaySignRequest implements AlipayUploadRequest<
 		return this.appDemo;
 	}
 
+	public void setAppHomeScreenshot(FileItem appHomeScreenshot) {
+		this.appHomeScreenshot = appHomeScreenshot;
+	}
+	public FileItem getAppHomeScreenshot() {
+		return this.appHomeScreenshot;
+	}
+
+	public void setAppItemScreenshot(FileItem appItemScreenshot) {
+		this.appItemScreenshot = appItemScreenshot;
+	}
+	public FileItem getAppItemScreenshot() {
+		return this.appItemScreenshot;
+	}
+
 	public void setAppMarket(List<String> appMarket) {
 		this.appMarket = appMarket;
 	}
@@ -154,6 +193,13 @@ public class AlipayOpenAgentMobilepaySignRequest implements AlipayUploadRequest<
 	}
 	public String getAppName() {
 		return this.appName;
+	}
+
+	public void setAppPayScreenshot(FileItem appPayScreenshot) {
+		this.appPayScreenshot = appPayScreenshot;
+	}
+	public FileItem getAppPayScreenshot() {
+		return this.appPayScreenshot;
 	}
 
 	public void setAppStatus(String appStatus) {
@@ -261,6 +307,13 @@ public class AlipayOpenAgentMobilepaySignRequest implements AlipayUploadRequest<
 		return this.mccCode;
 	}
 
+	public void setMobileType(String mobileType) {
+		this.mobileType = mobileType;
+	}
+	public String getMobileType() {
+		return this.mobileType;
+	}
+
 	public void setPayScreenshot(FileItem payScreenshot) {
 		this.payScreenshot = payScreenshot;
 	}
@@ -273,6 +326,13 @@ public class AlipayOpenAgentMobilepaySignRequest implements AlipayUploadRequest<
 	}
 	public FileItem getSpecialLicensePic() {
 		return this.specialLicensePic;
+	}
+
+	public void setTradeScene(String tradeScene) {
+		this.tradeScene = tradeScene;
+	}
+	public String getTradeScene() {
+		return this.tradeScene;
 	}
 	private String terminalType;
 	private String terminalInfo;
@@ -348,6 +408,8 @@ public class AlipayOpenAgentMobilepaySignRequest implements AlipayUploadRequest<
 		txtParams.put("download_link", this.downloadLink);
 		txtParams.put("long_term", this.longTerm);
 		txtParams.put("mcc_code", this.mccCode);
+		txtParams.put("mobile_type", this.mobileType);
+		txtParams.put("trade_scene", this.tradeScene);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}
@@ -365,6 +427,9 @@ public class AlipayOpenAgentMobilepaySignRequest implements AlipayUploadRequest<
 		Map<String, FileItem> params = new HashMap<String, FileItem>();
 		params.put("app_auth_pic", this.appAuthPic);
 		params.put("app_demo", this.appDemo);
+		params.put("app_home_screenshot", this.appHomeScreenshot);
+		params.put("app_item_screenshot", this.appItemScreenshot);
+		params.put("app_pay_screenshot", this.appPayScreenshot);
 		params.put("business_license_auth_pic", this.businessLicenseAuthPic);
 		params.put("business_license_pic", this.businessLicensePic);
 		params.put("home_screenshot", this.homeScreenshot);

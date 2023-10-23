@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 云存储文件基本信息
  *
  * @author auto create
- * @since 1.0, 2023-09-19 15:31:39
+ * @since 1.0, 2023-10-18 19:38:10
  */
 public class FileBaseInfoResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 8787183698837556524L;
+	private static final long serialVersionUID = 8728551356431779815L;
 
 	/**
 	 * 文件绝对路径

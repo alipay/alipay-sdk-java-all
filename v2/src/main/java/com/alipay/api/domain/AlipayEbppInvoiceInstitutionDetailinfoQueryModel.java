@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 制度详情查询
  *
  * @author auto create
- * @since 1.0, 2023-05-09 15:21:51
+ * @since 1.0, 2023-10-18 15:59:26
  */
 public class AlipayEbppInvoiceInstitutionDetailinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6481377747166814828L;
+	private static final long serialVersionUID = 3626172949254846131L;
 
 	/**
 	 * 企业共同账户id
@@ -36,6 +36,18 @@ public class AlipayEbppInvoiceInstitutionDetailinfoQueryModel extends AlipayObje
 	 */
 	@ApiField("institution_id")
 	private String institutionId;
+
+	/**
+	 * 外部唯一标识
+	 */
+	@ApiField("outer_source_id")
+	private String outerSourceId;
+
+	/**
+	 * 适配id类型
+	 */
+	@ApiField("owner_type")
+	private String ownerType;
 
 	public String getAccountId() {
 		return this.accountId;
@@ -63,6 +75,20 @@ public class AlipayEbppInvoiceInstitutionDetailinfoQueryModel extends AlipayObje
 	}
 	public void setInstitutionId(String institutionId) {
 		this.institutionId = institutionId;
+	}
+
+	public String getOuterSourceId() {
+		return this.outerSourceId;
+	}
+	public void setOuterSourceId(String outerSourceId) {
+		this.outerSourceId = outerSourceId;
+	}
+
+	public String getOwnerType() {
+		return this.ownerType;
+	}
+	public void setOwnerType(String ownerType) {
+		this.ownerType = ownerType;
 	}
 
 }

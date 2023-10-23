@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCreditPeIndustryLicenseCertifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4747782124728689499L;
+	private static final long serialVersionUID = 8598983661282233448L;
 
 	/**
 	 * 业务场景,分时租赁平台:car_sharing_zhima,具体业务对应的业务场景请联系业务确认

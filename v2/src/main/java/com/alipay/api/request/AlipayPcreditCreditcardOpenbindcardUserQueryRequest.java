@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.creditcard.openbindcard.user.query request
  * 
  * @author auto create
- * @since 1.0, 2023-10-17 15:56:46
+ * @since 1.0, 2023-10-23 10:28:35
  */
 public class AlipayPcreditCreditcardOpenbindcardUserQueryRequest implements AlipayRequest<AlipayPcreditCreditcardOpenbindcardUserQueryResponse> {
 

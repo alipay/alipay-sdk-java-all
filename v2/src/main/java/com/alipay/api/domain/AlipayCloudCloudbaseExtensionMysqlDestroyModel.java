@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 卸载MySQL扩展
  *
  * @author auto create
- * @since 1.0, 2023-09-14 17:40:42
+ * @since 1.0, 2023-10-18 14:49:46
  */
 public class AlipayCloudCloudbaseExtensionMysqlDestroyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6485429989195168166L;
+	private static final long serialVersionUID = 4446659667878287979L;
 
 	/**
 	 * 小程序id

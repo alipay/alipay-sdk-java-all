@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量添加员工接口，添加成功的员工信息
  *
  * @author auto create
- * @since 1.0, 2023-09-12 17:00:03
+ * @since 1.0, 2023-10-19 21:26:54
  */
 public class EcEmployeeBatchAddSuccessInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1774838163672343165L;
+	private static final long serialVersionUID = 6259634897963146999L;
 
 	/**
 	 * 证件号

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 卡可使用门店信息
  *
  * @author auto create
- * @since 1.0, 2023-10-09 10:12:08
+ * @since 1.0, 2023-10-20 10:55:43
  */
 public class CardUsableShopInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4645921155353118187L;
+	private static final long serialVersionUID = 8813217666643226268L;
 
 	/**
 	 * 门店ID

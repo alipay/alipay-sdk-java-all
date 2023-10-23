@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序智能营销商品信息回填接口
  *
  * @author auto create
- * @since 1.0, 2023-09-21 23:25:16
+ * @since 1.0, 2023-10-23 17:57:56
  */
 public class TechriskInnovateMpcpromoItemSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2367153175987126831L;
+	private static final long serialVersionUID = 4885927962399525792L;
 
 	/**
 	 * 被授权小程序appid

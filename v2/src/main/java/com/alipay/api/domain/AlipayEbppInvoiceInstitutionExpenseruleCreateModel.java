@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建费控使用规则
  *
  * @author auto create
- * @since 1.0, 2023-09-26 16:44:30
+ * @since 1.0, 2023-10-18 15:59:27
  */
 public class AlipayEbppInvoiceInstitutionExpenseruleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7613263933199781846L;
+	private static final long serialVersionUID = 2561987165964892643L;
 
 	/**
 	 * 企业共同账户id
@@ -69,6 +69,12 @@ public class AlipayEbppInvoiceInstitutionExpenseruleCreateModel extends AlipayOb
 	 */
 	@ApiField("open_rule_id")
 	private String openRuleId;
+
+	/**
+	 * 外部唯一标识，填写该字段可用于创建幂等，防止重复创建
+	 */
+	@ApiField("outer_source_id")
+	private String outerSourceId;
 
 	/**
 	 * 支付策略
@@ -156,6 +162,13 @@ public class AlipayEbppInvoiceInstitutionExpenseruleCreateModel extends AlipayOb
 	}
 	public void setOpenRuleId(String openRuleId) {
 		this.openRuleId = openRuleId;
+	}
+
+	public String getOuterSourceId() {
+		return this.outerSourceId;
+	}
+	public void setOuterSourceId(String outerSourceId) {
+		this.outerSourceId = outerSourceId;
 	}
 
 	public String getPaymentPolicy() {

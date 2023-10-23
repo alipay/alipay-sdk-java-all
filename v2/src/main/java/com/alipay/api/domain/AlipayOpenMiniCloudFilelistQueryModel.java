@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 云存储文件列表查询
  *
  * @author auto create
- * @since 1.0, 2023-08-31 17:35:53
+ * @since 1.0, 2023-10-18 19:38:10
  */
 public class AlipayOpenMiniCloudFilelistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4431358679588464433L;
+	private static final long serialVersionUID = 3571847598472195427L;
 
 	/**
 	 * 云环境ID,在云托管平台获取

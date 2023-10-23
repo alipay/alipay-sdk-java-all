@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用受理订单信息同步
  *
  * @author auto create
- * @since 1.0, 2023-09-01 16:23:52
+ * @since 1.0, 2023-10-19 18:57:29
  */
 public class ZhimaCreditPeUserOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3781462485922217577L;
+	private static final long serialVersionUID = 3823184759336296975L;
 
 	/**
 	 * 买家的支付宝用户id
@@ -20,10 +20,22 @@ public class ZhimaCreditPeUserOrderSyncModel extends AlipayObject {
 	private String buyerId;
 
 	/**
+	 * 芝麻信用服务业务订单号
+	 */
+	@ApiField("credit_biz_order_id")
+	private String creditBizOrderId;
+
+	/**
 	 * 买家的支付宝用户id
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/**
+	 * 订单金额，单位：元
+	 */
+	@ApiField("order_amount")
+	private String orderAmount;
 
 	/**
 	 * 订单待同步信息，不能为空，json格式字符串，自定义key需要提前与接口owner进行沟通确认
@@ -74,11 +86,25 @@ public class ZhimaCreditPeUserOrderSyncModel extends AlipayObject {
 		this.buyerId = buyerId;
 	}
 
+	public String getCreditBizOrderId() {
+		return this.creditBizOrderId;
+	}
+	public void setCreditBizOrderId(String creditBizOrderId) {
+		this.creditBizOrderId = creditBizOrderId;
+	}
+
 	public String getOpenId() {
 		return this.openId;
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public String getOrderAmount() {
+		return this.orderAmount;
+	}
+	public void setOrderAmount(String orderAmount) {
+		this.orderAmount = orderAmount;
 	}
 
 	public String getOrderInfo() {

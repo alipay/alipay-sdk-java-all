@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 待查账的户号
  *
  * @author auto create
- * @since 1.0, 2023-10-08 13:52:11
+ * @since 1.0, 2023-10-23 10:22:00
  */
 public class BillKeyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3295544569344327682L;
+	private static final long serialVersionUID = 8586794875643736869L;
 
 	/**
 	 * 户号
@@ -44,6 +44,12 @@ public class BillKeyInfo extends AlipayObject {
 	 */
 	@ApiField("country")
 	private String country;
+
+	/**
+	 * 支付宝分配的对于机构服务的唯一标识
+	 */
+	@ApiField("inst_code")
+	private String instCode;
 
 	/**
 	 * 省份（6位code）
@@ -96,6 +102,13 @@ public class BillKeyInfo extends AlipayObject {
 	}
 	public void setCountry(String country) {
 		this.country = country;
+	}
+
+	public String getInstCode() {
+		return this.instCode;
+	}
+	public void setInstCode(String instCode) {
+		this.instCode = instCode;
 	}
 
 	public String getProvince() {

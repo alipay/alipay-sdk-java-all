@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 卸载BSN（备案服务码）扩展
  *
  * @author auto create
- * @since 1.0, 2023-09-14 17:40:16
+ * @since 1.0, 2023-10-18 14:49:32
  */
 public class AlipayCloudCloudbaseExtensionBsnDestroyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4126455349867328436L;
+	private static final long serialVersionUID = 5559673778811684543L;
 
 	/**
 	 * 小程序id

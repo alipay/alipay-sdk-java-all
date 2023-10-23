@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ape创意生成图片接口
  *
  * @author auto create
- * @since 1.0, 2023-07-27 10:37:04
+ * @since 1.0, 2023-10-20 19:04:00
  */
 public class AlipayDigitalopUcdpApecreativeResultpicCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3473632288139834689L;
+	private static final long serialVersionUID = 7244752437323896823L;
 
 	/**
 	 * 文本信息
@@ -36,6 +36,12 @@ public class AlipayDigitalopUcdpApecreativeResultpicCreateModel extends AlipayOb
 	private String groupId;
 
 	/**
+	 * 合成图片时所需的高
+	 */
+	@ApiField("height")
+	private Long height;
+
+	/**
 	 * 商家在蚂蚁推荐引擎创建的项目id，调用前需要找蚂蚁技术获取。
 	 */
 	@ApiField("project_id")
@@ -47,6 +53,12 @@ public class AlipayDigitalopUcdpApecreativeResultpicCreateModel extends AlipayOb
 	@ApiListField("style_id_list")
 	@ApiField("string")
 	private List<String> styleIdList;
+
+	/**
+	 * 合成图片时所需的宽
+	 */
+	@ApiField("width")
+	private Long width;
 
 	public List<ItemDesignTextInfo> getCreativeItemDesignTextList() {
 		return this.creativeItemDesignTextList;
@@ -69,6 +81,13 @@ public class AlipayDigitalopUcdpApecreativeResultpicCreateModel extends AlipayOb
 		this.groupId = groupId;
 	}
 
+	public Long getHeight() {
+		return this.height;
+	}
+	public void setHeight(Long height) {
+		this.height = height;
+	}
+
 	public String getProjectId() {
 		return this.projectId;
 	}
@@ -81,6 +100,13 @@ public class AlipayDigitalopUcdpApecreativeResultpicCreateModel extends AlipayOb
 	}
 	public void setStyleIdList(List<String> styleIdList) {
 		this.styleIdList = styleIdList;
+	}
+
+	public Long getWidth() {
+		return this.width;
+	}
+	public void setWidth(Long width) {
+		this.width = width;
 	}
 
 }

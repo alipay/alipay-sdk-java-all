@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 卸载短信扩展
  *
  * @author auto create
- * @since 1.0, 2023-09-14 17:40:08
+ * @since 1.0, 2023-10-18 14:49:53
  */
 public class AlipayCloudCloudbaseExtensionSmsDestroyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7541785419979888978L;
+	private static final long serialVersionUID = 8181247932224364413L;
 
 	/**
 	 * 小程序id

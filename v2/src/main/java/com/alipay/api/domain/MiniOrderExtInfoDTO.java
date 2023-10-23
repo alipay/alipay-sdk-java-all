@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单扩展信息模型
  *
  * @author auto create
- * @since 1.0, 2023-08-11 15:27:55
+ * @since 1.0, 2023-10-19 10:06:28
  */
 public class MiniOrderExtInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7186278999257657589L;
+	private static final long serialVersionUID = 2453632385844467831L;
 
 	/**
 	 * 预约上门取件的时间,格式为  yyyy-MM-dd HH:mm:ss

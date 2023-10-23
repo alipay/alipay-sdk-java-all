@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.creditcard.openbindcard.user.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-17 15:56:46
+ * @since 1.0, 2023-10-23 10:28:35
  */
 public class AlipayPcreditCreditcardOpenbindcardUserQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5368222597541711543L;
+	private static final long serialVersionUID = 6673564961159561144L;
 
 	/** 
 	 * 活动是否对查询用户准入

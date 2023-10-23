@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.extension.bsn.destroy request
  * 
  * @author auto create
- * @since 1.0, 2023-09-14 17:41:44
+ * @since 1.0, 2023-10-18 14:51:45
  */
 public class AlipayCloudCloudbaseExtensionBsnDestroyRequest implements AlipayRequest<AlipayCloudCloudbaseExtensionBsnDestroyResponse> {
 

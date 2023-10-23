@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.charger.greenenergy.publish response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-27 09:46:51
+ * @since 1.0, 2023-10-22 11:21:00
  */
 public class AlipayEbppChargerGreenenergyPublishResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1336969638271782973L;
+	private static final long serialVersionUID = 7493515191312844238L;
 
 	
 

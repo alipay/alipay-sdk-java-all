@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayFundTransGroupfundsBatchCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4264864399152674141L;
+	private static final long serialVersionUID = 8369272425765317294L;
 
 	/**
 	 * 当前创建批次的支付宝用户ID

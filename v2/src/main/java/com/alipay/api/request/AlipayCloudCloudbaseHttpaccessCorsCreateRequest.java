@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.httpaccess.cors.create request
  * 
  * @author auto create
- * @since 1.0, 2023-10-17 15:40:58
+ * @since 1.0, 2023-10-18 14:51:45
  */
 public class AlipayCloudCloudbaseHttpaccessCorsCreateRequest implements AlipayRequest<AlipayCloudCloudbaseHttpaccessCorsCreateResponse> {
 
