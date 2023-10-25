@@ -193,7 +193,7 @@ public class Example {
 
     AlipayMarketingActivityOrdervoucherApi apiInstance = new AlipayMarketingActivityOrdervoucherApi(defaultClient);
     String activityId = "2016042700826004508401111111"; // String | 活动id
-    String merchantAccessMode = "SELF_MODE"; // String | 商户接入模式
+    String merchantAccessMode = "AGENCY_MODE"; // String | 商户接入模式
     try {
       AlipayMarketingActivityOrdervoucherCodecountResponseModel result = apiInstance.codecount(activityId, merchantAccessMode);
       System.out.println(result);
@@ -265,7 +265,7 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayMarketingActivityOrdervoucherApi apiInstance = new AlipayMarketingActivityOrdervoucherApi(defaultClient);
-    String activityId = "2016042700826004508401111111"; // String | 活动id  限制 请在接收alipay.marketing.activity.message.created消息后，再进行调用。
+    String activityId = "2016042700826004508401111111"; // String | 活动id
     AlipayMarketingActivityOrdervoucherCodedepositModel alipayMarketingActivityOrdervoucherCodedepositModel = new AlipayMarketingActivityOrdervoucherCodedepositModel(); // AlipayMarketingActivityOrdervoucherCodedepositModel | 
     try {
       AlipayMarketingActivityOrdervoucherCodedepositResponseModel result = apiInstance.codedeposit(activityId, alipayMarketingActivityOrdervoucherCodedepositModel);
@@ -285,7 +285,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **activityId** | **String**| 活动id  限制 请在接收alipay.marketing.activity.message.created消息后，再进行调用。 | |
+| **activityId** | **String**| 活动id | |
 | **alipayMarketingActivityOrdervoucherCodedepositModel** | **AlipayMarketingActivityOrdervoucherCodedepositModel**|  | [optional] |
 
 ### Return type
@@ -626,7 +626,7 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayMarketingActivityOrdervoucherApi apiInstance = new AlipayMarketingActivityOrdervoucherApi(defaultClient);
-    String activityId = "2016042700826004508401111111"; // String | 优惠券活动id
+    String activityId = "2016042700826004508401111111"; // String | 活动id
     String voucherCode = "ABE44"; // String | 已核销待退券的券码
     AlipayMarketingActivityOrdervoucherRefundModel alipayMarketingActivityOrdervoucherRefundModel = new AlipayMarketingActivityOrdervoucherRefundModel(); // AlipayMarketingActivityOrdervoucherRefundModel | 
     try {
@@ -647,7 +647,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **activityId** | **String**| 优惠券活动id | |
+| **activityId** | **String**| 活动id | |
 | **voucherCode** | **String**| 已核销待退券的券码 | |
 | **alipayMarketingActivityOrdervoucherRefundModel** | **AlipayMarketingActivityOrdervoucherRefundModel**|  | [optional] |
 
@@ -774,7 +774,7 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayMarketingActivityOrdervoucherApi apiInstance = new AlipayMarketingActivityOrdervoucherApi(defaultClient);
-    String activityId = "2016042700826004508401111111"; // String | 优惠券活动id
+    String activityId = "2016042700826004508401111111"; // String | 活动id
     String voucherCode = "ABE44"; // String | 待核销的券码。
     AlipayMarketingActivityOrdervoucherUseModel alipayMarketingActivityOrdervoucherUseModel = new AlipayMarketingActivityOrdervoucherUseModel(); // AlipayMarketingActivityOrdervoucherUseModel | 
     try {
@@ -795,7 +795,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **activityId** | **String**| 优惠券活动id | |
+| **activityId** | **String**| 活动id | |
 | **voucherCode** | **String**| 待核销的券码。 | |
 | **alipayMarketingActivityOrdervoucherUseModel** | **AlipayMarketingActivityOrdervoucherUseModel**|  | [optional] |
 

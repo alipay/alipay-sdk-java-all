@@ -1,7 +1,7 @@
 # alipay-sdk-java-v3
 
 支付宝开放平台API
-- API version: 2023-09-06
+- API version: 2023-10-25
 
 支付宝开放平台v3协议文档
 
@@ -40,7 +40,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>com.alipay.sdk</groupId>
   <artifactId>alipay-sdk-java-v3</artifactId>
-  <version>2.7.2.ALL</version>
+  <version>2.7.10.ALL</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -56,7 +56,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "com.alipay.sdk:alipay-sdk-java-v3:2.7.2.ALL"
+     implementation "com.alipay.sdk:alipay-sdk-java-v3:2.7.10.ALL"
   }
 ```
 
@@ -70,7 +70,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/alipay-sdk-java-v3-2.7.2.ALL.jar`
+* `target/alipay-sdk-java-v3-2.7.10.ALL.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
@@ -899,9 +899,9 @@ Class | Method | HTTP request | Description
 *KoubeiTradeOrderApi* | [**consult**](docs/KoubeiTradeOrderApi.md#consult) | **POST** /v3/koubei/trade/order/consult | 口碑订单预咨询
 *MonitorHeartbeatApi* | [**syn**](docs/MonitorHeartbeatApi.md#syn) | **POST** /v3/monitor/heartbeat/syn | 验签接口
 *ZhimaCreditPayafteruseCreditagreementApi* | [**query**](docs/ZhimaCreditPayafteruseCreditagreementApi.md#query) | **GET** /v3/zhima/credit/payafteruse/creditagreement/query | 查询服务开通/授权信息
-*ZhimaCreditPayafteruseCreditagreementApi* | [**transfer**](docs/ZhimaCreditPayafteruseCreditagreementApi.md#transfer) | **POST** /v3/zhima/credit/payafteruse/creditagreement/transfer | 转换为芝麻先享
+*ZhimaCreditPayafteruseCreditagreementApi* | [**transfer**](docs/ZhimaCreditPayafteruseCreditagreementApi.md#transfer) | **POST** /v3/zhima/credit/payafteruse/creditagreement/transfer | 芝麻信用服务授权
 *ZhimaCreditPayafteruseCreditbizorderApi* | [**finish**](docs/ZhimaCreditPayafteruseCreditbizorderApi.md#finish) | **POST** /v3/zhima/credit/payafteruse/creditbizorder/finish | 结束信用服务订单
-*ZhimaCreditPayafteruseCreditbizorderApi* | [**order**](docs/ZhimaCreditPayafteruseCreditbizorderApi.md#order) | **POST** /v3/zhima/credit/payafteruse/creditbizorder/order | 芝麻先享信用服务下单（免用户确认场景）
+*ZhimaCreditPayafteruseCreditbizorderApi* | [**order**](docs/ZhimaCreditPayafteruseCreditbizorderApi.md#order) | **POST** /v3/zhima/credit/payafteruse/creditbizorder/order | 芝麻信用服务下单（免用户确认场景）
 *ZhimaCreditPayafteruseCreditbizorderApi* | [**query**](docs/ZhimaCreditPayafteruseCreditbizorderApi.md#query) | **GET** /v3/zhima/credit/payafteruse/creditbizorder/query | 信用服务订单查询
 *ZhimaCreditPeZmgoAgreementApi* | [**query**](docs/ZhimaCreditPeZmgoAgreementApi.md#query) | **GET** /v3/zhima/credit/pe/zmgo/agreement/query | 芝麻Go协议查询接口
 *ZhimaCreditPeZmgoAgreementApi* | [**unsign**](docs/ZhimaCreditPeZmgoAgreementApi.md#unsign) | **POST** /v3/zhima/credit/pe/zmgo/agreement/unsign | 芝麻GO协议解约

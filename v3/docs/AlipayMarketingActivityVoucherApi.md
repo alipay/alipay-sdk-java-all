@@ -328,7 +328,7 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayMarketingActivityVoucherApi apiInstance = new AlipayMarketingActivityVoucherApi(defaultClient);
-    String activityId = "2016042700826004508401111111"; // String | 活动 id
+    String activityId = "2016042700826004508401111111"; // String | 活动id
     String merchantAccessMode = "AGENCY_MODE"; // String | 商户接入模式。
     try {
       AlipayMarketingActivityVoucherQueryResponseModel result = apiInstance.query(activityId, merchantAccessMode);
@@ -348,7 +348,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **activityId** | **String**| 活动 id | [optional] |
+| **activityId** | **String**| 活动id | [optional] |
 | **merchantAccessMode** | **String**| 商户接入模式。 | [optional] |
 
 ### Return type

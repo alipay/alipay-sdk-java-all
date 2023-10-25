@@ -42,7 +42,7 @@ public class Example {
     Integer pageNum = 1; // Integer | 查询的页数，起始为 1（第一页） 。默认第一页。
     Integer pageSize = 10; // Integer | 每页的数量，最多查询50个，默认查询10个
     String templateVersion = "0.0.1"; // String | 模板小程序的版本号
-    String bundleId = "com.alipay.alipaywallet"; // String | 小程序投放的端参数，例如投放到支付宝钱包是支付宝端。默认支付宝端。支持： com.alipay.alipaywallet:支付宝端； com.alipay.iot.xpaas：支付宝IoT端。
+    String bundleId = "com.alipay.alipaywallet"; // String | 小程序客户端类型，默认为支付宝端。常见支持如下客户端： com.alipay.alipaywallet：支付宝端； com.alibaba.android.rimet：DINGDING端； com.amap.app：高德端； com.alibaba.ailabs.genie.webapps：天猫精灵端； com.alipay.iot.xpaas：支付宝IoT端。 如需更多端投放，请联系业务BD。
     try {
       AlipayOpenMiniTemplateUsageQueryResponseModel result = apiInstance.query(templateId, pageNum, pageSize, templateVersion, bundleId);
       System.out.println(result);
@@ -65,7 +65,7 @@ public class Example {
 | **pageNum** | **Integer**| 查询的页数，起始为 1（第一页） 。默认第一页。 | [optional] |
 | **pageSize** | **Integer**| 每页的数量，最多查询50个，默认查询10个 | [optional] |
 | **templateVersion** | **String**| 模板小程序的版本号 | [optional] |
-| **bundleId** | **String**| 小程序投放的端参数，例如投放到支付宝钱包是支付宝端。默认支付宝端。支持： com.alipay.alipaywallet:支付宝端； com.alipay.iot.xpaas：支付宝IoT端。 | [optional] |
+| **bundleId** | **String**| 小程序客户端类型，默认为支付宝端。常见支持如下客户端： com.alipay.alipaywallet：支付宝端； com.alibaba.android.rimet：DINGDING端； com.amap.app：高德端； com.alibaba.ailabs.genie.webapps：天猫精灵端； com.alipay.iot.xpaas：支付宝IoT端。 如需更多端投放，请联系业务BD。 | [optional] |
 
 ### Return type
 

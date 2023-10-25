@@ -39,7 +39,7 @@ public class Example {
 
     AlipayOpenMiniVersionDetailApi apiInstance = new AlipayOpenMiniVersionDetailApi(defaultClient);
     String appVersion = "0.0.1"; // String | 小程序版本号
-    String bundleId = "com.alipay.alipaywallet"; // String | 小程序投放的端参数，支持： com.alipay.iot.xpaas（IoT端）。 com.alipay.alipaywallet（支付宝钱包端）。 例如投放到支付宝钱包是支付宝端。该参数可选，默认支付宝端。
+    String bundleId = "com.alipay.alipaywallet"; // String | 小程序客户端类型，默认为支付宝端。常见支持如下客户端： com.alipay.alipaywallet：支付宝端； com.alibaba.android.rimet：DINGDING端； com.amap.app：高德端； com.alibaba.ailabs.genie.webapps：天猫精灵端； com.alipay.iot.xpaas：支付宝IoT端。 如需更多端投放，请联系业务BD。
     try {
       AlipayOpenMiniVersionDetailQueryResponseModel result = apiInstance.query(appVersion, bundleId);
       System.out.println(result);
@@ -59,7 +59,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **appVersion** | **String**| 小程序版本号 | [optional] |
-| **bundleId** | **String**| 小程序投放的端参数，支持： com.alipay.iot.xpaas（IoT端）。 com.alipay.alipaywallet（支付宝钱包端）。 例如投放到支付宝钱包是支付宝端。该参数可选，默认支付宝端。 | [optional] |
+| **bundleId** | **String**| 小程序客户端类型，默认为支付宝端。常见支持如下客户端： com.alipay.alipaywallet：支付宝端； com.alibaba.android.rimet：DINGDING端； com.amap.app：高德端； com.alibaba.ailabs.genie.webapps：天猫精灵端； com.alipay.iot.xpaas：支付宝IoT端。 如需更多端投放，请联系业务BD。 | [optional] |
 
 ### Return type
 

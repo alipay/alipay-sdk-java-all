@@ -40,10 +40,10 @@ public class Example {
 
     AlipayMarketingActivityUserApi apiInstance = new AlipayMarketingActivityUserApi(defaultClient);
     String authToken = "authToken_example"; // String | 用户授权令牌
-    String userId = "2088512417841101"; // String | 支付宝用户 id
-    String openId = "074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5"; // String | 支付宝用户openId
-    String activityId = "2016042700826004508401111111"; // String | 活动 id
-    String belongMerchantId = "2088202967380463"; // String | 券归属商户
+    String userId = "2088512417841101"; // String | 支付宝user_id账号
+    String openId = "074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5"; // String | 领券的支付宝用户openId
+    String activityId = "2016042700826004508401111111"; // String | 活动id
+    String belongMerchantId = "2088202967380463"; // String | 归属商户PID
     String senderMerchantId = "2088102161342862"; // String | 券发放商户
     String voucherStatus = "SENDED"; // String | 券状态，其中已过期状态可查询6个月内的数据
     Integer pageNum = 1; // Integer | 分页查询页码
@@ -68,10 +68,10 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **authToken** | **String**| 用户授权令牌 | [optional] |
-| **userId** | **String**| 支付宝用户 id | [optional] |
-| **openId** | **String**| 支付宝用户openId | [optional] |
-| **activityId** | **String**| 活动 id | [optional] |
-| **belongMerchantId** | **String**| 券归属商户 | [optional] |
+| **userId** | **String**| 支付宝user_id账号 | [optional] |
+| **openId** | **String**| 领券的支付宝用户openId | [optional] |
+| **activityId** | **String**| 活动id | [optional] |
+| **belongMerchantId** | **String**| 归属商户PID | [optional] |
 | **senderMerchantId** | **String**| 券发放商户 | [optional] |
 | **voucherStatus** | **String**| 券状态，其中已过期状态可查询6个月内的数据 | [optional] |
 | **pageNum** | **Integer**| 分页查询页码 | [optional] |
@@ -129,9 +129,9 @@ public class Example {
 
     AlipayMarketingActivityUserApi apiInstance = new AlipayMarketingActivityUserApi(defaultClient);
     String merchantId = "2088202967380463"; // String | 商户 PID，默认为当前接口调用商户。
-    String userId = "2088512417841101"; // String | 支付宝用户id
-    String openId = "074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5"; // String | 支付宝用户openId
-    String activityId = "2016042700826004508401111111"; // String | 活动 id。
+    String userId = "2088512417841101"; // String | 支付宝user_id账号
+    String openId = "074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5"; // String | 领券的支付宝用户openId
+    String activityId = "2016042700826004508401111111"; // String | 活动id
     String voucherId = "2021072900073002214009F8QHR3"; // String | 用户券 id。支付宝为用户优惠券唯一分配的 id。
     String voucherCode = "ABE44"; // String | 用户领取的商家券券码。
     String merchantAccessMode = "AGENCY_MODE"; // String | 商户接入模式。
@@ -154,9 +154,9 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **merchantId** | **String**| 商户 PID，默认为当前接口调用商户。 | [optional] |
-| **userId** | **String**| 支付宝用户id | [optional] |
-| **openId** | **String**| 支付宝用户openId | [optional] |
-| **activityId** | **String**| 活动 id。 | [optional] |
+| **userId** | **String**| 支付宝user_id账号 | [optional] |
+| **openId** | **String**| 领券的支付宝用户openId | [optional] |
+| **activityId** | **String**| 活动id | [optional] |
 | **voucherId** | **String**| 用户券 id。支付宝为用户优惠券唯一分配的 id。 | [optional] |
 | **voucherCode** | **String**| 用户领取的商家券券码。 | [optional] |
 | **merchantAccessMode** | **String**| 商户接入模式。 | [optional] |

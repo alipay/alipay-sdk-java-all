@@ -184,7 +184,7 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AntMerchantExpandItemOpenApi apiInstance = new AntMerchantExpandItemOpenApi(defaultClient);
-    String itemId = "2019073100812219000000100000"; // String | 商品ID，通过创建商品接口 https://opendocs.alipay.com/apis/api_4/ant.merchant.expand.item.open.create 获取。
+    String itemId = "2019073100702219000000100000"; // String | 商品ID
     try {
       Object result = apiInstance.delete(itemId);
       System.out.println(result);
@@ -203,7 +203,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **itemId** | **String**| 商品ID，通过创建商品接口 https://opendocs.alipay.com/apis/api_4/ant.merchant.expand.item.open.create 获取。 | [optional] |
+| **itemId** | **String**| 商品ID | [optional] |
 
 ### Return type
 
@@ -327,9 +327,9 @@ public class Example {
 
     AntMerchantExpandItemOpenApi apiInstance = new AntMerchantExpandItemOpenApi(defaultClient);
     String targetId = "2018090600502000000022501261"; // String | 商品归属主体ID 例：商品归属主体类型target_type为店铺，则商品归属主体ID为店铺ID（支付宝侧店铺ID）；归属主体类型target_type为小程序，则归属主体ID为小程序ID
-    String scene = "APP_ORDER"; // String | 场景码（具体值请参见产品文档）。 小程序订单中心场景固定为 APP_ORDER。
+    String scene = "APP_ORDER"; // String | 场景码（具体值请参见产品文档）。
     String targetType = "8"; // String | 商品归属主体类型。枚举如下： 5：店铺。 8：小程序。
-    String status = "EFFECT"; // String | 商品状态：EFFECT（有效）、INVALID（无效）
+    String status = "EFFECT"; // String | 商品状态
     try {
       AntMerchantExpandItemOpenQueryResponseModel result = apiInstance.query(targetId, scene, targetType, status);
       System.out.println(result);
@@ -349,9 +349,9 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **targetId** | **String**| 商品归属主体ID 例：商品归属主体类型target_type为店铺，则商品归属主体ID为店铺ID（支付宝侧店铺ID）；归属主体类型target_type为小程序，则归属主体ID为小程序ID | [optional] |
-| **scene** | **String**| 场景码（具体值请参见产品文档）。 小程序订单中心场景固定为 APP_ORDER。 | [optional] |
+| **scene** | **String**| 场景码（具体值请参见产品文档）。 | [optional] |
 | **targetType** | **String**| 商品归属主体类型。枚举如下： 5：店铺。 8：小程序。 | [optional] |
-| **status** | **String**| 商品状态：EFFECT（有效）、INVALID（无效） | [optional] |
+| **status** | **String**| 商品状态 | [optional] |
 
 ### Return type
 

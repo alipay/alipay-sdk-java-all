@@ -38,7 +38,7 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenViolationViolationdetailApi apiInstance = new AlipayOpenViolationViolationdetailApi(defaultClient);
-    String violationRecordId = "202205240010200000000000000"; // String | 支付宝侧生成的违规记录唯一标识
+    String violationRecordId = "20220524001020000000000001"; // String | 支付宝侧生成的违规记录唯一标识
     try {
       AlipayOpenViolationViolationdetailQueryResponseModel result = apiInstance.query(violationRecordId);
       System.out.println(result);

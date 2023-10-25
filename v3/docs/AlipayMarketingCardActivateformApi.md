@@ -41,7 +41,7 @@ public class Example {
     String authToken = "authToken_example"; // String | 用户授权令牌
     String bizType = "MEMBER_CARD"; // String | 开放表单信息查询业务类型
     String templateId = "2071828288283883"; // String | 会员卡模板id。使用会员卡模板创建接口(alipay.marketing.card.template.create)返回的结果
-    String requestId = "2017021929993993992839493394"; // String | 查询用户表单提交信息的请求id。  网页移动应用&小程序应用：与auth_code 一起通过alipay.marketing.card.activateurl.apply(获取会员卡领卡投放链接)接口callback地址回传。  注意：auth_code（用户授权码）用于换取用户授权令牌 accessToken，后续调用接口需传入accessToken。
+    String requestId = "2017021929993993992839493394"; // String | 查询用户表单提交信息的请求id。  网页移动应用&小程序应用：与auth_code  一起通过alipay.marketing.card.activateurl.apply(获取会员卡领卡投放链接)接口callback地址回传。  注意：auth_code（用户授权码）用于换取用户授权令牌 accessToken，后续调用接口需传入accessToken。
     try {
       AlipayMarketingCardActivateformQueryResponseModel result = apiInstance.query(authToken, bizType, templateId, requestId);
       System.out.println(result);
@@ -63,7 +63,7 @@ public class Example {
 | **authToken** | **String**| 用户授权令牌 | [optional] |
 | **bizType** | **String**| 开放表单信息查询业务类型 | [optional] |
 | **templateId** | **String**| 会员卡模板id。使用会员卡模板创建接口(alipay.marketing.card.template.create)返回的结果 | [optional] |
-| **requestId** | **String**| 查询用户表单提交信息的请求id。  网页移动应用&amp;小程序应用：与auth_code 一起通过alipay.marketing.card.activateurl.apply(获取会员卡领卡投放链接)接口callback地址回传。  注意：auth_code（用户授权码）用于换取用户授权令牌 accessToken，后续调用接口需传入accessToken。 | [optional] |
+| **requestId** | **String**| 查询用户表单提交信息的请求id。  网页移动应用&amp;小程序应用：与auth_code  一起通过alipay.marketing.card.activateurl.apply(获取会员卡领卡投放链接)接口callback地址回传。  注意：auth_code（用户授权码）用于换取用户授权令牌 accessToken，后续调用接口需传入accessToken。 | [optional] |
 
 ### Return type
 

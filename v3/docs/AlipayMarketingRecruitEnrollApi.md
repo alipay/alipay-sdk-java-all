@@ -182,8 +182,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayMarketingRecruitEnrollApi apiInstance = new AlipayMarketingRecruitEnrollApi(defaultClient);
-    String outBizNo = "21ba1e1c16456985463242192e4d"; // String | 外部操作流水号。由商家/ISV 自定义，仅支持字母、数字、下划线且需保证每次操作唯一。
-    String enrollId = "2021041301000200000000000000"; // String | 报名ID，此参数和out_biz_no至少传一个，优先取enroll_id
+    String outBizNo = "21ba1e1c16456985463242192e4d"; // String | 外部操作流水号，创建招商报名时传入。由商家/ISV 自定义，仅支持字母、数字、下划线且需保证每次操作唯一。
+    String enrollId = "2021041201000200000000999999"; // String | 报名ID，此参数和out_biz_no至少传一个，优先取enroll_id
     try {
       AlipayMarketingRecruitEnrollQueryResponseModel result = apiInstance.query(outBizNo, enrollId);
       System.out.println(result);
@@ -202,7 +202,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **outBizNo** | **String**| 外部操作流水号。由商家/ISV 自定义，仅支持字母、数字、下划线且需保证每次操作唯一。 | [optional] |
+| **outBizNo** | **String**| 外部操作流水号，创建招商报名时传入。由商家/ISV 自定义，仅支持字母、数字、下划线且需保证每次操作唯一。 | [optional] |
 | **enrollId** | **String**| 报名ID，此参数和out_biz_no至少传一个，优先取enroll_id | [optional] |
 
 ### Return type
