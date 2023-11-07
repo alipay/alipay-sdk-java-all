@@ -14,10 +14,10 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenMiniOrderDeliverySendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1426726388245371749L;
+	private static final long serialVersionUID = 3555251361511357372L;
 
 	/**
-	 * 订单物流信息，电商购物订单必填且物流数量限制5条；虚拟商品订单非必填
+	 * 物流信息列表，由商品类型决定，目前电商购物场景最多传5个，虚拟商品不需要传入
 	 */
 	@ApiListField("delivery_list")
 	@ApiField("delivery_info_d_t_o")
@@ -54,7 +54,7 @@ public class AlipayOpenMiniOrderDeliverySendModel extends AlipayObject {
 	private String shipDoneTime;
 
 	/**
-	 * 买家支付宝用户ID；open_id和user_id二选一
+	 * 买家支付宝用户id，小程序场景下获取用户ID请参考：<a href="https://opendocs.alipay.com/mini/05dxgc?pathHash=1a3ecb13">用户授权</a>; 其它场景下获取用户ID请参考：<a href="https://opendocs.alipay.com/open/284/web">网页授权获取用户信息</a>。
 	 */
 	@ApiField("user_id")
 	private String userId;

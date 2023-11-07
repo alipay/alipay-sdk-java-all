@@ -11,16 +11,16 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IndustryQualificationInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7634887319433774923L;
+	private static final long serialVersionUID = 6874393294958697549L;
 
 	/**
-	 * 商户行业资质图片。其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key
+	 * 商户行业资质图片。其值为通过ant.merchant.expand.indirect.image.upload上传图片得到的image_id
 	 */
 	@ApiField("industry_qualification_image")
 	private String industryQualificationImage;
 
 	/**
-	 * 商户行业资质类型，具体选值参见，进件MCC与资质要求 202212.xlsx中特殊资质栏
+	 * 商户行业资质类型，具体选值参见，进件MCC与资质要求 <a href="https://gw.alipayobjects.com/os/bmw-prod/7aa3a36b-2bc2-4d57-815f-08edd55ef67e.xlsx">202212.xlsx</a>中特殊资质栏
 	 */
 	@ApiField("industry_qualification_type")
 	private String industryQualificationType;

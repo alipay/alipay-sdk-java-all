@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 灵活用工团单批次详情查询
  *
  * @author auto create
- * @since 1.0, 2023-04-27 16:33:58
+ * @since 1.0, 2023-10-25 16:29:40
  */
 public class AlipayInsSceneEmploymentGroupbatchQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8163335629765221677L;
+	private static final long serialVersionUID = 5776335485353768774L;
 
 	/**
 	 * 批次号

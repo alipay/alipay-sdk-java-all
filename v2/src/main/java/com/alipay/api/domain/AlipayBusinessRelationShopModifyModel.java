@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝代运营商业关系门店修改
  *
  * @author auto create
- * @since 1.0, 2023-06-19 14:43:18
+ * @since 1.0, 2023-11-02 14:02:17
  */
 public class AlipayBusinessRelationShopModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8362253324359231638L;
+	private static final long serialVersionUID = 1422166317883916258L;
 
 	/**
 	 * 经营地址
@@ -22,6 +22,13 @@ public class AlipayBusinessRelationShopModifyModel extends AlipayObject {
 	@ApiListField("business_address")
 	@ApiField("business_relation_shop_addresss")
 	private List<BusinessRelationShopAddresss> businessAddress;
+
+	/**
+	 * 经营时间
+	 */
+	@ApiListField("business_times")
+	@ApiField("business_relation_business_time")
+	private List<BusinessRelationBusinessTime> businessTimes;
 
 	/**
 	 * 营业执照图片，需传入<a href="https://opendocs.alipay.com/apis/api_1/ant.merchant.expand.indirect.image.upload">ant.merchant.expand.indirect.image.upload</a> 接口上传图片后得到的 image_id
@@ -127,6 +134,13 @@ public class AlipayBusinessRelationShopModifyModel extends AlipayObject {
 	}
 	public void setBusinessAddress(List<BusinessRelationShopAddresss> businessAddress) {
 		this.businessAddress = businessAddress;
+	}
+
+	public List<BusinessRelationBusinessTime> getBusinessTimes() {
+		return this.businessTimes;
+	}
+	public void setBusinessTimes(List<BusinessRelationBusinessTime> businessTimes) {
+		this.businessTimes = businessTimes;
 	}
 
 	public String getCertImage() {

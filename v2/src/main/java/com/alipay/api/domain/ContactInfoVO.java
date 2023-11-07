@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ContactInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3647214423687419335L;
+	private static final long serialVersionUID = 2123728654494879853L;
 
 	/**
 	 * 联系人姓名
@@ -20,7 +20,7 @@ public class ContactInfoVO extends AlipayObject {
 	private String contactName;
 
 	/**
-	 * 联系人信息加密内容
+	 * 加密内容，创单时由团购插件上传，内容为手机号加密内容，解密方式参考<a href="https://opendocs.alipay.com/mini/api/getphonenumber#%E8%8E%B7%E5%8F%96%E6%89%8B%E6%9C%BA%E5%8F%B7">获取手机号</a>中第五步
 	 */
 	@ApiField("encryption_content")
 	private String encryptionContent;

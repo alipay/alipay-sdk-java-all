@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序商品ID数据组
  *
  * @author auto create
- * @since 1.0, 2023-03-29 10:44:04
+ * @since 1.0, 2023-11-03 19:19:05
  */
 public class ItemSpuIdPair extends AlipayObject {
 
-	private static final long serialVersionUID = 3216259652829668852L;
+	private static final long serialVersionUID = 8684254468749218655L;
 
 	/**
 	 * 支付宝平台侧商品ID，是支付宝平台侧商品的唯一标识，后续与平台交互，需要使用该 ID，建议持久化。

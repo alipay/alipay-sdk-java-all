@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开通资源包询价
  *
  * @author auto create
- * @since 1.0, 2023-10-16 20:23:03
+ * @since 1.0, 2023-11-01 20:25:32
  */
 public class AlipayCloudCloudbaseResourcepackageOpenConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4326941646966612113L;
+	private static final long serialVersionUID = 2629443722119821414L;
 
 	/**
 	 * 小程序id

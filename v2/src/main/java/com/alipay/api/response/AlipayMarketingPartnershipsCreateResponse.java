@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.partnerships.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-15 21:52:22
+ * @since 1.0, 2023-10-25 16:21:44
  */
 public class AlipayMarketingPartnershipsCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2248928314724477821L;
+	private static final long serialVersionUID = 5497471825942297525L;
 
 	/** 
 	 * 建立合作关系的时间。格式为：yyyy-MM-dd HH:mm:ss

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MiniOrderExtInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2453632385844467831L;
+	private static final long serialVersionUID = 2322114921624718875L;
 
 	/**
 	 * 预约上门取件的时间,格式为  yyyy-MM-dd HH:mm:ss
@@ -22,7 +22,8 @@ public class MiniOrderExtInfoDTO extends AlipayObject {
 	private Date doorTime;
 
 	/**
-	 * 完整的支付参数拼接成的字符串，从服务端获取
+	 * 芝麻免押冻结资金签名串，调用
+<a href="https://opendocs.alipay.com/open/e2e70da4_alipay.fund.auth.order.app.freeze?pathHash=1002681c&ref=api">alipay.fund.auth.order.app.freeze</a>生成，用于租赁场景冻结授权资金
 	 */
 	@ApiField("order_str")
 	private String orderStr;

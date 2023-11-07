@@ -16,11 +16,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.shop.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-09 10:34:13
+ * @since 1.0, 2023-11-07 16:11:53
  */
 public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8188727596535658653L;
+	private static final long serialVersionUID = 6111627952552851482L;
 
 	/** 
 	 * 品牌id
@@ -160,7 +160,7 @@ public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 	private String shopCategory;
 
 	/** 
-	 * 支付宝侧蚂蚁店铺 id。传入本参数后可不填 store_id 及 ip_role_id。
+	 * 支付宝侧蚂蚁店铺 id
 	 */
 	@ApiField("shop_id")
 	private String shopId;
@@ -184,7 +184,7 @@ public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 	private ShopRecommendInfo shopRecommendInfo;
 
 	/** 
-	 * 店铺经营类型，01表示直营，02表示加盟
+	 * 店铺经营类型
 	 */
 	@ApiField("shop_type")
 	private String shopType;

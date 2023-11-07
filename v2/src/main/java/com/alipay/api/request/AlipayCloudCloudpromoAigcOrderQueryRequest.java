@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudpromo.aigc.order.query request
  * 
  * @author auto create
- * @since 1.0, 2023-10-13 13:11:46
+ * @since 1.0, 2023-10-26 11:41:49
  */
 public class AlipayCloudCloudpromoAigcOrderQueryRequest implements AlipayRequest<AlipayCloudCloudpromoAigcOrderQueryResponse> {
 

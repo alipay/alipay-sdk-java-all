@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单券核销
  *
  * @author auto create
- * @since 1.0, 2023-09-26 11:26:00
+ * @since 1.0, 2023-11-02 17:27:30
  */
 public class AlipayMarketingActivityOrdervoucherUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3344861342758652981L;
+	private static final long serialVersionUID = 3866257489381148613L;
 
 	/**
 	 * 活动id
@@ -30,7 +30,7 @@ public class AlipayMarketingActivityOrdervoucherUseModel extends AlipayObject {
 	private Date bizDt;
 
 	/**
-	 * "商品明细信息。 限制： 当前交易中存在商品信息，则建议传入商品明细信息。"
+	 * 商品明细信息
 	 */
 	@ApiListField("goods_detail")
 	@ApiField("goods_detail_d_t_o")
@@ -75,7 +75,7 @@ public class AlipayMarketingActivityOrdervoucherUseModel extends AlipayObject {
 	private String storeId;
 
 	/**
-	 * 订单优惠前的总金额
+	 * 订单总金额
 	 */
 	@ApiField("total_fee")
 	private String totalFee;

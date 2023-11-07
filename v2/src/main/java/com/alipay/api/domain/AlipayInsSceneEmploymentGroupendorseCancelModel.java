@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 灵活用工团单批减单创建
  *
  * @author auto create
- * @since 1.0, 2023-07-11 18:53:25
+ * @since 1.0, 2023-10-25 16:36:04
  */
 public class AlipayInsSceneEmploymentGroupendorseCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3731219578131376245L;
+	private static final long serialVersionUID = 2452795835544175923L;
 
 	/**
 	 * 批改类型

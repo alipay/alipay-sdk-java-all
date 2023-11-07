@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户数据同步
  *
  * @author auto create
- * @since 1.0, 2022-05-12 10:26:35
+ * @since 1.0, 2023-10-26 13:53:22
  */
 public class AlipaySecurityRiskCustomerriskSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5464989449493824145L;
+	private static final long serialVersionUID = 5894296387382675922L;
 
 	/**
 	 * 交易对应的银行卡的卡号（支付宝直连和间连合作伙伴均可回传此参数）

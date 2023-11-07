@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 通过uid查询用户信息
  *
  * @author auto create
- * @since 1.0, 2023-09-25 19:22:34
+ * @since 1.0, 2023-10-30 11:40:16
  */
 public class AlipayIserviceIsresourceUserquerybyuidQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8178113287115372199L;
+	private static final long serialVersionUID = 2453873598122533636L;
 
 	/**
 	 * 客服小二的2088id
@@ -30,6 +30,12 @@ public class AlipayIserviceIsresourceUserquerybyuidQueryModel extends AlipayObje
 	 */
 	@ApiField("query_role")
 	private Boolean queryRole;
+
+	/**
+	 * 是否查询服务
+	 */
+	@ApiField("query_serve")
+	private Boolean queryServe;
 
 	/**
 	 * 租户id
@@ -56,6 +62,13 @@ public class AlipayIserviceIsresourceUserquerybyuidQueryModel extends AlipayObje
 	}
 	public void setQueryRole(Boolean queryRole) {
 		this.queryRole = queryRole;
+	}
+
+	public Boolean getQueryServe() {
+		return this.queryServe;
+	}
+	public void setQueryServe(Boolean queryServe) {
+		this.queryServe = queryServe;
 	}
 
 	public String getTntInstId() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 销项发票预览接口
  *
  * @author auto create
- * @since 1.0, 2023-10-13 15:46:50
+ * @since 1.0, 2023-11-01 11:33:43
  */
 public class AlipayBossFncOutputinvoicePreviewModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5432257362765292113L;
+	private static final long serialVersionUID = 7224886238951428565L;
 
 	/**
 	 * 调用方身份识别标记(应用名称) 与业务单据号联合唯一

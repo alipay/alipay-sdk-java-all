@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 一码通用户密钥失效接口
  *
  * @author auto create
- * @since 1.0, 2022-06-20 18:42:06
+ * @since 1.0, 2023-11-01 14:32:42
  */
 public class AlipayPayCodecAcodeCertExpireModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8493113838532792645L;
+	private static final long serialVersionUID = 4584544459828383676L;
 
 	/**
 	 * 用户业务身份标识

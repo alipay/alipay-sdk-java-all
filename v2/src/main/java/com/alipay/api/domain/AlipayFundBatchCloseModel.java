@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批次关单接口
  *
  * @author auto create
- * @since 1.0, 2023-04-17 17:22:00
+ * @since 1.0, 2023-11-06 14:56:34
  */
 public class AlipayFundBatchCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6326538834398559598L;
+	private static final long serialVersionUID = 4863654763137467963L;
 
 	/**
 	 * 支付宝内部的批次ID： 本参数和商户的批次号两者不能同时为空。 当本参数和商户的批次号两者同时提供时，将优先用商户的批次号进行查询。

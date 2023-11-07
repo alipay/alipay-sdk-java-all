@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.wallet.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-08 14:04:08
+ * @since 1.0, 2023-11-06 13:41:49
  */
 public class AlipayFundWalletOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8469561573655775611L;
+	private static final long serialVersionUID = 1415652724212268897L;
 
 	/** 
 	 * 实际交易金额，单位：元
@@ -43,7 +43,8 @@ public class AlipayFundWalletOrderQueryResponse extends AlipayResponse {
 	private String totalAmount;
 
 	/** 
-	 * 交易状态
+	 * 充值：SUCCESS（成功）、PROCESSING （处理中）、FAIL （失败）、DISUSE  （超时关单）
+充值退/提现：SUCCESS（成功）、PROCESSING（处理中）
 	 */
 	@ApiField("trans_status")
 	private String transStatus;

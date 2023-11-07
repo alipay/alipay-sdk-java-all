@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 推荐的保险产品方案
  *
  * @author auto create
- * @since 1.0, 2023-04-27 15:44:07
+ * @since 1.0, 2023-10-25 16:32:38
  */
 public class InsRecomProductPlan extends AlipayObject {
 
-	private static final long serialVersionUID = 4628647296166421176L;
+	private static final long serialVersionUID = 3565746571132385694L;
 
 	/**
 	 * 续期缴费频率。 01 一次性缴费, 02 按月缴费, 03 按年缴费, 04 不定期缴费 05 按日趸交（费用：保费*天数）

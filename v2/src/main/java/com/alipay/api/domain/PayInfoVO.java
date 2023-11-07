@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PayInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3382653359186415151L;
+	private static final long serialVersionUID = 6712721272185549458L;
 
 	/**
 	 * 支付渠道列表
@@ -36,10 +36,11 @@ public class PayInfoVO extends AlipayObject {
 	private String transactionId;
 
 	/**
-	 * 券明细
+	 * 券明细 当前字段已废弃(支付券优惠根据alipay.trade.query查询)
 	 */
 	@ApiListField("voucher_detail_list")
 	@ApiField("voucher_detail_info_d_t_o")
+	@Deprecated
 	private List<VoucherDetailInfoDTO> voucherDetailList;
 
 	public List<String> getPayChannels() {

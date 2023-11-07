@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AntMerchantExpandShopCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2132347436516877185L;
+	private static final long serialVersionUID = 6656338645153348292L;
 
 	/**
 	 * "门店结算卡信息。本业务当前只允许传入一张结算卡。 说明：本参数仅直付通业务使用，其余业务无需关注。"
@@ -67,20 +67,20 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	private String certType;
 
 	/**
-	 * 联系人信息。如果填写，其中名称必填，手机、固话、email 三选一必填。
+	 * 联系人信息
 	 */
 	@ApiListField("contact_infos")
 	@ApiField("contact_info")
 	private List<ContactInfo> contactInfos;
 
 	/**
-	 * 店铺联系手机，与店铺联系固话二选一必填
+	 * 店铺联系手机号
 	 */
 	@ApiField("contact_mobile")
 	private String contactMobile;
 
 	/**
-	 * 店铺的联系固话，和店铺联系手机二选一必填
+	 * 店铺的联系固定电话
 	 */
 	@ApiField("contact_phone")
 	private String contactPhone;
@@ -93,26 +93,25 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	private List<ShopExtInfo> extInfos;
 
 	/**
-	 * 商户角色id，表示将要开的店属于哪个商户角色。对于直连开店场景，填写商户pid；对于间连开店场景（线上、线下、直付通），填写商户smid。特别说明：IoT设备三绑定场景统一填写商户pid
+	 * 当前门店归属的商户角色 ID，表示当前进件的店铺的归属商户。对于直连开店场景，填写商户 PID。对于间连开店场景（线上、线下、直付通），商户SMID
 	 */
 	@ApiField("ip_role_id")
 	private String ipRoleId;
 
 	/**
-	 * 法人身份证号。通过蚂蚁门店管理能力创建门店时可选。
+	 * 法人身份证号
 	 */
 	@ApiField("legal_cert_no")
 	private String legalCertNo;
 
 	/**
-	 * 法人名称。通过蚂蚁门店管理能力创建门店时可选。
+	 * 法人名称
 	 */
 	@ApiField("legal_name")
 	private String legalName;
 
 	/**
-	 * 营业执照授权函。需传入<a href="https://opendocs.alipay.com/apis/api_1/ant.merchant.expand.indirect.image.upload">ant.merchant.expand.indirect.image.upload</a> 接口上传图片后得到的 image_id。
-通过蚂蚁门店管理能力创建门店时可选。
+	 * 营业执照授权函图片id，通过 ant.merchant.expand.indirect.image.upload 接口上传图片后得到的 image_id
 	 */
 	@ApiField("license_auth_letter_image")
 	private String licenseAuthLetterImage;
@@ -145,7 +144,7 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	private String scene;
 
 	/**
-	 * 结算支付宝账号的登录号。
+	 * 门店结算收款的支付宝账号
 	 */
 	@ApiField("settle_alipay_logon_id")
 	private String settleAlipayLogonId;
@@ -157,7 +156,7 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	private String shopCategory;
 
 	/**
-	 * 店铺名称。直连开店要保证全局店铺名称+地址唯一，间连开店要保证服务商pid下店铺名称+地址唯一
+	 * 店铺名称, 由商户定义在支付宝内的店铺名称
 	 */
 	@ApiField("shop_name")
 	private String shopName;

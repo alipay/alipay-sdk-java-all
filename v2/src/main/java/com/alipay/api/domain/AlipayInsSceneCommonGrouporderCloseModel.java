@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 灵活用工团单关单
  *
  * @author auto create
- * @since 1.0, 2023-04-27 18:49:08
+ * @since 1.0, 2023-10-25 16:36:38
  */
 public class AlipayInsSceneCommonGrouporderCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7171793733325651595L;
+	private static final long serialVersionUID = 2266674236448433949L;
 
 	/**
 	 * 外部业务号

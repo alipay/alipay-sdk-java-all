@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 扣款单分页返回
  *
  * @author auto create
- * @since 1.0, 2023-10-09 10:08:12
+ * @since 1.0, 2023-11-01 14:23:38
  */
 public class DeductionOrderPageProcessorResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 8455958247373536589L;
+	private static final long serialVersionUID = 2133453731627538788L;
 
 	/**
 	 * 卡名称
@@ -58,10 +58,22 @@ public class DeductionOrderPageProcessorResponse extends AlipayObject {
 	private String merchantName;
 
 	/**
+	 * 用户id
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/**
 	 * 分账状态
 	 */
 	@ApiField("settle_status")
 	private String settleStatus;
+
+	/**
+	 * 用户id
+	 */
+	@ApiField("user_id")
+	private String userId;
 
 	public String getCardName() {
 		return this.cardName;
@@ -112,11 +124,25 @@ public class DeductionOrderPageProcessorResponse extends AlipayObject {
 		this.merchantName = merchantName;
 	}
 
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+
 	public String getSettleStatus() {
 		return this.settleStatus;
 	}
 	public void setSettleStatus(String settleStatus) {
 		this.settleStatus = settleStatus;
+	}
+
+	public String getUserId() {
+		return this.userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
 
 }

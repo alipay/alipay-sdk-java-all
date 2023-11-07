@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询券模板列表
  *
  * @author auto create
- * @since 1.0, 2023-09-26 11:42:27
+ * @since 1.0, 2023-11-01 14:34:03
  */
 public class AlipayMarketingVoucherTemplatelistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4511582152259846842L;
+	private static final long serialVersionUID = 7259611396632992485L;
 
 	/**
 	 * 查询结束时间。即查询 create_start_time 日期至本参数指定日期间创建的券模板，时间格式为：yyyy-MM-dd HH:mm:ss。

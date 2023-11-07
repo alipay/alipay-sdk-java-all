@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 投保保险的商户(企业)信息
  *
  * @author auto create
- * @since 1.0, 2022-10-27 19:56:02
+ * @since 1.0, 2023-10-27 15:59:57
  */
 public class InsCompany extends AlipayObject {
 
-	private static final long serialVersionUID = 4831423341362578131L;
+	private static final long serialVersionUID = 8494821235127679992L;
 
 	/**
 	 * 支付宝账号ID
@@ -74,6 +74,12 @@ public class InsCompany extends AlipayObject {
 	 */
 	@ApiField("phone")
 	private String phone;
+
+	/**
+	 * 平台身份标识。用于区分二级渠道
+	 */
+	@ApiField("platform_identity")
+	private String platformIdentity;
 
 	public String getAlipayAccountNo() {
 		return this.alipayAccountNo;
@@ -143,6 +149,13 @@ public class InsCompany extends AlipayObject {
 	}
 	public void setPhone(String phone) {
 		this.phone = phone;
+	}
+
+	public String getPlatformIdentity() {
+		return this.platformIdentity;
+	}
+	public void setPlatformIdentity(String platformIdentity) {
+		this.platformIdentity = platformIdentity;
 	}
 
 }

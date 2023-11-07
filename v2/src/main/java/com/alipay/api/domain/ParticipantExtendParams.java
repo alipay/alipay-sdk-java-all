@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 零工卡主体拓展参数
  *
  * @author auto create
- * @since 1.0, 2023-08-15 18:41:55
+ * @since 1.0, 2023-11-06 17:19:13
  */
 public class ParticipantExtendParams extends AlipayObject {
 
-	private static final long serialVersionUID = 1899478418657144982L;
+	private static final long serialVersionUID = 5314617194695945256L;
 
 	/**
 	 * 证件号，participant_id_typ为alipay_user_id可作为补充参数

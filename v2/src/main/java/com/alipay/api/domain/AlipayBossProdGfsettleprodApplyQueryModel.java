@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁统一结算付款申请单查询
  *
  * @author auto create
- * @since 1.0, 2023-03-23 10:58:40
+ * @since 1.0, 2023-11-06 16:29:54
  */
 public class AlipayBossProdGfsettleprodApplyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7453722481717853211L;
+	private static final long serialVersionUID = 4889821712872917966L;
 
 	/**
 	 * 合约号，等同于集采PO号

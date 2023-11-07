@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BusinessParamDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2228776812821938238L;
+	private static final long serialVersionUID = 1229666912839134834L;
 
 	/**
 	 * 授权协议号，可选。如果已经有有效的授权协议并提供时，会不会创建新的授权协议信息。

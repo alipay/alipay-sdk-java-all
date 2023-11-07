@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.employment.event.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-25 08:33:17
+ * @since 1.0, 2023-10-27 16:43:21
  */
 public class AlipayInsSceneEmploymentEventSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6126292423594283723L;
+	private static final long serialVersionUID = 4381533786241276361L;
 
 	/** 
 	 * 外部业务号

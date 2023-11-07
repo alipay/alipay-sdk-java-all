@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MsgFatigueInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5233613847826381367L;
+	private static final long serialVersionUID = 2131784186421461362L;
 
 	/**
 	 * 表示疲劳度控制总量

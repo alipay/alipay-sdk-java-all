@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenViolationViolationdetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8587636777481753124L;
+	private static final long serialVersionUID = 7593151913929696228L;
 
 	/** 
 	 * 申诉截止日期。

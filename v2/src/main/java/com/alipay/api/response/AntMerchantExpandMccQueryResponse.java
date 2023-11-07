@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.mcc.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-11 17:41:48
+ * @since 1.0, 2023-11-07 16:06:54
  */
 public class AntMerchantExpandMccQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6546253295729227452L;
+	private static final long serialVersionUID = 4888596325825664942L;
 
 	/** 
 	 * mcc查询信息结果列表

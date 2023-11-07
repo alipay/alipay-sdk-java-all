@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保单团单批次信息
  *
  * @author auto create
- * @since 1.0, 2023-04-25 09:40:38
+ * @since 1.0, 2023-10-25 16:32:45
  */
 public class InsGroupOrderBatchDigest extends AlipayObject {
 
-	private static final long serialVersionUID = 3371362352885764612L;
+	private static final long serialVersionUID = 5623654991165693731L;
 
 	/**
 	 * 批次单号

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.device.address.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 18:37:44
+ * @since 1.0, 2023-10-30 15:56:49
  */
 public class AlipayCommerceIotDeviceAddressQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8674191386743932726L;
+	private static final long serialVersionUID = 1386398781834456785L;
 
 	/** 
 	 * 城市名称
@@ -31,6 +31,18 @@ public class AlipayCommerceIotDeviceAddressQueryResponse extends AlipayResponse 
 	 */
 	@ApiField("county_name")
 	private String countyName;
+
+	/** 
+	 * 纬度
+	 */
+	@ApiField("latitude")
+	private String latitude;
+
+	/** 
+	 * 经纬度信息
+	 */
+	@ApiField("longitude")
+	private String longitude;
 
 	/** 
 	 * 省份名称
@@ -63,6 +75,20 @@ public class AlipayCommerceIotDeviceAddressQueryResponse extends AlipayResponse 
 	}
 	public String getCountyName( ) {
 		return this.countyName;
+	}
+
+	public void setLatitude(String latitude) {
+		this.latitude = latitude;
+	}
+	public String getLatitude( ) {
+		return this.latitude;
+	}
+
+	public void setLongitude(String longitude) {
+		this.longitude = longitude;
+	}
+	public String getLongitude( ) {
+		return this.longitude;
 	}
 
 	public void setProvinceName(String provinceName) {

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量发放商家兑换券
  *
  * @author auto create
- * @since 1.0, 2023-09-26 11:26:47
+ * @since 1.0, 2023-11-01 14:32:55
  */
 public class AlipayMarketingActivityOrdervoucherBatchsendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7682918634947294147L;
+	private static final long serialVersionUID = 4496952317772332832L;
 
 	/**
 	 * 在用户购买完成商家兑换券之后，通过此接口发放 用户购买订单之后需要发放的商家兑换券

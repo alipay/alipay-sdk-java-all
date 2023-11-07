@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务费信息列表
  *
  * @author auto create
- * @since 1.0, 2023-10-23 19:00:55
+ * @since 1.0, 2023-10-31 10:16:57
  */
 public class ServiceFeeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2293361539659742384L;
+	private static final long serialVersionUID = 7189725772118713486L;
 
 	/**
 	 * 服务费金额
@@ -23,10 +23,16 @@ public class ServiceFeeInfo extends AlipayObject {
 	private String amount;
 
 	/**
-	 * 企业码服务费单号
+	 * 服务费单号
 	 */
 	@ApiField("bill_no")
 	private String billNo;
+
+	/**
+	 * 服务费单据类型
+	 */
+	@ApiField("bill_type")
+	private String billType;
 
 	/**
 	 * 收费时间
@@ -41,10 +47,17 @@ public class ServiceFeeInfo extends AlipayObject {
 	private ServiceFeeExtInfo extInfo;
 
 	/**
-	 * 关联的支付宝交易号
+	 * 当bill_type=PAYMENT时，返回支付宝交易号； 
+当bill_type=REFUND时，返回支付宝退款流水号；
 	 */
 	@ApiField("pay_no")
 	private String payNo;
+
+	/**
+	 * 关联服务费支付单据号
+	 */
+	@ApiField("related_bill_no")
+	private String relatedBillNo;
 
 	/**
 	 * 收款方OpenId
@@ -96,6 +109,13 @@ public class ServiceFeeInfo extends AlipayObject {
 		this.billNo = billNo;
 	}
 
+	public String getBillType() {
+		return this.billType;
+	}
+	public void setBillType(String billType) {
+		this.billType = billType;
+	}
+
 	public Date getExecuteDt() {
 		return this.executeDt;
 	}
@@ -115,6 +135,13 @@ public class ServiceFeeInfo extends AlipayObject {
 	}
 	public void setPayNo(String payNo) {
 		this.payNo = payNo;
+	}
+
+	public String getRelatedBillNo() {
+		return this.relatedBillNo;
+	}
+	public void setRelatedBillNo(String relatedBillNo) {
+		this.relatedBillNo = relatedBillNo;
 	}
 
 	public String getTransInOpenId() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySecurityDataDatabusSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4188664824849224575L;
+	private static final long serialVersionUID = 4133978847865189785L;
 
 	/**
 	 * 安全累计属性列表字段，安全属性列表，key为属性名称，value为属性值；如 key:"145" ，value:"1"

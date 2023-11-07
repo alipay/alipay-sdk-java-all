@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业部门创建
  *
  * @author auto create
- * @since 1.0, 2023-06-28 11:22:02
+ * @since 1.0, 2023-11-01 15:11:50
  */
 public class AlipayCommerceEcDepartmentCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5726243943819212649L;
+	private static final long serialVersionUID = 8188731262474391369L;
 
 	/**
 	 * 部门编码

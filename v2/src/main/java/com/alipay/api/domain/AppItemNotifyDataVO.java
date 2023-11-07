@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品通知消息内容
  *
  * @author auto create
- * @since 1.0, 2023-10-20 01:39:48
+ * @since 1.0, 2023-10-24 14:37:12
  */
 public class AppItemNotifyDataVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7662591821616783859L;
+	private static final long serialVersionUID = 1152952855989369621L;
 
 	/**
 	 * 商品数据变更后内容

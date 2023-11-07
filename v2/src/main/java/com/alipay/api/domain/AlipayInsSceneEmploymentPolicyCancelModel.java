@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 灵活用工保单退保
  *
  * @author auto create
- * @since 1.0, 2022-08-22 14:05:48
+ * @since 1.0, 2023-10-25 16:34:55
  */
 public class AlipayInsSceneEmploymentPolicyCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8144375295563837476L;
+	private static final long serialVersionUID = 1799913693215284735L;
 
 	/**
 	 * cainiao

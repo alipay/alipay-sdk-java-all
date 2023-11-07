@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 运动走路线-路线元数据模型
  *
  * @author auto create
- * @since 1.0, 2023-10-10 17:08:08
+ * @since 1.0, 2023-10-27 14:12:45
  */
 public class WalkPathMetaData extends AlipayObject {
 
-	private static final long serialVersionUID = 3868596434325797934L;
+	private static final long serialVersionUID = 5531678841926789977L;
 
 	/**
 	 * 路线场景码
@@ -26,9 +26,10 @@ public class WalkPathMetaData extends AlipayObject {
 	private String pathId;
 
 	/**
-	 * 路线距离文案(公里)，不影响实际计算
+	 * 路线距离文案(公里)，不影响实际计算 当前字段已废弃(不能表达浮点数路线长度)
 	 */
 	@ApiField("path_length")
+	@Deprecated
 	private Long pathLength;
 
 	/**
@@ -36,6 +37,12 @@ public class WalkPathMetaData extends AlipayObject {
 	 */
 	@ApiField("path_step_count")
 	private Long pathStepCount;
+
+	/**
+	 * 路线距离文案(公里)，不影响实际计算
+	 */
+	@ApiField("str_path_length")
+	private String strPathLength;
 
 	/**
 	 * 路线名称
@@ -69,6 +76,13 @@ public class WalkPathMetaData extends AlipayObject {
 	}
 	public void setPathStepCount(Long pathStepCount) {
 		this.pathStepCount = pathStepCount;
+	}
+
+	public String getStrPathLength() {
+		return this.strPathLength;
+	}
+	public void setStrPathLength(String strPathLength) {
+		this.strPathLength = strPathLength;
 	}
 
 	public String getTitle() {

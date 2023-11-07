@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 留学VCC代付订单处理结果通知OPENAPI
  *
  * @author auto create
- * @since 1.0, 2023-10-16 18:04:18
+ * @since 1.0, 2023-10-25 13:49:25
  */
 public class AlipayOverseasOpenPoboNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3443799917785166479L;
+	private static final long serialVersionUID = 6367977455888559912L;
 
 	/**
 	 * 留学VCC代付单收款方信息

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户充值创建订单
  *
  * @author auto create
- * @since 1.0, 2023-09-04 14:59:51
+ * @since 1.0, 2023-11-06 13:37:17
  */
 public class AlipayFundWalletDepositorderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4384486475411499163L;
+	private static final long serialVersionUID = 1154532858784327242L;
 
 	/**
 	 * 充值的本金金额
@@ -46,7 +46,7 @@ public class AlipayFundWalletDepositorderCreateModel extends AlipayObject {
 	private String orderTitle;
 
 	/**
-	 * 外部业务号
+	 * 充值外部订单号，用于幂等
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;

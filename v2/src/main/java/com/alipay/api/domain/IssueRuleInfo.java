@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发放规则信息
  *
  * @author auto create
- * @since 1.0, 2023-06-16 15:56:19
+ * @since 1.0, 2023-10-25 16:07:26
  */
 public class IssueRuleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5679119714645935951L;
+	private static final long serialVersionUID = 2616323197293393999L;
 
 	/**
 	 * 生效时间段

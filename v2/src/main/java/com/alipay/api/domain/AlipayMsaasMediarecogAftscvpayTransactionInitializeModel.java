@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 多媒体afts平台视觉付交易初始化接口
  *
  * @author auto create
- * @since 1.0, 2023-09-18 15:29:59
+ * @since 1.0, 2023-10-26 13:48:16
  */
 public class AlipayMsaasMediarecogAftscvpayTransactionInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6349618363263238196L;
+	private static final long serialVersionUID = 1764726941346326651L;
 
 	/**
 	 * 货柜类型，static为静态货柜，dynamic为动态货柜
@@ -40,6 +40,12 @@ public class AlipayMsaasMediarecogAftscvpayTransactionInitializeModel extends Al
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/**
+	 * 是否录制视频
+	 */
+	@ApiField("record_video")
+	private Boolean recordVideo;
 
 	/**
 	 * 标识是什么场景下的视觉识别请求
@@ -110,6 +116,13 @@ public class AlipayMsaasMediarecogAftscvpayTransactionInitializeModel extends Al
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public Boolean getRecordVideo() {
+		return this.recordVideo;
+	}
+	public void setRecordVideo(Boolean recordVideo) {
+		this.recordVideo = recordVideo;
 	}
 
 	public String getScene() {

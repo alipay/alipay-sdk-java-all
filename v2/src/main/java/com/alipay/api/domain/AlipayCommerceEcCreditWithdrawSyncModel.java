@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceEcCreditWithdrawSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7185563258394292317L;
+	private static final long serialVersionUID = 5814887273136565235L;
 
 	/**
 	 * 支付宝交易号

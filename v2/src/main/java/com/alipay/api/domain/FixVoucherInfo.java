@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 满减券
  *
  * @author auto create
- * @since 1.0, 2023-07-21 11:25:47
+ * @since 1.0, 2023-11-01 19:38:07
  */
 public class FixVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6578881431872942181L;
+	private static final long serialVersionUID = 3286948951543434379L;
 
 	/**
 	 * 面额，每张代金券可以抵扣的金额。

@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudpromo.aigc.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-13 13:11:46
+ * @since 1.0, 2023-10-26 11:41:49
  */
 public class AlipayCloudCloudpromoAigcOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1675942421714255553L;
+	private static final long serialVersionUID = 4398572149395815223L;
 
 	/** 
 	 * 当前订单状态中文描述
@@ -28,6 +28,18 @@ public class AlipayCloudCloudpromoAigcOrderQueryResponse extends AlipayResponse 
 	@ApiListField("images")
 	@ApiField("string")
 	private List<String> images;
+
+	/** 
+	 * 支付宝内部订单id，唯一
+	 */
+	@ApiField("order_id")
+	private String orderId;
+
+	/** 
+	 * 外部业务号
+	 */
+	@ApiField("out_biz_id")
+	private String outBizId;
 
 	/** 
 	 * 当前订单状态
@@ -54,6 +66,20 @@ public class AlipayCloudCloudpromoAigcOrderQueryResponse extends AlipayResponse 
 	}
 	public List<String> getImages( ) {
 		return this.images;
+	}
+
+	public void setOrderId(String orderId) {
+		this.orderId = orderId;
+	}
+	public String getOrderId( ) {
+		return this.orderId;
+	}
+
+	public void setOutBizId(String outBizId) {
+		this.outBizId = outBizId;
+	}
+	public String getOutBizId( ) {
+		return this.outBizId;
 	}
 
 	public void setStatus(String status) {

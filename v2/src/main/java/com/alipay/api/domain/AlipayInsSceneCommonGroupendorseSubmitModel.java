@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 灵活用工团单批改提交
  *
  * @author auto create
- * @since 1.0, 2023-06-27 10:12:35
+ * @since 1.0, 2023-10-25 16:35:31
  */
 public class AlipayInsSceneCommonGroupendorseSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1762992379827453344L;
+	private static final long serialVersionUID = 6519964268171399481L;
 
 	/**
 	 * 子批单的实付保费;单位:分

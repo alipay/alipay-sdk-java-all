@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询监控指标
  *
  * @author auto create
- * @since 1.0, 2023-10-16 20:19:13
+ * @since 1.0, 2023-11-01 20:06:51
  */
 public class AlipayCloudCloudbaseMonitorMetricQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6589794466937313684L;
+	private static final long serialVersionUID = 3685291686279147724L;
 
 	/**
 	 * 小程序id
@@ -88,7 +88,7 @@ public class AlipayCloudCloudbaseMonitorMetricQueryModel extends AlipayObject {
 	/**
 	 * 产品
  - FUNCTION
- - CLOUDBASE_NOSQL
+ - MONGODB
  - OSS
  - REDIS
 	 */

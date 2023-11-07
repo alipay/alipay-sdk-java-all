@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开通灵工之家服务时如果需要开通工牌信息时传入，本次需求必填
  *
  * @author auto create
- * @since 1.0, 2023-08-15 20:17:06
+ * @since 1.0, 2023-11-06 17:19:13
  */
 public class EmployeeCardInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2878634579699598234L;
+	private static final long serialVersionUID = 2342972693997589384L;
 
 	/**
 	 * 零工卡工牌ID

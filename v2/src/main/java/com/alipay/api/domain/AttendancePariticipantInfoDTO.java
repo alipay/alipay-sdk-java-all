@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 申请开通的主体信息
  *
  * @author auto create
- * @since 1.0, 2023-08-15 20:16:57
+ * @since 1.0, 2023-11-06 17:19:13
  */
 public class AttendancePariticipantInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8424191941598538395L;
+	private static final long serialVersionUID = 2553112823722571634L;
 
 	/**
 	 * 主体补充参数

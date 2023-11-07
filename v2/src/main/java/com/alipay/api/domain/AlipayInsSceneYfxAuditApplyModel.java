@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 运费险理赔重开申请
  *
  * @author auto create
- * @since 1.0, 2023-02-27 15:04:28
+ * @since 1.0, 2023-10-24 14:43:43
  */
 public class AlipayInsSceneYfxAuditApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6784658264395623289L;
+	private static final long serialVersionUID = 8711396122168532333L;
 
 	/**
 	 * 开放平台分配的appid

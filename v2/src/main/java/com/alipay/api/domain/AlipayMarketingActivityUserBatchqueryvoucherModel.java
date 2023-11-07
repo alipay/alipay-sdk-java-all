@@ -7,20 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 条件查询用户券
  *
  * @author auto create
- * @since 1.0, 2023-05-31 20:58:11
+ * @since 1.0, 2023-10-27 17:01:06
  */
 public class AlipayMarketingActivityUserBatchqueryvoucherModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6429483342915894253L;
+	private static final long serialVersionUID = 5854875119275556558L;
 
 	/**
-	 * 活动id
+	 * 活动 id
 	 */
 	@ApiField("activity_id")
 	private String activityId;
 
 	/**
-	 * 归属商户PID
+	 * 券归属商户
 	 */
 	@ApiField("belong_merchant_id")
 	private String belongMerchantId;
@@ -32,7 +32,7 @@ public class AlipayMarketingActivityUserBatchqueryvoucherModel extends AlipayObj
 	private String merchantAccessMode;
 
 	/**
-	 * 领券的支付宝用户openId
+	 * 支付宝用户openId
 	 */
 	@ApiField("open_id")
 	private String openId;
@@ -56,7 +56,7 @@ public class AlipayMarketingActivityUserBatchqueryvoucherModel extends AlipayObj
 	private String senderMerchantId;
 
 	/**
-	 * 支付宝user_id账号
+	 * 支付宝用户 id
 	 */
 	@ApiField("user_id")
 	private String userId;

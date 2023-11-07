@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 行业风险识别先享后付违约
  *
  * @author auto create
- * @since 1.0, 2023-06-12 17:44:40
+ * @since 1.0, 2023-10-30 11:52:45
  */
 public class AlipaySecurityRiskIndustryNsfQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7126778442679842768L;
+	private static final long serialVersionUID = 7638544591273375943L;
 
 	/**
 	 * 终端唯一标识

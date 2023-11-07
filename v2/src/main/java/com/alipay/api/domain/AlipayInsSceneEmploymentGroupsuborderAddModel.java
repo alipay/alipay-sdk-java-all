@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 灵活用工团单录入子单
  *
  * @author auto create
- * @since 1.0, 2023-04-27 15:50:42
+ * @since 1.0, 2023-10-25 16:28:54
  */
 public class AlipayInsSceneEmploymentGroupsuborderAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2219162752976337538L;
+	private static final long serialVersionUID = 1669438794214484224L;
 
 	/**
 	 * 员工信息，员工列表

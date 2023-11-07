@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * lite货柜人工识别结果
  *
  * @author auto create
- * @since 1.0, 2023-09-27 16:41:02
+ * @since 1.0, 2023-10-26 13:58:16
  */
 public class AlipayMsaasMediarecogMmtcaftscvLiteresultSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8643614199254526249L;
+	private static final long serialVersionUID = 5351949119358652213L;
 
 	/**
 	 * 人工识别结果
@@ -22,6 +22,12 @@ public class AlipayMsaasMediarecogMmtcaftscvLiteresultSyncModel extends AlipayOb
 	@ApiListField("contrast_result")
 	@ApiField("contrast_result")
 	private List<ContrastResult> contrastResult;
+
+	/**
+	 * 1-内部人工，2-外部人工
+	 */
+	@ApiField("result_type")
+	private String resultType;
 
 	/**
 	 * 货柜交易号
@@ -34,6 +40,13 @@ public class AlipayMsaasMediarecogMmtcaftscvLiteresultSyncModel extends AlipayOb
 	}
 	public void setContrastResult(List<ContrastResult> contrastResult) {
 		this.contrastResult = contrastResult;
+	}
+
+	public String getResultType() {
+		return this.resultType;
+	}
+	public void setResultType(String resultType) {
+		this.resultType = resultType;
 	}
 
 	public String getTransactionId() {

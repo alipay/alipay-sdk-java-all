@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询设备地址信息
  *
  * @author auto create
- * @since 1.0, 2020-06-15 16:06:43
+ * @since 1.0, 2023-10-30 15:54:36
  */
 public class AlipayCommerceIotDeviceAddressQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3164589599923649953L;
+	private static final long serialVersionUID = 2521918177582395592L;
 
 	/**
 	 * 设备唯一标识，设备id

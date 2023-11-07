@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部三方商家回流订单评价数据
  *
  * @author auto create
- * @since 1.0, 2023-04-25 14:01:28
+ * @since 1.0, 2023-10-30 10:31:23
  */
 public class AlipayEcoCityserviceExtCommentBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6445664494975393832L;
+	private static final long serialVersionUID = 4278416892631411815L;
 
 	/**
 	 * 当传递该字段时候、查询指定日期天所在的订单评价数据、若不传递该字段则默认查询调用接口所在时刻的前一天的订单评价数据

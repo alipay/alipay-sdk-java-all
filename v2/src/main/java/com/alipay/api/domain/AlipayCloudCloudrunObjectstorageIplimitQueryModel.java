@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询IP黑白名单
  *
  * @author auto create
- * @since 1.0, 2023-09-21 16:44:14
+ * @since 1.0, 2023-10-25 15:40:20
  */
 public class AlipayCloudCloudrunObjectstorageIplimitQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7153575977723624699L;
+	private static final long serialVersionUID = 5396487468791249544L;
 
 	/**
 	 * 内部使用，uiam角色扮演token

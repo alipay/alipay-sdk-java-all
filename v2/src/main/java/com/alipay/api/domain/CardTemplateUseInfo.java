@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 卡模版使用信息
  *
  * @author auto create
- * @since 1.0, 2023-10-20 10:55:43
+ * @since 1.0, 2023-11-06 15:14:33
  */
 public class CardTemplateUseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7842762173991742126L;
+	private static final long serialVersionUID = 5538449782811419873L;
 
 	/**
 	 * 周期信息
 	 */
 	@ApiField("cycle_info")
 	private CardCycleInfo cycleInfo;
+
+	/**
+	 * 优惠追回规则
+	 */
+	@ApiField("discount_recover_rule_info")
+	private CardDiscountRecoverRuleInfo discountRecoverRuleInfo;
 
 	/**
 	 * 有效期
@@ -59,6 +65,13 @@ public class CardTemplateUseInfo extends AlipayObject {
 	}
 	public void setCycleInfo(CardCycleInfo cycleInfo) {
 		this.cycleInfo = cycleInfo;
+	}
+
+	public CardDiscountRecoverRuleInfo getDiscountRecoverRuleInfo() {
+		return this.discountRecoverRuleInfo;
+	}
+	public void setDiscountRecoverRuleInfo(CardDiscountRecoverRuleInfo discountRecoverRuleInfo) {
+		this.discountRecoverRuleInfo = discountRecoverRuleInfo;
 	}
 
 	public Long getExpirePeriod() {

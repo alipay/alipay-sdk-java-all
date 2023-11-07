@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.employment.policy.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 05:50:07
+ * @since 1.0, 2023-10-25 16:34:55
  */
 public class AlipayInsSceneEmploymentPolicyCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3765364731277715329L;
+	private static final long serialVersionUID = 4378911111118289124L;
 
 	/** 
 	 * 外部业务号

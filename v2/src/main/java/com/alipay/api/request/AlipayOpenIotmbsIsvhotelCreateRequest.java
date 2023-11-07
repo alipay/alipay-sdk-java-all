@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.iotmbs.isvhotel.create request
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 02:11:42
+ * @since 1.0, 2023-10-30 19:11:47
  */
 public class AlipayOpenIotmbsIsvhotelCreateRequest implements AlipayRequest<AlipayOpenIotmbsIsvhotelCreateResponse> {
 

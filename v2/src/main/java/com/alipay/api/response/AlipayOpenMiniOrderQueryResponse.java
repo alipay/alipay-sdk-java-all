@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-17 19:11:45
+ * @since 1.0, 2023-11-07 15:26:50
  */
 public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3838441756127826787L;
+	private static final long serialVersionUID = 6615624646746213574L;
 
 	/** 
 	 * 收货地址
@@ -26,7 +26,7 @@ public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 	private AddressInfoVO addressInfo;
 
 	/** 
-	 * 本地生活商品的联系人信息
+	 * 买家联系人信息，本地生活商品使用
 	 */
 	@ApiField("contact_info")
 	private ContactInfoVO contactInfo;
@@ -74,13 +74,13 @@ public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 	private String outOrderId;
 
 	/** 
-	 * 订单详情页路径
+	 * 商家小程序对应的订单详情页路径地址
 	 */
 	@ApiField("path")
 	private String path;
 
 	/** 
-	 * 确认收货时间，fund_type = 1且确认收货之后存在
+	 * 确认收货时间
 	 */
 	@ApiField("receive_time")
 	private String receiveTime;
@@ -92,8 +92,7 @@ public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 	private RefundInfoVO refundInfo;
 
 	/** 
-	 * normal：即时到账
- extended：账期结算
+	 * 结算方式
 	 */
 	@ApiField("settle_type")
 	private String settleType;

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 有资金行业票模板修改接口
  *
  * @author auto create
- * @since 1.0, 2023-09-26 11:39:41
+ * @since 1.0, 2023-10-25 15:20:39
  */
 public class AlipayMarketingCashticketTemplateModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1684912729156999387L;
+	private static final long serialVersionUID = 2285562855346317774L;
 
 	/**
 	 * 外部业务单号，用作幂等控制，相同template_id下相同out_biz_no视为同一次修改。注意，此值不是修改模板的out_biz_no属性

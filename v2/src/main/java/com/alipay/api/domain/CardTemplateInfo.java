@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 卡模版信息
  *
  * @author auto create
- * @since 1.0, 2023-10-20 10:55:43
+ * @since 1.0, 2023-11-06 15:14:33
  */
 public class CardTemplateInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4193131134912917772L;
+	private static final long serialVersionUID = 2168596239454595383L;
+
+	/**
+	 * 卡模版ID
+	 */
+	@ApiField("card_template_id")
+	private String cardTemplateId;
 
 	/**
 	 * 卡模版名称
@@ -77,6 +83,13 @@ public class CardTemplateInfo extends AlipayObject {
 	 */
 	@ApiField("use_info")
 	private CardTemplateUseInfo useInfo;
+
+	public String getCardTemplateId() {
+		return this.cardTemplateId;
+	}
+	public void setCardTemplateId(String cardTemplateId) {
+		this.cardTemplateId = cardTemplateId;
+	}
 
 	public String getCardTemplateName() {
 		return this.cardTemplateName;

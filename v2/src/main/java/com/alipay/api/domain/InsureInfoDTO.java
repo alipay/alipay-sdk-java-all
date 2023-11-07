@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 投保主体信息
  *
  * @author auto create
- * @since 1.0, 2023-08-15 18:45:29
+ * @since 1.0, 2023-11-06 16:13:04
  */
 public class InsureInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8741379347139494398L;
+	private static final long serialVersionUID = 3395898274755112692L;
 
 	/**
 	 * 投保渠道（直接投保必选）

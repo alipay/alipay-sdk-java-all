@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.cityservice.ext.comment.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-24 22:16:44
+ * @since 1.0, 2023-10-30 10:31:23
  */
 public class AlipayEcoCityserviceExtCommentBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8183144768591428764L;
+	private static final long serialVersionUID = 6516989388935568799L;
 
 	/** 
 	 * 评价列表

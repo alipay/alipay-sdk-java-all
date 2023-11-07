@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券邮费信息
  *
  * @author auto create
- * @since 1.0, 2023-07-21 11:25:47
+ * @since 1.0, 2023-11-01 19:38:07
  */
 public class VoucherExpressInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3143748943162682454L;
+	private static final long serialVersionUID = 5359115676453876989L;
 
 	/**
 	 * 邮费标识，属于券的服务，用于用户门槛信息展示

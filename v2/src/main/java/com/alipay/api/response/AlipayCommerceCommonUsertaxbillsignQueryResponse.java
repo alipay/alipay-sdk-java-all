@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.common.usertaxbillsign.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-15 10:46:43
+ * @since 1.0, 2023-11-07 15:26:50
  */
 public class AlipayCommerceCommonUsertaxbillsignQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4466435157932992312L;
+	private static final long serialVersionUID = 3431947634111234157L;
 
 	/** 
 	 * 淘客与税筹公司的签约状态

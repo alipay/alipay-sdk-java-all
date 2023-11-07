@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商业关系门店详情信息
  *
  * @author auto create
- * @since 1.0, 2021-07-28 19:18:05
+ * @since 1.0, 2023-11-02 09:58:16
  */
 public class BusinessRelationShopDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2482452575695688296L;
+	private static final long serialVersionUID = 6195738843957446456L;
 
 	/**
 	 * 经营地址
@@ -22,6 +22,13 @@ public class BusinessRelationShopDetailInfo extends AlipayObject {
 	@ApiListField("business_address")
 	@ApiField("business_relation_shop_addresss")
 	private List<BusinessRelationShopAddresss> businessAddress;
+
+	/**
+	 * 经营时间
+	 */
+	@ApiListField("business_times")
+	@ApiField("business_relation_business_time")
+	private List<BusinessRelationBusinessTime> businessTimes;
 
 	/**
 	 * 营业执照图片地址
@@ -113,6 +120,13 @@ public class BusinessRelationShopDetailInfo extends AlipayObject {
 	}
 	public void setBusinessAddress(List<BusinessRelationShopAddresss> businessAddress) {
 		this.businessAddress = businessAddress;
+	}
+
+	public List<BusinessRelationBusinessTime> getBusinessTimes() {
+		return this.businessTimes;
+	}
+	public void setBusinessTimes(List<BusinessRelationBusinessTime> businessTimes) {
+		this.businessTimes = businessTimes;
 	}
 
 	public String getCertImage() {

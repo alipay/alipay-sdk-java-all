@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.function.version.query request
  * 
  * @author auto create
- * @since 1.0, 2023-08-10 20:01:39
+ * @since 1.0, 2023-11-01 10:21:48
  */
 public class AlipayCloudCloudbaseFunctionVersionQueryRequest implements AlipayRequest<AlipayCloudCloudbaseFunctionVersionQueryResponse> {
 

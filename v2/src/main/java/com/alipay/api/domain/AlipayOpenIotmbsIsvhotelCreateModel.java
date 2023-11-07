@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * iot酒店行业isv创建酒店
  *
  * @author auto create
- * @since 1.0, 2023-07-19 19:10:50
+ * @since 1.0, 2023-10-30 19:10:16
  */
 public class AlipayOpenIotmbsIsvhotelCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8329454337647749227L;
+	private static final long serialVersionUID = 4461239515483631328L;
 
 	/**
 	 * 酒店关联的appid，后面相应的小程序调用相关组件时用于鉴权,多个appid之间用,分割

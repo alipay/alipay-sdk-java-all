@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.daniel.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-14 16:06:51
+ * @since 1.0, 2023-11-01 14:00:35
  */
 public class AlipayOpenAppDanielQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2692332376628734339L;
+	private static final long serialVersionUID = 4834721651947441523L;
 
 	/** 
 	 * 1

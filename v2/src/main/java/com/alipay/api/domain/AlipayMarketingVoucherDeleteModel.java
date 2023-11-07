@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 作废票
  *
  * @author auto create
- * @since 1.0, 2023-09-26 11:43:02
+ * @since 1.0, 2023-10-25 15:20:33
  */
 public class AlipayMarketingVoucherDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7489233711517394265L;
+	private static final long serialVersionUID = 5292832828791124377L;
 
 	/**
 	 * 支付宝用户的openid

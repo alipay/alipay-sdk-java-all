@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 录入机构用户信息（人员图片可选）
  *
  * @author auto create
- * @since 1.0, 2023-10-23 11:31:58
+ * @since 1.0, 2023-11-02 21:10:15
  */
 public class AlipayOpenIotvspUserwithimageCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3361765622331377246L;
+	private static final long serialVersionUID = 3247253219392154639L;
 
 	/**
 	 * 姓名
@@ -42,6 +42,12 @@ public class AlipayOpenIotvspUserwithimageCreateModel extends AlipayObject {
 	 */
 	@ApiField("ext")
 	private String ext;
+
+	/**
+	 * 刷脸的ftoken
+	 */
+	@ApiField("ftoken")
+	private String ftoken;
 
 	/**
 	 * 人脸图片
@@ -112,6 +118,13 @@ public class AlipayOpenIotvspUserwithimageCreateModel extends AlipayObject {
 	}
 	public void setExt(String ext) {
 		this.ext = ext;
+	}
+
+	public String getFtoken() {
+		return this.ftoken;
+	}
+	public void setFtoken(String ftoken) {
+		this.ftoken = ftoken;
 	}
 
 	public String getImage() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 淘客激励发放
  *
  * @author auto create
- * @since 1.0, 2023-09-18 16:49:55
+ * @since 1.0, 2023-11-03 15:31:50
  */
 public class AlipayCommerceCommonTaskrewardSettleModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5555684724975753989L;
+	private static final long serialVersionUID = 6861437981678321172L;
 
 	/**
 	 * 导购员的userId
@@ -38,7 +38,7 @@ public class AlipayCommerceCommonTaskrewardSettleModel extends AlipayObject {
 	private String outBizNo;
 
 	/**
-	 * 激励发放途径，ZFB代表由支付宝执行淘客激励发放，MERCHANT表示由商户自己发送激励，但需要调用此接口结束该交易单激励，MERCHANT_DISCARD商户判断不需要发放激励，告知支付宝侧结束激励任务
+	 * 激励发放途径，ZFB代表由支付宝执行淘客激励发放，MERCHANT表示由商户自己发送激励，但需要调用此接口结束该交易单激励，MERCHANT_DISCARD商户判断不需要发放激励，告知支付宝侧结束激励任务，MERCHANT_WAIT状态告知支付宝侧该激励有效，是否激励在商户侧决定后调用此接口，传入其他途径参数选择
 	 */
 	@ApiField("reward_way")
 	private String rewardWay;

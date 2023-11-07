@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 留学缴费VCC代付单payment信息
  *
  * @author auto create
- * @since 1.0, 2023-10-16 17:52:26
+ * @since 1.0, 2023-10-30 11:04:10
  */
 public class TuitionISVPoboPaymentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5125255373518278565L;
+	private static final long serialVersionUID = 8639755263698431275L;
+
+	/**
+	 * 其他缴费信息，目前包含了academic_year（学年）以及payment_category（缴费类目）两个key，后续会根据业务扩展key
+	 */
+	@ApiField("additional_payment_info")
+	private String additionalPaymentInfo;
 
 	/**
 	 * amount+留学VCC场景
@@ -60,6 +66,19 @@ public class TuitionISVPoboPaymentInfo extends AlipayObject {
 	 */
 	@ApiField("cvv")
 	private String cvv;
+
+	/**
+	 * 机构推单的单号
+	 */
+	@ApiField("pre_order_id")
+	private String preOrderId;
+
+	public String getAdditionalPaymentInfo() {
+		return this.additionalPaymentInfo;
+	}
+	public void setAdditionalPaymentInfo(String additionalPaymentInfo) {
+		this.additionalPaymentInfo = additionalPaymentInfo;
+	}
 
 	public TuitionMoneyDTO getAmount() {
 		return this.amount;
@@ -115,6 +134,13 @@ public class TuitionISVPoboPaymentInfo extends AlipayObject {
 	}
 	public void setCvv(String cvv) {
 		this.cvv = cvv;
+	}
+
+	public String getPreOrderId() {
+		return this.preOrderId;
+	}
+	public void setPreOrderId(String preOrderId) {
+		this.preOrderId = preOrderId;
 	}
 
 }

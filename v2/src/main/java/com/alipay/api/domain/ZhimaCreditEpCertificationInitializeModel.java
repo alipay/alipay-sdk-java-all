@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁企业信用认证初始化
  *
  * @author auto create
- * @since 1.0, 2023-04-21 18:36:00
+ * @since 1.0, 2023-11-02 15:49:45
  */
 public class ZhimaCreditEpCertificationInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3413171564135951884L;
+	private static final long serialVersionUID = 1536713845533156924L;
 
 	/**
 	 * 支付宝登陆账号(邮箱或者手机号)
@@ -30,6 +30,12 @@ public class ZhimaCreditEpCertificationInitializeModel extends AlipayObject {
 	 */
 	@ApiField("certify_return_url")
 	private String certifyReturnUrl;
+
+	/**
+	 * 仅针对有委托书需求的平台商户，后台沟通确定委托书模版后（包括参数key和值格式以及是否必填等业务校验），可通过该字段传入平台业务参数用于委托书渲染。
+	 */
+	@ApiField("customize_content")
+	private String customizeContent;
 
 	/**
 	 * 统一社会信用代码或营业执照注册号
@@ -104,6 +110,13 @@ public class ZhimaCreditEpCertificationInitializeModel extends AlipayObject {
 	}
 	public void setCertifyReturnUrl(String certifyReturnUrl) {
 		this.certifyReturnUrl = certifyReturnUrl;
+	}
+
+	public String getCustomizeContent() {
+		return this.customizeContent;
+	}
+	public void setCustomizeContent(String customizeContent) {
+		this.customizeContent = customizeContent;
 	}
 
 	public String getEpCertNo() {

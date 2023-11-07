@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻GO签约关单
  *
  * @author auto create
- * @since 1.0, 2022-11-15 21:22:14
+ * @since 1.0, 2023-11-03 16:51:44
  */
 public class ZhimaCreditPeZmgoBizoptCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6645583433952361514L;
+	private static final long serialVersionUID = 8525278764712338649L;
 
 	/**
 	 * 支付宝用户Id

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.digitalmgmt.po.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-15 10:01:44
+ * @since 1.0, 2023-11-07 15:57:43
  */
 public class AlipayDigitalmgmtPoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8594589456613835538L;
+	private static final long serialVersionUID = 1887496692775753391L;
 
 	/** 
 	 * 采购订单信息

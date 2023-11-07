@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品数据变更内容
  *
  * @author auto create
- * @since 1.0, 2023-10-14 14:59:29
+ * @since 1.0, 2023-10-24 14:37:12
  */
 public class AppItemDataDiffVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8124666282466836545L;
+	private static final long serialVersionUID = 5871128187588374769L;
 
 	/**
 	 * 商品主图的文件id，图片宽高为750px*750px，宽高比1:1，800kb以内。 支持jpg、jpeg、png格式的图片。文件id通过alipay.open.file.upload 上传资源获取file_id，或通过alipay.marketing.image.enhance.upload获取image_id均可上传成功
@@ -28,6 +28,12 @@ public class AppItemDataDiffVO extends AlipayObject {
 	@ApiListField("image_list")
 	@ApiField("string")
 	private List<String> imageList;
+
+	/**
+	 * 商品售卖状态
+	 */
+	@ApiField("sale_status")
+	private String saleStatus;
 
 	/**
 	 * 商品sku变更内容列表
@@ -54,6 +60,13 @@ public class AppItemDataDiffVO extends AlipayObject {
 	}
 	public void setImageList(List<String> imageList) {
 		this.imageList = imageList;
+	}
+
+	public String getSaleStatus() {
+		return this.saleStatus;
+	}
+	public void setSaleStatus(String saleStatus) {
+		this.saleStatus = saleStatus;
 	}
 
 	public List<AppItemSkuDiffVO> getSkus() {

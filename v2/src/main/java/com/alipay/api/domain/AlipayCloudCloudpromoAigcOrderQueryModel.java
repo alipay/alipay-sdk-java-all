@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序云营销AIGC订单查询
  *
  * @author auto create
- * @since 1.0, 2023-10-13 13:08:06
+ * @since 1.0, 2023-10-26 11:36:52
  */
 public class AlipayCloudCloudpromoAigcOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1331134232385582793L;
+	private static final long serialVersionUID = 2869226624489522175L;
 
 	/**
 	 * 支付宝内部订单id，唯一

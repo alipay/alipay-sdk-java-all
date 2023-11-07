@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 运营SaaS平台发送短信验证码
  *
  * @author auto create
- * @since 1.0, 2023-06-26 17:43:20
+ * @since 1.0, 2023-11-03 15:12:20
  */
 public class DatadigitalFincloudFinsaasSmsCodeSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4532214336428795727L;
+	private static final long serialVersionUID = 4559716555976469571L;
 
 	/**
 	 * 手机号密文，SM4加密
@@ -19,11 +19,24 @@ public class DatadigitalFincloudFinsaasSmsCodeSendModel extends AlipayObject {
 	@ApiField("phone_num_encrypt")
 	private String phoneNumEncrypt;
 
+	/**
+	 * 短信发送场景
+	 */
+	@ApiField("scene")
+	private String scene;
+
 	public String getPhoneNumEncrypt() {
 		return this.phoneNumEncrypt;
 	}
 	public void setPhoneNumEncrypt(String phoneNumEncrypt) {
 		this.phoneNumEncrypt = phoneNumEncrypt;
+	}
+
+	public String getScene() {
+		return this.scene;
+	}
+	public void setScene(String scene) {
+		this.scene = scene;
 	}
 
 }

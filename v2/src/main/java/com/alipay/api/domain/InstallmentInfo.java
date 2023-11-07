@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 渠道针对分期的子期数模型
  *
  * @author auto create
- * @since 1.0, 2023-10-13 17:27:27
+ * @since 1.0, 2023-11-03 15:52:00
  */
 public class InstallmentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5312111271675462915L;
+	private static final long serialVersionUID = 7778874238192265318L;
 
 	/**
 	 * 分期数

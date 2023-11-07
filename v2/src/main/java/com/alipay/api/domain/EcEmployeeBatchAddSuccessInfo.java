@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量添加员工接口，添加成功的员工信息
  *
  * @author auto create
- * @since 1.0, 2023-10-19 21:26:54
+ * @since 1.0, 2023-10-30 13:58:16
  */
 public class EcEmployeeBatchAddSuccessInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6259634897963146999L;
+	private static final long serialVersionUID = 5696734114941275489L;
 
 	/**
 	 * 证件号
@@ -66,6 +66,12 @@ public class EcEmployeeBatchAddSuccessInfo extends AlipayObject {
 	 */
 	@ApiField("encrypt_mobile")
 	private String encryptMobile;
+
+	/**
+	 * IOT开通刷脸支持唯一操作流水号，此处透出用于外部服务商通过该unique_id便捷调用IOT侧接口
+	 */
+	@ApiField("iot_unique_id")
+	private String iotUniqueId;
 
 	public String getEmployeeCertNo() {
 		return this.employeeCertNo;
@@ -128,6 +134,13 @@ public class EcEmployeeBatchAddSuccessInfo extends AlipayObject {
 	}
 	public void setEncryptMobile(String encryptMobile) {
 		this.encryptMobile = encryptMobile;
+	}
+
+	public String getIotUniqueId() {
+		return this.iotUniqueId;
+	}
+	public void setIotUniqueId(String iotUniqueId) {
+		this.iotUniqueId = iotUniqueId;
 	}
 
 }

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单数据同步接口
  *
  * @author auto create
- * @since 1.0, 2023-09-21 20:21:18
+ * @since 1.0, 2023-10-25 10:24:07
  */
 public class AlipayMerchantOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5832632578526885785L;
+	private static final long serialVersionUID = 1298458446174697474L;
 
 	/**
 	 * 订单金额

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.life.miniprogram.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-23 20:51:42
+ * @since 1.0, 2023-11-02 14:16:49
  */
 public class AlipayMerchantLifeMiniprogramQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1642163675998649935L;
+	private static final long serialVersionUID = 8671862222197554355L;
 
 	/** 
 	 * 生活号和业务关联的扩展信息

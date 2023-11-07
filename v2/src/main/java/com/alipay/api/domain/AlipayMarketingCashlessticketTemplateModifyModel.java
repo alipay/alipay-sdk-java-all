@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 无资金行业票模板修改接口
  *
  * @author auto create
- * @since 1.0, 2023-09-26 11:40:17
+ * @since 1.0, 2023-10-25 15:23:10
  */
 public class AlipayMarketingCashlessticketTemplateModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3622625522468559847L;
+	private static final long serialVersionUID = 6528357518177194215L;
 
 	/**
 	 * 模板修改操作外部业务号，用于修改时的幂等控制，注意这里不是修改创建模板时的业务号

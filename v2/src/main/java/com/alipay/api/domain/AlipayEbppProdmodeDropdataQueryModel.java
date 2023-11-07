@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业务下拉列表API
  *
  * @author auto create
- * @since 1.0, 2020-06-15 10:00:37
+ * @since 1.0, 2023-11-03 16:22:08
  */
 public class AlipayEbppProdmodeDropdataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2264844858449343796L;
+	private static final long serialVersionUID = 3437187494472656386L;
 
 	/**
 	 * 参数为：缴费业务类型

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 员工所属部门信息
  *
  * @author auto create
- * @since 1.0, 2023-10-17 15:50:39
+ * @since 1.0, 2023-10-25 13:50:26
  */
 public class EmployeeDepartmentDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8452449775946896372L;
+	private static final long serialVersionUID = 2682427768492644743L;
 
 	/**
 	 * 部门id

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用工场景团单子单信息
  *
  * @author auto create
- * @since 1.0, 2023-04-25 09:40:27
+ * @since 1.0, 2023-10-25 16:32:51
  */
 public class InsSubOrderEmploymentDigest extends AlipayObject {
 
-	private static final long serialVersionUID = 7376772421421968877L;
+	private static final long serialVersionUID = 2528175694444332241L;
 
 	/**
 	 * 子订单关闭原因

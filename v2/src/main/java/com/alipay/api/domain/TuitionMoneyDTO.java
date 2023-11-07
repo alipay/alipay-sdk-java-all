@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 留学金额
  *
  * @author auto create
- * @since 1.0, 2023-10-16 17:52:26
+ * @since 1.0, 2023-10-25 15:38:50
  */
 public class TuitionMoneyDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3716441951641694827L;
+	private static final long serialVersionUID = 1584633581887966836L;
 
 	/**
 	 * 币种

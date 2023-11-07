@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 内容上传的素材模型
  *
  * @author auto create
- * @since 1.0, 2023-10-10 11:50:30
+ * @since 1.0, 2023-11-01 16:46:50
  */
 public class SourceMediaInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5219414723214237159L;
+	private static final long serialVersionUID = 5583597844587227741L;
 
 	/**
 	 * 素材ID，对应“支付宝文件上传接口”获取的file_id

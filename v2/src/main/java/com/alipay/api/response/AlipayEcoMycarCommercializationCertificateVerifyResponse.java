@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.commercialization.certificate.verify response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-15 11:01:41
+ * @since 1.0, 2023-10-27 15:36:49
  */
 public class AlipayEcoMycarCommercializationCertificateVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7727656747145899582L;
+	private static final long serialVersionUID = 2296787823465768877L;
 
 	
 
