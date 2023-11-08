@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IsvLogisticsInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4425832919157366524L;
+	private static final long serialVersionUID = 6855865581696361449L;
 
 	/**
 	 * 快递公司

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BillDetailVo extends AlipayObject {
 
-	private static final long serialVersionUID = 7576716498921272217L;
+	private static final long serialVersionUID = 7482499211444563127L;
 
 	/**
 	 * 账单出账时间

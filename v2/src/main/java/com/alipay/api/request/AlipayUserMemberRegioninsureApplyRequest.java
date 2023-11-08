@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.member.regioninsure.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-10-20 16:26:48
+ * @since 1.0, 2023-11-07 19:36:49
  */
 public class AlipayUserMemberRegioninsureApplyRequest implements AlipayRequest<AlipayUserMemberRegioninsureApplyResponse> {
 

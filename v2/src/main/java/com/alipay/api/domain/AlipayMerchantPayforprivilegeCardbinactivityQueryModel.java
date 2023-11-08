@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantPayforprivilegeCardbinactivityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2643774315521646497L;
+	private static final long serialVersionUID = 8813827869193967874L;
 
 	/**
 	 * 卡bin规则的外部活动唯一编号，联合对应商家的pid作为唯一键

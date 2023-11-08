@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ReduceToAmtDstCampPrizeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3179992543625715659L;
+	private static final long serialVersionUID = 3829558622346219128L;
 
 	/**
 	 * 优惠后价格

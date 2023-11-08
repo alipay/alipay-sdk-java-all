@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankCreditLoanapplyDataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1134841652167123239L;
+	private static final long serialVersionUID = 5534667848681857322L;
 
 	/**
 	 * 对应业务类型相关的单号。若业务类型为1的话，则该值为申贷接口返回的sub_apply_no 子申请单号。

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBusinessPaymenthubQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7323194693961978883L;
+	private static final long serialVersionUID = 1831434378754649281L;
 
 	/** 
 	 * 支付，打款或者退款的操作金额

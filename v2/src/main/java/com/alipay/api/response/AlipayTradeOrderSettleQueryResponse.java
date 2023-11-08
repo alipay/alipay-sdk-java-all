@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.order.settle.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-20 15:57:20
+ * @since 1.0, 2023-11-07 19:06:52
  */
 public class AlipayTradeOrderSettleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8131737939185168938L;
+	private static final long serialVersionUID = 1794792282122931382L;
 
 	/** 
 	 * 分账受理时间

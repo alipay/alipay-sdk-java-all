@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ISV代理商户资金业务账单查询
  *
  * @author auto create
- * @since 1.0, 2023-11-02 10:26:02
+ * @since 1.0, 2023-11-07 21:34:26
  */
 public class AlipayDataBillBizfundagentQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6684715668365825677L;
+	private static final long serialVersionUID = 2432777655789667881L;
 
 	/**
 	 * ISV与商户授权协议号

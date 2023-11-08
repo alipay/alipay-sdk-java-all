@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class WidgetActivityInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8736953831711162261L;
+	private static final long serialVersionUID = 6373173428553547885L;
 
 	/**
 	 * 活动点击跳转到小程序的链接地址

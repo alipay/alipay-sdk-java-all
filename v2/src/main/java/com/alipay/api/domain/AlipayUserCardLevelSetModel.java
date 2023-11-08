@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserCardLevelSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7476392483918667331L;
+	private static final long serialVersionUID = 5148857766591699344L;
 
 	/**
 	 * 卡等级配置

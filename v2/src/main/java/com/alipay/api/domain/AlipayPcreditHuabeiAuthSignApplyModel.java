@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPcreditHuabeiAuthSignApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6332144965882778691L;
+	private static final long serialVersionUID = 8539898168631156168L;
 
 	/**
 	 * 支付宝的用户id。用于水平校验，当传入用户id与实际唤起支付宝用户id不一致时，签约申请失败。特殊业务(用户在商户侧已经绑定了支付宝A，不允许支付宝B进行开通花芝)需求定制，无特殊需求时不要传入此商户

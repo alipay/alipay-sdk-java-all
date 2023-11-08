@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoCityserviceCertinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5861842349147325475L;
+	private static final long serialVersionUID = 8375586237436985697L;
 
 	/** 
 	 * 用户证件信息查询结果列表。列表中的元素包含请求证件信息，以及对应的支付宝uid信息。

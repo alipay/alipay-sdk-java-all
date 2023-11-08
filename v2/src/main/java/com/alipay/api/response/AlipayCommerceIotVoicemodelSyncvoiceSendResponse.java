@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceIotVoicemodelSyncvoiceSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7262871761925167185L;
+	private static final long serialVersionUID = 5389632929673686297L;
 
 	/** 
 	 * 调用的任务id

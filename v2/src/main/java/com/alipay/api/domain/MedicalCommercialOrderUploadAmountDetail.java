@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MedicalCommercialOrderUploadAmountDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3823991277345154387L;
+	private static final long serialVersionUID = 6829477167752997478L;
 
 	/**
 	 * 金额，精确到小数点后2位，单位为元

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayBossFncInvmodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4847655694249894648L;
+	private static final long serialVersionUID = 7896988927624754623L;
 
 	/**
 	 * 合同id

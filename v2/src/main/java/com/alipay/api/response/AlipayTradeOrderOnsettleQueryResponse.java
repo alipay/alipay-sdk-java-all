@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.order.onsettle.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-20 15:59:15
+ * @since 1.0, 2023-11-07 19:01:53
  */
 public class AlipayTradeOrderOnsettleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4413751615128788132L;
+	private static final long serialVersionUID = 2512574778577647237L;
 
 	/** 
 	 * 剩余可分金额

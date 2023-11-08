@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayAccountCashpoolCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6394875422498383277L;
+	private static final long serialVersionUID = 6792223892889789494L;
 
 	/** 
 	 * 资金池唯一标志
