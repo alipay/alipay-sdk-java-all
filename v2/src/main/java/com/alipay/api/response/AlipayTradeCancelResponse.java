@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-01 16:59:06
+ * @since 1.0, 2023-11-09 18:52:39
  */
 public class AlipayTradeCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3833738689112746966L;
+	private static final long serialVersionUID = 4435854795977553589L;
 
 	/** 
 	 * 本次撤销触发的交易动作,接口调用成功且交易存在时返回。可能的返回值：

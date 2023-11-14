@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoContractSignflowsCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4472517687678742111L;
+	private static final long serialVersionUID = 1651358256275875471L;
 
 	/** 
 	 * 电子合同流程id（需记录到业务系统中，后续相关服务调用都基于此ID）

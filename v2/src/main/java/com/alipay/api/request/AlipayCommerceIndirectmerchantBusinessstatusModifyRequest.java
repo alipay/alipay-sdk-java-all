@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.indirectmerchant.businessstatus.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-11-02 13:56:50
+ * @since 1.0, 2023-11-10 10:35:55
  */
 public class AlipayCommerceIndirectmerchantBusinessstatusModifyRequest implements AlipayRequest<AlipayCommerceIndirectmerchantBusinessstatusModifyResponse> {
 

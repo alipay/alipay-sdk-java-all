@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOverseasTaxOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1444912752773523246L;
+	private static final long serialVersionUID = 6487285161225214713L;
 
 	/** 
 	 * 用于识别用户支付宝账号的号码，由identify_account_type指定类型:

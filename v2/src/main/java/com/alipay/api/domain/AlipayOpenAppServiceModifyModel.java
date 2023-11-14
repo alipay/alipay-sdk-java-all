@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务修改
  *
  * @author auto create
- * @since 1.0, 2023-11-06 10:17:14
+ * @since 1.0, 2023-11-14 19:34:19
  */
 public class AlipayOpenAppServiceModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7255351564646231444L;
+	private static final long serialVersionUID = 3317326737161291188L;
 
 	/**
 	 * 服务schema版本
@@ -36,6 +36,14 @@ public class AlipayOpenAppServiceModifyModel extends AlipayObject {
 	 */
 	@ApiField("template_type")
 	private String templateType;
+
+	/**
+	 * 服务履约类型的枚举值为
+访问类型：SCANE_SERVICE_DELIVERY
+交易类型：TRADE_SERVICE_DELIVERY
+	 */
+	@ApiField("user_service_delivery_type")
+	private String userServiceDeliveryType;
 
 	public String getSchemaVersion() {
 		return this.schemaVersion;
@@ -63,6 +71,13 @@ public class AlipayOpenAppServiceModifyModel extends AlipayObject {
 	}
 	public void setTemplateType(String templateType) {
 		this.templateType = templateType;
+	}
+
+	public String getUserServiceDeliveryType() {
+		return this.userServiceDeliveryType;
+	}
+	public void setUserServiceDeliveryType(String userServiceDeliveryType) {
+		this.userServiceDeliveryType = userServiceDeliveryType;
 	}
 
 }

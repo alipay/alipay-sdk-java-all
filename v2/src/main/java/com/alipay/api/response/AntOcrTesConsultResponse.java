@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntOcrTesConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2168554559775111222L;
+	private static final long serialVersionUID = 7287222877572128491L;
 
 	/** 
 	 * q

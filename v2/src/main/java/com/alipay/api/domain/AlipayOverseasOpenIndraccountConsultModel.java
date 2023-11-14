@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账号预校验
  *
  * @author auto create
- * @since 1.0, 2023-10-09 17:04:06
+ * @since 1.0, 2023-11-09 17:22:34
  */
 public class AlipayOverseasOpenIndraccountConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4611418317745745132L;
+	private static final long serialVersionUID = 1653813316165684336L;
 
 	/**
 	 * 账户名称
@@ -47,6 +47,12 @@ public class AlipayOverseasOpenIndraccountConsultModel extends AlipayObject {
 	 */
 	@ApiField("country")
 	private String country;
+
+	/**
+	 * 收款类型
+	 */
+	@ApiField("receipt_method")
+	private String receiptMethod;
 
 	/**
 	 * 场景类型:
@@ -95,6 +101,13 @@ HOUSE_RENTAL 留学租房
 	}
 	public void setCountry(String country) {
 		this.country = country;
+	}
+
+	public String getReceiptMethod() {
+		return this.receiptMethod;
+	}
+	public void setReceiptMethod(String receiptMethod) {
+		this.receiptMethod = receiptMethod;
 	}
 
 	public String getSceneType() {

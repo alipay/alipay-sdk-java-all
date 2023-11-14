@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOverseasTravelRateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4144455459522185858L;
+	private static final long serialVersionUID = 2828587982588344657L;
 
 	/** 
 	 * 货币代码，ISO标准alpha- 3币种代码，为当前查询的币种、或者根据国家码、经纬度定位所在国家对应的币种

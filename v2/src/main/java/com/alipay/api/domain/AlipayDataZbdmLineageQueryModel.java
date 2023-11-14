@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayDataZbdmLineageQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2433128429688488659L;
+	private static final long serialVersionUID = 5857346431711129696L;
 
 	/**
 	 * 参数名：血缘传播方向

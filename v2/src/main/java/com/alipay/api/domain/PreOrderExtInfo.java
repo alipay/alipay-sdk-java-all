@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 扩展参数
  *
  * @author auto create
- * @since 1.0, 2022-04-21 17:35:29
+ * @since 1.0, 2023-11-14 19:29:58
  */
 public class PreOrderExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3539279412678459642L;
+	private static final long serialVersionUID = 3875481526694298148L;
 
 	/**
 	 * 品牌id

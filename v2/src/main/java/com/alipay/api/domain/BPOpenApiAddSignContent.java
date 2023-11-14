@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 加签内容
  *
  * @author auto create
- * @since 1.0, 2023-08-11 14:41:00
+ * @since 1.0, 2023-11-13 10:51:00
  */
 public class BPOpenApiAddSignContent extends AlipayObject {
 
-	private static final long serialVersionUID = 3357669665594773394L;
+	private static final long serialVersionUID = 4797321938353537361L;
 
 	/**
 	 * 自定义的条件跳转。JSON格式
@@ -28,6 +28,12 @@ public class BPOpenApiAddSignContent extends AlipayObject {
 	 */
 	@ApiField("assignee")
 	private String assignee;
+
+	/**
+	 * 表示加签人的工号, 也可以指定子账户, 如123456-1
+	 */
+	@ApiField("assignee_work_no")
+	private String assigneeWorkNo;
 
 	/**
 	 * 自定义操作
@@ -65,6 +71,13 @@ public class BPOpenApiAddSignContent extends AlipayObject {
 	}
 	public void setAssignee(String assignee) {
 		this.assignee = assignee;
+	}
+
+	public String getAssigneeWorkNo() {
+		return this.assigneeWorkNo;
+	}
+	public void setAssigneeWorkNo(String assigneeWorkNo) {
+		this.assigneeWorkNo = assigneeWorkNo;
 	}
 
 	public String getDealActions() {

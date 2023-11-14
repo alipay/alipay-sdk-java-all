@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingPartnershipsStopResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6127122295175819115L;
+	private static final long serialVersionUID = 6322566137279331363L;
 
 	/** 
 	 * 合作状态，枚举值： ESTABLISHED：已建立 TERMINATED：已终止

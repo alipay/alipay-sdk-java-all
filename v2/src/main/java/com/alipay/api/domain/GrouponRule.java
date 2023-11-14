@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 拼团规则
  *
  * @author auto create
- * @since 1.0, 2020-09-28 15:34:56
+ * @since 1.0, 2023-11-13 16:35:58
  */
 public class GrouponRule extends AlipayObject {
 
-	private static final long serialVersionUID = 4254794799729736576L;
+	private static final long serialVersionUID = 6875241472327767631L;
 
 	/**
 	 * 拼团成团人数

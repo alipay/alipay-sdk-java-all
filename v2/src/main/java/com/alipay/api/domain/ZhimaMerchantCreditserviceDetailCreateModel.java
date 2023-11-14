@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻信用信用服务创建
  *
  * @author auto create
- * @since 1.0, 2023-09-26 09:46:03
+ * @since 1.0, 2023-11-08 20:21:21
  */
 public class ZhimaMerchantCreditserviceDetailCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2658918536744436253L;
+	private static final long serialVersionUID = 5755465263449293257L;
 
 	/**
 	 * 信用服务基础信息配置，为必传字段。此字段为复杂模型，其中服务名称和服务logo为必传属性。
@@ -65,6 +65,15 @@ public class ZhimaMerchantCreditserviceDetailCreateModel extends AlipayObject {
 	 */
 	@ApiField("solution_id")
 	private String solutionId;
+
+	/**
+	 * 二级商户pid。
+注意：
+* create_type = indirect（间连模式创建）时，，用于查询二级商户底线风险。
+* create_type = direct（直连模式创建）时，请勿传入。
+	 */
+	@ApiField("sub_pid")
+	private String subPid;
 
 	public BaseInfoConfig getBaseInfoConfig() {
 		return this.baseInfoConfig;
@@ -120,6 +129,13 @@ public class ZhimaMerchantCreditserviceDetailCreateModel extends AlipayObject {
 	}
 	public void setSolutionId(String solutionId) {
 		this.solutionId = solutionId;
+	}
+
+	public String getSubPid() {
+		return this.subPid;
+	}
+	public void setSubPid(String subPid) {
+		this.subPid = subPid;
 	}
 
 }

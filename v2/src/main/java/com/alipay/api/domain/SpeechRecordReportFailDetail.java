@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SpeechRecordReportFailDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3575242352615594475L;
+	private static final long serialVersionUID = 8877149239456611566L;
 
 	/**
 	 * 校验错误编码

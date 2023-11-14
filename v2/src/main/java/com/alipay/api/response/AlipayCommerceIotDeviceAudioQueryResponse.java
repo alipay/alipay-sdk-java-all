@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceIotDeviceAudioQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3779969949967872966L;
+	private static final long serialVersionUID = 7795395183366329979L;
 
 	/** 
 	 * 设备上的语音列表.格式为json字符串. audioId为语音id,playType为播放场景,取值为TRADE或CUSTOM_AUDIO

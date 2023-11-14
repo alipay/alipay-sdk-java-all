@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物料生产订单物流详情, 包括物流订单号, 物流公司名称等信息
  *
  * @author auto create
- * @since 1.0, 2023-09-14 19:24:56
+ * @since 1.0, 2023-11-13 11:53:40
  */
 public class ItemDeliveryDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5619495114934651214L;
+	private static final long serialVersionUID = 8521864992462814989L;
 
 	/**
 	 * 已生产数量, 分批反馈时候必传.
@@ -48,6 +48,12 @@ public class ItemDeliveryDetail extends AlipayObject {
 	 */
 	@ApiField("logistics_no")
 	private String logisticsNo;
+
+	/**
+	 * 供应商传入库存动销明细对应的凭证日期
+	 */
+	@ApiField("voucher_time")
+	private String voucherTime;
 
 	public String getAmount() {
 		return this.amount;
@@ -89,6 +95,13 @@ public class ItemDeliveryDetail extends AlipayObject {
 	}
 	public void setLogisticsNo(String logisticsNo) {
 		this.logisticsNo = logisticsNo;
+	}
+
+	public String getVoucherTime() {
+		return this.voucherTime;
+	}
+	public void setVoucherTime(String voucherTime) {
+		this.voucherTime = voucherTime;
 	}
 
 }

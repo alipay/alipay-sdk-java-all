@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayIserviceMindvAnswersBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1357354796869318682L;
+	private static final long serialVersionUID = 2136578436513133399L;
 
 	/**
 	 * 对应填写的任务id_用以获取指定任务的结果数据

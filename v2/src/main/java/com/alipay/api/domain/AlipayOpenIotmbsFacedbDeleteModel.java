@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenIotmbsFacedbDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8891765419456651412L;
+	private static final long serialVersionUID = 7586369454123348617L;
 
 	/**
 	 * 人脸ID

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻Go页面签约扩展字段
  *
  * @author auto create
- * @since 1.0, 2021-02-24 16:56:34
+ * @since 1.0, 2023-11-13 16:45:48
  */
 public class SignExtendInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8449671687571788135L;
+	private static final long serialVersionUID = 6171648682797729194L;
 
 	/**
 	 * isv 商户id

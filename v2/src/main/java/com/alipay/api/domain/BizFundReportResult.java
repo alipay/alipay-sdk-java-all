@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金业务明细实体
  *
  * @author auto create
- * @since 1.0, 2021-08-13 16:37:44
+ * @since 1.0, 2023-11-08 16:43:40
  */
 public class BizFundReportResult extends AlipayObject {
 
-	private static final long serialVersionUID = 4136699183222342268L;
+	private static final long serialVersionUID = 1171914258936166339L;
 
 	/**
 	 * 实付金额（元）

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.trade.close request
  * 
  * @author auto create
- * @since 1.0, 2023-11-01 17:01:21
+ * @since 1.0, 2023-11-09 18:54:23
  */
 public class AlipayTradeCloseRequest implements AlipayRequest<AlipayTradeCloseResponse> {
 

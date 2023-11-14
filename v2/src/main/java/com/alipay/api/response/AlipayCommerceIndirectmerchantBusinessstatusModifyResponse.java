@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.indirectmerchant.businessstatus.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-02 13:56:50
+ * @since 1.0, 2023-11-10 10:35:55
  */
 public class AlipayCommerceIndirectmerchantBusinessstatusModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6787497167197998988L;
+	private static final long serialVersionUID = 6482963648434325164L;
 
 	/** 
 	 * 结果

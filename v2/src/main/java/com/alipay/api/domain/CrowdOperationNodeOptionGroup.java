@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 人群操作节点选项组
  *
  * @author auto create
- * @since 1.0, 2023-10-30 16:31:41
+ * @since 1.0, 2023-11-09 19:22:08
  */
 public class CrowdOperationNodeOptionGroup extends AlipayObject {
 
-	private static final long serialVersionUID = 3797761776369123893L;
+	private static final long serialVersionUID = 3269916769592381216L;
 
 	/**
 	 * 节点值编码

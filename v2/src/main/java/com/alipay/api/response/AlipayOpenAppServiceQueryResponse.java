@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.service.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-06 12:50:46
+ * @since 1.0, 2023-11-14 19:36:50
  */
 public class AlipayOpenAppServiceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3213283566711656648L;
+	private static final long serialVersionUID = 4381863325984756454L;
 
 	/** 
 	 * 驳回理由
@@ -43,6 +43,12 @@ public class AlipayOpenAppServiceQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("template_type")
 	private String templateType;
+
+	/** 
+	 * 服务履约类型
+	 */
+	@ApiField("user_service_delivery_type")
+	private String userServiceDeliveryType;
 
 	public void setRejectReason(String rejectReason) {
 		this.rejectReason = rejectReason;
@@ -77,6 +83,13 @@ public class AlipayOpenAppServiceQueryResponse extends AlipayResponse {
 	}
 	public String getTemplateType( ) {
 		return this.templateType;
+	}
+
+	public void setUserServiceDeliveryType(String userServiceDeliveryType) {
+		this.userServiceDeliveryType = userServiceDeliveryType;
+	}
+	public String getUserServiceDeliveryType( ) {
+		return this.userServiceDeliveryType;
 	}
 
 }

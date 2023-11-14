@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改间连商户经营状态
  *
  * @author auto create
- * @since 1.0, 2023-10-30 10:31:03
+ * @since 1.0, 2023-11-10 10:35:55
  */
 public class AlipayCommerceIndirectmerchantBusinessstatusModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1299183842147116556L;
+	private static final long serialVersionUID = 6783963238876375669L;
 
 	/**
 	 * 商家经营状态

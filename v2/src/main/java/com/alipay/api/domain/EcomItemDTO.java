@@ -7,14 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电商商品模型
  *
  * @author auto create
- * @since 1.0, 2023-11-07 14:40:19
+ * @since 1.0, 2023-11-13 13:43:17
  */
 public class EcomItemDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6647512371646748175L;
+	private static final long serialVersionUID = 7345589179352423277L;
 
 	/**
-	 * 买断金额
+	 * 支付宝商品id
+	 */
+	@ApiField("alipay_item_id")
+	private String alipayItemId;
+
+	/**
+	 * 买断金额，单位：分
 	 */
 	@ApiField("buyout_money")
 	private Long buyoutMoney;
@@ -62,7 +68,7 @@ public class EcomItemDTO extends AlipayObject {
 	private String itemPictUrl;
 
 	/**
-	 * 商品单价
+	 * 商品单价，单位：分
 	 */
 	@ApiField("item_price")
 	private Long itemPrice;
@@ -74,7 +80,7 @@ public class EcomItemDTO extends AlipayObject {
 	private String itemTitle;
 
 	/**
-	 * 商品自身价值
+	 * 商品自身价值，单位：分
 	 */
 	@ApiField("item_value")
 	private Long itemValue;
@@ -110,16 +116,23 @@ public class EcomItemDTO extends AlipayObject {
 	private String skuAmount;
 
 	/**
-	 * sku最大价格
+	 * sku最大价格，单位：分
 	 */
 	@ApiField("sku_max_price")
 	private Long skuMaxPrice;
 
 	/**
-	 * sku最小价格
+	 * sku最小价格，单位：分
 	 */
 	@ApiField("sku_min_price")
 	private Long skuMinPrice;
+
+	public String getAlipayItemId() {
+		return this.alipayItemId;
+	}
+	public void setAlipayItemId(String alipayItemId) {
+		this.alipayItemId = alipayItemId;
+	}
 
 	public Long getBuyoutMoney() {
 		return this.buyoutMoney;

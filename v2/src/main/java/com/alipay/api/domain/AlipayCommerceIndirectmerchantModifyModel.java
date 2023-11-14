@@ -10,11 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改商户
  *
  * @author auto create
- * @since 1.0, 2023-10-30 10:31:25
+ * @since 1.0, 2023-11-13 10:59:52
  */
 public class AlipayCommerceIndirectmerchantModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1229359479595346345L;
+	private static final long serialVersionUID = 2744277967712679944L;
+
+	/**
+	 * 行业模版code，默认不用传，当是水奶行业是需要传shui或者nai
+	 */
+	@ApiField("industry_template_code")
+	private String industryTemplateCode;
+
+	/**
+	 * 商家logo图片id，来源于上传接口的返回值，上传接口文档：https://opendocs.alipay.com/apis/069sh7
+	 */
+	@ApiField("logo_image_id")
+	private String logoImageId;
 
 	/**
 	 * 商家logo图片地址
@@ -52,6 +64,20 @@ public class AlipayCommerceIndirectmerchantModifyModel extends AlipayObject {
 	 */
 	@ApiField("phone")
 	private String phone;
+
+	public String getIndustryTemplateCode() {
+		return this.industryTemplateCode;
+	}
+	public void setIndustryTemplateCode(String industryTemplateCode) {
+		this.industryTemplateCode = industryTemplateCode;
+	}
+
+	public String getLogoImageId() {
+		return this.logoImageId;
+	}
+	public void setLogoImageId(String logoImageId) {
+		this.logoImageId = logoImageId;
+	}
 
 	public String getLogoUrl() {
 		return this.logoUrl;

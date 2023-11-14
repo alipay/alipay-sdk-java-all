@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序云智能应用上传数据接口
  *
  * @author auto create
- * @since 1.0, 2023-10-18 16:36:38
+ * @since 1.0, 2023-11-09 15:16:44
  */
 public class TechriskInnovateMpcpromoDataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8649814984689835985L;
+	private static final long serialVersionUID = 6678777446454122149L;
 
 	/**
 	 * 商品数据的列表
@@ -24,13 +24,13 @@ public class TechriskInnovateMpcpromoDataSyncModel extends AlipayObject {
 	private List<MpcpromoGoodsList> dataList;
 
 	/**
-	 * 数据类型 : VOUCHER（商家券数据）、ITEM（商品数据）
+	 * 数据类型 : SHOP（店铺数据）、VOUCHER（商家券数据）、ITEM（商品数据）
 	 */
 	@ApiField("data_type")
 	private String dataType;
 
 	/**
-	 * 行业类别:   goodsLease（常规/租赁 商品数据）,voucherNormal（常规商家券）
+	 * 行业类别:   goodsLease（常规/租赁 商品数据）,voucherNormal（常规商家券）,shopNormal（店铺数据）
 	 */
 	@ApiField("industry")
 	private String industry;

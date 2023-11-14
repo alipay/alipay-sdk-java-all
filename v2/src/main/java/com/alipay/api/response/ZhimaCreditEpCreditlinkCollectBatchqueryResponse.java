@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaCreditEpCreditlinkCollectBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4121332561729537715L;
+	private static final long serialVersionUID = 7724999451971958778L;
 
 	/** 
 	 * 数据列表，其中list是JSON数据列表，目前只有招投标数据,其单项结构是

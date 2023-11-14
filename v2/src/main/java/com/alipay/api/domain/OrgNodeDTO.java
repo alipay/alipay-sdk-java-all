@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 树节点
  *
  * @author auto create
- * @since 1.0, 2022-02-23 12:04:23
+ * @since 1.0, 2023-11-13 15:33:48
  */
 public class OrgNodeDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3637315266439358945L;
+	private static final long serialVersionUID = 7586667967485715677L;
 
 	/**
 	 * 节点code,如部门code,业务线code

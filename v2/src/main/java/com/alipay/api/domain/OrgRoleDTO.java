@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用户管理-组织视角DTO
  *
  * @author auto create
- * @since 1.0, 2022-02-23 21:16:19
+ * @since 1.0, 2023-11-13 15:33:48
  */
 public class OrgRoleDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4434354758119624638L;
+	private static final long serialVersionUID = 5721361561325563176L;
 
 	/**
 	 * 树节点

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电商商品详情模型
  *
  * @author auto create
- * @since 1.0, 2023-11-07 14:40:19
+ * @since 1.0, 2023-11-13 13:38:57
  */
 public class EcomItemExtendDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4818496443128127147L;
+	private static final long serialVersionUID = 4162576151268794776L;
 
 	/**
 	 * cardType + 唯一 + 储值卡类目投保场景 + 通过上下游约定获取

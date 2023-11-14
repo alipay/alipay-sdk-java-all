@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 配送完成反馈详情
  *
  * @author auto create
- * @since 1.0, 2023-09-14 19:24:36
+ * @since 1.0, 2023-11-14 15:53:48
  */
 public class AssetDeliveryDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 2666274935427516637L;
+	private static final long serialVersionUID = 6829191647194928642L;
 
 	/**
 	 * 配送数量
@@ -46,6 +46,12 @@ public class AssetDeliveryDetail extends AlipayObject {
 	@ApiListField("logistics_infos")
 	@ApiField("logistics_info")
 	private List<LogisticsInfo> logisticsInfos;
+
+	/**
+	 * 供应商传入库存动销明细对应的凭证日期
+	 */
+	@ApiField("voucher_time")
+	private String voucherTime;
 
 	public String getAmount() {
 		return this.amount;
@@ -80,6 +86,13 @@ public class AssetDeliveryDetail extends AlipayObject {
 	}
 	public void setLogisticsInfos(List<LogisticsInfo> logisticsInfos) {
 		this.logisticsInfos = logisticsInfos;
+	}
+
+	public String getVoucherTime() {
+		return this.voucherTime;
+	}
+	public void setVoucherTime(String voucherTime) {
+		this.voucherTime = voucherTime;
 	}
 
 }

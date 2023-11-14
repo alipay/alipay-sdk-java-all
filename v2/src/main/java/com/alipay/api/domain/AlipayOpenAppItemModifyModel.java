@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序商品更新接口
  *
  * @author auto create
- * @since 1.0, 2023-11-02 13:43:43
+ * @since 1.0, 2023-11-09 19:52:29
  */
 public class AlipayOpenAppItemModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3754257211268771917L;
+	private static final long serialVersionUID = 5511135535239581221L;
 
 	/**
 	 * 商品属性
@@ -116,11 +116,7 @@ public class AlipayOpenAppItemModifyModel extends AlipayObject {
 	private Long salePrice;
 
 	/**
-	 * 商品的售卖状态，包含以下两种状态
-已下架(DELISTING)
-可售卖(AVAILABLE)
-若填写了skus[]数组，此字段不用填写。
-若未填写skus[]数组，此字段必填。
+	 * 商品的售卖状态，包含以下两种状态 已下架(DELISTING), 可售卖(AVAILABLE),和冻结(FREEZE) 若填写了skus[]数组，此字段不用填写。 若未填写skus[]数组，此字段必填。
 	 */
 	@ApiField("sale_status")
 	private String saleStatus;

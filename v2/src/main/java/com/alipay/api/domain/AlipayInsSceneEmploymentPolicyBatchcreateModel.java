@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 灵活用工批量投保
  *
  * @author auto create
- * @since 1.0, 2023-10-25 16:27:02
+ * @since 1.0, 2023-11-09 14:55:02
  */
 public class AlipayInsSceneEmploymentPolicyBatchcreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2744699262254497339L;
+	private static final long serialVersionUID = 7641914698689282672L;
 
 	/**
 	 * 批次号

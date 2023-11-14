@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.employment.grouporder.create request
  * 
  * @author auto create
- * @since 1.0, 2023-10-25 16:27:46
+ * @since 1.0, 2023-11-09 14:56:49
  */
 public class AlipayInsSceneEmploymentGrouporderCreateRequest implements AlipayRequest<AlipayInsSceneEmploymentGrouporderCreateResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创意下线
  *
  * @author auto create
- * @since 1.0, 2018-10-22 15:16:47
+ * @since 1.0, 2023-11-08 14:12:54
  */
 public class AlipayCommerceTransportAdCreativeOfflineModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4543571853474549445L;
+	private static final long serialVersionUID = 3345172233151735534L;
 
 	/**
 	 * 广告主id  + 下线创意时，需要校验该创意是否属于该用户

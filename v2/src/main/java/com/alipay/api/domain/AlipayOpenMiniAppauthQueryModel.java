@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询三方应用的商家小程序授权列表
  *
  * @author auto create
- * @since 1.0, 2023-05-30 17:38:30
+ * @since 1.0, 2023-11-08 10:26:47
  */
 public class AlipayOpenMiniAppauthQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3259353664971849157L;
+	private static final long serialVersionUID = 6197521396935571656L;
+
+	/**
+	 * 商家小程序APPID
+	 */
+	@ApiField("auth_app_id")
+	private String authAppId;
 
 	/**
 	 * 请求分页页面
@@ -24,6 +30,13 @@ public class AlipayOpenMiniAppauthQueryModel extends AlipayObject {
 	 */
 	@ApiField("page_size")
 	private Long pageSize;
+
+	public String getAuthAppId() {
+		return this.authAppId;
+	}
+	public void setAuthAppId(String authAppId) {
+		this.authAppId = authAppId;
+	}
 
 	public Long getPageNo() {
 		return this.pageNo;

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOverseasSecondmerchantMaintainQuerystatusModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2224719186451533252L;
+	private static final long serialVersionUID = 8563497266774276851L;
 
 	/**
 	 * 二级商户报备类型，分为ONLINE_PAYMENT和INSTORE_PAYMENT两种

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 灵活用工团单创单
  *
  * @author auto create
- * @since 1.0, 2023-10-25 16:27:46
+ * @since 1.0, 2023-11-09 14:55:24
  */
 public class AlipayInsSceneEmploymentGrouporderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7671524114265899678L;
+	private static final long serialVersionUID = 8723973479938272666L;
 
 	/**
 	 * 指定生效时间，生效时间格式必须为自然日0点。

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMerchantAuthDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7793728741147579522L;
+	private static final long serialVersionUID = 5638231972391929279L;
 
 	/**
 	 * 沧州银行

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员规则
  *
  * @author auto create
- * @since 1.0, 2020-10-09 10:21:47
+ * @since 1.0, 2023-11-13 16:35:58
  */
 public class MemberRule extends AlipayObject {
 
-	private static final long serialVersionUID = 3575769678622938535L;
+	private static final long serialVersionUID = 6525451127768937743L;
 
 	/**
 	 * 指定周期模式适用。指定时间到期

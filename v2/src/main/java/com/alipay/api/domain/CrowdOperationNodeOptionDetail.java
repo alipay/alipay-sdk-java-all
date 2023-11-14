@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 节点选项详情
  *
  * @author auto create
- * @since 1.0, 2023-10-30 16:19:32
+ * @since 1.0, 2023-11-09 19:22:08
  */
 public class CrowdOperationNodeOptionDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3361451645579327835L;
+	private static final long serialVersionUID = 6523376587963216622L;
 
 	/**
 	 * 选项值展示描述文案

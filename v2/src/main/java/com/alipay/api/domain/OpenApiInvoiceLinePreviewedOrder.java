@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenApiInvoiceLinePreviewedOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 6575165261847222488L;
+	private static final long serialVersionUID = 3648749747164683452L;
 
 	/**
 	 * 发票的票面金额

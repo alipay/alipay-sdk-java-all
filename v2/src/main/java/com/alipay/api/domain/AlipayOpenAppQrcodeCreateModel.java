@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序生成推广二维码接口
  *
  * @author auto create
- * @since 1.0, 2023-11-06 11:30:52
+ * @since 1.0, 2023-11-13 10:34:14
  */
 public class AlipayOpenAppQrcodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1477593175745482333L;
+	private static final long serialVersionUID = 3795477657146687816L;
 
 	/**
 	 * 圆形二维码颜色（十六进制颜色色值），仅圆形二维码支持颜色设置，方形二维码默认为黑色。

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品类目预咨询接口
  *
  * @author auto create
- * @since 1.0, 2023-10-19 14:11:38
+ * @since 1.0, 2023-11-14 19:18:04
  */
 public class AlipayOpenAppItemCategoryPreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4861951684734351294L;
+	private static final long serialVersionUID = 2185969516594255314L;
 
 	/**
 	 * 商品详情页URL

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCampaignRuleCrowdCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6636731893186378499L;
+	private static final long serialVersionUID = 8131164111594289518L;
 
 	/**
 	 * tagCode：标签别名，指定标签类型，如城市、年龄等，如pubsrv_city_code为城市标签，创建时必填，可传入多组标签
