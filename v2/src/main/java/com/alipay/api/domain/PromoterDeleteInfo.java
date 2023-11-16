@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PromoterDeleteInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7596217937345535318L;
+	private static final long serialVersionUID = 4695251278854283464L;
 
 	/**
 	 * 处理结果描述

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * card_type枚举补充
  *
  * @author auto create
- * @since 1.0, 2023-11-14 17:21:10
+ * @since 1.0, 2023-11-16 11:35:59
  */
 public class MiniBusinessParamsDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4762479748991599638L;
+	private static final long serialVersionUID = 6628688634256538631L;
 
 	/**
 	 * 实际订单时间，在乘车码场景，传入的是用户刷码乘车时间

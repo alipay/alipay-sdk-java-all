@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 直付通二级商户进件申请单信息
  *
  * @author auto create
- * @since 1.0, 2023-11-06 14:40:43
+ * @since 1.0, 2023-11-16 20:06:18
  */
 public class ZftSubMerchantOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 3472535945327882796L;
+	private static final long serialVersionUID = 1427838917938228873L;
 
 	/**
 	 * 是否开通线上预授权
@@ -28,7 +28,7 @@ public class ZftSubMerchantOrder extends AlipayObject {
 	private Date applyTime;
 
 	/**
-	 * 本申请单的请求类型。一般可选值包括ZHIFUTONG_CONSULT（直付通商户预校验）/ZHIFUTONG_CREATE（直付通商户创建）/ZHIFUTONG_MODIFY（直付通商户修改）
+	 * 本申请单的请求类型。
 	 */
 	@ApiField("apply_type")
 	private String applyType;

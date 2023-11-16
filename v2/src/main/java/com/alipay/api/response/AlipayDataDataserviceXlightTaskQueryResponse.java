@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.xlight.task.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-16 14:31:46
+ * @since 1.0, 2023-11-16 16:36:50
  */
 public class AlipayDataDataserviceXlightTaskQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7256327151158564143L;
+	private static final long serialVersionUID = 4773564662937377133L;
 
 	/** 
 	 * 任务完成时间
@@ -27,6 +27,12 @@ public class AlipayDataDataserviceXlightTaskQueryResponse extends AlipayResponse
 	@ApiField("status")
 	private String status;
 
+	/** 
+	 * 单位为人民币分，task_reward_amount=2代表2分钱。这个字段与广告检索接口返回的taskRewardAmount字段值一致
+	 */
+	@ApiField("task_reward_amount")
+	private String taskRewardAmount;
+
 	public void setFinishTime(Date finishTime) {
 		this.finishTime = finishTime;
 	}
@@ -39,6 +45,13 @@ public class AlipayDataDataserviceXlightTaskQueryResponse extends AlipayResponse
 	}
 	public String getStatus( ) {
 		return this.status;
+	}
+
+	public void setTaskRewardAmount(String taskRewardAmount) {
+		this.taskRewardAmount = taskRewardAmount;
+	}
+	public String getTaskRewardAmount( ) {
+		return this.taskRewardAmount;
 	}
 
 }

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RefererSetting extends AlipayObject {
 
-	private static final long serialVersionUID = 8572286559965581243L;
+	private static final long serialVersionUID = 3865811523442517962L;
 
 	/**
 	 * 是否开启配置

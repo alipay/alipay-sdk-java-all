@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券商代销信托用户信息查询
  *
  * @author auto create
- * @since 1.0, 2023-05-19 15:20:46
+ * @since 1.0, 2023-11-15 14:02:52
  */
 public class AntfortuneStockTrustUserQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8694596256464745626L;
+	private static final long serialVersionUID = 8366375894668372236L;
 
 	/**
 	 * 券商代销信托业务用户ID

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 直付通商户创建预校验咨询
  *
  * @author auto create
- * @since 1.0, 2023-09-11 17:47:55
+ * @since 1.0, 2023-11-16 20:19:52
  */
 public class AntMerchantExpandIndirectZftConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3428441775225341688L;
+	private static final long serialVersionUID = 2754219643326653873L;
 
 	/**
 	 * 商户别名。支付宝账单中的商户名称会展示此处设置的别名，如果涉及支付宝APP内的支付，支付结果页也会展示该别名。如果涉及当面付场景，请填写线下店铺名称
@@ -232,6 +232,19 @@ public class AntMerchantExpandIndirectZftConsultModel extends AlipayObject {
 	@ApiListField("sites")
 	@ApiField("site_info")
 	private List<SiteInfo> sites;
+
+	/**
+	 * 交易场景；
+	 */
+	@ApiListField("trade_scene")
+	@ApiField("string")
+	private List<String> tradeScene;
+
+	/**
+	 * 代扣产品信息
+	 */
+	@ApiField("zft_withholding_info")
+	private ZFTWithholdingInfo zftWithholdingInfo;
 
 	public String getAliasName() {
 		return this.aliasName;
@@ -476,6 +489,20 @@ public class AntMerchantExpandIndirectZftConsultModel extends AlipayObject {
 	}
 	public void setSites(List<SiteInfo> sites) {
 		this.sites = sites;
+	}
+
+	public List<String> getTradeScene() {
+		return this.tradeScene;
+	}
+	public void setTradeScene(List<String> tradeScene) {
+		this.tradeScene = tradeScene;
+	}
+
+	public ZFTWithholdingInfo getZftWithholdingInfo() {
+		return this.zftWithholdingInfo;
+	}
+	public void setZftWithholdingInfo(ZFTWithholdingInfo zftWithholdingInfo) {
+		this.zftWithholdingInfo = zftWithholdingInfo;
 	}
 
 }

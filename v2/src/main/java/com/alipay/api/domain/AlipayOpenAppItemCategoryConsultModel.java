@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenAppItemCategoryConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2228852276122576125L;
+	private static final long serialVersionUID = 4314689751327294285L;
 
 	/**
 	 * [{"value": "1","name": "售卖类（实物）"},{"value": "2","name": "租赁类（实物）"},{"value": "3","name": "付费充值/兑换类（虚拟）"}]

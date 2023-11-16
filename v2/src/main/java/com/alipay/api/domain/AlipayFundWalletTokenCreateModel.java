@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundWalletTokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8665425566174598845L;
+	private static final long serialVersionUID = 1652847685419349876L;
 
 	/**
 	 * alipay.user.agreement.page.sign返回的代扣签约串

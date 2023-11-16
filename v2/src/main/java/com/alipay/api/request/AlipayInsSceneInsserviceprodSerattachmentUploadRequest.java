@@ -14,7 +14,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.insserviceprod.serattachment.upload request
  * 
  * @author auto create
- * @since 1.0, 2023-11-08 10:33:28
+ * @since 1.0, 2023-11-16 13:56:49
  */
 public class AlipayInsSceneInsserviceprodSerattachmentUploadRequest implements AlipayUploadRequest<AlipayInsSceneInsserviceprodSerattachmentUploadResponse> {
 
@@ -60,6 +60,11 @@ public class AlipayInsSceneInsserviceprodSerattachmentUploadRequest implements A
 	* 文件类型
 	 */
 	private String fileType;
+
+	/** 
+	* 文件的公网链接，机构可通过此链接向蚂蚁上传文件
+	 */
+	private String fileUrl;
 
 	/** 
 	* 外部业务号
@@ -135,6 +140,13 @@ public class AlipayInsSceneInsserviceprodSerattachmentUploadRequest implements A
 	}
 	public String getFileType() {
 		return this.fileType;
+	}
+
+	public void setFileUrl(String fileUrl) {
+		this.fileUrl = fileUrl;
+	}
+	public String getFileUrl() {
+		return this.fileUrl;
 	}
 
 	public void setOutBizNo(String outBizNo) {
@@ -232,6 +244,7 @@ public class AlipayInsSceneInsserviceprodSerattachmentUploadRequest implements A
 		txtParams.put("file_path", this.filePath);
 		txtParams.put("file_size", this.fileSize);
 		txtParams.put("file_type", this.fileType);
+		txtParams.put("file_url", this.fileUrl);
 		txtParams.put("out_biz_no", this.outBizNo);
 		txtParams.put("ser_biz_no", this.serBizNo);
 		txtParams.put("ser_biz_type", this.serBizType);

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaMerchantContractOnofferQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2451366825145225979L;
+	private static final long serialVersionUID = 6117879876336747969L;
 
 	/** 
 	 * 取消的操作主体 用于区分是系统取消还是用户主动取消

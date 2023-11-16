@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaCreditEpCertificationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8461438216934568583L;
+	private static final long serialVersionUID = 4184654358329129274L;
 
 	/** 
 	 * 代理人提交认证时的扫脸时间

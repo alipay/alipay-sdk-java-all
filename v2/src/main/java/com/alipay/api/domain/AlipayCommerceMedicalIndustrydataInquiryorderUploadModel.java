@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 问诊订单回流接口
  *
  * @author auto create
- * @since 1.0, 2023-09-06 16:03:52
+ * @since 1.0, 2023-11-14 20:30:17
  */
 public class AlipayCommerceMedicalIndustrydataInquiryorderUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3425499542746892591L;
+	private static final long serialVersionUID = 6381488922423223887L;
 
 	/**
 	 * 支付宝开放id
@@ -50,6 +50,12 @@ public class AlipayCommerceMedicalIndustrydataInquiryorderUploadModel extends Al
 	private String doctorName;
 
 	/**
+	 * 扩展信息
+	 */
+	@ApiField("ext_info")
+	private MedicalInquiryOrderExtInfo extInfo;
+
+	/**
 	 * 医生执业医院
 	 */
 	@ApiField("hospital_name")
@@ -81,7 +87,8 @@ IMAGE_INQUIRY/PHONE_INQUIRY/VIDEO_INQUIRY/QUICK_IMAGE_INQUIRY/QUICK_PHONE_INQUIR
 	private String merchantOrderLinkPage;
 
 	/**
-	 * 待支付/待接诊 / 待问诊 / 问诊中 / 已完成 / 已取消 / 已退款/退款中/取消中：WAIT_PAY/WAIT_RECEPTION/WAIT_INQUIRY/IN_INQUIRY/FINISHED/CANCELED/REFUNDED/REFUNDING/CANCELING
+	 * 待支付 / 待接诊 / 待问诊 / 问诊中 / 已完成 / 已取消 / 已退款 / 退款中 / 取消中 / 审核失败 / 系统取消 / 用户取消 对应的枚举值
+WAIT_PAY/WAIT_RECEPTION/WAIT_INQUIRY/IN_INQUIRY/FINISHED/CANCELED/REFUNDED/REFUNDING/CANCELING/APPROVE_FAIL/SYSTEM_CANCELED/USER_CANCELED
 	 */
 	@ApiField("merchant_order_status")
 	private String merchantOrderStatus;
@@ -123,7 +130,7 @@ IMAGE_INQUIRY/PHONE_INQUIRY/VIDEO_INQUIRY/QUICK_IMAGE_INQUIRY/QUICK_PHONE_INQUIR
 	private String outBizNo;
 
 	/**
-	 * 固定值：INQUIRY_ORDER
+	 * 外部订单类型
 	 */
 	@ApiField("out_biz_type")
 	private String outBizType;
@@ -192,6 +199,13 @@ IMAGE_INQUIRY/PHONE_INQUIRY/VIDEO_INQUIRY/QUICK_IMAGE_INQUIRY/QUICK_PHONE_INQUIR
 	}
 	public void setDoctorName(String doctorName) {
 		this.doctorName = doctorName;
+	}
+
+	public MedicalInquiryOrderExtInfo getExtInfo() {
+		return this.extInfo;
+	}
+	public void setExtInfo(MedicalInquiryOrderExtInfo extInfo) {
+		this.extInfo = extInfo;
 	}
 
 	public String getHospitalName() {

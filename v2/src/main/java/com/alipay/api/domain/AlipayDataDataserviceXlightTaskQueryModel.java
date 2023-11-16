@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 任务广告完成状态查询接口
  *
  * @author auto create
- * @since 1.0, 2023-10-16 14:29:17
+ * @since 1.0, 2023-11-16 16:32:50
  */
 public class AlipayDataDataserviceXlightTaskQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8116552795735824267L;
+	private static final long serialVersionUID = 1216984388962333585L;
 
 	/**
 	 * 广告检索时每个任务返回的唯一流水号，用此流水号来查询用户是否完成了这条任务

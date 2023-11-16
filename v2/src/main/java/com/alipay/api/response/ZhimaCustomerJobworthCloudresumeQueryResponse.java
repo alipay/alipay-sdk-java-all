@@ -16,11 +16,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.customer.jobworth.cloudresume.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-11 17:16:43
+ * @since 1.0, 2023-11-15 10:06:50
  */
 public class ZhimaCustomerJobworthCloudresumeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2593356136791543765L;
+	private static final long serialVersionUID = 1534219661379443289L;
 
 	/** 
 	 * 出生日期
@@ -55,10 +55,7 @@ public class ZhimaCustomerJobworthCloudresumeQueryResponse extends AlipayRespons
 	private String gender;
 
 	/** 
-	 * ALWAYS_ON_JOB("ALWAYS_ON_JOB", "随时到岗")
-MONTH_ON_JOB("MONTH_ON_JOB", "月内到岗")
-SEEK_FOR_CHANCE("SEEK_FOR_CHANCE", "考虑机会")
-NO_MIND("NO_MIND", "暂不考虑机会")
+	 * 用户的求职状态
 	 */
 	@ApiField("intention_status")
 	private String intentionStatus;
@@ -89,8 +86,7 @@ NO_MIND("NO_MIND", "暂不考虑机会")
 	private List<CloudResumePositionIntention> positionIntentions;
 
 	/** 
-	 * IN_SCHOOL:在校
-FINISH_SCHOOL:已毕业
+	 * 职业身份
 	 */
 	@ApiField("position_type")
 	private String positionType;

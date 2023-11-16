@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.stock.trust.user.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 03:51:54
+ * @since 1.0, 2023-11-15 14:06:50
  */
 public class AntfortuneStockTrustUserQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8665571438812425939L;
+	private static final long serialVersionUID = 8755261534878576289L;
 
 	/** 
 	 * 证件号
 	 */
 	@ApiField("cert_no")
 	private String certNo;
+
+	/** 
+	 * 用户支付宝注册使用的手机号码
+	 */
+	@ApiField("phone")
+	private String phone;
 
 	/** 
 	 * 姓名
@@ -31,6 +37,13 @@ public class AntfortuneStockTrustUserQueryResponse extends AlipayResponse {
 	}
 	public String getCertNo( ) {
 		return this.certNo;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+	public String getPhone( ) {
+		return this.phone;
 	}
 
 	public void setUserName(String userName) {

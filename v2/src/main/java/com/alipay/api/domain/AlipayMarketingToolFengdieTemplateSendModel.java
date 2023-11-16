@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingToolFengdieTemplateSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5823133194147252534L;
+	private static final long serialVersionUID = 8486565897191612693L;
 
 	/**
 	 * 企业 VIP 用户的ID（以 2088 开头的ID）

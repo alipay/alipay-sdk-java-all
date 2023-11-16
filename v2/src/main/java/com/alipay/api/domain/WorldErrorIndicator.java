@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class WorldErrorIndicator extends AlipayObject {
 
-	private static final long serialVersionUID = 8817931458157843344L;
+	private static final long serialVersionUID = 6414222818912867811L;
 
 	/**
 	 * 右动作按钮
