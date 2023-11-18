@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GreenAction extends AlipayObject {
 
-	private static final long serialVersionUID = 7826129357996873328L;
+	private static final long serialVersionUID = 7798947474743753873L;
 
 	/**
 	 * 不同的绿色行为的业务值描述，比如用户回收1000g废纸，即传入1000，具体生成能量信息由森林侧计算生成

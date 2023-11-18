@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 投保人信息
  *
  * @author auto create
- * @since 1.0, 2023-11-15 17:27:27
+ * @since 1.0, 2023-11-17 15:43:58
  */
 public class InsureEmployee extends AlipayObject {
 
-	private static final long serialVersionUID = 7322482322859338336L;
+	private static final long serialVersionUID = 7479181375315787963L;
 
 	/**
 	 * 证件名称
@@ -38,15 +38,16 @@ public class InsureEmployee extends AlipayObject {
 	private String employeeCardNo;
 
 	/**
-	 * 员工工种信息
+	 * 员工工种code信息,按照文档附件规则传值
 	 */
 	@ApiField("job")
 	private String job;
 
 	/**
-	 * 职业级别。 第一级：1 第二级：2...
+	 * 职业级别该字段废弃，只需要传工种job 当前字段已废弃(职业级别该字段废弃，只需要传工种job)
 	 */
 	@ApiField("job_level")
+	@Deprecated
 	private String jobLevel;
 
 	/**

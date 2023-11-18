@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EpBranchInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6417423558418772998L;
+	private static final long serialVersionUID = 1595871265313689721L;
 
 	/**
 	 * 分支机构社会统一信用代码

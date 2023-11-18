@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序云智能应用上传数据接口
  *
  * @author auto create
- * @since 1.0, 2023-11-09 15:16:44
+ * @since 1.0, 2023-11-17 19:55:17
  */
 public class TechriskInnovateMpcpromoDataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6747253312512834681L;
+	private static final long serialVersionUID = 5389313552823529357L;
 
 	/**
 	 * 商品数据的列表

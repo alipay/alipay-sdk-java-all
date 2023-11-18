@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 直付通二级商户免证照进件
  *
  * @author auto create
- * @since 1.0, 2023-09-11 17:46:37
+ * @since 1.0, 2023-11-16 21:37:16
  */
 public class AntMerchantExpandIndirectZftSimplecreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8658693513134419863L;
+	private static final long serialVersionUID = 8249619367527366273L;
 
 	/**
 	 * 补充证件图片，与additional_cert_no、additional_cert_type同时提供。当商户类型为个人时，使用当面付收款有限额，补充这组证件信息可提额。目前仅允许个人类型商户传入。其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。
@@ -173,6 +173,19 @@ public class AntMerchantExpandIndirectZftSimplecreateModel extends AlipayObject 
 	 */
 	@ApiField("sites")
 	private SiteInfo sites;
+
+	/**
+	 * 交易场景；
+	 */
+	@ApiListField("trade_scene")
+	@ApiField("string")
+	private List<String> tradeScene;
+
+	/**
+	 * 代扣产品信息
+	 */
+	@ApiField("zft_withholding_info")
+	private ZFTWithholdingInfo zftWithholdingInfo;
 
 	public String getAdditionalCertImage() {
 		return this.additionalCertImage;
@@ -354,6 +367,20 @@ public class AntMerchantExpandIndirectZftSimplecreateModel extends AlipayObject 
 	}
 	public void setSites(SiteInfo sites) {
 		this.sites = sites;
+	}
+
+	public List<String> getTradeScene() {
+		return this.tradeScene;
+	}
+	public void setTradeScene(List<String> tradeScene) {
+		this.tradeScene = tradeScene;
+	}
+
+	public ZFTWithholdingInfo getZftWithholdingInfo() {
+		return this.zftWithholdingInfo;
+	}
+	public void setZftWithholdingInfo(ZFTWithholdingInfo zftWithholdingInfo) {
+		this.zftWithholdingInfo = zftWithholdingInfo;
 	}
 
 }

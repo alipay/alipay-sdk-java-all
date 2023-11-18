@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenPublicShortlinkCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1579396468286942393L;
+	private static final long serialVersionUID = 3234118643375763592L;
 
 	/**
 	 * 对于场景 ID 的描述，由商户自定义。

@@ -17,7 +17,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserAntstarshipHomeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7652194222678257766L;
+	private static final long serialVersionUID = 5835698254185983812L;
 
 	/** 
 	 * 活动结束时间

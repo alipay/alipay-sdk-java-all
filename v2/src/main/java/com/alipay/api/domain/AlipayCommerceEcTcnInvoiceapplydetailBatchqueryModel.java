@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceEcTcnInvoiceapplydetailBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5432634729364678754L;
+	private static final long serialVersionUID = 2275443434754881415L;
 
 	/**
 	 * 申请ID

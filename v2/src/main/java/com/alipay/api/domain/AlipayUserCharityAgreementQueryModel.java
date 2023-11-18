@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserCharityAgreementQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3114766265749842315L;
+	private static final long serialVersionUID = 2172855668779414883L;
 
 	/**
 	 * 业务场景，由爱心捐赠系统配置及分配

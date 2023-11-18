@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.indirect.zft.simplecreate response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-10 10:46:00
+ * @since 1.0, 2023-11-17 14:01:50
  */
 public class AntMerchantExpandIndirectZftSimplecreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2797461155125794517L;
+	private static final long serialVersionUID = 3481298983487579677L;
 
 	/** 
 	 * 申请单id

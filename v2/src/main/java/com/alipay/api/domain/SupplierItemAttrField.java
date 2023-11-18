@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 供应链商品属性描述信息
  *
  * @author auto create
- * @since 1.0, 2023-11-15 18:37:11
+ * @since 1.0, 2023-11-17 19:54:25
  */
 public class SupplierItemAttrField extends AlipayObject {
 
-	private static final long serialVersionUID = 1376683952419282475L;
+	private static final long serialVersionUID = 2633433555941176117L;
 
 	/**
 	 * 属性CODE

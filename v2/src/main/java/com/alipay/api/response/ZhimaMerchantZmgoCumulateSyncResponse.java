@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaMerchantZmgoCumulateSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7554628762725354739L;
+	private static final long serialVersionUID = 8327479651888517453L;
 
 	/** 
 	 * 芝麻go协议号，唯一标识一个芝麻go协议。

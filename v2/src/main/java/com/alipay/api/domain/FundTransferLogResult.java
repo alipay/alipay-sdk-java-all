@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FundTransferLogResult extends AlipayObject {
 
-	private static final long serialVersionUID = 8421842841656438547L;
+	private static final long serialVersionUID = 8761381198599248372L;
 
 	/**
 	 * 转账金额

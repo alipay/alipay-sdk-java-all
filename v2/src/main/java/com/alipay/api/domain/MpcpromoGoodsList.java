@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * mpcpromo商品数据
  *
  * @author auto create
- * @since 1.0, 2023-11-08 18:22:14
+ * @since 1.0, 2023-11-17 11:17:55
  */
 public class MpcpromoGoodsList extends AlipayObject {
 
-	private static final long serialVersionUID = 8359375468533626939L;
+	private static final long serialVersionUID = 7445412299834166876L;
 
 	/**
 	 * 商品可用的城市列表
@@ -184,7 +184,7 @@ public class MpcpromoGoodsList extends AlipayObject {
 	private String shareCnt;
 
 	/**
-	 * 百分比，值范围0.00%-100.00%，保留两位小数
+	 * 发货率，值范围0.00-1.00，最多保留2位小数；
 	 */
 	@ApiField("shipment_rate")
 	private String shipmentRate;

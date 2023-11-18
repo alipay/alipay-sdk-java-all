@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 确认开通钱包模版扩展参数
  *
  * @author auto create
- * @since 1.0, 2023-11-06 13:37:17
+ * @since 1.0, 2023-11-17 14:06:21
  */
 public class ConsumeExtend extends AlipayObject {
 
-	private static final long serialVersionUID = 6464132289314463652L;
+	private static final long serialVersionUID = 5589287113571578131L;
 
 	/**
 	 * 是否支持圈店宝

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ListAgentAccountStatesFacadeResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 2559379664355413723L;
+	private static final long serialVersionUID = 1812979415349218249L;
 
 	/**
 	 * 当前页

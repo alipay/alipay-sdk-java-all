@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class Precondition extends AlipayObject {
 
-	private static final long serialVersionUID = 4535345772115332287L;
+	private static final long serialVersionUID = 8165997626198665771L;
 
 	/**
 	 * 等价关系
