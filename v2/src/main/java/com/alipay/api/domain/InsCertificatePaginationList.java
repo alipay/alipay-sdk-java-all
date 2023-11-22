@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class InsCertificatePaginationList extends AlipayObject {
 
-	private static final long serialVersionUID = 4311111371612697493L;
+	private static final long serialVersionUID = 4891926223428393974L;
 
 	/**
 	 * 当前页数

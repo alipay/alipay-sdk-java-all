@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SchoolCardSimpleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4576396647316513242L;
+	private static final long serialVersionUID = 1422196483147429961L;
 
 	/**
 	 * 支付宝学校编码

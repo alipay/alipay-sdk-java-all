@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 广告投放数据通用查询
  *
  * @author auto create
- * @since 1.0, 2023-11-08 14:47:39
+ * @since 1.0, 2023-11-20 17:47:24
  */
 public class AlipayDataDataserviceAdReportdataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3144626572752397837L;
+	private static final long serialVersionUID = 1183484328345273295L;
 
 	/**
 	 * 数据维度：
@@ -29,9 +29,7 @@ CREATIVE-创意
 
 	/**
 	 * 登录用户支付宝统一ID,2088开头字符串。登录校验和可反查出user_id。
-【alipay_pid和principal_tag使用方法：
-只传alipay_pid：获取的代理商下所有商家或直客的数据合计。
-alipay_pid和principal_tag都传：若为代理商会获取代理商下指定委托人数据。若是直客会获取自身的合计数据。】
+【alipay_pid和principal_tag使用方法：若为代理商会获取代理商下指定委托人数据。若是直客会获取自身的合计数据。】
 	 */
 	@ApiField("alipay_pid")
 	private String alipayPid;

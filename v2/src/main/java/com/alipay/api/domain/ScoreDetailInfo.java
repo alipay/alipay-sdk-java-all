@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ScoreDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6342799497243683954L;
+	private static final long serialVersionUID = 2845328569953698752L;
 
 	/**
 	 * 子维度分数

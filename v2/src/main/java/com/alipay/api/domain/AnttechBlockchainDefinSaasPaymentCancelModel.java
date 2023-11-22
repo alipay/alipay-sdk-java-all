@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预授权撤销
  *
  * @author auto create
- * @since 1.0, 2022-08-25 22:29:13
+ * @since 1.0, 2023-11-22 14:52:15
  */
 public class AnttechBlockchainDefinSaasPaymentCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4562272328889666325L;
+	private static final long serialVersionUID = 2251215436787197933L;
 
 	/**
 	 * 撤销金额，单位为元。支持预授权后全额撤销、或预授权后部分撤销。精确到小数点后两位，取值范围[0.01,100000000]

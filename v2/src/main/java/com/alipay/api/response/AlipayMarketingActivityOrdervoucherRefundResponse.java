@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.ordervoucher.refund response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-07 15:16:49
+ * @since 1.0, 2023-11-21 19:51:54
  */
 public class AlipayMarketingActivityOrdervoucherRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3564973359176916419L;
+	private static final long serialVersionUID = 8866227515296934924L;
 
 	/** 
 	 * 优惠券活动id

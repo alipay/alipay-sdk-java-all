@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoMycarParkingOrderUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2421924778419891154L;
+	private static final long serialVersionUID = 2543211664374836992L;
 
 	/**
 	 * 应用用户ID，唯一标识

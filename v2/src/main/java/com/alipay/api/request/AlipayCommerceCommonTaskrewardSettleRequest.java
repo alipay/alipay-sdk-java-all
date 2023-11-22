@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.common.taskreward.settle request
  * 
  * @author auto create
- * @since 1.0, 2023-11-03 15:36:49
+ * @since 1.0, 2023-11-22 13:59:12
  */
 public class AlipayCommerceCommonTaskrewardSettleRequest implements AlipayRequest<AlipayCommerceCommonTaskrewardSettleResponse> {
 

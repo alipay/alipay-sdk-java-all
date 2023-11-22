@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预付卡查询卡详情
  *
  * @author auto create
- * @since 1.0, 2023-10-25 17:53:10
+ * @since 1.0, 2023-11-20 15:17:54
  */
 public class AlipayFundMbpcardCardQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4744613524653721756L;
+	private static final long serialVersionUID = 8836757242956449122L;
 
 	/**
 	 * 支付宝账号
@@ -27,7 +27,7 @@ public class AlipayFundMbpcardCardQueryModel extends AlipayObject {
 	private String alipayIdentityType;
 
 	/**
-	 * 卡片绑定人姓名
+	 * 卡片绑定人姓名，账号类型为登录号时必填
 	 */
 	@ApiField("bind_user_name")
 	private String bindUserName;

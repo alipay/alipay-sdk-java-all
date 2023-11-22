@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 热力图坐标
  *
  * @author auto create
- * @since 1.0, 2022-10-13 14:55:15
+ * @since 1.0, 2023-11-22 16:52:54
  */
 public class FencePoint extends AlipayObject {
 
-	private static final long serialVersionUID = 4254392189931593151L;
+	private static final long serialVersionUID = 8694396686583877863L;
 
 	/**
 	 * 维度

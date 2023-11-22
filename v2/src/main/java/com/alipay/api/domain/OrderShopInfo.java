@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class OrderShopInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2757812571494953656L;
+	private static final long serialVersionUID = 8148995137111485376L;
 
 	/**
 	 * 店铺地址
@@ -55,8 +55,7 @@ public class OrderShopInfo extends AlipayObject {
 	private String name;
 
 	/**
-	 * 联系电话-支持固话或手机号
-仅支持数字、+、-
+	 * 联系电话-支持固话或手机号 仅支持数字、+、- 。例如 手机：1380***1111、固话：021-888**888
 	 */
 	@ApiField("phone_num")
 	private String phoneNum;

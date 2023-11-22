@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DesignTextInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4244326879437439577L;
+	private static final long serialVersionUID = 4691786253297765421L;
 
 	/**
 	 * 布局id

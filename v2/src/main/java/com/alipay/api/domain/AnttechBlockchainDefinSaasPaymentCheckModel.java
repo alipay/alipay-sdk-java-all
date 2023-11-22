@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 区块链B2B资金服务交易前检查
  *
  * @author auto create
- * @since 1.0, 2022-08-25 21:01:26
+ * @since 1.0, 2023-11-22 14:50:32
  */
 public class AnttechBlockchainDefinSaasPaymentCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2599918241576579945L;
+	private static final long serialVersionUID = 1772163172841945276L;
 
 	/**
 	 * 资金模式，SALE销售模式用于即时到账业务；AUTH_CAPTURE预授权模式用于担保交易业务；

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.saas.ai.use request
  * 
  * @author auto create
- * @since 1.0, 2023-10-13 14:46:47
+ * @since 1.0, 2023-11-20 17:26:51
  */
 public class AlipayCloudCloudbaseSaasAiUseRequest implements AlipayRequest<AlipayCloudCloudbaseSaasAiUseResponse> {
 

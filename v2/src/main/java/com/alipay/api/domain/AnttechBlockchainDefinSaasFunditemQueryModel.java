@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 区块链B2B资金服务资金订单查询
  *
  * @author auto create
- * @since 1.0, 2022-08-25 21:00:56
+ * @since 1.0, 2023-11-22 14:53:18
  */
 public class AnttechBlockchainDefinSaasFunditemQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1719394177233974816L;
+	private static final long serialVersionUID = 1615459523645555457L;
 
 	/**
 	 * 资金操作类型。CAPTURE(请款);CANCEL(撤销/退款);

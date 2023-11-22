@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 付款金额明细
  *
  * @author auto create
- * @since 1.0, 2023-09-20 10:35:26
+ * @since 1.0, 2023-11-22 14:55:24
  */
 public class PayerDetailVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6668763141439263567L;
+	private static final long serialVersionUID = 7666293384491116515L;
 
 	/**
 	 * 付款账户，pay_mode为OFFLINE时可选

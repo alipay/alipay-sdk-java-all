@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 金额明细
  *
  * @author auto create
- * @since 1.0, 2023-09-06 16:13:49
+ * @since 1.0, 2023-11-22 14:55:37
  */
 public class AmountItem extends AlipayObject {
 
-	private static final long serialVersionUID = 6764744451294154449L;
+	private static final long serialVersionUID = 4236895682828429774L;
 
 	/**
 	 * 余额，单位元

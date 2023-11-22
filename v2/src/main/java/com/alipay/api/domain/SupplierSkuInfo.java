@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 供应链商品同步信息
  *
  * @author auto create
- * @since 1.0, 2023-11-17 19:54:25
+ * @since 1.0, 2023-11-20 16:06:32
  */
 public class SupplierSkuInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3171719466275729886L;
+	private static final long serialVersionUID = 8265111347378241158L;
 
 	/**
 	 * 商品属性集合{"WEIGHT": "100丝","SIZE": "120mm*170mm","SELECTSIDED": "单面"}

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMerchantStoreMiniappBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3882838532974663715L;
+	private static final long serialVersionUID = 3879272333227967438L;
 
 	/**
 	 * 门店小程序绑定操作的类型，分为以下枚举类型：

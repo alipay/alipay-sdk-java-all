@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 投放计划定向规则。
  *
  * @author auto create
- * @since 1.0, 2023-07-12 10:39:25
+ * @since 1.0, 2023-11-21 22:22:32
  */
 public class DeliveryTargetRule extends AlipayObject {
 
-	private static final long serialVersionUID = 6697652787984788276L;
+	private static final long serialVersionUID = 5131381141743118182L;
 
 	/**
 	 * 指定品牌id。
@@ -35,6 +35,12 @@ public class DeliveryTargetRule extends AlipayObject {
 	 */
 	@ApiField("delivery_city_code_rule")
 	private DeliveryCityCodeRule deliveryCityCodeRule;
+
+	/**
+	 * 指定人群
+	 */
+	@ApiField("delivery_crowd_rule")
+	private DeliveryCrowdRule deliveryCrowdRule;
 
 	/**
 	 * "曝光商户选取列表。 说明：需要传入您期望曝光的商户的商户号，传入为空时默认使用投放优惠券活动的适用范围。 限制：曝光商户号需与投放归属商户号相同，或传入有跨主体授权关系的商户号或有弱绑定关系的M3账号"
@@ -79,6 +85,12 @@ public class DeliveryTargetRule extends AlipayObject {
 	private DeliverySearchBoxRule deliverySearchBoxRule;
 
 	/**
+	 * 推广消息模版规则
+	 */
+	@ApiField("delivery_template_rule")
+	private DeliveryTemplateRule deliveryTemplateRule;
+
+	/**
 	 * 小程序推广可用。
 	 */
 	@ApiField("delivery_type")
@@ -103,6 +115,13 @@ public class DeliveryTargetRule extends AlipayObject {
 	}
 	public void setDeliveryCityCodeRule(DeliveryCityCodeRule deliveryCityCodeRule) {
 		this.deliveryCityCodeRule = deliveryCityCodeRule;
+	}
+
+	public DeliveryCrowdRule getDeliveryCrowdRule() {
+		return this.deliveryCrowdRule;
+	}
+	public void setDeliveryCrowdRule(DeliveryCrowdRule deliveryCrowdRule) {
+		this.deliveryCrowdRule = deliveryCrowdRule;
 	}
 
 	public List<DeliveryMerchantInfo> getDeliveryMerchantInfos() {
@@ -145,6 +164,13 @@ public class DeliveryTargetRule extends AlipayObject {
 	}
 	public void setDeliverySearchBoxRule(DeliverySearchBoxRule deliverySearchBoxRule) {
 		this.deliverySearchBoxRule = deliverySearchBoxRule;
+	}
+
+	public DeliveryTemplateRule getDeliveryTemplateRule() {
+		return this.deliveryTemplateRule;
+	}
+	public void setDeliveryTemplateRule(DeliveryTemplateRule deliveryTemplateRule) {
+		this.deliveryTemplateRule = deliveryTemplateRule;
 	}
 
 	public String getDeliveryType() {

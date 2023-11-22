@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.qrcode.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-16 23:01:48
+ * @since 1.0, 2023-11-21 10:41:52
  */
 public class AlipayCommerceMedicalQrcodeGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8335867813779527941L;
+	private static final long serialVersionUID = 6242791599248627254L;
 
 	/** 
 	 * 就诊人默认参保地映射后的地市编码

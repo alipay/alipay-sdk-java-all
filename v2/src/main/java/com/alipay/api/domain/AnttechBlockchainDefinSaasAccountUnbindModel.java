@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 解绑银行账户
  *
  * @author auto create
- * @since 1.0, 2023-09-21 18:06:40
+ * @since 1.0, 2023-11-22 14:50:02
  */
 public class AnttechBlockchainDefinSaasAccountUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2866198159236681151L;
+	private static final long serialVersionUID = 8352338913713716175L;
 
 	/**
 	 * 户名

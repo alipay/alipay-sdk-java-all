@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AppMemberInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6212193687338322349L;
+	private static final long serialVersionUID = 7836384119231379789L;
 
 	/**
 	 * 邀请时间，格式为yyyy-MM-dd HH:mm:ss

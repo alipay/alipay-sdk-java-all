@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FliggyPoiInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6784498691625393539L;
+	private static final long serialVersionUID = 3597344738692839894L;
 
 	/**
 	 * 业务code标识poi同步结果

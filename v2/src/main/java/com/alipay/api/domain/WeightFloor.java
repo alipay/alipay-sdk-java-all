@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class WeightFloor extends AlipayObject {
 
-	private static final long serialVersionUID = 5871579554734873146L;
+	private static final long serialVersionUID = 1698419734924277425L;
 
 	/**
 	 * 层号

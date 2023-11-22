@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankFinanceYulibaoAccountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8842947971887679145L;
+	private static final long serialVersionUID = 8673468337373413729L;
 
 	/**
 	 * 基金代码。余利宝场景固定为 001529。

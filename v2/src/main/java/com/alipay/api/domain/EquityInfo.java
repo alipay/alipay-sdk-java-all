@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EquityInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8176456169344929693L;
+	private static final long serialVersionUID = 5532192824482385423L;
 
 	/**
 	 * ‘杰克琼斯’

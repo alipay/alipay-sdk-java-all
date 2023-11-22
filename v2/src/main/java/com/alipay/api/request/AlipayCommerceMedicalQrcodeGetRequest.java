@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.qrcode.get request
  * 
  * @author auto create
- * @since 1.0, 2023-11-16 23:01:48
+ * @since 1.0, 2023-11-21 10:41:52
  */
 public class AlipayCommerceMedicalQrcodeGetRequest implements AlipayRequest<AlipayCommerceMedicalQrcodeGetResponse> {
 

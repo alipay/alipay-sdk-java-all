@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.qipan.insightcity.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 05:16:44
+ * @since 1.0, 2023-11-20 11:01:56
  */
 public class AlipayMerchantQipanInsightcityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2777373361531836752L;
+	private static final long serialVersionUID = 8888114274691689347L;
 
 	/** 
 	 * 画像值中去除未知和其他后的总量占当前画像总量的比例
@@ -24,7 +24,7 @@ public class AlipayMerchantQipanInsightcityQueryResponse extends AlipayResponse 
 	private String coverage;
 
 	/** 
-	 * 省级数据列表，如果某省无数据，将返回0而非null
+	 * 省级数据列表
 	 */
 	@ApiListField("data_list")
 	@ApiField("portrait_province_value")

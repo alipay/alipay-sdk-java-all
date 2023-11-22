@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 热力图数据
  *
  * @author auto create
- * @since 1.0, 2022-10-14 19:15:52
+ * @since 1.0, 2023-11-22 16:52:54
  */
 public class HeatMapData extends AlipayObject {
 
-	private static final long serialVersionUID = 2143145224538511994L;
+	private static final long serialVersionUID = 3248519277669195754L;
 
 	/**
 	 * 城市代码

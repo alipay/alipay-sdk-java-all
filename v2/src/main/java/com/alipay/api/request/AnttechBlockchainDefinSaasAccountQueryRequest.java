@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.defin.saas.account.query request
  * 
  * @author auto create
- * @since 1.0, 2023-06-21 15:48:44
+ * @since 1.0, 2023-11-22 14:52:58
  */
 public class AnttechBlockchainDefinSaasAccountQueryRequest implements AlipayRequest<AnttechBlockchainDefinSaasAccountQueryResponse> {
 

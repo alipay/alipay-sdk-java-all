@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预付卡制卡单据详情查询
  *
  * @author auto create
- * @since 1.0, 2023-10-25 17:54:30
+ * @since 1.0, 2023-11-21 15:33:20
  */
 public class AlipayFundMbpcardGencardQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7524468476314315823L;
+	private static final long serialVersionUID = 6767786342897446634L;
+
+	/**
+	 * 支付宝会员号
+	 */
+	@ApiField("buyer_user_id")
+	private String buyerUserId;
 
 	/**
 	 * 制卡单号；out_request_no和gen_card_no二选一
@@ -20,16 +26,36 @@ public class AlipayFundMbpcardGencardQueryModel extends AlipayObject {
 	private String genCardNo;
 
 	/**
+	 * 支付宝会员号openid
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/**
 	 * 外部单号；out_request_no和gen_card_no二选一
 	 */
 	@ApiField("out_request_no")
 	private String outRequestNo;
+
+	public String getBuyerUserId() {
+		return this.buyerUserId;
+	}
+	public void setBuyerUserId(String buyerUserId) {
+		this.buyerUserId = buyerUserId;
+	}
 
 	public String getGenCardNo() {
 		return this.genCardNo;
 	}
 	public void setGenCardNo(String genCardNo) {
 		this.genCardNo = genCardNo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutRequestNo() {

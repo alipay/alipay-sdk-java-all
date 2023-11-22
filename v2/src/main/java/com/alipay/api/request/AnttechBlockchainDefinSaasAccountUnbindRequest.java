@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.defin.saas.account.unbind request
  * 
  * @author auto create
- * @since 1.0, 2023-09-21 18:06:45
+ * @since 1.0, 2023-11-22 14:50:02
  */
 public class AnttechBlockchainDefinSaasAccountUnbindRequest implements AlipayRequest<AnttechBlockchainDefinSaasAccountUnbindResponse> {
 

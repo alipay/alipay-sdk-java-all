@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 绑定银行账户
  *
  * @author auto create
- * @since 1.0, 2023-09-21 18:06:49
+ * @since 1.0, 2023-11-22 14:48:28
  */
 public class AnttechBlockchainDefinSaasAccountBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8169641218119423963L;
+	private static final long serialVersionUID = 7549592898328966561L;
 
 	/**
 	 * 户名

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 区块链B2B资金服务交易支付
  *
  * @author auto create
- * @since 1.0, 2023-09-21 18:06:24
+ * @since 1.0, 2023-11-22 14:49:31
  */
 public class AnttechBlockchainDefinSaasPaymentPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7795763111658871296L;
+	private static final long serialVersionUID = 4534179167743775895L;
 
 	/**
 	 * 支付时间

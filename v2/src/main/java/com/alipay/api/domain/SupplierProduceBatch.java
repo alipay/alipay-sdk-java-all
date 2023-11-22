@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 供应商生产批次信息数据
  *
  * @author auto create
- * @since 1.0, 2023-11-17 19:54:40
+ * @since 1.0, 2023-11-20 16:06:17
  */
 public class SupplierProduceBatch extends AlipayObject {
 
-	private static final long serialVersionUID = 3631593756178246127L;
+	private static final long serialVersionUID = 6333747621426424265L;
 
 	/**
 	 * 生产数量

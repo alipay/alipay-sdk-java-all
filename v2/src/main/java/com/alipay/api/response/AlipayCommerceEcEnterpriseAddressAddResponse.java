@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.enterprise.address.add response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-08 10:58:01
+ * @since 1.0, 2023-11-21 16:01:53
  */
 public class AlipayCommerceEcEnterpriseAddressAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3897519891532477759L;
+	private static final long serialVersionUID = 7224174729415148832L;
 
 	/** 
 	 * 地址id

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.activity.message.bind request
  * 
  * @author auto create
- * @since 1.0, 2023-11-07 15:06:49
+ * @since 1.0, 2023-11-21 16:46:53
  */
 public class AlipayMarketingActivityMessageBindRequest implements AlipayRequest<AlipayMarketingActivityMessageBindResponse> {
 

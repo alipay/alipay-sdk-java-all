@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 热力图栅栏
  *
  * @author auto create
- * @since 1.0, 2022-10-14 19:15:52
+ * @since 1.0, 2023-11-22 16:52:54
  */
 public class Fence extends AlipayObject {
 
-	private static final long serialVersionUID = 8635417263374664785L;
+	private static final long serialVersionUID = 8191342771425532369L;
 
 	/**
 	 * 格子内部ID
