@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class BoxBusinessDistrictModule extends AlipayObject {
 
-	private static final long serialVersionUID = 5644232388356934669L;
+	private static final long serialVersionUID = 6527226562859144243L;
 
 	/**
 	 * 商圈选择

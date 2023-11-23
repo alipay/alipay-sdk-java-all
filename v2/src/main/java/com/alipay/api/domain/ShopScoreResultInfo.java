@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ShopScoreResultInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8171423785917668975L;
+	private static final long serialVersionUID = 6574436982698648488L;
 
 	/**
 	 * 品类卖力值，客户请求入参获取分数类型（score_type），如获取该热力值会返回，对应0-100分

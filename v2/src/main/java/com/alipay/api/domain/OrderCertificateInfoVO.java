@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OrderCertificateInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3498818523348444993L;
+	private static final long serialVersionUID = 3231237993287293182L;
 
 	/**
 	 * 本地商品对应的凭证id

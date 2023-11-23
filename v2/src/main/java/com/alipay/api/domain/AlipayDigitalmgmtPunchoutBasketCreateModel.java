@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDigitalmgmtPunchoutBasketCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1632682828825768933L;
+	private static final long serialVersionUID = 7196755353189958196L;
 
 	/**
 	 * 用于合并购物车

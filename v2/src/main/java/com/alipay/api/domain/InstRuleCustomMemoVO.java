@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class InstRuleCustomMemoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6681757357636164875L;
+	private static final long serialVersionUID = 3317932118135556443L;
 
 	/**
 	 * 备注要素

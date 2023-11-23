@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiCraftsmanDataWorkCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4655175491634163928L;
+	private static final long serialVersionUID = 2236139752288244295L;
 
 	/** 
 	 * 作品id

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenOpenbizmockAppidDetectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2263734561556164398L;
+	private static final long serialVersionUID = 2576881479221894787L;
 
 	/**
 	 * APPID值

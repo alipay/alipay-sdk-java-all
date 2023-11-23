@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CardQuickServiceDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6457914477771987714L;
+	private static final long serialVersionUID = 3442666198619191541L;
 
 	/**
 	 * title：卡快捷服务名称

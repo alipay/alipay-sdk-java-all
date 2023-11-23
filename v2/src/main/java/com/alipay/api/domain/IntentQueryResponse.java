@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IntentQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 2211417449667297113L;
+	private static final long serialVersionUID = 6841542522395815648L;
 
 	/**
 	 * 对应用户的queryId

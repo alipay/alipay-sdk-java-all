@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CardAmountDetailVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7376733529632867373L;
+	private static final long serialVersionUID = 7214677164285486875L;
 
 	/**
 	 * 转入金额
