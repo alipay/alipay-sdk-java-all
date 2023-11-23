@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户有效的凭证详细信息，营销新平台使用
  *
  * @author auto create
- * @since 1.0, 2023-02-07 16:11:21
+ * @since 1.0, 2023-11-23 11:36:10
  */
 public class AlipayMarketingCampaignCertQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3561794642728587888L;
+	private static final long serialVersionUID = 1673953489227212976L;
 
 	/**
 	 * 营销平台凭证批次号，可能是数字和字母的组合

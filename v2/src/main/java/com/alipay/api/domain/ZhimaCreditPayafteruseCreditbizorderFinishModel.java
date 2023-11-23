@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCreditPayafteruseCreditbizorderFinishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3844774127967859593L;
+	private static final long serialVersionUID = 4357745927157968884L;
 
 	/**
 	 * 信用服务订单号
@@ -20,9 +20,9 @@ public class ZhimaCreditPayafteruseCreditbizorderFinishModel extends AlipayObjec
 	private String creditBizOrderId;
 
 	/**
-	 * 用户此订单是否守约。
-传true时，用户在芝麻信用-守约记录中，该笔订单是已守约状态；
-传false时，用户在芝麻信用-守约记录中，该笔订单是已取消状态。
+	 * 字符串类型，用户此订单是否守约。
+传"true"时，用户在芝麻信用-守约记录中，该笔订单是已守约状态；
+传"false"时，用户在芝麻信用-守约记录中，该笔订单是已取消状态。
 	 */
 	@ApiField("is_fulfilled")
 	private String isFulfilled;

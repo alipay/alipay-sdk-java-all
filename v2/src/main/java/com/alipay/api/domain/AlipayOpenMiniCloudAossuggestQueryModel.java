@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniCloudAossuggestQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5498725839812113775L;
+	private static final long serialVersionUID = 7163147936637549783L;
 
 	/**
 	 * 用户当前城市编码

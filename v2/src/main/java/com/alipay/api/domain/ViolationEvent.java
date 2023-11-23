@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ViolationEvent extends AlipayObject {
 
-	private static final long serialVersionUID = 3177874651515475392L;
+	private static final long serialVersionUID = 3172923634963395672L;
 
 	/**
 	 * 商家是否可以申诉

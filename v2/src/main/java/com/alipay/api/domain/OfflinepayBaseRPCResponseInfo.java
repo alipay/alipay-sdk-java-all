@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OfflinepayBaseRPCResponseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5445872917376834592L;
+	private static final long serialVersionUID = 2149493749962719661L;
 
 	/**
 	 * 错误指示器

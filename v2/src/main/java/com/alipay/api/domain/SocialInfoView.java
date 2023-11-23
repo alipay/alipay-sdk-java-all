@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SocialInfoView extends AlipayObject {
 
-	private static final long serialVersionUID = 6491476732399536835L;
+	private static final long serialVersionUID = 1281823971119868882L;
 
 	/**
 	 * 用户头像链接，如果用户没有设置头像，则返回空

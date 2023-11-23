@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EmployeeCardWalletInfoResDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4838628131348562288L;
+	private static final long serialVersionUID = 5395243115896662651L;
 
 	/**
 	 * 资产类型名称

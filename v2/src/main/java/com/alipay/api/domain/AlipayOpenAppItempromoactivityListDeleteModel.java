@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量删除商品营销活动接口
  *
  * @author auto create
- * @since 1.0, 2023-09-12 19:09:30
+ * @since 1.0, 2023-11-23 11:23:02
  */
 public class AlipayOpenAppItempromoactivityListDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5641681379173753782L;
+	private static final long serialVersionUID = 3562288769637512666L;
 
 	/**
 	 * 商品及其属性列表

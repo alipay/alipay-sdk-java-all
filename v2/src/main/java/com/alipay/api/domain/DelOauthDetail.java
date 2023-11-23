@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 解除授权明细
  *
  * @author auto create
- * @since 1.0, 2023-11-21 10:09:33
+ * @since 1.0, 2023-11-23 13:58:40
  */
 public class DelOauthDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 4862878218769248832L;
+	private static final long serialVersionUID = 8451653389774465335L;
 
 	/**
 	 * 数据入库的时间
@@ -26,12 +26,6 @@ public class DelOauthDetail extends AlipayObject {
 	 */
 	@ApiField("open_id")
 	private String openId;
-
-	/**
-	 * 授权范围，说明文档：https://opendocs.alipay.com/mini/05dxgc
-	 */
-	@ApiField("scope")
-	private String scope;
 
 	/**
 	 * 用户uid
@@ -51,13 +45,6 @@ public class DelOauthDetail extends AlipayObject {
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
-	}
-
-	public String getScope() {
-		return this.scope;
-	}
-	public void setScope(String scope) {
-		this.scope = scope;
 	}
 
 	public String getUserId() {

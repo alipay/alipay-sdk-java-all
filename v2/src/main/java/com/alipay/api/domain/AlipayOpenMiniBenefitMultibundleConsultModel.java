@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniBenefitMultibundleConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6455796828772948517L;
+	private static final long serialVersionUID = 4857945225982258573L;
 
 	/**
 	 * 业务场景，由支付宝分配

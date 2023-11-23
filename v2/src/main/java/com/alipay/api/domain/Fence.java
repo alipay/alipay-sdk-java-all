@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 热力图栅栏
  *
  * @author auto create
- * @since 1.0, 2023-11-22 16:52:54
+ * @since 1.0, 2023-11-23 11:32:45
  */
 public class Fence extends AlipayObject {
 
-	private static final long serialVersionUID = 8191342771425532369L;
+	private static final long serialVersionUID = 3588797943271688443L;
 
 	/**
 	 * 格子内部ID
@@ -27,6 +27,13 @@ public class Fence extends AlipayObject {
 	 */
 	@ApiField("hex_id")
 	private String hexId;
+
+	/**
+	 * 历史订单列表
+	 */
+	@ApiListField("his_order")
+	@ApiField("order_point")
+	private List<OrderPoint> hisOrder;
 
 	/**
 	 * 订单数
@@ -59,6 +66,13 @@ public class Fence extends AlipayObject {
 	}
 	public void setHexId(String hexId) {
 		this.hexId = hexId;
+	}
+
+	public List<OrderPoint> getHisOrder() {
+		return this.hisOrder;
+	}
+	public void setHisOrder(List<OrderPoint> hisOrder) {
+		this.hisOrder = hisOrder;
 	}
 
 	public String getOrderCount() {

@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class SsdataDataserviceRiskAudioSetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3696782547443312349L;
+	private static final long serialVersionUID = 2162179312945752175L;
 
 	/** 
 	 * 查询出的关键词数量

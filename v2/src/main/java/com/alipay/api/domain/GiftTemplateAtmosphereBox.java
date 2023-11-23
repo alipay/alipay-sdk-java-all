@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GiftTemplateAtmosphereBox extends AlipayObject {
 
-	private static final long serialVersionUID = 7496326576237575364L;
+	private static final long serialVersionUID = 5555352487673187158L;
 
 	/**
 	 * 封面氛围的gif资源

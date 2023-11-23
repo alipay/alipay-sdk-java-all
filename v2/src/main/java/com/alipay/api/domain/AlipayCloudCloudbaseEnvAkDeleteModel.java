@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCloudCloudbaseEnvAkDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8313849783647937863L;
+	private static final long serialVersionUID = 8539677562446986425L;
 
 	/**
 	 * ak

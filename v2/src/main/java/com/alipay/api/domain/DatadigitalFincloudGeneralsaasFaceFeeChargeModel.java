@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DatadigitalFincloudGeneralsaasFaceFeeChargeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8596995425914428855L;
+	private static final long serialVersionUID = 8482615536191338162L;
 
 	/**
 	 * 云上人脸服务生成的单据号

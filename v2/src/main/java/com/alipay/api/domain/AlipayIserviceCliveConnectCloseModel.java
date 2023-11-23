@@ -7,11 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 关闭会话
  *
  * @author auto create
- * @since 1.0, 2023-10-07 15:23:38
+ * @since 1.0, 2023-11-23 14:57:15
  */
 public class AlipayIserviceCliveConnectCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3464459544813143644L;
+	private static final long serialVersionUID = 3225382933616866569L;
+
+	/**
+	 * 会话关闭原因
+SELF_CLOSE:主动关闭
+OVERTIME_CLOSE:超时关闭
+NO_HEARTBEAT_CLOSE:心跳断开关闭
+	 */
+	@ApiField("close_type")
+	private String closeType;
 
 	/**
 	 * 若是会话已经建立，关闭时必须传该conversation_id来请求关闭。若未建立，传visitor_token来请求关闭。
@@ -33,6 +42,13 @@ visitor_token 和 conversation_id 不能同时为空。
 	 */
 	@ApiField("visitor_token")
 	private String visitorToken;
+
+	public String getCloseType() {
+		return this.closeType;
+	}
+	public void setCloseType(String closeType) {
+		this.closeType = closeType;
+	}
 
 	public String getConversationId() {
 		return this.conversationId;

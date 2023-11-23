@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商家实例化小程序
  *
  * @author auto create
- * @since 1.0, 2023-05-30 17:37:55
+ * @since 1.0, 2023-11-23 17:30:27
  */
 public class MiniInstantiateInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6319121986268418382L;
+	private static final long serialVersionUID = 3263553291429468223L;
 
 	/**
 	 * 小程序名称
@@ -66,6 +66,12 @@ public class MiniInstantiateInfo extends AlipayObject {
 	 */
 	@ApiField("template_name")
 	private String templateName;
+
+	/**
+	 * 实例化小程序模板版本号
+	 */
+	@ApiField("template_version")
+	private String templateVersion;
 
 	public String getAppName() {
 		return this.appName;
@@ -128,6 +134,13 @@ public class MiniInstantiateInfo extends AlipayObject {
 	}
 	public void setTemplateName(String templateName) {
 		this.templateName = templateName;
+	}
+
+	public String getTemplateVersion() {
+		return this.templateVersion;
+	}
+	public void setTemplateVersion(String templateVersion) {
+		this.templateVersion = templateVersion;
 	}
 
 }

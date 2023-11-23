@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CustomerDefineDeductRule extends AlipayObject {
 
-	private static final long serialVersionUID = 7455275916536882725L;
+	private static final long serialVersionUID = 2163444289582851987L;
 
 	/**
 	 * 自定义优惠规则描述

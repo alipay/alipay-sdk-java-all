@@ -1,5 +1,6 @@
 package com.alipay.api.request;
 
+import com.alipay.api.domain.PrivateInfo;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -13,7 +14,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.iotmbs.image.upload request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 06:21:55
+ * @since 1.0, 2023-11-23 10:51:52
  */
 public class AlipayOpenIotmbsImageUploadRequest implements AlipayUploadRequest<AlipayOpenIotmbsImageUploadResponse> {
 
@@ -26,9 +27,19 @@ public class AlipayOpenIotmbsImageUploadRequest implements AlipayUploadRequest<A
 	private String bizCode;
 
 	/** 
+	* 业务具体配置
+	 */
+	private String bizConfig;
+
+	/** 
 	* 上传的图片，最大10M
 	 */
 	private FileItem imageContent;
+
+	/** 
+	* 用户隐私相关信息
+	 */
+	private PrivateInfo privateInfo;
 
 	public void setBizCode(String bizCode) {
 		this.bizCode = bizCode;
@@ -37,11 +48,25 @@ public class AlipayOpenIotmbsImageUploadRequest implements AlipayUploadRequest<A
 		return this.bizCode;
 	}
 
+	public void setBizConfig(String bizConfig) {
+		this.bizConfig = bizConfig;
+	}
+	public String getBizConfig() {
+		return this.bizConfig;
+	}
+
 	public void setImageContent(FileItem imageContent) {
 		this.imageContent = imageContent;
 	}
 	public FileItem getImageContent() {
 		return this.imageContent;
+	}
+
+	public void setPrivateInfo(PrivateInfo privateInfo) {
+		this.privateInfo = privateInfo;
+	}
+	public PrivateInfo getPrivateInfo() {
+		return this.privateInfo;
 	}
 	private String terminalType;
 	private String terminalInfo;
@@ -105,6 +130,8 @@ public class AlipayOpenIotmbsImageUploadRequest implements AlipayUploadRequest<A
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
 		txtParams.put("biz_code", this.bizCode);
+		txtParams.put("biz_config", this.bizConfig);
+		txtParams.put("private_info", this.privateInfo == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.privateInfo, true));
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}

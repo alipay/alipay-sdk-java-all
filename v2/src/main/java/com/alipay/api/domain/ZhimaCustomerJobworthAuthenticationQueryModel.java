@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 职得身份认证查询接口
  *
  * @author auto create
- * @since 1.0, 2023-06-09 16:26:54
+ * @since 1.0, 2023-11-23 11:22:58
  */
 public class ZhimaCustomerJobworthAuthenticationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8192443356877167472L;
+	private static final long serialVersionUID = 6671476789397425429L;
 
 	/**
 	 * 证件号
@@ -32,7 +32,7 @@ public class ZhimaCustomerJobworthAuthenticationQueryModel extends AlipayObject 
 	private String connKey;
 
 	/**
-	 * 01:医生，02:教师，具体参考文档
+	 * 04:教师，其它身份类型联系芝麻技术支持确认
 	 */
 	@ApiField("identity_type")
 	private String identityType;
