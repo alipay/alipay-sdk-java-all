@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoRenthouseKaServiceCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6778289976117324413L;
+	private static final long serialVersionUID = 2673965524843861972L;
 
 	
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayInsDataAutoFraudSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2713845567868189251L;
+	private static final long serialVersionUID = 7467442269969962761L;
 
 	/**
 	 * 减损金额，单位：元

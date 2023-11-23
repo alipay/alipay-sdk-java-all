@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class QuotaControlMetric extends AlipayObject {
 
-	private static final long serialVersionUID = 2398223977811294411L;
+	private static final long serialVersionUID = 5488413818721424722L;
 
 	/**
 	 * 额度指标

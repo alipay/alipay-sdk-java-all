@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceSportsTicketSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8782953782849594947L;
+	private static final long serialVersionUID = 5168658218966467863L;
 
 	
 

@@ -1,20 +1,17 @@
 package com.alipay.api.domain;
 
-import java.util.List;
-
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
-import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 批次关单接口
  *
  * @author auto create
- * @since 1.0, 2023-11-06 14:56:34
+ * @since 1.0, 2023-11-23 21:01:53
  */
 public class AlipayFundBatchCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6797433675238135313L;
+	private static final long serialVersionUID = 8356294453593356285L;
 
 	/**
 	 * 支付宝内部的批次ID： 本参数和商户的批次号两者不能同时为空。 当本参数和商户的批次号两者同时提供时，将优先用商户的批次号进行查询。
@@ -31,9 +28,8 @@ public class AlipayFundBatchCloseModel extends AlipayObject {
 	/**
 	 * 业务产品码。不同产品值不同，具体值联系支付宝确认。
 	 */
-	@ApiListField("product_code")
-	@ApiField("string")
-	private List<String> productCode;
+	@ApiField("product_code")
+	private String productCode;
 
 	public String getBatchTransId() {
 		return this.batchTransId;
@@ -49,10 +45,10 @@ public class AlipayFundBatchCloseModel extends AlipayObject {
 		this.bizScene = bizScene;
 	}
 
-	public List<String> getProductCode() {
+	public String getProductCode() {
 		return this.productCode;
 	}
-	public void setProductCode(List<String> productCode) {
+	public void setProductCode(String productCode) {
 		this.productCode = productCode;
 	}
 

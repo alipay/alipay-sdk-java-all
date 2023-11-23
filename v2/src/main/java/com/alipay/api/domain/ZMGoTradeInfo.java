@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZMGoTradeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1831136949195448357L;
+	private static final long serialVersionUID = 5187618696892819154L;
 
 	/**
 	 * 用户和商户发生交易的交易单金额，单位元

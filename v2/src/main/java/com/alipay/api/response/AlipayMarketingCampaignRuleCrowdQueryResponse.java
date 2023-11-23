@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingCampaignRuleCrowdQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1483646258213655362L;
+	private static final long serialVersionUID = 7636254662691183687L;
 
 	/** 
 	 * tagCode：标签别名，指定标签类型，如城市、年龄等，如pubsrv_city_code为城市标签，创建时必填，可传入多组标签

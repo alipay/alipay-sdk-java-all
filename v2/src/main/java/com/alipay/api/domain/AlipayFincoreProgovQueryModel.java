@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFincoreProgovQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4528664935473914292L;
+	private static final long serialVersionUID = 1281794217171597862L;
 
 	/**
 	 * 蚂蚁资产接入工单任务id

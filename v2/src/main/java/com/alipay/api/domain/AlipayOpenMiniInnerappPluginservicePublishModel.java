@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenMiniInnerappPluginservicePublishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6394911473941888354L;
+	private static final long serialVersionUID = 8653551281859962857L;
 
 	/**
 	 * 功能类型，目前支持的有：1039支付, 1040会员, 1041基础, 1056资金, 1058信用, 1111口碑, 330120安全, 360101营销

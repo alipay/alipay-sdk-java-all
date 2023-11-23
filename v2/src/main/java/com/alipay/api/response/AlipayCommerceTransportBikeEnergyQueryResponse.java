@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportBikeEnergyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2516345138835198947L;
+	private static final long serialVersionUID = 3783341656696567137L;
 
 	/** 
 	 * 用户是否开启能量开关

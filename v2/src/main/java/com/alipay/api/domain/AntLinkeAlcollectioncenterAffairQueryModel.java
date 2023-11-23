@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntLinkeAlcollectioncenterAffairQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3141799756827675689L;
+	private static final long serialVersionUID = 3384271479466121362L;
 
 	/**
 	 * 案件id

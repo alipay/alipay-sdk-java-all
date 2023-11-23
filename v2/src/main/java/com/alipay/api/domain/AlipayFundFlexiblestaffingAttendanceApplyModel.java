@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 申请考勤链接（投保）
  *
  * @author auto create
- * @since 1.0, 2023-11-03 10:01:07
+ * @since 1.0, 2023-11-23 21:12:30
  */
 public class AlipayFundFlexiblestaffingAttendanceApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1238289631649711243L;
+	private static final long serialVersionUID = 8123279999727656677L;
 
 	/**
 	 * 授权跳转类型
@@ -38,10 +41,16 @@ public class AlipayFundFlexiblestaffingAttendanceApplyModel extends AlipayObject
 	private EmployeeCardInfoDTO employeeCardInfo;
 
 	/**
-	 * 超时时间
+	 * 链接有效时间，最大值一年有效期
 	 */
 	@ApiField("expire_time")
 	private String expireTime;
+
+	/**
+	 * 打卡的配置信息
+	 */
+	@ApiField("insure_attend")
+	private InsureAttendDTO insureAttend;
 
 	/**
 	 * 当投保模式为直接投保，投保主体信息必选
@@ -54,6 +63,13 @@ public class AlipayFundFlexiblestaffingAttendanceApplyModel extends AlipayObject
 	 */
 	@ApiField("insure_type")
 	private String insureType;
+
+	/**
+	 * 员工工种code列表信息，替代原job,job_level字段，该字段必填
+	 */
+	@ApiListField("job_list")
+	@ApiField("string")
+	private List<String> jobList;
 
 	/**
 	 * 外部业务号
@@ -108,6 +124,13 @@ public class AlipayFundFlexiblestaffingAttendanceApplyModel extends AlipayObject
 		this.expireTime = expireTime;
 	}
 
+	public InsureAttendDTO getInsureAttend() {
+		return this.insureAttend;
+	}
+	public void setInsureAttend(InsureAttendDTO insureAttend) {
+		this.insureAttend = insureAttend;
+	}
+
 	public InsureInfoDTO getInsureInfo() {
 		return this.insureInfo;
 	}
@@ -120,6 +143,13 @@ public class AlipayFundFlexiblestaffingAttendanceApplyModel extends AlipayObject
 	}
 	public void setInsureType(String insureType) {
 		this.insureType = insureType;
+	}
+
+	public List<String> getJobList() {
+		return this.jobList;
+	}
+	public void setJobList(List<String> jobList) {
+		this.jobList = jobList;
 	}
 
 	public String getOutBizNo() {

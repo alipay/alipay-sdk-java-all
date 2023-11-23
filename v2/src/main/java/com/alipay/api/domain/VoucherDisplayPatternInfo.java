@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class VoucherDisplayPatternInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1733336778871176646L;
+	private static final long serialVersionUID = 4688327847185619615L;
 
 	/**
 	 * 商家logo 需要通过  alipay.marketing.material.image.upload接口上传图片，指定file_key为PROMO_BRAND_LOGO，返回的resource_id即为该参数的值。

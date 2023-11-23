@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.batch.close request
  * 
  * @author auto create
- * @since 1.0, 2023-11-06 14:56:34
+ * @since 1.0, 2023-11-23 21:06:51
  */
 public class AlipayFundBatchCloseRequest implements AlipayRequest<AlipayFundBatchCloseResponse> {
 

@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PaperSealExtOpenApiRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 8373415897644472811L;
+	private static final long serialVersionUID = 4439737236865286968L;
 
 	/**
 	 * 纸质用印上下文

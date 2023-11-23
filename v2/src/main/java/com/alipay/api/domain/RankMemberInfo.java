@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RankMemberInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1525976188329387882L;
+	private static final long serialVersionUID = 5465572587117341887L;
 
 	/**
 	 * 分组名称
