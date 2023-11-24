@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SlmServiceAtomicInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2877421279367177811L;
+	private static final long serialVersionUID = 8345126178966961693L;
 
 	/**
 	 * 操作动作或业务分类，例如：查找、搜索、我的小程序等

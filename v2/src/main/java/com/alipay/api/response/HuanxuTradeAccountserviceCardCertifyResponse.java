@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class HuanxuTradeAccountserviceCardCertifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4578752388274139821L;
+	private static final long serialVersionUID = 2535786357237667448L;
 
 	
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundAccountbookNotifySubscribeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7454631992128581781L;
+	private static final long serialVersionUID = 8752686725466135657L;
 
 	/**
 	 * 记账本ID

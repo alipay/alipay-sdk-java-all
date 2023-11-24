@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AnttechAiCvDsbGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4768636852324337916L;
+	private static final long serialVersionUID = 6686347537357921626L;
 
 	/** 
 	 * 定损结果的下载链接，15分钟内有效

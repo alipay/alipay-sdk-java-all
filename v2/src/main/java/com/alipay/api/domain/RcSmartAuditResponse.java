@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RcSmartAuditResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 5566132329515739549L;
+	private static final long serialVersionUID = 2592541215375313816L;
 
 	/**
 	 * 解语花风险内容结果

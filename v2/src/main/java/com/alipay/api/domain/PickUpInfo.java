@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PickUpInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2393676354215812928L;
+	private static final long serialVersionUID = 1134619894343692497L;
 
 	/**
 	 * 自提地址（展示的地址）

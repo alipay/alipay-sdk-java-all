@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankCreditUserSitememberEnterpriseMatchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7192948746134976998L;
+	private static final long serialVersionUID = 8892829377782883581L;
 
 	/** 
 	 * 本接口会通过传入的alipay_login_id查询企业支付宝会员信息，然后与传入的企业信息做比对，同时满足下面2个条件时返回true，反之则为false：

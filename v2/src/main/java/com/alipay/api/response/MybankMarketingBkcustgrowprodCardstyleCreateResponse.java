@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankMarketingBkcustgrowprodCardstyleCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2141349737176793274L;
+	private static final long serialVersionUID = 3489382373153499428L;
 
 	/** 
 	 * 是否切换成功

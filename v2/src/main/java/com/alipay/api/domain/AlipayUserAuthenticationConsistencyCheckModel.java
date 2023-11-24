@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserAuthenticationConsistencyCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6375327156741728449L;
+	private static final long serialVersionUID = 1354765258693392759L;
 
 	/**
 	 * 【证件类型】0:身份证 1:护照 2:军官证 3:士兵证 4:回乡证 5:临时身份证 6:户口簿 7:警官证 8:台胞证 9:营业执照10:其它证件 11:港澳居民来往内地通行证 12:台湾居民来往大陆通行证 13:台湾居民居住证 14:港澳居民居住证 15:港澳身份证 16:外国人永久居住证。注意：用户类型为企业或公司用户时可以不填本字段

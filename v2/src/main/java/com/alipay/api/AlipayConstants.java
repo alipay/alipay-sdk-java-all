@@ -104,7 +104,7 @@ public class AlipayConstants {
     /**
      * SDK版本号
      */
-    public static final String SDK_VERSION = "alipay-sdk-java-4.38.148.ALL";
+    public static final String SDK_VERSION = "alipay-sdk-java-4.38.149.ALL";
 
     public static final String PROD_CODE = "prod_code";
 

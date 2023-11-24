@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFincoreComplianceRcservcenterRcsmartApproveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1861928896997899228L;
+	private static final long serialVersionUID = 1324627324618538655L;
 
 	/**
 	 * 调用系统信息

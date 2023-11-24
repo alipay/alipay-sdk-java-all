@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ClassRateInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3894287969376854279L;
+	private static final long serialVersionUID = 3866767426421982888L;
 
 	/**
 	 * 汇率等级有两种
