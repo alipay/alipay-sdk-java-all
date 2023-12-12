@@ -38,8 +38,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenAppServiceSchemaApi apiInstance = new AlipayOpenAppServiceSchemaApi(defaultClient);
-    String categoryId = "c11111"; // String | 类目id
-    String templateType = "DEFAULT"; // String | 服务模版类型。若当前服务类目只有一个服务模版，可不填。
+    String categoryId = "c11111"; // String | 类目id, 获取请参考<a href=\"https://opendocs.alipay.com/mini/03ci0w?pathHash=ed3c875c\">各个行业场景服务接入资料</a>
+    String templateType = "DEFAULT"; // String | 服务模版类型，默认值:DEFAULT
     try {
       AlipayOpenAppServiceSchemaQueryResponseModel result = apiInstance.query(categoryId, templateType);
       System.out.println(result);
@@ -58,8 +58,8 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **categoryId** | **String**| 类目id | [optional] |
-| **templateType** | **String**| 服务模版类型。若当前服务类目只有一个服务模版，可不填。 | [optional] |
+| **categoryId** | **String**| 类目id, 获取请参考&lt;a href&#x3D;\&quot;https://opendocs.alipay.com/mini/03ci0w?pathHash&#x3D;ed3c875c\&quot;&gt;各个行业场景服务接入资料&lt;/a&gt; | [optional] |
+| **templateType** | **String**| 服务模版类型，默认值:DEFAULT | [optional] |
 
 ### Return type
 

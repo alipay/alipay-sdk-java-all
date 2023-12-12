@@ -1,7 +1,7 @@
 # alipay-sdk-java-v3
 
 支付宝开放平台API
-- API version: 2023-10-25
+- API version: 2023-12-12
 
 支付宝开放平台v3协议文档
 
@@ -40,7 +40,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>com.alipay.sdk</groupId>
   <artifactId>alipay-sdk-java-v3</artifactId>
-  <version>2.7.10.ALL</version>
+  <version>2.7.19.ALL</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -56,7 +56,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "com.alipay.sdk:alipay-sdk-java-v3:2.7.10.ALL"
+     implementation "com.alipay.sdk:alipay-sdk-java-v3:2.7.19.ALL"
   }
 ```
 
@@ -70,7 +70,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/alipay-sdk-java-v3-2.7.10.ALL.jar`
+* `target/alipay-sdk-java-v3-2.7.19.ALL.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
@@ -925,7 +925,7 @@ Class | Method | HTTP request | Description
 *ZhimaMerchantZmgoTemplateApi* | [**query**](docs/ZhimaMerchantZmgoTemplateApi.md#query) | **GET** /v3/zhima/merchant/zmgo/template/query | 芝麻GO模板查询
 *ZolozAuthenticationCustomerFacemanageApi* | [**create**](docs/ZolozAuthenticationCustomerFacemanageApi.md#create) | **POST** /v3/zoloz/authentication/customer/facemanage/create | 热脸入库
 *ZolozAuthenticationCustomerFacemanageApi* | [**delete**](docs/ZolozAuthenticationCustomerFacemanageApi.md#delete) | **POST** /v3/zoloz/authentication/customer/facemanage/delete | 热脸出库
-*ZolozAuthenticationCustomerFtokenApi* | [**query**](docs/ZolozAuthenticationCustomerFtokenApi.md#query) | **POST** /v3/zoloz/authentication/customer/ftoken/query | 人脸ftoken查询消费接口
+*ZolozAuthenticationCustomerFtokenApi* | [**query**](docs/ZolozAuthenticationCustomerFtokenApi.md#query) | **POST** /v3/zoloz/authentication/customer/ftoken/query | 查询刷脸结果信息接口
 *ZolozAuthenticationCustomerSmilepayApi* | [**initialize**](docs/ZolozAuthenticationCustomerSmilepayApi.md#initialize) | **POST** /v3/zoloz/authentication/customer/smilepay/initialize | 人脸刷脸付初始化
 *ZolozAuthenticationSmilepayApi* | [**initialize**](docs/ZolozAuthenticationSmilepayApi.md#initialize) | **POST** /v3/zoloz/authentication/smilepay/initialize | 刷脸支付初始化
 

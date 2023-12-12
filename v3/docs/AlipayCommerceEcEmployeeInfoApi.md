@@ -81,7 +81,7 @@ No authorization required
 
 <a name="query"></a>
 # **query**
-> AlipayCommerceEcEmployeeInfoQueryResponseModel query(enterpriseId, employeeId, openId, userId)
+> AlipayCommerceEcEmployeeInfoQueryResponseModel query(enterpriseId, employeeId, openId, userId, mobile)
 
 查询员工详情
 
@@ -114,8 +114,9 @@ public class Example {
     String employeeId = "228420000000057942506"; // String | 员工id
     String openId = "074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5"; // String | 蚂蚁统一会员ID
     String userId = "2088501304519332"; // String | 蚂蚁统一会员ID
+    String mobile = "134XXXX2526"; // String | 员工手机号码
     try {
-      AlipayCommerceEcEmployeeInfoQueryResponseModel result = apiInstance.query(enterpriseId, employeeId, openId, userId);
+      AlipayCommerceEcEmployeeInfoQueryResponseModel result = apiInstance.query(enterpriseId, employeeId, openId, userId, mobile);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayCommerceEcEmployeeInfoApi#query");
@@ -136,6 +137,7 @@ public class Example {
 | **employeeId** | **String**| 员工id | [optional] |
 | **openId** | **String**| 蚂蚁统一会员ID | [optional] |
 | **userId** | **String**| 蚂蚁统一会员ID | [optional] |
+| **mobile** | **String**| 员工手机号码 | [optional] |
 
 ### Return type
 

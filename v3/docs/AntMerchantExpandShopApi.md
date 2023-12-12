@@ -326,9 +326,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AntMerchantExpandShopApi apiInstance = new AntMerchantExpandShopApi(defaultClient);
-    String shopId = "2018011900502000000005124744"; // String | 蚂蚁店铺id。填写本参数的话，store_id和ip_role_id可以不填
-    String storeId = "NO0001"; // String | 门店编号，表示该门店在该商户角色id(直连pid，间连smid)下，由商户自己定义的外部门店编号。关店接口中，如果没传shop_id，则本字段与ip_role_id均必填
-    String ipRoleId = "2088301155943087"; // String | 商户角色id，表示将要开的店属于哪个商户角色。对于直连开店场景，填写商户pid；对于间连开店场景（线上、线下、直付通），填写商户smid。本接口中，如果没传shop_id，则本字段与store_id均必填
+    String shopId = "2018011900502000000005124744"; // String | 蚂蚁店铺id
+    String storeId = "NO0001"; // String | 门店编号，表示该门店在该商户角色id(直连pid，间连smid)下，由商户自己定义的外部门店编号
+    String ipRoleId = "2088301155943087"; // String | 商户角色id，表示将要开的店属于哪个商户角色。对于直连开店场景，填写商户pid；对于间连开店场景（线上、线下、直付通），填写商户smid
     String addressVersion = "2022Q2"; // String | 行政区划版本，当前可传空值(取默认版本)、2022Q2、UPTODATE(取最新版本)，其中空值默认为：2020Q1版本（ address_version=''或null），想要查看版本是2022年2季度版本则传入:(address_version='2022Q2')，想要获取最新版本则传入:(address_version ='UPTODATE')
     String needRecommend = "0"; // String | 门店不置信时，是否需要返回shop_recommend_info
     try {
@@ -349,9 +349,9 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **shopId** | **String**| 蚂蚁店铺id。填写本参数的话，store_id和ip_role_id可以不填 | [optional] |
-| **storeId** | **String**| 门店编号，表示该门店在该商户角色id(直连pid，间连smid)下，由商户自己定义的外部门店编号。关店接口中，如果没传shop_id，则本字段与ip_role_id均必填 | [optional] |
-| **ipRoleId** | **String**| 商户角色id，表示将要开的店属于哪个商户角色。对于直连开店场景，填写商户pid；对于间连开店场景（线上、线下、直付通），填写商户smid。本接口中，如果没传shop_id，则本字段与store_id均必填 | [optional] |
+| **shopId** | **String**| 蚂蚁店铺id | [optional] |
+| **storeId** | **String**| 门店编号，表示该门店在该商户角色id(直连pid，间连smid)下，由商户自己定义的外部门店编号 | [optional] |
+| **ipRoleId** | **String**| 商户角色id，表示将要开的店属于哪个商户角色。对于直连开店场景，填写商户pid；对于间连开店场景（线上、线下、直付通），填写商户smid | [optional] |
 | **addressVersion** | **String**| 行政区划版本，当前可传空值(取默认版本)、2022Q2、UPTODATE(取最新版本)，其中空值默认为：2020Q1版本（ address_version&#x3D;&#39;&#39;或null），想要查看版本是2022年2季度版本则传入:(address_version&#x3D;&#39;2022Q2&#39;)，想要获取最新版本则传入:(address_version &#x3D;&#39;UPTODATE&#39;) | [optional] |
 | **needRecommend** | **String**| 门店不置信时，是否需要返回shop_recommend_info | [optional] |
 
