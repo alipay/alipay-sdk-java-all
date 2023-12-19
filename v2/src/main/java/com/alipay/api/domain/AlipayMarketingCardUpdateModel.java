@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingCardUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4349822367627714667L;
+	private static final long serialVersionUID = 8154217926868877629L;
 
 	/**
 	 * 需要修改的最新卡信息
@@ -64,7 +64,7 @@ public class AlipayMarketingCardUpdateModel extends AlipayObject {
 	private PaidOuterCardExtraInfoDTO paidOuterCardInfo;
 
 	/**
-	 * 支付宝业务卡号，即通过<a  href="https://opendocs.alipay.com/apis/009zw3">alipay.marketing.card.open</a>(会员卡开卡)接口开卡后获取的  card_info.biz_card_no 值。
+	 * 支付宝业务卡号：1、3.0（历史版本）版本来源于alipay.marketing.card.open(会员卡开卡)接口开卡后获取的 card_info.biz_card_no 值；2、极速版来源于spi.alipay.user.opencard.get(会员卡开通，获取会员卡信息)请求参数中的biz_card_no值。
 	 */
 	@ApiField("target_card_no")
 	private String targetCardNo;

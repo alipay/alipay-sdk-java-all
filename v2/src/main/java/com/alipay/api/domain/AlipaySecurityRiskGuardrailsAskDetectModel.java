@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 大模型围栏(风险防控)提问检测接口
  *
  * @author auto create
- * @since 1.0, 2023-08-30 18:44:52
+ * @since 1.0, 2023-11-29 21:52:51
  */
 public class AlipaySecurityRiskGuardrailsAskDetectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5653799511148671913L;
+	private static final long serialVersionUID = 3139615775794769325L;
 
 	/**
 	 * 扩展属性Map，key限定为：aigcType、serviceScene、triggerSource、bizOwner，对应的value取值为：
@@ -61,6 +61,12 @@ triggerSource:
 	 */
 	@ApiField("request_id")
 	private String requestId;
+
+	/**
+	 * 场景码，非必填，可联系蚂蚁运营同学获取
+	 */
+	@ApiField("scene_code")
+	private String sceneCode;
 
 	/**
 	 * 大模型提问护栏服务, 用于区分提供的服务类别，当前支持：TJ_QUESTION_BASIC、TJ_ANSWER_BASIC 两种
@@ -113,6 +119,13 @@ triggerSource:
 	}
 	public void setRequestId(String requestId) {
 		this.requestId = requestId;
+	}
+
+	public String getSceneCode() {
+		return this.sceneCode;
+	}
+	public void setSceneCode(String sceneCode) {
+		this.sceneCode = sceneCode;
 	}
 
 	public String getServiceName() {

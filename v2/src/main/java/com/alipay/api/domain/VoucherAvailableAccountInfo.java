@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 可用账号
  *
  * @author auto create
- * @since 1.0, 2023-07-24 23:20:09
+ * @since 1.0, 2023-12-04 10:31:23
  */
 public class VoucherAvailableAccountInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8828316325279373532L;
+	private static final long serialVersionUID = 8485454861917645245L;
 
 	/**
 	 * 优惠券可核销的直连商户PID

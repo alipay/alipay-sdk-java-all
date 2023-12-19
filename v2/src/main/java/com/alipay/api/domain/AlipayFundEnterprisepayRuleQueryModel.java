@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 因公付查询规则
  *
  * @author auto create
- * @since 1.0, 2022-12-13 08:45:23
+ * @since 1.0, 2023-11-28 20:53:17
  */
 public class AlipayFundEnterprisepayRuleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1867627537653731977L;
+	private static final long serialVersionUID = 3881549339429835955L;
 
 	/**
 	 * 企业签约账户ID
@@ -39,6 +39,12 @@ public class AlipayFundEnterprisepayRuleQueryModel extends AlipayObject {
 	 */
 	@ApiField("member_id")
 	private String memberId;
+
+	/**
+	 * 支付宝用户的openId
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 操作类型：
@@ -91,6 +97,13 @@ TRADE - 商户限制
 	}
 	public void setMemberId(String memberId) {
 		this.memberId = memberId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOperationType() {

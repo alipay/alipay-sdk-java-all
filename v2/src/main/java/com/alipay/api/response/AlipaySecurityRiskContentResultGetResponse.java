@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.content.result.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 00:43:23
+ * @since 1.0, 2023-11-29 19:23:07
  */
 public class AlipaySecurityRiskContentResultGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6485869168268198169L;
+	private static final long serialVersionUID = 2264126571838563144L;
 
 	/** 
 	 * 命中结果详情

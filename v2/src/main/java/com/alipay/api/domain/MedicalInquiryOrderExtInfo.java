@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 问诊订单扩展信息
  *
  * @author auto create
- * @since 1.0, 2023-11-14 20:30:17
+ * @since 1.0, 2023-12-04 10:47:33
  */
 public class MedicalInquiryOrderExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8449112969588993574L;
+	private static final long serialVersionUID = 5766963317648398655L;
 
 	/**
 	 * 支付宝渠道订单标识，Y代表支付宝渠道订单
@@ -30,6 +30,12 @@ public class MedicalInquiryOrderExtInfo extends AlipayObject {
 	 */
 	@ApiField("doctor_inquiry_link_page")
 	private String doctorInquiryLinkPage;
+
+	/**
+	 * 订单所属pid
+	 */
+	@ApiField("order_pid")
+	private String orderPid;
 
 	/**
 	 * 订单来源
@@ -56,6 +62,13 @@ public class MedicalInquiryOrderExtInfo extends AlipayObject {
 	}
 	public void setDoctorInquiryLinkPage(String doctorInquiryLinkPage) {
 		this.doctorInquiryLinkPage = doctorInquiryLinkPage;
+	}
+
+	public String getOrderPid() {
+		return this.orderPid;
+	}
+	public void setOrderPid(String orderPid) {
+		this.orderPid = orderPid;
 	}
 
 	public String getSource() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenAppMiniTemplatemessageSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7878281427863655295L;
+	private static final long serialVersionUID = 1523588399949321315L;
 
 	/**
 	 * 模板消息内容。商家/开发者将模板占位符替换为自定义内容。
@@ -48,8 +48,7 @@ public class AlipayOpenAppMiniTemplatemessageSendModel extends AlipayObject {
 	private String toOpenId;
 
 	/**
-	 * 接收模板消息的用户 user_id，一般为2088开头的16为数字。
-注意：需为实际支付/提交表单/刷脸/订阅消息的用户。
+	 * 接收模板消息用户支付宝 user_id，可通过 <a href="https://opendocs.alipay.com/mini/api/openapi-authorize">用户授权</a> 获取
 	 */
 	@ApiField("to_user_id")
 	private String toUserId;

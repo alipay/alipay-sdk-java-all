@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 可准入的方法
  *
  * @author auto create
- * @since 1.0, 2023-09-07 19:04:53
+ * @since 1.0, 2023-12-10 17:50:53
  */
 public class PromoActivityAccessActionVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8399955158145347576L;
+	private static final long serialVersionUID = 7682792994831849633L;
 
 	/**
 	 * 下一步应该怎么做

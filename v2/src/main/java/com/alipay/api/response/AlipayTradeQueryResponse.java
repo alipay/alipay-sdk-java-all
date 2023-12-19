@@ -11,6 +11,7 @@ import com.alipay.api.domain.TradeFundBill;
 import com.alipay.api.domain.HbFqPayInfo;
 import com.alipay.api.domain.IntactChargeInfo;
 import com.alipay.api.domain.PaymentInfoWithId;
+import com.alipay.api.domain.GoodsDetail;
 import com.alipay.api.domain.TradeSettleInfo;
 import com.alipay.api.domain.VoucherDetail;
 
@@ -20,11 +21,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-20 14:09:43
+ * @since 1.0, 2023-12-14 01:26:55
  */
 public class AlipayTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3287957174393972788L;
+	private static final long serialVersionUID = 5495577566437319623L;
 
 	/** 
 	 * 支付宝店铺编号
@@ -288,6 +289,13 @@ json格式。
 	 */
 	@ApiField("receipt_currency_type")
 	private String receiptCurrencyType;
+
+	/** 
+	 * 支付请求的商品明细列表
+	 */
+	@ApiListField("req_goods_detail")
+	@ApiField("goods_detail")
+	private List<GoodsDetail> reqGoodsDetail;
 
 	/** 
 	 * 本次交易打款给卖家的时间
@@ -668,6 +676,13 @@ json格式。
 	}
 	public String getReceiptCurrencyType( ) {
 		return this.receiptCurrencyType;
+	}
+
+	public void setReqGoodsDetail(List<GoodsDetail> reqGoodsDetail) {
+		this.reqGoodsDetail = reqGoodsDetail;
+	}
+	public List<GoodsDetail> getReqGoodsDetail( ) {
+		return this.reqGoodsDetail;
 	}
 
 	public void setSendPayDate(Date sendPayDate) {

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 解除授权明细
  *
  * @author auto create
- * @since 1.0, 2023-11-23 13:58:40
+ * @since 1.0, 2023-11-24 10:37:29
  */
 public class DelOauthDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6359254362812722746L;
+	private static final long serialVersionUID = 8357668629485728857L;
 
 	/**
 	 * 数据入库的时间

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品免审更新接口
  *
  * @author auto create
- * @since 1.0, 2023-04-03 10:19:16
+ * @since 1.0, 2023-11-24 14:38:16
  */
 public class AlipayOpenAppItemDirectModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2267447326886613837L;
+	private static final long serialVersionUID = 4229743964938129549L;
 
 	/**
 	 * 支付宝平台侧商品ID，是支付宝平台侧商品的唯一标识，后续与平台交互，需要使用该 ID，建议持久化。该字段特殊可选，与out_item_id不能同时为空，优先使用item_id。

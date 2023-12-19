@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 任务详情返回
  *
  * @author auto create
- * @since 1.0, 2023-08-18 17:28:41
+ * @since 1.0, 2023-11-27 18:48:20
  */
 public class TaskDetailResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 8515657795169673478L;
+	private static final long serialVersionUID = 4823784974947261619L;
 
 	/**
 	 * 创建人id
@@ -62,6 +62,12 @@ public class TaskDetailResponse extends AlipayObject {
 	private String taskEnd;
 
 	/**
+	 * 任务条件
+	 */
+	@ApiField("task_free")
+	private String taskFree;
+
+	/**
 	 * 任务id
 	 */
 	@ApiField("task_id")
@@ -96,6 +102,12 @@ public class TaskDetailResponse extends AlipayObject {
 	 */
 	@ApiField("task_title")
 	private String taskTitle;
+
+	/**
+	 * 任务类型
+	 */
+	@ApiField("task_type")
+	private String taskType;
 
 	public String getCreator() {
 		return this.creator;
@@ -153,6 +165,13 @@ public class TaskDetailResponse extends AlipayObject {
 		this.taskEnd = taskEnd;
 	}
 
+	public String getTaskFree() {
+		return this.taskFree;
+	}
+	public void setTaskFree(String taskFree) {
+		this.taskFree = taskFree;
+	}
+
 	public String getTaskId() {
 		return this.taskId;
 	}
@@ -193,6 +212,13 @@ public class TaskDetailResponse extends AlipayObject {
 	}
 	public void setTaskTitle(String taskTitle) {
 		this.taskTitle = taskTitle;
+	}
+
+	public String getTaskType() {
+		return this.taskType;
+	}
+	public void setTaskType(String taskType) {
+		this.taskType = taskType;
 	}
 
 }

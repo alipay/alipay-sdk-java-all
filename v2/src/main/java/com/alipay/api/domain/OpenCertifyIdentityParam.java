@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开放认证身份参数
  *
  * @author auto create
- * @since 1.0, 2023-03-01 14:25:16
+ * @since 1.0, 2023-12-04 15:41:06
  */
 public class OpenCertifyIdentityParam extends AlipayObject {
 
-	private static final long serialVersionUID = 2734392335747343266L;
+	private static final long serialVersionUID = 2591985863977272911L;
 
 	/**
 	 * cert_digest：
@@ -41,6 +41,7 @@ public class OpenCertifyIdentityParam extends AlipayObject {
 3、若为台湾居民来往内地通行证，填HOME_VISIT_PERMIT_TAIWAN；
 4、若为港澳居民居住证，填RESIDENCE_PERMIT_HK_MC；
 5、若为台湾居民居住证，填RESIDENCE_PERMIT_TAIWAN；
+6、外国人永久居留证，填PERMANENT_RESIDENCE_FOREIGNER；
 	 */
 	@ApiField("cert_type")
 	private String certType;

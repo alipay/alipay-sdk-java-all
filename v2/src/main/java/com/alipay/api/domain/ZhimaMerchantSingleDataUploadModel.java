@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaMerchantSingleDataUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1756674234348489232L;
+	private static final long serialVersionUID = 5352427742578598158L;
 
 	/**
 	 * 公用回传参数（非必填），这个字段由商户传入，系统透传给商户，便于商户做逻辑关联，请使用json格式。

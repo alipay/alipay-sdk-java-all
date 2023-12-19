@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.taxi.heatmap.query request
  * 
  * @author auto create
- * @since 1.0, 2023-10-09 20:10:44
+ * @since 1.0, 2023-12-12 11:06:59
  */
 public class AlipayCommerceTransportTaxiHeatmapQueryRequest implements AlipayRequest<AlipayCommerceTransportTaxiHeatmapQueryResponse> {
 

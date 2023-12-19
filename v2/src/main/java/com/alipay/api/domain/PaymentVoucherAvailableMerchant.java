@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付券可核销商户详情
  *
  * @author auto create
- * @since 1.0, 2023-06-29 13:44:38
+ * @since 1.0, 2023-11-30 11:08:23
  */
 public class PaymentVoucherAvailableMerchant extends AlipayObject {
 
-	private static final long serialVersionUID = 4625397517923526748L;
+	private static final long serialVersionUID = 2885881545523847441L;
 
 	/**
 	 * 优惠券可核销的直连商户PID

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租金信息
  *
  * @author auto create
- * @since 1.0, 2023-09-13 11:56:04
+ * @since 1.0, 2023-12-05 10:29:29
  */
 public class RentInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7141187961327717696L;
+	private static final long serialVersionUID = 7441359864937998482L;
 
 	/**
 	 * 续租总期数，仅续租且订单修改时传入，1-12的整数，包含边界值

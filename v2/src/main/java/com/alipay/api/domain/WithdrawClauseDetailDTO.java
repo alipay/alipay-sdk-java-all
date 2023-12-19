@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 提现条款模型
  *
  * @author auto create
- * @since 1.0, 2022-01-05 15:28:44
+ * @since 1.0, 2023-11-28 14:41:13
  */
 public class WithdrawClauseDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3637799917731978361L;
+	private static final long serialVersionUID = 2775578417829585811L;
 
 	/**
 	 * 金额

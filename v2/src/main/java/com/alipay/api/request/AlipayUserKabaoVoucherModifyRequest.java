@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.kabao.voucher.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-11-23 16:01:53
+ * @since 1.0, 2023-11-30 19:21:55
  */
 public class AlipayUserKabaoVoucherModifyRequest implements AlipayRequest<AlipayUserKabaoVoucherModifyResponse> {
 

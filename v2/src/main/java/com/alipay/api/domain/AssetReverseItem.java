@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 逆向指令增加逆向业务场景及逆向物流单号
  *
  * @author auto create
- * @since 1.0, 2023-09-06 17:38:05
+ * @since 1.0, 2023-12-08 16:19:17
  */
 public class AssetReverseItem extends AlipayObject {
 
-	private static final long serialVersionUID = 5893813697489611743L;
+	private static final long serialVersionUID = 5149146849841741147L;
 
 	/**
 	 * 行为类型
@@ -64,6 +64,12 @@ public class AssetReverseItem extends AlipayObject {
 	 */
 	@ApiField("count")
 	private String count;
+
+	/**
+	 * 扩展字段
+	 */
+	@ApiField("ext_info")
+	private String extInfo;
 
 	/**
 	 * 出货地址
@@ -224,6 +230,13 @@ USER_WITH_GOODS_SELF_MAIL_BACK-用户已收到货-用户直接寄回，供应商
 	}
 	public void setCount(String count) {
 		this.count = count;
+	}
+
+	public String getExtInfo() {
+		return this.extInfo;
+	}
+	public void setExtInfo(String extInfo) {
+		this.extInfo = extInfo;
 	}
 
 	public AssetDeliveryAddress getFromAddress() {

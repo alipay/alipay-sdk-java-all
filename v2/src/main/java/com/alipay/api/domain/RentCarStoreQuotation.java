@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝租车门店报价
  *
  * @author auto create
- * @since 1.0, 2023-10-19 18:22:59
+ * @since 1.0, 2023-12-04 22:45:28
  */
 public class RentCarStoreQuotation extends AlipayObject {
 
-	private static final long serialVersionUID = 4651162375581648797L;
+	private static final long serialVersionUID = 7424264633183449281L;
 
 	/**
 	 * 评论数（取用户对商户评论数的总和）
@@ -35,7 +35,7 @@ public class RentCarStoreQuotation extends AlipayObject {
 	private Long distance;
 
 	/**
-	 * 在当前随心租卡片、租期、门店、车型下，随心租可以使用的天数
+	 * 在当前随心租卡片、租期、门店、车型下，随心租可以使用的天数。仅随心租场景可用，其他车型报价场景不需要传
 	 */
 	@ApiField("easy_card_usable_day_count")
 	private Long easyCardUsableDayCount;
@@ -96,10 +96,11 @@ public class RentCarStoreQuotation extends AlipayObject {
 	private String supplierName;
 
 	/**
-	 * 在请求参数中如果传了用户购买随心租的订单id，则服务商需要判断哪些车型、门店可以使用哪些随心租
+	 * 在请求参数中如果传了用户购买随心租的订单id，则服务商需要判断哪些车型、门店可以使用哪些随心租 当前字段已废弃(无用字段，废弃不再使用)
 	 */
 	@ApiListField("support_easy_card_order_ids")
 	@ApiField("string")
+	@Deprecated
 	private List<String> supportEasyCardOrderIds;
 
 	/**
@@ -115,7 +116,7 @@ public class RentCarStoreQuotation extends AlipayObject {
 	private Long unitAmount;
 
 	/**
-	 * 使用随心租后用户需要支付的总价
+	 * 使用随心租后用户需要支付的总价。仅随心租场景使用，其余车辆报价场景不需要传
 	 */
 	@ApiField("use_easy_card_total_amount")
 	private Long useEasyCardTotalAmount;

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.common.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-11 16:06:45
+ * @since 1.0, 2023-12-18 14:11:59
  */
 public class AlipayFundTransCommonQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6747366258969119637L;
+	private static final long serialVersionUID = 8181353558923949632L;
 
 	/** 
 	 * 预计到账时间，转账到银行卡专用，格式为yyyy-MM-dd HH:mm:ss，转账受理失败不返回。
@@ -112,7 +112,7 @@ d）“6位控制位”由金融机构通过平台获取
 	private String subOrderStatus;
 
 	/** 
-	 * 付款金额，收银台场景下付款成功后的支付金额，订单状态为SUCCESS才返回，其他状态不返回。
+	 * 付款金额，收银台场景下付款成功后的支付金额，订单状态为SUCCESS才返回，其他状态不返回。付款金额，单位为元，精确到小数点后两位。
 	 */
 	@ApiField("trans_amount")
 	private String transAmount;

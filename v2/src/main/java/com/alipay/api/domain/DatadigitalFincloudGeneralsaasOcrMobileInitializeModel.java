@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * OCR端云一体化识别初始化
  *
  * @author auto create
- * @since 1.0, 2023-05-17 19:15:16
+ * @since 1.0, 2023-12-13 19:30:50
  */
 public class DatadigitalFincloudGeneralsaasOcrMobileInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5547833253532964395L;
+	private static final long serialVersionUID = 8451617666926763399L;
 
 	/**
 	 * bizCode，代表当前使用的能力类型。

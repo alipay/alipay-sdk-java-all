@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 虚拟数字人开放接口调用
  *
  * @author auto create
- * @since 1.0, 2023-11-07 16:58:50
+ * @since 1.0, 2023-12-06 14:47:34
  */
 public class AlipayIserviceCcmRobotAvatarbaseQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8661981865264558284L;
+	private static final long serialVersionUID = 6146665863379531352L;
 
 	/**
 	 * 开通的数字人的商品码

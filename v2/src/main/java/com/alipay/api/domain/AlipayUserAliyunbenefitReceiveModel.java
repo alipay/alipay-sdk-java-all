@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝会员阿里云权益兑换接口
  *
  * @author auto create
- * @since 1.0, 2022-10-28 20:17:49
+ * @since 1.0, 2023-12-06 16:05:53
  */
 public class AlipayUserAliyunbenefitReceiveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3832523973693284132L;
+	private static final long serialVersionUID = 3396441198752326876L;
 
 	/**
 	 * 格式为yyyy-MM-dd HH:mm:ss ，业务操作时间用于对账，不传则以调用请求的当前时间计算

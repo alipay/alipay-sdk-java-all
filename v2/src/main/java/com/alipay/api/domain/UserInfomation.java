@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用户信息
  *
  * @author auto create
- * @since 1.0, 2023-11-09 14:38:19
+ * @since 1.0, 2023-12-08 14:38:34
  */
 public class UserInfomation extends AlipayObject {
 
-	private static final long serialVersionUID = 8174268752721593883L;
+	private static final long serialVersionUID = 5514389572673492929L;
 
 	/**
 	 * 证件号
@@ -48,13 +48,13 @@ public class UserInfomation extends AlipayObject {
 	private String name;
 
 	/**
-	 * 用户open_id
+	 * 支付宝用户openId
 	 */
 	@ApiField("open_id")
 	private String openId;
 
 	/**
-	 * 支付宝uid
+	 * 支付宝用户ID，可以通过支付结果通知、用户授权等渠道获取
 	 */
 	@ApiField("user_id")
 	private String userId;

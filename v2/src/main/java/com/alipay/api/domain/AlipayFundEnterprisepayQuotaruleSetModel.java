@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 因公付设置额度规则
  *
  * @author auto create
- * @since 1.0, 2023-03-07 19:52:46
+ * @since 1.0, 2023-11-28 16:48:39
  */
 public class AlipayFundEnterprisepayQuotaruleSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2392244935597389169L;
+	private static final long serialVersionUID = 4484653928628179718L;
 
 	/**
 	 * 企业签约共同账户ID

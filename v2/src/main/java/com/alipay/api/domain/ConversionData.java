@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 转化数据详情
  *
  * @author auto create
- * @since 1.0, 2023-09-19 14:42:25
+ * @since 1.0, 2023-11-27 12:43:20
  */
 public class ConversionData extends AlipayObject {
 
-	private static final long serialVersionUID = 1491923699875918774L;
+	private static final long serialVersionUID = 6137113751693853549L;
+
+	/**
+	 * 广告id
+	 */
+	@ApiField("ad_id")
+	private String adId;
 
 	/**
 	 * 转化流水号，用于幂等
@@ -162,6 +168,12 @@ LIVE - 直播
 	private String uuid;
 
 	/**
+	 * 支付宝用户在应用维度下的唯一标识
+	 */
+	@ApiField("uuid_open_id")
+	private String uuidOpenId;
+
+	/**
 	 * 当source=DATASET或者OTHER时使用：
 
 转化客户唯一标志类型：
@@ -169,6 +181,13 @@ PID - 2088pid
 	 */
 	@ApiField("uuid_type")
 	private String uuidType;
+
+	public String getAdId() {
+		return this.adId;
+	}
+	public void setAdId(String adId) {
+		this.adId = adId;
+	}
 
 	public String getBizNo() {
 		return this.bizNo;
@@ -301,6 +320,13 @@ PID - 2088pid
 	}
 	public void setUuid(String uuid) {
 		this.uuid = uuid;
+	}
+
+	public String getUuidOpenId() {
+		return this.uuidOpenId;
+	}
+	public void setUuidOpenId(String uuidOpenId) {
+		this.uuidOpenId = uuidOpenId;
 	}
 
 	public String getUuidType() {

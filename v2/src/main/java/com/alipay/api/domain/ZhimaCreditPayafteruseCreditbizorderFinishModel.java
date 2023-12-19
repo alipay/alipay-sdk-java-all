@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 完结先享后付记账单
  *
  * @author auto create
- * @since 1.0, 2022-07-14 13:59:49
+ * @since 1.0, 2023-12-07 12:05:52
  */
 public class ZhimaCreditPayafteruseCreditbizorderFinishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3348892596136314139L;
+	private static final long serialVersionUID = 5896654671132395931L;
 
 	/**
 	 * 信用服务订单号

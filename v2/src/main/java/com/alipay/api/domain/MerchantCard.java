@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MerchantCard extends AlipayObject {
 
-	private static final long serialVersionUID = 4639592214342881956L;
+	private static final long serialVersionUID = 6228854977964158156L;
 
 	/**
 	 * 资金卡余额，单位：元，精确到小数点后两位。
@@ -42,13 +42,7 @@ public class MerchantCard extends AlipayObject {
 	private String customAssets;
 
 	/**
-	 * 商户外部会员卡卡号
-
-说明：
-
-1、会员卡开卡接口，如果卡类型为外部会员卡，请求中则必须提供该参数；
-
-2、更新、查询、删除等接口，请求中则不需要提供该参数值；
+	 * 用户在商户crm系统中的会员卡卡号，该参数必填。
 	 */
 	@ApiField("external_card_no")
 	private String externalCardNo;
@@ -90,7 +84,7 @@ public class MerchantCard extends AlipayObject {
 	private MdCodeInfoDTO mdcodeInfo;
 
 	/**
-	 * 会员卡开卡时间，格式为yyyy-MM-dd  HH:mm:ss。会员卡更新时，该时间不支持修改，请传入调用开卡接口时传入的card_ext_info.open_date时间。
+	 * 会员卡开卡时间，格式为yyyy-MM-dd HH:mm:ss。会员卡更新时，该时间不支持修改。
 	 */
 	@ApiField("open_date")
 	private Date openDate;
@@ -108,7 +102,7 @@ public class MerchantCard extends AlipayObject {
 	private String templateId;
 
 	/**
-	 * 会员卡有效期，格式为yyyy-MM-dd  HH:mm:ss。会员卡更新时，该时间不支持修改，请传入调用开卡接口时传入的card_ext_info.valid_date时间。
+	 * 会员卡有效期结束时间，格式为yyyy-MM-dd HH:mm:ss。会员卡更新时，该时间不支持修改。
 	 */
 	@ApiField("valid_date")
 	private String validDate;

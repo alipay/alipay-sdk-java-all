@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.cps.deliver.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-11-21 11:26:52
+ * @since 1.0, 2023-11-27 11:06:54
  */
 public class AlipayUserCpsDeliverSyncRequest implements AlipayRequest<AlipayUserCpsDeliverSyncResponse> {
 

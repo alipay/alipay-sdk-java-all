@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 个人用户开通场景钱包
  *
  * @author auto create
- * @since 1.0, 2023-01-30 15:04:51
+ * @since 1.0, 2023-12-04 11:40:09
  */
 public class AlipayFundWalletSceneSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5317134141585799831L;
+	private static final long serialVersionUID = 5718122237656927226L;
 
 	/**
 	 * 钱包业务的场景吗

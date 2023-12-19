@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 运动记录轨迹点查询
  *
  * @author auto create
- * @since 1.0, 2023-09-01 16:39:37
+ * @since 1.0, 2023-12-07 19:35:05
  */
 public class AlipayUserSportsrecordDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6126897599315172624L;
+	private static final long serialVersionUID = 5592289215333999529L;
 
 	/**
 	 * 蚂蚁开放平台ID

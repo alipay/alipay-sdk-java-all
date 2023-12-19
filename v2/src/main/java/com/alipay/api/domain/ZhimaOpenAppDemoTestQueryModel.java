@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 测试文档预览
  *
  * @author auto create
- * @since 1.0, 2023-10-06 23:06:24
+ * @since 1.0, 2023-11-30 10:44:40
  */
 public class ZhimaOpenAppDemoTestQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1154818388285233542L;
+	private static final long serialVersionUID = 6461671123778189611L;
 
 	/**
 	 * copy_complex
@@ -53,6 +53,12 @@ public class ZhimaOpenAppDemoTestQueryModel extends AlipayObject {
 	@ApiField("test_number")
 	@Deprecated
 	private String testNumber;
+
+	/**
+	 * test
+	 */
+	@ApiField("test_other")
+	private String testOther;
 
 	/**
 	 * 1
@@ -112,6 +118,13 @@ public class ZhimaOpenAppDemoTestQueryModel extends AlipayObject {
 	}
 	public void setTestNumber(String testNumber) {
 		this.testNumber = testNumber;
+	}
+
+	public String getTestOther() {
+		return this.testOther;
+	}
+	public void setTestOther(String testOther) {
+		this.testOther = testOther;
 	}
 
 	public String getTestPrice() {

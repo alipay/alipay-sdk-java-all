@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 一码通订单创建
  *
  * @author auto create
- * @since 1.0, 2022-12-21 10:08:33
+ * @since 1.0, 2023-12-14 13:59:31
  */
 public class AlipayEbppIndustryOnecodepassOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7283583876886782573L;
+	private static final long serialVersionUID = 5217312522262713694L;
 
 	/**
 	 * 机构编码，接入时由支付宝小二分配。

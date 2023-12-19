@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.risk.guardrails.answer.detect request
  * 
  * @author auto create
- * @since 1.0, 2023-08-30 18:46:42
+ * @since 1.0, 2023-11-29 21:11:52
  */
 public class AlipaySecurityRiskGuardrailsAnswerDetectRequest implements AlipayRequest<AlipaySecurityRiskGuardrailsAnswerDetectResponse> {
 

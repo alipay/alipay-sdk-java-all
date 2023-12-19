@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 城服域内转发调用沟通平台开放接口
  *
  * @author auto create
- * @since 1.0, 2022-06-30 11:28:01
+ * @since 1.0, 2023-12-07 13:30:14
  */
 public class AlipayEcoCityserviceMessageUniversalSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6121446527472686769L;
+	private static final long serialVersionUID = 6339598835377164333L;
 
 	/**
 	 * 模板中占位符模型列表

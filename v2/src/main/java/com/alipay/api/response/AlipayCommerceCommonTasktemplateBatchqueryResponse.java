@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.common.tasktemplate.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-06 14:47:00
+ * @since 1.0, 2023-12-15 10:21:56
  */
 public class AlipayCommerceCommonTasktemplateBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5637669951388949817L;
+	private static final long serialVersionUID = 3615465511926397855L;
 
 	/** 
 	 * 任务模板信息列表
@@ -24,11 +24,24 @@ public class AlipayCommerceCommonTasktemplateBatchqueryResponse extends AlipayRe
 	@ApiField("tao_ke_task_template_info_d_t_o")
 	private List<TaoKeTaskTemplateInfoDTO> taskList;
 
+	/** 
+	 * 总数量
+	 */
+	@ApiField("total_num")
+	private Long totalNum;
+
 	public void setTaskList(List<TaoKeTaskTemplateInfoDTO> taskList) {
 		this.taskList = taskList;
 	}
 	public List<TaoKeTaskTemplateInfoDTO> getTaskList( ) {
 		return this.taskList;
+	}
+
+	public void setTotalNum(Long totalNum) {
+		this.totalNum = totalNum;
+	}
+	public Long getTotalNum( ) {
+		return this.totalNum;
 	}
 
 }

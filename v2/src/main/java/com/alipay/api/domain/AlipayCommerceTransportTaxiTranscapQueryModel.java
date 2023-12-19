@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 出租车运力推荐查询接口
  *
  * @author auto create
- * @since 1.0, 2023-07-24 19:31:47
+ * @since 1.0, 2023-12-12 14:07:18
  */
 public class AlipayCommerceTransportTaxiTranscapQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3375484869499245664L;
+	private static final long serialVersionUID = 6218846244945427978L;
 
 	/**
 	 * 车牌号
@@ -26,6 +26,12 @@ public class AlipayCommerceTransportTaxiTranscapQueryModel extends AlipayObject 
 	 */
 	@ApiField("city_code")
 	private String cityCode;
+
+	/**
+	 * 企业ID
+	 */
+	@ApiField("corp_id")
+	private String corpId;
 
 	/**
 	 * 请求ID，唯一标识一次请求，
@@ -58,6 +64,13 @@ public class AlipayCommerceTransportTaxiTranscapQueryModel extends AlipayObject 
 	}
 	public void setCityCode(String cityCode) {
 		this.cityCode = cityCode;
+	}
+
+	public String getCorpId() {
+		return this.corpId;
+	}
+	public void setCorpId(String corpId) {
+		this.corpId = corpId;
 	}
 
 	public String getRequestId() {

@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝会员会利百川cps物流信息同步
  *
  * @author auto create
- * @since 1.0, 2023-11-21 11:26:16
+ * @since 1.0, 2023-11-27 11:02:46
  */
 public class AlipayUserCpsDeliverSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2143268281593554397L;
+	private static final long serialVersionUID = 8723263572499629134L;
 
 	/**
-	 * 用户标识
+	 * open_id+第三方小程序场景+由商家主动升级生成
 	 */
 	@ApiField("open_id")
 	private String openId;
@@ -30,6 +30,12 @@ public class AlipayUserCpsDeliverSyncModel extends AlipayObject {
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;
+
+	/**
+	 * 必传参数，蚂蚁统一会员ID
+	 */
+	@ApiField("user_id")
+	private String userId;
 
 	public String getOpenId() {
 		return this.openId;
@@ -50,6 +56,13 @@ public class AlipayUserCpsDeliverSyncModel extends AlipayObject {
 	}
 	public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
+	}
+
+	public String getUserId() {
+		return this.userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
 
 }

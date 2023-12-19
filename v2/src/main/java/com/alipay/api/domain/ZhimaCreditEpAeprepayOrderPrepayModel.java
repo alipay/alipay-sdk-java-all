@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCreditEpAeprepayOrderPrepayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5198214171471383822L;
+	private static final long serialVersionUID = 4564487148626749716L;
 
 	/**
 	 * 扩展预留

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.cityservice.ext.ordertoc.notify response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 04:46:42
+ * @since 1.0, 2023-12-07 13:29:39
  */
 public class AlipayEcoCityserviceExtOrdertocNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6448436691646959388L;
+	private static final long serialVersionUID = 7255597242978987132L;
 
 	
 

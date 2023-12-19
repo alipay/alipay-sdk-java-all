@@ -1,7 +1,9 @@
 package com.alipay.api.response;
 
 import java.util.Date;
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.SendEquityOrderResult;
 
 import com.alipay.api.AlipayResponse;
@@ -10,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.morse.marketing.rta.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 03:51:54
+ * @since 1.0, 2023-12-07 10:16:57
  */
 public class AnttechMorseMarketingRtaSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7559597982583951449L;
+	private static final long serialVersionUID = 1247842741874966268L;
 
 	/** 
 	 * 业务唯一标识，标识本次查询的唯一识别号，用于问题定位
@@ -27,6 +29,13 @@ public class AnttechMorseMarketingRtaSendResponse extends AlipayResponse {
 	 */
 	@ApiField("campaign_id")
 	private String campaignId;
+
+	/** 
+	 * 发奖权益结果列表
+	 */
+	@ApiListField("send_equity_order_list")
+	@ApiField("send_equity_order_result")
+	private List<SendEquityOrderResult> sendEquityOrderList;
 
 	/** 
 	 * 发奖权益订单结果列表
@@ -64,6 +73,13 @@ public class AnttechMorseMarketingRtaSendResponse extends AlipayResponse {
 	}
 	public String getCampaignId( ) {
 		return this.campaignId;
+	}
+
+	public void setSendEquityOrderList(List<SendEquityOrderResult> sendEquityOrderList) {
+		this.sendEquityOrderList = sendEquityOrderList;
+	}
+	public List<SendEquityOrderResult> getSendEquityOrderList( ) {
+		return this.sendEquityOrderList;
 	}
 
 	public void setSendEquityOrderResultList(SendEquityOrderResult sendEquityOrderResultList) {

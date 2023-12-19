@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * patch类型接口测试
  *
  * @author auto create
- * @since 1.0, 2023-08-25 16:11:55
+ * @since 1.0, 2023-12-04 15:35:16
  */
 public class AlipayOpenOperationOpenbizmockPatchQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7225821733955867517L;
+	private static final long serialVersionUID = 8298727855158732624L;
+
+	/**
+	 * ssss
+	 */
+	@ApiField("aaa")
+	private Attrisssss aaa;
 
 	/**
 	 * test2222zazaz
@@ -62,16 +68,35 @@ public class AlipayOpenOperationOpenbizmockPatchQueryModel extends AlipayObject 
 	private String idTypea;
 
 	/**
+	 * 商品类型
+	 */
+	@ApiField("item_type")
+	private String itemType;
+
+	/**
 	 * 元
 	 */
 	@ApiField("price")
 	private String price;
 
 	/**
+	 * 模版ID
+	 */
+	@ApiField("template_id")
+	private String templateId;
+
+	/**
 	 * 1
 	 */
 	@ApiField("uida")
 	private String uida;
+
+	public Attrisssss getAaa() {
+		return this.aaa;
+	}
+	public void setAaa(Attrisssss aaa) {
+		this.aaa = aaa;
+	}
 
 	public String getbQuery() {
 		return this.bQuery;
@@ -129,11 +154,25 @@ public class AlipayOpenOperationOpenbizmockPatchQueryModel extends AlipayObject 
 		this.idTypea = idTypea;
 	}
 
+	public String getItemType() {
+		return this.itemType;
+	}
+	public void setItemType(String itemType) {
+		this.itemType = itemType;
+	}
+
 	public String getPrice() {
 		return this.price;
 	}
 	public void setPrice(String price) {
 		this.price = price;
+	}
+
+	public String getTemplateId() {
+		return this.templateId;
+	}
+	public void setTemplateId(String templateId) {
+		this.templateId = templateId;
 	}
 
 	public String getUida() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 淘客账户代扣授权
  *
  * @author auto create
- * @since 1.0, 2023-06-20 14:31:53
+ * @since 1.0, 2023-12-05 14:25:16
  */
 public class AlipayCommerceCommonTaskagreementSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1429222512897744622L;
+	private static final long serialVersionUID = 4336671578611548227L;
 
 	/**
 	 * 商户签约号，代扣协议中标示用户的唯一签约号，同一

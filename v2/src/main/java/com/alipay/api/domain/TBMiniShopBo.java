@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class TBMiniShopBo extends AlipayObject {
 
-	private static final long serialVersionUID = 8398123644675954199L;
+	private static final long serialVersionUID = 2864618525756562947L;
 
 	/**
 	 * 门店地址

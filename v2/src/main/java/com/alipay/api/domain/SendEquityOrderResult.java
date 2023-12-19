@@ -1,19 +1,21 @@
 package com.alipay.api.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 发奖订单的结果信息，用批量发奖结果返回
  *
  * @author auto create
- * @since 1.0, 2023-03-07 14:51:53
+ * @since 1.0, 2023-12-06 17:35:25
  */
 public class SendEquityOrderResult extends AlipayObject {
 
-	private static final long serialVersionUID = 5835996984211962281L;
+	private static final long serialVersionUID = 8545187822581663217L;
 
 	/**
 	 * 权益唯一id标识，摩斯生成的权益id，用于商户端标识权益信息
@@ -56,6 +58,13 @@ public class SendEquityOrderResult extends AlipayObject {
 	 */
 	@ApiField("order_time")
 	private Date orderTime;
+
+	/**
+	 * 子订单详细信息列表信息
+	 */
+	@ApiListField("send_sub_order_result")
+	@ApiField("send_sub_order_result")
+	private List<SendSubOrderResult> sendSubOrderResult;
 
 	public String getEquityId() {
 		return this.equityId;
@@ -104,6 +113,13 @@ public class SendEquityOrderResult extends AlipayObject {
 	}
 	public void setOrderTime(Date orderTime) {
 		this.orderTime = orderTime;
+	}
+
+	public List<SendSubOrderResult> getSendSubOrderResult() {
+		return this.sendSubOrderResult;
+	}
+	public void setSendSubOrderResult(List<SendSubOrderResult> sendSubOrderResult) {
+		this.sendSubOrderResult = sendSubOrderResult;
 	}
 
 }

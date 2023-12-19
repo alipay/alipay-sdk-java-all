@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 淘客任务模板信息
  *
  * @author auto create
- * @since 1.0, 2023-06-16 15:26:52
+ * @since 1.0, 2023-12-15 10:18:55
  */
 public class TaoKeTaskTemplateInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8298618377565766174L;
+	private static final long serialVersionUID = 7241448251278412579L;
 
 	/**
 	 * 跳转链接
@@ -60,6 +60,12 @@ REALAMOUNT_RATIO购买金额比例
 	private RealAmountRatioIncentiveRule incentiveRule;
 
 	/**
+	 * 任务可以被领取的最大次数
+	 */
+	@ApiField("max_receive_num")
+	private String maxReceiveNum;
+
+	/**
 	 * 活动方id
 	 */
 	@ApiField("organizer_id")
@@ -82,6 +88,12 @@ REALAMOUNT_RATIO购买金额比例
 	 */
 	@ApiField("status")
 	private String status;
+
+	/**
+	 * 任务描述
+	 */
+	@ApiField("task_desc")
+	private String taskDesc;
 
 	/**
 	 * 任务失效时间
@@ -162,6 +174,13 @@ REALAMOUNT_RATIO购买金额比例
 		this.incentiveRule = incentiveRule;
 	}
 
+	public String getMaxReceiveNum() {
+		return this.maxReceiveNum;
+	}
+	public void setMaxReceiveNum(String maxReceiveNum) {
+		this.maxReceiveNum = maxReceiveNum;
+	}
+
 	public String getOrganizerId() {
 		return this.organizerId;
 	}
@@ -188,6 +207,13 @@ REALAMOUNT_RATIO购买金额比例
 	}
 	public void setStatus(String status) {
 		this.status = status;
+	}
+
+	public String getTaskDesc() {
+		return this.taskDesc;
+	}
+	public void setTaskDesc(String taskDesc) {
+		this.taskDesc = taskDesc;
 	}
 
 	public Date getTaskEndTime() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 逆向物料信息 - 退换货或取消订单
  *
  * @author auto create
- * @since 1.0, 2020-12-21 14:25:05
+ * @since 1.0, 2023-12-15 14:54:44
  */
 public class AssetReverseDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1528992379411715374L;
+	private static final long serialVersionUID = 7585629549949813579L;
 
 	/**
 	 * 退货数量
@@ -43,6 +43,12 @@ public class AssetReverseDetail extends AlipayObject {
 	 */
 	@ApiField("success")
 	private Boolean success;
+
+	/**
+	 * 过账日期
+	 */
+	@ApiField("voucher_time")
+	private String voucherTime;
 
 	public String getAmount() {
 		return this.amount;
@@ -77,6 +83,13 @@ public class AssetReverseDetail extends AlipayObject {
 	}
 	public void setSuccess(Boolean success) {
 		this.success = success;
+	}
+
+	public String getVoucherTime() {
+		return this.voucherTime;
+	}
+	public void setVoucherTime(String voucherTime) {
+		this.voucherTime = voucherTime;
 	}
 
 }

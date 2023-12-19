@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFinanceQuotationQuotetradeTradedaystateBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1579614768285828586L;
+	private static final long serialVersionUID = 7861695176352564434L;
 
 	/** 
 	 * 交易周期内的市场状态

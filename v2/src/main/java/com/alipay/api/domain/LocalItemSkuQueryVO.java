@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 本地商品sku，查询本地商品详情时使用当前sku对象进行传参
  *
  * @author auto create
- * @since 1.0, 2023-05-08 14:58:29
+ * @since 1.0, 2023-12-10 00:14:15
  */
 public class LocalItemSkuQueryVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2472954817514512285L;
+	private static final long serialVersionUID = 8428737259882898584L;
 
 	/**
 	 * sku原价，分为单位

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.enterprisepay.rule.query request
  * 
  * @author auto create
- * @since 1.0, 2022-12-13 08:45:23
+ * @since 1.0, 2023-11-28 20:56:57
  */
 public class AlipayFundEnterprisepayRuleQueryRequest implements AlipayRequest<AlipayFundEnterprisepayRuleQueryResponse> {
 

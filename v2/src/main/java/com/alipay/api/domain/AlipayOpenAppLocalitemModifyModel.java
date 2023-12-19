@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序商品修改接口
  *
  * @author auto create
- * @since 1.0, 2023-11-13 20:57:18
+ * @since 1.0, 2023-12-08 15:40:53
  */
 public class AlipayOpenAppLocalitemModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5478364163823339837L;
+	private static final long serialVersionUID = 3168784145924762692L;
 
 	/**
 	 * 商品属性，通过alipay.open.app.localitem.template.query获取本地商品模板信息接口得到商品属性key
@@ -61,7 +61,7 @@ public class AlipayOpenAppLocalitemModifyModel extends AlipayObject {
 	private String itemId;
 
 	/**
-	 * 商品模版类型： 1. 团购 2. 代金
+	 * 商品模版类型：1. 团购 2. 代金券 3. 日历房
 	 */
 	@ApiField("item_type")
 	private String itemType;
@@ -95,6 +95,12 @@ public class AlipayOpenAppLocalitemModifyModel extends AlipayObject {
 	 */
 	@ApiField("sold_time")
 	private TimeRangeStructVO soldTime;
+
+	/**
+	 * 标品id
+	 */
+	@ApiField("spu_id")
+	private String spuId;
 
 	/**
 	 * 商品名称，字符类型，最少不低于3，最长不超过60个字。注：1.商品名称只允许汉字、数字、英文字母、特殊字符集；2.商品名称不得仅为数字、字母、特殊字符集或上述三种的组合。
@@ -191,6 +197,13 @@ public class AlipayOpenAppLocalitemModifyModel extends AlipayObject {
 	}
 	public void setSoldTime(TimeRangeStructVO soldTime) {
 		this.soldTime = soldTime;
+	}
+
+	public String getSpuId() {
+		return this.spuId;
+	}
+	public void setSpuId(String spuId) {
+		this.spuId = spuId;
 	}
 
 	public String getTitle() {

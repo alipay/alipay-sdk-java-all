@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 本地商品免审更新skku
  *
  * @author auto create
- * @since 1.0, 2023-05-05 15:08:44
+ * @since 1.0, 2023-12-08 00:47:15
  */
 public class LocalItemDirectModifySku extends AlipayObject {
 
-	private static final long serialVersionUID = 5494711216375743169L;
+	private static final long serialVersionUID = 5443566568938823562L;
 
 	/**
 	 * sku原价，分为单位。（代金券对应代金券面额）

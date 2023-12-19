@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻GO模板开通配置
  *
  * @author auto create
- * @since 1.0, 2022-12-27 14:22:07
+ * @since 1.0, 2023-11-27 15:27:23
  */
 public class ZMGOOpenConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 4755141849936814221L;
+	private static final long serialVersionUID = 2549464873843314713L;
 
 	/**
 	 * 开通页按钮文案描述;传入内容后开通页点击开通按钮展示文案会使用该字段传入内容
@@ -44,7 +44,7 @@ public class ZMGOOpenConfig extends AlipayObject {
 	private String customOpenTips;
 
 	/**
-	 * 担保金额额度
+	 * 担保金额额度，单位:元
 	 */
 	@ApiField("freeze_amount")
 	private String freezeAmount;

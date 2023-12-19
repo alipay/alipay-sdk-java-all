@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.shortenurl.exchange response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-25 21:11:47
+ * @since 1.0, 2023-11-27 10:06:54
  */
 public class AlipayCommerceMedicalShortenurlExchangeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1278758984843449765L;
+	private static final long serialVersionUID = 5172946743183142115L;
 
 	/** 
 	 * 业务错误描述

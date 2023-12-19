@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序商品分页查询接口
  *
  * @author auto create
- * @since 1.0, 2023-07-03 17:35:16
+ * @since 1.0, 2023-11-24 14:38:50
  */
 public class AlipayOpenAppItemListQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7414341996184185273L;
+	private static final long serialVersionUID = 6466344323911384945L;
 
 	/**
 	 * 支付宝平台侧商品id 列表，最多20个。

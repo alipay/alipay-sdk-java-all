@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝个人协议签约生效接口
  *
  * @author auto create
- * @since 1.0, 2022-11-23 16:05:49
+ * @since 1.0, 2023-12-18 14:50:43
  */
 public class AlipayUserAgreementSignEffectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3481824168283884846L;
+	private static final long serialVersionUID = 6414712368495855497L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号（用户签约成功后的协议号），如果传了该参数，其他参数会被忽略.

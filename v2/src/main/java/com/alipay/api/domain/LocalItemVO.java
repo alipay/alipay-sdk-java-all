@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 本地商品
  *
  * @author auto create
- * @since 1.0, 2023-10-24 17:10:35
+ * @since 1.0, 2023-12-08 17:42:37
  */
 public class LocalItemVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1543566766919765832L;
+	private static final long serialVersionUID = 8786862938575786956L;
 
 	/**
 	 * 商品属性
@@ -88,6 +88,12 @@ public class LocalItemVO extends AlipayObject {
 	 */
 	@ApiField("sold_time")
 	private TimeRangeStructVO soldTime;
+
+	/**
+	 * 标品ID
+	 */
+	@ApiField("spu_id")
+	private String spuId;
 
 	/**
 	 * 审核驳回：商品审核失败时，商品状态为审核驳回。 审核中：商品处于审核流程中时，商品状态为审核中。 已下架：商家可以通过调用接口下架商品，也可以通过商家后台下架商品。 可售卖：商家可以通过调用接口上架商品，也可以通过商家后台上架商品。 冻结：当商家出现违规操作时，支付宝侧将发起冻结，商品无法对外透出。 当商品包含多个规格时，只要有一个规格的商品状态为“可售卖”，spu的商品状态则为“可售卖”。
@@ -189,6 +195,13 @@ public class LocalItemVO extends AlipayObject {
 	}
 	public void setSoldTime(TimeRangeStructVO soldTime) {
 		this.soldTime = soldTime;
+	}
+
+	public String getSpuId() {
+		return this.spuId;
+	}
+	public void setSpuId(String spuId) {
+		this.spuId = spuId;
 	}
 
 	public String getSpuStatus() {

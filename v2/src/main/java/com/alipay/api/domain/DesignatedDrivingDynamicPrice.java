@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 代驾动态调价信息
  *
  * @author auto create
- * @since 1.0, 2022-08-23 16:31:08
+ * @since 1.0, 2023-11-27 09:32:10
  */
 public class DesignatedDrivingDynamicPrice extends AlipayObject {
 
-	private static final long serialVersionUID = 3596452634544814928L;
+	private static final long serialVersionUID = 8369342716285453227L;
 
 	/**
 	 * 调价金额，元

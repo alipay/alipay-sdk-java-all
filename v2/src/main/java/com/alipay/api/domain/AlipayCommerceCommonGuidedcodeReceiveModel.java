@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 淘客获取推广码
  *
  * @author auto create
- * @since 1.0, 2023-09-15 11:09:18
+ * @since 1.0, 2023-12-04 19:57:23
  */
 public class AlipayCommerceCommonGuidedcodeReceiveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1712523227433946976L;
+	private static final long serialVersionUID = 2548421188527964218L;
 
 	/**
 	 * 导购员id

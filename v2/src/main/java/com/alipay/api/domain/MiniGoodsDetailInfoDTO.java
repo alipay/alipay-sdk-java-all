@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 商品列表信息模型
  *
  * @author auto create
- * @since 1.0, 2023-11-16 13:54:29
+ * @since 1.0, 2023-12-11 00:08:48
  */
 public class MiniGoodsDetailInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5352986866136135113L;
+	private static final long serialVersionUID = 6815841863227141935L;
 
 	/**
 	 * 商品描述信息
@@ -27,6 +30,13 @@ public class MiniGoodsDetailInfoDTO extends AlipayObject {
 	private String categoriesTree;
 
 	/**
+	 * 价格日历
+	 */
+	@ApiListField("effective_dates")
+	@ApiField("effective_dates_d_t_o")
+	private List<EffectiveDatesDTO> effectiveDates;
+
+	/**
 	 * 商品类目 当前字段已废弃(暂时未使用)
 	 */
 	@ApiField("goods_category")
@@ -34,7 +44,7 @@ public class MiniGoodsDetailInfoDTO extends AlipayObject {
 	private String goodsCategory;
 
 	/**
-	 * 商户侧商品编号，提报优惠时的商品id，用于关联使用支付券，需要和支付券上绑定商品goods_id相同
+	 * 提报支付券优惠时的商品id，用于关联使用支付券，需要和支付券上绑定商品goods_id相同。如果不使用支付券，该字段传入商品最小粒度的商品id（如：若商品有 sku 粒度，则传商品 sku 粒度的id）
 	 */
 	@ApiField("goods_id")
 	private String goodsId;
@@ -56,6 +66,16 @@ public class MiniGoodsDetailInfoDTO extends AlipayObject {
 	 */
 	@ApiField("item_cnt")
 	private String itemCnt;
+
+	/**
+	 * 单位元
+有优惠信息时需要传入，优惠方式sale_real_price与item_discount二选一
+sale_real_price使用场景：商品有单价优惠，传入商品实际成交单价
+item_discount使用场景：同时购买多件商品时存在优惠，传入优惠总额
+优惠计算参考：https://opendocs.alipay.com/mini/0ag2e1?pathHash=20b9a409 中资金平衡校验
+	 */
+	@ApiField("item_discount")
+	private String itemDiscount;
 
 	/**
 	 * 商户侧商品id，用于公域场景结算，会影响主播归因。私域场景无需传入，公域场景未传入会影响后续结算
@@ -88,7 +108,14 @@ public class MiniGoodsDetailInfoDTO extends AlipayObject {
 	private String salePrice;
 
 	/**
-	 * 商品真实单价，单位：元,精确到小数点后两位
+	 * 商品真实单价，单位：元,精确到小数点后两位,
+有优惠信息时需要传入，优惠方式sale_real_price与item_discount二选一
+sale_real_price使用场景：商品有单价优惠，传入商品实际成交单价
+item_discount使用场景：同时购买多件商品时存在优惠，传入优惠总额
+优惠计算参考：https://opendocs.alipay.com/mini/0ag2e1?pathHash=20b9a409 中资金平衡校验
+sale_real_price使用场景：商品有单价优惠，传入商品实际成交单价
+item_discount使用场景：同时购买多件商品时存在优惠，传入优惠总额
+优惠计算参考：https://opendocs.alipay.com/mini/0ag2e1?pathHash=20b9a409 中资金平衡校验
 	 */
 	@ApiField("sale_real_price")
 	private String saleRealPrice;
@@ -111,6 +138,13 @@ public class MiniGoodsDetailInfoDTO extends AlipayObject {
 	}
 	public void setCategoriesTree(String categoriesTree) {
 		this.categoriesTree = categoriesTree;
+	}
+
+	public List<EffectiveDatesDTO> getEffectiveDates() {
+		return this.effectiveDates;
+	}
+	public void setEffectiveDates(List<EffectiveDatesDTO> effectiveDates) {
+		this.effectiveDates = effectiveDates;
 	}
 
 	public String getGoodsCategory() {
@@ -146,6 +180,13 @@ public class MiniGoodsDetailInfoDTO extends AlipayObject {
 	}
 	public void setItemCnt(String itemCnt) {
 		this.itemCnt = itemCnt;
+	}
+
+	public String getItemDiscount() {
+		return this.itemDiscount;
+	}
+	public void setItemDiscount(String itemDiscount) {
+		this.itemDiscount = itemDiscount;
 	}
 
 	public String getOutItemId() {

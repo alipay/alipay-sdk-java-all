@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.charger.chargerbindinfo.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 02:01:45
+ * @since 1.0, 2023-12-12 10:26:30
  */
 public class AlipayCommerceTransportChargerChargerbindinfoSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4555183244321978413L;
+	private static final long serialVersionUID = 4631679734626596851L;
 
 	/** 
 	 * 商户同步的充电桩设备编码

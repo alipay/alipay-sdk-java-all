@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 增加openID映射
  *
  * @author auto create
- * @since 1.0, 2023-11-13 13:20:49
+ * @since 1.0, 2023-12-02 13:54:49
  */
 public class ParticipantForm extends AlipayObject {
 
-	private static final long serialVersionUID = 7471612532673395248L;
+	private static final long serialVersionUID = 7478377724937416356L;
 
 	/**
 	 * 扩展信息
@@ -36,6 +36,12 @@ public class ParticipantForm extends AlipayObject {
 	 */
 	@ApiField("principal_open_id")
 	private String principalOpenId;
+
+	/**
+	 * 真实姓名,当登录号类型为ALIPAY_LOGON_ID，需传真实姓名，用于校验
+	 */
+	@ApiField("real_name")
+	private String realName;
 
 	public String getExtInfo() {
 		return this.extInfo;
@@ -63,6 +69,13 @@ public class ParticipantForm extends AlipayObject {
 	}
 	public void setPrincipalOpenId(String principalOpenId) {
 		this.principalOpenId = principalOpenId;
+	}
+
+	public String getRealName() {
+		return this.realName;
+	}
+	public void setRealName(String realName) {
+		this.realName = realName;
 	}
 
 }

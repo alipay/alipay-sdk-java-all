@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品属性
  *
  * @author auto create
- * @since 1.0, 2023-11-14 17:39:25
+ * @since 1.0, 2023-12-10 00:37:16
  */
 public class AppItemAttrVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1635126691378933798L;
+	private static final long serialVersionUID = 6878899216731169439L;
 
 	/**
 	 * 商品属性key

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 停止投放
  *
  * @author auto create
- * @since 1.0, 2023-10-25 15:49:52
+ * @since 1.0, 2023-11-27 10:23:15
  */
 public class AlipayMarketingActivityDeliveryStopModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2665633528379815829L;
+	private static final long serialVersionUID = 3231478577826787882L;
 
 	/**
 	 * "服务商代运营商户信息。 限制: 服务商代运营模式必选"

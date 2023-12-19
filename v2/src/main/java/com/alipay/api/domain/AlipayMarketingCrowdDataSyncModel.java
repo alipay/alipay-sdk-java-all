@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人群信息同步
  *
  * @author auto create
- * @since 1.0, 2023-10-25 15:21:01
+ * @since 1.0, 2023-11-27 10:29:31
  */
 public class AlipayMarketingCrowdDataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4378976228754614274L;
+	private static final long serialVersionUID = 7335358869683492888L;
 
 	/**
 	 * 人群来源业务方，枚举：DATANEST=金融云

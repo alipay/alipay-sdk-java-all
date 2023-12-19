@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 余额充值
  *
  * @author auto create
- * @since 1.0, 2023-07-21 11:25:33
+ * @since 1.0, 2023-12-04 10:31:41
  */
 public class VoucherBalanceRechargeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2334782775977745873L;
+	private static final long serialVersionUID = 6173516781133636948L;
 
 	/**
 	 * 支付宝余额充值金额
@@ -23,17 +23,13 @@ public class VoucherBalanceRechargeInfo extends AlipayObject {
 	private String amount;
 
 	/**
-	 * 出资的商户支付宝登录账号 
-限制: 
-logon_id和partner_id必须且只能二选一
+	 * 出资的商户支付宝登录账号
 	 */
 	@ApiField("logon_id")
 	private String logonId;
 
 	/**
-	 * 出资的商户支付宝ID 
-限制: 
-logon_id和partner_id必须且只能二选一
+	 * 出资的商户支付宝ID
 	 */
 	@ApiField("partner_id")
 	private String partnerId;

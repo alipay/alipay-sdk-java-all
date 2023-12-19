@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营销活动属性可选项
  *
  * @author auto create
- * @since 1.0, 2023-09-07 19:04:53
+ * @since 1.0, 2023-12-10 17:49:52
  */
 public class PromoActivityAttrOptionVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7782796982555318677L;
+	private static final long serialVersionUID = 4534918212911821367L;
 
 	/**
 	 * 描述可选项的名称

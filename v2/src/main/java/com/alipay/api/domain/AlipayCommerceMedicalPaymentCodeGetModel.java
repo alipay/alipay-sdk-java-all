@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医保局获取用户付款码接口
  *
  * @author auto create
- * @since 1.0, 2023-07-17 13:44:06
+ * @since 1.0, 2023-12-08 16:27:22
  */
 public class AlipayCommerceMedicalPaymentCodeGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4398942229697144696L;
+	private static final long serialVersionUID = 2636921543792916159L;
 
 	/**
 	 * 用户医保码值

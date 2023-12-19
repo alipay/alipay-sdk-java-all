@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 下单撤销接口
  *
  * @author auto create
- * @since 1.0, 2022-12-16 15:36:07
+ * @since 1.0, 2023-12-18 15:46:27
  */
 public class AlipayInsAutoAutoinsprodPolicyCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1365713571626942856L;
+	private static final long serialVersionUID = 5367656668965143787L;
 
 	/**
 	 * 车险订单号

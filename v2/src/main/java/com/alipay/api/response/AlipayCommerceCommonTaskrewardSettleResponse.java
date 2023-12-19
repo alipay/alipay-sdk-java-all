@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.common.taskreward.settle response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-22 13:59:12
+ * @since 1.0, 2023-11-30 19:06:55
  */
 public class AlipayCommerceCommonTaskrewardSettleResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3879594589692532595L;
+	private static final long serialVersionUID = 2282689944212722573L;
 
 	/** 
 	 * 已发放的激励金额，单位元

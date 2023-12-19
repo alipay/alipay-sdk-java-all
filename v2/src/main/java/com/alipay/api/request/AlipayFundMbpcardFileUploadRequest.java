@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.mbpcard.file.upload request
  * 
  * @author auto create
- * @since 1.0, 2023-10-25 17:56:49
+ * @since 1.0, 2023-11-24 10:04:51
  */
 public class AlipayFundMbpcardFileUploadRequest implements AlipayUploadRequest<AlipayFundMbpcardFileUploadResponse> {
 

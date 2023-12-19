@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建支付宝卡包优惠券
  *
  * @author auto create
- * @since 1.0, 2023-11-23 15:59:46
+ * @since 1.0, 2023-11-30 19:17:56
  */
 public class AlipayUserKabaoVoucherCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5613849677871728261L;
+	private static final long serialVersionUID = 4823283987485889722L;
 
 	/**
 	 * 1、每批优惠券用一个唯一的批次id。

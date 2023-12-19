@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudrun.objectstorage.downloadurl.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-21 14:36:44
+ * @since 1.0, 2023-12-14 16:51:56
  */
 public class AlipayCloudCloudrunObjectstorageDownloadurlGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1855612966782467588L;
+	private static final long serialVersionUID = 6723856243768242873L;
 
 	/** 
 	 * 文件下载链接列表

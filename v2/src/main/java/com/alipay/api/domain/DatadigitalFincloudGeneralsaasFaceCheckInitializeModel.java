@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸检测初始化
  *
  * @author auto create
- * @since 1.0, 2023-05-17 19:14:16
+ * @since 1.0, 2023-12-13 19:30:50
  */
 public class DatadigitalFincloudGeneralsaasFaceCheckInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2666538862285589758L;
+	private static final long serialVersionUID = 7818519336998981663L;
 
 	/**
 	 * DATA_DIGITAL_BIZ_CODE_FACE_CHECK_LIVE，代表活体检测。

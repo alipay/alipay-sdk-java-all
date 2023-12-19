@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 淘客任务模板列表查询
  *
  * @author auto create
- * @since 1.0, 2023-06-20 14:31:44
+ * @since 1.0, 2023-12-12 16:12:07
  */
 public class AlipayCommerceCommonTasktemplateBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1147583463168454161L;
+	private static final long serialVersionUID = 1725864656731663643L;
 
 	/**
 	 * 查询时间范围结束时间

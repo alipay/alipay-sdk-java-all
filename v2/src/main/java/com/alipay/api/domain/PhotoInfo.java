@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 品牌的logo图片信息
  *
  * @author auto create
- * @since 1.0, 2022-11-14 15:40:04
+ * @since 1.0, 2023-12-07 18:01:19
  */
 public class PhotoInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4292439126244253892L;
+	private static final long serialVersionUID = 4442513188675352258L;
 
 	/**
 	 * 图片高度

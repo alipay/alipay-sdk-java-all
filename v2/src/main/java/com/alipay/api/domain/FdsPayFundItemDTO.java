@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付资金条目模型
  *
  * @author auto create
- * @since 1.0, 2022-05-21 20:54:27
+ * @since 1.0, 2023-11-28 14:42:31
  */
 public class FdsPayFundItemDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2664593998158794273L;
+	private static final long serialVersionUID = 7178959942911434716L;
 
 	/**
 	 * 金额

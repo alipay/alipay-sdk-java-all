@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单优惠信息
  *
  * @author auto create
- * @since 1.0, 2023-07-17 10:39:33
+ * @since 1.0, 2023-12-10 23:48:39
  */
 public class PromoDetailInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3566244218326994172L;
+	private static final long serialVersionUID = 6486385764842961569L;
 
 	/**
 	 * 优惠前置咨询组件返回的优惠活动咨询ID

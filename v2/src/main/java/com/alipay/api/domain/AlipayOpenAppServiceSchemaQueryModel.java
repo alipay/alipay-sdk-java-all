@@ -7,20 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务schema
  *
  * @author auto create
- * @since 1.0, 2023-11-14 19:34:17
+ * @since 1.0, 2023-11-29 13:11:46
  */
 public class AlipayOpenAppServiceSchemaQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8775631879944234492L;
+	private static final long serialVersionUID = 8828316571797459757L;
 
 	/**
-	 * 类目id
+	 * 类目id, 获取请参考<a href="https://opendocs.alipay.com/mini/03ci0w?pathHash=ed3c875c">各个行业场景服务接入资料</a>
 	 */
 	@ApiField("category_id")
 	private String categoryId;
 
 	/**
-	 * 服务模版类型。若当前服务类目只有一个服务模版，可不填。
+	 * 服务模版类型，默认值:DEFAULT
 	 */
 	@ApiField("template_type")
 	private String templateType;

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportCarbonDataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8892568775828714745L;
+	private static final long serialVersionUID = 1576215769657375399L;
 
 	/**
 	 * 业务结束时间  yyyy-MM-dd HH:mm:ss 格式

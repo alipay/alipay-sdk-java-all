@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudpromo.image.optimize.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-10-13 02:01:45
+ * @since 1.0, 2023-11-28 12:06:53
  */
 public class AlipayCloudCloudpromoImageOptimizeApplyRequest implements AlipayRequest<AlipayCloudCloudpromoImageOptimizeApplyResponse> {
 

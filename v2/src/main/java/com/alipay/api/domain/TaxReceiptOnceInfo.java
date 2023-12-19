@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TaxReceiptOnceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7512541978125861285L;
+	private static final long serialVersionUID = 8447582561239233519L;
 
 	/**
 	 * 已认证的法人手机号

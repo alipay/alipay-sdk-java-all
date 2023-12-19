@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankCreditSupplychainFactoringSelleradmitQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3728263999931822482L;
+	private static final long serialVersionUID = 6426245161914139838L;
 
 	/** 
 	 * 是否已提交加白申请

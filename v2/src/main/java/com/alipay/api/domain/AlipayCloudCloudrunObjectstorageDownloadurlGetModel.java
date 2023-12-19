@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 对象存储获取文件下载地址
  *
  * @author auto create
- * @since 1.0, 2023-09-21 11:43:03
+ * @since 1.0, 2023-12-07 14:34:15
  */
 public class AlipayCloudCloudrunObjectstorageDownloadurlGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4388673263534944136L;
+	private static final long serialVersionUID = 7897761288953719593L;
 
 	/**
 	 * 内部使用，uiam角色扮演token
 	 */
 	@ApiField("assume_token")
 	private String assumeToken;
+
+	/**
+	 * 使用主key还是副key进行签名。
+	 */
+	@ApiField("auth_key")
+	private String authKey;
 
 	/**
 	 * 环境ID，唯一，开通小程序云系统会生成环境ID，请从开通页面获取
@@ -40,6 +46,13 @@ public class AlipayCloudCloudrunObjectstorageDownloadurlGetModel extends AlipayO
 	}
 	public void setAssumeToken(String assumeToken) {
 		this.assumeToken = assumeToken;
+	}
+
+	public String getAuthKey() {
+		return this.authKey;
+	}
+	public void setAuthKey(String authKey) {
+		this.authKey = authKey;
 	}
 
 	public String getEnv() {

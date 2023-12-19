@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序成员模型
  *
  * @author auto create
- * @since 1.0, 2022-11-28 13:56:15
+ * @since 1.0, 2023-12-14 15:46:21
  */
 public class AppMemberInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3151549355536163938L;
+	private static final long serialVersionUID = 1149416522474894812L;
 
 	/**
 	 * 邀请时间，格式为yyyy-MM-dd HH:mm:ss

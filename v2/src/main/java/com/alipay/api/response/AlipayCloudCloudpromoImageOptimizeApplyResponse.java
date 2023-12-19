@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudpromo.image.optimize.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-13 02:01:45
+ * @since 1.0, 2023-11-28 12:06:53
  */
 public class AlipayCloudCloudpromoImageOptimizeApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2685523423116162376L;
+	private static final long serialVersionUID = 4446146577927696126L;
 
 	/** 
 	 * 支付宝内部订单id，唯一

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ScenicAuditResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 5393887473612367581L;
+	private static final long serialVersionUID = 6252441757678912513L;
 
 	/**
 	 * 景区审核信息查询结果

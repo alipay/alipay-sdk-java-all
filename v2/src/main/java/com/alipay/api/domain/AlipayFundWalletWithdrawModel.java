@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户发起提现
  *
  * @author auto create
- * @since 1.0, 2023-11-06 15:48:23
+ * @since 1.0, 2023-12-13 19:24:15
  */
 public class AlipayFundWalletWithdrawModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4889522857877585352L;
+	private static final long serialVersionUID = 1445221855643417461L;
 
 	/**
 	 * 提现金额
@@ -24,6 +24,12 @@ public class AlipayFundWalletWithdrawModel extends AlipayObject {
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
+
+	/**
+	 * 定制化的提现策略
+	 */
+	@ApiField("extend_strategy")
+	private ExtendStrategy extendStrategy;
 
 	/**
 	 * 提现标题
@@ -67,6 +73,13 @@ public class AlipayFundWalletWithdrawModel extends AlipayObject {
 	}
 	public void setBizScene(String bizScene) {
 		this.bizScene = bizScene;
+	}
+
+	public ExtendStrategy getExtendStrategy() {
+		return this.extendStrategy;
+	}
+	public void setExtendStrategy(ExtendStrategy extendStrategy) {
+		this.extendStrategy = extendStrategy;
 	}
 
 	public String getOrderTitle() {

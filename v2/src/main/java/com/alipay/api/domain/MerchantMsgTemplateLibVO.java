@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MerchantMsgTemplateLibVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1578545871753352582L;
+	private static final long serialVersionUID = 3457939395377597298L;
 
 	/**
 	 * 消息母板code
@@ -50,7 +50,7 @@ public class MerchantMsgTemplateLibVO extends AlipayObject {
 	private String industryScenario;
 
 	/**
-	 * 关键词描述
+	 * 关键词列表，关键词之间用逗号隔开。申领消息模板时，选择需要的关键词传入
 	 */
 	@ApiField("keyword_desc")
 	private String keywordDesc;

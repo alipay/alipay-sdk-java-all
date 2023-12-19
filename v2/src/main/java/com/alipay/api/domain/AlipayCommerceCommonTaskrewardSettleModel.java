@@ -1,5 +1,7 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
@@ -7,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 淘客激励发放
  *
  * @author auto create
- * @since 1.0, 2023-11-03 15:31:50
+ * @since 1.0, 2023-11-30 19:03:01
  */
 public class AlipayCommerceCommonTaskrewardSettleModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6899658432296112377L;
+	private static final long serialVersionUID = 8598932885572475622L;
 
 	/**
 	 * 导购员的userId
@@ -48,6 +50,12 @@ public class AlipayCommerceCommonTaskrewardSettleModel extends AlipayObject {
 	 */
 	@ApiField("task_instance_id")
 	private String taskInstanceId;
+
+	/**
+	 * 货款分账模式下，标识对用户发放激励的时间
+	 */
+	@ApiField("unfreeze_time")
+	private Date unfreezeTime;
 
 	/**
 	 * 商户侧判定的有效交易金额
@@ -95,6 +103,13 @@ public class AlipayCommerceCommonTaskrewardSettleModel extends AlipayObject {
 	}
 	public void setTaskInstanceId(String taskInstanceId) {
 		this.taskInstanceId = taskInstanceId;
+	}
+
+	public Date getUnfreezeTime() {
+		return this.unfreezeTime;
+	}
+	public void setUnfreezeTime(Date unfreezeTime) {
+		this.unfreezeTime = unfreezeTime;
 	}
 
 	public String getValidTradeAmount() {

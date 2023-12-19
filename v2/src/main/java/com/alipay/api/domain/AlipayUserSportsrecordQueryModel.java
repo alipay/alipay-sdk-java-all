@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 运动记录查询
  *
  * @author auto create
- * @since 1.0, 2023-09-01 16:36:06
+ * @since 1.0, 2023-12-07 15:53:53
  */
 public class AlipayUserSportsrecordQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3445248453696885991L;
+	private static final long serialVersionUID = 7158436883247356739L;
 
 	/**
 	 * 蚂蚁开放ID

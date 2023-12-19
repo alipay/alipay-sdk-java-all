@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 卡周期信息
  *
  * @author auto create
- * @since 1.0, 2023-11-06 15:14:33
+ * @since 1.0, 2023-12-01 13:53:37
  */
 public class CardCycleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7423824988276143168L;
+	private static final long serialVersionUID = 7544696911227364774L;
 
 	/**
 	 * 周期计费类型
@@ -20,7 +20,13 @@ public class CardCycleInfo extends AlipayObject {
 	private String cycleChargeType;
 
 	/**
-	 * 周期类型，月或周
+	 * 周期类型为CycleTypeEnum.DAY时使用、代表几天为一个周期
+	 */
+	@ApiField("cycle_range")
+	private Long cycleRange;
+
+	/**
+	 * 周期类型，日、月或周
 	 */
 	@ApiField("cycle_type")
 	private String cycleType;
@@ -36,6 +42,13 @@ public class CardCycleInfo extends AlipayObject {
 	}
 	public void setCycleChargeType(String cycleChargeType) {
 		this.cycleChargeType = cycleChargeType;
+	}
+
+	public Long getCycleRange() {
+		return this.cycleRange;
+	}
+	public void setCycleRange(Long cycleRange) {
+		this.cycleRange = cycleRange;
 	}
 
 	public String getCycleType() {

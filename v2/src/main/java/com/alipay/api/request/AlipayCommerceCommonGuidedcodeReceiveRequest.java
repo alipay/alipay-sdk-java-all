@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.common.guidedcode.receive request
  * 
  * @author auto create
- * @since 1.0, 2023-09-15 11:11:43
+ * @since 1.0, 2023-12-04 20:01:54
  */
 public class AlipayCommerceCommonGuidedcodeReceiveRequest implements AlipayRequest<AlipayCommerceCommonGuidedcodeReceiveResponse> {
 

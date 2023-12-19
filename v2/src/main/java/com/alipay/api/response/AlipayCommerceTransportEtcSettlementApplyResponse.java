@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.etc.settlement.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-09 16:06:50
+ * @since 1.0, 2023-12-13 17:08:39
  */
 public class AlipayCommerceTransportEtcSettlementApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1889831931298743266L;
+	private static final long serialVersionUID = 8329197634561193826L;
 
 	/** 
 	 * 行程描述：行程号xxx

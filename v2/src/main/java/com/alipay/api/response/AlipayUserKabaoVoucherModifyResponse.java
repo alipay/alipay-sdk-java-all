@@ -8,11 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.kabao.voucher.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-23 16:01:53
+ * @since 1.0, 2023-11-30 19:21:55
  */
 public class AlipayUserKabaoVoucherModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4275874991456767732L;
+	private static final long serialVersionUID = 1447299466923842394L;
+
+	/** 
+	 * 补充业务错误信息
+	 */
+	@ApiField("error_msg")
+	private String errorMsg;
 
 	/** 
 	 * 卡包优惠券实例id
@@ -25,6 +31,13 @@ public class AlipayUserKabaoVoucherModifyResponse extends AlipayResponse {
 	 */
 	@ApiField("out_instance_id")
 	private String outInstanceId;
+
+	public void setErrorMsg(String errorMsg) {
+		this.errorMsg = errorMsg;
+	}
+	public String getErrorMsg( ) {
+		return this.errorMsg;
+	}
 
 	public void setInstanceId(String instanceId) {
 		this.instanceId = instanceId;

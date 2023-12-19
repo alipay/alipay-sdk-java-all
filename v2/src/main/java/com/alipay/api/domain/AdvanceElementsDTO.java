@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 请款相关要素
  *
  * @author auto create
- * @since 1.0, 2022-05-19 16:39:56
+ * @since 1.0, 2023-11-28 14:42:40
  */
 public class AdvanceElementsDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1724866688358977894L;
+	private static final long serialVersionUID = 1627459233965283517L;
 
 	/**
 	 * 请款绑定支付宝内部账号

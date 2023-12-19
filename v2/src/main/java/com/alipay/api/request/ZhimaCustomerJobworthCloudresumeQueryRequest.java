@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.customer.jobworth.cloudresume.query request
  * 
  * @author auto create
- * @since 1.0, 2023-11-15 10:06:50
+ * @since 1.0, 2023-11-27 11:28:05
  */
 public class ZhimaCustomerJobworthCloudresumeQueryRequest implements AlipayRequest<ZhimaCustomerJobworthCloudresumeQueryResponse> {
 

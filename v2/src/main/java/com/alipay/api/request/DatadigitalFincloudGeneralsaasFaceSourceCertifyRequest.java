@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: datadigital.fincloud.generalsaas.face.source.certify request
  * 
  * @author auto create
- * @since 1.0, 2023-10-31 16:56:48
+ * @since 1.0, 2023-12-14 09:51:55
  */
 public class DatadigitalFincloudGeneralsaasFaceSourceCertifyRequest implements AlipayUploadRequest<DatadigitalFincloudGeneralsaasFaceSourceCertifyResponse> {
 
@@ -47,6 +47,11 @@ CHECK：正常活体检测。
 不传默认CHECK。
 	 */
 	private String livenessStrategy;
+
+	/** 
+	* 国家地区代码，当证件类型为外国人永久居留证时必填。
+	 */
+	private String nation;
 
 	/** 
 	* 客户业务单据号
@@ -101,6 +106,13 @@ CHECK：正常活体检测。
 	}
 	public String getLivenessStrategy() {
 		return this.livenessStrategy;
+	}
+
+	public void setNation(String nation) {
+		this.nation = nation;
+	}
+	public String getNation() {
+		return this.nation;
 	}
 
 	public void setOuterBizNo(String outerBizNo) {
@@ -195,6 +207,7 @@ CHECK：正常活体检测。
 		txtParams.put("cert_no", this.certNo);
 		txtParams.put("cert_type", this.certType);
 		txtParams.put("liveness_strategy", this.livenessStrategy);
+		txtParams.put("nation", this.nation);
 		txtParams.put("outer_biz_no", this.outerBizNo);
 		txtParams.put("phone", this.phone);
 		txtParams.put("reserved", this.reserved);

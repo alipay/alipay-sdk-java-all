@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易组件业务单创建
  *
  * @author auto create
- * @since 1.0, 2023-11-16 11:35:59
+ * @since 1.0, 2023-12-15 22:36:49
  */
 public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4714666637558144643L;
+	private static final long serialVersionUID = 8179949279912515471L;
 
 	/**
 	 * 订单收货地址
@@ -102,6 +102,12 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 	 */
 	@ApiField("seller_id")
 	private String sellerId;
+
+	/**
+	 * 门店信息
+	 */
+	@ApiField("shop_info")
+	private ShopInfoDTO shopInfo;
 
 	/**
 	 * 追踪ID,公域分发场景必传,会影响主播归因、分享员归因等；通过调用  my.checkBeforeAddOrder 接口返回
@@ -226,6 +232,13 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 	}
 	public void setSellerId(String sellerId) {
 		this.sellerId = sellerId;
+	}
+
+	public ShopInfoDTO getShopInfo() {
+		return this.shopInfo;
+	}
+	public void setShopInfo(ShopInfoDTO shopInfo) {
+		this.shopInfo = shopInfo;
 	}
 
 	public String getSourceId() {

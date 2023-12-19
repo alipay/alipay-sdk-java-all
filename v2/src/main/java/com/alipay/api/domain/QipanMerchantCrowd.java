@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
 -注意：商家会员专用，禁止滥用，因模型升级造成的兼容性问题，后果自负
  *
  * @author auto create
- * @since 1.0, 2023-06-10 21:54:40
+ * @since 1.0, 2023-11-24 11:25:19
  */
 public class QipanMerchantCrowd extends AlipayObject {
 
-	private static final long serialVersionUID = 2397595551943449318L;
+	private static final long serialVersionUID = 8489993361917665765L;
 
 	/**
 	 * 安全应用范围，参考文档 <a href="https://opendocs.alipay.com/pre-open/04phhq" target="_blank">安全应用范围枚举</a>
@@ -56,12 +56,11 @@ public class QipanMerchantCrowd extends AlipayObject {
 	private String externalCrowdCode;
 
 	/**
-	 * 人群是否可见,取值如下：
-<li>0-人群可见，默认为0</li>
-<li>1-人群不可见</li>
+	 * true -人群在棋盘站点隐藏
+false - 人群在棋盘站点显示透出
 	 */
 	@ApiField("hidden")
-	private String hidden;
+	private Boolean hidden;
 
 	/**
 	 * true - 人群支持标签二次加工
@@ -118,10 +117,10 @@ false - 人群不支持标签二次加工
 		this.externalCrowdCode = externalCrowdCode;
 	}
 
-	public String getHidden() {
+	public Boolean getHidden() {
 		return this.hidden;
 	}
-	public void setHidden(String hidden) {
+	public void setHidden(Boolean hidden) {
 		this.hidden = hidden;
 	}
 

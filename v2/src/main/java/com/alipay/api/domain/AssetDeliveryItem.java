@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 配送指令增加正向业务场景
  *
  * @author auto create
- * @since 1.0, 2023-04-17 16:50:00
+ * @since 1.0, 2023-12-11 11:52:17
  */
 public class AssetDeliveryItem extends AlipayObject {
 
-	private static final long serialVersionUID = 5478553866822169943L;
+	private static final long serialVersionUID = 7361614543464452968L;
 
 	/**
 	 * SEND - 发货指令(执行向目的地进行发货动作) , RECEIVE - 收货指令(执行从来源地进行收货动作)
@@ -75,6 +78,25 @@ yyyy-MM-dd HH：mm:ss
 	private String bizType;
 
 	/**
+	 * 合单批次号
+	 */
+	@ApiField("combination_batch_no")
+	private String combinationBatchNo;
+
+	/**
+	 * 合单单据数量
+	 */
+	@ApiField("combination_count")
+	private Long combinationCount;
+
+	/**
+	 * 合单单据列表
+	 */
+	@ApiListField("combination_orders")
+	@ApiField("string")
+	private List<String> combinationOrders;
+
+	/**
 	 * 提供给物流商清关所用信息
 	 */
 	@ApiField("custom_clearance")
@@ -123,6 +145,12 @@ yyyy-MM-dd HH：mm:ss
 	private String deliverySupplierName;
 
 	/**
+	 * 配送类型
+	 */
+	@ApiField("delivery_type")
+	private String deliveryType;
+
+	/**
 	 * 扩展信息
 	 */
 	@ApiField("ext_info")
@@ -139,6 +167,13 @@ yyyy-MM-dd HH：mm:ss
 	 */
 	@ApiField("gmt_assign")
 	private String gmtAssign;
+
+	/**
+	 * Y 需要合单
+N 不需要合单
+	 */
+	@ApiField("is_combination_order")
+	private String isCombinationOrder;
 
 	/**
 	 * 物料id
@@ -202,7 +237,7 @@ yyyy-MM-dd HH：mm:ss
 	private String printData;
 
 	/**
-	 * 指令排产优先级
+	 * 指令排产优先级，100 正常优先级  200 高优先级
 	 */
 	@ApiField("priority")
 	private String priority;
@@ -313,6 +348,27 @@ yyyy-MM-dd HH：mm:ss
 		this.bizType = bizType;
 	}
 
+	public String getCombinationBatchNo() {
+		return this.combinationBatchNo;
+	}
+	public void setCombinationBatchNo(String combinationBatchNo) {
+		this.combinationBatchNo = combinationBatchNo;
+	}
+
+	public Long getCombinationCount() {
+		return this.combinationCount;
+	}
+	public void setCombinationCount(Long combinationCount) {
+		this.combinationCount = combinationCount;
+	}
+
+	public List<String> getCombinationOrders() {
+		return this.combinationOrders;
+	}
+	public void setCombinationOrders(List<String> combinationOrders) {
+		this.combinationOrders = combinationOrders;
+	}
+
 	public CCInfo getCustomClearance() {
 		return this.customClearance;
 	}
@@ -369,6 +425,13 @@ yyyy-MM-dd HH：mm:ss
 		this.deliverySupplierName = deliverySupplierName;
 	}
 
+	public String getDeliveryType() {
+		return this.deliveryType;
+	}
+	public void setDeliveryType(String deliveryType) {
+		this.deliveryType = deliveryType;
+	}
+
 	public String getExtInfo() {
 		return this.extInfo;
 	}
@@ -388,6 +451,13 @@ yyyy-MM-dd HH：mm:ss
 	}
 	public void setGmtAssign(String gmtAssign) {
 		this.gmtAssign = gmtAssign;
+	}
+
+	public String getIsCombinationOrder() {
+		return this.isCombinationOrder;
+	}
+	public void setIsCombinationOrder(String isCombinationOrder) {
+		this.isCombinationOrder = isCombinationOrder;
 	}
 
 	public String getItemId() {

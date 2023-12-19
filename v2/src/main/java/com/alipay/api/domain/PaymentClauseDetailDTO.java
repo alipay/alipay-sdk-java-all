@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付条款明细模型
  *
  * @author auto create
- * @since 1.0, 2022-05-06 16:15:13
+ * @since 1.0, 2023-11-28 14:41:26
  */
 public class PaymentClauseDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7557516627842491155L;
+	private static final long serialVersionUID = 8394133456684976894L;
 
 	/**
 	 * 支付条目金额，单位元，人民币

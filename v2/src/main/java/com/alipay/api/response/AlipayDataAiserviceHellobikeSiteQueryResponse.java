@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataAiserviceHellobikeSiteQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1857282956228813721L;
+	private static final long serialVersionUID = 8361541758443361697L;
 
 	/** 
 	 * 结果

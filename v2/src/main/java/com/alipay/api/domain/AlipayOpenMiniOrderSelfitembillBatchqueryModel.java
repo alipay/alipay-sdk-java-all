@@ -1,7 +1,5 @@
 package com.alipay.api.domain;
 
-import java.util.Date;
-
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
@@ -9,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询小程序本地商品订单对账列表信息
  *
  * @author auto create
- * @since 1.0, 2023-11-02 14:21:35
+ * @since 1.0, 2023-11-29 10:19:52
  */
 public class AlipayOpenMiniOrderSelfitembillBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5392566782969387813L;
+	private static final long serialVersionUID = 7884928285682983541L;
 
 	/**
 	 * 凭证号，商家可入参具体凭证号查询单个凭证的明细
@@ -62,7 +60,7 @@ public class AlipayOpenMiniOrderSelfitembillBatchqueryModel extends AlipayObject
 	 * 小程序订单结算日期，格式为"yyyy-MM-dd"，如"2023-03-22"
 	 */
 	@ApiField("settlement_date")
-	private Date settlementDate;
+	private String settlementDate;
 
 	/**
 	 * 当前凭证核销门店的ID
@@ -74,7 +72,7 @@ public class AlipayOpenMiniOrderSelfitembillBatchqueryModel extends AlipayObject
 	 * 小程序订单核销日期，格式为"yyyy-MM-dd"，如"2023-03-22"
 	 */
 	@ApiField("verify_date")
-	private Date verifyDate;
+	private String verifyDate;
 
 	public String getCertificateId() {
 		return this.certificateId;
@@ -125,10 +123,10 @@ public class AlipayOpenMiniOrderSelfitembillBatchqueryModel extends AlipayObject
 		this.settleStatus = settleStatus;
 	}
 
-	public Date getSettlementDate() {
+	public String getSettlementDate() {
 		return this.settlementDate;
 	}
-	public void setSettlementDate(Date settlementDate) {
+	public void setSettlementDate(String settlementDate) {
 		this.settlementDate = settlementDate;
 	}
 
@@ -139,10 +137,10 @@ public class AlipayOpenMiniOrderSelfitembillBatchqueryModel extends AlipayObject
 		this.verificationShopId = verificationShopId;
 	}
 
-	public Date getVerifyDate() {
+	public String getVerifyDate() {
 		return this.verifyDate;
 	}
-	public void setVerifyDate(Date verifyDate) {
+	public void setVerifyDate(String verifyDate) {
 		this.verifyDate = verifyDate;
 	}
 

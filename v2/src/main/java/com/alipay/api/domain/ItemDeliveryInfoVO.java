@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 履约信息
  *
  * @author auto create
- * @since 1.0, 2023-06-25 16:42:18
+ * @since 1.0, 2023-12-10 00:37:16
  */
 public class ItemDeliveryInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2514283983296969658L;
+	private static final long serialVersionUID = 3786833353851344529L;
 
 	/**
 	 * 履约配置信息，通过alipay.open.app.delivery.template.query获取属性key列表，is_required=true时属性必填

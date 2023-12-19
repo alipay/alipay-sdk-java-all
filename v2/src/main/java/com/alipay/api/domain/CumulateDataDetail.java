@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 回传明细数据
  *
  * @author auto create
- * @since 1.0, 2021-02-01 10:50:43
+ * @since 1.0, 2023-11-29 15:15:24
  */
 public class CumulateDataDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1167343914829483667L;
+	private static final long serialVersionUID = 4547212458569817251L;
 
 	/**
 	 * 数据回传的动作类型，正向或逆向。

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品SPU对象
  *
  * @author auto create
- * @since 1.0, 2023-03-29 21:32:58
+ * @since 1.0, 2023-12-10 00:32:58
  */
 public class ItemSpuVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2514477195872487244L;
+	private static final long serialVersionUID = 6382661356883417496L;
 
 	/**
 	 * 平台类目，填写的类目必须在类目表列出，多级类目只填最后一级。商品类目 ID 及信息可通过商品类目表获取。

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.water.task.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-28 14:41:43
+ * @since 1.0, 2023-12-18 10:11:56
  */
 public class AlipayCommerceWaterTaskQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1862726592924292363L;
+	private static final long serialVersionUID = 7311511923895616381L;
 
 	/** 
 	 * 创建人
@@ -64,6 +64,12 @@ public class AlipayCommerceWaterTaskQueryResponse extends AlipayResponse {
 	private String taskEnd;
 
 	/** 
+	 * 任务条件类型
+	 */
+	@ApiField("task_free")
+	private String taskFree;
+
+	/** 
 	 * 任务id
 	 */
 	@ApiField("task_id")
@@ -98,6 +104,12 @@ public class AlipayCommerceWaterTaskQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("task_title")
 	private String taskTitle;
+
+	/** 
+	 * 任务类型
+	 */
+	@ApiField("task_type")
+	private String taskType;
 
 	public void setCreator(String creator) {
 		this.creator = creator;
@@ -155,6 +167,13 @@ public class AlipayCommerceWaterTaskQueryResponse extends AlipayResponse {
 		return this.taskEnd;
 	}
 
+	public void setTaskFree(String taskFree) {
+		this.taskFree = taskFree;
+	}
+	public String getTaskFree( ) {
+		return this.taskFree;
+	}
+
 	public void setTaskId(String taskId) {
 		this.taskId = taskId;
 	}
@@ -195,6 +214,13 @@ public class AlipayCommerceWaterTaskQueryResponse extends AlipayResponse {
 	}
 	public String getTaskTitle( ) {
 		return this.taskTitle;
+	}
+
+	public void setTaskType(String taskType) {
+		this.taskType = taskType;
+	}
+	public String getTaskType( ) {
+		return this.taskType;
 	}
 
 }

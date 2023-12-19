@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 淘客税筹签约链接生成
  *
  * @author auto create
- * @since 1.0, 2023-09-12 11:27:55
+ * @since 1.0, 2023-12-04 19:57:30
  */
 public class AlipayCommerceCommonUsertaxbillsignCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2417691261269692468L;
+	private static final long serialVersionUID = 6898255786823328413L;
 
 	/**
 	 * 淘客签约完成后的回跳地址

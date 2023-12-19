@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AnttechBlockchainDefinDataserviceWeatherinfosQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7618912681941721926L;
+	private static final long serialVersionUID = 8119523391727751582L;
 
 	/** 
 	 * 气象信息

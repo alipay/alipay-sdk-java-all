@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝出行行业-行业代理接口
  *
  * @author auto create
- * @since 1.0, 2023-10-09 09:43:02
+ * @since 1.0, 2023-12-06 12:03:49
  */
 public class AlipayCommerceTransportIndustryProxyUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5199187113187192791L;
+	private static final long serialVersionUID = 4464112822743951165L;
 
 	/**
 	 * 描述当前行业代理请求的请求事件

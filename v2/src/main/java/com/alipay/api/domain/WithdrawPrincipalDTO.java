@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 提现资产主体模型
  *
  * @author auto create
- * @since 1.0, 2022-01-05 10:55:29
+ * @since 1.0, 2023-11-28 14:41:13
  */
 public class WithdrawPrincipalDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8269237626428961538L;
+	private static final long serialVersionUID = 7742176275654945142L;
 
 	/**
 	 * 可变ID

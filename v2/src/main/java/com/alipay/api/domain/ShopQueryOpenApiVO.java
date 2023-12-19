@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 门店分页查询详情
  *
  * @author auto create
- * @since 1.0, 2022-09-29 23:40:35
+ * @since 1.0, 2023-12-10 22:57:24
  */
 public class ShopQueryOpenApiVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4481646147816311198L;
+	private static final long serialVersionUID = 7544643932729938321L;
 
 	/**
 	 * 经营地址

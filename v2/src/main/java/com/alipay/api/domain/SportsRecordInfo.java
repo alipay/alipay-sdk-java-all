@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 运动记录信息
  *
  * @author auto create
- * @since 1.0, 2023-09-01 11:18:49
+ * @since 1.0, 2023-12-07 19:32:41
  */
 public class SportsRecordInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4388772815673683713L;
+	private static final long serialVersionUID = 4655254285453528456L;
 
 	/**
 	 * 消耗卡路里，实际为 decimal类型，有小数
@@ -38,6 +38,18 @@ public class SportsRecordInfo extends AlipayObject {
 	 */
 	@ApiField("finish_time")
 	private Date finishTime;
+
+	/**
+	 * 最高海拔，单位米
+	 */
+	@ApiField("max_altitude")
+	private String maxAltitude;
+
+	/**
+	 * 最低海拔，单位米
+	 */
+	@ApiField("min_altitude")
+	private String minAltitude;
 
 	/**
 	 * 运动流水的发生日期
@@ -75,6 +87,24 @@ public class SportsRecordInfo extends AlipayObject {
 	@ApiField("start_time")
 	private Date startTime;
 
+	/**
+	 * 步数
+	 */
+	@ApiField("step_count")
+	private String stepCount;
+
+	/**
+	 * 步频，一分钟多少步
+	 */
+	@ApiField("step_frequency")
+	private String stepFrequency;
+
+	/**
+	 * 步幅，一步多少米
+	 */
+	@ApiField("step_stride")
+	private String stepStride;
+
 	public String getCalorie() {
 		return this.calorie;
 	}
@@ -101,6 +131,20 @@ public class SportsRecordInfo extends AlipayObject {
 	}
 	public void setFinishTime(Date finishTime) {
 		this.finishTime = finishTime;
+	}
+
+	public String getMaxAltitude() {
+		return this.maxAltitude;
+	}
+	public void setMaxAltitude(String maxAltitude) {
+		this.maxAltitude = maxAltitude;
+	}
+
+	public String getMinAltitude() {
+		return this.minAltitude;
+	}
+	public void setMinAltitude(String minAltitude) {
+		this.minAltitude = minAltitude;
 	}
 
 	public Date getRecordDate() {
@@ -143,6 +187,27 @@ public class SportsRecordInfo extends AlipayObject {
 	}
 	public void setStartTime(Date startTime) {
 		this.startTime = startTime;
+	}
+
+	public String getStepCount() {
+		return this.stepCount;
+	}
+	public void setStepCount(String stepCount) {
+		this.stepCount = stepCount;
+	}
+
+	public String getStepFrequency() {
+		return this.stepFrequency;
+	}
+	public void setStepFrequency(String stepFrequency) {
+		this.stepFrequency = stepFrequency;
+	}
+
+	public String getStepStride() {
+		return this.stepStride;
+	}
+	public void setStepStride(String stepStride) {
+		this.stepStride = stepStride;
 	}
 
 }

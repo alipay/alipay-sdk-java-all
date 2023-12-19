@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改卡包优惠券信息
  *
  * @author auto create
- * @since 1.0, 2023-11-23 15:59:25
+ * @since 1.0, 2023-11-30 19:18:16
  */
 public class AlipayUserKabaoVoucherModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6478569953869119824L;
+	private static final long serialVersionUID = 6873981689475833933L;
 
 	/**
 	 * 兑换券价值信息

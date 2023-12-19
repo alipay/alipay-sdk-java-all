@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.flexiblestaffing.insure.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-11-23 21:16:51
+ * @since 1.0, 2023-11-24 13:47:06
  */
 public class AlipayFundFlexiblestaffingInsureApplyRequest implements AlipayRequest<AlipayFundFlexiblestaffingInsureApplyResponse> {
 

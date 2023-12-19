@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物流信息模型
  *
  * @author auto create
- * @since 1.0, 2023-06-29 13:35:45
+ * @since 1.0, 2023-12-10 23:52:16
  */
 public class LogisticsInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4659162412393341338L;
+	private static final long serialVersionUID = 4627619464646892796L;
 
 	/**
 	 * 配送时间,格式为 yyyy-MM-dd HH:mm:ss

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序云营销图片优化
  *
  * @author auto create
- * @since 1.0, 2023-10-13 02:00:07
+ * @since 1.0, 2023-11-28 12:04:21
  */
 public class AlipayCloudCloudpromoImageOptimizeApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7178336441635942573L;
+	private static final long serialVersionUID = 8293949434247786122L;
 
 	/**
 	 * 背景图片地址
@@ -48,7 +48,8 @@ public class AlipayCloudCloudpromoImageOptimizeApplyModel extends AlipayObject {
 	private String outBizId;
 
 	/**
-	 * 模板ID，针对于特殊商户的优化方案，非必传
+	 * 模板ID用于指定优化方案（非必传）
+人像漫改可用模板id：portrait_STYLE_makotoshinkai-single（新海诚）、portrait_STYLE_coloredPencil-single（彩铅）、portrait_STYLE_miyazakihayao-single（宫崎骏）、portrait_STYLE_cyberpunk（赛博朋克）
 	 */
 	@ApiField("template_id")
 	private String templateId;

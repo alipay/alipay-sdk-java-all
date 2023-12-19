@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.risk.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-06 18:17:10
+ * @since 1.0, 2023-11-30 15:46:53
  */
 public class ZhimaCreditEpRiskDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2462587544742465626L;
+	private static final long serialVersionUID = 3284666388948248223L;
 
 	/** 
 	 * 风险列表

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 淘客任务模板上传
  *
  * @author auto create
- * @since 1.0, 2023-09-15 10:53:50
+ * @since 1.0, 2023-11-30 18:52:48
  */
 public class AlipayCommerceCommonTasktemplateCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3776814287175318988L;
+	private static final long serialVersionUID = 2258491727674135943L;
 
 	/**
 	 * 小程序跳转链接
@@ -82,10 +82,34 @@ public class AlipayCommerceCommonTasktemplateCreateormodifyModel extends AlipayO
 	private String preContent;
 
 	/**
+	 * 任务公域投放展示名称
+	 */
+	@ApiField("show_name")
+	private String showName;
+
+	/**
+	 * 公域任务展示图片，需要商户预先调用alipay.open.file.upload接口获得图片fileId
+	 */
+	@ApiField("show_picture")
+	private String showPicture;
+
+	/**
+	 * 表明此任务是否在公域展示，若此值为true，则需要填入对应的公域展示字段内容
+	 */
+	@ApiField("show_public")
+	private Boolean showPublic;
+
+	/**
 	 * 任务模板描述
 	 */
 	@ApiField("task_desc")
 	private String taskDesc;
+
+	/**
+	 * 公域投放任务跳转商家小程序链接
+	 */
+	@ApiField("task_detail_url")
+	private String taskDetailUrl;
 
 	/**
 	 * 任务结束时间
@@ -189,11 +213,39 @@ public class AlipayCommerceCommonTasktemplateCreateormodifyModel extends AlipayO
 		this.preContent = preContent;
 	}
 
+	public String getShowName() {
+		return this.showName;
+	}
+	public void setShowName(String showName) {
+		this.showName = showName;
+	}
+
+	public String getShowPicture() {
+		return this.showPicture;
+	}
+	public void setShowPicture(String showPicture) {
+		this.showPicture = showPicture;
+	}
+
+	public Boolean getShowPublic() {
+		return this.showPublic;
+	}
+	public void setShowPublic(Boolean showPublic) {
+		this.showPublic = showPublic;
+	}
+
 	public String getTaskDesc() {
 		return this.taskDesc;
 	}
 	public void setTaskDesc(String taskDesc) {
 		this.taskDesc = taskDesc;
+	}
+
+	public String getTaskDetailUrl() {
+		return this.taskDetailUrl;
+	}
+	public void setTaskDetailUrl(String taskDetailUrl) {
+		this.taskDetailUrl = taskDetailUrl;
 	}
 
 	public Date getTaskEndTime() {

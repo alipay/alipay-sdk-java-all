@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 因公账单详情
  *
  * @author auto create
- * @since 1.0, 2023-04-23 11:35:32
+ * @since 1.0, 2023-12-04 17:25:26
  */
 public class JointAccountBillDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1228222214958733477L;
+	private static final long serialVersionUID = 1476429654834652479L;
 
 	/**
 	 * 消费金额，单位：元
@@ -36,6 +36,12 @@ public class JointAccountBillDetail extends AlipayObject {
 	 */
 	@ApiField("biz_no")
 	private String bizNo;
+
+	/**
+	 * 外部单号
+	 */
+	@ApiField("biz_out_no")
+	private String bizOutNo;
 
 	/**
 	 * 企业ID
@@ -93,6 +99,13 @@ public class JointAccountBillDetail extends AlipayObject {
 	}
 	public void setBizNo(String bizNo) {
 		this.bizNo = bizNo;
+	}
+
+	public String getBizOutNo() {
+		return this.bizOutNo;
+	}
+	public void setBizOutNo(String bizOutNo) {
+		this.bizOutNo = bizOutNo;
 	}
 
 	public String getEnterpriseId() {

@@ -9,17 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 巡游热力图查询接口
  *
  * @author auto create
- * @since 1.0, 2023-07-24 16:04:07
+ * @since 1.0, 2023-12-12 11:05:50
  */
 public class AlipayCommerceTransportTaxiHeatmapQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2745541446793979461L;
+	private static final long serialVersionUID = 1672814131767426187L;
 
 	/**
 	 * 城市代码
 	 */
 	@ApiField("city_code")
 	private String cityCode;
+
+	/**
+	 * 企业ID
+	 */
+	@ApiField("corp_id")
+	private String corpId;
 
 	/**
 	 * 唯一标识一次请求，由调用方自行确保唯一性
@@ -38,6 +44,13 @@ public class AlipayCommerceTransportTaxiHeatmapQueryModel extends AlipayObject {
 	}
 	public void setCityCode(String cityCode) {
 		this.cityCode = cityCode;
+	}
+
+	public String getCorpId() {
+		return this.corpId;
+	}
+	public void setCorpId(String corpId) {
+		this.corpId = corpId;
 	}
 
 	public String getRequestId() {

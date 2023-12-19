@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品场景问题描述
  *
  * @author auto create
- * @since 1.0, 2023-08-17 15:57:15
+ * @since 1.0, 2023-12-10 00:28:16
  */
 public class ItemSceneRiskInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3184884464782349322L;
+	private static final long serialVersionUID = 2332752428274689237L;
 
 	/**
 	 * 具体问题描述

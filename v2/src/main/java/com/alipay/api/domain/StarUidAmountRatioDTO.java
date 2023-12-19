@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 淘客任务明星用户集合
  *
  * @author auto create
- * @since 1.0, 2023-09-15 10:53:50
+ * @since 1.0, 2023-12-12 16:12:07
  */
 public class StarUidAmountRatioDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4867762871584392644L;
+	private static final long serialVersionUID = 6839783571785667371L;
 
 	/**
-	 * 分佣比率
+	 * 分佣比率，格式:xx%
 	 */
 	@ApiField("ratio")
 	private String ratio;

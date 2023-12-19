@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * cspordext通用同步接口
  *
  * @author auto create
- * @since 1.0, 2022-06-30 11:25:35
+ * @since 1.0, 2023-12-07 13:29:24
  */
 public class AlipayEcoCityserviceExtSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2361137813981748488L;
+	private static final long serialVersionUID = 8864317539788767476L;
 
 	/**
 	 * 同步数据

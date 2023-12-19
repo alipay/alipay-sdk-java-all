@@ -1,6 +1,5 @@
 package com.alipay.api.domain;
 
-import java.util.Date;
 import java.util.List;
 
 import com.alipay.api.AlipayObject;
@@ -11,17 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询小程序订单对账列表信息
  *
  * @author auto create
- * @since 1.0, 2023-11-02 14:22:10
+ * @since 1.0, 2023-11-29 00:53:49
  */
 public class AlipayOpenMiniOrderItembillBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5865812648178366448L;
+	private static final long serialVersionUID = 6535531554836328263L;
 
 	/**
 	 * 订单创建日期，格式为yyyy-MM-dd
 	 */
 	@ApiField("create_time")
-	private Date createTime;
+	private String createTime;
 
 	/**
 	 * 小程序应用ID
@@ -64,7 +63,7 @@ public class AlipayOpenMiniOrderItembillBatchqueryModel extends AlipayObject {
 	 * 订单结算日期，格式为yyyy-MM-dd
 	 */
 	@ApiField("settlement_date")
-	private Date settlementDate;
+	private String settlementDate;
 
 	/**
 	 * 支付宝交易号
@@ -72,10 +71,10 @@ public class AlipayOpenMiniOrderItembillBatchqueryModel extends AlipayObject {
 	@ApiField("trade_no")
 	private String tradeNo;
 
-	public Date getCreateTime() {
+	public String getCreateTime() {
 		return this.createTime;
 	}
-	public void setCreateTime(Date createTime) {
+	public void setCreateTime(String createTime) {
 		this.createTime = createTime;
 	}
 
@@ -121,10 +120,10 @@ public class AlipayOpenMiniOrderItembillBatchqueryModel extends AlipayObject {
 		this.settleStatus = settleStatus;
 	}
 
-	public Date getSettlementDate() {
+	public String getSettlementDate() {
 		return this.settlementDate;
 	}
-	public void setSettlementDate(Date settlementDate) {
+	public void setSettlementDate(String settlementDate) {
 		this.settlementDate = settlementDate;
 	}
 

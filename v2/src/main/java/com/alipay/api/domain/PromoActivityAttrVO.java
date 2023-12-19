@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 营销活动属性
  *
  * @author auto create
- * @since 1.0, 2023-09-08 15:07:13
+ * @since 1.0, 2023-12-10 17:46:40
  */
 public class PromoActivityAttrVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5611918188563159233L;
+	private static final long serialVersionUID = 6276882311867592389L;
 
 	/**
 	 * 属性的 key

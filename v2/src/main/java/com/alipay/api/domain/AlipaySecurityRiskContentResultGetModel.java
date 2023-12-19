@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 内容风险识别结果查询接口服务
  *
  * @author auto create
- * @since 1.0, 2022-05-24 14:32:18
+ * @since 1.0, 2023-11-29 19:23:07
  */
 public class AlipaySecurityRiskContentResultGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6546766942297467776L;
+	private static final long serialVersionUID = 5645769652844497742L;
 
 	/**
 	 * 应用场景

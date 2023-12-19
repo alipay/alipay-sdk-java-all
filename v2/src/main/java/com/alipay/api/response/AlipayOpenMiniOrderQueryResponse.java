@@ -2,10 +2,12 @@ package com.alipay.api.response;
 
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.domain.AddressInfoVO;
+import com.alipay.api.domain.BookingInfoDTO;
 import com.alipay.api.domain.ContactInfoVO;
 import com.alipay.api.domain.DeliveryDetailInfoVO;
 import com.alipay.api.domain.OrderDetailInfoVO;
 import com.alipay.api.domain.RefundInfoVO;
+import com.alipay.api.domain.ShopInfoDTO;
 
 import com.alipay.api.AlipayResponse;
 
@@ -13,17 +15,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-07 15:26:50
+ * @since 1.0, 2023-12-05 14:01:54
  */
 public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6247678516272841883L;
+	private static final long serialVersionUID = 8474344343945638943L;
 
 	/** 
 	 * 收货地址
 	 */
 	@ApiField("address_info")
 	private AddressInfoVO addressInfo;
+
+	/** 
+	 * 酒店预订信息
+	 */
+	@ApiField("booking_info")
+	private BookingInfoDTO bookingInfo;
 
 	/** 
 	 * 买家联系人信息，本地生活商品使用
@@ -98,13 +106,19 @@ public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 	private String settleType;
 
 	/** 
+	 * 门店信息
+	 */
+	@ApiField("shop_info")
+	private ShopInfoDTO shopInfo;
+
+	/** 
 	 * 订单状态
 	 */
 	@ApiField("status")
 	private String status;
 
 	/** 
-	 * 支付单号
+	 * 支付单号，支付成功后会该字段会有值
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;
@@ -120,6 +134,13 @@ public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 	}
 	public AddressInfoVO getAddressInfo( ) {
 		return this.addressInfo;
+	}
+
+	public void setBookingInfo(BookingInfoDTO bookingInfo) {
+		this.bookingInfo = bookingInfo;
+	}
+	public BookingInfoDTO getBookingInfo( ) {
+		return this.bookingInfo;
 	}
 
 	public void setContactInfo(ContactInfoVO contactInfo) {
@@ -204,6 +225,13 @@ public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 	}
 	public String getSettleType( ) {
 		return this.settleType;
+	}
+
+	public void setShopInfo(ShopInfoDTO shopInfo) {
+		this.shopInfo = shopInfo;
+	}
+	public ShopInfoDTO getShopInfo( ) {
+		return this.shopInfo;
 	}
 
 	public void setStatus(String status) {

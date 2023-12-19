@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 淘客完成的激励记录查询
  *
  * @author auto create
- * @since 1.0, 2023-09-22 14:11:03
+ * @since 1.0, 2023-12-09 10:18:51
  */
 public class AlipayCommerceCommonTaokerewardQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4291863794357917217L;
+	private static final long serialVersionUID = 2514967257855578862L;
 
 	/**
 	 * 淘客的支付宝账号

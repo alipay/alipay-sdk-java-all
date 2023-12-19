@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建任务
  *
  * @author auto create
- * @since 1.0, 2023-09-20 16:43:15
+ * @since 1.0, 2023-12-12 14:37:53
  */
 public class AlipayCommerceWaterTaskCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7141162688754587443L;
+	private static final long serialVersionUID = 5755133351467528546L;
 
 	/**
 	 * 创建人id
@@ -64,6 +64,12 @@ public class AlipayCommerceWaterTaskCreateModel extends AlipayObject {
 	private Date taskEnd;
 
 	/**
+	 * 任务条件类型
+	 */
+	@ApiField("task_free")
+	private String taskFree;
+
+	/**
 	 * 任务名称
 	 */
 	@ApiField("task_name")
@@ -80,6 +86,12 @@ public class AlipayCommerceWaterTaskCreateModel extends AlipayObject {
 	 */
 	@ApiField("task_title")
 	private String taskTitle;
+
+	/**
+	 * 任务类型
+	 */
+	@ApiField("task_type")
+	private String taskType;
 
 	public String getCreator() {
 		return this.creator;
@@ -137,6 +149,13 @@ public class AlipayCommerceWaterTaskCreateModel extends AlipayObject {
 		this.taskEnd = taskEnd;
 	}
 
+	public String getTaskFree() {
+		return this.taskFree;
+	}
+	public void setTaskFree(String taskFree) {
+		this.taskFree = taskFree;
+	}
+
 	public String getTaskName() {
 		return this.taskName;
 	}
@@ -156,6 +175,13 @@ public class AlipayCommerceWaterTaskCreateModel extends AlipayObject {
 	}
 	public void setTaskTitle(String taskTitle) {
 		this.taskTitle = taskTitle;
+	}
+
+	public String getTaskType() {
+		return this.taskType;
+	}
+	public void setTaskType(String taskType) {
+		this.taskType = taskType;
 	}
 
 }

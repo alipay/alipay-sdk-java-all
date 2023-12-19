@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * 供应链商品同步信息
+ * 供应链商品同步信息:增加商品上架业务渠道编码
  *
  * @author auto create
- * @since 1.0, 2023-11-20 16:06:32
+ * @since 1.0, 2023-12-08 13:48:41
  */
 public class SupplierSkuInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5256569684544286957L;
+	private static final long serialVersionUID = 3643745893188754146L;
 
 	/**
 	 * 商品属性集合{"WEIGHT": "100丝","SIZE": "120mm*170mm","SELECTSIDED": "单面"}
@@ -76,6 +76,12 @@ public class SupplierSkuInfo extends AlipayObject {
 	 */
 	@ApiField("item_code")
 	private String itemCode;
+
+	/**
+	 * 如果是上架到多个渠道，多个渠道编码之间用逗号隔开。
+	 */
+	@ApiField("item_listing_channels")
+	private String itemListingChannels;
 
 	/**
 	 * 商品名称
@@ -193,6 +199,13 @@ public class SupplierSkuInfo extends AlipayObject {
 	}
 	public void setItemCode(String itemCode) {
 		this.itemCode = itemCode;
+	}
+
+	public String getItemListingChannels() {
+		return this.itemListingChannels;
+	}
+	public void setItemListingChannels(String itemListingChannels) {
+		this.itemListingChannels = itemListingChannels;
 	}
 
 	public String getItemName() {

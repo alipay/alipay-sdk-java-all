@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 卡模板权益信息
  *
  * @author auto create
- * @since 1.0, 2019-08-08 20:04:30
+ * @since 1.0, 2023-12-07 15:21:47
  */
 public class TemplateBenefitInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3155629564656649649L;
+	private static final long serialVersionUID = 2562269887268376453L;
 
 	/**
 	 * 权益描述信息

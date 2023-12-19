@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 物料生产指令对象, 包括物料生产的相关信息: 订单明细ID, 申请单号, 模板ID, 物料名称, 物料图片Url, 数量,  申请日期,收货人姓名,联系人电话,收货人地址等.
  *
  * @author auto create
- * @since 1.0, 2022-11-28 16:03:14
+ * @since 1.0, 2023-11-27 17:34:50
  */
 public class AssetProduceItem extends AlipayObject {
 
-	private static final long serialVersionUID = 3722115819474247811L;
+	private static final long serialVersionUID = 6243561743373579922L;
 
 	/**
 	 * 生产指令动作类别：套组则为ASSEMBLE，组装
@@ -75,6 +78,25 @@ public class AssetProduceItem extends AlipayObject {
 	private String city;
 
 	/**
+	 * 合单批次号
+	 */
+	@ApiField("combination_batch_no")
+	private String combinationBatchNo;
+
+	/**
+	 * 合单单据数量
+	 */
+	@ApiField("combination_count")
+	private Long combinationCount;
+
+	/**
+	 * 合单单据列表
+	 */
+	@ApiListField("combination_orders")
+	@ApiField("string")
+	private List<String> combinationOrders;
+
+	/**
 	 * 数量
 	 */
 	@ApiField("count")
@@ -97,6 +119,12 @@ public class AssetProduceItem extends AlipayObject {
 	 */
 	@ApiField("district")
 	private String district;
+
+	/**
+	 * Y 需要合单 N 不需要合单
+	 */
+	@ApiField("is_combination_order")
+	private String isCombinationOrder;
 
 	/**
 	 * 物流公司代码
@@ -151,6 +179,13 @@ public class AssetProduceItem extends AlipayObject {
 	 */
 	@ApiField("print_data")
 	private String printData;
+
+	/**
+	 * 标识指令优先级别
+100 正常优先级  200 高优先级
+	 */
+	@ApiField("priority")
+	private String priority;
 
 	/**
 	 * 生产单号
@@ -300,6 +335,27 @@ public class AssetProduceItem extends AlipayObject {
 		this.city = city;
 	}
 
+	public String getCombinationBatchNo() {
+		return this.combinationBatchNo;
+	}
+	public void setCombinationBatchNo(String combinationBatchNo) {
+		this.combinationBatchNo = combinationBatchNo;
+	}
+
+	public Long getCombinationCount() {
+		return this.combinationCount;
+	}
+	public void setCombinationCount(Long combinationCount) {
+		this.combinationCount = combinationCount;
+	}
+
+	public List<String> getCombinationOrders() {
+		return this.combinationOrders;
+	}
+	public void setCombinationOrders(List<String> combinationOrders) {
+		this.combinationOrders = combinationOrders;
+	}
+
 	public String getCount() {
 		return this.count;
 	}
@@ -326,6 +382,13 @@ public class AssetProduceItem extends AlipayObject {
 	}
 	public void setDistrict(String district) {
 		this.district = district;
+	}
+
+	public String getIsCombinationOrder() {
+		return this.isCombinationOrder;
+	}
+	public void setIsCombinationOrder(String isCombinationOrder) {
+		this.isCombinationOrder = isCombinationOrder;
 	}
 
 	public String getLogisticsCode() {
@@ -389,6 +452,13 @@ public class AssetProduceItem extends AlipayObject {
 	}
 	public void setPrintData(String printData) {
 		this.printData = printData;
+	}
+
+	public String getPriority() {
+		return this.priority;
+	}
+	public void setPriority(String priority) {
+		this.priority = priority;
 	}
 
 	public String getProduceOrder() {

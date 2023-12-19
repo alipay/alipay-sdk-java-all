@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸核身初始化
  *
  * @author auto create
- * @since 1.0, 2023-05-17 19:14:52
+ * @since 1.0, 2023-12-04 14:31:17
  */
 public class DatadigitalFincloudGeneralsaasFaceVerificationInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2496513829342864292L;
+	private static final long serialVersionUID = 2685874557548895361L;
 
 	/**
 	 * 人脸核身具体类型目前仅支持：DATA_DIGITAL_BIZ_CODE_FACE_VERIFICATION
@@ -51,6 +51,12 @@ RESIDENCE_TAIWAN：台湾居民居住证
 	 */
 	@ApiField("identity_type")
 	private String identityType;
+
+	/**
+	 * 国家地区代码，当证件类型为外国人永久居留证时必填。
+	 */
+	@ApiField("nation")
+	private String nation;
 
 	/**
 	 * 商户请求的唯一标识，商户要保证其唯一性，值为64位长度的字母数字组合。建议：前面几位字符是商户自定义的简称，中间可以使用一段时间，后段可以使用一个随机或递增序列
@@ -104,6 +110,13 @@ RESIDENCE_TAIWAN：台湾居民居住证
 	}
 	public void setIdentityType(String identityType) {
 		this.identityType = identityType;
+	}
+
+	public String getNation() {
+		return this.nation;
+	}
+	public void setNation(String nation) {
+		this.nation = nation;
 	}
 
 	public String getOuterOrderNo() {

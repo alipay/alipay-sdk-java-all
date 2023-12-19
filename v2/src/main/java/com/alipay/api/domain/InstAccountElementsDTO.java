@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部机构账户相关要素
  *
  * @author auto create
- * @since 1.0, 2022-05-20 17:22:19
+ * @since 1.0, 2023-11-28 14:42:40
  */
 public class InstAccountElementsDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5426693822387225612L;
+	private static final long serialVersionUID = 7759454868888288824L;
 
 	/**
 	 * 请款相关要素

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenMiniAmpeExpressQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4724428614629468626L;
+	private static final long serialVersionUID = 4294917775964636267L;
 
 	/** 
 	 * 包裹状态分类后的统计结果

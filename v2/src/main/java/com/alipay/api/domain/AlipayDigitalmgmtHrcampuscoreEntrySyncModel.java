@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * moka招聘数据同步
  *
  * @author auto create
- * @since 1.0, 2023-11-06 15:09:30
+ * @since 1.0, 2023-12-11 19:50:51
  */
 public class AlipayDigitalmgmtHrcampuscoreEntrySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1141135683472649296L;
+	private static final long serialVersionUID = 2134814377666927343L;
 
 	/**
 	 * 校招签约三方名称（校招传）

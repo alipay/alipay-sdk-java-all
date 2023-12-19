@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 推送新支持违章查询的城市
  *
  * @author auto create
- * @since 1.0, 2022-09-29 10:09:10
+ * @since 1.0, 2023-11-27 09:26:18
  */
 public class AlipayEcoMycarViolationCityPushModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3278331666349438352L;
+	private static final long serialVersionUID = 1253928224664314354L;
 
 	/**
 	 * 城市编码

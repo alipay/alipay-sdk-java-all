@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.common.taokereward.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-22 14:11:45
+ * @since 1.0, 2023-12-09 10:21:55
  */
 public class AlipayCommerceCommonTaokerewardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2288428761796146853L;
+	private static final long serialVersionUID = 4295769369844677876L;
 
 	/** 
 	 * 激励记录信息

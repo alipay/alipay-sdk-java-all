@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.business.frontplugin.request.identify response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-07 13:51:45
+ * @since 1.0, 2023-12-14 19:56:57
  */
 public class AlipayBusinessFrontpluginRequestIdentifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4568824948793815466L;
+	private static final long serialVersionUID = 5114243846424138144L;
 
 	
 

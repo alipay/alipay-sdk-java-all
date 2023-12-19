@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 智能售卖点位数据上传
  *
  * @author auto create
- * @since 1.0, 2021-05-21 14:19:58
+ * @since 1.0, 2023-12-05 15:25:17
  */
 public class AlipayCommerceOperationPoiVendingUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6578588228843214477L;
+	private static final long serialVersionUID = 2238513964433315827L;
 
 	/**
 	 * 地址描述
@@ -34,7 +34,8 @@ public class AlipayCommerceOperationPoiVendingUploadModel extends AlipayObject {
 	 * 点位类型，可取值如下： 
 vending(自助售卖机), 
 water_dispenser(饮水机), 
-washing(洗衣机）
+washing(洗衣机）,
+physical_testing_equipment（体测仪）
 	 */
 	@ApiField("category_code")
 	private String categoryCode;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 确认开通钱包模版扩展参数
  *
  * @author auto create
- * @since 1.0, 2023-11-17 14:06:21
+ * @since 1.0, 2023-12-07 18:20:14
  */
 public class ConsumeExtend extends AlipayObject {
 
-	private static final long serialVersionUID = 1664936688416562684L;
+	private static final long serialVersionUID = 6442574848934274568L;
 
 	/**
 	 * 是否支持圈店宝
@@ -20,10 +20,10 @@ public class ConsumeExtend extends AlipayObject {
 	private Boolean mallAssignStore;
 
 	/**
-	 * 余额户钱包是否展示明细，且只在余额户钱包生效
+	 * 用于回收行业特定业务诉求，其他行业不开放
 	 */
-	@ApiField("show_wallet_info_balance")
-	private Boolean showWalletInfoBalance;
+	@ApiField("recycle_industry")
+	private Boolean recycleIndustry;
 
 	public Boolean getMallAssignStore() {
 		return this.mallAssignStore;
@@ -32,11 +32,11 @@ public class ConsumeExtend extends AlipayObject {
 		this.mallAssignStore = mallAssignStore;
 	}
 
-	public Boolean getShowWalletInfoBalance() {
-		return this.showWalletInfoBalance;
+	public Boolean getRecycleIndustry() {
+		return this.recycleIndustry;
 	}
-	public void setShowWalletInfoBalance(Boolean showWalletInfoBalance) {
-		this.showWalletInfoBalance = showWalletInfoBalance;
+	public void setRecycleIndustry(Boolean recycleIndustry) {
+		this.recycleIndustry = recycleIndustry;
 	}
 
 }

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 门店不置信推荐信息
  *
  * @author auto create
- * @since 1.0, 2023-05-24 20:43:53
+ * @since 1.0, 2023-12-10 23:04:06
  */
 public class ShopRecommendInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2771722238485653683L;
+	private static final long serialVersionUID = 1361344163342914944L;
 
 	/**
 	 * 门店修改建议

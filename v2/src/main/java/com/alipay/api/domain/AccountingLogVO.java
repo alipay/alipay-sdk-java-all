@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账户流水VO
  *
  * @author auto create
- * @since 1.0, 2022-05-06 14:26:36
+ * @since 1.0, 2023-11-28 14:42:43
  */
 public class AccountingLogVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5352314999919231156L;
+	private static final long serialVersionUID = 6133235225282111797L;
 
 	/**
 	 * 交易账户

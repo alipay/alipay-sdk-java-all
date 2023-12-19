@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 代驾-费用详情
  *
  * @author auto create
- * @since 1.0, 2022-08-23 16:31:08
+ * @since 1.0, 2023-11-27 09:32:10
  */
 public class DesignatedDrivingFeeDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3696329417933396335L;
+	private static final long serialVersionUID = 8677593714193647416L;
 
 	/**
 	 * 费用金额

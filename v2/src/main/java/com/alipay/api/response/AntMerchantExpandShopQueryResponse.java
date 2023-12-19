@@ -16,11 +16,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.shop.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-22 17:36:52
+ * @since 1.0, 2023-12-12 10:31:59
  */
 public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2862393779824349397L;
+	private static final long serialVersionUID = 5665948848775185194L;
 
 	/** 
 	 * 品牌id
@@ -166,7 +166,7 @@ public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 	private String shopId;
 
 	/** 
-	 * 当前名称、地址、经纬度信息准确一致，可用于数字化经营场景消费
+	 * 当前名称、地址、经纬度信息准确一致，可用于数字化经营场景消费(如商品、券、消费圈等场域的分发)，不影响门店支付结算
 	 */
 	@ApiField("shop_info_status")
 	private String shopInfoStatus;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营销活动失败商品
  *
  * @author auto create
- * @since 1.0, 2023-09-07 19:05:22
+ * @since 1.0, 2023-12-10 18:13:25
  */
 public class ItemPromoActivityFailVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2297414485679392712L;
+	private static final long serialVersionUID = 6738387356553456972L;
 
 	/**
 	 * 失败原因

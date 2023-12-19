@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 关联交易明细模型
  *
  * @author auto create
- * @since 1.0, 2022-01-05 15:28:51
+ * @since 1.0, 2023-11-28 14:42:51
  */
 public class TradeDetailInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2849296614654966248L;
+	private static final long serialVersionUID = 2298313385277333963L;
 
 	/**
 	 * 交易发生时间

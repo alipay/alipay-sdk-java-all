@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 城服用户证件查询
  *
  * @author auto create
- * @since 1.0, 2022-09-23 14:45:52
+ * @since 1.0, 2023-12-07 13:29:55
  */
 public class AlipayEcoCityserviceCertinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5293229479263455142L;
+	private static final long serialVersionUID = 1623244654268124819L;
 
 	/**
 	 * 用户证件信息列表。

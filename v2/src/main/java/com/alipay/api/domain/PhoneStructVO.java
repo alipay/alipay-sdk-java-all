@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电话类型
  *
  * @author auto create
- * @since 1.0, 2023-08-18 10:15:10
+ * @since 1.0, 2023-12-08 00:44:40
  */
 public class PhoneStructVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2291799295257482536L;
+	private static final long serialVersionUID = 6683997488895288176L;
 
 	/**
 	 * 客服链接地址，必须以alipays开头。用户点击链接后可直接进入客服页面进行咨询
