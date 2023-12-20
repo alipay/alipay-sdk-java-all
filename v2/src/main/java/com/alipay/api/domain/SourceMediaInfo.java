@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SourceMediaInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2332264756713337474L;
+	private static final long serialVersionUID = 5678451844489841787L;
 
 	/**
 	 * 素材ID，对应“支付宝文件上传接口”获取的file_id

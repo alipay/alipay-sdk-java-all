@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayInsUnderwritePolicyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2376498221284575599L;
+	private static final long serialVersionUID = 7516325392614857396L;
 
 	/**
 	 * 商户生成的外部投保业务号;当保单凭证号不传时则必传.

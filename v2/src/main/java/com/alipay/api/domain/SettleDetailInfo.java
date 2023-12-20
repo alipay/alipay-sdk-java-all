@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 结算详情信息
  *
  * @author auto create
- * @since 1.0, 2023-07-11 21:19:48
+ * @since 1.0, 2023-12-19 17:29:49
  */
 public class SettleDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5253114199732664616L;
+	private static final long serialVersionUID = 4675558462687439463L;
 
 	/**
 	 * 仅在直付通账期模式下，当一笔交易需要分多次发起部分确认结算时使用，表示本次确认结算的实际结算金额。传递本字段后，原amount字段不再生效，结算金额以本字段为准。如已经发生过部分确认结算、不传递本字段则默认按剩余待结算金额一次性结算。

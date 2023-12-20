@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * A+品牌同步
  *
  * @author auto create
- * @since 1.0, 2023-12-07 13:47:24
+ * @since 1.0, 2023-12-19 11:44:59
  */
 public class AlipayOverseasTravelIntlBrandSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4395284327697722258L;
+	private static final long serialVersionUID = 1259329385235211623L;
 
 	/**
 	 * 品牌信息

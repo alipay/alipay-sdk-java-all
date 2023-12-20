@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 五福耗卡查询
  *
  * @author auto create
- * @since 1.0, 2022-12-07 18:01:05
+ * @since 1.0, 2023-12-19 15:01:41
  */
 public class AlipayFundCouponWufuCostassetsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4763475229667786618L;
+	private static final long serialVersionUID = 1492521881994948392L;
 
 	/**
 	 * 需要消耗的福卡数量

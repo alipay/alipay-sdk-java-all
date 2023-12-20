@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 品牌信息
  *
  * @author auto create
- * @since 1.0, 2022-11-14 15:45:20
+ * @since 1.0, 2023-12-19 11:44:59
  */
 public class IntlBrandInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8761836423796492733L;
+	private static final long serialVersionUID = 6897212747952213428L;
 
 	/**
 	 * 品牌多语言描述信息
@@ -56,10 +59,29 @@ public class IntlBrandInfo extends AlipayObject {
 	private String id;
 
 	/**
+	 * 标签名称
+	 */
+	@ApiListField("label_names")
+	@ApiField("string")
+	private List<String> labelNames;
+
+	/**
+	 * 头图
+	 */
+	@ApiField("master_photo")
+	private PhotoInfo masterPhoto;
+
+	/**
 	 * 售卖区域
 	 */
 	@ApiField("region")
 	private String region;
+
+	/**
+	 * 视频地址
+	 */
+	@ApiField("video_url")
+	private String videoUrl;
 
 	public String getBrandDescription() {
 		return this.brandDescription;
@@ -110,11 +132,32 @@ public class IntlBrandInfo extends AlipayObject {
 		this.id = id;
 	}
 
+	public List<String> getLabelNames() {
+		return this.labelNames;
+	}
+	public void setLabelNames(List<String> labelNames) {
+		this.labelNames = labelNames;
+	}
+
+	public PhotoInfo getMasterPhoto() {
+		return this.masterPhoto;
+	}
+	public void setMasterPhoto(PhotoInfo masterPhoto) {
+		this.masterPhoto = masterPhoto;
+	}
+
 	public String getRegion() {
 		return this.region;
 	}
 	public void setRegion(String region) {
 		this.region = region;
+	}
+
+	public String getVideoUrl() {
+		return this.videoUrl;
+	}
+	public void setVideoUrl(String videoUrl) {
+		this.videoUrl = videoUrl;
 	}
 
 }

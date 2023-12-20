@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HealthServiceFamilyDoctorDrugDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2145858975552231612L;
+	private static final long serialVersionUID = 2171718855879674122L;
 
 	/**
 	 * 是否是目录内药品

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FxiaokeCreateCustomerChannelAccountResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 1626699815166165763L;
+	private static final long serialVersionUID = 4287733128681186263L;
 
 	/**
 	 * 渠道类型

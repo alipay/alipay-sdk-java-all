@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudCloudrunObjectstorageIplimitModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3552861844253796153L;
+	private static final long serialVersionUID = 7378771334693652338L;
 
 	/** 
 	 * IP黑白名单配置

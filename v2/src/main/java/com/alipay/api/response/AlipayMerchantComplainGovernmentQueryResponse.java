@@ -1,5 +1,6 @@
 package com.alipay.api.response;
 
+import java.util.Date;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
@@ -11,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.complain.government.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-03 05:19:05
+ * @since 1.0, 2023-12-19 10:11:59
  */
 public class AlipayMerchantComplainGovernmentQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1666173635575757298L;
+	private static final long serialVersionUID = 4533498559857663924L;
 
 	/** 
 	 * 授权码
@@ -42,6 +43,12 @@ public class AlipayMerchantComplainGovernmentQueryResponse extends AlipayRespons
 	private String content;
 
 	/** 
+	 * 用户确认超时时间，仅当状态为"商家已反馈"时返回
+	 */
+	@ApiField("gmt_confirm_deadline")
+	private Date gmtConfirmDeadline;
+
+	/** 
 	 * 线下交易投诉创建时间
 	 */
 	@ApiField("gmt_create")
@@ -52,6 +59,12 @@ public class AlipayMerchantComplainGovernmentQueryResponse extends AlipayRespons
 	 */
 	@ApiField("gmt_finished")
 	private String gmtFinished;
+
+	/** 
+	 * 商户处理超时时间，仅当状态为"商家处理中"时返回
+	 */
+	@ApiField("gmt_handle_deadline")
+	private Date gmtHandleDeadline;
 
 	/** 
 	 * 投诉者申请平台接入（12315）的时间
@@ -111,7 +124,7 @@ public class AlipayMerchantComplainGovernmentQueryResponse extends AlipayRespons
 	private String status;
 
 	/** 
-	 * 交易订单金额
+	 * 交易订单金额，单位"元"
 	 */
 	@ApiField("trade_amount")
 	private String tradeAmount;
@@ -162,6 +175,13 @@ public class AlipayMerchantComplainGovernmentQueryResponse extends AlipayRespons
 		return this.content;
 	}
 
+	public void setGmtConfirmDeadline(Date gmtConfirmDeadline) {
+		this.gmtConfirmDeadline = gmtConfirmDeadline;
+	}
+	public Date getGmtConfirmDeadline( ) {
+		return this.gmtConfirmDeadline;
+	}
+
 	public void setGmtCreate(String gmtCreate) {
 		this.gmtCreate = gmtCreate;
 	}
@@ -174,6 +194,13 @@ public class AlipayMerchantComplainGovernmentQueryResponse extends AlipayRespons
 	}
 	public String getGmtFinished( ) {
 		return this.gmtFinished;
+	}
+
+	public void setGmtHandleDeadline(Date gmtHandleDeadline) {
+		this.gmtHandleDeadline = gmtHandleDeadline;
+	}
+	public Date getGmtHandleDeadline( ) {
+		return this.gmtHandleDeadline;
 	}
 
 	public void setGmtIntervenePlatform(String gmtIntervenePlatform) {

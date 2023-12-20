@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPayApplepayTransactionauthtokenDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2515769761621913986L;
+	private static final long serialVersionUID = 2579637466712337233L;
 
 	/** 
 	 * 响应报文头部

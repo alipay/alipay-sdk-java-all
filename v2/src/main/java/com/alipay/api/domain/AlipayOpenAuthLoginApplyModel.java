@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenAuthLoginApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7461978621313863447L;
+	private static final long serialVersionUID = 5823466435765118144L;
 
 	/**
 	 * 当前登录调用方平台的开发者登录渠道，如阿里云允许用阿里云账号、淘宝账号、支付宝账号、1688账号、钉钉账号、新浪账号登录，可选值有：aliyun、taobao、alipay、dingtalk、1688、sina

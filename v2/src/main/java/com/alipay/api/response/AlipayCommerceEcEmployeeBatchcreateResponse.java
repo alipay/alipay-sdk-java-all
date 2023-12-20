@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceEcEmployeeBatchcreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6817376234476779942L;
+	private static final long serialVersionUID = 3758489365265534575L;
 
 	/** 
 	 * 添加失败员工，如果没有添加失败员工，则不返回该字段

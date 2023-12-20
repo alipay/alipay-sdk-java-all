@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CreativeDesignInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7833694478542266646L;
+	private static final long serialVersionUID = 2145279243437944253L;
 
 	/**
 	 * 布局对应的风格信息

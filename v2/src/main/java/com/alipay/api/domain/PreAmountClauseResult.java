@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PreAmountClauseResult extends AlipayObject {
 
-	private static final long serialVersionUID = 2813261358164479853L;
+	private static final long serialVersionUID = 5449753277261322432L;
 
 	/**
 	 * 具体的金额

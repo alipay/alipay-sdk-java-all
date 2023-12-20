@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ApmobileAppPermissionReportSdkDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8525472751156238256L;
+	private static final long serialVersionUID = 3636193192789772755L;
 
 	/**
 	 * 集成SDK调用信息和权限详情

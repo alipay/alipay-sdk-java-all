@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenMiniActivityGiftQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1284287699775135396L;
+	private static final long serialVersionUID = 7252552838976726894L;
 
 	/** 
 	 * 金额(分), 仅限代金券
