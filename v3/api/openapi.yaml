@@ -5,7 +5,7 @@ info:
     url: https://openhome.alipay.com/developmentDocument.htm
   description: 支付宝开放平台v3协议文档
   title: 支付宝开放平台API
-  version: 2023-12-12
+  version: 2023-12-20
 servers:
 - description: Production server
   url: https://openapi.alipay.com
@@ -22714,7 +22714,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/alipay_open_servicemarket_order_query_default_response'
           description: 请求失败
-      summary: 订购插件订单明细查询
+      summary: 服务市场订单明细查询
       tags:
       - alipay.open.servicemarket.order
       x-accepts: application/json
@@ -26694,14 +26694,14 @@ paths:
               schema:
                 $ref: '#/components/schemas/datadigital_fincloud_generalsaas_face_check_initialize_default_response'
           description: 请求失败
-      summary: 人脸检测初始化
+      summary: 活体检测初始化
       tags:
       - datadigital.fincloud.generalsaas.face.check
       x-content-type: application/json
       x-accepts: application/json
   /v3/datadigital/fincloud/generalsaas/face/check/query:
     get:
-      description: 用于查询人脸检测结果的数据。
+      description: 用于查询活体检测结果。
       operationId: datadigital.fincloud.generalsaas.face.check.query
       parameters:
       - description: 传入初始化接口datadigital.fincloud.generalsaas.face.check.initialize
@@ -26763,7 +26763,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/datadigital_fincloud_generalsaas_face_check_query_default_response'
           description: 请求失败
-      summary: 人脸检测结果数据查询
+      summary: 活体检测结果查询
       tags:
       - datadigital.fincloud.generalsaas.face.check
       x-accepts: application/json
@@ -26797,7 +26797,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/datadigital_fincloud_generalsaas_face_source_certify_default_response'
           description: 请求失败
-      summary: 权威核验源的核验接口
+      summary: 纯服务端人脸核身
       tags:
       - datadigital.fincloud.generalsaas.face.source
       x-content-type: multipart/form-data
@@ -26893,7 +26893,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/datadigital_fincloud_generalsaas_ocr_mobile_initialize_default_response'
           description: 请求失败
-      summary: OCR端云一体化识别初始化
+      summary: App端OCR初始化
       tags:
       - datadigital.fincloud.generalsaas.ocr.mobile
       x-content-type: application/json
@@ -44291,7 +44291,7 @@ components:
           example: 转账标题
           type: string
         original_order_id:
-          description: 原支付宝业务单号。C2C现金红包-红包领取时，传红包支付时返回的支付宝单号；B2C现金红包、单笔无密转账到支付宝不需要该参数。
+          description: 原支付宝业务单号。
           example: "20190620110075000006640000063056"
           type: string
         out_biz_no:

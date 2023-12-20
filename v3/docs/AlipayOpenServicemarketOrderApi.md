@@ -7,7 +7,7 @@ All URIs are relative to *https://openapi.alipay.com*
 | [**accept**](AlipayOpenServicemarketOrderApi.md#accept) | **POST** /v3/alipay/open/servicemarket/order/accept | 服务商接单操作 |
 | [**create**](AlipayOpenServicemarketOrderApi.md#create) | **POST** /v3/alipay/open/servicemarket/order/create | 服务市场代订购小程序 |
 | [**notify**](AlipayOpenServicemarketOrderApi.md#notify) | **POST** /v3/alipay/open/servicemarket/order/notify | 服务市场商户确认订购通知 |
-| [**query**](AlipayOpenServicemarketOrderApi.md#query) | **GET** /v3/alipay/open/servicemarket/order/query | 订购插件订单明细查询 |
+| [**query**](AlipayOpenServicemarketOrderApi.md#query) | **GET** /v3/alipay/open/servicemarket/order/query | 服务市场订单明细查询 |
 | [**reject**](AlipayOpenServicemarketOrderApi.md#reject) | **POST** /v3/alipay/open/servicemarket/order/reject | 服务商拒绝接单 |
 
 
@@ -230,7 +230,7 @@ No authorization required
 # **query**
 > AlipayOpenServicemarketOrderQueryResponseModel query(commodityOrderId, startPage)
 
-订购插件订单明细查询
+服务市场订单明细查询
 
 第三方服务商提供服务产品被商户订购后，服务市场会推送订单信息给服务商，服务商根据订单号回查该订单明细信息。
 

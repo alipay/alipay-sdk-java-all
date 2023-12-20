@@ -1,7 +1,7 @@
 # alipay-sdk-java-v3
 
 支付宝开放平台API
-- API version: 2023-12-12
+- API version: 2023-12-20
 
 支付宝开放平台v3协议文档
 
@@ -40,7 +40,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>com.alipay.sdk</groupId>
   <artifactId>alipay-sdk-java-v3</artifactId>
-  <version>2.7.19.ALL</version>
+  <version>2.8.0.ALL</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -56,7 +56,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "com.alipay.sdk:alipay-sdk-java-v3:2.7.19.ALL"
+     implementation "com.alipay.sdk:alipay-sdk-java-v3:2.8.0.ALL"
   }
 ```
 
@@ -70,7 +70,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/alipay-sdk-java-v3-2.7.19.ALL.jar`
+* `target/alipay-sdk-java-v3-2.8.0.ALL.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
@@ -766,7 +766,7 @@ Class | Method | HTTP request | Description
 *AlipayOpenServicemarketOrderApi* | [**accept**](docs/AlipayOpenServicemarketOrderApi.md#accept) | **POST** /v3/alipay/open/servicemarket/order/accept | 服务商接单操作
 *AlipayOpenServicemarketOrderApi* | [**create**](docs/AlipayOpenServicemarketOrderApi.md#create) | **POST** /v3/alipay/open/servicemarket/order/create | 服务市场代订购小程序
 *AlipayOpenServicemarketOrderApi* | [**notify**](docs/AlipayOpenServicemarketOrderApi.md#notify) | **POST** /v3/alipay/open/servicemarket/order/notify | 服务市场商户确认订购通知
-*AlipayOpenServicemarketOrderApi* | [**query**](docs/AlipayOpenServicemarketOrderApi.md#query) | **GET** /v3/alipay/open/servicemarket/order/query | 订购插件订单明细查询
+*AlipayOpenServicemarketOrderApi* | [**query**](docs/AlipayOpenServicemarketOrderApi.md#query) | **GET** /v3/alipay/open/servicemarket/order/query | 服务市场订单明细查询
 *AlipayOpenServicemarketOrderApi* | [**reject**](docs/AlipayOpenServicemarketOrderApi.md#reject) | **POST** /v3/alipay/open/servicemarket/order/reject | 服务商拒绝接单
 *AlipayOpenServicemarketOrderItemApi* | [**cancel**](docs/AlipayOpenServicemarketOrderItemApi.md#cancel) | **POST** /v3/alipay/open/servicemarket/order/item/cancel | 服务订单明细实施项单项取消
 *AlipayOpenServicemarketOrderItemApi* | [**complete**](docs/AlipayOpenServicemarketOrderItemApi.md#complete) | **POST** /v3/alipay/open/servicemarket/order/item/complete | 服务商完成订单内单个明细实施项
@@ -881,12 +881,12 @@ Class | Method | HTTP request | Description
 *DatadigitalFincloudGeneralsaasFaceCertifyApi* | [**initialize**](docs/DatadigitalFincloudGeneralsaasFaceCertifyApi.md#initialize) | **POST** /v3/datadigital/fincloud/generalsaas/face/certify/initialize | H5人脸核身初始化
 *DatadigitalFincloudGeneralsaasFaceCertifyApi* | [**query**](docs/DatadigitalFincloudGeneralsaasFaceCertifyApi.md#query) | **GET** /v3/datadigital/fincloud/generalsaas/face/certify/query | H5人脸核身查询记录
 *DatadigitalFincloudGeneralsaasFaceCertifyApi* | [**verify**](docs/DatadigitalFincloudGeneralsaasFaceCertifyApi.md#verify) | **POST** /v3/datadigital/fincloud/generalsaas/face/certify/verify | H5人脸核身开始认证
-*DatadigitalFincloudGeneralsaasFaceCheckApi* | [**initialize**](docs/DatadigitalFincloudGeneralsaasFaceCheckApi.md#initialize) | **POST** /v3/datadigital/fincloud/generalsaas/face/check/initialize | 人脸检测初始化
-*DatadigitalFincloudGeneralsaasFaceCheckApi* | [**query**](docs/DatadigitalFincloudGeneralsaasFaceCheckApi.md#query) | **GET** /v3/datadigital/fincloud/generalsaas/face/check/query | 人脸检测结果数据查询
-*DatadigitalFincloudGeneralsaasFaceSourceApi* | [**certify**](docs/DatadigitalFincloudGeneralsaasFaceSourceApi.md#certify) | **POST** /v3/datadigital/fincloud/generalsaas/face/source/certify | 权威核验源的核验接口
+*DatadigitalFincloudGeneralsaasFaceCheckApi* | [**initialize**](docs/DatadigitalFincloudGeneralsaasFaceCheckApi.md#initialize) | **POST** /v3/datadigital/fincloud/generalsaas/face/check/initialize | 活体检测初始化
+*DatadigitalFincloudGeneralsaasFaceCheckApi* | [**query**](docs/DatadigitalFincloudGeneralsaasFaceCheckApi.md#query) | **GET** /v3/datadigital/fincloud/generalsaas/face/check/query | 活体检测结果查询
+*DatadigitalFincloudGeneralsaasFaceSourceApi* | [**certify**](docs/DatadigitalFincloudGeneralsaasFaceSourceApi.md#certify) | **POST** /v3/datadigital/fincloud/generalsaas/face/source/certify | 纯服务端人脸核身
 *DatadigitalFincloudGeneralsaasFaceVerificationApi* | [**initialize**](docs/DatadigitalFincloudGeneralsaasFaceVerificationApi.md#initialize) | **POST** /v3/datadigital/fincloud/generalsaas/face/verification/initialize | 人脸核身初始化
 *DatadigitalFincloudGeneralsaasFaceVerificationApi* | [**query**](docs/DatadigitalFincloudGeneralsaasFaceVerificationApi.md#query) | **GET** /v3/datadigital/fincloud/generalsaas/face/verification/query | 人脸核身结果查询
-*DatadigitalFincloudGeneralsaasOcrMobileApi* | [**initialize**](docs/DatadigitalFincloudGeneralsaasOcrMobileApi.md#initialize) | **POST** /v3/datadigital/fincloud/generalsaas/ocr/mobile/initialize | OCR端云一体化识别初始化
+*DatadigitalFincloudGeneralsaasOcrMobileApi* | [**initialize**](docs/DatadigitalFincloudGeneralsaasOcrMobileApi.md#initialize) | **POST** /v3/datadigital/fincloud/generalsaas/ocr/mobile/initialize | App端OCR初始化
 *DatadigitalFincloudGeneralsaasOcrServerApi* | [**detect**](docs/DatadigitalFincloudGeneralsaasOcrServerApi.md#detect) | **POST** /v3/datadigital/fincloud/generalsaas/ocr/server/detect | 服务端OCR
 *KoubeiMarketingCampaignIntelligentPromoApi* | [**batchquery**](docs/KoubeiMarketingCampaignIntelligentPromoApi.md#batchquery) | **POST** /v3/koubei/marketing/campaign/intelligent/promo/batchquery | 智能营销活动批量查询
 *KoubeiMarketingCampaignIntelligentShopApi* | [**consult**](docs/KoubeiMarketingCampaignIntelligentShopApi.md#consult) | **POST** /v3/koubei/marketing/campaign/intelligent/shop/consult | 智能营销门店咨询
