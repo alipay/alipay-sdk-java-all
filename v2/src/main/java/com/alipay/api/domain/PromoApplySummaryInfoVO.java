@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 营销优惠申领汇总
  *
  * @author auto create
- * @since 1.0, 2023-08-04 13:53:35
+ * @since 1.0, 2023-12-27 15:52:39
  */
 public class PromoApplySummaryInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2279335938885665516L;
+	private static final long serialVersionUID = 3436863392737586314L;
 
 	/**
 	 * 优惠申领金额或者数量，金额时单位：分。需要根据budget_type字段区分金额和数量
@@ -42,6 +45,14 @@ public class PromoApplySummaryInfoVO extends AlipayObject {
 	 */
 	@ApiField("promotion_type")
 	private String promotionType;
+
+	/**
+	 * 子营销申领明细
+包含子营销申领消耗的名称和数量
+	 */
+	@ApiListField("sub_promo_infos")
+	@ApiField("sub_promo_info_v_o")
+	private List<SubPromoInfoVO> subPromoInfos;
 
 	public String getApplyAmount() {
 		return this.applyAmount;
@@ -76,6 +87,13 @@ public class PromoApplySummaryInfoVO extends AlipayObject {
 	}
 	public void setPromotionType(String promotionType) {
 		this.promotionType = promotionType;
+	}
+
+	public List<SubPromoInfoVO> getSubPromoInfos() {
+		return this.subPromoInfos;
+	}
+	public void setSubPromoInfos(List<SubPromoInfoVO> subPromoInfos) {
+		this.subPromoInfos = subPromoInfos;
 	}
 
 }

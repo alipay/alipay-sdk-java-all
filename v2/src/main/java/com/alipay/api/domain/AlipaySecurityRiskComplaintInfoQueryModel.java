@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询消费者投诉详情
  *
  * @author auto create
- * @since 1.0, 2023-08-21 16:31:18
+ * @since 1.0, 2023-12-21 17:47:51
  */
 public class AlipaySecurityRiskComplaintInfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2551449434693888737L;
+	private static final long serialVersionUID = 8533891768433125716L;
 
 	/**
 	 * 投诉主表主键id

@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingCertificateCertificationUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3776312575799489957L;
+	private static final long serialVersionUID = 5691976924549457592L;
 
 	/**
 	 * 核销时间。格式为：yyyy-MM-dd HH:mm:ss
@@ -50,7 +50,7 @@ public class AlipayMarketingCertificateCertificationUseModel extends AlipayObjec
 	private String orderId;
 
 	/**
-	 * 外部业务单号，用作幂等控制。 幂等作用： 参数不变的情况下，再次请求返回与上一次相同的结果。 外部接入方需保证业务单号唯一。
+	 * 业务请求单号，用作幂等控制。 超时重试等幂等请求场景保持该值不变，且确保其它所有请求参数不变，再次请求返回上次执行结果。其它场景请更换该值，确保每次不同的请求该值不相同。
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;

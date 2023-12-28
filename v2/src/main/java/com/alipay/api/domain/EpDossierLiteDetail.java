@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业简版档案信息详情
  *
  * @author auto create
- * @since 1.0, 2021-09-17 10:09:18
+ * @since 1.0, 2023-12-20 14:53:07
  */
 public class EpDossierLiteDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7113676679635767711L;
+	private static final long serialVersionUID = 8458737846738778118L;
 
 	/**
 	 * 统一社会信用代码或营业执照注册号

@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 定时触发器
  *
  * @author auto create
- * @since 1.0, 2023-08-08 22:25:14
+ * @since 1.0, 2023-12-21 16:39:31
  */
 public class Schedule extends AlipayObject {
 
-	private static final long serialVersionUID = 7774729693842524447L;
+	private static final long serialVersionUID = 3795252338677921223L;
+
+	/**
+	 * 指定在调度时是否异步执行
+	 */
+	@ApiField("async")
+	private Boolean async;
 
 	/**
 	 * 是否开启
@@ -48,6 +54,13 @@ public class Schedule extends AlipayObject {
 	 */
 	@ApiField("type")
 	private String type;
+
+	public Boolean getAsync() {
+		return this.async;
+	}
+	public void setAsync(Boolean async) {
+		this.async = async;
+	}
 
 	public Boolean getOpen() {
 		return this.open;

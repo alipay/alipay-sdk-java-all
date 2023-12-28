@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class WorkflowLogDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6135935119754127833L;
+	private static final long serialVersionUID = 8878554583367487917L;
 
 	/**
 	 * 审批角色

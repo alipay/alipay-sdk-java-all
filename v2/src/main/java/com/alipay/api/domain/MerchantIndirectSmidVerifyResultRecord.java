@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MerchantIndirectSmidVerifyResultRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 2218595839587672124L;
+	private static final long serialVersionUID = 6683644811889671428L;
 
 	/**
 	 * org_id

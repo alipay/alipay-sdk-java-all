@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC办理申请单信息同步
  *
  * @author auto create
- * @since 1.0, 2023-09-21 16:41:11
+ * @since 1.0, 2023-12-20 17:46:53
  */
 public class AlipayCommerceTransportEtcApplyorderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2181287474735372727L;
+	private static final long serialVersionUID = 7632748531262865568L;
 
 	/**
 	 * 支付宝ETC平台扣款协议号，与order_id参数 二选一。
@@ -48,6 +48,12 @@ public class AlipayCommerceTransportEtcApplyorderSyncModel extends AlipayObject 
 	 */
 	@ApiField("censor_info")
 	private String censorInfo;
+
+	/**
+	 * 企业订单对应支付宝企业id，当order_type为ALIPAY_CORP时必选
+	 */
+	@ApiField("corp_id")
+	private String corpId;
 
 	/**
 	 * 已发货状态必传，物流公司编码，需要与菜鸟映射
@@ -103,6 +109,12 @@ CANCEL：取消；
 	 */
 	@ApiField("order_status")
 	private String orderStatus;
+
+	/**
+	 * ALIPAY_ONLINE:支付宝线上 ALIPAY_CORP:企业ETC
+	 */
+	@ApiField("order_type")
+	private String orderType;
 
 	/**
 	 * 外部业务号，对应用户该笔ETC申请单号
@@ -242,6 +254,13 @@ CANCEL：取消；
 		this.censorInfo = censorInfo;
 	}
 
+	public String getCorpId() {
+		return this.corpId;
+	}
+	public void setCorpId(String corpId) {
+		this.corpId = corpId;
+	}
+
 	public String getDeliveryCode() {
 		return this.deliveryCode;
 	}
@@ -296,6 +315,13 @@ CANCEL：取消；
 	}
 	public void setOrderStatus(String orderStatus) {
 		this.orderStatus = orderStatus;
+	}
+
+	public String getOrderType() {
+		return this.orderType;
+	}
+	public void setOrderType(String orderType) {
+		this.orderType = orderType;
 	}
 
 	public String getOutBizNo() {

@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 本地商品免审更新skku
  *
  * @author auto create
- * @since 1.0, 2023-12-08 00:47:15
+ * @since 1.0, 2023-12-25 14:19:45
  */
 public class LocalItemDirectModifySku extends AlipayObject {
 
-	private static final long serialVersionUID = 4872373118492128282L;
+	private static final long serialVersionUID = 6423456385839959733L;
+
+	/**
+	 * 支持限制库存和不限库存的相互转换
+	 */
+	@ApiField("limit_type")
+	private String limitType;
 
 	/**
 	 * sku原价，分为单位。（代金券对应代金券面额）
@@ -36,6 +42,13 @@ public class LocalItemDirectModifySku extends AlipayObject {
 	 */
 	@ApiField("stock_num")
 	private Long stockNum;
+
+	public String getLimitType() {
+		return this.limitType;
+	}
+	public void setLimitType(String limitType) {
+		this.limitType = limitType;
+	}
 
 	public Long getOriginalPrice() {
 		return this.originalPrice;

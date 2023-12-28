@@ -15,7 +15,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.version.audit.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-12-14 10:41:54
+ * @since 1.0, 2023-12-26 13:41:54
  */
 public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadRequest<AlipayOpenMiniVersionAuditApplyResponse> {
 
@@ -43,7 +43,7 @@ public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadReque
 	private FileItem appLogo;
 
 	/** 
-	* 小程序名称，长度限制 3~30 个字符（中文字符按2个字符计算），仅支持包含中文、数字、英文、下划线、+、-。
+	* 小程序名称，长度限制 3~40 个字符（中文字符按2个字符计算），仅支持包含中文、数字、英文、下划线、+、-。
 如果不填默认采用当前小程序应用名称，如无默认值则必填，不可为空。
 	 */
 	private String appName;

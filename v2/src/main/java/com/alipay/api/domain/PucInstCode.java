@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PucInstCode extends AlipayObject {
 
-	private static final long serialVersionUID = 6636619145694838283L;
+	private static final long serialVersionUID = 3167872578677292122L;
 
 	/**
 	 * 业务类型

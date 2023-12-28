@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiTradeOrderAggregateConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1592786767621584829L;
+	private static final long serialVersionUID = 2284229318794593113L;
 
 	/** 
 	 * 买家ID, 支付成功时才返回

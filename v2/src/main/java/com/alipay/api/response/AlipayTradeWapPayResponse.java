@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.wap.pay response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-14 20:11:58
+ * @since 1.0, 2023-12-27 10:48:48
  */
 public class AlipayTradeWapPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7447476777968793487L;
+	private static final long serialVersionUID = 3648632963231118677L;
 
 	/** 
 	 * 商户原始订单号，最大长度限制32位
@@ -25,6 +25,12 @@ public class AlipayTradeWapPayResponse extends AlipayResponse {
 	 */
 	@ApiField("out_trade_no")
 	private String outTradeNo;
+
+	/** 
+	 * 用于跳转支付宝页面的信息，POST和GET方法生成内容不同：使用POST方法执行，结果为html form表单，在浏览器渲染即可；使用GET方法会得到支付宝URL，需要打开或重定向到该URL。建议使用POST方式。
+	 */
+	@ApiField("pageRedirectionData")
+	private String pageRedirectionData;
 
 	/** 
 	 * 收款支付宝账号对应的支付宝唯一用户号。
@@ -57,6 +63,13 @@ public class AlipayTradeWapPayResponse extends AlipayResponse {
 	}
 	public String getOutTradeNo( ) {
 		return this.outTradeNo;
+	}
+
+	public void setPageRedirectionData(String pageRedirectionData) {
+		this.pageRedirectionData = pageRedirectionData;
+	}
+	public String getPageRedirectionData( ) {
+		return this.pageRedirectionData;
 	}
 
 	public void setSellerId(String sellerId) {

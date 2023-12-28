@@ -8,14 +8,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.common.guidedcode.receive response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-04 20:01:54
+ * @since 1.0, 2023-12-25 17:31:54
  */
 public class AlipayCommerceCommonGuidedcodeReceiveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8848411673888949324L;
+	private static final long serialVersionUID = 5639661631522831272L;
 
 	/** 
-	 * 二维码地址
+	 * 具体跳转的端内链接，为创建模板时的appletId
 	 */
 	@ApiField("guided_code")
 	private String guidedCode;
@@ -31,6 +31,12 @@ public class AlipayCommerceCommonGuidedcodeReceiveResponse extends AlipayRespons
 	 */
 	@ApiField("guided_share_code")
 	private String guidedShareCode;
+
+	/** 
+	 * 推广短链接
+	 */
+	@ApiField("guided_short_url")
+	private String guidedShortUrl;
 
 	public void setGuidedCode(String guidedCode) {
 		this.guidedCode = guidedCode;
@@ -51,6 +57,13 @@ public class AlipayCommerceCommonGuidedcodeReceiveResponse extends AlipayRespons
 	}
 	public String getGuidedShareCode( ) {
 		return this.guidedShareCode;
+	}
+
+	public void setGuidedShortUrl(String guidedShortUrl) {
+		this.guidedShortUrl = guidedShortUrl;
+	}
+	public String getGuidedShortUrl( ) {
+		return this.guidedShortUrl;
 	}
 
 }

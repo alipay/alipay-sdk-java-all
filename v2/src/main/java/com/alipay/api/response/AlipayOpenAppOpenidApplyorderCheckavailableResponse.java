@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.openid.applyorder.checkavailable response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 17:41:44
+ * @since 1.0, 2023-12-20 11:07:03
  */
 public class AlipayOpenAppOpenidApplyorderCheckavailableResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5364416861731927395L;
+	private static final long serialVersionUID = 6664993385615288229L;
 
 	/** 
 	 * 最近创建的10条工单状态信息

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 结算条款信息
  *
  * @author auto create
- * @since 1.0, 2023-12-19 17:29:42
+ * @since 1.0, 2023-12-22 14:05:16
  */
 public class SettleClause extends AlipayObject {
 
-	private static final long serialVersionUID = 1245137236514912231L;
+	private static final long serialVersionUID = 1457571945355959758L;
 
 	/**
 	 * 结算金额，单位为元
@@ -58,6 +58,12 @@ defaultSettle: 按默认结算规则结算
 	 */
 	@ApiField("settle_account_type")
 	private String settleAccountType;
+
+	/**
+	 * 已结算资产
+	 */
+	@ApiField("settle_entity_biz_type")
+	private String settleEntityBizType;
 
 	/**
 	 * 结算主体账号。
@@ -120,6 +126,13 @@ Store：结算主体为门店
 	}
 	public void setSettleAccountType(String settleAccountType) {
 		this.settleAccountType = settleAccountType;
+	}
+
+	public String getSettleEntityBizType() {
+		return this.settleEntityBizType;
+	}
+	public void setSettleEntityBizType(String settleEntityBizType) {
+		this.settleEntityBizType = settleEntityBizType;
 	}
 
 	public String getSettleEntityId() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * linkedmall查询蚂蚁森林能量
  *
  * @author auto create
- * @since 1.0, 2023-12-12 19:57:18
+ * @since 1.0, 2023-12-25 20:01:16
  */
 public class AlipaySocialAntiepLinkedmallenergyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7761721997212254776L;
+	private static final long serialVersionUID = 1766686756384453863L;
 
 	/**
 	 * 业务ID
@@ -30,6 +30,12 @@ public class AlipaySocialAntiepLinkedmallenergyQueryModel extends AlipayObject {
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/**
+	 * 场景码，如：antforest（蚂蚁森林）
+	 */
+	@ApiField("scene_code")
+	private String sceneCode;
 
 	/**
 	 * sku_id
@@ -62,6 +68,13 @@ public class AlipaySocialAntiepLinkedmallenergyQueryModel extends AlipayObject {
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public String getSceneCode() {
+		return this.sceneCode;
+	}
+	public void setSceneCode(String sceneCode) {
+		this.sceneCode = sceneCode;
 	}
 
 	public Long getSkuId() {

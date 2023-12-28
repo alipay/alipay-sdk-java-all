@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * OpenID转换工单提交审核
  *
  * @author auto create
- * @since 1.0, 2023-04-24 14:46:39
+ * @since 1.0, 2023-12-28 11:23:51
  */
 public class AlipayOpenAppOpenidApplyorderSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8481522686224227912L;
+	private static final long serialVersionUID = 8519398956213598334L;
 
 	/**
 	 * 工单唯一标识

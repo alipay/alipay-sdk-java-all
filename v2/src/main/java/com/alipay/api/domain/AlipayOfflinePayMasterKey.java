@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOfflinePayMasterKey extends AlipayObject {
 
-	private static final long serialVersionUID = 7856536151887243367L;
+	private static final long serialVersionUID = 6692132239958189278L;
 
 	/**
 	 * 秘钥id

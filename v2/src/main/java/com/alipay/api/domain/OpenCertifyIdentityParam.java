@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开放认证身份参数
  *
  * @author auto create
- * @since 1.0, 2023-12-04 15:41:06
+ * @since 1.0, 2023-12-26 15:56:52
  */
 public class OpenCertifyIdentityParam extends AlipayObject {
 
-	private static final long serialVersionUID = 4794617865535931645L;
+	private static final long serialVersionUID = 4816797426687944278L;
 
 	/**
 	 * cert_digest：

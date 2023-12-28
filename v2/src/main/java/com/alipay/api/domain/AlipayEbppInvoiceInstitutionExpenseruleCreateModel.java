@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建费控使用规则
  *
  * @author auto create
- * @since 1.0, 2023-10-18 15:59:27
+ * @since 1.0, 2023-12-22 15:31:31
  */
 public class AlipayEbppInvoiceInstitutionExpenseruleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2329639246394433746L;
+	private static final long serialVersionUID = 5542331818166458929L;
 
 	/**
 	 * 企业共同账户id

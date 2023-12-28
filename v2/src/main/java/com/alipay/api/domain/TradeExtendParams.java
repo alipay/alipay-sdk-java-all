@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 国标移动支付间连下单扩展字段
  *
  * @author auto create
- * @since 1.0, 2023-07-10 10:10:26
+ * @since 1.0, 2023-12-27 16:44:51
  */
 public class TradeExtendParams extends AlipayObject {
 
-	private static final long serialVersionUID = 7623778862137338357L;
+	private static final long serialVersionUID = 6526541732937191635L;
 
 	/**
 	 * 渠道标识
@@ -48,6 +48,12 @@ public class TradeExtendParams extends AlipayObject {
 	 */
 	@ApiField("medical_ins_card_id")
 	private String medicalInsCardId;
+
+	/**
+	 * 用于标记平台购药场景中的订单来源
+	 */
+	@ApiField("platform_source")
+	private String platformSource;
 
 	/**
 	 * 医保数据结构体,各地透传参数详见"医保透传参数说明"
@@ -107,6 +113,13 @@ public class TradeExtendParams extends AlipayObject {
 	}
 	public void setMedicalInsCardId(String medicalInsCardId) {
 		this.medicalInsCardId = medicalInsCardId;
+	}
+
+	public String getPlatformSource() {
+		return this.platformSource;
+	}
+	public void setPlatformSource(String platformSource) {
+		this.platformSource = platformSource;
 	}
 
 	public String getRequestContent() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 管控账户余额查询
  *
  * @author auto create
- * @since 1.0, 2023-05-29 11:40:31
+ * @since 1.0, 2023-12-25 16:00:09
  */
 public class AnttechBlockchainFinanceFsupvBalanceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8195822883139548852L;
+	private static final long serialVersionUID = 2531785386255789314L;
 
 	/**
 	 * 资金管控任务编号

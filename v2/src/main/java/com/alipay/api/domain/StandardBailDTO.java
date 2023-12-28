@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class StandardBailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6318953522318196997L;
+	private static final long serialVersionUID = 2641639684262469648L;
 
 	/**
 	 * 保证金剩余可用余额

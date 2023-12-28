@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankFinanceYulibaoAccountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1194478325618397845L;
+	private static final long serialVersionUID = 6544587112276295623L;
 
 	/** 
 	 * 可用份额，单位为元

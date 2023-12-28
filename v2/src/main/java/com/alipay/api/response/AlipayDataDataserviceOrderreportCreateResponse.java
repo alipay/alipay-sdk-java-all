@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataDataserviceOrderreportCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1494882914178762743L;
+	private static final long serialVersionUID = 2268678596556445432L;
 
 	
 

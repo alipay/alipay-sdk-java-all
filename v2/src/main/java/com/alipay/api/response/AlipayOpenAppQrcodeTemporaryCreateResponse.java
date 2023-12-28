@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.qrcode.temporary.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-16 15:01:49
+ * @since 1.0, 2023-12-20 16:28:02
  */
 public class AlipayOpenAppQrcodeTemporaryCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2486476112617321785L;
+	private static final long serialVersionUID = 2254559781616357419L;
 
 	/** 
 	 * 动态二维码的支付宝码值

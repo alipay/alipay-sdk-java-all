@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.customer.auth.mutualview.apply request
  * 
  * @author auto create
- * @since 1.0, 2020-11-26 14:12:46
+ * @since 1.0, 2023-12-20 13:32:42
  */
 public class ZhimaCustomerAuthMutualviewApplyRequest implements AlipayRequest<ZhimaCustomerAuthMutualviewApplyResponse> {
 

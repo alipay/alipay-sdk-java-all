@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 申请电子签章
  *
  * @author auto create
- * @since 1.0, 2023-02-21 16:19:13
+ * @since 1.0, 2023-12-26 14:22:15
  */
 public class AlipayDataBillEreceiptApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2167866658937232452L;
+	private static final long serialVersionUID = 6118794139379558321L;
 
 	/**
 	 * 授权商户pid。需调用方获取商户授权，才可使用。

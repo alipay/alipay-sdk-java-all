@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 求职期望
  *
  * @author auto create
- * @since 1.0, 2023-11-14 20:21:18
+ * @since 1.0, 2023-12-26 19:19:32
  */
 public class CloudResumePositionIntention extends AlipayObject {
 
-	private static final long serialVersionUID = 8891291264431461424L;
+	private static final long serialVersionUID = 1653629916453793593L;
 
 	/**
-	 * 意向城市Code
+	 * 意向城市Code。具体地区编码参见https://lbs.amap.com/api/webservice/download 里面城市编码表
 	 */
 	@ApiField("intention_city")
 	private String intentionCity;

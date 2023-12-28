@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.kabao.voucher.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-30 19:21:55
+ * @since 1.0, 2023-12-25 11:36:55
  */
 public class AlipayUserKabaoVoucherCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6559425254372215139L;
+	private static final long serialVersionUID = 2798492543132331959L;
 
 	/** 
 	 * 错误信息

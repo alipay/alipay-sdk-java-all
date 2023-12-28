@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 实例下载
  *
  * @author auto create
- * @since 1.0, 2023-08-31 19:40:53
+ * @since 1.0, 2023-12-20 10:15:55
  */
 public class AlipayFincoreComplianceTemplateInstanceDownloadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3553995349532559175L;
+	private static final long serialVersionUID = 1632459689599277725L;
 
 	/**
 	 * 链接持续时间（分钟）
 	 */
 	@ApiField("duration")
 	private Long duration;
+
+	/**
+	 * 是否需要效验实例必填项，默认为否
+	 */
+	@ApiField("required_validate")
+	private Boolean requiredValidate;
 
 	/**
 	 * 下载类型
@@ -36,6 +42,13 @@ public class AlipayFincoreComplianceTemplateInstanceDownloadModel extends Alipay
 	}
 	public void setDuration(Long duration) {
 		this.duration = duration;
+	}
+
+	public Boolean getRequiredValidate() {
+		return this.requiredValidate;
+	}
+	public void setRequiredValidate(Boolean requiredValidate) {
+		this.requiredValidate = requiredValidate;
 	}
 
 	public String getType() {

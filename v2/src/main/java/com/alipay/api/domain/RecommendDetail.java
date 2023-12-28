@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 推荐知识点
  *
  * @author auto create
- * @since 1.0, 2023-12-01 13:57:17
+ * @since 1.0, 2023-12-21 15:43:36
  */
 public class RecommendDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5453677222781161873L;
+	private static final long serialVersionUID = 6743743281769432621L;
 
 	/**
 	 * 知识点id

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 数字分行活动列表查询接口
  *
  * @author auto create
- * @since 1.0, 2023-08-17 15:44:38
+ * @since 1.0, 2023-12-25 14:34:17
  */
 public class AlipayUserDtbankcustActivityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5439698576288388339L;
+	private static final long serialVersionUID = 6738914663598129236L;
 
 	/**
 	 * 活动类型列表：
@@ -60,6 +60,13 @@ public class AlipayUserDtbankcustActivityQueryModel extends AlipayObject {
 	 */
 	@ApiField("limit")
 	private Long limit;
+
+	/**
+	 * 商家pid列表
+	 */
+	@ApiListField("pid_set")
+	@ApiField("string")
+	private List<String> pidSet;
 
 	/**
 	 * 来源，查询来源，初次接入，需要联系分配source
@@ -119,6 +126,13 @@ public class AlipayUserDtbankcustActivityQueryModel extends AlipayObject {
 	}
 	public void setLimit(Long limit) {
 		this.limit = limit;
+	}
+
+	public List<String> getPidSet() {
+		return this.pidSet;
+	}
+	public void setPidSet(List<String> pidSet) {
+		this.pidSet = pidSet;
 	}
 
 	public String getSource() {

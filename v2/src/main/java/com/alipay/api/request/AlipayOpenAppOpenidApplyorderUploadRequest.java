@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.openid.applyorder.upload request
  * 
  * @author auto create
- * @since 1.0, 2023-09-03 23:11:44
+ * @since 1.0, 2023-12-28 11:46:55
  */
 public class AlipayOpenAppOpenidApplyorderUploadRequest implements AlipayRequest<AlipayOpenAppOpenidApplyorderUploadResponse> {
 

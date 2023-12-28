@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.finance.fsupv.fund.transfer request
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 01:56:44
+ * @since 1.0, 2023-12-25 16:00:48
  */
 public class AnttechBlockchainFinanceFsupvFundTransferRequest implements AlipayRequest<AnttechBlockchainFinanceFsupvFundTransferResponse> {
 

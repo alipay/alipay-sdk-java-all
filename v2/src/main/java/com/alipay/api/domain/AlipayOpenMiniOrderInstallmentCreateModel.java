@@ -7,17 +7,39 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单分期
  *
  * @author auto create
- * @since 1.0, 2023-12-04 16:36:05
+ * @since 1.0, 2023-12-20 15:04:17
  */
 public class AlipayOpenMiniOrderInstallmentCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3789879435418484191L;
+	private static final long serialVersionUID = 2211787993825811751L;
 
 	/**
 	 * 续租场景分期数，当分期类型为RELET时，该字段必填
 	 */
 	@ApiField("addon_period_num")
 	private Long addonPeriodNum;
+
+	/**
+	 * 当installment_no_type为PERIOD时，填写分期数
+	 */
+	@ApiField("installment_no")
+	private String installmentNo;
+
+	/**
+	 * 分期数类型
+	 */
+	@ApiField("installment_no_type")
+	private String installmentNoType;
+
+	/**
+	 * 当分期类型为RENT，
+      期数为1时，分期金额=首期金额；
+      期数非1时，分期金额=每期金额，如果有尾期金额，最后一期分期金额=尾期金额；
+  当分期类型为BUYOUT，分期金额=买断价 buyout_price；
+   当分期类型为RELET，分期金额即续租金额；
+	 */
+	@ApiField("installment_price")
+	private String installmentPrice;
 
 	/**
 	 * 分期是否已经完结。
@@ -38,6 +60,13 @@ true:已完结
 	 */
 	@ApiField("order_id")
 	private String orderId;
+
+	/**
+	 * 分期单外部请求号。由商家自定义，64个字符以内，仅支持字母、数字、下划线且需保证在商户端不重复。
+其他请求参数不变时重复请求会幂等返回分期单号。
+	 */
+	@ApiField("out_installment_order_id")
+	private String outInstallmentOrderId;
 
 	/**
 	 * 外部商户订单号
@@ -76,6 +105,27 @@ true:已完结
 		this.addonPeriodNum = addonPeriodNum;
 	}
 
+	public String getInstallmentNo() {
+		return this.installmentNo;
+	}
+	public void setInstallmentNo(String installmentNo) {
+		this.installmentNo = installmentNo;
+	}
+
+	public String getInstallmentNoType() {
+		return this.installmentNoType;
+	}
+	public void setInstallmentNoType(String installmentNoType) {
+		this.installmentNoType = installmentNoType;
+	}
+
+	public String getInstallmentPrice() {
+		return this.installmentPrice;
+	}
+	public void setInstallmentPrice(String installmentPrice) {
+		this.installmentPrice = installmentPrice;
+	}
+
 	public Boolean getIsFinishPerformance() {
 		return this.isFinishPerformance;
 	}
@@ -95,6 +145,13 @@ true:已完结
 	}
 	public void setOrderId(String orderId) {
 		this.orderId = orderId;
+	}
+
+	public String getOutInstallmentOrderId() {
+		return this.outInstallmentOrderId;
+	}
+	public void setOutInstallmentOrderId(String outInstallmentOrderId) {
+		this.outInstallmentOrderId = outInstallmentOrderId;
 	}
 
 	public String getOutOrderId() {

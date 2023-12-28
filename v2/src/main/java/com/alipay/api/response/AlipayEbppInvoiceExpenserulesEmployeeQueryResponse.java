@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.expenserules.employee.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-11 18:51:50
+ * @since 1.0, 2023-12-22 15:34:13
  */
 public class AlipayEbppInvoiceExpenserulesEmployeeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8334571992868494277L;
+	private static final long serialVersionUID = 3334171986231786446L;
 
 	/** 
 	 * 切换open_id前请使用此字段：员工列表

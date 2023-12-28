@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KVObj extends AlipayObject {
 
-	private static final long serialVersionUID = 7486972345735633212L;
+	private static final long serialVersionUID = 3112521999425712183L;
 
 	/**
 	 * KV模型的key

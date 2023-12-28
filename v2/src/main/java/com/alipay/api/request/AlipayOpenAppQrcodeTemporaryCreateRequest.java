@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.qrcode.temporary.create request
  * 
  * @author auto create
- * @since 1.0, 2023-11-16 15:01:49
+ * @since 1.0, 2023-12-20 16:28:02
  */
 public class AlipayOpenAppQrcodeTemporaryCreateRequest implements AlipayRequest<AlipayOpenAppQrcodeTemporaryCreateResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金业务明细实体
  *
  * @author auto create
- * @since 1.0, 2023-11-08 16:43:40
+ * @since 1.0, 2023-12-20 16:28:52
  */
 public class BizFundReportResult extends AlipayObject {
 
-	private static final long serialVersionUID = 4875547229256459929L;
+	private static final long serialVersionUID = 1724591337462895897L;
 
 	/**
 	 * 实付金额（元）
@@ -134,7 +134,7 @@ public class BizFundReportResult extends AlipayObject {
 	private String payerFundTypeDesc;
 
 	/**
-	 * 退款金额
+	 * 退款金额（元）
 	 */
 	@ApiField("refund_amount")
 	private String refundAmount;
@@ -170,7 +170,7 @@ public class BizFundReportResult extends AlipayObject {
 	private String statusDesc;
 
 	/**
-	 * 业务子类型
+	 * 普通转账
 	 */
 	@ApiField("sub_biz_type")
 	private String subBizType;

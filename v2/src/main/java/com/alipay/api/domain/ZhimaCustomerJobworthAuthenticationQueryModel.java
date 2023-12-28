@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 职得身份认证查询接口
  *
  * @author auto create
- * @since 1.0, 2023-11-24 18:22:17
+ * @since 1.0, 2023-12-25 16:39:15
  */
 public class ZhimaCustomerJobworthAuthenticationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5468861281853867742L;
+	private static final long serialVersionUID = 4773177137545527356L;
 
 	/**
 	 * 证件号

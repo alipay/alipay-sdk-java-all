@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金管控场景中，资金转账明细
  *
  * @author auto create
- * @since 1.0, 2023-05-29 11:37:22
+ * @since 1.0, 2023-12-26 16:22:34
  */
 public class SupvFundTransferDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1328148574761167471L;
+	private static final long serialVersionUID = 8289625454662273336L;
 
 	/**
 	 * 金额

@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序备案审批项列表信息
  *
  * @author auto create
- * @since 1.0, 2023-11-30 20:48:03
+ * @since 1.0, 2023-12-27 10:55:19
  */
 public class IcpAuditInfoList extends AlipayObject {
 
-	private static final long serialVersionUID = 2338441651616214415L;
+	private static final long serialVersionUID = 5846435568575439693L;
+
+	/**
+	 * 小程序前置审批文件材料凭证media_id（参考：备案文件材料上传接口）
+	 */
+	@ApiField("audit_material")
+	private String auditMaterial;
 
 	/**
 	 * 小程序前置审批号
@@ -20,29 +26,23 @@ public class IcpAuditInfoList extends AlipayObject {
 	private String auditNumber;
 
 	/**
-	 * 小程序前置审批文件材料凭证media_id（参考：备案文件材料上传接口）
-	 */
-	@ApiField("audit_photo")
-	private String auditPhoto;
-
-	/**
 	 * 小程序前置审批项类型（参考：获取小程序前置审批项接口）
 	 */
 	@ApiField("audit_type")
 	private String auditType;
+
+	public String getAuditMaterial() {
+		return this.auditMaterial;
+	}
+	public void setAuditMaterial(String auditMaterial) {
+		this.auditMaterial = auditMaterial;
+	}
 
 	public String getAuditNumber() {
 		return this.auditNumber;
 	}
 	public void setAuditNumber(String auditNumber) {
 		this.auditNumber = auditNumber;
-	}
-
-	public String getAuditPhoto() {
-		return this.auditPhoto;
-	}
-	public void setAuditPhoto(String auditPhoto) {
-		this.auditPhoto = auditPhoto;
 	}
 
 	public String getAuditType() {

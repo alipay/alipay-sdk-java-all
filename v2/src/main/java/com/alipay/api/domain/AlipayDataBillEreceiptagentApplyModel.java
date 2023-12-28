@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ISV代理商户申请电子回单
  *
  * @author auto create
- * @since 1.0, 2023-11-02 10:01:36
+ * @since 1.0, 2023-12-20 16:29:49
  */
 public class AlipayDataBillEreceiptagentApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5292615752197513114L;
+	private static final long serialVersionUID = 4278698276958979461L;
 
 	/**
 	 * ISV与商户签约授权协议号
@@ -20,10 +20,23 @@ public class AlipayDataBillEreceiptagentApplyModel extends AlipayObject {
 	private String agreementNo;
 
 	/**
+	 * 查询时间区间的结束时间，属于闭区间。
+[start_time,end_time]
+	 */
+	@ApiField("end_time")
+	private String endTime;
+
+	/**
 	 * 根据不同业务类型，传入不同参数。格式如下： * FUND_DETAIL - 资金业务回单。传入资金单号(fundOrderId，可通过充值、转账、提现接口获取)
 	 */
 	@ApiField("key")
 	private String key;
+
+	/**
+	 * 搜索范围的起始时间
+	 */
+	@ApiField("start_time")
+	private String startTime;
 
 	/**
 	 * 申请的类型（目前仅支持资金业务回单）。可传入： * FUND_DETAIL - 资金业务回单。
@@ -38,11 +51,25 @@ public class AlipayDataBillEreceiptagentApplyModel extends AlipayObject {
 		this.agreementNo = agreementNo;
 	}
 
+	public String getEndTime() {
+		return this.endTime;
+	}
+	public void setEndTime(String endTime) {
+		this.endTime = endTime;
+	}
+
 	public String getKey() {
 		return this.key;
 	}
 	public void setKey(String key) {
 		this.key = key;
+	}
+
+	public String getStartTime() {
+		return this.startTime;
+	}
+	public void setStartTime(String startTime) {
+		this.startTime = startTime;
 	}
 
 	public String getType() {

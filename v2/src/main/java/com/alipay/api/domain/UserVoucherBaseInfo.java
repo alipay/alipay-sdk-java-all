@@ -9,17 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户券实例基础信息
  *
  * @author auto create
- * @since 1.0, 2023-07-21 11:25:40
+ * @since 1.0, 2023-12-26 22:54:18
  */
 public class UserVoucherBaseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4817894326457597143L;
+	private static final long serialVersionUID = 1129134616388381533L;
 
 	/**
 	 * 若商家券操作过关联商户订单信息，则该字段返回商家券已关联的商户订单号。
 	 */
 	@ApiField("associate_trade_no")
 	private String associateTradeNo;
+
+	/**
+	 * 券归属商户
+	 */
+	@ApiField("belong_merchant_id")
+	private String belongMerchantId;
 
 	/**
 	 * 领券时间
@@ -74,6 +80,13 @@ public class UserVoucherBaseInfo extends AlipayObject {
 	}
 	public void setAssociateTradeNo(String associateTradeNo) {
 		this.associateTradeNo = associateTradeNo;
+	}
+
+	public String getBelongMerchantId() {
+		return this.belongMerchantId;
+	}
+	public void setBelongMerchantId(String belongMerchantId) {
+		this.belongMerchantId = belongMerchantId;
 	}
 
 	public Date getCreateTime() {

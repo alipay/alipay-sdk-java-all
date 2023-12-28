@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.servicemarket.qrcode.offline.get request
  * 
  * @author auto create
- * @since 1.0, 2023-12-15 14:26:55
+ * @since 1.0, 2023-12-25 17:26:54
  */
 public class AlipayOpenServicemarketQrcodeOfflineGetRequest implements AlipayRequest<AlipayOpenServicemarketQrcodeOfflineGetResponse> {
 

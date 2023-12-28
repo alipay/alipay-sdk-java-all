@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 根据应用OpenId批量获取用户支付宝用户ID
  *
  * @author auto create
- * @since 1.0, 2023-07-14 16:08:16
+ * @since 1.0, 2023-12-28 11:23:51
  */
 public class AlipayOpenAppOpenidOpenidtouidBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7245375211644691295L;
+	private static final long serialVersionUID = 7882618136429264614L;
 
 	/**
 	 * 业务appid参数，用于转换其他appid的openid，需要申请更高执行权限。默认应为空。

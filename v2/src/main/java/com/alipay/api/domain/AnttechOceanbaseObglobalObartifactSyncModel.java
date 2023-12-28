@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 同步ob制品数据
  *
  * @author auto create
- * @since 1.0, 2023-04-03 19:29:36
+ * @since 1.0, 2023-12-27 19:27:21
  */
 public class AnttechOceanbaseObglobalObartifactSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6478192482959826498L;
+	private static final long serialVersionUID = 6723724494988289568L;
 
 	/**
 	 * ob制品数据

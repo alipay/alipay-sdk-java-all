@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.app.pay response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-18 19:56:57
+ * @since 1.0, 2023-12-27 10:04:35
  */
 public class AlipayTradeAppPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7716258622588127422L;
+	private static final long serialVersionUID = 4258812395917215396L;
 
 	/** 
 	 * 授信协议号。信用支付场景才有值，先用后付产品里是用户的芝麻授信协议号
@@ -37,6 +37,12 @@ public class AlipayTradeAppPayResponse extends AlipayResponse {
 	 */
 	@ApiField("merchant_order_no")
 	private String merchantOrderNo;
+
+	/** 
+	 * 获取签名后的业务数据
+	 */
+	@ApiField("orderStr")
+	private String orderStr;
 
 	/** 
 	 * 商户订单号，由商家自定义。
@@ -89,6 +95,13 @@ public class AlipayTradeAppPayResponse extends AlipayResponse {
 	}
 	public String getMerchantOrderNo( ) {
 		return this.merchantOrderNo;
+	}
+
+	public void setOrderStr(String orderStr) {
+		this.orderStr = orderStr;
+	}
+	public String getOrderStr( ) {
+		return this.orderStr;
 	}
 
 	public void setOutTradeNo(String outTradeNo) {

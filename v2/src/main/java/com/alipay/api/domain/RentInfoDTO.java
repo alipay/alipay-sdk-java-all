@@ -1,5 +1,7 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
@@ -7,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租金信息
  *
  * @author auto create
- * @since 1.0, 2023-12-05 10:29:29
+ * @since 1.0, 2023-12-28 16:29:58
  */
 public class RentInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2319176174919759858L;
+	private static final long serialVersionUID = 7483175767736394786L;
 
 	/**
 	 * 续租总期数，仅续租且订单修改时传入，1-12的整数，包含边界值
@@ -30,6 +32,12 @@ public class RentInfoDTO extends AlipayObject {
 	 */
 	@ApiField("buyout_price")
 	private String buyoutPrice;
+
+	/**
+	 * 押金金额，单位元
+	 */
+	@ApiField("deposit_price")
+	private String depositPrice;
 
 	/**
 	 * 尾期租金用在非每期分期租金一致场景，例如一笔订单总金额100，首期33.33，每期33.33，尾期33.34，，单位元
@@ -55,6 +63,18 @@ public class RentInfoDTO extends AlipayObject {
 	@ApiField("period_real_rent_price")
 	private String periodRealRentPrice;
 
+	/**
+	 * 租期结束时间
+	 */
+	@ApiField("rent_end_time")
+	private Date rentEndTime;
+
+	/**
+	 * 租期开始时间
+	 */
+	@ApiField("rent_start_time")
+	private Date rentStartTime;
+
 	public String getAddonPeriodNum() {
 		return this.addonPeriodNum;
 	}
@@ -74,6 +94,13 @@ public class RentInfoDTO extends AlipayObject {
 	}
 	public void setBuyoutPrice(String buyoutPrice) {
 		this.buyoutPrice = buyoutPrice;
+	}
+
+	public String getDepositPrice() {
+		return this.depositPrice;
+	}
+	public void setDepositPrice(String depositPrice) {
+		this.depositPrice = depositPrice;
 	}
 
 	public String getFinishRealRentPrice() {
@@ -102,6 +129,20 @@ public class RentInfoDTO extends AlipayObject {
 	}
 	public void setPeriodRealRentPrice(String periodRealRentPrice) {
 		this.periodRealRentPrice = periodRealRentPrice;
+	}
+
+	public Date getRentEndTime() {
+		return this.rentEndTime;
+	}
+	public void setRentEndTime(Date rentEndTime) {
+		this.rentEndTime = rentEndTime;
+	}
+
+	public Date getRentStartTime() {
+		return this.rentStartTime;
+	}
+	public void setRentStartTime(Date rentStartTime) {
+		this.rentStartTime = rentStartTime;
 	}
 
 }

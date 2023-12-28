@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 五福获取惊喜福卡
  *
  * @author auto create
- * @since 1.0, 2022-12-06 11:14:15
+ * @since 1.0, 2023-12-21 16:52:53
  */
 public class AlipayFundCouponWufuCardApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1612421697577269631L;
+	private static final long serialVersionUID = 1552239115857298248L;
 
 	/**
 	 * 业务流水号（不做幂等处理，只用于记录回溯）
 	 */
 	@ApiField("biz_id")
 	private String bizId;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 业务场景
@@ -36,6 +42,13 @@ public class AlipayFundCouponWufuCardApplyModel extends AlipayObject {
 	}
 	public void setBizId(String bizId) {
 		this.bizId = bizId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getSenceCode() {

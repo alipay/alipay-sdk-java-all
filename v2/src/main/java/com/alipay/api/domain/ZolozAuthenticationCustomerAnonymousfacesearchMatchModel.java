@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸搜索
  *
  * @author auto create
- * @since 1.0, 2019-06-10 20:40:05
+ * @since 1.0, 2023-12-22 15:43:39
  */
 public class ZolozAuthenticationCustomerAnonymousfacesearchMatchModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7763314927939722168L;
+	private static final long serialVersionUID = 5676476561393185555L;
 
 	/**
 	 * 防攻击能力参数

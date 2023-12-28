@@ -4,6 +4,7 @@ import java.util.Date;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.domain.ActivityBaseInfo;
 import com.alipay.api.domain.UserVoucherBaseInfo;
+import com.alipay.api.domain.VoucherCustomerGuideInfo;
 import com.alipay.api.domain.VoucherDeductInfo;
 import com.alipay.api.domain.CommonVoucherDisplayInfo;
 import com.alipay.api.domain.VoucherDisplayPatternInfo;
@@ -18,11 +19,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.user.queryvoucher response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-15 18:01:56
+ * @since 1.0, 2023-12-27 09:51:55
  */
 public class AlipayMarketingActivityUserQueryvoucherResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4636923592976831963L;
+	private static final long serialVersionUID = 6251498311592655852L;
 
 	/** 
 	 * 活动基础信息
@@ -71,6 +72,12 @@ public class AlipayMarketingActivityUserQueryvoucherResponse extends AlipayRespo
 	 */
 	@ApiField("user_voucher_base_info")
 	private UserVoucherBaseInfo userVoucherBaseInfo;
+
+	/** 
+	 * 引导详情
+	 */
+	@ApiField("voucher_customer_guide_info")
+	private VoucherCustomerGuideInfo voucherCustomerGuideInfo;
 
 	/** 
 	 * 券优惠信息
@@ -186,6 +193,13 @@ public class AlipayMarketingActivityUserQueryvoucherResponse extends AlipayRespo
 	}
 	public UserVoucherBaseInfo getUserVoucherBaseInfo( ) {
 		return this.userVoucherBaseInfo;
+	}
+
+	public void setVoucherCustomerGuideInfo(VoucherCustomerGuideInfo voucherCustomerGuideInfo) {
+		this.voucherCustomerGuideInfo = voucherCustomerGuideInfo;
+	}
+	public VoucherCustomerGuideInfo getVoucherCustomerGuideInfo( ) {
+		return this.voucherCustomerGuideInfo;
 	}
 
 	public void setVoucherDeductInfo(VoucherDeductInfo voucherDeductInfo) {

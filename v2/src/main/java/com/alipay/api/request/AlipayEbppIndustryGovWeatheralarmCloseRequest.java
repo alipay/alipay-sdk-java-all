@@ -1,26 +1,26 @@
 package com.alipay.api.request;
 
-import com.alipay.api.domain.KoubeiCateringKmsOrderSyncModel;
+import com.alipay.api.domain.AlipayEbppIndustryGovWeatheralarmCloseModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
-import com.alipay.api.response.KoubeiCateringKmsOrderSyncResponse;
+import com.alipay.api.response.AlipayEbppIndustryGovWeatheralarmCloseResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: koubei.catering.kms.order.sync request
+ * ALIPAY API: alipay.ebpp.industry.gov.weatheralarm.close request
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 22:25:03
+ * @since 1.0, 2023-12-26 11:06:55
  */
-public class KoubeiCateringKmsOrderSyncRequest implements AlipayRequest<KoubeiCateringKmsOrderSyncResponse> {
+public class AlipayEbppIndustryGovWeatheralarmCloseRequest implements AlipayRequest<AlipayEbppIndustryGovWeatheralarmCloseResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
 
 	/** 
-	* 同步外部订单到KDS
+	* 天气预警关闭接口
 	 */
 	private String bizContent;
 
@@ -87,7 +87,7 @@ public class KoubeiCateringKmsOrderSyncRequest implements AlipayRequest<KoubeiCa
 	}
 
 	public String getApiMethodName() {
-		return "koubei.catering.kms.order.sync";
+		return "alipay.ebpp.industry.gov.weatheralarm.close";
 	}
 
 	public Map<String, String> getTextParams() {		
@@ -106,8 +106,8 @@ public class KoubeiCateringKmsOrderSyncRequest implements AlipayRequest<KoubeiCa
 		this.udfParams.put(key, value);
 	}
 
-	public Class<KoubeiCateringKmsOrderSyncResponse> getResponseClass() {
-		return KoubeiCateringKmsOrderSyncResponse.class;
+	public Class<AlipayEbppIndustryGovWeatheralarmCloseResponse> getResponseClass() {
+		return AlipayEbppIndustryGovWeatheralarmCloseResponse.class;
 	}
 	
 

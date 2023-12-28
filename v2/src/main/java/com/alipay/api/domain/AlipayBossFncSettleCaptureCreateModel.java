@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayBossFncSettleCaptureCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6856194215631796288L;
+	private static final long serialVersionUID = 8438919171291779177L;
 
 	/**
 	 * 请款创建单列表

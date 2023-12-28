@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 国家医保局线上业务身份核验信息授权查询接口
  *
  * @author auto create
- * @since 1.0, 2023-08-29 15:50:17
+ * @since 1.0, 2023-12-22 17:28:49
  */
 public class AlipayCommerceMedicalAuthinfoAuthQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2167385479578329383L;
+	private static final long serialVersionUID = 4674581398499666565L;
 
 	/**
 	 * 支付宝用户Id

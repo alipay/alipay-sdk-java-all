@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoCplifeRoominfoDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3733368873233491474L;
+	private static final long serialVersionUID = 5143641883139186398L;
 
 	
 

@@ -7,26 +7,26 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户ID转换OpenID接口专用，返回用户的openId和unionId
  *
  * @author auto create
- * @since 1.0, 2023-06-27 21:17:14
+ * @since 1.0, 2023-12-28 10:22:49
  */
 public class OpenIdValue extends AlipayObject {
 
-	private static final long serialVersionUID = 3381533547527696216L;
+	private static final long serialVersionUID = 7271411389177255324L;
 
 	/**
-	 * 用户OpenID
+	 * 用户openid
 	 */
 	@ApiField("open_id")
 	private String openId;
 
 	/**
-	 * 用户UnionID
+	 * 用户unionid
 	 */
 	@ApiField("union_id")
 	private String unionId;
 
 	/**
-	 * 支付宝用户ID
+	 * 支付宝用户userid
 	 */
 	@ApiField("user_id")
 	private String userId;

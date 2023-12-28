@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.antiep.linkedmallenergy.query request
  * 
  * @author auto create
- * @since 1.0, 2023-12-12 20:01:54
+ * @since 1.0, 2023-12-25 20:01:55
  */
 public class AlipaySocialAntiepLinkedmallenergyQueryRequest implements AlipayRequest<AlipaySocialAntiepLinkedmallenergyQueryResponse> {
 
