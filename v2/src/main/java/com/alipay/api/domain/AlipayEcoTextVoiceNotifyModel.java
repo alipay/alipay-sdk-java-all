@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEcoTextVoiceNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4764732932476245626L;
+	private static final long serialVersionUID = 8367356536783126319L;
 
 	/**
 	 * 语音回调列表

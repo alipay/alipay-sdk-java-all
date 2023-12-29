@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PortraitDistribution extends AlipayObject {
 
-	private static final long serialVersionUID = 7615276555695186851L;
+	private static final long serialVersionUID = 3252346375342925399L;
 
 	/**
 	 * 分布段的key

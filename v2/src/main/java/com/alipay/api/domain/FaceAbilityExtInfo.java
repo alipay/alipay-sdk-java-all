@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FaceAbilityExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2314653332752513537L;
+	private static final long serialVersionUID = 5638994525429462559L;
 
 	/**
 	 * 已不支持

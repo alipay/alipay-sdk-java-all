@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GbReleaseRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 7885174687993395395L;
+	private static final long serialVersionUID = 6694179482194452244L;
 
 	/**
 	 * 释放金额

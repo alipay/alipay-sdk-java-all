@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RecycleCharityProjectDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1811296513216357771L;
+	private static final long serialVersionUID = 6168598357518841473L;
 
 	/**
 	 * 公益项目底图

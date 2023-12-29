@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KbadvertVoucherManual extends AlipayObject {
 
-	private static final long serialVersionUID = 8326219181364497294L;
+	private static final long serialVersionUID = 6518234946963319564L;
 
 	/**
 	 * 说明

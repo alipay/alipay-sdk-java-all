@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.pe.zmgo.sign.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-28 11:26:56
+ * @since 1.0, 2023-12-28 19:46:55
  */
 public class ZhimaCreditPeZmgoSignApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1148815657355849711L;
+	private static final long serialVersionUID = 1627948596648346352L;
 
 	/** 
 	 * 用于跳转支付宝页面的信息，POST和GET方法生成内容不同：使用POST方法执行，结果为html form表单，在浏览器渲染即可；使用GET方法会得到支付宝URL，需要打开或重定向到该URL。建议使用POST方式。

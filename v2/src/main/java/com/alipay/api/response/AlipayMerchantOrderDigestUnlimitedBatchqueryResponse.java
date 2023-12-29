@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMerchantOrderDigestUnlimitedBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1424861169112224947L;
+	private static final long serialVersionUID = 2788736933877111363L;
 
 	/** 
 	 * 是否还有下一页

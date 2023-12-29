@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingActivityOrdervoucherAssociateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5166263663276749563L;
+	private static final long serialVersionUID = 3847756569218587385L;
 
 	/** 
 	 * 支付宝系统关联订单成功的时间。 格式为：yyyy-MM-dd HH:mm:ss

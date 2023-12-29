@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOverseasTaxOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4182149324175869938L;
+	private static final long serialVersionUID = 3813952847578576145L;
 
 	/**
 	 * 退税机构业务流水号，唯一，由退税机构生成，只能包含英字母、数字，长度不能小于3且不能大于64

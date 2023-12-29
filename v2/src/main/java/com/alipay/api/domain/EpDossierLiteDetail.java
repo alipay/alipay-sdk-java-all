@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业简版档案信息详情
  *
  * @author auto create
- * @since 1.0, 2023-12-20 14:53:07
+ * @since 1.0, 2023-12-29 10:16:44
  */
 public class EpDossierLiteDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8458737846738778118L;
+	private static final long serialVersionUID = 2555632951827233473L;
+
+	/**
+	 * 法人/负责人姓名
+	 */
+	@ApiField("charge_person_name")
+	private String chargePersonName;
 
 	/**
 	 * 统一社会信用代码或营业执照注册号
@@ -36,6 +42,13 @@ public class EpDossierLiteDetail extends AlipayObject {
 	 */
 	@ApiField("ep_type")
 	private String epType;
+
+	public String getChargePersonName() {
+		return this.chargePersonName;
+	}
+	public void setChargePersonName(String chargePersonName) {
+		this.chargePersonName = chargePersonName;
+	}
 
 	public String getEpCertNo() {
 		return this.epCertNo;

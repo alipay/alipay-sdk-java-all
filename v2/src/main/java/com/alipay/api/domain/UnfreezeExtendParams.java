@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class UnfreezeExtendParams extends AlipayObject {
 
-	private static final long serialVersionUID = 5536693759149696252L;
+	private static final long serialVersionUID = 2423826424454913922L;
 
 	/**
 	 * 退出类型

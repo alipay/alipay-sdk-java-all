@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingCampaignDrawcampWhitelistCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3171857476927661947L;
+	private static final long serialVersionUID = 4339859352773925612L;
 
 	/** 
 	 * 操作结果状态，业务维度，网关返回成功状态码并且业务维度返回true才成功

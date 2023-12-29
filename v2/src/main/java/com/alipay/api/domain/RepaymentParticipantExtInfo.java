@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RepaymentParticipantExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3329195454469144428L;
+	private static final long serialVersionUID = 4694743695816939247L;
 
 	/**
 	 * 参与方关联的业务协议号，默认可选，特定场景提供，以业务接入文档为准。

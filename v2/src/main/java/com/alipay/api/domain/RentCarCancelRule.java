@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RentCarCancelRule extends AlipayObject {
 
-	private static final long serialVersionUID = 5753145799867357985L;
+	private static final long serialVersionUID = 6487274855576678972L;
 
 	/**
 	 * 规则内容

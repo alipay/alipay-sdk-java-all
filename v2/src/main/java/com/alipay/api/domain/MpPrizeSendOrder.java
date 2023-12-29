@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MpPrizeSendOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 5871467175767751182L;
+	private static final long serialVersionUID = 3323359597764266443L;
 
 	/**
 	 * 活动id

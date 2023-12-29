@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 云简历基本数据查询
  *
  * @author auto create
- * @since 1.0, 2023-11-27 11:28:05
+ * @since 1.0, 2023-12-29 11:25:50
  */
 public class ZhimaCustomerJobworthCloudresumeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6252765586314982928L;
+	private static final long serialVersionUID = 8373458997877335541L;
 
 	/**
 	 * 长效的认证令牌：zhima.credit.payafteruse.creditagreement.sign 的out_agreement_no

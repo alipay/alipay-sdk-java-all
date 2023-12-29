@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业务扩展参数
  *
  * @author auto create
- * @since 1.0, 2023-10-12 14:35:05
+ * @since 1.0, 2023-12-29 11:08:39
  */
 public class ExtendParams extends AlipayObject {
 
-	private static final long serialVersionUID = 3563633598653246963L;
+	private static final long serialVersionUID = 5674735442887724197L;
 
 	/**
 	 * 卡类型
@@ -55,6 +55,12 @@ public class ExtendParams extends AlipayObject {
 	 */
 	@ApiField("sys_service_provider_id")
 	private String sysServiceProviderId;
+
+	/**
+	 * 公域商品交易分期单ID，小程序交易组件订单特殊场景使用，请传入 订单分期接口(alipay.open.mini.order.installment.create)中返回的installment_order_id
+	 */
+	@ApiField("tc_installment_order_id")
+	private String tcInstallmentOrderId;
 
 	/**
 	 * 公域商品交易业务订单ID
@@ -109,6 +115,13 @@ public class ExtendParams extends AlipayObject {
 	}
 	public void setSysServiceProviderId(String sysServiceProviderId) {
 		this.sysServiceProviderId = sysServiceProviderId;
+	}
+
+	public String getTcInstallmentOrderId() {
+		return this.tcInstallmentOrderId;
+	}
+	public void setTcInstallmentOrderId(String tcInstallmentOrderId) {
+		this.tcInstallmentOrderId = tcInstallmentOrderId;
 	}
 
 	public String getTradeComponentOrderId() {

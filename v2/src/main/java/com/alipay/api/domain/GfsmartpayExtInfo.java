@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GfsmartpayExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4353938669232934452L;
+	private static final long serialVersionUID = 4871642758632424463L;
 
 	/**
 	 * 用户参数的key

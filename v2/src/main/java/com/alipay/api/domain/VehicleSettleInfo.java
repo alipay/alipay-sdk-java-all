@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VehicleSettleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8451317457642225581L;
+	private static final long serialVersionUID = 2766611335891799572L;
 
 	/**
 	 * 结算的金额，单位为元。目前必须和交易金额相同

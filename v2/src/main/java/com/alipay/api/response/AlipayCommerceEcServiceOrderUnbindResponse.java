@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceEcServiceOrderUnbindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6272446318932964395L;
+	private static final long serialVersionUID = 2475979294992472614L;
 
 	/** 
 	 * 在需要解约的情况下，返回取消服务选择需要解约的地址
