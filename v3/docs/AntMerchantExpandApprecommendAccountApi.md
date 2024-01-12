@@ -112,7 +112,7 @@ public class Example {
 
     AntMerchantExpandApprecommendAccountApi apiInstance = new AntMerchantExpandApprecommendAccountApi(defaultClient);
     String appNo = "2021000155639069"; // String | 待解绑小程序的app_id
-    String accNo = "2088001969784501"; // String | 待解绑账号PID
+    String accNo = "20880019****4501"; // String | 待解绑账号PID
     try {
       Object result = apiInstance.delete(appNo, accNo);
       System.out.println(result);
@@ -184,7 +184,7 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AntMerchantExpandApprecommendAccountApi apiInstance = new AntMerchantExpandApprecommendAccountApi(defaultClient);
-    String appNo = "2021000155639069"; // String | 已关联小程序的app_id
+    String appNo = "20210001****9069"; // String | 已关联小程序的app_id
     Integer pageSize = 10; // Integer | 单页行数，不能超过100行
     Integer pageNumber = 1; // Integer | 页码
     try {

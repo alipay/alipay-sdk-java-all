@@ -5,7 +5,7 @@ info:
     url: https://openhome.alipay.com/developmentDocument.htm
   description: 支付宝开放平台v3协议文档
   title: 支付宝开放平台API
-  version: 2023-12-20
+  version: 2024-01-12
 servers:
 - description: Production server
   url: https://openapi.alipay.com
@@ -299,37 +299,6 @@ paths:
       summary: 根据PID获取相关的开票资料
       tags:
       - alipay.boss.fnc.userinvoiceinfo
-      x-accepts: application/json
-  /v3/alipay/boss/prod/my/test/query:
-    get:
-      description: 测试
-      operationId: alipay.boss.prod.my.test.query
-      parameters:
-      - description: 区.
-        explode: true
-        in: query
-        name: area_code
-        required: false
-        schema:
-          example: sahuidsa
-          type: string
-        style: form
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/AlipayBossProdMyTestQueryResponseModel'
-          description: common response
-        default:
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/alipay_boss_prod_my_test_query_default_response'
-          description: 请求失败
-      summary: 明焕open测试
-      tags:
-      - alipay.boss.prod.my.test
       x-accepts: application/json
   /v3/alipay/commerce/cityfacilitator/station/query:
     get:
@@ -2699,6 +2668,15 @@ paths:
         required: false
         schema:
           example: "20205215001418078112"
+          type: string
+        style: form
+      - description: 记账本id，服务商在帮助商户开通时候获取的唯一身份号
+        explode: true
+        in: query
+        name: account_book_id
+        required: false
+        schema:
+          example: "20880123456789012"
           type: string
         style: form
       responses:
@@ -13373,34 +13351,6 @@ paths:
       - alipay.marketing.recruit.planlist
       x-content-type: application/json
       x-accepts: application/json
-  /v3/alipay/marketing/xuanyitest/transfer:
-    post:
-      description: 功能测试，我有一个test，不会匹配上
-      operationId: alipay.marketing.xuanyitest.transfer
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/AlipayMarketingXuanyitestTransferModel'
-        required: false
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/AlipayMarketingXuanyitestTransferResponseModel'
-          description: common response
-        default:
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/alipay_marketing_xuanyitest_transfer_default_response'
-          description: 请求失败
-      summary: 资源化测试4.0
-      tags:
-      - alipay.marketing.xuanyitest
-      x-content-type: application/json
-      x-accepts: application/json
   /v3/alipay/merchant/anchor/query:
     get:
       description: 查询主播信息
@@ -15604,129 +15554,6 @@ paths:
       tags:
       - alipay.open.app.service.schema
       x-accepts: application/json
-  /v3/alipay/open/app/test/gray/create:
-    post:
-      description: openapi，oas3.0灰度
-      operationId: alipay.open.app.test.gray.create
-      parameters:
-      - description: a
-        explode: true
-        in: query
-        name: a
-        required: false
-        schema:
-          example: a1
-          type: string
-        style: form
-      - description: "1"
-        explode: true
-        in: query
-        name: oid
-        required: false
-        schema:
-          example: "111"
-          type: string
-        style: form
-      - description: 生
-        explode: true
-        in: query
-        name: b
-        required: false
-        schema:
-          example: b2
-          type: string
-        style: form
-      - description: c1
-        explode: true
-        in: query
-        name: c
-        required: false
-        schema:
-          example: c1
-          type: string
-        style: form
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/AlipayOpenAppTestGrayCreateModel'
-        required: false
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/AlipayOpenAppTestGrayCreateResponseModel'
-          description: common response
-        default:
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/alipay_open_app_test_gray_create_default_response'
-          description: 请求失败
-      summary: openapi-oas3.0灰度
-      tags:
-      - alipay.open.app.test.gray
-      x-content-type: application/json
-      x-accepts: application/json
-  /v3/alipay/open/app/test/gray/query:
-    get:
-      description: oas get
-      operationId: alipay.open.app.test.gray.query
-      parameters:
-      - description: 纬度
-        explode: true
-        in: query
-        name: latitude
-        required: false
-        schema:
-          example: "123"
-          type: string
-        style: form
-      - description: "1"
-        explode: true
-        in: query
-        name: city_id
-        required: false
-        schema:
-          example: "1"
-          type: string
-        style: form
-      - description: "1"
-        explode: true
-        in: query
-        name: uid
-        required: false
-        schema:
-          example: "1"
-          type: string
-        style: form
-      - description: "1"
-        explode: true
-        in: query
-        name: buy_open_id
-        required: false
-        schema:
-          example: "1"
-          type: string
-        style: form
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/AlipayOpenAppTestGrayQueryResponseModel'
-          description: common response
-        default:
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/alipay_open_app_test_gray_query_default_response'
-          description: 请求失败
-      summary: GET方法测试
-      tags:
-      - alipay.open.app.test.gray
-      x-accepts: application/json
   /v3/alipay/open/auth/app/aes/get:
     get:
       description: 商家应用授权给ISV服务商代管理应用场景下，ISV开发者使用三方应用appId发起调用，通过该接口获取商户应用的AES密钥。接口返回的商户应用aes密钥内容为加密内容，需要ISV使用三方应用的AES密钥对接口返回进行解密。java
@@ -16544,7 +16371,7 @@ paths:
       description: 小程序类目树查询
       operationId: alipay.open.mini.category.query
       parameters:
-      - description: "是否过滤小程序不可用类目。枚举值如下：\t* true：表示过滤不可用类目。\t* false：表示不过滤不可用类目。"
+      - description: 是否过滤小程序不可用类目。枚举值如下： true：表示过滤不可用类目。 false：表示不过滤不可用类目。
         explode: true
         in: query
         name: is_filter
@@ -19105,7 +18932,7 @@ paths:
     post:
       description: |-
         小程序提交审核。
-        1、本接口中关于小程序基础信息的一些字段例如小程序名称、小程序logo、客服电话等，这些信息如果你前期已经设置过，平台将会在你本次调用接口的时候，将上一次设置的信息自动填入，所以允许你本次调用时不传入。如果你前期还未设置过这些信息，则本次调用是需要必传的。具体的字段要求详见每个字段的描述。你可以用alipay.open.mini.version.detail.query接口查询小程序信息之前是否已经设置。
+        1、本接口中关于小程序基础信息的一些字段例如小程序名称、小程序logo、客服电话等，这些信息如果你前期已经设置过，平台将会在你本次调用接口的时候，将上一次设置的信息自动填入，所以允许你本次调用时不传入。如果你前期还未设置过这些信息，则本次调用是需要必传的。具体的字段要求详见每个字段的描述。你可以用<a href="https://opendocs.alipay.com/apis/05ujoy" target="_blank">alipay.open.mini.version.detail.query</a>接口查询小程序信息之前是否已经设置。
         2、小程序版本信息例如小程序版本号、小程序版本描述，这些信息是需要你每次调用接口必传的。
         3、本接口涉及到“审核流程拆分”、“审核加急”、“自动上架”的功能，具体功能详见接口字段audit_rule、speed_up、auto_online描述。
         4、普通模板构建的商家小程序限 5个小程序/模板/日，可以升级为标准版，标准版没有数量限制。
@@ -19714,78 +19541,6 @@ paths:
       tags:
       - alipay.open.mini.widget.goods
       x-content-type: application/json
-      x-accepts: application/json
-  /v3/alipay/open/operation/openbizmock/testpathkey/query/{keykey}/{a}:
-    post:
-      description: 测试网关协议3.0key和path
-      operationId: alipay.open.operation.openbizmock.testpathkey.query
-      parameters:
-      - description: ceshi
-        explode: false
-        in: path
-        name: keykey
-        required: true
-        schema:
-          example: keykey
-          type: string
-        style: simple
-      - description: 测试
-        explode: false
-        in: path
-        name: a
-        required: true
-        schema:
-          example: a
-          type: string
-        style: simple
-      - description: ceshi
-        explode: true
-        in: query
-        name: b
-        required: false
-        schema:
-          example: b
-          type: string
-        style: form
-      - description: 测试
-        explode: true
-        in: query
-        name: c
-        required: false
-        schema:
-          example: c
-          type: string
-        style: form
-      requestBody:
-        content:
-          multipart/form-data:
-            encoding:
-              data:
-                contentType: application/json
-                style: form
-              f:
-                contentType: '*/*'
-                style: form
-            schema:
-              $ref: '#/components/schemas/alipay_open_operation_openbizmock_testpathkey_query_request'
-        required: false
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/AlipayOpenOperationOpenbizmockTestpathkeyQueryResponseModel'
-          description: common response
-        default:
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/alipay_open_operation_openbizmock_testpathkey_query_default_response'
-          description: 请求失败
-      summary: 测试网关协议3.0key和path
-      tags:
-      - alipay.open.operation.openbizmock.testpathkey
-      x-content-type: multipart/form-data
       x-accepts: application/json
   /v3/alipay/open/public/account/create:
     post:
@@ -23954,34 +23709,6 @@ paths:
       - alipay.security.prod.sss
       x-content-type: application/json
       x-accepts: application/json
-  /v3/alipay/security/prod/tianwutest/modify:
-    post:
-      description: tianwutest
-      operationId: alipay.security.prod.tianwutest.modify
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/AlipaySecurityProdTianwutestModifyModel'
-        required: false
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/AlipaySecurityProdTianwutestModifyResponseModel'
-          description: common response
-        default:
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/alipay_security_prod_tianwutest_modify_default_response'
-          description: 请求失败
-      summary: tianwutest
-      tags:
-      - alipay.security.prod.tianwutest
-      x-content-type: application/json
-      x-accepts: application/json
   /v3/alipay/security/risk/customerrisk/send:
     post:
       description: 判断商户有问题时，服务商将商户信息同步到支付宝
@@ -25683,7 +25410,7 @@ paths:
         name: acc_no
         required: false
         schema:
-          example: "2088001969784501"
+          example: 20880019****4501
           type: string
         style: form
       responses:
@@ -25714,7 +25441,7 @@ paths:
         name: app_no
         required: false
         schema:
-          example: "2021000155639069"
+          example: 20210001****9069
           type: string
         style: form
       - description: 单页行数，不能超过100行
@@ -29734,30 +29461,6 @@ components:
         result_set:
           $ref: '#/components/schemas/UserInvoiceInfoOpenApiResponse'
       type: object
-    AlipayBossProdMyTestQueryErrorResponseModel:
-      properties:
-        code:
-          description: 错误码
-          enum:
-          - INVALID_PARAMETER
-          type: string
-        links:
-          description: 解决方案链接
-          type: string
-        message:
-          description: 错误描述
-          type: string
-      required:
-      - code
-      - message
-      type: object
-    AlipayBossProdMyTestQueryResponseModel:
-      properties:
-        longitude:
-          description: 经度
-          example: dshuids
-          type: string
-      type: object
     AlipayCommerceCityfacilitatorStationQueryErrorResponseModel:
       properties:
         code:
@@ -31035,6 +30738,7 @@ components:
           - EMPLOYEE_ADD_FAIL
           - ISV_USER_ID_NOT_SUPPORT
           - EMPLOYEE_NOT_EXIST
+          - ISV_GROUP_APP_ID_EMPTY
           type: string
         links:
           description: 解决方案链接
@@ -31067,6 +30771,10 @@ components:
         enterprise_name:
           description: 企业名称
           example: 企业码测试有限公司
+          type: string
+        group_app_id:
+          description: 对接支付宝人脸库的小程序app_id
+          example: "2021001188888888"
           type: string
         identity:
           description: 管理员身份标识
@@ -33194,9 +32902,17 @@ components:
           description: ISV与商户签约授权协议号
           example: "20200826170801"
           type: string
+        end_time:
+          description: "查询时间区间的结束时间，属于闭区间。\t[start_time,end_time]"
+          example: 2023-11-08 00:00:00
+          type: string
         key:
           description: 根据不同业务类型，传入不同参数。格式如下： * FUND_DETAIL - 资金业务回单。传入资金单号(fundOrderId，可通过充值、转账、提现接口获取)
           example: 2020xxx
+          type: string
+        start_time:
+          description: 搜索范围的起始时间
+          example: 2023-11-08 00:00:00
           type: string
         type:
           description: 申请的类型（目前仅支持资金业务回单）。可传入： * FUND_DETAIL - 资金业务回单。
@@ -41606,7 +41322,8 @@ components:
         deposit_product_mode:
           description: "免押受理台模式，使用免押产品必传该字段。根据免押不同业务模式将开通受理台区分三种模式，商家可根据调用预授权冻结接口传\
             入的参数决定该笔免押订单选择哪种受理台模式。不同受理台模式需要传入不同参数，其中：POSTPAY 表示后付金额已知，POSTPAY_UNCERTAIN\
-            \ 表示后付金额未知，DEPOSIT_ONLY 表示纯免押。\t具体规则参考文档：https://opendocs.alipay.com/b/08tf3t?pathHash=d67d7545"
+            \ 表示后付金额未知，DEPOSIT_ONLY 表示纯免押。\t具体规则参考文档：<a href=\"https://opendocs.alipay.com/b/08tf3t?pathHash=d67d7545\"\
+            >https://opendocs.alipay.com/b/08tf3t?pathHash=d67d7545</a>"
           example: POSTPAY
           type: string
         disable_pay_channels:
@@ -41623,9 +41340,12 @@ components:
           type: string
         extra_param:
           description: "业务扩展参数，用于特定业务信息的传递，json格式。\t1、category，信用类目，信用预授权场景必传，具体类目\
-            信息见https://opendocs.alipay.com/open/10719；\t2、serviceId，信用服务id，信用预授权场景\
-            必传，需要联系芝麻客服获取，https://cshall.alipay.com/enterprise/index.htm?sourceId=pc_zhima（\
-            右上角“有问题点我”进入咨询）；\t3、creditExtInfo，信用参数，可选，如有需要请与芝麻约定后传入，信用服务说明见https://opendocs.alipay.com/open/11157/qlsxya"
+            信息见<a href=\"https://opendocs.alipay.com/open/10719\">https://opendocs.alipay.com/open/10719</a>；\
+            \t2、serviceId，信用服务ID：信用预授权场景必传。需要商家在 <a href=\"https://b.alipay.com/page/zmgaia/pre-auth/index\"\
+            >开放平台-芝麻免押-信用服务管理</a> 创建信用服务获取，详情可查看 <a href=\"https://opendocs.alipay.com/open/03w0a7?pathHash=51f6b4f2&ref=api#%E7%94%B3%E8%AF%B7%E4%BF%A1%E7%94%A8%E6%9C%8D%E5%8A%A1\"\
+            >创建信用服务</a>。在创建过程中如果有其它疑问，可以咨询芝麻客服小二（0571-88158055 转 2）；\t3、creditExtInfo，\
+            信用参数，可选，如有需要请与芝麻约定后传入，信用服务说明见<a href=\"https://opendocs.alipay.com/open/11157/qlsxya\"\
+            >https://opendocs.alipay.com/open/11157/qlsxya</a>"
           example: "{\"category\":\"CHARGE_PILE_CAR\",\"serviceId\":\"2020042800000000000001450466\"\
             }"
           type: string
@@ -41672,7 +41392,8 @@ components:
           description: "后付费项目， 有付费项目时需要传入该字段。不同受理台模式需要传入不同参数，后付费项目名称和计费说明需要通过校验规则，\
             同时计费说明将展示在开通受理台上。当受理台模式（deposit_product_mode）传入POSTPAY 时，后付费项目名称（name）\
             、金额（amount）必传，计费说明（description）选传；当传入 POSTPAY_UNCERTAIN 时，后付费项目名称（name）\
-            、计费说明（description）必传，金额（amount）不传。\t具体规则参考文档：https://opendocs.alipay.com/b/08tf3t?pathHash=d67d7545"
+            、计费说明（description）必传，金额（amount）不传。\t具体规则参考文档：\t<a href=\"https://opendocs.alipay.com/b/08tf3t?pathHash=d67d7545\"\
+            >https://opendocs.alipay.com/b/08tf3t?pathHash=d67d7545</a>"
           items:
             $ref: '#/components/schemas/PostPayment'
           type: array
@@ -41725,6 +41446,10 @@ components:
         operation_id:
           description: 支付宝的资金操作流水号
           example: "2014070800032850551"
+          type: string
+        orderStr:
+          description: 获取签名后的业务数据
+          example: 请参考响应示例
           type: string
         out_order_no:
           description: 商户的授权资金订单号
@@ -41804,6 +41529,8 @@ components:
           - USER_BANKCARD_FROZEN
           - USER_BANKCARD_PAY_ERROR
           - USER_BANKCARD_REPORT_LOSS
+          - ILLEGAL_PAYEE_USER_ID
+          - USER_BANKCARD_STATUS_ERROR
           type: string
         links:
           description: 解决方案链接
@@ -41841,8 +41568,10 @@ components:
             \":\\\"11.110.111.43\\\"}\"}"
           type: string
         deposit_product_mode:
-          description: 免押受理台模式，使用免押产品必传该字段。根据免押不同业务模式将开通受理台区分三种模式，商家可根据调用预授权冻结接口传入的参数决定该笔免押订单选择哪种受理台模式。不同受理台模式需要传入不同参数，其中：POSTPAY
-            表示后付金额已知，POSTPAY_UNCERTAIN 表示后付金额未知，DEPOSIT_ONLY 表示纯免押。 具体规则参考文档：https://opendocs.alipay.com/b/08tf3t?pathHash=d67d7545
+          description: "免押受理台模式，使用免押产品必传该字段。根据免押不同业务模式将开通受理台区分三种模式，商家可根据调用预授权冻结接口传\
+            入的参数决定该笔免押订单选择哪种受理台模式。不同受理台模式需要传入不同参数，其中：POSTPAY 表示后付金额已知，POSTPAY_UNCERTAIN\
+            \ 表示后付金额未知，DEPOSIT_ONLY 表示纯免押。\t具体规则参考文档：<a href=\"https://opendocs.alipay.com/b/08tf3t?pathHash=d67d7545\"\
+            >https://opendocs.alipay.com/b/08tf3t?pathHash=d67d7545</a>"
           example: POSTPAY
           type: string
         disable_pay_channels:
@@ -41858,10 +41587,13 @@ components:
             }]"
           type: string
         extra_param:
-          description: "业务扩展参数，用于特定业务信息的传递，json格式，key值如下：\t1、category，信用类目，信用预授权场景\
-            必传，具体类目信息见https://opendocs.alipay.com/open/10719\t2、serviceId，信用服务id，信\
-            用预授权场景必传，需要联系芝麻客服获取，https://cshall.alipay.com/enterprise/index.htm?sourceId=pc_zhima（\
-            右上角“有问题点我”进入咨询）\t3、creditExtInfo，信用参数，如有需要请与芝麻约定后传入，信用服务说明见https://opendocs.alipay.com/open/11157/qlsxya"
+          description: "业务扩展参数，用于特定业务信息的传递，json格式。\t1、category，信用类目，信用预授权场景必传，具体类目\
+            信息见<a href=\"https://opendocs.alipay.com/open/10719\">https://opendocs.alipay.com/open/10719</a>；\
+            \t2、serviceId，信用服务ID：信用预授权场景必传。需要商家在 <a href=\"https://b.alipay.com/page/zmgaia/pre-auth/index\"\
+            >开放平台-芝麻免押-信用服务管理</a> 创建信用服务获取，详情可查看 <a href=\"https://opendocs.alipay.com/open/03w0a7?pathHash=51f6b4f2&ref=api#%E7%94%B3%E8%AF%B7%E4%BF%A1%E7%94%A8%E6%9C%8D%E5%8A%A1\"\
+            >创建信用服务</a>。在创建过程中如果有其它疑问，可以咨询芝麻客服小二（0571-88158055 转 2）；\t3、creditExtInfo，\
+            信用参数，可选，如有需要请与芝麻约定后传入，信用服务说明见<a href=\"https://opendocs.alipay.com/open/11157/qlsxya\"\
+            >https://opendocs.alipay.com/open/11157/qlsxya</a>"
           example: "{\"category\":\"CHARGE_PILE_CAR\",\"serviceId\":\"2020042800000000000001450466\"\
             }"
           type: string
@@ -41908,7 +41640,8 @@ components:
           description: "后付费项目， 有付费项目时需要传入该字段。不同受理台模式需要传入不同参数，后付费项目名称和计费说明需要通过校验规则，\
             同时计费说明将展示在开通受理台上。当受理台模式（deposit_product_mode）传入POSTPAY 时，后付费项目名称（name）\
             、金额（amount）必传，计费说明（description）选传；当传入 POSTPAY_UNCERTAIN 时，后付费项目名称（name）\
-            、计费说明（description）必传，金额（amount）不传。\t具体规则参考文档：https://opendocs.alipay.com/b/08tf3t?pathHash=d67d7545"
+            、计费说明（description）必传，金额（amount）不传。\t具体规则参考文档：\t<a href=\"https://opendocs.alipay.com/b/08tf3t?pathHash=d67d7545\"\
+            >https://opendocs.alipay.com/b/08tf3t?pathHash=d67d7545</a>"
           items:
             $ref: '#/components/schemas/PostPayment'
           type: array
@@ -42136,6 +41869,7 @@ components:
           - SUB_MERCHANT_NO_PERMISSION
           - MERCHANT_STATUS_ERROR
           - UNSUPPORTED_BIZ_TYPE
+          - ILLEGAL_PAYEE_USER_ID
           type: string
         links:
           description: 解决方案链接
@@ -42161,8 +41895,10 @@ components:
             \":\\\"11.110.111.43\\\"}\"}"
           type: string
         deposit_product_mode:
-          description: 免押受理台模式，使用免押产品必传该字段。根据免押不同业务模式将开通受理台区分三种模式，商家可根据调用预授权冻结接口传入的参数决定该笔免押订单选择哪种受理台模式。不同受理台模式需要传入不同参数，其中：POSTPAY
-            表示后付金额已知，POSTPAY_UNCERTAIN 表示后付金额未知，DEPOSIT_ONLY 表示纯免押。 具体规则参考文档：https://opendocs.alipay.com/b/08tf3t?pathHash=d67d7545
+          description: "免押受理台模式，使用免押产品必传该字段。根据免押不同业务模式将开通受理台区分三种模式，商家可根据调用预授权冻结接口传\
+            入的参数决定该笔免押订单选择哪种受理台模式。不同受理台模式需要传入不同参数，其中：POSTPAY 表示后付金额已知，POSTPAY_UNCERTAIN\
+            \ 表示后付金额未知，DEPOSIT_ONLY 表示纯免押。\t具体规则参考文档：<a href=\"https://opendocs.alipay.com/b/08tf3t?pathHash=d67d7545\"\
+            >https://opendocs.alipay.com/b/08tf3t?pathHash=d67d7545</a>"
           example: POSTPAY
           type: string
         disable_pay_channels:
@@ -42178,10 +41914,11 @@ components:
             }]"
           type: string
         extra_param:
-          description: "业务扩展参数，用于特定业务信息的传递，json格式，key值如下：\t1、category，信用类目，信用预授权场景\
-            必传，具体类目信息见https://opendocs.alipay.com/open/10719\t2、serviceId，信用服务id，信\
-            用预授权场景必传，需要联系芝麻客服获取，https://cshall.alipay.com/enterprise/index.htm?sourceId=pc_zhima（\
-            右上角“有问题点我”进入咨询）\t3、creditExtInfo，信用参数，如有需要请与芝麻约定后传入，信用服务说明见https://opendocs.alipay.com/open/11157/qlsxya"
+          description: 业务扩展参数，用于特定业务信息的传递，json格式。 1、category，信用类目，信用预授权场景必传，具体类目信息见<a
+            href="https://opendocs.alipay.com/open/10719">https://opendocs.alipay.com/open/10719</a>；
+            2、serviceId，信用服务ID：信用预授权场景必传。需要商家在 <a href="https://b.alipay.com/page/zmgaia/pre-auth/index">开放平台-芝麻免押-信用服务管理</a>
+            创建信用服务获取，详情可查看 <a href="https://opendocs.alipay.com/open/03w0a7?pathHash=51f6b4f2&ref=api#%E7%94%B3%E8%AF%B7%E4%BF%A1%E7%94%A8%E6%9C%8D%E5%8A%A1">创建信用服务</a>。在创建过程中如果有其它疑问，可以咨询芝麻客服小二（0571-88158055
+            转 2）； 3、creditExtInfo，信用参数，可选，如有需要请与芝麻约定后传入，信用服务说明见<a href="https://opendocs.alipay.com/open/11157/qlsxya">https://opendocs.alipay.com/open/11157/qlsxya</a>
           example: "{\"category\":\"CHARGE_PILE_CAR\",\"serviceId\":\"2020042800000000000001450466\"\
             }"
           type: string
@@ -42225,10 +41962,11 @@ components:
           example: "2088102000275795"
           type: string
         post_payments:
-          description: "后付费项目， 有付费项目时需要传入该字段。不同受理台模式需要传入不同参数，后付费项目名称和计费说明需要通过校验规则，\
-            同时计费说明将展示在开通受理台上。当受理台模式（deposit_product_mode）传入POSTPAY 时，后付费项目名称（name）\
-            、金额（amount）必传，计费说明（description）选传；当传入 POSTPAY_UNCERTAIN 时，后付费项目名称（name）\
-            、计费说明（description）必传，金额（amount）不传。\t具体规则参考文档：https://opendocs.alipay.com/b/08tf3t?pathHash=d67d7545"
+          description: "后付费项目，有付费项目时需要传入该字段。不同受理台模式需要传入不同参数，后付费项目名称和计费说明需要通过校验规则，同\
+            时计费说明将展示在开通受理台上。当受理台模式（deposit_product_mode）传入POSTPAY 时，后付费项目名称（name）、\
+            金额（amount）必传，计费说明（description）选传；当传入 POSTPAY_UNCERTAIN 时，后付费项目名称（name）\
+            、计费说明（description）必传，金额（amount）不传。\t具体规则参考文档：<a href=\"https://opendocs.alipay.com/b/08tf3t?pathHash=d67d7545\"\
+            >https://opendocs.alipay.com/b/08tf3t?pathHash=d67d7545</a>"
           items:
             $ref: '#/components/schemas/PostPayment'
           type: array
@@ -42260,8 +41998,10 @@ components:
           example: qrCode
           type: string
         code_url:
-          description: "生成的带有支付宝logo的二维码地址，如：http://mobilecodec.alipay.com/show.htm?code=aeparsv2dknkqf3018556a；\
-            商户端通过在末尾追加picSize来指定要显示的图片大小，如\r\t显示1280大小的URL:http://mobilecodec.alipay.com/show.htm?code=aeparsv2dknkqf3018556a&picSize=1280；\
+          description: "生成的带有支付宝logo的二维码地址，如：<a href=\"http://mobilecodec.alipay.com/show.htm?code=aeparsv2dknkqf3018556a\"\
+            >http://mobilecodec.alipay.com/show.htm?code=aeparsv2dknkqf3018556a</a>；\
+            商户端通过在末尾追加picSize来指定要显示的图片大小，如\t显示1280大小的URL:<a href=\"http://mobilecodec.alipay.com/show.htm?code=aeparsv2dknkqf3018556a&picSize=1280\"\
+            >http://mobilecodec.alipay.com/show.htm?code=aeparsv2dknkqf3018556a&picSize=1280</a>；\
             目前支持的大小有：256, 227, 270, 344, 430, 512, 570, 860, 1280, 1546；"
           example: http://mobilecodec.alipay.com/show.htm?code=aeparsv2dknkqf3018556a
           type: string
@@ -48241,6 +47981,8 @@ components:
           type: string
         user_voucher_base_info:
           $ref: '#/components/schemas/UserVoucherBaseInfo'
+        voucher_customer_guide_info:
+          $ref: '#/components/schemas/VoucherCustomerGuideInfo'
         voucher_deduct_info:
           $ref: '#/components/schemas/VoucherDeductInfo'
         voucher_display_info:
@@ -50546,53 +50288,6 @@ components:
           example: 15
           type: integer
       type: object
-    AlipayMarketingXuanyitestTransferErrorResponseModel:
-      properties:
-        code:
-          description: 错误码
-          enum:
-          - INVALID_PARAMETER
-          type: string
-        links:
-          description: 解决方案链接
-          type: string
-        message:
-          description: 错误描述
-          type: string
-      required:
-      - code
-      - message
-      type: object
-    AlipayMarketingXuanyitestTransferModel:
-      properties:
-        test:
-          description: 测试的基础描述，描述中有test，不会被aku匹配
-          example: "[\"11\",\"12\"]"
-          items:
-            type: string
-          type: array
-        test_21:
-          description: 测试复杂类型描述
-          items:
-            $ref: '#/components/schemas/Marketingtest'
-          type: array
-        test_22:
-          $ref: '#/components/schemas/Marketingtestt'
-      type: object
-    AlipayMarketingXuanyitestTransferResponseModel:
-      properties:
-        test:
-          description: "12"
-          example: "[\"11\",\"12\"]"
-          items:
-            type: string
-          type: array
-        test_21:
-          description: 测试复杂类型描述
-          items:
-            $ref: '#/components/schemas/Marketingtest'
-          type: array
-      type: object
     AlipayMerchantAnchorInfoQueryErrorResponseModel:
       properties:
         code:
@@ -51296,7 +50991,7 @@ components:
             \ target=\"_blank\">实际案例一</a>\t<br><a href=\"https://mdn.alipayobjects.com/portal_ykdvdu/afts/img/A*kBkOTZpqP40AAAAAAAAAAAAAAQAAAQ/original\"\
             \ target=\"_blank\">实际案例二</a>\t<br><a href=\"https://mdn.alipayobjects.com/portal_ykdvdu/afts/img/A*ZpkjTJQlFVAAAAAAAAAAAAAAAQAAAQ/original\"\
             \ target=\"_blank\">实际案例三</a>"
-          example: "9.9"
+          example: "9.99"
           type: string
         pay_timeout_express:
           description: 支付超时时间，超过时间支付宝自行关闭订单
@@ -54494,13 +54189,13 @@ components:
           type: array
         user_id:
           description: 订阅消息模板用户的支付宝唯一标识，2088开头。
-          example: "2088202882050410"
+          example: 20882028****0410
           type: string
       type: object
     AlipayOpenAppMessagetemplateSubscribeQueryResponseModel:
       properties:
         show_component:
-          description: "是否显示订阅组件。枚举值：\ttrue：显示订阅组件。\tfalse：不显示订阅组件"
+          description: 是否显示订阅组件
           example: true
           type: boolean
         subscribe_relations:
@@ -54560,17 +54255,12 @@ components:
     AlipayOpenAppMiniTemplatemessageSendModel:
       properties:
         data:
-          description: "模板消息内容。商家/开发者将模板占位符替换为自定义内容。\t\t注意：\t* 选用模板时配置的关键字顺序与keyword_\
-            \ X相互对应，填写时需注意。\t\t* 自定义消息内容仅需替换 value 后内容即可，其余内容请勿修改。如 {\"keyword1\"\
-            : {\"value\" : \"2021年01月\"}。表示第一个关键字数据为\"2021年01月\" 。\t\t* value 最长为\
-            \ 50 个字符。"
+          description: 模板消息内容。商家/开发者将模板占位符替换为自定义内容
           example: "{\"keyword1\": {\"value\" : \"12:00\"},\"keyword2\": {\"value\"\
             \ : \"20180808\"},\"keyword3\": {\"value\" : \"支付宝\"}}"
           type: string
         form_id:
-          description: "*支付消息模板：需传入用户发生的交易行为的支付宝交易号 trade_no；\t*表单提交模板：需传入用户在小程序触发\
-            表单提交事件获得的表单号；\t*刷脸消息模板：需传入在IOT刷脸后得到的ftoken等，用于信息发送的校验。\t说明：订阅消息模板无需传入本\
-            参数。"
+          description: 支付消息模板：需传入用户发生的交易行为的支付宝交易号 trade_no；</br>表单提交模板：需传入用户在小程序触发表单提交事件获得的表单号；</br>刷脸消息模板：需传入在IOT刷脸后得到的ftoken等，用于信息发送的校验。</br>说明：订阅消息模板无需传入本参数。
           example: "2017010100000000580012345678"
           type: string
         page:
@@ -54600,9 +54290,9 @@ components:
           description: 错误码
           enum:
           - INVALID_PARAMETER
-          - APPQRCODE_NOT_TINYAPP
           - SYSTEM_ERROR
-          - APP_QUERY_ERROR
+          - QRCODE_DESC_CHECK_INVALID
+          - HM_BG_COLOR_INVALID
           type: string
         links:
           description: 解决方案链接
@@ -54839,7 +54529,7 @@ components:
           example: <?xml version="1.0" encoding="utf-8"?</serviceSchema>...<serviceSchema>
           type: string
         status:
-          description: 服务状态，EDITING(编辑中)/AUDITING(审核中)/AUDIT_REJECT(审核驳回)/PROMOTION(可推广)/STOP_PROMOTION(停止推广)/INVALID(失效)/PUNISHED(处罚)
+          description: 服务状态
           example: AUDITING
           type: string
         template_type:
@@ -54895,76 +54585,6 @@ components:
         user_service_delivery_type:
           description: 商户提报服务履约类型
           example: TRADE_SERVICE_DELIVERY
-          type: string
-      type: object
-    AlipayOpenAppTestGrayCreateErrorResponseModel:
-      properties:
-        code:
-          description: 错误码
-          enum:
-          - SYSTEM_ERROR
-          type: string
-        links:
-          description: 解决方案链接
-          type: string
-        message:
-          description: 错误描述
-          type: string
-      required:
-      - code
-      - message
-      type: object
-    AlipayOpenAppTestGrayCreateModel:
-      properties:
-        body:
-          description: b1
-          example: b1
-          type: string
-        body_1:
-          description: body
-          example: "1"
-          type: string
-        complex_param:
-          $ref: '#/components/schemas/OpenidComplex'
-        open_id:
-          description: xx
-          example: xxx
-          type: string
-        user_id:
-          description: "1"
-          example: "2088001159940003"
-          type: string
-      type: object
-    AlipayOpenAppTestGrayCreateResponseModel:
-      properties:
-        zone_name:
-          description: "1"
-          example: cz00b
-          type: string
-      type: object
-    AlipayOpenAppTestGrayQueryErrorResponseModel:
-      properties:
-        code:
-          description: 错误码
-          enum:
-          - SYSTEM_ERROR
-          - MANJIANG_UNIFY_TEST
-          type: string
-        links:
-          description: 解决方案链接
-          type: string
-        message:
-          description: 错误描述
-          type: string
-      required:
-      - code
-      - message
-      type: object
-    AlipayOpenAppTestGrayQueryResponseModel:
-      properties:
-        res:
-          description: "1"
-          example: "1"
           type: string
       type: object
     AlipayOpenAuthAppAesGetErrorResponseModel:
@@ -55987,39 +55607,42 @@ components:
     AlipayOpenMiniBaseinfoModifyModel:
       properties:
         app_category_ids:
-          description: 11_12;12_13。小程序类目，格式为 第一个一级类目_第一个二级类目;第二个一级类目_第二个二级类目，详细类目可以参考https://docs.open.alipay.com/api_49/alipay.open.mini.category.query接口查询mini_category_list
+          description: 11_12;12_13。小程序类目，格式为 第一个一级类目_第一个二级类目;第二个一级类目_第二个二级类目，详细类目可以参考<a
+            href="https://docs.open.alipay.com/api_49/alipay.open.mini.category.query">https://docs.open.alipay.com/api_49/alipay.open.mini.category.query</a>接口查询mini_category_list
             。
           example: 11_12;12_13
           type: string
         app_desc:
           description: "小程序描述，长度限制 20~400 个字符。\t如果前期已经设置过该信息，本次可不填，平台将会为你默认上传该信息。如\
-            果前期没有设置过该信息，则本次为必填。可通过https://opendocs.alipay.com/mini/03l21r查询当前小程序信息"
+            果前期没有设置过该信息，则本次为必填。可通过<a href=\"https://opendocs.alipay.com/mini/03l21r\"\
+            >https://opendocs.alipay.com/mini/03l21r</a>查询当前小程序信息"
           example: 这是一个小程序的描述这是一个小程序的描述这是一个小程序的描述这是一个小程序的描述
           type: string
         app_english_name:
           description: "小程序应用英文名称。长度限制 3~30 个字符，仅支持包含中文、数字、英文、下划线、+、-。\t如果前期已经设置过该\
-            信息，本次可不填，平台将会为你默认上传该信息。如果前期没有设置过该信息，则本次为必填。可通过alipay.open.mini.baseinfo.query查\
-            询当前小程序信息"
+            信息，本次可不填，平台将会为你默认上传该信息。如果前期没有设置过该信息，则本次为必填。可通过<a href=\"https://opendocs.alipay.com/mini/03l21r?pathHash=36d314be&scene=common\"\
+            >alipay.open.mini.baseinfo.query</a>查询当前小程序信息"
           example: demoexample
           type: string
         app_name:
           description: "小程序名称。长度限制 3~30 个字符，仅支持包含中文、数字、英文、下划线、+、-。\t如果前期已经设置过该信息，本\
-            次可不填，平台将会为你默认上传该信息。如果前期没有设置过该信息，则本次为必填。可通过alipay.open.mini.baseinfo.query查\
-            询当前小程序信息"
+            次可不填，平台将会为你默认上传该信息。如果前期没有设置过该信息，则本次为必填。可通过<a href=\"https://opendocs.alipay.com/mini/03l21r?pathHash=36d314be&scene=common\
+            \ \">alipay.open.mini.baseinfo.query</a>查询当前小程序信息"
           example: 杭州支小宝潮流女装店
           type: string
         app_slogan:
           description: "小程序简介，一句话描述小程序功能，长度限制 10~32个字符。\t如果前期已经设置过该信息，本次可不填，平台将会为你\
-            默认上传该信息。如果前期没有设置过该信息，则本次为必填。可通过alipay.open.mini.baseinfo.query查询当前小程序信\
-            息"
+            默认上传该信息。如果前期没有设置过该信息，则本次为必填。可通过<a href=\"https://opendocs.alipay.com/mini/03l21r?pathHash=36d314be&scene=common\"\
+            >alipay.open.mini.baseinfo.query</a>查询当前小程序信息"
           example: 专注潮流女装20年
           type: string
         mini_category_ids:
           description: "新小程序前台类目，格式为 第一个一级类目_第一个二级类目;第二个一级类目_第二个二级类目_第二个三级类目，详细类目可\
-            以通过 https://docs.open.alipay.com/api_49/alipay.open.mini.category.query\t\
+            以通过 <a href=\"https://docs.open.alipay.com/api_49/alipay.open.mini.category.query\"\
+            >https://docs.open.alipay.com/api_49/alipay.open.mini.category.query</a>\t\
             接口查询mini_category_list。\t如果前期已经设置过该信息，本次可不填，平台将会为你默认上传该信息。如果前期没有设置过该信息\
-            ，则本次为必填。可通过https://opendocs.alipay.com/mini/03l21r查询当前小程序信息\t注意：个人开发者不\
-            得使用企业类目。"
+            ，则本次为必填。可通过<a href=\"https://opendocs.alipay.com/mini/03l21r\">https://opendocs.alipay.com/mini/03l21r</a>查\
+            询当前小程序信息\t注意：个人开发者不得使用企业类目。"
           example: XS1001_XS2001_XS3002;XS1011_XS2089;XS1002_XS2008_XS3024
           type: string
         service_email:
@@ -56159,7 +55782,8 @@ components:
             $ref: '#/components/schemas/MiniAppCategory'
           type: array
         mini_category_list:
-          description: 小程序新类目列表。小程序新类目列表，为三级类目。创建、修改、提审传入mini_category_ids，资质相关请参考https://opendocs.alipay.com/mini/operation/material
+          description: 小程序新类目列表。小程序新类目列表，为三级类目。创建、修改、提审传入mini_category_ids，资质相关请参考<a
+            href="https://opendocs.alipay.com/mini/operation/material ">https://opendocs.alipay.com/mini/operation/material</a>
           items:
             $ref: '#/components/schemas/MiniAppCategory'
           type: array
@@ -59800,7 +59424,7 @@ components:
       properties:
         app_ids:
           description: 小程序appId列表
-          example: "208812345678"
+          example: "[\"208812345678\",\"208812345679\"]"
           items:
             type: string
           type: array
@@ -60314,6 +59938,7 @@ components:
           - SUB_APPLICATION_TYPE_ERROR
           - LICENSE_NAME_IS_BLANK
           - RISK_DECISION_HIT_BROAD
+          - INVALID_TEST_ACCOUNT_LENGTH
           type: string
         links:
           description: 解决方案链接
@@ -60328,7 +59953,7 @@ components:
     AlipayOpenMiniVersionAuditApplyModel:
       properties:
         app_category_ids:
-          description: 小程序类目，格式为 第一个一级类目_第一个二级类目;第二个一级类目_第二个二级类目，详细类目可以通过  https://docs.open.alipay.com/api_49/alipay.open.mini.category.query接口查询，如果不填默认采用当前小程序应用类目。使用默认应用类目后不需要再次上传营业执照号、营业执照名、营业执照截图、营业执照有效期。
+          description: 小程序类目，格式为 第一个一级类目_第一个二级类目;第二个一级类目_第二个二级类目，详细类目可以通过  <a href="https://docs.open.alipay.com/api_49/alipay.open.mini.category.query">https://docs.open.alipay.com/api_49/alipay.open.mini.category.query</a>接口查询，如果不填默认采用当前小程序应用类目。使用默认应用类目后不需要再次上传营业执照号、营业执照名、营业执照截图、营业执照有效期。
           example: 11_12;12_13
           type: string
         app_desc:
@@ -60340,7 +59965,7 @@ components:
           example: demoexample
           type: string
         app_name:
-          description: "小程序名称，长度限制 3~30 个字符（中文字符按2个字符计算），仅支持包含中文、数字、英文、下划线、+、-。\t如\
+          description: "小程序名称，长度限制 3~40 个字符（中文字符按2个字符计算），仅支持包含中文、数字、英文、下划线、+、-。\t如\
             果不填默认采用当前小程序应用名称，如无默认值则必填，不可为空。"
           example: 杭州支小宝潮流女装店
           type: string
@@ -60353,7 +59978,8 @@ components:
           example: 0.0.1
           type: string
         audit_rule:
-          description: 审核类型，建议设置成“BASE_PROMOTE”，小程序将会更容易上架。将小程序发布审核拆分成“准入”、“营销”。原先小程序需要两个环节都审核通过才能上架，现在小程序只需要准入通过即可上架，但是无法在营销场景（支付宝泛搜、支付宝首页推荐等）展现给用户，小程序可通过精搜或者扫码等方式使用。如果小程序需要进行营销，可发布新版本，当准入&营销都通过后，小程序也可被营销。点击查看支付宝小程序营销规范：https://opendocs.alipay.com/b/03al2q
+          description: 审核类型，建议设置成“BASE_PROMOTE”，小程序将会更容易上架。将小程序发布审核拆分成“准入”、“营销”。原先小程序需要两个环节都审核通过才能上架，现在小程序只需要准入通过即可上架，但是无法在营销场景（支付宝泛搜、支付宝首页推荐等）展现给用户，小程序可通过精搜或者扫码等方式使用。如果小程序需要进行营销，可发布新版本，当准入&营销都通过后，小程序也可被营销。点击查看支付宝小程序营销规范：<a
+            href="https://opendocs.alipay.com/b/03al2q">https://opendocs.alipay.com/b/03al2q</a>
           example: BASE_PROMOTE
           type: string
         auto_online:
@@ -60367,14 +59993,14 @@ components:
           example: com.alipay.alipaywallet
           type: string
         license_name:
-          description: 营业执照名称，参照https://opendocs.alipay.com/mini/operation/material
-            要求填写营业执照信息。
+          description: "营业执照名称，参照<a href=\"https://opendocs.alipay.com/mini/operation/material\"\
+            >https://opendocs.alipay.com/mini/operation/material</a>,要求填写营业执照信息。"
           example: '****集团股份有限公司'
           type: string
         license_no:
-          description: 营业执照证件号，部分小程序类目需要提交，可通过https://opendocs.alipay.com/mini/03l8c8
-            查询类目是否需要上传营业执照信息。参照https://opendocs.alipay.com/mini/operation/material
-            要求填写营业执照信息。
+          description: 营业执照证件号，部分小程序类目需要提交，可通过<a href="https://opendocs.alipay.com/mini/03l8c8
+            ">https://opendocs.alipay.com/mini/03l8c8</a>查询类目是否需要上传营业执照信息。参照<a href="https://opendocs.alipay.com/mini/operation/material
+            ">https://opendocs.alipay.com/mini/operation/material </a>要求填写营业执照信息。
           example: 9133********373179
           type: string
         license_valid_date:
@@ -60387,7 +60013,8 @@ components:
           type: string
         mini_category_ids:
           description: "新小程序前台类目，格式为 第一个一级类目_第一个二级类目;第二个一级类目_第二个二级类目_第二个三级类目，详细类目可\
-            以通过 https://docs.open.alipay.com/api_49/alipay.open.mini.category.query\t\
+            以通过 <a href=\"https://docs.open.alipay.com/api_49/alipay.open.mini.category.query\"\
+            >https://docs.open.alipay.com/api_49/alipay.open.mini.category.query</a>\t\
             接口查询mini_category_list。"
           example: XS1001_XS2001_XS3002;XS1011_XS2089;XS1002_XS2008_XS3024
           type: string
@@ -60404,7 +60031,8 @@ components:
           example: "13110101010"
           type: string
         service_region_info:
-          description: 省市区信息。当region_type为LOCATION或传入city_code时，province_code不能为空；填写area_code时，province_code和city_code不能为空。只填province_code则全选该省；填写province_code和city_code则全选该市，以此类推。省市区code参见https://gw.alipayobjects.com/os/bmw-prod/0aab0319-13de-42b9-85cf-13877a5f78ed.xlsx
+          description: 省市区信息。当region_type为LOCATION或传入city_code时，province_code不能为空；填写area_code时，province_code和city_code不能为空。只填province_code则全选该省；填写province_code和city_code则全选该市，以此类推。省市区code参见<a
+            href="https://gw.alipayobjects.com/os/bmw-prod/0aab0319-13de-42b9-85cf-13877a5f78ed.xlsx">https://gw.alipayobjects.com/os/bmw-prod/0aab0319-13de-42b9-85cf-13877a5f78ed.xlsx</a>
           items:
             $ref: '#/components/schemas/RegionInfo'
           type: array
@@ -60413,7 +60041,7 @@ components:
           example: "true"
           type: string
         test_accout:
-          description: 测试账号，是否需要填写请参见https://opendocs.alipay.com/mini/operation/standard/case/akxg6r#3.%20%E6%B5%8B%E8%AF%95%E5%86%85%E5%AE%B9%E6%8F%90%E4%BA%A4%E4%B8%8D%E5%AE%8C%E6%95%B4
+          description: 测试账号，是否需要填写请参见<a href="https://opendocs.alipay.com/mini/operation/standard/case/akxg6r#3.%20%E6%B5%8B%E8%AF%95%E5%86%85%E5%AE%B9%E6%8F%90%E4%BA%A4%E4%B8%8D%E5%AE%8C%E6%95%B4">https://opendocs.alipay.com/mini/operation/standard/case/akxg6r#3.%20%E6%B5%8B%E8%AF%95%E5%86%85%E5%AE%B9%E6%8F%90%E4%BA%A4%E4%B8%8D%E5%AE%8C%E6%95%B4</a>
           example: "18812341234"
           type: string
         test_password:
@@ -60880,7 +60508,7 @@ components:
           type: array
         app_versions:
           description: 小程序支付宝端每个状态的最新版本号列表(历史返回值，已不推荐使用，逐渐废弃)
-          example: 0.0.1
+          example: "[\"0.0.1\",\"0.0.2\"]"
           items:
             type: string
           type: array
@@ -61361,46 +60989,6 @@ components:
         commit_id:
           description: 商品提交生成的唯一标识，用于查询商品信息的审核状态
           example: "20220829000000000101"
-          type: string
-      type: object
-    AlipayOpenOperationOpenbizmockTestpathkeyQueryErrorResponseModel:
-      properties:
-        code:
-          description: 错误码
-          enum:
-          - LALALA
-          - INVALID_PARAMETER
-          type: string
-        links:
-          description: 解决方案链接
-          type: string
-        message:
-          description: 错误描述
-          type: string
-      required:
-      - code
-      - message
-      type: object
-    AlipayOpenOperationOpenbizmockTestpathkeyQueryModel:
-      properties:
-        d:
-          description: "4"
-          example: d
-          type: string
-        e:
-          description: "1"
-          example: "1"
-          type: string
-        test_price:
-          description: "1"
-          example: "18.1111"
-          type: string
-      type: object
-    AlipayOpenOperationOpenbizmockTestpathkeyQueryResponseModel:
-      properties:
-        result:
-          description: 测试
-          example: success
           type: string
       type: object
     AlipayOpenPublicAccountCreateErrorResponseModel:
@@ -65760,8 +65348,7 @@ components:
           example: "2017121800945174"
           type: string
         shop_id:
-          description: "商家订购服务选择的某一门店的ID。若该订单： \t为支付宝服务市场发布的服务所产生订单则该参数可选。 \t为口碑服务\
-            市场发布的服务所产生的订单，则此字段必填。口碑服务市场参见 http://fuwu.koubei.com/commodity/v2/merchandise/index.htm。"
+          description: "商家订购服务选择的某一门店的ID。若该订单： \t为支付宝服务市场发布的服务所产生订单则该参数可选。"
           example: "2015052000077000000000182140"
           type: string
       type: object
@@ -65799,8 +65386,7 @@ components:
           example: "2017121800945174"
           type: string
         shop_id:
-          description: "商家订购服务选择的某一门店的ID。若该订单：\t为支付宝服务市场发布的服务所产生订单则该参数可选。\t为口碑服务市场\
-            发布的服务所产生的订单，则此字段必填。口碑服务市场参见 http://fuwu.koubei.com/commodity/v2/merchandise/index.htm。"
+          description: "商家订购服务选择的某一门店的ID。若该订单：\t为支付宝服务市场发布的服务所产生订单则该参数可选。"
           example: "2015052000077000000000182140"
           type: string
       type: object
@@ -65839,8 +65425,7 @@ components:
           example: "2017121800945174"
           type: string
         shop_id:
-          description: "商家订购服务选择的某一门店的ID。若该订单： \t为支付宝(蚂蚁)服务市场发布的服务所产生订单则该参数可选。 \t为\
-            口碑服务市场发布的服务所产生的订单，则此字段必填。口碑服务市场参见 http://fuwu.koubei.com/commodity/v2/merchandise/index.htm。"
+          description: "商家订购服务选择的某一门店的ID。若该订单： \t为支付宝(蚂蚁)服务市场发布的服务所产生订单则该参数可选。"
           example: "2015052000077000000000182140"
           type: string
       type: object
@@ -67978,37 +67563,6 @@ components:
           example: 074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5
           type: string
       type: object
-    AlipaySecurityProdTianwutestModifyErrorResponseModel:
-      properties:
-        code:
-          description: 错误码
-          enum:
-          - XXX
-          type: string
-        links:
-          description: 解决方案链接
-          type: string
-        message:
-          description: 错误描述
-          type: string
-      required:
-      - code
-      - message
-      type: object
-    AlipaySecurityProdTianwutestModifyModel:
-      properties:
-        tianwutest:
-          description: 测试
-          example: "1"
-          type: string
-      type: object
-    AlipaySecurityProdTianwutestModifyResponseModel:
-      properties:
-        ceshi:
-          description: 测试
-          example: test
-          type: string
-      type: object
     AlipaySecurityRiskCustomerriskSendErrorResponseModel:
       properties:
         code:
@@ -68577,6 +68131,7 @@ components:
           - MERCHANT_RISK_LIMIT
           - OPENID_APPID_NOT_MATCH
           - FREQUENCY_LIMITED
+          - NO_INVOKE_AUTH
           type: string
         links:
           description: 解决方案链接
@@ -69584,11 +69139,11 @@ components:
           example: CREDIT_AUTH
           type: string
         order_biz_info:
-          description: "商户传入同步信息，具体值要和支付宝约定；用于芝麻信用租车、单次授权等信息同步场景，格式为json格式。\r\t状态枚\
-            举如下：\r\t\r\tCOMPLETE：同步用户已履约\r\t适用场景：发起扣款后，芝麻生成待履约记录，如果用户通过其他方式完成订单支付，\
-            请反馈该状态，芝麻将完结待履约记录对用户形成一条良好履约记录；\r\t\r\tCLOSED： 同步履约已取消\r\t适用场景：发起扣款后，芝\
-            麻生成待履约记录，如果发现该笔扣款无效需要取消，请反馈该状态，芝麻将取消用户待履约记录；\r\t\r\tVIOLATED： 用户已违约\r\t\
-            适用场景：如果用户在约定时间（具体根据行业约定，有一定宽限期）内未完成订单支付，反馈该状态，芝麻将对用户记录一条负面记录，请谨慎使用；"
+          description: "商户传入同步信息，具体值要和支付宝约定；用于芝麻信用租车、单次授权等信息同步场景，格式为json格式。\t状态枚举如\
+            下：\t\tCOMPLETE：同步用户已履约\t适用场景：发起扣款后，芝麻生成待履约记录，如果用户通过其他方式完成订单支付，请反馈该状态，芝\
+            麻将完结待履约记录对用户形成一条良好履约记录；同步该状态时需要同步调用 取消扣款 接口关闭交易订单。\t\tCLOSED： 同步履约已取消\t\
+            适用场景：发起扣款后，芝麻生成待履约记录，如果发现该笔扣款无效需要取消，请反馈该状态，芝麻将取消用户待履约记录；同步该状态时需要同步调用 取\
+            消扣款 接口关闭交易订单。"
           example: "{\"status\":\"COMPLETE\"}"
           type: string
         orig_request_no:
@@ -69596,7 +69151,7 @@ components:
           example: HZ01RF001
           type: string
         out_request_no:
-          description: 外部请求号，商家自定义。标识一笔交易多次请求，同一笔交易多次信息同步时需要保证唯一。
+          description: 外部请求号，商家自定义且保证商家系统中唯一。需要注意的是，支付宝会对外部请求号做幂等控制，如果一笔交易再次使用相同的外部请求号发起请求，订单信息不会更新。
           example: HZ01RF001
           type: string
         trade_no:
@@ -71221,6 +70776,7 @@ components:
           - ACQ.CONFIRM_REFUSE_AFTER_REFUND
           - ACQ.SETTLE_SCENE_NOT_SUPPORT
           - ACQ.INVALID_STORE_ID
+          - ACQ.SETTLE_ACCOUNT_INVALID
           type: string
         links:
           description: 解决方案链接
@@ -72814,11 +72370,11 @@ components:
       properties:
         acc_no:
           description: 待绑定账号PID
-          example: "2088001969784501"
+          example: 20880019****4501
           type: string
         app_no:
           description: 待绑定小程序的app_id
-          example: "2021000155639069"
+          example: 20210001****9069
           type: string
       type: object
     AntMerchantExpandApprecommendAccountCreateResponseModel:
@@ -72923,7 +72479,7 @@ components:
       properties:
         list:
           description: 总页数
-          example: "[\"2088001969784501\"]"
+          example: "[\"20880019****4501\"]"
           items:
             type: string
           type: array
@@ -73670,7 +73226,9 @@ components:
           - BANK_ACCOUNTINSTID_ILLEGAL
           - SETTLED_CARD_ACCOUNTTYPE_ILLEGAL
           - BANK_ACCOUNTINSTNAME_ILLEGAL
+          - SHOP_CODE_ALREADY_EXIST
           - SYSTEM_ERROR
+          - SETTLED_ALIPAYACCOUNT_NOT_EXIST
           type: string
         links:
           description: 解决方案链接
@@ -73848,7 +73406,6 @@ components:
           - BANK_ACCOUNTINSTID_ILLEGAL
           - SETTLED_CARD_ACCOUNTTYPE_ILLEGAL
           - BANK_ACCOUNTINSTNAME_ILLEGAL
-          - SHOP_CODE_ALREADY_EXIST
           - SYSTEM_ERROR
           - GONGSHANG_LICENSE_ILLEGAL
           - BUSINESS_LICENSE_EMPTY
@@ -73868,6 +73425,52 @@ components:
           - SHOP_ADDRESS_EXIST_RISK
           - SHOP_REMARK_EXIST_RISK
           - EXTERNAL_SHOP_CODE_EXIST_RISK
+          - SHOP_CODE_ALREADY_EXIST
+          - SETTLED_ALIPAYACCOUNT_NOT_EXIST
+          - DETAIL_ADDRESS_NOT_CONTAINS_CHINESE_CHARACTER
+          - OUTDOOR_IMAGE_URL_IS_EMPTY
+          - BIZ_SCENE_PIC_URL_IS_EMPTY
+          - BUSINESS_LICENSE_URL_IS_EMPTY
+          - MERCHANT_LOGO_URL_IS_EMPTY
+          - SETTLED_BANKCARD_NUMBER_LENGTH_ILLEGAL
+          - ACCOUNT_HOLDER_NAME_LENGTH_ILLEGAL
+          - ACCOUNT_INST_PROVINCE_LENGTH_ILLEGAL
+          - ACCOUNT_INST_CITY_LENGTH_ILLEGAL
+          - ACCOUNT_BRANCH_NAME_LENGTH_ILLEGAL
+          - ACCOUNT_NAME_LENGTH_ILLEGAL
+          - ACCOUNT_INST_ID_LENGTH_ILLEGAL
+          - OUTDOOR_IMAGE_OSSKEY_NOT_EXIST
+          - BUSINESS_LICENSE_OSSKEY_NOT_EXIST
+          - SPECIAL_TRAVEL_PERMIT_OSSKEY_NOT_EXIST
+          - OTA_SNAPSHOT_OSSKEY_NOT_EXIST
+          - ID_CARD_MSG_ILLEGAL
+          - BUSINESS_LICENSE_ILLEGAL
+          - BUSINESS_ADDRESS_IS_EMPTY
+          - DETAIL_ADDRESS_CONTAIN_PROVINCES_CITY_REGION
+          - SHOP_INFO_SOURCE_OTHER_TAG
+          - MERCHANT_ORDER_EXECUTE_CONFLICT
+          - ENUM_ILLEGAL
+          - BANK_CARD_TYPE_ILLEGAL
+          - TARGET_TYPE_ILLEGAL
+          - SHOP_EXT_INFO_NULL
+          - SHOP_INFO_SOURCE_ILLEGAL
+          - SHOP_INFO_SOURCE_CHANNEL_ILLEGAL
+          - SHOP_INFO_SOURCE_BIZ_FROM_ILLEGAL
+          - DISTRICT_CODE_ILLEGAL
+          - SETTLED_BANKCARD_ACCOUNTINSTPROVINCE_IS_EMPTY
+          - SETTLED_BANKCARD_ACCOUNTINSTCITY_IS_EMPTY
+          - SETTLED_CARD_SIZE_IS_ILLEGAL
+          - BANK_CODE_ILLEGAL
+          - ADDRESS_VERSION_CODE_ILLEGAL
+          - SHOP_SHOP_TYPE_ILLEGAL
+          - SHOP_SOURCE_IS_ILLEGAL
+          - CATEGORY_EVALUATE_FAIL
+          - CATEGORY_WITH_NO_PROOF
+          - SHOP_ASSET_CHECK_RESULT_EMPTY
+          - SHOP_ASSET_NOT_BINDABLE
+          - SHOP_ASSET_MAX_LIMIT
+          - SHOP_PRE_RISK_LEVEL_ERROR
+          - SHOP_PRE_POI_NOT_FILL_ERROR
           type: string
         links:
           description: 解决方案链接
@@ -73882,7 +73485,7 @@ components:
     AntMerchantExpandShopCreateModel:
       properties:
         biz_cards:
-          description: '"门店结算卡信息。本业务当前只允许传入一张结算卡。 说明：本参数仅直付通业务使用，其余业务无需关注。"'
+          description: 门店结算卡信息。本业务当前只允许传入一张结算卡。 说明：本参数仅直付通业务使用，其余业务无需关注。
           items:
             $ref: '#/components/schemas/SettleCardInfo'
           type: array
@@ -74062,6 +73665,55 @@ components:
           - SHOP_ADDRESS_EXIST_RISK
           - SHOP_REMARK_EXIST_RISK
           - EXTERNAL_SHOP_CODE_EXIST_RISK
+          - DETAIL_ADDRESS_NOT_CONTAINS_CHINESE_CHARACTER
+          - OUTDOOR_IMAGE_URL_IS_EMPTY
+          - BIZ_SCENE_PIC_URL_IS_EMPTY
+          - BUSINESS_LICENSE_URL_IS_EMPTY
+          - MERCHANT_LOGO_URL_IS_EMPTY
+          - SETTLED_BANKCARD_NUMBER_LENGTH_ILLEGAL
+          - ACCOUNT_HOLDER_NAME_LENGTH_ILLEGAL
+          - ACCOUNT_INST_PROVINCE_LENGTH_ILLEGAL
+          - ACCOUNT_INST_CITY_LENGTH_ILLEGAL
+          - ACCOUNT_BRANCH_NAME_LENGTH_ILLEGAL
+          - ACCOUNT_NAME_LENGTH_ILLEGAL
+          - ACCOUNT_INST_ID_LENGTH_ILLEGAL
+          - OUTDOOR_IMAGE_OSSKEY_NOT_EXIST
+          - BUSINESS_LICENSE_OSSKEY_NOT_EXIST
+          - SPECIAL_TRAVEL_PERMIT_OSSKEY_NOT_EXIST
+          - OTA_SNAPSHOT_OSSKEY_NOT_EXIST
+          - ID_CARD_MSG_ILLEGAL
+          - BUSINESS_LICENSE_ILLEGAL
+          - BUSINESS_ADDRESS_IS_EMPTY
+          - DETAIL_ADDRESS_CONTAIN_PROVINCES_CITY_REGION
+          - MERCHANT_NOT_EXIST
+          - SHOP_INFO_SOURCE_OTHER_TAG
+          - CONFIG_ERROR
+          - ENUM_ILLEGAL
+          - ATTACHMENT_TYPE_ILLEGAL
+          - BANK_CARD_TYPE_ILLEGAL
+          - TARGET_TYPE_ILLEGAL
+          - SHOP_EXT_INFO_NULL
+          - SHOP_INFO_SOURCE_ILLEGAL
+          - SHOP_INFO_SOURCE_CHANNEL_ILLEGAL
+          - SHOP_INFO_SOURCE_BIZ_FROM_ILLEGAL
+          - DISTRICT_CODE_ILLEGAL
+          - UK_OCCUPIED
+          - SETTLED_BANKCARD_ACCOUNTINSTPROVINCE_IS_EMPTY
+          - SETTLED_BANKCARD_ACCOUNTINSTCITY_IS_EMPTY
+          - SETTLED_CARD_SIZE_IS_ILLEGAL
+          - BUSINESS_LICENSE_EMPTY
+          - BANK_CODE_ILLEGAL
+          - ADDRESS_VERSION_CODE_ILLEGAL
+          - SHOP_SHOPNO_IS_EMPTY
+          - SHOP_SHOPNAME_IS_EMPTY
+          - SHOP_SOURCE_IS_ILLEGAL
+          - CATEGORY_EVALUATE_FAIL
+          - CATEGORY_WITH_NO_PROOF
+          - SHOP_ASSET_CHECK_RESULT_EMPTY
+          - SHOP_ASSET_NOT_BINDABLE
+          - SHOP_ASSET_MAX_LIMIT
+          - SHOP_PRE_RISK_LEVEL_ERROR
+          - SHOP_PRE_POI_NOT_FILL_ERROR
           type: string
         links:
           description: 解决方案链接
@@ -74547,8 +74199,8 @@ components:
           example: 074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5
           type: string
         portrait:
-          description: 头像地址
-          example: http://imageg.alipay.com/1
+          description: 头像地址fileId(完整地址需自行拼接)
+          example: AAA-AAAAAAAAA
           type: string
         role:
           description: 角色类型
@@ -76058,7 +75710,7 @@ components:
           type: string
         biz_type:
           description: 业务类型
-          example: "01"
+          example: DEPOSIT
           type: string
         biz_type_desc:
           description: 业务类型描述
@@ -76102,7 +75754,7 @@ components:
           type: string
         payee_fund_type:
           description: 收款方资金类型
-          example: "00"
+          example: "01"
           type: string
         payee_fund_type_desc:
           description: 支付宝余额
@@ -76122,14 +75774,14 @@ components:
           type: string
         payer_fund_type:
           description: 付款方资金类型
-          example: "00"
+          example: "01"
           type: string
         payer_fund_type_desc:
           description: 付款方资金类型描述
           example: 支付宝余额
           type: string
         refund_amount:
-          description: 退款金额
+          description: 退款金额（元）
           example: "0.00"
           type: string
         show_detail:
@@ -76153,8 +75805,8 @@ components:
           example: 成功
           type: string
         sub_biz_type:
-          description: 业务子类型
-          example: "00"
+          description: 普通转账
+          example: COMMON_TRANSFER
           type: string
         sub_biz_type_desc:
           description: 业务子类型描述
@@ -76762,7 +76414,8 @@ components:
     CloudResumePositionIntention:
       properties:
         intention_city:
-          description: 意向城市Code
+          description: 意向城市Code。具体地区编码参见https://lbs.amap.com/api/webservice/download
+            里面城市编码表
           example: "110000"
           type: string
         job_id:
@@ -77754,7 +77407,9 @@ components:
           example: /9j/Qnl0ZUFycmF5T3V0cHV0U3RyZWFtIG91dHB1dCA9IG5ldyBCeXRlQ中间缩略Skge30=
           type: string
         out_order_no:
-          description: 开发者外部订单号，自定义传入，通过开发者账号+outOrderNo做业务幂等。（1）该字段会在商家确认创建后通过应用授权通知出参notify_context以out_biz_no属性返回给ISV，应用授权通知订阅参考：https://opendocs.alipay.com/isv/01fejh。（2）该字段也会通过alipay.open.mini.merchant.confirmed返回给订阅方
+          description: 开发者外部订单号，自定义传入，通过开发者账号+outOrderNo做业务幂等。（1）该字段会在商家确认创建后通过应用授权通知出参notify_context以out_biz_no属性返回给ISV，应用授权通知订阅参考：<a
+            href="https://opendocs.alipay.com/isv/01fejh">https://opendocs.alipay.com/isv/01fejh</a>。（2）该字段也会通过<a
+            href="https://opendocs.alipay.com/mini/03l3f1?pathHash=5c81f4fb&scene=common">alipay.open.mini.merchant.confirmed</a>返回给订阅方
           example: "202324353454545"
           type: string
       type: object
@@ -80338,6 +79993,9 @@ components:
         sys_service_provider_id:
           description: "系统商编号\r\t该参数作为系统商返佣数据提取的依据，请填写系统商签约协议的PID"
           type: string
+        tc_installment_order_id:
+          description: 公域商品交易分期单ID，小程序交易组件订单特殊场景使用，请传入 订单分期接口(alipay.open.mini.order.installment.create)中返回的installment_order_id
+          type: string
         trade_component_order_id:
           description: 公域商品交易业务订单ID
           type: string
@@ -81173,7 +80831,7 @@ components:
           description: 商户行业资质图片。其值为通过ant.merchant.expand.indirect.image.upload上传图片得到的image_id
           type: string
         industry_qualification_type:
-          description: 商户行业资质类型，具体选值参见，进件MCC与资质要求 <a href="https://gw.alipayobjects.com/os/bmw-prod/7aa3a36b-2bc2-4d57-815f-08edd55ef67e.xlsx">202212.xlsx</a>中特殊资质栏
+          description: 商户行业资质类型，具体选值参见<a href="https://gw.alipayobjects.com/os/bmw-prod/7aa3a36b-2bc2-4d57-815f-08edd55ef67e.xlsx">文档</a>
           type: string
       type: object
     Instance:
@@ -84110,13 +83768,13 @@ components:
           description: 审核人的备注信息
           type: string
         audit_time:
-          description: 审核时间
+          description: 审核时间，格式为 yyyy-MM-dd HH:mm:ss
           type: string
         config_id:
           description: 关键词配置ID
           type: string
         gmt_create:
-          description: 创建时间
+          description: 创建时间，格式为 yyyy-MM-dd HH:mm:ss
           type: string
         key_word:
           description: 审核完成的关键词
@@ -84924,17 +84582,6 @@ components:
           description: 投放详情状态，INIT:下线状态，ON_LINE:上线状态
           example: ON_LINE
           type: string
-      type: object
-    Marketingtest:
-      properties:
-        test_21:
-          description: 测试描述
-          type: string
-      type: object
-    Marketingtestt:
-      properties:
-        test_22:
-          $ref: '#/components/schemas/Marketingtest'
       type: object
     Matcher:
       properties:
@@ -86235,33 +85882,6 @@ components:
 
              }
           type: string
-      type: object
-    OpenidComplex:
-      properties:
-        json_string:
-          description: "11"
-          example: "{}"
-          type: string
-        open_id_list:
-          description: "1"
-          example: "[\"074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5\"]"
-          items:
-            type: string
-          type: array
-        openid:
-          description: "11"
-          example: 074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5
-          type: string
-        uid:
-          description: "11"
-          example: "2088502241306951"
-          type: string
-        uid_list:
-          description: "1"
-          example: "[\"2088502241306951\"]"
-          items:
-            type: string
-          type: array
       type: object
     OperationResultExtInfo:
       properties:
@@ -90214,6 +89834,10 @@ components:
             ；\tdefaultSettle: 按默认结算规则结算"
           example: alipayBalance
           type: string
+        settle_entity_biz_type:
+          description: 已结算资产
+          example: settled
+          type: string
         settle_entity_id:
           description: "结算主体账号。\t当结算主体类型为SecondMerchant，传二级商户ID(smid)；结算主体类型为Store时\
             ，传门店ID"
@@ -90260,6 +89884,10 @@ components:
       type: object
     SettleEntity:
       properties:
+        settle_entity_biz_type:
+          description: 结算主体资产业务类型，settled 表示已结算资产
+          example: settled
+          type: string
         settle_entity_id:
           description: "结算主体账号\t当结算主体类型为SecondMerchant，本参数为二级商户的SecondMerchantID；当\
             结算主体类型为MerchantStore，本参数为商户门店ID。"
@@ -91857,7 +91485,7 @@ components:
           type: array
         face_value:
           description: 票面价
-          example: "10"
+          example: "9.99"
           type: string
         functional_services:
           description: 功能服务信息
@@ -92855,6 +92483,9 @@ components:
       properties:
         associate_trade_no:
           description: 若商家券操作过关联商户订单信息，则该字段返回商家券已关联的商户订单号。
+          type: string
+        belong_merchant_id:
+          description: 券归属商户
           type: string
         create_time:
           description: 领券时间
@@ -94751,7 +94382,7 @@ components:
           example: Iphone6 16G
           type: string
         category_id:
-          description: 芝麻外部类目
+          description: 芝麻外部类目，芝麻先享接入无差异化风控诉求可不传
           example: credit_pay_after_use
           type: string
         credit_agreement_id:
@@ -95650,6 +95281,7 @@ components:
           - INVALID_PARAMETER
           - ZM.SYSTEM_ERROR
           - USER_NOT_OPEN_ZHIMA
+          - APP_INVOKE_DEGRADE
           type: string
         links:
           description: 解决方案链接
@@ -95665,7 +95297,7 @@ components:
       properties:
         birthday:
           description: 出生日期
-          example: 2000 - 10 - 01
+          example: "20001001"
           type: string
         certificates:
           description: 证书名称
@@ -96763,10 +96395,6 @@ components:
       anyOf:
       - $ref: '#/components/schemas/CommonErrorType'
       - $ref: '#/components/schemas/AlipayBossFncUserinvoiceinfoQueryErrorResponseModel'
-    alipay_boss_prod_my_test_query_default_response:
-      anyOf:
-      - $ref: '#/components/schemas/CommonErrorType'
-      - $ref: '#/components/schemas/AlipayBossProdMyTestQueryErrorResponseModel'
     alipay_commerce_cityfacilitator_station_query_default_response:
       anyOf:
       - $ref: '#/components/schemas/CommonErrorType'
@@ -98111,10 +97739,6 @@ components:
       anyOf:
       - $ref: '#/components/schemas/CommonErrorType'
       - $ref: '#/components/schemas/AlipayMarketingRecruitPlanlistQueryErrorResponseModel'
-    alipay_marketing_xuanyitest_transfer_default_response:
-      anyOf:
-      - $ref: '#/components/schemas/CommonErrorType'
-      - $ref: '#/components/schemas/AlipayMarketingXuanyitestTransferErrorResponseModel'
     alipay_merchant_anchor_info_query_default_response:
       anyOf:
       - $ref: '#/components/schemas/CommonErrorType'
@@ -98574,14 +98198,6 @@ components:
       anyOf:
       - $ref: '#/components/schemas/CommonErrorType'
       - $ref: '#/components/schemas/AlipayOpenAppServiceSchemaQueryErrorResponseModel'
-    alipay_open_app_test_gray_create_default_response:
-      anyOf:
-      - $ref: '#/components/schemas/CommonErrorType'
-      - $ref: '#/components/schemas/AlipayOpenAppTestGrayCreateErrorResponseModel'
-    alipay_open_app_test_gray_query_default_response:
-      anyOf:
-      - $ref: '#/components/schemas/CommonErrorType'
-      - $ref: '#/components/schemas/AlipayOpenAppTestGrayQueryErrorResponseModel'
     alipay_open_auth_app_aes_get_default_response:
       anyOf:
       - $ref: '#/components/schemas/CommonErrorType'
@@ -99136,18 +98752,6 @@ components:
       anyOf:
       - $ref: '#/components/schemas/CommonErrorType'
       - $ref: '#/components/schemas/AlipayOpenMiniWidgetGoodsUploadErrorResponseModel'
-    alipay_open_operation_openbizmock_testpathkey_query_request:
-      properties:
-        data:
-          $ref: '#/components/schemas/AlipayOpenOperationOpenbizmockTestpathkeyQueryModel'
-        f:
-          format: binary
-          type: string
-      type: object
-    alipay_open_operation_openbizmock_testpathkey_query_default_response:
-      anyOf:
-      - $ref: '#/components/schemas/CommonErrorType'
-      - $ref: '#/components/schemas/AlipayOpenOperationOpenbizmockTestpathkeyQueryErrorResponseModel'
     alipay_open_public_account_create_default_response:
       anyOf:
       - $ref: '#/components/schemas/CommonErrorType'
@@ -99686,10 +99290,6 @@ components:
       anyOf:
       - $ref: '#/components/schemas/CommonErrorType'
       - $ref: '#/components/schemas/AlipaySecurityProdSssQueryErrorResponseModel'
-    alipay_security_prod_tianwutest_modify_default_response:
-      anyOf:
-      - $ref: '#/components/schemas/CommonErrorType'
-      - $ref: '#/components/schemas/AlipaySecurityProdTianwutestModifyErrorResponseModel'
     alipay_security_risk_customerrisk_send_default_response:
       anyOf:
       - $ref: '#/components/schemas/CommonErrorType'

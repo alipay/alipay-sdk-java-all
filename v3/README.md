@@ -1,7 +1,7 @@
 # alipay-sdk-java-v3
 
 支付宝开放平台API
-- API version: 2023-12-20
+- API version: 2024-01-12
 
 支付宝开放平台v3协议文档
 
@@ -40,7 +40,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>com.alipay.sdk</groupId>
   <artifactId>alipay-sdk-java-v3</artifactId>
-  <version>2.8.0.ALL</version>
+  <version>2.9.0.ALL</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -56,7 +56,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "com.alipay.sdk:alipay-sdk-java-v3:2.8.0.ALL"
+     implementation "com.alipay.sdk:alipay-sdk-java-v3:2.9.0.ALL"
   }
 ```
 
@@ -70,7 +70,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/alipay-sdk-java-v3-2.8.0.ALL.jar`
+* `target/alipay-sdk-java-v3-2.9.0.ALL.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
@@ -153,7 +153,6 @@ Class | Method | HTTP request | Description
 *AlipayBossFncUserinvoiceinfoApi* | [**create**](docs/AlipayBossFncUserinvoiceinfoApi.md#create) | **POST** /v3/alipay/boss/fnc/userinvoiceinfo/create | 新增客户开票资料
 *AlipayBossFncUserinvoiceinfoApi* | [**modify**](docs/AlipayBossFncUserinvoiceinfoApi.md#modify) | **POST** /v3/alipay/boss/fnc/userinvoiceinfo/modify | 修改用户开票资料
 *AlipayBossFncUserinvoiceinfoApi* | [**query**](docs/AlipayBossFncUserinvoiceinfoApi.md#query) | **GET** /v3/alipay/boss/fnc/userinvoiceinfo/query | 根据PID获取相关的开票资料
-*AlipayBossProdMyTestApi* | [**query**](docs/AlipayBossProdMyTestApi.md#query) | **GET** /v3/alipay/boss/prod/my/test/query | 明焕open测试
 *AlipayCommerceCityfacilitatorStationApi* | [**query**](docs/AlipayCommerceCityfacilitatorStationApi.md#query) | **GET** /v3/alipay/commerce/cityfacilitator/station/query | 地铁购票站点数据查询
 *AlipayCommerceCityfacilitatorVoucherApi* | [**batchquery**](docs/AlipayCommerceCityfacilitatorVoucherApi.md#batchquery) | **POST** /v3/alipay/commerce/cityfacilitator/voucher/batchquery | 地铁购票订单批量查询
 *AlipayCommerceCityfacilitatorVoucherApi* | [**generate**](docs/AlipayCommerceCityfacilitatorVoucherApi.md#generate) | **POST** /v3/alipay/commerce/cityfacilitator/voucher/generate | 地铁购票核销码发码
@@ -488,7 +487,6 @@ Class | Method | HTTP request | Description
 *AlipayMarketingRecruitEnrollApi* | [**query**](docs/AlipayMarketingRecruitEnrollApi.md#query) | **GET** /v3/alipay/marketing/recruit/enroll/query | 报名详情查询
 *AlipayMarketingRecruitPlanApi* | [**query**](docs/AlipayMarketingRecruitPlanApi.md#query) | **POST** /v3/alipay/marketing/recruit/plan/query | 招商方案详情查询
 *AlipayMarketingRecruitPlanlistApi* | [**query**](docs/AlipayMarketingRecruitPlanlistApi.md#query) | **POST** /v3/alipay/marketing/recruit/planlist/query | 查询可报名的方案列表
-*AlipayMarketingXuanyitestApi* | [**transfer**](docs/AlipayMarketingXuanyitestApi.md#transfer) | **POST** /v3/alipay/marketing/xuanyitest/transfer | 资源化测试4.0
 *AlipayMerchantAnchorInfoApi* | [**query**](docs/AlipayMerchantAnchorInfoApi.md#query) | **GET** /v3/alipay/merchant/anchor/query | 查询主播信息
 *AlipayMerchantImageApi* | [**upload**](docs/AlipayMerchantImageApi.md#upload) | **POST** /v3/alipay/merchant/image/upload | 商户上传处理图片
 *AlipayMerchantIndirectAuthorderApi* | [**close**](docs/AlipayMerchantIndirectAuthorderApi.md#close) | **PUT** /v3/alipay/merchant/indirect/authorder/close | 商家认证申请单撤销
@@ -555,8 +553,6 @@ Class | Method | HTTP request | Description
 *AlipayOpenAppServiceApi* | [**query**](docs/AlipayOpenAppServiceApi.md#query) | **GET** /v3/alipay/open/app/service/query | 服务查询
 *AlipayOpenAppServiceListApi* | [**query**](docs/AlipayOpenAppServiceListApi.md#query) | **GET** /v3/alipay/open/app/service/list/query | 服务批量查询
 *AlipayOpenAppServiceSchemaApi* | [**query**](docs/AlipayOpenAppServiceSchemaApi.md#query) | **GET** /v3/alipay/open/app/service/schema/query | 服务schema下发
-*AlipayOpenAppTestGrayApi* | [**create**](docs/AlipayOpenAppTestGrayApi.md#create) | **POST** /v3/alipay/open/app/test/gray/create | openapi-oas3.0灰度
-*AlipayOpenAppTestGrayApi* | [**query**](docs/AlipayOpenAppTestGrayApi.md#query) | **GET** /v3/alipay/open/app/test/gray/query | GET方法测试
 *AlipayOpenAuthAppAesApi* | [**get**](docs/AlipayOpenAuthAppAesApi.md#get) | **GET** /v3/alipay/open/auth/app/aes/get | 授权应用aes密钥查询
 *AlipayOpenAuthAppAesApi* | [**set**](docs/AlipayOpenAuthAppAesApi.md#set) | **POST** /v3/alipay/open/auth/app/aes/set | 授权应用aes密钥设置
 *AlipayOpenAuthTokenApi* | [**app**](docs/AlipayOpenAuthTokenApi.md#app) | **POST** /v3/alipay/open/auth/token/app | 换取应用授权令牌
@@ -671,7 +667,6 @@ Class | Method | HTTP request | Description
 *AlipayOpenMiniWidgetGoodsApi* | [**modify**](docs/AlipayOpenMiniWidgetGoodsApi.md#modify) | **PATCH** /v3/alipay/open/mini/widget/goods/modify | 小部件商品修改
 *AlipayOpenMiniWidgetGoodsApi* | [**query**](docs/AlipayOpenMiniWidgetGoodsApi.md#query) | **GET** /v3/alipay/open/mini/widget/goods/query | 小部件商品查询
 *AlipayOpenMiniWidgetGoodsApi* | [**upload**](docs/AlipayOpenMiniWidgetGoodsApi.md#upload) | **POST** /v3/alipay/open/mini/widget/goods/upload | 小部件商品上传
-*AlipayOpenOperationOpenbizmockTestpathkeyApi* | [**query**](docs/AlipayOpenOperationOpenbizmockTestpathkeyApi.md#query) | **POST** /v3/alipay/open/operation/openbizmock/testpathkey/query/{keykey}/{a} | 测试网关协议3.0key和path
 *AlipayOpenPublicAccountApi* | [**create**](docs/AlipayOpenPublicAccountApi.md#create) | **POST** /v3/alipay/open/public/account/create | 添加绑定商户会员号
 *AlipayOpenPublicAccountApi* | [**delete**](docs/AlipayOpenPublicAccountApi.md#delete) | **DELETE** /v3/alipay/open/public/account/delete | 解除绑定商户会员号
 *AlipayOpenPublicAccountApi* | [**query**](docs/AlipayOpenPublicAccountApi.md#query) | **GET** /v3/alipay/open/public/account/query | 查询绑定商户会员号
@@ -801,7 +796,6 @@ Class | Method | HTTP request | Description
 *AlipayPcreditHuabeiAuthSettleApi* | [**apply**](docs/AlipayPcreditHuabeiAuthSettleApi.md#apply) | **PUT** /v3/alipay/pcredit/huabei/auth/settle/apply | 花芝轻会员结算申请
 *AlipaySecurityDataSssApi* | [**create**](docs/AlipaySecurityDataSssApi.md#create) | **POST** /v3/alipay/security/data/sss/create/{a} | 文档回归测试勿动openapi_openid_post多场景
 *AlipaySecurityProdSssApi* | [**query**](docs/AlipaySecurityProdSssApi.md#query) | **POST** /v3/alipay/security/prod/sss/query/{bbb} | 金柚测试3.0接口
-*AlipaySecurityProdTianwutestApi* | [**modify**](docs/AlipaySecurityProdTianwutestApi.md#modify) | **POST** /v3/alipay/security/prod/tianwutest/modify | tianwutest
 *AlipaySecurityRiskCustomerriskApi* | [**send**](docs/AlipaySecurityRiskCustomerriskApi.md#send) | **POST** /v3/alipay/security/risk/customerrisk/send | 商户数据同步
 *AlipaySecurityRiskVerifyidentityMiniappApi* | [**confirm**](docs/AlipaySecurityRiskVerifyidentityMiniappApi.md#confirm) | **POST** /v3/alipay/security/risk/verifyidentity/miniapp/confirm | 小程序核验服务结果确认接口
 *AlipaySocialBaseContentlibStandardcontentApi* | [**batchquery**](docs/AlipaySocialBaseContentlibStandardcontentApi.md#batchquery) | **POST** /v3/alipay/social/base/contentlib/standardcontent/batchquery | 内容批量查询接口

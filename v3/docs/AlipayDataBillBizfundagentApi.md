@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="query"></a>
 # **query**
-> AlipayDataBillBizfundagentQueryResponseModel query(startTime, endTime, pageNo, pageSize, agreementNo)
+> AlipayDataBillBizfundagentQueryResponseModel query(startTime, endTime, pageNo, pageSize, agreementNo, accountBookId)
 
 ISV代理商户资金业务账单查询
 
@@ -43,8 +43,9 @@ public class Example {
     String pageNo = "1"; // String | 页码，从1开始
     String pageSize = "2000"; // String | 分页大小1000-2000，默认2000
     String agreementNo = "20205215001418078112"; // String | ISV与商户授权协议号
+    String accountBookId = "20880123456789012"; // String | 记账本id，服务商在帮助商户开通时候获取的唯一身份号
     try {
-      AlipayDataBillBizfundagentQueryResponseModel result = apiInstance.query(startTime, endTime, pageNo, pageSize, agreementNo);
+      AlipayDataBillBizfundagentQueryResponseModel result = apiInstance.query(startTime, endTime, pageNo, pageSize, agreementNo, accountBookId);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayDataBillBizfundagentApi#query");
@@ -66,6 +67,7 @@ public class Example {
 | **pageNo** | **String**| 页码，从1开始 | [optional] |
 | **pageSize** | **String**| 分页大小1000-2000，默认2000 | [optional] |
 | **agreementNo** | **String**| ISV与商户授权协议号 | [optional] |
+| **accountBookId** | **String**| 记账本id，服务商在帮助商户开通时候获取的唯一身份号 | [optional] |
 
 ### Return type
 

@@ -38,7 +38,7 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenMiniCategoryApi apiInstance = new AlipayOpenMiniCategoryApi(defaultClient);
-    Boolean isFilter = true; // Boolean | 是否过滤小程序不可用类目。枚举值如下： * true：表示过滤不可用类目。 * false：表示不过滤不可用类目。
+    Boolean isFilter = true; // Boolean | 是否过滤小程序不可用类目。枚举值如下： true：表示过滤不可用类目。 false：表示不过滤不可用类目。
     try {
       AlipayOpenMiniCategoryQueryResponseModel result = apiInstance.query(isFilter);
       System.out.println(result);
@@ -57,7 +57,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **isFilter** | **Boolean**| 是否过滤小程序不可用类目。枚举值如下： * true：表示过滤不可用类目。 * false：表示不过滤不可用类目。 | [optional] |
+| **isFilter** | **Boolean**| 是否过滤小程序不可用类目。枚举值如下： true：表示过滤不可用类目。 false：表示不过滤不可用类目。 | [optional] |
 
 ### Return type
 
