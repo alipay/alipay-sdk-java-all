@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.offlinepay.virtualcard.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-20 16:06:52
+ * @since 1.0, 2024-01-05 13:42:28
  */
 public class AlipayCommerceTransportOfflinepayVirtualcardSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3636579415563159832L;
+	private static final long serialVersionUID = 5689966191783294681L;
 
 	/** 
 	 * 用户虚拟卡卡号

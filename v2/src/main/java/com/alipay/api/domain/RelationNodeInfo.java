@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 关联关系信息模型
  *
  * @author auto create
- * @since 1.0, 2023-12-25 16:26:15
+ * @since 1.0, 2024-01-04 15:32:21
  */
 public class RelationNodeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1341254957334177286L;
+	private static final long serialVersionUID = 1824864834411117974L;
+
+	/**
+	 * 当前节点的层数
+	 */
+	@ApiField("layer")
+	private Long layer;
 
 	/**
 	 * 节点名称，根据不同的关联关系类型，可能为企业名或者人名
@@ -42,6 +48,13 @@ public class RelationNodeInfo extends AlipayObject {
 	 */
 	@ApiField("ultimate_ratio")
 	private String ultimateRatio;
+
+	public Long getLayer() {
+		return this.layer;
+	}
+	public void setLayer(Long layer) {
+		this.layer = layer;
+	}
 
 	public String getNodeName() {
 		return this.nodeName;

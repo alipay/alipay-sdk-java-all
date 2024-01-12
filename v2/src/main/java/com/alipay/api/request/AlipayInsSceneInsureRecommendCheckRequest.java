@@ -1,26 +1,26 @@
 package com.alipay.api.request;
 
-import com.alipay.api.domain.AlipayPcreditJhjtestNewoneDeleteModel;
+import com.alipay.api.domain.AlipayInsSceneInsureRecommendCheckModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
-import com.alipay.api.response.AlipayPcreditJhjtestNewoneDeleteResponse;
+import com.alipay.api.response.AlipayInsSceneInsureRecommendCheckResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: alipay.pcredit.jhjtest.newone.delete request
+ * ALIPAY API: alipay.ins.scene.insure.recommend.check request
  * 
  * @author auto create
- * @since 1.0, 2023-12-08 17:41:55
+ * @since 1.0, 2024-01-09 12:20:15
  */
-public class AlipayPcreditJhjtestNewoneDeleteRequest implements AlipayRequest<AlipayPcreditJhjtestNewoneDeleteResponse> {
+public class AlipayInsSceneInsureRecommendCheckRequest implements AlipayRequest<AlipayInsSceneInsureRecommendCheckResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
 
 	/** 
-	* 迭代内测试用接口
+	* 投保推荐检查
 	 */
 	private String bizContent;
 
@@ -87,7 +87,7 @@ public class AlipayPcreditJhjtestNewoneDeleteRequest implements AlipayRequest<Al
 	}
 
 	public String getApiMethodName() {
-		return "alipay.pcredit.jhjtest.newone.delete";
+		return "alipay.ins.scene.insure.recommend.check";
 	}
 
 	public Map<String, String> getTextParams() {		
@@ -106,8 +106,8 @@ public class AlipayPcreditJhjtestNewoneDeleteRequest implements AlipayRequest<Al
 		this.udfParams.put(key, value);
 	}
 
-	public Class<AlipayPcreditJhjtestNewoneDeleteResponse> getResponseClass() {
-		return AlipayPcreditJhjtestNewoneDeleteResponse.class;
+	public Class<AlipayInsSceneInsureRecommendCheckResponse> getResponseClass() {
+		return AlipayInsSceneInsureRecommendCheckResponse.class;
 	}
 	
 

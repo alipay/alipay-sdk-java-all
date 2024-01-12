@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 本地商品免审更新skku
  *
  * @author auto create
- * @since 1.0, 2023-12-25 14:19:45
+ * @since 1.0, 2024-01-09 14:02:01
  */
 public class LocalItemDirectModifySku extends AlipayObject {
 
-	private static final long serialVersionUID = 1241772644943922251L;
+	private static final long serialVersionUID = 2777396647733764263L;
 
 	/**
 	 * 支持限制库存和不限库存的相互转换

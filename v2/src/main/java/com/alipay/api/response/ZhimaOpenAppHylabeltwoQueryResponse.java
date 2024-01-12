@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaOpenAppHylabeltwoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3569837789125477257L;
+	private static final long serialVersionUID = 5557654494295865673L;
 
 	/** 
 	 * 行业分类概率列表

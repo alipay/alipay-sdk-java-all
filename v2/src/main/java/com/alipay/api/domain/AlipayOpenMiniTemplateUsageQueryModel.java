@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询使用ISV模板的托管小程序列表
  *
  * @author auto create
- * @since 1.0, 2022-12-04 22:27:14
+ * @since 1.0, 2024-01-09 10:54:17
  */
 public class AlipayOpenMiniTemplateUsageQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4831562832522737671L;
+	private static final long serialVersionUID = 8598639647453547577L;
 
 	/**
 	 * 小程序客户端类型，默认为支付宝端。常见支持如下客户端：

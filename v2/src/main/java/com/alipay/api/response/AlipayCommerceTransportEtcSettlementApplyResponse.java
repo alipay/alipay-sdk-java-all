@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.etc.settlement.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-13 17:08:39
+ * @since 1.0, 2024-01-03 11:11:54
  */
 public class AlipayCommerceTransportEtcSettlementApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1336778153415656234L;
+	private static final long serialVersionUID = 6761172296626955114L;
 
 	/** 
 	 * 行程描述：行程号xxx
@@ -40,7 +40,7 @@ public class AlipayCommerceTransportEtcSettlementApplyResponse extends AlipayRes
 	private String totalAmount;
 
 	/** 
-	 * 行程扣款阶段性错误信息：用户协议不存在
+	 * 行程扣款阶段性错误信息
 	 */
 	@ApiField("trade_biz_code")
 	private String tradeBizCode;
@@ -58,8 +58,7 @@ public class AlipayCommerceTransportEtcSettlementApplyResponse extends AlipayRes
 	private String tradeNo;
 
 	/** 
-	 * 行程扣款状态：
-"I":"待支付"; "PI":"支付中（请重试）"; "S":"支付成功"; "F":"支付失败"; "RI":"退款中（请重试）"; "R":"已退款"
+	 * 行程交易处理状态
 	 */
 	@ApiField("trade_status")
 	private String tradeStatus;

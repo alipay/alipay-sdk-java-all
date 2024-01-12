@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 内容风险子标签明细
  *
  * @author auto create
- * @since 1.0, 2023-09-28 10:28:25
+ * @since 1.0, 2024-01-11 17:56:22
  */
 public class SubCheckLabel extends AlipayObject {
 
-	private static final long serialVersionUID = 2884484242746773194L;
+	private static final long serialVersionUID = 5494525494138426562L;
 
 	/**
 	 * 机器审核内容的类型：0:图片内容,1:图片上的文字

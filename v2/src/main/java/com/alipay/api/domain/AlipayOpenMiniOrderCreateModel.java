@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2621973243483232177L;
+	private static final long serialVersionUID = 4383324356213481672L;
 
 	/**
 	 * 订单收货地址
@@ -110,7 +110,7 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 	private ShopInfoDTO shopInfo;
 
 	/**
-	 * 追踪ID,公域分发场景必传,会影响主播归因、分享员归因等；通过调用  my.checkBeforeAddOrder 接口返回
+	 * 追踪ID，公域分发场景必传，会影响主播归因、分享员归因等；通过调用 <a href="https://opendocs.alipay.com/mini/512c3ce1_my.checkBeforeAddOrder?pathHash=4b9d23c5">my.checkBeforeAddOrder</a> 接口返回
 	 */
 	@ApiField("source_id")
 	private String sourceId;

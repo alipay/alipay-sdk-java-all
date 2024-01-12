@@ -8,11 +8,11 @@ import com.alipay.api.internal.mapping.ApiField;
 注:若该值不为空，且物流信息同步至我的快递，则在查询订单 时可返回具体物流信息
  *
  * @author auto create
- * @since 1.0, 2022-11-18 13:39:19
+ * @since 1.0, 2024-01-11 20:38:33
  */
 public class OrderLogisticsInformationRequestDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5182695248596774548L;
+	private static final long serialVersionUID = 4324624754488796744L;
 
 	/**
 	 * 物流公司编号。

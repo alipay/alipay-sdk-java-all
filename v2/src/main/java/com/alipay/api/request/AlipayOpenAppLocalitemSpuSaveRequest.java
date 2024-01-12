@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.localitem.spu.save request
  * 
  * @author auto create
- * @since 1.0, 2023-12-08 16:51:55
+ * @since 1.0, 2024-01-09 19:06:57
  */
 public class AlipayOpenAppLocalitemSpuSaveRequest implements AlipayRequest<AlipayOpenAppLocalitemSpuSaveResponse> {
 

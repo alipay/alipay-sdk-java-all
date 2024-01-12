@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserDeloauthDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6394628835138242211L;
+	private static final long serialVersionUID = 3651944139811968388L;
 
 	/**
 	 * 商家查询日期为：date时，产生的解除授权记录
@@ -20,13 +20,13 @@ public class AlipayUserDeloauthDetailQueryModel extends AlipayObject {
 	private String date;
 
 	/**
-	 * 分页查询的记录数，单次查询的记录数上限
+	 * 查询数量，单次查询的记录数上限
 	 */
 	@ApiField("limit")
 	private Long limit;
 
 	/**
-	 * 分页查询的偏移量，表示查询的起始位置是自(offset - 1)*limit，传入的offset必须大于0
+	 * 偏移位置，表示查询的起始位置是自(offset - 1)*limit，传入的offset必须大于0
 	 */
 	@ApiField("offset")
 	private Long offset;

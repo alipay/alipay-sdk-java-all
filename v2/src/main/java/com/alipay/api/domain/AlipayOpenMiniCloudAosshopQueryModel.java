@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenMiniCloudAosshopQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7879418283768549188L;
+	private static final long serialVersionUID = 1263878134631124159L;
 
 	/**
 	 * 用户唯一标识id，可以是支付宝userid、商家自定义的userid，目前是用户user_id的映射

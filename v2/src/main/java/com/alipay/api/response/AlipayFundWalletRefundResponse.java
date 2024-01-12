@@ -8,20 +8,20 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.wallet.refund response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-25 21:16:47
+ * @since 1.0, 2024-01-09 17:41:57
  */
 public class AlipayFundWalletRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8741757387365684923L;
+	private static final long serialVersionUID = 7184485979587921354L;
 
 	/** 
-	 * 原路退实际退款金额,单位元
+	 * 实际退回给用户的金额。当钱包账户存在膨胀金等特殊情况时，实际退回给用户的金额等于发起金额扣减膨胀金额。单位为元
 	 */
 	@ApiField("actual_amount")
 	private String actualAmount;
 
 	/** 
-	 * 原路退金额
+	 * 用户发起原路退的金额
 	 */
 	@ApiField("amount")
 	private String amount;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间连支付红包吱口令获取
  *
  * @author auto create
- * @since 1.0, 2023-10-20 14:12:59
+ * @since 1.0, 2024-01-02 11:12:01
  */
 public class AlipayMerchantIndirectSharetokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7793362316682967155L;
+	private static final long serialVersionUID = 1489575569369578652L;
 
 	/**
 	 * 通过吱口令打开支付宝后的页面跳转链接，例如服务商支付页URL
@@ -42,6 +42,12 @@ public class AlipayMerchantIndirectSharetokenCreateModel extends AlipayObject {
 	 */
 	@ApiField("expire_time")
 	private Long expireTime;
+
+	/**
+	 * 吱口令生成扩展参数
+	 */
+	@ApiField("extend_params")
+	private ShareCodeCreateExtendParam extendParams;
 
 	/**
 	 * 商户的名称
@@ -112,6 +118,13 @@ public class AlipayMerchantIndirectSharetokenCreateModel extends AlipayObject {
 	}
 	public void setExpireTime(Long expireTime) {
 		this.expireTime = expireTime;
+	}
+
+	public ShareCodeCreateExtendParam getExtendParams() {
+		return this.extendParams;
+	}
+	public void setExtendParams(ShareCodeCreateExtendParam extendParams) {
+		this.extendParams = extendParams;
 	}
 
 	public String getMerchantName() {

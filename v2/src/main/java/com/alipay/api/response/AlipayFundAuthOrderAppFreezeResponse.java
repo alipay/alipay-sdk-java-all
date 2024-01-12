@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.auth.order.app.freeze response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-21 18:56:58
+ * @since 1.0, 2024-01-12 13:47:01
  */
 public class AlipayFundAuthOrderAppFreezeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4542217745767886785L;
+	private static final long serialVersionUID = 8157136587737375314L;
 
 	/** 
 	 * 本次操作冻结的金额，单位为：元（人民币），精确到小数点后两位
@@ -51,6 +51,12 @@ public class AlipayFundAuthOrderAppFreezeResponse extends AlipayResponse {
 	 */
 	@ApiField("operation_id")
 	private String operationId;
+
+	/** 
+	 * 获取签名后的业务数据
+	 */
+	@ApiField("orderStr")
+	private String orderStr;
 
 	/** 
 	 * 商户的授权资金订单号
@@ -139,6 +145,13 @@ CLOSED：关闭
 	}
 	public String getOperationId( ) {
 		return this.operationId;
+	}
+
+	public void setOrderStr(String orderStr) {
+		this.orderStr = orderStr;
+	}
+	public String getOrderStr( ) {
+		return this.orderStr;
 	}
 
 	public void setOutOrderNo(String outOrderNo) {

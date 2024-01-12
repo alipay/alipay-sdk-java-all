@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序备案主体信息
  *
  * @author auto create
- * @since 1.0, 2023-12-27 10:55:19
+ * @since 1.0, 2024-01-05 18:18:51
  */
 public class IcpSubjectInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8712144261784154935L;
+	private static final long serialVersionUID = 8752528668542538256L;
 
 	/**
 	 * 主体详细地址

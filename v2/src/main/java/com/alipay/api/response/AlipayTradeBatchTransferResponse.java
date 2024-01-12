@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.batch.transfer response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-25 14:11:38
+ * @since 1.0, 2024-01-02 16:58:36
  */
 public class AlipayTradeBatchTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5471896249157251948L;
+	private static final long serialVersionUID = 4687761399958949443L;
 
 	/** 
 	 * 分账受理时间

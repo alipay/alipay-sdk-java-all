@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenMiniInnerSafedomainQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4531581935422239598L;
+	private static final long serialVersionUID = 5267535765214635744L;
 
 	/** 
 	 * 允许添加的最大域名数量限制

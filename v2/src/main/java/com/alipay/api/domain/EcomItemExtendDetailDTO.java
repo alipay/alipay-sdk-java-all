@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电商商品详情模型
  *
  * @author auto create
- * @since 1.0, 2023-12-27 14:48:50
+ * @since 1.0, 2024-01-02 13:58:09
  */
 public class EcomItemExtendDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8327968246499334679L;
+	private static final long serialVersionUID = 1246829574367426332L;
 
 	/**
 	 * cardType + 唯一 + 储值卡类目投保场景 + 通过上下游约定获取
@@ -40,6 +40,24 @@ public class EcomItemExtendDetailDTO extends AlipayObject {
 	 */
 	@ApiField("card_use_period")
 	private Long cardUsePeriod;
+
+	/**
+	 * 充电桩编号
+	 */
+	@ApiField("charge_box_no")
+	private String chargeBoxNo;
+
+	/**
+	 * 充电桩插座总数
+	 */
+	@ApiField("charge_box_plug_total")
+	private Long chargeBoxPlugTotal;
+
+	/**
+	 * 充电桩设备类型
+	 */
+	@ApiField("charge_box_type")
+	private String chargeBoxType;
 
 	/**
 	 * 充电站点详细地址
@@ -169,6 +187,27 @@ public class EcomItemExtendDetailDTO extends AlipayObject {
 	}
 	public void setCardUsePeriod(Long cardUsePeriod) {
 		this.cardUsePeriod = cardUsePeriod;
+	}
+
+	public String getChargeBoxNo() {
+		return this.chargeBoxNo;
+	}
+	public void setChargeBoxNo(String chargeBoxNo) {
+		this.chargeBoxNo = chargeBoxNo;
+	}
+
+	public Long getChargeBoxPlugTotal() {
+		return this.chargeBoxPlugTotal;
+	}
+	public void setChargeBoxPlugTotal(Long chargeBoxPlugTotal) {
+		this.chargeBoxPlugTotal = chargeBoxPlugTotal;
+	}
+
+	public String getChargeBoxType() {
+		return this.chargeBoxType;
+	}
+	public void setChargeBoxType(String chargeBoxType) {
+		this.chargeBoxType = chargeBoxType;
 	}
 
 	public String getChargeStationAddress() {

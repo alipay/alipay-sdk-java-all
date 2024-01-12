@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: techrisk.innovate.mpcpromo.item.query request
  * 
  * @author auto create
- * @since 1.0, 2023-09-26 12:11:45
+ * @since 1.0, 2024-01-05 15:56:56
  */
 public class TechriskInnovateMpcpromoItemQueryRequest implements AlipayRequest<TechriskInnovateMpcpromoItemQueryResponse> {
 

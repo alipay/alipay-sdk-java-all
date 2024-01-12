@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InvoiceAmountLimitDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4478666951664462478L;
+	private static final long serialVersionUID = 6473818953798192583L;
 
 	/**
 	 * 单张发票限额

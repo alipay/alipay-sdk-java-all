@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.travel.account.syncaplus.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-08 17:16:56
+ * @since 1.0, 2024-01-10 10:00:23
  */
 public class AlipayOverseasTravelAccountSyncaplusApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2399989764972618195L;
+	private static final long serialVersionUID = 7123411473259997293L;
 
 	/** 
 	 * 是否需要重试

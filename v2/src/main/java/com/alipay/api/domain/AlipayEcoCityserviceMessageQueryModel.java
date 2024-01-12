@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 城服用户消息查询
  *
  * @author auto create
- * @since 1.0, 2023-10-30 21:02:11
+ * @since 1.0, 2024-01-10 19:59:50
  */
 public class AlipayEcoCityserviceMessageQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3776379577791446331L;
+	private static final long serialVersionUID = 3557431916491821932L;
 
 	/**
 	 * 传入值为支付宝uid； 机构配置传入类型为支付宝uid时，必填； alipay_user_id优先级高于(certificate_number/certificate_username) 和 mobile，若不为空则以alipay_user_id为准作为用户身份

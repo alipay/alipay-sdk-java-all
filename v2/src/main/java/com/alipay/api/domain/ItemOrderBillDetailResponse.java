@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ItemOrderBillDetailResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 5334816921557911289L;
+	private static final long serialVersionUID = 1243735192264649285L;
 
 	/**
 	 * 订单创建时间，格式为  yyyy-MM-dd HH:mm:ss
@@ -24,7 +24,7 @@ public class ItemOrderBillDetailResponse extends AlipayObject {
 	private Date createTime;
 
 	/**
-	 * 支付宝公域会根据商家的具体成交场景和成交的商品类目来收取一定的技术服务费，技术服务费=结算基数*技术服务费费率，其中费率的部分由商品的类目来计算出。具体详情请查阅：https://opendocs.alipay.com/b/07w1gp
+	 * 支付宝公域会根据商家的具体成交场景和成交的商品类目来收取一定的技术服务费，技术服务费=结算基数*技术服务费费率，其中费率的部分由商品的类目来计算出。具体详情请查阅：<a href="https://opendocs.alipay.com/b/07w1gp">文档</a>
 	 */
 	@ApiField("fee_categories")
 	private String feeCategories;

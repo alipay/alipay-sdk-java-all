@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.charger.command.confirm request
  * 
  * @author auto create
- * @since 1.0, 2023-12-22 11:56:58
+ * @since 1.0, 2024-01-02 15:36:55
  */
 public class AlipayCommerceTransportChargerCommandConfirmRequest implements AlipayRequest<AlipayCommerceTransportChargerCommandConfirmResponse> {
 

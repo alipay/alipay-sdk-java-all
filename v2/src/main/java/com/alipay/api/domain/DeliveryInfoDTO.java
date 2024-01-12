@@ -10,15 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 快递信息
  *
  * @author auto create
- * @since 1.0, 2023-12-07 11:13:31
+ * @since 1.0, 2024-01-10 11:07:53
  */
 public class DeliveryInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4178783243821552368L;
+	private static final long serialVersionUID = 3631957569837743617L;
 
 	/**
-	 * 快递公司ID,物流公司ID列表请查看
-https://opendocs.alipay.com/mini/00au7e
+	 * 快递公司ID列表请查看：https://opendocs.alipay.com/mini/07hva0?pathHash=5de3c48d，请确认传入的值在此列表内，若发货的快递公司不在此列表内，可以传入值other
 	 */
 	@ApiField("delivery_id")
 	private String deliveryId;
@@ -29,6 +28,12 @@ https://opendocs.alipay.com/mini/00au7e
 	@ApiListField("item_info_list")
 	@ApiField("goods_item_d_t_o")
 	private List<GoodsItemDTO> itemInfoList;
+
+	/**
+	 * 发货期数
+	 */
+	@ApiField("period")
+	private String period;
 
 	/**
 	 * 快递单号
@@ -48,6 +53,13 @@ https://opendocs.alipay.com/mini/00au7e
 	}
 	public void setItemInfoList(List<GoodsItemDTO> itemInfoList) {
 		this.itemInfoList = itemInfoList;
+	}
+
+	public String getPeriod() {
+		return this.period;
+	}
+	public void setPeriod(String period) {
+		this.period = period;
 	}
 
 	public String getWaybillId() {

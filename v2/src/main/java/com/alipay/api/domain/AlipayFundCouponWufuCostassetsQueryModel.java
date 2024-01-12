@@ -7,17 +7,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * 五福耗卡查询
  *
  * @author auto create
- * @since 1.0, 2023-12-19 15:01:41
+ * @since 1.0, 2024-01-03 13:38:16
  */
 public class AlipayFundCouponWufuCostassetsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1251337323582399733L;
+	private static final long serialVersionUID = 7193544772997487243L;
 
 	/**
 	 * 需要消耗的福卡数量
 	 */
 	@ApiField("cost_count")
 	private Long costCount;
+
+	/**
+	 * 是否消耗商家x福卡类型
+	 */
+	@ApiField("cost_merchant_card")
+	private String costMerchantCard;
+
+	/**
+	 * 拓展参数
+	 */
+	@ApiField("ext_info")
+	private String extInfo;
 
 	/**
 	 * 蚂蚁统一会员ID
@@ -44,6 +56,20 @@ SQUARE：福气乐园
 	}
 	public void setCostCount(Long costCount) {
 		this.costCount = costCount;
+	}
+
+	public String getCostMerchantCard() {
+		return this.costMerchantCard;
+	}
+	public void setCostMerchantCard(String costMerchantCard) {
+		this.costMerchantCard = costMerchantCard;
+	}
+
+	public String getExtInfo() {
+		return this.extInfo;
+	}
+	public void setExtInfo(String extInfo) {
+		this.extInfo = extInfo;
 	}
 
 	public String getOpenId() {

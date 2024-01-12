@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KeyWordInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4126285717957162383L;
+	private static final long serialVersionUID = 8381833259422223112L;
 
 	/**
 	 * 审核单号
@@ -32,7 +32,7 @@ public class KeyWordInfo extends AlipayObject {
 	private String auditReason;
 
 	/**
-	 * 审核时间
+	 * 审核时间，格式为 yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("audit_time")
 	private String auditTime;
@@ -44,7 +44,7 @@ public class KeyWordInfo extends AlipayObject {
 	private String configId;
 
 	/**
-	 * 创建时间
+	 * 创建时间，格式为 yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("gmt_create")
 	private String gmtCreate;

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * wzw公有复杂类型
  *
  * @author auto create
- * @since 1.0, 2023-09-14 21:45:16
+ * @since 1.0, 2024-01-10 16:38:28
  */
 public class PublicComplexWzw extends AlipayObject {
 
-	private static final long serialVersionUID = 6776187384278456291L;
+	private static final long serialVersionUID = 4457127844927233943L;
 
 	/**
 	 * test

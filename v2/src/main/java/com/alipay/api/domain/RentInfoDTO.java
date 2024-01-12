@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租金信息
  *
  * @author auto create
- * @since 1.0, 2023-12-28 16:29:58
+ * @since 1.0, 2024-01-08 16:42:22
  */
 public class RentInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4787272413458335796L;
+	private static final long serialVersionUID = 5636279228676538693L;
 
 	/**
 	 * 续租总期数，仅续租且订单修改时传入，1-12的整数，包含边界值
@@ -40,7 +40,7 @@ public class RentInfoDTO extends AlipayObject {
 	private String depositPrice;
 
 	/**
-	 * 尾期租金用在非每期分期租金一致场景，例如一笔订单总金额100，首期33.33，每期33.33，尾期33.34，，单位元
+	 * 尾期租金用在非每期分期租金一致场景，例如一笔订单总金额100，首期33.33，每期33.33，尾期33.34，单位元
 	 */
 	@ApiField("finish_real_rent_price")
 	private String finishRealRentPrice;

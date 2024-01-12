@@ -1,5 +1,6 @@
 package com.alipay.api.response;
 
+import com.alipay.api.internal.mapping.ApiField;
 
 import com.alipay.api.AlipayResponse;
 
@@ -7,14 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.payafteruse.creditbizorder.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-07 12:04:51
+ * @since 1.0, 2024-01-03 10:39:32
  */
 public class ZhimaCreditPayafteruseCreditbizorderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7294169478629379563L;
+	private static final long serialVersionUID = 5314814587624689223L;
 
-	
+	/** 
+	 * 获取签名后的业务数据
+	 */
+	@ApiField("orderStr")
+	private String orderStr;
 
-	
+	public void setOrderStr(String orderStr) {
+		this.orderStr = orderStr;
+	}
+	public String getOrderStr( ) {
+		return this.orderStr;
+	}
 
 }

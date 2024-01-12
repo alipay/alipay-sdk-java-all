@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.base.process.instance.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 02:29:08
+ * @since 1.0, 2024-01-09 16:47:02
  */
 public class AlipayBossBaseProcessInstanceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3463945697959654675L;
+	private static final long serialVersionUID = 7842486279269489541L;
 
 	/** 
 	 * 流程实例内容

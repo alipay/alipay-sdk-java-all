@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 线上回归openapi
  *
  * @author auto create
- * @since 1.0, 2023-12-11 15:38:19
+ * @since 1.0, 2024-01-02 14:37:51
  */
 public class AlipayPcreditCreditriskJhjtestProdCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3128758652627696211L;
+	private static final long serialVersionUID = 3891575276316473483L;
 
 	/**
 	 * 1

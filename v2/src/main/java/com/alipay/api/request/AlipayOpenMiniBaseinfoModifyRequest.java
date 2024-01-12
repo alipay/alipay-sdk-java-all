@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.baseinfo.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-12-05 10:16:56
+ * @since 1.0, 2024-01-08 17:01:56
  */
 public class AlipayOpenMiniBaseinfoModifyRequest implements AlipayUploadRequest<AlipayOpenMiniBaseinfoModifyResponse> {
 
@@ -21,19 +21,19 @@ public class AlipayOpenMiniBaseinfoModifyRequest implements AlipayUploadRequest<
 	private String apiVersion="1.0";
 
 	/** 
-	* 11_12;12_13。小程序类目，格式为 第一个一级类目_第一个二级类目;第二个一级类目_第二个二级类目，详细类目可以参考https://docs.open.alipay.com/api_49/alipay.open.mini.category.query接口查询mini_category_list 。
+	* 11_12;12_13。小程序类目，格式为 第一个一级类目_第一个二级类目;第二个一级类目_第二个二级类目，详细类目可以参考<a href="https://docs.open.alipay.com/api_49/alipay.open.mini.category.query">https://docs.open.alipay.com/api_49/alipay.open.mini.category.query</a>接口查询mini_category_list 。
 	 */
 	private String appCategoryIds;
 
 	/** 
 	* 小程序描述，长度限制 20~400 个字符。
-如果前期已经设置过该信息，本次可不填，平台将会为你默认上传该信息。如果前期没有设置过该信息，则本次为必填。可通过https://opendocs.alipay.com/mini/03l21r查询当前小程序信息
+如果前期已经设置过该信息，本次可不填，平台将会为你默认上传该信息。如果前期没有设置过该信息，则本次为必填。可通过<a href="https://opendocs.alipay.com/mini/03l21r">https://opendocs.alipay.com/mini/03l21r</a>查询当前小程序信息
 	 */
 	private String appDesc;
 
 	/** 
 	* 小程序应用英文名称。长度限制 3~30 个字符，仅支持包含中文、数字、英文、下划线、+、-。
-如果前期已经设置过该信息，本次可不填，平台将会为你默认上传该信息。如果前期没有设置过该信息，则本次为必填。可通过alipay.open.mini.baseinfo.query查询当前小程序信息
+如果前期已经设置过该信息，本次可不填，平台将会为你默认上传该信息。如果前期没有设置过该信息，则本次为必填。可通过<a href="https://opendocs.alipay.com/mini/03l21r?pathHash=36d314be&scene=common">alipay.open.mini.baseinfo.query</a>查询当前小程序信息
 	 */
 	private String appEnglishName;
 
@@ -45,20 +45,20 @@ public class AlipayOpenMiniBaseinfoModifyRequest implements AlipayUploadRequest<
 
 	/** 
 	* 小程序名称。长度限制 3~30 个字符，仅支持包含中文、数字、英文、下划线、+、-。
-如果前期已经设置过该信息，本次可不填，平台将会为你默认上传该信息。如果前期没有设置过该信息，则本次为必填。可通过alipay.open.mini.baseinfo.query查询当前小程序信息
+如果前期已经设置过该信息，本次可不填，平台将会为你默认上传该信息。如果前期没有设置过该信息，则本次为必填。可通过<a href="https://opendocs.alipay.com/mini/03l21r?pathHash=36d314be&scene=common ">alipay.open.mini.baseinfo.query</a>查询当前小程序信息
 	 */
 	private String appName;
 
 	/** 
 	* 小程序简介，一句话描述小程序功能，长度限制 10~32个字符。
-如果前期已经设置过该信息，本次可不填，平台将会为你默认上传该信息。如果前期没有设置过该信息，则本次为必填。可通过alipay.open.mini.baseinfo.query查询当前小程序信息
+如果前期已经设置过该信息，本次可不填，平台将会为你默认上传该信息。如果前期没有设置过该信息，则本次为必填。可通过<a href="https://opendocs.alipay.com/mini/03l21r?pathHash=36d314be&scene=common">alipay.open.mini.baseinfo.query</a>查询当前小程序信息
 	 */
 	private String appSlogan;
 
 	/** 
-	* 新小程序前台类目，格式为 第一个一级类目_第一个二级类目;第二个一级类目_第二个二级类目_第二个三级类目，详细类目可以通过 https://docs.open.alipay.com/api_49/alipay.open.mini.category.query
+	* 新小程序前台类目，格式为 第一个一级类目_第一个二级类目;第二个一级类目_第二个二级类目_第二个三级类目，详细类目可以通过 <a href="https://docs.open.alipay.com/api_49/alipay.open.mini.category.query">https://docs.open.alipay.com/api_49/alipay.open.mini.category.query</a>
 接口查询mini_category_list。
-如果前期已经设置过该信息，本次可不填，平台将会为你默认上传该信息。如果前期没有设置过该信息，则本次为必填。可通过https://opendocs.alipay.com/mini/03l21r查询当前小程序信息
+如果前期已经设置过该信息，本次可不填，平台将会为你默认上传该信息。如果前期没有设置过该信息，则本次为必填。可通过<a href="https://opendocs.alipay.com/mini/03l21r">https://opendocs.alipay.com/mini/03l21r</a>查询当前小程序信息
 注意：个人开发者不得使用企业类目。
 	 */
 	private String miniCategoryIds;

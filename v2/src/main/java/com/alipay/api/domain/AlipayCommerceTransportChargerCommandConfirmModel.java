@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 充电指令结果确认
  *
  * @author auto create
- * @since 1.0, 2023-12-22 11:56:34
+ * @since 1.0, 2024-01-02 15:34:50
  */
 public class AlipayCommerceTransportChargerCommandConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4343752928593185562L;
+	private static final long serialVersionUID = 7543411382165916748L;
 
 	/**
 	 * 指令结果

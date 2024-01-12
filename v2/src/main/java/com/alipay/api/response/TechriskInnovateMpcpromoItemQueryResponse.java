@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: techrisk.innovate.mpcpromo.item.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-26 12:11:45
+ * @since 1.0, 2024-01-05 15:56:56
  */
 public class TechriskInnovateMpcpromoItemQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4259298213238598892L;
+	private static final long serialVersionUID = 6148313915573934472L;
 
 	/** 
 	 * 商品推荐查询结果
@@ -24,11 +24,24 @@ public class TechriskInnovateMpcpromoItemQueryResponse extends AlipayResponse {
 	@ApiField("item_query_info")
 	private List<ItemQueryInfo> itemList;
 
+	/** 
+	 * 推荐请求的标识id，用于关联推荐结果和用户行为
+	 */
+	@ApiField("recommend_id")
+	private String recommendId;
+
 	public void setItemList(List<ItemQueryInfo> itemList) {
 		this.itemList = itemList;
 	}
 	public List<ItemQueryInfo> getItemList( ) {
 		return this.itemList;
+	}
+
+	public void setRecommendId(String recommendId) {
+		this.recommendId = recommendId;
+	}
+	public String getRecommendId( ) {
+		return this.recommendId;
 	}
 
 }

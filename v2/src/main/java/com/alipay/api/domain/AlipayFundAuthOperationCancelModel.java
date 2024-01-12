@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金预授权明细撤销接口
  *
  * @author auto create
- * @since 1.0, 2023-06-29 15:27:50
+ * @since 1.0, 2024-01-04 12:23:55
  */
 public class AlipayFundAuthOperationCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6285691828877673838L;
+	private static final long serialVersionUID = 7359954243225319428L;
 
 	/**
 	 * 支付宝授权资金订单号。

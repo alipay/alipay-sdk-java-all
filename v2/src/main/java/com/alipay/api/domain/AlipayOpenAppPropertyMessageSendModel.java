@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenAppPropertyMessageSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7452521793389491716L;
+	private static final long serialVersionUID = 8734499496139256914L;
 
 	/**
 	 * 业务ID，作为消息的唯一标识，服务端会按照此参数做幂等处理

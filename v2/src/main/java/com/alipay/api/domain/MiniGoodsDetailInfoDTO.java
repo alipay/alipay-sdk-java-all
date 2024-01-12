@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品列表信息模型
  *
  * @author auto create
- * @since 1.0, 2023-12-11 00:08:48
+ * @since 1.0, 2024-01-01 15:32:06
  */
 public class MiniGoodsDetailInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6731616219765517662L;
+	private static final long serialVersionUID = 2485982641815354265L;
 
 	/**
 	 * 商品描述信息
@@ -56,7 +56,7 @@ public class MiniGoodsDetailInfoDTO extends AlipayObject {
 	private String goodsName;
 
 	/**
-	 * 商品图片，用于小程序订单中心展示，可通过 alipay.merchant.item.file.upload接口上传素材获取素材id。默认使用已上报的商品库素材信息，已上报的商品可不传入，未上报商品库需传入。为空会导致订单展示异常
+	 * 商品图片，用于小程序订单中心展示，可通过 <a href="https://opendocs.alipay.com/mini/03l4lq?pathHash=c08922b1&scene=common">alipay.merchant.item.file.upload </a>接口上传素材获取素材id。默认使用已上报的商品库素材信息，已上报的商品可不传入，未上报商品库需传入。为空会导致订单展示异常
 	 */
 	@ApiField("image_material_id")
 	private String imageMaterialId;
@@ -68,11 +68,7 @@ public class MiniGoodsDetailInfoDTO extends AlipayObject {
 	private String itemCnt;
 
 	/**
-	 * 单位元
-有优惠信息时需要传入，优惠方式sale_real_price与item_discount二选一
-sale_real_price使用场景：商品有单价优惠，传入商品实际成交单价
-item_discount使用场景：同时购买多件商品时存在优惠，传入优惠总额
-优惠计算参考：https://opendocs.alipay.com/mini/0ag2e1?pathHash=20b9a409 中资金平衡校验
+	 * 单位元有优惠信息时需要传入，优惠方式sale_real_price与item_discount二选一sale_real_price使用场景：商品有单价优惠，传入商品实际成交单价item_discount使用场景：同时购买多件商品时存在优惠，传入优惠总额优惠计算参考：<a href="https://opendocs.alipay.com/mini/0ag2e1?pathHash=20b9a409">文档</a> 中资金平衡校验
 	 */
 	@ApiField("item_discount")
 	private String itemDiscount;

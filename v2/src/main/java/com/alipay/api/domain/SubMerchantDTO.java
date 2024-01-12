@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 二级商户信息	
  *
  * @author auto create
- * @since 1.0, 2023-03-27 16:44:12
+ * @since 1.0, 2024-01-02 15:41:37
  */
 public class SubMerchantDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2145591212147596577L;
+	private static final long serialVersionUID = 3723738613264747334L;
 
 	/**
 	 * 支付宝二级商户编号。 间连受理商户的支付宝商户编号，通过间连商户入驻接口后由支付宝生成。 直付通和机构间连业务场景下必传

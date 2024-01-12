@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务订单明细实施项单项取消
  *
  * @author auto create
- * @since 1.0, 2021-08-10 10:37:24
+ * @since 1.0, 2024-01-09 11:18:51
  */
 public class AlipayOpenServicemarketOrderItemCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4343774332652315183L;
+	private static final long serialVersionUID = 7692787217828747528L;
 
 	/**
 	 * 当前门店区域不支持实施
@@ -33,8 +33,7 @@ public class AlipayOpenServicemarketOrderItemCancelModel extends AlipayObject {
 
 	/**
 	 * 商家订购服务选择的某一门店的ID。若该订单： 
-为支付宝服务市场发布的服务所产生订单则该参数可选。 
-为口碑服务市场发布的服务所产生的订单，则此字段必填。口碑服务市场参见 http://fuwu.koubei.com/commodity/v2/merchandise/index.htm。
+为支付宝服务市场发布的服务所产生订单则该参数可选。
 	 */
 	@ApiField("shop_id")
 	private String shopId;

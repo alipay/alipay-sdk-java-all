@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 公有嵌套其他复杂类型
  *
  * @author auto create
- * @since 1.0, 2023-11-30 16:14:33
+ * @since 1.0, 2024-01-02 13:15:51
  */
 public class PubNestPub extends AlipayObject {
 
-	private static final long serialVersionUID = 3873915594379421427L;
+	private static final long serialVersionUID = 7518192263862563497L;
 
 	/**
 	 * 11

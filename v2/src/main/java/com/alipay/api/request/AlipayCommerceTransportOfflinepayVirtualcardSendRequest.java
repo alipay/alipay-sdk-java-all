@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.offlinepay.virtualcard.send request
  * 
  * @author auto create
- * @since 1.0, 2023-10-20 16:06:52
+ * @since 1.0, 2024-01-05 13:42:28
  */
 public class AlipayCommerceTransportOfflinepayVirtualcardSendRequest implements AlipayRequest<AlipayCommerceTransportOfflinepayVirtualcardSendResponse> {
 

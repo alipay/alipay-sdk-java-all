@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.huabei.fqqrcode.hbfq.bind response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-16 19:16:45
+ * @since 1.0, 2024-01-11 16:49:29
  */
 public class AlipayPcreditHuabeiFqqrcodeHbfqBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5514437443239425164L;
+	private static final long serialVersionUID = 5384448477458754337L;
 
 	/** 
 	 * 本次绑码操作是否成功,成功为true,失败为false.

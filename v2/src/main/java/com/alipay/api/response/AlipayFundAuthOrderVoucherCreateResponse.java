@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.auth.order.voucher.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-21 16:23:25
+ * @since 1.0, 2024-01-12 13:47:00
  */
 public class AlipayFundAuthOrderVoucherCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1624563962785971859L;
+	private static final long serialVersionUID = 8151418938326152835L;
 
 	/** 
 	 * 码类型，分为  barCode：条形码 (一维码) 和 qrCode:二维码(qrCode) ；
@@ -22,8 +22,8 @@ public class AlipayFundAuthOrderVoucherCreateResponse extends AlipayResponse {
 	private String codeType;
 
 	/** 
-	 * 生成的带有支付宝logo的二维码地址，如：http://mobilecodec.alipay.com/show.htm?code=aeparsv2dknkqf3018556a；商户端通过在末尾追加picSize来指定要显示的图片大小，如
-显示1280大小的URL:http://mobilecodec.alipay.com/show.htm?code=aeparsv2dknkqf3018556a&picSize=1280；目前支持的大小有：256, 227, 270, 344, 430, 512, 570, 860, 1280, 1546；
+	 * 生成的带有支付宝logo的二维码地址，如：<a href="http://mobilecodec.alipay.com/show.htm?code=aeparsv2dknkqf3018556a">http://mobilecodec.alipay.com/show.htm?code=aeparsv2dknkqf3018556a</a>；商户端通过在末尾追加picSize来指定要显示的图片大小，如
+显示1280大小的URL:<a href="http://mobilecodec.alipay.com/show.htm?code=aeparsv2dknkqf3018556a&picSize=1280">http://mobilecodec.alipay.com/show.htm?code=aeparsv2dknkqf3018556a&picSize=1280</a>；目前支持的大小有：256, 227, 270, 344, 430, 512, 570, 860, 1280, 1546；
 	 */
 	@ApiField("code_url")
 	private String codeUrl;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝订单信息同步接口
  *
  * @author auto create
- * @since 1.0, 2022-11-21 17:22:17
+ * @since 1.0, 2024-01-12 13:47:16
  */
 public class AlipayTradeOrderinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3824498538262553666L;
+	private static final long serialVersionUID = 3351895278599166522L;
 
 	/**
 	 * 交易信息同步对应的业务类型，具体值与支付宝约定；
@@ -26,13 +26,10 @@ public class AlipayTradeOrderinfoSyncModel extends AlipayObject {
 状态枚举如下：
 
 COMPLETE：同步用户已履约
-适用场景：发起扣款后，芝麻生成待履约记录，如果用户通过其他方式完成订单支付，请反馈该状态，芝麻将完结待履约记录对用户形成一条良好履约记录；
+适用场景：发起扣款后，芝麻生成待履约记录，如果用户通过其他方式完成订单支付，请反馈该状态，芝麻将完结待履约记录对用户形成一条良好履约记录；同步该状态时需要同步调用 取消扣款 接口关闭交易订单。
 
 CLOSED： 同步履约已取消
-适用场景：发起扣款后，芝麻生成待履约记录，如果发现该笔扣款无效需要取消，请反馈该状态，芝麻将取消用户待履约记录；
-
-VIOLATED： 用户已违约
-适用场景：如果用户在约定时间（具体根据行业约定，有一定宽限期）内未完成订单支付，反馈该状态，芝麻将对用户记录一条负面记录，请谨慎使用；
+适用场景：发起扣款后，芝麻生成待履约记录，如果发现该笔扣款无效需要取消，请反馈该状态，芝麻将取消用户待履约记录；同步该状态时需要同步调用 取消扣款 接口关闭交易订单。
 	 */
 	@ApiField("order_biz_info")
 	private String orderBizInfo;
@@ -44,7 +41,7 @@ VIOLATED： 用户已违约
 	private String origRequestNo;
 
 	/**
-	 * 外部请求号，商家自定义。标识一笔交易多次请求，同一笔交易多次信息同步时需要保证唯一。
+	 * 外部请求号，商家自定义且保证商家系统中唯一。需要注意的是，支付宝会对外部请求号做幂等控制，如果一笔交易再次使用相同的外部请求号发起请求，订单信息不会更新。
 	 */
 	@ApiField("out_request_no")
 	private String outRequestNo;

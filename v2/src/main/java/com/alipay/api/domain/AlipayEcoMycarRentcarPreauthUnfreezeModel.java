@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝租车预授权解冻
  *
  * @author auto create
- * @since 1.0, 2023-12-05 14:27:25
+ * @since 1.0, 2024-01-12 15:58:17
  */
 public class AlipayEcoMycarRentcarPreauthUnfreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1532827337736316669L;
+	private static final long serialVersionUID = 3552416952419437469L;
 
 	/**
 	 * 解冻资金类型

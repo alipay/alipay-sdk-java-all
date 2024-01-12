@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝租车预授权扣款
  *
  * @author auto create
- * @since 1.0, 2023-12-05 14:27:59
+ * @since 1.0, 2024-01-12 15:59:15
  */
 public class AlipayEcoMycarRentcarPreauthPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8239418834755932949L;
+	private static final long serialVersionUID = 5218286692457219812L;
 
 	/**
 	 * 扣款金额，单位分
 	 */
 	@ApiField("deduct_amount")
 	private Long deductAmount;
+
+	/**
+	 * 商户告知车生活押金扣款原因
+	 */
+	@ApiField("deduct_reason")
+	private String deductReason;
 
 	/**
 	 * 费用类型
@@ -54,6 +60,13 @@ public class AlipayEcoMycarRentcarPreauthPayModel extends AlipayObject {
 	}
 	public void setDeductAmount(Long deductAmount) {
 		this.deductAmount = deductAmount;
+	}
+
+	public String getDeductReason() {
+		return this.deductReason;
+	}
+	public void setDeductReason(String deductReason) {
+		this.deductReason = deductReason;
 	}
 
 	public String getFundType() {

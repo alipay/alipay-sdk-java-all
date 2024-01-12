@@ -10,26 +10,30 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 内容风险同步识别对外开放接口
  *
  * @author auto create
- * @since 1.0, 2023-10-09 11:53:24
+ * @since 1.0, 2024-01-11 17:56:22
  */
 public class AlipaySecurityRiskContentSyncDetectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1489668711832264171L;
+	private static final long serialVersionUID = 4431599842258295649L;
 
 	/**
-	 * 来源渠道，请与蚂蚁业务同学沟通获取
+	 * 来源渠道，按照实际申请开通的产品权限相应传值：
+Riskgo内容风险识别：tinyapp-eco-open
+小程序云内容风险识别：miniappcloud（文本），miniappcloud-oss（图片OSS）
+数科内容风险识别：digital-tech（数科生产），digital-tech-poc（数科POC）
 	 */
 	@ApiField("channel")
 	private String channel;
 
 	/**
-	 * 送检内容类型
+	 * 送检内容类型枚举值：
+图片:PICTURE，文本:TEXT
 	 */
 	@ApiField("content_type")
 	private String contentType;
 
 	/**
-	 * 用户发表内容，建议对内容中的格式符号、表情符、HTML标签、UBB标签等做过滤，只传递纯文本，以减少误判
+	 * 用户发表内容，建议对内容中的格式符号、表情符、HTML标签、UBB标签等做过滤，只传递纯文本，以减少误判（当前仅支持单图调用，多图调用待后续升级使用），当前接口仅支持单一内容传入。
 	 */
 	@ApiListField("data_list")
 	@ApiField("string")
@@ -42,7 +46,7 @@ public class AlipaySecurityRiskContentSyncDetectModel extends AlipayObject {
 	private String openId;
 
 	/**
-	 * 服务码列表，不同客户可能存在差异，请于蚂蚁内容安全客户经理联系获取具体传入值
+	 * 不同客户可能存在差异，按实际检测需求传值即可，当前支持的检测服务码：TJ_POLITICS_MC：敏感；TJ_PORN_MC：色情；TJ_ILLEGAL_MC：违禁；TJ_TERRORISM_MC：暴恐，TJ_ABUSES_MC：谩骂，其他需求请与蚂蚁内容安全客户经理沟通获取
 	 */
 	@ApiField("products")
 	private String products;

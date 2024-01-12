@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 钱包原路退接口
  *
  * @author auto create
- * @since 1.0, 2023-10-25 19:56:52
+ * @since 1.0, 2024-01-09 17:39:52
  */
 public class AlipayFundWalletRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3562518711619692498L;
+	private static final long serialVersionUID = 2543437523852498729L;
 
 	/**
 	 * 金额

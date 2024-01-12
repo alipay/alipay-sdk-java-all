@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 芝麻企业信用企业关联关系查询
  *
  * @author auto create
- * @since 1.0, 2023-12-22 17:59:10
+ * @since 1.0, 2024-01-04 15:32:21
  */
 public class ZhimaCreditEpDossierRelationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6478425253115395153L;
+	private static final long serialVersionUID = 8611988649969476354L;
 
 	/**
 	 * 企业社会统一信用代码或营业执照注册号
@@ -23,13 +23,18 @@ public class ZhimaCreditEpDossierRelationQueryModel extends AlipayObject {
 	private String epCertNo;
 
 	/**
-	 * 企业关联关系子产品码
+	 * 企业关联关系子产品码。目前支持3类查询：
+UBO关系查询：uboQuery；
+股权关系查询：stockQuery；
+工商关系查询：gsQuery
 	 */
 	@ApiField("product_code")
 	private String productCode;
 
 	/**
 	 * 关联关系类型列表
+
+「关联关系类型」需与「产品码」搭配使用，详细参数见下：1）product_code = uboQuery 时，ubo ：最终受益人；2）product_code = stockQuery 时，root：实际控制方；mom：母公司；parent：母公司的其他控股股东；child：子公司；sibling：兄弟公司(受同一控制方控制的其他企业)；uncle：重大影响/共同控制投资方；joint：联营/合营公司；3）product_code = gsQuery 时，head：总公司；branch：子公司；
 	 */
 	@ApiListField("relation_code_list")
 	@ApiField("string")

@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 消息子板批量查询接口
  *
  * @author auto create
- * @since 1.0, 2023-02-20 10:15:55
+ * @since 1.0, 2024-01-03 17:36:53
  */
 public class AlipayOpenMiniMessageTemplateBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5188649918587267354L;
+	private static final long serialVersionUID = 3756541237368466149L;
 
 	/**
-	 * 消息类型，目前仅支持查询订阅消息，biz_type:sub_msg
+	 * 消息类型
 	 */
 	@ApiField("biz_type")
 	private String bizType;

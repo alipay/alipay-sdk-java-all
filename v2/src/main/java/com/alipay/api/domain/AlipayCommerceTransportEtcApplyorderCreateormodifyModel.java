@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC办理申请单创建或修改
  *
  * @author auto create
- * @since 1.0, 2023-11-16 09:44:19
+ * @since 1.0, 2024-01-09 10:51:39
  */
 public class AlipayCommerceTransportEtcApplyorderCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6196193698719372745L;
+	private static final long serialVersionUID = 6566729691554522546L;
 
 	/**
 	 * 支付宝订单号，提供则认为是更新

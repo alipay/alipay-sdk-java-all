@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDigitalopUcdpApecreativeStyledesignrelationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8224134761441743972L;
+	private static final long serialVersionUID = 3685138828971546945L;
 
 	/**
 	 * designId 唯一用来查询所有的布局风格关以及关联表的信息。

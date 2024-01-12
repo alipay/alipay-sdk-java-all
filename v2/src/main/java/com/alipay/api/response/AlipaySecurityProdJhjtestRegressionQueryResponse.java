@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.jhjtest.regression.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-06 11:14:54
+ * @since 1.0, 2024-01-03 16:36:55
  */
 public class AlipaySecurityProdJhjtestRegressionQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3152329113123641494L;
+	private static final long serialVersionUID = 6211219667231197625L;
 
 	/** 
 	 * 22

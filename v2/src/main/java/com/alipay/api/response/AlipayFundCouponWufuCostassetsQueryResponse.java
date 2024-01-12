@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.coupon.wufu.costassets.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-19 15:01:41
+ * @since 1.0, 2024-01-03 13:41:54
  */
 public class AlipayFundCouponWufuCostassetsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6193322491314248157L;
+	private static final long serialVersionUID = 3384675836689876954L;
 
 	/** 
 	 * 当前是否可消耗福卡
@@ -35,6 +35,12 @@ public class AlipayFundCouponWufuCostassetsQueryResponse extends AlipayResponse 
 	 */
 	@ApiField("have_enough_cards")
 	private Boolean haveEnoughCards;
+
+	/** 
+	 * 福卡不足时的跳转链接
+	 */
+	@ApiField("not_enough_jump_url")
+	private String notEnoughJumpUrl;
 
 	/** 
 	 * 结果码
@@ -79,6 +85,13 @@ public class AlipayFundCouponWufuCostassetsQueryResponse extends AlipayResponse 
 	}
 	public Boolean getHaveEnoughCards( ) {
 		return this.haveEnoughCards;
+	}
+
+	public void setNotEnoughJumpUrl(String notEnoughJumpUrl) {
+		this.notEnoughJumpUrl = notEnoughJumpUrl;
+	}
+	public String getNotEnoughJumpUrl( ) {
+		return this.notEnoughJumpUrl;
 	}
 
 	public void setResultCode(String resultCode) {

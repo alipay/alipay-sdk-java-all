@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.service.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-15 11:41:49
+ * @since 1.0, 2024-01-10 15:02:00
  */
 public class AlipayOpenAppServiceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1228232243861549567L;
+	private static final long serialVersionUID = 3795785182761283872L;
 
 	/** 
 	 * 驳回理由
@@ -33,7 +33,7 @@ public class AlipayOpenAppServiceQueryResponse extends AlipayResponse {
 	private String serviceXml;
 
 	/** 
-	 * 服务状态，EDITING(编辑中)/AUDITING(审核中)/AUDIT_REJECT(审核驳回)/PROMOTION(可推广)/STOP_PROMOTION(停止推广)/INVALID(失效)/PUNISHED(处罚)
+	 * 服务状态
 	 */
 	@ApiField("status")
 	private String status;

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.instcard.createandpay request
  * 
  * @author auto create
- * @since 1.0, 2023-11-17 15:34:53
+ * @since 1.0, 2024-01-04 11:25:49
  */
 public class AlipayCommerceMedicalInstcardCreateandpayRequest implements AlipayRequest<AlipayCommerceMedicalInstcardCreateandpayResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.card.authinfo.query request
  * 
  * @author auto create
- * @since 1.0, 2023-12-28 17:00:46
+ * @since 1.0, 2024-01-10 19:56:57
  */
 public class AlipayMarketingCardAuthinfoQueryRequest implements AlipayRequest<AlipayMarketingCardAuthinfoQueryResponse> {
 

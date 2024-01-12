@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.jhjtest.regression.query request
  * 
  * @author auto create
- * @since 1.0, 2023-12-06 11:14:54
+ * @since 1.0, 2024-01-03 16:36:55
  */
 public class AlipaySecurityProdJhjtestRegressionQueryRequest implements AlipayRequest<AlipaySecurityProdJhjtestRegressionQueryResponse> {
 

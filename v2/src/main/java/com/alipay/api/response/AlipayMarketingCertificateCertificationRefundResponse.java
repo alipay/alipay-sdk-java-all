@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.certificate.certification.refund response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-25 11:36:54
+ * @since 1.0, 2024-01-05 16:16:55
  */
 public class AlipayMarketingCertificateCertificationRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5321494332254197176L;
+	private static final long serialVersionUID = 3369518469339148697L;
 
 	/** 
 	 * 撤销核销结果列表

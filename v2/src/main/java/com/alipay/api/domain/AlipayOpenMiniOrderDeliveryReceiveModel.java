@@ -1,17 +1,27 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 订单确认收货
  *
  * @author auto create
- * @since 1.0, 2023-11-08 21:14:50
+ * @since 1.0, 2024-01-04 11:22:51
  */
 public class AlipayOpenMiniOrderDeliveryReceiveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8816759124949499996L;
+	private static final long serialVersionUID = 6691323498283414443L;
+
+	/**
+	 * 确认收货的物流单列表，当有多个物流单时，可以指定物流单确认收货，不传入时，默认进行全部确认收货。
+	 */
+	@ApiListField("delivery_receive_list")
+	@ApiField("delivery_receive_d_t_o")
+	private List<DeliveryReceiveDTO> deliveryReceiveList;
 
 	/**
 	 * 买家open_id；open_id和user_id二选一
@@ -36,6 +46,13 @@ public class AlipayOpenMiniOrderDeliveryReceiveModel extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public List<DeliveryReceiveDTO> getDeliveryReceiveList() {
+		return this.deliveryReceiveList;
+	}
+	public void setDeliveryReceiveList(List<DeliveryReceiveDTO> deliveryReceiveList) {
+		this.deliveryReceiveList = deliveryReceiveList;
+	}
 
 	public String getOpenId() {
 		return this.openId;

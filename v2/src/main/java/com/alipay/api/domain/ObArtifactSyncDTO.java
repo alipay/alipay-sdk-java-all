@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ob制品同步入参
  *
  * @author auto create
- * @since 1.0, 2023-03-21 18:34:24
+ * @since 1.0, 2024-01-10 16:55:51
  */
 public class ObArtifactSyncDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2599435721226625849L;
+	private static final long serialVersionUID = 1414994136841611887L;
 
 	/**
 	 * 制品全称
@@ -121,6 +121,12 @@ public class ObArtifactSyncDTO extends AlipayObject {
 	 */
 	@ApiField("size")
 	private String size;
+
+	/**
+	 * 标签
+	 */
+	@ApiField("tag")
+	private String tag;
 
 	/**
 	 * 制品触发打包人
@@ -251,6 +257,13 @@ public class ObArtifactSyncDTO extends AlipayObject {
 	}
 	public void setSize(String size) {
 		this.size = size;
+	}
+
+	public String getTag() {
+		return this.tag;
+	}
+	public void setTag(String tag) {
+		this.tag = tag;
 	}
 
 	public String getTrigger() {

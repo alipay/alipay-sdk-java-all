@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DesignatedDrivingFeeDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5421878565266696373L;
+	private static final long serialVersionUID = 3822211261673345982L;
 
 	/**
 	 * 费用金额

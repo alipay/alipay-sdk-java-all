@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 环保杯列表，有环保杯时，必填。
  *
  * @author auto create
- * @since 1.0, 2022-11-18 13:39:19
+ * @since 1.0, 2024-01-11 20:38:33
  */
 public class GreenCupsDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6198295315333463166L;
+	private static final long serialVersionUID = 7383887879667967935L;
 
 	/**
 	 * 环保二级类目；字典值: 

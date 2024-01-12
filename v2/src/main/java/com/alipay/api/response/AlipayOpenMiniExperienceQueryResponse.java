@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.experience.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-11 19:21:44
+ * @since 1.0, 2024-01-09 11:21:56
  */
 public class AlipayOpenMiniExperienceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2871794547378522269L;
+	private static final long serialVersionUID = 4175229797582954897L;
 
 	/** 
 	 * 小程序体验版二维码地址

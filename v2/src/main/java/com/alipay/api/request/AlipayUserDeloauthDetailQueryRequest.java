@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.deloauth.detail.query request
  * 
  * @author auto create
- * @since 1.0, 2023-12-27 17:11:56
+ * @since 1.0, 2023-12-29 21:26:56
  */
 public class AlipayUserDeloauthDetailQueryRequest implements AlipayRequest<AlipayUserDeloauthDetailQueryResponse> {
 

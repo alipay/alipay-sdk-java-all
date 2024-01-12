@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySecurityRiskComplaintInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8867716721365251313L;
+	private static final long serialVersionUID = 4389734964594231148L;
 
 	/** 
 	 * 投诉凭证图片信息，afts可访问url形式

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.category.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-30 14:45:03
+ * @since 1.0, 2024-01-09 11:02:00
  */
 public class AlipayOpenMiniCategoryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3135876687463921546L;
+	private static final long serialVersionUID = 7329326338885578614L;
 
 	/** 
 	 * 小程序类目列表
@@ -25,7 +25,7 @@ public class AlipayOpenMiniCategoryQueryResponse extends AlipayResponse {
 	private List<MiniAppCategory> categoryList;
 
 	/** 
-	 * 小程序新类目列表。小程序新类目列表，为三级类目。创建、修改、提审传入mini_category_ids，资质相关请参考https://opendocs.alipay.com/mini/operation/material
+	 * 小程序新类目列表。小程序新类目列表，为三级类目。创建、修改、提审传入mini_category_ids，资质相关请参考<a href="https://opendocs.alipay.com/mini/operation/material ">https://opendocs.alipay.com/mini/operation/material</a>
 	 */
 	@ApiListField("mini_category_list")
 	@ApiField("mini_app_category")

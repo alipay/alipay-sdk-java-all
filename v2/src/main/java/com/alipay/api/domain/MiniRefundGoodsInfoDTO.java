@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 退款商品信息
  *
  * @author auto create
- * @since 1.0, 2023-08-08 00:07:46
+ * @since 1.0, 2024-01-10 15:30:55
  */
 public class MiniRefundGoodsInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7666352738821819154L;
+	private static final long serialVersionUID = 5325321598853533891L;
 
 	/**
 	 * 商品退款凭证信息，在本地生活等场景下，需要填入凭证号进行退款。
@@ -36,6 +39,13 @@ public class MiniRefundGoodsInfoDTO extends AlipayObject {
 	 */
 	@ApiField("out_sku_id")
 	private String outSkuId;
+
+	/**
+	 * 分期数
+	 */
+	@ApiListField("period_list")
+	@ApiField("string")
+	private List<String> periodList;
 
 	/**
 	 * 商品退款金额，单位：元，精确到小数点后两位
@@ -69,6 +79,13 @@ public class MiniRefundGoodsInfoDTO extends AlipayObject {
 	}
 	public void setOutSkuId(String outSkuId) {
 		this.outSkuId = outSkuId;
+	}
+
+	public List<String> getPeriodList() {
+		return this.periodList;
+	}
+	public void setPeriodList(List<String> periodList) {
+		this.periodList = periodList;
 	}
 
 	public String getRefundAmount() {

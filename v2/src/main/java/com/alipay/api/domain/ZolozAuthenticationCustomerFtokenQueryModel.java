@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸ftoken查询消费接口
  *
  * @author auto create
- * @since 1.0, 2023-12-04 15:36:34
+ * @since 1.0, 2023-12-29 16:35:05
  */
 public class ZolozAuthenticationCustomerFtokenQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4452875791953289653L;
+	private static final long serialVersionUID = 8459872262666373864L;
 
 	/**
 	 * 1、1：1人脸验证能力

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 天鉴大模型防御-回答检测服务
  *
  * @author auto create
- * @since 1.0, 2023-11-29 21:10:26
+ * @since 1.0, 2024-01-08 15:16:50
  */
 public class AlipaySecurityRiskGuardrailsAnswerDetectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7638591474652667888L;
+	private static final long serialVersionUID = 6384757494576947594L;
 
 	/**
 	 * 当前回答内容，最大长度10000个字符。回答时必传
@@ -30,6 +30,12 @@ public class AlipaySecurityRiskGuardrailsAnswerDetectModel extends AlipayObject 
 	 */
 	@ApiField("answer_format")
 	private String answerFormat;
+
+	/**
+	 * 当前回答流式次序
+	 */
+	@ApiField("answer_index")
+	private Long answerIndex;
 
 	/**
 	 * 正常回答: NORMAL
@@ -55,7 +61,7 @@ triggerSource:
 	private KeyValueMap businessProperties;
 
 	/**
-	 * 大模型ID，表示大模型类型和版本等
+	 * 大模型ID，表示大模型版本等
 	 */
 	@ApiField("model_code")
 	private String modelCode;
@@ -121,6 +127,13 @@ triggerSource:
 	}
 	public void setAnswerFormat(String answerFormat) {
 		this.answerFormat = answerFormat;
+	}
+
+	public Long getAnswerIndex() {
+		return this.answerIndex;
+	}
+	public void setAnswerIndex(Long answerIndex) {
+		this.answerIndex = answerIndex;
 	}
 
 	public String getAnswerType() {

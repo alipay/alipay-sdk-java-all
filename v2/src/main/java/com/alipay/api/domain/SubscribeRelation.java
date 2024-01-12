@@ -11,28 +11,28 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SubscribeRelation extends AlipayObject {
 
-	private static final long serialVersionUID = 8758444781696341982L;
+	private static final long serialVersionUID = 7764167328362974422L;
 
 	/**
-	 * 订阅保持状态，下次静默订阅的时的状态。1:保持订阅，0:保持拒绝订阅
+	 * 订阅保持状态，即用户勾选“总是保持以上选择，不再询问”选项时勾选的订阅状态。说明：若用户“总是保持以上选择，不再询问”选项，且选择订阅消息。下次触发消息订阅组件时，支付宝将自动发起一次静默订阅（不再拉起订阅组件，无需用户手动订阅）。
 	 */
 	@ApiField("keep_state")
 	private String keepState;
 
 	/**
-	 * 模板是否展示在订阅组件中。ture:订阅组件中展示查询的模板，false:订阅组件中不展示模板
+	 * 模板是否展示在订阅组件中
 	 */
 	@ApiField("show")
 	private Boolean show;
 
 	/**
-	 * 订阅状态。0:拒绝订阅，1:订阅
+	 * 订阅状态
 	 */
 	@ApiField("subscribe_state")
 	private String subscribeState;
 
 	/**
-	 * 消息模板的订阅类型。longterm:长期性订阅，onetime:一次性订阅
+	 * 消息模板的订阅类型
 	 */
 	@ApiField("subscribe_type")
 	private String subscribeType;

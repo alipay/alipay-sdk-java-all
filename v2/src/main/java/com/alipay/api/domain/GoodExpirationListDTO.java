@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 临期食品列表
  *
  * @author auto create
- * @since 1.0, 2022-11-18 13:39:19
+ * @since 1.0, 2024-01-11 20:38:33
  */
 public class GoodExpirationListDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5753415688582539161L;
+	private static final long serialVersionUID = 2667277983681354696L;
 
 	/**
 	 * 商品有效时长，单位:天，有临期食品时可填写，非必填。
