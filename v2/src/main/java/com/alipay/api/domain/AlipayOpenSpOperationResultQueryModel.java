@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询服务商代运营操作结果
  *
  * @author auto create
- * @since 1.0, 2023-05-31 15:41:11
+ * @since 1.0, 2024-01-17 17:35:57
  */
 public class AlipayOpenSpOperationResultQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7567881491847697556L;
+	private static final long serialVersionUID = 6462788357217184472L;
 
 	/**
 	 * 接入的产品编号。未传batch_no时必填，枚举如下：

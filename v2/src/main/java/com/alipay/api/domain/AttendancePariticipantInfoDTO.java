@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AttendancePariticipantInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1446819224724443967L;
+	private static final long serialVersionUID = 4489468772515386151L;
 
 	/**
 	 * 主体补充参数

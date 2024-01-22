@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询创意详情
  *
  * @author auto create
- * @since 1.0, 2021-09-16 17:30:20
+ * @since 1.0, 2024-01-15 16:48:19
  */
 public class AlipayDataDataserviceAdCreativeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4577193557214932125L;
+	private static final long serialVersionUID = 1861295357553245738L;
 
 	/**
 	 * 灯火平台提供给外部系统的访问token
@@ -25,6 +25,18 @@ public class AlipayDataDataserviceAdCreativeQueryModel extends AlipayObject {
 	@ApiField("creative_outer_id")
 	private String creativeOuterId;
 
+	/**
+	 * 交易ID（灯火平台生成，请联系灯火运营获取）
+	 */
+	@ApiField("deal_id")
+	private String dealId;
+
+	/**
+	 * 交易类型，如果是ReachMax公司，固定传字符串"ReachMax"
+	 */
+	@ApiField("deal_type")
+	private String dealType;
+
 	public String getBizToken() {
 		return this.bizToken;
 	}
@@ -37,6 +49,20 @@ public class AlipayDataDataserviceAdCreativeQueryModel extends AlipayObject {
 	}
 	public void setCreativeOuterId(String creativeOuterId) {
 		this.creativeOuterId = creativeOuterId;
+	}
+
+	public String getDealId() {
+		return this.dealId;
+	}
+	public void setDealId(String dealId) {
+		this.dealId = dealId;
+	}
+
+	public String getDealType() {
+		return this.dealType;
+	}
+	public void setDealType(String dealType) {
+		this.dealType = dealType;
 	}
 
 }

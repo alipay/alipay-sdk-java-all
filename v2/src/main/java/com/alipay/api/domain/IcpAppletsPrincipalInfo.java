@@ -10,11 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序负责人信息
  *
  * @author auto create
- * @since 1.0, 2024-01-05 18:18:51
+ * @since 1.0, 2024-01-19 18:19:17
  */
 public class IcpAppletsPrincipalInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7683727523646756945L;
+	private static final long serialVersionUID = 3252832249357945938L;
+
+	/**
+	 * 小程序负责人授权书
+	 */
+	@ApiListField("authorization_materials")
+	@ApiField("string")
+	private List<String> authorizationMaterials;
 
 	/**
 	 * 小程序负责人证件号码
@@ -83,6 +90,13 @@ public class IcpAppletsPrincipalInfo extends AlipayObject {
 	 */
 	@ApiField("name")
 	private String name;
+
+	public List<String> getAuthorizationMaterials() {
+		return this.authorizationMaterials;
+	}
+	public void setAuthorizationMaterials(List<String> authorizationMaterials) {
+		this.authorizationMaterials = authorizationMaterials;
+	}
 
 	public String getCertificateNumber() {
 		return this.certificateNumber;

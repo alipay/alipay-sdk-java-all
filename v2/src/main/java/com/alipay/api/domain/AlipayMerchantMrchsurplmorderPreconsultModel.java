@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantMrchsurplmorderPreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4327116151231574117L;
+	private static final long serialVersionUID = 1278381328813895216L;
 
 	/**
 	 * LinkedMall入驻的业务ID

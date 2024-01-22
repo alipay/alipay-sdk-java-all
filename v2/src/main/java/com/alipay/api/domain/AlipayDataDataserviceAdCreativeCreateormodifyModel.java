@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 新增或修改创意
  *
  * @author auto create
- * @since 1.0, 2023-11-22 11:17:46
+ * @since 1.0, 2024-01-15 16:47:53
  */
 public class AlipayDataDataserviceAdCreativeCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2555494911316598869L;
+	private static final long serialVersionUID = 3792841915699628523L;
 
 	/**
 	 * 创意交互行为属性实例值
@@ -67,6 +67,18 @@ public class AlipayDataDataserviceAdCreativeCreateormodifyModel extends AlipayOb
 	private String creativeOuterId;
 
 	/**
+	 * 交易ID（灯火平台生成，请联系灯火运营获取）
+	 */
+	@ApiField("deal_id")
+	private String dealId;
+
+	/**
+	 * 交易类型，如果是ReachMax公司，固定传字符串"ReachMax"
+	 */
+	@ApiField("deal_type")
+	private String dealType;
+
+	/**
 	 * 创意业务扩展参数字段，根据第三方需要使用，投放端只做存储并向检索端透传
 	 */
 	@ApiField("extend_info")
@@ -111,6 +123,12 @@ public class AlipayDataDataserviceAdCreativeCreateormodifyModel extends AlipayOb
 	private String orderOuterId;
 
 	/**
+	 * 套餐ID（灯火平台生成，请联系灯火运营获取）
+	 */
+	@ApiField("profile_id")
+	private Long profileId;
+
+	/**
 	 * 门店创意关联的城市ID列表，目前仅口碑使用
 	 */
 	@ApiListField("region_list")
@@ -152,6 +170,13 @@ public class AlipayDataDataserviceAdCreativeCreateormodifyModel extends AlipayOb
 	 */
 	@ApiField("template_id")
 	private Long templateId;
+
+	/**
+	 * 三方监控链接
+	 */
+	@ApiListField("third_track_url_list")
+	@ApiField("third_track_url_unit")
+	private List<ThirdTrackUrlUnit> thirdTrackUrlList;
 
 	public List<ActionProperty> getActionPropertyList() {
 		return this.actionPropertyList;
@@ -209,6 +234,20 @@ public class AlipayDataDataserviceAdCreativeCreateormodifyModel extends AlipayOb
 		this.creativeOuterId = creativeOuterId;
 	}
 
+	public String getDealId() {
+		return this.dealId;
+	}
+	public void setDealId(String dealId) {
+		this.dealId = dealId;
+	}
+
+	public String getDealType() {
+		return this.dealType;
+	}
+	public void setDealType(String dealType) {
+		this.dealType = dealType;
+	}
+
 	public String getExtendInfo() {
 		return this.extendInfo;
 	}
@@ -258,6 +297,13 @@ public class AlipayDataDataserviceAdCreativeCreateormodifyModel extends AlipayOb
 		this.orderOuterId = orderOuterId;
 	}
 
+	public Long getProfileId() {
+		return this.profileId;
+	}
+	public void setProfileId(Long profileId) {
+		this.profileId = profileId;
+	}
+
 	public List<String> getRegionList() {
 		return this.regionList;
 	}
@@ -305,6 +351,13 @@ public class AlipayDataDataserviceAdCreativeCreateormodifyModel extends AlipayOb
 	}
 	public void setTemplateId(Long templateId) {
 		this.templateId = templateId;
+	}
+
+	public List<ThirdTrackUrlUnit> getThirdTrackUrlList() {
+		return this.thirdTrackUrlList;
+	}
+	public void setThirdTrackUrlList(List<ThirdTrackUrlUnit> thirdTrackUrlList) {
+		this.thirdTrackUrlList = thirdTrackUrlList;
 	}
 
 }

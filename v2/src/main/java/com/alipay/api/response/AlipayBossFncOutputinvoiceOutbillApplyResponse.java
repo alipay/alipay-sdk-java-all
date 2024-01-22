@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.outputinvoice.outbill.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-13 15:26:46
+ * @since 1.0, 2024-01-22 09:39:20
  */
 public class AlipayBossFncOutputinvoiceOutbillApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8729169543272582548L;
+	private static final long serialVersionUID = 6639389686961385868L;
 
 	/** 
 	 * 开票申请ID，唯一

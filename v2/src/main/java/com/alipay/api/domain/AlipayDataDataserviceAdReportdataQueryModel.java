@@ -10,19 +10,20 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 广告投放数据通用查询
  *
  * @author auto create
- * @since 1.0, 2023-11-20 17:47:24
+ * @since 1.0, 2024-01-15 16:40:51
  */
 public class AlipayDataDataserviceAdReportdataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3357626863837616437L;
+	private static final long serialVersionUID = 1552541565484749914L;
 
 	/**
 	 * 数据维度：
 ORDER-订单；
 PLAN-计划；
 GROUP-单元；
-CREATIVE-创意
-【不同数据维度决定了出参data_id代表的数据类型不一样分别为plan_id,group_id,order_id,creative_id】
+CREATIVE-创意；
+MARKET_TARGET-营销目标；
+【不同数据维度决定了出参data_id代表的数据类型不一样分别为plan_id,group_id,order_id,creative_id，营销目标时data_id为空】
 	 */
 	@ApiField("ad_level")
 	private String adLevel;
@@ -52,6 +53,14 @@ CREATIVE-创意
 	 */
 	@ApiField("current")
 	private Long current;
+
+	/**
+	 * 投放模式（订单/计划/单元/创意id_list都为空时此参数有效）：
+STANDARD_TOUFANG-标准三段式；
+TRUST_TOUFANG-托管式；
+	 */
+	@ApiField("delivery_mode")
+	private String deliveryMode;
 
 	/**
 	 * 数据查询结束时间，查询时间不能大于最近7天，时间格式：yyyyMMdd【最大时间-最小时间<=7时间左闭右闭】
@@ -149,6 +158,13 @@ BRAND-品牌投放
 	}
 	public void setCurrent(Long current) {
 		this.current = current;
+	}
+
+	public String getDeliveryMode() {
+		return this.deliveryMode;
+	}
+	public void setDeliveryMode(String deliveryMode) {
+		this.deliveryMode = deliveryMode;
 	}
 
 	public String getEndDate() {

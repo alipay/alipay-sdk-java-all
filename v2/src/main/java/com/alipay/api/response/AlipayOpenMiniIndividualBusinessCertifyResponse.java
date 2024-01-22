@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.individual.business.certify response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-11 16:36:49
+ * @since 1.0, 2024-01-19 14:33:15
  */
 public class AlipayOpenMiniIndividualBusinessCertifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5139242217547697134L;
+	private static final long serialVersionUID = 2269825768786285247L;
 
 	/** 
 	 * 个体工商户认证结果，true代表认证成功，false代表认证失败

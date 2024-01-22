@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 凭证实例的金额信息，在异常场景下可能为空，需要判断是否有值才可进行使用。
  *
  * @author auto create
- * @since 1.0, 2023-10-11 20:09:14
+ * @since 1.0, 2024-01-15 13:19:57
  */
 public class CertificateInstanceAmountInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4666126448935722614L;
+	private static final long serialVersionUID = 7689835977498545551L;
 
 	/**
 	 * 商品标注的原价，单位为元。

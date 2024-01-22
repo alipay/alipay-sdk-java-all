@@ -8,11 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.uni.transfer response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-29 17:07:36
+ * @since 1.0, 2024-01-19 17:41:58
  */
 public class AlipayFundTransUniTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1176793463414492383L;
+	private static final long serialVersionUID = 7795273667572452969L;
+
+	/** 
+	 * 转账金额，单位为元，默认为空，特殊场景提供。
+	 */
+	@ApiField("amount")
+	private String amount;
 
 	/** 
 	 * 支付宝转账订单号
@@ -58,6 +64,13 @@ REFUND：退票（转账到支付宝账户不涉及）；
 	 */
 	@ApiField("trans_date")
 	private String transDate;
+
+	public void setAmount(String amount) {
+		this.amount = amount;
+	}
+	public String getAmount( ) {
+		return this.amount;
+	}
 
 	public void setOrderId(String orderId) {
 		this.orderId = orderId;

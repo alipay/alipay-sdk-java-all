@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 退分润结果
  *
  * @author auto create
- * @since 1.0, 2023-07-11 19:56:13
+ * @since 1.0, 2024-01-16 15:02:16
  */
 public class RefundRoyaltyResult extends AlipayObject {
 
-	private static final long serialVersionUID = 5899433461429845939L;
+	private static final long serialVersionUID = 4676432516468548912L;
 
 	/**
 	 * 退分账金额

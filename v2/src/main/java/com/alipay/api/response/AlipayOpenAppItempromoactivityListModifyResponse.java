@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.itempromoactivity.list.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-30 10:46:53
+ * @since 1.0, 2024-01-19 15:52:01
  */
 public class AlipayOpenAppItempromoactivityListModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3162961984657777714L;
+	private static final long serialVersionUID = 8323626572429565775L;
 
 	/** 
 	 * 失败商品列表

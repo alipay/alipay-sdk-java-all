@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 无账单开票申请接口
  *
  * @author auto create
- * @since 1.0, 2023-10-30 19:36:11
+ * @since 1.0, 2024-01-22 09:38:31
  */
 public class AlipayBossFncGfsettleprodNobillinvoiceApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8499112229364269983L;
+	private static final long serialVersionUID = 2821195153244529242L;
 
 	/**
 	 * 指定的审批人员，值为审批人员的域账号

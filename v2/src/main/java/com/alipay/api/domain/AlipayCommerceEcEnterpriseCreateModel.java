@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业入驻
  *
  * @author auto create
- * @since 1.0, 2024-01-12 13:56:53
+ * @since 1.0, 2024-01-17 11:08:15
  */
 public class AlipayCommerceEcEnterpriseCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2217556587566164488L;
+	private static final long serialVersionUID = 4884583429363288425L;
 
 	/**
 	 * 场景码
@@ -44,7 +44,7 @@ public class AlipayCommerceEcEnterpriseCreateModel extends AlipayObject {
 	private String enterpriseName;
 
 	/**
-	 * 对接支付宝人脸库的小程序app_id
+	 * 订购【一脸通行开通插件】的小程序appId
 	 */
 	@ApiField("group_app_id")
 	private String groupAppId;

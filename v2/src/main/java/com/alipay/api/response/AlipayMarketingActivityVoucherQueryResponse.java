@@ -24,11 +24,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.voucher.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-04 10:32:23
+ * @since 1.0, 2024-01-19 18:12:00
  */
 public class AlipayMarketingActivityVoucherQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4815444467512676847L;
+	private static final long serialVersionUID = 5198121926764984698L;
 
 	/** 
 	 * 活动基础信息

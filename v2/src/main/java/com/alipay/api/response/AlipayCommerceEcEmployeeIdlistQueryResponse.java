@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.employee.idlist.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-11 19:51:44
+ * @since 1.0, 2024-01-17 14:37:03
  */
 public class AlipayCommerceEcEmployeeIdlistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4384689321215941137L;
+	private static final long serialVersionUID = 6752255142396424114L;
 
 	/** 
 	 * 当前页数

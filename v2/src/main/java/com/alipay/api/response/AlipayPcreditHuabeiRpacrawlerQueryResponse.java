@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPcreditHuabeiRpacrawlerQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2288997736652858813L;
+	private static final long serialVersionUID = 5375176393272718565L;
 
 	/** 
 	 * RPA任务

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.department.upgrade.submit response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-01 10:31:49
+ * @since 1.0, 2024-01-17 14:42:29
  */
 public class AlipayCommerceEcDepartmentUpgradeSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2858487719557561783L;
+	private static final long serialVersionUID = 1817339695856532168L;
 
 	/** 
 	 * 部门提交升级后的工单id

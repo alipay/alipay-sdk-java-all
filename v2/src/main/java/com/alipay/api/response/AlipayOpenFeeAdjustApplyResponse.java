@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.fee.adjust.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-27 09:41:53
+ * @since 1.0, 2024-01-17 17:12:22
  */
 public class AlipayOpenFeeAdjustApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2599836233867632488L;
+	private static final long serialVersionUID = 1521263191849319623L;
 
 	
 

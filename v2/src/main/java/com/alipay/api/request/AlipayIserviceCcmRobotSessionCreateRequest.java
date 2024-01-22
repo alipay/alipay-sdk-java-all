@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.ccm.robot.session.create request
  * 
  * @author auto create
- * @since 1.0, 2023-12-06 10:11:02
+ * @since 1.0, 2024-01-19 10:26:56
  */
 public class AlipayIserviceCcmRobotSessionCreateRequest implements AlipayRequest<AlipayIserviceCcmRobotSessionCreateResponse> {
 

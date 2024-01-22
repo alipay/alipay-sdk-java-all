@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询活动账单信息
  *
  * @author auto create
- * @since 1.0, 2023-04-19 14:12:39
+ * @since 1.0, 2024-01-19 15:34:16
  */
 public class AlipayUserDtbankActivitybillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1153766123631139184L;
+	private static final long serialVersionUID = 4895551888394652735L;
 
 	/**
 	 * 银行活动id

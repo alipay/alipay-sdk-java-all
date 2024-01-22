@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ISV代理商户申请电子回单
  *
  * @author auto create
- * @since 1.0, 2023-12-20 16:29:49
+ * @since 1.0, 2024-01-15 15:08:34
  */
 public class AlipayDataBillEreceiptagentApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6469757368595822244L;
+	private static final long serialVersionUID = 1115316761361455758L;
 
 	/**
 	 * ISV与商户签约授权协议号

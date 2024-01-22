@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MiniOrderExtInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8237926133835253374L;
+	private static final long serialVersionUID = 2614238268323158465L;
 
 	/**
 	 * 二方接入交易组件用于返佣计算的特殊参数，单位为元
@@ -35,7 +35,7 @@ public class MiniOrderExtInfoDTO extends AlipayObject {
 	private String orderStr;
 
 	/**
-	 * 订单的交易类型用于区分担保交易或者普通JSAPI支付，担保交易类型该字段必填，创支付单会对改类型进行校验，如果参入错误，创支付单会失败
+	 * 订单的交易类型用于区分担保交易或者普通JSAPI支付，创支付单会对该类型进行校验，如果参入错误，创支付单会失败
 	 */
 	@ApiField("order_trade_type")
 	private String orderTradeType;

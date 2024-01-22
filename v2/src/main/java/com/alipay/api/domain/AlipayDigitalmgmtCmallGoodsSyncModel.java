@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品同步接口
  *
  * @author auto create
- * @since 1.0, 2023-11-02 17:17:49
+ * @since 1.0, 2024-01-19 14:32:51
  */
 public class AlipayDigitalmgmtCmallGoodsSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6243958796583681675L;
+	private static final long serialVersionUID = 2868242936788875213L;
 
 	/**
 	 * access_goods_dto，用于商品同步

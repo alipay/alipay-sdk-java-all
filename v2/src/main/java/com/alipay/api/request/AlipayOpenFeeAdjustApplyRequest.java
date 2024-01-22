@@ -14,7 +14,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.fee.adjust.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-11-27 09:41:53
+ * @since 1.0, 2024-01-17 17:12:22
  */
 public class AlipayOpenFeeAdjustApplyRequest implements AlipayUploadRequest<AlipayOpenFeeAdjustApplyResponse> {
 

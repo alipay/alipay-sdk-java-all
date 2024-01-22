@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 机器人会话创建
  *
  * @author auto create
- * @since 1.0, 2023-12-06 10:11:02
+ * @since 1.0, 2024-01-18 15:49:52
  */
 public class AlipayIserviceCcmRobotSessionCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2688939482257261841L;
+	private static final long serialVersionUID = 7188714355862751422L;
 
 	/**
 	 * 会话扩展信息，如省市区等
@@ -30,6 +30,12 @@ public class AlipayIserviceCcmRobotSessionCreateModel extends AlipayObject {
 	 */
 	@ApiField("scene_code")
 	private String sceneCode;
+
+	/**
+	 * 大模型问答时是否以消息流的方式推送
+	 */
+	@ApiField("stream_output")
+	private Boolean streamOutput;
 
 	/**
 	 * 访客ID，由调用方提供，比如：微信用户id等
@@ -62,6 +68,13 @@ public class AlipayIserviceCcmRobotSessionCreateModel extends AlipayObject {
 	}
 	public void setSceneCode(String sceneCode) {
 		this.sceneCode = sceneCode;
+	}
+
+	public Boolean getStreamOutput() {
+		return this.streamOutput;
+	}
+	public void setStreamOutput(Boolean streamOutput) {
+		this.streamOutput = streamOutput;
 	}
 
 	public String getVisitorId() {

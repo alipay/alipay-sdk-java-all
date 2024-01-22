@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.fincloud.generalsaas.ocr.server.detect response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-11 18:26:46
+ * @since 1.0, 2024-01-16 19:57:02
  */
 public class DatadigitalFincloudGeneralsaasOcrServerDetectResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1231386371329468773L;
+	private static final long serialVersionUID = 4833518297186838549L;
 
 	/** 
 	 * OCR识别单据号，计费依据，请保留以便排查问题。

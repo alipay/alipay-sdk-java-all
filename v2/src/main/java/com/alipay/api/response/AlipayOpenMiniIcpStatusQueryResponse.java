@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.icp.status.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-27 21:11:56
+ * @since 1.0, 2024-01-19 15:02:00
  */
 public class AlipayOpenMiniIcpStatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1569752892111461341L;
+	private static final long serialVersionUID = 7227466461482229581L;
 
 	/** 
 	 * 如果备案状态为驳回时，比如SECURITY_AUDIT_REJECT

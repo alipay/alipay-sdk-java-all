@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询结果数据列表
  *
  * @author auto create
- * @since 1.0, 2023-10-26 10:07:52
+ * @since 1.0, 2024-01-15 15:49:38
  */
 public class AdReportDataDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8799944239471133565L;
+	private static final long serialVersionUID = 8394577385355281622L;
 
 	/**
 	 * 当query_type为DETAIL时数据汇总时间格式yyyyMMdd；当按ALL_SUM时该出参非必填
@@ -48,10 +48,52 @@ public class AdReportDataDetail extends AlipayObject {
 	private String dataId;
 
 	/**
+	 * 单元名称
+	 */
+	@ApiField("group_name")
+	private String groupName;
+
+	/**
 	 * 展现量，当无投放未产生展现数据时，查询数据为空
 	 */
 	@ApiField("impression")
 	private Long impression;
+
+	/**
+	 * 营销目标名称
+	 */
+	@ApiField("market_target_name")
+	private String marketTargetName;
+
+	/**
+	 * 订单id
+	 */
+	@ApiField("order_id")
+	private String orderId;
+
+	/**
+	 * 订单名称
+	 */
+	@ApiField("order_name")
+	private String orderName;
+
+	/**
+	 * 计划id
+	 */
+	@ApiField("plan_id")
+	private String planId;
+
+	/**
+	 * 计划名称
+	 */
+	@ApiField("plan_name")
+	private String planName;
+
+	/**
+	 * 投放产品名称
+	 */
+	@ApiField("scene_name")
+	private String sceneName;
 
 	public String getBizDate() {
 		return this.bizDate;
@@ -88,11 +130,60 @@ public class AdReportDataDetail extends AlipayObject {
 		this.dataId = dataId;
 	}
 
+	public String getGroupName() {
+		return this.groupName;
+	}
+	public void setGroupName(String groupName) {
+		this.groupName = groupName;
+	}
+
 	public Long getImpression() {
 		return this.impression;
 	}
 	public void setImpression(Long impression) {
 		this.impression = impression;
+	}
+
+	public String getMarketTargetName() {
+		return this.marketTargetName;
+	}
+	public void setMarketTargetName(String marketTargetName) {
+		this.marketTargetName = marketTargetName;
+	}
+
+	public String getOrderId() {
+		return this.orderId;
+	}
+	public void setOrderId(String orderId) {
+		this.orderId = orderId;
+	}
+
+	public String getOrderName() {
+		return this.orderName;
+	}
+	public void setOrderName(String orderName) {
+		this.orderName = orderName;
+	}
+
+	public String getPlanId() {
+		return this.planId;
+	}
+	public void setPlanId(String planId) {
+		this.planId = planId;
+	}
+
+	public String getPlanName() {
+		return this.planName;
+	}
+	public void setPlanName(String planName) {
+		this.planName = planName;
+	}
+
+	public String getSceneName() {
+		return this.sceneName;
+	}
+	public void setSceneName(String sceneName) {
+		this.sceneName = sceneName;
 	}
 
 }

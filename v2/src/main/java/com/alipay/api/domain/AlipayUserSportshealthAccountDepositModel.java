@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝运动币账户发放
  *
  * @author auto create
- * @since 1.0, 2023-11-29 11:51:41
+ * @since 1.0, 2024-01-19 15:56:16
  */
 public class AlipayUserSportshealthAccountDepositModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4264123198481743744L;
+	private static final long serialVersionUID = 6836514364513434448L;
 
 	/**
 	 * 设备反查标识，风控需要

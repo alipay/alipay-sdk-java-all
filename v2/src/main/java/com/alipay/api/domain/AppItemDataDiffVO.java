@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AppItemDataDiffVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6791516617872938629L;
+	private static final long serialVersionUID = 2662421736661327118L;
 
 	/**
 	 * 【描述】商品主图的文件id/url，图片宽高为750px*750px，宽高比1:1，800kb以内。 支持jpg、jpeg、png格式的图片。文件id通过alipay.open.file.upload 上传资源获取file_id，或通过alipay.marketing.image.enhance.upload获取image_url均可上传成功

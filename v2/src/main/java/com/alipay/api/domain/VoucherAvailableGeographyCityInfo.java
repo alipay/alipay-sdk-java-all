@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 可用城市
  *
  * @author auto create
- * @since 1.0, 2023-12-01 15:46:12
+ * @since 1.0, 2024-01-19 10:36:16
  */
 public class VoucherAvailableGeographyCityInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2225259169195296676L;
+	private static final long serialVersionUID = 5527795286446551691L;
 
 	/**
 	 * 是否全国。 选择全国后，无须填写city_codes字段。系统默认填充全国全部城市信息。
@@ -23,7 +23,7 @@ public class VoucherAvailableGeographyCityInfo extends AlipayObject {
 	private Boolean allCity;
 
 	/**
-	 * 城市编码。请按照https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx 表格中内容填写。 （参考资料： http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/）
+	 * 城市编码。请按照<a href="https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx">表格</a>中内容填写。（<a href="http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm">参考资料</a>）
 	 */
 	@ApiListField("available_city_codes")
 	@ApiField("string")

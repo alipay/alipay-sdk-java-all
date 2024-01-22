@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 国标移动支付间连下单扩展字段
  *
  * @author auto create
- * @since 1.0, 2023-12-27 16:44:51
+ * @since 1.0, 2024-01-19 14:52:14
  */
 public class TradeExtendParams extends AlipayObject {
 
-	private static final long serialVersionUID = 1232338956726366395L;
+	private static final long serialVersionUID = 8517323586461183958L;
 
 	/**
 	 * 渠道标识

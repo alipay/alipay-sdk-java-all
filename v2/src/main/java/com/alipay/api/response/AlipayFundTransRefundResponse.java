@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.refund response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-13 22:06:42
+ * @since 1.0, 2024-01-19 17:43:46
  */
 public class AlipayFundTransRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6113552714849736926L;
+	private static final long serialVersionUID = 7826133439166117339L;
 
 	/** 
 	 * 发红包时支付宝返回的支付宝订单号order_id。

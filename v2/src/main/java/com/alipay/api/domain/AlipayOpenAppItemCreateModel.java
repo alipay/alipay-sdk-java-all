@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序商品创建接口
  *
  * @author auto create
- * @since 1.0, 2023-12-18 18:00:40
+ * @since 1.0, 2024-01-17 13:57:50
  */
 public class AlipayOpenAppItemCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8147673277329293355L;
+	private static final long serialVersionUID = 1893886883835918257L;
 
 	/**
 	 * 商品属性
@@ -70,9 +70,10 @@ public class AlipayOpenAppItemCreateModel extends AlipayObject {
 	private List<String> imageList;
 
 	/**
-	 * 1=官方插件版，商品详情页链接不传入 0=自定义详情页版，商品详情页链接必须传入
+	 * 1=官方插件版，商品详情页链接不传入 0=自定义详情页版，商品详情页链接必须传入 当前字段已废弃(该字段下线展示，无需传递，默认填写自定义详情页版商品详情页链接)
 	 */
 	@ApiField("item_details_page_model")
+	@Deprecated
 	private String itemDetailsPageModel;
 
 	/**

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.qrcode.unbind response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-19 18:07:56
+ * @since 1.0, 2024-01-19 15:12:03
  */
 public class AlipayOpenMiniQrcodeUnbindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5445734851688821851L;
+	private static final long serialVersionUID = 1153777259442253844L;
 
 	
 

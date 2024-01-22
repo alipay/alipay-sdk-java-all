@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCampaignUnicardExcodeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5187315285422628163L;
+	private static final long serialVersionUID = 3127213715794152735L;
 
 	/**
 	 * 支付宝内部生成的兑换码，商家可用该兑换码作为商品出售，用户用兑换码可来支付宝兑换权益。

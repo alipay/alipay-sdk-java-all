@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.qipan.turingtag.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-04 15:26:55
+ * @since 1.0, 2024-01-19 15:42:01
  */
 public class AlipayMerchantQipanTuringtagQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6458242224259126411L;
+	private static final long serialVersionUID = 2534781428894433434L;
 
 	/** 
 	 * 节点列表

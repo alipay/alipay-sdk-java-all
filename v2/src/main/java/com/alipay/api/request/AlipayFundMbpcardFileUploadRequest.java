@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.mbpcard.file.upload request
  * 
  * @author auto create
- * @since 1.0, 2023-11-24 10:04:51
+ * @since 1.0, 2024-01-19 18:25:08
  */
 public class AlipayFundMbpcardFileUploadRequest implements AlipayUploadRequest<AlipayFundMbpcardFileUploadResponse> {
 
@@ -21,14 +21,39 @@ public class AlipayFundMbpcardFileUploadRequest implements AlipayUploadRequest<A
 	private String apiVersion="1.0";
 
 	/** 
+	* 业务场景，对应不同配置
+	 */
+	private String bizScene;
+
+	/** 
 	* 二进制字节流，最大为10M
 	 */
 	private FileItem imageContent;
 
 	/** 
+	* 待识别的图片标签，不传不做OCR识别
+ELEC_ADD_TAX_SIMPLE : 增值税普票-电子版
+PAPER_ADD_TAX_SIMPLE：增值税普票-纸质版
+PAPER_QUOTA：手撕定额发票
+	 */
+	private String imageOcrTag;
+
+	/** 
 	* 文件格式，支持格式：bmp、jpg、jpeg、png、gif、pdf
 	 */
 	private String imageType;
+
+	/** 
+	* 产品码，业务特征属性
+	 */
+	private String productCode;
+
+	public void setBizScene(String bizScene) {
+		this.bizScene = bizScene;
+	}
+	public String getBizScene() {
+		return this.bizScene;
+	}
 
 	public void setImageContent(FileItem imageContent) {
 		this.imageContent = imageContent;
@@ -37,11 +62,25 @@ public class AlipayFundMbpcardFileUploadRequest implements AlipayUploadRequest<A
 		return this.imageContent;
 	}
 
+	public void setImageOcrTag(String imageOcrTag) {
+		this.imageOcrTag = imageOcrTag;
+	}
+	public String getImageOcrTag() {
+		return this.imageOcrTag;
+	}
+
 	public void setImageType(String imageType) {
 		this.imageType = imageType;
 	}
 	public String getImageType() {
 		return this.imageType;
+	}
+
+	public void setProductCode(String productCode) {
+		this.productCode = productCode;
+	}
+	public String getProductCode() {
+		return this.productCode;
 	}
 	private String terminalType;
 	private String terminalInfo;
@@ -104,7 +143,10 @@ public class AlipayFundMbpcardFileUploadRequest implements AlipayUploadRequest<A
 
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
+		txtParams.put("biz_scene", this.bizScene);
+		txtParams.put("image_ocr_tag", this.imageOcrTag);
 		txtParams.put("image_type", this.imageType);
+		txtParams.put("product_code", this.productCode);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}

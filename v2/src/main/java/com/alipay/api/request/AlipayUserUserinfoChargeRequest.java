@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.userinfo.charge request
  * 
  * @author auto create
- * @since 1.0, 2023-11-07 15:28:46
+ * @since 1.0, 2024-01-19 16:10:25
  */
 public class AlipayUserUserinfoChargeRequest implements AlipayRequest<AlipayUserUserinfoChargeResponse> {
 

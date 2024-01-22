@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataMdaLefttrafficQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4564425844185584116L;
+	private static final long serialVersionUID = 7416648723944939114L;
 
 	/** 
 	 * 今日持证出行人次

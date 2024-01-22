@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCampaignDiscountBudgetAppendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7742262613247711918L;
+	private static final long serialVersionUID = 3765494859969489761L;
 
 	/**
 	 * 预算ID

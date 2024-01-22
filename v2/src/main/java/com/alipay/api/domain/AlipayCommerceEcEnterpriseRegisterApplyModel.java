@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业注册申请
  *
  * @author auto create
- * @since 1.0, 2023-12-11 14:30:23
+ * @since 1.0, 2024-01-19 13:28:51
  */
 public class AlipayCommerceEcEnterpriseRegisterApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2652234449182843913L;
+	private static final long serialVersionUID = 2846281731744512161L;
 
 	/**
 	 * 企业简称

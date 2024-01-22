@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudCloudbaseResourceusageMonthlyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8427928356536456178L;
+	private static final long serialVersionUID = 6686613295221235512L;
 
 	/** 
 	 * 各计费项用量列表

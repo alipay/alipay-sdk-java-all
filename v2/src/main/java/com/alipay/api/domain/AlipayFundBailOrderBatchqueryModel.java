@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundBailOrderBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6863864981299588979L;
+	private static final long serialVersionUID = 5261775154351963934L;
 
 	/**
 	 * 蚂蚁统一会员ID

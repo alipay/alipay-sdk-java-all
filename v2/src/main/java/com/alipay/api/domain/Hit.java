@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class Hit extends AlipayObject {
 
-	private static final long serialVersionUID = 5667275889643884582L;
+	private static final long serialVersionUID = 6843465951459962239L;
 
 	/**
 	 * action跳转参数信息

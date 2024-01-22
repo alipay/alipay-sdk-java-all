@@ -1,26 +1,26 @@
 package com.alipay.api.request;
 
-import com.alipay.api.domain.AlipayCommerceMedicalInstcardCreateandpayModel;
+import com.alipay.api.domain.AlipayFundMbpcardInvoiceprocessSubmitModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
-import com.alipay.api.response.AlipayCommerceMedicalInstcardCreateandpayResponse;
+import com.alipay.api.response.AlipayFundMbpcardInvoiceprocessSubmitResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: alipay.commerce.medical.instcard.createandpay request
+ * ALIPAY API: alipay.fund.mbpcard.invoiceprocess.submit request
  * 
  * @author auto create
- * @since 1.0, 2024-01-04 11:25:49
+ * @since 1.0, 2024-01-19 18:26:01
  */
-public class AlipayCommerceMedicalInstcardCreateandpayRequest implements AlipayRequest<AlipayCommerceMedicalInstcardCreateandpayResponse> {
+public class AlipayFundMbpcardInvoiceprocessSubmitRequest implements AlipayRequest<AlipayFundMbpcardInvoiceprocessSubmitResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
 
 	/** 
-	* 根据用户已经在支付宝绑定过的医保卡为医疗行业提供收单支付服务。同时支持自费支付服务
+	* 商户回票事件提交
 	 */
 	private String bizContent;
 
@@ -87,7 +87,7 @@ public class AlipayCommerceMedicalInstcardCreateandpayRequest implements AlipayR
 	}
 
 	public String getApiMethodName() {
-		return "alipay.commerce.medical.instcard.createandpay";
+		return "alipay.fund.mbpcard.invoiceprocess.submit";
 	}
 
 	public Map<String, String> getTextParams() {		
@@ -106,8 +106,8 @@ public class AlipayCommerceMedicalInstcardCreateandpayRequest implements AlipayR
 		this.udfParams.put(key, value);
 	}
 
-	public Class<AlipayCommerceMedicalInstcardCreateandpayResponse> getResponseClass() {
-		return AlipayCommerceMedicalInstcardCreateandpayResponse.class;
+	public Class<AlipayFundMbpcardInvoiceprocessSubmitResponse> getResponseClass() {
+		return AlipayFundMbpcardInvoiceprocessSubmitResponse.class;
 	}
 	
 

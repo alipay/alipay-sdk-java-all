@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 应收发票纸票红冲
  *
  * @author auto create
- * @since 1.0, 2023-06-28 18:18:25
+ * @since 1.0, 2024-01-22 09:41:22
  */
 public class AlipayBossFncOutputinvoiceRedinvoiceApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5882548864662944343L;
+	private static final long serialVersionUID = 5449183993383174383L;
 
 	/**
 	 * 国际发票红冲申请模型

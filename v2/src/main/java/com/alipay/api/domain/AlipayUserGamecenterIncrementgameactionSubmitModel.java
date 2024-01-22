@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 玩一玩游戏中心平台实时数据同步接口
  *
  * @author auto create
- * @since 1.0, 2023-08-10 17:58:50
+ * @since 1.0, 2024-01-16 16:00:15
  */
 public class AlipayUserGamecenterIncrementgameactionSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3586842999885559437L;
+	private static final long serialVersionUID = 4798162173593387576L;
 
 	/**
 	 * 在第三方游戏中，用户在游戏中的行动编码。

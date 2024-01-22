@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 玩一玩小程序是否已加首咨询
  *
  * @author auto create
- * @since 1.0, 2022-10-10 17:36:00
+ * @since 1.0, 2024-01-15 20:54:06
  */
 public class AlipayUserGamecenterAddhomepageConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6474677929493291651L;
+	private static final long serialVersionUID = 8554251599128138347L;
 
 	/**
 	 * 支付宝用户ID

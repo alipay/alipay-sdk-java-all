@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFinancialnetAuthEcsignSealBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8386771545119336184L;
+	private static final long serialVersionUID = 2152642783243764887L;
 
 	/** 
 	 * 页，默认1，必须要大于0。

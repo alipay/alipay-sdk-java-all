@@ -4,19 +4,20 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 本地商品免审更新skku
+ * 本地商品免审更新sku
  *
  * @author auto create
- * @since 1.0, 2024-01-09 14:02:01
+ * @since 1.0, 2024-01-18 16:57:45
  */
 public class LocalItemDirectModifySku extends AlipayObject {
 
-	private static final long serialVersionUID = 2777396647733764263L;
+	private static final long serialVersionUID = 3622783616412666362L;
 
 	/**
-	 * 支持限制库存和不限库存的相互转换
+	 * 支持限制库存和不限库存的相互转换 当前字段已废弃(由新字段stock_limit_type代替)
 	 */
 	@ApiField("limit_type")
+	@Deprecated
 	private String limitType;
 
 	/**
@@ -36,6 +37,12 @@ public class LocalItemDirectModifySku extends AlipayObject {
 	 */
 	@ApiField("sale_status")
 	private String saleStatus;
+
+	/**
+	 * 支持限制库存和不限库存的相互转换
+	 */
+	@ApiField("stock_limit_type")
+	private String stockLimitType;
 
 	/**
 	 * 商品sku库存
@@ -69,6 +76,13 @@ public class LocalItemDirectModifySku extends AlipayObject {
 	}
 	public void setSaleStatus(String saleStatus) {
 		this.saleStatus = saleStatus;
+	}
+
+	public String getStockLimitType() {
+		return this.stockLimitType;
+	}
+	public void setStockLimitType(String stockLimitType) {
+		this.stockLimitType = stockLimitType;
 	}
 
 	public Long getStockNum() {

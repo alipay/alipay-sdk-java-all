@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class JointAccountBillDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8325426311132592152L;
+	private static final long serialVersionUID = 3824399899683315579L;
 
 	/**
 	 * 消费金额，单位：元

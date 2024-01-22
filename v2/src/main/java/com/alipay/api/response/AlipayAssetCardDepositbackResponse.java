@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayAssetCardDepositbackResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7337323784527278461L;
+	private static final long serialVersionUID = 1335423748275946458L;
 
 	/** 
 	 * 退款金额

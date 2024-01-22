@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 日账单创建
  *
  * @author auto create
- * @since 1.0, 2023-04-19 14:13:13
+ * @since 1.0, 2024-01-18 17:19:15
  */
 public class AlipayUserDtbankDailybillCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8698375624567935922L;
+	private static final long serialVersionUID = 8535922753463618626L;
 
 	/**
 	 * 申请查询的账单类型
