@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.icp.faceauth.verify request
  * 
  * @author auto create
- * @since 1.0, 2024-01-19 18:21:57
+ * @since 1.0, 2024-01-23 14:11:57
  */
 public class AlipayOpenMiniIcpFaceauthVerifyRequest implements AlipayRequest<AlipayOpenMiniIcpFaceauthVerifyResponse> {
 

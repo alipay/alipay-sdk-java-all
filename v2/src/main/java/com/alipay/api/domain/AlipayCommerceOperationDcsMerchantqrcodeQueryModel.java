@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 进件商户绑码消息查询
  *
  * @author auto create
- * @since 1.0, 2023-10-13 22:09:51
+ * @since 1.0, 2024-01-23 15:21:46
  */
 public class AlipayCommerceOperationDcsMerchantqrcodeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6667241592292917345L;
+	private static final long serialVersionUID = 8788578626798496191L;
 
 	/**
 	 * 进件商户PID

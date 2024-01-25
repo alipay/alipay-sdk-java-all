@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudrun.env.share.query request
  * 
  * @author auto create
- * @since 1.0, 2024-01-19 16:12:01
+ * @since 1.0, 2024-01-23 10:31:58
  */
 public class AlipayCloudCloudrunEnvShareQueryRequest implements AlipayRequest<AlipayCloudCloudrunEnvShareQueryResponse> {
 

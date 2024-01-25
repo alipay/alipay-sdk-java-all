@@ -22,7 +22,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenAppLocalitemQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7512525963379971295L;
+	private static final long serialVersionUID = 2692975841115373652L;
 
 	/** 
 	 * 商品属性
@@ -57,13 +57,13 @@ public class AlipayOpenAppLocalitemQueryResponse extends AlipayResponse {
 	private List<GuideInfoVO> guideInfo;
 
 	/** 
-	 * 商品主图，图片文件id，图片宽高为750px*750px，宽高比1:1。文件id通过alipay.open.file.upload上传资源获取。
+	 * 商品主图，图片宽高为750px*750px，宽高比1:1，800kb以内。支持jpg、jpeg、png格式的图片。
 	 */
 	@ApiField("head_img")
 	private String headImg;
 
 	/** 
-	 * 商品子图文件id列表，不超过 3 个图片，图片宽高为750px*750px，宽高比1:1。文件id通过alipay.open.file.upload上传资源获取。
+	 * 商品子图，作为平台详情页组件的轮播图，图片宽高为750px*750px，宽高比1:1，800kb以内，不超过 3 个图片。支持jpg、jpeg、png格式的图片。
 	 */
 	@ApiListField("image_list")
 	@ApiField("string")

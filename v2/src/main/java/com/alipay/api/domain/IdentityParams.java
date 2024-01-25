@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户实名信息参数
  *
  * @author auto create
- * @since 1.0, 2022-12-13 16:57:52
+ * @since 1.0, 2024-01-23 14:32:31
  */
 public class IdentityParams extends AlipayObject {
 
-	private static final long serialVersionUID = 6263183975582644411L;
+	private static final long serialVersionUID = 6263525827868354262L;
 
 	/**
 	 * 用户身份证号
@@ -24,6 +24,12 @@ public class IdentityParams extends AlipayObject {
 	 */
 	@ApiField("identity_hash")
 	private String identityHash;
+
+	/**
+	 * 签约指定用户的openid
+	 */
+	@ApiField("sign_open_id")
+	private String signOpenId;
 
 	/**
 	 * 签约指定用户的uid，如用户登录的uid和指定的用户uid不一致则报错
@@ -49,6 +55,13 @@ public class IdentityParams extends AlipayObject {
 	}
 	public void setIdentityHash(String identityHash) {
 		this.identityHash = identityHash;
+	}
+
+	public String getSignOpenId() {
+		return this.signOpenId;
+	}
+	public void setSignOpenId(String signOpenId) {
+		this.signOpenId = signOpenId;
 	}
 
 	public String getSignUserId() {

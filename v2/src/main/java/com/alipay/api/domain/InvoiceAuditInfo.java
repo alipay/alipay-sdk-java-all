@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票审核信息
  *
  * @author auto create
- * @since 1.0, 2024-01-19 18:27:02
+ * @since 1.0, 2024-01-23 16:43:08
  */
 public class InvoiceAuditInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7476879354171518119L;
+	private static final long serialVersionUID = 5482722997266478754L;
 
 	/**
 	 * 发票审核备注信息

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票事件信息
  *
  * @author auto create
- * @since 1.0, 2024-01-19 18:27:09
+ * @since 1.0, 2024-01-23 16:43:18
  */
 public class InvoiceEventInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6373192399771721654L;
+	private static final long serialVersionUID = 2831595834392327531L;
 
 	/**
 	 * 开票金额（单位元）

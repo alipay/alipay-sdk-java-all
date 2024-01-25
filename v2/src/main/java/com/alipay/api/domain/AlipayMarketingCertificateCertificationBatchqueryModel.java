@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingCertificateCertificationBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1864839822663294246L;
+	private static final long serialVersionUID = 7792891519276999943L;
 
 	/**
 	 * 凭证ID列表
@@ -38,7 +38,7 @@ public class AlipayMarketingCertificateCertificationBatchqueryModel extends Alip
 	private String openId;
 
 	/**
-	 * 购买商品的订单id。通过下单接口获取订单id
+	 * 购买商品的订单id
 	 */
 	@ApiField("order_id")
 	private String orderId;

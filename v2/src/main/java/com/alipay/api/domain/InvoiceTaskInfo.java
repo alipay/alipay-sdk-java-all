@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 回票任务详情信息
  *
  * @author auto create
- * @since 1.0, 2024-01-19 18:27:15
+ * @since 1.0, 2024-01-23 16:43:27
  */
 public class InvoiceTaskInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3499836174699736757L;
+	private static final long serialVersionUID = 5175948371767117221L;
 
 	/**
 	 * 回票完成时间
@@ -69,9 +69,10 @@ public class InvoiceTaskInfo extends AlipayObject {
 
 	/**
 	 * 任务状态
-待处理： INIT
-处理中：PROCESS
-已完成：FINISH
+待提交回票:WAIT_INVOICE
+发票处理中:INVOICE_PROCESSING
+发票已验证完成：INVOICE_VERIFIED
+已回票：INVOICED
 	 */
 	@ApiField("task_status")
 	private String taskStatus;

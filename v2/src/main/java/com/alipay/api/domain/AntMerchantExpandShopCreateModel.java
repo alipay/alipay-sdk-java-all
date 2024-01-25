@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 蚂蚁店铺创建
  *
  * @author auto create
- * @since 1.0, 2024-01-08 14:30:45
+ * @since 1.0, 2024-01-25 11:33:51
  */
 public class AntMerchantExpandShopCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3317853398194711218L;
+	private static final long serialVersionUID = 6496989823987243369L;
 
 	/**
 	 * 门店结算卡信息。本业务当前只允许传入一张结算卡。 说明：本参数仅直付通业务使用，其余业务无需关注。
@@ -84,6 +84,12 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	 */
 	@ApiField("contact_phone")
 	private String contactPhone;
+
+	/**
+	 * 需传入<a href="https://opendocs.alipay.com/apis/api_1/ant.merchant.expand.indirect.image.upload">ant.merchant.expand.indirect.image.upload</a> 接口上传图片后得到的 image_id。
+	 */
+	@ApiField("cover")
+	private String cover;
 
 	/**
 	 * 扩展信息列表。key值需要向对应行业的bd进行申请。
@@ -247,6 +253,13 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	}
 	public void setContactPhone(String contactPhone) {
 		this.contactPhone = contactPhone;
+	}
+
+	public String getCover() {
+		return this.cover;
+	}
+	public void setCover(String cover) {
+		this.cover = cover;
 	}
 
 	public List<ShopExtInfo> getExtInfos() {

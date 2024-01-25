@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 消息子板模型，增加sceneRule枚举
  *
  * @author auto create
- * @since 1.0, 2024-01-03 16:32:14
+ * @since 1.0, 2024-01-24 17:48:22
  */
 public class MerchantMsgTemplateVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4461967635463728475L;
+	private static final long serialVersionUID = 8883678238351641797L;
 
 	/**
 	 * 消息推送类型，follower表示粉丝，all表示全部

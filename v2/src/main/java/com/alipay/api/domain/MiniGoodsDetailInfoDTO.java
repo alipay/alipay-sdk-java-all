@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品列表信息模型
  *
  * @author auto create
- * @since 1.0, 2024-01-01 15:32:06
+ * @since 1.0, 2024-01-22 23:06:15
  */
 public class MiniGoodsDetailInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4196296914979888747L;
+	private static final long serialVersionUID = 8386585857118272884L;
 
 	/**
 	 * 商品描述信息
@@ -72,6 +72,12 @@ public class MiniGoodsDetailInfoDTO extends AlipayObject {
 	 */
 	@ApiField("item_discount")
 	private String itemDiscount;
+
+	/**
+	 * 商品分期信息，分期代扣商品必填
+	 */
+	@ApiField("item_installment_info")
+	private ItemInstallmentInfoDTO itemInstallmentInfo;
 
 	/**
 	 * 商户侧商品id，用于公域场景结算，会影响主播归因。私域场景无需传入，公域场景未传入会影响后续结算
@@ -183,6 +189,13 @@ item_discount使用场景：同时购买多件商品时存在优惠，传入优�
 	}
 	public void setItemDiscount(String itemDiscount) {
 		this.itemDiscount = itemDiscount;
+	}
+
+	public ItemInstallmentInfoDTO getItemInstallmentInfo() {
+		return this.itemInstallmentInfo;
+	}
+	public void setItemInstallmentInfo(ItemInstallmentInfoDTO itemInstallmentInfo) {
+		this.itemInstallmentInfo = itemInstallmentInfo;
 	}
 
 	public String getOutItemId() {

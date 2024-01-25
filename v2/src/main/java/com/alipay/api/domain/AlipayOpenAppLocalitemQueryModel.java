@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenAppLocalitemQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7885163896151819394L;
+	private static final long serialVersionUID = 1259113363213736143L;
 
 	/**
 	 * 支付平台侧商品id。与商家侧商品id不能同时为空，如果都提供，优先使用商家侧商品id
@@ -20,7 +20,7 @@ public class AlipayOpenAppLocalitemQueryModel extends AlipayObject {
 	private String itemId;
 
 	/**
-	 * 是否查询编辑版本，0查询在线版本，1查询编辑版本。默认为0
+	 * 是否查询编辑版本。默认为0
 	 */
 	@ApiField("need_edit_spu")
 	private String needEditSpu;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ocr解析发票文件返回的发票详情信息
  *
  * @author auto create
- * @since 1.0, 2024-01-19 18:26:56
+ * @since 1.0, 2024-01-23 16:42:57
  */
 public class OcrData extends AlipayObject {
 
-	private static final long serialVersionUID = 5489753468595554965L;
+	private static final long serialVersionUID = 8891218356364146149L;
 
 	/**
 	 * ocr按业务类型返回的字段key

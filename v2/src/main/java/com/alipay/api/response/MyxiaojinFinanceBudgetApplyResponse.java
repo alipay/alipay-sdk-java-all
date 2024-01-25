@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MyxiaojinFinanceBudgetApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1755659211515514859L;
+	private static final long serialVersionUID = 4558188514611173493L;
 
 	/** 
 	 * 申请成功后的记录列表

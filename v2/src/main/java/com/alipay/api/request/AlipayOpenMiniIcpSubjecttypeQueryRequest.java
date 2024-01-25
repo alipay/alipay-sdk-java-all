@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.icp.subjecttype.query request
  * 
  * @author auto create
- * @since 1.0, 2024-01-19 17:06:59
+ * @since 1.0, 2024-01-22 21:26:58
  */
 public class AlipayOpenMiniIcpSubjecttypeQueryRequest implements AlipayRequest<AlipayOpenMiniIcpSubjecttypeQueryResponse> {
 

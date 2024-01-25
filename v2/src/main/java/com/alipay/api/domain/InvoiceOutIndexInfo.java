@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预付卡外部索引信息，含发票id以及外部索引单号
  *
  * @author auto create
- * @since 1.0, 2024-01-19 18:26:42
+ * @since 1.0, 2024-01-23 16:42:46
  */
 public class InvoiceOutIndexInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5851393156715662849L;
+	private static final long serialVersionUID = 6149596771193845758L;
 
 	/**
 	 * 发票id

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SubAccountBalanceFreezeOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 4632449126812317535L;
+	private static final long serialVersionUID = 3636932555462826644L;
 
 	/**
 	 * 需要冻结金额，如果可用余额大于冻结金额则冻结

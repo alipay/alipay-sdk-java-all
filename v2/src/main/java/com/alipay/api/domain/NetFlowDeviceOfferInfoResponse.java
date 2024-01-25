@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NetFlowDeviceOfferInfoResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 1318696727554946817L;
+	private static final long serialVersionUID = 2423418431727848441L;
 
 	/**
 	 * 物联网卡卡状态

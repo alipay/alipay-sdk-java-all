@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankCreditSupplychainWfSettlementofexchangeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6253638417562879528L;
+	private static final long serialVersionUID = 3462395236743851264L;
 
 	/**
 	 * WF结汇金额

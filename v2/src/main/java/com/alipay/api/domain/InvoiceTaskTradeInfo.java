@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票关联交易信息
  *
  * @author auto create
- * @since 1.0, 2024-01-19 18:27:21
+ * @since 1.0, 2024-01-23 16:43:37
  */
 public class InvoiceTaskTradeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8322976742734112825L;
+	private static final long serialVersionUID = 7125322176217994245L;
 
 	/**
 	 * 应回票金额，以元为单位

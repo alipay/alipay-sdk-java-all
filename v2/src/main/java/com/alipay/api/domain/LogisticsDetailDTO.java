@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LogisticsDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2552945233426911644L;
+	private static final long serialVersionUID = 8358645886193582998L;
 
 	/**
 	 * 物流类型, POST 平邮, EXPRESS 其他快递, VIRTUAL 虚拟物品, EMS EMS, DIRECT 无需物流

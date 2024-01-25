@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询券可用小程序
  *
  * @author auto create
- * @since 1.0, 2023-11-02 17:27:40
+ * @since 1.0, 2024-01-24 16:03:53
  */
 public class AlipayMarketingActivityAppBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1776297213116747791L;
+	private static final long serialVersionUID = 2111649985179838584L;
 
 	/**
 	 * 活动id
@@ -29,8 +29,7 @@ public class AlipayMarketingActivityAppBatchqueryModel extends AlipayObject {
 	 * 商户PID,默认为当前接口调用商户 
 限制: 
 接口调用者必须有商户代运营权限。 
-
-代运营授权流程https://opendocs.alipay.com/mini/01hm6i#%E4%BB%A3%E8%BF%90%E8%90%A5%E6%8E%88%E6%9D%83
+<a href="https://opendocs.alipay.com/mini/01hm6i#%E4%BB%A3%E8%BF%90%E8%90%A5%E6%8E%88%E6%9D%83">代运营授权流程</a>
 	 */
 	@ApiField("merchant_id")
 	private String merchantId;

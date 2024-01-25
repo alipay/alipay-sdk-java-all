@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 条件查询活动列表
  *
  * @author auto create
- * @since 1.0, 2023-10-27 18:30:43
+ * @since 1.0, 2024-01-24 16:03:59
  */
 public class AlipayMarketingActivityBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8741827927914882748L;
+	private static final long serialVersionUID = 6845561757561272289L;
 
 	/**
 	 * 活动状态 。 ACTIVE:活动已激活，表示活动已经生效，等到活动开始(publish_start_time)之后用户就可以参与活动。 PAUSE:活动已暂停，表示商户临时暂停该活动，该状态下用户不能参与活动。

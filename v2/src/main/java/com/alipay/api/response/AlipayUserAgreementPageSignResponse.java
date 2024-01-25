@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.agreement.page.sign response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-18 21:41:53
+ * @since 1.0, 2024-01-25 15:31:58
  */
 public class AlipayUserAgreementPageSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4123248974495516276L;
+	private static final long serialVersionUID = 8824717784757857971L;
 
 	/** 
 	 * 支付宝系统中用以唯一标识用户签约记录的编号。（只有签约成功时才会返回）
@@ -69,6 +69,12 @@ public class AlipayUserAgreementPageSignResponse extends AlipayResponse {
 	 */
 	@ApiField("invalid_time")
 	private String invalidTime;
+
+	/** 
+	 * 用于跳转支付宝页面的信息，POST和GET方法生成内容不同：使用POST方法执行，结果为html form表单，在浏览器渲染即可；使用GET方法会得到支付宝URL，需要打开或重定向到该URL。建议使用POST方式。
+	 */
+	@ApiField("pageRedirectionData")
+	private String pageRedirectionData;
 
 	/** 
 	 * 协议产品码，商户和支付宝签约时确定，不同业务场景对应不同的签约产品码。
@@ -177,6 +183,13 @@ public class AlipayUserAgreementPageSignResponse extends AlipayResponse {
 	}
 	public String getInvalidTime( ) {
 		return this.invalidTime;
+	}
+
+	public void setPageRedirectionData(String pageRedirectionData) {
+		this.pageRedirectionData = pageRedirectionData;
+	}
+	public String getPageRedirectionData( ) {
+		return this.pageRedirectionData;
 	}
 
 	public void setPersonalProductCode(String personalProductCode) {

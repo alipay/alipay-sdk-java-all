@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务不可选理由
  *
  * @author auto create
- * @since 1.0, 2023-02-16 10:42:28
+ * @since 1.0, 2024-01-24 17:42:18
  */
 public class AccessFailReasonVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7424147488729383983L;
+	private static final long serialVersionUID = 8595489192629272827L;
 
 	/**
 	 * 一般为引导商户修改账号配置的链接

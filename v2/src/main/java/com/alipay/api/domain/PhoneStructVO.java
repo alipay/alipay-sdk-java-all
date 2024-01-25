@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PhoneStructVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3239735788564138919L;
+	private static final long serialVersionUID = 6624663542238351248L;
 
 	/**
 	 * 客服链接地址，必须以alipays开头。用户点击链接后可直接进入客服页面进行咨询

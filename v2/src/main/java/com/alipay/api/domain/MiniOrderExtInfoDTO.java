@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单扩展信息模型
  *
  * @author auto create
- * @since 1.0, 2023-12-10 23:49:58
+ * @since 1.0, 2024-01-22 23:06:15
  */
 public class MiniOrderExtInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2614238268323158465L;
+	private static final long serialVersionUID = 1556269634829747955L;
 
 	/**
 	 * 二方接入交易组件用于返佣计算的特殊参数，单位为元
@@ -39,6 +39,12 @@ public class MiniOrderExtInfoDTO extends AlipayObject {
 	 */
 	@ApiField("order_trade_type")
 	private String orderTradeType;
+
+	/**
+	 * 支付单交易号，用于信用下单不成功转普通支付。间联实物代扣场景该字段必填
+	 */
+	@ApiField("trade_no")
+	private String tradeNo;
 
 	public String getAdditionRebateBasePrice() {
 		return this.additionRebateBasePrice;
@@ -66,6 +72,13 @@ public class MiniOrderExtInfoDTO extends AlipayObject {
 	}
 	public void setOrderTradeType(String orderTradeType) {
 		this.orderTradeType = orderTradeType;
+	}
+
+	public String getTradeNo() {
+		return this.tradeNo;
+	}
+	public void setTradeNo(String tradeNo) {
+		this.tradeNo = tradeNo;
 	}
 
 }

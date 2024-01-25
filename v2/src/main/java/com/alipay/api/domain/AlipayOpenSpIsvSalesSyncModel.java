@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenSpIsvSalesSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2418883486859333941L;
+	private static final long serialVersionUID = 6195337277134635343L;
 
 	/**
 	 * 商户销售数据回传的参数对象，形式为一个列表，每天回传昨日商户的销售数据。

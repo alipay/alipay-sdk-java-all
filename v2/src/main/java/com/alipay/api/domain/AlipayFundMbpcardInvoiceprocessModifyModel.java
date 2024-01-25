@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayFundMbpcardInvoiceprocessModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6632283899845534778L;
+	private static final long serialVersionUID = 3457519779266566576L;
 
 	/**
 	 * 场景码

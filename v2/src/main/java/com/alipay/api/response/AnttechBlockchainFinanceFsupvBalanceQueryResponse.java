@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AnttechBlockchainFinanceFsupvBalanceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7211785337291379879L;
+	private static final long serialVersionUID = 4248894553352542555L;
 
 	/** 
 	 * 管控账户的余额

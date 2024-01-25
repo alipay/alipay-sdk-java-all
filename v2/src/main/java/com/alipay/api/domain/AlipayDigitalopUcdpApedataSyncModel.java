@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ape数据同步接口
  *
  * @author auto create
- * @since 1.0, 2023-06-26 20:10:54
+ * @since 1.0, 2024-01-24 17:39:57
  */
 public class AlipayDigitalopUcdpApedataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7887858566914668842L;
+	private static final long serialVersionUID = 3485874457991195562L;
 
 	/**
 	 * 内容数据的列表（商品列表，内容列表，本地零售商品列表，通用物品列表，四个模型只能选一个传，且单次列表数量不要超过100）

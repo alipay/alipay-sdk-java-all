@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序核销引导
  *
  * @author auto create
- * @since 1.0, 2023-11-02 14:11:42
+ * @since 1.0, 2024-01-24 15:52:24
  */
 public class VoucherMiniAppUseGuideInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2354872893347377986L;
+	private static final long serialVersionUID = 6859138768668159869L;
 
 	/**
-	 * 小程序服务编码，通过 alipay.open.app.appcontent.function.create(小程序服务创建)接口创建服务后获取。
+	 * 小程序服务编码。取值来源：通过<a href="https://opendocs.alipay.com/mini/03cgoq?pathHash=49cde24b&scene=common&highlight_field=service_code" target="_blank">alipay.open.app.service.apply(小程序服务创建)</a>接口创建服务后获取。
 	 */
 	@ApiListField("mini_app_service_codes")
 	@ApiField("string")

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 本地零售商品
  *
  * @author auto create
- * @since 1.0, 2023-06-26 20:10:54
+ * @since 1.0, 2024-01-24 17:39:57
  */
 public class ApeRetailItem extends AlipayObject {
 
-	private static final long serialVersionUID = 4193738926593755529L;
+	private static final long serialVersionUID = 6736277952148862214L;
 
 	/**
 	 * 商品可售时间
@@ -78,9 +78,10 @@ public class ApeRetailItem extends AlipayObject {
 	private String miniAppId;
 
 	/**
-	 * 需要公域推广，默认情况下为false
+	 * 需要公域推广，默认情况下为false 当前字段已废弃(产品升级，暂不支持公域推广)
 	 */
 	@ApiField("need_public_promo")
+	@Deprecated
 	private Boolean needPublicPromo;
 
 	/**
@@ -91,7 +92,7 @@ public class ApeRetailItem extends AlipayObject {
 	private List<String> picUrlList;
 
 	/**
-	 * 商品的logo图片列表，可用于公域推广对用户展示的图片，建议600*600
+	 * 商品的logo图片列表，建议600*600
 	 */
 	@ApiListField("promo_pic_url_list")
 	@ApiField("string")

@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBossFncApbillTotalbillamtQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8566493794178782289L;
+	private static final long serialVersionUID = 6185559463844878593L;
 
 	/** 
 	 * 汇总调整金额

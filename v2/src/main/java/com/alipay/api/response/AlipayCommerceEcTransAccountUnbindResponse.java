@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceEcTransAccountUnbindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2363647689849494617L;
+	private static final long serialVersionUID = 5814255848341367392L;
 
 	/** 
 	 * 解绑结果

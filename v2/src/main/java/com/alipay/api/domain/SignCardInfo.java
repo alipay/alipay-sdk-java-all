@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SignCardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2594622149939724363L;
+	private static final long serialVersionUID = 3123719223854245952L;
 
 	/**
 	 * 完整卡号的SHA256摘要并对结果进行16进制编码

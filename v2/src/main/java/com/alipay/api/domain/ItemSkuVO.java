@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ItemSkuVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5212128887746526127L;
+	private static final long serialVersionUID = 1896761626855594796L;
 
 	/**
 	 * sku条形码信息
@@ -74,7 +74,7 @@ public class ItemSkuVO extends AlipayObject {
 	private Long stockNum;
 
 	/**
-	 * sku小图。图片宽高为400px*400px，宽高比1:1。文件id通过alipay.open.file.upload上传资源获取。
+	 * sku小图。图片宽高为400px*400px，宽高比1:1。
 	 */
 	@ApiField("thumb_img")
 	private String thumbImg;

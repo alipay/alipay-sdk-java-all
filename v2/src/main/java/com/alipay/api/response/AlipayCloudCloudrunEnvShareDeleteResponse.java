@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudrun.env.share.delete response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-19 16:12:01
+ * @since 1.0, 2024-01-23 10:31:58
  */
 public class AlipayCloudCloudrunEnvShareDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8283573197457487584L;
+	private static final long serialVersionUID = 3713935924818413827L;
 
 	/** 
 	 * 对响应结果的描述

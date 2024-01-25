@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票详情信息
  *
  * @author auto create
- * @since 1.0, 2024-01-19 18:26:49
+ * @since 1.0, 2024-01-24 11:14:34
  */
 public class InvoiceBaseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5196211577856737435L;
+	private static final long serialVersionUID = 6794841636897158326L;
 
 	/**
 	 * 发票校验码（返回后6位）
@@ -41,7 +41,7 @@ PAPER_QUOTA：手撕定额发票
 	private String invoiceCode;
 
 	/**
-	 * 发票日期（yyyyMMdd）
+	 * 开票日期（yyyyMMdd）
 	 */
 	@ApiField("invoice_date")
 	private String invoiceDate;
@@ -53,13 +53,13 @@ PAPER_QUOTA：手撕定额发票
 	private String invoiceId;
 
 	/**
-	 * 发票影响文件存储地址
+	 * 发票影像文件存储地址
 	 */
 	@ApiField("invoice_image")
 	private String invoiceImage;
 
 	/**
-	 * 发票号码
+	 * 发票号码（全电票的20位）
 	 */
 	@ApiField("invoice_no")
 	private String invoiceNo;

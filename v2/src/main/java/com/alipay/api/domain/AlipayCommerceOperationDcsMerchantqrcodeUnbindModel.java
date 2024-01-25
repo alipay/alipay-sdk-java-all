@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * UTC提供商户解绑收钱码
  *
  * @author auto create
- * @since 1.0, 2023-10-13 14:30:47
+ * @since 1.0, 2024-01-23 15:21:33
  */
 public class AlipayCommerceOperationDcsMerchantqrcodeUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7732353391798422834L;
+	private static final long serialVersionUID = 6748119869117332685L;
 
 	/**
 	 * 商户标识

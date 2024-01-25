@@ -11,40 +11,40 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BookingInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6877246765956279787L;
+	private static final long serialVersionUID = 7771356211569456988L;
 
 	/**
-	 * 预约入住时间，订单创建、已确认、待入住 状态下必传
+	 * 预约入住时间
 	 */
 	@ApiField("booking_time")
 	private String bookingTime;
 
 	/**
-	 * 入住日期，已入住、已续住、待退房、已退房 状态下必选；
+	 * 入住日期
 	 */
 	@ApiField("check_in_date")
 	private String checkInDate;
 
 	/**
-	 * 入住时间，已入住、已续住、待退房、已退房 状态下必选；
+	 * 入住时间
 	 */
 	@ApiField("check_in_time")
 	private String checkInTime;
 
 	/**
-	 * 离店日期，已入住、已续住、待退房、已退房 状态下必选；
+	 * 离店日期
 	 */
 	@ApiField("check_out_date")
 	private String checkOutDate;
 
 	/**
-	 * 离店时间， 已入住、已续住、待退房、已退房状态下必选；
+	 * 离店时间
 	 */
 	@ApiField("check_out_time")
 	private String checkOutTime;
 
 	/**
-	 * 商户确认买家的预约，已确认 状态下必选；
+	 * 商户确认买家的预约
 	 */
 	@ApiField("confirm_booking_time")
 	private String confirmBookingTime;
@@ -62,7 +62,7 @@ public class BookingInfoDTO extends AlipayObject {
 	private String deadline;
 
 	/**
-	 * 商户为买家办理续住的时间，已续住  状态下必选；
+	 * 商户为买家办理续住的时间
 	 */
 	@ApiField("have_stay_time")
 	private String haveStayTime;

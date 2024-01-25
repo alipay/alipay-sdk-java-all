@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ColumnData extends AlipayObject {
 
-	private static final long serialVersionUID = 3561271977632982179L;
+	private static final long serialVersionUID = 8529896537266275169L;
 
 	/**
 	 * 该类型表示一整行数据，为字符串列表。

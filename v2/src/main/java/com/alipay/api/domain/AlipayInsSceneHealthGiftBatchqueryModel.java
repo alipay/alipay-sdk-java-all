@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayInsSceneHealthGiftBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2694879747217414398L;
+	private static final long serialVersionUID = 1446851754726787195L;
 
 	/**
 	 * 赠险业务标志 HEALTH_BEAN_SIMPLE_UPGRADE 免费医疗金、HEALTH_GUARDIAN_GOLD 守护金、HEALTH_DSDB_NEW_OUTPATIENT 多收多宝新门诊

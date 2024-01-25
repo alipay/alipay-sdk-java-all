@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class Lockaccountsync extends AlipayObject {
 
-	private static final long serialVersionUID = 8167964272595547856L;
+	private static final long serialVersionUID = 3588651433967614446L;
 
 	/**
 	 * 亚马逊offerid
