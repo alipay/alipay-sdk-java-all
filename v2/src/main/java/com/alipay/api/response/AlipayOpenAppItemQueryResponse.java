@@ -16,11 +16,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.item.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-23 11:21:59
+ * @since 1.0, 2024-01-30 20:26:57
  */
 public class AlipayOpenAppItemQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8439988255721875119L;
+	private static final long serialVersionUID = 4498929939113256764L;
 
 	/** 
 	 * 商品属性列表，kv形式
@@ -134,7 +134,7 @@ public class AlipayOpenAppItemQueryResponse extends AlipayResponse {
 	private List<ItemRiskInfo> riskInfo;
 
 	/** 
-	 * 商品售价，分为单位。若填写了skus[]数组，此字段不返回值
+	 * 商品售价，分为单位。
 	 */
 	@ApiField("sale_price")
 	private Long salePrice;
@@ -165,9 +165,7 @@ public class AlipayOpenAppItemQueryResponse extends AlipayResponse {
 	private String spuStatus;
 
 	/** 
-	 * 若填写了skus[]数组，此字段不用填写。
-若未填写skus[]数组，此字段必填。
-目前支持库存区间0~99999
+	 * 目前支持库存区间0~99999
 	 */
 	@ApiField("stock_num")
 	private Long stockNum;

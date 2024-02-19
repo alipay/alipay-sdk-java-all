@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 获取已授权的订购地址
  *
  * @author auto create
- * @since 1.0, 2022-08-29 20:35:50
+ * @since 1.0, 2024-02-02 17:47:41
  */
 public class AlipayInsSceneEcommercePurchaselinkAuthModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7525346275967689673L;
+	private static final long serialVersionUID = 6697262318928739249L;
 
 	/**
 	 * 至少订购天数

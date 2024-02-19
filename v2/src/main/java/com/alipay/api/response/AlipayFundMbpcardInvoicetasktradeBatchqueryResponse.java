@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.mbpcard.invoicetasktrade.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-19 18:25:23
+ * @since 1.0, 2024-02-01 16:31:58
  */
 public class AlipayFundMbpcardInvoicetasktradeBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2893818677556344942L;
+	private static final long serialVersionUID = 2791177634983644629L;
 
 	/** 
 	 * 当前页码

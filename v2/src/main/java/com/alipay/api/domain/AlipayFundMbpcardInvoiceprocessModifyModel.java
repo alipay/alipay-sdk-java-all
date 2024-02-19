@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户回票事件的发票信息修改
  *
  * @author auto create
- * @since 1.0, 2024-01-19 18:26:25
+ * @since 1.0, 2024-02-01 17:00:11
  */
 public class AlipayFundMbpcardInvoiceprocessModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3457519779266566576L;
+	private static final long serialVersionUID = 3588797826916987661L;
 
 	/**
 	 * 场景码

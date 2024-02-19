@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TicketInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3734414625411795631L;
+	private static final long serialVersionUID = 8522531511972179755L;
 
 	/**
 	 * 店铺地址
@@ -47,8 +47,7 @@ public class TicketInfo extends AlipayObject {
 	private String ticketNo;
 
 	/**
-	 * 时间，如果传入了end_time则该字段必传
-不同类型下的地址含义不同。若type为MEAL_NUM，time则代表取餐时间；若type为PICKUP_CODE，address则代表取件时间。其他类型查看小程序订单产品文档
+	 * 时间
 	 */
 	@ApiField("time")
 	private Date time;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户地址信息
  *
  * @author auto create
- * @since 1.0, 2023-12-10 22:25:26
+ * @since 1.0, 2024-01-31 11:07:14
  */
 public class AddressInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3878235616914465784L;
+	private static final long serialVersionUID = 1338148556261655215L;
 
 	/**
 	 * 地址。商户详细经营地址或人员所在地点
@@ -38,7 +38,7 @@ public class AddressInfo extends AlipayObject {
 	/**
 	 * 纬度，浮点型,小数点后最多保留6位
 
-如需要录入经纬度，请以高德坐标系为准，录入时请确保经纬度参数准确。高德经纬度查询：http://lbs.amap.com/console/show/picker
+如需要录入经纬度，请以高德坐标系为准，录入时请确保经纬度参数准确。<a href="http://lbs.amap.com/console/show/picker">高德经纬度查询</a>
 	 */
 	@ApiField("latitude")
 	private String latitude;
@@ -46,7 +46,7 @@ public class AddressInfo extends AlipayObject {
 	/**
 	 * 经度，浮点型, 小数点后最多保留6位。
 
-如需要录入经纬度，请以高德坐标系为准，录入时请确保经纬度参数准确。高德经纬度查询：http://lbs.amap.com/console/show/picker
+如需要录入经纬度，请以高德坐标系为准，录入时请确保经纬度参数准确。<a href="http://lbs.amap.com/console/show/picker">高德经纬度查询</a>
 	 */
 	@ApiField("longitude")
 	private String longitude;

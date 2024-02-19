@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.icp.nrlxtype.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-22 21:31:59
+ * @since 1.0, 2024-01-26 17:21:56
  */
 public class AlipayOpenMiniIcpNrlxtypeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6218386617436742858L;
+	private static final long serialVersionUID = 1334113385645112588L;
 
 	/** 
 	 * 前置审批项类型

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预付卡回票任务关联交易查询
  *
  * @author auto create
- * @since 1.0, 2024-01-19 18:25:23
+ * @since 1.0, 2024-02-01 16:28:49
  */
 public class AlipayFundMbpcardInvoicetasktradeBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8711554863576983891L;
+	private static final long serialVersionUID = 5775392787733262215L;
 
 	/**
 	 * 场景码

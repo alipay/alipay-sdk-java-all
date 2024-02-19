@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EtcTripInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6849647131619614219L;
+	private static final long serialVersionUID = 8377516851271388223L;
 
 	/**
 	 * 1、收费站出口名称 2、格式为省份+收费站名，比如“黑龙江瓦盆窑西站”

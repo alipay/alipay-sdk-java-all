@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.ordervoucher.associate response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-19 17:52:01
+ * @since 1.0, 2024-01-25 20:17:01
  */
 public class AlipayMarketingActivityOrdervoucherAssociateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7114527653667149671L;
+	private static final long serialVersionUID = 8345651382393475648L;
 
 	/** 
 	 * 支付宝系统关联订单成功的时间。 格式为：yyyy-MM-dd HH:mm:ss

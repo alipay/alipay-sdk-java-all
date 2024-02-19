@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 一码通订单查询
  *
  * @author auto create
- * @since 1.0, 2023-02-24 10:15:16
+ * @since 1.0, 2024-01-26 16:13:17
  */
 public class AlipayEbppIndustryOnecodepassOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6227955421542646747L;
+	private static final long serialVersionUID = 7163415739445678443L;
 
 	/**
 	 * 机构编码

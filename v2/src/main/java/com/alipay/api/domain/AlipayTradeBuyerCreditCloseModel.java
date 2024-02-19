@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易买家授信关闭
  *
  * @author auto create
- * @since 1.0, 2020-07-10 19:41:34
+ * @since 1.0, 2024-01-29 11:12:49
  */
 public class AlipayTradeBuyerCreditCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7531538733221448792L;
+	private static final long serialVersionUID = 3466492978542756859L;
 
 	/**
 	 * 标识买家授信额度的来源

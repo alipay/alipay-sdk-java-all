@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPcreditHuabeiAuthOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8117373221151483345L;
+	private static final long serialVersionUID = 1367687357899577289L;
 
 	/** 
 	 * 支付宝系统中用以唯一标识用户签约记录的编号，即花呗先享协议号。

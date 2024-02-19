@@ -14,7 +14,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.agent.common.sign request
  * 
  * @author auto create
- * @since 1.0, 2023-10-16 17:06:45
+ * @since 1.0, 2024-01-30 16:50:40
  */
 public class AlipayOpenAgentCommonSignRequest implements AlipayUploadRequest<AlipayOpenAgentCommonSignResponse> {
 

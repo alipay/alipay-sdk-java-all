@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序发送模板消息
  *
  * @author auto create
- * @since 1.0, 2024-01-25 10:08:46
+ * @since 1.0, 2024-01-25 21:08:51
  */
 public class AlipayOpenAppMiniTemplatemessageSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2739533922868754958L;
+	private static final long serialVersionUID = 2696415459365183892L;
 
 	/**
 	 * 模板消息内容。商家/开发者将模板占位符替换为自定义内容
@@ -20,7 +20,7 @@ public class AlipayOpenAppMiniTemplatemessageSendModel extends AlipayObject {
 	private String data;
 
 	/**
-	 * 支付消息模板：需传入用户发生的交易行为的支付宝交易号 trade_no；</br>表单提交模板：需传入用户在小程序触发表单提交事件获得的表单号；</br>刷脸消息模板：需传入在IOT刷脸后得到的ftoken等，用于信息发送的校验。</br>说明：订阅消息模板无需传入本参数。
+	 * 支付消息模板：需传入用户发生的交易行为的支付宝交易号 trade_no；</br>表单提交模板：需传入用户在小程序触发表单提交事件获得的表单号；</br>刷脸消息模板：需传入在IOT刷脸后得到的ftoken等，用于信息发送的校验。</br>
 	 */
 	@ApiField("form_id")
 	private String formId;

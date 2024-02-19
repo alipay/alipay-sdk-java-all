@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.icp.area.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-22 21:31:59
+ * @since 1.0, 2024-01-26 17:21:56
  */
 public class AlipayOpenMiniIcpAreaQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7579551483545886211L;
+	private static final long serialVersionUID = 2315733114679468188L;
 
 	/** 
 	 * 省市区列表信息

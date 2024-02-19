@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 指标数据查询
  *
  * @author auto create
- * @since 1.0, 2023-11-02 14:34:04
+ * @since 1.0, 2024-02-07 14:08:32
  */
 public class AlipayCloudHoloinsightMicroappMetricQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8658361737458482375L;
+	private static final long serialVersionUID = 6894683518164433134L;
 
 	/**
 	 * 聚合方式：平均值

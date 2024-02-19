@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC办理申请单创建或修改
  *
  * @author auto create
- * @since 1.0, 2024-01-09 10:51:39
+ * @since 1.0, 2024-01-26 10:27:51
  */
 public class AlipayCommerceTransportEtcApplyorderCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3894847393539682343L;
+	private static final long serialVersionUID = 5484681788932754377L;
 
 	/**
 	 * 支付宝订单号，提供则认为是更新
@@ -90,6 +90,14 @@ LIMEGREEN: 黄绿色。
 	 */
 	@ApiField("seller_id")
 	private String sellerId;
+
+	/**
+	 * 支付宝ETC办理套餐code。
+仅在创建订单时消费，更新订单时不消费。
+创建订单：alipay_order_id为空；更新订单：alipay_order_id不为空。
+	 */
+	@ApiField("spu_code")
+	private String spuCode;
 
 	/**
 	 * 蚂蚁统一会员ID
@@ -251,6 +259,13 @@ LIMEGREEN: 黄绿色。
 	}
 	public void setSellerId(String sellerId) {
 		this.sellerId = sellerId;
+	}
+
+	public String getSpuCode() {
+		return this.spuCode;
+	}
+	public void setSpuCode(String spuCode) {
+		this.spuCode = spuCode;
 	}
 
 	public String getUserId() {

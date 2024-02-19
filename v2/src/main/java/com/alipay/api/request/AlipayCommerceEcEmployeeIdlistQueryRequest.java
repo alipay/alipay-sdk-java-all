@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.ec.employee.idlist.query request
  * 
  * @author auto create
- * @since 1.0, 2024-01-17 14:37:03
+ * @since 1.0, 2024-02-19 14:02:49
  */
 public class AlipayCommerceEcEmployeeIdlistQueryRequest implements AlipayRequest<AlipayCommerceEcEmployeeIdlistQueryResponse> {
 

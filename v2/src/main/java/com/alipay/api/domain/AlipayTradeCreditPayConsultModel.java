@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易信用支付准入咨询
  *
  * @author auto create
- * @since 1.0, 2020-07-10 19:40:04
+ * @since 1.0, 2024-01-29 11:14:00
  */
 public class AlipayTradeCreditPayConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4315567211711216999L;
+	private static final long serialVersionUID = 1723311437222166776L;
 
 	/**
 	 * 标识买家授信额度的来源

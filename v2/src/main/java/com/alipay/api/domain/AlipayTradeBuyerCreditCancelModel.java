@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易买家授信撤销
  *
  * @author auto create
- * @since 1.0, 2020-07-10 19:39:33
+ * @since 1.0, 2024-01-29 11:12:34
  */
 public class AlipayTradeBuyerCreditCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8548963675479764475L;
+	private static final long serialVersionUID = 5236781516788751357L;
 
 	/**
 	 * 卖家授信拆分给买家的额度

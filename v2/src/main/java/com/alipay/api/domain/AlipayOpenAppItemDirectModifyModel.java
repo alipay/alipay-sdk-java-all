@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenAppItemDirectModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5636841672969868193L;
+	private static final long serialVersionUID = 1384777255392142837L;
 
 	/**
 	 * 支付宝平台侧商品ID，是支付宝平台侧商品的唯一标识，后续与平台交互，需要使用该 ID，建议持久化。该字段特殊可选，与out_item_id不能同时为空，优先使用item_id。
@@ -35,17 +35,13 @@ public class AlipayOpenAppItemDirectModifyModel extends AlipayObject {
 	private String outItemId;
 
 	/**
-	 * 商品售价，分为单位。若填写了skus[]数组，此字段不填写。若未填写skus[]数组，此字段必填。
+	 * 商品售价，分为单位。
 	 */
 	@ApiField("sale_price")
 	private Long salePrice;
 
 	/**
-	 * 商品的售卖状态状态，包含以下两种状态
-已下架(DELISTING)
-可售卖(AVAILABLE)
-若填写了skus[]数组，此字段不填写。
-若未填写skus[]数组，此字段必填。
+	 * 商品的售卖状态状态，包含以下两种状态已下架(DELISTING)可售卖(AVAILABLE)
 	 */
 	@ApiField("sale_status")
 	private String saleStatus;

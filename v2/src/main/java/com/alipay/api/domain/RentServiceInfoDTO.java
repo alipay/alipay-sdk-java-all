@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁服务信息
  *
  * @author auto create
- * @since 1.0, 2023-08-02 14:37:15
+ * @since 1.0, 2024-01-26 16:16:39
  */
 public class RentServiceInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8656331881251352132L;
+	private static final long serialVersionUID = 2185785273821749817L;
 
 	/**
 	 * 借贷专户ID
@@ -25,6 +25,12 @@ public class RentServiceInfoDTO extends AlipayObject {
 	@ApiField("available_amount")
 	private String availableAmount;
 
+	/**
+	 * 服务编号
+	 */
+	@ApiField("service_no")
+	private String serviceNo;
+
 	public String getAccountBookId() {
 		return this.accountBookId;
 	}
@@ -37,6 +43,13 @@ public class RentServiceInfoDTO extends AlipayObject {
 	}
 	public void setAvailableAmount(String availableAmount) {
 		this.availableAmount = availableAmount;
+	}
+
+	public String getServiceNo() {
+		return this.serviceNo;
+	}
+	public void setServiceNo(String serviceNo) {
+		this.serviceNo = serviceNo;
 	}
 
 }

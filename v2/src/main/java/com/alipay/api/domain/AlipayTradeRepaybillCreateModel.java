@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 交易还款账单创建接口
  *
  * @author auto create
- * @since 1.0, 2019-11-25 20:58:35
+ * @since 1.0, 2024-01-29 11:13:45
  */
 public class AlipayTradeRepaybillCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5499564454353483588L;
+	private static final long serialVersionUID = 5333515418796267636L;
 
 	/**
 	 * 本次创建账单的金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]

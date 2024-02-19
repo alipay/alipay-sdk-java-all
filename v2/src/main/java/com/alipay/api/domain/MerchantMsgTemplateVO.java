@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 消息子板模型，增加sceneRule枚举
  *
  * @author auto create
- * @since 1.0, 2024-01-24 17:48:22
+ * @since 1.0, 2024-01-25 21:10:13
  */
 public class MerchantMsgTemplateVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8883678238351641797L;
+	private static final long serialVersionUID = 1773534239227454696L;
 
 	/**
 	 * 消息推送类型，follower表示粉丝，all表示全部
@@ -20,7 +20,7 @@ public class MerchantMsgTemplateVO extends AlipayObject {
 	private String deliverySettings;
 
 	/**
-	 * 消息子板疲劳度
+	 * 消息模板疲劳度
 	 */
 	@ApiField("fatigue")
 	private MsgFatigueVO fatigue;
@@ -32,7 +32,7 @@ public class MerchantMsgTemplateVO extends AlipayObject {
 	private String keywordDesc;
 
 	/**
-	 * 消息子板名称
+	 * 消息模板名称
 	 */
 	@ApiField("name")
 	private String name;
@@ -44,13 +44,13 @@ public class MerchantMsgTemplateVO extends AlipayObject {
 	private String sceneRule;
 
 	/**
-	 * 消息子板状态
+	 * 消息模板状态
 	 */
 	@ApiField("status")
 	private String status;
 
 	/**
-	 * 消息子板id
+	 * 消息模板id
 	 */
 	@ApiField("template_id")
 	private String templateId;

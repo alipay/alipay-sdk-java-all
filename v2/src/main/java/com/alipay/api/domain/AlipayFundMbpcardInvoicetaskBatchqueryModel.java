@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预付卡回票任务列表查询
  *
  * @author auto create
- * @since 1.0, 2024-01-19 18:25:34
+ * @since 1.0, 2024-02-01 16:59:55
  */
 public class AlipayFundMbpcardInvoicetaskBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5317853656765426647L;
+	private static final long serialVersionUID = 1479266734844772149L;
 
 	/**
 	 * 开始时间，格式：yyyy-MM-dd
@@ -38,7 +38,7 @@ public class AlipayFundMbpcardInvoicetaskBatchqueryModel extends AlipayObject {
 	private String invoiceTaskStatus;
 
 	/**
-	 * 商户pid
+	 * 商户id
 	 */
 	@ApiField("merchant_id")
 	private String merchantId;

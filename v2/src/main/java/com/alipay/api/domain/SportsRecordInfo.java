@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 运动记录信息
  *
  * @author auto create
- * @since 1.0, 2023-12-07 19:32:41
+ * @since 1.0, 2024-02-01 19:18:54
  */
 public class SportsRecordInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5386358872957776822L;
+	private static final long serialVersionUID = 5835323362631712193L;
 
 	/**
 	 * 消耗卡路里，实际为 decimal类型，有小数
@@ -34,10 +34,22 @@ public class SportsRecordInfo extends AlipayObject {
 	private String duration;
 
 	/**
+	 * 结束时人脸比对是否通过，没有值表示没有发起过刷脸
+	 */
+	@ApiField("finish_face_verify_pass")
+	private Boolean finishFaceVerifyPass;
+
+	/**
 	 * 运动结束时间
 	 */
 	@ApiField("finish_time")
 	private Date finishTime;
+
+	/**
+	 * 来源应用ID
+	 */
+	@ApiField("from_app_id")
+	private String fromAppId;
 
 	/**
 	 * 最高海拔，单位米
@@ -50,6 +62,12 @@ public class SportsRecordInfo extends AlipayObject {
 	 */
 	@ApiField("min_altitude")
 	private String minAltitude;
+
+	/**
+	 * 外部业务编码，标识一个appId下面的一个特定的业务
+	 */
+	@ApiField("out_biz_code")
+	private String outBizCode;
 
 	/**
 	 * 运动流水的发生日期
@@ -80,6 +98,12 @@ public class SportsRecordInfo extends AlipayObject {
 	 */
 	@ApiField("sport_type")
 	private String sportType;
+
+	/**
+	 * 开始时刷脸是否通过，没有值表示没有发起过刷脸
+	 */
+	@ApiField("start_face_verify_pass")
+	private Boolean startFaceVerifyPass;
 
 	/**
 	 * 开始时间
@@ -126,11 +150,25 @@ public class SportsRecordInfo extends AlipayObject {
 		this.duration = duration;
 	}
 
+	public Boolean getFinishFaceVerifyPass() {
+		return this.finishFaceVerifyPass;
+	}
+	public void setFinishFaceVerifyPass(Boolean finishFaceVerifyPass) {
+		this.finishFaceVerifyPass = finishFaceVerifyPass;
+	}
+
 	public Date getFinishTime() {
 		return this.finishTime;
 	}
 	public void setFinishTime(Date finishTime) {
 		this.finishTime = finishTime;
+	}
+
+	public String getFromAppId() {
+		return this.fromAppId;
+	}
+	public void setFromAppId(String fromAppId) {
+		this.fromAppId = fromAppId;
 	}
 
 	public String getMaxAltitude() {
@@ -145,6 +183,13 @@ public class SportsRecordInfo extends AlipayObject {
 	}
 	public void setMinAltitude(String minAltitude) {
 		this.minAltitude = minAltitude;
+	}
+
+	public String getOutBizCode() {
+		return this.outBizCode;
+	}
+	public void setOutBizCode(String outBizCode) {
+		this.outBizCode = outBizCode;
 	}
 
 	public Date getRecordDate() {
@@ -180,6 +225,13 @@ public class SportsRecordInfo extends AlipayObject {
 	}
 	public void setSportType(String sportType) {
 		this.sportType = sportType;
+	}
+
+	public Boolean getStartFaceVerifyPass() {
+		return this.startFaceVerifyPass;
+	}
+	public void setStartFaceVerifyPass(Boolean startFaceVerifyPass) {
+		this.startFaceVerifyPass = startFaceVerifyPass;
 	}
 
 	public Date getStartTime() {

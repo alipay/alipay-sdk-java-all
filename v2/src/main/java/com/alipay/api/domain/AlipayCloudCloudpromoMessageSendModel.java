@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 短信发送接口
  *
  * @author auto create
- * @since 1.0, 2024-01-22 17:27:54
+ * @since 1.0, 2024-02-06 16:07:34
  */
 public class AlipayCloudCloudpromoMessageSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6124787118636484171L;
+	private static final long serialVersionUID = 1629613994184718447L;
 
 	/**
 	 * 外部业务号
@@ -48,11 +48,18 @@ public class AlipayCloudCloudpromoMessageSendModel extends AlipayObject {
 	private String templateCode;
 
 	/**
-	 * 短信模板变量对应的实际值。该数组中每个对象需和phone_number中的手机号一一对应。模板中的多个变量用 "#" 区分；"="左边为变量名，"="右边为变量值。
+	 * 短信模板变量对应的实际值。该数组中每个对象需和phone_number中的手机号一一对应。模板中的多个变量用 "#" 区分；"="左边为变量名，"="右边为变量值。 当前字段已废弃(拼接有缺陷，调整为json string 参数)
 	 */
 	@ApiListField("template_param")
 	@ApiField("string")
+	@Deprecated
 	private List<String> templateParam;
+
+	/**
+	 * 短信模板变量对应的实际值。
+	 */
+	@ApiField("template_param_json")
+	private String templateParamJson;
 
 	public String getOutBizNo() {
 		return this.outBizNo;
@@ -87,6 +94,13 @@ public class AlipayCloudCloudpromoMessageSendModel extends AlipayObject {
 	}
 	public void setTemplateParam(List<String> templateParam) {
 		this.templateParam = templateParam;
+	}
+
+	public String getTemplateParamJson() {
+		return this.templateParamJson;
+	}
+	public void setTemplateParamJson(String templateParamJson) {
+		this.templateParamJson = templateParamJson;
 	}
 
 }

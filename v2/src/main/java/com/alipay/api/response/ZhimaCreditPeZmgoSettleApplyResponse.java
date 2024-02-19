@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.pe.zmgo.settle.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-30 11:01:54
+ * @since 1.0, 2024-01-30 13:37:37
  */
 public class ZhimaCreditPeZmgoSettleApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5321437448539426265L;
+	private static final long serialVersionUID = 6695437652997843695L;
 
 	/** 
 	 * 支付宝系统中用以唯一标识用户签约记录的编号。

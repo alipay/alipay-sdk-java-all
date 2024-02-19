@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.mbpcard.invoiceprocess.modify response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-19 18:26:25
+ * @since 1.0, 2024-02-01 17:01:57
  */
 public class AlipayFundMbpcardInvoiceprocessModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8289582957826631374L;
+	private static final long serialVersionUID = 1752945171387622961L;
 
 	
 

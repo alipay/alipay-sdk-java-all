@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserFamilyShareAuthCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6861247362482275337L;
+	private static final long serialVersionUID = 4337295181583375719L;
 
 	/**
 	 * 共享授权的资源ID

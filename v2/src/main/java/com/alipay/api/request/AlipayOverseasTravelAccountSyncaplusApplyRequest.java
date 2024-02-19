@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.overseas.travel.account.syncaplus.apply request
  * 
  * @author auto create
- * @since 1.0, 2024-01-10 10:00:23
+ * @since 1.0, 2024-01-30 14:06:57
  */
 public class AlipayOverseasTravelAccountSyncaplusApplyRequest implements AlipayRequest<AlipayOverseasTravelAccountSyncaplusApplyResponse> {
 

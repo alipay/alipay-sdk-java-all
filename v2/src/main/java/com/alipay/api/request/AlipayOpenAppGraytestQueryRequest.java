@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.graytest.query request
  * 
  * @author auto create
- * @since 1.0, 2023-12-05 16:51:56
+ * @since 1.0, 2024-02-01 15:05:56
  */
 public class AlipayOpenAppGraytestQueryRequest implements AlipayRequest<AlipayOpenAppGraytestQueryResponse> {
 

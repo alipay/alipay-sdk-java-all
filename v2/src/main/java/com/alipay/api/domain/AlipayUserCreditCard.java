@@ -13,7 +13,7 @@ String instId; //如ICBC
  */
 public class AlipayUserCreditCard extends AlipayObject {
 
-	private static final long serialVersionUID = 8819887276344737247L;
+	private static final long serialVersionUID = 3628256369812592635L;
 
 	/**
 	 * 信用卡卡号，显示前6后2

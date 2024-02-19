@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.expensecontrol.issuebatch.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-11 18:16:44
+ * @since 1.0, 2024-01-30 21:07:24
  */
 public class AlipayEbppInvoiceExpensecontrolIssuebatchCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1261933527385141667L;
+	private static final long serialVersionUID = 4896978843782435961L;
 
 	/** 
 	 * 是否成功

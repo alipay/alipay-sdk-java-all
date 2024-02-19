@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.mbpcard.file.upload request
  * 
  * @author auto create
- * @since 1.0, 2024-01-19 18:25:08
+ * @since 1.0, 2024-02-01 16:31:58
  */
 public class AlipayFundMbpcardFileUploadRequest implements AlipayUploadRequest<AlipayFundMbpcardFileUploadResponse> {
 
@@ -39,7 +39,7 @@ PAPER_QUOTA：手撕定额发票
 	private String imageOcrTag;
 
 	/** 
-	* 文件格式，支持格式：bmp、jpg、jpeg、png、gif、pdf
+	* 文件类型，支持格式：bmp、jpg、jpeg、png、gif、pdf
 	 */
 	private String imageType;
 

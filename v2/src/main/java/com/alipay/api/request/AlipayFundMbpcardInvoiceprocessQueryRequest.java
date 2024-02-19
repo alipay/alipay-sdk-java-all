@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.mbpcard.invoiceprocess.query request
  * 
  * @author auto create
- * @since 1.0, 2024-01-19 18:25:45
+ * @since 1.0, 2024-02-01 16:26:57
  */
 public class AlipayFundMbpcardInvoiceprocessQueryRequest implements AlipayRequest<AlipayFundMbpcardInvoiceprocessQueryResponse> {
 

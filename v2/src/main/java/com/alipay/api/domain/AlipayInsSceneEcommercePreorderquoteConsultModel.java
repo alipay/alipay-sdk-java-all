@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayInsSceneEcommercePreorderquoteConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1262656728996456793L;
+	private static final long serialVersionUID = 1715925276828894341L;
 
 	/**
 	 * 订单

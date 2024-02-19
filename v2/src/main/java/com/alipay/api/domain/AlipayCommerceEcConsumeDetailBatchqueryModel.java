@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账单详情批量查询
  *
  * @author auto create
- * @since 1.0, 2023-05-04 14:42:16
+ * @since 1.0, 2024-02-02 11:31:15
  */
 public class AlipayCommerceEcConsumeDetailBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8481431671714776972L;
+	private static final long serialVersionUID = 3187516332552936634L;
 
 	/**
 	 * 共同账户ID
@@ -26,6 +26,12 @@ public class AlipayCommerceEcConsumeDetailBatchqueryModel extends AlipayObject {
 	private String agreementNo;
 
 	/**
+	 * 企业码员工id
+	 */
+	@ApiField("employee_id")
+	private String employeeId;
+
+	/**
 	 * 截止时间
 	 */
 	@ApiField("end_date")
@@ -36,6 +42,12 @@ public class AlipayCommerceEcConsumeDetailBatchqueryModel extends AlipayObject {
 	 */
 	@ApiField("enterprise_id")
 	private String enterpriseId;
+
+	/**
+	 * 费控规则组id（非制度id)
+	 */
+	@ApiField("expense_rule_group_id")
+	private String expenseRuleGroupId;
 
 	/**
 	 * 页码
@@ -69,6 +81,13 @@ public class AlipayCommerceEcConsumeDetailBatchqueryModel extends AlipayObject {
 		this.agreementNo = agreementNo;
 	}
 
+	public String getEmployeeId() {
+		return this.employeeId;
+	}
+	public void setEmployeeId(String employeeId) {
+		this.employeeId = employeeId;
+	}
+
 	public String getEndDate() {
 		return this.endDate;
 	}
@@ -81,6 +100,13 @@ public class AlipayCommerceEcConsumeDetailBatchqueryModel extends AlipayObject {
 	}
 	public void setEnterpriseId(String enterpriseId) {
 		this.enterpriseId = enterpriseId;
+	}
+
+	public String getExpenseRuleGroupId() {
+		return this.expenseRuleGroupId;
+	}
+	public void setExpenseRuleGroupId(String expenseRuleGroupId) {
+		this.expenseRuleGroupId = expenseRuleGroupId;
 	}
 
 	public String getPageNum() {

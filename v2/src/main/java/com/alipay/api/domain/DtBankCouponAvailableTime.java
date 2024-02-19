@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DtBankCouponAvailableTime extends AlipayObject {
 
-	private static final long serialVersionUID = 4434718889712922632L;
+	private static final long serialVersionUID = 3427192124842922117L;
 
 	/**
 	 * 红包有效期开始时间(绝对时间)，time_type取值为ABSOLUTELY时，此参数有值。

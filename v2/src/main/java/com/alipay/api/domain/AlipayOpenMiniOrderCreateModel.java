@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易组件业务单创建
  *
  * @author auto create
- * @since 1.0, 2024-01-22 23:06:15
+ * @since 1.0, 2024-01-26 18:20:15
  */
 public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5743698119852498633L;
+	private static final long serialVersionUID = 4615855557468312673L;
 
 	/**
 	 * 订单收货地址
@@ -50,7 +50,7 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 	private ContactInfoDTO contactInfo;
 
 	/**
-	 * 芝麻信息，使用芝麻先享能力时传入
+	 * 芝麻信息
 	 */
 	@ApiField("credit_info")
 	private CreditInfoDTO creditInfo;
@@ -122,7 +122,7 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 	private String sourceId;
 
 	/**
-	 * 二级商户信息。 直付通模式和机构间连模式下必传，其它场景下不需要传入
+	 * 二级商户信息。 
 	 */
 	@ApiField("sub_merchant")
 	private SubMerchantDTO subMerchant;

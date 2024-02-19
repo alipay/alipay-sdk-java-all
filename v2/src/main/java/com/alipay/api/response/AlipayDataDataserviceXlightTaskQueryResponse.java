@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataDataserviceXlightTaskQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3457113835969452785L;
+	private static final long serialVersionUID = 1622473461954646586L;
 
 	/** 
 	 * 任务完成时间

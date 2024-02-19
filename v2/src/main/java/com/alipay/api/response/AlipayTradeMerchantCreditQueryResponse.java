@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.merchant.credit.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 00:08:34
+ * @since 1.0, 2024-01-29 11:11:56
  */
 public class AlipayTradeMerchantCreditQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2473783269115595621L;
+	private static final long serialVersionUID = 5214779672264623683L;
 
 	/** 
 	 * 标识本次授信拆分的业务场景，具体的值由支付宝定义

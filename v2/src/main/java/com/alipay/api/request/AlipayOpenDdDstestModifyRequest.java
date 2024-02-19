@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.dd.dstest.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-11-02 20:21:49
+ * @since 1.0, 2024-01-29 16:12:01
  */
 public class AlipayOpenDdDstestModifyRequest implements AlipayRequest<AlipayOpenDdDstestModifyResponse> {
 

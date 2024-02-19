@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 额度退款记录
  *
  * @author auto create
- * @since 1.0, 2023-06-25 11:14:50
+ * @since 1.0, 2024-01-30 14:27:49
  */
 public class ExpenseControlQuotaRefundInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5186222184382568845L;
+	private static final long serialVersionUID = 3645265236523133497L;
 
 	/**
 	 * 退款金额（分）

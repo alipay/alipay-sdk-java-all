@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ItemOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1494695812461788632L;
+	private static final long serialVersionUID = 4439451299868764434L;
 
 	/**
 	 * 扩展信息，请参见产品文档。小程序订单助手业务中，扩展参数必须传递素材id；其他业务场景参见对应的产品文档。
@@ -66,8 +66,7 @@ public class ItemOrderInfo extends AlipayObject {
 	private String unit;
 
 	/**
-	 * 商品单价（单位：元）。
-小程序订单助手业务中，为必传；其他业务场景参见对应的产品文档。
+	 * 商品单价（单位：元）
 	 */
 	@ApiField("unit_price")
 	private String unitPrice;

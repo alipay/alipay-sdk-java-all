@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ItemDirectModifySku extends AlipayObject {
 
-	private static final long serialVersionUID = 8162754294345892197L;
+	private static final long serialVersionUID = 4667241179495189426L;
 
 	/**
 	 * sku原价，分为单位。
@@ -20,7 +20,7 @@ public class ItemDirectModifySku extends AlipayObject {
 	private Long originalPrice;
 
 	/**
-	 * 商家侧自定义sku ID，要求 APPID 下全局唯一。和sku_id不能同时为空
+	 * 商家侧自定义sku ID，要求 APPID 下全局唯一。
 	 */
 	@ApiField("out_sku_id")
 	private String outSkuId;
@@ -38,7 +38,7 @@ public class ItemDirectModifySku extends AlipayObject {
 	private String saleStatus;
 
 	/**
-	 * 支付宝平台侧sku ID，是支付宝平台侧商品的唯一标识，后续与平台交互，需要使用该 ID，建议持久化。和out_sku_id不能同时为空。
+	 * 支付宝平台侧sku ID，是支付宝平台侧商品的唯一标识，后续与平台交互，需要使用该 ID，建议持久化。
 	 */
 	@ApiField("sku_id")
 	private String skuId;

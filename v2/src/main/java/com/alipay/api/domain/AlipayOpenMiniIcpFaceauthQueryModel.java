@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序备案人脸核验结果查询接口
  *
  * @author auto create
- * @since 1.0, 2023-12-27 10:55:17
+ * @since 1.0, 2024-01-31 11:45:51
  */
 public class AlipayOpenMiniIcpFaceauthQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4444149837751313886L;
+	private static final long serialVersionUID = 6411534356913334447L;
 
 	/**
 	 * 人脸核验凭证certify_id

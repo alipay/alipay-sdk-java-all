@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMerchantPayforprivilegePromconfigureSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4615652768662411581L;
+	private static final long serialVersionUID = 8747181526239131332L;
 
 	/**
 	 * 支持的可核销门店列表

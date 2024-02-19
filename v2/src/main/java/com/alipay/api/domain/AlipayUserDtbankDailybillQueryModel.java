@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 日账单查询接口
  *
  * @author auto create
- * @since 1.0, 2024-01-19 10:17:27
+ * @since 1.0, 2024-01-30 11:14:15
  */
 public class AlipayUserDtbankDailybillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5286567395963637772L;
+	private static final long serialVersionUID = 5441997315311174125L;
 
 	/**
 	 * 账单id
@@ -19,11 +19,24 @@ public class AlipayUserDtbankDailybillQueryModel extends AlipayObject {
 	@ApiField("bill_id")
 	private String billId;
 
+	/**
+	 * 账单类型
+	 */
+	@ApiField("bill_type")
+	private String billType;
+
 	public String getBillId() {
 		return this.billId;
 	}
 	public void setBillId(String billId) {
 		this.billId = billId;
+	}
+
+	public String getBillType() {
+		return this.billType;
+	}
+	public void setBillType(String billType) {
+		this.billType = billType;
 	}
 
 }

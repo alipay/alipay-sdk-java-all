@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.cloud.aositem.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-31 17:37:01
+ * @since 1.0, 2024-02-01 16:47:03
  */
 public class AlipayOpenMiniCloudAositemQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6881456937329664549L;
+	private static final long serialVersionUID = 7494639785458847972L;
 
 	/** 
 	 * 返回请求参数中对应aggregation_field指定要聚合的字段的值
@@ -35,6 +35,12 @@ public class AlipayOpenMiniCloudAositemQueryResponse extends AlipayResponse {
 	@ApiListField("result")
 	@ApiField("data_item")
 	private List<DataItem> result;
+
+	/** 
+	 * 请求链路唯一id，用于问题排查
+	 */
+	@ApiField("sequence")
+	private String sequence;
 
 	/** 
 	 * 搜索请求的traceid，用于排查问题及关联s搜索结果和用户行为
@@ -61,6 +67,13 @@ public class AlipayOpenMiniCloudAositemQueryResponse extends AlipayResponse {
 	}
 	public List<DataItem> getResult( ) {
 		return this.result;
+	}
+
+	public void setSequence(String sequence) {
+		this.sequence = sequence;
+	}
+	public String getSequence( ) {
+		return this.sequence;
 	}
 
 	public void setTraceId(String traceId) {

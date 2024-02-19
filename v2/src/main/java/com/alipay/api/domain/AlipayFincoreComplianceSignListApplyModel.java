@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用印申请（我方拆）
  *
  * @author auto create
- * @since 1.0, 2021-12-29 14:38:51
+ * @since 1.0, 2024-01-31 11:39:17
  */
 public class AlipayFincoreComplianceSignListApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8615119538672537294L;
+	private static final long serialVersionUID = 3312468359444642915L;
 
 	/**
 	 * 申请人信息

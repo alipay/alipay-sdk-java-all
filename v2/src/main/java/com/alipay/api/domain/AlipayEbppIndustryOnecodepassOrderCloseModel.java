@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 一码通关单接口
  *
  * @author auto create
- * @since 1.0, 2023-02-24 10:15:15
+ * @since 1.0, 2024-01-26 16:14:47
  */
 public class AlipayEbppIndustryOnecodepassOrderCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3411989766932411779L;
+	private static final long serialVersionUID = 4322857465929753157L;
 
 	/**
 	 * 机构编码，接入时由支付宝小二分配

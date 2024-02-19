@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品SPU对象
  *
  * @author auto create
- * @since 1.0, 2023-12-10 00:32:58
+ * @since 1.0, 2024-01-30 14:32:13
  */
 public class ItemSpuVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8265426222549947876L;
+	private static final long serialVersionUID = 2443652131111692742L;
 
 	/**
 	 * 平台类目，填写的类目必须在类目表列出，多级类目只填最后一级。商品类目 ID 及信息可通过商品类目表获取。
@@ -51,10 +51,7 @@ public class ItemSpuVO extends AlipayObject {
 	private String spuStatus;
 
 	/**
-	 * 10
-库存
-若填写了skus[]数组，此字段不用填写。
-若未填写skus[]数组，此字段必填。
+	 * 库存。
 目前支持库存区间0~99999
 	 */
 	@ApiField("stock_num")

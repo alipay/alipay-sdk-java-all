@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BankRepayData extends AlipayObject {
 
-	private static final long serialVersionUID = 2676879115843528185L;
+	private static final long serialVersionUID = 1229777423798986983L;
 
 	/**
 	 * 原清算交易中支付宝文件流水传的senderClrgTrcno发行方清算流水号;

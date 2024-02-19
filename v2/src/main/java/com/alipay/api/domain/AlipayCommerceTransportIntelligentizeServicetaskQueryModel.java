@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 大出行智能平台-异步服务任务-查询
  *
  * @author auto create
- * @since 1.0, 2022-11-03 14:44:59
+ * @since 1.0, 2024-02-05 15:27:39
  */
 public class AlipayCommerceTransportIntelligentizeServicetaskQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4243655732835475825L;
+	private static final long serialVersionUID = 4199486494246629376L;
 
 	/**
 	 * 公交企业ID

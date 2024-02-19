@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序本地商品SPU保存
  *
  * @author auto create
- * @since 1.0, 2023-12-08 16:47:53
+ * @since 1.0, 2024-01-30 14:49:32
  */
 public class AlipayOpenAppLocalitemSpuSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1373631742234496367L;
+	private static final long serialVersionUID = 8653983258796692589L;
 
 	/**
 	 * 属性KV列表，通过alipay.open.app.localitem.template.query获取本地商品模板信息接口得到商品属性key，is_required=1时属性必填

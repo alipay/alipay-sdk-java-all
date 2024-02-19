@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 灵工卡解约
  *
  * @author auto create
- * @since 1.0, 2023-06-02 15:36:18
+ * @since 1.0, 2024-01-26 14:15:30
  */
 public class AlipayFundFlexiblestaffingEmployeehomeUnsignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6562651875136377755L;
+	private static final long serialVersionUID = 8514735362547746219L;
 
 	/**
 	 * 业务场景码、固定值：EMPLOYEE_HOME_MANAGE

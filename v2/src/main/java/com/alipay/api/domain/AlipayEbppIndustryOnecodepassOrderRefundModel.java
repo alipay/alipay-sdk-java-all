@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 一码通退款接口
  *
  * @author auto create
- * @since 1.0, 2023-02-24 10:15:52
+ * @since 1.0, 2024-01-26 16:13:47
  */
 public class AlipayEbppIndustryOnecodepassOrderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1217445786644378357L;
+	private static final long serialVersionUID = 8389877458924885752L;
 
 	/**
 	 * 机构编码，接入时由支付宝小二分配

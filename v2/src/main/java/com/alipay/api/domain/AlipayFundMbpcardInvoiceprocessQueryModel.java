@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预付卡回票事件主动查询
  *
  * @author auto create
- * @since 1.0, 2024-01-19 18:25:45
+ * @since 1.0, 2024-02-01 16:26:50
  */
 public class AlipayFundMbpcardInvoiceprocessQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1874685472872446162L;
+	private static final long serialVersionUID = 3827625245312396878L;
 
 	/**
-	 * 产品码
+	 * 场景码
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;

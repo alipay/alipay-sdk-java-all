@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金管控资金划拨
  *
  * @author auto create
- * @since 1.0, 2023-12-25 16:00:48
+ * @since 1.0, 2024-02-01 16:11:46
  */
 public class AnttechBlockchainFinanceFsupvFundTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1442231137357195218L;
+	private static final long serialVersionUID = 1689898434732574216L;
 
 	/**
 	 * 资金管控任务编号
@@ -26,7 +26,7 @@ public class AnttechBlockchainFinanceFsupvFundTransferModel extends AlipayObject
 	private String requestNo;
 
 	/**
-	 * 资金管控划拨金额，单位: 分
+	 * 资金管控划拨金额，单位: 元
 	 */
 	@ApiField("transfer_amount")
 	private String transferAmount;

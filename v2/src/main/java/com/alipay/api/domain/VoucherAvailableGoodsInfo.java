@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 券可用商品
  *
  * @author auto create
- * @since 1.0, 2023-12-01 15:46:12
+ * @since 1.0, 2024-01-30 11:22:56
  */
 public class VoucherAvailableGoodsInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2896532683557495866L;
+	private static final long serialVersionUID = 1861795853769985945L;
 
 	/**
 	 * 可优惠商品编码，商家自定义商品编码。当用户支付时，交易中的商品编码和支付券配置的商品编码有任一匹配时，可以使用优惠券。

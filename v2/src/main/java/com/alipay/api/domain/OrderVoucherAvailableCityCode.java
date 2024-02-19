@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家券可用城市信息
  *
  * @author auto create
- * @since 1.0, 2024-01-24 15:52:30
+ * @since 1.0, 2024-01-25 21:10:58
  */
 public class OrderVoucherAvailableCityCode extends AlipayObject {
 
-	private static final long serialVersionUID = 2677377866464761357L;
+	private static final long serialVersionUID = 4277216245688955172L;
 
 	/**
 	 * 是否全国。选择全国后，无须填写city_codes字段。系统默认填充全国全部城市信息。

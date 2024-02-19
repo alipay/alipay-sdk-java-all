@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.mbpcard.invoiceprocess.submit response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-19 18:26:01
+ * @since 1.0, 2024-02-01 16:31:58
  */
 public class AlipayFundMbpcardInvoiceprocessSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8668655913817796424L;
+	private static final long serialVersionUID = 3485858222711243371L;
 
 	/** 
 	 * 发票外部索引信息

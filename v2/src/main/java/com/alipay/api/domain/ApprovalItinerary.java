@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 审批单行程
  *
  * @author auto create
- * @since 1.0, 2023-06-20 14:05:25
+ * @since 1.0, 2024-01-30 14:27:33
  */
 public class ApprovalItinerary extends AlipayObject {
 
-	private static final long serialVersionUID = 8728814194384528467L;
+	private static final long serialVersionUID = 3536199429819695974L;
 
 	/**
 	 * 到达城市

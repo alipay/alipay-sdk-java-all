@@ -4,17 +4,17 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 消息母板库信息
+ * 消息模板库信息
  *
  * @author auto create
- * @since 1.0, 2024-01-24 17:42:18
+ * @since 1.0, 2024-01-25 21:09:56
  */
 public class MerchantMsgTemplateLibVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3247592939165977447L;
+	private static final long serialVersionUID = 6413343191426752967L;
 
 	/**
-	 * 消息母板code
+	 * 消息模板库code
 	 */
 	@ApiField("code")
 	private String code;
@@ -56,7 +56,7 @@ public class MerchantMsgTemplateLibVO extends AlipayObject {
 	private String keywordDesc;
 
 	/**
-	 * 消息母板名称
+	 * 消息模板库名称
 	 */
 	@ApiField("name")
 	private String name;
@@ -74,7 +74,7 @@ public class MerchantMsgTemplateLibVO extends AlipayObject {
 	private String sceneRule;
 
 	/**
-	 * 母板是否可选，若为false，则不可申领
+	 * 模板库是否可选，若为false，则不可申领
 	 */
 	@ApiField("selectable")
 	private Boolean selectable;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易卖家可赊账额度查询
  *
  * @author auto create
- * @since 1.0, 2020-07-10 19:41:23
+ * @since 1.0, 2024-01-29 11:11:56
  */
 public class AlipayTradeMerchantCreditQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1315224217512247967L;
+	private static final long serialVersionUID = 4279726985697395811L;
 
 	/**
 	 * 标识本次授信拆分的业务场景，具体的值由支付宝定义

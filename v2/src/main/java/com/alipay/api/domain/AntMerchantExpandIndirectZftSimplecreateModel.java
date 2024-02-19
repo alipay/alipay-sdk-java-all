@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 直付通二级商户免证照进件
  *
  * @author auto create
- * @since 1.0, 2023-12-28 20:29:53
+ * @since 1.0, 2024-02-04 16:55:51
  */
 public class AntMerchantExpandIndirectZftSimplecreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5388715553261871682L;
+	private static final long serialVersionUID = 8125767591441591975L;
 
 	/**
 	 * 补充证件图片，与additional_cert_no、additional_cert_type同时提供。当商户类型为个人时，使用当面付收款有限额，补充这组证件信息可提额。目前仅允许个人类型商户传入。其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。
@@ -107,7 +107,7 @@ public class AntMerchantExpandIndirectZftSimplecreateModel extends AlipayObject 
 	private MerchantInvoiceInfo invoiceInfo;
 
 	/**
-	 * 授权函。当商户名与结算卡户名不一致。《说明函》模板参考https://opendocs.alipay.com/open/direct-payment/cg5mkp#%E7%9B%B8%E5%85%B3%E8%B5%84%E6%96%99。涉及外籍法人（这种情况上传任意能证明身份的图片）时必填，其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。（<b>商户类型为个体工商户时，本字段仅需上传营业执照非授权函</b>）
+	 * 授权函。当商户名与结算卡户名不一致。<a href="https://opendocs.alipay.com/open/direct-payment/cg5mkp#%E7%9B%B8%E5%85%B3%E8%B5%84%E6%96%99">《说明函》模板参考</a>。涉及外籍法人（这种情况上传任意能证明身份的图片）时必填，其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。（<b>商户类型为个体工商户时，本字段仅需上传营业执照非授权函</b>）
 	 */
 	@ApiField("license_auth_letter_image")
 	private String licenseAuthLetterImage;

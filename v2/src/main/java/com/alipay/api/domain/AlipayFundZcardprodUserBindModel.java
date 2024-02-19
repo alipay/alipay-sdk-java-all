@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支卡通-用户绑定
  *
  * @author auto create
- * @since 1.0, 2024-01-18 10:48:16
+ * @since 1.0, 2024-01-29 15:23:27
  */
 public class AlipayFundZcardprodUserBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6759389414625737935L;
+	private static final long serialVersionUID = 1214981476927358463L;
 
 	/**
 	 * 商户的账户id

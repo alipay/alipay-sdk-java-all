@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.icp.nrlxtype.query request
  * 
  * @author auto create
- * @since 1.0, 2024-01-22 21:31:59
+ * @since 1.0, 2024-01-26 17:21:56
  */
 public class AlipayOpenMiniIcpNrlxtypeQueryRequest implements AlipayRequest<AlipayOpenMiniIcpNrlxtypeQueryResponse> {
 

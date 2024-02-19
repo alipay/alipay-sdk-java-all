@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.mbpcard.file.upload response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-19 18:25:08
+ * @since 1.0, 2024-02-01 16:31:58
  */
 public class AlipayFundMbpcardFileUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2325141174728844539L;
+	private static final long serialVersionUID = 6591417796562861918L;
 
 	/** 
 	 * 影像文件存储平台的标识

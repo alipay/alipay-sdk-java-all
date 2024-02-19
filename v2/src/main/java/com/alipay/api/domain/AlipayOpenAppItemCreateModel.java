@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序商品创建接口
  *
  * @author auto create
- * @since 1.0, 2024-01-17 13:57:50
+ * @since 1.0, 2024-02-01 12:59:17
  */
 public class AlipayOpenAppItemCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2741997763791364489L;
+	private static final long serialVersionUID = 3243266879466266936L;
 
 	/**
 	 * 商品属性
@@ -75,15 +75,13 @@ public class AlipayOpenAppItemCreateModel extends AlipayObject {
 	private String itemDetailsPageModel;
 
 	/**
-	 * 商品类型，默认为实物商品
+	 * 商品类型；若类目涉及多个商品类型，则需传此参数，以调用准确的商品模板。
 	 */
 	@ApiField("item_type")
 	private String itemType;
 
 	/**
 	 * 商品原价，分为单位。
-可选。若未填写skus[]数组，此字段可选；若填写了skus[]数组，此字段不填写。
-如果填写，值必须大于0，且原价不能小于售价。
 	 */
 	@ApiField("original_price")
 	private Long originalPrice;
@@ -108,24 +106,18 @@ public class AlipayOpenAppItemCreateModel extends AlipayObject {
 
 	/**
 	 * 商品售价，分为单位。
-特殊可选：若未填写skus[]数组，此字段必填；若填写了skus[]数组，此字段不填写。
-如果填写，值必须要大于0。
 	 */
 	@ApiField("sale_price")
 	private Long salePrice;
 
 	/**
-	 * 商品的售卖状态，包含以下两种状态
-已下架(DELISTING)
-可售卖(AVAILABLE)
-若填写了skus[]数组，此字段不用填写。
-若未填写skus[]数组，此字段必填。
+	 * 商品的售卖状态
 	 */
 	@ApiField("sale_status")
 	private String saleStatus;
 
 	/**
-	 * sku数组，sku数量上限为25
+	 * sku数组，sku数量上限为50
 	 */
 	@ApiListField("skus")
 	@ApiField("item_sku_create_v_o")

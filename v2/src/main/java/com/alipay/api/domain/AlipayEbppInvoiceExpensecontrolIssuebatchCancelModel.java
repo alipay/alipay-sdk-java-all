@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 作废额度发放
  *
  * @author auto create
- * @since 1.0, 2023-06-21 16:51:16
+ * @since 1.0, 2024-01-30 21:07:24
  */
 public class AlipayEbppInvoiceExpensecontrolIssuebatchCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8799224957283125426L;
+	private static final long serialVersionUID = 2848696132329219181L;
 
 	/**
 	 * 共同账户id

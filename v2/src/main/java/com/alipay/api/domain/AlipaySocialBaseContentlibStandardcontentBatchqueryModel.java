@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 内容批量查询接口
  *
  * @author auto create
- * @since 1.0, 2023-11-15 20:21:17
+ * @since 1.0, 2024-01-31 11:18:07
  */
 public class AlipaySocialBaseContentlibStandardcontentBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8528196923794835647L;
+	private static final long serialVersionUID = 2722639231247224129L;
 
 	/**
 	 * 指示是否返回内容详情, 默认为false

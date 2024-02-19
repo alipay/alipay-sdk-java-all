@@ -11,11 +11,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.finance.fsupv.transfer.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-05 10:30:50
+ * @since 1.0, 2024-02-01 17:41:59
  */
 public class AnttechBlockchainFinanceFsupvTransferQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4594697811983487486L;
+	private static final long serialVersionUID = 3223258516892933315L;
+
+	/** 
+	 * 资金划拨受理后生产的流水
+	 */
+	@ApiField("accepted_no")
+	private String acceptedNo;
 
 	/** 
 	 * 资金管控任务编号
@@ -47,6 +53,13 @@ public class AnttechBlockchainFinanceFsupvTransferQueryResponse extends AlipayRe
 	 */
 	@ApiField("transfer_status")
 	private String transferStatus;
+
+	public void setAcceptedNo(String acceptedNo) {
+		this.acceptedNo = acceptedNo;
+	}
+	public String getAcceptedNo( ) {
+		return this.acceptedNo;
+	}
 
 	public void setFundSupvTaskId(String fundSupvTaskId) {
 		this.fundSupvTaskId = fundSupvTaskId;

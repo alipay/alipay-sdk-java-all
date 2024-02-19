@@ -9,17 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单扩展信息模型
  *
  * @author auto create
- * @since 1.0, 2024-01-22 23:06:15
+ * @since 1.0, 2024-01-26 18:20:15
  */
 public class MiniOrderExtInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1556269634829747955L;
+	private static final long serialVersionUID = 1836845969242222297L;
 
 	/**
 	 * 二方接入交易组件用于返佣计算的特殊参数，单位为元
 	 */
 	@ApiField("addition_rebate_base_price")
 	private String additionRebateBasePrice;
+
+	/**
+	 * 代扣协议签约场景值，商户可根据代扣产品常见场景值选择符合自身的行业场景，必须和合约中配置的一致。
+	 */
+	@ApiField("deduct_sign_scene")
+	private String deductSignScene;
 
 	/**
 	 * 预约上门取件的时间,格式为  yyyy-MM-dd HH:mm:ss
@@ -41,7 +47,7 @@ public class MiniOrderExtInfoDTO extends AlipayObject {
 	private String orderTradeType;
 
 	/**
-	 * 支付单交易号，用于信用下单不成功转普通支付。间联实物代扣场景该字段必填
+	 * 支付单交易号，用于信用下单不成功转普通支付。
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;
@@ -51,6 +57,13 @@ public class MiniOrderExtInfoDTO extends AlipayObject {
 	}
 	public void setAdditionRebateBasePrice(String additionRebateBasePrice) {
 		this.additionRebateBasePrice = additionRebateBasePrice;
+	}
+
+	public String getDeductSignScene() {
+		return this.deductSignScene;
+	}
+	public void setDeductSignScene(String deductSignScene) {
+		this.deductSignScene = deductSignScene;
 	}
 
 	public Date getDoorTime() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户分析数据查询接口
  *
  * @author auto create
- * @since 1.0, 2019-12-27 18:58:57
+ * @since 1.0, 2024-01-28 02:01:31
  */
 public class AlipayOpenPublicUserDataBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7791846896456916691L;
+	private static final long serialVersionUID = 1332769931911856696L;
 
 	/**
 	 * 数据开始日期，时间格式为 "yyyyMMdd" 。

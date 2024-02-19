@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fincore.compliance.sign.list.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-09-03 23:59:08
+ * @since 1.0, 2024-01-31 11:39:17
  */
 public class AlipayFincoreComplianceSignListApplyRequest implements AlipayRequest<AlipayFincoreComplianceSignListApplyResponse> {
 

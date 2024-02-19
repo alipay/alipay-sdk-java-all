@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商家芝麻GO数据回传接口
  *
  * @author auto create
- * @since 1.0, 2023-11-30 11:31:02
+ * @since 1.0, 2024-01-30 13:37:13
  */
 public class ZhimaMerchantZmgoCumulateSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8387217229395656342L;
+	private static final long serialVersionUID = 8274694144464871798L;
 
 	/**
 	 * 芝麻go协议号，唯一标识一个芝麻go协议。
