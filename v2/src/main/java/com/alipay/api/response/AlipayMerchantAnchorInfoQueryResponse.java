@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMerchantAnchorInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7488692221287148749L;
+	private static final long serialVersionUID = 6446151365731886971L;
 
 	/** 
 	 * 主播ID+唯一+天猫好房带货+根据uid获取

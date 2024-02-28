@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoFilePathQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3334913955346764266L;
+	private static final long serialVersionUID = 1217655459755654794L;
 
 	/**
 	 * 先计算文件md5值，在对该md5值进行base64编码

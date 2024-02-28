@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FriendVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4444637814413996453L;
+	private static final long serialVersionUID = 2318896656328114923L;
 
 	/**
 	 * 好友open_id

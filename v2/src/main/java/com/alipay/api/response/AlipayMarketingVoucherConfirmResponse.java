@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingVoucherConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4452995115843378472L;
+	private static final long serialVersionUID = 4117783676466747153L;
 
 	/** 
 	 * 用于决定在用户确认领券后是否重定向。可枚举：true表示需要重定向，false表示不需要重定向

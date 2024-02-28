@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ConsumerProfile extends AlipayObject {
 
-	private static final long serialVersionUID = 2227842594426179344L;
+	private static final long serialVersionUID = 8752169281238262615L;
 
 	/**
 	 * 消费者画像，包含各年龄段消费者人群占比， 性别占比、复购次数占比等

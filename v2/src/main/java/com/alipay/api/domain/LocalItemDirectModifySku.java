@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LocalItemDirectModifySku extends AlipayObject {
 
-	private static final long serialVersionUID = 4114282491293896362L;
+	private static final long serialVersionUID = 8151249591544577931L;
 
 	/**
 	 * 支持限制库存和不限库存的相互转换 当前字段已废弃(由新字段stock_limit_type代替)

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DeliveryCrowdRule extends AlipayObject {
 
-	private static final long serialVersionUID = 3143936256428541877L;
+	private static final long serialVersionUID = 1636919469776937225L;
 
 	/**
 	 * 指定人群ID

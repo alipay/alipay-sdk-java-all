@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AdvertItem extends AlipayObject {
 
-	private static final long serialVersionUID = 5159834311711527387L;
+	private static final long serialVersionUID = 6219544425434987195L;
 
 	/**
 	 * 广告图片url, 尺寸为996*240，最大不超过5M，支持格式:.jpg、.png ，请先调用<a href="https://docs.open.alipay.com/api_3/alipay.offline.material.image.upload"> 图片上传接口</a>获得图片url

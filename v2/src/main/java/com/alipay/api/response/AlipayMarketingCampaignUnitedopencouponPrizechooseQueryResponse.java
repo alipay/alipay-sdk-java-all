@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingCampaignUnitedopencouponPrizechooseQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2675814841142256796L;
+	private static final long serialVersionUID = 6657285722265525889L;
 
 	/** 
 	 * 是否绑定手机号。（只有活动规则上配置要求绑定手机号且当前用户未绑定手机号情况下该字段才会返回false，其余情况下不返回或者返回为空（null）

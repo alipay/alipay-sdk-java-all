@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsApplication extends AlipayObject {
 
-	private static final long serialVersionUID = 1473732324132511184L;
+	private static final long serialVersionUID = 4175414135666318839L;
 
 	/**
 	 * 投保参数 ,每个产品特有的投保参数,如航空险的航班信息;标准json格式

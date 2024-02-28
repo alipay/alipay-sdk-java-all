@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenAppLocalitemCalendarstockSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1169494141739849337L;
+	private static final long serialVersionUID = 8156743921249863579L;
 
 	/**
 	 * 日历库存列表，库存设置的总天数不得大于60天
