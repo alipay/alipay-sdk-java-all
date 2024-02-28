@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 完整收费信息
  *
  * @author auto create
- * @since 1.0, 2023-06-30 15:04:11
+ * @since 1.0, 2024-02-23 17:30:32
  */
 public class IntactChargeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7791499241459986352L;
+	private static final long serialVersionUID = 2195134671389663955L;
 
 	/**
 	 * 实际收费金额，单位元

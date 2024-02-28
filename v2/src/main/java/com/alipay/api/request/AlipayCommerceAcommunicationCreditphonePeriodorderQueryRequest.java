@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.acommunication.creditphone.periodorder.query request
  * 
  * @author auto create
- * @since 1.0, 2024-02-01 15:26:59
+ * @since 1.0, 2024-02-20 13:50:32
  */
 public class AlipayCommerceAcommunicationCreditphonePeriodorderQueryRequest implements AlipayRequest<AlipayCommerceAcommunicationCreditphonePeriodorderQueryResponse> {
 

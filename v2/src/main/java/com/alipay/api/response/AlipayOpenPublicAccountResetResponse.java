@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenPublicAccountResetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7624515494236821898L;
+	private static final long serialVersionUID = 3625761652662557657L;
 
 	/** 
 	 * 重置后的协议号，商户会员在支付宝服务窗账号中的唯一标识

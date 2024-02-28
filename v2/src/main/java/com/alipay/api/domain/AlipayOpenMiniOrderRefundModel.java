@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 交易组件订单退款接口
  *
  * @author auto create
- * @since 1.0, 2023-12-01 13:59:23
+ * @since 1.0, 2024-02-23 15:04:58
  */
 public class AlipayOpenMiniOrderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8325128745694551533L;
+	private static final long serialVersionUID = 4625646717931825929L;
 
 	/**
 	 * 部分商品退款信息

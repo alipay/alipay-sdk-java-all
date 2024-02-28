@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.morse.marketing.rta.consult request
  * 
  * @author auto create
- * @since 1.0, 2023-11-17 14:11:49
+ * @since 1.0, 2024-02-20 18:42:14
  */
 public class AnttechMorseMarketingRtaConsultRequest implements AlipayRequest<AnttechMorseMarketingRtaConsultResponse> {
 

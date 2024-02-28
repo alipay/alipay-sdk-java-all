@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * mpcpromo商品数据
  *
  * @author auto create
- * @since 1.0, 2023-11-17 11:17:55
+ * @since 1.0, 2024-02-28 14:02:06
  */
 public class MpcpromoGoodsList extends AlipayObject {
 
-	private static final long serialVersionUID = 2457811143983694262L;
+	private static final long serialVersionUID = 8379459364877678632L;
 
 	/**
 	 * 商品可用的城市列表
@@ -49,7 +49,7 @@ public class MpcpromoGoodsList extends AlipayObject {
 	private String cateCnt;
 
 	/**
-	 * 正整数
+	 * 商品累计评论次数 ；正整数
 	 */
 	@ApiField("comment_cnt")
 	private String commentCnt;
@@ -61,7 +61,7 @@ public class MpcpromoGoodsList extends AlipayObject {
 	private String content;
 
 	/**
-	 * 必填，非负数且保留两位小数，免费商品填写0.00
+	 * 商品现价；必填；非负数且保留两位小数，免费商品填写0.00
 	 */
 	@ApiField("current_price")
 	private String currentPrice;
@@ -148,7 +148,7 @@ public class MpcpromoGoodsList extends AlipayObject {
 	private Date pubTime;
 
 	/**
-	 * 满分5分
+	 * 商品评分；满分5分
 	 */
 	@ApiField("rating")
 	private String rating;
@@ -172,13 +172,13 @@ public class MpcpromoGoodsList extends AlipayObject {
 	private String saleNumber;
 
 	/**
-	 * 1：支持 2：不支持 3：满足条件支持
+	 * 商品是否支持自提 。1：支持 2：不支持 3：满足条件支持
 	 */
 	@ApiField("self_pickup")
 	private String selfPickup;
 
 	/**
-	 * 非负整数
+	 * 商品累计分享次数 ；非负整数
 	 */
 	@ApiField("share_cnt")
 	private String shareCnt;
@@ -233,7 +233,7 @@ public class MpcpromoGoodsList extends AlipayObject {
 	private String stockNum;
 
 	/**
-	 * 非负数，保留两位小数，值范围0.00-5.00分
+	 * 店铺评分；非负数，保留两位小数，值范围0.00-5.00分
 	 */
 	@ApiField("store_rating")
 	private String storeRating;

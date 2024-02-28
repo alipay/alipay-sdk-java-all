@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页查询企业汇总开票账单明细
  *
  * @author auto create
- * @since 1.0, 2024-01-18 10:09:08
+ * @since 1.0, 2024-02-21 14:33:50
  */
 public class AlipayEbppInvoiceEnterpriseSummaryinvoicebillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6126389448836456499L;
+	private static final long serialVersionUID = 4163188549227564956L;
 
 	/**
 	 * 汇总开票批次ID

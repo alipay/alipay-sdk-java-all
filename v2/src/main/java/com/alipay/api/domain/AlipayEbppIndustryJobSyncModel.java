@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 人才就业岗位同步
  *
  * @author auto create
- * @since 1.0, 2023-08-03 19:29:18
+ * @since 1.0, 2024-02-26 19:53:16
  */
 public class AlipayEbppIndustryJobSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4558816883976366288L;
+	private static final long serialVersionUID = 4591132864833427235L;
 
 	/**
 	 * 学历要求
@@ -85,6 +85,12 @@ public class AlipayEbppIndustryJobSyncModel extends AlipayObject {
 	 */
 	@ApiField("hire_status")
 	private String hireStatus;
+
+	/**
+	 * IoT专属岗位=1，非IoT专属岗位=0。该字段向IoT服务商定向开放，非IoT专属岗位可以无需传值，如果是IoT专属岗位，不会在支付宝就业小程序内展示
+	 */
+	@ApiField("iot_status")
+	private Long iotStatus;
 
 	/**
 	 * 岗位详情内容
@@ -254,6 +260,13 @@ URL链接处理可以参考：<a href="https://opendocs.alipay.com/support/01rb1
 	}
 	public void setHireStatus(String hireStatus) {
 		this.hireStatus = hireStatus;
+	}
+
+	public Long getIotStatus() {
+		return this.iotStatus;
+	}
+	public void setIotStatus(Long iotStatus) {
+		this.iotStatus = iotStatus;
 	}
 
 	public String getJobDetail() {

@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 履约状态变更接口
  *
  * @author auto create
- * @since 1.0, 2023-12-04 21:37:42
+ * @since 1.0, 2024-02-28 14:02:17
  */
 public class AlipayOpenMiniOrderDeliveryModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2636328511472562873L;
+	private static final long serialVersionUID = 1379682596213116143L;
 
 	/**
 	 * 酒店预订信息
@@ -44,17 +47,17 @@ public class AlipayOpenMiniOrderDeliveryModifyModel extends AlipayObject {
 	private String outOrderId;
 
 	/**
-	 * CONFIRMED 已确认 用于酒店预订成功
-CANCELLED 预约失败 用于酒店预订失败
-TO_BE_CHECK_IN 待入住 待入住状态
-CHECK_IN 已入住 已入住状态
-HAVE_STAY 已续住 已续住状态
-TO_CHECK_OUT 待退房
-CHECK_OUT 已退房
-FINISHED 已完成
+	 * 订单的履约状态
 	 */
 	@ApiField("status")
 	private String status;
+
+	/**
+	 * 需要修改的票务信息列表
+	 */
+	@ApiListField("ticket_infos")
+	@ApiField("ticket_info_modify_d_t_o")
+	private List<TicketInfoModifyDTO> ticketInfos;
 
 	/**
 	 * 买家支付宝用户id，小程序场景下获取用户ID请参考：<a href="https://opendocs.alipay.com/mini/05dxgc?pathHash=1a3ecb13">用户授权</a>; 其它场景下获取用户ID请参考：<a href="https://opendocs.alipay.com/open/284/web">网页授权获取用户信息</a>。
@@ -102,6 +105,13 @@ FINISHED 已完成
 	}
 	public void setStatus(String status) {
 		this.status = status;
+	}
+
+	public List<TicketInfoModifyDTO> getTicketInfos() {
+		return this.ticketInfos;
+	}
+	public void setTicketInfos(List<TicketInfoModifyDTO> ticketInfos) {
+		this.ticketInfos = ticketInfos;
 	}
 
 	public String getUserId() {

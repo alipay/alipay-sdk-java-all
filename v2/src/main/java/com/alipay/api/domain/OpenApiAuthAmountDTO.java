@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenApiAuthAmountDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1553466663481225564L;
+	private static final long serialVersionUID = 6637691734867525839L;
 
 	/**
 	 * 授权金额的数值，单位为：分.

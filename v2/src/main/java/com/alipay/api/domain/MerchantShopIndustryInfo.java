@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 门店行业信息
  *
  * @author auto create
- * @since 1.0, 2023-11-09 22:17:32
+ * @since 1.0, 2024-02-26 15:58:53
  */
 public class MerchantShopIndustryInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6572945318992875791L;
+	private static final long serialVersionUID = 1163375385755465492L;
 
 	/**
 	 * 行业信息CODE

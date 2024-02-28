@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医生在线问诊渠道（问诊方式，价格，服务链接）
  *
  * @author auto create
- * @since 1.0, 2022-12-27 11:50:49
+ * @since 1.0, 2024-02-20 15:24:55
  */
 public class InquiryChannel extends AlipayObject {
 
-	private static final long serialVersionUID = 3371918393956427425L;
+	private static final long serialVersionUID = 4742434322312589583L;
 
 	/**
 	 * 问诊方式：IMAGE_INQUIRY(图文问诊)/PHONE_INQUIRY(电话问诊)/VEDIO_INQUIRY(视频问诊)

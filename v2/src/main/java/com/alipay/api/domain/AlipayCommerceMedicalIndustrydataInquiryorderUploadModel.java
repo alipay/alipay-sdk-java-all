@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 问诊订单回流接口
  *
  * @author auto create
- * @since 1.0, 2023-11-14 20:30:17
+ * @since 1.0, 2024-02-20 13:58:03
  */
 public class AlipayCommerceMedicalIndustrydataInquiryorderUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4453743647842454459L;
+	private static final long serialVersionUID = 3254632331194917548L;
 
 	/**
 	 * 支付宝开放id

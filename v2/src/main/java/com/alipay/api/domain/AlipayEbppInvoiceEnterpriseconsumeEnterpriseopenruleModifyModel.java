@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开票规则修改
  *
  * @author auto create
- * @since 1.0, 2023-08-29 10:45:04
+ * @since 1.0, 2024-02-21 14:32:49
  */
 public class AlipayEbppInvoiceEnterpriseconsumeEnterpriseopenruleModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6297182348384831186L;
+	private static final long serialVersionUID = 4476691523255243263L;
 
 	/**
 	 * 企业共同账户ID
@@ -48,6 +48,24 @@ public class AlipayEbppInvoiceEnterpriseconsumeEnterpriseopenruleModifyModel ext
 	 */
 	@ApiField("invoice_title_id")
 	private String invoiceTitleId;
+
+	/**
+	 * 收件人地址
+	 */
+	@ApiField("receive_address")
+	private String receiveAddress;
+
+	/**
+	 * 收件人姓名
+	 */
+	@ApiField("receive_name")
+	private String receiveName;
+
+	/**
+	 * 收件人手机号
+	 */
+	@ApiField("receive_phone")
+	private String receivePhone;
 
 	/**
 	 * 销方类型
@@ -95,6 +113,27 @@ public class AlipayEbppInvoiceEnterpriseconsumeEnterpriseopenruleModifyModel ext
 	}
 	public void setInvoiceTitleId(String invoiceTitleId) {
 		this.invoiceTitleId = invoiceTitleId;
+	}
+
+	public String getReceiveAddress() {
+		return this.receiveAddress;
+	}
+	public void setReceiveAddress(String receiveAddress) {
+		this.receiveAddress = receiveAddress;
+	}
+
+	public String getReceiveName() {
+		return this.receiveName;
+	}
+	public void setReceiveName(String receiveName) {
+		this.receiveName = receiveName;
+	}
+
+	public String getReceivePhone() {
+		return this.receivePhone;
+	}
+	public void setReceivePhone(String receivePhone) {
+		this.receivePhone = receivePhone;
 	}
 
 	public String getSellerType() {

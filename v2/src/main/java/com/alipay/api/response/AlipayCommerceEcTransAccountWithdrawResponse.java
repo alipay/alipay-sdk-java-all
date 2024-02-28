@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.trans.account.withdraw response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-28 10:01:43
+ * @since 1.0, 2024-02-23 10:42:02
  */
 public class AlipayCommerceEcTransAccountWithdrawResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2754658832455391444L;
+	private static final long serialVersionUID = 1595596949313391732L;
 
 	/** 
 	 * 该笔提现在支付宝系统内部的单据ID

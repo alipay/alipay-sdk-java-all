@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸核身服务初始化
  *
  * @author auto create
- * @since 1.0, 2023-09-08 12:58:23
+ * @since 1.0, 2024-02-27 20:15:15
  */
 public class DatadigitalFincloudGeneralsaasFaceCertifyInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6632575287287982329L;
+	private static final long serialVersionUID = 7137727748424175359L;
 
 	/**
 	 * H5人脸核身场景码。入参支持的场景码。

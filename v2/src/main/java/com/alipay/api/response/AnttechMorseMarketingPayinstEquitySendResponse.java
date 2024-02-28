@@ -1,6 +1,9 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.PayInstEquitySendResult;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.morse.marketing.payinst.equity.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-30 21:26:46
+ * @since 1.0, 2024-02-23 17:21:57
  */
 public class AnttechMorseMarketingPayinstEquitySendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6717188514815171413L;
+	private static final long serialVersionUID = 4736778191195844866L;
 
 	/** 
 	 * 蚂蚁侧返回的唯一标识
@@ -21,13 +24,20 @@ public class AnttechMorseMarketingPayinstEquitySendResponse extends AlipayRespon
 	private String bizNo;
 
 	/** 
+	 * 权益发放结果详情
+	 */
+	@ApiListField("result_details")
+	@ApiField("pay_inst_equity_send_result")
+	private List<PayInstEquitySendResult> resultDetails;
+
+	/** 
 	 * 发放成功后生成的发放凭证号
 	 */
 	@ApiField("send_order_id")
 	private String sendOrderId;
 
 	/** 
-	 * 是否发放成功
+	 * 全部成功返回true，有任何失败返回false
 	 */
 	@ApiField("send_success")
 	private Boolean sendSuccess;
@@ -37,6 +47,13 @@ public class AnttechMorseMarketingPayinstEquitySendResponse extends AlipayRespon
 	}
 	public String getBizNo( ) {
 		return this.bizNo;
+	}
+
+	public void setResultDetails(List<PayInstEquitySendResult> resultDetails) {
+		this.resultDetails = resultDetails;
+	}
+	public List<PayInstEquitySendResult> getResultDetails( ) {
+		return this.resultDetails;
 	}
 
 	public void setSendOrderId(String sendOrderId) {

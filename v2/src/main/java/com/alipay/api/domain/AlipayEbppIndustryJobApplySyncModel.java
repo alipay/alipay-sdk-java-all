@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人才就业岗位应聘信息同步
  *
  * @author auto create
- * @since 1.0, 2024-01-24 15:07:17
+ * @since 1.0, 2024-02-26 19:53:18
  */
 public class AlipayEbppIndustryJobApplySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3315925228433385764L;
+	private static final long serialVersionUID = 1571625948998543159L;
 
 	/**
 	 * 应聘信息最新更新时间
@@ -46,6 +46,12 @@ public class AlipayEbppIndustryJobApplySyncModel extends AlipayObject {
 	 */
 	@ApiField("apply_time")
 	private Date applyTime;
+
+	/**
+	 * IoT设备SN号，该字段向IoT服务商定向开放，非IoT服务商无需传值
+	 */
+	@ApiField("iot_sn")
+	private String iotSn;
 
 	/**
 	 * 服务商侧该应聘信息的唯一标识，用于做幂等判断。
@@ -85,6 +91,13 @@ public class AlipayEbppIndustryJobApplySyncModel extends AlipayObject {
 	}
 	public void setApplyTime(Date applyTime) {
 		this.applyTime = applyTime;
+	}
+
+	public String getIotSn() {
+		return this.iotSn;
+	}
+	public void setIotSn(String iotSn) {
+		this.iotSn = iotSn;
 	}
 
 	public String getOutApplyId() {

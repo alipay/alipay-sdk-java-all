@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.guardrails.answer.detect response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-08 15:21:55
+ * @since 1.0, 2024-02-27 17:46:58
  */
 public class AlipaySecurityRiskGuardrailsAnswerDetectResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7863134718991925296L;
+	private static final long serialVersionUID = 7697821257253624641L;
 
 	/** 
 	 * 安全动作

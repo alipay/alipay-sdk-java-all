@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * tsetaa
  *
  * @author auto create
- * @since 1.0, 2023-12-22 20:02:57
+ * @since 1.0, 2024-02-23 10:24:40
  */
 public class AlipaySecurityOpenbizmockTestQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6526581513644631797L;
+	private static final long serialVersionUID = 3466369695149276675L;
 
 	/**
 	 * test
@@ -23,6 +23,18 @@ public class AlipaySecurityOpenbizmockTestQueryModel extends AlipayObject {
 	@ApiListField("complex")
 	@ApiField("public_complex")
 	private List<PublicComplex> complex;
+
+	/**
+	 * test
+	 */
+	@ApiField("longitude")
+	private String longitude;
+
+	/**
+	 * TEST
+	 */
+	@ApiField("mobile_number")
+	private String mobileNumber;
 
 	/**
 	 * test
@@ -70,6 +82,20 @@ public class AlipaySecurityOpenbizmockTestQueryModel extends AlipayObject {
 	}
 	public void setComplex(List<PublicComplex> complex) {
 		this.complex = complex;
+	}
+
+	public String getLongitude() {
+		return this.longitude;
+	}
+	public void setLongitude(String longitude) {
+		this.longitude = longitude;
+	}
+
+	public String getMobileNumber() {
+		return this.mobileNumber;
+	}
+	public void setMobileNumber(String mobileNumber) {
+		this.mobileNumber = mobileNumber;
 	}
 
 	public List<Boolean> getTestBoolean() {

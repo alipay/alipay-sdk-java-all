@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.morse.marketing.rta.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-17 14:11:49
+ * @since 1.0, 2024-02-20 18:42:14
  */
 public class AnttechMorseMarketingRtaConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6374337583119836968L;
+	private static final long serialVersionUID = 7874636869165169964L;
 
 	/** 
 	 * 查询准入标识本次查询准入结果，true|false，true代表可以准入，false代表不准入或不在服务人群

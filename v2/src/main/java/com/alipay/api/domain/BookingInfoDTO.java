@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 酒店预订信息
  *
  * @author auto create
- * @since 1.0, 2023-11-29 14:03:12
+ * @since 1.0, 2024-02-28 14:02:17
  */
 public class BookingInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6133946699265684352L;
+	private static final long serialVersionUID = 4849434139647279874L;
 
 	/**
 	 * 预约入住时间

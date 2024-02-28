@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 摩卡营销活动非匿名人群查询
  *
  * @author auto create
- * @since 1.0, 2023-11-17 13:47:52
+ * @since 1.0, 2024-02-20 18:42:14
  */
 public class AnttechMorseMarketingRtaConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8654423461427862784L;
+	private static final long serialVersionUID = 7828133124661425583L;
 
 	/**
 	 * 扩展字段，保留扩展配置字段

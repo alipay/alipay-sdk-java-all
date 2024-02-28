@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 天鉴大模型防御-回答检测服务
  *
  * @author auto create
- * @since 1.0, 2024-01-08 15:16:50
+ * @since 1.0, 2024-02-27 17:43:55
  */
 public class AlipaySecurityRiskGuardrailsAnswerDetectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7715163149596396368L;
+	private static final long serialVersionUID = 6293344153748766577L;
 
 	/**
 	 * 当前回答内容，最大长度10000个字符。回答时必传
@@ -26,7 +26,7 @@ public class AlipaySecurityRiskGuardrailsAnswerDetectModel extends AlipayObject 
 	private String answerFlowId;
 
 	/**
-	 * 目前只支持纯文本：PLAINTEXT
+	 * 回答内容格式
 	 */
 	@ApiField("answer_format")
 	private String answerFormat;
@@ -73,7 +73,7 @@ triggerSource:
 	private String question;
 
 	/**
-	 * 当前只支持纯文本：PLAINTEXT
+	 * 提问内容格式
 	 */
 	@ApiField("question_format")
 	private String questionFormat;

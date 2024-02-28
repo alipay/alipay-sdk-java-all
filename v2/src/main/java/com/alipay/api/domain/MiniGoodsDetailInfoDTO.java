@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品列表信息模型
  *
  * @author auto create
- * @since 1.0, 2024-01-22 23:06:15
+ * @since 1.0, 2024-02-26 17:12:48
  */
 public class MiniGoodsDetailInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4429478831883253827L;
+	private static final long serialVersionUID = 8493525671454292123L;
 
 	/**
 	 * 商品描述信息
@@ -114,10 +114,10 @@ public class MiniGoodsDetailInfoDTO extends AlipayObject {
 有优惠信息时需要传入，优惠方式sale_real_price与item_discount二选一
 sale_real_price使用场景：商品有单价优惠，传入商品实际成交单价
 item_discount使用场景：同时购买多件商品时存在优惠，传入优惠总额
-优惠计算参考：https://opendocs.alipay.com/mini/0ag2e1?pathHash=20b9a409 中资金平衡校验
+优惠计算参考：<a href="https://opendocs.alipay.com/mini/0ag2e1?pathHash=20b9a409">资金平衡校验</a>
 sale_real_price使用场景：商品有单价优惠，传入商品实际成交单价
 item_discount使用场景：同时购买多件商品时存在优惠，传入优惠总额
-优惠计算参考：https://opendocs.alipay.com/mini/0ag2e1?pathHash=20b9a409 中资金平衡校验
+优惠计算参考：<a href="https://opendocs.alipay.com/mini/0ag2e1?pathHash=20b9a409">资金平衡校验</a>
 	 */
 	@ApiField("sale_real_price")
 	private String saleRealPrice;
@@ -127,6 +127,12 @@ item_discount使用场景：同时购买多件商品时存在优惠，传入优�
 	 */
 	@ApiField("show_url")
 	private String showUrl;
+
+	/**
+	 * 演出票务信息
+	 */
+	@ApiField("ticket_info")
+	private TicketInfoDTO ticketInfo;
 
 	public String getBody() {
 		return this.body;
@@ -245,6 +251,13 @@ item_discount使用场景：同时购买多件商品时存在优惠，传入优�
 	}
 	public void setShowUrl(String showUrl) {
 		this.showUrl = showUrl;
+	}
+
+	public TicketInfoDTO getTicketInfo() {
+		return this.ticketInfo;
+	}
+	public void setTicketInfo(TicketInfoDTO ticketInfo) {
+		this.ticketInfo = ticketInfo;
 	}
 
 }

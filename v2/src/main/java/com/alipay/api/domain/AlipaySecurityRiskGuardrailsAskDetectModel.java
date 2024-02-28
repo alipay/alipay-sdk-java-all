@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 大模型围栏(风险防控)提问检测接口
  *
  * @author auto create
- * @since 1.0, 2024-01-08 15:16:50
+ * @since 1.0, 2024-02-27 17:44:11
  */
 public class AlipaySecurityRiskGuardrailsAskDetectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3284471485423985451L;
+	private static final long serialVersionUID = 4491213285491231527L;
 
 	/**
 	 * 扩展属性Map，key限定为：aigcType、serviceScene、triggerSource、bizOwner，对应的value取值为：
@@ -51,7 +51,7 @@ triggerSource:
 	private String question;
 
 	/**
-	 * 当前只支持纯文本：PLAINTEXT
+	 * 提问内容类型
 	 */
 	@ApiField("question_format")
 	private String questionFormat;

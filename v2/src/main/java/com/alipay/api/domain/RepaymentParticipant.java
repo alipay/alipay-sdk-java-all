@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 零工还款转账参与方
  *
  * @author auto create
- * @since 1.0, 2023-05-24 16:57:11
+ * @since 1.0, 2024-02-19 23:00:15
  */
 public class RepaymentParticipant extends AlipayObject {
 
-	private static final long serialVersionUID = 4745578968749551131L;
+	private static final long serialVersionUID = 7384588242978473482L;
 
 	/**
 	 * 参与方关联的扩展信息

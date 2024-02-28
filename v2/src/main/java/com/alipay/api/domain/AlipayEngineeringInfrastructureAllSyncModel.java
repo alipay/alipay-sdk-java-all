@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 同步原声处理操作
  *
  * @author auto create
- * @since 1.0, 2024-01-25 17:20:50
+ * @since 1.0, 2024-02-22 13:47:29
  */
 public class AlipayEngineeringInfrastructureAllSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6589587864175453932L;
+	private static final long serialVersionUID = 6361548162766822326L;
 
 	/**
 	 * 处理来源平台 用于展示

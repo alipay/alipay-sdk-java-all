@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻GO模板开通配置
  *
  * @author auto create
- * @since 1.0, 2023-11-27 15:27:23
+ * @since 1.0, 2024-02-21 16:02:49
  */
 public class ZMGOOpenConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 4611278252427133188L;
+	private static final long serialVersionUID = 5575336477751126599L;
 
 	/**
 	 * 开通页按钮文案描述;传入内容后开通页点击开通按钮展示文案会使用该字段传入内容
@@ -50,7 +50,7 @@ public class ZMGOOpenConfig extends AlipayObject {
 	private String freezeAmount;
 
 	/**
-	 * 用户签约间隔时间
+	 * 用户签约间隔时间，单位天
 	 */
 	@ApiField("min_sign_interval")
 	private String minSignInterval;
@@ -87,9 +87,10 @@ public class ZMGOOpenConfig extends AlipayObject {
 	private String signSuccessTaskButtonDesc;
 
 	/**
-	 * 是否支持延期特权
+	 * 是否支持延期特权，开启后用户可以在任务到期前进行延期。 当前字段已废弃(该功能已停用，不建议开启使用。)
 	 */
 	@ApiField("support_expire_deferral")
+	@Deprecated
 	private Boolean supportExpireDeferral;
 
 	public String getApplyButtonDesc() {

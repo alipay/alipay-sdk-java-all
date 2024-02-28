@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电商商品详情模型
  *
  * @author auto create
- * @since 1.0, 2024-01-02 13:58:09
+ * @since 1.0, 2024-02-22 17:05:49
  */
 public class EcomItemExtendDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8547418694159868936L;
+	private static final long serialVersionUID = 7381284943855621421L;
 
 	/**
 	 * cardType + 唯一 + 储值卡类目投保场景 + 通过上下游约定获取
@@ -154,6 +154,24 @@ public class EcomItemExtendDetailDTO extends AlipayObject {
 	 */
 	@ApiField("lockable_device")
 	private Boolean lockableDevice;
+
+	/**
+	 * 宠物档案id
+	 */
+	@ApiField("pet_id")
+	private String petId;
+
+	/**
+	 * 宠物档案类型
+	 */
+	@ApiField("pet_type")
+	private String petType;
+
+	/**
+	 * 宠物档案版本号
+	 */
+	@ApiField("pet_version")
+	private String petVersion;
 
 	/**
 	 * 插座编号
@@ -320,6 +338,27 @@ public class EcomItemExtendDetailDTO extends AlipayObject {
 	}
 	public void setLockableDevice(Boolean lockableDevice) {
 		this.lockableDevice = lockableDevice;
+	}
+
+	public String getPetId() {
+		return this.petId;
+	}
+	public void setPetId(String petId) {
+		this.petId = petId;
+	}
+
+	public String getPetType() {
+		return this.petType;
+	}
+	public void setPetType(String petType) {
+		this.petType = petType;
+	}
+
+	public String getPetVersion() {
+		return this.petVersion;
+	}
+	public void setPetVersion(String petVersion) {
+		this.petVersion = petVersion;
 	}
 
 	public String getPlugNo() {

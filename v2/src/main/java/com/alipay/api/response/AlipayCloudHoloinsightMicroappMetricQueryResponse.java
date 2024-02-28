@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.holoinsight.microapp.metric.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-02-07 14:11:58
+ * @since 1.0, 2024-02-21 15:16:38
  */
 public class AlipayCloudHoloinsightMicroappMetricQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7175144266333729214L;
+	private static final long serialVersionUID = 1688216973118132757L;
 
 	/** 
 	 * 时序数据

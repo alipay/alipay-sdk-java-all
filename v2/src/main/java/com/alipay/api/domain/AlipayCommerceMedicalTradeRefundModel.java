@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易自费退款接口
  *
  * @author auto create
- * @since 1.0, 2024-02-01 19:41:51
+ * @since 1.0, 2024-02-21 14:47:31
  */
 public class AlipayCommerceMedicalTradeRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5558175766329787455L;
+	private static final long serialVersionUID = 8835471814782699567L;
 
 	/**
 	 * 和trade_no不能同时为空，如果都传以trade_no优先

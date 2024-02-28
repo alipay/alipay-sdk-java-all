@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询关于饿了么舆情
  *
  * @author auto create
- * @since 1.0, 2024-01-25 16:34:43
+ * @since 1.0, 2024-02-23 16:36:59
  */
 public class AlipayEngineeringInfrastructureAllBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5686665263842889272L;
+	private static final long serialVersionUID = 1871457713129656975L;
 
 	/**
 	 * 应用的英文名

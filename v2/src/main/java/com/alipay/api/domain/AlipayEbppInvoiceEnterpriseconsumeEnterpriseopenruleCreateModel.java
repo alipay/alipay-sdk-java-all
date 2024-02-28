@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开票规则新增接口
  *
  * @author auto create
- * @since 1.0, 2023-08-15 17:29:20
+ * @since 1.0, 2024-02-21 14:34:14
  */
 public class AlipayEbppInvoiceEnterpriseconsumeEnterpriseopenruleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4763111313459912458L;
+	private static final long serialVersionUID = 8138124232224639941L;
 
 	/**
 	 * 共同账户ID
@@ -54,6 +54,24 @@ public class AlipayEbppInvoiceEnterpriseconsumeEnterpriseopenruleCreateModel ext
 	 */
 	@ApiField("open_mode")
 	private String openMode;
+
+	/**
+	 * 收件人地址
+	 */
+	@ApiField("receive_address")
+	private String receiveAddress;
+
+	/**
+	 * 收件人姓名
+	 */
+	@ApiField("receive_name")
+	private String receiveName;
+
+	/**
+	 * 收件人手机号
+	 */
+	@ApiField("receive_phone")
+	private String receivePhone;
 
 	/**
 	 * 销方类型
@@ -114,6 +132,27 @@ public class AlipayEbppInvoiceEnterpriseconsumeEnterpriseopenruleCreateModel ext
 	}
 	public void setOpenMode(String openMode) {
 		this.openMode = openMode;
+	}
+
+	public String getReceiveAddress() {
+		return this.receiveAddress;
+	}
+	public void setReceiveAddress(String receiveAddress) {
+		this.receiveAddress = receiveAddress;
+	}
+
+	public String getReceiveName() {
+		return this.receiveName;
+	}
+	public void setReceiveName(String receiveName) {
+		this.receiveName = receiveName;
+	}
+
+	public String getReceivePhone() {
+		return this.receivePhone;
+	}
+	public void setReceivePhone(String receivePhone) {
+		this.receivePhone = receivePhone;
 	}
 
 	public String getSellerType() {

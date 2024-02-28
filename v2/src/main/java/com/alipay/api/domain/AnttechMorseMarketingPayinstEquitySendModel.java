@@ -7,17 +7,24 @@ import com.alipay.api.internal.mapping.ApiField;
  * 摩斯营销活动权益发放
  *
  * @author auto create
- * @since 1.0, 2023-10-30 21:21:40
+ * @since 1.0, 2024-02-23 17:18:51
  */
 public class AnttechMorseMarketingPayinstEquitySendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2177846785366221227L;
+	private static final long serialVersionUID = 1649625848125423368L;
 
 	/**
-	 * 命中的活动id
+	 * 命中的活动ID。废弃，用campaign_ids代替 当前字段已废弃(使用camapign_ids代替)
 	 */
 	@ApiField("campaign_id")
+	@Deprecated
 	private String campaignId;
+
+	/**
+	 * 发放权益活动ID列表，多个ID用英文逗号隔开。替换campaign_id，若campaign_id和campaign_ids同时存在，campaign_ids优先
+	 */
+	@ApiField("campaign_ids")
+	private String campaignIds;
 
 	/**
 	 * 权益类型，微信立减金，支付宝红包
@@ -38,7 +45,7 @@ public class AnttechMorseMarketingPayinstEquitySendModel extends AlipayObject {
 	private String outRequestId;
 
 	/**
-	 * 资源位编号，接口请求标识商户资源位信息，由摩斯侧分配
+	 * 资源位ID，接口请求标识商户资源位信息，由摩斯侧分配
 	 */
 	@ApiField("resource_id")
 	private String resourceId;
@@ -54,6 +61,13 @@ public class AnttechMorseMarketingPayinstEquitySendModel extends AlipayObject {
 	}
 	public void setCampaignId(String campaignId) {
 		this.campaignId = campaignId;
+	}
+
+	public String getCampaignIds() {
+		return this.campaignIds;
+	}
+	public void setCampaignIds(String campaignIds) {
+		this.campaignIds = campaignIds;
 	}
 
 	public String getEquityType() {

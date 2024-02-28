@@ -21,11 +21,18 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-12 16:06:44
+ * @since 1.0, 2024-02-27 14:46:59
  */
 public class AlipayTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7421222221332219476L;
+	private static final long serialVersionUID = 3127169192929496765L;
+
+	/** 
+	 * 交易附加状态：
+SELLER_NOT_RECEIVED（买家已付款，卖家未收款）；
+	 */
+	@ApiField("additional_status")
+	private String additionalStatus;
 
 	/** 
 	 * 支付宝店铺编号
@@ -397,6 +404,13 @@ json格式。
 	@ApiListField("voucher_detail_list")
 	@ApiField("voucher_detail")
 	private List<VoucherDetail> voucherDetailList;
+
+	public void setAdditionalStatus(String additionalStatus) {
+		this.additionalStatus = additionalStatus;
+	}
+	public String getAdditionalStatus( ) {
+		return this.additionalStatus;
+	}
 
 	public void setAlipayStoreId(String alipayStoreId) {
 		this.alipayStoreId = alipayStoreId;

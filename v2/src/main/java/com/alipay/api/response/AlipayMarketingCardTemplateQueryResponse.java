@@ -12,6 +12,7 @@ import com.alipay.api.domain.TemplateOpenCardConfDTO;
 import com.alipay.api.domain.PaidOuterCardTemplateConfDTO;
 import com.alipay.api.domain.PubChannelDTO;
 import com.alipay.api.domain.TemplateBenefitInfoDTO;
+import com.alipay.api.domain.TemplateFormConfig;
 import com.alipay.api.domain.TemplateStyleInfoDTO;
 
 import com.alipay.api.AlipayResponse;
@@ -20,11 +21,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.card.template.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-25 20:37:06
+ * @since 1.0, 2024-02-22 11:11:57
  */
 public class AlipayMarketingCardTemplateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1829493784729889588L;
+	private static final long serialVersionUID = 5634923333649743124L;
+
+	/** 
+	 * 接入版本，接入的是基础版本一定会有值
+	 */
+	@ApiField("access_version")
+	private String accessVersion;
 
 	/** 
 	 * 业务卡号前缀，由商户指定
@@ -123,7 +130,7 @@ OUT_MEMBER_CARD：外部权益卡
 	private List<String> shopIds;
 
 	/** 
-	 * spi应用id，若使用openspi模式开卡，该字段为创建模版时，设置的实现spi.alipay.user.opencard.get接口的app_id
+	 * spi应用id，设置的实现spi.alipay.user.opencard.get接口的app_id
 	 */
 	@ApiField("spi_app_id")
 	private String spiAppId;
@@ -136,10 +143,23 @@ OUT_MEMBER_CARD：外部权益卡
 	private List<TemplateBenefitInfoDTO> templateBenefitInfo;
 
 	/** 
+	 * 入会表单配置，包括入会表单的字段，入会弹层承接小程序appId等
+	 */
+	@ApiField("template_form_config")
+	private TemplateFormConfig templateFormConfig;
+
+	/** 
 	 * 模板样式信息(钱包展现效果)
 	 */
 	@ApiField("template_style_info")
 	private TemplateStyleInfoDTO templateStyleInfo;
+
+	public void setAccessVersion(String accessVersion) {
+		this.accessVersion = accessVersion;
+	}
+	public String getAccessVersion( ) {
+		return this.accessVersion;
+	}
 
 	public void setBizNoPrefix(String bizNoPrefix) {
 		this.bizNoPrefix = bizNoPrefix;
@@ -251,6 +271,13 @@ OUT_MEMBER_CARD：外部权益卡
 	}
 	public List<TemplateBenefitInfoDTO> getTemplateBenefitInfo( ) {
 		return this.templateBenefitInfo;
+	}
+
+	public void setTemplateFormConfig(TemplateFormConfig templateFormConfig) {
+		this.templateFormConfig = templateFormConfig;
+	}
+	public TemplateFormConfig getTemplateFormConfig( ) {
+		return this.templateFormConfig;
 	}
 
 	public void setTemplateStyleInfo(TemplateStyleInfoDTO templateStyleInfo) {

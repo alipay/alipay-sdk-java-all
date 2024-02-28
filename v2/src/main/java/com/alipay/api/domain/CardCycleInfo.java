@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 卡周期信息
  *
  * @author auto create
- * @since 1.0, 2023-12-01 13:53:37
+ * @since 1.0, 2024-02-27 17:15:50
  */
 public class CardCycleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6177892971636793584L;
+	private static final long serialVersionUID = 3363978417473953715L;
+
+	/**
+	 * 用户可以选择的周期付首次扣款日的开始时间
+	 */
+	@ApiField("cycle_charge_start_time")
+	private String cycleChargeStartTime;
 
 	/**
 	 * 周期计费类型
@@ -36,6 +42,13 @@ public class CardCycleInfo extends AlipayObject {
 	 */
 	@ApiField("cycle_value")
 	private Long cycleValue;
+
+	public String getCycleChargeStartTime() {
+		return this.cycleChargeStartTime;
+	}
+	public void setCycleChargeStartTime(String cycleChargeStartTime) {
+		this.cycleChargeStartTime = cycleChargeStartTime;
+	}
 
 	public String getCycleChargeType() {
 		return this.cycleChargeType;

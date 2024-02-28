@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ContractSignatory extends AlipayObject {
 
-	private static final long serialVersionUID = 1375369897335675192L;
+	private static final long serialVersionUID = 8595664943577486932L;
 
 	/**
 	 * 签署人证件号

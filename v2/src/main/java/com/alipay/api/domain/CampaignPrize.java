@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 活动奖品对象，包含活动渠道、优惠金额、优惠门槛、活动文案等等信息
  *
  * @author auto create
- * @since 1.0, 2023-11-17 13:47:52
+ * @since 1.0, 2024-02-23 11:03:40
  */
 public class CampaignPrize extends AlipayObject {
 
-	private static final long serialVersionUID = 4495743354939945851L;
+	private static final long serialVersionUID = 8452275874547432296L;
+
+	/**
+	 * 用于标识活动可以享受的实际优惠的金额
+	 */
+	@ApiField("actual_amount")
+	private String actualAmount;
 
 	/**
 	 * 优惠渠道描述优惠来源信息
@@ -66,6 +72,13 @@ public class CampaignPrize extends AlipayObject {
 	 */
 	@ApiField("threshold")
 	private String threshold;
+
+	public String getActualAmount() {
+		return this.actualAmount;
+	}
+	public void setActualAmount(String actualAmount) {
+		this.actualAmount = actualAmount;
+	}
 
 	public String getCampaignChannel() {
 		return this.campaignChannel;

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.invoice.enterpriseconsume.enterpriseopenrule.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-09-11 18:46:43
+ * @since 1.0, 2024-02-21 17:37:03
  */
 public class AlipayEbppInvoiceEnterpriseconsumeEnterpriseopenruleModifyRequest implements AlipayRequest<AlipayEbppInvoiceEnterpriseconsumeEnterpriseopenruleModifyResponse> {
 

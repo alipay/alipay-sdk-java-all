@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 在线问诊医生基础信息
  *
  * @author auto create
- * @since 1.0, 2022-12-27 11:50:56
+ * @since 1.0, 2024-02-20 15:24:42
  */
 public class InqueryDoctorData extends AlipayObject {
 
-	private static final long serialVersionUID = 6568793199799956546L;
+	private static final long serialVersionUID = 6257927455442116137L;
 
 	/**
 	 * 医生头像

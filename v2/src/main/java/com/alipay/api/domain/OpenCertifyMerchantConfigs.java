@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸认证所需的商户配置信息
  *
  * @author auto create
- * @since 1.0, 2023-09-08 12:58:22
+ * @since 1.0, 2024-02-27 09:59:38
  */
 public class OpenCertifyMerchantConfigs extends AlipayObject {
 
-	private static final long serialVersionUID = 1131787265867227333L;
+	private static final long serialVersionUID = 3241321437124173283L;
 
 	/**
 	 * 不传默认为reserve

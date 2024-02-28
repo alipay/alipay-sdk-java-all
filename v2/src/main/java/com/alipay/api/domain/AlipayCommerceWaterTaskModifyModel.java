@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 更新任务
  *
  * @author auto create
- * @since 1.0, 2023-08-23 12:46:31
+ * @since 1.0, 2024-02-27 09:52:18
  */
 public class AlipayCommerceWaterTaskModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1654929874916315126L;
+	private static final long serialVersionUID = 5319699677179888923L;
 
 	/**
 	 * 奖品信息

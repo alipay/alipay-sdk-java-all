@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户指定优先渠道扣款参数
  *
  * @author auto create
- * @since 1.0, 2023-09-04 14:01:15
+ * @since 1.0, 2024-02-20 16:14:47
  */
 public class OpenApiSpecifiedChannelParamsPojo extends AlipayObject {
 
-	private static final long serialVersionUID = 6512895917967846388L;
+	private static final long serialVersionUID = 7173647653318636456L;
 
 	/**
-	 * 资产类型编码
+	 * 资产类型编码，具体传参值请联系技术进行分配。
 	 */
 	@ApiField("asset_type_code")
 	private String assetTypeCode;

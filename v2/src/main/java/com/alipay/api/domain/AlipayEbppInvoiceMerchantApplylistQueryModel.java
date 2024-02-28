@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询开票申请列表
  *
  * @author auto create
- * @since 1.0, 2024-01-18 10:08:50
+ * @since 1.0, 2024-02-21 14:49:15
  */
 public class AlipayEbppInvoiceMerchantApplylistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6645521219191366852L;
+	private static final long serialVersionUID = 2393661779554676577L;
 
 	/**
 	 * 申请状态列表

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询蚂蚁法务中台电子用印结果信息
  *
  * @author auto create
- * @since 1.0, 2021-11-18 14:05:15
+ * @since 1.0, 2024-02-27 15:06:02
  */
 public class AlipayBossProdAntlescenterEsignresultQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2454133528853331178L;
+	private static final long serialVersionUID = 8457371228249166564L;
 
 	/**
 	 * 系统来源名称

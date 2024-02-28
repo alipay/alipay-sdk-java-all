@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.supervision.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-18 16:56:45
+ * @since 1.0, 2024-02-21 10:27:01
  */
 public class AlipayEbppIndustrySupervisionOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8212893399729192273L;
+	private static final long serialVersionUID = 4385134424361523632L;
 
 	/** 
 	 * 冻资单地址
 	 */
 	@ApiField("alipay_order_detail_url")
 	private String alipayOrderDetailUrl;
+
+	/** 
+	 * 支付宝订单号
+	 */
+	@ApiField("alipay_order_no")
+	private String alipayOrderNo;
 
 	/** 
 	 * 订单金额，整数，单位分
@@ -67,6 +73,13 @@ public class AlipayEbppIndustrySupervisionOrderQueryResponse extends AlipayRespo
 	}
 	public String getAlipayOrderDetailUrl( ) {
 		return this.alipayOrderDetailUrl;
+	}
+
+	public void setAlipayOrderNo(String alipayOrderNo) {
+		this.alipayOrderNo = alipayOrderNo;
+	}
+	public String getAlipayOrderNo( ) {
+		return this.alipayOrderNo;
 	}
 
 	public void setAmount(String amount) {

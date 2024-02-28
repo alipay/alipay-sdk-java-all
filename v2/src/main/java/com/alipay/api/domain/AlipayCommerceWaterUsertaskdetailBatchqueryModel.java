@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页查询任务id下所有的用户任务列表
  *
  * @author auto create
- * @since 1.0, 2023-08-23 12:43:37
+ * @since 1.0, 2024-02-27 09:53:38
  */
 public class AlipayCommerceWaterUsertaskdetailBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4769124963718715944L;
+	private static final long serialVersionUID = 6322495964913942989L;
 
 	/**
 	 * 参与任务时间结束

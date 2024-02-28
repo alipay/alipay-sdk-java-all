@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 还款参与方扩展
  *
  * @author auto create
- * @since 1.0, 2023-05-24 16:57:11
+ * @since 1.0, 2024-02-19 23:00:15
  */
 public class RepaymentParticipantExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4314558745199478775L;
+	private static final long serialVersionUID = 8591213552534852948L;
 
 	/**
 	 * 参与方关联的业务协议号，默认可选，特定场景提供，以业务接入文档为准。

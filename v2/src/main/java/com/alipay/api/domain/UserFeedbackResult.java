@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 舆情内容
  *
  * @author auto create
- * @since 1.0, 2024-01-11 11:15:06
+ * @since 1.0, 2024-02-26 11:26:22
  */
 public class UserFeedbackResult extends AlipayObject {
 
-	private static final long serialVersionUID = 1265662996712315613L;
+	private static final long serialVersionUID = 6622224382116642421L;
 
 	/**
 	 * 与appid对应

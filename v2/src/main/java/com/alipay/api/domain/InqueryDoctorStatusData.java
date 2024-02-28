@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 专家问诊医生在线状态和问诊方式、价格等数据
  *
  * @author auto create
- * @since 1.0, 2022-12-27 11:50:49
+ * @since 1.0, 2024-02-20 15:24:55
  */
 public class InqueryDoctorStatusData extends AlipayObject {
 
-	private static final long serialVersionUID = 2225155939829434238L;
+	private static final long serialVersionUID = 6442951823852934937L;
 
 	/**
 	 * 平均接诊时长（单位：分钟）

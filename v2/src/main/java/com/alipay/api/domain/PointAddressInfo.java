@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PointAddressInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4736496688531848497L;
+	private static final long serialVersionUID = 7859215845782283735L;
 
 	/**
 	 * 城市编码。 请按照 <a href="https://mdn.alipayobjects.com/huamei_sm7gq8/afts/file/A*blT9RqSR9_gAAAAAAAAAAAAADuKQAQ/2022%E8%9A%82%E8%9A%81%E9%87%91%E6%9C%8D%E5%9C%B0%E5%8C%BA%E7%A0%81.xlsx">蚂蚁店铺地区码</a> 表格中填写。

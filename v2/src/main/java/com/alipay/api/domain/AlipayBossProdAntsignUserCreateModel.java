@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 双方电子CA签署业务签署方注册接口
  *
  * @author auto create
- * @since 1.0, 2023-03-03 14:03:17
+ * @since 1.0, 2024-02-27 15:05:35
  */
 public class AlipayBossProdAntsignUserCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1713516865474345698L;
+	private static final long serialVersionUID = 1795953413933788432L;
 
 	/**
 	 * 业务方来源系统

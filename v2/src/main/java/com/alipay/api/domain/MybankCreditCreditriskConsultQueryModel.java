@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MybankCreditCreditriskConsultQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6629716268259867492L;
+	private static final long serialVersionUID = 7435488444817321361L;
 
 	/**
 	 * 关联实体，咨询者可以添加一些关联实体比方说一个企业、一个会员账号、一个自然人等来作为咨询材料辅助咨询判断

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CraftsmanShopRelationOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4368835491112521269L;
+	private static final long serialVersionUID = 8416772216583193796L;
 
 	/**
 	 * 推荐权重。整数。小于等于0表示不在口碑店铺页展示 大于0表示在口碑店铺页展示， 值越大，排序越靠前。

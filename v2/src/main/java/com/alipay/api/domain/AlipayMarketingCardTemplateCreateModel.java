@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 会员卡模板创建
  *
  * @author auto create
- * @since 1.0, 2023-07-03 13:56:57
+ * @since 1.0, 2024-02-21 15:03:51
  */
 public class AlipayMarketingCardTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3862399617841811958L;
+	private static final long serialVersionUID = 1194683384448378795L;
+
+	/**
+	 * 接入版本
+	 */
+	@ApiField("access_version")
+	private String accessVersion;
 
 	/**
 	 * 业务卡号前缀，由商户指定
@@ -116,7 +122,7 @@ public class AlipayMarketingCardTemplateCreateModel extends AlipayObject {
 	private List<String> shopIds;
 
 	/**
-	 * spi应用id，若使用openspi模式开卡，该字段必填，为实现spi.alipay.user.opencard.get接口的app_id。若是第三方代理模式，可以设置成服务商的 APPID 或者是商家自己的 APPID；
+	 * spi应用id，为实现spi.alipay.user.opencard.get接口的app_id。若是第三方代理模式，可以设置成服务商的 APPID 或者是商家自己的 APPID；
 若不是第三方代理模式，只能设置商家自己的 APPID。
 	 */
 	@ApiField("spi_app_id")
@@ -128,6 +134,12 @@ public class AlipayMarketingCardTemplateCreateModel extends AlipayObject {
 	@ApiListField("template_benefit_info")
 	@ApiField("template_benefit_info_d_t_o")
 	private List<TemplateBenefitInfoDTO> templateBenefitInfo;
+
+	/**
+	 * 入会表单配置，包括入会表单的字段，入会弹层承接小程序appId等
+	 */
+	@ApiField("template_form_config")
+	private TemplateFormConfig templateFormConfig;
 
 	/**
 	 * 模板样式信息
@@ -153,6 +165,13 @@ mdbarcode: 商户动态条码，扫码得商户自主传入的码值
 	 */
 	@ApiField("write_off_type")
 	private String writeOffType;
+
+	public String getAccessVersion() {
+		return this.accessVersion;
+	}
+	public void setAccessVersion(String accessVersion) {
+		this.accessVersion = accessVersion;
+	}
 
 	public String getBizNoPrefix() {
 		return this.bizNoPrefix;
@@ -271,6 +290,13 @@ mdbarcode: 商户动态条码，扫码得商户自主传入的码值
 	}
 	public void setTemplateBenefitInfo(List<TemplateBenefitInfoDTO> templateBenefitInfo) {
 		this.templateBenefitInfo = templateBenefitInfo;
+	}
+
+	public TemplateFormConfig getTemplateFormConfig() {
+		return this.templateFormConfig;
+	}
+	public void setTemplateFormConfig(TemplateFormConfig templateFormConfig) {
+		this.templateFormConfig = templateFormConfig;
 	}
 
 	public TemplateStyleInfoDTO getTemplateStyleInfo() {
