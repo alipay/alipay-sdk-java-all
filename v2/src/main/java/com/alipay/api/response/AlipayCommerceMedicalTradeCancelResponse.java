@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.trade.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2024-02-21 14:46:58
+ * @since 1.0, 2024-03-01 16:26:17
  */
 public class AlipayCommerceMedicalTradeCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6284626885963285965L;
+	private static final long serialVersionUID = 3426889359581998188L;
 
 	/** 
 	 * 支付宝交易单号

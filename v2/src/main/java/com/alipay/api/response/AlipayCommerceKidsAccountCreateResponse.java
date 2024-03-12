@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.kids.account.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 01:10:33
+ * @since 1.0, 2024-03-01 16:25:20
  */
 public class AlipayCommerceKidsAccountCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8788843413154514538L;
+	private static final long serialVersionUID = 6857528327721782186L;
 
 	/** 
 	 * 儿童唯一id

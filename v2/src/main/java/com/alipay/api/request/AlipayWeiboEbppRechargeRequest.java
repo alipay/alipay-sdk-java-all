@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.weibo.ebpp.recharge request
  * 
  * @author auto create
- * @since 1.0, 2022-11-02 20:25:46
+ * @since 1.0, 2024-03-01 16:29:14
  */
 public class AlipayWeiboEbppRechargeRequest implements AlipayRequest<AlipayWeiboEbppRechargeResponse> {
 

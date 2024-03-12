@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.certdoc.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 03:01:47
+ * @since 1.0, 2024-03-01 16:28:50
  */
 public class AlipayUserCertdocSyncRequest implements AlipayRequest<AlipayUserCertdocSyncResponse> {
 

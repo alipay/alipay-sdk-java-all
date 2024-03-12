@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.twenty.two.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-26 17:03:26
+ * @since 1.0, 2024-03-01 16:25:21
  */
 public class AlipayDataTwentyTwoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2543392861673739557L;
+	private static final long serialVersionUID = 7545994969732977256L;
 
 	/** 
 	 * 出参id基础描述

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.samsung.ebpp.recharge request
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:12:42
+ * @since 1.0, 2024-03-01 16:26:19
  */
 public class AlipaySamsungEbppRechargeRequest implements AlipayRequest<AlipaySamsungEbppRechargeResponse> {
 

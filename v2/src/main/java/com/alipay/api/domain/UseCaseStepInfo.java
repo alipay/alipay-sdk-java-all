@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class UseCaseStepInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1766226968541355171L;
+	private static final long serialVersionUID = 1469857413462753234L;
 
 	/**
 	 * 方法描述

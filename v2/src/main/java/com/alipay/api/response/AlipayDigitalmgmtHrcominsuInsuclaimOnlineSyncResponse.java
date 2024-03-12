@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.digitalmgmt.hrcominsu.insuclaim.online.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-28 17:47:02
+ * @since 1.0, 2024-03-01 16:27:57
  */
 public class AlipayDigitalmgmtHrcominsuInsuclaimOnlineSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2838266348269597661L;
+	private static final long serialVersionUID = 6641316741199518271L;
 
 	/** 
 	 * report_biz_no_list+不唯一+供应商查询未提交给理赔公司的，理赔状态为进行中的理赔报案数据+枚举值(无)+员工申请理赔+特殊说明(无)

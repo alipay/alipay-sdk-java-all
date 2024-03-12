@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.mpoint.authbase.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 23:02:58
+ * @since 1.0, 2024-03-01 16:34:54
  */
 public class AlipayUserMpointAuthbaseQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1425743747547496874L;
+	private static final long serialVersionUID = 7318466615387988728L;
 
 	/** 
 	 * 支付宝用户的蚂蚁会员积分余额

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantMrchsurplmitemDeletionSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5356146865453812141L;
+	private static final long serialVersionUID = 2175434584873134324L;
 
 	/**
 	 * 客户业务 ID

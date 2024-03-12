@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.trade.service.recommendbank.query request
  * 
  * @author auto create
- * @since 1.0, 2023-08-24 22:31:46
+ * @since 1.0, 2024-03-01 16:26:12
  */
 public class AlipayTradeServiceRecommendbankQueryRequest implements AlipayRequest<AlipayTradeServiceRecommendbankQueryResponse> {
 

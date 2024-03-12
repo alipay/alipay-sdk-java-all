@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.acommunication.creditphone.refund response.
  * 
  * @author auto create
- * @since 1.0, 2024-02-01 15:26:59
+ * @since 1.0, 2024-03-01 16:26:15
  */
 public class AlipayCommerceAcommunicationCreditphoneRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7864343273754271286L;
+	private static final long serialVersionUID = 3139315688426674176L;
 
 	/** 
 	 * 当期支付宝订单号

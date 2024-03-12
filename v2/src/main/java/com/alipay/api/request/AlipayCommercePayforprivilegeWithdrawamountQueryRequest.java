@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.payforprivilege.withdrawamount.query request
  * 
  * @author auto create
- * @since 1.0, 2023-09-03 23:51:47
+ * @since 1.0, 2024-03-01 16:34:27
  */
 public class AlipayCommercePayforprivilegeWithdrawamountQueryRequest implements AlipayRequest<AlipayCommercePayforprivilegeWithdrawamountQueryResponse> {
 

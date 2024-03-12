@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.s.wsstest.add response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-11 20:11:46
+ * @since 1.0, 2024-03-01 16:28:51
  */
 public class AlipayBossSWsstestAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4461113998297427391L;
+	private static final long serialVersionUID = 2816994455692731931L;
 
 	/** 
 	 * 1

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.digitalmgmt.hrhealth.kdys.personinfo.query request
  * 
  * @author auto create
- * @since 1.0, 2023-09-19 21:06:44
+ * @since 1.0, 2024-03-01 16:34:28
  */
 public class AlipayDigitalmgmtHrhealthKdysPersoninfoQueryRequest implements AlipayRequest<AlipayDigitalmgmtHrhealthKdysPersoninfoQueryResponse> {
 

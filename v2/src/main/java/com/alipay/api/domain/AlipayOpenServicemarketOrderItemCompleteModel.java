@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务商完成订单内单个明细实施操作
  *
  * @author auto create
- * @since 1.0, 2024-01-09 11:19:17
+ * @since 1.0, 2024-03-06 13:46:16
  */
 public class AlipayOpenServicemarketOrderItemCompleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8676938742178217824L;
+	private static final long serialVersionUID = 1851982524655366695L;
 
 	/**
 	 * 订购服务插件订单号

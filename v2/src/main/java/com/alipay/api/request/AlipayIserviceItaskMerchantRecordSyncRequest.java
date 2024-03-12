@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.itask.merchant.record.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-09-03 23:11:46
+ * @since 1.0, 2024-03-01 16:28:28
  */
 public class AlipayIserviceItaskMerchantRecordSyncRequest implements AlipayRequest<AlipayIserviceItaskMerchantRecordSyncResponse> {
 

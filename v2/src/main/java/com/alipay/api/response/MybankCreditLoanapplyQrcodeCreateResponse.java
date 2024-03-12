@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.loanapply.qrcode.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 03:26:40
+ * @since 1.0, 2024-03-01 16:27:58
  */
 public class MybankCreditLoanapplyQrcodeCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8449934355895366583L;
+	private static final long serialVersionUID = 3569661395416457144L;
 
 	/** 
 	 * 生成二维码的加密 token 字符串

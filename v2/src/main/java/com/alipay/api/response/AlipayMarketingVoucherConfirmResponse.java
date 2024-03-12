@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.voucher.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-23 20:31:43
+ * @since 1.0, 2024-03-01 16:27:03
  */
 public class AlipayMarketingVoucherConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4117783676466747153L;
+	private static final long serialVersionUID = 1284371196849256376L;
 
 	/** 
 	 * 用于决定在用户确认领券后是否重定向。可枚举：true表示需要重定向，false表示不需要重定向

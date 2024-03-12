@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.cognitive.ocr.bankcard.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 23:12:03
+ * @since 1.0, 2024-03-01 16:34:30
  */
 public class AlipayIserviceCognitiveOcrBankcardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1776259972465478631L;
+	private static final long serialVersionUID = 4695556312282248877L;
 
 	/** 
 	 * 银行卡号

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.dtbankcust.account.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-19 18:51:44
+ * @since 1.0, 2024-03-01 16:34:53
  */
 public class AlipayUserDtbankcustAccountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4386311331286988256L;
+	private static final long serialVersionUID = 1887111298731177399L;
 
 	/** 
 	 * 查询到用户支付宝账号信息列表

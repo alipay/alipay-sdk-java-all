@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.certify.rarename.associate response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-23 14:21:43
+ * @since 1.0, 2024-03-01 16:26:15
  */
 public class AlipayUserCertifyRarenameAssociateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7755633148344117628L;
+	private static final long serialVersionUID = 6351522841996819133L;
 
 	/** 
 	 * rare_name_infos

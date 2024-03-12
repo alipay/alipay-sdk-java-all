@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.flexiblestaffing.insuresign.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-24 13:48:06
+ * @since 1.0, 2024-03-01 16:27:42
  */
 public class AlipayFundFlexiblestaffingInsuresignApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3833178265361454327L;
+	private static final long serialVersionUID = 3237995584182867948L;
 
 	/** 
 	 * 签约企业支付宝账号id

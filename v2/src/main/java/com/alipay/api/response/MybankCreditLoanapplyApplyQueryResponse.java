@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.loanapply.apply.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 00:30:01
+ * @since 1.0, 2024-03-01 16:28:35
  */
 public class MybankCreditLoanapplyApplyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6558649141432157785L;
+	private static final long serialVersionUID = 5837553946742478514L;
 
 	/** 
 	 * 申请贷款额度

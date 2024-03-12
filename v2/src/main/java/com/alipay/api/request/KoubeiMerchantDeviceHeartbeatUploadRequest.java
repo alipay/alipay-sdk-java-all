@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.merchant.device.heartbeat.upload request
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:13:57
+ * @since 1.0, 2024-03-01 16:28:45
  */
 public class KoubeiMerchantDeviceHeartbeatUploadRequest implements AlipayRequest<KoubeiMerchantDeviceHeartbeatUploadResponse> {
 

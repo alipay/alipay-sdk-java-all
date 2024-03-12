@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pay.app.paysharingprod.familypay.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-24 22:16:42
+ * @since 1.0, 2024-03-01 16:34:32
  */
 public class AlipayPayAppPaysharingprodFamilypayModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6493457459586126876L;
+	private static final long serialVersionUID = 1521356238916637452L;
 
 	/** 
 	 * 亲情卡信息

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.trade.itemorder.buy response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-24 22:26:50
+ * @since 1.0, 2024-03-01 16:28:34
  */
 public class KoubeiTradeItemorderBuyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1597227715881883665L;
+	private static final long serialVersionUID = 6774818538262127635L;
 
 	/** 
 	 * 收银单id，唤收银台时传入，该参数为请求级别参数，如果二次支付，需要重新获取

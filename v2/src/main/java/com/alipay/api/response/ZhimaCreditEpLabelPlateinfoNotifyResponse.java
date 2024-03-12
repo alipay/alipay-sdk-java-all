@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.label.plateinfo.notify response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-08 10:21:56
+ * @since 1.0, 2024-03-01 16:28:48
  */
 public class ZhimaCreditEpLabelPlateinfoNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4674797897459931373L;
+	private static final long serialVersionUID = 5473277242233426111L;
 
 	
 

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建任务
  *
  * @author auto create
- * @since 1.0, 2024-02-27 09:51:33
+ * @since 1.0, 2024-03-11 11:24:14
  */
 public class AlipayCommerceWaterTaskCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4699759948485252355L;
+	private static final long serialVersionUID = 3828693578719868953L;
 
 	/**
 	 * 创建人id
@@ -44,6 +44,12 @@ public class AlipayCommerceWaterTaskCreateModel extends AlipayObject {
 	 */
 	@ApiField("second_merchant_appid")
 	private String secondMerchantAppid;
+
+	/**
+	 * smid，二级商户进件id
+	 */
+	@ApiField("smid")
+	private String smid;
 
 	/**
 	 * 这里的任务条件是一个map，本期仅支持月的维护
@@ -126,6 +132,13 @@ public class AlipayCommerceWaterTaskCreateModel extends AlipayObject {
 	}
 	public void setSecondMerchantAppid(String secondMerchantAppid) {
 		this.secondMerchantAppid = secondMerchantAppid;
+	}
+
+	public String getSmid() {
+		return this.smid;
+	}
+	public void setSmid(String smid) {
+		this.smid = smid;
 	}
 
 	public String getTaskCondition() {

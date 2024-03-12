@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询数据服务结果
  *
  * @author auto create
- * @since 1.0, 2023-09-08 16:39:20
+ * @since 1.0, 2024-03-11 18:13:36
  */
 public class AnttechMorseDataDataserviceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6643572988968665948L;
+	private static final long serialVersionUID = 3437372881931113268L;
 
 	/**
 	 * 由摩斯同学配置并分配给调用方的服务对应标识号

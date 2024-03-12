@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 广告投放实时汇总数据
  *
  * @author auto create
- * @since 1.0, 2020-02-28 21:14:36
+ * @since 1.0, 2024-03-01 14:59:30
  */
 public class DataDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3325595366836731221L;
+	private static final long serialVersionUID = 4437376925993764276L;
 
 	/**
 	 * 数据汇总时间，格式：yyyyMMdd

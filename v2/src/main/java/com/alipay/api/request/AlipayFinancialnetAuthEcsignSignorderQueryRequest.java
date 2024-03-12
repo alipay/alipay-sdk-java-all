@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.financialnet.auth.ecsign.signorder.query request
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 02:36:47
+ * @since 1.0, 2024-03-01 16:26:18
  */
 public class AlipayFinancialnetAuthEcsignSignorderQueryRequest implements AlipayRequest<AlipayFinancialnetAuthEcsignSignorderQueryResponse> {
 

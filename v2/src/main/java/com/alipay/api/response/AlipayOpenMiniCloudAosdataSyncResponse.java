@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.cloud.aosdata.sync response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-30 20:31:49
+ * @since 1.0, 2024-03-01 16:29:08
  */
 public class AlipayOpenMiniCloudAosdataSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8524827457259547749L;
+	private static final long serialVersionUID = 4129757575268573542L;
 
 	/** 
 	 * 请求链路标识，用于排查问题

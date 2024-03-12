@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.loantrade.pay.asset.consult request
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 01:46:45
+ * @since 1.0, 2024-03-01 16:29:01
  */
 public class MybankCreditLoantradePayAssetConsultRequest implements AlipayRequest<MybankCreditLoantradePayAssetConsultResponse> {
 

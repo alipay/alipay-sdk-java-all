@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.apply.user.certify response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-03 23:34:45
+ * @since 1.0, 2024-03-01 16:29:15
  */
 public class AlipayPcreditLoanApplyUserCertifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5264792227733282767L;
+	private static final long serialVersionUID = 2329133812544278946L;
 
 	/** 
 	 * 校验结果：目前可能返回的认证结果有：

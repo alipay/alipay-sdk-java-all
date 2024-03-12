@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 代扣协议迁移
  *
  * @author auto create
- * @since 1.0, 2022-05-07 10:37:06
+ * @since 1.0, 2024-03-01 14:30:19
  */
 public class AlipayUserAgreementMigrateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2383761388695988724L;
+	private static final long serialVersionUID = 1227599616252126332L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号（用户签约成功后的协议号 ）

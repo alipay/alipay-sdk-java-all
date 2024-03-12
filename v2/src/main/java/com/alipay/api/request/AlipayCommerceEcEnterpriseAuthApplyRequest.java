@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.ec.enterprise.auth.apply request
  * 
  * @author auto create
- * @since 1.0, 2024-02-19 10:22:56
+ * @since 1.0, 2024-03-01 16:47:49
  */
 public class AlipayCommerceEcEnterpriseAuthApplyRequest implements AlipayRequest<AlipayCommerceEcEnterpriseAuthApplyResponse> {
 

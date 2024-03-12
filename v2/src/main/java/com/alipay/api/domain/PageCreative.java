@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创意分页查询结果
  *
  * @author auto create
- * @since 1.0, 2019-07-30 17:27:30
+ * @since 1.0, 2024-03-01 14:59:42
  */
 public class PageCreative extends AlipayObject {
 
-	private static final long serialVersionUID = 5829491851626467534L;
+	private static final long serialVersionUID = 5476258181357583485L;
 
 	/**
 	 * 创意详情列表

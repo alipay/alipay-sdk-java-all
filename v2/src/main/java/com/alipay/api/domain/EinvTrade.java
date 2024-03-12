@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票交易模型
  *
  * @author auto create
- * @since 1.0, 2023-02-08 18:53:28
+ * @since 1.0, 2024-03-01 13:38:14
  */
 public class EinvTrade extends AlipayObject {
 
-	private static final long serialVersionUID = 1317148579273115754L;
+	private static final long serialVersionUID = 1232368885587579673L;
 
 	/**
 	 * 订单编号
@@ -72,8 +72,7 @@ public class EinvTrade extends AlipayObject {
 	private String payeeName;
 
 	/**
-	 * 支付金额
-
+	 * 支付金额，单位（元），
 对应账单中的交易金额
 	 */
 	@ApiField("payment_amount")

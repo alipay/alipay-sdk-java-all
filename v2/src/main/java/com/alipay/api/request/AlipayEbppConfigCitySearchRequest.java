@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.config.city.search request
  * 
  * @author auto create
- * @since 1.0, 2021-07-13 15:43:55
+ * @since 1.0, 2024-03-01 16:29:16
  */
 public class AlipayEbppConfigCitySearchRequest implements AlipayRequest<AlipayEbppConfigCitySearchResponse> {
 

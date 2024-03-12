@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.dishonor.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:09:56
+ * @since 1.0, 2024-03-01 16:29:17
  */
 public class AlipayFundTransDishonorQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5275924833261899115L;
+	private static final long serialVersionUID = 5317222838793238578L;
 
 	/** 
 	 * 退票订单详细列表：可能包含多个退票订单信息。如items值为0,则此参数不返回。

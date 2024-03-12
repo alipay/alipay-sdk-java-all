@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.onecodepass.order.close response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-26 16:14:47
+ * @since 1.0, 2024-03-01 16:27:01
  */
 public class AlipayEbppIndustryOnecodepassOrderCloseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6444816981526697584L;
+	private static final long serialVersionUID = 8149221243932864553L;
 
 	/** 
 	 * 商户订单号

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.stepcounter.query request
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 18:26:45
+ * @since 1.0, 2024-03-01 16:29:14
  */
 public class AlipayUserStepcounterQueryRequest implements AlipayRequest<AlipayUserStepcounterQueryResponse> {
 

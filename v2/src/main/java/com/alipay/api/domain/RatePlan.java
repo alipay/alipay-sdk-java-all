@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 价格计划
  *
  * @author auto create
- * @since 1.0, 2024-01-25 10:32:15
+ * @since 1.0, 2024-03-06 14:20:00
  */
 public class RatePlan extends AlipayObject {
 
-	private static final long serialVersionUID = 1227922512338935981L;
+	private static final long serialVersionUID = 3555656378551611531L;
 
 	/**
 	 * 对应的预订规则编号列表
@@ -38,6 +38,15 @@ FOREIGNER：外宾
 	 */
 	@ApiField("customer_type")
 	private String customerType;
+
+	/**
+	 * 证件数量类型：
+      0：无特殊要求（下单不用证件）
+     *1：整个订单需一个证件
+     *2：订单中每个房间需一个证件
+	 */
+	@ApiField("identification")
+	private Long identification;
 
 	/**
 	 * 需要的证件类型，多个值标识任意一种证件类型都可以,枚举值见下：
@@ -132,6 +141,13 @@ false:失效
 	}
 	public void setCustomerType(String customerType) {
 		this.customerType = customerType;
+	}
+
+	public Long getIdentification() {
+		return this.identification;
+	}
+	public void setIdentification(Long identification) {
+		this.identification = identification;
 	}
 
 	public List<String> getIdentificationType() {

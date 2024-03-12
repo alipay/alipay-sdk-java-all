@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.member.citycard.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 00:14:47
+ * @since 1.0, 2024-03-01 16:28:29
  */
 public class AlipayUserMemberCitycardSyncRequest implements AlipayRequest<AlipayUserMemberCitycardSyncResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.icp.status.query request
  * 
  * @author auto create
- * @since 1.0, 2024-01-26 17:21:57
+ * @since 1.0, 2024-02-29 10:31:58
  */
 public class AlipayOpenMiniIcpStatusQueryRequest implements AlipayRequest<AlipayOpenMiniIcpStatusQueryResponse> {
 

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ecapiprod.drawndn.feerecord.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:12:31
+ * @since 1.0, 2024-03-01 16:34:29
  */
 public class AlipayEcapiprodDrawndnFeerecordQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8387333647376287741L;
+	private static final long serialVersionUID = 2844827963376529718L;
 
 	/** 
 	 * 费用交易流水

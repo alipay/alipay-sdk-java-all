@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 专家问诊预约班次对象
  *
  * @author auto create
- * @since 1.0, 2024-02-21 16:53:26
+ * @since 1.0, 2024-03-07 11:00:44
  */
 public class InquiryDoctorShiftCaseData extends AlipayObject {
 
-	private static final long serialVersionUID = 5115683722273692481L;
+	private static final long serialVersionUID = 5668538466719755991L;
+
+	/**
+	 * 外部排班编码
+	 */
+	@ApiField("ext_shift_case_id")
+	private String extShiftCaseId;
 
 	/**
 	 * 可预约人数
@@ -45,6 +51,13 @@ public class InquiryDoctorShiftCaseData extends AlipayObject {
 	 */
 	@ApiField("shift_time_slot_type")
 	private String shiftTimeSlotType;
+
+	public String getExtShiftCaseId() {
+		return this.extShiftCaseId;
+	}
+	public void setExtShiftCaseId(String extShiftCaseId) {
+		this.extShiftCaseId = extShiftCaseId;
+	}
 
 	public String getRegisterNum() {
 		return this.registerNum;

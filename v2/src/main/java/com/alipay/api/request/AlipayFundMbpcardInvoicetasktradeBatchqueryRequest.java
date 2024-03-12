@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.mbpcard.invoicetasktrade.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2024-02-01 16:31:58
+ * @since 1.0, 2024-03-01 16:28:36
  */
 public class AlipayFundMbpcardInvoicetasktradeBatchqueryRequest implements AlipayRequest<AlipayFundMbpcardInvoicetasktradeBatchqueryResponse> {
 

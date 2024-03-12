@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 零工卡还款
  *
  * @author auto create
- * @since 1.0, 2023-05-29 10:57:15
+ * @since 1.0, 2024-03-11 19:34:51
  */
 public class AlipayFundFlexiblestaffingRepaymentTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6422382597812714985L;
+	private static final long serialVersionUID = 6625781427268685363L;
 
 	/**
 	 * 描述特定的业务场景。
@@ -56,7 +56,7 @@ public class AlipayFundFlexiblestaffingRepaymentTransferModel extends AlipayObje
 	private String remark;
 
 	/**
-	 * 转账金额
+	 * 转账金额（元）
 	 */
 	@ApiField("trans_amount")
 	private String transAmount;

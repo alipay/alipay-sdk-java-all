@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.printer.bind request
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 21:43:16
+ * @since 1.0, 2024-03-01 16:27:41
  */
 public class AlipayDataPrinterBindRequest implements AlipayRequest<AlipayDataPrinterBindResponse> {
 

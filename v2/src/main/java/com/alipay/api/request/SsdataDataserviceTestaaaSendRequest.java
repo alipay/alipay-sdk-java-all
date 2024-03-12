@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ssdata.dataservice.testaaa.send request
  * 
  * @author auto create
- * @since 1.0, 2024-02-21 17:56:04
+ * @since 1.0, 2024-03-01 16:27:36
  */
 public class SsdataDataserviceTestaaaSendRequest implements AlipayRequest<SsdataDataserviceTestaaaSendResponse> {
 

@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品列表信息模型
  *
  * @author auto create
- * @since 1.0, 2024-02-26 17:12:48
+ * @since 1.0, 2024-03-11 10:48:49
  */
 public class MiniGoodsDetailInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5855559299588281221L;
+	private static final long serialVersionUID = 3283116533969271575L;
+
+	/**
+	 * 活动信息
+	 */
+	@ApiField("activity_info")
+	private ActivityInfoDTO activityInfo;
 
 	/**
 	 * 商品描述信息
@@ -133,6 +139,13 @@ item_discount使用场景：同时购买多件商品时存在优惠，传入优�
 	 */
 	@ApiField("ticket_info")
 	private TicketInfoDTO ticketInfo;
+
+	public ActivityInfoDTO getActivityInfo() {
+		return this.activityInfo;
+	}
+	public void setActivityInfo(ActivityInfoDTO activityInfo) {
+		this.activityInfo = activityInfo;
+	}
 
 	public String getBody() {
 		return this.body;

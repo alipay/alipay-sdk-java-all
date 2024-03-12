@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.underwrite.sirius.task.callback request
  * 
  * @author auto create
- * @since 1.0, 2023-10-25 13:36:49
+ * @since 1.0, 2024-03-01 16:25:20
  */
 public class AlipayInsUnderwriteSiriusTaskCallbackRequest implements AlipayRequest<AlipayInsUnderwriteSiriusTaskCallbackResponse> {
 

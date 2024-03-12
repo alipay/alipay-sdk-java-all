@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.cityservice.certinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-07 13:29:55
+ * @since 1.0, 2024-03-01 16:34:29
  */
 public class AlipayEcoCityserviceCertinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6782537695685351633L;
+	private static final long serialVersionUID = 3557666583785826314L;
 
 	/** 
 	 * 用户证件信息查询结果列表。列表中的元素包含请求证件信息，以及对应的支付宝uid信息。

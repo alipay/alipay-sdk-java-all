@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.aaf.adfa.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 19:57:19
+ * @since 1.0, 2024-03-01 16:28:01
  */
 public class AlipaySecurityAafAdfaBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4744117189421595722L;
+	private static final long serialVersionUID = 2136515991418124987L;
 
 	
 

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.customer.identify response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:13:24
+ * @since 1.0, 2024-03-01 16:34:53
  */
 public class AlipayUserCustomerIdentifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7822413364127785673L;
+	private static final long serialVersionUID = 4898259233172317394L;
 
 	/** 
 	 * 账户互通活动信息列表，目前支持的活动名称

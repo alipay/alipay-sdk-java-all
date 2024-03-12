@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: antfortune.stock.stocktool.deliver.query request
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 02:26:46
+ * @since 1.0, 2024-03-01 16:27:33
  */
 public class AntfortuneStockStocktoolDeliverQueryRequest implements AlipayRequest<AntfortuneStockStocktoolDeliverQueryResponse> {
 

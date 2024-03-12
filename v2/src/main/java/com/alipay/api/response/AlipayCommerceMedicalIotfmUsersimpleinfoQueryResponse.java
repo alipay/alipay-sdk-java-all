@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.iotfm.usersimpleinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-24 14:01:46
+ * @since 1.0, 2024-03-01 16:34:26
  */
 public class AlipayCommerceMedicalIotfmUsersimpleinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6225759398339692921L;
+	private static final long serialVersionUID = 4675259672798479556L;
 
 	/** 
 	 * 默认参保地市编码国标

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.customer.zmcard.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-03 23:51:47
+ * @since 1.0, 2024-03-01 16:34:59
  */
 public class ZhimaCustomerZmcardInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7686712153946314486L;
+	private static final long serialVersionUID = 6245598773596968841L;
 
 	/** 
 	 * 被查看人的信用等级，范围[信用极好，信用优秀，信用良好，信用中等，信用较差]。用户已授权且接入方是二方商户才返回。

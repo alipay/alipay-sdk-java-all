@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserWufufukaAliyunNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1372175669318156253L;
+	private static final long serialVersionUID = 4854956123627844249L;
 
 	/**
 	 * 阿里云配置的活动id,支付宝基于此id进行库存修改

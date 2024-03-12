@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.assetreverse.assign.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-13 16:51:55
+ * @since 1.0, 2024-03-01 16:34:54
  */
 public class AntMerchantExpandAssetreverseAssignQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4692687377341998397L;
+	private static final long serialVersionUID = 7296388877187626969L;
 
 	/** 
 	 * 逆向指令集合

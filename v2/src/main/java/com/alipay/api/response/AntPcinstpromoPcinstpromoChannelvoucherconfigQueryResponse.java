@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.pcinstpromo.pcinstpromo.channelvoucherconfig.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-07 16:06:43
+ * @since 1.0, 2024-03-01 16:28:45
  */
 public class AntPcinstpromoPcinstpromoChannelvoucherconfigQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2523147378684117454L;
+	private static final long serialVersionUID = 4274139119755143299L;
 
 	/** 
 	 * P站配置的活动id

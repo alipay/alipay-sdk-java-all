@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.medicalcare.common.data.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 19:27:40
+ * @since 1.0, 2024-03-01 16:29:16
  */
 public class AlipayEcoMedicalcareCommonDataSyncRequest implements AlipayRequest<AlipayEcoMedicalcareCommonDataSyncResponse> {
 

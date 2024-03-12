@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.industry.operation.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-22 16:21:38
+ * @since 1.0, 2024-03-01 16:29:02
  */
 public class AlipayFundIndustryOperationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6151135165584822243L;
+	private static final long serialVersionUID = 7592894373243439947L;
 
 	/** 
 	 * 查询的流水信息

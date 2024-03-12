@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 问诊订单评价信息
  *
  * @author auto create
- * @since 1.0, 2024-02-21 16:53:14
+ * @since 1.0, 2024-03-07 11:00:55
  */
 public class MedicalInquiryOrderEvaluateInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8425388817487888479L;
+	private static final long serialVersionUID = 5496199463363579778L;
+
+	/**
+	 * 评价内容
+	 */
+	@ApiField("evaluate_content")
+	private String evaluateContent;
 
 	/**
 	 * 标签内容，如“回答很及时”，“医术高明”等，用分隔符隔开，后续做差异化展示
@@ -37,6 +43,13 @@ public class MedicalInquiryOrderEvaluateInfo extends AlipayObject {
 	 */
 	@ApiField("open_status")
 	private Boolean openStatus;
+
+	public String getEvaluateContent() {
+		return this.evaluateContent;
+	}
+	public void setEvaluateContent(String evaluateContent) {
+		this.evaluateContent = evaluateContent;
+	}
 
 	public String getEvaluateLabel() {
 		return this.evaluateLabel;

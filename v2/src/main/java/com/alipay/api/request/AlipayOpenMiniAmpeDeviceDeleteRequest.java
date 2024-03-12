@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.ampe.device.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 07:43:21
+ * @since 1.0, 2024-03-01 16:29:07
  */
 public class AlipayOpenMiniAmpeDeviceDeleteRequest implements AlipayRequest<AlipayOpenMiniAmpeDeviceDeleteResponse> {
 

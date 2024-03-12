@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.sign.index.create request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 01:51:56
+ * @since 1.0, 2024-03-04 15:01:08
  */
 public class AnttechBlockchainSignIndexCreateRequest implements AlipayRequest<AnttechBlockchainSignIndexCreateResponse> {
 

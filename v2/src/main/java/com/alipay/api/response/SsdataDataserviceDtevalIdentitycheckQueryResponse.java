@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ssdata.dataservice.dteval.identitycheck.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 01:59:29
+ * @since 1.0, 2024-03-01 16:29:18
  */
 public class SsdataDataserviceDtevalIdentitycheckQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5594867944392441937L;
+	private static final long serialVersionUID = 5586236344745438857L;
 
 	/** 
 	 * evidence：关联人的手机号是否和该用户通话以及通话次数

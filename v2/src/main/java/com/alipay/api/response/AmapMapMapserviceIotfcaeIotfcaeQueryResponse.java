@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: amap.map.mapservice.iotfcae.iotfcae.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-07-04 18:19:34
+ * @since 1.0, 2024-03-01 16:29:07
  */
 public class AmapMapMapserviceIotfcaeIotfcaeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6811964471253987341L;
+	private static final long serialVersionUID = 8629357866432695844L;
 
 	/** 
 	 * 证件号

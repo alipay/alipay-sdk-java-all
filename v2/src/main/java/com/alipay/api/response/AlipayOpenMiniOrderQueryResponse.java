@@ -15,11 +15,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-02-28 15:31:57
+ * @since 1.0, 2024-03-11 21:11:57
  */
 public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7286983914472611569L;
+	private static final long serialVersionUID = 1793274516296884587L;
 
 	/** 
 	 * 收货地址
@@ -74,6 +74,12 @@ public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("order_detail")
 	private OrderDetailInfoVO orderDetail;
+
+	/** 
+	 * 平台订单号
+	 */
+	@ApiField("order_id")
+	private String orderId;
 
 	/** 
 	 * 商家自定义订单ID(字符仅支持下划线字母数字，长度小于128个字符）
@@ -190,6 +196,13 @@ public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 	}
 	public OrderDetailInfoVO getOrderDetail( ) {
 		return this.orderDetail;
+	}
+
+	public void setOrderId(String orderId) {
+		this.orderId = orderId;
+	}
+	public String getOrderId( ) {
+		return this.orderId;
 	}
 
 	public void setOutOrderId(String outOrderId) {

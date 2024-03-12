@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票同步场景下的发票入参模型
  *
  * @author auto create
- * @since 1.0, 2023-02-07 15:11:13
+ * @since 1.0, 2024-03-01 16:58:49
  */
 public class InvoiceSendOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3356956551232294279L;
+	private static final long serialVersionUID = 7466382226737138758L;
 
 	/**
 	 * 支付宝端的申请id。如果在开票过程中，是通过支付宝提交的申请到机构端，支付宝会带上开票申请在支付宝生成的申请id，机构在回传发票的时候只需要回传这个申请id，不用获取用户的uid，支付宝可以根据申请id将发票归集到对应的用户名下
@@ -53,8 +53,7 @@ public class InvoiceSendOpenModel extends AlipayObject {
 	private String extendFields;
 
 	/**
-	 * 下载版式文件类型，需要回传文件下载链接的情况下必传，
-取值范围：PDF，JPG，OFD
+	 * 下载版式文件类型，需要回传文件下载链接的情况下必传
 	 */
 	@ApiField("file_download_type")
 	private String fileDownloadType;
@@ -66,7 +65,7 @@ public class InvoiceSendOpenModel extends AlipayObject {
 	private String fileDownloadUrl;
 
 	/**
-	 * 财政电子票据子类型，当tax_type=FINANCIAL_ELECTRONIC_BILL时要求必填 可选值如下： 01:非税收入通用票据 02:非税收入专用票据 03:非税收入一般缴款书 04:资金往来结算票据 05:公益事业捐赠票据 06:医疗收费票据 07:社会团体会费票据 08:社会保险基金票据 09:工会经费收入票据 99:其他财政票据
+	 * 财政电子票据子类型
 	 */
 	@ApiField("financial_electronic_type")
 	private String financialElectronicType;

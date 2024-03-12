@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.gov.healthcode.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 01:29:21
+ * @since 1.0, 2024-03-01 16:34:28
  */
 public class AlipayEbppIndustryGovHealthcodeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3795986289595528351L;
+	private static final long serialVersionUID = 4187648542914155448L;
 
 	/** 
 	 * 码的颜色，红/黄/绿/审核中，分别对应如下: red/yellow/green/init,

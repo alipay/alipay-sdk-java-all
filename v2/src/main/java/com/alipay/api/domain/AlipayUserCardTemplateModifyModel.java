@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayUserCardTemplateModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8151358727735775576L;
+	private static final long serialVersionUID = 7251459392459526437L;
 
 	/**
 	 * background_url：在支付宝卡包展示的背景图片地址，通过alipay.offline.material.image.upload接口上传图片资源获取(https://opendocs.alipay.com/open/02qth8)

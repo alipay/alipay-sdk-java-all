@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.aliyunbenefit.receive response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-06 16:06:55
+ * @since 1.0, 2024-03-01 16:26:57
  */
 public class AlipayUserAliyunbenefitReceiveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4456759725498123785L;
+	private static final long serialVersionUID = 6818522279428879759L;
 
 	
 

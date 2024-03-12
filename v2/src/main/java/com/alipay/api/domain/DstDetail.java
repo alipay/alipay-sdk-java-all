@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 多轮问答信息
  *
  * @author auto create
- * @since 1.0, 2024-01-16 10:23:50
+ * @since 1.0, 2024-03-01 10:54:59
  */
 public class DstDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7117588425867737531L;
+	private static final long serialVersionUID = 5272299124687119163L;
 
 	/**
 	 * 多轮答案内容
@@ -25,6 +25,12 @@ public class DstDetail extends AlipayObject {
 	@ApiField("intent")
 	private String intent;
 
+	/**
+	 * 是否以流的形式输出
+	 */
+	@ApiField("stream_output")
+	private Boolean streamOutput;
+
 	public String getContent() {
 		return this.content;
 	}
@@ -37,6 +43,13 @@ public class DstDetail extends AlipayObject {
 	}
 	public void setIntent(String intent) {
 		this.intent = intent;
+	}
+
+	public Boolean getStreamOutput() {
+		return this.streamOutput;
+	}
+	public void setStreamOutput(Boolean streamOutput) {
+		this.streamOutput = streamOutput;
 	}
 
 }

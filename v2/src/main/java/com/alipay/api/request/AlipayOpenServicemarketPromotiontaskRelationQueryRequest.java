@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.servicemarket.promotiontask.relation.query request
  * 
  * @author auto create
- * @since 1.0, 2023-09-11 16:21:48
+ * @since 1.0, 2024-03-07 10:56:59
  */
 public class AlipayOpenServicemarketPromotiontaskRelationQueryRequest implements AlipayRequest<AlipayOpenServicemarketPromotiontaskRelationQueryResponse> {
 

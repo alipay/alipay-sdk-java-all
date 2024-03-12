@@ -1,17 +1,27 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 医生在线问诊渠道（问诊方式，价格，服务链接）
  *
  * @author auto create
- * @since 1.0, 2024-02-20 15:24:55
+ * @since 1.0, 2024-03-07 11:01:37
  */
 public class InquiryChannel extends AlipayObject {
 
-	private static final long serialVersionUID = 2758987662686218835L;
+	private static final long serialVersionUID = 2526215884996536638L;
+
+	/**
+	 * 问诊医生排班信息列表
+	 */
+	@ApiListField("inquiry_doctor_shift_case_list")
+	@ApiField("inquiry_doctor_shift_case_data")
+	private List<InquiryDoctorShiftCaseData> inquiryDoctorShiftCaseList;
 
 	/**
 	 * 问诊方式：IMAGE_INQUIRY(图文问诊)/PHONE_INQUIRY(电话问诊)/VEDIO_INQUIRY(视频问诊)
@@ -36,6 +46,20 @@ public class InquiryChannel extends AlipayObject {
 	 */
 	@ApiField("inquiry_url")
 	private String inquiryUrl;
+
+	/**
+	 * 是否为预约制
+若不填，则默认为否
+	 */
+	@ApiField("register_flag")
+	private Boolean registerFlag;
+
+	public List<InquiryDoctorShiftCaseData> getInquiryDoctorShiftCaseList() {
+		return this.inquiryDoctorShiftCaseList;
+	}
+	public void setInquiryDoctorShiftCaseList(List<InquiryDoctorShiftCaseData> inquiryDoctorShiftCaseList) {
+		this.inquiryDoctorShiftCaseList = inquiryDoctorShiftCaseList;
+	}
 
 	public String getInquiryMode() {
 		return this.inquiryMode;
@@ -63,6 +87,13 @@ public class InquiryChannel extends AlipayObject {
 	}
 	public void setInquiryUrl(String inquiryUrl) {
 		this.inquiryUrl = inquiryUrl;
+	}
+
+	public Boolean getRegisterFlag() {
+		return this.registerFlag;
+	}
+	public void setRegisterFlag(Boolean registerFlag) {
+		this.registerFlag = registerFlag;
 	}
 
 }

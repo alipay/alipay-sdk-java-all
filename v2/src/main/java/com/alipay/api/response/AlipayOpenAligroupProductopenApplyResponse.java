@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.aligroup.productopen.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-13 17:16:45
+ * @since 1.0, 2024-03-01 16:28:01
  */
 public class AlipayOpenAligroupProductopenApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8348197811778178393L;
+	private static final long serialVersionUID = 8117155159837533719L;
 
 	/** 
 	 * ctu校验结果对象，内部包含校验结果以及错误code与信息

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.morse.dataservice.insurancestatus.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-14 17:36:57
+ * @since 1.0, 2024-03-11 18:13:58
  */
 public class AnttechMorseDataserviceInsurancestatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6247425427346346164L;
+	private static final long serialVersionUID = 6779836927438848998L;
 
 	/** 
 	 * 业务唯一标识，标识本次查询的唯一识别号，用于链路问题定位排查和对账

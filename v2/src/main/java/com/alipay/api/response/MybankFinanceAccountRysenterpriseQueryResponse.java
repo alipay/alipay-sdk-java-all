@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.finance.account.rysenterprise.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-24 22:27:51
+ * @since 1.0, 2024-03-01 16:27:42
  */
 public class MybankFinanceAccountRysenterpriseQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6175328515861823842L;
+	private static final long serialVersionUID = 6193529764888341759L;
 
 	/** 
 	 * 融易收账户Id

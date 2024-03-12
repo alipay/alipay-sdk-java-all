@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 社保缴纳状态查询
  *
  * @author auto create
- * @since 1.0, 2023-12-14 17:33:44
+ * @since 1.0, 2024-03-11 18:13:58
  */
 public class AnttechMorseDataserviceInsurancestatusQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6517192771589124286L;
+	private static final long serialVersionUID = 6898243852379886556L;
 
 	/**
 	 * id_card_sha256标识用户唯一信息，通过用户身份证号SHA256 哈希后获得

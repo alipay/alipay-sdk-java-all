@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.cloud.aossuggest.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-02-01 15:51:57
+ * @since 1.0, 2024-03-01 16:29:05
  */
 public class AlipayOpenMiniCloudAossuggestQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6579198639775175915L;
+	private static final long serialVersionUID = 3853897253513469837L;
 
 	/** 
 	 * 结果的总条数

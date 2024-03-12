@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员卡查询
  *
  * @author auto create
- * @since 1.0, 2024-01-29 11:03:04
+ * @since 1.0, 2024-03-08 19:20:50
  */
 public class AlipayMarketingCardQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1453898892586457155L;
+	private static final long serialVersionUID = 1439329371536944175L;
 
 	/**
 	 * 用户信息 填写则作为附加条件查询
@@ -40,6 +40,12 @@ public class AlipayMarketingCardQueryModel extends AlipayObject {
 	@ApiField("target_card_no_type")
 	private String targetCardNoType;
 
+	/**
+	 * 会员卡模板id。调用<a href="https://opendocs.alipay.com/open/03sx80?scene=common&pathHash=04270a28" target="_blank">alipay.marketing.card.template.create</a>（会员卡模板创建接口）创建模板后同步返回。
+	 */
+	@ApiField("template_id")
+	private String templateId;
+
 	public CardUserInfo getCardUserInfo() {
 		return this.cardUserInfo;
 	}
@@ -66,6 +72,13 @@ public class AlipayMarketingCardQueryModel extends AlipayObject {
 	}
 	public void setTargetCardNoType(String targetCardNoType) {
 		this.targetCardNoType = targetCardNoType;
+	}
+
+	public String getTemplateId() {
+		return this.templateId;
+	}
+	public void setTemplateId(String templateId) {
+		this.templateId = templateId;
 	}
 
 }

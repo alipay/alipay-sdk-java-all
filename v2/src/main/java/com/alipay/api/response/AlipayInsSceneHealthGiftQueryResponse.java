@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.health.gift.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 01:28:37
+ * @since 1.0, 2024-03-01 16:29:12
  */
 public class AlipayInsSceneHealthGiftQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4841356337891612553L;
+	private static final long serialVersionUID = 7394249148373238475L;
 
 	/** 
 	 * 赠险是否已开通，true标识已开通，false标识未开通

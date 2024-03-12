@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 留资属性实例数据列表
  *
  * @author auto create
- * @since 1.0, 2020-12-28 15:33:49
+ * @since 1.0, 2024-03-04 14:29:25
  */
 public class PromotePageData extends AlipayObject {
 
-	private static final long serialVersionUID = 1351973352432225151L;
+	private static final long serialVersionUID = 1831563273599758565L;
 
 	/**
 	 * 留资流水号
 	 */
 	@ApiField("biz_no")
 	private String bizNo;
+
+	/**
+	 * 加密uid，用于深转数据回传
+	 */
+	@ApiField("encrypt_uid")
+	private String encryptUid;
 
 	/**
 	 * 留资属性实例数据列表
@@ -34,6 +40,13 @@ public class PromotePageData extends AlipayObject {
 	}
 	public void setBizNo(String bizNo) {
 		this.bizNo = bizNo;
+	}
+
+	public String getEncryptUid() {
+		return this.encryptUid;
+	}
+	public void setEncryptUid(String encryptUid) {
+		this.encryptUid = encryptUid;
 	}
 
 	public List<PromotePagePropertyInstance> getPropertyList() {

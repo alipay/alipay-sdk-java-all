@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.icp.cancel request
  * 
  * @author auto create
- * @since 1.0, 2024-01-23 14:12:00
+ * @since 1.0, 2024-02-29 10:32:01
  */
 public class AlipayOpenMiniIcpCancelRequest implements AlipayRequest<AlipayOpenMiniIcpCancelResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.sportshealth.account.confirm request
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 01:56:38
+ * @since 1.0, 2024-03-01 16:27:37
  */
 public class AlipayUserSportshealthAccountConfirmRequest implements AlipayRequest<AlipayUserSportshealthAccountConfirmResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支卡通-用户绑定查询
  *
  * @author auto create
- * @since 1.0, 2023-12-05 13:58:10
+ * @since 1.0, 2024-03-01 14:31:17
  */
 public class AlipayFundZcardprodUserQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4233415457949226379L;
+	private static final long serialVersionUID = 8341989147264148896L;
 
 	/**
 	 * 商户的账户id
@@ -48,6 +48,12 @@ public class AlipayFundZcardprodUserQueryModel extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	/**
+	 * 蚂蚁统一会员ID
+	 */
+	@ApiField("user_open_id")
+	private String userOpenId;
 
 	public String getAccountId() {
 		return this.accountId;
@@ -89,6 +95,13 @@ public class AlipayFundZcardprodUserQueryModel extends AlipayObject {
 	}
 	public void setUserId(String userId) {
 		this.userId = userId;
+	}
+
+	public String getUserOpenId() {
+		return this.userOpenId;
+	}
+	public void setUserOpenId(String userOpenId) {
+		this.userOpenId = userOpenId;
 	}
 
 }

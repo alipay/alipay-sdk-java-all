@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.train.shop.create request
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 23:30:15
+ * @since 1.0, 2024-03-01 16:25:19
  */
 public class AlipayCommerceEducateTrainShopCreateRequest implements AlipayRequest<AlipayCommerceEducateTrainShopCreateResponse> {
 

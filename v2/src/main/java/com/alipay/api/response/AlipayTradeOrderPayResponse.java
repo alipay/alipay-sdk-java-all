@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.order.pay response.
  * 
  * @author auto create
- * @since 1.0, 2024-02-21 11:05:09
+ * @since 1.0, 2024-03-01 16:56:58
  */
 public class AlipayTradeOrderPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3122572319221772539L;
+	private static final long serialVersionUID = 2648446727692349464L;
 
 	/** 
 	 * 异步支付模式。订单使用异步支付模式时才有值。
@@ -21,6 +21,12 @@ public class AlipayTradeOrderPayResponse extends AlipayResponse {
 	 */
 	@ApiField("async_payment_mode")
 	private String asyncPaymentMode;
+
+	/** 
+	 * 实际履约金额，单位（元）。仅履约场景才会返回
+	 */
+	@ApiField("fulfillment_amount")
+	private String fulfillmentAmount;
 
 	/** 
 	 * 交易支付时间
@@ -57,6 +63,13 @@ public class AlipayTradeOrderPayResponse extends AlipayResponse {
 	}
 	public String getAsyncPaymentMode( ) {
 		return this.asyncPaymentMode;
+	}
+
+	public void setFulfillmentAmount(String fulfillmentAmount) {
+		this.fulfillmentAmount = fulfillmentAmount;
+	}
+	public String getFulfillmentAmount( ) {
+		return this.fulfillmentAmount;
 	}
 
 	public void setGmtPayment(Date gmtPayment) {

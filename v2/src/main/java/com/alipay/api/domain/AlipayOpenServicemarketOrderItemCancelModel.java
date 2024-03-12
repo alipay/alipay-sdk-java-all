@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务订单明细实施项单项取消
  *
  * @author auto create
- * @since 1.0, 2024-01-09 11:18:51
+ * @since 1.0, 2024-03-06 13:45:50
  */
 public class AlipayOpenServicemarketOrderItemCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7765715835888892274L;
+	private static final long serialVersionUID = 5634371895671794314L;
 
 	/**
 	 * 当前门店区域不支持实施
@@ -20,7 +20,7 @@ public class AlipayOpenServicemarketOrderItemCancelModel extends AlipayObject {
 	private String cancelReason;
 
 	/**
-	 * 订购服务订单ID，通过支付宝发送的 https://opendocs.alipay.com/apis/api_3/alipay.open.servicemarket.order.notify(服务市场商户确认订购通知) 通知获取。
+	 * 订购服务订单ID，通过支付宝发送的 <a href="https://opendocs.alipay.com/apis/api_3/alipay.open.servicemarket.order.notify">服务市场商户确认订购通知</a> 通知获取。
 	 */
 	@ApiField("commodity_order_id")
 	private String commodityOrderId;

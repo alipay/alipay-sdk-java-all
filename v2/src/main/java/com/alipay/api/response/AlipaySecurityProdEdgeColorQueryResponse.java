@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.edge.color.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 02:05:37
+ * @since 1.0, 2024-03-01 16:28:32
  */
 public class AlipaySecurityProdEdgeColorQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4637347365487553874L;
+	private static final long serialVersionUID = 8554277395296897869L;
 
 	/** 
 	 * 服务端解析后的风险等级信息

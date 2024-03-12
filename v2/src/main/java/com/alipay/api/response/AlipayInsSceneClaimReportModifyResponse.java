@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.claim.report.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 18:39:35
+ * @since 1.0, 2024-03-01 16:29:16
  */
 public class AlipayInsSceneClaimReportModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1651528965149658467L;
+	private static final long serialVersionUID = 4185182114334832894L;
 
 	
 

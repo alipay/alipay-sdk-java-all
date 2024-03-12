@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.digitalmgmt.hrcominsu.insuclaim.online.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-07-28 17:47:02
+ * @since 1.0, 2024-03-01 16:27:57
  */
 public class AlipayDigitalmgmtHrcominsuInsuclaimOnlineSyncRequest implements AlipayRequest<AlipayDigitalmgmtHrcominsuInsuclaimOnlineSyncResponse> {
 

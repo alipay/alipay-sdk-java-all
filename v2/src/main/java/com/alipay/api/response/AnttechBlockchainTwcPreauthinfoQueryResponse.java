@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.twc.preauthinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-23 22:01:48
+ * @since 1.0, 2024-03-04 15:00:15
  */
 public class AnttechBlockchainTwcPreauthinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1484627411286974876L;
+	private static final long serialVersionUID = 5716828354723726866L;
 
 	/** 
 	 * 订单信息若不一致，错误信息状态描述

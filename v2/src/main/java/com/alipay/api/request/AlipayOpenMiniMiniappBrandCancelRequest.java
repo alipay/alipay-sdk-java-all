@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.miniapp.brand.cancel request
  * 
  * @author auto create
- * @since 1.0, 2024-01-19 15:31:57
+ * @since 1.0, 2024-02-29 10:28:26
  */
 public class AlipayOpenMiniMiniappBrandCancelRequest implements AlipayRequest<AlipayOpenMiniMiniappBrandCancelResponse> {
 

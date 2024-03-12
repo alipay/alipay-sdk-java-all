@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.mobile.deviceinfo.dynamicinfo.add response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-25 16:43:01
+ * @since 1.0, 2024-03-01 16:29:03
  */
 public class AlipayMobileDeviceinfoDynamicinfoAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8312757615412525345L;
+	private static final long serialVersionUID = 6462421144782716736L;
 
 	/** 
 	 * 同步处理结果

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.insassetprod.petprofile.query request
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 01:43:01
+ * @since 1.0, 2024-03-01 16:34:30
  */
 public class AlipayInsSceneInsassetprodPetprofileQueryRequest implements AlipayRequest<AlipayInsSceneInsassetprodPetprofileQueryResponse> {
 

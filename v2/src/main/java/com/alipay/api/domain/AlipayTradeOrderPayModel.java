@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 统一收单交易直接支付接口
  *
  * @author auto create
- * @since 1.0, 2024-02-04 11:43:36
+ * @since 1.0, 2024-03-01 16:56:46
  */
 public class AlipayTradeOrderPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6619917488255288239L;
+	private static final long serialVersionUID = 1863619871738562119L;
 
 	/**
 	 * 垫资支付模式。支付时需要垫资的场景才传入。具体传参需与支付宝约定。

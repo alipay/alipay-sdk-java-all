@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.tuition.schoolpayment.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 01:37:36
+ * @since 1.0, 2024-03-01 16:28:49
  */
 public class AlipayOverseasTuitionSchoolpaymentBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6537197999944955638L;
+	private static final long serialVersionUID = 7469816417431233861L;
 
 	/** 
 	 * 商户在支付宝开设的账号ID

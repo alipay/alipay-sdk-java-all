@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 钱包操作流水查询
  *
  * @author auto create
- * @since 1.0, 2023-12-04 11:40:18
+ * @since 1.0, 2024-03-04 16:54:59
  */
 public class AlipayFundWalletOperationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6868517187189289777L;
+	private static final long serialVersionUID = 1629874231512822835L;
 
 	/**
 	 * 业务场景

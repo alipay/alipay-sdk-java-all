@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝聊天群内群成员属性
  *
  * @author auto create
- * @since 1.0, 2022-10-31 19:32:38
+ * @since 1.0, 2024-03-11 13:56:52
  */
 public class GroupMemberDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3422162497731583788L;
+	private static final long serialVersionUID = 7352246151481915178L;
 
 	/**
 	 * 支付宝聊天群内昵称
@@ -37,7 +37,7 @@ public class GroupMemberDetail extends AlipayObject {
 	 * 入群方式。
 BY_TOKEN - 通过吱口令入群
 BY_INV - 通过被邀请或者被选择入群
-BY_COD - 通过面对面入群
+BY_COD - 通过扫码入群
 BY_FTF- 通过面对面入群
 BY_ADD - 外部添加来源
 BY_OPENAPI - 开放平台

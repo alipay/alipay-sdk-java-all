@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.huabei.sceneprod.benefit.send request
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 17:16:45
+ * @since 1.0, 2024-03-01 16:29:01
  */
 public class AlipayPcreditHuabeiSceneprodBenefitSendRequest implements AlipayRequest<AlipayPcreditHuabeiSceneprodBenefitSendResponse> {
 

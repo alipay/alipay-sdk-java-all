@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.order.point.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-24 22:01:46
+ * @since 1.0, 2024-03-01 16:29:54
  */
 public class AlipayMerchantOrderPointQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1111187578754738941L;
+	private static final long serialVersionUID = 2866725852763983117L;
 
 	/** 
 	 * 所查询积分类型的积分余额

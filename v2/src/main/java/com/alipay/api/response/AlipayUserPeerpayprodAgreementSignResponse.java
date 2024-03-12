@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.peerpayprod.agreement.sign response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-13 10:41:54
+ * @since 1.0, 2024-03-01 16:27:34
  */
 public class AlipayUserPeerpayprodAgreementSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6451158164173793341L;
+	private static final long serialVersionUID = 3148483684338666381L;
 
 	
 

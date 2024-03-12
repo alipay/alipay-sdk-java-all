@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.twc.userinfo.match request
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:13:56
+ * @since 1.0, 2024-03-04 15:00:48
  */
 public class AnttechBlockchainTwcUserinfoMatchRequest implements AlipayRequest<AnttechBlockchainTwcUserinfoMatchResponse> {
 

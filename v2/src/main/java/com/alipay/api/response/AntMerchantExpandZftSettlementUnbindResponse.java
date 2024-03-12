@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.zft.settlement.unbind response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-28 15:01:57
+ * @since 1.0, 2024-03-01 16:27:40
  */
 public class AntMerchantExpandZftSettlementUnbindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5697231549939646153L;
+	private static final long serialVersionUID = 7673642239611146717L;
 
 	
 

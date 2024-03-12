@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.creditlink.collect.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 00:10:08
+ * @since 1.0, 2024-03-01 16:25:20
  */
 public class ZhimaCreditEpCreditlinkCollectBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6682345999383723243L;
+	private static final long serialVersionUID = 8744349644415545326L;
 
 	/** 
 	 * 数据列表，其中list是JSON数据列表，目前只有招投标数据,其单项结构是

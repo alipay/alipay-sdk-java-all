@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.socialinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:13:25
+ * @since 1.0, 2024-03-01 16:34:54
  */
 public class AlipayUserSocialinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8458763779656151944L;
+	private static final long serialVersionUID = 5627526332979475428L;
 
 	/** 
 	 * 头像、昵称信息视图【注意】如果入参中某一userId不存在，返回的视图列表中将不包含该userId对应视图。（举例：入参里10个userId，其中1个userId不存在，则出参列表里有9个视图）

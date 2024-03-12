@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景钱包提现扩展参数
  *
  * @author auto create
- * @since 1.0, 2023-03-16 20:59:57
+ * @since 1.0, 2024-03-08 17:44:23
  */
 public class WithdrawExtend extends AlipayObject {
 
-	private static final long serialVersionUID = 2572818888749632461L;
+	private static final long serialVersionUID = 3223144856829914715L;
 
 	/**
 	 * 专项金额

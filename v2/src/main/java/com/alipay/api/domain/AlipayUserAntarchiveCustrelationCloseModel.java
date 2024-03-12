@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserAntarchiveCustrelationCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3619856981238833845L;
+	private static final long serialVersionUID = 8152572756554739492L;
 
 	/**
 	 * 关闭时间,可空.标准时间格式：yyyy-MM-dd HH:mm:ss

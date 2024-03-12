@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 舆情内容
  *
  * @author auto create
- * @since 1.0, 2024-02-26 11:26:22
+ * @since 1.0, 2024-03-05 13:51:36
  */
 public class UserFeedbackResult extends AlipayObject {
 
-	private static final long serialVersionUID = 3625273715327886577L;
+	private static final long serialVersionUID = 6868916425236461245L;
 
 	/**
 	 * 与appid对应
@@ -148,10 +148,17 @@ public class UserFeedbackResult extends AlipayObject {
 	private String picture;
 
 	/**
-	 * 平台id 1为支付宝钱包
+	 * 反馈来源平台：
+安卓系为1  苹果系为2  其他为3
 	 */
 	@ApiField("platform_id")
 	private String platformId;
+
+	/**
+	 * replays日志平台id
+	 */
+	@ApiField("replays_id")
+	private String replaysId;
 
 	/**
 	 * 舆情连接（anteye）
@@ -324,6 +331,13 @@ public class UserFeedbackResult extends AlipayObject {
 	}
 	public void setPlatformId(String platformId) {
 		this.platformId = platformId;
+	}
+
+	public String getReplaysId() {
+		return this.replaysId;
+	}
+	public void setReplaysId(String replaysId) {
+		this.replaysId = replaysId;
 	}
 
 	public String getUrl() {

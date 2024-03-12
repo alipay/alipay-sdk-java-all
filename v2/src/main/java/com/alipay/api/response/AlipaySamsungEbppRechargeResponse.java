@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.samsung.ebpp.recharge response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:12:42
+ * @since 1.0, 2024-03-01 16:26:19
  */
 public class AlipaySamsungEbppRechargeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6495364746431157281L;
+	private static final long serialVersionUID = 2172225754633498787L;
 
 	/** 
 	 * 直接返回页面

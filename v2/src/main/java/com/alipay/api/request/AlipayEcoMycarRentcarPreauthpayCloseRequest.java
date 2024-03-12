@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.mycar.rentcar.preauthpay.close request
  * 
  * @author auto create
- * @since 1.0, 2023-12-05 14:31:56
+ * @since 1.0, 2024-03-01 16:27:41
  */
 public class AlipayEcoMycarRentcarPreauthpayCloseRequest implements AlipayRequest<AlipayEcoMycarRentcarPreauthpayCloseResponse> {
 

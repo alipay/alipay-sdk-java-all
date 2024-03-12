@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pay.app.paysharingprod.familypay.query request
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 01:51:45
+ * @since 1.0, 2024-03-01 16:34:32
  */
 public class AlipayPayAppPaysharingprodFamilypayQueryRequest implements AlipayRequest<AlipayPayAppPaysharingprodFamilypayQueryResponse> {
 

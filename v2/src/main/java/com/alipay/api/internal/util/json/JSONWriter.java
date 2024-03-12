@@ -5,10 +5,7 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.internal.util.AlipayLogger;
 
-import java.beans.BeanInfo;
-import java.beans.IntrospectionException;
-import java.beans.Introspector;
-import java.beans.PropertyDescriptor;
+import java.beans.*;
 import java.lang.reflect.Array;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -25,6 +22,9 @@ public class JSONWriter {
     private Stack<Object> calls         = new Stack<Object>();
     private boolean       emitClassName = true;
     private DateFormat    format;
+    private static final String GET_PREFIX = "get";
+    private static final String SET_PREFIX = "set";
+    private static final String IS_PREFIX = "is";
 
     public JSONWriter(boolean emitClassName) {
         this.emitClassName = emitClassName;
@@ -158,8 +158,7 @@ public class JSONWriter {
                 ApiListField listField = field.getAnnotation(ApiListField.class);
                 // 优先处理列表类型注解,非列表类型才处理字段注解
                 if (listField != null) {
-                    PropertyDescriptor pd = new PropertyDescriptor(field.getName(),
-                            object.getClass());
+                    PropertyDescriptor pd = getPropertyDescriptor(field.getName(), object);
                     Method accessor = pd.getReadMethod();
                     if (!accessor.isAccessible()) { accessor.setAccessible(true); }
                     Object value = accessor.invoke(object, (Object[]) null);
@@ -168,8 +167,7 @@ public class JSONWriter {
                     add(listField.value(), value, true);
                     addedSomething = true;
                 } else if (jsonField != null) {
-                    PropertyDescriptor pd = new PropertyDescriptor(field.getName(),
-                            object.getClass());
+                    PropertyDescriptor pd = getPropertyDescriptor(field.getName(), object);
                     Method accessor = pd.getReadMethod();
                     if (!accessor.isAccessible()) { accessor.setAccessible(true); }
                     Object value = accessor.invoke(object, (Object[]) null);
@@ -189,6 +187,42 @@ public class JSONWriter {
             AlipayLogger.logBizError(e4);
         }
         add("}");
+    }
+
+    private PropertyDescriptor getPropertyDescriptor(String fieldName, Object object) throws IntrospectionException {
+        try {
+            return new PropertyDescriptor(fieldName, object.getClass());
+        } catch (IntrospectionException e) {
+            try {
+                return new PropertyDescriptor(fieldName, object.getClass(),
+                        GET_PREFIX + getSetMethod(fieldName), SET_PREFIX + getSetMethod(fieldName));
+            } catch (IntrospectionException ex) {
+                return new PropertyDescriptor(fieldName, object.getClass(),
+                        IS_PREFIX + getSetMethod(fieldName), SET_PREFIX + getSetMethod(fieldName));
+            }
+        }
+    }
+
+    /**
+     * 如果第二个字母是大写，则首字母不转大写
+     */
+    private String getSetMethod(String str) {
+        if (null == str || "".equals(str.trim())) {
+            return str;
+        }
+        char[] chars = str.toCharArray();
+        char c1 = chars[0];
+        if (c1 >= 97 && c1 <= 122) {
+            if (chars.length > 1) {
+                char c2 = chars[1];
+                if (!(c2 >= 65 && c2 <= 90)) {
+                    chars[0] = (char) (c1 - 32);
+                }
+            } else {
+                chars[0] = (char) (c1 - 32);
+            }
+        }
+        return new String(chars);
     }
 
     private void add(String name, Object value) {

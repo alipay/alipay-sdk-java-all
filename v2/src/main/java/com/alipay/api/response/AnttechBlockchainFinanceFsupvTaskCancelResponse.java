@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.finance.fsupv.task.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 17:21:41
+ * @since 1.0, 2024-03-01 16:25:20
  */
 public class AnttechBlockchainFinanceFsupvTaskCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4149931925765721541L;
+	private static final long serialVersionUID = 8487671575435723148L;
 
 	/** 
 	 * 资金管控任务编号

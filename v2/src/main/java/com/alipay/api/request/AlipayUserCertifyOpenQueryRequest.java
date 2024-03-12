@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.certify.open.query request
  * 
  * @author auto create
- * @since 1.0, 2024-02-22 09:54:19
+ * @since 1.0, 2024-03-04 14:51:14
  */
 public class AlipayUserCertifyOpenQueryRequest implements AlipayRequest<AlipayUserCertifyOpenQueryResponse> {
 

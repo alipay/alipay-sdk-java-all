@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.payafteruse.creditagreement.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-11 16:36:43
+ * @since 1.0, 2024-03-01 16:26:59
  */
 public class ZhimaCreditPayafteruseCreditagreementQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5389875251539447276L;
+	private static final long serialVersionUID = 4394288591131238669L;
 
 	/** 
 	 * 开通/授权状态，VALID: 有效，INVALID: 无效

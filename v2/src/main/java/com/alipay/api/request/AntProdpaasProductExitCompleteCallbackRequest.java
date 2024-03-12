@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.prodpaas.product.exit.complete.callback request
  * 
  * @author auto create
- * @since 1.0, 2023-11-22 14:02:06
+ * @since 1.0, 2024-03-12 09:32:31
  */
 public class AntProdpaasProductExitCompleteCallbackRequest implements AlipayRequest<AntProdpaasProductExitCompleteCallbackResponse> {
 

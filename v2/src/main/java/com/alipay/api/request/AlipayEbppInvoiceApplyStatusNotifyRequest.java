@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.invoice.apply.status.notify request
  * 
  * @author auto create
- * @since 1.0, 2023-09-11 20:01:49
+ * @since 1.0, 2024-03-01 16:26:17
  */
 public class AlipayEbppInvoiceApplyStatusNotifyRequest implements AlipayRequest<AlipayEbppInvoiceApplyStatusNotifyResponse> {
 

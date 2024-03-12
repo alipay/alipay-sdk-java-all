@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 问诊订单扩展信息
  *
  * @author auto create
- * @since 1.0, 2024-02-20 16:25:19
+ * @since 1.0, 2024-03-07 11:01:50
  */
 public class MedicalInquiryOrderExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8531816281738479777L;
+	private static final long serialVersionUID = 8536982325477197873L;
 
 	/**
 	 * 支付宝渠道订单标识，Y代表支付宝渠道订单
@@ -26,16 +26,40 @@ public class MedicalInquiryOrderExtInfo extends AlipayObject {
 	private String approveComment;
 
 	/**
+	 * 链接格式
+	 */
+	@ApiField("chat_url")
+	private String chatUrl;
+
+	/**
 	 * 联系医生问诊链接
 	 */
 	@ApiField("doctor_inquiry_link_page")
 	private String doctorInquiryLinkPage;
 
 	/**
+	 * 链接格式
+	 */
+	@ApiField("invoice_url")
+	private String invoiceUrl;
+
+	/**
+	 * 问诊订单评价信息
+	 */
+	@ApiField("medical_inquiry_order_evaluate_info")
+	private MedicalInquiryOrderEvaluateInfo medicalInquiryOrderEvaluateInfo;
+
+	/**
 	 * 订单所属pid
 	 */
 	@ApiField("order_pid")
 	private String orderPid;
+
+	/**
+	 * 链接格式
+	 */
+	@ApiField("refund_url")
+	private String refundUrl;
 
 	/**
 	 * 订单来源
@@ -57,6 +81,13 @@ public class MedicalInquiryOrderExtInfo extends AlipayObject {
 		this.approveComment = approveComment;
 	}
 
+	public String getChatUrl() {
+		return this.chatUrl;
+	}
+	public void setChatUrl(String chatUrl) {
+		this.chatUrl = chatUrl;
+	}
+
 	public String getDoctorInquiryLinkPage() {
 		return this.doctorInquiryLinkPage;
 	}
@@ -64,11 +95,32 @@ public class MedicalInquiryOrderExtInfo extends AlipayObject {
 		this.doctorInquiryLinkPage = doctorInquiryLinkPage;
 	}
 
+	public String getInvoiceUrl() {
+		return this.invoiceUrl;
+	}
+	public void setInvoiceUrl(String invoiceUrl) {
+		this.invoiceUrl = invoiceUrl;
+	}
+
+	public MedicalInquiryOrderEvaluateInfo getMedicalInquiryOrderEvaluateInfo() {
+		return this.medicalInquiryOrderEvaluateInfo;
+	}
+	public void setMedicalInquiryOrderEvaluateInfo(MedicalInquiryOrderEvaluateInfo medicalInquiryOrderEvaluateInfo) {
+		this.medicalInquiryOrderEvaluateInfo = medicalInquiryOrderEvaluateInfo;
+	}
+
 	public String getOrderPid() {
 		return this.orderPid;
 	}
 	public void setOrderPid(String orderPid) {
 		this.orderPid = orderPid;
+	}
+
+	public String getRefundUrl() {
+		return this.refundUrl;
+	}
+	public void setRefundUrl(String refundUrl) {
+		this.refundUrl = refundUrl;
 	}
 
 	public String getSource() {

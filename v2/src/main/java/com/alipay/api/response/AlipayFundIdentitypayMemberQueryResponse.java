@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.identitypay.member.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 14:56:43
+ * @since 1.0, 2024-03-01 16:34:30
  */
 public class AlipayFundIdentitypayMemberQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4493287213681375871L;
+	private static final long serialVersionUID = 5436998752198225582L;
 
 	/** 
 	 * 鉴权方式标签

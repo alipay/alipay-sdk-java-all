@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.pe.user.order.consult response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-17 15:32:23
+ * @since 1.0, 2024-03-01 16:27:41
  */
 public class ZhimaCreditPeUserOrderConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7575128978256919334L;
+	private static final long serialVersionUID = 7317823794846194897L;
 
 	/** 
 	 * 实际可免押额度，取值范围[0.01,100000000]，精确到小数点后2位

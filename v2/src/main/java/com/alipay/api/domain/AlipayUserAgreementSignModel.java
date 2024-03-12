@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝个人协议签约接口
  *
  * @author auto create
- * @since 1.0, 2023-12-18 14:50:33
+ * @since 1.0, 2024-03-01 14:29:20
  */
 public class AlipayUserAgreementSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1371578437155384427L;
+	private static final long serialVersionUID = 7178293463496114558L;
 
 	/**
 	 * 用户的支付宝登录账号，支持邮箱或手机号码格式。

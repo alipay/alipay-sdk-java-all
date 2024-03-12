@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.twc.preauthinfo.query request
  * 
  * @author auto create
- * @since 1.0, 2023-08-23 22:01:48
+ * @since 1.0, 2024-03-04 15:00:15
  */
 public class AnttechBlockchainTwcPreauthinfoQueryRequest implements AlipayRequest<AnttechBlockchainTwcPreauthinfoQueryResponse> {
 

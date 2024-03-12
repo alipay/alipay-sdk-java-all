@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.servicemarket.qrcode.offline.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-25 17:26:54
+ * @since 1.0, 2024-03-06 13:46:59
  */
 public class AlipayOpenServicemarketQrcodeOfflineGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5616954787255814156L;
+	private static final long serialVersionUID = 3326755491348451389L;
 
 	/** 
 	 * 服务logo，该字段是服务的logo，用于前端展示

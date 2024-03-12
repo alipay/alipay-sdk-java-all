@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用于服务商回查服务市场订单明细信息
  *
  * @author auto create
- * @since 1.0, 2023-12-15 12:06:13
+ * @since 1.0, 2024-03-06 13:45:14
  */
 public class AlipayOpenServicemarketOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8316336411861972933L;
+	private static final long serialVersionUID = 7331961474834789976L;
 
 	/**
 	 * 订购服务订单ID，通过支付宝发送的 https://opendocs.alipay.com/apis/api_3/alipay.open.servicemarket.order.notify(服务市场商户确认订购通知) 通知获取。

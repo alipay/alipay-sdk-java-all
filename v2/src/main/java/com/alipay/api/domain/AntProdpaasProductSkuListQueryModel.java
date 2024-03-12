@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 供应链商品信息同步
  *
  * @author auto create
- * @since 1.0, 2023-11-22 14:01:31
+ * @since 1.0, 2024-03-12 09:32:59
  */
 public class AntProdpaasProductSkuListQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5285487591525134856L;
+	private static final long serialVersionUID = 5192227228847155745L;
 
 	/**
 	 * 商品编码

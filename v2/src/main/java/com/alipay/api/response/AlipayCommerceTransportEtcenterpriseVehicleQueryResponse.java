@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.etcenterprise.vehicle.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-20 11:16:58
+ * @since 1.0, 2024-03-01 16:28:53
  */
 public class AlipayCommerceTransportEtcenterpriseVehicleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7381667191692456971L;
+	private static final long serialVersionUID = 4629892495882365358L;
 
 	/** 
 	 * 支付宝etc平台扣款协议号

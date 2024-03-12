@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务商作业数据回传
  *
  * @author auto create
- * @since 1.0, 2021-12-06 10:38:42
+ * @since 1.0, 2024-03-07 10:56:18
  */
 public class AlipayOpenSpIsvOperationSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5371686639181174165L;
+	private static final long serialVersionUID = 2399833696153161836L;
 
 	/**
 	 * 客户类型，PERSONAL表示个人，ALIPAY_RECOMMEND表示支付宝推荐

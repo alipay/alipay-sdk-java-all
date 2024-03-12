@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务商拒绝接单
  *
  * @author auto create
- * @since 1.0, 2022-11-22 17:24:49
+ * @since 1.0, 2024-03-06 13:45:15
  */
 public class AlipayOpenServicemarketOrderRejectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2361686166696151776L;
+	private static final long serialVersionUID = 6134621812268664966L;
 
 	/**
 	 * 订购服务商品订单ID

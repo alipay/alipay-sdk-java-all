@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zoloz.authentication.customer.facemanage.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-09-11 18:21:45
+ * @since 1.0, 2024-03-01 16:29:00
  */
 public class ZolozAuthenticationCustomerFacemanageDeleteRequest implements AlipayRequest<ZolozAuthenticationCustomerFacemanageDeleteResponse> {
 

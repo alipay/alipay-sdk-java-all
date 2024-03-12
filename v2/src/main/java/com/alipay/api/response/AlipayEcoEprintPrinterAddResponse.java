@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.eprint.printer.add response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-23 20:36:11
+ * @since 1.0, 2024-03-01 16:27:40
  */
 public class AlipayEcoEprintPrinterAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4889623136483526169L;
+	private static final long serialVersionUID = 2143445464449879966L;
 
 	
 

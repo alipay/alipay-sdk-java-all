@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.acommunication.creditphone.order.finish request
  * 
  * @author auto create
- * @since 1.0, 2024-02-01 15:26:59
+ * @since 1.0, 2024-03-06 10:31:58
  */
 public class AlipayCommerceAcommunicationCreditphoneOrderFinishRequest implements AlipayRequest<AlipayCommerceAcommunicationCreditphoneOrderFinishResponse> {
 

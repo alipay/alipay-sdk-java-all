@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.instantdelivery.account.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-11 16:40:13
+ * @since 1.0, 2024-03-01 16:28:32
  */
 public class AlipayOpenInstantdeliveryAccountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6711557119783354614L;
+	private static final long serialVersionUID = 3148884582686666372L;
 
 	/** 
 	 * 账户余额

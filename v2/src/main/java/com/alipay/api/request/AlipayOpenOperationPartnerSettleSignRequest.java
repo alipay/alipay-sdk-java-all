@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.operation.partner.settle.sign request
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 20:23:04
+ * @since 1.0, 2024-03-01 16:28:34
  */
 public class AlipayOpenOperationPartnerSettleSignRequest implements AlipayRequest<AlipayOpenOperationPartnerSettleSignResponse> {
 

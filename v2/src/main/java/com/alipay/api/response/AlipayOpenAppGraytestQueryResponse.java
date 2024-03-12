@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.graytest.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-02-01 15:05:56
+ * @since 1.0, 2024-03-11 16:10:05
  */
 public class AlipayOpenAppGraytestQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8677382525357298174L;
+	private static final long serialVersionUID = 8268914563116922829L;
 
 	
 

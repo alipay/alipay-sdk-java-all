@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.dataservice.verify.aa.query request
  * 
  * @author auto create
- * @since 1.0, 2023-08-24 22:41:42
+ * @since 1.0, 2024-03-01 16:27:01
  */
 public class AlipayDataDataserviceVerifyAaQueryRequest implements AlipayRequest<AlipayDataDataserviceVerifyAaQueryResponse> {
 

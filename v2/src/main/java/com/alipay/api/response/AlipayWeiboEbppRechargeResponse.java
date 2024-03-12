@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.weibo.ebpp.recharge response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-02 20:25:46
+ * @since 1.0, 2024-03-01 16:29:14
  */
 public class AlipayWeiboEbppRechargeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3896259163462517319L;
+	private static final long serialVersionUID = 8663928262673249263L;
 
 	/** 
 	 * 返回缴费页面

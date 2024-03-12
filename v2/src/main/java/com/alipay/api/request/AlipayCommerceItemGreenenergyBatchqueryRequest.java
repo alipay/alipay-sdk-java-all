@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.item.greenenergy.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 04:16:47
+ * @since 1.0, 2024-03-01 16:34:26
  */
 public class AlipayCommerceItemGreenenergyBatchqueryRequest implements AlipayRequest<AlipayCommerceItemGreenenergyBatchqueryResponse> {
 

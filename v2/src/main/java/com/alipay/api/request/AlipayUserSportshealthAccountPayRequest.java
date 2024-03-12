@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.sportshealth.account.pay request
  * 
  * @author auto create
- * @since 1.0, 2023-08-24 22:36:47
+ * @since 1.0, 2024-03-01 16:29:14
  */
 public class AlipayUserSportshealthAccountPayRequest implements AlipayRequest<AlipayUserSportshealthAccountPayResponse> {
 

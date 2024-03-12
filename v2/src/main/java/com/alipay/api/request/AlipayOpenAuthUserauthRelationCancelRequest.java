@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.auth.userauth.relation.cancel request
  * 
  * @author auto create
- * @since 1.0, 2023-08-23 20:43:03
+ * @since 1.0, 2024-03-01 16:27:39
  */
 public class AlipayOpenAuthUserauthRelationCancelRequest implements AlipayRequest<AlipayOpenAuthUserauthRelationCancelResponse> {
 

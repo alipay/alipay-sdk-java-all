@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.open.indramount.preconsult response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 03:01:45
+ * @since 1.0, 2024-03-01 16:27:39
  */
 public class AlipayOverseasOpenIndramountPreconsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5353668554699687562L;
+	private static final long serialVersionUID = 5555741335138426471L;
 
 	/** 
 	 * 金额信息

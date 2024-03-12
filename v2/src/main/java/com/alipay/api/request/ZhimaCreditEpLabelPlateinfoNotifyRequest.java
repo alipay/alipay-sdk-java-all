@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.ep.label.plateinfo.notify request
  * 
  * @author auto create
- * @since 1.0, 2024-01-08 10:21:56
+ * @since 1.0, 2024-03-01 16:28:48
  */
 public class ZhimaCreditEpLabelPlateinfoNotifyRequest implements AlipayRequest<ZhimaCreditEpLabelPlateinfoNotifyResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.kms.pubkey.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 17:02:53
+ * @since 1.0, 2024-03-01 16:29:08
  */
 public class AlipayEbppIndustryKmsPubkeyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3543587891247347633L;
+	private static final long serialVersionUID = 4493693516318691638L;
 
 	/** 
 	 * 使用调用方公钥加密过的用户公钥

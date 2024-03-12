@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.tax.advanced.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-06-19 15:07:56
+ * @since 1.0, 2024-03-01 16:27:05
  */
 public class AlipayOverseasTaxAdvancedCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1129164193235493636L;
+	private static final long serialVersionUID = 3779284576777287361L;
 
 	/** 
 	 * 线上预授权下单时返回，用于唤起收银台的参数，有效期15分钟。过期后无法唤起收银台，可以使用相同的out_tax_refund_no重新下单来获取新的order_str

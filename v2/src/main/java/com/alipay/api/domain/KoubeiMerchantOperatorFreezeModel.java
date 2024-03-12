@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiMerchantOperatorFreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6847175649211491264L;
+	private static final long serialVersionUID = 3575944267714212241L;
 
 	/**
 	 * 操作码

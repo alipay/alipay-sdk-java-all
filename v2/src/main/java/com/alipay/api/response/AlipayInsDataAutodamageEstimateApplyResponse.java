@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.data.autodamage.estimate.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 17:45:16
+ * @since 1.0, 2024-03-01 16:28:33
  */
 public class AlipayInsDataAutodamageEstimateApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2767664591793244319L;
+	private static final long serialVersionUID = 8511418189921499186L;
 
 	
 

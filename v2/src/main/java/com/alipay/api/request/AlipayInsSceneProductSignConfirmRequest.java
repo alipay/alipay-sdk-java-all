@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.product.sign.confirm request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 08:42:00
+ * @since 1.0, 2024-03-01 16:28:29
  */
 public class AlipayInsSceneProductSignConfirmRequest implements AlipayRequest<AlipayInsSceneProductSignConfirmResponse> {
 

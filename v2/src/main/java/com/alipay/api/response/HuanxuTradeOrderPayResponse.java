@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: huanxu.trade.order.pay response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-29 09:19:59
+ * @since 1.0, 2024-03-01 16:29:02
  */
 public class HuanxuTradeOrderPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2432263886693725717L;
+	private static final long serialVersionUID = 8318113886218885561L;
 
 	/** 
 	 * 聚合支付的支付渠道，焕旭分配。

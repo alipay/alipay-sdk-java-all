@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class QueryGroup extends AlipayObject {
 
-	private static final long serialVersionUID = 2686658436726999342L;
+	private static final long serialVersionUID = 1527843121972429267L;
 
 	/**
 	 * 人群中包含人数

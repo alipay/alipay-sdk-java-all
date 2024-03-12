@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.market.shop.discount.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 03:01:45
+ * @since 1.0, 2024-03-01 16:26:16
  */
 public class AlipayOfflineMarketShopDiscountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5829481767738639545L;
+	private static final long serialVersionUID = 6554351756147442949L;
 
 	/** 
 	 * 返回商户正在进行中的活动摘要列表数据，注意：如果入参query_type不传递或者传递错误值，该参数将不会返回。

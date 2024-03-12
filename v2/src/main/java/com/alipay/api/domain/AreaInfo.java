@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AreaInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7255972959638438816L;
+	private static final long serialVersionUID = 8689456395421884138L;
 
 	/**
 	 * 城市

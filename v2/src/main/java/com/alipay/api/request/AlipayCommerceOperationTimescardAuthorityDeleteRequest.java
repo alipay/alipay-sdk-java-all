@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.timescard.authority.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 22:32:00
+ * @since 1.0, 2024-03-01 16:27:42
  */
 public class AlipayCommerceOperationTimescardAuthorityDeleteRequest implements AlipayRequest<AlipayCommerceOperationTimescardAuthorityDeleteResponse> {
 

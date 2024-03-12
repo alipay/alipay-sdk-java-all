@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业法定代表人核验服务
  *
  * @author auto create
- * @since 1.0, 2023-12-01 16:36:19
+ * @since 1.0, 2024-02-29 17:32:52
  */
 public class ZhimaCreditEpRelatedPerformanceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4516222569285335866L;
+	private static final long serialVersionUID = 5529775332845359628L;
 
 	/**
 	 * 企业标识（统一信用代码/注册号/企业名）

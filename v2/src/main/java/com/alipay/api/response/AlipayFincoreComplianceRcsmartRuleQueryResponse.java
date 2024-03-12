@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fincore.compliance.rcsmart.rule.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 22:02:05
+ * @since 1.0, 2024-03-01 16:29:19
  */
 public class AlipayFincoreComplianceRcsmartRuleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8844348728565721745L;
+	private static final long serialVersionUID = 7541267562317158619L;
 
 	/** 
 	 * 规则查询结果

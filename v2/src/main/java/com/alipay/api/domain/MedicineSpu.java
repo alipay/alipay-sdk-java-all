@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 医药标准商品信息
  *
  * @author auto create
- * @since 1.0, 2024-02-28 10:00:21
+ * @since 1.0, 2024-03-04 15:11:33
  */
 public class MedicineSpu extends AlipayObject {
 
-	private static final long serialVersionUID = 6697938712384993365L;
+	private static final long serialVersionUID = 6682243295884177121L;
 
 	/**
 	 * 药品类型特有字段，给药途径
@@ -272,7 +272,7 @@ MEDICAL_DEVICE - 医疗器械
 	private String productCategory;
 
 	/**
-	 * 产品69码
+	 * 标品69码
 	 */
 	@ApiField("product_code")
 	private String productCode;
@@ -284,7 +284,7 @@ MEDICAL_DEVICE - 医疗器械
 	private String productionLicenseNumber;
 
 	/**
-	 * 药品类型特有字段且必传，监管分级
+	 * 药品类型特有字段，监管分级
 	 */
 	@ApiField("regulatory_classification")
 	private String regulatoryClassification;
@@ -344,7 +344,7 @@ MEDICAL_DEVICE - 医疗器械
 	private String unsuitablePopulation;
 
 	/**
-	 * 内部标品唯一标识
+	 * 外部标品唯一id
 	 */
 	@ApiField("upc")
 	private String upc;

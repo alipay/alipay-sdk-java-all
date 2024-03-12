@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.saas.ai.use response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-07 11:41:55
+ * @since 1.0, 2024-03-01 16:27:53
  */
 public class AlipayCloudCloudbaseSaasAiUseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1338271697983533253L;
+	private static final long serialVersionUID = 7458545232736977326L;
 
 	/** 
 	 * 返回OCR结果数据，即返回图片中识别出来的文字内容，具体内容由上传图片决定

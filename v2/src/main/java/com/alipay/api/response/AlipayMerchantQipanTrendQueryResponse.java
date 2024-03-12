@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.qipan.trend.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-19 15:40:31
+ * @since 1.0, 2024-03-01 16:26:19
  */
 public class AlipayMerchantQipanTrendQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7642786525467413551L;
+	private static final long serialVersionUID = 3812896544131125621L;
 
 	/** 
 	 * 趋势分析数据

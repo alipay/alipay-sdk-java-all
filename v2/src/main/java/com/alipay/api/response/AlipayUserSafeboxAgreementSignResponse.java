@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.safebox.agreement.sign response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 00:05:19
+ * @since 1.0, 2024-03-01 16:26:59
  */
 public class AlipayUserSafeboxAgreementSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6323487264623249293L;
+	private static final long serialVersionUID = 6745657311294262218L;
 
 	
 

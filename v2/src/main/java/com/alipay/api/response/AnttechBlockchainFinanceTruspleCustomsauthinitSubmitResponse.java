@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.finance.trusple.customsauthinit.submit response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-23 21:19:34
+ * @since 1.0, 2024-03-01 16:27:34
  */
 public class AnttechBlockchainFinanceTruspleCustomsauthinitSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2376595244841629564L;
+	private static final long serialVersionUID = 7469266161923246774L;
 
 	/** 
 	 * 客户数据授权协议书编号

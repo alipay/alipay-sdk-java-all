@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.userinfo.charge response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-19 16:10:25
+ * @since 1.0, 2024-03-01 16:34:54
  */
 public class AlipayUserUserinfoChargeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6248293666182188821L;
+	private static final long serialVersionUID = 7167235631871891667L;
 
 	/** 
 	 * 1

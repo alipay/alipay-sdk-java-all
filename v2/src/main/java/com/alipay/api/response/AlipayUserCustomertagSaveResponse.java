@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.customertag.save response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 23:22:03
+ * @since 1.0, 2024-03-01 16:28:47
  */
 public class AlipayUserCustomertagSaveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3659916389753711675L;
+	private static final long serialVersionUID = 2392884543649469287L;
 
 	
 

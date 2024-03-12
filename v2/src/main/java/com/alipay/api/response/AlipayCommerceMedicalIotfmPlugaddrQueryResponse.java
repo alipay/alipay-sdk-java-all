@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.iotfm.plugaddr.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-24 14:01:46
+ * @since 1.0, 2024-03-01 16:34:26
  */
 public class AlipayCommerceMedicalIotfmPlugaddrQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4638423862115643215L;
+	private static final long serialVersionUID = 6542531342776495641L;
 
 	/** 
 	 * 访问令牌

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分账条款明细
  *
  * @author auto create
- * @since 1.0, 2023-09-25 11:07:30
+ * @since 1.0, 2024-03-01 14:29:22
  */
 public class RoyaltyDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6111872162619331643L;
+	private static final long serialVersionUID = 1479778947347844235L;
 
 	/**
 	 * 分账金额，单位为元
@@ -24,6 +24,12 @@ public class RoyaltyDetailInfo extends AlipayObject {
 	 */
 	@ApiField("desc")
 	private String desc;
+
+	/**
+	 * 分账场景，目前仅支持5中类型，RETURN_MONEY(垫资还款), CHARGE（费用）, REPLENISH（补贴），FUND_TRANS_IN_SWITCHING（存量资金搬迁），PUNISHMENT（处罚）
+	 */
+	@ApiField("scene")
+	private String scene;
 
 	/**
 	 * 分账转入账户id。当分账账户id类型是cardSerialNo时，本参数为用户在支付宝绑定的卡编号；当分账账户id类型是userId时，本参数为用户的支付宝账号对应的支付宝唯一用户号；当分账账户id类型是loginName时，本参数为用户的支付宝登录号;当分账账户id类型是openId时，本参数为用户的在该应用下的支付宝OpenId; 当 trans_in_account_type 为defaultSettle时，本参数必须为空
@@ -42,6 +48,12 @@ public class RoyaltyDetailInfo extends AlipayObject {
 	 */
 	@ApiField("trans_in_account_type")
 	private String transInAccountType;
+
+	/**
+	 * 分账账户业务类型，目前仅支持已结算类型 settled
+	 */
+	@ApiField("trans_in_entity_biz_type")
+	private String transInEntityBizType;
 
 	/**
 	 * 分账转出主体账 号。
@@ -65,6 +77,12 @@ Store: 分账转入主体为门店
 	 */
 	@ApiField("trans_in_sub_merchant")
 	private SubMerchant transInSubMerchant;
+
+	/**
+	 * 分账转出方主体业务类型，目前仅支持已结算类型 settled
+	 */
+	@ApiField("trans_out_entity_biz_type")
+	private String transOutEntityBizType;
 
 	/**
 	 * 分账转出主体账。
@@ -103,6 +121,13 @@ Store: 结算主体为门店
 		this.desc = desc;
 	}
 
+	public String getScene() {
+		return this.scene;
+	}
+	public void setScene(String scene) {
+		this.scene = scene;
+	}
+
 	public String getTransInAccountId() {
 		return this.transInAccountId;
 	}
@@ -124,6 +149,13 @@ Store: 结算主体为门店
 		this.transInAccountType = transInAccountType;
 	}
 
+	public String getTransInEntityBizType() {
+		return this.transInEntityBizType;
+	}
+	public void setTransInEntityBizType(String transInEntityBizType) {
+		this.transInEntityBizType = transInEntityBizType;
+	}
+
 	public String getTransInEntityId() {
 		return this.transInEntityId;
 	}
@@ -143,6 +175,13 @@ Store: 结算主体为门店
 	}
 	public void setTransInSubMerchant(SubMerchant transInSubMerchant) {
 		this.transInSubMerchant = transInSubMerchant;
+	}
+
+	public String getTransOutEntityBizType() {
+		return this.transOutEntityBizType;
+	}
+	public void setTransOutEntityBizType(String transOutEntityBizType) {
+		this.transOutEntityBizType = transOutEntityBizType;
 	}
 
 	public String getTransOutEntityId() {

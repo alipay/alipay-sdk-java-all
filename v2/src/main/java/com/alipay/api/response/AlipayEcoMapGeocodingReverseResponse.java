@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.map.geocoding.reverse response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 05:03:11
+ * @since 1.0, 2024-03-01 16:28:50
  */
 public class AlipayEcoMapGeocodingReverseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2112894889434448879L;
+	private static final long serialVersionUID = 7632142599278879642L;
 
 	/** 
 	 * 城市名称

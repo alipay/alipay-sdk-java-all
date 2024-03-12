@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.supplychain.trade.netting.refund response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 03:28:45
+ * @since 1.0, 2024-03-01 16:27:35
  */
 public class MybankCreditSupplychainTradeNettingRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8799211496379325667L;
+	private static final long serialVersionUID = 8159818846368765261L;
 
 	/** 
 	 * 业务事件受理的流水号，建议调用方保持此流水号，以方便后续业务处理

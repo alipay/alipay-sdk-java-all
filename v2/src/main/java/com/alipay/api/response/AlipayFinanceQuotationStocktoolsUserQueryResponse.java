@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.finance.quotation.stocktools.user.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 17:51:46
+ * @since 1.0, 2024-03-01 16:26:14
  */
 public class AlipayFinanceQuotationStocktoolsUserQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6742949994465176259L;
+	private static final long serialVersionUID = 7842219265713789747L;
 
 	/** 
 	 * 是否存在有效的订阅。如果存在有效的订阅，说明用户是已经付费过的用户，可查看完整的服务内容。

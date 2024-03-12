@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.info.analysis request
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 04:13:05
+ * @since 1.0, 2024-03-01 16:28:26
  */
 public class AlipaySecurityInfoAnalysisRequest implements AlipayRequest<AlipaySecurityInfoAnalysisResponse> {
 

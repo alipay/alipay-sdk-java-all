@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.digitalmgmt.hrhealth.kdys.personinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-19 21:06:44
+ * @since 1.0, 2024-03-01 16:34:28
  */
 public class AlipayDigitalmgmtHrhealthKdysPersoninfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4679698953933732536L;
+	private static final long serialVersionUID = 5761565675222342124L;
 
 	/** 
 	 * 出生日期，yyyy-MM-dd格式

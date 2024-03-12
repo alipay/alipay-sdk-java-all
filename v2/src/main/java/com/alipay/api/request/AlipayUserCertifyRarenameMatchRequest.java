@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.certify.rarename.match request
  * 
  * @author auto create
- * @since 1.0, 2023-08-23 14:21:43
+ * @since 1.0, 2024-03-01 16:27:41
  */
 public class AlipayUserCertifyRarenameMatchRequest implements AlipayRequest<AlipayUserCertifyRarenameMatchResponse> {
 

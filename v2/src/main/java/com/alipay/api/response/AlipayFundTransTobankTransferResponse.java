@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.tobank.transfer response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-03 23:04:52
+ * @since 1.0, 2024-03-01 16:27:53
  */
 public class AlipayFundTransTobankTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6597825345199678564L;
+	private static final long serialVersionUID = 5864324924836885845L;
 
 	/** 
 	 * 预计到账时间，格式为yyyy-MM-ddHH:mm:ss，转账受理失败不返回。

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.receipt.send response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-11 21:56:56
+ * @since 1.0, 2024-03-01 16:25:18
  */
 public class AlipayCommerceReceiptSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3262162457229267891L;
+	private static final long serialVersionUID = 1272442149771734221L;
 
 	/** 
 	 * 商品列表中有对应的环保类型时，需要返回

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.enterprise.auth.apply response.
  * 
  * @author auto create
- * @since 1.0, 2024-02-19 10:22:56
+ * @since 1.0, 2024-03-01 16:47:49
  */
 public class AlipayCommerceEcEnterpriseAuthApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8122247346954189886L;
+	private static final long serialVersionUID = 6329652348587487378L;
 
 	/** 
 	 * 企业认证申请记录ID

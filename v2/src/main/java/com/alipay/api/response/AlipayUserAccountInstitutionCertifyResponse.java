@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.account.institution.certify response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:09:17
+ * @since 1.0, 2024-03-01 16:26:12
  */
 public class AlipayUserAccountInstitutionCertifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3473256665224273554L;
+	private static final long serialVersionUID = 1245754236574394655L;
 
 	/** 
 	 * 机构是否存在的标示

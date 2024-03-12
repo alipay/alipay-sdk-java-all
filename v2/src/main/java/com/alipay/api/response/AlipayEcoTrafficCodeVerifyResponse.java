@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.traffic.code.verify response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 05:33:04
+ * @since 1.0, 2024-03-01 16:28:29
  */
 public class AlipayEcoTrafficCodeVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4263992334451563473L;
+	private static final long serialVersionUID = 4235997358355395618L;
 
 	/** 
 	 * 解码是否成功

@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 交易组件订单退款接口
  *
  * @author auto create
- * @since 1.0, 2024-02-23 15:04:58
+ * @since 1.0, 2024-03-11 19:53:14
  */
 public class AlipayOpenMiniOrderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8844266414835564737L;
+	private static final long serialVersionUID = 2357897712128421599L;
+
+	/**
+	 * 分期单号,指定分期退款的时候需要传入
+	 */
+	@ApiField("installment_order_id")
+	private String installmentOrderId;
 
 	/**
 	 * 部分商品退款信息
@@ -66,6 +72,13 @@ public class AlipayOpenMiniOrderRefundModel extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getInstallmentOrderId() {
+		return this.installmentOrderId;
+	}
+	public void setInstallmentOrderId(String installmentOrderId) {
+		this.installmentOrderId = installmentOrderId;
+	}
 
 	public List<MiniRefundGoodsInfoDTO> getItemInfos() {
 		return this.itemInfos;

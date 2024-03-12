@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 运营商行业信用购主单完结
  *
  * @author auto create
- * @since 1.0, 2024-02-01 15:23:59
+ * @since 1.0, 2024-03-06 10:27:16
  */
 public class AlipayCommerceAcommunicationCreditphoneOrderFinishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5659762889736678225L;
+	private static final long serialVersionUID = 2354475326275397768L;
 
 	/**
 	 * 支付宝openid
@@ -30,6 +30,12 @@ public class AlipayCommerceAcommunicationCreditphoneOrderFinishModel extends Ali
 	 */
 	@ApiField("alipay_user_id")
 	private String alipayUserId;
+
+	/**
+	 * 完结请求号
+	 */
+	@ApiField("finish_request_no")
+	private String finishRequestNo;
 
 	public String getAlipayOpenId() {
 		return this.alipayOpenId;
@@ -50,6 +56,13 @@ public class AlipayCommerceAcommunicationCreditphoneOrderFinishModel extends Ali
 	}
 	public void setAlipayUserId(String alipayUserId) {
 		this.alipayUserId = alipayUserId;
+	}
+
+	public String getFinishRequestNo() {
+		return this.finishRequestNo;
+	}
+	public void setFinishRequestNo(String finishRequestNo) {
+		this.finishRequestNo = finishRequestNo;
 	}
 
 }

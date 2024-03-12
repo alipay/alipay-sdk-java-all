@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.dd.dstest.modify response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-29 16:12:01
+ * @since 1.0, 2024-03-01 16:26:20
  */
 public class AlipayOpenDdDstestModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1183723151678632836L;
+	private static final long serialVersionUID = 1679417763215932911L;
 
 	
 

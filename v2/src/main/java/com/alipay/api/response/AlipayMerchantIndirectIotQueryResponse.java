@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.indirect.iot.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-02-28 15:37:01
+ * @since 1.0, 2024-03-01 16:29:17
  */
 public class AlipayMerchantIndirectIotQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6814178345864459154L;
+	private static final long serialVersionUID = 2138331927873518657L;
 
 	/** 
 	 * 内容id，不同物联网平台值类型不一样

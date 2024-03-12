@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.employment.groupsuborder.add response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-25 16:28:54
+ * @since 1.0, 2024-03-01 16:28:36
  */
 public class AlipayInsSceneEmploymentGroupsuborderAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5413595378221249362L;
+	private static final long serialVersionUID = 6495161471533568141L;
 
 	/** 
 	 * 批次号

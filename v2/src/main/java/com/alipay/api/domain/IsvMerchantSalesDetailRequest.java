@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * S1回传商户销售数据时，回传使用的对象
  *
  * @author auto create
- * @since 1.0, 2021-11-01 19:42:50
+ * @since 1.0, 2024-03-07 10:55:52
  */
 public class IsvMerchantSalesDetailRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 8438418798334426119L;
+	private static final long serialVersionUID = 6533394133661217287L;
 
 	/**
 	 * 配券数

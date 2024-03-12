@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.file.output.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-11 16:31:48
+ * @since 1.0, 2024-03-01 16:27:43
  */
 public class AlipayEbppInvoiceFileOutputQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3687499792427256669L;
+	private static final long serialVersionUID = 3839612523253163862L;
 
 	/** 
 	 * 发票文件类型pdf或ofd

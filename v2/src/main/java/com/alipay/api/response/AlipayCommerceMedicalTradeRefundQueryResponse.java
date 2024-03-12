@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.trade.refund.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-02-21 14:47:10
+ * @since 1.0, 2024-03-01 16:25:24
  */
 public class AlipayCommerceMedicalTradeRefundQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6741897996237385513L;
+	private static final long serialVersionUID = 3728927456981956969L;
 
 	/** 
 	 * 支付宝交易号

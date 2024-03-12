@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.promorulecenter.rule.analyze response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-23 20:16:44
+ * @since 1.0, 2024-03-01 16:27:58
  */
 public class AlipayPromorulecenterRuleAnalyzeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1698631427575554542L;
+	private static final long serialVersionUID = 1872613212218695772L;
 
 	/** 
 	 * 未通过条件描述信息

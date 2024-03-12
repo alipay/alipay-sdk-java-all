@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.asset.point.voucherprod.assetbill.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 01:22:25
+ * @since 1.0, 2024-03-01 16:27:35
  */
 public class AlipayAssetPointVoucherprodAssetbillQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3489295977612198759L;
+	private static final long serialVersionUID = 8226159768859199458L;
 
 	/** 
 	 * 单据流水列表

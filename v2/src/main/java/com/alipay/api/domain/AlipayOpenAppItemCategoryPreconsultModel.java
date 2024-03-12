@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品类目预咨询接口
  *
  * @author auto create
- * @since 1.0, 2023-11-17 13:23:40
+ * @since 1.0, 2024-03-07 10:42:58
  */
 public class AlipayOpenAppItemCategoryPreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5643275472816928836L;
+	private static final long serialVersionUID = 1275441947273553223L;
 
 	/**
 	 * 商品详情图的图片ID。文件id通过alipay.open.file.upload 上传资源获取file_id，或通过alipay.marketing.image.enhance.upload获取image_id均可上传成功

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.deductionorder.pay response.
  * 
  * @author auto create
- * @since 1.0, 2024-02-28 09:53:19
+ * @since 1.0, 2024-03-01 16:25:21
  */
 public class AlipayCommerceDeductionorderPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4236592373975987486L;
+	private static final long serialVersionUID = 4187344217774632227L;
 
 	/** 
 	 * 交易号

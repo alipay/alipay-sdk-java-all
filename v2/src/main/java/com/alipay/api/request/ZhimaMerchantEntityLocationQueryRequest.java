@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.merchant.entity.location.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 22:17:15
+ * @since 1.0, 2024-03-01 16:34:59
  */
 public class ZhimaMerchantEntityLocationQueryRequest implements AlipayRequest<ZhimaMerchantEntityLocationQueryResponse> {
 

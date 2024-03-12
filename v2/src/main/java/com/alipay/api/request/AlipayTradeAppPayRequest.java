@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.trade.app.pay request
  * 
  * @author auto create
- * @since 1.0, 2024-02-20 14:14:00
+ * @since 1.0, 2024-03-06 10:24:31
  */
 public class AlipayTradeAppPayRequest implements AlipayRequest<AlipayTradeAppPayResponse> {
 

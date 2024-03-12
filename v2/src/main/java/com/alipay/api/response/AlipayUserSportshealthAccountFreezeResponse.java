@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.sportshealth.account.freeze response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 03:36:58
+ * @since 1.0, 2024-03-01 16:28:33
  */
 public class AlipayUserSportshealthAccountFreezeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4296843279416931384L;
+	private static final long serialVersionUID = 2884879151579384567L;
 
 	/** 
 	 * 运动币账户支付流水号,运动侧作为事务id

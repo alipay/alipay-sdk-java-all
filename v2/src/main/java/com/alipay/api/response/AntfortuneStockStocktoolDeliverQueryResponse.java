@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.stock.stocktool.deliver.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 02:26:46
+ * @since 1.0, 2024-03-01 16:27:33
  */
 public class AntfortuneStockStocktoolDeliverQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7859776333828874132L;
+	private static final long serialVersionUID = 4533725689955896869L;
 
 	/** 
 	 * 蚂蚁统一会员ID

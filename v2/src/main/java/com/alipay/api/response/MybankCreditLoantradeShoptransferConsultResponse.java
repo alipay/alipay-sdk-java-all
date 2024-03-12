@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.loantrade.shoptransfer.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 04:43:36
+ * @since 1.0, 2024-03-01 16:26:17
  */
 public class MybankCreditLoantradeShoptransferConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5816153161457798647L;
+	private static final long serialVersionUID = 5661684476651721999L;
 
 	/** 
 	 * 咨询结果,allow(允许转让)/refuse(拒绝)

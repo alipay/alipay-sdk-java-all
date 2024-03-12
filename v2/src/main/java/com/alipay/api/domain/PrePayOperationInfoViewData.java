@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 渠道运营展示数据
  *
  * @author auto create
- * @since 1.0, 2024-01-03 17:05:37
+ * @since 1.0, 2024-03-06 14:14:26
  */
 public class PrePayOperationInfoViewData extends AlipayObject {
 
-	private static final long serialVersionUID = 4221359881933699176L;
+	private static final long serialVersionUID = 3657426352183739869L;
 
 	/**
 	 * 渠道或者优惠的图像表达url
@@ -30,6 +30,12 @@ public class PrePayOperationInfoViewData extends AlipayObject {
 	 */
 	@ApiField("operation_desc")
 	private String operationDesc;
+
+	/**
+	 * 间连场景下为运营商提供完整营销文案
+	 */
+	@ApiField("operation_display")
+	private String operationDisplay;
 
 	/**
 	 * 卡机构id
@@ -86,6 +92,13 @@ public class PrePayOperationInfoViewData extends AlipayObject {
 	}
 	public void setOperationDesc(String operationDesc) {
 		this.operationDesc = operationDesc;
+	}
+
+	public String getOperationDisplay() {
+		return this.operationDisplay;
+	}
+	public void setOperationDisplay(String operationDisplay) {
+		this.operationDisplay = operationDisplay;
 	}
 
 	public String getOperationInstId() {

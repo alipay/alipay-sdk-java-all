@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.intelligentize.servicetask.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-02-05 15:27:39
+ * @since 1.0, 2024-03-06 10:16:13
  */
 public class AlipayCommerceTransportIntelligentizeServicetaskQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8338236631789893951L;
+	private static final long serialVersionUID = 6552583992155928166L;
 
 	/** 
 	 * 服务任务结束时间，处理完成或处理失败前为空（yyyy-MM-dd HH24:mi:ss）

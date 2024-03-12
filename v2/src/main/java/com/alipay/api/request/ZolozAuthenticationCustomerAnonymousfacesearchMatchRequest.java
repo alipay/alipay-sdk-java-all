@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zoloz.authentication.customer.anonymousfacesearch.match request
  * 
  * @author auto create
- * @since 1.0, 2023-12-22 15:43:39
+ * @since 1.0, 2024-03-01 16:25:21
  */
 public class ZolozAuthenticationCustomerAnonymousfacesearchMatchRequest implements AlipayRequest<ZolozAuthenticationCustomerAnonymousfacesearchMatchResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: techrisk.innovate.salesgpt.order.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-15 17:10:35
+ * @since 1.0, 2024-03-01 16:25:24
  */
 public class TechriskInnovateSalesgptOrderModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7424877254634333893L;
+	private static final long serialVersionUID = 1239744465556899751L;
 
 	/** 
 	 * 提交描述错误码

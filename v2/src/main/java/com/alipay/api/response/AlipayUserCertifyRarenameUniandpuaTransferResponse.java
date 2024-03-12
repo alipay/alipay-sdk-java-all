@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.certify.rarename.uniandpua.transfer response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-28 16:31:42
+ * @since 1.0, 2024-03-01 16:27:43
  */
 public class AlipayUserCertifyRarenameUniandpuaTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1557692196551182675L;
+	private static final long serialVersionUID = 7886483577672993598L;
 
 	/** 
 	 * 多于一字两码时，返回其他的编码。返回不包括ret_name和入参中的姓名。

@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 应用信息修改接口
  *
  * @author auto create
- * @since 1.0, 2023-09-14 13:28:52
+ * @since 1.0, 2024-03-01 14:03:16
  */
 public class AlipayOpenAppinfoModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2147545256546884464L;
+	private static final long serialVersionUID = 8469682862299324354L;
 
 	/**
-	 * 应用openid配置
+	 * 修改应用openid配置
 	 */
 	@ApiField("open_id_config")
 	private String openIdConfig;

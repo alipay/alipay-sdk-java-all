@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.logistics.pkgauthrelation.authtome.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 21:41:53
+ * @since 1.0, 2024-03-01 16:34:26
  */
 public class AlipayCommerceLogisticsPkgauthrelationAuthtomeQueryRequest implements AlipayRequest<AlipayCommerceLogisticsPkgauthrelationAuthtomeQueryResponse> {
 

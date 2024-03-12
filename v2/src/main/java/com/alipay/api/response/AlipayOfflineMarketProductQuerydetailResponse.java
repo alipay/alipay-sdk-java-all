@@ -18,7 +18,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOfflineMarketProductQuerydetailResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7568321291275259473L;
+	private static final long serialVersionUID = 8232349494674442958L;
 
 	/** 
 	 * 商品首图，尺寸比例在65:53范围内且图片大小不超过10k皆可

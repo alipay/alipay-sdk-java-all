@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataDataserviceXlightTaskQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7752923634889843483L;
+	private static final long serialVersionUID = 8644712344223555568L;
 
 	/**
 	 * 广告检索时每个任务返回的唯一流水号，用此流水号来查询用户是否完成了这条任务

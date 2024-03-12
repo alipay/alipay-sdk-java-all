@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.safebox.condition.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 04:31:48
+ * @since 1.0, 2024-03-01 16:29:12
  */
 public class AlipayUserSafeboxConditionQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5718755582441987911L;
+	private static final long serialVersionUID = 4473764713652271381L;
 
 	/** 
 	 * 产品是否紧急下线状态。true：紧急下线，false：未紧急下线。

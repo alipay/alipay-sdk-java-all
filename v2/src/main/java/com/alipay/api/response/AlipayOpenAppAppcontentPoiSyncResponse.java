@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.appcontent.poi.sync response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:13:45
+ * @since 1.0, 2024-03-01 16:27:53
  */
 public class AlipayOpenAppAppcontentPoiSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3781712125534881324L;
+	private static final long serialVersionUID = 4629488872233587419L;
 
 	/** 
 	 * 支付宝返回的唯一编码

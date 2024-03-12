@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.creditrisk.widget.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-09-29 14:08:33
+ * @since 1.0, 2024-03-01 16:34:55
  */
 public class MybankCreditCreditriskWidgetQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6567892211694513149L;
+	private static final long serialVersionUID = 2887938953532793959L;
 
 	/** 
 	 * widget json数据

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.sceneprod.discountplan.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-07-14 10:10:19
+ * @since 1.0, 2024-03-01 16:28:37
  */
 public class MybankCreditSceneprodDiscountplanQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3729758459312736687L;
+	private static final long serialVersionUID = 5336334173138297745L;
 
 	/** 
 	 * 咨询结果，包含贴息方案的相关信息。
