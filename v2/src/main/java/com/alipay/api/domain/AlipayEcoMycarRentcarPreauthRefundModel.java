@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝租车预授权退款
  *
  * @author auto create
- * @since 1.0, 2023-12-05 14:27:35
+ * @since 1.0, 2024-03-12 15:21:19
  */
 public class AlipayEcoMycarRentcarPreauthRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2662663682217461464L;
+	private static final long serialVersionUID = 3525769845528792739L;
 
 	/**
 	 * 扣款时的外部交易号。一笔预授权可能有多笔扣款，退款是基于扣款去退的，因此要传扣款时的交易号

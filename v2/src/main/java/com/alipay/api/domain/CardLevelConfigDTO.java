@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CardLevelConfigDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3711446849529961274L;
+	private static final long serialVersionUID = 4345146381332731173L;
 
 	/**
 	 * background_url：在支付宝卡包展示的背景图片地址，通过alipay.offline.material.image.upload接口上传图片资源获取(https://opendocs.alipay.com/open/02qth8)

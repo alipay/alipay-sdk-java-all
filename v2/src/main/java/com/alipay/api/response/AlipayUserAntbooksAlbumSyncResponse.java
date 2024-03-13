@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserAntbooksAlbumSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6855881111613425283L;
+	private static final long serialVersionUID = 3135715271484463858L;
 
 	
 

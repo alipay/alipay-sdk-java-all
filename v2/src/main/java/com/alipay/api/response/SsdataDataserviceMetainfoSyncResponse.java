@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class SsdataDataserviceMetainfoSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7611617836553536256L;
+	private static final long serialVersionUID = 8419136744449672583L;
 
 	/** 
 	 * 是否同步成功

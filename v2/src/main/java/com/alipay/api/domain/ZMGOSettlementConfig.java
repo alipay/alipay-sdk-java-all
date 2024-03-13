@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZMGOSettlementConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 2688598395421227363L;
+	private static final long serialVersionUID = 1144589234912822838L;
 
 	/**
 	 * 会员费扣费名称

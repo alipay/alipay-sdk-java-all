@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 零工还款转账参与方
  *
  * @author auto create
- * @since 1.0, 2024-03-11 19:34:51
+ * @since 1.0, 2024-03-12 16:42:50
  */
 public class RepaymentParticipant extends AlipayObject {
 
-	private static final long serialVersionUID = 3671845268536415464L;
+	private static final long serialVersionUID = 2792785627956528299L;
+
+	/**
+	 * 零工卡专用金还款到卡银行卡扩展参数
+	 */
+	@ApiField("bankcard_ext_info")
+	private RepaymentBankcardExtInfo bankcardExtInfo;
 
 	/**
 	 * 参与方关联的扩展信息
@@ -40,6 +46,13 @@ public class RepaymentParticipant extends AlipayObject {
 	 */
 	@ApiField("name")
 	private String name;
+
+	public RepaymentBankcardExtInfo getBankcardExtInfo() {
+		return this.bankcardExtInfo;
+	}
+	public void setBankcardExtInfo(RepaymentBankcardExtInfo bankcardExtInfo) {
+		this.bankcardExtInfo = bankcardExtInfo;
+	}
 
 	public RepaymentParticipantExtInfo getExtInfo() {
 		return this.extInfo;

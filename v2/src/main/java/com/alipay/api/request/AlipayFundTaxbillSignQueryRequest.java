@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.taxbill.sign.query request
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 03:41:45
+ * @since 1.0, 2024-03-12 16:23:18
  */
 public class AlipayFundTaxbillSignQueryRequest implements AlipayRequest<AlipayFundTaxbillSignQueryResponse> {
 

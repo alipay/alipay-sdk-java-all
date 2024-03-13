@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RelationNodeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4255358934999397932L;
+	private static final long serialVersionUID = 1429269967943915472L;
 
 	/**
 	 * 当前节点的层数

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建签约吱口令
  *
  * @author auto create
- * @since 1.0, 2023-02-13 15:03:15
+ * @since 1.0, 2024-03-12 16:23:41
  */
 public class AlipayFundTaxbillSigncodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2458872288194589377L;
+	private static final long serialVersionUID = 5196435322547987568L;
 
 	/**
 	 * 签约完成之后用户点击签约完成的回跳url，自定义提供，只支持支付宝端内的小程序跳转和H5跳转，不支持APP间跳转。入无特殊需要，可忽略此字段。

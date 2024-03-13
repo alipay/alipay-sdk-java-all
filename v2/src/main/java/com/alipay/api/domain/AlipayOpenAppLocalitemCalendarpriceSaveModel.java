@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenAppLocalitemCalendarpriceSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7237126358162457423L;
+	private static final long serialVersionUID = 7191181811479125815L;
 
 	/**
 	 * 日历价格列表，价格设置的总天数不得大于60天

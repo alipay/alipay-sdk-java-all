@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数字人民币收款码发码
  *
  * @author auto create
- * @since 1.0, 2022-09-14 14:33:46
+ * @since 1.0, 2024-03-12 15:18:03
  */
 public class MybankEcnyTradeQrcodecreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6722867587857691691L;
+	private static final long serialVersionUID = 8882876525213153266L;
 
 	/**
 	 * 未设置为不带金额的收款码，设置为带金额的收款码

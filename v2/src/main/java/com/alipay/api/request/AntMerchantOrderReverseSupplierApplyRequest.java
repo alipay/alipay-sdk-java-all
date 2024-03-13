@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.order.reverse.supplier.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-12-29 10:51:58
+ * @since 1.0, 2024-03-12 16:47:00
  */
 public class AntMerchantOrderReverseSupplierApplyRequest implements AlipayRequest<AntMerchantOrderReverseSupplierApplyResponse> {
 

@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.mbpcard.gencard.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-21 15:36:52
+ * @since 1.0, 2024-03-12 10:49:01
  */
 public class AlipayFundMbpcardGencardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3246792159125513229L;
+	private static final long serialVersionUID = 5656977843944859397L;
 
 	/** 
 	 * 制卡结果文件路径；支持多个；

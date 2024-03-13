@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundAllocTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6339687715458724179L;
+	private static final long serialVersionUID = 1346172994349121989L;
 
 	/** 
 	 * 分佣时间

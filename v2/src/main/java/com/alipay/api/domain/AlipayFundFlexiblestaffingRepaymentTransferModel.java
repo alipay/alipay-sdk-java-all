@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 零工卡还款
  *
  * @author auto create
- * @since 1.0, 2024-03-11 19:34:51
+ * @since 1.0, 2024-03-12 16:42:50
  */
 public class AlipayFundFlexiblestaffingRepaymentTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6625781427268685363L;
+	private static final long serialVersionUID = 1224587924941826785L;
 
 	/**
 	 * 描述特定的业务场景。
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
+
+	/**
+	 * 零工卡专用金还款到卡扩展参数
+	 */
+	@ApiField("business_params")
+	private RepaymentBusinessParams businessParams;
 
 	/**
 	 * 借款协议号
@@ -66,6 +72,13 @@ public class AlipayFundFlexiblestaffingRepaymentTransferModel extends AlipayObje
 	}
 	public void setBizScene(String bizScene) {
 		this.bizScene = bizScene;
+	}
+
+	public RepaymentBusinessParams getBusinessParams() {
+		return this.businessParams;
+	}
+	public void setBusinessParams(RepaymentBusinessParams businessParams) {
+		this.businessParams = businessParams;
 	}
 
 	public String getLoanAgreementNo() {

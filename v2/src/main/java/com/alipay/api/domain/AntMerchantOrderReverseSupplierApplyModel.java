@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 供应商未妥投上传接口
  *
  * @author auto create
- * @since 1.0, 2023-12-29 10:46:55
+ * @since 1.0, 2024-03-12 16:45:15
  */
 public class AntMerchantOrderReverseSupplierApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2413189976186483112L;
+	private static final long serialVersionUID = 3415361979833838725L;
 
 	/**
 	 * 供应商逆向申请明细

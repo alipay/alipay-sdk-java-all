@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预付卡制卡单据详情查询
  *
  * @author auto create
- * @since 1.0, 2023-11-21 15:33:20
+ * @since 1.0, 2024-03-12 10:49:01
  */
 public class AlipayFundMbpcardGencardQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2866679388945413268L;
+	private static final long serialVersionUID = 4376538476221876994L;
 
 	/**
 	 * 支付宝会员号

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AvatarVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5417673211886613449L;
+	private static final long serialVersionUID = 2739586219719112926L;
 
 	/**
 	 * 虚拟形象的模型信息

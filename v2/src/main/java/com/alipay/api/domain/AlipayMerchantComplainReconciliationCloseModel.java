@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantComplainReconciliationCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8167559723428641813L;
+	private static final long serialVersionUID = 4261754143484397155L;
 
 	/**
 	 * 商家支付宝侧账号，唯一标识
