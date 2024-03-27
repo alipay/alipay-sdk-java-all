@@ -11,14 +11,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 场景开放平台电商订单模型
  *
  * @author auto create
- * @since 1.0, 2023-11-10 10:27:26
+ * @since 1.0, 2024-03-25 11:17:35
  */
 public class EcomOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4472214129716856919L;
+	private static final long serialVersionUID = 1635158566883857489L;
 
 	/**
-	 * 实际支付金额
+	 * 实际支付金额，单位：分
 	 */
 	@ApiField("actual_pay_fee")
 	private Long actualPayFee;
@@ -60,13 +60,13 @@ public class EcomOrderDTO extends AlipayObject {
 	private String chargeGuaranteePlanType;
 
 	/**
-	 * 免押金额
+	 * 免押金额，单位：分
 	 */
 	@ApiField("credit_deposit_money")
 	private Long creditDepositMoney;
 
 	/**
-	 * 优惠金额
+	 * 优惠金额，单位：分
 	 */
 	@ApiField("discount_fee")
 	private Long discountFee;
@@ -108,7 +108,7 @@ public class EcomOrderDTO extends AlipayObject {
 	private String itemTitle;
 
 	/**
-	 * 商品总价值
+	 * 商品总价值，单位：分
 	 */
 	@ApiField("item_total_value")
 	private Long itemTotalValue;
@@ -126,7 +126,7 @@ public class EcomOrderDTO extends AlipayObject {
 	private String mainOrderId;
 
 	/**
-	 * 订单金额
+	 * 订单金额,单位：分
 	 */
 	@ApiField("order_fee")
 	private Long orderFee;
@@ -150,7 +150,7 @@ public class EcomOrderDTO extends AlipayObject {
 	private PayOrderDTO payOrder;
 
 	/**
-	 * 邮费
+	 * 邮费,单位：分
 	 */
 	@ApiField("post_fee")
 	private Long postFee;

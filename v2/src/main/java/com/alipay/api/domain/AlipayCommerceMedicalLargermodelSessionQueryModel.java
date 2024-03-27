@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗大模型服务对外接口-会话创建或查询
  *
  * @author auto create
- * @since 1.0, 2024-02-26 11:52:15
+ * @since 1.0, 2024-03-27 13:50:17
  */
 public class AlipayCommerceMedicalLargermodelSessionQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3872798957835548256L;
+	private static final long serialVersionUID = 4853442575412316899L;
 
 	/**
 	 * 行业侧生成，首次为空
@@ -72,6 +72,12 @@ DEPARTGUIDE
 	 */
 	@ApiField("query")
 	private String query;
+
+	/**
+	 * 用于区分query类型
+	 */
+	@ApiField("query_type")
+	private String queryType;
 
 	/**
 	 * 区分当前对话场景意图
@@ -148,6 +154,13 @@ DEPARTGUIDE
 	}
 	public void setQuery(String query) {
 		this.query = query;
+	}
+
+	public String getQueryType() {
+		return this.queryType;
+	}
+	public void setQueryType(String queryType) {
+		this.queryType = queryType;
 	}
 
 	public String getSceneCode() {

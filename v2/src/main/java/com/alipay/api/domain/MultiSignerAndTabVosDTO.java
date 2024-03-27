@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MultiSignerAndTabVosDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1467986733228433456L;
+	private static final long serialVersionUID = 4475786277415985166L;
 
 	/**
 	 * 电子邮件主题 最大99个字

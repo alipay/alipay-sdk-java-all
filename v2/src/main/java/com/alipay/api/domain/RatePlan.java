@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 价格计划
  *
  * @author auto create
- * @since 1.0, 2024-03-06 14:20:00
+ * @since 1.0, 2024-03-20 14:19:36
  */
 public class RatePlan extends AlipayObject {
 
-	private static final long serialVersionUID = 8525558278537469555L;
+	private static final long serialVersionUID = 1784231366815935633L;
 
 	/**
 	 * 对应的预订规则编号列表
@@ -77,6 +77,12 @@ PASSPORT:护照
 	private List<NightlyRate> nightlyRates;
 
 	/**
+	 * 对应ota小程序的跳转链接
+	 */
+	@ApiField("ota_url")
+	private String otaUrl;
+
+	/**
 	 * 付款类型
 SELFPAY-前台现付,
 PREPAY-预付
@@ -101,6 +107,13 @@ PREPAY-预付
 	 */
 	@ApiField("refund_rule_id")
 	private String refundRuleId;
+
+	/**
+	 * 退款规则列表
+	 */
+	@ApiListField("refund_rule_ids")
+	@ApiField("string")
+	private List<String> refundRuleIds;
 
 	/**
 	 * ratePlan对应的房间id
@@ -178,6 +191,13 @@ false:失效
 		this.nightlyRates = nightlyRates;
 	}
 
+	public String getOtaUrl() {
+		return this.otaUrl;
+	}
+	public void setOtaUrl(String otaUrl) {
+		this.otaUrl = otaUrl;
+	}
+
 	public String getPayType() {
 		return this.payType;
 	}
@@ -204,6 +224,13 @@ false:失效
 	}
 	public void setRefundRuleId(String refundRuleId) {
 		this.refundRuleId = refundRuleId;
+	}
+
+	public List<String> getRefundRuleIds() {
+		return this.refundRuleIds;
+	}
+	public void setRefundRuleIds(List<String> refundRuleIds) {
+		this.refundRuleIds = refundRuleIds;
 	}
 
 	public String getRoomId() {

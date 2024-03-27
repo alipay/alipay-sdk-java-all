@@ -1,6 +1,8 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,17 +10,44 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotvsp.userwithimage.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-07 10:57:59
+ * @since 1.0, 2024-03-22 20:31:58
  */
 public class AlipayOpenIotvspUserwithimageCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5116621121196156685L;
+	private static final long serialVersionUID = 8121396687336727994L;
+
+	/** 
+	 * 相似脸vid
+	 */
+	@ApiField("similar_vid")
+	private String similarVid;
+
+	/** 
+	 * 增加相似脸vid列表
+	 */
+	@ApiListField("similar_vid_list")
+	@ApiField("string")
+	private List<String> similarVidList;
 
 	/** 
 	 * 用户唯一标识
 	 */
 	@ApiField("vid")
 	private String vid;
+
+	public void setSimilarVid(String similarVid) {
+		this.similarVid = similarVid;
+	}
+	public String getSimilarVid( ) {
+		return this.similarVid;
+	}
+
+	public void setSimilarVidList(List<String> similarVidList) {
+		this.similarVidList = similarVidList;
+	}
+	public List<String> getSimilarVidList( ) {
+		return this.similarVidList;
+	}
 
 	public void setVid(String vid) {
 		this.vid = vid;

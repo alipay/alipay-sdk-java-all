@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询电子回单状态
  *
  * @author auto create
- * @since 1.0, 2023-02-20 13:32:17
+ * @since 1.0, 2024-03-15 13:55:49
  */
 public class AlipayDataBillEreceiptQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2539911861498273135L;
+	private static final long serialVersionUID = 3463529586912423911L;
 
 	/**
 	 * 根据申请id查询状态。通过 <a href="https://opendocs.alipay.com/apis/api_15/alipay.data.bill.ereceipt.apply">alipay.data.bill.ereceipt.apply(申请电子回单(incubating))</a> 接口同步响应获取。

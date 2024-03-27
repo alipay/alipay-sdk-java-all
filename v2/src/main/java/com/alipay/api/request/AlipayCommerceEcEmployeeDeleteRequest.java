@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.ec.employee.delete request
  * 
  * @author auto create
- * @since 1.0, 2024-02-19 10:28:12
+ * @since 1.0, 2024-03-18 16:21:59
  */
 public class AlipayCommerceEcEmployeeDeleteRequest implements AlipayRequest<AlipayCommerceEcEmployeeDeleteResponse> {
 

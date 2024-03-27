@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.department.upgrade.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-02-19 11:48:42
+ * @since 1.0, 2024-03-14 16:25:43
  */
 public class AlipayCommerceEcDepartmentUpgradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3133639989715346852L;
+	private static final long serialVersionUID = 6734686156883991975L;
 
 	/** 
 	 * 待升级的部门id

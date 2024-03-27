@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceIotDeviceGeofenceBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1787425163624397297L;
+	private static final long serialVersionUID = 3541996771287497394L;
 
 	/**
 	 * 设备的唯一标识,设备id

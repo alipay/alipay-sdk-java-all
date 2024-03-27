@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 对合作方展示的专辑信息
  *
  * @author auto create
- * @since 1.0, 2024-03-07 17:48:35
+ * @since 1.0, 2024-03-24 21:54:14
  */
 public class AlbumInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2133413836921571222L;
+	private static final long serialVersionUID = 5511322439697544471L;
 
 	/**
 	 * 专辑名称

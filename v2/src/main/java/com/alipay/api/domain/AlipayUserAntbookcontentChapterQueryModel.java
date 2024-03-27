@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 阅读听书频道章节信息查询接口
  *
  * @author auto create
- * @since 1.0, 2024-03-12 14:44:24
+ * @since 1.0, 2024-03-23 11:37:50
  */
 public class AlipayUserAntbookcontentChapterQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2484285662431786383L;
+	private static final long serialVersionUID = 4446463695444952727L;
 
 	/**
 	 * 最新版本审核状态，用做过滤。如果传入AUDIT_REJECT，则只返回审核失败的章节

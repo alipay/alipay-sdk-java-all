@@ -1,5 +1,7 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
@@ -7,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电商商品详情模型
  *
  * @author auto create
- * @since 1.0, 2024-02-22 17:05:49
+ * @since 1.0, 2024-03-25 11:17:34
  */
 public class EcomItemExtendDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5364176421954654312L;
+	private static final long serialVersionUID = 3237295383498254546L;
 
 	/**
 	 * cardType + 唯一 + 储值卡类目投保场景 + 通过上下游约定获取
@@ -114,19 +116,25 @@ public class EcomItemExtendDetailDTO extends AlipayObject {
 	private String extInfo;
 
 	/**
-	 * 游戏账号
+	 * 商品厂保结束时间
+	 */
+	@ApiField("factory_ins_end_time")
+	private Date factoryInsEndTime;
+
+	/**
+	 * 游戏帐号
 	 */
 	@ApiField("game_account")
 	private String gameAccount;
 
 	/**
-	 * 游戏账号所属客户端
+	 * 游戏帐号所属客户端
 	 */
 	@ApiField("game_account_client")
 	private String gameAccountClient;
 
 	/**
-	 * 游戏账号所属客户端id
+	 * 游戏帐号所属客户端id
 	 */
 	@ApiField("game_account_client_id")
 	private String gameAccountClientId;
@@ -289,6 +297,13 @@ public class EcomItemExtendDetailDTO extends AlipayObject {
 	}
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
+	}
+
+	public Date getFactoryInsEndTime() {
+		return this.factoryInsEndTime;
+	}
+	public void setFactoryInsEndTime(Date factoryInsEndTime) {
+		this.factoryInsEndTime = factoryInsEndTime;
 	}
 
 	public String getGameAccount() {

@@ -7,6 +7,7 @@ import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.BkAgentRespInfo;
 import com.alipay.api.domain.ChargeInfo;
 import com.alipay.api.domain.EnterprisePayInfo;
+import com.alipay.api.domain.FulfillmentDetail;
 import com.alipay.api.domain.TradeFundBill;
 import com.alipay.api.domain.HbFqPayInfo;
 import com.alipay.api.domain.IntactChargeInfo;
@@ -21,11 +22,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-06 14:49:23
+ * @since 1.0, 2024-03-22 16:51:57
  */
 public class AlipayTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3722671741157576835L;
+	private static final long serialVersionUID = 3157343347974795812L;
 
 	/** 
 	 * 交易附加状态：
@@ -176,6 +177,13 @@ json格式。
 	 */
 	@ApiField("ext_infos")
 	private String extInfos;
+
+	/** 
+	 * 履约详情列表。 只有入参的query_options中指定fulfillment_detail_list并且所查询的交易存在履约明细时才返回该字段信息。
+	 */
+	@ApiListField("fulfillment_detail_list")
+	@ApiField("fulfillment_detail")
+	private List<FulfillmentDetail> fulfillmentDetailList;
 
 	/** 
 	 * 交易支付使用的资金渠道。
@@ -557,6 +565,13 @@ json格式。
 	}
 	public String getExtInfos( ) {
 		return this.extInfos;
+	}
+
+	public void setFulfillmentDetailList(List<FulfillmentDetail> fulfillmentDetailList) {
+		this.fulfillmentDetailList = fulfillmentDetailList;
+	}
+	public List<FulfillmentDetail> getFulfillmentDetailList( ) {
+		return this.fulfillmentDetailList;
 	}
 
 	public void setFundBillList(List<TradeFundBill> fundBillList) {

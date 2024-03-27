@@ -1,8 +1,8 @@
 [![Maven Central](https://img.shields.io/maven-central/v/com.alipay.sdk/alipay-sdk-java.svg)](https://mvnrepository.com/artifact/com.alipay.sdk/alipay-sdk-java)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Falipay%2Falipay-sdk-java-all.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Falipay%2Falipay-sdk-java-all?ref=badge_shield)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/5a2a4867c87d4d15a8beba06d2e49635)](https://www.codacy.com/manual/antopen/alipay-sdk-java-all?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=alipay/alipay-sdk-java-all&amp;utm_campaign=Badge_Grade)
-[![Build Status](https://www.travis-ci.org/alipay/alipay-sdk-java-all.svg?branch=master)](https://www.travis-ci.org/alipay/alipay-sdk-java-all)
-[![codecov](https://codecov.io/gh/alipay/alipay-sdk-java-all/branch/master/graph/badge.svg)](https://codecov.io/gh/alipay/alipay-sdk-java-all)
+[![Build Status](https://www.travis-ci.org/alipay/alipay-sdk-java-all.svg?branch=dev)](https://www.travis-ci.org/alipay/alipay-sdk-java-all)
+[![codecov](https://codecov.io/gh/alipay/alipay-sdk-java-all/branch/dev/graph/badge.svg)](https://codecov.io/gh/alipay/alipay-sdk-java-all)
 
 欢迎使用 Alipay SDK for Java 。
 
@@ -32,7 +32,7 @@ Alipay SDK for Java让您不用复杂编程即可访支付宝开放平台开放�
 <dependency>
     <groupId>com.alipay.sdk</groupId>
     <artifactId>alipay-sdk-java</artifactId>
-    <version>4.39.2.ALL</version>
+    <version>4.8.62.ALL</version>
 </dependency>
 ```
 
@@ -118,7 +118,7 @@ public class Main {
 <dependency>
     <groupId>com.alipay.sdk</groupId>
     <artifactId>alipay-sdk-java</artifactId>
-    <version>4.39.2.ALL</version>
+    <version>4.34.0.ALL</version>
 </dependency>
 ```
 

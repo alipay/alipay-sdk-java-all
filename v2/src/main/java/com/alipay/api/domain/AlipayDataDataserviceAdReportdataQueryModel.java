@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 广告投放数据通用查询
  *
  * @author auto create
- * @since 1.0, 2024-01-15 16:40:51
+ * @since 1.0, 2024-03-20 11:23:51
  */
 public class AlipayDataDataserviceAdReportdataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4468374588721168996L;
+	private static final long serialVersionUID = 4864655624319674184L;
 
 	/**
 	 * 数据维度：
@@ -23,7 +23,8 @@ PLAN-计划；
 GROUP-单元；
 CREATIVE-创意；
 MARKET_TARGET-营销目标；
-【不同数据维度决定了出参data_id代表的数据类型不一样分别为plan_id,group_id,order_id,creative_id，营销目标时data_id为空】
+PRINCIPAL-商家;
+【不同数据维度决定了出参data_id代表的数据类型不一样分别为plan_id,group_id,order_id,creative_id，营销目标和商家维度时data_id为空且不返回conversion_data_list数据】
 	 */
 	@ApiField("ad_level")
 	private String adLevel;

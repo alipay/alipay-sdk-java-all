@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户授权接口
  *
  * @author auto create
- * @since 1.0, 2022-08-29 16:24:24
+ * @since 1.0, 2024-03-20 11:21:44
  */
 public class AlipayInsSceneOpenprodPermissionAuthModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3712682645279812121L;
+	private static final long serialVersionUID = 7613129236373789499L;
 
 	/**
 	 * 授权类型:PURCHASE_MODULE(订购组件token),INSURE_MODULE(投保组件token),(POLICY_DETAIL)保单详情页token

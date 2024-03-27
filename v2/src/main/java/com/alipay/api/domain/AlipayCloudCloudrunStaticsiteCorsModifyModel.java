@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 配置跨域
  *
  * @author auto create
- * @since 1.0, 2023-10-12 17:16:15
+ * @since 1.0, 2024-03-14 15:01:23
  */
 public class AlipayCloudCloudrunStaticsiteCorsModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2796616595228565558L;
+	private static final long serialVersionUID = 1229143173899469878L;
 
 	/**
 	 * 允许跨域域名列表。

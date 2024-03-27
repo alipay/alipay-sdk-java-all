@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保单投保保险方案
  *
  * @author auto create
- * @since 1.0, 2022-08-29 10:38:59
+ * @since 1.0, 2024-03-20 11:17:01
  */
 public class InsurePlanDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1874485297441872799L;
+	private static final long serialVersionUID = 6335215534545113623L;
 
 	/**
 	 * 折扣率

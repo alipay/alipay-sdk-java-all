@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.antbooks.album.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-12 14:46:57
+ * @since 1.0, 2024-03-24 21:56:57
  */
 public class AlipayUserAntbooksAlbumQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4512971896464252795L;
+	private static final long serialVersionUID = 6882446882976678612L;
 
 	/** 
 	 * 专辑信息列表

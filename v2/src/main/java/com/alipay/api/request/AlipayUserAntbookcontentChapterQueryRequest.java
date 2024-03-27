@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.antbookcontent.chapter.query request
  * 
  * @author auto create
- * @since 1.0, 2024-03-12 14:46:57
+ * @since 1.0, 2024-03-23 11:41:58
  */
 public class AlipayUserAntbookcontentChapterQueryRequest implements AlipayRequest<AlipayUserAntbookcontentChapterQueryResponse> {
 

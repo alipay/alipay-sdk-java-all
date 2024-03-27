@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景开放平台对外开放场景链接
  *
  * @author auto create
- * @since 1.0, 2022-09-28 14:41:58
+ * @since 1.0, 2024-03-20 11:16:48
  */
 public class InsPolicyLinkDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5474578969365296442L;
+	private static final long serialVersionUID = 8587977566563636623L;
 
 	/**
 	 * 授权token

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电商场景开放平台报价信息模型
  *
  * @author auto create
- * @since 1.0, 2022-08-19 15:42:42
+ * @since 1.0, 2024-03-20 11:17:11
  */
 public class InsQuoteDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5843396773663548546L;
+	private static final long serialVersionUID = 3334182258925865359L;
 
 	/**
 	 * 折扣率

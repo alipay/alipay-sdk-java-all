@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.ec.department.upgrade.submit request
  * 
  * @author auto create
- * @since 1.0, 2024-02-19 10:31:11
+ * @since 1.0, 2024-03-14 16:25:43
  */
 public class AlipayCommerceEcDepartmentUpgradeSubmitRequest implements AlipayRequest<AlipayCommerceEcDepartmentUpgradeSubmitResponse> {
 

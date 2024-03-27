@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.claim.advancepay.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-08-24 21:03:48
+ * @since 1.0, 2024-03-20 11:20:08
  */
 public class AlipayInsSceneClaimAdvancepaySyncRequest implements AlipayRequest<AlipayInsSceneClaimAdvancepaySyncResponse> {
 

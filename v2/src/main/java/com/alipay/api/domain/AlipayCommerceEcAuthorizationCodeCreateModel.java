@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生成授权码
  *
  * @author auto create
- * @since 1.0, 2023-05-26 13:37:52
+ * @since 1.0, 2024-03-14 11:52:19
  */
 public class AlipayCommerceEcAuthorizationCodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5283386453844186114L;
+	private static final long serialVersionUID = 6157678682851656697L;
 
 	/**
 	 * 员工id

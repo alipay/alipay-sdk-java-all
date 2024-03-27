@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 对合作方展示的声音信息，一个专辑下包含一个或者多个声音
  *
  * @author auto create
- * @since 1.0, 2024-03-07 17:48:48
+ * @since 1.0, 2024-03-23 23:59:13
  */
 public class SoundInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5871255884638265562L;
+	private static final long serialVersionUID = 5836897861182149454L;
 
 	/**
 	 * 专辑名称

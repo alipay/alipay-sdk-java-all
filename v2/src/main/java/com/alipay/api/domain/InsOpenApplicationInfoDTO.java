@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景开放平台应用信息
  *
  * @author auto create
- * @since 1.0, 2023-11-13 13:38:43
+ * @since 1.0, 2024-03-20 11:17:22
  */
 public class InsOpenApplicationInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2332591775144819434L;
+	private static final long serialVersionUID = 2437326278627417566L;
 
 	/**
 	 * 应用名称

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询文件夹列表
  *
  * @author auto create
- * @since 1.0, 2023-10-25 15:40:56
+ * @since 1.0, 2024-03-14 14:59:16
  */
 public class AlipayCloudCloudrunObjectstorageDirectoryBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3839875856322658948L;
+	private static final long serialVersionUID = 6541393224855876617L;
 
 	/**
 	 * 内部使用 uiam角色扮演token

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 贷记资产用户模型
  *
  * @author auto create
- * @since 1.0, 2023-03-28 09:43:32
+ * @since 1.0, 2024-03-18 17:50:37
  */
 public class CreditPayUserVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5371621485343625676L;
+	private static final long serialVersionUID = 1552849697515428428L;
 
 	/**
 	 * 开放id

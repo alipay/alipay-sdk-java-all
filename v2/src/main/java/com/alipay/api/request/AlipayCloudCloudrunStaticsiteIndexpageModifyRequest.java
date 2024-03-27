@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudrun.staticsite.indexpage.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-10-13 11:26:46
+ * @since 1.0, 2024-03-14 15:01:51
  */
 public class AlipayCloudCloudrunStaticsiteIndexpageModifyRequest implements AlipayRequest<AlipayCloudCloudrunStaticsiteIndexpageModifyResponse> {
 

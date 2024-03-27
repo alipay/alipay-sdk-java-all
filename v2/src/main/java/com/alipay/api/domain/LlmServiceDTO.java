@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 大模型im对象
  *
  * @author auto create
- * @since 1.0, 2024-02-21 16:49:43
+ * @since 1.0, 2024-03-27 13:50:17
  */
 public class LlmServiceDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5264139888816273829L;
+	private static final long serialVersionUID = 6861977317787882614L;
 
 	/**
 	 * 对话内容列表，流式输出中大模型的每次输出语句块
@@ -67,10 +67,23 @@ false：无需撤回
 	private Boolean isWithDraw;
 
 	/**
+	 * query_type
+	 */
+	@ApiField("query_type")
+	private String queryType;
+
+	/**
 	 * 卫健委通用助理——WJWCOMASS
 	 */
 	@ApiField("scene_code")
 	private String sceneCode;
+
+	/**
+	 * 服务结果列表页
+	 */
+	@ApiListField("service_result")
+	@ApiField("external_service_d_t_o")
+	private List<ExternalServiceDTO> serviceResult;
 
 	/**
 	 * 目前只有文字模板
@@ -127,11 +140,25 @@ false：无需撤回
 		this.isWithDraw = isWithDraw;
 	}
 
+	public String getQueryType() {
+		return this.queryType;
+	}
+	public void setQueryType(String queryType) {
+		this.queryType = queryType;
+	}
+
 	public String getSceneCode() {
 		return this.sceneCode;
 	}
 	public void setSceneCode(String sceneCode) {
 		this.sceneCode = sceneCode;
+	}
+
+	public List<ExternalServiceDTO> getServiceResult() {
+		return this.serviceResult;
+	}
+	public void setServiceResult(List<ExternalServiceDTO> serviceResult) {
+		this.serviceResult = serviceResult;
 	}
 
 	public String getTemplateId() {

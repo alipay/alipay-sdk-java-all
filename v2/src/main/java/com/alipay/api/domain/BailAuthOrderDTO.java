@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BailAuthOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4318758968179157381L;
+	private static final long serialVersionUID = 8376843178955938313L;
 
 	/**
 	 * 保证金协议号

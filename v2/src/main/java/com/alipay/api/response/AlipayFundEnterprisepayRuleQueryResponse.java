@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.enterprisepay.rule.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-28 20:56:57
+ * @since 1.0, 2024-03-27 10:05:42
  */
 public class AlipayFundEnterprisepayRuleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2479441361985693674L;
+	private static final long serialVersionUID = 3712828727866516725L;
 
 	/** 
 	 * 商户限制信息，包含商户限制类型以及被限制对象的SMID或者PID

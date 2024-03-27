@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保险协议条款
  *
  * @author auto create
- * @since 1.0, 2022-08-19 15:36:28
+ * @since 1.0, 2024-03-20 11:17:06
  */
 public class InsAgreementDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1134589194361448835L;
+	private static final long serialVersionUID = 5737866275132644189L;
 
 	/**
 	 * 条款内容

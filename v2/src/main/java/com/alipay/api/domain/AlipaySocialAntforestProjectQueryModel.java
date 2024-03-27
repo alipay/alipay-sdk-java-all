@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 树项目基本信息查询
  *
  * @author auto create
- * @since 1.0, 2022-10-13 23:16:14
+ * @since 1.0, 2024-03-14 19:28:31
  */
 public class AlipaySocialAntforestProjectQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8318963768788189918L;
+	private static final long serialVersionUID = 5873483356958952114L;
 
 	/**
 	 * 蚂蚁统一会员ID，执行该查询操作的支付宝用户

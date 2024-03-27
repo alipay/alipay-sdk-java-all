@@ -7,11 +7,18 @@ import com.alipay.api.internal.mapping.ApiField;
  * 录入机构用户信息（人员图片可选）
  *
  * @author auto create
- * @since 1.0, 2023-11-02 21:10:15
+ * @since 1.0, 2024-03-22 19:38:15
  */
 public class AlipayOpenIotvspUserwithimageCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3466467331222976775L;
+	private static final long serialVersionUID = 5895776164392997421L;
+
+	/**
+	 * false-不下发本地库
+true-下发本地库
+	 */
+	@ApiField("bio_in_client")
+	private Boolean bioInClient;
 
 	/**
 	 * 姓名
@@ -84,6 +91,13 @@ public class AlipayOpenIotvspUserwithimageCreateModel extends AlipayObject {
 	 */
 	@ApiField("vid")
 	private String vid;
+
+	public Boolean getBioInClient() {
+		return this.bioInClient;
+	}
+	public void setBioInClient(Boolean bioInClient) {
+		this.bioInClient = bioInClient;
+	}
 
 	public String getCertName() {
 		return this.certName;

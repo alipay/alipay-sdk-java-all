@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.antforest.bubble.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-19 16:41:51
+ * @since 1.0, 2024-03-14 19:28:46
  */
 public class AlipaySocialAntforestBubbleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5749746335814531181L;
+	private static final long serialVersionUID = 5124112777981197951L;
 
 	/** 
 	 * 当前有多少森林能量可收，为0即无能量可收

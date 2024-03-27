@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序商品创建接口
  *
  * @author auto create
- * @since 1.0, 2024-03-12 19:47:59
+ * @since 1.0, 2024-03-25 19:34:02
  */
 public class AlipayOpenAppItemCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1686384431857321432L;
+	private static final long serialVersionUID = 4557396687884614669L;
 
 	/**
 	 * 商品属性
@@ -53,6 +53,13 @@ public class AlipayOpenAppItemCreateModel extends AlipayObject {
 	 */
 	@ApiField("direct_path")
 	private String directPath;
+
+	/**
+	 * 导购信息
+	 */
+	@ApiListField("guide_info")
+	@ApiField("guide_info_v_o")
+	private List<GuideInfoVO> guideInfo;
 
 	/**
 	 * 商品主图，图片宽高为750px*750px，宽高比1:1，800kb以内。支持jpg、jpeg、png格式的图片。
@@ -177,6 +184,13 @@ public class AlipayOpenAppItemCreateModel extends AlipayObject {
 	}
 	public void setDirectPath(String directPath) {
 		this.directPath = directPath;
+	}
+
+	public List<GuideInfoVO> getGuideInfo() {
+		return this.guideInfo;
+	}
+	public void setGuideInfo(List<GuideInfoVO> guideInfo) {
+		this.guideInfo = guideInfo;
 	}
 
 	public String getHeadImg() {

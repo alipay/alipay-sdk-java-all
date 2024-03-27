@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.tuitioncode.plans.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-23 21:53:27
+ * @since 1.0, 2024-03-26 21:21:46
  */
 public class AlipayCommerceEducateTuitioncodePlansQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8582256719522856241L;
+	private static final long serialVersionUID = 8562539144234134481L;
 
 	/** 
 	 * 到账明细列表

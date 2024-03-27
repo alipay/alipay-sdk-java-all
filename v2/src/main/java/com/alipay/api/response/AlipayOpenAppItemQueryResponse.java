@@ -6,6 +6,7 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.AppItemAttrVO;
 import com.alipay.api.domain.ItemDescInfoVO;
+import com.alipay.api.domain.GuideInfoVO;
 import com.alipay.api.domain.ItemRiskInfo;
 import com.alipay.api.domain.ItemSceneRiskInfo;
 import com.alipay.api.domain.ItemSkuSearchVO;
@@ -16,11 +17,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.item.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-12 22:03:58
+ * @since 1.0, 2024-03-24 20:01:58
  */
 public class AlipayOpenAppItemQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3271452538185532262L;
+	private static final long serialVersionUID = 4397456524859978978L;
 
 	/** 
 	 * 商品属性列表，kv形式
@@ -64,6 +65,13 @@ public class AlipayOpenAppItemQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("direct_path")
 	private String directPath;
+
+	/** 
+	 * 导购信息
+	 */
+	@ApiListField("guide_info")
+	@ApiField("guide_info_v_o")
+	private List<GuideInfoVO> guideInfo;
 
 	/** 
 	 * 商品主图，图片宽高为750px*750px，宽高比1:1，800kb以内。支持jpg、jpeg、png格式的图片。 
@@ -230,6 +238,13 @@ public class AlipayOpenAppItemQueryResponse extends AlipayResponse {
 	}
 	public String getDirectPath( ) {
 		return this.directPath;
+	}
+
+	public void setGuideInfo(List<GuideInfoVO> guideInfo) {
+		this.guideInfo = guideInfo;
+	}
+	public List<GuideInfoVO> getGuideInfo( ) {
+		return this.guideInfo;
 	}
 
 	public void setHeadImg(String headImg) {

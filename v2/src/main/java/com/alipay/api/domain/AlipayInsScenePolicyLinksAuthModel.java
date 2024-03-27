@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 获取已授权的保单地址列表
  *
  * @author auto create
- * @since 1.0, 2022-08-29 16:24:32
+ * @since 1.0, 2024-03-20 11:17:49
  */
 public class AlipayInsScenePolicyLinksAuthModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1755814636435656683L;
+	private static final long serialVersionUID = 1491265631655274814L;
 
 	/**
 	 * 登录用户id

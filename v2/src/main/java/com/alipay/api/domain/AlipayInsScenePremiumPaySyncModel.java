@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保费打款同步
  *
  * @author auto create
- * @since 1.0, 2022-08-29 16:23:04
+ * @since 1.0, 2024-03-20 11:21:59
  */
 public class AlipayInsScenePremiumPaySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3738251311295985521L;
+	private static final long serialVersionUID = 8797179698893623466L;
 
 	/**
 	 * 外部订单id

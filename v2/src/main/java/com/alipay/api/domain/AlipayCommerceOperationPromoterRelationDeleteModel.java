@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceOperationPromoterRelationDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1389118378526457515L;
+	private static final long serialVersionUID = 3463487476372874834L;
 
 	/**
 	 * 需要解除的门店对映的pid

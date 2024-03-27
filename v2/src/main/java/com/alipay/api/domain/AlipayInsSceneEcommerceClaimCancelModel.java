@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电商理赔报案取消
  *
  * @author auto create
- * @since 1.0, 2022-08-29 16:22:28
+ * @since 1.0, 2024-03-20 11:21:51
  */
 public class AlipayInsSceneEcommerceClaimCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1653984334913126823L;
+	private static final long serialVersionUID = 8178613332131439151L;
 
 	/**
 	 * 取消原因

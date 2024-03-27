@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁保电商物流模型
  *
  * @author auto create
- * @since 1.0, 2023-11-10 10:27:26
+ * @since 1.0, 2024-03-25 11:17:34
  */
 public class EcomLogisticsOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6798945744264647995L;
+	private static final long serialVersionUID = 5717413934411641947L;
 
 	/**
 	 * 物流公司编码
@@ -58,7 +58,7 @@ public class EcomLogisticsOrderDTO extends AlipayObject {
 	private String logisticsStatus;
 
 	/**
-	 * 物流费用
+	 * 物流费用，单位：分
 	 */
 	@ApiField("post_fee")
 	private Long postFee;

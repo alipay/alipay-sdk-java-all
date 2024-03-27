@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudrun.objectstorage.cacherule.add request
  * 
  * @author auto create
- * @since 1.0, 2023-10-25 15:39:55
+ * @since 1.0, 2024-03-14 15:00:45
  */
 public class AlipayCloudCloudrunObjectstorageCacheruleAddRequest implements AlipayRequest<AlipayCloudCloudrunObjectstorageCacheruleAddResponse> {
 

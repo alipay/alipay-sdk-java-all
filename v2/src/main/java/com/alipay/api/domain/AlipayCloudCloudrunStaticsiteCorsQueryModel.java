@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询跨域配置
  *
  * @author auto create
- * @since 1.0, 2023-10-09 13:45:17
+ * @since 1.0, 2024-03-14 15:02:54
  */
 public class AlipayCloudCloudrunStaticsiteCorsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1786697899823527866L;
+	private static final long serialVersionUID = 4249394369799663522L;
 
 	/**
 	 * 内部使用，uiam角色扮演token

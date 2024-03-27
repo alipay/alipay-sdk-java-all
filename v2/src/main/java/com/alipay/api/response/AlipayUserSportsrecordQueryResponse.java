@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.sportsrecord.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-07 17:33:59
+ * @since 1.0, 2024-03-27 10:08:26
  */
 public class AlipayUserSportsrecordQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1342148363696934785L;
+	private static final long serialVersionUID = 6725899914445583583L;
 
 	/** 
 	 * 是否有更多数据

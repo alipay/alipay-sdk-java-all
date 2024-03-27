@@ -9,14 +9,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保险电商支付单据
  *
  * @author auto create
- * @since 1.0, 2023-11-10 10:27:26
+ * @since 1.0, 2024-03-25 11:17:34
  */
 public class PayOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7229594118624648435L;
+	private static final long serialVersionUID = 5252294639432491816L;
 
 	/**
-	 * 买家实际支付金额
+	 * 买家实际支付金额，单位：分
 	 */
 	@ApiField("actual_total_fee")
 	private Long actualTotalFee;
@@ -92,7 +92,7 @@ BY_HALF_MONTH(按半月缴费)
 	private String payType;
 
 	/**
-	 * 订单总金额，单价×数量
+	 * 订单总金额，单价×数量，单位：分
 	 */
 	@ApiField("total_fee")
 	private Long totalFee;

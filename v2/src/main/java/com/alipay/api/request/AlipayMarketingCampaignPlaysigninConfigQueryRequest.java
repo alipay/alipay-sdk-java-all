@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.campaign.playsignin.config.query request
  * 
  * @author auto create
- * @since 1.0, 2023-10-14 16:41:45
+ * @since 1.0, 2024-03-26 21:52:03
  */
 public class AlipayMarketingCampaignPlaysigninConfigQueryRequest implements AlipayRequest<AlipayMarketingCampaignPlaysigninConfigQueryResponse> {
 

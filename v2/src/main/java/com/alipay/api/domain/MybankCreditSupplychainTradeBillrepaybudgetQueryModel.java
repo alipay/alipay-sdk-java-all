@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 供应链金融-自保理-电信分期还款预算查询服务
  *
  * @author auto create
- * @since 1.0, 2019-07-02 14:13:05
+ * @since 1.0, 2024-03-14 21:00:32
  */
 public class MybankCreditSupplychainTradeBillrepaybudgetQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2771814148176474872L;
+	private static final long serialVersionUID = 3831241136191537716L;
 
 	/**
 	 * 买家信息

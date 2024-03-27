@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 阅读听书频道声音信息查询接口
  *
  * @author auto create
- * @since 1.0, 2024-03-12 14:44:35
+ * @since 1.0, 2024-03-23 23:59:14
  */
 public class AlipayUserAntbooksSoundQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3743198253478455597L;
+	private static final long serialVersionUID = 2433677845415419542L;
 
 	/**
 	 * 最新版本审核状态，用做过滤。如果传入AUDIT_REJECT，则只返回审核失败的声音

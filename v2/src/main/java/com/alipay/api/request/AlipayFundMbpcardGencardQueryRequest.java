@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.mbpcard.gencard.query request
  * 
  * @author auto create
- * @since 1.0, 2024-03-12 10:49:01
+ * @since 1.0, 2024-03-27 11:16:58
  */
 public class AlipayFundMbpcardGencardQueryRequest implements AlipayRequest<AlipayFundMbpcardGencardQueryResponse> {
 

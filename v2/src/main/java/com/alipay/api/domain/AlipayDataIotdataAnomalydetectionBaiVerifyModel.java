@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataIotdataAnomalydetectionBaiVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4456169636336119647L;
+	private static final long serialVersionUID = 1381218528839974434L;
 
 	/**
 	 * base64编码的视频帧数据，表示当前帧

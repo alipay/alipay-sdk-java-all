@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MallMergeCartRequestDto extends AlipayObject {
 
-	private static final long serialVersionUID = 7527142958814981681L;
+	private static final long serialVersionUID = 8567185928291191753L;
 
 	/**
 	 * app_code，用于合并购物车

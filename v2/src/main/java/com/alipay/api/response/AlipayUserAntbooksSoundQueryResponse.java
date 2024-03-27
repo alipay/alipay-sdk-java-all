@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.antbooks.sound.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-12 14:46:57
+ * @since 1.0, 2024-03-24 00:01:57
  */
 public class AlipayUserAntbooksSoundQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2582847549121871145L;
+	private static final long serialVersionUID = 3344688741237752586L;
 
 	/** 
 	 * 当前页码

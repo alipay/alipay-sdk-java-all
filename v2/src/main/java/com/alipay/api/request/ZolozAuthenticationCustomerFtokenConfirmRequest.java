@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zoloz.authentication.customer.ftoken.confirm request
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 20:51:58
+ * @since 1.0, 2024-03-27 09:52:02
  */
 public class ZolozAuthenticationCustomerFtokenConfirmRequest implements AlipayRequest<ZolozAuthenticationCustomerFtokenConfirmResponse> {
 

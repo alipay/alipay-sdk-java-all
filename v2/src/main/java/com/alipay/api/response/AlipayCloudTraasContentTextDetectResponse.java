@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.traas.content.text.detect response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-18 17:51:56
+ * @since 1.0, 2024-03-25 14:27:01
  */
 public class AlipayCloudTraasContentTextDetectResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1552179722724991216L;
+	private static final long serialVersionUID = 8183756565614783365L;
 
 	/** 
 	 * 唯一请求ID

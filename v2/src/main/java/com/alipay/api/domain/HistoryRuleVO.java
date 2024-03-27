@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HistoryRuleVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1744844293556414959L;
+	private static final long serialVersionUID = 2446734141748356768L;
 
 	/**
 	 * 修改时间

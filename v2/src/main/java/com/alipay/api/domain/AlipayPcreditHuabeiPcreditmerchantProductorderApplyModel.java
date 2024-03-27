@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 淘系商户申请订购花呗合约
  *
  * @author auto create
- * @since 1.0, 2021-01-19 17:00:22
+ * @since 1.0, 2024-03-18 19:53:39
  */
 public class AlipayPcreditHuabeiPcreditmerchantProductorderApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2755484381617837872L;
+	private static final long serialVersionUID = 3314811177196763422L;
 
 	/**
 	 * 产品开始生效的时间

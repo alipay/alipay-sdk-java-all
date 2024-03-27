@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 上传原始发票邮件内容
  *
  * @author auto create
- * @since 1.0, 2024-01-04 16:56:12
+ * @since 1.0, 2024-03-26 21:29:16
  */
 public class AlipayEbppInvoiceEmailOriginalinfoUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4247332446793125433L;
+	private static final long serialVersionUID = 4128814286793882823L;
 
 	/**
 	 * 用户邮箱地址
@@ -44,6 +44,12 @@ public class AlipayEbppInvoiceEmailOriginalinfoUploadModel extends AlipayObject 
 	 */
 	@ApiField("out_email_id")
 	private String outEmailId;
+
+	/**
+	 * 邮件解析失败原因，解析失败且有明确失败原因时可回传
+	 */
+	@ApiField("parse_fail_reason")
+	private String parseFailReason;
 
 	/**
 	 * 解析结果
@@ -90,6 +96,13 @@ public class AlipayEbppInvoiceEmailOriginalinfoUploadModel extends AlipayObject 
 	}
 	public void setOutEmailId(String outEmailId) {
 		this.outEmailId = outEmailId;
+	}
+
+	public String getParseFailReason() {
+		return this.parseFailReason;
+	}
+	public void setParseFailReason(String parseFailReason) {
+		this.parseFailReason = parseFailReason;
 	}
 
 	public String getParseTag() {

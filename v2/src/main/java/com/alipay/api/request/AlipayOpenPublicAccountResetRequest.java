@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.public.account.reset request
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:26:18
+ * @since 1.0, 2024-03-27 08:44:38
  */
 public class AlipayOpenPublicAccountResetRequest implements AlipayRequest<AlipayOpenPublicAccountResetResponse> {
 

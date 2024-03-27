@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.kabao.voucher.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-30 19:21:55
+ * @since 1.0, 2024-03-27 08:57:02
  */
 public class AlipayUserKabaoVoucherModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6214673433654554988L;
+	private static final long serialVersionUID = 4329483381971539962L;
 
 	/** 
 	 * 补充业务错误信息

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易取消
  *
  * @author auto create
- * @since 1.0, 2022-03-10 16:27:08
+ * @since 1.0, 2024-03-13 10:34:39
  */
 public class MybankCreditSupplychainTradeCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2266131674528733755L;
+	private static final long serialVersionUID = 5617715797169452761L;
 
 	/**
 	 * 买家会员信息

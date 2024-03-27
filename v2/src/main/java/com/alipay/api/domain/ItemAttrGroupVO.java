@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品属性分组
  *
  * @author auto create
- * @since 1.0, 2023-07-12 10:24:17
+ * @since 1.0, 2024-03-22 11:11:51
  */
 public class ItemAttrGroupVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5887657479253595877L;
+	private static final long serialVersionUID = 1389231991252817647L;
 
 	/**
 	 * 商品属性列表
@@ -46,6 +46,13 @@ public class ItemAttrGroupVO extends AlipayObject {
 	@ApiField("attribute_v_o")
 	private List<AttributeVO> skuAttrList;
 
+	/**
+	 * 标品属性列表
+	 */
+	@ApiListField("spu_attr_list")
+	@ApiField("attribute_v_o")
+	private List<AttributeVO> spuAttrList;
+
 	public List<AttributeVO> getItemAttrList() {
 		return this.itemAttrList;
 	}
@@ -72,6 +79,13 @@ public class ItemAttrGroupVO extends AlipayObject {
 	}
 	public void setSkuAttrList(List<AttributeVO> skuAttrList) {
 		this.skuAttrList = skuAttrList;
+	}
+
+	public List<AttributeVO> getSpuAttrList() {
+		return this.spuAttrList;
+	}
+	public void setSpuAttrList(List<AttributeVO> spuAttrList) {
+		this.spuAttrList = spuAttrList;
 	}
 
 }

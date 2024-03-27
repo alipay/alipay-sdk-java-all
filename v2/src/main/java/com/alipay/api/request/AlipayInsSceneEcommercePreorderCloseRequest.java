@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.ecommerce.preorder.close request
  * 
  * @author auto create
- * @since 1.0, 2024-01-09 12:11:25
+ * @since 1.0, 2024-03-20 11:19:34
  */
 public class AlipayInsSceneEcommercePreorderCloseRequest implements AlipayRequest<AlipayInsSceneEcommercePreorderCloseResponse> {
 

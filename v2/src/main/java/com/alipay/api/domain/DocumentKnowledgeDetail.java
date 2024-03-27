@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 文档知识信息
  *
  * @author auto create
- * @since 1.0, 2024-01-16 10:24:16
+ * @since 1.0, 2024-03-20 10:00:34
  */
 public class DocumentKnowledgeDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3889653751983522995L;
+	private static final long serialVersionUID = 4441383644922463835L;
 
 	/**
 	 * 文档答案
@@ -29,6 +29,12 @@ public class DocumentKnowledgeDetail extends AlipayObject {
 	@ApiField("related_document_fragments")
 	private List<RelatedDocumentFragments> relatedDocumentFragments;
 
+	/**
+	 * 是否以流形式输出
+	 */
+	@ApiField("stream_output")
+	private Boolean streamOutput;
+
 	public String getDocumentAnswer() {
 		return this.documentAnswer;
 	}
@@ -41,6 +47,13 @@ public class DocumentKnowledgeDetail extends AlipayObject {
 	}
 	public void setRelatedDocumentFragments(List<RelatedDocumentFragments> relatedDocumentFragments) {
 		this.relatedDocumentFragments = relatedDocumentFragments;
+	}
+
+	public Boolean getStreamOutput() {
+		return this.streamOutput;
+	}
+	public void setStreamOutput(Boolean streamOutput) {
+		this.streamOutput = streamOutput;
 	}
 
 }

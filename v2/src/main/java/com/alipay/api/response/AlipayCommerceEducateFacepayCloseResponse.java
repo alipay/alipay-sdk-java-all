@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.facepay.close response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-20 10:21:44
+ * @since 1.0, 2024-03-26 21:19:32
  */
 public class AlipayCommerceEducateFacepayCloseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2635879683447721912L;
+	private static final long serialVersionUID = 7574256539834368966L;
 
 	/** 
 	 * 关闭申请执行结果

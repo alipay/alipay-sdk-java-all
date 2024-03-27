@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 理赔垫付信息同步
  *
  * @author auto create
- * @since 1.0, 2022-08-29 12:03:41
+ * @since 1.0, 2024-03-20 11:20:08
  */
 public class AlipayInsSceneClaimAdvancepaySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1882165878446865792L;
+	private static final long serialVersionUID = 1378458344343838455L;
 
 	/**
 	 * 垫付信息

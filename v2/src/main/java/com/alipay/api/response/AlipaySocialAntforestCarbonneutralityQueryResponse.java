@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.antforest.carbonneutrality.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-24 21:41:42
+ * @since 1.0, 2024-03-15 16:53:11
  */
 public class AlipaySocialAntforestCarbonneutralityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4456813833115616636L;
+	private static final long serialVersionUID = 7594238728998235392L;
 
 	/** 
 	 * 人人1kg预计碳中和排放量

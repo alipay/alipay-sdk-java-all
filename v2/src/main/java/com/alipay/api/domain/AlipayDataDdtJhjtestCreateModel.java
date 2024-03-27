@@ -7,14 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * jhj测试子场景
  *
  * @author auto create
- * @since 1.0, 2024-01-31 14:24:13
+ * @since 1.0, 2024-03-18 14:49:19
  */
 public class AlipayDataDdtJhjtestCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7415346145425465227L;
+	private static final long serialVersionUID = 4376652242759899649L;
 
 	/**
-	 * 123456
+	 * 描述
+	 */
+	@ApiField("com_a")
+	private PubNestPub comA;
+
+	/**
+	 * 123456222
 	 */
 	@ApiField("id")
 	private String id;
@@ -32,7 +38,7 @@ public class AlipayDataDdtJhjtestCreateModel extends AlipayObject {
 	private String inputA;
 
 	/**
-	 * aa
+	 * 描述很长描述很长描述很长描述很长描述很长描述很长描述很长
 	 */
 	@ApiField("input_b")
 	private String inputB;
@@ -56,10 +62,17 @@ public class AlipayDataDdtJhjtestCreateModel extends AlipayObject {
 	private String inputEe;
 
 	/**
-	 * aa
+	 * jhj测试子场景（修改）jhj测试子场景（修改）jhj测试子场景（修改）jhj测试子场景（修改）jhj测试子场景（修改）
 	 */
 	@ApiField("map_a_openid")
 	private String mapAOpenid;
+
+	public PubNestPub getComA() {
+		return this.comA;
+	}
+	public void setComA(PubNestPub comA) {
+		this.comA = comA;
+	}
 
 	public String getId() {
 		return this.id;

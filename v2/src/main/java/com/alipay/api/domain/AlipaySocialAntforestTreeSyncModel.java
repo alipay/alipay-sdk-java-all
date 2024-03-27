@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 同步外部证书到蚂蚁森林
  *
  * @author auto create
- * @since 1.0, 2022-10-12 20:27:49
+ * @since 1.0, 2024-03-14 19:28:39
  */
 public class AlipaySocialAntforestTreeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3875437294653866816L;
+	private static final long serialVersionUID = 2249386625317257135L;
 
 	/**
 	 * 待同步的证书的来源账户id

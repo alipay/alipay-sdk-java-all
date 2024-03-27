@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudrun.staticsite.iplimit.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-10-10 10:06:46
+ * @since 1.0, 2024-03-14 15:02:13
  */
 public class AlipayCloudCloudrunStaticsiteIplimitModifyRequest implements AlipayRequest<AlipayCloudCloudrunStaticsiteIplimitModifyResponse> {
 

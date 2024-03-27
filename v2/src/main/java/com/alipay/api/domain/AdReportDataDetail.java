@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询结果数据列表
  *
  * @author auto create
- * @since 1.0, 2024-01-15 15:49:38
+ * @since 1.0, 2024-03-20 11:23:51
  */
 public class AdReportDataDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5359817314439973675L;
+	private static final long serialVersionUID = 1715351265457223131L;
 
 	/**
 	 * 当query_type为DETAIL时数据汇总时间格式yyyyMMdd；当按ALL_SUM时该出参非必填
@@ -88,6 +88,18 @@ public class AdReportDataDetail extends AlipayObject {
 	 */
 	@ApiField("plan_name")
 	private String planName;
+
+	/**
+	 * 商家账户
+	 */
+	@ApiField("principal_alipay_account")
+	private String principalAlipayAccount;
+
+	/**
+	 * 商家名称
+	 */
+	@ApiField("principal_name")
+	private String principalName;
 
 	/**
 	 * 投放产品名称
@@ -177,6 +189,20 @@ public class AdReportDataDetail extends AlipayObject {
 	}
 	public void setPlanName(String planName) {
 		this.planName = planName;
+	}
+
+	public String getPrincipalAlipayAccount() {
+		return this.principalAlipayAccount;
+	}
+	public void setPrincipalAlipayAccount(String principalAlipayAccount) {
+		this.principalAlipayAccount = principalAlipayAccount;
+	}
+
+	public String getPrincipalName() {
+		return this.principalName;
+	}
+	public void setPrincipalName(String principalName) {
+		this.principalName = principalName;
 	}
 
 	public String getSceneName() {

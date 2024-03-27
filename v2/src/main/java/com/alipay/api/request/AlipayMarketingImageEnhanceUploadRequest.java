@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.image.enhance.upload request
  * 
  * @author auto create
- * @since 1.0, 2024-03-08 14:50:52
+ * @since 1.0, 2024-03-14 09:41:57
  */
 public class AlipayMarketingImageEnhanceUploadRequest implements AlipayUploadRequest<AlipayMarketingImageEnhanceUploadResponse> {
 
@@ -24,6 +24,11 @@ public class AlipayMarketingImageEnhanceUploadRequest implements AlipayUploadReq
 	* 图片的byte字节数组。图片大小限制为2M。支持格式如下：png、jpg、jpeg、bmp、webp。
 	 */
 	private FileItem imageContent;
+
+	/** 
+	* 图片归属图空间目录id。不填时，默认归属到图空间根目录；填写时会保存到图片空间的目录id下；当图片需要保存到根目录下时传"0"。
+	 */
+	private String imageDirectoryId;
 
 	/** 
 	* 素材字段。本接口必须为图片类型的素材字段。
@@ -50,6 +55,13 @@ public class AlipayMarketingImageEnhanceUploadRequest implements AlipayUploadReq
 	}
 	public FileItem getImageContent() {
 		return this.imageContent;
+	}
+
+	public void setImageDirectoryId(String imageDirectoryId) {
+		this.imageDirectoryId = imageDirectoryId;
+	}
+	public String getImageDirectoryId() {
+		return this.imageDirectoryId;
 	}
 
 	public void setMaterialField(String materialField) {
@@ -140,6 +152,7 @@ public class AlipayMarketingImageEnhanceUploadRequest implements AlipayUploadReq
 
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
+		txtParams.put("image_directory_id", this.imageDirectoryId);
 		txtParams.put("material_field", this.materialField);
 		txtParams.put("material_spec_id", this.materialSpecId);
 		txtParams.put("need_enhance", this.needEnhance);

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 咨询对应账户是否能够兑换相应的项目
  *
  * @author auto create
- * @since 1.0, 2022-10-12 21:20:15
+ * @since 1.0, 2024-03-14 19:27:29
  */
 public class AlipaySocialAntforestPlantConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5457387748313663936L;
+	private static final long serialVersionUID = 1434246854953829931L;
 
 	/**
 	 * 出账购买树种的账户id

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 电商投保准入接口
  *
  * @author auto create
- * @since 1.0, 2022-08-29 12:07:35
+ * @since 1.0, 2024-03-20 11:20:51
  */
 public class AlipayInsSceneEcommerceInsureCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3264564738662258165L;
+	private static final long serialVersionUID = 6497969568817527774L;
 
 	/**
 	 * 批量的【商品、卖家和卖家信息】

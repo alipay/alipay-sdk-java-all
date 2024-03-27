@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.image.enhance.upload response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-08 14:50:52
+ * @since 1.0, 2024-03-14 09:41:57
  */
 public class AlipayMarketingImageEnhanceUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4275898869946867484L;
+	private static final long serialVersionUID = 4457258163886637889L;
 
 	/** 
 	 * 图片是否优化过。若上传选择需要优化，且上传的图片不符合规范，会对图片进行优化。
@@ -25,6 +25,12 @@ public class AlipayMarketingImageEnhanceUploadResponse extends AlipayResponse {
 	 */
 	@ApiField("image_id")
 	private String imageId;
+
+	/** 
+	 * 图索引id。图片在相册中的索引id。
+	 */
+	@ApiField("image_index_id")
+	private String imageIndexId;
 
 	/** 
 	 * 图片上传后返回的链接
@@ -44,6 +50,13 @@ public class AlipayMarketingImageEnhanceUploadResponse extends AlipayResponse {
 	}
 	public String getImageId( ) {
 		return this.imageId;
+	}
+
+	public void setImageIndexId(String imageIndexId) {
+		this.imageIndexId = imageIndexId;
+	}
+	public String getImageIndexId( ) {
+		return this.imageIndexId;
 	}
 
 	public void setImageUrl(String imageUrl) {

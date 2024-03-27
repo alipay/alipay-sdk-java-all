@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEcoMycarCommercializationOrderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7725431125379246928L;
+	private static final long serialVersionUID = 5775525727119495134L;
 
 	/**
 	 * openid

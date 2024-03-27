@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipaySecurityRiskMsgtoMsgFreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3781195148944868978L;
+	private static final long serialVersionUID = 2385893223442276717L;
 
 	/**
 	 * 基础类型，string类型，必选，有枚举值json格式：[{"value": "枚举值1","name": "枚举名1"},{"value": "枚举值2","name": "枚举名2"}]

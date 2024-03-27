@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 内部资源
  *
  * @author auto create
- * @since 1.0, 2023-07-19 20:27:10
+ * @since 1.0, 2024-03-26 16:38:33
  */
 public class AlipayBossProdTestAproveQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8161186765618928754L;
+	private static final long serialVersionUID = 7733283252211538176L;
 
 	/**
 	 * test
@@ -24,6 +24,18 @@ public class AlipayBossProdTestAproveQueryModel extends AlipayObject {
 	 */
 	@ApiField("complex_b")
 	private PublicComplex complexB;
+
+	/**
+	 * test
+	 */
+	@ApiField("platform_a")
+	private String platformA;
+
+	/**
+	 * 秒速
+	 */
+	@ApiField("platform_complex_a")
+	private Apitestjhj platformComplexA;
 
 	/**
 	 * test
@@ -49,6 +61,20 @@ public class AlipayBossProdTestAproveQueryModel extends AlipayObject {
 	}
 	public void setComplexB(PublicComplex complexB) {
 		this.complexB = complexB;
+	}
+
+	public String getPlatformA() {
+		return this.platformA;
+	}
+	public void setPlatformA(String platformA) {
+		this.platformA = platformA;
+	}
+
+	public Apitestjhj getPlatformComplexA() {
+		return this.platformComplexA;
+	}
+	public void setPlatformComplexA(Apitestjhj platformComplexA) {
+		this.platformComplexA = platformComplexA;
 	}
 
 	public String getTestOpenId() {

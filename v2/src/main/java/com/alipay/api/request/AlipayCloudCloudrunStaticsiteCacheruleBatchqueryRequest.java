@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudrun.staticsite.cacherule.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2023-10-25 15:40:38
+ * @since 1.0, 2024-03-14 14:59:43
  */
 public class AlipayCloudCloudrunStaticsiteCacheruleBatchqueryRequest implements AlipayRequest<AlipayCloudCloudrunStaticsiteCacheruleBatchqueryResponse> {
 

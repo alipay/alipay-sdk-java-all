@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景开放平台预下单返回的订单信息模型
  *
  * @author auto create
- * @since 1.0, 2022-08-19 15:50:13
+ * @since 1.0, 2024-03-20 11:17:11
  */
 public class InsPreOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4247773935225211316L;
+	private static final long serialVersionUID = 7223395289163781839L;
 
 	/**
 	 * 业务id

@@ -9,17 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保单摘要数据
  *
  * @author auto create
- * @since 1.0, 2022-09-28 14:42:21
+ * @since 1.0, 2024-03-25 11:17:35
  */
 public class InsOpenPolicyDigestDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5421335944729537478L;
+	private static final long serialVersionUID = 2494877311237978332L;
 
 	/**
 	 * 保险公司id
 	 */
 	@ApiField("inst_id")
 	private String instId;
+
+	/**
+	 * 保司保单号
+	 */
+	@ApiField("inst_policy_no")
+	private String instPolicyNo;
 
 	/**
 	 * 保单生效时间
@@ -75,6 +81,13 @@ public class InsOpenPolicyDigestDTO extends AlipayObject {
 	}
 	public void setInstId(String instId) {
 		this.instId = instId;
+	}
+
+	public String getInstPolicyNo() {
+		return this.instPolicyNo;
+	}
+	public void setInstPolicyNo(String instPolicyNo) {
+		this.instPolicyNo = instPolicyNo;
 	}
 
 	public String getPolicyEffectTime() {

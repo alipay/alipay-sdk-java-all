@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 职得工作证图片上传
  *
  * @author auto create
- * @since 1.0, 2022-05-07 10:18:07
+ * @since 1.0, 2024-03-14 14:58:28
  */
 public class ZhimaCustomerJobworthPictureUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7452645685946454839L;
+	private static final long serialVersionUID = 8186155978438788286L;
 
 	/**
 	 * 图片对应的base64字符串，支持jpg和png，1M之内

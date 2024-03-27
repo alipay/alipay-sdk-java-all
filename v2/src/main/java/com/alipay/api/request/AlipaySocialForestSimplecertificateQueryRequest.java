@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.forest.simplecertificate.query request
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:34:33
+ * @since 1.0, 2024-03-14 19:27:22
  */
 public class AlipaySocialForestSimplecertificateQueryRequest implements AlipayRequest<AlipaySocialForestSimplecertificateQueryResponse> {
 

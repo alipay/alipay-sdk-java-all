@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudrun.objectstorage.securedomain.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-10-16 13:56:45
+ * @since 1.0, 2024-03-14 15:01:37
  */
 public class AlipayCloudCloudrunObjectstorageSecuredomainDeleteRequest implements AlipayRequest<AlipayCloudCloudrunObjectstorageSecuredomainDeleteResponse> {
 
