@@ -16,11 +16,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.shop.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-21 11:43:56
+ * @since 1.0, 2024-04-02 11:12:00
  */
 public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3446785378164773876L;
+	private static final long serialVersionUID = 2759644428568475749L;
+
+	/** 
+	 * 门店地址库 ID，按照一定的平台规则识别出的线下真实存在、真实经营的蚂蚁门店地址库 ID，将作用于服务商的返佣激励、商品/券等权益的公域分发。如平台未返回alipay_poiid，请在确认门店信息真实有效后，稍后再进行查询。
+	 */
+	@ApiField("alipay_poiid")
+	private String alipayPoiid;
 
 	/** 
 	 * 品牌id
@@ -154,7 +160,7 @@ public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 	private String settleAlipayLogonId;
 
 	/** 
-	 * 店铺类目，取值参见文件https://mif-pub.alipayobjects.com/ShopCategory.xlsx 中的三级门店类目
+	 * 店铺类目，取值参见文件中的三级门店类目<a herf="https://mif-pub.alipayobjects.com/ShopCategory.xlsx"></a>
 	 */
 	@ApiField("shop_category")
 	private String shopCategory;
@@ -194,6 +200,13 @@ public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("store_id")
 	private String storeId;
+
+	public void setAlipayPoiid(String alipayPoiid) {
+		this.alipayPoiid = alipayPoiid;
+	}
+	public String getAlipayPoiid( ) {
+		return this.alipayPoiid;
+	}
 
 	public void setBrandId(String brandId) {
 		this.brandId = brandId;

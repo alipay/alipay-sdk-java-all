@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户签约结果信息
  *
  * @author auto create
- * @since 1.0, 2024-03-12 16:23:18
+ * @since 1.0, 2024-04-01 15:52:50
  */
 public class AlipayFundTaxbillSignQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2786448344553824662L;
+	private static final long serialVersionUID = 5187653267878848587L;
 
 	/**
 	 * 场景码，固定值：SIGN
@@ -42,6 +42,12 @@ public class AlipayFundTaxbillSignQueryModel extends AlipayObject {
 	 */
 	@ApiField("product_code")
 	private String productCode;
+
+	/**
+	 * 方案模板编码，企业邀请C端用户和多家税筹服务商同时签约（1对N）后，批量查询签约结果时需要提供该参数
+	 */
+	@ApiField("solution_code")
+	private String solutionCode;
 
 	public String getBizScene() {
 		return this.bizScene;
@@ -76,6 +82,13 @@ public class AlipayFundTaxbillSignQueryModel extends AlipayObject {
 	}
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
+	}
+
+	public String getSolutionCode() {
+		return this.solutionCode;
+	}
+	public void setSolutionCode(String solutionCode) {
+		this.solutionCode = solutionCode;
 	}
 
 }

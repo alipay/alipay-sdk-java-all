@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * AMPE绑定小程序
  *
  * @author auto create
- * @since 1.0, 2020-07-06 15:04:41
+ * @since 1.0, 2024-04-03 11:59:16
  */
 public class AlipayOpenMiniAmpeMiniappBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1361199219747194981L;
+	private static final long serialVersionUID = 4176882982638917361L;
 
 	/**
 	 * 小程序ID

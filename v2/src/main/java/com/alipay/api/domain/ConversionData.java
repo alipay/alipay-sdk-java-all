@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 转化数据详情
  *
  * @author auto create
- * @since 1.0, 2023-11-27 12:43:20
+ * @since 1.0, 2024-04-01 11:24:27
  */
 public class ConversionData extends AlipayObject {
 
-	private static final long serialVersionUID = 4658776991623213782L;
+	private static final long serialVersionUID = 4784335525798796528L;
 
 	/**
 	 * 广告id
@@ -36,6 +36,12 @@ public class ConversionData extends AlipayObject {
 	 */
 	@ApiField("callback_ext_info")
 	private String callbackExtInfo;
+
+	/**
+	 * 监测链接配置的__CID__宏参发生用户点击替换后的id值
+	 */
+	@ApiField("cid")
+	private String cid;
 
 	/**
 	 * 当source=DATASET或者OTHER时使用：
@@ -201,6 +207,13 @@ PID - 2088pid
 	}
 	public void setCallbackExtInfo(String callbackExtInfo) {
 		this.callbackExtInfo = callbackExtInfo;
+	}
+
+	public String getCid() {
+		return this.cid;
+	}
+	public void setCid(String cid) {
+		this.cid = cid;
 	}
 
 	public String getConversionAmount() {

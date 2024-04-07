@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MiniResourceRule extends AlipayObject {
 
-	private static final long serialVersionUID = 4156687294514164627L;
+	private static final long serialVersionUID = 1441391398237744366L;
 
 	/**
 	 * 选品类目ID，在type为CHOOSE_RULE的时候必填

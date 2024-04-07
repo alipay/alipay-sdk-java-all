@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.ec.voucher.summary.query request
  * 
  * @author auto create
- * @since 1.0, 2024-03-04 13:35:59
+ * @since 1.0, 2024-04-01 22:59:06
  */
 public class AlipayCommerceEcVoucherSummaryQueryRequest implements AlipayRequest<AlipayCommerceEcVoucherSummaryQueryResponse> {
 

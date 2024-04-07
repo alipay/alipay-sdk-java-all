@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.trade.scenepay.token.exchange request
  * 
  * @author auto create
- * @since 1.0, 2023-12-27 15:59:11
+ * @since 1.0, 2024-04-02 15:11:59
  */
 public class AlipayTradeScenepayTokenExchangeRequest implements AlipayRequest<AlipayTradeScenepayTokenExchangeResponse> {
 

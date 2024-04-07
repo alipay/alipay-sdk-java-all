@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 置业成本-接收流程回调
  *
  * @author auto create
- * @since 1.0, 2021-11-17 16:55:24
+ * @since 1.0, 2024-04-01 10:45:04
  */
 public class AlipayDigitalmgmtLandcoreLandcoretpspCbbpmSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3758931383766967372L;
+	private static final long serialVersionUID = 4534691616867332461L;
 
 	/**
 	 * 流程唯一标识

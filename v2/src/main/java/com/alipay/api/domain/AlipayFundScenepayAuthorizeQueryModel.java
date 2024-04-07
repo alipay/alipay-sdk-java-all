@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景支付-授权查询
  *
  * @author auto create
- * @since 1.0, 2024-03-11 12:36:21
+ * @since 1.0, 2024-04-02 14:33:08
  */
 public class AlipayFundScenepayAuthorizeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1645243263613982424L;
+	private static final long serialVersionUID = 6776614334488716288L;
 
 	/**
 	 * USER_AUTHORIZATION 用户授权
@@ -31,6 +31,18 @@ MERCHANT_AUTHORIZATION 商户授权
 	 */
 	@ApiField("business_principal_info")
 	private ScenePayParticipantInfoDTO businessPrincipalInfo;
+
+	/**
+	 * 外部签约号
+	 */
+	@ApiField("out_agreement_no")
+	private String outAgreementNo;
+
+	/**
+	 * 外部业务号
+	 */
+	@ApiField("out_biz_no")
+	private String outBizNo;
 
 	/**
 	 * 授权主体信息
@@ -69,6 +81,20 @@ MERCHANT_AUTHORIZATION 商户授权
 	}
 	public void setBusinessPrincipalInfo(ScenePayParticipantInfoDTO businessPrincipalInfo) {
 		this.businessPrincipalInfo = businessPrincipalInfo;
+	}
+
+	public String getOutAgreementNo() {
+		return this.outAgreementNo;
+	}
+	public void setOutAgreementNo(String outAgreementNo) {
+		this.outAgreementNo = outAgreementNo;
+	}
+
+	public String getOutBizNo() {
+		return this.outBizNo;
+	}
+	public void setOutBizNo(String outBizNo) {
+		this.outBizNo = outBizNo;
 	}
 
 	public ScenePayParticipantInfoDTO getPrincipalInfo() {

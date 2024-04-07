@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.jointaccount.fundplan.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 18:31:44
+ * @since 1.0, 2024-03-28 00:39:02
  */
 public class AlipayFundJointaccountFundplanDeleteRequest implements AlipayRequest<AlipayFundJointaccountFundplanDeleteResponse> {
 

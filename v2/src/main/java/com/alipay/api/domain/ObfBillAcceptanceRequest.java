@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 计财账单受理请求模型
  *
  * @author auto create
- * @since 1.0, 2023-11-24 09:58:57
+ * @since 1.0, 2024-03-28 16:35:46
  */
 public class ObfBillAcceptanceRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 6379455195848612591L;
+	private static final long serialVersionUID = 7399172295659917431L;
 
 	/**
 	 * 分摊规则-一次性计收/按时长分摊
@@ -60,6 +60,12 @@ public class ObfBillAcceptanceRequest extends AlipayObject {
 	 */
 	@ApiField("channel_commodity_name")
 	private String channelCommodityName;
+
+	/**
+	 * 多云传过来的供应商
+	 */
+	@ApiField("cloud_provider")
+	private String cloudProvider;
 
 	/**
 	 * 用户名称，可能是公司，也可能是个人客户
@@ -182,6 +188,13 @@ SELF_OVERSEAS 自运营海外
 	}
 	public void setChannelCommodityName(String channelCommodityName) {
 		this.channelCommodityName = channelCommodityName;
+	}
+
+	public String getCloudProvider() {
+		return this.cloudProvider;
+	}
+	public void setCloudProvider(String cloudProvider) {
+		this.cloudProvider = cloudProvider;
 	}
 
 	public String getCustomerName() {

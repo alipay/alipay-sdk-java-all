@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.traas.content.text.detect request
  * 
  * @author auto create
- * @since 1.0, 2024-03-25 14:27:01
+ * @since 1.0, 2024-03-29 11:36:22
  */
 public class AlipayCloudTraasContentTextDetectRequest implements AlipayRequest<AlipayCloudTraasContentTextDetectResponse> {
 

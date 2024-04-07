@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.matchuser.label.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-12 06:52:49
+ * @since 1.0, 2024-04-01 23:29:20
  */
 public class AlipayOpenPublicMatchuserLabelCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5716632248164737717L;
+	private static final long serialVersionUID = 5766281353779776721L;
 
 	/** 
 	 * 用户打标失败数量

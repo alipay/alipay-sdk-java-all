@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.customer.zmcard.score.certify request
  * 
  * @author auto create
- * @since 1.0, 2023-08-24 21:21:44
+ * @since 1.0, 2024-04-01 23:07:47
  */
 public class ZhimaCustomerZmcardScoreCertifyRequest implements AlipayRequest<ZhimaCustomerZmcardScoreCertifyResponse> {
 

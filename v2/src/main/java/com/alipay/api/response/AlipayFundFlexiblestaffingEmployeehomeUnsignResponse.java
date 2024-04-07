@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.flexiblestaffing.employeehome.unsign response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-26 14:15:30
+ * @since 1.0, 2024-04-01 22:56:49
  */
 public class AlipayFundFlexiblestaffingEmployeehomeUnsignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7277818234116963733L;
+	private static final long serialVersionUID = 3611523578431177518L;
 
 	/** 
 	 * 解除的服务id

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务窗联系人关注者模型
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @since 1.0, 2024-03-28 14:05:57
  */
 public class ContactFollower extends AlipayObject {
 
-	private static final long serialVersionUID = 1394778613498599759L;
+	private static final long serialVersionUID = 8274694669184664497L;
 
 	/**
 	 * 支付宝头像

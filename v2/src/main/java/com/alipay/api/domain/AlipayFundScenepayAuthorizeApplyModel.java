@@ -7,14 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景支付-授权申请
  *
  * @author auto create
- * @since 1.0, 2023-08-10 10:56:14
+ * @since 1.0, 2024-04-02 14:32:15
  */
 public class AlipayFundScenepayAuthorizeApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2371494614827641211L;
+	private static final long serialVersionUID = 5382229354156789577L;
 
 	/**
-	 * 商户授权
+	 * 授权类型
+商户授权：MERCHANT_AUTHORIZATION
+用户授权：USER_AUTHORIZATION
+具体传参请与对接同学确认获取
 	 */
 	@ApiField("authorization_type")
 	private String authorizationType;

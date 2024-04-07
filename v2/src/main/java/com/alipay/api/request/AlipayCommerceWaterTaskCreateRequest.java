@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.water.task.create request
  * 
  * @author auto create
- * @since 1.0, 2024-03-11 11:36:58
+ * @since 1.0, 2024-03-28 00:51:59
  */
 public class AlipayCommerceWaterTaskCreateRequest implements AlipayRequest<AlipayCommerceWaterTaskCreateResponse> {
 

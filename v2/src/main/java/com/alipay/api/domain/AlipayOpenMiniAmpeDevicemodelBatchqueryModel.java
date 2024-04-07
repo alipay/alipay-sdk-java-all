@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询产品机型列表
  *
  * @author auto create
- * @since 1.0, 2020-07-14 10:49:03
+ * @since 1.0, 2024-04-03 11:54:02
  */
 public class AlipayOpenMiniAmpeDevicemodelBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6524996838536338656L;
+	private static final long serialVersionUID = 4329272337935875233L;
 
 	/**
 	 * 产品ID，必填

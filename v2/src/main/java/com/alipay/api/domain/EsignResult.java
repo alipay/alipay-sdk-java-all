@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签约信息结果
  *
  * @author auto create
- * @since 1.0, 2023-01-12 11:07:45
+ * @since 1.0, 2024-04-01 15:52:50
  */
 public class EsignResult extends AlipayObject {
 
-	private static final long serialVersionUID = 4787589376531372292L;
+	private static final long serialVersionUID = 1353163714577511914L;
 
 	/**
 	 * 用工企业和用户以及税筹服务商签订的三方协议的协议ID
@@ -83,7 +83,7 @@ DIRECT_PAYMENT（直接发薪）
 
 	/**
 	 * 三方协议状态
-1.SIGNED（已签约
+1.SIGNED（已签约)
 2.TERMINATING(解约中)
 3.TERMINATED(已解约)
 	 */

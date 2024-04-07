@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CaSystemMainBodyRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 6518562999151614238L;
+	private static final long serialVersionUID = 5399127544921543351L;
 
 	/**
 	 * * 如果用印坐标未知，可根据关键字及出现的次序计算用印座标。 则：传入关键字及出现次序，axisX，axisY无需传入，内部会计算出对应的值,覆盖外部传入的axisX，axisY

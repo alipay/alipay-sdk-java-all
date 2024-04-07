@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.water.usertaskdetail.query request
  * 
  * @author auto create
- * @since 1.0, 2024-02-27 09:53:11
+ * @since 1.0, 2024-03-28 01:02:04
  */
 public class AlipayCommerceWaterUsertaskdetailQueryRequest implements AlipayRequest<AlipayCommerceWaterUsertaskdetailQueryResponse> {
 

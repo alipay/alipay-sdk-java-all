@@ -11,11 +11,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.shop.page.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-11 20:35:59
+ * @since 1.0, 2024-04-02 10:51:59
  */
 public class AntMerchantExpandShopPageQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7856723771766295755L;
+	private static final long serialVersionUID = 7276749678679199164L;
+
+	/** 
+	 * 门店地址库 ID，按照一定的平台规则识别出的线下真实存在、真实经营的蚂蚁门店地址库 ID，将作用于服务商的返佣激励、商品/券等权益的公域分发。如平台未返回alipay_poiid，请在确认门店信息真实有效后，稍后再进行查询
+	 */
+	@ApiField("alipay_poiid")
+	private String alipayPoiid;
 
 	/** 
 	 * 门店详情
@@ -29,6 +35,13 @@ public class AntMerchantExpandShopPageQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("total_pages")
 	private Long totalPages;
+
+	public void setAlipayPoiid(String alipayPoiid) {
+		this.alipayPoiid = alipayPoiid;
+	}
+	public String getAlipayPoiid( ) {
+		return this.alipayPoiid;
+	}
 
 	public void setShopInfos(List<ShopQueryOpenApiVO> shopInfos) {
 		this.shopInfos = shopInfos;

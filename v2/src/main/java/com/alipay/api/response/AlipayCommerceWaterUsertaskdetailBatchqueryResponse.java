@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.water.usertaskdetail.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2024-02-27 09:53:38
+ * @since 1.0, 2024-04-01 23:42:04
  */
 public class AlipayCommerceWaterUsertaskdetailBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4819527471923797451L;
+	private static final long serialVersionUID = 4814931249218693664L;
 
 	/** 
 	 * 返回列表

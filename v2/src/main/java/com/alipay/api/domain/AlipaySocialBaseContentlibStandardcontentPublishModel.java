@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 内容发布接口
  *
  * @author auto create
- * @since 1.0, 2024-01-31 11:16:16
+ * @since 1.0, 2024-03-28 10:00:50
  */
 public class AlipaySocialBaseContentlibStandardcontentPublishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1173562357391773551L;
+	private static final long serialVersionUID = 6321796253722965984L;
 
 	/**
 	 * 内容分发范围。1 - 所有人可见，2 - 分发范围受限。

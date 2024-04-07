@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户账号简单信息
  *
  * @author auto create
- * @since 1.0, 2023-09-19 13:44:33
+ * @since 1.0, 2024-03-28 14:04:54
  */
 public class AccountNoInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3177297678695853289L;
+	private static final long serialVersionUID = 2778847433614167565L;
 
 	/**
 	 * ● 若传入logon_id，则查询用户名下所有已实名的、作为登录账号的支付宝账号

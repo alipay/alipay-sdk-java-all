@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取可选行业列表
  *
  * @author auto create
- * @since 1.0, 2020-07-14 14:36:26
+ * @since 1.0, 2024-04-03 11:56:22
  */
 public class AlipayOpenMiniAmpeCategoryBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6433376731571624346L;
+	private static final long serialVersionUID = 3853565637225839758L;
 
 	/**
 	 * 场景码，申请后平台分配，必填

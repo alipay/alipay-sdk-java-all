@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CreditPayTermVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2669474552322568866L;
+	private static final long serialVersionUID = 8588796957388361526L;
 
 	/**
 	 * 期限结束日期

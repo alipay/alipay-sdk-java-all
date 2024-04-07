@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 运动记录信息
  *
  * @author auto create
- * @since 1.0, 2024-02-01 19:18:54
+ * @since 1.0, 2024-03-28 16:05:36
  */
 public class SportsRecordInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5678554537441964446L;
+	private static final long serialVersionUID = 1326131745286219225L;
 
 	/**
 	 * 消耗卡路里，实际为 decimal类型，有小数
@@ -122,6 +122,13 @@ public class SportsRecordInfo extends AlipayObject {
 	 */
 	@ApiField("step_frequency")
 	private String stepFrequency;
+
+	/**
+	 * 步数信息是否有效；
+true有效，false无效
+	 */
+	@ApiField("step_info_valid")
+	private Boolean stepInfoValid;
 
 	/**
 	 * 步幅，一步多少米
@@ -253,6 +260,13 @@ public class SportsRecordInfo extends AlipayObject {
 	}
 	public void setStepFrequency(String stepFrequency) {
 		this.stepFrequency = stepFrequency;
+	}
+
+	public Boolean getStepInfoValid() {
+		return this.stepInfoValid;
+	}
+	public void setStepInfoValid(Boolean stepInfoValid) {
+		this.stepInfoValid = stepInfoValid;
 	}
 
 	public String getStepStride() {

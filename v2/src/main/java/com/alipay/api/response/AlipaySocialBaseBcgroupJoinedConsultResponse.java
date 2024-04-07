@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySocialBaseBcgroupJoinedConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3818926957953221843L;
+	private static final long serialVersionUID = 7677824576624925819L;
 
 	/** 
 	 * 入群状态。true为已经入群，false为未入群。

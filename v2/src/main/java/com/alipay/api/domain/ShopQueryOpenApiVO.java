@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 门店分页查询详情
  *
  * @author auto create
- * @since 1.0, 2023-12-10 22:57:24
+ * @since 1.0, 2024-04-02 10:47:55
  */
 public class ShopQueryOpenApiVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6191672427379535874L;
+	private static final long serialVersionUID = 1787247548536931227L;
 
 	/**
 	 * 经营地址
@@ -42,13 +42,13 @@ public class ShopQueryOpenApiVO extends AlipayObject {
 	private String contactPhone;
 
 	/**
-	 * 新版门店类目标准二级类目code
+	 * 新版门店类目标准二级类目code.类目标准及与原shop_category映射关系参见<a href="https://gw.alipayobjects.com/os/bmw-prod/4b3f82df-e53e-4b84-bc41-fe025101e726.xlsx">文档</a>
 	 */
 	@ApiField("new_shop_category")
 	private String newShopCategory;
 
 	/**
-	 * 店铺类目，取值参见文件https://mif-pub.alipayobjects.com/ShopCategory.xlsx 中的三级门店类目
+	 * 店铺类目.取值参见文件<a href="https://mif-pub.alipayobjects.com/ShopCategory.xlsx">文件</a>中的三级门店类目
 	 */
 	@ApiField("shop_category")
 	private String shopCategory;

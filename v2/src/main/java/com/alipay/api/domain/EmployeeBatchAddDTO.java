@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量添加的单个员工信息
  *
  * @author auto create
- * @since 1.0, 2024-03-04 15:17:35
+ * @since 1.0, 2024-04-01 16:12:50
  */
 public class EmployeeBatchAddDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5459658837674741261L;
+	private static final long serialVersionUID = 7576996941169667152L;
 
 	/**
 	 * 员工所属部门
@@ -24,25 +24,25 @@ public class EmployeeBatchAddDTO extends AlipayObject {
 	private List<String> departmentIds;
 
 	/**
-	 * 证件号，需搭配证件类型使用。与加密证件号不可同时传入
+	 * 证件号
 	 */
 	@ApiField("employee_cert_no")
 	private String employeeCertNo;
 
 	/**
-	 * 证件类型，搭配证件号使用
+	 * 证件类型
 	 */
 	@ApiField("employee_cert_type")
 	private String employeeCertType;
 
 	/**
-	 * 员工邮箱，和手机号二选一
+	 * 员工邮箱
 	 */
 	@ApiField("employee_email")
 	private String employeeEmail;
 
 	/**
-	 * 员工手机号，和邮箱二选一
+	 * 员工手机号
 	 */
 	@ApiField("employee_mobile")
 	private String employeeMobile;
@@ -60,19 +60,25 @@ public class EmployeeBatchAddDTO extends AlipayObject {
 	private String employeeNo;
 
 	/**
-	 * 加密证件号（证件号转大写后使用SHA256加密），需搭配证件类型使用。与非加密证件号不可同时存在
+	 * 加密证件号（证件号转大写后使用SHA256加密）
 	 */
 	@ApiField("encrypt_cert_no")
 	private String encryptCertNo;
 
 	/**
-	 * 加密手机号（使用SHA256进行加密），不可与手机号同时存在
+	 * 加密手机号（使用SHA256进行加密）
 	 */
 	@ApiField("encrypt_mobile")
 	private String encryptMobile;
 
 	/**
-	 * 角色列表，目前只支持填一种角色，默认为USER
+	 * 个性化信息
+	 */
+	@ApiField("profiles")
+	private String profiles;
+
+	/**
+	 * 角色列表
 	 */
 	@ApiListField("role_list")
 	@ApiField("string")
@@ -139,6 +145,13 @@ public class EmployeeBatchAddDTO extends AlipayObject {
 	}
 	public void setEncryptMobile(String encryptMobile) {
 		this.encryptMobile = encryptMobile;
+	}
+
+	public String getProfiles() {
+		return this.profiles;
+	}
+	public void setProfiles(String profiles) {
+		this.profiles = profiles;
 	}
 
 	public List<String> getRoleList() {

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MallCardBo extends AlipayObject {
 
-	private static final long serialVersionUID = 6388937326841534765L;
+	private static final long serialVersionUID = 1616975932654162156L;
 
 	/**
 	 * 商圈会员卡权益描述

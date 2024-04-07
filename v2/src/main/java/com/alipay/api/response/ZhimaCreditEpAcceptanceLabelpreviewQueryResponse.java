@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.acceptance.labelpreview.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-21 15:39:05
+ * @since 1.0, 2024-04-01 12:02:00
  */
 public class ZhimaCreditEpAcceptanceLabelpreviewQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2214488267754657145L;
+	private static final long serialVersionUID = 2689253625263261816L;
 
 	/** 
 	 * 是否授权标签信用服务
@@ -36,6 +36,24 @@ public class ZhimaCreditEpAcceptanceLabelpreviewQueryResponse extends AlipayResp
 	@ApiField("ep_label_content")
 	private List<EpLabelContent> labelContent;
 
+	/** 
+	 * 企业名下预计标签数量
+	 */
+	@ApiField("label_count")
+	private Long labelCount;
+
+	/** 
+	 * 标签展示类型
+	 */
+	@ApiField("label_show_type")
+	private String labelShowType;
+
+	/** 
+	 * 企业名下标签待获取数量
+	 */
+	@ApiField("label_to_obtain_count")
+	private Long labelToObtainCount;
+
 	public void setHasAuthed(Boolean hasAuthed) {
 		this.hasAuthed = hasAuthed;
 	}
@@ -55,6 +73,27 @@ public class ZhimaCreditEpAcceptanceLabelpreviewQueryResponse extends AlipayResp
 	}
 	public List<EpLabelContent> getLabelContent( ) {
 		return this.labelContent;
+	}
+
+	public void setLabelCount(Long labelCount) {
+		this.labelCount = labelCount;
+	}
+	public Long getLabelCount( ) {
+		return this.labelCount;
+	}
+
+	public void setLabelShowType(String labelShowType) {
+		this.labelShowType = labelShowType;
+	}
+	public String getLabelShowType( ) {
+		return this.labelShowType;
+	}
+
+	public void setLabelToObtainCount(Long labelToObtainCount) {
+		this.labelToObtainCount = labelToObtainCount;
+	}
+	public Long getLabelToObtainCount( ) {
+		return this.labelToObtainCount;
 	}
 
 }

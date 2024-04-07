@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.industry.nsf.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-27 08:47:33
+ * @since 1.0, 2024-04-01 14:38:42
  */
 public class AlipaySecurityRiskIndustryNsfQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3711437817852886484L;
+	private static final long serialVersionUID = 6541312672281343939L;
 
 	/** 
 	 * risk_result:风险分析结果，类型为列表，包含风险分析结果和描述。分别是 risk_type:marketing_awarding_common; risk_value:(hasRisk,noRisk)/("rank1",...,"rank10"); risk_desc:是否有风险/风险等级; 每一次返回，根据配置的不同，可以返回同样的风险结果类型，也可以返回不同的风险结果类型。

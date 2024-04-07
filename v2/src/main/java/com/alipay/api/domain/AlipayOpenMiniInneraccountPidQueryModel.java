@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询小程序管理员虚拟 ID
  *
  * @author auto create
- * @since 1.0, 2021-06-21 10:41:45
+ * @since 1.0, 2024-04-03 11:55:46
  */
 public class AlipayOpenMiniInneraccountPidQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8348518716547332548L;
+	private static final long serialVersionUID = 3655715237881299498L;
 
 	/**
 	 * 业务类型

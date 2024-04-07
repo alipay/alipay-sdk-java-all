@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.ec.charge.bill.query request
  * 
  * @author auto create
- * @since 1.0, 2023-11-02 15:36:48
+ * @since 1.0, 2024-03-28 00:12:02
  */
 public class AlipayCommerceEcChargeBillQueryRequest implements AlipayRequest<AlipayCommerceEcChargeBillQueryResponse> {
 

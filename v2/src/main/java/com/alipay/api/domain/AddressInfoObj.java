@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 寄件/收件地址信息
  *
  * @author auto create
- * @since 1.0, 2023-01-17 13:44:03
+ * @since 1.0, 2024-04-03 10:48:03
  */
 public class AddressInfoObj extends AlipayObject {
 
-	private static final long serialVersionUID = 4195424599755129677L;
+	private static final long serialVersionUID = 1363933692894491552L;
 
 	/**
 	 * 详细地址
@@ -48,6 +48,12 @@ public class AddressInfoObj extends AlipayObject {
 	 */
 	@ApiField("longitude")
 	private String longitude;
+
+	/**
+	 * 联系方式
+	 */
+	@ApiField("phone")
+	private String phone;
 
 	/**
 	 * poi地点名称
@@ -101,6 +107,13 @@ public class AddressInfoObj extends AlipayObject {
 	}
 	public void setLongitude(String longitude) {
 		this.longitude = longitude;
+	}
+
+	public String getPhone() {
+		return this.phone;
+	}
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
 
 	public String getPoiName() {

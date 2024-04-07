@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序云文本内容风险同步识别接口服务
  *
  * @author auto create
- * @since 1.0, 2023-12-18 17:51:35
+ * @since 1.0, 2024-03-29 11:36:22
  */
 public class AlipayCloudTraasContentTextDetectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3132291676175592687L;
+	private static final long serialVersionUID = 6189282116893647844L;
 
 	/**
 	 * 用户发表内容，建议对内容中的格式符号、表情符、HTML标签、UBB标签等做过滤，只传递纯文本，以减少误判。此字段和text_type相关，短文本（short）：短文本发表内容长度范围：[1,200] 长文本（long）：长文本发表内容长度范围：[1,10000]

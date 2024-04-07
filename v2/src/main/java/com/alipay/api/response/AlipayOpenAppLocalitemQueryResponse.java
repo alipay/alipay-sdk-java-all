@@ -18,11 +18,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.localitem.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-07 11:15:25
+ * @since 1.0, 2024-04-01 11:06:59
  */
 public class AlipayOpenAppLocalitemQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2889663615245283224L;
+	private static final long serialVersionUID = 8459413847798251277L;
 
 	/** 
 	 * 商品属性
@@ -92,7 +92,8 @@ public class AlipayOpenAppLocalitemQueryResponse extends AlipayResponse {
 	 * 商品模版类型：
 1. 团购
 2. 代金券
-3. 日历房
+3. 次卡
+4. 日历房
 	 */
 	@ApiField("item_type")
 	private String itemType;

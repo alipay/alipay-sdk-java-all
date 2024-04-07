@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.quality.testxxx.batchcreate request
  * 
  * @author auto create
- * @since 1.0, 2023-11-14 13:26:51
+ * @since 1.0, 2024-04-01 23:05:06
  */
 public class KoubeiQualityTestxxxBatchcreateRequest implements AlipayRequest<KoubeiQualityTestxxxBatchcreateResponse> {
 

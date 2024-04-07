@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 公众号标签模型
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:42
+ * @since 1.0, 2024-03-28 14:05:53
  */
 public class PublicLabel extends AlipayObject {
 
-	private static final long serialVersionUID = 6158152316245384899L;
+	private static final long serialVersionUID = 6889359736576575149L;
 
 	/**
 	 * 标签用户量

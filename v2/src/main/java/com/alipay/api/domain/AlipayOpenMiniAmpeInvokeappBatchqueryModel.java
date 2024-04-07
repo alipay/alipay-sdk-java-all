@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询调用应用绑定列表
  *
  * @author auto create
- * @since 1.0, 2020-07-14 10:50:32
+ * @since 1.0, 2024-04-03 11:56:03
  */
 public class AlipayOpenMiniAmpeInvokeappBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4891964873938428546L;
+	private static final long serialVersionUID = 3248937587374573861L;
 
 	/**
 	 * 场景码，申请后平台分配

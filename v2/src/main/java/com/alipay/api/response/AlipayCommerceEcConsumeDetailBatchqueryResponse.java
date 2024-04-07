@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.consume.detail.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-04 13:33:26
+ * @since 1.0, 2024-04-01 23:36:59
  */
 public class AlipayCommerceEcConsumeDetailBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1427186316187896529L;
+	private static final long serialVersionUID = 4569121973826844879L;
 
 	/** 
 	 * 账单信息列表

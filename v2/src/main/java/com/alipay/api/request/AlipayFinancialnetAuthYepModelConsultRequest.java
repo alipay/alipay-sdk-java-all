@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.financialnet.auth.yep.model.consult request
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:26:16
+ * @since 1.0, 2024-03-28 00:37:52
  */
 public class AlipayFinancialnetAuthYepModelConsultRequest implements AlipayRequest<AlipayFinancialnetAuthYepModelConsultResponse> {
 

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 添加员工
  *
  * @author auto create
- * @since 1.0, 2024-01-17 14:37:53
+ * @since 1.0, 2024-04-02 16:19:53
  */
 public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2574558252722348229L;
+	private static final long serialVersionUID = 6666148977568156474L;
 
 	/**
 	 * 员工所属部门
@@ -54,7 +54,7 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	private String employeeName;
 
 	/**
-	 * 员工工号
+	 * 员工编号/工号
 	 */
 	@ApiField("employee_no")
 	private String employeeNo;
@@ -109,6 +109,12 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	private String iotVid;
 
 	/**
+	 * 员工个性化信息
+	 */
+	@ApiField("profiles")
+	private String profiles;
+
+	/**
 	 * 角色列表，目前只支持填一种角色，默认为USER
 	 */
 	@ApiListField("role_list")
@@ -126,6 +132,13 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	 */
 	@ApiField("sign_url_carry_info")
 	private Boolean signUrlCarryInfo;
+
+	/**
+	 * 代扣签约串，需调代扣接口获取签约串
+<a href='https://opendocs.alipay.com/pre-open/20170601105911096277new/moiixx?pathHash=10b1fa66'>参考文档</a>
+	 */
+	@ApiField("withholding_sign_str")
+	private String withholdingSignStr;
 
 	public List<String> getDepartmentIds() {
 		return this.departmentIds;
@@ -232,6 +245,13 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 		this.iotVid = iotVid;
 	}
 
+	public String getProfiles() {
+		return this.profiles;
+	}
+	public void setProfiles(String profiles) {
+		this.profiles = profiles;
+	}
+
 	public List<String> getRoleList() {
 		return this.roleList;
 	}
@@ -251,6 +271,13 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	}
 	public void setSignUrlCarryInfo(Boolean signUrlCarryInfo) {
 		this.signUrlCarryInfo = signUrlCarryInfo;
+	}
+
+	public String getWithholdingSignStr() {
+		return this.withholdingSignStr;
+	}
+	public void setWithholdingSignStr(String withholdingSignStr) {
+		this.withholdingSignStr = withholdingSignStr;
 	}
 
 }

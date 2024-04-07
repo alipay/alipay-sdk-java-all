@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DatadigitalFincloudGeneralsaasFaceCertifyInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7564819924174577992L;
+	private static final long serialVersionUID = 1526679939416754388L;
 
 	/**
 	 * H5人脸核身场景码。入参支持的场景码。

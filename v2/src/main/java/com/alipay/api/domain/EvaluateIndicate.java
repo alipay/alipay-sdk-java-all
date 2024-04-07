@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 评估指标
  *
  * @author auto create
- * @since 1.0, 2024-03-07 20:07:18
+ * @since 1.0, 2024-04-02 20:51:15
  */
 public class EvaluateIndicate extends AlipayObject {
 
-	private static final long serialVersionUID = 1746898769918247418L;
+	private static final long serialVersionUID = 1219316449782167462L;
 
 	/**
 	 * 子指标id列表
@@ -29,6 +29,12 @@ public class EvaluateIndicate extends AlipayObject {
 	@ApiListField("grade_indicates")
 	@ApiField("evaluate_indicate_grade")
 	private List<EvaluateIndicateGrade> gradeIndicates;
+
+	/**
+	 * 商户指标描述
+	 */
+	@ApiField("isv_indicate_desc")
+	private String isvIndicateDesc;
 
 	/**
 	 * 商户指标id
@@ -60,6 +66,13 @@ public class EvaluateIndicate extends AlipayObject {
 	}
 	public void setGradeIndicates(List<EvaluateIndicateGrade> gradeIndicates) {
 		this.gradeIndicates = gradeIndicates;
+	}
+
+	public String getIsvIndicateDesc() {
+		return this.isvIndicateDesc;
+	}
+	public void setIsvIndicateDesc(String isvIndicateDesc) {
+		this.isvIndicateDesc = isvIndicateDesc;
 	}
 
 	public String getIsvIndicateId() {

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.pcinstpromo.pcinstpromo.channelvoucher.send request
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:29:15
+ * @since 1.0, 2024-04-01 23:18:27
  */
 public class AntPcinstpromoPcinstpromoChannelvoucherSendRequest implements AlipayRequest<AntPcinstpromoPcinstpromoChannelvoucherSendResponse> {
 

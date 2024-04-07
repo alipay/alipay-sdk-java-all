@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人群信息
  *
  * @author auto create
- * @since 1.0, 2023-06-20 18:17:40
+ * @since 1.0, 2024-03-28 14:05:06
  */
 public class DtBankCrowdInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1596766957959653675L;
+	private static final long serialVersionUID = 2353976512928398923L;
 
 	/**
 	 * 人群编码

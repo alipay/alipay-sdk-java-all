@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 凭证实例的金额信息
  *
  * @author auto create
- * @since 1.0, 2024-03-07 15:47:50
+ * @since 1.0, 2024-04-03 15:47:15
  */
 public class CertificateInstanceAmountInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3855155838484541818L;
+	private static final long serialVersionUID = 7884821581249188938L;
 
 	/**
-	 * 商家优惠金额，单位为元
+	 * 核销后商家减收部分，单位为元
 	 */
 	@ApiField("merchant_discount_amount")
 	private String merchantDiscountAmount;
@@ -32,7 +32,7 @@ public class CertificateInstanceAmountInfo extends AlipayObject {
 	private String payAmount;
 
 	/**
-	 * 平台补贴金额，单位为元
+	 * 核销生效后平台、商家等出资的优惠部分，单位为元
 	 */
 	@ApiField("platform_discount_amount")
 	private String platformDiscountAmount;

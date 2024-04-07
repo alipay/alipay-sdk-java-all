@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景支付参与者业务参数模型
  *
  * @author auto create
- * @since 1.0, 2024-03-11 16:54:14
+ * @since 1.0, 2024-04-02 14:32:15
  */
 public class ScenePayParticipantBizParamDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6275896874263263924L;
+	private static final long serialVersionUID = 7254477876683568289L;
 
 	/**
 	 * 由各业务场景定义，具体参考场景解决方案接入文档
@@ -20,22 +20,22 @@ public class ScenePayParticipantBizParamDTO extends AlipayObject {
 	private String authorizationId;
 
 	/**
-	 * 配合外部身份证件类型
+	 * 外部用户的证件号码，若证件类型为身份证，那么填入身份证号码即可
 	 */
 	@ApiField("cert_no")
 	private String certNo;
 
 	/**
-	 * 外部签约号
+	 * 外部用户的证件类型，例如身份证
 	 */
-	@ApiField("external_agreement_no")
-	private String externalAgreementNo;
+	@ApiField("cert_type")
+	private String certType;
 
 	/**
-	 * 外部身份证件类型
+	 * 国家局医保一码付场景使用，用于标识签约渠道id
 	 */
-	@ApiField("external_cert_type")
-	private String externalCertType;
+	@ApiField("channel_id")
+	private String channelId;
 
 	/**
 	 * 外部卡号
@@ -44,7 +44,7 @@ public class ScenePayParticipantBizParamDTO extends AlipayObject {
 	private String outCardNo;
 
 	/**
-	 * 申请用户姓名
+	 * 外部用户的姓名
 	 */
 	@ApiField("user_name")
 	private String userName;
@@ -63,18 +63,18 @@ public class ScenePayParticipantBizParamDTO extends AlipayObject {
 		this.certNo = certNo;
 	}
 
-	public String getExternalAgreementNo() {
-		return this.externalAgreementNo;
+	public String getCertType() {
+		return this.certType;
 	}
-	public void setExternalAgreementNo(String externalAgreementNo) {
-		this.externalAgreementNo = externalAgreementNo;
+	public void setCertType(String certType) {
+		this.certType = certType;
 	}
 
-	public String getExternalCertType() {
-		return this.externalCertType;
+	public String getChannelId() {
+		return this.channelId;
 	}
-	public void setExternalCertType(String externalCertType) {
-		this.externalCertType = externalCertType;
+	public void setChannelId(String channelId) {
+		this.channelId = channelId;
 	}
 
 	public String getOutCardNo() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量添加员工接口，添加成功的员工信息
  *
  * @author auto create
- * @since 1.0, 2024-03-04 15:17:42
+ * @since 1.0, 2024-04-01 16:12:50
  */
 public class EcEmployeeBatchAddSuccessInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5397643676645646591L;
+	private static final long serialVersionUID = 1264999744237959556L;
 
 	/**
 	 * 证件号
@@ -56,13 +56,13 @@ public class EcEmployeeBatchAddSuccessInfo extends AlipayObject {
 	private String employeeNo;
 
 	/**
-	 * 加密证件号
+	 * 加密证件号（证件号转大写后使用SHA256加密）
 	 */
 	@ApiField("encrypt_cert_no")
 	private String encryptCertNo;
 
 	/**
-	 * 加密手机号
+	 * 加密手机号（使用SHA256进行加密）
 	 */
 	@ApiField("encrypt_mobile")
 	private String encryptMobile;
@@ -72,6 +72,12 @@ public class EcEmployeeBatchAddSuccessInfo extends AlipayObject {
 	 */
 	@ApiField("iot_unique_id")
 	private String iotUniqueId;
+
+	/**
+	 * 个性化信息
+	 */
+	@ApiField("profiles")
+	private String profiles;
 
 	public String getEmployeeCertNo() {
 		return this.employeeCertNo;
@@ -141,6 +147,13 @@ public class EcEmployeeBatchAddSuccessInfo extends AlipayObject {
 	}
 	public void setIotUniqueId(String iotUniqueId) {
 		this.iotUniqueId = iotUniqueId;
+	}
+
+	public String getProfiles() {
+		return this.profiles;
+	}
+	public void setProfiles(String profiles) {
+		this.profiles = profiles;
 	}
 
 }

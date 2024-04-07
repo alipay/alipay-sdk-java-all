@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechOceanbasePassportHuaweimpCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8681618584994682996L;
+	private static final long serialVersionUID = 1332878612891963254L;
 
 	/**
 	 * 客户在华为云注册账号的唯一标识。
