@@ -89,11 +89,11 @@ No authorization required
 
 <a name="download"></a>
 # **download**
-> AlipayDataDataserviceAdPromotepageDownloadResponseModel download(bizToken, principalTag, promotePageId, startDate, endDate, pageNo, pageSize)
+> AlipayDataDataserviceAdPromotepageDownloadResponseModel download(startDate, endDate, pageNo, pageSize, bizToken, principalTag, promotePageId)
 
 自建推广页留资数据查询
 
-用于获取指定商家指定推广页的留资数据
+用于获取指定商家指定推广页的留资数据，注意调用频次小于20qps
 
 ### Example
 ```java
@@ -118,15 +118,15 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayDataDataserviceAdPromotepageApi apiInstance = new AlipayDataDataserviceAdPromotepageApi(defaultClient);
-    String bizToken = "HYjofejnnlp89730202bcklHH"; // String | 代理商访问灯火平台的token
-    String principalTag = "yfvbv133498"; // String | 商家标志
-    Integer promotePageId = 2018374; // Integer | 推广页id
-    String startDate = "\"2020-12-12\""; // String | 留资开始日期，格式：yyyy-mm-dd，不能早于30天前
-    String endDate = "“2020-12-13”"; // String | 留资结束日期，格式：yyyy-mm-dd；不能晚于当天
+    String startDate = "2020-12-12"; // String | 留资开始日期，格式：yyyy-mm-dd，不能早于30天前
+    String endDate = "2020-12-13"; // String | 留资结束日期，格式：yyyy-mm-dd；不能晚于当天
     Integer pageNo = 1; // Integer | 分页参数之页数，从1开始
     Integer pageSize = 100; // Integer | 分页参数之每页大小，最大1000
+    String bizToken = "HYjofejnnlp89730202bcklHH"; // String | 代理商访问灯火平台的token
+    String principalTag = "yfvbv133498"; // String | 商家标志
+    Integer promotePageId = 79900056; // Integer | 推广页id
     try {
-      AlipayDataDataserviceAdPromotepageDownloadResponseModel result = apiInstance.download(bizToken, principalTag, promotePageId, startDate, endDate, pageNo, pageSize);
+      AlipayDataDataserviceAdPromotepageDownloadResponseModel result = apiInstance.download(startDate, endDate, pageNo, pageSize, bizToken, principalTag, promotePageId);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayDataDataserviceAdPromotepageApi#download");
@@ -143,13 +143,13 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **bizToken** | **String**| 代理商访问灯火平台的token | [optional] |
-| **principalTag** | **String**| 商家标志 | [optional] |
-| **promotePageId** | **Integer**| 推广页id | [optional] |
 | **startDate** | **String**| 留资开始日期，格式：yyyy-mm-dd，不能早于30天前 | [optional] |
 | **endDate** | **String**| 留资结束日期，格式：yyyy-mm-dd；不能晚于当天 | [optional] |
 | **pageNo** | **Integer**| 分页参数之页数，从1开始 | [optional] |
 | **pageSize** | **Integer**| 分页参数之每页大小，最大1000 | [optional] |
+| **bizToken** | **String**| 代理商访问灯火平台的token | [optional] |
+| **principalTag** | **String**| 商家标志 | [optional] |
+| **promotePageId** | **Integer**| 推广页id | [optional] |
 
 ### Return type
 

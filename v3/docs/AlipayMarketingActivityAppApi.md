@@ -39,7 +39,7 @@ public class Example {
 
     AlipayMarketingActivityAppApi apiInstance = new AlipayMarketingActivityAppApi(defaultClient);
     String activityId = "2016042700826004508401111111"; // String | 活动id
-    String merchantId = "2088202967380463"; // String | 商户PID,默认为当前接口调用商户  限制:  接口调用者必须有商户代运营权限。   代运营授权流程https://opendocs.alipay.com/mini/01hm6i#%E4%BB%A3%E8%BF%90%E8%90%A5%E6%8E%88%E6%9D%83
+    String merchantId = "2088202967380463"; // String | 商户PID,默认为当前接口调用商户  限制:  接口调用者必须有商户代运营权限。  <a href=\"https://opendocs.alipay.com/mini/01hm6i#%E4%BB%A3%E8%BF%90%E8%90%A5%E6%8E%88%E6%9D%83\">代运营授权流程</a>
     Integer pageNum = 1; // Integer | 分页查询页码。  限制: 必须为大于0的整数
     String pageSize = "20"; // String | 分页查询单页数据条数。  限制:  1.必须为大于0的整数  2.每页最大值为20
     String merchantAccessMode = "AGENCY_MODE"; // String | 商户接入模式
@@ -62,7 +62,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **activityId** | **String**| 活动id | |
-| **merchantId** | **String**| 商户PID,默认为当前接口调用商户  限制:  接口调用者必须有商户代运营权限。   代运营授权流程https://opendocs.alipay.com/mini/01hm6i#%E4%BB%A3%E8%BF%90%E8%90%A5%E6%8E%88%E6%9D%83 | [optional] |
+| **merchantId** | **String**| 商户PID,默认为当前接口调用商户  限制:  接口调用者必须有商户代运营权限。  &lt;a href&#x3D;\&quot;https://opendocs.alipay.com/mini/01hm6i#%E4%BB%A3%E8%BF%90%E8%90%A5%E6%8E%88%E6%9D%83\&quot;&gt;代运营授权流程&lt;/a&gt; | [optional] |
 | **pageNum** | **Integer**| 分页查询页码。  限制: 必须为大于0的整数 | [optional] |
 | **pageSize** | **String**| 分页查询单页数据条数。  限制:  1.必须为大于0的整数  2.每页最大值为20 | [optional] |
 | **merchantAccessMode** | **String**| 商户接入模式 | [optional] |
