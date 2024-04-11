@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 运营商行业信用购主订单查询
  *
  * @author auto create
- * @since 1.0, 2024-03-18 11:34:16
+ * @since 1.0, 2024-04-07 17:55:10
  */
 public class AlipayCommerceAcommunicationCreditphoneOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7721385783228968318L;
+	private static final long serialVersionUID = 5772873487723566952L;
 
 	/**
 	 * 信用购机主单号

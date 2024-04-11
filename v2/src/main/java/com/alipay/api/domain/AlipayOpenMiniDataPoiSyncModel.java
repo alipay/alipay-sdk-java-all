@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniDataPoiSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1399231949425656389L;
+	private static final long serialVersionUID = 5143332274926534125L;
 
 	/**
 	 * poi回流数据

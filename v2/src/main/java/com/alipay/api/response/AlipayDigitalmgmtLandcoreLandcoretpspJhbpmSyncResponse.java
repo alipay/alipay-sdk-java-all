@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.digitalmgmt.landcore.landcoretpsp.jhbpm.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 02:40:07
+ * @since 1.0, 2024-04-09 09:58:07
  */
 public class AlipayDigitalmgmtLandcoreLandcoretpspJhbpmSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3375932734632348956L;
+	private static final long serialVersionUID = 4719911843838721122L;
 
 	
 

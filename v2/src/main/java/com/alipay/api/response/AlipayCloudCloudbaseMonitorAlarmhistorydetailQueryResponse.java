@@ -1,0 +1,73 @@
+package com.alipay.api.response;
+
+import java.util.List;
+import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.AlarmHistoryDetail;
+
+import com.alipay.api.AlipayResponse;
+
+/**
+ * ALIPAY API: alipay.cloud.cloudbase.monitor.alarmhistorydetail.query response.
+ * 
+ * @author auto create
+ * @since 1.0, 2024-04-11 09:47:00
+ */
+public class AlipayCloudCloudbaseMonitorAlarmhistorydetailQueryResponse extends AlipayResponse {
+
+	private static final long serialVersionUID = 2676346584464932422L;
+
+	/** 
+	 * 报警历史详情
+	 */
+	@ApiListField("alarm_history_details")
+	@ApiField("alarm_history_detail")
+	private List<AlarmHistoryDetail> alarmHistoryDetails;
+
+	/** 
+	 * 页码
+	 */
+	@ApiField("page_index")
+	private Long pageIndex;
+
+	/** 
+	 * 每页数量
+	 */
+	@ApiField("page_size")
+	private Long pageSize;
+
+	/** 
+	 * 总数
+	 */
+	@ApiField("total")
+	private Long total;
+
+	public void setAlarmHistoryDetails(List<AlarmHistoryDetail> alarmHistoryDetails) {
+		this.alarmHistoryDetails = alarmHistoryDetails;
+	}
+	public List<AlarmHistoryDetail> getAlarmHistoryDetails( ) {
+		return this.alarmHistoryDetails;
+	}
+
+	public void setPageIndex(Long pageIndex) {
+		this.pageIndex = pageIndex;
+	}
+	public Long getPageIndex( ) {
+		return this.pageIndex;
+	}
+
+	public void setPageSize(Long pageSize) {
+		this.pageSize = pageSize;
+	}
+	public Long getPageSize( ) {
+		return this.pageSize;
+	}
+
+	public void setTotal(Long total) {
+		this.total = total;
+	}
+	public Long getTotal( ) {
+		return this.total;
+	}
+
+}

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 检测结果回调
  *
  * @author auto create
- * @since 1.0, 2022-10-19 10:03:27
+ * @since 1.0, 2024-04-09 09:57:31
  */
 public class AlipayDigitalmgmtLandcoreLandcoretpspDataarchivesCallbackModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7399455595355657665L;
+	private static final long serialVersionUID = 3813568131757214671L;
 
 	/**
 	 * 用于标识业务系统中归档数据唯一ID

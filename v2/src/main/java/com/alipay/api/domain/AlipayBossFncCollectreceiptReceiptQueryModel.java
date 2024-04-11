@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayBossFncCollectreceiptReceiptQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3443623374985594291L;
+	private static final long serialVersionUID = 1617184624722564343L;
 
 	/**
 	 * 收款单openapi查询Order

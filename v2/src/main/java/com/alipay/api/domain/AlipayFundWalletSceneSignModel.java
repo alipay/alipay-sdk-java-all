@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 个人用户开通场景钱包
  *
  * @author auto create
- * @since 1.0, 2024-03-04 16:57:38
+ * @since 1.0, 2024-04-09 14:41:17
  */
 public class AlipayFundWalletSceneSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2738434631417425558L;
+	private static final long serialVersionUID = 8296382297221162672L;
 
 	/**
 	 * 钱包业务的场景吗
@@ -42,6 +42,12 @@ public class AlipayFundWalletSceneSignModel extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	/**
+	 * 钱包营销规则
+	 */
+	@ApiField("wallet_marketing_rule")
+	private WalletMarketingRule walletMarketingRule;
 
 	/**
 	 * 钱包模版id
@@ -82,6 +88,13 @@ public class AlipayFundWalletSceneSignModel extends AlipayObject {
 	}
 	public void setUserId(String userId) {
 		this.userId = userId;
+	}
+
+	public WalletMarketingRule getWalletMarketingRule() {
+		return this.walletMarketingRule;
+	}
+	public void setWalletMarketingRule(WalletMarketingRule walletMarketingRule) {
+		this.walletMarketingRule = walletMarketingRule;
 	}
 
 	public String getWalletTemplateId() {

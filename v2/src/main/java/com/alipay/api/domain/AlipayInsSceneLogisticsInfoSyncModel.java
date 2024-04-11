@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保险场景物流同步
  *
  * @author auto create
- * @since 1.0, 2023-04-10 21:55:32
+ * @since 1.0, 2024-04-08 14:14:17
  */
 public class AlipayInsSceneLogisticsInfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6353981932345444621L;
+	private static final long serialVersionUID = 3592171724958522448L;
 
 	/**
 	 * 业务单号

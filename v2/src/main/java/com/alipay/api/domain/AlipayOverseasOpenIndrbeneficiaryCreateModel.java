@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 主站添加机构信息开放接口
  *
  * @author auto create
- * @since 1.0, 2023-09-15 12:02:06
+ * @since 1.0, 2024-04-10 11:37:26
  */
 public class AlipayOverseasOpenIndrbeneficiaryCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2469146241597711192L;
+	private static final long serialVersionUID = 7364775741412617185L;
 
 	/**
 	 * business_partner机构信息
 	 */
 	@ApiField("business_partner")
 	private String businessPartner;
+
+	/**
+	 * 机构上架类型，包含了“全量上架”与“灰度上架”，用于区分是否灰度上架，避免机构直接全量上架导致的客诉与万求
+	 */
+	@ApiField("grayscale_type")
+	private String grayscaleType;
 
 	/**
 	 * 机构类型
@@ -66,6 +72,13 @@ public class AlipayOverseasOpenIndrbeneficiaryCreateModel extends AlipayObject {
 	}
 	public void setBusinessPartner(String businessPartner) {
 		this.businessPartner = businessPartner;
+	}
+
+	public String getGrayscaleType() {
+		return this.grayscaleType;
+	}
+	public void setGrayscaleType(String grayscaleType) {
+		this.grayscaleType = grayscaleType;
 	}
 
 	public String getPartnerType() {

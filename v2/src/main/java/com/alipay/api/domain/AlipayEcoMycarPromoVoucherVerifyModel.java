@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoMycarPromoVoucherVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8297394785218915162L;
+	private static final long serialVersionUID = 5591784722764974995L;
 
 	/**
 	 * 订单编号

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 授权添加
  *
  * @author auto create
- * @since 1.0, 2022-11-18 19:58:48
+ * @since 1.0, 2024-04-10 16:30:08
  */
 public class AlipayCommerceOperationTimescardAuthorityApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4868695817962745237L;
+	private static final long serialVersionUID = 5797785827256799351L;
 
 	/**
 	 * 蚂蚁统一会员ID

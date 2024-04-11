@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 置业计划-接收流程回调
  *
  * @author auto create
- * @since 1.0, 2021-11-17 16:56:19
+ * @since 1.0, 2024-04-09 09:58:07
  */
 public class AlipayDigitalmgmtLandcoreLandcoretpspJhbpmSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7563755695375413528L;
+	private static final long serialVersionUID = 2121861483861754671L;
 
 	/**
 	 * 蚂蚁方创建流程时对应的puid

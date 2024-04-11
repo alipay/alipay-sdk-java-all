@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保障明细
  *
  * @author auto create
- * @since 1.0, 2023-12-04 22:43:41
+ * @since 1.0, 2024-04-08 13:36:11
  */
 public class GuaranteeDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 2227329251119216856L;
+	private static final long serialVersionUID = 2217364635335954281L;
 
 	/**
 	 * 是否对用户全额免除赔偿，不全额免除的话传false

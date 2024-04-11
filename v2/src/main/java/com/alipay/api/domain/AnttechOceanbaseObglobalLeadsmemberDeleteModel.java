@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 提供给纷享销客的删除商机成员的接口
  *
  * @author auto create
- * @since 1.0, 2023-10-19 09:22:02
+ * @since 1.0, 2024-04-07 15:29:04
  */
 public class AnttechOceanbaseObglobalLeadsmemberDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8176749134641739151L;
+	private static final long serialVersionUID = 7717898515221892876L;
 
 	/**
 	 * 提供给分享逍客的删除商机成员的接口的参数

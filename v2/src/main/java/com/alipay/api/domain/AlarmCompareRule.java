@@ -1,0 +1,44 @@
+package com.alipay.api.domain;
+
+import com.alipay.api.AlipayObject;
+import com.alipay.api.internal.mapping.ApiField;
+
+/**
+ * 报警比较规则
+ *
+ * @author auto create
+ * @since 1.0, 2024-04-11 09:44:18
+ */
+public class AlarmCompareRule extends AlipayObject {
+
+	private static final long serialVersionUID = 4754691834524828859L;
+
+	/**
+	 * 比较操作类型
+ - EQ
+ - 待补充
+	 */
+	@ApiField("operate_type")
+	private String operateType;
+
+	/**
+	 * 比较操作的值
+	 */
+	@ApiField("operate_value")
+	private String operateValue;
+
+	public String getOperateType() {
+		return this.operateType;
+	}
+	public void setOperateType(String operateType) {
+		this.operateType = operateType;
+	}
+
+	public String getOperateValue() {
+		return this.operateValue;
+	}
+	public void setOperateValue(String operateValue) {
+		this.operateValue = operateValue;
+	}
+
+}

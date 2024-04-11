@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.related.performance.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:28:59
+ * @since 1.0, 2024-04-08 17:22:01
  */
 public class ZhimaCreditEpRelatedPerformanceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2163814945215681348L;
+	private static final long serialVersionUID = 1538373394379631685L;
 
 	/** 
 	 * 行政处罚(市监)信息列表
@@ -34,7 +34,7 @@ public class ZhimaCreditEpRelatedPerformanceQueryResponse extends AlipayResponse
 	private String isVerified;
 
 	/** 
-	 * 实行被执行人信息列表
+	 * 失信被执行人信息列表
 	 */
 	@ApiListField("punish_break_list")
 	@ApiField("punish_break_info")

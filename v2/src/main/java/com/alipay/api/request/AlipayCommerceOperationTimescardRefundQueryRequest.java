@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.timescard.refund.query request
  * 
  * @author auto create
- * @since 1.0, 2024-03-28 00:35:56
+ * @since 1.0, 2024-04-10 16:28:51
  */
 public class AlipayCommerceOperationTimescardRefundQueryRequest implements AlipayRequest<AlipayCommerceOperationTimescardRefundQueryResponse> {
 

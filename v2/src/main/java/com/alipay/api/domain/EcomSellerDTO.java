@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电商卖家模型
  *
  * @author auto create
- * @since 1.0, 2024-03-20 11:17:22
+ * @since 1.0, 2024-04-08 14:32:51
  */
 public class EcomSellerDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8851989957982383417L;
+	private static final long serialVersionUID = 1243127444862691911L;
 
 	/**
 	 * 卖家联系地址
@@ -134,7 +134,10 @@ public class EcomSellerDTO extends AlipayObject {
 	private String sellerOrderRefundExchangeRate;
 
 	/**
-	 * 卖家用户类型:OTHER 其他第三方账号
+	 * 卖家用户类型:
+OTHER 其他第三方账号
+ALIPAY 支付宝账号
+TAOBAO 淘宝账户
 	 */
 	@ApiField("seller_user_type")
 	private String sellerUserType;

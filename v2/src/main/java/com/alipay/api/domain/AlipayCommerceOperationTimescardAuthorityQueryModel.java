@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 授权列表查询
  *
  * @author auto create
- * @since 1.0, 2022-11-18 19:58:13
+ * @since 1.0, 2024-04-10 16:29:17
  */
 public class AlipayCommerceOperationTimescardAuthorityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6693455527783429367L;
+	private static final long serialVersionUID = 5195918453861244744L;
 
 	/**
 	 * 分页页码

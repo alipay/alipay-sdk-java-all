@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 提供给纷享销客的更新商机成员的接口
  *
  * @author auto create
- * @since 1.0, 2023-10-19 09:22:10
+ * @since 1.0, 2024-04-07 15:28:53
  */
 public class AnttechOceanbaseObglobalLeadsmemberModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5852754542813655944L;
+	private static final long serialVersionUID = 6387995826893652157L;
 
 	/**
 	 * 提供给纷享销客的更新商机成员的接口的参数

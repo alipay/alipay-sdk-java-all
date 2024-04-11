@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.open.indrbeneficiary.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-15 12:06:43
+ * @since 1.0, 2024-04-10 11:42:02
  */
 public class AlipayOverseasOpenIndrbeneficiaryCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8876451424187912712L;
+	private static final long serialVersionUID = 2695492385687566258L;
 
 	/** 
 	 * 调用结果

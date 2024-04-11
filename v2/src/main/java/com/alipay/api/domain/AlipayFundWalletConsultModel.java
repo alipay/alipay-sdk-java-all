@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金场景钱包金额查询接口
  *
  * @author auto create
- * @since 1.0, 2024-03-04 22:53:15
+ * @since 1.0, 2024-04-09 14:35:52
  */
 public class AlipayFundWalletConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7575216777296892212L;
+	private static final long serialVersionUID = 3347267857778898222L;
 
 	/**
 	 * 业务场景
@@ -64,6 +64,12 @@ DESTROY_INFO：销户资金查询
 	 */
 	@ApiField("user_wallet_id")
 	private String userWalletId;
+
+	/**
+	 * 该字段适合用于外部商户不知道用户钱包ID的情况下，通过钱包模板ID+用户user_id反查用户钱包ID。因此，钱包模板ID不为空的情况下，principal_id和principal_type一定不能为空。
+	 */
+	@ApiField("wallet_template_id")
+	private String walletTemplateId;
 
 	public String getBizScene() {
 		return this.bizScene;
@@ -119,6 +125,13 @@ DESTROY_INFO：销户资金查询
 	}
 	public void setUserWalletId(String userWalletId) {
 		this.userWalletId = userWalletId;
+	}
+
+	public String getWalletTemplateId() {
+		return this.walletTemplateId;
+	}
+	public void setWalletTemplateId(String walletTemplateId) {
+		this.walletTemplateId = walletTemplateId;
 	}
 
 }

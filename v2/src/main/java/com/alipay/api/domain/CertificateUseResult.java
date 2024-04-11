@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 凭证核销结果
  *
  * @author auto create
- * @since 1.0, 2024-03-07 15:59:51
+ * @since 1.0, 2024-04-10 16:59:49
  */
 public class CertificateUseResult extends AlipayObject {
 
-	private static final long serialVersionUID = 5589978244229991857L;
+	private static final long serialVersionUID = 5335437153574452734L;
 
 	/**
 	 * 凭证实例的金额信息，在异常场景下可能为空，需要判断是否有值才可进行使用。
@@ -64,8 +67,9 @@ public class CertificateUseResult extends AlipayObject {
 	/**
 	 * 本次核销的次序号信息
 	 */
-	@ApiField("serial_info_list")
-	private CertificateSerialInfo serialInfoList;
+	@ApiListField("serial_info_list")
+	@ApiField("certificate_serial_info")
+	private List<CertificateSerialInfo> serialInfoList;
 
 	/**
 	 * 商品信息
@@ -135,10 +139,10 @@ public class CertificateUseResult extends AlipayObject {
 		this.result = result;
 	}
 
-	public CertificateSerialInfo getSerialInfoList() {
+	public List<CertificateSerialInfo> getSerialInfoList() {
 		return this.serialInfoList;
 	}
-	public void setSerialInfoList(CertificateSerialInfo serialInfoList) {
+	public void setSerialInfoList(List<CertificateSerialInfo> serialInfoList) {
 		this.serialInfoList = serialInfoList;
 	}
 

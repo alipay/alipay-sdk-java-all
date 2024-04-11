@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.oceanbase.obglobal.leadsmember.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-10-19 09:26:47
+ * @since 1.0, 2024-04-07 15:29:04
  */
 public class AnttechOceanbaseObglobalLeadsmemberDeleteRequest implements AlipayRequest<AnttechOceanbaseObglobalLeadsmemberDeleteResponse> {
 

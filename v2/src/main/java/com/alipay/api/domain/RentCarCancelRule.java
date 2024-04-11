@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝租车订单取消规则
  *
  * @author auto create
- * @since 1.0, 2023-12-05 10:17:07
+ * @since 1.0, 2024-04-09 23:02:26
  */
 public class RentCarCancelRule extends AlipayObject {
 
-	private static final long serialVersionUID = 8775634955162333381L;
+	private static final long serialVersionUID = 3521578518876359318L;
 
 	/**
 	 * 规则内容

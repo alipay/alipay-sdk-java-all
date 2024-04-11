@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.card.authinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-04 14:36:01
+ * @since 1.0, 2024-04-10 16:31:15
  */
 public class AlipayMarketingCardAuthinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2152264652478618163L;
+	private static final long serialVersionUID = 8416166431771987239L;
 
 	/** 
 	 * 详细地址

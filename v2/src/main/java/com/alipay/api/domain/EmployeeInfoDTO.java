@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 员工信息
  *
  * @author auto create
- * @since 1.0, 2023-10-17 15:50:39
+ * @since 1.0, 2024-04-08 09:53:08
  */
 public class EmployeeInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3514315647635679824L;
+	private static final long serialVersionUID = 6877339692558949163L;
 
 	/**
 	 * 是否激活
@@ -30,19 +30,19 @@ public class EmployeeInfoDTO extends AlipayObject {
 	private List<EmployeeDepartmentDTO> departmentList;
 
 	/**
-	 * 邮箱
+	 * 员工邮箱
 	 */
 	@ApiField("email")
 	private String email;
 
 	/**
-	 * 证件号，手机号，邮箱三个必填其一
+	 * 证件号
 	 */
 	@ApiField("employee_cert_no")
 	private String employeeCertNo;
 
 	/**
-	 * 证件类型，当证件号不为空时必填
+	 * 证件类型
 	 */
 	@ApiField("employee_cert_type")
 	private String employeeCertType;
@@ -60,25 +60,25 @@ public class EmployeeInfoDTO extends AlipayObject {
 	private String employeeName;
 
 	/**
-	 * 员工工号
+	 * 员工编号/工号
 	 */
 	@ApiField("employee_no")
 	private String employeeNo;
 
 	/**
-	 * 加密身份证号，当加密类型不为空时必填
+	 * 加密证件号（证件号转大写后使用SHA256加密），搭配证件号使用
 	 */
 	@ApiField("encrypt_cert_no")
 	private String encryptCertNo;
 
 	/**
-	 * 加密手机号，当加密类型不为空时必填
+	 * 加密手机号（使用SHA256进行加密）
 	 */
 	@ApiField("encrypt_mobile")
 	private String encryptMobile;
 
 	/**
-	 * 变更时间
+	 * 创建时间
 	 */
 	@ApiField("gmt_create")
 	private String gmtCreate;
@@ -96,6 +96,12 @@ public class EmployeeInfoDTO extends AlipayObject {
 	private String iotFaceStatus;
 
 	/**
+	 * IOT开通刷脸支持唯一操作流水号，此处透出用于外部服务商通过该unique_id便捷调用IOT侧接口
+	 */
+	@ApiField("iot_unique_id")
+	private String iotUniqueId;
+
+	/**
 	 * 员工在企业人脸库的人脸唯一标识
 	 */
 	@ApiField("iot_vid")
@@ -108,10 +114,16 @@ public class EmployeeInfoDTO extends AlipayObject {
 	private String mobile;
 
 	/**
-	 * 用户id
+	 * 用户ID（绑定支付宝账号的uid）
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/**
+	 * 个性化信息
+	 */
+	@ApiField("profiles")
+	private String profiles;
 
 	/**
 	 * 角色列表
@@ -121,7 +133,7 @@ public class EmployeeInfoDTO extends AlipayObject {
 	private List<String> roleList;
 
 	/**
-	 * 用户id
+	 * 用户ID（绑定支付宝账号的uid）
 	 */
 	@ApiField("user_id")
 	private String userId;
@@ -217,6 +229,13 @@ public class EmployeeInfoDTO extends AlipayObject {
 		this.iotFaceStatus = iotFaceStatus;
 	}
 
+	public String getIotUniqueId() {
+		return this.iotUniqueId;
+	}
+	public void setIotUniqueId(String iotUniqueId) {
+		this.iotUniqueId = iotUniqueId;
+	}
+
 	public String getIotVid() {
 		return this.iotVid;
 	}
@@ -236,6 +255,13 @@ public class EmployeeInfoDTO extends AlipayObject {
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public String getProfiles() {
+		return this.profiles;
+	}
+	public void setProfiles(String profiles) {
+		this.profiles = profiles;
 	}
 
 	public List<String> getRoleList() {

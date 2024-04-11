@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IssueQuotaCheckInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2745834844595879573L;
+	private static final long serialVersionUID = 1833581974192379257L;
 
 	/**
 	 * 发放金额

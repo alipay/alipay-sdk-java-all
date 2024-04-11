@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询可退余额
  *
  * @author auto create
- * @since 1.0, 2022-11-18 19:58:16
+ * @since 1.0, 2024-04-10 16:28:51
  */
 public class AlipayCommerceOperationTimescardRefundQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8191915749797478588L;
+	private static final long serialVersionUID = 5258732637919965313L;
 
 	/**
 	 * 次卡id

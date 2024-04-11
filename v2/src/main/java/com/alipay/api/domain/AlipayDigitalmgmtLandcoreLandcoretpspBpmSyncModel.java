@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁置业-BPM回调
  *
  * @author auto create
- * @since 1.0, 2024-04-01 10:45:30
+ * @since 1.0, 2024-04-09 10:29:50
  */
 public class AlipayDigitalmgmtLandcoreLandcoretpspBpmSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4276219942482464352L;
+	private static final long serialVersionUID = 4419457674645767962L;
 
 	/**
 	 * 蚂蚁方创建流程时对应的puid

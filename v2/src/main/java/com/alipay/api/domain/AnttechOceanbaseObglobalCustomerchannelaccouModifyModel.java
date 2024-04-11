@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 更新客户关联渠道账号接口
  *
  * @author auto create
- * @since 1.0, 2023-10-19 09:21:49
+ * @since 1.0, 2024-04-07 15:29:15
  */
 public class AnttechOceanbaseObglobalCustomerchannelaccouModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6862122761357821448L;
+	private static final long serialVersionUID = 2386737826641587987L;
 
 	/**
 	 * 更新客户关联渠道账号请求体

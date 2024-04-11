@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开放平台电商买家模型
  *
  * @author auto create
- * @since 1.0, 2024-03-25 11:17:34
+ * @since 1.0, 2024-04-08 14:32:51
  */
 public class EcomBuyerDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4385342317191554945L;
+	private static final long serialVersionUID = 4529762791618947235L;
 
 	/**
 	 * 买家联系地址
@@ -122,7 +122,10 @@ public class EcomBuyerDTO extends AlipayObject {
 	private String realName;
 
 	/**
-	 * 用户类型
+	 * 买家用户类型:
+OTHER 其他第三方账号
+ALIPAY 支付宝账号
+TAOBAO 淘宝账户
 	 */
 	@ApiField("user_type")
 	private String userType;

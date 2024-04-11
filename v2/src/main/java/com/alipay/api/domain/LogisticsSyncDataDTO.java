@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物流信息同步内容
  *
  * @author auto create
- * @since 1.0, 2023-04-10 21:55:32
+ * @since 1.0, 2024-04-08 14:14:17
  */
 public class LogisticsSyncDataDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4817664914248476224L;
+	private static final long serialVersionUID = 3538627239937144996L;
 
 	/**
 	 * 路由发生地址
@@ -58,6 +58,18 @@ public class LogisticsSyncDataDTO extends AlipayObject {
 	private Date cancelTime;
 
 	/**
+	 * 物流承运公司编码
+	 */
+	@ApiField("carrier_company_code")
+	private String carrierCompanyCode;
+
+	/**
+	 * 物流承运公司名称
+	 */
+	@ApiField("carrier_company_name")
+	private String carrierCompanyName;
+
+	/**
 	 * 快递员姓名
 	 */
 	@ApiField("courier_name")
@@ -92,6 +104,12 @@ public class LogisticsSyncDataDTO extends AlipayObject {
 	 */
 	@ApiField("insured_weight_amount")
 	private String insuredWeightAmount;
+
+	/**
+	 * 承运物流单号
+	 */
+	@ApiField("logistics_mail_no")
+	private String logisticsMailNo;
 
 	/**
 	 * 物流单号
@@ -134,6 +152,18 @@ public class LogisticsSyncDataDTO extends AlipayObject {
 	 */
 	@ApiField("package_amount")
 	private String packageAmount;
+
+	/**
+	 * 支付状态
+	 */
+	@ApiField("pay_status")
+	private Long payStatus;
+
+	/**
+	 * 支付时间
+	 */
+	@ApiField("pay_time")
+	private Date payTime;
 
 	/**
 	 * 用户支付链接
@@ -256,6 +286,20 @@ public class LogisticsSyncDataDTO extends AlipayObject {
 		this.cancelTime = cancelTime;
 	}
 
+	public String getCarrierCompanyCode() {
+		return this.carrierCompanyCode;
+	}
+	public void setCarrierCompanyCode(String carrierCompanyCode) {
+		this.carrierCompanyCode = carrierCompanyCode;
+	}
+
+	public String getCarrierCompanyName() {
+		return this.carrierCompanyName;
+	}
+	public void setCarrierCompanyName(String carrierCompanyName) {
+		this.carrierCompanyName = carrierCompanyName;
+	}
+
 	public String getCourierName() {
 		return this.courierName;
 	}
@@ -296,6 +340,13 @@ public class LogisticsSyncDataDTO extends AlipayObject {
 	}
 	public void setInsuredWeightAmount(String insuredWeightAmount) {
 		this.insuredWeightAmount = insuredWeightAmount;
+	}
+
+	public String getLogisticsMailNo() {
+		return this.logisticsMailNo;
+	}
+	public void setLogisticsMailNo(String logisticsMailNo) {
+		this.logisticsMailNo = logisticsMailNo;
 	}
 
 	public String getLogisticsNo() {
@@ -345,6 +396,20 @@ public class LogisticsSyncDataDTO extends AlipayObject {
 	}
 	public void setPackageAmount(String packageAmount) {
 		this.packageAmount = packageAmount;
+	}
+
+	public Long getPayStatus() {
+		return this.payStatus;
+	}
+	public void setPayStatus(Long payStatus) {
+		this.payStatus = payStatus;
+	}
+
+	public Date getPayTime() {
+		return this.payTime;
+	}
+	public void setPayTime(Date payTime) {
+		this.payTime = payTime;
 	}
 
 	public String getPayUrl() {

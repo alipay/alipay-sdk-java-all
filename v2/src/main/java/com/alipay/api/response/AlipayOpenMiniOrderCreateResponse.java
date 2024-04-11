@@ -8,11 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.order.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-11 11:06:58
+ * @since 1.0, 2024-04-10 10:07:00
  */
 public class AlipayOpenMiniOrderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3185537229877544853L;
+	private static final long serialVersionUID = 1852896322541353983L;
+
+	/** 
+	 * 建议对客展示文案。当接口返回异常时，建议将当前字段对客进行展示。
+	 */
+	@ApiField("customer_display_text")
+	private String customerDisplayText;
 
 	/** 
 	 * 交易组件订单号。可以把获取到的order_id作为<a href="https://opendocs.alipay.com/mini/05x9kv?scene=de4d6a1e0c6e423b9eefa7c3a6dcb7a5&pathHash=779dc517">alipay.trade.create（统一收单交易创建接口）</a>extend_params.trade_component_order_id的入参进行关联。
@@ -25,6 +31,13 @@ public class AlipayOpenMiniOrderCreateResponse extends AlipayResponse {
 	 */
 	@ApiField("out_order_id")
 	private String outOrderId;
+
+	public void setCustomerDisplayText(String customerDisplayText) {
+		this.customerDisplayText = customerDisplayText;
+	}
+	public String getCustomerDisplayText( ) {
+		return this.customerDisplayText;
+	}
 
 	public void setOrderId(String orderId) {
 		this.orderId = orderId;

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySocialForestTreeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3732361212292892332L;
+	private static final long serialVersionUID = 8315921483121514826L;
 
 	/**
 	 * 种树截止时间

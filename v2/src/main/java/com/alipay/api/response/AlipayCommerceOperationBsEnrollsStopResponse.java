@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceOperationBsEnrollsStopResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6485417748996326937L;
+	private static final long serialVersionUID = 2383144726618399356L;
 
 	/** 
 	 * 中止失败的参与者列表

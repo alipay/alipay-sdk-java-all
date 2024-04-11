@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.localitem.calendarprice.save request
  * 
  * @author auto create
- * @since 1.0, 2024-03-29 09:52:09
+ * @since 1.0, 2024-04-10 10:19:39
  */
 public class AlipayOpenAppLocalitemCalendarpriceSaveRequest implements AlipayRequest<AlipayOpenAppLocalitemCalendarpriceSaveResponse> {
 

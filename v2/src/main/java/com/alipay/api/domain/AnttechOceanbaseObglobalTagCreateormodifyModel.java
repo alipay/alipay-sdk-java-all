@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 标签操作
  *
  * @author auto create
- * @since 1.0, 2023-10-19 09:21:46
+ * @since 1.0, 2024-04-07 15:28:41
  */
 public class AnttechOceanbaseObglobalTagCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4642761299389591124L;
+	private static final long serialVersionUID = 4311214127553366713L;
 
 	/**
 	 * 标签操作请求体

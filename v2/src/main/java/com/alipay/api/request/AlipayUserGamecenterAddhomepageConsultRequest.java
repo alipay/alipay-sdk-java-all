@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.gamecenter.addhomepage.consult request
  * 
  * @author auto create
- * @since 1.0, 2024-03-27 08:52:00
+ * @since 1.0, 2024-04-09 16:00:16
  */
 public class AlipayUserGamecenterAddhomepageConsultRequest implements AlipayRequest<AlipayUserGamecenterAddhomepageConsultResponse> {
 
