@@ -7,11 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 线上回归openapi
  *
  * @author auto create
- * @since 1.0, 2024-01-02 14:37:51
+ * @since 1.0, 2024-04-11 14:50:32
  */
 public class AlipayPcreditCreditriskJhjtestProdCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7255358785555424241L;
+	private static final long serialVersionUID = 2182779976521728416L;
+
+	/**
+	 * 1
+	 */
+	@ApiField("a_openid")
+	private String aOpenid;
+
+	/**
+	 * 1
+	 */
+	@ApiField("b_openid")
+	private String bOpenid;
 
 	/**
 	 * 1
@@ -25,6 +37,26 @@ public class AlipayPcreditCreditriskJhjtestProdCreateModel extends AlipayObject 
 	@ApiField("test_a")
 	private String testA;
 
+	/**
+	 * 1
+	 */
+	@ApiField("test_b")
+	private String testB;
+
+	public String getaOpenid() {
+		return this.aOpenid;
+	}
+	public void setaOpenid(String aOpenid) {
+		this.aOpenid = aOpenid;
+	}
+
+	public String getbOpenid() {
+		return this.bOpenid;
+	}
+	public void setbOpenid(String bOpenid) {
+		this.bOpenid = bOpenid;
+	}
+
 	public PublicTestProd getComplex() {
 		return this.complex;
 	}
@@ -37,6 +69,13 @@ public class AlipayPcreditCreditriskJhjtestProdCreateModel extends AlipayObject 
 	}
 	public void setTestA(String testA) {
 		this.testA = testA;
+	}
+
+	public String getTestB() {
+		return this.testB;
+	}
+	public void setTestB(String testB) {
+		this.testB = testB;
 	}
 
 }

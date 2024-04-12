@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 统一收单交易订单预支付接口
  *
  * @author auto create
- * @since 1.0, 2024-02-21 17:06:30
+ * @since 1.0, 2024-04-12 15:15:53
  */
 public class AlipayTradeOrderPrepayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8727319388997721599L;
+	private static final long serialVersionUID = 5685753195888334238L;
 
 	/**
 	 * 订单附加信息。 如果请求时传递了该参数，将在异步通知、对账单中原样返回，同时会在商户和用户的pc账单详情中作为交易描述展示
@@ -42,6 +42,12 @@ public class AlipayTradeOrderPrepayModel extends AlipayObject {
 	private List<GoodsDetail> goodsDetail;
 
 	/**
+	 * 支付成功回跳商家APP地址。
+	 */
+	@ApiField("merchant_return_url")
+	private String merchantReturnUrl;
+
+	/**
 	 * 预支付场景。枚举值： openpay_apmodel
 	 */
 	@ApiField("order_scene")
@@ -52,6 +58,18 @@ public class AlipayTradeOrderPrepayModel extends AlipayObject {
 	 */
 	@ApiField("out_trade_no")
 	private String outTradeNo;
+
+	/**
+	 * 指定支付机构。如： alipay_hk 支付宝香港钱包
+	 */
+	@ApiField("payment_inst")
+	private String paymentInst;
+
+	/**
+	 * 指定支付方式。app_pay-APP跳转支付方式。
+	 */
+	@ApiField("payment_type")
+	private String paymentType;
 
 	/**
 	 * 产品码。 商家和支付宝签约的产品码。 枚举值（点击查看签约情况）
@@ -129,6 +147,13 @@ public class AlipayTradeOrderPrepayModel extends AlipayObject {
 		this.goodsDetail = goodsDetail;
 	}
 
+	public String getMerchantReturnUrl() {
+		return this.merchantReturnUrl;
+	}
+	public void setMerchantReturnUrl(String merchantReturnUrl) {
+		this.merchantReturnUrl = merchantReturnUrl;
+	}
+
 	public String getOrderScene() {
 		return this.orderScene;
 	}
@@ -141,6 +166,20 @@ public class AlipayTradeOrderPrepayModel extends AlipayObject {
 	}
 	public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
+	}
+
+	public String getPaymentInst() {
+		return this.paymentInst;
+	}
+	public void setPaymentInst(String paymentInst) {
+		this.paymentInst = paymentInst;
+	}
+
+	public String getPaymentType() {
+		return this.paymentType;
+	}
+	public void setPaymentType(String paymentType) {
+		this.paymentType = paymentType;
 	}
 
 	public String getProductCode() {

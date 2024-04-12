@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 退分账参数
  *
  * @author auto create
- * @since 1.0, 2023-08-31 23:45:18
+ * @since 1.0, 2024-04-12 14:32:10
  */
 public class ProfitSharing extends AlipayObject {
 
-	private static final long serialVersionUID = 2637834483313779434L;
+	private static final long serialVersionUID = 4228967584768681186L;
 
 	/**
 	 * 参与退分账的目标支付宝账号，长度16位纯数字

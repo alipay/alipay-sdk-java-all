@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCdpAdvertiseCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5296957496152344645L;
+	private static final long serialVersionUID = 3452436565538653422L;
 
 	/**
 	 * 用户点击广告后，跳转URL地址，必须为https协议。广告类型为PIC时，需要设置该值。对于类型为URL不生效。

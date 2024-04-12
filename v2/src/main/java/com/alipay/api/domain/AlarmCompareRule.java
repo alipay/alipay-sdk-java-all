@@ -7,16 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 报警比较规则
  *
  * @author auto create
- * @since 1.0, 2024-04-11 09:44:18
+ * @since 1.0, 2024-04-12 15:05:16
  */
 public class AlarmCompareRule extends AlipayObject {
 
-	private static final long serialVersionUID = 4754691834524828859L;
+	private static final long serialVersionUID = 1259916433142972642L;
 
 	/**
 	 * 比较操作类型
  - EQ
- - 待补充
+ - NEQ
+ - GT
+ - LT
+ - LTE
+ - GTE
 	 */
 	@ApiField("operate_type")
 	private String operateType;

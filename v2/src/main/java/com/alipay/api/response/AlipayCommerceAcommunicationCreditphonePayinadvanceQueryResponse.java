@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.acommunication.creditphone.payinadvance.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-02-20 13:57:03
+ * @since 1.0, 2024-04-11 15:27:01
  */
 public class AlipayCommerceAcommunicationCreditphonePayinadvanceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2518344434756344348L;
+	private static final long serialVersionUID = 3544885838488778345L;
 
 	/** 
 	 * 提前结清支付宝订单号

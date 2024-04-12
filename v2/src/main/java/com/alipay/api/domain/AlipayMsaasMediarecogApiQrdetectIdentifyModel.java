@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMsaasMediarecogApiQrdetectIdentifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7576147818116962627L;
+	private static final long serialVersionUID = 2752671975529333573L;
 
 	/**
 	 * 待检测的图片url

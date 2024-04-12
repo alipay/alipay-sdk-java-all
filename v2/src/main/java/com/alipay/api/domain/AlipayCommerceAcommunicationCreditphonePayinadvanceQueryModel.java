@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 运营商行业信用购提前结清单查询
  *
  * @author auto create
- * @since 1.0, 2024-02-01 15:23:36
+ * @since 1.0, 2024-04-11 15:23:49
  */
 public class AlipayCommerceAcommunicationCreditphonePayinadvanceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1655128513587146429L;
+	private static final long serialVersionUID = 2477345669851831436L;
 
 	/**
 	 * 提前结清支付宝订单号
@@ -36,6 +36,12 @@ public class AlipayCommerceAcommunicationCreditphonePayinadvanceQueryModel exten
 	 */
 	@ApiField("alipay_user_id")
 	private String alipayUserId;
+
+	/**
+	 * 外部订单号
+	 */
+	@ApiField("out_biz_no")
+	private String outBizNo;
 
 	public String getAlipayBizNo() {
 		return this.alipayBizNo;
@@ -63,6 +69,13 @@ public class AlipayCommerceAcommunicationCreditphonePayinadvanceQueryModel exten
 	}
 	public void setAlipayUserId(String alipayUserId) {
 		this.alipayUserId = alipayUserId;
+	}
+
+	public String getOutBizNo() {
+		return this.outBizNo;
+	}
+	public void setOutBizNo(String outBizNo) {
+		this.outBizNo = outBizNo;
 	}
 
 }

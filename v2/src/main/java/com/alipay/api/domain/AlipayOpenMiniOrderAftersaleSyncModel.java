@@ -1,17 +1,26 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 商家售后处理结果同步
  *
  * @author auto create
- * @since 1.0, 2024-01-04 10:26:00
+ * @since 1.0, 2024-04-11 15:35:17
  */
 public class AlipayOpenMiniOrderAftersaleSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1762294556313838341L;
+	private static final long serialVersionUID = 1165459483384135513L;
+
+	/**
+	 * 操作code
+	 */
+	@ApiField("action_code")
+	private String actionCode;
 
 	/**
 	 * 交易组件售后单id
@@ -30,6 +39,25 @@ public class AlipayOpenMiniOrderAftersaleSyncModel extends AlipayObject {
 	 */
 	@ApiField("audit_status")
 	private String auditStatus;
+
+	/**
+	 * 物流信息，action_code为203时必填
+	 */
+	@ApiListField("logistics_list")
+	@ApiField("aftersale_logistics_info_d_t_o")
+	private List<AftersaleLogisticsInfoDTO> logisticsList;
+
+	/**
+	 * 商家地址
+	 */
+	@ApiField("merchant_address_info")
+	private AftersaleAddressInfoDTO merchantAddressInfo;
+
+	/**
+	 * 商家实际同意退款的金额（元）
+	 */
+	@ApiField("merchant_agree_refund_amount")
+	private String merchantAgreeRefundAmount;
 
 	/**
 	 * 买家open_id；open_id和user_id二选一
@@ -55,6 +83,13 @@ public class AlipayOpenMiniOrderAftersaleSyncModel extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
+	public String getActionCode() {
+		return this.actionCode;
+	}
+	public void setActionCode(String actionCode) {
+		this.actionCode = actionCode;
+	}
+
 	public String getAftersaleId() {
 		return this.aftersaleId;
 	}
@@ -74,6 +109,27 @@ public class AlipayOpenMiniOrderAftersaleSyncModel extends AlipayObject {
 	}
 	public void setAuditStatus(String auditStatus) {
 		this.auditStatus = auditStatus;
+	}
+
+	public List<AftersaleLogisticsInfoDTO> getLogisticsList() {
+		return this.logisticsList;
+	}
+	public void setLogisticsList(List<AftersaleLogisticsInfoDTO> logisticsList) {
+		this.logisticsList = logisticsList;
+	}
+
+	public AftersaleAddressInfoDTO getMerchantAddressInfo() {
+		return this.merchantAddressInfo;
+	}
+	public void setMerchantAddressInfo(AftersaleAddressInfoDTO merchantAddressInfo) {
+		this.merchantAddressInfo = merchantAddressInfo;
+	}
+
+	public String getMerchantAgreeRefundAmount() {
+		return this.merchantAgreeRefundAmount;
+	}
+	public void setMerchantAgreeRefundAmount(String merchantAgreeRefundAmount) {
+		this.merchantAgreeRefundAmount = merchantAgreeRefundAmount;
 	}
 
 	public String getOpenId() {

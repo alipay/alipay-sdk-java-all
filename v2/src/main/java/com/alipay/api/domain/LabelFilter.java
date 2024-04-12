@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class LabelFilter extends AlipayObject {
 
-	private static final long serialVersionUID = 1159885427694821779L;
+	private static final long serialVersionUID = 5428511824819689729L;
 
 	/**
 	 * 标签组名，商户自定义的标签固定为label_id_list，支付宝开放的标签详见<a href="http://aopsdkdownload.cn-hangzhou.alipay-pub.aliyun-inc.com/doc/FirstPartOfTagsFromAlipay.xlsx">支付宝开放标签</a>

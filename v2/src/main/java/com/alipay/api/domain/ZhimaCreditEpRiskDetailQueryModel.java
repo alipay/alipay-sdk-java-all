@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业风险明细查询
  *
  * @author auto create
- * @since 1.0, 2022-12-06 09:59:27
+ * @since 1.0, 2024-04-12 14:56:29
  */
 public class ZhimaCreditEpRiskDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2296668699236542346L;
+	private static final long serialVersionUID = 7168414771878616898L;
 
 	/**
 	 * 企业注册号或统一社会信用代码

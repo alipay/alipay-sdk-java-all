@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分账信息
  *
  * @author auto create
- * @since 1.0, 2023-08-31 21:21:13
+ * @since 1.0, 2024-04-12 14:31:59
  */
 public class ProfitSharingRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 7254616489244649391L;
+	private static final long serialVersionUID = 8528299793224819173L;
 
 	/**
 	 * 参与分账的目标支付宝账号

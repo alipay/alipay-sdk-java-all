@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IcpNrlxTypeList extends AlipayObject {
 
-	private static final long serialVersionUID = 1582592245911569185L;
+	private static final long serialVersionUID = 3658813195357866858L;
 
 	/**
 	 * 前置审批项类型说明

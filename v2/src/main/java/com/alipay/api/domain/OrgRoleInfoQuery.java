@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询角色信息下的人员信息入参
  *
  * @author auto create
- * @since 1.0, 2023-12-13 10:57:18
+ * @since 1.0, 2024-04-11 16:35:42
  */
 public class OrgRoleInfoQuery extends AlipayObject {
 
-	private static final long serialVersionUID = 2692136712659582929L;
+	private static final long serialVersionUID = 2742977511335792951L;
 
 	/**
 	 * 根据当前过滤条件筛选查询角色中的人员信息.

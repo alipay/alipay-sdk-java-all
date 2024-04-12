@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntlcNdaProtocolSignRecordExtDO extends AlipayObject {
 
-	private static final long serialVersionUID = 5847532224524494163L;
+	private static final long serialVersionUID = 5398295862426819399L;
 
 	/**
 	 * 上链存证实例ID

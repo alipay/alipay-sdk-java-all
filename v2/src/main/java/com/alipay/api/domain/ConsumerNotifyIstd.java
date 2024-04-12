@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ConsumerNotifyIstd extends AlipayObject {
 
-	private static final long serialVersionUID = 8516754982581135149L;
+	private static final long serialVersionUID = 2441433216587371293L;
 
 	/**
 	 * 商品数量

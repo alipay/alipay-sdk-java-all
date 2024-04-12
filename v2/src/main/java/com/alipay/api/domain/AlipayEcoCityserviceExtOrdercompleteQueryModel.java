@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoCityserviceExtOrdercompleteQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4667826831758845368L;
+	private static final long serialVersionUID = 8384228562951791196L;
 
 	/**
 	 * order_type，必填字段，枚举可数。枚举值 '1' 代表正向收费订单，'2' 代表逆向退费订单，由调用方根据业务数据填写。

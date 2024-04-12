@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenMiniIcpMediaUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6261312189897413925L;
+	private static final long serialVersionUID = 8588949871913242617L;
 
 	/** 
 	 * 申请备案时填写的文件材料凭证ID

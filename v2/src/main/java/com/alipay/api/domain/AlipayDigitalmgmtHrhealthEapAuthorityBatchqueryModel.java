@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量查询EAP用户
  *
  * @author auto create
- * @since 1.0, 2024-03-25 21:32:35
+ * @since 1.0, 2024-04-12 14:26:16
  */
 public class AlipayDigitalmgmtHrhealthEapAuthorityBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1663164869545658925L;
+	private static final long serialVersionUID = 2547686556525385685L;
 
 	/**
 	 * 该参数用来标识进入供应商系统的用户标志，是登录供应商应用后解析来的，蚂蚁EAP会将此参数作为用户标志

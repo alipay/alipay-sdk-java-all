@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceLotteryTypelistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4328414946787726224L;
+	private static final long serialVersionUID = 8446362492183972538L;
 
 	/** 
 	 * 彩票系统支持的可用于赠送的彩种类型列表

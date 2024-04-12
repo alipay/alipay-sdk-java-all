@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 蚁符多维金额查询条件
  *
  * @author auto create
- * @since 1.0, 2023-09-07 17:27:41
+ * @since 1.0, 2024-04-11 16:35:55
  */
 public class MultiDimAuthAmountQuery extends AlipayObject {
 
-	private static final long serialVersionUID = 3667931454971673915L;
+	private static final long serialVersionUID = 8399869416415278525L;
 
 	/**
 	 * 具体的查询的场景信息，如特付查询场景

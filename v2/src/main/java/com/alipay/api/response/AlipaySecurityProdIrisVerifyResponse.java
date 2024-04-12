@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySecurityProdIrisVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1431761614591439962L;
+	private static final long serialVersionUID = 6351423581662415965L;
 
 	/** 
 	 * 虹膜校验关联token，用于二次校验

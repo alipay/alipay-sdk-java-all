@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据bizId查询单个人的权益情况
  *
  * @author auto create
- * @since 1.0, 2024-03-25 21:10:54
+ * @since 1.0, 2024-04-12 14:26:16
  */
 public class EapAuthVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8355946825938944295L;
+	private static final long serialVersionUID = 4438517479125147689L;
 
 	/**
 	 * 该参数用来标识团餐所属组织，是根据用户corp按照组织归属转换得来，供应商会依据此参数合计账单。
@@ -25,6 +25,12 @@ public class EapAuthVO extends AlipayObject {
 	@ApiField("has_auth")
 	private Boolean hasAuth;
 
+	/**
+	 * 该参数用来标识用户来源，是供应商不同的场景传入对应的来源，蚂蚁EAP会根据此来判断员工是否在权益范围内
+	 */
+	@ApiField("source")
+	private Long source;
+
 	public String getCorp() {
 		return this.corp;
 	}
@@ -37,6 +43,13 @@ public class EapAuthVO extends AlipayObject {
 	}
 	public void setHasAuth(Boolean hasAuth) {
 		this.hasAuth = hasAuth;
+	}
+
+	public Long getSource() {
+		return this.source;
+	}
+	public void setSource(Long source) {
+		this.source = source;
 	}
 
 }

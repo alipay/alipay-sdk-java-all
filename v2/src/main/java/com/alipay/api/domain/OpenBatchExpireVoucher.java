@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenBatchExpireVoucher extends AlipayObject {
 
-	private static final long serialVersionUID = 5894478151582197812L;
+	private static final long serialVersionUID = 4588769971356239891L;
 
 	/**
 	 * 可用金额（废弃）

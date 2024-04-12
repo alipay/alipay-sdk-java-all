@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 授权金额信息
  *
  * @author auto create
- * @since 1.0, 2023-09-07 17:25:53
+ * @since 1.0, 2024-04-11 16:35:49
  */
 public class OpenApiAuthAmountDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4795654387993259581L;
+	private static final long serialVersionUID = 7288155788927426696L;
 
 	/**
 	 * 授权金额的数值，单位为：分.

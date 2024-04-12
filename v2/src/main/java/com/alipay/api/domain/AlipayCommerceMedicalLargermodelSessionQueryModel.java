@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗大模型服务对外接口-会话创建或查询
  *
  * @author auto create
- * @since 1.0, 2024-03-27 13:50:17
+ * @since 1.0, 2024-04-12 11:20:50
  */
 public class AlipayCommerceMedicalLargermodelSessionQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2382638553116683563L;
+	private static final long serialVersionUID = 8329279937841391456L;
+
+	/**
+	 * 区分请求来源
+	 */
+	@ApiField("app_type")
+	private String appType;
 
 	/**
 	 * 行业侧生成，首次为空
@@ -92,6 +98,13 @@ DEPARTGUIDE
 	 */
 	@ApiField("session_id")
 	private String sessionId;
+
+	public String getAppType() {
+		return this.appType;
+	}
+	public void setAppType(String appType) {
+		this.appType = appType;
+	}
 
 	public String getChatId() {
 		return this.chatId;

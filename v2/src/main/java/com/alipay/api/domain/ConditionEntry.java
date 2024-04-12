@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 多维查询条件
  *
  * @author auto create
- * @since 1.0, 2023-09-07 15:21:05
+ * @since 1.0, 2024-04-11 16:35:55
  */
 public class ConditionEntry extends AlipayObject {
 
-	private static final long serialVersionUID = 7749283631384372531L;
+	private static final long serialVersionUID = 8434211439725495756L;
 
 	/**
 	 * 纬度的具体key值如workNo ,level
