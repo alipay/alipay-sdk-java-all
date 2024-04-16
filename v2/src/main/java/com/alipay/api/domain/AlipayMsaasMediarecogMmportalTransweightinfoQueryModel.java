@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMsaasMediarecogMmportalTransweightinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6253726334368434364L;
+	private static final long serialVersionUID = 8776728343722812294L;
 
 	/**
 	 * 交易ID

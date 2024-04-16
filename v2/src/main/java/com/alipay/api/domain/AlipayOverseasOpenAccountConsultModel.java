@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账户验证
  *
  * @author auto create
- * @since 1.0, 2021-04-30 16:47:35
+ * @since 1.0, 2024-04-15 10:27:01
  */
 public class AlipayOverseasOpenAccountConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5529763615731396166L;
+	private static final long serialVersionUID = 5276833332915439239L;
 
 	/**
 	 * 账户名称

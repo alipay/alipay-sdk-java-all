@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InfoSource extends AlipayObject {
 
-	private static final long serialVersionUID = 4135855688653636718L;
+	private static final long serialVersionUID = 8271817595862178952L;
 
 	/**
 	 * 儿童信息来源的类型，目前支持name

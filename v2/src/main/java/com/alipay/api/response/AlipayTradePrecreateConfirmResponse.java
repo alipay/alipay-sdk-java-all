@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.precreate.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-11 13:55:59
+ * @since 1.0, 2024-04-15 10:19:54
  */
 public class AlipayTradePrecreateConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5838979721588771515L;
+	private static final long serialVersionUID = 5632853139817542299L;
 
 	/** 
 	 * 收单模式
@@ -53,6 +53,13 @@ normalOrderMode
 	private String merchantOrderNo;
 
 	/** 
+	 * 线上SKA支持A+钱包支付定制url
+主站无处理，仅转发
+	 */
+	@ApiField("merchant_return_url")
+	private String merchantReturnUrl;
+
+	/** 
 	 * 订单创建时间
 	 */
 	@ApiField("order_create_time")
@@ -83,6 +90,12 @@ normalOrderMode
 	 */
 	@ApiField("precreate_code_info")
 	private TradePrecreateConfirmPrecreateCodeInfo precreateCodeInfo;
+
+	/** 
+	 * 销售产品码
+	 */
+	@ApiField("product_code")
+	private String productCode;
 
 	/** 
 	 * 清算机构流水号（如网联流水号）
@@ -139,6 +152,13 @@ normalOrderMode
 		return this.merchantOrderNo;
 	}
 
+	public void setMerchantReturnUrl(String merchantReturnUrl) {
+		this.merchantReturnUrl = merchantReturnUrl;
+	}
+	public String getMerchantReturnUrl( ) {
+		return this.merchantReturnUrl;
+	}
+
 	public void setOrderCreateTime(Date orderCreateTime) {
 		this.orderCreateTime = orderCreateTime;
 	}
@@ -172,6 +192,13 @@ normalOrderMode
 	}
 	public TradePrecreateConfirmPrecreateCodeInfo getPrecreateCodeInfo( ) {
 		return this.precreateCodeInfo;
+	}
+
+	public void setProductCode(String productCode) {
+		this.productCode = productCode;
+	}
+	public String getProductCode( ) {
+		return this.productCode;
 	}
 
 	public void setSettleSerialNo(String settleSerialNo) {

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFincoreComplianceTemplateInstanceDownloadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6243538723968114254L;
+	private static final long serialVersionUID = 2267495117927418718L;
 
 	/** 
 	 * 下载链接

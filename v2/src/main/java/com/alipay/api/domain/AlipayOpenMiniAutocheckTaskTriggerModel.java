@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniAutocheckTaskTriggerModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4211546924958392261L;
+	private static final long serialVersionUID = 4152846392248449316L;
 
 	/**
 	 * 用例ID

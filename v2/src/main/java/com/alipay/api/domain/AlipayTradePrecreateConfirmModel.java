@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预下单订单确认接口
  *
  * @author auto create
- * @since 1.0, 2022-04-13 11:47:30
+ * @since 1.0, 2024-04-15 10:19:54
  */
 public class AlipayTradePrecreateConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3135723958579682418L;
+	private static final long serialVersionUID = 1177126837544612247L;
 
 	/**
 	 * 买家id

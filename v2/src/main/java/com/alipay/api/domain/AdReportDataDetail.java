@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询结果数据列表
  *
  * @author auto create
- * @since 1.0, 2024-03-20 11:23:51
+ * @since 1.0, 2024-04-15 15:30:16
  */
 public class AdReportDataDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1628271651222266991L;
+	private static final long serialVersionUID = 2763947455934221328L;
 
 	/**
 	 * 当query_type为DETAIL时数据汇总时间格式yyyyMMdd；当按ALL_SUM时该出参非必填
@@ -42,10 +42,22 @@ public class AdReportDataDetail extends AlipayObject {
 	private Long cost;
 
 	/**
+	 * 创意名称
+	 */
+	@ApiField("creative_name")
+	private String creativeName;
+
+	/**
 	 * 根据ad_level不同会透出汇总数据的plan_id/group_id/creative_id/order_id
 	 */
 	@ApiField("data_id")
 	private String dataId;
+
+	/**
+	 * 单元ID
+	 */
+	@ApiField("group_id")
+	private String groupId;
 
 	/**
 	 * 单元名称
@@ -135,11 +147,25 @@ public class AdReportDataDetail extends AlipayObject {
 		this.cost = cost;
 	}
 
+	public String getCreativeName() {
+		return this.creativeName;
+	}
+	public void setCreativeName(String creativeName) {
+		this.creativeName = creativeName;
+	}
+
 	public String getDataId() {
 		return this.dataId;
 	}
 	public void setDataId(String dataId) {
 		this.dataId = dataId;
+	}
+
+	public String getGroupId() {
+		return this.groupId;
+	}
+	public void setGroupId(String groupId) {
+		this.groupId = groupId;
 	}
 
 	public String getGroupName() {

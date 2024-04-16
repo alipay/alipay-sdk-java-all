@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建法催案件
  *
  * @author auto create
- * @since 1.0, 2023-03-21 20:43:56
+ * @since 1.0, 2024-04-15 16:14:52
  */
 public class AntLinkeAlcollectioncenterCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4445138757485819698L;
+	private static final long serialVersionUID = 2857762143815411325L;
 
 	/**
 	 * 欠款信息

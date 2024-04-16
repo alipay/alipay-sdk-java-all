@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 问诊订单回流接口
  *
  * @author auto create
- * @since 1.0, 2024-02-20 13:58:03
+ * @since 1.0, 2024-04-15 14:40:41
  */
 public class AlipayCommerceMedicalIndustrydataInquiryorderUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1892314622786477385L;
+	private static final long serialVersionUID = 5525291393273434531L;
 
 	/**
 	 * 支付宝开放id
@@ -56,6 +56,12 @@ public class AlipayCommerceMedicalIndustrydataInquiryorderUploadModel extends Al
 	private MedicalInquiryOrderExtInfo extInfo;
 
 	/**
+	 * 改订单关联的外部排班Id
+	 */
+	@ApiField("ext_shift_case_id")
+	private String extShiftCaseId;
+
+	/**
 	 * 医生执业医院
 	 */
 	@ApiField("hospital_name")
@@ -87,8 +93,8 @@ IMAGE_INQUIRY/PHONE_INQUIRY/VIDEO_INQUIRY/QUICK_IMAGE_INQUIRY/QUICK_PHONE_INQUIR
 	private String merchantOrderLinkPage;
 
 	/**
-	 * 待支付 / 待接诊 / 待问诊 / 问诊中 / 已完成 / 已取消 / 已退款 / 退款中 / 取消中 / 审核失败 / 系统取消 / 用户取消 对应的枚举值
-WAIT_PAY/WAIT_RECEPTION/WAIT_INQUIRY/IN_INQUIRY/FINISHED/CANCELED/REFUNDED/REFUNDING/CANCELING/APPROVE_FAIL/SYSTEM_CANCELED/USER_CANCELED
+	 * 待支付 / 待接诊 / 待问诊 / 问诊中 / 已完成 / 已取消 / 已退款 / 退款中 / 取消中 / 审核失败 / 系统取消 / 用户取消/医生退诊/已支付 对应的枚举值
+WAIT_PAY/WAIT_RECEPTION/WAIT_INQUIRY/IN_INQUIRY/FINISHED/CANCELED/REFUNDED/REFUNDING/CANCELING/APPROVE_FAIL/SYSTEM_CANCELED/USER_CANCELED/REFUSAL_OF_TREATMENT/PAID
 	 */
 	@ApiField("merchant_order_status")
 	private String merchantOrderStatus;
@@ -206,6 +212,13 @@ WAIT_PAY/WAIT_RECEPTION/WAIT_INQUIRY/IN_INQUIRY/FINISHED/CANCELED/REFUNDED/REFUN
 	}
 	public void setExtInfo(MedicalInquiryOrderExtInfo extInfo) {
 		this.extInfo = extInfo;
+	}
+
+	public String getExtShiftCaseId() {
+		return this.extShiftCaseId;
+	}
+	public void setExtShiftCaseId(String extShiftCaseId) {
+		this.extShiftCaseId = extShiftCaseId;
 	}
 
 	public String getHospitalName() {

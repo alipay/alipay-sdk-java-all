@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询员工可用抬头信息
  *
  * @author auto create
- * @since 1.0, 2023-08-25 09:51:25
+ * @since 1.0, 2024-04-15 11:50:41
  */
 public class AlipayCommerceEcEmployeeTitleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5228841427285226126L;
+	private static final long serialVersionUID = 5865176145821881293L;
 
 	/**
 	 * 员工ID

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class OpenApiDailyScheduleVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1673981881215991541L;
+	private static final long serialVersionUID = 1541963333677477956L;
 
 	/**
 	 * 单天行程ID

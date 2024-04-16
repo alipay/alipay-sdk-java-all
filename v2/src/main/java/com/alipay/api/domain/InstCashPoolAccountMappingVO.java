@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InstCashPoolAccountMappingVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2781984616634455218L;
+	private static final long serialVersionUID = 3454417269538516957L;
 
 	/**
 	 * 资金池唯一标识

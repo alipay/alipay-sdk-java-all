@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OnlineGameEventInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5724587839192592754L;
+	private static final long serialVersionUID = 7122589956248787146L;
 
 	/**
 	 * 产地描述信息

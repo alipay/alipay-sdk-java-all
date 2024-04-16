@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 广告投放数据通用查询
  *
  * @author auto create
- * @since 1.0, 2024-03-20 11:23:51
+ * @since 1.0, 2024-04-15 15:30:16
  */
 public class AlipayDataDataserviceAdReportdataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8265548377926722317L;
+	private static final long serialVersionUID = 3798295924249128779L;
 
 	/**
 	 * 数据维度：

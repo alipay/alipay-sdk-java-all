@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class WidgetGoodsAuditPassResult extends AlipayObject {
 
-	private static final long serialVersionUID = 2314793712283989762L;
+	private static final long serialVersionUID = 8723398339586748352L;
 
 	/**
 	 * 支付宝商品内部唯一标识

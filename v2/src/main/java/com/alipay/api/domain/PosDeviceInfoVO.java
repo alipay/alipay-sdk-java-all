@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PosDeviceInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5531431641365424459L;
+	private static final long serialVersionUID = 4729857289232513654L;
 
 	/**
 	 * 设备对应的软件方公司名称，比如：美味不用等；银盒子；二维火；云纵；雅座；辰森；

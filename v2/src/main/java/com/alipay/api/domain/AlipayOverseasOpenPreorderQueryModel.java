@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预缴费订单查询
  *
  * @author auto create
- * @since 1.0, 2022-07-13 12:14:45
+ * @since 1.0, 2024-04-15 10:54:04
  */
 public class AlipayOverseasOpenPreorderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5631171355283844934L;
+	private static final long serialVersionUID = 5442919571471178316L;
 
 	/**
 	 * 预缴费单号

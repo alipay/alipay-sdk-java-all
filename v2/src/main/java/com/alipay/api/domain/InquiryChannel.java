@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 医生在线问诊渠道（问诊方式，价格，服务链接）
  *
  * @author auto create
- * @since 1.0, 2024-03-07 11:01:37
+ * @since 1.0, 2024-04-15 14:40:17
  */
 public class InquiryChannel extends AlipayObject {
 
-	private static final long serialVersionUID = 8124766949271766546L;
+	private static final long serialVersionUID = 6554871938952969798L;
 
 	/**
 	 * 问诊医生排班信息列表
@@ -30,7 +30,7 @@ public class InquiryChannel extends AlipayObject {
 	private String inquiryMode;
 
 	/**
-	 * 问诊价格（中间必须有小数点，后面两位小数）
+	 * 问诊价格（中间必须有小数点，后面两位小数），单位元
 	 */
 	@ApiField("inquiry_price")
 	private String inquiryPrice;

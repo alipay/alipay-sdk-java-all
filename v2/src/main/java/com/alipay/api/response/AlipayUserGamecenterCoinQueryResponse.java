@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserGamecenterCoinQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8224931818843941247L;
+	private static final long serialVersionUID = 6816638756166635873L;
 
 	/** 
 	 * 用户游戏币余额，单位个，整数

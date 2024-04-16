@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.linke.alcollectioncenter.previewurl.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 06:11:55
+ * @since 1.0, 2024-04-15 17:46:59
  */
 public class AntLinkeAlcollectioncenterPreviewurlQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4183214537583886441L;
+	private static final long serialVersionUID = 8738913166957313583L;
 
 	/** 
 	 * 预览链接

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NotaryFileVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2282183256721215549L;
+	private static final long serialVersionUID = 4443447887874117681L;
 
 	/**
 	 * 文件http地址

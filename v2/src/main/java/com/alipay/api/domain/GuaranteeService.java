@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝租车保障服务
  *
  * @author auto create
- * @since 1.0, 2024-04-08 13:36:11
+ * @since 1.0, 2024-04-15 16:05:53
  */
 public class GuaranteeService extends AlipayObject {
 
-	private static final long serialVersionUID = 2673461864485561566L;
+	private static final long serialVersionUID = 8725355723213934822L;
 
 	/**
 	 * 垫付保障

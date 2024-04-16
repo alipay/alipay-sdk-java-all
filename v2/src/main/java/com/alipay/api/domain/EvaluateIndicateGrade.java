@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EvaluateIndicateGrade extends AlipayObject {
 
-	private static final long serialVersionUID = 2335199931817714327L;
+	private static final long serialVersionUID = 1258685743824214313L;
 
 	/**
 	 * 得分单位

@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝租车预定规则
  *
  * @author auto create
- * @since 1.0, 2024-04-08 13:36:00
+ * @since 1.0, 2024-04-15 16:05:53
  */
 public class RentCarReservationTextRule extends AlipayObject {
 
-	private static final long serialVersionUID = 6631342389766898159L;
+	private static final long serialVersionUID = 7236593345985929199L;
 
 	/**
-	 * 规则文案列表
+	 * 规则的具体文案
 	 */
 	@ApiListField("rule_text_list")
 	@ApiField("string")
