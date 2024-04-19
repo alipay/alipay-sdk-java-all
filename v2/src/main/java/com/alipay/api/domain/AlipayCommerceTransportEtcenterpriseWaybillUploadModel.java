@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业ETC运单上送
  *
  * @author auto create
- * @since 1.0, 2023-12-20 11:13:46
+ * @since 1.0, 2024-04-18 14:44:14
  */
 public class AlipayCommerceTransportEtcenterpriseWaybillUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6751147739737698893L;
+	private static final long serialVersionUID = 6515137552678196711L;
 
 	/**
 	 * 支付宝企业id
@@ -34,7 +34,7 @@ public class AlipayCommerceTransportEtcenterpriseWaybillUploadModel extends Alip
 	private String highwayFee;
 
 	/**
-	 * 0：蓝； 1：黄； 2：黑； 3：白； 4：渐变绿
+	 * 车牌颜色
 	 */
 	@ApiField("plate_color")
 	private String plateColor;

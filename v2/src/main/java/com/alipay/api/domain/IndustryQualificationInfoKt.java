@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IndustryQualificationInfoKt extends AlipayObject {
 
-	private static final long serialVersionUID = 5377125228825794352L;
+	private static final long serialVersionUID = 2178677321734367748L;
 
 	/**
 	 * 商户行业资质图片URL，格式jpg、jpeg、png

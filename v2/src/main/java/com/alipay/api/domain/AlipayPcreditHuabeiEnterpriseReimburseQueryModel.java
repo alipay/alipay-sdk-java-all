@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPcreditHuabeiEnterpriseReimburseQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3431485781197597754L;
+	private static final long serialVersionUID = 1877354417253516621L;
 
 	/**
 	 * 商户ID

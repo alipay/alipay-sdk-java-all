@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 保存本地商品日历库存
  *
  * @author auto create
- * @since 1.0, 2024-03-29 09:52:26
+ * @since 1.0, 2024-04-19 11:35:15
  */
 public class AlipayOpenAppLocalitemCalendarstockSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2443654454517814851L;
+	private static final long serialVersionUID = 2439351547298166642L;
 
 	/**
-	 * 日历库存列表，库存设置的总天数不得大于60天
+	 * 日历库存列表（商品维度），库存设置的总天数不得大于60天
 	 */
 	@ApiListField("calendar_stocks")
 	@ApiField("item_calendar_stock_v_o")
@@ -34,6 +34,13 @@ public class AlipayOpenAppLocalitemCalendarstockSaveModel extends AlipayObject {
 	 */
 	@ApiField("out_item_id")
 	private String outItemId;
+
+	/**
+	 * 日历库存列表（sku维度），库存设置的总天数不得大于60天。
+	 */
+	@ApiListField("sku_calendar_stocks")
+	@ApiField("sku_calendar_stock_list_v_o")
+	private List<SkuCalendarStockListVO> skuCalendarStocks;
 
 	public List<ItemCalendarStockVO> getCalendarStocks() {
 		return this.calendarStocks;
@@ -54,6 +61,13 @@ public class AlipayOpenAppLocalitemCalendarstockSaveModel extends AlipayObject {
 	}
 	public void setOutItemId(String outItemId) {
 		this.outItemId = outItemId;
+	}
+
+	public List<SkuCalendarStockListVO> getSkuCalendarStocks() {
+		return this.skuCalendarStocks;
+	}
+	public void setSkuCalendarStocks(List<SkuCalendarStockListVO> skuCalendarStocks) {
+		this.skuCalendarStocks = skuCalendarStocks;
 	}
 
 }

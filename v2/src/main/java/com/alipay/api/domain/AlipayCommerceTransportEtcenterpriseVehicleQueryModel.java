@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业ETC入驻车辆查询
  *
  * @author auto create
- * @since 1.0, 2023-12-20 11:13:25
+ * @since 1.0, 2024-04-18 14:44:15
  */
 public class AlipayCommerceTransportEtcenterpriseVehicleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4826966789776179548L;
+	private static final long serialVersionUID = 5391345384292877913L;
 
 	/**
 	 * 支付宝企业id
@@ -26,7 +26,7 @@ public class AlipayCommerceTransportEtcenterpriseVehicleQueryModel extends Alipa
 	private String corpVehicleId;
 
 	/**
-	 * 0：蓝； 1：黄； 2：黑； 3：白； 4：渐变绿
+	 * 车牌颜色
 	 */
 	@ApiField("plate_color")
 	private String plateColor;

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.credit.withdraw.disburse response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-09 09:57:00
+ * @since 1.0, 2024-04-17 13:56:59
  */
 public class AlipayCommerceEcCreditWithdrawDisburseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8776264758126943497L;
+	private static final long serialVersionUID = 2465411722312551271L;
 
 	/** 
 	 * 成功: SUCCESS

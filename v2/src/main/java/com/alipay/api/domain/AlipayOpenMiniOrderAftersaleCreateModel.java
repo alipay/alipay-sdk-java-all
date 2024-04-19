@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建售后
  *
  * @author auto create
- * @since 1.0, 2024-04-11 14:21:50
+ * @since 1.0, 2024-04-17 18:19:31
  */
 public class AlipayOpenMiniOrderAftersaleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6644775671375861131L;
+	private static final long serialVersionUID = 3628347155173586918L;
 
 	/**
 	 * 退换商品的信息
@@ -53,6 +53,12 @@ order_id、out_order_id，二选一
 	 */
 	@ApiField("path")
 	private String path;
+
+	/**
+	 * 售后单退款金额，单位：元，精确到小数点后两位。发起实物商品的售后时需要传入
+	 */
+	@ApiField("refund_amount")
+	private String refundAmount;
 
 	/**
 	 * 退款原因
@@ -112,6 +118,13 @@ order_id、out_order_id，二选一
 	}
 	public void setPath(String path) {
 		this.path = path;
+	}
+
+	public String getRefundAmount() {
+		return this.refundAmount;
+	}
+	public void setRefundAmount(String refundAmount) {
+		this.refundAmount = refundAmount;
 	}
 
 	public String getRefundReason() {

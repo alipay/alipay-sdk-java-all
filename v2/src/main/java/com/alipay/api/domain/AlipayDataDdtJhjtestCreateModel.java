@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataDdtJhjtestCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6641936548186378683L;
+	private static final long serialVersionUID = 1318326385989768196L;
 
 	/**
 	 * 描述
@@ -32,9 +32,10 @@ public class AlipayDataDdtJhjtestCreateModel extends AlipayObject {
 	private String idOpenid;
 
 	/**
-	 * aa
+	 * 老链路修改a_test_a老链路修改a_test_a老链路修改a_test_a 当前字段已废弃(废弃了的)
 	 */
 	@ApiField("input_a")
+	@Deprecated
 	private String inputA;
 
 	/**

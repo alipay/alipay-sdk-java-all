@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家业务订单同步
  *
  * @author auto create
- * @since 1.0, 2024-04-15 11:33:15
+ * @since 1.0, 2024-04-19 10:59:51
  */
 public class AlipayCloudFundBizOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7766217349147726795L;
+	private static final long serialVersionUID = 7212274786296693169L;
 
 	/**
 	 * 订单金额

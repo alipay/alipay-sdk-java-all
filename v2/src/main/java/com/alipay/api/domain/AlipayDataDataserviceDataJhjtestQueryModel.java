@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * jhj预发测试
  *
  * @author auto create
- * @since 1.0, 2023-09-08 13:45:57
+ * @since 1.0, 2024-04-19 14:28:20
  */
 public class AlipayDataDataserviceDataJhjtestQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3518532677739567582L;
+	private static final long serialVersionUID = 4249897466527954199L;
 
 	/**
 	 * 1
@@ -38,7 +38,7 @@ public class AlipayDataDataserviceDataJhjtestQueryModel extends AlipayObject {
 	private String inputC;
 
 	/**
-	 * 111
+	 * 文档修改测试，主场景input_c_yincang添加展示
 	 */
 	@ApiField("input_c_yincang")
 	private String inputCYincang;
@@ -68,7 +68,7 @@ public class AlipayDataDataserviceDataJhjtestQueryModel extends AlipayObject {
 	private String openId;
 
 	/**
-	 * 经度
+	 * 文档变更审核通过
 	 */
 	@ApiField("uid")
 	private String uid;

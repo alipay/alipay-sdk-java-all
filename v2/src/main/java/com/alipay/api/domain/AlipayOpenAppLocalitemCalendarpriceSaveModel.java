@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 保存本地商品日历价格
  *
  * @author auto create
- * @since 1.0, 2024-03-29 09:52:09
+ * @since 1.0, 2024-04-19 11:34:39
  */
 public class AlipayOpenAppLocalitemCalendarpriceSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1245764398684832586L;
+	private static final long serialVersionUID = 4738384427426257656L;
 
 	/**
-	 * 日历价格列表，价格设置的总天数不得大于60天
+	 * 日历价格列表（商品维度），价格设置的总天数不得大于60天
 	 */
 	@ApiListField("calendar_prices")
 	@ApiField("item_calendar_price_v_o")
@@ -34,6 +34,13 @@ public class AlipayOpenAppLocalitemCalendarpriceSaveModel extends AlipayObject {
 	 */
 	@ApiField("out_item_id")
 	private String outItemId;
+
+	/**
+	 * 日历价格列表（sku维度），价格设置的总天数不得大于60天。
+	 */
+	@ApiListField("sku_calendar_prices")
+	@ApiField("sku_calendar_price_list_v_o")
+	private List<SkuCalendarPriceListVO> skuCalendarPrices;
 
 	public List<ItemCalendarPriceVO> getCalendarPrices() {
 		return this.calendarPrices;
@@ -54,6 +61,13 @@ public class AlipayOpenAppLocalitemCalendarpriceSaveModel extends AlipayObject {
 	}
 	public void setOutItemId(String outItemId) {
 		this.outItemId = outItemId;
+	}
+
+	public List<SkuCalendarPriceListVO> getSkuCalendarPrices() {
+		return this.skuCalendarPrices;
+	}
+	public void setSkuCalendarPrices(List<SkuCalendarPriceListVO> skuCalendarPrices) {
+		this.skuCalendarPrices = skuCalendarPrices;
 	}
 
 }

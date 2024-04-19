@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceEcEnterpriseUnsignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6227998348325692195L;
+	private static final long serialVersionUID = 4845832352786454192L;
 
 	/** 
 	 * 入参传的共同账户id，出参也会返回共同账户id

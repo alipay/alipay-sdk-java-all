@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.scenepay.authorize.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-02 14:36:59
+ * @since 1.0, 2024-04-17 14:35:14
  */
 public class AlipayFundScenepayAuthorizeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8429562815348174259L;
+	private static final long serialVersionUID = 8535435524954698464L;
 
 	/** 
 	 * 授权ID

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.fincloud.generalsaas.face.check.initialize response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-07 14:55:23
+ * @since 1.0, 2024-04-17 16:42:01
  */
 public class DatadigitalFincloudGeneralsaasFaceCheckInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8798932972171422578L;
+	private static final long serialVersionUID = 5639699391376298715L;
 
 	/** 
 	 * 人脸检测流水ID，请保留方便排查问题
@@ -26,6 +26,12 @@ public class DatadigitalFincloudGeneralsaasFaceCheckInitializeResponse extends A
 	@ApiField("page_url")
 	private String pageUrl;
 
+	/** 
+	 * H5活体检测地址
+	 */
+	@ApiField("web_url")
+	private String webUrl;
+
 	public void setCertifyId(String certifyId) {
 		this.certifyId = certifyId;
 	}
@@ -38,6 +44,13 @@ public class DatadigitalFincloudGeneralsaasFaceCheckInitializeResponse extends A
 	}
 	public String getPageUrl( ) {
 		return this.pageUrl;
+	}
+
+	public void setWebUrl(String webUrl) {
+		this.webUrl = webUrl;
+	}
+	public String getWebUrl( ) {
+		return this.webUrl;
 	}
 
 }

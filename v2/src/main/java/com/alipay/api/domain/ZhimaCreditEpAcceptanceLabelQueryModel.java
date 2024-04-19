@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻企业信用服务企业标签信息查询
  *
  * @author auto create
- * @since 1.0, 2023-11-15 14:11:43
+ * @since 1.0, 2024-04-19 13:32:51
  */
 public class ZhimaCreditEpAcceptanceLabelQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4695542835927829221L;
+	private static final long serialVersionUID = 8897417478364814429L;
 
 	/**
 	 * 统一社会信用代码或营业执照注册号

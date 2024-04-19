@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IotFmInsuCityVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1193962953996944415L;
+	private static final long serialVersionUID = 7135163353128145828L;
 
 	/**
 	 * 参保城市编码国标

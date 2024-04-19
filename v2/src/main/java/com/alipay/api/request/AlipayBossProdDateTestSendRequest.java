@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.prod.date.test.send request
  * 
  * @author auto create
- * @since 1.0, 2023-11-02 14:11:49
+ * @since 1.0, 2024-04-18 15:24:03
  */
 public class AlipayBossProdDateTestSendRequest implements AlipayRequest<AlipayBossProdDateTestSendResponse> {
 

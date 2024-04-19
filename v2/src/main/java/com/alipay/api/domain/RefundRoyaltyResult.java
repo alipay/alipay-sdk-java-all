@@ -7,11 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 退分润结果
  *
  * @author auto create
- * @since 1.0, 2024-01-16 15:02:16
+ * @since 1.0, 2024-04-16 14:15:26
  */
 public class RefundRoyaltyResult extends AlipayObject {
 
-	private static final long serialVersionUID = 3875562532941118142L;
+	private static final long serialVersionUID = 2299429837437738272L;
+
+	/**
+	 * 商户请求的转入账号
+	 */
+	@ApiField("ori_trans_in")
+	private String oriTransIn;
+
+	/**
+	 * 商户请求的转出账号
+	 */
+	@ApiField("ori_trans_out")
+	private String oriTransOut;
 
 	/**
 	 * 退分账金额
@@ -55,6 +67,20 @@ public class RefundRoyaltyResult extends AlipayObject {
 	 */
 	@ApiField("trans_out_email")
 	private String transOutEmail;
+
+	public String getOriTransIn() {
+		return this.oriTransIn;
+	}
+	public void setOriTransIn(String oriTransIn) {
+		this.oriTransIn = oriTransIn;
+	}
+
+	public String getOriTransOut() {
+		return this.oriTransOut;
+	}
+	public void setOriTransOut(String oriTransOut) {
+		this.oriTransOut = oriTransOut;
+	}
 
 	public String getRefundAmount() {
 		return this.refundAmount;

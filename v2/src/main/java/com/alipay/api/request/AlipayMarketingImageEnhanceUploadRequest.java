@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.image.enhance.upload request
  * 
  * @author auto create
- * @since 1.0, 2024-03-14 09:41:57
+ * @since 1.0, 2024-04-18 21:32:01
  */
 public class AlipayMarketingImageEnhanceUploadRequest implements AlipayUploadRequest<AlipayMarketingImageEnhanceUploadResponse> {
 
@@ -21,7 +21,7 @@ public class AlipayMarketingImageEnhanceUploadRequest implements AlipayUploadReq
 	private String apiVersion="1.0";
 
 	/** 
-	* 图片的byte字节数组。图片大小限制为2M。支持格式如下：png、jpg、jpeg、bmp、webp。
+	* 图片的byte字节数组。图片大小限制为5M。支持格式如下：png、jpg、jpeg、bmp、webp。
 	 */
 	private FileItem imageContent;
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TaskTypeData extends AlipayObject {
 
-	private static final long serialVersionUID = 6727621691568643179L;
+	private static final long serialVersionUID = 8231424598581377844L;
 
 	/**
 	 * 商户数据回传的任务名称，供C端展示。当累计的数据类型为任务类型时，此为必传字段

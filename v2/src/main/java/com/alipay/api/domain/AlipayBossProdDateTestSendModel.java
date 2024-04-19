@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 测试to蚂蚁消息
  *
  * @author auto create
- * @since 1.0, 2023-11-02 14:06:35
+ * @since 1.0, 2024-04-18 11:02:48
  */
 public class AlipayBossProdDateTestSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8324312659867227285L;
+	private static final long serialVersionUID = 3381925686425481973L;
 
 	/**
 	 * test
@@ -26,7 +26,7 @@ public class AlipayBossProdDateTestSendModel extends AlipayObject {
 	private String bOpenId;
 
 	/**
-	 * test
+	 * test修改文档
 	 */
 	@ApiField("test_a")
 	private String testA;

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceReceiptSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1685782461391266494L;
+	private static final long serialVersionUID = 3669137958322835549L;
 
 	/** 
 	 * 商品列表中有对应的环保类型时，需要返回

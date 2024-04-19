@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayIserviceCcmOlsChatrecordQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8429319888994241348L;
+	private static final long serialVersionUID = 6473563733878941544L;
 
 	/** 
 	 * 客服id

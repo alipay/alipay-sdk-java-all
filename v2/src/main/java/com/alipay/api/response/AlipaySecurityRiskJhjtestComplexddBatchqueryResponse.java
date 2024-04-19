@@ -8,20 +8,20 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.jhjtest.complexdd.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-11 13:46:58
+ * @since 1.0, 2024-04-17 17:17:01
  */
 public class AlipaySecurityRiskJhjtestComplexddBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8188886949924438984L;
+	private static final long serialVersionUID = 8158983314755766898L;
 
 	/** 
-	 * 11
+	 * 修改文档
 	 */
 	@ApiField("out_p")
 	private String outP;
 
 	/** 
-	 * 11
+	 * 修改文档
 	 */
 	@ApiField("regress")
 	private String regress;

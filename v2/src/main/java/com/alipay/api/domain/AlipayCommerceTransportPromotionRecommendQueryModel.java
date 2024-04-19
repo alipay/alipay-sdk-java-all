@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportPromotionRecommendQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7122683816133178813L;
+	private static final long serialVersionUID = 2265875281736911215L;
 
 	/**
 	 * 金额，只支持两位小数点的正数

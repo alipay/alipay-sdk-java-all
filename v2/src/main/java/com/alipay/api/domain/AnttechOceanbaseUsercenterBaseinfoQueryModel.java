@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 从主站获取用户基本信息
  *
  * @author auto create
- * @since 1.0, 2023-10-08 09:46:28
+ * @since 1.0, 2024-04-17 14:36:49
  */
 public class AnttechOceanbaseUsercenterBaseinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1324693665443419284L;
+	private static final long serialVersionUID = 8865537561223967475L;
 
 	/**
 	 * 登录态
@@ -19,11 +19,24 @@ public class AnttechOceanbaseUsercenterBaseinfoQueryModel extends AlipayObject {
 	@ApiField("authorization")
 	private String authorization;
 
+	/**
+	 * 通行证id
+	 */
+	@ApiField("passport_id")
+	private String passportId;
+
 	public String getAuthorization() {
 		return this.authorization;
 	}
 	public void setAuthorization(String authorization) {
 		this.authorization = authorization;
+	}
+
+	public String getPassportId() {
+		return this.passportId;
+	}
+	public void setPassportId(String passportId) {
+		this.passportId = passportId;
 	}
 
 }

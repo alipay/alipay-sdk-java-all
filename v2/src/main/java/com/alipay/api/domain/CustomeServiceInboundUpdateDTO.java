@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 统一收单-阿云客服呼入更新模型
  *
  * @author auto create
- * @since 1.0, 2024-03-19 16:03:32
+ * @since 1.0, 2024-04-17 17:35:04
  */
 public class CustomeServiceInboundUpdateDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7817392668843389483L;
+	private static final long serialVersionUID = 3682856559443986431L;
 
 	/**
 	 * 事件时间

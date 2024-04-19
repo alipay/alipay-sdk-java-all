@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 关联交易账单咨询
  *
  * @author auto create
- * @since 1.0, 2022-06-06 21:30:50
+ * @since 1.0, 2024-04-16 15:37:03
  */
 public class AlipayBossRelatedBillConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8131429811843884633L;
+	private static final long serialVersionUID = 3136356113895933946L;
 
 	/**
 	 * 业务发生时间,格式为 2022-02-02

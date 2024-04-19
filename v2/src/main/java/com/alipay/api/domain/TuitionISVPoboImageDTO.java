@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TuitionISVPoboImageDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1664331862337272296L;
+	private static final long serialVersionUID = 8421177932342794766L;
 
 	/**
 	 * 图片格式

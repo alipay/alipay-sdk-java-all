@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPcreditCreditriskJhjtestProdCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5386314879553894467L;
+	private static final long serialVersionUID = 8113165769974749329L;
 
 	/**
 	 * 1
@@ -26,7 +26,7 @@ public class AlipayPcreditCreditriskJhjtestProdCreateModel extends AlipayObject 
 	private String bOpenid;
 
 	/**
-	 * 1
+	 * 1111
 	 */
 	@ApiField("complex")
 	private PublicTestProd complex;
@@ -38,9 +38,10 @@ public class AlipayPcreditCreditriskJhjtestProdCreateModel extends AlipayObject 
 	private String testA;
 
 	/**
-	 * 1
+	 * 11111 当前字段已废弃(1111)
 	 */
 	@ApiField("test_b")
+	@Deprecated
 	private String testB;
 
 	public String getaOpenid() {

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaCreditContractBorrowInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5674148322342159865L;
+	private static final long serialVersionUID = 6612626149752745871L;
 
 	/** 
 	 * url：mode=0(二维码主扫模式)下，返回的url，在借还的机具上渲染为二维码后，用户使用支付宝扫一扫唤起该页面

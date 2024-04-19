@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 转化数据详情
  *
  * @author auto create
- * @since 1.0, 2024-04-01 11:24:27
+ * @since 1.0, 2024-04-18 11:00:57
  */
 public class ConversionData extends AlipayObject {
 
-	private static final long serialVersionUID = 7359449129792555643L;
+	private static final long serialVersionUID = 7398855213247876743L;
 
 	/**
 	 * 广告id
@@ -23,10 +23,14 @@ public class ConversionData extends AlipayObject {
 	private String adId;
 
 	/**
-	 * 转化流水号，用于幂等
+	 * 转化事件属性信息，用于转化事件类型相关属性规则上传。
+可支持上传属性的转化事件类型及属性规则请参考该文档：<a href='https://adpub.alipay.com/adrlark/ivdktpyh511x9r6i'>转化事件类型属性规则</a>
+	 */
+	@ApiField("attributes")
+	private ConversionProperty attributes;
 
-对于source=XLIGHT，转化流水号来自灯火的留资明细
-对于source=DATASET/OTHER，转化流水号由调用方自定义
+	/**
+	 * 转化流水号：由用户自定义，用于幂等
 	 */
 	@ApiField("biz_no")
 	private String bizNo;
@@ -38,23 +42,19 @@ public class ConversionData extends AlipayObject {
 	private String callbackExtInfo;
 
 	/**
-	 * 监测链接配置的__CID__宏参发生用户点击替换后的id值
+	 * 来自监测链接配置的__CID__宏参发生用户点击替换的值
 	 */
 	@ApiField("cid")
 	private String cid;
 
 	/**
-	 * 当source=DATASET或者OTHER时使用：
-
-转化金额，单位分
+	 * 转化金额，单位分
 	 */
 	@ApiField("conversion_amount")
 	private String conversionAmount;
 
 	/**
-	 * 当source=XLIGHT时使用:
-
-转化事件id，来自推广页关联转化事件id
+	 * 当source=COMMON_CONVERSION_ID时使用
 	 */
 	@ApiField("conversion_id")
 	private String conversionId;
@@ -66,9 +66,7 @@ public class ConversionData extends AlipayObject {
 	private Long conversionTime;
 
 	/**
-	 * 当source=XLIGHT时使用:
-
-转化事件类型
+	 * 转化事件类型数字
 	 */
 	@ApiField("conversion_type")
 	private String conversionType;
@@ -82,9 +80,10 @@ public class ConversionData extends AlipayObject {
 	/**
 	 * 当source=XLIGHT或者DATASET时使用：
 
-数据集id
+数据集id 当前字段已废弃(接口升级，该参数已不再使用，故废弃该参数，但不影响历史数据使用。)
 	 */
 	@ApiField("data_id")
+	@Deprecated
 	private String dataId;
 
 	/**
@@ -93,9 +92,10 @@ public class ConversionData extends AlipayObject {
 数据类型：
 KR_MEMBER - 客如云入会
 KR_TRADE - 客如云交易
-TB_LIVE -  淘宝直播
+TB_LIVE -  淘宝直播 当前字段已废弃(接口升级，该参数已不再使用，故废弃该参数，但不影响历史数据使用。)
 	 */
 	@ApiField("data_src_type")
+	@Deprecated
 	private String dataSrcType;
 
 	/**
@@ -105,7 +105,9 @@ TB_LIVE -  淘宝直播
 	private String groupId;
 
 	/**
-	 * XLIGHT - 灯火归因；MERCHANT-商家归因； 默认为XLIGHT
+	 * XLIGHT - 灯火归因
+MERCHANT -商家自主归因
+该字段若为空则默认为XLIGHT
 	 */
 	@ApiField("join_channel")
 	private String joinChannel;
@@ -129,9 +131,7 @@ TB_LIVE -  淘宝直播
 	private String principalTag;
 
 	/**
-	 * 当source=DATASET或者OTHER时使用：
-
-转化属性列表
+	 * 转化归因字段列表
 	 */
 	@ApiListField("property_list")
 	@ApiField("conversion_property")
@@ -139,8 +139,8 @@ TB_LIVE -  淘宝直播
 
 	/**
 	 * 来源：
-XLIGHT-灯火留资
-DATASET-数据集
+COMMON_TARGET-通用转化事件类型适用
+CALLBACK-APP推广类转化事件类型适用
 OTHER-其它
 	 */
 	@ApiField("source")
@@ -148,9 +148,10 @@ OTHER-其它
 
 	/**
 	 * 当source=OTHER时使用：
-主体id，比如品牌id
+主体id，例如品牌id 当前字段已废弃(接口升级，该参数已不再使用，故废弃该参数，但不影响历史数据使用。)
 	 */
 	@ApiField("target_id")
+	@Deprecated
 	private String targetId;
 
 	/**
@@ -160,15 +161,15 @@ OTHER-其它
 BRAND - 品牌
 STORE - 店铺
 LIVE - 直播
-等等
+等等 当前字段已废弃(接口升级，该参数已不再使用，故废弃该参数，但不影响历史数据使用。)
 	 */
 	@ApiField("target_type")
+	@Deprecated
 	private String targetType;
 
 	/**
-	 * 当source=DATASET或者OTHER时使用：
-
-转化用户唯一标识
+	 * 转化用户（发生真实转化的用户）唯一标识。
+当uuid_type=PID时，传2088UID（例：208801217938xxxx）
 	 */
 	@ApiField("uuid")
 	private String uuid;
@@ -180,10 +181,12 @@ LIVE - 直播
 	private String uuidOpenId;
 
 	/**
-	 * 当source=DATASET或者OTHER时使用：
-
-转化客户唯一标志类型：
-PID - 2088pid
+	 * 通用转化事件类型数据回传可使用：PID，表示转化用户唯一标志类型。
+自建站转化事件类型可使用：PID_ENCRYPT，自建站转化事件类型编码:445~450。
+app推广类转化事件类型可使用：
+OAID_MD5：oaid md5值
+IDFA_MD5：idfa md5值
+IP+UA:ip ua拼接值
 	 */
 	@ApiField("uuid_type")
 	private String uuidType;
@@ -193,6 +196,13 @@ PID - 2088pid
 	}
 	public void setAdId(String adId) {
 		this.adId = adId;
+	}
+
+	public ConversionProperty getAttributes() {
+		return this.attributes;
+	}
+	public void setAttributes(ConversionProperty attributes) {
+		this.attributes = attributes;
 	}
 
 	public String getBizNo() {

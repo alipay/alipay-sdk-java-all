@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class BFActivityOpenApiInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3338647948928575658L;
+	private static final long serialVersionUID = 3461831516757273861L;
 
 	/**
 	 * 活动收费配置信息

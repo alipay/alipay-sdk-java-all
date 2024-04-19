@@ -1,17 +1,27 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 本地商品sku，查询本地商品详情时使用当前sku对象进行传参
  *
  * @author auto create
- * @since 1.0, 2023-12-10 00:14:15
+ * @since 1.0, 2024-04-19 11:35:48
  */
 public class LocalItemSkuQueryVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1838683527584549164L;
+	private static final long serialVersionUID = 1778652976652626441L;
+
+	/**
+	 * 用于需要透出sku属性的场景。如线路游需要透出sku销售属性
+	 */
+	@ApiListField("attrs")
+	@ApiField("item_sku_attr_v_o")
+	private List<ItemSkuAttrVO> attrs;
 
 	/**
 	 * sku原价，分为单位
@@ -42,6 +52,13 @@ public class LocalItemSkuQueryVO extends AlipayObject {
 	 */
 	@ApiField("stock_num")
 	private Long stockNum;
+
+	public List<ItemSkuAttrVO> getAttrs() {
+		return this.attrs;
+	}
+	public void setAttrs(List<ItemSkuAttrVO> attrs) {
+		this.attrs = attrs;
+	}
 
 	public Long getOriginalPrice() {
 		return this.originalPrice;

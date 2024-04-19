@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 场景支付业务单创建
  *
  * @author auto create
- * @since 1.0, 2023-09-20 13:51:46
+ * @since 1.0, 2024-04-19 13:55:51
  */
 public class AlipayFundScenepayOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6338161589692279852L;
+	private static final long serialVersionUID = 8268242471378821719L;
 
 	/**
 	 * 指定值，由支付宝侧业务提供
@@ -49,6 +49,13 @@ mall_cell_type:商圈中本次交易发生的商铺的识别类型, 可取值：
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
+
+	/**
+	 * 支付渠道列表
+	 */
+	@ApiListField("pay_channel_info_list")
+	@ApiField("pay_channel_info_d_t_o")
+	private List<PayChannelInfoDTO> payChannelInfoList;
 
 	/**
 	 * 固定值，场景支付
@@ -102,6 +109,13 @@ mall_cell_type:商圈中本次交易发生的商铺的识别类型, 可取值：
 	}
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
+	}
+
+	public List<PayChannelInfoDTO> getPayChannelInfoList() {
+		return this.payChannelInfoList;
+	}
+	public void setPayChannelInfoList(List<PayChannelInfoDTO> payChannelInfoList) {
+		this.payChannelInfoList = payChannelInfoList;
 	}
 
 	public String getProductCode() {

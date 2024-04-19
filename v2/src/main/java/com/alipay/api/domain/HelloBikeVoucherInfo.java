@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HelloBikeVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2411682821834332818L;
+	private static final long serialVersionUID = 6825457977739188797L;
 
 	/**
 	 * 奖品id

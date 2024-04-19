@@ -11,16 +11,16 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySecurityRiskJhjtestComplexddBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8815341592166825677L;
+	private static final long serialVersionUID = 7792612881598814717L;
 
 	/**
-	 * 1111
+	 * 修改文档
 	 */
 	@ApiField("comple_a")
 	private JhjTestNew compleA;
 
 	/**
-	 * 11
+	 * 修改文档
 	 */
 	@ApiField("regress")
 	private String regress;

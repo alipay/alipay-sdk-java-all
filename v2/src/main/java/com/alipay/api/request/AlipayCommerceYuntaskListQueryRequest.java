@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.yuntask.list.query request
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 16:41:40
+ * @since 1.0, 2024-04-16 15:33:29
  */
 public class AlipayCommerceYuntaskListQueryRequest implements AlipayRequest<AlipayCommerceYuntaskListQueryResponse> {
 
