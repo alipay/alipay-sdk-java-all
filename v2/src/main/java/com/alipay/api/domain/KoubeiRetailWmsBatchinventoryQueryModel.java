@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KoubeiRetailWmsBatchinventoryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6739771566992151529L;
+	private static final long serialVersionUID = 8764336615982521129L;
 
 	/**
 	 * 货品编码列表

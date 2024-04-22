@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TenantChannelDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3644389547267339761L;
+	private static final long serialVersionUID = 3278857987264563426L;
 
 	/**
 	 * 渠道code + 唯一 + 渠道列表查询 + 数据库

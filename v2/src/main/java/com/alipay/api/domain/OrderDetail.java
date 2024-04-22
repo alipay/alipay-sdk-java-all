@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 子订单明细
  *
  * @author auto create
- * @since 1.0, 2024-04-16 17:50:39
+ * @since 1.0, 2024-04-19 16:54:50
  */
 public class OrderDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6393765378381641591L;
+	private static final long serialVersionUID = 7822596981135969723L;
 
 	/**
 	 * 订单明细的应用唯一标识（16位纯数字），指商家的app_id。
@@ -27,6 +27,12 @@ public class OrderDetail extends AlipayObject {
 	 */
 	@ApiField("body")
 	private String body;
+
+	/**
+	 * 业务信息，由商户传入
+	 */
+	@ApiField("business_params")
+	private BusinessParams businessParams;
 
 	/**
 	 * 业务扩展参数
@@ -59,6 +65,12 @@ public class OrderDetail extends AlipayObject {
 	 */
 	@ApiField("product_code")
 	private String productCode;
+
+	/**
+	 * 分账信息
+	 */
+	@ApiField("royalty_info")
+	private RoyaltyInfo royaltyInfo;
 
 	/**
 	 * 卖家支付宝用户ID。
@@ -119,6 +131,13 @@ public class OrderDetail extends AlipayObject {
 		this.body = body;
 	}
 
+	public BusinessParams getBusinessParams() {
+		return this.businessParams;
+	}
+	public void setBusinessParams(BusinessParams businessParams) {
+		this.businessParams = businessParams;
+	}
+
 	public ExtendParams getExtendParams() {
 		return this.extendParams;
 	}
@@ -152,6 +171,13 @@ public class OrderDetail extends AlipayObject {
 	}
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
+	}
+
+	public RoyaltyInfo getRoyaltyInfo() {
+		return this.royaltyInfo;
+	}
+	public void setRoyaltyInfo(RoyaltyInfo royaltyInfo) {
+		this.royaltyInfo = royaltyInfo;
 	}
 
 	public String getSellerId() {

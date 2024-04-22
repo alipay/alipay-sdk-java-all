@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 医疗药品商品修改接口
  *
  * @author auto create
- * @since 1.0, 2024-04-17 11:06:08
+ * @since 1.0, 2024-04-20 13:11:55
  */
 public class AlipayCommerceMedicalMedicineItemModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1391673175834931723L;
+	private static final long serialVersionUID = 2525624551135323591L;
 
 	/**
 	 * 指商户创建门店后支付宝生成的门店ID

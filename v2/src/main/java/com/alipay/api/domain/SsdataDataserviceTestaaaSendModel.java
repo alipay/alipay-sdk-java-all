@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * dwdheuidh
  *
  * @author auto create
- * @since 1.0, 2023-06-14 18:24:59
+ * @since 1.0, 2024-04-19 16:46:21
  */
 public class SsdataDataserviceTestaaaSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8682689883796257695L;
+	private static final long serialVersionUID = 2816875887947186363L;
+
+	/**
+	 * desc111
+	 */
+	@ApiField("body_a")
+	private DumTestFFAA bodyA;
 
 	/**
 	 * 座机号码
@@ -24,6 +30,13 @@ public class SsdataDataserviceTestaaaSendModel extends AlipayObject {
 	 */
 	@ApiField("test_2")
 	private String test2;
+
+	public DumTestFFAA getBodyA() {
+		return this.bodyA;
+	}
+	public void setBodyA(DumTestFFAA bodyA) {
+		this.bodyA = bodyA;
+	}
 
 	public String getTes1() {
 		return this.tes1;

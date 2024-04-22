@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.medicine.item.modify response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-17 11:07:01
+ * @since 1.0, 2024-04-20 13:11:55
  */
 public class AlipayCommerceMedicalMedicineItemModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4246865548683799885L;
+	private static final long serialVersionUID = 1631659677761337594L;
 
 	/** 
 	 * 支付宝平台侧商品ID，是支付宝平台侧商品的唯一标识

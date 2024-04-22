@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序本地商品订单对账明细
  *
  * @author auto create
- * @since 1.0, 2023-08-07 11:38:54
+ * @since 1.0, 2024-04-19 19:39:14
  */
 public class SelfItemOrderBillDetailResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 7136762724457747172L;
+	private static final long serialVersionUID = 2496594339398729569L;
 
 	/**
 	 * 订单凭证号
@@ -64,6 +64,12 @@ public class SelfItemOrderBillDetailResponse extends AlipayObject {
 	private String orderScene;
 
 	/**
+	 * 支付手续费，单位：元，精确到小数点后两位
+	 */
+	@ApiField("pay_commission")
+	private String payCommission;
+
+	/**
 	 * 当前订单支付时优惠的金额，单位分
 	 */
 	@ApiField("pay_discounted_price")
@@ -98,6 +104,12 @@ public class SelfItemOrderBillDetailResponse extends AlipayObject {
 	 */
 	@ApiField("refund_fee")
 	private String refundFee;
+
+	/**
+	 * 退支付手续费，单位：元，精确到小数点后两位
+	 */
+	@ApiField("refund_pay_commission")
+	private String refundPayCommission;
 
 	/**
 	 * 商家自有门店名称
@@ -216,6 +228,13 @@ public class SelfItemOrderBillDetailResponse extends AlipayObject {
 		this.orderScene = orderScene;
 	}
 
+	public String getPayCommission() {
+		return this.payCommission;
+	}
+	public void setPayCommission(String payCommission) {
+		this.payCommission = payCommission;
+	}
+
 	public String getPayDiscountedPrice() {
 		return this.payDiscountedPrice;
 	}
@@ -256,6 +275,13 @@ public class SelfItemOrderBillDetailResponse extends AlipayObject {
 	}
 	public void setRefundFee(String refundFee) {
 		this.refundFee = refundFee;
+	}
+
+	public String getRefundPayCommission() {
+		return this.refundPayCommission;
+	}
+	public void setRefundPayCommission(String refundPayCommission) {
+		this.refundPayCommission = refundPayCommission;
 	}
 
 	public String getSelfShopName() {

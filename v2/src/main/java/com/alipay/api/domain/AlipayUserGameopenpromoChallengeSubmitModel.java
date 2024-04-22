@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserGameopenpromoChallengeSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7762834418485755168L;
+	private static final long serialVersionUID = 7287114145912398976L;
 
 	/**
 	 * 用户维度的参与挑战业务号，发奖会以此业务号做幂等

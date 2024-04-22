@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 回收下单产品选项
  *
  * @author auto create
- * @since 1.0, 2024-04-16 17:24:27
+ * @since 1.0, 2024-04-19 17:29:41
  */
 public class ProductOption extends AlipayObject {
 
-	private static final long serialVersionUID = 6326645379149663519L;
+	private static final long serialVersionUID = 6442565329883287324L;
 
 	/**
 	 * 产品选项区间最大数量

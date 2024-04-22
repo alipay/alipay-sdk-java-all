@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantPayforprivilegeCardbinactivityCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6491223534716475328L;
+	private static final long serialVersionUID = 3186235534349722977L;
 
 	/**
 	 * 银行的标准缩写，大写。例如工行为ICBC、农行为ABC

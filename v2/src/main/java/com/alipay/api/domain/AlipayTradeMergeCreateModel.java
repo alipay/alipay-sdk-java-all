@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 统一收单合并支付下单
  *
  * @author auto create
- * @since 1.0, 2023-10-09 10:45:19
+ * @since 1.0, 2024-04-19 16:54:50
  */
 public class AlipayTradeMergeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5644167839354384189L;
+	private static final long serialVersionUID = 4657243378546653195L;
 
 	/**
 	 * 2088102146225135	买家支付宝用户ID。 2088开头的16位纯数字，小程序场景下获取用户ID请参考：<a href="https://opendocs.alipay.com/mini/introduce/authcode" target="_blank">用户授权</a>。注：交易的买家与卖家不能相同。

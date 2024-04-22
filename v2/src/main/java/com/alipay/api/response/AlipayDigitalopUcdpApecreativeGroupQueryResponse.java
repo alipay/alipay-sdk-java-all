@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDigitalopUcdpApecreativeGroupQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6582672886643112534L;
+	private static final long serialVersionUID = 6457239157762916472L;
 
 	/** 
 	 * ape创意组list

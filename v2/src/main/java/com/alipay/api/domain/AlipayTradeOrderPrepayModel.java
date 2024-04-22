@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayTradeOrderPrepayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2723625727879994682L;
+	private static final long serialVersionUID = 8479551294137695995L;
 
 	/**
 	 * 订单附加信息。 如果请求时传递了该参数，将在异步通知、对账单中原样返回，同时会在商户和用户的pc账单详情中作为交易描述展示

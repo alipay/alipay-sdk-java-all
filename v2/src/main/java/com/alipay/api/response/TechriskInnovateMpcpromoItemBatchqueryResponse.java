@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class TechriskInnovateMpcpromoItemBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7845595894372922653L;
+	private static final long serialVersionUID = 1331172619278161841L;
 
 	/** 
 	 * 商品信息

@@ -7,26 +7,26 @@ import com.alipay.api.internal.mapping.ApiField;
  * 测试openpai的openid自动补偿
  *
  * @author auto create
- * @since 1.0, 2023-01-09 21:55:20
+ * @since 1.0, 2024-04-19 16:32:02
  */
 public class AlipayOpenOperationOpenbizmockTestQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2259287439944755516L;
+	private static final long serialVersionUID = 2298671412135553991L;
 
 	/**
-	 * test
+	 * 哈哈
 	 */
 	@ApiField("fuza")
 	private TestDemoWzw fuza;
 
 	/**
-	 * test
+	 * 哈哈
 	 */
 	@ApiField("out_open_id")
 	private String outOpenId;
 
 	/**
-	 * test
+	 * 哈哈
 	 */
 	@ApiField("u_test")
 	private String uTest;

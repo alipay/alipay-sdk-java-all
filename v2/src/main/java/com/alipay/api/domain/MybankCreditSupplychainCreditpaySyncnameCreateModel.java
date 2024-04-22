@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankCreditSupplychainCreditpaySyncnameCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6153823857532475328L;
+	private static final long serialVersionUID = 4768642374512239523L;
 
 	/**
 	 * 报名时间/取消时间

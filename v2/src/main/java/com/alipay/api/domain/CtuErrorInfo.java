@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CtuErrorInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2326796173925383615L;
+	private static final long serialVersionUID = 1479128263779851312L;
 
 	/**
 	 * ctu事件发送校验结果：

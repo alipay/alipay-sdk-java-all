@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PaginationCommGroup extends AlipayObject {
 
-	private static final long serialVersionUID = 7881187962389948599L;
+	private static final long serialVersionUID = 1767718478882729238L;
 
 	/**
 	 * 出参列表
