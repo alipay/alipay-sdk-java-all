@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗商业化会员权益资格查询
  *
  * @author auto create
- * @since 1.0, 2023-10-17 11:43:29
+ * @since 1.0, 2024-04-23 14:50:14
  */
 public class AlipayCommerceMedicalCommercialMemberQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4834783841827952948L;
+	private static final long serialVersionUID = 1485874154331748538L;
 
 	/**
 	 * 蚂蚁统一会员ID
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/**
+	 * 会员卡订单id
+	 */
+	@ApiField("order_id")
+	private String orderId;
 
 	/**
 	 * out_product_id为商户侧唯一权益id，和用户的业务子单一一对应
@@ -36,6 +42,13 @@ public class AlipayCommerceMedicalCommercialMemberQueryModel extends AlipayObjec
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public String getOrderId() {
+		return this.orderId;
+	}
+	public void setOrderId(String orderId) {
+		this.orderId = orderId;
 	}
 
 	public String getOutProductId() {

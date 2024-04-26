@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签约地址
  *
  * @author auto create
- * @since 1.0, 2021-04-22 14:22:47
+ * @since 1.0, 2024-04-25 17:13:45
  */
 public class SignAddressInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4711673351674449315L;
+	private static final long serialVersionUID = 5189464742466926397L;
 
 	/**
 	 * 城市编码。请按照https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx 表格中内容填写。 （参考资料： http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/）

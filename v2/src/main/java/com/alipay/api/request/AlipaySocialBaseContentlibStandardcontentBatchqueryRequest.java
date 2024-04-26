@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.base.contentlib.standardcontent.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2024-01-31 11:18:07
+ * @since 1.0, 2024-04-23 21:50:59
  */
 public class AlipaySocialBaseContentlibStandardcontentBatchqueryRequest implements AlipayRequest<AlipaySocialBaseContentlibStandardcontentBatchqueryResponse> {
 

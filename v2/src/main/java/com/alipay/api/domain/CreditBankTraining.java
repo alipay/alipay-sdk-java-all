@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CreditBankTraining extends AlipayObject {
 
-	private static final long serialVersionUID = 3656956672998364189L;
+	private static final long serialVersionUID = 8767912281877571172L;
 
 	/**
 	 * 获取时间，格式yyyy-mm-dd HH:mm:ss

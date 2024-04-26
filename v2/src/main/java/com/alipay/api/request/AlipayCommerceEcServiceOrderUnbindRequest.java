@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.ec.service.order.unbind request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 02:51:50
+ * @since 1.0, 2024-04-24 18:08:52
  */
 public class AlipayCommerceEcServiceOrderUnbindRequest implements AlipayRequest<AlipayCommerceEcServiceOrderUnbindResponse> {
 

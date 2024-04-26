@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.localitem.calendarprice.save response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-19 16:27:01
+ * @since 1.0, 2024-04-23 21:50:59
  */
 public class AlipayOpenAppLocalitemCalendarpriceSaveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2333869853278975533L;
+	private static final long serialVersionUID = 8183821624338949933L;
 
 	
 

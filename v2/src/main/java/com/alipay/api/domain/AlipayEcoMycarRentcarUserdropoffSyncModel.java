@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoMycarRentcarUserdropoffSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2266768987816636698L;
+	private static final long serialVersionUID = 8397355487725943256L;
 
 	/**
 	 * 实际还车时间

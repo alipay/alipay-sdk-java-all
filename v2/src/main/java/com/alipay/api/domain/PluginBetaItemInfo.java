@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 邀测结果列表
  *
  * @author auto create
- * @since 1.0, 2021-05-18 11:09:08
+ * @since 1.0, 2024-04-23 10:24:19
  */
 public class PluginBetaItemInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1154368728749635897L;
+	private static final long serialVersionUID = 5289939526574433753L;
 
 	/**
 	 * 小程序名称

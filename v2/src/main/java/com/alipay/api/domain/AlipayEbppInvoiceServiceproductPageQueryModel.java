@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据费用类型子类型分页查询当前可用服务列表 
  *
  * @author auto create
- * @since 1.0, 2023-03-28 19:28:37
+ * @since 1.0, 2024-04-24 17:47:42
  */
 public class AlipayEbppInvoiceServiceproductPageQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5177564619757286164L;
+	private static final long serialVersionUID = 8594266842527666419L;
 
 	/**
 	 * 页码

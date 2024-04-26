@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用购机商品信息
  *
  * @author auto create
- * @since 1.0, 2024-01-29 11:21:40
+ * @since 1.0, 2024-04-24 14:14:16
  */
 public class CreditPhoneInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7355812243524183374L;
+	private static final long serialVersionUID = 8266247587345269689L;
 
 	/**
 	 * 单位是元。套餐每月保底金额

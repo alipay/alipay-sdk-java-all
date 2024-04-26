@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业缴费ISV缴费信息DTO
  *
  * @author auto create
- * @since 1.0, 2023-05-06 16:04:13
+ * @since 1.0, 2024-04-22 16:51:16
  */
 public class IndrISVPaymentInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3136198575295666764L;
+	private static final long serialVersionUID = 8787986931664536176L;
 
 	/**
 	 * 缴费金额,对应币种的最小单位

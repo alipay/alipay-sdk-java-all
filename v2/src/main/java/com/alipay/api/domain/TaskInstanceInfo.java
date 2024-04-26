@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 导购员查询任务实例详情
  *
  * @author auto create
- * @since 1.0, 2022-10-11 17:39:59
+ * @since 1.0, 2024-04-25 14:21:51
  */
 public class TaskInstanceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2473965936383268483L;
+	private static final long serialVersionUID = 4819659432617773397L;
 
 	/**
 	 * 当前进度
@@ -67,6 +67,12 @@ FINISHED  任务完成
 	private Long targetIndicator;
 
 	/**
+	 * 新人任务
+	 */
+	@ApiField("task_desc")
+	private String taskDesc;
+
+	/**
 	 * 任务结束时间
 	 */
 	@ApiField("task_end_time")
@@ -89,6 +95,12 @@ FINISHED  任务完成
 	 */
 	@ApiField("task_name")
 	private String taskName;
+
+	/**
+	 * 任务规则图片
+	 */
+	@ApiField("task_rule_pic")
+	private String taskRulePic;
 
 	/**
 	 * 任务开始时间
@@ -176,6 +188,13 @@ FINISHED  任务完成
 		this.targetIndicator = targetIndicator;
 	}
 
+	public String getTaskDesc() {
+		return this.taskDesc;
+	}
+	public void setTaskDesc(String taskDesc) {
+		this.taskDesc = taskDesc;
+	}
+
 	public Date getTaskEndTime() {
 		return this.taskEndTime;
 	}
@@ -202,6 +221,13 @@ FINISHED  任务完成
 	}
 	public void setTaskName(String taskName) {
 		this.taskName = taskName;
+	}
+
+	public String getTaskRulePic() {
+		return this.taskRulePic;
+	}
+	public void setTaskRulePic(String taskRulePic) {
+		this.taskRulePic = taskRulePic;
 	}
 
 	public Date getTaskStartTime() {

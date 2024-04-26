@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 交易组件业务单创建
  *
  * @author auto create
- * @since 1.0, 2024-04-08 21:44:16
+ * @since 1.0, 2024-04-22 22:25:20
  */
 public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3466931699364919782L;
+	private static final long serialVersionUID = 2444825625224586397L;
 
 	/**
 	 * 订单收货地址
@@ -120,6 +123,13 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 	 */
 	@ApiField("source_id")
 	private String sourceId;
+
+	/**
+	 * 阶段付款计划，租赁场景或分期代扣场景，该字段必填
+	 */
+	@ApiListField("stage_pay_plans")
+	@ApiField("stage_pay_plan_d_t_o")
+	private List<StagePayPlanDTO> stagePayPlans;
 
 	/**
 	 * 二级商户信息。 
@@ -265,6 +275,13 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 	}
 	public void setSourceId(String sourceId) {
 		this.sourceId = sourceId;
+	}
+
+	public List<StagePayPlanDTO> getStagePayPlans() {
+		return this.stagePayPlans;
+	}
+	public void setStagePayPlans(List<StagePayPlanDTO> stagePayPlans) {
+		this.stagePayPlans = stagePayPlans;
 	}
 
 	public SubMerchantDTO getSubMerchant() {

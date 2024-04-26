@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceAcommunicationCreditphonePeriodorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8844472664996744948L;
+	private static final long serialVersionUID = 5662943365633519545L;
 
 	/** 
 	 * 当期支付宝订单号

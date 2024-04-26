@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.item.category.consult response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-07 10:42:17
+ * @since 1.0, 2024-04-23 21:51:00
  */
 public class AlipayOpenAppItemCategoryConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4792555337738352619L;
+	private static final long serialVersionUID = 3673742814779527385L;
 
 	/** 
 	 * 类目不可用错误码

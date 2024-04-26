@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.search.box.online response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-19 15:23:42
+ * @since 1.0, 2024-04-23 21:50:59
  */
 public class AlipayOpenSearchBoxOnlineResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7316843811588828253L;
+	private static final long serialVersionUID = 7798966794664523972L;
 
 	
 

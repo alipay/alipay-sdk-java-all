@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 申请转账业务回单
  *
  * @author auto create
- * @since 1.0, 2024-03-26 17:41:17
+ * @since 1.0, 2024-04-26 09:55:13
  */
 public class AlipayCommerceEcTransReceiptApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8214987819484219944L;
+	private static final long serialVersionUID = 3539987588975553798L;
 
 	/**
 	 * 企业id

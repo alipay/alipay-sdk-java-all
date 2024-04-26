@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataDataserviceAntdataassetsClearnodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3334256553469793232L;
+	private static final long serialVersionUID = 7586613289375331266L;
 
 	/**
 	 * ODPS表的guid

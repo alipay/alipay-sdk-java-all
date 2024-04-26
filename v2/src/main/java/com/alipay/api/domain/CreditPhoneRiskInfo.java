@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用购机风控参数
  *
  * @author auto create
- * @since 1.0, 2024-02-04 15:36:44
+ * @since 1.0, 2024-04-24 14:14:16
  */
 public class CreditPhoneRiskInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5164326745177745253L;
+	private static final long serialVersionUID = 5343641799319876935L;
 
 	/**
 	 * 分公司
@@ -68,6 +68,12 @@ public class CreditPhoneRiskInfo extends AlipayObject {
 	 */
 	@ApiField("service_accept_time")
 	private Date serviceAcceptTime;
+
+	/**
+	 * 子机构支付宝登录号
+	 */
+	@ApiField("sub_alipay_account")
+	private String subAlipayAccount;
 
 	/**
 	 * 门店支付宝账号
@@ -142,6 +148,13 @@ public class CreditPhoneRiskInfo extends AlipayObject {
 	}
 	public void setServiceAcceptTime(Date serviceAcceptTime) {
 		this.serviceAcceptTime = serviceAcceptTime;
+	}
+
+	public String getSubAlipayAccount() {
+		return this.subAlipayAccount;
+	}
+	public void setSubAlipayAccount(String subAlipayAccount) {
+		this.subAlipayAccount = subAlipayAccount;
 	}
 
 	public String getSubPid() {

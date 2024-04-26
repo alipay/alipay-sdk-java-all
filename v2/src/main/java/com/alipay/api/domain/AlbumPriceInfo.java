@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 专辑价格信息
  *
  * @author auto create
- * @since 1.0, 2023-04-12 20:10:14
+ * @since 1.0, 2024-04-25 15:16:51
  */
 public class AlbumPriceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7581993575265522945L;
+	private static final long serialVersionUID = 8276796582852989735L;
 
 	/**
 	 * 已废弃。营销活动实际价格填写在promo_info中的discount_price

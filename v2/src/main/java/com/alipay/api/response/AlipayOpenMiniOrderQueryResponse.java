@@ -1,6 +1,8 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.AddressInfoVO;
 import com.alipay.api.domain.BookingInfoDTO;
 import com.alipay.api.domain.ContactInfoVO;
@@ -8,6 +10,7 @@ import com.alipay.api.domain.DeliveryDetailInfoVO;
 import com.alipay.api.domain.OrderDetailInfoVO;
 import com.alipay.api.domain.RefundInfoVO;
 import com.alipay.api.domain.ShopInfoDTO;
+import com.alipay.api.domain.StagePayPlanVO;
 
 import com.alipay.api.AlipayResponse;
 
@@ -15,11 +18,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-19 15:31:59
+ * @since 1.0, 2024-04-23 21:51:00
  */
 public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2579164138119891876L;
+	private static final long serialVersionUID = 6145727347189711424L;
 
 	/** 
 	 * 收货地址
@@ -116,6 +119,13 @@ public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("shop_info")
 	private ShopInfoDTO shopInfo;
+
+	/** 
+	 * 阶段付款计划列表
+	 */
+	@ApiListField("stage_pay_plans")
+	@ApiField("stage_pay_plan_v_o")
+	private List<StagePayPlanVO> stagePayPlans;
 
 	/** 
 	 * 订单状态
@@ -245,6 +255,13 @@ public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 	}
 	public ShopInfoDTO getShopInfo( ) {
 		return this.shopInfo;
+	}
+
+	public void setStagePayPlans(List<StagePayPlanVO> stagePayPlans) {
+		this.stagePayPlans = stagePayPlans;
+	}
+	public List<StagePayPlanVO> getStagePayPlans( ) {
+		return this.stagePayPlans;
 	}
 
 	public void setStatus(String status) {

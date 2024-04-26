@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PunishedInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7849947171465172364L;
+	private static final long serialVersionUID = 8727371977697479572L;
 
 	/**
 	 * 身份证号或工商注册号

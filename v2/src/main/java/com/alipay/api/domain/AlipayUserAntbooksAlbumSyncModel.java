@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 阅读听书频道专辑信息同步接口
  *
  * @author auto create
- * @since 1.0, 2023-05-15 21:18:52
+ * @since 1.0, 2024-04-25 15:16:51
  */
 public class AlipayUserAntbooksAlbumSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2338416998294735234L;
+	private static final long serialVersionUID = 2775418175994832152L;
 
 	/**
 	 * 专辑整体时长，单位秒
@@ -40,6 +40,13 @@ public class AlipayUserAntbooksAlbumSyncModel extends AlipayObject {
 	 */
 	@ApiField("album_id")
 	private String albumId;
+
+	/**
+	 * 专辑是否可对用户展示商业化广告，默认不可展示。
+true：允许展示；false：不允许展示；
+	 */
+	@ApiField("album_show_ad")
+	private Boolean albumShowAd;
 
 	/**
 	 * 专辑主播人，有则必填。
@@ -200,6 +207,13 @@ DELETE：专辑下架
 	}
 	public void setAlbumId(String albumId) {
 		this.albumId = albumId;
+	}
+
+	public Boolean getAlbumShowAd() {
+		return this.albumShowAd;
+	}
+	public void setAlbumShowAd(Boolean albumShowAd) {
+		this.albumShowAd = albumShowAd;
 	}
 
 	public String getAnnouncer() {

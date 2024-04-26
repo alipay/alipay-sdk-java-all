@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundAccountThaworfreezeModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5482651531553121695L;
+	private static final long serialVersionUID = 7597588547214499915L;
 
 	/**
 	 * 场景码

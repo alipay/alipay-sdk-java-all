@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BakingItemOperationData extends AlipayObject {
 
-	private static final long serialVersionUID = 4418447793472641772L;
+	private static final long serialVersionUID = 8456569155885334695L;
 
 	/**
 	 * 累计库存

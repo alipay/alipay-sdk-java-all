@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundMbpcardGencardCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2527968359469443555L;
+	private static final long serialVersionUID = 1492173578857512832L;
 
 	/**
 	 * 购卡交易的业务单号

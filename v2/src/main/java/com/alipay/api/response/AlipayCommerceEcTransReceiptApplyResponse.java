@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.trans.receipt.apply response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-27 09:41:59
+ * @since 1.0, 2024-04-26 09:55:13
  */
 public class AlipayCommerceEcTransReceiptApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1525878268345927828L;
+	private static final long serialVersionUID = 3842984654182581663L;
 
 	/** 
 	 * 文件申请号file_id信息。使用file_id可以查询处理状态，有效期2天

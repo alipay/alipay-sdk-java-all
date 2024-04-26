@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.ec.trans.receipt.apply request
  * 
  * @author auto create
- * @since 1.0, 2024-03-27 09:41:59
+ * @since 1.0, 2024-04-26 09:55:13
  */
 public class AlipayCommerceEcTransReceiptApplyRequest implements AlipayRequest<AlipayCommerceEcTransReceiptApplyResponse> {
 

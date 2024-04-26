@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 投放创建
  *
  * @author auto create
- * @since 1.0, 2024-04-16 14:17:31
+ * @since 1.0, 2024-04-25 14:14:37
  */
 public class AlipayMarketingActivityDeliveryCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2862344258228936347L;
+	private static final long serialVersionUID = 1531156612334885911L;
 
 	/**
 	 * 服务商代商户创建投放必选。
@@ -55,6 +55,12 @@ bussinessType设置为ISV_FOR_MERCHANT。
 	 */
 	@ApiField("delivery_target_rule")
 	private DeliveryTargetRule deliveryTargetRule;
+
+	/**
+	 * 商品卖货推广创建幂等号，用作幂等控制。 幂等作用：请求返回与上一次相同的结果。 外部接入方需保证幂等号唯一。
+	 */
+	@ApiField("idem_no")
+	private String idemNo;
 
 	/**
 	 * 商户接入模式
@@ -108,6 +114,13 @@ bussinessType设置为ISV_FOR_MERCHANT。
 	}
 	public void setDeliveryTargetRule(DeliveryTargetRule deliveryTargetRule) {
 		this.deliveryTargetRule = deliveryTargetRule;
+	}
+
+	public String getIdemNo() {
+		return this.idemNo;
+	}
+	public void setIdemNo(String idemNo) {
+		this.idemNo = idemNo;
 	}
 
 	public String getMerchantAccessMode() {

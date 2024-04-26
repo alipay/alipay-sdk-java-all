@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户名称模型
  *
  * @author auto create
- * @since 1.0, 2021-10-08 11:24:47
+ * @since 1.0, 2024-04-22 10:38:24
  */
 public class TuitionUserName extends AlipayObject {
 
-	private static final long serialVersionUID = 7762699252342731731L;
+	private static final long serialVersionUID = 3273593447175818929L;
 
 	/**
 	 * 姓名姓氏

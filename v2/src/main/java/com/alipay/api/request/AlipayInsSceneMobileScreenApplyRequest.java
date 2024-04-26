@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.mobile.screen.apply request
  * 
  * @author auto create
- * @since 1.0, 2024-04-01 22:49:57
+ * @since 1.0, 2024-04-24 10:32:06
  */
 public class AlipayInsSceneMobileScreenApplyRequest implements AlipayRequest<AlipayInsSceneMobileScreenApplyResponse> {
 

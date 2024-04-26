@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.card.activateform.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-10 16:31:32
+ * @since 1.0, 2024-04-23 21:51:00
  */
 public class AlipayMarketingCardActivateformQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1777197553952169811L;
+	private static final long serialVersionUID = 7514281431544249547L;
 
 	/** 
 	 * 表单提交信息各个字段的值JSON数组

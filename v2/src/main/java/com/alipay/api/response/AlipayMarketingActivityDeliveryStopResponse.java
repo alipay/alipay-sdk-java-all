@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.delivery.stop response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-03 12:17:05
+ * @since 1.0, 2024-04-24 16:42:07
  */
 public class AlipayMarketingActivityDeliveryStopResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6524245292314461414L;
+	private static final long serialVersionUID = 8799169816158637444L;
 
 	/** 
 	 * 推广计划id。

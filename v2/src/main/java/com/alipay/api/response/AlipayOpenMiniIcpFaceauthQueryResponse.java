@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.icp.faceauth.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-31 11:51:56
+ * @since 1.0, 2024-04-23 21:50:59
  */
 public class AlipayOpenMiniIcpFaceauthQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4256663319581127998L;
+	private static final long serialVersionUID = 1717867644965188631L;
 
 	/** 
 	 * 人脸核验结果描述，当certify_result_status为FAIL时展示失败的原因

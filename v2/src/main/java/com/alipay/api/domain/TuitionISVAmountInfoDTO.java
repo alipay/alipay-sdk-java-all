@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 留学缴费-金额信息
  *
  * @author auto create
- * @since 1.0, 2021-08-16 15:52:26
+ * @since 1.0, 2024-04-22 10:39:14
  */
 public class TuitionISVAmountInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3534675953351255429L;
+	private static final long serialVersionUID = 8837264737683876114L;
 
 	/**
 	 * 费用明细

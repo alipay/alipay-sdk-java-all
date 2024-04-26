@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 任务模版信息
  *
  * @author auto create
- * @since 1.0, 2022-12-13 15:30:35
+ * @since 1.0, 2024-04-25 14:21:50
  */
 public class YunTaskTemplateInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2831484425751933112L;
+	private static final long serialVersionUID = 7632572318679639376L;
 
 	/**
 	 * 小程序id
@@ -134,6 +134,12 @@ ALGOLADDER 算法阶梯
 	 */
 	@ApiField("task_name")
 	private String taskName;
+
+	/**
+	 * 任务规则图片
+	 */
+	@ApiField("task_rule_pic")
+	private String taskRulePic;
 
 	/**
 	 * 开始时间
@@ -277,6 +283,13 @@ ALGOLADDER 算法阶梯
 	}
 	public void setTaskName(String taskName) {
 		this.taskName = taskName;
+	}
+
+	public String getTaskRulePic() {
+		return this.taskRulePic;
+	}
+	public void setTaskRulePic(String taskRulePic) {
+		this.taskRulePic = taskRulePic;
 	}
 
 	public Date getTaskStartTime() {

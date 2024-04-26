@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金专户开通
  *
  * @author auto create
- * @since 1.0, 2024-03-14 17:10:15
+ * @since 1.0, 2024-04-26 09:55:46
  */
 public class AlipayCommerceEcTransAccountCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5463111342456637499L;
+	private static final long serialVersionUID = 4678567686799663462L;
 
 	/**
 	 * 账户类型

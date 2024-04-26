@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDigitalmgmtHrcominsuInsuclaimAttachmentQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3896314614987661886L;
+	private static final long serialVersionUID = 6565735297517383929L;
 
 	/**
 	 * attachment_url+不唯一+供应商获取理赔附件+枚举值(无)+员工申请理赔+特殊说明(无)

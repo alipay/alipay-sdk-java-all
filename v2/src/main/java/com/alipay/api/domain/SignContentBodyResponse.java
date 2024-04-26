@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 加签返回内容
  *
  * @author auto create
- * @since 1.0, 2022-03-07 19:04:10
+ * @since 1.0, 2024-04-23 10:25:37
  */
 public class SignContentBodyResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 7768225829299868735L;
+	private static final long serialVersionUID = 6346437862642564716L;
 
 	/**
 	 * 钱包客户端签名rsa内容

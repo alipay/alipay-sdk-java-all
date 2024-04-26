@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 留学缴费-订单状态模型
  *
  * @author auto create
- * @since 1.0, 2021-08-16 15:52:31
+ * @since 1.0, 2024-04-22 10:39:11
  */
 public class TuitionISVOrderStatusDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7229116195281921358L;
+	private static final long serialVersionUID = 3325852749556834849L;
 
 	/**
 	 * 错误码

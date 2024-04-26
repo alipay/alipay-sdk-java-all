@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZolozAuthenticationCustomerFtokenConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2842488881968248751L;
+	private static final long serialVersionUID = 6885879546991195666L;
 
 	/** 
 	 * 返回码

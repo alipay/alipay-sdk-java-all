@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 银行账户明细
  *
  * @author auto create
- * @since 1.0, 2021-08-16 15:53:46
+ * @since 1.0, 2024-04-22 10:38:19
  */
 public class TuitionBankAccountDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6124617133685759522L;
+	private static final long serialVersionUID = 6443657583262915646L;
 
 	/**
 	 * 银行收款账号

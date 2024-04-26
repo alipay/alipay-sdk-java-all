@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.service.order.unbind response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 02:51:50
+ * @since 1.0, 2024-04-24 18:08:52
  */
 public class AlipayCommerceEcServiceOrderUnbindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2182429859476563589L;
+	private static final long serialVersionUID = 7436324376182319734L;
 
 	/** 
 	 * 在需要解约的情况下，返回取消服务选择需要解约的地址

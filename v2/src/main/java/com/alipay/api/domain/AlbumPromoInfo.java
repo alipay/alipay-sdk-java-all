@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 专辑营销信息
  *
  * @author auto create
- * @since 1.0, 2023-03-28 14:24:47
+ * @since 1.0, 2024-04-25 15:16:51
  */
 public class AlbumPromoInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6552123681435328957L;
+	private static final long serialVersionUID = 4711421227482867748L;
 
 	/**
 	 * 营销活动折扣价（即到手价），如果有营销活动且promo_type="DISCOUNT"时，该字段不可为空。

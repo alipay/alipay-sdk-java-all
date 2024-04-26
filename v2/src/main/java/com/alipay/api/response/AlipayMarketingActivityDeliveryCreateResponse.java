@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.delivery.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-19 14:55:58
+ * @since 1.0, 2024-04-25 14:17:01
  */
 public class AlipayMarketingActivityDeliveryCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6633521746281174966L;
+	private static final long serialVersionUID = 5199437265312958362L;
 
 	/** 
 	 * 预览链接。
@@ -40,6 +40,13 @@ public class AlipayMarketingActivityDeliveryCreateResponse extends AlipayRespons
 	@ApiListField("error_delivery_config_list")
 	@ApiField("error_delivery_config")
 	private List<ErrorDeliveryConfig> errorDeliveryConfigList;
+
+	/** 
+	 * 外部业务单号，用作该请求唯一标识。 
+创建推广计划的结果，会通过异步消息方式通知，消息体包含外部业务单号，来判断该请求创建结果。
+	 */
+	@ApiField("out_biz_no")
+	private String outBizNo;
 
 	/** 
 	 * [已废弃]
@@ -70,6 +77,13 @@ public class AlipayMarketingActivityDeliveryCreateResponse extends AlipayRespons
 	}
 	public List<ErrorDeliveryConfig> getErrorDeliveryConfigList( ) {
 		return this.errorDeliveryConfigList;
+	}
+
+	public void setOutBizNo(String outBizNo) {
+		this.outBizNo = outBizNo;
+	}
+	public String getOutBizNo( ) {
+		return this.outBizNo;
 	}
 
 	public void setSuccessDeliveryConfigList(List<SuccessDeliveryConfig> successDeliveryConfigList) {

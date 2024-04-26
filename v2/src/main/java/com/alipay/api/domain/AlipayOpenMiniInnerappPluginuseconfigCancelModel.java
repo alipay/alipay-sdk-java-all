@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 撤销插件端版本配置灰度
  *
  * @author auto create
- * @since 1.0, 2021-09-27 14:32:15
+ * @since 1.0, 2024-04-23 10:21:29
  */
 public class AlipayOpenMiniInnerappPluginuseconfigCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6773634535925472592L;
+	private static final long serialVersionUID = 3337388547134277321L;
 
 	/**
 	 * 来源

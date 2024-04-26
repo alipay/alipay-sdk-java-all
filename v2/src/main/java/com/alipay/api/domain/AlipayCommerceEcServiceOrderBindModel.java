@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 企业码服务选择绑定
  *
  * @author auto create
- * @since 1.0, 2023-03-28 16:54:22
+ * @since 1.0, 2024-04-24 18:08:29
  */
 public class AlipayCommerceEcServiceOrderBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6162763856582131159L;
+	private static final long serialVersionUID = 5695345517985792248L;
 
 	/**
 	 * 共同账户ID

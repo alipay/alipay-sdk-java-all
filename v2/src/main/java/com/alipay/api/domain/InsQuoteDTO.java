@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电商场景开放平台报价信息模型
  *
  * @author auto create
- * @since 1.0, 2024-03-20 11:17:11
+ * @since 1.0, 2024-04-25 13:59:51
  */
 public class InsQuoteDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5516675185435895859L;
+	private static final long serialVersionUID = 7172153979884754125L;
 
 	/**
 	 * 折扣率
@@ -36,6 +36,12 @@ public class InsQuoteDTO extends AlipayObject {
 	 */
 	@ApiField("original_premium")
 	private Long originalPremium;
+
+	/**
+	 * 折扣前原保费费率
+	 */
+	@ApiField("original_premium_rate")
+	private String originalPremiumRate;
 
 	/**
 	 * 保费
@@ -111,6 +117,13 @@ public class InsQuoteDTO extends AlipayObject {
 	}
 	public void setOriginalPremium(Long originalPremium) {
 		this.originalPremium = originalPremium;
+	}
+
+	public String getOriginalPremiumRate() {
+		return this.originalPremiumRate;
+	}
+	public void setOriginalPremiumRate(String originalPremiumRate) {
+		this.originalPremiumRate = originalPremiumRate;
 	}
 
 	public Long getPremium() {

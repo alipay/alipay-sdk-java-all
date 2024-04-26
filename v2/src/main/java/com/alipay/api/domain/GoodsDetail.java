@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品列表信息
  *
  * @author auto create
- * @since 1.0, 2024-02-23 19:55:43
+ * @since 1.0, 2024-04-22 19:48:50
  */
 public class GoodsDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3228973526136577842L;
+	private static final long serialVersionUID = 4362159977621213188L;
 
 	/**
 	 * 支付宝定义的统一商品编号
@@ -51,13 +51,13 @@ public class GoodsDetail extends AlipayObject {
 	private String goodsName;
 
 	/**
-	 * 商家侧小程序商品ID，指商家提报给小程序商品库的商品。当前接口的extend_params.trade_component_order_id字段不为空时该字段必填，且与交易组件订单参数保持一致。了解小程序商品请参考：<a target="_blank" href="https://opendocs.alipay.com/mini/06uila?pathHash=63b6fba7" >小程序商品</a>
+	 * 商家侧小程序商品ID，指商家提报给小程序商品库的商品。当前接口的extend_params.trade_component_order_id字段不为空时该字段必填，且与交易组件订单参数保持一致。了解小程序商品请参考：<a href="https://opendocs.alipay.com/mini/06uila?pathHash=63b6fba7">https://opendocs.alipay.com/mini/06uila?pathHash=63b6fba7</a>
 	 */
 	@ApiField("out_item_id")
 	private String outItemId;
 
 	/**
-	 * 商家侧小程序商品ID，指商家提报给小程序商品库的商品。当前接口的extend_params.trade_component_order_id字段不为空时该字段必填，且与交易组件订单参数保持一致。了解小程序商品请参考：<a target="_blank" href="https://opendocs.alipay.com/mini/06uila?pathHash=63b6fba7" >小程序商品</a>
+	 * 商家侧小程序商品ID，指商家提报给小程序商品库的商品。当前接口的extend_params.trade_component_order_id字段不为空时该字段必填，且与交易组件订单参数保持一致。了解小程序商品请参考：<a target="_blank" href="https://opendocs.alipay.com/mini/06uila?pathHash=63b6fba7" >https://opendocs.alipay.com/mini/06uila?pathHash=63b6fba7</a>
 	 */
 	@ApiField("out_sku_id")
 	private String outSkuId;

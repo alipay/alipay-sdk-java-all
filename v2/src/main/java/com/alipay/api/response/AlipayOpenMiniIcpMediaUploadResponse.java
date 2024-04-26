@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.icp.media.upload response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-23 14:16:59
+ * @since 1.0, 2024-04-23 21:50:59
  */
 public class AlipayOpenMiniIcpMediaUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6274812324881527359L;
+	private static final long serialVersionUID = 4124543257155532822L;
 
 	/** 
 	 * 申请备案时填写的文件材料凭证ID

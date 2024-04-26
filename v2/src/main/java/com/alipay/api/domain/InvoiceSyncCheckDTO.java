@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InvoiceSyncCheckDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7139338862828177729L;
+	private static final long serialVersionUID = 2865999221991196959L;
 
 	/**
 	 * ou代码

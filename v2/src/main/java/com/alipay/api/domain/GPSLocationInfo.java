@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GPSLocationInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1345728751498784236L;
+	private static final long serialVersionUID = 2832879571398955232L;
 
 	/**
 	 * 1.0

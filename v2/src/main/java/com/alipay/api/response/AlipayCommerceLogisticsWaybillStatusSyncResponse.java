@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.logistics.waybill.status.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-23 19:56:47
+ * @since 1.0, 2024-04-25 19:47:44
  */
 public class AlipayCommerceLogisticsWaybillStatusSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5547735182416463284L;
+	private static final long serialVersionUID = 2654983122128848571L;
 
 	
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.violation.violationevent.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2024-01-19 15:17:02
+ * @since 1.0, 2024-04-23 21:50:59
  */
 public class AlipayOpenViolationViolationeventBatchqueryRequest implements AlipayRequest<AlipayOpenViolationViolationeventBatchqueryResponse> {
 

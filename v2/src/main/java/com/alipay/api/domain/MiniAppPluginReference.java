@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序引用的插件信息，包含插件的id和插件的版本
  *
  * @author auto create
- * @since 1.0, 2022-07-14 20:51:20
+ * @since 1.0, 2024-04-23 10:25:05
  */
 public class MiniAppPluginReference extends AlipayObject {
 
-	private static final long serialVersionUID = 1785359589652938431L;
+	private static final long serialVersionUID = 5832782166296188428L;
 
 	/**
 	 * 是否懒加载

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序包信息
  *
  * @author auto create
- * @since 1.0, 2021-07-12 16:40:52
+ * @since 1.0, 2024-04-23 10:24:53
  */
 public class MiniAppPackageInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7254728369254228334L;
+	private static final long serialVersionUID = 2538627961416246163L;
 
 	/**
 	 * 包二维码地址

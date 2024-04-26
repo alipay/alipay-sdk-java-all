@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 单个公有复杂类型
  *
  * @author auto create
- * @since 1.0, 2024-04-19 15:00:04
+ * @since 1.0, 2024-04-24 16:40:58
  */
 public class RegressionPublic extends AlipayObject {
 
-	private static final long serialVersionUID = 2836316466648639584L;
+	private static final long serialVersionUID = 7365161221434469141L;
 
 	/**
 	 * 1
@@ -32,6 +32,12 @@ public class RegressionPublic extends AlipayObject {
 	 */
 	@ApiField("b")
 	private Long b;
+
+	/**
+	 * 1111
+	 */
+	@ApiField("com_a")
+	private JhjTestNew comA;
 
 	/**
 	 * 1999-11-11
@@ -70,6 +76,13 @@ public class RegressionPublic extends AlipayObject {
 	}
 	public void setB(Long b) {
 		this.b = b;
+	}
+
+	public JhjTestNew getComA() {
+		return this.comA;
+	}
+	public void setComA(JhjTestNew comA) {
+		this.comA = comA;
 	}
 
 	public Date getDate() {

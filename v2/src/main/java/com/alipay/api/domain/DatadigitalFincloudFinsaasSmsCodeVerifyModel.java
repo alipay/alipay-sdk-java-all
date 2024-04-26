@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DatadigitalFincloudFinsaasSmsCodeVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6131322295954729944L;
+	private static final long serialVersionUID = 6117566491778718226L;
 
 	/**
 	 * 手机号加密字段

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业码服务的取消选择
  *
  * @author auto create
- * @since 1.0, 2023-03-28 16:55:15
+ * @since 1.0, 2024-04-24 18:08:52
  */
 public class AlipayCommerceEcServiceOrderUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3498239181586761312L;
+	private static final long serialVersionUID = 8783843244338443746L;
 
 	/**
 	 * 共同账户ID

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 医药标准商品信息
  *
  * @author auto create
- * @since 1.0, 2024-03-19 17:46:34
+ * @since 1.0, 2024-04-23 16:08:52
  */
 public class MedicineSpu extends AlipayObject {
 
-	private static final long serialVersionUID = 6726437296972662265L;
+	private static final long serialVersionUID = 8725254375388775245L;
 
 	/**
 	 * 药品类型特有字段，给药途径
@@ -86,7 +86,7 @@ OTHERS-其他
 	private String deviceSpec;
 
 	/**
-	 * 药品、特医保健品特有字段，枚举类型，从以下选择：
+	 * 药品、保健品和特医食品特有，保健品和特医食品必填，枚举类型，从以下选择：
 TABLETS-片剂
 CAPSULE-胶囊剂
 SOLUTION-溶液剂
@@ -102,7 +102,8 @@ SYRUP-糖浆剂
 PILL-丸剂
 DRIPPING_PILL-滴丸
 GRANULE-颗粒剂
-POWDER-粉剂、散剂
+POWDER-散剂
+DUST-粉剂
 DUSTING_POWDER-撒粉
 TOPICAL_POWDER-撒布剂
 OINTMENT-膏剂
@@ -142,7 +143,7 @@ OTHERS-其他
 	private String dosageFrom;
 
 	/**
-	 * 保健品类型特有且必传，多选枚举，枚举从以下值选传：
+	 * 保健品类型特有，多选枚举，枚举从以下值选传：
 有助于增强免疫力ENHANCING_IMMUNITY
 辅助保护化学性肝损伤PROTECTING_FROM_CHEMICAL_LIVER_DAMAGE
 有助于抗氧化FIGHTING_OXIDATION

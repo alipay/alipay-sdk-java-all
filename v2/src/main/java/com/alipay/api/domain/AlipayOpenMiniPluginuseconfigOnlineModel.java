@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 全量插件使用端版本配置
  *
  * @author auto create
- * @since 1.0, 2022-02-26 16:15:32
+ * @since 1.0, 2024-04-23 10:17:43
  */
 public class AlipayOpenMiniPluginuseconfigOnlineModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3486526213273164426L;
+	private static final long serialVersionUID = 2617274693547192654L;
 
 	/**
 	 * 小程序客户端类型，默认为支付宝端。常见支持如下客户端：

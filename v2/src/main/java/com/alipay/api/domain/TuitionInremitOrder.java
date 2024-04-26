@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 留学入中交易详情
  *
  * @author auto create
- * @since 1.0, 2021-08-16 15:53:28
+ * @since 1.0, 2024-04-22 10:38:39
  */
 public class TuitionInremitOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 7186838326394831678L;
+	private static final long serialVersionUID = 5587219295361897398L;
 
 	/**
 	 * 支付宝生成的单据号

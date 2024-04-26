@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.risk.jhjtest.complexdd.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2024-04-17 17:17:01
+ * @since 1.0, 2024-04-23 14:32:01
  */
 public class AlipaySecurityRiskJhjtestComplexddBatchqueryRequest implements AlipayRequest<AlipaySecurityRiskJhjtestComplexddBatchqueryResponse> {
 

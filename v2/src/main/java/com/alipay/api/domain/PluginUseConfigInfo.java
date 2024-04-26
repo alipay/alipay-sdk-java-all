@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 使用关系分端版本配置
  *
  * @author auto create
- * @since 1.0, 2021-07-20 20:47:47
+ * @since 1.0, 2024-04-23 10:24:45
  */
 public class PluginUseConfigInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7281238132398941917L;
+	private static final long serialVersionUID = 1325456662439492811L;
 
 	/**
 	 * 端

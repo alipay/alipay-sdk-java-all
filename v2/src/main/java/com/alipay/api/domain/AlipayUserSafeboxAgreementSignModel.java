@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserSafeboxAgreementSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6446273979648696613L;
+	private static final long serialVersionUID = 8497465372891377781L;
 
 	/**
 	 * 用户（UserId）在应用（AppId）下的唯一用户标识

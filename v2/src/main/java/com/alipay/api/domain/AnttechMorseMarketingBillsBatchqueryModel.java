@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 摩卡营销-活动账单批量查询
  *
  * @author auto create
- * @since 1.0, 2023-05-09 18:01:38
+ * @since 1.0, 2024-04-25 15:01:02
  */
 public class AnttechMorseMarketingBillsBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2575154632571533844L;
+	private static final long serialVersionUID = 7362756648936845375L;
 
 	/**
 	 * 业务唯一标识码，摩斯侧分配

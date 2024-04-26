@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.order.orderbill.download response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-19 16:01:59
+ * @since 1.0, 2024-04-23 21:50:59
  */
 public class AlipayOpenMiniOrderOrderbillDownloadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7485766375756432155L;
+	private static final long serialVersionUID = 8594491134894555252L;
 
 	/** 
 	 * 账单下载地址链接，获取连接后30秒后未下载，链接地址失效。

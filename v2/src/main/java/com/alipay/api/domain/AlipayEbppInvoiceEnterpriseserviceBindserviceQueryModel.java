@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据企业服务id查询可用的供给服务列表
  *
  * @author auto create
- * @since 1.0, 2023-03-28 19:29:23
+ * @since 1.0, 2024-04-24 17:47:31
  */
 public class AlipayEbppInvoiceEnterpriseserviceBindserviceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2453368318391138223L;
+	private static final long serialVersionUID = 3151266153361187577L;
 
 	/**
 	 * 企业服务产品id

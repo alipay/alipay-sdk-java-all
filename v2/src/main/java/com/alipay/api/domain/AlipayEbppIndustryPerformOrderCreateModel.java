@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创单
  *
  * @author auto create
- * @since 1.0, 2024-04-08 11:41:35
+ * @since 1.0, 2024-04-22 15:26:15
  */
 public class AlipayEbppIndustryPerformOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2179942472433233967L;
+	private static final long serialVersionUID = 2659224344782659167L;
 
 	/**
 	 * 通过支付宝收银台支付的资产详情，主要包括该笔订单的资产类型、资产金额、资产协议、支付描述等
@@ -33,6 +33,12 @@ public class AlipayEbppIndustryPerformOrderCreateModel extends AlipayObject {
 	 */
 	@ApiField("create_type")
 	private String createType;
+
+	/**
+	 * 透传二级商户smid 例如2088**********33
+	 */
+	@ApiField("inst_smid")
+	private String instSmid;
 
 	/**
 	 * 商户app_id维度下的用户标识，目前为47位字符串。ser_id和open_id必传其一，建议商户传递open_id。
@@ -99,6 +105,13 @@ public class AlipayEbppIndustryPerformOrderCreateModel extends AlipayObject {
 	}
 	public void setCreateType(String createType) {
 		this.createType = createType;
+	}
+
+	public String getInstSmid() {
+		return this.instSmid;
+	}
+	public void setInstSmid(String instSmid) {
+		this.instSmid = instSmid;
 	}
 
 	public String getOpenId() {

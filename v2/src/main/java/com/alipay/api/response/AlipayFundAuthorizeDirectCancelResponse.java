@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.authorize.direct.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 00:06:44
+ * @since 1.0, 2024-04-23 13:15:27
  */
 public class AlipayFundAuthorizeDirectCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1513684846639692727L;
+	private static final long serialVersionUID = 2488391959865157623L;
 
 	/** 
 	 * 授权协议号

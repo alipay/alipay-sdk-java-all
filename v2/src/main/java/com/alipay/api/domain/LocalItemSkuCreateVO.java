@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 本地商品sku，创建本地商品时使用当前sku对象进行传参。
  *
  * @author auto create
- * @since 1.0, 2024-04-19 11:34:52
+ * @since 1.0, 2024-04-22 17:52:29
  */
 public class LocalItemSkuCreateVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4615493862322972295L;
+	private static final long serialVersionUID = 8379618996966941463L;
 
 	/**
 	 * sku原价，分为单位。
 	 */
 	@ApiField("original_price")
 	private Long originalPrice;
+
+	/**
+	 * 商家侧自定义的app下唯一的skuId
+	 */
+	@ApiField("out_sku_id")
+	private String outSkuId;
 
 	/**
 	 * sku售价，分为单位
@@ -52,6 +58,13 @@ public class LocalItemSkuCreateVO extends AlipayObject {
 	}
 	public void setOriginalPrice(Long originalPrice) {
 		this.originalPrice = originalPrice;
+	}
+
+	public String getOutSkuId() {
+		return this.outSkuId;
+	}
+	public void setOutSkuId(String outSkuId) {
+		this.outSkuId = outSkuId;
 	}
 
 	public Long getSalePrice() {

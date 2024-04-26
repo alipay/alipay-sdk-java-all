@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建/编辑云店任务模版
  *
  * @author auto create
- * @since 1.0, 2022-11-16 19:52:15
+ * @since 1.0, 2024-04-25 14:21:50
  */
 public class AlipayCommerceYuntaskCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8459215597757962959L;
+	private static final long serialVersionUID = 8764622418797526957L;
 
 	/**
 	 * 小程序appid，支持带跳转链接
@@ -128,6 +128,12 @@ ALGOLADDER 算法阶梯
 	 */
 	@ApiField("task_name")
 	private String taskName;
+
+	/**
+	 * 任务规则图片
+	 */
+	@ApiField("task_rule_pic")
+	private String taskRulePic;
 
 	/**
 	 * 任务开始时间
@@ -273,6 +279,13 @@ IOT lot核销
 	}
 	public void setTaskName(String taskName) {
 		this.taskName = taskName;
+	}
+
+	public String getTaskRulePic() {
+		return this.taskRulePic;
+	}
+	public void setTaskRulePic(String taskRulePic) {
+		this.taskRulePic = taskRulePic;
 	}
 
 	public Date getTaskStartTime() {

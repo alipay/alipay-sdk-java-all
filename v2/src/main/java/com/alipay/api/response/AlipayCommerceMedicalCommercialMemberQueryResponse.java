@@ -9,17 +9,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.commercial.member.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-01 23:32:04
+ * @since 1.0, 2024-04-23 17:22:01
  */
 public class AlipayCommerceMedicalCommercialMemberQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3681749634497535949L;
+	private static final long serialVersionUID = 6212827191169936966L;
 
 	/** 
 	 * 权益订单id，支付宝侧用户对商户某一权益的唯一订单子单id。该订单记录了用户的核销次数与总次数，以及订单状态
 	 */
 	@ApiField("biz_order_id")
 	private String bizOrderId;
+
+	/** 
+	 * 权益总次数，-1代表不限次
+	 */
+	@ApiField("count")
+	private String count;
 
 	/** 
 	 * 用户权益的结束过期时间
@@ -58,6 +64,12 @@ public class AlipayCommerceMedicalCommercialMemberQueryResponse extends AlipayRe
 	private Date startTime;
 
 	/** 
+	 * 权益已核销次数
+	 */
+	@ApiField("usage_count")
+	private String usageCount;
+
+	/** 
 	 * 蚂蚁统一会员ID
 	 */
 	@ApiField("user_id")
@@ -68,6 +80,13 @@ public class AlipayCommerceMedicalCommercialMemberQueryResponse extends AlipayRe
 	}
 	public String getBizOrderId( ) {
 		return this.bizOrderId;
+	}
+
+	public void setCount(String count) {
+		this.count = count;
+	}
+	public String getCount( ) {
+		return this.count;
 	}
 
 	public void setEndTime(Date endTime) {
@@ -110,6 +129,13 @@ public class AlipayCommerceMedicalCommercialMemberQueryResponse extends AlipayRe
 	}
 	public Date getStartTime( ) {
 		return this.startTime;
+	}
+
+	public void setUsageCount(String usageCount) {
+		this.usageCount = usageCount;
+	}
+	public String getUsageCount( ) {
+		return this.usageCount;
 	}
 
 	public void setUserId(String userId) {

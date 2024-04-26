@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车金融订单状态通知接口
  *
  * @author auto create
- * @since 1.0, 2024-04-02 17:39:50
+ * @since 1.0, 2024-04-24 11:41:45
  */
 public class XingheLendassistCarfinApplystatusNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6564995449177199118L;
+	private static final long serialVersionUID = 3556452448671556997L;
 
 	/**
 	 * 星河侧唯一业务编号
@@ -104,7 +104,7 @@ public class XingheLendassistCarfinApplystatusNotifyModel extends AlipayObject {
 	private String repayType;
 
 	/**
-	 * FOLLOWING：客服跟进中，WILLING：客户有意愿，PRE_REJECT：预审拒绝，PRE_PASS：预审通过，APPROVING：已提交信审，APPROVE_REJECT：审批拒绝，APPROVE_PASS：审批通过，SIGNED：合同已生效，LEND_REJECT：放款拒绝，LEND_SUC：已放款
+	 * FOLLOWING：客服跟进中，WILLING：客户有意愿，NO_WILLING：客户无意愿，PRE_REJECT：预审拒绝，PRE_PASS：预审通过，APPROVING：审批中，APPROVE_REJECT：审批拒绝，APPROVE_PASS：审批通过，SIGNING：签约中，SIGN_FAIL：签约失败，SIGNED：合同已生效，LENDING：放款中，LEND_REJECT：放款拒绝，LEND_SUC：已放款
 	 */
 	@ApiField("status")
 	private String status;

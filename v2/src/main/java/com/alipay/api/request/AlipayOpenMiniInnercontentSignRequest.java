@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.innercontent.sign request
  * 
  * @author auto create
- * @since 1.0, 2023-07-28 10:31:35
+ * @since 1.0, 2024-04-23 10:23:22
  */
 public class AlipayOpenMiniInnercontentSignRequest implements AlipayRequest<AlipayOpenMiniInnercontentSignResponse> {
 

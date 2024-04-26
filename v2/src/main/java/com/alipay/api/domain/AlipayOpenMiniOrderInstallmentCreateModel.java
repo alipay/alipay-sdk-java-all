@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单分期
  *
  * @author auto create
- * @since 1.0, 2024-01-22 19:16:52
+ * @since 1.0, 2024-04-23 00:21:53
  */
 public class AlipayOpenMiniOrderInstallmentCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1598693922254622887L;
+	private static final long serialVersionUID = 2588756683653911182L;
 
 	/**
 	 * 续租场景分期数，当分期类型为RELET时，该字段必填
@@ -20,7 +20,7 @@ public class AlipayOpenMiniOrderInstallmentCreateModel extends AlipayObject {
 	private Long addonPeriodNum;
 
 	/**
-	 * 当installment_no_type为PERIOD时，填写分期数
+	 * 当前分期数
 	 */
 	@ApiField("installment_no")
 	private String installmentNo;
@@ -50,6 +50,12 @@ true:已完结
 	private Boolean isFinishPerformance;
 
 	/**
+	 * 分期单同步模式请传入true，该模式会直接推进分期单进入结算阶段
+	 */
+	@ApiField("is_sync_pay")
+	private Boolean isSyncPay;
+
+	/**
 	 * 支付宝用户唯一标识
 	 */
 	@ApiField("open_id")
@@ -75,10 +81,22 @@ true:已完结
 	private String outOrderId;
 
 	/**
+	 * 用户分期扣款的支付方式
+	 */
+	@ApiField("pay_channel")
+	private String payChannel;
+
+	/**
 	 * 普通分期数，当分期类型为RENT或BUYOUT时，该字段必填
 	 */
 	@ApiField("period_num")
 	private Long periodNum;
+
+	/**
+	 * 分期的阶段编码，与创建时的阶段付款计划里的阶段编码对应。
+	 */
+	@ApiField("stage_no")
+	private Long stageNo;
 
 	/**
 	 * 支付宝收单交易号
@@ -133,6 +151,13 @@ true:已完结
 		this.isFinishPerformance = isFinishPerformance;
 	}
 
+	public Boolean getIsSyncPay() {
+		return this.isSyncPay;
+	}
+	public void setIsSyncPay(Boolean isSyncPay) {
+		this.isSyncPay = isSyncPay;
+	}
+
 	public String getOpenId() {
 		return this.openId;
 	}
@@ -161,11 +186,25 @@ true:已完结
 		this.outOrderId = outOrderId;
 	}
 
+	public String getPayChannel() {
+		return this.payChannel;
+	}
+	public void setPayChannel(String payChannel) {
+		this.payChannel = payChannel;
+	}
+
 	public Long getPeriodNum() {
 		return this.periodNum;
 	}
 	public void setPeriodNum(Long periodNum) {
 		this.periodNum = periodNum;
+	}
+
+	public Long getStageNo() {
+		return this.stageNo;
+	}
+	public void setStageNo(Long stageNo) {
+		this.stageNo = stageNo;
 	}
 
 	public String getTradeNo() {

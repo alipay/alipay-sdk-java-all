@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 寄件/收件地址信息
  *
  * @author auto create
- * @since 1.0, 2024-04-03 10:48:03
+ * @since 1.0, 2024-04-22 11:08:38
  */
 public class AddressInfoObj extends AlipayObject {
 
-	private static final long serialVersionUID = 4576616514323692484L;
+	private static final long serialVersionUID = 4676827149915277626L;
 
 	/**
 	 * 详细地址
@@ -30,6 +30,12 @@ public class AddressInfoObj extends AlipayObject {
 	 */
 	@ApiField("city")
 	private String city;
+
+	/**
+	 * 用户姓名
+	 */
+	@ApiField("full_name")
+	private String fullName;
 
 	/**
 	 * 门牌号
@@ -86,6 +92,13 @@ public class AddressInfoObj extends AlipayObject {
 	}
 	public void setCity(String city) {
 		this.city = city;
+	}
+
+	public String getFullName() {
+		return this.fullName;
+	}
+	public void setFullName(String fullName) {
+		this.fullName = fullName;
 	}
 
 	public String getHouseNumber() {

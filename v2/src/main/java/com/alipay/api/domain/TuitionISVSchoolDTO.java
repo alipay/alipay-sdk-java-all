@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 学校
  *
  * @author auto create
- * @since 1.0, 2021-08-16 15:53:13
+ * @since 1.0, 2024-04-22 10:38:49
  */
 public class TuitionISVSchoolDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8551858562743882638L;
+	private static final long serialVersionUID = 3456389743868451584L;
 
 	/**
 	 * 2位国家码

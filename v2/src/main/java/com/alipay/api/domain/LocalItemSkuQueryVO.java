@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 本地商品sku，查询本地商品详情时使用当前sku对象进行传参
  *
  * @author auto create
- * @since 1.0, 2024-04-19 11:35:48
+ * @since 1.0, 2024-04-25 17:39:28
  */
 public class LocalItemSkuQueryVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1352137673941189396L;
+	private static final long serialVersionUID = 3591341691429963863L;
 
 	/**
 	 * 用于需要透出sku属性的场景。如线路游需要透出sku销售属性
@@ -28,6 +28,12 @@ public class LocalItemSkuQueryVO extends AlipayObject {
 	 */
 	@ApiField("original_price")
 	private Long originalPrice;
+
+	/**
+	 * 商家侧sku ID，要求 APPID 下全局唯一。
+	 */
+	@ApiField("out_sku_id")
+	private String outSkuId;
 
 	/**
 	 * sku售价，分为单位
@@ -65,6 +71,13 @@ public class LocalItemSkuQueryVO extends AlipayObject {
 	}
 	public void setOriginalPrice(Long originalPrice) {
 		this.originalPrice = originalPrice;
+	}
+
+	public String getOutSkuId() {
+		return this.outSkuId;
+	}
+	public void setOutSkuId(String outSkuId) {
+		this.outSkuId = outSkuId;
 	}
 
 	public Long getSalePrice() {

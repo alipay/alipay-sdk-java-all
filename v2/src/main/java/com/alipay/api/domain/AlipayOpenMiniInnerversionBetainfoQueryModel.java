@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查看可邀测状态接口
  *
  * @author auto create
- * @since 1.0, 2021-05-25 17:10:11
+ * @since 1.0, 2024-04-23 10:21:14
  */
 public class AlipayOpenMiniInnerversionBetainfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2548748885618792843L;
+	private static final long serialVersionUID = 6313397336345636742L;
 
 	/**
 	 * 业务来源

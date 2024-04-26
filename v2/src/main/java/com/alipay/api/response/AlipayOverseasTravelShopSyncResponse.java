@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOverseasTravelShopSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5652228582157921897L;
+	private static final long serialVersionUID = 1493543879567239352L;
 
 	/** 
 	 * 当前店铺业务状态。NORMAL：正常开业中；CLOSED

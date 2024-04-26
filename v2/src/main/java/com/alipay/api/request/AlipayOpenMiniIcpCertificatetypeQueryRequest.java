@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.icp.certificatetype.query request
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:26:12
+ * @since 1.0, 2024-04-23 21:50:59
  */
 public class AlipayOpenMiniIcpCertificatetypeQueryRequest implements AlipayRequest<AlipayOpenMiniIcpCertificatetypeQueryResponse> {
 

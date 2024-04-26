@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗行业商业化核销接口
  *
  * @author auto create
- * @since 1.0, 2023-10-17 11:43:10
+ * @since 1.0, 2024-04-23 14:50:15
  */
 public class AlipayCommerceMedicalCommercialPerformanceVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5551498365475532929L;
+	private static final long serialVersionUID = 5861825513348545238L;
 
 	/**
 	 * 权益订单id，支付宝侧用户对商户某一权益的唯一订单子单id。该订单记录了用户的核销次数与总次数，以及订单状态
@@ -58,7 +58,7 @@ public class AlipayCommerceMedicalCommercialPerformanceVerifyModel extends Alipa
 	private String outProductId;
 
 	/**
-	 * status核销场景使用，枚举值为S\A\C，用户正常核销权益时传S，表示可使用状态。核销权益次数完结传C，用户核销已买会员卡新增的权益时传递A状态
+	 * status核销场景使用，枚举值为S\A\C\R，用户正常核销权益时传S，表示可使用状态。核销权益次数完结传C，用户核销已买会员卡新增的权益时传递A状态，用户逆向核销回补使用次数时传递R状态
 	 */
 	@ApiField("status")
 	private String status;

@@ -16,11 +16,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.fastpay.refund.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-18 14:39:43
+ * @since 1.0, 2024-04-24 17:10:29
  */
 public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8783721239784873834L;
+	private static final long serialVersionUID = 1691631691352694458L;
 
 	/** 
 	 * 银行卡冲退信息；
@@ -28,6 +28,14 @@ public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("deposit_back_info")
 	private DepositBackInfo depositBackInfo;
+
+	/** 
+	 * 银行卡冲退信息列表。
+默认不返回该信息，需要在入参的query_options中指定"deposit_back_info_list"值时才返回该字段信息。
+	 */
+	@ApiListField("deposit_back_info_list")
+	@ApiField("deposit_back_info")
+	private List<DepositBackInfo> depositBackInfoList;
 
 	/** 
 	 * 因公付退款信息，只有入参的query_options中指定enterprise_pay_info时才返回该字段信息
@@ -185,6 +193,13 @@ REFUND_SUCCESS 退款处理成功；
 	}
 	public DepositBackInfo getDepositBackInfo( ) {
 		return this.depositBackInfo;
+	}
+
+	public void setDepositBackInfoList(List<DepositBackInfo> depositBackInfoList) {
+		this.depositBackInfoList = depositBackInfoList;
+	}
+	public List<DepositBackInfo> getDepositBackInfoList( ) {
+		return this.depositBackInfoList;
 	}
 
 	public void setEnterprisePayInfo(EnterprisePayInfo enterprisePayInfo) {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GroupUserVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6141771334835998432L;
+	private static final long serialVersionUID = 8882232339525636366L;
 
 	/**
 	 * 身份证后4位，后台会进行校验。
