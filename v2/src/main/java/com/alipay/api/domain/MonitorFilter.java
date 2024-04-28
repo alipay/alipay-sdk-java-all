@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询条件过滤
  *
  * @author auto create
- * @since 1.0, 2024-04-09 20:27:15
+ * @since 1.0, 2024-04-26 11:32:26
  */
 public class MonitorFilter extends AlipayObject {
 
-	private static final long serialVersionUID = 7869417872346719866L;
+	private static final long serialVersionUID = 8229246684774786618L;
 
 	/**
 	 * cdn加速域名列表
@@ -22,6 +22,13 @@ public class MonitorFilter extends AlipayObject {
 	@ApiListField("cdn_domain_names")
 	@ApiField("string")
 	private List<String> cdnDomainNames;
+
+	/**
+	 * 数据库集合列表
+	 */
+	@ApiListField("collections")
+	@ApiField("string")
+	private List<String> collections;
 
 	/**
 	 * 按照函数名称过滤
@@ -51,6 +58,13 @@ public class MonitorFilter extends AlipayObject {
 	}
 	public void setCdnDomainNames(List<String> cdnDomainNames) {
 		this.cdnDomainNames = cdnDomainNames;
+	}
+
+	public List<String> getCollections() {
+		return this.collections;
+	}
+	public void setCollections(List<String> collections) {
+		this.collections = collections;
 	}
 
 	public String getFunctionName() {

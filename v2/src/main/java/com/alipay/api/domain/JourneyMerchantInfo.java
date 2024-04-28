@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class JourneyMerchantInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2244418321447158521L;
+	private static final long serialVersionUID = 4825145392258643616L;
 
 	/**
 	 * 扩展信息

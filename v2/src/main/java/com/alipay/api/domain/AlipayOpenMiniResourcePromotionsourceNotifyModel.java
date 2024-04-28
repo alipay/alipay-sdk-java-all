@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniResourcePromotionsourceNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3896851292951333838L;
+	private static final long serialVersionUID = 2329937139263729784L;
 
 	/**
 	 * 媒体唤起时传入的支付宝id

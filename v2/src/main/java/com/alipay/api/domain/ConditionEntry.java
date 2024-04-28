@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ConditionEntry extends AlipayObject {
 
-	private static final long serialVersionUID = 6865786214954451652L;
+	private static final long serialVersionUID = 7334846997427984488L;
 
 	/**
 	 * 纬度的具体key值如workNo ,level

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenInstantdeliveryMerchantshopModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1697726196484882244L;
+	private static final long serialVersionUID = 7466324353336349218L;
 
 	/** 
 	 * 门店创建返回的结果

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RentInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1196773358161228629L;
+	private static final long serialVersionUID = 6662633833932647499L;
 
 	/**
 	 * 续租总期数，1-12的整数，包含边界值

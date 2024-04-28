@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 合并转账时的单笔转账单据详情
  *
  * @author auto create
- * @since 1.0, 2022-12-09 15:41:44
+ * @since 1.0, 2024-04-26 11:39:48
  */
 public class TransOrderDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7585535369715675388L;
+	private static final long serialVersionUID = 5281311584615865813L;
 
 	/**
 	 * JSON格式，传递业务扩展参数，具体业务参数取值请以接入文档示例为准！
@@ -52,7 +52,7 @@ withdraw_timeliness:到卡申请到账时效， T0：当日到账 T1：次日到
 	private String remark;
 
 	/**
-	 * 转账金额
+	 * 转账金额，单位：元
 	 */
 	@ApiField("trans_amount")
 	private String transAmount;

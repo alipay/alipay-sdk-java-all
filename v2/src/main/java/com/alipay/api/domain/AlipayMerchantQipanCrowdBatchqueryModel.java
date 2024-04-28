@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantQipanCrowdBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2712721327641792442L;
+	private static final long serialVersionUID = 4391171691323378394L;
 
 	/**
 	 * 人群名称

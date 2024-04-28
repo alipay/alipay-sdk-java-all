@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenMiniPlanOperateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6329482485277315541L;
+	private static final long serialVersionUID = 7311444611721359733L;
 
 	/**
 	 * 描述支付后推荐的应用是否属于当前账号，该字段只做展示用, 不应用于业务逻辑, 若属于当前账号则设置为OWN，否则设置为OTHERS, 无法判断的场景传 DEFAULT 即可

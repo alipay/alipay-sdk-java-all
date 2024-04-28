@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ContrastResult extends AlipayObject {
 
-	private static final long serialVersionUID = 5123197295946599179L;
+	private static final long serialVersionUID = 1254731366989127443L;
 
 	/**
 	 * 变化商品数量

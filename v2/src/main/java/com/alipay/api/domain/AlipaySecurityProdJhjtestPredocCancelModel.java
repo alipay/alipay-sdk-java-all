@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 文档链路测试
  *
  * @author auto create
- * @since 1.0, 2024-04-19 15:00:06
+ * @since 1.0, 2024-04-26 16:05:27
  */
 public class AlipaySecurityProdJhjtestPredocCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7269687939787544885L;
+	private static final long serialVersionUID = 1239245295825523828L;
 
 	/**
 	 * 11111
@@ -26,10 +26,17 @@ public class AlipaySecurityProdJhjtestPredocCancelModel extends AlipayObject {
 	private JhjTestNew comC;
 
 	/**
-	 * 基础描述修改缓存11
+	 * 基础描述修改缓存11 当前字段已废弃(废弃了)
 	 */
 	@ApiField("test_a")
+	@Deprecated
 	private String testA;
+
+	/**
+	 * 基础描述修改缓存11
+	 */
+	@ApiField("test_a_openid")
+	private String testAOpenid;
 
 	public JhjtestDoc getComA() {
 		return this.comA;
@@ -50,6 +57,13 @@ public class AlipaySecurityProdJhjtestPredocCancelModel extends AlipayObject {
 	}
 	public void setTestA(String testA) {
 		this.testA = testA;
+	}
+
+	public String getTestAOpenid() {
+		return this.testAOpenid;
+	}
+	public void setTestAOpenid(String testAOpenid) {
+		this.testAOpenid = testAOpenid;
 	}
 
 }

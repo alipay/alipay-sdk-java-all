@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MiniAppCustomGrayGroupDto extends AlipayObject {
 
-	private static final long serialVersionUID = 3247391356478265848L;
+	private static final long serialVersionUID = 3249934574293891273L;
 
 	/**
 	 * 灰度分组id

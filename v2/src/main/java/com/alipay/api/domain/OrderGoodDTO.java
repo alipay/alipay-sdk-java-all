@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class OrderGoodDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6834142576397742322L;
+	private static final long serialVersionUID = 7318916578318696385L;
 
 	/**
 	 * 对应订单有环保类型时，能量发放结果

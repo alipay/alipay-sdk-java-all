@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankCreditLoantradeGuarletterCompensateApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8345475312479189865L;
+	private static final long serialVersionUID = 6291614887516225148L;
 
 	/** 
 	 * 赔付申请单单号

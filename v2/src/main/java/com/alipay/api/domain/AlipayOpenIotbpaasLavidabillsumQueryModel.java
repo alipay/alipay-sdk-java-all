@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenIotbpaasLavidabillsumQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4685932671679955196L;
+	private static final long serialVersionUID = 5255162295124339928L;
 
 	/**
 	 * 查询日期
