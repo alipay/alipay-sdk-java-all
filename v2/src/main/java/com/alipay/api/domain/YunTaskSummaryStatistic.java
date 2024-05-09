@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class YunTaskSummaryStatistic extends AlipayObject {
 
-	private static final long serialVersionUID = 3356896524574396284L;
+	private static final long serialVersionUID = 5864492666386211569L;
 
 	/**
 	 * 激活门店总量

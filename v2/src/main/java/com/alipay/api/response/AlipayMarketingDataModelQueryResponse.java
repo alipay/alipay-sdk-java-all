@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingDataModelQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4186493333363154423L;
+	private static final long serialVersionUID = 6141224391491231278L;
 
 	/** 
 	 * 模型数据。此为参数列表，输出参数为模型字段及模型结果值; 用于数据实验室算法模型对外输出

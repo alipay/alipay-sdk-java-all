@@ -9,6 +9,7 @@ import com.alipay.api.domain.EnterprisePayInfo;
 import com.alipay.api.domain.RefundChargeInfo;
 import com.alipay.api.domain.TradeFundBill;
 import com.alipay.api.domain.RefundRoyaltyResult;
+import com.alipay.api.domain.VoucherDetail;
 
 import com.alipay.api.AlipayResponse;
 
@@ -16,11 +17,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.fastpay.refund.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-24 17:10:29
+ * @since 1.0, 2024-05-07 17:31:59
  */
 public class AlipayTradeFastpayRefundQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5772296669857177147L;
+	private static final long serialVersionUID = 5726582486736367477L;
 
 	/** 
 	 * 银行卡冲退信息；
@@ -168,6 +169,13 @@ REFUND_SUCCESS 退款处理成功；
 	 */
 	@ApiField("refund_status")
 	private String refundStatus;
+
+	/** 
+	 * 本交易支付时使用的所有优惠券信息。 只有在query_options中指定refund_voucher_detail_list时才返回该字段信息。
+	 */
+	@ApiListField("refund_voucher_detail_list")
+	@ApiField("voucher_detail")
+	private List<VoucherDetail> refundVoucherDetailList;
 
 	/** 
 	 * 本次商户实际退回金额；单位：元。
@@ -340,6 +348,13 @@ REFUND_SUCCESS 退款处理成功；
 	}
 	public String getRefundStatus( ) {
 		return this.refundStatus;
+	}
+
+	public void setRefundVoucherDetailList(List<VoucherDetail> refundVoucherDetailList) {
+		this.refundVoucherDetailList = refundVoucherDetailList;
+	}
+	public List<VoucherDetail> getRefundVoucherDetailList( ) {
+		return this.refundVoucherDetailList;
 	}
 
 	public void setSendBackFee(String sendBackFee) {

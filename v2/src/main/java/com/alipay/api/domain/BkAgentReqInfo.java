@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间联交易下，由收单机构上送的信息
  *
  * @author auto create
- * @since 1.0, 2024-04-18 14:36:07
+ * @since 1.0, 2024-05-07 11:34:50
  */
 public class BkAgentReqInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3485776737366736731L;
+	private static final long serialVersionUID = 3374334634256437867L;
 
 	/**
 	 * 收单机构在清算组织登记或分配的机构代码

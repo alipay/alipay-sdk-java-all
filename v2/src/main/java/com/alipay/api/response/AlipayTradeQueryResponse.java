@@ -22,11 +22,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-24 14:22:56
+ * @since 1.0, 2024-05-07 11:36:59
  */
 public class AlipayTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8766145458671782165L;
+	private static final long serialVersionUID = 8861646541269424874L;
 
 	/** 
 	 * 交易附加状态：
@@ -286,6 +286,12 @@ json格式。
 	@ApiListField("payment_info_with_id_list")
 	@ApiField("payment_info_with_id")
 	private List<PaymentInfoWithId> paymentInfoWithIdList;
+
+	/** 
+	 * 该字段用于描述当前账期交易的场景。
+	 */
+	@ApiField("period_scene")
+	private String periodScene;
 
 	/** 
 	 * 积分支付的金额，单位为元，两位小数。该金额代表该笔交易中用户使用积分支付的金额，比如集分宝或者支付宝实时优惠等
@@ -684,6 +690,13 @@ json格式。
 	}
 	public List<PaymentInfoWithId> getPaymentInfoWithIdList( ) {
 		return this.paymentInfoWithIdList;
+	}
+
+	public void setPeriodScene(String periodScene) {
+		this.periodScene = periodScene;
+	}
+	public String getPeriodScene( ) {
+		return this.periodScene;
 	}
 
 	public void setPointAmount(String pointAmount) {

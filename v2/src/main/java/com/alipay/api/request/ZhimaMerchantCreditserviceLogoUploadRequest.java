@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.merchant.creditservice.logo.upload request
  * 
  * @author auto create
- * @since 1.0, 2024-03-11 15:21:58
+ * @since 1.0, 2024-05-06 17:32:01
  */
 public class ZhimaMerchantCreditserviceLogoUploadRequest implements AlipayUploadRequest<ZhimaMerchantCreditserviceLogoUploadResponse> {
 
@@ -21,7 +21,7 @@ public class ZhimaMerchantCreditserviceLogoUploadRequest implements AlipayUpload
 	private String apiVersion="1.0";
 
 	/** 
-	* 商户logo图片的二进制字节流，文件大小不超过 60KB，图片尺寸大小需保证 80*80。
+	* 商户logo图片的二进制字节流，文件大小不超过 60KB，图片尺寸大小需保证 160*160。
 	 */
 	private FileItem file;
 

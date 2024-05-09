@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 加油订单券信息
  *
  * @author auto create
- * @since 1.0, 2023-08-23 11:02:57
+ * @since 1.0, 2024-05-06 09:39:42
  */
 public class FuelVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6559664164555361418L;
+	private static final long serialVersionUID = 4747234734581237677L;
 
 	/**
 	 * 券归属的活动编码

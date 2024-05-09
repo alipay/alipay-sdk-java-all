@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.customer.liferecord.quit response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:29:16
+ * @since 1.0, 2024-04-29 11:37:29
  */
 public class ZhimaCustomerLiferecordQuitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7484722869589727813L;
+	private static final long serialVersionUID = 7499683477622744891L;
 
 	/** 
 	 * 操作是否成功

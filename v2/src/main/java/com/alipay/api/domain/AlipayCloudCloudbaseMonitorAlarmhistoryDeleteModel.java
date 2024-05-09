@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 删除报警历史
  *
  * @author auto create
- * @since 1.0, 2024-04-11 09:46:21
+ * @since 1.0, 2024-05-08 14:35:20
  */
 public class AlipayCloudCloudbaseMonitorAlarmhistoryDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8159383963155475721L;
+	private static final long serialVersionUID = 3816465621397557724L;
 
 	/**
 	 * 小程序云app ID

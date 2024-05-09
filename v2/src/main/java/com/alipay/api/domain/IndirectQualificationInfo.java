@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class IndirectQualificationInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4119471788992189162L;
+	private static final long serialVersionUID = 8773813666771499796L;
 
 	/**
 	 * 行业经营许可证资质照片，一个行业类目下最多上传6张资质照片（使用图片上传接口）

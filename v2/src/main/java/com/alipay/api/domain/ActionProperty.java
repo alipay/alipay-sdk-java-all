@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创意交互行为属性实例值
  *
  * @author auto create
- * @since 1.0, 2024-03-01 14:59:36
+ * @since 1.0, 2024-04-30 15:41:51
  */
 public class ActionProperty extends AlipayObject {
 
-	private static final long serialVersionUID = 3395348523759786583L;
+	private static final long serialVersionUID = 6368182986554876332L;
 
 	/**
 	 * 属性C端渲染key

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VenueOrderTradeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2646731357594664476L;
+	private static final long serialVersionUID = 8591277487866947498L;
 
 	/**
 	 * 金额(单位：元)，保留两位小数。支付时为订单金额、退款时为交易退款金额

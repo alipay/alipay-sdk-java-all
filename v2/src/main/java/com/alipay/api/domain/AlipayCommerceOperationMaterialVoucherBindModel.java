@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物料领券信息绑定接口
  *
  * @author auto create
- * @since 1.0, 2021-09-23 14:05:10
+ * @since 1.0, 2024-04-29 10:22:52
  */
 public class AlipayCommerceOperationMaterialVoucherBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3617574999776265642L;
+	private static final long serialVersionUID = 7226641323159786465L;
 
 	/**
 	 * 外部业务号，用于幂等使用

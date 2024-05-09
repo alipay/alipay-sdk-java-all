@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 统一收单交易退款接口
  *
  * @author auto create
- * @since 1.0, 2024-04-15 18:40:02
+ * @since 1.0, 2024-05-07 11:34:50
  */
 public class AlipayTradeRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3221768222621419621L;
+	private static final long serialVersionUID = 5399996156237588363L;
 
 	/**
 	 * 退款包含的商品列表信息，Json格式。
@@ -53,7 +53,7 @@ public class AlipayTradeRefundModel extends AlipayObject {
 
 	/**
 	 * 查询选项。
-商户通过上送该参数来定制同步需要额外返回的信息字段，数组格式。支持：refund_detail_item_list：退款使用的资金渠道；deposit_back_info：触发银行卡冲退信息通知；
+商户通过上送该参数来定制同步需要额外返回的信息字段，数组格式。
 	 */
 	@ApiListField("query_options")
 	@ApiField("string")
@@ -107,6 +107,12 @@ public class AlipayTradeRefundModel extends AlipayObject {
 	@ApiListField("refund_royalty_parameters")
 	@ApiField("open_api_royalty_detail_info_pojo")
 	private List<OpenApiRoyaltyDetailInfoPojo> refundRoyaltyParameters;
+
+	/**
+	 * 针对账期交易，在确认结算后退款的话，需要指定确认结算时的结算单号。
+	 */
+	@ApiField("related_settle_confirm_no")
+	private String relatedSettleConfirmNo;
 
 	/**
 	 * 商户门店编号，由商家自定义。需保证当前商户下唯一。
@@ -216,6 +222,13 @@ public class AlipayTradeRefundModel extends AlipayObject {
 	}
 	public void setRefundRoyaltyParameters(List<OpenApiRoyaltyDetailInfoPojo> refundRoyaltyParameters) {
 		this.refundRoyaltyParameters = refundRoyaltyParameters;
+	}
+
+	public String getRelatedSettleConfirmNo() {
+		return this.relatedSettleConfirmNo;
+	}
+	public void setRelatedSettleConfirmNo(String relatedSettleConfirmNo) {
+		this.relatedSettleConfirmNo = relatedSettleConfirmNo;
 	}
 
 	public String getStoreId() {

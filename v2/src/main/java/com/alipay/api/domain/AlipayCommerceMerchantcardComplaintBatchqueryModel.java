@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页查询投诉列表
  *
  * @author auto create
- * @since 1.0, 2024-04-18 18:02:33
+ * @since 1.0, 2024-04-29 20:01:15
  */
 public class AlipayCommerceMerchantcardComplaintBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1666481835625893217L;
+	private static final long serialVersionUID = 4351723876323511913L;
 
 	/**
 	 * 投诉状态
@@ -35,7 +35,7 @@ public class AlipayCommerceMerchantcardComplaintBatchqueryModel extends AlipayOb
 	 * 页大小
 	 */
 	@ApiField("page_size")
-	private String pageSize;
+	private Long pageSize;
 
 	public String getComplaintStatus() {
 		return this.complaintStatus;
@@ -58,10 +58,10 @@ public class AlipayCommerceMerchantcardComplaintBatchqueryModel extends AlipayOb
 		this.pageNum = pageNum;
 	}
 
-	public String getPageSize() {
+	public Long getPageSize() {
 		return this.pageSize;
 	}
-	public void setPageSize(String pageSize) {
+	public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}
 

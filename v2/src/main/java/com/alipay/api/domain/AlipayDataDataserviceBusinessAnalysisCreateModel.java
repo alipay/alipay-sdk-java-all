@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 指定商圈商圈分析任务创建
  *
  * @author auto create
- * @since 1.0, 2024-03-07 18:07:37
+ * @since 1.0, 2024-04-28 17:45:44
  */
 public class AlipayDataDataserviceBusinessAnalysisCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5256725123647387194L;
+	private static final long serialVersionUID = 4389246447656598216L;
+
+	/**
+	 * 商户授权码
+	 */
+	@ApiField("business_code")
+	private String businessCode;
 
 	/**
 	 * 商圈ID
@@ -59,6 +65,13 @@ public class AlipayDataDataserviceBusinessAnalysisCreateModel extends AlipayObje
 	 */
 	@ApiField("task_name")
 	private String taskName;
+
+	public String getBusinessCode() {
+		return this.businessCode;
+	}
+	public void setBusinessCode(String businessCode) {
+		this.businessCode = businessCode;
+	}
 
 	public String getMallId() {
 		return this.mallId;

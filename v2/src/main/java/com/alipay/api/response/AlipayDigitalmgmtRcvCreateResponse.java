@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.digitalmgmt.rcv.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-15 10:01:44
+ * @since 1.0, 2024-04-29 12:09:26
  */
 public class AlipayDigitalmgmtRcvCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4723574216384989162L;
+	private static final long serialVersionUID = 5468232779923533487L;
 
 	/** 
 	 * rcv编码列表

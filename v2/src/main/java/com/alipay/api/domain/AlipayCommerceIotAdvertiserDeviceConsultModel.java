@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceIotAdvertiserDeviceConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7629943739573794953L;
+	private static final long serialVersionUID = 4438872615525454992L;
 
 	/**
 	 * sn列表，最多100个

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 履约单退款
  *
  * @author auto create
- * @since 1.0, 2023-08-31 23:45:18
+ * @since 1.0, 2024-05-07 11:16:34
  */
 public class AlipayEbppIndustryPerformOrderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6446633174779994239L;
+	private static final long serialVersionUID = 3211416691969781269L;
 
 	/**
 	 * 行业业务订单号，即通过行业受理平台创建的业务单据

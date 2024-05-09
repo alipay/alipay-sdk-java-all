@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.digitalmgmt.punchout.pr.create request
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 00:26:43
+ * @since 1.0, 2024-05-08 10:56:38
  */
 public class AlipayDigitalmgmtPunchoutPrCreateRequest implements AlipayRequest<AlipayDigitalmgmtPunchoutPrCreateResponse> {
 

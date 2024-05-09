@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.monitor.alarmrule.modify request
  * 
  * @author auto create
- * @since 1.0, 2024-04-11 09:47:01
+ * @since 1.0, 2024-05-08 14:33:19
  */
 public class AlipayCloudCloudbaseMonitorAlarmruleModifyRequest implements AlipayRequest<AlipayCloudCloudbaseMonitorAlarmruleModifyResponse> {
 

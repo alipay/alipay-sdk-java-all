@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.ep.basicinfo.alter.subscribe request
  * 
  * @author auto create
- * @since 1.0, 2024-04-24 14:24:24
+ * @since 1.0, 2024-05-08 12:02:01
  */
 public class ZhimaCreditEpBasicinfoAlterSubscribeRequest implements AlipayRequest<ZhimaCreditEpBasicinfoAlterSubscribeResponse> {
 

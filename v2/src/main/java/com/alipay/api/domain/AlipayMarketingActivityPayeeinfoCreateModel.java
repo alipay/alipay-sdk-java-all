@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingActivityPayeeinfoCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8764614837665296599L;
+	private static final long serialVersionUID = 5782928128723275247L;
 
 	/**
 	 * 结算使用的收款账号。收款账号必须是支付宝的2088开头的账号。

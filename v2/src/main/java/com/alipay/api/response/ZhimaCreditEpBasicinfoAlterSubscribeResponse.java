@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.basicinfo.alter.subscribe response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-24 14:24:24
+ * @since 1.0, 2024-05-08 12:02:01
  */
 public class ZhimaCreditEpBasicinfoAlterSubscribeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3324638133349937468L;
+	private static final long serialVersionUID = 6359122912225756441L;
 
 	/** 
 	 * 企业基本信息列表

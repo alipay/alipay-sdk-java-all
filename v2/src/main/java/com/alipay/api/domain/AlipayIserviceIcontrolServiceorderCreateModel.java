@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建服务单
  *
  * @author auto create
- * @since 1.0, 2024-04-17 10:16:01
+ * @since 1.0, 2024-04-28 20:49:26
  */
 public class AlipayIserviceIcontrolServiceorderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2791638633271712166L;
+	private static final long serialVersionUID = 1335378445779199731L;
 
 	/**
 	 * 阿里云呼入任务创建模型

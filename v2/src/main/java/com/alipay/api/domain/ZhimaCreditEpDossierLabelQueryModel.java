@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻企业信用企业标签信息查询
  *
  * @author auto create
- * @since 1.0, 2024-04-19 13:35:04
+ * @since 1.0, 2024-05-06 10:38:38
  */
 public class ZhimaCreditEpDossierLabelQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1183441884121497971L;
+	private static final long serialVersionUID = 1827337345654811834L;
 
 	/**
 	 * 统一社会信用代码或营业执照注册号
@@ -25,6 +25,12 @@ public class ZhimaCreditEpDossierLabelQueryModel extends AlipayObject {
 	@ApiField("scene_code")
 	private String sceneCode;
 
+	/**
+	 * 是否用于展示
+	 */
+	@ApiField("show_flag")
+	private Boolean showFlag;
+
 	public String getEpCertNo() {
 		return this.epCertNo;
 	}
@@ -37,6 +43,13 @@ public class ZhimaCreditEpDossierLabelQueryModel extends AlipayObject {
 	}
 	public void setSceneCode(String sceneCode) {
 		this.sceneCode = sceneCode;
+	}
+
+	public Boolean getShowFlag() {
+		return this.showFlag;
+	}
+	public void setShowFlag(Boolean showFlag) {
+		this.showFlag = showFlag;
 	}
 
 }

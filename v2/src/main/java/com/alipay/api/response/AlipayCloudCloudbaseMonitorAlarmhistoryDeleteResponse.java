@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.monitor.alarmhistory.delete response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-11 09:47:00
+ * @since 1.0, 2024-05-08 14:35:20
  */
 public class AlipayCloudCloudbaseMonitorAlarmhistoryDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7631391486432395684L;
+	private static final long serialVersionUID = 4427668194655543418L;
 
 	/** 
 	 * 删除结果

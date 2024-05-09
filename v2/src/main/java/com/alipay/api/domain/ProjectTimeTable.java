@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ProjectTimeTable extends AlipayObject {
 
-	private static final long serialVersionUID = 5881361244112529721L;
+	private static final long serialVersionUID = 3132429215126295772L;
 
 	/**
 	 * 计划开始时间

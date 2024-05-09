@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 生意参谋指定商圈-查看商圈报告
  *
  * @author auto create
- * @since 1.0, 2024-03-07 18:07:53
+ * @since 1.0, 2024-04-28 17:45:44
  */
 public class AlipayDataDataserviceBusinessReportQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6793945822773444542L;
+	private static final long serialVersionUID = 3591286944542767419L;
 
 	/**
 	 * 商圈内品牌排行榜的行业筛选条件;
@@ -24,6 +24,12 @@ public class AlipayDataDataserviceBusinessReportQueryModel extends AlipayObject 
 	@ApiListField("brand_rank_industry_dto")
 	@ApiField("business_industry_d_t_o")
 	private List<BusinessIndustryDTO> brandRankIndustryDto;
+
+	/**
+	 * 商户授权码
+	 */
+	@ApiField("business_code")
+	private String businessCode;
 
 	/**
 	 * 需要查询的商圈概况的指标的集合
@@ -55,6 +61,13 @@ public class AlipayDataDataserviceBusinessReportQueryModel extends AlipayObject 
 	}
 	public void setBrandRankIndustryDto(List<BusinessIndustryDTO> brandRankIndustryDto) {
 		this.brandRankIndustryDto = brandRankIndustryDto;
+	}
+
+	public String getBusinessCode() {
+		return this.businessCode;
+	}
+	public void setBusinessCode(String businessCode) {
+		this.businessCode = businessCode;
 	}
 
 	public List<String> getMetricKeys() {

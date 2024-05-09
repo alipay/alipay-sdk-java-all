@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.icontrol.serviceorder.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-17 10:16:01
+ * @since 1.0, 2024-04-28 20:49:26
  */
 public class AlipayIserviceIcontrolServiceorderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2771257979522918781L;
+	private static final long serialVersionUID = 6163888767896672151L;
 
 	/** 
 	 * 经度

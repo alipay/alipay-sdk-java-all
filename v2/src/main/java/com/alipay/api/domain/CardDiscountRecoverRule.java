@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 优惠追回规则
  *
  * @author auto create
- * @since 1.0, 2024-04-18 18:01:18
+ * @since 1.0, 2024-04-29 14:15:17
  */
 public class CardDiscountRecoverRule extends AlipayObject {
 
-	private static final long serialVersionUID = 1648362231297415146L;
+	private static final long serialVersionUID = 5378368317125226774L;
 
 	/**
 	 * 用户使用满多少期后才允许用户主动解约，不传默认不允许用户主动解约

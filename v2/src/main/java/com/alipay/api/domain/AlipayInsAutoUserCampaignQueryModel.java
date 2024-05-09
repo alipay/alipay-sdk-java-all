@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayInsAutoUserCampaignQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1463816752173516819L;
+	private static final long serialVersionUID = 7371653417789798337L;
 
 	/**
 	 * 车险活动类型编码。

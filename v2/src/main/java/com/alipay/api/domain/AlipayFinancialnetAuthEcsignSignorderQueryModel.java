@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签呗电子签约单查询服务
  *
  * @author auto create
- * @since 1.0, 2022-10-28 10:14:48
+ * @since 1.0, 2024-04-29 20:14:15
  */
 public class AlipayFinancialnetAuthEcsignSignorderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5448526757711927775L;
+	private static final long serialVersionUID = 4873173829849228416L;
+
+	/**
+	 * 签约请求代理模式，说明被代理的对象，其中proxiedPid是被代理的商户的PID，非UID
+	 */
+	@ApiField("ext_info")
+	private String extInfo;
 
 	/**
 	 * 外部订单号
@@ -36,6 +42,13 @@ public class AlipayFinancialnetAuthEcsignSignorderQueryModel extends AlipayObjec
 	 */
 	@ApiField("solution_code")
 	private String solutionCode;
+
+	public String getExtInfo() {
+		return this.extInfo;
+	}
+	public void setExtInfo(String extInfo) {
+		this.extInfo = extInfo;
+	}
 
 	public String getOutOrderNo() {
 		return this.outOrderNo;

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.merchant.subsidiaries.close response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-11 16:51:47
+ * @since 1.0, 2024-05-09 09:51:01
  */
 public class ZhimaMerchantSubsidiariesCloseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3721296816443269111L;
+	private static final long serialVersionUID = 4644646628177286251L;
 
 	/** 
 	 * 业务错误码

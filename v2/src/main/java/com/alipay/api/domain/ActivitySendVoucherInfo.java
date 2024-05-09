@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ActivitySendVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7159466759919363384L;
+	private static final long serialVersionUID = 4294122242934615272L;
 
 	/**
 	 * 商家券活动id。 在配券时，服务商配置的voucher_type 为 EXCHANGE_VOUCHER的活动。

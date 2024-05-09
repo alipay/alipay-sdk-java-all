@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppFacepayBillCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3124335161634144884L;
+	private static final long serialVersionUID = 3825222322732311717L;
 
 	/**
 	 * 支付宝交易流水号(和user_identity_code、user_id三者至少传一个)

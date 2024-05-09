@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class Gavinmed extends AlipayObject {
 
-	private static final long serialVersionUID = 1234973717684587863L;
+	private static final long serialVersionUID = 6844445556147256997L;
 
 	/**
 	 * 复杂类型嵌入

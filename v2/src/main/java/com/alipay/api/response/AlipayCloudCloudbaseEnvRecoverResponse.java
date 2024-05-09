@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.env.recover response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-16 10:02:00
+ * @since 1.0, 2024-05-08 14:31:49
  */
 public class AlipayCloudCloudbaseEnvRecoverResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1394353139594411211L;
+	private static final long serialVersionUID = 6622253497495857853L;
 
 	/** 
 	 * 复机结果

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.order.itembill.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2024-04-23 21:51:00
+ * @since 1.0, 2024-04-30 13:45:11
  */
 public class AlipayOpenMiniOrderItembillBatchqueryRequest implements AlipayRequest<AlipayOpenMiniOrderItembillBatchqueryResponse> {
 

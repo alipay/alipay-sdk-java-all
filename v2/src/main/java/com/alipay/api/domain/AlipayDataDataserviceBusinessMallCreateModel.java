@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生意参谋置顶商圈-新增商圈
  *
  * @author auto create
- * @since 1.0, 2024-03-07 18:07:13
+ * @since 1.0, 2024-04-30 10:07:52
  */
 public class AlipayDataDataserviceBusinessMallCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3643318874725296948L;
+	private static final long serialVersionUID = 5551471872727114689L;
+
+	/**
+	 * 商户授权码
+	 */
+	@ApiField("business_code")
+	private String businessCode;
 
 	/**
 	 * LBS距离范围，值小于等于5000
@@ -42,6 +48,13 @@ public class AlipayDataDataserviceBusinessMallCreateModel extends AlipayObject {
 	 */
 	@ApiField("partner_id")
 	private String partnerId;
+
+	public String getBusinessCode() {
+		return this.businessCode;
+	}
+	public void setBusinessCode(String businessCode) {
+		this.businessCode = businessCode;
+	}
 
 	public String getMallDistance() {
 		return this.mallDistance;

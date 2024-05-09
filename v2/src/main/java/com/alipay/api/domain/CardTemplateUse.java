@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品使用信息
  *
  * @author auto create
- * @since 1.0, 2024-04-18 18:01:18
+ * @since 1.0, 2024-04-29 14:15:17
  */
 public class CardTemplateUse extends AlipayObject {
 
-	private static final long serialVersionUID = 6895255367412729145L;
+	private static final long serialVersionUID = 1285142152986111961L;
 
 	/**
 	 * 周期付需要配置周期信息
@@ -48,7 +48,7 @@ public class CardTemplateUse extends AlipayObject {
 	private Long usableCount;
 
 	/**
-	 * 传入指定商品的可用门店ID，不传代表所有门店可用
+	 * 传入指定商品的可用门店ID
 	 */
 	@ApiListField("usable_shop_list")
 	@ApiField("string")

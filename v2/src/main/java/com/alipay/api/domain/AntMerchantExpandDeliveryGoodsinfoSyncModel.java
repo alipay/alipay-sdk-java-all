@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物流发货校验接口
  *
  * @author auto create
- * @since 1.0, 2024-04-09 17:08:16
+ * @since 1.0, 2024-04-29 20:51:50
  */
 public class AntMerchantExpandDeliveryGoodsinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8621773543666319751L;
+	private static final long serialVersionUID = 1732718829516683522L;
 
 	/**
 	 * 配送指令ID
@@ -30,6 +30,12 @@ public class AntMerchantExpandDeliveryGoodsinfoSyncModel extends AlipayObject {
 	 */
 	@ApiField("logistics_no")
 	private String logisticsNo;
+
+	/**
+	 * 码值信息
+	 */
+	@ApiField("qrcodes")
+	private String qrcodes;
 
 	/**
 	 * 发货标签，全局唯一
@@ -62,6 +68,13 @@ public class AntMerchantExpandDeliveryGoodsinfoSyncModel extends AlipayObject {
 	}
 	public void setLogisticsNo(String logisticsNo) {
 		this.logisticsNo = logisticsNo;
+	}
+
+	public String getQrcodes() {
+		return this.qrcodes;
+	}
+	public void setQrcodes(String qrcodes) {
+		this.qrcodes = qrcodes;
 	}
 
 	public String getSendGoodsTag() {

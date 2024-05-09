@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ZMGOCycleWithholdConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 2671629435994338239L;
+	private static final long serialVersionUID = 4836579328795197529L;
 
 	/**
 	 * 扣款计划

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.merchant.subsidiaries.apply request
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:28:32
+ * @since 1.0, 2024-05-09 09:51:15
  */
 public class ZhimaMerchantSubsidiariesApplyRequest implements AlipayRequest<ZhimaMerchantSubsidiariesApplyResponse> {
 

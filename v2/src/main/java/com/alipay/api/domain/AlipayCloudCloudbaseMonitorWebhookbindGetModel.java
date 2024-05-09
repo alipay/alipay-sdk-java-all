@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 单个 webhook 绑定查询
  *
  * @author auto create
- * @since 1.0, 2024-04-11 09:46:06
+ * @since 1.0, 2024-05-08 14:33:34
  */
 public class AlipayCloudCloudbaseMonitorWebhookbindGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5167137137828716171L;
+	private static final long serialVersionUID = 8389348875283749254L;
 
 	/**
 	 * 绑定id

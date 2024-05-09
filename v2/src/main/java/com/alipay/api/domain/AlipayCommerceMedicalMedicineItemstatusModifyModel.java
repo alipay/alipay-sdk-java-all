@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗药品商品上下架状态修改接口
  *
  * @author auto create
- * @since 1.0, 2024-04-20 13:12:31
+ * @since 1.0, 2024-05-08 13:59:14
  */
 public class AlipayCommerceMedicalMedicineItemstatusModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7634757181675414742L;
+	private static final long serialVersionUID = 8565668369172983984L;
 
 	/**
 	 * 支付宝平台侧商品ID

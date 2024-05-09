@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.monitor.alarmhistory.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-11 09:47:00
+ * @since 1.0, 2024-05-08 14:33:57
  */
 public class AlipayCloudCloudbaseMonitorAlarmhistoryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7384663812565296479L;
+	private static final long serialVersionUID = 1664175635313979521L;
 
 	/** 
 	 * 告警历史信息

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 合并转账时的单笔转账单据详情
  *
  * @author auto create
- * @since 1.0, 2024-04-26 11:39:48
+ * @since 1.0, 2024-04-29 16:55:16
  */
 public class TransOrderDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5281311584615865813L;
+	private static final long serialVersionUID = 5817366723766293562L;
 
 	/**
 	 * JSON格式，传递业务扩展参数，具体业务参数取值请以接入文档示例为准！

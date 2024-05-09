@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.payafteruse.creditbizorder.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-09 14:42:29
+ * @since 1.0, 2024-05-08 13:37:02
  */
 public class ZhimaCreditPayafteruseCreditbizorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1888575278397963296L;
+	private static final long serialVersionUID = 1327173947642531183L;
 
 	/** 
 	 * 订单创建时间
@@ -34,7 +34,12 @@ public class ZhimaCreditPayafteruseCreditbizorderQueryResponse extends AlipayRes
 	private String creditBizOrderId;
 
 	/** 
-	 * 信用服务订单状态。INIT: 下单状态；TRADE_CLOSED: 订单取消或者交易全额退款； TRADE_FINISHED：扣款成功状态
+	 * 信用服务订单状态，区分不同产品：
+（1）针对产品「先用后付」，涉及状态如下：INIT: 下单状态；TRADE_CLOSED: 订单取消或者交易全额退款； TRADE_FINISHED：扣款成功状态。
+
+（2）针对产品「芝麻风险评估与召回」，状态定义如下：
+[INIT: 下单状态]；[WAIT_FULFILL：待守约]；[OVERDUE：已逾期]；[TRADE_FINISHED:已守约]；
+[TRADE_CLOSED：已取消]。
 	 */
 	@ApiField("order_status")
 	private String orderStatus;
@@ -52,7 +57,8 @@ public class ZhimaCreditPayafteruseCreditbizorderQueryResponse extends AlipayRes
 	private String totalAmount;
 
 	/** 
-	 * 支付宝交易号
+	 * 支付宝交易号。
+先用后付产品下必传；芝麻风险评估与召回产品下不传。
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;

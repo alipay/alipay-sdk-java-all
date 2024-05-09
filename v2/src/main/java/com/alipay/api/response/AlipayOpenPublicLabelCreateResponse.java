@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenPublicLabelCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2877835723523259184L;
+	private static final long serialVersionUID = 3573922649919134982L;
 
 	/** 
 	 * 支付宝返回的标签ID，开发者后续通过该ID进行标签的查询、修改、删除等操作

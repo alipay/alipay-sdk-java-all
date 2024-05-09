@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OriDestOdItem extends AlipayObject {
 
-	private static final long serialVersionUID = 2848375787318794971L;
+	private static final long serialVersionUID = 2656933932659774286L;
 
 	/**
 	 * 目的geohash

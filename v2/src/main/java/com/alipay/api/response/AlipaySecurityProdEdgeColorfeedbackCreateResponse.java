@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySecurityProdEdgeColorfeedbackCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2143653812697955698L;
+	private static final long serialVersionUID = 6551359196526657627L;
 
 	/** 
 	 * 反馈生成的跟踪字符串，用于后续业务问题排查

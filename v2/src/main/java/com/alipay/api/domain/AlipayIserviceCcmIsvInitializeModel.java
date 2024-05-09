@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayIserviceCcmIsvInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7818857633895418291L;
+	private static final long serialVersionUID = 7222714445691884367L;
 
 	/**
 	 * 用于接入CCM iframe接口安全认证的 ISV 公钥，采用 base64 编码，秘钥对生成算法为 RSA2048。

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 删除 webhook 绑定
  *
  * @author auto create
- * @since 1.0, 2024-04-11 09:44:46
+ * @since 1.0, 2024-05-08 14:34:21
  */
 public class AlipayCloudCloudbaseMonitorWebhookbindDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7181481751983943853L;
+	private static final long serialVersionUID = 5675623746351436891L;
 
 	/**
 	 * 绑定id

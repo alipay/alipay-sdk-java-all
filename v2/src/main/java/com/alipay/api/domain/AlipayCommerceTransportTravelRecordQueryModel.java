@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户乘车行为
  *
  * @author auto create
- * @since 1.0, 2024-04-18 11:53:29
+ * @since 1.0, 2024-05-08 17:37:59
  */
 public class AlipayCommerceTransportTravelRecordQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1427673356954176755L;
+	private static final long serialVersionUID = 8859928589222454739L;
 
 	/**
 	 * 结束时间，精确到秒，小于结束时间（不包含结束时间）

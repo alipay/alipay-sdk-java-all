@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 物流运单状态变更同步
  *
  * @author auto create
- * @since 1.0, 2024-04-25 19:47:44
+ * @since 1.0, 2024-04-29 17:34:07
  */
 public class AlipayCommerceLogisticsWaybillStatusSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3553289229964664376L;
+	private static final long serialVersionUID = 8132589966723124826L;
 
 	/**
 	 * 接口调用方的渠道编码，由支付宝分配

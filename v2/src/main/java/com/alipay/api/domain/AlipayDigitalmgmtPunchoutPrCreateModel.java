@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 下pr单
  *
  * @author auto create
- * @since 1.0, 2023-07-11 11:10:39
+ * @since 1.0, 2024-05-08 10:56:38
  */
 public class AlipayDigitalmgmtPunchoutPrCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6687921154721529627L;
+	private static final long serialVersionUID = 5175812645962462232L;
 
 	/**
 	 * pur_req,用于下pr单

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 告警历史详情查询
  *
  * @author auto create
- * @since 1.0, 2024-04-11 09:45:24
+ * @since 1.0, 2024-05-08 14:34:09
  */
 public class AlipayCloudCloudbaseMonitorAlarmhistorydetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8411957651875677643L;
+	private static final long serialVersionUID = 5255729495389937922L;
 
 	/**
 	 * 小程序云app ID

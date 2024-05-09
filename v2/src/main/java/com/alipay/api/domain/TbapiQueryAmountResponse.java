@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TbapiQueryAmountResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 4191738675615596135L;
+	private static final long serialVersionUID = 8243957385133327654L;
 
 	/**
 	 * 指定产品码额度

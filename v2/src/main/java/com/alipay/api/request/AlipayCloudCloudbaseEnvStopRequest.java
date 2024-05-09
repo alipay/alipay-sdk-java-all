@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.env.stop request
  * 
  * @author auto create
- * @since 1.0, 2024-04-16 10:02:00
+ * @since 1.0, 2024-05-08 14:31:31
  */
 public class AlipayCloudCloudbaseEnvStopRequest implements AlipayRequest<AlipayCloudCloudbaseEnvStopResponse> {
 

@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AmapMapMapserviceIotfcaeIotfcaeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2731485451464867326L;
+	private static final long serialVersionUID = 2314158682863696299L;
 
 	/** 
 	 * 证件号

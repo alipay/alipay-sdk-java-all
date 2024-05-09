@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.env.stop response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-16 10:02:00
+ * @since 1.0, 2024-05-08 14:31:31
  */
 public class AlipayCloudCloudbaseEnvStopResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8117135791698123776L;
+	private static final long serialVersionUID = 1621461175767865328L;
 
 	/** 
 	 * 停服结果

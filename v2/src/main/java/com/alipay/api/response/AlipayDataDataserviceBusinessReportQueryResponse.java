@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.business.report.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-07 18:07:53
+ * @since 1.0, 2024-04-30 10:02:01
  */
 public class AlipayDataDataserviceBusinessReportQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8722959371325494133L;
+	private static final long serialVersionUID = 3773227744755148835L;
 
 	/** 
 	 * 商圈内品牌排行结果
