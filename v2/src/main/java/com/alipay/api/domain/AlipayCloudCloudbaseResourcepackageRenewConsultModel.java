@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 续费询价
  *
  * @author auto create
- * @since 1.0, 2023-08-22 19:31:33
+ * @since 1.0, 2024-05-13 16:20:31
  */
 public class AlipayCloudCloudbaseResourcepackageRenewConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7893943198924448967L;
+	private static final long serialVersionUID = 6328126169629893568L;
 
 	/**
 	 * 小程序id

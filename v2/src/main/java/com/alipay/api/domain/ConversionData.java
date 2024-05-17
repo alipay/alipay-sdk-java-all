@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 转化数据详情
  *
  * @author auto create
- * @since 1.0, 2024-04-18 11:00:57
+ * @since 1.0, 2024-05-14 10:40:56
  */
 public class ConversionData extends AlipayObject {
 
-	private static final long serialVersionUID = 8135949864359866655L;
+	private static final long serialVersionUID = 8752576224668135795L;
 
 	/**
 	 * 广告id
@@ -26,7 +26,16 @@ public class ConversionData extends AlipayObject {
 	 * 转化事件属性信息，用于转化事件类型相关属性规则上传。
 可支持上传属性的转化事件类型及属性规则请参考该文档：<a href='https://adpub.alipay.com/adrlark/ivdktpyh511x9r6i'>转化事件类型属性规则</a>
 	 */
+	@ApiListField("attribute_list")
+	@ApiField("conversion_property")
+	private List<ConversionProperty> attributeList;
+
+	/**
+	 * 转化事件属性信息，用于转化事件类型相关属性规则上传。
+可支持上传属性的转化事件类型及属性规则请参考该文档：<a href='https://adpub.alipay.com/adrlark/ivdktpyh511x9r6i'>转化事件类型属性规则</a> 当前字段已废弃(attributes命名不符合规范，需改名)
+	 */
 	@ApiField("attributes")
+	@Deprecated
 	private ConversionProperty attributes;
 
 	/**
@@ -196,6 +205,13 @@ IP+UA:ip ua拼接值
 	}
 	public void setAdId(String adId) {
 		this.adId = adId;
+	}
+
+	public List<ConversionProperty> getAttributeList() {
+		return this.attributeList;
+	}
+	public void setAttributeList(List<ConversionProperty> attributeList) {
+		this.attributeList = attributeList;
 	}
 
 	public ConversionProperty getAttributes() {

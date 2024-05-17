@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租赁订单修改
  *
  * @author auto create
- * @since 1.0, 2024-04-22 22:26:58
+ * @since 1.0, 2024-05-15 14:52:50
  */
 public class AlipayOpenMiniOrderModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2617288377175936191L;
+	private static final long serialVersionUID = 7561982843378865929L;
+
+	/**
+	 * 分账条款
+	 */
+	@ApiField("alloc_amount_info")
+	private AllocAmountInfoDTO allocAmountInfo;
 
 	/**
 	 * 商品修改信息
@@ -59,6 +65,13 @@ public class AlipayOpenMiniOrderModifyModel extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public AllocAmountInfoDTO getAllocAmountInfo() {
+		return this.allocAmountInfo;
+	}
+	public void setAllocAmountInfo(AllocAmountInfoDTO allocAmountInfo) {
+		this.allocAmountInfo = allocAmountInfo;
+	}
 
 	public List<GoodsInfoModifyDTO> getItemInfos() {
 		return this.itemInfos;

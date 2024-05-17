@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 标签反馈详情模型
  *
  * @author auto create
- * @since 1.0, 2024-04-28 16:48:50
+ * @since 1.0, 2024-05-13 14:53:14
  */
 public class LabelFeedbackDetailModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6779667175174911591L;
+	private static final long serialVersionUID = 2336379458151192623L;
 
 	/**
-	 * 曝光实力标内容
+	 * 曝光实力标内容代码列表
 	 */
 	@ApiListField("action_content")
 	@ApiField("string")

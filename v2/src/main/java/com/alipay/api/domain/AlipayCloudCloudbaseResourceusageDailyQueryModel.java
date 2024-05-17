@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 天维度用量信息
  *
  * @author auto create
- * @since 1.0, 2023-08-31 12:04:01
+ * @since 1.0, 2024-05-11 11:49:11
  */
 public class AlipayCloudCloudbaseResourceusageDailyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8489744649779872676L;
+	private static final long serialVersionUID = 2369444696228183129L;
 
 	/**
 	 * 小程序id

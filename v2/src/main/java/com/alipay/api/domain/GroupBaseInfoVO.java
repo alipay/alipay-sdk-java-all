@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 群组基础信息。包含群组id、群组名称、群组管理员列表等信息。
  *
  * @author auto create
- * @since 1.0, 2024-04-16 19:58:35
+ * @since 1.0, 2024-05-15 16:49:56
  */
 public class GroupBaseInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5593732696315939356L;
+	private static final long serialVersionUID = 4888717897692792937L;
 
 	/**
 	 * 是否禁言，true：已经被禁言了，false：未被禁言。

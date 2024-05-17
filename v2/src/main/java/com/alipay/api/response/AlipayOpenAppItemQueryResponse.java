@@ -7,6 +7,7 @@ import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.AppItemAttrVO;
 import com.alipay.api.domain.ItemDescInfoVO;
 import com.alipay.api.domain.GuideInfoVO;
+import com.alipay.api.domain.ItemEnrollFreezeContent;
 import com.alipay.api.domain.ItemRiskInfo;
 import com.alipay.api.domain.ItemSceneRiskInfo;
 import com.alipay.api.domain.ItemSkuSearchVO;
@@ -17,11 +18,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.item.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-26 15:24:49
+ * @since 1.0, 2024-05-15 17:02:02
  */
 public class AlipayOpenAppItemQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8817173963414355283L;
+	private static final long serialVersionUID = 1622967458238983439L;
 
 	/** 
 	 * 商品属性列表，kv形式
@@ -29,6 +30,12 @@ public class AlipayOpenAppItemQueryResponse extends AlipayResponse {
 	@ApiListField("attrs")
 	@ApiField("app_item_attr_v_o")
 	private List<AppItemAttrVO> attrs;
+
+	/** 
+	 * 透出商品是否自动推广：自动推广：true；不自动推广：false
+	 */
+	@ApiField("auto_marketing_delivery")
+	private Boolean autoMarketingDelivery;
 
 	/** 
 	 * 商品条形码
@@ -97,6 +104,12 @@ public class AlipayOpenAppItemQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("item_details_page_model")
 	private String itemDetailsPageModel;
+
+	/** 
+	 * 报名活动状态及文案
+	 */
+	@ApiField("item_enroll_freeze_content")
+	private ItemEnrollFreezeContent itemEnrollFreezeContent;
 
 	/** 
 	 * 支付宝平台侧商品ID，是支付宝平台侧商品的唯一标识，后续与平台交互，需要使用该 ID，建议持久化。
@@ -198,6 +211,13 @@ public class AlipayOpenAppItemQueryResponse extends AlipayResponse {
 		return this.attrs;
 	}
 
+	public void setAutoMarketingDelivery(Boolean autoMarketingDelivery) {
+		this.autoMarketingDelivery = autoMarketingDelivery;
+	}
+	public Boolean getAutoMarketingDelivery( ) {
+		return this.autoMarketingDelivery;
+	}
+
 	public void setBarcode(String barcode) {
 		this.barcode = barcode;
 	}
@@ -273,6 +293,13 @@ public class AlipayOpenAppItemQueryResponse extends AlipayResponse {
 	}
 	public String getItemDetailsPageModel( ) {
 		return this.itemDetailsPageModel;
+	}
+
+	public void setItemEnrollFreezeContent(ItemEnrollFreezeContent itemEnrollFreezeContent) {
+		this.itemEnrollFreezeContent = itemEnrollFreezeContent;
+	}
+	public ItemEnrollFreezeContent getItemEnrollFreezeContent( ) {
+		return this.itemEnrollFreezeContent;
 	}
 
 	public void setItemId(String itemId) {

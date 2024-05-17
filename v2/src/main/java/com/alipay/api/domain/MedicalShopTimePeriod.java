@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗健康门店时间段
  *
  * @author auto create
- * @since 1.0, 2024-02-26 10:45:29
+ * @since 1.0, 2024-05-09 14:35:28
  */
 public class MedicalShopTimePeriod extends AlipayObject {
 
-	private static final long serialVersionUID = 7837957432778569245L;
+	private static final long serialVersionUID = 2742659861683732742L;
 
 	/**
 	 * 时间段结束时间。

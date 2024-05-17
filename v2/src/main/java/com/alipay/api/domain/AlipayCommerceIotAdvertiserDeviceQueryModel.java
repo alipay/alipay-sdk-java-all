@@ -11,12 +11,13 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceIotAdvertiserDeviceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8285544478112518837L;
+	private static final long serialVersionUID = 4132219686123161429L;
 
 	/**
-	 * 设备类型，比如qt 或 pos
+	 * 设备类型，比如qt 或 pos 当前字段已废弃(历史设计未使用)
 	 */
 	@ApiField("device_type")
+	@Deprecated
 	private String deviceType;
 
 	/**
@@ -26,7 +27,7 @@ public class AlipayCommerceIotAdvertiserDeviceQueryModel extends AlipayObject {
 	private Long pageNum;
 
 	/**
-	 * 20
+	 * 页数据大小
 	 */
 	@ApiField("page_size")
 	private Long pageSize;

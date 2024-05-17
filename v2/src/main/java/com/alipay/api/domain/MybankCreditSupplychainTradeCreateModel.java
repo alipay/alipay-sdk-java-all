@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易创建
  *
  * @author auto create
- * @since 1.0, 2024-03-18 15:48:19
+ * @since 1.0, 2024-05-11 15:44:50
  */
 public class MybankCreditSupplychainTradeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3583414614988833377L;
+	private static final long serialVersionUID = 6133848822634596697L;
 
 	/**
 	 * 买家会员信息
@@ -22,13 +22,25 @@ public class MybankCreditSupplychainTradeCreateModel extends AlipayObject {
 	private Member buyer;
 
 	/**
-	 * 渠道，枚举如下：TMGXBL：天猫供销保理，TYZBL：通用自保理，TMZBL：天猫自保理，DSCYFRZ：大搜车预付融资，CNBILL：菜鸟电票
+	 * 根据具体的场景， 将需要的字段转为json串
+	 */
+	@ApiField("c_repay_plan")
+	private String cRepayPlan;
+
+	/**
+	 * 渠道，枚举如下：TMGXBL：天猫供销保理，TYZBL：通用自保理，TMZBL：天猫自保理，DSCYFRZ：大搜车预付融资，CNBILL：菜鸟电票，RZZL： 融资租赁
 	 */
 	@ApiField("channel")
 	private String channel;
 
 	/**
-	 * 账款到期支付日期
+	 * 保理场景： 账款到期支付日期，
+融租场景： 放款申请单最后一次扣款/还款时间
+融租用例：
+当前时间: 2021年4月
+还款日: 每月20号
+分期期数: 12
+则计算: 2021.04.20 加 12个月，得出: 2022.04.20 00:00:00
 	 */
 	@ApiField("expire_date")
 	private Date expireDate;
@@ -40,7 +52,14 @@ public class MybankCreditSupplychainTradeCreateModel extends AlipayObject {
 	private String extData;
 
 	/**
+	 * 根据文档要求的字段，转json字符串
+	 */
+	@ApiField("file_link")
+	private String fileLink;
+
+	/**
 	 * 外部订单号，格式：机构ipRoleId_外部订单号
+融租场景:  融租平台IpRoleId_预授权编号(直付通签约号zhifutong_ar_no)
 	 */
 	@ApiField("out_order_no")
 	private String outOrderNo;
@@ -89,6 +108,7 @@ public class MybankCreditSupplychainTradeCreateModel extends AlipayObject {
 
 	/**
 	 * FACTORING：保理，PREPAYMENT：预付融资，CREDITPAY：信任付，PREPAYBILL：电票预付
+LEASING: 融租
 	 */
 	@ApiField("trade_type")
 	private String tradeType;
@@ -98,6 +118,13 @@ public class MybankCreditSupplychainTradeCreateModel extends AlipayObject {
 	}
 	public void setBuyer(Member buyer) {
 		this.buyer = buyer;
+	}
+
+	public String getcRepayPlan() {
+		return this.cRepayPlan;
+	}
+	public void setcRepayPlan(String cRepayPlan) {
+		this.cRepayPlan = cRepayPlan;
 	}
 
 	public String getChannel() {
@@ -119,6 +146,13 @@ public class MybankCreditSupplychainTradeCreateModel extends AlipayObject {
 	}
 	public void setExtData(String extData) {
 		this.extData = extData;
+	}
+
+	public String getFileLink() {
+		return this.fileLink;
+	}
+	public void setFileLink(String fileLink) {
+		this.fileLink = fileLink;
 	}
 
 	public String getOutOrderNo() {

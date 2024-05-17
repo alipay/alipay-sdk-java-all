@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fincore.compliance.template.component.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 23:56:48
+ * @since 1.0, 2024-05-13 15:02:37
  */
 public class AlipayFincoreComplianceTemplateComponentBatchqueryRequest implements AlipayRequest<AlipayFincoreComplianceTemplateComponentBatchqueryResponse> {
 

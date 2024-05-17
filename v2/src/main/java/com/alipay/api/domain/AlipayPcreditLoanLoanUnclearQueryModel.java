@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPcreditLoanLoanUnclearQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2412888982884523369L;
+	private static final long serialVersionUID = 5139716382696121632L;
 
 	/**
 	 * 预算类型，取值{CLEAR, OVD_AND_CURRENT}：CLEAR-结清预算, OVD_AND_CURRENT-逾期和当期预算

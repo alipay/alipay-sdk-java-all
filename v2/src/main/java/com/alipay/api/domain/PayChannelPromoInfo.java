@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 渠道信息
  *
  * @author auto create
- * @since 1.0, 2024-03-01 15:05:09
+ * @since 1.0, 2024-05-13 21:04:16
  */
 public class PayChannelPromoInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6622148426629368537L;
+	private static final long serialVersionUID = 7771981838434211844L;
 
 	/**
 	 * 渠道额度
@@ -64,14 +67,16 @@ public class PayChannelPromoInfo extends AlipayObject {
 	/**
 	 * 分期模型
 	 */
-	@ApiField("installment_info_list")
-	private InstallmentInfo installmentInfoList;
+	@ApiListField("installment_info_list")
+	@ApiField("installment_info")
+	private List<InstallmentInfo> installmentInfoList;
 
 	/**
 	 * 营销模型
 	 */
-	@ApiField("operation_list")
-	private PrePayOperationInfo operationList;
+	@ApiListField("operation_list")
+	@ApiField("pre_pay_operation_info")
+	private List<PrePayOperationInfo> operationList;
 
 	public String getChannelBalance() {
 		return this.channelBalance;
@@ -129,17 +134,17 @@ public class PayChannelPromoInfo extends AlipayObject {
 		this.channelOperationInfo = channelOperationInfo;
 	}
 
-	public InstallmentInfo getInstallmentInfoList() {
+	public List<InstallmentInfo> getInstallmentInfoList() {
 		return this.installmentInfoList;
 	}
-	public void setInstallmentInfoList(InstallmentInfo installmentInfoList) {
+	public void setInstallmentInfoList(List<InstallmentInfo> installmentInfoList) {
 		this.installmentInfoList = installmentInfoList;
 	}
 
-	public PrePayOperationInfo getOperationList() {
+	public List<PrePayOperationInfo> getOperationList() {
 		return this.operationList;
 	}
-	public void setOperationList(PrePayOperationInfo operationList) {
+	public void setOperationList(List<PrePayOperationInfo> operationList) {
 		this.operationList = operationList;
 	}
 

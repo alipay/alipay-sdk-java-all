@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntMerchantExpandApprecommendAccountDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2674219428315343193L;
+	private static final long serialVersionUID = 2123186688885128131L;
 
 	/**
 	 * 待解绑账号PID

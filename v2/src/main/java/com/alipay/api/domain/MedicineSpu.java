@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 医药标准商品信息
  *
  * @author auto create
- * @since 1.0, 2024-04-23 16:08:52
+ * @since 1.0, 2024-05-09 14:35:20
  */
 public class MedicineSpu extends AlipayObject {
 
-	private static final long serialVersionUID = 5883159174648278879L;
+	private static final long serialVersionUID = 8797134779556761192L;
 
 	/**
 	 * 药品类型特有字段，给药途径

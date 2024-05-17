@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.jhjtest.predoc.cancel request
  * 
  * @author auto create
- * @since 1.0, 2024-04-29 16:32:01
+ * @since 1.0, 2024-05-16 16:32:01
  */
 public class AlipaySecurityProdJhjtestPredocCancelRequest implements AlipayRequest<AlipaySecurityProdJhjtestPredocCancelResponse> {
 
@@ -35,7 +35,7 @@ public class AlipaySecurityProdJhjtestPredocCancelRequest implements AlipayReque
 	private String prodCode;
 	private String notifyUrl;
 	private String returnUrl;
-	private boolean needEncrypt=false;
+	private boolean needEncrypt=true;
 	private AlipayObject bizModel=null;
 
 	public String getNotifyUrl() {

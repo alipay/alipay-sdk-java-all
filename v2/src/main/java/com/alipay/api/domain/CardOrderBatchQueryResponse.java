@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订购单分页查询结果
  *
  * @author auto create
- * @since 1.0, 2024-04-18 18:00:30
+ * @since 1.0, 2024-05-10 16:54:16
  */
 public class CardOrderBatchQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 6373425441976476294L;
+	private static final long serialVersionUID = 7594879272772371597L;
 
 	/**
 	 * 订购单ID
@@ -68,6 +68,12 @@ public class CardOrderBatchQueryResponse extends AlipayObject {
 	 */
 	@ApiField("remain_count")
 	private Long remainCount;
+
+	/**
+	 * 门店ID
+	 */
+	@ApiField("shop_id")
+	private String shopId;
 
 	/**
 	 * 总期数(次数)
@@ -142,6 +148,13 @@ public class CardOrderBatchQueryResponse extends AlipayObject {
 	}
 	public void setRemainCount(Long remainCount) {
 		this.remainCount = remainCount;
+	}
+
+	public String getShopId() {
+		return this.shopId;
+	}
+	public void setShopId(String shopId) {
+		this.shopId = shopId;
 	}
 
 	public Long getTotalCount() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EnergyGeneratedDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2243728357225289865L;
+	private static final long serialVersionUID = 3424949548811911776L;
 
 	/**
 	 * 能量g数

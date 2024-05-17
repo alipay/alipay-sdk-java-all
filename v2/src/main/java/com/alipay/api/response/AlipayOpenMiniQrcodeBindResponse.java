@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenMiniQrcodeBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2512327537968519697L;
+	private static final long serialVersionUID = 6166954881248577599L;
 
 	/** 
 	 * 路由规则组，用于唯一标记一条路由规则

@@ -9,14 +9,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.xlight.task.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-27 10:02:04
+ * @since 1.0, 2024-05-11 19:12:01
  */
 public class AlipayDataDataserviceXlightTaskQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6551549784711692486L;
+	private static final long serialVersionUID = 3797633156228994739L;
 
 	/** 
-	 * 任务完成时间
+	 * 任务完成时间，任务已完成则会返回该字段
 	 */
 	@ApiField("finish_time")
 	private Date finishTime;

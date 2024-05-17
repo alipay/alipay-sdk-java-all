@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 添加员工
  *
  * @author auto create
- * @since 1.0, 2024-04-08 10:14:22
+ * @since 1.0, 2024-05-15 16:00:47
  */
 public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4321626491131745313L;
+	private static final long serialVersionUID = 6119738262434459831L;
 
 	/**
 	 * 员工所属部门
@@ -24,13 +24,13 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	private List<String> departmentIds;
 
 	/**
-	 * 证件号码，根据employee_cert_type指定的证件类型，传入对应的证件号码，用于企业人脸库员工刷脸开通时的核验。
+	 * 证件号码，根据employee_cert_type指定的证件类型，传入对应的证件号码，可用于企业人脸库员工刷脸开通时的核验。
 	 */
 	@ApiField("employee_cert_no")
 	private String employeeCertNo;
 
 	/**
-	 * 证件类型，用于企业人脸库员工刷脸开通时的核验
+	 * 证件类型，目前仅支持身份证，可用于企业人脸库员工刷脸开通时的核验
 	 */
 	@ApiField("employee_cert_type")
 	private String employeeCertType;
@@ -60,13 +60,13 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	private String employeeNo;
 
 	/**
-	 * 加密证件号（默认转大写后用SHA256加密）与证件类型搭配使用，不可与证件号同时存在
+	 * 加密证件号，需与证件类型搭配使用，可替代证件号码(employee_cert_no)字段
 	 */
 	@ApiField("encrypt_cert_no")
 	private String encryptCertNo;
 
 	/**
-	 * 加密手机号（默认使用SHA256加密，不可与手机号同时存在）
+	 * 加密手机号，可替代手机号(employee_mobile)字段
 	 */
 	@ApiField("encrypt_mobile")
 	private String encryptMobile;
@@ -78,7 +78,7 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	private String enterpriseId;
 
 	/**
-	 * 员工身份标识
+	 * 员工身份唯一标识
 	 */
 	@ApiField("identity")
 	private String identity;
@@ -90,7 +90,7 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	private String identityOpenId;
 
 	/**
-	 * 身份类型
+	 * 员工身份类型
 	 */
 	@ApiField("identity_type")
 	private String identityType;
@@ -115,7 +115,7 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	private String profiles;
 
 	/**
-	 * 角色列表，目前只支持填一种角色，默认为USER
+	 * 默认角色列表，目前只支持默认为 USER
 	 */
 	@ApiListField("role_list")
 	@ApiField("string")
@@ -128,14 +128,14 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	private String signReturnUrl;
 
 	/**
-	 * 签约链接是否需要携带员工身份信息(手机/邮箱)
+	 * 签约链接页面是否需要自动回显员工的身份信息（手机或邮箱），默认不显示
 	 */
 	@ApiField("sign_url_carry_info")
 	private Boolean signUrlCarryInfo;
 
 	/**
-	 * 代扣签约串，需调代扣接口获取签约串
-<a href='https://opendocs.alipay.com/pre-open/20170601105911096277new/moiixx?pathHash=10b1fa66'>参考文档</a>
+	 * 代扣签约字符串，需调支付宝个人协议页面签约接口，并按规则生成，见
+<a href='https://opendocs.alipay.com/pre-open/20170601105911096277new/moiixx?pathHash=10b1fa66'>参考文档</a> 3.1.3 生成签约字符串示例
 	 */
 	@ApiField("withholding_sign_str")
 	private String withholdingSignStr;

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序商品创建
  *
  * @author auto create
- * @since 1.0, 2024-04-22 17:52:29
+ * @since 1.0, 2024-05-15 16:42:51
  */
 public class AlipayOpenAppLocalitemCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4359916342881388722L;
+	private static final long serialVersionUID = 1584874171397856138L;
 
 	/**
 	 * 商品属性，通过alipay.open.app.localitem.template.query获取本地商品模板信息接口得到商品属性key，is_required=1时属性必填
@@ -22,6 +22,12 @@ public class AlipayOpenAppLocalitemCreateModel extends AlipayObject {
 	@ApiListField("attrs")
 	@ApiField("app_item_attr_v_o")
 	private List<AppItemAttrVO> attrs;
+
+	/**
+	 * 商品提报，如果需要自动推广则传此参数true，如没有这需求传false
+	 */
+	@ApiField("auto_marketing_delivery")
+	private Boolean autoMarketingDelivery;
 
 	/**
 	 * 商品类目ID，可通过alipay.open.app.localitem.allcategory.query接口获取
@@ -116,6 +122,13 @@ public class AlipayOpenAppLocalitemCreateModel extends AlipayObject {
 	}
 	public void setAttrs(List<AppItemAttrVO> attrs) {
 		this.attrs = attrs;
+	}
+
+	public Boolean getAutoMarketingDelivery() {
+		return this.autoMarketingDelivery;
+	}
+	public void setAutoMarketingDelivery(Boolean autoMarketingDelivery) {
+		this.autoMarketingDelivery = autoMarketingDelivery;
 	}
 
 	public String getCategoryId() {

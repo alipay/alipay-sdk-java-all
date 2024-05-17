@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 加油行业订单同步
  *
  * @author auto create
- * @since 1.0, 2024-03-06 14:32:04
+ * @since 1.0, 2024-05-10 13:45:16
  */
 public class AlipayCommerceGasOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3566171227243444154L;
+	private static final long serialVersionUID = 4315141699157372976L;
 
 	/**
 	 * 订单创建时间

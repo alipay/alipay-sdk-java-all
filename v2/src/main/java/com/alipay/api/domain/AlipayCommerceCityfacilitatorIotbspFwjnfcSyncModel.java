@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * NFC服务机初始化
  *
  * @author auto create
- * @since 1.0, 2024-05-07 16:01:16
+ * @since 1.0, 2024-05-16 19:26:14
  */
 public class AlipayCommerceCityfacilitatorIotbspFwjnfcSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3166281376613589115L;
+	private static final long serialVersionUID = 2762568825452971369L;
+
+	/**
+	 * 贴一贴后需要跳转的小程序appId
+	 */
+	@ApiField("merchant_app_id")
+	private String merchantAppId;
 
 	/**
 	 * nfc设备BizTid
@@ -32,10 +38,22 @@ public class AlipayCommerceCityfacilitatorIotbspFwjnfcSyncModel extends AlipayOb
 	private String openId;
 
 	/**
+	 * 小程序跳转地址参数，非必填，无参数可不配置
+	 */
+	@ApiField("params")
+	private String params;
+
+	/**
 	 * pid
 	 */
 	@ApiField("pid")
 	private String pid;
+
+	/**
+	 * 贴一贴小程序跳转的页面地址
+	 */
+	@ApiField("route_page")
+	private String routePage;
 
 	/**
 	 * 上位机biztid
@@ -54,6 +72,13 @@ public class AlipayCommerceCityfacilitatorIotbspFwjnfcSyncModel extends AlipayOb
 	 */
 	@ApiField("url")
 	private String url;
+
+	public String getMerchantAppId() {
+		return this.merchantAppId;
+	}
+	public void setMerchantAppId(String merchantAppId) {
+		this.merchantAppId = merchantAppId;
+	}
 
 	public String getNfcBizTid() {
 		return this.nfcBizTid;
@@ -76,11 +101,25 @@ public class AlipayCommerceCityfacilitatorIotbspFwjnfcSyncModel extends AlipayOb
 		this.openId = openId;
 	}
 
+	public String getParams() {
+		return this.params;
+	}
+	public void setParams(String params) {
+		this.params = params;
+	}
+
 	public String getPid() {
 		return this.pid;
 	}
 	public void setPid(String pid) {
 		this.pid = pid;
+	}
+
+	public String getRoutePage() {
+		return this.routePage;
+	}
+	public void setRoutePage(String routePage) {
+		this.routePage = routePage;
 	}
 
 	public String getUpperBizTid() {

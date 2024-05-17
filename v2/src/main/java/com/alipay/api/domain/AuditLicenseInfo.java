@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AuditLicenseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7868591978743281237L;
+	private static final long serialVersionUID = 3224836469452779839L;
 
 	/**
 	 * 营业执照名称，需要与营业执照保持一致

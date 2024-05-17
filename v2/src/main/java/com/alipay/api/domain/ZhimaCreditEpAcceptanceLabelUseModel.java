@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 实力标场景使用效果上报
  *
  * @author auto create
- * @since 1.0, 2024-04-29 14:52:25
+ * @since 1.0, 2024-05-13 14:53:14
  */
 public class ZhimaCreditEpAcceptanceLabelUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4176352537639223386L;
+	private static final long serialVersionUID = 4711188377274717157L;
 
 	/**
 	 * 实力标场景表现数据

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开放平台电商买家模型
  *
  * @author auto create
- * @since 1.0, 2024-04-08 14:32:51
+ * @since 1.0, 2024-05-15 14:25:46
  */
 public class EcomBuyerDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3627389695269529545L;
+	private static final long serialVersionUID = 7558298695916741686L;
 
 	/**
 	 * 买家联系地址
@@ -26,7 +26,7 @@ public class EcomBuyerDTO extends AlipayObject {
 	private String alipayId;
 
 	/**
-	 * 支付宝登陆账号
+	 * 支付宝登录账号
 	 */
 	@ApiField("alipay_logon_id")
 	private String alipayLogonId;
@@ -68,6 +68,18 @@ public class EcomBuyerDTO extends AlipayObject {
 	private String billAccountType;
 
 	/**
+	 * 买家协议保费
+	 */
+	@ApiField("buyer_agreement_premium")
+	private Long buyerAgreementPremium;
+
+	/**
+	 * 买家协议保额
+	 */
+	@ApiField("buyer_agreement_sum_insured")
+	private Long buyerAgreementSumInsured;
+
+	/**
 	 * 买家id
 	 */
 	@ApiField("buyer_id")
@@ -96,6 +108,12 @@ public class EcomBuyerDTO extends AlipayObject {
 	 */
 	@ApiField("buyer_tag_data")
 	private String buyerTagData;
+
+	/**
+	 * 买家淘宝id
+	 */
+	@ApiField("buyer_taobao_id")
+	private String buyerTaobaoId;
 
 	/**
 	 * 身份证号
@@ -193,6 +211,20 @@ TAOBAO 淘宝账户
 		this.billAccountType = billAccountType;
 	}
 
+	public Long getBuyerAgreementPremium() {
+		return this.buyerAgreementPremium;
+	}
+	public void setBuyerAgreementPremium(Long buyerAgreementPremium) {
+		this.buyerAgreementPremium = buyerAgreementPremium;
+	}
+
+	public Long getBuyerAgreementSumInsured() {
+		return this.buyerAgreementSumInsured;
+	}
+	public void setBuyerAgreementSumInsured(Long buyerAgreementSumInsured) {
+		this.buyerAgreementSumInsured = buyerAgreementSumInsured;
+	}
+
 	public String getBuyerId() {
 		return this.buyerId;
 	}
@@ -226,6 +258,13 @@ TAOBAO 淘宝账户
 	}
 	public void setBuyerTagData(String buyerTagData) {
 		this.buyerTagData = buyerTagData;
+	}
+
+	public String getBuyerTaobaoId() {
+		return this.buyerTaobaoId;
+	}
+	public void setBuyerTaobaoId(String buyerTaobaoId) {
+		this.buyerTaobaoId = buyerTaobaoId;
 	}
 
 	public String getIdCardNo() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankMarketingCampaignPrizeListQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3783718357898199626L;
+	private static final long serialVersionUID = 4225577973475646473L;
 
 	/**
 	 * 银行参与者id，是在网商银行创建会员后生成的id，网商银行会员的唯一标识

@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 关联关系信息模型
  *
  * @author auto create
- * @since 1.0, 2024-01-04 15:32:21
+ * @since 1.0, 2024-05-10 11:51:34
  */
 public class RelationNodeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4691168725449326438L;
+	private static final long serialVersionUID = 1653663988263981885L;
+
+	/**
+	 * 股权穿透持股比：当关联关系类型为 ubo 时，该值代表最终受益人到被查公司各路径的股权穿透持股比
+	 */
+	@ApiField("equity_penetration_ratio")
+	private String equityPenetrationRatio;
 
 	/**
 	 * 当前节点的层数
@@ -44,10 +50,17 @@ public class RelationNodeInfo extends AlipayObject {
 	private String relationCode;
 
 	/**
-	 * 持股比例
+	 * 持股比例：当关联关系类型为 ubo 时，该值为最终受益人相对于被查公司的受益持股比例（基于银发235号文、164号文的定义计算所得）
 	 */
 	@ApiField("ultimate_ratio")
 	private String ultimateRatio;
+
+	public String getEquityPenetrationRatio() {
+		return this.equityPenetrationRatio;
+	}
+	public void setEquityPenetrationRatio(String equityPenetrationRatio) {
+		this.equityPenetrationRatio = equityPenetrationRatio;
+	}
 
 	public Long getLayer() {
 		return this.layer;

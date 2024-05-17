@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 更新第三方权益
  *
  * @author auto create
- * @since 1.0, 2022-03-21 16:27:33
+ * @since 1.0, 2024-05-15 10:57:15
  */
 public class AntfortuneMarketingEquitystatusThirdpartModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1113638131546588771L;
+	private static final long serialVersionUID = 8471631562517275586L;
 
 	/**
 	 * 第三方权益码

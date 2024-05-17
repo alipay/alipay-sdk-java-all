@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.card.level.query request
  * 
  * @author auto create
- * @since 1.0, 2023-09-03 23:41:56
+ * @since 1.0, 2024-05-13 14:11:54
  */
 public class AlipayUserCardLevelQueryRequest implements AlipayRequest<AlipayUserCardLevelQueryResponse> {
 

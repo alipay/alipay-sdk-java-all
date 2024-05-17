@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 医保移动支付创单并支付
  *
  * @author auto create
- * @since 1.0, 2024-02-21 14:47:20
+ * @since 1.0, 2024-05-11 14:03:15
  */
 public class AlipayCommerceMedicalTradeCreateandpayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1796949877529882229L;
+	private static final long serialVersionUID = 7833849223668327773L;
 
 	/**
 	 * 医保个账支付金额
@@ -46,6 +46,12 @@ public class AlipayCommerceMedicalTradeCreateandpayModel extends AlipayObject {
 	 */
 	@ApiField("chrg_bch_no")
 	private String chrgBchNo;
+
+	/**
+	 * 默认值normal
+	 */
+	@ApiField("display_mode")
+	private String displayMode;
 
 	/**
 	 * 医保支付扩展参数
@@ -213,6 +219,13 @@ public class AlipayCommerceMedicalTradeCreateandpayModel extends AlipayObject {
 	}
 	public void setChrgBchNo(String chrgBchNo) {
 		this.chrgBchNo = chrgBchNo;
+	}
+
+	public String getDisplayMode() {
+		return this.displayMode;
+	}
+	public void setDisplayMode(String displayMode) {
+		this.displayMode = displayMode;
 	}
 
 	public InsurancePayExtendParams getExtendParams() {

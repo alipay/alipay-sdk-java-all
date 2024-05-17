@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开通下单并支付
  *
  * @author auto create
- * @since 1.0, 2023-10-30 17:06:58
+ * @since 1.0, 2024-05-15 11:58:43
  */
 public class AlipayCloudCloudbaseResourcepackageOpenCreateandpayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3776971476422128789L;
+	private static final long serialVersionUID = 2774679986983768816L;
+
+	/**
+	 * 支付宝用户ID
+	 */
+	@ApiField("alipay_user_id")
+	private String alipayUserId;
 
 	/**
 	 * 是否自动续费
@@ -38,6 +44,12 @@ public class AlipayCloudCloudbaseResourcepackageOpenCreateandpayModel extends Al
 	private String envName;
 
 	/**
+	 * 用于标记支付宝用户在应用下的唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/**
 	 * 购买时长(月)
 	 */
 	@ApiField("purchase_month")
@@ -61,6 +73,13 @@ public class AlipayCloudCloudbaseResourcepackageOpenCreateandpayModel extends Al
 	 */
 	@ApiField("spec_code")
 	private String specCode;
+
+	public String getAlipayUserId() {
+		return this.alipayUserId;
+	}
+	public void setAlipayUserId(String alipayUserId) {
+		this.alipayUserId = alipayUserId;
+	}
 
 	public Boolean getAutoRenew() {
 		return this.autoRenew;
@@ -88,6 +107,13 @@ public class AlipayCloudCloudbaseResourcepackageOpenCreateandpayModel extends Al
 	}
 	public void setEnvName(String envName) {
 		this.envName = envName;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public Long getPurchaseMonth() {

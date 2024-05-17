@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.employee.add response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-22 10:11:06
+ * @since 1.0, 2024-05-16 14:37:29
  */
 public class AlipayCommerceEcEmployeeAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2295635824668555714L;
+	private static final long serialVersionUID = 3623168287541791534L;
 
 	/** 
 	 * 员工id
@@ -25,6 +25,12 @@ public class AlipayCommerceEcEmployeeAddResponse extends AlipayResponse {
 	 */
 	@ApiField("iot_unique_id")
 	private String iotUniqueId;
+
+	/** 
+	 * 签约吱口令
+	 */
+	@ApiField("share_code")
+	private String shareCode;
 
 	/** 
 	 * 资金代付签约链接 1.员工未绑支付宝，拉起员工绑定页面 2.员工已绑支付宝，拉起资金签约页面
@@ -44,6 +50,13 @@ public class AlipayCommerceEcEmployeeAddResponse extends AlipayResponse {
 	}
 	public String getIotUniqueId( ) {
 		return this.iotUniqueId;
+	}
+
+	public void setShareCode(String shareCode) {
+		this.shareCode = shareCode;
+	}
+	public String getShareCode( ) {
+		return this.shareCode;
 	}
 
 	public void setSignUrl(String signUrl) {

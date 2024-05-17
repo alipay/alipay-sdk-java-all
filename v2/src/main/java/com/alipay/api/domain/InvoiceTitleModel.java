@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 抬头信息
  *
  * @author auto create
- * @since 1.0, 2022-12-26 16:47:12
+ * @since 1.0, 2024-05-09 22:02:50
  */
 public class InvoiceTitleModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4473615472257792715L;
+	private static final long serialVersionUID = 4716741811425641238L;
 
 	/**
 	 * 是否为用户设置默认抬头
@@ -68,7 +68,7 @@ true（默认抬头）
 	 * 抬头类型
 字段值有两种情况抬:
 PERSONAL（个人） 
-CORPORATION（单位）
+CORPORATION（企业）
 	 */
 	@ApiField("title_type")
 	private String titleType;

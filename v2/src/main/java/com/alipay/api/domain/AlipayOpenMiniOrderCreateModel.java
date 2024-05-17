@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 交易组件业务单创建
  *
  * @author auto create
- * @since 1.0, 2024-04-22 22:25:20
+ * @since 1.0, 2024-05-13 14:22:16
  */
 public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6656383463574257382L;
+	private static final long serialVersionUID = 8248137872191654126L;
 
 	/**
 	 * 订单收货地址
 	 */
 	@ApiField("address_info")
 	private MiniReceiverAddressInfoDTO addressInfo;
+
+	/**
+	 * 分账条款
+	 */
+	@ApiField("alloc_amount_info")
+	private AllocAmountInfoDTO allocAmountInfo;
 
 	/**
 	 * 商户传入业务信息，具体值要和支付宝约定，应用于安全，营销等参数直传场景，格式为json格式
@@ -156,6 +162,13 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 	}
 	public void setAddressInfo(MiniReceiverAddressInfoDTO addressInfo) {
 		this.addressInfo = addressInfo;
+	}
+
+	public AllocAmountInfoDTO getAllocAmountInfo() {
+		return this.allocAmountInfo;
+	}
+	public void setAllocAmountInfo(AllocAmountInfoDTO allocAmountInfo) {
+		this.allocAmountInfo = allocAmountInfo;
 	}
 
 	public MiniBusinessParamsDTO getBusinessParams() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 补充计算金额参数
  *
  * @author auto create
- * @since 1.0, 2023-08-24 11:35:49
+ * @since 1.0, 2024-05-11 14:03:15
  */
 public class SubsidyAmountParam extends AlipayObject {
 
-	private static final long serialVersionUID = 3377754761165712291L;
+	private static final long serialVersionUID = 8228385357116478293L;
 
 	/**
 	 * 补充计算金额，必须大于0

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.resourcepackage.renew.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-22 19:36:42
+ * @since 1.0, 2024-05-13 16:20:31
  */
 public class AlipayCloudCloudbaseResourcepackageRenewConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1112147112523527438L;
+	private static final long serialVersionUID = 4698364431874657383L;
 
 	/** 
 	 * 币种

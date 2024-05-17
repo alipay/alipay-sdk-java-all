@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.item.category.preconsult response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-08 11:47:00
+ * @since 1.0, 2024-05-16 14:47:01
  */
 public class AlipayOpenAppItemCategoryPreconsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8528754128915451223L;
+	private static final long serialVersionUID = 5151124571146878749L;
 
 	/** 
 	 * 商品类目预测预咨询是否提交成功

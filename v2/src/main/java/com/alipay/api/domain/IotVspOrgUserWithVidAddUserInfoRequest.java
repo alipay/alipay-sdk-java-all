@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 录入机构用户信息请求对象，支持自定义vid
  *
  * @author auto create
- * @since 1.0, 2022-04-27 10:02:11
+ * @since 1.0, 2024-05-15 15:27:26
  */
 public class IotVspOrgUserWithVidAddUserInfoRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 6834148125663184165L;
+	private static final long serialVersionUID = 1489141859859755979L;
 
 	/**
 	 * 姓名

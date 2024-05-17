@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.trade.createandpay response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-28 10:34:14
+ * @since 1.0, 2024-05-11 14:07:00
  */
 public class AlipayCommerceMedicalTradeCreateandpayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5726759984374942658L;
+	private static final long serialVersionUID = 7381657578355796916L;
 
 	/** 
 	 * 自费创单后支付宝返回的支付宝交易流水号

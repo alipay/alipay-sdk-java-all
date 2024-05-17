@@ -11,17 +11,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 获取已授权的订购地址
  *
  * @author auto create
- * @since 1.0, 2024-02-02 17:47:41
+ * @since 1.0, 2024-05-15 15:08:14
  */
 public class AlipayInsSceneEcommercePurchaselinkAuthModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3529939646781853499L;
+	private static final long serialVersionUID = 7355725529389779735L;
 
 	/**
 	 * 至少订购天数
 	 */
 	@ApiField("at_least_days")
 	private Long atLeastDays;
+
+	/**
+	 * 买家
+	 */
+	@ApiField("buyer")
+	private EcomBuyerDTO buyer;
 
 	/**
 	 * 订购主体为商品维度时必传
@@ -61,6 +67,21 @@ public class AlipayInsSceneEcommercePurchaselinkAuthModel extends AlipayObject {
 	private List<String> productCode;
 
 	/**
+	 * 指定订购产品方案ID列表
+	 */
+	@ApiListField("product_plan_ids")
+	@ApiField("string")
+	private List<String> productPlanIds;
+
+	/**
+	 * 订购人类型
+SELLER 卖家
+BUYER  买家
+	 */
+	@ApiField("purchase_user_type")
+	private String purchaseUserType;
+
+	/**
 	 * 订购主体维度:PURCHASE_USER 订购人（卖家维度）,ECOM_ITEM  商品维度
 	 */
 	@ApiField("related_subject_type")
@@ -73,7 +94,7 @@ public class AlipayInsSceneEcommercePurchaselinkAuthModel extends AlipayObject {
 	private EcomSellerDTO seller;
 
 	/**
-	 * 客户端渠道：ios / android / pc / wx_applet(微信小程序)
+	 * 客户端渠道：ios / android / pc / wx_applet / alipay_applet
 	 */
 	@ApiField("user_client")
 	private String userClient;
@@ -83,6 +104,13 @@ public class AlipayInsSceneEcommercePurchaselinkAuthModel extends AlipayObject {
 	}
 	public void setAtLeastDays(Long atLeastDays) {
 		this.atLeastDays = atLeastDays;
+	}
+
+	public EcomBuyerDTO getBuyer() {
+		return this.buyer;
+	}
+	public void setBuyer(EcomBuyerDTO buyer) {
+		this.buyer = buyer;
 	}
 
 	public EcomItemDTO getEcomItem() {
@@ -125,6 +153,20 @@ public class AlipayInsSceneEcommercePurchaselinkAuthModel extends AlipayObject {
 	}
 	public void setProductCode(List<String> productCode) {
 		this.productCode = productCode;
+	}
+
+	public List<String> getProductPlanIds() {
+		return this.productPlanIds;
+	}
+	public void setProductPlanIds(List<String> productPlanIds) {
+		this.productPlanIds = productPlanIds;
+	}
+
+	public String getPurchaseUserType() {
+		return this.purchaseUserType;
+	}
+	public void setPurchaseUserType(String purchaseUserType) {
+		this.purchaseUserType = purchaseUserType;
 	}
 
 	public String getRelatedSubjectType() {

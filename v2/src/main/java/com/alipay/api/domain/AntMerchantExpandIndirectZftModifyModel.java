@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 直付通二级商户修改
  *
  * @author auto create
- * @since 1.0, 2024-02-04 16:20:50
+ * @since 1.0, 2024-05-16 19:54:14
  */
 public class AntMerchantExpandIndirectZftModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4472293972178811576L;
+	private static final long serialVersionUID = 6421984499897623687L;
 
 	/**
 	 * 补充证件图片，与additional_cert_type+additional_cert_image搭配使用。当商户类型为个人时，使用当面付收款有限额，补充这组证件信息可提额。目前仅允许个人类型商户传入。其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key
@@ -208,7 +208,7 @@ public class AntMerchantExpandIndirectZftModifyModel extends AlipayObject {
 	private List<IndustryQualificationInfo> qualifications;
 
 	/**
-	 * 商户使用服务，可选值有：当面付、jsapi支付、app支付、wap支付、电脑支付、线上资金预授权、新当面资金授权、预授权支付、商户代扣、小程序支付。其值会影响其他字段必填性，详见其他字段描述
+	 * 商户使用服务，可选值有：当面付、jsapi支付、app支付、wap支付、电脑支付、预授权支付、商户代扣、小程序支付、订单码支付。其值会影响其他字段必填性，详见其他字段描述
 	 */
 	@ApiListField("service")
 	@ApiField("string")

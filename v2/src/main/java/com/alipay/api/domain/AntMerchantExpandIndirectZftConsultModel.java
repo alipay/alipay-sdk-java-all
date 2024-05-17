@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 直付通商户创建预校验咨询
  *
  * @author auto create
- * @since 1.0, 2024-04-12 16:56:49
+ * @since 1.0, 2024-05-16 19:28:16
  */
 public class AntMerchantExpandIndirectZftConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5452739215347457984L;
+	private static final long serialVersionUID = 3519313424449992266L;
 
 	/**
 	 * 商户别名。支付宝账单中的商户名称会展示此处设置的别名，如果涉及支付宝APP内的支付，支付结果页也会展示该别名。如果涉及当面付场景，请填写线下店铺名称
@@ -208,7 +208,7 @@ public class AntMerchantExpandIndirectZftConsultModel extends AlipayObject {
 	private List<IndustryQualificationInfo> qualifications;
 
 	/**
-	 * 商户使用服务，可选值有：当面付、jsapi支付、app支付、wap支付、电脑支付、线上资金预授权、新当面资金授权、预授权支付、商户代扣、小程序支付。其值会影响其他字段必填性，详见其他字段描述
+	 * 商户使用服务，可选值有：当面付、jsapi支付、app支付、wap支付、电脑支付、预授权支付、商户代扣、小程序支付、订单码支付。其值会影响其他字段必填性，详见其他字段描述
 	 */
 	@ApiListField("service")
 	@ApiField("string")

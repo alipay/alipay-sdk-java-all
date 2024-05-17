@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品信息
  *
  * @author auto create
- * @since 1.0, 2024-03-06 14:32:04
+ * @since 1.0, 2024-05-10 13:45:16
  */
 public class GoodsInfoDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7245987841977985955L;
+	private static final long serialVersionUID = 1522548653233689345L;
 
 	/**
 	 * 商品描述
@@ -20,7 +20,7 @@ public class GoodsInfoDetail extends AlipayObject {
 	private String goodsDesc;
 
 	/**
-	 * 商品名
+	 * 商品名称，由isv传入
 	 */
 	@ApiField("goods_name")
 	private String goodsName;

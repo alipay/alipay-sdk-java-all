@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 智能排班接入外部租户预测数据
  *
  * @author auto create
- * @since 1.0, 2022-12-09 11:14:08
+ * @since 1.0, 2024-05-10 13:56:03
  */
 public class AlipayIserviceIdeployForcecastCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5328243548263881479L;
+	private static final long serialVersionUID = 1697811891497213123L;
 
 	/**
 	 * 预测数据

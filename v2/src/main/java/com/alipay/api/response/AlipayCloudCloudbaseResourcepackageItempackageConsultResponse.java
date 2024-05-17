@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.resourcepackage.itempackage.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-03 16:51:50
+ * @since 1.0, 2024-05-13 16:19:31
  */
 public class AlipayCloudCloudbaseResourcepackageItempackageConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8151178264968629514L;
+	private static final long serialVersionUID = 4523748226932344792L;
 
 	/** 
 	 * 原始总价(分)

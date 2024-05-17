@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTerminalVendingCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1889134355272253962L;
+	private static final long serialVersionUID = 8741973393735926944L;
 
 	/**
 	 * 地址位置纬度，使用国标GCJ-02坐标系，取值范围：纬度-90~90，中国地区经度范围：纬度3.86~53.55

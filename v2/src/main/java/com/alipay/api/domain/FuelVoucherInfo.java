@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 加油订单券信息
  *
  * @author auto create
- * @since 1.0, 2024-05-06 09:39:42
+ * @since 1.0, 2024-05-10 11:47:26
  */
 public class FuelVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4747234734581237677L;
+	private static final long serialVersionUID = 6527531381422821863L;
 
 	/**
 	 * 券归属的活动编码
@@ -42,6 +42,12 @@ public class FuelVoucherInfo extends AlipayObject {
 	 */
 	@ApiField("merchant_amount")
 	private Long merchantAmount;
+
+	/**
+	 * 服务费折扣标识，当前仅支持 free
+	 */
+	@ApiField("service_fee_discount")
+	private String serviceFeeDiscount;
 
 	/**
 	 * 订单使用的券id
@@ -82,6 +88,13 @@ public class FuelVoucherInfo extends AlipayObject {
 	}
 	public void setMerchantAmount(Long merchantAmount) {
 		this.merchantAmount = merchantAmount;
+	}
+
+	public String getServiceFeeDiscount() {
+		return this.serviceFeeDiscount;
+	}
+	public void setServiceFeeDiscount(String serviceFeeDiscount) {
+		this.serviceFeeDiscount = serviceFeeDiscount;
 	}
 
 	public String getVoucherId() {

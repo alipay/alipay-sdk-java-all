@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商家发放码值的结果
  *
  * @author auto create
- * @since 1.0, 2023-07-14 13:49:16
+ * @since 1.0, 2024-05-15 16:15:09
  */
 public class SendCodeResult extends AlipayObject {
 
-	private static final long serialVersionUID = 3279695425248262273L;
+	private static final long serialVersionUID = 6665619526435959713L;
 
 	/**
 	 * 服务商发奖后返回的券码列表
@@ -20,9 +20,10 @@ public class SendCodeResult extends AlipayObject {
 	private String code;
 
 	/**
-	 * 发奖后返回的与券码对应的券码使用链接，在支付宝卡包-券详情以二维码方式展示
+	 * 发奖后返回的与券码对应的券码使用链接，在支付宝卡包-券详情以二维码方式展示 当前字段已废弃(后续可使用qr_code)
 	 */
 	@ApiField("code_url")
+	@Deprecated
 	private String codeUrl;
 
 	/**
@@ -32,9 +33,10 @@ public class SendCodeResult extends AlipayObject {
 	private String itemId;
 
 	/**
-	 * 用户领券之后在服务商(商户)侧提供的券详情展示页面。在支付宝卡包中展示链接，用户点击可以跳转到服务商券详情页
+	 * 用户领券之后在服务商(商户)侧提供的券详情展示页面。在支付宝卡包中展示链接，用户点击可以跳转到服务商券详情页 当前字段已废弃(无效参数本地商品未应用)
 	 */
 	@ApiField("merchant_order_url")
+	@Deprecated
 	private String merchantOrderUrl;
 
 	/**
@@ -50,7 +52,7 @@ public class SendCodeResult extends AlipayObject {
 	private String outSkuId;
 
 	/**
-	 * 三方码二维码值，可填入URL。每个URL长度不能超过512。
+	 * 三方码二维码值，可填入URL或字符串。长度不能超过512。
 	 */
 	@ApiField("qr_code")
 	private String qrCode;

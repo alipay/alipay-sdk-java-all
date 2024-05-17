@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BankOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2651135523433151465L;
+	private static final long serialVersionUID = 4865664382844881339L;
 
 	/**
 	 * 银行的转账流水号，来账通知时平台基于该字段进行交易匹配

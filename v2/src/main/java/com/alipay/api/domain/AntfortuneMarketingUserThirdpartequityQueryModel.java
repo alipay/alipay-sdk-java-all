@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户第三方权益查询接口
  *
  * @author auto create
- * @since 1.0, 2022-12-05 16:58:06
+ * @since 1.0, 2024-05-13 14:38:46
  */
 public class AntfortuneMarketingUserThirdpartequityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2744767967269663761L;
+	private static final long serialVersionUID = 3658473957164852573L;
 
 	/**
 	 * 权益类型，查询用户在该权益类型下的可用权益

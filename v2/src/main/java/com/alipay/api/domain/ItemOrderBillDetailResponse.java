@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序订单对账明细
  *
  * @author auto create
- * @since 1.0, 2023-06-28 16:58:37
+ * @since 1.0, 2024-05-16 16:31:16
  */
 public class ItemOrderBillDetailResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 7886319765433251146L;
+	private static final long serialVersionUID = 7859385522257922638L;
 
 	/**
 	 * 订单创建时间，格式为  yyyy-MM-dd HH:mm:ss
@@ -113,6 +113,12 @@ public class ItemOrderBillDetailResponse extends AlipayObject {
 	@ApiListField("refund_fee_list")
 	@ApiField("item_order_bill_refund_response")
 	private List<ItemOrderBillRefundResponse> refundFeeList;
+
+	/**
+	 * 资金提供方，为租赁商提供货品采购资金，帮助租赁商扩大经营规模，资方收取部分佣金
+	 */
+	@ApiField("rent_funder_commission_amount")
+	private String rentFunderCommissionAmount;
 
 	/**
 	 * 订单二级场景类型
@@ -254,6 +260,13 @@ public class ItemOrderBillDetailResponse extends AlipayObject {
 	}
 	public void setRefundFeeList(List<ItemOrderBillRefundResponse> refundFeeList) {
 		this.refundFeeList = refundFeeList;
+	}
+
+	public String getRentFunderCommissionAmount() {
+		return this.rentFunderCommissionAmount;
+	}
+	public void setRentFunderCommissionAmount(String rentFunderCommissionAmount) {
+		this.rentFunderCommissionAmount = rentFunderCommissionAmount;
 	}
 
 	public String getServiceType() {

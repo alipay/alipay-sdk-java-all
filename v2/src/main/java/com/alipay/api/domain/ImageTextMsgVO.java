@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 图文消息内容
  *
  * @author auto create
- * @since 1.0, 2024-04-16 19:58:35
+ * @since 1.0, 2024-05-15 16:49:55
  */
 public class ImageTextMsgVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1312379661319815279L;
+	private static final long serialVersionUID = 5644496882289165488L;
 
 	/**
 	 * 对推送商品的简单介绍（参考：美妆好物应有尽有，快戳进来看看呀）
@@ -32,7 +32,7 @@ public class ImageTextMsgVO extends AlipayObject {
 	private String title;
 
 	/**
-	 * 自定义链接或小程序页面链接（自定义链接请输入http,https或alipays开头的链接；小程序链接获取方式---获取小程序链接）
+	 * 自定义链接或小程序页面链接（自定义链接请输入http,https或alipays开头的链接）
 	 */
 	@ApiField("url")
 	private String url;

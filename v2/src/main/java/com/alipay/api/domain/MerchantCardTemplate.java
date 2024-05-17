@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品
  *
  * @author auto create
- * @since 1.0, 2024-04-29 14:15:17
+ * @since 1.0, 2024-05-10 16:53:52
  */
 public class MerchantCardTemplate extends AlipayObject {
 
-	private static final long serialVersionUID = 2189824842466571867L;
+	private static final long serialVersionUID = 5593249249546921227L;
 
 	/**
 	 * 商品归属的小程序appid
@@ -23,7 +23,7 @@ public class MerchantCardTemplate extends AlipayObject {
 	private String cardTemplateAppId;
 
 	/**
-	 * 支付宝侧商品ID
+	 * 支付宝侧商品ID，创建接口不需要传
 	 */
 	@ApiField("card_template_id")
 	private String cardTemplateId;
@@ -35,7 +35,7 @@ public class MerchantCardTemplate extends AlipayObject {
 	private String cardTemplateName;
 
 	/**
-	 * 商品状态
+	 * 商品状态，创建接口不需要传
 	 */
 	@ApiField("card_template_status")
 	private String cardTemplateStatus;
@@ -53,14 +53,16 @@ public class MerchantCardTemplate extends AlipayObject {
 	private String categoryId;
 
 	/**
-	 * 商品封面图ID
+	 * （1）创建时，和image_url_list字段二选一，image_id_list优先级更高
+（2）查询返回时该字段为空，返回image_url_list
 	 */
 	@ApiListField("image_id_list")
 	@ApiField("string")
 	private List<String> imageIdList;
 
 	/**
-	 * 商品封面图Url
+	 * （1）创建时，和image_url_list字段二选一，image_id_list优先级更高
+（2）查询返回时该字段为空，返回image_url_list
 	 */
 	@ApiListField("image_url_list")
 	@ApiField("string")
@@ -71,6 +73,13 @@ public class MerchantCardTemplate extends AlipayObject {
 	 */
 	@ApiField("out_card_id")
 	private String outCardId;
+
+	/**
+	 * 驳回原因
+	 */
+	@ApiListField("reject_reasons")
+	@ApiField("card_reject_reason_info")
+	private List<CardRejectReasonInfo> rejectReasons;
 
 	/**
 	 * 售卖信息
@@ -151,6 +160,13 @@ public class MerchantCardTemplate extends AlipayObject {
 	}
 	public void setOutCardId(String outCardId) {
 		this.outCardId = outCardId;
+	}
+
+	public List<CardRejectReasonInfo> getRejectReasons() {
+		return this.rejectReasons;
+	}
+	public void setRejectReasons(List<CardRejectReasonInfo> rejectReasons) {
+		this.rejectReasons = rejectReasons;
 	}
 
 	public CardTemplateSale getSaleInfo() {

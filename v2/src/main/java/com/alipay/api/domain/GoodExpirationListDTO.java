@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GoodExpirationListDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2546642863114975194L;
+	private static final long serialVersionUID = 6843391839952696749L;
 
 	/**
 	 * 商品有效时长，单位:天，有临期食品时可填写，非必填。

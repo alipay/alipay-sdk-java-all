@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询缴费输出的出账机构输入域
  *
  * @author auto create
- * @since 1.0, 2017-09-19 12:38:10
+ * @since 1.0, 2024-05-15 17:25:57
  */
 public class AlipayEbppJfexportInputfieldQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5314931724878561793L;
+	private static final long serialVersionUID = 2538716322893554876L;
 
 	/**
 	 * 业务类型，固定传JF，表示缴费

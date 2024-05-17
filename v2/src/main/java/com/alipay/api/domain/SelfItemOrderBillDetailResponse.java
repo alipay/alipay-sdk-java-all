@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序本地商品订单对账明细
  *
  * @author auto create
- * @since 1.0, 2024-04-19 19:39:14
+ * @since 1.0, 2024-05-16 15:19:50
  */
 public class SelfItemOrderBillDetailResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 1391542355459351187L;
+	private static final long serialVersionUID = 1527944342268328832L;
 
 	/**
 	 * 订单凭证号
@@ -125,10 +125,28 @@ public class SelfItemOrderBillDetailResponse extends AlipayObject {
 	private String serialNo;
 
 	/**
+	 * 结算到的银行卡号或支付宝账户
+	 */
+	@ApiField("settle_account_no")
+	private String settleAccountNo;
+
+	/**
+	 * 结算账户类型，支付宝或银行卡
+	 */
+	@ApiField("settle_account_type")
+	private String settleAccountType;
+
+	/**
 	 * 结算金额，单位分
 	 */
 	@ApiField("settle_amount")
 	private String settleAmount;
+
+	/**
+	 * 结算时的批次号
+	 */
+	@ApiField("settle_batch_id")
+	private String settleBatchId;
 
 	/**
 	 * 当前凭证的结算状态，下钻到次序号维度
@@ -298,11 +316,32 @@ public class SelfItemOrderBillDetailResponse extends AlipayObject {
 		this.serialNo = serialNo;
 	}
 
+	public String getSettleAccountNo() {
+		return this.settleAccountNo;
+	}
+	public void setSettleAccountNo(String settleAccountNo) {
+		this.settleAccountNo = settleAccountNo;
+	}
+
+	public String getSettleAccountType() {
+		return this.settleAccountType;
+	}
+	public void setSettleAccountType(String settleAccountType) {
+		this.settleAccountType = settleAccountType;
+	}
+
 	public String getSettleAmount() {
 		return this.settleAmount;
 	}
 	public void setSettleAmount(String settleAmount) {
 		this.settleAmount = settleAmount;
+	}
+
+	public String getSettleBatchId() {
+		return this.settleBatchId;
+	}
+	public void setSettleBatchId(String settleBatchId) {
+		this.settleBatchId = settleBatchId;
 	}
 
 	public String getSettleStatus() {

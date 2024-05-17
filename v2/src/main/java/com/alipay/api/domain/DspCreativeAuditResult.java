@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创意审核结果
  *
  * @author auto create
- * @since 1.0, 2023-05-18 11:46:19
+ * @since 1.0, 2024-05-14 14:17:14
  */
 public class DspCreativeAuditResult extends AlipayObject {
 
-	private static final long serialVersionUID = 3794383172325624582L;
+	private static final long serialVersionUID = 3535594167639569485L;
 
 	/**
 	 * 创意id
@@ -26,7 +26,7 @@ public class DspCreativeAuditResult extends AlipayObject {
 	private String refuseReason;
 
 	/**
-	 * 审核状态 0审核通过 1审核中 2审核拒绝
+	 * 审核状态（0-初始化，1-审核通过，2-待审核，3-创意过期，-1-审核拒绝)
 	 */
 	@ApiField("status")
 	private Long status;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 标签信息
  *
  * @author auto create
- * @since 1.0, 2024-05-06 16:53:19
+ * @since 1.0, 2024-05-16 16:02:51
  */
 public class TagInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2189496944163263151L;
+	private static final long serialVersionUID = 6329876566772816371L;
 
 	/**
 	 * 计算条件表达式

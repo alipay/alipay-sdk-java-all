@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单信息
  *
  * @author auto create
- * @since 1.0, 2024-04-18 18:01:00
+ * @since 1.0, 2024-05-10 16:53:17
  */
 public class DeductionOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3463482589934594754L;
+	private static final long serialVersionUID = 3791344213962861192L;
 
 	/**
 	 * 订购单ID
@@ -102,6 +102,12 @@ public class DeductionOrderInfo extends AlipayObject {
 	 */
 	@ApiField("plan_deduction_time")
 	private String planDeductionTime;
+
+	/**
+	 * 门店ID
+	 */
+	@ApiField("shop_id")
+	private String shopId;
 
 	/**
 	 * 分期单ID
@@ -224,6 +230,13 @@ public class DeductionOrderInfo extends AlipayObject {
 	}
 	public void setPlanDeductionTime(String planDeductionTime) {
 		this.planDeductionTime = planDeductionTime;
+	}
+
+	public String getShopId() {
+		return this.shopId;
+	}
+	public void setShopId(String shopId) {
+		this.shopId = shopId;
 	}
 
 	public String getSubOrderId() {

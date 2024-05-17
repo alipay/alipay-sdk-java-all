@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 扣款单分页查询
  *
  * @author auto create
- * @since 1.0, 2024-04-18 18:01:00
+ * @since 1.0, 2024-05-10 16:53:18
  */
 public class AlipayCommerceMerchantcardDeductionorderBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1596488969941319731L;
+	private static final long serialVersionUID = 8114934852195766977L;
 
 	/**
 	 * 订购单ID
@@ -38,6 +38,12 @@ public class AlipayCommerceMerchantcardDeductionorderBatchqueryModel extends Ali
 	private String deductionStatus;
 
 	/**
+	 * 用于标记支付宝用户在应用下的唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/**
 	 * 订购结束时间
 	 */
 	@ApiField("order_end_date")
@@ -60,6 +66,18 @@ public class AlipayCommerceMerchantcardDeductionorderBatchqueryModel extends Ali
 	 */
 	@ApiField("page_size")
 	private Long pageSize;
+
+	/**
+	 * 门店ID
+	 */
+	@ApiField("shop_id")
+	private String shopId;
+
+	/**
+	 * 支付宝用户的userId。
+	 */
+	@ApiField("user_id")
+	private String userId;
 
 	public String getCardId() {
 		return this.cardId;
@@ -89,6 +107,13 @@ public class AlipayCommerceMerchantcardDeductionorderBatchqueryModel extends Ali
 		this.deductionStatus = deductionStatus;
 	}
 
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+
 	public String getOrderEndDate() {
 		return this.orderEndDate;
 	}
@@ -115,6 +140,20 @@ public class AlipayCommerceMerchantcardDeductionorderBatchqueryModel extends Ali
 	}
 	public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
+	}
+
+	public String getShopId() {
+		return this.shopId;
+	}
+	public void setShopId(String shopId) {
+		this.shopId = shopId;
+	}
+
+	public String getUserId() {
+		return this.userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
 
 }

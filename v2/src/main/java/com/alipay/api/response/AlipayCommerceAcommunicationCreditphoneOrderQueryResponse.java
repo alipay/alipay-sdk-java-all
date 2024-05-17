@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.acommunication.creditphone.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-07 17:55:10
+ * @since 1.0, 2024-05-16 10:22:58
  */
 public class AlipayCommerceAcommunicationCreditphoneOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1314729894318967338L;
+	private static final long serialVersionUID = 7356515632178776726L;
 
 	/** 
 	 * 信用购主单号

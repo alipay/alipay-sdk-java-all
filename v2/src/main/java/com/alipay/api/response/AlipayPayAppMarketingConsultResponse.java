@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pay.app.marketing.consult response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-29 12:17:01
+ * @since 1.0, 2024-05-13 21:07:01
  */
 public class AlipayPayAppMarketingConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2645846962431296714L;
+	private static final long serialVersionUID = 6263688388617139879L;
 
 	/** 
 	 * 反作弊等级值；仅当请求入参need_query_anti_rank为true时才会返回
@@ -34,6 +34,13 @@ public class AlipayPayAppMarketingConsultResponse extends AlipayResponse {
 	 */
 	@ApiField("biz_tag")
 	private String bizTag;
+
+	/** 
+	 * 返回前置咨询用户命中的人群标签，如用户在花呗设首人群中，则透出ALICREDIT_PRIORITY，命中多个标签时以列表形式返回
+	 */
+	@ApiListField("biz_tag_list")
+	@ApiField("string")
+	private List<String> bizTagList;
 
 	/** 
 	 * 仅当请求使用morse匿名技术时会返回此字段；
@@ -76,6 +83,12 @@ morse匿名技术产出的混淆后的密文结果，需使用商户私钥及接
 	private String payOperationInfo;
 
 	/** 
+	 * 前置咨询ID,用来标识本次请求
+	 */
+	@ApiField("pre_consult_id")
+	private String preConsultId;
+
+	/** 
 	 * 已废弃不再使用
 	 */
 	@ApiField("pre_pay_token")
@@ -106,6 +119,13 @@ morse匿名技术产出的混淆后的密文结果，需使用商户私钥及接
 	}
 	public String getBizTag( ) {
 		return this.bizTag;
+	}
+
+	public void setBizTagList(List<String> bizTagList) {
+		this.bizTagList = bizTagList;
+	}
+	public List<String> getBizTagList( ) {
+		return this.bizTagList;
 	}
 
 	public void setBlindSignature(String blindSignature) {
@@ -148,6 +168,13 @@ morse匿名技术产出的混淆后的密文结果，需使用商户私钥及接
 	}
 	public String getPayOperationInfo( ) {
 		return this.payOperationInfo;
+	}
+
+	public void setPreConsultId(String preConsultId) {
+		this.preConsultId = preConsultId;
+	}
+	public String getPreConsultId( ) {
+		return this.preConsultId;
 	}
 
 	public void setPrePayToken(String prePayToken) {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗健康门店标签
  *
  * @author auto create
- * @since 1.0, 2024-02-26 10:45:05
+ * @since 1.0, 2024-05-09 14:35:44
  */
 public class MedicalShopTag extends AlipayObject {
 
-	private static final long serialVersionUID = 4899258939521894897L;
+	private static final long serialVersionUID = 2465629317227199432L;
 
 	/**
 	 * 门店标签类型

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.shopgroup.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-06 17:07:01
+ * @since 1.0, 2024-05-16 16:27:01
  */
 public class AlipayCommerceEcShopgroupCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4525943877775841283L;
+	private static final long serialVersionUID = 8364915328493229743L;
 
 	/** 
 	 * 门店组包含的门店数量

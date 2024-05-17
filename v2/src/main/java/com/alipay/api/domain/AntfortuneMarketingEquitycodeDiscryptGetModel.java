@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 第三方券码解密接口
  *
  * @author auto create
- * @since 1.0, 2022-04-20 09:55:13
+ * @since 1.0, 2024-05-13 14:39:15
  */
 public class AntfortuneMarketingEquitycodeDiscryptGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7462176751923958685L;
+	private static final long serialVersionUID = 4737398592798175991L;
 
 	/**
 	 * 加密后的券码

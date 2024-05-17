@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOverseasTravelBenefitChangeNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6528199671248915695L;
+	private static final long serialVersionUID = 2256539955239756371L;
 
 	/** 
 	 * 收单站在gn的id

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资方确认租赁订单关系
  *
  * @author auto create
- * @since 1.0, 2024-05-07 16:13:32
+ * @since 1.0, 2024-05-16 16:00:17
  */
 public class AlipayCommerceRentOrderInvestConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5179183761646351743L;
+	private static final long serialVersionUID = 2233513735947555847L;
 
 	/**
 	 * 2088开头的16位纯数字，小程序场景下获取用户ID请参考：用户授权; 其它场景下获取用户ID请参考：网页授权获取用户信息; 其中buyer_id与buyer_open_id不能同时为空
@@ -44,13 +44,13 @@ public class AlipayCommerceRentOrderInvestConfirmModel extends AlipayObject {
 	private String orderId;
 
 	/**
-	 * 代表第几阶段的还款计划，要配合royalty_stage锁定第几期还款计划
+	 * 代表第几阶段的还款计划，要配合royalty_stage锁定第几期还款计划，royalty_type=BUYOUT的情况下，可不填
 	 */
 	@ApiField("royalty_period")
 	private Long royaltyPeriod;
 
 	/**
-	 * 代表某一个阶段的第几期的还款计划，要结合royalty_period进行锁定某一期计划
+	 * 代表某一个阶段的第几期的还款计划，要结合royalty_period进行锁定某一期计划，royalty_type=BUYOUT的情况下，可不填
 	 */
 	@ApiField("royalty_stage")
 	private Long royaltyStage;

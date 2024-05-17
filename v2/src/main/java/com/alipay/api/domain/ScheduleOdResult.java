@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ScheduleOdResult extends AlipayObject {
 
-	private static final long serialVersionUID = 6612769357361498678L;
+	private static final long serialVersionUID = 8888581947665879832L;
 
 	/**
 	 * 返回码

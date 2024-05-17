@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceIotOrderPrintSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8788845961758429128L;
+	private static final long serialVersionUID = 2152168547944361682L;
 
 	/**
 	 * 设备唯一标识，设备id

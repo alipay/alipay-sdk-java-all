@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 合同模板答题要素查询
  *
  * @author auto create
- * @since 1.0, 2022-09-14 10:59:59
+ * @since 1.0, 2024-05-13 15:02:01
  */
 public class AlipayFincoreComplianceTemplateAnswerQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8778347472515863259L;
+	private static final long serialVersionUID = 4327677259699554854L;
 
 	/**
 	 * 业务要素

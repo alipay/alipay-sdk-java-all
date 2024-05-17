@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class UserGenderTagDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1264318991517414839L;
+	private static final long serialVersionUID = 3816958825872775361L;
 
 	/**
 	 * 用户性别占比

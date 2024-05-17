@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品使用信息
  *
  * @author auto create
- * @since 1.0, 2024-04-29 14:15:17
+ * @since 1.0, 2024-05-15 15:25:51
  */
 public class CardTemplateUse extends AlipayObject {
 
-	private static final long serialVersionUID = 1285142152986111961L;
+	private static final long serialVersionUID = 3895579256995191575L;
 
 	/**
 	 * 周期付需要配置周期信息
@@ -42,6 +42,12 @@ public class CardTemplateUse extends AlipayObject {
 	private List<CardPeriodPrice> periodPriceList;
 
 	/**
+	 * 周期付场景下预约链接，填写小程序地址。当card_type= PERIOD_PAY时生效。
+	 */
+	@ApiField("reservation_url")
+	private String reservationUrl;
+
+	/**
 	 * 可用次数或期数
 	 */
 	@ApiField("usable_count")
@@ -59,6 +65,13 @@ public class CardTemplateUse extends AlipayObject {
 	 */
 	@ApiField("use_instruction")
 	private String useInstruction;
+
+	/**
+	 * 用户可选的使用方式。当card_type= TIMES_CARD时生效。不传默认为到店亮码使用。
+	 */
+	@ApiListField("use_method")
+	@ApiField("card_use_method_info")
+	private List<CardUseMethodInfo> useMethod;
 
 	public CardCycle getCycleInfo() {
 		return this.cycleInfo;
@@ -88,6 +101,13 @@ public class CardTemplateUse extends AlipayObject {
 		this.periodPriceList = periodPriceList;
 	}
 
+	public String getReservationUrl() {
+		return this.reservationUrl;
+	}
+	public void setReservationUrl(String reservationUrl) {
+		this.reservationUrl = reservationUrl;
+	}
+
 	public Long getUsableCount() {
 		return this.usableCount;
 	}
@@ -107,6 +127,13 @@ public class CardTemplateUse extends AlipayObject {
 	}
 	public void setUseInstruction(String useInstruction) {
 		this.useInstruction = useInstruction;
+	}
+
+	public List<CardUseMethodInfo> getUseMethod() {
+		return this.useMethod;
+	}
+	public void setUseMethod(List<CardUseMethodInfo> useMethod) {
+		this.useMethod = useMethod;
 	}
 
 }
