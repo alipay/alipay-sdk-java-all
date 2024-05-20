@@ -2,7 +2,7 @@ lazy val root = (project in file(".")).
   settings(
     organization := "com.alipay.sdk",
     name := "alipay-sdk-java-v3",
-    version := "2.9.6.ALL",
+    version := "3.0.0.ALL",
     scalaVersion := "2.11.4",
     scalacOptions ++= Seq("-feature"),
     javacOptions in compile ++= Seq("-Xlint:deprecation"),

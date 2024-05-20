@@ -9,6 +9,7 @@ import com.alipay.v3.util.model.CustomizedParams;
 import com.alipay.v3.util.model.OpenApiGenericRequest;
 import com.google.common.base.Strings;
 import com.google.gson.reflect.TypeToken;
+import okhttp3.Request;
 
 import java.lang.reflect.Type;
 import java.util.*;
@@ -97,7 +98,8 @@ public class GenericExecuteApi {
      * @throws ApiException
      */
     public ApiResponse<Object> execute(String path, String method, OpenApiGenericRequest openApiGenericRequest) throws ApiException {
-        okhttp3.Call localVarCall = executeCall(path, method, openApiGenericRequest);
+        Request request = buildRequest(path, method, openApiGenericRequest);
+        okhttp3.Call localVarCall = localVarApiClient.buildCall(request);
         Type localVarReturnType = new TypeToken<Object>() {}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
@@ -112,7 +114,8 @@ public class GenericExecuteApi {
      * @throws ApiException
      */
     public <T> ApiResponse<T> execute(String path, String method, OpenApiGenericRequest openApiGenericRequest, TypeToken<T> type) throws ApiException {
-        okhttp3.Call localVarCall = executeCall(path, method, openApiGenericRequest);
+        Request request = buildRequest(path, method, openApiGenericRequest);
+        okhttp3.Call localVarCall = localVarApiClient.buildCall(request);
         return localVarApiClient.execute(localVarCall, type.getType());
     }
 
@@ -190,8 +193,9 @@ public class GenericExecuteApi {
         return getRedirectUrl(sortedMap, false);
     }
 
-    private okhttp3.Call executeCall(String path, String method, OpenApiGenericRequest openApiGenericRequest) throws ApiException {
-        boolean isFileUpload = openApiGenericRequest.getFileParams() != null && openApiGenericRequest.getFileParams().size() > 0;
+    private Request buildRequest(String path, String method, OpenApiGenericRequest openApiGenericRequest) throws ApiException {
+        boolean isFileUpload = (openApiGenericRequest.getFileParams() != null && openApiGenericRequest.getFileParams().size() > 0)
+                || (openApiGenericRequest.getByteStreamParams() != null && openApiGenericRequest.getByteStreamParams().size() > 0);
 
         if (openApiGenericRequest.getBodyParams() == null) {
             openApiGenericRequest.setBodyParams(openApiGenericRequest.getBizParams());
@@ -224,7 +228,12 @@ public class GenericExecuteApi {
                 localVarFormParams.put("data", openApiGenericRequest.getBodyParams());
             }
 
-            localVarFormParams.putAll(openApiGenericRequest.getFileParams());
+            if (openApiGenericRequest.getFileParams() != null) {
+                localVarFormParams.putAll(openApiGenericRequest.getFileParams());
+            }
+            if (openApiGenericRequest.getByteStreamParams() != null) {
+                localVarFormParams.putAll(openApiGenericRequest.getByteStreamParams());
+            }
         }
 
         final String[] localVarAccepts = {
@@ -253,7 +262,7 @@ public class GenericExecuteApi {
         }
 
         String[] localVarAuthNames = new String[]{};
-        return localVarApiClient.buildCall(localCustomBaseUrl, localVarPath, method.toUpperCase(), localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, null);
+        return localVarApiClient.buildRequest(localCustomBaseUrl, localVarPath, method.toUpperCase(), localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, null);
     }
 
     private void handleParams(Map<String, String> appParams, Map<String, String> systemParams, Map<String, Object> bizParams, String authToken, String appAuthToken, CustomizedParams customizedParams) {

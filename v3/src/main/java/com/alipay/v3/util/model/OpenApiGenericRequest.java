@@ -38,9 +38,14 @@ public class OpenApiGenericRequest {
     private Map<String, Object> bizParams;
 
     /**
-     * 文件参数（fileParams不为空则表示文件上传）
+     * 文件参数（fileParams或byteStreamParams不为空则表示文件上传）
      */
     private Map<String, File> fileParams;
+
+    /**
+     * 字节流参数（fileParams或byteStreamParams不为空则表示文件上传）
+     */
+    private Map<String, ByteStreamWrapper> byteStreamParams;
 
     /**
      * 额外的header参数
@@ -172,5 +177,23 @@ public class OpenApiGenericRequest {
      */
     public void setHeaderParams(Map<String, String> headerParams) {
         this.headerParams = headerParams;
+    }
+
+    /**
+     * Getter method for property <tt>byteStreamParams</tt>.
+     *
+     * @return property value of byteStreamParams
+     */
+    public Map<String, ByteStreamWrapper> getByteStreamParams() {
+        return byteStreamParams;
+    }
+
+    /**
+     * Setter method for property <tt>byteStreamParams</tt>.
+     *
+     * @param byteStreamParams value to be assigned to property byteStreamParams
+     */
+    public void setByteStreamParams(Map<String, ByteStreamWrapper> byteStreamParams) {
+        this.byteStreamParams = byteStreamParams;
     }
 }

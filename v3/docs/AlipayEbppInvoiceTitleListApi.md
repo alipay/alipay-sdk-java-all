@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="get"></a>
 # **get**
-> AlipayEbppInvoiceTitleListGetResponseModel get(authToken, userId)
+> AlipayEbppInvoiceTitleListGetResponseModel get(authToken, userId, openId)
 
 获取指定用户所有的有效抬头列表
 
@@ -40,8 +40,9 @@ public class Example {
     AlipayEbppInvoiceTitleListApi apiInstance = new AlipayEbppInvoiceTitleListApi(defaultClient);
     String authToken = "authToken_example"; // String | 用户授权令牌
     String userId = "2088000000000000"; // String | 支付宝用户id
+    String openId = "074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5"; // String | 支付宝用户id
     try {
-      AlipayEbppInvoiceTitleListGetResponseModel result = apiInstance.get(authToken, userId);
+      AlipayEbppInvoiceTitleListGetResponseModel result = apiInstance.get(authToken, userId, openId);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayEbppInvoiceTitleListApi#get");
@@ -60,6 +61,7 @@ public class Example {
 |------------- | ------------- | ------------- | -------------|
 | **authToken** | **String**| 用户授权令牌 | [optional] |
 | **userId** | **String**| 支付宝用户id | [optional] |
+| **openId** | **String**| 支付宝用户id | [optional] |
 
 ### Return type
 
