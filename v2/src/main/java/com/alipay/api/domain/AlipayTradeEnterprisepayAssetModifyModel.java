@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 因公付账户资产切换跳链申请
  *
  * @author auto create
- * @since 1.0, 2024-04-25 15:06:17
+ * @since 1.0, 2024-05-17 17:35:38
  */
 public class AlipayTradeEnterprisepayAssetModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6736254525239245384L;
+	private static final long serialVersionUID = 6374686661738876258L;
 
 	/**
 	 * 因公付企业账户ID

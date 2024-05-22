@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签约地址
  *
  * @author auto create
- * @since 1.0, 2024-04-25 17:13:45
+ * @since 1.0, 2024-05-21 10:12:51
  */
 public class SignAddressInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5892715622428413889L;
+	private static final long serialVersionUID = 6259918727927581178L;
 
 	/**
-	 * 城市编码。请按照https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx 表格中内容填写。 （参考资料： http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/）
+	 * 城市编码。请按照<a href="https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx">表格</a> 中内容填写。 （参考资料： <a href="http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/">参考资料</a>）
 	 */
 	@ApiField("city_code")
 	private String cityCode;
@@ -32,25 +32,25 @@ public class SignAddressInfo extends AlipayObject {
 	private String detailAddress;
 
 	/**
-	 * 区县编码。请按照https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx 表格中内容填写。 （参考资料： http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/）
+	 * 区县编码。请按照<a href="https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx">表格</a> 中内容填写。 （参考资料： <a href="http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/">参考资料</a>）
 	 */
 	@ApiField("district_code")
 	private String districtCode;
 
 	/**
-	 * 纬度，浮点型,小数点后最多保留6位 如需要录入经纬度，请以高德坐标系为准，录入时请确保经纬度参数准确。高德经纬度查询：http://lbs.amap.com/console/show/picker
+	 * 纬度，浮点型,小数点后最多保留6位 如需要录入经纬度，请以高德坐标系为准，录入时请确保经纬度参数准确。高德经纬度查询：<a href="http://lbs.amap.com/console/show/picker">查询地址</a>
 	 */
 	@ApiField("latitude")
 	private String latitude;
 
 	/**
-	 * 经度，浮点型, 小数点后最多保留6位。 如需要录入经纬度，请以高德坐标系为准，录入时请确保经纬度参数准确。高德经纬度查询：http://lbs.amap.com/console/show/picker
+	 * 经度，浮点型, 小数点后最多保留6位。 如需要录入经纬度，请以高德坐标系为准，录入时请确保经纬度参数准确。高德经纬度查询：<a href="http://lbs.amap.com/console/show/picker">查询地址</a>
 	 */
 	@ApiField("longitude")
 	private String longitude;
 
 	/**
-	 * 省份编码。请按照https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx 表格中内容填写。 （参考资料： http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/）
+	 * 省份编码。请按照<a href="https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx">表格</a> 中内容填写。 （参考资料： <a href="http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/">参考资料</a>）
 	 */
 	@ApiField("province_code")
 	private String provinceCode;

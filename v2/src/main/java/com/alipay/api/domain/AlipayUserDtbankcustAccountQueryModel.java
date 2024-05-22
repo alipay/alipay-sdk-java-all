@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数字分行用户账号查询接口
  *
  * @author auto create
- * @since 1.0, 2023-09-19 13:44:44
+ * @since 1.0, 2024-05-22 10:11:29
  */
 public class AlipayUserDtbankcustAccountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3812423379838992163L;
+	private static final long serialVersionUID = 5766832359576973735L;
 
 	/**
 	 * 用户登录账号ID，logon_id，phone_id不能同时为空，二选一

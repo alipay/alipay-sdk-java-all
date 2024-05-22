@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间连iot设备和间连商户解绑
  *
  * @author auto create
- * @since 1.0, 2023-10-13 15:20:18
+ * @since 1.0, 2024-05-17 11:28:38
  */
 public class AlipayMerchantIndirectIotUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6283839127617177165L;
+	private static final long serialVersionUID = 1473816839712124717L;
 
 	/**
 	 * 合约机和lite接入模式传设备SN号，千里传音模式传设备deviceName

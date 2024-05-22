@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 续费下单并支付
  *
  * @author auto create
- * @since 1.0, 2024-05-13 16:20:04
+ * @since 1.0, 2024-05-20 11:31:52
  */
 public class AlipayCloudCloudbaseResourcepackageRenewCreateandpayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8885963722778666861L;
+	private static final long serialVersionUID = 2314262289477132612L;
 
 	/**
 	 * 小程序id
@@ -24,6 +27,13 @@ public class AlipayCloudCloudbaseResourcepackageRenewCreateandpayModel extends A
 	 */
 	@ApiField("biz_env_id")
 	private String bizEnvId;
+
+	/**
+	 * 优惠券code列表
+	 */
+	@ApiListField("coupon_codes")
+	@ApiField("string")
+	private List<String> couponCodes;
 
 	/**
 	 * 续费周期数(月)
@@ -43,6 +53,13 @@ public class AlipayCloudCloudbaseResourcepackageRenewCreateandpayModel extends A
 	}
 	public void setBizEnvId(String bizEnvId) {
 		this.bizEnvId = bizEnvId;
+	}
+
+	public List<String> getCouponCodes() {
+		return this.couponCodes;
+	}
+	public void setCouponCodes(List<String> couponCodes) {
+		this.couponCodes = couponCodes;
 	}
 
 	public Long getRenewMonth() {

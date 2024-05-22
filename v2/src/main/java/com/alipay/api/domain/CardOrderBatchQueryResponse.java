@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订购单分页查询结果
  *
  * @author auto create
- * @since 1.0, 2024-05-10 16:54:16
+ * @since 1.0, 2024-05-18 10:43:16
  */
 public class CardOrderBatchQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 7594879272772371597L;
+	private static final long serialVersionUID = 3121612529558888982L;
+
+	/**
+	 * 用于区分订购单的取消类型
+	 */
+	@ApiField("cancel_type")
+	private String cancelType;
 
 	/**
 	 * 订购单ID
@@ -64,10 +70,28 @@ public class CardOrderBatchQueryResponse extends AlipayObject {
 	private String orderId;
 
 	/**
+	 * 购买商品时的原价，单位分
+	 */
+	@ApiField("origin_price_total")
+	private Long originPriceTotal;
+
+	/**
+	 * 用于商户/服务商在插件商品详情页的自定义参数
+	 */
+	@ApiField("out_order_no")
+	private String outOrderNo;
+
+	/**
 	 * 剩余期数(次数)
 	 */
 	@ApiField("remain_count")
 	private Long remainCount;
+
+	/**
+	 * 用户购买商品时的实际价格，单位分
+	 */
+	@ApiField("sale_price_total")
+	private Long salePriceTotal;
 
 	/**
 	 * 门店ID
@@ -86,6 +110,19 @@ public class CardOrderBatchQueryResponse extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	/**
+	 * 脱敏后的用户名称
+	 */
+	@ApiField("user_name")
+	private String userName;
+
+	public String getCancelType() {
+		return this.cancelType;
+	}
+	public void setCancelType(String cancelType) {
+		this.cancelType = cancelType;
+	}
 
 	public String getCardId() {
 		return this.cardId;
@@ -143,11 +180,32 @@ public class CardOrderBatchQueryResponse extends AlipayObject {
 		this.orderId = orderId;
 	}
 
+	public Long getOriginPriceTotal() {
+		return this.originPriceTotal;
+	}
+	public void setOriginPriceTotal(Long originPriceTotal) {
+		this.originPriceTotal = originPriceTotal;
+	}
+
+	public String getOutOrderNo() {
+		return this.outOrderNo;
+	}
+	public void setOutOrderNo(String outOrderNo) {
+		this.outOrderNo = outOrderNo;
+	}
+
 	public Long getRemainCount() {
 		return this.remainCount;
 	}
 	public void setRemainCount(Long remainCount) {
 		this.remainCount = remainCount;
+	}
+
+	public Long getSalePriceTotal() {
+		return this.salePriceTotal;
+	}
+	public void setSalePriceTotal(Long salePriceTotal) {
+		this.salePriceTotal = salePriceTotal;
 	}
 
 	public String getShopId() {
@@ -169,6 +227,13 @@ public class CardOrderBatchQueryResponse extends AlipayObject {
 	}
 	public void setUserId(String userId) {
 		this.userId = userId;
+	}
+
+	public String getUserName() {
+		return this.userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 
 }

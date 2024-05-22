@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序消息内容
  *
  * @author auto create
- * @since 1.0, 2024-05-15 16:49:55
+ * @since 1.0, 2024-05-20 10:15:19
  */
 public class TinyAppMsgVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8752615232968532495L;
+	private static final long serialVersionUID = 5668521859979468226L;
 
 	/**
 	 * 对推送商品的简单介绍（参考：美妆好物应有尽有，快戳进来看看呀）
@@ -24,6 +24,18 @@ public class TinyAppMsgVO extends AlipayObject {
 	 */
 	@ApiField("image")
 	private String image;
+
+	/**
+	 * 图片id
+	 */
+	@ApiField("image_id")
+	private String imageId;
+
+	/**
+	 * 建议选择有吸引力的图片，引导用户点击链接（支持的图片 jpg、png，限制1M以内)
+	 */
+	@ApiField("image_url")
+	private String imageUrl;
 
 	/**
 	 * 应用id。用于入群欢迎语在群里展示。
@@ -67,6 +79,20 @@ public class TinyAppMsgVO extends AlipayObject {
 	}
 	public void setImage(String image) {
 		this.image = image;
+	}
+
+	public String getImageId() {
+		return this.imageId;
+	}
+	public void setImageId(String imageId) {
+		this.imageId = imageId;
+	}
+
+	public String getImageUrl() {
+		return this.imageUrl;
+	}
+	public void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
 	}
 
 	public String getTinyAppId() {

@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 云平台开通钱包产品
  *
  * @author auto create
- * @since 1.0, 2024-04-15 11:55:27
+ * @since 1.0, 2024-05-22 16:04:51
  */
 public class AlipayCloudFundWalletTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6536435976587996579L;
+	private static final long serialVersionUID = 7688424418779559556L;
+
+	/**
+	 * 钱包场景码
+	 */
+	@ApiField("biz_scene")
+	private String bizScene;
 
 	/**
 	 * 外部业务号
@@ -20,16 +26,36 @@ public class AlipayCloudFundWalletTemplateCreateModel extends AlipayObject {
 	private String outBizNo;
 
 	/**
+	 * 钱包产品code一般为FUND_TRUSTSHIP
+	 */
+	@ApiField("product_code")
+	private String productCode;
+
+	/**
 	 * 钱包名称
 	 */
 	@ApiField("wallet_template_name")
 	private String walletTemplateName;
+
+	public String getBizScene() {
+		return this.bizScene;
+	}
+	public void setBizScene(String bizScene) {
+		this.bizScene = bizScene;
+	}
 
 	public String getOutBizNo() {
 		return this.outBizNo;
 	}
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
+	}
+
+	public String getProductCode() {
+		return this.productCode;
+	}
+	public void setProductCode(String productCode) {
+		this.productCode = productCode;
 	}
 
 	public String getWalletTemplateName() {

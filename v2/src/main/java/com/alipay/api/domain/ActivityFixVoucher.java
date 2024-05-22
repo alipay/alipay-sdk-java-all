@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ActivityFixVoucher extends AlipayObject {
 
-	private static final long serialVersionUID = 1863695384757123446L;
+	private static final long serialVersionUID = 2618179116443663869L;
 
 	/**
 	 * 面额，每张代金券可以抵扣的金额。

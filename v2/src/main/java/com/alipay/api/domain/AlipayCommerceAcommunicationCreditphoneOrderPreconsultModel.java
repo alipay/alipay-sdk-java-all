@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 运营商行业信用购预咨询
  *
  * @author auto create
- * @since 1.0, 2024-03-28 09:47:04
+ * @since 1.0, 2024-05-22 14:28:52
  */
 public class AlipayCommerceAcommunicationCreditphoneOrderPreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4662433132413419691L;
+	private static final long serialVersionUID = 6468645935681938831L;
 
 	/**
 	 * 支付宝用户id
@@ -60,6 +60,12 @@ public class AlipayCommerceAcommunicationCreditphoneOrderPreconsultModel extends
 	 */
 	@ApiField("request_no")
 	private String requestNo;
+
+	/**
+	 * 套餐id
+	 */
+	@ApiField("spu_id")
+	private String spuId;
 
 	public String getAlipayOpenId() {
 		return this.alipayOpenId;
@@ -115,6 +121,13 @@ public class AlipayCommerceAcommunicationCreditphoneOrderPreconsultModel extends
 	}
 	public void setRequestNo(String requestNo) {
 		this.requestNo = requestNo;
+	}
+
+	public String getSpuId() {
+		return this.spuId;
+	}
+	public void setSpuId(String spuId) {
+		this.spuId = spuId;
 	}
 
 }

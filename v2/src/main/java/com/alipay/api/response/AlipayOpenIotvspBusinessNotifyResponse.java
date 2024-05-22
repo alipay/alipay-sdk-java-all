@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotvsp.business.notify response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-15 14:44:07
+ * @since 1.0, 2024-05-21 14:27:01
  */
 public class AlipayOpenIotvspBusinessNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3838797749793576972L;
+	private static final long serialVersionUID = 2264738619854324698L;
 
 	/** 
 	 * 业务操作执行状态，不包含消息发送状态

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业缴费ISV图片DTO
  *
  * @author auto create
- * @since 1.0, 2023-05-06 14:28:43
+ * @since 1.0, 2024-05-21 18:58:53
  */
 public class IndrISVImageDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1531267435628216188L;
+	private static final long serialVersionUID = 4333474436959748685L;
 
 	/**
 	 * 图片格式，如JPG
@@ -30,6 +30,12 @@ public class IndrISVImageDTO extends AlipayObject {
 	 */
 	@ApiField("image_type")
 	private String imageType;
+
+	/**
+	 * 图片URL
+	 */
+	@ApiField("image_url")
+	private String imageUrl;
 
 	public String getImageFormat() {
 		return this.imageFormat;
@@ -50,6 +56,13 @@ public class IndrISVImageDTO extends AlipayObject {
 	}
 	public void setImageType(String imageType) {
 		this.imageType = imageType;
+	}
+
+	public String getImageUrl() {
+		return this.imageUrl;
+	}
+	public void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
 	}
 
 }

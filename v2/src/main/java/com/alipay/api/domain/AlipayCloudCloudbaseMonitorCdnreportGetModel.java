@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询报表数据
  *
  * @author auto create
- * @since 1.0, 2024-04-16 09:58:47
+ * @since 1.0, 2024-05-20 14:19:15
  */
 public class AlipayCloudCloudbaseMonitorCdnreportGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6632923214354554424L;
+	private static final long serialVersionUID = 7723891194612999262L;
 
 	/**
 	 * 小程序云AppID

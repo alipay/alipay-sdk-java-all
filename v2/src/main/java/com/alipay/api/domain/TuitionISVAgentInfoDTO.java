@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * isv机构信息
  *
  * @author auto create
- * @since 1.0, 2024-04-22 10:39:05
+ * @since 1.0, 2024-05-21 18:22:28
  */
 public class TuitionISVAgentInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4314153314173671543L;
+	private static final long serialVersionUID = 7755746571341932237L;
 
 	/**
 	 * 二级机构名称

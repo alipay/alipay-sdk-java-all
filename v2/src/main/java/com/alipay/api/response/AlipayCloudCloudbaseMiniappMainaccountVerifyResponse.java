@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.miniapp.mainaccount.verify response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-15 11:37:02
+ * @since 1.0, 2024-05-20 11:32:02
  */
 public class AlipayCloudCloudbaseMiniappMainaccountVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8196514511456229537L;
+	private static final long serialVersionUID = 6633974249839721516L;
 
 	/** 
 	 * 校验结果

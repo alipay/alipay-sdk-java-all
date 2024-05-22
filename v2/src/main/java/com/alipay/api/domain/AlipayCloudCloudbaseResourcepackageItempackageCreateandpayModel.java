@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 单项资源包下单并支付
  *
  * @author auto create
- * @since 1.0, 2024-05-13 16:19:42
+ * @since 1.0, 2024-05-20 11:32:57
  */
 public class AlipayCloudCloudbaseResourcepackageItempackageCreateandpayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8752911714779369315L;
+	private static final long serialVersionUID = 8522674656141321269L;
 
 	/**
 	 * 小程序id
@@ -30,6 +33,13 @@ public class AlipayCloudCloudbaseResourcepackageItempackageCreateandpayModel ext
 	 */
 	@ApiField("commodity_code")
 	private String commodityCode;
+
+	/**
+	 * 优惠券code列表
+	 */
+	@ApiListField("coupon_codes")
+	@ApiField("string")
+	private List<String> couponCodes;
 
 	/**
 	 * 商品可购买周期数量
@@ -74,6 +84,13 @@ public class AlipayCloudCloudbaseResourcepackageItempackageCreateandpayModel ext
 	}
 	public void setCommodityCode(String commodityCode) {
 		this.commodityCode = commodityCode;
+	}
+
+	public List<String> getCouponCodes() {
+		return this.couponCodes;
+	}
+	public void setCouponCodes(List<String> couponCodes) {
+		this.couponCodes = couponCodes;
 	}
 
 	public Long getEffectivePeriodNum() {

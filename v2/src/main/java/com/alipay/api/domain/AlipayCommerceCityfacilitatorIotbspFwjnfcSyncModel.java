@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * NFC服务机初始化
  *
  * @author auto create
- * @since 1.0, 2024-05-16 19:26:14
+ * @since 1.0, 2024-05-21 11:39:18
  */
 public class AlipayCommerceCityfacilitatorIotbspFwjnfcSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2762568825452971369L;
+	private static final long serialVersionUID = 3439495889223955215L;
 
 	/**
 	 * 贴一贴后需要跳转的小程序appId

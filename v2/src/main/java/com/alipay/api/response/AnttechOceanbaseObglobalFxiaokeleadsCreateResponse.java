@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.oceanbase.obglobal.fxiaokeleads.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-07 15:28:30
+ * @since 1.0, 2024-05-20 16:57:01
  */
 public class AnttechOceanbaseObglobalFxiaokeleadsCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2323686276141813857L;
+	private static final long serialVersionUID = 3192766948545227725L;
 
 	/** 
 	 * 业务错误码

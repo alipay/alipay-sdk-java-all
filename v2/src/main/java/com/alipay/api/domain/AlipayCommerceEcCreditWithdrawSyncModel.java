@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资方授信审批结果同步
  *
  * @author auto create
- * @since 1.0, 2023-10-10 15:11:17
+ * @since 1.0, 2024-05-21 20:13:57
  */
 public class AlipayCommerceEcCreditWithdrawSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2364532661744293237L;
+	private static final long serialVersionUID = 7249228825195111852L;
 
 	/**
 	 * 支付宝交易号

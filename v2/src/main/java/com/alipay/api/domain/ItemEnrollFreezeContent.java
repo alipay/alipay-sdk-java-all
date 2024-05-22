@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 报名活动状态及文案
  *
  * @author auto create
- * @since 1.0, 2024-05-15 16:43:15
+ * @since 1.0, 2024-05-22 14:47:18
  */
 public class ItemEnrollFreezeContent extends AlipayObject {
 
-	private static final long serialVersionUID = 8876363598622677636L;
+	private static final long serialVersionUID = 4512278959333877716L;
 
 	/**
 	 * 是否参与直播秒杀

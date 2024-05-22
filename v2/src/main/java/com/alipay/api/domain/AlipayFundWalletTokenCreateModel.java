@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户绑定申请token
  *
  * @author auto create
- * @since 1.0, 2024-05-10 14:27:55
+ * @since 1.0, 2024-05-21 17:52:46
  */
 public class AlipayFundWalletTokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5629734147871975622L;
+	private static final long serialVersionUID = 3355928675737424442L;
 
 	/**
 	 * alipay.user.agreement.page.sign返回的代扣签约串
@@ -36,6 +36,12 @@ public class AlipayFundWalletTokenCreateModel extends AlipayObject {
 	 */
 	@ApiField("identity")
 	private String identity;
+
+	/**
+	 * 用于标记支付宝用户在应用下的唯一标识
+	 */
+	@ApiField("identity_open_id")
+	private String identityOpenId;
 
 	/**
 	 * 登陆类型
@@ -99,6 +105,13 @@ public class AlipayFundWalletTokenCreateModel extends AlipayObject {
 	}
 	public void setIdentity(String identity) {
 		this.identity = identity;
+	}
+
+	public String getIdentityOpenId() {
+		return this.identityOpenId;
+	}
+	public void setIdentityOpenId(String identityOpenId) {
+		this.identityOpenId = identityOpenId;
 	}
 
 	public String getIdentityType() {

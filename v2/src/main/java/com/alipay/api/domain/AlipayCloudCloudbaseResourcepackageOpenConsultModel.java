@@ -1,23 +1,33 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 开通资源包询价
  *
  * @author auto create
- * @since 1.0, 2024-05-13 16:19:54
+ * @since 1.0, 2024-05-20 11:33:00
  */
 public class AlipayCloudCloudbaseResourcepackageOpenConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4288628562332874699L;
+	private static final long serialVersionUID = 8438811648897495188L;
 
 	/**
 	 * 小程序id
 	 */
 	@ApiField("biz_app_id")
 	private String bizAppId;
+
+	/**
+	 * 优惠券code列表
+	 */
+	@ApiListField("coupon_codes")
+	@ApiField("string")
+	private List<String> couponCodes;
 
 	/**
 	 * 购买时长(月)
@@ -42,6 +52,13 @@ public class AlipayCloudCloudbaseResourcepackageOpenConsultModel extends AlipayO
 	}
 	public void setBizAppId(String bizAppId) {
 		this.bizAppId = bizAppId;
+	}
+
+	public List<String> getCouponCodes() {
+		return this.couponCodes;
+	}
+	public void setCouponCodes(List<String> couponCodes) {
+		this.couponCodes = couponCodes;
 	}
 
 	public Long getPurchaseMonth() {

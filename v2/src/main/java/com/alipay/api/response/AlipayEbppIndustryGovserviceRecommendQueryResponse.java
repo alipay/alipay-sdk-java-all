@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.govservice.recommend.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-28 19:41:55
+ * @since 1.0, 2024-05-21 10:30:40
  */
 public class AlipayEbppIndustryGovserviceRecommendQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3841881595147781736L;
+	private static final long serialVersionUID = 1213212883657446494L;
 
 	/** 
 	 * 根据用户意图推荐的服务

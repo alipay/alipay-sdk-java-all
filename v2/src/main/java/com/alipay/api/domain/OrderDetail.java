@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 子订单明细
  *
  * @author auto create
- * @since 1.0, 2024-04-19 16:54:50
+ * @since 1.0, 2024-05-21 21:53:16
  */
 public class OrderDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8583244464864768741L;
+	private static final long serialVersionUID = 5489713755828586899L;
 
 	/**
 	 * 订单明细的应用唯一标识（16位纯数字），指商家的app_id。
@@ -65,6 +65,12 @@ public class OrderDetail extends AlipayObject {
 	 */
 	@ApiField("product_code")
 	private String productCode;
+
+	/**
+	 * 营销扩展参数
+	 */
+	@ApiField("promo_params")
+	private PromoParam promoParams;
 
 	/**
 	 * 分账信息
@@ -171,6 +177,13 @@ public class OrderDetail extends AlipayObject {
 	}
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
+	}
+
+	public PromoParam getPromoParams() {
+		return this.promoParams;
+	}
+	public void setPromoParams(PromoParam promoParams) {
+		this.promoParams = promoParams;
 	}
 
 	public RoyaltyInfo getRoyaltyInfo() {

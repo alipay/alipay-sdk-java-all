@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceIotVoicemodelSyncvoiceSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2284815764773232929L;
+	private static final long serialVersionUID = 6728681494219135238L;
 
 	/**
 	 * 服务调用上下文

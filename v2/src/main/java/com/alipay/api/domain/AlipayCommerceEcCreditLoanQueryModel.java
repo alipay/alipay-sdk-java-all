@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业查询借款申请记录
  *
  * @author auto create
- * @since 1.0, 2024-04-25 15:51:29
+ * @since 1.0, 2024-05-20 14:03:24
  */
 public class AlipayCommerceEcCreditLoanQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8392976624344688287L;
+	private static final long serialVersionUID = 7233815993273764328L;
 
 	/**
 	 * 共同账户ID

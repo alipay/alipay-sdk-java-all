@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class InqueryDoctorStatusData extends AlipayObject {
 
-	private static final long serialVersionUID = 4667281984538733189L;
+	private static final long serialVersionUID = 6691233986159158783L;
 
 	/**
 	 * 平均接诊时长（单位：分钟）

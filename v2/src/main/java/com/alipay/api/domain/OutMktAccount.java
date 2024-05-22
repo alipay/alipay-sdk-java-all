@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class OutMktAccount extends AlipayObject {
 
-	private static final long serialVersionUID = 7355752812562858622L;
+	private static final long serialVersionUID = 8149716524434362121L;
 
 	/**
 	 * 营销账号id

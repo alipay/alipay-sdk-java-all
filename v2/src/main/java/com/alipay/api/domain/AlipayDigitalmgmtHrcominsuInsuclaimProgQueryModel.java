@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDigitalmgmtHrcominsuInsuclaimProgQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3339398188561859656L;
+	private static final long serialVersionUID = 8885645796743484153L;
 
 	/**
 	 * data_key+不唯一+供应商查询未提交给理赔公司的，理赔状态为进行中的理赔报案数据+枚举值(无)+员工申请理赔+特殊说明(无)

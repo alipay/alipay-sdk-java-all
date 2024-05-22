@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FlowStatsEntry extends AlipayObject {
 
-	private static final long serialVersionUID = 1292167527438798346L;
+	private static final long serialVersionUID = 3679249183784838857L;
 
 	/**
 	 * 访问量

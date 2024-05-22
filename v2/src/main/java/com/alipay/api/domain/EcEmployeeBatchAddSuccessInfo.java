@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量添加员工接口，添加成功的员工信息
  *
  * @author auto create
- * @since 1.0, 2024-04-22 11:10:57
+ * @since 1.0, 2024-05-22 13:32:17
  */
 public class EcEmployeeBatchAddSuccessInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7522228616116955349L;
+	private static final long serialVersionUID = 1552279932867283587L;
 
 	/**
 	 * 证件号
@@ -74,7 +74,7 @@ public class EcEmployeeBatchAddSuccessInfo extends AlipayObject {
 	private String iotUniqueId;
 
 	/**
-	 * 个性化信息
+	 * 个性化信息 <a href='https://opendocs.alipay.com/pre-open/0ceh47?pathHash=14fac87c'>详见文档</a>
 	 */
 	@ApiField("profiles")
 	private String profiles;

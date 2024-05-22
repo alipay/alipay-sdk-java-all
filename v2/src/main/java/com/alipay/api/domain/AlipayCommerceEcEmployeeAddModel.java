@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 添加员工
  *
  * @author auto create
- * @since 1.0, 2024-05-15 16:00:47
+ * @since 1.0, 2024-05-22 10:37:41
  */
 public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6119738262434459831L;
+	private static final long serialVersionUID = 1259249557186533349L;
+
+	/**
+	 * 是否需要生成吱口令，默认不生成
+	 */
+	@ApiField("create_share_code")
+	private Boolean createShareCode;
 
 	/**
 	 * 员工所属部门
@@ -109,7 +115,7 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	private String iotVid;
 
 	/**
-	 * 员工个性化信息
+	 * 个性化信息 <a href='https://opendocs.alipay.com/pre-open/0ceh47?pathHash=14fac87c'>详见文档</a>
 	 */
 	@ApiField("profiles")
 	private String profiles;
@@ -122,7 +128,7 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	private List<String> roleList;
 
 	/**
-	 * 员工签约后回跳地址
+	 * 员工签约后回跳地址；支持 alipay scheme 协议地址，不传默认跳转企业码小程序首页
 	 */
 	@ApiField("sign_return_url")
 	private String signReturnUrl;
@@ -139,6 +145,13 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	 */
 	@ApiField("withholding_sign_str")
 	private String withholdingSignStr;
+
+	public Boolean getCreateShareCode() {
+		return this.createShareCode;
+	}
+	public void setCreateShareCode(Boolean createShareCode) {
+		this.createShareCode = createShareCode;
+	}
 
 	public List<String> getDepartmentIds() {
 		return this.departmentIds;

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.monitor.metric.query request
  * 
  * @author auto create
- * @since 1.0, 2024-05-08 14:31:09
+ * @since 1.0, 2024-05-22 17:27:03
  */
 public class AlipayCloudCloudbaseMonitorMetricQueryRequest implements AlipayRequest<AlipayCloudCloudbaseMonitorMetricQueryResponse> {
 

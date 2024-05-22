@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 消息通知事件传参
  *
  * @author auto create
- * @since 1.0, 2023-06-09 19:31:17
+ * @since 1.0, 2024-05-21 10:58:21
  */
 public class NotifyEventParam extends AlipayObject {
 
-	private static final long serialVersionUID = 4538578185444321618L;
+	private static final long serialVersionUID = 3431717913715934953L;
 
 	/**
 	 * 事件类型对应配置

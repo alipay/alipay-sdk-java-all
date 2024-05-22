@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 变配资源包询价
  *
  * @author auto create
- * @since 1.0, 2024-05-13 16:20:22
+ * @since 1.0, 2024-05-20 11:31:49
  */
 public class AlipayCloudCloudbaseResourcepackageAlterConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8472129323889376985L;
+	private static final long serialVersionUID = 1319731376193792168L;
 
 	/**
 	 * 待变配的规格编码
@@ -30,6 +33,13 @@ public class AlipayCloudCloudbaseResourcepackageAlterConsultModel extends Alipay
 	 */
 	@ApiField("biz_env_id")
 	private String bizEnvId;
+
+	/**
+	 * 优惠券code列表
+	 */
+	@ApiListField("coupon_codes")
+	@ApiField("string")
+	private List<String> couponCodes;
 
 	public String getAlterSpecCode() {
 		return this.alterSpecCode;
@@ -50,6 +60,13 @@ public class AlipayCloudCloudbaseResourcepackageAlterConsultModel extends Alipay
 	}
 	public void setBizEnvId(String bizEnvId) {
 		this.bizEnvId = bizEnvId;
+	}
+
+	public List<String> getCouponCodes() {
+		return this.couponCodes;
+	}
+	public void setCouponCodes(List<String> couponCodes) {
+		this.couponCodes = couponCodes;
 	}
 
 }

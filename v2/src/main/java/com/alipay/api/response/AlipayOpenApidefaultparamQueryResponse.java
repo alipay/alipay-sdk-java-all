@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.apidefaultparam.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:27:51
+ * @since 1.0, 2024-05-21 19:59:19
  */
 public class AlipayOpenApidefaultparamQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1653677653647543716L;
+	private static final long serialVersionUID = 1129939451363636493L;
 
 	/** 
 	 * 某个接口的默认入参

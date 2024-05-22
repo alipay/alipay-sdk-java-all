@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.acommunication.creditphone.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-16 10:22:58
+ * @since 1.0, 2024-05-22 14:32:02
  */
 public class AlipayCommerceAcommunicationCreditphoneOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7356515632178776726L;
+	private static final long serialVersionUID = 7295622649124617548L;
 
 	/** 
 	 * 信用购主单号
@@ -32,6 +32,12 @@ public class AlipayCommerceAcommunicationCreditphoneOrderQueryResponse extends A
 	 */
 	@ApiField("freeze_amount")
 	private String freezeAmount;
+
+	/** 
+	 * 用户页面订单id，一般用户客诉
+	 */
+	@ApiField("page_order_no")
+	private String pageOrderNo;
 
 	/** 
 	 * 用户签约生效时间。未签约时返回为空。
@@ -64,6 +70,13 @@ public class AlipayCommerceAcommunicationCreditphoneOrderQueryResponse extends A
 	}
 	public String getFreezeAmount( ) {
 		return this.freezeAmount;
+	}
+
+	public void setPageOrderNo(String pageOrderNo) {
+		this.pageOrderNo = pageOrderNo;
+	}
+	public String getPageOrderNo( ) {
+		return this.pageOrderNo;
 	}
 
 	public void setSignTime(Date signTime) {

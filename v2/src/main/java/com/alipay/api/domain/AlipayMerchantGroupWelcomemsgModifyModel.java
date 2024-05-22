@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改入群欢迎语
  *
  * @author auto create
- * @since 1.0, 2024-05-15 16:49:55
+ * @since 1.0, 2024-05-20 10:23:50
  */
 public class AlipayMerchantGroupWelcomemsgModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3485228625924866975L;
+	private static final long serialVersionUID = 1825145299622252899L;
 
 	/**
 	 * 群组id列表

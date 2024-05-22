@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 员工信息
  *
  * @author auto create
- * @since 1.0, 2024-04-22 11:10:30
+ * @since 1.0, 2024-05-22 13:31:17
  */
 public class EmployeeInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4824326394822142595L;
+	private static final long serialVersionUID = 2772392147298868495L;
 
 	/**
 	 * 是否激活
@@ -120,7 +120,7 @@ public class EmployeeInfoDTO extends AlipayObject {
 	private String openId;
 
 	/**
-	 * 个性化信息
+	 * 个性化信息 <a href='https://opendocs.alipay.com/pre-open/0ceh47?pathHash=14fac87c'>详见文档</a>
 	 */
 	@ApiField("profiles")
 	private String profiles;

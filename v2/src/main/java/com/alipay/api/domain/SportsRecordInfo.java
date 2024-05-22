@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SportsRecordInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3769149275853267864L;
+	private static final long serialVersionUID = 1877839449185199414L;
 
 	/**
 	 * 消耗卡路里，实际为 decimal类型，有小数

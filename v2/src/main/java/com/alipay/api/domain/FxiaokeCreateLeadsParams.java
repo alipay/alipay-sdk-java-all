@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 纷享销客创建商机的参数和返回值
  *
  * @author auto create
- * @since 1.0, 2023-10-24 09:53:51
+ * @since 1.0, 2024-05-20 16:54:56
  */
 public class FxiaokeCreateLeadsParams extends AlipayObject {
 
-	private static final long serialVersionUID = 5862746293631981816L;
+	private static final long serialVersionUID = 5116415885641264497L;
 
 	/**
 	 * 实际主导方
@@ -125,6 +125,48 @@ public class FxiaokeCreateLeadsParams extends AlipayObject {
 	 */
 	@ApiField("leads_code")
 	private String leadsCode;
+
+	/**
+	 * 部署资源云底座，多个用逗号隔开
+	 */
+	@ApiField("leads_deploy_resource_pedestals")
+	private String leadsDeployResourcePedestals;
+
+	/**
+	 * 商机收费模式
+	 */
+	@ApiField("leads_fee_model")
+	private String leadsFeeModel;
+
+	/**
+	 * 诺曼底商机
+	 */
+	@ApiField("leads_normandy")
+	private String leadsNormandy;
+
+	/**
+	 * 其他云底座文本值
+	 */
+	@ApiField("leads_other_cloud_pedestal")
+	private String leadsOtherCloudPedestal;
+
+	/**
+	 * 商机产品类别
+	 */
+	@ApiField("leads_product_type")
+	private String leadsProductType;
+
+	/**
+	 * 商机售卖渠道
+	 */
+	@ApiField("leads_sale_channel")
+	private String leadsSaleChannel;
+
+	/**
+	 * 商机售卖地域
+	 */
+	@ApiField("leads_sale_territory")
+	private String leadsSaleTerritory;
 
 	/**
 	 * 商机来源伙伴pid
@@ -386,6 +428,55 @@ public class FxiaokeCreateLeadsParams extends AlipayObject {
 	}
 	public void setLeadsCode(String leadsCode) {
 		this.leadsCode = leadsCode;
+	}
+
+	public String getLeadsDeployResourcePedestals() {
+		return this.leadsDeployResourcePedestals;
+	}
+	public void setLeadsDeployResourcePedestals(String leadsDeployResourcePedestals) {
+		this.leadsDeployResourcePedestals = leadsDeployResourcePedestals;
+	}
+
+	public String getLeadsFeeModel() {
+		return this.leadsFeeModel;
+	}
+	public void setLeadsFeeModel(String leadsFeeModel) {
+		this.leadsFeeModel = leadsFeeModel;
+	}
+
+	public String getLeadsNormandy() {
+		return this.leadsNormandy;
+	}
+	public void setLeadsNormandy(String leadsNormandy) {
+		this.leadsNormandy = leadsNormandy;
+	}
+
+	public String getLeadsOtherCloudPedestal() {
+		return this.leadsOtherCloudPedestal;
+	}
+	public void setLeadsOtherCloudPedestal(String leadsOtherCloudPedestal) {
+		this.leadsOtherCloudPedestal = leadsOtherCloudPedestal;
+	}
+
+	public String getLeadsProductType() {
+		return this.leadsProductType;
+	}
+	public void setLeadsProductType(String leadsProductType) {
+		this.leadsProductType = leadsProductType;
+	}
+
+	public String getLeadsSaleChannel() {
+		return this.leadsSaleChannel;
+	}
+	public void setLeadsSaleChannel(String leadsSaleChannel) {
+		this.leadsSaleChannel = leadsSaleChannel;
+	}
+
+	public String getLeadsSaleTerritory() {
+		return this.leadsSaleTerritory;
+	}
+	public void setLeadsSaleTerritory(String leadsSaleTerritory) {
+		this.leadsSaleTerritory = leadsSaleTerritory;
 	}
 
 	public String getLeadsSourcePartnerId() {

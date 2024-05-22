@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.pe.zmgo.preorder.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-19 16:42:35
+ * @since 1.0, 2024-05-20 17:29:11
  */
 public class ZhimaCreditPeZmgoPreorderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8392542974196754226L;
+	private static final long serialVersionUID = 5194815463964777864L;
 
 	/** 
 	 * 业务类型

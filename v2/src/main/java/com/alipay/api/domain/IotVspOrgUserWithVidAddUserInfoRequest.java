@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 录入机构用户信息请求对象，支持自定义vid
+ * vid长度扩展到64位
  *
  * @author auto create
- * @since 1.0, 2024-05-15 15:27:26
+ * @since 1.0, 2024-05-21 10:59:35
  */
 public class IotVspOrgUserWithVidAddUserInfoRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 1489141859859755979L;
+	private static final long serialVersionUID = 5691253678393898941L;
 
 	/**
 	 * 姓名

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量添加员工接口，添加失败的员工信息
  *
  * @author auto create
- * @since 1.0, 2024-04-22 11:10:46
+ * @since 1.0, 2024-05-22 13:32:17
  */
 public class EcEmployeeBatchAddFailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4334694629853298146L;
+	private static final long serialVersionUID = 2423272776851717699L;
 
 	/**
 	 * 证件号
@@ -68,7 +68,7 @@ public class EcEmployeeBatchAddFailInfo extends AlipayObject {
 	private String failReason;
 
 	/**
-	 * 个性化信息
+	 * 个性化信息 <a href='https://opendocs.alipay.com/pre-open/0ceh47?pathHash=14fac87c'>详见文档</a>
 	 */
 	@ApiField("profiles")
 	private String profiles;

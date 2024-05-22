@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenApiFamilyInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5616731415257172447L;
+	private static final long serialVersionUID = 2815377341481656524L;
 
 	/**
 	 * 全家福已收集皮肤数量

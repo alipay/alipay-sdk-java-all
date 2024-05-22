@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntPcinstpromoPcinstpromoActivityorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3164941352181332374L;
+	private static final long serialVersionUID = 2522828354399578646L;
 
 	/** 
 	 * P站配置的活动id

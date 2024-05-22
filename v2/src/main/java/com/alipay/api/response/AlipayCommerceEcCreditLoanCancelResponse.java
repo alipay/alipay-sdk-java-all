@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.credit.loan.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-25 15:57:01
+ * @since 1.0, 2024-05-20 14:07:01
  */
 public class AlipayCommerceEcCreditLoanCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1212473811411665926L;
+	private static final long serialVersionUID = 5226281968142532257L;
 
 	
 

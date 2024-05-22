@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业撤销借款申
  *
  * @author auto create
- * @since 1.0, 2024-04-25 15:51:55
+ * @since 1.0, 2024-05-20 14:03:24
  */
 public class AlipayCommerceEcCreditLoanCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5127163861462578173L;
+	private static final long serialVersionUID = 3711743117259243842L;
 
 	/**
 	 * 共同账户ID

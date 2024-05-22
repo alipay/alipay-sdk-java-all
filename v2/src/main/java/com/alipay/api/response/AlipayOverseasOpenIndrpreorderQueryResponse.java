@@ -2,6 +2,7 @@ package com.alipay.api.response;
 
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.domain.IndrISVAmountInfoDTO;
+import com.alipay.api.domain.IndrISVPaymentInfoDTO;
 import com.alipay.api.domain.IndrISVResult;
 import com.alipay.api.domain.IndrISVOrderStatusDTO;
 
@@ -11,17 +12,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.open.indrpreorder.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-13 10:56:33
+ * @since 1.0, 2024-05-21 19:02:03
  */
 public class AlipayOverseasOpenIndrpreorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3762229188615234254L;
+	private static final long serialVersionUID = 2384379752364262286L;
 
 	/** 
 	 * 付款金额
 	 */
 	@ApiField("payment_amount")
 	private IndrISVAmountInfoDTO paymentAmount;
+
+	/** 
+	 * 缴费信息
+	 */
+	@ApiField("payment_info")
+	private IndrISVPaymentInfoDTO paymentInfo;
 
 	/** 
 	 * 预下单订单号
@@ -58,6 +65,13 @@ public class AlipayOverseasOpenIndrpreorderQueryResponse extends AlipayResponse 
 	}
 	public IndrISVAmountInfoDTO getPaymentAmount( ) {
 		return this.paymentAmount;
+	}
+
+	public void setPaymentInfo(IndrISVPaymentInfoDTO paymentInfo) {
+		this.paymentInfo = paymentInfo;
+	}
+	public IndrISVPaymentInfoDTO getPaymentInfo( ) {
+		return this.paymentInfo;
 	}
 
 	public void setPreOrderId(String preOrderId) {

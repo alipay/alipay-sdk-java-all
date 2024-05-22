@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportOfflinepayTradeSettleResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6567552533842181972L;
+	private static final long serialVersionUID = 4474588638219939195L;
 
 	/** 
 	 * 支付宝脱机交易处理结果列表

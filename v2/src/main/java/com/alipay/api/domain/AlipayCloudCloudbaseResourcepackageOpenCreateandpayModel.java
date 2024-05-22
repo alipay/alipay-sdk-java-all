@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 开通下单并支付
  *
  * @author auto create
- * @since 1.0, 2024-05-15 11:58:43
+ * @since 1.0, 2024-05-20 10:24:50
  */
 public class AlipayCloudCloudbaseResourcepackageOpenCreateandpayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2774679986983768816L;
+	private static final long serialVersionUID = 7313157762777334981L;
 
 	/**
 	 * 支付宝用户ID
@@ -30,6 +33,13 @@ public class AlipayCloudCloudbaseResourcepackageOpenCreateandpayModel extends Al
 	 */
 	@ApiField("biz_app_id")
 	private String bizAppId;
+
+	/**
+	 * 优惠券code列表，目前只使用第一张
+	 */
+	@ApiListField("coupon_codes")
+	@ApiField("string")
+	private List<String> couponCodes;
 
 	/**
 	 * 环境描述
@@ -93,6 +103,13 @@ public class AlipayCloudCloudbaseResourcepackageOpenCreateandpayModel extends Al
 	}
 	public void setBizAppId(String bizAppId) {
 		this.bizAppId = bizAppId;
+	}
+
+	public List<String> getCouponCodes() {
+		return this.couponCodes;
+	}
+	public void setCouponCodes(List<String> couponCodes) {
+		this.couponCodes = couponCodes;
 	}
 
 	public String getEnvDescription() {

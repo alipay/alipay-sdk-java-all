@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 每日价格
  *
  * @author auto create
- * @since 1.0, 2024-01-24 18:55:33
+ * @since 1.0, 2024-05-21 19:36:20
  */
 public class NightlyRate extends AlipayObject {
 
-	private static final long serialVersionUID = 6892178965197867636L;
+	private static final long serialVersionUID = 3312648636585644266L;
 
 	/**
 	 * 加床价
@@ -61,6 +64,13 @@ public class NightlyRate extends AlipayObject {
 	 */
 	@ApiField("price_discount_value")
 	private String priceDiscountValue;
+
+	/**
+	 * 酒店价格优惠详细列表
+	 */
+	@ApiListField("promotion_list")
+	@ApiField("hotel_promotion_detail")
+	private List<HotelPromotionDetail> promotionList;
 
 	/**
 	 * 促销活动名
@@ -131,6 +141,13 @@ public class NightlyRate extends AlipayObject {
 	}
 	public void setPriceDiscountValue(String priceDiscountValue) {
 		this.priceDiscountValue = priceDiscountValue;
+	}
+
+	public List<HotelPromotionDetail> getPromotionList() {
+		return this.promotionList;
+	}
+	public void setPromotionList(List<HotelPromotionDetail> promotionList) {
+		this.promotionList = promotionList;
 	}
 
 	public String getPromotionTag() {

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.monitor.cdnreport.get response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-16 10:02:00
+ * @since 1.0, 2024-05-20 14:22:01
  */
 public class AlipayCloudCloudbaseMonitorCdnreportGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7647775472713182116L;
+	private static final long serialVersionUID = 4176633399239687439L;
 
 	/** 
 	 * 报表数据

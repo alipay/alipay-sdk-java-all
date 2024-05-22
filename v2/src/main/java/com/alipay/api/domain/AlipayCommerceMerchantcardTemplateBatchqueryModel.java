@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 卡模版分页查询
  *
  * @author auto create
- * @since 1.0, 2024-05-15 15:52:17
+ * @since 1.0, 2024-05-18 10:43:14
  */
 public class AlipayCommerceMerchantcardTemplateBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4287986911264674286L;
+	private static final long serialVersionUID = 8557699516229583736L;
 
 	/**
 	 * 商品归属appid

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业务信息请求体
  *
  * @author auto create
- * @since 1.0, 2023-05-31 16:46:15
+ * @since 1.0, 2024-05-21 10:58:21
  */
 public class BusinessInfoRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 3737415326966313664L;
+	private static final long serialVersionUID = 8493663364384894855L;
 
 	/**
 	 * 结束时间，格式"yyyy-MM-dd HH:mm:ss"
@@ -44,9 +44,10 @@ public class BusinessInfoRequest extends AlipayObject {
 	private String startTime;
 
 	/**
-	 * 小程序的服务页面url链接
+	 * 小程序的服务页面url链接 当前字段已废弃(程序中一直未曾使用过)
 	 */
 	@ApiField("url")
+	@Deprecated
 	private String url;
 
 	public String getEndTime() {

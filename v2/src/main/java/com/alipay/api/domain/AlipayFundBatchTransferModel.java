@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayFundBatchTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3162243486695263958L;
+	private static final long serialVersionUID = 1561846612298147599L;
 
 	/**
 	 * 代发到账户明细列。biz_code=BATCH_TRANS_ACC时，该参数必填。biz_code为其他值时忽略该参数。

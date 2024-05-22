@@ -1,19 +1,21 @@
 package com.alipay.api.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * PaymentInfo
  *
  * @author auto create
- * @since 1.0, 2024-04-22 10:38:44
+ * @since 1.0, 2024-05-21 18:22:28
  */
 public class TuitionISVResponsePaymentInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1457339473395474691L;
+	private static final long serialVersionUID = 8793495699143852281L;
 
 	/**
 	 * 账户名
@@ -38,6 +40,13 @@ public class TuitionISVResponsePaymentInfoDTO extends AlipayObject {
 	 */
 	@ApiField("bank_code")
 	private String bankCode;
+
+	/**
+	 * 缴费凭证大字段，用于给合作ISV传输凭证，供ISV端展示
+	 */
+	@ApiListField("certificate_list")
+	@ApiField("string")
+	private List<String> certificateList;
 
 	/**
 	 * 国家码
@@ -107,6 +116,13 @@ public class TuitionISVResponsePaymentInfoDTO extends AlipayObject {
 	}
 	public void setBankCode(String bankCode) {
 		this.bankCode = bankCode;
+	}
+
+	public List<String> getCertificateList() {
+		return this.certificateList;
+	}
+	public void setCertificateList(List<String> certificateList) {
+		this.certificateList = certificateList;
 	}
 
 	public String getCountry() {
