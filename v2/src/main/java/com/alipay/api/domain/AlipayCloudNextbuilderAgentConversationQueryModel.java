@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询历史会话列表
  *
  * @author auto create
- * @since 1.0, 2024-05-21 11:40:39
+ * @since 1.0, 2024-05-23 14:58:50
  */
 public class AlipayCloudNextbuilderAgentConversationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5625419739866217761L;
+	private static final long serialVersionUID = 3445967691746861927L;
 
 	/**
 	 * 青蓝平台创建的Agent 的 id，可从青蓝平台页面获取

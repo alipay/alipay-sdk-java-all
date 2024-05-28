@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.info.verify request
  * 
  * @author auto create
- * @since 1.0, 2019-03-15 15:25:00
+ * @since 1.0, 2024-05-23 14:53:25
  */
 public class AlipayUserInfoVerifyRequest implements AlipayRequest<AlipayUserInfoVerifyResponse> {
 

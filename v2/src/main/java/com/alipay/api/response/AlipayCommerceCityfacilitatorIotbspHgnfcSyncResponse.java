@@ -8,38 +8,38 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.cityfacilitator.iotbsp.hgnfc.sync response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-29 19:42:00
+ * @since 1.0, 2024-05-27 20:32:02
  */
 public class AlipayCommerceCityfacilitatorIotbspHgnfcSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2227683615834881752L;
+	private static final long serialVersionUID = 3328255972717974697L;
 
 	/** 
-	 * result
+	 * 返回结果信息
 	 */
 	@ApiField("result")
 	private String result;
 
 	/** 
-	 * retCode
+	 * 错误码
 	 */
 	@ApiField("ret_code")
 	private String retCode;
 
 	/** 
-	 * ret_code_sub
+	 * 二级错误码
 	 */
 	@ApiField("ret_code_sub")
 	private String retCodeSub;
 
 	/** 
-	 * retMessage
+	 * 错误原因
 	 */
 	@ApiField("ret_message")
 	private String retMessage;
 
 	/** 
-	 * retMessageSub
+	 * 二级错误信息
 	 */
 	@ApiField("ret_message_sub")
 	private String retMessageSub;

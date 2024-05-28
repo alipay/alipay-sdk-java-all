@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.scenepay.token.exchange response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-13 15:07:10
+ * @since 1.0, 2024-05-24 22:27:02
  */
 public class AlipayTradeScenepayTokenExchangeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2831747353778211935L;
+	private static final long serialVersionUID = 5674793732641964552L;
 
 	/** 
 	 * 经过场景支付凭证交换出的预期码值

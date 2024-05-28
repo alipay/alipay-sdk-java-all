@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayIserviceCognitiveClassificationWasteQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4749795245192942963L;
+	private static final long serialVersionUID = 8797982447618148466L;
 
 	/** 
 	 * 识别类型

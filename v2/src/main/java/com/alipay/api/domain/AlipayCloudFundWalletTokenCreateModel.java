@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 平台邀请商家开通钱包账户
  *
  * @author auto create
- * @since 1.0, 2024-04-15 11:33:53
+ * @since 1.0, 2024-05-27 16:00:18
  */
 public class AlipayCloudFundWalletTokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6882741498833718346L;
+	private static final long serialVersionUID = 5156556389597774789L;
 
 	/**
 	 * 格式必须为： https://开头域名链接地址 或者 alipays://开头的支付宝小程序链接。 2. 需要保证传入的 returnUrl 链接能够有效访问
 	 */
 	@ApiField("back_url")
 	private String backUrl;
+
+	/**
+	 * 钱包场景码
+	 */
+	@ApiField("biz_scene")
+	private String bizScene;
 
 	/**
 	 * 待邀请用户的支付宝账号：
@@ -52,6 +58,12 @@ identity_type是ALIPAY_USER_ID填支付宝会员账号；
 	private String outBizNo;
 
 	/**
+	 * 钱包产品code一般为FUND_TRUSTSHIP
+	 */
+	@ApiField("product_code")
+	private String productCode;
+
+	/**
 	 * 如果账号类型是ALIPAY_LOGIN_ID，则必传用户真实姓名，进行信息校验
 	 */
 	@ApiField("real_name")
@@ -74,6 +86,13 @@ identity_type是ALIPAY_USER_ID填支付宝会员账号；
 	}
 	public void setBackUrl(String backUrl) {
 		this.backUrl = backUrl;
+	}
+
+	public String getBizScene() {
+		return this.bizScene;
+	}
+	public void setBizScene(String bizScene) {
+		this.bizScene = bizScene;
 	}
 
 	public String getIdentity() {
@@ -102,6 +121,13 @@ identity_type是ALIPAY_USER_ID填支付宝会员账号；
 	}
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
+	}
+
+	public String getProductCode() {
+		return this.productCode;
+	}
+	public void setProductCode(String productCode) {
+		this.productCode = productCode;
 	}
 
 	public String getRealName() {

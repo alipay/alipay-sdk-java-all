@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创意关联物料元素
  *
  * @author auto create
- * @since 1.0, 2024-04-30 15:56:42
+ * @since 1.0, 2024-05-23 20:37:50
  */
 public class MaterialUnit extends AlipayObject {
 
-	private static final long serialVersionUID = 3678737846226911855L;
+	private static final long serialVersionUID = 5427666914273514362L;
 
 	/**
 	 * 创意元素C端渲染关联位置key值
@@ -24,6 +24,12 @@ public class MaterialUnit extends AlipayObject {
 	 */
 	@ApiField("material")
 	private String material;
+
+	/**
+	 * 广告投放平台生成的物料实例ID
+	 */
+	@ApiField("material_instance_id")
+	private Long materialInstanceId;
 
 	/**
 	 * 播放次数
@@ -55,6 +61,13 @@ public class MaterialUnit extends AlipayObject {
 	}
 	public void setMaterial(String material) {
 		this.material = material;
+	}
+
+	public Long getMaterialInstanceId() {
+		return this.materialInstanceId;
+	}
+	public void setMaterialInstanceId(Long materialInstanceId) {
+		this.materialInstanceId = materialInstanceId;
 	}
 
 	public Long getPlayFrequency() {

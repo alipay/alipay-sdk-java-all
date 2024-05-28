@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.point.budget.get request
  * 
  * @author auto create
- * @since 1.0, 2022-10-12 19:35:32
+ * @since 1.0, 2024-05-27 14:02:26
  */
 public class AlipayPointBudgetGetRequest implements AlipayRequest<AlipayPointBudgetGetResponse> {
 

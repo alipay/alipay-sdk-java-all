@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预算库追加
  *
  * @author auto create
- * @since 1.0, 2022-10-12 19:35:15
+ * @since 1.0, 2024-05-27 13:59:48
  */
 public class AlipayAssetPointPointprodBudgetlibAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5173292114437123954L;
+	private static final long serialVersionUID = 7489839283911462966L;
 
 	/**
 	 * 预算库追加的积分数

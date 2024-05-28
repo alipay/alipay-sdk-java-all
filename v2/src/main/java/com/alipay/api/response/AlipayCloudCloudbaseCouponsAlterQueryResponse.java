@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudCloudbaseCouponsAlterQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5899638433762224566L;
+	private static final long serialVersionUID = 3141839784656453441L;
 
 	/** 
 	 * 优惠券详情列表

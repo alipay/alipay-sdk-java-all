@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 预览发票后，编辑发票内容后提交开票请求
  *
  * @author auto create
- * @since 1.0, 2023-10-12 20:43:03
+ * @since 1.0, 2024-05-27 19:55:16
  */
 public class OpenApiOutputInvoicePreviewedOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 1664866668586891792L;
+	private static final long serialVersionUID = 7169354373686263841L;
 
 	/**
 	 * 发票购方公司的注册地址

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CreditLinkAgreementInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2734837384828129626L;
+	private static final long serialVersionUID = 2454955117829716995L;
 
 	/**
 	 * 协议路径

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电子借条用户信息同步
  *
  * @author auto create
- * @since 1.0, 2024-04-08 10:33:52
+ * @since 1.0, 2024-05-24 11:10:55
  */
 public class AlipayEcoContractsLoanAuthSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8398181355154131588L;
+	private static final long serialVersionUID = 3846136364864816121L;
 
 	/**
 	 * 支付宝用户ID

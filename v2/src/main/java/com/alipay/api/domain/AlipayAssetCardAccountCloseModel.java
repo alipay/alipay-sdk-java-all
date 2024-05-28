@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 注销网商账户接口
  *
  * @author auto create
- * @since 1.0, 2022-12-29 19:33:49
+ * @since 1.0, 2024-05-27 14:00:00
  */
 public class AlipayAssetCardAccountCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4345326785889254283L;
+	private static final long serialVersionUID = 5362526948354114746L;
 
 	/**
 	 * 资产id

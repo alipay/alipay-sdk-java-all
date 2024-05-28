@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 集分宝预算库查询
  *
  * @author auto create
- * @since 1.0, 2022-10-12 19:35:23
+ * @since 1.0, 2024-05-27 14:00:47
  */
 public class AlipayAssetPointPointprodBudgetlibQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6893318419131991853L;
+	private static final long serialVersionUID = 8233658781741696631L;
 
 	/**
 	 * 预算库编码

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 人群池创建
  *
  * @author auto create
- * @since 1.0, 2023-08-11 14:02:53
+ * @since 1.0, 2024-05-27 19:56:45
  */
 public class AlipayMerchantQipanCrowdpoolCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6841293118844455284L;
+	private static final long serialVersionUID = 8552335634246969759L;
 
 	/**
 	 * 安全应用范围，参考文档<a href="https://opendocs.alipay.com/pre-open/04phhq" target="_blank">安全应用范围枚举</a>

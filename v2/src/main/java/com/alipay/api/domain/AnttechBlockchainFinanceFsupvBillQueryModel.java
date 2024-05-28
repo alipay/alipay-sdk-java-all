@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 对账单查询接口
  *
  * @author auto create
- * @since 1.0, 2023-06-16 10:37:31
+ * @since 1.0, 2024-05-27 11:58:49
  */
 public class AnttechBlockchainFinanceFsupvBillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8182389314965344526L;
+	private static final long serialVersionUID = 6724387984927242855L;
 
 	/**
 	 * 资金管控产品码

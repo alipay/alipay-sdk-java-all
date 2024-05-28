@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserDeloauthDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6748339522932784164L;
+	private static final long serialVersionUID = 4857472883123533879L;
 
 	/**
 	 * 商家查询日期为：date时，产生的解除授权记录

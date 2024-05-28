@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 运动记录信息
  *
  * @author auto create
- * @since 1.0, 2024-03-28 16:05:36
+ * @since 1.0, 2024-05-23 09:47:04
  */
 public class SportsRecordInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1877839449185199414L;
+	private static final long serialVersionUID = 6323367249681147388L;
 
 	/**
 	 * 消耗卡路里，实际为 decimal类型，有小数
@@ -68,6 +68,12 @@ public class SportsRecordInfo extends AlipayObject {
 	 */
 	@ApiField("out_biz_code")
 	private String outBizCode;
+
+	/**
+	 * 运动计划ID，标识运动记录属于哪个运动计划
+	 */
+	@ApiField("plan_id")
+	private String planId;
 
 	/**
 	 * 运动流水的发生日期
@@ -197,6 +203,13 @@ true有效，false无效
 	}
 	public void setOutBizCode(String outBizCode) {
 		this.outBizCode = outBizCode;
+	}
+
+	public String getPlanId() {
+		return this.planId;
+	}
+	public void setPlanId(String planId) {
+		this.planId = planId;
 	}
 
 	public Date getRecordDate() {

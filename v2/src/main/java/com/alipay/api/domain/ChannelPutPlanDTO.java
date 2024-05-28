@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ChannelPutPlanDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6217339349791571595L;
+	private static final long serialVersionUID = 2269642127649294949L;
 
 	/**
 	 * 已有活动页面地址

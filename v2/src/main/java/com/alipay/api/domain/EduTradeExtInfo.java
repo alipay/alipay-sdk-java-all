@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 教育缴费订单扩展信息
  *
  * @author auto create
- * @since 1.0, 2021-02-24 16:31:16
+ * @since 1.0, 2024-05-27 11:49:50
  */
 public class EduTradeExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7557863951541481866L;
+	private static final long serialVersionUID = 5523731867472415431L;
 
 	/**
 	 * 课程描述信息

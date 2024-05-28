@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车生活商家订单同步
  *
  * @author auto create
- * @since 1.0, 2024-05-08 14:21:30
+ * @since 1.0, 2024-05-23 10:46:53
  */
 public class AlipayEcoMycarMerchantOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4761791864416521977L;
+	private static final long serialVersionUID = 5768865827125515234L;
 
 	/**
 	 * 支付宝交易号。若交易发生在只支付宝端内（pay_channel=ALIPAY）时则必传。

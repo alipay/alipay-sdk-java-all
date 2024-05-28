@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MerchantShopDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2728348258495481493L;
+	private static final long serialVersionUID = 4698849263817642312L;
 
 	/**
 	 * 门店名称，最长不超过256个字符。

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 储值卡指定充值单退款
  *
  * @author auto create
- * @since 1.0, 2022-12-02 21:45:12
+ * @since 1.0, 2024-05-27 14:00:06
  */
 public class AlipayAssetCardDepositbackModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6351741669241949932L;
+	private static final long serialVersionUID = 6298797478431666768L;
 
 	/**
 	 * 业务时间

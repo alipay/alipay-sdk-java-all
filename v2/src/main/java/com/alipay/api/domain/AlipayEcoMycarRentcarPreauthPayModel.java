@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝租车预授权扣款
  *
  * @author auto create
- * @since 1.0, 2024-05-22 13:40:51
+ * @since 1.0, 2024-05-24 16:22:56
  */
 public class AlipayEcoMycarRentcarPreauthPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2242857656814225134L;
+	private static final long serialVersionUID = 5737745672515276471L;
 
 	/**
 	 * 扣款金额，单位分

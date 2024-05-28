@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订购单详情查询
  *
  * @author auto create
- * @since 1.0, 2024-05-18 10:43:13
+ * @since 1.0, 2024-05-23 14:29:50
  */
 public class AlipayCommerceMerchantcardOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3174947348421593373L;
+	private static final long serialVersionUID = 6272992746791872969L;
 
 	/**
 	 * 订购单ID
@@ -24,6 +24,12 @@ public class AlipayCommerceMerchantcardOrderQueryModel extends AlipayObject {
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/**
+	 * 商户自定义外部单号
+	 */
+	@ApiField("out_order_no")
+	private String outOrderNo;
 
 	/**
 	 * 支付宝用户的userId。
@@ -43,6 +49,13 @@ public class AlipayCommerceMerchantcardOrderQueryModel extends AlipayObject {
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public String getOutOrderNo() {
+		return this.outOrderNo;
+	}
+	public void setOutOrderNo(String outOrderNo) {
+		this.outOrderNo = outOrderNo;
 	}
 
 	public String getUserId() {

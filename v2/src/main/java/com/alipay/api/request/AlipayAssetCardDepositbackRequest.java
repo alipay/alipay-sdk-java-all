@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.asset.card.depositback request
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 06:01:47
+ * @since 1.0, 2024-05-27 14:00:06
  */
 public class AlipayAssetCardDepositbackRequest implements AlipayRequest<AlipayAssetCardDepositbackResponse> {
 

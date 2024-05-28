@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 编辑票面信息后开票接口
  *
  * @author auto create
- * @since 1.0, 2023-10-12 20:43:03
+ * @since 1.0, 2024-05-27 19:55:17
  */
 public class AlipayBossFncOutputinvoiceApplyModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3617327189112979857L;
+	private static final long serialVersionUID = 8466356397671937145L;
 
 	/**
 	 * 当前该接口的操作人，用于权限校验，校验登录人与预览提交人是否一致

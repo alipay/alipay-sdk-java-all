@@ -10,11 +10,35 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 直付通商户创建预校验咨询
  *
  * @author auto create
- * @since 1.0, 2024-05-17 10:56:01
+ * @since 1.0, 2024-05-24 17:00:18
  */
 public class AntMerchantExpandIndirectZftConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2548331444161948691L;
+	private static final long serialVersionUID = 2298498648866148845L;
+
+	/**
+	 * 补充证件图片，与additional_cert_type+additional_cert_image搭配使用。当商户类型为个人时，使用当面付收款有限额，补充这组证件信息可提额。目前仅允许个人类型商户传入。其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key
+	 */
+	@ApiField("additional_cert_image")
+	private String additionalCertImage;
+
+	/**
+	 * 补充证件号，与additional_cert_type+additional_cert_image搭配使用。当商户类型为个人时，使用当面付收款有限额，补充这组证件信息可提额。目前仅允许个人类型商户传入本字段。
+	 */
+	@ApiField("additional_cert_no")
+	private String additionalCertNo;
+
+	/**
+	 * 补充证件类型，与additional_cert_no+additional_cert_image搭配使用。可选值有201（营业执照号）、204（民办非企业登记证书）、206（社会团体法人登记证书）、218（事业单位法人证书）、219（党政机关批准设立文件/行政执法主体资格证）。当商户类型为个人时，使用当面付收款有限额，补充这组证件信息可提额。目前仅允许个人类型商户传入本字段。
+【枚举值】
+营业执照: 201
+事业单位法人证书: 218
+民办非企业登记证书: 204
+社会团体法人登记证书: 206
+党政机关批准设立文件/行政执法主体资格证: 219
+	 */
+	@ApiField("additional_cert_type")
+	private String additionalCertType;
 
 	/**
 	 * 商户别名。支付宝账单中的商户名称会展示此处设置的别名，如果涉及支付宝APP内的支付，支付结果页也会展示该别名。如果涉及当面付场景，请填写线下店铺名称
@@ -245,6 +269,27 @@ public class AntMerchantExpandIndirectZftConsultModel extends AlipayObject {
 	 */
 	@ApiField("zft_withholding_info")
 	private ZFTWithholdingInfo zftWithholdingInfo;
+
+	public String getAdditionalCertImage() {
+		return this.additionalCertImage;
+	}
+	public void setAdditionalCertImage(String additionalCertImage) {
+		this.additionalCertImage = additionalCertImage;
+	}
+
+	public String getAdditionalCertNo() {
+		return this.additionalCertNo;
+	}
+	public void setAdditionalCertNo(String additionalCertNo) {
+		this.additionalCertNo = additionalCertNo;
+	}
+
+	public String getAdditionalCertType() {
+		return this.additionalCertType;
+	}
+	public void setAdditionalCertType(String additionalCertType) {
+		this.additionalCertType = additionalCertType;
+	}
 
 	public String getAliasName() {
 		return this.aliasName;

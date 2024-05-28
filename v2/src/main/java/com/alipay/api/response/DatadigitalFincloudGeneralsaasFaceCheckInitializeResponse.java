@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.fincloud.generalsaas.face.check.initialize response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-22 17:42:01
+ * @since 1.0, 2024-05-27 17:17:03
  */
 public class DatadigitalFincloudGeneralsaasFaceCheckInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8165744753148352661L;
+	private static final long serialVersionUID = 5276965927369131458L;
 
 	/** 
 	 * 人脸检测流水ID，请保留方便排查问题

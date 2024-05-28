@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.nextbuilder.agent.conversation.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-21 11:47:02
+ * @since 1.0, 2024-05-27 17:16:04
  */
 public class AlipayCloudNextbuilderAgentConversationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6191494214413463225L;
+	private static final long serialVersionUID = 4668698167247536333L;
 
 	/** 
 	 * 会话列表

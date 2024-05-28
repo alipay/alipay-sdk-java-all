@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.rentcar.preauth.pay response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-22 13:40:51
+ * @since 1.0, 2024-05-27 11:02:03
  */
 public class AlipayEcoMycarRentcarPreauthPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2495474167419829124L;
+	private static final long serialVersionUID = 8578387721386328691L;
 
 	/** 
 	 * 支付宝交易号

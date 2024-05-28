@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * alipay.asset.card.disburse(打款)
  *
  * @author auto create
- * @since 1.0, 2022-12-02 21:45:03
+ * @since 1.0, 2024-05-27 13:59:11
  */
 public class AlipayAssetCardDisburseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4643765386515935725L;
+	private static final long serialVersionUID = 1476752384641576784L;
 
 	/**
 	 * 打款金额

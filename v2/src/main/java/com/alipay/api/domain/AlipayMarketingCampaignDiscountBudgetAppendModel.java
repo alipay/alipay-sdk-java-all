@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营销立减活动预算追加
  *
  * @author auto create
- * @since 1.0, 2022-10-12 19:39:24
+ * @since 1.0, 2024-05-27 14:01:18
  */
 public class AlipayMarketingCampaignDiscountBudgetAppendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4317517446116458622L;
+	private static final long serialVersionUID = 8678883637367472949L;
 
 	/**
 	 * 预算ID

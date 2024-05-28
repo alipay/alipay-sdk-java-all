@@ -14,7 +14,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.agent.facetoface.sign request
  * 
  * @author auto create
- * @since 1.0, 2024-05-21 10:12:51
+ * @since 1.0, 2024-05-24 16:53:10
  */
 public class AlipayOpenAgentFacetofaceSignRequest implements AlipayUploadRequest<AlipayOpenAgentFacetofaceSignResponse> {
 
@@ -22,7 +22,7 @@ public class AlipayOpenAgentFacetofaceSignRequest implements AlipayUploadRequest
 	private String apiVersion="1.0";
 
 	/** 
-	* 代商户操作事务编号，通过<a href="https://opendocs.alipay.com/apis/api_50/alipay.open.agent.create">接口地址</a> (开启代商户签约、创建应用事务)接口进行事务创建后获取。
+	* 代商户操作事务编号，通过https://opendocs.alipay.com/apis/api_50/alipay.open.agent.create (开启代商户签约、创建应用事务)接口进行事务创建后获取。
 	 */
 	private String batchNo;
 
@@ -32,7 +32,7 @@ public class AlipayOpenAgentFacetofaceSignRequest implements AlipayUploadRequest
 	private FileItem businessLicenseAuthPic;
 
 	/** 
-	* 上传非经营者本人（签约账号）的营业执照时必填，填写营业执照法人支付宝账号对应的手机号。
+	* 被邀请授权的营业执照法人手机号码，上传非同人营业执照时必填
 	 */
 	private String businessLicenseMobile;
 
@@ -68,7 +68,7 @@ public class AlipayOpenAgentFacetofaceSignRequest implements AlipayUploadRequest
 	private String rate;
 
 	/** 
-	* 店铺地址<a href="https://isp-fe-tern.alipay.com/legacy/apiCenter/complexType/complexTypeInfo?dataStructureId=16888&type=detail">数据结构介绍</a>
+	* 店铺地址
 	 */
 	private SignAddressInfo shopAddress;
 

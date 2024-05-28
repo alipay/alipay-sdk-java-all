@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceSportsVenueOrderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1839238657994631682L;
+	private static final long serialVersionUID = 8376983533295755226L;
 
 	/**
 	 * 退款原因

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class FengdieSpaceListRespModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5832679983774713829L;
+	private static final long serialVersionUID = 1291219967699436212L;
 
 	/**
 	 * 当前VIP用户下面所有的空间详情列表

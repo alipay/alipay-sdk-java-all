@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 集分宝预算库创建
  *
  * @author auto create
- * @since 1.0, 2022-10-12 19:35:11
+ * @since 1.0, 2024-05-27 14:00:27
  */
 public class AlipayAssetPointPointprodBudgetlibCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5546294255249355881L;
+	private static final long serialVersionUID = 2274828558276559537L;
 
 	/**
 	 * 预算库初始积分数

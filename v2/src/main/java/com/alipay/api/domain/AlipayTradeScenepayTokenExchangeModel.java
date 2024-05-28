@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景支付码值交换
  *
  * @author auto create
- * @since 1.0, 2024-05-13 15:07:10
+ * @since 1.0, 2024-05-24 22:22:54
  */
 public class AlipayTradeScenepayTokenExchangeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1165461281645389764L;
+	private static final long serialVersionUID = 5442634616951322729L;
 
 	/**
 	 * 校园场景

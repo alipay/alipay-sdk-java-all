@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支小助提交问题
  *
  * @author auto create
- * @since 1.0, 2024-05-22 17:50:20
+ * @since 1.0, 2024-05-24 11:35:16
  */
 public class AntfortuneFinresearchChatSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1172498639298711251L;
+	private static final long serialVersionUID = 4295289526393955242L;
 
 	/**
 	 * 合作方内部的用户体系用户信息

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ItemDynamicQueryOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 4548343754254716533L;
+	private static final long serialVersionUID = 7563216838339561137L;
 
 	/**
 	 * 商品类目ID

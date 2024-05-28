@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 权益模版结算
  *
  * @author auto create
- * @since 1.0, 2022-10-12 19:38:41
+ * @since 1.0, 2024-05-27 13:57:34
  */
 public class AlipayAssetPointVoucherprodBenefittemplateSettleModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5231558368316331788L;
+	private static final long serialVersionUID = 1414111979549771184L;
 
 	/**
 	 * 资产id，即权益模板id

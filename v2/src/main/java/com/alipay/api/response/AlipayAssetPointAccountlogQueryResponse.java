@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.asset.point.accountlog.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 20:55:23
+ * @since 1.0, 2024-05-27 14:01:26
  */
 public class AlipayAssetPointAccountlogQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1591288557341328964L;
+	private static final long serialVersionUID = 3773423869255139121L;
 
 	/** 
 	 * 当前页数

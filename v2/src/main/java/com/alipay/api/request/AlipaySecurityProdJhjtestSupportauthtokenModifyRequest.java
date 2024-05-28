@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.jhjtest.supportauthtoken.modify request
  * 
  * @author auto create
- * @since 1.0, 2024-05-17 14:27:01
+ * @since 1.0, 2024-05-23 11:27:02
  */
 public class AlipaySecurityProdJhjtestSupportauthtokenModifyRequest implements AlipayRequest<AlipaySecurityProdJhjtestSupportauthtokenModifyResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * admgr三方监控链接数据单元
  *
  * @author auto create
- * @since 1.0, 2024-04-30 17:56:32
+ * @since 1.0, 2024-05-23 20:37:50
  */
 public class ThirdTrackUrlUnit extends AlipayObject {
 
-	private static final long serialVersionUID = 8859468551995979298L;
+	private static final long serialVersionUID = 5698287919894866231L;
 
 	/**
 	 * 业务类型。COMMON：通用；MIAO_ZHEN：秒针；ReachMax：ReachMax
@@ -20,9 +20,7 @@ public class ThirdTrackUrlUnit extends AlipayObject {
 	private String bizType;
 
 	/**
-	 * 上报方式：
-S2S：S2S
-C2S：C2S
+	 * 上报方式： S2S：S2S C2S：C2S
 	 */
 	@ApiField("report_type")
 	private String reportType;

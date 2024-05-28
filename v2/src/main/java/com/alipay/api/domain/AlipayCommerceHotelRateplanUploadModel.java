@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 推送酒店价格计划
  *
  * @author auto create
- * @since 1.0, 2024-04-24 18:51:33
+ * @since 1.0, 2024-05-27 16:59:54
  */
 public class AlipayCommerceHotelRateplanUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1254681857178477222L;
+	private static final long serialVersionUID = 3787125441232259174L;
 
 	/**
 	 * 预定规则列表
@@ -34,6 +34,13 @@ public class AlipayCommerceHotelRateplanUploadModel extends AlipayObject {
 	 */
 	@ApiField("increment")
 	private Boolean increment;
+
+	/**
+	 * 酒店价格优惠活动静态信息列表
+	 */
+	@ApiListField("promotion_static_info_list")
+	@ApiField("hotel_promotion_static_info")
+	private List<HotelPromotionStaticInfo> promotionStaticInfoList;
 
 	/**
 	 * 价格计划列表
@@ -68,6 +75,13 @@ public class AlipayCommerceHotelRateplanUploadModel extends AlipayObject {
 	}
 	public void setIncrement(Boolean increment) {
 		this.increment = increment;
+	}
+
+	public List<HotelPromotionStaticInfo> getPromotionStaticInfoList() {
+		return this.promotionStaticInfoList;
+	}
+	public void setPromotionStaticInfoList(List<HotelPromotionStaticInfo> promotionStaticInfoList) {
+		this.promotionStaticInfoList = promotionStaticInfoList;
 	}
 
 	public List<RatePlan> getRatePlans() {

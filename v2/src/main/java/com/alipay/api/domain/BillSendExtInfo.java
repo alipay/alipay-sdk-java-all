@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 拓展字段
  *
  * @author auto create
- * @since 1.0, 2022-02-23 10:19:09
+ * @since 1.0, 2024-05-27 14:20:51
  */
 public class BillSendExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3661692758376843694L;
+	private static final long serialVersionUID = 5697754971838615718L;
+
+	/**
+	 * 学校外标编号
+	 */
+	@ApiField("ext_school_id")
+	private String extSchoolId;
 
 	/**
 	 * 账单唤起收银台的方式：
@@ -27,10 +33,23 @@ public class BillSendExtInfo extends AlipayObject {
 	private String royaltyAmount;
 
 	/**
+	 * 学校名称
+	 */
+	@ApiField("school_name")
+	private String schoolName;
+
+	/**
 	 * 2088xxx
 	 */
 	@ApiField("trans_in_pid")
 	private String transInPid;
+
+	public String getExtSchoolId() {
+		return this.extSchoolId;
+	}
+	public void setExtSchoolId(String extSchoolId) {
+		this.extSchoolId = extSchoolId;
+	}
 
 	public String getOrderPayType() {
 		return this.orderPayType;
@@ -44,6 +63,13 @@ public class BillSendExtInfo extends AlipayObject {
 	}
 	public void setRoyaltyAmount(String royaltyAmount) {
 		this.royaltyAmount = royaltyAmount;
+	}
+
+	public String getSchoolName() {
+		return this.schoolName;
+	}
+	public void setSchoolName(String schoolName) {
+		this.schoolName = schoolName;
 	}
 
 	public String getTransInPid() {

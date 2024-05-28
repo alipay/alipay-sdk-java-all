@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 外部商户标准发卡并充值
  *
  * @author auto create
- * @since 1.0, 2022-12-29 17:24:15
+ * @since 1.0, 2024-05-27 13:57:41
  */
 public class AlipayAssetVoucherprodChargeSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4167415192521215238L;
+	private static final long serialVersionUID = 8836177955864889725L;
 
 	/**
 	 * 卡资金总金额，单位元

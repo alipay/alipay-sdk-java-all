@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.deduct.merge.pay response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-08 16:07:00
+ * @since 1.0, 2024-05-23 11:27:02
  */
 public class AlipayTradeDeductMergePayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5738716393489679833L;
+	private static final long serialVersionUID = 6214272299546738657L;
 
 	/** 
 	 * 子单明细

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC办理申请单创建或修改
  *
  * @author auto create
- * @since 1.0, 2024-04-15 19:36:55
+ * @since 1.0, 2024-05-27 19:33:50
  */
 public class AlipayCommerceTransportEtcApplyorderCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2152351716142292744L;
+	private static final long serialVersionUID = 4148477296612823372L;
 
 	/**
 	 * 支付宝订单号，提供则认为是更新
@@ -30,6 +30,12 @@ public class AlipayCommerceTransportEtcApplyorderCreateormodifyModel extends Ali
 	 */
 	@ApiField("apply_sub_scene")
 	private String applySubScene;
+
+	/**
+	 * 参数需要咨询业务同学，需预先分配后才可上送，否则会导致传入失败
+	 */
+	@ApiField("bank_rule_id")
+	private String bankRuleId;
 
 	/**
 	 * 办理人所在地城市编码
@@ -104,6 +110,12 @@ LIMEGREEN: 黄绿色。
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	/**
+	 * 参数需要咨询业务同学，需预先分配后才可上送，否则会导致传入失败
+	 */
+	@ApiField("veh_biz_scene")
+	private String vehBizScene;
 
 	/**
 	 * 行驶证信息-核定载人数
@@ -198,6 +210,13 @@ LIMEGREEN: 黄绿色。
 		this.applySubScene = applySubScene;
 	}
 
+	public String getBankRuleId() {
+		return this.bankRuleId;
+	}
+	public void setBankRuleId(String bankRuleId) {
+		this.bankRuleId = bankRuleId;
+	}
+
 	public String getCityCode() {
 		return this.cityCode;
 	}
@@ -273,6 +292,13 @@ LIMEGREEN: 黄绿色。
 	}
 	public void setUserId(String userId) {
 		this.userId = userId;
+	}
+
+	public String getVehBizScene() {
+		return this.vehBizScene;
+	}
+	public void setVehBizScene(String vehBizScene) {
+		this.vehBizScene = vehBizScene;
 	}
 
 	public String getViLicenseApc() {

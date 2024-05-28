@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * NFC服务机初始化
  *
  * @author auto create
- * @since 1.0, 2024-05-21 11:39:18
+ * @since 1.0, 2024-05-27 16:00:22
  */
 public class AlipayCommerceCityfacilitatorIotbspFwjnfcSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3439495889223955215L;
+	private static final long serialVersionUID = 2568542733263689237L;
 
 	/**
 	 * 贴一贴后需要跳转的小程序appId
@@ -48,6 +48,12 @@ public class AlipayCommerceCityfacilitatorIotbspFwjnfcSyncModel extends AlipayOb
 	 */
 	@ApiField("pid")
 	private String pid;
+
+	/**
+	 * 小程序跳转时，需要额外传递的页面参数
+	 */
+	@ApiField("query_params")
+	private String queryParams;
 
 	/**
 	 * 贴一贴小程序跳转的页面地址
@@ -113,6 +119,13 @@ public class AlipayCommerceCityfacilitatorIotbspFwjnfcSyncModel extends AlipayOb
 	}
 	public void setPid(String pid) {
 		this.pid = pid;
+	}
+
+	public String getQueryParams() {
+		return this.queryParams;
+	}
+	public void setQueryParams(String queryParams) {
+		this.queryParams = queryParams;
 	}
 
 	public String getRoutePage() {
