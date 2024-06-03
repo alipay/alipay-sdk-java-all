@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 资方批次转账结果同步
  *
  * @author auto create
- * @since 1.0, 2024-04-09 09:55:15
+ * @since 1.0, 2024-05-31 15:13:20
  */
 public class AlipayCommerceEcCreditWithdrawDisburseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3495477917468263731L;
+	private static final long serialVersionUID = 6815373643599914128L;
 
 	/**
 	 * 关联的取款申请明细列表

@@ -9,35 +9,35 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁价格详情
  *
  * @author auto create
- * @since 1.0, 2024-05-24 12:08:21
+ * @since 1.0, 2024-05-31 17:04:22
  */
 public class RentPriceDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 4893228471553997389L;
+	private static final long serialVersionUID = 1263686279895486774L;
 
 	/**
-	 * 买断金额（单位：分）
+	 * 买断价格
 	 */
 	@ApiField("buyout_price")
-	private Long buyoutPrice;
+	private String buyoutPrice;
 
 	/**
-	 * 押金（单位：分）
+	 * 押金
 	 */
 	@ApiField("deposit_price")
-	private Long depositPrice;
+	private String depositPrice;
 
 	/**
-	 * 尾期租金（单位：分）
+	 * 尾期租金
 	 */
 	@ApiField("finish_real_rent_price")
-	private Long finishRealRentPrice;
+	private String finishRealRentPrice;
 
 	/**
-	 * 首期租金（单位：分）
+	 * 首期租金
 	 */
 	@ApiField("initial_rent_price")
-	private Long initialRentPrice;
+	private String initialRentPrice;
 
 	/**
 	 * 租赁期数
@@ -46,22 +46,22 @@ public class RentPriceDetail extends AlipayObject {
 	private Long periodNum;
 
 	/**
-	 * 每期租金（单位：分）
+	 * 每期租金
 	 */
 	@ApiField("period_real_rent_price")
-	private Long periodRealRentPrice;
+	private String periodRealRentPrice;
 
 	/**
-	 * 预授权金额（单位：分）
+	 * 预授权金额
 	 */
 	@ApiField("pre_authorization_amount")
-	private Long preAuthorizationAmount;
+	private String preAuthorizationAmount;
 
 	/**
-	 * 实付总金额（单位：分）
+	 * 实付总金额
 	 */
 	@ApiField("real_pay_amount")
-	private Long realPayAmount;
+	private String realPayAmount;
 
 	/**
 	 * 租期结束时间
@@ -75,31 +75,31 @@ public class RentPriceDetail extends AlipayObject {
 	@ApiField("rent_start_time")
 	private Date rentStartTime;
 
-	public Long getBuyoutPrice() {
+	public String getBuyoutPrice() {
 		return this.buyoutPrice;
 	}
-	public void setBuyoutPrice(Long buyoutPrice) {
+	public void setBuyoutPrice(String buyoutPrice) {
 		this.buyoutPrice = buyoutPrice;
 	}
 
-	public Long getDepositPrice() {
+	public String getDepositPrice() {
 		return this.depositPrice;
 	}
-	public void setDepositPrice(Long depositPrice) {
+	public void setDepositPrice(String depositPrice) {
 		this.depositPrice = depositPrice;
 	}
 
-	public Long getFinishRealRentPrice() {
+	public String getFinishRealRentPrice() {
 		return this.finishRealRentPrice;
 	}
-	public void setFinishRealRentPrice(Long finishRealRentPrice) {
+	public void setFinishRealRentPrice(String finishRealRentPrice) {
 		this.finishRealRentPrice = finishRealRentPrice;
 	}
 
-	public Long getInitialRentPrice() {
+	public String getInitialRentPrice() {
 		return this.initialRentPrice;
 	}
-	public void setInitialRentPrice(Long initialRentPrice) {
+	public void setInitialRentPrice(String initialRentPrice) {
 		this.initialRentPrice = initialRentPrice;
 	}
 
@@ -110,24 +110,24 @@ public class RentPriceDetail extends AlipayObject {
 		this.periodNum = periodNum;
 	}
 
-	public Long getPeriodRealRentPrice() {
+	public String getPeriodRealRentPrice() {
 		return this.periodRealRentPrice;
 	}
-	public void setPeriodRealRentPrice(Long periodRealRentPrice) {
+	public void setPeriodRealRentPrice(String periodRealRentPrice) {
 		this.periodRealRentPrice = periodRealRentPrice;
 	}
 
-	public Long getPreAuthorizationAmount() {
+	public String getPreAuthorizationAmount() {
 		return this.preAuthorizationAmount;
 	}
-	public void setPreAuthorizationAmount(Long preAuthorizationAmount) {
+	public void setPreAuthorizationAmount(String preAuthorizationAmount) {
 		this.preAuthorizationAmount = preAuthorizationAmount;
 	}
 
-	public Long getRealPayAmount() {
+	public String getRealPayAmount() {
 		return this.realPayAmount;
 	}
-	public void setRealPayAmount(Long realPayAmount) {
+	public void setRealPayAmount(String realPayAmount) {
 		this.realPayAmount = realPayAmount;
 	}
 

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 提交入驻工单信息
  *
  * @author auto create
- * @since 1.0, 2020-04-13 09:54:25
+ * @since 1.0, 2024-05-31 09:48:54
  */
 public class AlipayEbppInvoiceRegisterCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7689116366792712698L;
+	private static final long serialVersionUID = 3733528448435525675L;
 
 	/**
 	 * 联系人信息

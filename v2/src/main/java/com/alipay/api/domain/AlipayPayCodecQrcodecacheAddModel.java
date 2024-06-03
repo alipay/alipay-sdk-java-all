@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayPayCodecQrcodecacheAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5126713676942393119L;
+	private static final long serialVersionUID = 8576536556754658719L;
 
 	/**
 	 * 是否需要gzip压缩

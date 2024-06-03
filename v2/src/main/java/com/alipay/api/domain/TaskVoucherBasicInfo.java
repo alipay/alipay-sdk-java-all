@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 任务券信息
  *
  * @author auto create
- * @since 1.0, 2022-10-11 17:40:04
+ * @since 1.0, 2024-05-30 19:43:23
  */
 public class TaskVoucherBasicInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2239952335877332465L;
+	private static final long serialVersionUID = 4489773126746328894L;
 
 	/**
 	 * 券图标
@@ -26,7 +26,7 @@ public class TaskVoucherBasicInfo extends AlipayObject {
 	private String reductionAmount;
 
 	/**
-	 * 门槛金额
+	 * 门槛金额，金额单位：元
 	 */
 	@ApiField("threshold_amount")
 	private String thresholdAmount;

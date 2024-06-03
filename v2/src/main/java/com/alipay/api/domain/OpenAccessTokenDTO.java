@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 授权临牌信息
  *
  * @author auto create
- * @since 1.0, 2024-03-14 11:53:03
+ * @since 1.0, 2024-05-31 09:52:08
  */
 public class OpenAccessTokenDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7776345623219751592L;
+	private static final long serialVersionUID = 4385129312414665495L;
 
 	/**
 	 * 授权令牌

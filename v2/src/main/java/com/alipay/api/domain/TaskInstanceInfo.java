@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 导购员查询任务实例详情
  *
  * @author auto create
- * @since 1.0, 2024-04-25 14:21:51
+ * @since 1.0, 2024-05-30 19:43:23
  */
 public class TaskInstanceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4615999318513972384L;
+	private static final long serialVersionUID = 8741836651962897232L;
 
 	/**
 	 * 当前进度
@@ -77,6 +77,12 @@ FINISHED  任务完成
 	 */
 	@ApiField("task_end_time")
 	private Date taskEndTime;
+
+	/**
+	 * 任务推广背景图
+	 */
+	@ApiField("task_img")
+	private String taskImg;
 
 	/**
 	 * 任务实例id
@@ -200,6 +206,13 @@ FINISHED  任务完成
 	}
 	public void setTaskEndTime(Date taskEndTime) {
 		this.taskEndTime = taskEndTime;
+	}
+
+	public String getTaskImg() {
+		return this.taskImg;
+	}
+	public void setTaskImg(String taskImg) {
+		this.taskImg = taskImg;
 	}
 
 	public String getTaskInstanceId() {

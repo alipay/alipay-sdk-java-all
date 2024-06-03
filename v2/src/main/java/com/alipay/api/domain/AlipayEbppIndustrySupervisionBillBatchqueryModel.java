@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 监管子户来账记录查询
  *
  * @author auto create
- * @since 1.0, 2023-03-28 13:52:52
+ * @since 1.0, 2024-05-30 10:14:20
  */
 public class AlipayEbppIndustrySupervisionBillBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4513649729753563885L;
+	private static final long serialVersionUID = 5632925553895196834L;
 
 	/**
 	 * 业务场景
@@ -21,12 +21,13 @@ public class AlipayEbppIndustrySupervisionBillBatchqueryModel extends AlipayObje
 
 	/**
 	 * YYYYMMDD
+专款钱包场景下 为 yyyyMMddHHmmss
 	 */
 	@ApiField("end_time")
 	private String endTime;
 
 	/**
-	 * 驾校监管子户账号
+	 * 企业监管子户账号
 	 */
 	@ApiField("merchant_account_no")
 	private String merchantAccountNo;
@@ -44,7 +45,16 @@ public class AlipayEbppIndustrySupervisionBillBatchqueryModel extends AlipayObje
 	private Long pageSize;
 
 	/**
+	 * 驾培场景下该参数无效。只返回来帐记录。
+专款钱包场景下根据该字段返回对应类型的记录
+	 */
+	@ApiField("scene")
+	private String scene;
+
+	/**
 	 * YYYYMMDD
+
+专款钱包场景下 为 yyyyMMddHHmmss
 	 */
 	@ApiField("start_time")
 	private String startTime;
@@ -82,6 +92,13 @@ public class AlipayEbppIndustrySupervisionBillBatchqueryModel extends AlipayObje
 	}
 	public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
+	}
+
+	public String getScene() {
+		return this.scene;
+	}
+	public void setScene(String scene) {
+		this.scene = scene;
 	}
 
 	public String getStartTime() {

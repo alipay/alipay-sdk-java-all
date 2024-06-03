@@ -11,17 +11,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家业务订单同步
  *
  * @author auto create
- * @since 1.0, 2024-04-19 10:59:51
+ * @since 1.0, 2024-05-29 15:31:21
  */
 public class AlipayCloudFundBizOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5575517748925363412L;
+	private static final long serialVersionUID = 8514162455362347189L;
 
 	/**
 	 * 订单金额
 	 */
 	@ApiField("amount")
 	private String amount;
+
+	/**
+	 * 行业信息
+	 */
+	@ApiField("biz_industry")
+	private String bizIndustry;
 
 	/**
 	 * 用户在平台的userID，若来源是支付宝，就填支付宝的uid，否则传对应平台的uid
@@ -79,6 +85,12 @@ public class AlipayCloudFundBizOrderCreateModel extends AlipayObject {
 	private String outOrderNo;
 
 	/**
+	 * 在支付宝侧的支付单号
+	 */
+	@ApiField("pay_order_id")
+	private String payOrderId;
+
+	/**
 	 * 支付状态：等待支付、支付中、支付完成、支付失败
 	 */
 	@ApiField("pay_status")
@@ -103,6 +115,12 @@ public class AlipayCloudFundBizOrderCreateModel extends AlipayObject {
 	private String sellerOpenId;
 
 	/**
+	 * 订单服务类型
+	 */
+	@ApiField("service_type")
+	private String serviceType;
+
+	/**
 	 * 订单来源平台
 	 */
 	@ApiField("source")
@@ -119,6 +137,13 @@ public class AlipayCloudFundBizOrderCreateModel extends AlipayObject {
 	}
 	public void setAmount(String amount) {
 		this.amount = amount;
+	}
+
+	public String getBizIndustry() {
+		return this.bizIndustry;
+	}
+	public void setBizIndustry(String bizIndustry) {
+		this.bizIndustry = bizIndustry;
 	}
 
 	public String getBuyerId() {
@@ -184,6 +209,13 @@ public class AlipayCloudFundBizOrderCreateModel extends AlipayObject {
 		this.outOrderNo = outOrderNo;
 	}
 
+	public String getPayOrderId() {
+		return this.payOrderId;
+	}
+	public void setPayOrderId(String payOrderId) {
+		this.payOrderId = payOrderId;
+	}
+
 	public String getPayStatus() {
 		return this.payStatus;
 	}
@@ -210,6 +242,13 @@ public class AlipayCloudFundBizOrderCreateModel extends AlipayObject {
 	}
 	public void setSellerOpenId(String sellerOpenId) {
 		this.sellerOpenId = sellerOpenId;
+	}
+
+	public String getServiceType() {
+		return this.serviceType;
+	}
+	public void setServiceType(String serviceType) {
+		this.serviceType = serviceType;
 	}
 
 	public String getSource() {

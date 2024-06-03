@@ -1,6 +1,8 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.supplychain.factoring.selleradmit.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-24 12:18:27
+ * @since 1.0, 2024-05-29 16:02:05
  */
 public class MybankCreditSupplychainFactoringSelleradmitQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2722366343795945369L;
+	private static final long serialVersionUID = 3766175973359178463L;
 
 	/** 
 	 * 是否已提交加白申请
@@ -37,6 +39,13 @@ public class MybankCreditSupplychainFactoringSelleradmitQueryResponse extends Al
 	 */
 	@ApiField("refused")
 	private String refused;
+
+	/** 
+	 * 门店网商银行卡号
+	 */
+	@ApiListField("seller_mybank_card_no_list")
+	@ApiField("string")
+	private List<String> sellerMybankCardNoList;
 
 	/** 
 	 * 是否加白成功
@@ -70,6 +79,13 @@ public class MybankCreditSupplychainFactoringSelleradmitQueryResponse extends Al
 	}
 	public String getRefused( ) {
 		return this.refused;
+	}
+
+	public void setSellerMybankCardNoList(List<String> sellerMybankCardNoList) {
+		this.sellerMybankCardNoList = sellerMybankCardNoList;
+	}
+	public List<String> getSellerMybankCardNoList( ) {
+		return this.sellerMybankCardNoList;
 	}
 
 	public void setWhite(String white) {

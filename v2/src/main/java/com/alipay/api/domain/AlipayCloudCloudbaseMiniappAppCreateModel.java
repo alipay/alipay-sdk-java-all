@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建应用
  *
  * @author auto create
- * @since 1.0, 2024-05-15 11:38:27
+ * @since 1.0, 2024-05-29 18:08:43
  */
 public class AlipayCloudCloudbaseMiniappAppCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1791147379671218337L;
+	private static final long serialVersionUID = 3579796843493289259L;
 
 	/**
 	 * 支付宝用户ID
@@ -24,6 +24,12 @@ public class AlipayCloudCloudbaseMiniappAppCreateModel extends AlipayObject {
 	 */
 	@ApiField("app_name")
 	private String appName;
+
+	/**
+	 * 小程序云应用ID
+	 */
+	@ApiField("biz_app_id")
+	private String bizAppId;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识
@@ -43,6 +49,13 @@ public class AlipayCloudCloudbaseMiniappAppCreateModel extends AlipayObject {
 	}
 	public void setAppName(String appName) {
 		this.appName = appName;
+	}
+
+	public String getBizAppId() {
+		return this.bizAppId;
+	}
+	public void setBizAppId(String bizAppId) {
+		this.bizAppId = bizAppId;
 	}
 
 	public String getOpenId() {

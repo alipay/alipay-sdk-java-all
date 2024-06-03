@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 属性列表
  *
  * @author auto create
- * @since 1.0, 2024-03-14 11:53:13
+ * @since 1.0, 2024-05-31 09:57:37
  */
 public class OpenAttributeDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2746693388546212152L;
+	private static final long serialVersionUID = 7661957575331929714L;
 
 	/**
 	 * 属性名

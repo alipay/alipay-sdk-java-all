@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportEtcApplyorderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2279926574275688725L;
+	private static final long serialVersionUID = 4432394552442964138L;
 
 	/**
 	 * 支付宝ETC平台扣款协议号，与order_id参数 二选一。
@@ -86,7 +86,7 @@ public class AlipayCommerceTransportEtcApplyorderSyncModel extends AlipayObject 
 	private Boolean needRefund;
 
 	/**
-	 * 蚂蚁会员统一ID
+	 * 蚂蚁会员统一ID，当order_type非ALIPAY_CORP时必选
 	 */
 	@ApiField("open_id")
 	private String openId;
@@ -135,7 +135,7 @@ CANCEL：取消；
 	private String plateNo;
 
 	/**
-	 * 蚂蚁统一会员ID
+	 * 蚂蚁统一会员ID，当order_type非ALIPAY_CORP时必选
 	 */
 	@ApiField("user_id")
 	private String userId;

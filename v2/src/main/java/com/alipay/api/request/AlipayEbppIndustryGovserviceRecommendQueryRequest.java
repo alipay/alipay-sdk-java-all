@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.govservice.recommend.query request
  * 
  * @author auto create
- * @since 1.0, 2024-05-21 10:30:40
+ * @since 1.0, 2024-05-29 23:52:02
  */
 public class AlipayEbppIndustryGovserviceRecommendQueryRequest implements AlipayRequest<AlipayEbppIndustryGovserviceRecommendQueryResponse> {
 

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayIserviceAnthotlinemngRecordingQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1747778552912949463L;
+	private static final long serialVersionUID = 1682784231256359645L;
 
 	/** 
 	 * 录音文件详情列表

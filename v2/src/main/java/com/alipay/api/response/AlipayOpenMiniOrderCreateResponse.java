@@ -1,6 +1,7 @@
 package com.alipay.api.response;
 
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.domain.PayInfoResponse;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.order.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-24 18:07:03
+ * @since 1.0, 2024-05-30 16:07:01
  */
 public class AlipayOpenMiniOrderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4647182568641452113L;
+	private static final long serialVersionUID = 6357691214944291827L;
 
 	/** 
 	 * 建议对客展示文案。当接口返回异常时，建议将当前字段对客进行展示。
@@ -31,6 +32,12 @@ public class AlipayOpenMiniOrderCreateResponse extends AlipayResponse {
 	 */
 	@ApiField("out_order_id")
 	private String outOrderId;
+
+	/** 
+	 * 创单扩展信息
+	 */
+	@ApiField("pay_info_response")
+	private PayInfoResponse payInfoResponse;
 
 	public void setCustomerDisplayText(String customerDisplayText) {
 		this.customerDisplayText = customerDisplayText;
@@ -51,6 +58,13 @@ public class AlipayOpenMiniOrderCreateResponse extends AlipayResponse {
 	}
 	public String getOutOrderId( ) {
 		return this.outOrderId;
+	}
+
+	public void setPayInfoResponse(PayInfoResponse payInfoResponse) {
+		this.payInfoResponse = payInfoResponse;
+	}
+	public PayInfoResponse getPayInfoResponse( ) {
+		return this.payInfoResponse;
 	}
 
 }

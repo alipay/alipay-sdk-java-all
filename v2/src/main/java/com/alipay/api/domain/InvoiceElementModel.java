@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票要素模型
  *
  * @author auto create
- * @since 1.0, 2023-02-20 16:49:50
+ * @since 1.0, 2024-05-30 19:10:49
  */
 public class InvoiceElementModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3464927335732225133L;
+	private static final long serialVersionUID = 4536923548181261358L;
 
 	/**
 	 * 发票报销状态
@@ -53,7 +53,7 @@ false:存在异常
 	private Boolean hasRisk;
 
 	/**
-	 * 发票金额，含税
+	 * 发票金额，含税，单位元
 	 */
 	@ApiField("invoice_amount")
 	private String invoiceAmount;
@@ -131,7 +131,7 @@ EXPIRED－已失效
 	private String mName;
 
 	/**
-	 * 发票金额，不含税
+	 * 发票金额，不含税，单位元
 	 */
 	@ApiField("out_tax_amount")
 	private String outTaxAmount;

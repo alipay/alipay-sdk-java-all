@@ -8,11 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.supervision.fundstransfer.querystatus response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-24 18:05:29
+ * @since 1.0, 2024-05-30 10:17:02
  */
 public class AlipayEbppIndustrySupervisionFundstransferQuerystatusResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3747211823517689237L;
+	private static final long serialVersionUID = 3538524694165532887L;
+
+	/** 
+	 * 资金转出场景下，网商操作资金划拨至收方账户操作号
+	 */
+	@ApiField("additional_operate_no")
+	private String additionalOperateNo;
 
 	/** 
 	 * 资金划拨的金额（单位分）
@@ -33,10 +39,17 @@ public class AlipayEbppIndustrySupervisionFundstransferQuerystatusResponse exten
 	private String currency;
 
 	/** 
-	 * 操作单号
+	 * 网商操作单号，
+资金转出场景下，该字段表示网商子户资金解冻单号
 	 */
 	@ApiField("operate_no")
 	private String operateNo;
+
+	/** 
+	 * 划拨操作返回的操作单号
+	 */
+	@ApiField("org_operate_no")
+	private String orgOperateNo;
 
 	/** 
 	 * 外部流水号确保每一笔资金划拨请求幂等。
@@ -45,7 +58,7 @@ public class AlipayEbppIndustrySupervisionFundstransferQuerystatusResponse exten
 	private String outTradeNo;
 
 	/** 
-	 * 交易成功时有值
+	 * 交易成功时有值:结构 yyyymmddHHmmss
 	 */
 	@ApiField("pay_finish_time")
 	private String payFinishTime;
@@ -94,12 +107,15 @@ public class AlipayEbppIndustrySupervisionFundstransferQuerystatusResponse exten
 
 	/** 
 	 * 保证金退保至支付宝ACS账户时需要经过监管子户过桥。该场景下，当前字段需要填写驾校监管子户号
+
+资金转出场景下，中间过渡母户号
 	 */
 	@ApiField("relate_participant_id")
 	private String relateParticipantId;
 
 	/** 
-	 * 在保证金退回场景下，需要有监管子户过桥。 当前字段必填且为驾校监管子户
+	 * 在保证金退回场景下，需要有监管子户过桥。 当前字段必填且为驾校监管子户。
+资金转出场景下，中间过渡母户类型
 	 */
 	@ApiField("relate_participant_type")
 	private String relateParticipantType;
@@ -131,6 +147,13 @@ CLOSED: 已关闭
 	@ApiField("transfer_status")
 	private String transferStatus;
 
+	public void setAdditionalOperateNo(String additionalOperateNo) {
+		this.additionalOperateNo = additionalOperateNo;
+	}
+	public String getAdditionalOperateNo( ) {
+		return this.additionalOperateNo;
+	}
+
 	public void setAmount(Long amount) {
 		this.amount = amount;
 	}
@@ -157,6 +180,13 @@ CLOSED: 已关闭
 	}
 	public String getOperateNo( ) {
 		return this.operateNo;
+	}
+
+	public void setOrgOperateNo(String orgOperateNo) {
+		this.orgOperateNo = orgOperateNo;
+	}
+	public String getOrgOperateNo( ) {
+		return this.orgOperateNo;
 	}
 
 	public void setOutTradeNo(String outTradeNo) {

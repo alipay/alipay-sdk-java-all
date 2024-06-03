@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 企业税务信息
  *
  * @author auto create
- * @since 1.0, 2020-06-18 20:06:02
+ * @since 1.0, 2024-05-31 09:59:33
  */
 public class InvoiceCompanyDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4482946965165614286L;
+	private static final long serialVersionUID = 4387134597998817152L;
 
 	/**
 	 * 企业所在区

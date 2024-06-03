@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序云智能租赁风控查询
  *
  * @author auto create
- * @since 1.0, 2024-05-24 12:08:21
+ * @since 1.0, 2024-05-31 17:04:22
  */
 public class AlipayCloudTraasCloudriskRentriskQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4885372848334468188L;
+	private static final long serialVersionUID = 8628373461429633673L;
 
 	/**
 	 * 身份证号 当前字段已废弃(请使用 customer_type 和 customer_id 参数)
@@ -29,7 +29,10 @@ public class AlipayCloudTraasCloudriskRentriskQueryModel extends AlipayObject {
 	/**
 	 * 客户唯一标识：
 当 customer_type = MOBILE 时，填写11位手机号；
-当 customer_type = CERT_NO 时，填写18位或15位身份证号。
+当 customer_type = CERT_NO 时，填写18位或15位身份证号；
+当 customer_type = MOBILE_SHA256 时，填写手机号的 SHA256 值；
+当 customer_type = CERT_NO_SHA256 时，填写证件号的 SHA256 值；
+当 customer_type = ALIPAY_USER_ID 时，填写支付宝账户 UserId。
 	 */
 	@ApiField("customer_id")
 	private String customerId;

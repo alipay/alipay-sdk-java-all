@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 小程序云智能租赁风控结果
  *
  * @author auto create
- * @since 1.0, 2024-03-29 16:41:03
+ * @since 1.0, 2024-05-31 17:04:22
  */
 public class RentRiskResult extends AlipayObject {
 
-	private static final long serialVersionUID = 3186483477589172241L;
+	private static final long serialVersionUID = 8757755793489197419L;
 
 	/**
 	 * 风险咨询事件ID
@@ -42,6 +45,13 @@ public class RentRiskResult extends AlipayObject {
 	 */
 	@ApiField("sub_rent_risk_result")
 	private SubRentRiskResult subRentRiskResult;
+
+	/**
+	 * 子风险结果列表
+	 */
+	@ApiListField("sub_risk_result_list")
+	@ApiField("sub_rent_risk_item")
+	private List<SubRentRiskItem> subRiskResultList;
 
 	public String getRecordId() {
 		return this.recordId;
@@ -76,6 +86,13 @@ public class RentRiskResult extends AlipayObject {
 	}
 	public void setSubRentRiskResult(SubRentRiskResult subRentRiskResult) {
 		this.subRentRiskResult = subRentRiskResult;
+	}
+
+	public List<SubRentRiskItem> getSubRiskResultList() {
+		return this.subRiskResultList;
+	}
+	public void setSubRiskResultList(List<SubRentRiskItem> subRiskResultList) {
+		this.subRiskResultList = subRiskResultList;
 	}
 
 }

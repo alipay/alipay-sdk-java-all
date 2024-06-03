@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.trade.merge.create request
  * 
  * @author auto create
- * @since 1.0, 2024-05-22 17:17:01
+ * @since 1.0, 2024-05-28 12:27:02
  */
 public class AlipayTradeMergeCreateRequest implements AlipayRequest<AlipayTradeMergeCreateResponse> {
 

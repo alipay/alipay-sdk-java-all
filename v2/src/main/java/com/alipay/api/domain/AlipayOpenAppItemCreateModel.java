@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序商品创建接口
  *
  * @author auto create
- * @since 1.0, 2024-05-15 16:42:52
+ * @since 1.0, 2024-05-31 11:57:03
  */
 public class AlipayOpenAppItemCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8868351788468819542L;
+	private static final long serialVersionUID = 7795211673944472941L;
 
 	/**
 	 * 商品属性
@@ -55,9 +55,10 @@ public class AlipayOpenAppItemCreateModel extends AlipayObject {
 	private ItemDescInfoVO descInfo;
 
 	/**
-	 * 商品直接购买链接地址
+	 * 商品直接购买链接地址 当前字段已废弃(商品直接购买链接，无使用场景，接口文档屏蔽该字段)
 	 */
 	@ApiField("direct_path")
+	@Deprecated
 	private String directPath;
 
 	/**
@@ -128,6 +129,12 @@ public class AlipayOpenAppItemCreateModel extends AlipayObject {
 	 */
 	@ApiField("sale_status")
 	private String saleStatus;
+
+	/**
+	 * 创建商品跳过算法检测
+	 */
+	@ApiField("skip_algorithm_check")
+	private String skipAlgorithmCheck;
 
 	/**
 	 * sku数组，sku数量上限为50
@@ -274,6 +281,13 @@ public class AlipayOpenAppItemCreateModel extends AlipayObject {
 	}
 	public void setSaleStatus(String saleStatus) {
 		this.saleStatus = saleStatus;
+	}
+
+	public String getSkipAlgorithmCheck() {
+		return this.skipAlgorithmCheck;
+	}
+	public void setSkipAlgorithmCheck(String skipAlgorithmCheck) {
+		this.skipAlgorithmCheck = skipAlgorithmCheck;
 	}
 
 	public List<ItemSkuCreateVO> getSkus() {

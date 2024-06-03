@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 电子借条信息同步
  *
  * @author auto create
- * @since 1.0, 2024-04-10 15:22:51
+ * @since 1.0, 2024-05-28 17:07:54
  */
 public class AlipayEcoContractsLoanInfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6127835498371476189L;
+	private static final long serialVersionUID = 2211172193911642777L;
 
 	/**
 	 * 合约信息列表

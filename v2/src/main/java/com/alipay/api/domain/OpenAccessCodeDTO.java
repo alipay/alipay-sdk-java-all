@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业码isv集成授权码信息
  *
  * @author auto create
- * @since 1.0, 2024-03-14 11:53:08
+ * @since 1.0, 2024-05-31 09:52:03
  */
 public class OpenAccessCodeDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4357621226836695751L;
+	private static final long serialVersionUID = 2456348231277499338L;
 
 	/**
 	 * 授权码

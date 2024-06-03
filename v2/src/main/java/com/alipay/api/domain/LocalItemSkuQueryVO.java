@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 本地商品sku，查询本地商品详情时使用当前sku对象进行传参
  *
  * @author auto create
- * @since 1.0, 2024-04-25 17:39:28
+ * @since 1.0, 2024-05-29 17:14:16
  */
 public class LocalItemSkuQueryVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5624243915973112688L;
+	private static final long serialVersionUID = 6747884681838258617L;
 
 	/**
 	 * 用于需要透出sku属性的场景。如线路游需要透出sku销售属性
@@ -58,6 +58,12 @@ public class LocalItemSkuQueryVO extends AlipayObject {
 	 */
 	@ApiField("stock_num")
 	private Long stockNum;
+
+	/**
+	 * sku图片afts文件链接，素材中心根据提报时的图片afts文件ID自动生成
+	 */
+	@ApiField("thumb_img_url")
+	private String thumbImgUrl;
 
 	public List<ItemSkuAttrVO> getAttrs() {
 		return this.attrs;
@@ -106,6 +112,13 @@ public class LocalItemSkuQueryVO extends AlipayObject {
 	}
 	public void setStockNum(Long stockNum) {
 		this.stockNum = stockNum;
+	}
+
+	public String getThumbImgUrl() {
+		return this.thumbImgUrl;
+	}
+	public void setThumbImgUrl(String thumbImgUrl) {
+		this.thumbImgUrl = thumbImgUrl;
 	}
 
 }

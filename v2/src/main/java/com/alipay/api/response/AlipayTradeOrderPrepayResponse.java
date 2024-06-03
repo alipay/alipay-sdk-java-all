@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.order.prepay response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-12 15:17:00
+ * @since 1.0, 2024-05-28 12:27:04
  */
 public class AlipayTradeOrderPrepayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1672445392919676282L;
+	private static final long serialVersionUID = 4174183291272652966L;
 
 	/** 
 	 * 支付跳转信息。 用于打开支付方式 app 的 scheme URL，详细使用方式参考<a href="https://global.alipay.com/docs/ac/cashier_payment_cn/redirection#FH33G">链接</a>。

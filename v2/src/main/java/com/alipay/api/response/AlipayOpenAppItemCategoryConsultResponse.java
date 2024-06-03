@@ -8,11 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.item.category.consult response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-22 15:05:27
+ * @since 1.0, 2024-05-30 18:12:03
  */
 public class AlipayOpenAppItemCategoryConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5218726432797791933L;
+	private static final long serialVersionUID = 8476473832431383951L;
+
+	/** 
+	 * 类目层级
+	 */
+	@ApiField("cat_level")
+	private Long catLevel;
 
 	/** 
 	 * 类目不可用错误码
@@ -43,6 +49,13 @@ public class AlipayOpenAppItemCategoryConsultResponse extends AlipayResponse {
 	 */
 	@ApiField("status")
 	private Boolean status;
+
+	public void setCatLevel(Long catLevel) {
+		this.catLevel = catLevel;
+	}
+	public Long getCatLevel( ) {
+		return this.catLevel;
+	}
 
 	public void setCategoryErrorCode(String categoryErrorCode) {
 		this.categoryErrorCode = categoryErrorCode;

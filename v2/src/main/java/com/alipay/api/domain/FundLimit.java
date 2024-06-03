@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 出资限制模型
  *
  * @author auto create
- * @since 1.0, 2024-05-27 19:22:21
+ * @since 1.0, 2024-05-28 14:59:48
  */
 public class FundLimit extends AlipayObject {
 
-	private static final long serialVersionUID = 7673596831947215373L;
+	private static final long serialVersionUID = 1121423815415648237L;
 
 	/**
 	 * 限制类型

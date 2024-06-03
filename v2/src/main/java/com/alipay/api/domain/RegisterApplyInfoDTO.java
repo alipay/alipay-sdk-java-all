@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业注册申请信息
  *
  * @author auto create
- * @since 1.0, 2023-08-11 14:49:36
+ * @since 1.0, 2024-05-31 09:58:03
  */
 public class RegisterApplyInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2868667957361856839L;
+	private static final long serialVersionUID = 4837952833456917341L;
 
 	/**
 	 * 申请id

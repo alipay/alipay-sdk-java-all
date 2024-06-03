@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 合约信息，用于借条服务商同步合同详情至支付宝电子借条小程序
  *
  * @author auto create
- * @since 1.0, 2024-04-10 15:22:51
+ * @since 1.0, 2024-05-28 17:07:54
  */
 public class EcoContractInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8816357982748468234L;
+	private static final long serialVersionUID = 3187631141538252797L;
 
 	/**
 	 * 合约结束时间，时间戳格式，单位为毫秒
@@ -60,7 +60,7 @@ public class EcoContractInfo extends AlipayObject {
 	private Long signDeadlineTime;
 
 	/**
-	 * 双方完成签署的时间，时间戳格式，单位为毫秒
+	 * 双方完成签署的时间，时间戳格式，单位为毫秒，如果不传默认为0
 	 */
 	@ApiField("sign_end_time")
 	private Long signEndTime;

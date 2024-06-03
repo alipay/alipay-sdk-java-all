@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 推送酒店价格计划
  *
  * @author auto create
- * @since 1.0, 2024-05-27 16:59:54
+ * @since 1.0, 2024-05-30 21:26:18
  */
 public class AlipayCommerceHotelRateplanUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3787125441232259174L;
+	private static final long serialVersionUID = 6642744525815713862L;
 
 	/**
 	 * 预定规则列表

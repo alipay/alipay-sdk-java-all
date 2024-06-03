@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据查询令牌获取发票要素列表
  *
  * @author auto create
- * @since 1.0, 2022-11-19 22:01:13
+ * @since 1.0, 2024-05-30 19:30:17
  */
 public class AlipayEbppInvoiceTokenBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7722789321357849421L;
+	private static final long serialVersionUID = 8277186767221387438L;
 
 	/**
 	 * 查询请求令牌。通过唤起支付宝钱包后用户进入发票管家选择发票列表后创建，并通过isv接收url回传给isv。详见 <a href="https://opendocs.alipay.com/open/01m6z5">"选"模式发票报销</a>。

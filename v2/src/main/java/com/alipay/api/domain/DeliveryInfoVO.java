@@ -10,15 +10,15 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 物流信息模型
  *
  * @author auto create
- * @since 1.0, 2023-04-09 17:34:46
+ * @since 1.0, 2024-05-30 16:06:18
  */
 public class DeliveryInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8843936219718435855L;
+	private static final long serialVersionUID = 5471893358419399964L;
 
 	/**
 	 * 快递公司ID，物流公司ID列表请查看
-https://opendocs.alipay.com/mini/00au7e
+<href https://opendocs.alipay.com/mini/00au7e />
 	 */
 	@ApiField("delivery_id")
 	private String deliveryId;

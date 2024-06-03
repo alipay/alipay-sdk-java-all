@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.ec.department.upgrade.cancel request
  * 
  * @author auto create
- * @since 1.0, 2024-03-14 16:25:43
+ * @since 1.0, 2024-05-31 09:39:22
  */
 public class AlipayCommerceEcDepartmentUpgradeCancelRequest implements AlipayRequest<AlipayCommerceEcDepartmentUpgradeCancelResponse> {
 

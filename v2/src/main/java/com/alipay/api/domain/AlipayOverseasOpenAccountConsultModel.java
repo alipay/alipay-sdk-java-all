@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账户验证
  *
  * @author auto create
- * @since 1.0, 2024-04-15 10:27:01
+ * @since 1.0, 2024-05-28 11:50:42
  */
 public class AlipayOverseasOpenAccountConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1478369865287912697L;
+	private static final long serialVersionUID = 3454658945966594644L;
 
 	/**
 	 * 账户名称
@@ -46,6 +46,12 @@ public class AlipayOverseasOpenAccountConsultModel extends AlipayObject {
 	 */
 	@ApiField("country")
 	private String country;
+
+	/**
+	 * 收款类型，用于标识本次账号校验的收款类型，用于区分银行卡收款，还是虚拟卡收款
+	 */
+	@ApiField("receipt_method")
+	private String receiptMethod;
 
 	/**
 	 * 学校id
@@ -85,6 +91,13 @@ public class AlipayOverseasOpenAccountConsultModel extends AlipayObject {
 	}
 	public void setCountry(String country) {
 		this.country = country;
+	}
+
+	public String getReceiptMethod() {
+		return this.receiptMethod;
+	}
+	public void setReceiptMethod(String receiptMethod) {
+		this.receiptMethod = receiptMethod;
 	}
 
 	public String getSchoolId() {

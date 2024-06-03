@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 授权申请数据模型
  *
  * @author auto create
- * @since 1.0, 2024-05-27 17:29:31
+ * @since 1.0, 2024-05-28 14:59:48
  */
 public class AuthParticipantInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1838789617914515697L;
+	private static final long serialVersionUID = 8419919656739236388L;
 
 	/**
 	 * 用户名

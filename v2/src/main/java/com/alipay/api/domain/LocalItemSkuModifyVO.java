@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 本地商品sku修改模型
  *
  * @author auto create
- * @since 1.0, 2024-04-22 17:44:17
+ * @since 1.0, 2024-05-29 17:14:53
  */
 public class LocalItemSkuModifyVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5334717418113215723L;
+	private static final long serialVersionUID = 6165473131191222789L;
 
 	/**
 	 * sku原价，分为单位。
@@ -58,6 +58,12 @@ public class LocalItemSkuModifyVO extends AlipayObject {
 	 */
 	@ApiField("stock_num")
 	private String stockNum;
+
+	/**
+	 * sku图片的afts文件ID，可以通过 <a href="https://opendocs.alipay.com/mini/3fade898_alipay.marketing.image.enhance.upload?scene=a07c8e4fcf3e490f97d959445f393b01&pathHash=a941a783" target="_blank">alipay.marketing.image.enhance.upload</a> 获取图片文件id
+	 */
+	@ApiField("thumb_img_id")
+	private String thumbImgId;
 
 	public Long getOriginalPrice() {
 		return this.originalPrice;
@@ -106,6 +112,13 @@ public class LocalItemSkuModifyVO extends AlipayObject {
 	}
 	public void setStockNum(String stockNum) {
 		this.stockNum = stockNum;
+	}
+
+	public String getThumbImgId() {
+		return this.thumbImgId;
+	}
+	public void setThumbImgId(String thumbImgId) {
+		this.thumbImgId = thumbImgId;
 	}
 
 }

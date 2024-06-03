@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.finance.fsupv.task.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:28:01
+ * @since 1.0, 2024-05-28 10:32:03
  */
 public class AnttechBlockchainFinanceFsupvTaskCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6615557486812349756L;
+	private static final long serialVersionUID = 3698184557627194223L;
 
 	/** 
 	 * 受理号。资金管控任务的执行实际为异步执行，在查询或消息推送时，会返回改号作为查询依据

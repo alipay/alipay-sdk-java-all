@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 交易组件业务单创建
  *
  * @author auto create
- * @since 1.0, 2024-05-13 14:22:16
+ * @since 1.0, 2024-05-30 16:06:18
  */
 public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3565884876618832858L;
+	private static final long serialVersionUID = 5148722868382337441L;
 
 	/**
 	 * 订单收货地址
@@ -29,9 +29,10 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 	private AllocAmountInfoDTO allocAmountInfo;
 
 	/**
-	 * 商户传入业务信息，具体值要和支付宝约定，应用于安全，营销等参数直传场景，格式为json格式
+	 * 商户传入业务信息，具体值要和支付宝约定，应用于安全，营销等参数直传场景，格式为json格式 当前字段已废弃(历史收单接口兼容，收单分离后由收单维护)
 	 */
 	@ApiField("business_params")
+	@Deprecated
 	private MiniBusinessParamsDTO businessParams;
 
 	/**

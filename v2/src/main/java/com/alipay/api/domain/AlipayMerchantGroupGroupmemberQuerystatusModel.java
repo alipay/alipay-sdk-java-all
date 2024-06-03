@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询商家群用户的入群状态
  *
  * @author auto create
- * @since 1.0, 2024-05-27 20:06:12
+ * @since 1.0, 2024-05-28 13:35:53
  */
 public class AlipayMerchantGroupGroupmemberQuerystatusModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4886787247724931183L;
+	private static final long serialVersionUID = 5454547675373652628L;
 
 	/**
 	 * 群组id

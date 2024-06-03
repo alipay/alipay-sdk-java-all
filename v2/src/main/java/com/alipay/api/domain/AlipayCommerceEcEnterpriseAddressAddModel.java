@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 添加地址
  *
  * @author auto create
- * @since 1.0, 2024-03-14 15:39:17
+ * @since 1.0, 2024-05-31 09:40:02
  */
 public class AlipayCommerceEcEnterpriseAddressAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6373523354794277164L;
+	private static final long serialVersionUID = 8353589636157188596L;
 
 	/**
 	 * 通过企业码1.0接口签约的共同账户，和agreement_no搭配使用。

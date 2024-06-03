@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.ecommerce.insure.recommend request
  * 
  * @author auto create
- * @since 1.0, 2024-03-26 21:43:31
+ * @since 1.0, 2024-05-31 17:45:11
  */
 public class AlipayInsSceneEcommerceInsureRecommendRequest implements AlipayRequest<AlipayInsSceneEcommerceInsureRecommendResponse> {
 

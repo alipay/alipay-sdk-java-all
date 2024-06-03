@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询小程序的云客服聊天窗跳转链接
  *
  * @author auto create
- * @since 1.0, 2024-05-22 16:00:15
+ * @since 1.0, 2024-05-31 14:53:58
  */
 public class AlipayIserviceCcmMiniappServiceurlQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7479272994996176721L;
+	private static final long serialVersionUID = 3838798863177326786L;
 
 	/**
 	 * 可选，用于数据统计分析，该字段会经过白名单校验，未通过校验会忽略。使用该字段前请联系接口负责人。

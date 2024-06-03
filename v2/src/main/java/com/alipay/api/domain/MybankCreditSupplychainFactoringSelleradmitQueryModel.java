@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保理门店准入查询
  *
  * @author auto create
- * @since 1.0, 2023-10-12 10:37:39
+ * @since 1.0, 2024-05-29 16:01:56
  */
 public class MybankCreditSupplychainFactoringSelleradmitQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3512561264761839213L;
+	private static final long serialVersionUID = 6715195177278217781L;
 
 	/**
 	 * isv支付宝id
 	 */
 	@ApiField("buyer_alipay_id")
 	private String buyerAlipayId;
+
+	/**
+	 * isv支付宝id
+	 */
+	@ApiField("buyer_open_id")
+	private String buyerOpenId;
 
 	/**
 	 * 门店名单类型,该值由网商提供
@@ -42,6 +48,13 @@ public class MybankCreditSupplychainFactoringSelleradmitQueryModel extends Alipa
 	}
 	public void setBuyerAlipayId(String buyerAlipayId) {
 		this.buyerAlipayId = buyerAlipayId;
+	}
+
+	public String getBuyerOpenId() {
+		return this.buyerOpenId;
+	}
+	public void setBuyerOpenId(String buyerOpenId) {
+		this.buyerOpenId = buyerOpenId;
 	}
 
 	public String getListType() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 子营销申领明细
  *
  * @author auto create
- * @since 1.0, 2023-12-25 17:07:29
+ * @since 1.0, 2024-05-30 16:06:18
  */
 public class SubPromoInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3866756555696113553L;
+	private static final long serialVersionUID = 7348283467837496192L;
 
 	/**
 	 * 订单消耗的子代币数量

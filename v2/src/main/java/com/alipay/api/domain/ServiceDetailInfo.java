@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务信息
  *
  * @author auto create
- * @since 1.0, 2023-12-19 10:09:47
+ * @since 1.0, 2024-05-29 23:51:51
  */
 public class ServiceDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8425219413257491538L;
+	private static final long serialVersionUID = 2786586171317518562L;
 
 	/**
 	 * 服务编码
@@ -36,6 +36,12 @@ public class ServiceDetailInfo extends AlipayObject {
 	 */
 	@ApiField("name")
 	private String name;
+
+	/**
+	 * 用于feedback时，告知数据类型
+	 */
+	@ApiField("type")
+	private String type;
 
 	/**
 	 * 服务链接
@@ -69,6 +75,13 @@ public class ServiceDetailInfo extends AlipayObject {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getType() {
+		return this.type;
+	}
+	public void setType(String type) {
+		this.type = type;
 	}
 
 	public String getUrl() {

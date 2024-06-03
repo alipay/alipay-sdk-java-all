@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账单记录
  *
  * @author auto create
- * @since 1.0, 2023-03-27 14:03:00
+ * @since 1.0, 2024-05-30 10:14:20
  */
 public class SupervisionBillInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2679315253317496723L;
+	private static final long serialVersionUID = 4483965367151264572L;
 
 	/**
-	 * 来账金额
+	 * 来账金额，整数，单位: 分
 	 */
 	@ApiField("amount")
 	private Long amount;
@@ -62,7 +62,7 @@ public class SupervisionBillInfo extends AlipayObject {
 	private String remark;
 
 	/**
-	 * 来账时间
+	 * 来账时间：结构yyyyMMddHHmmss
 	 */
 	@ApiField("vostro_time")
 	private String vostroTime;

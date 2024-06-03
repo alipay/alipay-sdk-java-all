@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniPluginuseconfigUpgradeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7838664323485877531L;
+	private static final long serialVersionUID = 4886984973957124316L;
 
 	/**
 	 * 小程序客户端类型，默认为支付宝端。常见支持如下客户端：

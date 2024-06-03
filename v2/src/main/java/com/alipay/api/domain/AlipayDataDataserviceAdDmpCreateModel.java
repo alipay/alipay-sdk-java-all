@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 设备数据人群包创建
  *
  * @author auto create
- * @since 1.0, 2023-10-18 13:00:09
+ * @since 1.0, 2024-05-30 20:29:17
  */
 public class AlipayDataDataserviceAdDmpCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5727792976244619541L;
+	private static final long serialVersionUID = 5348499744515373995L;
 
 	/**
 	 * 支付宝统一编码，2088开头字符串。人群包创建人id

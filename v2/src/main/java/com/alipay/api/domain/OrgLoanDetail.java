@@ -1,0 +1,134 @@
+package com.alipay.api.domain;
+
+import com.alipay.api.AlipayObject;
+import com.alipay.api.internal.mapping.ApiField;
+
+/**
+ * 机构贷款详情
+ *
+ * @author auto create
+ * @since 1.0, 2024-05-30 17:30:23
+ */
+public class OrgLoanDetail extends AlipayObject {
+
+	private static final long serialVersionUID = 3469393281857338159L;
+
+	/**
+	 * 客户授信金额（审批金额），单位分
+	 */
+	@ApiField("credit_amt")
+	private Long creditAmt;
+
+	/**
+	 * 是否为主产品：Y/N
+	 */
+	@ApiField("is_main_product")
+	private String isMainProduct;
+
+	/**
+	 * 客户放款金额，单位分
+	 */
+	@ApiField("loan_amt")
+	private Long loanAmt;
+
+	/**
+	 * 客户放款成功日期，yyyy-MM-dd HH:mm:ss
+	 */
+	@ApiField("loan_date")
+	private String loanDate;
+
+	/**
+	 * 客户贷款利率
+	 */
+	@ApiField("loan_rate")
+	private String loanRate;
+
+	/**
+	 * 客户贷款期次
+	 */
+	@ApiField("loan_term")
+	private Long loanTerm;
+
+	/**
+	 * 客户贷款期次类型
+Y、M、D分别代表年月日；当前仅支持M
+	 */
+	@ApiField("loan_term_unit")
+	private String loanTermUnit;
+
+	/**
+	 * 机构侧支用号
+	 */
+	@ApiField("org_drawdown_no")
+	private String orgDrawdownNo;
+
+	/**
+	 * 还款方式 1：等额本金；2：等额本息；3：先息后本；4：一次性结清本息
+	 */
+	@ApiField("repay_type")
+	private String repayType;
+
+	public Long getCreditAmt() {
+		return this.creditAmt;
+	}
+	public void setCreditAmt(Long creditAmt) {
+		this.creditAmt = creditAmt;
+	}
+
+	public String getIsMainProduct() {
+		return this.isMainProduct;
+	}
+	public void setIsMainProduct(String isMainProduct) {
+		this.isMainProduct = isMainProduct;
+	}
+
+	public Long getLoanAmt() {
+		return this.loanAmt;
+	}
+	public void setLoanAmt(Long loanAmt) {
+		this.loanAmt = loanAmt;
+	}
+
+	public String getLoanDate() {
+		return this.loanDate;
+	}
+	public void setLoanDate(String loanDate) {
+		this.loanDate = loanDate;
+	}
+
+	public String getLoanRate() {
+		return this.loanRate;
+	}
+	public void setLoanRate(String loanRate) {
+		this.loanRate = loanRate;
+	}
+
+	public Long getLoanTerm() {
+		return this.loanTerm;
+	}
+	public void setLoanTerm(Long loanTerm) {
+		this.loanTerm = loanTerm;
+	}
+
+	public String getLoanTermUnit() {
+		return this.loanTermUnit;
+	}
+	public void setLoanTermUnit(String loanTermUnit) {
+		this.loanTermUnit = loanTermUnit;
+	}
+
+	public String getOrgDrawdownNo() {
+		return this.orgDrawdownNo;
+	}
+	public void setOrgDrawdownNo(String orgDrawdownNo) {
+		this.orgDrawdownNo = orgDrawdownNo;
+	}
+
+	public String getRepayType() {
+		return this.repayType;
+	}
+	public void setRepayType(String repayType) {
+		this.repayType = repayType;
+	}
+
+}

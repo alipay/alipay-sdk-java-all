@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.hotel.rateplan.upload request
  * 
  * @author auto create
- * @since 1.0, 2024-05-27 17:12:03
+ * @since 1.0, 2024-05-30 21:27:02
  */
 public class AlipayCommerceHotelRateplanUploadRequest implements AlipayRequest<AlipayCommerceHotelRateplanUploadResponse> {
 

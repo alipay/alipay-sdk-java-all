@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票报销处理进度同步
  *
  * @author auto create
- * @since 1.0, 2023-02-20 21:29:17
+ * @since 1.0, 2024-05-30 19:19:17
  */
 public class AlipayEbppInvoiceExpenseProgressSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8565862647728539312L;
+	private static final long serialVersionUID = 4665797563546146111L;
 
 	/**
 	 * 同步申请id，每次发起同步时生成，isv每次请求需要保证唯一
@@ -69,10 +69,7 @@ public class AlipayEbppInvoiceExpenseProgressSyncModel extends AlipayObject {
 	private String openId;
 
 	/**
-	 * 报销操作。枚举值如下：
-*EXPENSE_APPLY：用户已提交申请。*EXPENSE_APPROVAL_PASS：报销审核通过。
-*EXPENSE_FINISHED：报销完结。
-*EXPENSE_CANCEL：报销撤回。
+	 * 报销操作
 	 */
 	@ApiField("status")
 	private String status;

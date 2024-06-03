@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 回传入驻工单状态变更
  *
  * @author auto create
- * @since 1.0, 2023-07-28 19:22:15
+ * @since 1.0, 2024-05-31 09:49:45
  */
 public class AlipayEbppInvoiceRegisterModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5472492882712762428L;
+	private static final long serialVersionUID = 1232977817168848357L;
 
 	/**
 	 * 事件，可选值：

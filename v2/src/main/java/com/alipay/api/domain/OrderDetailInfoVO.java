@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单详细数据
  *
  * @author auto create
- * @since 1.0, 2023-08-04 13:53:35
+ * @since 1.0, 2024-05-30 16:06:18
  */
 public class OrderDetailInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7167788217188541283L;
+	private static final long serialVersionUID = 5657143167559854848L;
+
+	/**
+	 * 拼团信息
+	 */
+	@ApiField("group_buy_info")
+	private GroupBuyInfo groupBuyInfo;
 
 	/**
 	 * 商品列表
@@ -22,6 +28,12 @@ public class OrderDetailInfoVO extends AlipayObject {
 	@ApiListField("item_infos")
 	@ApiField("order_item_info_v_o")
 	private List<OrderItemInfoVO> itemInfos;
+
+	/**
+	 * 订单标签对象
+	 */
+	@ApiField("order_tag_info")
+	private OrderTagInfo orderTagInfo;
 
 	/**
 	 * 支付信息
@@ -41,11 +53,25 @@ public class OrderDetailInfoVO extends AlipayObject {
 	@ApiField("promo_apply_info")
 	private PromoApplyInfoVO promoApplyInfo;
 
+	public GroupBuyInfo getGroupBuyInfo() {
+		return this.groupBuyInfo;
+	}
+	public void setGroupBuyInfo(GroupBuyInfo groupBuyInfo) {
+		this.groupBuyInfo = groupBuyInfo;
+	}
+
 	public List<OrderItemInfoVO> getItemInfos() {
 		return this.itemInfos;
 	}
 	public void setItemInfos(List<OrderItemInfoVO> itemInfos) {
 		this.itemInfos = itemInfos;
+	}
+
+	public OrderTagInfo getOrderTagInfo() {
+		return this.orderTagInfo;
+	}
+	public void setOrderTagInfo(OrderTagInfo orderTagInfo) {
+		this.orderTagInfo = orderTagInfo;
 	}
 
 	public PayInfoVO getPayInfo() {

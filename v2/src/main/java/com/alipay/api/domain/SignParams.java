@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 签约参数。用于sdk支付并签约中传入签约信息。
  *
  * @author auto create
- * @since 1.0, 2024-05-17 18:11:45
+ * @since 1.0, 2024-05-28 19:17:17
  */
 public class SignParams extends AlipayObject {
 
-	private static final long serialVersionUID = 2547987535447354113L;
+	private static final long serialVersionUID = 4162777242213384679L;
 
 	/**
 	 * 请按当前接入的方式进行填充，且输入值必须为文档中的参数取值范围。
@@ -27,6 +27,12 @@ public class SignParams extends AlipayObject {
 	 */
 	@ApiField("allow_huazhi_degrade")
 	private Boolean allowHuazhiDegrade;
+
+	/**
+	 * 设置签约请求的有效时间，单位为秒。如传入600，商户发起签约请求到用户进入支付宝签约页面的时间差不能超过10分钟。
+	 */
+	@ApiField("effect_time")
+	private String effectTime;
 
 	/**
 	 * 商户签约号，代扣协议中标示用户的唯一签约号（确保在商户系统中唯一）。 格式规则：支持大写小写字母和数字，最长32位。 商户系统按需传入，如果同一用户在同一产品码、同一签约场景下，签订了多份代扣协议，那么需要指定并传入该值。
@@ -95,6 +101,13 @@ public class SignParams extends AlipayObject {
 	}
 	public void setAllowHuazhiDegrade(Boolean allowHuazhiDegrade) {
 		this.allowHuazhiDegrade = allowHuazhiDegrade;
+	}
+
+	public String getEffectTime() {
+		return this.effectTime;
+	}
+	public void setEffectTime(String effectTime) {
+		this.effectTime = effectTime;
 	}
 
 	public String getExternalAgreementNo() {

@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 钱包动账明细
  *
  * @author auto create
- * @since 1.0, 2024-04-15 11:33:43
+ * @since 1.0, 2024-05-28 17:27:50
  */
 public class AlipayCloudFundWalletOperationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1852832621995895267L;
+	private static final long serialVersionUID = 3729672364538376586L;
+
+	/**
+	 * 钱包场景码
+	 */
+	@ApiField("biz_scene")
+	private String bizScene;
 
 	/**
 	 * 业务类型
@@ -42,10 +48,34 @@ public class AlipayCloudFundWalletOperationQueryModel extends AlipayObject {
 	private String endBizDt;
 
 	/**
+	 * 待邀请用户的支付宝账号： identity_type是ALIPAY_USER_ID填支付宝会员账号； 是ALIPAY_LOGON_ID 填支付宝登录号（支持邮箱和手机号格式）
+	 */
+	@ApiField("identity")
+	private String identity;
+
+	/**
+	 * 待邀请用户的支付宝账号： identity_type是ALIPAY_USER_ID填支付宝会员账号； 是ALIPAY_LOGON_ID 填支付宝登录号（支持邮箱和手机号格式）
+	 */
+	@ApiField("identity_open_id")
+	private String identityOpenId;
+
+	/**
+	 * 待邀请的用户支付宝账号类型，目前支持如下类型： 1、ALIPAY_USER_ID 支付宝的会员ID 2、ALIPAY_LOGON_ID 支付宝登录号，支持邮箱和手机号格式
+	 */
+	@ApiField("identity_type")
+	private String identityType;
+
+	/**
 	 * 分页大小
 	 */
 	@ApiField("page_size")
 	private String pageSize;
+
+	/**
+	 * 钱包产品code一般为FUND_TRUSTSHIP
+	 */
+	@ApiField("product_code")
+	private String productCode;
 
 	/**
 	 * 业务开始时间
@@ -58,6 +88,13 @@ public class AlipayCloudFundWalletOperationQueryModel extends AlipayObject {
 	 */
 	@ApiField("user_wallet_id")
 	private String userWalletId;
+
+	public String getBizScene() {
+		return this.bizScene;
+	}
+	public void setBizScene(String bizScene) {
+		this.bizScene = bizScene;
+	}
 
 	public List<String> getBizTypes() {
 		return this.bizTypes;
@@ -80,11 +117,39 @@ public class AlipayCloudFundWalletOperationQueryModel extends AlipayObject {
 		this.endBizDt = endBizDt;
 	}
 
+	public String getIdentity() {
+		return this.identity;
+	}
+	public void setIdentity(String identity) {
+		this.identity = identity;
+	}
+
+	public String getIdentityOpenId() {
+		return this.identityOpenId;
+	}
+	public void setIdentityOpenId(String identityOpenId) {
+		this.identityOpenId = identityOpenId;
+	}
+
+	public String getIdentityType() {
+		return this.identityType;
+	}
+	public void setIdentityType(String identityType) {
+		this.identityType = identityType;
+	}
+
 	public String getPageSize() {
 		return this.pageSize;
 	}
 	public void setPageSize(String pageSize) {
 		this.pageSize = pageSize;
+	}
+
+	public String getProductCode() {
+		return this.productCode;
+	}
+	public void setProductCode(String productCode) {
+		this.productCode = productCode;
 	}
 
 	public String getStartBizDt() {

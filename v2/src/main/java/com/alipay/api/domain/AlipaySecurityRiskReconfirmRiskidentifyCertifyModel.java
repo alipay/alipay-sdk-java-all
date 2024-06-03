@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySecurityRiskReconfirmRiskidentifyCertifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7319732561539758779L;
+	private static final long serialVersionUID = 1399224412593145146L;
 
 	/**
 	 * 登录对应的账号名

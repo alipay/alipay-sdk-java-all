@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.group.groupmember.querystatus response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-27 20:42:03
+ * @since 1.0, 2024-05-29 10:12:03
  */
 public class AlipayMerchantGroupGroupmemberQuerystatusResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1745822299347824492L;
+	private static final long serialVersionUID = 8711544348842627336L;
 
 	/** 
 	 * 是否入群的标识

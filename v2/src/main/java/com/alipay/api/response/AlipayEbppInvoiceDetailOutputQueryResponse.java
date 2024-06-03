@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.detail.output.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-01 23:00:14
+ * @since 1.0, 2024-05-30 19:32:03
  */
 public class AlipayEbppInvoiceDetailOutputQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3239949931959647161L;
+	private static final long serialVersionUID = 4834678629954492537L;
 
 	/** 
 	 * 防伪码，发票校验码
@@ -24,7 +24,7 @@ public class AlipayEbppInvoiceDetailOutputQueryResponse extends AlipayResponse {
 	private String antiFakeCode;
 
 	/** 
-	 * 不含税金额（废弃）
+	 * 不含税金额（废弃），单位元
 	 */
 	@ApiField("ex_tax_amount")
 	private String exTaxAmount;
@@ -56,7 +56,7 @@ true－已上传
 	private String hasUploadPdf;
 
 	/** 
-	 * 发票金额（价税合计金额）
+	 * 发票金额（价税合计金额），单位元
 	 */
 	@ApiField("invoice_amount")
 	private String invoiceAmount;

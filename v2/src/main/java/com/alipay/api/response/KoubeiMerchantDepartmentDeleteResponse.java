@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiMerchantDepartmentDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1176953487552583959L;
+	private static final long serialVersionUID = 2691349642593197694L;
 
 	
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.contracts.loan.info.sync response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-10 15:26:59
+ * @since 1.0, 2024-05-28 17:12:03
  */
 public class AlipayEcoContractsLoanInfoSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7474896683743356585L;
+	private static final long serialVersionUID = 4716924436522954998L;
 
 	/** 
 	 * true代表同步成功,false代表同步失败

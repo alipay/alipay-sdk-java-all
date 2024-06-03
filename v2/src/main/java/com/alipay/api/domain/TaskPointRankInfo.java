@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 任务积分排名信息
  *
  * @author auto create
- * @since 1.0, 2022-10-11 17:40:08
+ * @since 1.0, 2024-05-30 19:43:23
  */
 public class TaskPointRankInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2527643442454659435L;
+	private static final long serialVersionUID = 6154221593589967241L;
 
 	/**
 	 * 距离前一名积分差距

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁商品详情
  *
  * @author auto create
- * @since 1.0, 2024-05-24 12:08:21
+ * @since 1.0, 2024-05-31 17:04:22
  */
 public class RentItemDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 4425918578939618532L;
+	private static final long serialVersionUID = 2629544472296487711L;
 
 	/**
 	 * 租赁商品类目，具体类目信息见<a href="https://opendocs.alipay.com/open/10719">https://opendocs.alipay.com/open/10719</a>
@@ -50,10 +50,10 @@ public class RentItemDetail extends AlipayObject {
 	private Boolean supervised;
 
 	/**
-	 * 单个商品价格（单位：分）
+	 * 单个商品价格
 	 */
 	@ApiField("unit_price")
-	private Long unitPrice;
+	private String unitPrice;
 
 	public String getGoodsCategory() {
 		return this.goodsCategory;
@@ -97,10 +97,10 @@ public class RentItemDetail extends AlipayObject {
 		this.supervised = supervised;
 	}
 
-	public Long getUnitPrice() {
+	public String getUnitPrice() {
 		return this.unitPrice;
 	}
-	public void setUnitPrice(Long unitPrice) {
+	public void setUnitPrice(String unitPrice) {
 		this.unitPrice = unitPrice;
 	}
 

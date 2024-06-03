@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.ec.credit.withdraw.disburse request
  * 
  * @author auto create
- * @since 1.0, 2024-04-17 13:56:59
+ * @since 1.0, 2024-05-31 15:17:03
  */
 public class AlipayCommerceEcCreditWithdrawDisburseRequest implements AlipayRequest<AlipayCommerceEcCreditWithdrawDisburseResponse> {
 

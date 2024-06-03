@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政务监管资金划拨
  *
  * @author auto create
- * @since 1.0, 2023-03-28 13:51:08
+ * @since 1.0, 2024-05-30 10:13:59
  */
 public class AlipayEbppIndustrySupervisionFundsTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7465287761953383596L;
+	private static final long serialVersionUID = 2735183715589896116L;
 
 	/**
 	 * 资金划拨的金额（单位分）
@@ -38,13 +38,17 @@ public class AlipayEbppIndustrySupervisionFundsTransferModel extends AlipayObjec
 	private String outTradeNo;
 
 	/**
-	 * 保证金退款场景下，填收方账户类型，本次写02，代表对公户
+	 * 保证金退款场景下，填收方账户类型：
+02 代表对公户。
+01 代表对私户
+监管资金转出场景必填
 	 */
 	@ApiField("payee_account_type")
 	private String payeeAccountType;
 
 	/**
-	 * 保证金退款场景下，填收方账户所在行的联行号，本次为支付宝联行号
+	 * 保证金退款场景下，填收方账户所在行的联行号，本次为支付宝联行号。
+监管资金转出，且payee_account_type 为02时
 	 */
 	@ApiField("payee_contact_line")
 	private String payeeContactLine;

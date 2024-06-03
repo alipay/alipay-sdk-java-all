@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.contracts.loan.info.sync request
  * 
  * @author auto create
- * @since 1.0, 2024-04-10 15:26:59
+ * @since 1.0, 2024-05-28 17:12:03
  */
 public class AlipayEcoContractsLoanInfoSyncRequest implements AlipayRequest<AlipayEcoContractsLoanInfoSyncResponse> {
 

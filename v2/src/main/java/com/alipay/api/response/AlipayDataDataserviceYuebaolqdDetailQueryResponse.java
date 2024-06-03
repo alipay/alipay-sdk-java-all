@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataDataserviceYuebaolqdDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4126867263778554342L;
+	private static final long serialVersionUID = 6245616234463717673L;
 
 	/** 
 	 * 余额宝清算日预测申赎数据

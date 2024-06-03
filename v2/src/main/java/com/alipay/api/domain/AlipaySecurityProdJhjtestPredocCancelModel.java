@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 文档链路测试
  *
  * @author auto create
- * @since 1.0, 2024-05-16 16:30:20
+ * @since 1.0, 2024-05-28 16:00:56
  */
 public class AlipaySecurityProdJhjtestPredocCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7565945699246919229L;
+	private static final long serialVersionUID = 7897686613549438851L;
 
 	/**
 	 * 11111
@@ -24,6 +24,24 @@ public class AlipaySecurityProdJhjtestPredocCancelModel extends AlipayObject {
 	 */
 	@ApiField("com_c")
 	private JhjTestNew comC;
+
+	/**
+	 * 1
+	 */
+	@ApiField("is_s")
+	private String isS;
+
+	/**
+	 * 11
+	 */
+	@ApiField("isasdasd")
+	private Boolean isasdasd;
+
+	/**
+	 * 1
+	 */
+	@ApiField("sdd")
+	private Boolean sdd;
 
 	/**
 	 * 基础描述修改缓存11
@@ -49,6 +67,27 @@ public class AlipaySecurityProdJhjtestPredocCancelModel extends AlipayObject {
 	}
 	public void setComC(JhjTestNew comC) {
 		this.comC = comC;
+	}
+
+	public String getIsS() {
+		return this.isS;
+	}
+	public void setIsS(String isS) {
+		this.isS = isS;
+	}
+
+	public Boolean getIsasdasd() {
+		return this.isasdasd;
+	}
+	public void setIsasdasd(Boolean isasdasd) {
+		this.isasdasd = isasdasd;
+	}
+
+	public Boolean getSdd() {
+		return this.sdd;
+	}
+	public void setSdd(Boolean sdd) {
+		this.sdd = sdd;
 	}
 
 	public String getTestA() {

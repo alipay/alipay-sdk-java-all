@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.group.promotionurl.query request
  * 
  * @author auto create
- * @since 1.0, 2024-05-20 17:52:01
+ * @since 1.0, 2024-05-30 15:42:03
  */
 public class AlipayMerchantGroupPromotionurlQueryRequest implements AlipayRequest<AlipayMerchantGroupPromotionurlQueryResponse> {
 
