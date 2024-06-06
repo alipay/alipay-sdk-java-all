@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸复杂类型
  *
  * @author auto create
- * @since 1.0, 2020-05-25 16:45:21
+ * @since 1.0, 2024-06-04 15:24:55
  */
 public class FaceExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1311579546947681934L;
+	private static final long serialVersionUID = 7611786452242476879L;
 
 	/**
 	 * 年龄区间判断的上限，闭区间

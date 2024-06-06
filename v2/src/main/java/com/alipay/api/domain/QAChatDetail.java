@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * QA会话信息
  *
  * @author auto create
- * @since 1.0, 2023-12-21 16:52:49
+ * @since 1.0, 2024-06-06 11:13:53
  */
 public class QAChatDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 4379971946736985394L;
+	private static final long serialVersionUID = 1556293274717648279L;
 
 	/**
 	 * 机器人回答详情
@@ -30,6 +30,12 @@ public class QAChatDetail extends AlipayObject {
 	 */
 	@ApiField("chat_uuid")
 	private String chatUuid;
+
+	/**
+	 * 数据创建时间
+	 */
+	@ApiField("local_timestamp")
+	private String localTimestamp;
 
 	/**
 	 * 问题内容
@@ -64,6 +70,13 @@ public class QAChatDetail extends AlipayObject {
 	}
 	public void setChatUuid(String chatUuid) {
 		this.chatUuid = chatUuid;
+	}
+
+	public String getLocalTimestamp() {
+		return this.localTimestamp;
+	}
+	public void setLocalTimestamp(String localTimestamp) {
+		this.localTimestamp = localTimestamp;
 	}
 
 	public String getQuery() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 机器人答案
  *
  * @author auto create
- * @since 1.0, 2023-12-21 15:43:36
+ * @since 1.0, 2024-06-05 13:52:16
  */
 public class RobotAnswer extends AlipayObject {
 
-	private static final long serialVersionUID = 7498136473915653966L;
+	private static final long serialVersionUID = 2433494456841191245L;
 
 	/**
 	 * 文档知识

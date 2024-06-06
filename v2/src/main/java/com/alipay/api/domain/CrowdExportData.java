@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 棋盘人群导出详情数据
  *
  * @author auto create
- * @since 1.0, 2024-05-20 16:27:40
+ * @since 1.0, 2024-06-05 13:38:18
  */
 public class CrowdExportData extends AlipayObject {
 
-	private static final long serialVersionUID = 4654926494734281242L;
+	private static final long serialVersionUID = 7728465344819524937L;
 
 	/**
 	 * 人群的业务日期

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserUseridBymobileQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8456729722991769434L;
+	private static final long serialVersionUID = 8288852858219525544L;
 
 	/**
 	 * 手机号码，大陆的目前是11位手机号码；海外的是国家码、横杠和号码，如1-123123123

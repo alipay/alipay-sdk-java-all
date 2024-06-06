@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 测试复杂类型a
  *
  * @author auto create
- * @since 1.0, 2024-03-11 13:46:48
+ * @since 1.0, 2024-06-06 10:34:56
  */
 public class AlipaySecurityRiskJhjtestComplexddBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3336361799495763251L;
+	private static final long serialVersionUID = 3849463211986668728L;
 
 	/**
 	 * 修改文档

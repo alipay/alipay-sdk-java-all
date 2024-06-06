@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询报警规则列表
  *
  * @author auto create
- * @since 1.0, 2024-05-08 14:32:54
+ * @since 1.0, 2024-06-05 17:33:18
  */
 public class AlipayCloudCloudbaseMonitorAlarmruleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4872292983611664534L;
+	private static final long serialVersionUID = 4395893379971797753L;
 
 	/**
 	 * 报警级别

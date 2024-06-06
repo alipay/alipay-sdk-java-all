@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.monitor.alarmrule.modify response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-08 14:33:19
+ * @since 1.0, 2024-06-06 13:42:29
  */
 public class AlipayCloudCloudbaseMonitorAlarmruleModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8517865689915781964L;
+	private static final long serialVersionUID = 2431384314927955334L;
 
 	/** 
 	 * 更新结果

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserAntpaasAddtesttagModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6266897946149188992L;
+	private static final long serialVersionUID = 1145713118591529255L;
 
 	/**
 	 * 支付宝账户id

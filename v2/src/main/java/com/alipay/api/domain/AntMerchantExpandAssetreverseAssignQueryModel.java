@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取取消订单或退货指令接口
  *
  * @author auto create
- * @since 1.0, 2023-12-13 16:47:51
+ * @since 1.0, 2024-06-04 10:56:16
  */
 public class AntMerchantExpandAssetreverseAssignQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3459298154348266391L;
+	private static final long serialVersionUID = 1468381992366156597L;
 
 	/**
 	 * 每次拉取最大记录数量，可选值为[1,200] ;

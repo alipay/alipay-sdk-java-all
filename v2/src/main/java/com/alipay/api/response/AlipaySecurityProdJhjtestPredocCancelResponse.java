@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.jhjtest.predoc.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-28 16:02:03
+ * @since 1.0, 2024-06-03 15:52:02
  */
 public class AlipaySecurityProdJhjtestPredocCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7134543186846154411L;
+	private static final long serialVersionUID = 6583517659825463584L;
 
 	/** 
 	 * 1111

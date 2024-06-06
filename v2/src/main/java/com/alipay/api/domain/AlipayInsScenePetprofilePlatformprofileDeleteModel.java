@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayInsScenePetprofilePlatformprofileDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7586735783632669548L;
+	private static final long serialVersionUID = 1789814181835869274L;
 
 	/**
 	 * 创建档案后，生成的档案唯一标记

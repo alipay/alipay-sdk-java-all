@@ -11,11 +11,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.order.anxinitemsellorder.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-28 11:07:03
+ * @since 1.0, 2024-06-06 13:47:03
  */
 public class AlipayOpenMiniOrderAnxinitemsellorderBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1841698531727383338L;
+	private static final long serialVersionUID = 6532389743136157539L;
+
+	/** 
+	 * 是否有下一页，true代表有，false代表没有，如果有下一页，使用page_token翻到下一页
+	 */
+	@ApiField("has_next_page")
+	private Boolean hasNextPage;
 
 	/** 
 	 * 售卖明细列表
@@ -41,6 +47,13 @@ public class AlipayOpenMiniOrderAnxinitemsellorderBatchqueryResponse extends Ali
 	 */
 	@ApiField("total")
 	private Long total;
+
+	public void setHasNextPage(Boolean hasNextPage) {
+		this.hasNextPage = hasNextPage;
+	}
+	public Boolean getHasNextPage( ) {
+		return this.hasNextPage;
+	}
 
 	public void setOrderList(List<AnxinItemSellOrderDetailResponse> orderList) {
 		this.orderList = orderList;

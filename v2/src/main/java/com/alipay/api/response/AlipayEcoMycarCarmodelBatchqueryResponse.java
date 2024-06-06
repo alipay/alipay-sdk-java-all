@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoMycarCarmodelBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4888732143199413256L;
+	private static final long serialVersionUID = 8552525555163514388L;
 
 	/** 
 	 * 以下是对查询结果query_result：查询品牌信息返回的json格式的品牌信息列表中字段属性的详细描述说明；查询车系信息返回的json格式的车系信息列表中字段属性的详细描述说明；查询车型信息返回的json格式的车型信息列表中字段属性的详细描述说明。

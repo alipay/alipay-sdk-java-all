@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * UpdateCustomerRequest
  *
  * @author auto create
- * @since 1.0, 2023-10-19 09:49:53
+ * @since 1.0, 2024-06-03 16:37:51
  */
 public class UpdateCustomerRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 2731492453937751551L;
+	private static final long serialVersionUID = 4276941931114887299L;
 
 	/**
 	 * bd
@@ -100,6 +100,12 @@ public class UpdateCustomerRequest extends AlipayObject {
 	private String industryCategory;
 
 	/**
+	 * 重点客户枚举CODE
+	 */
+	@ApiField("key_customer")
+	private String keyCustomer;
+
+	/**
 	 * 所属地区
 	 */
 	@ApiField("location")
@@ -116,6 +122,18 @@ public class UpdateCustomerRequest extends AlipayObject {
 	 */
 	@ApiField("operator")
 	private String operator;
+
+	/**
+	 * 公有云一级行业枚举CODE
+	 */
+	@ApiField("pub_cloud_first_level_industry")
+	private String pubCloudFirstLevelIndustry;
+
+	/**
+	 * 公有云二级行业枚举CODE
+	 */
+	@ApiField("pub_cloud_second_level_industry")
+	private String pubCloudSecondLevelIndustry;
 
 	/**
 	 * 区域
@@ -239,6 +257,13 @@ public class UpdateCustomerRequest extends AlipayObject {
 		this.industryCategory = industryCategory;
 	}
 
+	public String getKeyCustomer() {
+		return this.keyCustomer;
+	}
+	public void setKeyCustomer(String keyCustomer) {
+		this.keyCustomer = keyCustomer;
+	}
+
 	public String getLocation() {
 		return this.location;
 	}
@@ -258,6 +283,20 @@ public class UpdateCustomerRequest extends AlipayObject {
 	}
 	public void setOperator(String operator) {
 		this.operator = operator;
+	}
+
+	public String getPubCloudFirstLevelIndustry() {
+		return this.pubCloudFirstLevelIndustry;
+	}
+	public void setPubCloudFirstLevelIndustry(String pubCloudFirstLevelIndustry) {
+		this.pubCloudFirstLevelIndustry = pubCloudFirstLevelIndustry;
+	}
+
+	public String getPubCloudSecondLevelIndustry() {
+		return this.pubCloudSecondLevelIndustry;
+	}
+	public void setPubCloudSecondLevelIndustry(String pubCloudSecondLevelIndustry) {
+		this.pubCloudSecondLevelIndustry = pubCloudSecondLevelIndustry;
 	}
 
 	public String getRegion() {

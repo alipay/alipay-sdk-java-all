@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ISV订单信息创建
  *
  * @author auto create
- * @since 1.0, 2024-05-22 11:36:42
+ * @since 1.0, 2024-06-06 14:49:49
  */
 public class AntMerchantExpandEcoOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2666533828327849574L;
+	private static final long serialVersionUID = 5585452424388893296L;
 
 	/**
 	 * 交易平台
@@ -53,6 +53,13 @@ public class AntMerchantExpandEcoOrderCreateModel extends AlipayObject {
 	@ApiListField("qrcode_imgs")
 	@ApiField("string")
 	private List<String> qrcodeImgs;
+
+	/**
+	 * 码值url链接(必须是支付宝的码值),数组
+	 */
+	@ApiListField("qrcode_tokens")
+	@ApiField("string")
+	private List<String> qrcodeTokens;
 
 	/**
 	 * 店铺名称
@@ -100,6 +107,13 @@ public class AntMerchantExpandEcoOrderCreateModel extends AlipayObject {
 	}
 	public void setQrcodeImgs(List<String> qrcodeImgs) {
 		this.qrcodeImgs = qrcodeImgs;
+	}
+
+	public List<String> getQrcodeTokens() {
+		return this.qrcodeTokens;
+	}
+	public void setQrcodeTokens(List<String> qrcodeTokens) {
+		this.qrcodeTokens = qrcodeTokens;
 	}
 
 	public String getShopCode() {

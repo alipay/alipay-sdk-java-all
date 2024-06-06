@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 统一收单确认结算接口
  *
  * @author auto create
- * @since 1.0, 2023-12-29 20:27:20
+ * @since 1.0, 2024-06-05 18:51:09
  */
 public class AlipayTradeSettleConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8888281283868669438L;
+	private static final long serialVersionUID = 6321179765234287536L;
 
 	/**
 	 * 扩展字段信息

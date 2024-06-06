@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人群渠道查询接口
  *
  * @author auto create
- * @since 1.0, 2024-05-22 11:31:20
+ * @since 1.0, 2024-06-05 20:03:54
  */
 public class AlipayMerchantQipanCrowdexportQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2462719155929271626L;
+	private static final long serialVersionUID = 8742931274825331531L;
 
 	/**
 	 * 外部业务号，用于查询同步任务

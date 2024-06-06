@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询消息列表
  *
  * @author auto create
- * @since 1.0, 2024-05-31 16:13:24
+ * @since 1.0, 2024-06-04 17:41:53
  */
 public class AlipayCloudNextbuilderAgentMessageQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5663144914517369228L;
+	private static final long serialVersionUID = 8712671976146497516L;
 
 	/**
 	 * AI创作平台agentId
@@ -24,6 +24,18 @@ public class AlipayCloudNextbuilderAgentMessageQueryModel extends AlipayObject {
 	 */
 	@ApiField("conversation_id")
 	private String conversationId;
+
+	/**
+	 * 顺序（升序or降序）
+	 */
+	@ApiField("order")
+	private String order;
+
+	/**
+	 * 排序的属性
+	 */
+	@ApiField("order_by")
+	private String orderBy;
 
 	/**
 	 * 当前页码，从1开始，默认为1
@@ -49,6 +61,20 @@ public class AlipayCloudNextbuilderAgentMessageQueryModel extends AlipayObject {
 	}
 	public void setConversationId(String conversationId) {
 		this.conversationId = conversationId;
+	}
+
+	public String getOrder() {
+		return this.order;
+	}
+	public void setOrder(String order) {
+		this.order = order;
+	}
+
+	public String getOrderBy() {
+		return this.orderBy;
+	}
+	public void setOrderBy(String orderBy) {
+		this.orderBy = orderBy;
 	}
 
 	public Long getPageNum() {

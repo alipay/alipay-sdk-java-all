@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PromoParam extends AlipayObject {
 
-	private static final long serialVersionUID = 4219985624619675692L;
+	private static final long serialVersionUID = 2549582336952958579L;
 
 	/**
 	 * 存在延迟扣款这一类的场景，用这个时间表明用户发生交易的时间，比如说，在公交地铁场景，用户刷码出站的时间，和商户上送交易的时间是不一样的。

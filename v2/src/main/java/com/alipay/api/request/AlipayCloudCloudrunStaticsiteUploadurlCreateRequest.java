@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudrun.staticsite.uploadurl.create request
  * 
  * @author auto create
- * @since 1.0, 2024-03-14 14:58:21
+ * @since 1.0, 2024-06-05 14:37:02
  */
 public class AlipayCloudCloudrunStaticsiteUploadurlCreateRequest implements AlipayRequest<AlipayCloudCloudrunStaticsiteUploadurlCreateResponse> {
 

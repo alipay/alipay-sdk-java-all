@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝租车门店报价
  *
  * @author auto create
- * @since 1.0, 2023-12-04 22:45:28
+ * @since 1.0, 2024-06-05 17:53:52
  */
 public class RentCarStoreQuotation extends AlipayObject {
 
-	private static final long serialVersionUID = 2291634734191782296L;
+	private static final long serialVersionUID = 5421341866798886616L;
 
 	/**
 	 * 评论数（取用户对商户评论数的总和）

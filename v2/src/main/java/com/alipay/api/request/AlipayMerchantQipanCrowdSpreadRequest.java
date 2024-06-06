@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.qipan.crowd.spread request
  * 
  * @author auto create
- * @since 1.0, 2023-08-11 11:36:40
+ * @since 1.0, 2024-06-05 14:02:03
  */
 public class AlipayMerchantQipanCrowdSpreadRequest implements AlipayRequest<AlipayMerchantQipanCrowdSpreadResponse> {
 

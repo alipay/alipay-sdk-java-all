@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserApplepayMerchantauthtokenGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6618763478617115815L;
+	private static final long serialVersionUID = 4891666272258277241L;
 
 	/**
 	 * 金额

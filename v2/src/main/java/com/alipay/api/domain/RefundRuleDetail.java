@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RefundRuleDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1779272231452773378L;
+	private static final long serialVersionUID = 4243714685811848371L;
 
 	/**
 	 * 固定日期

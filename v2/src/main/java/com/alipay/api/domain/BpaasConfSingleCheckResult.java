@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BpaasConfSingleCheckResult extends AlipayObject {
 
-	private static final long serialVersionUID = 7525843559187341276L;
+	private static final long serialVersionUID = 5137764596315947377L;
 
 	/**
 	 * 单项检测失败的原因

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 自建推广页信息详情列表
  *
  * @author auto create
- * @since 1.0, 2024-03-01 14:58:49
+ * @since 1.0, 2024-06-05 14:54:14
  */
 public class PromotePageDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6364681129348718925L;
+	private static final long serialVersionUID = 3896279844593329988L;
 
 	/**
 	 * 推广页创建时间，格式：yyyy-mm-dd hh:mm:ss

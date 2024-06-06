@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.stock.customer.delivery.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-08 18:16:11
+ * @since 1.0, 2024-06-03 16:02:03
  */
 public class AntfortuneStockCustomerDeliveryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8863364147235965819L;
+	private static final long serialVersionUID = 2585165738264985565L;
 
 	/** 
 	 * 签约协议号（uid在某个机构处的唯一标识）

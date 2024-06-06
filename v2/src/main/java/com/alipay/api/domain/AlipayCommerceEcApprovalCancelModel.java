@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 撤销审批单
  *
  * @author auto create
- * @since 1.0, 2023-05-09 13:52:15
+ * @since 1.0, 2024-06-04 13:46:53
  */
 public class AlipayCommerceEcApprovalCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1344418633314917278L;
+	private static final long serialVersionUID = 6795765717235678183L;
 
 	/**
 	 * 企业id

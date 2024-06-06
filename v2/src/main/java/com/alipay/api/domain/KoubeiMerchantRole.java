@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiMerchantRole extends AlipayObject {
 
-	private static final long serialVersionUID = 7518129824392114948L;
+	private static final long serialVersionUID = 5321674847487555571L;
 
 	/**
 	 * 员工数量

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudrun.staticsite.domaincert.modify request
  * 
  * @author auto create
- * @since 1.0, 2024-03-14 15:02:33
+ * @since 1.0, 2024-06-04 10:42:03
  */
 public class AlipayCloudCloudrunStaticsiteDomaincertModifyRequest implements AlipayRequest<AlipayCloudCloudrunStaticsiteDomaincertModifyResponse> {
 

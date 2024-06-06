@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GroupMessageVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3527254116954629284L;
+	private static final long serialVersionUID = 5425811326934314121L;
 
 	/**
 	 * 图片消息内容模型，当消息类型(msg_type)选 "IMAGE" 的时候，这个内容必须得填充

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 供应商逆向申请明细
  *
  * @author auto create
- * @since 1.0, 2023-12-29 10:46:55
+ * @since 1.0, 2024-06-03 14:37:50
  */
 public class AssetReverseSupplierApplyDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5675279643798716959L;
+	private static final long serialVersionUID = 1514868332585588448L;
 
 	/**
 	 * ["发起未妥投的sn和物流信息1","发起未妥投的sn和物流信息2"]

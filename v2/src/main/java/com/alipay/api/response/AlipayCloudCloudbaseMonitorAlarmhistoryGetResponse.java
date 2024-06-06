@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.monitor.alarmhistory.get response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-08 14:35:06
+ * @since 1.0, 2024-06-05 17:44:28
  */
 public class AlipayCloudCloudbaseMonitorAlarmhistoryGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2599341856684925943L;
+	private static final long serialVersionUID = 7473363466241691565L;
 
 	/** 
 	 * 报警时间

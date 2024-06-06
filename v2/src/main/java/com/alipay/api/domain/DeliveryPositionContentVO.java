@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 投放展位内容及配置、配置包含内容疲劳度、创意疲劳度、埋点信息
  *
  * @author auto create
- * @since 1.0, 2023-02-28 11:26:08
+ * @since 1.0, 2024-06-03 15:57:19
  */
 public class DeliveryPositionContentVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5349122638799156816L;
+	private static final long serialVersionUID = 3361661469458483966L;
 
 	/**
 	 * 展位召回内容的疲劳度相关配置
 	 */
 	@ApiField("content_fatigue")
 	private DeliveryFatigueContent contentFatigue;
+
+	/**
+	 * 经营基建展位内容埋点信息，用于完成埋点信息上报
+	 */
+	@ApiField("content_info_log")
+	private String contentInfoLog;
 
 	/**
 	 * 创意对应的疲劳度配置信息
@@ -48,6 +54,13 @@ public class DeliveryPositionContentVO extends AlipayObject {
 	}
 	public void setContentFatigue(DeliveryFatigueContent contentFatigue) {
 		this.contentFatigue = contentFatigue;
+	}
+
+	public String getContentInfoLog() {
+		return this.contentInfoLog;
+	}
+	public void setContentInfoLog(String contentInfoLog) {
+		this.contentInfoLog = contentInfoLog;
 	}
 
 	public CreativityFatigue getCreativityFatigue() {

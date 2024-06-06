@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 报警触发条件集合
  *
  * @author auto create
- * @since 1.0, 2024-04-11 09:44:18
+ * @since 1.0, 2024-06-05 17:32:26
  */
 public class AlarmTrigger extends AlipayObject {
 
-	private static final long serialVersionUID = 5352366757144916524L;
+	private static final long serialVersionUID = 2598387526949515811L;
 
 	/**
 	 * 数据聚合方式

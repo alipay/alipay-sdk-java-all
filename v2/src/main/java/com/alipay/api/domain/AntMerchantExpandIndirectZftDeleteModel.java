@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 直付通二级商户作废
  *
  * @author auto create
- * @since 1.0, 2024-04-12 16:55:51
+ * @since 1.0, 2024-06-04 11:09:04
  */
 public class AntMerchantExpandIndirectZftDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4741443764917114213L;
+	private static final long serialVersionUID = 8868825152776757221L;
 
 	/**
 	 * 直付通二级商户smid

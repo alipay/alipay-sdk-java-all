@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝租车费用明细
  *
  * @author auto create
- * @since 1.0, 2023-12-04 22:46:22
+ * @since 1.0, 2024-06-05 16:41:25
  */
 public class RentCarFeeItem extends AlipayObject {
 
-	private static final long serialVersionUID = 7892289921746192121L;
+	private static final long serialVersionUID = 7246677136383953493L;
 
 	/**
 	 * 费用金额，单位分

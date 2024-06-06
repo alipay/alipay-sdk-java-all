@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMsaasMediarecogMmportalCvgoodsSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7512894545434627474L;
+	private static final long serialVersionUID = 2256298149537572191L;
 
 	/**
 	 * 上新申请ID

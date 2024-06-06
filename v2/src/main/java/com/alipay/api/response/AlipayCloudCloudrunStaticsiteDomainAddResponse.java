@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudrun.staticsite.domain.add response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-14 15:01:43
+ * @since 1.0, 2024-06-04 10:42:03
  */
 public class AlipayCloudCloudrunStaticsiteDomainAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6619711897167389256L;
+	private static final long serialVersionUID = 4549995639283836164L;
 
 	/** 
 	 * 域名

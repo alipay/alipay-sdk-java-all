@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudrun.staticsite.domaincert.modify response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-14 15:02:33
+ * @since 1.0, 2024-06-04 10:42:03
  */
 public class AlipayCloudCloudrunStaticsiteDomaincertModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1659651992661495228L;
+	private static final long serialVersionUID = 5573982261554915551L;
 
 	/** 
 	 * 证书，PEM格式。
