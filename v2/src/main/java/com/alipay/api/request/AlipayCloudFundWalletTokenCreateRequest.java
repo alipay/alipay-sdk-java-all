@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.fund.wallet.token.create request
  * 
  * @author auto create
- * @since 1.0, 2024-05-27 16:02:04
+ * @since 1.0, 2024-06-11 11:37:03
  */
 public class AlipayCloudFundWalletTokenCreateRequest implements AlipayRequest<AlipayCloudFundWalletTokenCreateResponse> {
 

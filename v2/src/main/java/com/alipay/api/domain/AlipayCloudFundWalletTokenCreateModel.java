@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 平台邀请商家开通钱包账户
  *
  * @author auto create
- * @since 1.0, 2024-05-27 16:00:18
+ * @since 1.0, 2024-06-11 11:35:38
  */
 public class AlipayCloudFundWalletTokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2783767924182892924L;
+	private static final long serialVersionUID = 3363943578817842974L;
 
 	/**
 	 * 格式必须为： https://开头域名链接地址 或者 alipays://开头的支付宝小程序链接。 2. 需要保证传入的 returnUrl 链接能够有效访问

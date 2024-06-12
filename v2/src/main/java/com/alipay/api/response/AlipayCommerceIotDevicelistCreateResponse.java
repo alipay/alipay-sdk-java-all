@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceIotDevicelistCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4654634673235656938L;
+	private static final long serialVersionUID = 1338271652745669753L;
 
 	
 

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票VO对象
  *
  * @author auto create
- * @since 1.0, 2023-05-18 16:10:15
+ * @since 1.0, 2024-06-12 10:22:17
  */
 public class OpenApiOutputInvoiceVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5218268673555434851L;
+	private static final long serialVersionUID = 8513452322893644376L;
 
 	/**
 	 * 发票附件名称

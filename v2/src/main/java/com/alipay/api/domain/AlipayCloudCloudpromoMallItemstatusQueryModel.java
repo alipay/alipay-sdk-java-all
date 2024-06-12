@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询商品售卖信息
  *
  * @author auto create
- * @since 1.0, 2024-06-05 15:17:39
+ * @since 1.0, 2024-06-12 11:42:24
  */
 public class AlipayCloudCloudpromoMallItemstatusQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6791421745367421255L;
+	private static final long serialVersionUID = 4729265185347794193L;
 
 	/**
 	 * 地区码，查询商品在该区域是否可售。

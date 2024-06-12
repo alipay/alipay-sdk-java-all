@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 国家医保局线上业务身份核验授权信息
  *
  * @author auto create
- * @since 1.0, 2023-08-09 20:49:05
+ * @since 1.0, 2024-06-12 11:22:52
  */
 public class MedicalNationalPayAuthInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6832532697983273437L;
+	private static final long serialVersionUID = 3774837471169966283L;
 
 	/**
 	 * 线上支付授权流水号
@@ -38,6 +38,12 @@ public class MedicalNationalPayAuthInfo extends AlipayObject {
 	 */
 	@ApiField("auth_url")
 	private String authUrl;
+
+	/**
+	 * 电子凭证中心线上身份核验返回的默认参保地
+	 */
+	@ApiField("insu_org")
+	private String insuOrg;
 
 	/**
 	 * 就诊用户卡信息中机构内卡号,授权成功时返回
@@ -121,6 +127,13 @@ public class MedicalNationalPayAuthInfo extends AlipayObject {
 	}
 	public void setAuthUrl(String authUrl) {
 		this.authUrl = authUrl;
+	}
+
+	public String getInsuOrg() {
+		return this.insuOrg;
+	}
+	public void setInsuOrg(String insuOrg) {
+		this.insuOrg = insuOrg;
 	}
 
 	public String getMedicalCardId() {

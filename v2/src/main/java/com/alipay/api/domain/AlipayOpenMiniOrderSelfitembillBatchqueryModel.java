@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询小程序本地商品订单对账列表信息
  *
  * @author auto create
- * @since 1.0, 2024-05-16 15:19:50
+ * @since 1.0, 2024-06-06 19:10:26
  */
 public class AlipayOpenMiniOrderSelfitembillBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2788473794596587618L;
+	private static final long serialVersionUID = 7821353542659681793L;
 
 	/**
 	 * 凭证号，商家可入参具体凭证号查询单个凭证的明细

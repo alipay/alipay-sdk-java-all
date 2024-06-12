@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票信息展示模型
  *
  * @author auto create
- * @since 1.0, 2023-05-18 16:11:02
+ * @since 1.0, 2024-06-11 19:03:48
  */
 public class ArInvoiceOpenApiResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 8149371295179176268L;
+	private static final long serialVersionUID = 5495925798874657562L;
 
 	/**
 	 * 发票行信息集合

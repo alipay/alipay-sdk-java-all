@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票行模型
  *
  * @author auto create
- * @since 1.0, 2023-09-13 11:35:21
+ * @since 1.0, 2024-06-12 10:22:17
  */
 public class OpenApiInvoiceLineVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7457678912281391132L;
+	private static final long serialVersionUID = 8674221245148369889L;
 
 	/**
 	 * 含税金额

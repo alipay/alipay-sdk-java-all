@@ -7,20 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 模版实例
  *
  * @author auto create
- * @since 1.0, 2023-02-22 10:15:14
+ * @since 1.0, 2024-06-12 11:09:51
  */
 public class TemplateInstDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2277382516677722541L;
+	private static final long serialVersionUID = 5374448426362152986L;
 
 	/**
-	 * 文件名称
+	 * 实例文件名字
 	 */
 	@ApiField("file_name")
 	private String fileName;
 
 	/**
-	 * html的oss地址
+	 * html格式的实例文件osskey
 	 */
 	@ApiField("html_oss_url")
 	private String htmlOssUrl;
@@ -38,10 +38,16 @@ public class TemplateInstDTO extends AlipayObject {
 	private String instId;
 
 	/**
-	 * word的oss地址
+	 * 模板实例文件oss文件key
 	 */
 	@ApiField("oss_url")
 	private String ossUrl;
+
+	/**
+	 * pdf预览地址
+	 */
+	@ApiField("pdf_preview_url")
+	private String pdfPreviewUrl;
 
 	/**
 	 * word预览地址
@@ -82,6 +88,13 @@ public class TemplateInstDTO extends AlipayObject {
 	}
 	public void setOssUrl(String ossUrl) {
 		this.ossUrl = ossUrl;
+	}
+
+	public String getPdfPreviewUrl() {
+		return this.pdfPreviewUrl;
+	}
+	public void setPdfPreviewUrl(String pdfPreviewUrl) {
+		this.pdfPreviewUrl = pdfPreviewUrl;
 	}
 
 	public String getPreviewUrl() {

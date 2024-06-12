@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayBossFncGfacceptanceDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7128177596458633899L;
+	private static final long serialVersionUID = 3721267499473234718L;
 
 	/**
 	 * 16位。支付宝UID或者2088000000000XX0，倒数2、3位数字用来决策LDC ZoneUid和分库位

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDigitalopUcdpApeselectSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8711578463984749783L;
+	private static final long serialVersionUID = 1285443675334351361L;
 
 	/**
 	 * 商家在蚂蚁推荐引擎创建的项目id，调用前需要找蚂蚁技术获取。

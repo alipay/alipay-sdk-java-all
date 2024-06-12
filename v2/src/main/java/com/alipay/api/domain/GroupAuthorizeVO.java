@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 群授权记录模型
  *
  * @author auto create
- * @since 1.0, 2024-05-15 17:21:47
+ * @since 1.0, 2024-06-11 20:47:51
  */
 public class GroupAuthorizeVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1168985925791391474L;
+	private static final long serialVersionUID = 7515169141666773852L;
 
 	/**
 	 * 授权记录id
@@ -26,10 +26,16 @@ public class GroupAuthorizeVO extends AlipayObject {
 	private String loginId;
 
 	/**
-	 * 用于标记支付宝用户在应用下的唯一标识
+	 * 用于标记支付宝用户在应用下的唯一标识，只有当已授权的数据才会有相关的openid
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/**
+	 * 授权状态，目前只有INIT、AUTHORIZED 两种状态
+	 */
+	@ApiField("status")
+	private String status;
 
 	/**
 	 * 群授权类型，目前只有 GROUP_INSTANCE_ADMIN(群管理员授权)
@@ -68,6 +74,13 @@ public class GroupAuthorizeVO extends AlipayObject {
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public String getStatus() {
+		return this.status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
 	}
 
 	public String getType() {

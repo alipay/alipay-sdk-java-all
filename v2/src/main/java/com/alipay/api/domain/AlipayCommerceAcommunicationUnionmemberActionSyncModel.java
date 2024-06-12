@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 运营商联合会员信息同步
  *
  * @author auto create
- * @since 1.0, 2024-04-24 13:35:09
+ * @since 1.0, 2024-06-12 15:16:24
  */
 public class AlipayCommerceAcommunicationUnionmemberActionSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8666394191638965881L;
+	private static final long serialVersionUID = 4252415878928476296L;
 
 	/**
 	 * 用户的行为类型

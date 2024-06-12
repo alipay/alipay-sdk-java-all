@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ThirdTrackUrlUnit extends AlipayObject {
 
-	private static final long serialVersionUID = 7642146929715168613L;
+	private static final long serialVersionUID = 8491645331569114721L;
 
 	/**
 	 * 业务类型。COMMON：通用；MIAO_ZHEN：秒针；ReachMax：ReachMax

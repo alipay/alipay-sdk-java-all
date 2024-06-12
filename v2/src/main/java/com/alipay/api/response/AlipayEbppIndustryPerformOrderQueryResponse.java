@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.perform.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-21 14:08:10
+ * @since 1.0, 2024-06-07 10:37:03
  */
 public class AlipayEbppIndustryPerformOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8654339994681675655L;
+	private static final long serialVersionUID = 2675913335946597969L;
 
 	/** 
 	 * 分账状态
@@ -117,6 +117,12 @@ public class AlipayEbppIndustryPerformOrderQueryResponse extends AlipayResponse 
 	 */
 	@ApiField("pay_amount")
 	private String payAmount;
+
+	/** 
+	 * 退款状态描述
+	 */
+	@ApiField("refund_status_str")
+	private String refundStatusStr;
 
 	/** 
 	 * 行业业务受理平台分配的业务服务编码
@@ -265,6 +271,13 @@ public class AlipayEbppIndustryPerformOrderQueryResponse extends AlipayResponse 
 	}
 	public String getPayAmount( ) {
 		return this.payAmount;
+	}
+
+	public void setRefundStatusStr(String refundStatusStr) {
+		this.refundStatusStr = refundStatusStr;
+	}
+	public String getRefundStatusStr( ) {
+		return this.refundStatusStr;
 	}
 
 	public void setServiceCode(String serviceCode) {

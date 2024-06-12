@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RecycleFundsInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1653736698343581688L;
+	private static final long serialVersionUID = 4666976649832493339L;
 
 	/**
 	 * 转账类型(prepay-预付款转账, balance-尾款转账, withhold-代扣交易)

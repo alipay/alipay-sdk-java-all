@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票行信息
  *
  * @author auto create
- * @since 1.0, 2023-05-18 16:10:52
+ * @since 1.0, 2024-06-11 19:03:59
  */
 public class InvoiceLineInfoOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 5856985494646735976L;
+	private static final long serialVersionUID = 5451555611551594975L;
 
 	/**
 	 * 免税标记 Y:免税 N：不免税 税率为零时必须指定

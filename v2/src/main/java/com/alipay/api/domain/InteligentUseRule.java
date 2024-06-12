@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class InteligentUseRule extends AlipayObject {
 
-	private static final long serialVersionUID = 7571673197356553386L;
+	private static final long serialVersionUID = 4883884476818365423L;
 
 	/**
 	 * 券的不可用时间

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZXZFileDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3878611493361228953L;
+	private static final long serialVersionUID = 2331857173883982746L;
 
 	/**
 	 * 文件id

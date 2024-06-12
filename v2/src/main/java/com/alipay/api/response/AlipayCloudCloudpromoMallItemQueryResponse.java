@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudpromo.mall.item.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-05 15:22:03
+ * @since 1.0, 2024-06-12 11:47:04
  */
 public class AlipayCloudCloudpromoMallItemQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6895699332899452182L;
+	private static final long serialVersionUID = 3756738211126532796L;
 
 	/** 
 	 * 商品规格属性，可作为商品的筛选维度
@@ -64,7 +64,7 @@ public class AlipayCloudCloudpromoMallItemQueryResponse extends AlipayResponse {
 	private String divisionCode;
 
 	/** 
-	 * 模糊库存，阿里云侧合规要求不透出精确库存，使用模糊库存描述
+	 * 模糊库存，合规要求不透出精确库存，使用模糊库存描述
 	 */
 	@ApiField("fuzzy_quantity")
 	private String fuzzyQuantity;
@@ -102,7 +102,7 @@ public class AlipayCloudCloudpromoMallItemQueryResponse extends AlipayResponse {
 	private List<ProductProperty> productProperties;
 
 	/** 
-	 * 商品管控状态，与阿里云侧商品消息的商品状态映射关系为: NORMAL==Online, DISABLE==Offline
+	 * 商品管控状态
 	 */
 	@ApiField("product_status")
 	private String productStatus;

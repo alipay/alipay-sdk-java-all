@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KoubeiItemModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1722735689243384414L;
+	private static final long serialVersionUID = 3481232149855947225L;
 
 	/**
 	 * 服务商、服务商员工、商户、商户员工等口碑角色操作时必填，对应为《koubei.member.data.oauth.query》中的auth_code，有效期24小时；

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC办理车辆及设备信息变更
  *
  * @author auto create
- * @since 1.0, 2023-08-28 16:29:04
+ * @since 1.0, 2024-06-06 20:37:49
  */
 public class AlipayCommerceTransportEtcInfoModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2374142318522486324L;
+	private static final long serialVersionUID = 4375463458735247641L;
 
 	/**
 	 * 支付宝侧业务协议号，在订单同步接口中会同步给外部机构。与biz_agreement_no参数，两者二选一必传。
@@ -74,6 +74,24 @@ public class AlipayCommerceTransportEtcInfoModifyModel extends AlipayObject {
 	private String viAc;
 
 	/**
+	 * 行驶证上的品牌型号信息
+	 */
+	@ApiField("vi_brand_model")
+	private String viBrandModel;
+
+	/**
+	 * 行驶证上的车辆类型
+	 */
+	@ApiField("vi_car_type")
+	private String viCarType;
+
+	/**
+	 * 行驶证上的发动机号
+	 */
+	@ApiField("vi_engine_no")
+	private String viEngineNo;
+
+	/**
 	 * 总质量,单位kg
 	 */
 	@ApiField("vi_gross_mass")
@@ -92,10 +110,34 @@ public class AlipayCommerceTransportEtcInfoModifyModel extends AlipayObject {
 	private String viLength;
 
 	/**
+	 * 行驶证上的发证时间
+	 */
+	@ApiField("vi_license_issue_date")
+	private String viLicenseIssueDate;
+
+	/**
+	 * 行驶证上的注册时间
+	 */
+	@ApiField("vi_license_register_date")
+	private String viLicenseRegisterDate;
+
+	/**
 	 * 行驶证上的车主姓名
 	 */
 	@ApiField("vi_owner_name")
 	private String viOwnerName;
+
+	/**
+	 * 行驶证上的使用性质
+	 */
+	@ApiField("vi_use_type")
+	private String viUseType;
+
+	/**
+	 * 行驶证上的车架号信息
+	 */
+	@ApiField("vi_vin")
+	private String viVin;
 
 	/**
 	 * 车宽，单位mm
@@ -173,6 +215,27 @@ public class AlipayCommerceTransportEtcInfoModifyModel extends AlipayObject {
 		this.viAc = viAc;
 	}
 
+	public String getViBrandModel() {
+		return this.viBrandModel;
+	}
+	public void setViBrandModel(String viBrandModel) {
+		this.viBrandModel = viBrandModel;
+	}
+
+	public String getViCarType() {
+		return this.viCarType;
+	}
+	public void setViCarType(String viCarType) {
+		this.viCarType = viCarType;
+	}
+
+	public String getViEngineNo() {
+		return this.viEngineNo;
+	}
+	public void setViEngineNo(String viEngineNo) {
+		this.viEngineNo = viEngineNo;
+	}
+
 	public String getViGrossMass() {
 		return this.viGrossMass;
 	}
@@ -194,11 +257,39 @@ public class AlipayCommerceTransportEtcInfoModifyModel extends AlipayObject {
 		this.viLength = viLength;
 	}
 
+	public String getViLicenseIssueDate() {
+		return this.viLicenseIssueDate;
+	}
+	public void setViLicenseIssueDate(String viLicenseIssueDate) {
+		this.viLicenseIssueDate = viLicenseIssueDate;
+	}
+
+	public String getViLicenseRegisterDate() {
+		return this.viLicenseRegisterDate;
+	}
+	public void setViLicenseRegisterDate(String viLicenseRegisterDate) {
+		this.viLicenseRegisterDate = viLicenseRegisterDate;
+	}
+
 	public String getViOwnerName() {
 		return this.viOwnerName;
 	}
 	public void setViOwnerName(String viOwnerName) {
 		this.viOwnerName = viOwnerName;
+	}
+
+	public String getViUseType() {
+		return this.viUseType;
+	}
+	public void setViUseType(String viUseType) {
+		this.viUseType = viUseType;
+	}
+
+	public String getViVin() {
+		return this.viVin;
+	}
+	public void setViVin(String viVin) {
+		this.viVin = viVin;
 	}
 
 	public String getViWidth() {

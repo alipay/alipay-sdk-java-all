@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySocialAntforestWelfareforestTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6485163829456629114L;
+	private static final long serialVersionUID = 8379997436552933687L;
 
 	/** 
 	 * 本次实际浇水能量g数

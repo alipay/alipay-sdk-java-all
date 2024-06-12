@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.etcenterprise.vehicle.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-18 14:47:01
+ * @since 1.0, 2024-06-10 16:37:03
  */
 public class AlipayCommerceTransportEtcenterpriseVehicleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4784686276843831737L;
+	private static final long serialVersionUID = 3518296551498626587L;
 
 	/** 
 	 * 支付宝etc平台扣款协议号
@@ -64,6 +64,12 @@ public class AlipayCommerceTransportEtcenterpriseVehicleQueryResponse extends Al
 	private String deviceStatusDetail;
 
 	/** 
+	 * 设备首次激活时间
+	 */
+	@ApiField("first_actived_time")
+	private Date firstActivedTime;
+
+	/** 
 	 * 支付宝侧订单号
 	 */
 	@ApiField("order_id")
@@ -74,6 +80,12 @@ public class AlipayCommerceTransportEtcenterpriseVehicleQueryResponse extends Al
 	 */
 	@ApiField("order_status")
 	private String orderStatus;
+
+	/** 
+	 * 合约到期时间
+	 */
+	@ApiField("service_exp")
+	private Date serviceExp;
 
 	/** 
 	 * 支付宝车辆id
@@ -137,6 +149,13 @@ public class AlipayCommerceTransportEtcenterpriseVehicleQueryResponse extends Al
 		return this.deviceStatusDetail;
 	}
 
+	public void setFirstActivedTime(Date firstActivedTime) {
+		this.firstActivedTime = firstActivedTime;
+	}
+	public Date getFirstActivedTime( ) {
+		return this.firstActivedTime;
+	}
+
 	public void setOrderId(String orderId) {
 		this.orderId = orderId;
 	}
@@ -149,6 +168,13 @@ public class AlipayCommerceTransportEtcenterpriseVehicleQueryResponse extends Al
 	}
 	public String getOrderStatus( ) {
 		return this.orderStatus;
+	}
+
+	public void setServiceExp(Date serviceExp) {
+		this.serviceExp = serviceExp;
+	}
+	public Date getServiceExp( ) {
+		return this.serviceExp;
 	}
 
 	public void setVehicleId(String vehicleId) {

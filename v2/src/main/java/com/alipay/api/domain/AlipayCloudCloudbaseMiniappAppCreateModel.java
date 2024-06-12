@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建应用
  *
  * @author auto create
- * @since 1.0, 2024-05-29 18:08:43
+ * @since 1.0, 2024-06-11 16:10:18
  */
 public class AlipayCloudCloudbaseMiniappAppCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1463277174999171921L;
+	private static final long serialVersionUID = 5825558884489983587L;
 
 	/**
 	 * 支付宝用户ID

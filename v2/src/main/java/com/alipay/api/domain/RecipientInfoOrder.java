@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 无账单申请开票购方邮寄信息
  *
  * @author auto create
- * @since 1.0, 2023-05-18 16:10:47
+ * @since 1.0, 2024-06-11 19:04:03
  */
 public class RecipientInfoOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 7378546698589885236L;
+	private static final long serialVersionUID = 3352441829824373112L;
 
 	/**
 	 * 收件地址的详细地址，寄出纸质发票时方便快递员找到地府

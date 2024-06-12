@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KoubeiMarketingCampaignMerchantActivityBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3474976379653256577L;
+	private static final long serialVersionUID = 8364635717813616966L;
 
 	/**
 	 * 活动所属场景，只支持单个场景，目前支持枚举类型：点餐场景：DISH、预点餐场景：PRE_DISH、菜单场景：MENU

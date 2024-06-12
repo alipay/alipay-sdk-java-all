@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BrandQuotaQueryCondition extends AlipayObject {
 
-	private static final long serialVersionUID = 6741155173589551388L;
+	private static final long serialVersionUID = 3781669342676191162L;
 
 	/**
 	 * 是否查询可使用商家列表,true时不用填seller信息,false时必填seller信息

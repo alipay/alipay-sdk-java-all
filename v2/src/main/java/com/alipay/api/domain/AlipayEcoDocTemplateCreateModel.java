@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建合同模板（E签宝）
  *
  * @author auto create
- * @since 1.0, 2020-03-28 00:10:12
+ * @since 1.0, 2024-06-12 10:13:23
  */
 public class AlipayEcoDocTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4524671239917977713L;
+	private static final long serialVersionUID = 6584666939776823291L;
 
 	/**
 	 * 模版文件的md5值。示例代码参见 <a href="https://opendocs.alipay.com/mini/00arl2#%E5%88%9B%E5%BB%BA%E5%90%88%E5%90%8C%E6%A8%A1%E6%9D%BF">创建合同模板</a>

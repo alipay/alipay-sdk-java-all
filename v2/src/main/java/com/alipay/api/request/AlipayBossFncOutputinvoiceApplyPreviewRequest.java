@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.fnc.outputinvoice.apply.preview request
  * 
  * @author auto create
- * @since 1.0, 2023-10-12 20:46:45
+ * @since 1.0, 2024-06-12 10:27:09
  */
 public class AlipayBossFncOutputinvoiceApplyPreviewRequest implements AlipayRequest<AlipayBossFncOutputinvoiceApplyPreviewResponse> {
 

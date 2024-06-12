@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * openapi接口返回的sku
  *
  * @author auto create
- * @since 1.0, 2024-06-05 15:17:38
+ * @since 1.0, 2024-06-12 11:42:19
  */
 public class MpcLmSkuVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1164766339556543238L;
+	private static final long serialVersionUID = 7841499356277285821L;
 
 	/**
 	 * 69码
@@ -84,7 +84,7 @@ public class MpcLmSkuVO extends AlipayObject {
 	private List<SkuSpec> skuSpecs;
 
 	/**
-	 * sku 管控状态，与阿里云侧商品消息的商品状态映射关系为: NORMAL==Online, DISABLE==Offline
+	 * sku 管控状态
 	 */
 	@ApiField("sku_status")
 	private String skuStatus;

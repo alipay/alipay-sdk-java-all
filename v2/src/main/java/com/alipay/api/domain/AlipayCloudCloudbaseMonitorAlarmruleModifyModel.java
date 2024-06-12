@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 更新告警规则
  *
  * @author auto create
- * @since 1.0, 2024-06-05 17:33:07
+ * @since 1.0, 2024-06-06 17:02:24
  */
 public class AlipayCloudCloudbaseMonitorAlarmruleModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5834881461913956153L;
+	private static final long serialVersionUID = 6163734518456163734L;
 
 	/**
 	 * 报警级别
@@ -45,6 +45,12 @@ public class AlipayCloudCloudbaseMonitorAlarmruleModifyModel extends AlipayObjec
 	 */
 	@ApiField("name")
 	private String name;
+
+	/**
+	 * 告警是否启用
+	 */
+	@ApiField("open")
+	private Boolean open;
 
 	/**
 	 * 报警生效时间配置
@@ -98,6 +104,13 @@ public class AlipayCloudCloudbaseMonitorAlarmruleModifyModel extends AlipayObjec
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public Boolean getOpen() {
+		return this.open;
+	}
+	public void setOpen(Boolean open) {
+		this.open = open;
 	}
 
 	public AlarmTimeConfig getTimeConfig() {

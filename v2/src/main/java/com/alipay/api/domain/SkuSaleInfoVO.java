@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 渠道商sku商品状态
  *
  * @author auto create
- * @since 1.0, 2024-06-05 15:17:37
+ * @since 1.0, 2024-06-12 11:42:24
  */
 public class SkuSaleInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3121351973453914823L;
+	private static final long serialVersionUID = 2299883111131895454L;
 
 	/**
 	 * sku 是否可售
@@ -26,7 +26,7 @@ public class SkuSaleInfoVO extends AlipayObject {
 	private String divisionCode;
 
 	/**
-	 * 模糊库存，阿里云侧合规要求不透出精确库存，使用模糊库存描述
+	 * 模糊库存，合规要求不透出精确库存，使用模糊库存描述
 	 */
 	@ApiField("fuzzy_quantity")
 	private String fuzzyQuantity;
@@ -50,7 +50,7 @@ public class SkuSaleInfoVO extends AlipayObject {
 	private String productId;
 
 	/**
-	 * 库存，阿里云合规要求不透出精确库存
+	 * 商品库存, 合规要求不透出精确值
 	 */
 	@ApiField("quantity")
 	private String quantity;
@@ -68,7 +68,7 @@ public class SkuSaleInfoVO extends AlipayObject {
 	private String skuId;
 
 	/**
-	 * sku 管控状态，与阿里云侧商品消息的商品状态映射关系为: NORMAL==Online, DISABLE==Offline
+	 * sku 管控状态
 	 */
 	@ApiField("sku_status")
 	private String skuStatus;

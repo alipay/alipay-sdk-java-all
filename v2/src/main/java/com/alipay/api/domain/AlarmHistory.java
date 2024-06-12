@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 报警历史信息
  *
  * @author auto create
- * @since 1.0, 2024-04-11 09:45:34
+ * @since 1.0, 2024-06-06 18:13:51
  */
 public class AlarmHistory extends AlipayObject {
 
-	private static final long serialVersionUID = 6174585923753184194L;
+	private static final long serialVersionUID = 4621919494388157261L;
+
+	/**
+	 * 报警级别
+	 */
+	@ApiField("alarm_level")
+	private String alarmLevel;
 
 	/**
 	 * 报警时间
@@ -66,6 +72,19 @@ public class AlarmHistory extends AlipayObject {
 	 */
 	@ApiField("total")
 	private Long total;
+
+	/**
+	 * 触发条件
+	 */
+	@ApiField("trigger_content")
+	private String triggerContent;
+
+	public String getAlarmLevel() {
+		return this.alarmLevel;
+	}
+	public void setAlarmLevel(String alarmLevel) {
+		this.alarmLevel = alarmLevel;
+	}
 
 	public String getAlarmTime() {
 		return this.alarmTime;
@@ -128,6 +147,13 @@ public class AlarmHistory extends AlipayObject {
 	}
 	public void setTotal(Long total) {
 		this.total = total;
+	}
+
+	public String getTriggerContent() {
+		return this.triggerContent;
+	}
+	public void setTriggerContent(String triggerContent) {
+		this.triggerContent = triggerContent;
 	}
 
 }

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政务监管订单资金划拨流水记录
  *
  * @author auto create
- * @since 1.0, 2023-10-18 16:55:04
+ * @since 1.0, 2024-06-12 10:02:50
  */
 public class SupervisionOrderTransferBillInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8571774672355239479L;
+	private static final long serialVersionUID = 6743871965344211142L;
 
 	/**
 	 * 用户冻资子户号

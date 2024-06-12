@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySocialForestTreeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1862733764859457936L;
+	private static final long serialVersionUID = 2219745999629823573L;
 
 	/** 
 	 * 森林开通状态：

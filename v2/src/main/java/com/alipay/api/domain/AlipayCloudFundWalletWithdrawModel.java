@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 钱包提现
  *
  * @author auto create
- * @since 1.0, 2024-05-27 16:00:52
+ * @since 1.0, 2024-06-11 11:33:36
  */
 public class AlipayCloudFundWalletWithdrawModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1726711811642888951L;
+	private static final long serialVersionUID = 6726838195383538269L;
 
 	/**
 	 * 提现金额

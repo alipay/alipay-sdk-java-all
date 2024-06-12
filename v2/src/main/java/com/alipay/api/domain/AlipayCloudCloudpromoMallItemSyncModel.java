@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 同步渠道商商品
  *
  * @author auto create
- * @since 1.0, 2024-06-05 15:17:40
+ * @since 1.0, 2024-06-12 11:50:25
  */
 public class AlipayCloudCloudpromoMallItemSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7663816217593467198L;
+	private static final long serialVersionUID = 8899759987978667953L;
 
 	/**
 	 * 分销店铺id

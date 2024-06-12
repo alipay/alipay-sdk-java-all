@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 模板组件对象
  *
  * @author auto create
- * @since 1.0, 2023-05-08 14:53:46
+ * @since 1.0, 2024-06-12 11:03:18
  */
 public class ComponentDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3468264632947914217L;
+	private static final long serialVersionUID = 7654548759161764215L;
 
 	/**
 	 * 可修改
@@ -38,7 +38,7 @@ public class ComponentDTO extends AlipayObject {
 	private String id;
 
 	/**
-	 * name
+	 * 【甲方姓名】
 	 */
 	@ApiField("name")
 	private String name;
@@ -50,25 +50,25 @@ public class ComponentDTO extends AlipayObject {
 	private String placeholder;
 
 	/**
-	 * readonly
+	 * 是否只读
 	 */
 	@ApiField("readonly")
 	private String readonly;
 
 	/**
-	 * ref
+	 * 关联的属性
 	 */
 	@ApiField("ref")
 	private String ref;
 
 	/**
-	 * required
+	 * 组件是否必填
 	 */
 	@ApiField("required")
 	private String required;
 
 	/**
-	 * size
+	 * 组件值最大长度
 	 */
 	@ApiField("size")
 	private String size;

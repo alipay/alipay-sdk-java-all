@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayInsSceneTaskflowBatchCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7366958316742745897L;
+	private static final long serialVersionUID = 8656987442854342295L;
 
 	/**
 	 * 数量

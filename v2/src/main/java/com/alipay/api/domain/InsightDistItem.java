@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsightDistItem extends AlipayObject {
 
-	private static final long serialVersionUID = 6693676293555259643L;
+	private static final long serialVersionUID = 5877294961844917897L;
 
 	/**
 	 * 分布区间的名字，比如男女，年龄段等

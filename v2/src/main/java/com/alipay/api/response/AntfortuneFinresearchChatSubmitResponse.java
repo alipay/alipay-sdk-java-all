@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.finresearch.chat.submit response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-24 11:37:03
+ * @since 1.0, 2024-06-07 11:37:03
  */
 public class AntfortuneFinresearchChatSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2824259418875794778L;
+	private static final long serialVersionUID = 1218655459562839677L;
 
 	/** 
 	 * 消息id,可用于后续异步轮询查询消息结果

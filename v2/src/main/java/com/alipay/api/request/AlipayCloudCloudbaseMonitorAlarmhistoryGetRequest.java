@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.monitor.alarmhistory.get request
  * 
  * @author auto create
- * @since 1.0, 2024-06-05 17:44:28
+ * @since 1.0, 2024-06-06 18:22:04
  */
 public class AlipayCloudCloudbaseMonitorAlarmhistoryGetRequest implements AlipayRequest<AlipayCloudCloudbaseMonitorAlarmhistoryGetResponse> {
 

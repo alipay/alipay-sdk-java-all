@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.charger.privatemode.sync request
  * 
  * @author auto create
- * @since 1.0, 2024-06-03 18:27:03
+ * @since 1.0, 2024-06-11 15:52:03
  */
 public class AlipayCommerceTransportChargerPrivatemodeSyncRequest implements AlipayRequest<AlipayCommerceTransportChargerPrivatemodeSyncResponse> {
 

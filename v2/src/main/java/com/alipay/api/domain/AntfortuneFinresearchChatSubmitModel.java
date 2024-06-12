@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支小助提交问题
  *
  * @author auto create
- * @since 1.0, 2024-05-24 11:35:16
+ * @since 1.0, 2024-06-07 11:36:15
  */
 public class AntfortuneFinresearchChatSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6111745695275553912L;
+	private static final long serialVersionUID = 4599111816932432458L;
 
 	/**
 	 * 合作方内部的用户体系用户信息
@@ -34,6 +34,13 @@ public class AntfortuneFinresearchChatSubmitModel extends AlipayObject {
 	 */
 	@ApiField("file_type")
 	private String fileType;
+
+	/**
+	 * RAG 快速解读，PEER 4e模式
+不传默认使用PEER，
+	 */
+	@ApiField("interpret_mode")
+	private String interpretMode;
 
 	/**
 	 * 用户所要提问的问题
@@ -85,6 +92,13 @@ public class AntfortuneFinresearchChatSubmitModel extends AlipayObject {
 	}
 	public void setFileType(String fileType) {
 		this.fileType = fileType;
+	}
+
+	public String getInterpretMode() {
+		return this.interpretMode;
+	}
+	public void setInterpretMode(String interpretMode) {
+		this.interpretMode = interpretMode;
 	}
 
 	public String getQuestion() {

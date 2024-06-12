@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政务监管订单资金划拨账单查询
  *
  * @author auto create
- * @since 1.0, 2024-02-21 10:21:51
+ * @since 1.0, 2024-06-12 10:02:50
  */
 public class AlipayEbppIndustrySupervisionTransferbillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1397717746563122371L;
+	private static final long serialVersionUID = 7567684147956353167L;
 
 	/**
 	 * 用户uid

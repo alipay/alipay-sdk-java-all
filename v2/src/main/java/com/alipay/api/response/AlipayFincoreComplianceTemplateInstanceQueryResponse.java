@@ -1,6 +1,8 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.AnswerDTO;
 import com.alipay.api.domain.TemplateInstDTO;
 
@@ -10,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fincore.compliance.template.instance.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-13 15:02:14
+ * @since 1.0, 2024-06-12 11:12:05
  */
 public class AlipayFincoreComplianceTemplateInstanceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2857932775514423871L;
+	private static final long serialVersionUID = 2346755646977722666L;
 
 	/** 
 	 * 对题结果
@@ -27,6 +29,13 @@ public class AlipayFincoreComplianceTemplateInstanceQueryResponse extends Alipay
 	 */
 	@ApiField("status")
 	private String status;
+
+	/** 
+	 * 返回的实例列表
+	 */
+	@ApiListField("template_instance_list")
+	@ApiField("template_inst_d_t_o")
+	private List<TemplateInstDTO> templateInstanceList;
 
 	/** 
 	 * 模版实例
@@ -46,6 +55,13 @@ public class AlipayFincoreComplianceTemplateInstanceQueryResponse extends Alipay
 	}
 	public String getStatus( ) {
 		return this.status;
+	}
+
+	public void setTemplateInstanceList(List<TemplateInstDTO> templateInstanceList) {
+		this.templateInstanceList = templateInstanceList;
+	}
+	public List<TemplateInstDTO> getTemplateInstanceList( ) {
+		return this.templateInstanceList;
 	}
 
 	public void setTemplateInstances(TemplateInstDTO templateInstances) {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MeterOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4723865428498933732L;
+	private static final long serialVersionUID = 6175419398944799626L;
 
 	/**
 	 * 平均速度，数字字符串，保留1位小数。type=AVG_SPEED_KM_PER_HOUR时必填

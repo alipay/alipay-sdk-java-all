@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC办理申请单创建或修改
  *
  * @author auto create
- * @since 1.0, 2024-06-03 15:34:59
+ * @since 1.0, 2024-06-06 20:37:50
  */
 public class AlipayCommerceTransportEtcApplyorderCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4266615984996272634L;
+	private static final long serialVersionUID = 4752279369118887891L;
 
 	/**
 	 * 支付宝订单号，提供则认为是更新
@@ -124,6 +124,12 @@ LIMEGREEN: 黄绿色。
 	private String viLicenseApc;
 
 	/**
+	 * ETC办理时，可提供行驶证图片以便审核。此处需要提供上传图片后得到图片ID。
+	 */
+	@ApiField("vi_license_back_img")
+	private String viLicenseBackImg;
+
+	/**
 	 * 行驶证信息-品牌车型
 	 */
 	@ApiField("vi_license_brand_model")
@@ -140,6 +146,12 @@ LIMEGREEN: 黄绿色。
 	 */
 	@ApiField("vi_license_engine")
 	private String viLicenseEngine;
+
+	/**
+	 * ETC办理时，可提供行驶证图片以便审核。此处需要提供上传图片后得到图片ID。
+	 */
+	@ApiField("vi_license_front_img")
+	private String viLicenseFrontImg;
 
 	/**
 	 * 行驶证信息-总质量
@@ -308,6 +320,13 @@ LIMEGREEN: 黄绿色。
 		this.viLicenseApc = viLicenseApc;
 	}
 
+	public String getViLicenseBackImg() {
+		return this.viLicenseBackImg;
+	}
+	public void setViLicenseBackImg(String viLicenseBackImg) {
+		this.viLicenseBackImg = viLicenseBackImg;
+	}
+
 	public String getViLicenseBrandModel() {
 		return this.viLicenseBrandModel;
 	}
@@ -327,6 +346,13 @@ LIMEGREEN: 黄绿色。
 	}
 	public void setViLicenseEngine(String viLicenseEngine) {
 		this.viLicenseEngine = viLicenseEngine;
+	}
+
+	public String getViLicenseFrontImg() {
+		return this.viLicenseFrontImg;
+	}
+	public void setViLicenseFrontImg(String viLicenseFrontImg) {
+		this.viLicenseFrontImg = viLicenseFrontImg;
 	}
 
 	public String getViLicenseGrossMass() {

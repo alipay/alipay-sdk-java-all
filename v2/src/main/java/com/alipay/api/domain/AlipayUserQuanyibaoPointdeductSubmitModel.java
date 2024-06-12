@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayUserQuanyibaoPointdeductSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4124891949266827423L;
+	private static final long serialVersionUID = 6676414262615763129L;
 
 	/**
 	 * 权益宝业务号，对一笔兑换业务的唯一标识，可以用来做幂等

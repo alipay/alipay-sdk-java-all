@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 钱包动账明细
  *
  * @author auto create
- * @since 1.0, 2024-05-28 17:27:50
+ * @since 1.0, 2024-06-11 11:45:53
  */
 public class AlipayCloudFundWalletOperationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2833832919629641782L;
+	private static final long serialVersionUID = 6815615993887132425L;
 
 	/**
 	 * 钱包场景码

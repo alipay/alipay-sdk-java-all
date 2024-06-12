@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 退换票申请出参
  *
  * @author auto create
- * @since 1.0, 2023-05-18 16:10:56
+ * @since 1.0, 2024-06-11 19:03:55
  */
 public class ArInvoiceReturnOrderOpenApiResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 7749655559911421426L;
+	private static final long serialVersionUID = 3469537953547777356L;
 
 	/**
 	 * 退换票详情信息

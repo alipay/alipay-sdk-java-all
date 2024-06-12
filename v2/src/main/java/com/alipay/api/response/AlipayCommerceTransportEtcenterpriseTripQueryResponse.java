@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.etcenterprise.trip.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:29:16
+ * @since 1.0, 2024-06-10 16:57:03
  */
 public class AlipayCommerceTransportEtcenterpriseTripQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2278916926732785448L;
+	private static final long serialVersionUID = 6719124958332377269L;
 
 	/** 
 	 * SUCCESS：订单申请成功； FAIL:申请失败
@@ -28,6 +28,36 @@ public class AlipayCommerceTransportEtcenterpriseTripQueryResponse extends Alipa
 	 */
 	@ApiField("biz_msg")
 	private String bizMsg;
+
+	/** 
+	 * 是否还有下一页
+	 */
+	@ApiField("has_next")
+	private Boolean hasNext;
+
+	/** 
+	 * 当前页码
+	 */
+	@ApiField("page_num")
+	private Long pageNum;
+
+	/** 
+	 * 每页条数
+	 */
+	@ApiField("page_size")
+	private Long pageSize;
+
+	/** 
+	 * 总页数
+	 */
+	@ApiField("total_page")
+	private Long totalPage;
+
+	/** 
+	 * 总记录数
+	 */
+	@ApiField("total_size")
+	private Long totalSize;
 
 	/** 
 	 * 行程单据列表
@@ -48,6 +78,41 @@ public class AlipayCommerceTransportEtcenterpriseTripQueryResponse extends Alipa
 	}
 	public String getBizMsg( ) {
 		return this.bizMsg;
+	}
+
+	public void setHasNext(Boolean hasNext) {
+		this.hasNext = hasNext;
+	}
+	public Boolean getHasNext( ) {
+		return this.hasNext;
+	}
+
+	public void setPageNum(Long pageNum) {
+		this.pageNum = pageNum;
+	}
+	public Long getPageNum( ) {
+		return this.pageNum;
+	}
+
+	public void setPageSize(Long pageSize) {
+		this.pageSize = pageSize;
+	}
+	public Long getPageSize( ) {
+		return this.pageSize;
+	}
+
+	public void setTotalPage(Long totalPage) {
+		this.totalPage = totalPage;
+	}
+	public Long getTotalPage( ) {
+		return this.totalPage;
+	}
+
+	public void setTotalSize(Long totalSize) {
+		this.totalSize = totalSize;
+	}
+	public Long getTotalSize( ) {
+		return this.totalSize;
 	}
 
 	public void setTripList(List<EtcTripInfo> tripList) {

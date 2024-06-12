@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.supervision.transferbill.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-02-21 10:21:59
+ * @since 1.0, 2024-06-12 10:07:04
  */
 public class AlipayEbppIndustrySupervisionTransferbillQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3882496468274257891L;
+	private static final long serialVersionUID = 1775549532543579814L;
 
 	/** 
 	 * 资金划拨账单列表

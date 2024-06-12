@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenAgentSignstatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6876838216186197776L;
+	private static final long serialVersionUID = 5137596672151332726L;
 
 	/** 
 	 * 商户产品签约状态结果对象数组，返回本次查询的产品的签约状态

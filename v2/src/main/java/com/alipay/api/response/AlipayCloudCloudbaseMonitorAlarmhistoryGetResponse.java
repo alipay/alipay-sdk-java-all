@@ -8,11 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.monitor.alarmhistory.get response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-05 17:44:28
+ * @since 1.0, 2024-06-06 18:22:04
  */
 public class AlipayCloudCloudbaseMonitorAlarmhistoryGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7473363466241691565L;
+	private static final long serialVersionUID = 7834171724344373271L;
+
+	/** 
+	 * 报警级别
+	 */
+	@ApiField("alarm_level")
+	private String alarmLevel;
 
 	/** 
 	 * 报警时间
@@ -49,6 +55,19 @@ public class AlipayCloudCloudbaseMonitorAlarmhistoryGetResponse extends AlipayRe
 	 */
 	@ApiField("rule_name")
 	private String ruleName;
+
+	/** 
+	 * 触发条件
+	 */
+	@ApiField("trigger_content")
+	private String triggerContent;
+
+	public void setAlarmLevel(String alarmLevel) {
+		this.alarmLevel = alarmLevel;
+	}
+	public String getAlarmLevel( ) {
+		return this.alarmLevel;
+	}
 
 	public void setAlarmTime(String alarmTime) {
 		this.alarmTime = alarmTime;
@@ -90,6 +109,13 @@ public class AlipayCloudCloudbaseMonitorAlarmhistoryGetResponse extends AlipayRe
 	}
 	public String getRuleName( ) {
 		return this.ruleName;
+	}
+
+	public void setTriggerContent(String triggerContent) {
+		this.triggerContent = triggerContent;
+	}
+	public String getTriggerContent( ) {
+		return this.triggerContent;
 	}
 
 }

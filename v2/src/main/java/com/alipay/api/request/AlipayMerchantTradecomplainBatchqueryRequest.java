@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.tradecomplain.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:34:31
+ * @since 1.0, 2024-06-08 10:48:20
  */
 public class AlipayMerchantTradecomplainBatchqueryRequest implements AlipayRequest<AlipayMerchantTradecomplainBatchqueryResponse> {
 

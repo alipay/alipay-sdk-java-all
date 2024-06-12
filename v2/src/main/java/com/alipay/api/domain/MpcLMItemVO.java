@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 多端商城商品信息
  *
  * @author auto create
- * @since 1.0, 2024-06-05 15:17:39
+ * @since 1.0, 2024-06-12 11:42:19
  */
 public class MpcLMItemVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4656576612879462563L;
+	private static final long serialVersionUID = 6869227227591465772L;
 
 	/**
 	 * 商品规格属性，可作为商品的筛选维度
@@ -60,7 +60,7 @@ public class MpcLMItemVO extends AlipayObject {
 	private String divisionCode;
 
 	/**
-	 * 模糊库存，阿里云侧合规要求不透出精确库存，使用模糊库存描述
+	 * 模糊库存，合规要求不透出精确库存，使用模糊库存描述
 	 */
 	@ApiField("fuzzy_quantity")
 	private String fuzzyQuantity;
@@ -98,7 +98,7 @@ public class MpcLMItemVO extends AlipayObject {
 	private List<ProductProperty> productProperties;
 
 	/**
-	 * 商品管控状态，与阿里云侧商品消息的商品状态映射关系为: NORMAL==Online, DISABLE==Offline
+	 * 商品管控状态
 	 */
 	@ApiField("product_status")
 	private String productStatus;

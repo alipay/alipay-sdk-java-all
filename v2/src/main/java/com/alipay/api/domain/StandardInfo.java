@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 使用规则
  *
  * @author auto create
- * @since 1.0, 2024-05-11 11:52:02
+ * @since 1.0, 2024-06-07 16:49:17
  */
 public class StandardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3689387718431748576L;
+	private static final long serialVersionUID = 8425696466427189112L;
 
 	/**
 	 * 当前规则可使用的其他资产来源信息
@@ -56,6 +56,12 @@ DEFAULT（默认模式）
 	 */
 	@ApiField("payment_policy")
 	private String paymentPolicy;
+
+	/**
+	 * 个人收款码转账是否支持因公付，默认为0。可选值：0（不支持）、1（支持）
+	 */
+	@ApiField("personal_qrcode_mode")
+	private Long personalQrcodeMode;
 
 	/**
 	 * 使用规则条件列表
@@ -122,6 +128,13 @@ DEFAULT（默认模式）
 	}
 	public void setPaymentPolicy(String paymentPolicy) {
 		this.paymentPolicy = paymentPolicy;
+	}
+
+	public Long getPersonalQrcodeMode() {
+		return this.personalQrcodeMode;
+	}
+	public void setPersonalQrcodeMode(Long personalQrcodeMode) {
+		this.personalQrcodeMode = personalQrcodeMode;
 	}
 
 	public List<StandardConditionInfo> getStandardConditionInfoList() {

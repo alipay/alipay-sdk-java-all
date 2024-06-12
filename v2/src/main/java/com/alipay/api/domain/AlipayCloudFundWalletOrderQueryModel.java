@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景钱包订单信息查询
  *
  * @author auto create
- * @since 1.0, 2024-05-28 17:28:57
+ * @since 1.0, 2024-06-11 11:33:10
  */
 public class AlipayCloudFundWalletOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2284659999759531911L;
+	private static final long serialVersionUID = 4548929783385252218L;
 
 	/**
 	 * 单据号，支持充值、充退和提现的单号

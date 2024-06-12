@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class OpenCrowdOperationTag extends AlipayObject {
 
-	private static final long serialVersionUID = 6297613774377845947L;
+	private static final long serialVersionUID = 1869294833167381226L;
 
 	/**
 	 * 标签所有必须的圈选项列表

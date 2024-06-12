@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMedicalMedicineItemCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1261626742542219265L;
+	private static final long serialVersionUID = 1476872461277755266L;
 
 	/** 
 	 * 支付宝平台侧商品ID，是支付宝平台侧商品的唯一标识
