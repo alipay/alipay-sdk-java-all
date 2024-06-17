@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class Voucher extends AlipayObject {
 
-	private static final long serialVersionUID = 1621293232599682895L;
+	private static final long serialVersionUID = 8679722433868456397L;
 
 	/**
 	 * 是否允许拆分，券在核销的时候是否允许券的面额拆分使用。(仅限渠道类型为ISV企业福利：ISV_ENTERPRISE_BENIFIT的场景使用)

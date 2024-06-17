@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class WithholdAgreementInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1868672175941267457L;
+	private static final long serialVersionUID = 8423561514117588657L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号。（只有签约成功时才会返回）

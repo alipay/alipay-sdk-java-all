@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付信息模型
  *
  * @author auto create
- * @since 1.0, 2024-02-26 17:12:48
+ * @since 1.0, 2024-06-17 10:50:50
  */
 public class PayInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4345449427362975249L;
+	private static final long serialVersionUID = 8844971596414435156L;
 
 	/**
 	 * 禁用渠道,用户不可用指定渠道支付，多个渠道以逗号分隔，与enable_pay_channels互斥  <a href="https://opendocs.alipay.com/open/common/wifww7">渠道列表</a>
@@ -25,6 +25,18 @@ public class PayInfoDTO extends AlipayObject {
 	@ApiField("enable_pay_channels")
 	private String enablePayChannels;
 
+	/**
+	 * 订单支付渠道，空值默认为支付宝支付
+	 */
+	@ApiField("payment_biz_type")
+	private String paymentBizType;
+
+	/**
+	 * 支付方式，到付等特殊场景下传入
+	 */
+	@ApiField("payment_method")
+	private String paymentMethod;
+
 	public String getDisablePayChannels() {
 		return this.disablePayChannels;
 	}
@@ -37,6 +49,20 @@ public class PayInfoDTO extends AlipayObject {
 	}
 	public void setEnablePayChannels(String enablePayChannels) {
 		this.enablePayChannels = enablePayChannels;
+	}
+
+	public String getPaymentBizType() {
+		return this.paymentBizType;
+	}
+	public void setPaymentBizType(String paymentBizType) {
+		this.paymentBizType = paymentBizType;
+	}
+
+	public String getPaymentMethod() {
+		return this.paymentMethod;
+	}
+	public void setPaymentMethod(String paymentMethod) {
+		this.paymentMethod = paymentMethod;
 	}
 
 }

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFinancialnetAuthEcsignSignorderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2742375738236891998L;
+	private static final long serialVersionUID = 8862712939661946326L;
 
 	/**
 	 * 签约请求代理模式，说明被代理的对象，其中proxiedPid是被代理的商户的PID，非UID

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoCityserviceOpeneventAppModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8443885745744555498L;
+	private static final long serialVersionUID = 1318332467842979887L;
 
 	/**
 	 * 光华平台服务入驻接口返回的唯一编码

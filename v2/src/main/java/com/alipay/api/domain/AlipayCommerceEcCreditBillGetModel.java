@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceEcCreditBillGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2544919749462521181L;
+	private static final long serialVersionUID = 5637215491841483474L;
 
 	/**
 	 * 通过企业码1.0接口签约的共同账户，和agreement_no搭配使用。

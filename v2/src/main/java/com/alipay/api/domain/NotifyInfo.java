@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NotifyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6541267286639255392L;
+	private static final long serialVersionUID = 2487467726785127877L;
 
 	/**
 	 * biz_id+是+返回的业务主体+根据notify_id或者trade_no得到

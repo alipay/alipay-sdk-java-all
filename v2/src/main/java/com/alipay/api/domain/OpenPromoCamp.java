@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenPromoCamp extends AlipayObject {
 
-	private static final long serialVersionUID = 8166152657562458911L;
+	private static final long serialVersionUID = 8199728635536532374L;
 
 	/**
 	 * 简短活动名，默认和活动名称相同

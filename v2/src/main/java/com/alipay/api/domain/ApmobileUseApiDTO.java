@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ApmobileUseApiDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5684965551489934332L;
+	private static final long serialVersionUID = 2447346998933996187L;
 
 	/**
 	 * 具体api的调用次数

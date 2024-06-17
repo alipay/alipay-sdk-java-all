@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RaasMeterSyncData extends AlipayObject {
 
-	private static final long serialVersionUID = 5823845186862749199L;
+	private static final long serialVersionUID = 2698543117676943716L;
 
 	/**
 	 * 聚合的项

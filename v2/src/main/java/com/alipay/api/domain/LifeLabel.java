@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class LifeLabel extends AlipayObject {
 
-	private static final long serialVersionUID = 7337695178441337483L;
+	private static final long serialVersionUID = 2783915289148583185L;
 
 	/**
 	 * 该标签支持的业务列表，menu表示个性化菜单，extension表示个性化扩展区，message表示消息触达

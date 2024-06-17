@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class SolutionOpenVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8535494346634856962L;
+	private static final long serialVersionUID = 4619758794633858282L;
 
 	/**
 	 * ecsign解决方案属性信息开放试图对象，主要用于承载服务载体等信息，不能为空。

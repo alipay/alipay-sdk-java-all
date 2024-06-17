@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HbMeiWeiItemSync extends AlipayObject {
 
-	private static final long serialVersionUID = 3234443152613533617L;
+	private static final long serialVersionUID = 5384587999382295342L;
 
 	/**
 	 * 宝贝票面价值,单位为分

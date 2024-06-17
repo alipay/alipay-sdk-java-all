@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceSportsOnlinegameUsergamedataSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2684811251146782847L;
+	private static final long serialVersionUID = 2886489469646723137L;
 
 	/** 
 	 * 用户参赛数据信息

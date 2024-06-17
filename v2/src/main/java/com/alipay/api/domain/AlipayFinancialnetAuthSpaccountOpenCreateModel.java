@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 机构专户开户
  *
  * @author auto create
- * @since 1.0, 2024-06-03 10:07:22
+ * @since 1.0, 2024-06-17 11:02:34
  */
 public class AlipayFinancialnetAuthSpaccountOpenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8373839384279974955L;
+	private static final long serialVersionUID = 5278985826885547762L;
 
 	/**
 	 * 发卡行机构名称id

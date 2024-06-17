@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CloudResumeCertificateInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2859487196416681216L;
+	private static final long serialVersionUID = 5814827828438472826L;
 
 	/**
 	 * 证书等级

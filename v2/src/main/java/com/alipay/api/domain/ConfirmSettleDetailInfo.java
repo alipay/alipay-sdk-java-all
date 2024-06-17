@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ConfirmSettleDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7773912519492276649L;
+	private static final long serialVersionUID = 8266165428581631146L;
 
 	/**
 	 * 仅当trans_in_type为userId时，返回脱敏的支付宝登录号。

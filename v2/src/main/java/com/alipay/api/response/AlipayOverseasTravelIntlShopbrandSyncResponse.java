@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOverseasTravelIntlShopbrandSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3224193283546667759L;
+	private static final long serialVersionUID = 7679339751879239957L;
 
 	/** 
 	 * 结果

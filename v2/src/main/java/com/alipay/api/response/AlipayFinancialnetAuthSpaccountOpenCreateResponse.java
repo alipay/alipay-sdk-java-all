@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.financialnet.auth.spaccount.open.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-03 10:12:03
+ * @since 1.0, 2024-06-17 11:02:34
  */
 public class AlipayFinancialnetAuthSpaccountOpenCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4756591541723158814L;
+	private static final long serialVersionUID = 5732976765595432247L;
 
 	/** 
 	 * 开户户号

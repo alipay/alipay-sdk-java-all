@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 开通下单并支付
  *
  * @author auto create
- * @since 1.0, 2024-05-20 10:24:50
+ * @since 1.0, 2024-06-17 11:11:15
  */
 public class AlipayCloudCloudbaseResourcepackageOpenCreateandpayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1386195229326355624L;
+	private static final long serialVersionUID = 8338741694789855514L;
 
 	/**
 	 * 支付宝用户ID

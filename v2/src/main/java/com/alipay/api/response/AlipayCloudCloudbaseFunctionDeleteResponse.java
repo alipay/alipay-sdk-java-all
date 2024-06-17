@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudCloudbaseFunctionDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1725797449957995931L;
+	private static final long serialVersionUID = 5712698768193718862L;
 
 	/** 
 	 * 删除结果

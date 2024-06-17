@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 价格计划
  *
  * @author auto create
- * @since 1.0, 2024-05-30 21:26:18
+ * @since 1.0, 2024-06-17 11:38:49
  */
 public class RatePlan extends AlipayObject {
 
-	private static final long serialVersionUID = 7239722459831672357L;
+	private static final long serialVersionUID = 4683794295238993126L;
 
 	/**
 	 * 对应的预订规则编号列表
@@ -95,6 +95,13 @@ PREPAY-预付
 	 */
 	@ApiField("rate_plan_id")
 	private String ratePlanId;
+
+	/**
+	 * 价格计划标签列表
+	 */
+	@ApiListField("rate_plan_labels")
+	@ApiField("rate_plan_label")
+	private List<RatePlanLabel> ratePlanLabels;
 
 	/**
 	 * 产品名称
@@ -210,6 +217,13 @@ false:失效
 	}
 	public void setRatePlanId(String ratePlanId) {
 		this.ratePlanId = ratePlanId;
+	}
+
+	public List<RatePlanLabel> getRatePlanLabels() {
+		return this.ratePlanLabels;
+	}
+	public void setRatePlanLabels(List<RatePlanLabel> ratePlanLabels) {
+		this.ratePlanLabels = ratePlanLabels;
 	}
 
 	public String getRatePlanName() {

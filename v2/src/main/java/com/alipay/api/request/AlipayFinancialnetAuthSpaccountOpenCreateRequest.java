@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.financialnet.auth.spaccount.open.create request
  * 
  * @author auto create
- * @since 1.0, 2024-06-03 10:12:03
+ * @since 1.0, 2024-06-17 11:02:34
  */
 public class AlipayFinancialnetAuthSpaccountOpenCreateRequest implements AlipayRequest<AlipayFinancialnetAuthSpaccountOpenCreateResponse> {
 

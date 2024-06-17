@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenPublicTopicCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4183541387396236181L;
+	private static final long serialVersionUID = 7378925464795147411L;
 
 	/**
 	 * 营销位图片url, 尺寸为996*450，最大不超过5M，支持格式:.jpg、.png ，请先调用<a href="https://docs.open.alipay.com/api_3/alipay.offline.material.image.upload"> 图片上传接口</a>获得图片url。营销位需要展示头图时，必须填写该参数。

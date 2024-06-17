@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEcoMycarCommercializationCertificateUnfreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4341184933519373537L;
+	private static final long serialVersionUID = 3832919426662434566L;
 
 	/**
 	 * 履约门店ID，和锁定的履约门店ID保持一致
