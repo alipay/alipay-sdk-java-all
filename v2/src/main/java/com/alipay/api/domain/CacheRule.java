@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CacheRule extends AlipayObject {
 
-	private static final long serialVersionUID = 5155311562635341822L;
+	private static final long serialVersionUID = 5195455317855268681L;
 
 	/**
 	 * 缓存键

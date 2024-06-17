@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量查询圈选商品
  *
  * @author auto create
- * @since 1.0, 2024-06-12 11:42:19
+ * @since 1.0, 2024-06-14 11:09:16
  */
 public class AlipayCloudCloudpromoMallItemBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6153318185897674152L;
+	private static final long serialVersionUID = 1394839126978635889L;
 
 	/**
 	 * 类目id，按照类目维度圈选商品

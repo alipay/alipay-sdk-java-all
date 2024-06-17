@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoEntertainmentOrderUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7117156244762866611L;
+	private static final long serialVersionUID = 6281626384913386831L;
 
 	/**
 	 * 数娱充值ISV订单回流模型

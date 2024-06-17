@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayTradeServiceRecommendbankQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7657125629978443722L;
+	private static final long serialVersionUID = 2628449544729976763L;
 
 	/** 
 	 * 推荐银行列表,包含iosSchama,安卓Schama等信息

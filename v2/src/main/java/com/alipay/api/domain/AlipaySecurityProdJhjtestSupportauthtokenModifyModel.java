@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 测试authtoken
  *
  * @author auto create
- * @since 1.0, 2024-05-23 11:25:08
+ * @since 1.0, 2024-06-13 17:40:56
  */
 public class AlipaySecurityProdJhjtestSupportauthtokenModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3262852521363771285L;
+	private static final long serialVersionUID = 4682762748833791597L;
 
 	/**
 	 * 2313

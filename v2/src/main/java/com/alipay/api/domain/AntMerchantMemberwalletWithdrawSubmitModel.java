@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntMerchantMemberwalletWithdrawSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4812936834887547695L;
+	private static final long serialVersionUID = 3158259394344684891L;
 
 	/**
 	 * 会员钱包产品ID

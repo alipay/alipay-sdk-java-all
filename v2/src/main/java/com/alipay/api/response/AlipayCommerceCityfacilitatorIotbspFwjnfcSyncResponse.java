@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceCityfacilitatorIotbspFwjnfcSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2743892152451118634L;
+	private static final long serialVersionUID = 3865853266626822795L;
 
 	/** 
 	 * NFC烧录url

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗大模型服务对外接口-会话创建或查询
  *
  * @author auto create
- * @since 1.0, 2024-04-12 11:20:50
+ * @since 1.0, 2024-06-14 00:26:16
  */
 public class AlipayCommerceMedicalLargermodelSessionQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6398659294567969577L;
+	private static final long serialVersionUID = 4514683461778842715L;
 
 	/**
 	 * 区分请求来源
@@ -48,6 +48,12 @@ public class AlipayCommerceMedicalLargermodelSessionQueryModel extends AlipayObj
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/**
+	 * 用于区分同一个app下的机构
+	 */
+	@ApiField("org_id")
+	private String orgId;
 
 	/**
 	 * 用户的userId。
@@ -139,6 +145,13 @@ DEPARTGUIDE
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public String getOrgId() {
+		return this.orgId;
+	}
+	public void setOrgId(String orgId) {
+		this.orgId = orgId;
 	}
 
 	public String getOutUserId() {

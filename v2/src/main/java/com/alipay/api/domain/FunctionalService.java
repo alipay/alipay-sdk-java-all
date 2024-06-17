@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 功能服务
  *
  * @author auto create
- * @since 1.0, 2022-11-17 20:03:46
+ * @since 1.0, 2024-06-14 16:37:35
  */
 public class FunctionalService extends AlipayObject {
 
-	private static final long serialVersionUID = 3841134653749125251L;
+	private static final long serialVersionUID = 8298984155838986233L;
 
 	/**
 	 * 功能内容

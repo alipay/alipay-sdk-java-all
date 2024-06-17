@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业务扩展参数
  *
  * @author auto create
- * @since 1.0, 2024-05-31 18:07:31
+ * @since 1.0, 2024-06-14 16:47:52
  */
 public class ExtendParams extends AlipayObject {
 
-	private static final long serialVersionUID = 5363561467522138836L;
+	private static final long serialVersionUID = 5586624336271927782L;
 
 	/**
 	 * 卡类型
 	 */
 	@ApiField("card_type")
 	private String cardType;
+
+	/**
+	 * 信用参数，可选，如有需要请与芝麻约定后传入，信用服务说明见
+	 */
+	@ApiField("credit_ext_info")
+	private String creditExtInfo;
 
 	/**
 	 * 使用花呗分期要进行的分期数
@@ -73,6 +79,13 @@ public class ExtendParams extends AlipayObject {
 	}
 	public void setCardType(String cardType) {
 		this.cardType = cardType;
+	}
+
+	public String getCreditExtInfo() {
+		return this.creditExtInfo;
+	}
+	public void setCreditExtInfo(String creditExtInfo) {
+		this.creditExtInfo = creditExtInfo;
 	}
 
 	public String getHbFqNum() {

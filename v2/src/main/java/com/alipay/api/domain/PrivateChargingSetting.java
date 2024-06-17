@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 充电私桩设置
  *
  * @author auto create
- * @since 1.0, 2024-06-03 14:14:32
+ * @since 1.0, 2024-06-13 10:11:50
  */
 public class PrivateChargingSetting extends AlipayObject {
 
-	private static final long serialVersionUID = 8851527563365293252L;
+	private static final long serialVersionUID = 2532752622958355935L;
 
 	/**
 	 * 循环模式
@@ -24,7 +24,7 @@ public class PrivateChargingSetting extends AlipayObject {
 
 	/**
 	 * 预约启动时间
-mm:ss   表示 具体时间
+HH:mm   表示 具体时间
 -            表示  充满截止
 	 */
 	@ApiField("end_time")
@@ -47,7 +47,7 @@ mm:ss   表示 具体时间
 
 	/**
 	 * 预约启动时间
-mm:ss   表示 具体时间
+HH:mm   表示 具体时间
 -           表示  立即启动
 	 */
 	@ApiField("start_time")

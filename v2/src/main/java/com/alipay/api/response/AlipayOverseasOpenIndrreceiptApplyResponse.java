@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOverseasOpenIndrreceiptApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8866318231499452995L;
+	private static final long serialVersionUID = 6547981948929931899L;
 
 	/** 
 	 * 申请结果列表

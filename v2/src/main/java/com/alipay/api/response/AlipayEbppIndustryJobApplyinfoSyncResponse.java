@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.job.applyinfo.sync response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-07 16:37:14
+ * @since 1.0, 2024-06-14 11:17:03
  */
 public class AlipayEbppIndustryJobApplyinfoSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5634155515134175136L;
+	private static final long serialVersionUID = 2313842516117331231L;
 
 	/** 
 	 * 支付宝就业应聘id

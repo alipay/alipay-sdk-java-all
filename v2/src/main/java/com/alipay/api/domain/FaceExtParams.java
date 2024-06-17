@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FaceExtParams extends AlipayObject {
 
-	private static final long serialVersionUID = 3511577337355328858L;
+	private static final long serialVersionUID = 7383793422883953824L;
 
 	/**
 	 * 业务类型：7，基于1:N人脸搜索的刷脸支付场景；8，基于姓名和身份证号的刷脸支付场景。

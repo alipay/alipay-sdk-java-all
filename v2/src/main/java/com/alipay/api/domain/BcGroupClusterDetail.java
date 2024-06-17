@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class BcGroupClusterDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5448916946475633678L;
+	private static final long serialVersionUID = 2497897576783554438L;
 
 	/**
 	 * 一个分组下会管理多个普通支付宝群，此参数表示如果分组下一个群人数已满，是否自动创建新群

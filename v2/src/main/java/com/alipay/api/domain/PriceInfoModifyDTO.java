@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PriceInfoModifyDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4328151531958115718L;
+	private static final long serialVersionUID = 4235193677684969217L;
 
 	/**
 	 * 订单金额，单位：元

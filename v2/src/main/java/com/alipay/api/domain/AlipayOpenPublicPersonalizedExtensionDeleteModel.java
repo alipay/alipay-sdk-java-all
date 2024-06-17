@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenPublicPersonalizedExtensionDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5384936135715799931L;
+	private static final long serialVersionUID = 6369836224585299494L;
 
 	/**
 	 * 一套扩展区的key，删除默认扩展区时传入default ，查询扩展区列表可以获得每套扩展区的key

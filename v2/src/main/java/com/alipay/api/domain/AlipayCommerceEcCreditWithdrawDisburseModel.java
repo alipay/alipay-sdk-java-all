@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceEcCreditWithdrawDisburseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3481234516476317258L;
+	private static final long serialVersionUID = 5539159838342571886L;
 
 	/**
 	 * 关联的取款申请明细列表

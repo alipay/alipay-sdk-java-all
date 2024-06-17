@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ApplyCodeRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 3667325257523666493L;
+	private static final long serialVersionUID = 5276556378483564127L;
 
 	/**
 	 * 通码的业务身份，能唯一定位通码业务，包含码上的数据、路由规则

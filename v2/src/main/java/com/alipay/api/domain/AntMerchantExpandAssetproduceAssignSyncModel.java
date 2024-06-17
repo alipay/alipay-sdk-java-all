@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AntMerchantExpandAssetproduceAssignSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1584748285194824813L;
+	private static final long serialVersionUID = 1674845768679281981L;
 
 	/**
 	 * 生产指令接收情况，最多200条

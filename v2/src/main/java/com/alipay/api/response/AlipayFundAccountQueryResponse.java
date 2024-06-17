@@ -1,6 +1,7 @@
 package com.alipay.api.response;
 
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.domain.BalanceAccountDetail;
 import com.alipay.api.domain.ExtCardInfo;
 
 import com.alipay.api.AlipayResponse;
@@ -9,11 +10,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.account.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-07 17:56:52
+ * @since 1.0, 2024-06-14 10:27:04
  */
 public class AlipayFundAccountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3447158321555293818L;
+	private static final long serialVersionUID = 3316718733266353863L;
+
+	/** 
+	 * 支付宝账户的余额成份明细，仅当查询日终余额明细时返回
+	 */
+	@ApiField("amount_detail")
+	private BalanceAccountDetail amountDetail;
 
 	/** 
 	 * 账户可用余额，单位元，精确到小数点后两位。
@@ -32,6 +39,19 @@ public class AlipayFundAccountQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("freeze_amount")
 	private String freezeAmount;
+
+	/** 
+	 * 支付宝账户的余额总数，仅当查询日终余额明细时返回。单位：元
+	 */
+	@ApiField("total_amount")
+	private String totalAmount;
+
+	public void setAmountDetail(BalanceAccountDetail amountDetail) {
+		this.amountDetail = amountDetail;
+	}
+	public BalanceAccountDetail getAmountDetail( ) {
+		return this.amountDetail;
+	}
 
 	public void setAvailableAmount(String availableAmount) {
 		this.availableAmount = availableAmount;
@@ -52,6 +72,13 @@ public class AlipayFundAccountQueryResponse extends AlipayResponse {
 	}
 	public String getFreezeAmount( ) {
 		return this.freezeAmount;
+	}
+
+	public void setTotalAmount(String totalAmount) {
+		this.totalAmount = totalAmount;
+	}
+	public String getTotalAmount( ) {
+		return this.totalAmount;
 	}
 
 }

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 免密合并支付
  *
  * @author auto create
- * @since 1.0, 2024-05-08 16:04:58
+ * @since 1.0, 2024-06-13 20:23:15
  */
 public class AlipayTradeDeductMergePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7493772333378164845L;
+	private static final long serialVersionUID = 6471996786234665233L;
 
 	/**
 	 * 用户与商户的协议信息

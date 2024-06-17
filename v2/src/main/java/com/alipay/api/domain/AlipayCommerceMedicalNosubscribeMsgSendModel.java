@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 医疗免订阅服务通知发送接口
  *
  * @author auto create
- * @since 1.0, 2024-04-26 16:32:08
+ * @since 1.0, 2024-06-14 00:33:14
  */
 public class AlipayCommerceMedicalNosubscribeMsgSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7759638636384255733L;
+	private static final long serialVersionUID = 7443995766239246436L;
 
 	/**
 	 * 支付宝openid

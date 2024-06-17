@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 地点信息
  *
  * @author auto create
- * @since 1.0, 2022-11-17 20:03:46
+ * @since 1.0, 2024-06-14 16:37:35
  */
 public class JourneyLocation extends AlipayObject {
 
-	private static final long serialVersionUID = 7596736934962949362L;
+	private static final long serialVersionUID = 6738682778192137455L;
 
 	/**
 	 * 支付宝域内aoiId

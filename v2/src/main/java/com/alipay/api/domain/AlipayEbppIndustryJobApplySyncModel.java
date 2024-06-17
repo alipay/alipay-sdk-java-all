@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人才就业岗位应聘信息同步
  *
  * @author auto create
- * @since 1.0, 2024-02-26 19:53:18
+ * @since 1.0, 2024-06-14 11:14:51
  */
 public class AlipayEbppIndustryJobApplySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3348819315133124381L;
+	private static final long serialVersionUID = 1199931933767724126L;
 
 	/**
 	 * 应聘信息最新更新时间
@@ -46,6 +46,24 @@ public class AlipayEbppIndustryJobApplySyncModel extends AlipayObject {
 	 */
 	@ApiField("apply_time")
 	private Date applyTime;
+
+	/**
+	 * 业务场景ID，例如招聘专场id
+	 */
+	@ApiField("biz_id")
+	private String bizId;
+
+	/**
+	 * 用于记录面试地点信息
+	 */
+	@ApiField("inter_address")
+	private String interAddress;
+
+	/**
+	 * 面试时间
+	 */
+	@ApiField("inter_time")
+	private Date interTime;
 
 	/**
 	 * IoT设备SN号，该字段向IoT服务商定向开放，非IoT服务商无需传值
@@ -91,6 +109,27 @@ public class AlipayEbppIndustryJobApplySyncModel extends AlipayObject {
 	}
 	public void setApplyTime(Date applyTime) {
 		this.applyTime = applyTime;
+	}
+
+	public String getBizId() {
+		return this.bizId;
+	}
+	public void setBizId(String bizId) {
+		this.bizId = bizId;
+	}
+
+	public String getInterAddress() {
+		return this.interAddress;
+	}
+	public void setInterAddress(String interAddress) {
+		this.interAddress = interAddress;
+	}
+
+	public Date getInterTime() {
+		return this.interTime;
+	}
+	public void setInterTime(Date interTime) {
+		this.interTime = interTime;
 	}
 
 	public String getIotSn() {

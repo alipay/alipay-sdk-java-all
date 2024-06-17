@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GiftCodeDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1723728845427728347L;
+	private static final long serialVersionUID = 4197299863192332159L;
 
 	/**
 	 * 二维码所属码组的ID

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业务信息参数
  *
  * @author auto create
- * @since 1.0, 2024-06-04 11:35:44
+ * @since 1.0, 2024-06-14 16:47:52
  */
 public class BusinessParams extends AlipayObject {
 
-	private static final long serialVersionUID = 3211893636539446149L;
+	private static final long serialVersionUID = 5834554668959935597L;
 
 	/**
 	 * 实际订单时间，在乘车码场景，传入的是用户刷码乘车时间
@@ -56,6 +56,15 @@ mc_create_trade_ip和mcCreateTradeIp（旧）参数描述相同，首选mc_creat
 	 */
 	@ApiField("mc_create_trade_ip")
 	private String mcCreateTradeIp;
+
+	/**
+	 * 信用预授权转交易阶段，优先解冻的用户资产
+CREDIT_ASSET：信用资产
+COMMON_ASSET：自有资金资产
+默认优先解冻资金资产
+	 */
+	@ApiField("priority_unfreeze_asset")
+	private String priorityUnfreezeAsset;
 
 	/**
 	 * 当需要在 商家平台（b.alipay.com）—数据中心 中查看对应业务场景下的数据明细可以通过该参数传入
@@ -111,6 +120,13 @@ mc_create_trade_ip和mcCreateTradeIp（旧）参数描述相同，首选mc_creat
 	}
 	public void setMcCreateTradeIp(String mcCreateTradeIp) {
 		this.mcCreateTradeIp = mcCreateTradeIp;
+	}
+
+	public String getPriorityUnfreezeAsset() {
+		return this.priorityUnfreezeAsset;
+	}
+	public void setPriorityUnfreezeAsset(String priorityUnfreezeAsset) {
+		this.priorityUnfreezeAsset = priorityUnfreezeAsset;
 	}
 
 	public String getTinyAppMerchantBizType() {

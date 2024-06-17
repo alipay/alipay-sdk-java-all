@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IndirectBenefitPersonInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2489821391988867913L;
+	private static final long serialVersionUID = 4532269653669793992L;
 
 	/**
 	 * 受益人证件反面照（使用图片上传接口的image_id）。当证件类型为身份证时，此字段必传；当证件类型为非身份证时，此字段非必传。

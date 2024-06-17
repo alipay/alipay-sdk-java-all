@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySocialBaseChatGnameModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7242456423362673876L;
+	private static final long serialVersionUID = 4622851837891555399L;
 
 	/**
 	 * 群id

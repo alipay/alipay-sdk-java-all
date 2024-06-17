@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDigitalmgmtHrhealthEntryUserBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4658776785154553383L;
+	private static final long serialVersionUID = 2139766372475896895L;
 
 	/** 
 	 * 候选人信息列表，根据主数据中最近要入职的候选人数据加工获取，数组数据，供应商拿到参数后进行初始化，返回值为空时代表无最近入职的候选人

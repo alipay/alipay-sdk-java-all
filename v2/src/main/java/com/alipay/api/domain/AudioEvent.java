@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AudioEvent extends AlipayObject {
 
-	private static final long serialVersionUID = 5163197392275349922L;
+	private static final long serialVersionUID = 6881884458236383618L;
 
 	/**
 	 * 语音id, 也就是语音合成接口返回的audio_id

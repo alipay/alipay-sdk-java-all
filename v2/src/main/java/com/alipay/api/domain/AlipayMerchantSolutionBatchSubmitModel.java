@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 间连解决方案批次数据提报
  *
  * @author auto create
- * @since 1.0, 2024-06-05 18:57:24
+ * @since 1.0, 2024-06-14 11:01:15
  */
 public class AlipayMerchantSolutionBatchSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4176527584722233891L;
+	private static final long serialVersionUID = 3241427984456799566L;
 
 	/**
 	 * 解决方案数据提报中，提报的文件信息

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 服务变更信息
  *
  * @author auto create
- * @since 1.0, 2022-11-17 20:03:46
+ * @since 1.0, 2024-06-14 16:37:35
  */
 public class JourneyServiceChangeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4499589993835243799L;
+	private static final long serialVersionUID = 8852635884111662328L;
 
 	/**
 	 * 变更状态

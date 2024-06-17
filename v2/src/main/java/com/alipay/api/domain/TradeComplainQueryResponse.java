@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 交易纠纷查询结果
  *
  * @author auto create
- * @since 1.0, 2022-01-13 17:13:13
+ * @since 1.0, 2024-06-14 10:39:20
  */
 public class TradeComplainQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 1639382615833569822L;
+	private static final long serialVersionUID = 8693794234937458798L;
 
 	/**
 	 * 支付宝侧投诉单号

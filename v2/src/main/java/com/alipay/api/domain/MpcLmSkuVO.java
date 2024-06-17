@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * openapi接口返回的sku
  *
  * @author auto create
- * @since 1.0, 2024-06-12 11:42:19
+ * @since 1.0, 2024-06-14 11:09:16
  */
 public class MpcLmSkuVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7841499356277285821L;
+	private static final long serialVersionUID = 8565395531256887822L;
 
 	/**
 	 * 69码
@@ -41,6 +41,12 @@ public class MpcLmSkuVO extends AlipayObject {
 	private String fuzzyQuantity;
 
 	/**
+	 * sku划线价，即原价
+	 */
+	@ApiField("mark_price")
+	private String markPrice;
+
+	/**
 	 * 商品id
 	 */
 	@ApiField("mpc_item_id")
@@ -53,16 +59,10 @@ public class MpcLmSkuVO extends AlipayObject {
 	private String mpcSkuId;
 
 	/**
-	 * sku划线价
-	 */
-	@ApiField("original_price")
-	private String originalPrice;
-
-	/**
 	 * sku售价
 	 */
-	@ApiField("sale_price")
-	private String salePrice;
+	@ApiField("price")
+	private String price;
 
 	/**
 	 * 渠道店铺id
@@ -117,6 +117,13 @@ public class MpcLmSkuVO extends AlipayObject {
 		this.fuzzyQuantity = fuzzyQuantity;
 	}
 
+	public String getMarkPrice() {
+		return this.markPrice;
+	}
+	public void setMarkPrice(String markPrice) {
+		this.markPrice = markPrice;
+	}
+
 	public String getMpcItemId() {
 		return this.mpcItemId;
 	}
@@ -131,18 +138,11 @@ public class MpcLmSkuVO extends AlipayObject {
 		this.mpcSkuId = mpcSkuId;
 	}
 
-	public String getOriginalPrice() {
-		return this.originalPrice;
+	public String getPrice() {
+		return this.price;
 	}
-	public void setOriginalPrice(String originalPrice) {
-		this.originalPrice = originalPrice;
-	}
-
-	public String getSalePrice() {
-		return this.salePrice;
-	}
-	public void setSalePrice(String salePrice) {
-		this.salePrice = salePrice;
+	public void setPrice(String price) {
+		this.price = price;
 	}
 
 	public String getShopId() {
