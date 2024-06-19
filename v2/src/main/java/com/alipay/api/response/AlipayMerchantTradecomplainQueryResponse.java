@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.tradecomplain.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:34:31
+ * @since 1.0, 2024-06-17 14:04:16
  */
 public class AlipayMerchantTradecomplainQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1836864946471316934L;
+	private static final long serialVersionUID = 6582812594779245111L;
 
 	/** 
 	 * 支付宝侧投诉单号
@@ -86,14 +86,7 @@ public class AlipayMerchantTradecomplainQueryResponse extends AlipayResponse {
 	private List<ReplyRecordResponse> replyDetailInfos;
 
 	/** 
-	 * 状态 
-待处理：MERCHANT_PROCESSING 
-已处理：MERCHANT_FEEDBACKED 
-投诉完结：FINISHED 
-投诉关闭：CANCELLED 
-客服处理中：PLATFORM_PROCESSING 
-客服处理完结：PLATFORM_FINISH 
-投诉关闭：CLOSED
+	 * 状态
 	 */
 	@ApiField("status")
 	private String status;
@@ -105,7 +98,7 @@ public class AlipayMerchantTradecomplainQueryResponse extends AlipayResponse {
 	private String targetId;
 
 	/** 
-	 * 应用类型 例如小程序：APPID 生活号：PUBLICID 商家账户：PID
+	 * 投诉对象类型
 	 */
 	@ApiField("target_type")
 	private String targetType;

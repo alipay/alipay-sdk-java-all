@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCloudCloudbaseAntifloodSwitchSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4692875733658989578L;
+	private static final long serialVersionUID = 4687936558523976851L;
 
 	/**
 	 * 小程序id

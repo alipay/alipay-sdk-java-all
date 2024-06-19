@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家售后处理结果同步
  *
  * @author auto create
- * @since 1.0, 2024-04-11 15:35:17
+ * @since 1.0, 2024-06-17 19:29:51
  */
 public class AlipayOpenMiniOrderAftersaleSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8875869872953864892L;
+	private static final long serialVersionUID = 6263781225629521691L;
 
 	/**
 	 * 操作code
@@ -76,6 +76,14 @@ public class AlipayOpenMiniOrderAftersaleSyncModel extends AlipayObject {
 	 */
 	@ApiField("out_order_id")
 	private String outOrderId;
+
+	/**
+	 * 退货寄送方式
+action_code为201时可选填入,
+不传入的情况下使用商家自行接入的售后物流能力。
+	 */
+	@ApiField("return_delivery_type")
+	private String returnDeliveryType;
 
 	/**
 	 * 买家支付宝用户id，小程序场景下获取用户ID请参考：<a href="https://opendocs.alipay.com/mini/05dxgc?pathHash=1a3ecb13">用户授权</a>; 其它场景下获取用户ID请参考：<a href="https://opendocs.alipay.com/open/284/web">网页授权获取用户信息</a>。
@@ -151,6 +159,13 @@ public class AlipayOpenMiniOrderAftersaleSyncModel extends AlipayObject {
 	}
 	public void setOutOrderId(String outOrderId) {
 		this.outOrderId = outOrderId;
+	}
+
+	public String getReturnDeliveryType() {
+		return this.returnDeliveryType;
+	}
+	public void setReturnDeliveryType(String returnDeliveryType) {
+		this.returnDeliveryType = returnDeliveryType;
 	}
 
 	public String getUserId() {

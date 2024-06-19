@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFincoreFunddsAccountWitnessModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4655415462132353888L;
+	private static final long serialVersionUID = 8214184234475651972L;
 
 	/**
 	 * 必填。账号,即开户时返回的asttshipcore账号。

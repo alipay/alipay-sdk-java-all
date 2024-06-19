@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipaySecurityRiskAntifraudBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6827424759221234162L;
+	private static final long serialVersionUID = 5785659598466238112L;
 
 	/**
 	 * company_list+传入的一批待检查的企业名单+用户传入+还可以传入{"creditCode":"企业信用代码"}或者{"regNo":"企业工商注册号"}

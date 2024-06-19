@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GiftCardTemplate extends AlipayObject {
 
-	private static final long serialVersionUID = 7279765823588845989L;
+	private static final long serialVersionUID = 8548414165217643455L;
 
 	/**
 	 * 开卡模版扩展参数

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayTradeOrderOnsettleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5466383935971942632L;
+	private static final long serialVersionUID = 3391327818926222261L;
 
 	/**
 	 * unsettled表示从待结算资金分账；不传表示从售后分账

@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 安心卡售卖账单信息
  *
  * @author auto create
- * @since 1.0, 2024-06-06 19:09:52
+ * @since 1.0, 2024-06-18 14:18:15
  */
 public class AlipayOpenMiniOrderAnxinitemsellorderBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1342895988777131244L;
+	private static final long serialVersionUID = 5515646728313362463L;
 
 	/**
 	 * 订单创建日期，格式为yyyy-MM-dd
 	 */
 	@ApiField("create_time")
 	private String createTime;
+
+	/**
+	 * 小程序ID，若不指定，则以当前调用OPENAPI的小程序ID查询售卖订单
+	 */
+	@ApiField("mini_app_id")
+	private String miniAppId;
 
 	/**
 	 * 分页大小
@@ -42,6 +48,13 @@ public class AlipayOpenMiniOrderAnxinitemsellorderBatchqueryModel extends Alipay
 	}
 	public void setCreateTime(String createTime) {
 		this.createTime = createTime;
+	}
+
+	public String getMiniAppId() {
+		return this.miniAppId;
+	}
+	public void setMiniAppId(String miniAppId) {
+		this.miniAppId = miniAppId;
 	}
 
 	public Long getPageSize() {

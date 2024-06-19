@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 城服消息实体类型
  *
  * @author auto create
- * @since 1.0, 2024-05-20 10:55:52
+ * @since 1.0, 2024-06-17 14:00:16
  */
 public class AlipayEcoMessageEntity extends AlipayObject {
 
-	private static final long serialVersionUID = 3226476238929487666L;
+	private static final long serialVersionUID = 5579943559472938981L;
 
 	/**
 	 * (certificate_type/certificate_number/用户名字) 或者 alipay_user_id  必须有一个不为空。两个都不为空则以alipay_user_id为准
@@ -58,7 +58,7 @@ public class AlipayEcoMessageEntity extends AlipayObject {
 	private String extInfo;
 
 	/**
-	 * 行业类型. 1=社保，2=公积金，3=交警，4=公安非交管，5=医保，8=疫情
+	 * 行业类型. 具体传值可以联系BD获取
 	 */
 	@ApiField("industry_type")
 	private Long industryType;
@@ -70,8 +70,7 @@ public class AlipayEcoMessageEntity extends AlipayObject {
 	private String mobile;
 
 	/**
-	 * 消息类型. 1=动账.2=账单.3=缴费.4=办件进度.5=证件到期.6=违章提醒.
-更多请参考接口补充说明
+	 * 光华消息模板ID，具体传值可联系BD获取
 	 */
 	@ApiField("msg_type")
 	private Long msgType;

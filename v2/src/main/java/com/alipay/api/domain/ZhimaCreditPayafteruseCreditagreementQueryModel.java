@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 先用后付授权状态查询
  *
  * @author auto create
- * @since 1.0, 2024-05-08 16:04:15
+ * @since 1.0, 2024-06-18 15:28:20
  */
 public class ZhimaCreditPayafteruseCreditagreementQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6784673997354294423L;
+	private static final long serialVersionUID = 3167731256987796351L;
 
 	/**
 	 * 芝麻开通/授权协议号，out_agreement_no与credit_agreement_id必填一个，推荐使用credit_agreement_id。

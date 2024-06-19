@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LitePredictGoodsResult extends AlipayObject {
 
-	private static final long serialVersionUID = 4738243269787449956L;
+	private static final long serialVersionUID = 7274953999266911785L;
 
 	/**
 	 * 可信度

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PosFixedDishGroupModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1859327478948916796L;
+	private static final long serialVersionUID = 8612868349715194417L;
 
 	/**
 	 * 固定菜的数量，有固定菜时必传

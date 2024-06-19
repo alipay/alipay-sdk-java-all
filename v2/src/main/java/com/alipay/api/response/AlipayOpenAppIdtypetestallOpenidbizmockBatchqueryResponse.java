@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenAppIdtypetestallOpenidbizmockBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5263537592216138716L;
+	private static final long serialVersionUID = 5552966653427923615L;
 
 	/** 
 	 * uid列表

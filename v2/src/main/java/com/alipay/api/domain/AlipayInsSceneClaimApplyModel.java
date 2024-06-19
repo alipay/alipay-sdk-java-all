@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayInsSceneClaimApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8714257234589869969L;
+	private static final long serialVersionUID = 2546338368735255376L;
 
 	/**
 	 * 出险地点

@@ -7,17 +7,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户意图智能服务推荐
  *
  * @author auto create
- * @since 1.0, 2024-05-29 23:51:52
+ * @since 1.0, 2024-06-17 16:27:16
  */
 public class AlipayEbppIndustryGovserviceRecommendQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2139593548212499977L;
+	private static final long serialVersionUID = 7426282941993939238L;
+
+	/**
+	 * 兜底城市code
+	 */
+	@ApiField("actual_city_code")
+	private String actualCityCode;
 
 	/**
 	 * 服务展示渠道
 	 */
 	@ApiField("channel")
 	private String channel;
+
+	/**
+	 * lbs城市code
+	 */
+	@ApiField("city_code")
+	private String cityCode;
 
 	/**
 	 * 当其他端不支持支付宝uid时，用于标识用户的唯一标识
@@ -55,11 +67,25 @@ public class AlipayEbppIndustryGovserviceRecommendQueryModel extends AlipayObjec
 	@ApiField("user_id")
 	private String userId;
 
+	public String getActualCityCode() {
+		return this.actualCityCode;
+	}
+	public void setActualCityCode(String actualCityCode) {
+		this.actualCityCode = actualCityCode;
+	}
+
 	public String getChannel() {
 		return this.channel;
 	}
 	public void setChannel(String channel) {
 		this.channel = channel;
+	}
+
+	public String getCityCode() {
+		return this.cityCode;
+	}
+	public void setCityCode(String cityCode) {
+		this.cityCode = cityCode;
 	}
 
 	public String getIdentifyId() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OperatorInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1683737583413748361L;
+	private static final long serialVersionUID = 8842197914119888687L;
 
 	/**
 	 * 个体工商户经营者证件到期日，格式为YYYY-MM-DD

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.nextbuilder.agent.config.get request
  * 
  * @author auto create
- * @since 1.0, 2024-05-27 13:57:01
+ * @since 1.0, 2024-06-18 14:37:03
  */
 public class AlipayCloudNextbuilderAgentConfigGetRequest implements AlipayRequest<AlipayCloudNextbuilderAgentConfigGetResponse> {
 

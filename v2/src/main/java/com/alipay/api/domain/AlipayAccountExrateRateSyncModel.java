@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayAccountExrateRateSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7477883257555111864L;
+	private static final long serialVersionUID = 2621499133911884842L;
 
 	/**
 	 * 通用接口入参，json字符串的形式。比如该openapi绑定客户汇率发布能力，则以json字符串的形式传入客户汇率

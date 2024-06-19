@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.acommunication.creditphone.order.preconsult request
  * 
  * @author auto create
- * @since 1.0, 2024-05-22 14:32:03
+ * @since 1.0, 2024-06-18 10:55:05
  */
 public class AlipayCommerceAcommunicationCreditphoneOrderPreconsultRequest implements AlipayRequest<AlipayCommerceAcommunicationCreditphoneOrderPreconsultResponse> {
 

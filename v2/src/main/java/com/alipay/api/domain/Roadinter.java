@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class Roadinter extends AlipayObject {
 
-	private static final long serialVersionUID = 8831186979919217145L;
+	private static final long serialVersionUID = 2212658915969577978L;
 
 	/**
 	 * 输入点相对路口的方位

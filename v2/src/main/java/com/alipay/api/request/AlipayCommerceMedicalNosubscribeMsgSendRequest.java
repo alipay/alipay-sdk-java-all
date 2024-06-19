@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.nosubscribe.msg.send request
  * 
  * @author auto create
- * @since 1.0, 2024-06-14 15:32:03
+ * @since 1.0, 2024-06-17 15:27:03
  */
 public class AlipayCommerceMedicalNosubscribeMsgSendRequest implements AlipayRequest<AlipayCommerceMedicalNosubscribeMsgSendResponse> {
 

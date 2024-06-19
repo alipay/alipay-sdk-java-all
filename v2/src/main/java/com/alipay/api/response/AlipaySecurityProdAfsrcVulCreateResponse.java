@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySecurityProdAfsrcVulCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8172585977979632765L;
+	private static final long serialVersionUID = 5214689731389112335L;
 
 	/** 
 	 * 漏洞创建结果描述

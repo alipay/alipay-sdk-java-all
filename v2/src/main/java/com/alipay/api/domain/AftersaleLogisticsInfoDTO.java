@@ -7,15 +7,15 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物流信息
  *
  * @author auto create
- * @since 1.0, 2024-04-11 15:35:17
+ * @since 1.0, 2024-06-17 19:29:51
  */
 public class AftersaleLogisticsInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6194985729731327354L;
+	private static final long serialVersionUID = 4739334926983771818L;
 
 	/**
 	 * 快递公司ID,
-快递公司ID列表请查看：https://opendocs.alipay.com/mini/07hva0?pathHash=5de3c48d，请确认传入的值在此列表内，若发货的快递公司不在此列表内，可以传入值other
+<a href="https://opendocs.alipay.com/mini/07hva0?pathHash=5de3c48d">快递公司ID列表请查看</a>请确认传入的值在此列表内，若发货的快递公司不在此列表内，可以传入值other
 	 */
 	@ApiField("delivery_id")
 	private String deliveryId;

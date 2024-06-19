@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class JobWorthPositionInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2337927153399922812L;
+	private static final long serialVersionUID = 3631733543716346954L;
 
 	/**
 	 * 职位要求-年龄要求	无要求（不传）、28岁以上(OVER28)、40岁以下(BELOW40)、25岁～35岁(25TO35)

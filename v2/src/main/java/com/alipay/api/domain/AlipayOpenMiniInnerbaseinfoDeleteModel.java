@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniInnerbaseinfoDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1765835251533233435L;
+	private static final long serialVersionUID = 3385762915971625993L;
 
 	/**
 	 * 租户code，alipay or taobao

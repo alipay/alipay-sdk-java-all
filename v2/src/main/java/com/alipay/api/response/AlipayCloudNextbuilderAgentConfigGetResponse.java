@@ -1,5 +1,6 @@
 package com.alipay.api.response;
 
+import java.util.Date;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
@@ -11,11 +12,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.nextbuilder.agent.config.get response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-27 13:57:01
+ * @since 1.0, 2024-06-18 14:37:03
  */
 public class AlipayCloudNextbuilderAgentConfigGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7479165438179866997L;
+	private static final long serialVersionUID = 4423935354848497512L;
+
+	/** 
+	 * 配置版本号
+	 */
+	@ApiField("config_version")
+	private String configVersion;
 
 	/** 
 	 * 是否生成相关问题建议
@@ -43,6 +50,19 @@ public class AlipayCloudNextbuilderAgentConfigGetResponse extends AlipayResponse
 	@ApiField("prologue")
 	private String prologue;
 
+	/** 
+	 * 配置发布时间
+	 */
+	@ApiField("published_time")
+	private Date publishedTime;
+
+	public void setConfigVersion(String configVersion) {
+		this.configVersion = configVersion;
+	}
+	public String getConfigVersion( ) {
+		return this.configVersion;
+	}
+
 	public void setCreateQuestions(Boolean createQuestions) {
 		this.createQuestions = createQuestions;
 	}
@@ -69,6 +89,13 @@ public class AlipayCloudNextbuilderAgentConfigGetResponse extends AlipayResponse
 	}
 	public String getPrologue( ) {
 		return this.prologue;
+	}
+
+	public void setPublishedTime(Date publishedTime) {
+		this.publishedTime = publishedTime;
+	}
+	public Date getPublishedTime( ) {
+		return this.publishedTime;
 	}
 
 }
