@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HardeningTaskResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 1617349563999679586L;
+	private static final long serialVersionUID = 4329266256332936955L;
 
 	/**
 	 * 加固后的MD5

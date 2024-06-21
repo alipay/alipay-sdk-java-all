@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: antfortune.finresearch.chat.submit request
  * 
  * @author auto create
- * @since 1.0, 2024-06-07 11:37:03
+ * @since 1.0, 2024-06-21 16:42:04
  */
 public class AntfortuneFinresearchChatSubmitRequest implements AlipayRequest<AntfortuneFinresearchChatSubmitResponse> {
 

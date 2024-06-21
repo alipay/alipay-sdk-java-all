@@ -7,18 +7,18 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸开通支付申请
  *
  * @author auto create
- * @since 1.0, 2023-12-20 10:18:21
+ * @since 1.0, 2024-06-18 16:10:16
  */
 public class AlipayCommerceEducateFacepayApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5793527391711614113L;
+	private static final long serialVersionUID = 7619371912119355922L;
 
 	/**
 	 * 扩展信息，json格式。 例如：
 ● 默认不传，兜底为{"useBankChannel":"YES","useBankMode":"BANK"}
 ● 不使用银行代扣, {"useBankChannel":"NO"}
-● 使用银行代扣且指定银行，{"useBankChannel":"YES","useBankMode":"BANK"} 
-● 使用银行代扣且指定银行卡，{"useBankChannel":"YES","useBankMode":"BANK_CARD","cardNo":"4340627330268609"}
+● 使用银行代扣且指定银行(parentPhone可选，建议提供)，{"useBankChannel":"YES","useBankMode":"BANK","parentPhone":"13212345678"} 
+● 使用银行代扣且指定银行卡(parentPhone可选，建议提供)，{"useBankChannel":"YES","useBankMode":"BANK_CARD","cardNo":"4340627330268609","parentPhone":"13212345678"}
 ● 使用银行代扣且指定数币，{"useBankChannel":"YES","useBankMode":"DCEP"}
 ● 使用银行代扣且指定数币编号，{"useBankChannel":"YES","useBankMode":"DCEP_CARD","cardNo":"00123445678951302"}。
 如果指定银行卡但未提供cardNo，必须实现获取银行卡信息的SPIAPI。

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayAccountInstfundWithdrawApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1343187546237786856L;
+	private static final long serialVersionUID = 3892956552178641817L;
 
 	/** 
 	 * 资金指令唯一标识

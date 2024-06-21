@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FxiaokeCreateOrUpdateLeadsPredictRecordItemRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 6197533742544334123L;
+	private static final long serialVersionUID = 1173438456923284125L;
 
 	/**
 	 * 商品类目code

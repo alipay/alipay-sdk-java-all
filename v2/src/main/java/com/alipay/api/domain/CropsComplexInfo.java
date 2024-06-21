@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CropsComplexInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2815373729478334192L;
+	private static final long serialVersionUID = 2643664379683772629L;
 
 	/**
 	 * 作物编码列表

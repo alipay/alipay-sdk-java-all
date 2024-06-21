@@ -10,17 +10,25 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.supplychain.factoring.selleradmit.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-13 10:47:05
+ * @since 1.0, 2024-06-20 16:27:04
  */
 public class MybankCreditSupplychainFactoringSelleradmitQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2837414695789379529L;
+	private static final long serialVersionUID = 8287363671688438547L;
 
 	/** 
 	 * 是否已提交加白申请
 	 */
 	@ApiField("exsit")
 	private String exsit;
+
+	/** 
+	 * 门店是否需要签约 
+true:需要签约
+false：不需要签约
+	 */
+	@ApiField("need_sign_ar")
+	private Boolean needSignAr;
 
 	/** 
 	 * 不准入原因代码
@@ -58,6 +66,13 @@ public class MybankCreditSupplychainFactoringSelleradmitQueryResponse extends Al
 	}
 	public String getExsit( ) {
 		return this.exsit;
+	}
+
+	public void setNeedSignAr(Boolean needSignAr) {
+		this.needSignAr = needSignAr;
+	}
+	public Boolean getNeedSignAr( ) {
+		return this.needSignAr;
 	}
 
 	public void setRefuseCode(String refuseCode) {

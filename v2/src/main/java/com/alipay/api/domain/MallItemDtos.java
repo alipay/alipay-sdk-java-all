@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MallItemDtos extends AlipayObject {
 
-	private static final long serialVersionUID = 8736686393686831839L;
+	private static final long serialVersionUID = 3419373945118799457L;
 
 	/**
 	 * contract_code,用于合并购物车

@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudpromo.mall.item.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-14 15:43:37
+ * @since 1.0, 2024-06-20 16:22:03
  */
 public class AlipayCloudCloudpromoMallItemQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5166612813573314466L;
+	private static final long serialVersionUID = 8158243558185374379L;
 
 	/** 
 	 * 商品规格属性，可作为商品的筛选维度

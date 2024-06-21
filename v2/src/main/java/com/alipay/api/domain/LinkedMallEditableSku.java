@@ -7,17 +7,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * SKU编辑属性
  *
  * @author auto create
- * @since 1.0, 2024-06-07 13:59:56
+ * @since 1.0, 2024-06-20 15:15:27
  */
 public class LinkedMallEditableSku extends AlipayObject {
 
-	private static final long serialVersionUID = 2451187633141536941L;
+	private static final long serialVersionUID = 6289961962126433681L;
 
 	/**
 	 * sku图片链接
 	 */
 	@ApiField("pic_url")
 	private String picUrl;
+
+	/**
+	 * sku价格，单位分
+	 */
+	@ApiField("price")
+	private String price;
+
+	/**
+	 * sku状态
+	 */
+	@ApiField("status")
+	private String status;
 
 	/**
 	 * sku名称
@@ -30,6 +42,20 @@ public class LinkedMallEditableSku extends AlipayObject {
 	}
 	public void setPicUrl(String picUrl) {
 		this.picUrl = picUrl;
+	}
+
+	public String getPrice() {
+		return this.price;
+	}
+	public void setPrice(String price) {
+		this.price = price;
+	}
+
+	public String getStatus() {
+		return this.status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
 	}
 
 	public String getTitle() {

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudpromo.mall.item.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2024-06-14 14:30:13
+ * @since 1.0, 2024-06-20 16:22:03
  */
 public class AlipayCloudCloudpromoMallItemBatchqueryRequest implements AlipayRequest<AlipayCloudCloudpromoMallItemBatchqueryResponse> {
 

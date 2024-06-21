@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 权益前置咨询
  *
  * @author auto create
- * @since 1.0, 2024-05-27 14:07:37
+ * @since 1.0, 2024-06-20 19:22:53
  */
 public class AlipayMarketingAssetPreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7225759571934623166L;
+	private static final long serialVersionUID = 4722944233531524198L;
 
 	/**
 	 * 业务参数大字段，优惠咨询的控制参数，json格式；目前支持传入useBigAmountSkipOrderThold为N来控制不使用大金额跳过优惠的订单门槛检查；默认不传；
@@ -40,6 +40,12 @@ public class AlipayMarketingAssetPreconsultModel extends AlipayObject {
 	 */
 	@ApiField("order_amount")
 	private String orderAmount;
+
+	/**
+	 * 营销信息，包含promo_taobao等信息
+	 */
+	@ApiField("promo_info")
+	private String promoInfo;
 
 	/**
 	 * 参考调用收银台的promoParams，如需咨询结果与拉起收银台一致需要保证这个参数一致
@@ -91,6 +97,13 @@ public class AlipayMarketingAssetPreconsultModel extends AlipayObject {
 	}
 	public void setOrderAmount(String orderAmount) {
 		this.orderAmount = orderAmount;
+	}
+
+	public String getPromoInfo() {
+		return this.promoInfo;
+	}
+	public void setPromoInfo(String promoInfo) {
+		this.promoInfo = promoInfo;
 	}
 
 	public String getPromoRule() {

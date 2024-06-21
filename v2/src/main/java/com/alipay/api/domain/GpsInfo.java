@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GpsInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2649841133135827181L;
+	private static final long serialVersionUID = 7596349183267695784L;
 
 	/**
 	 * 纬度

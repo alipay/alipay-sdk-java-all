@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.facepay.apply response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-28 00:12:00
+ * @since 1.0, 2024-06-18 16:12:03
  */
 public class AlipayCommerceEducateFacepayApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1263671327285818368L;
+	private static final long serialVersionUID = 3647492325597279322L;
 
 	/** 
 	 * 申请token

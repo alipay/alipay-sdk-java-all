@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceEducateParttimejobInfoCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8228876846749911692L;
+	private static final long serialVersionUID = 6833981225881312537L;
 
 	/**
 	 * 市

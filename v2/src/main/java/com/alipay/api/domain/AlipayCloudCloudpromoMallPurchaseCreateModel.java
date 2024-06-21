@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 采购单创建
  *
  * @author auto create
- * @since 1.0, 2024-06-04 20:13:40
+ * @since 1.0, 2024-06-21 16:02:15
  */
 public class AlipayCloudCloudpromoMallPurchaseCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4568281421492356315L;
+	private static final long serialVersionUID = 5288147367857131859L;
 
 	/**
 	 * 详细地址
@@ -20,9 +23,10 @@ public class AlipayCloudCloudpromoMallPurchaseCreateModel extends AlipayObject {
 	private String addressDetail;
 
 	/**
-	 * 地址id
+	 * 地址id 当前字段已废弃(填写完整address_detail即可)
 	 */
 	@ApiField("address_id")
+	@Deprecated
 	private String addressId;
 
 	/**
@@ -36,6 +40,13 @@ public class AlipayCloudCloudpromoMallPurchaseCreateModel extends AlipayObject {
 	 */
 	@ApiField("outer_purchase_id")
 	private String outerPurchaseId;
+
+	/**
+	 * 商品列表
+	 */
+	@ApiListField("product_list")
+	@ApiField("product_v_o")
+	private List<ProductVO> productList;
 
 	/**
 	 * 收货人
@@ -75,6 +86,13 @@ public class AlipayCloudCloudpromoMallPurchaseCreateModel extends AlipayObject {
 	}
 	public void setOuterPurchaseId(String outerPurchaseId) {
 		this.outerPurchaseId = outerPurchaseId;
+	}
+
+	public List<ProductVO> getProductList() {
+		return this.productList;
+	}
+	public void setProductList(List<ProductVO> productList) {
+		this.productList = productList;
 	}
 
 	public String getReceiver() {

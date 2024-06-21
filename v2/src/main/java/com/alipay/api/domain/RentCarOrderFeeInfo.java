@@ -10,17 +10,24 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝订单租车费用信息
  *
  * @author auto create
- * @since 1.0, 2024-06-05 16:41:25
+ * @since 1.0, 2024-06-19 11:57:47
  */
 public class RentCarOrderFeeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7357264714169888486L;
+	private static final long serialVersionUID = 5649451135663159834L;
 
 	/**
 	 * 基础保障服务费，车生活向商户查询报价时不需要传此此字段；车生活请求商户下单时会传此字段
 	 */
 	@ApiField("basic_guarantee_fee")
 	private RentCarFeeItem basicGuaranteeFee;
+
+	/**
+	 * 租金的每日明细信息，确保加起来等于租金费用总价
+	 */
+	@ApiListField("daily_car_rental_fee_detail")
+	@ApiField("daily_car_rental_fee")
+	private List<DailyCarRentalFee> dailyCarRentalFeeDetail;
 
 	/**
 	 * 用户还车时，门店工作人员上门服务的费用
@@ -53,6 +60,12 @@ public class RentCarOrderFeeInfo extends AlipayObject {
 	private RentCarFeeItem nightSendFee;
 
 	/**
+	 * 异地还车费用
+	 */
+	@ApiField("offsite_drop_off_fee")
+	private RentCarFeeItem offsiteDropOffFee;
+
+	/**
 	 * 其他费用列表
 	 */
 	@ApiListField("other_fee_list")
@@ -83,6 +96,13 @@ public class RentCarOrderFeeInfo extends AlipayObject {
 	}
 	public void setBasicGuaranteeFee(RentCarFeeItem basicGuaranteeFee) {
 		this.basicGuaranteeFee = basicGuaranteeFee;
+	}
+
+	public List<DailyCarRentalFee> getDailyCarRentalFeeDetail() {
+		return this.dailyCarRentalFeeDetail;
+	}
+	public void setDailyCarRentalFeeDetail(List<DailyCarRentalFee> dailyCarRentalFeeDetail) {
+		this.dailyCarRentalFeeDetail = dailyCarRentalFeeDetail;
 	}
 
 	public RentCarFeeItem getHomeReturnFee() {
@@ -118,6 +138,13 @@ public class RentCarOrderFeeInfo extends AlipayObject {
 	}
 	public void setNightSendFee(RentCarFeeItem nightSendFee) {
 		this.nightSendFee = nightSendFee;
+	}
+
+	public RentCarFeeItem getOffsiteDropOffFee() {
+		return this.offsiteDropOffFee;
+	}
+	public void setOffsiteDropOffFee(RentCarFeeItem offsiteDropOffFee) {
+		this.offsiteDropOffFee = offsiteDropOffFee;
 	}
 
 	public List<RentCarFeeItem> getOtherFeeList() {

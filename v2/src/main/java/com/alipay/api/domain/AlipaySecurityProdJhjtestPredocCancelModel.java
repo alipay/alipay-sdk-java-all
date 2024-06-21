@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 文档链路测试
  *
  * @author auto create
- * @since 1.0, 2024-05-28 16:00:56
+ * @since 1.0, 2024-06-21 17:12:10
  */
 public class AlipaySecurityProdJhjtestPredocCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3386852232681875999L;
+	private static final long serialVersionUID = 2526459249726591782L;
 
 	/**
 	 * 11111
@@ -36,6 +36,12 @@ public class AlipaySecurityProdJhjtestPredocCancelModel extends AlipayObject {
 	 */
 	@ApiField("isasdasd")
 	private Boolean isasdasd;
+
+	/**
+	 * 111
+	 */
+	@ApiField("price_a_input")
+	private String priceAInput;
 
 	/**
 	 * 1
@@ -81,6 +87,13 @@ public class AlipaySecurityProdJhjtestPredocCancelModel extends AlipayObject {
 	}
 	public void setIsasdasd(Boolean isasdasd) {
 		this.isasdasd = isasdasd;
+	}
+
+	public String getPriceAInput() {
+		return this.priceAInput;
+	}
+	public void setPriceAInput(String priceAInput) {
+		this.priceAInput = priceAInput;
 	}
 
 	public Boolean getSdd() {

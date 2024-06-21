@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 渠道商商品sku信息
  *
  * @author auto create
- * @since 1.0, 2024-06-07 13:59:54
+ * @since 1.0, 2024-06-20 15:15:28
  */
 public class LinkedMallSkuDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8125165785841681641L;
+	private static final long serialVersionUID = 8738514859556912448L;
 
 	/**
 	 * 69码
@@ -53,7 +53,13 @@ public class LinkedMallSkuDTO extends AlipayObject {
 	private String picUrl;
 
 	/**
-	 * 售价，单位分
+	 * 天猫店铺侧的商品当前售卖价（不保证实时性仅参考）
+	 */
+	@ApiField("platform_price")
+	private String platformPrice;
+
+	/**
+	 * 采购供货价，单位分
 	 */
 	@ApiField("price")
 	private Long price;
@@ -141,6 +147,13 @@ public class LinkedMallSkuDTO extends AlipayObject {
 	}
 	public void setPicUrl(String picUrl) {
 		this.picUrl = picUrl;
+	}
+
+	public String getPlatformPrice() {
+		return this.platformPrice;
+	}
+	public void setPlatformPrice(String platformPrice) {
+		this.platformPrice = platformPrice;
 	}
 
 	public Long getPrice() {

@@ -1,6 +1,7 @@
 package com.alipay.api.response;
 
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.domain.OpenCertifyMetaInfo;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.fincloud.generalsaas.face.verification.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-18 14:00:54
+ * @since 1.0, 2024-06-18 22:17:02
  */
 public class DatadigitalFincloudGeneralsaasFaceVerificationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7343468458392459976L;
+	private static final long serialVersionUID = 2215344412643915214L;
 
 	/** 
 	 * base64过后的图片图片
@@ -31,6 +32,12 @@ public class DatadigitalFincloudGeneralsaasFaceVerificationQueryResponse extends
 	 */
 	@ApiField("certify_state")
 	private String certifyState;
+
+	/** 
+	 * 人脸认证元数据信息
+	 */
+	@ApiField("meta_info")
+	private OpenCertifyMetaInfo metaInfo;
 
 	/** 
 	 * double值，人脸图片质量分
@@ -63,6 +70,13 @@ public class DatadigitalFincloudGeneralsaasFaceVerificationQueryResponse extends
 	}
 	public String getCertifyState( ) {
 		return this.certifyState;
+	}
+
+	public void setMetaInfo(OpenCertifyMetaInfo metaInfo) {
+		this.metaInfo = metaInfo;
+	}
+	public OpenCertifyMetaInfo getMetaInfo( ) {
+		return this.metaInfo;
 	}
 
 	public void setQuality(String quality) {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PointLogInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2454391771961175169L;
+	private static final long serialVersionUID = 2457233546646181983L;
 
 	/**
 	 * 积分明细数量

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ExpenseQuotaInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2738125216188442221L;
+	private static final long serialVersionUID = 3731245873832128341L;
 
 	/**
 	 * 额度失效时间

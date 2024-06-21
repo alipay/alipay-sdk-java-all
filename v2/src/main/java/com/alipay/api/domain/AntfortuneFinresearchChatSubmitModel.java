@@ -10,17 +10,24 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支小助提交问题
  *
  * @author auto create
- * @since 1.0, 2024-06-07 11:36:15
+ * @since 1.0, 2024-06-21 16:38:16
  */
 public class AntfortuneFinresearchChatSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2861938777161938848L;
+	private static final long serialVersionUID = 7568993778781233453L;
 
 	/**
-	 * 合作方内部的用户体系用户信息
+	 * 合作方内部的唯一标识
 	 */
 	@ApiField("bu_unique_id")
 	private String buUniqueId;
+
+	/**
+	 * 业务类型，如果是就业问答请传入college_work
+其他的情况可以不传或者传空字符串
+	 */
+	@ApiField("business_type")
+	private String businessType;
 
 	/**
 	 * 文件id，目前仅支持单个，如果传多个会默认使用第一个， 如果filetype传了file，并且指定了file_id ，则会根据文件内容来回答问题
@@ -78,6 +85,13 @@ public class AntfortuneFinresearchChatSubmitModel extends AlipayObject {
 	}
 	public void setBuUniqueId(String buUniqueId) {
 		this.buUniqueId = buUniqueId;
+	}
+
+	public String getBusinessType() {
+		return this.businessType;
+	}
+	public void setBusinessType(String businessType) {
+		this.businessType = businessType;
 	}
 
 	public List<String> getFileIds() {

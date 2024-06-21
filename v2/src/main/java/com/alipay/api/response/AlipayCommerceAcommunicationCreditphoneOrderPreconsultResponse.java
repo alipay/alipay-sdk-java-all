@@ -4,6 +4,7 @@ import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.ConsultChannelResponse;
+import com.alipay.api.domain.ConsultRefuseResponse;
 
 import com.alipay.api.AlipayResponse;
 
@@ -11,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.acommunication.creditphone.order.preconsult response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-18 10:55:05
+ * @since 1.0, 2024-06-21 11:12:04
  */
 public class AlipayCommerceAcommunicationCreditphoneOrderPreconsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1559384716691933256L;
+	private static final long serialVersionUID = 4641119392127834818L;
 
 	/** 
 	 * 渠道列表
@@ -30,6 +31,13 @@ public class AlipayCommerceAcommunicationCreditphoneOrderPreconsultResponse exte
 	@ApiField("pass")
 	private Boolean pass;
 
+	/** 
+	 * 拒绝列表
+	 */
+	@ApiListField("refuse_list")
+	@ApiField("consult_refuse_response")
+	private List<ConsultRefuseResponse> refuseList;
+
 	public void setChannelList(List<ConsultChannelResponse> channelList) {
 		this.channelList = channelList;
 	}
@@ -42,6 +50,13 @@ public class AlipayCommerceAcommunicationCreditphoneOrderPreconsultResponse exte
 	}
 	public Boolean getPass( ) {
 		return this.pass;
+	}
+
+	public void setRefuseList(List<ConsultRefuseResponse> refuseList) {
+		this.refuseList = refuseList;
+	}
+	public List<ConsultRefuseResponse> getRefuseList( ) {
+		return this.refuseList;
 	}
 
 }

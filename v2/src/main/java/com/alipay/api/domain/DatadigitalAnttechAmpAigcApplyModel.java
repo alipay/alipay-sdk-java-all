@@ -7,17 +7,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * aigc服务调用
  *
  * @author auto create
- * @since 1.0, 2024-05-16 11:32:29
+ * @since 1.0, 2024-06-21 17:39:38
  */
 public class DatadigitalAnttechAmpAigcApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8895457876139127533L;
+	private static final long serialVersionUID = 5179669857751637859L;
 
 	/**
 	 * 生成图片或视频的文本或文件id
 	 */
 	@ApiField("context")
 	private String context;
+
+	/**
+	 * 设备id
+	 */
+	@ApiField("device_id")
+	private String deviceId;
+
+	/**
+	 * 设备id类型
+	 */
+	@ApiField("device_id_type")
+	private String deviceIdType;
 
 	/**
 	 * 像素高
@@ -66,6 +78,20 @@ public class DatadigitalAnttechAmpAigcApplyModel extends AlipayObject {
 	}
 	public void setContext(String context) {
 		this.context = context;
+	}
+
+	public String getDeviceId() {
+		return this.deviceId;
+	}
+	public void setDeviceId(String deviceId) {
+		this.deviceId = deviceId;
+	}
+
+	public String getDeviceIdType() {
+		return this.deviceIdType;
+	}
+	public void setDeviceIdType(String deviceIdType) {
+		this.deviceIdType = deviceIdType;
 	}
 
 	public Long getHeight() {

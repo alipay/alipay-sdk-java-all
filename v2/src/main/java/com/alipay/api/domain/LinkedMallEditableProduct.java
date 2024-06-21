@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 变更商品信息
  *
  * @author auto create
- * @since 1.0, 2024-06-07 13:59:54
+ * @since 1.0, 2024-06-20 15:15:29
  */
 public class LinkedMallEditableProduct extends AlipayObject {
 
-	private static final long serialVersionUID = 4627812858996936323L;
+	private static final long serialVersionUID = 2573986978617676447L;
 
 	/**
-	 * 商品描述
+	 * 商品描述图
 	 */
 	@ApiField("desc_path")
 	private String descPath;
@@ -34,6 +34,12 @@ public class LinkedMallEditableProduct extends AlipayObject {
 	 */
 	@ApiField("pic_url")
 	private String picUrl;
+
+	/**
+	 * 商品状态
+	 */
+	@ApiField("product_status")
+	private String productStatus;
 
 	/**
 	 * 商品名称
@@ -60,6 +66,13 @@ public class LinkedMallEditableProduct extends AlipayObject {
 	}
 	public void setPicUrl(String picUrl) {
 		this.picUrl = picUrl;
+	}
+
+	public String getProductStatus() {
+		return this.productStatus;
+	}
+	public void setProductStatus(String productStatus) {
+		this.productStatus = productStatus;
 	}
 
 	public String getTitle() {

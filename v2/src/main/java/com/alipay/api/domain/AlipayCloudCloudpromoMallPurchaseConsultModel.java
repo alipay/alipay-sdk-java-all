@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 采购单渲染咨询
  *
  * @author auto create
- * @since 1.0, 2024-06-04 20:13:48
+ * @since 1.0, 2024-06-21 16:03:16
  */
 public class AlipayCloudCloudpromoMallPurchaseConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1545219811221343712L;
+	private static final long serialVersionUID = 8316475556614287447L;
 
 	/**
 	 * 详细地址
@@ -23,9 +23,10 @@ public class AlipayCloudCloudpromoMallPurchaseConsultModel extends AlipayObject 
 	private String addressDetail;
 
 	/**
-	 * 地址id
+	 * 地址id 当前字段已废弃(迭代后无需此字段，已合并进address_detail)
 	 */
 	@ApiField("address_id")
+	@Deprecated
 	private String addressId;
 
 	/**

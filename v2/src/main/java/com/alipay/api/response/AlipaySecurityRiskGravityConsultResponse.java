@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.gravity.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 04:25:05
+ * @since 1.0, 2024-06-21 19:53:37
  */
 public class AlipaySecurityRiskGravityConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6517582119449833368L;
+	private static final long serialVersionUID = 3222581347575789392L;
 
 	/** 
 	 * 多方安全风控服务错误码

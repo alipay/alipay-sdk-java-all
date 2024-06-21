@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 国家医保局线上业务身份核验信息授权查询接口
  *
  * @author auto create
- * @since 1.0, 2024-06-12 11:22:52
+ * @since 1.0, 2024-06-20 13:56:16
  */
 public class AlipayCommerceMedicalAuthinfoAuthQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1859518878626717796L;
+	private static final long serialVersionUID = 2236774432229746245L;
 
 	/**
 	 * 支付宝用户Id
@@ -42,6 +42,12 @@ public class AlipayCommerceMedicalAuthinfoAuthQueryModel extends AlipayObject {
 	 */
 	@ApiField("ol_biz_type_code")
 	private String olBizTypeCode;
+
+	/**
+	 * 业务类型为04107且办理移动支付线上购药时需传入该字段
+	 */
+	@ApiField("online_drug_chnl_app_id")
+	private String onlineDrugChnlAppId;
 
 	/**
 	 * 支付宝用户Id
@@ -106,6 +112,13 @@ public class AlipayCommerceMedicalAuthinfoAuthQueryModel extends AlipayObject {
 	}
 	public void setOlBizTypeCode(String olBizTypeCode) {
 		this.olBizTypeCode = olBizTypeCode;
+	}
+
+	public String getOnlineDrugChnlAppId() {
+		return this.onlineDrugChnlAppId;
+	}
+	public void setOnlineDrugChnlAppId(String onlineDrugChnlAppId) {
+		this.onlineDrugChnlAppId = onlineDrugChnlAppId;
 	}
 
 	public String getOpenId() {

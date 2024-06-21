@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝租车门店报价
  *
  * @author auto create
- * @since 1.0, 2024-06-05 17:53:52
+ * @since 1.0, 2024-06-19 11:57:47
  */
 public class RentCarStoreQuotation extends AlipayObject {
 
-	private static final long serialVersionUID = 7385728272437364844L;
+	private static final long serialVersionUID = 8793319423185551265L;
 
 	/**
 	 * 评论数（取用户对商户评论数的总和）
@@ -39,6 +39,12 @@ public class RentCarStoreQuotation extends AlipayObject {
 	 */
 	@ApiField("easy_card_usable_day_count")
 	private Long easyCardUsableDayCount;
+
+	/**
+	 * 费用明细，每项费用都是优惠前的金额，请确保费用明细中所有金额加起来等于总金额totalAmount
+	 */
+	@ApiField("fee_info")
+	private RentCarOrderFeeInfo feeInfo;
 
 	/**
 	 * isv优惠金额，单位分。仅用于展示，不会参与到优惠计算中
@@ -71,7 +77,7 @@ public class RentCarStoreQuotation extends AlipayObject {
 	private String serviceScore;
 
 	/**
-	 * 特色服务的列表，特色服务枚举值见 https://adccloud.yuque.com/adccloud/aqkbzc/bg8fiw#bO71H
+	 * 特色服务的列表，特色服务枚举值见 <a href="https://adccloud.yuque.com/adccloud/aqkbzc/bg8fiw#bO71H">特色服务枚举</a>
 	 */
 	@ApiListField("special_services")
 	@ApiField("string")
@@ -147,6 +153,13 @@ public class RentCarStoreQuotation extends AlipayObject {
 	}
 	public void setEasyCardUsableDayCount(Long easyCardUsableDayCount) {
 		this.easyCardUsableDayCount = easyCardUsableDayCount;
+	}
+
+	public RentCarOrderFeeInfo getFeeInfo() {
+		return this.feeInfo;
+	}
+	public void setFeeInfo(RentCarOrderFeeInfo feeInfo) {
+		this.feeInfo = feeInfo;
 	}
 
 	public Long getIsvDiscountAmount() {

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CardOrderBatchQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 7161222439246687956L;
+	private static final long serialVersionUID = 8689386839178697725L;
 
 	/**
 	 * 用于区分订购单的取消类型

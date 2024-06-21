@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KoubeiCateringKbcodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5514283725114433249L;
+	private static final long serialVersionUID = 5837411783765338521L;
 
 	/**
 	 * 口碑码绑定的门店或者桌号信息列表

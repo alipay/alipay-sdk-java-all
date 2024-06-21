@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * isv解绑设备
  *
  * @author auto create
- * @since 1.0, 2023-03-06 14:44:24
+ * @since 1.0, 2024-06-20 16:31:51
  */
 public class AlipayOpenIotmbsIsvdeviceUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2346183512667656953L;
+	private static final long serialVersionUID = 4255623577919995192L;
 
 	/**
 	 * project_id+酒店项目id

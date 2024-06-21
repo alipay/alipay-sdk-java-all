@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 落地页信息
  *
  * @author auto create
- * @since 1.0, 2024-04-10 15:18:56
+ * @since 1.0, 2024-06-19 15:32:16
  */
 public class LandingTypeDto extends AlipayObject {
 
-	private static final long serialVersionUID = 5618842118392899984L;
+	private static final long serialVersionUID = 4631319257829831376L;
 
 	/**
 	 * 活动列表
@@ -46,6 +46,13 @@ public class LandingTypeDto extends AlipayObject {
 	 */
 	@ApiField("landing_url")
 	private String landingUrl;
+
+	/**
+	 * 商品视频信息
+	 */
+	@ApiListField("product_videos")
+	@ApiField("video_info")
+	private List<VideoInfo> productVideos;
 
 	public List<LandingActDto> getLandingAct() {
 		return this.landingAct;
@@ -80,6 +87,13 @@ public class LandingTypeDto extends AlipayObject {
 	}
 	public void setLandingUrl(String landingUrl) {
 		this.landingUrl = landingUrl;
+	}
+
+	public List<VideoInfo> getProductVideos() {
+		return this.productVideos;
+	}
+	public void setProductVideos(List<VideoInfo> productVideos) {
+		this.productVideos = productVideos;
 	}
 
 }
