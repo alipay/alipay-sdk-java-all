@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SearchOrderCreateRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 3737765376883575395L;
+	private static final long serialVersionUID = 8372557399893824742L;
 
 	/**
 	 * 创建方式

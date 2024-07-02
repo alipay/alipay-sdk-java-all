@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 转账签约申请
  *
  * @author auto create
- * @since 1.0, 2023-09-25 17:38:30
+ * @since 1.0, 2024-06-24 16:30:51
  */
 public class AlipayCommerceEcTransAuthorizeApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5342476591499467651L;
+	private static final long serialVersionUID = 8451538732891491684L;
 
 	/**
 	 * 企业ID

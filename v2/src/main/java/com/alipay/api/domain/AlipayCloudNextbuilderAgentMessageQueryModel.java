@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询消息列表
  *
  * @author auto create
- * @since 1.0, 2024-06-04 17:41:53
+ * @since 1.0, 2024-06-26 17:41:40
  */
 public class AlipayCloudNextbuilderAgentMessageQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6211182246217785387L;
+	private static final long serialVersionUID = 4653255159341189989L;
 
 	/**
 	 * AI创作平台agentId
@@ -26,6 +26,12 @@ public class AlipayCloudNextbuilderAgentMessageQueryModel extends AlipayObject {
 	private String conversationId;
 
 	/**
+	 * 来源，例如小程序id
+	 */
+	@ApiField("from_source")
+	private String fromSource;
+
+	/**
 	 * 顺序（升序or降序）
 	 */
 	@ApiField("order")
@@ -36,6 +42,12 @@ public class AlipayCloudNextbuilderAgentMessageQueryModel extends AlipayObject {
 	 */
 	@ApiField("order_by")
 	private String orderBy;
+
+	/**
+	 * 用户标识
+	 */
+	@ApiField("outer_user_id")
+	private String outerUserId;
 
 	/**
 	 * 当前页码，从1开始，默认为1
@@ -63,6 +75,13 @@ public class AlipayCloudNextbuilderAgentMessageQueryModel extends AlipayObject {
 		this.conversationId = conversationId;
 	}
 
+	public String getFromSource() {
+		return this.fromSource;
+	}
+	public void setFromSource(String fromSource) {
+		this.fromSource = fromSource;
+	}
+
 	public String getOrder() {
 		return this.order;
 	}
@@ -75,6 +94,13 @@ public class AlipayCloudNextbuilderAgentMessageQueryModel extends AlipayObject {
 	}
 	public void setOrderBy(String orderBy) {
 		this.orderBy = orderBy;
+	}
+
+	public String getOuterUserId() {
+		return this.outerUserId;
+	}
+	public void setOuterUserId(String outerUserId) {
+		this.outerUserId = outerUserId;
 	}
 
 	public Long getPageNum() {

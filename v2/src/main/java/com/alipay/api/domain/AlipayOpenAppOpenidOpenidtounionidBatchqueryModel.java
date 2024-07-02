@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenAppOpenidOpenidtounionidBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6333277529999232736L;
+	private static final long serialVersionUID = 4748725641322312289L;
 
 	/**
 	 * 待查询转换的openid列表

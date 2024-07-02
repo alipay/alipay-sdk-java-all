@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 拓展字段
  *
  * @author auto create
- * @since 1.0, 2024-05-27 14:20:51
+ * @since 1.0, 2024-07-01 20:17:50
  */
 public class BillSendExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2779582764224774153L;
+	private static final long serialVersionUID = 5143145642644268866L;
 
 	/**
 	 * 学校外标编号
@@ -27,7 +27,7 @@ public class BillSendExtInfo extends AlipayObject {
 	private String orderPayType;
 
 	/**
-	 * 分账金额
+	 * 分账金额，单位：元
 	 */
 	@ApiField("royalty_amount")
 	private String royaltyAmount;
@@ -39,7 +39,7 @@ public class BillSendExtInfo extends AlipayObject {
 	private String schoolName;
 
 	/**
-	 * 2088xxx
+	 * 分账收入户PID
 	 */
 	@ApiField("trans_in_pid")
 	private String transInPid;

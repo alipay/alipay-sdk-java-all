@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创意查询分页信息
  *
  * @author auto create
- * @since 1.0, 2024-06-05 14:55:05
+ * @since 1.0, 2024-07-02 17:41:28
  */
 public class PageInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5361115269157691427L;
+	private static final long serialVersionUID = 7195826163516889887L;
 
 	/**
 	 * 分页查询当前页

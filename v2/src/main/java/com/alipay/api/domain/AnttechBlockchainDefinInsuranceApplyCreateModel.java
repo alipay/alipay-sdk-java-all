@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保险投保
  *
  * @author auto create
- * @since 1.0, 2024-06-19 11:09:47
+ * @since 1.0, 2024-06-24 19:58:51
  */
 public class AnttechBlockchainDefinInsuranceApplyCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6827447913369369294L;
+	private static final long serialVersionUID = 2478677634837265282L;
 
 	/**
 	 * 投保基本信息

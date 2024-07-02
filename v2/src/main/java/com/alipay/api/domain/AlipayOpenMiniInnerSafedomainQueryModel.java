@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 一二方查询安全域名
  *
  * @author auto create
- * @since 1.0, 2022-04-26 14:54:50
+ * @since 1.0, 2024-06-28 10:35:29
  */
 public class AlipayOpenMiniInnerSafedomainQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4113766489849827716L;
+	private static final long serialVersionUID = 6476648933751645823L;
 
 	/**
 	 * 业务来源

@@ -7,39 +7,39 @@ import com.alipay.api.internal.mapping.ApiField;
  * 监管子户来账记录查询
  *
  * @author auto create
- * @since 1.0, 2024-05-30 10:14:20
+ * @since 1.0, 2024-06-28 10:13:14
  */
 public class AlipayEbppIndustrySupervisionBillBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3717931465787596725L;
+	private static final long serialVersionUID = 3764486924429833181L;
 
 	/**
-	 * 业务场景
+	 * 不同的业务场景下对应不同的业务规则
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
 
 	/**
-	 * YYYYMMDD
-专款钱包场景下 为 yyyyMMddHHmmss
+	 * 查询的账单记录结束时间
 	 */
 	@ApiField("end_time")
 	private String endTime;
 
 	/**
-	 * 企业监管子户账号
+	 * 本次查询账单的对应子户账户户号
+对应开户接口 account.create 中返回的「子户账户户号 merchant_account_no」
 	 */
 	@ApiField("merchant_account_no")
 	private String merchantAccountNo;
 
 	/**
-	 * 查询分页开始索引，从1开始
+	 * 查询页码
 	 */
 	@ApiField("page_index")
 	private Long pageIndex;
 
 	/**
-	 * 分页大小 1
+	 * 每页记录数
 	 */
 	@ApiField("page_size")
 	private Long pageSize;
@@ -52,9 +52,7 @@ public class AlipayEbppIndustrySupervisionBillBatchqueryModel extends AlipayObje
 	private String scene;
 
 	/**
-	 * YYYYMMDD
-
-专款钱包场景下 为 yyyyMMddHHmmss
+	 * 查询的账单记录开始时间
 	 */
 	@ApiField("start_time")
 	private String startTime;

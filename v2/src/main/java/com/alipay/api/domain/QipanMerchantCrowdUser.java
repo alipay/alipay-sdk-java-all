@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
 
  *
  * @author auto create
- * @since 1.0, 2023-06-29 11:39:24
+ * @since 1.0, 2024-07-01 11:11:17
  */
 public class QipanMerchantCrowdUser extends AlipayObject {
 
-	private static final long serialVersionUID = 4149783879666582444L;
+	private static final long serialVersionUID = 2136215738674976918L;
 
 	/**
 	 * 支付宝小程序app_id，当encrypt_identity_type=OPEN_ID此值必传，且应传入openId对应的appId

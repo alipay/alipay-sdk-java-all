@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 推广城市规则
  *
  * @author auto create
- * @since 1.0, 2023-12-05 11:46:13
+ * @since 1.0, 2024-06-26 10:59:20
  */
 public class DeliveryCityCodeRule extends AlipayObject {
 
-	private static final long serialVersionUID = 5266822867981383133L;
+	private static final long serialVersionUID = 6666343464245422887L;
 
 	/**
 	 * 是否全国。只允许填true，否则不填。
@@ -23,7 +23,7 @@ public class DeliveryCityCodeRule extends AlipayObject {
 	private Boolean allCity;
 
 	/**
-	 * 城市编码。请按照https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx 表格中内容填写。 （参考资料： http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/）
+	 * 城市编码。请按照<a href ="https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx">https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx</a>  表格中内容填写。 （参考资料： <a href ="http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/">http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/</a> ）
 	 */
 	@ApiListField("city_codes")
 	@ApiField("string")

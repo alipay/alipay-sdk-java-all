@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 无线转账支付接口
  *
  * @author auto create
- * @since 1.0, 2024-03-04 16:56:03
+ * @since 1.0, 2024-07-01 10:27:16
  */
 public class AlipayFundTransAppPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4656553664615696144L;
+	private static final long serialVersionUID = 2857518467449525784L;
 
 	/**
 	 * 描述特定的业务场景，可传值如下：

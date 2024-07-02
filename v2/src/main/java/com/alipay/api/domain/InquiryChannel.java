@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 医生在线问诊渠道（问诊方式，价格，服务链接）
  *
  * @author auto create
- * @since 1.0, 2024-04-15 14:40:17
+ * @since 1.0, 2024-06-25 15:02:50
  */
 public class InquiryChannel extends AlipayObject {
 
-	private static final long serialVersionUID = 6746299475189211926L;
+	private static final long serialVersionUID = 2152639436762973937L;
 
 	/**
 	 * 问诊医生排班信息列表

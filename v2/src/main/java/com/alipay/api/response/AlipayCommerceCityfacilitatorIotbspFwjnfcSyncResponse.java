@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.cityfacilitator.iotbsp.fwjnfc.sync response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-27 16:22:02
+ * @since 1.0, 2024-07-02 12:06:15
  */
 public class AlipayCommerceCityfacilitatorIotbspFwjnfcSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3248161854391485242L;
+	private static final long serialVersionUID = 2713219564747114764L;
 
 	/** 
 	 * NFC烧录url

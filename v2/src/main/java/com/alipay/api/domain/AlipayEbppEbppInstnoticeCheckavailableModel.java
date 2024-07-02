@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppEbppInstnoticeCheckavailableModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6729249711917234339L;
+	private static final long serialVersionUID = 2748193818337892975L;
 
 	/**
 	 * 流程的唯一标识，用来查询公告的执行状态，是否生效。

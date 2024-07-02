@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CardPeriodPriceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7422825348119814939L;
+	private static final long serialVersionUID = 5732468187236192662L;
 
 	/**
 	 * 单次原价

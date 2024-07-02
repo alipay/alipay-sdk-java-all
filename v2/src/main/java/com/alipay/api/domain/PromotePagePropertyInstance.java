@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 留资属性实例信息列表
  *
  * @author auto create
- * @since 1.0, 2024-06-05 14:53:43
+ * @since 1.0, 2024-07-02 17:41:40
  */
 public class PromotePagePropertyInstance extends AlipayObject {
 
-	private static final long serialVersionUID = 7631142237863453538L;
+	private static final long serialVersionUID = 4231137447561642287L;
 
 	/**
 	 * 留资属性key

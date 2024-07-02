@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 投放单素材资源
  *
  * @author auto create
- * @since 1.0, 2023-05-19 10:59:37
+ * @since 1.0, 2024-06-26 10:59:20
  */
 public class DeliverySingleMaterial extends AlipayObject {
 
-	private static final long serialVersionUID = 7779832491856857532L;
+	private static final long serialVersionUID = 7859589943444876229L;
 
 	/**
-	 * 投放计划图片素材。通过接口alipay.marketing.material.image.upload上传图片返回的resource_id。
+	 * 投放计划图片素材。通过接口<a href ="https://opendocs.alipay.com/open/049d64?pathHash=a411214d&scene=928cd58dc06f4466b9ad657776327a06">alipay.marketing.material.image.upload</a>上传图片返回的resource_id。
 	 */
 	@ApiField("delivery_image")
 	private String deliveryImage;

@@ -7,15 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政务监管账户创建
  *
  * @author auto create
- * @since 1.0, 2024-05-30 10:14:53
+ * @since 1.0, 2024-06-28 09:58:16
  */
 public class AlipayEbppIndustrySupervisionAccountCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7537222896317847334L;
+	private static final long serialVersionUID = 8648792985622973293L;
 
 	/**
-	 * 业务场景 + 关联账户号 + 待开通子户类型。
-三个唯一确定一个最终开通的子户账号
+	 * 不同的业务场景下对应不同的业务规则
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
@@ -34,77 +33,73 @@ public class AlipayEbppIndustrySupervisionAccountCreateModel extends AlipayObjec
 	private String merchantAlipayUid;
 
 	/**
-	 * 外部用户id，专款钱包场景下，根据当前字段创建对应专款钱包账户。
+	 * 外部用户id。专款钱包场景下，根据当前字段创建对应唯一的子户账户户号。根据业务诉求，可以传入调用方自己维护的冻资订单单号或者调用方自己维护的用户id
 	 */
 	@ApiField("out_user_id")
 	private String outUserId;
 
 	/**
-	 * 待开子户对关联账户名
+	 * 协会、商户在银行侧自行创建的结算户账户户名
 	 */
 	@ApiField("parent_ext_account_name")
 	private String parentExtAccountName;
 
 	/**
-	 * 待开子户的关联账户号。
-驾校在网商申请的最终结算户。
+	 * 协会、商户在银行侧自行创建的结算户账户户号
 	 */
 	@ApiField("parent_ext_account_no")
 	private String parentExtAccountNo;
 
 	/**
-	 * 专款钱包场景下钱包子户的收方客户类型，
-对公账户需要填入收方账户联行号
+	 * 业务场景为专款钱包 SPECIAL_FUNDS 场景下，收款方客户类型对公账户需要填入收款方账户联行号
 	 */
 	@ApiField("payee_account_type")
 	private String payeeAccountType;
 
 	/**
-	 * 专款钱包场景下，当收方账户为对公账户，则需要填入收方账户联行号
+	 * 业务场景为专款钱包 SPECIAL_FUNDS 场景下，当收款方账户为对公账户，则需要填入收款方账户联行号
 	 */
 	@ApiField("payee_contact_line")
 	private String payeeContactLine;
 
 	/**
-	 * 专款钱包场景下钱包子户的收方账户ID
+	 * 业务场景为专款钱包 SPECIAL_FUNDS 场景下。转入子户时的收款方账户户号
 	 */
 	@ApiField("payee_participant_id")
 	private String payeeParticipantId;
 
 	/**
-	 * 收方账户名
+	 * 业务场景为专款钱包 SPECIAL_FUNDS 场景下。子户转出时的收款方账户户名
 	 */
 	@ApiField("payee_participant_name")
 	private String payeeParticipantName;
 
 	/**
-	 * 专款钱包场景下钱包子户的收方账户类型
+	 * 业务场景为专款钱包 SPECIAL_FUNDS 场景下。子户转出时的收款方账户类型
 	 */
 	@ApiField("payee_participant_type")
 	private String payeeParticipantType;
 
 	/**
-	 * 专款钱包场景下钱包子户的付方账户ID
+	 * 业务场景为专款钱包 SPECIAL_FUNDS 场景下。后续资金转入子户时的付款方账户户号
 	 */
 	@ApiField("payer_participant_id")
 	private String payerParticipantId;
 
 	/**
-	 * 专款钱包场景下钱包子户的付方账户名
+	 * 业务场景为专款钱包 SPECIAL_FUNDS 场景下。转入子户时的付款方账户户名
 	 */
 	@ApiField("payer_participant_name")
 	private String payerParticipantName;
 
 	/**
-	 * 专款钱包场景下钱包子户的付方账户类型
+	 * 业务场景为专款钱包 SPECIAL_FUNDS 场景下。转入子户时的付款方账户类型
 	 */
 	@ApiField("payer_participant_type")
 	private String payerParticipantType;
 
 	/**
 	 * 专款资金金额，整数，单位：分
-
-资金划拨时根据本次输入金额进行划付校验
 	 */
 	@ApiField("special_funds_amount")
 	private Long specialFundsAmount;
@@ -116,9 +111,7 @@ public class AlipayEbppIndustrySupervisionAccountCreateModel extends AlipayObjec
 	private String specialFundsCurrency;
 
 	/**
-	 * 业务场景+ 待开子户关联账户+待开通子户类型
-biz_scene + parent_ext_account_no +sub_account_type 
-最终申请出唯一的对应子户。
+	 * 本次在银行侧创建的子户账户类型。根据业务诉求选择对应账户类型
 	 */
 	@ApiField("sub_account_type")
 	private String subAccountType;

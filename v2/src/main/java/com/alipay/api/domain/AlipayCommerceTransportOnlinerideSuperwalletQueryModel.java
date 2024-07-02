@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 网约车_超级打车卡信息查询
  *
  * @author auto create
- * @since 1.0, 2024-05-11 10:09:58
+ * @since 1.0, 2024-06-28 13:47:52
  */
 public class AlipayCommerceTransportOnlinerideSuperwalletQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2115427218488411151L;
+	private static final long serialVersionUID = 4754313623575967991L;
 
 	/**
 	 * 业务请求来源，

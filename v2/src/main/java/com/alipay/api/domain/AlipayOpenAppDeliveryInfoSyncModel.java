@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 履约信息同步
  *
  * @author auto create
- * @since 1.0, 2023-11-24 14:52:16
+ * @since 1.0, 2024-06-27 18:02:51
  */
 public class AlipayOpenAppDeliveryInfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4568288973244713167L;
+	private static final long serialVersionUID = 6539274872232813245L;
 
 	/**
 	 * 履约属性，从模板中查询(alipay.open.app.delivery.template.query)得到，is_required=1时表示属性必填。

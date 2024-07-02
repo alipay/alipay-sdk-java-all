@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudpromo.mall.renfundorder.create request
  * 
  * @author auto create
- * @since 1.0, 2024-06-04 20:17:03
+ * @since 1.0, 2024-07-02 17:37:05
  */
 public class AlipayCloudCloudpromoMallRenfundorderCreateRequest implements AlipayRequest<AlipayCloudCloudpromoMallRenfundorderCreateResponse> {
 

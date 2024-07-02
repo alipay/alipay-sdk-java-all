@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询历史会话列表
  *
  * @author auto create
- * @since 1.0, 2024-05-23 14:58:50
+ * @since 1.0, 2024-06-28 17:32:17
  */
 public class AlipayCloudNextbuilderAgentConversationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3833946214618411184L;
+	private static final long serialVersionUID = 6156129276639868873L;
 
 	/**
 	 * 青蓝平台创建的Agent 的 id，可从青蓝平台页面获取
 	 */
 	@ApiField("agent_id")
 	private String agentId;
+
+	/**
+	 * 来源，例如小程序id
+	 */
+	@ApiField("from_source")
+	private String fromSource;
 
 	/**
 	 * 开始时间戳，闭区间
@@ -54,6 +60,13 @@ public class AlipayCloudNextbuilderAgentConversationQueryModel extends AlipayObj
 	}
 	public void setAgentId(String agentId) {
 		this.agentId = agentId;
+	}
+
+	public String getFromSource() {
+		return this.fromSource;
+	}
+	public void setFromSource(String fromSource) {
+		this.fromSource = fromSource;
 	}
 
 	public Long getFromTime() {

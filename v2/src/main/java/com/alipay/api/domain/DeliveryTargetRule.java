@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 投放计划定向规则。
  *
  * @author auto create
- * @since 1.0, 2023-11-21 22:22:32
+ * @since 1.0, 2024-06-26 10:59:20
  */
 public class DeliveryTargetRule extends AlipayObject {
 
-	private static final long serialVersionUID = 4575614586687477629L;
+	private static final long serialVersionUID = 7427732367526658253L;
 
 	/**
 	 * 指定品牌id。
@@ -63,7 +63,7 @@ public class DeliveryTargetRule extends AlipayObject {
 
 	/**
 	 * 推荐定向曝光订单优惠标记。
-1. 创建交易订单时，上传符合的订单优惠标。在业务参数信息“business_params”的子字段“delivery_promo_tags”填充订单优惠标。“统一收单交易支付接口”详情查看：https://opendocs.alipay.com/open/02ekfp?scene=32。
+1. 创建交易订单时，上传符合的订单优惠标。在业务参数信息“business_params”的子字段“delivery_promo_tags”填充订单优惠标。“统一收单交易支付接口”详情查看：<a href ="https://opendocs.alipay.com/open/02ekfp?scene=32"> https://opendocs.alipay.com/open/02ekfp?scene=32</a> 
 2. 订单优惠标，检验规则：
 * 单个优惠标最大长度32字节。多个标记值以英文逗号分隔。
 * 单个优惠标仅支持字母/数字/下划线。

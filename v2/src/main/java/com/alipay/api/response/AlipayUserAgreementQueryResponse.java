@@ -1,6 +1,9 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.ExecutionPlan;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.agreement.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-30 10:54:34
+ * @since 1.0, 2024-06-25 21:07:04
  */
 public class AlipayUserAgreementQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8736981365695124391L;
+	private static final long serialVersionUID = 8642873174618279421L;
 
 	/** 
 	 * 用户签约成功后的协议号
@@ -37,6 +40,13 @@ public class AlipayUserAgreementQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("device_id")
 	private String deviceId;
+
+	/** 
+	 * 还款计划列表
+	 */
+	@ApiListField("execution_plans")
+	@ApiField("execution_plan")
+	private List<ExecutionPlan> executionPlans;
 
 	/** 
 	 * 代扣协议中标示用户的唯一签约号(确保在商户系统中唯一)。当入参中传了此参数时返回。
@@ -166,6 +176,13 @@ public class AlipayUserAgreementQueryResponse extends AlipayResponse {
 	}
 	public String getDeviceId( ) {
 		return this.deviceId;
+	}
+
+	public void setExecutionPlans(List<ExecutionPlan> executionPlans) {
+		this.executionPlans = executionPlans;
+	}
+	public List<ExecutionPlan> getExecutionPlans( ) {
+		return this.executionPlans;
 	}
 
 	public void setExternalAgreementNo(String externalAgreementNo) {

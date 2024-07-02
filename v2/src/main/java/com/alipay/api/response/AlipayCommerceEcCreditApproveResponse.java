@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.credit.approve response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-31 15:17:03
+ * @since 1.0, 2024-06-24 21:07:04
  */
 public class AlipayCommerceEcCreditApproveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3711292332521389635L;
+	private static final long serialVersionUID = 2784461161531547248L;
 
 	/** 
 	 * 结果

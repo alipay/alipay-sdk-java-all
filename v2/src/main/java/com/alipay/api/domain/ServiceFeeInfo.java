@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务费信息列表
  *
  * @author auto create
- * @since 1.0, 2023-10-31 10:16:57
+ * @since 1.0, 2024-06-24 21:24:15
  */
 public class ServiceFeeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7294195952677947936L;
+	private static final long serialVersionUID = 5638799351912966217L;
 
 	/**
 	 * 服务费金额
@@ -35,7 +35,7 @@ public class ServiceFeeInfo extends AlipayObject {
 	private String billType;
 
 	/**
-	 * 收费时间
+	 * 执行收费的时间
 	 */
 	@ApiField("execute_dt")
 	private Date executeDt;

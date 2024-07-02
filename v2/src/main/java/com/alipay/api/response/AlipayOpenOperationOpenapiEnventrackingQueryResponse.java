@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.operation.openapi.enventracking.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-31 15:52:03
+ * @since 1.0, 2024-06-27 11:20:27
  */
 public class AlipayOpenOperationOpenapiEnventrackingQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3514484726218998948L;
+	private static final long serialVersionUID = 1858751845198892565L;
 
 	
 

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntLinkeDevopsMobiledeviceReturnResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5146161927477125818L;
+	private static final long serialVersionUID = 2686738237923716267L;
 
 	
 

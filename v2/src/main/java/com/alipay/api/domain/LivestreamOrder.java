@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LivestreamOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 6747494819597373225L;
+	private static final long serialVersionUID = 2562427718235462742L;
 
 	/**
 	 * 订单实付额

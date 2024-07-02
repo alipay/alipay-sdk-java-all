@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 二维码路由规则绑定记录openapi查询模型
  *
  * @author auto create
- * @since 1.0, 2022-01-17 11:04:39
+ * @since 1.0, 2024-06-25 19:50:15
  */
 public class QrCodeRouteGroup extends AlipayObject {
 
-	private static final long serialVersionUID = 3651411422947753619L;
+	private static final long serialVersionUID = 1314535758992627356L;
 
 	/**
 	 * 匹配规则，EXACT（精确匹配）、FUZZY（模糊匹配）、PATTERN（模式匹配）\\（如：配置二维码地址为https://www.alipay.com/my?id=123，当用户扫这个地址的二维码可唤起小程序）。 模糊匹配：根据填写的二维码地址模糊匹配，只要地址前缀匹配即可唤起小程序（如：配置二维码地址为https://www.alipay.com/my/，当用户扫的二维码地址为https://www.alipay.com/my/id=123,可唤起小程序）。

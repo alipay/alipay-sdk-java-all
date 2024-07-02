@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 专户账单查询
  *
  * @author auto create
- * @since 1.0, 2023-09-26 16:11:29
+ * @since 1.0, 2024-06-25 20:25:18
  */
 public class AlipayCommerceEcTransBillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8584624414542624238L;
+	private static final long serialVersionUID = 4125425818492138963L;
+
+	/**
+	 * 资金专户账号ID
+	 */
+	@ApiField("account_book_id")
+	private String accountBookId;
 
 	/**
 	 * 企业ID
@@ -26,10 +32,18 @@ public class AlipayCommerceEcTransBillQueryModel extends AlipayObject {
 	private String outBizNo;
 
 	/**
-	 * 该资金专户的业务场景码
+	 * 该资金专户的业务场景码 当前字段已废弃(入参中scene易理解，使用资金专户ID（account_book_id）替代)
 	 */
 	@ApiField("scene")
+	@Deprecated
 	private String scene;
+
+	public String getAccountBookId() {
+		return this.accountBookId;
+	}
+	public void setAccountBookId(String accountBookId) {
+		this.accountBookId = accountBookId;
+	}
 
 	public String getEnterpriseId() {
 		return this.enterpriseId;

@@ -7,17 +7,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * 转账的收、付款参与方
  *
  * @author auto create
- * @since 1.0, 2024-04-26 11:31:44
+ * @since 1.0, 2024-06-26 15:26:17
  */
 public class Participant extends AlipayObject {
 
-	private static final long serialVersionUID = 4578396513845281265L;
+	private static final long serialVersionUID = 3672648793169959492L;
 
 	/**
 	 * 如果identity_type为BANKCARD_NO需传递该参数，涉及属性如下： inst_name 银行卡卡开户银行 inst_province 银行所在省份 inst_city 银行所在市 inst_branch_name 收款银行所属支行 bank_code 银行卡支行联行号 account_type 银行卡账户类型 1:对公 2：对私
 	 */
 	@ApiField("bankcard_ext_info")
 	private BankcardExtInfo bankcardExtInfo;
+
+	/**
+	 * 参与方的证件号，支持身份证号、护照号。
+	 */
+	@ApiField("cert_no")
+	private String certNo;
+
+	/**
+	 * 参与方的证件类型。
+	 */
+	@ApiField("cert_type")
+	private String certType;
 
 	/**
 	 * 描述参与方信息的扩展属性，使用前请与支付宝工程师确认
@@ -61,6 +73,20 @@ merchant_user_mobile：商户端的手机号
 	}
 	public void setBankcardExtInfo(BankcardExtInfo bankcardExtInfo) {
 		this.bankcardExtInfo = bankcardExtInfo;
+	}
+
+	public String getCertNo() {
+		return this.certNo;
+	}
+	public void setCertNo(String certNo) {
+		this.certNo = certNo;
+	}
+
+	public String getCertType() {
+		return this.certType;
+	}
+	public void setCertType(String certType) {
+		this.certType = certType;
 	}
 
 	public String getExtInfo() {

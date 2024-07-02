@@ -7,11 +7,18 @@ import com.alipay.api.internal.mapping.ApiField;
  * 回收资金明细
  *
  * @author auto create
- * @since 1.0, 2024-06-05 10:50:57
+ * @since 1.0, 2024-06-26 15:49:53
  */
 public class RecycleFundsInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1717772171672242852L;
+	private static final long serialVersionUID = 3461319861916854579L;
+
+	/**
+	 * 支付宝支付资金流水号(代扣交易不填写)
+对应转账接口的出参pay_fund_order_id
+	 */
+	@ApiField("fund_serial_no")
+	private String fundSerialNo;
 
 	/**
 	 * 转账类型(prepay-预付款转账, balance-尾款转账, withhold-代扣交易)
@@ -36,6 +43,13 @@ public class RecycleFundsInfo extends AlipayObject {
 	 */
 	@ApiField("trade_time")
 	private String tradeTime;
+
+	public String getFundSerialNo() {
+		return this.fundSerialNo;
+	}
+	public void setFundSerialNo(String fundSerialNo) {
+		this.fundSerialNo = fundSerialNo;
+	}
 
 	public String getFundsType() {
 		return this.fundsType;

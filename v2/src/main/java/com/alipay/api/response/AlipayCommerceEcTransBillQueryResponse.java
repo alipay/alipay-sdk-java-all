@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.trans.bill.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-26 16:16:45
+ * @since 1.0, 2024-06-25 20:27:04
  */
 public class AlipayCommerceEcTransBillQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1715956811626614342L;
+	private static final long serialVersionUID = 1624679128348729951L;
 
 	/** 
 	 * 支付宝转账订单号
@@ -58,7 +58,9 @@ public class AlipayCommerceEcTransBillQueryResponse extends AlipayResponse {
 	private String outBizNo;
 
 	/** 
-	 * 单据状态
+	 * 转账：处理成功、处理失败、处理中、退票
+充值：待操作、处理成功、处理失败
+提现：处理中、处理成功、处理失败
 	 */
 	@ApiField("status")
 	private String status;

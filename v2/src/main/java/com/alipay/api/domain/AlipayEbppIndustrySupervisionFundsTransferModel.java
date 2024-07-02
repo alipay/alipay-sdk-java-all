@@ -7,20 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政务监管资金划拨
  *
  * @author auto create
- * @since 1.0, 2024-05-30 10:13:59
+ * @since 1.0, 2024-06-28 09:58:16
  */
 public class AlipayEbppIndustrySupervisionFundsTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4894885516327874545L;
+	private static final long serialVersionUID = 3876379961267574172L;
 
 	/**
-	 * 资金划拨的金额（单位分）
+	 * 资金划拨的金额。单位：分
 	 */
 	@ApiField("amount")
 	private Long amount;
 
 	/**
-	 * 业务场景
+	 * 不同的业务场景下对应不同的业务规则
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
@@ -32,67 +32,63 @@ public class AlipayEbppIndustrySupervisionFundsTransferModel extends AlipayObjec
 	private String currency;
 
 	/**
-	 * 外部流水号确保每一笔资金划拨请求幂等。
+	 * 商户内部生成的本次资金划拨请求的请求流水号
 	 */
 	@ApiField("out_trade_no")
 	private String outTradeNo;
 
 	/**
-	 * 保证金退款场景下，填收方账户类型：
-02 代表对公户。
-01 代表对私户
-监管资金转出场景必填
+	 * 表示收款方账户是对公账户还是对私账户
 	 */
 	@ApiField("payee_account_type")
 	private String payeeAccountType;
 
 	/**
-	 * 保证金退款场景下，填收方账户所在行的联行号，本次为支付宝联行号。
-监管资金转出，且payee_account_type 为02时
+	 * 部分资金划拨场景，且收款方为对公账户时，对应收方账户所在行的联行号
 	 */
 	@ApiField("payee_contact_line")
 	private String payeeContactLine;
 
 	/**
-	 * 收方参与者ID
+	 * 收款方账户户号
 	 */
 	@ApiField("payee_participant_id")
 	private String payeeParticipantId;
 
 	/**
-	 * 保证金退款场景下，收方户名必填
+	 * 资金划拨请求中的收方账户户名
 	 */
 	@ApiField("payee_participant_name")
 	private String payeeParticipantName;
 
 	/**
-	 * 收方参与者类型
+	 * 收款方账户类型
 	 */
 	@ApiField("payee_participant_type")
 	private String payeeParticipantType;
 
 	/**
-	 * 付方参与者ID
+	 * 付款方账户户号
 	 */
 	@ApiField("payer_participant_id")
 	private String payerParticipantId;
 
 	/**
-	 * 监管子户：CUSTODY_SUB_ACCOUNT
-保证金户：DEPOSIT_ACCOUNT
+	 * 付款方账户类型
 	 */
 	@ApiField("payer_participant_type")
 	private String payerParticipantType;
 
 	/**
-	 * 保证金退保至支付宝ACS账户时需要经过监管子户过桥。该场景下，当前字段需要填写驾校监管子户号
+	 * 特定资金划拨场景下，中间过渡户的账户户号 
+保证金退保至支付宝ACS账户时需要经过监管子户过桥。该场景下，当前字段需要填写 监管子户户号
 	 */
 	@ApiField("relate_participant_id")
 	private String relateParticipantId;
 
 	/**
-	 * 在保证金退回场景下，需要有监管子户过桥。
-当前字段必填且为驾校监管子户
+	 * 资金划拨过程中，中间涉及到的过渡户的账户类型 
+在保证金退回场景下，需要有监管子户过桥。 当前字段必填且为「监管子户 CUSTODY_SUB_ACCOUNT 」
 	 */
 	@ApiField("relate_participant_type")
 	private String relateParticipantType;

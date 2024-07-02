@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SealPosition extends AlipayObject {
 
-	private static final long serialVersionUID = 5479574425691768165L;
+	private static final long serialVersionUID = 2184198164559378796L;
 
 	/**
 	 * 关键字

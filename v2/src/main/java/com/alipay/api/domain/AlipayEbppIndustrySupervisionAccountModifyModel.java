@@ -11,16 +11,16 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppIndustrySupervisionAccountModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2294637753581627596L;
+	private static final long serialVersionUID = 7428232682679391889L;
 
 	/**
-	 * 专款钱包场景下开设的子户户号
+	 * 待修改属性的子户账户户号。对应「政务监管账户创建」接口返回的 「子户账户户号 merchant_account_no 」
 	 */
 	@ApiField("account_no")
 	private String accountNo;
 
 	/**
-	 * 业务场景
+	 * 不同的业务场景下对应不同的业务规则
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
@@ -50,37 +50,37 @@ public class AlipayEbppIndustrySupervisionAccountModifyModel extends AlipayObjec
 	private String payeeContactLine;
 
 	/**
-	 * 收方账户ID
+	 * 资金划拨支付的收款方账户户号
 	 */
 	@ApiField("payee_participant_id")
 	private String payeeParticipantId;
 
 	/**
-	 * 收方账户名
+	 * 资金划拨支付的收款方账户户名
 	 */
 	@ApiField("payee_participant_name")
 	private String payeeParticipantName;
 
 	/**
-	 * 收方账户类型
+	 * 资金划拨支付的收款方账户类型
 	 */
 	@ApiField("payee_participant_type")
 	private String payeeParticipantType;
 
 	/**
-	 * 付方账户ID
+	 * 资金转入子户时的付款方账户户号
 	 */
 	@ApiField("payer_participant_id")
 	private String payerParticipantId;
 
 	/**
-	 * 付方账户名
+	 * 资金转入子户时的付款方账户户名
 	 */
 	@ApiField("payer_participant_name")
 	private String payerParticipantName;
 
 	/**
-	 * 付方账户类型
+	 * 资金转入子户时的付款方账户类型
 	 */
 	@ApiField("payer_participant_type")
 	private String payerParticipantType;

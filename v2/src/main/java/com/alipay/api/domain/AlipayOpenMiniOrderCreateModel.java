@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 交易组件业务单创建
  *
  * @author auto create
- * @since 1.0, 2024-06-19 15:45:50
+ * @since 1.0, 2024-06-30 13:22:50
  */
 public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2139977587924546914L;
+	private static final long serialVersionUID = 7445446955326886758L;
 
 	/**
 	 * 订单收货地址
@@ -52,6 +52,12 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 	 */
 	@ApiField("buyer_open_id")
 	private String buyerOpenId;
+
+	/**
+	 * 订单确认收货相对超时时间。从发货时间开始计算。 单位d-天。 该参数数值不接受小数点， 如 10d
+	 */
+	@ApiField("confirm_timeout_express")
+	private String confirmTimeoutExpress;
 
 	/**
 	 * 买家联系人信息
@@ -198,6 +204,13 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 	}
 	public void setBuyerOpenId(String buyerOpenId) {
 		this.buyerOpenId = buyerOpenId;
+	}
+
+	public String getConfirmTimeoutExpress() {
+		return this.confirmTimeoutExpress;
+	}
+	public void setConfirmTimeoutExpress(String confirmTimeoutExpress) {
+		this.confirmTimeoutExpress = confirmTimeoutExpress;
 	}
 
 	public ContactInfoDTO getContactInfo() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC办理申请单创建或修改
  *
  * @author auto create
- * @since 1.0, 2024-06-06 20:37:50
+ * @since 1.0, 2024-06-24 21:33:17
  */
 public class AlipayCommerceTransportEtcApplyorderCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7168737324676636915L;
+	private static final long serialVersionUID = 8459721355726184325L;
 
 	/**
 	 * 支付宝订单号，提供则认为是更新
@@ -38,6 +38,14 @@ public class AlipayCommerceTransportEtcApplyorderCreateormodifyModel extends Ali
 	private String bankRuleId;
 
 	/**
+	 * 车辆类型；
+CAR：客车
+TRUCK：货车
+	 */
+	@ApiField("car_type")
+	private String carType;
+
+	/**
 	 * 办理人所在地城市编码
 	 */
 	@ApiField("city_code")
@@ -48,6 +56,12 @@ public class AlipayCommerceTransportEtcApplyorderCreateormodifyModel extends Ali
 	 */
 	@ApiField("mobile_no")
 	private String mobileNo;
+
+	/**
+	 * 车辆总车轴数；
+	 */
+	@ApiField("number_of_axles")
+	private String numberOfAxles;
 
 	/**
 	 * 蚂蚁会员统一ID
@@ -96,6 +110,12 @@ LIMEGREEN: 黄绿色。
 	 */
 	@ApiField("seller_id")
 	private String sellerId;
+
+	/**
+	 * ETC设备结算周期；
+	 */
+	@ApiField("settlement_cycle")
+	private String settlementCycle;
 
 	/**
 	 * 支付宝ETC办理套餐code。
@@ -229,6 +249,13 @@ LIMEGREEN: 黄绿色。
 		this.bankRuleId = bankRuleId;
 	}
 
+	public String getCarType() {
+		return this.carType;
+	}
+	public void setCarType(String carType) {
+		this.carType = carType;
+	}
+
 	public String getCityCode() {
 		return this.cityCode;
 	}
@@ -241,6 +268,13 @@ LIMEGREEN: 黄绿色。
 	}
 	public void setMobileNo(String mobileNo) {
 		this.mobileNo = mobileNo;
+	}
+
+	public String getNumberOfAxles() {
+		return this.numberOfAxles;
+	}
+	public void setNumberOfAxles(String numberOfAxles) {
+		this.numberOfAxles = numberOfAxles;
 	}
 
 	public String getOpenId() {
@@ -290,6 +324,13 @@ LIMEGREEN: 黄绿色。
 	}
 	public void setSellerId(String sellerId) {
 		this.sellerId = sellerId;
+	}
+
+	public String getSettlementCycle() {
+		return this.settlementCycle;
+	}
+	public void setSettlementCycle(String settlementCycle) {
+		this.settlementCycle = settlementCycle;
 	}
 
 	public String getSpuCode() {

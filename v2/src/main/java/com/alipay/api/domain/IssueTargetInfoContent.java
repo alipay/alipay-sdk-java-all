@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 员工发放额度信息列表
  *
  * @author auto create
- * @since 1.0, 2023-04-26 09:39:36
+ * @since 1.0, 2024-06-24 10:32:51
  */
 public class IssueTargetInfoContent extends AlipayObject {
 
-	private static final long serialVersionUID = 5838464666942318933L;
+	private static final long serialVersionUID = 2634989947188139215L;
 
 	/**
 	 * 发放金额

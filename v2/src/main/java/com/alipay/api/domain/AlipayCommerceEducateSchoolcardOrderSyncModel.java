@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 校园卡支付订单数据同步
  *
  * @author auto create
- * @since 1.0, 2023-08-24 18:58:09
+ * @since 1.0, 2024-06-26 16:40:20
  */
 public class AlipayCommerceEducateSchoolcardOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2459617333931957974L;
+	private static final long serialVersionUID = 8772458618364311166L;
 
 	/**
 	 * 实际金额（总支付金额），单位为【元】

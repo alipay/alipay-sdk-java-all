@@ -1,6 +1,8 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.OpenQueryPoimBaseResponse;
 
 import com.alipay.api.AlipayResponse;
@@ -13,13 +15,14 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntMerchantExpandAddresssearchQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6152327953445531196L;
+	private static final long serialVersionUID = 4121113747546162417L;
 
 	/** 
 	 * 经纬度,名称和地址以及省市区信息,是一个集合List
 	 */
-	@ApiField("data")
-	private OpenQueryPoimBaseResponse data;
+	@ApiListField("data")
+	@ApiField("open_query_poim_base_response")
+	private List<OpenQueryPoimBaseResponse> data;
 
 	/** 
 	 * 当前页码，默认第一页
@@ -45,10 +48,10 @@ public class AntMerchantExpandAddresssearchQueryResponse extends AlipayResponse 
 	@ApiField("total_size")
 	private Long totalSize;
 
-	public void setData(OpenQueryPoimBaseResponse data) {
+	public void setData(List<OpenQueryPoimBaseResponse> data) {
 		this.data = data;
 	}
-	public OpenQueryPoimBaseResponse getData( ) {
+	public List<OpenQueryPoimBaseResponse> getData( ) {
 		return this.data;
 	}
 

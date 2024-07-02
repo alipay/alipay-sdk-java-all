@@ -8,26 +8,26 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.supervision.fundstransfer.querystatus response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-30 10:17:02
+ * @since 1.0, 2024-07-02 09:42:04
  */
 public class AlipayEbppIndustrySupervisionFundstransferQuerystatusResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6632326144594167381L;
+	private static final long serialVersionUID = 7256981974979857433L;
 
 	/** 
-	 * 资金转出场景下，网商操作资金划拨至收方账户操作号
+	 * 特定资金划拨场景下，内部分两阶段处理。当前字段表示中间过程的支付宝内部操作单号
 	 */
 	@ApiField("additional_operate_no")
 	private String additionalOperateNo;
 
 	/** 
-	 * 资金划拨的金额（单位分）
+	 * 当前查询的资金划拨记录的金额。单位：分
 	 */
 	@ApiField("amount")
 	private Long amount;
 
 	/** 
-	 * 业务场景
+	 * 当前资金划拨记录对应的「业务场景 biz_scene 」
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
@@ -39,62 +39,61 @@ public class AlipayEbppIndustrySupervisionFundstransferQuerystatusResponse exten
 	private String currency;
 
 	/** 
-	 * 网商操作单号，
-资金转出场景下，该字段表示网商子户资金解冻单号
+	 * 资金划拨请求接口或者退款接口返回的支付宝内部受理生成的流水单号
 	 */
 	@ApiField("operate_no")
 	private String operateNo;
 
 	/** 
-	 * 划拨操作返回的操作单号
+	 * 支付宝内部处理资金划拨相关操作涉及到的下游原始操作单号。目前只有特定场景存在关联
 	 */
 	@ApiField("org_operate_no")
 	private String orgOperateNo;
 
 	/** 
-	 * 外部流水号确保每一笔资金划拨请求幂等。
+	 * 在商户发起退款、资金划拨操作时请求参数中的「外部流水号 out_trade_no 」
 	 */
 	@ApiField("out_trade_no")
 	private String outTradeNo;
 
 	/** 
-	 * 交易成功时有值:结构 yyyymmddHHmmss
+	 * 交易成功时有值:
 	 */
 	@ApiField("pay_finish_time")
 	private String payFinishTime;
 
 	/** 
-	 * 保证金退款场景下，填收方账户类型，本次写02，代表对公户
+	 * 表示收款方账户是对公账户还是对私账户
 	 */
 	@ApiField("payee_account_type")
 	private String payeeAccountType;
 
 	/** 
-	 * 保证金退款场景下，填收方账户所在行的联行号，本次为支付宝联行号
+	 * 部分资金划拨场景，且收款方为对公账户时，对应收方账户所在行的联行号
 	 */
 	@ApiField("payee_contact_line")
 	private String payeeContactLine;
 
 	/** 
-	 * 收方参与者ID
+	 * 收款方账户户号
 	 */
 	@ApiField("payee_participant_id")
 	private String payeeParticipantId;
 
 	/** 
-	 * 保证金退款场景下，收方户名必填
+	 * 资金划拨请求中的收方账户户名
 	 */
 	@ApiField("payee_participant_name")
 	private String payeeParticipantName;
 
 	/** 
-	 * 收方参与者类型
+	 * 收款方账户类型
 	 */
 	@ApiField("payee_participant_type")
 	private String payeeParticipantType;
 
 	/** 
-	 * 付方参与者ID
+	 * 付款方账户户号
 	 */
 	@ApiField("payer_participant_id")
 	private String payerParticipantId;
@@ -106,16 +105,15 @@ public class AlipayEbppIndustrySupervisionFundstransferQuerystatusResponse exten
 	private String payerParticipantType;
 
 	/** 
-	 * 保证金退保至支付宝ACS账户时需要经过监管子户过桥。该场景下，当前字段需要填写驾校监管子户号
-
-资金转出场景下，中间过渡母户号
+	 * 特定资金划拨场景下，中间过渡户的账户户号
+保证金退保至支付宝ACS账户时需要经过监管子户过桥。该场景下，当前字段需要填写 监管子户户号
 	 */
 	@ApiField("relate_participant_id")
 	private String relateParticipantId;
 
 	/** 
-	 * 在保证金退回场景下，需要有监管子户过桥。 当前字段必填且为驾校监管子户。
-资金转出场景下，中间过渡母户类型
+	 * 资金划拨过程中，中间涉及到的过渡户的账户类型
+在保证金退回场景下，需要有监管子户过桥。 当前字段必填且为「监管子户 CUSTODY_SUB_ACCOUNT 」
 	 */
 	@ApiField("relate_participant_type")
 	private String relateParticipantType;
@@ -127,7 +125,7 @@ public class AlipayEbppIndustrySupervisionFundstransferQuerystatusResponse exten
 	private String remark;
 
 	/** 
-	 * 资金划拨场景
+	 * 查询的当前划拨记录的资金划拨场景。
 	 */
 	@ApiField("scene")
 	private String scene;

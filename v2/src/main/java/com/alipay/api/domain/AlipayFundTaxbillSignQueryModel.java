@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户签约结果信息
  *
  * @author auto create
- * @since 1.0, 2024-04-01 15:52:50
+ * @since 1.0, 2024-06-27 10:53:38
  */
 public class AlipayFundTaxbillSignQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6491966916463541338L;
+	private static final long serialVersionUID = 6591297487542883932L;
 
 	/**
 	 * 场景码，固定值：SIGN

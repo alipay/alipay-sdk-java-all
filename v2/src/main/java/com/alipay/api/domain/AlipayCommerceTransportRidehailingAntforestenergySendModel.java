@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 网约车蚂蚁森林能量发放
  *
  * @author auto create
- * @since 1.0, 2024-04-24 16:25:27
+ * @since 1.0, 2024-06-28 13:49:23
  */
 public class AlipayCommerceTransportRidehailingAntforestenergySendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5826554176577344262L;
+	private static final long serialVersionUID = 8445864721656621856L;
 
 	/**
 	 * 蚂蚁森林能量发放订单号

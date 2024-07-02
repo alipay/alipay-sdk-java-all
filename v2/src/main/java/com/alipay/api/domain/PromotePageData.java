@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 留资属性实例数据列表
  *
  * @author auto create
- * @since 1.0, 2024-06-05 14:53:43
+ * @since 1.0, 2024-07-02 17:41:40
  */
 public class PromotePageData extends AlipayObject {
 
-	private static final long serialVersionUID = 3361499695421478436L;
+	private static final long serialVersionUID = 2156719356841836561L;
 
 	/**
 	 * 留资流水号

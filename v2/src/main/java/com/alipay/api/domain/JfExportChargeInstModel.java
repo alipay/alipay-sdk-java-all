@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class JfExportChargeInstModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4569778182772752564L;
+	private static final long serialVersionUID = 7492572995942227925L;
 
 	/**
 	 * 出账机构英文简称

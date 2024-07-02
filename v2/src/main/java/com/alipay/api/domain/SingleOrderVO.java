@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序云子单复杂类型
  *
  * @author auto create
- * @since 1.0, 2024-06-04 20:13:48
+ * @since 1.0, 2024-07-01 14:05:18
  */
 public class SingleOrderVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3162481282177796782L;
+	private static final long serialVersionUID = 6475912177453574316L;
 
 	/**
 	 * 是否可售
@@ -29,6 +29,13 @@ public class SingleOrderVO extends AlipayObject {
 	@ApiField("mpc_delivery_info")
 	private List<MpcDeliveryInfo> deliveryInfoList;
 
+	/**
+	 * 商品sku列表
+	 */
+	@ApiListField("product_list")
+	@ApiField("mpc_product_result")
+	private List<MpcProductResult> productList;
+
 	public Boolean getCanSell() {
 		return this.canSell;
 	}
@@ -41,6 +48,13 @@ public class SingleOrderVO extends AlipayObject {
 	}
 	public void setDeliveryInfoList(List<MpcDeliveryInfo> deliveryInfoList) {
 		this.deliveryInfoList = deliveryInfoList;
+	}
+
+	public List<MpcProductResult> getProductList() {
+		return this.productList;
+	}
+	public void setProductList(List<MpcProductResult> productList) {
+		this.productList = productList;
 	}
 
 }

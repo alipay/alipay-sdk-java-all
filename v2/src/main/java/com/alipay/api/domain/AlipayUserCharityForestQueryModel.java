@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserCharityForestQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6462893363133869469L;
+	private static final long serialVersionUID = 6575482198797341936L;
 
 	/**
 	 * 用户的支付宝账户ID

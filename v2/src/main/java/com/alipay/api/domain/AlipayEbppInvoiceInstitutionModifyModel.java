@@ -9,22 +9,26 @@ import com.alipay.api.internal.mapping.ApiField;
  * 制度编辑
  *
  * @author auto create
- * @since 1.0, 2024-01-30 21:04:08
+ * @since 1.0, 2024-06-24 10:35:39
  */
 public class AlipayEbppInvoiceInstitutionModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1711344422166365391L;
+	private static final long serialVersionUID = 8864842779934288848L;
 
 	/**
 	 * 企业共同账户id
+（该字段将废弃，不建议使用，可用enterprise_id字段替换） 当前字段已废弃(推荐使用enterprise_id)
 	 */
 	@ApiField("account_id")
+	@Deprecated
 	private String accountId;
 
 	/**
 	 * 授权签约协议号
+（该字段将废弃，不建议使用，可用enterprise_id字段替换） 当前字段已废弃(推荐使用enterprise_id)
 	 */
 	@ApiField("agreement_no")
+	@Deprecated
 	private String agreementNo;
 
 	/**

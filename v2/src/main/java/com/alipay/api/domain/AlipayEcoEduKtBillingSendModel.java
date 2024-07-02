@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 教育缴费账单发送接口
  *
  * @author auto create
- * @since 1.0, 2024-05-27 19:56:57
+ * @since 1.0, 2024-07-01 20:17:50
  */
 public class AlipayEcoEduKtBillingSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3415861679497186877L;
+	private static final long serialVersionUID = 4155115225474779958L;
 
 	/**
 	 * 总金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]，
@@ -30,7 +30,7 @@ public class AlipayEcoEduKtBillingSendModel extends AlipayObject {
 	private String chargeBillTitle;
 
 	/**
-	 * 缴费详情：输入json格式字符串。Json定义：key填写缴费项名称，value填写缴费项金额，金额保留2位小数
+	 * 缴费详情：输入json格式字符串。Json定义：key填写缴费项名称，value填写缴费项金额，金额保留2位小数（单位：元）
 	 */
 	@ApiListField("charge_item")
 	@ApiField("charge_items")

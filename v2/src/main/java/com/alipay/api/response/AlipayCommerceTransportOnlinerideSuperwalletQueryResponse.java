@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.onlineride.superwallet.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-11 10:12:00
+ * @since 1.0, 2024-06-28 13:47:52
  */
 public class AlipayCommerceTransportOnlinerideSuperwalletQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1388652981489781723L;
+	private static final long serialVersionUID = 5369419223361172781L;
 
 	/** 
 	 * 返回的数据

@@ -7,22 +7,24 @@ import com.alipay.api.internal.mapping.ApiField;
  * 费控制度分页查询
  *
  * @author auto create
- * @since 1.0, 2024-01-30 21:03:04
+ * @since 1.0, 2024-06-24 10:30:16
  */
 public class AlipayEbppInvoiceInstitutionPageinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6738543153143415221L;
+	private static final long serialVersionUID = 3586121895751328168L;
 
 	/**
-	 * 企业共同账户id
+	 * 企业共同账户id（该字段将废弃，不建议使用，可用enterprise_id字段替换） 当前字段已废弃(该字段将废弃，不建议使用，可用enterprise_id字段替换)
 	 */
 	@ApiField("account_id")
+	@Deprecated
 	private String accountId;
 
 	/**
-	 * 授权签约协议号
+	 * 授权签约协议号（该字段将废弃，不建议使用，可用enterprise_id字段替换） 当前字段已废弃(该字段将废弃，不建议使用，可用enterprise_id字段替换)
 	 */
 	@ApiField("agreement_no")
+	@Deprecated
 	private String agreementNo;
 
 	/**

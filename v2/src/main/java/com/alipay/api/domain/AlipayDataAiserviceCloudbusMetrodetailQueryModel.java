@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataAiserviceCloudbusMetrodetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1733151873487458652L;
+	private static final long serialVersionUID = 3159827216161168123L;
 
 	/**
 	 * 版本号

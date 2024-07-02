@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 报案基本信息
  *
  * @author auto create
- * @since 1.0, 2022-04-27 10:13:37
+ * @since 1.0, 2024-06-24 17:50:09
  */
 public class ReportBasicInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2882253357613627521L;
+	private static final long serialVersionUID = 2794947936143192658L;
 
 	/**
 	 * 出险时间
@@ -26,7 +26,7 @@ public class ReportBasicInfo extends AlipayObject {
 	private String applyTradeNo;
 
 	/**
-	 * 索赔金额
+	 * 索赔金额,单位是元
 	 */
 	@ApiField("estimate_amount")
 	private String estimateAmount;

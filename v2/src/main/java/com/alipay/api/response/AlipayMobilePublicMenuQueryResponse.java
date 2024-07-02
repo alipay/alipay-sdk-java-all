@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMobilePublicMenuQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7292783137984722569L;
+	private static final long serialVersionUID = 1124168598962413837L;
 
 	/** 
 	 * 所有菜单列表json串

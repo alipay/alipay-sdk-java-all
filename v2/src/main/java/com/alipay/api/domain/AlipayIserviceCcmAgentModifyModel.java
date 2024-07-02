@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 更新客服接口
  *
  * @author auto create
- * @since 1.0, 2023-06-09 13:12:51
+ * @since 1.0, 2024-07-02 10:25:16
  */
 public class AlipayIserviceCcmAgentModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3654828624694622372L;
+	private static final long serialVersionUID = 7137857726457285154L;
 
 	/**
 	 * 热线接入方式，取值0，1，2

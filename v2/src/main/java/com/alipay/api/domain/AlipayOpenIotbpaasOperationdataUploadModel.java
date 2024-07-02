@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenIotbpaasOperationdataUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3784266549643983866L;
+	private static final long serialVersionUID = 5235594974485583658L;
 
 	/**
 	 * 日期字符串，格式为yyyyMMdd

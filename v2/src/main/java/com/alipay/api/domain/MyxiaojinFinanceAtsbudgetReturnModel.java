@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MyxiaojinFinanceAtsbudgetReturnModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2447255314359954189L;
+	private static final long serialVersionUID = 3642342522263512651L;
 
 	/**
 	 * 预算申请金额，默认为人民币

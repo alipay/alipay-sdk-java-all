@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 国家医保局线上业务下单支付接口
  *
  * @author auto create
- * @since 1.0, 2024-01-19 14:52:41
+ * @since 1.0, 2024-06-28 16:28:52
  */
 public class AlipayCommerceMedicalPaymentCreateandpayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5271484664616454442L;
+	private static final long serialVersionUID = 3335615497955475185L;
 
 	/**
 	 * 个人账户支付金额
@@ -40,6 +40,12 @@ public class AlipayCommerceMedicalPaymentCreateandpayModel extends AlipayObject 
 	 */
 	@ApiField("extend_params")
 	private TradeExtendParams extendParams;
+
+	/**
+	 * 订单绝对超时时间。 格式为yyyy-MM-dd HH:mm:ss。超时时间最小支持1m
+	 */
+	@ApiField("gmt_expire_time")
+	private Date gmtExpireTime;
 
 	/**
 	 * 医疗机构下单时间
@@ -158,6 +164,13 @@ public class AlipayCommerceMedicalPaymentCreateandpayModel extends AlipayObject 
 	}
 	public void setExtendParams(TradeExtendParams extendParams) {
 		this.extendParams = extendParams;
+	}
+
+	public Date getGmtExpireTime() {
+		return this.gmtExpireTime;
+	}
+	public void setGmtExpireTime(Date gmtExpireTime) {
+		this.gmtExpireTime = gmtExpireTime;
 	}
 
 	public Date getGmtOutCreate() {

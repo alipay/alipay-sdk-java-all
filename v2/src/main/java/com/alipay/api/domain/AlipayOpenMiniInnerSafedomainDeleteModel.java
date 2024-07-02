@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 一二方删除安全域名
  *
  * @author auto create
- * @since 1.0, 2022-04-26 14:55:02
+ * @since 1.0, 2024-06-28 10:35:18
  */
 public class AlipayOpenMiniInnerSafedomainDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1742275141127258351L;
+	private static final long serialVersionUID = 4449486958253241492L;
 
 	/**
 	 * 业务来源

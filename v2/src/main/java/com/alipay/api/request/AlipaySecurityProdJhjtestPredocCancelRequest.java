@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.jhjtest.predoc.cancel request
  * 
  * @author auto create
- * @since 1.0, 2024-06-21 18:32:09
+ * @since 1.0, 2024-06-24 16:01:48
  */
 public class AlipaySecurityProdJhjtestPredocCancelRequest implements AlipayRequest<AlipaySecurityProdJhjtestPredocCancelResponse> {
 

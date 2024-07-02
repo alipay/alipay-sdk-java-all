@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class StarUidAmountRatioDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7632183584769538485L;
+	private static final long serialVersionUID = 4423444329975967767L;
 
 	/**
 	 * 分佣比率，格式:xx%

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序商品修改接口
  *
  * @author auto create
- * @since 1.0, 2024-05-29 17:14:53
+ * @since 1.0, 2024-06-27 11:39:19
  */
 public class AlipayOpenAppLocalitemModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1731648225965217575L;
+	private static final long serialVersionUID = 3738186271883887742L;
 
 	/**
 	 * 商品属性，通过alipay.open.app.localitem.template.query获取本地商品模板信息接口得到商品属性key
@@ -94,8 +94,9 @@ public class AlipayOpenAppLocalitemModifyModel extends AlipayObject {
 	/**
 	 * sku数组
 	 */
-	@ApiField("skus")
-	private LocalItemSkuModifyVO skus;
+	@ApiListField("skus")
+	@ApiField("local_item_sku_modify_v_o")
+	private List<LocalItemSkuModifyVO> skus;
 
 	/**
 	 * start_time描述售卖开始时间，end_time描述售卖结束时间，时间格式均为yyyy-MM-dd HH:mm:ss
@@ -199,10 +200,10 @@ public class AlipayOpenAppLocalitemModifyModel extends AlipayObject {
 		this.path = path;
 	}
 
-	public LocalItemSkuModifyVO getSkus() {
+	public List<LocalItemSkuModifyVO> getSkus() {
 		return this.skus;
 	}
-	public void setSkus(LocalItemSkuModifyVO skus) {
+	public void setSkus(List<LocalItemSkuModifyVO> skus) {
 		this.skus = skus;
 	}
 

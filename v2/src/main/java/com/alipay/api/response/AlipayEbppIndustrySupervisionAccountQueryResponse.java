@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.supervision.account.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-30 10:17:02
+ * @since 1.0, 2024-06-25 15:27:05
  */
 public class AlipayEbppIndustrySupervisionAccountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4695824393912738574L;
+	private static final long serialVersionUID = 1378938236618792272L;
 
 	/** 
 	 * 账户余额（单位分）
@@ -21,7 +21,7 @@ public class AlipayEbppIndustrySupervisionAccountQueryResponse extends AlipayRes
 	private Long accountBalance;
 
 	/** 
-	 * 脱敏商户子户账号，专款钱包查询返回明文
+	 * 子户账户户号
 	 */
 	@ApiField("masking_account_no")
 	private String maskingAccountNo;

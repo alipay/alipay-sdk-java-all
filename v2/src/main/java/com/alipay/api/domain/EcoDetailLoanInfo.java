@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EcoDetailLoanInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1526997494116745166L;
+	private static final long serialVersionUID = 3392177549872574297L;
 
 	/**
 	 * 借款额度，单位为元，精确到小数点后两位

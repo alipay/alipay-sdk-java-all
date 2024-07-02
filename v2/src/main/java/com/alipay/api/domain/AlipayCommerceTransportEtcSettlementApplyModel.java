@@ -1,19 +1,21 @@
 package com.alipay.api.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 车主ETC服务行程上送申请接口
  *
  * @author auto create
- * @since 1.0, 2024-01-03 11:08:50
+ * @since 1.0, 2024-06-24 21:33:14
  */
 public class AlipayCommerceTransportEtcSettlementApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8888397175295669213L;
+	private static final long serialVersionUID = 7685411694669454385L;
 
 	/**
 	 * ETC平台协议号
@@ -27,8 +29,14 @@ public class AlipayCommerceTransportEtcSettlementApplyModel extends AlipayObject
 2 - 二型客车
 3 - 三型客车
 4 - 四型客车
+5 - 一型货车
+6 - 二型货车
+7 - 三型货车
+8 - 四型货车
+9 - 五型货车 当前字段已废弃(ETC办理时可以识别到车辆类型，无需重复上送)
 	 */
 	@ApiField("car_type")
+	@Deprecated
 	private String carType;
 
 	/**
@@ -44,6 +52,13 @@ public class AlipayCommerceTransportEtcSettlementApplyModel extends AlipayObject
 	 */
 	@ApiField("end_time")
 	private Date endTime;
+
+	/**
+	 * 本次扣款相关的行程明细列表
+	 */
+	@ApiListField("etc_trip_item_list")
+	@ApiField("e_t_c_trip_item_dto")
+	private List<ETCTripItemDto> etcTripItemList;
 
 	/**
 	 * 行程描述
@@ -72,6 +87,13 @@ public class AlipayCommerceTransportEtcSettlementApplyModel extends AlipayObject
 	 */
 	@ApiField("plate_no")
 	private String plateNo;
+
+	/**
+	 * 若超过账期，请传递补扣标识为true，本批次行程受理将不限制账期。
+默认false；
+	 */
+	@ApiField("replenish_deduct")
+	private Boolean replenishDeduct;
 
 	/**
 	 * 1、默认为商户签约账号对应的支付宝用户ID
@@ -145,6 +167,13 @@ public class AlipayCommerceTransportEtcSettlementApplyModel extends AlipayObject
 		this.endTime = endTime;
 	}
 
+	public List<ETCTripItemDto> getEtcTripItemList() {
+		return this.etcTripItemList;
+	}
+	public void setEtcTripItemList(List<ETCTripItemDto> etcTripItemList) {
+		this.etcTripItemList = etcTripItemList;
+	}
+
 	public String getMemo() {
 		return this.memo;
 	}
@@ -171,6 +200,13 @@ public class AlipayCommerceTransportEtcSettlementApplyModel extends AlipayObject
 	}
 	public void setPlateNo(String plateNo) {
 		this.plateNo = plateNo;
+	}
+
+	public Boolean getReplenishDeduct() {
+		return this.replenishDeduct;
+	}
+	public void setReplenishDeduct(Boolean replenishDeduct) {
+		this.replenishDeduct = replenishDeduct;
 	}
 
 	public String getSellerId() {

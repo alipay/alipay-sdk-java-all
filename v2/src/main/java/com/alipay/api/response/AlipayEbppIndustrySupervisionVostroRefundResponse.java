@@ -8,20 +8,22 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.supervision.vostro.refund response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-29 17:07:02
+ * @since 1.0, 2024-06-28 10:02:05
  */
 public class AlipayEbppIndustrySupervisionVostroRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2432825197953939826L;
+	private static final long serialVersionUID = 3469627373287815894L;
 
 	/** 
-	 * 内部处理操作单号
+	 * 本次退款请求操作，内部受理的操作流水单号
+后续退款进度查询通过该字段查询
 	 */
 	@ApiField("operate_no")
 	private String operateNo;
 
 	/** 
-	 * 请求参数中的外部业务流水号
+	 * 对应本次请求请求参数中的「原路退请求流水号 out_trade_no 」
+后续退款进度查询通过该字段查询
 	 */
 	@ApiField("out_trade_no")
 	private String outTradeNo;

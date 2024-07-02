@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.card.level.set request
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 08:56:39
+ * @since 1.0, 2024-06-28 15:20:13
  */
 public class AlipayUserCardLevelSetRequest implements AlipayRequest<AlipayUserCardLevelSetResponse> {
 

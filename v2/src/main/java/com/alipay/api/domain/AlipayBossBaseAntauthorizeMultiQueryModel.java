@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayBossBaseAntauthorizeMultiQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8397252322331964665L;
+	private static final long serialVersionUID = 4515935951454231434L;
 
 	/**
 	 * 基于多维度授权查询的参数

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品列表信息模型
  *
  * @author auto create
- * @since 1.0, 2024-03-11 10:48:49
+ * @since 1.0, 2024-06-30 13:22:49
  */
 public class MiniGoodsDetailInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2717611234195287158L;
+	private static final long serialVersionUID = 2641883233498812256L;
 
 	/**
 	 * 活动信息
@@ -60,6 +60,12 @@ public class MiniGoodsDetailInfoDTO extends AlipayObject {
 	 */
 	@ApiField("goods_name")
 	private String goodsName;
+
+	/**
+	 * 商品类型
+	 */
+	@ApiField("goods_type")
+	private String goodsType;
 
 	/**
 	 * 商品图片，用于小程序订单中心展示，可通过 <a href="https://opendocs.alipay.com/mini/03l4lq?pathHash=c08922b1&scene=common">alipay.merchant.item.file.upload </a>接口上传素材获取素材id。默认使用已上报的商品库素材信息。
@@ -187,6 +193,13 @@ item_discount使用场景：同时购买多件商品时存在优惠，传入优�
 	}
 	public void setGoodsName(String goodsName) {
 		this.goodsName = goodsName;
+	}
+
+	public String getGoodsType() {
+		return this.goodsType;
+	}
+	public void setGoodsType(String goodsType) {
+		this.goodsType = goodsType;
 	}
 
 	public String getImageMaterialId() {

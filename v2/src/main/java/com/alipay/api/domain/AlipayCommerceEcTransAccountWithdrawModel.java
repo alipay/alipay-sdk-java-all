@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金专户提现
  *
  * @author auto create
- * @since 1.0, 2023-09-28 10:01:43
+ * @since 1.0, 2024-06-24 16:31:18
  */
 public class AlipayCommerceEcTransAccountWithdrawModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7479766788562124182L;
+	private static final long serialVersionUID = 5347882756926419685L;
 
 	/**
 	 * 资金专户账号

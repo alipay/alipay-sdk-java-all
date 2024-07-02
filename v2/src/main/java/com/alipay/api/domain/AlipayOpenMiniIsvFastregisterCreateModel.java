@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ISV代创建试用小程序
  *
  * @author auto create
- * @since 1.0, 2023-03-01 09:51:33
+ * @since 1.0, 2024-06-28 10:34:35
  */
 public class AlipayOpenMiniIsvFastregisterCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5491974491992274937L;
+	private static final long serialVersionUID = 3178462798458437911L;
 
 	/**
 	 * 小程序名称，昵称半自动设定，强制后缀“的试用小程序”。且该参数会进行关键字检查，如果命中品牌关键字则会报错。

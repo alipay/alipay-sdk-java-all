@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MedicalGuideChatInitDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7855914845886676562L;
+	private static final long serialVersionUID = 4386232159584489312L;
 
 	/**
 	 * 对话内容

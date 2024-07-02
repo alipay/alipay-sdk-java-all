@@ -7,44 +7,44 @@ import com.alipay.api.internal.mapping.ApiField;
  * 子户资金原路退回
  *
  * @author auto create
- * @since 1.0, 2024-05-29 17:02:11
+ * @since 1.0, 2024-06-28 09:58:17
  */
 public class AlipayEbppIndustrySupervisionVostroRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3637852976124862558L;
+	private static final long serialVersionUID = 5615265941147281744L;
 
 	/**
-	 * 网商来帐通知对应子户户号，用于原路退校验
+	 * 来帐通知中对应的入账账户
 	 */
 	@ApiField("account_no")
 	private String accountNo;
 
 	/**
-	 * 网商来帐通知对应子户类型
+	 * 来帐通知中对应的入账账户 在子户账户创建时的子户庄户类型
 	 */
 	@ApiField("account_type")
 	private String accountType;
 
 	/**
-	 * 退款金额，当前只支持原单全额退.单位分
+	 * 退款金额
 	 */
 	@ApiField("amount")
 	private Long amount;
 
 	/**
-	 * 业务场景
+	 * 不同的业务场景下对应不同的业务规则
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
 
 	/**
-	 * 原网商来帐单号（order_no）
+	 * 对应来帐通知接口的「银行侧来账业务单号 order_no 」
 	 */
 	@ApiField("org_order_no")
 	private String orgOrderNo;
 
 	/**
-	 * 业务流水号，相同请求幂等返回
+	 * 商户内部生成的本次原路退请求流水号
 	 */
 	@ApiField("out_trade_no")
 	private String outTradeNo;

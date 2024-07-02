@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MemberCardCertificateDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8574487421995363639L;
+	private static final long serialVersionUID = 8534932338612864494L;
 
 	/**
 	 * 兑换跳转链接（长链接），其中已包含了凭证token唯一信息，如其他用户获取到链接后也可进行兑换（未开启身份校验）

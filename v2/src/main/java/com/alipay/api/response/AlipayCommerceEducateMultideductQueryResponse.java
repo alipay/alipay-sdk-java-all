@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.multideduct.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-20 13:42:03
+ * @since 1.0, 2024-06-28 20:27:04
  */
 public class AlipayCommerceEducateMultideductQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3866948724616676289L;
+	private static final long serialVersionUID = 7566761634139149417L;
 
 	/** 
 	 * 支付宝协议支付的协议号。OPEN时返回

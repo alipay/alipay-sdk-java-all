@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁分账计划
  *
  * @author auto create
- * @since 1.0, 2024-04-30 20:05:51
+ * @since 1.0, 2024-06-26 15:18:18
  */
 public class RentRoyalty extends AlipayObject {
 
-	private static final long serialVersionUID = 3143848715661887435L;
+	private static final long serialVersionUID = 6324392177548475992L;
 
 	/**
 	 * 代表某一个阶段的第几期的还款计划，要结合stage进行锁定某一期计划
@@ -48,6 +48,12 @@ public class RentRoyalty extends AlipayObject {
 	 */
 	@ApiField("stage")
 	private String stage;
+
+	/**
+	 * 分账成功之后对应的交易号
+	 */
+	@ApiField("trade_no")
+	private String tradeNo;
 
 	/**
 	 * 租金类型
@@ -95,6 +101,13 @@ public class RentRoyalty extends AlipayObject {
 	}
 	public void setStage(String stage) {
 		this.stage = stage;
+	}
+
+	public String getTradeNo() {
+		return this.tradeNo;
+	}
+	public void setTradeNo(String tradeNo) {
+		this.tradeNo = tradeNo;
 	}
 
 	public String getType() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ai open search热搜接口
  *
  * @author auto create
- * @since 1.0, 2024-02-01 15:47:22
+ * @since 1.0, 2024-06-25 11:15:17
  */
 public class AlipayOpenMiniCloudAoshotQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7767753717495229666L;
+	private static final long serialVersionUID = 5342376388712283754L;
 
 	/**
 	 * 用户当前城市编码

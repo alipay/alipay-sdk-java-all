@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金记账账簿外卡信息
  *
  * @author auto create
- * @since 1.0, 2022-12-27 12:09:08
+ * @since 1.0, 2024-07-02 16:17:51
  */
 public class ExtCardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2373662628143556838L;
+	private static final long serialVersionUID = 2661715327949414244L;
 
 	/**
 	 * 记账的外卡户名

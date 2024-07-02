@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁订单的价格信息
  *
  * @author auto create
- * @since 1.0, 2024-04-30 20:05:51
+ * @since 1.0, 2024-06-25 21:28:13
  */
 public class RentPriceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5395577347576645153L;
+	private static final long serialVersionUID = 7679657492798264217L;
 
 	/**
 	 * 附加金额，单位：元，精确到小数点后两位

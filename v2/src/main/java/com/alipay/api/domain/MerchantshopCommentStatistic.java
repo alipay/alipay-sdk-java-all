@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MerchantshopCommentStatistic extends AlipayObject {
 
-	private static final long serialVersionUID = 5355757484981778635L;
+	private static final long serialVersionUID = 8477756583345322158L;
 
 	/**
 	 * 评论总数

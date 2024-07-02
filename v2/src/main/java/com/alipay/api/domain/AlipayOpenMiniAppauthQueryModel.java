@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询三方应用的商家小程序授权列表
  *
  * @author auto create
- * @since 1.0, 2023-11-08 10:26:47
+ * @since 1.0, 2024-06-28 10:34:52
  */
 public class AlipayOpenMiniAppauthQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7871439575312846743L;
+	private static final long serialVersionUID = 3777453188614376594L;
 
 	/**
 	 * 商家小程序APPID

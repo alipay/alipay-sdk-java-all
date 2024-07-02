@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询服务费信息
  *
  * @author auto create
- * @since 1.0, 2023-11-02 14:41:17
+ * @since 1.0, 2024-06-24 21:24:15
  */
 public class AlipayCommerceEcChargeBillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4616466716435925317L;
+	private static final long serialVersionUID = 6797381964957414223L;
 
 	/**
 	 * 企业码服务费单号

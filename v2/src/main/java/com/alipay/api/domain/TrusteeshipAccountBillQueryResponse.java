@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 托管子户账单
  *
  * @author auto create
- * @since 1.0, 2019-06-24 17:50:12
+ * @since 1.0, 2024-06-25 19:25:50
  */
 public class TrusteeshipAccountBillQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 3739215984714275324L;
+	private static final long serialVersionUID = 4243873589332556292L;
 
 	/**
 	 * 账单日

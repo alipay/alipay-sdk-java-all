@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PlateNoCertDto extends AlipayObject {
 
-	private static final long serialVersionUID = 5352176724218691288L;
+	private static final long serialVersionUID = 7777663262247178248L;
 
 	/**
 	 * true，false

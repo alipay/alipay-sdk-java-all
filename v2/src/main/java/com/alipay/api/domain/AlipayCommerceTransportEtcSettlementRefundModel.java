@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 车主ETC服务行程退款
  *
  * @author auto create
- * @since 1.0, 2022-12-20 20:59:49
+ * @since 1.0, 2024-06-24 21:33:27
  */
 public class AlipayCommerceTransportEtcSettlementRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2485981162183878516L;
+	private static final long serialVersionUID = 4298324292265798488L;
 
 	/**
 	 * ETC平台协议号
@@ -39,6 +42,13 @@ public class AlipayCommerceTransportEtcSettlementRefundModel extends AlipayObjec
 	 */
 	@ApiField("refund_amount")
 	private String refundAmount;
+
+	/**
+	 * 本次退款相关的明细列表
+	 */
+	@ApiListField("refund_item_list")
+	@ApiField("e_t_c_refund_item_dto")
+	private List<ETCRefundItemDto> refundItemList;
 
 	/**
 	 * 退款原因描述：退费
@@ -72,6 +82,13 @@ public class AlipayCommerceTransportEtcSettlementRefundModel extends AlipayObjec
 	}
 	public void setRefundAmount(String refundAmount) {
 		this.refundAmount = refundAmount;
+	}
+
+	public List<ETCRefundItemDto> getRefundItemList() {
+		return this.refundItemList;
+	}
+	public void setRefundItemList(List<ETCRefundItemDto> refundItemList) {
+		this.refundItemList = refundItemList;
 	}
 
 	public String getRefundReason() {

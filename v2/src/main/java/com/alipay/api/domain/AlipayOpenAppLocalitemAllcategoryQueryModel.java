@@ -7,17 +7,30 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取本地商品类目接口
  *
  * @author auto create
- * @since 1.0, 2024-05-08 11:42:28
+ * @since 1.0, 2024-07-02 11:59:16
  */
 public class AlipayOpenAppLocalitemAllcategoryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7426455535463691393L;
+	private static final long serialVersionUID = 1414138622382634578L;
+
+	/**
+	 * 返回筛选状态的类目
+	 */
+	@ApiField("cat_status")
+	private String catStatus;
 
 	/**
 	 * 商品类型
 	 */
 	@ApiField("item_type")
 	private String itemType;
+
+	public String getCatStatus() {
+		return this.catStatus;
+	}
+	public void setCatStatus(String catStatus) {
+		this.catStatus = catStatus;
+	}
 
 	public String getItemType() {
 		return this.itemType;

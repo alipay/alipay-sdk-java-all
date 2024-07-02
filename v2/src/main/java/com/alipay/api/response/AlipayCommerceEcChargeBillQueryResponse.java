@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.charge.bill.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-28 00:12:02
+ * @since 1.0, 2024-06-24 22:07:03
  */
 public class AlipayCommerceEcChargeBillQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7428158386628731231L;
+	private static final long serialVersionUID = 3474687746666249599L;
 
 	/** 
 	 * 服务费信息列表

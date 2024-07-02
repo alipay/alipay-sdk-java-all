@@ -11,11 +11,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.deduct.merge.pay response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-19 18:58:45
+ * @since 1.0, 2024-06-26 16:22:04
  */
 public class AlipayTradeDeductMergePayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3349922983554165876L;
+	private static final long serialVersionUID = 5437771684353448436L;
+
+	/** 
+	 * 用户userId，2088开头
+	 */
+	@ApiField("buyer_user_id")
+	private String buyerUserId;
 
 	/** 
 	 * 子单明细
@@ -29,6 +35,13 @@ public class AlipayTradeDeductMergePayResponse extends AlipayResponse {
 	 */
 	@ApiField("out_merge_no")
 	private String outMergeNo;
+
+	public void setBuyerUserId(String buyerUserId) {
+		this.buyerUserId = buyerUserId;
+	}
+	public String getBuyerUserId( ) {
+		return this.buyerUserId;
+	}
 
 	public void setOrderDetailResults(List<SubOrderResult> orderDetailResults) {
 		this.orderDetailResults = orderDetailResults;
