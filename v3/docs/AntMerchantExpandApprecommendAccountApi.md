@@ -185,7 +185,7 @@ public class Example {
 
     AntMerchantExpandApprecommendAccountApi apiInstance = new AntMerchantExpandApprecommendAccountApi(defaultClient);
     String appNo = "20210001****9069"; // String | 已关联小程序的app_id
-    Integer pageSize = 10; // Integer | 单页行数，不能超过100行
+    Integer pageSize = 10; // Integer | 单页行数，不能超过100行，单位：行
     Integer pageNumber = 1; // Integer | 页码
     try {
       AntMerchantExpandApprecommendAccountQueryResponseModel result = apiInstance.query(appNo, pageSize, pageNumber);
@@ -206,7 +206,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **appNo** | **String**| 已关联小程序的app_id | [optional] |
-| **pageSize** | **Integer**| 单页行数，不能超过100行 | [optional] |
+| **pageSize** | **Integer**| 单页行数，不能超过100行，单位：行 | [optional] |
 | **pageNumber** | **Integer**| 页码 | [optional] |
 
 ### Return type

@@ -193,6 +193,20 @@ public class GenericExecuteApi {
         return getRedirectUrl(sortedMap, false);
     }
 
+    /**
+     * 流式调用(SSE)
+     * @param path                  The sub-path of the HTTP URL
+     * @param method                The request method, one of "GET", "HEAD", "OPTIONS", "POST", "PUT", "PATCH" and "DELETE"
+     * @param openApiGenericRequest 通用入参
+     * @param callback              回调函数
+     * @param <T>                   The return type corresponding to (same with) type
+     * @throws ApiException
+     */
+    public <T> void streamExecute(String path, String method, OpenApiGenericRequest openApiGenericRequest, StreamCallback<T> callback) throws ApiException {
+        Request request = buildRequest(path, method, openApiGenericRequest);
+        localVarApiClient.streamCall(request, callback);
+    }
+
     private Request buildRequest(String path, String method, OpenApiGenericRequest openApiGenericRequest) throws ApiException {
         boolean isFileUpload = (openApiGenericRequest.getFileParams() != null && openApiGenericRequest.getFileParams().size() > 0)
                 || (openApiGenericRequest.getByteStreamParams() != null && openApiGenericRequest.getByteStreamParams().size() > 0);
