@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.oceanbase.obglobal.contact.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-10-17 17:16:46
+ * @since 1.0, 2024-07-04 19:33:33
  */
 public class AnttechOceanbaseObglobalContactDeleteRequest implements AlipayRequest<AnttechOceanbaseObglobalContactDeleteResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 钱包营销规则对象
  *
  * @author auto create
- * @since 1.0, 2024-03-29 19:08:22
+ * @since 1.0, 2024-07-04 22:19:49
  */
 public class WalletMarketingRule extends AlipayObject {
 
-	private static final long serialVersionUID = 5441565546563112588L;
+	private static final long serialVersionUID = 6489123659211487293L;
 
 	/**
 	 * 营销类型
@@ -20,7 +20,7 @@ public class WalletMarketingRule extends AlipayObject {
 	private String maType;
 
 	/**
-	 * 营销值
+	 * 营销值，单位：%
 	 */
 	@ApiField("ma_value")
 	private String maValue;

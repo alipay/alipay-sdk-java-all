@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.silan.apigrayseven.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 20:17:17
+ * @since 1.0, 2024-07-04 17:41:18
  */
 public class AlipayOpenAppSilanApigraysevenQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7129829411373216284L;
+	private static final long serialVersionUID = 2792275416771878749L;
 
 	
 

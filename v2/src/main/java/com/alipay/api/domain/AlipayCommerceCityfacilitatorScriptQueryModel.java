@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询城市一卡通的判卡、读卡脚本
  *
  * @author auto create
- * @since 1.0, 2021-12-21 15:57:46
+ * @since 1.0, 2024-07-04 17:00:49
  */
 public class AlipayCommerceCityfacilitatorScriptQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2521538419878467565L;
+	private static final long serialVersionUID = 8618719519423388167L;
 
 	/**
 	 * 卡类型，智能卡中心的内部编码规则

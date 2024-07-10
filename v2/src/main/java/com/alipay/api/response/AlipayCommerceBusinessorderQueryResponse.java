@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.businessorder.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:29:12
+ * @since 1.0, 2024-07-04 16:55:06
  */
 public class AlipayCommerceBusinessorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6749988843146869733L;
+	private static final long serialVersionUID = 8646537274159266574L;
 
 	/** 
 	 * 分页查询的办事记录详情列表，没条记录包含isvAppId(isv的appid)、subject(一条办事记录的摘要),status(一条办事记录的状态),recordTime(一条办事记录创建的时间)

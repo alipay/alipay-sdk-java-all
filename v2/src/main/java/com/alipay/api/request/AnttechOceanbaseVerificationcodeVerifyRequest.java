@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.oceanbase.verificationcode.verify request
  * 
  * @author auto create
- * @since 1.0, 2023-09-13 14:55:56
+ * @since 1.0, 2024-07-04 19:33:33
  */
 public class AnttechOceanbaseVerificationcodeVerifyRequest implements AlipayRequest<AnttechOceanbaseVerificationcodeVerifyResponse> {
 

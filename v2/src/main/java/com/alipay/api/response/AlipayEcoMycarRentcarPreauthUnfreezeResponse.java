@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.rentcar.preauth.unfreeze response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-12 16:01:57
+ * @since 1.0, 2024-07-04 17:31:53
  */
 public class AlipayEcoMycarRentcarPreauthUnfreezeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2363297641942266777L;
+	private static final long serialVersionUID = 8357198928784671135L;
 
 	
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: antfortune.stock.open.userid.query request
  * 
  * @author auto create
- * @since 1.0, 2024-03-28 00:29:07
+ * @since 1.0, 2024-07-04 19:33:12
  */
 public class AntfortuneStockOpenUseridQueryRequest implements AlipayRequest<AntfortuneStockOpenUseridQueryResponse> {
 

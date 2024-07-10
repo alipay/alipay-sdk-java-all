@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.NbDrawSize;
 import com.alipay.api.domain.NbInput;
 
 import com.alipay.api.AlipayResponse;
@@ -12,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.nextbuilder.agent.config.get response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-18 16:32:03
+ * @since 1.0, 2024-07-05 11:12:04
  */
 public class AlipayCloudNextbuilderAgentConfigGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1425722947131865861L;
+	private static final long serialVersionUID = 7127954411997319859L;
 
 	/** 
 	 * 配置版本号
@@ -29,6 +30,12 @@ public class AlipayCloudNextbuilderAgentConfigGetResponse extends AlipayResponse
 	 */
 	@ApiField("create_questions")
 	private Boolean createQuestions;
+
+	/** 
+	 * 生图大小
+	 */
+	@ApiField("draw_size")
+	private NbDrawSize drawSize;
 
 	/** 
 	 * 用户输入
@@ -68,6 +75,13 @@ public class AlipayCloudNextbuilderAgentConfigGetResponse extends AlipayResponse
 	}
 	public Boolean getCreateQuestions( ) {
 		return this.createQuestions;
+	}
+
+	public void setDrawSize(NbDrawSize drawSize) {
+		this.drawSize = drawSize;
+	}
+	public NbDrawSize getDrawSize( ) {
+		return this.drawSize;
 	}
 
 	public void setInputs(List<NbInput> inputs) {

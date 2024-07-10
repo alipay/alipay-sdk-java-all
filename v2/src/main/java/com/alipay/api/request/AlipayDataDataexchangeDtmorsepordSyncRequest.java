@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.dataexchange.dtmorsepord.sync request
  * 
  * @author auto create
- * @since 1.0, 2021-09-18 11:47:32
+ * @since 1.0, 2024-07-04 15:51:35
  */
 public class AlipayDataDataexchangeDtmorsepordSyncRequest implements AlipayRequest<AlipayDataDataexchangeDtmorsepordSyncResponse> {
 

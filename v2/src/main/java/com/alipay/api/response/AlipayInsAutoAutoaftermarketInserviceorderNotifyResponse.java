@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.auto.autoaftermarket.inserviceorder.notify response.
  * 
  * @author auto create
- * @since 1.0, 2019-10-23 21:29:38
+ * @since 1.0, 2024-07-04 17:31:55
  */
 public class AlipayInsAutoAutoaftermarketInserviceorderNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6155788271928131621L;
+	private static final long serialVersionUID = 7291215876398759822L;
 
 	
 

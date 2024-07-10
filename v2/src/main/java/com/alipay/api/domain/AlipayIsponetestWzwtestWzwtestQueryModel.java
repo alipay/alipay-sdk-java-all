@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 字段隐藏与废弃openapi接口
  *
  * @author auto create
- * @since 1.0, 2023-05-17 20:19:31
+ * @since 1.0, 2024-07-04 10:43:50
  */
 public class AlipayIsponetestWzwtestWzwtestQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8275162862934665731L;
+	private static final long serialVersionUID = 7234498396794231229L;
 
 	/**
 	 * test
@@ -26,9 +26,10 @@ public class AlipayIsponetestWzwtestWzwtestQueryModel extends AlipayObject {
 	private String aaaa;
 
 	/**
-	 * 33
+	 * 33 当前字段已废弃(dddddddddd)
 	 */
 	@ApiField("bbbb")
+	@Deprecated
 	private String bbbb;
 
 	/**

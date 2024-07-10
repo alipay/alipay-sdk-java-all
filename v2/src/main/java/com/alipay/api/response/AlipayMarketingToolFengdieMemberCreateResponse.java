@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.tool.fengdie.member.create response.
  * 
  * @author auto create
- * @since 1.0, 2021-06-25 21:54:10
+ * @since 1.0, 2024-07-04 17:41:16
  */
 public class AlipayMarketingToolFengdieMemberCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3675477746358515919L;
+	private static final long serialVersionUID = 8626798522991559185L;
 
 	/** 
 	 * 凤蝶业务空间创建成功后，返回该成员的基本信息

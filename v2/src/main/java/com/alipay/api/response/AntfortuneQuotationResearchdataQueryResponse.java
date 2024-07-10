@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.quotation.researchdata.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 00:50:13
+ * @since 1.0, 2024-07-04 19:33:14
  */
 public class AntfortuneQuotationResearchdataQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4245122423312456811L;
+	private static final long serialVersionUID = 3273398271366591927L;
 
 	/** 
 	 * 结果码

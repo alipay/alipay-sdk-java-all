@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: techrisk.techrisk.tt.y.online response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 18:06:49
+ * @since 1.0, 2024-07-04 19:39:12
  */
 public class TechriskTechriskTtYOnlineResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3432911539944921286L;
+	private static final long serialVersionUID = 2475858555126498234L;
 
 	/** 
 	 * 1

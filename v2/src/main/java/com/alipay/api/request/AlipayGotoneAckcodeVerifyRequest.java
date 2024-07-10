@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.gotone.ackcode.verify request
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:26:57
+ * @since 1.0, 2024-07-04 17:32:00
  */
 public class AlipayGotoneAckcodeVerifyRequest implements AlipayRequest<AlipayGotoneAckcodeVerifyResponse> {
 

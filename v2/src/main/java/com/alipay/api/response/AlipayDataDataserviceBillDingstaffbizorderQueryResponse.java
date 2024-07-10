@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.bill.dingstaffbizorder.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:34:28
+ * @since 1.0, 2024-07-04 17:31:49
  */
 public class AlipayDataDataserviceBillDingstaffbizorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3287697476452756326L;
+	private static final long serialVersionUID = 3551726244685959562L;
 
 	/** 
 	 * 账单明细列表。如果返回数量小于page_size，则表示查询结束

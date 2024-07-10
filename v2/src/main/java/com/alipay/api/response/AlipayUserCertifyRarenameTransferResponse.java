@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.certify.rarename.transfer response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:29:04
+ * @since 1.0, 2024-07-04 19:33:12
  */
 public class AlipayUserCertifyRarenameTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3145131583265185483L;
+	private static final long serialVersionUID = 8712599871234414399L;
 
 	/** 
 	 * 结果姓名列表，多个姓名之间用逗号分隔。

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.my.getchy.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-01-29 11:33:41
+ * @since 1.0, 2024-07-04 19:33:18
  */
 public class AlipaySecurityProdMyGetchyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8298543449615248532L;
+	private static final long serialVersionUID = 5763372614867193941L;
 
 	/** 
 	 * 1

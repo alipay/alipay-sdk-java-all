@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.openbizmock.message.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-25 16:31:52
+ * @since 1.0, 2024-07-04 17:41:18
  */
 public class AlipayOpenAppOpenbizmockMessageSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2867537125784643113L;
+	private static final long serialVersionUID = 8314474176196161814L;
 
 	
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.enterprisepay.manage.approve request
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:28:37
+ * @since 1.0, 2024-07-04 17:31:54
  */
 public class AlipayFundEnterprisepayManageApproveRequest implements AlipayRequest<AlipayFundEnterprisepayManageApproveResponse> {
 

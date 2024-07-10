@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.databiz.core.payment.ability.get response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:28:34
+ * @since 1.0, 2024-07-04 20:47:02
  */
 public class AlipayDatabizCorePaymentAbilityGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4825452822315348575L;
+	private static final long serialVersionUID = 8867789222147928815L;
 
 	/** 
 	 * 支付能力返回结果信息

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.twc.userinfo.match response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-04 15:00:48
+ * @since 1.0, 2024-07-04 19:33:12
  */
 public class AnttechBlockchainTwcUserinfoMatchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8325518814892257772L;
+	private static final long serialVersionUID = 7473476978398315618L;
 
 	/** 
 	 * 蚂蚁统一会员ID对应的sha256的hash值

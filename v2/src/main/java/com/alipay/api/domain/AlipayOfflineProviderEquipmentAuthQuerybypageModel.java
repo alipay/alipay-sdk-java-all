@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 解绑查询接口
  *
  * @author auto create
- * @since 1.0, 2015-12-04 12:12:54
+ * @since 1.0, 2024-07-04 17:00:50
  */
 public class AlipayOfflineProviderEquipmentAuthQuerybypageModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3817498547619788362L;
+	private static final long serialVersionUID = 8384237989825649296L;
 
 	/**
 	 * 解绑起始时间

@@ -7,22 +7,24 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业解约
  *
  * @author auto create
- * @since 1.0, 2024-05-30 17:53:53
+ * @since 1.0, 2024-07-08 17:02:50
  */
 public class AlipayCommerceEcEnterpriseUnsignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3169182249614363462L;
+	private static final long serialVersionUID = 4829998284657824958L;
 
 	/**
-	 * 通过企业码1.0接口签约的共同账户，和agreement_no搭配使用。
+	 * 通过企业码1.0接口签约的共同账户，和agreement_no搭配使用。 当前字段已废弃(为兼容企业码1.0老接口的参数，已过时，新接客户请传企业ID)
 	 */
 	@ApiField("account_id")
+	@Deprecated
 	private String accountId;
 
 	/**
-	 * 可通过签约消息获取。配合共同账户id使用，当填写企业共同账户id时，此字段必填。
+	 * 可通过签约消息获取。配合共同账户id使用，当填写企业共同账户id时，此字段必填。 当前字段已废弃(为兼容企业码1.0老接口的参数，已过时，新接客户请传企业ID)
 	 */
 	@ApiField("agreement_no")
+	@Deprecated
 	private String agreementNo;
 
 	/**

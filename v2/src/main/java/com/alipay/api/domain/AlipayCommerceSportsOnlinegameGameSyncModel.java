@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 赛事信息同步
  *
  * @author auto create
- * @since 1.0, 2024-06-12 10:30:06
+ * @since 1.0, 2024-07-08 19:51:52
  */
 public class AlipayCommerceSportsOnlinegameGameSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7284839329985253497L;
+	private static final long serialVersionUID = 4715585115758153224L;
 
 	/**
 	 * 业务类型
@@ -42,25 +42,25 @@ public class AlipayCommerceSportsOnlinegameGameSyncModel extends AlipayObject {
 	private Date endTime;
 
 	/**
-	 * TEST(测试数据)/PROD(正式数据)
+	 * 环境参数 TEST(测试数据)/PROD(正式数据)
 	 */
 	@ApiField("env")
 	private String env;
 
 	/**
-	 * 文体侧赛事业务号
+	 * 文体侧赛事业务号，由文体标志及时间戳生成
 	 */
 	@ApiField("game_id")
 	private String gameId;
 
 	/**
-	 * 配合赛事总进度使用
+	 * 赛事总进度，线上赛为M（米），步数赛为STEP(步数)
 	 */
 	@ApiField("game_progress_unit")
 	private String gameProgressUnit;
 
 	/**
-	 * 赛事总进度
+	 * 赛事总进度,线上赛单位为M，步数赛为单位STEP
 	 */
 	@ApiField("game_progress_value")
 	private Long gameProgressValue;
@@ -85,7 +85,7 @@ public class AlipayCommerceSportsOnlinegameGameSyncModel extends AlipayObject {
 	private List<OnlineGameEventInfo> onlineGameEventList;
 
 	/**
-	 * 三方赛事ID(唯一值)
+	 * 三方赛事ID(唯一值)，由三方提供值
 	 */
 	@ApiField("out_game_no")
 	private String outGameNo;
@@ -97,13 +97,19 @@ public class AlipayCommerceSportsOnlinegameGameSyncModel extends AlipayObject {
 	private String posterUrl;
 
 	/**
-	 * 0代表上报条数无限制/1代表上报一条/n代表具体上报条数
+	 * 商品id，keep方必填，为交易组件接口返回
+	 */
+	@ApiField("product_id")
+	private String productId;
+
+	/**
+	 * 0代表上报条数无限制/1代表上报一条/n代表具体上报条数，单位为条
 	 */
 	@ApiField("sports_data_limit_count")
 	private Long sportsDataLimitCount;
 
 	/**
-	 * 支付宝运动
+	 * ALIPAY_SPORTS 支付宝运动
 	 */
 	@ApiField("sports_data_source")
 	private String sportsDataSource;
@@ -115,7 +121,7 @@ public class AlipayCommerceSportsOnlinegameGameSyncModel extends AlipayObject {
 	private String sportsDataType;
 
 	/**
-	 * 马拉松
+	 * MARATHON(马拉松)
 	 */
 	@ApiField("sports_type")
 	private String sportsType;
@@ -246,6 +252,13 @@ public class AlipayCommerceSportsOnlinegameGameSyncModel extends AlipayObject {
 	}
 	public void setPosterUrl(String posterUrl) {
 		this.posterUrl = posterUrl;
+	}
+
+	public String getProductId() {
+		return this.productId;
+	}
+	public void setProductId(String productId) {
+		this.productId = productId;
 	}
 
 	public Long getSportsDataLimitCount() {

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.bail.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 18:28:22
+ * @since 1.0, 2024-07-04 17:31:54
  */
 public class AlipayFundBailOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4817455727953328648L;
+	private static final long serialVersionUID = 5727741159943441142L;
 
 	/** 
 	 * 保证金预授权号

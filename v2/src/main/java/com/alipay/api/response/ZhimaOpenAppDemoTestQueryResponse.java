@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.open.app.demo.test.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-30 10:46:54
+ * @since 1.0, 2024-07-04 19:39:14
  */
 public class ZhimaOpenAppDemoTestQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2863191453465133193L;
+	private static final long serialVersionUID = 4486936229159177634L;
 
 	/** 
 	 * 方法

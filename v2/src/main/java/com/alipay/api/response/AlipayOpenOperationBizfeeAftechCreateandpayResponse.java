@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.operation.bizfee.aftech.createandpay response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 08:24:17
+ * @since 1.0, 2024-07-04 17:41:20
  */
 public class AlipayOpenOperationBizfeeAftechCreateandpayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7136637896696863585L;
+	private static final long serialVersionUID = 7647587377183751363L;
 
 	/** 
 	 * 费用订单号

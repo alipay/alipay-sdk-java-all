@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.cplife.useridentity.status.update request
  * 
  * @author auto create
- * @since 1.0, 2023-09-03 23:54:42
+ * @since 1.0, 2024-07-04 17:31:56
  */
 public class AlipayEcoCplifeUseridentityStatusUpdateRequest implements AlipayRequest<AlipayEcoCplifeUseridentityStatusUpdateResponse> {
 

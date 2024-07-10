@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.etc.apply.sync response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:28:32
+ * @since 1.0, 2024-07-04 16:56:00
  */
 public class AlipayCommerceTransportEtcApplySyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7618818578239198639L;
+	private static final long serialVersionUID = 2329361378265454811L;
 
 	/** 
 	 * 支付宝内部生成的orderid

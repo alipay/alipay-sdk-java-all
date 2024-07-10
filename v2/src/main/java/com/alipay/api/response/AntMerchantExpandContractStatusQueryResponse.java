@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.contract.status.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 02:52:42
+ * @since 1.0, 2024-07-04 19:33:17
  */
 public class AntMerchantExpandContractStatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7231582292799262922L;
+	private static final long serialVersionUID = 7574845543132533251L;
 
 	/** 
 	 * 签约状态结果补充说明，如：账户被冻结，无法签约

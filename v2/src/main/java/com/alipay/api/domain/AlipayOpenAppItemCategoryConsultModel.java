@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品类目预测信息收集接口
  *
  * @author auto create
- * @since 1.0, 2024-06-12 10:15:11
+ * @since 1.0, 2024-07-09 11:39:22
  */
 public class AlipayOpenAppItemCategoryConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7413254511442761154L;
+	private static final long serialVersionUID = 4735846273964995294L;
 
 	/**
 	 * 商品的图片ID；获取方式：商品主图&子图&详情图

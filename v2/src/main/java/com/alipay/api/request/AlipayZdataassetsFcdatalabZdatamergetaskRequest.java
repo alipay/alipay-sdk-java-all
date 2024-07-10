@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.zdataassets.fcdatalab.zdatamergetask request
  * 
  * @author auto create
- * @since 1.0, 2023-08-23 21:34:03
+ * @since 1.0, 2024-07-04 19:33:15
  */
 public class AlipayZdataassetsFcdatalabZdatamergetaskRequest implements AlipayRequest<AlipayZdataassetsFcdatalabZdatamergetaskResponse> {
 

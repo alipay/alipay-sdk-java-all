@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pay.app.smartwear.status.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 04:23:59
+ * @since 1.0, 2024-07-04 19:33:56
  */
 public class AlipayPayAppSmartwearStatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4117638313584778429L;
+	private static final long serialVersionUID = 4136586815538297155L;
 
 	/** 
 	 * 设备型号

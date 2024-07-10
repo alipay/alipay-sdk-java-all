@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁客户详细信息
  *
  * @author auto create
- * @since 1.0, 2024-05-24 12:08:21
+ * @since 1.0, 2024-07-05 12:04:51
  */
 public class RentCustomerDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 2535163231586949126L;
+	private static final long serialVersionUID = 1193714145626299133L;
 
 	/**
 	 * 支付宝账户OpenId
@@ -26,7 +26,7 @@ public class RentCustomerDetail extends AlipayObject {
 	private String alipayUserId;
 
 	/**
-	 * 证件号
+	 * 身份证号码
 	 */
 	@ApiField("cert_no")
 	private String certNo;

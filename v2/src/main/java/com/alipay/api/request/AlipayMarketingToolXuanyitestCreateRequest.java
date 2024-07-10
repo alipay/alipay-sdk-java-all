@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.tool.xuanyitest.create request
  * 
  * @author auto create
- * @since 1.0, 2022-08-01 16:07:01
+ * @since 1.0, 2024-07-04 17:41:17
  */
 public class AlipayMarketingToolXuanyitestCreateRequest implements AlipayRequest<AlipayMarketingToolXuanyitestCreateResponse> {
 

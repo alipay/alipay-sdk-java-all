@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.cityfacilitator.script.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 23:12:58
+ * @since 1.0, 2024-07-04 16:55:08
  */
 public class AlipayCommerceCityfacilitatorScriptQueryRequest implements AlipayRequest<AlipayCommerceCityfacilitatorScriptQueryResponse> {
 

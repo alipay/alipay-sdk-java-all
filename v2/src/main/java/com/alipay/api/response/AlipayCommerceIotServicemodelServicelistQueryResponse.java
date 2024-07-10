@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.servicemodel.servicelist.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-07-05 14:49:44
+ * @since 1.0, 2024-07-04 16:55:11
  */
 public class AlipayCommerceIotServicemodelServicelistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6254295694557253225L;
+	private static final long serialVersionUID = 6724266237473666816L;
 
 	/** 
 	 * 设备服务列表

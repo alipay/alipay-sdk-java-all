@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.micropay.order.unfreeze request
  * 
  * @author auto create
- * @since 1.0, 2021-12-06 09:56:49
+ * @since 1.0, 2024-07-04 17:41:17
  */
 public class AlipayMicropayOrderUnfreezeRequest implements AlipayRequest<AlipayMicropayOrderUnfreezeResponse> {
 

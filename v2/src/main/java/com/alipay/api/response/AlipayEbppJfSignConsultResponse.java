@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.jf.sign.consult response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:28:35
+ * @since 1.0, 2024-07-04 17:31:52
  */
 public class AlipayEbppJfSignConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3578124926481872456L;
+	private static final long serialVersionUID = 3853356562579878876L;
 
 	/** 
 	 * 咨询结果代码,允许签约时为SUCCESS, 其他情况根据不同的机构返回咨询异常设置

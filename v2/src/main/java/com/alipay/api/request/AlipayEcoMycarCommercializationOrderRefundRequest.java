@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.mycar.commercialization.order.refund request
  * 
  * @author auto create
- * @since 1.0, 2023-10-11 16:21:47
+ * @since 1.0, 2024-07-04 17:31:53
  */
 public class AlipayEcoMycarCommercializationOrderRefundRequest implements AlipayRequest<AlipayEcoMycarCommercializationOrderRefundResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.nopid.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2020-05-08 14:25:09
+ * @since 1.0, 2024-07-04 19:33:10
  */
 public class AlipaySecurityProdNopidBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5319453671888312161L;
+	private static final long serialVersionUID = 2124932259523679482L;
 
 	/** 
 	 * 111

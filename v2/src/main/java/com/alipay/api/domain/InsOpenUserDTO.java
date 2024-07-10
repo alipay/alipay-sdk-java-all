@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开放平台用户模型
  *
  * @author auto create
- * @since 1.0, 2024-01-05 16:19:14
+ * @since 1.0, 2024-07-09 14:47:50
  */
 public class InsOpenUserDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1431316664492828724L;
+	private static final long serialVersionUID = 8578379598937235448L;
+
+	/**
+	 * 地址
+	 */
+	@ApiField("address")
+	private String address;
 
 	/**
 	 * 证件名称
@@ -60,6 +66,13 @@ public class InsOpenUserDTO extends AlipayObject {
 	 */
 	@ApiField("user_type")
 	private String userType;
+
+	public String getAddress() {
+		return this.address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
 
 	public String getIdCardName() {
 		return this.idCardName;

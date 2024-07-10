@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.renthouse.ka.baseinfo.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 05:35:33
+ * @since 1.0, 2024-07-04 17:31:59
  */
 public class AlipayEcoRenthouseKaBaseinfoSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1332172846264252524L;
+	private static final long serialVersionUID = 1666717153751966846L;
 
 	/** 
 	 * 返回kaCode唯一标识,用户查询ka信息时候用

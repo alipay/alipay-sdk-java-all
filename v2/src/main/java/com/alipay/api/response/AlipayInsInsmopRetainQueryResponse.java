@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.insmop.retain.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-19 16:16:39
+ * @since 1.0, 2024-07-04 17:31:55
  */
 public class AlipayInsInsmopRetainQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6632651315899396748L;
+	private static final long serialVersionUID = 5477457144311915845L;
 
 	/** 
 	 * 通行证信息

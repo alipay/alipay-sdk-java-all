@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.pid.unwriteoff.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 00:22:30
+ * @since 1.0, 2024-07-04 16:55:00
  */
 public class AlipayBossFncPidUnwriteoffQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1251927984461972162L;
+	private static final long serialVersionUID = 8465371758767351691L;
 
 	/** 
 	 * true表示正在核销，false表示当前没有核销的单据

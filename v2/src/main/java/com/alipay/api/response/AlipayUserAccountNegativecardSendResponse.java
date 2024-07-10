@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.account.negativecard.send response.
  * 
  * @author auto create
- * @since 1.0, 2020-12-14 21:52:29
+ * @since 1.0, 2024-07-04 16:38:00
  */
 public class AlipayUserAccountNegativecardSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6466432137863346248L;
+	private static final long serialVersionUID = 6418684624297113525L;
 
 	/** 
 	 * 结果码。SUCCESS：发送成功。

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.retail.wms.producer.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-03 23:03:04
+ * @since 1.0, 2024-07-04 19:39:05
  */
 public class KoubeiRetailWmsProducerQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7284748373736443298L;
+	private static final long serialVersionUID = 2328821229651379442L;
 
 	/** 
 	 * 生产厂商信息

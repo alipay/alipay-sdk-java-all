@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.clive.feedback.submit response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-07 15:24:51
+ * @since 1.0, 2024-07-04 17:31:58
  */
 public class AlipayIserviceCliveFeedbackSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3877757489952556394L;
+	private static final long serialVersionUID = 3677576353413477112L;
 
 	
 

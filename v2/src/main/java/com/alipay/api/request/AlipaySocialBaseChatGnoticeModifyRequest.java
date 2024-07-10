@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.base.chat.gnotice.modify request
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 01:42:27
+ * @since 1.0, 2024-07-04 19:33:21
  */
 public class AlipaySocialBaseChatGnoticeModifyRequest implements AlipayRequest<AlipaySocialBaseChatGnoticeModifyResponse> {
 

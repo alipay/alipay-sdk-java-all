@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.fastpay.ete.didi.pay response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:28:46
+ * @since 1.0, 2024-07-04 19:33:07
  */
 public class AlipayTradeFastpayEteDidiPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8773241329328244988L;
+	private static final long serialVersionUID = 8134191317328167196L;
 
 	/** 
 	 * 商户网站唯一订单号

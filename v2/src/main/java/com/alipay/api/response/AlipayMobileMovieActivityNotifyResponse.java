@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.mobile.movie.activity.notify response.
  * 
  * @author auto create
- * @since 1.0, 2019-03-08 15:29:11
+ * @since 1.0, 2024-07-04 17:41:17
  */
 public class AlipayMobileMovieActivityNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8588638417975616955L;
+	private static final long serialVersionUID = 6481181856961821411L;
 
 	/** 
 	 * 是否成功

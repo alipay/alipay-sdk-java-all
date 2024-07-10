@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.charity.forestsendpic.send request
  * 
  * @author auto create
- * @since 1.0, 2024-03-14 16:48:26
+ * @since 1.0, 2024-07-04 15:51:36
  */
 public class AlipayUserCharityForestsendpicSendRequest implements AlipayRequest<AlipayUserCharityForestsendpicSendResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.payment.trade.financing.order.refund response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-24 22:39:46
+ * @since 1.0, 2024-07-04 15:51:34
  */
 public class MybankPaymentTradeFinancingOrderRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8182745575119625633L;
+	private static final long serialVersionUID = 5297492162249651419L;
 
 	/** 
 	 * 处理结果状态

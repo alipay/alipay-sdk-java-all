@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.prod.contract.consult.rollback response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-16 13:51:48
+ * @since 1.0, 2024-07-04 16:55:02
  */
 public class AlipayBossProdContractConsultRollbackResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4158386657188589349L;
+	private static final long serialVersionUID = 2267814286681726623L;
 
 	/** 
 	 * 请求处理结果code 200 正常

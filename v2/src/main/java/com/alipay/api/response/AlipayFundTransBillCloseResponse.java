@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.bill.close response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 00:52:53
+ * @since 1.0, 2024-07-04 17:31:58
  */
 public class AlipayFundTransBillCloseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2441783198724966659L;
+	private static final long serialVersionUID = 2596631681191595666L;
 
 	
 

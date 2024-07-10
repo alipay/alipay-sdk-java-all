@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.logistics.invoice.istdwaybill.query request
  * 
  * @author auto create
- * @since 1.0, 2023-09-11 15:59:12
+ * @since 1.0, 2024-07-04 16:55:13
  */
 public class AlipayCommerceLogisticsInvoiceIstdwaybillQueryRequest implements AlipayRequest<AlipayCommerceLogisticsInvoiceIstdwaybillQueryResponse> {
 

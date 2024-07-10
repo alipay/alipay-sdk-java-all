@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.terminal.vending.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 05:00:11
+ * @since 1.0, 2024-07-04 16:56:01
  */
 public class AlipayCommerceTerminalVendingCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8553825966492911624L;
+	private static final long serialVersionUID = 6144534915939659332L;
 
 	/** 
 	 * 同步订单记录初始化后返回的唯一Id,后续用于订单状态更新

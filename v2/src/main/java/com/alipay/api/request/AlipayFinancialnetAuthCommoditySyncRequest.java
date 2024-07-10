@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.financialnet.auth.commodity.sync request
  * 
  * @author auto create
- * @since 1.0, 2022-11-14 13:19:15
+ * @since 1.0, 2024-07-04 17:31:59
  */
 public class AlipayFinancialnetAuthCommoditySyncRequest implements AlipayRequest<AlipayFinancialnetAuthCommoditySyncResponse> {
 

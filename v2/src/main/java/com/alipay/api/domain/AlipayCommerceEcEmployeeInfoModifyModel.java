@@ -10,21 +10,21 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 员工信息修改
  *
  * @author auto create
- * @since 1.0, 2024-05-22 13:32:17
+ * @since 1.0, 2024-07-09 11:19:15
  */
 public class AlipayCommerceEcEmployeeInfoModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8112515197519394191L;
+	private static final long serialVersionUID = 2368947451153113354L;
 
 	/**
-	 * 员工所属部门
+	 * 员工所属部门。如果不传值，则不更新所属部门
 	 */
 	@ApiListField("department_ids")
 	@ApiField("string")
 	private List<String> departmentIds;
 
 	/**
-	 * 员工邮箱
+	 * 员工邮箱。如果不传值，则不更新邮箱。
 	 */
 	@ApiField("employee_email")
 	private String employeeEmail;
@@ -36,7 +36,7 @@ public class AlipayCommerceEcEmployeeInfoModifyModel extends AlipayObject {
 	private String employeeId;
 
 	/**
-	 * 员工手机号
+	 * 员工手机号。如果不传值，则不更新手机号。
 	 */
 	@ApiField("employee_mobile")
 	private String employeeMobile;
@@ -48,7 +48,7 @@ public class AlipayCommerceEcEmployeeInfoModifyModel extends AlipayObject {
 	private String employeeName;
 
 	/**
-	 * 员工工号
+	 * 员工工号。如果不传值，则不更新工号。
 	 */
 	@ApiField("employee_no")
 	private String employeeNo;
@@ -60,13 +60,13 @@ public class AlipayCommerceEcEmployeeInfoModifyModel extends AlipayObject {
 	private String enterpriseId;
 
 	/**
-	 * 个性化信息 <a href='https://opendocs.alipay.com/pre-open/0ceh47?pathHash=14fac87c'>详见文档</a>
+	 * 个性化信息。如果不传值，则不更新个性化信息。 <a href='https://opendocs.alipay.com/pre-open/0ceh47?pathHash=14fac87c'>详见文档</a>
 	 */
 	@ApiField("profiles")
 	private String profiles;
 
 	/**
-	 * 角色列表，目前只支持填一种角色
+	 * 角色列表，目前只支持填一种角色。如果不传值，则不更新角色。
 	 */
 	@ApiListField("role_list")
 	@ApiField("string")

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 当前订单逾期时，需要传以下信息
  *
  * @author auto create
- * @since 1.0, 2024-06-06 12:00:01
+ * @since 1.0, 2024-07-05 12:04:51
  */
 public class OverdueDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1615624287117256552L;
+	private static final long serialVersionUID = 6232817497389731588L;
 
 	/**
 	 * 逾期的天数
@@ -28,7 +28,7 @@ public class OverdueDetail extends AlipayObject {
 	private String overdueDesc;
 
 	/**
-	 * 逾期的金额
+	 * 逾期的金额。单位:元，精度:分。
 	 */
 	@ApiField("overdue_fee")
 	private String overdueFee;
@@ -41,6 +41,7 @@ public class OverdueDetail extends AlipayObject {
 
 	/**
 	 * 逾期时间
+年-月-日 时:分:秒
 	 */
 	@ApiField("overdue_time")
 	private Date overdueTime;

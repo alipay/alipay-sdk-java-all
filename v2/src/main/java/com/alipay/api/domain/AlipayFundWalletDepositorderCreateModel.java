@@ -9,14 +9,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户充值创建订单
  *
  * @author auto create
- * @since 1.0, 2024-03-06 19:51:08
+ * @since 1.0, 2024-07-05 15:47:53
  */
 public class AlipayFundWalletDepositorderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5445698216149314863L;
+	private static final long serialVersionUID = 3818649322874595861L;
 
 	/**
-	 * 充值的本金金额
+	 * 充值的本金金额，单位：元（人民币）
 	 */
 	@ApiField("amount")
 	private String amount;
@@ -34,7 +34,7 @@ public class AlipayFundWalletDepositorderCreateModel extends AlipayObject {
 	private String effectiveEndDate;
 
 	/**
-	 * 充值的膨胀金额
+	 * 充值的膨胀金额，单位：元（人民币）
 	 */
 	@ApiField("expand_amount")
 	private String expandAmount;
@@ -46,7 +46,7 @@ public class AlipayFundWalletDepositorderCreateModel extends AlipayObject {
 	private String orderTitle;
 
 	/**
-	 * 充值外部订单号，用于幂等
+	 * 充值外部订单号，由客户自己定义，用于幂等
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
@@ -65,7 +65,7 @@ public class AlipayFundWalletDepositorderCreateModel extends AlipayObject {
 	private String platform;
 
 	/**
-	 * 销售产品码
+	 * 销售产品码，接入时由产品定义
 	 */
 	@ApiField("product_code")
 	private String productCode;
@@ -83,7 +83,7 @@ public class AlipayFundWalletDepositorderCreateModel extends AlipayObject {
 	private Date timeExpire;
 
 	/**
-	 * 钱包id
+	 * 用户开通钱包时返回的钱包id
 	 */
 	@ApiField("user_wallet_id")
 	private String userWalletId;

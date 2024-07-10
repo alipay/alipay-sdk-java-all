@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.task.prize.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-01 23:14:25
+ * @since 1.0, 2024-07-04 17:41:16
  */
 public class AlipayMarketingCampaignTaskPrizeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7817364169241764642L;
+	private static final long serialVersionUID = 1591579367475272658L;
 
 	/** 
 	 * 发奖流水任务-详情关系列表

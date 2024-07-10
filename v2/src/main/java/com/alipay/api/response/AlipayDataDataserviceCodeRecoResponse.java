@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.code.reco response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 21:49:48
+ * @since 1.0, 2024-07-04 17:31:49
  */
 public class AlipayDataDataserviceCodeRecoResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6579986723827524571L;
+	private static final long serialVersionUID = 5859815534394838525L;
 
 	/** 
 	 * 识别结果

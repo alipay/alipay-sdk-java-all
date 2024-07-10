@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.train.stagecaterelation.query request
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 16:36:14
+ * @since 1.0, 2024-07-04 16:55:37
  */
 public class AlipayCommerceEducateTrainStagecaterelationQueryRequest implements AlipayRequest<AlipayCommerceEducateTrainStagecaterelationQueryResponse> {
 

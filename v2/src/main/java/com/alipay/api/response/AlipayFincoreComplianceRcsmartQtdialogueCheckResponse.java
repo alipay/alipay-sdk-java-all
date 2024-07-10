@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fincore.compliance.rcsmart.qtdialogue.check response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 03:25:23
+ * @since 1.0, 2024-07-04 17:31:54
  */
 public class AlipayFincoreComplianceRcsmartQtdialogueCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7178358556425568885L;
+	private static final long serialVersionUID = 7114721238953833457L;
 
 	/** 
 	 * 对话审核结果

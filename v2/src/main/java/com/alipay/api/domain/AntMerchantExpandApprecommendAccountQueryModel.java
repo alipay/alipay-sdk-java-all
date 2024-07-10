@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询已关联指定APP的账号列表
  *
  * @author auto create
- * @since 1.0, 2022-10-10 12:09:19
+ * @since 1.0, 2024-07-04 15:25:50
  */
 public class AntMerchantExpandApprecommendAccountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7117435359834766416L;
+	private static final long serialVersionUID = 1222629531234768745L;
 
 	/**
 	 * 已关联小程序的app_id
@@ -26,7 +26,7 @@ public class AntMerchantExpandApprecommendAccountQueryModel extends AlipayObject
 	private Long pageNumber;
 
 	/**
-	 * 单页行数，不能超过100行
+	 * 单页行数，不能超过100行，单位：行
 	 */
 	@ApiField("page_size")
 	private Long pageSize;

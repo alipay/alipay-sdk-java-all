@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: datadigital.anttech.qqq.ccc.query request
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:27:35
+ * @since 1.0, 2024-07-04 19:33:27
  */
 public class DatadigitalAnttechQqqCccQueryRequest implements AlipayRequest<DatadigitalAnttechQqqCccQueryResponse> {
 

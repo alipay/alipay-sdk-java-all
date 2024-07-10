@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.catering.pos.sidedishbatch.save request
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 03:24:18
+ * @since 1.0, 2024-07-04 15:51:39
  */
 public class KoubeiCateringPosSidedishbatchSaveRequest implements AlipayRequest<KoubeiCateringPosSidedishbatchSaveResponse> {
 

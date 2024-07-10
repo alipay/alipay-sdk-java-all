@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.shuanq.query request
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:29:20
+ * @since 1.0, 2024-07-04 17:31:50
  */
 public class AlipayDataShuanqQueryRequest implements AlipayRequest<AlipayDataShuanqQueryResponse> {
 

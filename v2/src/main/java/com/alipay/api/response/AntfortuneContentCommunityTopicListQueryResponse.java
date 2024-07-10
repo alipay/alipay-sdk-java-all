@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.content.community.topic.list.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2024-07-04 15:51:39
  */
 public class AntfortuneContentCommunityTopicListQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4175917372522662563L;
+	private static final long serialVersionUID = 2274972143579917967L;
 
 	/** 
 	 * 话题VO列表

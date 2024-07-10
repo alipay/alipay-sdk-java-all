@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户参赛上报跑步数据信息
  *
  * @author auto create
- * @since 1.0, 2024-06-12 13:59:57
+ * @since 1.0, 2024-07-08 17:03:09
  */
 public class UserOnlineGameDataInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2167897537484373744L;
+	private static final long serialVersionUID = 5566124726285341231L;
 
 	/**
 	 * 运动结束时间
@@ -22,7 +22,7 @@ public class UserOnlineGameDataInfo extends AlipayObject {
 	private Date endTime;
 
 	/**
-	 * 用户外部参赛业务号
+	 * 用户外部参赛业务号，取值为外部传入
 	 */
 	@ApiField("out_user_game_no")
 	private String outUserGameNo;
@@ -40,13 +40,13 @@ public class UserOnlineGameDataInfo extends AlipayObject {
 	private String userDataCalory;
 
 	/**
-	 * 消耗的时间
+	 * 消耗的时间,单位秒
 	 */
 	@ApiField("user_data_seconds")
 	private Long userDataSeconds;
 
 	/**
-	 * 配速(保留五位小数)
+	 * 配速(保留五位小数),米/秒或公里/小时
 	 */
 	@ApiField("user_data_speed")
 	private String userDataSpeed;
@@ -58,13 +58,13 @@ public class UserOnlineGameDataInfo extends AlipayObject {
 	private String userDataSportsType;
 
 	/**
-	 * 进度单位
+	 * 进度单位，线上赛单位M，步数赛单位STEP
 	 */
 	@ApiField("user_data_unit")
 	private String userDataUnit;
 
 	/**
-	 * 用户完成进度值(保留两位小数)
+	 * 用户完成进度值(保留两位小数)，单位见user_data_unit字段，区分步数赛和线上赛
 	 */
 	@ApiField("user_data_value")
 	private String userDataValue;
@@ -76,7 +76,7 @@ public class UserOnlineGameDataInfo extends AlipayObject {
 	private String userGameDataId;
 
 	/**
-	 * 文体侧用户参赛业务号
+	 * 文体侧用户参赛业务号，文体标志加时间戳拼接
 	 */
 	@ApiField("user_game_id")
 	private String userGameId;

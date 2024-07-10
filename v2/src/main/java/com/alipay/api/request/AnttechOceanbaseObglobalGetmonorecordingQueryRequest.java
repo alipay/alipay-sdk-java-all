@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.oceanbase.obglobal.getmonorecording.query request
  * 
  * @author auto create
- * @since 1.0, 2023-10-23 13:48:28
+ * @since 1.0, 2024-07-04 19:33:27
  */
 public class AnttechOceanbaseObglobalGetmonorecordingQueryRequest implements AlipayRequest<AnttechOceanbaseObglobalGetmonorecordingQueryResponse> {
 

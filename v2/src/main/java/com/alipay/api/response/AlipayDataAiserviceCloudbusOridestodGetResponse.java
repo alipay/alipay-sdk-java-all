@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.aiservice.cloudbus.oridestod.get response.
  * 
  * @author auto create
- * @since 1.0, 2019-07-31 19:51:15
+ * @since 1.0, 2024-07-04 17:31:48
  */
 public class AlipayDataAiserviceCloudbusOridestodGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1586887266248834378L;
+	private static final long serialVersionUID = 7317951478851991695L;
 
 	/** 
 	 * 7OD  结果

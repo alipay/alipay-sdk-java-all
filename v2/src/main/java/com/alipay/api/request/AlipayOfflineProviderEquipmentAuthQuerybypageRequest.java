@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.provider.equipment.auth.querybypage request
  * 
  * @author auto create
- * @since 1.0, 2023-08-23 20:47:35
+ * @since 1.0, 2024-07-04 17:41:20
  */
 public class AlipayOfflineProviderEquipmentAuthQuerybypageRequest implements AlipayRequest<AlipayOfflineProviderEquipmentAuthQuerybypageResponse> {
 

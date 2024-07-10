@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询小程序本地生活订单结算账单列表
  *
  * @author auto create
- * @since 1.0, 2024-05-21 21:52:03
+ * @since 1.0, 2024-07-03 10:59:53
  */
 public class AlipayOpenMiniOrderbillLocalsettleBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7696958454783842486L;
+	private static final long serialVersionUID = 6162597683499253436L;
 
 	/**
 	 * 页大小，最大值为10

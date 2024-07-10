@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.content.contentinfo.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 22:42:24
+ * @since 1.0, 2024-07-04 19:33:27
  */
 public class KoubeiContentContentinfoCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3242478928917864114L;
+	private static final long serialVersionUID = 1619932361582135538L;
 
 	/** 
 	 * 内容id,由内容创建成功后返回。存在返回结果实体类中的data字段内。

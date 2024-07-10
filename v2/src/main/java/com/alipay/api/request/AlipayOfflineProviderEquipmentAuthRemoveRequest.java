@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.provider.equipment.auth.remove request
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 04:08:05
+ * @since 1.0, 2024-07-04 17:41:20
  */
 public class AlipayOfflineProviderEquipmentAuthRemoveRequest implements AlipayRequest<AlipayOfflineProviderEquipmentAuthRemoveResponse> {
 

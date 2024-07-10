@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.edu.kt.schoolinfo.modify response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:28:48
+ * @since 1.0, 2024-07-04 17:31:56
  */
 public class AlipayEcoEduKtSchoolinfoModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2154894595421118846L;
+	private static final long serialVersionUID = 4533257663763424878L;
 
 	/** 
 	 * 支付宝分配给学校的编码，作为学校在支付宝的标识

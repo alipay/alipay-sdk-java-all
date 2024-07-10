@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.data.deer.insight.query request
  * 
  * @author auto create
- * @since 1.0, 2021-01-06 16:28:10
+ * @since 1.0, 2024-07-04 17:41:16
  */
 public class AlipayMarketingDataDeerInsightQueryRequest implements AlipayRequest<AlipayMarketingDataDeerInsightQueryResponse> {
 

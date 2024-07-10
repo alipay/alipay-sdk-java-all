@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.open.kaifang.kaifang.query request
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:26:16
+ * @since 1.0, 2024-07-04 19:39:14
  */
 public class ZhimaOpenKaifangKaifangQueryRequest implements AlipayRequest<ZhimaOpenKaifangKaifangQueryResponse> {
 

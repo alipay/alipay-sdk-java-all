@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.huabei.rpacrawler.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-24 22:36:07
+ * @since 1.0, 2024-07-04 19:33:08
  */
 public class AlipayPcreditHuabeiRpacrawlerQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5253293442124161887L;
+	private static final long serialVersionUID = 4355432375274548654L;
 
 	/** 
 	 * RPA任务

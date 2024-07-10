@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁配送详情
  *
  * @author auto create
- * @since 1.0, 2024-05-24 12:08:21
+ * @since 1.0, 2024-07-05 12:04:51
  */
 public class RentDeliveryDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 2254957685232248272L;
+	private static final long serialVersionUID = 1539985866375428623L;
 
 	/**
 	 * 物流类型
@@ -26,7 +26,7 @@ public class RentDeliveryDetail extends AlipayObject {
 	private String receiverAddress;
 
 	/**
-	 * 标准城市域码
+	 * <a href="https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=C9C488FD717AFDCD52157F41C3302C6D">中华人民共和国行政区划代码</a>
 	 */
 	@ApiField("receiver_division_code")
 	private String receiverDivisionCode;

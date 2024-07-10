@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.payforprivilege.cardbinactivity.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-09-10 14:57:45
+ * @since 1.0, 2024-07-04 17:41:18
  */
 public class AlipayMerchantPayforprivilegeCardbinactivityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3426824175341279892L;
+	private static final long serialVersionUID = 3678719141932122985L;
 
 	/** 
 	 * 查询到的卡bin活动信息

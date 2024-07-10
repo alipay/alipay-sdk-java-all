@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.recycle.security.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:28:49
+ * @since 1.0, 2024-07-10 11:37:37
  */
 public class AlipayCommerceRecycleSecurityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6828413453542868996L;
+	private static final long serialVersionUID = 2549494915367571242L;
 
 	/** 
 	 * 订单风险评估等级，

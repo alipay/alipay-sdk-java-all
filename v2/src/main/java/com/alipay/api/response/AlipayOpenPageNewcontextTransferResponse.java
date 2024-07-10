@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.page.newcontext.transfer response.
  * 
  * @author auto create
- * @since 1.0, 2020-03-25 16:52:26
+ * @since 1.0, 2024-07-04 20:52:39
  */
 public class AlipayOpenPageNewcontextTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6869162564734788485L;
+	private static final long serialVersionUID = 6488741549285776528L;
 
 	
 

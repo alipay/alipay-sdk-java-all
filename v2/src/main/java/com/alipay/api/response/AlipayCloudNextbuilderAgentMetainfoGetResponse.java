@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.nextbuilder.agent.metainfo.get response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-23 20:27:02
+ * @since 1.0, 2024-07-05 16:42:05
  */
 public class AlipayCloudNextbuilderAgentMetainfoGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3666668332663273562L;
+	private static final long serialVersionUID = 1898781969839222455L;
 
 	/** 
 	 * 创作者平台agentId
@@ -27,6 +27,12 @@ public class AlipayCloudNextbuilderAgentMetainfoGetResponse extends AlipayRespon
 	 */
 	@ApiField("agent_name")
 	private String agentName;
+
+	/** 
+	 * agent业务类型
+	 */
+	@ApiField("agent_type")
+	private String agentType;
 
 	/** 
 	 * AI创作平台agent功能描述
@@ -65,6 +71,13 @@ public class AlipayCloudNextbuilderAgentMetainfoGetResponse extends AlipayRespon
 	}
 	public String getAgentName( ) {
 		return this.agentName;
+	}
+
+	public void setAgentType(String agentType) {
+		this.agentType = agentType;
+	}
+	public String getAgentType( ) {
+		return this.agentType;
 	}
 
 	public void setDescription(String description) {

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.page.refund response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-03 10:41:30
+ * @since 1.0, 2024-07-04 16:38:00
  */
 public class AlipayTradePageRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1883398921317392995L;
+	private static final long serialVersionUID = 3476519989625326514L;
 
 	/** 
 	 * 退款请求号

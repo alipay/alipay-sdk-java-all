@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.acquire.query response.
  * 
  * @author auto create
- * @since 1.0, 2022-04-15 16:08:42
+ * @since 1.0, 2024-07-04 16:38:04
  */
 public class AlipayAcquireQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5599341536641945514L;
+	private static final long serialVersionUID = 1629685436986869735L;
 
 	/** 
 	 * 买家支付宝账号，可以是Email或手机号码。

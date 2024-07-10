@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.content.community.subtitle.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-04-01 20:51:09
+ * @since 1.0, 2024-07-04 19:33:18
  */
 public class AntfortuneContentCommunitySubtitleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4789176588355229531L;
+	private static final long serialVersionUID = 7542726258635293575L;
 
 	/** 
 	 * 纠偏后的结果

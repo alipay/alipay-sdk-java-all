@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOverseasOpenAccountConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8167183866493945181L;
+	private static final long serialVersionUID = 2799721622825264195L;
 
 	/** 
 	 * 账号

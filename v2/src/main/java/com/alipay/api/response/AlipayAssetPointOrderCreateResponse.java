@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.asset.point.order.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-27 14:00:40
+ * @since 1.0, 2024-07-04 16:54:57
  */
 public class AlipayAssetPointOrderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3698835628917919267L;
+	private static final long serialVersionUID = 1396529352548767374L;
 
 	/** 
 	 * 支付宝集分宝发放流水号

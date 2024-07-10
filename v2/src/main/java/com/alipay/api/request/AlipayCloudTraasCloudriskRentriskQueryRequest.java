@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.traas.cloudrisk.rentrisk.query request
  * 
  * @author auto create
- * @since 1.0, 2024-05-31 17:07:01
+ * @since 1.0, 2024-07-08 22:02:04
  */
 public class AlipayCloudTraasCloudriskRentriskQueryRequest implements AlipayRequest<AlipayCloudTraasCloudriskRentriskQueryResponse> {
 

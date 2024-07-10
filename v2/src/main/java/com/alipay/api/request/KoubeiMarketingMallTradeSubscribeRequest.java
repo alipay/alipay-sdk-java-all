@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.marketing.mall.trade.subscribe request
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 03:47:24
+ * @since 1.0, 2024-07-04 19:39:04
  */
 public class KoubeiMarketingMallTradeSubscribeRequest implements AlipayRequest<KoubeiMarketingMallTradeSubscribeResponse> {
 

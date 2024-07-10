@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 结算主体模型
  *
  * @author auto create
- * @since 1.0, 2023-12-22 11:07:12
+ * @since 1.0, 2024-07-05 16:58:11
  */
 public class SettleEntity extends AlipayObject {
 
-	private static final long serialVersionUID = 7429757683373879538L;
+	private static final long serialVersionUID = 4573766374187534238L;
 
 	/**
 	 * 结算主体资产业务类型，settled 表示已结算资产

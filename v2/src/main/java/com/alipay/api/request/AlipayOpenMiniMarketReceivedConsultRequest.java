@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.market.received.consult request
  * 
  * @author auto create
- * @since 1.0, 2024-04-01 23:28:16
+ * @since 1.0, 2024-07-04 17:41:22
  */
 public class AlipayOpenMiniMarketReceivedConsultRequest implements AlipayRequest<AlipayOpenMiniMarketReceivedConsultResponse> {
 

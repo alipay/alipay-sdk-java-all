@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.lingjiuyiwu.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 23:58:27
+ * @since 1.0, 2024-07-04 15:51:36
  */
 public class AlipayOpenAppLingjiuyiwuBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5876146557791676824L;
+	private static final long serialVersionUID = 1422667951681899635L;
 
 	
 

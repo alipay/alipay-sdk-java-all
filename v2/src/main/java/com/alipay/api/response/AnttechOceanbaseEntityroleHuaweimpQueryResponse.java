@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AnttechOceanbaseEntityroleHuaweimpQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8299389248679497856L;
+	private static final long serialVersionUID = 1879257615733219846L;
 
 	/** 
 	 * 华为云客户名称

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.sports.venue.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:29:18
+ * @since 1.0, 2024-07-04 16:56:00
  */
 public class AlipayCommerceSportsVenueCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8664976181539595339L;
+	private static final long serialVersionUID = 3399738292811479215L;
 
 	/** 
 	 * 描述

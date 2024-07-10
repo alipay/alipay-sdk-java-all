@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序结束灰度
  *
  * @author auto create
- * @since 1.0, 2023-10-10 09:46:53
+ * @since 1.0, 2024-07-09 11:27:49
  */
 public class AlipayOpenMiniVersionGrayCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6469126692245589738L;
+	private static final long serialVersionUID = 1613353891878845282L;
 
 	/**
 	 * 商家灰度中的小程序版本号，结束灰度后小程序将回到审核通过状态。

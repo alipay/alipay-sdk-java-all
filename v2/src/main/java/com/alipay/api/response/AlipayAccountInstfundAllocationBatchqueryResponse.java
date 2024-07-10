@@ -1,6 +1,8 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.InstFundFlowRecordDTO;
 
 import com.alipay.api.AlipayResponse;
@@ -13,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayAccountInstfundAllocationBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4172676695316315168L;
+	private static final long serialVersionUID = 1588255463672434466L;
 
 	/** 
 	 * 页码
@@ -30,8 +32,9 @@ public class AlipayAccountInstfundAllocationBatchqueryResponse extends AlipayRes
 	/** 
 	 * 返回结果
 	 */
-	@ApiField("result_object")
-	private InstFundFlowRecordDTO resultObject;
+	@ApiListField("result_object")
+	@ApiField("inst_fund_flow_record_d_t_o")
+	private List<InstFundFlowRecordDTO> resultObject;
 
 	/** 
 	 * 总记录条数
@@ -53,10 +56,10 @@ public class AlipayAccountInstfundAllocationBatchqueryResponse extends AlipayRes
 		return this.pageSize;
 	}
 
-	public void setResultObject(InstFundFlowRecordDTO resultObject) {
+	public void setResultObject(List<InstFundFlowRecordDTO> resultObject) {
 		this.resultObject = resultObject;
 	}
-	public InstFundFlowRecordDTO getResultObject( ) {
+	public List<InstFundFlowRecordDTO> getResultObject( ) {
 		return this.resultObject;
 	}
 

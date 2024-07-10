@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: antfortune.equity.shop.custrelation.query request
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 01:06:58
+ * @since 1.0, 2024-07-04 19:33:09
  */
 public class AntfortuneEquityShopCustrelationQueryRequest implements AlipayRequest<AntfortuneEquityShopCustrelationQueryResponse> {
 

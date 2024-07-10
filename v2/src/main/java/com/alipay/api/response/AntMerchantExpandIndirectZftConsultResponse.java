@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.indirect.zft.consult response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-04 15:57:03
+ * @since 1.0, 2024-07-08 16:05:25
  */
 public class AntMerchantExpandIndirectZftConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1669927783548581546L;
+	private static final long serialVersionUID = 6361354342423276925L;
 
 	/** 
 	 * 资金账户是否审核。当调用没有报错时，本值才有参考意义

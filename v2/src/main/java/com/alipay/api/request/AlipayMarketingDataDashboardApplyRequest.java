@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.data.dashboard.apply request
  * 
  * @author auto create
- * @since 1.0, 2023-09-03 23:01:21
+ * @since 1.0, 2024-07-04 20:52:32
  */
 public class AlipayMarketingDataDashboardApplyRequest implements AlipayRequest<AlipayMarketingDataDashboardApplyResponse> {
 

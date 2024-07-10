@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.order.installment.close request
  * 
  * @author auto create
- * @since 1.0, 2024-04-22 19:12:01
+ * @since 1.0, 2024-07-04 17:41:22
  */
 public class AlipayOpenMiniOrderInstallmentCloseRequest implements AlipayRequest<AlipayOpenMiniOrderInstallmentCloseResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.base.group.create request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2024-07-05 11:02:33
  */
 public class AlipaySocialBaseGroupCreateRequest implements AlipayRequest<AlipaySocialBaseGroupCreateResponse> {
 

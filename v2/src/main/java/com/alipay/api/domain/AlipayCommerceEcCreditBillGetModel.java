@@ -7,26 +7,28 @@ import com.alipay.api.internal.mapping.ApiField;
  * 还款计划查询
  *
  * @author auto create
- * @since 1.0, 2023-10-10 14:49:06
+ * @since 1.0, 2024-07-08 14:33:14
  */
 public class AlipayCommerceEcCreditBillGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7454532449264681925L;
+	private static final long serialVersionUID = 8642942143579518921L;
 
 	/**
-	 * 通过企业码1.0接口签约的共同账户，和agreement_no搭配使用。
+	 * 通过企业码1.0接口签约的共同账户，和agreement_no搭配使用。 当前字段已废弃(历史兼容逻辑冗余字段增加了接口复杂性，统一移除)
 	 */
 	@ApiField("account_id")
+	@Deprecated
 	private String accountId;
 
 	/**
-	 * 可通过签约消息获取。配合共同账户id使用，当填写企业共同账户id时，此字段必填。
+	 * 可通过签约消息获取。配合共同账户id使用，当填写企业共同账户id时，此字段必填。 当前字段已废弃(历史兼容逻辑冗余字段增加了接口复杂性，统一移除)
 	 */
 	@ApiField("agreement_no")
+	@Deprecated
 	private String agreementNo;
 
 	/**
-	 * 资产类型 枚举值 网商授信:EBE_MYBANK_CREDIT 拉卡拉授信：ENT_LAC_CREDIT
+	 * 授信资产类型
 	 */
 	@ApiField("asset_type")
 	private String assetType;
@@ -38,7 +40,7 @@ public class AlipayCommerceEcCreditBillGetModel extends AlipayObject {
 	private String billDate;
 
 	/**
-	 * 通过企业码2.0签约接口签约，只填写企业id，无需填写共同账户id和授权签约协议号。
+	 * 企业Id，企业入驻企业码时自动分配的用于唯一标识的编号
 	 */
 	@ApiField("enterprise_id")
 	private String enterpriseId;

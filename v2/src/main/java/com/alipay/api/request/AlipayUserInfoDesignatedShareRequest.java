@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.info.designated.share request
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:34:54
+ * @since 1.0, 2024-07-04 19:33:16
  */
 public class AlipayUserInfoDesignatedShareRequest implements AlipayRequest<AlipayUserInfoDesignatedShareResponse> {
 

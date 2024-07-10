@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.travel.intl.bizarea.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-02 17:06:49
+ * @since 1.0, 2024-07-04 17:41:21
  */
 public class AlipayOverseasTravelIntlBizareaSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5164922935791848629L;
+	private static final long serialVersionUID = 3156314244461832419L;
 
 	/** 
 	 * 结果

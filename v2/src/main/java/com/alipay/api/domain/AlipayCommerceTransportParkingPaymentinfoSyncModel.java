@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 停车支付信息同步接口
  *
  * @author auto create
- * @since 1.0, 2023-05-19 15:13:51
+ * @since 1.0, 2024-07-10 09:50:44
  */
 public class AlipayCommerceTransportParkingPaymentinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4569696724853968426L;
+	private static final long serialVersionUID = 4344759486915756629L;
 
 	/**
 	 * 停车场内缴费后，允许出场的免费时长分钟数

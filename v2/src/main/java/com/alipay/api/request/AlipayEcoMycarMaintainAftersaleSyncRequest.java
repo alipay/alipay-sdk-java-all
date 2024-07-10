@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.mycar.maintain.aftersale.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 17:20:08
+ * @since 1.0, 2024-07-04 17:31:53
  */
 public class AlipayEcoMycarMaintainAftersaleSyncRequest implements AlipayRequest<AlipayEcoMycarMaintainAftersaleSyncResponse> {
 

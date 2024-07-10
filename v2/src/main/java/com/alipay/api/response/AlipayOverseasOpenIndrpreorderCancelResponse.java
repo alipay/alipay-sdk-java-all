@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.open.indrpreorder.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 05:11:44
+ * @since 1.0, 2024-07-04 20:52:37
  */
 public class AlipayOverseasOpenIndrpreorderCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1894237331563662835L;
+	private static final long serialVersionUID = 1463899893684595233L;
 
 	/** 
 	 * 返回结果

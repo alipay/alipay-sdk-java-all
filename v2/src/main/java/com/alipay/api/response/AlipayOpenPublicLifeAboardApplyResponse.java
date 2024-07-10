@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.public.life.aboard.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-12 06:53:47
+ * @since 1.0, 2024-07-04 15:51:37
  */
 public class AlipayOpenPublicLifeAboardApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6318435882773926977L;
+	private static final long serialVersionUID = 5318823525773596163L;
 
 	/** 
 	 * 上架成功后返回的提示

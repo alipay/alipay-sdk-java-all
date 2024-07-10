@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.digitalmgmt.cmall.goods.sync request
  * 
  * @author auto create
- * @since 1.0, 2024-02-26 10:28:45
+ * @since 1.0, 2024-07-04 17:31:50
  */
 public class AlipayDigitalmgmtCmallGoodsSyncRequest implements AlipayRequest<AlipayDigitalmgmtCmallGoodsSyncResponse> {
 

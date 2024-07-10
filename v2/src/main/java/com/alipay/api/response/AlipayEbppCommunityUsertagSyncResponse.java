@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.community.usertag.sync response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:29:04
+ * @since 1.0, 2024-07-04 17:31:51
  */
 public class AlipayEbppCommunityUsertagSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5369173938836729353L;
+	private static final long serialVersionUID = 4269796222345734968L;
 
 	
 

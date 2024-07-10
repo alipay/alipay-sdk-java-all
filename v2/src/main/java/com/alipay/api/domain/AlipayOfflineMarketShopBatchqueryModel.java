@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 系统商通过该接口可以查询所有门店的外部门店编号（系统商的门店编号）
  *
  * @author auto create
- * @since 1.0, 2022-01-07 11:43:10
+ * @since 1.0, 2024-07-04 17:01:00
  */
 public class AlipayOfflineMarketShopBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5332494923552788748L;
+	private static final long serialVersionUID = 1382416338355595116L;
 
 	/**
 	 * 表示接口查询门店的业务渠道限制：ALL、 POS、不传。不传代表只查询普通门店，传入POS代表只查询简易门店，传入ALL代表查询普通门店和简易门店。

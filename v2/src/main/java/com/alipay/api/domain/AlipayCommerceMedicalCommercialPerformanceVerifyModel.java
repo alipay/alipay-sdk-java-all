@@ -9,17 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗行业商业化核销接口
  *
  * @author auto create
- * @since 1.0, 2024-04-23 14:50:15
+ * @since 1.0, 2024-07-04 20:41:15
  */
 public class AlipayCommerceMedicalCommercialPerformanceVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7779276929483958284L;
+	private static final long serialVersionUID = 4511363628317588557L;
 
 	/**
-	 * 权益订单id，支付宝侧用户对商户某一权益的唯一订单子单id。该订单记录了用户的核销次数与总次数，以及订单状态
+	 * 商品订单id，支付宝侧用户对商户某一商品的唯一订单子单id。该订单记录了用户的核销次数与总次数，以及订单状态
 	 */
 	@ApiField("biz_order_id")
 	private String bizOrderId;
+
+	/**
+	 * 该参数当业务完结时，需要提供的业务url结果
+	 */
+	@ApiField("biz_url")
+	private String bizUrl;
 
 	/**
 	 * 用户user_id，做了open_id映射
@@ -28,7 +34,7 @@ public class AlipayCommerceMedicalCommercialPerformanceVerifyModel extends Alipa
 	private String buyerId;
 
 	/**
-	 * 用户实际在机构侧核销权益的时间
+	 * 用户实际在机构侧核销商品的时间
 	 */
 	@ApiField("consume_time")
 	private Date consumeTime;
@@ -40,7 +46,7 @@ public class AlipayCommerceMedicalCommercialPerformanceVerifyModel extends Alipa
 	private String openId;
 
 	/**
-	 * 用户在支付宝支付后，医疗行业生成的唯一订单id。在履约通知接口会传递给商户，并且在会员卡权益新增时，商户需要识别用户并绑定当前生效订单id与商户侧用户可使用的权益
+	 * 用户在支付宝支付后，医疗行业生成的唯一订单id。在履约通知接口会传递给商户。
 	 */
 	@ApiField("order_id")
 	private String orderId;
@@ -52,34 +58,47 @@ public class AlipayCommerceMedicalCommercialPerformanceVerifyModel extends Alipa
 	private String outBizNo;
 
 	/**
-	 * out_product_id为商户侧唯一的权益id标识
+	 * out_product_id为商户侧唯一的权商品id标识
 	 */
 	@ApiField("out_product_id")
 	private String outProductId;
 
 	/**
-	 * status核销场景使用，枚举值为S\A\C\R，用户正常核销权益时传S，表示可使用状态。核销权益次数完结传C，用户核销已买会员卡新增的权益时传递A状态，用户逆向核销回补使用次数时传递R状态
+	 * status核销或确认场景使用，枚举值为S\C\R\N，正常核销或确认商品时传S、核销权益次数完结传C、拒绝核销或确认传入N、逆向核销回补使用次数时传递R。
 	 */
 	@ApiField("status")
 	private String status;
 
 	/**
-	 * total_count标记用户所拥有权益的总可核销次数，商户在用户核销时传递该字段，可选。
+	 * total_count标记用户所拥有商品的总可核销次数，商户在用户核销时传递该字段，可选。
 	 */
 	@ApiField("total_count")
 	private String totalCount;
 
 	/**
-	 * usage_count用于记录用户对某一权益的使用次数，每次核销时商户侧进行累加。该字段不影响主逻辑，用于支付宝侧日志监控
+	 * usage_count用于记录用户对某一商品的使用次数，每次核销时商户侧进行累加。该字段不影响主逻辑，用于支付宝侧日志监控
 	 */
 	@ApiField("usage_count")
 	private String usageCount;
+
+	/**
+	 * 确认场景类型，枚举值用户核销，USER_PERFORMANCE。取消预约，RESERVE_CANCEL。修改预约，RESERVE_MODIFY。上传报告，REPORT_UPLOAD
+	 */
+	@ApiField("verify_type")
+	private String verifyType;
 
 	public String getBizOrderId() {
 		return this.bizOrderId;
 	}
 	public void setBizOrderId(String bizOrderId) {
 		this.bizOrderId = bizOrderId;
+	}
+
+	public String getBizUrl() {
+		return this.bizUrl;
+	}
+	public void setBizUrl(String bizUrl) {
+		this.bizUrl = bizUrl;
 	}
 
 	public String getBuyerId() {
@@ -143,6 +162,13 @@ public class AlipayCommerceMedicalCommercialPerformanceVerifyModel extends Alipa
 	}
 	public void setUsageCount(String usageCount) {
 		this.usageCount = usageCount;
+	}
+
+	public String getVerifyType() {
+		return this.verifyType;
+	}
+	public void setVerifyType(String verifyType) {
+		this.verifyType = verifyType;
 	}
 
 }

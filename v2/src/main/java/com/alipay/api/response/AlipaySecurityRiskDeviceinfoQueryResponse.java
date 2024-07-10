@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.deviceinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:28:33
+ * @since 1.0, 2024-07-04 19:33:10
  */
 public class AlipaySecurityRiskDeviceinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7449364297492321417L;
+	private static final long serialVersionUID = 6887796116352574499L;
 
 	/** 
 	 * 设备原子风险

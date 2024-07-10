@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户投保行为回溯信息
  *
  * @author auto create
- * @since 1.0, 2022-08-19 15:21:03
+ * @since 1.0, 2024-07-09 14:48:52
  */
 public class InsUserTraceDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6618128475637892395L;
+	private static final long serialVersionUID = 3515674764715568645L;
 
 	/**
 	 * 回溯动作

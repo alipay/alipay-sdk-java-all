@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.stress.heartbeat.upload response.
  * 
  * @author auto create
- * @since 1.0, 2021-11-18 19:30:29
+ * @since 1.0, 2024-07-04 17:31:52
  */
 public class AlipayEbppStressHeartbeatUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8864812322167546767L;
+	private static final long serialVersionUID = 8738617727668798149L;
 
 	/** 
 	 * 下一个状态的状态码

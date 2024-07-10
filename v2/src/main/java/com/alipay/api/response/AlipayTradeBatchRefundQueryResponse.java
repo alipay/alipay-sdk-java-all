@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.batch.refund.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 18:04:27
+ * @since 1.0, 2024-07-04 19:33:07
  */
 public class AlipayTradeBatchRefundQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1183631764339632172L;
+	private static final long serialVersionUID = 5115367353318521483L;
 
 	/** 
 	 * 退款明细信息

@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.apprecommend.account.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-23 21:50:59
+ * @since 1.0, 2024-07-04 16:52:05
  */
 public class AntMerchantExpandApprecommendAccountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8845373835342254946L;
+	private static final long serialVersionUID = 7819953499875581973L;
 
 	/** 
 	 * 账号列表
@@ -30,19 +30,19 @@ public class AntMerchantExpandApprecommendAccountQueryResponse extends AlipayRes
 	private Long pageNumber;
 
 	/** 
-	 * 单页行数
+	 * 单页行数，单位：行
 	 */
 	@ApiField("page_size")
 	private Long pageSize;
 
 	/** 
-	 * 总页数
+	 * 总页数，单位：页
 	 */
 	@ApiField("total_pages")
 	private Long totalPages;
 
 	/** 
-	 * 总行数
+	 * 总行数，  单位：行
 	 */
 	@ApiField("total_size")
 	private String totalSize;

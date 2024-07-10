@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.payforprivilege.cardbinactivity.query request
  * 
  * @author auto create
- * @since 1.0, 2021-09-10 14:57:45
+ * @since 1.0, 2024-07-04 17:41:18
  */
 public class AlipayMerchantPayforprivilegeCardbinactivityQueryRequest implements AlipayRequest<AlipayMerchantPayforprivilegeCardbinactivityQueryResponse> {
 

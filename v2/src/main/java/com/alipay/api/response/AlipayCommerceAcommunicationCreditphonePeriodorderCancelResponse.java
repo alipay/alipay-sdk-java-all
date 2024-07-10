@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.acommunication.creditphone.periodorder.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:28:53
+ * @since 1.0, 2024-07-04 16:55:07
  */
 public class AlipayCommerceAcommunicationCreditphonePeriodorderCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3161632366388324597L;
+	private static final long serialVersionUID = 4395143944142254263L;
 
 	/** 
 	 * 当期支付宝订单号

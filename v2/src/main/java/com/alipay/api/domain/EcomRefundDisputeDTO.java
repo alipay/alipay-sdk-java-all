@@ -9,11 +9,35 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景开放平台逆向纠纷单模型
  *
  * @author auto create
- * @since 1.0, 2022-08-19 15:22:13
+ * @since 1.0, 2024-07-09 14:47:50
  */
 public class EcomRefundDisputeDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8866142673463946222L;
+	private static final long serialVersionUID = 8139435556461253275L;
+
+	/**
+	 * 事故发生地址
+	 */
+	@ApiField("accident_address")
+	private String accidentAddress;
+
+	/**
+	 * 事故描述
+	 */
+	@ApiField("accident_desc")
+	private String accidentDesc;
+
+	/**
+	 * 事故类型
+	 */
+	@ApiField("accident_type")
+	private String accidentType;
+
+	/**
+	 * 事故类型子项：全损/保险杠受损等
+	 */
+	@ApiField("accident_type_detail")
+	private String accidentTypeDetail;
 
 	/**
 	 * 买家id
@@ -105,7 +129,7 @@ UNSHIPPED(未发货),
 	private String refundDisputeId;
 
 	/**
-	 * 退款金额
+	 * 退款金额（分）
 	 */
 	@ApiField("refund_fee")
 	private Long refundFee;
@@ -133,6 +157,34 @@ UNSHIPPED(未发货),
 	 */
 	@ApiField("start_time")
 	private Date startTime;
+
+	public String getAccidentAddress() {
+		return this.accidentAddress;
+	}
+	public void setAccidentAddress(String accidentAddress) {
+		this.accidentAddress = accidentAddress;
+	}
+
+	public String getAccidentDesc() {
+		return this.accidentDesc;
+	}
+	public void setAccidentDesc(String accidentDesc) {
+		this.accidentDesc = accidentDesc;
+	}
+
+	public String getAccidentType() {
+		return this.accidentType;
+	}
+	public void setAccidentType(String accidentType) {
+		this.accidentType = accidentType;
+	}
+
+	public String getAccidentTypeDetail() {
+		return this.accidentTypeDetail;
+	}
+	public void setAccidentTypeDetail(String accidentTypeDetail) {
+		this.accidentTypeDetail = accidentTypeDetail;
+	}
 
 	public String getBuyerId() {
 		return this.buyerId;

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: antfortune.content.community.hotevent.list.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 22:45:38
+ * @since 1.0, 2024-07-04 19:33:18
  */
 public class AntfortuneContentCommunityHoteventListQueryRequest implements AlipayRequest<AntfortuneContentCommunityHoteventListQueryResponse> {
 

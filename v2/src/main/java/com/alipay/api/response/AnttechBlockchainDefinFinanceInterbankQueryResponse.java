@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.defin.finance.interbank.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 23:28:27
+ * @since 1.0, 2024-07-04 19:33:26
  */
 public class AnttechBlockchainDefinFinanceInterbankQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3684961712119243269L;
+	private static final long serialVersionUID = 5765775835273456766L;
 
 	/** 
 	 * 业务结果

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.signature.task.cancel request
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 02:15:13
+ * @since 1.0, 2024-07-04 15:51:35
  */
 public class AlipaySecurityProdSignatureTaskCancelRequest implements AlipayRequest<AlipaySecurityProdSignatureTaskCancelResponse> {
 

@@ -8,14 +8,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.asset.valid.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-13 21:26:52
+ * @since 1.0, 2024-07-08 15:27:04
  */
 public class AlipayCommerceEcAssetValidQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5873239314281646684L;
+	private static final long serialVersionUID = 2766871783181232979L;
 
 	/** 
-	 * 签约类型
+	 * 资产类型
 	 */
 	@ApiField("asset_type")
 	private String assetType;

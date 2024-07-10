@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.zdatafront.datatransfered.send response.
  * 
  * @author auto create
- * @since 1.0, 2021-09-29 16:32:13
+ * @since 1.0, 2024-07-04 19:33:17
  */
 public class AlipayZdatafrontDatatransferedSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6396654941846553489L;
+	private static final long serialVersionUID = 2725489229626616977L;
 
 	/** 
 	 * 表示数据传输是否成功

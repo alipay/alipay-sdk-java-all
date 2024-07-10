@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.msaas.mediarecog.voice.mediaaudio.upload request
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2024-07-04 17:41:22
  */
 public class AlipayMsaasMediarecogVoiceMediaaudioUploadRequest implements AlipayRequest<AlipayMsaasMediarecogVoiceMediaaudioUploadResponse> {
 

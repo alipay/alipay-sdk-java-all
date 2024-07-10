@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.ad.plan.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-03 23:29:06
+ * @since 1.0, 2024-07-04 15:51:34
  */
 public class AlipayCommerceTransportAdPlanGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3822189484217334829L;
+	private static final long serialVersionUID = 4429145561673745332L;
 
 	/** 
 	 * 计划详情

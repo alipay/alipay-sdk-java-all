@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业入驻
  *
  * @author auto create
- * @since 1.0, 2024-05-30 17:53:02
+ * @since 1.0, 2024-07-09 11:20:17
  */
 public class AlipayCommerceEcEnterpriseCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3419736819883175246L;
+	private static final long serialVersionUID = 6478785554378574164L;
 
 	/**
-	 * 场景码
+	 * 用于区分资金因公付协议、以及收银台文案等差异；
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
@@ -80,15 +80,16 @@ public class AlipayCommerceEcEnterpriseCreateModel extends AlipayObject {
 	private String outBizNo;
 
 	/**
-	 * 企业码签约后回跳地址
+	 * 企业码签约后回跳地址。不传默认为空，签约后停留在当前页。
 	 */
 	@ApiField("sign_return_url")
 	private String signReturnUrl;
 
 	/**
-	 * 管理员签约终端类型
+	 * 管理员签约终端类型 当前字段已废弃(字段已废弃，不需要服务商传入)
 	 */
 	@ApiField("sign_terminal")
+	@Deprecated
 	private String signTerminal;
 
 	public String getBizScene() {

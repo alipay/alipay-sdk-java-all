@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.market.mcomment.query request
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 00:03:46
+ * @since 1.0, 2024-07-04 17:41:19
  */
 public class AlipayOfflineMarketMcommentQueryRequest implements AlipayRequest<AlipayOfflineMarketMcommentQueryResponse> {
 

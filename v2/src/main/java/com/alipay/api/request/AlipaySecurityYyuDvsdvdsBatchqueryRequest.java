@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.yyu.dvsdvds.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2022-07-22 11:41:39
+ * @since 1.0, 2024-07-04 19:33:10
  */
 public class AlipaySecurityYyuDvsdvdsBatchqueryRequest implements AlipayRequest<AlipaySecurityYyuDvsdvdsBatchqueryResponse> {
 

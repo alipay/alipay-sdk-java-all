@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.expand.assetproduce.assign.query request
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:27:42
+ * @since 1.0, 2024-07-04 15:51:36
  */
 public class AntMerchantExpandAssetproduceAssignQueryRequest implements AlipayRequest<AntMerchantExpandAssetproduceAssignQueryResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.ep.regionalfinance.creditadmit.notify request
  * 
  * @author auto create
- * @since 1.0, 2024-05-09 16:12:00
+ * @since 1.0, 2024-07-08 10:34:33
  */
 public class ZhimaCreditEpRegionalfinanceCreditadmitNotifyRequest implements AlipayRequest<ZhimaCreditEpRegionalfinanceCreditadmitNotifyResponse> {
 

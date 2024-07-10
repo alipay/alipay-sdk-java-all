@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.daowei.weike.taskview.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 22:36:32
+ * @since 1.0, 2024-07-04 17:31:49
  */
 public class AlipayDaoweiWeikeTaskviewQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5394271753143627997L;
+	private static final long serialVersionUID = 2797642384348687893L;
 
 	/** 
 	 * 微客当前城市的任务视图列表

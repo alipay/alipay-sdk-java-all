@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.finance.yulibao.trans.history.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-23 21:04:07
+ * @since 1.0, 2024-07-04 19:39:08
  */
 public class MybankFinanceYulibaoTransHistoryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5282838832486889473L;
+	private static final long serialVersionUID = 7268129583866421823L;
 
 	/** 
 	 * 历史交易记录查询的当前页码

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: aft.finsecure.riskplus.security.policy.query request
  * 
  * @author auto create
- * @since 1.0, 2023-08-24 23:02:30
+ * @since 1.0, 2024-07-04 16:38:08
  */
 public class AftFinsecureRiskplusSecurityPolicyQueryRequest implements AlipayRequest<AftFinsecureRiskplusSecurityPolicyQueryResponse> {
 

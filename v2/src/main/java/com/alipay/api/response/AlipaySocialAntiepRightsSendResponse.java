@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.antiep.rights.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-11 09:36:40
+ * @since 1.0, 2024-07-04 19:33:10
  */
 public class AlipaySocialAntiepRightsSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6274254748632533482L;
+	private static final long serialVersionUID = 7884161114886517392L;
 
 	/** 
 	 * 是否幂等

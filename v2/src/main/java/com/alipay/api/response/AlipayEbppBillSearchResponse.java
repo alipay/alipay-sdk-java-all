@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.bill.search response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:28:00
+ * @since 1.0, 2024-07-04 17:31:50
  */
 public class AlipayEbppBillSearchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7843877528968461434L;
+	private static final long serialVersionUID = 7237568375848852899L;
 
 	/** 
 	 * 已经缓存的的key

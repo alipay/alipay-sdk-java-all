@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.jfexport.sign.query request
  * 
  * @author auto create
- * @since 1.0, 2024-05-27 14:47:03
+ * @since 1.0, 2024-07-04 17:31:52
  */
 public class AlipayEbppJfexportSignQueryRequest implements AlipayRequest<AlipayEbppJfexportSignQueryResponse> {
 

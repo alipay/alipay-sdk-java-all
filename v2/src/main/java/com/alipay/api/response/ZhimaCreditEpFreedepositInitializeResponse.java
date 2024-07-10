@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.freedeposit.initialize response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:28:33
+ * @since 1.0, 2024-07-04 15:51:39
  */
 public class ZhimaCreditEpFreedepositInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3417246299417284618L;
+	private static final long serialVersionUID = 2442143483226146948L;
 
 	/** 
 	 * 免押额度业务流水号，每次业务唯一。

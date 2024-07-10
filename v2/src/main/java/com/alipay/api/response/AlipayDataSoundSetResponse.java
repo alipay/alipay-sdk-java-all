@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.sound.set response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-24 21:00:54
+ * @since 1.0, 2024-07-04 17:31:51
  */
 public class AlipayDataSoundSetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3296425147181421155L;
+	private static final long serialVersionUID = 3333227712932271846L;
 
 	/** 
 	 * 状态码

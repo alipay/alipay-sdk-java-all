@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.market.mcomment.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 00:03:46
+ * @since 1.0, 2024-07-04 17:41:19
  */
 public class AlipayOfflineMarketMcommentQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4714883659169676754L;
+	private static final long serialVersionUID = 7671198278182298377L;
 
 	/** 
 	 * 本次交易号对应的评价在支付宝的唯一标识.评价id

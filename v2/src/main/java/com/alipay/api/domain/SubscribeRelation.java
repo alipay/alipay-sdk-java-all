@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 消息模板订阅关系模型
  *
  * @author auto create
- * @since 1.0, 2023-08-23 19:23:17
+ * @since 1.0, 2024-07-08 14:16:41
  */
 public class SubscribeRelation extends AlipayObject {
 
-	private static final long serialVersionUID = 4171356237493617713L;
+	private static final long serialVersionUID = 8864675772379732773L;
 
 	/**
 	 * 订阅保持状态，即用户勾选“总是保持以上选择，不再询问”选项时勾选的订阅状态。说明：若用户“总是保持以上选择，不再询问”选项，且选择订阅消息。下次触发消息订阅组件时，支付宝将自动发起一次静默订阅（不再拉起订阅组件，无需用户手动订阅）。

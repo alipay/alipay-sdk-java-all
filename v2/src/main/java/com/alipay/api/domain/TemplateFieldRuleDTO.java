@@ -7,14 +7,19 @@ import com.alipay.api.internal.mapping.ApiField;
  * 模板字段规则
  *
  * @author auto create
- * @since 1.0, 2019-08-08 20:05:35
+ * @since 1.0, 2024-07-04 16:05:52
  */
 public class TemplateFieldRuleDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8619729849279368774L;
+	private static final long serialVersionUID = 3214861897646261537L;
 
 	/**
-	 * 字段名称
+	 * 模板字段规则	字段名称(用于定义会员卡开卡接口时卡相应的参数)
+余额：Balance
+积分：Point
+等级：Level
+开卡日期：OpenDate
+过期日期：ValidDate
 	 */
 	@ApiField("field_name")
 	private String fieldName;

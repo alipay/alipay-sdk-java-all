@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品
  *
  * @author auto create
- * @since 1.0, 2024-05-18 10:42:14
+ * @since 1.0, 2024-07-05 13:59:15
  */
 public class MerchantCardTemplate extends AlipayObject {
 
-	private static final long serialVersionUID = 2731622368254185334L;
+	private static final long serialVersionUID = 6134493249126718645L;
 
 	/**
 	 * 商品归属的小程序appid
@@ -53,20 +53,27 @@ public class MerchantCardTemplate extends AlipayObject {
 	private String categoryId;
 
 	/**
-	 * （1）创建时，和image_url_list字段二选一，image_id_list优先级更高
+	 * （1）当card_type!=AXF_MERCHANT_PERIOD_PAY,字段image_id_list和image_url_list必须二选一传入，，image_id_list优先级更高
 （2）查询返回时该字段为空，返回image_url_list
+（3）当card_type=AXF_MERCHANT_PERIOD_PAY，该字段不传，固定为一方小程序的图片url；
 	 */
 	@ApiListField("image_id_list")
 	@ApiField("string")
 	private List<String> imageIdList;
 
 	/**
-	 * （1）创建时，和image_url_list字段二选一，image_id_list优先级更高
-（2）查询返回时该字段为空，返回image_url_list
+	 * （1）当card_type!=AXF_MERCHANT_PERIOD_PAY,字段image_id_list和image_url_list必须二选一传入，，image_id_list优先级更高
+（2）当card_type=AXF_MERCHANT_PERIOD_PAY，该字段不传，固定为一方小程序的图片url；
 	 */
 	@ApiListField("image_url_list")
 	@ApiField("string")
 	private List<String> imageUrlList;
+
+	/**
+	 * 消息通知appId
+	 */
+	@ApiField("msg_app_id")
+	private String msgAppId;
 
 	/**
 	 * 外部商品ID
@@ -153,6 +160,13 @@ public class MerchantCardTemplate extends AlipayObject {
 	}
 	public void setImageUrlList(List<String> imageUrlList) {
 		this.imageUrlList = imageUrlList;
+	}
+
+	public String getMsgAppId() {
+		return this.msgAppId;
+	}
+	public void setMsgAppId(String msgAppId) {
+		this.msgAppId = msgAppId;
 	}
 
 	public String getOutCardId() {

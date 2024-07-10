@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 应用授权获取访问令牌，如果是批量授权，需要返回令牌列表
  *
  * @author auto create
- * @since 1.0, 2018-06-29 17:54:42
+ * @since 1.0, 2024-07-10 15:23:16
  */
 public class AppTokenExchangeSubElement extends AlipayObject {
 
-	private static final long serialVersionUID = 4734299141299679828L;
+	private static final long serialVersionUID = 5152852241583492179L;
 
 	/**
 	 * 应用授权令牌
@@ -32,13 +32,13 @@ public class AppTokenExchangeSubElement extends AlipayObject {
 	private String authAppId;
 
 	/**
-	 * 过期时间
+	 * 过期时间，单位为秒
 	 */
 	@ApiField("expires_in")
 	private String expiresIn;
 
 	/**
-	 * 刷新令牌过期时间
+	 * 刷新令牌过期时间，单位为秒
 	 */
 	@ApiField("re_expires_in")
 	private String reExpiresIn;

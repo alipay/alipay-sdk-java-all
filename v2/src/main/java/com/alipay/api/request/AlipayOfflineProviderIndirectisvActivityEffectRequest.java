@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.provider.indirectisv.activity.effect request
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 05:07:31
+ * @since 1.0, 2024-07-04 17:41:20
  */
 public class AlipayOfflineProviderIndirectisvActivityEffectRequest implements AlipayRequest<AlipayOfflineProviderIndirectisvActivityEffectResponse> {
 

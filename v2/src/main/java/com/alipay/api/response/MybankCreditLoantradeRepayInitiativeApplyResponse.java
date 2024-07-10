@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.loantrade.repay.initiative.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-10 10:17:07
+ * @since 1.0, 2024-07-04 15:51:39
  */
 public class MybankCreditLoantradeRepayInitiativeApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5457644113123463368L;
+	private static final long serialVersionUID = 5517866253825177866L;
 
 	/** 
 	 * 受理事件单编号。

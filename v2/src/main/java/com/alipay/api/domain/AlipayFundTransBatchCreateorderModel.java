@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 如果有创建AA收款，江湖救急等业务场景的话，创建批次后，可以调用此接口创建付款单
  *
  * @author auto create
- * @since 1.0, 2017-02-13 17:30:37
+ * @since 1.0, 2024-07-04 17:00:46
  */
 public class AlipayFundTransBatchCreateorderModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1218699649341149651L;
+	private static final long serialVersionUID = 7328475315649267534L;
 
 	/**
 	 * 批次编号：创建批次时生成的批次号；表示这笔付款是这个批次下面的一条明细

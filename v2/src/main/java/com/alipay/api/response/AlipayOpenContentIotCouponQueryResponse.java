@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenContentIotCouponQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7685429112229162784L;
+	private static final long serialVersionUID = 3769714681233588257L;
 
 	/** 
 	 * 加密后的下一步rpc操作信息，用于客户编排操作流程

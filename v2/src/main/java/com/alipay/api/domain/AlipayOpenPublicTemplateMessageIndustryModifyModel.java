@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 模板消息行业设置修改接口
  *
  * @author auto create
- * @since 1.0, 2020-09-23 10:41:35
+ * @since 1.0, 2024-07-04 17:00:52
  */
 public class AlipayOpenPublicTemplateMessageIndustryModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7488933968276549295L;
+	private static final long serialVersionUID = 2572798565517173558L;
 
 	/**
 	 * 服务窗消息模板所属主行业一/二级编码，参见 <a href="https://alipay.open.taobao.com/doc2/detail?treeId=197&docType=1&articleId=105043">查看行业信息</a>。

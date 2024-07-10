@@ -9,56 +9,56 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁价格详情
  *
  * @author auto create
- * @since 1.0, 2024-05-31 17:04:22
+ * @since 1.0, 2024-07-08 21:59:50
  */
 public class RentPriceDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8417434738894519273L;
+	private static final long serialVersionUID = 5134827769451287664L;
 
 	/**
-	 * 买断价格
+	 * 买断价格。单位元，精度分。
 	 */
 	@ApiField("buyout_price")
 	private String buyoutPrice;
 
 	/**
-	 * 押金
+	 * 押金。单位元，精度分。
 	 */
 	@ApiField("deposit_price")
 	private String depositPrice;
 
 	/**
-	 * 尾期租金
+	 * 尾期租金。单位元，精度分。
 	 */
 	@ApiField("finish_real_rent_price")
 	private String finishRealRentPrice;
 
 	/**
-	 * 首期租金
+	 * 首期租金。单位元，精度分。
 	 */
 	@ApiField("initial_rent_price")
 	private String initialRentPrice;
 
 	/**
-	 * 租赁期数
+	 * 租赁期数，单位：期
 	 */
 	@ApiField("period_num")
 	private Long periodNum;
 
 	/**
-	 * 每期租金
+	 * 每期租金。单位元，精度分。
 	 */
 	@ApiField("period_real_rent_price")
 	private String periodRealRentPrice;
 
 	/**
-	 * 预授权金额
+	 * 预授权金额。单位元，精度分。
 	 */
 	@ApiField("pre_authorization_amount")
 	private String preAuthorizationAmount;
 
 	/**
-	 * 实付总金额
+	 * 实付总金额。单位元，精度分。
 	 */
 	@ApiField("real_pay_amount")
 	private String realPayAmount;

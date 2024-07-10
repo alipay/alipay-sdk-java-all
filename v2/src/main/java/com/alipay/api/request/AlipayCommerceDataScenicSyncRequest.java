@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.data.scenic.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 05:15:40
+ * @since 1.0, 2024-07-04 16:55:07
  */
 public class AlipayCommerceDataScenicSyncRequest implements AlipayRequest<AlipayCommerceDataScenicSyncResponse> {
 

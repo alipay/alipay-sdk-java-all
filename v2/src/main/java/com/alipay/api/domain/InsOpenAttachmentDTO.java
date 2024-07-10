@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景开放平台-报案接口-报案材料模型
  *
  * @author auto create
- * @since 1.0, 2022-08-19 15:21:59
+ * @since 1.0, 2024-07-04 20:12:37
  */
 public class InsOpenAttachmentDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4477771336953937564L;
+	private static final long serialVersionUID = 8881637961842753677L;
 
 	/**
 	 * afts的id
@@ -32,7 +32,7 @@ public class InsOpenAttachmentDTO extends AlipayObject {
 	private String description;
 
 	/**
-	 * 文件类型
+	 * 上传文件的后缀
 	 */
 	@ApiField("file_type")
 	private String fileType;
@@ -50,7 +50,7 @@ public class InsOpenAttachmentDTO extends AlipayObject {
 	private String path;
 
 	/**
-	 * 文件大小
+	 * 文件大小KB
 	 */
 	@ApiField("size")
 	private Long size;

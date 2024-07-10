@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.item.category.children.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2022-11-24 17:23:43
+ * @since 1.0, 2024-07-04 19:33:33
  */
 public class KoubeiItemCategoryChildrenBatchqueryRequest implements AlipayRequest<KoubeiItemCategoryChildrenBatchqueryResponse> {
 

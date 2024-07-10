@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.merchant.role.permission.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 04:07:54
+ * @since 1.0, 2024-07-04 15:51:37
  */
 public class KoubeiMerchantRolePermissionCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1448578581215386359L;
+	private static final long serialVersionUID = 3694139217733532856L;
 
 	
 

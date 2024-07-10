@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 借款申请信息
  *
  * @author auto create
- * @since 1.0, 2024-04-25 15:51:29
+ * @since 1.0, 2024-07-08 15:22:50
  */
 public class LoanApply extends AlipayObject {
 
-	private static final long serialVersionUID = 1326149814232281427L;
+	private static final long serialVersionUID = 8576496554114846596L;
 
 	/**
 	 * 申请时间
@@ -76,7 +76,7 @@ public class LoanApply extends AlipayObject {
 	private String loanContNo;
 
 	/**
-	 * 0.005
+	 * 借款费率，百分比
 	 */
 	@ApiField("loan_cont_rate")
 	private String loanContRate;

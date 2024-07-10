@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.ai.cv.tfjs.model.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 21:43:31
+ * @since 1.0, 2024-07-04 19:33:19
  */
 public class AnttechAiCvTfjsModelBatchqueryRequest implements AlipayRequest<AnttechAiCvTfjsModelBatchqueryResponse> {
 

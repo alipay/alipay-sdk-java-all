@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.supplychain.creditpay.sellerunsign.create request
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 00:21:48
+ * @since 1.0, 2024-07-04 19:39:07
  */
 public class MybankCreditSupplychainCreditpaySellerunsignCreateRequest implements AlipayRequest<MybankCreditSupplychainCreditpaySellerunsignCreateResponse> {
 

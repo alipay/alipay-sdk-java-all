@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.risk.gravity.workflow.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 03:01:54
+ * @since 1.0, 2024-07-04 19:33:20
  */
 public class AlipaySecurityRiskGravityWorkflowQueryRequest implements AlipayRequest<AlipaySecurityRiskGravityWorkflowQueryResponse> {
 

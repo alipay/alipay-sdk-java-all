@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签名原始信息
  *
  * @author auto create
- * @since 1.0, 2023-03-07 11:08:08
+ * @since 1.0, 2024-07-09 11:36:16
  */
 public class SignData extends AlipayObject {
 
-	private static final long serialVersionUID = 5293676124138726362L;
+	private static final long serialVersionUID = 5658543659169556971L;
 
 	/**
 	 * 签名商户开放平台应用APPID
@@ -44,7 +44,7 @@ public class SignData extends AlipayObject {
 	private String oriSignType;
 
 	/**
-	 * 2088041181118800
+	 * 商户支付宝账号id
 	 */
 	@ApiField("partner_id")
 	private String partnerId;

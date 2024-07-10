@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 子风险项结果
  *
  * @author auto create
- * @since 1.0, 2024-04-01 15:29:03
+ * @since 1.0, 2024-07-05 12:05:08
  */
 public class SubRentRiskItem extends AlipayObject {
 
-	private static final long serialVersionUID = 5251112471156164111L;
+	private static final long serialVersionUID = 5648468347521564986L;
 
 	/**
 	 * 风险描述
@@ -20,13 +20,13 @@ public class SubRentRiskItem extends AlipayObject {
 	private String riskDesc;
 
 	/**
-	 * 风险等级
+	 * 风险名称，如逾期风险等子风险项名称
 	 */
 	@ApiField("risk_name")
 	private String riskName;
 
 	/**
-	 * 极低风险
+	 * 风险等级，从RANK1至RANK5
 	 */
 	@ApiField("risk_rank")
 	private String riskRank;

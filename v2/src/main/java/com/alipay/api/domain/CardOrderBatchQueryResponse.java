@@ -6,14 +6,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 订购单分页查询结果
+ * 订单分页查询结果
  *
  * @author auto create
- * @since 1.0, 2024-05-18 10:43:16
+ * @since 1.0, 2024-07-05 14:07:17
  */
 public class CardOrderBatchQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 5456475466532712131L;
+	private static final long serialVersionUID = 1671871781836236682L;
 
 	/**
 	 * 用于区分订购单的取消类型
@@ -22,13 +22,13 @@ public class CardOrderBatchQueryResponse extends AlipayObject {
 	private String cancelType;
 
 	/**
-	 * 订购单ID
+	 * 订单ID
 	 */
 	@ApiField("card_id")
 	private String cardId;
 
 	/**
-	 * 订购单状态
+	 * 订单状态
 	 */
 	@ApiField("card_status")
 	private String cardStatus;

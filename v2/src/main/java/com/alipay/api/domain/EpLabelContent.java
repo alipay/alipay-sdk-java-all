@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 企业标签内容模型
  *
  * @author auto create
- * @since 1.0, 2024-05-14 19:45:45
+ * @since 1.0, 2024-07-10 11:38:34
  */
 public class EpLabelContent extends AlipayObject {
 
-	private static final long serialVersionUID = 6714365384595489497L;
+	private static final long serialVersionUID = 4171645124328138382L;
 
 	/**
 	 * 标签分类

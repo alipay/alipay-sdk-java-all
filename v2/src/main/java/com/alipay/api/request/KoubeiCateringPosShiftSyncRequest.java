@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.catering.pos.shift.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-08-23 19:58:54
+ * @since 1.0, 2024-07-04 15:51:36
  */
 public class KoubeiCateringPosShiftSyncRequest implements AlipayRequest<KoubeiCateringPosShiftSyncResponse> {
 

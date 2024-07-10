@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.data.autodamage.estimate.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 00:22:06
+ * @since 1.0, 2024-07-04 17:31:55
  */
 public class AlipayInsDataAutodamageEstimateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1572624237244742381L;
+	private static final long serialVersionUID = 5765141815245156359L;
 
 	/** 
 	 * 商业险保单号

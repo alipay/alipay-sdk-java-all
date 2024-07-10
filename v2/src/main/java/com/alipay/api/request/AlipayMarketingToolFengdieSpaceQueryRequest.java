@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.tool.fengdie.space.query request
  * 
  * @author auto create
- * @since 1.0, 2021-06-25 21:52:51
+ * @since 1.0, 2024-07-04 16:38:04
  */
 public class AlipayMarketingToolFengdieSpaceQueryRequest implements AlipayRequest<AlipayMarketingToolFengdieSpaceQueryResponse> {
 

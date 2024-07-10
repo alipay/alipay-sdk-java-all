@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.text.voice.transfer request
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 03:43:25
+ * @since 1.0, 2024-07-04 17:31:59
  */
 public class AlipayEcoTextVoiceTransferRequest implements AlipayRequest<AlipayEcoTextVoiceTransferResponse> {
 

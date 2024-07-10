@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 基于门店id的优惠查询服务
  *
  * @author auto create
- * @since 1.0, 2022-12-30 14:44:52
+ * @since 1.0, 2024-07-04 17:01:00
  */
 public class AlipayOfflineMarketShopDiscountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1791793898315678316L;
+	private static final long serialVersionUID = 6735324971363665529L;
 
 	/**
 	 * 活动业务类型列表。当 query_type 为MERCHANT 且 user_id 不为空时生效，将对返回结果进行过滤，返回列表中指定业务类型的活动。默认为空，代表不过滤，返回所有活动。

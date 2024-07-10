@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.data.morse.operate.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 17:31:45
+ * @since 1.0, 2024-07-04 19:39:14
  */
 public class ZhimaDataMorseOperateSyncRequest implements AlipayRequest<ZhimaDataMorseOperateSyncResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 卡模板投放渠道
  *
  * @author auto create
- * @since 1.0, 2019-08-08 20:05:50
+ * @since 1.0, 2024-07-04 16:05:52
  */
 public class PubChannelDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5721963189159432997L;
+	private static final long serialVersionUID = 3148811624413381699L;
 
 	/**
 	 * 扩展信息，无需配置
@@ -20,7 +20,8 @@ public class PubChannelDTO extends AlipayObject {
 	private String extInfo;
 
 	/**
-	 * 投放渠道类型
+	 * 投放渠道类型（选择需要推广投放的渠道）
+SHOP_DETAIL：店铺详情页
 	 */
 	@ApiField("pub_channel")
 	private String pubChannel;

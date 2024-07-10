@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.applyflow.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 05:13:59
+ * @since 1.0, 2024-07-04 17:31:51
  */
 public class AlipayEbppIndustryApplyflowQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5835973619799476659L;
+	private static final long serialVersionUID = 5215423883299898752L;
 
 	/** 
 	 * 业务能力码，标识业务场景

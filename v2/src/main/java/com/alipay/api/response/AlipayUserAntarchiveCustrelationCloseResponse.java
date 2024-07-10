@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.antarchive.custrelation.close response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-03 23:12:17
+ * @since 1.0, 2024-07-04 19:33:13
  */
 public class AlipayUserAntarchiveCustrelationCloseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8352453487216225536L;
+	private static final long serialVersionUID = 3511328535162848995L;
 
 	
 

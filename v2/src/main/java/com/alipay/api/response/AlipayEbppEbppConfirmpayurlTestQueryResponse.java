@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.ebpp.confirmpayurl.test.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-06-12 15:55:19
+ * @since 1.0, 2024-07-04 15:51:36
  */
 public class AlipayEbppEbppConfirmpayurlTestQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1522275927795926139L;
+	private static final long serialVersionUID = 4272713122645199551L;
 
 	
 

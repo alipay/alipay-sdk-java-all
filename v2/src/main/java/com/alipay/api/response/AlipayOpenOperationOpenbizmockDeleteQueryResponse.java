@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.operation.openbizmock.delete.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-01-11 10:06:49
+ * @since 1.0, 2024-07-04 17:41:20
  */
 public class AlipayOpenOperationOpenbizmockDeleteQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5184999835311752828L;
+	private static final long serialVersionUID = 6427981873976384849L;
 
 	/** 
 	 * test

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.info.participant.certify response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:27:52
+ * @since 1.0, 2024-07-04 16:55:10
  */
 public class AlipayCommerceEducateInfoParticipantCertifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8683434316354281341L;
+	private static final long serialVersionUID = 1313219569443167333L;
 
 	/** 
 	 * 外部支付流水号

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 合作渠道可通过该接口补登扣款取消请求，以帮助支付宝将用户的资金退给用户
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:20
+ * @since 1.0, 2024-07-04 17:00:52
  */
 public class AlipayCommerceCityfacilitatorDepositCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4782954937749842947L;
+	private static final long serialVersionUID = 6862934177293283948L;
 
 	/**
 	 * 扩展字段，传递撤销的终端信息，原因等

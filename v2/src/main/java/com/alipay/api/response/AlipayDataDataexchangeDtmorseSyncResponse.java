@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataexchange.dtmorse.sync response.
  * 
  * @author auto create
- * @since 1.0, 2021-10-12 21:09:43
+ * @since 1.0, 2024-07-04 15:51:34
  */
 public class AlipayDataDataexchangeDtmorseSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1177877979438291487L;
+	private static final long serialVersionUID = 5331923119443699516L;
 
 	/** 
 	 * 结果扩展字段，用于补充出参内容

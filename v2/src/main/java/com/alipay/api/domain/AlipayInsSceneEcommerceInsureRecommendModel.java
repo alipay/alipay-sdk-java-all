@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电商投保推荐接口
  *
  * @author auto create
- * @since 1.0, 2024-05-31 17:45:11
+ * @since 1.0, 2024-07-09 14:47:50
  */
 public class AlipayInsSceneEcommerceInsureRecommendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4672251919364985636L;
+	private static final long serialVersionUID = 7573751316677653713L;
 
 	/**
 	 * 授权token
@@ -56,7 +56,7 @@ public class AlipayInsSceneEcommerceInsureRecommendModel extends AlipayObject {
 	private EcomSellerDTO seller;
 
 	/**
-	 * 客户端渠道:ios / android / pc / wx_applet(微信小程序)
+	 * 客户端渠道:ios / android / pc / wx_applet(wx小程序)
 	 */
 	@ApiField("user_client")
 	private String userClient;

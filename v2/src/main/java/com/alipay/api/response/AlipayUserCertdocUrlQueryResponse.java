@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.certdoc.url.query response.
  * 
  * @author auto create
- * @since 1.0, 2020-05-07 10:09:02
+ * @since 1.0, 2024-07-04 19:33:13
  */
 public class AlipayUserCertdocUrlQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8414477282371637467L;
+	private static final long serialVersionUID = 8687858826492977683L;
 
 	/** 
 	 * 链接

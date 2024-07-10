@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.inner.basename.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-03 22:57:41
+ * @since 1.0, 2024-07-04 17:41:19
  */
 public class AlipayOpenMiniInnerBasenameQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5324548288987778833L;
+	private static final long serialVersionUID = 6769289698373393947L;
 
 	/** 
 	 * 该接口是提供给雨燕 只支持内部小程序调用的 查询app_name的接口

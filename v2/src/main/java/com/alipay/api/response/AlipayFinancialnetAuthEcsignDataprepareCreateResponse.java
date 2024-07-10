@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.financialnet.auth.ecsign.dataprepare.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 05:21:47
+ * @since 1.0, 2024-07-04 16:38:03
  */
 public class AlipayFinancialnetAuthEcsignDataprepareCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1652975522351634218L;
+	private static final long serialVersionUID = 6568248563175526769L;
 
 	/** 
 	 * 扩展字段

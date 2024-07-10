@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.order.info.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:28:00
+ * @since 1.0, 2024-07-04 19:36:24
  */
 public class KoubeiCateringOrderInfoCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4823926941349188913L;
+	private static final long serialVersionUID = 1634615947776379467L;
 
 	/** 
 	 * 口碑的订单号（唯一主键），和pos本地订单号一一对应

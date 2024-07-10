@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.marketing.data.shop.category.get request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 03:30:18
+ * @since 1.0, 2024-07-04 19:39:04
  */
 public class KoubeiMarketingDataShopCategoryGetRequest implements AlipayRequest<KoubeiMarketingDataShopCategoryGetResponse> {
 

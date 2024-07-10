@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.guarantee.selleradmittance.query request
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 01:45:25
+ * @since 1.0, 2024-07-04 19:39:07
  */
 public class MybankCreditGuaranteeSelleradmittanceQueryRequest implements AlipayRequest<MybankCreditGuaranteeSelleradmittanceQueryResponse> {
 

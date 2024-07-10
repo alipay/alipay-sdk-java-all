@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ISV订单信息创建
  *
  * @author auto create
- * @since 1.0, 2024-06-06 14:49:49
+ * @since 1.0, 2024-07-10 15:05:16
  */
 public class AntMerchantExpandEcoOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5874912127331187215L;
+	private static final long serialVersionUID = 4729477554118811878L;
 
 	/**
 	 * 交易平台
@@ -24,16 +24,22 @@ public class AntMerchantExpandEcoOrderCreateModel extends AlipayObject {
 	private String busiPlatform;
 
 	/**
-	 * 卖家编号
+	 * 卖家编号，取值方式：卖家编号即可
 	 */
 	@ApiField("eco_code")
 	private String ecoCode;
 
 	/**
-	 * 运单号
+	 * 运单号。取值方式是：实际运单号即可
 	 */
 	@ApiField("express_no")
 	private String expressNo;
+
+	/**
+	 * 订单状态
+	 */
+	@ApiField("order_status")
+	private String orderStatus;
 
 	/**
 	 * 下单时间
@@ -55,14 +61,26 @@ public class AntMerchantExpandEcoOrderCreateModel extends AlipayObject {
 	private List<String> qrcodeImgs;
 
 	/**
-	 * 码值url链接(必须是支付宝的码值),数组
+	 * 码值url链接(必须是支付宝的码值),数组。取值方式是：用户上传码值链接即可
 	 */
 	@ApiListField("qrcode_tokens")
 	@ApiField("string")
 	private List<String> qrcodeTokens;
 
 	/**
-	 * 店铺名称
+	 * 确认收货时间
+	 */
+	@ApiField("receive_time")
+	private Date receiveTime;
+
+	/**
+	 * 发货时间
+	 */
+	@ApiField("send_time")
+	private Date sendTime;
+
+	/**
+	 * 店铺名称，取生态供应商店铺名称即可
 	 */
 	@ApiField("shop_code")
 	private String shopCode;
@@ -86,6 +104,13 @@ public class AntMerchantExpandEcoOrderCreateModel extends AlipayObject {
 	}
 	public void setExpressNo(String expressNo) {
 		this.expressNo = expressNo;
+	}
+
+	public String getOrderStatus() {
+		return this.orderStatus;
+	}
+	public void setOrderStatus(String orderStatus) {
+		this.orderStatus = orderStatus;
 	}
 
 	public Date getOrderTime() {
@@ -114,6 +139,20 @@ public class AntMerchantExpandEcoOrderCreateModel extends AlipayObject {
 	}
 	public void setQrcodeTokens(List<String> qrcodeTokens) {
 		this.qrcodeTokens = qrcodeTokens;
+	}
+
+	public Date getReceiveTime() {
+		return this.receiveTime;
+	}
+	public void setReceiveTime(Date receiveTime) {
+		this.receiveTime = receiveTime;
+	}
+
+	public Date getSendTime() {
+		return this.sendTime;
+	}
+	public void setSendTime(Date sendTime) {
+		this.sendTime = sendTime;
 	}
 
 	public String getShopCode() {

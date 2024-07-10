@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.indirect.promotask.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-04-04 13:44:01
+ * @since 1.0, 2024-07-04 16:38:06
  */
 public class AlipayMerchantIndirectPromotaskQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3134588572581843789L;
+	private static final long serialVersionUID = 2713133585216589487L;
 
 	/** 
 	 * 任务当前的进度完成值，当任务领取后返回数值

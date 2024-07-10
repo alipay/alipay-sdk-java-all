@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMerchantQipanCrowdwithturingtagQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1232754784217653949L;
+	private static final long serialVersionUID = 5122858437433728151L;
 
 	/** 
 	 * 人群规模

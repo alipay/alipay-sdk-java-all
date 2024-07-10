@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序云租赁订单同步
  *
  * @author auto create
- * @since 1.0, 2024-06-06 12:00:01
+ * @since 1.0, 2024-07-05 12:04:51
  */
 public class AlipayCloudTraasMpcmrchOrderModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2122951967727986168L;
+	private static final long serialVersionUID = 8627463688783544144L;
 
 	/**
 	 * 客户详情
@@ -85,7 +85,13 @@ public class AlipayCloudTraasMpcmrchOrderModifyModel extends AlipayObject {
 	private RentPriceDetail priceDetail;
 
 	/**
-	 * 订单的来源渠道
+	 * 订单的来源渠道。
+支付宝:ALIPAY
+微信:WECHAT
+抖音:TIKTOK
+美团:MEITUAN
+饿了么:ELEME
+其他:OTHERS
 	 */
 	@ApiField("source")
 	private String source;

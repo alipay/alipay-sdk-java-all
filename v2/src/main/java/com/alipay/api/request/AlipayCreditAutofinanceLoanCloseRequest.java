@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.credit.autofinance.loan.close request
  * 
  * @author auto create
- * @since 1.0, 2023-08-24 22:24:08
+ * @since 1.0, 2024-07-04 17:31:49
  */
 public class AlipayCreditAutofinanceLoanCloseRequest implements AlipayRequest<AlipayCreditAutofinanceLoanCloseResponse> {
 

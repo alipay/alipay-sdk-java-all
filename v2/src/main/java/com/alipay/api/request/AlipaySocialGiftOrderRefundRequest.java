@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.gift.order.refund request
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 22:30:56
+ * @since 1.0, 2024-07-04 19:33:07
  */
 public class AlipaySocialGiftOrderRefundRequest implements AlipayRequest<AlipaySocialGiftOrderRefundResponse> {
 

@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.marketing.data.scene.travel.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 02:13:18
+ * @since 1.0, 2024-07-04 19:39:05
  */
 public class KoubeiMarketingDataSceneTravelGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6668252818797392761L;
+	private static final long serialVersionUID = 8226128513259466266L;
 
 	/** 
 	 * 场景营销内容分组场景营

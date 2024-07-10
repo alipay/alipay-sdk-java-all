@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalAuthorizeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3717543952331639441L;
+	private static final long serialVersionUID = 3477564687365148287L;
 
 	/**
 	 * 用户在IOT设备上刷脸获得的ftoken

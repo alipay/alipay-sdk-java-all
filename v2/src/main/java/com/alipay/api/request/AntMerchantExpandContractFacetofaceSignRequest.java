@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.expand.contract.facetoface.sign request
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:27:44
+ * @since 1.0, 2024-07-04 15:51:36
  */
 public class AntMerchantExpandContractFacetofaceSignRequest implements AlipayRequest<AntMerchantExpandContractFacetofaceSignResponse> {
 

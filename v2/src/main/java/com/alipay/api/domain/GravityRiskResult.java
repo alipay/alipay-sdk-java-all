@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GravityRiskResult extends AlipayObject {
 
-	private static final long serialVersionUID = 8843856826318255483L;
+	private static final long serialVersionUID = 7895731279876233811L;
 
 	/**
 	 * 参数名：risk_rank+是否唯一：无需唯一+应用场景：多方安全风控风险咨询风险类型的风险等级标签+枚举：无枚举+如何获取：多方安全风控通过对应数据产品介绍文档获取+特殊说明：无

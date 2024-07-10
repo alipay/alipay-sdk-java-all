@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 天猫机具解绑接口
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:15
+ * @since 1.0, 2024-07-04 17:00:50
  */
 public class AlipayOfflineProviderEquipmentAuthRemoveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1658795625141945849L;
+	private static final long serialVersionUID = 4457612991113634315L;
 
 	/**
 	 * 机具编号

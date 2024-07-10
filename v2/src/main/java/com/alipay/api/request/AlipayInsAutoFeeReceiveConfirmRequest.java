@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.auto.fee.receive.confirm request
  * 
  * @author auto create
- * @since 1.0, 2023-08-24 21:35:39
+ * @since 1.0, 2024-07-04 17:31:55
  */
 public class AlipayInsAutoFeeReceiveConfirmRequest implements AlipayRequest<AlipayInsAutoFeeReceiveConfirmResponse> {
 

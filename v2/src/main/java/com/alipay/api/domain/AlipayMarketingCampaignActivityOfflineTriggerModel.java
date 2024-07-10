@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户创建活动后，需营销核心平台，来发奖。
  *
  * @author auto create
- * @since 1.0, 2017-10-24 11:22:59
+ * @since 1.0, 2024-07-04 17:00:48
  */
 public class AlipayMarketingCampaignActivityOfflineTriggerModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4449814283433968559L;
+	private static final long serialVersionUID = 2775427753711685257L;
 
 	/**
 	 * 活动id

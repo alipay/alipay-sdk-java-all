@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.device.baseinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 00:35:20
+ * @since 1.0, 2024-07-04 16:55:13
  */
 public class AlipayCommerceIotDeviceBaseinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4426187483616535662L;
+	private static final long serialVersionUID = 1643912379299139344L;
 
 	/** 
 	 * 设备ID，biztid

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.applepay.otp.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-03 23:44:08
+ * @since 1.0, 2024-07-04 19:33:13
  */
 public class AlipayUserApplepayOtpSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5234811673322351358L;
+	private static final long serialVersionUID = 3134974252636644991L;
 
 	/** 
 	 * 响应头

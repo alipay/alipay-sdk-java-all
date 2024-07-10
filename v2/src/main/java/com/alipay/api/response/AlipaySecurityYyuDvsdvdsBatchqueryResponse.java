@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.yyu.dvsdvds.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2022-07-22 11:41:39
+ * @since 1.0, 2024-07-04 19:33:10
  */
 public class AlipaySecurityYyuDvsdvdsBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6251445294421388377L;
+	private static final long serialVersionUID = 2842565814148761839L;
 
 	/** 
 	 * asd

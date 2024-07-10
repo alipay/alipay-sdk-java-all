@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.acceptance.labelpreview.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-15 11:27:01
+ * @since 1.0, 2024-07-10 11:42:04
  */
 public class ZhimaCreditEpAcceptanceLabelpreviewQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7555462482483229435L;
+	private static final long serialVersionUID = 5454777846721283893L;
 
 	/** 
 	 * 是否授权标签信用服务
@@ -37,7 +37,7 @@ public class ZhimaCreditEpAcceptanceLabelpreviewQueryResponse extends AlipayResp
 	private List<EpLabelContent> labelContent;
 
 	/** 
-	 * 企业名下预计标签数量
+	 * 企业名下预计标签数量(个)
 	 */
 	@ApiField("label_count")
 	private Long labelCount;
@@ -49,7 +49,7 @@ public class ZhimaCreditEpAcceptanceLabelpreviewQueryResponse extends AlipayResp
 	private String labelShowType;
 
 	/** 
-	 * 企业名下标签待获取数量
+	 * 企业名下标签待获取数量(个)
 	 */
 	@ApiField("label_to_obtain_count")
 	private Long labelToObtainCount;

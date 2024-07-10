@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.afsrc.whitehatinfo.query request
  * 
  * @author auto create
- * @since 1.0, 2022-09-29 11:44:02
+ * @since 1.0, 2024-07-04 15:51:33
  */
 public class AlipaySecurityProdAfsrcWhitehatinfoQueryRequest implements AlipayRequest<AlipaySecurityProdAfsrcWhitehatinfoQueryResponse> {
 

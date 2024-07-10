@@ -4,17 +4,17 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 订单信息
+ * 扣款单信息
  *
  * @author auto create
- * @since 1.0, 2024-05-29 21:40:52
+ * @since 1.0, 2024-07-05 14:08:15
  */
 public class DeductionOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2616988159421587389L;
+	private static final long serialVersionUID = 8729671796164221931L;
 
 	/**
-	 * 订购单ID
+	 * 订单ID
 	 */
 	@ApiField("card_id")
 	private String cardId;
@@ -56,7 +56,7 @@ public class DeductionOrderInfo extends AlipayObject {
 	private String deductionOrderId;
 
 	/**
-	 * 订单类型
+	 * 扣款单类型
 	 */
 	@ApiField("deduction_order_type")
 	private String deductionOrderType;

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.settle.settlementbill.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 01:12:17
+ * @since 1.0, 2024-07-04 16:55:00
  */
 public class AlipayBossFncSettleSettlementbillCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2616936788853352874L;
+	private static final long serialVersionUID = 3876763557877215693L;
 
 	/** 
 	 * 返回参数

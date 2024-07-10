@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.zdatafront.datatransfered.fileupload response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 01:53:28
+ * @since 1.0, 2024-07-04 19:33:16
  */
 public class AlipayZdatafrontDatatransferedFileuploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7416298627315267344L;
+	private static final long serialVersionUID = 2366239894111143576L;
 
 	/** 
 	 * 返回用户数据推送产生的结果数据，如picPath为文件上传后返回文件内部存储的位置信息

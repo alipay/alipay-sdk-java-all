@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.sceneprod.data.upload request
  * 
  * @author auto create
- * @since 1.0, 2019-05-27 09:55:01
+ * @since 1.0, 2024-07-04 15:51:36
  */
 public class MybankCreditSceneprodDataUploadRequest implements AlipayRequest<MybankCreditSceneprodDataUploadResponse> {
 

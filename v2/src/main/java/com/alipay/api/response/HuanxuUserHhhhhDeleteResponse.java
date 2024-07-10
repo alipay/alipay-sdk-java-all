@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: huanxu.user.hhhhh.delete response.
  * 
  * @author auto create
- * @since 1.0, 2022-07-20 14:16:46
+ * @since 1.0, 2024-07-04 19:33:34
  */
 public class HuanxuUserHhhhhDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6588169361269811876L;
+	private static final long serialVersionUID = 7369361641113912822L;
 
 	/** 
 	 * fsdfsdfsd

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.risk.content.detect request
  * 
  * @author auto create
- * @since 1.0, 2024-06-20 17:42:03
+ * @since 1.0, 2024-07-04 15:51:35
  */
 public class AlipaySecurityRiskContentDetectRequest implements AlipayRequest<AlipaySecurityRiskContentDetectResponse> {
 

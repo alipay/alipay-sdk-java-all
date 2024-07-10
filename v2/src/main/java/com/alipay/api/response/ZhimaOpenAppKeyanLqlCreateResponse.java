@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.open.app.keyan.lql.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-23 21:01:31
+ * @since 1.0, 2024-07-04 19:39:14
  */
 public class ZhimaOpenAppKeyanLqlCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2449958873138478874L;
+	private static final long serialVersionUID = 4514371286575182345L;
 
 	
 

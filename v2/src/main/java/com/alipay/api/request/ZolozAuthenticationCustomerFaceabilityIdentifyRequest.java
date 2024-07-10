@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zoloz.authentication.customer.faceability.identify request
  * 
  * @author auto create
- * @since 1.0, 2024-03-04 14:57:30
+ * @since 1.0, 2024-07-04 19:39:14
  */
 public class ZolozAuthenticationCustomerFaceabilityIdentifyRequest implements AlipayRequest<ZolozAuthenticationCustomerFaceabilityIdentifyResponse> {
 

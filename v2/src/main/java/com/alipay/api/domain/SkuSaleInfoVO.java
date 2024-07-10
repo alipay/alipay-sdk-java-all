@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 渠道商sku商品状态
  *
  * @author auto create
- * @since 1.0, 2024-06-12 11:42:24
+ * @since 1.0, 2024-07-10 11:15:50
  */
 public class SkuSaleInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8845253795593934328L;
+	private static final long serialVersionUID = 4217173235532899249L;
 
 	/**
 	 * sku 是否可售

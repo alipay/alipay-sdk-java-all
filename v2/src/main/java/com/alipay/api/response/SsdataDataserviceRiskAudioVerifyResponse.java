@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ssdata.dataservice.risk.audio.verify response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 03:12:04
+ * @since 1.0, 2024-07-04 15:51:39
  */
 public class SsdataDataserviceRiskAudioVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7347993599476915744L;
+	private static final long serialVersionUID = 7697534479699138785L;
 
 	/** 
 	 * 请求提交结果对应的音频唯一id，用于后续通过ssdata.dataservice.risk.audio.query接口查询结果的入参

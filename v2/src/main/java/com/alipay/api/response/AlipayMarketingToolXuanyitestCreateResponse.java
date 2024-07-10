@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.tool.xuanyitest.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-08-01 16:07:01
+ * @since 1.0, 2024-07-04 17:41:17
  */
 public class AlipayMarketingToolXuanyitestCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3874545545977827777L;
+	private static final long serialVersionUID = 8776834924292982366L;
 
 	/** 
 	 * 这是一个复杂类型测试描述

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.finance.fund.fundquotation.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 03:20:03
+ * @since 1.0, 2024-07-04 17:31:59
  */
 public class AlipayFinanceFundFundquotationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8119566979526927684L;
+	private static final long serialVersionUID = 6541275787483421345L;
 
 	/** 
 	 * 近半年收益：基金产品近半年内收益率

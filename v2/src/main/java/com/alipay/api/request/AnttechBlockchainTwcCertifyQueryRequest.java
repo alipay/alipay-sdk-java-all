@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.twc.certify.query request
  * 
  * @author auto create
- * @since 1.0, 2021-09-08 11:41:40
+ * @since 1.0, 2024-07-04 16:38:09
  */
 public class AnttechBlockchainTwcCertifyQueryRequest implements AlipayRequest<AnttechBlockchainTwcCertifyQueryResponse> {
 

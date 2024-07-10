@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.base.process.instance.cancel request
  * 
  * @author auto create
- * @since 1.0, 2023-08-23 21:24:18
+ * @since 1.0, 2024-07-04 16:54:59
  */
 public class AlipayBossBaseProcessInstanceCancelRequest implements AlipayRequest<AlipayBossBaseProcessInstanceCancelResponse> {
 

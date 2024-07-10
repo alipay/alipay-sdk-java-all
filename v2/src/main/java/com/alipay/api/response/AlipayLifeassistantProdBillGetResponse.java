@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.lifeassistant.prod.bill.get response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:25:18
+ * @since 1.0, 2024-07-04 17:41:15
  */
 public class AlipayLifeassistantProdBillGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8239452383933861787L;
+	private static final long serialVersionUID = 8561888178458875958L;
 
 	/** 
 	 * 支付金额

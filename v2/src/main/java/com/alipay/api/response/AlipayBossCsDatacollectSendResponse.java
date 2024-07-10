@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.cs.datacollect.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 01:08:44
+ * @since 1.0, 2024-07-04 19:56:40
  */
 public class AlipayBossCsDatacollectSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7351555949487676321L;
+	private static final long serialVersionUID = 7285798946389456777L;
 
 	
 

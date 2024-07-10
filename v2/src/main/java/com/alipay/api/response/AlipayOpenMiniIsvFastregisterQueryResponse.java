@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.isv.fastregister.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-28 10:33:58
+ * @since 1.0, 2024-07-04 17:41:22
  */
 public class AlipayOpenMiniIsvFastregisterQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7538194162497522237L;
+	private static final long serialVersionUID = 8314343674995348476L;
 
 	/** 
 	 * 小程序应用名

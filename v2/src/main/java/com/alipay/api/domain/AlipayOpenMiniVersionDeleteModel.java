@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序删除版本
  *
  * @author auto create
- * @since 1.0, 2024-05-06 10:32:46
+ * @since 1.0, 2024-07-09 11:27:51
  */
 public class AlipayOpenMiniVersionDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3626573723415536224L;
+	private static final long serialVersionUID = 5575697725793451379L;
 
 	/**
-	 *  小程序版本号。只有状态为开发中的版本才能被删除。
+	 * 小程序版本号。只有状态为开发中的版本才能被删除。
 	 */
 	@ApiField("app_version")
 	private String appVersion;

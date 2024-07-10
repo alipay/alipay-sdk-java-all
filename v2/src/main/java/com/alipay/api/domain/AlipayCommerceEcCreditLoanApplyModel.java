@@ -7,32 +7,34 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业授信借款申请
  *
  * @author auto create
- * @since 1.0, 2024-05-20 14:02:51
+ * @since 1.0, 2024-07-08 14:33:16
  */
 public class AlipayCommerceEcCreditLoanApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4813164628168941398L;
+	private static final long serialVersionUID = 4492836568458949244L;
 
 	/**
-	 * 共同账户ID
+	 * 共同账户ID 当前字段已废弃(历史兼容逻辑冗余字段增加了接口复杂性，统一移除)
 	 */
 	@ApiField("account_id")
+	@Deprecated
 	private String accountId;
 
 	/**
-	 * 授权签约协议号
+	 * 授权签约协议号 当前字段已废弃(历史兼容逻辑冗余字段增加了接口复杂性，统一移除)
 	 */
 	@ApiField("agreement_no")
+	@Deprecated
 	private String agreementNo;
 
 	/**
-	 * 授信渠道编码
+	 * 授信渠道编码，企业码定义的授信资产类型
 	 */
 	@ApiField("credit_channel_code")
 	private String creditChannelCode;
 
 	/**
-	 * 企业ID
+	 * 企业Id，企业入驻企业码时自动分配的用于唯一标识的编号
 	 */
 	@ApiField("enterprise_id")
 	private String enterpriseId;
@@ -44,7 +46,7 @@ public class AlipayCommerceEcCreditLoanApplyModel extends AlipayObject {
 	private String loanAmount;
 
 	/**
-	 * 外部业务申请单号
+	 * 外部业务编号，调用方生成的用于唯一标识借款申请的单据号
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;

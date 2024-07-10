@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝转账支付接口
  *
  * @author auto create
- * @since 1.0, 2024-06-26 15:26:17
+ * @since 1.0, 2024-07-09 11:36:16
  */
 public class AlipayFundTransUniTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5551431614731995195L;
+	private static final long serialVersionUID = 7422513828646536697L;
 
 	/**
 	 * 描述特定的业务场景，可传的参数如下：
@@ -23,7 +23,7 @@ PERSONAL_COLLECTION：C2C现金红包-领红包
 
 	/**
 	 * 转账业务请求的扩展参数，支持传入的扩展参数如下：
-sub_biz_scene 子业务场景，红包业务必传，取值REDPACKET，C2C现金红包、B2C现金红包均需传入
+sub_biz_scene 子业务场景，红包业务必传，C2C现金红包、B2C现金红包均需传入，取值REDPACKET
 	 */
 	@ApiField("business_params")
 	private String businessParams;

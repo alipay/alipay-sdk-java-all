@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.marketing.campaign.intelligent.template.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-11 16:12:54
+ * @since 1.0, 2024-07-04 19:33:56
  */
 public class KoubeiMarketingCampaignIntelligentTemplateConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1457453595314481926L;
+	private static final long serialVersionUID = 1626396261347198197L;
 
 	/** 
 	 * 营销模板的编号

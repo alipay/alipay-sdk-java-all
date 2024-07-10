@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 托管户账单查询接口
  *
  * @author auto create
- * @since 1.0, 2024-06-25 15:31:13
+ * @since 1.0, 2024-07-08 20:08:15
  */
 public class AlipayFundAccountBillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4291338931462924623L;
+	private static final long serialVersionUID = 1744455844472955836L;
 
 	/**
 	 * 开户场景码
@@ -20,7 +20,7 @@ public class AlipayFundAccountBillQueryModel extends AlipayObject {
 	private String accountSceneCode;
 
 	/**
-	 * 支付宝用户uid
+	 * 托管子户id
 	 */
 	@ApiField("alipay_user_id")
 	private String alipayUserId;
@@ -50,13 +50,13 @@ public class AlipayFundAccountBillQueryModel extends AlipayObject {
 	private String merchantUserId;
 
 	/**
-	 * 查询页码，必须大于0
+	 * 查询页码，必须大于0 （单位：页）
 	 */
 	@ApiField("page_num")
 	private String pageNum;
 
 	/**
-	 * 分页大小，每页条目数需满足0< page_size < 100
+	 * 分页大小，每页条目数需满足0< page_size < 100 （单位：条 ）
 	 */
 	@ApiField("page_size")
 	private Long pageSize;

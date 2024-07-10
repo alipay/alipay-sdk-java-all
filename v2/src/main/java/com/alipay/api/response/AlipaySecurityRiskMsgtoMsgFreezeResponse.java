@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.msgto.msg.freeze response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-27 08:48:47
+ * @since 1.0, 2024-07-04 19:36:27
  */
 public class AlipaySecurityRiskMsgtoMsgFreezeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1628292449983691161L;
+	private static final long serialVersionUID = 6252389452181898891L;
 
 	
 

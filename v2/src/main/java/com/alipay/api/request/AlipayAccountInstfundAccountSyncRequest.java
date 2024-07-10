@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.account.instfund.account.sync request
  * 
  * @author auto create
- * @since 1.0, 2022-10-28 17:18:33
+ * @since 1.0, 2024-07-04 16:38:04
  */
 public class AlipayAccountInstfundAccountSyncRequest implements AlipayRequest<AlipayAccountInstfundAccountSyncResponse> {
 

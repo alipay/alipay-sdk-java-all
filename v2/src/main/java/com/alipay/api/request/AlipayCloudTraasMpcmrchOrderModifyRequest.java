@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.traas.mpcmrch.order.modify request
  * 
  * @author auto create
- * @since 1.0, 2024-06-06 12:02:03
+ * @since 1.0, 2024-07-05 14:02:40
  */
 public class AlipayCloudTraasMpcmrchOrderModifyRequest implements AlipayRequest<AlipayCloudTraasMpcmrchOrderModifyResponse> {
 

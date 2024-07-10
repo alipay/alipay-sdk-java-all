@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.data.innerouter.test.query response.
  * 
  * @author auto create
- * @since 1.0, 2021-09-02 18:10:27
+ * @since 1.0, 2024-07-04 19:33:36
  */
 public class AlipaySecurityDataInnerouterTestQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8619583923673962849L;
+	private static final long serialVersionUID = 7311132875516117828L;
 
 	/** 
 	 * 123

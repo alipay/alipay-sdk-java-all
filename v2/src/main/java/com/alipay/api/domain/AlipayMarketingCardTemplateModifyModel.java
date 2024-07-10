@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 会员卡模板修改
  *
  * @author auto create
- * @since 1.0, 2024-06-27 16:05:43
+ * @since 1.0, 2024-07-04 16:48:53
  */
 public class AlipayMarketingCardTemplateModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1862453567886163956L;
+	private static final long serialVersionUID = 1681879993785272878L;
 
 	/**
 	 * 接口接入版本
@@ -31,7 +31,7 @@ public class AlipayMarketingCardTemplateModifyModel extends AlipayObject {
 	private String bizNoPrefix;
 
 	/**
-	 * 业务卡号后缀长度，与biz_no_prefix配合，扣除系统预留2位，剩下对应seq长度。在生成卡号时，若seq位数不足前置补0，若seq位数超出则以实际为准。举例：设为10，其中8位用于生成seq，可覆盖1亿用户，即使seq超过1亿，生成卡号也不报错，但总长度不得超过32位。建议按需设置合适的值，以获得长度一致的业务卡号，建议长度20，性能更好。
+	 * 业务卡号后缀长度，与biz_no_prefix配合，扣除系统预留2位，剩下对应seq长度。在生成卡号时，若seq位数不足前置补0，若seq位数超出则以实际为准。举例：设为10，其中8位用于生成seq，可覆盖1亿用户，即使seq超过1亿，生成卡号也不报错，但总长度不得超过32位。建议按需设置合适的值，以获得长度一致的业务卡号，建议长度20，性能更好。单位：/位
 	 */
 	@ApiField("biz_no_suffix_len")
 	private String bizNoSuffixLen;

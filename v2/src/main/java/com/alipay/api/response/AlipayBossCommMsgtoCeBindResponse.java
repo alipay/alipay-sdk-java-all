@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.comm.msgto.ce.bind response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-25 17:26:42
+ * @since 1.0, 2024-07-04 16:54:59
  */
 public class AlipayBossCommMsgtoCeBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6397851254125594775L;
+	private static final long serialVersionUID = 8586163391756814378L;
 
 	
 

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
 修改路由策略到R
  *
  * @author auto create
- * @since 1.0, 2024-06-14 16:47:52
+ * @since 1.0, 2024-07-03 14:55:46
  */
 public class AlipayTradePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4427681755115921129L;
+	private static final long serialVersionUID = 2899567743755947141L;
 
 	/**
 	 * 支付模式类型,若值为ENJOY_PAY_V2表示当前交易允许走先享后付2.0垫资
@@ -172,15 +172,7 @@ NOT_COMPLETE：转交易完成后不解冻剩余冻结金额；
 	private PayParams payParams;
 
 	/**
-	 * 产品码。
-商家和支付宝签约的产品码。 枚举值（点击查看签约情况）：
-<a target="_blank" href="https://opensupport.alipay.com/support/codelab/detail/486/487">FACE_TO_FACE_PAYMENT</a>：当面付产品；
-<a target="_blank" href="https://opensupport.alipay.com/support/codelab/detail/807/1419">CYCLE_PAY_AUTH</a>：周期扣款产品；
-GENERAL_WITHHOLDING：代扣产品；
-<a target="_blank" href="https://opensupport.alipay.com/support/codelab/detail/712/1471">PRE_AUTH_ONLINE</a>：支付宝预授权产品；
-PRE_AUTH：新当面资金授权产品；
-默认值为FACE_TO_FACE_PAYMENT。
-注意：非当面付产品使用本接口时，本参数必填。请传入对应产品码。
+	 * 产品码。 商家和支付宝签约的产品码。 枚举值（点击查看签约情况）： <a target="_blank" href="https://opensupport.alipay.com/support/codelab/detail/486/487">FACE_TO_FACE_PAYMENT</a>：当面付产品； <a target="_blank" href="https://opensupport.alipay.com/support/codelab/detail/807/1419">CYCLE_PAY_AUTH</a>：周期扣款产品； GENERAL_WITHHOLDING：代扣产品； <a target="_blank" href="https://opensupport.alipay.com/support/codelab/detail/712/1471">PRE_AUTH_ONLINE</a>：支付宝预授权产品； PRE_AUTH：新当面资金授权产品； 默认值为FACE_TO_FACE_PAYMENT。 注意：非当面付产品使用本接口时，本参数必填。请传入对应产品码。
 	 */
 	@ApiField("product_code")
 	private String productCode;

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudpromo.mall.skustatus.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-12 11:47:04
+ * @since 1.0, 2024-07-10 11:17:04
  */
 public class AlipayCloudCloudpromoMallSkustatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1168717466549887676L;
+	private static final long serialVersionUID = 5156128518229148766L;
 
 	/** 
 	 * sku售卖信息

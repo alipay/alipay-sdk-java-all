@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.haiguan.auth.create response.
  * 
  * @author auto create
- * @since 1.0, 2022-02-09 11:32:52
+ * @since 1.0, 2024-07-04 19:33:36
  */
 public class AlipaySecurityProdHaiguanAuthCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3565991664448544949L;
+	private static final long serialVersionUID = 6245327448232495246L;
 
 	/** 
 	 * 12

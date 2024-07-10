@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.expand.scode.elede.unsign request
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 17:41:03
+ * @since 1.0, 2024-07-04 19:33:17
  */
 public class AntMerchantExpandScodeEledeUnsignRequest implements AlipayRequest<AntMerchantExpandScodeEledeUnsignResponse> {
 

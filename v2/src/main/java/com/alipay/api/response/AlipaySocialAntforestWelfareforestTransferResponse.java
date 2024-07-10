@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.antforest.welfareforest.transfer response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-22 11:42:03
+ * @since 1.0, 2024-07-04 19:33:10
  */
 public class AlipaySocialAntforestWelfareforestTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1623412468167755738L;
+	private static final long serialVersionUID = 4335691415512696378L;
 
 	/** 
 	 * 本次实际浇水能量g数

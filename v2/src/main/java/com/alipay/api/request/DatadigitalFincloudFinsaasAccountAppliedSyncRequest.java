@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: datadigital.fincloud.finsaas.account.applied.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 18:24:58
+ * @since 1.0, 2024-07-04 19:33:33
  */
 public class DatadigitalFincloudFinsaasAccountAppliedSyncRequest implements AlipayRequest<DatadigitalFincloudFinsaasAccountAppliedSyncResponse> {
 

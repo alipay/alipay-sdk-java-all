@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.iris.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-04 14:54:10
+ * @since 1.0, 2024-07-04 19:33:36
  */
 public class AlipaySecurityProdIrisCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8728743591818568851L;
+	private static final long serialVersionUID = 4616892652177945845L;
 
 	/** 
 	 * 虹膜注册的关联token，用于关联跨设备分次注册

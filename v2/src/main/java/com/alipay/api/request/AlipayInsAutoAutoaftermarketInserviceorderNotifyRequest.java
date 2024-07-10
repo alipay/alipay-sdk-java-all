@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.auto.autoaftermarket.inserviceorder.notify request
  * 
  * @author auto create
- * @since 1.0, 2019-10-23 21:29:38
+ * @since 1.0, 2024-07-04 17:31:55
  */
 public class AlipayInsAutoAutoaftermarketInserviceorderNotifyRequest implements AlipayRequest<AlipayInsAutoAutoaftermarketInserviceorderNotifyResponse> {
 

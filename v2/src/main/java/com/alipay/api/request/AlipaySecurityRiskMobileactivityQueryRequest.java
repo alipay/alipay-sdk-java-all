@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.risk.mobileactivity.query request
  * 
  * @author auto create
- * @since 1.0, 2024-03-04 14:58:40
+ * @since 1.0, 2024-07-04 15:51:33
  */
 public class AlipaySecurityRiskMobileactivityQueryRequest implements AlipayRequest<AlipaySecurityRiskMobileactivityQueryResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.base.mcomment.footprint.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-20 21:01:39
+ * @since 1.0, 2024-07-04 19:33:10
  */
 public class AlipaySocialBaseMcommentFootprintSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4274734629969422174L;
+	private static final long serialVersionUID = 6651929954139891949L;
 
 	
 

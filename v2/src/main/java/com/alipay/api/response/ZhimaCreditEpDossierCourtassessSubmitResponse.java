@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.dossier.courtassess.submit response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 22:51:58
+ * @since 1.0, 2024-07-08 10:44:53
  */
 public class ZhimaCreditEpDossierCourtassessSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8239746955325895279L;
+	private static final long serialVersionUID = 7741193455588327239L;
 
 	
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.item.extitem.info.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 01:25:14
+ * @since 1.0, 2024-07-04 19:36:27
  */
 public class KoubeiItemExtitemInfoCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6259481393243494521L;
+	private static final long serialVersionUID = 5454235782672385624L;
 
 	/** 
 	 * 创建成功，返回id

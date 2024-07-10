@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务窗第三方渠道商配置接口，用于记录服务窗商户授权的第三方渠道商
  *
  * @author auto create
- * @since 1.0, 2022-08-05 19:30:26
+ * @since 1.0, 2024-07-04 17:00:47
  */
 public class AlipayOpenPublicThirdCustomerServiceModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8262474576221794914L;
+	private static final long serialVersionUID = 3274127282648735347L;
 
 	/**
 	 * 服务窗商户在渠道商处对应的用户id

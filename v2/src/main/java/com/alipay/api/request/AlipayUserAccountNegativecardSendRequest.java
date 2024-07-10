@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.account.negativecard.send request
  * 
  * @author auto create
- * @since 1.0, 2020-12-14 21:52:29
+ * @since 1.0, 2024-07-04 16:38:00
  */
 public class AlipayUserAccountNegativecardSendRequest implements AlipayRequest<AlipayUserAccountNegativecardSendResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 系统商需要通过该接口在口碑平台帮助商户修改门店信息，所有的选项都为非必填项，需要修改什么信息就传入什么参数，不传入的参数，则保持不变。修改门店名、首图、门店图片、营业执照相关字段、是否在其他平台开店相关字段，会重新触发风控审核，修改其他字段不会触发风控审核。
  *
  * @author auto create
- * @since 1.0, 2017-07-19 16:50:03
+ * @since 1.0, 2024-07-04 17:00:59
  */
 public class AlipayOfflineMarketShopModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1153232185125882161L;
+	private static final long serialVersionUID = 2642534444456442512L;
 
 	/**
 	 * 门店详细地址，地址字符长度在4-50个字符。门店详细地址，格式（不含省市区）：例1：道路+门牌号，“人民东路18号”；例2：道路+门牌号+标志性建筑+楼层；注：门店详细地址按规范格式填写地址，以免影响门店搜索及活动报名

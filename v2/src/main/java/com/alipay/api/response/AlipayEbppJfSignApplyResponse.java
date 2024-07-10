@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.jf.sign.apply response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:27:58
+ * @since 1.0, 2024-07-04 17:31:51
  */
 public class AlipayEbppJfSignApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4285953154754412552L;
+	private static final long serialVersionUID = 6551133313684275168L;
 
 	/** 
 	 * 外部业务号,和接口传入的外部业务号保持一致

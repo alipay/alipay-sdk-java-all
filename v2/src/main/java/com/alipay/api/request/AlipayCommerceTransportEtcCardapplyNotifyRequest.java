@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.etc.cardapply.notify request
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 22:46:48
+ * @since 1.0, 2024-07-04 16:56:00
  */
 public class AlipayCommerceTransportEtcCardapplyNotifyRequest implements AlipayRequest<AlipayCommerceTransportEtcCardapplyNotifyResponse> {
 

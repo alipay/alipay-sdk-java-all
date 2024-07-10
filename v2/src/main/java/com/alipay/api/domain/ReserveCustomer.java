@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预约人
  *
  * @author auto create
- * @since 1.0, 2024-04-08 16:49:29
+ * @since 1.0, 2024-07-05 11:42:26
  */
 public class ReserveCustomer extends AlipayObject {
 
-	private static final long serialVersionUID = 7249944691475743519L;
+	private static final long serialVersionUID = 7439831366127541522L;
 
 	/**
 	 * 出生日期，格式yyyy-MM-dd
@@ -32,6 +32,12 @@ public class ReserveCustomer extends AlipayObject {
 	private String customerIdentityNo;
 
 	/**
+	 * 证件类型
+	 */
+	@ApiField("customer_identity_type")
+	private String customerIdentityType;
+
+	/**
 	 * 婚姻状况
 	 */
 	@ApiField("customer_medical_status")
@@ -48,6 +54,12 @@ public class ReserveCustomer extends AlipayObject {
 	 */
 	@ApiField("customer_name")
 	private String customerName;
+
+	/**
+	 * 是否备孕
+	 */
+	@ApiField("prepare_pregnancy")
+	private Boolean preparePregnancy;
 
 	public String getCustomerBirthday() {
 		return this.customerBirthday;
@@ -70,6 +82,13 @@ public class ReserveCustomer extends AlipayObject {
 		this.customerIdentityNo = customerIdentityNo;
 	}
 
+	public String getCustomerIdentityType() {
+		return this.customerIdentityType;
+	}
+	public void setCustomerIdentityType(String customerIdentityType) {
+		this.customerIdentityType = customerIdentityType;
+	}
+
 	public String getCustomerMedicalStatus() {
 		return this.customerMedicalStatus;
 	}
@@ -89,6 +108,13 @@ public class ReserveCustomer extends AlipayObject {
 	}
 	public void setCustomerName(String customerName) {
 		this.customerName = customerName;
+	}
+
+	public Boolean getPreparePregnancy() {
+		return this.preparePregnancy;
+	}
+	public void setPreparePregnancy(Boolean preparePregnancy) {
+		this.preparePregnancy = preparePregnancy;
 	}
 
 }

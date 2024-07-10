@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.account.finrisk.instriskmonitor.keywords.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 01:12:00
+ * @since 1.0, 2024-07-04 16:54:58
  */
 public class AlipayAccountFinriskInstriskmonitorKeywordsBatchqueryRequest implements AlipayRequest<AlipayAccountFinriskInstriskmonitorKeywordsBatchqueryResponse> {
 

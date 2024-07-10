@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: huanxu.trade.order.disburse request
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 04:26:13
+ * @since 1.0, 2024-07-04 19:33:34
  */
 public class HuanxuTradeOrderDisburseRequest implements AlipayRequest<HuanxuTradeOrderDisburseResponse> {
 

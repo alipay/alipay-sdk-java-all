@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 线上赛事场次组别信息
  *
  * @author auto create
- * @since 1.0, 2023-03-15 19:40:51
+ * @since 1.0, 2024-07-08 19:51:52
  */
 public class OnlineGameEventInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6154244646878888351L;
+	private static final long serialVersionUID = 4274867863918455935L;
 
 	/**
 	 * 产地描述信息
@@ -20,31 +20,31 @@ public class OnlineGameEventInfo extends AlipayObject {
 	private String content;
 
 	/**
-	 * 用户参赛的场次组别ID
+	 * 用户参赛的场次组别ID，首次调用接口为空，第二次调用则由接口返回字段填充
 	 */
 	@ApiField("game_event_id")
 	private String gameEventId;
 
 	/**
-	 * 三方用户参赛的场次组别ID
+	 * 三方用户参赛的场次组别ID，由三方提供
 	 */
 	@ApiField("out_game_event_no")
 	private String outGameEventNo;
 
 	/**
-	 * 配合赛事总进度使用
+	 * 赛事总进度,线上赛单位为M，步数赛单位为STEP
 	 */
 	@ApiField("progress_unit")
 	private String progressUnit;
 
 	/**
-	 * 赛事总进度
+	 * 赛事总进度，线上赛为M（米），步数赛为STEP(步数)
 	 */
 	@ApiField("progress_value")
 	private Long progressValue;
 
 	/**
-	 * 场次状态
+	 * 场次状态ONLINE （上线） OFFLINE（下线）
 	 */
 	@ApiField("status")
 	private String status;

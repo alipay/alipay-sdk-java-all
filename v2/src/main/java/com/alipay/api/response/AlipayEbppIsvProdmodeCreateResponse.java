@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.isv.prodmode.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-02 19:23:27
+ * @since 1.0, 2024-07-04 17:31:52
  */
 public class AlipayEbppIsvProdmodeCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6727923123254268158L;
+	private static final long serialVersionUID = 8235231518273843869L;
 
 	/** 
 	 * 流程实例ID

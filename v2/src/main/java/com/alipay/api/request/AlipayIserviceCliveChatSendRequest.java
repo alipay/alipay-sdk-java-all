@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.clive.chat.send request
  * 
  * @author auto create
- * @since 1.0, 2023-10-07 15:24:39
+ * @since 1.0, 2024-07-04 17:31:59
  */
 public class AlipayIserviceCliveChatSendRequest implements AlipayRequest<AlipayIserviceCliveChatSendResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.catering.pos.desk.create request
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 18:44:44
+ * @since 1.0, 2024-07-04 15:51:39
  */
 public class KoubeiCateringPosDeskCreateRequest implements AlipayRequest<KoubeiCateringPosDeskCreateResponse> {
 

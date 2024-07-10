@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 卡模板权益内容
  *
  * @author auto create
- * @since 1.0, 2024-06-27 16:23:42
+ * @since 1.0, 2024-07-04 16:05:52
  */
 public class TemplateRightsContentDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3157626736946375355L;
+	private static final long serialVersionUID = 5239227746361981312L;
 
 	/**
 	 * 权益内容详情

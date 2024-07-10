@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.members.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-06 10:33:12
+ * @since 1.0, 2024-07-04 15:51:37
  */
 public class AlipayOpenAppMembersQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3246317197489855451L;
+	private static final long serialVersionUID = 5424893488118594556L;
 
 	/** 
 	 * 小程序成员模型

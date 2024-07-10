@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.certify.open.initialize response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-27 15:12:08
+ * @since 1.0, 2024-07-04 19:33:11
  */
 public class AlipayUserCertifyOpenInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7241687774918228651L;
+	private static final long serialVersionUID = 8256133367419433197L;
 
 	/** 
 	 * 本次申请操作的唯一标识，商户需要记录，后续的操作都需要用到

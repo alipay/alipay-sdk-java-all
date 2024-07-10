@@ -7,18 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 模板栏位信息
  *
  * @author auto create
- * @since 1.0, 2018-03-22 14:17:06
+ * @since 1.0, 2024-07-04 16:05:52
  */
 public class TemplateColumnInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1458879966565523723L;
+	private static final long serialVersionUID = 1349237365597416829L;
 
 	/**
 	 * 标准栏位：行为由支付宝统一定，同时已经分配标准Code
+
 BALANCE：会员卡余额
+
 POINT：积分
+
 LEVEL：等级
+
 TELEPHONE：联系方式
+
 自定义栏位：行为由商户定义，自定义Code码（只要无重复）
 	 */
 	@ApiField("code")
@@ -75,6 +80,8 @@ TELEPHONE：联系方式
 
 	/**
 	 * 卡包详情页面，卡栏位右边展现的值
+
+
 
 TELEPHONE栏位的商家联系电话号码由此value字段传入
 	 */

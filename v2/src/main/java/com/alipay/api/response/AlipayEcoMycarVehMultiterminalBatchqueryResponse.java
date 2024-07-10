@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.veh.multiterminal.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:26:17
+ * @since 1.0, 2024-07-04 17:31:59
  */
 public class AlipayEcoMycarVehMultiterminalBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6872672531246371939L;
+	private static final long serialVersionUID = 5147688192684918779L;
 
 	/** 
 	 * 分页页码

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ServiceTimeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7577815943128935773L;
+	private static final long serialVersionUID = 5113342243679786176L;
 
 	/**
 	 * 提前预约时间，单位分钟，大于0

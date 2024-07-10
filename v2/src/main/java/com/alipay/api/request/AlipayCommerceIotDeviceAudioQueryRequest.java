@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.iot.device.audio.query request
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:28:53
+ * @since 1.0, 2024-07-04 15:51:39
  */
 public class AlipayCommerceIotDeviceAudioQueryRequest implements AlipayRequest<AlipayCommerceIotDeviceAudioQueryResponse> {
 

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 线上赛事信息返参
  *
  * @author auto create
- * @since 1.0, 2023-05-18 19:20:17
+ * @since 1.0, 2024-07-08 19:51:52
  */
 public class OnlineGameInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4338788114731646293L;
+	private static final long serialVersionUID = 3281153168138839255L;
 
 	/**
 	 * 赛事类型
@@ -42,7 +42,7 @@ public class OnlineGameInfo extends AlipayObject {
 	private Date endTime;
 
 	/**
-	 * TEST(测试数据)/PROD(正式数据)
+	 * 环境参数 TEST(测试数据)/PROD(正式数据)
 	 */
 	@ApiField("env")
 	private String env;
@@ -54,13 +54,13 @@ public class OnlineGameInfo extends AlipayObject {
 	private String gameId;
 
 	/**
-	 * 配合赛事总进度使用
+	 * 赛事总进度，线上赛为M（米），步数赛为STEP(步数)
 	 */
 	@ApiField("game_progress_unit")
 	private String gameProgressUnit;
 
 	/**
-	 * 赛事总进度
+	 * 赛事总进度，线上赛为M（米），步数赛为STEP(步数)
 	 */
 	@ApiField("game_progress_value")
 	private Long gameProgressValue;
@@ -97,25 +97,25 @@ public class OnlineGameInfo extends AlipayObject {
 	private String posterUrl;
 
 	/**
-	 * 0代表上报条数无限制/1代表上报一条/n代表具体上报条数
+	 * 0代表上报条数无限制/1代表上报一条/n代表具体上报条数，n可为任意整数，单位为条
 	 */
 	@ApiField("sports_data_limit_count")
 	private String sportsDataLimitCount;
 
 	/**
-	 * 支付宝运动
+	 * 运动类型 ALIPAY_SPORTS 支付宝运动
 	 */
 	@ApiField("sports_data_source")
 	private String sportsDataSource;
 
 	/**
-	 * 跑步/走路
+	 * run跑步 walk走路  ride骑行
 	 */
 	@ApiField("sports_data_type")
 	private String sportsDataType;
 
 	/**
-	 * 马拉松
+	 * MARATHON 马拉松
 	 */
 	@ApiField("sports_type")
 	private String sportsType;
@@ -127,13 +127,13 @@ public class OnlineGameInfo extends AlipayObject {
 	private Date startTime;
 
 	/**
-	 * 白名单/上线/下线
+	 * 赛事状态 ONLINE上线  OFFLINE下线
 	 */
 	@ApiField("status")
 	private String status;
 
 	/**
-	 * 比如交互中提到的赛组
+	 * 比如交互中提到的赛组，目前未使用
 	 */
 	@ApiField("sub_biz_type")
 	private String subBizType;

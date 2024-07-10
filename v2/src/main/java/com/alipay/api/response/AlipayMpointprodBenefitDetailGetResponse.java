@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.mpointprod.benefit.detail.get response.
  * 
  * @author auto create
- * @since 1.0, 2022-03-11 17:32:54
+ * @since 1.0, 2024-07-04 20:52:34
  */
 public class AlipayMpointprodBenefitDetailGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5791484117817935679L;
+	private static final long serialVersionUID = 5247255359138321919L;
 
 	/** 
 	 * 权益详情列表

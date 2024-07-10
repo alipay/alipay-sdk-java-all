@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.signcard.existence.query response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-24 15:10:01
+ * @since 1.0, 2024-07-04 15:51:39
  */
 public class AlipayUserSigncardExistenceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7492161685641261356L;
+	private static final long serialVersionUID = 3555762363595829979L;
 
 	/** 
 	 * 是否已经签约快捷或卡通，只统计已激活的签约信息。T代表是，F代表否。

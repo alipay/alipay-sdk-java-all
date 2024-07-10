@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.fincloud.finsaas.sms.code.verify response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-03 14:10:09
+ * @since 1.0, 2024-07-04 16:38:05
  */
 public class DatadigitalFincloudFinsaasSmsCodeVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6174438531451574872L;
+	private static final long serialVersionUID = 6768549587448465113L;
 
 	/** 
 	 * 发送结果

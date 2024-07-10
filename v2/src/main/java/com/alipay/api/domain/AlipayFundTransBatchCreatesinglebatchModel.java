@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 如果有创建AA收款，江湖救急等业务场景的话，可以调用该接口进行批次单据的创建
  *
  * @author auto create
- * @since 1.0, 2016-10-27 16:40:29
+ * @since 1.0, 2024-07-04 17:00:46
  */
 public class AlipayFundTransBatchCreatesinglebatchModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1475813215788167412L;
+	private static final long serialVersionUID = 4292812421354659393L;
 
 	/**
 	 * 批次的创建说明，如收款理由等。注：字符长度不能超过24；字符串中不能含有特殊字符（比如emoji等）

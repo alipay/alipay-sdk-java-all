@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.account.bill.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-25 15:31:13
+ * @since 1.0, 2024-07-08 20:12:04
  */
 public class AlipayFundAccountBillQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5538295546114521444L;
+	private static final long serialVersionUID = 1421431574329823675L;
 
 	/** 
 	 * 账单详情
@@ -25,19 +25,19 @@ public class AlipayFundAccountBillQueryResponse extends AlipayResponse {
 	private List<TrusteeshipAccountBillQueryResponse> accDetailList;
 
 	/** 
-	 * 结果页数
+	 * 结果页数（单位：页）
 	 */
 	@ApiField("page_num")
 	private String pageNum;
 
 	/** 
-	 * 结果页大小
+	 * 结果页大小 （单位：条）
 	 */
 	@ApiField("page_size")
 	private String pageSize;
 
 	/** 
-	 * 每页元素数
+	 * 每页元素数，单位：个
 	 */
 	@ApiField("total_item_count")
 	private String totalItemCount;

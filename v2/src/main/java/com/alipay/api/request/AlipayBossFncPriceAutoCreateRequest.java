@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.fnc.price.auto.create request
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:28:52
+ * @since 1.0, 2024-07-04 16:55:00
  */
 public class AlipayBossFncPriceAutoCreateRequest implements AlipayRequest<AlipayBossFncPriceAutoCreateResponse> {
 

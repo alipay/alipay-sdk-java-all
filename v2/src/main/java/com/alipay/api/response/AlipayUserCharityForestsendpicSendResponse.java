@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.charity.forestsendpic.send response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-14 16:48:26
+ * @since 1.0, 2024-07-04 15:51:36
  */
 public class AlipayUserCharityForestsendpicSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3539982779145592225L;
+	private static final long serialVersionUID = 2146856666768799854L;
 
 	/** 
 	 * 结果代码

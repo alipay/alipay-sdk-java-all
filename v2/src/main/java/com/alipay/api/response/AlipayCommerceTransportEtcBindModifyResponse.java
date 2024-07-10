@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.etc.bind.modify response.
  * 
  * @author auto create
- * @since 1.0, 2021-03-10 10:30:42
+ * @since 1.0, 2024-07-04 16:56:00
  */
 public class AlipayCommerceTransportEtcBindModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1164986122291459677L;
+	private static final long serialVersionUID = 8249741845556528948L;
 
 	/** 
 	 * 是否更新成功；true成功/false失败

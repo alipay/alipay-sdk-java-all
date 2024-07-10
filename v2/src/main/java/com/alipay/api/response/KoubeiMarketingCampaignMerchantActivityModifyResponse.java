@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.marketing.campaign.merchant.activity.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-03 23:26:01
+ * @since 1.0, 2024-07-04 19:36:31
  */
 public class KoubeiMarketingCampaignMerchantActivityModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1791831284523146615L;
+	private static final long serialVersionUID = 1365849786797917148L;
 
 	/** 
 	 * 创建成功之后返回活动详情信息，包含活动activity_id和活动当前状态activity_status等信息。

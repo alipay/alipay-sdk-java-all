@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取员工邀请链接
  *
  * @author auto create
- * @since 1.0, 2024-03-29 11:00:50
+ * @since 1.0, 2024-07-09 11:19:52
  */
 public class AlipayCommerceEcEmployeeInviteQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5621188673189446667L;
+	private static final long serialVersionUID = 5215894711679679555L;
 
 	/**
 	 * 是否生成签约吱口令，不传默认为N
@@ -20,7 +20,7 @@ public class AlipayCommerceEcEmployeeInviteQueryModel extends AlipayObject {
 	private String createShareCode;
 
 	/**
-	 * 企业码员工ID
+	 * 企业码员工ID，签约适用对象为指定员工时填写
 	 */
 	@ApiField("employee_id")
 	private String employeeId;
@@ -32,13 +32,13 @@ public class AlipayCommerceEcEmployeeInviteQueryModel extends AlipayObject {
 	private String enterpriseId;
 
 	/**
-	 * 页面内容code
+	 * 用于展示不同的页面文案，使用标准页面文案是无需传值
 	 */
 	@ApiField("page_content_code")
 	private String pageContentCode;
 
 	/**
-	 * 代扣签约串
+	 * 代扣签约串。需要签约代扣协议时，必传，返回的签约链接会拼接上代扣签约串。
 	 */
 	@ApiField("withholding_sign_str")
 	private String withholdingSignStr;

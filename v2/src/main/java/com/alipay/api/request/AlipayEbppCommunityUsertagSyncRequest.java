@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.community.usertag.sync request
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:29:04
+ * @since 1.0, 2024-07-04 17:31:51
  */
 public class AlipayEbppCommunityUsertagSyncRequest implements AlipayRequest<AlipayEbppCommunityUsertagSyncResponse> {
 

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.oceanbase.obglobal.getmonorecording.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-23 13:48:28
+ * @since 1.0, 2024-07-04 19:33:27
  */
 public class AnttechOceanbaseObglobalGetmonorecordingQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5757125444159457634L;
+	private static final long serialVersionUID = 8877594348473489473L;
 
 	/** 
 	 * 业务错误码

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.isv.service.submit response.
  * 
  * @author auto create
- * @since 1.0, 2022-01-05 14:44:43
+ * @since 1.0, 2024-07-04 16:38:00
  */
 public class AlipayCommerceOperationIsvServiceSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6755721571984276217L;
+	private static final long serialVersionUID = 1751667454291289147L;
 
 	/** 
 	 * id （后续消息标识对应服务）

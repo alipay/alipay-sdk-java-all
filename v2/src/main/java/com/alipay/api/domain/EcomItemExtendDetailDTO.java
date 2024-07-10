@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电商商品详情模型
  *
  * @author auto create
- * @since 1.0, 2024-03-25 11:17:34
+ * @since 1.0, 2024-07-09 14:47:50
  */
 public class EcomItemExtendDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4153966418568728915L;
+	private static final long serialVersionUID = 6374586257974584175L;
 
 	/**
 	 * cardType + 唯一 + 储值卡类目投保场景 + 通过上下游约定获取
@@ -110,6 +110,12 @@ public class EcomItemExtendDetailDTO extends AlipayObject {
 	private String chargeType;
 
 	/**
+	 * 免赔金额（元）
+	 */
+	@ApiField("deductible_amount")
+	private Long deductibleAmount;
+
+	/**
 	 * extInfo
 	 */
 	@ApiField("ext_info")
@@ -186,6 +192,12 @@ public class EcomItemExtendDetailDTO extends AlipayObject {
 	 */
 	@ApiField("plug_no")
 	private String plugNo;
+
+	/**
+	 * 车辆信息
+	 */
+	@ApiField("vehicle")
+	private InsOpenVehicleDTO vehicle;
 
 	public String getCardType() {
 		return this.cardType;
@@ -292,6 +304,13 @@ public class EcomItemExtendDetailDTO extends AlipayObject {
 		this.chargeType = chargeType;
 	}
 
+	public Long getDeductibleAmount() {
+		return this.deductibleAmount;
+	}
+	public void setDeductibleAmount(Long deductibleAmount) {
+		this.deductibleAmount = deductibleAmount;
+	}
+
 	public String getExtInfo() {
 		return this.extInfo;
 	}
@@ -381,6 +400,13 @@ public class EcomItemExtendDetailDTO extends AlipayObject {
 	}
 	public void setPlugNo(String plugNo) {
 		this.plugNo = plugNo;
+	}
+
+	public InsOpenVehicleDTO getVehicle() {
+		return this.vehicle;
+	}
+	public void setVehicle(InsOpenVehicleDTO vehicle) {
+		this.vehicle = vehicle;
 	}
 
 }

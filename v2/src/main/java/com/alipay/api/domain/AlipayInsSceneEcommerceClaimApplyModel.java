@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 电商申请报案
  *
  * @author auto create
- * @since 1.0, 2023-08-24 19:53:17
+ * @since 1.0, 2024-07-09 14:47:50
  */
 public class AlipayInsSceneEcommerceClaimApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6222376211869569369L;
+	private static final long serialVersionUID = 8251478845713735729L;
 
 	/**
 	 * 申请报案金额（单位：分）
@@ -42,6 +42,12 @@ public class AlipayInsSceneEcommerceClaimApplyModel extends AlipayObject {
 	private String claimPayMode;
 
 	/**
+	 * 理赔业务数据
+	 */
+	@ApiField("claim_report_biz_info")
+	private String claimReportBizInfo;
+
+	/**
 	 * 商品
 	 */
 	@ApiField("item")
@@ -66,10 +72,23 @@ public class AlipayInsSceneEcommerceClaimApplyModel extends AlipayObject {
 	private String policyNo;
 
 	/**
+	 * 保单列表
+	 */
+	@ApiListField("policy_no_list")
+	@ApiField("string")
+	private List<String> policyNoList;
+
+	/**
 	 * 逆向纠纷单
 	 */
 	@ApiField("refund_dispute")
 	private EcomRefundDisputeDTO refundDispute;
+
+	/**
+	 * 报案操作人类型
+	 */
+	@ApiField("report_operator_type")
+	private String reportOperatorType;
 
 	/**
 	 * 报案业务单号（用于幂等）
@@ -82,6 +101,12 @@ public class AlipayInsSceneEcommerceClaimApplyModel extends AlipayObject {
 	 */
 	@ApiField("seller")
 	private EcomSellerDTO seller;
+
+	/**
+	 * 报案来源
+	 */
+	@ApiField("source")
+	private String source;
 
 	public Long getApplyAmout() {
 		return this.applyAmout;
@@ -109,6 +134,13 @@ public class AlipayInsSceneEcommerceClaimApplyModel extends AlipayObject {
 	}
 	public void setClaimPayMode(String claimPayMode) {
 		this.claimPayMode = claimPayMode;
+	}
+
+	public String getClaimReportBizInfo() {
+		return this.claimReportBizInfo;
+	}
+	public void setClaimReportBizInfo(String claimReportBizInfo) {
+		this.claimReportBizInfo = claimReportBizInfo;
 	}
 
 	public EcomItemDTO getItem() {
@@ -139,11 +171,25 @@ public class AlipayInsSceneEcommerceClaimApplyModel extends AlipayObject {
 		this.policyNo = policyNo;
 	}
 
+	public List<String> getPolicyNoList() {
+		return this.policyNoList;
+	}
+	public void setPolicyNoList(List<String> policyNoList) {
+		this.policyNoList = policyNoList;
+	}
+
 	public EcomRefundDisputeDTO getRefundDispute() {
 		return this.refundDispute;
 	}
 	public void setRefundDispute(EcomRefundDisputeDTO refundDispute) {
 		this.refundDispute = refundDispute;
+	}
+
+	public String getReportOperatorType() {
+		return this.reportOperatorType;
+	}
+	public void setReportOperatorType(String reportOperatorType) {
+		this.reportOperatorType = reportOperatorType;
 	}
 
 	public String getReportOutBizNo() {
@@ -158,6 +204,13 @@ public class AlipayInsSceneEcommerceClaimApplyModel extends AlipayObject {
 	}
 	public void setSeller(EcomSellerDTO seller) {
 		this.seller = seller;
+	}
+
+	public String getSource() {
+		return this.source;
+	}
+	public void setSource(String source) {
+		this.source = source;
 	}
 
 }

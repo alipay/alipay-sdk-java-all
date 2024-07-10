@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.open.app.hylabeltwo.query request
  * 
  * @author auto create
- * @since 1.0, 2021-03-22 10:27:32
+ * @since 1.0, 2024-07-04 19:39:14
  */
 public class ZhimaOpenAppHylabeltwoQueryRequest implements AlipayRequest<ZhimaOpenAppHylabeltwoQueryResponse> {
 

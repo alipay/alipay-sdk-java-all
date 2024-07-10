@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 对话消息发送接口（非流式）
  *
  * @author auto create
- * @since 1.0, 2024-05-14 20:05:49
+ * @since 1.0, 2024-07-02 18:25:50
  */
 public class AlipayCloudNextbuilderAgentChatGenerateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7794369769276236271L;
+	private static final long serialVersionUID = 4111989537474224842L;
 
 	/**
 	 * AI 创作平台创建的Agent 的 id，可从AI 创作平台页面获取

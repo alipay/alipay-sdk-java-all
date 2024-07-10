@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.base.chat.gmember.confirm request
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 02:05:51
+ * @since 1.0, 2024-07-05 11:02:33
  */
 public class AlipaySocialBaseChatGmemberConfirmRequest implements AlipayRequest<AlipaySocialBaseChatGmemberConfirmResponse> {
 

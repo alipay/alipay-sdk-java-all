@@ -7,6 +7,7 @@ import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.AppItemAttrVO;
 import com.alipay.api.domain.PhoneStructVO;
 import com.alipay.api.domain.GuideInfoVO;
+import com.alipay.api.domain.ItemEnrollFreezeContent;
 import com.alipay.api.domain.ItemRiskInfo;
 import com.alipay.api.domain.ItemSceneRiskInfo;
 import com.alipay.api.domain.LocalItemSkuQueryVO;
@@ -18,11 +19,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.localitem.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-25 10:43:55
+ * @since 1.0, 2024-07-09 09:47:04
  */
 public class AlipayOpenAppLocalitemQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1733873726366925868L;
+	private static final long serialVersionUID = 1815181834883854182L;
 
 	/** 
 	 * 商品属性
@@ -81,6 +82,12 @@ public class AlipayOpenAppLocalitemQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("item_details_page_model")
 	private String itemDetailsPageModel;
+
+	/** 
+	 * 报名活动状态及文案
+	 */
+	@ApiField("item_enroll_freeze_content")
+	private ItemEnrollFreezeContent itemEnrollFreezeContent;
 
 	/** 
 	 * 支付宝平台侧商品ID，是支付宝平台侧商品的唯一标识，后续与平台交互，需要使用该 ID，建议持久化。
@@ -234,6 +241,13 @@ public class AlipayOpenAppLocalitemQueryResponse extends AlipayResponse {
 	}
 	public String getItemDetailsPageModel( ) {
 		return this.itemDetailsPageModel;
+	}
+
+	public void setItemEnrollFreezeContent(ItemEnrollFreezeContent itemEnrollFreezeContent) {
+		this.itemEnrollFreezeContent = itemEnrollFreezeContent;
+	}
+	public ItemEnrollFreezeContent getItemEnrollFreezeContent( ) {
+		return this.itemEnrollFreezeContent;
 	}
 
 	public void setItemId(String itemId) {

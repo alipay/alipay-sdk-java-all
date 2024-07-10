@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.payment.trade.deposit.verify.apply response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:29:13
+ * @since 1.0, 2024-07-04 16:38:00
  */
 public class MybankPaymentTradeDepositVerifyApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2818136776416966924L;
+	private static final long serialVersionUID = 1354917191954617175L;
 
 	/** 
 	 * 请求流水号，与入参一致

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.ai.cv.ocr.vatinvoice.identify response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 18:13:18
+ * @since 1.0, 2024-07-04 19:33:14
  */
 public class AnttechAiCvOcrVatinvoiceIdentifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4337356857656551734L;
+	private static final long serialVersionUID = 3817781588886417998L;
 
 	/** 
 	 * 算法错误信息

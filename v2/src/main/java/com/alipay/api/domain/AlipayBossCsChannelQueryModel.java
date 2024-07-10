@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 云客服热线数据查询，云客服会有很多外部客服，他们需要查询落地在站内的自己公司的服务数据。
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:20
+ * @since 1.0, 2024-07-04 17:00:52
  */
 public class AlipayBossCsChannelQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2181999276337951574L;
+	private static final long serialVersionUID = 1148782651349323735L;
 
 	/**
 	 * 平均通话时长的qualifier

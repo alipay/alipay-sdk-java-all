@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.marketing.campaign.prize.list.consult request
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 01:42:07
+ * @since 1.0, 2024-07-04 15:51:34
  */
 public class MybankMarketingCampaignPrizeListConsultRequest implements AlipayRequest<MybankMarketingCampaignPrizeListConsultResponse> {
 

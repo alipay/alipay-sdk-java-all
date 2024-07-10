@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.marketing.tool.mall.points.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 17:30:12
+ * @since 1.0, 2024-07-04 19:39:04
  */
 public class KoubeiMarketingToolMallPointsSyncRequest implements AlipayRequest<KoubeiMarketingToolMallPointsSyncResponse> {
 

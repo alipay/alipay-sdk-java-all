@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 托管子户账单
  *
  * @author auto create
- * @since 1.0, 2024-06-25 19:25:50
+ * @since 1.0, 2024-07-08 20:08:15
  */
 public class TrusteeshipAccountBillQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 4243873589332556292L;
+	private static final long serialVersionUID = 5683454591865687946L;
 
 	/**
 	 * 账单日
@@ -26,13 +26,13 @@ public class TrusteeshipAccountBillQueryResponse extends AlipayObject {
 	private String action;
 
 	/**
-	 * 涉及金额
+	 * 涉及金额（单元是元）
 	 */
 	@ApiField("amount")
 	private String amount;
 
 	/**
-	 * 账户剩余金额
+	 * 账户剩余金额(单位：元)
 	 */
 	@ApiField("balance")
 	private String balance;
@@ -62,7 +62,7 @@ public class TrusteeshipAccountBillQueryResponse extends AlipayObject {
 	private String transDt;
 
 	/**
-	 * 支付宝ID
+	 * 托管子户id
 	 */
 	@ApiField("uid")
 	private String uid;

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.ad.aduserqualification.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-24 22:49:40
+ * @since 1.0, 2024-07-04 15:51:35
  */
 public class AlipayCommerceTransportAdAduserqualificationBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2557755733611316164L;
+	private static final long serialVersionUID = 6883199931912828178L;
 
 	/** 
 	 * 广告主用户资质列表 + 根据广告主用户id获得对应的资质列表

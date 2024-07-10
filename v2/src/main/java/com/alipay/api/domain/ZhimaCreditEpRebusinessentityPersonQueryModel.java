@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 人企店综合查询服务_法人信息入参版
  *
  * @author auto create
- * @since 1.0, 2024-06-13 11:54:44
+ * @since 1.0, 2024-07-08 11:38:52
  */
 public class ZhimaCreditEpRebusinessentityPersonQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3125868413563858947L;
+	private static final long serialVersionUID = 8368832255346222917L;
 
 	/**
 	 * 法人证件号

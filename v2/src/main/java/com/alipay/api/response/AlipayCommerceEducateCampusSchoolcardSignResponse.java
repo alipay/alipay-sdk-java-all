@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.campus.schoolcard.sign response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:26:15
+ * @since 1.0, 2024-07-04 16:55:09
  */
 public class AlipayCommerceEducateCampusSchoolcardSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3164972977767524299L;
+	private static final long serialVersionUID = 8662585871781933814L;
 
 	/** 
 	 * 开通成功，返回的schema

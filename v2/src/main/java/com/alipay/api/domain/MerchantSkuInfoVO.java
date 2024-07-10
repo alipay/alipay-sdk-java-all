@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家侧商品SKU信息
  *
  * @author auto create
- * @since 1.0, 2024-01-03 15:04:39
+ * @since 1.0, 2024-07-05 11:40:02
  */
 public class MerchantSkuInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6633981868277639958L;
+	private static final long serialVersionUID = 4558281799453473919L;
 
 	/**
 	 * 商家侧商品属性信息
@@ -22,6 +22,12 @@ public class MerchantSkuInfoVO extends AlipayObject {
 	@ApiListField("attrs")
 	@ApiField("merchant_item_attr_v_o")
 	private List<MerchantItemAttrVO> attrs;
+
+	/**
+	 * sku原价，分为单位。
+	 */
+	@ApiField("original_price")
+	private Long originalPrice;
 
 	/**
 	 * 商家侧sku ID，APPID 下全局唯一。
@@ -52,6 +58,13 @@ public class MerchantSkuInfoVO extends AlipayObject {
 	}
 	public void setAttrs(List<MerchantItemAttrVO> attrs) {
 		this.attrs = attrs;
+	}
+
+	public Long getOriginalPrice() {
+		return this.originalPrice;
+	}
+	public void setOriginalPrice(Long originalPrice) {
+		this.originalPrice = originalPrice;
 	}
 
 	public String getOutSkuId() {

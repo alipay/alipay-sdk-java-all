@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.trans.invoice.fromisvnotify.modify request
  * 
  * @author auto create
- * @since 1.0, 2022-07-07 10:49:23
+ * @since 1.0, 2024-07-04 17:32:00
  */
 public class AlipayFundTransInvoiceFromisvnotifyModifyRequest implements AlipayRequest<AlipayFundTransInvoiceFromisvnotifyModifyResponse> {
 

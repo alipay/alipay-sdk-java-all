@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayBusinessOrderOrderinfoHotelSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7234586431946125421L;
+	private static final long serialVersionUID = 7561764979763971879L;
 
 	/**
 	 * 订单总金额（不包含任何优惠的金额）

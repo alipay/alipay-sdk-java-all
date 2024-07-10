@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.kms.baking.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-24 21:14:03
+ * @since 1.0, 2024-07-04 19:33:28
  */
 public class KoubeiCateringKmsBakingSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5261348958594748727L;
+	private static final long serialVersionUID = 6297377534422674544L;
 
 	/** 
 	 * 核对提示信息

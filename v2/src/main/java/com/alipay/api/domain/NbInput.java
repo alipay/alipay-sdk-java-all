@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用户输入
  *
  * @author auto create
- * @since 1.0, 2024-05-27 12:09:56
+ * @since 1.0, 2024-07-05 10:28:52
  */
 public class NbInput extends AlipayObject {
 
-	private static final long serialVersionUID = 8637968613261947388L;
+	private static final long serialVersionUID = 8332727535548645351L;
 
 	/**
 	 * 变量名称
@@ -23,13 +23,13 @@ public class NbInput extends AlipayObject {
 	private String label;
 
 	/**
-	 * 最大长度
+	 * 最大长度，单位字符
 	 */
 	@ApiField("max_length")
 	private Long maxLength;
 
 	/**
-	 * 用户输入变量值的下拉选项列表
+	 * 用户输入变量值的自定义下拉选项列表
 	 */
 	@ApiListField("options")
 	@ApiField("string")
@@ -54,7 +54,7 @@ public class NbInput extends AlipayObject {
 	private String variable;
 
 	/**
-	 * 权重
+	 * 权重比例，单位百分比
 	 */
 	@ApiField("weight")
 	private String weight;

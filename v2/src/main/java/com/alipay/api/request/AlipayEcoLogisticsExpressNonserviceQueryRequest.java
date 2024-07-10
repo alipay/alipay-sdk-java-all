@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.logistics.express.nonservice.query request
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 17:45:01
+ * @since 1.0, 2024-07-04 17:31:56
  */
 public class AlipayEcoLogisticsExpressNonserviceQueryRequest implements AlipayRequest<AlipayEcoLogisticsExpressNonserviceQueryResponse> {
 

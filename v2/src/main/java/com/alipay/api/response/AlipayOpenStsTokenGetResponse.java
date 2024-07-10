@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sts.token.get response.
  * 
  * @author auto create
- * @since 1.0, 2021-02-26 16:57:31
+ * @since 1.0, 2024-07-04 16:38:05
  */
 public class AlipayOpenStsTokenGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5479832793791216771L;
+	private static final long serialVersionUID = 1771882257992846873L;
 
 	/** 
 	 * 安全令牌失效时间（1970年1月1日00:00:00开始算起的毫秒数）

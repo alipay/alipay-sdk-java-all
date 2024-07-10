@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.innerbaseinfo.categorytree.query request
  * 
  * @author auto create
- * @since 1.0, 2024-04-23 10:30:26
+ * @since 1.0, 2024-07-04 15:51:36
  */
 public class AlipayOpenMiniInnerbaseinfoCategorytreeQueryRequest implements AlipayRequest<AlipayOpenMiniInnerbaseinfoCategorytreeQueryResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.isponetest.wzwtest.wzwtest.bind response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-06 19:21:44
+ * @since 1.0, 2024-07-04 17:41:15
  */
 public class AlipayIsponetestWzwtestWzwtestBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3794715714872737411L;
+	private static final long serialVersionUID = 1843733469639611653L;
 
 	
 

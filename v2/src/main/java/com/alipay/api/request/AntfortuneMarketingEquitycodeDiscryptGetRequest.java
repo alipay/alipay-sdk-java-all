@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: antfortune.marketing.equitycode.discrypt.get request
  * 
  * @author auto create
- * @since 1.0, 2024-05-13 14:39:15
+ * @since 1.0, 2024-07-04 19:33:18
  */
 public class AntfortuneMarketingEquitycodeDiscryptGetRequest implements AlipayRequest<AntfortuneMarketingEquitycodeDiscryptGetResponse> {
 

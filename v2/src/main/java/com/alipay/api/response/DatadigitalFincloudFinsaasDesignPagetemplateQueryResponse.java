@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.fincloud.finsaas.design.pagetemplate.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 16:55:52
+ * @since 1.0, 2024-07-04 19:33:33
  */
 public class DatadigitalFincloudFinsaasDesignPagetemplateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8379238117764833284L;
+	private static final long serialVersionUID = 1356778834148395717L;
 
 	/** 
 	 * 模版code

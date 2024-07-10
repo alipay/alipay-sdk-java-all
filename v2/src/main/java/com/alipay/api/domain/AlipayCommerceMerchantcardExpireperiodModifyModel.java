@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订购单延期
  *
  * @author auto create
- * @since 1.0, 2024-05-10 16:54:15
+ * @since 1.0, 2024-07-05 14:07:50
  */
 public class AlipayCommerceMerchantcardExpireperiodModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4763691686367143914L;
+	private static final long serialVersionUID = 5589417761749592329L;
 
 	/**
 	 * 当industry_solution_type为TIMES_CARD时使用、代表将原有的有效期延期到这个时间点，时间格式是yyyy-MM-dd HH:mm:ss
@@ -22,7 +22,7 @@ public class AlipayCommerceMerchantcardExpireperiodModifyModel extends AlipayObj
 	private Date appointDate;
 
 	/**
-	 * 订购单ID
+	 * 订单ID
 	 */
 	@ApiField("card_id")
 	private String cardId;

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RatePlanLabel extends AlipayObject {
 
-	private static final long serialVersionUID = 1582882856944148994L;
+	private static final long serialVersionUID = 3737914527226485199L;
 
 	/**
 	 * 标签类别

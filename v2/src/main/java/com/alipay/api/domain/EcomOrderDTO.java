@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 场景开放平台电商订单模型
  *
  * @author auto create
- * @since 1.0, 2024-03-25 11:17:35
+ * @since 1.0, 2024-07-09 14:47:50
  */
 public class EcomOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4265692576649448768L;
+	private static final long serialVersionUID = 2568665974934845144L;
 
 	/**
 	 * 实际支付金额，单位：分
@@ -72,6 +72,13 @@ public class EcomOrderDTO extends AlipayObject {
 	private Long discountFee;
 
 	/**
+	 * 驾驶人列表
+	 */
+	@ApiListField("drivers")
+	@ApiField("ins_open_user_d_t_o")
+	private List<InsOpenUserDTO> drivers;
+
+	/**
 	 * 扩展信息
 	 */
 	@ApiField("ext_info")
@@ -114,6 +121,18 @@ public class EcomOrderDTO extends AlipayObject {
 	private Long itemTotalValue;
 
 	/**
+	 * 行程列表
+	 */
+	@ApiField("itineraries")
+	private InsTransportItineraryDTO itineraries;
+
+	/**
+	 * 出租人
+	 */
+	@ApiField("leaser")
+	private InsOpenUserDTO leaser;
+
+	/**
 	 * 物流单
 	 */
 	@ApiField("logistics_order")
@@ -126,6 +145,12 @@ public class EcomOrderDTO extends AlipayObject {
 	private String mainOrderId;
 
 	/**
+	 * 订单结束时间
+	 */
+	@ApiField("order_end_time")
+	private Date orderEndTime;
+
+	/**
 	 * 订单金额,单位：分
 	 */
 	@ApiField("order_fee")
@@ -136,6 +161,12 @@ public class EcomOrderDTO extends AlipayObject {
 	 */
 	@ApiField("order_id")
 	private String orderId;
+
+	/**
+	 * 订单开始时间
+	 */
+	@ApiField("order_start_time")
+	private Date orderStartTime;
 
 	/**
 	 * 订单类型：MAIN_AND_DETAIL（主子一体订单）, MAIN（主订单）,DETAIL（子订单）
@@ -185,6 +216,13 @@ public class EcomOrderDTO extends AlipayObject {
 	 */
 	@ApiField("trade_end_time")
 	private Date tradeEndTime;
+
+	/**
+	 * 交易图片
+	 */
+	@ApiListField("trade_pictures")
+	@ApiField("string")
+	private List<String> tradePictures;
 
 	/**
 	 * 交易开始时间
@@ -255,6 +293,13 @@ public class EcomOrderDTO extends AlipayObject {
 		this.discountFee = discountFee;
 	}
 
+	public List<InsOpenUserDTO> getDrivers() {
+		return this.drivers;
+	}
+	public void setDrivers(List<InsOpenUserDTO> drivers) {
+		this.drivers = drivers;
+	}
+
 	public String getExtInfo() {
 		return this.extInfo;
 	}
@@ -304,6 +349,20 @@ public class EcomOrderDTO extends AlipayObject {
 		this.itemTotalValue = itemTotalValue;
 	}
 
+	public InsTransportItineraryDTO getItineraries() {
+		return this.itineraries;
+	}
+	public void setItineraries(InsTransportItineraryDTO itineraries) {
+		this.itineraries = itineraries;
+	}
+
+	public InsOpenUserDTO getLeaser() {
+		return this.leaser;
+	}
+	public void setLeaser(InsOpenUserDTO leaser) {
+		this.leaser = leaser;
+	}
+
 	public EcomLogisticsOrderDTO getLogisticsOrder() {
 		return this.logisticsOrder;
 	}
@@ -318,6 +377,13 @@ public class EcomOrderDTO extends AlipayObject {
 		this.mainOrderId = mainOrderId;
 	}
 
+	public Date getOrderEndTime() {
+		return this.orderEndTime;
+	}
+	public void setOrderEndTime(Date orderEndTime) {
+		this.orderEndTime = orderEndTime;
+	}
+
 	public Long getOrderFee() {
 		return this.orderFee;
 	}
@@ -330,6 +396,13 @@ public class EcomOrderDTO extends AlipayObject {
 	}
 	public void setOrderId(String orderId) {
 		this.orderId = orderId;
+	}
+
+	public Date getOrderStartTime() {
+		return this.orderStartTime;
+	}
+	public void setOrderStartTime(Date orderStartTime) {
+		this.orderStartTime = orderStartTime;
 	}
 
 	public String getOrderType() {
@@ -386,6 +459,13 @@ public class EcomOrderDTO extends AlipayObject {
 	}
 	public void setTradeEndTime(Date tradeEndTime) {
 		this.tradeEndTime = tradeEndTime;
+	}
+
+	public List<String> getTradePictures() {
+		return this.tradePictures;
+	}
+	public void setTradePictures(List<String> tradePictures) {
+		this.tradePictures = tradePictures;
 	}
 
 	public Date getTradeStartTime() {

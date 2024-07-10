@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.coupon.wufu.live.accept response.
  * 
  * @author auto create
- * @since 1.0, 2021-01-14 17:25:17
+ * @since 1.0, 2024-07-04 17:31:54
  */
 public class AlipayFundCouponWufuLiveAcceptResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7195442929312636971L;
+	private static final long serialVersionUID = 4447357547694533712L;
 
 	/** 
 	 * 奖品列表信息，prized=true时取第一个

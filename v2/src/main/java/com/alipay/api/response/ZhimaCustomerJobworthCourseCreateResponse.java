@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.customer.jobworth.course.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-23 20:21:44
+ * @since 1.0, 2024-07-04 19:39:11
  */
 public class ZhimaCustomerJobworthCourseCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6216888154752195857L;
+	private static final long serialVersionUID = 6546753147433891951L;
 
 	
 

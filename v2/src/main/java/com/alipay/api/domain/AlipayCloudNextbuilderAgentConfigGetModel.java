@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取agent模型配置详情
  *
  * @author auto create
- * @since 1.0, 2024-06-18 14:35:49
+ * @since 1.0, 2024-07-05 10:28:52
  */
 public class AlipayCloudNextbuilderAgentConfigGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6149123837951376696L;
+	private static final long serialVersionUID = 2857325355981372646L;
 
 	/**
 	 * 创作者平台agentId

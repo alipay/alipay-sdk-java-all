@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账单、转化查询结果数据
  *
  * @author auto create
- * @since 1.0, 2023-08-17 15:01:16
+ * @since 1.0, 2024-07-10 15:08:42
  */
 public class DataBillResult extends AlipayObject {
 
-	private static final long serialVersionUID = 7887451483212682751L;
+	private static final long serialVersionUID = 4562561598316935778L;
 
 	/**
 	 * 活动名
@@ -64,7 +64,7 @@ public class DataBillResult extends AlipayObject {
 	private Date payTime;
 
 	/**
-	 * 实际交易金额，提现金额
+	 * 实际交易金额，提现金额，单位分
 	 */
 	@ApiField("real_pay_amt")
 	private String realPayAmt;
@@ -74,6 +74,12 @@ public class DataBillResult extends AlipayObject {
 	 */
 	@ApiField("trade_total_amt")
 	private String tradeTotalAmt;
+
+	/**
+	 * 账单交易类型(支付转化和交易退款)
+	 */
+	@ApiField("transaction_type")
+	private String transactionType;
 
 	/**
 	 * 用户交易笔数排序
@@ -149,6 +155,13 @@ public class DataBillResult extends AlipayObject {
 	}
 	public void setTradeTotalAmt(String tradeTotalAmt) {
 		this.tradeTotalAmt = tradeTotalAmt;
+	}
+
+	public String getTransactionType() {
+		return this.transactionType;
+	}
+	public void setTransactionType(String transactionType) {
+		this.transactionType = transactionType;
 	}
 
 	public String getUserTrdCntRank() {

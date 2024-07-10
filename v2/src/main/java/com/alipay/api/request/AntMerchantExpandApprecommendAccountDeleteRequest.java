@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.expand.apprecommend.account.delete request
  * 
  * @author auto create
- * @since 1.0, 2024-01-19 14:31:56
+ * @since 1.0, 2024-07-04 19:33:17
  */
 public class AntMerchantExpandApprecommendAccountDeleteRequest implements AlipayRequest<AntMerchantExpandApprecommendAccountDeleteResponse> {
 

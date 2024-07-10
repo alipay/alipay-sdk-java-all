@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.student.identity.verify response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-19 17:39:54
+ * @since 1.0, 2024-07-04 16:55:36
  */
 public class AlipayCommerceEducateStudentIdentityVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2239454979131422114L;
+	private static final long serialVersionUID = 3553574625928455249L;
 
 	/** 
 	 * 签名

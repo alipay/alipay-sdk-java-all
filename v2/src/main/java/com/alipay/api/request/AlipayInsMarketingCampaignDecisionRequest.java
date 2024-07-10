@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.marketing.campaign.decision request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 07:49:22
+ * @since 1.0, 2024-07-04 17:31:55
  */
 public class AlipayInsMarketingCampaignDecisionRequest implements AlipayRequest<AlipayInsMarketingCampaignDecisionResponse> {
 

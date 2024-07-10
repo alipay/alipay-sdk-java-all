@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.certify.rarename.detect response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:29:15
+ * @since 1.0, 2024-07-04 19:33:14
  */
 public class AlipayUserCertifyRarenameDetectResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3743979368148283925L;
+	private static final long serialVersionUID = 7553419231419433876L;
 
 	/** 
 	 * 业务结果码，取值: IS_RARE_NAME(是特殊名字), NOT_RARE_NAME(不是特殊名字), POSSIBLE_RARE_NAME(可能是特殊名字)。

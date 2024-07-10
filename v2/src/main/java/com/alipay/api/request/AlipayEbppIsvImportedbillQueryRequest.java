@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.isv.importedbill.query request
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 00:00:53
+ * @since 1.0, 2024-07-04 17:31:52
  */
 public class AlipayEbppIsvImportedbillQueryRequest implements AlipayRequest<AlipayEbppIsvImportedbillQueryResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.signflows.url.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-11 18:47:42
+ * @since 1.0, 2024-07-04 17:31:59
  */
 public class AlipayEcoSignflowsUrlQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6138219533775588771L;
+	private static final long serialVersionUID = 6751776537548446881L;
 
 	/** 
 	 * 预览短链地址（30天有效）

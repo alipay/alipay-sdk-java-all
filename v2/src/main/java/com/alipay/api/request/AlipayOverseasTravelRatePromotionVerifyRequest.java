@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.overseas.travel.rate.promotion.verify request
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:34:32
+ * @since 1.0, 2024-07-04 17:41:21
  */
 public class AlipayOverseasTravelRatePromotionVerifyRequest implements AlipayRequest<AlipayOverseasTravelRatePromotionVerifyResponse> {
 

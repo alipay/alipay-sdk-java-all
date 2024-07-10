@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.loanapply.userlist.upload response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-24 22:45:46
+ * @since 1.0, 2024-07-04 19:39:07
  */
 public class MybankCreditLoanapplyUserlistUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7574333896626898658L;
+	private static final long serialVersionUID = 7545596875534146778L;
 
 	/** 
 	 * 请求是否成功

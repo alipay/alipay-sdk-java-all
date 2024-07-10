@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.comm.msgto.ce.bind request
  * 
  * @author auto create
- * @since 1.0, 2023-08-25 17:26:42
+ * @since 1.0, 2024-07-04 16:54:59
  */
 public class AlipayBossCommMsgtoCeBindRequest implements AlipayRequest<AlipayBossCommMsgtoCeBindResponse> {
 

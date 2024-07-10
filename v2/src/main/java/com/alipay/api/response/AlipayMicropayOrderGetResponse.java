@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.micropay.order.get response.
  * 
  * @author auto create
- * @since 1.0, 2022-12-08 13:56:38
+ * @since 1.0, 2024-07-04 16:38:07
  */
 public class AlipayMicropayOrderGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1586839266111984812L;
+	private static final long serialVersionUID = 1499884736852397646L;
 
 	/** 
 	 * 冻结订单详情

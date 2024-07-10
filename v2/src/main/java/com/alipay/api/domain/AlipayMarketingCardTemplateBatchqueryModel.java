@@ -7,20 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员卡模板批量查询
  *
  * @author auto create
- * @since 1.0, 2024-04-10 16:32:45
+ * @since 1.0, 2024-07-04 16:06:15
  */
 public class AlipayMarketingCardTemplateBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6524747388898556838L;
+	private static final long serialVersionUID = 4798898652213558836L;
 
 	/**
-	 * 查询起始页码，第一页为 1。
+	 * 查询起始页码，如第1页，单位：/页
 	 */
 	@ApiField("page_no")
 	private Long pageNo;
 
 	/**
-	 * 每页数据大小，默认 20条，最大支持20条。
+	 * 每页数据大小，默认 20条，最大支持20个，单位：/个
 	 */
 	@ApiField("page_size")
 	private Long pageSize;

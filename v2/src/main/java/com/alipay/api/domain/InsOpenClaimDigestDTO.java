@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景开放平台电商 理赔单摘要模型
  *
  * @author auto create
- * @since 1.0, 2022-08-19 15:19:16
+ * @since 1.0, 2024-07-09 14:47:50
  */
 public class InsOpenClaimDigestDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4234443174174736579L;
+	private static final long serialVersionUID = 8637682844441269412L;
 
 	/**
 	 * 报案时间
@@ -34,7 +34,7 @@ public class InsOpenClaimDigestDTO extends AlipayObject {
 	private Date claimCancelTime;
 
 	/**
-	 * 赔付金额赔付成功之后有效
+	 * 赔付金额赔付成功之后有效（单位：分）
 	 */
 	@ApiField("claim_fee")
 	private Long claimFee;

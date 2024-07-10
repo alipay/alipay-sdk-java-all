@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.jhjtest.gray.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-24 15:21:52
+ * @since 1.0, 2024-07-04 19:33:08
  */
 public class AlipayPcreditJhjtestGrayQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2424391719465336882L;
+	private static final long serialVersionUID = 5729494682335197451L;
 
 	/** 
 	 * 11

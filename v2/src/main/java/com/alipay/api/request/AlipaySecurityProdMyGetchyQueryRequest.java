@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.my.getchy.query request
  * 
  * @author auto create
- * @since 1.0, 2022-01-29 11:33:41
+ * @since 1.0, 2024-07-04 19:33:18
  */
 public class AlipaySecurityProdMyGetchyQueryRequest implements AlipayRequest<AlipaySecurityProdMyGetchyQueryResponse> {
 

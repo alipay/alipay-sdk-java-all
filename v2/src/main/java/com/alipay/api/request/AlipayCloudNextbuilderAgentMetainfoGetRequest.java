@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.nextbuilder.agent.metainfo.get request
  * 
  * @author auto create
- * @since 1.0, 2024-05-23 20:27:02
+ * @since 1.0, 2024-07-05 16:42:05
  */
 public class AlipayCloudNextbuilderAgentMetainfoGetRequest implements AlipayRequest<AlipayCloudNextbuilderAgentMetainfoGetResponse> {
 

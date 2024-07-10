@@ -7,22 +7,24 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业查询借款申请记录
  *
  * @author auto create
- * @since 1.0, 2024-05-20 14:03:24
+ * @since 1.0, 2024-07-08 15:22:50
  */
 public class AlipayCommerceEcCreditLoanQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4591717985259769491L;
+	private static final long serialVersionUID = 7183362346769346672L;
 
 	/**
-	 * 共同账户ID
+	 * 共同账户ID 当前字段已废弃(历史兼容逻辑冗余字段增加了接口复杂性，统一移除)
 	 */
 	@ApiField("account_id")
+	@Deprecated
 	private String accountId;
 
 	/**
-	 * 授权签约协议号
+	 * 授权签约协议号 当前字段已废弃(历史兼容逻辑冗余字段增加了接口复杂性，统一移除)
 	 */
 	@ApiField("agreement_no")
+	@Deprecated
 	private String agreementNo;
 
 	/**
@@ -33,7 +35,7 @@ yyyy-MM-dd
 	private String endDate;
 
 	/**
-	 * 企业ID
+	 * 企业Id，企业入驻企业码时自动分配的用于唯一标识的编号
 	 */
 	@ApiField("enterprise_id")
 	private String enterpriseId;

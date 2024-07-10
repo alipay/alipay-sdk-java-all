@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.databiz.core.payment.ability.get request
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:28:34
+ * @since 1.0, 2024-07-04 20:47:02
  */
 public class AlipayDatabizCorePaymentAbilityGetRequest implements AlipayRequest<AlipayDatabizCorePaymentAbilityGetResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.oceanbase.obglobal.leadsmember.delete response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-07 15:29:04
+ * @since 1.0, 2024-07-04 19:33:27
  */
 public class AnttechOceanbaseObglobalLeadsmemberDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3313492731725945429L;
+	private static final long serialVersionUID = 5895842915282147772L;
 
 	/** 
 	 * 业务错误码

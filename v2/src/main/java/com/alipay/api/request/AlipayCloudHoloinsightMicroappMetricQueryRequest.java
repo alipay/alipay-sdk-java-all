@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.holoinsight.microapp.metric.query request
  * 
  * @author auto create
- * @since 1.0, 2024-02-21 15:16:38
+ * @since 1.0, 2024-07-04 16:55:07
  */
 public class AlipayCloudHoloinsightMicroappMetricQueryRequest implements AlipayRequest<AlipayCloudHoloinsightMicroappMetricQueryResponse> {
 

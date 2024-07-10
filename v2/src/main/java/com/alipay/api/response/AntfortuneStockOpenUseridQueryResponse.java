@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.stock.open.userid.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-28 00:29:07
+ * @since 1.0, 2024-07-04 19:33:12
  */
 public class AntfortuneStockOpenUseridQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1541335756454564853L;
+	private static final long serialVersionUID = 8521846159269188251L;
 
 	/** 
 	 * 用户证券签约协议号

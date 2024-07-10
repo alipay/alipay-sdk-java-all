@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 提现使用的扩展策略
  *
  * @author auto create
- * @since 1.0, 2023-12-01 15:47:43
+ * @since 1.0, 2024-07-04 22:19:49
  */
 public class ExtendStrategy extends AlipayObject {
 
-	private static final long serialVersionUID = 2385232753857836212L;
+	private static final long serialVersionUID = 1168721114751686443L;
 
 	/**
 	 * 账户信息

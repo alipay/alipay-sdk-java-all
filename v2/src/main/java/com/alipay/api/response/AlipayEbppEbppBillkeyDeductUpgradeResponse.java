@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.ebpp.billkey.deduct.upgrade response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 20:02:03
+ * @since 1.0, 2024-07-04 17:31:51
  */
 public class AlipayEbppEbppBillkeyDeductUpgradeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4133256465215822511L;
+	private static final long serialVersionUID = 1667688171169845635L;
 
 	/** 
 	 * 提交成功or失败

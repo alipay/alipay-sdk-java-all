@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.twostage.indirect.use request
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:29:55
+ * @since 1.0, 2024-07-04 19:33:09
  */
 public class AlipayUserTwostageIndirectUseRequest implements AlipayRequest<AlipayUserTwostageIndirectUseResponse> {
 

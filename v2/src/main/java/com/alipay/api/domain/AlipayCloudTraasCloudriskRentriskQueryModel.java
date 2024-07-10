@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序云智能租赁风控查询
  *
  * @author auto create
- * @since 1.0, 2024-05-31 17:04:22
+ * @since 1.0, 2024-07-08 21:59:50
  */
 public class AlipayCloudTraasCloudriskRentriskQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8759752167874119787L;
+	private static final long serialVersionUID = 2434344597372268156L;
 
 	/**
 	 * 身份证号 当前字段已废弃(请使用 customer_type 和 customer_id 参数)
@@ -36,6 +36,13 @@ public class AlipayCloudTraasCloudriskRentriskQueryModel extends AlipayObject {
 	 */
 	@ApiField("customer_id")
 	private String customerId;
+
+	/**
+	 * 客户支付宝OPENID
+当customer_type=ALIPAY_OPENID时，传入支付宝账户OPENID
+	 */
+	@ApiField("customer_open_id")
+	private String customerOpenId;
 
 	/**
 	 * 客户标识类型
@@ -111,6 +118,13 @@ public class AlipayCloudTraasCloudriskRentriskQueryModel extends AlipayObject {
 	}
 	public void setCustomerId(String customerId) {
 		this.customerId = customerId;
+	}
+
+	public String getCustomerOpenId() {
+		return this.customerOpenId;
+	}
+	public void setCustomerOpenId(String customerOpenId) {
+		this.customerOpenId = customerOpenId;
 	}
 
 	public String getCustomerType() {

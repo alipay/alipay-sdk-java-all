@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCloudCloudbaseAntifloodRuleDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2595238113825845926L;
+	private static final long serialVersionUID = 7558743279466712856L;
 
 	/**
 	 * 小程序id

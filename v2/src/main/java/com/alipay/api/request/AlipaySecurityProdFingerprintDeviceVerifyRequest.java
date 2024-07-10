@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.fingerprint.device.verify request
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 03:58:54
+ * @since 1.0, 2024-07-04 15:51:37
  */
 public class AlipaySecurityProdFingerprintDeviceVerifyRequest implements AlipayRequest<AlipaySecurityProdFingerprintDeviceVerifyResponse> {
 

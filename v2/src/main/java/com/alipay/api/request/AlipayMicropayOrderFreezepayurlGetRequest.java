@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.micropay.order.freezepayurl.get request
  * 
  * @author auto create
- * @since 1.0, 2021-12-06 09:56:13
+ * @since 1.0, 2024-07-04 16:38:07
  */
 public class AlipayMicropayOrderFreezepayurlGetRequest implements AlipayRequest<AlipayMicropayOrderFreezepayurlGetResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.asset.voucherprod.charge.send response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-27 13:57:41
+ * @since 1.0, 2024-07-04 15:51:39
  */
 public class AlipayAssetVoucherprodChargeSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5227157814933585352L;
+	private static final long serialVersionUID = 7641248377434622139L;
 
 	/** 
 	 * 资产id编号

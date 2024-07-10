@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.competition.errorresult.notify response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-23 21:12:28
+ * @since 1.0, 2024-07-04 16:55:10
  */
 public class AlipayCommerceEducateCompetitionErrorresultNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5311219146881535153L;
+	private static final long serialVersionUID = 3323751347625383435L;
 
 	
 

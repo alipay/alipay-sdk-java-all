@@ -7,26 +7,30 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业码授信资产授权申请
  *
  * @author auto create
- * @since 1.0, 2023-10-10 14:45:52
+ * @since 1.0, 2024-07-08 14:33:51
  */
 public class AlipayCommerceEcAssetAuthorizeApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1588315851129831748L;
+	private static final long serialVersionUID = 1679547716887399426L;
 
 	/**
-	 * 共同账户ID
+	 * 共同账户ID 当前字段已废弃(account_id及agreement_no兼容字段不再需要)
 	 */
 	@ApiField("account_id")
+	@Deprecated
 	private String accountId;
 
 	/**
-	 * 授权签约协议号
+	 * 授权签约协议号 当前字段已废弃(account_id及agreement_no兼容字段不再需要)
 	 */
 	@ApiField("agreement_no")
+	@Deprecated
 	private String agreementNo;
 
 	/**
-	 * 签约类型
+	 * 资产类型，每个类型都有对应的一组签约操作，关联关系如下：
+a. 企业余额：因公付签约（ENT_PAY_SIGN）；
+b. 上海华瑞银行授信：华瑞银行授信申请（ENT_SHRB_CREDIT）-> 因公付签约（ENT_PAY_SIGN）；
 	 */
 	@ApiField("asset_type")
 	private String assetType;
@@ -38,9 +42,10 @@ public class AlipayCommerceEcAssetAuthorizeApplyModel extends AlipayObject {
 	private String authType;
 
 	/**
-	 * 法人支付宝登录账号
+	 * 企业法人支付宝登录账号，资产申请人在法人授信申请流程填写，系统会对其进行有效性校验 当前字段已废弃(资产类型"法人信用卡"不支持，其流程需要的法人账号信息也不再需要)
 	 */
 	@ApiField("ebe_alipay_logon_id")
+	@Deprecated
 	private String ebeAlipayLogonId;
 
 	/**
@@ -50,13 +55,13 @@ public class AlipayCommerceEcAssetAuthorizeApplyModel extends AlipayObject {
 	private String entAlipayLogonId;
 
 	/**
-	 * 企业ID
+	 * 企业Id，企业入驻企业码时自动分配的企业身份唯一标识
 	 */
 	@ApiField("enterprise_id")
 	private String enterpriseId;
 
 	/**
-	 * 外部业务号
+	 * 外部业务编号，调用方生成的用于唯一标识授信申请的单据号
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;

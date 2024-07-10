@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.oceanbase.obglobal.contact.delete response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-17 17:16:46
+ * @since 1.0, 2024-07-04 19:33:33
  */
 public class AnttechOceanbaseObglobalContactDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6233113365499659741L;
+	private static final long serialVersionUID = 2179873786569488746L;
 
 	/** 
 	 * 业务错误码

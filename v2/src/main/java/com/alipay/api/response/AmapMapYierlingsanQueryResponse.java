@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: amap.map.yierlingsan.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 22:46:15
+ * @since 1.0, 2024-07-04 19:33:15
  */
 public class AmapMapYierlingsanQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7175948766937128733L;
+	private static final long serialVersionUID = 7797517856196868178L;
 
 	
 

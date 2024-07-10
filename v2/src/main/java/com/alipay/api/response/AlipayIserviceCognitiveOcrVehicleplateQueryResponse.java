@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.cognitive.ocr.vehicleplate.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-24 21:57:27
+ * @since 1.0, 2024-07-04 17:31:59
  */
 public class AlipayIserviceCognitiveOcrVehicleplateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4887718112816452194L;
+	private static final long serialVersionUID = 8642316115146376295L;
 
 	/** 
 	 * 服务识别失败后对应的详细错误原因

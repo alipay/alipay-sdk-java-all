@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.trust.user.report.get request
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 04:18:00
+ * @since 1.0, 2024-07-04 19:33:11
  */
 public class AlipayTrustUserReportGetRequest implements AlipayRequest<AlipayTrustUserReportGetResponse> {
 

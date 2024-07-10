@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * NFC服务机初始化
  *
  * @author auto create
- * @since 1.0, 2024-05-27 16:00:22
+ * @since 1.0, 2024-07-03 20:23:15
  */
 public class AlipayCommerceCityfacilitatorIotbspFwjnfcSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1739496851836182367L;
+	private static final long serialVersionUID = 4133721832938163446L;
 
 	/**
 	 * 贴一贴后需要跳转的小程序appId
@@ -20,7 +20,7 @@ public class AlipayCommerceCityfacilitatorIotbspFwjnfcSyncModel extends AlipayOb
 	private String merchantAppId;
 
 	/**
-	 * nfc设备BizTid
+	 * nfc设备BizTid，为NFC模块生成的设备唯一ID，非必填属性
 	 */
 	@ApiField("nfc_biz_tid")
 	private String nfcBizTid;
@@ -44,7 +44,7 @@ public class AlipayCommerceCityfacilitatorIotbspFwjnfcSyncModel extends AlipayOb
 	private String params;
 
 	/**
-	 * pid
+	 * 调用方的商户pid
 	 */
 	@ApiField("pid")
 	private String pid;
@@ -62,13 +62,13 @@ public class AlipayCommerceCityfacilitatorIotbspFwjnfcSyncModel extends AlipayOb
 	private String routePage;
 
 	/**
-	 * 上位机biztid
+	 * 上位机biztid，，为上位机设备唯一ID
 	 */
 	@ApiField("upper_biz_tid")
 	private String upperBizTid;
 
 	/**
-	 * 上位机sn
+	 * 上位机sn，为商户设备的设备唯一ID
 	 */
 	@ApiField("upper_sn")
 	private String upperSn;

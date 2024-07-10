@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.mycar.commercialization.certificate.freeze request
  * 
  * @author auto create
- * @since 1.0, 2023-08-16 11:21:40
+ * @since 1.0, 2024-07-04 17:31:52
  */
 public class AlipayEcoMycarCommercializationCertificateFreezeRequest implements AlipayRequest<AlipayEcoMycarCommercializationCertificateFreezeResponse> {
 

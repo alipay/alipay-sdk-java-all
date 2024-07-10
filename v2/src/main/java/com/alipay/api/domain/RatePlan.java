@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 价格计划
  *
  * @author auto create
- * @since 1.0, 2024-06-17 11:38:49
+ * @since 1.0, 2024-07-05 18:25:10
  */
 public class RatePlan extends AlipayObject {
 
-	private static final long serialVersionUID = 4558868653765917481L;
+	private static final long serialVersionUID = 6124144578848239882L;
 
 	/**
 	 * 对应的预订规则编号列表
@@ -89,6 +89,12 @@ PREPAY-预付
 	 */
 	@ApiField("pay_type")
 	private String payType;
+
+	/**
+	 * 价格计划中对应的套餐信息，目前支持一个价格计划对应一个套餐，可以为空
+	 */
+	@ApiField("pkg_product_ids")
+	private String pkgProductIds;
 
 	/**
 	 * 价格计划id
@@ -210,6 +216,13 @@ false:失效
 	}
 	public void setPayType(String payType) {
 		this.payType = payType;
+	}
+
+	public String getPkgProductIds() {
+		return this.pkgProductIds;
+	}
+	public void setPkgProductIds(String pkgProductIds) {
+		this.pkgProductIds = pkgProductIds;
 	}
 
 	public String getRatePlanId() {

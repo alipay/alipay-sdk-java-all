@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.mychy.query request
  * 
  * @author auto create
- * @since 1.0, 2021-09-02 01:07:51
+ * @since 1.0, 2024-07-04 19:33:10
  */
 public class AlipaySecurityProdMychyQueryRequest implements AlipayRequest<AlipaySecurityProdMychyQueryResponse> {
 

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.data.model.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 09:21:47
+ * @since 1.0, 2024-07-04 17:41:16
  */
 public class AlipayMarketingDataModelQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3357832724181195518L;
+	private static final long serialVersionUID = 8449571449858694556L;
 
 	/** 
 	 * 模型数据。此为参数列表，输出参数为模型字段及模型结果值; 用于数据实验室算法模型对外输出

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.overseas.travel.intl.bizarea.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-11-02 17:06:49
+ * @since 1.0, 2024-07-04 17:41:21
  */
 public class AlipayOverseasTravelIntlBizareaSyncRequest implements AlipayRequest<AlipayOverseasTravelIntlBizareaSyncResponse> {
 

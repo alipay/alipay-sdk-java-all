@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.oceanbase.obglobal.listcalldetails.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2023-10-23 13:48:47
+ * @since 1.0, 2024-07-04 19:33:19
  */
 public class AnttechOceanbaseObglobalListcalldetailsBatchqueryRequest implements AlipayRequest<AnttechOceanbaseObglobalListcalldetailsBatchqueryResponse> {
 

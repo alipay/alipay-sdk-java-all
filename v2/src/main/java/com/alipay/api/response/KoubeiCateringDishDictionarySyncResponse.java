@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.catering.dish.dictionary.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 00:58:40
+ * @since 1.0, 2024-07-04 19:36:28
  */
 public class KoubeiCateringDishDictionarySyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1139585236891678337L;
+	private static final long serialVersionUID = 1569421115958963667L;
 
 	/** 
 	 * 字典的数据id

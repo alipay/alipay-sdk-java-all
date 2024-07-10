@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.finance.yulibao.capital.ransom response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 02:36:55
+ * @since 1.0, 2024-07-04 19:39:08
  */
 public class MybankFinanceYulibaoCapitalRansomResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7738595239184423998L;
+	private static final long serialVersionUID = 2683529394681478321L;
 
 	/** 
 	 * 余利宝内部的交易流水号

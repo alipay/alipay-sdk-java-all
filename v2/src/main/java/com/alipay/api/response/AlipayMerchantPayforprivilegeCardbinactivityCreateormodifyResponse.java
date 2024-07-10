@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.payforprivilege.cardbinactivity.createormodify response.
  * 
  * @author auto create
- * @since 1.0, 2021-09-10 14:52:45
+ * @since 1.0, 2024-07-04 17:41:18
  */
 public class AlipayMerchantPayforprivilegeCardbinactivityCreateormodifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5297846378216968142L;
+	private static final long serialVersionUID = 3665838193377416353L;
 
 	/** 
 	 * 新增/修改的结果

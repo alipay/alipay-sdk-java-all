@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.indirect.tiansuo.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 20:33:07
+ * @since 1.0, 2024-07-04 15:51:39
  */
 public class AntMerchantExpandIndirectTiansuoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2355526134784681574L;
+	private static final long serialVersionUID = 4588999631176355567L;
 
 	/** 
 	 * 间连商户pid和对应名称信息

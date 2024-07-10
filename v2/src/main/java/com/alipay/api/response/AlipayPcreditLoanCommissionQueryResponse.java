@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.commission.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 02:32:54
+ * @since 1.0, 2024-07-04 19:33:35
  */
 public class AlipayPcreditLoanCommissionQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8721814971817826417L;
+	private static final long serialVersionUID = 2665995234269953394L;
 
 	/** 
 	 * 活动期间累计佣金金额

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCertificateUserBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8273573214526621832L;
+	private static final long serialVersionUID = 1736738863337436599L;
 
 	/**
 	 * 凭证归属的商户id。该参数为空时取当前请求商户id

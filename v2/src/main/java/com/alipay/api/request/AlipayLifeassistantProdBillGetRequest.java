@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.lifeassistant.prod.bill.get request
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:25:18
+ * @since 1.0, 2024-07-04 17:41:15
  */
 public class AlipayLifeassistantProdBillGetRequest implements AlipayRequest<AlipayLifeassistantProdBillGetResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.poi.powerbank.upload response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 21:19:53
+ * @since 1.0, 2024-07-04 16:56:37
  */
 public class AlipayCommercePoiPowerbankUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8365186223738626995L;
+	private static final long serialVersionUID = 7152919231147563979L;
 
 	
 

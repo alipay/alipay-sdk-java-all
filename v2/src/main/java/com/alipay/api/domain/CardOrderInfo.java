@@ -8,14 +8,14 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * 订购单信息
+ * 订单信息
  *
  * @author auto create
- * @since 1.0, 2024-05-18 10:43:13
+ * @since 1.0, 2024-07-05 14:07:50
  */
 public class CardOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2336588643121884792L;
+	private static final long serialVersionUID = 8295881733264151379L;
 
 	/**
 	 * 用于区分订购单的取消类型
@@ -24,13 +24,13 @@ public class CardOrderInfo extends AlipayObject {
 	private String cancelType;
 
 	/**
-	 * 订购单ID
+	 * 订单ID
 	 */
 	@ApiField("card_id")
 	private String cardId;
 
 	/**
-	 * 订购单状态
+	 * 订单状态
 	 */
 	@ApiField("card_status")
 	private String cardStatus;

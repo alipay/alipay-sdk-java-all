@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.search.brandbox.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 00:15:10
+ * @since 1.0, 2024-07-04 17:41:23
  */
 public class AlipayOpenSearchBrandboxQueryRequest implements AlipayRequest<AlipayOpenSearchBrandboxQueryResponse> {
 

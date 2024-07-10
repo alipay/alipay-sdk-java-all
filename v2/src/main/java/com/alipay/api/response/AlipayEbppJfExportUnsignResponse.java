@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.jf.export.unsign response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-27 14:47:03
+ * @since 1.0, 2024-07-04 17:31:52
  */
 public class AlipayEbppJfExportUnsignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8233683174893848142L;
+	private static final long serialVersionUID = 2156566767235829689L;
 
 	/** 
 	 * 是否成功

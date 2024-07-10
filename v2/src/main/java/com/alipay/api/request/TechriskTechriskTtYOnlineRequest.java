@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: techrisk.techrisk.tt.y.online request
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 18:06:49
+ * @since 1.0, 2024-07-04 19:39:12
  */
 public class TechriskTechriskTtYOnlineRequest implements AlipayRequest<TechriskTechriskTtYOnlineResponse> {
 

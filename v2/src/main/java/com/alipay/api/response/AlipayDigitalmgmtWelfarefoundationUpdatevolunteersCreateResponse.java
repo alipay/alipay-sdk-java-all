@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.digitalmgmt.welfarefoundation.updatevolunteers.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:28:48
+ * @since 1.0, 2024-07-04 17:31:50
  */
 public class AlipayDigitalmgmtWelfarefoundationUpdatevolunteersCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8679828212816374921L;
+	private static final long serialVersionUID = 3653673574714438528L;
 
 	/** 
 	 * 操作结果

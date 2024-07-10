@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.auto.autoaftermarket.attachment.upload response.
  * 
  * @author auto create
- * @since 1.0, 2019-10-31 16:48:24
+ * @since 1.0, 2024-07-04 16:38:07
  */
 public class AlipayInsAutoAutoaftermarketAttachmentUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1382966729218156986L;
+	private static final long serialVersionUID = 3464571522412829263L;
 
 	
 

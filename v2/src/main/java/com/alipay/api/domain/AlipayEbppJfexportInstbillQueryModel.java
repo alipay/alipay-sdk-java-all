@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询缴费业务输出的机构账单
  *
  * @author auto create
- * @since 1.0, 2021-01-25 14:55:12
+ * @since 1.0, 2024-07-03 10:54:49
  */
 public class AlipayEbppJfexportInstbillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1445889165115625246L;
+	private static final long serialVersionUID = 6197248437429937847L;
 
 	/**
 	 * 账期

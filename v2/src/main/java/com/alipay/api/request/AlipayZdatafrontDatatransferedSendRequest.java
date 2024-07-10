@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.zdatafront.datatransfered.send request
  * 
  * @author auto create
- * @since 1.0, 2021-09-29 16:32:13
+ * @since 1.0, 2024-07-04 19:33:17
  */
 public class AlipayZdatafrontDatatransferedSendRequest implements AlipayRequest<AlipayZdatafrontDatatransferedSendResponse> {
 

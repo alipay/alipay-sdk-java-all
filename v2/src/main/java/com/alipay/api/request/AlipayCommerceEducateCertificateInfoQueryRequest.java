@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.certificate.info.query request
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 03:45:08
+ * @since 1.0, 2024-07-04 16:55:09
  */
 public class AlipayCommerceEducateCertificateInfoQueryRequest implements AlipayRequest<AlipayCommerceEducateCertificateInfoQueryResponse> {
 

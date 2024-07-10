@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.taxi.driverqrcodetrade.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-28 00:11:47
+ * @since 1.0, 2024-07-04 16:56:02
  */
 public class AlipayCommerceTransportTaxiDriverqrcodetradeBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3644152724166658937L;
+	private static final long serialVersionUID = 6221677242485218725L;
 
 	/** 
 	 * 出租车司机收钱码交易数据列表

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.rentcar.merchant.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-05 14:31:58
+ * @since 1.0, 2024-07-04 17:31:54
  */
 public class AlipayEcoMycarRentcarMerchantCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6759649955664595899L;
+	private static final long serialVersionUID = 1532515711814394121L;
 
 	
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.printer.status.query request
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 02:05:07
+ * @since 1.0, 2024-07-04 16:38:04
  */
 public class AlipayEcoPrinterStatusQueryRequest implements AlipayRequest<AlipayEcoPrinterStatusQueryResponse> {
 

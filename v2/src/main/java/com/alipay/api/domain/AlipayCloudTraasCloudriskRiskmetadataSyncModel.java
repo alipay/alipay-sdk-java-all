@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序云高风险数据同步接口
  *
  * @author auto create
- * @since 1.0, 2024-06-20 20:04:21
+ * @since 1.0, 2024-07-05 12:05:10
  */
 public class AlipayCloudTraasCloudriskRiskmetadataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7676154757225399782L;
+	private static final long serialVersionUID = 1535399517292969484L;
 
 	/**
 	 * 风险元数据参数，包含元数据信息及操作类型

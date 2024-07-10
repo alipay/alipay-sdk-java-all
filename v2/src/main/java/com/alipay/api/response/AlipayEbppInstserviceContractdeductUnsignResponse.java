@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.instservice.contractdeduct.unsign response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-01 23:09:42
+ * @since 1.0, 2024-07-04 17:31:48
  */
 public class AlipayEbppInstserviceContractdeductUnsignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5851534612225479781L;
+	private static final long serialVersionUID = 8733183583271963812L;
 
 	/** 
 	 * 代扣流程id
