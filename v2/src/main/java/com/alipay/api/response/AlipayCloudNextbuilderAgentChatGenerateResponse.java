@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.nextbuilder.agent.chat.generate response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-03 11:52:04
+ * @since 1.0, 2024-07-11 16:08:52
  */
 public class AlipayCloudNextbuilderAgentChatGenerateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4474248555812127912L;
+	private static final long serialVersionUID = 4197233111777365568L;
 
 	/** 
 	 * 返回结果消息体内的具体内容

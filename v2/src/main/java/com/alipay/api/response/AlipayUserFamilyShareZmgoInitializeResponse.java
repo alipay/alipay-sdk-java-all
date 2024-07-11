@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserFamilyShareZmgoInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5747241471279638888L;
+	private static final long serialVersionUID = 4424162375269638835L;
 
 	/** 
 	 * 共享组件链接

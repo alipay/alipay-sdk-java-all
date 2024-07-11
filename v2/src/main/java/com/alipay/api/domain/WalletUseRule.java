@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class WalletUseRule extends AlipayObject {
 
-	private static final long serialVersionUID = 6355724271284377761L;
+	private static final long serialVersionUID = 2874197553661978176L;
 
 	/**
 	 * 在钱包核销时，需要指定核销范围，本字段可通过数组的方式传递商户ID指定商户核销的范围

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建搜索直达
  *
  * @author auto create
- * @since 1.0, 2023-06-12 16:51:02
+ * @since 1.0, 2024-07-11 10:51:57
  */
 public class AlipayOpenSearchBoxApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1818135562836798398L;
+	private static final long serialVersionUID = 5144113896542656581L;
 
 	/**
 	 * 小程序直达配置的常用服务中带有门店信息时，可添加简称触发词

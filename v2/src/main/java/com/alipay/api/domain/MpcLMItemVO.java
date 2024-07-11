@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 多端商城商品信息
  *
  * @author auto create
- * @since 1.0, 2024-06-12 11:42:19
+ * @since 1.0, 2024-07-10 18:06:33
  */
 public class MpcLMItemVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4357945657642868478L;
+	private static final long serialVersionUID = 6818627712719123152L;
 
 	/**
 	 * 商品规格属性，可作为商品的筛选维度

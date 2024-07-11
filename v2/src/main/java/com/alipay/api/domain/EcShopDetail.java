@@ -10,17 +10,24 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 企业码门店池内门店详情
  *
  * @author auto create
- * @since 1.0, 2024-05-06 16:53:20
+ * @since 1.0, 2024-07-11 10:34:30
  */
 public class EcShopDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8336429159524724294L;
+	private static final long serialVersionUID = 7863453445714795264L;
 
 	/**
 	 * 门店准确度等级，可选值：HIGH - 高；MIDDLE - 中；LOW - 低
 	 */
 	@ApiField("accuracy_level")
 	private String accuracyLevel;
+
+	/**
+	 * 门店参与的营销活动列表
+	 */
+	@ApiListField("activity_info_list")
+	@ApiField("ec_activity_info")
+	private List<EcActivityInfo> activityInfoList;
 
 	/**
 	 * 企业码门店所在位置的城市编码
@@ -59,13 +66,13 @@ public class EcShopDetail extends AlipayObject {
 	private Boolean hasOutDoorPic;
 
 	/**
-	 * 企业码门店所属纬度
+	 * 企业码门店所属纬度，单位是度
 	 */
 	@ApiField("latitude")
 	private String latitude;
 
 	/**
-	 * 企业码门店所属经度
+	 * 企业码门店所属经度，单位是度
 	 */
 	@ApiField("longitude")
 	private String longitude;
@@ -133,11 +140,31 @@ public class EcShopDetail extends AlipayObject {
 	@ApiField("support_invoice")
 	private Boolean supportInvoice;
 
+	/**
+	 * 企业码门店的收单身份信息，来源支付宝账号信息
+	 */
+	@ApiListField("trade_identity_info_list")
+	@ApiField("ec_trade_identity_info")
+	private List<EcTradeIdentityInfo> tradeIdentityInfoList;
+
+	/**
+	 * 门店商圈信息
+	 */
+	@ApiField("trading_area_info")
+	private EcTradingAreaInfo tradingAreaInfo;
+
 	public String getAccuracyLevel() {
 		return this.accuracyLevel;
 	}
 	public void setAccuracyLevel(String accuracyLevel) {
 		this.accuracyLevel = accuracyLevel;
+	}
+
+	public List<EcActivityInfo> getActivityInfoList() {
+		return this.activityInfoList;
+	}
+	public void setActivityInfoList(List<EcActivityInfo> activityInfoList) {
+		this.activityInfoList = activityInfoList;
 	}
 
 	public String getCityId() {
@@ -264,6 +291,20 @@ public class EcShopDetail extends AlipayObject {
 	}
 	public void setSupportInvoice(Boolean supportInvoice) {
 		this.supportInvoice = supportInvoice;
+	}
+
+	public List<EcTradeIdentityInfo> getTradeIdentityInfoList() {
+		return this.tradeIdentityInfoList;
+	}
+	public void setTradeIdentityInfoList(List<EcTradeIdentityInfo> tradeIdentityInfoList) {
+		this.tradeIdentityInfoList = tradeIdentityInfoList;
+	}
+
+	public EcTradingAreaInfo getTradingAreaInfo() {
+		return this.tradingAreaInfo;
+	}
+	public void setTradingAreaInfo(EcTradingAreaInfo tradingAreaInfo) {
+		this.tradingAreaInfo = tradingAreaInfo;
 	}
 
 }

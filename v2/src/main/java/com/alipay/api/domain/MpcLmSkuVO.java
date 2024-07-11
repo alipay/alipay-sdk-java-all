@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * openapi接口返回的sku
  *
  * @author auto create
- * @since 1.0, 2024-06-20 16:20:15
+ * @since 1.0, 2024-07-10 18:04:23
  */
 public class MpcLmSkuVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4424797846482177118L;
+	private static final long serialVersionUID = 8661389134853875724L;
 
 	/**
 	 * 69码
@@ -41,7 +41,7 @@ public class MpcLmSkuVO extends AlipayObject {
 	private String fuzzyQuantity;
 
 	/**
-	 * sku划线价，即原价
+	 * sku划线价，即原价，单位分
 	 */
 	@ApiField("mark_price")
 	private String markPrice;
@@ -59,13 +59,13 @@ public class MpcLmSkuVO extends AlipayObject {
 	private String mpcSkuId;
 
 	/**
-	 * sku当前售卖价（不保证实时性仅参考）
+	 * sku当前售卖价（不保证实时性仅参考），单位分
 	 */
 	@ApiField("platform_price")
 	private String platformPrice;
 
 	/**
-	 * sku采购供货价
+	 * sku采购供货价，单位分
 	 */
 	@ApiField("price")
 	private String price;

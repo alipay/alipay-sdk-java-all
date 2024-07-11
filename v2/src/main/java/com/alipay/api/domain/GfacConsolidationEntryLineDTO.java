@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GfacConsolidationEntryLineDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6892446469245476583L;
+	private static final long serialVersionUID = 1894613716392334682L;
 
 	/**
 	 * 业务单据号组合字段，一个业务事件可能关联多业务单据信息（如应收核销应付，关联应收单与应付单），采用组合字段，包括单据类型及其主键ID

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCreditCreditriskDataPutModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5364746554882281758L;
+	private static final long serialVersionUID = 5752632361873599398L;
 
 	/**
 	 * 数据类别,ISV注册成为网商银行的会员，达成数据合作服务，约定数据模型，由网商分配给ISV的数据模型的类别

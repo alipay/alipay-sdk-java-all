@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EpDossierLiteDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 2666594863794841762L;
+	private static final long serialVersionUID = 1192395144392668895L;
 
 	/**
 	 * 法人/负责人姓名

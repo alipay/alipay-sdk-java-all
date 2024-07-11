@@ -7,45 +7,45 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间连商户意愿确认申请单提交
  *
  * @author auto create
- * @since 1.0, 2023-04-18 16:44:18
+ * @since 1.0, 2024-07-10 16:57:17
  */
 public class AlipayMerchantIndirectAuthorderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7188485597512642433L;
+	private static final long serialVersionUID = 1134931911814214322L;
 
 	/**
-	 * 主体信息
+	 * 主体信息。支持auth_identity_info和authIdentityInfo两种格式
 	 */
 	@ApiField("auth_identity_info")
 	private AuthIdentityInfo authIdentityInfo;
 
 	/**
-	 * 受益人信息。
+	 * 受益人信息。，支持benefit_person_info和benefitPersonInfo两种格式
 如下情况时必填：主体类型为企业，且其法人/经营者不为最终受益所有人（即：legal_person_info内的is_benefit_person=false）；其他情况不填。
 	 */
 	@ApiField("benefit_person_info")
 	private IndirectBenefitPersonInfo benefitPersonInfo;
 
 	/**
-	 * 联系人信息
+	 * 联系人信息。支持contact_person_info和contactPersonInfo两种格式
 	 */
 	@ApiField("contact_person_info")
 	private IndirectContactPersonInfo contactPersonInfo;
 
 	/**
-	 * 补充材料
+	 * 补充材料。支持extra_credentials和extraCredentials两种格式
 	 */
 	@ApiField("extra_credentials")
 	private IndirectExtraCredentials extraCredentials;
 
 	/**
-	 * 法人身份信息
+	 * 法人身份信息，支持legal_person_info和legalPersonInfo两种格式
 	 */
 	@ApiField("legal_person_info")
 	private IndirectLegalPersonInfo legalPersonInfo;
 
 	/**
-	 * 外部业务号
+	 * 外部业务号。支持out_biz_no和outBizNo两种格式
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;

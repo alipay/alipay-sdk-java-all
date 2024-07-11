@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 芝麻证经营版商户上传职业人员信息
  *
  * @author auto create
- * @since 1.0, 2024-07-09 16:33:29
+ * @since 1.0, 2024-07-10 17:01:16
  */
 public class ZhimaCustomerZmcardProfessionalAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7175826271851491395L;
+	private static final long serialVersionUID = 8437991222733499434L;
 
 	/**
 	 * 证书列表，相同证书每次传入是更新
@@ -24,7 +24,7 @@ public class ZhimaCustomerZmcardProfessionalAddModel extends AlipayObject {
 	private List<ZmCardPictureInfo> certificationList;
 
 	/**
-	 * 关联key，受理台返回，用于验证用户是否授权
+	 * 商户请求受理台时传入的外部授权单号，用于验证用户是否授权
 	 */
 	@ApiField("conn_key")
 	private String connKey;

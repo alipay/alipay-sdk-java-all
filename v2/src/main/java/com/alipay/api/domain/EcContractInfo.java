@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class EcContractInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3137258886588531879L;
+	private static final long serialVersionUID = 7564596139867719992L;
 
 	/**
 	 * 合约解约时间

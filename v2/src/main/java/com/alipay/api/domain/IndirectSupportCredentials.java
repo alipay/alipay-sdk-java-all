@@ -7,16 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 辅助证明材料 ，主体类型为小微商户时，辅助证明材料信息必填
  *
  * @author auto create
- * @since 1.0, 2022-09-01 19:25:30
+ * @since 1.0, 2024-07-10 16:57:17
  */
 public class IndirectSupportCredentials extends AlipayObject {
 
-	private static final long serialVersionUID = 8892273154148463139L;
+	private static final long serialVersionUID = 5437186114742369147L;
 
 	/**
-	 * 门店城市
+	 * 门店城市 当前字段已废弃(该值已废弃，以city_code字段映射的城市名称为准)
 	 */
 	@ApiField("city")
+	@Deprecated
 	private String city;
 
 	/**
@@ -26,9 +27,10 @@ public class IndirectSupportCredentials extends AlipayObject {
 	private String cityCode;
 
 	/**
-	 * 门店街道
+	 * 门店所在区县。 当前字段已废弃(该值已废弃，以district_code字段映射的区县名称为准)
 	 */
 	@ApiField("district")
+	@Deprecated
 	private String district;
 
 	/**
@@ -44,9 +46,10 @@ public class IndirectSupportCredentials extends AlipayObject {
 	private String merchantType;
 
 	/**
-	 * 门店省份
+	 * 门店省份 当前字段已废弃(该值已废弃，以province_code字段映射的省份名称为准)
 	 */
 	@ApiField("province")
+	@Deprecated
 	private String province;
 
 	/**

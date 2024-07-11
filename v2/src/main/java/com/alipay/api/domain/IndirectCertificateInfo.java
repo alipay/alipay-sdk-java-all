@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 主体证件信息
  *
  * @author auto create
- * @since 1.0, 2022-09-01 19:25:30
+ * @since 1.0, 2024-07-10 16:57:17
  */
 public class IndirectCertificateInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8449774736571161978L;
+	private static final long serialVersionUID = 7469913895922684474L;
 
 	/**
 	 * 证照图片（使用图片上传接口）
@@ -38,7 +38,7 @@ public class IndirectCertificateInfo extends AlipayObject {
 	private String effectTime;
 
 	/**
-	 * 证照过期时间
+	 * 证照过期时间，yyyy-mm-dd格式，如果是长期有效时传“forever”
 	 */
 	@ApiField("expire_time")
 	private String expireTime;

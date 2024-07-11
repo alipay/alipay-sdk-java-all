@@ -14,7 +14,7 @@ VerifyInfo of EVOA application.
  */
 public class VerifiedInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4136732891534575248L;
+	private static final long serialVersionUID = 3318887797987765554L;
 
 	/**
 	 * 用户申请订单号回传。

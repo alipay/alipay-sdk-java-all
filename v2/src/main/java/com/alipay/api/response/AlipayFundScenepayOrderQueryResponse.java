@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundScenepayOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2731277959528953197L;
+	private static final long serialVersionUID = 4465568357789451799L;
 
 	/** 
 	 * 交易中包含的业务优惠金额

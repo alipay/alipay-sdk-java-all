@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMedicalCommercialMemberQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6542493491174984327L;
+	private static final long serialVersionUID = 5512312867941513321L;
 
 	/** 
 	 * 权益订单id，支付宝侧用户对商户某一权益的唯一订单子单id。该订单记录了用户的核销次数与总次数，以及订单状态
