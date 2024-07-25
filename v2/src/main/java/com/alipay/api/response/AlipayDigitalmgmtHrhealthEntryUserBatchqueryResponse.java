@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.digitalmgmt.hrhealth.entry.user.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-20 10:52:00
+ * @since 1.0, 2024-07-25 15:02:04
  */
 public class AlipayDigitalmgmtHrhealthEntryUserBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6475874662731397332L;
+	private static final long serialVersionUID = 2815634868119537794L;
 
 	/** 
 	 * 候选人信息列表，根据主数据中最近要入职的候选人数据加工获取，数组数据，供应商拿到参数后进行初始化，返回值为空时代表无最近入职的候选人

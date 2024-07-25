@@ -7,11 +7,35 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁分账计划
  *
  * @author auto create
- * @since 1.0, 2024-06-26 15:18:18
+ * @since 1.0, 2024-07-22 10:25:41
  */
 public class RentRoyalty extends AlipayObject {
 
-	private static final long serialVersionUID = 7761819963146992598L;
+	private static final long serialVersionUID = 2425931972891119661L;
+
+	/**
+	 * 订单id
+	 */
+	@ApiField("biz_order_id")
+	private String bizOrderId;
+
+	/**
+	 * 买家支付宝用户唯一标识
+	 */
+	@ApiField("buyer_id")
+	private String buyerId;
+
+	/**
+	 * 买家支付宝用户唯一标识
+	 */
+	@ApiField("buyer_open_id")
+	private String buyerOpenId;
+
+	/**
+	 * 本期对应的买断分账金
+	 */
+	@ApiField("current_buyout_price")
+	private String currentBuyoutPrice;
 
 	/**
 	 * 代表某一个阶段的第几期的还款计划，要结合stage进行锁定某一期计划
@@ -60,6 +84,34 @@ public class RentRoyalty extends AlipayObject {
 	 */
 	@ApiField("type")
 	private String type;
+
+	public String getBizOrderId() {
+		return this.bizOrderId;
+	}
+	public void setBizOrderId(String bizOrderId) {
+		this.bizOrderId = bizOrderId;
+	}
+
+	public String getBuyerId() {
+		return this.buyerId;
+	}
+	public void setBuyerId(String buyerId) {
+		this.buyerId = buyerId;
+	}
+
+	public String getBuyerOpenId() {
+		return this.buyerOpenId;
+	}
+	public void setBuyerOpenId(String buyerOpenId) {
+		this.buyerOpenId = buyerOpenId;
+	}
+
+	public String getCurrentBuyoutPrice() {
+		return this.currentBuyoutPrice;
+	}
+	public void setCurrentBuyoutPrice(String currentBuyoutPrice) {
+		this.currentBuyoutPrice = currentBuyoutPrice;
+	}
 
 	public String getPeriod() {
 		return this.period;

@@ -7,6 +7,8 @@ import com.alipay.api.domain.AddressInfo;
 import com.alipay.api.domain.ShopBusinessTime;
 import com.alipay.api.domain.ContactInfo;
 import com.alipay.api.domain.ShopExtInfo;
+import com.alipay.api.domain.MerchantShopIndustryInfo;
+import com.alipay.api.domain.ShopIndustryLicense;
 import com.alipay.api.domain.IndustryQualificationInfo;
 import com.alipay.api.domain.ShopRecommendInfo;
 
@@ -16,11 +18,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.shop.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-10 16:49:18
+ * @since 1.0, 2024-07-11 23:27:03
  */
 public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4417391615669412299L;
+	private static final long serialVersionUID = 6471418433899867546L;
 
 	/** 
 	 * 门店地址库 ID，按照一定的平台规则识别出的线下真实存在、真实经营的蚂蚁门店地址库 ID，将作用于服务商的返佣激励、商品/券等权益的公域分发。如平台未返回alipay_poiid，请在确认门店信息真实有效后，稍后再进行查询。
@@ -98,7 +100,21 @@ public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 	private List<ShopExtInfo> extInfos;
 
 	/** 
-	 * 商户角色id，表示将要开的店属于哪个商户角色。对于直连开店场景，填写商户pid；对于间连开店场景（线上、线下、直付通），填写商户smid。若未传入shop_id 则本参数与store_id均必填。
+	 * 查询门店详情时，如果需要同时返回行业信息，需要设置入参中的need_industry_info=1
+	 */
+	@ApiListField("industry_info")
+	@ApiField("merchant_shop_industry_info")
+	private List<MerchantShopIndustryInfo> industryInfo;
+
+	/** 
+	 * 查询门店详情时，如果需要同时返回行业资质，需要设置入参中的need_industry_license=1
+	 */
+	@ApiListField("industry_license")
+	@ApiField("shop_industry_license")
+	private List<ShopIndustryLicense> industryLicense;
+
+	/** 
+	 * 商户角色id，门店属于哪个商户角色。对于直连开店场景，为商户pid；对于间连开店场景（线上、线下、直付通），为商户smid。
 	 */
 	@ApiField("ip_role_id")
 	private String ipRoleId;
@@ -283,6 +299,20 @@ public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 	}
 	public List<ShopExtInfo> getExtInfos( ) {
 		return this.extInfos;
+	}
+
+	public void setIndustryInfo(List<MerchantShopIndustryInfo> industryInfo) {
+		this.industryInfo = industryInfo;
+	}
+	public List<MerchantShopIndustryInfo> getIndustryInfo( ) {
+		return this.industryInfo;
+	}
+
+	public void setIndustryLicense(List<ShopIndustryLicense> industryLicense) {
+		this.industryLicense = industryLicense;
+	}
+	public List<ShopIndustryLicense> getIndustryLicense( ) {
+		return this.industryLicense;
 	}
 
 	public void setIpRoleId(String ipRoleId) {

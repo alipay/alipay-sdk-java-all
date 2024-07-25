@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用印状态查询接口
  *
  * @author auto create
- * @since 1.0, 2021-12-29 14:38:14
+ * @since 1.0, 2024-07-16 17:47:39
  */
 public class AlipayFincoreComplianceSignStatusQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6677673337313961125L;
+	private static final long serialVersionUID = 3698278763756848992L;
 
 	/**
 	 * 业务单据号

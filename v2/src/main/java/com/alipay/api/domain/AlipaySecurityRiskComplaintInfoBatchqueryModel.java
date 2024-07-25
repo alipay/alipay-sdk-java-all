@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询消费者投诉列表
  *
  * @author auto create
- * @since 1.0, 2024-03-11 15:05:34
+ * @since 1.0, 2024-07-12 14:25:51
  */
 public class AlipaySecurityRiskComplaintInfoBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2625318449881717472L;
+	private static final long serialVersionUID = 3196162298863224281L;
 
 	/**
 	 * 分页查询页码，不传则默认为1
@@ -24,31 +24,31 @@ public class AlipaySecurityRiskComplaintInfoBatchqueryModel extends AlipayObject
 	private Long currentPageNum;
 
 	/**
-	 * 按投诉时间范围进行查询：时间范围的上界
+	 * 按投诉时间范围进行查询：时间范围的上界，取值单位为秒
 	 */
 	@ApiField("gmt_complaint_end")
 	private Date gmtComplaintEnd;
 
 	/**
-	 * 按投诉时间范围进行查询：时间范围的下界
+	 * 按投诉时间范围进行查询：时间范围的下界，取值单位为秒
 	 */
 	@ApiField("gmt_complaint_start")
 	private Date gmtComplaintStart;
 
 	/**
-	 * 按处理时间范围进行查询：时间范围的上界
+	 * 按处理时间范围进行查询：时间范围的上界，取值单位为秒
 	 */
 	@ApiField("gmt_process_end")
 	private Date gmtProcessEnd;
 
 	/**
-	 * 按处理时间范围进行查询：时间范围的下界
+	 * 按处理时间范围进行查询：时间范围的下界，取值单位为秒
 	 */
 	@ApiField("gmt_process_start")
 	private Date gmtProcessStart;
 
 	/**
-	 * 分页查询每次查询的数据量，不传则默认为10
+	 * 分页查询每次查询的数据量，不传则默认为10，取值单位为条
 	 */
 	@ApiField("page_size")
 	private Long pageSize;

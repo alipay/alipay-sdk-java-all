@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 蚂蚁店铺创建
  *
  * @author auto create
- * @since 1.0, 2024-05-21 17:07:19
+ * @since 1.0, 2024-07-11 23:23:16
  */
 public class AntMerchantExpandShopCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4619682679221774627L;
+	private static final long serialVersionUID = 3232537955144558893L;
 
 	/**
 	 * 门店结算卡信息。本业务当前只允许传入一张结算卡。 说明：本参数仅直付通业务使用，其余业务无需关注。
@@ -24,7 +24,7 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	private List<SettleCardInfo> bizCards;
 
 	/**
-	 * 品牌id，非加油站等特殊门店无需关注。
+	 * 品牌id，非加油站等特殊门店无需关注。通过BP站品牌工具箱可以获取品牌id
 	 */
 	@ApiField("brand_id")
 	private String brandId;
@@ -97,6 +97,20 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	@ApiListField("ext_infos")
 	@ApiField("shop_ext_info")
 	private List<ShopExtInfo> extInfos;
+
+	/**
+	 * 行业信息，例如所属集团、特殊标签
+	 */
+	@ApiListField("industry_info")
+	@ApiField("merchant_shop_industry_info")
+	private List<MerchantShopIndustryInfo> industryInfo;
+
+	/**
+	 * 门店资质信息
+	 */
+	@ApiListField("industry_license")
+	@ApiField("shop_industry_license")
+	private List<ShopIndustryLicense> industryLicense;
 
 	/**
 	 * 当前门店归属的商户角色 ID，表示当前进件的店铺的归属商户。对于直连开店场景，填写商户 PID。对于间连开店场景（线上、线下、直付通），商户SMID
@@ -267,6 +281,20 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	}
 	public void setExtInfos(List<ShopExtInfo> extInfos) {
 		this.extInfos = extInfos;
+	}
+
+	public List<MerchantShopIndustryInfo> getIndustryInfo() {
+		return this.industryInfo;
+	}
+	public void setIndustryInfo(List<MerchantShopIndustryInfo> industryInfo) {
+		this.industryInfo = industryInfo;
+	}
+
+	public List<ShopIndustryLicense> getIndustryLicense() {
+		return this.industryLicense;
+	}
+	public void setIndustryLicense(List<ShopIndustryLicense> industryLicense) {
+		this.industryLicense = industryLicense;
 	}
 
 	public String getIpRoleId() {

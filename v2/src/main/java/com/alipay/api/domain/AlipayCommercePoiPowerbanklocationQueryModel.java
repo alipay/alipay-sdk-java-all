@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取附近充电宝点位
  *
  * @author auto create
- * @since 1.0, 2023-10-24 13:54:39
+ * @since 1.0, 2024-07-15 18:26:30
  */
 public class AlipayCommercePoiPowerbanklocationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7544569989292828837L;
+	private static final long serialVersionUID = 6247961245119429719L;
 
 	/**
 	 * 扩展字段

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 汇款金额信息
  *
  * @author auto create
- * @since 1.0, 2021-07-28 12:10:29
+ * @since 1.0, 2024-07-16 19:45:05
  */
 public class TransferAmount extends AlipayObject {
 
-	private static final long serialVersionUID = 1732628968495285567L;
+	private static final long serialVersionUID = 1366257834734671457L;
 
 	/**
 	 * 币种
@@ -20,7 +20,7 @@ public class TransferAmount extends AlipayObject {
 	private String currency;
 
 	/**
-	 * 金额，对应币种的最小单位
+	 * 金额，对应币种的最小单位，大币种为分，小币种为元
 	 */
 	@ApiField("value")
 	private String value;

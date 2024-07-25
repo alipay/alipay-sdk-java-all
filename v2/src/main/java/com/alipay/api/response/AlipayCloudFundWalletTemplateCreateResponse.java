@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.fund.wallet.template.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-11 11:42:03
+ * @since 1.0, 2024-07-15 18:17:05
  */
 public class AlipayCloudFundWalletTemplateCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4318464549274583382L;
+	private static final long serialVersionUID = 6436751479579746869L;
 
 	/** 
 	 * 创建的钱包id

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝行情元数据查询
  *
  * @author auto create
- * @since 1.0, 2023-09-12 21:15:45
+ * @since 1.0, 2024-07-18 14:48:28
  */
 public class AlipayFinanceQuotationQuotetradeMetadataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8177855147444598376L;
+	private static final long serialVersionUID = 2351273886481182874L;
 
 	/**
 	 * 业务查询条件（JSON格式），与业务类型对应。当biz_type为STOCK_SYMBOL_BATCH时，入参为symbol（格式code.market）列表，如

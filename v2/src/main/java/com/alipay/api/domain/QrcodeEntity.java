@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class QrcodeEntity extends AlipayObject {
 
-	private static final long serialVersionUID = 1835784151454957542L;
+	private static final long serialVersionUID = 3259212943791711922L;
 
 	/**
 	 * 桌台ID

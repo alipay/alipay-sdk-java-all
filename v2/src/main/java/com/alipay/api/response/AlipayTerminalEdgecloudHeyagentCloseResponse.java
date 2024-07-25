@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.terminal.edgecloud.heyagent.close response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-13 14:47:04
+ * @since 1.0, 2024-07-22 19:37:03
  */
 public class AlipayTerminalEdgecloudHeyagentCloseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7682431424124383971L;
+	private static final long serialVersionUID = 2139325973265889189L;
 
 	
 

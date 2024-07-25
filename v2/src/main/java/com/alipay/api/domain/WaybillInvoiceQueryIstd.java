@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开票配送单详情
  *
  * @author auto create
- * @since 1.0, 2023-02-17 11:46:51
+ * @since 1.0, 2024-07-16 14:47:52
  */
 public class WaybillInvoiceQueryIstd extends AlipayObject {
 
-	private static final long serialVersionUID = 6795315674925171855L;
+	private static final long serialVersionUID = 5512258299329674746L;
 
 	/**
 	 * 失败原因，需要传单个即时配送运单的驳回原因

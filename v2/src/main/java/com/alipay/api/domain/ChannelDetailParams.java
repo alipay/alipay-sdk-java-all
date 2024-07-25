@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 渠道扩展信息
  *
  * @author auto create
- * @since 1.0, 2023-12-25 16:43:21
+ * @since 1.0, 2024-07-19 20:00:51
  */
 public class ChannelDetailParams extends AlipayObject {
 
-	private static final long serialVersionUID = 8323555356639719299L;
+	private static final long serialVersionUID = 2871197261437322153L;
 
 	/**
 	 * 预付卡分组名称
 	 */
 	@ApiField("card_group_name")
 	private String cardGroupName;
+
+	/**
+	 * 风控咨询结果
+	 */
+	@ApiField("credit_risk_info")
+	private String creditRiskInfo;
 
 	/**
 	 * 芝麻人群标签
@@ -36,6 +42,13 @@ public class ChannelDetailParams extends AlipayObject {
 	}
 	public void setCardGroupName(String cardGroupName) {
 		this.cardGroupName = cardGroupName;
+	}
+
+	public String getCreditRiskInfo() {
+		return this.creditRiskInfo;
+	}
+	public void setCreditRiskInfo(String creditRiskInfo) {
+		this.creditRiskInfo = creditRiskInfo;
 	}
 
 	public String getMarketingFlag() {

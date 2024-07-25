@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸检测结果数据查询
  *
  * @author auto create
- * @since 1.0, 2023-12-13 19:31:16
+ * @since 1.0, 2024-07-18 20:27:51
  */
 public class DatadigitalFincloudGeneralsaasFaceCheckQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6759426684639819491L;
+	private static final long serialVersionUID = 3851275689914968422L;
 
 	/**
 	 * 传入初始化接口datadigital.fincloud.generalsaas.face.check.initialize 得到的certify_id

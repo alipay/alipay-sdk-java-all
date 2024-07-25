@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 包含员工和抬头关系的模型
  *
  * @author auto create
- * @since 1.0, 2024-05-31 09:57:50
+ * @since 1.0, 2024-07-22 17:48:39
  */
 public class EmployeeTitleDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4634755765763364335L;
+	private static final long serialVersionUID = 2668167276498454886L;
 
 	/**
 	 * 共同账户id,与enterprise_id两者必填其一

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 周期扣执行计划修改接口
  *
  * @author auto create
- * @since 1.0, 2024-06-25 15:31:36
+ * @since 1.0, 2024-07-23 20:21:14
  */
 public class AlipayUserAgreementCyclepayauthplansModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5622795625435358236L;
+	private static final long serialVersionUID = 1737687886527199698L;
 
 	/**
 	 * 代扣协议协议号
@@ -26,7 +26,7 @@ public class AlipayUserAgreementCyclepayauthplansModifyModel extends AlipayObjec
 	private String singleAmount;
 
 	/**
-	 * 总扣款期数
+	 * 总扣款期数，入参为自然数，代表期数值。
 	 */
 	@ApiField("total_payments")
 	private String totalPayments;

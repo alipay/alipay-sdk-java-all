@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.data.creditscore.exemplified.coderainy.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-10 10:05:38
+ * @since 1.0, 2024-07-17 14:22:05
  */
 public class ZhimaDataCreditscoreExemplifiedCoderainyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6197465151168976782L;
+	private static final long serialVersionUID = 5396279845218339374L;
 
 	/** 
 	 * 简单描述

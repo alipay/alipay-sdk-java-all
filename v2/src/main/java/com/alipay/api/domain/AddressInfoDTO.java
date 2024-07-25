@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 地址详情返回信息
  *
  * @author auto create
- * @since 1.0, 2024-05-31 09:57:42
+ * @since 1.0, 2024-07-22 17:48:57
  */
 public class AddressInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4164588276832197625L;
+	private static final long serialVersionUID = 6248968399166696689L;
 
 	/**
 	 * 共同账户id，当入参传入共同账户id时返回该值

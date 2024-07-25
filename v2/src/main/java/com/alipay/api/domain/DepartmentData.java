@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DepartmentData extends AlipayObject {
 
-	private static final long serialVersionUID = 2421561937317244638L;
+	private static final long serialVersionUID = 6772245196724976289L;
 
 	/**
 	 * 呼吸道疾病

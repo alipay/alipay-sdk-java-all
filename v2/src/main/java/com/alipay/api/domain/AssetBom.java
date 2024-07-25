@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 物料bom结构
  *
  * @author auto create
- * @since 1.0, 2023-07-21 18:08:46
+ * @since 1.0, 2024-07-19 14:57:51
  */
 public class AssetBom extends AlipayObject {
 
-	private static final long serialVersionUID = 2592376255994169429L;
+	private static final long serialVersionUID = 1291238952762177246L;
 
 	/**
 	 * 物料子类型
@@ -53,6 +53,12 @@ public class AssetBom extends AlipayObject {
 	 */
 	@ApiField("include_qrcode")
 	private String includeQrcode;
+
+	/**
+	 * 是否包含SN
+	 */
+	@ApiField("include_sn")
+	private String includeSn;
 
 	/**
 	 * 是否是套组物料
@@ -102,6 +108,13 @@ public class AssetBom extends AlipayObject {
 	@ApiField("std")
 	private AssetStandard std;
 
+	/**
+	 * 物料供给模板信息
+	 */
+	@ApiListField("supply_details")
+	@ApiField("asset_supply_detail")
+	private List<AssetSupplyDetail> supplyDetails;
+
 	public String getAssetSubType() {
 		return this.assetSubType;
 	}
@@ -142,6 +155,13 @@ public class AssetBom extends AlipayObject {
 	}
 	public void setIncludeQrcode(String includeQrcode) {
 		this.includeQrcode = includeQrcode;
+	}
+
+	public String getIncludeSn() {
+		return this.includeSn;
+	}
+	public void setIncludeSn(String includeSn) {
+		this.includeSn = includeSn;
 	}
 
 	public String getIsSuite() {
@@ -198,6 +218,13 @@ public class AssetBom extends AlipayObject {
 	}
 	public void setStd(AssetStandard std) {
 		this.std = std;
+	}
+
+	public List<AssetSupplyDetail> getSupplyDetails() {
+		return this.supplyDetails;
+	}
+	public void setSupplyDetails(List<AssetSupplyDetail> supplyDetails) {
+		this.supplyDetails = supplyDetails;
 	}
 
 }

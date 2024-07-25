@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlarmCompareRule extends AlipayObject {
 
-	private static final long serialVersionUID = 1818387526525461385L;
+	private static final long serialVersionUID = 4792683195868533392L;
 
 	/**
 	 * 比较操作类型

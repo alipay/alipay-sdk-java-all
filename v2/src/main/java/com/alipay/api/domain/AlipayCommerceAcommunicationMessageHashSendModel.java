@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 加密手机号触达用户接口
  *
  * @author auto create
- * @since 1.0, 2024-06-06 10:51:12
+ * @since 1.0, 2024-07-18 16:03:29
  */
 public class AlipayCommerceAcommunicationMessageHashSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6658189563652387163L;
+	private static final long serialVersionUID = 6769335831636844462L;
 
 	/**
 	 * 动态参数

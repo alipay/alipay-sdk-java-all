@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 凭证发放
  *
  * @author auto create
- * @since 1.0, 2024-07-04 15:45:13
+ * @since 1.0, 2024-07-17 14:07:16
  */
 public class AlipayInsSceneChannelsaleVoucherCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1226329924535344399L;
+	private static final long serialVersionUID = 1715143751954757119L;
 
 	/**
 	 * 凭证业务扩展字段
@@ -66,6 +66,12 @@ public class AlipayInsSceneChannelsaleVoucherCreateModel extends AlipayObject {
 	 */
 	@ApiField("purchase_merchant_id")
 	private String purchaseMerchantId;
+
+	/**
+	 * 同蚂蚁保约定确定
+	 */
+	@ApiField("registered_subject_id")
+	private String registeredSubjectId;
 
 	/**
 	 * 发放类型
@@ -134,6 +140,13 @@ public class AlipayInsSceneChannelsaleVoucherCreateModel extends AlipayObject {
 	}
 	public void setPurchaseMerchantId(String purchaseMerchantId) {
 		this.purchaseMerchantId = purchaseMerchantId;
+	}
+
+	public String getRegisteredSubjectId() {
+		return this.registeredSubjectId;
+	}
+	public void setRegisteredSubjectId(String registeredSubjectId) {
+		this.registeredSubjectId = registeredSubjectId;
 	}
 
 	public String getSendType() {

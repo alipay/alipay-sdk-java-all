@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 关闭云渲染服务
  *
  * @author auto create
- * @since 1.0, 2024-06-13 14:43:08
+ * @since 1.0, 2024-07-22 19:33:50
  */
 public class AlipayTerminalEdgecloudHeyagentCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4513881234254268318L;
+	private static final long serialVersionUID = 8395153912661755455L;
 
 	/**
 	 * 本次绘话的ID
@@ -24,6 +24,12 @@ public class AlipayTerminalEdgecloudHeyagentCloseModel extends AlipayObject {
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/**
+	 * 结束的结果码
+	 */
+	@ApiField("result_code")
+	private String resultCode;
 
 	/**
 	 * 支付宝用户的userId。
@@ -49,6 +55,13 @@ public class AlipayTerminalEdgecloudHeyagentCloseModel extends AlipayObject {
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public String getResultCode() {
+		return this.resultCode;
+	}
+	public void setResultCode(String resultCode) {
+		this.resultCode = resultCode;
 	}
 
 	public String getUid() {

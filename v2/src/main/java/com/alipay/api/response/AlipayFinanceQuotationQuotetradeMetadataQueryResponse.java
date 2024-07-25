@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.finance.quotation.quotetrade.metadata.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-12 21:16:44
+ * @since 1.0, 2024-07-18 14:48:28
  */
 public class AlipayFinanceQuotationQuotetradeMetadataQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1235827179774116334L;
+	private static final long serialVersionUID = 6239271876862323352L;
 
 	/** 
 	 * 返回结果（JSON格式），biz_type为STOCK_SYMBOL_BATCH时，biz_content为证券信息列表。返回信息字段名及含义如下：

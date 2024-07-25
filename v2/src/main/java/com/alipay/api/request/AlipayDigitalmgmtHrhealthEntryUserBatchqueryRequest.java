@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.digitalmgmt.hrhealth.entry.user.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2024-03-20 10:52:00
+ * @since 1.0, 2024-07-25 15:02:04
  */
 public class AlipayDigitalmgmtHrhealthEntryUserBatchqueryRequest implements AlipayRequest<AlipayDigitalmgmtHrhealthEntryUserBatchqueryResponse> {
 

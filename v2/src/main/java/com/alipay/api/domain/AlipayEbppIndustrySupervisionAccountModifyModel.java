@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 专款账户交易属性信息修改
  *
  * @author auto create
- * @since 1.0, 2024-05-29 17:02:14
+ * @since 1.0, 2024-07-19 16:10:16
  */
 public class AlipayEbppIndustrySupervisionAccountModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3446655351594852536L;
+	private static final long serialVersionUID = 7475742334316559692L;
 
 	/**
 	 * 待修改属性的子户账户户号。对应「政务监管账户创建」接口返回的 「子户账户户号 merchant_account_no 」
@@ -84,6 +84,18 @@ public class AlipayEbppIndustrySupervisionAccountModifyModel extends AlipayObjec
 	 */
 	@ApiField("payer_participant_type")
 	private String payerParticipantType;
+
+	/**
+	 * 专款资金金额，整数，单位：分
+	 */
+	@ApiField("special_funds_amount")
+	private Long specialFundsAmount;
+
+	/**
+	 * 币种，默认 CNY。目前只支持CNY
+	 */
+	@ApiField("special_funds_currency")
+	private String specialFundsCurrency;
 
 	public String getAccountNo() {
 		return this.accountNo;
@@ -167,6 +179,20 @@ public class AlipayEbppIndustrySupervisionAccountModifyModel extends AlipayObjec
 	}
 	public void setPayerParticipantType(String payerParticipantType) {
 		this.payerParticipantType = payerParticipantType;
+	}
+
+	public Long getSpecialFundsAmount() {
+		return this.specialFundsAmount;
+	}
+	public void setSpecialFundsAmount(Long specialFundsAmount) {
+		this.specialFundsAmount = specialFundsAmount;
+	}
+
+	public String getSpecialFundsCurrency() {
+		return this.specialFundsCurrency;
+	}
+	public void setSpecialFundsCurrency(String specialFundsCurrency) {
+		this.specialFundsCurrency = specialFundsCurrency;
 	}
 
 }

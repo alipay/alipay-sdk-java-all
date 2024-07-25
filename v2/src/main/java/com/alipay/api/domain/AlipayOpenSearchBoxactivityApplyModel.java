@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 搜索直达活动提报
  *
  * @author auto create
- * @since 1.0, 2023-06-12 16:19:58
+ * @since 1.0, 2024-07-22 14:43:15
  */
 public class AlipayOpenSearchBoxactivityApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4129919516232553874L;
+	private static final long serialVersionUID = 8853854475937568566L;
 
 	/**
 	 * 活动链接，必须为关联的小程序的页面链接（链接以 alipays 开头），可参考<a href="https://opendocs.alipay.com/support/01rb18"> 小程序scheme链接介绍 </a>
@@ -57,6 +57,12 @@ public class AlipayOpenSearchBoxactivityApplyModel extends AlipayObject {
 	 */
 	@ApiField("merchant_id")
 	private String merchantId;
+
+	/**
+	 * 投放终端
+	 */
+	@ApiField("oriented_rule")
+	private DeliveryOrientedRuleInfo orientedRule;
 
 	/**
 	 * 活动开始时间，开始和结束时间之间不得超过90天
@@ -142,6 +148,13 @@ public class AlipayOpenSearchBoxactivityApplyModel extends AlipayObject {
 	}
 	public void setMerchantId(String merchantId) {
 		this.merchantId = merchantId;
+	}
+
+	public DeliveryOrientedRuleInfo getOrientedRule() {
+		return this.orientedRule;
+	}
+	public void setOrientedRule(DeliveryOrientedRuleInfo orientedRule) {
+		this.orientedRule = orientedRule;
 	}
 
 	public String getStartTime() {

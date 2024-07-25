@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.complaint.info.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-11 15:05:34
+ * @since 1.0, 2024-07-12 14:27:04
  */
 public class AlipaySecurityRiskComplaintInfoBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2715774678751386265L;
+	private static final long serialVersionUID = 3868576416688447925L;
 
 	/** 
 	 * 投诉详情信息列表
@@ -31,13 +31,13 @@ public class AlipaySecurityRiskComplaintInfoBatchqueryResponse extends AlipayRes
 	private Long currentPage;
 
 	/** 
-	 * 分页查询时每页大小
+	 * 分页查询时每页查询的记录条数，取值单位为条
 	 */
 	@ApiField("page_size")
 	private Long pageSize;
 
 	/** 
-	 * 满足条件的数据总条数
+	 * 满足条件的数据总记录条数，取值单位为条
 	 */
 	@ApiField("total_size")
 	private Long totalSize;

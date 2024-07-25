@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 大数据选址参数
  *
  * @author auto create
- * @since 1.0, 2024-06-24 10:27:53
+ * @since 1.0, 2024-07-15 16:11:52
  */
 public class SiteSelectionParam extends AlipayObject {
 
-	private static final long serialVersionUID = 3121694579758828876L;
+	private static final long serialVersionUID = 2144765264523721837L;
 
 	/**
 	 * 全国统一城市编码
@@ -35,20 +35,20 @@ public class SiteSelectionParam extends AlipayObject {
 	private String dateTo;
 
 	/**
-	 * H3坐标网格编码
+	 * H3坐标网格编码（编码为8级，六边形面积约为0.7373km2）
 	 */
 	@ApiListField("index_list")
 	@ApiField("string")
 	private List<String> indexList;
 
 	/**
-	 * 最短停留时长，单位为分钟
+	 * 最短停留时长，单位为分钟。当获取停留车辆数据「T_RESIDENT_VEHICLE」时，必传。
 	 */
 	@ApiField("min_parking_period")
 	private Long minParkingPeriod;
 
 	/**
-	 * 车辆停留天数
+	 * 车辆停留天数（单位：天）。当获取停留车辆数据「template_code = T_RESIDENT_VEHICLE」时，必传。
 	 */
 	@ApiField("parking_days")
 	private Long parkingDays;

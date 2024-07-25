@@ -4,6 +4,7 @@ import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.BackgroundWordInfo;
+import com.alipay.api.domain.DeliveryOrientedRuleInfo;
 import com.alipay.api.domain.DeliveryTargetRegion;
 import com.alipay.api.domain.SearchBoxActivityVideoInfo;
 
@@ -13,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.search.boxactivity.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 17:41:23
+ * @since 1.0, 2024-07-23 15:07:09
  */
 public class AlipayOpenSearchBoxactivityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1557869779535942317L;
+	private static final long serialVersionUID = 3879833547876491748L;
 
 	/** 
 	 * 底纹词
@@ -72,6 +73,12 @@ public class AlipayOpenSearchBoxactivityQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("material_url")
 	private String materialUrl;
+
+	/** 
+	 * 投放终端
+	 */
+	@ApiField("oriented_rule")
+	private DeliveryOrientedRuleInfo orientedRule;
 
 	/** 
 	 * 运行状态，INITIAL-初始/ONLINE-已上架/EXPIRE-已失效/OFFLINE-已下架
@@ -183,6 +190,13 @@ public class AlipayOpenSearchBoxactivityQueryResponse extends AlipayResponse {
 	}
 	public String getMaterialUrl( ) {
 		return this.materialUrl;
+	}
+
+	public void setOrientedRule(DeliveryOrientedRuleInfo orientedRule) {
+		this.orientedRule = orientedRule;
+	}
+	public DeliveryOrientedRuleInfo getOrientedRule( ) {
+		return this.orientedRule;
 	}
 
 	public void setRunStatus(String runStatus) {

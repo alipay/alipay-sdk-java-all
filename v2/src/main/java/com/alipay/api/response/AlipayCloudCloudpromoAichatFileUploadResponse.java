@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudCloudpromoAichatFileUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2691787897258234815L;
+	private static final long serialVersionUID = 3324686887553648631L;
 
 	/** 
 	 * 文件ID

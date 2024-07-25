@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 转化数据详情
  *
  * @author auto create
- * @since 1.0, 2024-05-14 10:40:56
+ * @since 1.0, 2024-07-16 10:59:51
  */
 public class ConversionData extends AlipayObject {
 
-	private static final long serialVersionUID = 4852147616576521633L;
+	private static final long serialVersionUID = 8553231217229512853L;
 
 	/**
-	 * 广告id
+	 * 广告创意id，来自：<a href='https://adpub.alipay.com/lark/adrlark/qm1v2gtpvcftele4'>监测上报</a>或<a href='https://adpub.alipay.com/lark/adrlark/gw3740rggm4n5gar'>落地页宏替换</a>配置的__AD_ID__宏参发生用户点击替换后的值
 	 */
 	@ApiField("ad_id")
 	private String adId;
@@ -45,25 +45,29 @@ public class ConversionData extends AlipayObject {
 	private String bizNo;
 
 	/**
-	 * 转化回调扩展信息
+	 * 来自：<a href='https://adpub.alipay.com/lark/adrlark/qm1v2gtpvcftele4'>监测上报</a>或<a href='https://adpub.alipay.com/lark/adrlark/gw3740rggm4n5gar'>落地页宏替换</a>配置的__CALLBACK_EXT_INFO__宏参发生用户点击替换后的值，需url decode后传回。
 	 */
 	@ApiField("callback_ext_info")
 	private String callbackExtInfo;
 
 	/**
-	 * 来自监测链接配置的__CID__宏参发生用户点击替换的值
+	 * 用于精准归因，来自：<a href='https://adpub.alipay.com/lark/adrlark/qm1v2gtpvcftele4'>监测上报</a>或<a href='https://adpub.alipay.com/lark/adrlark/gw3740rggm4n5gar'>落地页宏替换</a>配置的__CID__宏参发生用户点击替换后的值。<br>
+支持cid上报的转化事件类型请参见：<br>
+<a href='https://adpub.alipay.com/lark/adrlark/pg4vb1c0g0u6fx7b'>app推广类转化事件类型</a><br>
+<a href='https://adpub.alipay.com/lark/adrlark/rvzylhryxh37yplt'>通用类转化事件类型</a>
 	 */
 	@ApiField("cid")
 	private String cid;
 
 	/**
-	 * 转化金额，单位分
+	 * 转化金额，单位分。
+金额类转化事件必传
 	 */
 	@ApiField("conversion_amount")
 	private String conversionAmount;
 
 	/**
-	 * 当source=COMMON_CONVERSION_ID时使用
+	 * 转化事件id，当source=COMMON_CONVERSION_ID需上传该字段，其他情况无需上传。
 	 */
 	@ApiField("conversion_id")
 	private String conversionId;
@@ -81,7 +85,7 @@ public class ConversionData extends AlipayObject {
 	private String conversionType;
 
 	/**
-	 * 创意ID
+	 * 广告创意id，来自：<a href='https://adpub.alipay.com/lark/adrlark/qm1v2gtpvcftele4'>监测上报</a>或<a href='https://adpub.alipay.com/lark/adrlark/gw3740rggm4n5gar'>落地页宏替换</a>配置的__AD_ID__宏参发生用户点击替换后的值
 	 */
 	@ApiField("creative_id")
 	private String creativeId;
@@ -108,7 +112,7 @@ TB_LIVE -  淘宝直播 当前字段已废弃(接口升级，该参数已不再�
 	private String dataSrcType;
 
 	/**
-	 * 单元ID
+	 * 广告单元id，来自：<a href='https://adpub.alipay.com/lark/adrlark/qm1v2gtpvcftele4'>监测上报</a>或<a href='https://adpub.alipay.com/lark/adrlark/gw3740rggm4n5gar'>落地页宏替换</a>配置的__GROUP_ID__宏参发生用户点击替换后的值
 	 */
 	@ApiField("group_id")
 	private String groupId;
@@ -122,35 +126,41 @@ MERCHANT -商家自主归因
 	private String joinChannel;
 
 	/**
-	 * 计划ID
+	 * 广告计划id，来自：<a href='https://adpub.alipay.com/lark/adrlark/qm1v2gtpvcftele4'>监测上报</a>或<a href='https://adpub.alipay.com/lark/adrlark/gw3740rggm4n5gar'>落地页宏替换</a>配置的__PLAN_ID__宏参发生用户点击替换后的值
 	 */
 	@ApiField("plan_id")
 	private String planId;
 
 	/**
-	 * 商户在灯火pb端的id, 可代替principal_tag
+	 * 商户在灯火pb端的id, 可代替principal_tag。
 	 */
 	@ApiField("principal_id")
 	private String principalId;
 
 	/**
-	 * 商家标志，可代替principal_id
+	 * 商家标志，可代替principal_id。获取方法：
+<a href='https://adpub.alipay.com/lark/adrlark/sbk3vetg6ki5m4r8'>principal_tag获取sop</a><br>
 	 */
 	@ApiField("principal_tag")
 	private String principalTag;
 
 	/**
-	 * 转化归因字段列表
+	 * 转化归因字段列表。不同转化事件类型回传property_list不同。请参见回传示例：<br>
+<a href="https://adpub.alipay.com/lark/adrlark/pvbgwf72ea090877">通用类转化事件回传示例</a><br>
+<a href="https://adpub.alipay.com/lark/adrlark/kgnnk94p0p1mwbgp">APP推广类转化事件回传示例</a><br>
 	 */
 	@ApiListField("property_list")
 	@ApiField("conversion_property")
 	private List<ConversionProperty> propertyList;
 
 	/**
-	 * 来源：
-COMMON_TARGET-通用转化事件类型适用
-CALLBACK-APP推广类转化事件类型适用
-OTHER-其它
+	 * <br>
+COMMON_TARGET：<a href='https://adpub.alipay.com/lark/adrlark/rvzylhryxh37yplt'>通用类转化事件类型</a>适用<br>
+CALLBACK：<a href='https://adpub.alipay.com/lark/adrlark/pg4vb1c0g0u6fx7b'>APP推广类转化事件类型</a>适用<br>
+不同source的参数回传规则请参考：
+COMMON_TARGET：<a href='https://adpub.alipay.com/lark/adrlark/dxw7fkkdnhm45spm'>通用转化回传参数说明</a><br>
+CALLBACK：
+<a href='https://adpub.alipay.com/lark/adrlark/wxou6agg3z1o6wyn'>APP推广类转化回传参数说明</a>
 	 */
 	@ApiField("source")
 	private String source;
@@ -177,8 +187,11 @@ LIVE - 直播
 	private String targetType;
 
 	/**
-	 * 转化用户（发生真实转化的用户）唯一标识。
-当uuid_type=PID时，传2088UID（例：208801217938xxxx）
+	 * 发生转化用户的唯一标识。
+uuid_type不同，uuid传值不同：<br>
+1. 若uuid_type=【PID】：uuid为发生转化用户的2088id。若获取不到，可固定一个值后，上传callback_ext_info参数。<br>
+2. 若uuid_type=【OAID_MD5】【IDFA_MD5】【IP_UA】【CAID】【MEI】: uuid传的值为<a href='https://adpub.alipay.com/lark/adrlark/qm1v2gtpvcftele4'>监测上报</a>或<a href='https://adpub.alipay.com/lark/adrlark/gw3740rggm4n5gar'>落地页宏替换</a>配置的对应宏参下发的值<br>
+其中当uuid_type=IP_UA时：__IP__、__UA__宏参需用"_"拼接上传<br>
 	 */
 	@ApiField("uuid")
 	private String uuid;
@@ -190,12 +203,14 @@ LIVE - 直播
 	private String uuidOpenId;
 
 	/**
-	 * 通用转化事件类型数据回传可使用：PID，表示转化用户唯一标志类型。
-自建站转化事件类型可使用：PID_ENCRYPT，自建站转化事件类型编码:445~450。
-app推广类转化事件类型可使用：
-OAID_MD5：oaid md5值
-IDFA_MD5：idfa md5值
-IP+UA:ip ua拼接值
+	 * <a href='https://adpub.alipay.com/lark/adrlark/rvzylhryxh37yplt'>通用类转化事件类型：</a><br>
+uuid_type固定为PID：表示转化用户唯一标识<br>
+<a href='https://adpub.alipay.com/lark/adrlark/pg4vb1c0g0u6fx7b'>APP推广类转化事件类型：</a><br>
+OAID_MD5：表示OAID原值MD5加密后的值<br>
+IDFA_MD5：表示IDFA原值MD5加密后的值<br>
+IP_UA：表示IP_UA拼接值，以下划线拼接<br>
+CAID：表示CAID原值<br>
+IMEI：表示IMEI原值<br>
 	 */
 	@ApiField("uuid_type")
 	private String uuidType;

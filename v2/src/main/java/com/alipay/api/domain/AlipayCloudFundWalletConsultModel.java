@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 钱包查询余额接口
  *
  * @author auto create
- * @since 1.0, 2024-06-11 11:37:58
+ * @since 1.0, 2024-07-15 18:14:05
  */
 public class AlipayCloudFundWalletConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8733185356473224972L;
+	private static final long serialVersionUID = 6282562183192464144L;
 
 	/**
 	 * 钱包场景码

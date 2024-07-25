@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.auth.record.byinviter.query request
  * 
  * @author auto create
- * @since 1.0, 2024-07-10 10:27:04
+ * @since 1.0, 2024-07-12 14:57:04
  */
 public class AlipayUserAuthRecordByinviterQueryRequest implements AlipayRequest<AlipayUserAuthRecordByinviterQueryResponse> {
 

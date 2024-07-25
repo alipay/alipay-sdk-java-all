@@ -1,0 +1,68 @@
+package com.alipay.api.domain;
+
+import com.alipay.api.AlipayObject;
+import com.alipay.api.internal.mapping.ApiField;
+
+/**
+ * 账期确认结算接口
+ *
+ * @author auto create
+ * @since 1.0, 2024-07-16 10:21:50
+ */
+public class AlipayTradePeriodSettleConfirmModel extends AlipayObject {
+
+	private static final long serialVersionUID = 2755831766594513641L;
+
+	/**
+	 * 扩展字段信息
+	 */
+	@ApiField("extend_params")
+	private SettleConfirmExtendParams extendParams;
+
+	/**
+	 * 确认结算请求流水号，开发者自行生成并保证唯一性，作为业务幂等性控制
+	 */
+	@ApiField("out_request_no")
+	private String outRequestNo;
+
+	/**
+	 * 描述结算信息，json格式
+	 */
+	@ApiField("settle_info")
+	private SettleInfo settleInfo;
+
+	/**
+	 * 支付宝交易号
+	 */
+	@ApiField("trade_no")
+	private String tradeNo;
+
+	public SettleConfirmExtendParams getExtendParams() {
+		return this.extendParams;
+	}
+	public void setExtendParams(SettleConfirmExtendParams extendParams) {
+		this.extendParams = extendParams;
+	}
+
+	public String getOutRequestNo() {
+		return this.outRequestNo;
+	}
+	public void setOutRequestNo(String outRequestNo) {
+		this.outRequestNo = outRequestNo;
+	}
+
+	public SettleInfo getSettleInfo() {
+		return this.settleInfo;
+	}
+	public void setSettleInfo(SettleInfo settleInfo) {
+		this.settleInfo = settleInfo;
+	}
+
+	public String getTradeNo() {
+		return this.tradeNo;
+	}
+	public void setTradeNo(String tradeNo) {
+		this.tradeNo = tradeNo;
+	}
+
+}

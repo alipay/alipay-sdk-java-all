@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 店铺查询接口
  *
  * @author auto create
- * @since 1.0, 2024-04-18 17:34:13
+ * @since 1.0, 2024-07-11 23:23:15
  */
 public class AntMerchantExpandShopQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2528235566119667668L;
+	private static final long serialVersionUID = 4357337371866186111L;
 
 	/**
 	 * 行政区划版本，当前可传空值(取默认版本)、2022Q2、UPTODATE(取最新版本)，其中空值默认为：2020Q1版本（ address_version=''或null），想要查看版本是2022年2季度版本则传入:(address_version='2022Q2')，想要获取最新版本则传入:(address_version ='UPTODATE')
@@ -24,6 +24,18 @@ public class AntMerchantExpandShopQueryModel extends AlipayObject {
 	 */
 	@ApiField("ip_role_id")
 	private String ipRoleId;
+
+	/**
+	 * need_industry_info=0时不返回行业信息；need_industry_info=1时返回不需要审核的行业信息、审核通过的行业信息
+	 */
+	@ApiField("need_industry_info")
+	private String needIndustryInfo;
+
+	/**
+	 * need_industry_license=0时不返回行业资质；need_industry_license=1时返回审核通过的行业资质
+	 */
+	@ApiField("need_industry_license")
+	private String needIndustryLicense;
 
 	/**
 	 * 门店不置信时，是否需要返回shop_recommend_info
@@ -55,6 +67,20 @@ public class AntMerchantExpandShopQueryModel extends AlipayObject {
 	}
 	public void setIpRoleId(String ipRoleId) {
 		this.ipRoleId = ipRoleId;
+	}
+
+	public String getNeedIndustryInfo() {
+		return this.needIndustryInfo;
+	}
+	public void setNeedIndustryInfo(String needIndustryInfo) {
+		this.needIndustryInfo = needIndustryInfo;
+	}
+
+	public String getNeedIndustryLicense() {
+		return this.needIndustryLicense;
+	}
+	public void setNeedIndustryLicense(String needIndustryLicense) {
+		this.needIndustryLicense = needIndustryLicense;
 	}
 
 	public String getNeedRecommend() {

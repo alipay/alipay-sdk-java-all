@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 标准充值收款方模型
  *
  * @author auto create
- * @since 1.0, 2024-07-09 17:52:20
+ * @since 1.0, 2024-07-17 11:00:16
  */
 public class DepositPayeeInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4578358971656186528L;
+	private static final long serialVersionUID = 3751995816963122658L;
 
 	/**
 	 * 描述参与方信息的扩展属性，使用前请与支付宝工程师确认

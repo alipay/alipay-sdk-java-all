@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 钱包操作明细
  *
  * @author auto create
- * @since 1.0, 2024-04-15 11:33:43
+ * @since 1.0, 2024-07-15 17:57:44
  */
 public class WalletOperationDetails extends AlipayObject {
 
-	private static final long serialVersionUID = 1789397424983565719L;
+	private static final long serialVersionUID = 4671487862142862358L;
 
 	/**
 	 * 业务类型【枚举值】
@@ -28,7 +28,7 @@ public class WalletOperationDetails extends AlipayObject {
 	private String bizType;
 
 	/**
-	 * 总条数
+	 * 交易时间
 	 */
 	@ApiField("trans_dt")
 	private String transDt;

@@ -1,6 +1,7 @@
 package com.alipay.api.response;
 
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.domain.OpenCertifyMetaInfo;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.fincloud.generalsaas.face.check.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-07 16:32:03
+ * @since 1.0, 2024-07-19 10:12:04
  */
 public class DatadigitalFincloudGeneralsaasFaceCheckQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8817427391424297751L;
+	private static final long serialVersionUID = 1133777473485184738L;
 
 	/** 
 	 * 如果设置了need_alive_photo的值不为N，则该字段返回人脸照片的base64编码字符串。
@@ -33,13 +34,19 @@ public class DatadigitalFincloudGeneralsaasFaceCheckQueryResponse extends Alipay
 	private String certifyState;
 
 	/** 
-	 * double值，人脸图片质量分
+	 * 人脸认证元数据信息
+	 */
+	@ApiField("meta_info")
+	private OpenCertifyMetaInfo metaInfo;
+
+	/** 
+	 * 人脸图片质量分，单位为分
 	 */
 	@ApiField("quality")
 	private String quality;
 
 	/** 
-	 * 已废弃
+	 * 人脸比对分，单位分
 	 */
 	@ApiField("score")
 	private String score;
@@ -63,6 +70,13 @@ public class DatadigitalFincloudGeneralsaasFaceCheckQueryResponse extends Alipay
 	}
 	public String getCertifyState( ) {
 		return this.certifyState;
+	}
+
+	public void setMetaInfo(OpenCertifyMetaInfo metaInfo) {
+		this.metaInfo = metaInfo;
+	}
+	public OpenCertifyMetaInfo getMetaInfo( ) {
+		return this.metaInfo;
 	}
 
 	public void setQuality(String quality) {

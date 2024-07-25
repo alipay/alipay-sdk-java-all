@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单明细
  *
  * @author auto create
- * @since 1.0, 2023-05-10 10:13:17
+ * @since 1.0, 2024-07-17 17:09:50
  */
 public class OrderItem extends AlipayObject {
 
-	private static final long serialVersionUID = 6882514733348538345L;
+	private static final long serialVersionUID = 1385297877291183178L;
 
 	/**
 	 * 店铺所在具体位置
@@ -50,7 +50,7 @@ public class OrderItem extends AlipayObject {
 	private String commodityId;
 
 	/**
-	 * 订单联系人
+	 * 订单联系人，在下单是传入则会返回
 	 */
 	@ApiField("contacts")
 	private String contacts;

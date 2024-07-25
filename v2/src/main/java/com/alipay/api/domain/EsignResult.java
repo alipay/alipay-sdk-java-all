@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签约信息结果
  *
  * @author auto create
- * @since 1.0, 2024-04-01 15:52:50
+ * @since 1.0, 2024-07-15 20:32:15
  */
 public class EsignResult extends AlipayObject {
 
-	private static final long serialVersionUID = 1192956885534598415L;
+	private static final long serialVersionUID = 6129153966764582279L;
 
 	/**
 	 * 用工企业和用户以及税筹服务商签订的三方协议的协议ID
@@ -49,6 +49,18 @@ SUMMARY_DECLARATION（汇总申报）
 	 */
 	@ApiField("employee_alipay_logon_id")
 	private String employeeAlipayLogonId;
+
+	/**
+	 * 雇员身份标识
+	 */
+	@ApiField("employee_identification")
+	private String employeeIdentification;
+
+	/**
+	 * 雇员身份标识的openid
+	 */
+	@ApiField("employee_identification_open_id")
+	private String employeeIdentificationOpenId;
 
 	/**
 	 * 用工企业入驻后平台后，平台提供的企业编码
@@ -150,6 +162,20 @@ DIRECT_PAYMENT（直接发薪）
 	}
 	public void setEmployeeAlipayLogonId(String employeeAlipayLogonId) {
 		this.employeeAlipayLogonId = employeeAlipayLogonId;
+	}
+
+	public String getEmployeeIdentification() {
+		return this.employeeIdentification;
+	}
+	public void setEmployeeIdentification(String employeeIdentification) {
+		this.employeeIdentification = employeeIdentification;
+	}
+
+	public String getEmployeeIdentificationOpenId() {
+		return this.employeeIdentificationOpenId;
+	}
+	public void setEmployeeIdentificationOpenId(String employeeIdentificationOpenId) {
+		this.employeeIdentificationOpenId = employeeIdentificationOpenId;
 	}
 
 	public String getEmployerCode() {

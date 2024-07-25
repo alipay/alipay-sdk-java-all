@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoCityserviceIndustryEnergyCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3438516621143825858L;
+	private static final long serialVersionUID = 4155972896438855665L;
 
 	/** 
 	 * 返回场景下的额度检查结果，有额度limited=false，无额度limited=true

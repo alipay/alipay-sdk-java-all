@@ -7,14 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政务监管账户创建
  *
  * @author auto create
- * @since 1.0, 2024-06-28 09:58:16
+ * @since 1.0, 2024-07-19 16:16:51
  */
 public class AlipayEbppIndustrySupervisionAccountCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5468737574641175496L;
+	private static final long serialVersionUID = 6235925481525578949L;
 
 	/**
-	 * 不同的业务场景下对应不同的业务规则
+	 * 1:  支持异名打款 自动退  0: 不支持 。 默认为 1
+	 */
+	@ApiField("auto_refund")
+	private String autoRefund;
+
+	/**
+	 * 不同的业务场景走不同业务规则
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
@@ -39,7 +45,7 @@ public class AlipayEbppIndustrySupervisionAccountCreateModel extends AlipayObjec
 	private String outUserId;
 
 	/**
-	 * 协会、商户在银行侧自行创建的结算户账户户名
+	 * 协会、商户在银行侧自行创建的结算户账户户名，创建子户时由服务商调用接口传入
 	 */
 	@ApiField("parent_ext_account_name")
 	private String parentExtAccountName;
@@ -69,7 +75,7 @@ public class AlipayEbppIndustrySupervisionAccountCreateModel extends AlipayObjec
 	private String payeeParticipantId;
 
 	/**
-	 * 业务场景为专款钱包 SPECIAL_FUNDS 场景下。子户转出时的收款方账户户名
+	 * 业务场景为专款钱包 SPECIAL_FUNDS 场景下。子户转出时的收款方账户户名。
 	 */
 	@ApiField("payee_participant_name")
 	private String payeeParticipantName;
@@ -87,7 +93,7 @@ public class AlipayEbppIndustrySupervisionAccountCreateModel extends AlipayObjec
 	private String payerParticipantId;
 
 	/**
-	 * 业务场景为专款钱包 SPECIAL_FUNDS 场景下。转入子户时的付款方账户户名
+	 * 业务场景为专款钱包 SPECIAL_FUNDS 场景下。转入子户时的付款方账户户名,在后续资金划拨请求中会校验资金划拨请求中的收方账户户名是否是本次开户请求的收款方账户户名或者是付款方账户户名
 	 */
 	@ApiField("payer_participant_name")
 	private String payerParticipantName;
@@ -115,6 +121,13 @@ public class AlipayEbppIndustrySupervisionAccountCreateModel extends AlipayObjec
 	 */
 	@ApiField("sub_account_type")
 	private String subAccountType;
+
+	public String getAutoRefund() {
+		return this.autoRefund;
+	}
+	public void setAutoRefund(String autoRefund) {
+		this.autoRefund = autoRefund;
+	}
 
 	public String getBizScene() {
 		return this.bizScene;

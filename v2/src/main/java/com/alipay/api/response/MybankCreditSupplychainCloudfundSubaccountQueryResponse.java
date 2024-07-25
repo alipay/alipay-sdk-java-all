@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.supplychain.cloudfund.subaccount.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-11 17:07:03
+ * @since 1.0, 2024-07-25 10:39:55
  */
 public class MybankCreditSupplychainCloudfundSubaccountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1771817918173215739L;
+	private static final long serialVersionUID = 3175777122633443192L;
 
 	/** 
 	 * 云资金账户号，也是账户外标

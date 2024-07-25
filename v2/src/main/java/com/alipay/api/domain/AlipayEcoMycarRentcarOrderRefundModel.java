@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝租车订单退款
  *
  * @author auto create
- * @since 1.0, 2024-03-12 15:21:49
+ * @since 1.0, 2024-07-19 20:30:15
  */
 public class AlipayEcoMycarRentcarOrderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5553166251787255623L;
+	private static final long serialVersionUID = 5829442493912678616L;
 
 	/**
 	 * 支付宝用户开放平台id

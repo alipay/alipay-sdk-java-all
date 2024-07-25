@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业个性化信息
  *
  * @author auto create
- * @since 1.0, 2024-07-04 19:16:48
+ * @since 1.0, 2024-07-17 10:07:38
  */
 public class EnterpriseProfilesDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3578129197224454452L;
+	private static final long serialVersionUID = 3652636292959585232L;
 
 	/**
 	 * 是否需创建企业人脸库，适用于对接团餐刷脸付、门禁刷脸通行等场景；不传默认为 false，传 true 时会自动创建 IOT 设备企业人脸库，人脸库创建失败会阻塞企业的创建。

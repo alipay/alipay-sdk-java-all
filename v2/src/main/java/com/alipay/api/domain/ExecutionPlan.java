@@ -7,26 +7,26 @@ import com.alipay.api.internal.mapping.ApiField;
  * 周期扣还款计划
  *
  * @author auto create
- * @since 1.0, 2024-06-25 15:31:36
+ * @since 1.0, 2024-07-23 20:21:14
  */
 public class ExecutionPlan extends AlipayObject {
 
-	private static final long serialVersionUID = 3467759353842392226L;
+	private static final long serialVersionUID = 1763327794416325491L;
 
 	/**
-	 * 周期扣预期执行时间
+	 * 周期扣预期执行时间，格式为YYYY-MM-DD
 	 */
 	@ApiField("execute_time")
 	private String executeTime;
 
 	/**
-	 * 周期扣执行计划最晚执行时间
+	 * 周期扣执行计划最晚执行时间，格式为YYYY-MM-DD
 	 */
 	@ApiField("latest_execute_time")
 	private String latestExecuteTime;
 
 	/**
-	 * 周期扣期数
+	 * 该值为自然数，表示周期扣期数。
 	 */
 	@ApiField("period_id")
 	private String periodId;

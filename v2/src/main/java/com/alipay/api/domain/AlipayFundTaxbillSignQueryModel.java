@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户签约结果信息
  *
  * @author auto create
- * @since 1.0, 2024-06-27 10:53:38
+ * @since 1.0, 2024-07-22 20:05:48
  */
 public class AlipayFundTaxbillSignQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7826819621761993421L;
+	private static final long serialVersionUID = 7136849191554762999L;
 
 	/**
 	 * 场景码，固定值：SIGN
@@ -32,7 +32,7 @@ public class AlipayFundTaxbillSignQueryModel extends AlipayObject {
 	private String employerCode;
 
 	/**
-	 * 用户在用工企业的唯一性身份标识，用户单位自定义参数，用于用工单位识别雇员身份
+	 * 用户在用工企业的唯一性身份标识，用工企业自定义参数，用于用工企业识别雇员身份
 	 */
 	@ApiField("identification_in_belonging_employer")
 	private String identificationInBelongingEmployer;

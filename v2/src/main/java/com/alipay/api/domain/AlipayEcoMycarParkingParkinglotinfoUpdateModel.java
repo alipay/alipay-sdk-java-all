@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改停车场信息
  *
  * @author auto create
- * @since 1.0, 2023-03-30 15:43:33
+ * @since 1.0, 2024-07-24 10:28:52
  */
 public class AlipayEcoMycarParkingParkinglotinfoUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5249889455279449232L;
+	private static final long serialVersionUID = 3226563449127498936L;
 
 	/**
 	 * 服务商ID（2088开头的16位纯数字），由服务商提供给ISV

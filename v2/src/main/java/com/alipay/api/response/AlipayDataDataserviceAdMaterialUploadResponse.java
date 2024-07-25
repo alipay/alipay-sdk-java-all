@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.ad.material.upload response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-25 19:41:40
+ * @since 1.0, 2024-07-19 17:27:03
  */
 public class AlipayDataDataserviceAdMaterialUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3689329267264371941L;
+	private static final long serialVersionUID = 5626985342167395151L;
 
 	/** 
 	 * 广告投放平台生成的物料实例ID

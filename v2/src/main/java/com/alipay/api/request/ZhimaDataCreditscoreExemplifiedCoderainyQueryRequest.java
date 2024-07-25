@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.data.creditscore.exemplified.coderainy.query request
  * 
  * @author auto create
- * @since 1.0, 2024-07-10 10:05:38
+ * @since 1.0, 2024-07-17 14:22:05
  */
 public class ZhimaDataCreditscoreExemplifiedCoderainyQueryRequest implements AlipayRequest<ZhimaDataCreditscoreExemplifiedCoderainyQueryResponse> {
 

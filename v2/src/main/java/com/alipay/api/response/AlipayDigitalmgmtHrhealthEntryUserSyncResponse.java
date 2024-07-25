@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.digitalmgmt.hrhealth.entry.user.sync response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-20 10:51:59
+ * @since 1.0, 2024-07-25 15:02:04
  */
 public class AlipayDigitalmgmtHrhealthEntryUserSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6646828879965452121L;
+	private static final long serialVersionUID = 2743146397391982929L;
 
 	
 

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 缴费账单模型
  *
  * @author auto create
- * @since 1.0, 2021-07-28 12:10:09
+ * @since 1.0, 2024-07-16 19:45:05
  */
 public class TransferPaymentBill extends AlipayObject {
 
-	private static final long serialVersionUID = 3875371164946558886L;
+	private static final long serialVersionUID = 2314715366849953494L;
 
 	/**
 	 * 账单用户信息
@@ -27,6 +27,12 @@ public class TransferPaymentBill extends AlipayObject {
 	 */
 	@ApiField("bill_amount")
 	private TransferAmount billAmount;
+
+	/**
+	 * 账单提供方
+	 */
+	@ApiField("bill_provide_agency")
+	private String billProvideAgency;
 
 	/**
 	 * 渠道付款参考号
@@ -89,6 +95,13 @@ public class TransferPaymentBill extends AlipayObject {
 	}
 	public void setBillAmount(TransferAmount billAmount) {
 		this.billAmount = billAmount;
+	}
+
+	public String getBillProvideAgency() {
+		return this.billProvideAgency;
+	}
+	public void setBillProvideAgency(String billProvideAgency) {
+		this.billProvideAgency = billProvideAgency;
 	}
 
 	public String getChannelPaymentRef() {

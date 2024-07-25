@@ -10,17 +10,36 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 物流运单信息
  *
  * @author auto create
- * @since 1.0, 2024-04-11 15:30:52
+ * @since 1.0, 2024-07-22 11:28:13
  */
 public class LogisticsWaybill extends AlipayObject {
 
-	private static final long serialVersionUID = 3577982867385922366L;
+	private static final long serialVersionUID = 6334948675446167983L;
+
+	/**
+	 * 用户自行寄件退货时填写的补充描述
+	 */
+	@ApiField("additional_reason")
+	private String additionalReason;
 
 	/**
 	 * 物流公司编号
 	 */
 	@ApiField("logistics_code")
 	private String logisticsCode;
+
+	/**
+	 * 用户自行寄回商品时，补充上传的证明图片和视频信息
+	 */
+	@ApiListField("logistics_media_list")
+	@ApiField("order_media_info")
+	private List<OrderMediaInfo> logisticsMediaList;
+
+	/**
+	 * 退货寄送方式
+	 */
+	@ApiField("return_delivery_type")
+	private String returnDeliveryType;
 
 	/**
 	 * 状态
@@ -41,11 +60,32 @@ public class LogisticsWaybill extends AlipayObject {
 	@ApiField("waybill_no")
 	private String waybillNo;
 
+	public String getAdditionalReason() {
+		return this.additionalReason;
+	}
+	public void setAdditionalReason(String additionalReason) {
+		this.additionalReason = additionalReason;
+	}
+
 	public String getLogisticsCode() {
 		return this.logisticsCode;
 	}
 	public void setLogisticsCode(String logisticsCode) {
 		this.logisticsCode = logisticsCode;
+	}
+
+	public List<OrderMediaInfo> getLogisticsMediaList() {
+		return this.logisticsMediaList;
+	}
+	public void setLogisticsMediaList(List<OrderMediaInfo> logisticsMediaList) {
+		this.logisticsMediaList = logisticsMediaList;
+	}
+
+	public String getReturnDeliveryType() {
+		return this.returnDeliveryType;
+	}
+	public void setReturnDeliveryType(String returnDeliveryType) {
+		this.returnDeliveryType = returnDeliveryType;
 	}
 
 	public String getStatus() {

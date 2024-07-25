@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 投诉详情查询结果
  *
  * @author auto create
- * @since 1.0, 2023-06-06 14:21:44
+ * @since 1.0, 2024-07-12 14:25:51
  */
 public class ComplaintInfoQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 1537815978754693637L;
+	private static final long serialVersionUID = 4437788625279538362L;
 
 	/**
 	 * 投诉单涉及交易总金额（单位：人民币元）
@@ -49,13 +49,13 @@ public class ComplaintInfoQueryResponse extends AlipayObject {
 	private Date gmtComplain;
 
 	/**
-	 * 过期时间
+	 * 过期时间，精确到秒
 	 */
 	@ApiField("gmt_overdue")
 	private Date gmtOverdue;
 
 	/**
-	 * 处理时间
+	 * 处理时间，精确到秒
 	 */
 	@ApiField("gmt_process")
 	private Date gmtProcess;

@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品列表
  *
  * @author auto create
- * @since 1.0, 2024-04-11 15:30:52
+ * @since 1.0, 2024-07-22 10:21:35
  */
 public class AftersaleItemInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8286784915798221482L;
+	private static final long serialVersionUID = 3596639991552466373L;
 
 	/**
-	 * 商品数量
+	 * 商品数量,单位:"个"
 	 */
 	@ApiField("item_cnt")
 	private String itemCnt;

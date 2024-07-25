@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 上传图片或视频物料
  *
  * @author auto create
- * @since 1.0, 2024-05-23 19:23:41
+ * @since 1.0, 2024-07-19 17:24:15
  */
 public class AlipayDataDataserviceAdMaterialUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1711761746445263157L;
+	private static final long serialVersionUID = 6227463796563124237L;
 
 	/**
 	 * SUBSCRIPT_COMMON-角标专用
@@ -48,6 +48,12 @@ TAI_ZHI_PU(11,"泰之菩");
 	 */
 	@ApiField("deal_type")
 	private String dealType;
+
+	/**
+	 * 上传图片/视频物料对应的外部id，需要保证唯一
+	 */
+	@ApiField("material_outer_id")
+	private String materialOuterId;
 
 	/**
 	 * 物料元素
@@ -94,6 +100,13 @@ ACTION-交互动作物料
 	}
 	public void setDealType(String dealType) {
 		this.dealType = dealType;
+	}
+
+	public String getMaterialOuterId() {
+		return this.materialOuterId;
+	}
+	public void setMaterialOuterId(String materialOuterId) {
+		this.materialOuterId = materialOuterId;
 	}
 
 	public UploadMaterial getMaterialUnit() {

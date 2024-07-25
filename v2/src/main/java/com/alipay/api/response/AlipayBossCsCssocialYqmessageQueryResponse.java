@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBossCsCssocialYqmessageQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6399723289783962545L;
+	private static final long serialVersionUID = 2496424744552929892L;
 
 	/** 
 	 * 返回的舆情数据结果字符串。舆情数据及信息存放在JSON字符串中，如舆情的标题（title）、内容（content）等

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 星云删除用户
  *
  * @author auto create
- * @since 1.0, 2024-04-08 16:07:08
+ * @since 1.0, 2024-07-25 14:07:14
  */
 public class AlipayIserviceIsresourceapiBizuserDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6825974558437134274L;
+	private static final long serialVersionUID = 5349275463463898663L;
 
 	/**
 	 * 业务方用户id

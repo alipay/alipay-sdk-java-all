@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 测试新增sdl地址
  *
  * @author auto create
- * @since 1.0, 2024-07-09 16:52:08
+ * @since 1.0, 2024-07-12 13:47:39
  */
 public class AlipayDataDataserviceDdQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4826249388158321657L;
+	private static final long serialVersionUID = 4295885945392646973L;
 
 	/**
 	 * 金额，单位元

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 异步退款受理接口
  *
  * @author auto create
- * @since 1.0, 2022-03-10 10:41:53
+ * @since 1.0, 2024-07-23 16:36:15
  */
 public class AlipayTradeRefundApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7622132467559953212L;
+	private static final long serialVersionUID = 3711682795386626847L;
 
 	/**
 	 * 商户传入业务信息，具体值要和支付宝约定，格式为json格式。

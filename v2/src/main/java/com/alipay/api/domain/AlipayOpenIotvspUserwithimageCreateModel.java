@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 录入机构用户信息（人员图片可选）
  *
  * @author auto create
- * @since 1.0, 2024-05-21 10:48:16
+ * @since 1.0, 2024-07-19 17:44:50
  */
 public class AlipayOpenIotvspUserwithimageCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5667541823332885579L;
+	private static final long serialVersionUID = 4595799367562324591L;
 
 	/**
 	 * false-不下发本地库
@@ -21,7 +21,7 @@ true-下发本地库
 	private Boolean bioInClient;
 
 	/**
-	 * 姓名
+	 * 姓名，三要素入库必填
 	 */
 	@ApiField("cert_name")
 	private String certName;
@@ -39,13 +39,13 @@ true-下发本地库
 	private String certType;
 
 	/**
-	 * 组件编码，该参数与userInfoList配对使用。详见接入指南
+	 * 组件编码，详见接入指南
 	 */
 	@ApiField("component_out_id")
 	private String componentOutId;
 
 	/**
-	 * 扩展信息，ISV自定义，如无可为空
+	 * 扩展信息，服务商自定义，如无可为空
 	 */
 	@ApiField("ext")
 	private String ext;
@@ -63,13 +63,13 @@ true-下发本地库
 	private String image;
 
 	/**
-	 * ISV的PID
+	 * 服务商传入服务商的PID
 	 */
 	@ApiField("isv_pid")
 	private String isvPid;
 
 	/**
-	 * 标签外标最多5个
+	 * 自定义标签
 	 */
 	@ApiField("label_out_no")
 	private String labelOutNo;

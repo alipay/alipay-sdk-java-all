@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 标准充值付款方模型
  *
  * @author auto create
- * @since 1.0, 2024-07-09 17:52:20
+ * @since 1.0, 2024-07-17 11:00:16
  */
 public class DepositPayerInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2152889142425786493L;
+	private static final long serialVersionUID = 1836546521927445282L;
 
 	/**
 	 * 描述参与方信息的扩展属性，使用前请与支付宝工程师确认
@@ -27,10 +27,18 @@ public class DepositPayerInfoDTO extends AlipayObject {
 
 	/**
 	 * 参与方的标识类型，目前支持如下类型：
-1、ALIPAY_USER_ID 支付宝的会员ID
+1、ALIPAY_USER_ID 支付宝的会员ID 
+2、ALIPAY_LOGON_ID：支付宝登录号，支持邮箱和手机号格式 
+3、ALIPAY_OPEN_ID：支付宝openid
 	 */
 	@ApiField("identity_type")
 	private String identityType;
+
+	/**
+	 * 参与方真实姓名，如果非空，将校验收款支付宝账号姓名一致性。
+	 */
+	@ApiField("name")
+	private String name;
 
 	public RepaymentParticipantExtInfo getExtInfo() {
 		return this.extInfo;
@@ -51,6 +59,13 @@ public class DepositPayerInfoDTO extends AlipayObject {
 	}
 	public void setIdentityType(String identityType) {
 		this.identityType = identityType;
+	}
+
+	public String getName() {
+		return this.name;
+	}
+	public void setName(String name) {
+		this.name = name;
 	}
 
 }

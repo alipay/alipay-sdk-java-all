@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.account.instfund.allocation.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-25 09:45:27
+ * @since 1.0, 2024-07-24 17:24:05
  */
 public class AlipayAccountInstfundAllocationBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7518932947386311144L;
+	private static final long serialVersionUID = 7776133517687913625L;
 
 	/** 
 	 * 页码

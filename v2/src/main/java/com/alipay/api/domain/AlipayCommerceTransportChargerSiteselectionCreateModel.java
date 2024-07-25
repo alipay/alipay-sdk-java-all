@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建数据查询任务
  *
  * @author auto create
- * @since 1.0, 2024-06-24 10:27:53
+ * @since 1.0, 2024-07-15 16:11:52
  */
 public class AlipayCommerceTransportChargerSiteselectionCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6567389539595655574L;
+	private static final long serialVersionUID = 7873317237955176215L;
 
 	/**
 	 * 数据计算任务条件
@@ -20,7 +20,7 @@ public class AlipayCommerceTransportChargerSiteselectionCreateModel extends Alip
 	private SiteSelectionParam siteSelectionParam;
 
 	/**
-	 * 数据计算任务模板编码
+	 * 数据计算任务模板编码，请按需求传入指定枚举类型传值
 	 */
 	@ApiField("template_code")
 	private String templateCode;

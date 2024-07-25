@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝租车商户通知续租确认结果接口
  *
  * @author auto create
- * @since 1.0, 2024-04-29 09:59:11
+ * @since 1.0, 2024-07-17 14:35:15
  */
 public class AlipayEcoMycarRentcarOrdermodifyConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2183357592736752481L;
+	private static final long serialVersionUID = 6631127718766454167L;
 
 	/**
 	 * 若拒绝修改，则车生活会取消修改订单并给用户退款

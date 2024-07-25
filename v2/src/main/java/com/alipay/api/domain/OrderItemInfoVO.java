@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品信息
  *
  * @author auto create
- * @since 1.0, 2024-05-30 16:06:18
+ * @since 1.0, 2024-07-15 15:44:16
  */
 public class OrderItemInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4639851967492465699L;
+	private static final long serialVersionUID = 1294664684859938935L;
 
 	/**
 	 * 商品数量
@@ -33,6 +33,12 @@ public class OrderItemInfoVO extends AlipayObject {
 	 */
 	@ApiField("item_refund_info")
 	private ItemRefundInfoVO itemRefundInfo;
+
+	/**
+	 * 商品标签列表
+	 */
+	@ApiField("item_tags")
+	private ItemTagVO itemTags;
 
 	/**
 	 * 本地生活商品凭证信息列表
@@ -58,6 +64,12 @@ public class OrderItemInfoVO extends AlipayObject {
 	 */
 	@ApiField("sale_price")
 	private String salePrice;
+
+	/**
+	 * 发货时效
+	 */
+	@ApiField("shipping_time_limit")
+	private ShippingTimeLimitVO shippingTimeLimit;
 
 	/**
 	 * 支付宝侧商品skuid
@@ -86,6 +98,13 @@ public class OrderItemInfoVO extends AlipayObject {
 		this.itemRefundInfo = itemRefundInfo;
 	}
 
+	public ItemTagVO getItemTags() {
+		return this.itemTags;
+	}
+	public void setItemTags(ItemTagVO itemTags) {
+		this.itemTags = itemTags;
+	}
+
 	public List<OrderCertificateInfoVO> getOrderCertificateInfos() {
 		return this.orderCertificateInfos;
 	}
@@ -112,6 +131,13 @@ public class OrderItemInfoVO extends AlipayObject {
 	}
 	public void setSalePrice(String salePrice) {
 		this.salePrice = salePrice;
+	}
+
+	public ShippingTimeLimitVO getShippingTimeLimit() {
+		return this.shippingTimeLimit;
+	}
+	public void setShippingTimeLimit(ShippingTimeLimitVO shippingTimeLimit) {
+		this.shippingTimeLimit = shippingTimeLimit;
 	}
 
 	public String getSkuId() {

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.auth.record.byinviter.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-10 10:27:04
+ * @since 1.0, 2024-07-12 14:57:04
  */
 public class AlipayUserAuthRecordByinviterQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2487512676958356196L;
+	private static final long serialVersionUID = 4648764975351837812L;
 
 	/** 
 	 * 获取签名后的业务数据

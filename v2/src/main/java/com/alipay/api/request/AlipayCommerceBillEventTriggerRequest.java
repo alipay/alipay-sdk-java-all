@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.bill.event.trigger request
  * 
  * @author auto create
- * @since 1.0, 2024-06-24 10:42:04
+ * @since 1.0, 2024-07-15 20:52:05
  */
 public class AlipayCommerceBillEventTriggerRequest implements AlipayRequest<AlipayCommerceBillEventTriggerResponse> {
 

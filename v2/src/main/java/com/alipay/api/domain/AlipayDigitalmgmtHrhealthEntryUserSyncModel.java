@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 同步候选人体检状态的接口
  *
  * @author auto create
- * @since 1.0, 2024-03-20 10:50:16
+ * @since 1.0, 2024-07-25 14:57:16
  */
 public class AlipayDigitalmgmtHrhealthEntryUserSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3281969431957785194L;
+	private static final long serialVersionUID = 5197161517986791125L;
 
 	/**
 	 * 该参数为候选人在供应商系统预约时选择的机构名称，由候选人选择体检机构后确定传入，字符串，蚂蚁系统接收后存入数据库用于后续业务操作，候选人预约成功时传入
@@ -20,7 +20,7 @@ public class AlipayDigitalmgmtHrhealthEntryUserSyncModel extends AlipayObject {
 	private String agencyName;
 
 	/**
-	 * 证件类型，该参数为候选人在供应商机构体检时出示的有效证件，由候选人去现场体检后传回，字符串，蚂蚁系统接收之后用于校验是否为本人参加体检，候选人到检后传入
+	 * 证件名字，该参数为候选人在供应商机构体检时出示的有效证件，由候选人去现场体检后传回，字符串，蚂蚁系统接收之后用于校验是否为本人参加体检，候选人到检后传入
 	 */
 	@ApiField("cert_genre")
 	private String certGenre;

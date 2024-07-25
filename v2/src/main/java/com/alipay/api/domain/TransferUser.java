@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户模型
  *
  * @author auto create
- * @since 1.0, 2021-07-28 12:10:09
+ * @since 1.0, 2024-07-16 19:45:05
  */
 public class TransferUser extends AlipayObject {
 
-	private static final long serialVersionUID = 1299427781556784449L;
+	private static final long serialVersionUID = 7447229435245192169L;
 
 	/**
 	 * 生日
@@ -24,6 +24,12 @@ public class TransferUser extends AlipayObject {
 	 */
 	@ApiField("credential")
 	private TransferCredential credential;
+
+	/**
+	 * 用户性别：Male/Female
+	 */
+	@ApiField("gender")
+	private String gender;
 
 	/**
 	 * 国籍
@@ -73,6 +79,13 @@ public class TransferUser extends AlipayObject {
 	}
 	public void setCredential(TransferCredential credential) {
 		this.credential = credential;
+	}
+
+	public String getGender() {
+		return this.gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
 	}
 
 	public String getNationality() {

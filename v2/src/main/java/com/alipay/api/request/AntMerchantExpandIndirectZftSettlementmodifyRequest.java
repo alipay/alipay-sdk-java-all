@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.expand.indirect.zft.settlementmodify request
  * 
  * @author auto create
- * @since 1.0, 2024-06-04 11:06:02
+ * @since 1.0, 2024-07-11 22:02:04
  */
 public class AntMerchantExpandIndirectZftSettlementmodifyRequest implements AlipayRequest<AntMerchantExpandIndirectZftSettlementmodifyResponse> {
 

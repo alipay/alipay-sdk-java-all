@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗行业商业化会员卡兑换凭证同步接口
  *
  * @author auto create
- * @since 1.0, 2024-03-13 10:03:48
+ * @since 1.0, 2024-07-18 18:51:14
  */
 public class AlipayCommerceMedicalCommercialCertificateSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6895983555853686853L;
+	private static final long serialVersionUID = 6895732491289472348L;
 
 	/**
 	 * 用户兑换凭证的实际业务时间，默认为系统当前时间

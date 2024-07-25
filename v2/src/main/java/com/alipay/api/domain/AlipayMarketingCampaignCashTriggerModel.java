@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCampaignCashTriggerModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8471629378911682512L;
+	private static final long serialVersionUID = 3245131136672132968L;
 
 	/**
 	 * 现金活动号，通过<a href="https://opendocs.alipay.com/apis/api_5/alipay.marketing.campaign.cash.create">alipay.marketing.campaign.cash.create</a>(创建现金活动)接口创建现金活动获取。

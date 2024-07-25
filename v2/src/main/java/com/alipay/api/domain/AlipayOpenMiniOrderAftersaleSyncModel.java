@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家售后处理结果同步
  *
  * @author auto create
- * @since 1.0, 2024-06-17 19:29:51
+ * @since 1.0, 2024-07-12 21:39:16
  */
 public class AlipayOpenMiniOrderAftersaleSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7258853887552546762L;
+	private static final long serialVersionUID = 2782578383613684313L;
 
 	/**
 	 * 操作code
@@ -76,6 +76,13 @@ public class AlipayOpenMiniOrderAftersaleSyncModel extends AlipayObject {
 	 */
 	@ApiField("out_order_id")
 	private String outOrderId;
+
+	/**
+	 * 商家退款成功的外部退款单号,对应alipay.trade.refund(统一收单交易退款接口)的out_request_no
+	 */
+	@ApiListField("out_refund_request_no_list")
+	@ApiField("string")
+	private List<String> outRefundRequestNoList;
 
 	/**
 	 * 退货寄送方式
@@ -159,6 +166,13 @@ action_code为201时可选填入,
 	}
 	public void setOutOrderId(String outOrderId) {
 		this.outOrderId = outOrderId;
+	}
+
+	public List<String> getOutRefundRequestNoList() {
+		return this.outRefundRequestNoList;
+	}
+	public void setOutRefundRequestNoList(List<String> outRefundRequestNoList) {
+		this.outRefundRequestNoList = outRefundRequestNoList;
 	}
 
 	public String getReturnDeliveryType() {

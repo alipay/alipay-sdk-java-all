@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * openbizmock应用的创建功能性接口
  *
  * @author auto create
- * @since 1.0, 2023-01-10 19:51:52
+ * @since 1.0, 2024-07-23 12:05:45
  */
 public class AlipayOpenOpenbizmocktoolsCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7681859965373368699L;
+	private static final long serialVersionUID = 2524378736484862921L;
 
 	/**
 	 * 接口赋权

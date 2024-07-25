@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenServicemarketQrcodeOfflineGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4229151135697183561L;
+	private static final long serialVersionUID = 3145861474324297939L;
 
 	/** 
 	 * 服务logo，该字段是服务的logo，用于前端展示

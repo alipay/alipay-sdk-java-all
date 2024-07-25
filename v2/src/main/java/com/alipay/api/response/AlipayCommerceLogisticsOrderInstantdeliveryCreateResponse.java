@@ -8,20 +8,20 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.logistics.order.instantdelivery.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-01 23:33:59
+ * @since 1.0, 2024-07-16 14:42:54
  */
 public class AlipayCommerceLogisticsOrderInstantdeliveryCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3623937722124978823L;
+	private static final long serialVersionUID = 3193825346432241739L;
 
 	/** 
-	 * 优惠券费用
+	 * 优惠券费用，单位元
 	 */
 	@ApiField("coupon_fee")
 	private String couponFee;
 
 	/** 
-	 * 运费
+	 * 运费，单位元
 	 */
 	@ApiField("deliver_fee")
 	private String deliverFee;
@@ -39,7 +39,7 @@ public class AlipayCommerceLogisticsOrderInstantdeliveryCreateResponse extends A
 	private Long distance;
 
 	/** 
-	 * 实际运费
+	 * 实际运费，单位元
 	 */
 	@ApiField("fee")
 	private String fee;
@@ -51,7 +51,7 @@ public class AlipayCommerceLogisticsOrderInstantdeliveryCreateResponse extends A
 	private String finishCode;
 
 	/** 
-	 * 保价费用
+	 * 保价费用，单位元
 	 */
 	@ApiField("insurance_fee")
 	private String insuranceFee;
@@ -63,7 +63,7 @@ public class AlipayCommerceLogisticsOrderInstantdeliveryCreateResponse extends A
 	private String orderNo;
 
 	/** 
-	 * 支付金额, 实际扣减的费用以此字段为准
+	 * 支付金额, 实际扣减的费用以此字段为准，单位元
 	 */
 	@ApiField("pay_amount")
 	private String payAmount;

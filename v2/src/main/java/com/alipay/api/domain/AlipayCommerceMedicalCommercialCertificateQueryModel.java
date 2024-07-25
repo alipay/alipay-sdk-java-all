@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗行业商业化会员卡兑换凭证查询接口
  *
  * @author auto create
- * @since 1.0, 2024-03-13 10:03:27
+ * @since 1.0, 2024-07-18 18:50:35
  */
 public class AlipayCommerceMedicalCommercialCertificateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1245886559426562646L;
+	private static final long serialVersionUID = 7518169581263566631L;
 
 	/**
 	 * 用户openid，唯一映射用户userid，用于唯一标识用户

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 根据邀请人查询邀请单信息
  *
  * @author auto create
- * @since 1.0, 2024-07-10 10:23:56
+ * @since 1.0, 2024-07-12 13:29:50
  */
 public class AlipayUserAuthRecordByinviterQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3784183842544524549L;
+	private static final long serialVersionUID = 3727942961621823626L;
 
 	/**
 	 * true：过滤过期数据；

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 线上资金授权冻结接口
  *
  * @author auto create
- * @since 1.0, 2024-06-05 10:59:55
+ * @since 1.0, 2024-07-12 16:55:08
  */
 public class AlipayFundAuthOrderAppFreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4767881539513359218L;
+	private static final long serialVersionUID = 3257268178867111271L;
 
 	/**
 	 * 需要冻结的金额，单位为：元（人民币），精确到小数点后两位。

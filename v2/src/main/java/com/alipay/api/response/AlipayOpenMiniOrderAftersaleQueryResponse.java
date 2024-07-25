@@ -4,6 +4,7 @@ import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.AftersaleItemInfo;
+import com.alipay.api.domain.OrderMediaInfo;
 import com.alipay.api.domain.LogisticsWaybill;
 
 import com.alipay.api.AlipayResponse;
@@ -12,17 +13,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.order.aftersale.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-18 16:32:01
+ * @since 1.0, 2024-07-22 11:32:05
  */
 public class AlipayOpenMiniOrderAftersaleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4714614662846195814L;
+	private static final long serialVersionUID = 8181223171672463845L;
 
 	/** 
 	 * 售后单触发类型
 	 */
 	@ApiField("action_type")
 	private String actionType;
+
+	/** 
+	 * 创建售后单时用户填写的补充描述
+	 */
+	@ApiField("additional_reason")
+	private String additionalReason;
 
 	/** 
 	 * 商品列表
@@ -38,10 +45,29 @@ public class AlipayOpenMiniOrderAftersaleQueryResponse extends AlipayResponse {
 	private String aftersaleId;
 
 	/** 
+	 * 用户通过标准售后组件申请售后时，上传的证明图片和视频信息
+	 */
+	@ApiListField("aftersale_media_list")
+	@ApiField("order_media_info")
+	private List<OrderMediaInfo> aftersaleMediaList;
+
+	/** 
 	 * 用户售后发起原因
 	 */
 	@ApiField("aftersale_reason")
 	private String aftersaleReason;
+
+	/** 
+	 * 申请退款金额，单位：元,精确到小数点后两位
+	 */
+	@ApiField("apply_refund_amount")
+	private String applyRefundAmount;
+
+	/** 
+	 * 最终退款金额，单位：元,精确到小数点后两位
+	 */
+	@ApiField("finally_refund_amount")
+	private String finallyRefundAmount;
 
 	/** 
 	 * 物流单详情
@@ -93,6 +119,13 @@ public class AlipayOpenMiniOrderAftersaleQueryResponse extends AlipayResponse {
 		return this.actionType;
 	}
 
+	public void setAdditionalReason(String additionalReason) {
+		this.additionalReason = additionalReason;
+	}
+	public String getAdditionalReason( ) {
+		return this.additionalReason;
+	}
+
 	public void setAftersaleGoodsInfoList(List<AftersaleItemInfo> aftersaleGoodsInfoList) {
 		this.aftersaleGoodsInfoList = aftersaleGoodsInfoList;
 	}
@@ -107,11 +140,32 @@ public class AlipayOpenMiniOrderAftersaleQueryResponse extends AlipayResponse {
 		return this.aftersaleId;
 	}
 
+	public void setAftersaleMediaList(List<OrderMediaInfo> aftersaleMediaList) {
+		this.aftersaleMediaList = aftersaleMediaList;
+	}
+	public List<OrderMediaInfo> getAftersaleMediaList( ) {
+		return this.aftersaleMediaList;
+	}
+
 	public void setAftersaleReason(String aftersaleReason) {
 		this.aftersaleReason = aftersaleReason;
 	}
 	public String getAftersaleReason( ) {
 		return this.aftersaleReason;
+	}
+
+	public void setApplyRefundAmount(String applyRefundAmount) {
+		this.applyRefundAmount = applyRefundAmount;
+	}
+	public String getApplyRefundAmount( ) {
+		return this.applyRefundAmount;
+	}
+
+	public void setFinallyRefundAmount(String finallyRefundAmount) {
+		this.finallyRefundAmount = finallyRefundAmount;
+	}
+	public String getFinallyRefundAmount( ) {
+		return this.finallyRefundAmount;
 	}
 
 	public void setLogisticsWaybills(List<LogisticsWaybill> logisticsWaybills) {

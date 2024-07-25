@@ -9,26 +9,26 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.fund.wallet.operation.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-11 11:47:03
+ * @since 1.0, 2024-07-15 18:02:05
  */
 public class AlipayCloudFundWalletOperationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3357859137195513222L;
+	private static final long serialVersionUID = 6796839329175528825L;
 
 	/** 
-	 * 当前页
+	 * 当前页，单位是'页'。
 	 */
 	@ApiField("current_page")
 	private String currentPage;
 
 	/** 
-	 * 总条数
+	 * 总条数，单位是'条数'。
 	 */
 	@ApiField("total_items")
 	private String totalItems;
 
 	/** 
-	 * 总页
+	 * 总页，单位是'页'。
 	 */
 	@ApiField("total_pages")
 	private String totalPages;

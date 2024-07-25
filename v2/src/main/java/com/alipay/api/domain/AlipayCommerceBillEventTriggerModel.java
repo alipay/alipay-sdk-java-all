@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 账单消息触发发送接口
  *
  * @author auto create
- * @since 1.0, 2024-06-24 10:39:16
+ * @since 1.0, 2024-07-15 20:49:15
  */
 public class AlipayCommerceBillEventTriggerModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4856611134475689622L;
+	private static final long serialVersionUID = 5584851444774538122L;
 
 	/**
 	 * 账单ID列表，账单ID格式由各机构自己定义即可，若填写则仅针对指定的账单ID推送还款消息，否则推送该用户下所有的还款消息

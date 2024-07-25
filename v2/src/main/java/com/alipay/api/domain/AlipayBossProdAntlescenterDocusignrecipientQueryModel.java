@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayBossProdAntlescenterDocusignrecipientQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7764798454889537479L;
+	private static final long serialVersionUID = 6572665881595623338L;
 
 	/**
 	 * 应用来源

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PortraitsDataTgiVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7595818414588433174L;
+	private static final long serialVersionUID = 1239628445298865246L;
 
 	/**
 	 * 画像分析数据

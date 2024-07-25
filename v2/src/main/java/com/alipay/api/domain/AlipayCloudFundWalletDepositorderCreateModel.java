@@ -9,14 +9,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景钱包创单接口
  *
  * @author auto create
- * @since 1.0, 2024-06-11 11:32:52
+ * @since 1.0, 2024-07-15 18:14:19
  */
 public class AlipayCloudFundWalletDepositorderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4695866335567993982L;
+	private static final long serialVersionUID = 7317631634468214351L;
 
 	/**
-	 * 充值金额
+	 * 充值金额，单位元
 	 */
 	@ApiField("amount")
 	private String amount;

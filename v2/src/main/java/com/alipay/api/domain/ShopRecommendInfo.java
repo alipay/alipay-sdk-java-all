@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 门店不置信推荐信息
  *
  * @author auto create
- * @since 1.0, 2023-12-10 23:04:06
+ * @since 1.0, 2024-07-11 23:23:15
  */
 public class ShopRecommendInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4187247192898926423L;
+	private static final long serialVersionUID = 1781535519472726972L;
 
 	/**
 	 * 门店修改建议
@@ -26,13 +26,13 @@ public class ShopRecommendInfo extends AlipayObject {
 	private String recommendAddress;
 
 	/**
-	 * 推荐纬度
+	 * 推荐纬度，单位度
 	 */
 	@ApiField("recommend_latitude")
 	private String recommendLatitude;
 
 	/**
-	 * 推荐经度
+	 * 推荐经度，单位为度
 	 */
 	@ApiField("recommend_longtitude")
 	private String recommendLongtitude;

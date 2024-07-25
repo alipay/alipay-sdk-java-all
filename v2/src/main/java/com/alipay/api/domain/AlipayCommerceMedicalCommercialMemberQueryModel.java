@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗商业化会员权益资格查询
  *
  * @author auto create
- * @since 1.0, 2024-04-23 14:50:14
+ * @since 1.0, 2024-07-18 18:50:16
  */
 public class AlipayCommerceMedicalCommercialMemberQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1154628674893883294L;
+	private static final long serialVersionUID = 6352268914838125175L;
 
 	/**
 	 * 蚂蚁统一会员ID

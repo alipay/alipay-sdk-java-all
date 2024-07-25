@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaOpenAppRisktagQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1522818463889645726L;
+	private static final long serialVersionUID = 5352645518597477154L;
 
 	/** 
 	 * 响应参数

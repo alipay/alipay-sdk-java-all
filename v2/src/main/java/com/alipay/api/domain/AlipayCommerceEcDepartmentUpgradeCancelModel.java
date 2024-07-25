@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 取消部门升级
  *
  * @author auto create
- * @since 1.0, 2024-05-31 09:39:22
+ * @since 1.0, 2024-07-22 17:44:21
  */
 public class AlipayCommerceEcDepartmentUpgradeCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3117839677945144865L;
+	private static final long serialVersionUID = 4814433857961884198L;
 
 	/**
 	 * 主企业id

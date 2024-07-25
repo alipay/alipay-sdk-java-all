@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改蚂蚁店铺
  *
  * @author auto create
- * @since 1.0, 2024-05-21 17:07:19
+ * @since 1.0, 2024-07-11 23:23:14
  */
 public class AntMerchantExpandShopModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5539683911537194174L;
+	private static final long serialVersionUID = 5672353471828242187L;
 
 	/**
 	 * "门店结算卡信息。本业务当前只允许传入一张结算卡。 说明：本参数仅直付通业务使用，其余业务无需关注。"
@@ -24,7 +24,7 @@ public class AntMerchantExpandShopModifyModel extends AlipayObject {
 	private List<SettleCardInfo> bizCards;
 
 	/**
-	 * 品牌id。若无需更新本信息项，可以不填写
+	 * 品牌id。若无需更新本信息项，可以不填写。可以从B/P站品牌工具箱获取品牌id
 	 */
 	@ApiField("brand_id")
 	private String brandId;
@@ -96,6 +96,20 @@ public class AntMerchantExpandShopModifyModel extends AlipayObject {
 	@ApiListField("ext_infos")
 	@ApiField("shop_ext_info")
 	private List<ShopExtInfo> extInfos;
+
+	/**
+	 * 行业信息，例如所属集团、特殊标签
+	 */
+	@ApiListField("industry_info")
+	@ApiField("merchant_shop_industry_info")
+	private List<MerchantShopIndustryInfo> industryInfo;
+
+	/**
+	 * 门店资质信息
+	 */
+	@ApiListField("industry_license")
+	@ApiField("shop_industry_license")
+	private List<ShopIndustryLicense> industryLicense;
 
 	/**
 	 * 商户角色id，表示将要修改的店属于哪个商户角色，和store_id一起定位待修改的门店。对于直连场景，填写商户pid；对于间连场景（线上、线下、直付通），填写商户smid。本信息项不可修改
@@ -266,6 +280,20 @@ public class AntMerchantExpandShopModifyModel extends AlipayObject {
 	}
 	public void setExtInfos(List<ShopExtInfo> extInfos) {
 		this.extInfos = extInfos;
+	}
+
+	public List<MerchantShopIndustryInfo> getIndustryInfo() {
+		return this.industryInfo;
+	}
+	public void setIndustryInfo(List<MerchantShopIndustryInfo> industryInfo) {
+		this.industryInfo = industryInfo;
+	}
+
+	public List<ShopIndustryLicense> getIndustryLicense() {
+		return this.industryLicense;
+	}
+	public void setIndustryLicense(List<ShopIndustryLicense> industryLicense) {
+		this.industryLicense = industryLicense;
 	}
 
 	public String getIpRoleId() {

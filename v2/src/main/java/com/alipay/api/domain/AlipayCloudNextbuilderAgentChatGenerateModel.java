@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 对话消息发送接口（非流式）
  *
  * @author auto create
- * @since 1.0, 2024-07-02 18:25:50
+ * @since 1.0, 2024-07-12 15:44:50
  */
 public class AlipayCloudNextbuilderAgentChatGenerateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2772327497929298492L;
+	private static final long serialVersionUID = 7442344827994137312L;
 
 	/**
 	 * AI 创作平台创建的Agent 的 id，可从AI 创作平台页面获取
 	 */
 	@ApiField("agent_id")
 	private String agentId;
+
+	/**
+	 * Agent 的配置版本号，当应用有多个发布成功配置版本的情况下用于手动指定调用的具体版本号，若不传默认选择最新的配置版本，该参数可以从"alipay.cloud.nextbuilder.agent.config.get"接口的返回中获取
+	 */
+	@ApiField("config_version")
+	private String configVersion;
 
 	/**
 	 * 由应用定义的对话输入变量，具体内容参考青蓝平台应用定义，对话型应用非必选，JSON格式的Map，详细解释<a href="https://opendocs.alipay.com/pre-open/0cbmp8?pathHash=178b1334">青蓝平台应用调用接口请求参数解释- inputs</a>
@@ -54,6 +60,13 @@ public class AlipayCloudNextbuilderAgentChatGenerateModel extends AlipayObject {
 	}
 	public void setAgentId(String agentId) {
 		this.agentId = agentId;
+	}
+
+	public String getConfigVersion() {
+		return this.configVersion;
+	}
+	public void setConfigVersion(String configVersion) {
+		this.configVersion = configVersion;
 	}
 
 	public String getInputs() {

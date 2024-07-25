@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开票即时配送运单集合
  *
  * @author auto create
- * @since 1.0, 2023-02-17 11:47:26
+ * @since 1.0, 2024-07-16 14:48:00
  */
 public class WaybillInvoice extends AlipayObject {
 
-	private static final long serialVersionUID = 8711599873331533477L;
+	private static final long serialVersionUID = 8656122991684219231L;
 
 	/**
 	 * 即时配送运单金额

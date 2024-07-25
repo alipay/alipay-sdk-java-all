@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景钱包退款接口
  *
  * @author auto create
- * @since 1.0, 2024-06-11 11:38:56
+ * @since 1.0, 2024-07-15 18:14:11
  */
 public class AlipayCloudFundWalletRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8517839633363524295L;
+	private static final long serialVersionUID = 4287678953511639546L;
 
 	/**
-	 * 退款金额
+	 * 退款金额，单位元
 	 */
 	@ApiField("amount")
 	private String amount;

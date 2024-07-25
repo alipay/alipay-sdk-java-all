@@ -10,22 +10,24 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询企业付账单详情
  *
  * @author auto create
- * @since 1.0, 2024-06-27 14:13:10
+ * @since 1.0, 2024-07-17 14:34:15
  */
 public class AlipayCommerceEcConsumeDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1519562427728553911L;
+	private static final long serialVersionUID = 3499653946366943829L;
 
 	/**
-	 * 共同账户ID
+	 * 共同账户ID 当前字段已废弃(该字段将废弃，不建议使用，可用enterprise_id字段替换)
 	 */
 	@ApiField("account_id")
+	@Deprecated
 	private String accountId;
 
 	/**
-	 * 授权签约协议号
+	 * 授权签约协议号 当前字段已废弃(该字段将废弃，不建议使用，可用enterprise_id字段替换)
 	 */
 	@ApiField("agreement_no")
+	@Deprecated
 	private String agreementNo;
 
 	/**

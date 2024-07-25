@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗行业商业化核销接口
  *
  * @author auto create
- * @since 1.0, 2024-07-04 20:41:15
+ * @since 1.0, 2024-07-18 18:49:29
  */
 public class AlipayCommerceMedicalCommercialPerformanceVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2477584345984261384L;
+	private static final long serialVersionUID = 5249875766768443968L;
 
 	/**
 	 * 商品订单id，支付宝侧用户对商户某一商品的唯一订单子单id。该订单记录了用户的核销次数与总次数，以及订单状态

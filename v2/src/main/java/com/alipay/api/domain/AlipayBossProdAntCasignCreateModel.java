@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建多方电子CA签约任务
  *
  * @author auto create
- * @since 1.0, 2023-05-31 13:12:46
+ * @since 1.0, 2024-07-16 17:47:15
  */
 public class AlipayBossProdAntCasignCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3697315675295823976L;
+	private static final long serialVersionUID = 5567962883261646843L;
 
 	/**
 	 * 签署任务信息

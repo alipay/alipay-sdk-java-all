@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资方调整分账计划
  *
  * @author auto create
- * @since 1.0, 2024-04-30 20:07:45
+ * @since 1.0, 2024-07-17 15:28:49
  */
 public class AlipayCommerceRentRoyaltyInvestModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3812646496112819759L;
+	private static final long serialVersionUID = 1422961674682791741L;
 
 	/**
 	 * 2088开头的16位纯数字，小程序场景下获取用户ID请参考：用户授权; 其它场景下获取用户ID请参考：网页授权获取用户信息; 其中buyer_id与buyer_open_id不能同时为空
@@ -48,6 +48,12 @@ public class AlipayCommerceRentRoyaltyInvestModifyModel extends AlipayObject {
 	 */
 	@ApiField("royalty_stage")
 	private Long royaltyStage;
+
+	/**
+	 * 分账计划对应资金类型
+	 */
+	@ApiField("royalty_type")
+	private String royaltyType;
 
 	public String getBuyerId() {
 		return this.buyerId;
@@ -89,6 +95,13 @@ public class AlipayCommerceRentRoyaltyInvestModifyModel extends AlipayObject {
 	}
 	public void setRoyaltyStage(Long royaltyStage) {
 		this.royaltyStage = royaltyStage;
+	}
+
+	public String getRoyaltyType() {
+		return this.royaltyType;
+	}
+	public void setRoyaltyType(String royaltyType) {
+		this.royaltyType = royaltyType;
 	}
 
 }

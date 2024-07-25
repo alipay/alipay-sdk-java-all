@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业解约
  *
  * @author auto create
- * @since 1.0, 2024-07-08 17:02:50
+ * @since 1.0, 2024-07-22 17:41:52
  */
 public class AlipayCommerceEcEnterpriseUnsignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8126941535185359516L;
+	private static final long serialVersionUID = 5686999544727853549L;
 
 	/**
 	 * 通过企业码1.0接口签约的共同账户，和agreement_no搭配使用。 当前字段已废弃(为兼容企业码1.0老接口的参数，已过时，新接客户请传企业ID)

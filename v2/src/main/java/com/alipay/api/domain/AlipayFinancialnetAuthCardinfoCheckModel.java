@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFinancialnetAuthCardinfoCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7217985138244863539L;
+	private static final long serialVersionUID = 7116976285862844375L;
 
 	/**
 	 * 是否校验卡bin

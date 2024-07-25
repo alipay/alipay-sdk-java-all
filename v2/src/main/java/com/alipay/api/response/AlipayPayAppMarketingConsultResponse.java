@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pay.app.marketing.consult response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-13 21:07:01
+ * @since 1.0, 2024-07-22 10:27:05
  */
 public class AlipayPayAppMarketingConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6372997331639614765L;
+	private static final long serialVersionUID = 3577589693499812271L;
 
 	/** 
 	 * 反作弊等级值；仅当请求入参need_query_anti_rank为true时才会返回
