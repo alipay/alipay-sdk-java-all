@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 钱包代扣支付
  *
  * @author auto create
- * @since 1.0, 2024-06-25 17:51:48
+ * @since 1.0, 2024-07-29 15:52:52
  */
 public class AlipayCloudFundTradePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8498216356998517689L;
+	private static final long serialVersionUID = 2618159492632965694L;
 
 	/**
 	 * 代扣协议号, 对应于签约时，支付宝返回的协议号
@@ -78,6 +78,12 @@ public class AlipayCloudFundTradePayModel extends AlipayObject {
 	 */
 	@ApiField("subject")
 	private String subject;
+
+	/**
+	 * 场景钱包id
+	 */
+	@ApiField("user_wallet_id")
+	private String userWalletId;
 
 	public String getAgreementNo() {
 		return this.agreementNo;
@@ -154,6 +160,13 @@ public class AlipayCloudFundTradePayModel extends AlipayObject {
 	}
 	public void setSubject(String subject) {
 		this.subject = subject;
+	}
+
+	public String getUserWalletId() {
+		return this.userWalletId;
+	}
+	public void setUserWalletId(String userWalletId) {
+		this.userWalletId = userWalletId;
 	}
 
 }

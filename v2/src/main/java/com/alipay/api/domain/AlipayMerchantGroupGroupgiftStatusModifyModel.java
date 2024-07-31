@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改入群有礼状态
  *
  * @author auto create
- * @since 1.0, 2024-07-22 17:34:15
+ * @since 1.0, 2024-07-30 14:29:52
  */
 public class AlipayMerchantGroupGroupgiftStatusModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3564578848165831115L;
+	private static final long serialVersionUID = 7826466164346178551L;
 
 	/**
 	 * 渠道code

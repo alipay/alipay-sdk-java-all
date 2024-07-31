@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务商推广关系查询
  *
  * @author auto create
- * @since 1.0, 2024-07-02 14:32:41
+ * @since 1.0, 2024-07-31 15:41:16
  */
 public class AlipayOpenServicemarketPromotiontaskRelationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1858993543611744274L;
+	private static final long serialVersionUID = 6137934328844328736L;
 
 	/**
-	 * 服务商品ID
+	 * 服务商品ID，并不是uid，取值来源于前端的获取
 	 */
 	@ApiField("commodity_id")
 	private String commodityId;

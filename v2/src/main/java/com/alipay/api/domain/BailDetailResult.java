@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BailDetailResult extends AlipayObject {
 
-	private static final long serialVersionUID = 2545638188184618744L;
+	private static final long serialVersionUID = 2574321343769556512L;
 
 	/**
 	 * 保证金收支金额

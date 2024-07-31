@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceIotMdeviceprodWhitelistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1755399554253821438L;
+	private static final long serialVersionUID = 5173396236385988231L;
 
 	/** 
 	 * 白名单所属应用的appID

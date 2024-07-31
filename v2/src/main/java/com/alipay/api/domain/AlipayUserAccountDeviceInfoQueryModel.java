@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayUserAccountDeviceInfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2738728541582513687L;
+	private static final long serialVersionUID = 3698583442857472554L;
 
 	/**
 	 * 设备号数组，对应设备类型为device_type字段代表的设备类型。为兼容而保留，参数已经被devices取代。devices不存在的时候是必填。

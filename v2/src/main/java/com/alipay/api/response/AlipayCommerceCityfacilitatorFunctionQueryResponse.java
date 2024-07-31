@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceCityfacilitatorFunctionQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4246774162597938155L;
+	private static final long serialVersionUID = 6525357859457835762L;
 
 	/** 
 	 * 支持的功能列表

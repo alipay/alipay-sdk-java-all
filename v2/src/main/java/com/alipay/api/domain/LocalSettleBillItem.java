@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 结算账单详情
  *
  * @author auto create
- * @since 1.0, 2024-05-21 21:52:03
+ * @since 1.0, 2024-07-30 16:25:17
  */
 public class LocalSettleBillItem extends AlipayObject {
 
-	private static final long serialVersionUID = 1321667286827352116L;
+	private static final long serialVersionUID = 6111877796798529787L;
 
 	/**
 	 * 支付宝优惠（元）
@@ -86,6 +86,12 @@ public class LocalSettleBillItem extends AlipayObject {
 	 */
 	@ApiField("order_id")
 	private String orderId;
+
+	/**
+	 * 本地生活商品原价，单位：元，精确到小数点后两位
+	 */
+	@ApiField("original_price")
+	private String originalPrice;
 
 	/**
 	 * 外部门店ID
@@ -166,7 +172,7 @@ public class LocalSettleBillItem extends AlipayObject {
 	private String useOrderNo;
 
 	/**
-	 * 核销时间
+	 * 核销时间，单位：秒。
 	 */
 	@ApiField("use_time")
 	private Date useTime;
@@ -259,6 +265,13 @@ public class LocalSettleBillItem extends AlipayObject {
 	}
 	public void setOrderId(String orderId) {
 		this.orderId = orderId;
+	}
+
+	public String getOriginalPrice() {
+		return this.originalPrice;
+	}
+	public void setOriginalPrice(String originalPrice) {
+		this.originalPrice = originalPrice;
 	}
 
 	public String getOutShopId() {

@@ -11,28 +11,28 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMerchantcardDeductionorderBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1447624631971121762L;
+	private static final long serialVersionUID = 2348975783354113523L;
 
 	/**
-	 * 订单ID
+	 * 售卖订单id
 	 */
 	@ApiField("card_id")
 	private String cardId;
 
 	/**
-	 * 扣款结束时间
+	 * 核销订单结束时间
 	 */
 	@ApiField("deduction_end_date")
 	private String deductionEndDate;
 
 	/**
-	 * 扣款开始时间
+	 * 核销订单开始时间
 	 */
 	@ApiField("deduction_start_date")
 	private String deductionStartDate;
 
 	/**
-	 * 扣款单状态
+	 * 核销订单状态
 	 */
 	@ApiField("deduction_status")
 	private String deductionStatus;
@@ -44,13 +44,13 @@ public class AlipayCommerceMerchantcardDeductionorderBatchqueryModel extends Ali
 	private String openId;
 
 	/**
-	 * 订单结束时间
+	 * 售卖订单结束时间
 	 */
 	@ApiField("order_end_date")
 	private String orderEndDate;
 
 	/**
-	 * 订单开始时间
+	 * 售卖订单开始时间
 	 */
 	@ApiField("order_start_date")
 	private String orderStartDate;

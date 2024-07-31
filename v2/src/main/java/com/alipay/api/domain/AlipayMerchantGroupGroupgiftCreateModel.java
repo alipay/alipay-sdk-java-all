@@ -10,17 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建入群有礼
  *
  * @author auto create
- * @since 1.0, 2024-07-19 14:46:13
+ * @since 1.0, 2024-07-30 14:28:51
  */
 public class AlipayMerchantGroupGroupgiftCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8866323926983233164L;
+	private static final long serialVersionUID = 3872484243615919283L;
 
 	/**
 	 * 入群有礼列表。
 	 */
-	@ApiField("group_gifts")
-	private GroupGiftVO groupGifts;
+	@ApiListField("group_gifts")
+	@ApiField("group_gift_v_o")
+	private List<GroupGiftVO> groupGifts;
 
 	/**
 	 * 群组id列表，创建群组时对应的一个群组id
@@ -29,10 +30,10 @@ public class AlipayMerchantGroupGroupgiftCreateModel extends AlipayObject {
 	@ApiField("string")
 	private List<String> groupIds;
 
-	public GroupGiftVO getGroupGifts() {
+	public List<GroupGiftVO> getGroupGifts() {
 		return this.groupGifts;
 	}
-	public void setGroupGifts(GroupGiftVO groupGifts) {
+	public void setGroupGifts(List<GroupGiftVO> groupGifts) {
 		this.groupGifts = groupGifts;
 	}
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.wallet.payurl.apply request
  * 
  * @author auto create
- * @since 1.0, 2024-03-06 20:21:59
+ * @since 1.0, 2024-07-31 10:20:59
  */
 public class AlipayFundWalletPayurlApplyRequest implements AlipayRequest<AlipayFundWalletPayurlApplyResponse> {
 

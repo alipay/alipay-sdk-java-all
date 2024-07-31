@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OuterPlan extends AlipayObject {
 
-	private static final long serialVersionUID = 8573215695537561526L;
+	private static final long serialVersionUID = 3117791415139725779L;
 
 	/**
 	 * 日预算，单位：分

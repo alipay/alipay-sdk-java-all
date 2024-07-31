@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 流程转交
  *
  * @author auto create
- * @since 1.0, 2022-03-18 10:20:32
+ * @since 1.0, 2024-07-30 11:54:50
  */
 public class AlipayBossBaseProcessInstanceAssignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3333334761788616218L;
+	private static final long serialVersionUID = 3581551464154285245L;
 
 	/**
 	 * 指派给谁(域账号)， assignee和assignee_work_no 二选一， assignee_work_no >assignee

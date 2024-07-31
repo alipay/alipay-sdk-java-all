@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗大模型服务对外接口-会话创建或查询
  *
  * @author auto create
- * @since 1.0, 2024-06-23 00:25:53
+ * @since 1.0, 2024-07-26 12:21:13
  */
 public class AlipayCommerceMedicalLargermodelSessionQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7261452666999572247L;
+	private static final long serialVersionUID = 4615663525487365521L;
 
 	/**
 	 * 区分请求来源
@@ -93,7 +93,7 @@ DEPARTGUIDE
 
 	/**
 	 * 区分当前对话场景意图
-卫健委通用助理——WJWCOMASS
+前缀不同，不做强枚举校验
 	 */
 	@ApiField("scene_code")
 	private String sceneCode;

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class StrategyGroupFatigue extends AlipayObject {
 
-	private static final long serialVersionUID = 3837914253886195511L;
+	private static final long serialVersionUID = 3558967815444922555L;
 
 	/**
 	 * 展位内容id

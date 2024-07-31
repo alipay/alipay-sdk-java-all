@@ -1,0 +1,43 @@
+package com.alipay.api.response;
+
+import com.alipay.api.internal.mapping.ApiField;
+
+import com.alipay.api.AlipayResponse;
+
+/**
+ * ALIPAY API: alipay.commerce.medical.largermodel.feedback.set response.
+ * 
+ * @author auto create
+ * @since 1.0, 2024-07-29 18:17:03
+ */
+public class AlipayCommerceMedicalLargermodelFeedbackSetResponse extends AlipayResponse {
+
+	private static final long serialVersionUID = 8747728141667157858L;
+
+	/** 
+	 * 是否业务处理成功
+	 */
+	@ApiField("result_code")
+	private String resultCode;
+
+	/** 
+	 * 结果描述
+	 */
+	@ApiField("result_desc")
+	private String resultDesc;
+
+	public void setResultCode(String resultCode) {
+		this.resultCode = resultCode;
+	}
+	public String getResultCode( ) {
+		return this.resultCode;
+	}
+
+	public void setResultDesc(String resultDesc) {
+		this.resultDesc = resultDesc;
+	}
+	public String getResultDesc( ) {
+		return this.resultDesc;
+	}
+
+}

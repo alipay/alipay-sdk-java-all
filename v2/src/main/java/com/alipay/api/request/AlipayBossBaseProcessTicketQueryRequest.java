@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.base.process.ticket.query request
  * 
  * @author auto create
- * @since 1.0, 2024-01-09 16:47:22
+ * @since 1.0, 2024-07-30 11:37:01
  */
 public class AlipayBossBaseProcessTicketQueryRequest implements AlipayRequest<AlipayBossBaseProcessTicketQueryResponse> {
 

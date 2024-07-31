@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 钱包营销规则对象
  *
  * @author auto create
- * @since 1.0, 2024-07-04 22:19:49
+ * @since 1.0, 2024-07-30 17:24:14
  */
 public class WalletMarketingRule extends AlipayObject {
 
-	private static final long serialVersionUID = 7337372725318653763L;
+	private static final long serialVersionUID = 2317395228173452624L;
 
 	/**
 	 * 营销类型

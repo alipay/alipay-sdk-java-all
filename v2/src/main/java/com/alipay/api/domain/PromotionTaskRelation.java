@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 地推服务商推广关系
  *
  * @author auto create
- * @since 1.0, 2024-03-07 10:56:15
+ * @since 1.0, 2024-07-31 15:41:16
  */
 public class PromotionTaskRelation extends AlipayObject {
 
-	private static final long serialVersionUID = 5346346397828942319L;
+	private static final long serialVersionUID = 5579797393286567574L;
 
 	/**
-	 * 申请推广时填写的申请理由
+	 * 申请推广时填写的申请理由，自定义的内容
 	 */
 	@ApiField("apply_reason")
 	private String applyReason;

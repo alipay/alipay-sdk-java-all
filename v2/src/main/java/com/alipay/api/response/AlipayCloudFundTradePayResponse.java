@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.fund.trade.pay response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-25 17:52:05
+ * @since 1.0, 2024-07-29 15:57:04
  */
 public class AlipayCloudFundTradePayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8834972593161819885L;
+	private static final long serialVersionUID = 8745794394785229723L;
 
 	/** 
 	 * 买家支付宝账号
@@ -45,7 +45,7 @@ public class AlipayCloudFundTradePayResponse extends AlipayResponse {
 	private String outTradeNo;
 
 	/** 
-	 * 交易金额
+	 * 交易金额，单位元
 	 */
 	@ApiField("total_amount")
 	private String totalAmount;

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序商品更新接口
  *
  * @author auto create
- * @since 1.0, 2024-07-05 11:36:17
+ * @since 1.0, 2024-07-30 17:57:30
  */
 public class AlipayOpenAppItemModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6812438572694358826L;
+	private static final long serialVersionUID = 6265575119737387846L;
 
 	/**
 	 * 商品属性
@@ -127,6 +127,12 @@ public class AlipayOpenAppItemModifyModel extends AlipayObject {
 	 */
 	@ApiField("sale_status")
 	private String saleStatus;
+
+	/**
+	 * 修改商品跳过算法检测
+	 */
+	@ApiField("skip_algorithm_check")
+	private String skipAlgorithmCheck;
 
 	/**
 	 * sku数组
@@ -271,6 +277,13 @@ public class AlipayOpenAppItemModifyModel extends AlipayObject {
 	}
 	public void setSaleStatus(String saleStatus) {
 		this.saleStatus = saleStatus;
+	}
+
+	public String getSkipAlgorithmCheck() {
+		return this.skipAlgorithmCheck;
+	}
+	public void setSkipAlgorithmCheck(String skipAlgorithmCheck) {
+		this.skipAlgorithmCheck = skipAlgorithmCheck;
 	}
 
 	public List<ItemSkuVO> getSkus() {

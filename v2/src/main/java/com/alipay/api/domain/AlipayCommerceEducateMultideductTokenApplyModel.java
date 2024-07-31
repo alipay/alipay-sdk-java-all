@@ -7,20 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取校园支付token
  *
  * @author auto create
- * @since 1.0, 2024-06-18 16:13:55
+ * @since 1.0, 2024-07-29 14:33:51
  */
 public class AlipayCommerceEducateMultideductTokenApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5595258445894888771L;
+	private static final long serialVersionUID = 3792623523978158862L;
 
 	/**
-	 * 业务码
+	 * 业务码。可选的字段枚举说明：{SCHOOL_MULTI_DEDUCT:校园支付;SCHOOL_PAYMENT:刷脸支付}
 	 */
 	@ApiField("biz_code")
 	private String bizCode;
 
 	/**
-	 * 操作类型。可选的字段枚举说明：{SIGN_SCHOOL_DEDUCT:签约校园支付;QUERY_DETAIL:查询校园支付}
+	 * operationType	操作类型。可选的字段枚举说明：{SIGN_SCHOOL_DEDUCT:签约校园支付;QUERY_DETAIL:查询校园支付;OPEN_SMALL_POUCH:家长开通小荷包}
 	 */
 	@ApiField("operation_type")
 	private String operationType;
@@ -32,7 +32,7 @@ public class AlipayCommerceEducateMultideductTokenApplyModel extends AlipayObjec
 	private String parentPhone;
 
 	/**
-	 * 支付设置。SIGN_SCHOOL_DEDUCT时必传
+	 * 支付设置。SIGN_SCHOOL_DEDUCT或OPEN_SMALL_POUCH时必传
 	 */
 	@ApiField("pay_config")
 	private PayConfig payConfig;
@@ -44,25 +44,25 @@ public class AlipayCommerceEducateMultideductTokenApplyModel extends AlipayObjec
 	private String schoolCode;
 
 	/**
-	 * 学生或教职工的证件号
+	 * 学生或教职工的证件号。OPEN_SMALL_POUCH时可选，其他情况必填
 	 */
 	@ApiField("user_cert_no")
 	private String userCertNo;
 
 	/**
-	 * 学生或教职工的证件类型。可选的字段枚举说明：{1:居民身份证; RP_HK_MC:港澳居民居住证; RP_TAIWAN:台湾居民居住证}
+	 * 学生或教职工的证件类型。可选的字段枚举说明：{1:居民身份证; RP_HK_MC:港澳居民居住证; RP_TAIWAN:台湾居民居住证}。OPEN_SMALL_POUCH时可选，其他情况必填
 	 */
 	@ApiField("user_cert_type")
 	private String userCertType;
 
 	/**
-	 * 学生或教职工的姓名
+	 * 学生或教职工的姓名。OPEN_SMALL_POUCH时可选，其他情况必填
 	 */
 	@ApiField("user_name")
 	private String userName;
 
 	/**
-	 * 学生或教职工在学校（或教育机构）的唯一编号（由商户自己生成）。支付宝侧后续通知不会告知学生证件信息，只返回当前唯一标号，商户需要据此识别出校内学生（结合学校（或教育机构）外标）
+	 * 学生或教职工在学校（或教育机构）的唯一编号（由商户自己生成）。支付宝侧后续通知不会告知学生证件信息，只返回当前唯一标号，商户需要据此识别出校内学生（结合学校（或教育机构）外标）。OPEN_SMALL_POUCH时可选，其他情况必填
 	 */
 	@ApiField("user_unique_id")
 	private String userUniqueId;

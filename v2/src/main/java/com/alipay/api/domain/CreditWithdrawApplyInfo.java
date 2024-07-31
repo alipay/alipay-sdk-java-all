@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CreditWithdrawApplyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6893934966886692345L;
+	private static final long serialVersionUID = 6696395767851676821L;
 
 	/**
 	 * 支付宝流水号

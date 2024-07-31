@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaCreditEpSceneRatingQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3479246626493165441L;
+	private static final long serialVersionUID = 7139984339888216819L;
 
 	/** 
 	 * 评估额度，单位为人民币分。只有在order_status=FINISH且在评估流程中credit_category对应的场景有额度时才会有值，其它情况为空

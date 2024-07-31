@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMerchantcardCertificationUseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7151359553989652262L;
+	private static final long serialVersionUID = 7584987234955237295L;
 
 	/** 
 	 * 凭证提交结果

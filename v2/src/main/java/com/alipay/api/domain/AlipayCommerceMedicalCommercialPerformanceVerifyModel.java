@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗行业商业化核销接口
  *
  * @author auto create
- * @since 1.0, 2024-07-18 18:49:29
+ * @since 1.0, 2024-07-30 15:52:15
  */
 public class AlipayCommerceMedicalCommercialPerformanceVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5249875766768443968L;
+	private static final long serialVersionUID = 8576443479434854149L;
 
 	/**
 	 * 商品订单id，支付宝侧用户对商户某一商品的唯一订单子单id。该订单记录了用户的核销次数与总次数，以及订单状态
@@ -26,6 +26,12 @@ public class AlipayCommerceMedicalCommercialPerformanceVerifyModel extends Alipa
 	 */
 	@ApiField("biz_url")
 	private String bizUrl;
+
+	/**
+	 * 核销业务url类型
+	 */
+	@ApiField("biz_url_type")
+	private String bizUrlType;
 
 	/**
 	 * 用户user_id，做了open_id映射
@@ -65,6 +71,7 @@ public class AlipayCommerceMedicalCommercialPerformanceVerifyModel extends Alipa
 
 	/**
 	 * status核销或确认场景使用，枚举值为S\C\R\N，正常核销或确认商品时传S、核销权益次数完结传C、拒绝核销或确认传入N、逆向核销回补使用次数时传递R。
+不传默认为S
 	 */
 	@ApiField("status")
 	private String status;
@@ -76,13 +83,14 @@ public class AlipayCommerceMedicalCommercialPerformanceVerifyModel extends Alipa
 	private String totalCount;
 
 	/**
-	 * usage_count用于记录用户对某一商品的使用次数，每次核销时商户侧进行累加。该字段不影响主逻辑，用于支付宝侧日志监控
+	 * 已使用次数，usage_count用于记录用户对某一商品的使用次数，每次核销时商户侧进行累加。该字段不影响主逻辑，用于支付宝侧日志监控
 	 */
 	@ApiField("usage_count")
 	private String usageCount;
 
 	/**
-	 * 确认场景类型，枚举值用户核销，USER_PERFORMANCE。取消预约，RESERVE_CANCEL。修改预约，RESERVE_MODIFY。上传报告，REPORT_UPLOAD
+	 * 确认场景类型，枚举值用户核销，USER_PERFORMANCE。取消预约，RESERVE_CANCEL。修改预约，RESERVE_MODIFY。上传报告，REPORT_UPLOAD。
+不传，默认为用户核销
 	 */
 	@ApiField("verify_type")
 	private String verifyType;
@@ -99,6 +107,13 @@ public class AlipayCommerceMedicalCommercialPerformanceVerifyModel extends Alipa
 	}
 	public void setBizUrl(String bizUrl) {
 		this.bizUrl = bizUrl;
+	}
+
+	public String getBizUrlType() {
+		return this.bizUrlType;
+	}
+	public void setBizUrlType(String bizUrlType) {
+		this.bizUrlType = bizUrlType;
 	}
 
 	public String getBuyerId() {

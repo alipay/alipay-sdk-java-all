@@ -7,14 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 调拨记录流水详情
  *
  * @author auto create
- * @since 1.0, 2024-06-25 09:42:43
+ * @since 1.0, 2024-07-30 16:42:50
  */
 public class InstFundFlowRecordDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3167783531791213392L;
+	private static final long serialVersionUID = 7766911848578671785L;
 
 	/**
-	 * 调拨业务场景
+	 * 资金池ID
+	 */
+	@ApiField("biz_context")
+	private String bizContext;
+
+	/**
+	 * 业务场景
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
@@ -68,7 +74,7 @@ public class InstFundFlowRecordDTO extends AlipayObject {
 	private String debitUserId;
 
 	/**
-	 * 执行时间
+	 * 执行时间，单位秒
 	 */
 	@ApiField("gmt_execute_time")
 	private String gmtExecuteTime;
@@ -80,13 +86,16 @@ public class InstFundFlowRecordDTO extends AlipayObject {
 	private String outBizNo;
 
 	/**
-	 * SUCCESS：成功 INSUFFICIENT_BALANCE：余额不足 NO_INST_ABILITY_ITEM：无渠道可用 RETRY_OUT_OF_LIMITS：重试次数超限
+	 * SUCCESS：成功
+INSUFFICIENT_BALANCE：余额不足
+NO_INST_ABILITY_ITEM：无渠道可用
+RETRY_OUT_OF_LIMITS：重试次数超限
 	 */
 	@ApiField("pay_result_code")
 	private String payResultCode;
 
 	/**
-	 * 针对pay_result_code的描述
+	 * 请求处理结果，无固定枚举值
 	 */
 	@ApiField("pay_result_desc")
 	private String payResultDesc;
@@ -121,6 +130,13 @@ OUTER：自动调拨
 	 */
 	@ApiField("unique_no")
 	private String uniqueNo;
+
+	public String getBizContext() {
+		return this.bizContext;
+	}
+	public void setBizContext(String bizContext) {
+		this.bizContext = bizContext;
+	}
 
 	public String getBizScene() {
 		return this.bizScene;

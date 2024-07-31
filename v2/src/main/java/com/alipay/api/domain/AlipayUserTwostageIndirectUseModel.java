@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 双联二阶段
  *
  * @author auto create
- * @since 1.0, 2022-12-26 17:21:16
+ * @since 1.0, 2024-07-31 11:27:53
  */
 public class AlipayUserTwostageIndirectUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4655777363326945224L;
+	private static final long serialVersionUID = 1384567972693455294L;
 
 	/**
 	 * 商户扫描用户的付款码值。18~24位，25~30开头，例如28开头的18位的数字；或人脸支付的ftoken等。

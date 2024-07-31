@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiQualityTestxxxBatchcreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4465641856488247826L;
+	private static final long serialVersionUID = 3536153298465436467L;
 
 	/** 
 	 * 1

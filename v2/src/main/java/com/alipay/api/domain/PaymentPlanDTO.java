@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PaymentPlanDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1412988215484544986L;
+	private static final long serialVersionUID = 7274225163555819854L;
 
 	/**
 	 * 是否按比例支付

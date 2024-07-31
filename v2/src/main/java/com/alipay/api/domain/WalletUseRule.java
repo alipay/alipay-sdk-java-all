@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 钱包使用规则
  *
  * @author auto create
- * @since 1.0, 2024-06-14 17:52:56
+ * @since 1.0, 2024-07-30 17:24:04
  */
 public class WalletUseRule extends AlipayObject {
 
-	private static final long serialVersionUID = 1651371916926376644L;
+	private static final long serialVersionUID = 8619839819617397195L;
 
 	/**
 	 * 在钱包核销时，需要指定核销范围，本字段可通过数组的方式传递商户ID指定商户核销的范围

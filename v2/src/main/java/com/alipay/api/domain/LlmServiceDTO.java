@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 大模型im对象
  *
  * @author auto create
- * @since 1.0, 2024-03-27 13:50:17
+ * @since 1.0, 2024-07-26 12:21:13
  */
 public class LlmServiceDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5299436787819493248L;
+	private static final long serialVersionUID = 5441969282668715572L;
 
 	/**
 	 * 对话内容列表，流式输出中大模型的每次输出语句块
@@ -22,6 +22,13 @@ public class LlmServiceDTO extends AlipayObject {
 	@ApiListField("answer")
 	@ApiField("medical_llm_answer_d_t_o")
 	private List<MedicalLlmAnswerDTO> answer;
+
+	/**
+	 * 卡片返回内容
+	 */
+	@ApiListField("answer_card")
+	@ApiField("llm_answer_card_d_t_o")
+	private List<LlmAnswerCardDTO> answerCard;
 
 	/**
 	 * 表示回答内容类型
@@ -96,6 +103,13 @@ false：无需撤回
 	}
 	public void setAnswer(List<MedicalLlmAnswerDTO> answer) {
 		this.answer = answer;
+	}
+
+	public List<LlmAnswerCardDTO> getAnswerCard() {
+		return this.answerCard;
+	}
+	public void setAnswerCard(List<LlmAnswerCardDTO> answerCard) {
+		this.answerCard = answerCard;
 	}
 
 	public String getAnswerType() {

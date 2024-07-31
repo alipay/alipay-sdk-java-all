@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗问答对象
  *
  * @author auto create
- * @since 1.0, 2024-03-19 21:28:57
+ * @since 1.0, 2024-07-26 12:21:13
  */
 public class MedicalLlmAnswerDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1739328672772986455L;
+	private static final long serialVersionUID = 4343727485198916245L;
 
 	/**
 	 * 对话内容

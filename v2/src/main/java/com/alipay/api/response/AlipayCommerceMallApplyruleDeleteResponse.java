@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMallApplyruleDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5419313652464984912L;
+	private static final long serialVersionUID = 1243586124965292368L;
 
 	/** 
 	 * 业务规则id

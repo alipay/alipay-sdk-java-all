@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 海关测试验收--有用户授权无打标
  *
  * @author auto create
- * @since 1.0, 2022-03-01 20:39:17
+ * @since 1.0, 2024-07-31 18:09:03
  */
 public class AlipaySecurityProdHaiguanNolabelCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1832415638252139878L;
+	private static final long serialVersionUID = 2492117364549589266L;
 
 	/**
 	 * 23

@@ -9,20 +9,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金调拨执行结果查询
  *
  * @author auto create
- * @since 1.0, 2024-06-25 09:42:43
+ * @since 1.0, 2024-07-30 16:42:50
  */
 public class AlipayAccountInstfundAllocationBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3237923751855347986L;
+	private static final long serialVersionUID = 6181392491125868444L;
 
 	/**
-	 * 最晚执行时间
+	 * 最晚执行时间，单位秒
 	 */
 	@ApiField("max_gmt_execute_time")
 	private Date maxGmtExecuteTime;
 
 	/**
-	 * 最早执行时间
+	 * 最早执行时间，单位秒
 	 */
 	@ApiField("min_gmt_execute_time")
 	private Date minGmtExecuteTime;
@@ -40,7 +40,7 @@ public class AlipayAccountInstfundAllocationBatchqueryModel extends AlipayObject
 	private Long pageNum;
 
 	/**
-	 * 页大小
+	 * 页大小，单位条
 	 */
 	@ApiField("page_size")
 	private Long pageSize;

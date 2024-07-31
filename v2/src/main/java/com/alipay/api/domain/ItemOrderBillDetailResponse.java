@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序订单对账明细
  *
  * @author auto create
- * @since 1.0, 2024-07-17 19:59:01
+ * @since 1.0, 2024-07-30 16:24:50
  */
 public class ItemOrderBillDetailResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 3762745699241668283L;
+	private static final long serialVersionUID = 4741779372121388251L;
 
 	/**
 	 * 订单创建时间，格式为  yyyy-MM-dd HH:mm:ss
@@ -28,6 +28,24 @@ public class ItemOrderBillDetailResponse extends AlipayObject {
 	 */
 	@ApiField("fee_categories")
 	private String feeCategories;
+
+	/**
+	 * 花呗分期服务费（卖家贴息），单位：元，精确到小数点后两位
+	 */
+	@ApiField("huabei_technical_service_fee")
+	private String huabeiTechnicalServiceFee;
+
+	/**
+	 * 服务商佣金，单位：元，精确到小数点后两位
+	 */
+	@ApiField("isv_alloc_amount")
+	private String isvAllocAmount;
+
+	/**
+	 * 服务商名称
+	 */
+	@ApiField("isv_name")
+	private String isvName;
 
 	/**
 	 * 订单关联小程序应用ID
@@ -72,19 +90,25 @@ public class ItemOrderBillDetailResponse extends AlipayObject {
 	private String payAmount;
 
 	/**
-	 * 平台技术服务费，单位：元，精确到小数点后两位
+	 * 支付手续费，单位：元，精确到小数点后两位
+	 */
+	@ApiField("pay_commission")
+	private String payCommission;
+
+	/**
+	 * CPS技术服务费，单位：元，精确到小数点后两位
 	 */
 	@ApiField("platform_service")
 	private String platformService;
 
 	/**
-	 * 退平台技术服务费，单位：元，精确到小数点后两位
+	 * 退CPS技术服务费，单位：元，精确到小数点后两位
 	 */
 	@ApiField("platform_service_refund")
 	private String platformServiceRefund;
 
 	/**
-	 * 商家前置优惠金额，单位：元，精确到小数点后两位
+	 * 支付前优惠金额，单位：元，精确到小数点后两位
 	 */
 	@ApiField("pre_promotion")
 	private String prePromotion;
@@ -94,6 +118,18 @@ public class ItemOrderBillDetailResponse extends AlipayObject {
 	 */
 	@ApiField("predict_settle_time")
 	private String predictSettleTime;
+
+	/**
+	 * 达人佣金，单位：元，精确到小数点后两位
+	 */
+	@ApiField("public_alloc_amount")
+	private String publicAllocAmount;
+
+	/**
+	 * 达人昵称
+	 */
+	@ApiField("public_name")
+	private String publicName;
 
 	/**
 	 * 订单实收金额，单位：元，精确到小数点后两位
@@ -115,10 +151,40 @@ public class ItemOrderBillDetailResponse extends AlipayObject {
 	private List<ItemOrderBillRefundResponse> refundFeeList;
 
 	/**
-	 * 资金提供方，为租赁商提供货品采购资金，帮助租赁商扩大经营规模，资方收取部分佣金
+	 * 退服务商佣金，单位：元，精确到小数点后两位
+	 */
+	@ApiField("refund_isv_alloc_amount")
+	private String refundIsvAllocAmount;
+
+	/**
+	 * 退支付手续费，单位：元，精确到小数点后两位
+	 */
+	@ApiField("refund_pay_commission")
+	private String refundPayCommission;
+
+	/**
+	 * 退达人佣金，单位：元，精确到小数点后两位
+	 */
+	@ApiField("refund_public_alloc_amount")
+	private String refundPublicAllocAmount;
+
+	/**
+	 * 备注
+	 */
+	@ApiField("remark")
+	private String remark;
+
+	/**
+	 * 资金提供方为租赁商提供货品采购资金，帮助租赁商扩大经营规模，因此资方收取部分佣金，单位：元，精确到小数点后两位。
 	 */
 	@ApiField("rent_funder_commission_amount")
 	private String rentFunderCommissionAmount;
+
+	/**
+	 * 租赁资方昵称
+	 */
+	@ApiField("rent_funder_nick_name")
+	private String rentFunderNickName;
 
 	/**
 	 * 订单二级场景类型
@@ -145,6 +211,12 @@ public class ItemOrderBillDetailResponse extends AlipayObject {
 	private String settlementAmount;
 
 	/**
+	 * 平台子单号
+	 */
+	@ApiField("sub_biz_no")
+	private String subBizNo;
+
+	/**
 	 * 支付宝交易号
 	 */
 	@ApiField("trade_no")
@@ -162,6 +234,27 @@ public class ItemOrderBillDetailResponse extends AlipayObject {
 	}
 	public void setFeeCategories(String feeCategories) {
 		this.feeCategories = feeCategories;
+	}
+
+	public String getHuabeiTechnicalServiceFee() {
+		return this.huabeiTechnicalServiceFee;
+	}
+	public void setHuabeiTechnicalServiceFee(String huabeiTechnicalServiceFee) {
+		this.huabeiTechnicalServiceFee = huabeiTechnicalServiceFee;
+	}
+
+	public String getIsvAllocAmount() {
+		return this.isvAllocAmount;
+	}
+	public void setIsvAllocAmount(String isvAllocAmount) {
+		this.isvAllocAmount = isvAllocAmount;
+	}
+
+	public String getIsvName() {
+		return this.isvName;
+	}
+	public void setIsvName(String isvName) {
+		this.isvName = isvName;
 	}
 
 	public String getMiniAppId() {
@@ -213,6 +306,13 @@ public class ItemOrderBillDetailResponse extends AlipayObject {
 		this.payAmount = payAmount;
 	}
 
+	public String getPayCommission() {
+		return this.payCommission;
+	}
+	public void setPayCommission(String payCommission) {
+		this.payCommission = payCommission;
+	}
+
 	public String getPlatformService() {
 		return this.platformService;
 	}
@@ -241,6 +341,20 @@ public class ItemOrderBillDetailResponse extends AlipayObject {
 		this.predictSettleTime = predictSettleTime;
 	}
 
+	public String getPublicAllocAmount() {
+		return this.publicAllocAmount;
+	}
+	public void setPublicAllocAmount(String publicAllocAmount) {
+		this.publicAllocAmount = publicAllocAmount;
+	}
+
+	public String getPublicName() {
+		return this.publicName;
+	}
+	public void setPublicName(String publicName) {
+		this.publicName = publicName;
+	}
+
 	public String getReceiptAmount() {
 		return this.receiptAmount;
 	}
@@ -262,11 +376,46 @@ public class ItemOrderBillDetailResponse extends AlipayObject {
 		this.refundFeeList = refundFeeList;
 	}
 
+	public String getRefundIsvAllocAmount() {
+		return this.refundIsvAllocAmount;
+	}
+	public void setRefundIsvAllocAmount(String refundIsvAllocAmount) {
+		this.refundIsvAllocAmount = refundIsvAllocAmount;
+	}
+
+	public String getRefundPayCommission() {
+		return this.refundPayCommission;
+	}
+	public void setRefundPayCommission(String refundPayCommission) {
+		this.refundPayCommission = refundPayCommission;
+	}
+
+	public String getRefundPublicAllocAmount() {
+		return this.refundPublicAllocAmount;
+	}
+	public void setRefundPublicAllocAmount(String refundPublicAllocAmount) {
+		this.refundPublicAllocAmount = refundPublicAllocAmount;
+	}
+
+	public String getRemark() {
+		return this.remark;
+	}
+	public void setRemark(String remark) {
+		this.remark = remark;
+	}
+
 	public String getRentFunderCommissionAmount() {
 		return this.rentFunderCommissionAmount;
 	}
 	public void setRentFunderCommissionAmount(String rentFunderCommissionAmount) {
 		this.rentFunderCommissionAmount = rentFunderCommissionAmount;
+	}
+
+	public String getRentFunderNickName() {
+		return this.rentFunderNickName;
+	}
+	public void setRentFunderNickName(String rentFunderNickName) {
+		this.rentFunderNickName = rentFunderNickName;
 	}
 
 	public String getServiceType() {
@@ -295,6 +444,13 @@ public class ItemOrderBillDetailResponse extends AlipayObject {
 	}
 	public void setSettlementAmount(String settlementAmount) {
 		this.settlementAmount = settlementAmount;
+	}
+
+	public String getSubBizNo() {
+		return this.subBizNo;
+	}
+	public void setSubBizNo(String subBizNo) {
+		this.subBizNo = subBizNo;
 	}
 
 	public String getTradeNo() {

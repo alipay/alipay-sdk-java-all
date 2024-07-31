@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.supplychain.trade.prerepayplan.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-25 16:27:11
+ * @since 1.0, 2024-07-29 15:08:25
  */
 public class MybankCreditSupplychainTradePrerepayplanQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6399211885326449838L;
+	private static final long serialVersionUID = 1293488638443775893L;
 
 	/** 
 	 * 账单分期列表

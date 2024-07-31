@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayAssetPointVoucherprodBenefittemplateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4575847212965212413L;
+	private static final long serialVersionUID = 8599533535458851485L;
 
 	/**
 	 * 资产id，即权益模板id，创建权益模板时返回的id

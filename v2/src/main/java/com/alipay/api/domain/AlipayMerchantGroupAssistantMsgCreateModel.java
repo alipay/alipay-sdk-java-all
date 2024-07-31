@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家群小助手定向消息创建
  *
  * @author auto create
- * @since 1.0, 2024-06-11 12:10:20
+ * @since 1.0, 2024-07-30 14:29:17
  */
 public class AlipayMerchantGroupAssistantMsgCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4374774728532932376L;
+	private static final long serialVersionUID = 8375785963186645894L;
 
 	/**
 	 * 自定义活动类型的消息内容，对应biz_type 为 activity_recommend 时必须传相关内容
@@ -24,7 +24,13 @@ public class AlipayMerchantGroupAssistantMsgCreateModel extends AlipayObject {
 	private ActivityAssistantMsgContentVO activityContent;
 
 	/**
-	 * 小助手类型，目前只支持 activity_recommend (自定义活动)
+	 * 权益推荐小助手内容，对应biz_type 为 benefit_recommend 时必须传相关内容
+	 */
+	@ApiField("benefit_content")
+	private BenefitAssistantMsgContentVO benefitContent;
+
+	/**
+	 * 小助手类型，目前支持 activity_recommend (自定义活动)、benefit_recommend（权益推荐）
 	 */
 	@ApiField("biz_type")
 	private String bizType;
@@ -53,6 +59,13 @@ public class AlipayMerchantGroupAssistantMsgCreateModel extends AlipayObject {
 	}
 	public void setActivityContent(ActivityAssistantMsgContentVO activityContent) {
 		this.activityContent = activityContent;
+	}
+
+	public BenefitAssistantMsgContentVO getBenefitContent() {
+		return this.benefitContent;
+	}
+	public void setBenefitContent(BenefitAssistantMsgContentVO benefitContent) {
+		this.benefitContent = benefitContent;
 	}
 
 	public String getBizType() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 多渠道入群有礼模型
  *
  * @author auto create
- * @since 1.0, 2024-07-19 14:46:14
+ * @since 1.0, 2024-07-30 14:28:50
  */
 public class MultiChannelJoinGiftVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3473158613586162426L;
+	private static final long serialVersionUID = 1432823243737679423L;
 
 	/**
 	 * 群组id，表里唯一键，创建群组自动生成

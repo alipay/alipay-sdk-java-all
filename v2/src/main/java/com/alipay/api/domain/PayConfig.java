@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 校园支付设置
  *
  * @author auto create
- * @since 1.0, 2024-06-18 16:13:55
+ * @since 1.0, 2024-07-29 14:33:51
  */
 public class PayConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 2856566438512286838L;
+	private static final long serialVersionUID = 3117642711261839982L;
 
 	/**
 	 * 银行渠道模式。YES时必传，可选的字段枚举说明：{BANK:指定银行;BANK_CARD:指定银行卡}

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 付款码链接申请
  *
  * @author auto create
- * @since 1.0, 2024-03-06 20:20:53
+ * @since 1.0, 2024-07-31 10:20:59
  */
 public class AlipayFundWalletPayurlApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6359283594492179387L;
+	private static final long serialVersionUID = 2751367372186549287L;
 
 	/**
 	 * 业务场景

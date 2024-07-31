@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceEducateFacefeatureFileApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2258861412788998462L;
+	private static final long serialVersionUID = 4672725633912985658L;
 
 	/**
 	 * SCHOOL_PAYMENT

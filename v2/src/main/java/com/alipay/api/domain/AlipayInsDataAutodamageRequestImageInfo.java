@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayInsDataAutodamageRequestImageInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2455837424544493195L;
+	private static final long serialVersionUID = 8785996899233562857L;
 
 	/**
 	 * 图像文件名称

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.acceptance.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-24 14:07:05
+ * @since 1.0, 2024-07-31 16:47:03
  */
 public class ZhimaCreditEpAcceptanceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5812758454555374443L;
+	private static final long serialVersionUID = 4816733349479149662L;
 
 	/** 
 	 * 当前的受理状态
@@ -49,6 +49,12 @@ public class ZhimaCreditEpAcceptanceQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("tel_phone")
 	private String telPhone;
+
+	/** 
+	 * 本次受理的支付宝用户的userId。
+	 */
+	@ApiField("user_id")
+	private String userId;
 
 	public void setAcceptanceStatus(String acceptanceStatus) {
 		this.acceptanceStatus = acceptanceStatus;
@@ -90,6 +96,13 @@ public class ZhimaCreditEpAcceptanceQueryResponse extends AlipayResponse {
 	}
 	public String getTelPhone( ) {
 		return this.telPhone;
+	}
+
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+	public String getUserId( ) {
+		return this.userId;
 	}
 
 }

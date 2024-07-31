@@ -7,15 +7,15 @@ import com.alipay.api.internal.mapping.ApiField;
  * 银行卡的附加信息描述
  *
  * @author auto create
- * @since 1.0, 2023-07-21 15:11:18
+ * @since 1.0, 2024-07-30 20:10:50
  */
 public class BankcardExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5412524818943743526L;
+	private static final long serialVersionUID = 8591539679657379611L;
 
 	/**
 	 * 收款账户类型。
-1：对公（在金融机构开设的公司账户）,如果银行卡为对公，必须传递省市支行信息或者联行号
+1：对公（在金融机构开设的公司账户）
 2：对私（在金融机构开设的个人账户）
 	 */
 	@ApiField("account_type")
@@ -46,7 +46,7 @@ public class BankcardExtInfo extends AlipayObject {
 	private String instName;
 
 	/**
-	 * 银行所在省份
+	 * 银行所在省
 	 */
 	@ApiField("inst_province")
 	private String instProvince;

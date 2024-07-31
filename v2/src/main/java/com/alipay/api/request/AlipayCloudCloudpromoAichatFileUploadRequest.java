@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudpromo.aichat.file.upload request
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 16:52:05
+ * @since 1.0, 2024-07-31 11:37:04
  */
 public class AlipayCloudCloudpromoAichatFileUploadRequest implements AlipayUploadRequest<AlipayCloudCloudpromoAichatFileUploadResponse> {
 
@@ -34,6 +34,11 @@ public class AlipayCloudCloudpromoAichatFileUploadRequest implements AlipayUploa
 	* 文件后缀名
 	 */
 	private String fileExtension;
+
+	/** 
+	* 文件id，首次上传文件时由问答系统生成并返回给调用方。
+	 */
+	private String fileId;
 
 	/** 
 	* 文件名称
@@ -74,6 +79,13 @@ public class AlipayCloudCloudpromoAichatFileUploadRequest implements AlipayUploa
 	}
 	public String getFileExtension() {
 		return this.fileExtension;
+	}
+
+	public void setFileId(String fileId) {
+		this.fileId = fileId;
+	}
+	public String getFileId() {
+		return this.fileId;
 	}
 
 	public void setFileName(String fileName) {
@@ -166,6 +178,7 @@ public class AlipayCloudCloudpromoAichatFileUploadRequest implements AlipayUploa
 		AlipayHashMap txtParams = new AlipayHashMap();
 		txtParams.put("customer_id", this.customerId);
 		txtParams.put("file_extension", this.fileExtension);
+		txtParams.put("file_id", this.fileId);
 		txtParams.put("file_name", this.fileName);
 		txtParams.put("file_usage", this.fileUsage);
 		txtParams.put("scene_id", this.sceneId);

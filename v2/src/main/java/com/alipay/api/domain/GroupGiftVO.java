@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 入群有礼模型
  *
  * @author auto create
- * @since 1.0, 2024-07-19 14:46:13
+ * @since 1.0, 2024-07-30 14:28:50
  */
 public class GroupGiftVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2641939438741919147L;
+	private static final long serialVersionUID = 6171939777682548968L;
 
 	/**
 	 * 营销活动id

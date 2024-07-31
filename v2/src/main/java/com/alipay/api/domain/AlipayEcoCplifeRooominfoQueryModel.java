@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoCplifeRooominfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2741687237613189649L;
+	private static final long serialVersionUID = 3789918799342527752L;
 
 	/**
 	 * 业主所在物业小区ID(支付宝平台唯一小区ID标示)

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudpromo.aichat.file.upload response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 16:52:05
+ * @since 1.0, 2024-07-31 11:37:04
  */
 public class AlipayCloudCloudpromoAichatFileUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3324686887553648631L;
+	private static final long serialVersionUID = 8737739362935332579L;
 
 	/** 
 	 * 文件ID
@@ -21,7 +21,7 @@ public class AlipayCloudCloudpromoAichatFileUploadResponse extends AlipayRespons
 	private String fileId;
 
 	/** 
-	 * 文件标签
+	 * 文件tag，文件存入oss后生成的tag值。用户可基于该值判断本次上传的文件和上次上传的文件是否一致。
 	 */
 	@ApiField("file_tag")
 	private String fileTag;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 核实流程签名
  *
  * @author auto create
- * @since 1.0, 2021-08-26 10:05:01
+ * @since 1.0, 2024-07-30 11:36:05
  */
 public class AlipayBossBaseProcessSignVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6159762997274615734L;
+	private static final long serialVersionUID = 8361524162566877858L;
 
 	/**
 	 * 流程唯一ID

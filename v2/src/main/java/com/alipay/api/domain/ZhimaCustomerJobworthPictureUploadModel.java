@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCustomerJobworthPictureUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3355476338273779345L;
+	private static final long serialVersionUID = 5837593225354322191L;
 
 	/**
 	 * 图片对应的base64字符串，支持jpg和png，1M之内

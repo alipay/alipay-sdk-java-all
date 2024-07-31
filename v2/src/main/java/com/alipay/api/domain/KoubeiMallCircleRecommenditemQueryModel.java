@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiMallCircleRecommenditemQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5164473169352656848L;
+	private static final long serialVersionUID = 3757999715877816385L;
 
 	/**
 	 * 口碑城市编码（示例：杭州市330100）
