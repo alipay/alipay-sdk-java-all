@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户意图智能服务推荐
  *
  * @author auto create
- * @since 1.0, 2024-06-17 16:27:16
+ * @since 1.0, 2024-08-01 16:29:50
  */
 public class AlipayEbppIndustryGovserviceRecommendQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8856834223535821271L;
+	private static final long serialVersionUID = 2145639585937911623L;
 
 	/**
 	 * 兜底城市code

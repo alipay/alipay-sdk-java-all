@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CardCreditInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2886495126793322813L;
+	private static final long serialVersionUID = 5796179737733396362L;
 
 	/**
 	 * 是否允许超扣

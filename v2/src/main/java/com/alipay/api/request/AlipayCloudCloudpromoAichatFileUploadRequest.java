@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudpromo.aichat.file.upload request
  * 
  * @author auto create
- * @since 1.0, 2024-07-31 11:37:04
+ * @since 1.0, 2024-08-01 15:17:03
  */
 public class AlipayCloudCloudpromoAichatFileUploadRequest implements AlipayUploadRequest<AlipayCloudCloudpromoAichatFileUploadResponse> {
 
@@ -49,6 +49,11 @@ public class AlipayCloudCloudpromoAichatFileUploadRequest implements AlipayUploa
 	* 文件用途
 	 */
 	private String fileUsage;
+
+	/** 
+	* 当后缀file_extension为xlsx/xls/csv/json时，index_column字段传值，表示对文件内容中指定的一级字段/列名建立优化索引；如果没有传递该值或不属于上述后缀，表示不针对字段级别建立索引。
+	 */
+	private String indexColumn;
 
 	/** 
 	* 场景唯一标识，由客户提供
@@ -100,6 +105,13 @@ public class AlipayCloudCloudpromoAichatFileUploadRequest implements AlipayUploa
 	}
 	public String getFileUsage() {
 		return this.fileUsage;
+	}
+
+	public void setIndexColumn(String indexColumn) {
+		this.indexColumn = indexColumn;
+	}
+	public String getIndexColumn() {
+		return this.indexColumn;
 	}
 
 	public void setSceneId(String sceneId) {
@@ -181,6 +193,7 @@ public class AlipayCloudCloudpromoAichatFileUploadRequest implements AlipayUploa
 		txtParams.put("file_id", this.fileId);
 		txtParams.put("file_name", this.fileName);
 		txtParams.put("file_usage", this.fileUsage);
+		txtParams.put("index_column", this.indexColumn);
 		txtParams.put("scene_id", this.sceneId);
 		txtParams.put("session_id", this.sessionId);
 		if(udfParams != null) {

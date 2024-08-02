@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCloudFundWalletTokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1822415351154321595L;
+	private static final long serialVersionUID = 8552267924912599542L;
 
 	/**
 	 * 格式必须为： https://开头域名链接地址 或者 alipays://开头的支付宝小程序链接。 2. 需要保证传入的 returnUrl 链接能够有效访问

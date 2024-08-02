@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayInsSceneInspetprodHasprofileBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3712278154423178759L;
+	private static final long serialVersionUID = 3453827388992776438L;
 
 	/** 
 	 * 示例List<QueryProfileDTO>

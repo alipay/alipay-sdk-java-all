@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单出游信息
  *
  * @author auto create
- * @since 1.0, 2024-04-18 21:19:15
+ * @since 1.0, 2024-08-01 19:33:51
  */
 public class TourInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2432599363486736542L;
+	private static final long serialVersionUID = 2499296457844455832L;
 
 	/**
 	 * 始发地

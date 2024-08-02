@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ActivityStat extends AlipayObject {
 
-	private static final long serialVersionUID = 6685115234467585837L;
+	private static final long serialVersionUID = 5444738518916983659L;
 
 	/**
 	 * 活动总参与人次, 即活动总共签署合约数

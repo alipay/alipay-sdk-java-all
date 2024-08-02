@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户通过该接口进行交易的创建下单
  *
  * @author auto create
- * @since 1.0, 2024-05-07 11:34:50
+ * @since 1.0, 2024-08-01 21:38:52
  */
 public class AlipayTradeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3362871362677195792L;
+	private static final long serialVersionUID = 7659284968897143361L;
 
 	/**
 	 * 签约参数。如果希望使用支付并签约，需要在这里传入签约信息。
@@ -240,7 +240,8 @@ public class AlipayTradeCreateModel extends AlipayObject {
 	/**
 	 * 订单相对超时时间。从交易创建时间开始计算。
 该笔订单允许的最晚付款时间，逾期将关闭交易。取值范围：1m～15d。m-分钟，h-小时，d-天，1c-当天（1c-当天的情况下，无论交易何时创建，都在0点关闭）。 该参数数值不接受小数点， 如 1.5h，可转换为 90m。
-当面付场景默认值为3h。
+当面付场景默认值为3h，如需指定，推荐设置5m及以上。
+
 注：time_expire和timeout_express两者只需传入一个或者都不传，如果两者都传，优先使用time_expire。
 	 */
 	@ApiField("timeout_express")

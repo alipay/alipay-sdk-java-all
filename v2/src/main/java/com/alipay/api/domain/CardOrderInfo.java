@@ -8,14 +8,20 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * 订单信息
+ * 售卖订单信息
  *
  * @author auto create
- * @since 1.0, 2024-07-05 14:07:50
+ * @since 1.0, 2024-08-01 15:00:19
  */
 public class CardOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5257284916411898232L;
+	private static final long serialVersionUID = 3882875277662615762L;
+
+	/**
+	 * 金额卡余额面值，单位分
+	 */
+	@ApiField("available_amount")
+	private Long availableAmount;
 
 	/**
 	 * 用于区分订购单的取消类型
@@ -24,25 +30,38 @@ public class CardOrderInfo extends AlipayObject {
 	private String cancelType;
 
 	/**
-	 * 订单ID
+	 * 售卖订单ID
 	 */
 	@ApiField("card_id")
 	private String cardId;
 
 	/**
-	 * 订单状态
+	 * 售卖订单状态
+● 次卡/周期卡
+  ○ 订购中:init
+  ○ 可使用:available
+  ○ 已用完:used_up
+  ○ 关闭中:closing
+  ○ 已关闭:closed
+● 金额卡
+  ○ 可使用:available
+  ○ 已失效：invalid
+  ○ 已支付：paid
+  ○ 已退款：refund
+  ○ 超时关闭：timeout_closed
+  ○ 已用完:used_up
 	 */
 	@ApiField("card_status")
 	private String cardStatus;
 
 	/**
-	 * 商品ID
+	 * 卡ID
 	 */
 	@ApiField("card_template_id")
 	private String cardTemplateId;
 
 	/**
-	 * 商品类型
+	 * 卡类型
 	 */
 	@ApiField("card_type")
 	private String cardType;
@@ -61,7 +80,19 @@ public class CardOrderInfo extends AlipayObject {
 	private List<DeductionPlanInfo> deductionPlanList;
 
 	/**
-	 * 商品名称
+	 * 订单有效期开始时间
+	 */
+	@ApiField("gmt_active")
+	private Date gmtActive;
+
+	/**
+	 * 订单有效期结束时间
+	 */
+	@ApiField("gmt_expired")
+	private Date gmtExpired;
+
+	/**
+	 * 卡名称
 	 */
 	@ApiField("name")
 	private String name;
@@ -79,7 +110,7 @@ public class CardOrderInfo extends AlipayObject {
 	private String orderId;
 
 	/**
-	 * 购买商品时的原价，单位分
+	 * 用户购买商品时的原价（面额），单位分
 	 */
 	@ApiField("origin_price_total")
 	private Long originPriceTotal;
@@ -97,7 +128,7 @@ public class CardOrderInfo extends AlipayObject {
 	private Long remainCount;
 
 	/**
-	 * 用户购买商品时的实际价格，单位分
+	 * 用户购买商品时的实际价格（售价），单位分
 	 */
 	@ApiField("sale_price_total")
 	private Long salePriceTotal;
@@ -115,6 +146,18 @@ public class CardOrderInfo extends AlipayObject {
 	private Long totalCount;
 
 	/**
+	 * 支付宝交易号
+	 */
+	@ApiField("trade_no")
+	private String tradeNo;
+
+	/**
+	 * 金额卡余额现金价值，单位分
+	 */
+	@ApiField("usable_cash")
+	private Long usableCash;
+
+	/**
 	 * 支付宝用户的userId。
 	 */
 	@ApiField("user_id")
@@ -125,6 +168,13 @@ public class CardOrderInfo extends AlipayObject {
 	 */
 	@ApiField("user_name")
 	private String userName;
+
+	public Long getAvailableAmount() {
+		return this.availableAmount;
+	}
+	public void setAvailableAmount(Long availableAmount) {
+		this.availableAmount = availableAmount;
+	}
 
 	public String getCancelType() {
 		return this.cancelType;
@@ -173,6 +223,20 @@ public class CardOrderInfo extends AlipayObject {
 	}
 	public void setDeductionPlanList(List<DeductionPlanInfo> deductionPlanList) {
 		this.deductionPlanList = deductionPlanList;
+	}
+
+	public Date getGmtActive() {
+		return this.gmtActive;
+	}
+	public void setGmtActive(Date gmtActive) {
+		this.gmtActive = gmtActive;
+	}
+
+	public Date getGmtExpired() {
+		return this.gmtExpired;
+	}
+	public void setGmtExpired(Date gmtExpired) {
+		this.gmtExpired = gmtExpired;
 	}
 
 	public String getName() {
@@ -236,6 +300,20 @@ public class CardOrderInfo extends AlipayObject {
 	}
 	public void setTotalCount(Long totalCount) {
 		this.totalCount = totalCount;
+	}
+
+	public String getTradeNo() {
+		return this.tradeNo;
+	}
+	public void setTradeNo(String tradeNo) {
+		this.tradeNo = tradeNo;
+	}
+
+	public Long getUsableCash() {
+		return this.usableCash;
+	}
+	public void setUsableCash(Long usableCash) {
+		this.usableCash = usableCash;
 	}
 
 	public String getUserId() {

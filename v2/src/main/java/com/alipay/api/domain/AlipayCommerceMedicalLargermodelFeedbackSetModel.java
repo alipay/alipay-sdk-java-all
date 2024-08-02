@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 医疗大模型服务对外接口_点踩
  *
  * @author auto create
- * @since 1.0, 2024-07-29 18:12:11
+ * @since 1.0, 2024-08-01 20:49:53
  */
 public class AlipayCommerceMedicalLargermodelFeedbackSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1112429478633211474L;
+	private static final long serialVersionUID = 7867779137183523554L;
 
 	/**
 	 * 行业侧生成，首次为空

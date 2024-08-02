@@ -7,35 +7,53 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订购单分页查询
  *
  * @author auto create
- * @since 1.0, 2024-07-05 14:07:17
+ * @since 1.0, 2024-08-01 15:01:17
  */
 public class AlipayCommerceMerchantcardOrderBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4434799329126128652L;
+	private static final long serialVersionUID = 1313855116464572551L;
 
 	/**
-	 * 商品名称
+	 * 卡名称
 	 */
 	@ApiField("card_name")
 	private String cardName;
 
 	/**
-	 * 订单状态
+	 * 售卖订单状态 ● 次卡/周期卡 ○ 订购中:init ○ 可使用:available ○ 已用完:used_up ○ 关闭中:closing ○ 已关闭:closed ● 金额卡 ○ 可使用:available ○ 已失效：invalid ○ 已支付：paid ○ 已退款：refund ○ 超时关闭：timeout_closed ○ 已用完:used_up
 	 */
 	@ApiField("card_status")
 	private String cardStatus;
 
 	/**
-	 * 商品ID
+	 * 卡ID
 	 */
 	@ApiField("card_template_id")
 	private String cardTemplateId;
+
+	/**
+	 * 卡类型
+	 */
+	@ApiField("card_type")
+	private String cardType;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/**
+	 * 售卖订单结束时间
+	 */
+	@ApiField("order_end_date")
+	private String orderEndDate;
+
+	/**
+	 * 售卖订单开始时间
+	 */
+	@ApiField("order_start_date")
+	private String orderStartDate;
 
 	/**
 	 * 页码
@@ -50,10 +68,16 @@ public class AlipayCommerceMerchantcardOrderBatchqueryModel extends AlipayObject
 	private Long pageSize;
 
 	/**
-	 * 门店ID，只有周期付支持按门店ID查询
+	 * 门店ID
 	 */
 	@ApiField("shop_id")
 	private String shopId;
+
+	/**
+	 * 支付宝交易号
+	 */
+	@ApiField("trade_no")
+	private String tradeNo;
 
 	/**
 	 * 支付宝用户的userId。
@@ -82,11 +106,32 @@ public class AlipayCommerceMerchantcardOrderBatchqueryModel extends AlipayObject
 		this.cardTemplateId = cardTemplateId;
 	}
 
+	public String getCardType() {
+		return this.cardType;
+	}
+	public void setCardType(String cardType) {
+		this.cardType = cardType;
+	}
+
 	public String getOpenId() {
 		return this.openId;
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public String getOrderEndDate() {
+		return this.orderEndDate;
+	}
+	public void setOrderEndDate(String orderEndDate) {
+		this.orderEndDate = orderEndDate;
+	}
+
+	public String getOrderStartDate() {
+		return this.orderStartDate;
+	}
+	public void setOrderStartDate(String orderStartDate) {
+		this.orderStartDate = orderStartDate;
 	}
 
 	public Long getPageNum() {
@@ -108,6 +153,13 @@ public class AlipayCommerceMerchantcardOrderBatchqueryModel extends AlipayObject
 	}
 	public void setShopId(String shopId) {
 		this.shopId = shopId;
+	}
+
+	public String getTradeNo() {
+		return this.tradeNo;
+	}
+	public void setTradeNo(String tradeNo) {
+		this.tradeNo = tradeNo;
 	}
 
 	public String getUserId() {

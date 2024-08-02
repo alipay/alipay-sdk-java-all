@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GetOfficePreviewURLResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 7778242115823728589L;
+	private static final long serialVersionUID = 3738188379392379792L;
 
 	/**
 	 * ak

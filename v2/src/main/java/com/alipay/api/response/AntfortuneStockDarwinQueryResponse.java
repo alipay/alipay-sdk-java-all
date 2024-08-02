@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.stock.darwin.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-18 17:47:55
+ * @since 1.0, 2024-08-01 17:02:06
  */
 public class AntfortuneStockDarwinQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1654853492543311111L;
+	private static final long serialVersionUID = 6811723128765633469L;
 
 	/** 
 	 * 达尔文参数

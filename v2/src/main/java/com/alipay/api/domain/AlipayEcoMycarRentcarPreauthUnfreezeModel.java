@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoMycarRentcarPreauthUnfreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2164517669196926631L;
+	private static final long serialVersionUID = 1579256728246943913L;
 
 	/**
 	 * 解冻资金类型

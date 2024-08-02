@@ -1,17 +1,26 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 在线问诊医生基础信息
  *
  * @author auto create
- * @since 1.0, 2024-02-20 15:24:42
+ * @since 1.0, 2024-08-01 17:07:50
  */
 public class InqueryDoctorData extends AlipayObject {
 
-	private static final long serialVersionUID = 7779531653245769664L;
+	private static final long serialVersionUID = 6775596877515854635L;
+
+	/**
+	 * 医生是否认证 1 已认证 0 未认证
+	 */
+	@ApiField("auth_status")
+	private String authStatus;
 
 	/**
 	 * 医生头像
@@ -44,6 +53,37 @@ public class InqueryDoctorData extends AlipayObject {
 	private String doctorName;
 
 	/**
+	 * 教育职称
+	 */
+	@ApiField("educate_grade")
+	private String educateGrade;
+
+	/**
+	 * 可以与支付宝侧关联的外部标准科室id
+	 */
+	@ApiField("ext_depart_id")
+	private String extDepartId;
+
+	/**
+	 * 可以与支付宝侧关联的外部标准疾病id列表
+	 */
+	@ApiListField("ext_disease_id_list")
+	@ApiField("string")
+	private List<String> extDiseaseIdList;
+
+	/**
+	 * 外部自己医生的唯一标识
+	 */
+	@ApiField("ext_doctor_id")
+	private String extDoctorId;
+
+	/**
+	 * 可以与支付宝侧关联的外部标准医院id
+	 */
+	@ApiField("ext_hospital_id")
+	private String extHospitalId;
+
+	/**
 	 * 医生性别
 	 */
 	@ApiField("gender")
@@ -62,7 +102,7 @@ public class InqueryDoctorData extends AlipayObject {
 	private String idNo;
 
 	/**
-	 * 执医年限
+	 * 执医年限，单位年
 	 */
 	@ApiField("practice_year")
 	private String practiceYear;
@@ -87,6 +127,7 @@ public class InqueryDoctorData extends AlipayObject {
 
 	/**
 	 * 医生专业标签（多个标签时用英文逗号分隔）
+专业标签数量不固定
 	 */
 	@ApiField("special_tags")
 	private String specialTags;
@@ -96,6 +137,13 @@ public class InqueryDoctorData extends AlipayObject {
 	 */
 	@ApiField("title")
 	private String title;
+
+	public String getAuthStatus() {
+		return this.authStatus;
+	}
+	public void setAuthStatus(String authStatus) {
+		this.authStatus = authStatus;
+	}
 
 	public String getAvator() {
 		return this.avator;
@@ -130,6 +178,41 @@ public class InqueryDoctorData extends AlipayObject {
 	}
 	public void setDoctorName(String doctorName) {
 		this.doctorName = doctorName;
+	}
+
+	public String getEducateGrade() {
+		return this.educateGrade;
+	}
+	public void setEducateGrade(String educateGrade) {
+		this.educateGrade = educateGrade;
+	}
+
+	public String getExtDepartId() {
+		return this.extDepartId;
+	}
+	public void setExtDepartId(String extDepartId) {
+		this.extDepartId = extDepartId;
+	}
+
+	public List<String> getExtDiseaseIdList() {
+		return this.extDiseaseIdList;
+	}
+	public void setExtDiseaseIdList(List<String> extDiseaseIdList) {
+		this.extDiseaseIdList = extDiseaseIdList;
+	}
+
+	public String getExtDoctorId() {
+		return this.extDoctorId;
+	}
+	public void setExtDoctorId(String extDoctorId) {
+		this.extDoctorId = extDoctorId;
+	}
+
+	public String getExtHospitalId() {
+		return this.extHospitalId;
+	}
+	public void setExtHospitalId(String extHospitalId) {
+		this.extHospitalId = extHospitalId;
 	}
 
 	public String getGender() {

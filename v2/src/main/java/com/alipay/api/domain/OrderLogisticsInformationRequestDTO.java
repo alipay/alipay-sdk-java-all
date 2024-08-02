@@ -12,7 +12,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OrderLogisticsInformationRequestDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5836989485648145352L;
+	private static final long serialVersionUID = 1522696487751692542L;
 
 	/**
 	 * 物流公司编号。

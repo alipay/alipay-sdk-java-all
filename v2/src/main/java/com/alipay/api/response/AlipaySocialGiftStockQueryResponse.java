@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySocialGiftStockQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1794117418171935861L;
+	private static final long serialVersionUID = 1378538588397634759L;
 
 	/** 
 	 * 可用库存总条数

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.huabei.merchant.activity.offline request
  * 
  * @author auto create
- * @since 1.0, 2023-09-01 17:15:45
+ * @since 1.0, 2024-08-01 22:52:57
  */
 public class AlipayPcreditHuabeiMerchantActivityOfflineRequest implements AlipayRequest<AlipayPcreditHuabeiMerchantActivityOfflineResponse> {
 

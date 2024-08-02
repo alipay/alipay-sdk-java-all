@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ActivityDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6558652199736982514L;
+	private static final long serialVersionUID = 3345643757591335355L;
 
 	/**
 	 * 权益id，领奖时的凭证。领奖凭证应该保证唯一，以保证后续领奖时能够识别领取人身份。

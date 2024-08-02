@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.traas.cloudrisk.rentrisk.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-08 22:02:04
+ * @since 1.0, 2024-08-01 16:22:06
  */
 public class AlipayCloudTraasCloudriskRentriskQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1594933212438778699L;
+	private static final long serialVersionUID = 1464881557989121317L;
 
 	/** 
 	 * 风险咨询事件ID

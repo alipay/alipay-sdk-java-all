@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 直播弹幕游戏推送数据（点赞/评论/礼物）
  *
  * @author auto create
- * @since 1.0, 2024-07-23 15:59:30
+ * @since 1.0, 2024-08-01 17:54:56
  */
 public class DanmuGameData extends AlipayObject {
 
-	private static final long serialVersionUID = 4185294931285566395L;
+	private static final long serialVersionUID = 1727987435283498596L;
 
 	/**
 	 * 评论内容
@@ -24,13 +24,21 @@ public class DanmuGameData extends AlipayObject {
 	private List<String> content;
 
 	/**
-	 * 点赞数量
+	 * 评论内容数组形式 当前字段已废弃(废弃改参数，content字段就是string数组)
+	 */
+	@ApiListField("content_list")
+	@ApiField("string")
+	@Deprecated
+	private List<String> contentList;
+
+	/**
+	 * 点赞数量，单位个
 	 */
 	@ApiField("count")
 	private Long count;
 
 	/**
-	 * 礼物数量
+	 * 礼物数量，单位个
 	 */
 	@ApiField("gift_count")
 	private Long giftCount;
@@ -60,6 +68,18 @@ public class DanmuGameData extends AlipayObject {
 	private Long giftUnitPrice;
 
 	/**
+	 * 用户头像url
+	 */
+	@ApiField("head_url")
+	private String headUrl;
+
+	/**
+	 * 用于标记支付宝用户在应用下的唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/**
 	 * 单号，一个单号代表一笔送收礼, 幂等消费
 	 */
 	@ApiField("unique_no")
@@ -71,11 +91,24 @@ public class DanmuGameData extends AlipayObject {
 	@ApiField("user_info")
 	private DanmuGameUserInfo userInfo;
 
+	/**
+	 * 用户昵称
+	 */
+	@ApiField("user_name")
+	private String userName;
+
 	public List<String> getContent() {
 		return this.content;
 	}
 	public void setContent(List<String> content) {
 		this.content = content;
+	}
+
+	public List<String> getContentList() {
+		return this.contentList;
+	}
+	public void setContentList(List<String> contentList) {
+		this.contentList = contentList;
 	}
 
 	public Long getCount() {
@@ -120,6 +153,20 @@ public class DanmuGameData extends AlipayObject {
 		this.giftUnitPrice = giftUnitPrice;
 	}
 
+	public String getHeadUrl() {
+		return this.headUrl;
+	}
+	public void setHeadUrl(String headUrl) {
+		this.headUrl = headUrl;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+
 	public String getUniqueNo() {
 		return this.uniqueNo;
 	}
@@ -132,6 +179,13 @@ public class DanmuGameData extends AlipayObject {
 	}
 	public void setUserInfo(DanmuGameUserInfo userInfo) {
 		this.userInfo = userInfo;
+	}
+
+	public String getUserName() {
+		return this.userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 
 }

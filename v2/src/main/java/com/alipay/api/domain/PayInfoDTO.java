@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付信息模型
  *
  * @author auto create
- * @since 1.0, 2024-06-19 15:45:50
+ * @since 1.0, 2024-08-01 19:19:51
  */
 public class PayInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6775115914893922428L;
+	private static final long serialVersionUID = 8717295922546377318L;
 
 	/**
 	 * 禁用渠道,用户不可用指定渠道支付，多个渠道以逗号分隔，与enable_pay_channels互斥  <a href="https://opendocs.alipay.com/open/common/wifww7">渠道列表</a>
@@ -32,7 +32,7 @@ public class PayInfoDTO extends AlipayObject {
 	private String paymentBizType;
 
 	/**
-	 * 支付方式，到付等特殊场景下传入
+	 * 支付方式，到付、无需支付等特殊场景下传入，到付和无需支付都会直接推进订单到已支付状态。
 	 */
 	@ApiField("payment_method")
 	private String paymentMethod;

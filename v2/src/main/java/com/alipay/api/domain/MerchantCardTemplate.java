@@ -7,41 +7,41 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * 商品
+ * 卡
  *
  * @author auto create
- * @since 1.0, 2024-07-05 13:59:15
+ * @since 1.0, 2024-08-01 16:50:52
  */
 public class MerchantCardTemplate extends AlipayObject {
 
-	private static final long serialVersionUID = 6363491569796614955L;
+	private static final long serialVersionUID = 7888598347821463117L;
 
 	/**
-	 * 商品归属的小程序appid
+	 * 卡归属的小程序appid
 	 */
 	@ApiField("card_template_app_id")
 	private String cardTemplateAppId;
 
 	/**
-	 * 支付宝侧商品ID，创建接口不需要传
+	 * 支付宝侧卡ID，创建接口不需要传
 	 */
 	@ApiField("card_template_id")
 	private String cardTemplateId;
 
 	/**
-	 * 商品名称
+	 * 卡名称（当card_type=AXF_MONEY_CARD时，查询会返回）
 	 */
 	@ApiField("card_template_name")
 	private String cardTemplateName;
 
 	/**
-	 * 商品状态，创建接口不需要传
+	 * 卡状态，创建接口不需要传
 	 */
 	@ApiField("card_template_status")
 	private String cardTemplateStatus;
 
 	/**
-	 * 商品类型
+	 * 卡类型
 	 */
 	@ApiField("card_type")
 	private String cardType;
@@ -53,21 +53,27 @@ public class MerchantCardTemplate extends AlipayObject {
 	private String categoryId;
 
 	/**
-	 * （1）当card_type!=AXF_MERCHANT_PERIOD_PAY,字段image_id_list和image_url_list必须二选一传入，，image_id_list优先级更高
+	 * （1）当card_type不等于AXF_MERCHANT_PERIOD_PAY或AXF_PERIOD_PAY_INDIRECT时,字段image_id_list和image_url_list必须二选一传入，image_id_list优先级更高
 （2）查询返回时该字段为空，返回image_url_list
-（3）当card_type=AXF_MERCHANT_PERIOD_PAY，该字段不传，固定为一方小程序的图片url；
+（3）当card_type=AXF_MERCHANT_PERIOD_PAY或AXF_PERIOD_PAY_INDIRECT或AXF_MONEY_CARD时，该字段不传，固定为一方小程序的图片url；
 	 */
 	@ApiListField("image_id_list")
 	@ApiField("string")
 	private List<String> imageIdList;
 
 	/**
-	 * （1）当card_type!=AXF_MERCHANT_PERIOD_PAY,字段image_id_list和image_url_list必须二选一传入，，image_id_list优先级更高
-（2）当card_type=AXF_MERCHANT_PERIOD_PAY，该字段不传，固定为一方小程序的图片url；
+	 * （1）当card_type不等于AXF_MERCHANT_PERIOD_PAY或AXF_PERIOD_PAY_INDIRECT时,字段image_id_list和image_url_list必须二选一传入，image_id_list优先级更高
+（2）当card_type=AXF_MERCHANT_PERIOD_PAY或AXF_PERIOD_PAY_INDIRECT或AXF_MONEY_CARD时，该字段不传，固定为一方小程序的图片url；
 	 */
 	@ApiListField("image_url_list")
 	@ApiField("string")
 	private List<String> imageUrlList;
+
+	/**
+	 * 金额卡的必要参数。其他卡类型无需传入
+	 */
+	@ApiField("money_card_info")
+	private MoneyCardInfo moneyCardInfo;
 
 	/**
 	 * 消息通知appId
@@ -76,7 +82,7 @@ public class MerchantCardTemplate extends AlipayObject {
 	private String msgAppId;
 
 	/**
-	 * 外部商品ID
+	 * 外部卡ID
 	 */
 	@ApiField("out_card_id")
 	private String outCardId;
@@ -160,6 +166,13 @@ public class MerchantCardTemplate extends AlipayObject {
 	}
 	public void setImageUrlList(List<String> imageUrlList) {
 		this.imageUrlList = imageUrlList;
+	}
+
+	public MoneyCardInfo getMoneyCardInfo() {
+		return this.moneyCardInfo;
+	}
+	public void setMoneyCardInfo(MoneyCardInfo moneyCardInfo) {
+		this.moneyCardInfo = moneyCardInfo;
 	}
 
 	public String getMsgAppId() {

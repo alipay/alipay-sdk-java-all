@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 酒店预订信息
  *
  * @author auto create
- * @since 1.0, 2024-02-28 14:02:17
+ * @since 1.0, 2024-08-01 19:33:51
  */
 public class BookingInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7351316357191889935L;
+	private static final long serialVersionUID = 8198512686381378489L;
 
 	/**
 	 * 预约入住时间
@@ -62,7 +62,7 @@ public class BookingInfoDTO extends AlipayObject {
 	private String deadline;
 
 	/**
-	 * 商户为买家办理续住的时间
+	 * 商户为买家办理续住的时间，格式为：yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("have_stay_time")
 	private String haveStayTime;

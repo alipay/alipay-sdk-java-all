@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 授权对象
  *
  * @author auto create
- * @since 1.0, 2021-11-25 11:52:32
+ * @since 1.0, 2024-08-01 20:28:52
  */
 public class AuthInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5418624824732565179L;
+	private static final long serialVersionUID = 5645679198997455113L;
 
 	/**
-	 * 授权号
+	 * 授权号，协议授权或者cif协议对应的授权号。
 	 */
 	@ApiField("auth_code")
 	private String authCode;
