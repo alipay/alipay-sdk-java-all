@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDigitalopUcdpApecreativeMaterialSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5317242994471256392L;
+	private static final long serialVersionUID = 1383665649417382148L;
 
 	/** 
 	 * 如果有创意组id 传进来的，就直接返回，如果是新建的，返回的是新建的创意组id

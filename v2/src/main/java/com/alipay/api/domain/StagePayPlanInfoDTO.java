@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class StagePayPlanInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7262423168146427392L;
+	private static final long serialVersionUID = 4486997698547741239L;
 
 	/**
 	 * 阶段计划付款编号，标识第几次或第几期付款，起始值为1，多个计划需保证编号递增

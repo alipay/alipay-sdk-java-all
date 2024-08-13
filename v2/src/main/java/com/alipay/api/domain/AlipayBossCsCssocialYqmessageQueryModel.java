@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayBossCsCssocialYqmessageQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5657976561831659265L;
+	private static final long serialVersionUID = 2818395869715676754L;
 
 	/**
 	 * 搜索条件字符串：搜索请求的JSON字符串，JSON字符串中:

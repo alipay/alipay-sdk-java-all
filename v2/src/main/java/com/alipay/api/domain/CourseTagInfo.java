@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CourseTagInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5646916394954858729L;
+	private static final long serialVersionUID = 7247176729544841889L;
 
 	/**
 	 * 标签code (从标签列表接口选取)

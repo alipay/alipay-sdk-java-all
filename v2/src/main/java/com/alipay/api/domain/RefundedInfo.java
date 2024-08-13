@@ -14,7 +14,7 @@ EVOA refund infos.
  */
 public class RefundedInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7323596916914228969L;
+	private static final long serialVersionUID = 8772199364711445276L;
 
 	/**
 	 * 用户申请订单号回传。 Unique Application No.

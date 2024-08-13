@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiCateringOrderInfoSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7162971824888491828L;
+	private static final long serialVersionUID = 7835212751419379646L;
 
 	/** 
 	 * json结构化对象，部分退款场景：refund_amount=入参请求的退款金额，out_refund_no=入参请求的外部退款单号，buyer_real_amount=买家实际退金额，refund_real_amount=商家实际退款金额。

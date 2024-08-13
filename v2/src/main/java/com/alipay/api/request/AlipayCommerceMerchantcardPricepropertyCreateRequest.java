@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.merchantcard.priceproperty.create request
  * 
  * @author auto create
- * @since 1.0, 2024-08-12 11:32:05
+ * @since 1.0, 2024-08-13 12:37:06
  */
 public class AlipayCommerceMerchantcardPricepropertyCreateRequest implements AlipayRequest<AlipayCommerceMerchantcardPricepropertyCreateResponse> {
 

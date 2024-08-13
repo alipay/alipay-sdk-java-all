@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenServicemarketOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2435342359818532412L;
+	private static final long serialVersionUID = 4848311683761868266L;
 
 	/**
 	 * 订购服务订单ID，通过支付宝发送的 <a href="https://opendocs.alipay.com/isv/b7f7864a_alipay.open.servicemarket.order.notify?scene=common&pathHash=af6ed436">服务市场商户确认订购通知</a> 获取。

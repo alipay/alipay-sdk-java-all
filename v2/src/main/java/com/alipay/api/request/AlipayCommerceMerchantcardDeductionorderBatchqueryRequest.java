@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.merchantcard.deductionorder.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2024-07-30 13:42:02
+ * @since 1.0, 2024-08-13 12:57:06
  */
 public class AlipayCommerceMerchantcardDeductionorderBatchqueryRequest implements AlipayRequest<AlipayCommerceMerchantcardDeductionorderBatchqueryResponse> {
 

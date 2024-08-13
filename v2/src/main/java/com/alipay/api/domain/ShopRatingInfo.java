@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ShopRatingInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5764797118467411396L;
+	private static final long serialVersionUID = 7212157295839647621L;
 
 	/**
 	 * 物流评分（5分制，单位：分）

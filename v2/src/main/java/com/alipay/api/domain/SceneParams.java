@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SceneParams extends AlipayObject {
 
-	private static final long serialVersionUID = 8365377671974687671L;
+	private static final long serialVersionUID = 4137166786377126655L;
 
 	/**
 	 * 人脸接入必传，身份核验授权authFlag，R仅授权人脸认证结果，A为认证结果和人脸图像

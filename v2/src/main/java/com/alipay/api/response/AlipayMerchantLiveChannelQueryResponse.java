@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMerchantLiveChannelQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2265225118673525588L;
+	private static final long serialVersionUID = 3838687269936714783L;
 
 	/** 
 	 * 渠道内容，包含主播、文章的上游信息。字符串内容为Map，需要转换

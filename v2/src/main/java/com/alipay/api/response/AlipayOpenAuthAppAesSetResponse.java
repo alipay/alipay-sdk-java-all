@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenAuthAppAesSetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4681774595113271169L;
+	private static final long serialVersionUID = 1685396499532196471L;
 
 	/** 
 	 * 商家应用AES KEY密文，需要ISV使用三方应用配置的AES密钥内容进行解密。详情参见 <a href="https://opendocs.alipay.com/isv/grefvl/getaes">应用AES密钥管理</a>。

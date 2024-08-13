@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ProductSize extends AlipayObject {
 
-	private static final long serialVersionUID = 6326615385446692791L;
+	private static final long serialVersionUID = 3285492337186667488L;
 
 	/**
 	 * 商品深度

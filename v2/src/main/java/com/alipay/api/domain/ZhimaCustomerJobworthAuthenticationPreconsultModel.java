@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 身份验真预咨询服务
  *
  * @author auto create
- * @since 1.0, 2024-03-15 15:21:50
+ * @since 1.0, 2024-08-12 21:34:59
  */
 public class ZhimaCustomerJobworthAuthenticationPreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5435932212631437529L;
+	private static final long serialVersionUID = 7167529548215732968L;
 
 	/**
 	 * 身份类型

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserSportshealthAccountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2854254266566569666L;
+	private static final long serialVersionUID = 2673891951686671214L;
 
 	/** 
 	 * 用户运动币账户余额

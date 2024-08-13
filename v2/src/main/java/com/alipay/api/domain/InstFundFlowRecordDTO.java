@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InstFundFlowRecordDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2453759227382195345L;
+	private static final long serialVersionUID = 4442416859272798472L;
 
 	/**
 	 * 资金池ID

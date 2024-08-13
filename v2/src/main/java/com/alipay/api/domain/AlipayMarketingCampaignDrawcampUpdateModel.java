@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingCampaignDrawcampUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2594845473437472273L;
+	private static final long serialVersionUID = 8894279919219116489L;
 
 	/**
 	 * 单用户以支付宝账号维度可参与当前营销活动的总次数，由开发者自定义此数值

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserQuanyibaoOpenbenefitSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7555359615994126187L;
+	private static final long serialVersionUID = 1483285286543883233L;
 
 	/** 
 	 * 权益宝权益发放的业务号，与入参中third_biz_no关联且唯一

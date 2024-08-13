@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnxinkaDeliverDetailResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 6868732739767566958L;
+	private static final long serialVersionUID = 8857318483977139383L;
 
 	/**
 	 * 安心卡卡号

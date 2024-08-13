@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankCreditLoanapplyInsturlQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8545628798496564729L;
+	private static final long serialVersionUID = 4538879552794193763L;
 
 	/**
 	 * 机构合约编号，商户接入企业信贷业务时自动分配，获取地址：https://partner.mybank.cn/cooperation/myCooperation.htm，路径：我的合作-查看详情-开发接口调用-接口合约编号；

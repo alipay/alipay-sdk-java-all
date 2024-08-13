@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataDataserviceHolographicFactorQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6635516937726678511L;
+	private static final long serialVersionUID = 2434955736148795734L;
 
 	/** 
 	 * 参数中文名称:身份证号

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PosSkuModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8194226368986299529L;
+	private static final long serialVersionUID = 2279937758759685881L;
 
 	/**
 	 * 餐盒费，除了删除，其他情况必传

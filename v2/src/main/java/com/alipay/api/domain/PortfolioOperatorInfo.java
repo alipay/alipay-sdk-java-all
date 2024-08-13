@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PortfolioOperatorInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2293661921925762742L;
+	private static final long serialVersionUID = 1164692538432566855L;
 
 	/**
 	 * 服务商、服务商员工、商户、商户员工等口碑角色操作时必填，对应为

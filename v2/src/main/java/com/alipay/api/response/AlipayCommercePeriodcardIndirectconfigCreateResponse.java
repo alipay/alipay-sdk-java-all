@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.periodcard.indirectconfig.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-12 18:57:06
+ * @since 1.0, 2024-08-13 11:17:07
  */
 public class AlipayCommercePeriodcardIndirectconfigCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7616525295578498655L;
+	private static final long serialVersionUID = 5353955814662412742L;
 
 	
 

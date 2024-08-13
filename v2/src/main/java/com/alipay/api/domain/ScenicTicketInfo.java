@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ScenicTicketInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4298199226467593381L;
+	private static final long serialVersionUID = 3678798763675526755L;
 
 	/**
 	 * 自动检票时间

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPcreditHuabeiAuthAccumulationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7198817711919694181L;
+	private static final long serialVersionUID = 2624383811334797561L;
 
 	/** 
 	 * 本周期内支付宝端根据用户消费情况试算出的应付费用，仅供参考使用。

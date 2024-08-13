@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 卡
  *
  * @author auto create
- * @since 1.0, 2024-08-01 16:50:52
+ * @since 1.0, 2024-08-12 20:36:50
  */
 public class MerchantCardTemplate extends AlipayObject {
 
-	private static final long serialVersionUID = 2726565222463933366L;
+	private static final long serialVersionUID = 7221566452216312323L;
 
 	/**
 	 * 卡归属的小程序appid
@@ -51,6 +51,12 @@ public class MerchantCardTemplate extends AlipayObject {
 	 */
 	@ApiField("category_id")
 	private String categoryId;
+
+	/**
+	 * 客服电话
+	 */
+	@ApiField("hotline")
+	private String hotline;
 
 	/**
 	 * （1）当card_type不等于AXF_MERCHANT_PERIOD_PAY或AXF_PERIOD_PAY_INDIRECT时,字段image_id_list和image_url_list必须二选一传入，image_id_list优先级更高
@@ -152,6 +158,13 @@ public class MerchantCardTemplate extends AlipayObject {
 	}
 	public void setCategoryId(String categoryId) {
 		this.categoryId = categoryId;
+	}
+
+	public String getHotline() {
+		return this.hotline;
+	}
+	public void setHotline(String hotline) {
+		this.hotline = hotline;
 	}
 
 	public List<String> getImageIdList() {

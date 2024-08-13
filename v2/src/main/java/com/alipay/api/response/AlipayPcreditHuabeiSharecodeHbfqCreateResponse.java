@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPcreditHuabeiSharecodeHbfqCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8846313837352736522L;
+	private static final long serialVersionUID = 5739623722148474972L;
 
 	/** 
 	 * 吱口令失效时间，若为空则表示永久有效
