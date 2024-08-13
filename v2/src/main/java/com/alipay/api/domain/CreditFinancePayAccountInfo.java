@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CreditFinancePayAccountInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5616536658919815748L;
+	private static final long serialVersionUID = 2552297751627276185L;
 
 	/**
 	 * 账号的扩展信息，String格式的json字符串

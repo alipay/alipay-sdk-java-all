@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 图片vo
  *
  * @author auto create
- * @since 1.0, 2024-02-29 20:12:50
+ * @since 1.0, 2024-08-07 21:48:50
  */
 public class ImageVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7423146999726243193L;
+	private static final long serialVersionUID = 3643848139384432681L;
 
 	/**
 	 * 创建时间
@@ -26,6 +26,12 @@ public class ImageVO extends AlipayObject {
 	 */
 	@ApiField("file_name")
 	private String fileName;
+
+	/**
+	 * 图的高度，单位为px。
+	 */
+	@ApiField("height")
+	private Long height;
 
 	/**
 	 * 图归属目录id
@@ -57,6 +63,12 @@ public class ImageVO extends AlipayObject {
 	@ApiField("modify_time")
 	private Date modifyTime;
 
+	/**
+	 * 图片的宽，单位为px
+	 */
+	@ApiField("width")
+	private Long width;
+
 	public Date getCreateTime() {
 		return this.createTime;
 	}
@@ -69,6 +81,13 @@ public class ImageVO extends AlipayObject {
 	}
 	public void setFileName(String fileName) {
 		this.fileName = fileName;
+	}
+
+	public Long getHeight() {
+		return this.height;
+	}
+	public void setHeight(Long height) {
+		this.height = height;
 	}
 
 	public String getImageDirectoryId() {
@@ -104,6 +123,13 @@ public class ImageVO extends AlipayObject {
 	}
 	public void setModifyTime(Date modifyTime) {
 		this.modifyTime = modifyTime;
+	}
+
+	public Long getWidth() {
+		return this.width;
+	}
+	public void setWidth(Long width) {
+		this.width = width;
 	}
 
 }

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BookingRule extends AlipayObject {
 
-	private static final long serialVersionUID = 8855614534838373356L;
+	private static final long serialVersionUID = 7827967221163349823L;
 
 	/**
 	 * 预订规则编号

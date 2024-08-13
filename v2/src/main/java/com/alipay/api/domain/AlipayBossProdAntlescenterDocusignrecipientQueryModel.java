@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取签署人签署链接
  *
  * @author auto create
- * @since 1.0, 2024-02-27 15:04:29
+ * @since 1.0, 2024-08-02 16:35:03
  */
 public class AlipayBossProdAntlescenterDocusignrecipientQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1691482251914611274L;
+	private static final long serialVersionUID = 2844897649144449429L;
 
 	/**
 	 * 应用来源

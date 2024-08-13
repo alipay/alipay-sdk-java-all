@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayFundAuthOrderVoucherCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1516561358488814257L;
+	private static final long serialVersionUID = 5152769517771539367L;
 
 	/**
 	 * 需要冻结的金额，单位为：元（人民币），精确到小数点后两位。

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.cityfacilitator.city.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 16:55:06
+ * @since 1.0, 2024-08-08 21:52:55
  */
 public class AlipayCommerceCityfacilitatorCityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5489272548349393499L;
+	private static final long serialVersionUID = 3445477693396454896L;
 
 	/** 
 	 * 城市列表

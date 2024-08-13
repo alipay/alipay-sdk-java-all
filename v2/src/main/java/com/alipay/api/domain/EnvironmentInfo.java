@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品列表中有对应的环保类型时，需要返回
  *
  * @author auto create
- * @since 1.0, 2022-11-18 13:39:41
+ * @since 1.0, 2024-08-07 11:37:39
  */
 public class EnvironmentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1217495766827669538L;
+	private static final long serialVersionUID = 8481656724224516546L;
 
 	/**
 	 * 对应商品有环保类型时，需要返回;一个商品可能有多个环保类型

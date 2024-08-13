@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.pet.picture.checkavailable response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-01 16:34:22
+ * @since 1.0, 2024-08-08 15:32:06
  */
 public class AlipayCommercePetPictureCheckavailableResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4389748123843967435L;
+	private static final long serialVersionUID = 5476145844382454133L;
 
 	/** 
 	 * 核验通过的文件url

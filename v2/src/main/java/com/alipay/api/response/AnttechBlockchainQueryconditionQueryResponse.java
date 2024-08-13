@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.querycondition.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 19:33:25
+ * @since 1.0, 2024-08-08 21:37:35
  */
 public class AnttechBlockchainQueryconditionQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8344431443545561835L;
+	private static final long serialVersionUID = 2697563781526839742L;
 
 	/** 
 	 * 春天来了

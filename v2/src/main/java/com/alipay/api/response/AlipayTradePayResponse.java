@@ -16,17 +16,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.pay response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-03 15:32:04
+ * @since 1.0, 2024-08-09 17:12:06
  */
 public class AlipayTradePayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2266511384515753135L;
+	private static final long serialVersionUID = 3875453818227362951L;
 
 	/** 
 	 * 先享后付2.0垫资金额,不返回表示没有走垫资，非空表示垫资支付的金额
 	 */
 	@ApiField("advance_amount")
 	private String advanceAmount;
+
+	/** 
+	 * 异步支付受理状态，仅异步支付模式且query_options指定async_pay_info时返回。S：受理成功，支付宝内部会在一定期限内捞起任务推进支付，直到支付成功或超出可重试期限；其它：受理结果未知，可通过查询接口获取交易状态。
+	 */
+	@ApiField("async_pay_apply_status")
+	private String asyncPayApplyStatus;
 
 	/** 
 	 * 异步支付模式，目前有五种值：
@@ -309,6 +315,13 @@ bluesea_1：蓝海活动优惠费率标签；
 	}
 	public String getAdvanceAmount( ) {
 		return this.advanceAmount;
+	}
+
+	public void setAsyncPayApplyStatus(String asyncPayApplyStatus) {
+		this.asyncPayApplyStatus = asyncPayApplyStatus;
+	}
+	public String getAsyncPayApplyStatus( ) {
+		return this.asyncPayApplyStatus;
 	}
 
 	public void setAsyncPaymentMode(String asyncPaymentMode) {

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.qipan.tagbase.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2024-06-04 15:22:03
+ * @since 1.0, 2024-08-08 22:02:07
  */
 public class AlipayMarketingQipanTagbaseBatchqueryRequest implements AlipayRequest<AlipayMarketingQipanTagbaseBatchqueryResponse> {
 

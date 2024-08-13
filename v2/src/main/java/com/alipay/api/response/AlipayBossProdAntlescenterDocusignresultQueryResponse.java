@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.prod.antlescenter.docusignresult.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-02-27 15:04:03
+ * @since 1.0, 2024-08-02 16:35:14
  */
 public class AlipayBossProdAntlescenterDocusignresultQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7815192536892426661L;
+	private static final long serialVersionUID = 2789548968186129541L;
 
 	/** 
 	 * 业务方申请单号

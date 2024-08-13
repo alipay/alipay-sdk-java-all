@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.mda.maptorchroute.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 01:16:45
+ * @since 1.0, 2024-08-08 22:11:39
  */
 public class AlipayDataMdaMaptorchrouteQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1359787949584839525L;
+	private static final long serialVersionUID = 5511832126938958387L;
 
 	/** 
 	 * 火炬传递路线

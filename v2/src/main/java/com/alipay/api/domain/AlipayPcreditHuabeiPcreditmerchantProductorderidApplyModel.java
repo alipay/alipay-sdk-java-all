@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取订购单ID
  *
  * @author auto create
- * @since 1.0, 2020-08-11 13:51:23
+ * @since 1.0, 2024-08-02 11:08:16
  */
 public class AlipayPcreditHuabeiPcreditmerchantProductorderidApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1326423875387593953L;
+	private static final long serialVersionUID = 5178344492326214877L;
 
 	/**
 	 * 商户id

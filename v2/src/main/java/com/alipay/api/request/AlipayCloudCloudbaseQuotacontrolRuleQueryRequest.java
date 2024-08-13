@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.quotacontrol.rule.query request
  * 
  * @author auto create
- * @since 1.0, 2023-09-19 14:41:43
+ * @since 1.0, 2024-08-09 18:38:42
  */
 public class AlipayCloudCloudbaseQuotacontrolRuleQueryRequest implements AlipayRequest<AlipayCloudCloudbaseQuotacontrolRuleQueryResponse> {
 

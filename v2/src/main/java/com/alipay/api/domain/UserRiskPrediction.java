@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class UserRiskPrediction extends AlipayObject {
 
-	private static final long serialVersionUID = 8666873372285377173L;
+	private static final long serialVersionUID = 4236424444267612755L;
 
 	/**
 	 * 用户绑定手机号被二次放号风险等级。

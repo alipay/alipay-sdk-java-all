@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 因公付邀请员工
  *
  * @author auto create
- * @since 1.0, 2023-03-07 19:52:55
+ * @since 1.0, 2024-08-07 15:01:16
  */
 public class AlipayFundJointaccountMemberBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6372428561149976554L;
+	private static final long serialVersionUID = 4334494975713824326L;
 
 	/**
 	 * 账本ID
@@ -32,6 +32,12 @@ public class AlipayFundJointaccountMemberBindModel extends AlipayObject {
 	private String agreementNo;
 
 	/**
+	 * 关联代扣协议签约串
+	 */
+	@ApiField("agreement_sign_info")
+	private String agreementSignInfo;
+
+	/**
 	 * 业务场景，联系支付宝分配
 	 */
 	@ApiField("biz_scene")
@@ -44,10 +50,8 @@ public class AlipayFundJointaccountMemberBindModel extends AlipayObject {
 	private InviteMemberBusinessParamsDTO businessParams;
 
 	/**
-	 * 成员账号：
-identity_type是ALIPAY_USER_ID填支付宝会员ID（2088开头）；
-是ALIPAY_LOGON_ID 填支付宝登录号；
-是ALIPAY_OPEN_ID 填支付宝openId
+	 * 该字段为被邀请方账号ID：
+当identity_type为ALIPAY_USER_ID时，需要填支付宝ID；当identity_type为ALIPAY_LOGON_ID时，需要填支付宝登录号；当identity_type为ALIPAY_OPEN_ID时，需要填支付宝openId
 	 */
 	@ApiField("identity")
 	private String identity;
@@ -98,6 +102,13 @@ identity_type是ALIPAY_USER_ID填支付宝会员ID（2088开头）；
 	}
 	public void setAgreementNo(String agreementNo) {
 		this.agreementNo = agreementNo;
+	}
+
+	public String getAgreementSignInfo() {
+		return this.agreementSignInfo;
+	}
+	public void setAgreementSignInfo(String agreementSignInfo) {
+		this.agreementSignInfo = agreementSignInfo;
 	}
 
 	public String getBizScene() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 淘系商户续订购花呗合约
  *
  * @author auto create
- * @since 1.0, 2020-07-01 09:44:14
+ * @since 1.0, 2024-08-02 11:07:39
  */
 public class AlipayPcreditHuabeiPcreditmerchantProductorderDelayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7686153658485471327L;
+	private static final long serialVersionUID = 2399198616887237598L;
 
 	/**
 	 * 非业务数据

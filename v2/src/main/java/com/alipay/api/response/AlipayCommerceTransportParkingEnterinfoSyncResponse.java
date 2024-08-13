@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.parking.enterinfo.sync response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-09 10:25:44
+ * @since 1.0, 2024-08-12 17:32:07
  */
 public class AlipayCommerceTransportParkingEnterinfoSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8827325283274232516L;
+	private static final long serialVersionUID = 4843524619489441125L;
 
 	/** 
 	 * 用户签约的代扣场景字符集，多个英文逗号分割，当车场为ORC识别车牌的场景，返回值包含PLATE_PAY时，表示代扣协议可用。 当车场为ETC设备识别车牌，返回值包含ETC_PAY时表示协议可用。当用户未签约任何代扣场景时返回NO_AGREEMENT_SCENE
@@ -31,6 +31,12 @@ public class AlipayCommerceTransportParkingEnterinfoSyncResponse extends AlipayR
 	 */
 	@ApiField("biz_msg")
 	private String bizMsg;
+
+	/** 
+	 * 支付宝停车纪录流水号，串联一次停车行为；
+	 */
+	@ApiField("serial_no")
+	private String serialNo;
 
 	public void setAgreementScene(String agreementScene) {
 		this.agreementScene = agreementScene;
@@ -51,6 +57,13 @@ public class AlipayCommerceTransportParkingEnterinfoSyncResponse extends AlipayR
 	}
 	public String getBizMsg( ) {
 		return this.bizMsg;
+	}
+
+	public void setSerialNo(String serialNo) {
+		this.serialNo = serialNo;
+	}
+	public String getSerialNo( ) {
+		return this.serialNo;
 	}
 
 }

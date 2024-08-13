@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsureAttendDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3336282153271145792L;
+	private static final long serialVersionUID = 8316371844494682366L;
 
 	/**
 	 * 打卡时间区间代表该时间段内都可以扫码打卡，时间格式强校验，严格按照示例格式传值，中间是 符号是 -

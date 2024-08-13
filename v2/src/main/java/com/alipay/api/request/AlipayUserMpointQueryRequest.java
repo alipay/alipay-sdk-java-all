@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.mpoint.query request
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:34:54
+ * @since 1.0, 2024-08-08 22:04:10
  */
 public class AlipayUserMpointQueryRequest implements AlipayRequest<AlipayUserMpointQueryResponse> {
 

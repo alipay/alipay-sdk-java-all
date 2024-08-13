@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 淘宝订购关系迁移
  *
  * @author auto create
- * @since 1.0, 2020-08-11 13:51:37
+ * @since 1.0, 2024-08-02 11:08:04
  */
 public class AlipayPcreditHuabeiPcreditmerchantProductorderTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4892286878173987711L;
+	private static final long serialVersionUID = 5436742187111754968L;
 
 	/**
 	 * 生效时间

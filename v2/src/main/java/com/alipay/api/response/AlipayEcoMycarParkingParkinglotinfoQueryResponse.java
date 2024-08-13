@@ -4,6 +4,8 @@ import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.BusinessItem;
+import com.alipay.api.domain.ParkingLotChargingRuleInfo;
+import com.alipay.api.domain.ParkingLotServiceInfo;
 
 import com.alipay.api.AlipayResponse;
 
@@ -11,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.parking.parkinglotinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-02 09:44:52
+ * @since 1.0, 2024-08-12 14:52:06
  */
 public class AlipayEcoMycarParkingParkinglotinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7733111438348447469L;
+	private static final long serialVersionUID = 6672275156169581767L;
 
 	/** 
 	 * 地区编码
@@ -35,6 +37,13 @@ public class AlipayEcoMycarParkingParkinglotinfoQueryResponse extends AlipayResp
 	@ApiListField("business_isv")
 	@ApiField("business_item")
 	private List<BusinessItem> businessIsv;
+
+	/** 
+	 * 停车场详细计费规则
+	 */
+	@ApiListField("charging_rule")
+	@ApiField("parking_lot_charging_rule_info")
+	private List<ParkingLotChargingRuleInfo> chargingRule;
 
 	/** 
 	 * 城市编码
@@ -79,7 +88,7 @@ public class AlipayEcoMycarParkingParkinglotinfoQueryResponse extends AlipayResp
 	private String parkingFeeDescription;
 
 	/** 
-	 * 停车场价格明细图片
+	 * 商户在停车平台露出的停车价格图片地址
 	 */
 	@ApiField("parking_fee_description_img")
 	private String parkingFeeDescriptionImg;
@@ -91,22 +100,28 @@ public class AlipayEcoMycarParkingParkinglotinfoQueryResponse extends AlipayResp
 	private String parkingId;
 
 	/** 
-	 * 停车场位置经度（优先高德坐标获取结果）
+	 * 停车场位置经度（优先高德坐标获取结果）单位：度
 	 */
 	@ApiField("parking_latitude")
 	private String parkingLatitude;
 
 	/** 
-	 * 停车场位置经度（优先高德坐标获取结果）
+	 * 停车场位置经度（优先高德坐标获取结果）单位：度
 	 */
 	@ApiField("parking_longitude")
 	private String parkingLongitude;
 
 	/** 
-	 * 停车场类型，1为居民小区、2为商圈停车场（购物中心商业广场商场等）、3为路侧停车、4为公园景点（景点乐园公园老街古镇等）、5为商务楼宇（酒店写字楼商务楼园区等）、6为其他、7为交通枢纽（机场火车站汽车站码头港口等）、8为市政设施（体育场博物图书馆医院学校等）
+	 * 停车场类型，1为居民小区、2为商圈停车场（购物中心商业广场商场等）、3为路侧停车、4为公园景点（景点乐园公园老街古镇等）、5为商务楼宇（酒店写字楼商务楼园区等）、6为其他、7为交通枢纽（机场火车站汽车站码头港口等）、8为市政设施（体育场博物图书馆医院学校等）、9独立园区（办公工业物流园区等）、10经营场所（4S店、门市餐饮等
 	 */
 	@ApiField("parking_lot_type")
 	private String parkingLotType;
+
+	/** 
+	 * 停车场类型，COMMUNITY为居民小区、BUSINESS_AREA为商圈停车场（购物中心商业广场商场等）、ROADSIDE为路侧停车、PARK_SCENIC为公园景点（景点乐园公园老街古镇等）、OFFICE_BUILDING为商务楼宇（酒店写字楼商务楼园区等）、OTHER为其他、TRANSPORTATION为交通枢纽（机场火车站汽车站码头港口等）、PUBLIC_FACILITIES为市政设施（体育场博物图书馆医院学校等）、TERRITORY独立园区（办公工业物流园区等）、BUSINESS_PLACE经营场所（4S店、门市餐饮等
+	 */
+	@ApiField("parking_lot_type_code")
+	private String parkingLotTypeCode;
 
 	/** 
 	 * 停车场客服电话
@@ -127,7 +142,7 @@ public class AlipayEcoMycarParkingParkinglotinfoQueryResponse extends AlipayResp
 	private String parkingPoiid;
 
 	/** 
-	 * 支付方式（1为支付宝在线缴费，2为支付宝代扣缴费，3当面付)，如支持多种方式以','进行间隔
+	 * 支付方式（1为支付宝在线缴费，2为支付宝代扣缴费，3当面付 4现金)，如支持多种方式以','进行间隔
 	 */
 	@ApiField("pay_type")
 	private String payType;
@@ -137,6 +152,13 @@ public class AlipayEcoMycarParkingParkinglotinfoQueryResponse extends AlipayResp
 	 */
 	@ApiField("province_id")
 	private String provinceId;
+
+	/** 
+	 * 停车场服务信息列表
+	 */
+	@ApiListField("service_list")
+	@ApiField("parking_lot_service_info")
+	private List<ParkingLotServiceInfo> serviceList;
 
 	/** 
 	 * 商圈id
@@ -169,6 +191,13 @@ public class AlipayEcoMycarParkingParkinglotinfoQueryResponse extends AlipayResp
 	}
 	public List<BusinessItem> getBusinessIsv( ) {
 		return this.businessIsv;
+	}
+
+	public void setChargingRule(List<ParkingLotChargingRuleInfo> chargingRule) {
+		this.chargingRule = chargingRule;
+	}
+	public List<ParkingLotChargingRuleInfo> getChargingRule( ) {
+		return this.chargingRule;
 	}
 
 	public void setCityId(String cityId) {
@@ -255,6 +284,13 @@ public class AlipayEcoMycarParkingParkinglotinfoQueryResponse extends AlipayResp
 		return this.parkingLotType;
 	}
 
+	public void setParkingLotTypeCode(String parkingLotTypeCode) {
+		this.parkingLotTypeCode = parkingLotTypeCode;
+	}
+	public String getParkingLotTypeCode( ) {
+		return this.parkingLotTypeCode;
+	}
+
 	public void setParkingMobile(String parkingMobile) {
 		this.parkingMobile = parkingMobile;
 	}
@@ -288,6 +324,13 @@ public class AlipayEcoMycarParkingParkinglotinfoQueryResponse extends AlipayResp
 	}
 	public String getProvinceId( ) {
 		return this.provinceId;
+	}
+
+	public void setServiceList(List<ParkingLotServiceInfo> serviceList) {
+		this.serviceList = serviceList;
+	}
+	public List<ParkingLotServiceInfo> getServiceList( ) {
+		return this.serviceList;
 	}
 
 	public void setShopingmallId(String shopingmallId) {

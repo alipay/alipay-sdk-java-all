@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.silan.apigrayseven.query request
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 17:41:18
+ * @since 1.0, 2024-08-08 21:46:48
  */
 public class AlipayOpenAppSilanApigraysevenQueryRequest implements AlipayRequest<AlipayOpenAppSilanApigraysevenQueryResponse> {
 

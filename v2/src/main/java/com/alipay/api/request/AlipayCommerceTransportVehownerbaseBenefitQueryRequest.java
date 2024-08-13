@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.vehownerbase.benefit.query request
  * 
  * @author auto create
- * @since 1.0, 2024-08-02 10:17:55
+ * @since 1.0, 2024-08-09 16:35:53
  */
 public class AlipayCommerceTransportVehownerbaseBenefitQueryRequest implements AlipayRequest<AlipayCommerceTransportVehownerbaseBenefitQueryResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.intelligentize.odprediction.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 16:56:03
+ * @since 1.0, 2024-08-09 13:30:21
  */
 public class AlipayCommerceTransportIntelligentizeOdpredictionCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8291895325377893183L;
+	private static final long serialVersionUID = 7665994718639229883L;
 
 	/** 
 	 * 找不到当前任务对应线路站点数据

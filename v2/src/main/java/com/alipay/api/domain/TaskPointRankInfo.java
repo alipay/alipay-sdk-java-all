@@ -7,26 +7,26 @@ import com.alipay.api.internal.mapping.ApiField;
  * 任务积分排名信息
  *
  * @author auto create
- * @since 1.0, 2024-05-30 19:43:23
+ * @since 1.0, 2024-08-09 16:47:52
  */
 public class TaskPointRankInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3361384925728991577L;
+	private static final long serialVersionUID = 2261814128748732774L;
 
 	/**
-	 * 距离前一名积分差距
+	 * 距离前一名积分差距，单位为名，100代表相差100名
 	 */
 	@ApiField("difference")
 	private Long difference;
 
 	/**
-	 * 当前排名
+	 * 当前排名，单位为第XX名，1代表第1名
 	 */
 	@ApiField("rank")
 	private Long rank;
 
 	/**
-	 * 总数
+	 * 总数，单位为个
 	 */
 	@ApiField("total")
 	private Long total;

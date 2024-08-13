@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HttpsDomainCertHistory extends AlipayObject {
 
-	private static final long serialVersionUID = 5145644217521617699L;
+	private static final long serialVersionUID = 1382396322785177232L;
 
 	/**
 	 * acme日志

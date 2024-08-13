@@ -1,0 +1,34 @@
+package com.alipay.api.response;
+
+import java.util.List;
+import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.OpenApiTrafficSourceChannelVO;
+
+import com.alipay.api.AlipayResponse;
+
+/**
+ * ALIPAY API: alipay.cloud.cloudpromo.analysistraffic.sourcechannels.query response.
+ * 
+ * @author auto create
+ * @since 1.0, 2024-08-05 14:57:06
+ */
+public class AlipayCloudCloudpromoAnalysistrafficSourcechannelsQueryResponse extends AlipayResponse {
+
+	private static final long serialVersionUID = 7242792731856594369L;
+
+	/** 
+	 * 经营分析流量分析来源渠道列表返回体
+	 */
+	@ApiListField("items")
+	@ApiField("open_api_traffic_source_channel_v_o")
+	private List<OpenApiTrafficSourceChannelVO> items;
+
+	public void setItems(List<OpenApiTrafficSourceChannelVO> items) {
+		this.items = items;
+	}
+	public List<OpenApiTrafficSourceChannelVO> getItems( ) {
+		return this.items;
+	}
+
+}

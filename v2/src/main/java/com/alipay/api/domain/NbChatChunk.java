@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NbChatChunk extends AlipayObject {
 
-	private static final long serialVersionUID = 7765229346794768199L;
+	private static final long serialVersionUID = 5769426588817829366L;
 
 	/**
 	 * 载荷的具体内容结构，JSON。具体内容参考文档：<a href="https://opendocs.alipay.com/pre-open/0cbnjv?pathHash=a0f51006">链接文本</a>

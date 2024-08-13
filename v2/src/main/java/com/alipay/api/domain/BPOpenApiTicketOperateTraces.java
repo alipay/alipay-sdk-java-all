@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 操作记录以列表形式返回
  *
  * @author auto create
- * @since 1.0, 2021-07-16 15:03:56
+ * @since 1.0, 2024-08-08 14:12:41
  */
 public class BPOpenApiTicketOperateTraces extends AlipayObject {
 
-	private static final long serialVersionUID = 3691926837649435788L;
+	private static final long serialVersionUID = 3873124621618869821L;
 
 	/**
 	 * 操作记录

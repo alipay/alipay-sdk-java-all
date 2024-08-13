@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 千牛花呗协议签约
  *
  * @author auto create
- * @since 1.0, 2020-11-17 17:38:31
+ * @since 1.0, 2024-08-02 11:07:53
  */
 public class AlipayPcreditHuabeiPcreditmerchantProductorderSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5428688632291354244L;
+	private static final long serialVersionUID = 6773299275955683957L;
 
 	/**
 	 * 主营类目

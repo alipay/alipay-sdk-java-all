@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.etc.applyorder.consult response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 16:56:00
+ * @since 1.0, 2024-08-09 18:40:44
  */
 public class AlipayCommerceTransportEtcApplyorderConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7887354648677926713L;
+	private static final long serialVersionUID = 4227593878946658581L;
 
 	/** 
 	 * 用户有未完成的行程，不能注销，结合consult_result判断

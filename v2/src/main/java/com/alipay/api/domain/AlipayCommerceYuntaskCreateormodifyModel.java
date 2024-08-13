@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建/编辑云店任务模版
  *
  * @author auto create
- * @since 1.0, 2024-05-30 19:43:53
+ * @since 1.0, 2024-08-08 14:48:51
  */
 public class AlipayCommerceYuntaskCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3497355674421534574L;
+	private static final long serialVersionUID = 6244364492752629445L;
 
 	/**
 	 * 小程序appid，支持带跳转链接
@@ -26,6 +26,12 @@ public class AlipayCommerceYuntaskCreateormodifyModel extends AlipayObject {
 	 */
 	@ApiField("create_biz_no")
 	private String createBizNo;
+
+	/**
+	 * 任务生效范围
+	 */
+	@ApiField("effect_scope")
+	private TaskEffectScope effectScope;
 
 	/**
 	 * 出资方id
@@ -47,6 +53,12 @@ HUNTER 导购员
 	 */
 	@ApiField("incentive")
 	private String incentive;
+
+	/**
+	 * 任务结束后，在激励延长时间段内核销相关券，依然可以获得激励，单位为天
+	 */
+	@ApiField("incentive_extended_period")
+	private Long incentiveExtendedPeriod;
 
 	/**
 	 * 激励方式：
@@ -175,6 +187,13 @@ IOT lot核销
 		this.createBizNo = createBizNo;
 	}
 
+	public TaskEffectScope getEffectScope() {
+		return this.effectScope;
+	}
+	public void setEffectScope(TaskEffectScope effectScope) {
+		this.effectScope = effectScope;
+	}
+
 	public String getFunderId() {
 		return this.funderId;
 	}
@@ -194,6 +213,13 @@ IOT lot核销
 	}
 	public void setIncentive(String incentive) {
 		this.incentive = incentive;
+	}
+
+	public Long getIncentiveExtendedPeriod() {
+		return this.incentiveExtendedPeriod;
+	}
+	public void setIncentiveExtendedPeriod(Long incentiveExtendedPeriod) {
+		this.incentiveExtendedPeriod = incentiveExtendedPeriod;
 	}
 
 	public String getIncentiveMode() {

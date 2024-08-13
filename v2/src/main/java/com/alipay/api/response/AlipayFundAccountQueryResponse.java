@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.account.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-14 10:27:04
+ * @since 1.0, 2024-08-12 14:27:06
  */
 public class AlipayFundAccountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1564829152743163478L;
+	private static final long serialVersionUID = 1496921647676665186L;
 
 	/** 
 	 * 支付宝账户的余额成份明细，仅当查询日终余额明细时返回

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 淘系商家取消花呗合约订购
  *
  * @author auto create
- * @since 1.0, 2020-07-01 09:44:05
+ * @since 1.0, 2024-08-02 11:06:57
  */
 public class AlipayPcreditHuabeiPcreditmerchantProductorderCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2829483597564293246L;
+	private static final long serialVersionUID = 2533274673878924317L;
 
 	/**
 	 * 合约退订业务场景

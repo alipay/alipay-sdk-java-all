@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 导购员查询积分余额
  *
  * @author auto create
- * @since 1.0, 2022-11-07 15:52:49
+ * @since 1.0, 2024-08-09 16:48:16
  */
 public class AlipayCommerceYuntaskPointaccountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1595826159828437678L;
+	private static final long serialVersionUID = 5229627669753641437L;
 
 	/**
 	 * 导购员id

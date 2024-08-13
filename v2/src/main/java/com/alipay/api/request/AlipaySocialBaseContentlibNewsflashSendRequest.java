@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.base.contentlib.newsflash.send request
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 19:33:21
+ * @since 1.0, 2024-08-12 16:07:21
  */
 public class AlipaySocialBaseContentlibNewsflashSendRequest implements AlipayRequest<AlipaySocialBaseContentlibNewsflashSendResponse> {
 

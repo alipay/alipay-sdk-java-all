@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 积分流水信息
  *
  * @author auto create
- * @since 1.0, 2022-10-11 17:40:22
+ * @since 1.0, 2024-08-09 16:48:17
  */
 public class PointInstruction extends AlipayObject {
 
-	private static final long serialVersionUID = 8778167469278231391L;
+	private static final long serialVersionUID = 5573689198921889544L;
 
 	/**
 	 * 流水动作
@@ -24,13 +24,19 @@ EXCHANGE	积分兑换
 	private String actionType;
 
 	/**
-	 * 积分数量
+	 * 积分数量，单位个
 	 */
 	@ApiField("point_amount")
 	private String pointAmount;
 
 	/**
-	 * 原因，成功状态为补充说明，失败状态为失败原因
+	 * 积分类型
+	 */
+	@ApiField("point_type")
+	private String pointType;
+
+	/**
+	 * 失败的原因文案描述，例如失败原因为账号异常问题，转账失败等。
 	 */
 	@ApiField("reason")
 	private String reason;
@@ -68,6 +74,13 @@ FAIL	失败
 	}
 	public void setPointAmount(String pointAmount) {
 		this.pointAmount = pointAmount;
+	}
+
+	public String getPointType() {
+		return this.pointType;
+	}
+	public void setPointType(String pointType) {
+		this.pointType = pointType;
 	}
 
 	public String getReason() {

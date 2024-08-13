@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.lottery.typelist.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 15:51:35
+ * @since 1.0, 2024-08-08 21:58:44
  */
 public class AlipayCommerceLotteryTypelistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6582793433725219989L;
+	private static final long serialVersionUID = 2437242441993537919L;
 
 	/** 
 	 * 彩票系统支持的可用于赠送的彩种类型列表

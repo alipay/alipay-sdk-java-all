@@ -9,11 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 停车离场信息同步接口
  *
  * @author auto create
- * @since 1.0, 2024-07-10 09:50:58
+ * @since 1.0, 2024-08-12 17:31:52
  */
 public class AlipayCommerceTransportParkingExitinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2239392691976135968L;
+	private static final long serialVersionUID = 4351589244819993314L;
+
+	/**
+	 * 车辆出场的出口通道名称；取实地通道名称；
+	 */
+	@ApiField("exit_name")
+	private String exitName;
+
+	/**
+	 * 车辆出场的出口通道编号；与线下实地编码一致；
+	 */
+	@ApiField("exit_number")
+	private Long exitNumber;
 
 	/**
 	 * 车牌是否加密，true为加密，false为不加密，默认为false
@@ -69,6 +81,20 @@ public class AlipayCommerceTransportParkingExitinfoSyncModel extends AlipayObjec
 	 */
 	@ApiField("service_url")
 	private String serviceUrl;
+
+	public String getExitName() {
+		return this.exitName;
+	}
+	public void setExitName(String exitName) {
+		this.exitName = exitName;
+	}
+
+	public Long getExitNumber() {
+		return this.exitNumber;
+	}
+	public void setExitNumber(Long exitNumber) {
+		this.exitNumber = exitNumber;
+	}
 
 	public Boolean getIsEncryptPlateNo() {
 		return this.isEncryptPlateNo;

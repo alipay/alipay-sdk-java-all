@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.qipan.tagbase.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-04 15:22:03
+ * @since 1.0, 2024-08-08 22:02:07
  */
 public class AlipayMarketingQipanTagbaseBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3485656469635959535L;
+	private static final long serialVersionUID = 6522389359126456221L;
 
 	/** 
 	 * 返回全部可用的圈选标签基本信息。

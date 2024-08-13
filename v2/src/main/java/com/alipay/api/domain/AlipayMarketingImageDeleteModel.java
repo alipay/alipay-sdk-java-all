@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 图删除接口
  *
  * @author auto create
- * @since 1.0, 2024-03-13 10:32:08
+ * @since 1.0, 2024-08-05 19:24:12
  */
 public class AlipayMarketingImageDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5477435443112363918L;
+	private static final long serialVersionUID = 8759424448524191975L;
 
 	/**
 	 * 需要操作删除的图片索引id列表。

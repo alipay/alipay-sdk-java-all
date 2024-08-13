@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 导购员查询任务列表信息
  *
  * @author auto create
- * @since 1.0, 2022-10-11 17:39:54
+ * @since 1.0, 2024-08-09 16:48:16
  */
 public class TaskInstanceBasicInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3254257565268146368L;
+	private static final long serialVersionUID = 1677436744446315594L;
 
 	/**
 	 * 任务图标
@@ -22,13 +22,13 @@ public class TaskInstanceBasicInfo extends AlipayObject {
 	private String logo;
 
 	/**
-	 * 标的物完成数
+	 * 标的物完成数，单位个
 	 */
 	@ApiField("marker_amount")
 	private Long markerAmount;
 
 	/**
-	 * 已经发放积分数量
+	 * 已经发放积分数量，单位个
 	 */
 	@ApiField("published_point_amount")
 	private Long publishedPointAmount;
@@ -38,7 +38,7 @@ public class TaskInstanceBasicInfo extends AlipayObject {
 UNRECEIVED 未领取， 前端展示领取任务按钮
 RECEIVED 已领取， 展示排名信息
 FINISHED  任务完成
-EXPIRED  任务到期
+EXPIRED  任务完成
 	 */
 	@ApiField("status")
 	private String status;
@@ -80,7 +80,7 @@ EXPIRED  任务到期
 	private String taskType;
 
 	/**
-	 * 任务总积分数(单个导购员最大激励金额)
+	 * 任务总积分数(单个导购员最大激励金额),单位个
 	 */
 	@ApiField("total_point_amount")
 	private Long totalPointAmount;

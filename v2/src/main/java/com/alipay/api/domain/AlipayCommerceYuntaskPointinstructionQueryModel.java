@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 导购员查询积分流水
  *
  * @author auto create
- * @since 1.0, 2022-12-07 15:02:51
+ * @since 1.0, 2024-08-09 16:48:17
  */
 public class AlipayCommerceYuntaskPointinstructionQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2153662763561838972L;
+	private static final long serialVersionUID = 1459538928691883866L;
 
 	/**
 	 * 导购员id
@@ -26,7 +26,7 @@ public class AlipayCommerceYuntaskPointinstructionQueryModel extends AlipayObjec
 	private String hunterOpenId;
 
 	/**
-	 * 积分流水id
+	 * 积分流水id，导购员每次完成一次任务会得到一个积分流水id，在查询积分流水列表时，会对应一个积分流水id
 	 */
 	@ApiField("instruction_id")
 	private String instructionId;
@@ -44,13 +44,13 @@ public class AlipayCommerceYuntaskPointinstructionQueryModel extends AlipayObjec
 	private Long page;
 
 	/**
-	 * 页面大小
+	 * 页面大小，单位个
 	 */
 	@ApiField("page_size")
 	private Long pageSize;
 
 	/**
-	 * 任务id
+	 * 任务id，导购员从任务列表点击某个任务进行积分查询时，这里传递的就是当前任务的id
 	 */
 	@ApiField("task_id")
 	private String taskId;

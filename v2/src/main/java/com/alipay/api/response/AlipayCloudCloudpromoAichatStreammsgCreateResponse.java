@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudpromo.aichat.streammsg.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-02 18:02:06
+ * @since 1.0, 2024-08-09 17:47:27
  */
 public class AlipayCloudCloudpromoAichatStreammsgCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3875993167369325428L;
+	private static final long serialVersionUID = 6739987644986264228L;
 
 	/** 
 	 * 答案内容

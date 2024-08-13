@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingCampaignCashTriggerResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2785599899559516774L;
+	private static final long serialVersionUID = 5414279972792861541L;
 
 	/** 
 	 * 支付宝业务号,发奖成功时返回,调用者可提供此字符串进行问题排查与核对等

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.pet.picture.checkavailable request
  * 
  * @author auto create
- * @since 1.0, 2024-08-01 16:34:22
+ * @since 1.0, 2024-08-08 15:32:06
  */
 public class AlipayCommercePetPictureCheckavailableRequest implements AlipayRequest<AlipayCommercePetPictureCheckavailableResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.info.share response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 17:41:17
+ * @since 1.0, 2024-08-08 21:49:50
  */
 public class AlipayMerchantInfoShareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1684439974869967135L;
+	private static final long serialVersionUID = 5813935127347721983L;
 
 	/** 
 	 * 证件地址-具体地址

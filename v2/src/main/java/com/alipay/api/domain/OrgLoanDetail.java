@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 机构贷款详情
  *
  * @author auto create
- * @since 1.0, 2024-05-30 17:30:23
+ * @since 1.0, 2024-08-08 21:02:51
  */
 public class OrgLoanDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3426567441112187142L;
+	private static final long serialVersionUID = 3127966585352957352L;
 
 	/**
 	 * 客户授信金额（审批金额），单位分
@@ -38,20 +38,20 @@ public class OrgLoanDetail extends AlipayObject {
 	private String loanDate;
 
 	/**
-	 * 客户贷款利率
+	 * 客户贷款利率，类型为小数，代表百分比，比如 0.18 就是18%
 	 */
 	@ApiField("loan_rate")
 	private String loanRate;
 
 	/**
-	 * 客户贷款期次
+	 * 客户贷款期次，类型为数字，单位支持Y、M等，单位字段从loan_term_unit获取
 	 */
 	@ApiField("loan_term")
 	private Long loanTerm;
 
 	/**
 	 * 客户贷款期次类型
-Y、M、D分别代表年月日；当前仅支持M
+Y、M分别代表年月，当前支持M
 	 */
 	@ApiField("loan_term_unit")
 	private String loanTermUnit;

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 文件摘要信息
  *
  * @author auto create
- * @since 1.0, 2024-08-01 21:15:13
+ * @since 1.0, 2024-08-05 17:38:28
  */
 public class FileBriefInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2475546564853894285L;
+	private static final long serialVersionUID = 3772894568816884998L;
 
 	/**
 	 * 文件id，该字段唯一表示一份文件，并在上传文件时候由问答系统生成。
@@ -26,6 +26,12 @@ public class FileBriefInfo extends AlipayObject {
 	 */
 	@ApiField("file_name")
 	private String fileName;
+
+	/**
+	 * 该字段描述了文件当前状态，包括embedding、删除等状态，根据该字段可以判断文件是否可以用于智能问答。
+	 */
+	@ApiField("file_status")
+	private String fileStatus;
 
 	/**
 	 * 文件创建时间
@@ -51,6 +57,13 @@ public class FileBriefInfo extends AlipayObject {
 	}
 	public void setFileName(String fileName) {
 		this.fileName = fileName;
+	}
+
+	public String getFileStatus() {
+		return this.fileStatus;
+	}
+	public void setFileStatus(String fileStatus) {
+		this.fileStatus = fileStatus;
 	}
 
 	public Date getGmtCreate() {

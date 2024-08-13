@@ -1,0 +1,29 @@
+package com.alipay.api.domain;
+
+import com.alipay.api.AlipayObject;
+import com.alipay.api.internal.mapping.ApiField;
+
+/**
+ * 查询小程序商品券
+ *
+ * @author auto create
+ * @since 1.0, 2024-08-08 18:12:19
+ */
+public class AlipayMarketingToolActivityAppitemvoucherQueryModel extends AlipayObject {
+
+	private static final long serialVersionUID = 2692838636642611324L;
+
+	/**
+	 * 活动id 来源：来自创建接口返回的activity_id
+	 */
+	@ApiField("activity_id")
+	private String activityId;
+
+	public String getActivityId() {
+		return this.activityId;
+	}
+	public void setActivityId(String activityId) {
+		this.activityId = activityId;
+	}
+
+}

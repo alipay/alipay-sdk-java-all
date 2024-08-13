@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.network.node.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-15 11:41:41
+ * @since 1.0, 2024-08-09 13:37:07
  */
 public class AlipayMerchantNetworkNodeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8312739357537878636L;
+	private static final long serialVersionUID = 4751963492694291522L;
 
 	/** 
 	 * 商家创建节点时需要携带的业务信息（比如地址）

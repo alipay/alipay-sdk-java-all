@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 流程全局唯一ID
  *
  * @author auto create
- * @since 1.0, 2023-08-11 14:41:14
+ * @since 1.0, 2024-08-08 14:12:45
  */
 public class BPOpenApiPUID extends AlipayObject {
 
-	private static final long serialVersionUID = 5211772258695384565L;
+	private static final long serialVersionUID = 1333785926574633642L;
 
 	/**
 	 * 系统名称

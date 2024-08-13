@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: antfortune.stock.stockinstops.backflow.upload request
  * 
  * @author auto create
- * @since 1.0, 2024-06-26 17:48:19
+ * @since 1.0, 2024-08-06 16:42:07
  */
 public class AntfortuneStockStockinstopsBackflowUploadRequest implements AlipayUploadRequest<AntfortuneStockStockinstopsBackflowUploadResponse> {
 

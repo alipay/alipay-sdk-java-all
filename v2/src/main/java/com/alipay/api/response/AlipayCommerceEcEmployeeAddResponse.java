@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.employee.add response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-09 13:42:05
+ * @since 1.0, 2024-08-05 15:42:06
  */
 public class AlipayCommerceEcEmployeeAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2568493452486934415L;
+	private static final long serialVersionUID = 7553848224513265491L;
 
 	/** 
 	 * 员工id
@@ -21,19 +21,19 @@ public class AlipayCommerceEcEmployeeAddResponse extends AlipayResponse {
 	private String employeeId;
 
 	/** 
-	 * IOT开通刷脸支持唯一操作流水号，此处透出用于外部服务商通过该unique_id便捷调用IOT侧接口
+	 * IOT开通刷脸唯一流水号，服务商可通过该unique_id便捷调用IOT侧接口
 	 */
 	@ApiField("iot_unique_id")
 	private String iotUniqueId;
 
 	/** 
-	 * 签约吱口令
+	 * 员工签约吱口令
 	 */
 	@ApiField("share_code")
 	private String shareCode;
 
 	/** 
-	 * 资金代付签约链接 1.员工未绑支付宝，拉起员工绑定页面 2.员工已绑支付宝，拉起资金签约页面
+	 * 员工签约激活页面链接
 	 */
 	@ApiField("sign_url")
 	private String signUrl;

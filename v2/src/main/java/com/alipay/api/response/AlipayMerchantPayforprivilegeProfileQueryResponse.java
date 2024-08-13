@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.payforprivilege.profile.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 17:41:17
+ * @since 1.0, 2024-08-08 21:48:59
  */
 public class AlipayMerchantPayforprivilegeProfileQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5285517737915411289L;
+	private static final long serialVersionUID = 7467862453125249632L;
 
 	/** 
 	 * 卡包充值卡面详情模板设置

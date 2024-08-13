@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 车金融订单状态加密通知接口
  *
  * @author auto create
- * @since 1.0, 2024-05-30 17:30:23
+ * @since 1.0, 2024-08-08 21:02:51
  */
 public class XingheLendassistCarfinApplystatusencryptNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1384755397449819858L;
+	private static final long serialVersionUID = 3786416252154624559L;
 
 	/**
 	 * 星河侧唯一申请单号
@@ -28,6 +28,12 @@ public class XingheLendassistCarfinApplystatusencryptNotifyModel extends AlipayO
 	@ApiListField("loan_list")
 	@ApiField("org_loan_detail")
 	private List<OrgLoanDetail> loanList;
+
+	/**
+	 * 机构侧状态码
+	 */
+	@ApiField("org_status")
+	private String orgStatus;
 
 	/**
 	 * 机构侧唯一业务编号
@@ -54,6 +60,13 @@ APPLIED：已申请；FOLLOWING：客服跟进中；WILLING：客户有意愿；
 	}
 	public void setLoanList(List<OrgLoanDetail> loanList) {
 		this.loanList = loanList;
+	}
+
+	public String getOrgStatus() {
+		return this.orgStatus;
+	}
+	public void setOrgStatus(String orgStatus) {
+		this.orgStatus = orgStatus;
 	}
 
 	public String getOutApplyNo() {

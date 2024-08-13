@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.isvhelp.entry.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-02-22 11:16:59
+ * @since 1.0, 2024-08-06 18:15:59
  */
 public class AlipayMerchantIsvhelpEntryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3899592494474393592L;
+	private static final long serialVersionUID = 7225949359575513582L;
 
 	/** 
 	 * 支付宝账号

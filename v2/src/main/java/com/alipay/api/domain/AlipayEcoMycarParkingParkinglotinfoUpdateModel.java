@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改停车场信息
  *
  * @author auto create
- * @since 1.0, 2024-07-24 10:28:52
+ * @since 1.0, 2024-08-12 15:13:17
  */
 public class AlipayEcoMycarParkingParkinglotinfoUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1548448486736428775L;
+	private static final long serialVersionUID = 1342999634157254251L;
 
 	/**
 	 * 服务商ID（2088开头的16位纯数字），由服务商提供给ISV
@@ -28,6 +28,13 @@ public class AlipayEcoMycarParkingParkinglotinfoUpdateModel extends AlipayObject
 	@ApiListField("business_isv")
 	@ApiField("business_item")
 	private List<BusinessItem> businessIsv;
+
+	/**
+	 * 停车场详细计费规则详细说明
+	 */
+	@ApiListField("charging_rule")
+	@ApiField("parking_lot_charging_rule_info")
+	private List<ParkingLotChargingRuleInfo> chargingRule;
 
 	/**
 	 * 该参数废弃
@@ -92,13 +99,13 @@ public class AlipayEcoMycarParkingParkinglotinfoUpdateModel extends AlipayObject
 	private String isvMobile;
 
 	/**
-	 * 纬度
+	 * 纬度，单位:度
 	 */
 	@ApiField("latitude")
 	private String latitude;
 
 	/**
-	 * 经度
+	 * 经度 单位:度
 	 */
 	@ApiField("longitude")
 	private String longitude;
@@ -170,7 +177,7 @@ public class AlipayEcoMycarParkingParkinglotinfoUpdateModel extends AlipayObject
 	private String parkingId;
 
 	/**
-	 * 停车场类型，1为居民小区、2为商圈停车场（购物中心商业广场商场等）、3为路侧停车、4为公园景点（景点乐园公园老街古镇等）、5为商务楼宇（酒店写字楼商务楼园区等）、6为其他、7为交通枢纽（机场火车站汽车站码头港口等）、8为市政设施（体育场博物图书馆医院学校等）
+	 * 停车场类型，COMMUNITY为居民小区、BUSINESS_AREA为商圈停车场（购物中心商业广场商场等）、ROADSIDE为路侧停车、PARK_SCENIC为公园景点（景点乐园公园老街古镇等）、OFFICE_BUILDING为商务楼宇（酒店写字楼商务楼园区等）、OTHER为其他、TRANSPORTATION为交通枢纽（机场火车站汽车站码头港口等）、PUBLIC_FACILITIES为市政设施（体育场博物图书馆医院学校等）、TERRITORY独立园区（办公工业物流园区等）、BUSINESS_PLACE经营场所（4S店、门市餐饮等
 	 */
 	@ApiField("parking_lot_type")
 	private String parkingLotType;
@@ -194,8 +201,7 @@ public class AlipayEcoMycarParkingParkinglotinfoUpdateModel extends AlipayObject
 	private String parkingNumber;
 
 	/**
-	 * 高德地图唯一标识。新增高德兴趣点流程 <a href="https://opensupport.alipay.com/support/helpcenter/311/201602557288?ant_source=zsearch">点此查看详情</a> 。
-获取高德兴趣点流程 <a href="https://opensupport.alipay.com/support/helpcenter/311/201602557287?ant_source=zsearch">点此查看详情</a>。
+	 * 如何获取parking_poiid（高德地图唯一标标识）参考文档 <a href="https://opendocs.alipay.com/support/01rghx">https://opendocs.alipay.com/support/01rghx</a> ；若无法成功获取高德POI时，也可选用经纬度的方式注册。
 	 */
 	@ApiField("parking_poiid")
 	private String parkingPoiid;
@@ -217,6 +223,8 @@ public class AlipayEcoMycarParkingParkinglotinfoUpdateModel extends AlipayObject
 *1：表示支付宝在线缴费。 
 *2：表示支付宝代扣缴费。 
 *3：表示当面付。 
+*4：表示现金。 
+
 说明：如支持多种方式以 ',' 进行分隔。
 	 */
 	@ApiField("pay_type")
@@ -229,13 +237,20 @@ public class AlipayEcoMycarParkingParkinglotinfoUpdateModel extends AlipayObject
 	private String paymentMode;
 
 	/**
+	 * 停车场场内服务信息
+	 */
+	@ApiListField("service_list")
+	@ApiField("parking_lot_service_info")
+	private List<ParkingLotServiceInfo> serviceList;
+
+	/**
 	 * 商圈id
 	 */
 	@ApiField("shopingmall_id")
 	private String shopingmallId;
 
 	/**
-	 * 停车场车位数
+	 * 停车场车位数 ，单位:个
 	 */
 	@ApiField("sum_space")
 	private String sumSpace;
@@ -267,6 +282,13 @@ public class AlipayEcoMycarParkingParkinglotinfoUpdateModel extends AlipayObject
 	}
 	public void setBusinessIsv(List<BusinessItem> businessIsv) {
 		this.businessIsv = businessIsv;
+	}
+
+	public List<ParkingLotChargingRuleInfo> getChargingRule() {
+		return this.chargingRule;
+	}
+	public void setChargingRule(List<ParkingLotChargingRuleInfo> chargingRule) {
+		this.chargingRule = chargingRule;
 	}
 
 	public String getCityId() {
@@ -491,6 +513,13 @@ public class AlipayEcoMycarParkingParkinglotinfoUpdateModel extends AlipayObject
 	}
 	public void setPaymentMode(String paymentMode) {
 		this.paymentMode = paymentMode;
+	}
+
+	public List<ParkingLotServiceInfo> getServiceList() {
+		return this.serviceList;
+	}
+	public void setServiceList(List<ParkingLotServiceInfo> serviceList) {
+		this.serviceList = serviceList;
 	}
 
 	public String getShopingmallId() {

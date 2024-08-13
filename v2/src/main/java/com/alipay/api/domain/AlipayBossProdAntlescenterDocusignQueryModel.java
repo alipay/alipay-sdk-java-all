@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签署状态查询，返回签署任务状态和多方签署人细分状态
  *
  * @author auto create
- * @since 1.0, 2024-02-27 15:04:52
+ * @since 1.0, 2024-08-02 16:34:05
  */
 public class AlipayBossProdAntlescenterDocusignQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7226447478742494286L;
+	private static final long serialVersionUID = 1438667892163761529L;
 
 	/**
 	 * 电子签业务受理流水号

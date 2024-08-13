@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.activity.merchant.unsign request
  * 
  * @author auto create
- * @since 1.0, 2023-09-11 16:31:48
+ * @since 1.0, 2024-08-08 22:10:31
  */
 public class AlipayCommerceOperationActivityMerchantUnsignRequest implements AlipayRequest<AlipayCommerceOperationActivityMerchantUnsignResponse> {
 

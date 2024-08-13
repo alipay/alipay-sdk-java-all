@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预授权资金解冻接口
  *
  * @author auto create
- * @since 1.0, 2024-07-03 11:09:18
+ * @since 1.0, 2024-08-05 21:13:51
  */
 public class AlipayFundAuthOrderUnfreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5791683738675258973L;
+	private static final long serialVersionUID = 1142822617193149239L;
 
 	/**
 	 * 本次操作解冻的金额，单位为：元（人民币），精确到小数点后两位。

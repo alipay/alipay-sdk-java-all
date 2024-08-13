@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.mda.digitaltorchoffline.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-30 21:46:55
+ * @since 1.0, 2024-08-08 22:22:01
  */
 public class AlipayDataMdaDigitaltorchofflineQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8819775354499152249L;
+	private static final long serialVersionUID = 3751397675925948855L;
 
 	/** 
 	 * 数字火炬手年龄分布

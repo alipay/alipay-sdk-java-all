@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.petinsure.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-01 16:31:50
+ * @since 1.0, 2024-08-08 15:42:05
  */
 public class AlipayCommercePetinsureCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2312369636179526243L;
+	private static final long serialVersionUID = 4672166878363696967L;
 
 	
 

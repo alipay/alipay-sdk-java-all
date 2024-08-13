@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发起docusign多方签署
  *
  * @author auto create
- * @since 1.0, 2024-02-27 15:03:31
+ * @since 1.0, 2024-08-02 16:34:29
  */
 public class AlipayBossProdAntlescenterDocusignmultiCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5668614114333946657L;
+	private static final long serialVersionUID = 7225139762633518849L;
 
 	/**
 	 * 申请人工号

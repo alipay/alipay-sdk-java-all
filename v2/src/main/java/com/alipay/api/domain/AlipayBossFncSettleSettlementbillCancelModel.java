@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayBossFncSettleSettlementbillCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2325396148576274957L;
+	private static final long serialVersionUID = 4357117313984212782L;
 
 	/**
 	 * 取消金额  该金额等于结算单的金额 用于校验   不支持部分取消

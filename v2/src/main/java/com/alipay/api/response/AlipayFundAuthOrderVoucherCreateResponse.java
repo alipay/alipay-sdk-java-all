@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundAuthOrderVoucherCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4497658241665684726L;
+	private static final long serialVersionUID = 3462476493417455557L;
 
 	/** 
 	 * 码类型，分为  barCode：条形码 (一维码) 和 qrCode:二维码(qrCode) ；

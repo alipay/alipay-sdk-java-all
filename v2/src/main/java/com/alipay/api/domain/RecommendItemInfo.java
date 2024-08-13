@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RecommendItemInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5638561799499423188L;
+	private static final long serialVersionUID = 4473171979676362957L;
 
 	/**
 	 * 用户要对自己的手机号进行充值的面额

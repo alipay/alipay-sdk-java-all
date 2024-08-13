@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.intelligentize.linenetworkversion.query request
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 16:56:03
+ * @since 1.0, 2024-08-09 13:30:03
  */
 public class AlipayCommerceTransportIntelligentizeLinenetworkversionQueryRequest implements AlipayRequest<AlipayCommerceTransportIntelligentizeLinenetworkversionQueryResponse> {
 

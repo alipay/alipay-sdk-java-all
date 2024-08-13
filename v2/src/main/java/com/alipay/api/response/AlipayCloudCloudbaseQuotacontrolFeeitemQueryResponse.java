@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.quotacontrol.feeitem.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-19 14:41:43
+ * @since 1.0, 2024-08-07 10:08:41
  */
 public class AlipayCloudCloudbaseQuotacontrolFeeitemQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1422314322836316411L;
+	private static final long serialVersionUID = 7222267681965476129L;
 
 	/** 
 	 * 额度指标列表

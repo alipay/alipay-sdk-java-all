@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.content.commercial.interactivecore.roundstart.send request
  * 
  * @author auto create
- * @since 1.0, 2024-07-23 16:02:06
+ * @since 1.0, 2024-08-12 10:27:06
  */
 public class AlipayContentCommercialInteractivecoreRoundstartSendRequest implements AlipayRequest<AlipayContentCommercialInteractivecoreRoundstartSendResponse> {
 

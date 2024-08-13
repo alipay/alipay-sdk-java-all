@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.enterprise.registerinvite.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-30 17:41:24
+ * @since 1.0, 2024-08-05 14:37:06
  */
 public class AlipayCommerceEcEnterpriseRegisterinviteCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7454418238116582374L;
+	private static final long serialVersionUID = 7255665834583781798L;
 
 	/** 
 	 * 注册链接失效时间，有效期30天

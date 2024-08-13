@@ -9,14 +9,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 导购员查询任务实例详情
  *
  * @author auto create
- * @since 1.0, 2024-05-30 19:43:23
+ * @since 1.0, 2024-08-09 16:47:52
  */
 public class TaskInstanceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8272137864424864858L;
+	private static final long serialVersionUID = 8711193896632718289L;
 
 	/**
-	 * 当前进度
+	 * 当前进度，单位为笔，例如12为12笔
 	 */
 	@ApiField("current_indicator")
 	private Long currentIndicator;
@@ -34,19 +34,19 @@ public class TaskInstanceInfo extends AlipayObject {
 	private String incentiveRule;
 
 	/**
-	 * 任务标的物推广数
+	 * 任务标的物推广数，单位为个
 	 */
 	@ApiField("marker_promoted_count")
 	private Long markerPromotedCount;
 
 	/**
-	 * 任务最大激励笔数
+	 * 任务最大激励笔数，单位个
 	 */
 	@ApiField("max_incentive_count")
 	private Long maxIncentiveCount;
 
 	/**
-	 * 任务获取总积分数
+	 * 任务获取总积分数，单位为个
 	 */
 	@ApiField("published_point_amount")
 	private Long publishedPointAmount;
@@ -61,7 +61,7 @@ FINISHED  任务完成
 	private String status;
 
 	/**
-	 * 目标进度
+	 * 目标进度，单位为笔，112代表112笔
 	 */
 	@ApiField("target_indicator")
 	private Long targetIndicator;
@@ -127,13 +127,19 @@ FINISHED  任务完成
 	private String taskType;
 
 	/**
-	 * 任务最多可获取积分数
+	 * 验证积分数量，单位个
+	 */
+	@ApiField("test_point_amount")
+	private String testPointAmount;
+
+	/**
+	 * 任务最多可获取积分数，单位为个
 	 */
 	@ApiField("total_point_amount")
 	private Long totalPointAmount;
 
 	/**
-	 * 未兑换积分数
+	 * 未兑换积分数，单位为个
 	 */
 	@ApiField("unexchange_point_amount")
 	private Long unexchangePointAmount;
@@ -262,6 +268,13 @@ FINISHED  任务完成
 	}
 	public void setTaskType(String taskType) {
 		this.taskType = taskType;
+	}
+
+	public String getTestPointAmount() {
+		return this.testPointAmount;
+	}
+	public void setTestPointAmount(String testPointAmount) {
+		this.testPointAmount = testPointAmount;
 	}
 
 	public Long getTotalPointAmount() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 超级导购任务标的物信息
  *
  * @author auto create
- * @since 1.0, 2024-05-30 19:43:23
+ * @since 1.0, 2024-08-09 16:47:52
  */
 public class TaskMarkerInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4639399991255455482L;
+	private static final long serialVersionUID = 7787242431588193897L;
 
 	/**
 	 * 标的物logo
@@ -38,13 +38,13 @@ public class TaskMarkerInfo extends AlipayObject {
 	private String markerType;
 
 	/**
-	 * 个人完成数
+	 * 个人完成数，单位为次
 	 */
 	@ApiField("personal_count")
 	private Long personalCount;
 
 	/**
-	 * 总完成数
+	 * 总完成数，单位为次
 	 */
 	@ApiField("total_count")
 	private Long totalCount;

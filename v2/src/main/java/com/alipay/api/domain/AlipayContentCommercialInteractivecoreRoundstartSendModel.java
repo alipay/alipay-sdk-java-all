@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 对局启动通知
  *
  * @author auto create
- * @since 1.0, 2024-07-23 16:01:26
+ * @since 1.0, 2024-08-12 10:25:05
  */
 public class AlipayContentCommercialInteractivecoreRoundstartSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1373583143994192658L;
+	private static final long serialVersionUID = 2837452968996321443L;
 
 	/**
 	 * 玩法token

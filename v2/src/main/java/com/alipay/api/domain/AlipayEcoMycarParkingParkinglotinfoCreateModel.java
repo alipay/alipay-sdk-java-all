@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 车生活停车平台录入停车场信息
  *
  * @author auto create
- * @since 1.0, 2024-07-24 11:16:36
+ * @since 1.0, 2024-08-12 15:12:16
  */
 public class AlipayEcoMycarParkingParkinglotinfoCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4263724518991337358L;
+	private static final long serialVersionUID = 2877776733546794887L;
 
 	/**
 	 * 服务商的支付宝账号ID（2088开头的16位纯数字，<a href="https://opendocs.alipay.com/common/02ncut">获取方式</a>），由服务商提供给ISV
@@ -28,6 +28,13 @@ public class AlipayEcoMycarParkingParkinglotinfoCreateModel extends AlipayObject
 	@ApiListField("business_isv")
 	@ApiField("business_item")
 	private List<BusinessItem> businessIsv;
+
+	/**
+	 * 停车场详细计费规则
+	 */
+	@ApiListField("charging_rule")
+	@ApiField("parking_lot_charging_rule_info")
+	private List<ParkingLotChargingRuleInfo> chargingRule;
 
 	/**
 	 * 该参数废弃
@@ -92,13 +99,13 @@ public class AlipayEcoMycarParkingParkinglotinfoCreateModel extends AlipayObject
 	private String isvMobile;
 
 	/**
-	 * 纬度
+	 * 纬度 单位:度
 	 */
 	@ApiField("latitude")
 	private String latitude;
 
 	/**
-	 * 经度
+	 * 经度 单位:度
 	 */
 	@ApiField("longitude")
 	private String longitude;
@@ -188,7 +195,7 @@ public class AlipayEcoMycarParkingParkinglotinfoCreateModel extends AlipayObject
 	private String parkingNumber;
 
 	/**
-	 * 如何获取parking_poiid（高德地图唯一标标识）参考文档 https://opendocs.alipay.com/support/01rghx；若无法成功获取高德POI时，也可选用经纬度的方式注册。
+	 * 如何获取parking_poiid（高德地图唯一标标识）参考文档 <a href="https://opendocs.alipay.com/support/01rghx">https://opendocs.alipay.com/support/01rghx</a> ；若无法成功获取高德POI时，也可选用经纬度的方式注册。
 	 */
 	@ApiField("parking_poiid")
 	private String parkingPoiid;
@@ -210,6 +217,7 @@ public class AlipayEcoMycarParkingParkinglotinfoCreateModel extends AlipayObject
 1：表示支付宝在线缴费。
 2：表示支付宝代扣缴费。
 3：表示当面付。
+4:  现金
 说明：如支持多种方式以 ',' 进行分隔。
 	 */
 	@ApiField("pay_type")
@@ -222,13 +230,20 @@ public class AlipayEcoMycarParkingParkinglotinfoCreateModel extends AlipayObject
 	private String paymentMode;
 
 	/**
+	 * 停车场服务信息列表
+	 */
+	@ApiListField("service_list")
+	@ApiField("parking_lot_service_info")
+	private List<ParkingLotServiceInfo> serviceList;
+
+	/**
 	 * 商圈id
 	 */
 	@ApiField("shopingmall_id")
 	private String shopingmallId;
 
 	/**
-	 * 停车场车位数
+	 * 停车场车位数 单位:个
 	 */
 	@ApiField("sum_space")
 	private String sumSpace;
@@ -260,6 +275,13 @@ N：不支持。
 	}
 	public void setBusinessIsv(List<BusinessItem> businessIsv) {
 		this.businessIsv = businessIsv;
+	}
+
+	public List<ParkingLotChargingRuleInfo> getChargingRule() {
+		return this.chargingRule;
+	}
+	public void setChargingRule(List<ParkingLotChargingRuleInfo> chargingRule) {
+		this.chargingRule = chargingRule;
 	}
 
 	public String getCityId() {
@@ -477,6 +499,13 @@ N：不支持。
 	}
 	public void setPaymentMode(String paymentMode) {
 		this.paymentMode = paymentMode;
+	}
+
+	public List<ParkingLotServiceInfo> getServiceList() {
+		return this.serviceList;
+	}
+	public void setServiceList(List<ParkingLotServiceInfo> serviceList) {
+		this.serviceList = serviceList;
 	}
 
 	public String getShopingmallId() {

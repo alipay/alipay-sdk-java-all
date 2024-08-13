@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6759845748564136639L;
+	private static final long serialVersionUID = 3147334647957778718L;
 
 	/**
 	 * 是否需要生成吱口令，默认不生成
@@ -102,7 +102,7 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	private String identityType;
 
 	/**
-	 * 员工刷脸加入企业人脸库时的核验方式
+	 * 员工刷脸加入企业人脸库时的核验方式，签约开通人脸库时必传
 	 */
 	@ApiField("iot_check_type")
 	private String iotCheckType;
@@ -121,10 +121,11 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	private String profiles;
 
 	/**
-	 * 默认角色列表，目前只支持默认为 USER
+	 * 默认角色列表，目前只支持默认为 USER 当前字段已废弃(只有一个可选默认值，没必要传)
 	 */
 	@ApiListField("role_list")
 	@ApiField("string")
+	@Deprecated
 	private List<String> roleList;
 
 	/**

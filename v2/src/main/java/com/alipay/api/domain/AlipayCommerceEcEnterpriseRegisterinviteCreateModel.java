@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 邀请企业注册
  *
  * @author auto create
- * @since 1.0, 2024-07-09 11:18:50
+ * @since 1.0, 2024-08-05 10:30:17
  */
 public class AlipayCommerceEcEnterpriseRegisterinviteCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7841114418724298146L;
+	private static final long serialVersionUID = 3744817727168999772L;
 
 	/**
 	 * 企业管理员身份唯一标识，搭配 identity_type 传参：<br/>
@@ -54,11 +54,18 @@ public class AlipayCommerceEcEnterpriseRegisterinviteCreateModel extends AlipayO
 	private EnterpriseProfilesDTO profiles;
 
 	/**
-	 * 用于区分接口返回的企业注册链接，用于「企业自助注册」还是「服务商代企业注册」<br/>
-不传默认为 NORMAL 企业自入驻
+	 * 企业注册模式，用于区分接口返回的企业注册链接是「企业自助注册」还是「服务商代企业注册」<br/>
+不传默认为企业自入驻(NORMAL)
 	 */
 	@ApiField("register_mode")
 	private String registerMode;
+
+	/**
+	 * 企业注册认证后，需要签约的出资方式；<br/>
+不传默认为企业余额出资(BALANCE)
+	 */
+	@ApiField("sign_fund_way")
+	private String signFundWay;
 
 	public String getIdentity() {
 		return this.identity;
@@ -100,6 +107,13 @@ public class AlipayCommerceEcEnterpriseRegisterinviteCreateModel extends AlipayO
 	}
 	public void setRegisterMode(String registerMode) {
 		this.registerMode = registerMode;
+	}
+
+	public String getSignFundWay() {
+		return this.signFundWay;
+	}
+	public void setSignFundWay(String signFundWay) {
+		this.signFundWay = signFundWay;
 	}
 
 }

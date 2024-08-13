@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.offlinepay.key.query request
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 16:56:01
+ * @since 1.0, 2024-08-08 21:51:46
  */
 public class AlipayCommerceTransportOfflinepayKeyQueryRequest implements AlipayRequest<AlipayCommerceTransportOfflinepayKeyQueryResponse> {
 

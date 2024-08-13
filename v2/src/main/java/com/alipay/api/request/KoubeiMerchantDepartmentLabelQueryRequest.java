@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: koubei.merchant.department.label.query request
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 15:51:36
+ * @since 1.0, 2024-08-08 21:57:01
  */
 public class KoubeiMerchantDepartmentLabelQueryRequest implements AlipayRequest<KoubeiMerchantDepartmentLabelQueryResponse> {
 

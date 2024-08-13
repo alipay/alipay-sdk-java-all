@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 加入面板信息
  *
  * @author auto create
- * @since 1.0, 2024-07-23 16:01:26
+ * @since 1.0, 2024-08-12 10:25:05
  */
 public class JoinPanelInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1598562314392717688L;
+	private static final long serialVersionUID = 7181135939688289424L;
 
 	/**
 	 * 按钮文本
@@ -34,8 +37,9 @@ public class JoinPanelInfo extends AlipayObject {
 	/**
 	 * 选边
 	 */
-	@ApiField("side")
-	private String side;
+	@ApiListField("side")
+	@ApiField("string")
+	private List<String> side;
 
 	public String getButtonText() {
 		return this.buttonText;
@@ -58,10 +62,10 @@ public class JoinPanelInfo extends AlipayObject {
 		this.extraText = extraText;
 	}
 
-	public String getSide() {
+	public List<String> getSide() {
 		return this.side;
 	}
-	public void setSide(String side) {
+	public void setSide(List<String> side) {
 		this.side = side;
 	}
 

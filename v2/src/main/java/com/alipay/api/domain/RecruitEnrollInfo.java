@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RecruitEnrollInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7419329134515543935L;
+	private static final long serialVersionUID = 4457329165249298889L;
 
 	/**
 	 * 报名提交的活动城市码，详见<a href="https://opendocs.alipay.com/pre-open/02r07u" target="_blank">活动城市码</a>

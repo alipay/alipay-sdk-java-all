@@ -22,11 +22,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-07 11:36:59
+ * @since 1.0, 2024-08-09 17:27:06
  */
 public class AlipayTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3146844418815265328L;
+	private static final long serialVersionUID = 7571792878439265434L;
 
 	/** 
 	 * 交易附加状态：
@@ -47,6 +47,12 @@ SELLER_NOT_RECEIVED（买家已付款，卖家未收款）；
 	 */
 	@ApiField("alipay_sub_merchant_id")
 	private String alipaySubMerchantId;
+
+	/** 
+	 * 异步支付受理状态，仅异步支付模式且query_options指定async_pay_info时返回。S：受理成功，支付宝内部会在一定期限内捞起任务推进支付，直到支付成功或超出可重试期限；其它：受理结果未知，可重试查询。
+	 */
+	@ApiField("async_pay_apply_status")
+	private String asyncPayApplyStatus;
 
 	/** 
 	 * 预授权支付模式，该参数仅在信用预授权支付场景下返回。信用预授权支付：CREDIT_PREAUTH_PAY
@@ -438,6 +444,13 @@ json格式。
 	}
 	public String getAlipaySubMerchantId( ) {
 		return this.alipaySubMerchantId;
+	}
+
+	public void setAsyncPayApplyStatus(String asyncPayApplyStatus) {
+		this.asyncPayApplyStatus = asyncPayApplyStatus;
+	}
+	public String getAsyncPayApplyStatus( ) {
+		return this.asyncPayApplyStatus;
 	}
 
 	public void setAuthTradePayMode(String authTradePayMode) {

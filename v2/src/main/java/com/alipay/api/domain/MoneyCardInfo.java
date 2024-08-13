@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 金额卡独有信息
  *
  * @author auto create
- * @since 1.0, 2024-08-01 16:50:52
+ * @since 1.0, 2024-08-06 17:32:17
  */
 public class MoneyCardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5292156652834479792L;
+	private static final long serialVersionUID = 8853137314584189898L;
 
 	/**
 	 * 可使用天数，单位天(购卡后立即生效，生效后x天失效）
@@ -41,7 +41,8 @@ public class MoneyCardInfo extends AlipayObject {
 	private String limitType;
 
 	/**
-	 * 面额价，不支持小数。单位分，转换为元后需是整数
+	 * 面额价，不支持小数。单位分，转换为元后需是整数。
+字段值需要大于或等于sale_price。
 	 */
 	@ApiField("origin_price")
 	private Long originPrice;
@@ -60,7 +61,7 @@ public class MoneyCardInfo extends AlipayObject {
 	private Long remainStock;
 
 	/**
-	 * 实际售卖价格，不支持小数。单位分，转换为元后需是整数
+	 * 实际售卖价格，不支持小数。单位分，转换为元后需是整数。
 	 */
 	@ApiField("sale_price")
 	private Long salePrice;

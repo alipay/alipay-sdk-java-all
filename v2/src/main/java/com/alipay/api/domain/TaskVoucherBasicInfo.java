@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 任务券信息
  *
  * @author auto create
- * @since 1.0, 2024-05-30 19:43:23
+ * @since 1.0, 2024-08-09 16:47:52
  */
 public class TaskVoucherBasicInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3249336826589236385L;
+	private static final long serialVersionUID = 4291733179235752124L;
 
 	/**
 	 * 券图标
@@ -20,7 +20,7 @@ public class TaskVoucherBasicInfo extends AlipayObject {
 	private String logo;
 
 	/**
-	 * 代金券面额
+	 * 代金券面额，单位元
 	 */
 	@ApiField("reduction_amount")
 	private String reductionAmount;
@@ -32,13 +32,13 @@ public class TaskVoucherBasicInfo extends AlipayObject {
 	private String thresholdAmount;
 
 	/**
-	 * 总核销次数
+	 * 总核销次数，单位为次
 	 */
 	@ApiField("total_used_count")
 	private Long totalUsedCount;
 
 	/**
-	 * 门店核销次数
+	 * 门店核销次数，单位为次
 	 */
 	@ApiField("used_count")
 	private Long usedCount;

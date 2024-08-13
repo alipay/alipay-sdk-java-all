@@ -1,25 +1,46 @@
 package com.alipay.api.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 停车入场信息同步接口
  *
  * @author auto create
- * @since 1.0, 2024-07-09 10:25:44
+ * @since 1.0, 2024-08-12 17:31:52
  */
 public class AlipayCommerceTransportParkingEnterinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7584495637493969414L;
+	private static final long serialVersionUID = 1234246586225587988L;
 
 	/**
 	 * 是否启用车牌代扣状态查询功能，true为启用，false为停用
 	 */
 	@ApiField("agreement_query")
 	private Boolean agreementQuery;
+
+	/**
+	 * 本次行程收费计划清单
+	 */
+	@ApiListField("charge_info_list")
+	@ApiField("parking_charge_info")
+	private List<ParkingChargeInfo> chargeInfoList;
+
+	/**
+	 * 车辆进入停车场的入口通道名称
+	 */
+	@ApiField("entrance_name")
+	private String entranceName;
+
+	/**
+	 * 车辆进入停车场的入口通道编号；按线下实际编号为准；
+	 */
+	@ApiField("entrance_number")
+	private Long entranceNumber;
 
 	/**
 	 * 当前停车场的入场免费时长分钟数
@@ -38,6 +59,12 @@ public class AlipayCommerceTransportParkingEnterinfoSyncModel extends AlipayObje
 	 */
 	@ApiField("is_encrypt_plate_no")
 	private Boolean isEncryptPlateNo;
+
+	/**
+	 * 当前车主的停车会员信息
+	 */
+	@ApiField("membership_info")
+	private ParkingMembershipInfo membershipInfo;
 
 	/**
 	 * 当前行程是否需要计费。true：需要，false：不需要。不传默认为true。
@@ -106,6 +133,27 @@ public class AlipayCommerceTransportParkingEnterinfoSyncModel extends AlipayObje
 		this.agreementQuery = agreementQuery;
 	}
 
+	public List<ParkingChargeInfo> getChargeInfoList() {
+		return this.chargeInfoList;
+	}
+	public void setChargeInfoList(List<ParkingChargeInfo> chargeInfoList) {
+		this.chargeInfoList = chargeInfoList;
+	}
+
+	public String getEntranceName() {
+		return this.entranceName;
+	}
+	public void setEntranceName(String entranceName) {
+		this.entranceName = entranceName;
+	}
+
+	public Long getEntranceNumber() {
+		return this.entranceNumber;
+	}
+	public void setEntranceNumber(Long entranceNumber) {
+		this.entranceNumber = entranceNumber;
+	}
+
 	public String getFreeEnterMinutes() {
 		return this.freeEnterMinutes;
 	}
@@ -125,6 +173,13 @@ public class AlipayCommerceTransportParkingEnterinfoSyncModel extends AlipayObje
 	}
 	public void setIsEncryptPlateNo(Boolean isEncryptPlateNo) {
 		this.isEncryptPlateNo = isEncryptPlateNo;
+	}
+
+	public ParkingMembershipInfo getMembershipInfo() {
+		return this.membershipInfo;
+	}
+	public void setMembershipInfo(ParkingMembershipInfo membershipInfo) {
+		this.membershipInfo = membershipInfo;
 	}
 
 	public Boolean getNeedCharge() {

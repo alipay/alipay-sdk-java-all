@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class Keyword extends AlipayObject {
 
-	private static final long serialVersionUID = 5154849216877558257L;
+	private static final long serialVersionUID = 5427566895922282955L;
 
 	/**
 	 * 当前文字颜色

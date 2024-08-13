@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.payforprivilege.promconfigure.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 17:41:17
+ * @since 1.0, 2024-08-08 21:49:33
  */
 public class AlipayMerchantPayforprivilegePromconfigureQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7831335647377151522L;
+	private static final long serialVersionUID = 7432225411863167527L;
 
 	/** 
 	 * 可核销的店铺id列表

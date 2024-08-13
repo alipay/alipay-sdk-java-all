@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 图片目录vo
  *
  * @author auto create
- * @since 1.0, 2024-02-29 20:12:40
+ * @since 1.0, 2024-08-05 19:25:25
  */
 public class ImageDirectoryVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5236912122362392255L;
+	private static final long serialVersionUID = 4743355243729184327L;
 
 	/**
 	 * 目录创建时间

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.etc.cardapply.notify response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 16:56:00
+ * @since 1.0, 2024-08-09 18:43:41
  */
 public class AlipayCommerceTransportEtcCardapplyNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3684539177317762824L;
+	private static final long serialVersionUID = 1141947267121148287L;
 
 	/** 
 	 * 通知结果，返回支付宝是否接收成功

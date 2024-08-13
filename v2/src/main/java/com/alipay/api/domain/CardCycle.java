@@ -7,11 +7,18 @@ import com.alipay.api.internal.mapping.ApiField;
  * 周期信息
  *
  * @author auto create
- * @since 1.0, 2024-07-05 13:59:15
+ * @since 1.0, 2024-08-06 17:32:17
  */
 public class CardCycle extends AlipayObject {
 
-	private static final long serialVersionUID = 8159629535612836191L;
+	private static final long serialVersionUID = 2798655794795843818L;
+
+	/**
+	 * 1.当该参数配置为true时，在用户下单时立即扣第一期的金额
+2.默认没有权限，需要找客户经理申请权限
+	 */
+	@ApiField("charge_now")
+	private Boolean chargeNow;
 
 	/**
 	 * 指定周期付首期扣款的方式
@@ -34,9 +41,10 @@ public class CardCycle extends AlipayObject {
 	private String cycleValue;
 
 	/**
-	 * 周期卡商品类型，用于业务标识，年卡/季卡
+	 * 周期卡商品类型，用于业务标识，年卡/季卡 当前字段已废弃(支持自定义期数，不需要该字段)
 	 */
 	@ApiField("period_item_type")
+	@Deprecated
 	private String periodItemType;
 
 	/**
@@ -44,6 +52,13 @@ public class CardCycle extends AlipayObject {
 	 */
 	@ApiField("user_select_range_start")
 	private String userSelectRangeStart;
+
+	public Boolean getChargeNow() {
+		return this.chargeNow;
+	}
+	public void setChargeNow(Boolean chargeNow) {
+		this.chargeNow = chargeNow;
+	}
 
 	public String getCycleChargeType() {
 		return this.cycleChargeType;

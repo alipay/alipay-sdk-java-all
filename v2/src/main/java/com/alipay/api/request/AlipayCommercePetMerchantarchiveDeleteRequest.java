@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.pet.merchantarchive.delete request
  * 
  * @author auto create
- * @since 1.0, 2024-08-01 16:37:03
+ * @since 1.0, 2024-08-12 10:42:06
  */
 public class AlipayCommercePetMerchantarchiveDeleteRequest implements AlipayRequest<AlipayCommercePetMerchantarchiveDeleteResponse> {
 

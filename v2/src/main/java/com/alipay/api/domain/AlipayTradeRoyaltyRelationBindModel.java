@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 分账关系绑定
  *
  * @author auto create
- * @since 1.0, 2024-02-28 22:57:57
+ * @since 1.0, 2024-08-08 11:25:43
  */
 public class AlipayTradeRoyaltyRelationBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3639153153928355194L;
+	private static final long serialVersionUID = 2857721142116378977L;
 
 	/**
 	 * 外部请求号，由商家自定义。32个字符以内，仅可包含字母、数字、下划线。需保证在商户端不重复。

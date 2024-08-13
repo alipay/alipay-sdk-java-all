@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 任务模版信息
  *
  * @author auto create
- * @since 1.0, 2024-05-30 19:43:52
+ * @since 1.0, 2024-08-08 14:47:51
  */
 public class YunTaskTemplateInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2599683727943594774L;
+	private static final long serialVersionUID = 8742845176498214716L;
 
 	/**
 	 * 小程序id
@@ -26,6 +26,12 @@ public class YunTaskTemplateInfoDTO extends AlipayObject {
 	 */
 	@ApiField("creator_uid")
 	private String creatorUid;
+
+	/**
+	 * 任务生效范围
+	 */
+	@ApiField("effect_scope")
+	private TaskEffectScope effectScope;
 
 	/**
 	 * 出资方id
@@ -53,6 +59,12 @@ HUNTER 导购员
 	 */
 	@ApiField("incentive")
 	private String incentive;
+
+	/**
+	 * 激励延长时间为xx天
+	 */
+	@ApiField("incentive_extended_period")
+	private Long incentiveExtendedPeriod;
 
 	/**
 	 * 激励方式：
@@ -179,6 +191,13 @@ ALGOLADDER 算法阶梯
 		this.creatorUid = creatorUid;
 	}
 
+	public TaskEffectScope getEffectScope() {
+		return this.effectScope;
+	}
+	public void setEffectScope(TaskEffectScope effectScope) {
+		this.effectScope = effectScope;
+	}
+
 	public String getFunderId() {
 		return this.funderId;
 	}
@@ -205,6 +224,13 @@ ALGOLADDER 算法阶梯
 	}
 	public void setIncentive(String incentive) {
 		this.incentive = incentive;
+	}
+
+	public Long getIncentiveExtendedPeriod() {
+		return this.incentiveExtendedPeriod;
+	}
+	public void setIncentiveExtendedPeriod(Long incentiveExtendedPeriod) {
+		this.incentiveExtendedPeriod = incentiveExtendedPeriod;
 	}
 
 	public String getIncentiveMode() {

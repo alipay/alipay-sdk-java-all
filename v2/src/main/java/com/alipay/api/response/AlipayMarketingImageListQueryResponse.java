@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.image.list.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-13 10:56:58
+ * @since 1.0, 2024-08-08 16:57:07
  */
 public class AlipayMarketingImageListQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5225858173322597285L;
+	private static final long serialVersionUID = 6186157274393771853L;
 
 	/** 
 	 * 图片列表。
@@ -37,13 +37,13 @@ public class AlipayMarketingImageListQueryResponse extends AlipayResponse {
 	private Long pageSize;
 
 	/** 
-	 * 总数量。
+	 * 总数量，单位为图片个数。
 	 */
 	@ApiField("total")
 	private Long total;
 
 	/** 
-	 * 总页数。
+	 * 总页数，单位为页。
 	 */
 	@ApiField("total_page")
 	private Long totalPage;

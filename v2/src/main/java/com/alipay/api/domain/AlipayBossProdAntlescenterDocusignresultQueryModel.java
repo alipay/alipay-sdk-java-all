@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询docusign多方签署任务
  *
  * @author auto create
- * @since 1.0, 2024-02-27 15:04:03
+ * @since 1.0, 2024-08-02 16:35:14
  */
 public class AlipayBossProdAntlescenterDocusignresultQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6663121558955521113L;
+	private static final long serialVersionUID = 4599815588678949618L;
 
 	/**
 	 * 申请方系统标识

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.ipsponsor.consumegold.query request
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 04:21:46
+ * @since 1.0, 2024-08-08 22:15:19
  */
 public class AlipayOpenIpsponsorConsumegoldQueryRequest implements AlipayRequest<AlipayOpenIpsponsorConsumegoldQueryResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CertificateUseRuleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8693255525835838494L;
+	private static final long serialVersionUID = 3195491662259674887L;
 
 	/**
 	 * 对应本地生活商品模版属性中的时间限制(use_limit)，参考<a href="https://opendocs.alipay.com/pre-open/07pywg?pathHash=1c499cb5">本地生活商品模板</a>

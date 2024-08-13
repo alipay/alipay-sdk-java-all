@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.charger.greenenergy.publish request
  * 
  * @author auto create
- * @since 1.0, 2023-10-22 11:21:00
+ * @since 1.0, 2024-08-09 18:44:52
  */
 public class AlipayEbppChargerGreenenergyPublishRequest implements AlipayRequest<AlipayEbppChargerGreenenergyPublishResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.largermodel.session.query request
  * 
  * @author auto create
- * @since 1.0, 2024-07-26 12:22:05
+ * @since 1.0, 2024-08-06 15:48:30
  */
 public class AlipayCommerceMedicalLargermodelSessionQueryRequest implements AlipayRequest<AlipayCommerceMedicalLargermodelSessionQueryResponse> {
 

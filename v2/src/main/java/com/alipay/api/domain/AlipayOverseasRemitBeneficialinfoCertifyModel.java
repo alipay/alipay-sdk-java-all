@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOverseasRemitBeneficialinfoCertifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2726934151739249783L;
+	private static final long serialVersionUID = 1824246515731788262L;
 
 	/**
 	 * 中文名

@@ -8,14 +8,19 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.parking.paymentinfo.sync response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-10 09:50:44
+ * @since 1.0, 2024-08-12 17:32:07
  */
 public class AlipayCommerceTransportParkingPaymentinfoSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6375296242282458635L;
+	private static final long serialVersionUID = 3366427785795854873L;
 
 	/** 
 	 * 具体错误码
+参数异常：INVALID_PARAMETER
+没有权限操作：NO_PERMISSION_ERROR
+请求受理结果未知：BIZ_UNKNOWN
+请求受理失败：BIZ_FAIL
+系统繁忙：SYSTEM_ERROR
 	 */
 	@ApiField("biz_code")
 	private String bizCode;
