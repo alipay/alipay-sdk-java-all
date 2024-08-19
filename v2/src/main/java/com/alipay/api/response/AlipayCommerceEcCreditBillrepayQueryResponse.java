@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.credit.billrepay.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-13 15:22:06
+ * @since 1.0, 2024-08-15 21:37:06
  */
 public class AlipayCommerceEcCreditBillrepayQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8389246126522472339L;
+	private static final long serialVersionUID = 4168851775725171885L;
 
 	/** 
 	 * 授信账单还款信息

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序云门票订单信息同步
  *
  * @author auto create
- * @since 1.0, 2024-08-13 16:49:32
+ * @since 1.0, 2024-08-14 17:06:17
  */
 public class AlipayCloudCloudpromoTicketOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7685964162446485358L;
+	private static final long serialVersionUID = 8188444218497725262L;
 
 	/**
 	 * 实付金额,单位元

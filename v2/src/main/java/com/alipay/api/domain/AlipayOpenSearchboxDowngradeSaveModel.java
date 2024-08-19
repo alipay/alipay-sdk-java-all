@@ -10,18 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 搜索直达降级
  *
  * @author auto create
- * @since 1.0, 2023-07-24 10:13:40
+ * @since 1.0, 2024-08-15 11:27:50
  */
 public class AlipayOpenSearchboxDowngradeSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5897152716293735361L;
-
-	/**
-	 * 小程序直达配置的常用服务中带有门店信息时，可添加简称触发词
-	 */
-	@ApiListField("area_keywords")
-	@ApiField("string")
-	private List<String> areaKeywords;
+	private static final long serialVersionUID = 2679876681662546276L;
 
 	/**
 	 * 品牌介绍，5-15个中文字符。 小程序直达时不支持设置
@@ -87,13 +80,6 @@ public class AlipayOpenSearchboxDowngradeSaveModel extends AlipayObject {
 	@ApiListField("service_infos")
 	@ApiField("search_box_service_info")
 	private List<SearchBoxServiceInfo> serviceInfos;
-
-	public List<String> getAreaKeywords() {
-		return this.areaKeywords;
-	}
-	public void setAreaKeywords(List<String> areaKeywords) {
-		this.areaKeywords = areaKeywords;
-	}
 
 	public String getBoxDesc() {
 		return this.boxDesc;

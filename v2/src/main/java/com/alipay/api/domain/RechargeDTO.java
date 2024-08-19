@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RechargeDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2526438554761534722L;
+	private static final long serialVersionUID = 8677626965314478123L;
 
 	/**
 	 * 赠送金额，如果有阶梯规则，多个值用英文逗号分割，例如：10,20

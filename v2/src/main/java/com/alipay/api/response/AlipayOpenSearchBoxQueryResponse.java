@@ -4,7 +4,6 @@ import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.SearchBoxAccountModule;
-import com.alipay.api.domain.SearchBoxAreaKeyWordModule;
 import com.alipay.api.domain.SearchBoxBasicInfoModule;
 import com.alipay.api.domain.BoxBusinessDistrictModule;
 import com.alipay.api.domain.SearchBoxKeyWordModule;
@@ -17,23 +16,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.search.box.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-01 15:42:45
+ * @since 1.0, 2024-08-15 11:28:17
  */
 public class AlipayOpenSearchBoxQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6858278533719299887L;
+	private static final long serialVersionUID = 6381619284749391118L;
 
 	/** 
 	 * 搜索直达账号模块
 	 */
 	@ApiField("account_module")
 	private SearchBoxAccountModule accountModule;
-
-	/** 
-	 * 地域触发词
-	 */
-	@ApiField("area_keyword_module")
-	private SearchBoxAreaKeyWordModule areaKeywordModule;
 
 	/** 
 	 * 搜索直达基础信息模块
@@ -95,13 +88,6 @@ public class AlipayOpenSearchBoxQueryResponse extends AlipayResponse {
 	}
 	public SearchBoxAccountModule getAccountModule( ) {
 		return this.accountModule;
-	}
-
-	public void setAreaKeywordModule(SearchBoxAreaKeyWordModule areaKeywordModule) {
-		this.areaKeywordModule = areaKeywordModule;
-	}
-	public SearchBoxAreaKeyWordModule getAreaKeywordModule( ) {
-		return this.areaKeywordModule;
 	}
 
 	public void setBasicInfoModule(SearchBoxBasicInfoModule basicInfoModule) {

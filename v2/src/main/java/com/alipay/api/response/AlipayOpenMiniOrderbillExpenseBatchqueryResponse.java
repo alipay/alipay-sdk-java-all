@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.orderbill.expense.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-21 22:17:00
+ * @since 1.0, 2024-08-14 14:42:06
  */
 public class AlipayOpenMiniOrderbillExpenseBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4624277513474517946L;
+	private static final long serialVersionUID = 7192965453176857381L;
 
 	/** 
 	 * 费用查询结果

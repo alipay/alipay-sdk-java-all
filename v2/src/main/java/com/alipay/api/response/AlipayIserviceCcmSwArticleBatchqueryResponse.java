@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.ccm.sw.article.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 16:00:56
+ * @since 1.0, 2024-08-14 11:12:07
  */
 public class AlipayIserviceCcmSwArticleBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2771889664281115483L;
+	private static final long serialVersionUID = 5641437229345689219L;
 
 	/** 
 	 * 文章信息
@@ -24,11 +24,50 @@ public class AlipayIserviceCcmSwArticleBatchqueryResponse extends AlipayResponse
 	@ApiField("article_info")
 	private List<ArticleInfo> articles;
 
+	/** 
+	 * 页数
+	 */
+	@ApiField("page_num")
+	private Long pageNum;
+
+	/** 
+	 * 分页大小
+	 */
+	@ApiField("page_size")
+	private Long pageSize;
+
+	/** 
+	 * 总数
+	 */
+	@ApiField("total_count")
+	private Long totalCount;
+
 	public void setArticles(List<ArticleInfo> articles) {
 		this.articles = articles;
 	}
 	public List<ArticleInfo> getArticles( ) {
 		return this.articles;
+	}
+
+	public void setPageNum(Long pageNum) {
+		this.pageNum = pageNum;
+	}
+	public Long getPageNum( ) {
+		return this.pageNum;
+	}
+
+	public void setPageSize(Long pageSize) {
+		this.pageSize = pageSize;
+	}
+	public Long getPageSize( ) {
+		return this.pageSize;
+	}
+
+	public void setTotalCount(Long totalCount) {
+		this.totalCount = totalCount;
+	}
+	public Long getTotalCount( ) {
+		return this.totalCount;
 	}
 
 }

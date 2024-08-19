@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业授信账单已还款查询
  *
  * @author auto create
- * @since 1.0, 2024-08-13 15:19:03
+ * @since 1.0, 2024-08-14 10:31:17
  */
 public class AlipayCommerceEcCreditBillrepayQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7231549967295537474L;
+	private static final long serialVersionUID = 8269471778596675728L;
 
 	/**
 	 * 时间范围查询的结束时间，格式 yyyy-MM-dd

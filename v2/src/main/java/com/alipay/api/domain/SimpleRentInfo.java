@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租赁订单的简单信息
  *
  * @author auto create
- * @since 1.0, 2024-08-13 17:48:14
+ * @since 1.0, 2024-08-15 13:46:39
  */
 public class SimpleRentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5187546465995921915L;
+	private static final long serialVersionUID = 8337987171977369414L;
 
 	/**
 	 * 交易组件的订单Id
@@ -33,6 +33,12 @@ public class SimpleRentInfo extends AlipayObject {
 	 */
 	@ApiField("buyer_open_id")
 	private String buyerOpenId;
+
+	/**
+	 * 订单到期买断金，单位：元，精确到小数点后两位
+	 */
+	@ApiField("buyout_price")
+	private String buyoutPrice;
 
 	/**
 	 * 租赁订单的结束时间
@@ -103,6 +109,13 @@ public class SimpleRentInfo extends AlipayObject {
 	}
 	public void setBuyerOpenId(String buyerOpenId) {
 		this.buyerOpenId = buyerOpenId;
+	}
+
+	public String getBuyoutPrice() {
+		return this.buyoutPrice;
+	}
+	public void setBuyoutPrice(String buyoutPrice) {
+		this.buyoutPrice = buyoutPrice;
 	}
 
 	public String getEndTime() {

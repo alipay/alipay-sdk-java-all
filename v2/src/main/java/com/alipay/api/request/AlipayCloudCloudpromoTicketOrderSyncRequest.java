@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudpromo.ticket.order.sync request
  * 
  * @author auto create
- * @since 1.0, 2024-08-13 16:52:07
+ * @since 1.0, 2024-08-14 17:07:06
  */
 public class AlipayCloudCloudpromoTicketOrderSyncRequest implements AlipayRequest<AlipayCloudCloudpromoTicketOrderSyncResponse> {
 

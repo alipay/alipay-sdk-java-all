@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.stock.stockinstops.backflow.upload response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-06 16:42:07
+ * @since 1.0, 2024-08-16 11:17:07
  */
 public class AntfortuneStockStockinstopsBackflowUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8598153832444183878L;
+	private static final long serialVersionUID = 2361697549873634147L;
 
 	
 

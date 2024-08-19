@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 费用明细
  *
  * @author auto create
- * @since 1.0, 2024-05-21 21:52:59
+ * @since 1.0, 2024-08-14 14:29:51
  */
 public class ExpenseBillItem extends AlipayObject {
 
-	private static final long serialVersionUID = 7289113524717195495L;
+	private static final long serialVersionUID = 2314694453815248121L;
 
 	/**
 	 * 收费账户ID
@@ -34,7 +34,7 @@ public class ExpenseBillItem extends AlipayObject {
 	private String accountOpenId;
 
 	/**
-	 * 收费金额
+	 * 收费金额，单位：元
 	 */
 	@ApiField("amount")
 	private String amount;

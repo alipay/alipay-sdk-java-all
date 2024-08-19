@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.nordermaterials.delivery.upload response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-12 11:27:06
+ * @since 1.0, 2024-08-18 19:32:07
  */
 public class AlipayOpenSpNordermaterialsDeliveryUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5137778136983562153L;
+	private static final long serialVersionUID = 8285321186254978318L;
 
 	
 

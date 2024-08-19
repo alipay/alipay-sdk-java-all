@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DumMmmY extends AlipayObject {
 
-	private static final long serialVersionUID = 1188128769176442612L;
+	private static final long serialVersionUID = 1423936716797887439L;
 
 	/**
 	 * 价格

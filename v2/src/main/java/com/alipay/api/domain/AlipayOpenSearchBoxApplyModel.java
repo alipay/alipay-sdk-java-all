@@ -10,18 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建搜索直达
  *
  * @author auto create
- * @since 1.0, 2024-07-11 10:51:57
+ * @since 1.0, 2024-08-15 11:06:17
  */
 public class AlipayOpenSearchBoxApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2562327971799476362L;
-
-	/**
-	 * 小程序直达配置的常用服务中带有门店信息时，可添加简称触发词
-	 */
-	@ApiListField("area_keywords")
-	@ApiField("string")
-	private List<String> areaKeywords;
+	private static final long serialVersionUID = 4545353688833511815L;
 
 	/**
 	 * 品牌介绍，5-15个中文字符。
@@ -96,13 +89,6 @@ public class AlipayOpenSearchBoxApplyModel extends AlipayObject {
 	 */
 	@ApiField("target_appid")
 	private String targetAppid;
-
-	public List<String> getAreaKeywords() {
-		return this.areaKeywords;
-	}
-	public void setAreaKeywords(List<String> areaKeywords) {
-		this.areaKeywords = areaKeywords;
-	}
 
 	public String getBoxDesc() {
 		return this.boxDesc;

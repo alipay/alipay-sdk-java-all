@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalPaymentPreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3617932644761281371L;
+	private static final long serialVersionUID = 3269552939129783133L;
 
 	/**
 	 * 定点医药机构所在地标准行政区划编码。可在<a href="http://xzqh.mca.gov.cn/map">民政部全国行政区划信息查询平台</a>查询

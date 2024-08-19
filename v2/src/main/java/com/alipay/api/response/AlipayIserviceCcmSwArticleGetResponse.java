@@ -6,6 +6,7 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.ArticleAttachmentInfo;
 import com.alipay.api.domain.ArticleCategoryInfo;
+import com.alipay.api.domain.BaseArticleInfo;
 
 import com.alipay.api.AlipayResponse;
 
@@ -13,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.ccm.sw.article.get response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-16 10:47:56
+ * @since 1.0, 2024-08-14 11:12:06
  */
 public class AlipayIserviceCcmSwArticleGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1642269612614428245L;
+	private static final long serialVersionUID = 4159611635139986398L;
 
 	/** 
 	 * 文章对应附件集合
@@ -113,6 +114,13 @@ public class AlipayIserviceCcmSwArticleGetResponse extends AlipayResponse {
 	 */
 	@ApiField("publish_start")
 	private Date publishStart;
+
+	/** 
+	 * 关联的知识点基础信息
+	 */
+	@ApiListField("related_articles")
+	@ApiField("base_article_info")
+	private List<BaseArticleInfo> relatedArticles;
 
 	/** 
 	 * 场景ID。1（内部知识库）；2（机器人）;3（帮助中心）；4（无线帮助中心）
@@ -266,6 +274,13 @@ public class AlipayIserviceCcmSwArticleGetResponse extends AlipayResponse {
 	}
 	public Date getPublishStart( ) {
 		return this.publishStart;
+	}
+
+	public void setRelatedArticles(List<BaseArticleInfo> relatedArticles) {
+		this.relatedArticles = relatedArticles;
+	}
+	public List<BaseArticleInfo> getRelatedArticles( ) {
+		return this.relatedArticles;
 	}
 
 	public void setSceneCodes(List<String> sceneCodes) {

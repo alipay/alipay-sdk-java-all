@@ -1,20 +1,30 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * 扣款单信息
+ * 核销订单信息
  *
  * @author auto create
- * @since 1.0, 2024-08-12 20:36:16
+ * @since 1.0, 2024-08-16 10:24:47
  */
 public class DeductionOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7491449279869833133L;
+	private static final long serialVersionUID = 1879894249852273291L;
 
 	/**
-	 * 订单ID
+	 * 抽佣信息集合
+	 */
+	@ApiListField("bill_fee_info_list")
+	@ApiField("bill_fee_info")
+	private List<BillFeeInfo> billFeeInfoList;
+
+	/**
+	 * 售卖订单ID
 	 */
 	@ApiField("card_id")
 	private String cardId;
@@ -50,7 +60,7 @@ public class DeductionOrderInfo extends AlipayObject {
 	private Long deductionFailTimes;
 
 	/**
-	 * 扣款单ID
+	 * 核销订单ID
 	 */
 	@ApiField("deduction_order_id")
 	private String deductionOrderId;
@@ -80,6 +90,12 @@ public class DeductionOrderInfo extends AlipayObject {
 	private String gmtCreate;
 
 	/**
+	 * 商户pid
+	 */
+	@ApiField("merchant_pid")
+	private String merchantPid;
+
+	/**
 	 * 用于标记支付宝用户在应用下的唯一标识
 	 */
 	@ApiField("open_id")
@@ -104,6 +120,12 @@ public class DeductionOrderInfo extends AlipayObject {
 	private String planDeductionTime;
 
 	/**
+	 * 退款金额，单位：分
+	 */
+	@ApiField("refund_cash")
+	private Long refundCash;
+
+	/**
 	 * 门店ID
 	 */
 	@ApiField("shop_id")
@@ -126,6 +148,13 @@ public class DeductionOrderInfo extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public List<BillFeeInfo> getBillFeeInfoList() {
+		return this.billFeeInfoList;
+	}
+	public void setBillFeeInfoList(List<BillFeeInfo> billFeeInfoList) {
+		this.billFeeInfoList = billFeeInfoList;
+	}
 
 	public String getCardId() {
 		return this.cardId;
@@ -204,6 +233,13 @@ public class DeductionOrderInfo extends AlipayObject {
 		this.gmtCreate = gmtCreate;
 	}
 
+	public String getMerchantPid() {
+		return this.merchantPid;
+	}
+	public void setMerchantPid(String merchantPid) {
+		this.merchantPid = merchantPid;
+	}
+
 	public String getOpenId() {
 		return this.openId;
 	}
@@ -230,6 +266,13 @@ public class DeductionOrderInfo extends AlipayObject {
 	}
 	public void setPlanDeductionTime(String planDeductionTime) {
 		this.planDeductionTime = planDeductionTime;
+	}
+
+	public Long getRefundCash() {
+		return this.refundCash;
+	}
+	public void setRefundCash(Long refundCash) {
+		this.refundCash = refundCash;
 	}
 
 	public String getShopId() {

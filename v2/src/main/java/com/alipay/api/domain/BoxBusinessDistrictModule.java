@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 搜索直达商圈模块信息
  *
  * @author auto create
- * @since 1.0, 2023-01-06 10:42:29
+ * @since 1.0, 2024-08-15 11:28:16
  */
 public class BoxBusinessDistrictModule extends AlipayObject {
 
-	private static final long serialVersionUID = 6871351883165754458L;
+	private static final long serialVersionUID = 8269271686829116866L;
 
 	/**
 	 * 商圈选择

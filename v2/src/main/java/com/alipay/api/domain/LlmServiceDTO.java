@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 大模型im对象
  *
  * @author auto create
- * @since 1.0, 2024-07-26 12:21:13
+ * @since 1.0, 2024-08-15 12:07:17
  */
 public class LlmServiceDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5686157169867571641L;
+	private static final long serialVersionUID = 7548764677174793148L;
 
 	/**
 	 * 对话内容列表，流式输出中大模型的每次输出语句块
@@ -91,6 +91,12 @@ false：无需撤回
 	@ApiListField("service_result")
 	@ApiField("external_service_d_t_o")
 	private List<ExternalServiceDTO> serviceResult;
+
+	/**
+	 * 推荐问题。
+	 */
+	@ApiField("suggest_questions")
+	private SuggestQuestionsDTO suggestQuestions;
 
 	/**
 	 * 目前只有文字模板
@@ -173,6 +179,13 @@ false：无需撤回
 	}
 	public void setServiceResult(List<ExternalServiceDTO> serviceResult) {
 		this.serviceResult = serviceResult;
+	}
+
+	public SuggestQuestionsDTO getSuggestQuestions() {
+		return this.suggestQuestions;
+	}
+	public void setSuggestQuestions(SuggestQuestionsDTO suggestQuestions) {
+		this.suggestQuestions = suggestQuestions;
 	}
 
 	public String getTemplateId() {

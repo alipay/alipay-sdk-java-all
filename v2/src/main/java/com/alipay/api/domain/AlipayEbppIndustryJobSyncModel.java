@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 人才就业岗位同步
  *
  * @author auto create
- * @since 1.0, 2024-02-26 19:53:16
+ * @since 1.0, 2024-08-14 14:13:16
  */
 public class AlipayEbppIndustryJobSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7138859933318184829L;
+	private static final long serialVersionUID = 2476921625316352253L;
 
 	/**
 	 * 学历要求
@@ -38,6 +38,8 @@ public class AlipayEbppIndustryJobSyncModel extends AlipayObject {
 不限,不限
 18,不限
 不限,60
+
+单位：岁
 	 */
 	@ApiField("age")
 	private String age;
@@ -50,7 +52,7 @@ public class AlipayEbppIndustryJobSyncModel extends AlipayObject {
 	private List<String> certifications;
 
 	/**
-	 * 招聘人数
+	 * 招聘人数，单位：人
 	 */
 	@ApiField("count")
 	private Long count;
@@ -154,7 +156,7 @@ URL链接处理可以参考：<a href="https://opendocs.alipay.com/support/01rb1
 	private String partTimeMode;
 
 	/**
-	 * 薪资单位
+	 * 薪资单位,单位：月、周、日
 	 */
 	@ApiField("pay_period")
 	private String payPeriod;
@@ -168,7 +170,7 @@ URL链接处理可以参考：<a href="https://opendocs.alipay.com/support/01rb1
 	/**
 	 * 薪资范围
 格式：最低薪资（含）,最高薪资（含），薪资结算方式是面议时为空。
-如果为单价型岗位，最低薪资和最高薪资内容保持一致，如: 800,800
+如果为单价型岗位，最低薪资和最高薪资内容保持一致，如: 800,800，单位：元
 	 */
 	@ApiField("salary")
 	private String salary;
@@ -187,7 +189,7 @@ URL链接处理可以参考：<a href="https://opendocs.alipay.com/support/01rb1
 	private Boolean workOnline;
 
 	/**
-	 * 工作年限要求
+	 * 工作年限要求，单位：年
 	 */
 	@ApiField("working_years")
 	private String workingYears;

@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * N点餐物料物流信息上报
  *
  * @author auto create
- * @since 1.0, 2024-08-09 19:05:07
+ * @since 1.0, 2024-08-18 19:30:15
  */
 public class AlipayOpenSpNordermaterialsDeliveryUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5664345596398455253L;
+	private static final long serialVersionUID = 5258333967484546855L;
 
 	/**
 	 * 门店物料收货地址
 	 */
 	@ApiField("delivery_address")
 	private String deliveryAddress;
+
+	/**
+	 * 物流公司编码
+	 */
+	@ApiField("logistics_code")
+	private String logisticsCode;
 
 	/**
 	 * 需要发出的门店的物料个数，单位个
@@ -60,6 +66,13 @@ public class AlipayOpenSpNordermaterialsDeliveryUploadModel extends AlipayObject
 	}
 	public void setDeliveryAddress(String deliveryAddress) {
 		this.deliveryAddress = deliveryAddress;
+	}
+
+	public String getLogisticsCode() {
+		return this.logisticsCode;
+	}
+	public void setLogisticsCode(String logisticsCode) {
+		this.logisticsCode = logisticsCode;
 	}
 
 	public Long getMaterialsCount() {

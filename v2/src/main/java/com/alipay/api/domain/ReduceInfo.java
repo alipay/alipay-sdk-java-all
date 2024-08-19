@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ReduceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1828917769627214988L;
+	private static final long serialVersionUID = 3776125952281283341L;
 
 	/**
 	 * 门店品牌名称

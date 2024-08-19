@@ -8,11 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.trans.account.transfer response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-26 10:03:51
+ * @since 1.0, 2024-08-16 19:32:07
  */
 public class AlipayCommerceEcTransAccountTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8113463867985495565L;
+	private static final long serialVersionUID = 5457138627816297584L;
+
+	/** 
+	 * 支付宝支付资金流水号
+	 */
+	@ApiField("fund_order_id")
+	private String fundOrderId;
 
 	/** 
 	 * 支付宝转账单号
@@ -28,6 +34,13 @@ REFUND：退票（转账到支付宝账户不涉及）
 	 */
 	@ApiField("status")
 	private String status;
+
+	public void setFundOrderId(String fundOrderId) {
+		this.fundOrderId = fundOrderId;
+	}
+	public String getFundOrderId( ) {
+		return this.fundOrderId;
+	}
 
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;

@@ -7,17 +7,24 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业码isv集成授权码信息
  *
  * @author auto create
- * @since 1.0, 2024-05-31 09:52:03
+ * @since 1.0, 2024-08-15 19:43:51
  */
 public class OpenAccessCodeDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8621668783618776873L;
+	private static final long serialVersionUID = 4684738961449943837L;
+
+	/**
+	 * 授权码 当前字段已废弃(auth_code代替该出参)
+	 */
+	@ApiField("access_code")
+	@Deprecated
+	private String accessCode;
 
 	/**
 	 * 授权码
 	 */
-	@ApiField("access_code")
-	private String accessCode;
+	@ApiField("auth_code")
+	private String authCode;
 
 	/**
 	 * 过期时间
@@ -30,6 +37,13 @@ public class OpenAccessCodeDTO extends AlipayObject {
 	}
 	public void setAccessCode(String accessCode) {
 		this.accessCode = accessCode;
+	}
+
+	public String getAuthCode() {
+		return this.authCode;
+	}
+	public void setAuthCode(String authCode) {
+		this.authCode = authCode;
 	}
 
 	public String getExpireTime() {

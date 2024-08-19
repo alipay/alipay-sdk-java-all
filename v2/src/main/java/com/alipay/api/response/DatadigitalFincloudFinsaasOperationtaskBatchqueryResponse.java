@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class DatadigitalFincloudFinsaasOperationtaskBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5665972957198945568L;
+	private static final long serialVersionUID = 7622314435822553413L;
 
 	/** 
 	 * operation_task + 运营任务模糊查询 + 数据库。

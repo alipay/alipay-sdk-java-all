@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 大模型返回卡片数据结构
  *
  * @author auto create
- * @since 1.0, 2024-07-26 11:35:14
+ * @since 1.0, 2024-08-15 12:07:16
  */
 public class CardDataInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8836659484694456497L;
+	private static final long serialVersionUID = 6662713667382494126L;
 
 	/**
 	 * 可空，是卡片当前链接的支付宝侧id——如科室id，医生id

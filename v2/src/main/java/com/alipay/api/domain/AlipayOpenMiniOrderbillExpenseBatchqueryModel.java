@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 根据交易号批量查询费用信息
  *
  * @author auto create
- * @since 1.0, 2024-05-21 21:52:59
+ * @since 1.0, 2024-08-14 14:29:51
  */
 public class AlipayOpenMiniOrderbillExpenseBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1849942145558412218L;
+	private static final long serialVersionUID = 5214814584993461934L;
 
 	/**
 	 * 支付宝交易号列表，最多10个

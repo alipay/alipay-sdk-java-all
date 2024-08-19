@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 售卖订单信息
  *
  * @author auto create
- * @since 1.0, 2024-08-12 20:48:16
+ * @since 1.0, 2024-08-15 22:51:17
  */
 public class CardOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4536154734174572464L;
+	private static final long serialVersionUID = 4631678735237819915L;
 
 	/**
 	 * 金额卡余额面值，单位分
@@ -28,6 +28,13 @@ public class CardOrderInfo extends AlipayObject {
 	 */
 	@ApiField("cancel_type")
 	private String cancelType;
+
+	/**
+	 * 已解约金额，单位：分
+(金额卡无效)
+	 */
+	@ApiField("cancelled_cash")
+	private Long cancelledCash;
 
 	/**
 	 * 售卖订单ID
@@ -92,6 +99,12 @@ public class CardOrderInfo extends AlipayObject {
 	private Date gmtExpired;
 
 	/**
+	 * merchant_pid
+	 */
+	@ApiField("merchant_pid")
+	private String merchantPid;
+
+	/**
 	 * 卡名称
 	 */
 	@ApiField("name")
@@ -120,6 +133,13 @@ public class CardOrderInfo extends AlipayObject {
 	 */
 	@ApiField("out_order_no")
 	private String outOrderNo;
+
+	/**
+	 * 退款金额，单位：分
+(金额卡无效)
+	 */
+	@ApiField("refund_cash")
+	private Long refundCash;
 
 	/**
 	 * 剩余期数(次数)
@@ -152,10 +172,18 @@ public class CardOrderInfo extends AlipayObject {
 	private String tradeNo;
 
 	/**
-	 * 金额卡余额现金价值，单位分
+	 * （1）金额卡余额现金价值，单位：分
+ （2）周期卡可核销金额，单位：分
 	 */
 	@ApiField("usable_cash")
 	private Long usableCash;
+
+	/**
+	 * 已核销金额，单位：分
+(金额卡无效)
+	 */
+	@ApiField("used_cash")
+	private Long usedCash;
 
 	/**
 	 * 支付宝用户的userId。
@@ -181,6 +209,13 @@ public class CardOrderInfo extends AlipayObject {
 	}
 	public void setCancelType(String cancelType) {
 		this.cancelType = cancelType;
+	}
+
+	public Long getCancelledCash() {
+		return this.cancelledCash;
+	}
+	public void setCancelledCash(Long cancelledCash) {
+		this.cancelledCash = cancelledCash;
 	}
 
 	public String getCardId() {
@@ -239,6 +274,13 @@ public class CardOrderInfo extends AlipayObject {
 		this.gmtExpired = gmtExpired;
 	}
 
+	public String getMerchantPid() {
+		return this.merchantPid;
+	}
+	public void setMerchantPid(String merchantPid) {
+		this.merchantPid = merchantPid;
+	}
+
 	public String getName() {
 		return this.name;
 	}
@@ -272,6 +314,13 @@ public class CardOrderInfo extends AlipayObject {
 	}
 	public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
+	}
+
+	public Long getRefundCash() {
+		return this.refundCash;
+	}
+	public void setRefundCash(Long refundCash) {
+		this.refundCash = refundCash;
 	}
 
 	public Long getRemainCount() {
@@ -314,6 +363,13 @@ public class CardOrderInfo extends AlipayObject {
 	}
 	public void setUsableCash(Long usableCash) {
 		this.usableCash = usableCash;
+	}
+
+	public Long getUsedCash() {
+		return this.usedCash;
+	}
+	public void setUsedCash(Long usedCash) {
+		this.usedCash = usedCash;
 	}
 
 	public String getUserId() {

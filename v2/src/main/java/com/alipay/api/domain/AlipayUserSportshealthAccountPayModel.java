@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 消耗运动币账户余额
  *
  * @author auto create
- * @since 1.0, 2024-08-09 11:08:17
+ * @since 1.0, 2024-08-14 17:04:22
  */
 public class AlipayUserSportshealthAccountPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6516912656299773462L;
+	private static final long serialVersionUID = 7512889112121153519L;
 
 	/**
 	 * 账户流水明细描述，会展示在用户运动币明细列表中
@@ -38,7 +38,7 @@ public class AlipayUserSportshealthAccountPayModel extends AlipayObject {
 	private String outBizNo;
 
 	/**
-	 * 支付运动币数量
+	 * 支付运动币数量，单位：运动币
 	 */
 	@ApiField("pay_amount")
 	private Long payAmount;

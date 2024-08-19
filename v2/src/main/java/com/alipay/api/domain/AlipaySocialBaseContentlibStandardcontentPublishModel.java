@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 内容发布接口
  *
  * @author auto create
- * @since 1.0, 2024-06-13 13:58:23
+ * @since 1.0, 2024-08-15 19:52:51
  */
 public class AlipaySocialBaseContentlibStandardcontentPublishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5434913825324757379L;
+	private static final long serialVersionUID = 8126227317121351659L;
 
 	/**
 	 * 内容分发范围。1 - 所有人可见，2 - 分发范围受限。
 	 */
 	@ApiField("permission_status")
 	private String permissionStatus;
+
+	/**
+	 * POI信息，包括：POI编码、POI名称、POI地址、区域编码、经度、纬度、POI类型code、POI类型名称等信息
+	 */
+	@ApiField("poi_info")
+	private AmapPoiInfo poiInfo;
 
 	/**
 	 * 生活号+号ID。如果发送类型=自研/三方发送，不要传入；发送类型=mcn发送，请传入public_id【mcn机构绑定达人号ID】
@@ -89,6 +95,13 @@ public class AlipaySocialBaseContentlibStandardcontentPublishModel extends Alipa
 	}
 	public void setPermissionStatus(String permissionStatus) {
 		this.permissionStatus = permissionStatus;
+	}
+
+	public AmapPoiInfo getPoiInfo() {
+		return this.poiInfo;
+	}
+	public void setPoiInfo(AmapPoiInfo poiInfo) {
+		this.poiInfo = poiInfo;
 	}
 
 	public String getPublicId() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenIotmbsIsvhotelModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7214967382197693969L;
+	private static final long serialVersionUID = 4237214646669864444L;
 
 	/**
 	 * 酒店项目所处的地址

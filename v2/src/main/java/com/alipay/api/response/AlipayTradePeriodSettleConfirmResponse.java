@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.period.settle.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-16 10:27:05
+ * @since 1.0, 2024-08-14 22:51:19
  */
 public class AlipayTradePeriodSettleConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1228544868747758671L;
+	private static final long serialVersionUID = 6759827378684621521L;
 
 	/** 
 	 * 确认结算请求流水号，开发者自行生成并保证唯一性，作为业务幂等性控制

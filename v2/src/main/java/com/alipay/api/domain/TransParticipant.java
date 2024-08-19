@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 转账角色身份信息
  *
  * @author auto create
- * @since 1.0, 2024-03-21 17:58:10
+ * @since 1.0, 2024-08-16 19:31:18
  */
 public class TransParticipant extends AlipayObject {
 
-	private static final long serialVersionUID = 8512128874791861988L;
+	private static final long serialVersionUID = 7153755395767845356L;
 
 	/**
 	 * 银行卡信息

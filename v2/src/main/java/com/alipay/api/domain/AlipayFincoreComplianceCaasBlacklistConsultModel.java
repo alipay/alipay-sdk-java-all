@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFincoreComplianceCaasBlacklistConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8146669675879497814L;
+	private static final long serialVersionUID = 5874676666154529799L;
 
 	/**
 	 * app_name+调用方系统名称；会与分配的app_token做校验

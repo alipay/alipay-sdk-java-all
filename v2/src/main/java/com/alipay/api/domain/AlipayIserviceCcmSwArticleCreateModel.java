@@ -1,5 +1,6 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
 import java.util.List;
 
 import com.alipay.api.AlipayObject;
@@ -10,11 +11,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 知识库-问答-创建
  *
  * @author auto create
- * @since 1.0, 2022-10-26 15:00:13
+ * @since 1.0, 2024-08-13 20:44:49
  */
 public class AlipayIserviceCcmSwArticleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4466529423642861376L;
+	private static final long serialVersionUID = 2128219446783144387L;
+
+	/**
+	 * 附件列表
+	 */
+	@ApiListField("attachments")
+	@ApiField("article_attachment_info")
+	private List<ArticleAttachmentInfo> attachments;
 
 	/**
 	 * 所属类目ID，如果search_all_category为true则不用填
@@ -55,6 +63,25 @@ public class AlipayIserviceCcmSwArticleCreateModel extends AlipayObject {
 	private String libraryId;
 
 	/**
+	 * 默认为 2999-12-31 23:59:59
+	 */
+	@ApiField("publish_end")
+	private Date publishEnd;
+
+	/**
+	 * 默认为当前时间
+	 */
+	@ApiField("publish_start")
+	private Date publishStart;
+
+	/**
+	 * 关联知识点
+	 */
+	@ApiListField("related_articles")
+	@ApiField("base_article_info")
+	private List<BaseArticleInfo> relatedArticles;
+
+	/**
 	 * 场景ID。KNOWLEDGE（内部知识库）；ROBOT（机器人）;HELP（帮助中心）；WHELP（无线帮助中心）
 	 */
 	@ApiListField("scene_codes")
@@ -66,6 +93,13 @@ public class AlipayIserviceCcmSwArticleCreateModel extends AlipayObject {
 	 */
 	@ApiField("title")
 	private String title;
+
+	public List<ArticleAttachmentInfo> getAttachments() {
+		return this.attachments;
+	}
+	public void setAttachments(List<ArticleAttachmentInfo> attachments) {
+		this.attachments = attachments;
+	}
 
 	public Long getCategoryId() {
 		return this.categoryId;
@@ -107,6 +141,27 @@ public class AlipayIserviceCcmSwArticleCreateModel extends AlipayObject {
 	}
 	public void setLibraryId(String libraryId) {
 		this.libraryId = libraryId;
+	}
+
+	public Date getPublishEnd() {
+		return this.publishEnd;
+	}
+	public void setPublishEnd(Date publishEnd) {
+		this.publishEnd = publishEnd;
+	}
+
+	public Date getPublishStart() {
+		return this.publishStart;
+	}
+	public void setPublishStart(Date publishStart) {
+		this.publishStart = publishStart;
+	}
+
+	public List<BaseArticleInfo> getRelatedArticles() {
+		return this.relatedArticles;
+	}
+	public void setRelatedArticles(List<BaseArticleInfo> relatedArticles) {
+		this.relatedArticles = relatedArticles;
 	}
 
 	public List<String> getSceneCodes() {

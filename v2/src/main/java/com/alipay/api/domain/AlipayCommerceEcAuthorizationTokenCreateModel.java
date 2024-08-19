@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生成授权令牌
  *
  * @author auto create
- * @since 1.0, 2024-05-31 09:40:27
+ * @since 1.0, 2024-08-15 19:43:24
  */
 public class AlipayCommerceEcAuthorizationTokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2582852451156643513L;
+	private static final long serialVersionUID = 5182592768735511955L;
 
 	/**
-	 * 授权码
+	 * 授权码，和刷新令牌参数二选一
 	 */
 	@ApiField("auth_code")
 	private String authCode;
@@ -32,7 +32,7 @@ public class AlipayCommerceEcAuthorizationTokenCreateModel extends AlipayObject 
 	private String enterpriseId;
 
 	/**
-	 * 刷新令牌
+	 * 刷新令牌，和授权码参数二选一
 	 */
 	@ApiField("refresh_token")
 	private String refreshToken;

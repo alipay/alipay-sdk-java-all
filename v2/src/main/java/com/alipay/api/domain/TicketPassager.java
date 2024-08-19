@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 门票游客
  *
  * @author auto create
- * @since 1.0, 2024-08-13 16:49:32
+ * @since 1.0, 2024-08-13 18:45:08
  */
 public class TicketPassager extends AlipayObject {
 
-	private static final long serialVersionUID = 3111219276234511749L;
+	private static final long serialVersionUID = 8241324668878729679L;
 
 	/**
 	 * 证件号

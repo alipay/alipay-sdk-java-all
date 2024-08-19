@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 对应订单有环保类型时，能量发放结果
  *
  * @author auto create
- * @since 1.0, 2022-11-18 13:39:52
+ * @since 1.0, 2024-08-15 17:07:17
  */
 public class EnvironmentalDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7131473487284341713L;
+	private static final long serialVersionUID = 3442664185488694173L;
 
 	/**
 	 * 一个环保行为实际发放的数量
@@ -38,6 +38,7 @@ FSC:
 702
 707
 N1301
+ACTIVITY_NOT_EXISTS
 	 */
 	@ApiField("failure_code")
 	private String failureCode;
@@ -51,6 +52,7 @@ N1301
 超出限额
 用户关闭授权
 业务时间相差太久
+活动不存在或已过期
 	 */
 	@ApiField("failure_reason")
 	private String failureReason;

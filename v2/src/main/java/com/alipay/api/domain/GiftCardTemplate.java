@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 礼品卡模版
  *
  * @author auto create
- * @since 1.0, 2024-07-30 17:41:37
+ * @since 1.0, 2024-08-14 11:14:51
  */
 public class GiftCardTemplate extends AlipayObject {
 
-	private static final long serialVersionUID = 3444434254111812874L;
+	private static final long serialVersionUID = 7615492524423484939L;
 
 	/**
 	 * 开卡模版扩展参数
@@ -22,7 +22,7 @@ public class GiftCardTemplate extends AlipayObject {
 	private String businessParams;
 
 	/**
-	 * 面额
+	 * 面额，单位：元
 	 */
 	@ApiField("denomination")
 	private String denomination;
@@ -58,7 +58,7 @@ public class GiftCardTemplate extends AlipayObject {
 	private String giftCardTemplateName;
 
 	/**
-	 * 价格
+	 * 价格，单位：元
 	 */
 	@ApiField("price")
 	private String price;
@@ -76,7 +76,7 @@ public class GiftCardTemplate extends AlipayObject {
 	private Date startDate;
 
 	/**
-	 * 库存
+	 * 库存，单位：件
 	 */
 	@ApiField("stock_num")
 	private Long stockNum;
@@ -88,7 +88,7 @@ public class GiftCardTemplate extends AlipayObject {
 	private String validDate;
 
 	/**
-	 * 生效周期
+	 * 生效周期（单位：天）
 	 */
 	@ApiField("valid_period")
 	private String validPeriod;

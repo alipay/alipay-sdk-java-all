@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 单交易号关联的费用明细
  *
  * @author auto create
- * @since 1.0, 2024-05-21 21:52:59
+ * @since 1.0, 2024-08-14 14:29:51
  */
 public class ExpenseBillQueryItem extends AlipayObject {
 
-	private static final long serialVersionUID = 7631263154528933972L;
+	private static final long serialVersionUID = 8763962855781812964L;
 
 	/**
 	 * 费用明细列表

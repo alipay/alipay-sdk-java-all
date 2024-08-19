@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class SearchDetailsByInviterRes extends AlipayObject {
 
-	private static final long serialVersionUID = 7538299714145864278L;
+	private static final long serialVersionUID = 7157178672331849918L;
 
 	/**
 	 * 邀请单列表

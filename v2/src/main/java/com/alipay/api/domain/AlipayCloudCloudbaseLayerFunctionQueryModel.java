@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询层版本绑定函数列表
  *
  * @author auto create
- * @since 1.0, 2024-06-27 15:07:15
+ * @since 1.0, 2024-08-16 15:00:16
  */
 public class AlipayCloudCloudbaseLayerFunctionQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3643932273929186515L;
+	private static final long serialVersionUID = 5358294991946486839L;
 
 	/**
 	 * 小程序云AppID

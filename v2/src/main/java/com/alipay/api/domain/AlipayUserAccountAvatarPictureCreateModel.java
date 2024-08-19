@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserAccountAvatarPictureCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6563862372132288313L;
+	private static final long serialVersionUID = 6883798246175584486L;
 
 	/**
 	 * json扩展信息

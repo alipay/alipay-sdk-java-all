@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoMycarMerchantshopCommentBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3147691877416714262L;
+	private static final long serialVersionUID = 3679224841955262884L;
 
 	/**
 	 * 当前页号（从1开始）

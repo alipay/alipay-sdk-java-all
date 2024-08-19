@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayIserviceCognitiveKgopenQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2846229988863311369L;
+	private static final long serialVersionUID = 2414996528732564511L;
 
 	/** 
 	 * 返回数据

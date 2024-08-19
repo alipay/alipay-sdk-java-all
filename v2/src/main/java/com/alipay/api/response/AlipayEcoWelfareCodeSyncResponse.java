@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoWelfareCodeSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6389772657979222289L;
+	private static final long serialVersionUID = 5439994798355392893L;
 
 	
 

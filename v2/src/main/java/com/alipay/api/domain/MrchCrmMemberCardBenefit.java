@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MrchCrmMemberCardBenefit extends AlipayObject {
 
-	private static final long serialVersionUID = 8896216438385967748L;
+	private static final long serialVersionUID = 3549216632354744417L;
 
 	/**
 	 * 商家会员权益描述

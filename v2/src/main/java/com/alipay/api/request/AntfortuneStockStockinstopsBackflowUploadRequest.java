@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: antfortune.stock.stockinstops.backflow.upload request
  * 
  * @author auto create
- * @since 1.0, 2024-08-06 16:42:07
+ * @since 1.0, 2024-08-16 11:17:07
  */
 public class AntfortuneStockStockinstopsBackflowUploadRequest implements AlipayUploadRequest<AntfortuneStockStockinstopsBackflowUploadResponse> {
 
@@ -41,7 +41,7 @@ public class AntfortuneStockStockinstopsBackflowUploadRequest implements AlipayU
 	private String forwardRoom;
 
 	/** 
-	* forward发送的时间
+	* forward发送的时间，单位为秒
 	 */
 	private String forwardTime;
 

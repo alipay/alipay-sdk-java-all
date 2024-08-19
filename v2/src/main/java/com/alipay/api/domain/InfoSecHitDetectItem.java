@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InfoSecHitDetectItem extends AlipayObject {
 
-	private static final long serialVersionUID = 7777127177736579421L;
+	private static final long serialVersionUID = 2111137741717843744L;
 
 	/**
 	 * 级别

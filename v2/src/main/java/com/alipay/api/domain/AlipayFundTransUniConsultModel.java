@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 转账独立咨询
  *
  * @author auto create
- * @since 1.0, 2024-05-11 20:40:58
+ * @since 1.0, 2024-08-14 16:29:32
  */
 public class AlipayFundTransUniConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7799159173865265953L;
+	private static final long serialVersionUID = 7318549585148321795L;
 
 	/**
 	 * 描述特定的业务场景，可传的参数如下： DIRECT_TRANSFER：单笔无密转账到支付宝，其他场景以对应的产品接入指南文档为准。

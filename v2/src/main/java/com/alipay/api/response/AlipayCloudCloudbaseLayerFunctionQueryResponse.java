@@ -3,7 +3,7 @@ package com.alipay.api.response;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
-import com.alipay.api.domain.FuntionInfo;
+import com.alipay.api.domain.FunctionInfo;
 
 import com.alipay.api.AlipayResponse;
 
@@ -11,23 +11,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.layer.function.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-27 15:12:05
+ * @since 1.0, 2024-08-16 15:02:07
  */
 public class AlipayCloudCloudbaseLayerFunctionQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6147196556829162626L;
+	private static final long serialVersionUID = 2678393523937856433L;
 
 	/** 
 	 * 函数列表
 	 */
 	@ApiListField("functions")
-	@ApiField("funtion_info")
-	private List<FuntionInfo> functions;
+	@ApiField("function_info")
+	private List<FunctionInfo> functions;
 
-	public void setFunctions(List<FuntionInfo> functions) {
+	public void setFunctions(List<FunctionInfo> functions) {
 		this.functions = functions;
 	}
-	public List<FuntionInfo> getFunctions( ) {
+	public List<FunctionInfo> getFunctions( ) {
 		return this.functions;
 	}
 

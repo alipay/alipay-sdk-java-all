@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗大模型服务对外接口-会话创建或查询
  *
  * @author auto create
- * @since 1.0, 2024-07-26 12:21:13
+ * @since 1.0, 2024-08-15 12:07:17
  */
 public class AlipayCommerceMedicalLargermodelSessionQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1654277682653599714L;
+	private static final long serialVersionUID = 4263475771943175767L;
 
 	/**
 	 * 区分请求来源
@@ -24,6 +24,12 @@ public class AlipayCommerceMedicalLargermodelSessionQueryModel extends AlipayObj
 	 */
 	@ApiField("chat_id")
 	private String chatId;
+
+	/**
+	 * 用户城市编码
+	 */
+	@ApiField("city_code")
+	private String cityCode;
 
 	/**
 	 * 城市名称
@@ -117,6 +123,13 @@ DEPARTGUIDE
 	}
 	public void setChatId(String chatId) {
 		this.chatId = chatId;
+	}
+
+	public String getCityCode() {
+		return this.cityCode;
+	}
+	public void setCityCode(String cityCode) {
+		this.cityCode = cityCode;
 	}
 
 	public String getCityName() {

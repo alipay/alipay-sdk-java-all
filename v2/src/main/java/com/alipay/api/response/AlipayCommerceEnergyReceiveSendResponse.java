@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.energy.receive.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-23 21:56:46
+ * @since 1.0, 2024-08-15 17:12:06
  */
 public class AlipayCommerceEnergyReceiveSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8879496318369547159L;
+	private static final long serialVersionUID = 2415647421877289519L;
 
 	/** 
 	 * 交易订单中，对应的商品列表中有对应的环保类型，能量发放结果;
