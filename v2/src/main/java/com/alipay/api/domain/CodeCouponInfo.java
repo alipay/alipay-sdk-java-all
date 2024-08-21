@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CodeCouponInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3849515225567774688L;
+	private static final long serialVersionUID = 3459565746338498442L;
 
 	/**
 	 * 领取时间

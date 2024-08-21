@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoCplifeNoticePublishResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3423879154612315161L;
+	private static final long serialVersionUID = 7534717651171839185L;
 
 	/** 
 	 * 支付宝平台统一生产的通知公告唯一ID标示.

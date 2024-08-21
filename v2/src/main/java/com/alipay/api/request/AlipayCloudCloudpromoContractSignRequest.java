@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudpromo.contract.sign request
  * 
  * @author auto create
- * @since 1.0, 2024-08-13 20:02:07
+ * @since 1.0, 2024-08-19 17:22:07
  */
 public class AlipayCloudCloudpromoContractSignRequest implements AlipayRequest<AlipayCloudCloudpromoContractSignResponse> {
 

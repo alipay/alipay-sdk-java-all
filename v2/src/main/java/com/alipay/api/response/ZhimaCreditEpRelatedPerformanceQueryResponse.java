@@ -18,7 +18,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaCreditEpRelatedPerformanceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1291559468418319799L;
+	private static final long serialVersionUID = 1795572379213951663L;
 
 	/** 
 	 * 行政处罚(市监)信息列表

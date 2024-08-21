@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开卡申请
  *
  * @author auto create
- * @since 1.0, 2023-11-28 21:21:35
+ * @since 1.0, 2024-08-19 11:20:20
  */
 public class AlipayFundFlexiblestaffingEmployeehomeApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7792742956854687561L;
+	private static final long serialVersionUID = 2577753213158781392L;
 
 	/**
 	 * 授权跳转类型
@@ -44,7 +44,7 @@ public class AlipayFundFlexiblestaffingEmployeehomeApplyModel extends AlipayObje
 	private EmployeeCardInfo employeeCardInfo;
 
 	/**
-	 * 超时时间
+	 * 超时时间，格式：yyyy-MM-dd HH:mm
 	 */
 	@ApiField("expire_time")
 	private String expireTime;

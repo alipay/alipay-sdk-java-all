@@ -7,20 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 问答错误
  *
  * @author auto create
- * @since 1.0, 2024-07-02 17:57:09
+ * @since 1.0, 2024-08-19 19:58:53
  */
 public class ChatError extends AlipayObject {
 
-	private static final long serialVersionUID = 2177345689295812559L;
+	private static final long serialVersionUID = 1674951977939744462L;
 
 	/**
-	 * 错误码
+	 * 流式回答应答码
 	 */
 	@ApiField("code")
 	private String code;
 
 	/**
-	 * 错误描述
+	 * 未识别到客户意图等之后给出的答案
 	 */
 	@ApiField("message")
 	private String message;

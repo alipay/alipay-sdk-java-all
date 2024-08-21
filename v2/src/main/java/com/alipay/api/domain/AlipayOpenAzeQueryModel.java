@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * testopenapi
  *
  * @author auto create
- * @since 1.0, 2023-11-28 15:40:56
+ * @since 1.0, 2024-08-20 13:55:51
  */
 public class AlipayOpenAzeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8793166821129252456L;
+	private static final long serialVersionUID = 1631517452124643892L;
 
 	/**
 	 * 你好

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 销毁环境并退费
  *
  * @author auto create
- * @since 1.0, 2024-07-11 14:02:17
+ * @since 1.0, 2024-08-20 16:54:50
  */
 public class AlipayCloudCloudbaseEnvRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8493536551437339135L;
+	private static final long serialVersionUID = 3885942831768816434L;
 
 	/**
 	 * 小程序云应用APPID

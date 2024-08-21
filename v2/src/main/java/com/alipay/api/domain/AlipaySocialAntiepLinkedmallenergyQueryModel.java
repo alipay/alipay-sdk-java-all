@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * linkedmall查询蚂蚁森林能量
  *
  * @author auto create
- * @since 1.0, 2023-12-25 20:01:16
+ * @since 1.0, 2024-08-21 10:52:09
  */
 public class AlipaySocialAntiepLinkedmallenergyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5856638118427647933L;
+	private static final long serialVersionUID = 7146244931444761279L;
 
 	/**
 	 * 业务ID

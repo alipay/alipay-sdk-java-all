@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 零工卡租赁协议信息
  *
  * @author auto create
- * @since 1.0, 2023-08-04 21:32:52
+ * @since 1.0, 2024-08-19 11:20:19
  */
 public class RentServiceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2756921152528524757L;
+	private static final long serialVersionUID = 7423557797575568879L;
 
 	/**
 	 * 资方信息
@@ -26,7 +26,7 @@ public class RentServiceInfo extends AlipayObject {
 	private ParticipantInfoDTO invitePrincipal;
 
 	/**
-	 * 租金
+	 * 租金，单位：元
 	 */
 	@ApiField("repayment_amount")
 	private String repaymentAmount;
@@ -38,7 +38,7 @@ public class RentServiceInfo extends AlipayObject {
 	private String repaymentEndTime;
 
 	/**
-	 * 扣款周期
+	 * 扣款周期次数（期）
 	 */
 	@ApiField("repayment_period")
 	private String repaymentPeriod;

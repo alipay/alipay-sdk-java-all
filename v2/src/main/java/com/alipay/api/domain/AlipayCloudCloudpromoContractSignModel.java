@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租房合同签约
  *
  * @author auto create
- * @since 1.0, 2024-08-13 20:01:12
+ * @since 1.0, 2024-08-19 17:21:17
  */
 public class AlipayCloudCloudpromoContractSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8691965982269372398L;
+	private static final long serialVersionUID = 4489317112328914765L;
 
 	/**
 	 * 业务机器id，用于埋点数据上报

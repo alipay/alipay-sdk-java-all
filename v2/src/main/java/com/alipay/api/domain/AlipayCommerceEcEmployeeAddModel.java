@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 添加员工
  *
  * @author auto create
- * @since 1.0, 2024-07-09 11:20:16
+ * @since 1.0, 2024-08-21 13:44:16
  */
 public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8558867139184515319L;
+	private static final long serialVersionUID = 2712189788947336217L;
 
 	/**
 	 * 是否需要生成吱口令，默认不生成
@@ -23,20 +23,20 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	private Boolean createShareCode;
 
 	/**
-	 * 员工所属部门
+	 * 员工所属部门，支持多个部门，不传默认为根部门
 	 */
 	@ApiListField("department_ids")
 	@ApiField("string")
 	private List<String> departmentIds;
 
 	/**
-	 * 证件号码，根据employee_cert_type指定的证件类型，传入对应的证件号码，可用于企业人脸库员工刷脸开通时的核验。
+	 * 员工证件号码
 	 */
 	@ApiField("employee_cert_no")
 	private String employeeCertNo;
 
 	/**
-	 * 证件类型，目前仅支持身份证，可用于企业人脸库员工刷脸开通时的核验
+	 * 员工证件类型
 	 */
 	@ApiField("employee_cert_type")
 	private String employeeCertType;
@@ -78,10 +78,17 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	private String encryptMobile;
 
 	/**
-	 * 企业id
+	 * 员工所属企业ID
 	 */
 	@ApiField("enterprise_id")
 	private String enterpriseId;
+
+	/**
+	 * 员工免签约授权密钥；<br/>
+该密钥需联系企业码业务小二申请，当传入密钥有效，则员工添加时会默认签约企业因公付，并激活员工。
+	 */
+	@ApiField("free_sign_token")
+	private String freeSignToken;
 
 	/**
 	 * 员工身份唯一标识
@@ -90,7 +97,7 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	private String identity;
 
 	/**
-	 * 当identity_type为ALIPAY_USER_ID时，此字段传入open_id
+	 * 当身份类型为支付宝会员ID(identity_type=ALIPAY_USER_ID)时，传入user_id对应的open_id
 	 */
 	@ApiField("identity_open_id")
 	private String identityOpenId;
@@ -102,7 +109,7 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	private String identityType;
 
 	/**
-	 * 员工刷脸加入企业人脸库时的核验方式，签约开通人脸库时必传
+	 * 员工签约开通企业刷脸付时，刷脸核身的核验方式
 	 */
 	@ApiField("iot_check_type")
 	private String iotCheckType;
@@ -121,7 +128,7 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	private String profiles;
 
 	/**
-	 * 默认角色列表，目前只支持默认为 USER 当前字段已废弃(只有一个可选默认值，没必要传)
+	 * 默认角色列表，目前只支持默认为 USER 当前字段已废弃(目前仅支持普通员工，作为默认值，无需调用方传入)
 	 */
 	@ApiListField("role_list")
 	@ApiField("string")
@@ -141,8 +148,7 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	private Boolean signUrlCarryInfo;
 
 	/**
-	 * 代扣签约字符串，需调支付宝个人协议页面签约接口，并按规则生成，见
-<a href='https://opendocs.alipay.com/pre-open/20170601105911096277new/moiixx?pathHash=10b1fa66'>参考文档</a> 3.1.3 生成签约字符串示例
+	 * 代扣签约字符串，员工需签约开通代扣时必传，否则无需传值
 	 */
 	@ApiField("withholding_sign_str")
 	private String withholdingSignStr;
@@ -222,6 +228,13 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	}
 	public void setEnterpriseId(String enterpriseId) {
 		this.enterpriseId = enterpriseId;
+	}
+
+	public String getFreeSignToken() {
+		return this.freeSignToken;
+	}
+	public void setFreeSignToken(String freeSignToken) {
+		this.freeSignToken = freeSignToken;
 	}
 
 	public String getIdentity() {

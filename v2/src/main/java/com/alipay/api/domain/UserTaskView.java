@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class UserTaskView extends AlipayObject {
 
-	private static final long serialVersionUID = 2595697617877262713L;
+	private static final long serialVersionUID = 4672442735718583624L;
 
 	/**
 	 * 微客身份证号码。加密后的值

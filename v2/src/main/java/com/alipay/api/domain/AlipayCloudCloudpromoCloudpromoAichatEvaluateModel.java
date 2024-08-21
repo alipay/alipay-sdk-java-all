@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 智能问答用户反馈评价
  *
  * @author auto create
- * @since 1.0, 2024-08-13 18:00:05
+ * @since 1.0, 2024-08-20 18:09:19
  */
 public class AlipayCloudCloudpromoCloudpromoAichatEvaluateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8572549289445643458L;
+	private static final long serialVersionUID = 6419339859547498952L;
 
 	/**
 	 * 用于记录用户对问答内容反馈的具体评论

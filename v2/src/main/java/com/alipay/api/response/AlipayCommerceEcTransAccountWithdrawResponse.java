@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceEcTransAccountWithdrawResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7844419417683693791L;
+	private static final long serialVersionUID = 7444562248138722728L;
 
 	/** 
 	 * 该笔提现在支付宝系统内部的单据ID

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 解除层绑定
  *
  * @author auto create
- * @since 1.0, 2023-08-08 22:45:29
+ * @since 1.0, 2024-08-20 15:17:16
  */
 public class AlipayCloudCloudbaseFunctionLayerUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2129695894623437957L;
+	private static final long serialVersionUID = 3487135124769643644L;
 
 	/**
 	 * 小程序id

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IsvRole extends AlipayObject {
 
-	private static final long serialVersionUID = 7114936724784497692L;
+	private static final long serialVersionUID = 2584176643884944225L;
 
 	/**
 	 * isv定义的角色的唯一标识

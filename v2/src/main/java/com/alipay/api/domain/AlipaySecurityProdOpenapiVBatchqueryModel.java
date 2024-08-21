@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySecurityProdOpenapiVBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2124565822265953916L;
+	private static final long serialVersionUID = 1768132916321277329L;
 
 	/**
 	 * 金额SDK目前直接消费字段的描述，若在描述中说明字段废弃和废弃原因，会自动同步SDK，无需另外开 当前字段已废弃(废弃测试下的文案的调查SDK目前直接消费字段的描述，若在描述中说明字段废弃和废弃原因，会自动同步SDK，无需另外开)

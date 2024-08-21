@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.flexiblestaffing.employeehome.apply response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-13 10:05:09
+ * @since 1.0, 2024-08-19 11:22:12
  */
 public class AlipayFundFlexiblestaffingEmployeehomeApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6526423462561462627L;
+	private static final long serialVersionUID = 7455927869267728438L;
 
 	/** 
 	 * 授权跳转链接
@@ -21,7 +21,13 @@ public class AlipayFundFlexiblestaffingEmployeehomeApplyResponse extends AlipayR
 	private String applyLink;
 
 	/** 
-	 * token
+	 * 跳转链接类型
+	 */
+	@ApiField("apply_link_type")
+	private String applyLinkType;
+
+	/** 
+	 * 唯一标识token
 	 */
 	@ApiField("flow_token")
 	private String flowToken;
@@ -31,6 +37,13 @@ public class AlipayFundFlexiblestaffingEmployeehomeApplyResponse extends AlipayR
 	}
 	public String getApplyLink( ) {
 		return this.applyLink;
+	}
+
+	public void setApplyLinkType(String applyLinkType) {
+		this.applyLinkType = applyLinkType;
+	}
+	public String getApplyLinkType( ) {
+		return this.applyLinkType;
 	}
 
 	public void setFlowToken(String flowToken) {

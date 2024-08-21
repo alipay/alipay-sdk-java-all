@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 是否需要退费
  *
  * @author auto create
- * @since 1.0, 2024-07-11 14:02:09
+ * @since 1.0, 2024-08-20 16:53:17
  */
 public class AlipayCloudCloudbaseEnvRefundstatusGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5176666342325234443L;
+	private static final long serialVersionUID = 1878319873552456851L;
 
 	/**
 	 * 小程序云应用APPID

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOverseasOpenAmountPreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8359954474718861267L;
+	private static final long serialVersionUID = 1547599132589579279L;
 
 	/**
 	 * 机构信息

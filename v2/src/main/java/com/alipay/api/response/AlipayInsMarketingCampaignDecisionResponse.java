@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayInsMarketingCampaignDecisionResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7815133229689781328L;
+	private static final long serialVersionUID = 1714889126396924855L;
 
 	/** 
 	 * 保险营销标的关联的活动列表

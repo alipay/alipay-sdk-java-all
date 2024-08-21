@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenIotmbsCollectionfaceSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6571183696454199764L;
+	private static final long serialVersionUID = 3725954123399874999L;
 
 	/**
 	 * IOT设备唯一标识

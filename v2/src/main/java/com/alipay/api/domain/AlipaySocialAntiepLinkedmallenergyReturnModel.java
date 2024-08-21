@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * linkedmall返还蚂蚁森林能量
  *
  * @author auto create
- * @since 1.0, 2023-12-25 20:04:16
+ * @since 1.0, 2024-08-21 10:51:58
  */
 public class AlipaySocialAntiepLinkedmallenergyReturnModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4849636397126129778L;
+	private static final long serialVersionUID = 5685252558653388244L;
 
 	/**
 	 * LinkedMall分配的业务ID

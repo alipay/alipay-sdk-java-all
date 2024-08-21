@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 落地页活动
  *
  * @author auto create
- * @since 1.0, 2024-04-10 15:18:56
+ * @since 1.0, 2024-08-19 23:02:32
  */
 public class LandingActDto extends AlipayObject {
 
-	private static final long serialVersionUID = 5633873874673319513L;
+	private static final long serialVersionUID = 5541589999951532743L;
 
 	/**
 	 * 活动名称

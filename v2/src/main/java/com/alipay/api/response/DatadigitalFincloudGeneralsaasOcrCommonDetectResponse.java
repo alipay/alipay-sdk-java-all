@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class DatadigitalFincloudGeneralsaasOcrCommonDetectResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8253512557153387265L;
+	private static final long serialVersionUID = 7473161885254716826L;
 
 	/** 
 	 * OCR识别单据号，计费依据，请保留以便排查问题。

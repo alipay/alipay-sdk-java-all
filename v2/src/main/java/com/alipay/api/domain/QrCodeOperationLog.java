@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class QrCodeOperationLog extends AlipayObject {
 
-	private static final long serialVersionUID = 6781211842358372165L;
+	private static final long serialVersionUID = 7448584825975611191L;
 
 	/**
 	 * 能量码所属的goods_id

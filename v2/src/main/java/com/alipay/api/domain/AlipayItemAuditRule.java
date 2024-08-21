@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayItemAuditRule extends AlipayObject {
 
-	private static final long serialVersionUID = 8646893995283823678L;
+	private static final long serialVersionUID = 7838636945878194954L;
 
 	/**
 	 * 审核类型，商户授权模式此字段不需要填写。

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudpromo.aichat.history.query request
  * 
  * @author auto create
- * @since 1.0, 2024-08-14 19:15:58
+ * @since 1.0, 2024-08-19 19:42:07
  */
 public class AlipayCloudCloudpromoAichatHistoryQueryRequest implements AlipayRequest<AlipayCloudCloudpromoAichatHistoryQueryResponse> {
 

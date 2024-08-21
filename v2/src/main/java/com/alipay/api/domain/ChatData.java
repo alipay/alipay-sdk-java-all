@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 流式问答接口答案内容
  *
  * @author auto create
- * @since 1.0, 2024-07-02 17:57:09
+ * @since 1.0, 2024-08-19 19:58:53
  */
 public class ChatData extends AlipayObject {
 
-	private static final long serialVersionUID = 5172353438166952781L;
+	private static final long serialVersionUID = 1194643631311845343L;
 
 	/**
 	 * 答案的具体内容
@@ -20,7 +20,7 @@ public class ChatData extends AlipayObject {
 	private ChatChunk chunk;
 
 	/**
-	 * 问答处理报错
+	 * 拒识等答案处理，当出现了拒绝识别等回复时候，出该种类型的答案
 	 */
 	@ApiField("error")
 	private ChatError error;
@@ -32,11 +32,7 @@ public class ChatData extends AlipayObject {
 	private ChatHeader header;
 
 	/**
-	 * 答案类型
-当type == header时，展示header内容
-当type == chunk时，展示chunk内容
-当type == error时，展示error内容
-当type == revoke时，展示revoke内容
+	 * 答案格式,header:第一次返回内容在header字段中，会包含原始问题和请求的requestID；chunk:实际的问答内容，流式进行返回；error:报错的类型返回报错的信息
 	 */
 	@ApiField("type")
 	private String type;

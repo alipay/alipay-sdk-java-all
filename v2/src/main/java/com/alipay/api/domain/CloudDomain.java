@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CloudDomain extends AlipayObject {
 
-	private static final long serialVersionUID = 2596152251123143487L;
+	private static final long serialVersionUID = 6299789522461454977L;
 
 	/**
 	 * 目标CNAME地址

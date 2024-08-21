@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceEcEnterpriseRegisterinviteCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2741911759192378323L;
+	private static final long serialVersionUID = 6359472633992821443L;
 
 	/** 
 	 * 注册链接失效时间，有效期30天

@@ -8,26 +8,26 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.employee.add response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-16 12:00:39
+ * @since 1.0, 2024-08-21 13:44:16
  */
 public class AlipayCommerceEcEmployeeAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4595389843615843498L;
+	private static final long serialVersionUID = 5788353214168413438L;
 
 	/** 
-	 * 员工id
+	 * 企业码生成的员工ID
 	 */
 	@ApiField("employee_id")
 	private String employeeId;
 
 	/** 
-	 * IOT开通刷脸唯一流水号，服务商可通过该unique_id便捷调用IOT侧接口
+	 * 员工开通IOT企业刷脸付的唯一流水号
 	 */
 	@ApiField("iot_unique_id")
 	private String iotUniqueId;
 
 	/** 
-	 * 员工签约吱口令
+	 * 员工签约激活吱口令
 	 */
 	@ApiField("share_code")
 	private String shareCode;

@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOverseasTravelPoiQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3645674764824982362L;
+	private static final long serialVersionUID = 3589716177392444215L;
 
 	/** 
 	 * 支付宝poi查询结果

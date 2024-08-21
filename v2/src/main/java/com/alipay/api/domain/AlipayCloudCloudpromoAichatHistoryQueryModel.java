@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序云营销智能问答历史对话获取
  *
  * @author auto create
- * @since 1.0, 2024-07-02 17:57:18
+ * @since 1.0, 2024-08-19 19:40:51
  */
 public class AlipayCloudCloudpromoAichatHistoryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6294872489347945373L;
+	private static final long serialVersionUID = 2675737192674322261L;
 
 	/**
 	 * 用户的ID
@@ -20,13 +20,13 @@ public class AlipayCloudCloudpromoAichatHistoryQueryModel extends AlipayObject {
 	private String customerId;
 
 	/**
-	 * 每页拉取数量，[1,10]范围
+	 * 每页拉取数量，[1,10]范围，单位为int，个
 	 */
 	@ApiField("num")
 	private Long num;
 
 	/**
-	 * 第几页，从1开始
+	 * 第几页，从1开始，页码的单位为int，从1开始
 	 */
 	@ApiField("page")
 	private Long page;
@@ -36,6 +36,12 @@ public class AlipayCloudCloudpromoAichatHistoryQueryModel extends AlipayObject {
 	 */
 	@ApiField("scene_id")
 	private String sceneId;
+
+	/**
+	 * 原始请求真实的APPID
+	 */
+	@ApiField("source_id")
+	private String sourceId;
 
 	public String getCustomerId() {
 		return this.customerId;
@@ -63,6 +69,13 @@ public class AlipayCloudCloudpromoAichatHistoryQueryModel extends AlipayObject {
 	}
 	public void setSceneId(String sceneId) {
 		this.sceneId = sceneId;
+	}
+
+	public String getSourceId() {
+		return this.sourceId;
+	}
+	public void setSourceId(String sourceId) {
+		this.sourceId = sourceId;
 	}
 
 }

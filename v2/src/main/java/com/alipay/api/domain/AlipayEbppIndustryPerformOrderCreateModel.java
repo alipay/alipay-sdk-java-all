@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创单
  *
  * @author auto create
- * @since 1.0, 2024-06-18 14:46:15
+ * @since 1.0, 2024-08-20 15:56:17
  */
 public class AlipayEbppIndustryPerformOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5839479223623532812L;
+	private static final long serialVersionUID = 3689458844817373439L;
 
 	/**
 	 * 通过支付宝收银台支付的资产详情，主要包括该笔订单的资产类型、资产金额、资产协议、支付描述等

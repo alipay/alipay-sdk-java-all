@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMerchantComplainReconciliationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4811626396423196762L;
+	private static final long serialVersionUID = 3123747346252714295L;
 
 	/** 
 	 * 一些不影响开通12315一键和解流程，但是有问题的地方

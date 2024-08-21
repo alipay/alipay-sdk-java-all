@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MonoRecordDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6727265928515669315L;
+	private static final long serialVersionUID = 7557798453496949292L;
 
 	/**
 	 * 通话录音文件名

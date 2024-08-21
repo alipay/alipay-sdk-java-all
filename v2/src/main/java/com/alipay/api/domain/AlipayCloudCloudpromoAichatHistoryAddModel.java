@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 添加历史记录
  *
  * @author auto create
- * @since 1.0, 2024-08-13 18:01:29
+ * @since 1.0, 2024-08-20 18:09:48
  */
 public class AlipayCloudCloudpromoAichatHistoryAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1822723397944257344L;
+	private static final long serialVersionUID = 2596587569495837382L;
 
 	/**
 	 * 答案
@@ -44,7 +44,13 @@ public class AlipayCloudCloudpromoAichatHistoryAddModel extends AlipayObject {
 	private String sessionId;
 
 	/**
-	 * 提问时间，unix时间戳，单位：秒
+	 * 原始请求真实的APPID
+	 */
+	@ApiField("source_id")
+	private String sourceId;
+
+	/**
+	 * 提问时间
 	 */
 	@ApiField("time")
 	private String time;
@@ -82,6 +88,13 @@ public class AlipayCloudCloudpromoAichatHistoryAddModel extends AlipayObject {
 	}
 	public void setSessionId(String sessionId) {
 		this.sessionId = sessionId;
+	}
+
+	public String getSourceId() {
+		return this.sourceId;
+	}
+	public void setSourceId(String sourceId) {
+		this.sourceId = sourceId;
 	}
 
 	public String getTime() {

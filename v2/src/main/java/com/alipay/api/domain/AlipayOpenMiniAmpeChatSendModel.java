@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ampe对话服务发送query
  *
  * @author auto create
- * @since 1.0, 2024-08-05 10:56:09
+ * @since 1.0, 2024-08-20 13:56:16
  */
 public class AlipayOpenMiniAmpeChatSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3847136723393317125L;
+	private static final long serialVersionUID = 1698994158384684566L;
 
 	/**
 	 * AMPE设备id，代表唯一一台设备，在支付宝开放平台，或者通过openapi接口注册。
