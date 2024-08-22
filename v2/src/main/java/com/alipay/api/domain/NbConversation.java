@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NbConversation extends AlipayObject {
 
-	private static final long serialVersionUID = 3226946483475431441L;
+	private static final long serialVersionUID = 2691675984985341791L;
 
 	/**
 	 * 创作者平台agentId

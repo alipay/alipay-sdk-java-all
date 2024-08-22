@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudpromo.aichat.session.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-19 11:32:06
+ * @since 1.0, 2024-08-22 15:27:08
  */
 public class AlipayCloudCloudpromoAichatSessionCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1189741275537671782L;
+	private static final long serialVersionUID = 6458892651482187484L;
 
 	/** 
 	 * 智能体内容，query_config.need_agent_content=true时返回

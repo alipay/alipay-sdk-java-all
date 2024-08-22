@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NetFlowOfferInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4256765874357431988L;
+	private static final long serialVersionUID = 8674923879455869221L;
 
 	/**
 	 * 流量生效时间

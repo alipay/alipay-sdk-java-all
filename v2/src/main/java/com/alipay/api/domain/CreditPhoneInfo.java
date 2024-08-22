@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CreditPhoneInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1717236632321822475L;
+	private static final long serialVersionUID = 7351332326672963356L;
 
 	/**
 	 * 单位是元。套餐每月保底金额

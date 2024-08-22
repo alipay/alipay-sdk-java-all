@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenAuthOperatorPasswordModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2623433198757914857L;
+	private static final long serialVersionUID = 3283587652233477525L;
 
 	/**
 	 * 新的密码

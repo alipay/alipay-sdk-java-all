@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询租户规则列表
  *
  * @author auto create
- * @since 1.0, 2023-05-18 19:52:27
+ * @since 1.0, 2024-08-21 17:13:21
  */
 public class DatadigitalFincloudFinsaasInsuranceHistoryruleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4565348325917364443L;
+	private static final long serialVersionUID = 6287389936174951163L;
 
 	/**
 	 * 实例id

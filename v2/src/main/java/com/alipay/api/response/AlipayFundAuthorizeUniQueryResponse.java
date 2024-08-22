@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.authorize.uni.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-15 16:13:07
+ * @since 1.0, 2024-08-22 14:52:07
  */
 public class AlipayFundAuthorizeUniQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6467487167878639653L;
+	private static final long serialVersionUID = 6716359855813243178L;
 
 	/** 
 	 * 授权协议号
@@ -25,6 +25,12 @@ public class AlipayFundAuthorizeUniQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
+
+	/** 
+	 * 用于标记支付宝用户在应用下的唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 操作时间
@@ -62,6 +68,13 @@ public class AlipayFundAuthorizeUniQueryResponse extends AlipayResponse {
 	}
 	public String getBizScene( ) {
 		return this.bizScene;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setOperateTime(String operateTime) {

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ItemCalendarStockVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1252338454632315674L;
+	private static final long serialVersionUID = 8126451261718739879L;
 
 	/**
 	 * 库存的有效截止日期。 等于或晚于当前日期且在365天内(即不接收365天后的数据) ，有效开始日期和有效结束日期之间的间隔最大为60天。格式：yyyy-MM-dd 如2023-09-26

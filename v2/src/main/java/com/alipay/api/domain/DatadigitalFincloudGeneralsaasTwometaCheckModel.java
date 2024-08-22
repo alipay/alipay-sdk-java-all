@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 身份证二要素核验
  *
  * @author auto create
- * @since 1.0, 2024-02-26 16:59:57
+ * @since 1.0, 2024-08-22 18:43:46
  */
 public class DatadigitalFincloudGeneralsaasTwometaCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6759769259165651786L;
+	private static final long serialVersionUID = 8183134266325284938L;
+
+	/**
+	 * 身份证二要素核验具体类型
+	 */
+	@ApiField("biz_code")
+	private String bizCode;
 
 	/**
 	 * 用户姓名，与身份证上的姓名相匹配
@@ -36,6 +42,13 @@ public class DatadigitalFincloudGeneralsaasTwometaCheckModel extends AlipayObjec
 	 */
 	@ApiField("outer_biz_no")
 	private String outerBizNo;
+
+	public String getBizCode() {
+		return this.bizCode;
+	}
+	public void setBizCode(String bizCode) {
+		this.bizCode = bizCode;
+	}
 
 	public String getCertName() {
 		return this.certName;

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EcnyAddressInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4195498414424218125L;
+	private static final long serialVersionUID = 7779154955271422143L;
 
 	/**
 	 * 详细地址

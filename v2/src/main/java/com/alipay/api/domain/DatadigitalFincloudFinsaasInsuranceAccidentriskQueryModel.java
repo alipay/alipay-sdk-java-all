@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保险SaaS两核风控意外险风控等级查询
  *
  * @author auto create
- * @since 1.0, 2023-05-08 19:46:12
+ * @since 1.0, 2024-08-21 17:14:36
  */
 public class DatadigitalFincloudFinsaasInsuranceAccidentriskQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5767355256397663448L;
+	private static final long serialVersionUID = 7491496571491462918L;
 
 	/**
 	 * 投保人身份信息，格式为：SHA256(身份证号)。

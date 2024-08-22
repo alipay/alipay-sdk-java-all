@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntTttDetetA extends AlipayObject {
 
-	private static final long serialVersionUID = 6869297455558755117L;
+	private static final long serialVersionUID = 3641165476268452853L;
 
 	/**
 	 * 描述地址

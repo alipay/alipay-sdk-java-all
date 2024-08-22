@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEcoCityserviceIndustrymsgAuthBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1863186514317884229L;
+	private static final long serialVersionUID = 5796832788571216265L;
 
 	/**
 	 * 用户身份信息列表，传入上限为100条

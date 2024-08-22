@@ -1,6 +1,8 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.WalletOperationDetails;
 
 import com.alipay.api.AlipayResponse;
@@ -13,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudFundWalletOperationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1211746769798785826L;
+	private static final long serialVersionUID = 6558837964346942572L;
 
 	/** 
 	 * 当前页，单位是'页'。
@@ -36,8 +38,9 @@ public class AlipayCloudFundWalletOperationQueryResponse extends AlipayResponse 
 	/** 
 	 * 钱包操作明细
 	 */
-	@ApiField("wallet_operations")
-	private WalletOperationDetails walletOperations;
+	@ApiListField("wallet_operations")
+	@ApiField("wallet_operation_details")
+	private List<WalletOperationDetails> walletOperations;
 
 	public void setCurrentPage(String currentPage) {
 		this.currentPage = currentPage;
@@ -60,10 +63,10 @@ public class AlipayCloudFundWalletOperationQueryResponse extends AlipayResponse 
 		return this.totalPages;
 	}
 
-	public void setWalletOperations(WalletOperationDetails walletOperations) {
+	public void setWalletOperations(List<WalletOperationDetails> walletOperations) {
 		this.walletOperations = walletOperations;
 	}
-	public WalletOperationDetails getWalletOperations( ) {
+	public List<WalletOperationDetails> getWalletOperations( ) {
 		return this.walletOperations;
 	}
 

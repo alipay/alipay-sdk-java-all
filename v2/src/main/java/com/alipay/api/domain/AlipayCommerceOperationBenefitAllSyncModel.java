@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceOperationBenefitAllSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4582238684214387435L;
+	private static final long serialVersionUID = 6799916313927722263L;
 
 	/**
 	 * 内券活动列表，最多可填写0-20个券活动

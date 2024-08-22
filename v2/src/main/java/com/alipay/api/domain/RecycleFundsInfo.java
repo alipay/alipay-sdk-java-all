@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 回收资金明细
  *
  * @author auto create
- * @since 1.0, 2024-06-26 15:49:53
+ * @since 1.0, 2024-08-22 19:12:44
  */
 public class RecycleFundsInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6419356834876276153L;
+	private static final long serialVersionUID = 4397512596533421856L;
 
 	/**
 	 * 支付宝支付资金流水号(代扣交易不填写)

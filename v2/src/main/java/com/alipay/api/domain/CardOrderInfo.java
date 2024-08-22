@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 售卖订单信息
  *
  * @author auto create
- * @since 1.0, 2024-08-15 22:51:17
+ * @since 1.0, 2024-08-22 14:05:18
  */
 public class CardOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6871282459798325763L;
+	private static final long serialVersionUID = 5672456635526747167L;
 
 	/**
 	 * 金额卡余额面值，单位分
@@ -85,6 +85,27 @@ public class CardOrderInfo extends AlipayObject {
 	@ApiListField("deduction_plan_list")
 	@ApiField("deduction_plan_info")
 	private List<DeductionPlanInfo> deductionPlanList;
+
+	/**
+	 * 追回优惠金额，包含退款金额，单位：分
+（金额卡无效）
+	 */
+	@ApiField("discount_cash")
+	private Long discountCash;
+
+	/**
+	 * 计划追回优惠金额，单位：分
+（金额卡无效）
+	 */
+	@ApiField("discount_plan_cash")
+	private Long discountPlanCash;
+
+	/**
+	 * 追回优惠退款金额，单位：分
+（金额卡无效）
+	 */
+	@ApiField("discount_refund_cash")
+	private Long discountRefundCash;
 
 	/**
 	 * 订单有效期开始时间
@@ -179,7 +200,7 @@ public class CardOrderInfo extends AlipayObject {
 	private Long usableCash;
 
 	/**
-	 * 已核销金额，单位：分
+	 * 已核销金额，包含退款金额，单位：分
 (金额卡无效)
 	 */
 	@ApiField("used_cash")
@@ -258,6 +279,27 @@ public class CardOrderInfo extends AlipayObject {
 	}
 	public void setDeductionPlanList(List<DeductionPlanInfo> deductionPlanList) {
 		this.deductionPlanList = deductionPlanList;
+	}
+
+	public Long getDiscountCash() {
+		return this.discountCash;
+	}
+	public void setDiscountCash(Long discountCash) {
+		this.discountCash = discountCash;
+	}
+
+	public Long getDiscountPlanCash() {
+		return this.discountPlanCash;
+	}
+	public void setDiscountPlanCash(Long discountPlanCash) {
+		this.discountPlanCash = discountPlanCash;
+	}
+
+	public Long getDiscountRefundCash() {
+		return this.discountRefundCash;
+	}
+	public void setDiscountRefundCash(Long discountRefundCash) {
+		this.discountRefundCash = discountRefundCash;
 	}
 
 	public Date getGmtActive() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 安心付开通准入校验
  *
  * @author auto create
- * @since 1.0, 2024-08-20 18:01:04
+ * @since 1.0, 2024-08-22 16:05:17
  */
 public class AlipayCommerceMerchantcardOpenCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8683919882446852768L;
+	private static final long serialVersionUID = 8774963366396789537L;
 
 	/**
 	 * 卡类型，数组。
@@ -30,13 +30,7 @@ public class AlipayCommerceMerchantcardOpenCheckModel extends AlipayObject {
 	private Boolean needAuth;
 
 	/**
-	 * 用于标记支付宝用户在应用下的唯一标识
-	 */
-	@ApiField("open_id")
-	private String openId;
-
-	/**
-	 * 商户pid
+	 * 商户id
 	 */
 	@ApiField("pid")
 	private String pid;
@@ -53,13 +47,6 @@ public class AlipayCommerceMerchantcardOpenCheckModel extends AlipayObject {
 	}
 	public void setNeedAuth(Boolean needAuth) {
 		this.needAuth = needAuth;
-	}
-
-	public String getOpenId() {
-		return this.openId;
-	}
-	public void setOpenId(String openId) {
-		this.openId = openId;
 	}
 
 	public String getPid() {

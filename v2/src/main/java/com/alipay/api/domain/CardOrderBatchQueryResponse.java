@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页查询售卖订单结果
  *
  * @author auto create
- * @since 1.0, 2024-08-15 22:51:15
+ * @since 1.0, 2024-08-22 14:05:19
  */
 public class CardOrderBatchQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 8856791979417957725L;
+	private static final long serialVersionUID = 1494327821772584394L;
 
 	/**
 	 * 金额卡余额面值，单位分
@@ -63,6 +63,27 @@ public class CardOrderBatchQueryResponse extends AlipayObject {
 	 */
 	@ApiField("create_date")
 	private Date createDate;
+
+	/**
+	 * 追回优惠金额，包含退款金额，单位：分
+(金额卡无效)
+	 */
+	@ApiField("discount_cash")
+	private Long discountCash;
+
+	/**
+	 * 计划追回优惠金额，单位：分
+（金额卡无效）
+	 */
+	@ApiField("discount_plan_cash")
+	private Long discountPlanCash;
+
+	/**
+	 * 追回优惠退款金，单位：分
+（金额卡无效）
+	 */
+	@ApiField("discount_refund_cash")
+	private Long discountRefundCash;
 
 	/**
 	 * 订单有效期开始时间
@@ -229,6 +250,27 @@ public class CardOrderBatchQueryResponse extends AlipayObject {
 	}
 	public void setCreateDate(Date createDate) {
 		this.createDate = createDate;
+	}
+
+	public Long getDiscountCash() {
+		return this.discountCash;
+	}
+	public void setDiscountCash(Long discountCash) {
+		this.discountCash = discountCash;
+	}
+
+	public Long getDiscountPlanCash() {
+		return this.discountPlanCash;
+	}
+	public void setDiscountPlanCash(Long discountPlanCash) {
+		this.discountPlanCash = discountPlanCash;
+	}
+
+	public Long getDiscountRefundCash() {
+		return this.discountRefundCash;
+	}
+	public void setDiscountRefundCash(Long discountRefundCash) {
+		this.discountRefundCash = discountRefundCash;
 	}
 
 	public Date getGmtActive() {

@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceOperationBenefitSingleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1634576621451271286L;
+	private static final long serialVersionUID = 6826771579558569454L;
 
 	/** 
 	 * 支付宝内券活动对象

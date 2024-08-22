@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: datadigital.fincloud.generalsaas.twometa.check request
  * 
  * @author auto create
- * @since 1.0, 2024-02-26 17:01:58
+ * @since 1.0, 2024-08-22 18:47:07
  */
 public class DatadigitalFincloudGeneralsaasTwometaCheckRequest implements AlipayRequest<DatadigitalFincloudGeneralsaasTwometaCheckResponse> {
 

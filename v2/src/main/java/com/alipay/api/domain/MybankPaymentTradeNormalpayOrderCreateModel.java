@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankPaymentTradeNormalpayOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4699245468184234232L;
+	private static final long serialVersionUID = 7798371812128972614L;
 
 	/**
 	 * 订单金额，单位:分

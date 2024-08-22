@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IcpDistrictAreaItemList extends AlipayObject {
 
-	private static final long serialVersionUID = 2223998415134577164L;
+	private static final long serialVersionUID = 5673119623596242369L;
 
 	/**
 	 * 东城区

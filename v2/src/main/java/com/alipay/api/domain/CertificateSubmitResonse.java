@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 凭证核销提交结果
  *
  * @author auto create
- * @since 1.0, 2024-05-23 11:13:24
+ * @since 1.0, 2024-08-22 14:44:16
  */
 public class CertificateSubmitResonse extends AlipayObject {
 
-	private static final long serialVersionUID = 1633224537462236913L;
+	private static final long serialVersionUID = 2681358736186134326L;
 
 	/**
 	 * 订购单编号
@@ -30,6 +30,12 @@ public class CertificateSubmitResonse extends AlipayObject {
 	 */
 	@ApiField("desc")
 	private String desc;
+
+	/**
+	 * 凭证次序号
+	 */
+	@ApiField("serial_no")
+	private String serialNo;
 
 	/**
 	 * true:凭证提交成功
@@ -57,6 +63,13 @@ false:凭证提交失败
 	}
 	public void setDesc(String desc) {
 		this.desc = desc;
+	}
+
+	public String getSerialNo() {
+		return this.serialNo;
+	}
+	public void setSerialNo(String serialNo) {
+		this.serialNo = serialNo;
 	}
 
 	public Boolean getSuccess() {

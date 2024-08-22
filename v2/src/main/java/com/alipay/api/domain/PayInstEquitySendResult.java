@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PayInstEquitySendResult extends AlipayObject {
 
-	private static final long serialVersionUID = 1897385124561646593L;
+	private static final long serialVersionUID = 4133981549227455766L;
 
 	/**
 	 * 发放权益的活动ID

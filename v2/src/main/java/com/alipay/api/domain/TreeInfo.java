@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TreeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1446253788285933455L;
+	private static final long serialVersionUID = 7422583827727569512L;
 
 	/**
 	 * 类目树ID

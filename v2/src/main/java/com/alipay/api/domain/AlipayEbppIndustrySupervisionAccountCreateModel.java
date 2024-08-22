@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政务监管账户创建
  *
  * @author auto create
- * @since 1.0, 2024-07-19 16:16:51
+ * @since 1.0, 2024-08-21 15:24:52
  */
 public class AlipayEbppIndustrySupervisionAccountCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2383441727692632631L;
+	private static final long serialVersionUID = 8392656126582278234L;
 
 	/**
 	 * 1:  支持异名打款 自动退  0: 不支持 。 默认为 1

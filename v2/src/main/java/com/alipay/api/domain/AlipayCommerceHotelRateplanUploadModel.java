@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceHotelRateplanUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8211625997679659493L;
+	private static final long serialVersionUID = 7557596949317251232L;
 
 	/**
 	 * 预定规则列表

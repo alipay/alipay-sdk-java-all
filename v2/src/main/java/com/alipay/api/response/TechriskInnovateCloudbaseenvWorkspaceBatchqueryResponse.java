@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class TechriskInnovateCloudbaseenvWorkspaceBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5553441824216791473L;
+	private static final long serialVersionUID = 7554747138222528547L;
 
 	/** 
 	 * 环境变量集合

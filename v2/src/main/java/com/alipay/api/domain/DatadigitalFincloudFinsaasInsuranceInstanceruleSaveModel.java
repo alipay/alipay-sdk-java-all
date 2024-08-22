@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 添加实例规则
  *
  * @author auto create
- * @since 1.0, 2023-05-18 19:52:00
+ * @since 1.0, 2024-08-21 17:18:38
  */
 public class DatadigitalFincloudFinsaasInsuranceInstanceruleSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8244756625531387189L;
+	private static final long serialVersionUID = 5755684553182738795L;
 
 	/**
 	 * 实例id

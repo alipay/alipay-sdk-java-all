@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TechriskInnovateMpcpromoBehaviorSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8521959375956644685L;
+	private static final long serialVersionUID = 2574772693299732967L;
 
 	/**
 	 * 行为类型：click（点击）、expose（曝光）、order（下单）、pay（支付）、collect（收藏）、like（点赞）、comment（评论）、share（分享）、cart（加购物车）、drawback（退款）、consult（咨询）、receive（券领取）、use（券核销）等
