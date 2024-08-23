@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VoucherValidPeriod extends AlipayObject {
 
-	private static final long serialVersionUID = 6137169249855713948L;
+	private static final long serialVersionUID = 4114697176721925129L;
 
 	/**
 	 * 券有效期类型

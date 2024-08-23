@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EffectiveDatesDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4293934749219152117L;
+	private static final long serialVersionUID = 1196794218743922632L;
 
 	/**
 	 * 价格日期 yyyyMMdd

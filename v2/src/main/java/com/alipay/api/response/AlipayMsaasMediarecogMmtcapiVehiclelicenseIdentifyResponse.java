@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMsaasMediarecogMmtcapiVehiclelicenseIdentifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2642348865157237946L;
+	private static final long serialVersionUID = 3185193568431654588L;
 
 	/** 
 	 * 识别结果

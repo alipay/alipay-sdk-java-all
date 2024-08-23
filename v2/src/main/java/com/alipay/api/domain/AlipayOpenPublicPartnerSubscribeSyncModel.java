@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenPublicPartnerSubscribeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4445184995349556763L;
+	private static final long serialVersionUID = 2696455847391971387L;
 
 	/**
 	 * 是否接受服务窗消息

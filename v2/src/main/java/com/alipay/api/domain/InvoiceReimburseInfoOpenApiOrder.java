@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class InvoiceReimburseInfoOpenApiOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 8315286783869338975L;
+	private static final long serialVersionUID = 2849644641268187222L;
 
 	/**
 	 * 费用明细

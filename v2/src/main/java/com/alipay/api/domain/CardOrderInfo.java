@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 售卖订单信息
  *
  * @author auto create
- * @since 1.0, 2024-08-22 14:05:18
+ * @since 1.0, 2024-08-23 11:19:24
  */
 public class CardOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5672456635526747167L;
+	private static final long serialVersionUID = 1324654784693399613L;
 
 	/**
 	 * 金额卡余额面值，单位分
@@ -101,7 +101,7 @@ public class CardOrderInfo extends AlipayObject {
 	private Long discountPlanCash;
 
 	/**
-	 * 追回优惠退款金额，单位：分
+	 * 追回金额--已退金额，单位：分
 （金额卡无效）
 	 */
 	@ApiField("discount_refund_cash")

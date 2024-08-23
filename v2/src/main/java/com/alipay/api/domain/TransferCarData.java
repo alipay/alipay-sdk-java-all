@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 二手车车辆数据
  *
  * @author auto create
- * @since 1.0, 2024-08-19 14:21:20
+ * @since 1.0, 2024-08-23 13:42:30
  */
 public class TransferCarData extends AlipayObject {
 
-	private static final long serialVersionUID = 6631375845372862995L;
+	private static final long serialVersionUID = 1389844588331874441L;
 
 	/**
 	 * acid值，车生活的 acid 值，需要传递车生活 acid

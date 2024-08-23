@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 企业码门店池门店查询
  *
  * @author auto create
- * @since 1.0, 2024-05-16 16:03:53
+ * @since 1.0, 2024-08-23 09:50:16
  */
 public class AlipayCommerceEcShoppoolShopQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8741921872628317176L;
+	private static final long serialVersionUID = 4349132665873141587L;
 
 	/**
 	 * 查询地址信息，表示查询符合此地址规则的门店

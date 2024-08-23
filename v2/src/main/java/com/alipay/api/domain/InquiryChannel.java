@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class InquiryChannel extends AlipayObject {
 
-	private static final long serialVersionUID = 6194259297857822626L;
+	private static final long serialVersionUID = 2881844316646353633L;
 
 	/**
 	 * 问诊医生排班信息列表

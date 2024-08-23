@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCloudCloudbaseExtensionRedisApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3181326278559669576L;
+	private static final long serialVersionUID = 8489577519348174127L;
 
 	/**
 	 * 架构类型。集群版：分片集群架构，支持扩缩容、规格调整; 标准版：标准的 master-slave 架构，支持规格调整; 极简版：第一年免费;

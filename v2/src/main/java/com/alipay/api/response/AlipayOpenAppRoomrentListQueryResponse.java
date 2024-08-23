@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenAppRoomrentListQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3525565995498325937L;
+	private static final long serialVersionUID = 6172682443697443411L;
 
 	/** 
 	 * 商品列表

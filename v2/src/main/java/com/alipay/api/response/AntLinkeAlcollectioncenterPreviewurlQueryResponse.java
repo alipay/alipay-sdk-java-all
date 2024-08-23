@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntLinkeAlcollectioncenterPreviewurlQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3181152883345393338L;
+	private static final long serialVersionUID = 2589116399733671597L;
 
 	/** 
 	 * 预览链接

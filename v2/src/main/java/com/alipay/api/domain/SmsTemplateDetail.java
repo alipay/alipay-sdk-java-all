@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SmsTemplateDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3518692665798765864L;
+	private static final long serialVersionUID = 2256787757155222811L;
 
 	/**
 	 * 模板审批状态。取值：

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IsvCyclePropertyTimeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8269435588375327321L;
+	private static final long serialVersionUID = 8426293226895187546L;
 
 	/**
 	 * 日期

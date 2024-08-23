@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.merchantcard.template.create request
  * 
  * @author auto create
- * @since 1.0, 2024-08-19 10:22:07
+ * @since 1.0, 2024-08-23 11:22:08
  */
 public class AlipayCommerceMerchantcardTemplateCreateRequest implements AlipayRequest<AlipayCommerceMerchantcardTemplateCreateResponse> {
 

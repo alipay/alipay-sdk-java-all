@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.linke.devops.mobiledevice.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-24 21:01:39
+ * @since 1.0, 2024-08-23 11:01:27
  */
 public class AntLinkeDevopsMobiledeviceApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4241392779971731544L;
+	private static final long serialVersionUID = 2622584741778278729L;
 
 	/** 
 	 * access_token+唯一+ws接口使用的鉴权信息+结果返回

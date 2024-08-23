@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业码门店所属类目信息
  *
  * @author auto create
- * @since 1.0, 2024-07-11 10:34:29
+ * @since 1.0, 2024-08-23 09:50:15
  */
 public class EcMccInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2817918657724795273L;
+	private static final long serialVersionUID = 1241818781449162762L;
 
 	/**
 	 * 门店对应的一级类目编码
