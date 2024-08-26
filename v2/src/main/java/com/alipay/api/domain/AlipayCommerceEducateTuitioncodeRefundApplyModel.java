@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceEducateTuitioncodeRefundApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5659229222874932148L;
+	private static final long serialVersionUID = 1613228917661575849L;
 
 	/**
 	 * 订单支付人支付宝编号

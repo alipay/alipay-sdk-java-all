@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserAntstarshipShareAcceptModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4291962778585118279L;
+	private static final long serialVersionUID = 6531662485239323629L;
 
 	/**
 	 * 活动id 唯一

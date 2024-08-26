@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceAsiangamesHotelstatusQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5759496643263747633L;
+	private static final long serialVersionUID = 3198375778517799835L;
 
 	/**
 	 * 当前页码，不传默认为1

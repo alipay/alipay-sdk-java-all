@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 积金提取余额直付租房账单详情
  *
  * @author auto create
- * @since 1.0, 2024-05-06 14:38:36
+ * @since 1.0, 2024-08-26 16:26:26
  */
 public class RentPayBillDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8532318847522142713L;
+	private static final long serialVersionUID = 3384596914174253377L;
 
 	/**
 	 * 租房账单时间
@@ -22,19 +22,19 @@ public class RentPayBillDetail extends AlipayObject {
 	private Date billTime;
 
 	/**
-	 * 租房账单中的押金费用
+	 * 租房账单中的押金费用，单位：元
 	 */
 	@ApiField("deposit_fee")
 	private String depositFee;
 
 	/**
-	 * 其他费用
+	 * 其他费用，单位: 元
 	 */
 	@ApiField("other_fee")
 	private String otherFee;
 
 	/**
-	 * 当前账期的租金费用
+	 * 当前账期的租金费用，单位：元
 	 */
 	@ApiField("rent_fee")
 	private String rentFee;
@@ -46,7 +46,7 @@ public class RentPayBillDetail extends AlipayObject {
 	private String subject;
 
 	/**
-	 * 租房总金额
+	 * 租房总金额，单位：元
 	 */
 	@ApiField("total_amount")
 	private String totalAmount;

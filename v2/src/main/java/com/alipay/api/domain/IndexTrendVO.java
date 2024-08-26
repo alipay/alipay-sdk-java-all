@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IndexTrendVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5625268175364235911L;
+	private static final long serialVersionUID = 7754199788378924319L;
 
 	/**
 	 * 一个数据对应的结束日期（含边界），格式yyyymmdd

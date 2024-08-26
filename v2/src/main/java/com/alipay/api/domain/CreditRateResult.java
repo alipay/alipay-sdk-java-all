@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CreditRateResult extends AlipayObject {
 
-	private static final long serialVersionUID = 7834368795414121975L;
+	private static final long serialVersionUID = 7736166552125419393L;
 
 	/**
 	 * 信用等级范围最大值，范围是1-12，是闭区间

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenPublicGroupCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3414312735957932392L;
+	private static final long serialVersionUID = 4245317457475843849L;
 
 	/**
 	 * 标签规则，满足该规则的粉丝将被圈定，标签id不能重复

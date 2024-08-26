@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * moka招聘数据同步
  *
  * @author auto create
- * @since 1.0, 2024-03-18 17:17:51
+ * @since 1.0, 2024-08-26 11:37:37
  */
 public class AlipayDigitalmgmtHrcampuscoreEntrySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3117174825276343187L;
+	private static final long serialVersionUID = 1388795524515493512L;
 
 	/**
 	 * 校招签约三方名称（校招传）
@@ -62,13 +62,13 @@ public class AlipayDigitalmgmtHrcampuscoreEntrySyncModel extends AlipayObject {
 	private String batchType;
 
 	/**
-	 * 上年度实际奖金
+	 * 上年度实际奖金 单位人民币
 	 */
 	@ApiField("bonus_all_year_last")
 	private String bonusAllYearLast;
 
 	/**
-	 * 年度目标奖金
+	 * 年度目标奖金 单位人民币
 	 */
 	@ApiField("bonus_of_year_last")
 	private String bonusOfYearLast;
@@ -86,19 +86,19 @@ public class AlipayDigitalmgmtHrcampuscoreEntrySyncModel extends AlipayObject {
 	private String candidateWorkNo;
 
 	/**
-	 * 目前月资
+	 * 目前月资 人民币
 	 */
 	@ApiField("current_salary_month")
 	private String currentSalaryMonth;
 
 	/**
-	 * 其他薪资
+	 * 其他薪资 单位人民币
 	 */
 	@ApiField("current_salary_other")
 	private String currentSalaryOther;
 
 	/**
-	 * 目前年薪
+	 * 目前年薪 人民币
 	 */
 	@ApiField("current_salary_year")
 	private String currentSalaryYear;
@@ -122,7 +122,7 @@ public class AlipayDigitalmgmtHrcampuscoreEntrySyncModel extends AlipayObject {
 	private String employeeType;
 
 	/**
-	 * 发放月数
+	 * 发放月数 单位月
 	 */
 	@ApiField("give_out_month")
 	private String giveOutMonth;
@@ -166,13 +166,13 @@ public class AlipayDigitalmgmtHrcampuscoreEntrySyncModel extends AlipayObject {
 	private String hireFromPlace;
 
 	/**
-	 * 招聘工作年限
+	 * 招聘工作年限 单位年
 	 */
 	@ApiField("hire_work_year")
 	private String hireWorkYear;
 
 	/**
-	 * 期望薪资
+	 * 期望薪资 单位人民币
 	 */
 	@ApiField("hope_salary")
 	private String hopeSalary;
@@ -184,7 +184,7 @@ public class AlipayDigitalmgmtHrcampuscoreEntrySyncModel extends AlipayObject {
 	private String hrgWorkNo;
 
 	/**
-	 * 居民身份证号
+	 * 居民身份证号属于隐私信息，非必填，可内部hr工作台系统维护。
 	 */
 	@ApiField("id_card")
 	private String idCard;
@@ -304,7 +304,7 @@ public class AlipayDigitalmgmtHrcampuscoreEntrySyncModel extends AlipayObject {
 	private String national;
 
 	/**
-	 * 津贴
+	 * 津贴 单位人民币
 	 */
 	@ApiField("out_subsidy_before")
 	private String outSubsidyBefore;
@@ -334,7 +334,7 @@ public class AlipayDigitalmgmtHrcampuscoreEntrySyncModel extends AlipayObject {
 	private String salaryCurrency;
 
 	/**
-	 * 同等职位工作年限
+	 * 同等职位工作年限 单位年
 	 */
 	@ApiField("same_work_exp")
 	private String sameWorkExp;
@@ -376,7 +376,7 @@ public class AlipayDigitalmgmtHrcampuscoreEntrySyncModel extends AlipayObject {
 	private String walfareTextLast;
 
 	/**
-	 * 工作年限
+	 * 工作年限 单位年
 	 */
 	@ApiField("work_experience")
 	private String workExperience;

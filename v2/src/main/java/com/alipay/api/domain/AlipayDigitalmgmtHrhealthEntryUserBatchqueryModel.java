@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDigitalmgmtHrhealthEntryUserBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3897338321239528128L;
+	private static final long serialVersionUID = 7366333276523845583L;
 
 	/**
 	 * data_key用于校验供应商的权限，每一个接入系统的供应商会有唯一的该参数，供应商来对接时蚂蚁生成唯一参数线下给到供应商侧，供应商需要传入来校验身份

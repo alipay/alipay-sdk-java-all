@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FamilyPayQuotaInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6122617783289611416L;
+	private static final long serialVersionUID = 8499551473379844131L;
 
 	/**
 	 * 额度周期：

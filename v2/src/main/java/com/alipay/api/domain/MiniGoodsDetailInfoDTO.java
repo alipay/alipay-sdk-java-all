@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品列表信息模型
  *
  * @author auto create
- * @since 1.0, 2024-06-30 13:22:49
+ * @since 1.0, 2024-08-24 21:07:15
  */
 public class MiniGoodsDetailInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3332953972584729433L;
+	private static final long serialVersionUID = 2772692773938743699L;
 
 	/**
 	 * 活动信息
@@ -116,20 +116,20 @@ public class MiniGoodsDetailInfoDTO extends AlipayObject {
 	private RentInfoDTO rentInfo;
 
 	/**
-	 * 商品单价，单位：元,精确到小数点后两位
+	 * 商品单价，单位：元，精确到小数点后两位，注：租赁商品请传入日租金，如10元/天
 	 */
 	@ApiField("sale_price")
 	private String salePrice;
 
 	/**
-	 * 商品真实单价，单位：元,精确到小数点后两位,
-有优惠信息时需要传入，优惠方式sale_real_price与item_discount二选一
+	 * 商品真实单价，单位：元，精确到小数点后两位，有优惠信息时需要传入，优惠方式sale_real_price与item_discount二选一
 sale_real_price使用场景：商品有单价优惠，传入商品实际成交单价
 item_discount使用场景：同时购买多件商品时存在优惠，传入优惠总额
 优惠计算参考：<a href="https://opendocs.alipay.com/mini/0ag2e1?pathHash=20b9a409">资金平衡校验</a>
 sale_real_price使用场景：商品有单价优惠，传入商品实际成交单价
 item_discount使用场景：同时购买多件商品时存在优惠，传入优惠总额
 优惠计算参考：<a href="https://opendocs.alipay.com/mini/0ag2e1?pathHash=20b9a409">资金平衡校验</a>
+注：租赁商品请传入日租金，如10元/天
 	 */
 	@ApiField("sale_real_price")
 	private String saleRealPrice;

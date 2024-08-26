@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 门店物料信息
  *
  * @author auto create
- * @since 1.0, 2024-08-09 19:04:56
+ * @since 1.0, 2024-08-25 21:03:15
  */
 public class ShopMaterialsInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7233386938311635164L;
+	private static final long serialVersionUID = 2252786327695628195L;
 
 	/**
 	 * 收货地址
@@ -36,6 +36,12 @@ public class ShopMaterialsInfo extends AlipayObject {
 	 */
 	@ApiField("nfc_url")
 	private String nfcUrl;
+
+	/**
+	 * 生产要素扩展参数
+	 */
+	@ApiField("production_ext_info")
+	private String productionExtInfo;
 
 	/**
 	 * 二维码url
@@ -68,9 +74,10 @@ public class ShopMaterialsInfo extends AlipayObject {
 	private String shopOrderNo;
 
 	/**
-	 * 对应门店数量的序列号
+	 * 对应门店数量的序列号 当前字段已废弃(无具体业务含义，修改为废弃)
 	 */
 	@ApiField("shop_serial_number")
+	@Deprecated
 	private String shopSerialNumber;
 
 	public String getDeliveryAddress() {
@@ -99,6 +106,13 @@ public class ShopMaterialsInfo extends AlipayObject {
 	}
 	public void setNfcUrl(String nfcUrl) {
 		this.nfcUrl = nfcUrl;
+	}
+
+	public String getProductionExtInfo() {
+		return this.productionExtInfo;
+	}
+	public void setProductionExtInfo(String productionExtInfo) {
+		this.productionExtInfo = productionExtInfo;
 	}
 
 	public String getQrCodeUrl() {

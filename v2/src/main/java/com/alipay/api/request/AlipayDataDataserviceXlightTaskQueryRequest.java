@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.dataservice.xlight.task.query request
  * 
  * @author auto create
- * @since 1.0, 2024-05-11 19:12:01
+ * @since 1.0, 2024-08-26 11:52:08
  */
 public class AlipayDataDataserviceXlightTaskQueryRequest implements AlipayRequest<AlipayDataDataserviceXlightTaskQueryResponse> {
 

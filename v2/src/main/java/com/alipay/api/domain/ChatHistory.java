@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 历史对话
  *
  * @author auto create
- * @since 1.0, 2024-07-02 17:57:18
+ * @since 1.0, 2024-08-26 15:49:51
  */
 public class ChatHistory extends AlipayObject {
 
-	private static final long serialVersionUID = 5617189987377868434L;
+	private static final long serialVersionUID = 3784784544968627774L;
 
 	/**
 	 * 针对用户提问的回答
@@ -24,6 +24,12 @@ public class ChatHistory extends AlipayObject {
 	 */
 	@ApiField("question")
 	private String question;
+
+	/**
+	 * 单条会话历史的记录唯一ID
+	 */
+	@ApiField("request_id")
+	private String requestId;
 
 	/**
 	 * 提问时间
@@ -43,6 +49,13 @@ public class ChatHistory extends AlipayObject {
 	}
 	public void setQuestion(String question) {
 		this.question = question;
+	}
+
+	public String getRequestId() {
+		return this.requestId;
+	}
+	public void setRequestId(String requestId) {
+		this.requestId = requestId;
 	}
 
 	public String getTime() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 面向租赁商的企业认证状态查询
  *
  * @author auto create
- * @since 1.0, 2024-07-19 17:53:52
+ * @since 1.0, 2024-08-26 14:33:19
  */
 public class AlipayCommerceRentEnterpriseCertificationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1432173368763368874L;
+	private static final long serialVersionUID = 2125467197521484139L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识
@@ -30,6 +30,12 @@ public class AlipayCommerceRentEnterpriseCertificationQueryModel extends AlipayO
 	 */
 	@ApiField("partner_open_id")
 	private String partnerOpenId;
+
+	/**
+	 * 统一社会信用代码
+	 */
+	@ApiField("unified_social_credit_code")
+	private String unifiedSocialCreditCode;
 
 	/**
 	 * 支付宝用户的userId。
@@ -56,6 +62,13 @@ public class AlipayCommerceRentEnterpriseCertificationQueryModel extends AlipayO
 	}
 	public void setPartnerOpenId(String partnerOpenId) {
 		this.partnerOpenId = partnerOpenId;
+	}
+
+	public String getUnifiedSocialCreditCode() {
+		return this.unifiedSocialCreditCode;
+	}
+	public void setUnifiedSocialCreditCode(String unifiedSocialCreditCode) {
+		this.unifiedSocialCreditCode = unifiedSocialCreditCode;
 	}
 
 	public String getUserId() {

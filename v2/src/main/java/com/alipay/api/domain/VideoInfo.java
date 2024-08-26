@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品视频信息详情
  *
  * @author auto create
- * @since 1.0, 2024-08-22 18:50:14
+ * @since 1.0, 2024-08-23 16:23:20
  */
 public class VideoInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7794724382219734389L;
+	private static final long serialVersionUID = 8266239794446167918L;
 
 	/**
 	 * 视频时长，单位为秒
@@ -24,6 +24,30 @@ public class VideoInfo extends AlipayObject {
 	 */
 	@ApiField("height")
 	private Long height;
+
+	/**
+	 * 视频原始的Ur
+	 */
+	@ApiField("origin_url")
+	private String originUrl;
+
+	/**
+	 * 视频转存在oss中的地址url
+	 */
+	@ApiField("oss_url")
+	private String ossUrl;
+
+	/**
+	 * 视频封面图片url
+	 */
+	@ApiField("poster_url")
+	private String posterUrl;
+
+	/**
+	 * 可以用来识别内容相同的视频
+	 */
+	@ApiField("signature")
+	private String signature;
 
 	/**
 	 * 视频大小，单位为MB
@@ -55,6 +79,34 @@ public class VideoInfo extends AlipayObject {
 	}
 	public void setHeight(Long height) {
 		this.height = height;
+	}
+
+	public String getOriginUrl() {
+		return this.originUrl;
+	}
+	public void setOriginUrl(String originUrl) {
+		this.originUrl = originUrl;
+	}
+
+	public String getOssUrl() {
+		return this.ossUrl;
+	}
+	public void setOssUrl(String ossUrl) {
+		this.ossUrl = ossUrl;
+	}
+
+	public String getPosterUrl() {
+		return this.posterUrl;
+	}
+	public void setPosterUrl(String posterUrl) {
+		this.posterUrl = posterUrl;
+	}
+
+	public String getSignature() {
+		return this.signature;
+	}
+	public void setSignature(String signature) {
+		this.signature = signature;
 	}
 
 	public Long getSize() {

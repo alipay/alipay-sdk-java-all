@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudpromo.aichat.history.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-22 12:33:50
+ * @since 1.0, 2024-08-26 15:52:07
  */
 public class AlipayCloudCloudpromoAichatHistoryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5713945244847581722L;
+	private static final long serialVersionUID = 7773764942144844286L;
 
 	/** 
 	 * 历史对话详情

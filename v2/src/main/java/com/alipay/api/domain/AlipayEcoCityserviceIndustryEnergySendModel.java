@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 市民中心行业绿色能量发送接口
  *
  * @author auto create
- * @since 1.0, 2022-04-06 11:48:02
+ * @since 1.0, 2024-08-26 16:32:42
  */
 public class AlipayEcoCityserviceIndustryEnergySendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5741281192715766889L;
+	private static final long serialVersionUID = 5121794341397434426L;
 
 	/**
 	 * 扩展信息

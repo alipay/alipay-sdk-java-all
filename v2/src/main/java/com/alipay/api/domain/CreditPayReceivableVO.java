@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CreditPayReceivableVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8457572426221752337L;
+	private static final long serialVersionUID = 3712171597875515786L;
 
 	/**
 	 * 应收结清时间

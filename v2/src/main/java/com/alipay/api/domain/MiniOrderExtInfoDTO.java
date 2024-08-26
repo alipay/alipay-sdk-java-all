@@ -9,17 +9,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单扩展信息模型
  *
  * @author auto create
- * @since 1.0, 2024-01-26 18:20:15
+ * @since 1.0, 2024-08-24 21:07:15
  */
 public class MiniOrderExtInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4614311337451642863L;
+	private static final long serialVersionUID = 4886648388242751671L;
 
 	/**
 	 * 二方接入交易组件用于返佣计算的特殊参数，单位为元
 	 */
 	@ApiField("addition_rebate_base_price")
 	private String additionRebateBasePrice;
+
+	/**
+	 * 商家登录支付宝的邮箱账号或手机号，企业租赁业务传递该参数。
+	 */
+	@ApiField("alipay_account")
+	private String alipayAccount;
+
+	/**
+	 * 企业的统一社会信用代码，营业执照上有该信息，企业租赁业务需要传递该参数。
+	 */
+	@ApiField("credit_code")
+	private String creditCode;
 
 	/**
 	 * 代扣协议签约场景值，商户可根据代扣产品常见场景值选择符合自身的行业场景，必须和合约中配置的一致。
@@ -57,6 +69,20 @@ public class MiniOrderExtInfoDTO extends AlipayObject {
 	}
 	public void setAdditionRebateBasePrice(String additionRebateBasePrice) {
 		this.additionRebateBasePrice = additionRebateBasePrice;
+	}
+
+	public String getAlipayAccount() {
+		return this.alipayAccount;
+	}
+	public void setAlipayAccount(String alipayAccount) {
+		this.alipayAccount = alipayAccount;
+	}
+
+	public String getCreditCode() {
+		return this.creditCode;
+	}
+	public void setCreditCode(String creditCode) {
+		this.creditCode = creditCode;
 	}
 
 	public String getDeductSignScene() {

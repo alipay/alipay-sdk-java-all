@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class YunTaskRankStatistic extends AlipayObject {
 
-	private static final long serialVersionUID = 3459735222942776753L;
+	private static final long serialVersionUID = 8538698445344881667L;
 
 	/**
 	 * 排名（数字越小，排名越前）

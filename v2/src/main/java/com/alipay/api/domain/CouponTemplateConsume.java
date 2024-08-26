@@ -12,7 +12,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CouponTemplateConsume extends AlipayObject {
 
-	private static final long serialVersionUID = 2332642119383855478L;
+	private static final long serialVersionUID = 3721593448626638268L;
 
 	/**
 	 * 该活动上已领取红包金额，分为单位 999代表已领取9.99元 请注意：该结果可能存在2个小时之内的时间延迟，特殊情况下可能延迟会更久

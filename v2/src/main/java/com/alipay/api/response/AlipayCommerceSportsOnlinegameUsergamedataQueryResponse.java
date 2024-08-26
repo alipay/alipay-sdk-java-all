@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceSportsOnlinegameUsergamedataQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6562487653482519269L;
+	private static final long serialVersionUID = 8718974131279229361L;
 
 	/** 
 	 * 分页接口，是否有更多数据，还有数据返回true，否则返回false
