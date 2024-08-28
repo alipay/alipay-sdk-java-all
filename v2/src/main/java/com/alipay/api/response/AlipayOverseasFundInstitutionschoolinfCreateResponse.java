@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOverseasFundInstitutionschoolinfCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2183121268366469531L;
+	private static final long serialVersionUID = 3592117893587736518L;
 
 	/** 
 	 * ISV入驻签约PID

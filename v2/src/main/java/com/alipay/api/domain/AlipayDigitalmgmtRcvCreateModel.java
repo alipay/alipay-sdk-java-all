@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDigitalmgmtRcvCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5474483649916838141L;
+	private static final long serialVersionUID = 4412197977769996839L;
 
 	/**
 	 * 创建rcv参数

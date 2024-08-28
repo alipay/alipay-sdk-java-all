@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class OpenApiEventReportDataResult extends AlipayObject {
 
-	private static final long serialVersionUID = 1756118931561894451L;
+	private static final long serialVersionUID = 5669251592961116681L;
 
 	/**
 	 * 在接口返回时,如果syncQueryResultValid为false,那么这是一个异步查询，请根据asyncQueryId和asyncQueryStatus继续查询

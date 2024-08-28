@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayIserviceItaskOutorderForwardFinishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7547811936948487946L;
+	private static final long serialVersionUID = 8897987362652113448L;
 
 	/**
 	 * 机构正向工单结果回收对象

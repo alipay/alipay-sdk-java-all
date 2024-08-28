@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RndBenefitRule extends AlipayObject {
 
-	private static final long serialVersionUID = 5146683757732843581L;
+	private static final long serialVersionUID = 8575934936582479543L;
 
 	/**
 	 * 最大优惠

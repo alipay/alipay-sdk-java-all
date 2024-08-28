@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySocialBaseRelationFriendsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7229297428157124437L;
+	private static final long serialVersionUID = 7477572894513758132L;
 
 	/**
 	 * 获取类型。1=获取双向好友   2=获取双向+单向好友

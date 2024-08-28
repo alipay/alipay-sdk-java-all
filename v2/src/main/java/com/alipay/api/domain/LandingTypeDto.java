@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 落地页信息
  *
  * @author auto create
- * @since 1.0, 2024-08-19 23:02:32
+ * @since 1.0, 2024-08-27 17:39:22
  */
 public class LandingTypeDto extends AlipayObject {
 
-	private static final long serialVersionUID = 8195925891384731293L;
+	private static final long serialVersionUID = 1795524137398686985L;
 
 	/**
 	 * 活动列表
@@ -24,13 +24,13 @@ public class LandingTypeDto extends AlipayObject {
 	private List<LandingActDto> landingAct;
 
 	/**
-	 * 商品落地页id
+	 * 商品落地页id，同一个商品的落地页id唯一。
 	 */
 	@ApiField("landing_id")
 	private String landingId;
 
 	/**
-	 * 落地页名称
+	 * 落地页名称，同一个商品的落地页名称唯一。
 	 */
 	@ApiField("landing_name")
 	private String landingName;
@@ -46,6 +46,13 @@ public class LandingTypeDto extends AlipayObject {
 	 */
 	@ApiField("landing_url")
 	private String landingUrl;
+
+	/**
+	 * 图文落地页中的图片地址，landing_type值为2的时候必填，至少一张图片地址
+	 */
+	@ApiListField("pic_info_list")
+	@ApiField("string")
+	private List<String> picInfoList;
 
 	/**
 	 * 商品视频信息
@@ -87,6 +94,13 @@ public class LandingTypeDto extends AlipayObject {
 	}
 	public void setLandingUrl(String landingUrl) {
 		this.landingUrl = landingUrl;
+	}
+
+	public List<String> getPicInfoList() {
+		return this.picInfoList;
+	}
+	public void setPicInfoList(List<String> picInfoList) {
+		this.picInfoList = picInfoList;
 	}
 
 	public List<VideoInfo> getProductVideos() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TimeStampRectOpenVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2472873965397265354L;
+	private static final long serialVersionUID = 5361754933868612257L;
 
 	/**
 	 * X轴偏移量，相对当前页左下角原点的X轴偏移量，非负数值，最大取值497，由用户输入，请注意取值范围。

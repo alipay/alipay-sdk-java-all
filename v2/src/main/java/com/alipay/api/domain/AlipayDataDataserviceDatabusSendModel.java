@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataDataserviceDatabusSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4357363322129781399L;
+	private static final long serialVersionUID = 7432689879494738784L;
 
 	/**
 	 * 对应于adatabus这边的eventCode纬度，databus这边是通过topic+eventCode纬度来找到对应的数据源，用于适配databus这边的数据源模型，可以参考主站消息中心的topic和eventCode的命名方式。

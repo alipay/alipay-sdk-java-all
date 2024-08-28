@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 机器人问答接口中返回的【事项】类数据的详情
  *
  * @author auto create
- * @since 1.0, 2024-07-31 11:02:41
+ * @since 1.0, 2024-08-26 20:57:16
  */
 public class AnswerItemDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 4761966286348524832L;
+	private static final long serialVersionUID = 7119477689215494753L;
 
 	/**
 	 * 事项的受理条件
@@ -48,6 +48,12 @@ public class AnswerItemDetail extends AlipayObject {
 	 */
 	@ApiField("name")
 	private String name;
+
+	/**
+	 * 机构用户上传到知识库时定义的事项编码。
+	 */
+	@ApiField("service_item_id")
+	private String serviceItemId;
 
 	public String getAcceptConditions() {
 		return this.acceptConditions;
@@ -89,6 +95,13 @@ public class AnswerItemDetail extends AlipayObject {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getServiceItemId() {
+		return this.serviceItemId;
+	}
+	public void setServiceItemId(String serviceItemId) {
+		this.serviceItemId = serviceItemId;
 	}
 
 }

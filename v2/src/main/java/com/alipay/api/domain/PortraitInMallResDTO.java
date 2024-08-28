@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PortraitInMallResDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7383652383677133394L;
+	private static final long serialVersionUID = 7568948244971182585L;
 
 	/**
 	 * 居住人口

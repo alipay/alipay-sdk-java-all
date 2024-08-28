@@ -12,7 +12,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CredentialsFraudData extends AlipayObject {
 
-	private static final long serialVersionUID = 8589278322392331762L;
+	private static final long serialVersionUID = 4282618747687641287L;
 
 	/**
 	 * Wallet所在设备的设备id映射的uuid。

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MonitorFilter extends AlipayObject {
 
-	private static final long serialVersionUID = 1661313966566314113L;
+	private static final long serialVersionUID = 5163451974579646632L;
 
 	/**
 	 * cdn加速域名列表
