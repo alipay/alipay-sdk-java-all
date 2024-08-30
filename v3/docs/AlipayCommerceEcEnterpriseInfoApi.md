@@ -4,7 +4,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**modify**](AlipayCommerceEcEnterpriseInfoApi.md#modify) | **PUT** /v3/alipay/commerce/ec/enterprise | 企业信息修改 |
+| [**modify**](AlipayCommerceEcEnterpriseInfoApi.md#modify) | **PUT** /v3/alipay/commerce/ec/enterprise | 修改企业基础信息 |
 | [**query**](AlipayCommerceEcEnterpriseInfoApi.md#query) | **GET** /v3/alipay/commerce/ec/enterprise/info | 查询企业详情 |
 
 
@@ -12,9 +12,9 @@ All URIs are relative to *https://openapi.alipay.com*
 # **modify**
 > Object modify(alipayCommerceEcEnterpriseInfoModifyModel)
 
-企业信息修改
+修改企业基础信息
 
-修改企业信息
+修改企业基础信息
 
 ### Example
 ```java
@@ -110,8 +110,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayCommerceEcEnterpriseInfoApi apiInstance = new AlipayCommerceEcEnterpriseInfoApi(defaultClient);
-    String enterpriseId = "20889490309498"; // String | 企业id,从企业注册等接口获取，和out_biz_no参数二选一，都传优先企业id
-    String outBizNo = "2024051000000001"; // String | 服务商生成的请求唯一流水号/业务幂等号，和enterprise_id参数二选一，都传优先企业id
+    String enterpriseId = "20889490309498"; // String | 企业id,从企业注册等接口获取，和out_biz_no参数二选一，都传优先取企业id
+    String outBizNo = "2024051000000001"; // String | 服务商生成的请求唯一流水号/业务幂等号，和enterprise_id参数二选一，都传优先取企业id
     try {
       AlipayCommerceEcEnterpriseInfoQueryResponseModel result = apiInstance.query(enterpriseId, outBizNo);
       System.out.println(result);
@@ -130,8 +130,8 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **enterpriseId** | **String**| 企业id,从企业注册等接口获取，和out_biz_no参数二选一，都传优先企业id | [optional] |
-| **outBizNo** | **String**| 服务商生成的请求唯一流水号/业务幂等号，和enterprise_id参数二选一，都传优先企业id | [optional] |
+| **enterpriseId** | **String**| 企业id,从企业注册等接口获取，和out_biz_no参数二选一，都传优先取企业id | [optional] |
+| **outBizNo** | **String**| 服务商生成的请求唯一流水号/业务幂等号，和enterprise_id参数二选一，都传优先取企业id | [optional] |
 
 ### Return type
 

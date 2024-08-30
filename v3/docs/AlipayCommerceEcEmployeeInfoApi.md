@@ -4,7 +4,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**modify**](AlipayCommerceEcEmployeeInfoApi.md#modify) | **PUT** /v3/alipay/commerce/ec/employee/info | 员工信息修改 |
+| [**modify**](AlipayCommerceEcEmployeeInfoApi.md#modify) | **PUT** /v3/alipay/commerce/ec/employee/info | 修改员工基础信息 |
 | [**query**](AlipayCommerceEcEmployeeInfoApi.md#query) | **GET** /v3/alipay/commerce/ec/employee/info/query | 查询员工详情 |
 
 
@@ -12,9 +12,9 @@ All URIs are relative to *https://openapi.alipay.com*
 # **modify**
 > AlipayCommerceEcEmployeeInfoModifyResponseModel modify(alipayCommerceEcEmployeeInfoModifyModel)
 
-员工信息修改
+修改员工基础信息
 
-员工信息修改
+修改员工基础信息
 
 ### Example
 ```java

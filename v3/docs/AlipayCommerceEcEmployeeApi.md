@@ -14,7 +14,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 添加员工
 
-企业添加员工，并返回员工签约链接和吱口令
+企业添加员工，并返回员工签约激活链接和吱口令
 
 ### Example
 ```java

@@ -1,7 +1,7 @@
 # alipay-sdk-java-v3
 
 支付宝开放平台API
-- API version: 2024-07-05
+- API version: 2024-08-30
 
 支付宝开放平台v3协议文档
 
@@ -55,7 +55,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>com.alipay.sdk</groupId>
   <artifactId>alipay-sdk-java-v3</artifactId>
-  <version>3.1.0.ALL</version>
+  <version>3.1.6.ALL</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -71,7 +71,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "com.alipay.sdk:alipay-sdk-java-v3:3.1.0.ALL"
+     implementation "com.alipay.sdk:alipay-sdk-java-v3:3.1.6.ALL"
   }
 ```
 
@@ -85,7 +85,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/alipay-sdk-java-v3-3.1.0.ALL.jar`
+* `target/alipay-sdk-java-v3-3.1.6.ALL.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
@@ -183,20 +183,20 @@ Class | Method | HTTP request | Description
 *AlipayCommerceEcEmployeeApi* | [**add**](docs/AlipayCommerceEcEmployeeApi.md#add) | **POST** /v3/alipay/commerce/ec/employee/add | 添加员工
 *AlipayCommerceEcEmployeeApi* | [**delete**](docs/AlipayCommerceEcEmployeeApi.md#delete) | **POST** /v3/alipay/commerce/ec/employee/delete | 删除员工
 *AlipayCommerceEcEmployeeIdlistApi* | [**query**](docs/AlipayCommerceEcEmployeeIdlistApi.md#query) | **GET** /v3/alipay/commerce/ec/employee/idlist/query | 查询部门下员工id列表
-*AlipayCommerceEcEmployeeInfoApi* | [**modify**](docs/AlipayCommerceEcEmployeeInfoApi.md#modify) | **PUT** /v3/alipay/commerce/ec/employee/info | 员工信息修改
+*AlipayCommerceEcEmployeeInfoApi* | [**modify**](docs/AlipayCommerceEcEmployeeInfoApi.md#modify) | **PUT** /v3/alipay/commerce/ec/employee/info | 修改员工基础信息
 *AlipayCommerceEcEmployeeInfoApi* | [**query**](docs/AlipayCommerceEcEmployeeInfoApi.md#query) | **GET** /v3/alipay/commerce/ec/employee/info/query | 查询员工详情
-*AlipayCommerceEcEmployeeInviteApi* | [**query**](docs/AlipayCommerceEcEmployeeInviteApi.md#query) | **GET** /v3/alipay/commerce/ec/employee/invite | 获取员工邀请链接
+*AlipayCommerceEcEmployeeInviteApi* | [**query**](docs/AlipayCommerceEcEmployeeInviteApi.md#query) | **GET** /v3/alipay/commerce/ec/employee/invite | 获取员工签约激活链接
 *AlipayCommerceEcEmployeeTitleApi* | [**create**](docs/AlipayCommerceEcEmployeeTitleApi.md#create) | **POST** /v3/alipay/commerce/ec/employee/title | 新增员工抬头关系
 *AlipayCommerceEcEmployeeTitleApi* | [**delete**](docs/AlipayCommerceEcEmployeeTitleApi.md#delete) | **POST** /v3/alipay/commerce/ec/employee/title/delete | 删除员工抬头信息
 *AlipayCommerceEcEmployeeTitleApi* | [**modify**](docs/AlipayCommerceEcEmployeeTitleApi.md#modify) | **PUT** /v3/alipay/commerce/ec/employee/title | 修改员工抬头信息
-*AlipayCommerceEcEnterpriseApi* | [**create**](docs/AlipayCommerceEcEnterpriseApi.md#create) | **POST** /v3/alipay/commerce/ec/enterprise/create | 企业入驻
+*AlipayCommerceEcEnterpriseApi* | [**create**](docs/AlipayCommerceEcEnterpriseApi.md#create) | **POST** /v3/alipay/commerce/ec/enterprise/create | 企业签约注册
 *AlipayCommerceEcEnterpriseApi* | [**delete**](docs/AlipayCommerceEcEnterpriseApi.md#delete) | **POST** /v3/alipay/commerce/ec/enterprise/delete | 企业注销
 *AlipayCommerceEcEnterpriseApi* | [**unsign**](docs/AlipayCommerceEcEnterpriseApi.md#unsign) | **GET** /v3/alipay/commerce/ec/enterprise/unsignurl | 企业解约
 *AlipayCommerceEcEnterpriseAddressApi* | [**add**](docs/AlipayCommerceEcEnterpriseAddressApi.md#add) | **POST** /v3/alipay/commerce/ec/enterprise/address | 企业地址添加
 *AlipayCommerceEcEnterpriseAddressApi* | [**modify**](docs/AlipayCommerceEcEnterpriseAddressApi.md#modify) | **PUT** /v3/alipay/commerce/ec/enterprise/address | 企业地址修改
 *AlipayCommerceEcEnterpriseAddressApi* | [**query**](docs/AlipayCommerceEcEnterpriseAddressApi.md#query) | **GET** /v3/alipay/commerce/ec/enterprise/address | 企业地址查询
 *AlipayCommerceEcEnterpriseAgreementApi* | [**query**](docs/AlipayCommerceEcEnterpriseAgreementApi.md#query) | **GET** /v3/alipay/commerce/ec/enterprise/agreement | 查询企业签约企业码信息
-*AlipayCommerceEcEnterpriseInfoApi* | [**modify**](docs/AlipayCommerceEcEnterpriseInfoApi.md#modify) | **PUT** /v3/alipay/commerce/ec/enterprise | 企业信息修改
+*AlipayCommerceEcEnterpriseInfoApi* | [**modify**](docs/AlipayCommerceEcEnterpriseInfoApi.md#modify) | **PUT** /v3/alipay/commerce/ec/enterprise | 修改企业基础信息
 *AlipayCommerceEcEnterpriseInfoApi* | [**query**](docs/AlipayCommerceEcEnterpriseInfoApi.md#query) | **GET** /v3/alipay/commerce/ec/enterprise/info | 查询企业详情
 *AlipayCommerceEcJointaccountbillDetailApi* | [**batchquery**](docs/AlipayCommerceEcJointaccountbillDetailApi.md#batchquery) | **GET** /v3/alipay/commerce/ec/jointaccountbill/detail/batchquery | 企业账单批量分页查询
 *AlipayCommerceEcUserEnterpriseApi* | [**query**](docs/AlipayCommerceEcUserEnterpriseApi.md#query) | **GET** /v3/alipay/commerce/ec/user/enterprise | 用户企业列表
@@ -269,7 +269,6 @@ Class | Method | HTTP request | Description
 *AlipayEbppInvoiceExpenseProgressApi* | [**sync**](docs/AlipayEbppInvoiceExpenseProgressApi.md#sync) | **POST** /v3/alipay/ebpp/invoice/expense/progress/sync | 发票报销处理进度同步
 *AlipayEbppInvoiceExpensecomsueOutsourceApi* | [**notify**](docs/AlipayEbppInvoiceExpensecomsueOutsourceApi.md#notify) | **POST** /v3/alipay/ebpp/invoice/expensecomsue/outsource/notify | 同步外部额度变更（交易形式）
 *AlipayEbppInvoiceExpensecontrolAggregationApi* | [**create**](docs/AlipayEbppInvoiceExpensecontrolAggregationApi.md#create) | **POST** /v3/alipay/ebpp/invoice/expensecontrol/aggregation/create | 创建费控规则聚合关系
-*AlipayEbppInvoiceExpensecontrolEmployeequotaApi* | [**create**](docs/AlipayEbppInvoiceExpensecontrolEmployeequotaApi.md#create) | **POST** /v3/alipay/ebpp/invoice/expensecontrol/employeequota/create | 创建余额（特定场景）
 *AlipayEbppInvoiceExpensecontrolIssuebatchApi* | [**cancel**](docs/AlipayEbppInvoiceExpensecontrolIssuebatchApi.md#cancel) | **POST** /v3/alipay/ebpp/invoice/expensecontrol/issuebatch/cancel | 作废额度发放
 *AlipayEbppInvoiceExpensecontrolIssuebatchApi* | [**create**](docs/AlipayEbppInvoiceExpensecontrolIssuebatchApi.md#create) | **POST** /v3/alipay/ebpp/invoice/expensecontrol/issuebatch/create | 手动发放额度接口
 *AlipayEbppInvoiceExpensecontrolQuotaApi* | [**create**](docs/AlipayEbppInvoiceExpensecontrolQuotaApi.md#create) | **POST** /v3/alipay/ebpp/invoice/expensecontrol/quota/create | 创建余额/点券
@@ -886,9 +885,9 @@ Class | Method | HTTP request | Description
 *AntMerchantExpandShopApi* | [**query**](docs/AntMerchantExpandShopApi.md#query) | **GET** /v3/ant/merchant/shop | 店铺查询接口
 *AntMerchantExpandShopPageApi* | [**query**](docs/AntMerchantExpandShopPageApi.md#query) | **GET** /v3/ant/merchant/shop/pagequery | 店铺分页查询接口
 *AntMerchantExpandShopReceiptaccountApi* | [**save**](docs/AntMerchantExpandShopReceiptaccountApi.md#save) | **POST** /v3/ant/merchant/expand/shop/receiptaccount/save | 店铺增加收单账号
-*DatadigitalFincloudGeneralsaasFaceCertifyApi* | [**initialize**](docs/DatadigitalFincloudGeneralsaasFaceCertifyApi.md#initialize) | **POST** /v3/datadigital/fincloud/generalsaas/face/certify/initialize | H5人脸核身初始化
-*DatadigitalFincloudGeneralsaasFaceCertifyApi* | [**query**](docs/DatadigitalFincloudGeneralsaasFaceCertifyApi.md#query) | **GET** /v3/datadigital/fincloud/generalsaas/face/certify/query | H5人脸核身查询记录
-*DatadigitalFincloudGeneralsaasFaceCertifyApi* | [**verify**](docs/DatadigitalFincloudGeneralsaasFaceCertifyApi.md#verify) | **POST** /v3/datadigital/fincloud/generalsaas/face/certify/verify | H5人脸核身开始认证
+*DatadigitalFincloudGeneralsaasFaceCertifyApi* | [**initialize**](docs/DatadigitalFincloudGeneralsaasFaceCertifyApi.md#initialize) | **POST** /v3/datadigital/fincloud/generalsaas/face/certify/initialize | 跳转支付宝人脸核身初始化
+*DatadigitalFincloudGeneralsaasFaceCertifyApi* | [**query**](docs/DatadigitalFincloudGeneralsaasFaceCertifyApi.md#query) | **GET** /v3/datadigital/fincloud/generalsaas/face/certify/query | 跳转支付宝人脸核身查询记录
+*DatadigitalFincloudGeneralsaasFaceCertifyApi* | [**verify**](docs/DatadigitalFincloudGeneralsaasFaceCertifyApi.md#verify) | **POST** /v3/datadigital/fincloud/generalsaas/face/certify/verify | 跳转支付宝人脸核身开始认证
 *DatadigitalFincloudGeneralsaasFaceCheckApi* | [**initialize**](docs/DatadigitalFincloudGeneralsaasFaceCheckApi.md#initialize) | **POST** /v3/datadigital/fincloud/generalsaas/face/check/initialize | 活体检测初始化
 *DatadigitalFincloudGeneralsaasFaceCheckApi* | [**query**](docs/DatadigitalFincloudGeneralsaasFaceCheckApi.md#query) | **GET** /v3/datadigital/fincloud/generalsaas/face/check/query | 活体检测结果查询
 *DatadigitalFincloudGeneralsaasFaceSourceApi* | [**certify**](docs/DatadigitalFincloudGeneralsaasFaceSourceApi.md#certify) | **POST** /v3/datadigital/fincloud/generalsaas/face/source/certify | 纯服务端人脸核身

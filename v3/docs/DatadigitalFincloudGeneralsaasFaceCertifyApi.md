@@ -4,16 +4,16 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**initialize**](DatadigitalFincloudGeneralsaasFaceCertifyApi.md#initialize) | **POST** /v3/datadigital/fincloud/generalsaas/face/certify/initialize | H5人脸核身初始化 |
-| [**query**](DatadigitalFincloudGeneralsaasFaceCertifyApi.md#query) | **GET** /v3/datadigital/fincloud/generalsaas/face/certify/query | H5人脸核身查询记录 |
-| [**verify**](DatadigitalFincloudGeneralsaasFaceCertifyApi.md#verify) | **POST** /v3/datadigital/fincloud/generalsaas/face/certify/verify | H5人脸核身开始认证 |
+| [**initialize**](DatadigitalFincloudGeneralsaasFaceCertifyApi.md#initialize) | **POST** /v3/datadigital/fincloud/generalsaas/face/certify/initialize | 跳转支付宝人脸核身初始化 |
+| [**query**](DatadigitalFincloudGeneralsaasFaceCertifyApi.md#query) | **GET** /v3/datadigital/fincloud/generalsaas/face/certify/query | 跳转支付宝人脸核身查询记录 |
+| [**verify**](DatadigitalFincloudGeneralsaasFaceCertifyApi.md#verify) | **POST** /v3/datadigital/fincloud/generalsaas/face/certify/verify | 跳转支付宝人脸核身开始认证 |
 
 
 <a name="initialize"></a>
 # **initialize**
 > DatadigitalFincloudGeneralsaasFaceCertifyInitializeResponseModel initialize(datadigitalFincloudGeneralsaasFaceCertifyInitializeModel)
 
-H5人脸核身初始化
+跳转支付宝人脸核身初始化
 
 人脸核身初始化服务，用于创建认证流程。供外部客户使用该项服务。
 
@@ -84,7 +84,7 @@ No authorization required
 # **query**
 > DatadigitalFincloudGeneralsaasFaceCertifyQueryResponseModel query(certifyId)
 
-H5人脸核身查询记录
+跳转支付宝人脸核身查询记录
 
 商户在用户使用支付宝完成刷脸之后，调用本接口查询核身结果状态及相关数据
 
@@ -155,9 +155,9 @@ No authorization required
 # **verify**
 > DatadigitalFincloudGeneralsaasFaceCertifyVerifyResponseModel verify(datadigitalFincloudGeneralsaasFaceCertifyVerifyModel)
 
-H5人脸核身开始认证
+跳转支付宝人脸核身开始认证
 
-H5人脸核身服务开始认证。请根据返回结果渲染页面。
+人脸核身服务开始认证。请根据返回结果渲染页面。
 
 ### Example
 ```java

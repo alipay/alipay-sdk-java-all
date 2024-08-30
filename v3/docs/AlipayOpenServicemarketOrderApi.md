@@ -257,7 +257,7 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenServicemarketOrderApi apiInstance = new AlipayOpenServicemarketOrderApi(defaultClient);
-    String commodityOrderId = "20160010200000000033400"; // String | 订购服务订单ID，通过支付宝发送的 https://opendocs.alipay.com/apis/api_3/alipay.open.servicemarket.order.notify(服务市场商户确认订购通知) 通知获取。
+    String commodityOrderId = "20160010200000000033400"; // String | 订购服务订单ID，通过支付宝发送的 <a href=\"https://opendocs.alipay.com/isv/b7f7864a_alipay.open.servicemarket.order.notify?scene=common&pathHash=af6ed436\">服务市场商户确认订购通知</a> 获取。
     String startPage = "1"; // String | 查询开始页码，1 为第一页。
     try {
       AlipayOpenServicemarketOrderQueryResponseModel result = apiInstance.query(commodityOrderId, startPage);
@@ -277,7 +277,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **commodityOrderId** | **String**| 订购服务订单ID，通过支付宝发送的 https://opendocs.alipay.com/apis/api_3/alipay.open.servicemarket.order.notify(服务市场商户确认订购通知) 通知获取。 | [optional] |
+| **commodityOrderId** | **String**| 订购服务订单ID，通过支付宝发送的 &lt;a href&#x3D;\&quot;https://opendocs.alipay.com/isv/b7f7864a_alipay.open.servicemarket.order.notify?scene&#x3D;common&amp;pathHash&#x3D;af6ed436\&quot;&gt;服务市场商户确认订购通知&lt;/a&gt; 获取。 | [optional] |
 | **startPage** | **String**| 查询开始页码，1 为第一页。 | [optional] |
 
 ### Return type

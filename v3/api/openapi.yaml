@@ -5,7 +5,7 @@ info:
     url: https://openhome.alipay.com/developmentDocument.htm
   description: 支付宝开放平台v3协议文档
   title: 支付宝开放平台API
-  version: 2024-07-05
+  version: 2024-08-30
 servers:
 - description: Production server
   url: https://openapi.alipay.com
@@ -704,7 +704,7 @@ paths:
       x-accepts: application/json
   /v3/alipay/commerce/ec/employee/add:
     post:
-      description: 企业添加员工，并返回员工签约链接和吱口令
+      description: 企业添加员工，并返回员工签约激活链接和吱口令
       operationId: alipay.commerce.ec.employee.add
       requestBody:
         content:
@@ -818,7 +818,7 @@ paths:
       x-accepts: application/json
   /v3/alipay/commerce/ec/employee/info:
     put:
-      description: 员工信息修改
+      description: 修改员工基础信息
       operationId: alipay.commerce.ec.employee.info.modify
       requestBody:
         content:
@@ -839,7 +839,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/alipay_commerce_ec_employee_info_modify_default_response'
           description: 请求失败
-      summary: 员工信息修改
+      summary: 修改员工基础信息
       tags:
       - alipay.commerce.ec.employee.info
       x-content-type: application/json
@@ -913,7 +913,7 @@ paths:
       x-accepts: application/json
   /v3/alipay/commerce/ec/employee/invite:
     get:
-      description: 获取员工邀请链接，若只传入企业ID企业则邀请链接对企业员工均有效，若传入了企业ID和员工ID则链接只对传入的员工ID有效
+      description: 获取员工签约激活链接
       operationId: alipay.commerce.ec.employee.invite.query
       parameters:
       - description: 企业id
@@ -925,7 +925,7 @@ paths:
           example: "2088985758939"
           type: string
         style: form
-      - description: 企业码员工ID
+      - description: 企业码员工ID，签约适用对象为指定员工时填写
         explode: true
         in: query
         name: employee_id
@@ -934,7 +934,7 @@ paths:
           example: "2288099887700000"
           type: string
         style: form
-      - description: 页面内容code
+      - description: 用于展示不同的页面文案，使用标准页面文案是无需传值
         explode: true
         in: query
         name: page_content_code
@@ -943,7 +943,7 @@ paths:
           example: PCC_STANDARD
           type: string
         style: form
-      - description: 代扣签约串
+      - description: 代扣签约串。需要签约代扣协议时，必传，返回的签约链接会拼接上代扣签约串。
         explode: true
         in: query
         name: withholding_sign_str
@@ -974,7 +974,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/alipay_commerce_ec_employee_invite_query_default_response'
           description: 请求失败
-      summary: 获取员工邀请链接
+      summary: 获取员工签约激活链接
       tags:
       - alipay.commerce.ec.employee.invite
       x-accepts: application/json
@@ -1063,7 +1063,7 @@ paths:
       x-accepts: application/json
   /v3/alipay/commerce/ec/enterprise:
     put:
-      description: 修改企业信息
+      description: 修改企业基础信息
       operationId: alipay.commerce.ec.enterprise.info.modify
       requestBody:
         content:
@@ -1084,7 +1084,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/alipay_commerce_ec_enterprise_info_modify_default_response'
           description: 请求失败
-      summary: 企业信息修改
+      summary: 修改企业基础信息
       tags:
       - alipay.commerce.ec.enterprise.info
       x-content-type: application/json
@@ -1242,7 +1242,8 @@ paths:
           example: "2088441399627416"
           type: string
         style: form
-      - description: 资金共同账号id；enterprise_id与account_id至少传一个，如果都传了优先使用enterprise_id
+      - deprecated: true
+        description: 资金共同账号id；enterprise_id与account_id至少传一个，如果都传了优先使用enterprise_id(为兼容企业码1.0老接口保留的字段，已过时，新接客户请使用enterprise_id)
         explode: true
         in: query
         name: account_id
@@ -1270,7 +1271,7 @@ paths:
       x-accepts: application/json
   /v3/alipay/commerce/ec/enterprise/create:
     post:
-      description: 企业入驻，并返回签约链接
+      description: 企业注册企业码，并返回因公付签约链接，通过该链接，企业可操作完成出资账户绑定
       operationId: alipay.commerce.ec.enterprise.create
       requestBody:
         content:
@@ -1291,7 +1292,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/alipay_commerce_ec_enterprise_create_default_response'
           description: 请求失败
-      summary: 企业入驻
+      summary: 企业签约注册
       tags:
       - alipay.commerce.ec.enterprise
       x-content-type: application/json
@@ -1329,7 +1330,7 @@ paths:
       description: 查询企业详细信息
       operationId: alipay.commerce.ec.enterprise.info.query
       parameters:
-      - description: "企业id,从企业注册等接口获取，和out_biz_no参数二选一，都传优先企业id"
+      - description: "企业id,从企业注册等接口获取，和out_biz_no参数二选一，都传优先取企业id"
         explode: true
         in: query
         name: enterprise_id
@@ -1338,7 +1339,7 @@ paths:
           example: "20889490309498"
           type: string
         style: form
-      - description: 服务商生成的请求唯一流水号/业务幂等号，和enterprise_id参数二选一，都传优先企业id
+      - description: 服务商生成的请求唯一流水号/业务幂等号，和enterprise_id参数二选一，都传优先取企业id
         explode: true
         in: query
         name: out_biz_no
@@ -1378,7 +1379,8 @@ paths:
           example: "2088123412341234"
           type: string
         style: form
-      - description: 通过企业码1.0接口签约的共同账户，和agreement_no搭配使用。
+      - deprecated: true
+        description: 通过企业码1.0接口签约的共同账户，和agreement_no搭配使用。(为兼容企业码1.0老接口的参数，已过时，新接客户请传企业ID)
         explode: true
         in: query
         name: account_id
@@ -1387,7 +1389,8 @@ paths:
           example: "2088000194958956"
           type: string
         style: form
-      - description: 可通过签约消息获取。配合共同账户id使用，当填写企业共同账户id时，此字段必填。
+      - deprecated: true
+        description: 可通过签约消息获取。配合共同账户id使用，当填写企业共同账户id时，此字段必填。(为兼容企业码1.0老接口的参数，已过时，新接客户请传企业ID)
         explode: true
         in: query
         name: agreement_no
@@ -3129,7 +3132,7 @@ paths:
       x-accepts: application/json
   /v3/alipay/data/dataservice/ad/conversion/upload:
     post:
-      description: 用于回传转化数据
+      description: 供广告商家通过OpenAPI上报转化明细数据，用于广告投放效果的追踪和广告投放的优化。
       operationId: alipay.data.dataservice.ad.conversion.upload
       requestBody:
         content:
@@ -4334,34 +4337,6 @@ paths:
       summary: 创建费控规则聚合关系
       tags:
       - alipay.ebpp.invoice.expensecontrol.aggregation
-      x-content-type: application/json
-      x-accepts: application/json
-  /v3/alipay/ebpp/invoice/expensecontrol/employeequota/create:
-    post:
-      description: 创建余额，该接口开放给特定场景。如果需要使用，请联系技术支持。
-      operationId: alipay.ebpp.invoice.expensecontrol.employeequota.create
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/AlipayEbppInvoiceExpensecontrolEmployeequotaCreateModel'
-        required: false
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/AlipayEbppInvoiceExpensecontrolEmployeequotaCreateResponseModel'
-          description: common response
-        default:
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/alipay_ebpp_invoice_expensecontrol_employeequota_create_default_response'
-          description: 请求失败
-      summary: 创建余额（特定场景）
-      tags:
-      - alipay.ebpp.invoice.expensecontrol.employeequota
       x-content-type: application/json
       x-accepts: application/json
   /v3/alipay/ebpp/invoice/expensecontrol/issuebatch/cancel:
@@ -22463,8 +22438,8 @@ paths:
       description: 第三方服务商提供服务产品被商户订购后，服务市场会推送订单信息给服务商，服务商根据订单号回查该订单明细信息。
       operationId: alipay.open.servicemarket.order.query
       parameters:
-      - description: 订购服务订单ID，通过支付宝发送的 https://opendocs.alipay.com/apis/api_3/alipay.open.servicemarket.order.notify(服务市场商户确认订购通知)
-          通知获取。
+      - description: 订购服务订单ID，通过支付宝发送的 <a href="https://opendocs.alipay.com/isv/b7f7864a_alipay.open.servicemarket.order.notify?scene=common&pathHash=af6ed436">服务市场商户确认订购通知</a>
+          获取。
         explode: true
         in: query
         name: commodity_order_id
@@ -22532,7 +22507,7 @@ paths:
       description: 用于开发服务商查询已与其达成推广关系的地推服务商信息
       operationId: alipay.open.servicemarket.promotiontask.relation.query
       parameters:
-      - description: 服务商品ID
+      - description: 服务商品ID，并不是uid，取值来源于前端的获取
         explode: true
         in: query
         name: commodity_id
@@ -26150,6 +26125,24 @@ paths:
           example: "0"
           type: string
         style: form
+      - description: need_industry_info=0时不返回行业信息；need_industry_info=1时返回不需要审核的行业信息、审核通过的行业信息
+        explode: true
+        in: query
+        name: need_industry_info
+        required: false
+        schema:
+          example: "1"
+          type: string
+        style: form
+      - description: need_industry_license=0时不返回行业资质；need_industry_license=1时返回审核通过的行业资质
+        explode: true
+        in: query
+        name: need_industry_license
+        required: false
+        schema:
+          example: "1"
+          type: string
+        style: form
       responses:
         "200":
           content:
@@ -26331,7 +26324,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/datadigital_fincloud_generalsaas_face_certify_initialize_default_response'
           description: 请求失败
-      summary: H5人脸核身初始化
+      summary: 跳转支付宝人脸核身初始化
       tags:
       - datadigital.fincloud.generalsaas.face.certify
       x-content-type: application/json
@@ -26364,13 +26357,13 @@ paths:
               schema:
                 $ref: '#/components/schemas/datadigital_fincloud_generalsaas_face_certify_query_default_response'
           description: 请求失败
-      summary: H5人脸核身查询记录
+      summary: 跳转支付宝人脸核身查询记录
       tags:
       - datadigital.fincloud.generalsaas.face.certify
       x-accepts: application/json
   /v3/datadigital/fincloud/generalsaas/face/certify/verify:
     post:
-      description: H5人脸核身服务开始认证。请根据返回结果渲染页面。
+      description: 人脸核身服务开始认证。请根据返回结果渲染页面。
       operationId: datadigital.fincloud.generalsaas.face.certify.verify
       requestBody:
         content:
@@ -26391,7 +26384,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/datadigital_fincloud_generalsaas_face_certify_verify_default_response'
           description: 请求失败
-      summary: H5人脸核身开始认证
+      summary: 跳转支付宝人脸核身开始认证
       tags:
       - datadigital.fincloud.generalsaas.face.certify
       x-content-type: application/json
@@ -29466,11 +29459,13 @@ components:
     AlipayCommerceEcConsumeDetailQueryModel:
       properties:
         account_id:
-          description: 共同账户ID
+          deprecated: true
+          description: 共同账户ID(该字段将废弃，不建议使用，可用enterprise_id字段替换)
           example: "2088123456789000"
           type: string
         agreement_no:
-          description: 授权签约协议号
+          deprecated: true
+          description: 授权签约协议号(该字段将废弃，不建议使用，可用enterprise_id字段替换)
           example: "20205820659822371223"
           type: string
         enterprise_id:
@@ -29716,7 +29711,7 @@ components:
         code:
           description: 错误码
           enum:
-          - PARAMETER_ERROR
+          - INVALID_PARAMETER
           - SYSTEM_ERROR
           - ENTERPRISE_NOT_EXIST
           - USER_NOT_EXIST
@@ -29738,10 +29733,14 @@ components:
           - ACCOUNT_NOT_PERSONAL
           - EMPLOYEE_EMAIL_EXIST
           - EMPLOYEE_EXIST
-          - PARAM_ERROR
           - ECEIF_EMPLOYEE_CERT_EXIST
           - DEPT_UPGRADING
           - MODIFY_AGENCY_OPERATION_FAIL
+          - BUSINESS_VALIDATE_ERROR
+          - FREE_SIGN_TOKEN_INVALID
+          - FUND_ACCOUNT_WHITE_NOT_EXIST
+          - FREE_SIGN_EMPLOYEE_EXISTED
+          - EMP_MULTI_ACCOUNT_NOT_SUPPORT
           type: string
         links:
           description: 解决方案链接
@@ -29760,22 +29759,22 @@ components:
           example: true
           type: boolean
         department_ids:
-          description: 员工所属部门
+          description: 员工所属部门，支持多个部门，不传默认为根部门
           example: "[\"1001069000162569\"]"
           items:
             type: string
           type: array
         employee_cert_no:
-          description: 证件号码，根据employee_cert_type指定的证件类型，传入对应的证件号码，可用于企业人脸库员工刷脸开通时的核验。
+          description: 员工证件号码
           example: "260101202310011234"
           type: string
         employee_cert_type:
-          description: 证件类型，目前仅支持身份证，可用于企业人脸库员工刷脸开通时的核验
+          description: 员工证件类型
           example: IDENTITY_CARD
           type: string
         employee_email:
           description: 员工邮箱
-          example: 19929@email.com
+          example: test123@email.com
           type: string
         employee_mobile:
           description: 员工手机号
@@ -29798,15 +29797,20 @@ components:
           example: B0160ABEE2099421C8B30EF3D9ED4E13C6C5708D6BB71441C7858B0C3AF89274
           type: string
         enterprise_id:
-          description: 企业id
+          description: 员工所属企业ID
           example: "20887448493929"
+          type: string
+        free_sign_token:
+          description: "员工免签约授权密钥；<br/>\t该密钥需联系企业码业务小二申请，当传入密钥有效，则员工添加时会默认签约企业因公付，\
+            并激活员工。"
+          example: 66WertX2ZyMqHDqEmnfe8I00xxu1AK30qIRx12mr9uhJB6oVuyjZcb32QBLWBU+2
           type: string
         identity:
           description: 员工身份唯一标识
           example: "20889939994000"
           type: string
         identity_open_id:
-          description: 当identity_type为ALIPAY_USER_ID时，此字段传入open_id
+          description: 当身份类型为支付宝会员ID(identity_type=ALIPAY_USER_ID)时，传入user_id对应的open_id
           example: 074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5
           type: string
         identity_type:
@@ -29814,7 +29818,7 @@ components:
           example: ALIPAY_USER_ID
           type: string
         iot_check_type:
-          description: 员工刷脸加入企业人脸库时的核验方式
+          description: 员工签约开通企业刷脸付时，刷脸核身的核验方式
           example: facepay_epc_agree_check_nores
           type: string
         iot_vid:
@@ -29828,7 +29832,8 @@ components:
             :\"DC\", \"check_bind_card\":\"Y\"}"
           type: string
         role_list:
-          description: 默认角色列表，目前只支持默认为 USER
+          deprecated: true
+          description: 默认角色列表，目前只支持默认为 USER(目前仅支持普通员工，作为默认值，无需调用方传入)
           example: "[\"USER\"]"
           items:
             type: string
@@ -29842,27 +29847,26 @@ components:
           example: true
           type: boolean
         withholding_sign_str:
-          description: "代扣签约字符串，需调支付宝个人协议页面签约接口，并按规则生成，见\t<a href='https://opendocs.alipay.com/pre-open/20170601105911096277new/moiixx?pathHash=10b1fa66'>参\
-            考文档</a> 3.1.3 生成签约字符串示例"
+          description: 代扣签约字符串，员工需签约开通代扣时必传，否则无需传值
           example: app_id%3D2015052600090779%26biz_content%3D%257B%2522access_params%2522%253A%257B%2522channel%2522%253A%2522ALIPAYAPP%2522%257D%252C%2522external_agreement_no%2522%253A%25222019_06_0910%2522%252C%2522personal_product_code%2522%253A%2522...
           type: string
       type: object
     AlipayCommerceEcEmployeeAddResponseModel:
       properties:
         employee_id:
-          description: 员工id
+          description: 企业码生成的员工ID
           example: "2288033000090876"
           type: string
         iot_unique_id:
-          description: IOT开通刷脸支持唯一操作流水号，此处透出用于外部服务商通过该unique_id便捷调用IOT侧接口
+          description: 员工开通IOT企业刷脸付的唯一流水号
           example: "3444950005320032"
           type: string
         share_code:
-          description: 签约吱口令
+          description: 员工签约激活吱口令
           example: https://xxxxx，或复制此消息打开吱搜索，加入企业码，使用企业应公付
           type: string
         sign_url:
-          description: 资金代付签约链接 1.员工未绑支付宝，拉起员工绑定页面 2.员工已绑支付宝，拉起资金签约页面
+          description: 员工签约激活页面链接
           example: https://ur.alipay.com/3I2tPbLkAiktIoqe2dseZUzT
           type: string
       type: object
@@ -29871,16 +29875,12 @@ components:
         code:
           description: 错误码
           enum:
-          - PARAMETER_ERROR
+          - INVALID_PARAMETER
           - SYSTEM_ERROR
           - NO_AGREEMENT
           - ENTERPRISE_NOT_EXIST
           - EMPLOYEE_NOT_EXIST
-          - MSG_SEND_ERROR
-          - REMOTE_SERVICE_ERROR
-          - IOT_USER_DELETE_ERROR
           - ENTERPRISE_NOT_SIGNED
-          - PARAM_ERROR
           - DEPT_UPGRADING
           - EMPLOYEE_IS_SUPER_ADMIN
           type: string
@@ -29954,19 +29954,16 @@ components:
         code:
           description: 错误码
           enum:
-          - PARAMETER_ERROR
+          - INVALID_PARAMETER
           - SYSTEM_ERROR
           - ENTERPRISE_NOT_EXIST
           - EMPLOYEE_NOT_EXIST
           - DEPT_NOT_EXIST
-          - OPEN_EMPLOYEE_ROLE_MODIFY_FAIL
           - NO_AGREEMENT
           - EMPLOYEE_BIND_NOT_MODIFY_ROLE
           - EMPLOYEE_EMAIL_EXIST
           - EMPLOYEE_MOBILE_EXIST
-          - PARAM_ERROR
           - DEPT_UPGRADING
-          - ISV_USER_STATUS_QUERY_ERROR
           - ORG_USER_NOT_EXIST
           type: string
         links:
@@ -29982,13 +29979,13 @@ components:
     AlipayCommerceEcEmployeeInfoModifyModel:
       properties:
         department_ids:
-          description: 员工所属部门
-          example: "[\"1023993000\"]"
+          description: 员工所属部门。如果不传值，则不更新所属部门
+          example: "[\"1001107000098337\"]"
           items:
             type: string
           type: array
         employee_email:
-          description: 员工邮箱
+          description: 员工邮箱。如果不传值，则不更新邮箱。
           example: aajka@email.com
           type: string
         employee_id:
@@ -29996,7 +29993,7 @@ components:
           example: "22887387848484"
           type: string
         employee_mobile:
-          description: 员工手机号
+          description: 员工手机号。如果不传值，则不更新手机号。
           example: 158****4364
           type: string
         employee_name:
@@ -30004,7 +30001,7 @@ components:
           example: 张三
           type: string
         employee_no:
-          description: 员工工号
+          description: 员工工号。如果不传值，则不更新工号。
           example: D83030
           type: string
         enterprise_id:
@@ -30012,12 +30009,12 @@ components:
           example: "2088474883838"
           type: string
         profiles:
-          description: 个性化信息 <a href='https://opendocs.alipay.com/pre-open/0ceh47?pathHash=14fac87c'>详见文档</a>
+          description: 个性化信息。如果不传值，则不更新个性化信息。 <a href='https://opendocs.alipay.com/pre-open/0ceh47?pathHash=14fac87c'>详见文档</a>
           example: "{\"consume_remark\":\"员工账单备注内容示例\",\"inst_id\":\"CMBC\",card_type:\"\
             CC\",\"check_bind_card\":\"Y\"}"
           type: string
         role_list:
-          description: 角色列表，目前只支持填一种角色
+          description: 角色列表，目前只支持填一种角色。如果不传值，则不更新角色。
           example: "[\"USER\"]"
           items:
             type: string
@@ -30062,16 +30059,12 @@ components:
         code:
           description: 错误码
           enum:
-          - PARAMETER_ERROR
+          - INVALID_PARAMETER
           - ENTERPRISE_NOT_EXIST
           - NO_AGREEMENT
           - SYSTEM_ERROR
-          - GET_SIGN_URL_ERROR
           - ENTERPRISE_NOT_SIGNED
           - EMPLOYEE_NOT_EXIST
-          - REMOTE_SERVICE_ERROR
-          - PARAM_ERROR
-          - GENERATE_SHARE_CODE_FAIL
           type: string
         links:
           description: 解决方案链接
@@ -30446,7 +30439,7 @@ components:
           description: 错误码
           enum:
           - SYSTEM_ERROR
-          - PARAMETER_ERROR
+          - INVALID_PARAMETER
           - ENTERPRISE_NOT_EXIST
           - PERMISSION_DENIED
           type: string
@@ -30470,30 +30463,22 @@ components:
         code:
           description: 错误码
           enum:
-          - PARAMETER_ERROR
+          - INVALID_PARAMETER
           - SYSTEM_ERROR
           - ENTERPRISE_NO_AUTH
           - ENTERPRISE_SETTLED_IN_FINISHED
           - USER_NOT_EXIST
-          - GET_SIGN_URL_ERROR
-          - MSG_SEND_ERROR
           - SENSITIVE_WORDS_EXIST
           - ENTERPRISE_CREATE_NOT_SUPPORT
           - ENTERPRISE_CREATE_ING
           - ECEIF_ENTERPRISE_CREATE_OVER_LIMIT
-          - ECEIF_ENTERPRISE_CREATE_FAIL
           - IOT_FACE_GROUP_NAME_ERROR
-          - IOT_FACE_GROUP_CREATE_FAIL
-          - IOT_USER_CREATE_ERROR
-          - IOT_GROUP_ID_QUERY_ERROR
           - AUTH_INFO_NULL
           - ENTERPRISE_EMAIL_ALREADY_EXIST
           - CONFIRM_LETTER_IMG_NULL
           - LICENSE_IMG_NULL
-          - EMPLOYEE_ADD_FAIL
           - ISV_USER_ID_NOT_SUPPORT
           - EMPLOYEE_NOT_EXIST
-          - ISV_GROUP_APP_ID_EMPTY
           type: string
         links:
           description: 解决方案链接
@@ -30508,7 +30493,7 @@ components:
     AlipayCommerceEcEnterpriseCreateModel:
       properties:
         biz_scene:
-          description: 场景码
+          description: 用于区分资金因公付协议、以及收银台文案等差异；
           example: ISV_QYM
           type: string
         create_fund_account:
@@ -30552,11 +30537,12 @@ components:
           example: "28839390030030"
           type: string
         sign_return_url:
-          description: 企业码签约后回跳地址
+          description: 企业码签约后回跳地址。不传默认为空，签约后停留在当前页。
           example: https://www.alipay.com
           type: string
         sign_terminal:
-          description: 管理员签约终端类型
+          deprecated: true
+          description: 管理员签约终端类型(字段已废弃，不需要服务商传入)
           example: PC
           type: string
       type: object
@@ -30584,14 +30570,12 @@ components:
         code:
           description: 错误码
           enum:
-          - PARAMETER_ERROR
+          - INVALID_PARAMETER
           - SYSTEM_ERROR
           - ENTERPRISE_NOT_EXIST
           - ENTERPRISE_HAS_DELETE
           - NO_AGREEMENT
           - ACCOUNT_NORMAL_ERROR
-          - MSG_SEND_ERROR
-          - FUND_ACCOUNT_UNBIND_ERROR
           type: string
         links:
           description: 解决方案链接
@@ -30613,7 +30597,8 @@ components:
     AlipayCommerceEcEnterpriseDeleteResponseModel:
       properties:
         enterprise_id:
-          description: 企业ID
+          deprecated: true
+          description: 企业ID(与入参相同，无意义的出参)
           example: "2088738399393"
           type: string
       type: object
@@ -30623,7 +30608,7 @@ components:
           description: 错误码
           enum:
           - SYSTEM_ERROR
-          - PARAMETER_ERROR
+          - INVALID_PARAMETER
           - NO_AGREEMENT
           - ENTERPRISE_NOT_EXIST
           - ONLY_NOAUTH_CAN_MODIFY_NAME
@@ -30665,7 +30650,6 @@ components:
           - SYSTEM_ERROR
           - ENTERPRISE_NOT_EXIST
           - NO_AGREEMENT
-          - IOT_GROUP_ID_QUERY_ERROR
           type: string
         links:
           description: 解决方案链接
@@ -30687,10 +30671,9 @@ components:
         code:
           description: 错误码
           enum:
-          - PARAMETER_ERROR
+          - INVALID_PARAMETER
           - SYSTEM_ERROR
           - NO_AGREEMENT
-          - GET_UNSIGN_URL_ERROR
           - ENTERPRISE_NOT_EXIST
           - ENTERPRISE_HAS_UNSIGN
           type: string
@@ -31441,11 +31424,11 @@ components:
     AlipayCommerceLogisticsOrderInstantdeliveryCreateResponseModel:
       properties:
         coupon_fee:
-          description: 优惠券费用
+          description: 优惠券费用，单位元
           example: "1.00"
           type: string
         deliver_fee:
-          description: 运费
+          description: 运费，单位元
           example: "10.00"
           type: string
         dispatch_duration:
@@ -31457,7 +31440,7 @@ components:
           example: 300
           type: integer
         fee:
-          description: 实际运费
+          description: 实际运费，单位元
           example: "9.00"
           type: string
         finish_code:
@@ -31465,7 +31448,7 @@ components:
           example: xxx
           type: string
         insurance_fee:
-          description: 保价费用
+          description: 保价费用，单位元
           example: "0.00"
           type: string
         order_no:
@@ -31473,7 +31456,7 @@ components:
           example: "2020090411130000000000772400280352"
           type: string
         pay_amount:
-          description: "支付金额, 实际扣减的费用以此字段为准"
+          description: "支付金额, 实际扣减的费用以此字段为准，单位元"
           example: "9.00"
           type: string
         pickup_code:
@@ -32040,6 +32023,19 @@ components:
           description: 是否启用车牌代扣状态查询功能，true为启用，false为停用
           example: true
           type: boolean
+        charge_info_list:
+          description: 本次行程收费计划清单
+          items:
+            $ref: '#/components/schemas/ParkingChargeInfo'
+          type: array
+        entrance_name:
+          description: 车辆进入停车场的入口通道名称
+          example: 南门
+          type: string
+        entrance_number:
+          description: 车辆进入停车场的入口通道编号；按线下实际编号为准；
+          example: 1
+          type: integer
         free_enter_minutes:
           description: 当前停车场的入场免费时长分钟数
           example: "15"
@@ -32052,6 +32048,8 @@ components:
           description: 车牌是否加密，true为加密，false为不加密，默认为false
           example: false
           type: boolean
+        membership_info:
+          $ref: '#/components/schemas/ParkingMembershipInfo'
         need_charge:
           description: 当前行程是否需要计费。true：需要，false：不需要。不传默认为true。
           example: true
@@ -32104,6 +32102,10 @@ components:
           description: 具体错误描述
           example: 车牌不合法
           type: string
+        serial_no:
+          description: 支付宝停车纪录流水号，串联一次停车行为；
+          example: 2024xxxxxxxxxxxx9292
+          type: string
       type: object
     AlipayCommerceTransportParkingExitinfoSyncErrorResponseModel:
       properties:
@@ -32127,6 +32129,14 @@ components:
       type: object
     AlipayCommerceTransportParkingExitinfoSyncModel:
       properties:
+        exit_name:
+          description: 车辆出场的出口通道名称；取实地通道名称；
+          example: 北门
+          type: string
+        exit_number:
+          description: 车辆出场的出口通道编号；与线下实地编码一致；
+          example: 2
+          type: integer
         is_encrypt_plate_no:
           description: 车牌是否加密，true为加密，false为不加密，默认为false
           example: true
@@ -32166,7 +32176,7 @@ components:
     AlipayCommerceTransportParkingExitinfoSyncResponseModel:
       properties:
         biz_code:
-          description: 具体错误码
+          description: 具体错误码；
           example: INVALID_PARAMETER
           type: string
         biz_msg:
@@ -32196,6 +32206,19 @@ components:
       type: object
     AlipayCommerceTransportParkingPaymentinfoSyncModel:
       properties:
+        alipay_trade_no:
+          description: 支付宝交易号；
+          example: "2024051122001459531435123456"
+          type: string
+        discount_amount:
+          description: 停车费折扣金额；单位元；
+          example: "2.00"
+          type: string
+        discount_information:
+          description: 停车费缴费折扣信息；
+          items:
+            $ref: '#/components/schemas/ParkingPaymentDiscountInfo'
+          type: array
         free_exit_minutes:
           description: 停车场内缴费后，允许出场的免费时长分钟数
           example: "15"
@@ -32204,6 +32227,10 @@ components:
           description: 车牌是否加密，true为加密，false为不加密，默认为false
           example: true
           type: boolean
+        mobile_number:
+          description: 缴费用户的手机号；
+          example: "13800000000"
+          type: string
         open_appid:
           description: 蚂蚁会员统一ID对应的归属应用appid
           example: 2023xxxxxxxxxxxx
@@ -32212,17 +32239,30 @@ components:
           description: 蚂蚁会员统一ID
           example: 074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5
           type: string
+        out_order_no:
+          description: 服务商停车费支付订单号；
+          example: abx20240981811199912
+          type: string
         out_serial_no:
           description: 外部停车流水号(用于串通进场与出场信息)
           example: "2020090711003017233600000001"
+          type: string
+        payment_amount:
+          description: 停车费实付金额；单位元；
+          example: "8.00"
           type: string
         payment_time:
           description: 场内缴费时间，格式"YYYY-MM-DD HH:mm:ss"，24小时制，请保证服务器时间准确，场内缴费不应晚于当前网络时间
           example: 2021-06-12 15:29:55
           type: string
         payment_type:
-          description: "支付方式\tALIPAY：支付宝支付\tCASH：现金\tOTHER：其他渠道\tFREE：免费"
+          description: "支付方式；\tALIPAY：支付宝\tWECHAT：微信\tCUQP：云闪付\tCASH：现金\tOTHER：其他渠\
+            道"
           example: ALIPAY
+          type: string
+        payment_user_open_id:
+          description: 停车缴费用户的OPENID；
+          example: 074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5
           type: string
         plate_color:
           description: "车牌颜色，车牌颜色，枚举支持：\t*BLUE：蓝。\t*GREEN：绿。\t*YELLOW：黄。\t*WHITE：白\
@@ -32239,11 +32279,16 @@ components:
             \ 3、若此次对接的是无感支付，则服务链接传输为：alipays://platformapi/startapp?appId=2021001102642986&page=%2Fpages%2Fparking-bill%2Findex"
           example: alipays://xxxxx
           type: string
+        total_amount:
+          description: 停车费总金额；单位元；理论应等于实付金额+折扣金额
+          example: "10.00"
+          type: string
       type: object
     AlipayCommerceTransportParkingPaymentinfoSyncResponseModel:
       properties:
         biz_code:
-          description: 具体错误码
+          description: "具体错误码\t参数异常：INVALID_PARAMETER\t没有权限操作：NO_PERMISSION_ERROR\t\
+            请求受理结果未知：BIZ_UNKNOWN\t请求受理失败：BIZ_FAIL\t系统繁忙：SYSTEM_ERROR"
           example: INVALID_PARAMETER
           type: string
         biz_msg:
@@ -34843,82 +34888,6 @@ components:
         aggregation_id:
           description: 费控聚合关系ID
           example: "2021082700152602730000003677"
-          type: string
-      type: object
-    AlipayEbppInvoiceExpensecontrolEmployeequotaCreateErrorResponseModel:
-      properties:
-        code:
-          description: 错误码
-          enum:
-          - INVALID_PARAMETER
-          - SYSTEM_ERROR
-          - PERMISSION_DENIED
-          - QUOTA_EXISTS
-          - NO_RULE_AVAILABLE
-          - REQUEST_REPEAT
-          type: string
-        links:
-          description: 解决方案链接
-          type: string
-        message:
-          description: 错误描述
-          type: string
-      required:
-      - code
-      - message
-      type: object
-    AlipayEbppInvoiceExpensecontrolEmployeequotaCreateModel:
-      properties:
-        account_id:
-          description: 共同账号ID
-          example: "2088000194958956"
-          type: string
-        agreement_no:
-          description: 授权签约协议号
-          example: "20215425001112341234"
-          type: string
-        effective_end_date:
-          description: 余额失效时间（默认有效期100年）
-          example: 2021-10-01 00:00:00
-          type: string
-        effective_start_date:
-          description: 余额生效时间(默认当前时间)
-          example: 2021-01-01 00:00:00
-          type: string
-        outer_source_id:
-          description: 外部操作幂等ID（接入方接口调用幂等控制ID）
-          example: TN00000000000001
-          type: string
-        owner_id:
-          description: "切换open_id前请使用：余额所属者ID\towner_type为员工时为员工支付宝ID"
-          example: "2088210888827370"
-          type: string
-        owner_open_id:
-          description: 切换open_id后请使用：余额所属者ID owner_type为员工时为员工open_id
-          example: abcdxxxx
-          type: string
-        owner_type:
-          description: "余额所属者类型\tEMPLOYEE: 员工"
-          example: EMPLOYEE
-          type: string
-        platform:
-          description: 外部平台编码（通常为接入方大写英文缩写）
-          example: RJ
-          type: string
-        quota_model:
-          description: 余额同步模式，默认 DEFAULT_STANDARD
-          example: DEFAULT_STANDARD
-          type: string
-        quota_value:
-          description: "余额，以（分）为单位\t特殊说明：余额不超过100000元"
-          example: "10"
-          type: string
-      type: object
-    AlipayEbppInvoiceExpensecontrolEmployeequotaCreateResponseModel:
-      properties:
-        quota_id:
-          description: 新增的余额ID
-          example: "2021062800152601350000001468"
           type: string
       type: object
     AlipayEbppInvoiceExpensecontrolIssuebatchCancelErrorResponseModel:
@@ -39573,6 +39542,11 @@ components:
           items:
             $ref: '#/components/schemas/BusinessItem'
           type: array
+        charging_rule:
+          description: 停车场详细计费规则
+          items:
+            $ref: '#/components/schemas/ParkingLotChargingRuleInfo'
+          type: array
         city_id:
           description: 该参数废弃
           example: "110101"
@@ -39614,11 +39588,11 @@ components:
           example: 571-8643-2799
           type: string
         latitude:
-          description: 纬度
+          description: 纬度 单位:度
           example: "30.548828"
           type: string
         longitude:
-          description: 经度
+          description: 经度 单位:度
           example: "114.266418"
           type: string
         mchnt_id:
@@ -39655,7 +39629,7 @@ components:
           type: string
         parking_fee_description:
           description: 收费说明
-          example: 小车一小时10元
+          example: 免费时长30分钟，首2小时10元/小时，超过首2小时后2元/小时，封顶20元
           type: string
         parking_fee_description_img:
           description: 商户在停车平台露出的停车价格图片；注意：该图片为PNG格式内容为BASE64的字符串，大小不要超过1MB
@@ -39678,7 +39652,8 @@ components:
           example: "10000"
           type: string
         parking_poiid:
-          description: 如何获取parking_poiid（高德地图唯一标标识）参考文档 https://opendocs.alipay.com/support/01rghx；若无法成功获取高德POI时，也可选用经纬度的方式注册。
+          description: 如何获取parking_poiid（高德地图唯一标标识）参考文档 <a href="https://opendocs.alipay.com/support/01rghx">https://opendocs.alipay.com/support/01rghx</a>
+            ；若无法成功获取高德POI时，也可选用经纬度的方式注册。
           example: B000A9JM2H
           type: string
         parking_start_time:
@@ -39690,20 +39665,25 @@ components:
           example: "2"
           type: string
         pay_type:
-          description: "支付方式。枚举支持：\t1：表示支付宝在线缴费。\t2：表示支付宝代扣缴费。\t3：表示当面付。\t说明：如支持多种\
-            方式以 ',' 进行分隔。"
+          description: "支付方式。枚举支持：\t1：表示支付宝在线缴费。\t2：表示支付宝代扣缴费。\t3：表示当面付。\t4:  现金\t\
+            说明：如支持多种方式以 ',' 进行分隔。"
           example: "2"
           type: string
         payment_mode:
           description: 该参数废弃
           example: "1"
           type: string
+        service_list:
+          description: 停车场服务信息列表
+          items:
+            $ref: '#/components/schemas/ParkingLotServiceInfo'
+          type: array
         shopingmall_id:
           description: 商圈id
           example: "100001008"
           type: string
         sum_space:
-          description: 停车场车位数
+          description: 停车场车位数 单位:个
           example: "3000"
           type: string
         support_after_pay:
@@ -39761,6 +39741,11 @@ components:
           items:
             $ref: '#/components/schemas/BusinessItem'
           type: array
+        charging_rule:
+          description: 停车场详细计费规则
+          items:
+            $ref: '#/components/schemas/ParkingLotChargingRuleInfo'
+          type: array
         city_id:
           description: 城市编码
           example: "010"
@@ -39787,27 +39772,31 @@ components:
           type: string
         parking_fee_description:
           description: 收费说明
-          example: 小车一小时10元
+          example: 免费时长30分钟，首2小时10元/小时，超过首2小时后2元/小时，封顶20元
           type: string
         parking_fee_description_img:
-          description: 停车场价格明细图片
-          example: https://mdgwdev.alipay.net/afts/img/A*617CRpBdj_fJCs1NmMi4dQAAAa4wAA/original?bz=industry_etc&t=-NhhRTMCAllKiM3Vj1mNcQAAAABkMK5ft-HF
+          description: 商户在停车平台露出的停车价格图片地址
+          example: https://mdgwdev.alipay.net/afts/img/A*kuqcSrYFb-UAAAAAAAAAAAAAAa4wAA/original?bz=industry_etc&t=o1fIvmX6eWqqfNUweghok0-vDxNgenaTEV_PtKx-sTYDAAAAZAAAMK4AAAAA
           type: string
         parking_id:
           description: 支付宝返回停车场id，系统唯一
           example: PI1532313981415143356
           type: string
         parking_latitude:
-          description: 停车场位置经度（优先高德坐标获取结果）
+          description: 停车场位置经度（优先高德坐标获取结果）单位：度
           example: "39.998001"
           type: string
         parking_longitude:
-          description: 停车场位置经度（优先高德坐标获取结果）
+          description: 停车场位置经度（优先高德坐标获取结果）单位：度
           example: "116.480654"
           type: string
         parking_lot_type:
-          description: 停车场类型，1为居民小区、2为商圈停车场（购物中心商业广场商场等）、3为路侧停车、4为公园景点（景点乐园公园老街古镇等）、5为商务楼宇（酒店写字楼商务楼园区等）、6为其他、7为交通枢纽（机场火车站汽车站码头港口等）、8为市政设施（体育场博物图书馆医院学校等）
-          example: 2为商圈停车场（购物中心商业广场商场等）
+          description: 停车场类型，1为居民小区、2为商圈停车场（购物中心商业广场商场等）、3为路侧停车、4为公园景点（景点乐园公园老街古镇等）、5为商务楼宇（酒店写字楼商务楼园区等）、6为其他、7为交通枢纽（机场火车站汽车站码头港口等）、8为市政设施（体育场博物图书馆医院学校等）、9独立园区（办公工业物流园区等）、10经营场所（4S店、门市餐饮等
+          example: "1"
+          type: string
+        parking_lot_type_code:
+          description: 停车场类型，COMMUNITY为居民小区、BUSINESS_AREA为商圈停车场（购物中心商业广场商场等）、ROADSIDE为路侧停车、PARK_SCENIC为公园景点（景点乐园公园老街古镇等）、OFFICE_BUILDING为商务楼宇（酒店写字楼商务楼园区等）、OTHER为其他、TRANSPORTATION为交通枢纽（机场火车站汽车站码头港口等）、PUBLIC_FACILITIES为市政设施（体育场博物图书馆医院学校等）、TERRITORY独立园区（办公工业物流园区等）、BUSINESS_PLACE经营场所（4S店、门市餐饮等
+          example: COMMUNITY
           type: string
         parking_mobile:
           description: 停车场客服电话
@@ -39822,13 +39811,18 @@ components:
           example: B0FFFAIBGG
           type: string
         pay_type:
-          description: "支付方式（1为支付宝在线缴费，2为支付宝代扣缴费，3当面付)，如支持多种方式以','进行间隔"
-          example: 2为支付宝代扣缴费
+          description: "支付方式（1为支付宝在线缴费，2为支付宝代扣缴费，3当面付 4现金)，如支持多种方式以','进行间隔"
+          example: "2"
           type: string
         province_id:
           description: 省份编码
           example: "110000"
           type: string
+        service_list:
+          description: 停车场服务信息列表
+          items:
+            $ref: '#/components/schemas/ParkingLotServiceInfo'
+          type: array
         shopingmall_id:
           description: 商圈id
           example: "100001008"
@@ -39909,6 +39903,11 @@ components:
           items:
             $ref: '#/components/schemas/BusinessItem'
           type: array
+        charging_rule:
+          description: 停车场详细计费规则详细说明
+          items:
+            $ref: '#/components/schemas/ParkingLotChargingRuleInfo'
+          type: array
         city_id:
           description: 该参数废弃
           example: "110101"
@@ -39950,11 +39949,11 @@ components:
           example: 571-8643-2799
           type: string
         latitude:
-          description: 纬度
+          description: 纬度，单位:度
           example: "30.548828"
           type: string
         longitude:
-          description: 经度
+          description: 经度 单位:度
           example: "114.266418"
           type: string
         mchnt_id:
@@ -40002,8 +40001,8 @@ components:
           example: "2014072300007148"
           type: string
         parking_lot_type:
-          description: 停车场类型，1为居民小区、2为商圈停车场（购物中心商业广场商场等）、3为路侧停车、4为公园景点（景点乐园公园老街古镇等）、5为商务楼宇（酒店写字楼商务楼园区等）、6为其他、7为交通枢纽（机场火车站汽车站码头港口等）、8为市政设施（体育场博物图书馆医院学校等）
-          example: "1"
+          description: 停车场类型，COMMUNITY为居民小区、BUSINESS_AREA为商圈停车场（购物中心商业广场商场等）、ROADSIDE为路侧停车、PARK_SCENIC为公园景点（景点乐园公园老街古镇等）、OFFICE_BUILDING为商务楼宇（酒店写字楼商务楼园区等）、OTHER为其他、TRANSPORTATION为交通枢纽（机场火车站汽车站码头港口等）、PUBLIC_FACILITIES为市政设施（体育场博物图书馆医院学校等）、TERRITORY独立园区（办公工业物流园区等）、BUSINESS_PLACE经营场所（4S店、门市餐饮等
+          example: COMMUNITY
           type: string
         parking_mobile:
           description: 停车场客服电话
@@ -40018,9 +40017,8 @@ components:
           example: "10000"
           type: string
         parking_poiid:
-          description: "高德地图唯一标识。新增高德兴趣点流程 <a href=\"https://opensupport.alipay.com/support/helpcenter/311/201602557288?ant_source=zsearch\"\
-            >点此查看详情</a> 。\t获取高德兴趣点流程 <a href=\"https://opensupport.alipay.com/support/helpcenter/311/201602557287?ant_source=zsearch\"\
-            >点此查看详情</a>。"
+          description: 如何获取parking_poiid（高德地图唯一标标识）参考文档 <a href="https://opendocs.alipay.com/support/01rghx">https://opendocs.alipay.com/support/01rghx</a>
+            ；若无法成功获取高德POI时，也可选用经纬度的方式注册。
           example: B000A9JM2H
           type: string
         parking_start_time:
@@ -40032,20 +40030,25 @@ components:
           example: "1"
           type: string
         pay_type:
-          description: "支付方式。枚举支持：\t*1：表示支付宝在线缴费。 \t*2：表示支付宝代扣缴费。 \t*3：表示当面付。 \t说明\
-            ：如支持多种方式以 ',' 进行分隔。"
+          description: "支付方式。枚举支持：\t*1：表示支付宝在线缴费。 \t*2：表示支付宝代扣缴费。 \t*3：表示当面付。 \t*4：\
+            表示现金。 \t\t说明：如支持多种方式以 ',' 进行分隔。"
           example: "2"
           type: string
         payment_mode:
           description: 该参数废弃
           example: "1"
           type: string
+        service_list:
+          description: 停车场场内服务信息
+          items:
+            $ref: '#/components/schemas/ParkingLotServiceInfo'
+          type: array
         shopingmall_id:
           description: 商圈id
           example: "100001008"
           type: string
         sum_space:
-          description: 停车场车位数
+          description: 停车场车位数 ，单位:个
           example: "3000"
           type: string
         support_after_pay:
@@ -40482,6 +40485,10 @@ components:
           - OPEN_ACCOUNT_BOOK_ERROR
           - MERCHANT_PRODUCT_NOT_SIGN
           - USER_NOT_EXIST
+          - PRODUCT_NOT_SIGN
+          - SYSTEM_ERROR
+          - AUTH_CODE_ERROR
+          - AUTHOREE_IS_NOT_MATCH
           type: string
         links:
           description: 解决方案链接
@@ -42641,6 +42648,10 @@ components:
           description: 授权签约协议号
           example: "20214922001380716008"
           type: string
+        agreement_sign_info:
+          description: 关联代扣协议签约串
+          example: alipay_sdk%3Dalipay-sdk-java-dynamicVersionNo%26app_id%3D2019072465924554%26biz_content%3D%257B%2522sign_validity_p
+          type: string
         biz_scene:
           description: 业务场景，联系支付宝分配
           example: ISV_STANDARD
@@ -42648,8 +42659,8 @@ components:
         business_params:
           $ref: '#/components/schemas/InviteMemberBusinessParamsDTO'
         identity:
-          description: "成员账号：\tidentity_type是ALIPAY_USER_ID填支付宝会员ID（2088开头）；\t是ALIPAY_LOGON_ID\
-            \ 填支付宝登录号；\t是ALIPAY_OPEN_ID 填支付宝openId"
+          description: "该字段为被邀请方账号ID：\t当identity_type为ALIPAY_USER_ID时，需要填支付宝ID；当identity_type为\
+            ALIPAY_LOGON_ID时，需要填支付宝登录号；当identity_type为ALIPAY_OPEN_ID时，需要填支付宝openId"
           example: name@email.com
           type: string
         identity_type:
@@ -43313,7 +43324,6 @@ components:
           - PAYMENT_INFO_INCONSISTENCY
           - ORDER_STATUS_INVALID
           - ORDER_PAY_SUCCESS_PAYEE_ERROR
-          - UNKNOWN_ERROR
           - USER_BLOCKED
           - ORDER_OTHER_PAY_SUCCESS
           - TRUSTEESHIP_ACCOUNT_NOT_EXIST
@@ -43362,10 +43372,11 @@ components:
           - PAYEE_NOT_RELNAME_CERTIFY
           - BANK_CARD_BALANCE_NOT_ENOUGH
           - MAX_VISIT_LIMIT
-          - COMMON_RPC_ERROR
           - MONTH_LIMIT_EXCEED
           - DAILY_LIMIT_EXCEED
           - PERM_RECEIVE_CUSTOMER_ALMS_LIMIT
+          - PAYCARD_UNABLE_PAYMENT
+          - PAYEE_USERINFO_ERROR
           type: string
         links:
           description: 解决方案链接
@@ -43832,6 +43843,10 @@ components:
           - RECEIVER_USER_RISK_FREEZE
           - PAYER_PAYEE_ACCOUNT_NAME_CAN_NOT_SAME
           - PAYEE_CERT_INFO_ERROR
+          - ACCOUNT_IN_NOT_EXIST
+          - GLOBAL_USER_FORBBIDEN_RECIEVE
+          - ACCOUNT_OPERATION_LIMIT
+          - PAYER_UNABLE_PAYMENT
           type: string
         links:
           description: 解决方案链接
@@ -43851,8 +43866,8 @@ components:
           example: DIRECT_TRANSFER
           type: string
         business_params:
-          description: "转账业务请求的扩展参数，支持传入的扩展参数如下：\tsub_biz_scene 子业务场景，红包业务必传，取值REDPACKET，\
-            C2C现金红包、B2C现金红包均需传入"
+          description: "转账业务请求的扩展参数，支持传入的扩展参数如下：\tsub_biz_scene 子业务场景，红包业务必传，C2C现金\
+            红包、B2C现金红包均需传入，取值REDPACKET"
           example: "{\"sub_biz_scene\":\"REDPACKET\"}"
           type: string
         mutiple_currency_detail:
@@ -45515,6 +45530,18 @@ components:
           items:
             $ref: '#/components/schemas/ArticleInfo'
           type: array
+        page_num:
+          description: 页数
+          example: 1
+          type: integer
+        page_size:
+          description: 分页大小
+          example: 1
+          type: integer
+        total_count:
+          description: 总数
+          example: 1
+          type: integer
       type: object
     AlipayIserviceCcmSwArticleCreateErrorResponseModel:
       properties:
@@ -45536,6 +45563,11 @@ components:
       type: object
     AlipayIserviceCcmSwArticleCreateModel:
       properties:
+        attachments:
+          description: 附件列表
+          items:
+            $ref: '#/components/schemas/ArticleAttachmentInfo'
+          type: array
         category_id:
           description: 所属类目ID，如果search_all_category为true则不用填
           example: 12
@@ -45564,6 +45596,19 @@ components:
           description: 知识库ID
           example: "1"
           type: string
+        publish_end:
+          description: 默认为 2999-12-31 23:59:59
+          example: 2024-06-01 19:00:00
+          type: string
+        publish_start:
+          description: 默认为当前时间
+          example: 2024-06-01 10:00:00
+          type: string
+        related_articles:
+          description: 关联知识点
+          items:
+            $ref: '#/components/schemas/BaseArticleInfo'
+          type: array
         scene_codes:
           description: 场景ID。KNOWLEDGE（内部知识库）；ROBOT（机器人）;HELP（帮助中心）；WHELP（无线帮助中心）
           example: "[\"KNOWLEDGE\",\"ROBOT\",\"HELP\",\"WHELP\"]"
@@ -45689,6 +45734,11 @@ components:
           description: 有效期起始
           example: 2020-06-11 16:14:58
           type: string
+        related_articles:
+          description: 关联的知识点基础信息
+          items:
+            $ref: '#/components/schemas/BaseArticleInfo'
+          type: array
         scene_codes:
           description: 场景ID。1（内部知识库）；2（机器人）;3（帮助中心）；4（无线帮助中心）
           example: "[\"1\",\"2\",\"3\",\"4\"]"
@@ -45744,6 +45794,11 @@ components:
       type: object
     AlipayIserviceCcmSwArticleModifyModel:
       properties:
+        attachments:
+          description: 附件列表
+          items:
+            $ref: '#/components/schemas/ArticleAttachmentInfo'
+          type: array
         category_id:
           description: 所属类目ID，如果search_all_category为true则不用填
           example: 12
@@ -45771,6 +45826,19 @@ components:
           example: "[\"关键\",\"核心\"]"
           items:
             type: string
+          type: array
+        publish_end:
+          description: 有效期结束时间
+          example: 2024-02-02 09:00:00
+          type: string
+        publish_start:
+          description: 有效期开始时间
+          example: 2024-01-01 09:00:00
+          type: string
+        related_articles:
+          description: 关联知识点列表
+          items:
+            $ref: '#/components/schemas/BaseArticleInfo'
           type: array
         scene_codes:
           description: 场景ID。1（内部知识库）；2（机器人）;3（帮助中心）；4（无线帮助中心）
@@ -50255,11 +50323,8 @@ components:
           description: 错误码
           enum:
           - AUTH_IDENTITY_TYPE_ILLEGAL
-          - AUTH_ORDER_CREATE_FAILED
+          - SYSTEM_ERROR
           - AUTH_ORDER_ISV_HAS_RISK
-          - DEPEND_FAILURE
-          - CREATE_ORDER_INFO_FAIL
-          - SERVICE_UNAVAILABLE
           - INVALID_PARAMETER
           - LEGAL_PERSON_NAME_NOT_EQUAL
           - BIZ_CERT_ILLEGAL_CERT_NO
@@ -50287,7 +50352,7 @@ components:
         legal_person_info:
           $ref: '#/components/schemas/IndirectLegalPersonInfo'
         out_biz_no:
-          description: 外部业务号
+          description: 外部业务号。支持out_biz_no和outBizNo两种格式
           example: "00000001"
           type: string
         source:
@@ -50304,7 +50369,7 @@ components:
           example: "20001101"
           type: string
         order_status:
-          description: 意愿申请单状态，枚举值：审核中(AUDITING)、待联系人确认（CONTACT_CONFIRM），待法人确认（LEGAL_CONFIRM）、审核通过(AUDIT_PASS)、审核失败(AUDIT_REJECT)、已冻结(AUDIT_FREEZE)、已撤回(CANCELED)、联系人处理中(CONTACT_PROCESSING)
+          description: 意愿申请单状态，枚举值：审核中(AUDITING)、待联系人确认（CONTACT_CONFIRM），待法人确认（LEGAL_CONFIRM）、审核通过(AUDIT_PASS)、审核驳回(AUDIT_REJECT)、已冻结(AUDIT_FREEZE)、已撤回(CANCELED)、联系人处理中(CONTACT_PROCESSING)
           example: AUDITING
           type: string
       type: object
@@ -50315,7 +50380,8 @@ components:
           enum:
           - ILLEGAL_PARAMETER
           - AUTH_ORDER_NOT_EXIST
-          - DEPEND_FAILURE
+          - SYSTEM_ERROR
+          - ILLEAGL_PARAMETER
           type: string
         links:
           description: 解决方案链接
@@ -50331,7 +50397,7 @@ components:
       properties:
         order_no:
           description: 商家认证申请单号，参数二选一
-          example: "20220000666660001"
+          example: "202203011053773479"
           type: string
         out_biz_no:
           description: 外部业务号，参数二选一，业务自定义，保证唯一
@@ -50351,7 +50417,7 @@ components:
           example: "20220000666660001"
           type: string
         order_status:
-          description: 商家认证申请单状态，枚举值：审核中(AUDITING)、待联系人确认（CONTACT_CONFIRM），待法人确认（LEGAL_CONFIRM）、审核通过(AUDIT_PASS)、审核失败(AUDIT_REJECT)、已冻结(AUDIT_FREEZE)、已撤回(CANCELED)、联系人处理中（CONTACT_PROCESSING）
+          description: 商家认证申请单状态，枚举值：审核中(AUDITING)、待联系人确认（CONTACT_CONFIRM），待法人确认（LEGAL_CONFIRM）、审核通过(AUDIT_PASS)、审核驳回(AUDIT_REJECT)、已冻结(AUDIT_FREEZE)、已撤回(CANCELED)、联系人处理中（CONTACT_PROCESSING）
           example: AUDITING
           type: string
         qr_code:
@@ -50371,9 +50437,9 @@ components:
         code:
           description: 错误码
           enum:
+          - SYSTEM_ERROR
           - ILLEGAL_PARAMETER
-          - DEPEND_FAILURE
-          - SMID_QUERY_NOT_EXIST
+          - ILLEAGL_PARAMETER
           type: string
         links:
           description: 解决方案链接
@@ -50388,7 +50454,7 @@ components:
     AlipayMerchantIndirectSmidbindQueryResponseModel:
       properties:
         check_result:
-          description: 确认状态，枚举：已确认（AUTHORIZED）/未确认（UNAUTHORIZED）/已销户（CLOSED）/smid不存在（SMID_NOT_EXIST）
+          description: 确认状态，枚举：已完成确认（AUTHORIZED）/未完成确认（UNAUTHORIZED）/已销户（CLOSED）/sub_merchant_id不存在（SMID_NOT_EXIST）
           example: AUTHORIZED
           type: string
       type: object
@@ -54548,8 +54614,8 @@ components:
           type: string
         grant_type:
           description: "授权方式。支持：\tauthorization_code：使用应用授权码换取应用授权令牌app_auth_token。\
-            \trefresh_token：使用app_refresh_token刷新获取新授权令牌。\t"
-          example: authorization_code或者refresh_token
+            \trefresh_token：使用app_refresh_token刷新获取新授权令牌。"
+          example: authorization_code
           type: string
         refresh_token:
           description: 刷新令牌，上次换取访问令牌时得到。本参数在 grant_type 为 authorization_code 时不填；为
@@ -54591,8 +54657,8 @@ components:
           type: string
         auth_methods:
           description: 当前app_auth_token的授权接口列表
-          example: "\"alipay.open.auth.token.app.query\",\"alipay.system.oauth.token\"\
-            ,\"alipay.open.auth.token.app\""
+          example: "[\"alipay.open.auth.token.app.query\",\"alipay.system.oauth.token\"\
+            ,\"alipay.open.auth.token.app\"]"
           items:
             type: string
           type: array
@@ -54868,7 +54934,7 @@ components:
       properties:
         logistics_codes:
           description: 配送公司编码
-          example: ISTD
+          example: "[\"UU\",\"DADA\"]"
           items:
             type: string
           type: array
@@ -55319,6 +55385,7 @@ components:
           - INVITE_ISV_BIZ_ID_INVALID
           - INVITE_ISV_BIZ_ID_NOT_EXIST
           - MERCHANT_LOGON_ID_NOT_MATCH
+          - SYSTEM_ERROR
           type: string
         links:
           description: 解决方案链接
@@ -55463,6 +55530,7 @@ components:
           - INVALID_LOGO
           - INVALID_PARAMETER
           - NOT_ALLOW_BETA_CATEGORY
+          - DEVELOPER_INFO_NOT_EXIST
           type: string
         links:
           description: 解决方案链接
@@ -55504,7 +55572,7 @@ components:
           description: "小程序简介，一句话描述小程序功能，长度限制 10~32个字符。\t如果前期已经设置过该信息，本次可不填，平台将会为你\
             默认上传该信息。如果前期没有设置过该信息，则本次为必填。可通过<a href=\"https://opendocs.alipay.com/mini/03l21r?pathHash=36d314be&scene=common\"\
             >alipay.open.mini.baseinfo.query</a>查询当前小程序信息"
-          example: 专注潮流女装20年
+          example: 专注潮流女装20年等等
           type: string
         mini_category_ids:
           description: "新小程序前台类目，格式为 第一个一级类目_第一个二级类目;第二个一级类目_第二个二级类目_第二个三级类目，详细类目可\
@@ -59036,7 +59104,7 @@ components:
           - TINY_APP_NOT_EXIST
           - ROUTE_GROUP_NOT_EXIST
           - NO_PERMISSION
-          - QRCODE_ROUTE_PATTERN_DELETE_NOT_SUPPORT
+          - SYSTEM_ERROR
           type: string
         links:
           description: 解决方案链接
@@ -59664,11 +59732,11 @@ components:
     AlipayOpenMiniTipsStatisticQueryResponseModel:
       properties:
         app_collect_cnt:
-          description: 昨日（接口调用当日的前一天）小程序收藏人数，时间内未创建投放活动，则响应时不传出参数。
+          description: 昨日（接口调用当日的前一天）小程序收藏人数，时间内未创建投放活动，则响应时不传出参数。单位：个。
           example: 4798780
           type: integer
         app_uv:
-          description: 昨日（接口调用当日的前一天）小程序访问人数。当小程序日访问量为0，或以活动维度查询，或时间内未创建投放活动，则响应时不传出参数。
+          description: 昨日（接口调用当日的前一天）小程序访问人数。当小程序日访问量为0，或以活动维度查询，或时间内未创建投放活动，则响应时不传出参数。单位：个。
           example: 3080000
           type: integer
         delivery_content:
@@ -59684,19 +59752,19 @@ components:
           example: "33.33"
           type: string
         tips_collect_uv:
-          description: 昨日（接口调用当日的前一天）收藏引导文案收藏用户数，时间内未创建投放活动，则响应时不传出参数。
+          description: 昨日（接口调用当日的前一天）收藏引导文案收藏用户数，时间内未创建投放活动，则响应时不传出参数。单位：个。
           example: 440000
           type: integer
         tips_expo_uv:
-          description: 昨日（接口调用当日的前一天）收藏引导文案曝光用户数，时间内未创建投放活动，则响应时不传出参数。
+          description: 昨日（接口调用当日的前一天）收藏引导文案曝光用户数，时间内未创建投放活动，则响应时不传出参数。单位：个。
           example: 434000
           type: integer
         total_app_collect_cnt:
-          description: 时间段内累计小程序收藏人数，时间内未创建投放活动，则响应时不传出参数。
+          description: 时间段内累计小程序收藏人数，时间内未创建投放活动，则响应时不传出参数。单位：个。
           example: 7800000
           type: integer
         total_app_uv:
-          description: 时间段内累计小程序访问人数。当小程序日访问量为0，或以活动维度查询，或时间内未创建投放活动，则响应时不传出参数。
+          description: 时间段内累计小程序访问人数。当小程序日访问量为0，或以活动维度查询，或时间内未创建投放活动，则响应时不传出参数。单位：个。
           example: 79980000
           type: integer
         total_tips_collect_rate:
@@ -59704,11 +59772,11 @@ components:
           example: "33.33"
           type: string
         total_tips_collect_uv:
-          description: 时间段内累计收藏引导文案收藏用户数，时间内未创建投放活动，则响应时不传出参数。
+          description: 时间段内累计收藏引导文案收藏用户数，时间内未创建投放活动，则响应时不传出参数。单位：个。
           example: 5030000
           type: integer
         total_tips_expo_uv:
-          description: 时间段内累计收藏引导文案曝光用户数，仅当小程序/活动投放活动时返回。时间内未创建投放活动，则响应时不传出参数。
+          description: 时间段内累计收藏引导文案曝光用户数，仅当小程序/活动投放活动时返回。时间内未创建投放活动，则响应时不传出参数。单位：个。
           example: 2333900
           type: integer
       type: object
@@ -59817,6 +59885,8 @@ components:
           - DEVELOPER_INFO_NOT_EXIST
           - INVALIID_MEMO_TRADENO
           - MEMO_TRADENO_CHECK_FAIL
+          - MINI_APP_VERSION_ITERATION_EXIST
+          - MINIAPP_VERSION_NOT_EXSIT
           type: string
         links:
           description: 解决方案链接
@@ -59959,6 +60029,7 @@ components:
           - BUNDLE_ID_NOT_EXIST
           - INVALID_VERSION_STATUS
           - SYSTEM_ERROR
+          - MINI_APP_VERSION_ITERATION_EXIST
           type: string
         links:
           description: 解决方案链接
@@ -59999,6 +60070,7 @@ components:
           - MINIAPP_VERSION_NOT_EXSIT
           - APP_INFO_NOT_EXIST
           - INVALID_PARAMETER
+          - MINI_APP_VERSION_ITERATION_EXIST
           type: string
         links:
           description: 解决方案链接
@@ -60091,6 +60163,7 @@ components:
           - MINI_APP_PACKAGE_INFO_NOT_EXIST
           - CAN_NOT_DELETE_WITH_INSTANTIATE
           - APP_INFO_NOT_EXIST
+          - MINI_APP_VERSION_ITERATION_EXIST
           type: string
         links:
           description: 解决方案链接
@@ -60105,7 +60178,7 @@ components:
     AlipayOpenMiniVersionDeleteModel:
       properties:
         app_version:
-          description: ' 小程序版本号。只有状态为开发中的版本才能被删除。'
+          description: 小程序版本号。只有状态为开发中的版本才能被删除。
           example: 0.0.1
           type: string
         bundle_id:
@@ -60280,6 +60353,7 @@ components:
           - MINI_APP_VERSION_NOT_EXIST
           - MINI_APP_VERSION_STATUS_ILLEGAL
           - CAN_NOT_CANCEL_GRAY_WITH_DIFF_DW
+          - MINI_APP_VERSION_ITERATION_EXIST
           type: string
         links:
           description: 解决方案链接
@@ -60454,6 +60528,7 @@ components:
           - MERCHANT_NOT_EXESIT
           - CAN_NOT_ONLINE_WITHOUT_REGISTRATION
           - DEVELOPER_INFO_NOT_EXIST
+          - MINI_APP_VERSION_ITERATION_EXIST
           type: string
         links:
           description: 解决方案链接
@@ -60501,6 +60576,7 @@ components:
           - CAN_NOT_ROLLBACK_PUNISH
           - BUNDLE_ID_NOT_EXIST
           - APP_INFO_NOT_EXIST
+          - MINI_APP_VERSION_ITERATION_EXIST
           type: string
         links:
           description: 解决方案链接
@@ -63923,12 +63999,6 @@ components:
       type: object
     AlipayOpenSearchBoxApplyModel:
       properties:
-        area_keywords:
-          description: 小程序直达配置的常用服务中带有门店信息时，可添加简称触发词
-          example: "[\"简称触发词\"]"
-          items:
-            type: string
-          type: array
         box_desc:
           description: "品牌介绍，5-15个中文字符。\t小程序直达不支持设置此项"
           example: 品牌介绍
@@ -64169,12 +64239,6 @@ components:
       type: object
     AlipayOpenSearchBoxModifyModel:
       properties:
-        area_keywords:
-          description: 小程序直达配置的常用服务中带有门店信息时，可添加简称触发词
-          example: "[\"简称触发词\"]"
-          items:
-            type: string
-          type: array
         box_desc:
           description: "品牌介绍，5-15个中文字符。当修改品牌介绍模块(module_type=BOX_EXCLUSIVE_BASE)时传\
             入。\t小程序直达时不支持设置"
@@ -64335,7 +64399,6 @@ components:
           - NO_PERMISSION
           - SYSTEM_ERROR
           - ISV_NOT_AUTH
-          - INPUT_ARGUMENT_ILLEGAL
           type: string
         links:
           description: 解决方案链接
@@ -64351,8 +64414,6 @@ components:
       properties:
         account_module:
           $ref: '#/components/schemas/SearchBoxAccountModule'
-        area_keyword_module:
-          $ref: '#/components/schemas/SearchBoxAreaKeyWordModule'
         basic_info_module:
           $ref: '#/components/schemas/SearchBoxBasicInfoModule'
         box_id:
@@ -64439,6 +64500,8 @@ components:
           description: 商户id，代运营模式下传入。代运营模式，需要服务商已获得商家"运营支付宝小程序"授权。
           example: 2088xxxxxxxxxxxx
           type: string
+        oriented_rule:
+          $ref: '#/components/schemas/DeliveryOrientedRuleInfo'
         start_time:
           description: 活动开始时间，开始和结束时间之间不得超过90天
           example: 2022-02-10 08:00:00
@@ -64590,6 +64653,8 @@ components:
           description: 商户id，代运营模式下传入。代运营模式，需要服务商已获得商家"运营支付宝小程序"授权。
           example: 2088xxxxxxxxxxxx
           type: string
+        oriented_rule:
+          $ref: '#/components/schemas/DeliveryOrientedRuleInfo'
         start_time:
           description: 活动开始时间，开始时间和结束时间之间不能超过90天
           example: 2022-02-10 08:00:00
@@ -64708,6 +64773,8 @@ components:
           description: 当material_type="IMAGE"时，为图片url；当material_type="VIDEO"时，为视频url
           example: http://mdn.alipayobjects.com/mrch_spc/afts/img/A*0XA2Qo_omj4AAAAAAAAAAAAADsF1AQ/original
           type: string
+        oriented_rule:
+          $ref: '#/components/schemas/DeliveryOrientedRuleInfo'
         run_status:
           description: 运行状态，INITIAL-初始/ONLINE-已上架/EXPIRE-已失效/OFFLINE-已下架
           example: ONLINE
@@ -65339,6 +65406,7 @@ components:
           enum:
           - QUERY_FAILD
           - NOPERMISSION_QUERY
+          - SYSTEM_ERROR
           type: string
         links:
           description: 解决方案链接
@@ -65378,7 +65446,7 @@ components:
           example: MERCHANT_ORDED
           type: string
         total_size:
-          description: 总记录数
+          description: 总记录数，例如1000条
           example: 1000
           type: integer
       type: object
@@ -67453,6 +67521,7 @@ components:
           description: 错误码
           enum:
           - INVALID_PARAMETER
+          - SYSTEM_TIMEOUT_ERROR
           type: string
         links:
           description: 解决方案链接
@@ -68418,8 +68487,8 @@ components:
         timeout_express:
           description: "订单相对超时时间。从交易创建时间开始计算。\t该笔订单允许的最晚付款时间，逾期将关闭交易。取值范围：1m～15d。\
             m-分钟，h-小时，d-天，1c-当天（1c-当天的情况下，无论交易何时创建，都在0点关闭）。 该参数数值不接受小数点， 如 1.5h，可转\
-            换为 90m。\t当面付场景默认值为3h。\t注：time_expire和timeout_express两者只需传入一个或者都不传，如果两者\
-            都传，优先使用time_expire。"
+            换为 90m。\t当面付场景默认值为3h，如需指定，推荐设置5m及以上。\t\t注：time_expire和timeout_express两\
+            者只需传入一个或者都不传，如果两者都传，优先使用time_expire。"
           example: 90m
           type: string
         total_amount:
@@ -69375,7 +69444,7 @@ components:
           description: "返回参数选项。\t商户通过传递该参数来定制同步需要额外返回的信息字段，数组格式。包括但不限于：[\"fund_bill_list\"\
             ,\"voucher_detail_list\",\"enterprise_pay_info\",\"discount_goods_detail\"\
             ,\"discount_amount\",\"mdiscount_amount\"]"
-          example: voucher_detail_list
+          example: "[\"voucher_detail_list\"]"
           items:
             type: string
           type: array
@@ -69459,6 +69528,10 @@ components:
         advance_amount:
           description: "先享后付2.0垫资金额,不返回表示没有走垫资，非空表示垫资支付的金额"
           example: "88.8"
+          type: string
+        async_pay_apply_status:
+          description: 异步支付受理状态，仅异步支付模式且query_options指定async_pay_info时返回。S：受理成功，支付宝内部会在一定期限内捞起任务推进支付，直到支付成功或超出可重试期限；其它：受理结果未知，可通过查询接口获取交易状态。
+          example: S
           type: string
         async_payment_mode:
           description: "异步支付模式，目前有五种值：\tASYNC_DELAY_PAY(异步延时付款);\tASYNC_REALTIME_PAY(异\
@@ -69815,9 +69888,9 @@ components:
         timeout_express:
           description: "订单相对超时时间。 从预下单请求时间开始计算。\t该笔订单允许的最晚付款时间，逾期将关闭交易。取值范围：1m～15d。\
             m-分钟，h-小时，d-天，1c-当天（1c-当天的情况下，无论交易何时创建，都在0点关闭）。 该参数数值不接受小数点， 如 1.5h，可转\
-            换为 90m。 \t当面付场景默认值为3h； \t\t注：\t1. 二维码最长有效期是2小时，不管该参数传递的值是多少，超过2小时后二维码都\
-            将失效不能再进行扫码支付。\t2. time_expire和timeout_express两者只需传入一个或者都不传，如果两者都传，优先使用\
-            time_expire。"
+            换为 90m。 \t当面付场景默认值为3h，如需指定，推荐设置5m及以上\t\t注：\t1. 二维码最长有效期是2小时，不管该参数传递的值是\
+            多少，超过2小时后二维码都将失效不能再进行扫码支付。\t2. time_expire和timeout_express两者只需传入一个或者都不\
+            传，如果两者都传，优先使用time_expire。"
           example: 90m
           type: string
         total_amount:
@@ -69901,6 +69974,10 @@ components:
         alipay_sub_merchant_id:
           description: "间连商户在支付宝端的商户编号；\t 只在银行间联交易场景下返回该信息；"
           example: "2088301372182171"
+          type: string
+        async_pay_apply_status:
+          description: 异步支付受理状态，仅异步支付模式且query_options指定async_pay_info时返回。S：受理成功，支付宝内部会在一定期限内捞起任务推进支付，直到支付成功或超出可重试期限；其它：受理结果未知，可重试查询。
+          example: S
           type: string
         auth_trade_pay_mode:
           description: 预授权支付模式，该参数仅在信用预授权支付场景下返回。信用预授权支付：CREDIT_PREAUTH_PAY
@@ -71556,6 +71633,7 @@ components:
           - CERTIFY_ID_EXPIRED
           - OPEN_CERTIFY_BILL_NOT_EXIST
           - OPEN_CERTIFY_BILL_STATUS_ERROR
+          - UNABLE_GET_IMAGE
           type: string
         links:
           description: 解决方案链接
@@ -73316,7 +73394,7 @@ components:
           - SHOP_ALREADY_EXIST
           - GONGAN_CHECK_FAIL
           - GONGSHANG_CHECK_FAIL
-          - MERCHANT_INPUT_ARGUMENT_ILLEGAL
+          - INVALID_PARAMETER
           - CONTACT_PERSON_NAME_NULL
           - USER_ILLEGAL
           - BRAND_ILLEGAL
@@ -73336,7 +73414,6 @@ components:
           - SYSTEM_ERROR
           - GONGSHANG_LICENSE_ILLEGAL
           - BUSINESS_LICENSE_EMPTY
-          - MER_ARGUMENT_NULL
           - MERCHANT_NOT_EXIST
           - ATTACHMENT_TYPE_ILLEGAL
           - SHOP_NOT_EXIST
@@ -73345,7 +73422,6 @@ components:
           - ATTACHMENT_CHECK_FAIL
           - BUSINESS_TIME_ILLEGAL
           - SHOP_AUDIT_REJECT
-          - MER_ARGUMENT_ILLEGAL
           - CTU_INDIRECT_CREATE_FAIL
           - DETAIL_ADDRESS_NOT_CONTAIN_KEYWORD_VALUE
           - SHOP_NAME_EXIST_RISK
@@ -73376,7 +73452,6 @@ components:
           - DETAIL_ADDRESS_CONTAIN_PROVINCES_CITY_REGION
           - SHOP_INFO_SOURCE_OTHER_TAG
           - MERCHANT_ORDER_EXECUTE_CONFLICT
-          - ENUM_ILLEGAL
           - BANK_CARD_TYPE_ILLEGAL
           - TARGET_TYPE_ILLEGAL
           - SHOP_EXT_INFO_NULL
@@ -73391,12 +73466,10 @@ components:
           - ADDRESS_VERSION_CODE_ILLEGAL
           - SHOP_SHOP_TYPE_ILLEGAL
           - SHOP_SOURCE_IS_ILLEGAL
-          - CATEGORY_EVALUATE_FAIL
           - CATEGORY_WITH_NO_PROOF
           - SHOP_ASSET_CHECK_RESULT_EMPTY
           - SHOP_ASSET_NOT_BINDABLE
           - SHOP_ASSET_MAX_LIMIT
-          - SHOP_PRE_RISK_LEVEL_ERROR
           - SHOP_PRE_POI_NOT_FILL_ERROR
           - STORE_ID_LENGTH_ILLEGAL
           - SHOP_COVER_OSSKEY_NOT_EXIST
@@ -73411,8 +73484,11 @@ components:
           - BUSINESS_LICENSE_CANCEL
           - BUSINESS_LICENSE_REVOKED
           - BUSINESS_LICENSE_DATA_STATUS_EXCEPTION
-          - CATEGORY_CODE_ERROR
           - REQUEST_MER_ARGUMENT_NULL
+          - CATEGORY_NOT_ALLOWED_TO_MODIFY
+          - SUBMIT_DIGITAL_POI_AUDIT_FAIL
+          - SHOP_INDUSTRY_CODE_DUPLICATED
+          - SHOP_INDUSTRY_REQUIRED_VALUE_NULL
           type: string
         links:
           description: 解决方案链接
@@ -73432,7 +73508,7 @@ components:
             $ref: '#/components/schemas/SettleCardInfo'
           type: array
         brand_id:
-          description: 品牌id，非加油站等特殊门店无需关注。
+          description: 品牌id，非加油站等特殊门店无需关注。通过BP站品牌工具箱可以获取品牌id
           example: "20181026000001"
           type: string
         business_address:
@@ -73481,6 +73557,16 @@ components:
           items:
             $ref: '#/components/schemas/ShopExtInfo'
           type: array
+        industry_info:
+          description: 行业信息，例如所属集团、特殊标签
+          items:
+            $ref: '#/components/schemas/MerchantShopIndustryInfo'
+          type: array
+        industry_license:
+          description: 门店资质信息
+          items:
+            $ref: '#/components/schemas/ShopIndustryLicense'
+          type: array
         ip_role_id:
           description: 当前门店归属的商户角色 ID，表示当前进件的店铺的归属商户。对于直连开店场景，填写商户 PID。对于间连开店场景（线上、线下、直付通），商户SMID
           example: "2088301155943087"
@@ -73505,7 +73591,7 @@ components:
         out_door_images:
           description: 需传入<a href="https://opendocs.alipay.com/apis/api_1/ant.merchant.expand.indirect.image.upload">ant.merchant.expand.indirect.image.upload</a>
             接口上传图片后得到的 image_id。
-          example: c6c0c7a1-b9d5-4e5d-b9d4-9eed39f00e65.jpg
+          example: "[\"c6c0c7a1-b9d5-4e5d-b9d4-9eed39f00e65.jpg\"]"
           items:
             type: string
           type: array
@@ -73570,7 +73656,7 @@ components:
           - ADDRESS_DISTRICT_CODE_ILLEGAL
           - GONGAN_CHECK_FAIL
           - GONGSHANG_CHECK_FAIL
-          - MERCHANT_INPUT_ARGUMENT_ILLEGAL
+          - INVALID_PARAMETER
           - CONTACT_PERSON_NAME_NULL
           - USER_ILLEGAL
           - BRAND_ILLEGAL
@@ -73602,10 +73688,7 @@ components:
           - SHOP_AUDIT_REJECT
           - ATTACHMENT_URL_NULL
           - SHOP_CODE_ALREADY_EXIST
-          - MER_ARGUMENT_ILLEGAL
           - FIELD_LENGTH_ERROR
-          - MERCHANT_ORDER_EXECUTE_CONFLICT
-          - THIRD_SYSTEM_ERROR
           - CTU_INDIRECT_CREATE_FAIL
           - DETAIL_ADDRESS_NOT_CONTAIN_KEYWORD_VALUE
           - SHOP_NAME_EXIST_RISK
@@ -73634,8 +73717,6 @@ components:
           - DETAIL_ADDRESS_CONTAIN_PROVINCES_CITY_REGION
           - MERCHANT_NOT_EXIST
           - SHOP_INFO_SOURCE_OTHER_TAG
-          - CONFIG_ERROR
-          - ENUM_ILLEGAL
           - ATTACHMENT_TYPE_ILLEGAL
           - BANK_CARD_TYPE_ILLEGAL
           - TARGET_TYPE_ILLEGAL
@@ -73654,12 +73735,10 @@ components:
           - SHOP_SHOPNO_IS_EMPTY
           - SHOP_SHOPNAME_IS_EMPTY
           - SHOP_SOURCE_IS_ILLEGAL
-          - CATEGORY_EVALUATE_FAIL
           - CATEGORY_WITH_NO_PROOF
           - SHOP_ASSET_CHECK_RESULT_EMPTY
           - SHOP_ASSET_NOT_BINDABLE
           - SHOP_ASSET_MAX_LIMIT
-          - SHOP_PRE_RISK_LEVEL_ERROR
           - SHOP_PRE_POI_NOT_FILL_ERROR
           - STORE_ID_LENGTH_ILLEGAL
           - SHOP_COVER_OSSKEY_NOT_EXIST
@@ -73674,6 +73753,10 @@ components:
           - BUSINESS_LICENSE_CANCEL
           - BUSINESS_LICENSE_REVOKED
           - BUSINESS_LICENSE_DATA_STATUS_EXCEPTION
+          - CATEGORY_NOT_ALLOWED_TO_MODIFY
+          - SUBMIT_DIGITAL_POI_AUDIT_FAIL
+          - SHOP_INDUSTRY_CODE_DUPLICATED
+          - SHOP_INDUSTRY_REQUIRED_VALUE_NULL
           type: string
         links:
           description: 解决方案链接
@@ -73693,7 +73776,7 @@ components:
             $ref: '#/components/schemas/SettleCardInfo'
           type: array
         brand_id:
-          description: 品牌id。若无需更新本信息项，可以不填写
+          description: 品牌id。若无需更新本信息项，可以不填写。可以从B/P站品牌工具箱获取品牌id
           example: "20181026000001"
           type: string
         business_address:
@@ -73739,6 +73822,16 @@ components:
           items:
             $ref: '#/components/schemas/ShopExtInfo'
           type: array
+        industry_info:
+          description: 行业信息，例如所属集团、特殊标签
+          items:
+            $ref: '#/components/schemas/MerchantShopIndustryInfo'
+          type: array
+        industry_license:
+          description: 门店资质信息
+          items:
+            $ref: '#/components/schemas/ShopIndustryLicense'
+          type: array
         ip_role_id:
           description: 商户角色id，表示将要修改的店属于哪个商户角色，和store_id一起定位待修改的门店。对于直连场景，填写商户pid；对于间连场景（线上、线下、直付通），填写商户smid。本信息项不可修改
           example: "2088301155943087"
@@ -73763,7 +73856,7 @@ components:
         out_door_images:
           description: 门头照，其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss
             key。若无需更新本信息项，可以不填写。若填写则会整体覆盖原有的门头照列表
-          example: c6c0c7a1-b9d5-4e5d-b9d4-9eed39f00e65.jpg
+          example: "[\"c6c0c7a1-b9d5-4e5d-b9d4-9eed39f00e65.jpg\"]"
           items:
             type: string
           type: array
@@ -73854,7 +73947,6 @@ components:
           - MERCHANT_NOT_EXIST
           - ADDRESS_VERSION_CODE_ILLEGAL
           - SYSTEM_ERROR
-          - THIRD_SYSTEM_ERROR
           type: string
         links:
           description: 解决方案链接
@@ -73917,9 +74009,18 @@ components:
           items:
             $ref: '#/components/schemas/ShopExtInfo'
           type: array
+        industry_info:
+          description: 查询门店详情时，如果需要同时返回行业信息，需要设置入参中的need_industry_info=1
+          items:
+            $ref: '#/components/schemas/MerchantShopIndustryInfo'
+          type: array
+        industry_license:
+          description: 查询门店详情时，如果需要同时返回行业资质，需要设置入参中的need_industry_license=1
+          items:
+            $ref: '#/components/schemas/ShopIndustryLicense'
+          type: array
         ip_role_id:
-          description: 商户角色id，表示将要开的店属于哪个商户角色。对于直连开店场景，填写商户pid；对于间连开店场景（线上、线下、直付通），填写商户smid。若未传入shop_id
-            则本参数与store_id均必填。
+          description: 商户角色id，门店属于哪个商户角色。对于直连开店场景，为商户pid；对于间连开店场景（线上、线下、直付通），为商户smid。
           example: "2088301155943087"
           type: string
         legal_cert_no:
@@ -73944,7 +74045,8 @@ components:
           type: string
         out_door_images:
           description: 门头照，返回值为一个有访问时限的链接
-          example: https://mif-pub.alipayobjects.com/c6c0c7a1-b9d5-4e5d-b9d4-9eed39f00e65.jpg
+          example: "[\"https://mif-pub.alipayobjects.com/c6c0c7a1-b9d5-4e5d-b9d4-9eed39f00e65.jpg\"\
+            ]"
           items:
             type: string
           type: array
@@ -74103,11 +74205,11 @@ components:
           example: "2013121100055554"
           type: string
         expires_in:
-          description: 过期时间
+          description: 过期时间，单位为秒
           example: "123456"
           type: string
         re_expires_in:
-          description: 刷新令牌过期时间
+          description: 刷新令牌过期时间，单位为秒
           example: "123456"
           type: string
         user_id:
@@ -74843,6 +74945,9 @@ components:
         file_name:
           description: 文章附件
           type: string
+        id:
+          description: 附件id
+          type: integer
         key:
           description: 附件完整Key
           type: string
@@ -75248,7 +75353,7 @@ components:
     AuthInfo:
       properties:
         auth_code:
-          description: 授权号
+          description: 授权号，协议授权或者cif协议对应的授权号。
           example: "12345678"
           type: string
         auth_type:
@@ -75408,8 +75513,7 @@ components:
     BankcardExtInfo:
       properties:
         account_type:
-          description: "收款账户类型。\r\t1：对公（在金融机构开设的公司账户）,如果银行卡为对公，必须传递省市支行信息或者联行号\r\t\
-            2：对私（在金融机构开设的个人账户）"
+          description: "收款账户类型。\t1：对公（在金融机构开设的公司账户）\t2：对私（在金融机构开设的个人账户）"
           type: string
         bank_code:
           description: 银行支行联行号
@@ -75424,7 +75528,16 @@ components:
           description: 机构名称
           type: string
         inst_province:
-          description: 银行所在省份
+          description: 银行所在省
+          type: string
+      type: object
+    BaseArticleInfo:
+      properties:
+        id:
+          description: 知识点id
+          type: integer
+        title:
+          description: 知识点标题
           type: string
       type: object
     BatchRoyaltyDetail:
@@ -77074,7 +77187,8 @@ components:
     ConversionData:
       properties:
         ad_id:
-          description: 广告id
+          description: 广告创意id，来自：<a href='https://adpub.alipay.com/lark/adrlark/qm1v2gtpvcftele4'>监测上报</a>或<a
+            href='https://adpub.alipay.com/lark/adrlark/gw3740rggm4n5gar'>落地页宏替换</a>配置的__AD_ID__宏参发生用户点击替换后的值
           example: "123"
           type: string
         attribute_list:
@@ -77090,19 +77204,25 @@ components:
           example: Zybnom890437Mvcu
           type: string
         callback_ext_info:
-          description: 转化回调扩展信息
+          description: 来自：<a href='https://adpub.alipay.com/lark/adrlark/qm1v2gtpvcftele4'>监测上报</a>或<a
+            href='https://adpub.alipay.com/lark/adrlark/gw3740rggm4n5gar'>落地页宏替换</a>配置的__CALLBACK_EXT_INFO__宏参发生用户点击替换后的值，需url
+            decode后传回。
           example: hAXLRVRoQHTgh2CQLhjfkX_0HR80F7ktEabHmKgD_XSSXPF2Pwv-a_pEAQVW2FS-6FCLShsXMMU4Ctx0X61swqcK4Qme3YdxzrjynZ_gYjQ8Iv4MNcM0d8oHKFiDWyOx
           type: string
         cid:
-          description: 来自监测链接配置的__CID__宏参发生用户点击替换的值
+          description: "用于精准归因，来自：<a href='https://adpub.alipay.com/lark/adrlark/qm1v2gtpvcftele4'>监\
+            测上报</a>或<a href='https://adpub.alipay.com/lark/adrlark/gw3740rggm4n5gar'>落\
+            地页宏替换</a>配置的__CID__宏参发生用户点击替换后的值。<br>\t支持cid上报的转化事件类型请参见：<br>\t<a href='https://adpub.alipay.com/lark/adrlark/pg4vb1c0g0u6fx7b'>app推\
+            广类转化事件类型</a><br>\t<a href='https://adpub.alipay.com/lark/adrlark/rvzylhryxh37yplt'>通\
+            用类转化事件类型</a>"
           example: 8e91eca2-930d-4b4e-bb38-1ba74146cd06
           type: string
         conversion_amount:
-          description: 转化金额，单位分
+          description: "转化金额，单位分。\t金额类转化事件必传"
           example: "20"
           type: string
         conversion_id:
-          description: 当source=COMMON_CONVERSION_ID时使用
+          description: 转化事件id，当source=COMMON_CONVERSION_ID需上传该字段，其他情况无需上传。
           example: "167390987332"
           type: string
         conversion_time:
@@ -77114,7 +77234,8 @@ components:
           example: "225"
           type: string
         creative_id:
-          description: 创意ID
+          description: 广告创意id，来自：<a href='https://adpub.alipay.com/lark/adrlark/qm1v2gtpvcftele4'>监测上报</a>或<a
+            href='https://adpub.alipay.com/lark/adrlark/gw3740rggm4n5gar'>落地页宏替换</a>配置的__AD_ID__宏参发生用户点击替换后的值
           example: "6785"
           type: string
         data_id:
@@ -77130,7 +77251,8 @@ components:
           example: KR_MEMBER
           type: string
         group_id:
-          description: 单元ID
+          description: 广告单元id，来自：<a href='https://adpub.alipay.com/lark/adrlark/qm1v2gtpvcftele4'>监测上报</a>或<a
+            href='https://adpub.alipay.com/lark/adrlark/gw3740rggm4n5gar'>落地页宏替换</a>配置的__GROUP_ID__宏参发生用户点击替换后的值
           example: "7896"
           type: string
         join_channel:
@@ -77138,25 +77260,33 @@ components:
           example: XLIGHT
           type: string
         plan_id:
-          description: 计划ID
+          description: 广告计划id，来自：<a href='https://adpub.alipay.com/lark/adrlark/qm1v2gtpvcftele4'>监测上报</a>或<a
+            href='https://adpub.alipay.com/lark/adrlark/gw3740rggm4n5gar'>落地页宏替换</a>配置的__PLAN_ID__宏参发生用户点击替换后的值
           example: "1789"
           type: string
         principal_id:
-          description: "商户在灯火pb端的id, 可代替principal_tag"
+          description: "商户在灯火pb端的id, 可代替principal_tag。"
           example: "1"
           type: string
         principal_tag:
-          description: 商家标志，可代替principal_id
+          description: "商家标志，可代替principal_id。获取方法：\t<a href='https://adpub.alipay.com/lark/adrlark/sbk3vetg6ki5m4r8'>principal_tag获\
+            取sop</a><br>"
           example: HYjofejnnlp89730202bcklHH
           type: string
         property_list:
-          description: 转化归因字段列表
+          description: "转化归因字段列表。不同转化事件类型回传property_list不同。请参见回传示例：<br>\t<a href=\"\
+            https://adpub.alipay.com/lark/adrlark/pvbgwf72ea090877\">通用类转化事件回传示例</a><br>\t\
+            <a href=\"https://adpub.alipay.com/lark/adrlark/kgnnk94p0p1mwbgp\">APP推\
+            广类转化事件回传示例</a><br>"
           items:
             $ref: '#/components/schemas/ConversionProperty'
           type: array
         source:
-          description: "来源：\tCOMMON_TARGET-通用转化事件类型适用\tCALLBACK-APP推广类转化事件类型适用\tOTHER-其\
-            它"
+          description: "<br>\tCOMMON_TARGET：<a href='https://adpub.alipay.com/lark/adrlark/rvzylhryxh37yplt'>通\
+            用类转化事件类型</a>适用<br>\tCALLBACK：<a href='https://adpub.alipay.com/lark/adrlark/pg4vb1c0g0u6fx7b'>APP推\
+            广类转化事件类型</a>适用<br>\t不同source的参数回传规则请参考：\tCOMMON_TARGET：<a href='https://adpub.alipay.com/lark/adrlark/dxw7fkkdnhm45spm'>通\
+            用转化回传参数说明</a><br>\tCALLBACK：\t<a href='https://adpub.alipay.com/lark/adrlark/wxou6agg3z1o6wyn'>APP推\
+            广类转化回传参数说明</a>"
           example: COMMON_TARGET
           type: string
         target_id:
@@ -77172,7 +77302,12 @@ components:
           example: STORE
           type: string
         uuid:
-          description: "转化用户（发生真实转化的用户）唯一标识。\t当uuid_type=PID时，传2088UID（例：208801217938xxxx）"
+          description: "发生转化用户的唯一标识。\tuuid_type不同，uuid传值不同：<br>\t1. 若uuid_type=【PID】\
+            ：uuid为发生转化用户的2088id。若获取不到，可固定一个值后，上传callback_ext_info参数。<br>\t2. 若uuid_type=【\
+            OAID_MD5】【IDFA_MD5】【IP_UA】【CAID】【MEI】: uuid传的值为<a href='https://adpub.alipay.com/lark/adrlark/qm1v2gtpvcftele4'>监\
+            测上报</a>或<a href='https://adpub.alipay.com/lark/adrlark/gw3740rggm4n5gar'>落\
+            地页宏替换</a>配置的对应宏参下发的值<br>\t其中当uuid_type=IP_UA时：__IP__、__UA__宏参需用\"_\"拼接\
+            上传<br>"
           example: 7893ybc7032173
           type: string
         uuid_open_id:
@@ -77180,9 +77315,11 @@ components:
           example: oPXyY4O0ZTmUqSX4MRxYDDCccT6Kc9EXX
           type: string
         uuid_type:
-          description: "通用转化事件类型数据回传可使用：PID，表示转化用户唯一标志类型。\t自建站转化事件类型可使用：PID_ENCRYPT，\
-            自建站转化事件类型编码:445~450。\tapp推广类转化事件类型可使用：\tOAID_MD5：oaid md5值\tIDFA_MD5：\
-            idfa md5值\tIP+UA:ip ua拼接值"
+          description: "<a href='https://adpub.alipay.com/lark/adrlark/rvzylhryxh37yplt'>通\
+            用类转化事件类型：</a><br>\tuuid_type固定为PID：表示转化用户唯一标识<br>\t<a href='https://adpub.alipay.com/lark/adrlark/pg4vb1c0g0u6fx7b'>APP推\
+            广类转化事件类型：</a><br>\tOAID_MD5：表示OAID原值MD5加密后的值<br>\tIDFA_MD5：表示IDFA原值MD5加\
+            密后的值<br>\tIP_UA：表示IP_UA拼接值，以下划线拼接<br>\tCAID：表示CAID原值<br>\tIMEI：表示IMEI原\
+            值<br>"
           example: PID
           type: string
       type: object
@@ -77195,7 +77332,9 @@ components:
           description: 转化属性名称
           type: string
         value:
-          description: 业务转化属性实例值
+          description: "业务转化属性实例值，\tproperty_list的value值需与转化管理里创建转化事件时填写的归因口径值保持一致\
+            <br>\tattrbute_list的value值请参考该文档：<a href='https://adpub.alipay.com/adrlark/ivdktpyh511x9r6i'>转\
+            化事件类型属性规则</a>"
           type: string
       type: object
     CreateMiniRequest:
@@ -77507,11 +77646,10 @@ components:
           description: 错误码
           enum:
           - SYSTEM_ERROR
-          - ILLEGAL_ARGUMENT_FORMAT
+          - INVALID_PARAMETER
           - ARRANGEMENT_STATUS_ERROR
           - ACCOUNT_MONEY_LIMIT_ERROR
           - INVALID_SWITCH
-          - UNKNOWN_ERROR
           type: string
         links:
           description: 解决方案链接
@@ -77554,12 +77692,11 @@ components:
         code:
           description: 错误码
           enum:
-          - UNKNOWN_ERROR
-          - ILLEGAL_ARGUMENT_FORMAT
+          - SYSTEM_ERROR
+          - INVALID_PARAMETER
           - CERTIFY_ID_EXPIRED
           - OPEN_CERTIFY_BILL_NOT_EXIST
           - OPEN_CERTIFY_BILL_STATUS_ERROR
-          - SYSTEM_ERROR
           type: string
         links:
           description: 解决方案链接
@@ -77596,8 +77733,7 @@ components:
           description: 错误码
           enum:
           - SYSTEM_ERROR
-          - ILLEGAL_ARGUMENT_FORMAT
-          - UNKNOWN_ERROR
+          - INVALID_PARAMETER
           type: string
         links:
           description: 解决方案链接
@@ -77680,8 +77816,7 @@ components:
           description: 错误码
           enum:
           - SYSTEM_ERROR
-          - ILLEGAL_ARGUMENT_FORMAT
-          - UNKNOWN_ERROR
+          - INVALID_PARAMETER
           - QUERY_INVALID_CERTIFYID
           - QUERY_CERTIFYID_EXPIRED
           type: string
@@ -77709,13 +77844,15 @@ components:
           description: PROCESSING：初始化；SUCCESS：检测成功；FAIL：检测失败
           example: SUCCESS
           type: string
+        meta_info:
+          $ref: '#/components/schemas/OpenCertifyMetaInfo'
         quality:
-          description: double值，人脸图片质量分
-          example: "4.84"
+          description: 人脸图片质量分，单位为分
+          example: "20"
           type: string
         score:
-          description: 已废弃
-          example: "3.58"
+          description: 人脸比对分，单位分
+          example: "60"
           type: string
       type: object
     DatadigitalFincloudGeneralsaasFaceSourceCertifyErrorResponseModel:
@@ -78280,6 +78417,12 @@ components:
             type: string
           type: array
       type: object
+    DeliveryOrientedRuleInfo:
+      properties:
+        client_platform:
+          description: 客户端
+          type: string
+      type: object
     DeliveryPlayConfig:
       properties:
         delivery_full_send_config:
@@ -78542,7 +78685,7 @@ components:
           description: 外部交易流水号
           type: string
         category_name:
-          description: 账单分类名称，比如：餐饮美食，交通出行，酒店旅游等
+          description: 账单分类名称，如餐饮等
           type: string
         consume_amount:
           description: 账单金额，单位：元，不包含营销资产
@@ -78551,13 +78694,18 @@ components:
           description: "账单业务类型\t-因公支付：EC_PAY\t-因公收款：EC_CLLCT"
           type: string
         consume_category:
-          description: 员工消费记账分类
+          description: "员工消费记账分类：\t\"cater\": \"餐饮\"\t\"purchase\": \"采购\"\t\"trip\"\
+            : \"出行\"\t\"train\": \"培训\"\t\"entertainment\": \"娱乐\"\t\"hotel\": \"酒\
+            店\"\t\"pay\": \"缴费\"\t\"rent\": \"房租\"\t\"other\": \"其他\""
           type: string
         consume_fee_with_discount:
           description: 订单原价，单位：元，包含营销资产
           type: string
         consume_memo:
           description: 员工消费记账备注
+          type: string
+        consume_title:
+          description: 商户收款时传的商品备注说明，在账单内进行表达
           type: string
         consume_type:
           description: "账单类型\t-消费账单：CONSUME\t-退款账单：REFUND\t-转账账单：TRANSFER"
@@ -78581,12 +78729,7 @@ components:
           description: 费用类型子类目
           type: string
         ext_infos:
-          description: "账单扩展信息，JsonMap格式, key值枚举 [{\"value\": \"SUMMARY_INFO\",\"\
-            name\": \"账单汇总信息\"},{\"value\": \"MERCHANT_EXTEND_INFO\",\"name\": \"商\
-            户扩展信息\"}, {\"value\": \"TERMINAL_INFO\",\"name\": \"终端设备信息\"},{\"value\"\
-            : \"BENEFIT_INFO\",\"name\": \"优惠扩展信息\"}, {\"value\": \"CONSUMPTION_LOCATION\"\
-            ,\"name\": \"消费上报位置\"},{\"value\": \"THIRD_PARTY_PAYMENT_INFO\",\"name\"\
-            : \"代收款详情\"}]"
+          description: 账单扩展信息，JsonMap格式，以下信息可组合返回，"SUMMARY_INFO"表示"账单汇总信息"，"MERCHANT_EXTEND_INFO"表示"商户信息"，"TERMINAL_INFO"表示"终端设备信息"，"BENEFIT_INFO"表示"员工优惠信息"，"CONSUMPTION_LOCATION"表示"消费上报位置"，"THIRD_PARTY_PAYMENT_INFO"表示"代收款详情"
           type: string
         fund_biz_type:
           description: "出资模式\t个人出资：PERSONAL\t企业出资：ENTERPRISE\t三方垫资合作伙伴出资：TP\t记账：ACCOUNTING"
@@ -78613,7 +78756,7 @@ components:
           description: 收款方全称（如果是个人会显示脱敏后的名称）
           type: string
         order_complete_label:
-          description: "订单完结标识\t0：未完结\t1：已完结"
+          description: 订单完结标识，0标识“未完结”，1标识“已完结”
           type: string
         order_complete_time:
           description: "2022-01-01 01:01:02\t订单完结时间"
@@ -78640,8 +78783,8 @@ components:
           description: 消费账单企业代付部分退款金额，单位：元。退款账单该值无意义，值为0。
           type: string
         peer_refund_status:
-          description: "消费账单企业代付部分退款状态，默认为INIT。当消费账单有退款，该值会变为REFUND_PART或REFUND_FULL；\
-            退款账单该值无意义，为初始值INIT。\t未退款：INIT，\t部分退款：REFUND_PART，\t全额退款：REFUND_FULL"
+          description: "该字段只对因公付交易生效，默认为INIT。当消费账单有退款，该值会变为REFUND_PART或REFUND_FULL；\
+            退款账单该值无意义，为初始值INIT。\t未退款：INIT\t部分退款：REFUND_PART，\t全额退款：REFUND_FULL"
           type: string
         related_pay_no:
           description: 退款账单关联的消费账单交易流水号，退款账单才有值
@@ -78798,6 +78941,8 @@ components:
           description: 企业ID
           example: "2088000000000000"
           type: string
+        invoice_compliance_check_result:
+          $ref: '#/components/schemas/InvoiceComplianceCheckResult'
         open_id:
           description: 员工支付宝UID
           example: 074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5
@@ -79332,15 +79477,15 @@ components:
     ExecutionPlan:
       properties:
         execute_time:
-          description: 周期扣预期执行时间
+          description: 周期扣预期执行时间，格式为YYYY-MM-DD
           example: 2024-04-29
           type: string
         latest_execute_time:
-          description: 周期扣执行计划最晚执行时间
+          description: 周期扣执行计划最晚执行时间，格式为YYYY-MM-DD
           example: 2024-05-30
           type: string
         period_id:
-          description: 周期扣期数
+          description: 该值为自然数，表示周期扣期数。
           example: "1"
           type: string
         single_amount:
@@ -80452,15 +80597,15 @@ components:
           type: string
         cert_type:
           description: 登记证书类型时必填，枚举：统一社会信用代码证书（UNIT_SOCIAL_CREDIT）、慈善组织公开募捐资格证书（CHARITY_ORG_SOLICIT），社会团体法人登记证书（SOCIAL_ORG_LEGAL），民办非企业单位登记证书（CIVIL_UN_ENT），基金会法人登记证书（FOUNDATION_LEGAL_PERSON），农民专业合作社法人营业执照（FARMERS_COOPERATE），宗教活动场所登记证（RELIGION_PLACES），其他证书/批文/证明（OTHER_REG_CERT）
-          example: SOCIAL_ORG_LEGAL
+          example: UNIT_SOCIAL_CREDIT
           type: string
         effect_time:
           description: 证照生效时间
           example: 1999-01-01
           type: string
         expire_time:
-          description: 证照过期时间
-          example: 2020-11-01，长期有效时传“forever”
+          description: 证照过期时间，yyyy-mm-dd格式，如果是长期有效时传“forever”
+          example: 2020-11-01
           type: string
         legal_person_name:
           description: 证照法人姓名
@@ -80578,7 +80723,8 @@ components:
     IndirectSupportCredentials:
       properties:
         city:
-          description: 门店城市
+          deprecated: true
+          description: 门店城市(该值已废弃，以city_code字段映射的城市名称为准)
           example: 杭州市
           type: string
         city_code:
@@ -80586,8 +80732,9 @@ components:
           example: "3310303"
           type: string
         district:
-          description: 门店街道
-          example: 西湖区留下街道
+          deprecated: true
+          description: 门店所在区县。(该值已废弃，以district_code字段映射的区县名称为准)
+          example: 西湖区
           type: string
         district_code:
           description: 门店街道区号（数字）
@@ -80598,7 +80745,8 @@ components:
           example: STORE
           type: string
         province:
-          description: 门店省份
+          deprecated: true
+          description: 门店省份(该值已废弃，以province_code字段映射的省份名称为准)
           example: 浙江省
           type: string
         province_code:
@@ -80836,6 +80984,13 @@ components:
           description: 抬头类型，0：企业单位，1：个人/非企业
           example: 0
           type: integer
+      type: object
+    InvoiceComplianceCheckResult:
+      properties:
+        match_result_type:
+          description: "发票和账单匹配的合规检查结果：\t0 - 模糊匹配\t1 - 精准匹配"
+          example: "0"
+          type: string
       type: object
     InvoiceContentInfo:
       properties:
@@ -83542,6 +83697,20 @@ components:
           example: "1000"
           type: string
       type: object
+    MerchantShopIndustryInfo:
+      properties:
+        info_code:
+          description: 行业信息CODE
+          type: string
+        info_value:
+          description: "行业信息值，具体值根据info_code决定。\t当info_code=SHOP_MEDICAL_LOGO/SHOP_MEDICAL_IN_PIC这\
+            类文件信息时，\t需要传入ant.merchant.expand.indirect.image.upload接口上传的文件key；当info_code=\
+            \ SHOP_MEDICAL_LEVEL_TAG时，需要<a href=\"https://mdn.alipayobjects.com/mrcheshop/afts/file/ZuDmQKgBifgAAAAAAAAAAAAADiWmAQBr?af_filename=医\
+            院类型.xlsx\">医院类型</a>中CODE；其他场景传入自定义文本即可。"
+          items:
+            type: string
+          type: array
+      type: object
     MiniAppAuditReason:
       properties:
         audit_images:
@@ -83900,7 +84069,7 @@ components:
           example: "100.00"
           type: string
         payment_currency:
-          description: 支付币种
+          description: 支付币种（元）
           example: CNY
           type: string
         settlement_amount:
@@ -83908,7 +84077,7 @@ components:
           example: "10.00"
           type: string
         settlement_currency:
-          description: 清算币种
+          description: 清算币种（元）
           example: CNY
           type: string
         trans_amount:
@@ -83916,7 +84085,7 @@ components:
           example: "10.00"
           type: string
         trans_currency:
-          description: 转账币种
+          description: 转账币种（元）
           example: CNY
           type: string
       type: object
@@ -84025,8 +84194,9 @@ components:
           description: "退款资金明细\r\t详：\r\t若type为paySerialNo则funds为\r\t[{\"paySerialNo\"\
             :\"支付流水1\",\"refundFee\":\"退款金额1\"},{\"paySerialNo\":\"支付流水2\",\"refundFee\"\
             :\"退款金额2\"}]"
-          example: "[{\"paySerialNo\":\"2018081603020111\",refundFee:\"12.00\"},{\"\
-            paySerialNo\":\"2018081603020112\",refundFee:\"2.00\"}]"
+          example: "[\"{\\\"paySerialNo\\\":\\\"2018081603020111\\\",\\\"refundFee\\\
+            \":\\\"12.00\\\"}\",\"{\\\"paySerialNo\\\":\\\"2018081603020112\\\",\\\
+            \"refundFee\\\":\\\"2.00\\\"}\"]"
           items:
             type: string
           type: array
@@ -84257,7 +84427,6 @@ components:
       properties:
         device_type:
           description: 设备操作系统类型
-          example: harmony
           type: string
       type: object
     OpenFormFieldDO:
@@ -84417,11 +84586,11 @@ components:
     OrderExtIstdForPreOrder:
       properties:
         cash_on_delivery:
-          description: 骑手应付金额
+          description: 骑手应付金额，单位元
           example: "15.00"
           type: string
         cash_on_pickup:
-          description: 骑手应收金额
+          description: 骑手应收金额，单位元
           example: "13.00"
           type: string
         consumer_order_time:
@@ -84508,7 +84677,7 @@ components:
           example: "201604290086730119"
           type: string
         contacts:
-          description: 订单联系人
+          description: 订单联系人，在下单是传入则会返回
           example: 张三
           type: string
         creator:
@@ -84541,7 +84710,7 @@ components:
           type: string
         open_id_model:
           description: 应用用户标识模式
-          example: UID模式
+          example: UID
           type: string
         order_status:
           description: "TO_DO-未实施,DOING-实施中,TO_CONFIRM-待商户确认,CONFIRMED-商户已确认,DONE-已\
@@ -85158,6 +85327,96 @@ components:
         open_selling_conf:
           $ref: '#/components/schemas/PaidOuterCardSellingConfDTO'
       type: object
+    ParkingChargeInfo:
+      properties:
+        charge_fee:
+          description: 计费金额；单位元；
+          example: "10.00"
+          type: string
+        charge_node:
+          description: "START_CHARGING：开始计费\tFEE_INCREASE：费用增加\tTO_TOP：日封顶"
+          example: START_CHARGING
+          type: string
+        charge_time:
+          description: 开始计费或者费用增加的时间；传东八区时间；
+          example: 2024-07-12 10:15:38
+          type: string
+      type: object
+    ParkingLotChargingRuleInfo:
+      properties:
+        charging_period:
+          description: "停车收费时间段，输入24小时制的小时时间段格式: \t开始时间-结束时间,\t结束时间必须大于开始时间\t时间取值范\
+            围：0到24"
+          type: string
+        charging_strategy:
+          description: "计费策略；\tUP：向上取整\tDOMN：向下取整"
+          type: string
+        charging_unit_fee:
+          description: 跳费金额 单位元
+          type: string
+        charging_unit_minutes:
+          description: 跳费间隔分钟数
+          type: string
+        enable_rollover_charge_period:
+          description: 超时是否顺延到下个计费区间
+          type: boolean
+        first_charging_span_minutes:
+          description: 首段计费周期分钟数
+          type: string
+        first_charging_unit_fee:
+          description: "首段计费周期跳费金额 单位: 元"
+          type: string
+        first_charging_unit_minutes:
+          description: 首段计费周期跳费间隔 单位分钟
+          type: string
+        free_enter_minutes:
+          description: 入场免费时间 单位:分钟
+          type: string
+        free_exit_minutes:
+          description: 离场免费时间 单位:分钟
+          type: string
+        max_fee_per_day:
+          description: "日封顶金额 单位: 元"
+          type: string
+      type: object
+    ParkingLotServiceInfo:
+      properties:
+        service_name:
+          description: 在线缴费服务名称
+          type: string
+        service_type:
+          description: "停车场可提供的服务类型\t发票服务：INVOICE_SERVICE\t优惠套餐: DISCOUNT_PACKAGE\t\
+            预约停车: RESERVED_PARKING"
+          type: string
+        service_url:
+          description: 商户提供服务对应的跳转链接
+          type: string
+      type: object
+    ParkingMembershipInfo:
+      properties:
+        membership_balance:
+          description: "周卡、月卡：剩余天数（包括今天），单位日；\t次卡：剩余次数（包括本次），单位次；\t储值：余额，单位元；\t折扣：\
+            折扣力度，代表0-10折；0折即为免费；"
+          example: "3"
+          type: string
+        membership_type:
+          description: "会员类型；\tWEEK_CARD：周卡\tMONTH_CARD：月卡\tSEASON_CARD：季卡\tYEAR_CARD：\
+            年卡\tMULTIPLE_PASS_CARD：次卡\tMONEY_STORED_CARD：储值\tDISCOUNT_CARD：折扣"
+          example: WEEK_CARD
+          type: string
+      type: object
+    ParkingPaymentDiscountInfo:
+      properties:
+        discount_amount:
+          description: 折扣金额；单位元；
+          example: "10.00"
+          type: string
+        discount_type:
+          description: "折扣类型；\tCOMPREHENSIVE：综合；\tDISCOUNT：打折；\tVOUCHER：券；\tPOINTS：\
+            积分；"
+          example: COMPREHENSIVE
+          type: string
+      type: object
     Participant:
       properties:
         bankcard_ext_info:
@@ -85176,7 +85435,8 @@ components:
           type: string
         identity_type:
           description: "参与方的标识类型，目前支持如下类型：\t1、ALIPAY_USER_ID 支付宝的会员ID\t2、ALIPAY_LOGON_ID：\
-            支付宝登录号，支持邮箱和手机号格式\t3、ALIPAY_OPEN_ID：支付宝openid"
+            支付宝登录号，支持邮箱和手机号格式\t3、ALIPAY_OPEN_ID：支付宝openid\t4、EXPRESS_DC_STFA：对公快捷银\
+            行卡"
           type: string
         merchant_user_info:
           description: "商户端的用户信息描述，目前可指定如下属性：\r\tmerchant_user_id：商户端的用户唯一ID\r\tmerchant_user_name：\
@@ -85660,11 +85920,11 @@ components:
     PreCreateWaybillIstd:
       properties:
         coupon_fee:
-          description: 优惠券费用
+          description: 优惠券费用，单位元
           example: "1.00"
           type: string
         deliver_fee:
-          description: 运费
+          description: 运费，单位元
           example: "10.00"
           type: string
         dispatch_duration:
@@ -85676,11 +85936,11 @@ components:
           example: 1000
           type: integer
         fee:
-          description: 实际运费
+          description: 实际运费，单位元
           example: "9.00"
           type: string
         insurance_fee:
-          description: 保价费用
+          description: 保价费用，单位元
           example: "0.00"
           type: string
         logistics_code:
@@ -85692,7 +85952,7 @@ components:
           example: token001
           type: string
         pay_amount:
-          description: 支付金额，实际扣减的费用以此字段为准
+          description: 支付金额，实际扣减的费用以此字段为准，单位元
           example: "9.00"
           type: string
         service_code:
@@ -86053,7 +86313,7 @@ components:
     PromotionTaskRelation:
       properties:
         apply_reason:
-          description: 申请推广时填写的申请理由
+          description: 申请推广时填写的申请理由，自定义的内容
           example: XXX
           type: string
         commodity_id:
@@ -86082,7 +86342,7 @@ components:
           type: string
         promoter_pid:
           description: 推广服务商的pid
-          example: "2088301324945205"
+          example: 20883013xxxxxxxx
           type: string
         promotion_id:
           description: 推广任务id
@@ -87452,21 +87712,6 @@ components:
           description: 应用ID
           type: string
       type: object
-    SearchBoxAreaKeyWordModule:
-      properties:
-        latest_audit_area_keyword_info:
-          $ref: '#/components/schemas/SearchBoxKeywordInfo'
-        module_id:
-          description: 模块配置ID
-          example: "20220308000000168465"
-          type: string
-        module_type:
-          description: 搜索直达模块类型
-          example: BOX_EXCLUSIVE_AREA_KEYWORD
-          type: string
-        valid_area_keyword_info:
-          $ref: '#/components/schemas/SearchBoxKeywordInfo'
-      type: object
     SearchBoxBasicInfo:
       properties:
         box_id:
@@ -87583,29 +87828,6 @@ components:
         status:
           description: 状态，INITIAL-初始/AUDIT-审核中/CANCEL-已取消/ONLINE-已上架/REJECT-驳回/OFFLINE-已下架/EXPIRE-已失效
           example: ONLINE
-          type: string
-      type: object
-    SearchBoxKeywordInfo:
-      properties:
-        apply_no:
-          description: 申请单号
-          type: string
-        fail_reason:
-          description: 审核失败原因
-          type: string
-        gmt_modified:
-          description: 修改时间
-          type: string
-        keywords:
-          description: 关键词
-          items:
-            type: string
-          type: array
-        module_id:
-          description: 模块配置ID
-          type: string
-        status:
-          description: "ONLINE--上架\tREJECT--驳回\tOFFLINE-已下架"
           type: string
       type: object
     SearchBoxServiceInfo:
@@ -88336,6 +88558,15 @@ components:
           description: kv对象的值
           type: string
       type: object
+    ShopIndustryLicense:
+      properties:
+        license_pic:
+          description: 资质图片信息
+          type: string
+        license_type:
+          description: 行业资质类型，需使用<a href="https://mdn.alipayobjects.com/mrcheshop/afts/file/iGfGQL0ATkEAAAAAAAAAAAAADiWmAQBr?af_fileName=%E8%B5%84%E8%B4%A8%E7%B1%BB%E5%9E%8B.xlsx">资质列表</a>中类型
+          type: string
+      type: object
     ShopQueryOpenApiVO:
       properties:
         business_address:
@@ -88397,11 +88628,11 @@ components:
           example: 杭州市西湖区**路**号
           type: string
         recommend_latitude:
-          description: 推荐纬度
+          description: 推荐纬度，单位度
           example: "30.111"
           type: string
         recommend_longtitude:
-          description: 推荐经度
+          description: 推荐经度，单位为度
           example: "120.3333"
           type: string
         recommend_name:
@@ -88555,7 +88786,7 @@ components:
           example: RSA2
           type: string
         partner_id:
-          description: "2088041181118800"
+          description: 商户支付宝账号id
           example: 签名被授权方支付宝账号ID
           type: string
       type: object
@@ -94947,10 +95178,6 @@ components:
       anyOf:
       - $ref: '#/components/schemas/CommonErrorType'
       - $ref: '#/components/schemas/AlipayEbppInvoiceExpensecontrolAggregationCreateErrorResponseModel'
-    alipay_ebpp_invoice_expensecontrol_employeequota_create_default_response:
-      anyOf:
-      - $ref: '#/components/schemas/CommonErrorType'
-      - $ref: '#/components/schemas/AlipayEbppInvoiceExpensecontrolEmployeequotaCreateErrorResponseModel'
     alipay_ebpp_invoice_expensecontrol_issuebatch_cancel_default_response:
       anyOf:
       - $ref: '#/components/schemas/CommonErrorType'
