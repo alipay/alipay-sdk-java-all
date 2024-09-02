@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.carsale.vehicle.add response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-19 14:47:06
+ * @since 1.0, 2024-08-29 17:27:08
  */
 public class AlipayCommerceTransportCarsaleVehicleAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7423493192274314734L;
+	private static final long serialVersionUID = 1472225691156599856L;
 
 	/** 
 	 * 车辆处理结果

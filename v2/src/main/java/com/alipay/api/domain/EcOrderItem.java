@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业码订单实体
  *
  * @author auto create
- * @since 1.0, 2023-09-04 14:21:32
+ * @since 1.0, 2024-08-30 15:42:55
  */
 public class EcOrderItem extends AlipayObject {
 
-	private static final long serialVersionUID = 3188831669841985959L;
+	private static final long serialVersionUID = 7643797649632395247L;
 
 	/**
 	 * 共同账户ID
@@ -70,8 +70,9 @@ public class EcOrderItem extends AlipayObject {
 	/**
 	 * 订单类型
 METRO：地铁
-TAKEAWAY：外卖
+TAKE_AWAY：外卖
 OTHER：其他
+REACH_SHOP：到店
 	 */
 	@ApiField("order_type")
 	private String orderType;

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserGamecenterHistorygameactionSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1222825674916274523L;
+	private static final long serialVersionUID = 5435588392582769124L;
 
 	/**
 	 * 在第三方游戏中，用户在游戏中的行动编码。

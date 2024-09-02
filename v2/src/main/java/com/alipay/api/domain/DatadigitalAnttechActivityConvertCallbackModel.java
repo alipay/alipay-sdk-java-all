@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DatadigitalAnttechActivityConvertCallbackModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8516554842776514192L;
+	private static final long serialVersionUID = 2331343823667174659L;
 
 	/**
 	 * OpenId网关转换字段

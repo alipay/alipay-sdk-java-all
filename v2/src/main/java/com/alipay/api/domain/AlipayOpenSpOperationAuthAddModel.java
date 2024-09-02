@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 添加服务商代运营记录
  *
  * @author auto create
- * @since 1.0, 2020-12-30 10:36:08
+ * @since 1.0, 2024-08-29 11:27:24
  */
 public class AlipayOpenSpOperationAuthAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6142425444193165459L;
+	private static final long serialVersionUID = 5532589641966466356L;
 
 	/**
 	 * 授权产品码，零售通填写KX_ECOLOGY_SOLUTION

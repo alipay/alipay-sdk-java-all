@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankCreditSceneprodLprQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3669586655238724222L;
+	private static final long serialVersionUID = 3317162832963177297L;
 
 	/**
 	 * 贷款方案上贷款年利率为16.2%，则查询基于LPR基准利率浮动数据时，参数为0.162

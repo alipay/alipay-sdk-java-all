@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ISV代创建蚂蚁商户店铺
  *
  * @author auto create
- * @since 1.0, 2019-04-25 13:58:18
+ * @since 1.0, 2024-08-30 11:26:22
  */
 public class AntMerchantExpandIsvShopCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5456179947916132713L;
+	private static final long serialVersionUID = 4822133818559421446L;
 
 	/**
 	 * 地址。商户详细经营地址或人员所在地点

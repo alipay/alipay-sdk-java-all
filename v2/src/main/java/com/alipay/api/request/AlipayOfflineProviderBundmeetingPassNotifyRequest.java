@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.provider.bundmeeting.pass.notify request
  * 
  * @author auto create
- * @since 1.0, 2024-08-27 16:57:07
+ * @since 1.0, 2024-08-28 17:47:07
  */
 public class AlipayOfflineProviderBundmeetingPassNotifyRequest implements AlipayRequest<AlipayOfflineProviderBundmeetingPassNotifyResponse> {
 

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.rent.enterprise.certification.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-26 16:32:08
+ * @since 1.0, 2024-08-29 10:41:38
  */
 public class AlipayCommerceRentEnterpriseCertificationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5443982633578986282L;
+	private static final long serialVersionUID = 1536742324416673385L;
 
 	/** 
 	 * 企业认证信息

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业码凭证详情
  *
  * @author auto create
- * @since 1.0, 2024-07-17 14:34:15
+ * @since 1.0, 2024-08-30 15:42:55
  */
 public class EcVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4431424273849491426L;
+	private static final long serialVersionUID = 4232735398493428626L;
 
 	/**
 	 * 共同账户ID

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GiftInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7675878949185896787L;
+	private static final long serialVersionUID = 8263672678398621576L;
 
 	/**
 	 * 消费最低金额限制

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.version.audit.apply request
  * 
  * @author auto create
- * @since 1.0, 2024-08-27 13:42:08
+ * @since 1.0, 2024-08-30 15:18:37
  */
 public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadRequest<AlipayOpenMiniVersionAuditApplyResponse> {
 

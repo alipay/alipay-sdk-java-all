@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 权限集模型
  *
  * @author auto create
- * @since 1.0, 2023-04-11 10:47:14
+ * @since 1.0, 2024-08-30 11:28:30
  */
 public class PermissionSetVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2624621384286916368L;
+	private static final long serialVersionUID = 6668823519283637545L;
 
 	/**
 	 * 接口列表

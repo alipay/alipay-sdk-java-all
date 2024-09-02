@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.onlineride.superwallet.query request
  * 
  * @author auto create
- * @since 1.0, 2024-08-16 10:56:43
+ * @since 1.0, 2024-08-29 11:28:10
  */
 public class AlipayCommerceTransportOnlinerideSuperwalletQueryRequest implements AlipayRequest<AlipayCommerceTransportOnlinerideSuperwalletQueryResponse> {
 

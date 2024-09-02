@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayIserviceIsresourceUsertagCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7376271478339777784L;
+	private static final long serialVersionUID = 7288126176612857824L;
 
 	/**
 	 * 数据版本，格式为日期的yyyyMMdd

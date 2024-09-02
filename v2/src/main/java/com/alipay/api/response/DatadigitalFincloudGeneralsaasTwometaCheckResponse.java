@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.fincloud.generalsaas.twometa.check response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-22 18:47:07
+ * @since 1.0, 2024-08-28 10:32:08
  */
 public class DatadigitalFincloudGeneralsaasTwometaCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1357797275124215187L;
+	private static final long serialVersionUID = 2635417512656745997L;
 
 	/** 
 	 * 认证单据号，用于认证问题排查

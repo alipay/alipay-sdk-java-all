@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundCouponOrderAppPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4198192514187442718L;
+	private static final long serialVersionUID = 1334178199588449566L;
 
 	/**
 	 * 需要支付的金额，单位为：元（人民币），精确到小数点后两位

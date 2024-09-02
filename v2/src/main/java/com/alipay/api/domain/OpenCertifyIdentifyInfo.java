@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸认证需要验证的身份信息
  *
  * @author auto create
- * @since 1.0, 2023-09-08 12:58:22
+ * @since 1.0, 2024-08-28 20:14:15
  */
 public class OpenCertifyIdentifyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3683471387338971793L;
+	private static final long serialVersionUID = 6131913118718752177L;
 
 	/**
 	 * 填入真实姓名

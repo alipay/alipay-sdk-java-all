@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiCateringOrderInfoCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8319541173232254656L;
+	private static final long serialVersionUID = 1478939949839291322L;
 
 	/**
 	 * 关单时间,格式yyyy-mm-dd

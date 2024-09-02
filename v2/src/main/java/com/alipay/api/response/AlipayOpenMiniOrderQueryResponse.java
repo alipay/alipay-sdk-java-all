@@ -3,6 +3,7 @@ package com.alipay.api.response;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.AcceptInfoVO;
 import com.alipay.api.domain.AddressInfoVO;
 import com.alipay.api.domain.BookingInfoDTO;
 import com.alipay.api.domain.ContactInfoVO;
@@ -18,11 +19,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-27 10:35:38
+ * @since 1.0, 2024-09-02 10:22:00
  */
 public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6846955169229785317L;
+	private static final long serialVersionUID = 6249759977214168915L;
+
+	/** 
+	 * 订单受理信息，租赁类型订单且通过快捷下单场景特有
+	 */
+	@ApiField("accept_info")
+	private AcceptInfoVO acceptInfo;
 
 	/** 
 	 * 收货地址
@@ -144,6 +151,13 @@ public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public void setAcceptInfo(AcceptInfoVO acceptInfo) {
+		this.acceptInfo = acceptInfo;
+	}
+	public AcceptInfoVO getAcceptInfo( ) {
+		return this.acceptInfo;
+	}
 
 	public void setAddressInfo(AddressInfoVO addressInfo) {
 		this.addressInfo = addressInfo;

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class LiveContentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3828966646549292796L;
+	private static final long serialVersionUID = 5597233845555987785L;
 
 	/**
 	 * 素材的业务类型，可以区分针对不同素材匹配不同的业务规则。

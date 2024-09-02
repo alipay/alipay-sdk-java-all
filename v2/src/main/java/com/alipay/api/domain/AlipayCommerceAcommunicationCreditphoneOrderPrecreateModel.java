@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 运营商行业信用购预创单
  *
  * @author auto create
- * @since 1.0, 2024-06-17 13:48:15
+ * @since 1.0, 2024-08-28 10:41:52
  */
 public class AlipayCommerceAcommunicationCreditphoneOrderPrecreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5421968622746594353L;
+	private static final long serialVersionUID = 8872416988433259738L;
 
 	/**
 	 * 支付宝用户ID（小程序授权获取）
@@ -50,6 +50,12 @@ public class AlipayCommerceAcommunicationCreditphoneOrderPrecreateModel extends 
 	 */
 	@ApiField("freeze_amount")
 	private String freezeAmount;
+
+	/**
+	 * 机构创单标识
+	 */
+	@ApiField("inst_sign_aisle_data")
+	private String instSignAisleData;
 
 	/**
 	 * 外部业务订单号用于幂等返回预创单信息
@@ -109,6 +115,13 @@ public class AlipayCommerceAcommunicationCreditphoneOrderPrecreateModel extends 
 	}
 	public void setFreezeAmount(String freezeAmount) {
 		this.freezeAmount = freezeAmount;
+	}
+
+	public String getInstSignAisleData() {
+		return this.instSignAisleData;
+	}
+	public void setInstSignAisleData(String instSignAisleData) {
+		this.instSignAisleData = instSignAisleData;
 	}
 
 	public String getOutOrderNo() {

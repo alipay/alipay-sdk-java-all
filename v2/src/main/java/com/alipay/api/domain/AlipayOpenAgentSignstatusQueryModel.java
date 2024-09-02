@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * isv查询商户某个产品的签约状态
  *
  * @author auto create
- * @since 1.0, 2024-01-17 17:33:36
+ * @since 1.0, 2024-08-29 11:38:19
  */
 public class AlipayOpenAgentSignstatusQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7498784259714764344L;
+	private static final long serialVersionUID = 6297553161596161772L;
 
 	/**
 	 * isv要查询签约状态的商户账号，可以是支付宝账号pid（2088开头），也可以是商户的登录账号（邮箱或手机号）

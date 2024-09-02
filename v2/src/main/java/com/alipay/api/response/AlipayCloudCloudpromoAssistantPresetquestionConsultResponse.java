@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudpromo.assistant.presetquestion.consult response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-22 17:56:05
+ * @since 1.0, 2024-08-27 21:02:08
  */
 public class AlipayCloudCloudpromoAssistantPresetquestionConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4492275557465724471L;
+	private static final long serialVersionUID = 5774316475212199226L;
 
 	/** 
 	 * 回答内容
@@ -35,6 +35,12 @@ public class AlipayCloudCloudpromoAssistantPresetquestionConsultResponse extends
 	 */
 	@ApiField("customer_id")
 	private String customerId;
+
+	/** 
+	 * 当前这条消息的请求唯一ID
+	 */
+	@ApiField("request_id")
+	private String requestId;
 
 	/** 
 	 * 会话唯一标识，用来表是否是同一个会话，用户传递时使用用户的标识，没有传递时系统自动生成会话id进行标识
@@ -68,6 +74,13 @@ public class AlipayCloudCloudpromoAssistantPresetquestionConsultResponse extends
 	}
 	public String getCustomerId( ) {
 		return this.customerId;
+	}
+
+	public void setRequestId(String requestId) {
+		this.requestId = requestId;
+	}
+	public String getRequestId( ) {
+		return this.requestId;
 	}
 
 	public void setSessionId(String sessionId) {

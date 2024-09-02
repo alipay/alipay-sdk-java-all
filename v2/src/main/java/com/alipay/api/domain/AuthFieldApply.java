@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户信息申请请求模型
  *
  * @author auto create
- * @since 1.0, 2020-12-01 15:54:17
+ * @since 1.0, 2024-08-30 11:28:36
  */
 public class AuthFieldApply extends AlipayObject {
 
-	private static final long serialVersionUID = 3579211375454952254L;
+	private static final long serialVersionUID = 7863755768414787235L;
 
 	/**
 	 * 接口英文名称，通过alipay.open.app.api.query接口查询获得。

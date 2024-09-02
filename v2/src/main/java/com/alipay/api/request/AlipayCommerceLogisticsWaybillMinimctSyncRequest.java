@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.logistics.waybill.minimct.sync request
  * 
  * @author auto create
- * @since 1.0, 2022-11-02 17:26:14
+ * @since 1.0, 2024-09-02 10:39:16
  */
 public class AlipayCommerceLogisticsWaybillMinimctSyncRequest implements AlipayRequest<AlipayCommerceLogisticsWaybillMinimctSyncResponse> {
 

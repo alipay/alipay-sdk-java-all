@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundEnterprisepayRuleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8257395747298249287L;
+	private static final long serialVersionUID = 8468268341914187587L;
 
 	/** 
 	 * 商户限制信息，包含商户限制类型以及被限制对象的SMID或者PID

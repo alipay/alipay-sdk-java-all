@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * isp预发验证专用
  *
  * @author auto create
- * @since 1.0, 2018-12-27 18:02:54
+ * @since 1.0, 2024-08-30 11:26:48
  */
 public class AlipayOpenAppApiresQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7638135926928971715L;
+	private static final long serialVersionUID = 8546799964592498953L;
 
 	/**
 	 * 订单号

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账单、转化查询结果数据
  *
  * @author auto create
- * @since 1.0, 2024-07-10 15:08:42
+ * @since 1.0, 2024-08-27 21:39:15
  */
 public class DataBillResult extends AlipayObject {
 
-	private static final long serialVersionUID = 4234776949334932914L;
+	private static final long serialVersionUID = 4521214571661813357L;
 
 	/**
 	 * 活动名
@@ -70,7 +70,7 @@ public class DataBillResult extends AlipayObject {
 	private String realPayAmt;
 
 	/**
-	 * 订单金额
+	 * 订单金额，单位元
 	 */
 	@ApiField("trade_total_amt")
 	private String tradeTotalAmt;

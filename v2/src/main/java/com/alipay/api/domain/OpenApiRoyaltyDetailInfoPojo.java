@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 增加资产类型
  *
  * @author auto create
- * @since 1.0, 2023-09-25 11:08:00
+ * @since 1.0, 2024-08-29 14:19:10
  */
 public class OpenApiRoyaltyDetailInfoPojo extends AlipayObject {
 
-	private static final long serialVersionUID = 3863533669122842313L;
+	private static final long serialVersionUID = 2579921335156856836L;
 
 	/**
 	 * 分账的金额，单位为元

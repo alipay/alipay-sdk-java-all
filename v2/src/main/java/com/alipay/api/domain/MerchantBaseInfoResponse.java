@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MerchantBaseInfoResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 6854656336947228664L;
+	private static final long serialVersionUID = 4171873347175591787L;
 
 	/**
 	 * 城市

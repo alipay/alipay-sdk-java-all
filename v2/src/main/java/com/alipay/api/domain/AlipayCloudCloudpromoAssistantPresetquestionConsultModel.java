@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序云营销AI助手预设问题引导
  *
  * @author auto create
- * @since 1.0, 2024-07-15 16:20:47
+ * @since 1.0, 2024-08-27 20:57:16
  */
 public class AlipayCloudCloudpromoAssistantPresetquestionConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2852357749747432351L;
+	private static final long serialVersionUID = 2142323334449256582L;
 
 	/**
 	 * 询问时间

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundTransIcrowdTagModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3424623952992971966L;
+	private static final long serialVersionUID = 1367832588978826166L;
 
 	
 

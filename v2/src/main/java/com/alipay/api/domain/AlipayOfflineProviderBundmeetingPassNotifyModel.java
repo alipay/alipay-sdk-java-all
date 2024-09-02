@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 论坛活动入会核验信息同步
  *
  * @author auto create
- * @since 1.0, 2024-08-27 16:56:30
+ * @since 1.0, 2024-08-28 17:45:21
  */
 public class AlipayOfflineProviderBundmeetingPassNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1432368797799176844L;
+	private static final long serialVersionUID = 3391422236677344617L;
 
 	/**
 	 * 1、签入

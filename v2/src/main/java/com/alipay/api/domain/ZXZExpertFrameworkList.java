@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ZXZExpertFrameworkList extends AlipayObject {
 
-	private static final long serialVersionUID = 4166213476757632712L;
+	private static final long serialVersionUID = 8532931355422886693L;
 
 	/**
 	 * 专家框架列表

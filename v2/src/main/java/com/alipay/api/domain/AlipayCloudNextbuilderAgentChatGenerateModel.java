@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 对话消息发送接口（非流式）
  *
  * @author auto create
- * @since 1.0, 2024-07-12 15:44:50
+ * @since 1.0, 2024-08-28 23:24:08
  */
 public class AlipayCloudNextbuilderAgentChatGenerateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1391964122456841234L;
+	private static final long serialVersionUID = 8471775275245923797L;
 
 	/**
 	 * AI 创作平台创建的Agent 的 id，可从AI 创作平台页面获取
@@ -30,6 +30,14 @@ public class AlipayCloudNextbuilderAgentChatGenerateModel extends AlipayObject {
 	 */
 	@ApiField("inputs")
 	private String inputs;
+
+	/**
+	 * 多模态参数：
+images标识是多模态中的图片参数，value是上传图片afts的文件ID列表。
+当前多模态只支持图片
+	 */
+	@ApiField("multi_modal_inputs")
+	private MultiModalInputsRequest multiModalInputs;
 
 	/**
 	 * 客户调用应用的用户唯一标识
@@ -74,6 +82,13 @@ public class AlipayCloudNextbuilderAgentChatGenerateModel extends AlipayObject {
 	}
 	public void setInputs(String inputs) {
 		this.inputs = inputs;
+	}
+
+	public MultiModalInputsRequest getMultiModalInputs() {
+		return this.multiModalInputs;
+	}
+	public void setMultiModalInputs(MultiModalInputsRequest multiModalInputs) {
+		this.multiModalInputs = multiModalInputs;
 	}
 
 	public String getOuterUserId() {

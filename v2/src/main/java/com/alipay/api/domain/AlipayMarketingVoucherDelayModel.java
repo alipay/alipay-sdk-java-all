@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingVoucherDelayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5726789743623952678L;
+	private static final long serialVersionUID = 3131943284412938638L;
 
 	/**
 	 * 1、券模板上的过期时间为绝对时间，传不传都使用券模板上的过期时间

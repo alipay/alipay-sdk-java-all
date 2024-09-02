@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用户信息申请记录查询响应模型
  *
  * @author auto create
- * @since 1.0, 2020-09-21 17:21:30
+ * @since 1.0, 2024-08-30 11:28:14
  */
 public class AuthFieldResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 6289383357188687823L;
+	private static final long serialVersionUID = 2362541513134352192L;
 
 	/**
 	 * 用户信息申请记录列表

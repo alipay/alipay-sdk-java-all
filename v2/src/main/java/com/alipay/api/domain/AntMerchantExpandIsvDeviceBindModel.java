@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 机具绑定门店
  *
  * @author auto create
- * @since 1.0, 2018-08-23 19:57:43
+ * @since 1.0, 2024-08-30 11:24:33
  */
 public class AntMerchantExpandIsvDeviceBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7268273657227699984L;
+	private static final long serialVersionUID = 8216175431549739577L;
 
 	/**
 	 * 机具使用场景：

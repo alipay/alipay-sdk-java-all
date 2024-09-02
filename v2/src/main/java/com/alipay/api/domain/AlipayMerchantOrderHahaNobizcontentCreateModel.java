@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ISP非bizContent创建测试
  *
  * @author auto create
- * @since 1.0, 2022-01-11 11:37:53
+ * @since 1.0, 2024-08-30 11:15:05
  */
 public class AlipayMerchantOrderHahaNobizcontentCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4656366946716715688L;
+	private static final long serialVersionUID = 1798847476798652884L;
 
 	/**
 	 * delete

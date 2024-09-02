@@ -17,7 +17,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundAccountBalanceremindQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1229623834722331219L;
+	private static final long serialVersionUID = 7232415455464174787L;
 
 	/** 
 	 * 单位：元，当设置了触发余额提醒的上限阈值时返回该值，余额大于该值时按规则发送余额提醒通知

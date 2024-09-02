@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenMiniOrderOrderbillDownloadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8199659725165538624L;
+	private static final long serialVersionUID = 7649354838448565871L;
 
 	/** 
 	 * 账单下载地址链接，获取连接后30秒后未下载，链接地址失效。

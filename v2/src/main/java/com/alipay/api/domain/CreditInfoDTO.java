@@ -7,11 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻信用信息模型
  *
  * @author auto create
- * @since 1.0, 2024-01-08 10:37:50
+ * @since 1.0, 2024-09-01 22:13:15
  */
 public class CreditInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2396251164373795446L;
+	private static final long serialVersionUID = 6881537234384784676L;
+
+	/**
+	 * 芝麻先享受理台用户开通成功后，商家自定义页面跳转地址
+	 */
+	@ApiField("acceptance_jump_url")
+	private String acceptanceJumpUrl;
+
+	/**
+	 * 使用芝麻信用先享服务，是否不需要核身，默认false：表示需要当前订单需要核身
+	 */
+	@ApiField("no_need_verify_identity")
+	private Boolean noNeedVerifyIdentity;
 
 	/**
 	 * 商户外部协议号，不同的支付宝用户需要传递不同的外部单号,使用芝麻先享能力必传
@@ -24,6 +36,20 @@ public class CreditInfoDTO extends AlipayObject {
 	 */
 	@ApiField("zm_service_id")
 	private String zmServiceId;
+
+	public String getAcceptanceJumpUrl() {
+		return this.acceptanceJumpUrl;
+	}
+	public void setAcceptanceJumpUrl(String acceptanceJumpUrl) {
+		this.acceptanceJumpUrl = acceptanceJumpUrl;
+	}
+
+	public Boolean getNoNeedVerifyIdentity() {
+		return this.noNeedVerifyIdentity;
+	}
+	public void setNoNeedVerifyIdentity(Boolean noNeedVerifyIdentity) {
+		this.noNeedVerifyIdentity = noNeedVerifyIdentity;
+	}
 
 	public String getOutAgreementNo() {
 		return this.outAgreementNo;

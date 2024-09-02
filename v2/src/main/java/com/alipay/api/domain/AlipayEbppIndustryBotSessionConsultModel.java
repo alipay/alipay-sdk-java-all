@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业智能助理机器人对话问答
  *
  * @author auto create
- * @since 1.0, 2024-08-26 20:57:16
+ * @since 1.0, 2024-08-27 21:32:15
  */
 public class AlipayEbppIndustryBotSessionConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7164883515312986712L;
+	private static final long serialVersionUID = 5537325668973644167L;
 
 	/**
 	 * 业务扩展信息

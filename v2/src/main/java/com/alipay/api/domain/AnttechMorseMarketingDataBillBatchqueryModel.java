@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 摩卡营销-标准化活动账单数据批量查询
  *
  * @author auto create
- * @since 1.0, 2024-07-10 14:31:36
+ * @since 1.0, 2024-08-27 21:39:15
  */
 public class AnttechMorseMarketingDataBillBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7313227646714333944L;
+	private static final long serialVersionUID = 2887394357148282958L;
 
 	/**
 	 * 业务唯一标识码，摩斯侧分配，空时查询所有biz_code
@@ -26,13 +26,13 @@ public class AnttechMorseMarketingDataBillBatchqueryModel extends AlipayObject {
 	private String dataType;
 
 	/**
-	 * 分页查询当前页数，取值区间：[1,100000]，查询页没有值则标识后期没有数据可以不用再查询了
+	 * 分页查询当前页数，取值区间：[1,100000]，查询页没有值则标识后期没有数据可以不用再查询了，单位页
 	 */
 	@ApiField("page_num")
 	private String pageNum;
 
 	/**
-	 * 分页查询每页的个数，默认100条，取值区间：[1,300]，不在这个区间内，采用默认条数100
+	 * 分页查询每页的个数，默认100条，取值区间：[1,300]，不在这个区间内，采用默认条数100，单位条
 	 */
 	@ApiField("page_size")
 	private Long pageSize;

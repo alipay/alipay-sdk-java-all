@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.provider.bundmeeting.pass.notify response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-27 16:57:07
+ * @since 1.0, 2024-08-28 17:47:07
  */
 public class AlipayOfflineProviderBundmeetingPassNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3113239151457464951L;
+	private static final long serialVersionUID = 3285374269424196582L;
 
 	
 

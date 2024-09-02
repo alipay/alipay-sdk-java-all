@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询代运营授权或者账号绑定二维码
  *
  * @author auto create
- * @since 1.0, 2024-01-17 17:34:58
+ * @since 1.0, 2024-08-29 11:27:07
  */
 public class AlipayOpenSpOperationQrcodeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2487284721533127833L;
+	private static final long serialVersionUID = 7212211498432338475L;
 
 	/**
 	 * 接入的产品编号。

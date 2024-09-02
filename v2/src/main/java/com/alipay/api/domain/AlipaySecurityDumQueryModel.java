@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 文档回归测试勿动openapi_openid_put多场景
  *
  * @author auto create
- * @since 1.0, 2022-11-19 15:02:15
+ * @since 1.0, 2024-08-30 11:24:01
  */
 public class AlipaySecurityDumQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2843134418559238191L;
+	private static final long serialVersionUID = 5769977545164365236L;
 
 	/**
 	 * 122

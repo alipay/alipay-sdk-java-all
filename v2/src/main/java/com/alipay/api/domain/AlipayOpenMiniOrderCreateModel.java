@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 交易组件业务单创建
  *
  * @author auto create
- * @since 1.0, 2024-08-24 21:07:16
+ * @since 1.0, 2024-09-01 22:13:15
  */
 public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4416997144132173266L;
+	private static final long serialVersionUID = 6176961377561473577L;
 
 	/**
 	 * 订单收货地址
 	 */
 	@ApiField("address_info")
 	private MiniReceiverAddressInfoDTO addressInfo;
+
+	/**
+	 * 个人协议页面签约信息
+	 */
+	@ApiField("agreement_sign_info")
+	private AgreementSignInfoDTO agreementSignInfo;
 
 	/**
 	 * 分账条款
@@ -88,6 +94,12 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 	 */
 	@ApiField("ext_info")
 	private MiniOrderExtInfoDTO extInfo;
+
+	/**
+	 * 线上资金预授权冻结信息
+	 */
+	@ApiField("fund_auth_freeze_info")
+	private FundAuthFreezeInfoDTO fundAuthFreezeInfo;
 
 	/**
 	 * 订单类型
@@ -171,6 +183,13 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 		this.addressInfo = addressInfo;
 	}
 
+	public AgreementSignInfoDTO getAgreementSignInfo() {
+		return this.agreementSignInfo;
+	}
+	public void setAgreementSignInfo(AgreementSignInfoDTO agreementSignInfo) {
+		this.agreementSignInfo = agreementSignInfo;
+	}
+
 	public AllocAmountInfoDTO getAllocAmountInfo() {
 		return this.allocAmountInfo;
 	}
@@ -246,6 +265,13 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 	}
 	public void setExtInfo(MiniOrderExtInfoDTO extInfo) {
 		this.extInfo = extInfo;
+	}
+
+	public FundAuthFreezeInfoDTO getFundAuthFreezeInfo() {
+		return this.fundAuthFreezeInfo;
+	}
+	public void setFundAuthFreezeInfo(FundAuthFreezeInfoDTO fundAuthFreezeInfo) {
+		this.fundAuthFreezeInfo = fundAuthFreezeInfo;
 	}
 
 	public String getMerchantBizType() {

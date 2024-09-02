@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.dum.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 19:33:09
+ * @since 1.0, 2024-08-30 11:24:01
  */
 public class AlipaySecurityDumQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1888366287537147531L;
+	private static final long serialVersionUID = 1457469124377514275L;
 
 	
 

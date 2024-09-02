@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundJointaccountMemberDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2637454739814627618L;
+	private static final long serialVersionUID = 1215922542774598332L;
 
 	/**
 	 * 合花群ID<br>

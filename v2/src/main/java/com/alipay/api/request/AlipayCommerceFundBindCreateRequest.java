@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.fund.bind.create request
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:25:23
+ * @since 1.0, 2024-09-02 11:00:12
  */
 public class AlipayCommerceFundBindCreateRequest implements AlipayRequest<AlipayCommerceFundBindCreateResponse> {
 

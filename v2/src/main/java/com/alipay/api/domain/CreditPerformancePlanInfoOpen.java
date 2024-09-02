@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CreditPerformancePlanInfoOpen extends AlipayObject {
 
-	private static final long serialVersionUID = 7631898789876539994L;
+	private static final long serialVersionUID = 5783419379324687243L;
 
 	/**
 	 * 计划详情列表

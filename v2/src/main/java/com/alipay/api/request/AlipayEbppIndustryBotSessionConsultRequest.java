@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.bot.session.consult request
  * 
  * @author auto create
- * @since 1.0, 2024-08-26 21:02:09
+ * @since 1.0, 2024-08-27 21:37:07
  */
 public class AlipayEbppIndustryBotSessionConsultRequest implements AlipayRequest<AlipayEbppIndustryBotSessionConsultResponse> {
 

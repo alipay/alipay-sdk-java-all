@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝二手车车源新增同步
  *
  * @author auto create
- * @since 1.0, 2024-08-19 14:21:46
+ * @since 1.0, 2024-08-29 14:20:17
  */
 public class AlipayCommerceTransportCarsaleVehicleAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2823368563838871481L;
+	private static final long serialVersionUID = 5587872257521342789L;
 
 	/**
 	 * 二手车数据字段

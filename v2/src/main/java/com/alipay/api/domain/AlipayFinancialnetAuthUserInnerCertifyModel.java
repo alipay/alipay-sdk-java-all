@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 以旧换新政府补贴项目内部平台资格认证接口
  *
  * @author auto create
- * @since 1.0, 2024-08-23 19:07:31
+ * @since 1.0, 2024-08-30 19:26:16
  */
 public class AlipayFinancialnetAuthUserInnerCertifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6187523157878661919L;
+	private static final long serialVersionUID = 4674285161612824296L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识

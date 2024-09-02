@@ -1,6 +1,7 @@
 package com.alipay.api.response;
 
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.domain.CreditInfoResponse;
 import com.alipay.api.domain.PayInfoResponse;
 
 import com.alipay.api.AlipayResponse;
@@ -9,11 +10,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.order.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-26 16:47:48
+ * @since 1.0, 2024-09-02 10:12:08
  */
 public class AlipayOpenMiniOrderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3889336746172874263L;
+	private static final long serialVersionUID = 7556415137566477214L;
+
+	/** 
+	 * 芝麻信用创单相关参数
+	 */
+	@ApiField("credit_info_response")
+	private CreditInfoResponse creditInfoResponse;
 
 	/** 
 	 * 建议对客展示文案。当接口返回异常时，建议将当前字段对客进行展示。
@@ -38,6 +45,13 @@ public class AlipayOpenMiniOrderCreateResponse extends AlipayResponse {
 	 */
 	@ApiField("pay_info_response")
 	private PayInfoResponse payInfoResponse;
+
+	public void setCreditInfoResponse(CreditInfoResponse creditInfoResponse) {
+		this.creditInfoResponse = creditInfoResponse;
+	}
+	public CreditInfoResponse getCreditInfoResponse( ) {
+		return this.creditInfoResponse;
+	}
 
 	public void setCustomerDisplayText(String customerDisplayText) {
 		this.customerDisplayText = customerDisplayText;

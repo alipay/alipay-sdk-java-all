@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.terminal.edgecloud.heyagent.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-13 14:47:04
+ * @since 1.0, 2024-08-30 15:05:04
  */
 public class AlipayTerminalEdgecloudHeyagentCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5857993289198173892L;
+	private static final long serialVersionUID = 1613465169382617477L;
 
 	/** 
 	 * 本次绘话的ID

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.invite.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-27 11:27:09
+ * @since 1.0, 2024-08-28 10:58:09
  */
 public class AlipayOpenInviteOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7382263566339174486L;
+	private static final long serialVersionUID = 3449635913732639923L;
 
 	/** 
 	 * 商家支付宝账号对应的ID，2088开头

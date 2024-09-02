@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单扩展信息模型
  *
  * @author auto create
- * @since 1.0, 2024-08-24 21:07:15
+ * @since 1.0, 2024-09-01 22:13:15
  */
 public class MiniOrderExtInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5151916188845629223L;
+	private static final long serialVersionUID = 3877443531333649464L;
 
 	/**
 	 * 二方接入交易组件用于返佣计算的特殊参数，单位为元
@@ -57,6 +57,12 @@ public class MiniOrderExtInfoDTO extends AlipayObject {
 	 */
 	@ApiField("order_trade_type")
 	private String orderTradeType;
+
+	/**
+	 * 外部风控参数信息
+	 */
+	@ApiField("out_order_risk_info")
+	private String outOrderRiskInfo;
 
 	/**
 	 * 支付单交易号，用于信用下单不成功转普通支付。
@@ -111,6 +117,13 @@ public class MiniOrderExtInfoDTO extends AlipayObject {
 	}
 	public void setOrderTradeType(String orderTradeType) {
 		this.orderTradeType = orderTradeType;
+	}
+
+	public String getOutOrderRiskInfo() {
+		return this.outOrderRiskInfo;
+	}
+	public void setOutOrderRiskInfo(String outOrderRiskInfo) {
+		this.outOrderRiskInfo = outOrderRiskInfo;
 	}
 
 	public String getTradeNo() {

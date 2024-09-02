@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.morse.marketing.data.bill.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-10 14:31:36
+ * @since 1.0, 2024-08-27 21:42:07
  */
 public class AnttechMorseMarketingDataBillBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3589872476417717678L;
+	private static final long serialVersionUID = 5756257496725333992L;
 
 	/** 
 	 * 查询账单的数据对象列表
@@ -25,7 +25,7 @@ public class AnttechMorseMarketingDataBillBatchqueryResponse extends AlipayRespo
 	private List<DataBillResult> bills;
 
 	/** 
-	 * 查询结果统计的总条数
+	 * 查询结果统计的总个数，单位个
 	 */
 	@ApiField("count")
 	private Long count;
@@ -43,7 +43,7 @@ public class AnttechMorseMarketingDataBillBatchqueryResponse extends AlipayRespo
 	private Long pageNum;
 
 	/** 
-	 * 查询结果数据中每页几条数据量
+	 * 查询结果数据中每页几条数据量，单位条
 	 */
 	@ApiField("page_size")
 	private Long pageSize;

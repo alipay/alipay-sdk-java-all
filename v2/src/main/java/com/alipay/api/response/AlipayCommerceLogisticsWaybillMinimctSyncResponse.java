@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.logistics.waybill.minimct.sync response.
  * 
  * @author auto create
- * @since 1.0, 2022-11-02 17:26:14
+ * @since 1.0, 2024-09-02 10:39:16
  */
 public class AlipayCommerceLogisticsWaybillMinimctSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6694176729265166556L;
+	private static final long serialVersionUID = 4832924512634382515L;
 
 	
 

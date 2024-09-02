@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸核身服务开始认证
  *
  * @author auto create
- * @since 1.0, 2024-07-18 20:28:14
+ * @since 1.0, 2024-08-28 20:13:16
  */
 public class DatadigitalFincloudGeneralsaasFaceCertifyVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3631798859497725239L;
+	private static final long serialVersionUID = 6133467624697338656L;
 
 	/**
 	 * 本次申请操作的唯一标识，由H5人脸核身初始化接口调用后生成，后续的操作都需要用到

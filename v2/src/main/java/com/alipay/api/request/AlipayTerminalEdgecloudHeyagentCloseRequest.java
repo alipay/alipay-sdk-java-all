@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.terminal.edgecloud.heyagent.close request
  * 
  * @author auto create
- * @since 1.0, 2024-07-22 19:37:03
+ * @since 1.0, 2024-08-30 10:29:28
  */
 public class AlipayTerminalEdgecloudHeyagentCloseRequest implements AlipayRequest<AlipayTerminalEdgecloudHeyagentCloseResponse> {
 

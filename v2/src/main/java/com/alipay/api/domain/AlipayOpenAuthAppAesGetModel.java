@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 授权应用aes密钥查询
  *
  * @author auto create
- * @since 1.0, 2023-01-13 15:45:38
+ * @since 1.0, 2024-08-30 11:17:03
  */
 public class AlipayOpenAuthAppAesGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6412953973691551426L;
+	private static final long serialVersionUID = 2624122955436346514L;
 
 	/**
 	 * 商家应用appId

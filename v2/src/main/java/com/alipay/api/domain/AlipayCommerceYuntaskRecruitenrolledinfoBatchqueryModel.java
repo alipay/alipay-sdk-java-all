@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 招商活动报名查询
  *
  * @author auto create
- * @since 1.0, 2022-03-24 13:23:59
+ * @since 1.0, 2024-08-28 14:42:53
  */
 public class AlipayCommerceYuntaskRecruitenrolledinfoBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7341728388919572414L;
+	private static final long serialVersionUID = 1537125267213892256L;
 
 	/**
 	 * 零售商的pid
