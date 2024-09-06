@@ -1,7 +1,10 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 阶段付款计划模型
@@ -11,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class StagePayPlanVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6469241493692867154L;
+	private static final long serialVersionUID = 3657284368772579166L;
 
 	/**
 	 * 阶段付款计划阶段编号，标识当前计划处于第几阶段
@@ -22,8 +25,9 @@ public class StagePayPlanVO extends AlipayObject {
 	/**
 	 * 阶段付款计划详情列表
 	 */
-	@ApiField("stage_pay_plan_infos")
-	private StagePayPlanInfoVO stagePayPlanInfos;
+	@ApiListField("stage_pay_plan_infos")
+	@ApiField("stage_pay_plan_info_v_o")
+	private List<StagePayPlanInfoVO> stagePayPlanInfos;
 
 	public Long getStageNo() {
 		return this.stageNo;
@@ -32,10 +36,10 @@ public class StagePayPlanVO extends AlipayObject {
 		this.stageNo = stageNo;
 	}
 
-	public StagePayPlanInfoVO getStagePayPlanInfos() {
+	public List<StagePayPlanInfoVO> getStagePayPlanInfos() {
 		return this.stagePayPlanInfos;
 	}
-	public void setStagePayPlanInfos(StagePayPlanInfoVO stagePayPlanInfos) {
+	public void setStagePayPlanInfos(List<StagePayPlanInfoVO> stagePayPlanInfos) {
 		this.stagePayPlanInfos = stagePayPlanInfos;
 	}
 

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.version.audit.apply request
  * 
  * @author auto create
- * @since 1.0, 2024-08-30 15:18:37
+ * @since 1.0, 2024-09-05 18:02:08
  */
 public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadRequest<AlipayOpenMiniVersionAuditApplyResponse> {
 
@@ -64,9 +64,7 @@ public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadReque
 	private String auditRule;
 
 	/** 
-	* 审核通过后是否自动上架，
-自动上架：true；不自动上架（默认）：false。
-如果小程序上架前无需特殊处理，建议设置成true，平台将会在小程序审核通过时自动将其上架
+	* 审核通过后是否自动上架， 自动上架：true；不自动上架（默认）：false。 如果小程序上架前无需特殊处理，建议设置成true，平台将会在小程序审核通过时自动将其上架。 注意：若审核通过时，小程序仍未完成备案，则将会进行自动受限发布上架（发布上线后小程序将无法被搜索，限制小程序用户数为 50 人/天，无法进行相关业务推广，只可通过扫码使用，完成备案即可解除限制，上架后90天内不未完成备案，小程序将无法打开。）若审核通过时小程序也完成备案，则会正常上架。
 	 */
 	private String autoOnline;
 

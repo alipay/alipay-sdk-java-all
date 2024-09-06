@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CloudResumeSkillInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4744993758165139443L;
+	private static final long serialVersionUID = 3635342684611233739L;
 
 	/**
 	 * 技能标签名字

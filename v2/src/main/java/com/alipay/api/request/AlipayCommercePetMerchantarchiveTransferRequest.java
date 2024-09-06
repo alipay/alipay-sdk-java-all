@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.pet.merchantarchive.transfer request
  * 
  * @author auto create
- * @since 1.0, 2024-08-08 15:27:05
+ * @since 1.0, 2024-09-03 19:57:07
  */
 public class AlipayCommercePetMerchantarchiveTransferRequest implements AlipayRequest<AlipayCommercePetMerchantarchiveTransferResponse> {
 

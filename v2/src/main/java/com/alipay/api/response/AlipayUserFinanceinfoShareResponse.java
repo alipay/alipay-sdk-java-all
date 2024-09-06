@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserFinanceinfoShareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8578434319798338331L;
+	private static final long serialVersionUID = 1728438143622572667L;
 
 	/** 
 	 * 查询出的信用卡列表，包含0到多张卡，每张卡对应一组信息，包含卡号（已脱敏）和开户行代码

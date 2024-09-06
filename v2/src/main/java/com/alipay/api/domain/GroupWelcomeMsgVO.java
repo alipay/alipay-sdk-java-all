@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 入群欢迎语
  *
  * @author auto create
- * @since 1.0, 2024-04-16 19:58:35
+ * @since 1.0, 2024-09-05 17:19:59
  */
 public class GroupWelcomeMsgVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8389426585364846562L;
+	private static final long serialVersionUID = 1529464789727387468L;
 
 	/**
 	 * 欢迎消息。支持发图文消息、小程序消息等。

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.group.groupinstanceinfo.query request
  * 
  * @author auto create
- * @since 1.0, 2024-08-27 14:57:18
+ * @since 1.0, 2024-09-05 18:09:32
  */
 public class AlipayMerchantGroupGroupinstanceinfoQueryRequest implements AlipayRequest<AlipayMerchantGroupGroupinstanceinfoQueryResponse> {
 

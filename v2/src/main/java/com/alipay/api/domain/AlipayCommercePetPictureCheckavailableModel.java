@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 宠物图片校验
  *
  * @author auto create
- * @since 1.0, 2024-08-01 16:34:22
+ * @since 1.0, 2024-09-03 15:51:17
  */
 public class AlipayCommercePetPictureCheckavailableModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5749743544311546985L;
+	private static final long serialVersionUID = 3846294817141193126L;
 
 	/**
 	 * 文件Id

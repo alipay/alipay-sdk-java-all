@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序消息内容
  *
  * @author auto create
- * @since 1.0, 2024-05-20 10:15:19
+ * @since 1.0, 2024-09-05 17:19:58
  */
 public class TinyAppMsgVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7172762732777135262L;
+	private static final long serialVersionUID = 4891424479362747276L;
 
 	/**
 	 * 对推送商品的简单介绍（参考：美妆好物应有尽有，快戳进来看看呀）

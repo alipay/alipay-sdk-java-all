@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.moneycard.record.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-01 18:57:06
+ * @since 1.0, 2024-09-03 12:01:05
  */
 public class AlipayCommerceMoneycardRecordBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2893929918836981419L;
+	private static final long serialVersionUID = 6665624147168438985L;
 
 	/** 
 	 * 金额卡使用记录详情

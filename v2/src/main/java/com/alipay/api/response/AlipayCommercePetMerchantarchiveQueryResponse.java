@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.pet.merchantarchive.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-08 15:22:06
+ * @since 1.0, 2024-09-04 10:27:08
  */
 public class AlipayCommercePetMerchantarchiveQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1424662914739752575L;
+	private static final long serialVersionUID = 6431427313497979436L;
 
 	/** 
 	 * 档案详情

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 卡
  *
  * @author auto create
- * @since 1.0, 2024-08-15 22:50:49
+ * @since 1.0, 2024-09-02 19:26:16
  */
 public class MerchantCardTemplate extends AlipayObject {
 
-	private static final long serialVersionUID = 1612941711944679446L;
+	private static final long serialVersionUID = 4345454578832995355L;
 
 	/**
 	 * 卡归属的小程序appid
@@ -57,6 +57,21 @@ public class MerchantCardTemplate extends AlipayObject {
 	 */
 	@ApiField("hotline")
 	private String hotline;
+
+	/**
+	 * （1）如需上传详情图，则字段image_detail_id_list和image_detail_url_list二选一传入，image_detail_id_list优先级更高
+（2）查询返回时该字段为空，返回image_detail_url_list
+	 */
+	@ApiListField("image_detail_id_list")
+	@ApiField("string")
+	private List<String> imageDetailIdList;
+
+	/**
+	 * 如需上传详情图，则字段image_detail_id_list和image_detail_url_list二选一传入，image_detail_id_list优先级更高
+	 */
+	@ApiListField("image_detail_url_list")
+	@ApiField("string")
+	private List<String> imageDetailUrlList;
 
 	/**
 	 * （1）当card_type=MERCHANT_TIMES_CARD或MERCHANT_PERIOD_PAY时，字段image_id_list和image_url_list必须二选一传入，image_id_list优先级更高
@@ -165,6 +180,20 @@ public class MerchantCardTemplate extends AlipayObject {
 	}
 	public void setHotline(String hotline) {
 		this.hotline = hotline;
+	}
+
+	public List<String> getImageDetailIdList() {
+		return this.imageDetailIdList;
+	}
+	public void setImageDetailIdList(List<String> imageDetailIdList) {
+		this.imageDetailIdList = imageDetailIdList;
+	}
+
+	public List<String> getImageDetailUrlList() {
+		return this.imageDetailUrlList;
+	}
+	public void setImageDetailUrlList(List<String> imageDetailUrlList) {
+		this.imageDetailUrlList = imageDetailUrlList;
 	}
 
 	public List<String> getImageIdList() {

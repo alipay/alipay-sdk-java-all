@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业认证信息
  *
  * @author auto create
- * @since 1.0, 2024-07-19 17:53:52
+ * @since 1.0, 2024-09-02 15:51:50
  */
 public class RentEnterpriseCertification extends AlipayObject {
 
-	private static final long serialVersionUID = 1237964222624426557L;
+	private static final long serialVersionUID = 6497837273374474425L;
 
 	/**
 	 * 代理人手机号
@@ -164,6 +164,12 @@ public class RentEnterpriseCertification extends AlipayObject {
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/**
+	 * 认证的企业类型
+	 */
+	@ApiField("org_type")
+	private String orgType;
 
 	/**
 	 * 商户ID
@@ -362,6 +368,13 @@ public class RentEnterpriseCertification extends AlipayObject {
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public String getOrgType() {
+		return this.orgType;
+	}
+	public void setOrgType(String orgType) {
+		this.orgType = orgType;
 	}
 
 	public String getPartnerId() {

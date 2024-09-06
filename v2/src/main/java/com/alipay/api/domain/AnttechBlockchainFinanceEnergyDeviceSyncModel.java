@@ -11,36 +11,54 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 可信价值中心实体运行时数据
  *
  * @author auto create
- * @since 1.0, 2024-07-19 17:26:19
+ * @since 1.0, 2024-09-02 21:57:14
  */
 public class AnttechBlockchainFinanceEnergyDeviceSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1526729559618696289L;
+	private static final long serialVersionUID = 4219282718572564767L;
 
 	/**
-	 * 交流充电桩实时数据数据列表
+	 * 交流充电桩实时数据数据列表。
+列表长度最大100 当前字段已废弃(目前无使用，直接删除)
 	 */
 	@ApiListField("acc_pile_data_list")
 	@ApiField("ac_charge_pile_run_time_data")
+	@Deprecated
 	private List<AcChargePileRunTimeData> accPileDataList;
 
 	/**
-	 * 充电设备类型
+	 * 充电设备类型 当前字段已废弃(合并至 data_type)
 	 */
 	@ApiField("charge_device_type")
+	@Deprecated
 	private String chargeDeviceType;
 
 	/**
-	 * 直流充电桩实时数据列表
+	 * 上报设备信息字符串
+	 */
+	@ApiField("data_list")
+	private String dataList;
+
+	/**
+	 * 数据类型
+	 */
+	@ApiField("data_type")
+	private String dataType;
+
+	/**
+	 * 直流充电桩实时数据列表。
+列表长度最大100 当前字段已废弃(目前无使用，直接删除)
 	 */
 	@ApiListField("dcc_pile_data_list")
 	@ApiField("dc_charge_pile_run_time_data")
+	@Deprecated
 	private List<DcChargePileRunTimeData> dccPileDataList;
 
 	/**
-	 * 设备类型
+	 * 设备类型 当前字段已废弃(合并至 data_type)
 	 */
 	@ApiField("device_type")
+	@Deprecated
 	private String deviceType;
 
 	/**
@@ -73,6 +91,20 @@ public class AnttechBlockchainFinanceEnergyDeviceSyncModel extends AlipayObject 
 	}
 	public void setChargeDeviceType(String chargeDeviceType) {
 		this.chargeDeviceType = chargeDeviceType;
+	}
+
+	public String getDataList() {
+		return this.dataList;
+	}
+	public void setDataList(String dataList) {
+		this.dataList = dataList;
+	}
+
+	public String getDataType() {
+		return this.dataType;
+	}
+	public void setDataType(String dataType) {
+		this.dataType = dataType;
 	}
 
 	public List<DcChargePileRunTimeData> getDccPileDataList() {

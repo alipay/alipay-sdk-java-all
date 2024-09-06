@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 安心付开通进度查询——申请明细
  *
  * @author auto create
- * @since 1.0, 2024-08-20 18:01:36
+ * @since 1.0, 2024-09-02 15:13:45
  */
 public class MerchantApplyItemInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6133857847384698423L;
+	private static final long serialVersionUID = 7871474449971963342L;
 
 	/**
 	 * 申请单编号

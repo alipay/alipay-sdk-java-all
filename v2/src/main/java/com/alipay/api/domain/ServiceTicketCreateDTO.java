@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务工单类创建模型
  *
  * @author auto create
- * @since 1.0, 2024-04-28 20:44:14
+ * @since 1.0, 2024-09-04 09:37:35
  */
 public class ServiceTicketCreateDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7223558812159915819L;
+	private static final long serialVersionUID = 6165913994876627322L;
 
 	/**
 	 * 坐席id

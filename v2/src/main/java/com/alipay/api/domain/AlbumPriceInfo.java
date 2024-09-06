@@ -7,16 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 专辑价格信息
  *
  * @author auto create
- * @since 1.0, 2024-06-17 15:16:18
+ * @since 1.0, 2024-09-03 11:41:01
  */
 public class AlbumPriceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2117736296375866211L;
+	private static final long serialVersionUID = 8185328121281528762L;
 
 	/**
-	 * 已废弃。
+	 * 专辑价格，单位元。已废弃。 当前字段已废弃(废弃actual_price字段，使用price字段)
 	 */
 	@ApiField("actual_price")
+	@Deprecated
 	private String actualPrice;
 
 	/**
@@ -32,8 +33,7 @@ public class AlbumPriceInfo extends AlipayObject {
 	private String price;
 
 	/**
-	 * 销售方式：ALBUM（专辑整本售卖）、SINGLE_SOUND（单集售卖）；
-收费专辑必填。
+	 * 专辑的销售方式
 	 */
 	@ApiField("sell_type")
 	private String sellType;

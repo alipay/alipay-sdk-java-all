@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询宠物种类信息
  *
  * @author auto create
- * @since 1.0, 2024-08-01 16:34:01
+ * @since 1.0, 2024-09-03 15:50:50
  */
 public class AlipayCommercePetSpeciesQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1551326163689417761L;
+	private static final long serialVersionUID = 5418796673467889568L;
 
 	/**
 	 * 宠物类型

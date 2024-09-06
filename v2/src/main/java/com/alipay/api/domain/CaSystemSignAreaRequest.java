@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签署区域信息（包括印模信息）
  *
  * @author auto create
- * @since 1.0, 2023-05-15 09:39:05
+ * @since 1.0, 2024-09-05 15:23:11
  */
 public class CaSystemSignAreaRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 6456848384388532595L;
+	private static final long serialVersionUID = 3751515834488571636L;
 
 	/**
 	 * 骑缝章信息
@@ -47,6 +47,12 @@ public class CaSystemSignAreaRequest extends AlipayObject {
 	@ApiField("seal_id")
 	private String sealId;
 
+	/**
+	 * 签署印模信息。osskey或者url
+	 */
+	@ApiField("seal_pic_addr")
+	private String sealPicAddr;
+
 	public CaSystemCrossPageRequest getCaSystemCrossPageRequest() {
 		return this.caSystemCrossPageRequest;
 	}
@@ -80,6 +86,13 @@ public class CaSystemSignAreaRequest extends AlipayObject {
 	}
 	public void setSealId(String sealId) {
 		this.sealId = sealId;
+	}
+
+	public String getSealPicAddr() {
+		return this.sealPicAddr;
+	}
+	public void setSealPicAddr(String sealPicAddr) {
+		this.sealPicAddr = sealPicAddr;
 	}
 
 }

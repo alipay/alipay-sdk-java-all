@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserInviteRtaConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8522397746437328999L;
+	private static final long serialVersionUID = 4384638813537963375L;
 
 	/**
 	 * 加密类型，空表示不加密
@@ -27,13 +27,13 @@ public class AlipayUserInviteRtaConsultModel extends AlipayObject {
 
 	/**
 	 * 设备标识信息，包括IMEI，IDFA，OAID。
-注意：IMEI必须为MD5加密类型
+注意：IMEI必须为MD5加密类型，CAID则为原文设备号_版本格式，如:99ef8a8ae8ce8d70d8e4e515bfea60b1_20230330
 	 */
 	@ApiField("principal")
 	private String principal;
 
 	/**
-	 * 查询的设备类型（IMEI、IDFA、OAID、USERID、OPENID）
+	 * 查询的设备类型（IMEI、IDFA、OAID、USERID、OPENID、CAID）
 	 */
 	@ApiField("principal_type")
 	private String principalType;

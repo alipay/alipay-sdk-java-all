@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家群群内消息发送记录模型
  *
  * @author auto create
- * @since 1.0, 2024-05-27 20:03:28
+ * @since 1.0, 2024-09-06 15:05:52
  */
 public class GroupMsgRecordVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7555993554678812681L;
+	private static final long serialVersionUID = 8576445851364833661L;
 
 	/**
 	 * 业务自己定义的业务id
@@ -37,7 +37,7 @@ public class GroupMsgRecordVO extends AlipayObject {
 	private String msgId;
 
 	/**
-	 * 群消息类型枚举，小程序消息:"APP"，图片消息:"IMAGE"，链接消息:"LINK"，纯文本消息:"TEXT"
+	 * 群消息类型枚举，小程序消息:"APP"，图片消息:"IMAGE"，链接消息:"LINK"，纯文本消息:"TEXT"，优惠券消息:"COUPON"。
 	 */
 	@ApiField("msg_type")
 	private String msgType;

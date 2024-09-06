@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 安心付开通接口
  *
  * @author auto create
- * @since 1.0, 2024-08-22 16:07:16
+ * @since 1.0, 2024-09-02 16:33:51
  */
 public class AlipayCommerceMerchantcardOpenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4119372714414229396L;
+	private static final long serialVersionUID = 4581267884414716165L;
 
 	/**
 	 * 卡类型

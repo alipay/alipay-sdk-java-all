@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMobileMovieActivityNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5237985827519348166L;
+	private static final long serialVersionUID = 6813625386315512969L;
 
 	/** 
 	 * 是否成功

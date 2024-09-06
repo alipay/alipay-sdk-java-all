@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 正文章信息
  *
  * @author auto create
- * @since 1.0, 2023-05-15 09:39:05
+ * @since 1.0, 2024-09-05 15:23:11
  */
 public class CaSystemMainBodyRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 4669577492716695928L;
+	private static final long serialVersionUID = 7493986131497532791L;
 
 	/**
 	 * * 如果用印坐标未知，可根据关键字及出现的次序计算用印座标。 则：传入关键字及出现次序，axisX，axisY无需传入，内部会计算出对应的值,覆盖外部传入的axisX，axisY
@@ -44,19 +44,19 @@ public class CaSystemMainBodyRequest extends AlipayObject {
 	private String mainBodyModel;
 
 	/**
-	 * 签署页码
+	 * 签署页码，单位页
 	 */
 	@ApiField("pos_page")
 	private Long posPage;
 
 	/**
-	 * 签署区位置横坐标
+	 * 签署区位置横坐标，单位像素。
 	 */
 	@ApiField("pos_x")
 	private Long posX;
 
 	/**
-	 * 签署区位置纵坐标
+	 * 签署区位置纵坐标，单位像素。
 	 */
 	@ApiField("pos_y")
 	private Long posY;

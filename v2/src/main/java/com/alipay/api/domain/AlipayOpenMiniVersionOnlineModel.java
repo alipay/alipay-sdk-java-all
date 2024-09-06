@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序上架
  *
  * @author auto create
- * @since 1.0, 2024-07-09 11:28:49
+ * @since 1.0, 2024-09-04 09:47:16
  */
 public class AlipayOpenMiniVersionOnlineModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1875273991559496651L;
+	private static final long serialVersionUID = 6418786449793339623L;
 
 	/**
 	 * 商家小程序版本号，需为审核通过状态或灰度中版本。
@@ -37,6 +37,13 @@ com.alipay.iot.xpaas：支付宝IoT端。
 	@ApiField("downgrade")
 	private Boolean downgrade;
 
+	/**
+	 * 如果该字段为true，在首次发版的小程序在备案未完成的情况下，允许小程序上架，但小程序上架后只可以上架可扫码进行使用，但不可被搜索、限制访问人数（50人/每天）、限制公域（无法进行商品、服务、营促销）、限制上架后90天不完成备案自动下架。
+默认为false
+	 */
+	@ApiField("permit_registration_limit_release")
+	private Boolean permitRegistrationLimitRelease;
+
 	public String getAppVersion() {
 		return this.appVersion;
 	}
@@ -56,6 +63,13 @@ com.alipay.iot.xpaas：支付宝IoT端。
 	}
 	public void setDowngrade(Boolean downgrade) {
 		this.downgrade = downgrade;
+	}
+
+	public Boolean getPermitRegistrationLimitRelease() {
+		return this.permitRegistrationLimitRelease;
+	}
+	public void setPermitRegistrationLimitRelease(Boolean permitRegistrationLimitRelease) {
+		this.permitRegistrationLimitRelease = permitRegistrationLimitRelease;
 	}
 
 }

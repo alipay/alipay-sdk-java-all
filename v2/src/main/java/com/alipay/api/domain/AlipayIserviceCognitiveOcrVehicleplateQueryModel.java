@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayIserviceCognitiveOcrVehicleplateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8743179759628417274L;
+	private static final long serialVersionUID = 2614544868573556322L;
 
 	/**
 	 * 车牌图片base64加密后内容

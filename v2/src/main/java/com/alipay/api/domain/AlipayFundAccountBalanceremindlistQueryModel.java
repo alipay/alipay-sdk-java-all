@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询余额提醒计划列表
  *
  * @author auto create
- * @since 1.0, 2024-07-18 15:57:43
+ * @since 1.0, 2024-09-03 15:24:51
  */
 public class AlipayFundAccountBalanceremindlistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8717437781584779555L;
+	private static final long serialVersionUID = 7671694122259431138L;
 
 	/**
 	 * 场景码，固定传：QUERY_PLAN_LIST

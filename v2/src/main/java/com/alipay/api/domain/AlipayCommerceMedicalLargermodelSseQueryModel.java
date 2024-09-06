@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗大模型服务对外接口_流式会话
  *
  * @author auto create
- * @since 1.0, 2024-08-30 14:22:46
+ * @since 1.0, 2024-09-04 17:18:00
  */
 public class AlipayCommerceMedicalLargermodelSseQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7848685999718178768L;
+	private static final long serialVersionUID = 4888266189364288876L;
 
 	/**
 	 * 流式会话最大存活时间(毫秒)

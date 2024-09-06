@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 群用户信息openapi模型,用于编辑商家群群组的群主和群管理员信息
  *
  * @author auto create
- * @since 1.0, 2024-05-15 16:49:56
+ * @since 1.0, 2024-09-05 17:19:57
  */
 public class GroupUserVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6387391843398795261L;
+	private static final long serialVersionUID = 3458627381928953662L;
 
 	/**
 	 * 邀请者的user_id，2088开头的16位数字。
@@ -24,6 +24,12 @@ public class GroupUserVO extends AlipayObject {
 	 */
 	@ApiField("invite_open_id")
 	private String inviteOpenId;
+
+	/**
+	 * 入群方式。BY_TOKEN - 通过吱口令入群；BY_INV - 通过被邀请或者被选择入群；BY_COD - 通过扫码入群；BY_FTF- 通过面对面入群；BY_ADD - 外部添加来源；BY_CHAT_ROOM - 聊天室；BY_OPENAPI - 开放平台；BY_SHARE_INV - 通过分享的邀请链接进群；BY_BIZ_INVOKE - 通过业务系统调用进群；BY_SELF_ENTER -通过自主进群；DIS - 讨论组进群；SOCIAL - 社区业务调用进群；BY_UNKNOW -未知来源。其余的属于商户自定义的入群方式！！！
+	 */
+	@ApiField("join_scene")
+	private String joinScene;
 
 	/**
 	 * 入群时间
@@ -42,6 +48,18 @@ public class GroupUserVO extends AlipayObject {
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/**
+	 * 邀请者uid对应的unionId
+	 */
+	@ApiField("union_id_from_invite_id")
+	private String unionIdFromInviteId;
+
+	/**
+	 * 用户uid对应的unionId
+	 */
+	@ApiField("union_id_from_user_id")
+	private String unionIdFromUserId;
 
 	/**
 	 * 用户user_id，2088开头的16位数字。
@@ -69,6 +87,13 @@ public class GroupUserVO extends AlipayObject {
 		this.inviteOpenId = inviteOpenId;
 	}
 
+	public String getJoinScene() {
+		return this.joinScene;
+	}
+	public void setJoinScene(String joinScene) {
+		this.joinScene = joinScene;
+	}
+
 	public String getJoinTime() {
 		return this.joinTime;
 	}
@@ -88,6 +113,20 @@ public class GroupUserVO extends AlipayObject {
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public String getUnionIdFromInviteId() {
+		return this.unionIdFromInviteId;
+	}
+	public void setUnionIdFromInviteId(String unionIdFromInviteId) {
+		this.unionIdFromInviteId = unionIdFromInviteId;
+	}
+
+	public String getUnionIdFromUserId() {
+		return this.unionIdFromUserId;
+	}
+	public void setUnionIdFromUserId(String unionIdFromUserId) {
+		this.unionIdFromUserId = unionIdFromUserId;
 	}
 
 	public String getUserId() {

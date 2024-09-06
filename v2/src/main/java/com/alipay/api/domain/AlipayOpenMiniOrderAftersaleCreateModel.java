@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建售后
  *
  * @author auto create
- * @since 1.0, 2024-04-17 18:19:31
+ * @since 1.0, 2024-09-03 17:15:16
  */
 public class AlipayOpenMiniOrderAftersaleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4149358882477792767L;
+	private static final long serialVersionUID = 8236723838796383135L;
 
 	/**
 	 * 退换商品的信息
@@ -49,7 +49,7 @@ order_id、out_order_id，二选一
 	private String outOrderId;
 
 	/**
-	 * 商家小程序该售后单的页面path，不存在则使用订单path
+	 * 商家小程序该售后单的页面path或者订单详情页面path，优先传入售后单页面path。
 	 */
 	@ApiField("path")
 	private String path;

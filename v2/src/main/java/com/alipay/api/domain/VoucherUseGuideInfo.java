@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 券核销引导
  *
  * @author auto create
- * @since 1.0, 2023-10-26 20:36:05
+ * @since 1.0, 2024-09-06 15:13:53
  */
 public class VoucherUseGuideInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6386637356491392774L;
+	private static final long serialVersionUID = 6291984639728948535L;
 
 	/**
 	 * 小程序核销引导
@@ -29,6 +29,12 @@ public class VoucherUseGuideInfo extends AlipayObject {
 	@ApiField("string")
 	private List<String> useGuideMode;
 
+	/**
+	 * 核销跳转链接
+	 */
+	@ApiField("use_url")
+	private String useUrl;
+
 	public VoucherMiniAppUseGuideInfo getMiniAppUseGuideInfo() {
 		return this.miniAppUseGuideInfo;
 	}
@@ -41,6 +47,13 @@ public class VoucherUseGuideInfo extends AlipayObject {
 	}
 	public void setUseGuideMode(List<String> useGuideMode) {
 		this.useGuideMode = useGuideMode;
+	}
+
+	public String getUseUrl() {
+		return this.useUrl;
+	}
+	public void setUseUrl(String useUrl) {
+		this.useUrl = useUrl;
 	}
 
 }

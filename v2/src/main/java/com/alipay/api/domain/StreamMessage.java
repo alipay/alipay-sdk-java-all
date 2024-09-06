@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 流式消息
  *
  * @author auto create
- * @since 1.0, 2024-08-30 14:22:46
+ * @since 1.0, 2024-09-04 19:59:53
  */
 public class StreamMessage extends AlipayObject {
 
-	private static final long serialVersionUID = 4797891746831978153L;
+	private static final long serialVersionUID = 8292538747836954961L;
 
 	/**
 	 * 对话请求发起侧自定义生成的对话标识Id

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IssueRecordInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6633652545179396732L;
+	private static final long serialVersionUID = 1291836691595449236L;
 
 	/**
 	 * 发放金额，支持两位小数，单位为（元）

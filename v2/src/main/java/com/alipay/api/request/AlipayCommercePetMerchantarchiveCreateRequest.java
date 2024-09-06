@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.pet.merchantarchive.create request
  * 
  * @author auto create
- * @since 1.0, 2024-08-01 16:37:03
+ * @since 1.0, 2024-09-03 19:57:07
  */
 public class AlipayCommercePetMerchantarchiveCreateRequest implements AlipayRequest<AlipayCommercePetMerchantarchiveCreateResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.petinsure.signurl.query request
  * 
  * @author auto create
- * @since 1.0, 2024-08-01 16:32:06
+ * @since 1.0, 2024-09-03 19:52:08
  */
 public class AlipayCommercePetinsureSignurlQueryRequest implements AlipayRequest<AlipayCommercePetinsureSignurlQueryResponse> {
 

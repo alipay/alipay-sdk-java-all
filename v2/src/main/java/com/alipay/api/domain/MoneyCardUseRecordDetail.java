@@ -1,25 +1,34 @@
 package com.alipay.api.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 金额卡使用记录详情
  *
  * @author auto create
- * @since 1.0, 2024-07-30 14:22:35
+ * @since 1.0, 2024-09-03 16:43:38
  */
 public class MoneyCardUseRecordDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6846521639219453255L;
+	private static final long serialVersionUID = 4773823911294588122L;
 
 	/**
 	 * 金额，对应金额卡实际核销金额，单位分
 	 */
 	@ApiField("amount")
 	private String amount;
+
+	/**
+	 * 抽佣信息集合
+	 */
+	@ApiListField("bill_fee_info_list")
+	@ApiField("bill_fee_info")
+	private List<BillFeeInfo> billFeeInfoList;
 
 	/**
 	 * 业务类型
@@ -110,6 +119,13 @@ public class MoneyCardUseRecordDetail extends AlipayObject {
 	}
 	public void setAmount(String amount) {
 		this.amount = amount;
+	}
+
+	public List<BillFeeInfo> getBillFeeInfoList() {
+		return this.billFeeInfoList;
+	}
+	public void setBillFeeInfoList(List<BillFeeInfo> billFeeInfoList) {
+		this.billFeeInfoList = billFeeInfoList;
 	}
 
 	public String getBizType() {

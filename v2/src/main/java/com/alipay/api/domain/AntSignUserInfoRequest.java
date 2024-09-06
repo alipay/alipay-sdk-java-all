@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 签署人信息
  *
  * @author auto create
- * @since 1.0, 2023-05-25 14:57:46
+ * @since 1.0, 2024-09-05 15:23:11
  */
 public class AntSignUserInfoRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 8738565625454178613L;
+	private static final long serialVersionUID = 1769178557868985835L;
 
 	/**
 	 * 授权签署方证件号码
@@ -35,7 +35,7 @@ public class AntSignUserInfoRequest extends AlipayObject {
 	private String authSignerName;
 
 	/**
-	 * 是否指定授权人签署
+	 * 是否指定授权人签署,1为true，0为false
 	 */
 	@ApiField("authorized")
 	private String authorized;

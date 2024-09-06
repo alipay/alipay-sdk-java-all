@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.petinsure.cancel request
  * 
  * @author auto create
- * @since 1.0, 2024-08-08 15:42:05
+ * @since 1.0, 2024-09-03 19:57:08
  */
 public class AlipayCommercePetinsureCancelRequest implements AlipayRequest<AlipayCommercePetinsureCancelResponse> {
 

@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 安心付开通接口——资质
  *
  * @author auto create
- * @since 1.0, 2024-08-20 19:54:28
+ * @since 1.0, 2024-09-02 16:33:51
  */
 public class SettleInMerchantLicense extends AlipayObject {
 
-	private static final long serialVersionUID = 2253391239493497838L;
+	private static final long serialVersionUID = 7247869232821855767L;
 
 	/**
-	 * 商户名称
+	 * 商户简称。用于芝麻信用服务开通。
 	 */
 	@ApiField("name")
 	private String name;

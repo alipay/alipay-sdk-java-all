@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 投保合作商信息
  *
  * @author auto create
- * @since 1.0, 2023-10-10 11:43:12
+ * @since 1.0, 2024-09-03 11:33:31
  */
 public class InsurePartnerOrganization extends AlipayObject {
 
-	private static final long serialVersionUID = 5737646173612324796L;
+	private static final long serialVersionUID = 6477215697626555736L;
 
 	/**
 	 * 账号主体类型，默认ALIPAY_USER_ID
@@ -20,8 +20,7 @@ public class InsurePartnerOrganization extends AlipayObject {
 	private String alipayAccountType;
 
 	/**
-	 * 参与方唯一标识，当alipay_account_type为ALIPAY_USER_ID是表示支付宝2088uid,
-当alipay_account_type为ALIPAY_LOGON_ID时表示支付宝登录号
+	 * 参与方唯一标识，当alipay_account_type为ALIPAY_USER_ID是表示支付宝2088uid, 当alipay_account_type为ALIPAY_LOGON_ID时表示支付宝登录号
 	 */
 	@ApiField("alipay_id")
 	private String alipayId;
@@ -51,7 +50,7 @@ public class InsurePartnerOrganization extends AlipayObject {
 	private String certType;
 
 	/**
-	 * 合作商id
+	 * 如果存在第二合作商，则传入合作商id
 	 */
 	@ApiField("partner_org_id")
 	private String partnerOrgId;

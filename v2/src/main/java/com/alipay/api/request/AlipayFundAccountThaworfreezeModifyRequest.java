@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.account.thaworfreeze.modify request
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:29:15
+ * @since 1.0, 2024-09-05 11:56:03
  */
 public class AlipayFundAccountThaworfreezeModifyRequest implements AlipayRequest<AlipayFundAccountThaworfreezeModifyResponse> {
 

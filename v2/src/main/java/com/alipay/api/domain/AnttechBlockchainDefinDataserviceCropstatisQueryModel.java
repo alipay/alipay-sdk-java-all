@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AnttechBlockchainDefinDataserviceCropstatisQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8235619677838773139L;
+	private static final long serialVersionUID = 6714157264568551583L;
 
 	/**
 	 * 作物编码条件汇总

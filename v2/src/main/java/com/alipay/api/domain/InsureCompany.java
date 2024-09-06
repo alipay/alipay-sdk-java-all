@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 投保企业信息
  *
  * @author auto create
- * @since 1.0, 2023-10-10 11:42:50
+ * @since 1.0, 2024-09-03 11:33:31
  */
 public class InsureCompany extends AlipayObject {
 
-	private static final long serialVersionUID = 2641873465375238595L;
+	private static final long serialVersionUID = 1212293534977478962L;
 
 	/**
 	 * 参与方唯一标识，当alipay_account_type为ALIPAY_USER_ID是表示支付宝2088uid,当alipay_account_type为ALIPAY_LOGON_ID时表示支付宝登录号

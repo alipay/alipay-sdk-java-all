@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 宠物保险退保
  *
  * @author auto create
- * @since 1.0, 2024-08-01 16:31:50
+ * @since 1.0, 2024-09-03 15:51:51
  */
 public class AlipayCommercePetinsureCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1359962746586395144L;
+	private static final long serialVersionUID = 5751182976937182218L;
 
 	/**
 	 * 外部业务单号，每一笔新的投保请求应该保持唯一。

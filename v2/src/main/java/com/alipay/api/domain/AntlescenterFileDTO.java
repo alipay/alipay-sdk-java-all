@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AntlescenterFileDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4381665923615328565L;
+	private static final long serialVersionUID = 3634442852528723598L;
 
 	/**
 	 * 文件日期

@@ -7,32 +7,32 @@ import com.alipay.api.internal.mapping.ApiField;
  * 直流充电桩运行时数据
  *
  * @author auto create
- * @since 1.0, 2024-07-19 17:26:19
+ * @since 1.0, 2024-09-02 21:57:13
  */
 public class DcChargePileRunTimeData extends AlipayObject {
 
-	private static final long serialVersionUID = 7185665328117527982L;
+	private static final long serialVersionUID = 3617229735952344469L;
 
 	/**
-	 * 可下调容量
+	 * 可下调容量，单位KW
 	 */
 	@ApiField("adjust_down")
 	private String adjustDown;
 
 	/**
-	 * 可上调容量
+	 * 可上调容量，单位KW
 	 */
 	@ApiField("adjust_up")
 	private String adjustUp;
 
 	/**
-	 * 充电电量
+	 * 充电电量，单位KWH
 	 */
 	@ApiField("cumulative_power")
 	private String cumulativePower;
 
 	/**
-	 * 输出电流，单位（安培）
+	 * 输出电流，单位（A）
 	 */
 	@ApiField("output_current")
 	private String outputCurrent;
@@ -44,7 +44,7 @@ public class DcChargePileRunTimeData extends AlipayObject {
 	private String outputVoltage;
 
 	/**
-	 * 功率，kw
+	 * 功率，单位 kw
 	 */
 	@ApiField("power")
 	private String power;

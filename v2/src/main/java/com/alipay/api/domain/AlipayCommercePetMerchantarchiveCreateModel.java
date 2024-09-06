@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建商户宠物档案
  *
  * @author auto create
- * @since 1.0, 2024-08-01 16:34:43
+ * @since 1.0, 2024-09-03 15:51:52
  */
 public class AlipayCommercePetMerchantarchiveCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2881763916264749926L;
+	private static final long serialVersionUID = 2494737612676878653L;
 
 	/**
 	 * 商户宠物Id

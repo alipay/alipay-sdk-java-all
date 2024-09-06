@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 专辑热度信息
  *
  * @author auto create
- * @since 1.0, 2023-01-04 19:12:31
+ * @since 1.0, 2024-09-03 11:41:01
  */
 public class AlbumPopularityInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5253278735983982678L;
+	private static final long serialVersionUID = 7849675412564686353L;
 
 	/**
 	 * 专辑购买量
@@ -32,7 +32,7 @@ public class AlbumPopularityInfo extends AlipayObject {
 	private Long playCount;
 
 	/**
-	 * 专辑评分
+	 * 专辑评分，十分制
 	 */
 	@ApiField("score")
 	private String score;

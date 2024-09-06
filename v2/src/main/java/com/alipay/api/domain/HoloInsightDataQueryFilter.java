@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HoloInsightDataQueryFilter extends AlipayObject {
 
-	private static final long serialVersionUID = 3643921868216363518L;
+	private static final long serialVersionUID = 5158616262571119614L;
 
 	/**
 	 * 主机名字符串

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserAigcAipictureBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7242267657613317846L;
+	private static final long serialVersionUID = 4439559711756861685L;
 
 	/** 
 	 * AIGC生成的多媒体图片列表

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 群信息。包含群id、群名称、群介绍、欢迎语等群配置信息。
  *
  * @author auto create
- * @since 1.0, 2024-05-15 16:49:57
+ * @since 1.0, 2024-09-05 17:19:58
  */
 public class GroupInstanceInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7749928845153197436L;
+	private static final long serialVersionUID = 7651165333898571671L;
 
 	/**
 	 * 请一定打开，开启后获得满500人自动裂变新群聊功能。true：开启；false：关闭。
@@ -40,6 +40,12 @@ public class GroupInstanceInfoVO extends AlipayObject {
 	 */
 	@ApiField("gmt_create")
 	private Date gmtCreate;
+
+	/**
+	 * 群组id，表里唯一键，创建群组自动生成，编辑群组必填
+	 */
+	@ApiField("group_id")
+	private String groupId;
 
 	/**
 	 * 输入群管理员的个人支付宝账号、真实姓名、登录账号，自动建群时会将该账号默认设为群管理员；如需多个可“添加管理员”，最多可设置10个。
@@ -129,6 +135,13 @@ public class GroupInstanceInfoVO extends AlipayObject {
 	}
 	public void setGmtCreate(Date gmtCreate) {
 		this.gmtCreate = gmtCreate;
+	}
+
+	public String getGroupId() {
+		return this.groupId;
+	}
+	public void setGroupId(String groupId) {
+		this.groupId = groupId;
 	}
 
 	public List<GroupUserVO> getGroupInstanceAdminUserList() {

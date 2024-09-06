@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceOperationDcsProxysignSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1213496219655458279L;
+	private static final long serialVersionUID = 5735656621481481659L;
 
 	/**
 	 * 门店所在位置纬度，小数点后最多保留6位

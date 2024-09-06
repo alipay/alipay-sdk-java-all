@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 淘宝余额支付开关服务
  *
  * @author auto create
- * @since 1.0, 2023-05-22 21:09:15
+ * @since 1.0, 2024-09-05 11:56:03
  */
 public class AlipayFundAccountThaworfreezeModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8679774355244619416L;
+	private static final long serialVersionUID = 6892862217526432756L;
 
 	/**
 	 * 场景码

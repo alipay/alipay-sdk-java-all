@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页查询商家群内群发消息记录
  *
  * @author auto create
- * @since 1.0, 2024-05-27 20:03:28
+ * @since 1.0, 2024-09-06 15:05:52
  */
 public class AlipayMerchantGroupGroupmsgBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8888415514895621151L;
+	private static final long serialVersionUID = 6546376753832389896L;
+
+	/**
+	 * 消息id
+	 */
+	@ApiField("msg_id")
+	private String msgId;
 
 	/**
 	 * 当前第几页
@@ -24,6 +30,13 @@ public class AlipayMerchantGroupGroupmsgBatchqueryModel extends AlipayObject {
 	 */
 	@ApiField("page_size")
 	private Long pageSize;
+
+	public String getMsgId() {
+		return this.msgId;
+	}
+	public void setMsgId(String msgId) {
+		this.msgId = msgId;
+	}
 
 	public Long getPageNum() {
 		return this.pageNum;

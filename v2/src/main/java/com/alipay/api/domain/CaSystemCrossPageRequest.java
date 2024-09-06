@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 骑缝章信息
  *
  * @author auto create
- * @since 1.0, 2023-05-15 09:39:05
+ * @since 1.0, 2024-09-05 15:23:11
  */
 public class CaSystemCrossPageRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 6219378142356438241L;
+	private static final long serialVersionUID = 5474491597916452382L;
 
 	/**
-	 * defaultCrossPageRule = true  默认设置每五页盖一次
+	 * defaultCrossPageRule = true  默认设置每五页盖一次。单位，页。
 	 */
 	@ApiField("default_cross_page")
 	private Long defaultCrossPage;
@@ -26,31 +26,31 @@ public class CaSystemCrossPageRequest extends AlipayObject {
 	private Boolean defaultCrossPageRule;
 
 	/**
-	 * 结束页码（供骑缝章使用）
+	 * 结束页码（供骑缝章使用），单位页。
 	 */
 	@ApiField("pos_page_end")
 	private Long posPageEnd;
 
 	/**
-	 * 签署页码
+	 * 签署页码，单位页。
 	 */
 	@ApiField("pos_page_start")
 	private Long posPageStart;
 
 	/**
-	 * 签署区位置横坐标
+	 * 签署区位置横坐标，单位像素（pixel）。
 	 */
 	@ApiField("pos_x")
 	private Long posX;
 
 	/**
-	 * 签署区位置纵坐标
+	 * 签署区位置纵坐标，单位像素（pixel）。
 	 */
 	@ApiField("pos_y")
 	private Long posY;
 
 	/**
-	 * 骑缝章用印次数，默认一次
+	 * 骑缝章用印次数，默认一次。单位，次。
 	 */
 	@ApiField("seal_times")
 	private Long sealTimes;

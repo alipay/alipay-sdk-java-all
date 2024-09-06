@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户宠物档案转移
  *
  * @author auto create
- * @since 1.0, 2024-08-01 16:34:08
+ * @since 1.0, 2024-09-03 15:51:19
  */
 public class AlipayCommercePetMerchantarchiveTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5386551485276293218L;
+	private static final long serialVersionUID = 2883634773528634647L;
 
 	/**
 	 * 支付宝宠物档案Id，与external_pet_id二选一

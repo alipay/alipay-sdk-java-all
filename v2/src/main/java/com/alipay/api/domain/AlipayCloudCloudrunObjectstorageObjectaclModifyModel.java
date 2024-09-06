@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCloudCloudrunObjectstorageObjectaclModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3414764737858686481L;
+	private static final long serialVersionUID = 3534289115455198681L;
 
 	/**
 	 * 文件acl，取值default：默认，acl继承自桶的acl；private: 私有，公网无法直接访问获取；public-read: 公开，公网可以直接访问获取

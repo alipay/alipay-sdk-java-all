@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订购单分页查询
  *
  * @author auto create
- * @since 1.0, 2024-08-23 11:19:49
+ * @since 1.0, 2024-09-02 16:16:50
  */
 public class AlipayCommerceMerchantcardOrderBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6146375531158211189L;
+	private static final long serialVersionUID = 7712949247692852376L;
 
 	/**
 	 * 卡名称
@@ -20,7 +20,7 @@ public class AlipayCommerceMerchantcardOrderBatchqueryModel extends AlipayObject
 	private String cardName;
 
 	/**
-	 * 售卖订单状态 ● 次卡/周期卡 ○ 订购中:init ○ 可使用:available ○ 已用完:used_up ○ 关闭中:closing ○ 已关闭:closed ● 金额卡 ○ 可使用:available ○ 已失效：invalid ○ 已支付：paid ○ 已退款：refund ○ 超时关闭：timeout_closed ○ 已用完:used_up
+	 * 售卖订单状态 ● 次卡/周期卡 ○ 订购中:init ○ 可使用:available ○ 已用完:used_up ○ 关闭中:closing ○ 已关闭:closed ○ 暂停:pause ● 金额卡 ○ 可使用:available ○ 已失效：invalid ○ 已支付：paid ○ 已退款：refund ○ 超时关闭：timeout_closed ○ 已用完:used_up
 	 */
 	@ApiField("card_status")
 	private String cardStatus;

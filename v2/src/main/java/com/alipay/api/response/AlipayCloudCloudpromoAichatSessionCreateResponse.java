@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudpromo.aichat.session.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-27 15:12:51
+ * @since 1.0, 2024-09-02 16:57:08
  */
 public class AlipayCloudCloudpromoAichatSessionCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7826191698447141998L;
+	private static final long serialVersionUID = 5276629585136653525L;
 
 	/** 
 	 * 智能体内容，query_config.need_agent_content=true时返回
@@ -43,6 +43,12 @@ public class AlipayCloudCloudpromoAichatSessionCreateResponse extends AlipayResp
 	@ApiListField("guess_question_list")
 	@ApiField("string")
 	private List<String> guessQuestionList;
+
+	/** 
+	 * 是否为新的会话id
+	 */
+	@ApiField("new_session_id")
+	private Boolean newSessionId;
 
 	/** 
 	 * 会话id
@@ -82,6 +88,13 @@ public class AlipayCloudCloudpromoAichatSessionCreateResponse extends AlipayResp
 	}
 	public List<String> getGuessQuestionList( ) {
 		return this.guessQuestionList;
+	}
+
+	public void setNewSessionId(Boolean newSessionId) {
+		this.newSessionId = newSessionId;
+	}
+	public Boolean getNewSessionId( ) {
+		return this.newSessionId;
 	}
 
 	public void setSessionId(String sessionId) {

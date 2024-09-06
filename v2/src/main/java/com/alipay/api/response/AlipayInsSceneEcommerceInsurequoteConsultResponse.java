@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.ecommerce.insurequote.consult response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-15 14:27:01
+ * @since 1.0, 2024-09-06 14:32:45
  */
 public class AlipayInsSceneEcommerceInsurequoteConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8686312392646227184L;
+	private static final long serialVersionUID = 5256448744654463692L;
 
 	/** 
 	 * 投保方案

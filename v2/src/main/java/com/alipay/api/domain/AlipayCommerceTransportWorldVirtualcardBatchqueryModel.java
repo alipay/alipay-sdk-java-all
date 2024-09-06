@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportWorldVirtualcardBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4879697331554257834L;
+	private static final long serialVersionUID = 4183919966848627164L;
 
 	/**
 	 * 卡号。和卡类型一起，唯一确定一张卡。为空时将返回该用户该卡类型下的所有卡。

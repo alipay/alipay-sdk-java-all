@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.pet.species.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-01 16:37:03
+ * @since 1.0, 2024-09-03 19:57:07
  */
 public class AlipayCommercePetSpeciesQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4393229329544622984L;
+	private static final long serialVersionUID = 2267662968849938827L;
 
 	/** 
 	 * 宠物品种列表

@@ -11,16 +11,16 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportChargerCommandConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3457142354549723197L;
+	private static final long serialVersionUID = 3294382425692562781L;
 
 	/**
-	 * 指令结果
+	 * 有序充电指令执行结果
 	 */
 	@ApiField("command_result")
 	private String commandResult;
 
 	/**
-	 * 支付宝指令流水号，唯一
+	 * 指令流水号，全局唯一
 	 */
 	@ApiField("command_serial_number")
 	private String commandSerialNumber;

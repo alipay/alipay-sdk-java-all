@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.recycle.billing.sync response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-23 16:05:05
+ * @since 1.0, 2024-09-02 11:15:32
  */
 public class AlipayCommerceOperationRecycleBillingSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1568264123576678877L;
+	private static final long serialVersionUID = 2791917149457638931L;
 
 	/** 
 	 * 是否传递成功

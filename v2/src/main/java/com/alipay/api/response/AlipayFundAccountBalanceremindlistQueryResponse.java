@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.account.balanceremindlist.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-18 16:02:05
+ * @since 1.0, 2024-09-03 15:27:08
  */
 public class AlipayFundAccountBalanceremindlistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4518774311111539687L;
+	private static final long serialVersionUID = 4775695892281135579L;
 
 	/** 
 	 * 计划列表数组数组类型

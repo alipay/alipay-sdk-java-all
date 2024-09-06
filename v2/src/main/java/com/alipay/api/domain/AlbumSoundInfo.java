@@ -1,5 +1,6 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
 import java.util.List;
 
 import com.alipay.api.AlipayObject;
@@ -10,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 专辑内声音信息
  *
  * @author auto create
- * @since 1.0, 2023-01-04 19:12:31
+ * @since 1.0, 2024-09-03 11:41:01
  */
 public class AlbumSoundInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6238566464478432851L;
+	private static final long serialVersionUID = 1223927378992245296L;
 
 	/**
 	 * 该声音完整播放时长，单位秒
@@ -27,6 +28,24 @@ public class AlbumSoundInfo extends AlipayObject {
 	 */
 	@ApiField("sample_duration")
 	private Long sampleDuration;
+
+	/**
+	 * 这条声音的简介（正文）
+	 */
+	@ApiField("sound_brief")
+	private String soundBrief;
+
+	/**
+	 * 单个声音的封面图，有则传入
+	 */
+	@ApiField("sound_cover_url")
+	private String soundCoverUrl;
+
+	/**
+	 * 声音的全文摘要（AI总结）
+	 */
+	@ApiField("sound_digest_desc")
+	private String soundDigestDesc;
 
 	/**
 	 * 收费专辑必传，该字段表示收费专辑下，声音是否可免费完整畅听。（例如前3集可免费听）
@@ -47,6 +66,13 @@ public class AlbumSoundInfo extends AlipayObject {
 	private String soundName;
 
 	/**
+	 * 声音的节点信息，某个时间节点下的内容摘要（AI速览）
+	 */
+	@ApiListField("sound_node_list")
+	@ApiField("sound_node_info")
+	private List<SoundNodeInfo> soundNodeList;
+
+	/**
 	 * 1，默认ADD，专辑新增录入时可不填
 2，仅用于专辑内声音变更时传入，例如专辑A内声音1需删除，则album_operate_type传入UPDATE，sound_operate_type传入DELETE，同时传入sound_id=1；
 	 */
@@ -58,6 +84,12 @@ public class AlbumSoundInfo extends AlipayObject {
 	 */
 	@ApiField("sound_order")
 	private Long soundOrder;
+
+	/**
+	 * 声音在第三方的发布上线时间
+	 */
+	@ApiField("sound_release_time")
+	private Date soundReleaseTime;
 
 	/**
 	 * 声音标签列表，有则填入
@@ -86,6 +118,27 @@ public class AlbumSoundInfo extends AlipayObject {
 		this.sampleDuration = sampleDuration;
 	}
 
+	public String getSoundBrief() {
+		return this.soundBrief;
+	}
+	public void setSoundBrief(String soundBrief) {
+		this.soundBrief = soundBrief;
+	}
+
+	public String getSoundCoverUrl() {
+		return this.soundCoverUrl;
+	}
+	public void setSoundCoverUrl(String soundCoverUrl) {
+		this.soundCoverUrl = soundCoverUrl;
+	}
+
+	public String getSoundDigestDesc() {
+		return this.soundDigestDesc;
+	}
+	public void setSoundDigestDesc(String soundDigestDesc) {
+		this.soundDigestDesc = soundDigestDesc;
+	}
+
 	public Boolean getSoundFree() {
 		return this.soundFree;
 	}
@@ -107,6 +160,13 @@ public class AlbumSoundInfo extends AlipayObject {
 		this.soundName = soundName;
 	}
 
+	public List<SoundNodeInfo> getSoundNodeList() {
+		return this.soundNodeList;
+	}
+	public void setSoundNodeList(List<SoundNodeInfo> soundNodeList) {
+		this.soundNodeList = soundNodeList;
+	}
+
 	public String getSoundOperateType() {
 		return this.soundOperateType;
 	}
@@ -119,6 +179,13 @@ public class AlbumSoundInfo extends AlipayObject {
 	}
 	public void setSoundOrder(Long soundOrder) {
 		this.soundOrder = soundOrder;
+	}
+
+	public Date getSoundReleaseTime() {
+		return this.soundReleaseTime;
+	}
+	public void setSoundReleaseTime(Date soundReleaseTime) {
+		this.soundReleaseTime = soundReleaseTime;
 	}
 
 	public List<String> getSoundTags() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 余额提醒中被提醒人信息
  *
  * @author auto create
- * @since 1.0, 2024-07-18 15:57:21
+ * @since 1.0, 2024-09-03 15:24:51
  */
 public class RemindPersonInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5369545293415318559L;
+	private static final long serialVersionUID = 3482193583641237558L;
 
 	/**
 	 * 通知渠道，包括邮件，短信，站内信，开放消息；开放消息不能与其他类型同处一个余额提醒中

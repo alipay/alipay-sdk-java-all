@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.account.balanceremindlist.query request
  * 
  * @author auto create
- * @since 1.0, 2024-07-18 16:02:05
+ * @since 1.0, 2024-09-03 15:27:08
  */
 public class AlipayFundAccountBalanceremindlistQueryRequest implements AlipayRequest<AlipayFundAccountBalanceremindlistQueryResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户分组删除接口
  *
  * @author auto create
- * @since 1.0, 2021-05-27 16:25:33
+ * @since 1.0, 2024-09-02 13:41:17
  */
 public class AlipayOpenPublicGroupDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7192728148939862397L;
+	private static final long serialVersionUID = 2361435913248456944L;
 
 	/**
 	 * 分组ID，通过<a href="https://opendocs.alipay.com/apis/api_6/alipay.open.public.group.create">alipay.open.public.group.create</a>（用户分组创建接口)

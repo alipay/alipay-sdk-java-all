@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.icontrol.serviceorder.modify request
  * 
  * @author auto create
- * @since 1.0, 2024-08-27 13:35:43
+ * @since 1.0, 2024-09-06 16:14:01
  */
 public class AlipayIserviceIcontrolServiceorderModifyRequest implements AlipayRequest<AlipayIserviceIcontrolServiceorderModifyResponse> {
 

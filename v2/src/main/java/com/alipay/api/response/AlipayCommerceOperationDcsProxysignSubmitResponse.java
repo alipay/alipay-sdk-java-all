@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceOperationDcsProxysignSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7149415748448935716L;
+	private static final long serialVersionUID = 6757799561669942522L;
 
 	
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.mini.templatemessage.batchsend response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-23 21:50:59
+ * @since 1.0, 2024-09-05 18:09:30
  */
 public class AlipayOpenAppMiniTemplatemessageBatchsendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1858159165731326837L;
+	private static final long serialVersionUID = 2382294539262741632L;
 
 	/** 
 	 * 批量发送记录ID，唯一标识一次消息模板批量发送

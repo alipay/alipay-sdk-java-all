@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 群组详情信息openapi模型
  *
  * @author auto create
- * @since 1.0, 2024-04-16 19:58:35
+ * @since 1.0, 2024-09-05 17:20:00
  */
 public class GroupDetailVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7349729561825663276L;
+	private static final long serialVersionUID = 4585999128433322419L;
 
 	/**
 	 * 群组基础信息。群组基础信息。包含群组id、群组名称、群组管理员列表等信息。
@@ -20,7 +20,7 @@ public class GroupDetailVO extends AlipayObject {
 	private GroupBaseInfoVO groupBaseInfo;
 
 	/**
-	 * 群信息。包含群id、群名称、群介绍、欢迎语等群配置信息。
+	 * 群信息。包含群id、群名称、群介绍等群配置信息。
 	 */
 	@ApiField("group_instance_info")
 	private GroupInstanceInfoVO groupInstanceInfo;

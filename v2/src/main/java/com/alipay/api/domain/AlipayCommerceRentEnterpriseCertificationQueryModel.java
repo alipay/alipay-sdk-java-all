@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 面向租赁商的企业认证状态查询
  *
  * @author auto create
- * @since 1.0, 2024-08-26 14:33:19
+ * @since 1.0, 2024-09-02 15:51:50
  */
 public class AlipayCommerceRentEnterpriseCertificationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6661248162523558236L;
+	private static final long serialVersionUID = 3687728193467434843L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.charger.command.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-09 18:43:25
+ * @since 1.0, 2024-09-05 14:07:12
  */
 public class AlipayCommerceTransportChargerCommandConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4214633767283676488L;
+	private static final long serialVersionUID = 6465838233439768347L;
 
 	
 

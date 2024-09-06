@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 同步商品档案
  *
  * @author auto create
- * @since 1.0, 2024-08-26 11:57:57
+ * @since 1.0, 2024-09-04 11:09:59
  */
 public class AlipayMsaasMediarecogAivisionrecgGoodsSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1553122177896742767L;
+	private static final long serialVersionUID = 8887749395762896522L;
 
 	/**
 	 * 商品文件

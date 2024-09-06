@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.recycle.billing.sync request
  * 
  * @author auto create
- * @since 1.0, 2024-08-23 16:05:05
+ * @since 1.0, 2024-09-02 11:15:32
  */
 public class AlipayCommerceOperationRecycleBillingSyncRequest implements AlipayRequest<AlipayCommerceOperationRecycleBillingSyncResponse> {
 

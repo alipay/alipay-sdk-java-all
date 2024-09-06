@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 宠物保险投保
  *
  * @author auto create
- * @since 1.0, 2024-08-01 16:31:37
+ * @since 1.0, 2024-09-03 20:18:51
  */
 public class AlipayCommercePetinsureEffectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8758792661813437361L;
+	private static final long serialVersionUID = 5577157874965128266L;
 
 	/**
 	 * 外部业务单号，每一笔新的投保请求应该保持唯一。

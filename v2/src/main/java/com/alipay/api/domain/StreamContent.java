@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 流式内容信息单元
  *
  * @author auto create
- * @since 1.0, 2024-08-30 14:22:46
+ * @since 1.0, 2024-09-04 19:59:53
  */
 public class StreamContent extends AlipayObject {
 
-	private static final long serialVersionUID = 7549955356823524255L;
+	private static final long serialVersionUID = 3473538233481795845L;
 
 	/**
 	 * Continue  继续应答

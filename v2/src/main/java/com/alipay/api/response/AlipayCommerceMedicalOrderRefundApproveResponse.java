@@ -8,23 +8,62 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.order.refund.approve response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-29 14:37:07
+ * @since 1.0, 2024-09-03 20:02:08
  */
 public class AlipayCommerceMedicalOrderRefundApproveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2636813547633558511L;
+	private static final long serialVersionUID = 8438264795765837738L;
 
 	/** 
-	 * 返回信息true/false
+	 * 审核信息true/false
 	 */
 	@ApiField("data")
 	private Boolean data;
+
+	/** 
+	 * 退款结果描述
+	 */
+	@ApiField("refund_msg")
+	private String refundMsg;
+
+	/** 
+	 * 退款单号
+	 */
+	@ApiField("refund_no")
+	private String refundNo;
+
+	/** 
+	 * 退款状态，
+	 */
+	@ApiField("refund_status")
+	private String refundStatus;
 
 	public void setData(Boolean data) {
 		this.data = data;
 	}
 	public Boolean getData( ) {
 		return this.data;
+	}
+
+	public void setRefundMsg(String refundMsg) {
+		this.refundMsg = refundMsg;
+	}
+	public String getRefundMsg( ) {
+		return this.refundMsg;
+	}
+
+	public void setRefundNo(String refundNo) {
+		this.refundNo = refundNo;
+	}
+	public String getRefundNo( ) {
+		return this.refundNo;
+	}
+
+	public void setRefundStatus(String refundStatus) {
+		this.refundStatus = refundStatus;
+	}
+	public String getRefundStatus( ) {
+		return this.refundStatus;
 	}
 
 }

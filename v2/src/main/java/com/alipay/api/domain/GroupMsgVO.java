@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 群消息。用于编辑群组的群消息，分为图文消息和小程序消息，用户进群时展示。
  *
  * @author auto create
- * @since 1.0, 2024-04-16 19:58:35
+ * @since 1.0, 2024-09-05 17:19:59
  */
 public class GroupMsgVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3878778178435873361L;
+	private static final long serialVersionUID = 3667833818139653711L;
 
 	/**
 	 * 图文消息内容

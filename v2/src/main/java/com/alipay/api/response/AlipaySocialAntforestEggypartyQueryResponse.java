@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.antforest.eggyparty.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-28 00:47:04
+ * @since 1.0, 2024-09-02 17:21:46
  */
 public class AlipaySocialAntforestEggypartyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8852742473677397471L;
+	private static final long serialVersionUID = 5791963466737316984L;
 
 	/** 
 	 * 公益林用户总浇水能量克数

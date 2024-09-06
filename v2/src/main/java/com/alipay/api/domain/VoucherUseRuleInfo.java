@@ -1,17 +1,27 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 券核销规则
  *
  * @author auto create
- * @since 1.0, 2023-06-28 17:40:23
+ * @since 1.0, 2024-09-06 15:13:53
  */
 public class VoucherUseRuleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1514814376165683334L;
+	private static final long serialVersionUID = 1747518538559782184L;
+
+	/**
+	 * 支付方式限制
+	 */
+	@ApiListField("payment_restriction_list")
+	@ApiField("string")
+	private List<String> paymentRestrictionList;
 
 	/**
 	 * 核销次数限制。
@@ -42,6 +52,13 @@ public class VoucherUseRuleInfo extends AlipayObject {
 	 */
 	@ApiField("voucher_use_time_info")
 	private VoucherUseTimeInfo voucherUseTimeInfo;
+
+	public List<String> getPaymentRestrictionList() {
+		return this.paymentRestrictionList;
+	}
+	public void setPaymentRestrictionList(List<String> paymentRestrictionList) {
+		this.paymentRestrictionList = paymentRestrictionList;
+	}
 
 	public Long getQuantityLimitPerUser() {
 		return this.quantityLimitPerUser;

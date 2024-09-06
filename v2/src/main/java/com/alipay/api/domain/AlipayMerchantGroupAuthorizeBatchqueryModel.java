@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页查询授权记录列表
  *
  * @author auto create
- * @since 1.0, 2024-06-11 20:47:51
+ * @since 1.0, 2024-09-06 15:33:54
  */
 public class AlipayMerchantGroupAuthorizeBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3712486652819381514L;
+	private static final long serialVersionUID = 5349715621159148559L;
 
 	/**
 	 * 当前页数
@@ -30,6 +30,12 @@ public class AlipayMerchantGroupAuthorizeBatchqueryModel extends AlipayObject {
 	 */
 	@ApiField("type")
 	private String type;
+
+	/**
+	 * 用户名称（真实姓名）。
+	 */
+	@ApiField("user_name")
+	private String userName;
 
 	public Long getPageNum() {
 		return this.pageNum;
@@ -50,6 +56,13 @@ public class AlipayMerchantGroupAuthorizeBatchqueryModel extends AlipayObject {
 	}
 	public void setType(String type) {
 		this.type = type;
+	}
+
+	public String getUserName() {
+		return this.userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 
 }

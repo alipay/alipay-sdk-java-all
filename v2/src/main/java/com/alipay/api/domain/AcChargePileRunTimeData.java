@@ -7,26 +7,26 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交流充电桩实时数据
  *
  * @author auto create
- * @since 1.0, 2024-07-19 17:26:19
+ * @since 1.0, 2024-09-02 21:57:13
  */
 public class AcChargePileRunTimeData extends AlipayObject {
 
-	private static final long serialVersionUID = 3176577352859171613L;
+	private static final long serialVersionUID = 3556676812311792911L;
 
 	/**
-	 * 可下调容量
+	 * 可下调容量，单位KW
 	 */
 	@ApiField("adjust_down")
 	private String adjustDown;
 
 	/**
-	 * 可上调容量
+	 * 可上调容量，单位KW
 	 */
 	@ApiField("adjust_up")
 	private String adjustUp;
 
 	/**
-	 * 本次充电电量
+	 * 本次充电电量，单位KWH
 	 */
 	@ApiField("cumulative_power")
 	private String cumulativePower;
@@ -38,13 +38,13 @@ public class AcChargePileRunTimeData extends AlipayObject {
 	private String currentA;
 
 	/**
-	 * b相电流，单位（安培）
+	 * b相电流，单位（A）
 	 */
 	@ApiField("current_b")
 	private String currentB;
 
 	/**
-	 * c相电流，单位（安培）
+	 * c相电流，单位（A）
 	 */
 	@ApiField("current_c")
 	private String currentC;
@@ -56,7 +56,7 @@ public class AcChargePileRunTimeData extends AlipayObject {
 	private String outEntityId;
 
 	/**
-	 * 功率，kw
+	 * 功率，单位KW
 	 */
 	@ApiField("power")
 	private String power;
@@ -68,19 +68,19 @@ public class AcChargePileRunTimeData extends AlipayObject {
 	private String pwmDutyCycle;
 
 	/**
-	 * a相电压
+	 * a相电压，单位V
 	 */
 	@ApiField("voltage_a")
 	private String voltageA;
 
 	/**
-	 * b相电压
+	 * b相电压，单位V
 	 */
 	@ApiField("voltage_b")
 	private String voltageB;
 
 	/**
-	 * c相电压
+	 * c相电压，单位V
 	 */
 	@ApiField("voltage_c")
 	private String voltageC;

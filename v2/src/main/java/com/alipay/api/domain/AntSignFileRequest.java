@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 待签署文件列表
  *
  * @author auto create
- * @since 1.0, 2023-05-15 09:39:05
+ * @since 1.0, 2024-09-05 15:23:12
  */
 public class AntSignFileRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 7738527473161342435L;
+	private static final long serialVersionUID = 1741349143469613941L;
 
 	/**
 	 * 文件可预览下载链接（业务方需保证文件存在和完整性）
