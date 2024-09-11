@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.public.personalized.menu.delete request
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 15:51:39
+ * @since 1.0, 2024-09-10 14:17:09
  */
 public class AlipayOpenPublicPersonalizedMenuDeleteRequest implements AlipayRequest<AlipayOpenPublicPersonalizedMenuDeleteResponse> {
 

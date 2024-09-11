@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电商场景开放平台报价信息模型
  *
  * @author auto create
- * @since 1.0, 2024-04-25 13:59:51
+ * @since 1.0, 2024-09-10 14:43:16
  */
 public class InsQuoteDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1391484819171835426L;
+	private static final long serialVersionUID = 1855558419528778563L;
 
 	/**
 	 * 折扣率
@@ -32,7 +32,13 @@ public class InsQuoteDTO extends AlipayObject {
 	private String instId;
 
 	/**
-	 * 折扣前原保费
+	 * 市场参考价 单位分
+	 */
+	@ApiField("market_reference_price")
+	private Long marketReferencePrice;
+
+	/**
+	 * 折扣前原保费 单位分
 	 */
 	@ApiField("original_premium")
 	private Long originalPremium;
@@ -44,7 +50,7 @@ public class InsQuoteDTO extends AlipayObject {
 	private String originalPremiumRate;
 
 	/**
-	 * 保费
+	 * 保费，单位分
 	 */
 	@ApiField("premium")
 	private Long premium;
@@ -86,7 +92,7 @@ public class InsQuoteDTO extends AlipayObject {
 	private String recommendFlowId;
 
 	/**
-	 * 保额
+	 * 保额 单位分
 	 */
 	@ApiField("sum_insured")
 	private Long sumInsured;
@@ -110,6 +116,13 @@ public class InsQuoteDTO extends AlipayObject {
 	}
 	public void setInstId(String instId) {
 		this.instId = instId;
+	}
+
+	public Long getMarketReferencePrice() {
+		return this.marketReferencePrice;
+	}
+	public void setMarketReferencePrice(Long marketReferencePrice) {
+		this.marketReferencePrice = marketReferencePrice;
 	}
 
 	public Long getOriginalPremium() {

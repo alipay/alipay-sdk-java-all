@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 扩展区
  *
  * @author auto create
- * @since 1.0, 2020-08-12 13:40:20
+ * @since 1.0, 2024-09-10 19:39:18
  */
 public class ExtensionArea extends AlipayObject {
 
-	private static final long serialVersionUID = 3187484451277692517L;
+	private static final long serialVersionUID = 7183918631533286358L;
 
 	/**
 	 * 跳转链接，当type为"image"时必传，必须是https或alipays开头的url链接。已废弃
@@ -20,7 +20,7 @@ public class ExtensionArea extends AlipayObject {
 	private String gotoUrl;
 
 	/**
-	 * 扩展区高度，当type值为"h5"时必填，取值范围为200-500的整数
+	 * 扩展区高度，当type值为"h5"时必填，取值范围为200-500的整数,单位是px
 	 */
 	@ApiField("height")
 	private Long height;

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiCateringPosDeskModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8761533143233975938L;
+	private static final long serialVersionUID = 2666569761793268668L;
 
 	/**
 	 * 餐桌信息

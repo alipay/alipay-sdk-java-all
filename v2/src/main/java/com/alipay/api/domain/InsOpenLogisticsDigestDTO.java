@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物流单摘要
  *
  * @author auto create
- * @since 1.0, 2023-10-24 15:33:42
+ * @since 1.0, 2024-09-10 13:32:43
  */
 public class InsOpenLogisticsDigestDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5682565196894547999L;
+	private static final long serialVersionUID = 8362321422655296467L;
 
 	/**
 	 * 认证码
@@ -32,6 +32,18 @@ public class InsOpenLogisticsDigestDTO extends AlipayObject {
 	private String authType;
 
 	/**
+	 * 承运物流公司编码
+	 */
+	@ApiField("carrier_company_code")
+	private String carrierCompanyCode;
+
+	/**
+	 * 承运物流公司名称
+	 */
+	@ApiField("carrier_company_name")
+	private String carrierCompanyName;
+
+	/**
 	 * 物流公司编码
 	 */
 	@ApiField("logistics_company_code")
@@ -42,6 +54,12 @@ public class InsOpenLogisticsDigestDTO extends AlipayObject {
 	 */
 	@ApiField("logistics_company_name")
 	private String logisticsCompanyName;
+
+	/**
+	 * 承运物流单号
+	 */
+	@ApiField("logistics_mail_no")
+	private String logisticsMailNo;
 
 	/**
 	 * 物流商快递单号
@@ -81,6 +99,20 @@ public class InsOpenLogisticsDigestDTO extends AlipayObject {
 		this.authType = authType;
 	}
 
+	public String getCarrierCompanyCode() {
+		return this.carrierCompanyCode;
+	}
+	public void setCarrierCompanyCode(String carrierCompanyCode) {
+		this.carrierCompanyCode = carrierCompanyCode;
+	}
+
+	public String getCarrierCompanyName() {
+		return this.carrierCompanyName;
+	}
+	public void setCarrierCompanyName(String carrierCompanyName) {
+		this.carrierCompanyName = carrierCompanyName;
+	}
+
 	public String getLogisticsCompanyCode() {
 		return this.logisticsCompanyCode;
 	}
@@ -93,6 +125,13 @@ public class InsOpenLogisticsDigestDTO extends AlipayObject {
 	}
 	public void setLogisticsCompanyName(String logisticsCompanyName) {
 		this.logisticsCompanyName = logisticsCompanyName;
+	}
+
+	public String getLogisticsMailNo() {
+		return this.logisticsMailNo;
+	}
+	public void setLogisticsMailNo(String logisticsMailNo) {
+		this.logisticsMailNo = logisticsMailNo;
 	}
 
 	public String getLogisticsNo() {

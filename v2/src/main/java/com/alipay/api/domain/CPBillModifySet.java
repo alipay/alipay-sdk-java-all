@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CPBillModifySet extends AlipayObject {
 
-	private static final long serialVersionUID = 4146638268821566998L;
+	private static final long serialVersionUID = 7241425118685713951L;
 
 	/**
 	 * 若账期需修改，则传入。账期用于缴费明细页归类和展示，可以使用不超过16个字符的有业务含义的字符串。

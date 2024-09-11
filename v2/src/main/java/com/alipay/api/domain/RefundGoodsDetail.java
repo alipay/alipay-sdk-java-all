@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 退款商品明细信息
  *
  * @author auto create
- * @since 1.0, 2024-05-07 11:34:50
+ * @since 1.0, 2024-09-10 17:24:16
  */
 public class RefundGoodsDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6719159268246153651L;
+	private static final long serialVersionUID = 1621954846814877493L;
 
 	/**
 	 * 商品编号。
@@ -19,6 +22,13 @@ public class RefundGoodsDetail extends AlipayObject {
 	 */
 	@ApiField("goods_id")
 	private String goodsId;
+
+	/**
+	 * 外部商品凭证编号列表
+	 */
+	@ApiListField("out_certificate_no_list")
+	@ApiField("string")
+	private List<String> outCertificateNoList;
 
 	/**
 	 * 商家侧小程序商品ID，具体使用方式请参考：https://opendocs.alipay.com/pre-open/06uila?pathHash=87297d0a
@@ -43,6 +53,13 @@ public class RefundGoodsDetail extends AlipayObject {
 	}
 	public void setGoodsId(String goodsId) {
 		this.goodsId = goodsId;
+	}
+
+	public List<String> getOutCertificateNoList() {
+		return this.outCertificateNoList;
+	}
+	public void setOutCertificateNoList(List<String> outCertificateNoList) {
+		this.outCertificateNoList = outCertificateNoList;
 	}
 
 	public String getOutItemId() {

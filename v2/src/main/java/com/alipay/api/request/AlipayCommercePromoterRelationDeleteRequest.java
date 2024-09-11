@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.promoter.relation.delete request
  * 
  * @author auto create
- * @since 1.0, 2024-09-03 11:20:51
+ * @since 1.0, 2024-09-09 14:58:49
  */
 public class AlipayCommercePromoterRelationDeleteRequest implements AlipayRequest<AlipayCommercePromoterRelationDeleteResponse> {
 

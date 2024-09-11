@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BizTreeNodeWithNoRecursive extends AlipayObject {
 
-	private static final long serialVersionUID = 6683715756928711715L;
+	private static final long serialVersionUID = 1263521478184558865L;
 
 	/**
 	 * 是否有孩子节点。0表示无 1表示有

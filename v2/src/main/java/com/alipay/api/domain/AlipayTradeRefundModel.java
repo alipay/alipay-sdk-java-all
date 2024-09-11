@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 统一收单交易退款接口
  *
  * @author auto create
- * @since 1.0, 2024-05-07 11:34:50
+ * @since 1.0, 2024-09-10 17:24:16
  */
 public class AlipayTradeRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6795358852166692569L;
+	private static final long serialVersionUID = 1732242359911576738L;
 
 	/**
 	 * 退款包含的商品列表信息，Json格式。
@@ -107,6 +107,24 @@ public class AlipayTradeRefundModel extends AlipayObject {
 	@ApiListField("refund_royalty_parameters")
 	@ApiField("open_api_royalty_detail_info_pojo")
 	private List<OpenApiRoyaltyDetailInfoPojo> refundRoyaltyParameters;
+
+	/**
+	 * 指定退款账号，对应指定账号退款合约中的约定账号
+
+与refund_trans_out_type绑定使用
+1、refund_trans_out_type=userId时，传入对应的支付宝2088账号
+2、refund_trans_out_type=loginName时，传入对应的支付宝账号登录名
+	 */
+	@ApiField("refund_trans_out")
+	private String refundTransOut;
+
+	/**
+	 * 指定退款账号类型
+userId：支付宝账号id
+loginName：支付宝账号登录名
+	 */
+	@ApiField("refund_trans_out_type")
+	private String refundTransOutType;
 
 	/**
 	 * 针对账期交易，在确认结算后退款的话，需要指定确认结算时的结算单号。
@@ -222,6 +240,20 @@ public class AlipayTradeRefundModel extends AlipayObject {
 	}
 	public void setRefundRoyaltyParameters(List<OpenApiRoyaltyDetailInfoPojo> refundRoyaltyParameters) {
 		this.refundRoyaltyParameters = refundRoyaltyParameters;
+	}
+
+	public String getRefundTransOut() {
+		return this.refundTransOut;
+	}
+	public void setRefundTransOut(String refundTransOut) {
+		this.refundTransOut = refundTransOut;
+	}
+
+	public String getRefundTransOutType() {
+		return this.refundTransOutType;
+	}
+	public void setRefundTransOutType(String refundTransOutType) {
+		this.refundTransOutType = refundTransOutType;
 	}
 
 	public String getRelatedSettleConfirmNo() {

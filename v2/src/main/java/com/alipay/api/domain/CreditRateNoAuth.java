@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CreditRateNoAuth extends AlipayObject {
 
-	private static final long serialVersionUID = 8331772731653418487L;
+	private static final long serialVersionUID = 2227121283736469343L;
 
 	/**
 	 * 信用等级名称

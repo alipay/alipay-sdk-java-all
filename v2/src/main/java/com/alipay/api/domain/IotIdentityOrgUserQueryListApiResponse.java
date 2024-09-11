@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class IotIdentityOrgUserQueryListApiResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 5757242115844822648L;
+	private static final long serialVersionUID = 5536443353325344857L;
 
 	/**
 	 * 人脸批量查询条件

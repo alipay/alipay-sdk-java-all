@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 经营分析模块-流量分析-流量总览趋势数据返回体结构
  *
  * @author auto create
- * @since 1.0, 2024-08-05 09:49:51
+ * @since 1.0, 2024-09-09 11:07:18
  */
 public class OpenApiOperationAnalysisTrafficAliasDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4352532114191967823L;
+	private static final long serialVersionUID = 7829328287396177626L;
 
 	/**
 	 * 小程序应用ID，分配给开发者的应用ID

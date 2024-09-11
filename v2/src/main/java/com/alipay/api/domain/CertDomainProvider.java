@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CertDomainProvider extends AlipayObject {
 
-	private static final long serialVersionUID = 3789896777469817442L;
+	private static final long serialVersionUID = 2391486735554519561L;
 
 	/**
 	 * acme需要的key列表

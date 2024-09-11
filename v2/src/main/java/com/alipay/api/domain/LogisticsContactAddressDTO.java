@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物流地址
  *
  * @author auto create
- * @since 1.0, 2023-03-28 10:44:21
+ * @since 1.0, 2024-09-10 14:42:17
  */
 public class LogisticsContactAddressDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5496989394248238282L;
+	private static final long serialVersionUID = 1221436772467222573L;
 
 	/**
 	 * 地址

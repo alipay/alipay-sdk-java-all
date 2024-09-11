@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序商品免审更新SKU
  *
  * @author auto create
- * @since 1.0, 2023-03-25 13:34:19
+ * @since 1.0, 2024-09-10 17:17:51
  */
 public class ItemDirectModifySku extends AlipayObject {
 
-	private static final long serialVersionUID = 1687547921658663768L;
+	private static final long serialVersionUID = 8134491977962131535L;
 
 	/**
 	 * sku原价，分为单位。
@@ -36,6 +36,12 @@ public class ItemDirectModifySku extends AlipayObject {
 	 */
 	@ApiField("sale_status")
 	private String saleStatus;
+
+	/**
+	 * 商品sku属性
+	 */
+	@ApiField("sku_attrs")
+	private ItemSkuAttrVO skuAttrs;
 
 	/**
 	 * 支付宝平台侧sku ID，是支付宝平台侧商品的唯一标识，后续与平台交互，需要使用该 ID，建议持久化。
@@ -75,6 +81,13 @@ public class ItemDirectModifySku extends AlipayObject {
 	}
 	public void setSaleStatus(String saleStatus) {
 		this.saleStatus = saleStatus;
+	}
+
+	public ItemSkuAttrVO getSkuAttrs() {
+		return this.skuAttrs;
+	}
+	public void setSkuAttrs(ItemSkuAttrVO skuAttrs) {
+		this.skuAttrs = skuAttrs;
 	}
 
 	public String getSkuId() {

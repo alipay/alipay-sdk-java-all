@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营销位删除接口
  *
  * @author auto create
- * @since 1.0, 2020-11-18 14:01:54
+ * @since 1.0, 2024-09-10 19:38:17
  */
 public class AlipayOpenPublicTopicDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3534772649588198398L;
+	private static final long serialVersionUID = 3381484873724477688L;
 
 	/**
 	 * 营销位id

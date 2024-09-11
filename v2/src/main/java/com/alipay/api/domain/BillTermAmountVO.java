@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账单分期金额
  *
  * @author auto create
- * @since 1.0, 2024-06-11 16:52:22
+ * @since 1.0, 2024-09-10 14:37:18
  */
 public class BillTermAmountVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4387731236855813196L;
+	private static final long serialVersionUID = 2831677667256972235L;
 
 	/**
 	 * 利息，元

@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntfortuneStockOpenPromoConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3456772948393184597L;
+	private static final long serialVersionUID = 4751479954539336964L;
 
 	/** 
 	 * 已领权益集合

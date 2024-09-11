@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceCommonTaokerewardQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7731735467966796622L;
+	private static final long serialVersionUID = 5653315773676425955L;
 
 	/**
 	 * 淘客的支付宝账号

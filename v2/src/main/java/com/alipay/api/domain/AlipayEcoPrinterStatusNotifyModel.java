@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoPrinterStatusNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2217165788389765577L;
+	private static final long serialVersionUID = 1683485211969736677L;
 
 	/**
 	 * 签名

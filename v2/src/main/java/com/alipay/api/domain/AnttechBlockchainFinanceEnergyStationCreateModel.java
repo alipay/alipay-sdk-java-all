@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 能源站点创建
  *
  * @author auto create
- * @since 1.0, 2024-09-02 21:57:16
+ * @since 1.0, 2024-09-06 17:16:00
  */
 public class AnttechBlockchainFinanceEnergyStationCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5156543578871398311L;
+	private static final long serialVersionUID = 5566735238493338716L;
 
 	/**
 	 * 站点地址
@@ -86,6 +86,12 @@ public class AnttechBlockchainFinanceEnergyStationCreateModel extends AlipayObje
 	 */
 	@ApiField("product_agreement_code")
 	private String productAgreementCode;
+
+	/**
+	 * 总额定功率，单位kw
+	 */
+	@ApiField("rated_power")
+	private String ratedPower;
 
 	/**
 	 * 服务电话
@@ -223,6 +229,13 @@ public class AnttechBlockchainFinanceEnergyStationCreateModel extends AlipayObje
 	}
 	public void setProductAgreementCode(String productAgreementCode) {
 		this.productAgreementCode = productAgreementCode;
+	}
+
+	public String getRatedPower() {
+		return this.ratedPower;
+	}
+	public void setRatedPower(String ratedPower) {
+		this.ratedPower = ratedPower;
 	}
 
 	public String getServiceTel() {

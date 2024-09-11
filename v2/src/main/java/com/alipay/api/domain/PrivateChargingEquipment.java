@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PrivateChargingEquipment extends AlipayObject {
 
-	private static final long serialVersionUID = 8868719436595688181L;
+	private static final long serialVersionUID = 8136151582315774335L;
 
 	/**
 	 * 充电桩二维码值

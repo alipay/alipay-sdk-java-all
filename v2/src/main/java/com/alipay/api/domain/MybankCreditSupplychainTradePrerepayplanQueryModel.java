@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 融租_查询预还款计划
  *
  * @author auto create
- * @since 1.0, 2024-06-11 16:52:22
+ * @since 1.0, 2024-09-10 14:37:18
  */
 public class MybankCreditSupplychainTradePrerepayplanQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7291248458457516959L;
+	private static final long serialVersionUID = 3346532115626483624L;
 
 	/**
 	 * ISV 身份信息
@@ -32,7 +32,17 @@ public class MybankCreditSupplychainTradePrerepayplanQueryModel extends AlipayOb
 	private String extData;
 
 	/**
-	 * {isv_iprole_id}_${zhifutong_ar_no}
+	 * true: 返回订单应还，实还数据
+false: 不返回实还数据
+	 */
+	@ApiField("has_bill_detail")
+	private Boolean hasBillDetail;
+
+	/**
+	 * 交易创建时的外部订单号，拼接而成
+{isv_iprole_id}_${zhifutong_ar_no}
+isv_iprole_id：机构ipRoleId
+zhifutong_ar_no：直付通签约订单号
 	 */
 	@ApiField("out_order_no")
 	private String outOrderNo;
@@ -62,6 +72,13 @@ public class MybankCreditSupplychainTradePrerepayplanQueryModel extends AlipayOb
 	}
 	public void setExtData(String extData) {
 		this.extData = extData;
+	}
+
+	public Boolean getHasBillDetail() {
+		return this.hasBillDetail;
+	}
+	public void setHasBillDetail(Boolean hasBillDetail) {
+		this.hasBillDetail = hasBillDetail;
 	}
 
 	public String getOutOrderNo() {

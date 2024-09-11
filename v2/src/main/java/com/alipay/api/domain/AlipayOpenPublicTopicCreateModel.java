@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 营销位添加接口
  *
  * @author auto create
- * @since 1.0, 2020-11-18 14:01:35
+ * @since 1.0, 2024-09-10 19:39:52
  */
 public class AlipayOpenPublicTopicCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3885938864432379616L;
+	private static final long serialVersionUID = 6859749476989928246L;
 
 	/**
 	 * 营销位图片url, 尺寸为996*450，最大不超过5M，支持格式:.jpg、.png ，请先调用<a href="https://docs.open.alipay.com/api_3/alipay.offline.material.image.upload"> 图片上传接口</a>获得图片url。营销位需要展示头图时，必须填写该参数。

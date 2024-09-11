@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceOperationBsEnrollableplanQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6291414929257549139L;
+	private static final long serialVersionUID = 7371439332813799434L;
 
 	/** 
 	 * 可报名计划列表

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 复杂类型接口引用01
  *
  * @author auto create
- * @since 1.0, 2024-07-08 11:30:37
+ * @since 1.0, 2024-09-09 14:41:17
  */
 public class AlipayDataDataexchangeComplextypeRainysQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8699342438884129357L;
+	private static final long serialVersionUID = 7829165594464195183L;
 
 	/**
 	 * 引用当前迭代；

@@ -9,17 +9,30 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分期还款计划
  *
  * @author auto create
- * @since 1.0, 2024-06-11 16:52:22
+ * @since 1.0, 2024-09-10 14:37:18
  */
 public class InstallmentRepayPlanVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5733415214441142371L;
+	private static final long serialVersionUID = 8472112446753174139L;
 
 	/**
 	 * 账单到期还款日
 	 */
 	@ApiField("due_date")
 	private Date dueDate;
+
+	/**
+	 * 实际还款金额:本金和利息
+没有还款则为全部0
+	 */
+	@ApiField("payed_amount")
+	private BillTermAmountVO payedAmount;
+
+	/**
+	 * 有还款,则返回最新的还款时间;没有还款:则为空
+	 */
+	@ApiField("payed_date")
+	private Date payedDate;
 
 	/**
 	 * 开始时间
@@ -34,13 +47,13 @@ public class InstallmentRepayPlanVO extends AlipayObject {
 	private String status;
 
 	/**
-	 * 分期金额
+	 * 分期金额,是到期应还
 	 */
 	@ApiField("term_amount")
 	private BillTermAmountVO termAmount;
 
 	/**
-	 * 分期期数
+	 * 分期期数，默认M，代表月份
 	 */
 	@ApiField("term_num")
 	private String termNum;
@@ -56,6 +69,20 @@ public class InstallmentRepayPlanVO extends AlipayObject {
 	}
 	public void setDueDate(Date dueDate) {
 		this.dueDate = dueDate;
+	}
+
+	public BillTermAmountVO getPayedAmount() {
+		return this.payedAmount;
+	}
+	public void setPayedAmount(BillTermAmountVO payedAmount) {
+		this.payedAmount = payedAmount;
+	}
+
+	public Date getPayedDate() {
+		return this.payedDate;
+	}
+	public void setPayedDate(Date payedDate) {
+		this.payedDate = payedDate;
 	}
 
 	public Date getStartDate() {

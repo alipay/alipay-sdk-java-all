@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保单投保保险方案
  *
  * @author auto create
- * @since 1.0, 2024-07-09 14:47:50
+ * @since 1.0, 2024-09-10 14:42:52
  */
 public class InsurePlanDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1656491153329963151L;
+	private static final long serialVersionUID = 1425144694991138687L;
 
 	/**
 	 * 折扣率
@@ -30,6 +30,12 @@ public class InsurePlanDTO extends AlipayObject {
 	 */
 	@ApiField("insure_plan_name")
 	private String insurePlanName;
+
+	/**
+	 * 市场参考价 单位分
+	 */
+	@ApiField("market_reference_price")
+	private Long marketReferencePrice;
 
 	/**
 	 * 折扣前原保费
@@ -110,6 +116,13 @@ public class InsurePlanDTO extends AlipayObject {
 	}
 	public void setInsurePlanName(String insurePlanName) {
 		this.insurePlanName = insurePlanName;
+	}
+
+	public Long getMarketReferencePrice() {
+		return this.marketReferencePrice;
+	}
+	public void setMarketReferencePrice(Long marketReferencePrice) {
+		this.marketReferencePrice = marketReferencePrice;
 	}
 
 	public Long getOriginalPremium() {

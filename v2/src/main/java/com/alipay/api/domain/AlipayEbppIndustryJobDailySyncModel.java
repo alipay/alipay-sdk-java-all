@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝就业日结岗位同步接口
  *
  * @author auto create
- * @since 1.0, 2024-08-21 15:35:50
+ * @since 1.0, 2024-09-10 20:09:51
  */
 public class AlipayEbppIndustryJobDailySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7226735795794288193L;
+	private static final long serialVersionUID = 7596519176967554755L;
 
 	/**
 	 * 学历要求

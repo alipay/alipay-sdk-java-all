@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电商商品详情模型
  *
  * @author auto create
- * @since 1.0, 2024-07-09 14:47:50
+ * @since 1.0, 2024-09-10 14:42:17
  */
 public class EcomItemExtendDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6613181672237733675L;
+	private static final long serialVersionUID = 4533349354648588896L;
 
 	/**
 	 * cardType + 唯一 + 储值卡类目投保场景 + 通过上下游约定获取
@@ -116,7 +116,7 @@ public class EcomItemExtendDetailDTO extends AlipayObject {
 	private Long deductibleAmount;
 
 	/**
-	 * extInfo
+	 * 附加信息
 	 */
 	@ApiField("ext_info")
 	private String extInfo;

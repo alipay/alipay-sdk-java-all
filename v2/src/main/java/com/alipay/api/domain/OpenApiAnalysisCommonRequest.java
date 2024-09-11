@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 经营分析、经营概况公用入参
  *
  * @author auto create
- * @since 1.0, 2024-08-05 09:49:49
+ * @since 1.0, 2024-09-09 11:07:17
  */
 public class OpenApiAnalysisCommonRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 3794682534624464475L;
+	private static final long serialVersionUID = 7634962549692867314L;
 
 	/**
 	 * 可选，端类型，数据上报的端平台枚举，如不传则默认为ALIPAY

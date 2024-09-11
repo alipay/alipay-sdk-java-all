@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AddVolunteerReq extends AlipayObject {
 
-	private static final long serialVersionUID = 1242931582813448762L;
+	private static final long serialVersionUID = 1464861338728915393L;
 
 	/**
 	 * 生态合作伙伴

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 个性化扩展区删除接口
  *
  * @author auto create
- * @since 1.0, 2021-05-27 16:46:31
+ * @since 1.0, 2024-09-10 19:39:16
  */
 public class AlipayOpenPublicPersonalizedExtensionDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8791773428523525856L;
+	private static final long serialVersionUID = 2734273886732393831L;
 
 	/**
 	 * 一套扩展区的key，删除默认扩展区时传入default ，查询扩展区列表可以获得每套扩展区的key

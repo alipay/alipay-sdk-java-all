@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayInsSceneInsassetprodPetprofilelistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1374127491382232541L;
+	private static final long serialVersionUID = 1492691341748191195L;
 
 	/**
 	 * 渠道

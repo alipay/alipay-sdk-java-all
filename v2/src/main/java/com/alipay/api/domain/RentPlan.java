@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁订单的分期计划
  *
  * @author auto create
- * @since 1.0, 2024-08-13 17:48:14
+ * @since 1.0, 2024-09-09 15:13:07
  */
 public class RentPlan extends AlipayObject {
 
-	private static final long serialVersionUID = 7741789512192316684L;
+	private static final long serialVersionUID = 8811772314319562836L;
 
 	/**
 	 * 实际还款时间

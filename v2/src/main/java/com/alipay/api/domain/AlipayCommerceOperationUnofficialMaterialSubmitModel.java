@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceOperationUnofficialMaterialSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1713675116384878218L;
+	private static final long serialVersionUID = 1563447935663169556L;
 
 	/**
 	 * 服务商身份，选择此字段，此PID为签约物料激励协议的pid（为奖励政策结算PID，请谨慎填写），isv_pid和open_seller_pid，只能一个字段有值。

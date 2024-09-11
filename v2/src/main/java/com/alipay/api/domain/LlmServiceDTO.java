@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 大模型im对象
  *
  * @author auto create
- * @since 1.0, 2024-08-15 12:07:17
+ * @since 1.0, 2024-09-10 20:01:19
  */
 public class LlmServiceDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5236139422496746315L;
+	private static final long serialVersionUID = 6247938538296247669L;
 
 	/**
 	 * 对话内容列表，流式输出中大模型的每次输出语句块
@@ -47,6 +47,13 @@ public class LlmServiceDTO extends AlipayObject {
 	 */
 	@ApiField("chat_id")
 	private String chatId;
+
+	/**
+	 * 通用内容列表，存放挂号agent的相关卡片数据
+	 */
+	@ApiListField("content_list")
+	@ApiField("chat_content_d_t_o")
+	private List<ChatContentDTO> contentList;
 
 	/**
 	 * 只返回智能导诊意图
@@ -137,6 +144,13 @@ false：无需撤回
 	}
 	public void setChatId(String chatId) {
 		this.chatId = chatId;
+	}
+
+	public List<ChatContentDTO> getContentList() {
+		return this.contentList;
+	}
+	public void setContentList(List<ChatContentDTO> contentList) {
+		this.contentList = contentList;
 	}
 
 	public String getIntention() {

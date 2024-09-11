@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankCreditLoantradeGuarletterApplyCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5275259989716214596L;
+	private static final long serialVersionUID = 3361144963328172834L;
 
 	/**
 	 * 原开函申请单号

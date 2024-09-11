@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取上门寄件链接接口
  *
  * @author auto create
- * @since 1.0, 2023-10-23 11:59:46
+ * @since 1.0, 2024-09-10 14:42:18
  */
 public class AlipayInsSceneEcommerceHomedeliverylinkAuthModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7469834648298513616L;
+	private static final long serialVersionUID = 3571192228151243762L;
 
 	/**
 	 * 买家联系地址
@@ -40,7 +40,7 @@ public class AlipayInsSceneEcommerceHomedeliverylinkAuthModel extends AlipayObje
 	private Date outSessionExpiration;
 
 	/**
-	 * sessionId
+	 * sessionId 外部的token
 	 */
 	@ApiField("out_session_id")
 	private String outSessionId;

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 开票申请提交
  *
  * @author auto create
- * @since 1.0, 2024-07-03 14:31:50
+ * @since 1.0, 2024-09-09 19:49:51
  */
 public class AlipayCommerceEcTcnOpeninvoiceapplySubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5321694916948773794L;
+	private static final long serialVersionUID = 5772432672328159638L;
 
 	/**
 	 * 开票申请明细列表
@@ -60,6 +60,12 @@ public class AlipayCommerceEcTcnOpeninvoiceapplySubmitModel extends AlipayObject
 	private String buyerTel;
 
 	/**
+	 * 交付邮箱
+	 */
+	@ApiField("email")
+	private String email;
+
+	/**
 	 * 行业类型
 	 */
 	@ApiField("industry_type")
@@ -76,6 +82,12 @@ public class AlipayCommerceEcTcnOpeninvoiceapplySubmitModel extends AlipayObject
 	 */
 	@ApiField("invoice_type")
 	private String invoiceType;
+
+	/**
+	 * 交付手机号
+	 */
+	@ApiField("phone")
+	private String phone;
 
 	/**
 	 * 平台申请ID
@@ -139,6 +151,13 @@ public class AlipayCommerceEcTcnOpeninvoiceapplySubmitModel extends AlipayObject
 		this.buyerTel = buyerTel;
 	}
 
+	public String getEmail() {
+		return this.email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
 	public String getIndustryType() {
 		return this.industryType;
 	}
@@ -158,6 +177,13 @@ public class AlipayCommerceEcTcnOpeninvoiceapplySubmitModel extends AlipayObject
 	}
 	public void setInvoiceType(String invoiceType) {
 		this.invoiceType = invoiceType;
+	}
+
+	public String getPhone() {
+		return this.phone;
+	}
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
 
 	public String getPlatformApplyId() {

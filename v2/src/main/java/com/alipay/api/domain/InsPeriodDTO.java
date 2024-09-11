@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁保险开放平台保障期限模型
  *
  * @author auto create
- * @since 1.0, 2024-06-03 18:09:03
+ * @since 1.0, 2024-09-10 14:42:18
  */
 public class InsPeriodDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7874422616987491186L;
+	private static final long serialVersionUID = 1271333995956697192L;
 
 	/**
 	 * 选项标签

@@ -1,0 +1,94 @@
+package com.alipay.api.domain;
+
+import com.alipay.api.AlipayObject;
+import com.alipay.api.internal.mapping.ApiField;
+
+/**
+ * 商户提报小区信息时用于描述小区信息的模型，包含小区信息、小区基本信息、小区图片信息、小区地址信息、小区设施、小区介绍。
+ *
+ * @author auto create
+ * @since 1.0, 2024-09-09 11:33:22
+ */
+public class RentRoomCommunityInfo extends AlipayObject {
+
+	private static final long serialVersionUID = 1615112474737394767L;
+
+	/**
+	 * 包含小区的位置信息，经纬度、省市区编码、详情地址。
+	 */
+	@ApiField("area_address_info")
+	private AreaAddressInfo areaAddressInfo;
+
+	/**
+	 * 用于补充小区的一些基本信息。
+	 */
+	@ApiField("community_basic_info")
+	private CommunityBasicInfo communityBasicInfo;
+
+	/**
+	 * 小区内的设施
+	 */
+	@ApiField("community_equipment_info")
+	private String communityEquipmentInfo;
+
+	/**
+	 * 小区的基本介绍
+	 */
+	@ApiField("community_introduce")
+	private String communityIntroduce;
+
+	/**
+	 * 小区的名称
+	 */
+	@ApiField("community_name")
+	private String communityName;
+
+	/**
+	 * 包含小区的各类图片信息，大门图片、内部环境图片、停车设施图片、娱乐活动图片。
+	 */
+	@ApiField("community_pic_info")
+	private CommunityPicInfo communityPicInfo;
+
+	public AreaAddressInfo getAreaAddressInfo() {
+		return this.areaAddressInfo;
+	}
+	public void setAreaAddressInfo(AreaAddressInfo areaAddressInfo) {
+		this.areaAddressInfo = areaAddressInfo;
+	}
+
+	public CommunityBasicInfo getCommunityBasicInfo() {
+		return this.communityBasicInfo;
+	}
+	public void setCommunityBasicInfo(CommunityBasicInfo communityBasicInfo) {
+		this.communityBasicInfo = communityBasicInfo;
+	}
+
+	public String getCommunityEquipmentInfo() {
+		return this.communityEquipmentInfo;
+	}
+	public void setCommunityEquipmentInfo(String communityEquipmentInfo) {
+		this.communityEquipmentInfo = communityEquipmentInfo;
+	}
+
+	public String getCommunityIntroduce() {
+		return this.communityIntroduce;
+	}
+	public void setCommunityIntroduce(String communityIntroduce) {
+		this.communityIntroduce = communityIntroduce;
+	}
+
+	public String getCommunityName() {
+		return this.communityName;
+	}
+	public void setCommunityName(String communityName) {
+		this.communityName = communityName;
+	}
+
+	public CommunityPicInfo getCommunityPicInfo() {
+		return this.communityPicInfo;
+	}
+	public void setCommunityPicInfo(CommunityPicInfo communityPicInfo) {
+		this.communityPicInfo = communityPicInfo;
+	}
+
+}

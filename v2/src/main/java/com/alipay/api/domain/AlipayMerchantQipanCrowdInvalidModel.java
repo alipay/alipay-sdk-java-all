@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantQipanCrowdInvalidModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6466253543278993115L;
+	private static final long serialVersionUID = 3337213683213255397L;
 
 	/**
 	 * 支付宝人群code
