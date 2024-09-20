@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.ai.agent.service.consult response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-27 14:22:07
+ * @since 1.0, 2024-09-12 19:27:32
  */
 public class AnttechAiAgentServiceConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1739124847718588568L;
+	private static final long serialVersionUID = 8226296632273718242L;
 
 	/** 
 	 * 回答文本内容

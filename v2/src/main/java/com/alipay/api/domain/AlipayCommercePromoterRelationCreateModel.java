@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 导购员关系绑定
  *
  * @author auto create
- * @since 1.0, 2022-12-07 15:02:49
+ * @since 1.0, 2024-09-13 21:14:20
  */
 public class AlipayCommercePromoterRelationCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7251455839618736384L;
+	private static final long serialVersionUID = 7529362865911492413L;
 
 	/**
 	 * 商家id
@@ -36,6 +39,13 @@ public class AlipayCommercePromoterRelationCreateModel extends AlipayObject {
 	 */
 	@ApiField("promoter_open_id")
 	private String promoterOpenId;
+
+	/**
+	 * 角色为督导员时，需要传入该字段，表示督导员管理的门店列表
+	 */
+	@ApiListField("related_shop_list")
+	@ApiField("string")
+	private List<String> relatedShopList;
 
 	/**
 	 * 导购员角色
@@ -85,6 +95,13 @@ public class AlipayCommercePromoterRelationCreateModel extends AlipayObject {
 	}
 	public void setPromoterOpenId(String promoterOpenId) {
 		this.promoterOpenId = promoterOpenId;
+	}
+
+	public List<String> getRelatedShopList() {
+		return this.relatedShopList;
+	}
+	public void setRelatedShopList(List<String> relatedShopList) {
+		this.relatedShopList = relatedShopList;
 	}
 
 	public String getRole() {

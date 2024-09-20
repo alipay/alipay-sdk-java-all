@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.group.authorize.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2024-09-06 15:37:08
+ * @since 1.0, 2024-09-11 15:36:10
  */
 public class AlipayMerchantGroupAuthorizeBatchqueryRequest implements AlipayRequest<AlipayMerchantGroupAuthorizeBatchqueryResponse> {
 

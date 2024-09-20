@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 证券用户投放内容详情查询
  *
  * @author auto create
- * @since 1.0, 2024-06-11 17:51:32
+ * @since 1.0, 2024-09-19 17:40:30
  */
 public class AntfortuneStockCustomerDeliverydetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6673364983292133438L;
+	private static final long serialVersionUID = 5655249436895224242L;
 
 	/**
 	 * 签约协议号（uid在某个机构处的唯一标识）
@@ -29,6 +29,12 @@ public class AntfortuneStockCustomerDeliverydetailQueryModel extends AlipayObjec
 	@ApiField("string")
 	private List<String> positionCode;
 
+	/**
+	 * 展位相关的特征参数，如展位关联的通知类型、机构信息等。使用时根据position_code列表内的展位code获取对应展位的特征参数
+	 */
+	@ApiField("position_feature")
+	private String positionFeature;
+
 	public String getAgreementNo() {
 		return this.agreementNo;
 	}
@@ -41,6 +47,13 @@ public class AntfortuneStockCustomerDeliverydetailQueryModel extends AlipayObjec
 	}
 	public void setPositionCode(List<String> positionCode) {
 		this.positionCode = positionCode;
+	}
+
+	public String getPositionFeature() {
+		return this.positionFeature;
+	}
+	public void setPositionFeature(String positionFeature) {
+		this.positionFeature = positionFeature;
 	}
 
 }

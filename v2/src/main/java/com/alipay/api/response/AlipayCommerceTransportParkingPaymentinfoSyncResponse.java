@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.parking.paymentinfo.sync response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-13 15:12:07
+ * @since 1.0, 2024-09-13 17:22:10
  */
 public class AlipayCommerceTransportParkingPaymentinfoSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6318439538355515681L;
+	private static final long serialVersionUID = 8753721732712926423L;
 
 	/** 
 	 * 具体错误码
@@ -31,6 +31,12 @@ public class AlipayCommerceTransportParkingPaymentinfoSyncResponse extends Alipa
 	@ApiField("biz_msg")
 	private String bizMsg;
 
+	/** 
+	 * 当前行程是否会给用户发送停车消息
+	 */
+	@ApiField("send_parking_message_flag")
+	private String sendParkingMessageFlag;
+
 	public void setBizCode(String bizCode) {
 		this.bizCode = bizCode;
 	}
@@ -43,6 +49,13 @@ public class AlipayCommerceTransportParkingPaymentinfoSyncResponse extends Alipa
 	}
 	public String getBizMsg( ) {
 		return this.bizMsg;
+	}
+
+	public void setSendParkingMessageFlag(String sendParkingMessageFlag) {
+		this.sendParkingMessageFlag = sendParkingMessageFlag;
+	}
+	public String getSendParkingMessageFlag( ) {
+		return this.sendParkingMessageFlag;
 	}
 
 }

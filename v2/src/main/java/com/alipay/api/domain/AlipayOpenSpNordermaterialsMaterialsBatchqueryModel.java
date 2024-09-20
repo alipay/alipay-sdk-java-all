@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量查询生产单下需要生产的物料详情
  *
  * @author auto create
- * @since 1.0, 2024-08-25 21:03:16
+ * @since 1.0, 2024-09-12 19:55:17
  */
 public class AlipayOpenSpNordermaterialsMaterialsBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2362284545688541445L;
+	private static final long serialVersionUID = 5472713485414647925L;
 
 	/**
-	 * 分批查询的页码
+	 * 分批查询的页码，必填
 	 */
 	@ApiField("page_num")
 	private String pageNum;

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 停车支付信息同步接口
  *
  * @author auto create
- * @since 1.0, 2024-08-12 17:31:53
+ * @since 1.0, 2024-09-13 11:13:18
  */
 public class AlipayCommerceTransportParkingPaymentinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8648347162986463566L;
+	private static final long serialVersionUID = 4379596739734751254L;
 
 	/**
 	 * 支付宝交易号；
@@ -41,6 +41,12 @@ public class AlipayCommerceTransportParkingPaymentinfoSyncModel extends AlipayOb
 	 */
 	@ApiField("free_exit_minutes")
 	private String freeExitMinutes;
+
+	/**
+	 * 365天未使用支付宝付停车费用户
+	 */
+	@ApiField("inactive_user")
+	private Boolean inactiveUser;
 
 	/**
 	 * 车牌是否加密，true为加密，false为不加密，默认为false
@@ -79,6 +85,12 @@ public class AlipayCommerceTransportParkingPaymentinfoSyncModel extends AlipayOb
 	private String outSerialNo;
 
 	/**
+	 * 用户在支付宝侧支付停车费次数
+	 */
+	@ApiField("pay_frequency")
+	private String payFrequency;
+
+	/**
 	 * 停车费实付金额；单位元；
 	 */
 	@ApiField("payment_amount")
@@ -97,6 +109,7 @@ WECHAT：微信
 CUQP：云闪付
 CASH：现金
 OTHER：其他渠道
+FREE: 免费
 	 */
 	@ApiField("payment_type")
 	private String paymentType;
@@ -127,7 +140,9 @@ OTHER：其他渠道
 
 	/**
 	 * 停车服务页面地址。
-1、服务商停车服务页面地址必须是支付宝小程序URL（无需转换https），详见：https://opendocs.alipay.com/support/01rb18#URL%20%E6%A0%BC%E5%BC%8F 2、若服务商没有服务链接，可传输支付宝停车官方小程序的服务链接：alipays://platformapi/startapp?appId=2021001102642986&page=pages%2Fparking-fee%2Findex 3、若此次对接的是无感支付，则服务链接传输为：alipays://platformapi/startapp?appId=2021001102642986&page=%2Fpages%2Fparking-bill%2Findex
+1、服务商停车服务页面地址必须是支付宝小程序URL（无需转换https），详见： <a href="https://opendocs.alipay.com/support/01rb18#URL%20%E6%A0%BC%E5%BC%8F "> https://opendocs.alipay.com/support/01rb18#URL%20%E6%A0%BC%E5%BC%8F  </a>
+2、若服务商没有服务链接，可传输支付宝停车官方小程序的服务链接：alipays://platformapi/startapp?appId=2021001102642986&page=pages%2Fparking-fee%2Findex 
+3、若此次对接的是无感支付，则服务链接传输为：alipays://platformapi/startapp?appId=2021001102642986&page=%2Fpages%2Fparking-bill%2Findex
 	 */
 	@ApiField("service_url")
 	private String serviceUrl;
@@ -164,6 +179,13 @@ OTHER：其他渠道
 	}
 	public void setFreeExitMinutes(String freeExitMinutes) {
 		this.freeExitMinutes = freeExitMinutes;
+	}
+
+	public Boolean getInactiveUser() {
+		return this.inactiveUser;
+	}
+	public void setInactiveUser(Boolean inactiveUser) {
+		this.inactiveUser = inactiveUser;
 	}
 
 	public Boolean getIsEncryptPlateNo() {
@@ -206,6 +228,13 @@ OTHER：其他渠道
 	}
 	public void setOutSerialNo(String outSerialNo) {
 		this.outSerialNo = outSerialNo;
+	}
+
+	public String getPayFrequency() {
+		return this.payFrequency;
+	}
+	public void setPayFrequency(String payFrequency) {
+		this.payFrequency = payFrequency;
 	}
 
 	public String getPaymentAmount() {

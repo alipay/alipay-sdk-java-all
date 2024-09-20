@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 安心卡使用明细账单信息
  *
  * @author auto create
- * @since 1.0, 2024-07-15 09:31:12
+ * @since 1.0, 2024-09-18 16:05:57
  */
 public class AlipayOpenMiniOrderAnxinitemdeliverBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2621927496181794855L;
+	private static final long serialVersionUID = 2791113148458963874L;
 
 	/**
 	 * 安心付金额卡卡号

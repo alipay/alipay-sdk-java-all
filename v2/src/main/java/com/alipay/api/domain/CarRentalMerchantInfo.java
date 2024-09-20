@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CarRentalMerchantInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4455635182157152928L;
+	private static final long serialVersionUID = 4291173544313741482L;
 
 	/**
 	 * 品牌名称

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 虚拟电厂户号上报结果确认
  *
  * @author auto create
- * @since 1.0, 2024-08-30 10:21:45
+ * @since 1.0, 2024-09-12 14:17:22
  */
 public class AlipayEbppEbppBillkeySubscribeNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6689656621862114913L;
+	private static final long serialVersionUID = 8361171679164951447L;
 
 	/**
 	 * 支付宝户号上报流水，户号订阅表的数据库id

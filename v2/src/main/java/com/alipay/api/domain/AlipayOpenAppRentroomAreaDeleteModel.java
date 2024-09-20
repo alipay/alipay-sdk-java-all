@@ -1,29 +1,47 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 租房小区信息删除
  *
  * @author auto create
- * @since 1.0, 2024-09-09 11:33:04
+ * @since 1.0, 2024-09-13 19:28:16
  */
 public class AlipayOpenAppRentroomAreaDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2148459943281371986L;
+	private static final long serialVersionUID = 1189244694955612232L;
 
 	/**
-	 * 要删除的小区ID
+	 * 支付宝平台生成的小区ID列表
 	 */
-	@ApiField("area_id")
-	private String areaId;
+	@ApiListField("area_id_list")
+	@ApiField("string")
+	private List<String> areaIdList;
 
-	public String getAreaId() {
-		return this.areaId;
+	/**
+	 * 商户侧定义的小区编码列表
+	 */
+	@ApiListField("out_area_id_list")
+	@ApiField("string")
+	private List<String> outAreaIdList;
+
+	public List<String> getAreaIdList() {
+		return this.areaIdList;
 	}
-	public void setAreaId(String areaId) {
-		this.areaId = areaId;
+	public void setAreaIdList(List<String> areaIdList) {
+		this.areaIdList = areaIdList;
+	}
+
+	public List<String> getOutAreaIdList() {
+		return this.outAreaIdList;
+	}
+	public void setOutAreaIdList(List<String> outAreaIdList) {
+		this.outAreaIdList = outAreaIdList;
 	}
 
 }

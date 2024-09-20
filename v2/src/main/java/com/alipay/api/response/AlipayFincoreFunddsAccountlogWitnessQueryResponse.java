@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFincoreFunddsAccountlogWitnessQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1441415582849199417L;
+	private static final long serialVersionUID = 2514574218234299847L;
 
 	/** 
 	 * 账户流水列表

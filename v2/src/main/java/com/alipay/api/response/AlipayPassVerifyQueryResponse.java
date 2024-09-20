@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pass.verify.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 19:33:08
+ * @since 1.0, 2024-09-12 13:27:50
  */
 public class AlipayPassVerifyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3669335962648345212L;
+	private static final long serialVersionUID = 1245692472813945394L;
 
 	/** 
 	 * 查询成功时返回的结果信息

@@ -9,11 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 安心卡使用明细详情列表
  *
  * @author auto create
- * @since 1.0, 2024-07-15 09:31:12
+ * @since 1.0, 2024-09-18 16:05:57
  */
 public class AnxinkaDeliverDetailResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 6665884439133561713L;
+	private static final long serialVersionUID = 6548851861979782327L;
+
+	/**
+	 * 代运营服务商佣金，单位：元。精确到小数点后两位
+	 */
+	@ApiField("agent_commission")
+	private String agentCommission;
+
+	/**
+	 * 代运营服务商名称
+	 */
+	@ApiField("agent_name")
+	private String agentName;
 
 	/**
 	 * 安心卡卡号
@@ -34,6 +46,12 @@ public class AnxinkaDeliverDetailResponse extends AlipayObject {
 	private String orderId;
 
 	/**
+	 * 退代运营服务商的佣金，单位：元。小数点后保留两位
+	 */
+	@ApiField("refund_agent_commission")
+	private String refundAgentCommission;
+
+	/**
 	 * 安心付金额卡每笔退，卡使用扣除面额。单位：元，精确到小数点后两位
 	 */
 	@ApiField("refund_amount")
@@ -46,10 +64,34 @@ public class AnxinkaDeliverDetailResponse extends AlipayObject {
 	private String refundCash;
 
 	/**
+	 * 退给saas服务商的佣金，单位：元。精确到小数点后两位
+	 */
+	@ApiField("refund_saas_commission")
+	private String refundSaasCommission;
+
+	/**
 	 * 安心付金额卡每笔退款时间， 单位：秒。
 	 */
 	@ApiField("refund_time")
 	private Date refundTime;
+
+	/**
+	 * saas服务商佣金，单位：元。精确到小数点后两位
+	 */
+	@ApiField("saas_commission")
+	private String saasCommission;
+
+	/**
+	 * 参与分账的saas服务商名称
+	 */
+	@ApiField("saas_name")
+	private String saasName;
+
+	/**
+	 * 结算时的批次号
+	 */
+	@ApiField("settle_batch_no")
+	private String settleBatchNo;
 
 	/**
 	 * 安心付金额卡每笔使用收单商家账号
@@ -105,6 +147,20 @@ public class AnxinkaDeliverDetailResponse extends AlipayObject {
 	@ApiField("use_time")
 	private Date useTime;
 
+	public String getAgentCommission() {
+		return this.agentCommission;
+	}
+	public void setAgentCommission(String agentCommission) {
+		this.agentCommission = agentCommission;
+	}
+
+	public String getAgentName() {
+		return this.agentName;
+	}
+	public void setAgentName(String agentName) {
+		this.agentName = agentName;
+	}
+
 	public String getCardNo() {
 		return this.cardNo;
 	}
@@ -126,6 +182,13 @@ public class AnxinkaDeliverDetailResponse extends AlipayObject {
 		this.orderId = orderId;
 	}
 
+	public String getRefundAgentCommission() {
+		return this.refundAgentCommission;
+	}
+	public void setRefundAgentCommission(String refundAgentCommission) {
+		this.refundAgentCommission = refundAgentCommission;
+	}
+
 	public String getRefundAmount() {
 		return this.refundAmount;
 	}
@@ -140,11 +203,39 @@ public class AnxinkaDeliverDetailResponse extends AlipayObject {
 		this.refundCash = refundCash;
 	}
 
+	public String getRefundSaasCommission() {
+		return this.refundSaasCommission;
+	}
+	public void setRefundSaasCommission(String refundSaasCommission) {
+		this.refundSaasCommission = refundSaasCommission;
+	}
+
 	public Date getRefundTime() {
 		return this.refundTime;
 	}
 	public void setRefundTime(Date refundTime) {
 		this.refundTime = refundTime;
+	}
+
+	public String getSaasCommission() {
+		return this.saasCommission;
+	}
+	public void setSaasCommission(String saasCommission) {
+		this.saasCommission = saasCommission;
+	}
+
+	public String getSaasName() {
+		return this.saasName;
+	}
+	public void setSaasName(String saasName) {
+		this.saasName = saasName;
+	}
+
+	public String getSettleBatchNo() {
+		return this.settleBatchNo;
+	}
+	public void setSettleBatchNo(String settleBatchNo) {
+		this.settleBatchNo = settleBatchNo;
 	}
 
 	public String getSettlePid() {

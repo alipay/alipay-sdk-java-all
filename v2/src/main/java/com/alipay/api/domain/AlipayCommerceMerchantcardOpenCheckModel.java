@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 安心付开通准入校验
  *
  * @author auto create
- * @since 1.0, 2024-08-22 16:05:17
+ * @since 1.0, 2024-09-13 11:27:52
  */
 public class AlipayCommerceMerchantcardOpenCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1334315829765359881L;
+	private static final long serialVersionUID = 4551965453492432814L;
 
 	/**
 	 * 卡类型，数组。

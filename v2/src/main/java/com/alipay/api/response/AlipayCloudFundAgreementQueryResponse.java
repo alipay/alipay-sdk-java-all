@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudFundAgreementQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1279831891144954668L;
+	private static final long serialVersionUID = 3567514231255394123L;
 
 	/** 
 	 * 用户签约成功后的协议号

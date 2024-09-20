@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝租车商户侧续租申请
  *
  * @author auto create
- * @since 1.0, 2024-07-17 14:35:15
+ * @since 1.0, 2024-09-18 14:13:52
  */
 public class AlipayEcoMycarRentcarOrdermodifyApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6624859261476891887L;
+	private static final long serialVersionUID = 3712989995649585591L;
 
 	/**
 	 * 修改后租期的结束时间。目前仅支持续租。例如原始订单租期是1号~2号，续租1天，修改后租期就是1号~3号，结束时间修改为3号

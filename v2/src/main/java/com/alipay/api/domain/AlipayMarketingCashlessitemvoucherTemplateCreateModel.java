@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingCashlessitemvoucherTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8127663822799621462L;
+	private static final long serialVersionUID = 5332666243456592629L;
 
 	/**
 	 * 代金券面额。

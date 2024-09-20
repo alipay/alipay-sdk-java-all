@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEcoCityserviceExtSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3673287218172829892L;
+	private static final long serialVersionUID = 4344111273295912583L;
 
 	/**
 	 * 同步数据

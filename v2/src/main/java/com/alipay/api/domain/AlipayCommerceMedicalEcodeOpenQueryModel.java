@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户开通一码付接口
  *
  * @author auto create
- * @since 1.0, 2023-07-17 13:43:48
+ * @since 1.0, 2024-09-11 17:00:12
  */
 public class AlipayCommerceMedicalEcodeOpenQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3756346257974148933L;
+	private static final long serialVersionUID = 7615651344611663729L;
 
 	/**
 	 * 用户医保码值

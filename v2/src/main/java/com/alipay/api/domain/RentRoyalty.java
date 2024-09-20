@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁分账计划
  *
  * @author auto create
- * @since 1.0, 2024-09-09 15:13:07
+ * @since 1.0, 2024-09-13 20:01:54
  */
 public class RentRoyalty extends AlipayObject {
 
-	private static final long serialVersionUID = 6572356139339911443L;
+	private static final long serialVersionUID = 2113812892443419347L;
 
 	/**
 	 * 订单id
@@ -32,7 +32,13 @@ public class RentRoyalty extends AlipayObject {
 	private String buyerOpenId;
 
 	/**
-	 * 本期对应的买断分账金
+	 * 当前期数改账中的买断分账金，单位：元
+	 */
+	@ApiField("current_buyout_after_price")
+	private String currentBuyoutAfterPrice;
+
+	/**
+	 * 本期对应的买断分账金，单位：元
 	 */
 	@ApiField("current_buyout_price")
 	private String currentBuyoutPrice;
@@ -48,6 +54,12 @@ public class RentRoyalty extends AlipayObject {
 	 */
 	@ApiField("royalty_after_price")
 	private String royaltyAfterPrice;
+
+	/**
+	 * 分账履约方式
+	 */
+	@ApiField("royalty_deliver_type")
+	private String royaltyDeliverType;
 
 	/**
 	 * 分账金额，单位：元，精确到小数点后两位
@@ -106,6 +118,13 @@ public class RentRoyalty extends AlipayObject {
 		this.buyerOpenId = buyerOpenId;
 	}
 
+	public String getCurrentBuyoutAfterPrice() {
+		return this.currentBuyoutAfterPrice;
+	}
+	public void setCurrentBuyoutAfterPrice(String currentBuyoutAfterPrice) {
+		this.currentBuyoutAfterPrice = currentBuyoutAfterPrice;
+	}
+
 	public String getCurrentBuyoutPrice() {
 		return this.currentBuyoutPrice;
 	}
@@ -125,6 +144,13 @@ public class RentRoyalty extends AlipayObject {
 	}
 	public void setRoyaltyAfterPrice(String royaltyAfterPrice) {
 		this.royaltyAfterPrice = royaltyAfterPrice;
+	}
+
+	public String getRoyaltyDeliverType() {
+		return this.royaltyDeliverType;
+	}
+	public void setRoyaltyDeliverType(String royaltyDeliverType) {
+		this.royaltyDeliverType = royaltyDeliverType;
 	}
 
 	public String getRoyaltyPrice() {

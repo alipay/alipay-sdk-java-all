@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资方授信审批结果同步
  *
  * @author auto create
- * @since 1.0, 2024-05-31 15:14:16
+ * @since 1.0, 2024-09-14 11:01:18
  */
 public class AlipayCommerceEcCreditWithdrawSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3715614974156979775L;
+	private static final long serialVersionUID = 3585529468249735369L;
 
 	/**
 	 * 支付宝交易号
@@ -33,13 +33,13 @@ withdraw_serial_no: 资方内部取款单号, 取款成功时填写
 	private BankOrderInfo extInfo;
 
 	/**
-	 * 审核失败原因，情况状态为APPROVE_FAIL时必填
+	 * 银行返回的审核失败原因描述，情况状态为APPROVE_FAIL时必填
 	 */
 	@ApiField("fail_reason")
 	private String failReason;
 
 	/**
-	 * 取款方的真实业务订单号
+	 * 商户请款申请单号，银行幂等字段
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;

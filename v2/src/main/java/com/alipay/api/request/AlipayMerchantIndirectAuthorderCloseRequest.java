@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.indirect.authorder.close request
  * 
  * @author auto create
- * @since 1.0, 2023-09-11 16:34:30
+ * @since 1.0, 2024-09-12 13:52:10
  */
 public class AlipayMerchantIndirectAuthorderCloseRequest implements AlipayRequest<AlipayMerchantIndirectAuthorderCloseResponse> {
 

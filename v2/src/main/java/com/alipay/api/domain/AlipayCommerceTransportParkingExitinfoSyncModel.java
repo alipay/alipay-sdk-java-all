@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportParkingExitinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3584915561225447361L;
+	private static final long serialVersionUID = 6122384941913237166L;
 
 	/**
 	 * 车辆出场的出口通道名称；取实地通道名称；

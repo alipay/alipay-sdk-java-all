@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 玩法启动通知V2
  *
  * @author auto create
- * @since 1.0, 2024-09-05 13:44:24
+ * @since 1.0, 2024-09-19 13:57:52
  */
 public class AlipayContentCommercialInteractivecoreGamestartSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5656111482933797631L;
+	private static final long serialVersionUID = 4189351594318521936L;
 
 	/**
 	 * 用于标识玩法

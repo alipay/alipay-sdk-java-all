@@ -8,17 +8,29 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.merchantcard.open.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-09-10 11:51:02
+ * @since 1.0, 2024-09-13 13:52:09
  */
 public class AlipayCommerceMerchantcardOpenCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7525549663848364746L;
+	private static final long serialVersionUID = 6649342458417857488L;
 
 	/** 
 	 * 提交失败的原因
 	 */
 	@ApiField("fail_reason")
 	private String failReason;
+
+	/** 
+	 * 商户二级类目code
+	 */
+	@ApiField("mcc_code")
+	private String mccCode;
+
+	/** 
+	 * 商户二级类目名称
+	 */
+	@ApiField("mcc_name")
+	private String mccName;
 
 	/** 
 	 * 开通是否成功
@@ -31,6 +43,20 @@ public class AlipayCommerceMerchantcardOpenCreateResponse extends AlipayResponse
 	}
 	public String getFailReason( ) {
 		return this.failReason;
+	}
+
+	public void setMccCode(String mccCode) {
+		this.mccCode = mccCode;
+	}
+	public String getMccCode( ) {
+		return this.mccCode;
+	}
+
+	public void setMccName(String mccName) {
+		this.mccName = mccName;
+	}
+	public String getMccName( ) {
+		return this.mccName;
 	}
 
 	public void setSubmitResult(Boolean submitResult) {

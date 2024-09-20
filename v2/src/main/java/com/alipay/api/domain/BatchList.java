@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 成组列表
  *
  * @author auto create
- * @since 1.0, 2024-07-23 16:01:39
+ * @since 1.0, 2024-09-19 13:57:52
  */
 public class BatchList extends AlipayObject {
 
-	private static final long serialVersionUID = 4586811722978589658L;
+	private static final long serialVersionUID = 5154362893715175732L;
 
 	/**
 	 * 送礼后效果动作描述，最长3个字

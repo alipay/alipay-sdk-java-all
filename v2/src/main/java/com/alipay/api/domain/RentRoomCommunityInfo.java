@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 商户提报小区信息时用于描述小区信息的模型，包含小区信息、小区基本信息、小区图片信息、小区地址信息、小区设施、小区介绍。
  *
  * @author auto create
- * @since 1.0, 2024-09-09 11:33:22
+ * @since 1.0, 2024-09-14 19:50:53
  */
 public class RentRoomCommunityInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1615112474737394767L;
+	private static final long serialVersionUID = 3613629875775483226L;
 
 	/**
 	 * 包含小区的位置信息，经纬度、省市区编码、详情地址。
@@ -28,8 +31,9 @@ public class RentRoomCommunityInfo extends AlipayObject {
 	/**
 	 * 小区内的设施
 	 */
-	@ApiField("community_equipment_info")
-	private String communityEquipmentInfo;
+	@ApiListField("community_equipment_info")
+	@ApiField("string")
+	private List<String> communityEquipmentInfo;
 
 	/**
 	 * 小区的基本介绍
@@ -63,10 +67,10 @@ public class RentRoomCommunityInfo extends AlipayObject {
 		this.communityBasicInfo = communityBasicInfo;
 	}
 
-	public String getCommunityEquipmentInfo() {
+	public List<String> getCommunityEquipmentInfo() {
 		return this.communityEquipmentInfo;
 	}
-	public void setCommunityEquipmentInfo(String communityEquipmentInfo) {
+	public void setCommunityEquipmentInfo(List<String> communityEquipmentInfo) {
 		this.communityEquipmentInfo = communityEquipmentInfo;
 	}
 

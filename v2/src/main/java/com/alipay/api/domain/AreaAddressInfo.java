@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 包含小区的位置信息，经纬度、省市区编码、详情地址、
  *
  * @author auto create
- * @since 1.0, 2024-09-09 11:33:22
+ * @since 1.0, 2024-09-13 19:28:54
  */
 public class AreaAddressInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8126578259656193372L;
+	private static final long serialVersionUID = 3178871783423388492L;
 
 	/**
 	 * 小区所在的详细地址

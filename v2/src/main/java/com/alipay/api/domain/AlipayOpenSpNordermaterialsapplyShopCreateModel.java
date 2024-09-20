@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 碰一下点餐物料申请门店信息同步
  *
  * @author auto create
- * @since 1.0, 2024-09-11 09:52:56
+ * @since 1.0, 2024-09-18 20:41:52
  */
 public class AlipayOpenSpNordermaterialsapplyShopCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1374392998788612532L;
+	private static final long serialVersionUID = 3322258327841581329L;
 
 	/**
 	 * 创建申请单时，返回的申请单ID
@@ -66,6 +66,12 @@ public class AlipayOpenSpNordermaterialsapplyShopCreateModel extends AlipayObjec
 	 */
 	@ApiField("province")
 	private String province;
+
+	/**
+	 * 返佣pid，在带有门店信息下支持提前落位，否则仍然需要在后面铺设回传时传递
+	 */
+	@ApiField("rebate_pid")
+	private String rebatePid;
 
 	/**
 	 * 收件人姓名，用于后续接收物料的快递
@@ -152,6 +158,13 @@ public class AlipayOpenSpNordermaterialsapplyShopCreateModel extends AlipayObjec
 	}
 	public void setProvince(String province) {
 		this.province = province;
+	}
+
+	public String getRebatePid() {
+		return this.rebatePid;
+	}
+	public void setRebatePid(String rebatePid) {
+		this.rebatePid = rebatePid;
 	}
 
 	public String getReceiverName() {

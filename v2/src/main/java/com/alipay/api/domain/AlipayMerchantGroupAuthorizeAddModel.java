@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 添加群授权记录
  *
  * @author auto create
- * @since 1.0, 2024-06-11 20:57:14
+ * @since 1.0, 2024-09-11 15:36:38
  */
 public class AlipayMerchantGroupAuthorizeAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8899331752416738771L;
+	private static final long serialVersionUID = 3439623783189479899L;
 
 	/**
 	 * 支付宝登录账号，邮箱号或者手机号

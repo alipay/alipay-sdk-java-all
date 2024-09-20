@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单配送状态同步
  *
  * @author auto create
- * @since 1.0, 2024-08-28 17:40:50
+ * @since 1.0, 2024-09-20 10:35:55
  */
 public class AlipayCommerceMedicalOrderLogisticsSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7229814942936674848L;
+	private static final long serialVersionUID = 8735996823588756996L;
 
 	/**
 	 * 第三方配送商物流单号，取自商家平台呼叫三方配送骑手的配送订单号

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundStudentloanRepayQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7827737825776796764L;
+	private static final long serialVersionUID = 6867981253152123958L;
 
 	/**
 	 * 还款学生的身份证号码

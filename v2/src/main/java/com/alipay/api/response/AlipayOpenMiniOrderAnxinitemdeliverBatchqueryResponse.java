@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.order.anxinitemdeliver.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-21 15:40:47
+ * @since 1.0, 2024-09-18 17:02:11
  */
 public class AlipayOpenMiniOrderAnxinitemdeliverBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7154256312872856131L;
+	private static final long serialVersionUID = 6321414928964598628L;
 
 	/** 
 	 * 安心卡使用明细列表

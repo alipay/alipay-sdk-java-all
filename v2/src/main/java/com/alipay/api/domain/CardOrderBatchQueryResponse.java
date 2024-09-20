@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页查询售卖订单结果
  *
  * @author auto create
- * @since 1.0, 2024-09-02 16:16:50
+ * @since 1.0, 2024-09-13 14:30:53
  */
 public class CardOrderBatchQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 4526244113916662372L;
+	private static final long serialVersionUID = 6315324376577821947L;
 
 	/**
 	 * 金额卡余额面值，单位分
@@ -195,6 +195,12 @@ public class CardOrderBatchQueryResponse extends AlipayObject {
 	 */
 	@ApiField("user_name")
 	private String userName;
+
+	/**
+	 * 用户电话，用户授权后才有值
+	 */
+	@ApiField("user_phone")
+	private String userPhone;
 
 	public Long getAvailableAmount() {
 		return this.availableAmount;
@@ -397,6 +403,13 @@ public class CardOrderBatchQueryResponse extends AlipayObject {
 	}
 	public void setUserName(String userName) {
 		this.userName = userName;
+	}
+
+	public String getUserPhone() {
+		return this.userPhone;
+	}
+	public void setUserPhone(String userPhone) {
+		this.userPhone = userPhone;
 	}
 
 }

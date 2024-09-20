@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.indirect.promotask.take request
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 22:41:54
+ * @since 1.0, 2024-09-11 15:55:07
  */
 public class AlipayMerchantIndirectPromotaskTakeRequest implements AlipayRequest<AlipayMerchantIndirectPromotaskTakeResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPcreditCreditcardOpenbindcardUserQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7145993825949533186L;
+	private static final long serialVersionUID = 5666897538461226677L;
 
 	/**
 	 * 外部绑卡活动业务编码

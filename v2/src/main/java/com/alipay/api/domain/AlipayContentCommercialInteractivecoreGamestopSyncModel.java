@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 玩法结束通知V2
  *
  * @author auto create
- * @since 1.0, 2024-09-05 13:44:41
+ * @since 1.0, 2024-09-19 13:57:51
  */
 public class AlipayContentCommercialInteractivecoreGamestopSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8824654753962482618L;
+	private static final long serialVersionUID = 2464229134933633174L;
 
 	/**
 	 * 玩法token

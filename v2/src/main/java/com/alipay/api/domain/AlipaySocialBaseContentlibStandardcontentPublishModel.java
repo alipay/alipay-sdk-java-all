@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 内容发布接口
  *
  * @author auto create
- * @since 1.0, 2024-08-23 14:53:56
+ * @since 1.0, 2024-09-12 14:23:17
  */
 public class AlipaySocialBaseContentlibStandardcontentPublishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8194354634957241269L;
+	private static final long serialVersionUID = 2253244875334394352L;
 
 	/**
 	 * 内容分发范围。1 - 所有人可见，2 - 分发范围受限。
@@ -67,7 +67,7 @@ public class AlipaySocialBaseContentlibStandardcontentPublishModel extends Alipa
 	private List<SourceOffer> sourceOffers;
 
 	/**
-	 * 文章发布时间 仅支持 yyyy-MM-dd HH:mm:ss 格式
+	 * 文章发布时间 仅支持 yyyy-MM-dd HH:mm:ss 格式， 且发布时间的范围为：大于相对于当前时间+15分钟，小于相对于当前时间+7天
 	 */
 	@ApiField("source_publish_date")
 	private String sourcePublishDate;

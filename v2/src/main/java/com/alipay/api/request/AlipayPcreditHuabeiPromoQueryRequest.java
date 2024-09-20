@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.huabei.promo.query request
  * 
  * @author auto create
- * @since 1.0, 2024-09-10 18:08:32
+ * @since 1.0, 2024-09-12 20:01:18
  */
 public class AlipayPcreditHuabeiPromoQueryRequest implements AlipayRequest<AlipayPcreditHuabeiPromoQueryResponse> {
 

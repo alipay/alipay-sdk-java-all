@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InteligentUseTime extends AlipayObject {
 
-	private static final long serialVersionUID = 7328468385712559368L;
+	private static final long serialVersionUID = 6543113665514713623L;
 
 	/**
 	 * 券可用时段时间维度，目前支持周(W)

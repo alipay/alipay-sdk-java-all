@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.rentroom.area.delete response.
  * 
  * @author auto create
- * @since 1.0, 2024-09-09 11:37:09
+ * @since 1.0, 2024-09-13 19:32:10
  */
 public class AlipayOpenAppRentroomAreaDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4341946323631777995L;
+	private static final long serialVersionUID = 5369661733737877986L;
 
 	
 

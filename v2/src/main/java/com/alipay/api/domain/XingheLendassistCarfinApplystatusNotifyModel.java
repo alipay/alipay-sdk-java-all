@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车金融订单状态通知接口
  *
  * @author auto create
- * @since 1.0, 2024-04-24 11:41:45
+ * @since 1.0, 2024-09-12 17:42:48
  */
 public class XingheLendassistCarfinApplystatusNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7844376978128513569L;
+	private static final long serialVersionUID = 7198175435837938857L;
 
 	/**
 	 * 星河侧唯一业务编号
@@ -24,6 +24,18 @@ public class XingheLendassistCarfinApplystatusNotifyModel extends AlipayObject {
 	 */
 	@ApiField("credit_amt")
 	private Long creditAmt;
+
+	/**
+	 * 取消失败时，申请单当前状态
+	 */
+	@ApiField("current_status")
+	private String currentStatus;
+
+	/**
+	 * 客户状态
+	 */
+	@ApiField("cust_status")
+	private String custStatus;
 
 	/**
 	 * 资方支用号
@@ -104,7 +116,8 @@ public class XingheLendassistCarfinApplystatusNotifyModel extends AlipayObject {
 	private String repayType;
 
 	/**
-	 * FOLLOWING：客服跟进中，WILLING：客户有意愿，NO_WILLING：客户无意愿，PRE_REJECT：预审拒绝，PRE_PASS：预审通过，APPROVING：审批中，APPROVE_REJECT：审批拒绝，APPROVE_PASS：审批通过，SIGNING：签约中，SIGN_FAIL：签约失败，SIGNED：合同已生效，LENDING：放款中，LEND_REJECT：放款拒绝，LEND_SUC：已放款
+	 * CANCEL_FAIL: 取消失败（适用于客户挽回成功的场景，经联系后客户愿意继续办理）
+CANCEL_SUC: 取消成功（适用于客户确定放弃的场景，机构侧后续不能联系客户）
 	 */
 	@ApiField("status")
 	private String status;
@@ -127,6 +140,20 @@ public class XingheLendassistCarfinApplystatusNotifyModel extends AlipayObject {
 	}
 	public void setCreditAmt(Long creditAmt) {
 		this.creditAmt = creditAmt;
+	}
+
+	public String getCurrentStatus() {
+		return this.currentStatus;
+	}
+	public void setCurrentStatus(String currentStatus) {
+		this.currentStatus = currentStatus;
+	}
+
+	public String getCustStatus() {
+		return this.custStatus;
+	}
+	public void setCustStatus(String custStatus) {
+		this.custStatus = custStatus;
 	}
 
 	public String getFinDrawdownNo() {

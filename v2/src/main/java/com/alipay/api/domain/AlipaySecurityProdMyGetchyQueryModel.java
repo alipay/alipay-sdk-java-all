@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySecurityProdMyGetchyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4856752137631927471L;
+	private static final long serialVersionUID = 1395194125969811887L;
 
 	/**
 	 * chen

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.merchantcard.open.check response.
  * 
  * @author auto create
- * @since 1.0, 2024-09-10 14:30:31
+ * @since 1.0, 2024-09-13 13:52:09
  */
 public class AlipayCommerceMerchantcardOpenCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8459492124595459641L;
+	private static final long serialVersionUID = 6153184955216841427L;
 
 	/** 
 	 * 预校验是否通过
@@ -26,6 +26,18 @@ public class AlipayCommerceMerchantcardOpenCheckResponse extends AlipayResponse 
 	@ApiField("fail_reason")
 	private String failReason;
 
+	/** 
+	 * 商户二级类目code
+	 */
+	@ApiField("mcc_code")
+	private String mccCode;
+
+	/** 
+	 * 商户二级类目名称
+	 */
+	@ApiField("mcc_name")
+	private String mccName;
+
 	public void setCheckResult(Boolean checkResult) {
 		this.checkResult = checkResult;
 	}
@@ -38,6 +50,20 @@ public class AlipayCommerceMerchantcardOpenCheckResponse extends AlipayResponse 
 	}
 	public String getFailReason( ) {
 		return this.failReason;
+	}
+
+	public void setMccCode(String mccCode) {
+		this.mccCode = mccCode;
+	}
+	public String getMccCode( ) {
+		return this.mccCode;
+	}
+
+	public void setMccName(String mccName) {
+		this.mccName = mccName;
+	}
+	public String getMccName( ) {
+		return this.mccName;
 	}
 
 }

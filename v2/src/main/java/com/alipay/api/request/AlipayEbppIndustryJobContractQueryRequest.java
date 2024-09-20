@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.job.contract.query request
  * 
  * @author auto create
- * @since 1.0, 2023-08-24 21:34:06
+ * @since 1.0, 2024-09-13 17:13:39
  */
 public class AlipayEbppIndustryJobContractQueryRequest implements AlipayRequest<AlipayEbppIndustryJobContractQueryResponse> {
 

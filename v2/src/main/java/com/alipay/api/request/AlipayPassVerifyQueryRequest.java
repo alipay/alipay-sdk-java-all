@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pass.verify.query request
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 19:33:08
+ * @since 1.0, 2024-09-12 13:27:50
  */
 public class AlipayPassVerifyQueryRequest implements AlipayRequest<AlipayPassVerifyQueryResponse> {
 

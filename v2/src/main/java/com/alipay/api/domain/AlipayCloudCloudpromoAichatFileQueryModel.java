@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCloudCloudpromoAichatFileQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1673333413982496348L;
+	private static final long serialVersionUID = 7536882182651898621L;
 
 	/**
 	 * 当前页码

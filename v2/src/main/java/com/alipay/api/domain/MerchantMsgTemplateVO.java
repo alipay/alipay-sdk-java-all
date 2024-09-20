@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 消息子板模型，增加sceneRule枚举
+ * 消息子板模型，增加deliverySetting枚举，
  *
  * @author auto create
- * @since 1.0, 2024-01-25 21:10:13
+ * @since 1.0, 2024-09-18 14:14:17
  */
 public class MerchantMsgTemplateVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8375377982685344119L;
+	private static final long serialVersionUID = 3497221761153929511L;
 
 	/**
 	 * 消息推送类型，follower表示粉丝，all表示全部

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用于支付宝用户通过医院服务窗绑定当地社保卡
  *
  * @author auto create
- * @since 1.0, 2023-12-20 16:08:16
+ * @since 1.0, 2024-09-11 17:03:09
  */
 public class AlipayCommerceMedicalInstcardBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2256483428116882841L;
+	private static final long serialVersionUID = 7645189436565311911L;
 
 	/**
 	 * 区域编码，使用国家行政区划代码，可参看

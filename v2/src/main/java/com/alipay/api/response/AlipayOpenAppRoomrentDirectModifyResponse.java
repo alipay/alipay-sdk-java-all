@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.roomrent.direct.modify response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-01 13:42:05
+ * @since 1.0, 2024-09-18 19:07:20
  */
 public class AlipayOpenAppRoomrentDirectModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6133977343951572693L;
+	private static final long serialVersionUID = 1568798799618787655L;
 
 	/** 
 	 * 支付宝平台侧商品ID，是支付宝平台侧商品的唯一标识，后续与平台交互，需要使用该 ID，建议持久化。

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * AICO数字人Agent服务咨询接口
  *
  * @author auto create
- * @since 1.0, 2024-08-27 14:17:44
+ * @since 1.0, 2024-09-12 19:27:32
  */
 public class AnttechAiAgentServiceConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5772831487688426771L;
+	private static final long serialVersionUID = 5854286227522895315L;
 
 	/**
 	 * 用户标识ID。不同用户下的会话是隔离的，互不影响。

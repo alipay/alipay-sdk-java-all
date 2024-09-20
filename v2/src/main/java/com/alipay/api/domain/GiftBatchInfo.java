@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 礼物效果信息
  *
  * @author auto create
- * @since 1.0, 2024-07-23 16:01:39
+ * @since 1.0, 2024-09-19 13:57:52
  */
 public class GiftBatchInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8145531433831548211L;
+	private static final long serialVersionUID = 3188643164395549346L;
 
 	/**
 	 * 成组列表

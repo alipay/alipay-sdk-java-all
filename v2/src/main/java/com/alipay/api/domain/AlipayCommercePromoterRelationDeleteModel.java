@@ -1,17 +1,26 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 导购员关系解绑
  *
  * @author auto create
- * @since 1.0, 2022-12-07 15:02:49
+ * @since 1.0, 2024-09-13 21:15:18
  */
 public class AlipayCommercePromoterRelationDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3176396599415384956L;
+	private static final long serialVersionUID = 4177424451462195496L;
+
+	/**
+	 * 角色类型，如店长、督导员、导购员
+	 */
+	@ApiField("delete_role")
+	private String deleteRole;
 
 	/**
 	 * 商家id
@@ -32,10 +41,24 @@ public class AlipayCommercePromoterRelationDeleteModel extends AlipayObject {
 	private String promoterOpenId;
 
 	/**
+	 * 关联店铺id
+	 */
+	@ApiListField("related_shop_list")
+	@ApiField("string")
+	private List<String> relatedShopList;
+
+	/**
 	 * 店铺id
 	 */
 	@ApiField("shop_id")
 	private String shopId;
+
+	public String getDeleteRole() {
+		return this.deleteRole;
+	}
+	public void setDeleteRole(String deleteRole) {
+		this.deleteRole = deleteRole;
+	}
 
 	public String getMerchantPid() {
 		return this.merchantPid;
@@ -56,6 +79,13 @@ public class AlipayCommercePromoterRelationDeleteModel extends AlipayObject {
 	}
 	public void setPromoterOpenId(String promoterOpenId) {
 		this.promoterOpenId = promoterOpenId;
+	}
+
+	public List<String> getRelatedShopList() {
+		return this.relatedShopList;
+	}
+	public void setRelatedShopList(List<String> relatedShopList) {
+		this.relatedShopList = relatedShopList;
 	}
 
 	public String getShopId() {

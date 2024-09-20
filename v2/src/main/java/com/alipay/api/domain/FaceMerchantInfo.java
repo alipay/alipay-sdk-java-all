@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FaceMerchantInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5443229924831165459L;
+	private static final long serialVersionUID = 5581286667982689187L;
 
 	/**
 	 * 区域编码

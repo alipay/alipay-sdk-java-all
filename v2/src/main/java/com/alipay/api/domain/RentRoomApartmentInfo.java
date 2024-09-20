@@ -10,17 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租房公寓信息
  *
  * @author auto create
- * @since 1.0, 2024-09-09 11:33:23
+ * @since 1.0, 2024-09-14 19:50:54
  */
 public class RentRoomApartmentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2332255626645375641L;
+	private static final long serialVersionUID = 4859199115539427717L;
 
 	/**
 	 * 公寓的设施列表
 	 */
-	@ApiField("apartment_equipment_info")
-	private String apartmentEquipmentInfo;
+	@ApiListField("apartment_equipment_info")
+	@ApiField("string")
+	private List<String> apartmentEquipmentInfo;
 
 	/**
 	 * 公寓的介绍
@@ -53,10 +54,10 @@ public class RentRoomApartmentInfo extends AlipayObject {
 	@ApiField("apartment_contact_info")
 	private List<ApartmentContactInfo> contactInfoList;
 
-	public String getApartmentEquipmentInfo() {
+	public List<String> getApartmentEquipmentInfo() {
 		return this.apartmentEquipmentInfo;
 	}
-	public void setApartmentEquipmentInfo(String apartmentEquipmentInfo) {
+	public void setApartmentEquipmentInfo(List<String> apartmentEquipmentInfo) {
 		this.apartmentEquipmentInfo = apartmentEquipmentInfo;
 	}
 

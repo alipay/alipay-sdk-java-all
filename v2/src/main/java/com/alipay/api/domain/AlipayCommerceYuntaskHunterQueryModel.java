@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询导购员任务列表
  *
  * @author auto create
- * @since 1.0, 2024-08-09 16:48:16
+ * @since 1.0, 2024-09-13 21:14:52
  */
 public class AlipayCommerceYuntaskHunterQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1832352462647266771L;
+	private static final long serialVersionUID = 4175322262498886989L;
 
 	/**
 	 * 导购员id
@@ -54,6 +54,13 @@ public class AlipayCommerceYuntaskHunterQueryModel extends AlipayObject {
 	 */
 	@ApiField("shop_id")
 	private String shopId;
+
+	/**
+	 * SHOP_INSPECTION 巡店任务
+OTHER 其他任务
+	 */
+	@ApiField("task_type")
+	private String taskType;
 
 	/**
 	 * 任务类型
@@ -112,6 +119,13 @@ EXCHANGEABLE：可兑换的任务
 	}
 	public void setShopId(String shopId) {
 		this.shopId = shopId;
+	}
+
+	public String getTaskType() {
+		return this.taskType;
+	}
+	public void setTaskType(String taskType) {
+		this.taskType = taskType;
 	}
 
 	public String getType() {

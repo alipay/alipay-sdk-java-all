@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建/编辑云店任务模版
  *
  * @author auto create
- * @since 1.0, 2024-08-08 14:48:51
+ * @since 1.0, 2024-09-13 21:13:52
  */
 public class AlipayCommerceYuntaskCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7423694324127223694L;
+	private static final long serialVersionUID = 8679543461275493577L;
 
 	/**
 	 * 小程序appid，支持带跳转链接
@@ -50,6 +50,7 @@ public class AlipayCommerceYuntaskCreateormodifyModel extends AlipayObject {
 SHOP 门店
 MERCHANT 商户
 HUNTER 导购员
+SUPERVISOR 督导员
 	 */
 	@ApiField("incentive")
 	private String incentive;

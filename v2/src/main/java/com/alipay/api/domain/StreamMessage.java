@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class StreamMessage extends AlipayObject {
 
-	private static final long serialVersionUID = 4313267198416791953L;
+	private static final long serialVersionUID = 5334115448488269171L;
 
 	/**
 	 * 对话请求发起侧自定义生成的对话标识Id

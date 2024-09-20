@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.content.commercial.interactivecore.roundstop.sync response.
  * 
  * @author auto create
- * @since 1.0, 2024-09-04 17:47:09
+ * @since 1.0, 2024-09-19 14:02:10
  */
 public class AlipayContentCommercialInteractivecoreRoundstopSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6371981895385782288L;
+	private static final long serialVersionUID = 8459374423713388559L;
 
 	
 

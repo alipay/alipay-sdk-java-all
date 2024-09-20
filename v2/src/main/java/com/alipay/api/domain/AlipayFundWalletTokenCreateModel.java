@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户绑定申请token
  *
  * @author auto create
- * @since 1.0, 2024-07-31 10:14:55
+ * @since 1.0, 2024-09-18 14:33:19
  */
 public class AlipayFundWalletTokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4375654435494547531L;
+	private static final long serialVersionUID = 4569239532114198578L;
 
 	/**
 	 * alipay.user.agreement.page.sign返回的代扣签约串
@@ -24,6 +24,12 @@ public class AlipayFundWalletTokenCreateModel extends AlipayObject {
 	 */
 	@ApiField("back_url")
 	private String backUrl;
+
+	/**
+	 * 根据跳转类型来区分用户开户完成之后是否回跳来源app
+	 */
+	@ApiField("back_url_type")
+	private String backUrlType;
 
 	/**
 	 * 业务场景
@@ -91,6 +97,13 @@ public class AlipayFundWalletTokenCreateModel extends AlipayObject {
 	}
 	public void setBackUrl(String backUrl) {
 		this.backUrl = backUrl;
+	}
+
+	public String getBackUrlType() {
+		return this.backUrlType;
+	}
+	public void setBackUrlType(String backUrlType) {
+		this.backUrlType = backUrlType;
 	}
 
 	public String getBizScene() {

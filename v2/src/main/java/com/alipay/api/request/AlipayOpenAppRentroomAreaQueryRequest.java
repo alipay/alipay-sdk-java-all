@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.rentroom.area.query request
  * 
  * @author auto create
- * @since 1.0, 2024-09-09 11:37:09
+ * @since 1.0, 2024-09-14 19:52:10
  */
 public class AlipayOpenAppRentroomAreaQueryRequest implements AlipayRequest<AlipayOpenAppRentroomAreaQueryResponse> {
 

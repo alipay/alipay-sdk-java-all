@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.mobile.public.appinfo.update request
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 17:41:17
+ * @since 1.0, 2024-09-11 12:03:38
  */
 public class AlipayMobilePublicAppinfoUpdateRequest implements AlipayRequest<AlipayMobilePublicAppinfoUpdateResponse> {
 

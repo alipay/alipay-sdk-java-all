@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TechriskInnovateSalesgptChatSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4783966453612249555L;
+	private static final long serialVersionUID = 3264871425181957137L;
 
 	/**
 	 * 对话机器人id，由AI导购平台提供

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.mobile.public.menu.delete response.
  * 
  * @author auto create
- * @since 1.0, 2024-09-02 14:43:46
+ * @since 1.0, 2024-09-11 12:03:38
  */
 public class AlipayMobilePublicMenuDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6192311157513978453L;
+	private static final long serialVersionUID = 1822939347227537894L;
 
 	/** 
 	 * 结果码

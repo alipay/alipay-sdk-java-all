@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pass.code.add response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 17:41:21
+ * @since 1.0, 2024-09-12 13:27:49
  */
 public class AlipayPassCodeAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6626799512849463769L;
+	private static final long serialVersionUID = 2661291587358195152L;
 
 	/** 
 	 * 成功时返回业务参数

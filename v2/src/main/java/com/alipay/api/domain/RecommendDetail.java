@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RecommendDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 4731659433957341322L;
+	private static final long serialVersionUID = 4437698272838354868L;
 
 	/**
 	 * 知识点id

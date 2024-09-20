@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 大数据选址参数
  *
  * @author auto create
- * @since 1.0, 2024-07-15 16:11:52
+ * @since 1.0, 2024-09-13 22:01:17
  */
 public class SiteSelectionParam extends AlipayObject {
 
-	private static final long serialVersionUID = 7397399233531325578L;
+	private static final long serialVersionUID = 4744852914341755726L;
 
 	/**
 	 * 全国统一城市编码
@@ -40,6 +40,13 @@ public class SiteSelectionParam extends AlipayObject {
 	@ApiListField("index_list")
 	@ApiField("string")
 	private List<String> indexList;
+
+	/**
+	 * 经纬度列表
+	 */
+	@ApiListField("lng_lat_list")
+	@ApiField("lng_and_lat_param")
+	private List<LngAndLatParam> lngLatList;
 
 	/**
 	 * 最短停留时长，单位为分钟。当获取停留车辆数据「T_RESIDENT_VEHICLE」时，必传。
@@ -79,6 +86,13 @@ public class SiteSelectionParam extends AlipayObject {
 	}
 	public void setIndexList(List<String> indexList) {
 		this.indexList = indexList;
+	}
+
+	public List<LngAndLatParam> getLngLatList() {
+		return this.lngLatList;
+	}
+	public void setLngLatList(List<LngAndLatParam> lngLatList) {
+		this.lngLatList = lngLatList;
 	}
 
 	public Long getMinParkingPeriod() {

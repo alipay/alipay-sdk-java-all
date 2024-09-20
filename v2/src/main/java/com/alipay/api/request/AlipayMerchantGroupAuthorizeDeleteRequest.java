@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.group.authorize.delete request
  * 
  * @author auto create
- * @since 1.0, 2024-09-05 18:09:38
+ * @since 1.0, 2024-09-11 15:36:24
  */
 public class AlipayMerchantGroupAuthorizeDeleteRequest implements AlipayRequest<AlipayMerchantGroupAuthorizeDeleteResponse> {
 

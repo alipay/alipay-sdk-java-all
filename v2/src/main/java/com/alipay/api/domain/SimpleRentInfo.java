@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租赁订单的简单信息
  *
  * @author auto create
- * @since 1.0, 2024-09-09 15:13:07
+ * @since 1.0, 2024-09-13 20:01:55
  */
 public class SimpleRentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7582993217569183237L;
+	private static final long serialVersionUID = 4667586883294868657L;
 
 	/**
 	 * 交易组件的订单Id
@@ -47,6 +47,12 @@ public class SimpleRentInfo extends AlipayObject {
 	private String endTime;
 
 	/**
+	 * 商户订单号
+	 */
+	@ApiField("out_order_id")
+	private String outOrderId;
+
+	/**
 	 * 租赁分期计划
 	 */
 	@ApiListField("plan_list")
@@ -58,6 +64,13 @@ public class SimpleRentInfo extends AlipayObject {
 	 */
 	@ApiField("price_info")
 	private String priceInfo;
+
+	/**
+	 * 履约明细信息
+	 */
+	@ApiListField("rent_detail_list")
+	@ApiField("rent_detail")
+	private List<RentDetail> rentDetailList;
 
 	/**
 	 * 租赁订单id
@@ -83,6 +96,12 @@ public class SimpleRentInfo extends AlipayObject {
 	 */
 	@ApiField("seller_id")
 	private String sellerId;
+
+	/**
+	 * 二级商户id
+	 */
+	@ApiField("smid")
+	private String smid;
 
 	/**
 	 * 租赁订单的开始时间
@@ -125,6 +144,13 @@ public class SimpleRentInfo extends AlipayObject {
 		this.endTime = endTime;
 	}
 
+	public String getOutOrderId() {
+		return this.outOrderId;
+	}
+	public void setOutOrderId(String outOrderId) {
+		this.outOrderId = outOrderId;
+	}
+
 	public List<RentPlan> getPlanList() {
 		return this.planList;
 	}
@@ -137,6 +163,13 @@ public class SimpleRentInfo extends AlipayObject {
 	}
 	public void setPriceInfo(String priceInfo) {
 		this.priceInfo = priceInfo;
+	}
+
+	public List<RentDetail> getRentDetailList() {
+		return this.rentDetailList;
+	}
+	public void setRentDetailList(List<RentDetail> rentDetailList) {
+		this.rentDetailList = rentDetailList;
 	}
 
 	public String getRentId() {
@@ -165,6 +198,13 @@ public class SimpleRentInfo extends AlipayObject {
 	}
 	public void setSellerId(String sellerId) {
 		this.sellerId = sellerId;
+	}
+
+	public String getSmid() {
+		return this.smid;
+	}
+	public void setSmid(String smid) {
+		this.smid = smid;
 	}
 
 	public String getStartTime() {

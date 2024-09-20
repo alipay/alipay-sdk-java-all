@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 以旧换新政府补贴资格认证接口
  *
  * @author auto create
- * @since 1.0, 2024-08-23 19:07:22
+ * @since 1.0, 2024-09-18 10:29:33
  */
 public class AlipayFinancialnetAuthUserParticipateCertifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8892136532732514171L;
+	private static final long serialVersionUID = 8786979741552528533L;
 
 	/**
 	 * 进行认证的证件号

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.mobile.std.public.menu.query request
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 17:41:20
+ * @since 1.0, 2024-09-11 12:03:34
  */
 public class AlipayMobileStdPublicMenuQueryRequest implements AlipayRequest<AlipayMobileStdPublicMenuQueryResponse> {
 

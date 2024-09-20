@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁订单的分期计划
  *
  * @author auto create
- * @since 1.0, 2024-09-09 15:13:07
+ * @since 1.0, 2024-09-13 20:01:54
  */
 public class RentPlan extends AlipayObject {
 
-	private static final long serialVersionUID = 8811772314319562836L;
+	private static final long serialVersionUID = 1793681717739617141L;
 
 	/**
 	 * 实际还款时间
 	 */
 	@ApiField("actual_pay_time")
 	private String actualPayTime;
+
+	/**
+	 * 本期买断金金额，单位：元，精确到小数点后两位
+	 */
+	@ApiField("buyout_price")
+	private String buyoutPrice;
 
 	/**
 	 * 预期还款时间
@@ -60,6 +66,13 @@ public class RentPlan extends AlipayObject {
 	}
 	public void setActualPayTime(String actualPayTime) {
 		this.actualPayTime = actualPayTime;
+	}
+
+	public String getBuyoutPrice() {
+		return this.buyoutPrice;
+	}
+	public void setBuyoutPrice(String buyoutPrice) {
+		this.buyoutPrice = buyoutPrice;
 	}
 
 	public String getExpectPayTime() {

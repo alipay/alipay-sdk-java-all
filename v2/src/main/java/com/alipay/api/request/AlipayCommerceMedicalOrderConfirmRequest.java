@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.order.confirm request
  * 
  * @author auto create
- * @since 1.0, 2024-08-29 14:32:08
+ * @since 1.0, 2024-09-20 11:42:10
  */
 public class AlipayCommerceMedicalOrderConfirmRequest implements AlipayRequest<AlipayCommerceMedicalOrderConfirmResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.wallet.consult response.
  * 
  * @author auto create
- * @since 1.0, 2024-09-06 11:33:22
+ * @since 1.0, 2024-09-18 15:27:10
  */
 public class AlipayFundWalletConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5839326381182171939L;
+	private static final long serialVersionUID = 2527653915918659521L;
 
 	/** 
 	 * 实际可以提现/销户后退的金额，单位：元
@@ -27,7 +27,7 @@ public class AlipayFundWalletConsultResponse extends AlipayResponse {
 	private String amountDetails;
 
 	/** 
-	 * 2023122000392001363140394362
+	 * 卡号：2023122000392001363140394362
 	 */
 	@ApiField("asset_no")
 	private String assetNo;
@@ -51,10 +51,16 @@ public class AlipayFundWalletConsultResponse extends AlipayResponse {
 	private String errorMsg;
 
 	/** 
-	 * 总金额
+	 * 历史总充值金额
 	 */
 	@ApiField("total_amount")
 	private String totalAmount;
+
+	/** 
+	 * 钱包总余额=可用余额+冻结金额
+	 */
+	@ApiField("total_balance")
+	private String totalBalance;
 
 	/** 
 	 * 钱包id
@@ -126,6 +132,13 @@ CLOSED - 已注销
 	}
 	public String getTotalAmount( ) {
 		return this.totalAmount;
+	}
+
+	public void setTotalBalance(String totalBalance) {
+		this.totalBalance = totalBalance;
+	}
+	public String getTotalBalance( ) {
+		return this.totalBalance;
 	}
 
 	public void setUserWalletId(String userWalletId) {

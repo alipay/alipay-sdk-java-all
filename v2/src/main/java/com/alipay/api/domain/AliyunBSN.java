@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AliyunBSN extends AlipayObject {
 
-	private static final long serialVersionUID = 1215399687547276945L;
+	private static final long serialVersionUID = 8495255435475349582L;
 
 	/**
 	 * 备案服务码分配时间

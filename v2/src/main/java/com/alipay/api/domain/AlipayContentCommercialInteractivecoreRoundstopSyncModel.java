@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 对局结束通知V2
  *
  * @author auto create
- * @since 1.0, 2024-09-04 17:43:58
+ * @since 1.0, 2024-09-19 13:57:53
  */
 public class AlipayContentCommercialInteractivecoreRoundstopSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2126613675387862334L;
+	private static final long serialVersionUID = 6169625381677698633L;
 
 	/**
 	 * 玩法token

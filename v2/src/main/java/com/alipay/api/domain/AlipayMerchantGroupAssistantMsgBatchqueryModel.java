@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小助手定向消息发送记录列表批量查询
  *
  * @author auto create
- * @since 1.0, 2024-07-30 14:29:16
+ * @since 1.0, 2024-09-11 15:37:15
  */
 public class AlipayMerchantGroupAssistantMsgBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5311394352551323356L;
+	private static final long serialVersionUID = 5859653363343896614L;
 
 	/**
 	 * 小助手类型列表，目前支持 activity_recommend (自定义活动)、benefit_recommend（优惠券推荐）

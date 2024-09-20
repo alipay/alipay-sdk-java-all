@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 门店物料信息
  *
  * @author auto create
- * @since 1.0, 2024-08-25 21:03:15
+ * @since 1.0, 2024-09-12 19:55:17
  */
 public class ShopMaterialsInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4831581355491348266L;
+	private static final long serialVersionUID = 4338749847736988614L;
 
 	/**
 	 * 收货地址
@@ -26,10 +26,22 @@ public class ShopMaterialsInfo extends AlipayObject {
 	private String deskNo;
 
 	/**
+	 * 一个实例对应的实际生产数量
+	 */
+	@ApiField("materials_count")
+	private Long materialsCount;
+
+	/**
 	 * 标识物料的唯一性
 	 */
 	@ApiField("materials_instance_id")
 	private String materialsInstanceId;
+
+	/**
+	 * 描述门店对应的商家名称，有部分物料印刷时需要，有必要时才会传递
+	 */
+	@ApiField("merchant_name")
+	private String merchantName;
 
 	/**
 	 * 物料的nfc链接，有可能为空，为空则先不写入碰一碰的url
@@ -94,11 +106,25 @@ public class ShopMaterialsInfo extends AlipayObject {
 		this.deskNo = deskNo;
 	}
 
+	public Long getMaterialsCount() {
+		return this.materialsCount;
+	}
+	public void setMaterialsCount(Long materialsCount) {
+		this.materialsCount = materialsCount;
+	}
+
 	public String getMaterialsInstanceId() {
 		return this.materialsInstanceId;
 	}
 	public void setMaterialsInstanceId(String materialsInstanceId) {
 		this.materialsInstanceId = materialsInstanceId;
+	}
+
+	public String getMerchantName() {
+		return this.merchantName;
+	}
+	public void setMerchantName(String merchantName) {
+		this.merchantName = merchantName;
 	}
 
 	public String getNfcUrl() {

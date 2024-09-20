@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.paymrchdata.qrcode.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-09-05 12:02:08
+ * @since 1.0, 2024-09-18 11:10:07
  */
 public class AlipayMerchantPaymrchdataQrcodeCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8363467347853643272L;
+	private static final long serialVersionUID = 7744189627437785658L;
 
 	/** 
 	 * 经营码开通结果
