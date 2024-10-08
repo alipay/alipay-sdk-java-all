@@ -10,7 +10,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="batchqueryvoucher"></a>
 # **batchqueryvoucher**
-> AlipayMarketingActivityUserBatchqueryvoucherResponseModel batchqueryvoucher(authToken, userId, openId, activityId, belongMerchantId, senderMerchantId, voucherStatus, pageNum, merchantAccessMode, pageSize)
+> AlipayMarketingActivityUserBatchqueryvoucherResponseModel batchqueryvoucher(userId, openId, activityId, belongMerchantId, senderMerchantId, voucherStatus, pageNum, merchantAccessMode, pageSize)
 
 条件查询用户券
 
@@ -39,7 +39,6 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayMarketingActivityUserApi apiInstance = new AlipayMarketingActivityUserApi(defaultClient);
-    String authToken = "authToken_example"; // String | 用户授权令牌
     String userId = "2088512417841101"; // String | 支付宝用户 id
     String openId = "074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5"; // String | 支付宝用户openId
     String activityId = "2016042700826004508401111111"; // String | 活动 id
@@ -50,7 +49,7 @@ public class Example {
     String merchantAccessMode = "AGENCY_MODE"; // String | 商户接入模式
     Integer pageSize = 20; // Integer | 分页查询单页数据条数
     try {
-      AlipayMarketingActivityUserBatchqueryvoucherResponseModel result = apiInstance.batchqueryvoucher(authToken, userId, openId, activityId, belongMerchantId, senderMerchantId, voucherStatus, pageNum, merchantAccessMode, pageSize);
+      AlipayMarketingActivityUserBatchqueryvoucherResponseModel result = apiInstance.batchqueryvoucher(userId, openId, activityId, belongMerchantId, senderMerchantId, voucherStatus, pageNum, merchantAccessMode, pageSize);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayMarketingActivityUserApi#batchqueryvoucher");
@@ -67,7 +66,6 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **authToken** | **String**| 用户授权令牌 | [optional] |
 | **userId** | **String**| 支付宝用户 id | [optional] |
 | **openId** | **String**| 支付宝用户openId | [optional] |
 | **activityId** | **String**| 活动 id | [optional] |

@@ -5,7 +5,7 @@ info:
     url: https://openhome.alipay.com/developmentDocument.htm
   description: 支付宝开放平台v3协议文档
   title: 支付宝开放平台API
-  version: 2024-08-30
+  version: 2024-10-08
 servers:
 - description: Production server
   url: https://openapi.alipay.com
@@ -11064,15 +11064,6 @@ paths:
       description: 可通过该接口查询用户在某商户可用的全部券，可用于商户的小程序/H5中，用户"我的优惠券"或"提交订单页"展示优惠信息。只能查询商户配的券，无法查询平台优惠券。
       operationId: alipay.marketing.activity.user.batchqueryvoucher
       parameters:
-      - allowEmptyValue: true
-        description: 用户授权令牌
-        explode: true
-        in: query
-        name: auth_token
-        required: false
-        schema:
-          type: string
-        style: form
       - description: 支付宝用户 id
         explode: true
         in: query
@@ -19753,7 +19744,7 @@ paths:
       description: 可以通过此接口删除指定广告位的配置信息
       operationId: alipay.open.public.advert.delete
       parameters:
-      - description: 待删除的广告位id
+      - description: 待删除的广告位id，删除通投广告位需传递此参数
         explode: true
         in: query
         name: advert_id
@@ -19762,7 +19753,7 @@ paths:
           example: "123"
           type: string
         style: form
-      - description: 待删除的广告位分组标识
+      - description: 待删除的广告位分组标识，删除个性化广告位需传递此参数。
         explode: true
         in: query
         name: advert_group
@@ -21257,7 +21248,7 @@ paths:
       x-accepts: application/json
   /v3/alipay/open/public/topic/delete:
     delete:
-      description: "通过此接口,开发者可以根据营销位的id删除指定的营销位。"
+      description: "通过此接口,开发者可以根据营销位的分组group删除指定的营销位。"
       operationId: alipay.open.public.topic.delete
       parameters:
       - description: 营销位id
@@ -21266,7 +21257,7 @@ paths:
         name: topic_id
         required: false
         schema:
-          example: "123"
+          example: CG202011131013300867029
           type: string
         style: form
       responses:
@@ -32223,6 +32214,10 @@ components:
           description: 停车场内缴费后，允许出场的免费时长分钟数
           example: "15"
           type: string
+        inactive_user:
+          description: 365天未使用支付宝付停车费用户
+          example: true
+          type: boolean
         is_encrypt_plate_no:
           description: 车牌是否加密，true为加密，false为不加密，默认为false
           example: true
@@ -32247,6 +32242,10 @@ components:
           description: 外部停车流水号(用于串通进场与出场信息)
           example: "2020090711003017233600000001"
           type: string
+        pay_frequency:
+          description: 用户在支付宝侧支付停车费次数
+          example: 5次
+          type: string
         payment_amount:
           description: 停车费实付金额；单位元；
           example: "8.00"
@@ -32257,7 +32256,7 @@ components:
           type: string
         payment_type:
           description: "支付方式；\tALIPAY：支付宝\tWECHAT：微信\tCUQP：云闪付\tCASH：现金\tOTHER：其他渠\
-            道"
+            道\tFREE: 免费"
           example: ALIPAY
           type: string
         payment_user_open_id:
@@ -32274,10 +32273,12 @@ components:
           example: 豫C33333
           type: string
         service_url:
-          description: "停车服务页面地址。\t1、服务商停车服务页面地址必须是支付宝小程序URL（无需转换https），详见：https://opendocs.alipay.com/support/01rb18#URL%20%E6%A0%BC%E5%BC%8F\
-            \ 2、若服务商没有服务链接，可传输支付宝停车官方小程序的服务链接：alipays://platformapi/startapp?appId=2021001102642986&page=pages%2Fparking-fee%2Findex\
-            \ 3、若此次对接的是无感支付，则服务链接传输为：alipays://platformapi/startapp?appId=2021001102642986&page=%2Fpages%2Fparking-bill%2Findex"
-          example: alipays://xxxxx
+          description: "停车服务页面地址。\t1、服务商停车服务页面地址必须是支付宝小程序URL（无需转换https），详见： <a href=\"\
+            https://opendocs.alipay.com/support/01rb18#URL%20%E6%A0%BC%E5%BC%8F \"\
+            > https://opendocs.alipay.com/support/01rb18#URL%20%E6%A0%BC%E5%BC%8F\
+            \  </a>\t2、若服务商没有服务链接，可传输支付宝停车官方小程序的服务链接：alipays://platformapi/startapp?appId=2021001102642986&page=pages%2Fparking-fee%2Findex\
+            \ \t3、若此次对接的是无感支付，则服务链接传输为：alipays://platformapi/startapp?appId=2021001102642986&page=%2Fpages%2Fparking-bill%2Findex"
+          example: alipays://platformapi/startapp?appId=2021001102642986&page=pages%2Fparking-fee%2Findex
           type: string
         total_amount:
           description: 停车费总金额；单位元；理论应等于实付金额+折扣金额
@@ -32294,6 +32295,10 @@ components:
         biz_msg:
           description: 具体错误原因
           example: 车牌不合法
+          type: string
+        send_parking_message_flag:
+          description: 当前行程是否会给用户发送停车消息
+          example: "Y"
           type: string
       type: object
     AlipayDataBillAccountbookereceiptApplyErrorResponseModel:
@@ -49878,7 +49883,7 @@ components:
     AlipayMarketingMaterialCreateModel:
       properties:
         material_fields:
-          description: 素材字段列表，素材提报的具体内容，包含三种类型：图片、文本、链接。图片类型，则根据“图片资源上传接口（https://opendocs.alipay.com/pre-open/02bhlj）”中返回的resource_id字段值进行素材字段的设值。文本或链接类型，则按照实际需要设值即可，需满足具体的规范要求。规范要求详情请参见产品文档。
+          description: 素材字段列表，素材提报的具体内容，包含三种类型：图片、文本、链接。图片类型，则根据“图片资源上传接口”中返回的resource_id字段值进行素材字段的设值。文本或链接类型，则按照实际需要设值即可，需满足具体的规范要求。规范要求详情请参见产品文档。
           items:
             $ref: '#/components/schemas/MaterialField'
           type: array
@@ -50293,6 +50298,7 @@ components:
           - DEPEND_FAILURE
           - AUTH_ORDER_CANCEL_ILLEGAL
           - AUTH_ORDER_CANCEL_FAILED
+          - ILLEAGL_PARAMETER
           type: string
         links:
           description: 解决方案链接
@@ -53391,12 +53397,12 @@ components:
     AlipayOpenAgentFacetofaceSignModel:
       properties:
         batch_no:
-          description: 代商户操作事务编号，通过https://opendocs.alipay.com/apis/api_50/alipay.open.agent.create
+          description: 代商户操作事务编号，通过<a href="https://opendocs.alipay.com/apis/api_50/alipay.open.agent.create">接口地址</a>
             (开启代商户签约、创建应用事务)接口进行事务创建后获取。
           example: "2017110616474516400082883"
           type: string
         business_license_mobile:
-          description: 被邀请授权的营业执照法人手机号码，上传非同人营业执照时必填
+          description: 上传非经营者本人（签约账号）的营业执照时必填，填写营业执照法人支付宝账号对应的手机号。
           example: "13189652239"
           type: string
         business_license_no:
@@ -55674,7 +55680,7 @@ components:
           type: string
         package_names:
           description: 功能包名称
-          example: 小程序基础功能包
+          example: "[\"小程序基础功能包1\",\"小程序基础功能包2\"]"
           items:
             type: string
           type: array
@@ -59931,8 +59937,8 @@ components:
           example: BASE_PROMOTE
           type: string
         auto_online:
-          description: "审核通过后是否自动上架，\t自动上架：true；不自动上架（默认）：false。\t如果小程序上架前无需特殊处理，建\
-            议设置成true，平台将会在小程序审核通过时自动将其上架"
+          description: 审核通过后是否自动上架， 自动上架：true；不自动上架（默认）：false。 如果小程序上架前无需特殊处理，建议设置成true，平台将会在小程序审核通过时自动将其上架。
+            注意：若审核通过时，小程序仍未完成备案，则将会进行自动受限发布上架（发布上线后小程序将无法被搜索，限制小程序用户数为 50 人/天，无法进行相关业务推广，只可通过扫码使用，完成备案即可解除限制，上架后90天内不未完成备案，小程序将无法打开。）若审核通过时小程序也完成备案，则会正常上架。
           example: "true"
           type: string
         bundle_id:
@@ -60555,6 +60561,11 @@ components:
         downgrade:
           description: true - 性能优先； false - 覆盖优先（默认）
           example: false
+          type: boolean
+        permit_registration_limit_release:
+          description: "如果该字段为true，在首次发版的小程序在备案未完成的情况下，允许小程序上架，但小程序上架后只可以上架可扫码进行使用\
+            ，但不可被搜索、限制访问人数（50人/每天）、限制公域（无法进行商品、服务、营促销）、限制上架后90天不完成备案自动下架。\t默认为false"
+          example: true
           type: boolean
       type: object
     AlipayOpenMiniVersionOnlineResponseModel:
@@ -61188,6 +61199,7 @@ components:
           - SYSTEM_ERROR
           - BUSINESS_ERROR
           - SECURITY_CHECK_FAILED
+          - AUTHORIZE_NOT_ADMIT
           type: string
         links:
           description: 解决方案链接
@@ -61228,6 +61240,7 @@ components:
           - PUBLIC_ADVERT_NOT_EXISTS
           - SYSTEM_ERROR
           - BUSINESS_ERROR
+          - AUTHORIZE_NOT_ADMIT
           type: string
         links:
           description: 解决方案链接
@@ -61262,6 +61275,7 @@ components:
           - SYSTEM_ERROR
           - BUSINESS_ERROR
           - SECURITY_CHECK_FAILED
+          - AUTHORIZE_NOT_ADMIT
           type: string
         links:
           description: 解决方案链接
@@ -61367,6 +61381,7 @@ components:
           - GOTO_URL_IS_INVALID
           - DEFAULT_EXTENSION_EXIST
           - EXTENSION_NAME_TOO_LONG
+          - AUTHORIZE_NOT_ADMIT
           type: string
         links:
           description: 解决方案链接
@@ -62408,6 +62423,10 @@ components:
           - MENU_AUTH_NOT_ILLEGAL
           - MENU_SECURITY_FORBID
           - MENU_SUB_OUT_OF_NUM
+          - APP_NO_AVAIABLE
+          - MENU_HAS_EXIST
+          - EXTENSION_STATUS_INVALID
+          - AUTHORIZE_NOT_ADMIT
           type: string
         links:
           description: 解决方案链接
@@ -62502,6 +62521,10 @@ components:
           - MENU_AUTH_NOT_ILLEGAL
           - MENU_SECURITY_FORBID
           - MENU_SUB_OUT_OF_NUM
+          - APP_NO_AVAIABLE
+          - EXTENSION_STATUS_INVALID
+          - ICON_SIZE_ERROR
+          - AUTHORIZE_NOT_ADMIT
           type: string
         links:
           description: 解决方案链接
@@ -63054,6 +63077,10 @@ components:
           - LABEL_VALUE_INVALID
           - LABEL_NOT_EXISTS
           - RULE_CONTENT_INVALID
+          - OPERATOR_IS_INVALID
+          - SYSTEM_ERROR
+          - EXTENSION_STATUS_INVALID
+          - AUTHORIZE_NOT_ADMIT
           type: string
         links:
           description: 解决方案链接
@@ -63092,6 +63119,9 @@ components:
           description: 错误码
           enum:
           - EXTENSION_KEY_IS_EMPTY
+          - EXTENSION_NOT_EXIST
+          - EXTENSION_STATUS_INVALID
+          - AUTHORIZE_NOT_ADMIT
           type: string
         links:
           description: 解决方案链接
@@ -63140,6 +63170,8 @@ components:
           - MENU_NUMBER_LIMIT
           - ICON_NOT_SUPPORT_SUB_MENU
           - SECURITY_CHECK_FAILED
+          - SYSTEM_ERROR
+          - AUTHORIZE_NOT_ADMIT
           type: string
         links:
           description: 解决方案链接
@@ -63196,6 +63228,8 @@ components:
           - ILLEGAL_BIZ_PARAMS
           - MENU_KEY_IS_EMPTY
           - MENU_NOT_EXIST
+          - SYSTEM_ERROR
+          - AUTHORIZE_NOT_ADMIT
           type: string
         links:
           description: 解决方案链接
@@ -63491,6 +63525,7 @@ components:
           - TOPIC_EXISTS
           - BUSINESS_ERROR
           - SYSTEM_ERROR
+          - AUTHORIZE_NOT_ADMIT
           type: string
         links:
           description: 解决方案链接
@@ -63536,7 +63571,7 @@ components:
       properties:
         topic_id:
           description: 营销位id
-          example: "123"
+          example: CG202011131013300867029
           type: string
       type: object
     AlipayOpenPublicTopicDeleteErrorResponseModel:
@@ -63549,6 +63584,7 @@ components:
           - TOPIC_NOT_EXISTS
           - SYSTEM_ERROR
           - BUSINESS_ERROR
+          - AUTHORIZE_NOT_ADMIT
           type: string
         links:
           description: 解决方案链接
@@ -63584,6 +63620,7 @@ components:
           - SYSTEM_ERROR
           - TOPIC_ID_INVALID
           - TOPIC_NOT_EXISTS
+          - AUTHORIZE_NOT_ADMIT
           type: string
         links:
           description: 解决方案链接
@@ -63621,7 +63658,7 @@ components:
           type: string
         topic_id:
           description: 营销位id
-          example: "123"
+          example: CG202011131013300867029
           type: string
         topic_items:
           $ref: '#/components/schemas/TopicItem'
@@ -70433,6 +70470,16 @@ components:
           items:
             $ref: '#/components/schemas/OpenApiRoyaltyDetailInfoPojo'
           type: array
+        refund_trans_out:
+          description: "指定退款账号，对应指定账号退款合约中的约定账号\t\t与refund_trans_out_type绑定使用\t1、\
+            refund_trans_out_type=userId时，传入对应的支付宝2088账号\t2、refund_trans_out_type=loginName时\
+            ，传入对应的支付宝账号登录名"
+          example: 2088xxxxxxxxxxxx
+          type: string
+        refund_trans_out_type:
+          description: "指定退款账号类型\tuserId：支付宝账号id\tloginName：支付宝账号登录名"
+          example: userId
+          type: string
         related_settle_confirm_no:
           description: 针对账期交易，在确认结算后退款的话，需要指定确认结算时的结算单号。
           example: "2024041122001495000530302869"
@@ -78786,6 +78833,12 @@ components:
           description: "该字段只对因公付交易生效，默认为INIT。当消费账单有退款，该值会变为REFUND_PART或REFUND_FULL；\
             退款账单该值无意义，为初始值INIT。\t未退款：INIT\t部分退款：REFUND_PART，\t全额退款：REFUND_FULL"
           type: string
+        refund_amount:
+          description: 消费账单退款金额，单位：元。退款账单该值无意义，值为0。
+          type: string
+        refund_status:
+          description: 当消费账单有退款，该值会变为REFUND_PART或REFUND_FULL；退款账单该值无意义，为初始值INIT。
+          type: string
         related_pay_no:
           description: 退款账单关联的消费账单交易流水号，退款账单才有值
           type: string
@@ -78848,7 +78901,7 @@ components:
           description: 订单ID
           type: string
         order_type:
-          description: "订单类型\tMETRO：地铁\tTAKEAWAY：外卖\tOTHER：其他"
+          description: "订单类型\tMETRO：地铁\tTAKE_AWAY：外卖\tOTHER：其他\tREACH_SHOP：到店"
           type: string
         partner_id:
           description: 合作伙伴ID
@@ -79961,7 +80014,7 @@ components:
           description: 跳转链接，当type为"image"时必传，必须是https或alipays开头的url链接。已废弃
           type: string
         height:
-          description: 扩展区高度，当type值为"h5"时必填，取值范围为200-500的整数
+          description: "扩展区高度，当type值为\"h5\"时必填，取值范围为200-500的整数,单位是px"
           type: integer
         name:
           description: 扩展区名字
@@ -86895,6 +86948,12 @@ components:
           description: "商品编号。\t对应支付时传入的goods_id"
           example: apple-01
           type: string
+        out_certificate_no_list:
+          description: 外部商品凭证编号列表
+          example: "[\"202407013232143241231243243423\"]"
+          items:
+            type: string
+          type: array
         out_item_id:
           description: 商家侧小程序商品ID，对应支付时传入的out_item_id
           example: outItem_01
@@ -87251,7 +87310,7 @@ components:
             校验。\t当分账方类型是loginName时，本参数必传。\t解绑分账关系时：作为请求参数可不填，分账关系查询时不作为返回结果返回"
           type: string
         type:
-          description: 分账接收方方类型。
+          description: 分账接收方类型。
           type: string
       type: object
     RoyaltyInfo:
@@ -92027,6 +92086,9 @@ components:
           items:
             type: string
           type: array
+        use_url:
+          description: 核销跳转链接
+          type: string
       type: object
     VoucherUseGuideModify:
       properties:
@@ -92062,6 +92124,11 @@ components:
       type: object
     VoucherUseRuleInfo:
       properties:
+        payment_restriction_list:
+          description: 支付方式限制
+          items:
+            type: string
+          type: array
         quantity_limit_per_user:
           description: 核销次数限制。
           type: integer

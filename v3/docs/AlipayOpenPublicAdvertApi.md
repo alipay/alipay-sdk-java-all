@@ -179,8 +179,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenPublicAdvertApi apiInstance = new AlipayOpenPublicAdvertApi(defaultClient);
-    String advertId = "123"; // String | 待删除的广告位id
-    String advertGroup = "CG202008041013200064690"; // String | 待删除的广告位分组标识
+    String advertId = "123"; // String | 待删除的广告位id，删除通投广告位需传递此参数
+    String advertGroup = "CG202008041013200064690"; // String | 待删除的广告位分组标识，删除个性化广告位需传递此参数。
     try {
       Object result = apiInstance.delete(advertId, advertGroup);
       System.out.println(result);
@@ -199,8 +199,8 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **advertId** | **String**| 待删除的广告位id | [optional] |
-| **advertGroup** | **String**| 待删除的广告位分组标识 | [optional] |
+| **advertId** | **String**| 待删除的广告位id，删除通投广告位需传递此参数 | [optional] |
+| **advertGroup** | **String**| 待删除的广告位分组标识，删除个性化广告位需传递此参数。 | [optional] |
 
 ### Return type
 

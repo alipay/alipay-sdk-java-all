@@ -154,7 +154,7 @@ No authorization required
 
 营销位删除接口
 
-通过此接口,开发者可以根据营销位的id删除指定的营销位。
+通过此接口,开发者可以根据营销位的分组group删除指定的营销位。
 
 ### Example
 ```java
@@ -179,7 +179,7 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenPublicTopicApi apiInstance = new AlipayOpenPublicTopicApi(defaultClient);
-    String topicId = "123"; // String | 营销位id
+    String topicId = "CG202011131013300867029"; // String | 营销位id
     try {
       Object result = apiInstance.delete(topicId);
       System.out.println(result);
