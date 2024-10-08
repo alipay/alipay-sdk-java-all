@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.moneycard.record.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2024-09-13 14:57:10
+ * @since 1.0, 2024-09-27 07:57:10
  */
 public class AlipayCommerceMoneycardRecordBatchqueryRequest implements AlipayRequest<AlipayCommerceMoneycardRecordBatchqueryResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiServindustryReservationPayshopIdentifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5759991495398495143L;
+	private static final long serialVersionUID = 1461379494768823714L;
 
 	/** 
 	 * 是否付费店铺

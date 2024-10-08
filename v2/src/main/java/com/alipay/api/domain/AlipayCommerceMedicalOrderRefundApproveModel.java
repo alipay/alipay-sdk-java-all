@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商家审核逆向订单
  *
  * @author auto create
- * @since 1.0, 2024-09-03 19:51:15
+ * @since 1.0, 2024-09-29 16:05:51
  */
 public class AlipayCommerceMedicalOrderRefundApproveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5488325962616475454L;
+	private static final long serialVersionUID = 8181353689148917855L;
 
 	/**
 	 * 退款单审批操作类型，枚举值：

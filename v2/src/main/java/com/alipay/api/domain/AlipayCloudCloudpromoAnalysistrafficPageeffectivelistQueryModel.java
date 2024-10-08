@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 经营分析流量分析页面效果列表
  *
  * @author auto create
- * @since 1.0, 2024-08-05 09:50:02
+ * @since 1.0, 2024-09-20 17:32:56
  */
 public class AlipayCloudCloudpromoAnalysistrafficPageeffectivelistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5729977272584195894L;
+	private static final long serialVersionUID = 3192915829867717656L;
 
 	/**
 	 * 经营分析、经营概况模块公用入参

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗大模型服务对外接口-会话创建或查询
  *
  * @author auto create
- * @since 1.0, 2024-09-10 20:01:19
+ * @since 1.0, 2024-09-29 13:32:53
  */
 public class AlipayCommerceMedicalLargermodelSessionQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2824186366985639629L;
+	private static final long serialVersionUID = 3459551116262323935L;
 
 	/**
 	 * 挂号agent卡片上的点击参数

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序消息内容
  *
  * @author auto create
- * @since 1.0, 2024-09-05 17:19:58
+ * @since 1.0, 2024-09-30 17:58:08
  */
 public class TinyAppMsgVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1842173825981963574L;
+	private static final long serialVersionUID = 4385638625369217866L;
 
 	/**
 	 * 对推送商品的简单介绍（参考：美妆好物应有尽有，快戳进来看看呀）
@@ -20,9 +20,10 @@ public class TinyAppMsgVO extends AlipayObject {
 	private String desc;
 
 	/**
-	 * 建议选择有吸引力的图片，引导用户点击链接（支持的图片 jpg、png，400*200，限制1M以内)
+	 * 建议选择有吸引力的图片，引导用户点击链接（支持的图片 jpg、png，400*200，限制1M以内) 当前字段已废弃(初始创建不规范，不曾用到)
 	 */
 	@ApiField("image")
+	@Deprecated
 	private String image;
 
 	/**

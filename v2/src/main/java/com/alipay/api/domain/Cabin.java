@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 仓等信息
  *
  * @author auto create
- * @since 1.0, 2023-09-08 13:36:20
+ * @since 1.0, 2024-09-30 01:14:33
  */
 public class Cabin extends AlipayObject {
 
-	private static final long serialVersionUID = 3734821522116793372L;
+	private static final long serialVersionUID = 3477764242342558925L;
 
 	/**
 	 * 减免后成人价，精确到元
@@ -54,10 +57,23 @@ Y-经济舱，C-公务舱，F-头等舱
 	private String childPrice;
 
 	/**
+	 * 优惠列表
+	 */
+	@ApiListField("discount_list")
+	@ApiField("discount")
+	private List<Discount> discountList;
+
+	/**
 	 * 优惠券标签
 	 */
 	@ApiField("discount_tag")
 	private String discountTag;
+
+	/**
+	 * 燃油费用，精确到：元
+	 */
+	@ApiField("fuel_cost")
+	private String fuelCost;
 
 	/**
 	 * 婴儿价格，精确到元，仅作展示
@@ -66,10 +82,57 @@ Y-经济舱，C-公务舱，F-头等舱
 	private String infantPrice;
 
 	/**
+	 * 基建费用，精确到元
+	 */
+	@ApiField("infrastructure_cost")
+	private String infrastructureCost;
+
+	/**
+	 * 航班详情跳转链接
+	 */
+	@ApiField("link_url")
+	private String linkUrl;
+
+	/**
+	 * 托运政策描述
+	 */
+	@ApiListField("luggage_policies")
+	@ApiField("luggage_policy")
+	private List<LuggagePolicy> luggagePolicies;
+
+	/**
 	 * 餐食描述
 	 */
 	@ApiField("meal")
 	private String meal;
+
+	/**
+	 * 改签政策
+	 */
+	@ApiListField("rebook_policies")
+	@ApiField("policy")
+	private List<Policy> rebookPolicies;
+
+	/**
+	 * 退票政策
+	 */
+	@ApiListField("refund_policies")
+	@ApiField("policy")
+	private List<Policy> refundPolicies;
+
+	/**
+	 * 报销政策
+	 */
+	@ApiListField("reimbursement_policies")
+	@ApiField("reimbursement_policy")
+	private List<ReimbursementPolicy> reimbursementPolicies;
+
+	/**
+	 * 售卖限制的列表
+	 */
+	@ApiListField("sale_controls")
+	@ApiField("sale_control")
+	private List<SaleControl> saleControls;
 
 	/**
 	 * 余票数量，不明确可为空
@@ -119,11 +182,25 @@ Y-经济舱，C-公务舱，F-头等舱
 		this.childPrice = childPrice;
 	}
 
+	public List<Discount> getDiscountList() {
+		return this.discountList;
+	}
+	public void setDiscountList(List<Discount> discountList) {
+		this.discountList = discountList;
+	}
+
 	public String getDiscountTag() {
 		return this.discountTag;
 	}
 	public void setDiscountTag(String discountTag) {
 		this.discountTag = discountTag;
+	}
+
+	public String getFuelCost() {
+		return this.fuelCost;
+	}
+	public void setFuelCost(String fuelCost) {
+		this.fuelCost = fuelCost;
 	}
 
 	public String getInfantPrice() {
@@ -133,11 +210,60 @@ Y-经济舱，C-公务舱，F-头等舱
 		this.infantPrice = infantPrice;
 	}
 
+	public String getInfrastructureCost() {
+		return this.infrastructureCost;
+	}
+	public void setInfrastructureCost(String infrastructureCost) {
+		this.infrastructureCost = infrastructureCost;
+	}
+
+	public String getLinkUrl() {
+		return this.linkUrl;
+	}
+	public void setLinkUrl(String linkUrl) {
+		this.linkUrl = linkUrl;
+	}
+
+	public List<LuggagePolicy> getLuggagePolicies() {
+		return this.luggagePolicies;
+	}
+	public void setLuggagePolicies(List<LuggagePolicy> luggagePolicies) {
+		this.luggagePolicies = luggagePolicies;
+	}
+
 	public String getMeal() {
 		return this.meal;
 	}
 	public void setMeal(String meal) {
 		this.meal = meal;
+	}
+
+	public List<Policy> getRebookPolicies() {
+		return this.rebookPolicies;
+	}
+	public void setRebookPolicies(List<Policy> rebookPolicies) {
+		this.rebookPolicies = rebookPolicies;
+	}
+
+	public List<Policy> getRefundPolicies() {
+		return this.refundPolicies;
+	}
+	public void setRefundPolicies(List<Policy> refundPolicies) {
+		this.refundPolicies = refundPolicies;
+	}
+
+	public List<ReimbursementPolicy> getReimbursementPolicies() {
+		return this.reimbursementPolicies;
+	}
+	public void setReimbursementPolicies(List<ReimbursementPolicy> reimbursementPolicies) {
+		this.reimbursementPolicies = reimbursementPolicies;
+	}
+
+	public List<SaleControl> getSaleControls() {
+		return this.saleControls;
+	}
+	public void setSaleControls(List<SaleControl> saleControls) {
+		this.saleControls = saleControls;
 	}
 
 	public String getTicketCount() {

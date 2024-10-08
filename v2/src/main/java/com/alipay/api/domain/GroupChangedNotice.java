@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家群变动通知
  *
  * @author auto create
- * @since 1.0, 2024-03-14 10:06:56
+ * @since 1.0, 2024-09-24 16:30:43
  */
 public class GroupChangedNotice extends AlipayObject {
 
-	private static final long serialVersionUID = 3275578689754734733L;
+	private static final long serialVersionUID = 4415663262825196216L;
 
 	/**
 	 * 消息创建时间
@@ -41,6 +41,12 @@ public class GroupChangedNotice extends AlipayObject {
 	@ApiListField("mem_change_list")
 	@ApiField("group_member_detail")
 	private List<GroupMemberDetail> memChangeList;
+
+	/**
+	 * 商家pid
+	 */
+	@ApiField("pid")
+	private String pid;
 
 	/**
 	 * 变更信息。成员入群: add_member，成员退群: del_member，群名变更: change_name
@@ -74,6 +80,13 @@ public class GroupChangedNotice extends AlipayObject {
 	}
 	public void setMemChangeList(List<GroupMemberDetail> memChangeList) {
 		this.memChangeList = memChangeList;
+	}
+
+	public String getPid() {
+		return this.pid;
+	}
+	public void setPid(String pid) {
+		this.pid = pid;
 	}
 
 	public String getUpdateInfo() {

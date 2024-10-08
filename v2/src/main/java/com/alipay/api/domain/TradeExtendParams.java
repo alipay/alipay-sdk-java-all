@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 国标移动支付间连下单扩展字段
  *
  * @author auto create
- * @since 1.0, 2024-01-19 14:52:14
+ * @since 1.0, 2024-09-27 16:00:52
  */
 public class TradeExtendParams extends AlipayObject {
 
-	private static final long serialVersionUID = 3574926962687525475L;
+	private static final long serialVersionUID = 6397863214222188685L;
+
+	/**
+	 * 用来表示调用接口的渠道方名称，目前为固定的枚举值
+	 */
+	@ApiField("channel_code")
+	private String channelCode;
 
 	/**
 	 * 渠道标识
@@ -72,6 +78,13 @@ public class TradeExtendParams extends AlipayObject {
 	 */
 	@ApiField("sys_service_provider_id")
 	private String sysServiceProviderId;
+
+	public String getChannelCode() {
+		return this.channelCode;
+	}
+	public void setChannelCode(String channelCode) {
+		this.channelCode = channelCode;
+	}
 
 	public String getChinfo() {
 		return this.chinfo;

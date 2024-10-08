@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 票务的SKU信息
  *
  * @author auto create
- * @since 1.0, 2024-09-14 12:12:10
+ * @since 1.0, 2024-09-20 15:02:09
  */
 public class TicketSKU extends AlipayObject {
 
-	private static final long serialVersionUID = 3317572153821234541L;
+	private static final long serialVersionUID = 1238416336842236163L;
 
 	/**
 	 * 票种的唯一ID用于下单
@@ -24,6 +24,12 @@ public class TicketSKU extends AlipayObject {
 	 */
 	@ApiField("goods_name")
 	private String goodsName;
+
+	/**
+	 * 09:00-10:00 这种属于按照天+分时控制余票，DATE是按照天控制余票
+	 */
+	@ApiField("stock_type")
+	private String stockType;
 
 	/**
 	 * 用户票种的一些描述信息
@@ -49,6 +55,13 @@ public class TicketSKU extends AlipayObject {
 	}
 	public void setGoodsName(String goodsName) {
 		this.goodsName = goodsName;
+	}
+
+	public String getStockType() {
+		return this.stockType;
+	}
+	public void setStockType(String stockType) {
+		this.stockType = stockType;
 	}
 
 	public String getTips() {

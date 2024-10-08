@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商家群消息模型
  *
  * @author auto create
- * @since 1.0, 2024-07-01 15:00:51
+ * @since 1.0, 2024-09-30 17:58:10
  */
 public class GroupMessageVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8148413466297857133L;
+	private static final long serialVersionUID = 8761722388619273262L;
 
 	/**
 	 * 优惠券消息内容模型，当消息类型(msg_type)选 "COUPON" 的时候，这个内容必须得填充

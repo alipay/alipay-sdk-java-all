@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayIserviceCognitiveOcrVehicledashboardQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6397251461421528184L;
+	private static final long serialVersionUID = 1545562676821326933L;
 
 	/**
 	 * 自定义场景字段，通过biz_name明确是那个场景，仪表板写死为 dashboard

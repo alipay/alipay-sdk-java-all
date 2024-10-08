@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 阶段付款计划信息模型
  *
  * @author auto create
- * @since 1.0, 2024-04-22 22:25:20
+ * @since 1.0, 2024-09-24 20:45:51
  */
 public class StagePayPlanInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8749722842968298267L;
+	private static final long serialVersionUID = 1333225412748788374L;
+
+	/**
+	 * 计划买断金额，支持随时买断场景；回传当期买断金，当期买断金=当期买断价-截止到当期已支付租金；单位：元，精确到小数点后两位；
+	 */
+	@ApiField("plan_buyout_price")
+	private String planBuyoutPrice;
 
 	/**
 	 * 阶段计划付款编号，标识第几次或第几期付款，起始值为1，多个计划需保证编号递增
@@ -32,6 +38,13 @@ public class StagePayPlanInfoDTO extends AlipayObject {
 	 */
 	@ApiField("plan_pay_time")
 	private Date planPayTime;
+
+	public String getPlanBuyoutPrice() {
+		return this.planBuyoutPrice;
+	}
+	public void setPlanBuyoutPrice(String planBuyoutPrice) {
+		this.planBuyoutPrice = planBuyoutPrice;
+	}
 
 	public Long getPlanPayNo() {
 		return this.planPayNo;

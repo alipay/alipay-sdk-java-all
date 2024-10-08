@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 更新服务单
  *
  * @author auto create
- * @since 1.0, 2024-04-28 20:02:18
+ * @since 1.0, 2024-09-20 17:41:41
  */
 public class AlipayIserviceIcontrolServiceorderModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4536692446326989657L;
+	private static final long serialVersionUID = 8798366919529168489L;
 
 	/**
 	 * 阿里云呼入任务更新模型
 	 */
 	@ApiField("csi_payload")
 	private CustomeServiceInboundUpdateDTO csiPayload;
+
+	/**
+	 * 阿里云呼出任务更新模型
+	 */
+	@ApiField("cso_payload")
+	private CustomeServiceOutBoundUpdateDTO csoPayload;
 
 	/**
 	 * 是否调度模式
@@ -72,6 +78,13 @@ public class AlipayIserviceIcontrolServiceorderModifyModel extends AlipayObject 
 	}
 	public void setCsiPayload(CustomeServiceInboundUpdateDTO csiPayload) {
 		this.csiPayload = csiPayload;
+	}
+
+	public CustomeServiceOutBoundUpdateDTO getCsoPayload() {
+		return this.csoPayload;
+	}
+	public void setCsoPayload(CustomeServiceOutBoundUpdateDTO csoPayload) {
+		this.csoPayload = csoPayload;
 	}
 
 	public Boolean getDispatchMode() {

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.payment.preconsult request
  * 
  * @author auto create
- * @since 1.0, 2024-05-13 19:07:01
+ * @since 1.0, 2024-09-24 10:20:42
  */
 public class AlipayCommerceMedicalPaymentPreconsultRequest implements AlipayRequest<AlipayCommerceMedicalPaymentPreconsultResponse> {
 

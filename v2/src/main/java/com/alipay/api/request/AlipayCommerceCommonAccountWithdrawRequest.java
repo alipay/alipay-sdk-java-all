@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.common.account.withdraw request
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 04:41:43
+ * @since 1.0, 2024-10-08 10:01:16
  */
 public class AlipayCommerceCommonAccountWithdrawRequest implements AlipayRequest<AlipayCommerceCommonAccountWithdrawResponse> {
 

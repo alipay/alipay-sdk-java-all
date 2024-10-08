@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.merchant.creditservice.modify request
  * 
  * @author auto create
- * @since 1.0, 2024-09-19 17:03:33
+ * @since 1.0, 2024-09-26 19:13:11
  */
 public class ZhimaMerchantCreditserviceModifyRequest implements AlipayRequest<ZhimaMerchantCreditserviceModifyResponse> {
 

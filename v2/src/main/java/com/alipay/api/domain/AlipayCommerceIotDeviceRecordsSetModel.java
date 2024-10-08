@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * IoT设备档案管理
  *
  * @author auto create
- * @since 1.0, 2022-06-10 13:34:28
+ * @since 1.0, 2024-09-26 21:20:44
  */
 public class AlipayCommerceIotDeviceRecordsSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8592134746621113859L;
+	private static final long serialVersionUID = 3739984188555692251L;
 
 	/**
-	 * 极简绑定、三绑定、升级三绑定、可用绑定、解绑时必填，绑定查询时选填
+	 * 三绑定、升级三绑定、可用绑定、解绑时必填，绑定查询时选填
 	 */
 	@ApiListField("device_record_files")
 	@ApiField("device_record_file")
@@ -31,7 +31,6 @@ public class AlipayCommerceIotDeviceRecordsSetModel extends AlipayObject {
 
 	/**
 	 * 设备档案管理场景
-IOT_DEVICE_RECORDS_G1(极简绑定)
 IOT_DEVICE_RECORDS_G3_INDIRECT(间连三绑定)
 IOT_DEVICE_RECORDS_G3_DIRECT(直连三绑定)
 IOT_DEVICE_RECORDS_DELETE(解绑)
@@ -42,8 +41,7 @@ IOT_DEVICE_RECORDS_G2(可用绑定)
 	private String sceneCode;
 
 	/**
-	 * CREATE（极简绑定、间连三绑定、可用绑定、直连三绑定时传）
-UPDATE（极简绑定升级为间连三绑定时传）
+	 * CREATE（间连三绑定、可用绑定、直连三绑定时传）
 DEFAULT（解绑、绑定查询时传）
 G2TOG3_UPDATE（可用绑定升级为间联三绑定时传）
 	 */

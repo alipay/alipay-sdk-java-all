@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RepaymentParticipant extends AlipayObject {
 
-	private static final long serialVersionUID = 5617355985132572915L;
+	private static final long serialVersionUID = 8475962868724468943L;
 
 	/**
 	 * 零工卡专用金还款到卡银行卡扩展参数

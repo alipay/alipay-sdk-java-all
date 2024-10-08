@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudpromo.analysistraffic.overviewtrend.query request
  * 
  * @author auto create
- * @since 1.0, 2024-09-09 11:12:08
+ * @since 1.0, 2024-09-23 16:02:11
  */
 public class AlipayCloudCloudpromoAnalysistrafficOverviewtrendQueryRequest implements AlipayRequest<AlipayCloudCloudpromoAnalysistrafficOverviewtrendQueryResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 流式内容结构单元
  *
  * @author auto create
- * @since 1.0, 2024-09-04 19:59:53
+ * @since 1.0, 2024-09-24 13:28:19
  */
 public class ContentUnit extends AlipayObject {
 
-	private static final long serialVersionUID = 3418545242712726284L;
+	private static final long serialVersionUID = 6113162128525647713L;
 
 	/**
 	 * 单次推送的内容
@@ -20,8 +20,15 @@ public class ContentUnit extends AlipayObject {
 	private StreamContent content;
 
 	/**
+	 * 内容id
+	 */
+	@ApiField("content_id")
+	private String contentId;
+
+	/**
 	 * text-文本
 steam-流式
+template-卡片
 	 */
 	@ApiField("content_type")
 	private String contentType;
@@ -37,6 +44,13 @@ steam-流式
 	}
 	public void setContent(StreamContent content) {
 		this.content = content;
+	}
+
+	public String getContentId() {
+		return this.contentId;
+	}
+	public void setContentId(String contentId) {
+		this.contentId = contentId;
 	}
 
 	public String getContentType() {

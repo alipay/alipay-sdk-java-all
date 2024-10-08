@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 经营分析客户分析消费层级
  *
  * @author auto create
- * @since 1.0, 2024-08-05 09:49:54
+ * @since 1.0, 2024-09-20 17:34:36
  */
 public class AlipayCloudCloudpromoAnalysiscustomerConsumptionlevelQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5375657186499978789L;
+	private static final long serialVersionUID = 7624185564753351467L;
 
 	/**
 	 * 经营分析、经营概况模块公用入参

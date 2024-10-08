@@ -7,20 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 安心付账单费用信息
  *
  * @author auto create
- * @since 1.0, 2024-08-16 10:24:47
+ * @since 1.0, 2024-09-25 14:35:51
  */
 public class BillFeeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4427416884946973288L;
+	private static final long serialVersionUID = 7183634446864112975L;
 
 	/**
-	 * 抽佣金额，单位：分
+	 * 收费金额，单位：分
 	 */
 	@ApiField("commission_cash")
 	private Long commissionCash;
 
 	/**
-	 * 抽佣pid
+	 * 收费pid
 	 */
 	@ApiField("commission_pid")
 	private String commissionPid;
@@ -32,25 +32,31 @@ public class BillFeeInfo extends AlipayObject {
 	private String commissionPidName;
 
 	/**
-	 * 退佣金额，单位：分
+	 * 收费比例
+	 */
+	@ApiField("commission_rate")
+	private String commissionRate;
+
+	/**
+	 * 费用退款金额，单位：分
 	 */
 	@ApiField("commission_refund_cash")
 	private Long commissionRefundCash;
 
 	/**
-	 * 退佣时间
+	 * 费用退款时间
 	 */
 	@ApiField("commission_refund_time")
 	private String commissionRefundTime;
 
 	/**
-	 * 抽佣日期
+	 * 收费日期
 	 */
 	@ApiField("commission_time")
 	private String commissionTime;
 
 	/**
-	 * 抽佣类型
+	 * 收费类型
 	 */
 	@ApiField("commission_type")
 	private String commissionType;
@@ -74,6 +80,13 @@ public class BillFeeInfo extends AlipayObject {
 	}
 	public void setCommissionPidName(String commissionPidName) {
 		this.commissionPidName = commissionPidName;
+	}
+
+	public String getCommissionRate() {
+		return this.commissionRate;
+	}
+	public void setCommissionRate(String commissionRate) {
+		this.commissionRate = commissionRate;
 	}
 
 	public Long getCommissionRefundCash() {

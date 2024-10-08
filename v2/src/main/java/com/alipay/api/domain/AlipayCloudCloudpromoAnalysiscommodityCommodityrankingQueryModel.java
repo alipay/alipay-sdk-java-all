@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 经营分析商品分析商品的不同指标排行
  *
  * @author auto create
- * @since 1.0, 2024-08-05 09:50:01
+ * @since 1.0, 2024-09-20 17:34:28
  */
 public class AlipayCloudCloudpromoAnalysiscommodityCommodityrankingQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3554199826666727746L;
+	private static final long serialVersionUID = 7578992349215925285L;
 
 	/**
 	 * 品类ID，查询品类指标趋势数据的主要依据

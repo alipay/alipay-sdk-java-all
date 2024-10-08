@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudpromo.analysistraffic.pageeffectivelist.query request
  * 
  * @author auto create
- * @since 1.0, 2024-08-05 09:52:08
+ * @since 1.0, 2024-09-20 17:37:12
  */
 public class AlipayCloudCloudpromoAnalysistrafficPageeffectivelistQueryRequest implements AlipayRequest<AlipayCloudCloudpromoAnalysistrafficPageeffectivelistQueryResponse> {
 

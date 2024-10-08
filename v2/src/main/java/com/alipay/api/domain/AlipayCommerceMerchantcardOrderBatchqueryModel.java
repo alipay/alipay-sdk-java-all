@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订购单分页查询
  *
  * @author auto create
- * @since 1.0, 2024-09-13 14:30:53
+ * @since 1.0, 2024-09-27 10:58:16
  */
 public class AlipayCommerceMerchantcardOrderBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5236853155232951318L;
+	private static final long serialVersionUID = 7875169689945437895L;
 
 	/**
 	 * 卡名称
@@ -20,7 +20,7 @@ public class AlipayCommerceMerchantcardOrderBatchqueryModel extends AlipayObject
 	private String cardName;
 
 	/**
-	 * 售卖订单状态 ● 次卡/周期卡 ○ 订购中:init ○ 可使用:available ○ 已用完:used_up ○ 关闭中:closing ○ 已关闭:closed ○ 暂停:pause ● 金额卡 ○ 可使用:available ○ 已失效：invalid ○ 已支付：paid ○ 已退款：refund ○ 超时关闭：timeout_closed ○ 已用完:used_up
+	 * （1）TIMES_CARD / PERIOD_PAY / AXF_MERCHANT_PERIOD_PAY / AXF_MERCHANT_PERIOD_PAY_INDIRECT： init、available、used_up、closing、closed、pause （2）AXF_MONEY_CARD：available、invalid、paid、refund、timeout_closed、used_up （3）AXF_MONEY_TIME_CARD：wait_pay、paid、available、timeout_closed、used_up、invalid、invaliding
 	 */
 	@ApiField("card_status")
 	private String cardStatus;
@@ -32,7 +32,7 @@ public class AlipayCommerceMerchantcardOrderBatchqueryModel extends AlipayObject
 	private String cardTemplateId;
 
 	/**
-	 * 卡类型
+	 * 默认的订单类型范围：TIMES_CARD、PERIOD_PAY、AXF_MERCHANT_PERIOD_PAY、AXF_PERIOD_PAY_INDIRECT
 	 */
 	@ApiField("card_type")
 	private String cardType;

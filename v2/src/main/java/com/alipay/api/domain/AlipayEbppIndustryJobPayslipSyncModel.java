@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝就业工资条信息同步
  *
  * @author auto create
- * @since 1.0, 2024-09-12 17:44:51
+ * @since 1.0, 2024-09-20 15:07:18
  */
 public class AlipayEbppIndustryJobPayslipSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2778961648579325576L;
+	private static final long serialVersionUID = 1423336682195165732L;
 
 	/**
 	 * 发薪金额，单位：元

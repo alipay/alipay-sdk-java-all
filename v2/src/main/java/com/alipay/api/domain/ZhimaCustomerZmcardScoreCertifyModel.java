@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCustomerZmcardScoreCertifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7514735919428373247L;
+	private static final long serialVersionUID = 8237653922623337659L;
 
 	/**
 	 * 蚂蚁统一会员ID

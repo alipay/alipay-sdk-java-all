@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceYuntaskUnitedpidsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8328392616992438458L;
+	private static final long serialVersionUID = 7112716998336239582L;
 
 	/** 
 	 * 返回该unitedId关联的pid列表

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 银行转帐产品开通查询
  *
  * @author auto create
- * @since 1.0, 2024-09-06 16:55:23
+ * @since 1.0, 2024-09-26 19:29:17
  */
 public class AlipayTradeEpayprodProductQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7144962454331594854L;
+	private static final long serialVersionUID = 2576615875165439496L;
 
 	/**
 	 * 合作模式

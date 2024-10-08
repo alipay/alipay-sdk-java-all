@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗大模型服务对外接口_流式会话
  *
  * @author auto create
- * @since 1.0, 2024-09-04 17:18:00
+ * @since 1.0, 2024-09-24 13:28:19
  */
 public class AlipayCommerceMedicalLargermodelSseQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4151233722835371265L;
+	private static final long serialVersionUID = 3482366986213926999L;
 
 	/**
 	 * 流式会话最大存活时间(毫秒)
@@ -36,6 +36,12 @@ public class AlipayCommerceMedicalLargermodelSseQueryModel extends AlipayObject 
 	 */
 	@ApiField("city_name")
 	private String cityName;
+
+	/**
+	 * 扩展参数
+	 */
+	@ApiField("ext_params")
+	private String extParams;
 
 	/**
 	 * 纬度 无需携带单位符号
@@ -92,13 +98,13 @@ public class AlipayCommerceMedicalLargermodelSseQueryModel extends AlipayObject 
 	private String queryType;
 
 	/**
-	 * 区分当前对话场景意图 卫健委通用助理——WJWCOMASS
+	 * 区分当前对话场景意图 待分配后传入固定值
 	 */
 	@ApiField("scene_code")
 	private String sceneCode;
 
 	/**
-	 * 会话id 不能为空
+	 * 会话id
 	 */
 	@ApiField("session_id")
 	private String sessionId;
@@ -129,6 +135,13 @@ public class AlipayCommerceMedicalLargermodelSseQueryModel extends AlipayObject 
 	}
 	public void setCityName(String cityName) {
 		this.cityName = cityName;
+	}
+
+	public String getExtParams() {
+		return this.extParams;
+	}
+	public void setExtParams(String extParams) {
+		this.extParams = extParams;
 	}
 
 	public String getLatitude() {

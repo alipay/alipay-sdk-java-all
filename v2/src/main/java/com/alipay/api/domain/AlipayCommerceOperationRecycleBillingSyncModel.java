@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 回收阵地结算资金明细同步
  *
  * @author auto create
- * @since 1.0, 2024-08-22 19:09:41
+ * @since 1.0, 2024-09-26 17:19:19
  */
 public class AlipayCommerceOperationRecycleBillingSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7495133121551357793L;
+	private static final long serialVersionUID = 1768723297261669346L;
 
 	/**
 	 * 资金明细集合

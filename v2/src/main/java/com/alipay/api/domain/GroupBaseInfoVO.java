@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 群组基础信息。包含群组id、群组名称、群组管理员列表等信息。
  *
  * @author auto create
- * @since 1.0, 2024-05-15 16:49:56
+ * @since 1.0, 2024-09-30 21:05:18
  */
 public class GroupBaseInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8674541732112343631L;
+	private static final long serialVersionUID = 2363383597173992294L;
 
 	/**
 	 * 是否禁言，true：已经被禁言了，false：未被禁言。
@@ -59,6 +59,12 @@ public class GroupBaseInfoVO extends AlipayObject {
 	 */
 	@ApiField("group_name")
 	private String groupName;
+
+	/**
+	 * 修改是否对历史群组生效。true：修改对历史群组生效,false：修改对历史群组不生效。
+	 */
+	@ApiField("modify_history_group")
+	private Boolean modifyHistoryGroup;
 
 	/**
 	 * 小程序id。用于群头像展示。
@@ -119,6 +125,13 @@ public class GroupBaseInfoVO extends AlipayObject {
 	}
 	public void setGroupName(String groupName) {
 		this.groupName = groupName;
+	}
+
+	public Boolean getModifyHistoryGroup() {
+		return this.modifyHistoryGroup;
+	}
+	public void setModifyHistoryGroup(Boolean modifyHistoryGroup) {
+		this.modifyHistoryGroup = modifyHistoryGroup;
 	}
 
 	public String getRelatedAppId() {

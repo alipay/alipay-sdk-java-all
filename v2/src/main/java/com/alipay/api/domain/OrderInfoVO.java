@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单信息
  *
  * @author auto create
- * @since 1.0, 2024-08-29 15:36:40
+ * @since 1.0, 2024-09-25 15:05:53
  */
 public class OrderInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1166877316186856389L;
+	private static final long serialVersionUID = 5146891478192577145L;
 
 	/**
 	 * 订单取消时间
@@ -52,7 +52,7 @@ public class OrderInfoVO extends AlipayObject {
 	private Date finishTime;
 
 	/**
-	 * 是否医保订单
+	 * 1是自费订单，2是医保订单
 	 */
 	@ApiField("mi_type")
 	private Long miType;

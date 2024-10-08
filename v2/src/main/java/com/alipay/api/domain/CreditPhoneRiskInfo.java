@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CreditPhoneRiskInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1831346159561826712L;
+	private static final long serialVersionUID = 8743185876862914827L;
 
 	/**
 	 * 分公司

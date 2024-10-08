@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudpromo.analysiscommodity.commodityranking.query request
  * 
  * @author auto create
- * @since 1.0, 2024-08-05 15:07:06
+ * @since 1.0, 2024-09-20 17:37:11
  */
 public class AlipayCloudCloudpromoAnalysiscommodityCommodityrankingQueryRequest implements AlipayRequest<AlipayCloudCloudpromoAnalysiscommodityCommodityrankingQueryResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.common.usertaxbillsign.query request
  * 
  * @author auto create
- * @since 1.0, 2023-11-30 19:06:55
+ * @since 1.0, 2024-10-08 10:05:02
  */
 public class AlipayCommerceCommonUsertaxbillsignQueryRequest implements AlipayRequest<AlipayCommerceCommonUsertaxbillsignQueryResponse> {
 

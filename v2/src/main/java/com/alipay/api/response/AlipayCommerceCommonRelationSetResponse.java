@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.common.relation.set response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-05 11:26:57
+ * @since 1.0, 2024-10-08 10:02:55
  */
 public class AlipayCommerceCommonRelationSetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3393542546329757422L;
+	private static final long serialVersionUID = 1616752531866957187L;
 
 	/** 
 	 * 解绑/绑定操作结果

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁履约明细信息，包含阶段、期数、资金类型、实收金额、分账金额等信息
  *
  * @author auto create
- * @since 1.0, 2024-09-13 20:01:54
+ * @since 1.0, 2024-09-24 15:06:56
  */
 public class RentDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7866481992126437656L;
+	private static final long serialVersionUID = 7478653887689645898L;
 
 	/**
 	 * 租赁商实收金额，单位：元
@@ -50,6 +50,12 @@ public class RentDetail extends AlipayObject {
 	 */
 	@ApiField("period")
 	private Long period;
+
+	/**
+	 * 分账履约方式
+	 */
+	@ApiField("royalty_deliver_type")
+	private String royaltyDeliverType;
 
 	/**
 	 * 分账完成时间
@@ -127,6 +133,13 @@ public class RentDetail extends AlipayObject {
 	}
 	public void setPeriod(Long period) {
 		this.period = period;
+	}
+
+	public String getRoyaltyDeliverType() {
+		return this.royaltyDeliverType;
+	}
+	public void setRoyaltyDeliverType(String royaltyDeliverType) {
+		this.royaltyDeliverType = royaltyDeliverType;
 	}
 
 	public Date getRoyaltyTime() {

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝聊天群内群成员属性
  *
  * @author auto create
- * @since 1.0, 2024-03-11 13:56:52
+ * @since 1.0, 2024-09-24 16:30:43
  */
 public class GroupMemberDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5361763562425454593L;
+	private static final long serialVersionUID = 6265973968414349782L;
 
 	/**
 	 * 支付宝聊天群内昵称
@@ -34,17 +34,7 @@ public class GroupMemberDetail extends AlipayObject {
 	private String inviteOpenId;
 
 	/**
-	 * 入群方式。
-BY_TOKEN - 通过吱口令入群
-BY_INV - 通过被邀请或者被选择入群
-BY_COD - 通过扫码入群
-BY_FTF- 通过面对面入群
-BY_ADD - 外部添加来源
-BY_OPENAPI - 开放平台
-BY_SELF_ENTER -通过自主进群
-BY_BIZ_INVOKE - 通过业务系统调用进群
-BY_SHARE_INV - 通过分享的邀请链接进群
-BY_UNKNOW -未知来源
+	 * 入群方式
 	 */
 	@ApiField("join_scene")
 	private String joinScene;

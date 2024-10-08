@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 经营分析流量分析流量来源趋势
  *
  * @author auto create
- * @since 1.0, 2024-08-05 09:49:50
+ * @since 1.0, 2024-09-20 17:33:39
  */
 public class AlipayCloudCloudpromoAnalysistrafficSourcetrendQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8423494897745114963L;
+	private static final long serialVersionUID = 6733442273819593587L;
 
 	/**
 	 * 经营分析、经营概况模块公用入参

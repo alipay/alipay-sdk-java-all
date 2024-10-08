@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class SkuCalendarPriceListVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2289322738927158612L;
+	private static final long serialVersionUID = 5767781647372211882L;
 
 	/**
 	 * 日历价格对象列表，用于描述一段时间的价格

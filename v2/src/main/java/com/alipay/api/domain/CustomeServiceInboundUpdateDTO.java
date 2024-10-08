@@ -7,16 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 统一收单-阿云客服呼入更新模型
  *
  * @author auto create
- * @since 1.0, 2024-09-04 09:37:39
+ * @since 1.0, 2024-09-20 17:41:41
  */
 public class CustomeServiceInboundUpdateDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7234666694693343749L;
+	private static final long serialVersionUID = 8613594113857376217L;
 
 	/**
-	 * 事件时间
+	 * 废弃字段，文档不可见 当前字段已废弃(该字段已经被废弃，所有文档不可见)
 	 */
 	@ApiField("action_time")
+	@Deprecated
 	private String actionTime;
 
 	/**
@@ -38,10 +39,16 @@ public class CustomeServiceInboundUpdateDTO extends AlipayObject {
 	private String eventAction;
 
 	/**
-	 * 事件内容
+	 * 事件内容，所有的内容字段
 	 */
 	@ApiField("event_content")
 	private String eventContent;
+
+	/**
+	 * 事件时间
+	 */
+	@ApiField("event_time")
+	private String eventTime;
 
 	/**
 	 * 坐席id
@@ -112,6 +119,13 @@ public class CustomeServiceInboundUpdateDTO extends AlipayObject {
 	}
 	public void setEventContent(String eventContent) {
 		this.eventContent = eventContent;
+	}
+
+	public String getEventTime() {
+		return this.eventTime;
+	}
+	public void setEventTime(String eventTime) {
+		this.eventTime = eventTime;
 	}
 
 	public String getSeatId() {

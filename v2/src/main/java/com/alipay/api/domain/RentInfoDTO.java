@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租金信息
  *
  * @author auto create
- * @since 1.0, 2024-05-15 14:52:50
+ * @since 1.0, 2024-09-24 20:45:51
  */
 public class RentInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5417923472439793886L;
+	private static final long serialVersionUID = 2334859871375421352L;
 
 	/**
 	 * 续租总期数，1-12的整数，包含边界值
@@ -28,7 +28,7 @@ public class RentInfoDTO extends AlipayObject {
 	private String addonRealRentPrice;
 
 	/**
-	 * 买断价，单位元
+	 * 到期买断金，支持到期买断场景，回传到期买断金；单位：元，精确到小数点后两位；
 	 */
 	@ApiField("buyout_price")
 	private String buyoutPrice;

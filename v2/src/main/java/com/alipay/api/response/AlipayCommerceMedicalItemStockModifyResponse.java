@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.item.stock.modify response.
  * 
  * @author auto create
- * @since 1.0, 2024-09-16 15:12:09
+ * @since 1.0, 2024-09-29 18:02:11
  */
 public class AlipayCommerceMedicalItemStockModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4584529588377528268L;
+	private static final long serialVersionUID = 2729962656871683793L;
 
 	/** 
 	 * 该参数代表批量操作失败的列表，会具体返回失败的商品信息以及失败代码和失败原因。

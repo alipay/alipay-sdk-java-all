@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AnttechAiCvRsVectorQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8856436145851495569L;
+	private static final long serialVersionUID = 1395537335444256878L;
 
 	/** 
 	 * 碳汇地块信息

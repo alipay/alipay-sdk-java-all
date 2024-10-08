@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 链接消息模型
  *
  * @author auto create
- * @since 1.0, 2024-05-27 20:03:12
+ * @since 1.0, 2024-09-30 17:58:09
  */
 public class LinkMsgVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4666377816551424845L;
+	private static final long serialVersionUID = 3717635919698846333L;
 
 	/**
 	 * 消息描述

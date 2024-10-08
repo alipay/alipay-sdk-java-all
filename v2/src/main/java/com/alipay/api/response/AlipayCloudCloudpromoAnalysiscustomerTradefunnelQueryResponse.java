@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudpromo.analysiscustomer.tradefunnel.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-05 14:52:06
+ * @since 1.0, 2024-09-20 17:42:10
  */
 public class AlipayCloudCloudpromoAnalysiscustomerTradefunnelQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6672932892172254622L;
+	private static final long serialVersionUID = 7342514466829666371L;
 
 	/** 
 	 * {"rows":[{"tapp_trd_user_cnt_visit_rate_xox":-0.1846,"pv_xox_lastValue":165,"spu_cnt_xox":0.0671},{"pv":85,"isv_pid":"","spu_buyer_retention_1m_rate_xox_lastValue":null,"tapp_refund_cnt":40}]}

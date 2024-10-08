@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 图片消息模型
  *
  * @author auto create
- * @since 1.0, 2024-05-27 20:03:13
+ * @since 1.0, 2024-09-30 17:58:09
  */
 public class ImageMsgVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4119549451938973975L;
+	private static final long serialVersionUID = 8737115523899159316L;
 
 	/**
 	 * 图片高度，请必须传图片真实的高度，否则客户端会按照填的宽高进行剪裁

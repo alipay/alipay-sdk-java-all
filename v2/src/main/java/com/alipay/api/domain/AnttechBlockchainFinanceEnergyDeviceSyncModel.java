@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 可信价值中心实体运行时数据
  *
  * @author auto create
- * @since 1.0, 2024-09-02 21:57:14
+ * @since 1.0, 2024-09-26 11:18:54
  */
 public class AnttechBlockchainFinanceEnergyDeviceSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8354723353284467381L;
+	private static final long serialVersionUID = 1666283524257432884L;
 
 	/**
 	 * 交流充电桩实时数据数据列表。

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.imagedirectory.list.query request
  * 
  * @author auto create
- * @since 1.0, 2024-08-05 19:23:07
+ * @since 1.0, 2024-09-26 15:22:11
  */
 public class AlipayMarketingImagedirectoryListQueryRequest implements AlipayRequest<AlipayMarketingImagedirectoryListQueryResponse> {
 

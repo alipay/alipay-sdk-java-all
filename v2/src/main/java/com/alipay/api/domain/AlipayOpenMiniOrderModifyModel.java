@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租赁订单修改
  *
  * @author auto create
- * @since 1.0, 2024-09-06 16:01:53
+ * @since 1.0, 2024-09-24 20:45:52
  */
 public class AlipayOpenMiniOrderModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4884231496788974161L;
+	private static final long serialVersionUID = 5453681141416115269L;
 
 	/**
 	 * 分账条款
@@ -59,6 +59,12 @@ public class AlipayOpenMiniOrderModifyModel extends AlipayObject {
 	@ApiListField("stage_pay_plans")
 	@ApiField("stage_pay_plan_d_t_o")
 	private List<StagePayPlanDTO> stagePayPlans;
+
+	/**
+	 * 二级商户信息
+	 */
+	@ApiField("sub_merchant")
+	private SubMerchantModifyDTO subMerchant;
 
 	/**
 	 * 蚂蚁统一会员ID
@@ -113,6 +119,13 @@ public class AlipayOpenMiniOrderModifyModel extends AlipayObject {
 	}
 	public void setStagePayPlans(List<StagePayPlanDTO> stagePayPlans) {
 		this.stagePayPlans = stagePayPlans;
+	}
+
+	public SubMerchantModifyDTO getSubMerchant() {
+		return this.subMerchant;
+	}
+	public void setSubMerchant(SubMerchantModifyDTO subMerchant) {
+		this.subMerchant = subMerchant;
 	}
 
 	public String getUserId() {

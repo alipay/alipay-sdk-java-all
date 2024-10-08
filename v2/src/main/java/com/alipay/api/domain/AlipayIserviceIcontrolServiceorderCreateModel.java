@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建服务单
  *
  * @author auto create
- * @since 1.0, 2024-04-28 20:49:26
+ * @since 1.0, 2024-09-20 17:12:18
  */
 public class AlipayIserviceIcontrolServiceorderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5456196463459929674L;
+	private static final long serialVersionUID = 5219368437487677237L;
 
 	/**
 	 * 阿里云呼入任务创建模型
@@ -20,10 +20,22 @@ public class AlipayIserviceIcontrolServiceorderCreateModel extends AlipayObject 
 	private CustomeServiceInboundCreateDTO csiOrderData;
 
 	/**
+	 * 阿里云呼出任务创建模型
+	 */
+	@ApiField("cso_order_data")
+	private CustomeServiceOutboundCreateDTO csoOrderData;
+
+	/**
 	 * 是否调试模式
 	 */
 	@ApiField("dispatch_mode")
 	private Boolean dispatchMode;
+
+	/**
+	 * 首解数据
+	 */
+	@ApiField("first_sloved")
+	private FirstSloved firstSloved;
 
 	/**
 	 * 服务单的创建时间
@@ -42,6 +54,12 @@ public class AlipayIserviceIcontrolServiceorderCreateModel extends AlipayObject 
 	 */
 	@ApiField("origin_service_uniq_code")
 	private String originServiceUniqCode;
+
+	/**
+	 * 满意度评价
+	 */
+	@ApiField("satisfaction")
+	private Satisfaction satisfaction;
 
 	/**
 	 * 服务唯一码
@@ -80,11 +98,25 @@ public class AlipayIserviceIcontrolServiceorderCreateModel extends AlipayObject 
 		this.csiOrderData = csiOrderData;
 	}
 
+	public CustomeServiceOutboundCreateDTO getCsoOrderData() {
+		return this.csoOrderData;
+	}
+	public void setCsoOrderData(CustomeServiceOutboundCreateDTO csoOrderData) {
+		this.csoOrderData = csoOrderData;
+	}
+
 	public Boolean getDispatchMode() {
 		return this.dispatchMode;
 	}
 	public void setDispatchMode(Boolean dispatchMode) {
 		this.dispatchMode = dispatchMode;
+	}
+
+	public FirstSloved getFirstSloved() {
+		return this.firstSloved;
+	}
+	public void setFirstSloved(FirstSloved firstSloved) {
+		this.firstSloved = firstSloved;
 	}
 
 	public String getOrderTime() {
@@ -106,6 +138,13 @@ public class AlipayIserviceIcontrolServiceorderCreateModel extends AlipayObject 
 	}
 	public void setOriginServiceUniqCode(String originServiceUniqCode) {
 		this.originServiceUniqCode = originServiceUniqCode;
+	}
+
+	public Satisfaction getSatisfaction() {
+		return this.satisfaction;
+	}
+	public void setSatisfaction(Satisfaction satisfaction) {
+		this.satisfaction = satisfaction;
 	}
 
 	public String getServiceUniqCode() {

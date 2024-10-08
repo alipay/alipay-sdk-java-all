@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class NormalBusinessTimeRule extends AlipayObject {
 
-	private static final long serialVersionUID = 8734525962486232591L;
+	private static final long serialVersionUID = 8844889493435983718L;
 
 	/**
 	 * 指定月份,当为全年时，传入1,2,3,4,5,6,7,8,9,10,11,12

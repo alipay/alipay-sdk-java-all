@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiTradeTicketUserticketcodeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4474622813652386339L;
+	private static final long serialVersionUID = 7423195163447531479L;
 
 	/** 
 	 * 查询结果列表

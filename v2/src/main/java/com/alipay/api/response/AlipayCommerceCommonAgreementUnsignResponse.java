@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.common.agreement.unsign response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-21 16:36:53
+ * @since 1.0, 2024-10-08 10:01:14
  */
 public class AlipayCommerceCommonAgreementUnsignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3888649512918374965L;
+	private static final long serialVersionUID = 2324386972386131453L;
 
 	/** 
 	 * 已解约的支付宝签约id

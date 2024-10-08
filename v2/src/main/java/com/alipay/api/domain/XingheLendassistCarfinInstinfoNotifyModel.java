@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 信息回传接口
  *
  * @author auto create
- * @since 1.0, 2024-09-12 09:51:02
+ * @since 1.0, 2024-09-23 14:45:54
  */
 public class XingheLendassistCarfinInstinfoNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1498583672989465489L;
+	private static final long serialVersionUID = 1258743269133889332L;
 
 	/**
 	 * 星河侧唯一业务编号

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.green.item.upload response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-03 23:01:47
+ * @since 1.0, 2024-10-08 10:09:51
  */
 public class AlipayCommerceGreenItemUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7519446994448189785L;
+	private static final long serialVersionUID = 7597349658195129998L;
 
 	/** 
 	 * 失败的能量码操作日志

@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分账信息
  *
  * @author auto create
- * @since 1.0, 2024-05-13 14:22:15
+ * @since 1.0, 2024-09-24 20:45:52
  */
 public class RoyaltyDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2878615195692168828L;
+	private static final long serialVersionUID = 8854227478857823528L;
+
+	/**
+	 * 对应这一期买断分账金，不能超过当期买断金，单位：元，精确到小数点后两位；
+	 */
+	@ApiField("buy_out_price")
+	private String buyOutPrice;
 
 	/**
 	 * 租金分账期数，举例1、2、3.....
@@ -31,6 +37,13 @@ RENT(租金分账)、BUYOUT(买断分账)
 	 */
 	@ApiField("royalty_type")
 	private String royaltyType;
+
+	public String getBuyOutPrice() {
+		return this.buyOutPrice;
+	}
+	public void setBuyOutPrice(String buyOutPrice) {
+		this.buyOutPrice = buyOutPrice;
+	}
 
 	public Long getRoyaltyPeriod() {
 		return this.royaltyPeriod;

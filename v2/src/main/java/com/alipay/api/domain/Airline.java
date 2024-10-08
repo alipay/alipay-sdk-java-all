@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 航段信息
  *
  * @author auto create
- * @since 1.0, 2023-09-21 09:50:18
+ * @since 1.0, 2024-09-30 01:14:32
  */
 public class Airline extends AlipayObject {
 
-	private static final long serialVersionUID = 8693438663354341545L;
+	private static final long serialVersionUID = 3791191597895622153L;
 
 	/**
 	 * 票面航司二字码
@@ -27,6 +27,12 @@ public class Airline extends AlipayObject {
 	 */
 	@ApiField("ac_name")
 	private String acName;
+
+	/**
+	 * 航段的扩展信息（起飞、降落准点率等）
+	 */
+	@ApiField("airline_ext_info")
+	private AirlineExtInfo airlineExtInfo;
 
 	/**
 	 * 票面航班号
@@ -83,6 +89,13 @@ public class Airline extends AlipayObject {
 	}
 	public void setAcName(String acName) {
 		this.acName = acName;
+	}
+
+	public AirlineExtInfo getAirlineExtInfo() {
+		return this.airlineExtInfo;
+	}
+	public void setAirlineExtInfo(AirlineExtInfo airlineExtInfo) {
+		this.airlineExtInfo = airlineExtInfo;
 	}
 
 	public String getFlightNo() {

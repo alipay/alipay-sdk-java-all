@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.common.item.upload response.
  * 
  * @author auto create
- * @since 1.0, 2023-03-31 15:01:42
+ * @since 1.0, 2024-10-08 10:02:54
  */
 public class AlipayCommerceCommonItemUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3477353247637381816L;
+	private static final long serialVersionUID = 7592466313893874468L;
 
 	/** 
 	 * 商户侧商品id

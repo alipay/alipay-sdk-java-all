@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 经营分析商品分析品类交易详情
  *
  * @author auto create
- * @since 1.0, 2024-08-05 09:50:05
+ * @since 1.0, 2024-09-20 17:37:51
  */
 public class AlipayCloudCloudpromoAnalysiscommodityCategorytradedetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3211721333641431969L;
+	private static final long serialVersionUID = 2512355886549795473L;
 
 	/**
 	 * 品类名称, 在品类交易详情列表数据中对品类名称进行过滤和筛选

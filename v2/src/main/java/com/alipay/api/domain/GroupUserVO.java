@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 群用户信息openapi模型,用于编辑商家群群组的群主和群管理员信息
  *
  * @author auto create
- * @since 1.0, 2024-09-05 17:19:57
+ * @since 1.0, 2024-09-30 21:27:16
  */
 public class GroupUserVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4676333428938415886L;
+	private static final long serialVersionUID = 7841345437565468525L;
 
 	/**
 	 * 邀请者的user_id，2088开头的16位数字。
@@ -48,6 +51,13 @@ public class GroupUserVO extends AlipayObject {
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/**
+	 * 用户推广入群的渠道列表，可有多个渠道code，按列表顺序为：第一渠道、第二渠道依次存储
+	 */
+	@ApiListField("promote_channel_keys")
+	@ApiField("string")
+	private List<String> promoteChannelKeys;
 
 	/**
 	 * 邀请者uid对应的unionId
@@ -113,6 +123,13 @@ public class GroupUserVO extends AlipayObject {
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public List<String> getPromoteChannelKeys() {
+		return this.promoteChannelKeys;
+	}
+	public void setPromoteChannelKeys(List<String> promoteChannelKeys) {
+		this.promoteChannelKeys = promoteChannelKeys;
 	}
 
 	public String getUnionIdFromInviteId() {

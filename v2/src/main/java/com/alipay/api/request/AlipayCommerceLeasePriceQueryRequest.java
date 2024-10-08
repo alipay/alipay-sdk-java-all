@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.lease.price.query request
  * 
  * @author auto create
- * @since 1.0, 2023-08-24 22:06:43
+ * @since 1.0, 2024-10-08 10:09:51
  */
 public class AlipayCommerceLeasePriceQueryRequest implements AlipayRequest<AlipayCommerceLeasePriceQueryResponse> {
 

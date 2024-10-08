@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单详细数据
  *
  * @author auto create
- * @since 1.0, 2024-05-30 16:06:18
+ * @since 1.0, 2024-09-29 21:27:45
  */
 public class OrderDetailInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4178571786322675122L;
+	private static final long serialVersionUID = 7235898348223625875L;
 
 	/**
 	 * 拼团信息
@@ -52,6 +52,12 @@ public class OrderDetailInfoVO extends AlipayObject {
 	 */
 	@ApiField("promo_apply_info")
 	private PromoApplyInfoVO promoApplyInfo;
+
+	/**
+	 * 优惠信息，包含分期优惠
+	 */
+	@ApiField("promo_info")
+	private PromoInfoVO promoInfo;
 
 	public GroupBuyInfo getGroupBuyInfo() {
 		return this.groupBuyInfo;
@@ -93,6 +99,13 @@ public class OrderDetailInfoVO extends AlipayObject {
 	}
 	public void setPromoApplyInfo(PromoApplyInfoVO promoApplyInfo) {
 		this.promoApplyInfo = promoApplyInfo;
+	}
+
+	public PromoInfoVO getPromoInfo() {
+		return this.promoInfo;
+	}
+	public void setPromoInfo(PromoInfoVO promoInfo) {
+		this.promoInfo = promoInfo;
 	}
 
 }

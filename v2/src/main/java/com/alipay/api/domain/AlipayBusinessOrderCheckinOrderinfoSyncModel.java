@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayBusinessOrderCheckinOrderinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6331693768983393543L;
+	private static final long serialVersionUID = 3895961627611845185L;
 
 	/**
 	 * 酒店入住小程序

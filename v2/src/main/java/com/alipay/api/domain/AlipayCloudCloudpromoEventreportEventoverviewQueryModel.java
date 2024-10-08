@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 自助分析自定义事件报表事件概览
  *
  * @author auto create
- * @since 1.0, 2024-08-05 09:49:48
+ * @since 1.0, 2024-09-20 17:31:04
  */
 public class AlipayCloudCloudpromoEventreportEventoverviewQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6379187515422822236L;
+	private static final long serialVersionUID = 6564553529767975847L;
 
 	/**
 	 * 自定义事件报表的查询请求参数

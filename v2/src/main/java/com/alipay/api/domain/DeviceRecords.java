@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 设备档案数据
  *
  * @author auto create
- * @since 1.0, 2022-03-21 19:58:31
+ * @since 1.0, 2024-09-26 21:20:44
  */
 public class DeviceRecords extends AlipayObject {
 
-	private static final long serialVersionUID = 1585351537789158134L;
+	private static final long serialVersionUID = 8785937467596883367L;
 
 	/**
 	 * 设备唯一标识
@@ -23,7 +23,7 @@ public class DeviceRecords extends AlipayObject {
 	private String bizTid;
 
 	/**
-	 * 极简绑定：G1
+	 * 可用绑定：G2
 三绑定：G3
 	 */
 	@ApiField("device_grade")

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 交易组件业务单创建
  *
  * @author auto create
- * @since 1.0, 2024-09-01 22:13:15
+ * @since 1.0, 2024-09-25 10:28:20
  */
 public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5147297686454719554L;
+	private static final long serialVersionUID = 7775617184878446336L;
 
 	/**
 	 * 订单收货地址
@@ -136,6 +136,12 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 	 */
 	@ApiField("seller_id")
 	private String sellerId;
+
+	/**
+	 * 签约资商通直付通平台商分账产品后，下单时传入平台模式，smid必传；此模式下支持服务商派单模式
+	 */
+	@ApiField("service_provider_model")
+	private String serviceProviderModel;
 
 	/**
 	 * 门店信息
@@ -314,6 +320,13 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 	}
 	public void setSellerId(String sellerId) {
 		this.sellerId = sellerId;
+	}
+
+	public String getServiceProviderModel() {
+		return this.serviceProviderModel;
+	}
+	public void setServiceProviderModel(String serviceProviderModel) {
+		this.serviceProviderModel = serviceProviderModel;
 	}
 
 	public ShopInfoDTO getShopInfo() {

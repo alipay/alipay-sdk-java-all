@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.card.open.apply response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-10 16:31:41
+ * @since 1.0, 2024-09-27 11:07:12
  */
 public class AlipayMarketingCardOpenApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2164833433741219584L;
+	private static final long serialVersionUID = 5526688489261312177L;
 
 	/** 
 	 * 商户卡信息（包括支付宝分配的业务卡号）

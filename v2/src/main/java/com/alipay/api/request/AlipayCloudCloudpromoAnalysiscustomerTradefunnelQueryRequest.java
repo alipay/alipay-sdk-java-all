@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudpromo.analysiscustomer.tradefunnel.query request
  * 
  * @author auto create
- * @since 1.0, 2024-08-05 14:52:06
+ * @since 1.0, 2024-09-20 17:42:10
  */
 public class AlipayCloudCloudpromoAnalysiscustomerTradefunnelQueryRequest implements AlipayRequest<AlipayCloudCloudpromoAnalysiscustomerTradefunnelQueryResponse> {
 

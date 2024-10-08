@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 经营分析客户分析交易漏斗
  *
  * @author auto create
- * @since 1.0, 2024-08-05 09:49:53
+ * @since 1.0, 2024-09-20 17:38:51
  */
 public class AlipayCloudCloudpromoAnalysiscustomerTradefunnelQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8148598894612259699L;
+	private static final long serialVersionUID = 1188461328653282536L;
 
 	/**
 	 * 经营分析、经营概况模块公用入参

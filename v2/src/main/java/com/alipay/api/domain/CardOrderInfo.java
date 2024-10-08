@@ -11,17 +11,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 售卖订单信息
  *
  * @author auto create
- * @since 1.0, 2024-09-13 14:29:18
+ * @since 1.0, 2024-09-27 10:58:59
  */
 public class CardOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2587363762461932786L;
+	private static final long serialVersionUID = 3633577892255312488L;
 
 	/**
-	 * 金额卡余额面值，单位分
+	 * 售卖订单的余额面额，单位分
 	 */
 	@ApiField("available_amount")
 	private Long availableAmount;
+
+	/**
+	 * 安心付绑卡信息
+	 */
+	@ApiField("axf_card_bind_info")
+	private AxfCardBindInfo axfCardBindInfo;
 
 	/**
 	 * 用于区分订购单的取消类型
@@ -31,7 +37,6 @@ public class CardOrderInfo extends AlipayObject {
 
 	/**
 	 * 已解约金额，单位：分
-(金额卡无效)
 	 */
 	@ApiField("cancelled_cash")
 	private Long cancelledCash;
@@ -43,21 +48,7 @@ public class CardOrderInfo extends AlipayObject {
 	private String cardId;
 
 	/**
-	 * 售卖订单状态
-● 次卡/周期卡
-  ○ 订购中:init
-  ○ 可使用:available
-  ○ 已用完:used_up
-  ○ 关闭中:closing
-  ○ 已关闭:closed
-  ○ 暂停:pause
-● 金额卡
-  ○ 可使用:available
-  ○ 已失效：invalid
-  ○ 已支付：paid
-  ○ 已退款：refund
-  ○ 超时关闭：timeout_closed
-  ○ 已用完:used_up
+	 * （1）TIMES_CARD / PERIOD_PAY / AXF_MERCHANT_PERIOD_PAY / AXF_MERCHANT_PERIOD_PAY_INDIRECT： init、available、used_up、closing、closed、pause （2）AXF_MONEY_CARD：available、invalid、paid、refund、timeout_closed、used_up （3）AXF_MONEY_TIME_CARD：wait_pay、paid、available、timeout_closed、used_up、invalid、invaliding
 	 */
 	@ApiField("card_status")
 	private String cardStatus;
@@ -89,21 +80,18 @@ public class CardOrderInfo extends AlipayObject {
 
 	/**
 	 * 追回优惠金额，包含退款金额，单位：分
-（金额卡无效）
 	 */
 	@ApiField("discount_cash")
 	private Long discountCash;
 
 	/**
 	 * 计划追回优惠金额，单位：分
-（金额卡无效）
 	 */
 	@ApiField("discount_plan_cash")
 	private Long discountPlanCash;
 
 	/**
 	 * 追回金额--已退金额，单位：分
-（金额卡无效）
 	 */
 	@ApiField("discount_refund_cash")
 	private Long discountRefundCash;
@@ -127,7 +115,7 @@ public class CardOrderInfo extends AlipayObject {
 	private String merchantPid;
 
 	/**
-	 * 卡名称
+	 * 购卡时的卡名称
 	 */
 	@ApiField("name")
 	private String name;
@@ -145,20 +133,19 @@ public class CardOrderInfo extends AlipayObject {
 	private String orderId;
 
 	/**
-	 * 用户购买商品时的原价（面额），单位分
+	 * 用户购卡时的卡原价，单位分
 	 */
 	@ApiField("origin_price_total")
 	private Long originPriceTotal;
 
 	/**
-	 * 用于商户/服务商在插件商品详情页的自定义参数透传
+	 * 商户在跳转购卡页时的自定义外部单号
 	 */
 	@ApiField("out_order_no")
 	private String outOrderNo;
 
 	/**
 	 * 退款金额，单位：分
-(金额卡无效)
 	 */
 	@ApiField("refund_cash")
 	private Long refundCash;
@@ -170,13 +157,13 @@ public class CardOrderInfo extends AlipayObject {
 	private Long remainCount;
 
 	/**
-	 * 用户购买商品时的实际价格（售价），单位分
+	 * 用户购卡时的卡售价，单位分
 	 */
 	@ApiField("sale_price_total")
 	private Long salePriceTotal;
 
 	/**
-	 * 门店ID
+	 * 购卡时的门店ID
 	 */
 	@ApiField("shop_id")
 	private String shopId;
@@ -202,7 +189,6 @@ public class CardOrderInfo extends AlipayObject {
 
 	/**
 	 * 已核销金额，包含退款金额，单位：分
-(金额卡无效)
 	 */
 	@ApiField("used_cash")
 	private Long usedCash;
@@ -230,6 +216,13 @@ public class CardOrderInfo extends AlipayObject {
 	}
 	public void setAvailableAmount(Long availableAmount) {
 		this.availableAmount = availableAmount;
+	}
+
+	public AxfCardBindInfo getAxfCardBindInfo() {
+		return this.axfCardBindInfo;
+	}
+	public void setAxfCardBindInfo(AxfCardBindInfo axfCardBindInfo) {
+		this.axfCardBindInfo = axfCardBindInfo;
 	}
 
 	public String getCancelType() {

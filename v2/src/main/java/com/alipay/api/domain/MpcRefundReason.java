@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MpcRefundReason extends AlipayObject {
 
-	private static final long serialVersionUID = 5274645849625628966L;
+	private static final long serialVersionUID = 1473359464581426753L;
 
 	/**
 	 * 是否要求上传凭证

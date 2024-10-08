@@ -10,16 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 流式消息
  *
  * @author auto create
- * @since 1.0, 2024-09-04 19:59:53
+ * @since 1.0, 2024-09-24 13:28:19
  */
 public class StreamMessage extends AlipayObject {
 
-	private static final long serialVersionUID = 5334115448488269171L;
+	private static final long serialVersionUID = 4361257372812239617L;
 
 	/**
-	 * 对话请求发起侧自定义生成的对话标识Id
+	 * 对话请求发起侧自定义生成的对话标识Id 当前字段已废弃(已废弃 通过chatId进行替代)
 	 */
 	@ApiField("api_chat_id")
+	@Deprecated
 	private String apiChatId;
 
 	/**
@@ -42,6 +43,12 @@ public class StreamMessage extends AlipayObject {
 	private Long createTime;
 
 	/**
+	 * 识别到的意图编码
+	 */
+	@ApiField("intention")
+	private String intention;
+
+	/**
 	 * 单次消息id
 	 */
 	@ApiField("msg_id")
@@ -52,6 +59,12 @@ public class StreamMessage extends AlipayObject {
 	 */
 	@ApiField("org_id")
 	private String orgId;
+
+	/**
+	 * 标识流式当前流式对话状态
+	 */
+	@ApiField("reply_cmd")
+	private String replyCmd;
 
 	/**
 	 * 会话id
@@ -93,6 +106,13 @@ public class StreamMessage extends AlipayObject {
 		this.createTime = createTime;
 	}
 
+	public String getIntention() {
+		return this.intention;
+	}
+	public void setIntention(String intention) {
+		this.intention = intention;
+	}
+
 	public String getMsgId() {
 		return this.msgId;
 	}
@@ -105,6 +125,13 @@ public class StreamMessage extends AlipayObject {
 	}
 	public void setOrgId(String orgId) {
 		this.orgId = orgId;
+	}
+
+	public String getReplyCmd() {
+		return this.replyCmd;
+	}
+	public void setReplyCmd(String replyCmd) {
+		this.replyCmd = replyCmd;
 	}
 
 	public String getSessionId() {

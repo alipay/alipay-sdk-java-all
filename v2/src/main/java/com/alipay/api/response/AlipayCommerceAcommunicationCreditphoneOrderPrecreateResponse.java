@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.acommunication.creditphone.order.precreate response.
  * 
  * @author auto create
- * @since 1.0, 2024-09-12 13:35:18
+ * @since 1.0, 2024-09-24 09:24:12
  */
 public class AlipayCommerceAcommunicationCreditphoneOrderPrecreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5761925529796771185L;
+	private static final long serialVersionUID = 3183335857933529634L;
 
 	/** 
 	 * 支付宝订单号
@@ -37,6 +37,12 @@ public class AlipayCommerceAcommunicationCreditphoneOrderPrecreateResponse exten
 	 */
 	@ApiField("page_order_no")
 	private String pageOrderNo;
+
+	/** 
+	 * 新增字段，签约使用的链接
+	 */
+	@ApiField("sign_page_url")
+	private String signPageUrl;
 
 	public void setAlipayOrderNo(String alipayOrderNo) {
 		this.alipayOrderNo = alipayOrderNo;
@@ -64,6 +70,13 @@ public class AlipayCommerceAcommunicationCreditphoneOrderPrecreateResponse exten
 	}
 	public String getPageOrderNo( ) {
 		return this.pageOrderNo;
+	}
+
+	public void setSignPageUrl(String signPageUrl) {
+		this.signPageUrl = signPageUrl;
+	}
+	public String getSignPageUrl( ) {
+		return this.signPageUrl;
 	}
 
 }
