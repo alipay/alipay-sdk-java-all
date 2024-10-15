@@ -5,7 +5,7 @@ info:
     url: https://openhome.alipay.com/developmentDocument.htm
   description: 支付宝开放平台v3协议文档
   title: 支付宝开放平台API
-  version: 2024-10-08
+  version: 2024-10-15
 servers:
 - description: Production server
   url: https://openapi.alipay.com
@@ -43168,6 +43168,12 @@ components:
           description: 查询到的订单状态为FAIL失败或REFUND退票时，返回具体的原因。
           example: 收款方银行卡信息有误
           type: string
+        inflow_settle_serial_no:
+          description: 金融机构发起签约类、支付类、差错类业务时，应为每笔业务分配唯一的交易流水号。31位交易流水号组成规则为：“8位日期”+“16位序列号”+“1位预留位”+“6位控制位”，其中：
+            a）“8位日期”为系统当前日期，ISODate格式：“YYYYMMDD” b）“16位序列号”由金融机构生成，金融机构应确保该值在网联当日唯一
+            c）“1位预留位”由平台分配 d）“6位控制位”由金融机构通过平台获取 例如：2023052993044491260542090100400
+          example: "2023052993044491260542090100400"
+          type: string
         order_fee:
           description: 预计收费金额（元），转账到银行卡专用，数字格式，精确到小数点后2位，转账失败或转账受理失败不返回。
           example: "0.02"
@@ -55684,6 +55690,12 @@ components:
           items:
             type: string
           type: array
+        registration_limit_release:
+          description: "false：非受限发布；true：受限发布。\t受限发布：是为了能让首次发版的小程序在备案未完成的情况下，进行上架的\
+            一种折中的操作方式，小程序可以上架可扫码进行使用，但不可被搜索、限制访问人数（50人/每天）、限制公域（无法进行商品、服务、营促销）、限制上\
+            架后90天不完成备案自动下架。"
+          example: true
+          type: boolean
         safe_domains:
           description: 域白名单
           example: "[\"example.com\"]"
@@ -70055,6 +70067,11 @@ components:
           description: 买家用户类型。CORPORATE:企业用户；PRIVATE:个人用户。
           example: PRIVATE
           type: string
+        cashier_type:
+          description: "收银台类型。 \t用户支付的收银台类型，取值如下： \tAPP：支付宝APP收银台支付； \tWAP：支付H5收银台\
+            支付； \t注：只有在无线产品支付接口请求中query_options指定cashier_type才返回该字段。"
+          example: APP
+          type: string
         charge_amount:
           description: "该笔交易针对收款方的收费金额；单位：元。\t 只在银行间联交易场景下返回该信息；"
           example: "8.88"
@@ -70223,6 +70240,8 @@ components:
           description: "订单标题；\t 只在银行间联交易场景下返回该信息；"
           example: Iphone6 16G
           type: string
+        tap_pay_info:
+          $ref: '#/components/schemas/TapPayInfo'
         terminal_id:
           description: 商户机具终端编号
           example: NJ_T_001
@@ -86304,6 +86323,10 @@ components:
           description: 留资属性名称
           example: 订单号
           type: string
+        type:
+          description: 自建站留资字段类型
+          example: phone
+          type: string
       type: object
     PromotePagePropertyInstance:
       properties:
@@ -86314,6 +86337,10 @@ components:
         name:
           description: 留资属性名称
           example: 订单号
+          type: string
+        type:
+          description: 自建站留资字段的类型
+          example: phone
           type: string
         value:
           description: 留资属性实例值
@@ -89698,6 +89725,13 @@ components:
       properties:
         delivery_config:
           $ref: '#/components/schemas/DeliveryConfig'
+      type: object
+    TapPayInfo:
+      properties:
+        payment_medium_type:
+          description: 碰一下支付的支付介质类型，标识当前支付为碰一下支付
+          example: TAP_PAY
+          type: string
       type: object
     TargetInfo:
       properties:
