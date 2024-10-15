@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 银行间连商户入驻
  *
  * @author auto create
- * @since 1.0, 2023-11-20 13:58:15
+ * @since 1.0, 2024-10-11 11:29:00
  */
 public class AntMerchantExpandIndirectCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7763399622117992811L;
+	private static final long serialVersionUID = 8386385361311319779L;
 
 	/**
 	 * 商户地址信息

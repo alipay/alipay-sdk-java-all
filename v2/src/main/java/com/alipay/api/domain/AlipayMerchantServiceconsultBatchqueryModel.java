@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMerchantServiceconsultBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1635134888755519719L;
+	private static final long serialVersionUID = 5319924549815328917L;
 
 	/**
 	 * 查询开始时间 时间格式：yyyy-MM-dd HH:mm:ss 若不填写，则默认当前时间30天前。 注意：begin_time和end_time时间跨度最大一年

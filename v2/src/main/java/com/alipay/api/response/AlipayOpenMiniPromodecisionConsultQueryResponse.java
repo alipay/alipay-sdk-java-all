@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.promodecision.consult.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-03 14:37:04
+ * @since 1.0, 2024-10-08 17:48:26
  */
 public class AlipayOpenMiniPromodecisionConsultQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4285874592738235267L;
+	private static final long serialVersionUID = 1163668686571822564L;
 
 	/** 
 	 * 商详优惠信息

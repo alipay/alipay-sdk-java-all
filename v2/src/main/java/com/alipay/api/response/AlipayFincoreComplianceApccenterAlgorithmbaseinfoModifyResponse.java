@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fincore.compliance.apccenter.algorithmbaseinfo.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 01:42:11
+ * @since 1.0, 2024-10-09 10:32:49
  */
 public class AlipayFincoreComplianceApccenterAlgorithmbaseinfoModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7393587934437964169L;
+	private static final long serialVersionUID = 4541199621965389821L;
 
 	/** 
 	 * 平台算法唯一编码

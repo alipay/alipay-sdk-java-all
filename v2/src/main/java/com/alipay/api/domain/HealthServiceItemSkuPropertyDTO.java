@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HealthServiceItemSkuPropertyDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2434161683491462275L;
+	private static final long serialVersionUID = 1613451697681369595L;
 
 	/**
 	 * SKU属性Key展示值

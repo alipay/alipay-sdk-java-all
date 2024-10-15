@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 供应链生产指令反馈
  *
  * @author auto create
- * @since 1.0, 2024-05-08 10:55:20
+ * @since 1.0, 2024-10-11 13:48:09
  */
 public class AntProdpaasProductProduceCompleteCallbackModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2537183799795849894L;
+	private static final long serialVersionUID = 4595961943145774297L;
 
 	/**
 	 * 是否异常反馈，如果该字段为 Y , 则其余必填字段可不填.如果供应商由于客关原因，认为该任务无法正常完成, 则可以通过完成反馈接口异常完结。

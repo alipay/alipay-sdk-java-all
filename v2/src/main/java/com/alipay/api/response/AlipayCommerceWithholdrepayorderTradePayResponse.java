@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.withholdrepayorder.trade.pay response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-08 09:49:41
+ * @since 1.0, 2024-10-11 15:42:12
  */
 public class AlipayCommerceWithholdrepayorderTradePayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4531269952967198859L;
+	private static final long serialVersionUID = 4642632118187982649L;
 
 	/** 
 	 * 先享后付2.0垫资金额,不返回表示没有走垫资，非空表示垫资支付的金额

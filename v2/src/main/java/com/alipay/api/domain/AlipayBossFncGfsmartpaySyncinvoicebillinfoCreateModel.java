@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayBossFncGfsmartpaySyncinvoicebillinfoCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6511485956677234887L;
+	private static final long serialVersionUID = 2631761832868522481L;
 
 	/**
 	 * 核销单DTO

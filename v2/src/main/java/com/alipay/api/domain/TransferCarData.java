@@ -11,17 +11,29 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 二手车车辆数据
  *
  * @author auto create
- * @since 1.0, 2024-08-23 13:42:30
+ * @since 1.0, 2024-10-10 14:13:25
  */
 public class TransferCarData extends AlipayObject {
 
-	private static final long serialVersionUID = 3374831777883145428L;
+	private static final long serialVersionUID = 4673235544358949988L;
 
 	/**
 	 * acid值，车生活的 acid 值，需要传递车生活 acid
 	 */
 	@ApiField("acid")
 	private String acid;
+
+	/**
+	 * 活动结束时间
+	 */
+	@ApiField("activity_end_date")
+	private Date activityEndDate;
+
+	/**
+	 * 活动开始时间
+	 */
+	@ApiField("activity_start_date")
+	private Date activityStartDate;
 
 	/**
 	 * 电池状态, 1 原车买断 2 租用(BaaS) , 默认：0
@@ -225,11 +237,35 @@ public class TransferCarData extends AlipayObject {
 	@ApiField("transmission_type")
 	private String transmissionType;
 
+	/**
+	 * 商户车辆展示状态 
+0 下线态 
+1 上线态/待活动态度
+2 活动中 
+3 活动结束
+	 */
+	@ApiField("vehicle_display_status")
+	private Long vehicleDisplayStatus;
+
 	public String getAcid() {
 		return this.acid;
 	}
 	public void setAcid(String acid) {
 		this.acid = acid;
+	}
+
+	public Date getActivityEndDate() {
+		return this.activityEndDate;
+	}
+	public void setActivityEndDate(Date activityEndDate) {
+		this.activityEndDate = activityEndDate;
+	}
+
+	public Date getActivityStartDate() {
+		return this.activityStartDate;
+	}
+	public void setActivityStartDate(Date activityStartDate) {
+		this.activityStartDate = activityStartDate;
 	}
 
 	public Long getAttrCarSourceBatteryOwnerType() {
@@ -461,6 +497,13 @@ public class TransferCarData extends AlipayObject {
 	}
 	public void setTransmissionType(String transmissionType) {
 		this.transmissionType = transmissionType;
+	}
+
+	public Long getVehicleDisplayStatus() {
+		return this.vehicleDisplayStatus;
+	}
+	public void setVehicleDisplayStatus(Long vehicleDisplayStatus) {
+		this.vehicleDisplayStatus = vehicleDisplayStatus;
 	}
 
 }

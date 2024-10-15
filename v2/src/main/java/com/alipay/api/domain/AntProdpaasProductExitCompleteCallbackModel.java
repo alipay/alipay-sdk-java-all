@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 供应链调出指令反馈
  *
  * @author auto create
- * @since 1.0, 2024-03-12 09:32:31
+ * @since 1.0, 2024-10-11 13:49:57
  */
 public class AntProdpaasProductExitCompleteCallbackModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6841458238668212296L;
+	private static final long serialVersionUID = 3322673968812386845L;
 
 	/**
 	 * 实发商品数量

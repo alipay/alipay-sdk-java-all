@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class DanmuGameData extends AlipayObject {
 
-	private static final long serialVersionUID = 5894374673171769125L;
+	private static final long serialVersionUID = 3443745492295992846L;
 
 	/**
 	 * 评论内容

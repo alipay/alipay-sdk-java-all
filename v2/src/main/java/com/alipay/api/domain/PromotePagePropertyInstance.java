@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 留资属性实例信息列表
  *
  * @author auto create
- * @since 1.0, 2024-07-02 17:41:40
+ * @since 1.0, 2024-10-12 10:17:16
  */
 public class PromotePagePropertyInstance extends AlipayObject {
 
-	private static final long serialVersionUID = 8664271598566225855L;
+	private static final long serialVersionUID = 3723743911395967535L;
 
 	/**
 	 * 留资属性key
@@ -24,6 +24,12 @@ public class PromotePagePropertyInstance extends AlipayObject {
 	 */
 	@ApiField("name")
 	private String name;
+
+	/**
+	 * 自建站留资字段的类型
+	 */
+	@ApiField("type")
+	private String type;
 
 	/**
 	 * 留资属性实例值
@@ -43,6 +49,13 @@ public class PromotePagePropertyInstance extends AlipayObject {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getType() {
+		return this.type;
+	}
+	public void setType(String type) {
+		this.type = type;
 	}
 
 	public String getValue() {

@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.baseinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-09-24 16:50:28
+ * @since 1.0, 2024-10-15 14:02:14
  */
 public class AlipayOpenMiniBaseinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8683672755743725636L;
+	private static final long serialVersionUID = 6558655835191229716L;
 
 	/** 
 	 * 小程序应用描述
@@ -58,6 +58,13 @@ public class AlipayOpenMiniBaseinfoQueryResponse extends AlipayResponse {
 	@ApiListField("package_names")
 	@ApiField("string")
 	private List<String> packageNames;
+
+	/** 
+	 * false：非受限发布；true：受限发布。
+受限发布：是为了能让首次发版的小程序在备案未完成的情况下，进行上架的一种折中的操作方式，小程序可以上架可扫码进行使用，但不可被搜索、限制访问人数（50人/每天）、限制公域（无法进行商品、服务、营促销）、限制上架后90天不完成备案自动下架。
+	 */
+	@ApiField("registration_limit_release")
+	private Boolean registrationLimitRelease;
 
 	/** 
 	 * 域白名单
@@ -125,6 +132,13 @@ public class AlipayOpenMiniBaseinfoQueryResponse extends AlipayResponse {
 	}
 	public List<String> getPackageNames( ) {
 		return this.packageNames;
+	}
+
+	public void setRegistrationLimitRelease(Boolean registrationLimitRelease) {
+		this.registrationLimitRelease = registrationLimitRelease;
+	}
+	public Boolean getRegistrationLimitRelease( ) {
+		return this.registrationLimitRelease;
 	}
 
 	public void setSafeDomains(List<String> safeDomains) {

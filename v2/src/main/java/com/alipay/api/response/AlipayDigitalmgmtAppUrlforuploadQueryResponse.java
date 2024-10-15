@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.digitalmgmt.app.urlforupload.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 00:31:43
+ * @since 1.0, 2024-10-09 10:36:10
  */
 public class AlipayDigitalmgmtAppUrlforuploadQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3286245577935449725L;
+	private static final long serialVersionUID = 8341291675835336811L;
 
 	/** 
 	 * 无

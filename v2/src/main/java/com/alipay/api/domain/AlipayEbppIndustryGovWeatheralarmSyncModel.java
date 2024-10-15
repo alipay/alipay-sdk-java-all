@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 天气预警同步
  *
  * @author auto create
- * @since 1.0, 2024-09-19 16:16:14
+ * @since 1.0, 2024-10-15 09:43:50
  */
 public class AlipayEbppIndustryGovWeatheralarmSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5298422532546483766L;
+	private static final long serialVersionUID = 1155423719696179983L;
 
 	/**
 	 * 天气预警详情信息

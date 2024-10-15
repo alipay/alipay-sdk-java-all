@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户自主监控日志数据上报接口
  *
  * @author auto create
- * @since 1.0, 2021-10-22 16:27:49
+ * @since 1.0, 2024-10-15 13:40:56
  */
 public class AlipayCommerceDataLogdataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8441959854144157325L;
+	private static final long serialVersionUID = 2264748111457653292L;
 
 	/**
 	 * 商户自定义监控原始日志数据

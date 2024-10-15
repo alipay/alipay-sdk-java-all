@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询签约申请单状态
  *
  * @author auto create
- * @since 1.0, 2024-08-28 10:58:09
+ * @since 1.0, 2024-10-14 14:09:17
  */
 public class AlipayOpenInviteOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2576362836785541866L;
+	private static final long serialVersionUID = 6329314927737174731L;
 
 	/**
 	 * 商家的支付宝账号，如果调用alipay.open.invite.order.create接口时有传入支付宝账号，则这里查询签约状态时必须要传

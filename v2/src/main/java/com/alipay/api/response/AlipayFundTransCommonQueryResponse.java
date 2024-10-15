@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.common.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-09-29 15:51:25
+ * @since 1.0, 2024-10-12 17:02:14
  */
 public class AlipayFundTransCommonQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4343292337595995592L;
+	private static final long serialVersionUID = 6118614345838453262L;
 
 	/** 
 	 * 预计到账时间，转账到银行卡专用，格式为yyyy-MM-dd HH:mm:ss，转账受理失败不返回。
@@ -39,6 +39,12 @@ public class AlipayFundTransCommonQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("fail_reason")
 	private String failReason;
+
+	/** 
+	 * 金融机构发起签约类、支付类、差错类业务时，应为每笔业务分配唯一的交易流水号。31位交易流水号组成规则为：“8位日期”+“16位序列号”+“1位预留位”+“6位控制位”，其中： a）“8位日期”为系统当前日期，ISODate格式：“YYYYMMDD” b）“16位序列号”由金融机构生成，金融机构应确保该值在网联当日唯一 c）“1位预留位”由平台分配 d）“6位控制位”由金融机构通过平台获取 例如：2023052993044491260542090100400
+	 */
+	@ApiField("inflow_settle_serial_no")
+	private String inflowSettleSerialNo;
 
 	/** 
 	 * 预计收费金额（元），转账到银行卡专用，数字格式，精确到小数点后2位，转账失败或转账受理失败不返回。
@@ -149,6 +155,13 @@ d）“6位控制位”由金融机构通过平台获取
 	}
 	public String getFailReason( ) {
 		return this.failReason;
+	}
+
+	public void setInflowSettleSerialNo(String inflowSettleSerialNo) {
+		this.inflowSettleSerialNo = inflowSettleSerialNo;
+	}
+	public String getInflowSettleSerialNo( ) {
+		return this.inflowSettleSerialNo;
 	}
 
 	public void setOrderFee(String orderFee) {

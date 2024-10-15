@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 周期卡订单操作接口
  *
  * @author auto create
- * @since 1.0, 2024-08-28 16:01:53
+ * @since 1.0, 2024-10-12 19:28:15
  */
 public class AlipayCommerceMerchantcardOrderSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6235625276164399241L;
+	private static final long serialVersionUID = 2551111355824465839L;
 
 	/**
 	 * 取消期数列表

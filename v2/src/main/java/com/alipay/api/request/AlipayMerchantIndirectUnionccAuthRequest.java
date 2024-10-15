@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.indirect.unioncc.auth request
  * 
  * @author auto create
- * @since 1.0, 2024-05-15 15:07:01
+ * @since 1.0, 2024-10-11 11:29:14
  */
 public class AlipayMerchantIndirectUnionccAuthRequest implements AlipayRequest<AlipayMerchantIndirectUnionccAuthResponse> {
 

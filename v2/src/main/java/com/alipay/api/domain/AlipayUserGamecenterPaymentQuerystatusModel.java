@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 充值状态查询
  *
  * @author auto create
- * @since 1.0, 2023-06-07 17:09:22
+ * @since 1.0, 2024-10-12 16:57:17
  */
 public class AlipayUserGamecenterPaymentQuerystatusModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8771969951526193745L;
+	private static final long serialVersionUID = 1114123913618677387L;
 
 	/**
 	 * 开发者自定义订单号，在下单的时候传入的customId

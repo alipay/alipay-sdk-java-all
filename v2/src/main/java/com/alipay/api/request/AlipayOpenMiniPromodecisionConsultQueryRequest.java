@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.promodecision.consult.query request
  * 
  * @author auto create
- * @since 1.0, 2024-07-03 14:37:04
+ * @since 1.0, 2024-10-08 17:48:26
  */
 public class AlipayOpenMiniPromodecisionConsultQueryRequest implements AlipayRequest<AlipayOpenMiniPromodecisionConsultQueryResponse> {
 

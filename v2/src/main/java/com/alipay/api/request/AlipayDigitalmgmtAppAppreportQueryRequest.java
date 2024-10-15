@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.digitalmgmt.app.appreport.query request
  * 
  * @author auto create
- * @since 1.0, 2023-08-11 17:51:40
+ * @since 1.0, 2024-10-09 10:35:42
  */
 public class AlipayDigitalmgmtAppAppreportQueryRequest implements AlipayRequest<AlipayDigitalmgmtAppAppreportQueryResponse> {
 

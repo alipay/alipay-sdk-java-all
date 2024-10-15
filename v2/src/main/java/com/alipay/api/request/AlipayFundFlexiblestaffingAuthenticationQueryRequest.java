@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.flexiblestaffing.authentication.query request
  * 
  * @author auto create
- * @since 1.0, 2023-07-17 16:07:01
+ * @since 1.0, 2024-10-09 10:59:30
  */
 public class AlipayFundFlexiblestaffingAuthenticationQueryRequest implements AlipayRequest<AlipayFundFlexiblestaffingAuthenticationQueryResponse> {
 

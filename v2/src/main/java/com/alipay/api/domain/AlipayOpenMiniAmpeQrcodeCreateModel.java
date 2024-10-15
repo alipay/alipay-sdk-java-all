@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniAmpeQrcodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8449944316793247589L;
+	private static final long serialVersionUID = 3741733753181732515L;
 
 	/**
 	 * 业务场景

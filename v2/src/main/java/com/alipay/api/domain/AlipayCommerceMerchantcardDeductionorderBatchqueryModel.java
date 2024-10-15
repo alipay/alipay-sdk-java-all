@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 扣款单分页查询
  *
  * @author auto create
- * @since 1.0, 2024-08-16 10:24:48
+ * @since 1.0, 2024-10-12 19:28:19
  */
 public class AlipayCommerceMerchantcardDeductionorderBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4754348923767488273L;
+	private static final long serialVersionUID = 1896519799166116528L;
 
 	/**
 	 * 售卖订单id
 	 */
 	@ApiField("card_id")
 	private String cardId;
+
+	/**
+	 * 默认的订单类型范围：TIMES_CARD、PERIOD_PAY、AXF_MERCHANT_PERIOD_PAY、AXF_PERIOD_PAY_INDIRECT
+	 */
+	@ApiField("card_type")
+	private String cardType;
 
 	/**
 	 * 核销订单结束时间
@@ -32,7 +38,7 @@ public class AlipayCommerceMerchantcardDeductionorderBatchqueryModel extends Ali
 	private String deductionStartDate;
 
 	/**
-	 * 核销订单状态
+	 * （1）TIMES_CARD / PERIOD_PAY / AXF_MERCHANT_PERIOD_PAY / AXF_MERCHANT_PERIOD_PAY_INDIRECT：UNPAID、PAYMENT_SUCCESS、PAYMENT_FAILED、REFUND （2）AXF_MONEY_TIME_CARD：INIT、FROZEN、CANCELLED、REDEEMING、PAYMENT_FAILED、PAYMENT_SUCCESS、REFUND、PART_REFUND
 	 */
 	@ApiField("deduction_status")
 	private String deductionStatus;
@@ -84,6 +90,13 @@ public class AlipayCommerceMerchantcardDeductionorderBatchqueryModel extends Ali
 	}
 	public void setCardId(String cardId) {
 		this.cardId = cardId;
+	}
+
+	public String getCardType() {
+		return this.cardType;
+	}
+	public void setCardType(String cardType) {
+		this.cardType = cardType;
 	}
 
 	public String getDeductionEndDate() {

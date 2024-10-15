@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppIndustryOnecodepassOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8445371275931123794L;
+	private static final long serialVersionUID = 4141647793437284614L;
 
 	/**
 	 * 机构编码，接入时由支付宝小二分配。

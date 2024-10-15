@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 芝麻商业信用履约计划修改
  *
  * @author auto create
- * @since 1.0, 2024-05-22 14:38:47
+ * @since 1.0, 2024-10-08 15:08:03
  */
 public class ZhimaCreditBusinessPlanModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7396447545471492588L;
+	private static final long serialVersionUID = 6821472227628255454L;
 
 	/**
 	 * 【免押】支付宝授权资金订单号。 与商户的授权资金订单号不能同时为空，二者都传入时，以支付宝资金授权订单号为准，该参数与支付宝授权资金操作流水号配对使用。

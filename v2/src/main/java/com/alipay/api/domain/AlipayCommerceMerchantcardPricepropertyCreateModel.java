@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 设置卡自定义价格
  *
  * @author auto create
- * @since 1.0, 2024-08-12 11:29:19
+ * @since 1.0, 2024-10-12 19:28:16
  */
 public class AlipayCommerceMerchantcardPricepropertyCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6812639298295524262L;
+	private static final long serialVersionUID = 2549825427133925285L;
 
 	/**
 	 * 卡ID
@@ -23,11 +23,35 @@ public class AlipayCommerceMerchantcardPricepropertyCreateModel extends AlipayOb
 	private String cardTemplateId;
 
 	/**
+	 * 卡名称
+	 */
+	@ApiField("card_template_name")
+	private String cardTemplateName;
+
+	/**
+	 * 卡类型，当不传card_template_id且传入card_type时，会取商户的默认卡ID
+	 */
+	@ApiField("card_type")
+	private String cardType;
+
+	/**
+	 * 原价，单位：分
+	 */
+	@ApiField("original_price")
+	private Long originalPrice;
+
+	/**
 	 * 每期价格
 	 */
 	@ApiListField("period_price_list")
 	@ApiField("card_period_price")
 	private List<CardPeriodPrice> periodPriceList;
+
+	/**
+	 * 售卖价格，单位：分
+	 */
+	@ApiField("sale_price")
+	private Long salePrice;
 
 	public String getCardTemplateId() {
 		return this.cardTemplateId;
@@ -36,11 +60,39 @@ public class AlipayCommerceMerchantcardPricepropertyCreateModel extends AlipayOb
 		this.cardTemplateId = cardTemplateId;
 	}
 
+	public String getCardTemplateName() {
+		return this.cardTemplateName;
+	}
+	public void setCardTemplateName(String cardTemplateName) {
+		this.cardTemplateName = cardTemplateName;
+	}
+
+	public String getCardType() {
+		return this.cardType;
+	}
+	public void setCardType(String cardType) {
+		this.cardType = cardType;
+	}
+
+	public Long getOriginalPrice() {
+		return this.originalPrice;
+	}
+	public void setOriginalPrice(Long originalPrice) {
+		this.originalPrice = originalPrice;
+	}
+
 	public List<CardPeriodPrice> getPeriodPriceList() {
 		return this.periodPriceList;
 	}
 	public void setPeriodPriceList(List<CardPeriodPrice> periodPriceList) {
 		this.periodPriceList = periodPriceList;
+	}
+
+	public Long getSalePrice() {
+		return this.salePrice;
+	}
+	public void setSalePrice(Long salePrice) {
+		this.salePrice = salePrice;
 	}
 
 }

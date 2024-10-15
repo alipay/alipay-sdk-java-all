@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 权益交易信息同步
  *
  * @author auto create
- * @since 1.0, 2024-09-30 16:43:09
+ * @since 1.0, 2024-10-08 17:06:17
  */
 public class AlipayMarketingQualificationDataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2471714234328133447L;
+	private static final long serialVersionUID = 2321779581643145871L;
 
 	/**
 	 * 本次同步的资格相关业务信息

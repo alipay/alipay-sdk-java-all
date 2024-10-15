@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppIndustryJobPayslipSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1423336682195165732L;
+	private static final long serialVersionUID = 4253188235491869968L;
 
 	/**
 	 * 发薪金额，单位：元

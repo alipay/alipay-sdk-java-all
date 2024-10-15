@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.prodpaas.product.entry.complete.callback response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-12 09:32:48
+ * @since 1.0, 2024-10-11 13:49:25
  */
 public class AntProdpaasProductEntryCompleteCallbackResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4157188557357953328L;
+	private static final long serialVersionUID = 7498977465152532988L;
 
 	/** 
 	 * 状态码(success|failure)

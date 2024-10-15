@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenIotDeviceBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6371273367662261412L;
+	private static final long serialVersionUID = 5813238511239784413L;
 
 	
 

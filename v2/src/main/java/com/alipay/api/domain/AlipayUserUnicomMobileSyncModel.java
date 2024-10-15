@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 联通老用户转宝卡套餐后，使用该接口将转宝卡手机号同步支付宝
  *
  * @author auto create
- * @since 1.0, 2017-11-29 23:15:10
+ * @since 1.0, 2024-10-11 11:04:02
  */
 public class AlipayUserUnicomMobileSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7549935651657167844L;
+	private static final long serialVersionUID = 5796846646951515416L;
 
 	/**
 	 * 业务状态发生变更的时间戳，精确到毫秒

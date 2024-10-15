@@ -1,0 +1,44 @@
+package com.alipay.api.response;
+
+import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.domain.EpSpuSpecificInfoResult;
+
+import com.alipay.api.AlipayResponse;
+
+/**
+ * ALIPAY API: zhima.credit.ep.spuinfo.specific.query response.
+ * 
+ * @author auto create
+ * @since 1.0, 2024-10-14 18:27:13
+ */
+public class ZhimaCreditEpSpuinfoSpecificQueryResponse extends AlipayResponse {
+
+	private static final long serialVersionUID = 3779225529858622653L;
+
+	/** 
+	 * 企业查询key
+	 */
+	@ApiField("company_key")
+	private String companyKey;
+
+	/** 
+	 * 结果集
+	 */
+	@ApiField("data")
+	private EpSpuSpecificInfoResult data;
+
+	public void setCompanyKey(String companyKey) {
+		this.companyKey = companyKey;
+	}
+	public String getCompanyKey( ) {
+		return this.companyKey;
+	}
+
+	public void setData(EpSpuSpecificInfoResult data) {
+		this.data = data;
+	}
+	public EpSpuSpecificInfoResult getData( ) {
+		return this.data;
+	}
+
+}

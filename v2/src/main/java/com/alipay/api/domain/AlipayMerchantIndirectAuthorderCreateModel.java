@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间连商户意愿确认申请单提交
  *
  * @author auto create
- * @since 1.0, 2024-07-10 16:57:17
+ * @since 1.0, 2024-10-11 11:28:02
  */
 public class AlipayMerchantIndirectAuthorderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6217384266981382498L;
+	private static final long serialVersionUID = 2281742469344378965L;
 
 	/**
 	 * 主体信息。支持auth_identity_info和authIdentityInfo两种格式

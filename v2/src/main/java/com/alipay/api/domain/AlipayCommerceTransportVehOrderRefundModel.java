@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceTransportVehOrderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1361235564644485663L;
+	private static final long serialVersionUID = 4845683756954687785L;
 
 	/**
 	 * 车主系统订单号，商户订单同步到车主系统时，会在获取到此订单号。请注意，该订单号属于车主系统业务订单号。

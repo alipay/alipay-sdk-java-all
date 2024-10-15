@@ -1,0 +1,55 @@
+package com.alipay.api.domain;
+
+import com.alipay.api.AlipayObject;
+import com.alipay.api.internal.mapping.ApiField;
+
+/**
+ * 商品详情
+ *
+ * @author auto create
+ * @since 1.0, 2024-10-11 09:09:47
+ */
+public class AlipayMerchantSolcreditserviceprodProductQueryModel extends AlipayObject {
+
+	private static final long serialVersionUID = 4238361694591373952L;
+
+	/**
+	 * 商家编辑商品时自定义的编号
+	 */
+	@ApiField("out_product_no")
+	private String outProductNo;
+
+	/**
+	 * 系统生成的商品编号
+	 */
+	@ApiField("product_no")
+	private String productNo;
+
+	/**
+	 * 直付通进件得到的ID
+	 */
+	@ApiField("smid")
+	private String smid;
+
+	public String getOutProductNo() {
+		return this.outProductNo;
+	}
+	public void setOutProductNo(String outProductNo) {
+		this.outProductNo = outProductNo;
+	}
+
+	public String getProductNo() {
+		return this.productNo;
+	}
+	public void setProductNo(String productNo) {
+		this.productNo = productNo;
+	}
+
+	public String getSmid() {
+		return this.smid;
+	}
+	public void setSmid(String smid) {
+		this.smid = smid;
+	}
+
+}

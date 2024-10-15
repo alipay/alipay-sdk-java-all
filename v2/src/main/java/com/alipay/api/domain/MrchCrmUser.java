@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MrchCrmUser extends AlipayObject {
 
-	private static final long serialVersionUID = 7464413354844636751L;
+	private static final long serialVersionUID = 1323286674455683392L;
 
 	/**
 	 * 用户身份信息密文，加密方式如下：

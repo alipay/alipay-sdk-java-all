@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 前台类目更新
  *
  * @author auto create
- * @since 1.0, 2023-07-05 10:59:48
+ * @since 1.0, 2024-10-10 09:49:53
  */
 public class AntMerchantExpandFrontcategorySecurityModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7824628618264727581L;
+	private static final long serialVersionUID = 5479518952957772648L;
 
 	/**
 	 * 前台类目描述

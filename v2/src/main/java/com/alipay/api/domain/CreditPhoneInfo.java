@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用购机商品信息
  *
  * @author auto create
- * @since 1.0, 2024-04-24 14:14:16
+ * @since 1.0, 2024-10-09 20:16:18
  */
 public class CreditPhoneInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4178238962397727436L;
+	private static final long serialVersionUID = 8893351686866917129L;
 
 	/**
 	 * 单位是元。套餐每月保底金额
@@ -32,10 +32,16 @@ public class CreditPhoneInfo extends AlipayObject {
 	private String busiType;
 
 	/**
-	 * 若当月【due_date】日前未缴纳上月套餐费
+	 * 每个月份的逾期日期
 	 */
 	@ApiField("due_date")
 	private Long dueDate;
+
+	/**
+	 * 首月价格，单位 元
+	 */
+	@ApiField("first_month_price")
+	private String firstMonthPrice;
 
 	/**
 	 * 分期数，决定了最大的分期扣款数。注意，提前结清认为是一笔特殊的分期扣款。
@@ -78,6 +84,12 @@ public class CreditPhoneInfo extends AlipayObject {
 	 */
 	@ApiField("province")
 	private String province;
+
+	/**
+	 * 要求在网月数，单位 月
+	 */
+	@ApiField("require_month_count")
+	private Long requireMonthCount;
 
 	/**
 	 * 签约合约机套餐的手机号
@@ -123,6 +135,13 @@ public class CreditPhoneInfo extends AlipayObject {
 	}
 	public void setDueDate(Long dueDate) {
 		this.dueDate = dueDate;
+	}
+
+	public String getFirstMonthPrice() {
+		return this.firstMonthPrice;
+	}
+	public void setFirstMonthPrice(String firstMonthPrice) {
+		this.firstMonthPrice = firstMonthPrice;
 	}
 
 	public Long getInstallmentNumbers() {
@@ -172,6 +191,13 @@ public class CreditPhoneInfo extends AlipayObject {
 	}
 	public void setProvince(String province) {
 		this.province = province;
+	}
+
+	public Long getRequireMonthCount() {
+		return this.requireMonthCount;
+	}
+	public void setRequireMonthCount(Long requireMonthCount) {
+		this.requireMonthCount = requireMonthCount;
 	}
 
 	public String getServiceMobile() {

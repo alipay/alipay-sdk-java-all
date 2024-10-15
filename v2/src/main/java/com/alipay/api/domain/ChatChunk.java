@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ChatChunk extends AlipayObject {
 
-	private static final long serialVersionUID = 3229234912988277618L;
+	private static final long serialVersionUID = 5578367281978327928L;
 
 	/**
 	 * 答案文本

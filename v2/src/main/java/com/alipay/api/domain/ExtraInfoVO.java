@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ExtraInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6529214397719669727L;
+	private static final long serialVersionUID = 1823989381154872657L;
 
 	/**
 	 * 是否是taomaomao好友关系

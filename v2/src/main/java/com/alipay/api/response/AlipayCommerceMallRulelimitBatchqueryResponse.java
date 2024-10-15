@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.mall.rulelimit.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-15 11:56:40
+ * @since 1.0, 2024-10-08 10:37:38
  */
 public class AlipayCommerceMallRulelimitBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6346395145619785558L;
+	private static final long serialVersionUID = 6246387354754433322L;
 
 	/** 
 	 * 商圈商场付多门店业务规则限制对象信息集合

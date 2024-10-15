@@ -13,6 +13,7 @@ import com.alipay.api.domain.HbFqPayInfo;
 import com.alipay.api.domain.IntactChargeInfo;
 import com.alipay.api.domain.PaymentInfoWithId;
 import com.alipay.api.domain.GoodsDetail;
+import com.alipay.api.domain.TapPayInfo;
 import com.alipay.api.domain.TradeSettleInfo;
 import com.alipay.api.domain.VoucherDetail;
 
@@ -22,11 +23,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-04 19:45:06
+ * @since 1.0, 2024-10-10 16:41:16
  */
 public class AlipayTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7682884923834918963L;
+	private static final long serialVersionUID = 2623946535269648628L;
 
 	/** 
 	 * 交易附加状态：
@@ -117,6 +118,16 @@ SELLER_NOT_RECEIVED（买家已付款，卖家未收款）；
 	 */
 	@ApiField("buyer_user_type")
 	private String buyerUserType;
+
+	/** 
+	 * 收银台类型。 
+用户支付的收银台类型，取值如下： 
+APP：支付宝APP收银台支付； 
+WAP：支付H5收银台支付； 
+注：只有在无线产品支付接口请求中query_options指定cashier_type才返回该字段。
+	 */
+	@ApiField("cashier_type")
+	private String cashierType;
 
 	/** 
 	 * 该笔交易针对收款方的收费金额；单位：元。
@@ -375,6 +386,12 @@ json格式。
 	private String subject;
 
 	/** 
+	 * 碰一下支付信息
+	 */
+	@ApiField("tap_pay_info")
+	private TapPayInfo tapPayInfo;
+
+	/** 
 	 * 商户机具终端编号
 	 */
 	@ApiField("terminal_id")
@@ -521,6 +538,13 @@ json格式。
 	}
 	public String getBuyerUserType( ) {
 		return this.buyerUserType;
+	}
+
+	public void setCashierType(String cashierType) {
+		this.cashierType = cashierType;
+	}
+	public String getCashierType( ) {
+		return this.cashierType;
 	}
 
 	public void setChargeAmount(String chargeAmount) {
@@ -794,6 +818,13 @@ json格式。
 	}
 	public String getSubject( ) {
 		return this.subject;
+	}
+
+	public void setTapPayInfo(TapPayInfo tapPayInfo) {
+		this.tapPayInfo = tapPayInfo;
+	}
+	public TapPayInfo getTapPayInfo( ) {
+		return this.tapPayInfo;
 	}
 
 	public void setTerminalId(String terminalId) {

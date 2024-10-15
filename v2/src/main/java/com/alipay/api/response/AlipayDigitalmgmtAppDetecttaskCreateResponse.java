@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.digitalmgmt.app.detecttask.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 03:21:43
+ * @since 1.0, 2024-10-09 10:35:55
  */
 public class AlipayDigitalmgmtAppDetecttaskCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5836241492946885525L;
+	private static final long serialVersionUID = 6155171669668212894L;
 
 	/** 
 	 * 请求幂等校验id

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.coupon.qrcode.merchant.batchcreate response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 00:41:44
+ * @since 1.0, 2024-10-09 10:56:46
  */
 public class AlipayFundCouponQrcodeMerchantBatchcreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7544859146395337266L;
+	private static final long serialVersionUID = 6351742471874748124L;
 
 	
 

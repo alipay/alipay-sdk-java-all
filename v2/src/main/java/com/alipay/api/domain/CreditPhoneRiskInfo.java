@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用购机风控参数
  *
  * @author auto create
- * @since 1.0, 2024-06-17 13:48:15
+ * @since 1.0, 2024-10-09 20:16:19
  */
 public class CreditPhoneRiskInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8743185876862914827L;
+	private static final long serialVersionUID = 7835952329333915743L;
 
 	/**
 	 * 分公司

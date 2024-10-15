@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 核销订单信息
  *
  * @author auto create
- * @since 1.0, 2024-08-16 10:24:47
+ * @since 1.0, 2024-10-12 19:28:18
  */
 public class DeductionOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8525284638154855194L;
+	private static final long serialVersionUID = 2272117562728289693L;
 
 	/**
 	 * 抽佣信息集合
@@ -48,6 +48,18 @@ public class DeductionOrderInfo extends AlipayObject {
 	private String deductionAmount;
 
 	/**
+	 * 核销现金价值，单位：分
+	 */
+	@ApiField("deduction_cash")
+	private Long deductionCash;
+
+	/**
+	 * 核销次数
+	 */
+	@ApiField("deduction_count")
+	private Long deductionCount;
+
+	/**
 	 * 扣款失败原因
 	 */
 	@ApiField("deduction_fail_reason")
@@ -66,13 +78,20 @@ public class DeductionOrderInfo extends AlipayObject {
 	private String deductionOrderId;
 
 	/**
-	 * 扣款单类型
+	 * 每次核销信息
+	 */
+	@ApiListField("deduction_order_once_info_list")
+	@ApiField("deduction_order_once_info")
+	private List<DeductionOrderOnceInfo> deductionOrderOnceInfoList;
+
+	/**
+	 * 核销订单类型
 	 */
 	@ApiField("deduction_order_type")
 	private String deductionOrderType;
 
 	/**
-	 * 扣款状态
+	 * （1）TIMES_CARD / PERIOD_PAY / AXF_MERCHANT_PERIOD_PAY / AXF_MERCHANT_PERIOD_PAY_INDIRECT：UNPAID、PAYMENT_SUCCESS、PAYMENT_FAILED、REFUND （2）AXF_MONEY_TIME_CARD：FREEZING、FROZEN、UNFREEZING、UNFROZEN、REDEEMING、PAYMENT_FAILED、PAYMENT_SUCCESS、REFUND、PART_REFUND
 	 */
 	@ApiField("deduction_status")
 	private String deductionStatus;
@@ -102,10 +121,16 @@ public class DeductionOrderInfo extends AlipayObject {
 	private String openId;
 
 	/**
-	 * 业务单ID
+	 * 业务单ID，交易组件订单号
 	 */
 	@ApiField("order_id")
 	private String orderId;
+
+	/**
+	 * 支付交易流水号
+	 */
+	@ApiField("payment_no")
+	private String paymentNo;
 
 	/**
 	 * 期数
@@ -118,6 +143,12 @@ public class DeductionOrderInfo extends AlipayObject {
 	 */
 	@ApiField("plan_deduction_time")
 	private String planDeductionTime;
+
+	/**
+	 * 核销方式
+	 */
+	@ApiField("redeem_way")
+	private String redeemWay;
 
 	/**
 	 * 退款金额，单位：分
@@ -148,6 +179,12 @@ public class DeductionOrderInfo extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	/**
+	 * 用户拒绝原因
+	 */
+	@ApiField("user_refuse_reason")
+	private String userRefuseReason;
 
 	public List<BillFeeInfo> getBillFeeInfoList() {
 		return this.billFeeInfoList;
@@ -184,6 +221,20 @@ public class DeductionOrderInfo extends AlipayObject {
 		this.deductionAmount = deductionAmount;
 	}
 
+	public Long getDeductionCash() {
+		return this.deductionCash;
+	}
+	public void setDeductionCash(Long deductionCash) {
+		this.deductionCash = deductionCash;
+	}
+
+	public Long getDeductionCount() {
+		return this.deductionCount;
+	}
+	public void setDeductionCount(Long deductionCount) {
+		this.deductionCount = deductionCount;
+	}
+
 	public String getDeductionFailReason() {
 		return this.deductionFailReason;
 	}
@@ -203,6 +254,13 @@ public class DeductionOrderInfo extends AlipayObject {
 	}
 	public void setDeductionOrderId(String deductionOrderId) {
 		this.deductionOrderId = deductionOrderId;
+	}
+
+	public List<DeductionOrderOnceInfo> getDeductionOrderOnceInfoList() {
+		return this.deductionOrderOnceInfoList;
+	}
+	public void setDeductionOrderOnceInfoList(List<DeductionOrderOnceInfo> deductionOrderOnceInfoList) {
+		this.deductionOrderOnceInfoList = deductionOrderOnceInfoList;
 	}
 
 	public String getDeductionOrderType() {
@@ -254,6 +312,13 @@ public class DeductionOrderInfo extends AlipayObject {
 		this.orderId = orderId;
 	}
 
+	public String getPaymentNo() {
+		return this.paymentNo;
+	}
+	public void setPaymentNo(String paymentNo) {
+		this.paymentNo = paymentNo;
+	}
+
 	public String getPeriod() {
 		return this.period;
 	}
@@ -266,6 +331,13 @@ public class DeductionOrderInfo extends AlipayObject {
 	}
 	public void setPlanDeductionTime(String planDeductionTime) {
 		this.planDeductionTime = planDeductionTime;
+	}
+
+	public String getRedeemWay() {
+		return this.redeemWay;
+	}
+	public void setRedeemWay(String redeemWay) {
+		this.redeemWay = redeemWay;
 	}
 
 	public Long getRefundCash() {
@@ -301,6 +373,13 @@ public class DeductionOrderInfo extends AlipayObject {
 	}
 	public void setUserId(String userId) {
 		this.userId = userId;
+	}
+
+	public String getUserRefuseReason() {
+		return this.userRefuseReason;
+	}
+	public void setUserRefuseReason(String userRefuseReason) {
+		this.userRefuseReason = userRefuseReason;
 	}
 
 }

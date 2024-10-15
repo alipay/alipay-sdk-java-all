@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 天气预警详情
  *
  * @author auto create
- * @since 1.0, 2023-12-13 10:30:15
+ * @since 1.0, 2024-10-15 09:43:50
  */
 public class AlarmInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6781273437943474792L;
+	private static final long serialVersionUID = 6414193264228959123L;
 
 	/**
 	 * 6位国标码，支持传区县+城市级别
@@ -30,6 +30,12 @@ public class AlarmInfo extends AlipayObject {
 	@ApiListField("ad_code_list")
 	@ApiField("string")
 	private List<String> adCodeList;
+
+	/**
+	 * 预警信息发布单位
+	 */
+	@ApiField("alarm_publish_unit")
+	private String alarmPublishUnit;
 
 	/**
 	 * 天气预警描述信息
@@ -91,6 +97,13 @@ public class AlarmInfo extends AlipayObject {
 	}
 	public void setAdCodeList(List<String> adCodeList) {
 		this.adCodeList = adCodeList;
+	}
+
+	public String getAlarmPublishUnit() {
+		return this.alarmPublishUnit;
+	}
+	public void setAlarmPublishUnit(String alarmPublishUnit) {
+		this.alarmPublishUnit = alarmPublishUnit;
 	}
 
 	public String getContent() {

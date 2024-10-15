@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗短链生成接口
  *
  * @author auto create
- * @since 1.0, 2023-10-25 21:09:10
+ * @since 1.0, 2024-10-11 19:57:16
  */
 public class AlipayCommerceMedicalShortenurlExchangeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2226734692736213971L;
+	private static final long serialVersionUID = 7795954132897387266L;
 
 	/**
 	 * 目标链接

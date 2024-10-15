@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class UnitedVoucherDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5387348839421459376L;
+	private static final long serialVersionUID = 8859568358686246949L;
 
 	/**
 	 * 券激活时间

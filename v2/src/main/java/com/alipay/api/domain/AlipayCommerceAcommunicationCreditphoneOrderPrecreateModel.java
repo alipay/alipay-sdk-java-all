@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 运营商行业信用购预创单
  *
  * @author auto create
- * @since 1.0, 2024-09-23 14:23:43
+ * @since 1.0, 2024-10-09 20:16:19
  */
 public class AlipayCommerceAcommunicationCreditphoneOrderPrecreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1767743117349986316L;
+	private static final long serialVersionUID = 4556222893422574483L;
 
 	/**
 	 * 支付宝用户ID（小程序授权获取）

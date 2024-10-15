@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 安心付的商户配置
  *
  * @author auto create
- * @since 1.0, 2024-09-03 16:43:40
+ * @since 1.0, 2024-10-12 19:28:16
  */
 public class AxfMerchantConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 1375326397612547536L;
+	private static final long serialVersionUID = 2376432423121984576L;
 
 	/**
 	 * 配置key
@@ -20,7 +20,7 @@ public class AxfMerchantConfig extends AlipayObject {
 	private String configKey;
 
 	/**
-	 * 配置value
+	 * (1)当config_key=MERCHANT_MSG_APP_ID时，config_value需要是商户的appId
 	 */
 	@ApiField("config_value")
 	private String configValue;

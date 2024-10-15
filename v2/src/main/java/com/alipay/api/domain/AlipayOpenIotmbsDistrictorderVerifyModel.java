@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenIotmbsDistrictorderVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7459148731466774766L;
+	private static final long serialVersionUID = 2487295128999524298L;
 
 	/**
 	 * order_id：待核销的订单id

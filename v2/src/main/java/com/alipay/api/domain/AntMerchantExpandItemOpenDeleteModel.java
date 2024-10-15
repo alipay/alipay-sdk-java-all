@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 删除商品接口
  *
  * @author auto create
- * @since 1.0, 2023-07-05 10:58:52
+ * @since 1.0, 2024-10-10 09:50:41
  */
 public class AntMerchantExpandItemOpenDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6348988223244813317L;
+	private static final long serialVersionUID = 7649328824237386685L;
 
 	/**
 	 * 商品ID

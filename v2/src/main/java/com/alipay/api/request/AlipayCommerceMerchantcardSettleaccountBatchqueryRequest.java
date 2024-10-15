@@ -1,5 +1,6 @@
 package com.alipay.api.request;
 
+import com.alipay.api.domain.AlipayCommerceMerchantcardSettleaccountBatchqueryModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
@@ -11,12 +12,24 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.merchantcard.settleaccount.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2024-09-03 16:52:08
+ * @since 1.0, 2024-10-15 13:52:14
  */
 public class AlipayCommerceMerchantcardSettleaccountBatchqueryRequest implements AlipayRequest<AlipayCommerceMerchantcardSettleaccountBatchqueryResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
+
+	/** 
+	* 查看可配置的默认结算账户
+	 */
+	private String bizContent;
+
+	public void setBizContent(String bizContent) {
+		this.bizContent = bizContent;
+	}
+	public String getBizContent() {
+		return this.bizContent;
+	}
 	private String terminalType;
 	private String terminalInfo;	
 	private String prodCode;
@@ -79,6 +92,7 @@ public class AlipayCommerceMerchantcardSettleaccountBatchqueryRequest implements
 
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
+		txtParams.put("biz_content", this.bizContent);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}

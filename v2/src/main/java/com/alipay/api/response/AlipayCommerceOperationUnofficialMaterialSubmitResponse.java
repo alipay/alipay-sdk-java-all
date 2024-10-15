@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.unofficial.material.submit response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 16:56:26
+ * @since 1.0, 2024-10-11 13:41:36
  */
 public class AlipayCommerceOperationUnofficialMaterialSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5722123185719599132L;
+	private static final long serialVersionUID = 2343744986333951895L;
 
 	/** 
 	 * 对应所插入非官方物料数据的唯一凭证

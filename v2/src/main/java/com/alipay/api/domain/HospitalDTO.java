@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HospitalDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1755983531794253916L;
+	private static final long serialVersionUID = 6576888143772462613L;
 
 	/**
 	 * 医院ID

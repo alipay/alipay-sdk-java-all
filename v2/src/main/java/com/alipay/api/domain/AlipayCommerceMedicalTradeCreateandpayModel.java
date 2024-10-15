@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 医保移动支付创单并支付
  *
  * @author auto create
- * @since 1.0, 2024-09-11 16:55:35
+ * @since 1.0, 2024-10-14 14:16:57
  */
 public class AlipayCommerceMedicalTradeCreateandpayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1865713472496279682L;
+	private static final long serialVersionUID = 3592213927813528468L;
 
 	/**
 	 * 医保个账支付金额

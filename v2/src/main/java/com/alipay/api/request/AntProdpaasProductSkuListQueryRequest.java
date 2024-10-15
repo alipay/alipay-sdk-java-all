@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.prodpaas.product.sku.list.query request
  * 
  * @author auto create
- * @since 1.0, 2024-03-12 09:32:59
+ * @since 1.0, 2024-10-11 13:50:17
  */
 public class AntProdpaasProductSkuListQueryRequest implements AlipayRequest<AntProdpaasProductSkuListQueryResponse> {
 

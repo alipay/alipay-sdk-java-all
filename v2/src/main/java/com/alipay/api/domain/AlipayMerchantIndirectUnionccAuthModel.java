@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 机构跨通道信息互备
  *
  * @author auto create
- * @since 1.0, 2024-05-15 15:01:47
+ * @since 1.0, 2024-10-11 11:29:14
  */
 public class AlipayMerchantIndirectUnionccAuthModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4824671334671524727L;
+	private static final long serialVersionUID = 3572798176251765531L;
 
 	/**
 	 * 收单机构在支付宝签约的商户名称，和PID对应。

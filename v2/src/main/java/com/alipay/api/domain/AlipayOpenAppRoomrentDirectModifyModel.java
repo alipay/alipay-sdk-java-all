@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租房商品免审更新接口
  *
  * @author auto create
- * @since 1.0, 2024-07-01 13:32:09
+ * @since 1.0, 2024-10-12 11:14:16
  */
 public class AlipayOpenAppRoomrentDirectModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7848423362299844156L;
+	private static final long serialVersionUID = 5354363578669352724L;
 
 	/**
 	 * 支付宝平台侧商品ID，是支付宝平台侧商品的唯一标识，后续与平台交互，需要使用该 ID，建议持久化。
@@ -30,6 +30,12 @@ public class AlipayOpenAppRoomrentDirectModifyModel extends AlipayObject {
 	 */
 	@ApiField("out_item_id")
 	private String outItemId;
+
+	/**
+	 * 目前支持库存区间1~100000
+	 */
+	@ApiField("stock_num")
+	private Long stockNum;
 
 	public String getItemId() {
 		return this.itemId;
@@ -50,6 +56,13 @@ public class AlipayOpenAppRoomrentDirectModifyModel extends AlipayObject {
 	}
 	public void setOutItemId(String outItemId) {
 		this.outItemId = outItemId;
+	}
+
+	public Long getStockNum() {
+		return this.stockNum;
+	}
+	public void setStockNum(Long stockNum) {
+		this.stockNum = stockNum;
 	}
 
 }

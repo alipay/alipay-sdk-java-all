@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.unofficial.material.submit request
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 16:56:26
+ * @since 1.0, 2024-10-11 13:41:36
  */
 public class AlipayCommerceOperationUnofficialMaterialSubmitRequest implements AlipayRequest<AlipayCommerceOperationUnofficialMaterialSubmitResponse> {
 

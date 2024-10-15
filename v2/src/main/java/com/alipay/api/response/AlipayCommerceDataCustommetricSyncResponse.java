@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.data.custommetric.sync response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-02 20:53:04
+ * @since 1.0, 2024-10-15 13:41:48
  */
 public class AlipayCommerceDataCustommetricSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8744468151895141685L;
+	private static final long serialVersionUID = 3618799449859339494L;
 
 	
 

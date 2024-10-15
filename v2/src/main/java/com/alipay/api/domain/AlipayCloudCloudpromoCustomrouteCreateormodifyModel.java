@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCloudCloudpromoCustomrouteCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2569846789935754829L;
+	private static final long serialVersionUID = 2321694615977842519L;
 
 	/**
 	 * 当前坐标经纬度，逗号分隔

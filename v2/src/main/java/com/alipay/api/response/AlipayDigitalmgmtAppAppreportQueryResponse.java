@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.digitalmgmt.app.appreport.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-11 17:51:40
+ * @since 1.0, 2024-10-09 10:35:42
  */
 public class AlipayDigitalmgmtAppAppreportQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1168195735193194574L;
+	private static final long serialVersionUID = 8599913639342444392L;
 
 	/** 
 	 * 检测结果
