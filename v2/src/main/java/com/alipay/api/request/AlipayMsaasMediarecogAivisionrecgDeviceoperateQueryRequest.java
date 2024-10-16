@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.msaas.mediarecog.aivisionrecg.deviceoperate.query request
  * 
  * @author auto create
- * @since 1.0, 2024-10-15 13:42:13
+ * @since 1.0, 2024-10-15 17:17:14
  */
 public class AlipayMsaasMediarecogAivisionrecgDeviceoperateQueryRequest implements AlipayRequest<AlipayMsaasMediarecogAivisionrecgDeviceoperateQueryResponse> {
 

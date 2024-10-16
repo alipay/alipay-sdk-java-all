@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TicketSKU extends AlipayObject {
 
-	private static final long serialVersionUID = 3248751669624912325L;
+	private static final long serialVersionUID = 5474433573758284772L;
 
 	/**
 	 * 票种的唯一ID用于下单

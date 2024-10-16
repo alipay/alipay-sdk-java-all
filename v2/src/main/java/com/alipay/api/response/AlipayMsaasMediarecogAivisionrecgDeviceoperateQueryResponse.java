@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.msaas.mediarecog.aivisionrecg.deviceoperate.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-15 13:42:13
+ * @since 1.0, 2024-10-15 17:17:14
  */
 public class AlipayMsaasMediarecogAivisionrecgDeviceoperateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2528799239872175632L;
+	private static final long serialVersionUID = 2562166736756125666L;
 
 	/** 
 	 * 操作记录结果

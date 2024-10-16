@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DeleteContactRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 6723532719736597471L;
+	private static final long serialVersionUID = 5292313191596135421L;
 
 	/**
 	 * id

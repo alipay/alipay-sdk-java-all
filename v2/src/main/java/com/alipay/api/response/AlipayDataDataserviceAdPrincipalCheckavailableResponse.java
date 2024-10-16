@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataDataserviceAdPrincipalCheckavailableResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5785659484515679645L;
+	private static final long serialVersionUID = 5368484361915662362L;
 
 	/** 
 	 * 返回灯火商家的ID

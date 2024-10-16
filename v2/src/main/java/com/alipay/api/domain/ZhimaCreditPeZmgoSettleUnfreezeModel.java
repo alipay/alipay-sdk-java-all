@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻Go解冻接口
  *
  * @author auto create
- * @since 1.0, 2024-05-08 10:40:15
+ * @since 1.0, 2024-10-16 11:29:24
  */
 public class ZhimaCreditPeZmgoSettleUnfreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8373699575225373563L;
+	private static final long serialVersionUID = 3414267835857961246L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号，即花呗先享协议号

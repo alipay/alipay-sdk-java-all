@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantGroupGroupinstanceinfoDisbandModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5638311454148421138L;
+	private static final long serialVersionUID = 8713755827836519814L;
 
 	/**
 	 * 群id

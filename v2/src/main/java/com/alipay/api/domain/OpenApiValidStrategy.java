@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenApiValidStrategy extends AlipayObject {
 
-	private static final long serialVersionUID = 4242215163812639452L;
+	private static final long serialVersionUID = 1763166817772639414L;
 
 	/**
 	 * 失效时间

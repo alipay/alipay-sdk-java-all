@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class UnitedVoucherDigest extends AlipayObject {
 
-	private static final long serialVersionUID = 8147871669726286964L;
+	private static final long serialVersionUID = 2663412218513497492L;
 
 	/**
 	 * 是否剩余预算

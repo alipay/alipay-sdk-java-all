@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayBusinessMallPointsNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5148755226728587584L;
+	private static final long serialVersionUID = 8813916624147264396L;
 
 	/**
 	 * 支付宝用户id

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.merchant.subsidiaries.close request
  * 
  * @author auto create
- * @since 1.0, 2024-05-09 09:51:01
+ * @since 1.0, 2024-10-16 11:25:49
  */
 public class ZhimaMerchantSubsidiariesCloseRequest implements AlipayRequest<ZhimaMerchantSubsidiariesCloseResponse> {
 

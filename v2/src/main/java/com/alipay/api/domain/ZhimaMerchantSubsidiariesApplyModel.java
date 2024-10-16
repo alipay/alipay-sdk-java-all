@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 子商户信息添加
  *
  * @author auto create
- * @since 1.0, 2024-05-09 09:51:15
+ * @since 1.0, 2024-10-16 11:24:30
  */
 public class ZhimaMerchantSubsidiariesApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6868512673232297855L;
+	private static final long serialVersionUID = 3314734475547117927L;
 
 	/**
 	 * 商户pid

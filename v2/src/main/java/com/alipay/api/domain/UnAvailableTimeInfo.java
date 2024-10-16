@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class UnAvailableTimeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3188267326674815363L;
+	private static final long serialVersionUID = 8491667925231992591L;
 
 	/**
 	 * 起始时间

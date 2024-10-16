@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayInsUnderwriteClaimReportQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8377531129837387597L;
+	private static final long serialVersionUID = 4445868695411958664L;
 
 	/**
 	 * 理赔申请报案号，通过理赔申请【alipay.ins.scene.claim.apply】接口的返回字段claim_report_no获取

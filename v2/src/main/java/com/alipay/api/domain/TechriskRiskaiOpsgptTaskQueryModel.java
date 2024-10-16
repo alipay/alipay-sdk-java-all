@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TechriskRiskaiOpsgptTaskQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3497815433726522792L;
+	private static final long serialVersionUID = 5494173213178763997L;
 
 	/**
 	 * 提交任务成功后返回的任务id，用户需要使用该 id 调用任务查询接口轮询任务结果

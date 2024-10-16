@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.entertainment.card.sync request
  * 
  * @author auto create
- * @since 1.0, 2024-06-14 10:47:04
+ * @since 1.0, 2024-10-15 16:46:33
  */
 public class AlipayCommerceEntertainmentCardSyncRequest implements AlipayRequest<AlipayCommerceEntertainmentCardSyncResponse> {
 
