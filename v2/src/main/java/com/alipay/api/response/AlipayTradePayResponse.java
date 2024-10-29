@@ -8,6 +8,7 @@ import com.alipay.api.domain.BkAgentRespInfo;
 import com.alipay.api.domain.ChargeInfo;
 import com.alipay.api.domain.EnterprisePayInfo;
 import com.alipay.api.domain.TradeFundBill;
+import com.alipay.api.domain.TapPayInfo;
 import com.alipay.api.domain.VoucherDetail;
 
 import com.alipay.api.AlipayResponse;
@@ -16,11 +17,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.pay response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-09 10:31:29
+ * @since 1.0, 2024-10-28 16:17:23
  */
 public class AlipayTradePayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1834659281298752414L;
+	private static final long serialVersionUID = 6769639692286554163L;
 
 	/** 
 	 * 先享后付2.0垫资金额,不返回表示没有走垫资，非空表示垫资支付的金额
@@ -236,6 +237,12 @@ bluesea_1：蓝海活动优惠费率标签；
 	private String pointAmount;
 
 	/** 
+	 * 当用户使用芝麻信用先享后付时，会返回该字段，代表整笔交易的原始待履约金额，单位元。
+	 */
+	@ApiField("pre_auth_pay_amount")
+	private String preAuthPayAmount;
+
+	/** 
 	 * 实收金额
 	 */
 	@ApiField("receipt_amount")
@@ -277,6 +284,12 @@ bluesea_1：蓝海活动优惠费率标签；
 	 */
 	@ApiField("store_name")
 	private String storeName;
+
+	/** 
+	 * 碰一下支付信息
+	 */
+	@ApiField("tap_pay_info")
+	private TapPayInfo tapPayInfo;
 
 	/** 
 	 * 交易金额
@@ -534,6 +547,13 @@ bluesea_1：蓝海活动优惠费率标签；
 		return this.pointAmount;
 	}
 
+	public void setPreAuthPayAmount(String preAuthPayAmount) {
+		this.preAuthPayAmount = preAuthPayAmount;
+	}
+	public String getPreAuthPayAmount( ) {
+		return this.preAuthPayAmount;
+	}
+
 	public void setReceiptAmount(String receiptAmount) {
 		this.receiptAmount = receiptAmount;
 	}
@@ -581,6 +601,13 @@ bluesea_1：蓝海活动优惠费率标签；
 	}
 	public String getStoreName( ) {
 		return this.storeName;
+	}
+
+	public void setTapPayInfo(TapPayInfo tapPayInfo) {
+		this.tapPayInfo = tapPayInfo;
+	}
+	public TapPayInfo getTapPayInfo( ) {
+		return this.tapPayInfo;
 	}
 
 	public void setTotalAmount(String totalAmount) {

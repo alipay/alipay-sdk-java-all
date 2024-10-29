@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝就业工资条信息同步
  *
  * @author auto create
- * @since 1.0, 2024-09-20 15:07:18
+ * @since 1.0, 2024-10-23 16:10:18
  */
 public class AlipayEbppIndustryJobPayslipSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3593999552646762826L;
+	private static final long serialVersionUID = 3324776617396726299L;
 
 	/**
 	 * 发薪金额，单位：元
@@ -27,6 +27,18 @@ public class AlipayEbppIndustryJobPayslipSyncModel extends AlipayObject {
 	 */
 	@ApiField("bank_code")
 	private String bankCode;
+
+	/**
+	 * 三方服务商用户账单详情地址。必须为支付宝链接（alipays://开头），暂不支持H5链接。通过该链接，用户可点击进入三方详情页查看收入明细。
+	 */
+	@ApiField("bill_detail_url")
+	private String billDetailUrl;
+
+	/**
+	 * 用户收款账号，可传账号后4位数字或全部数字
+	 */
+	@ApiField("card_no")
+	private String cardNo;
 
 	/**
 	 * 发薪渠道
@@ -53,7 +65,7 @@ public class AlipayEbppIndustryJobPayslipSyncModel extends AlipayObject {
 	private String contactInfo;
 
 	/**
-	 * 支付宝登录号
+	 * 支付宝登录号。业务系统无用户UID时，可通过该参数同步手机号码。因手机号有一定比例无法匹配到UID，建议有UID的情况下优先同步UID。
 	 */
 	@ApiField("login_id")
 	private String loginId;
@@ -100,6 +112,20 @@ public class AlipayEbppIndustryJobPayslipSyncModel extends AlipayObject {
 	}
 	public void setBankCode(String bankCode) {
 		this.bankCode = bankCode;
+	}
+
+	public String getBillDetailUrl() {
+		return this.billDetailUrl;
+	}
+	public void setBillDetailUrl(String billDetailUrl) {
+		this.billDetailUrl = billDetailUrl;
+	}
+
+	public String getCardNo() {
+		return this.cardNo;
+	}
+	public void setCardNo(String cardNo) {
+		this.cardNo = cardNo;
 	}
 
 	public String getChannel() {

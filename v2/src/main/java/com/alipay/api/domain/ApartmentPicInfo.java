@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租房公寓图片信息
  *
  * @author auto create
- * @since 1.0, 2024-09-09 11:33:22
+ * @since 1.0, 2024-10-16 19:47:19
  */
 public class ApartmentPicInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3741872499634655974L;
+	private static final long serialVersionUID = 2687324165866188119L;
 
 	/**
 	 * 公寓外观图片

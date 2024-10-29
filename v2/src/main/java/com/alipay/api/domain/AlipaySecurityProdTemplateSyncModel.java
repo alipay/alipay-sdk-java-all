@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 模板跨库同步
  *
  * @author auto create
- * @since 1.0, 2024-06-11 19:51:46
+ * @since 1.0, 2024-10-28 15:02:16
  */
 public class AlipaySecurityProdTemplateSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7893783518914323488L;
+	private static final long serialVersionUID = 7177169612618317694L;
 
 	/**
 	 * 操作人工号

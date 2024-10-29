@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询业务账单本地生活商品售卖明细订单列表详情
  *
  * @author auto create
- * @since 1.0, 2024-08-09 13:52:31
+ * @since 1.0, 2024-10-22 17:11:19
  */
 public class ItemSellOrderResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 2632146356411189839L;
+	private static final long serialVersionUID = 8315541211538575868L;
 
 	/**
 	 * cps技术服务费，单位：元，精确到小数点后两位
@@ -58,6 +58,12 @@ public class ItemSellOrderResponse extends AlipayObject {
 	private String itemType;
 
 	/**
+	 * 商家优惠金额，单位：元，精确到小数点后两位
+	 */
+	@ApiField("merchant_discount_amount")
+	private String merchantDiscountAmount;
+
+	/**
 	 * 商户订单号
 	 */
 	@ApiField("merchant_order_no")
@@ -86,6 +92,12 @@ public class ItemSellOrderResponse extends AlipayObject {
 	 */
 	@ApiField("pay_commission")
 	private String payCommission;
+
+	/**
+	 * 支付宝优惠金额，单位：元，精确到小数点后两位
+	 */
+	@ApiField("platform_discount_amount")
+	private String platformDiscountAmount;
 
 	/**
 	 * 预计实收金额，单位：元，精确到小数点后两位
@@ -220,6 +232,13 @@ public class ItemSellOrderResponse extends AlipayObject {
 		this.itemType = itemType;
 	}
 
+	public String getMerchantDiscountAmount() {
+		return this.merchantDiscountAmount;
+	}
+	public void setMerchantDiscountAmount(String merchantDiscountAmount) {
+		this.merchantDiscountAmount = merchantDiscountAmount;
+	}
+
 	public String getMerchantOrderNo() {
 		return this.merchantOrderNo;
 	}
@@ -253,6 +272,13 @@ public class ItemSellOrderResponse extends AlipayObject {
 	}
 	public void setPayCommission(String payCommission) {
 		this.payCommission = payCommission;
+	}
+
+	public String getPlatformDiscountAmount() {
+		return this.platformDiscountAmount;
+	}
+	public void setPlatformDiscountAmount(String platformDiscountAmount) {
+		this.platformDiscountAmount = platformDiscountAmount;
 	}
 
 	public String getPreReceiptAmount() {

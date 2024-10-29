@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiTradeItemorderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7142789638972873696L;
+	private static final long serialVersionUID = 2493171563563565326L;
 
 	/**
 	 * 口碑订单号，可通过 <a href="https://opendocs.alipay.com/apis/api_1/koubei.trade.itemorder.buy">koubei.trade.itemorder.buy</a>(口碑商品交易购买接口)获取。

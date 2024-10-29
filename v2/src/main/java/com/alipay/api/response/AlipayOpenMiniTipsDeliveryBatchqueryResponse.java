@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.tips.delivery.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-23 21:50:59
+ * @since 1.0, 2024-10-21 10:10:29
  */
 public class AlipayOpenMiniTipsDeliveryBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8392789314848457312L;
+	private static final long serialVersionUID = 7183525965585112685L;
 
 	/** 
 	 * 收藏引导活动信息列表。根据活动状态排序，顺序为：生效中，暂停，审核中，白名单生效中，初始化，审核失败，结束。相同状态优先展示状态更新时间最迟的活动。

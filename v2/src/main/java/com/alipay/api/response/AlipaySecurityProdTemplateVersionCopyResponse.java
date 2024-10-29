@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.template.version.copy response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-16 09:32:49
+ * @since 1.0, 2024-10-28 17:52:22
  */
 public class AlipaySecurityProdTemplateVersionCopyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2266891158612186316L;
+	private static final long serialVersionUID = 3215735438317424971L;
 
 	/** 
 	 * 版本拷贝结果
@@ -20,11 +20,24 @@ public class AlipaySecurityProdTemplateVersionCopyResponse extends AlipayRespons
 	@ApiField("copy_result")
 	private Boolean copyResult;
 
+	/** 
+	 * 版本号
+	 */
+	@ApiField("version_no")
+	private String versionNo;
+
 	public void setCopyResult(Boolean copyResult) {
 		this.copyResult = copyResult;
 	}
 	public Boolean getCopyResult( ) {
 		return this.copyResult;
+	}
+
+	public void setVersionNo(String versionNo) {
+		this.versionNo = versionNo;
+	}
+	public String getVersionNo( ) {
+		return this.versionNo;
 	}
 
 }

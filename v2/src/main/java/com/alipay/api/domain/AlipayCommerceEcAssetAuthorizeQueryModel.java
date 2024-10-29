@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业码授结果查询
  *
  * @author auto create
- * @since 1.0, 2024-07-08 14:33:16
+ * @since 1.0, 2024-10-16 14:01:18
  */
 public class AlipayCommerceEcAssetAuthorizeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1697495347666974936L;
+	private static final long serialVersionUID = 8898863395533382818L;
 
 	/**
 	 * 通过企业码1.0接口签约的共同账户，和agreement_no搭配使用。 当前字段已废弃(历史兼容逻辑冗余的字段统一移除)
@@ -28,7 +28,13 @@ public class AlipayCommerceEcAssetAuthorizeQueryModel extends AlipayObject {
 	private String agreementNo;
 
 	/**
-	 * 企业Id，企业入驻企业码时自动分配的用于唯一标识的编号
+	 * 企业统一社会信用代码，与enterprise_id二选一
+	 */
+	@ApiField("enterprise_code")
+	private String enterpriseCode;
+
+	/**
+	 * 企业码内部自动生成企业唯一标识，与enterprise_code二选一
 	 */
 	@ApiField("enterprise_id")
 	private String enterpriseId;
@@ -51,6 +57,13 @@ public class AlipayCommerceEcAssetAuthorizeQueryModel extends AlipayObject {
 	}
 	public void setAgreementNo(String agreementNo) {
 		this.agreementNo = agreementNo;
+	}
+
+	public String getEnterpriseCode() {
+		return this.enterpriseCode;
+	}
+	public void setEnterpriseCode(String enterpriseCode) {
+		this.enterpriseCode = enterpriseCode;
 	}
 
 	public String getEnterpriseId() {

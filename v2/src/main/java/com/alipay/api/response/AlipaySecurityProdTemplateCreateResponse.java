@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.template.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-16 09:32:43
+ * @since 1.0, 2024-10-28 15:07:21
  */
 public class AlipaySecurityProdTemplateCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8289814644386992176L;
+	private static final long serialVersionUID = 5553387913866428785L;
 
 	/** 
 	 * 创建完成后返回模板编码
@@ -20,11 +20,24 @@ public class AlipaySecurityProdTemplateCreateResponse extends AlipayResponse {
 	@ApiField("template_code")
 	private String templateCode;
 
+	/** 
+	 * 版本号
+	 */
+	@ApiField("version_no")
+	private String versionNo;
+
 	public void setTemplateCode(String templateCode) {
 		this.templateCode = templateCode;
 	}
 	public String getTemplateCode( ) {
 		return this.templateCode;
+	}
+
+	public void setVersionNo(String versionNo) {
+		this.versionNo = versionNo;
+	}
+	public String getVersionNo( ) {
+		return this.versionNo;
 	}
 
 }

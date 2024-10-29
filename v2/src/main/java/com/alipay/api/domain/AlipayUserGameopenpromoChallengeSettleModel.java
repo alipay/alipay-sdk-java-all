@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserGameopenpromoChallengeSettleModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3576731534122346313L;
+	private static final long serialVersionUID = 2476538378261538714L;
 
 	/**
 	 * 用户副本挑战实际的开始时间

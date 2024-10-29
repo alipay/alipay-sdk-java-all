@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudCloudrunStaticsiteIndexpageModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5847643873716547764L;
+	private static final long serialVersionUID = 3592324449238746186L;
 
 	/** 
 	 * 本次变更成功的域名列表

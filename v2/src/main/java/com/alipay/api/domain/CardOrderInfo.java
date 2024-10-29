@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 售卖订单信息
  *
  * @author auto create
- * @since 1.0, 2024-10-12 19:28:54
+ * @since 1.0, 2024-10-18 16:23:54
  */
 public class CardOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1278696629134786516L;
+	private static final long serialVersionUID = 1314721557762331587L;
 
 	/**
 	 * 售卖订单的余额面额，单位分

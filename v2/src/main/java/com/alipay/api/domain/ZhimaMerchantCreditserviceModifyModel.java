@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 芝麻信用信用服务版本修改
  *
  * @author auto create
- * @since 1.0, 2024-03-11 15:17:02
+ * @since 1.0, 2024-10-24 19:34:16
  */
 public class ZhimaMerchantCreditserviceModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6516797382919391291L;
+	private static final long serialVersionUID = 2246213391327898991L;
 
 	/**
 	 * 信用服务基础信息配置，为必传字段。此字段为复杂模型，其中服务名称和服务logo为必传属性。
@@ -24,6 +27,13 @@ public class ZhimaMerchantCreditserviceModifyModel extends AlipayObject {
 	 */
 	@ApiField("credit_service_id")
 	private String creditServiceId;
+
+	/**
+	 * 多评估方案信用服务风控配置。此字段为复杂模型。
+	 */
+	@ApiListField("evaluation_risk_configs")
+	@ApiField("risk_api_config")
+	private List<RiskApiConfig> evaluationRiskConfigs;
 
 	/**
 	 * 拓展字段
@@ -55,6 +65,13 @@ public class ZhimaMerchantCreditserviceModifyModel extends AlipayObject {
 	}
 	public void setCreditServiceId(String creditServiceId) {
 		this.creditServiceId = creditServiceId;
+	}
+
+	public List<RiskApiConfig> getEvaluationRiskConfigs() {
+		return this.evaluationRiskConfigs;
+	}
+	public void setEvaluationRiskConfigs(List<RiskApiConfig> evaluationRiskConfigs) {
+		this.evaluationRiskConfigs = evaluationRiskConfigs;
 	}
 
 	public ExtInfoApiConfig getExtInfoConfig() {

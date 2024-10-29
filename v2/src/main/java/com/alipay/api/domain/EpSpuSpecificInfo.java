@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业SPU品类查询的专用信息
  *
  * @author auto create
- * @since 1.0, 2024-10-12 10:50:34
+ * @since 1.0, 2024-10-23 16:27:17
  */
 public class EpSpuSpecificInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4567759249515768241L;
+	private static final long serialVersionUID = 8356532121379324619L;
 
 	/**
 	 * 1688一级类目代码
@@ -38,6 +38,12 @@ public class EpSpuSpecificInfo extends AlipayObject {
 	private String cate1NameStd;
 
 	/**
+	 * 1688一级类目下商品数
+	 */
+	@ApiField("cate_1_pro_cnt")
+	private Long cate1ProCnt;
+
+	/**
 	 * 1688二级类目代码
 	 */
 	@ApiField("cate_2_code_cbu")
@@ -62,6 +68,12 @@ public class EpSpuSpecificInfo extends AlipayObject {
 	private String cate2NameStd;
 
 	/**
+	 * 1688二级类目下商品数
+	 */
+	@ApiField("cate_2_pro_cnt")
+	private Long cate2ProCnt;
+
+	/**
 	 * 1688三级类目代码
 	 */
 	@ApiField("cate_3_code_cbu")
@@ -74,9 +86,22 @@ public class EpSpuSpecificInfo extends AlipayObject {
 	private String cate3NameCbu;
 
 	/**
-	 * 置信度
+	 * 1688三级类目下商品数
+	 */
+	@ApiField("cate_3_pro_cnt")
+	private Long cate3ProCnt;
+
+	/**
+	 * 置信度(商标标准）
+	 */
+	@ApiField("confidence")
+	private String confidence;
+
+	/**
+	 * 置信度 当前字段已废弃(字段拼写有误，需要升级新增)
 	 */
 	@ApiField("confindence")
+	@Deprecated
 	private String confindence;
 
 	/**
@@ -125,6 +150,13 @@ public class EpSpuSpecificInfo extends AlipayObject {
 		this.cate1NameStd = cate1NameStd;
 	}
 
+	public Long getCate1ProCnt() {
+		return this.cate1ProCnt;
+	}
+	public void setCate1ProCnt(Long cate1ProCnt) {
+		this.cate1ProCnt = cate1ProCnt;
+	}
+
 	public String getCate2CodeCbu() {
 		return this.cate2CodeCbu;
 	}
@@ -153,6 +185,13 @@ public class EpSpuSpecificInfo extends AlipayObject {
 		this.cate2NameStd = cate2NameStd;
 	}
 
+	public Long getCate2ProCnt() {
+		return this.cate2ProCnt;
+	}
+	public void setCate2ProCnt(Long cate2ProCnt) {
+		this.cate2ProCnt = cate2ProCnt;
+	}
+
 	public String getCate3CodeCbu() {
 		return this.cate3CodeCbu;
 	}
@@ -165,6 +204,20 @@ public class EpSpuSpecificInfo extends AlipayObject {
 	}
 	public void setCate3NameCbu(String cate3NameCbu) {
 		this.cate3NameCbu = cate3NameCbu;
+	}
+
+	public Long getCate3ProCnt() {
+		return this.cate3ProCnt;
+	}
+	public void setCate3ProCnt(Long cate3ProCnt) {
+		this.cate3ProCnt = cate3ProCnt;
+	}
+
+	public String getConfidence() {
+		return this.confidence;
+	}
+	public void setConfidence(String confidence) {
+		this.confidence = confidence;
 	}
 
 	public String getConfindence() {

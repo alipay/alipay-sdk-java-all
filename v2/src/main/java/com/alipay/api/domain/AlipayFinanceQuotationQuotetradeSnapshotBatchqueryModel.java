@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 股票实时报价(快照)查询
  *
  * @author auto create
- * @since 1.0, 2020-12-02 23:08:12
+ * @since 1.0, 2024-10-28 17:16:55
  */
 public class AlipayFinanceQuotationQuotetradeSnapshotBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7369994443149849433L;
+	private static final long serialVersionUID = 3356649879583127712L;
 
 	/**
 	 * 股票唯一编码，symbol=code.market

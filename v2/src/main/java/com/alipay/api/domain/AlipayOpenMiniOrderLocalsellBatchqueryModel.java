@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询售卖商品账单信息列表
  *
  * @author auto create
- * @since 1.0, 2024-08-09 13:52:31
+ * @since 1.0, 2024-10-22 17:11:19
  */
 public class AlipayOpenMiniOrderLocalsellBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2556534184865513212L;
+	private static final long serialVersionUID = 7745891726828546346L;
 
 	/**
 	 * 订单创建结束日期，格式为yyyy-MM-dd HH:mm:ss

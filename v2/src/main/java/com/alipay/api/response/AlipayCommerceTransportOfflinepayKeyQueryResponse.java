@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportOfflinepayKeyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3635346383432425948L;
+	private static final long serialVersionUID = 3583165892151728963L;
 
 	/** 
 	 * 支付宝脱机交易公钥列表。列表中每一项为一个有效的支付宝公钥信息, 其中id字段表示支付宝公钥id。

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudCloudbaseIdeMainaccountVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6632684859443951863L;
+	private static final long serialVersionUID = 1799324698775458259L;
 
 	/** 
 	 * 校验结果

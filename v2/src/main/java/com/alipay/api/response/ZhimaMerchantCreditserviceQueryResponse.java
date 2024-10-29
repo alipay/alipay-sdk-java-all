@@ -1,10 +1,12 @@
 package com.alipay.api.response;
 
 import java.util.Date;
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.BaseInfoApiConfig;
-import com.alipay.api.domain.PromiseApiConfig;
 import com.alipay.api.domain.RiskApiConfig;
+import com.alipay.api.domain.PromiseApiConfig;
 
 import com.alipay.api.AlipayResponse;
 
@@ -12,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.merchant.creditservice.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-15 20:39:05
+ * @since 1.0, 2024-10-25 13:57:20
  */
 public class ZhimaMerchantCreditserviceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3771929656414422255L;
+	private static final long serialVersionUID = 2398982277435652787L;
 
 	/** 
 	 * 信用服务基础信息配置
@@ -35,6 +37,13 @@ public class ZhimaMerchantCreditserviceQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("credit_service_id")
 	private String creditServiceId;
+
+	/** 
+	 * 多评估方案信用服务风控配置。此字段为复杂模型。
+	 */
+	@ApiListField("evaluation_risk_configs")
+	@ApiField("risk_api_config")
+	private List<RiskApiConfig> evaluationRiskConfigs;
 
 	/** 
 	 * 信用服务的创建时间
@@ -151,6 +160,13 @@ public class ZhimaMerchantCreditserviceQueryResponse extends AlipayResponse {
 	}
 	public String getCreditServiceId( ) {
 		return this.creditServiceId;
+	}
+
+	public void setEvaluationRiskConfigs(List<RiskApiConfig> evaluationRiskConfigs) {
+		this.evaluationRiskConfigs = evaluationRiskConfigs;
+	}
+	public List<RiskApiConfig> getEvaluationRiskConfigs( ) {
+		return this.evaluationRiskConfigs;
 	}
 
 	public void setGmtCreate(Date gmtCreate) {

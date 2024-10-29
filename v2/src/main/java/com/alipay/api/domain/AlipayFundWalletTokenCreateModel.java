@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户绑定申请token
  *
  * @author auto create
- * @since 1.0, 2024-09-18 14:33:19
+ * @since 1.0, 2024-10-28 22:45:16
  */
 public class AlipayFundWalletTokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4527963248848411586L;
+	private static final long serialVersionUID = 4752434335345952655L;
 
 	/**
 	 * alipay.user.agreement.page.sign返回的代扣签约串
@@ -20,13 +20,17 @@ public class AlipayFundWalletTokenCreateModel extends AlipayObject {
 	private String agreementPaySign;
 
 	/**
-	 * 1. 格式必须为： https://开头域名链接地址 或者 alipays://开头的支付宝小程序链接。 2. 需要保证传入的 returnUrl 链接能够有效访问
+	 * 结果页的跳转地址。
+1. 跳转类型为dont_back_app，back_url就不做跳端，back_url格式必须为： https://开头域名链接地址或者 alipays://开头的支付宝小程序链接
+2、跳转类型为back_app，back_url就做跳端，不做格式校验
 	 */
 	@ApiField("back_url")
 	private String backUrl;
 
 	/**
-	 * 根据跳转类型来区分用户开户完成之后是否回跳来源app
+	 * 用于开户完成之后的地址跳转（目前有跳端、不跳端）
+1、类型为back_app，代表back_url按照跳端方式拼接
+2、类型为dont_back_app，back_url就不跳端
 	 */
 	@ApiField("back_url_type")
 	private String backUrlType;

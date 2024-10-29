@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 摩卡营销-SRTA活动匿名人群查询
  *
  * @author auto create
- * @since 1.0, 2022-11-23 19:18:50
+ * @since 1.0, 2024-10-16 18:55:34
  */
 public class AnttechMorseMarketingSrtaNanonymousQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2298347386849153965L;
+	private static final long serialVersionUID = 1474928196275534471L;
 
 	/**
 	 * 多个手机号hash后的值，以为逗号分隔

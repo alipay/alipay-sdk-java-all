@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝就业工资条信息兑换
  *
  * @author auto create
- * @since 1.0, 2024-09-12 17:45:17
+ * @since 1.0, 2024-10-25 14:09:53
  */
 public class AlipayEbppIndustryJobPayslipQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8467884532294115697L;
+	private static final long serialVersionUID = 4564973478651921436L;
 
 	/**
 	 * 业务编号

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业SPU品类查询服务通用版
  *
  * @author auto create
- * @since 1.0, 2024-10-12 10:50:18
+ * @since 1.0, 2024-10-23 16:28:18
  */
 public class ZhimaCreditEpSpuinfoGeneralQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8393515526193624342L;
+	private static final long serialVersionUID = 6155541595362294944L;
 
 	/**
 	 * 社会统一信用代码、注册号、企业名可任选一个入参，建议优先使用统代

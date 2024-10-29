@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 钱包代扣支付
  *
  * @author auto create
- * @since 1.0, 2024-07-29 15:52:52
+ * @since 1.0, 2024-10-18 16:03:22
  */
 public class AlipayCloudFundTradePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3819195328777628294L;
+	private static final long serialVersionUID = 6621131545749641155L;
 
 	/**
 	 * 代扣协议号, 对应于签约时，支付宝返回的协议号

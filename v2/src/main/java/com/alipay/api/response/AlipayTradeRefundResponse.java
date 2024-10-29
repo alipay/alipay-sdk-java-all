@@ -15,11 +15,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.refund response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-09 16:17:05
+ * @since 1.0, 2024-10-28 16:17:22
  */
 public class AlipayTradeRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4176962249489482427L;
+	private static final long serialVersionUID = 8142721955197674791L;
 
 	/** 
 	 * 用户的登录id
@@ -68,6 +68,12 @@ public class AlipayTradeRefundResponse extends AlipayResponse {
 	 */
 	@ApiField("out_trade_no")
 	private String outTradeNo;
+
+	/** 
+	 * 当用户使用芝麻信用先享后付时，且当前的操作为预授权撤销动作时，会返回该字段，代表当前撤销的预授权金额，单位元。
+	 */
+	@ApiField("pre_auth_cancel_fee")
+	private String preAuthCancelFee;
 
 	/** 
 	 * 本次退款金额中买家退款金额;单位：元。
@@ -224,6 +230,13 @@ public class AlipayTradeRefundResponse extends AlipayResponse {
 	}
 	public String getOutTradeNo( ) {
 		return this.outTradeNo;
+	}
+
+	public void setPreAuthCancelFee(String preAuthCancelFee) {
+		this.preAuthCancelFee = preAuthCancelFee;
+	}
+	public String getPreAuthCancelFee( ) {
+		return this.preAuthCancelFee;
 	}
 
 	public void setPresentRefundBuyerAmount(String presentRefundBuyerAmount) {

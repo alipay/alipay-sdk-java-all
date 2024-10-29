@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
 修改路由策略到R
  *
  * @author auto create
- * @since 1.0, 2024-10-10 16:20:54
+ * @since 1.0, 2024-10-28 15:52:18
  */
 public class AlipayTradeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7188238489752751173L;
+	private static final long serialVersionUID = 2515162373873936946L;
 
 	/**
 	 * 银行间联模式下有用，其它场景请不要使用；

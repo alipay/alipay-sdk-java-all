@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CrowdExportData extends AlipayObject {
 
-	private static final long serialVersionUID = 8459354962437842698L;
+	private static final long serialVersionUID = 4191745133254329329L;
 
 	/**
 	 * 人群的业务日期

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ShopMaterialsValidInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6754185713555471143L;
+	private static final long serialVersionUID = 5563652864574135553L;
 
 	/**
 	 * 物料的nfc芯片id

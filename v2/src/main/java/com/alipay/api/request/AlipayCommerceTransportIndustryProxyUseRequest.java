@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.industry.proxy.use request
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:28:33
+ * @since 1.0, 2024-10-25 11:03:51
  */
 public class AlipayCommerceTransportIndustryProxyUseRequest implements AlipayRequest<AlipayCommerceTransportIndustryProxyUseResponse> {
 

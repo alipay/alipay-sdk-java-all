@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户入驻信息
  *
  * @author auto create
- * @since 1.0, 2024-08-20 18:01:36
+ * @since 1.0, 2024-10-25 11:07:16
  */
 public class MerchantSettleInInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2662843417561754625L;
+	private static final long serialVersionUID = 2718754473287785189L;
 
 	/**
 	 * 创建时间
@@ -28,6 +28,12 @@ public class MerchantSettleInInfo extends AlipayObject {
 	 */
 	@ApiField("gmt_modified")
 	private Date gmtModified;
+
+	/**
+	 * 间连周期卡开通状态
+	 */
+	@ApiField("indirect_period_card_status")
+	private String indirectPeriodCardStatus;
 
 	/**
 	 * 最新的申请单
@@ -78,6 +84,13 @@ public class MerchantSettleInInfo extends AlipayObject {
 	}
 	public void setGmtModified(Date gmtModified) {
 		this.gmtModified = gmtModified;
+	}
+
+	public String getIndirectPeriodCardStatus() {
+		return this.indirectPeriodCardStatus;
+	}
+	public void setIndirectPeriodCardStatus(String indirectPeriodCardStatus) {
+		this.indirectPeriodCardStatus = indirectPeriodCardStatus;
 	}
 
 	public List<MerchantApplyInfo> getLastApplyOrders() {

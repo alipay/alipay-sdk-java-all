@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.template.sync response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-16 09:32:55
+ * @since 1.0, 2024-10-28 15:02:22
  */
 public class AlipaySecurityProdTemplateSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3127634473374452531L;
+	private static final long serialVersionUID = 3114595175483754612L;
 
 	/** 
 	 * 模板模板编码
@@ -20,11 +20,24 @@ public class AlipaySecurityProdTemplateSyncResponse extends AlipayResponse {
 	@ApiField("tgt_template_code")
 	private String tgtTemplateCode;
 
+	/** 
+	 * 版本号
+	 */
+	@ApiField("version_no")
+	private String versionNo;
+
 	public void setTgtTemplateCode(String tgtTemplateCode) {
 		this.tgtTemplateCode = tgtTemplateCode;
 	}
 	public String getTgtTemplateCode( ) {
 		return this.tgtTemplateCode;
+	}
+
+	public void setVersionNo(String versionNo) {
+		this.versionNo = versionNo;
+	}
+	public String getVersionNo( ) {
+		return this.versionNo;
 	}
 
 }

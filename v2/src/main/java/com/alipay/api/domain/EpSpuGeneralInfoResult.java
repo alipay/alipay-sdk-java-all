@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 企业SPU品类通用的信息结果集
  *
  * @author auto create
- * @since 1.0, 2024-10-12 10:50:18
+ * @since 1.0, 2024-10-23 16:28:18
  */
 public class EpSpuGeneralInfoResult extends AlipayObject {
 
-	private static final long serialVersionUID = 8666311649491228218L;
+	private static final long serialVersionUID = 6563118723389164778L;
 
 	/**
 	 * 经营类型

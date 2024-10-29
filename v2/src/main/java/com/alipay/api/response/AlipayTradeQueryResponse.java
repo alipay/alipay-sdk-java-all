@@ -23,11 +23,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-10 16:41:16
+ * @since 1.0, 2024-10-28 16:17:22
  */
 public class AlipayTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3868268638691749356L;
+	private static final long serialVersionUID = 3129344713256786281L;
 
 	/** 
 	 * 交易附加状态：
@@ -315,6 +315,12 @@ json格式。
 	 */
 	@ApiField("point_amount")
 	private String pointAmount;
+
+	/** 
+	 * 当用户使用芝麻信用先享后付时，会返回该字段，代表整笔交易的原始待履约金额，单位元。
+	 */
+	@ApiField("pre_auth_pay_amount")
+	private String preAuthPayAmount;
 
 	/** 
 	 * 实收金额，单位为元，两位小数。该金额为本笔交易，商户账户能够实际收到的金额
@@ -741,6 +747,13 @@ json格式。
 	}
 	public String getPointAmount( ) {
 		return this.pointAmount;
+	}
+
+	public void setPreAuthPayAmount(String preAuthPayAmount) {
+		this.preAuthPayAmount = preAuthPayAmount;
+	}
+	public String getPreAuthPayAmount( ) {
+		return this.preAuthPayAmount;
 	}
 
 	public void setReceiptAmount(String receiptAmount) {

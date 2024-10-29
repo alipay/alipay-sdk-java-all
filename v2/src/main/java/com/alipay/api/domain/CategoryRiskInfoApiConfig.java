@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 类目风控配置
  *
  * @author auto create
- * @since 1.0, 2024-03-11 15:17:01
+ * @since 1.0, 2024-10-24 19:33:52
  */
 public class CategoryRiskInfoApiConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 7614417136472411894L;
+	private static final long serialVersionUID = 3695414334163968385L;
 
 	/**
 	 * 风控类目code，为必传字段
@@ -44,7 +44,7 @@ public class CategoryRiskInfoApiConfig extends AlipayObject {
 	private Boolean partDepositSwitch;
 
 	/**
-	 * 综合风险评估，可取值：A1(高准入，满足芝麻分的情况下，通过率在90%以上)；A2(中准入，满足芝麻分情况下，通过率在80%以上)；A3(低准入，满足芝麻分情况下，通过率在60%以上)。
+	 * 综合风险评估，可取值：A1(高准入，满足芝麻分的情况下，通过率在90%以上)；A2(中准入，满足芝麻分情况下，通过率在80%以上)；A3(低准入，满足芝麻分情况下，通过率在60%以上)。注意：奢侈品类租赁时，取值如下，A1(低准入，满足芝麻分的情况下，通过率在40%~60%)；A2(中准入，满足芝麻分情况下，通过率在50%~70%)；A3(高准入，满足芝麻分情况下，通过率在60%~80%)。
 	 */
 	@ApiField("risk_policy")
 	private String riskPolicy;

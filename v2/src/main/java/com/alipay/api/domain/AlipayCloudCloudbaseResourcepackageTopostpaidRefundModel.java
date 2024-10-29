@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 套餐转按量退费
  *
  * @author auto create
- * @since 1.0, 2024-08-19 10:35:55
+ * @since 1.0, 2024-10-22 15:18:46
  */
 public class AlipayCloudCloudbaseResourcepackageTopostpaidRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4373955731675426162L;
+	private static final long serialVersionUID = 2497126585917421722L;
 
 	/**
 	 * 小程序云应用APPID

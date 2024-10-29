@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.terminal.edgecloud.heyagent.create request
  * 
  * @author auto create
- * @since 1.0, 2024-08-30 15:05:04
+ * @since 1.0, 2024-10-28 17:50:13
  */
 public class AlipayTerminalEdgecloudHeyagentCreateRequest implements AlipayRequest<AlipayTerminalEdgecloudHeyagentCreateResponse> {
 

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户提报小区信息时用于描述小区信息的模型，包含小区信息、小区基本信息、小区图片信息、小区地址信息、小区设施、小区介绍。
  *
  * @author auto create
- * @since 1.0, 2024-09-14 19:50:53
+ * @since 1.0, 2024-10-16 19:47:18
  */
 public class RentRoomCommunityInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2142522172444648465L;
+	private static final long serialVersionUID = 5432533643524981426L;
 
 	/**
 	 * 包含小区的位置信息，经纬度、省市区编码、详情地址。

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 复制模板版本
  *
  * @author auto create
- * @since 1.0, 2024-06-11 19:50:50
+ * @since 1.0, 2024-10-28 17:48:12
  */
 public class AlipaySecurityProdTemplateVersionCopyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5412583499737482542L;
+	private static final long serialVersionUID = 7318447877825849726L;
 
 	/**
 	 * 操作人工号

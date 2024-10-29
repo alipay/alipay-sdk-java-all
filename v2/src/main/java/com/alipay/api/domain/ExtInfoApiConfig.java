@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 拓展字段，规定具体的key进行传入
  *
  * @author auto create
- * @since 1.0, 2024-03-11 15:17:02
+ * @since 1.0, 2024-10-23 14:57:19
  */
 public class ExtInfoApiConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 1144956893173119459L;
+	private static final long serialVersionUID = 4544294462146782432L;
 
 	/**
 	 * 经营的小程序id
@@ -20,9 +20,10 @@ public class ExtInfoApiConfig extends AlipayObject {
 	private String miniAppId;
 
 	/**
-	 * 主体Pid
+	 * 主体Pid，用于更新时传入 当前字段已废弃(本字段在接口中已同步到上一层)
 	 */
 	@ApiField("sub_pid")
+	@Deprecated
 	private String subPid;
 
 	public String getMiniAppId() {

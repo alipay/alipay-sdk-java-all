@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 安心付账单费用信息
  *
  * @author auto create
- * @since 1.0, 2024-09-25 14:35:51
+ * @since 1.0, 2024-10-29 15:14:52
  */
 public class BillFeeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8583315471148776976L;
+	private static final long serialVersionUID = 7779293429894475723L;
 
 	/**
 	 * 收费金额，单位：分

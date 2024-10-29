@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业SPU品类的通用信息
  *
  * @author auto create
- * @since 1.0, 2024-10-12 10:50:18
+ * @since 1.0, 2024-10-23 16:28:18
  */
 public class EpSpuGeneralInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7813837414488369989L;
+	private static final long serialVersionUID = 7214599439165573595L;
 
 	/**
 	 * 标准一级类目代码
@@ -38,9 +38,16 @@ public class EpSpuGeneralInfo extends AlipayObject {
 	private String cate2NameStd;
 
 	/**
-	 * 置信度
+	 * 置信度(商标标准）
+	 */
+	@ApiField("confidence")
+	private String confidence;
+
+	/**
+	 * 置信度 当前字段已废弃(字段拼写错误，升级新增)
 	 */
 	@ApiField("confindence")
+	@Deprecated
 	private String confindence;
 
 	/**
@@ -87,6 +94,13 @@ public class EpSpuGeneralInfo extends AlipayObject {
 	}
 	public void setCate2NameStd(String cate2NameStd) {
 		this.cate2NameStd = cate2NameStd;
+	}
+
+	public String getConfidence() {
+		return this.confidence;
+	}
+	public void setConfidence(String confidence) {
+		this.confidence = confidence;
 	}
 
 	public String getConfindence() {

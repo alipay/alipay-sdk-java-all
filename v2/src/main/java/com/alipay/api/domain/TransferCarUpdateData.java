@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车辆更新数据对象，主要更新 status 和 price 字段
  *
  * @author auto create
- * @since 1.0, 2024-08-19 14:21:52
+ * @since 1.0, 2024-10-22 10:40:19
  */
 public class TransferCarUpdateData extends AlipayObject {
 
-	private static final long serialVersionUID = 6261954429527245853L;
+	private static final long serialVersionUID = 2389115567878972259L;
+
+	/**
+	 * 活动结束时间
+	 */
+	@ApiField("activity_end_date")
+	private Date activityEndDate;
 
 	/**
 	 * 商户数据修改的时间，商户数据发生变化，该值必须更新，单位时间戳
@@ -38,6 +44,23 @@ public class TransferCarUpdateData extends AlipayObject {
 	 */
 	@ApiField("status")
 	private Long status;
+
+	/**
+	 * 商户车辆展示状态
+0 下线态
+1 上线态/待活动态度
+2 活动中
+3 活动结束
+	 */
+	@ApiField("vehicle_display_status")
+	private Long vehicleDisplayStatus;
+
+	public Date getActivityEndDate() {
+		return this.activityEndDate;
+	}
+	public void setActivityEndDate(Date activityEndDate) {
+		this.activityEndDate = activityEndDate;
+	}
 
 	public Date getIsvUpdateDate() {
 		return this.isvUpdateDate;
@@ -65,6 +88,13 @@ public class TransferCarUpdateData extends AlipayObject {
 	}
 	public void setStatus(Long status) {
 		this.status = status;
+	}
+
+	public Long getVehicleDisplayStatus() {
+		return this.vehicleDisplayStatus;
+	}
+	public void setVehicleDisplayStatus(Long vehicleDisplayStatus) {
+		this.vehicleDisplayStatus = vehicleDisplayStatus;
 	}
 
 }

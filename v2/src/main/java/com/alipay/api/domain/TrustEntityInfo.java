@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 可信主体信息
  *
  * @author auto create
- * @since 1.0, 2024-09-02 21:57:15
+ * @since 1.0, 2024-10-23 17:07:22
  */
 public class TrustEntityInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3619527495198294387L;
+	private static final long serialVersionUID = 3197653525687115467L;
 
 	/**
 	 * 主体证件号，企业社会信用编码等

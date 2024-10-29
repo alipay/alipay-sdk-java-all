@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻商业信用履约计划创建
  *
  * @author auto create
- * @since 1.0, 2024-09-18 16:42:57
+ * @since 1.0, 2024-10-24 20:56:52
  */
 public class ZhimaCreditBusinessPlanCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5456868627494593754L;
+	private static final long serialVersionUID = 2175266398278139531L;
 
 	/**
 	 * 商户订单号。 商家自定义需保证在商户端不重复。仅支持字母、数字、下划线。
@@ -30,6 +30,12 @@ public class ZhimaCreditBusinessPlanCreateModel extends AlipayObject {
 	 */
 	@ApiField("plan_mode")
 	private String planMode;
+
+	/**
+	 * 履约计划子模式
+	 */
+	@ApiField("plan_sub_mode")
+	private String planSubMode;
 
 	/**
 	 * 日、周、月、季分期模式时间传输需要按照对应的时间间隔传输。
@@ -68,6 +74,13 @@ public class ZhimaCreditBusinessPlanCreateModel extends AlipayObject {
 	}
 	public void setPlanMode(String planMode) {
 		this.planMode = planMode;
+	}
+
+	public String getPlanSubMode() {
+		return this.planSubMode;
+	}
+	public void setPlanSubMode(String planSubMode) {
+		this.planSubMode = planSubMode;
 	}
 
 	public String getPlanType() {

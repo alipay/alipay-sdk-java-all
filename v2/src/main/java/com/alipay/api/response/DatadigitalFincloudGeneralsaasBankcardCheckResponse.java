@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.fincloud.generalsaas.bankcard.check response.
  * 
  * @author auto create
- * @since 1.0, 2024-09-24 09:17:10
+ * @since 1.0, 2024-10-28 10:54:38
  */
 public class DatadigitalFincloudGeneralsaasBankcardCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2624848784473914767L;
+	private static final long serialVersionUID = 1313649375139321725L;
 
 	/** 
 	 * 认证单据号，用于认证问题排查

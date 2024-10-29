@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建并启动云渲染服务
  *
  * @author auto create
- * @since 1.0, 2024-06-13 14:43:36
+ * @since 1.0, 2024-10-28 14:52:52
  */
 public class AlipayTerminalEdgecloudHeyagentCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3347267687668728669L;
+	private static final long serialVersionUID = 5815859821654889841L;
 
 	/**
 	 * 是否是acr
@@ -42,6 +42,12 @@ public class AlipayTerminalEdgecloudHeyagentCreateModel extends AlipayObject {
 	 */
 	@ApiField("biz_name")
 	private String bizName;
+
+	/**
+	 * 默认不填为在线模式，离线模式必传
+	 */
+	@ApiField("boot_type")
+	private String bootType;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识
@@ -100,6 +106,13 @@ public class AlipayTerminalEdgecloudHeyagentCreateModel extends AlipayObject {
 	}
 	public void setBizName(String bizName) {
 		this.bizName = bizName;
+	}
+
+	public String getBootType() {
+		return this.bootType;
+	}
+	public void setBootType(String bootType) {
+		this.bootType = bootType;
 	}
 
 	public String getOpenId() {

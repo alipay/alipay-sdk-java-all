@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.fund.bind.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-09-02 11:00:12
+ * @since 1.0, 2024-10-16 16:28:13
  */
 public class AlipayCommerceFundBindCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6116173983645324681L;
+	private static final long serialVersionUID = 3573849564627632468L;
 
 	/** 
 	 * 本此绑卡操作是否幂等。true表示该out_bind_no已经生成过schema，此时会返回上次已生成的schema

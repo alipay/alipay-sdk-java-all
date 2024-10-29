@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.community.partner.sync response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 16:38:04
+ * @since 1.0, 2024-10-28 20:29:40
  */
 public class AlipayOpenAppCommunityPartnerSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6824264259117458871L;
+	private static final long serialVersionUID = 5671868753766556667L;
 
 	/** 
 	 * 目标对象数据

@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 订单分期
  *
  * @author auto create
- * @since 1.0, 2024-04-23 00:21:53
+ * @since 1.0, 2024-10-22 14:07:16
  */
 public class AlipayOpenMiniOrderInstallmentCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4654212733811569958L;
+	private static final long serialVersionUID = 8166688933884939991L;
 
 	/**
 	 * 续租场景分期数，当分期类型为RELET时，该字段必填
@@ -24,6 +27,13 @@ public class AlipayOpenMiniOrderInstallmentCreateModel extends AlipayObject {
 	 */
 	@ApiField("installment_no")
 	private String installmentNo;
+
+	/**
+	 * 分期号信息列表，多期合并主动支付场景传入
+	 */
+	@ApiListField("installment_no_info_list")
+	@ApiField("installment_no_info_d_t_o")
+	private List<InstallmentNoInfoDTO> installmentNoInfoList;
 
 	/**
 	 * 分期数类型
@@ -128,6 +138,13 @@ true:已完结
 	}
 	public void setInstallmentNo(String installmentNo) {
 		this.installmentNo = installmentNo;
+	}
+
+	public List<InstallmentNoInfoDTO> getInstallmentNoInfoList() {
+		return this.installmentNoInfoList;
+	}
+	public void setInstallmentNoInfoList(List<InstallmentNoInfoDTO> installmentNoInfoList) {
+		this.installmentNoInfoList = installmentNoInfoList;
 	}
 
 	public String getInstallmentNoType() {

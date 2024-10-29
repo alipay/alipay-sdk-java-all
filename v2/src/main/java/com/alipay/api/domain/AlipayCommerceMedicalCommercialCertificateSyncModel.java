@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalCommercialCertificateSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2658321218787188438L;
+	private static final long serialVersionUID = 8446248869657915193L;
 
 	/**
 	 * 用户兑换凭证的实际业务时间，默认为系统当前时间

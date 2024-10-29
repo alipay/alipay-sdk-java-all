@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class GroupUserVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3548916666966122899L;
+	private static final long serialVersionUID = 2834948282591213428L;
 
 	/**
 	 * 邀请者的user_id，2088开头的16位数字。

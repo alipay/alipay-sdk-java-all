@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医保支付扩展参数
  *
  * @author auto create
- * @since 1.0, 2023-08-24 11:31:02
+ * @since 1.0, 2024-10-22 19:08:13
  */
 public class InsurancePayExtendParams extends AlipayObject {
 
-	private static final long serialVersionUID = 2154455876895473276L;
+	private static final long serialVersionUID = 4551684524438246777L;
+
+	/**
+	 * 用来表示调用接口的渠道方名称，目前为固定的枚举值
+	 */
+	@ApiField("channel_code")
+	private String channelCode;
 
 	/**
 	 * 医保卡Id；即医保电子凭证授权码
@@ -30,6 +36,13 @@ public class InsurancePayExtendParams extends AlipayObject {
 	 */
 	@ApiField("sys_service_provider_id")
 	private String sysServiceProviderId;
+
+	public String getChannelCode() {
+		return this.channelCode;
+	}
+	public void setChannelCode(String channelCode) {
+		this.channelCode = channelCode;
+	}
 
 	public String getMedicalCardId() {
 		return this.medicalCardId;

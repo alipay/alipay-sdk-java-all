@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RecycleCharityProjectTest extends AlipayObject {
 
-	private static final long serialVersionUID = 6232545475215373484L;
+	private static final long serialVersionUID = 6444733375391311655L;
 
 	/**
 	 * 1111

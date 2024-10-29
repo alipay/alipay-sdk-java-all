@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ssdata.dataservice.risk.deviceidentity.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 19:39:13
+ * @since 1.0, 2024-10-21 11:27:46
  */
 public class SsdataDataserviceRiskDeviceidentityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2231293168797157473L;
+	private static final long serialVersionUID = 8794795364835339611L;
 
 	/** 
 	 * 盗卡盗账户概率，用于识别账号被盗的风险，数值越大风险概率越大，范围0~1，小数点后保留6有效数

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.rentroom.area.modify response.
  * 
  * @author auto create
- * @since 1.0, 2024-09-14 19:52:10
+ * @since 1.0, 2024-10-25 13:52:48
  */
 public class AlipayOpenAppRentroomAreaModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6463593888183287588L;
+	private static final long serialVersionUID = 3636242399358849883L;
 
 	/** 
 	 * 小区ID

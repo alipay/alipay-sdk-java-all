@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: datadigital.fincloud.generalsaas.bankcard.check request
  * 
  * @author auto create
- * @since 1.0, 2024-09-24 09:17:10
+ * @since 1.0, 2024-10-28 10:54:38
  */
 public class DatadigitalFincloudGeneralsaasBankcardCheckRequest implements AlipayRequest<DatadigitalFincloudGeneralsaasBankcardCheckResponse> {
 

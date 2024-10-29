@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序云AI助手服务配置查询
  *
  * @author auto create
- * @since 1.0, 2024-07-15 16:20:57
+ * @since 1.0, 2024-10-23 21:10:17
  */
 public class AlipayCloudCloudpromoAssistantServiceconfQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4129456142943924749L;
+	private static final long serialVersionUID = 5496475588327772465L;
 
 	/**
 	 * 场景类型

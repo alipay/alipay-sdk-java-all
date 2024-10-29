@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.rentroom.area.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-09-14 19:52:10
+ * @since 1.0, 2024-10-25 15:28:16
  */
 public class AlipayOpenAppRentroomAreaQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8781651338133851272L;
+	private static final long serialVersionUID = 1449816491312194696L;
 
 	/** 
 	 * 提报的公寓信息

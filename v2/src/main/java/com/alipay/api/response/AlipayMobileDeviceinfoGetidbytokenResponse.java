@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.mobile.deviceinfo.getidbytoken response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:27:35
+ * @since 1.0, 2024-10-17 15:30:03
  */
 public class AlipayMobileDeviceinfoGetidbytokenResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5542434282553114919L;
+	private static final long serialVersionUID = 5251559565686684387L;
 
 	/** 
 	 * 蚂蚁金服集团生成的设备id

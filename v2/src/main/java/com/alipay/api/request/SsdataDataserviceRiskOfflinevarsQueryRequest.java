@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ssdata.dataservice.risk.offlinevars.query request
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 19:39:10
+ * @since 1.0, 2024-10-21 11:27:32
  */
 public class SsdataDataserviceRiskOfflinevarsQueryRequest implements AlipayRequest<SsdataDataserviceRiskOfflinevarsQueryResponse> {
 

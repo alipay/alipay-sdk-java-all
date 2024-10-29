@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.image.enhance.upload request
  * 
  * @author auto create
- * @since 1.0, 2024-07-26 10:32:03
+ * @since 1.0, 2024-10-22 14:52:20
  */
 public class AlipayMarketingImageEnhanceUploadRequest implements AlipayUploadRequest<AlipayMarketingImageEnhanceUploadResponse> {
 

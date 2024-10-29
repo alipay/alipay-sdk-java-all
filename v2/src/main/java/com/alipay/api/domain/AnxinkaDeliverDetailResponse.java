@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 安心卡使用明细详情列表
  *
  * @author auto create
- * @since 1.0, 2024-09-18 16:05:57
+ * @since 1.0, 2024-10-18 17:34:19
  */
 public class AnxinkaDeliverDetailResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 6722391491461891795L;
+	private static final long serialVersionUID = 1757621589195781513L;
 
 	/**
 	 * 代运营服务商佣金，单位：元。精确到小数点后两位
@@ -116,6 +116,13 @@ public class AnxinkaDeliverDetailResponse extends AlipayObject {
 	 */
 	@ApiField("settle_shop_name")
 	private String settleShopName;
+
+	/**
+	 * 第三方结算金额，单位：元。精确到小数点后两位
+产生场景，例如担保服务提前支取，造成核销时会有提前结算金额
+	 */
+	@ApiField("third_settlement_amount")
+	private String thirdSettlementAmount;
 
 	/**
 	 * 支付宝交易号
@@ -264,6 +271,13 @@ public class AnxinkaDeliverDetailResponse extends AlipayObject {
 	}
 	public void setSettleShopName(String settleShopName) {
 		this.settleShopName = settleShopName;
+	}
+
+	public String getThirdSettlementAmount() {
+		return this.thirdSettlementAmount;
+	}
+	public void setThirdSettlementAmount(String thirdSettlementAmount) {
+		this.thirdSettlementAmount = thirdSettlementAmount;
 	}
 
 	public String getTradeNo() {

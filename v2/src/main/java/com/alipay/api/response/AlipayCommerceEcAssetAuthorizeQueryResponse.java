@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.asset.authorize.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-15 22:52:54
+ * @since 1.0, 2024-10-16 14:32:15
  */
 public class AlipayCommerceEcAssetAuthorizeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5275576862877966483L;
+	private static final long serialVersionUID = 5567495161146141938L;
 
 	/** 
 	 * 申请时间，格式"yyyy-MM-dd HH:mm:ss"
@@ -22,19 +22,19 @@ public class AlipayCommerceEcAssetAuthorizeQueryResponse extends AlipayResponse 
 	private Date applyTime;
 
 	/** 
-	 * 授信资产类型
+	 * 企业码定义资产类型
 	 */
 	@ApiField("asset_type")
 	private String assetType;
 
 	/** 
-	 * 剩余可用额度，单位元，精确到分
+	 * 当前可用授信额度，单位元，精确到分
 	 */
 	@ApiField("available_limit")
 	private String availableLimit;
 
 	/** 
-	 * 授信额度，单位元
+	 * 银行审批完成后返回的授信总额度，单位元
 	 */
 	@ApiField("capital_limit")
 	private String capitalLimit;

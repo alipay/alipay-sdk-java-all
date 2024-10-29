@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.overseas.open.pobo.notify request
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:25:19
+ * @since 1.0, 2024-10-29 16:28:08
  */
 public class AlipayOverseasOpenPoboNotifyRequest implements AlipayRequest<AlipayOverseasOpenPoboNotifyResponse> {
 

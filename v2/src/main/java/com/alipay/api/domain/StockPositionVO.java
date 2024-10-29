@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class StockPositionVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5383412557626292465L;
+	private static final long serialVersionUID = 3238422516827218422L;
 
 	/**
 	 * 若返回结果为true表示用户准入该展位，可以展示对应的内容，反之不可以展示对应内容。

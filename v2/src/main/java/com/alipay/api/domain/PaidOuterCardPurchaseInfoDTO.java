@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PaidOuterCardPurchaseInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5833537953221838884L;
+	private static final long serialVersionUID = 5214782995643839554L;
 
 	/**
 	 * 用户购买、升级、降级、续费的操作时间。格式为：yyyy-MM-dd hh:mm:ss
