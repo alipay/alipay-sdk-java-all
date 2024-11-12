@@ -5,7 +5,7 @@ info:
     url: https://openhome.alipay.com/developmentDocument.htm
   description: 支付宝开放平台v3协议文档
   title: 支付宝开放平台API
-  version: 2024-10-16
+  version: 2024-11-12
 servers:
 - description: Production server
   url: https://openapi.alipay.com
@@ -4397,7 +4397,7 @@ paths:
       x-accepts: application/json
   /v3/alipay/ebpp/invoice/expensecontrol/quota/create:
     post:
-      description: 创建余额或者点券
+      description: 创建余额或者点券，可支持批量创建点券
       operationId: alipay.ebpp.invoice.expensecontrol.quota.create
       requestBody:
         content:
@@ -29724,14 +29724,23 @@ components:
           - ACCOUNT_NOT_PERSONAL
           - EMPLOYEE_EMAIL_EXIST
           - EMPLOYEE_EXIST
-          - ECEIF_EMPLOYEE_CERT_EXIST
+          - EMPLOYEE_CERT_EXIST
           - DEPT_UPGRADING
           - MODIFY_AGENCY_OPERATION_FAIL
-          - BUSINESS_VALIDATE_ERROR
           - FREE_SIGN_TOKEN_INVALID
           - FUND_ACCOUNT_WHITE_NOT_EXIST
           - FREE_SIGN_EMPLOYEE_EXISTED
           - EMP_MULTI_ACCOUNT_NOT_SUPPORT
+          - IOT_ENTERPRISE_UNSIGN
+          - IOT_USER_FACE_NOT_EXIST
+          - IOT_USER_FACEPAY_OPEN_FAIL
+          - FUND_SYSTEM_ERROR
+          - FUND_DAILY_JOINENT_REACHED_LIMIT
+          - FUND_INVITE_REPLYING
+          - FUND_SECURITY_CHECK_FAILED
+          - IOT_SYSTEM_ERROR
+          - IOT_APP_UNSIGN
+          - EMPLOYEE_CREATE_ING
           type: string
         links:
           description: 解决方案链接
@@ -29792,8 +29801,8 @@ components:
           example: "20887448493929"
           type: string
         free_sign_token:
-          description: "员工免签约授权密钥；<br/>\t该密钥需联系企业码业务小二申请，当传入密钥有效，则员工添加时会默认签约企业因公付，\
-            并激活员工。"
+          description: "员工签约授权密钥；<br/>\t该密钥需联系企业码业务小二申请，当传入密钥有效，则员工添加时会默认签约企业因公付，并\
+            激活员工。"
           example: 66WertX2ZyMqHDqEmnfe8I00xxu1AK30qIRx12mr9uhJB6oVuyjZcb32QBLWBU+2
           type: string
         identity:
@@ -30028,7 +30037,7 @@ components:
           - NO_AGREEMENT
           - EMPLOYEE_NOT_EXIST
           - ENTERPRISE_NOT_EXIST
-          - PARAM_ERROR
+          - ORG_USER_NOT_EXIST
           type: string
         links:
           description: 解决方案链接
@@ -35053,6 +35062,7 @@ components:
           - PERMISSION_DENIED
           - QUOTA_EXISTS
           - REQUEST_REPEAT
+          - ISSUE_BATCH_NO_DUPLICATE
           type: string
         links:
           description: 解决方案链接
@@ -35088,8 +35098,16 @@ components:
           description: 企业ID
           example: "2088000194958956"
           type: string
+        issue_desc:
+          description: 批量发放时，可填写该字段
+          example: 7号加班餐补发放，支持晚上8:00后消费
+          type: string
+        issue_name:
+          description: 批量发放时，可填写该字段作为发放名称，如果未填写取outer_source_id为默认值
+          example: 7号加班餐
+          type: string
         outer_source_id:
-          description: 外部操作幂等ID（接入方接口调用幂等控制ID）
+          description: 外部操作幂等ID，标识创建额度的唯一性，防止重复创建
           example: TN00000000000001
           type: string
         owner_id:
@@ -35125,16 +35143,19 @@ components:
           example: MEAL
           type: string
         target_type:
-          description: "额度维度\t枚举值：\tEXPENSE_TYPE（费用类型维度），\tRULE_GROUP_AGGREGATION（\
-            规则聚合维度），\tINSTITUTION（制度维度）"
+          description: "额度维度\t枚举值：\tINSTITUTION（制度维度），\tEXPENSE_TYPE（费用类型维度）"
           example: EXPENSE_TYPE
           type: string
       type: object
     AlipayEbppInvoiceExpensecontrolQuotaCreateResponseModel:
       properties:
+        issue_batch_id:
+          description: 发放批次id
+          example: "2023030600152622370000007434"
+          type: string
         quota_id:
-          description: 新增的额度ID
-          example: "1234"
+          description: 创建的额度ID
+          example: "2023030600152622370000007434"
           type: string
       type: object
     AlipayEbppInvoiceExpensecontrolQuotaModifyErrorResponseModel:
@@ -35153,6 +35174,7 @@ components:
           - QUOTA_TYPE_NOT_MODIFY
           - QUOTA_USED
           - COUPON_MODIFY_SHARE_MODE_ERROR
+          - APPROVED_QUOTA_MODIFY_ERROR
           type: string
         links:
           description: 解决方案链接
@@ -37404,10 +37426,9 @@ components:
           example: 2017-07-11
           type: string
         invoice_kind_list:
-          description: "查询票种列表。枚举值如下：\t*PLAIN：增值税电子普通发票；\t*SPECIAL：增值税专用发票；\t*ALL_ELECTRONIC_GENERAL：\
-            \ \"电子发票（普通发票）;\t*ALL_ELECTRONIC_SPECIAL： \"电子发票（专用发票）;\t*PLAIN_INVOICE：\
-            增值税普通发票；\t*PAPER_INVOICE：增值税普通发票（卷式）；\t*SALSE_INVOICE：机动车销售统一发票。"
-          example: PLAIN
+          description: 查询票种列表
+          example: "[\"PLAIN\",\"SPECIAL\",\"ALL_ELECTRONIC_GENERAL\",\"ALL_ELECTRONIC_SPECIAL\"\
+            ]"
           items:
             type: string
           type: array
@@ -53061,9 +53082,9 @@ components:
           example: true
           type: boolean
         mcc_code:
-          description: <a href="https://opendocs.alipay.com/common/02khjv">商家经营类目</a>
+          description: <a href="https://opendocs.alipay.com/common/02khjv">商家经营类目2.0</a>
             中的“经营类目编码”
-          example: A_A03_4582
+          example: A0001_B0001
           type: string
         mini_app_id:
           description: 请输入被签约商家下任意小程序APPID ID编号
@@ -53506,6 +53527,7 @@ components:
           - MERCHANT_CAN_NOT_LOGON
           - MERCHANT_NOT_ENABLED
           - MERCHANT_NOT_CERTIFIED
+          - DUPLICATE_CREATE_APP_NAME
           type: string
         links:
           description: 解决方案链接
@@ -53520,7 +53542,7 @@ components:
     AlipayOpenAgentMiniCreateModel:
       properties:
         app_category_ids:
-          description: "小程序类目，必填，可以支持最多三个类目，最少一个，参数格式：一级类目1_二级类目1;一级类目2_二级类目2。\t类目\
+          description: "小程序类目，选填，可以支持最多三个类目，最少一个，参数格式：一级类目1_二级类目1;一级类目2_二级类目2。\t类目\
             可以通过以下接口查询：alipay.open.mini.category.query"
           example: 107397_107223
           type: string
@@ -53912,6 +53934,7 @@ components:
           - FILE_QUALITY_IS_INVALID
           - AUTH_API_FIELD_IS_AUDITING
           - ACCOUNT_TYPE_ERROR
+          - PRIVACY_FIELD_NOT_EXIST
           type: string
         links:
           description: 解决方案链接
@@ -60326,7 +60349,7 @@ components:
           type: string
         screen_shot_list:
           description: 小程序版本截图，多个截图以逗号隔开
-          example: http://image.aaa.alipay.com
+          example: "[\"http://image.aaa.alipay.com\"]"
           items:
             type: string
           type: array
@@ -60661,6 +60684,7 @@ components:
           - TEMPLATE_EXTRA_INFO_INVALID
           - APP_TO_APP_AUTH_FAIL
           - BUILD_VERSION_COMPARE_ERROR
+          - UPDATE_PLUGIN_SERVICE_FAIL
           type: string
         links:
           description: 解决方案链接
@@ -68796,6 +68820,10 @@ components:
           description: 创建交易传入的商户订单号
           example: "20150320010101001"
           type: string
+        pre_auth_cancel_fee:
+          description: 当用户使用芝麻信用先享后付时，且当前的操作为预授权撤销动作时，会返回该字段，代表当前撤销的预授权金额，单位元。
+          example: "12.45"
+          type: string
         present_refund_buyer_amount:
           description: "本次退款金额中买家退款金额。单位：元。\t该字段默认不返回；"
           example: "88.88"
@@ -69708,6 +69736,10 @@ components:
           description: 使用集分宝付款的金额
           example: "8.12"
           type: string
+        pre_auth_pay_amount:
+          description: 当用户使用芝麻信用先享后付时，会返回该字段，代表整笔交易的原始待履约金额，单位元。
+          example: "12.45"
+          type: string
         receipt_amount:
           description: 实收金额
           example: "88.88"
@@ -69736,6 +69768,8 @@ components:
           description: 发生支付交易的商户门店名称
           example: 证大五道口店
           type: string
+        tap_pay_info:
+          $ref: '#/components/schemas/TapPayInfo'
         total_amount:
           description: 交易金额
           example: "120.88"
@@ -70195,6 +70229,10 @@ components:
           description: 积分支付的金额，单位为元，两位小数。该金额代表该笔交易中用户使用积分支付的金额，比如集分宝或者支付宝实时优惠等
           example: "10"
           type: string
+        pre_auth_pay_amount:
+          description: 当用户使用芝麻信用先享后付时，会返回该字段，代表整笔交易的原始待履约金额，单位元。
+          example: "12.46"
+          type: string
         receipt_amount:
           description: 实收金额，单位为元，两位小数。该金额为本笔交易，商户账户能够实际收到的金额
           example: "15.25"
@@ -70549,6 +70587,10 @@ components:
         out_trade_no:
           description: 商户订单号
           example: "6823789339978248"
+          type: string
+        pre_auth_cancel_fee:
+          description: 当用户使用芝麻信用先享后付时，且当前的操作为预授权撤销动作时，会返回该字段，代表当前撤销的预授权金额，单位元。
+          example: "12.45"
           type: string
         present_refund_buyer_amount:
           description: "本次退款金额中买家退款金额;单位：元。\t该字段默认不返回；"
@@ -79080,8 +79122,7 @@ components:
           description: "支付时间\t\t对应账单中的账单日期"
           type: string
         souce:
-          description: "交易类型来源 需要按照枚举映射\t\tconsume 账单\t\thotel 酒店水单\t\titinerary 打\
-            车行程单\t\tcatering 餐饮小票"
+          description: 交易类型来源 需要按照枚举映射
           type: string
         trade_type:
           description: 交易类型/账单分类
@@ -79143,11 +79184,11 @@ components:
           type: string
         gmt_create:
           description: 创建时间
-          example: 2022-04-20 17:13:51
+          example: Sat Oct 19 11:47:12 CST 2024
           type: string
         gmt_modified:
           description: 变更时间
-          example: 2022-04-25 17:13:51
+          example: Sat Oct 19 11:47:12 CST 2024
           type: string
         iot_face_status:
           description: 员工是否人脸在库
@@ -81118,14 +81159,16 @@ components:
     InvoiceElementModel:
       properties:
         expense_status:
-          description: "发票报销状态\r\t取值范围：\r\tWAIT_EXPENSE－未报销\r\tEXPENSE_PROCESSING－\
-            报销中\r\tEXPENSE_FINISHED－已报销"
+          description: 发票报销状态
           type: string
         extend_fields:
           description: 扩展字段
           type: string
         fake_code:
           description: 防伪校验码
+          type: string
+        file_type:
+          description: 发票原始文件文件类型
           type: string
         has_pdf_file:
           description: 发票是否有pdf文件
@@ -81146,15 +81189,13 @@ components:
           description: 发票pdf文件转换后jpg预览地址
           type: string
         invoice_kind:
-          description: "发票类型\t可选值\tPLAIN：增值税电子普通发票\tSPECIAL：增值税专用发票\tALL_ELECTRONIC_GENERAL：\
-            \ \"电子发票（普通发票）\tALL_ELECTRONIC_SPECIAL： \"电子发票（专用发票）\tPLAIN_INVOICE:增值\
-            税普通发票\tPAPER_INVOICE:增值税普通发票（卷式）\tSALSE_INVOICE:机动车销售统一发票\t财政电子票据：FINANCIAL_ELECTRONIC_BILL"
+          description: 发票类型
           type: string
         invoice_no:
           description: 发票号码
           type: string
         invoice_status:
-          description: "发票状态　\r\t取值范围\r\tSUCCEED－正常蓝票\r\tEXPIRED－已失效"
+          description: 发票状态　
           type: string
         isv_contact:
           description: 服务商联系方式
@@ -81195,7 +81236,7 @@ components:
             $ref: '#/components/schemas/EinvTrade'
           type: array
         trade_match_result:
-          description: "交易匹配结果\tmatch-匹配到\tnoMatched-未匹配到\tnotMatch-未做匹配"
+          description: 交易匹配结果
           type: string
       type: object
     InvoiceElementStatusSyncOpenModel:
@@ -85508,7 +85549,7 @@ components:
         identity_type:
           description: "参与方的标识类型，目前支持如下类型：\t1、ALIPAY_USER_ID 支付宝的会员ID\t2、ALIPAY_LOGON_ID：\
             支付宝登录号，支持邮箱和手机号格式\t3、ALIPAY_OPEN_ID：支付宝openid\t4、EXPRESS_DC_STFA：对公快捷银\
-            行卡"
+            行卡\t5、BANKCARD_ACCOUNT:银行卡账号"
           type: string
         merchant_user_info:
           description: "商户端的用户信息描述，目前可指定如下属性：\r\tmerchant_user_id：商户端的用户唯一ID\r\tmerchant_user_name：\
@@ -89730,7 +89771,6 @@ components:
       properties:
         payment_medium_type:
           description: 碰一下支付的支付介质类型，标识当前支付为碰一下支付
-          example: TAP_PAY
           type: string
       type: object
     TargetInfo:
