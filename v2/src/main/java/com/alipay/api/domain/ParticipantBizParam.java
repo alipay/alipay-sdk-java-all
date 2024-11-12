@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 扩展数据,兼容授信专户业务参数
  *
  * @author auto create
- * @since 1.0, 2024-05-28 14:59:47
+ * @since 1.0, 2024-11-04 10:33:55
  */
 public class ParticipantBizParam extends AlipayObject {
 
-	private static final long serialVersionUID = 3169788887491672115L;
+	private static final long serialVersionUID = 4284879929349354642L;
 
 	/**
 	 * 代发专户ID

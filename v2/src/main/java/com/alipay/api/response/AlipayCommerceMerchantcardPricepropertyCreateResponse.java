@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.merchantcard.priceproperty.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-23 21:02:21
+ * @since 1.0, 2024-11-01 18:42:20
  */
 public class AlipayCommerceMerchantcardPricepropertyCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5874221223348114587L;
+	private static final long serialVersionUID = 8199871864215431711L;
 
 	/** 
 	 * 卡属性ID
@@ -20,11 +20,24 @@ public class AlipayCommerceMerchantcardPricepropertyCreateResponse extends Alipa
 	@ApiField("card_property_id")
 	private String cardPropertyId;
 
+	/** 
+	 * 卡模版ID
+	 */
+	@ApiField("card_template_id")
+	private String cardTemplateId;
+
 	public void setCardPropertyId(String cardPropertyId) {
 		this.cardPropertyId = cardPropertyId;
 	}
 	public String getCardPropertyId( ) {
 		return this.cardPropertyId;
+	}
+
+	public void setCardTemplateId(String cardTemplateId) {
+		this.cardTemplateId = cardTemplateId;
+	}
+	public String getCardTemplateId( ) {
+		return this.cardTemplateId;
 	}
 
 }

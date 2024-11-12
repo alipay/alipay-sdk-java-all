@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 统一收单-阿云客服呼入创建模型
  *
  * @author auto create
- * @since 1.0, 2024-04-17 10:14:43
+ * @since 1.0, 2024-11-01 15:45:52
  */
 public class CustomeServiceInboundCreateDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7672144869319277873L;
+	private static final long serialVersionUID = 6641798226342727283L;
 
 	/**
 	 * 业务包code
@@ -30,6 +30,24 @@ public class CustomeServiceInboundCreateDTO extends AlipayObject {
 	 */
 	@ApiField("channel_type")
 	private String channelType;
+
+	/**
+	 * 事件动作
+	 */
+	@ApiField("event_action")
+	private String eventAction;
+
+	/**
+	 * 事件内容所有的字段
+	 */
+	@ApiField("event_content")
+	private String eventContent;
+
+	/**
+	 * 事件的触发时间
+	 */
+	@ApiField("event_time")
+	private String eventTime;
 
 	/**
 	 * 转接前的坐席id
@@ -116,6 +134,27 @@ public class CustomeServiceInboundCreateDTO extends AlipayObject {
 	}
 	public void setChannelType(String channelType) {
 		this.channelType = channelType;
+	}
+
+	public String getEventAction() {
+		return this.eventAction;
+	}
+	public void setEventAction(String eventAction) {
+		this.eventAction = eventAction;
+	}
+
+	public String getEventContent() {
+		return this.eventContent;
+	}
+	public void setEventContent(String eventContent) {
+		this.eventContent = eventContent;
+	}
+
+	public String getEventTime() {
+		return this.eventTime;
+	}
+	public void setEventTime(String eventTime) {
+		this.eventTime = eventTime;
 	}
 
 	public String getOriginSeatId() {

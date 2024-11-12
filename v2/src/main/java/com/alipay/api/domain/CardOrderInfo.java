@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 售卖订单信息
  *
  * @author auto create
- * @since 1.0, 2024-10-18 16:23:54
+ * @since 1.0, 2024-11-06 14:50:17
  */
 public class CardOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1314721557762331587L;
+	private static final long serialVersionUID = 1665434995412274332L;
 
 	/**
 	 * 售卖订单的余额面额，单位分
@@ -72,6 +72,18 @@ public class CardOrderInfo extends AlipayObject {
 	private Date createDate;
 
 	/**
+	 * 咨询退卡违约金信息
+	 */
+	@ApiField("damages_consult")
+	private DamagesConsultInfo damagesConsult;
+
+	/**
+	 * 在途违约金信息
+	 */
+	@ApiField("damages_info")
+	private DamagesInfo damagesInfo;
+
+	/**
 	 * 扣款计划列表
 	 */
 	@ApiListField("deduction_plan_list")
@@ -95,6 +107,12 @@ public class CardOrderInfo extends AlipayObject {
 	 */
 	@ApiField("discount_refund_cash")
 	private Long discountRefundCash;
+
+	/**
+	 * 资金模式
+	 */
+	@ApiField("funding_model")
+	private String fundingModel;
 
 	/**
 	 * 订单有效期开始时间
@@ -274,6 +292,20 @@ public class CardOrderInfo extends AlipayObject {
 		this.createDate = createDate;
 	}
 
+	public DamagesConsultInfo getDamagesConsult() {
+		return this.damagesConsult;
+	}
+	public void setDamagesConsult(DamagesConsultInfo damagesConsult) {
+		this.damagesConsult = damagesConsult;
+	}
+
+	public DamagesInfo getDamagesInfo() {
+		return this.damagesInfo;
+	}
+	public void setDamagesInfo(DamagesInfo damagesInfo) {
+		this.damagesInfo = damagesInfo;
+	}
+
 	public List<DeductionPlanInfo> getDeductionPlanList() {
 		return this.deductionPlanList;
 	}
@@ -300,6 +332,13 @@ public class CardOrderInfo extends AlipayObject {
 	}
 	public void setDiscountRefundCash(Long discountRefundCash) {
 		this.discountRefundCash = discountRefundCash;
+	}
+
+	public String getFundingModel() {
+		return this.fundingModel;
+	}
+	public void setFundingModel(String fundingModel) {
+		this.fundingModel = fundingModel;
 	}
 
 	public Date getGmtActive() {

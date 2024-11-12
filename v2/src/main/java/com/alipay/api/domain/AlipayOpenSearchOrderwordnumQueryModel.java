@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenSearchOrderwordnumQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4719183637867441453L;
+	private static final long serialVersionUID = 2882511581711279244L;
 
 	/**
 	 * 搜索关键词可配置数量入参

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 添加员工
  *
  * @author auto create
- * @since 1.0, 2024-10-23 10:50:17
+ * @since 1.0, 2024-11-12 10:42:54
  */
 public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7795665617298833433L;
+	private static final long serialVersionUID = 5448572118856559445L;
 
 	/**
 	 * 是否需要生成吱口令，默认不生成
@@ -84,7 +84,7 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	private String enterpriseId;
 
 	/**
-	 * 员工免签约授权密钥；<br/>
+	 * 员工签约授权密钥；<br/>
 该密钥需联系企业码业务小二申请，当传入密钥有效，则员工添加时会默认签约企业因公付，并激活员工。
 	 */
 	@ApiField("free_sign_token")

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EduPlanInstanceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4676836766291782551L;
+	private static final long serialVersionUID = 2493738794173324212L;
 
 	/**
 	 * 任务编号

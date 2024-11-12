@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.itask.avatar.gentask.sync request
  * 
  * @author auto create
- * @since 1.0, 2024-04-25 17:07:02
+ * @since 1.0, 2024-10-30 13:37:11
  */
 public class AlipayIserviceItaskAvatarGentaskSyncRequest implements AlipayRequest<AlipayIserviceItaskAvatarGentaskSyncResponse> {
 

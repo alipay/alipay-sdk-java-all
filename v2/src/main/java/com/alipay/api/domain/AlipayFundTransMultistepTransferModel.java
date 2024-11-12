@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 多步转账创建并支付
  *
  * @author auto create
- * @since 1.0, 2024-09-18 15:30:16
+ * @since 1.0, 2024-11-04 10:16:18
  */
 public class AlipayFundTransMultistepTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3577272464514632887L;
+	private static final long serialVersionUID = 7847268362245449262L;
 
 	/**
 	 * 场景码

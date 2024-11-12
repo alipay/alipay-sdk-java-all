@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 扣款单分页查询
  *
  * @author auto create
- * @since 1.0, 2024-10-29 15:14:53
+ * @since 1.0, 2024-11-06 14:51:18
  */
 public class AlipayCommerceMerchantcardDeductionorderBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7193548817471253732L;
+	private static final long serialVersionUID = 2713741875212554255L;
 
 	/**
 	 * 售卖订单id
@@ -30,6 +30,12 @@ public class AlipayCommerceMerchantcardDeductionorderBatchqueryModel extends Ali
 	 */
 	@ApiField("deduction_end_date")
 	private String deductionEndDate;
+
+	/**
+	 * 核销订单类型
+	 */
+	@ApiField("deduction_order_type")
+	private String deductionOrderType;
 
 	/**
 	 * 核销订单开始时间
@@ -104,6 +110,13 @@ public class AlipayCommerceMerchantcardDeductionorderBatchqueryModel extends Ali
 	}
 	public void setDeductionEndDate(String deductionEndDate) {
 		this.deductionEndDate = deductionEndDate;
+	}
+
+	public String getDeductionOrderType() {
+		return this.deductionOrderType;
+	}
+	public void setDeductionOrderType(String deductionOrderType) {
+		this.deductionOrderType = deductionOrderType;
 	}
 
 	public String getDeductionStartDate() {

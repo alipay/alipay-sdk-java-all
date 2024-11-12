@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商圈商场付业务多门店适用业务规则创建
  *
  * @author auto create
- * @since 1.0, 2023-08-15 11:14:27
+ * @since 1.0, 2024-11-12 13:39:29
  */
 public class AlipayCommerceMallApplyruleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1668172268419831565L;
+	private static final long serialVersionUID = 6211744194159336818L;
 
 	/**
 	 * 商圈mallid，由支付宝侧业务提供

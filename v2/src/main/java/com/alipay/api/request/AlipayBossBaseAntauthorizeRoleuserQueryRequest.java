@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.base.antauthorize.roleuser.query request
  * 
  * @author auto create
- * @since 1.0, 2024-04-11 16:35:01
+ * @since 1.0, 2024-11-08 15:30:46
  */
 public class AlipayBossBaseAntauthorizeRoleuserQueryRequest implements AlipayRequest<AlipayBossBaseAntauthorizeRoleuserQueryResponse> {
 

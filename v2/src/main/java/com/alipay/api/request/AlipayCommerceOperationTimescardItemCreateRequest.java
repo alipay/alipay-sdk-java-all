@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.timescard.item.create request
  * 
  * @author auto create
- * @since 1.0, 2024-04-22 14:32:00
+ * @since 1.0, 2024-10-30 14:09:52
  */
 public class AlipayCommerceOperationTimescardItemCreateRequest implements AlipayRequest<AlipayCommerceOperationTimescardItemCreateResponse> {
 

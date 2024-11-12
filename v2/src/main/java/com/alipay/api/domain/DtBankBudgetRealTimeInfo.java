@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DtBankBudgetRealTimeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5842476799144712388L;
+	private static final long serialVersionUID = 2683374765127283582L;
 
 	/**
 	 * 活动退款金额，单位分

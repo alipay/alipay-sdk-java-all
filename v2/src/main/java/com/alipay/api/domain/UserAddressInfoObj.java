@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户地址信息
  *
  * @author auto create
- * @since 1.0, 2023-03-10 18:02:29
+ * @since 1.0, 2024-11-01 14:14:13
  */
 public class UserAddressInfoObj extends AlipayObject {
 
-	private static final long serialVersionUID = 2855519118711285222L;
+	private static final long serialVersionUID = 3353962473165588514L;
 
 	/**
 	 * 详细地址
 	 */
 	@ApiField("address")
 	private String address;
+
+	/**
+	 * 当同一类型地址在数组中时（如拉货服务多个途经点地址），用来标明地址顺序
+	 */
+	@ApiField("address_order")
+	private String addressOrder;
 
 	/**
 	 * 区/县
@@ -30,6 +36,24 @@ public class UserAddressInfoObj extends AlipayObject {
 	 */
 	@ApiField("city")
 	private String city;
+
+	/**
+	 * 城市编码
+	 */
+	@ApiField("city_code")
+	private String cityCode;
+
+	/**
+	 * 楼梯层数
+	 */
+	@ApiField("floor_height")
+	private String floorHeight;
+
+	/**
+	 * 楼梯类型
+	 */
+	@ApiField("floor_type")
+	private String floorType;
 
 	/**
 	 * 门牌号
@@ -80,6 +104,13 @@ public class UserAddressInfoObj extends AlipayObject {
 		this.address = address;
 	}
 
+	public String getAddressOrder() {
+		return this.addressOrder;
+	}
+	public void setAddressOrder(String addressOrder) {
+		this.addressOrder = addressOrder;
+	}
+
 	public String getArea() {
 		return this.area;
 	}
@@ -92,6 +123,27 @@ public class UserAddressInfoObj extends AlipayObject {
 	}
 	public void setCity(String city) {
 		this.city = city;
+	}
+
+	public String getCityCode() {
+		return this.cityCode;
+	}
+	public void setCityCode(String cityCode) {
+		this.cityCode = cityCode;
+	}
+
+	public String getFloorHeight() {
+		return this.floorHeight;
+	}
+	public void setFloorHeight(String floorHeight) {
+		this.floorHeight = floorHeight;
+	}
+
+	public String getFloorType() {
+		return this.floorType;
+	}
+	public void setFloorType(String floorType) {
+		this.floorType = floorType;
 	}
 
 	public String getHouseNumber() {

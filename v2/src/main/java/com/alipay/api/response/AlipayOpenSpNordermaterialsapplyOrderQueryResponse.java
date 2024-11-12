@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.nordermaterialsapply.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-29 11:19:44
+ * @since 1.0, 2024-11-04 11:22:20
  */
 public class AlipayOpenSpNordermaterialsapplyOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5823392232618997671L;
+	private static final long serialVersionUID = 6866285953478223943L;
 
 	/** 
-	 * 申请单的状态
+	 * 申请单的状态描述
 	 */
 	@ApiField("apply_status")
 	private String applyStatus;
+
+	/** 
+	 * 状态编码
+	 */
+	@ApiField("apply_status_code")
+	private String applyStatusCode;
 
 	/** 
 	 * 该申请单下物料数量 ，单位个
@@ -43,6 +49,13 @@ public class AlipayOpenSpNordermaterialsapplyOrderQueryResponse extends AlipayRe
 	}
 	public String getApplyStatus( ) {
 		return this.applyStatus;
+	}
+
+	public void setApplyStatusCode(String applyStatusCode) {
+		this.applyStatusCode = applyStatusCode;
+	}
+	public String getApplyStatusCode( ) {
+		return this.applyStatusCode;
 	}
 
 	public void setMaterialsNum(Long materialsNum) {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FengdieListPaginator extends AlipayObject {
 
-	private static final long serialVersionUID = 4324966673412267936L;
+	private static final long serialVersionUID = 3874764699752176468L;
 
 	/**
 	 * 总页数

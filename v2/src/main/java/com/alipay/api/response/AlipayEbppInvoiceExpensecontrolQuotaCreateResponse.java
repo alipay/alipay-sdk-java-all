@@ -8,17 +8,30 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.expensecontrol.quota.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-28 10:52:05
+ * @since 1.0, 2024-11-11 17:07:23
  */
 public class AlipayEbppInvoiceExpensecontrolQuotaCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4565649731569445645L;
+	private static final long serialVersionUID = 7451481359832626882L;
 
 	/** 
-	 * 新增的额度ID
+	 * 发放批次id
+	 */
+	@ApiField("issue_batch_id")
+	private String issueBatchId;
+
+	/** 
+	 * 创建的额度ID
 	 */
 	@ApiField("quota_id")
 	private String quotaId;
+
+	public void setIssueBatchId(String issueBatchId) {
+		this.issueBatchId = issueBatchId;
+	}
+	public String getIssueBatchId( ) {
+		return this.issueBatchId;
+	}
 
 	public void setQuotaId(String quotaId) {
 		this.quotaId = quotaId;

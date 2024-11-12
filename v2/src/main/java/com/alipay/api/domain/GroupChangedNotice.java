@@ -8,14 +8,14 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * 商家群变动通知
+ * 商家群用户进群、退群、群名称更改等事件通知商户
  *
  * @author auto create
- * @since 1.0, 2024-09-24 16:30:43
+ * @since 1.0, 2024-11-07 11:33:32
  */
 public class GroupChangedNotice extends AlipayObject {
 
-	private static final long serialVersionUID = 5156864242812919127L;
+	private static final long serialVersionUID = 5734393346886174748L;
 
 	/**
 	 * 消息创建时间
@@ -24,10 +24,22 @@ public class GroupChangedNotice extends AlipayObject {
 	private Date createTime;
 
 	/**
-	 * 群ID
+	 * 群ID（冗余字段，可忽略，参考group_instance_id）
 	 */
 	@ApiField("group_id")
 	private String groupId;
+
+	/**
+	 * 群id
+	 */
+	@ApiField("group_instance_id")
+	private String groupInstanceId;
+
+	/**
+	 * 群组id
+	 */
+	@ApiField("group_oid")
+	private String groupOid;
 
 	/**
 	 * 当是成员入群或退群时有值。表示成员变更数量
@@ -66,6 +78,20 @@ public class GroupChangedNotice extends AlipayObject {
 	}
 	public void setGroupId(String groupId) {
 		this.groupId = groupId;
+	}
+
+	public String getGroupInstanceId() {
+		return this.groupInstanceId;
+	}
+	public void setGroupInstanceId(String groupInstanceId) {
+		this.groupInstanceId = groupInstanceId;
+	}
+
+	public String getGroupOid() {
+		return this.groupOid;
+	}
+	public void setGroupOid(String groupOid) {
+		this.groupOid = groupOid;
 	}
 
 	public Long getMemChangeCnt() {

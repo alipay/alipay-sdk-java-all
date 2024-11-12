@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 安心付开通准入校验
  *
  * @author auto create
- * @since 1.0, 2024-10-25 11:06:55
+ * @since 1.0, 2024-11-09 01:00:17
  */
 public class AlipayCommerceMerchantcardOpenCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7192331581482222423L;
+	private static final long serialVersionUID = 8853843225368633478L;
 
 	/**
 	 * 卡类型，数组。
@@ -22,6 +22,12 @@ public class AlipayCommerceMerchantcardOpenCheckModel extends AlipayObject {
 	@ApiListField("card_types")
 	@ApiField("string")
 	private List<String> cardTypes;
+
+	/**
+	 * 商户二级类目code
+	 */
+	@ApiField("mcc_code")
+	private String mccCode;
 
 	/**
 	 * 是否需要代运营授权
@@ -40,6 +46,13 @@ public class AlipayCommerceMerchantcardOpenCheckModel extends AlipayObject {
 	}
 	public void setCardTypes(List<String> cardTypes) {
 		this.cardTypes = cardTypes;
+	}
+
+	public String getMccCode() {
+		return this.mccCode;
+	}
+	public void setMccCode(String mccCode) {
+		this.mccCode = mccCode;
 	}
 
 	public Boolean getNeedAuth() {

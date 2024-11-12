@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 保租房源上报
  *
  * @author auto create
- * @since 1.0, 2024-06-20 15:27:39
+ * @since 1.0, 2024-11-04 19:57:18
  */
 public class AlipayEbppCommunityAffordrentalhouseUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8239873599571216777L;
+	private static final long serialVersionUID = 8498166535244189377L;
 
 	/**
 	 * 详细地址信息
@@ -29,7 +29,7 @@ public class AlipayEbppCommunityAffordrentalhouseUploadModel extends AlipayObjec
 	private String cityCode;
 
 	/**
-	 * 房源详情链接,可以使用h5链接或者小程序链接
+	 * 房源详情链接,可以使用h5链接或者支付宝小程序链接
 	 */
 	@ApiField("detail_url")
 	private String detailUrl;
@@ -90,7 +90,7 @@ public class AlipayEbppCommunityAffordrentalhouseUploadModel extends AlipayObjec
 	private String status;
 
 	/**
-	 * 电话号码
+	 * 房源联系电话号码，支持11位数字手机号码，和座机号码
 	 */
 	@ApiField("tel")
 	private String tel;

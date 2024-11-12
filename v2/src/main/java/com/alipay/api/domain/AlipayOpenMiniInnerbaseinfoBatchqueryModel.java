@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenMiniInnerbaseinfoBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5157217761586161326L;
+	private static final long serialVersionUID = 7597763428837166289L;
 
 	/**
 	 * 租户code，alipay or taobao

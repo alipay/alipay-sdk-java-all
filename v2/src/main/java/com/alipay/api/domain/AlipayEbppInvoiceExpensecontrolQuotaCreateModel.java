@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建额度
  *
  * @author auto create
- * @since 1.0, 2024-06-24 10:32:51
+ * @since 1.0, 2024-11-07 17:24:22
  */
 public class AlipayEbppInvoiceExpensecontrolQuotaCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4198791678785776388L;
+	private static final long serialVersionUID = 5566813833583117482L;
 
 	/**
 	 * 共同账号id（该字段将废弃，不建议使用，可用enterprise_id字段替换） 当前字段已废弃(该字段将废弃，不建议使用，可用enterprise_id字段替换)
@@ -48,7 +48,19 @@ public class AlipayEbppInvoiceExpensecontrolQuotaCreateModel extends AlipayObjec
 	private String enterpriseId;
 
 	/**
-	 * 外部操作幂等ID（接入方接口调用幂等控制ID）
+	 * 批量发放时，可填写该字段
+	 */
+	@ApiField("issue_desc")
+	private String issueDesc;
+
+	/**
+	 * 批量发放时，可填写该字段作为发放名称，如果未填写取outer_source_id为默认值
+	 */
+	@ApiField("issue_name")
+	private String issueName;
+
+	/**
+	 * 外部操作幂等ID，标识创建额度的唯一性，防止重复创建
 	 */
 	@ApiField("outer_source_id")
 	private String outerSourceId;
@@ -105,9 +117,8 @@ public class AlipayEbppInvoiceExpensecontrolQuotaCreateModel extends AlipayObjec
 	/**
 	 * 额度维度
 枚举值：
-EXPENSE_TYPE（费用类型维度），
-RULE_GROUP_AGGREGATION（规则聚合维度），
-INSTITUTION（制度维度）
+INSTITUTION（制度维度），
+EXPENSE_TYPE（费用类型维度）
 	 */
 	@ApiField("target_type")
 	private String targetType;
@@ -145,6 +156,20 @@ INSTITUTION（制度维度）
 	}
 	public void setEnterpriseId(String enterpriseId) {
 		this.enterpriseId = enterpriseId;
+	}
+
+	public String getIssueDesc() {
+		return this.issueDesc;
+	}
+	public void setIssueDesc(String issueDesc) {
+		this.issueDesc = issueDesc;
+	}
+
+	public String getIssueName() {
+		return this.issueName;
+	}
+	public void setIssueName(String issueName) {
+		this.issueName = issueName;
 	}
 
 	public String getOuterSourceId() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商圈商场付业务多门店适用业务规则删除
  *
  * @author auto create
- * @since 1.0, 2023-08-15 11:20:17
+ * @since 1.0, 2024-11-12 13:39:55
  */
 public class AlipayCommerceMallApplyruleDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2163614321812745859L;
+	private static final long serialVersionUID = 3691281342585725828L;
 
 	/**
 	 * 商圈商场付多门店业务规则id，调用创建接口返回的值

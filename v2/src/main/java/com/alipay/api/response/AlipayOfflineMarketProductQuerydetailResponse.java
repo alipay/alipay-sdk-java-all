@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.market.product.querydetail response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 16:38:05
+ * @since 1.0, 2024-11-04 10:59:19
  */
 public class AlipayOfflineMarketProductQuerydetailResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2115591896671886369L;
+	private static final long serialVersionUID = 5651378362118971936L;
 
 	/** 
 	 * 商品首图，尺寸比例在65:53范围内且图片大小不超过10k皆可

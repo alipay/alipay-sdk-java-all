@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 场景支付业务单创建
  *
  * @author auto create
- * @since 1.0, 2024-04-19 13:55:51
+ * @since 1.0, 2024-11-01 15:09:18
  */
 public class AlipayFundScenepayOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2352224788369317815L;
+	private static final long serialVersionUID = 4861474494373487283L;
 
 	/**
 	 * 指定值，由支付宝侧业务提供
@@ -43,6 +43,12 @@ mall_cell_type:商圈中本次交易发生的商铺的识别类型, 可取值：
 	 */
 	@ApiField("identity_type")
 	private String identityType;
+
+	/**
+	 * 当identity_type=ALIPAY_LOGON_ID时，填写此字段
+	 */
+	@ApiField("name")
+	private String name;
 
 	/**
 	 * 外部业务号
@@ -102,6 +108,13 @@ mall_cell_type:商圈中本次交易发生的商铺的识别类型, 可取值：
 	}
 	public void setIdentityType(String identityType) {
 		this.identityType = identityType;
+	}
+
+	public String getName() {
+		return this.name;
+	}
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public String getOutBizNo() {

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPcreditHuabeiAuthSignApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8496928832591548888L;
+	private static final long serialVersionUID = 4659285153164142818L;
 
 	
 

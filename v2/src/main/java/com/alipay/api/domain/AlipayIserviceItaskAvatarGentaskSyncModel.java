@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 数字人短视频生产
  *
  * @author auto create
- * @since 1.0, 2024-04-25 17:02:58
+ * @since 1.0, 2024-10-30 13:37:11
  */
 public class AlipayIserviceItaskAvatarGentaskSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6513513941433437933L;
+	private static final long serialVersionUID = 6336962387391125756L;
 
 	/**
 	 * 位置信息

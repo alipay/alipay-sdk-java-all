@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家群活动详情模型
  *
  * @author auto create
- * @since 1.0, 2024-09-10 19:45:22
+ * @since 1.0, 2024-10-30 11:22:55
  */
 public class GroupActivityDetailVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5796195834865688496L;
+	private static final long serialVersionUID = 2421384833771111662L;
 
 	/**
 	 * 业务类型

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租方分账查询
  *
  * @author auto create
- * @since 1.0, 2024-07-16 16:03:08
+ * @since 1.0, 2024-11-11 17:04:47
  */
 public class AlipayCommerceRentRoyaltySellerQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5825153985443414599L;
+	private static final long serialVersionUID = 4562648948588631994L;
 
 	/**
 	 * 2088开头的16位纯数字，小程序场景下获取用户ID请参考：用户授权; 其它场景下获取用户ID请参考：网页授权获取用户信息; 其中buyer_id与buyer_open_id不能同时为空

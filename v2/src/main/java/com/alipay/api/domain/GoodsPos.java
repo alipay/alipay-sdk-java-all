@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品重力蓝位置
  *
  * @author auto create
- * @since 1.0, 2022-01-17 16:37:18
+ * @since 1.0, 2024-11-08 11:22:55
  */
 public class GoodsPos extends AlipayObject {
 
-	private static final long serialVersionUID = 4276653218945696913L;
+	private static final long serialVersionUID = 1636777179921674728L;
 
 	/**
 	 * 商品Id
@@ -20,7 +20,7 @@ public class GoodsPos extends AlipayObject {
 	private String goodsId;
 
 	/**
-	 * 商品重力位置信息
+	 * 商品重力位置信息，厘米
 	 */
 	@ApiField("pos")
 	private Long pos;

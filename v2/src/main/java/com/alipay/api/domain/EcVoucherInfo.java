@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业码凭证详情
  *
  * @author auto create
- * @since 1.0, 2024-08-30 15:42:55
+ * @since 1.0, 2024-11-11 20:47:18
  */
 public class EcVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3545451264134343718L;
+	private static final long serialVersionUID = 4837359166531832369L;
 
 	/**
 	 * 共同账户ID
@@ -32,9 +32,10 @@ public class EcVoucherInfo extends AlipayObject {
 	private String enterpriseId;
 
 	/**
-	 * 发票账单合规匹配结果
+	 * 发票账单合规匹配结果 当前字段已废弃(请更换“合规信息”凭证，通过voucher_content字段获取发票账单匹配的合规结果)
 	 */
 	@ApiField("invoice_compliance_check_result")
+	@Deprecated
 	private InvoiceComplianceCheckResult invoiceComplianceCheckResult;
 
 	/**

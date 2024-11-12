@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.roster.identity.bind response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-02 14:12:06
+ * @since 1.0, 2024-11-05 17:12:20
  */
 public class AlipayCommerceEducateRosterIdentityBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8886322575494788449L;
+	private static final long serialVersionUID = 5143864971777851229L;
 
 	
 

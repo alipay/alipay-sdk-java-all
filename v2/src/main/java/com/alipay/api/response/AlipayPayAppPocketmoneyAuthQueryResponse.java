@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPayAppPocketmoneyAuthQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3339693964585271924L;
+	private static final long serialVersionUID = 3665373645662735582L;
 
 	/** 
 	 * 授权结果，枚举值（ok：授权成功，exist：已经存在）

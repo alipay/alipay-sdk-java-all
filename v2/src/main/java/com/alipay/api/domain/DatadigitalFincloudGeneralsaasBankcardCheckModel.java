@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 银行卡核验
  *
  * @author auto create
- * @since 1.0, 2024-09-20 10:09:43
+ * @since 1.0, 2024-11-07 17:12:53
  */
 public class DatadigitalFincloudGeneralsaasBankcardCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8175788296482645542L;
+	private static final long serialVersionUID = 5226899514147665439L;
 
 	/**
 	 * 需核验的银行卡号
@@ -36,6 +36,12 @@ public class DatadigitalFincloudGeneralsaasBankcardCheckModel extends AlipayObje
 	 */
 	@ApiField("cert_no")
 	private String certNo;
+
+	/**
+	 * 银行卡核验涉及的证件类型
+	 */
+	@ApiField("cert_type")
+	private String certType;
 
 	/**
 	 * 客户业务单据号
@@ -81,6 +87,13 @@ public class DatadigitalFincloudGeneralsaasBankcardCheckModel extends AlipayObje
 	}
 	public void setCertNo(String certNo) {
 		this.certNo = certNo;
+	}
+
+	public String getCertType() {
+		return this.certType;
+	}
+	public void setCertType(String certType) {
+		this.certType = certType;
 	}
 
 	public String getOuterBizNo() {

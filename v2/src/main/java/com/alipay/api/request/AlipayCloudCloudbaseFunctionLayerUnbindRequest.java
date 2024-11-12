@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.function.layer.unbind request
  * 
  * @author auto create
- * @since 1.0, 2024-08-20 15:22:07
+ * @since 1.0, 2024-10-31 14:46:08
  */
 public class AlipayCloudCloudbaseFunctionLayerUnbindRequest implements AlipayRequest<AlipayCloudCloudbaseFunctionLayerUnbindResponse> {
 

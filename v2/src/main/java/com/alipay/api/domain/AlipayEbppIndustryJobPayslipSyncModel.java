@@ -13,16 +13,16 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppIndustryJobPayslipSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3324776617396726299L;
+	private static final long serialVersionUID = 4215343584772328224L;
 
 	/**
-	 * 发薪金额，单位：元
+	 * 付款金额，单位：元
 	 */
 	@ApiField("amount")
 	private String amount;
 
 	/**
-	 * 发薪银行卡编码，当发薪渠道为银行卡时，该字段必填
+	 * 付款银行卡编码，当付款渠道为银行卡时，该字段必填
 详情，编码详情参考：<a href="https://jiuye.yuque.com/org-wiki-jiuye-cpfcqs/araxo9/zax4z4wmsvuxalh2?singleDoc# 《银行简称》" target="_blank">全国银行简称</a>
 	 */
 	@ApiField("bank_code")
@@ -41,25 +41,25 @@ public class AlipayEbppIndustryJobPayslipSyncModel extends AlipayObject {
 	private String cardNo;
 
 	/**
-	 * 发薪渠道
+	 * 付款渠道
 	 */
 	@ApiField("channel")
 	private String channel;
 
 	/**
-	 * 发薪企业的信用代码
+	 * 付款企业的信用代码
 	 */
 	@ApiField("company_cert_no")
 	private String companyCertNo;
 
 	/**
-	 * 发薪企业的公司名称
+	 * 付款企业的公司名称
 	 */
 	@ApiField("company_name")
 	private String companyName;
 
 	/**
-	 * 用户账单信息有疑问时可通过该电话进行咨询。可提供发薪企业或您平台的客服电话
+	 * 用户账单信息有疑问时可通过该电话进行咨询。可提供付款企业或您平台的客服电话
 	 */
 	@ApiField("contact_info")
 	private String contactInfo;
@@ -83,13 +83,13 @@ public class AlipayEbppIndustryJobPayslipSyncModel extends AlipayObject {
 	private String outBizNo;
 
 	/**
-	 * 发薪备注说明，该内容将会在账单信息中显示
+	 * 备注说明，该内容将会在账单信息中显示
 	 */
 	@ApiField("remark")
 	private String remark;
 
 	/**
-	 * 发薪时间
+	 * 付款时间
 	 */
 	@ApiField("salary_time")
 	private Date salaryTime;

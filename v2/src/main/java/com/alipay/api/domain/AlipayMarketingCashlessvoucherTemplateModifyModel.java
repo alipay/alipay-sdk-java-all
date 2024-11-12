@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户券模板修改接口
  *
  * @author auto create
- * @since 1.0, 2023-10-27 17:05:08
+ * @since 1.0, 2024-10-30 14:05:11
  */
 public class AlipayMarketingCashlessvoucherTemplateModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4279641252269717141L;
+	private static final long serialVersionUID = 6182967678894615296L;
 
 	/**
 	 * 模板修改操作外部业务号，用于修改时的幂等控制，注意这里不是修改业务号

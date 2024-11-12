@@ -14,7 +14,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.agent.common.sign request
  * 
  * @author auto create
- * @since 1.0, 2024-10-14 14:07:08
+ * @since 1.0, 2024-11-05 15:42:25
  */
 public class AlipayOpenAgentCommonSignRequest implements AlipayUploadRequest<AlipayOpenAgentCommonSignResponse> {
 
@@ -157,7 +157,7 @@ public class AlipayOpenAgentCommonSignRequest implements AlipayUploadRequest<Ali
 	private Boolean longTerm;
 
 	/** 
-	* <a href="https://opendocs.alipay.com/common/02khjv">商家经营类目</a> 中的“经营类目编码”
+	* <a href="https://opendocs.alipay.com/common/02khjv">商家经营类目2.0</a> 中的“经营类目编码”
 	 */
 	private String mccCode;
 

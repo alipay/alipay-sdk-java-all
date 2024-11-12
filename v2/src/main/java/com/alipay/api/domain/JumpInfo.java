@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class JumpInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6129466789573349381L;
+	private static final long serialVersionUID = 6272492854381137768L;
 
 	/**
 	 * 安卓系统的package名称。注意：必须是安卓系统才有

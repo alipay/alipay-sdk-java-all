@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户入驻信息
  *
  * @author auto create
- * @since 1.0, 2024-10-25 11:07:16
+ * @since 1.0, 2024-11-06 14:50:18
  */
 public class MerchantSettleInInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2718754473287785189L;
+	private static final long serialVersionUID = 2818426532475436867L;
 
 	/**
 	 * 创建时间
@@ -71,6 +71,12 @@ public class MerchantSettleInInfo extends AlipayObject {
 	 */
 	@ApiField("status")
 	private String status;
+
+	/**
+	 * 先享次卡开通状态
+	 */
+	@ApiField("xian_xiang_times_card_status")
+	private String xianXiangTimesCardStatus;
 
 	public Date getGmtCreate() {
 		return this.gmtCreate;
@@ -133,6 +139,13 @@ public class MerchantSettleInInfo extends AlipayObject {
 	}
 	public void setStatus(String status) {
 		this.status = status;
+	}
+
+	public String getXianXiangTimesCardStatus() {
+		return this.xianXiangTimesCardStatus;
+	}
+	public void setXianXiangTimesCardStatus(String xianXiangTimesCardStatus) {
+		this.xianXiangTimesCardStatus = xianXiangTimesCardStatus;
 	}
 
 }

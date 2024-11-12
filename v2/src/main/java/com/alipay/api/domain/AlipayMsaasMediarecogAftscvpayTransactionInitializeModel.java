@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 多媒体afts平台视觉付交易初始化接口
  *
  * @author auto create
- * @since 1.0, 2024-02-20 10:06:46
+ * @since 1.0, 2024-11-08 11:22:55
  */
 public class AlipayMsaasMediarecogAftscvpayTransactionInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4368382344786393367L;
+	private static final long serialVersionUID = 5752415278341255426L;
 
 	/**
-	 * 货柜类型，static为静态货柜，dynamic为动态货柜
+	 * 货柜类型
 	 */
 	@ApiField("device_identify_type")
 	private String deviceIdentifyType;
@@ -52,6 +52,18 @@ public class AlipayMsaasMediarecogAftscvpayTransactionInitializeModel extends Al
 	 */
 	@ApiField("scene")
 	private String scene;
+
+	/**
+	 * 二级商户ID
+	 */
+	@ApiField("sub_merchant_id")
+	private String subMerchantId;
+
+	/**
+	 * 二级商户名称
+	 */
+	@ApiField("sub_merchant_name")
+	private String subMerchantName;
 
 	/**
 	 * 售卖设备编号
@@ -130,6 +142,20 @@ public class AlipayMsaasMediarecogAftscvpayTransactionInitializeModel extends Al
 	}
 	public void setScene(String scene) {
 		this.scene = scene;
+	}
+
+	public String getSubMerchantId() {
+		return this.subMerchantId;
+	}
+	public void setSubMerchantId(String subMerchantId) {
+		this.subMerchantId = subMerchantId;
+	}
+
+	public String getSubMerchantName() {
+		return this.subMerchantName;
+	}
+	public void setSubMerchantName(String subMerchantName) {
+		this.subMerchantName = subMerchantName;
 	}
 
 	public String getTerminalId() {

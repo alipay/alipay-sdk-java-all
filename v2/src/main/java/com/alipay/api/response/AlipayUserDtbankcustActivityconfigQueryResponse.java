@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.dtbankcust.activityconfig.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-09 11:49:19
+ * @since 1.0, 2024-11-04 11:07:24
  */
 public class AlipayUserDtbankcustActivityconfigQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5722245419597234641L;
+	private static final long serialVersionUID = 1884894417671717837L;
 
 	/** 
 	 * 活动ID
@@ -85,6 +85,18 @@ public class AlipayUserDtbankcustActivityconfigQueryResponse extends AlipayRespo
 	 */
 	@ApiField("use_scene")
 	private String useScene;
+
+	/** 
+	 * 活动配置对应的券模板id信息
+	 */
+	@ApiField("voucher_template_id")
+	private String voucherTemplateId;
+
+	/** 
+	 * 当前活动的白名单信息，逗号分隔
+	 */
+	@ApiField("white_list_info")
+	private String whiteListInfo;
 
 	public void setActivityId(String activityId) {
 		this.activityId = activityId;
@@ -161,6 +173,20 @@ public class AlipayUserDtbankcustActivityconfigQueryResponse extends AlipayRespo
 	}
 	public String getUseScene( ) {
 		return this.useScene;
+	}
+
+	public void setVoucherTemplateId(String voucherTemplateId) {
+		this.voucherTemplateId = voucherTemplateId;
+	}
+	public String getVoucherTemplateId( ) {
+		return this.voucherTemplateId;
+	}
+
+	public void setWhiteListInfo(String whiteListInfo) {
+		this.whiteListInfo = whiteListInfo;
+	}
+	public String getWhiteListInfo( ) {
+		return this.whiteListInfo;
 	}
 
 }

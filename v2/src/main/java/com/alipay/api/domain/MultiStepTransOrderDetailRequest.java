@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 多步转账明细请求参数
  *
  * @author auto create
- * @since 1.0, 2024-08-08 11:31:20
+ * @since 1.0, 2024-11-04 10:16:18
  */
 public class MultiStepTransOrderDetailRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 1525257177478899363L;
+	private static final long serialVersionUID = 5788416465843982652L;
 
 	/**
 	 * 传递业务参数，具体业务参数取值请以接入文档示例为准！

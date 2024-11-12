@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayBossFncGfmdmMerchantCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5294535218358238571L;
+	private static final long serialVersionUID = 3487657162698724642L;
 
 	/**
 	 * B类客商填写统一信用编码，C类客商填写个人身份证

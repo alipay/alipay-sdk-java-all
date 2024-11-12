@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 门店快递信息
  *
  * @author auto create
- * @since 1.0, 2024-09-11 09:52:54
+ * @since 1.0, 2024-11-04 11:21:28
  */
 public class ShopDeliveryInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6338148562814719587L;
+	private static final long serialVersionUID = 5538831199525451736L;
 
 	/**
 	 * 发货物流状态
@@ -24,6 +24,12 @@ public class ShopDeliveryInfo extends AlipayObject {
 	 */
 	@ApiField("logistics_code")
 	private String logisticsCode;
+
+	/**
+	 * 发货的物流公司
+	 */
+	@ApiField("logistics_name")
+	private String logisticsName;
 
 	/**
 	 * 物流的物料数量，单位 个
@@ -49,6 +55,13 @@ public class ShopDeliveryInfo extends AlipayObject {
 	}
 	public void setLogisticsCode(String logisticsCode) {
 		this.logisticsCode = logisticsCode;
+	}
+
+	public String getLogisticsName() {
+		return this.logisticsName;
+	}
+	public void setLogisticsName(String logisticsName) {
+		this.logisticsName = logisticsName;
 	}
 
 	public Long getMaterialsNum() {

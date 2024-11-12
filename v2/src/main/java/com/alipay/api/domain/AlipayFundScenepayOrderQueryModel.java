@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景支付业务单查询
  *
  * @author auto create
- * @since 1.0, 2023-03-10 15:54:40
+ * @since 1.0, 2024-11-01 13:48:15
  */
 public class AlipayFundScenepayOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7442548771493414215L;
+	private static final long serialVersionUID = 3812445525962888646L;
 
 	/**
 	 * 业务单号由场景支付业务单创建接口获得
@@ -33,10 +33,16 @@ biz_no和out_biz_no两者选其一，且out_biz_no优先
 	private String identity;
 
 	/**
-	 * 签约方类型 ALIPAY_USER_ID：表示是支付宝账号对应的支付宝唯一用户号；ALIPAY_LOGON_ID：表示是支付宝登录号；ALIPAY_OPEN_ID：表示是支付宝开放ID
+	 * 签约方类型 ALIPAY_USER_ID：表示是支付宝账号对应的支付宝唯一用户号；ALIPAY_LOGON_ID：表示是支付宝登录号；ALIPAY_OPEN_ID：表示是支付宝OPENID
 	 */
 	@ApiField("identity_type")
 	private String identityType;
+
+	/**
+	 * 当identity_type=ALIPAY_LOGON_ID时，填写此字段
+	 */
+	@ApiField("name")
+	private String name;
 
 	/**
 	 * 外部业务号
@@ -83,6 +89,13 @@ biz_no和out_biz_no两者选其一，且out_biz_no优先
 	}
 	public void setIdentityType(String identityType) {
 		this.identityType = identityType;
+	}
+
+	public String getName() {
+		return this.name;
+	}
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public String getOutBizNo() {

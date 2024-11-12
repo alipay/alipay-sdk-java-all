@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMerchantIndirectFiletaskConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6691692829727876627L;
+	private static final long serialVersionUID = 6571647582972319267L;
 
 	/** 
 	 * 下载文件时配合返回的file_url使用，用于用户请求鉴权。请求file_url时，需要在请求header中添加 x-mass-token=${auth_token}

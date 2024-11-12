@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 凭证核销规则
  *
  * @author auto create
- * @since 1.0, 2024-05-15 16:15:09
+ * @since 1.0, 2024-11-08 14:49:18
  */
 public class CertificateUseRuleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6898791294632428898L;
+	private static final long serialVersionUID = 2419797941646268284L;
 
 	/**
 	 * 对应本地生活商品模版属性中的时间限制(use_limit)，参考<a href="https://opendocs.alipay.com/pre-open/07pywg?pathHash=1c499cb5">本地生活商品模板</a>

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取支付宝用户ID
  *
  * @author auto create
- * @since 1.0, 2024-09-14 10:06:29
+ * @since 1.0, 2024-11-06 20:13:10
  */
 public class AlipayUserAccountUserinfoUseridQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4733247238285844579L;
+	private static final long serialVersionUID = 7691243943325132835L;
 
 	/**
 	 * 用来描述及校验业务来源，如果不传会提示异常

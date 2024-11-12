@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 核销订单信息
  *
  * @author auto create
- * @since 1.0, 2024-10-12 19:28:18
+ * @since 1.0, 2024-11-06 14:51:16
  */
 public class DeductionOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3819898235489469926L;
+	private static final long serialVersionUID = 7834847364718786263L;
 
 	/**
 	 * 抽佣信息集合
@@ -40,6 +40,12 @@ public class DeductionOrderInfo extends AlipayObject {
 	 */
 	@ApiField("certificate_serial")
 	private String certificateSerial;
+
+	/**
+	 * 违约金信息
+	 */
+	@ApiField("damages_info")
+	private DamagesInfo damagesInfo;
 
 	/**
 	 * 扣款金额，单位：分
@@ -212,6 +218,13 @@ public class DeductionOrderInfo extends AlipayObject {
 	}
 	public void setCertificateSerial(String certificateSerial) {
 		this.certificateSerial = certificateSerial;
+	}
+
+	public DamagesInfo getDamagesInfo() {
+		return this.damagesInfo;
+	}
+	public void setDamagesInfo(DamagesInfo damagesInfo) {
+		this.damagesInfo = damagesInfo;
 	}
 
 	public String getDeductionAmount() {

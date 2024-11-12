@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 卡
  *
  * @author auto create
- * @since 1.0, 2024-09-02 19:26:16
+ * @since 1.0, 2024-11-06 14:50:17
  */
 public class MerchantCardTemplate extends AlipayObject {
 
-	private static final long serialVersionUID = 2112676347139323991L;
+	private static final long serialVersionUID = 2318629576545838145L;
 
 	/**
 	 * 卡归属的小程序appid
@@ -126,6 +126,12 @@ public class MerchantCardTemplate extends AlipayObject {
 	 */
 	@ApiField("settle_type")
 	private String settleType;
+
+	/**
+	 * 次卡信息
+	 */
+	@ApiField("times_card_info")
+	private TimesCardInfo timesCardInfo;
 
 	/**
 	 * 使用信息
@@ -250,6 +256,13 @@ public class MerchantCardTemplate extends AlipayObject {
 	}
 	public void setSettleType(String settleType) {
 		this.settleType = settleType;
+	}
+
+	public TimesCardInfo getTimesCardInfo() {
+		return this.timesCardInfo;
+	}
+	public void setTimesCardInfo(TimesCardInfo timesCardInfo) {
+		this.timesCardInfo = timesCardInfo;
 	}
 
 	public CardTemplateUse getUseInfo() {

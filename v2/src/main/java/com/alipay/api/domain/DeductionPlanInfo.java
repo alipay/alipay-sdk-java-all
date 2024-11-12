@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 扣款计划信息
  *
  * @author auto create
- * @since 1.0, 2024-09-27 10:58:59
+ * @since 1.0, 2024-11-06 14:50:16
  */
 public class DeductionPlanInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5197725861725319799L;
+	private static final long serialVersionUID = 3663881216876851185L;
+
+	/**
+	 * 凭证次序号
+	 */
+	@ApiField("certificate_serial_no")
+	private String certificateSerialNo;
 
 	/**
 	 * 扣款金额，单位分
@@ -44,6 +50,13 @@ public class DeductionPlanInfo extends AlipayObject {
 	 */
 	@ApiField("plan_deduction_time")
 	private Date planDeductionTime;
+
+	public String getCertificateSerialNo() {
+		return this.certificateSerialNo;
+	}
+	public void setCertificateSerialNo(String certificateSerialNo) {
+		this.certificateSerialNo = certificateSerialNo;
+	}
 
 	public Long getDeductionAmount() {
 		return this.deductionAmount;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 次卡次序号信息
  *
  * @author auto create
- * @since 1.0, 2023-10-16 15:00:07
+ * @since 1.0, 2024-11-08 14:49:19
  */
 public class CertificateSerialInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7879265578976982562L;
+	private static final long serialVersionUID = 8471583618836535595L;
 
 	/**
 	 * 次序号的金额信息

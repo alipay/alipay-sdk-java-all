@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户授权查询
  *
  * @author auto create
- * @since 1.0, 2024-05-22 14:00:51
+ * @since 1.0, 2024-11-11 13:37:17
  */
 public class AlipayEbppInvoiceUserAuthQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1238912699221922711L;
+	private static final long serialVersionUID = 3581454973984836275L;
 
 	/**
 	 * 用户手机号
 	 */
 	@ApiField("mobile_phone")
 	private String mobilePhone;
+
+	/**
+	 * 授权查询来源唯一标识
+	 */
+	@ApiField("source_tag")
+	private String sourceTag;
 
 	/**
 	 * 用户开票邮箱
@@ -30,6 +36,13 @@ public class AlipayEbppInvoiceUserAuthQueryModel extends AlipayObject {
 	}
 	public void setMobilePhone(String mobilePhone) {
 		this.mobilePhone = mobilePhone;
+	}
+
+	public String getSourceTag() {
+		return this.sourceTag;
+	}
+	public void setSourceTag(String sourceTag) {
+		this.sourceTag = sourceTag;
 	}
 
 	public String getUserEmail() {

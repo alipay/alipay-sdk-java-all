@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝吱口令发放合规接口
  *
  * @author auto create
- * @since 1.0, 2023-11-07 17:20:14
+ * @since 1.0, 2024-11-07 14:29:18
  */
 public class AlipayPayCodecShareTokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3176469888951574775L;
+	private static final long serialVersionUID = 4279513567261233929L;
 
 	/**
 	 * 业务标识，类似于业务主键，诸如pid、uid、门店id 用于幂等标识
@@ -62,7 +62,7 @@ public class AlipayPayCodecShareTokenCreateModel extends AlipayObject {
 	private Date startDate;
 
 	/**
-	 * 1000*3600*24（一天）,默认30D，最大值不超过180D
+	 * 3600*24（一天）,默认30D，最大值不超过180D
 	 */
 	@ApiField("timeout")
 	private Long timeout;

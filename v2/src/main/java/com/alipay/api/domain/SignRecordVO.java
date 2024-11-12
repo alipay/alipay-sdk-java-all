@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class SignRecordVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6873543597133116813L;
+	private static final long serialVersionUID = 3361773526312219544L;
 
 	/**
 	 * 法务C端协议分配的协议ID，用于唯一标识一个协议或复用协议

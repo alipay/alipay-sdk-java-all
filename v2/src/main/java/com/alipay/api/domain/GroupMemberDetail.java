@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝聊天群内群成员属性
  *
  * @author auto create
- * @since 1.0, 2024-09-24 16:30:43
+ * @since 1.0, 2024-11-07 11:33:31
  */
 public class GroupMemberDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8439551289319367362L;
+	private static final long serialVersionUID = 2445917273457554364L;
 
 	/**
 	 * 支付宝聊天群内昵称
@@ -34,7 +34,7 @@ public class GroupMemberDetail extends AlipayObject {
 	private String inviteOpenId;
 
 	/**
-	 * 入群方式
+	 * 入群渠道
 	 */
 	@ApiField("join_scene")
 	private String joinScene;

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserAccountZavatarOwnedassetsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1548793697556661144L;
+	private static final long serialVersionUID = 8433534554149357473L;
 
 	/** 
 	 * 数字人服装vo

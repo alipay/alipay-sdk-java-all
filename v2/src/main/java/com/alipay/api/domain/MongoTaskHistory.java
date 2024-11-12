@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MongoTaskHistory extends AlipayObject {
 
-	private static final long serialVersionUID = 6528777818823837199L;
+	private static final long serialVersionUID = 5333662795514352439L;
 
 	/**
 	 * 任务执行进度

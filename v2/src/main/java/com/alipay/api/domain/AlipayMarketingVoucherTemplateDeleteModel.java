@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 删除资金券模板
  *
  * @author auto create
- * @since 1.0, 2023-10-27 17:06:03
+ * @since 1.0, 2024-10-30 14:01:59
  */
 public class AlipayMarketingVoucherTemplateDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4296497986921257655L;
+	private static final long serialVersionUID = 7622955379692783724L;
 
 	/**
 	 * 券模板 id，可通过<a href="https://opendocs.alipay.com/apis/api_5/alipay.marketing.voucher.templatelist.query">alipay.marketing.voucher.templatelist.query</a>(查询券模板列表)接口查询获取。

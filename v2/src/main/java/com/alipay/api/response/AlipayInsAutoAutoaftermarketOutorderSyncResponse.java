@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.auto.autoaftermarket.outorder.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-03 23:07:09
+ * @since 1.0, 2024-10-30 14:41:41
  */
 public class AlipayInsAutoAutoaftermarketOutorderSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3566518884572265248L;
+	private static final long serialVersionUID = 3621563529651866284L;
 
 	/** 
 	 * 蚂蚁生成的订单号，跟服务商的订单号做一一映射

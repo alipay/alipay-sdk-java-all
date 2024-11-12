@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订购单关闭
  *
  * @author auto create
- * @since 1.0, 2024-07-05 14:07:16
+ * @since 1.0, 2024-11-06 14:50:16
  */
 public class AlipayCommerceMerchantcardOrderCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4436193777852479688L;
+	private static final long serialVersionUID = 6747217768417449558L;
 
 	/**
 	 * 售卖订单ID
@@ -20,10 +20,28 @@ public class AlipayCommerceMerchantcardOrderCloseModel extends AlipayObject {
 	private String cardId;
 
 	/**
+	 * 次卡的违约金场景里，代表商户期望收到的违约金，注意不要大于售卖订单详情接口返回的咨询结果，单位：分
+	 */
+	@ApiField("damages_cash")
+	private Long damagesCash;
+
+	/**
+	 * 扣款类型
+	 */
+	@ApiField("deduction_type")
+	private String deductionType;
+
+	/**
 	 * 用于标记支付宝用户在应用下的唯一标识
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/**
+	 * 在次卡的违约金场景，传入订单剩余金额用于做幂等，单位：分
+	 */
+	@ApiField("total_cash")
+	private Long totalCash;
 
 	/**
 	 * 支付宝用户的userId。
@@ -38,11 +56,32 @@ public class AlipayCommerceMerchantcardOrderCloseModel extends AlipayObject {
 		this.cardId = cardId;
 	}
 
+	public Long getDamagesCash() {
+		return this.damagesCash;
+	}
+	public void setDamagesCash(Long damagesCash) {
+		this.damagesCash = damagesCash;
+	}
+
+	public String getDeductionType() {
+		return this.deductionType;
+	}
+	public void setDeductionType(String deductionType) {
+		this.deductionType = deductionType;
+	}
+
 	public String getOpenId() {
 		return this.openId;
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public Long getTotalCash() {
+		return this.totalCash;
+	}
+	public void setTotalCash(Long totalCash) {
+		this.totalCash = totalCash;
 	}
 
 	public String getUserId() {

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.insure.recommend.check response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-15 14:31:58
+ * @since 1.0, 2024-10-30 14:40:11
  */
 public class AlipayInsSceneInsureRecommendCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3379599973261678636L;
+	private static final long serialVersionUID = 6368318977142284946L;
 
 	/** 
 	 * 是否能推荐保险true|false

@@ -7,11 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景支付参与者模型
  *
  * @author auto create
- * @since 1.0, 2023-09-20 13:55:06
+ * @since 1.0, 2024-11-01 13:48:15
  */
 public class ScenePayParticipantInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7855855692556479874L;
+	private static final long serialVersionUID = 5838687118356734436L;
+
+	/**
+	 * 参与方mcc
+	 */
+	@ApiField("mcc")
+	private String mcc;
+
+	/**
+	 * 参与方名称
+	 */
+	@ApiField("name")
+	private String name;
 
 	/**
 	 * 参与者业务参数
@@ -35,6 +47,20 @@ public class ScenePayParticipantInfoDTO extends AlipayObject {
 	 */
 	@ApiField("participant_id_type")
 	private String participantIdType;
+
+	public String getMcc() {
+		return this.mcc;
+	}
+	public void setMcc(String mcc) {
+		this.mcc = mcc;
+	}
+
+	public String getName() {
+		return this.name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
 
 	public ScenePayParticipantBizParamDTO getParticipantBizParam() {
 		return this.participantBizParam;

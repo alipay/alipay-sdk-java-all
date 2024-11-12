@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 超上借支授权结果查询
  *
  * @author auto create
- * @since 1.0, 2024-08-22 14:51:50
+ * @since 1.0, 2024-11-04 17:54:19
  */
 public class AlipayFundAuthorizeUniQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1421626597746829447L;
+	private static final long serialVersionUID = 7555966168565423266L;
 
 	/**
 	 * 授权协议号。out_biz_no提供时可选，out_biz_no未提供时必选

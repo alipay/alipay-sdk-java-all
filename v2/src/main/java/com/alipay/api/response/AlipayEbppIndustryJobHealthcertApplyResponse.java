@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.job.healthcert.apply response.
  * 
  * @author auto create
- * @since 1.0, 2024-09-29 15:02:13
+ * @since 1.0, 2024-11-07 19:22:21
  */
 public class AlipayEbppIndustryJobHealthcertApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2527236969169495945L;
+	private static final long serialVersionUID = 1638944525781551835L;
 
 	/** 
 	 * 支付宝就业健康证认证页面URL

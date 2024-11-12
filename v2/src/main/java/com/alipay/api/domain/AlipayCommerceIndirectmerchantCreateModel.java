@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceIndirectmerchantCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4899647166618985588L;
+	private static final long serialVersionUID = 8152745564471389833L;
 
 	/**
 	 * 行业模版code，默认不用传，当是水奶行业时需要传shui或者nai

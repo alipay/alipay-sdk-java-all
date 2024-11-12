@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 凭证核销结果
  *
  * @author auto create
- * @since 1.0, 2024-04-10 16:59:49
+ * @since 1.0, 2024-11-08 14:49:19
  */
 public class CertificateUseResult extends AlipayObject {
 
-	private static final long serialVersionUID = 5575672517774923277L;
+	private static final long serialVersionUID = 5773333698378765168L;
 
 	/**
 	 * 凭证实例的金额信息，在异常场景下可能为空，需要判断是否有值才可进行使用。

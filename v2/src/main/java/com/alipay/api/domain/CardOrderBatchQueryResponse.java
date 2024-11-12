@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页查询售卖订单结果
  *
  * @author auto create
- * @since 1.0, 2024-10-18 16:24:18
+ * @since 1.0, 2024-11-06 14:51:17
  */
 public class CardOrderBatchQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 2385139688635817689L;
+	private static final long serialVersionUID = 5671838799264929478L;
 
 	/**
 	 * 售卖订单的余额面额，单位分
@@ -70,6 +70,18 @@ public class CardOrderBatchQueryResponse extends AlipayObject {
 	private Date createDate;
 
 	/**
+	 * 违约金比例
+	 */
+	@ApiField("damages_rate")
+	private String damagesRate;
+
+	/**
+	 * 违约金类型
+	 */
+	@ApiField("damages_type")
+	private String damagesType;
+
+	/**
 	 * 追回优惠金额，包含退款金额，单位：分
 	 */
 	@ApiField("discount_cash")
@@ -86,6 +98,12 @@ public class CardOrderBatchQueryResponse extends AlipayObject {
 	 */
 	@ApiField("discount_refund_cash")
 	private Long discountRefundCash;
+
+	/**
+	 * 资金模式
+	 */
+	@ApiField("funding_model")
+	private String fundingModel;
 
 	/**
 	 * 订单有效期开始时间
@@ -265,6 +283,20 @@ public class CardOrderBatchQueryResponse extends AlipayObject {
 		this.createDate = createDate;
 	}
 
+	public String getDamagesRate() {
+		return this.damagesRate;
+	}
+	public void setDamagesRate(String damagesRate) {
+		this.damagesRate = damagesRate;
+	}
+
+	public String getDamagesType() {
+		return this.damagesType;
+	}
+	public void setDamagesType(String damagesType) {
+		this.damagesType = damagesType;
+	}
+
 	public Long getDiscountCash() {
 		return this.discountCash;
 	}
@@ -284,6 +316,13 @@ public class CardOrderBatchQueryResponse extends AlipayObject {
 	}
 	public void setDiscountRefundCash(Long discountRefundCash) {
 		this.discountRefundCash = discountRefundCash;
+	}
+
+	public String getFundingModel() {
+		return this.fundingModel;
+	}
+	public void setFundingModel(String fundingModel) {
+		this.fundingModel = fundingModel;
 	}
 
 	public Date getGmtActive() {

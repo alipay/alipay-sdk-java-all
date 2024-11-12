@@ -7,17 +7,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻信用信息模型
  *
  * @author auto create
- * @since 1.0, 2024-09-25 10:28:20
+ * @since 1.0, 2024-11-04 14:34:52
  */
 public class CreditInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4851797737145691182L;
+	private static final long serialVersionUID = 8142874993799317282L;
 
 	/**
 	 * 芝麻先享受理台用户开通成功后，商家自定义页面跳转地址
 	 */
 	@ApiField("acceptance_jump_url")
 	private String acceptanceJumpUrl;
+
+	/**
+	 * 芝麻免押周期扣款类型，使用芝麻免押产品时该字段必传
+	 */
+	@ApiField("credit_deposit_period_pay_type")
+	private String creditDepositPeriodPayType;
+
+	/**
+	 * 使用芝麻信用服务的产品码，不传默认使用芝麻先享服务
+	 */
+	@ApiField("credit_product_code")
+	private String creditProductCode;
 
 	/**
 	 * 使用芝麻信用先享服务，是否不需要核身，默认false：表示需要当前订单需要核身
@@ -42,6 +54,20 @@ public class CreditInfoDTO extends AlipayObject {
 	}
 	public void setAcceptanceJumpUrl(String acceptanceJumpUrl) {
 		this.acceptanceJumpUrl = acceptanceJumpUrl;
+	}
+
+	public String getCreditDepositPeriodPayType() {
+		return this.creditDepositPeriodPayType;
+	}
+	public void setCreditDepositPeriodPayType(String creditDepositPeriodPayType) {
+		this.creditDepositPeriodPayType = creditDepositPeriodPayType;
+	}
+
+	public String getCreditProductCode() {
+		return this.creditProductCode;
+	}
+	public void setCreditProductCode(String creditProductCode) {
+		this.creditProductCode = creditProductCode;
 	}
 
 	public Boolean getNoNeedVerifyIdentity() {

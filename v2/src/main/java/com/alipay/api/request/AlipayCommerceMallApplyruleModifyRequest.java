@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.mall.applyrule.modify request
  * 
  * @author auto create
- * @since 1.0, 2024-10-08 10:37:45
+ * @since 1.0, 2024-11-12 13:40:09
  */
 public class AlipayCommerceMallApplyruleModifyRequest implements AlipayRequest<AlipayCommerceMallApplyruleModifyResponse> {
 

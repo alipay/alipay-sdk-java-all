@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景支付参与者业务参数模型
  *
  * @author auto create
- * @since 1.0, 2024-04-02 14:32:15
+ * @since 1.0, 2024-11-01 13:48:15
  */
 public class ScenePayParticipantBizParamDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7439845132931351573L;
+	private static final long serialVersionUID = 2222619443414558268L;
 
 	/**
 	 * 由各业务场景定义，具体参考场景解决方案接入文档
@@ -36,6 +36,12 @@ public class ScenePayParticipantBizParamDTO extends AlipayObject {
 	 */
 	@ApiField("channel_id")
 	private String channelId;
+
+	/**
+	 * 高速出行行业标识
+	 */
+	@ApiField("city_traffic_industry_tag")
+	private String cityTrafficIndustryTag;
 
 	/**
 	 * 外部卡号
@@ -75,6 +81,13 @@ public class ScenePayParticipantBizParamDTO extends AlipayObject {
 	}
 	public void setChannelId(String channelId) {
 		this.channelId = channelId;
+	}
+
+	public String getCityTrafficIndustryTag() {
+		return this.cityTrafficIndustryTag;
+	}
+	public void setCityTrafficIndustryTag(String cityTrafficIndustryTag) {
+		this.cityTrafficIndustryTag = cityTrafficIndustryTag;
 	}
 
 	public String getOutCardNo() {

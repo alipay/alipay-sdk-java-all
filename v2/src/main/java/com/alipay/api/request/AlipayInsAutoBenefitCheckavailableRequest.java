@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.auto.benefit.checkavailable request
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:25:17
+ * @since 1.0, 2024-10-30 14:41:41
  */
 public class AlipayInsAutoBenefitCheckavailableRequest implements AlipayRequest<AlipayInsAutoBenefitCheckavailableResponse> {
 

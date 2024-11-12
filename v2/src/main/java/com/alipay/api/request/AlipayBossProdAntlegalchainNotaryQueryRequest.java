@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.prod.antlegalchain.notary.query request
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 16:55:00
+ * @since 1.0, 2024-11-05 13:35:11
  */
 public class AlipayBossProdAntlegalchainNotaryQueryRequest implements AlipayRequest<AlipayBossProdAntlegalchainNotaryQueryResponse> {
 

@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用户库切换
  *
  * @author auto create
- * @since 1.0, 2024-10-24 11:34:24
+ * @since 1.0, 2024-11-05 17:20:23
  */
 public class AlipayOpenIotvspUsergroupengineTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8376631693698642119L;
+	private static final long serialVersionUID = 5744199117633741895L;
 
 	/**
 	 * 业务流水id,便于问题排查
 	 */
 	@ApiField("biz_id")
 	private String bizId;
+
+	/**
+	 * 弹性操作类型
+	 */
+	@ApiField("elastic_type")
+	private String elasticType;
 
 	/**
 	 * 服务商pid
@@ -46,6 +52,13 @@ public class AlipayOpenIotvspUsergroupengineTransferModel extends AlipayObject {
 	}
 	public void setBizId(String bizId) {
 		this.bizId = bizId;
+	}
+
+	public String getElasticType() {
+		return this.elasticType;
+	}
+	public void setElasticType(String elasticType) {
+		this.elasticType = elasticType;
 	}
 
 	public String getIsvPid() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 多维授权查询
  *
  * @author auto create
- * @since 1.0, 2024-04-11 16:34:48
+ * @since 1.0, 2024-11-08 15:31:03
  */
 public class AlipayBossBaseAntauthorizeMultiQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6295679285624753939L;
+	private static final long serialVersionUID = 1464783381774785717L;
 
 	/**
 	 * 基于多维度授权查询的参数

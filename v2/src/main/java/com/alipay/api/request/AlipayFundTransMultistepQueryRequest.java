@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.trans.multistep.query request
  * 
  * @author auto create
- * @since 1.0, 2024-08-12 14:42:06
+ * @since 1.0, 2024-10-30 10:34:57
  */
 public class AlipayFundTransMultistepQueryRequest implements AlipayRequest<AlipayFundTransMultistepQueryResponse> {
 

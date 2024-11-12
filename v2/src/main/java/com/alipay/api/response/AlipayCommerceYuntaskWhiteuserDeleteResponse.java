@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceYuntaskWhiteuserDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3848661765178117391L;
+	private static final long serialVersionUID = 7186616275317148376L;
 
 	
 

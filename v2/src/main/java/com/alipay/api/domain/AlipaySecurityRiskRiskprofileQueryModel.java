@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 安全-riskprofile 根据风险主体查询对应的风险分值
  *
  * @author auto create
- * @since 1.0, 2024-04-09 13:35:38
+ * @since 1.0, 2024-10-30 11:37:01
  */
 public class AlipaySecurityRiskRiskprofileQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3762666312768116228L;
+	private static final long serialVersionUID = 5521932378191139956L;
 
 	/**
 	 * 请求来源，业务唯一标示；

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 留学VCC代付订单处理结果通知OPENAPI
  *
  * @author auto create
- * @since 1.0, 2023-10-25 13:49:25
+ * @since 1.0, 2024-11-04 16:11:56
  */
 public class AlipayOverseasOpenPoboNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3756423995787692363L;
+	private static final long serialVersionUID = 6156326714729137339L;
 
 	/**
 	 * 留学VCC代付单收款方信息
@@ -24,6 +24,12 @@ public class AlipayOverseasOpenPoboNotifyModel extends AlipayObject {
 	 */
 	@ApiField("buyer_info")
 	private TuitionISVPoboBuyerInfo buyerInfo;
+
+	/**
+	 * 售后操作申请
+	 */
+	@ApiField("manual_operation_apply")
+	private IndrPoboManualOperationApplyRequestDTO manualOperationApply;
 
 	/**
 	 * 留学vcc，代付订单号
@@ -55,6 +61,13 @@ public class AlipayOverseasOpenPoboNotifyModel extends AlipayObject {
 	}
 	public void setBuyerInfo(TuitionISVPoboBuyerInfo buyerInfo) {
 		this.buyerInfo = buyerInfo;
+	}
+
+	public IndrPoboManualOperationApplyRequestDTO getManualOperationApply() {
+		return this.manualOperationApply;
+	}
+	public void setManualOperationApply(IndrPoboManualOperationApplyRequestDTO manualOperationApply) {
+		this.manualOperationApply = manualOperationApply;
 	}
 
 	public String getOrderId() {

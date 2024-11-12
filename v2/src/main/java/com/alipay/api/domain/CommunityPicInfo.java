@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 包含小区的各类图片信息，大门图片、内部环境图片、停车设施图片、娱乐活动图片。
  *
  * @author auto create
- * @since 1.0, 2024-10-16 19:47:17
+ * @since 1.0, 2024-10-30 11:48:42
  */
 public class CommunityPicInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3658614352537271245L;
+	private static final long serialVersionUID = 6855968364415865123L;
 
 	/**
 	 * 小区的活动娱乐设施图片

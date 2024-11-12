@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ItemInstallmentInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1665197138261476297L;
+	private static final long serialVersionUID = 1439997936862334375L;
 
 	/**
 	 * 分期商品每期金额不固定时，请填入该字段，分期时分期金额会与该字段进行比较，单位为元。

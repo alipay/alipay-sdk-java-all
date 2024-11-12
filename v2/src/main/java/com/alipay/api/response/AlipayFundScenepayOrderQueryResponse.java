@@ -3,6 +3,7 @@ package com.alipay.api.response;
 import java.util.Date;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.domain.ScenePayBusinessParamDTO;
+import com.alipay.api.domain.ScenePayParticipantInfoDTO;
 
 import com.alipay.api.AlipayResponse;
 
@@ -10,14 +11,15 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.scenepay.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-22 14:56:07
+ * @since 1.0, 2024-11-01 13:48:16
  */
 public class AlipayFundScenepayOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2498224719679112334L;
+	private static final long serialVersionUID = 6489564579813844431L;
 
 	/** 
 	 * 交易中包含的业务优惠金额
+单位：元
 	 */
 	@ApiField("biz_amount")
 	private String bizAmount;
@@ -42,6 +44,7 @@ public class AlipayFundScenepayOrderQueryResponse extends AlipayResponse {
 
 	/** 
 	 * 交易付款时间
+单位：年月日 时分秒
 	 */
 	@ApiField("gmt_payment")
 	private Date gmtPayment;
@@ -56,7 +59,7 @@ public class AlipayFundScenepayOrderQueryResponse extends AlipayResponse {
 
 	/** 
 	 * 场景支付业务单状态，可取值有：
-INIT：初试状态
+INIT：初始状态
 PROCESSING：处理中
 CLOSED：关单
 SUCCESS：成功
@@ -77,6 +80,12 @@ SUCCESS：成功
 	private String outTradeNo;
 
 	/** 
+	 * 参与者信息
+	 */
+	@ApiField("partner_info")
+	private ScenePayParticipantInfoDTO partnerInfo;
+
+	/** 
 	 * 当交易发生退款时，该字段不为空，会把每次退款时的明细整合一起发送
 	 */
 	@ApiField("refund_detail_list")
@@ -84,6 +93,7 @@ SUCCESS：成功
 
 	/** 
 	 * 支付宝交易的总金额
+单位：元
 	 */
 	@ApiField("total_amount")
 	private String totalAmount;
@@ -155,6 +165,13 @@ SUCCESS：成功
 	}
 	public String getOutTradeNo( ) {
 		return this.outTradeNo;
+	}
+
+	public void setPartnerInfo(ScenePayParticipantInfoDTO partnerInfo) {
+		this.partnerInfo = partnerInfo;
+	}
+	public ScenePayParticipantInfoDTO getPartnerInfo( ) {
+		return this.partnerInfo;
 	}
 
 	public void setRefundDetailList(String refundDetailList) {

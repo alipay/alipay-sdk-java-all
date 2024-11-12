@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenPublicPersonalizedExtensionCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6376853523296771637L;
+	private static final long serialVersionUID = 7779745836582353652L;
 
 	/** 
 	 * 扩展区套id。创建个性化扩展区成功后，支付宝会将该字段返回，后续扩展区上下线或者扩展区删除都会用到这个值。

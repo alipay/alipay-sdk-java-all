@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 多步转账主体信息
  *
  * @author auto create
- * @since 1.0, 2024-08-08 11:29:16
+ * @since 1.0, 2024-11-04 10:16:17
  */
 public class MultiStepTransferParticipant extends AlipayObject {
 
-	private static final long serialVersionUID = 6836962763349325379L;
+	private static final long serialVersionUID = 4127974842716526565L;
 
 	/**
 	 * 代扣协议号
