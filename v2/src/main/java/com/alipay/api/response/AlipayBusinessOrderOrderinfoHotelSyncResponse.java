@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBusinessOrderOrderinfoHotelSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1514129751479419919L;
+	private static final long serialVersionUID = 1119933346467414479L;
 
 	/** 
 	 * 支付宝酒店订单id

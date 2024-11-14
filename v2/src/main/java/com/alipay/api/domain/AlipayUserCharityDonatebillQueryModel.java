@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserCharityDonatebillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6218928282714687374L;
+	private static final long serialVersionUID = 3246977522271187397L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识

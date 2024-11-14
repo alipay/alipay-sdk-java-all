@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 出行同行码校验
  *
  * @author auto create
- * @since 1.0, 2024-05-21 14:00:26
+ * @since 1.0, 2024-11-12 16:35:19
  */
 public class AlipayCommerceTransportQrpassVerifyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8113446533681618125L;
+	private static final long serialVersionUID = 3563752618297738978L;
 
 	/**
 	 * 用户卡号

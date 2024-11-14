@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 统一收单-阿云客服呼入更新模型
  *
  * @author auto create
- * @since 1.0, 2024-09-20 17:41:41
+ * @since 1.0, 2024-11-13 15:28:21
  */
 public class CustomeServiceInboundUpdateDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2542912425234353731L;
+	private static final long serialVersionUID = 1682352852438821899L;
 
 	/**
 	 * 废弃字段，文档不可见 当前字段已废弃(该字段已经被废弃，所有文档不可见)

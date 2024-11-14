@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AgWeatherForecastInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2743762265292575956L;
+	private static final long serialVersionUID = 4356678473532247318L;
 
 	/**
 	 * 数据实际日期，YYYYMMDD

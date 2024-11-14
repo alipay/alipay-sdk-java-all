@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class OrderChangeInfoExtIstd extends AlipayObject {
 
-	private static final long serialVersionUID = 6158985444563373374L;
+	private static final long serialVersionUID = 2681576975257187146L;
 
 	/**
 	 * 新增可选参数支持通过通知接口向商户同步“揽收/投递照片”链接

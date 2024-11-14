@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 安心付开通接口
  *
  * @author auto create
- * @since 1.0, 2024-11-09 00:59:50
+ * @since 1.0, 2024-11-12 16:51:18
  */
 public class AlipayCommerceMerchantcardOpenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1723373344292739244L;
+	private static final long serialVersionUID = 8241668261761497929L;
 
 	/**
 	 * 卡类型。其中开通了先享次卡后才能在制卡时使用先享后付的资金模式。
@@ -30,9 +30,10 @@ public class AlipayCommerceMerchantcardOpenCreateModel extends AlipayObject {
 	private String merchantName;
 
 	/**
-	 * 是否需要代运营授权
+	 * 是否需要代运营授权 当前字段已废弃(周期卡-直连+间连开通，去掉【是否代运营授权】，并一并去掉后续的代运营授权逻辑。)
 	 */
 	@ApiField("need_auth")
+	@Deprecated
 	private Boolean needAuth;
 
 	/**

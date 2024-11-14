@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户是否签约一码付
  *
  * @author auto create
- * @since 1.0, 2024-09-11 16:54:51
+ * @since 1.0, 2024-11-13 17:02:24
  */
 public class AlipayCommerceMedicalAuthorizeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7618877332543286195L;
+	private static final long serialVersionUID = 3766381753391212384L;
 
 	/**
 	 * 用户在IOT设备上刷脸获得的ftoken

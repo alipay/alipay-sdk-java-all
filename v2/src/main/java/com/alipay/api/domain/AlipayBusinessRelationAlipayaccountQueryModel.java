@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝代运营商业关系收单pid支付宝账号查询
  *
  * @author auto create
- * @since 1.0, 2022-08-12 10:22:33
+ * @since 1.0, 2024-11-12 15:36:10
  */
 public class AlipayBusinessRelationAlipayaccountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4783584653258214255L;
+	private static final long serialVersionUID = 7429785285655545312L;
 
 	/**
 	 * 商业组织关系中商圈的ownerPid

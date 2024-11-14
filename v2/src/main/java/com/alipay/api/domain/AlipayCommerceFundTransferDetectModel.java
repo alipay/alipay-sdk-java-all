@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 流水记录校验真假
  *
  * @author auto create
- * @since 1.0, 2024-10-10 13:44:33
+ * @since 1.0, 2024-11-13 11:12:55
  */
 public class AlipayCommerceFundTransferDetectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3185861341352187163L;
+	private static final long serialVersionUID = 2218158771512619275L;
 
 	/**
 	 * 实际支付金额, 单位元
@@ -20,13 +20,13 @@ public class AlipayCommerceFundTransferDetectModel extends AlipayObject {
 	private String monetaryAmount;
 
 	/**
-	 * 付款银行卡号
+	 * 付款企业支付宝账号
 	 */
 	@ApiField("payment_account")
 	private String paymentAccount;
 
 	/**
-	 * 付款银行名称
+	 * 付款企业账户名
 	 */
 	@ApiField("payment_bank_name")
 	private String paymentBankName;
@@ -38,13 +38,13 @@ public class AlipayCommerceFundTransferDetectModel extends AlipayObject {
 	private String paymentDate;
 
 	/**
-	 * 收款银行卡号
+	 * 收款银行卡号/收款方支付宝登录号
 	 */
 	@ApiField("receipt_account")
 	private String receiptAccount;
 
 	/**
-	 * 收款银行名称
+	 * 收款银行名称, 到卡需要填
 	 */
 	@ApiField("receipt_bank_name")
 	private String receiptBankName;

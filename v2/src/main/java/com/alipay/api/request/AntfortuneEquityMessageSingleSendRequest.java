@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: antfortune.equity.message.single.send request
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 19:33:09
+ * @since 1.0, 2024-11-13 11:46:58
  */
 public class AntfortuneEquityMessageSingleSendRequest implements AlipayRequest<AntfortuneEquityMessageSingleSendResponse> {
 

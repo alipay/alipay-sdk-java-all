@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pay.app.pocketmoney.auth.query request
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 19:33:34
+ * @since 1.0, 2024-11-13 16:31:16
  */
 public class AlipayPayAppPocketmoneyAuthQueryRequest implements AlipayRequest<AlipayPayAppPocketmoneyAuthQueryResponse> {
 

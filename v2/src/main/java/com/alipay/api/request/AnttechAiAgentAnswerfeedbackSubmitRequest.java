@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.ai.agent.answerfeedback.submit request
  * 
  * @author auto create
- * @since 1.0, 2024-11-12 14:17:39
+ * @since 1.0, 2024-11-12 17:37:19
  */
 public class AnttechAiAgentAnswerfeedbackSubmitRequest implements AlipayRequest<AnttechAiAgentAnswerfeedbackSubmitResponse> {
 

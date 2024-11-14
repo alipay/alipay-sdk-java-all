@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * N设备日维度明细信息
  *
  * @author auto create
- * @since 1.0, 2024-09-24 14:23:04
+ * @since 1.0, 2024-11-12 19:45:51
  */
 public class NDeviceMetricsListForDayResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 5393692454742851882L;
+	private static final long serialVersionUID = 3824983699752268386L;
 
 	/**
 	 * 支付宝金额，单位元
@@ -74,6 +74,12 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 	 */
 	@ApiField("district_name")
 	private String districtName;
+
+	/**
+	 * 收银员是否打卡
+	 */
+	@ApiField("do_check_in")
+	private Boolean doCheckIn;
 
 	/**
 	 * nfc是否动销
@@ -233,6 +239,13 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 	}
 	public void setDistrictName(String districtName) {
 		this.districtName = districtName;
+	}
+
+	public Boolean getDoCheckIn() {
+		return this.doCheckIn;
+	}
+	public void setDoCheckIn(Boolean doCheckIn) {
+		this.doCheckIn = doCheckIn;
 	}
 
 	public Boolean getHasNfcTrade() {

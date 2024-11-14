@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiTradeKbdeliveryDeliveryCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7181263643286937235L;
+	private static final long serialVersionUID = 5668194661478837768L;
 
 	/**
 	 * 口碑物流单，单号；

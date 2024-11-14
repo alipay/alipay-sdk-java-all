@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InvoiceLineInfoOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 1279366648965329739L;
+	private static final long serialVersionUID = 1211338154821576845L;
 
 	/**
 	 * 免税标记 Y:免税 N：不免税 税率为零时必须指定

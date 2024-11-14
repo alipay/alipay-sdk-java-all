@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HomeAwayInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7843295869151663662L;
+	private static final long serialVersionUID = 3246847578354743528L;
 
 	/**
 	 * 客队数据

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.qrpass.verify.query request
  * 
  * @author auto create
- * @since 1.0, 2024-05-21 14:02:03
+ * @since 1.0, 2024-11-12 16:35:19
  */
 public class AlipayCommerceTransportQrpassVerifyQueryRequest implements AlipayRequest<AlipayCommerceTransportQrpassVerifyQueryResponse> {
 

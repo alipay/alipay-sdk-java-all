@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ViewColumnInfoModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4648344174453457646L;
+	private static final long serialVersionUID = 6134951175329638648L;
 
 	/**
 	 * LEVEL：等级 

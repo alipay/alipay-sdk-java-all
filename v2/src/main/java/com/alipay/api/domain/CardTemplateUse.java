@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 卡使用信息
  *
  * @author auto create
- * @since 1.0, 2024-11-04 11:36:17
+ * @since 1.0, 2024-11-13 14:18:56
  */
 public class CardTemplateUse extends AlipayObject {
 
-	private static final long serialVersionUID = 3477946928342498947L;
+	private static final long serialVersionUID = 7734996162725327753L;
 
 	/**
 	 * 周期付需要配置周期信息
@@ -46,6 +46,12 @@ public class CardTemplateUse extends AlipayObject {
 	 */
 	@ApiField("reservation_url")
 	private String reservationUrl;
+
+	/**
+	 * 周期卡是否全部门店
+	 */
+	@ApiField("show_shop")
+	private String showShop;
 
 	/**
 	 * 可用次数或期数
@@ -106,6 +112,13 @@ public class CardTemplateUse extends AlipayObject {
 	}
 	public void setReservationUrl(String reservationUrl) {
 		this.reservationUrl = reservationUrl;
+	}
+
+	public String getShowShop() {
+		return this.showShop;
+	}
+	public void setShowShop(String showShop) {
+		this.showShop = showShop;
 	}
 
 	public Long getUsableCount() {

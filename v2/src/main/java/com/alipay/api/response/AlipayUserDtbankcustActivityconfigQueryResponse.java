@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.dtbankcust.activityconfig.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-04 11:07:24
+ * @since 1.0, 2024-11-13 10:36:46
  */
 public class AlipayUserDtbankcustActivityconfigQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1884894417671717837L;
+	private static final long serialVersionUID = 7626613627958471379L;
 
 	/** 
 	 * 活动ID

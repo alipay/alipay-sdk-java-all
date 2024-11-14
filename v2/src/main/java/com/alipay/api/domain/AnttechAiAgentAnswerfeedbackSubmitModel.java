@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数字科技Agent智能体多轮对话回答反馈
  *
  * @author auto create
- * @since 1.0, 2024-11-05 20:43:33
+ * @since 1.0, 2024-11-12 17:33:36
  */
 public class AnttechAiAgentAnswerfeedbackSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3867913439672133192L;
+	private static final long serialVersionUID = 5382278179361971745L;
 
 	/**
 	 * 反馈评价参数

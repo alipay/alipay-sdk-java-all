@@ -1,6 +1,8 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.NDeviceMetricsListForDayResponse;
 
 import com.alipay.api.AlipayResponse;
@@ -9,17 +11,24 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.ndevice.metricsforday.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-12 09:57:33
+ * @since 1.0, 2024-11-12 19:47:15
  */
 public class AlipayCommerceOperationNdeviceMetricsfordayBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2827136719586482942L;
+	private static final long serialVersionUID = 3717421242162418841L;
 
 	/** 
 	 * 数据总数
 	 */
 	@ApiField("count")
 	private Long count;
+
+	/** 
+	 * 设备明细列表
+	 */
+	@ApiListField("data")
+	@ApiField("n_device_metrics_list_for_day_response")
+	private List<NDeviceMetricsListForDayResponse> data;
 
 	/** 
 	 * 设备明细列表
@@ -44,6 +53,13 @@ public class AlipayCommerceOperationNdeviceMetricsfordayBatchqueryResponse exten
 	}
 	public Long getCount( ) {
 		return this.count;
+	}
+
+	public void setData(List<NDeviceMetricsListForDayResponse> data) {
+		this.data = data;
+	}
+	public List<NDeviceMetricsListForDayResponse> getData( ) {
+		return this.data;
 	}
 
 	public void setList(NDeviceMetricsListForDayResponse list) {

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayGotoneMessageCourierSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6722772121367574498L;
+	private static final long serialVersionUID = 3581621766472489973L;
 
 	/** 
 	 * 结果码。SUCCESS：发送成功。

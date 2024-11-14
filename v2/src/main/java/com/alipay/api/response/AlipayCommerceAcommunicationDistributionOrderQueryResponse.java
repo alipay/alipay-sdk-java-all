@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.acommunication.distribution.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-11 17:58:11
+ * @since 1.0, 2024-11-13 16:17:19
  */
 public class AlipayCommerceAcommunicationDistributionOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7654226822964781399L;
+	private static final long serialVersionUID = 3664515616958824876L;
 
 	/** 
 	 * 支付宝订单号
@@ -47,6 +47,12 @@ public class AlipayCommerceAcommunicationDistributionOrderQueryResponse extends 
 	 */
 	@ApiField("order_status_code")
 	private String orderStatusCode;
+
+	/** 
+	 * 订单状态详情描述
+	 */
+	@ApiField("order_status_desc")
+	private String orderStatusDesc;
 
 	public void setAlipayOrderId(String alipayOrderId) {
 		this.alipayOrderId = alipayOrderId;
@@ -81,6 +87,13 @@ public class AlipayCommerceAcommunicationDistributionOrderQueryResponse extends 
 	}
 	public String getOrderStatusCode( ) {
 		return this.orderStatusCode;
+	}
+
+	public void setOrderStatusDesc(String orderStatusDesc) {
+		this.orderStatusDesc = orderStatusDesc;
+	}
+	public String getOrderStatusDesc( ) {
+		return this.orderStatusDesc;
 	}
 
 }

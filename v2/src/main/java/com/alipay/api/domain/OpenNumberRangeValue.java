@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenNumberRangeValue extends AlipayObject {
 
-	private static final long serialVersionUID = 8644331912991265556L;
+	private static final long serialVersionUID = 5798829152544165158L;
 
 	/**
 	 * 数值操作符是大于、大于等于、小于、小于等于时，传入单个数值，数值操作符是介于，传入2个数值，逗号分割。

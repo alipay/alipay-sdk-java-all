@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 安心付开通准入校验
  *
  * @author auto create
- * @since 1.0, 2024-11-09 01:00:17
+ * @since 1.0, 2024-11-12 20:24:55
  */
 public class AlipayCommerceMerchantcardOpenCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8853843225368633478L;
+	private static final long serialVersionUID = 1154123334838623341L;
 
 	/**
 	 * 卡类型，数组。
@@ -30,9 +30,10 @@ public class AlipayCommerceMerchantcardOpenCheckModel extends AlipayObject {
 	private String mccCode;
 
 	/**
-	 * 是否需要代运营授权
+	 * 是否需要代运营授权 当前字段已废弃(周期卡-直连+间连开通，去掉【是否代运营授权】，并一并去掉后续的代运营授权逻辑。)
 	 */
 	@ApiField("need_auth")
+	@Deprecated
 	private Boolean needAuth;
 
 	/**

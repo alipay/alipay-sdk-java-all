@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 电商店铺明细信息
  *
  * @author auto create
- * @since 1.0, 2024-08-12 15:02:28
+ * @since 1.0, 2024-11-13 17:51:04
  */
 public class EcomStoreInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7142144858224228142L;
+	private static final long serialVersionUID = 3773989451615192475L;
 
 	/**
 	 * 关联主播明细
@@ -168,6 +168,20 @@ public class EcomStoreInfo extends AlipayObject {
 	 */
 	@ApiField("shop_type")
 	private String shopType;
+
+	/**
+	 * 店铺销售金额TOP10商品链接名称
+	 */
+	@ApiListField("standard_amt_top_10_products")
+	@ApiField("product_detail_info")
+	private List<ProductDetailInfo> standardAmtTop10Products;
+
+	/**
+	 * 店铺销量TOP10商品链接名称
+	 */
+	@ApiListField("standard_volume_top_10_products")
+	@ApiField("product_detail_info")
+	private List<ProductDetailInfo> standardVolumeTop10Products;
 
 	/**
 	 * 统一社会信用代码
@@ -348,6 +362,20 @@ public class EcomStoreInfo extends AlipayObject {
 	}
 	public void setShopType(String shopType) {
 		this.shopType = shopType;
+	}
+
+	public List<ProductDetailInfo> getStandardAmtTop10Products() {
+		return this.standardAmtTop10Products;
+	}
+	public void setStandardAmtTop10Products(List<ProductDetailInfo> standardAmtTop10Products) {
+		this.standardAmtTop10Products = standardAmtTop10Products;
+	}
+
+	public List<ProductDetailInfo> getStandardVolumeTop10Products() {
+		return this.standardVolumeTop10Products;
+	}
+	public void setStandardVolumeTop10Products(List<ProductDetailInfo> standardVolumeTop10Products) {
+		this.standardVolumeTop10Products = standardVolumeTop10Products;
 	}
 
 	public String getUscc() {

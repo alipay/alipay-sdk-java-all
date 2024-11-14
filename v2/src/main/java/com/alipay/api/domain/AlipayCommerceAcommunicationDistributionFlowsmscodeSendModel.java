@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 流量分销发送验证码
  *
  * @author auto create
- * @since 1.0, 2024-07-11 14:17:21
+ * @since 1.0, 2024-11-12 15:39:16
  */
 public class AlipayCommerceAcommunicationDistributionFlowsmscodeSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6842939341725559675L;
+	private static final long serialVersionUID = 8371678871621529342L;
+
+	/**
+	 * 分销商订单号
+	 */
+	@ApiField("inst_order_id")
+	private String instOrderId;
 
 	/**
 	 * 商品id
@@ -30,6 +36,13 @@ public class AlipayCommerceAcommunicationDistributionFlowsmscodeSendModel extend
 	 */
 	@ApiField("request_id")
 	private String requestId;
+
+	public String getInstOrderId() {
+		return this.instOrderId;
+	}
+	public void setInstOrderId(String instOrderId) {
+		this.instOrderId = instOrderId;
+	}
 
 	public String getItemId() {
 		return this.itemId;

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingToolFengdieSpaceBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5473222351987542498L;
+	private static final long serialVersionUID = 6661766343811484374L;
 
 	/**
 	 * 当前页数，默认为1

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataBillEreceiptQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7572278892673463381L;
+	private static final long serialVersionUID = 6177999441674153528L;
 
 	/**
 	 * 根据申请id查询状态。通过 <a href="https://opendocs.alipay.com/apis/api_15/alipay.data.bill.ereceipt.apply">alipay.data.bill.ereceipt.apply(申请电子回单(incubating))</a> 接口同步响应获取。

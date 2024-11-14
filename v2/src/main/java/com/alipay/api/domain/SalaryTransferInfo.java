@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SalaryTransferInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2325176249621635858L;
+	private static final long serialVersionUID = 4439731525277196371L;
 
 	/**
 	 * 转账的业务场景码，有限枚举：

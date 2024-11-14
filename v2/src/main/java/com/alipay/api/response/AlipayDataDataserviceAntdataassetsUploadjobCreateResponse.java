@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataDataserviceAntdataassetsUploadjobCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1889687771834387557L;
+	private static final long serialVersionUID = 3173875615683993279L;
 
 	/** 
 	 * 创建上云任务之后生成的任务ID
