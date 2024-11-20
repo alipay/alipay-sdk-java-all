@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.merchantcard.config.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2024-10-15 17:22:15
+ * @since 1.0, 2024-11-15 17:07:20
  */
 public class AlipayCommerceMerchantcardConfigBatchqueryRequest implements AlipayRequest<AlipayCommerceMerchantcardConfigBatchqueryResponse> {
 

@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.salary.transfer.apply response.
  * 
  * @author auto create
- * @since 1.0, 2024-09-18 17:02:11
+ * @since 1.0, 2024-11-15 10:22:27
  */
 public class AlipayCommerceSalaryTransferApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1428691279589429348L;
+	private static final long serialVersionUID = 3476654654214528279L;
 
 	/** 
 	 * 申请时间，申请成功时提供

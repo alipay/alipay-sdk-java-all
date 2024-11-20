@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.scene.token.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-11 15:37:51
+ * @since 1.0, 2024-11-15 15:32:19
  */
 public class AlipayCommerceEducateSceneTokenCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6683779916435797892L;
+	private static final long serialVersionUID = 8779684738782957234L;
 
 	/** 
 	 * 请求生成场景token

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.merchantcard.settleaccount.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2024-10-15 13:52:14
+ * @since 1.0, 2024-11-15 17:07:21
  */
 public class AlipayCommerceMerchantcardSettleaccountBatchqueryRequest implements AlipayRequest<AlipayCommerceMerchantcardSettleaccountBatchqueryResponse> {
 

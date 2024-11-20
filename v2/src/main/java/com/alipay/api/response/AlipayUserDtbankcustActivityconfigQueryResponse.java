@@ -3,6 +3,7 @@ package com.alipay.api.response;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.domain.DtBankActivityTimeInfo;
 import com.alipay.api.domain.DtBankActivityTypeInfo;
+import com.alipay.api.domain.DtbankActivityAlertConfigInfo;
 import com.alipay.api.domain.DtBankInfo;
 import com.alipay.api.domain.DtBankBudgetInfo;
 import com.alipay.api.domain.DtBankCrowdInfo;
@@ -14,14 +15,15 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.dtbankcust.activityconfig.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-13 10:36:46
+ * @since 1.0, 2024-11-18 16:57:15
  */
 public class AlipayUserDtbankcustActivityconfigQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7626613627958471379L;
+	private static final long serialVersionUID = 7145291963748159946L;
 
 	/** 
-	 * 活动ID
+	 * 当入参活动类型是DISCOUNT、VOUCHER、FIRST_BIND_CARD_GIFT时返回活动ID；
+当入参活动类型是SOLUTION时返回解决方案ID
 	 */
 	@ApiField("activity_id")
 	private String activityId;
@@ -49,6 +51,14 @@ public class AlipayUserDtbankcustActivityconfigQueryResponse extends AlipayRespo
 	 */
 	@ApiField("activity_type_info")
 	private DtBankActivityTypeInfo activityTypeInfo;
+
+	/** 
+	 * 预算预警信息
+为空时表示不进行预算预警，
+不为空时表示有预算预警，返回预算预警配置
+	 */
+	@ApiField("alert_config_info")
+	private DtbankActivityAlertConfigInfo alertConfigInfo;
 
 	/** 
 	 * 活动配置银行信息
@@ -87,7 +97,7 @@ public class AlipayUserDtbankcustActivityconfigQueryResponse extends AlipayRespo
 	private String useScene;
 
 	/** 
-	 * 活动配置对应的券模板id信息
+	 * 活动配置对应的模板id信息
 	 */
 	@ApiField("voucher_template_id")
 	private String voucherTemplateId;
@@ -131,6 +141,13 @@ public class AlipayUserDtbankcustActivityconfigQueryResponse extends AlipayRespo
 	}
 	public DtBankActivityTypeInfo getActivityTypeInfo( ) {
 		return this.activityTypeInfo;
+	}
+
+	public void setAlertConfigInfo(DtbankActivityAlertConfigInfo alertConfigInfo) {
+		this.alertConfigInfo = alertConfigInfo;
+	}
+	public DtbankActivityAlertConfigInfo getAlertConfigInfo( ) {
+		return this.alertConfigInfo;
 	}
 
 	public void setBankInfo(DtBankInfo bankInfo) {

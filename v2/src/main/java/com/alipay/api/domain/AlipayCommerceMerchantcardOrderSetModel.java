@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 周期卡订单操作接口
  *
  * @author auto create
- * @since 1.0, 2024-10-12 19:28:15
+ * @since 1.0, 2024-11-15 15:53:19
  */
 public class AlipayCommerceMerchantcardOrderSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6259161777535228429L;
+	private static final long serialVersionUID = 4296676752728335111L;
 
 	/**
 	 * 取消期数列表
@@ -36,7 +36,10 @@ public class AlipayCommerceMerchantcardOrderSetModel extends AlipayObject {
 	private String openId;
 
 	/**
-	 * 操作类型
+	 * 卡适用范围
+【CANCEL】 AXF_MERCHANT_PERIOD_PAY、 AXF_MERCHANT_PERIOD_PAY_INDIRECT
+【PAUSE/RECOVER】AXF_MERCHANT_PERIOD_PAY、 AXF_MERCHANT_PERIOD_PAY_INDIRECT
+【UNBIND_CARD】AXF_MERCHANT_PERIOD_PAY、 AXF_MERCHANT_PERIOD_PAY_INDIRECT、AXF_MONEY_TIME_CARD、AXF_MONEY_CARD
 	 */
 	@ApiField("operation_type")
 	private String operationType;

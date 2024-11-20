@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金业务明细实体
  *
  * @author auto create
- * @since 1.0, 2023-12-20 16:28:52
+ * @since 1.0, 2024-11-15 16:01:22
  */
 public class BizFundReportResult extends AlipayObject {
 
-	private static final long serialVersionUID = 5696151695586328345L;
+	private static final long serialVersionUID = 4675976119553522622L;
 
 	/**
 	 * 实付金额（元）
@@ -62,7 +62,7 @@ public class BizFundReportResult extends AlipayObject {
 	private String memo;
 
 	/**
-	 * 是否脱敏
+	 * 是否脱敏。非空就是不脱敏，空就是脱敏。脱敏规则根据发生的业务定义
 	 */
 	@ApiField("no_mbill_encrypt")
 	private String noMbillEncrypt;
@@ -158,7 +158,7 @@ public class BizFundReportResult extends AlipayObject {
 	private String source;
 
 	/**
-	 * 单据状态
+	 * 订单状态
 	 */
 	@ApiField("status")
 	private String status;

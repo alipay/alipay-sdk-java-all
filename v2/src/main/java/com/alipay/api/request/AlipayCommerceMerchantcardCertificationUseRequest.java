@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.merchantcard.certification.use request
  * 
  * @author auto create
- * @since 1.0, 2024-08-22 15:27:08
+ * @since 1.0, 2024-11-15 17:02:17
  */
 public class AlipayCommerceMerchantcardCertificationUseRequest implements AlipayRequest<AlipayCommerceMerchantcardCertificationUseResponse> {
 

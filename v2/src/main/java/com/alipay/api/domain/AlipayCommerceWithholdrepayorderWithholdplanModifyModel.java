@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 还款业务单代扣协议执行计划修改
  *
  * @author auto create
- * @since 1.0, 2024-09-26 18:30:37
+ * @since 1.0, 2024-11-18 19:54:19
  */
 public class AlipayCommerceWithholdrepayorderWithholdplanModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8141581574491959342L;
+	private static final long serialVersionUID = 3527198927767919599L;
 
 	/**
 	 * 协议号
@@ -52,6 +52,12 @@ public class AlipayCommerceWithholdrepayorderWithholdplanModifyModel extends Ali
 	 */
 	@ApiField("sign_scene")
 	private String signScene;
+
+	/**
+	 * 业务单类型的履约节点，如激活，注意激活仅可进行一次
+	 */
+	@ApiField("stage")
+	private String stage;
 
 	/**
 	 * 支付宝用户的userId。
@@ -99,6 +105,13 @@ public class AlipayCommerceWithholdrepayorderWithholdplanModifyModel extends Ali
 	}
 	public void setSignScene(String signScene) {
 		this.signScene = signScene;
+	}
+
+	public String getStage() {
+		return this.stage;
+	}
+	public void setStage(String stage) {
+		this.stage = stage;
 	}
 
 	public String getUserId() {

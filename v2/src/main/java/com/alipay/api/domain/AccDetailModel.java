@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量代发到账户明细复杂模型
  *
  * @author auto create
- * @since 1.0, 2024-11-04 14:05:20
+ * @since 1.0, 2024-11-18 17:28:21
  */
 public class AccDetailModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1657218843262436935L;
+	private static final long serialVersionUID = 7533924159226719657L;
 
 	/**
 	 * 支付宝订单号
@@ -128,6 +128,7 @@ SUCCESS：处理成功
 DISUSE：已废除
 FAIL：处理失败
 UNKNOWN：未知状态
+WAIT_PAY：待付款
 	 */
 	@ApiField("status")
 	private String status;

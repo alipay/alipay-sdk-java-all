@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 在线购药：退款订单详细信息
  *
  * @author auto create
- * @since 1.0, 2024-09-03 19:50:52
+ * @since 1.0, 2024-11-18 21:17:19
  */
 public class RefundOrderDetailVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5424918681929176165L;
+	private static final long serialVersionUID = 1664828871999267663L;
 
 	/**
 	 * 退款总金额，单位：元
@@ -104,6 +104,12 @@ public class RefundOrderDetailVO extends AlipayObject {
 	private String operatorRole;
 
 	/**
+	 * 订单创建时生成的订单号
+	 */
+	@ApiField("order_no")
+	private String orderNo;
+
+	/**
 	 * 打包费退款金额，单位：元
 	 */
 	@ApiField("packing_fee")
@@ -128,7 +134,7 @@ public class RefundOrderDetailVO extends AlipayObject {
 	private String refundMsg;
 
 	/**
-	 * 退款订单号
+	 * 退款订单号，同alipay.commerce.medical.order.refund.changed(订单退款消息推送)的refund_no
 	 */
 	@ApiField("refund_order_no")
 	private String refundOrderNo;
@@ -265,6 +271,13 @@ public class RefundOrderDetailVO extends AlipayObject {
 	}
 	public void setOperatorRole(String operatorRole) {
 		this.operatorRole = operatorRole;
+	}
+
+	public String getOrderNo() {
+		return this.orderNo;
+	}
+	public void setOrderNo(String orderNo) {
+		this.orderNo = orderNo;
 	}
 
 	public String getPackingFee() {

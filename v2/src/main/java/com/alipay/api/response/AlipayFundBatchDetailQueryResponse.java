@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.batch.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-04 15:52:20
+ * @since 1.0, 2024-11-19 14:52:17
  */
 public class AlipayFundBatchDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6631642517955592371L;
+	private static final long serialVersionUID = 2828213841843996936L;
 
 	/** 
 	 * 1）当批次状态为INIT状态时，明细信息还未落地，返回明细信息为空
@@ -59,6 +59,8 @@ PART_SUCCESS 批次处理部分成功
 FAIL 全部处理失败
 DISUSE 批次单据废弃
 INVALID 批次单据中明细全部无效
+WAIT_PAY 待付款
+SUCCESS 处理成功
 	 */
 	@ApiField("batch_status")
 	private String batchStatus;
@@ -85,6 +87,7 @@ INVALID 批次单据中明细全部无效
 GLOBAL：全球代发，多币种代发（包括除人民币以外的同币种代发），需要支付宝做货币兑换。
 LOCAL：纯人民币代发，不需要支付宝做货币兑换。
 MESSAGE_BATCH_PAY：接口报文代发。
+MESSAGE_SATF_BATCH_PAY：专户批量代发的报文代发
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
@@ -97,7 +100,7 @@ MESSAGE_BATCH_PAY：接口报文代发。
 	private String errorCode;
 
 	/** 
-	 * 失败金额
+	 * 失败金额 (单位：元)
 	 */
 	@ApiField("fail_amount")
 	private String failAmount;
@@ -181,7 +184,7 @@ MESSAGE_BATCH_PAY：接口报文代发。
 	private String signPrincipal;
 
 	/** 
-	 * 成功金额
+	 * 成功金额 (单位：元)
 	 */
 	@ApiField("success_amount")
 	private String successAmount;
@@ -193,7 +196,7 @@ MESSAGE_BATCH_PAY：接口报文代发。
 	private Long successCount;
 
 	/** 
-	 * 批次总金额
+	 * 批次总金额 (单位：元)
 	 */
 	@ApiField("total_amount")
 	private String totalAmount;

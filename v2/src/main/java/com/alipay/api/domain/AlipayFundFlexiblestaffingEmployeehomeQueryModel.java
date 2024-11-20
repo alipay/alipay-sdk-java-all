@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开卡结果查询
  *
  * @author auto create
- * @since 1.0, 2024-05-29 13:45:52
+ * @since 1.0, 2024-11-18 16:11:28
  */
 public class AlipayFundFlexiblestaffingEmployeehomeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7228315347272493294L;
+	private static final long serialVersionUID = 4281499256976683799L;
 
 	/**
-	 * 协议号
+	 * 协议号，与商户唯一订单号out_biz_no不能同时为空
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
@@ -26,7 +26,7 @@ public class AlipayFundFlexiblestaffingEmployeehomeQueryModel extends AlipayObje
 	private String bizScene;
 
 	/**
-	 * 商户端唯一订单号
+	 * 商户端唯一订单号，与协议号agreement_no不能同时为空
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;

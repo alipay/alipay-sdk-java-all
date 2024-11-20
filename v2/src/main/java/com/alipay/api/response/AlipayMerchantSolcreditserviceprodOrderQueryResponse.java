@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.solcreditserviceprod.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-11 09:09:46
+ * @since 1.0, 2024-11-14 20:02:19
  */
 public class AlipayMerchantSolcreditserviceprodOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6658361382378277693L;
+	private static final long serialVersionUID = 7784844542152968187L;
 
 	/** 
 	 * yyyy-MM-dd HH:mm:ss

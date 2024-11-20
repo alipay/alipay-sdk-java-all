@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 先享后付批量核销使用
  *
  * @author auto create
- * @since 1.0, 2024-08-22 14:44:16
+ * @since 1.0, 2024-11-15 15:53:19
  */
 public class AlipayCommerceMerchantcardCertificationUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8647282317938963658L;
+	private static final long serialVersionUID = 3112684861234722865L;
 
 	/**
 	 * 核销信息

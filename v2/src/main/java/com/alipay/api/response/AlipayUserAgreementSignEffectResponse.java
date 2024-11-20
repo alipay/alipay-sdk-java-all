@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.agreement.sign.effect response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-08 11:57:47
+ * @since 1.0, 2024-11-19 19:22:16
  */
 public class AlipayUserAgreementSignEffectResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5333636192462611642L;
+	private static final long serialVersionUID = 4718111117673374858L;
 
 	/** 
 	 * 支付宝用户协议号, 用户签约成功后的支付宝协议号.

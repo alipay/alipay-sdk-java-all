@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PosStallModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3662995811329713891L;
+	private static final long serialVersionUID = 3587225839712424961L;
 
 	/**
 	 * 菜品下档口的排序号

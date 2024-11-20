@@ -7,38 +7,38 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户周期卡间连参数配置
  *
  * @author auto create
- * @since 1.0, 2024-08-12 18:52:47
+ * @since 1.0, 2024-11-15 16:07:22
  */
 public class AlipayCommercePeriodcardIndirectconfigCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3666656194346536633L;
+	private static final long serialVersionUID = 4315228786388632531L;
 
 	/**
-	 * 群组code
+	 * 群组code，注意有售卖订单后不能修改该字段
 	 */
 	@ApiField("group_code")
 	private String groupCode;
 
 	/**
-	 * 群组信用服务id
+	 * 群组信用服务id，注意有售卖订单后不能修改该字段
 	 */
 	@ApiField("group_zm_service_id")
 	private String groupZmServiceId;
 
 	/**
-	 * 接口消息通知appid
+	 * 接口消息通知appid，只用于alipay.commerce.merchantcard.deduct.notify接口
 	 */
 	@ApiField("notify_app_id")
 	private String notifyAppId;
 
 	/**
-	 * 机构pid
+	 * 机构pid，注意有售卖订单后不能修改该字段
 	 */
 	@ApiField("org_pid")
 	private String orgPid;
 
 	/**
-	 * 扣款场景码
+	 * 扣款场景码，注意有售卖订单后不能修改该字段
 	 */
 	@ApiField("sign_scene")
 	private String signScene;

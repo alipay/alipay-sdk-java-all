@@ -11,12 +11,24 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.dataexchange.schemainputparam.rainythetwice.query request
  * 
  * @author auto create
- * @since 1.0, 2024-11-13 19:32:18
+ * @since 1.0, 2024-11-15 17:12:16
  */
 public class AlipayDataDataexchangeSchemainputparamRainythetwiceQueryRequest implements AlipayRequest<AlipayDataDataexchangeSchemainputparamRainythetwiceQueryResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
+
+	/** 
+	* Schema模型入参测试接口02-string
+	 */
+	private String bizContent;
+
+	public void setBizContent(String bizContent) {
+		this.bizContent = bizContent;
+	}
+	public String getBizContent() {
+		return this.bizContent;
+	}
 	private String terminalType;
 	private String terminalInfo;	
 	private String prodCode;
@@ -79,6 +91,7 @@ public class AlipayDataDataexchangeSchemainputparamRainythetwiceQueryRequest imp
 
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
+		txtParams.put("biz_content", this.bizContent);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 扣款单退款
  *
  * @author auto create
- * @since 1.0, 2024-10-11 09:10:45
+ * @since 1.0, 2024-11-14 19:49:53
  */
 public class AlipayMerchantSolcreditserviceprodDeductionorderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6263616169145935915L;
+	private static final long serialVersionUID = 5796786353545695337L;
 
 	/**
 	 * 退款金额(单位元)，最多2位小数

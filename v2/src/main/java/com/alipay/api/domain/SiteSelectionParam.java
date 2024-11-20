@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class SiteSelectionParam extends AlipayObject {
 
-	private static final long serialVersionUID = 5155784316899363882L;
+	private static final long serialVersionUID = 2837492362143175335L;
 
 	/**
 	 * 全国统一城市编码

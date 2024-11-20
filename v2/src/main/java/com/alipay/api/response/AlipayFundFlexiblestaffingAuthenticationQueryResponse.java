@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.flexiblestaffing.authentication.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-09 10:59:30
+ * @since 1.0, 2024-11-15 10:22:08
  */
 public class AlipayFundFlexiblestaffingAuthenticationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1757362997812192798L;
+	private static final long serialVersionUID = 8574527843773523343L;
 
 	/** 
 	 * 商户端的唯一订单号，幂等关键参数。

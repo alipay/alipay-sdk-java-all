@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PayForPrivilegePromotionPlanInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1345778155423429817L;
+	private static final long serialVersionUID = 2361875194685856156L;
 
 	/**
 	 * 充享惠方案权益金部分，最小为0

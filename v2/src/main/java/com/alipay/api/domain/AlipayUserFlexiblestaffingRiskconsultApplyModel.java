@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 灵工风控预咨询
  *
  * @author auto create
- * @since 1.0, 2024-10-21 17:02:06
+ * @since 1.0, 2024-11-18 15:20:21
  */
 public class AlipayUserFlexiblestaffingRiskconsultApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5816673383559436531L;
+	private static final long serialVersionUID = 3225178911271348192L;
 
 	/**
 	 * 场景码
@@ -54,6 +54,7 @@ public class AlipayUserFlexiblestaffingRiskconsultApplyModel extends AlipayObjec
 User Account Risk：账户安全咨询
 Enterprise Access Risk：社保风险咨询
 Enterprise Manager Risk：董监高风险咨询
+Account Limit Risk：限权风险咨询
 	 */
 	@ApiField("risk_scene")
 	private String riskScene;

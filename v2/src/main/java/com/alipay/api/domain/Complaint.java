@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 投诉信息
  *
  * @author auto create
- * @since 1.0, 2024-04-18 18:02:33
+ * @since 1.0, 2024-11-15 16:03:54
  */
 public class Complaint extends AlipayObject {
 
-	private static final long serialVersionUID = 5721726581274526888L;
+	private static final long serialVersionUID = 8636598396779411269L;
 
 	/**
-	 * 订购单ID
+	 * 售卖订单id
 	 */
 	@ApiField("card_id")
 	private String cardId;

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品sku对象
  *
  * @author auto create
- * @since 1.0, 2024-09-10 17:17:18
+ * @since 1.0, 2024-11-19 20:14:51
  */
 public class ItemSkuVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2469199658548169574L;
+	private static final long serialVersionUID = 2389495518142838634L;
 
 	/**
 	 * sku条形码信息
@@ -66,6 +66,12 @@ public class ItemSkuVO extends AlipayObject {
 	 */
 	@ApiField("sku_id")
 	private String skuId;
+
+	/**
+	 * sku类型
+	 */
+	@ApiField("sku_type")
+	private String skuType;
 
 	/**
 	 * sku库存，目前支持库存区间为0-99999
@@ -133,6 +139,13 @@ public class ItemSkuVO extends AlipayObject {
 	}
 	public void setSkuId(String skuId) {
 		this.skuId = skuId;
+	}
+
+	public String getSkuType() {
+		return this.skuType;
+	}
+	public void setSkuType(String skuType) {
+		this.skuType = skuType;
 	}
 
 	public Long getStockNum() {

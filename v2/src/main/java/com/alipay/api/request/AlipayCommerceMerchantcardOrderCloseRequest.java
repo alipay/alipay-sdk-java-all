@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.merchantcard.order.close request
  * 
  * @author auto create
- * @since 1.0, 2024-11-06 15:12:21
+ * @since 1.0, 2024-11-15 17:07:20
  */
 public class AlipayCommerceMerchantcardOrderCloseRequest implements AlipayRequest<AlipayCommerceMerchantcardOrderCloseResponse> {
 

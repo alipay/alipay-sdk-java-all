@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.solcreditserviceprod.scenecategory.query request
  * 
  * @author auto create
- * @since 1.0, 2024-10-11 09:10:42
+ * @since 1.0, 2024-11-14 20:02:20
  */
 public class AlipayMerchantSolcreditserviceprodScenecategoryQueryRequest implements AlipayRequest<AlipayMerchantSolcreditserviceprodScenecategoryQueryResponse> {
 

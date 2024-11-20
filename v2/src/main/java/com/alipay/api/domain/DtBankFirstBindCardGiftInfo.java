@@ -10,11 +10,22 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 首绑有礼活动信息
  *
  * @author auto create
- * @since 1.0, 2024-03-28 14:05:48
+ * @since 1.0, 2024-11-15 16:04:20
  */
 public class DtBankFirstBindCardGiftInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3155299912671498782L;
+	private static final long serialVersionUID = 5469854642222688456L;
+
+	/**
+	 * 是否允许拆分使用
+定额红包时：
+true: 可以拆分使用
+false：不可以拆分使用
+为null时：历史活动，不可以拆分使用
+非立减：空字段
+	 */
+	@ApiField("allow_voucher_split")
+	private Boolean allowVoucherSplit;
 
 	/**
 	 * bank_code_config_acount_limit值为ASSIGNED_PID_LIST有值，表示银行码指定账号PID列表
@@ -49,6 +60,21 @@ public class DtBankFirstBindCardGiftInfo extends AlipayObject {
 	@ApiField("string")
 	private List<String> couponInstructionList;
 
+	/**
+	 * 消费门槛
+字段取值：
+有门槛，门槛金额XX元  or  零门槛
+	 */
+	@ApiField("threshold_text")
+	private String thresholdText;
+
+	public Boolean getAllowVoucherSplit() {
+		return this.allowVoucherSplit;
+	}
+	public void setAllowVoucherSplit(Boolean allowVoucherSplit) {
+		this.allowVoucherSplit = allowVoucherSplit;
+	}
+
 	public List<String> getAssignedPidList() {
 		return this.assignedPidList;
 	}
@@ -82,6 +108,13 @@ public class DtBankFirstBindCardGiftInfo extends AlipayObject {
 	}
 	public void setCouponInstructionList(List<String> couponInstructionList) {
 		this.couponInstructionList = couponInstructionList;
+	}
+
+	public String getThresholdText() {
+		return this.thresholdText;
+	}
+	public void setThresholdText(String thresholdText) {
+		this.thresholdText = thresholdText;
 	}
 
 }

@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.solcreditserviceprod.merchant.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-11 09:12:13
+ * @since 1.0, 2024-11-14 20:02:21
  */
 public class AlipayMerchantSolcreditserviceprodMerchantQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4789758223553895462L;
+	private static final long serialVersionUID = 2482669218615236644L;
 
 	/** 
 	 * 用户支付金额结算账户

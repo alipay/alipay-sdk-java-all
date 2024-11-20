@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 零工卡获取保险推荐
  *
  * @author auto create
- * @since 1.0, 2023-11-24 13:48:30
+ * @since 1.0, 2024-11-15 10:28:22
  */
 public class AlipayFundFlexiblestaffingInsureConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8778912283638687396L;
+	private static final long serialVersionUID = 5735213336483968732L;
 
 	/**
 	 * 场景码，固定值

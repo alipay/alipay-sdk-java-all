@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppCommunityTemporaryvisitorstagVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8314754319617879782L;
+	private static final long serialVersionUID = 5886186655341987371L;
 
 	/**
 	 * 蚂蚁统一会员ID

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发薪转账申请
  *
  * @author auto create
- * @since 1.0, 2024-09-14 15:22:04
+ * @since 1.0, 2024-11-15 10:22:27
  */
 public class AlipayCommerceSalaryTransferApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3239871947463665155L;
+	private static final long serialVersionUID = 3478372577824393993L;
 
 	/**
 	 * 转账关联的业务单据列表

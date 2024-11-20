@@ -17,6 +17,30 @@ public class AlipayDataDataserviceSchemaerrorcodeRainyQueryRequest implements Al
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
+
+	/** 
+	* 1
+	 */
+	private String stringMust;
+
+	/** 
+	* 1
+	 */
+	private String stringRegexNum;
+
+	public void setStringMust(String stringMust) {
+		this.stringMust = stringMust;
+	}
+	public String getStringMust() {
+		return this.stringMust;
+	}
+
+	public void setStringRegexNum(String stringRegexNum) {
+		this.stringRegexNum = stringRegexNum;
+	}
+	public String getStringRegexNum() {
+		return this.stringRegexNum;
+	}
 	private String terminalType;
 	private String terminalInfo;	
 	private String prodCode;
@@ -79,6 +103,8 @@ public class AlipayDataDataserviceSchemaerrorcodeRainyQueryRequest implements Al
 
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
+		txtParams.put("string_must", this.stringMust);
+		txtParams.put("string_regex_num", this.stringRegexNum);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}

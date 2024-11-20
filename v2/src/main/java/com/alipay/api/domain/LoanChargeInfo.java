@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LoanChargeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4676693253912573731L;
+	private static final long serialVersionUID = 7662176815463456756L;
 
 	/**
 	 * 费用编码

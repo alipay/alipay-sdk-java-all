@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class TaskRightsRuleDynamicAwardConfigDto extends AlipayObject {
 
-	private static final long serialVersionUID = 1692589871965296658L;
+	private static final long serialVersionUID = 4622148353617681842L;
 
 	/**
 	 * 动态配置列表

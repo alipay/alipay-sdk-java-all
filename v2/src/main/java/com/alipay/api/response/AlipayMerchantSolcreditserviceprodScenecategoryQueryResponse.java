@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.solcreditserviceprod.scenecategory.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-11 09:10:42
+ * @since 1.0, 2024-11-14 20:02:20
  */
 public class AlipayMerchantSolcreditserviceprodScenecategoryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8752517597481384263L;
+	private static final long serialVersionUID = 5339139412956512811L;
 
 	/** 
 	 * 场景类目信息列表

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.withholdrepayorder.pay.sign response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-11 15:27:13
+ * @since 1.0, 2024-11-18 19:42:20
  */
 public class AlipayCommerceWithholdrepayorderPaySignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3712413499695627954L;
+	private static final long serialVersionUID = 5333932419788274729L;
 
 	/** 
 	 * 获取签名后的业务数据

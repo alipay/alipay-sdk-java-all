@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.solcreditserviceprod.order.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-11 09:10:43
+ * @since 1.0, 2024-11-14 20:02:20
  */
 public class AlipayMerchantSolcreditserviceprodOrderConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3186371686162643864L;
+	private static final long serialVersionUID = 1734553285948135447L;
 
 	
 

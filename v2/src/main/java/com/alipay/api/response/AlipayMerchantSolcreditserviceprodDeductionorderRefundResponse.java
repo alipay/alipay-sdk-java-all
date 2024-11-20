@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.solcreditserviceprod.deductionorder.refund response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-11 09:10:45
+ * @since 1.0, 2024-11-14 20:02:20
  */
 public class AlipayMerchantSolcreditserviceprodDeductionorderRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3112259244563976862L;
+	private static final long serialVersionUID = 4847436795112541521L;
 
 	
 

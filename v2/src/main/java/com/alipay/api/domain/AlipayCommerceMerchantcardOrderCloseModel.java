@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订购单关闭
  *
  * @author auto create
- * @since 1.0, 2024-11-06 14:50:16
+ * @since 1.0, 2024-11-15 16:07:58
  */
 public class AlipayCommerceMerchantcardOrderCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2891115923988219175L;
+	private static final long serialVersionUID = 8229336413634625338L;
 
 	/**
 	 * 售卖订单ID
@@ -20,7 +20,7 @@ public class AlipayCommerceMerchantcardOrderCloseModel extends AlipayObject {
 	private String cardId;
 
 	/**
-	 * 次卡的违约金场景里，代表商户期望收到的违约金，注意不要大于售卖订单详情接口返回的咨询结果，单位：分
+	 * 次卡的违约金场景里，代表商户期望收到的违约金，注意不要大于售卖订单详情接口的返回值card_order_info.damages_consult.damages_cash，单位：分
 	 */
 	@ApiField("damages_cash")
 	private Long damagesCash;
@@ -38,7 +38,7 @@ public class AlipayCommerceMerchantcardOrderCloseModel extends AlipayObject {
 	private String openId;
 
 	/**
-	 * 在次卡的违约金场景，传入订单剩余金额用于做幂等，单位：分
+	 * 在次卡的违约金场景，需要传入订单剩余金额用于做幂等，字段来源是售卖订单详情接口的返回值card_order_info.damages_consult.refund_cash，单位：分
 	 */
 	@ApiField("total_cash")
 	private Long totalCash;

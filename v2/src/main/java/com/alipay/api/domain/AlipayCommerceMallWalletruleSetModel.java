@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商圈钱包数字化门店核销规则设置
  *
  * @author auto create
- * @since 1.0, 2024-10-23 20:32:00
+ * @since 1.0, 2024-11-18 19:02:57
  */
 public class AlipayCommerceMallWalletruleSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4862259342645514564L;
+	private static final long serialVersionUID = 7318427241959349628L;
 
 	/**
 	 * 此商圈钱包模板下，需设置的核销数字化门店列表；当操作类型type为query时，可不填；建议单次小于100，数量过大可能存在超时

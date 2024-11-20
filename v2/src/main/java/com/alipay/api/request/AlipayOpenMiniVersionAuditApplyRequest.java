@@ -15,7 +15,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.version.audit.apply request
  * 
  * @author auto create
- * @since 1.0, 2024-09-05 18:02:08
+ * @since 1.0, 2024-11-19 21:17:19
  */
 public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadRequest<AlipayOpenMiniVersionAuditApplyResponse> {
 
@@ -38,7 +38,7 @@ public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadReque
 	private String appEnglishName;
 
 	/** 
-	* 小程序logo图标，图片格式仅支持 jpeg,png,jpg格式，不支持 bmp,gif,BMP,GIF格式。建议上传像素为180*180 px，logo图片最大 2M。
+	* 小程序logo图标，图片格式仅支持 jpeg,png,jpg格式，不支持 bmp,gif,BMP,GIF格式。建议上传像素为180*180 px，logo图标最大不超过2M。
 	 */
 	private FileItem appLogo;
 

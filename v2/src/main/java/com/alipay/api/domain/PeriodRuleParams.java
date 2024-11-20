@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 周期扣款规则参数。使用周期扣款产品时需要传入，限定了发起扣款的周期、金额等。
  *
  * @author auto create
- * @since 1.0, 2024-09-04 20:08:37
+ * @since 1.0, 2024-11-18 15:48:33
  */
 public class PeriodRuleParams extends AlipayObject {
 
-	private static final long serialVersionUID = 4514898134849276452L;
+	private static final long serialVersionUID = 1547615435221661843L;
 
 	/**
 	 * 首次执行时间execute_time是周期扣款产品必填，即商户发起首次扣款的时间。精确到日，格式为yyyy-MM-dd
@@ -34,6 +34,12 @@ DAY即扣款周期按天计，MONTH代表扣款周期按自然月。
 	 */
 	@ApiField("period_type")
 	private String periodType;
+
+	/**
+	 * 周期扣中场景化规则信息，例如影音会员续费、保险等场景特殊规则字段
+	 */
+	@ApiField("scene_rule_params")
+	private SceneRuleParams sceneRuleParams;
 
 	/**
 	 * 单次扣款最大金额single_amount是周期扣款产品必填，即每次发起扣款时限制的最大金额，单位为元。商户每次发起扣款都不允许大于此金额。
@@ -72,6 +78,13 @@ DAY即扣款周期按天计，MONTH代表扣款周期按自然月。
 	}
 	public void setPeriodType(String periodType) {
 		this.periodType = periodType;
+	}
+
+	public SceneRuleParams getSceneRuleParams() {
+		return this.sceneRuleParams;
+	}
+	public void setSceneRuleParams(SceneRuleParams sceneRuleParams) {
+		this.sceneRuleParams = sceneRuleParams;
 	}
 
 	public String getSingleAmount() {

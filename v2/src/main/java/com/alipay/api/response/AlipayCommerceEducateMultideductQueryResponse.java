@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.multideduct.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-11 17:43:49
+ * @since 1.0, 2024-11-15 14:42:20
  */
 public class AlipayCommerceEducateMultideductQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5165373641825978112L;
+	private static final long serialVersionUID = 2187813534561914326L;
 
 	/** 
 	 * 支付宝协议支付的协议号。OPEN时返回
@@ -25,6 +25,12 @@ public class AlipayCommerceEducateMultideductQueryResponse extends AlipayRespons
 	 */
 	@ApiField("agreement_status")
 	private String agreementStatus;
+
+	/** 
+	 * 资产信息，入参token上送的时候才会返回
+	 */
+	@ApiField("asset")
+	private String asset;
 
 	/** 
 	 * 用于标记支付宝用户在应用下的唯一标识
@@ -62,6 +68,13 @@ public class AlipayCommerceEducateMultideductQueryResponse extends AlipayRespons
 	}
 	public String getAgreementStatus( ) {
 		return this.agreementStatus;
+	}
+
+	public void setAsset(String asset) {
+		this.asset = asset;
+	}
+	public String getAsset( ) {
+		return this.asset;
 	}
 
 	public void setOpenId(String openId) {

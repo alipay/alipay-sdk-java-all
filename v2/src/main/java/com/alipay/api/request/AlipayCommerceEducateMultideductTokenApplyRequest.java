@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.multideduct.token.apply request
  * 
  * @author auto create
- * @since 1.0, 2024-11-11 15:39:48
+ * @since 1.0, 2024-11-15 13:12:19
  */
 public class AlipayCommerceEducateMultideductTokenApplyRequest implements AlipayRequest<AlipayCommerceEducateMultideductTokenApplyResponse> {
 

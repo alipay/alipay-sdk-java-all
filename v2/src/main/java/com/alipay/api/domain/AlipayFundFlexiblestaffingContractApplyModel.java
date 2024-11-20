@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 零工之家服务申请签约
  *
  * @author auto create
- * @since 1.0, 2023-07-17 16:05:28
+ * @since 1.0, 2024-11-15 10:22:18
  */
 public class AlipayFundFlexiblestaffingContractApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6416284451121929645L;
+	private static final long serialVersionUID = 2142848344368678469L;
 
 	/**
 	 * 签约跳转类型，有限枚举，

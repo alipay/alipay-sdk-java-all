@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量代发明细统一查询接口
  *
  * @author auto create
- * @since 1.0, 2024-11-04 14:05:20
+ * @since 1.0, 2024-11-18 17:28:21
  */
 public class AlipayFundBatchDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1855465249628851918L;
+	private static final long serialVersionUID = 8697669853591892782L;
 
 	/**
 	 * 11～32位的数字或字母或数字与字母的组合，且区分大小写。（注：只有境外代发使用，其他场景请使用out_batch_no）
@@ -32,6 +32,7 @@ public class AlipayFundBatchDetailQueryModel extends AlipayObject {
 GLOBAL: 全球代发. 除CNY的多币种代发或人民币跨境代发。
 LOCAL：中国境内纯人民币代发。
 MESSAGE_BATCH_PAY：接口报文代发。
+MESSAGE_SATF_BATCH_PAY：专户批量代发的报文代发。
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;

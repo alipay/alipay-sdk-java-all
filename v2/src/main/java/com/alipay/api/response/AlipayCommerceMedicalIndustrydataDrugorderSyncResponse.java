@@ -1,0 +1,30 @@
+package com.alipay.api.response;
+
+import com.alipay.api.internal.mapping.ApiField;
+
+import com.alipay.api.AlipayResponse;
+
+/**
+ * ALIPAY API: alipay.commerce.medical.industrydata.drugorder.sync response.
+ * 
+ * @author auto create
+ * @since 1.0, 2024-11-14 15:17:10
+ */
+public class AlipayCommerceMedicalIndustrydataDrugorderSyncResponse extends AlipayResponse {
+
+	private static final long serialVersionUID = 8257766215254343399L;
+
+	/** 
+	 * 支付宝药品订单号
+	 */
+	@ApiField("drug_order_id")
+	private String drugOrderId;
+
+	public void setDrugOrderId(String drugOrderId) {
+		this.drugOrderId = drugOrderId;
+	}
+	public String getDrugOrderId( ) {
+		return this.drugOrderId;
+	}
+
+}

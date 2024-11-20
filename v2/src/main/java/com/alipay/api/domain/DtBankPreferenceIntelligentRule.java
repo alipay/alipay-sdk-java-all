@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 智能立减规则
  *
  * @author auto create
- * @since 1.0, 2023-06-07 09:56:15
+ * @since 1.0, 2024-11-15 16:04:20
  */
 public class DtBankPreferenceIntelligentRule extends AlipayObject {
 
-	private static final long serialVersionUID = 5165628649491897371L;
+	private static final long serialVersionUID = 4529763226422839886L;
+
+	/**
+	 * 平均优惠金额，单位分
+	 */
+	@ApiField("avg_discount_amount")
+	private Long avgDiscountAmount;
 
 	/**
 	 * 最大优惠金额，单位分
@@ -32,6 +38,13 @@ lowerAvgPrice:平均金额更低
 	 */
 	@ApiField("optimization_target")
 	private String optimizationTarget;
+
+	public Long getAvgDiscountAmount() {
+		return this.avgDiscountAmount;
+	}
+	public void setAvgDiscountAmount(Long avgDiscountAmount) {
+		this.avgDiscountAmount = avgDiscountAmount;
+	}
 
 	public Long getMaxAmount() {
 		return this.maxAmount;

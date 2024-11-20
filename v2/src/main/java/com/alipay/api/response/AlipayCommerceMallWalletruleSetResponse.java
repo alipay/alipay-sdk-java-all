@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.mall.walletrule.set response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-23 20:37:20
+ * @since 1.0, 2024-11-18 19:02:57
  */
 public class AlipayCommerceMallWalletruleSetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7315251951999265971L;
+	private static final long serialVersionUID = 1813528353311487914L;
 
 	/** 
 	 * 操作类型为query时返回，此钱包模板下配置的核销数字化门店列表；操作类型为add时返回，此次操作下配置的已生效的核销数字化门店列表；

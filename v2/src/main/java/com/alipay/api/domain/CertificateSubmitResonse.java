@@ -4,23 +4,23 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 凭证核销提交结果
+ * 批量核销结果
  *
  * @author auto create
- * @since 1.0, 2024-08-22 14:44:16
+ * @since 1.0, 2024-11-15 15:53:19
  */
 public class CertificateSubmitResonse extends AlipayObject {
 
-	private static final long serialVersionUID = 3561316624913971822L;
+	private static final long serialVersionUID = 3828221463789412374L;
 
 	/**
-	 * 订购单编号
+	 * 售卖订单id
 	 */
 	@ApiField("card_id")
 	private String cardId;
 
 	/**
-	 * 订单编号/扣款单号
+	 * 核销订单id
 	 */
 	@ApiField("deduction_order_id")
 	private String deductionOrderId;

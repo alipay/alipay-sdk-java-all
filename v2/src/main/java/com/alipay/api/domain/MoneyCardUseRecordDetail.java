@@ -8,23 +8,23 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * 金额卡使用记录详情
+ * 金额卡核销订单
  *
  * @author auto create
- * @since 1.0, 2024-09-03 16:43:38
+ * @since 1.0, 2024-11-15 16:01:53
  */
 public class MoneyCardUseRecordDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1411432491724525353L;
+	private static final long serialVersionUID = 6279469884289134662L;
 
 	/**
-	 * 金额，对应金额卡实际核销金额，单位分
+	 * 金额，对应金额卡实际核销金额，单位：分
 	 */
 	@ApiField("amount")
 	private String amount;
 
 	/**
-	 * 抽佣信息集合
+	 * 费用信息集合
 	 */
 	@ApiListField("bill_fee_info_list")
 	@ApiField("bill_fee_info")
@@ -43,7 +43,7 @@ public class MoneyCardUseRecordDetail extends AlipayObject {
 	private String cardId;
 
 	/**
-	 * 现金价值，对应金额卡实际出资部分，单位分
+	 * 现金价值，对应金额卡实际出资部分，单位：分
 	 */
 	@ApiField("cash")
 	private String cash;
@@ -61,7 +61,7 @@ public class MoneyCardUseRecordDetail extends AlipayObject {
 	private String openId;
 
 	/**
-	 * 平台订单id
+	 * 交易组件业务单号
 	 */
 	@ApiField("order_id")
 	private String orderId;

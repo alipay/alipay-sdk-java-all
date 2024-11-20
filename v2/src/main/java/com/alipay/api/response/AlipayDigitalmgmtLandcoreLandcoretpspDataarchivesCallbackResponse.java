@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDigitalmgmtLandcoreLandcoretpspDataarchivesCallbackResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5738742757997119587L;
+	private static final long serialVersionUID = 5345145142873527741L;
 
 	/** 
 	 * 数据包唯一ID

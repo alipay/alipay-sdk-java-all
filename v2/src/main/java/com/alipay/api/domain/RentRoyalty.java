@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁分账计划
  *
  * @author auto create
- * @since 1.0, 2024-11-11 16:58:03
+ * @since 1.0, 2024-11-18 17:44:54
  */
 public class RentRoyalty extends AlipayObject {
 
-	private static final long serialVersionUID = 1263564146917334974L;
+	private static final long serialVersionUID = 6346671815578553396L;
 
 	/**
 	 * 订单id
@@ -56,10 +56,9 @@ public class RentRoyalty extends AlipayObject {
 	private String royaltyAfterPrice;
 
 	/**
-	 * 分账履约方式 当前字段已废弃(该字段挪到了RentDetail模型中)
+	 * 分账履约方式
 	 */
 	@ApiField("royalty_deliver_type")
-	@Deprecated
 	private String royaltyDeliverType;
 
 	/**
@@ -75,10 +74,16 @@ public class RentRoyalty extends AlipayObject {
 	private String royaltyStatus;
 
 	/**
-	 * 分账完成时间
+	 * 分账完成时间点
 	 */
 	@ApiField("royalty_time")
 	private String royaltyTime;
+
+	/**
+	 * 仅在代偿给资方时，资方的收款方式为到银行卡的场景下才有值，资方的入金流水号
+	 */
+	@ApiField("settle_serial_no")
+	private String settleSerialNo;
 
 	/**
 	 * 代表第几阶段的还款计划，要配合period锁定第几期还款计划
@@ -173,6 +178,13 @@ public class RentRoyalty extends AlipayObject {
 	}
 	public void setRoyaltyTime(String royaltyTime) {
 		this.royaltyTime = royaltyTime;
+	}
+
+	public String getSettleSerialNo() {
+		return this.settleSerialNo;
+	}
+	public void setSettleSerialNo(String settleSerialNo) {
+		this.settleSerialNo = settleSerialNo;
 	}
 
 	public String getStage() {

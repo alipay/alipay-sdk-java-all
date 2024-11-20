@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCloudCloudbaseWalletRefundstatusGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4733331858219772334L;
+	private static final long serialVersionUID = 6684576576645544591L;
 
 	/**
 	 * 小程序id

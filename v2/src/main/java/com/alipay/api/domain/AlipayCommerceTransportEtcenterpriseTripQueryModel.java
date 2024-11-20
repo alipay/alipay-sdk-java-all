@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportEtcenterpriseTripQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4351891521189384755L;
+	private static final long serialVersionUID = 5344577445216265959L;
 
 	/**
 	 * 支付宝企业id
@@ -46,7 +46,11 @@ public class AlipayCommerceTransportEtcenterpriseTripQueryModel extends AlipayOb
 	private Long pageSize;
 
 	/**
-	 * 0：蓝； 1：黄； 2：黑； 3：白； 4：渐变绿
+	 * 蓝:BLUE
+黄:YELLOW
+黑:BLACK
+白:WHITE
+绿:GREEN
 	 */
 	@ApiField("plate_color")
 	private String plateColor;

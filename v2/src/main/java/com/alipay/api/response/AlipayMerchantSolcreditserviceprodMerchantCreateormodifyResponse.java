@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.solcreditserviceprod.merchant.createormodify response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-11 09:12:13
+ * @since 1.0, 2024-11-14 20:02:21
  */
 public class AlipayMerchantSolcreditserviceprodMerchantCreateormodifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6821574598423586731L;
+	private static final long serialVersionUID = 6664132423225796759L;
 
 	/** 
 	 * 为空则表示本次修改不需要审核

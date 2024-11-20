@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量代发转账接口
  *
  * @author auto create
- * @since 1.0, 2023-05-05 16:16:50
+ * @since 1.0, 2024-11-18 20:36:57
  */
 public class AlipayFundBatchUniTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1372697383688999863L;
+	private static final long serialVersionUID = 1428182516269516366L;
 
 	/**
 	 * 业务场景。不同场景值不同，具体值联系支付宝确认。
@@ -27,6 +27,12 @@ public class AlipayFundBatchUniTransferModel extends AlipayObject {
 	 */
 	@ApiField("business_params")
 	private String businessParams;
+
+	/**
+	 * 转账订单的标题，用于在收银台和消费记录展示
+	 */
+	@ApiField("order_title")
+	private String orderTitle;
 
 	/**
 	 * 关联的资金单据ID，非必需。特定业务场景需要关联历史单据进行推进，如当前业务接入指南未标注此字段则可忽略。
@@ -89,6 +95,13 @@ public class AlipayFundBatchUniTransferModel extends AlipayObject {
 	}
 	public void setBusinessParams(String businessParams) {
 		this.businessParams = businessParams;
+	}
+
+	public String getOrderTitle() {
+		return this.orderTitle;
+	}
+	public void setOrderTitle(String orderTitle) {
+		this.orderTitle = orderTitle;
 	}
 
 	public String getOriginalOrderId() {

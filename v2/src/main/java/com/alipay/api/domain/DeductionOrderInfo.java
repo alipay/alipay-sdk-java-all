@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 核销订单信息
  *
  * @author auto create
- * @since 1.0, 2024-11-06 14:51:16
+ * @since 1.0, 2024-11-15 15:52:53
  */
 public class DeductionOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7576739463716281536L;
+	private static final long serialVersionUID = 5569198158293841779L;
 
 	/**
-	 * 抽佣信息集合
+	 * 费用信息集合
 	 */
 	@ApiListField("bill_fee_info_list")
 	@ApiField("bill_fee_info")
@@ -97,7 +97,9 @@ public class DeductionOrderInfo extends AlipayObject {
 	private String deductionOrderType;
 
 	/**
-	 * （1）TIMES_CARD / PERIOD_PAY / AXF_MERCHANT_PERIOD_PAY / AXF_MERCHANT_PERIOD_PAY_INDIRECT：UNPAID、PAYMENT_SUCCESS、PAYMENT_FAILED、REFUND （2）AXF_MONEY_TIME_CARD：FREEZING、FROZEN、UNFREEZING、UNFROZEN、REDEEMING、PAYMENT_FAILED、PAYMENT_SUCCESS、REFUND、PART_REFUND
+	 * （1）TIMES_CARD / PERIOD_PAY / AXF_MERCHANT_PERIOD_PAY / AXF_MERCHANT_PERIOD_PAY_INDIRECT：UNPAID、PAYMENT_SUCCESS、PAYMENT_FAILED、REFUND 
+（2）AXF_MONEY_TIME_CARD 核销单：FREEZING、FROZEN、UNFREEZING、UNFROZEN、REDEEMING、PAYMENT_FAILED、PAYMENT_SUCCESS、REFUND、PART_REFUND
+（3）AXF_MONEY_TIME_CARD 违约金单：INIT、UNPAID、PAYMENT_SUCCESS、PAYMENT_FAILED
 	 */
 	@ApiField("deduction_status")
 	private String deductionStatus;

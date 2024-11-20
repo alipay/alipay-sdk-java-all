@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单详情查询
  *
  * @author auto create
- * @since 1.0, 2024-10-11 09:09:46
+ * @since 1.0, 2024-11-14 19:51:23
  */
 public class AlipayMerchantSolcreditserviceprodOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3765836771333661155L;
+	private static final long serialVersionUID = 1789931294114176769L;
 
 	/**
 	 * 系统生成订单唯一编号

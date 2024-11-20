@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁协议信息
  *
  * @author auto create
- * @since 1.0, 2023-05-23 18:06:48
+ * @since 1.0, 2024-11-18 16:11:27
  */
 public class RentAgreementInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6562231963563327312L;
+	private static final long serialVersionUID = 8857371483247514872L;
 
 	/**
 	 * 租赁协议号
@@ -24,6 +24,12 @@ public class RentAgreementInfoDTO extends AlipayObject {
 	 */
 	@ApiField("deduct_agreement_no")
 	private String deductAgreementNo;
+
+	/**
+	 * 协议类型
+	 */
+	@ApiField("personal_product_code")
+	private String personalProductCode;
 
 	/**
 	 * 租赁用户id
@@ -55,6 +61,13 @@ public class RentAgreementInfoDTO extends AlipayObject {
 	}
 	public void setDeductAgreementNo(String deductAgreementNo) {
 		this.deductAgreementNo = deductAgreementNo;
+	}
+
+	public String getPersonalProductCode() {
+		return this.personalProductCode;
+	}
+	public void setPersonalProductCode(String personalProductCode) {
+		this.personalProductCode = personalProductCode;
 	}
 
 	public String getRentUserId() {

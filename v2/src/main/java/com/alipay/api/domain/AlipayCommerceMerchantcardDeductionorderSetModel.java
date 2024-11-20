@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 核销订单操作接口
  *
  * @author auto create
- * @since 1.0, 2024-10-09 10:01:31
+ * @since 1.0, 2024-11-15 16:07:57
  */
 public class AlipayCommerceMerchantcardDeductionorderSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3884171337566131349L;
+	private static final long serialVersionUID = 5252268936343242184L;
 
 	/**
 	 * 售卖订单id
@@ -32,7 +32,8 @@ public class AlipayCommerceMerchantcardDeductionorderSetModel extends AlipayObje
 	private String openId;
 
 	/**
-	 * 操作类型
+	 * （1）退款时：当funding_model=PREPAID，会退次数；
+当funding_model=PAY_AFTER_CONSUMPTION_MODE，不会退次数；
 	 */
 	@ApiField("operation_type")
 	private String operationType;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ISV代理商户资金业务账单查询
  *
  * @author auto create
- * @since 1.0, 2024-01-15 15:08:43
+ * @since 1.0, 2024-11-15 16:01:22
  */
 public class AlipayDataBillBizfundagentQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8791775255199447979L;
+	private static final long serialVersionUID = 5648348716715875613L;
 
 	/**
 	 * 记账本id，服务商在帮助商户开通时候获取的唯一身份号
@@ -24,6 +24,12 @@ public class AlipayDataBillBizfundagentQueryModel extends AlipayObject {
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
+
+	/**
+	 * 根据不同业务协议类型，传入不同参数。传入协议产品码（personal_product_code，通过协议查询接口、协议签约通知响应参数获取），不填的话默认按照示例值传入
+	 */
+	@ApiField("agreement_type")
+	private String agreementType;
 
 	/**
 	 * 账单查询时间范围 -- 结束范围。时间范围最大不超过31天。
@@ -61,6 +67,13 @@ public class AlipayDataBillBizfundagentQueryModel extends AlipayObject {
 	}
 	public void setAgreementNo(String agreementNo) {
 		this.agreementNo = agreementNo;
+	}
+
+	public String getAgreementType() {
+		return this.agreementType;
+	}
+	public void setAgreementType(String agreementType) {
+		this.agreementType = agreementType;
 	}
 
 	public String getEndTime() {

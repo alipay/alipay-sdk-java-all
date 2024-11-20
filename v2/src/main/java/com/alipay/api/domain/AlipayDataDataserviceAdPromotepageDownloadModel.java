@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataDataserviceAdPromotepageDownloadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4416535387127625186L;
+	private static final long serialVersionUID = 5369925546114995818L;
 
 	/**
 	 * 代理商访问灯火平台的token
@@ -20,7 +20,7 @@ public class AlipayDataDataserviceAdPromotepageDownloadModel extends AlipayObjec
 	private String bizToken;
 
 	/**
-	 * 留资结束日期，格式：yyyy-mm-dd；不能晚于当天
+	 * 留资结束日期，格式：yyyy-mm-dd 或 yyyy-mm-dd hh:mm:ss;不能晚于当天
 	 */
 	@ApiField("end_date")
 	private String endDate;
@@ -50,7 +50,7 @@ public class AlipayDataDataserviceAdPromotepageDownloadModel extends AlipayObjec
 	private Long promotePageId;
 
 	/**
-	 * 留资开始日期，格式：yyyy-mm-dd，不能早于30天前
+	 * 留资开始日期，格式：yyyy-mm-dd 或 yyyy-mm-dd hh:mm:ss;不能早于30天前
 	 */
 	@ApiField("start_date")
 	private String startDate;

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 额度设置接口
  *
  * @author auto create
- * @since 1.0, 2022-04-21 11:06:16
+ * @since 1.0, 2024-11-15 10:35:11
  */
 public class AlipayFundAgreementQuotaModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8527478792549361136L;
+	private static final long serialVersionUID = 2398115579725248684L;
 
 	/**
 	 * 协议额度设置信息

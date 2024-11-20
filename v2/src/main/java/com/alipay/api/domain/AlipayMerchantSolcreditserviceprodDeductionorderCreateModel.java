@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 扣款单创建
  *
  * @author auto create
- * @since 1.0, 2024-10-11 09:10:46
+ * @since 1.0, 2024-11-14 19:50:54
  */
 public class AlipayMerchantSolcreditserviceprodDeductionorderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8449937699735328241L;
+	private static final long serialVersionUID = 4514184865783488258L;
 
 	/**
 	 * 扣押金必填，不能大于押金剩余金额

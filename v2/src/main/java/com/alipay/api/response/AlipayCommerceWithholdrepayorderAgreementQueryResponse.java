@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.withholdrepayorder.agreement.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-11 15:47:12
+ * @since 1.0, 2024-11-18 19:57:16
  */
 public class AlipayCommerceWithholdrepayorderAgreementQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4797574926892839571L;
+	private static final long serialVersionUID = 3672959531332964752L;
 
 	/** 
 	 * 用户签约成功后的协议号
@@ -117,6 +117,12 @@ public class AlipayCommerceWithholdrepayorderAgreementQueryResponse extends Alip
 	 */
 	@ApiField("single_quota")
 	private String singleQuota;
+
+	/** 
+	 * 协议履约节点，依照还款业务单类型变化，不同类型会有不同的履约节点
+	 */
+	@ApiField("stage")
+	private String stage;
 
 	/** 
 	 * 协议当前状态 1. TEMP：暂存，协议未生效过； 2. NORMAL：正常； 3. STOP：暂停
@@ -259,6 +265,13 @@ public class AlipayCommerceWithholdrepayorderAgreementQueryResponse extends Alip
 	}
 	public String getSingleQuota( ) {
 		return this.singleQuota;
+	}
+
+	public void setStage(String stage) {
+		this.stage = stage;
+	}
+	public String getStage( ) {
+		return this.stage;
 	}
 
 	public void setStatus(String status) {

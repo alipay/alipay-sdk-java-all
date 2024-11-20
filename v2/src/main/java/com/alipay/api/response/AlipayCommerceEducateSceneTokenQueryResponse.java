@@ -10,11 +10,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.scene.token.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-11 17:45:26
+ * @since 1.0, 2024-11-15 15:32:19
  */
 public class AlipayCommerceEducateSceneTokenQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3174313696277354284L;
+	private static final long serialVersionUID = 5637529762828364889L;
+
+	/** 
+	 * 资产信息，生成token时候，上传查询资产字段才会返回
+	 */
+	@ApiField("asset")
+	private String asset;
 
 	/** 
 	 * 业务场景类型标识
@@ -88,6 +94,13 @@ public class AlipayCommerceEducateSceneTokenQueryResponse extends AlipayResponse
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public void setAsset(String asset) {
+		this.asset = asset;
+	}
+	public String getAsset( ) {
+		return this.asset;
+	}
 
 	public void setBizCode(String bizCode) {
 		this.bizCode = bizCode;

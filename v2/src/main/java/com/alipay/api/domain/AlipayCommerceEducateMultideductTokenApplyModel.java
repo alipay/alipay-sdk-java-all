@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取校园支付token
  *
  * @author auto create
- * @since 1.0, 2024-07-29 14:33:51
+ * @since 1.0, 2024-11-15 13:09:17
  */
 public class AlipayCommerceEducateMultideductTokenApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8422362387911793525L;
+	private static final long serialVersionUID = 1394312713413493444L;
 
 	/**
 	 * 业务码。可选的字段枚举说明：{SCHOOL_MULTI_DEDUCT:校园支付;SCHOOL_PAYMENT:刷脸支付}
@@ -36,6 +36,12 @@ public class AlipayCommerceEducateMultideductTokenApplyModel extends AlipayObjec
 	 */
 	@ApiField("pay_config")
 	private PayConfig payConfig;
+
+	/**
+	 * 查询资产，按照枚举填写
+	 */
+	@ApiField("query_asset")
+	private String queryAsset;
 
 	/**
 	 * 学校（或教育机构）内标。支付宝提供的学校编号，如果您不知道学校编号，可以联系您的BD咨询获取
@@ -93,6 +99,13 @@ public class AlipayCommerceEducateMultideductTokenApplyModel extends AlipayObjec
 	}
 	public void setPayConfig(PayConfig payConfig) {
 		this.payConfig = payConfig;
+	}
+
+	public String getQueryAsset() {
+		return this.queryAsset;
+	}
+	public void setQueryAsset(String queryAsset) {
+		this.queryAsset = queryAsset;
 	}
 
 	public String getSchoolCode() {

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 售卖订单信息
  *
  * @author auto create
- * @since 1.0, 2024-11-06 14:50:17
+ * @since 1.0, 2024-11-15 16:03:18
  */
 public class CardOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5593492859572318584L;
+	private static final long serialVersionUID = 8881423344484587845L;
 
 	/**
 	 * 售卖订单的余额面额，单位分
@@ -48,7 +48,7 @@ public class CardOrderInfo extends AlipayObject {
 	private String cardId;
 
 	/**
-	 * （1）TIMES_CARD / PERIOD_PAY / AXF_MERCHANT_PERIOD_PAY / AXF_MERCHANT_PERIOD_PAY_INDIRECT： init、available、used_up、closing、closed、pause （2）AXF_MONEY_CARD：available、invalid、paid、refund、timeout_closed、used_up （3）AXF_MONEY_TIME_CARD：wait_pay、paid、available、timeout_closed、used_up、invalid、closing
+	 * （1）TIMES_CARD / PERIOD_PAY / AXF_MERCHANT_PERIOD_PAY / AXF_MERCHANT_PERIOD_PAY_INDIRECT： init、available、used_up、closing、closed、pause （2）AXF_MONEY_CARD：available、invalid、paid、refund、timeout_closed、used_up （3）AXF_MONEY_TIME_CARD：wait_pay、paid、available、timeout_closed、used_up、closed、closing、expired
 	 */
 	@ApiField("card_status")
 	private String cardStatus;
@@ -145,7 +145,7 @@ public class CardOrderInfo extends AlipayObject {
 	private String openId;
 
 	/**
-	 * 业务单ID
+	 * 交易组件订单编号
 	 */
 	@ApiField("order_id")
 	private String orderId;

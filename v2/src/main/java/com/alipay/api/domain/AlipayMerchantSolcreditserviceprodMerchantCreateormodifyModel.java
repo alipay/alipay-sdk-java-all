@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户编辑
  *
  * @author auto create
- * @since 1.0, 2024-10-11 09:09:45
+ * @since 1.0, 2024-11-14 19:52:19
  */
 public class AlipayMerchantSolcreditserviceprodMerchantCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7144665214513298735L;
+	private static final long serialVersionUID = 4199324433538884535L;
 
 	/**
 	 * 用户支付金额结算账户

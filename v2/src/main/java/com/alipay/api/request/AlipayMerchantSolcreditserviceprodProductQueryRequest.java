@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.solcreditserviceprod.product.query request
  * 
  * @author auto create
- * @since 1.0, 2024-10-11 09:09:48
+ * @since 1.0, 2024-11-14 20:02:20
  */
 public class AlipayMerchantSolcreditserviceprodProductQueryRequest implements AlipayRequest<AlipayMerchantSolcreditserviceprodProductQueryResponse> {
 

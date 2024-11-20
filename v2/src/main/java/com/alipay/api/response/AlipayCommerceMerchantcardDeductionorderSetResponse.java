@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.merchantcard.deductionorder.set response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-09 14:07:12
+ * @since 1.0, 2024-11-15 17:07:21
  */
 public class AlipayCommerceMerchantcardDeductionorderSetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8688478629381936714L;
+	private static final long serialVersionUID = 4733113656747279465L;
 
 	/** 
 	 * (1) 当 card_type=AXF_MONEY_TIME_CARD && operation_type=REFUND 时，该字段代表退款单id

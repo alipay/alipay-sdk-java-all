@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.withholdrepayorder.trade.close request
  * 
  * @author auto create
- * @since 1.0, 2024-10-08 09:49:49
+ * @since 1.0, 2024-11-18 19:57:16
  */
 public class AlipayCommerceWithholdrepayorderTradeCloseRequest implements AlipayRequest<AlipayCommerceWithholdrepayorderTradeCloseResponse> {
 

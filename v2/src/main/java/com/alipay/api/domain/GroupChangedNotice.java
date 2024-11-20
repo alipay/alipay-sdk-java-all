@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家群用户进群、退群、群名称更改等事件通知商户
  *
  * @author auto create
- * @since 1.0, 2024-11-07 11:33:32
+ * @since 1.0, 2024-11-20 10:03:26
  */
 public class GroupChangedNotice extends AlipayObject {
 
-	private static final long serialVersionUID = 1156333394863954579L;
+	private static final long serialVersionUID = 1855487199673918236L;
 
 	/**
 	 * 消息创建时间
@@ -34,6 +34,12 @@ public class GroupChangedNotice extends AlipayObject {
 	 */
 	@ApiField("group_instance_id")
 	private String groupInstanceId;
+
+	/**
+	 * 定义群组分类，便于后台管理运营识别，可与下面设置的群名称保持一致；例：xx门店群，内部测试群
+	 */
+	@ApiField("group_name")
+	private String groupName;
 
 	/**
 	 * 群组id
@@ -85,6 +91,13 @@ public class GroupChangedNotice extends AlipayObject {
 	}
 	public void setGroupInstanceId(String groupInstanceId) {
 		this.groupInstanceId = groupInstanceId;
+	}
+
+	public String getGroupName() {
+		return this.groupName;
+	}
+	public void setGroupName(String groupName) {
+		this.groupName = groupName;
 	}
 
 	public String getGroupOid() {

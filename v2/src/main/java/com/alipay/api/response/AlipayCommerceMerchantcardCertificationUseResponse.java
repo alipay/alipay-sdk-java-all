@@ -11,14 +11,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.merchantcard.certification.use response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-22 15:27:08
+ * @since 1.0, 2024-11-15 17:02:17
  */
 public class AlipayCommerceMerchantcardCertificationUseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6445973373654248373L;
+	private static final long serialVersionUID = 1631111458624478226L;
 
 	/** 
-	 * 凭证提交结果
+	 * 批量核销结果
 	 */
 	@ApiListField("context")
 	@ApiField("certificate_submit_resonse")

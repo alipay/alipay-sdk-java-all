@@ -7,20 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 门店smid关系绑定
  *
  * @author auto create
- * @since 1.0, 2024-08-12 18:52:40
+ * @since 1.0, 2024-11-15 15:53:22
  */
 public class AlipayCommerceMerchantcardSmidBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3429871718314971799L;
+	private static final long serialVersionUID = 5532263879199359437L;
 
 	/**
-	 * 门店id
+	 * 门店id，门店是归属于pid的，不是smid下的门店
 	 */
 	@ApiField("shop_id")
 	private String shopId;
 
 	/**
-	 * 二级商户id
+	 * 二级商户id，注意smid需要是pid下的
 	 */
 	@ApiField("smid")
 	private String smid;

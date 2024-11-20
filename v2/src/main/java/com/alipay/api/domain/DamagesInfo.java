@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 安心付违约金信息
  *
  * @author auto create
- * @since 1.0, 2024-11-06 14:50:16
+ * @since 1.0, 2024-11-15 15:52:52
  */
 public class DamagesInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1377773126998384196L;
+	private static final long serialVersionUID = 6122861962638274881L;
 
 	/**
 	 * 创建时间
@@ -52,7 +52,7 @@ public class DamagesInfo extends AlipayObject {
 	private String damagesType;
 
 	/**
-	 * 违约金订单id
+	 * 违约金订单id，damages_status=init时没有值，需要用户确认
 	 */
 	@ApiField("deduction_order_id")
 	private String deductionOrderId;

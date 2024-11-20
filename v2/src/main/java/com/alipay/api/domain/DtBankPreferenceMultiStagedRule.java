@@ -1,7 +1,10 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 多阶梯立减规则
@@ -11,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DtBankPreferenceMultiStagedRule extends AlipayObject {
 
-	private static final long serialVersionUID = 8453566798428887583L;
+	private static final long serialVersionUID = 7869936581464652185L;
 
 	/**
 	 * 所有区间内最大立减优惠金额值，单位:分
@@ -23,8 +26,9 @@ public class DtBankPreferenceMultiStagedRule extends AlipayObject {
 	/**
 	 * 阶梯立减优惠类型下，多区间优惠配置列表
 	 */
-	@ApiField("staged_discount_list")
-	private DtBankStagedThresholdInfo stagedDiscountList;
+	@ApiListField("staged_discount_list")
+	@ApiField("dt_bank_staged_threshold_info")
+	private List<DtBankStagedThresholdInfo> stagedDiscountList;
 
 	public Long getMaxReduceAmount() {
 		return this.maxReduceAmount;
@@ -33,10 +37,10 @@ public class DtBankPreferenceMultiStagedRule extends AlipayObject {
 		this.maxReduceAmount = maxReduceAmount;
 	}
 
-	public DtBankStagedThresholdInfo getStagedDiscountList() {
+	public List<DtBankStagedThresholdInfo> getStagedDiscountList() {
 		return this.stagedDiscountList;
 	}
-	public void setStagedDiscountList(DtBankStagedThresholdInfo stagedDiscountList) {
+	public void setStagedDiscountList(List<DtBankStagedThresholdInfo> stagedDiscountList) {
 		this.stagedDiscountList = stagedDiscountList;
 	}
 

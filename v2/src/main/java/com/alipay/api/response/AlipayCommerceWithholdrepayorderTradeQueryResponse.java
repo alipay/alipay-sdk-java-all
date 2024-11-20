@@ -23,11 +23,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.withholdrepayorder.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-11 15:32:12
+ * @since 1.0, 2024-11-18 19:57:16
  */
 public class AlipayCommerceWithholdrepayorderTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4844231758432867331L;
+	private static final long serialVersionUID = 7566513123965811576L;
 
 	/** 
 	 * 交易附加状态： SELLER_NOT_RECEIVED（买家已付款，卖家未收款）；

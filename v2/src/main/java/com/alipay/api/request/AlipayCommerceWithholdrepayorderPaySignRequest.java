@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.withholdrepayorder.pay.sign request
  * 
  * @author auto create
- * @since 1.0, 2024-10-11 15:27:13
+ * @since 1.0, 2024-11-18 19:42:20
  */
 public class AlipayCommerceWithholdrepayorderPaySignRequest implements AlipayRequest<AlipayCommerceWithholdrepayorderPaySignResponse> {
 

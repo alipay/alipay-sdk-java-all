@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 申请核身链接
  *
  * @author auto create
- * @since 1.0, 2023-07-17 16:05:07
+ * @since 1.0, 2024-11-15 10:21:59
  */
 public class AlipayFundFlexiblestaffingAuthenticationApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4419812269439815888L;
+	private static final long serialVersionUID = 4263929757352458374L;
 
 	/**
 	 * 授权跳转类型

@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.solcreditserviceprod.merchantreview.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-11 09:09:49
+ * @since 1.0, 2024-11-14 20:02:20
  */
 public class AlipayMerchantSolcreditserviceprodMerchantreviewQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3133696647747621551L;
+	private static final long serialVersionUID = 4578532145228684212L;
 
 	/** 
 	 * 不传则默认小程序首页

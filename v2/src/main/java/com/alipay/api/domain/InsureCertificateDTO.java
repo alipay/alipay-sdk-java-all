@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsureCertificateDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2462618185576386556L;
+	private static final long serialVersionUID = 2191227735674884321L;
 
 	/**
 	 * 预下单id

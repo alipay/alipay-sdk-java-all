@@ -1,7 +1,10 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 小程序商品免审更新SKU
@@ -11,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ItemDirectModifySku extends AlipayObject {
 
-	private static final long serialVersionUID = 6181227944261142529L;
+	private static final long serialVersionUID = 3337641496758676137L;
 
 	/**
 	 * sku原价，分为单位。
@@ -40,8 +43,9 @@ public class ItemDirectModifySku extends AlipayObject {
 	/**
 	 * 商品sku属性
 	 */
-	@ApiField("sku_attrs")
-	private ItemSkuAttrVO skuAttrs;
+	@ApiListField("sku_attrs")
+	@ApiField("item_sku_attr_v_o")
+	private List<ItemSkuAttrVO> skuAttrs;
 
 	/**
 	 * 支付宝平台侧sku ID，是支付宝平台侧商品的唯一标识，后续与平台交互，需要使用该 ID，建议持久化。
@@ -83,10 +87,10 @@ public class ItemDirectModifySku extends AlipayObject {
 		this.saleStatus = saleStatus;
 	}
 
-	public ItemSkuAttrVO getSkuAttrs() {
+	public List<ItemSkuAttrVO> getSkuAttrs() {
 		return this.skuAttrs;
 	}
-	public void setSkuAttrs(ItemSkuAttrVO skuAttrs) {
+	public void setSkuAttrs(List<ItemSkuAttrVO> skuAttrs) {
 		this.skuAttrs = skuAttrs;
 	}
 

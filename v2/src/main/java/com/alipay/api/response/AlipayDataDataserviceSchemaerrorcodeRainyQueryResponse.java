@@ -1,5 +1,6 @@
 package com.alipay.api.response;
 
+import com.alipay.api.internal.mapping.ApiField;
 
 import com.alipay.api.AlipayResponse;
 
@@ -11,10 +12,19 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataDataserviceSchemaerrorcodeRainyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5216572268167665216L;
+	private static final long serialVersionUID = 5565664459841843292L;
 
-	
+	/** 
+	 * 1
+	 */
+	@ApiField("result")
+	private String result;
 
-	
+	public void setResult(String result) {
+		this.result = result;
+	}
+	public String getResult( ) {
+		return this.result;
+	}
 
 }

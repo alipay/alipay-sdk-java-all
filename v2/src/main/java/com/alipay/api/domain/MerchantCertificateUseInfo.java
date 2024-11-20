@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 先享后付凭证信息
+ * 批量核销请求
  *
  * @author auto create
- * @since 1.0, 2024-05-23 11:13:24
+ * @since 1.0, 2024-11-15 15:53:19
  */
 public class MerchantCertificateUseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3867191473986744526L;
+	private static final long serialVersionUID = 3796773156945552523L;
 
 	/**
 	 * 订购单编号
@@ -20,7 +20,7 @@ public class MerchantCertificateUseInfo extends AlipayObject {
 	private String cardId;
 
 	/**
-	 * 订单编号/扣款单号
+	 * 核销订单id
 	 */
 	@ApiField("deduction_order_id")
 	private String deductionOrderId;

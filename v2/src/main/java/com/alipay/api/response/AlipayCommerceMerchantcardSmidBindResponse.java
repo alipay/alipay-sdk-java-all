@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.merchantcard.smid.bind response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-13 11:17:07
+ * @since 1.0, 2024-11-15 17:02:17
  */
 public class AlipayCommerceMerchantcardSmidBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5822469781799255251L;
+	private static final long serialVersionUID = 6477857164466265819L;
 
 	
 

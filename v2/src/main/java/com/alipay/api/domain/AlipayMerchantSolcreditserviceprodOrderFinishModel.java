@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单完结
  *
  * @author auto create
- * @since 1.0, 2024-10-11 09:10:41
+ * @since 1.0, 2024-11-14 19:49:19
  */
 public class AlipayMerchantSolcreditserviceprodOrderFinishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6861453855371482375L;
+	private static final long serialVersionUID = 8256332338233113118L;
 
 	/**
 	 * 扣款失败资金追回（继续扣款）：

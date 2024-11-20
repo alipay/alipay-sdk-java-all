@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 申请考勤链接（投保）
  *
  * @author auto create
- * @since 1.0, 2023-11-24 13:47:26
+ * @since 1.0, 2024-11-15 10:30:50
  */
 public class AlipayFundFlexiblestaffingAttendanceApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4898644394971654826L;
+	private static final long serialVersionUID = 3378415672151893968L;
 
 	/**
 	 * 授权跳转类型

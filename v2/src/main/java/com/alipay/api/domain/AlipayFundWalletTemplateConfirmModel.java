@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundWalletTemplateConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5199929192178281364L;
+	private static final long serialVersionUID = 6622897692117617965L;
 
 	/**
 	 * 开户场景
