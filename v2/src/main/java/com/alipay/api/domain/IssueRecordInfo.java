@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 手工发放发放记录信息详情
  *
  * @author auto create
- * @since 1.0, 2024-06-24 10:33:43
+ * @since 1.0, 2024-11-20 11:38:55
  */
 public class IssueRecordInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4798899691199626415L;
+	private static final long serialVersionUID = 1221772256563889982L;
+
+	/**
+	 * 发放额度对应的币种
+	 */
+	@ApiField("currency")
+	private String currency;
 
 	/**
 	 * 发放金额，支持两位小数，单位为（元）
@@ -60,6 +66,13 @@ public class IssueRecordInfo extends AlipayObject {
 	 */
 	@ApiField("user_name")
 	private String userName;
+
+	public String getCurrency() {
+		return this.currency;
+	}
+	public void setCurrency(String currency) {
+		this.currency = currency;
+	}
 
 	public String getIssueQuota() {
 		return this.issueQuota;

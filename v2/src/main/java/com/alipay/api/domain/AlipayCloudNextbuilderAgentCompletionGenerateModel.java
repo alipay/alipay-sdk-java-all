@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生成型应用调用接口
  *
  * @author auto create
- * @since 1.0, 2024-08-28 23:23:47
+ * @since 1.0, 2024-11-27 09:29:18
  */
 public class AlipayCloudNextbuilderAgentCompletionGenerateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5588723711879892831L;
+	private static final long serialVersionUID = 5328378997793453846L;
 
 	/**
 	 * AI 创作平台创建的智能体 的 id，可从AI 创作平台页面获取
@@ -42,6 +42,12 @@ public class AlipayCloudNextbuilderAgentCompletionGenerateModel extends AlipayOb
 	 */
 	@ApiField("request_id")
 	private String requestId;
+
+	/**
+	 * 会话id,表示一次对话，由服务端生成。首次发起为空，会在Response中返回；基于历史对话需指定。
+	 */
+	@ApiField("session_id")
+	private String sessionId;
 
 	public String getAgentId() {
 		return this.agentId;
@@ -76,6 +82,13 @@ public class AlipayCloudNextbuilderAgentCompletionGenerateModel extends AlipayOb
 	}
 	public void setRequestId(String requestId) {
 		this.requestId = requestId;
+	}
+
+	public String getSessionId() {
+		return this.sessionId;
+	}
+	public void setSessionId(String sessionId) {
+		this.sessionId = sessionId;
 	}
 
 }

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.function.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-08 18:41:41
+ * @since 1.0, 2024-11-22 14:41:21
  */
 public class AlipayCloudCloudbaseFunctionGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7516662536638657896L;
+	private static final long serialVersionUID = 8758691857746586532L;
 
 	/** 
 	 * 云函数的描述

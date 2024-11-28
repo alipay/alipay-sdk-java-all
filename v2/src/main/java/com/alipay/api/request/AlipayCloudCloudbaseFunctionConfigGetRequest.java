@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.function.config.get request
  * 
  * @author auto create
- * @since 1.0, 2023-12-25 11:11:59
+ * @since 1.0, 2024-11-22 14:41:40
  */
 public class AlipayCloudCloudbaseFunctionConfigGetRequest implements AlipayRequest<AlipayCloudCloudbaseFunctionConfigGetResponse> {
 

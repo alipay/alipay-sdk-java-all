@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外呼回执触达明细
  *
  * @author auto create
- * @since 1.0, 2024-11-13 11:38:37
+ * @since 1.0, 2024-11-25 17:41:49
  */
 public class CallBackActionDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6865277564813927917L;
+	private static final long serialVersionUID = 2433767893179341757L;
 
 	/**
 	 * 发起语音外呼动作程序编码

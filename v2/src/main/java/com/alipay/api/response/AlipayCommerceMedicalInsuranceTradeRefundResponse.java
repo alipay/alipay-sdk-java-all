@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.insurance.trade.refund response.
  * 
  * @author auto create
- * @since 1.0, 2024-09-19 17:52:11
+ * @since 1.0, 2024-11-22 12:17:18
  */
 public class AlipayCommerceMedicalInsuranceTradeRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6645729934548429496L;
+	private static final long serialVersionUID = 6226828464539675196L;
 
 	/** 
 	 * 用户的登录id
@@ -22,10 +22,22 @@ public class AlipayCommerceMedicalInsuranceTradeRefundResponse extends AlipayRes
 	private String buyerLoginId;
 
 	/** 
+	 * 买家在支付宝的用户ID
+	 */
+	@ApiField("buyer_user_id")
+	private String buyerUserId;
+
+	/** 
 	 * 退款支付时间，格式："yyyy-MM-dd HH:mm:ss"
 	 */
 	@ApiField("gmt_refund_pay")
 	private Date gmtRefundPay;
+
+	/** 
+	 * 用于标记支付宝用户在应用下的唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 商户订单号
@@ -52,11 +64,25 @@ public class AlipayCommerceMedicalInsuranceTradeRefundResponse extends AlipayRes
 		return this.buyerLoginId;
 	}
 
+	public void setBuyerUserId(String buyerUserId) {
+		this.buyerUserId = buyerUserId;
+	}
+	public String getBuyerUserId( ) {
+		return this.buyerUserId;
+	}
+
 	public void setGmtRefundPay(Date gmtRefundPay) {
 		this.gmtRefundPay = gmtRefundPay;
 	}
 	public Date getGmtRefundPay( ) {
 		return this.gmtRefundPay;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setOutTradeNo(String outTradeNo) {

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.httpaccess.bind.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 20:51:41
+ * @since 1.0, 2024-11-22 14:41:18
  */
 public class AlipayCloudCloudbaseHttpaccessBindGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7189241655484476811L;
+	private static final long serialVersionUID = 7457714491153593492L;
 
 	/** 
 	 * 路由绑定ID

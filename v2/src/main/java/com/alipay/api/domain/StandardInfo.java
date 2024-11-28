@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 使用规则
  *
  * @author auto create
- * @since 1.0, 2024-06-07 16:49:17
+ * @since 1.0, 2024-11-20 11:38:57
  */
 public class StandardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5882885779817318736L;
+	private static final long serialVersionUID = 4416956249552384598L;
 
 	/**
 	 * 当前规则可使用的其他资产来源信息
@@ -34,7 +34,7 @@ DEFAULT（默认模式）
 	private String consumeMode;
 
 	/**
-	 * 费用类型子类，当制度的费用类型为MEAL时，支持到店、外卖；当费用类型为非MEAL时，与费用类型保持一致
+	 * 费用类型子类
 	 */
 	@ApiField("expense_type_sub_category")
 	private String expenseTypeSubCategory;

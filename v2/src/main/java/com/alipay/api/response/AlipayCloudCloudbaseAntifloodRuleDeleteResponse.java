@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.antiflood.rule.delete response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-14 17:41:45
+ * @since 1.0, 2024-11-22 14:41:55
  */
 public class AlipayCloudCloudbaseAntifloodRuleDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7527743675591822915L;
+	private static final long serialVersionUID = 1117887747967463181L;
 
 	/** 
 	 * 删除结果

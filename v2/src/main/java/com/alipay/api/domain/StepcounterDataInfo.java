@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class StepcounterDataInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2445636566372434931L;
+	private static final long serialVersionUID = 8532258274711466736L;
 
 	/**
 	 * 用户的日计步值。为用户某个时区下某个日期的步数总值。

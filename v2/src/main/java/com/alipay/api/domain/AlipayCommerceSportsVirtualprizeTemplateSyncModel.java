@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceSportsVirtualprizeTemplateSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1756299915223868761L;
+	private static final long serialVersionUID = 7146719519384832474L;
 
 	/**
 	 * true:点击虚拟奖品详情，跳转到三方详情页

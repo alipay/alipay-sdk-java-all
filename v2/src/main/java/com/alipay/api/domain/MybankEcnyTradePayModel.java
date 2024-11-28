@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 数字人民币交易支付
  *
  * @author auto create
- * @since 1.0, 2024-03-12 15:15:48
+ * @since 1.0, 2024-11-20 14:37:05
  */
 public class MybankEcnyTradePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4434642451179354467L;
+	private static final long serialVersionUID = 4439323285342323876L;
 
 	/**
 	 * 支付授权码。不同支付场景授权码的具体内容不同

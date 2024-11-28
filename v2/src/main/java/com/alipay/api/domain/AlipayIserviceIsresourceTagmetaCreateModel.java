@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayIserviceIsresourceTagmetaCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8246489857614961523L;
+	private static final long serialVersionUID = 2144753653571916182L;
 
 	/**
 	 * 标签名称，业务自定义

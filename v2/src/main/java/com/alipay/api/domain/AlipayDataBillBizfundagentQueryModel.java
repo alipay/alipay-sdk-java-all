@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataBillBizfundagentQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5648348716715875613L;
+	private static final long serialVersionUID = 4373857379758675373L;
 
 	/**
 	 * 记账本id，服务商在帮助商户开通时候获取的唯一身份号
@@ -26,7 +26,7 @@ public class AlipayDataBillBizfundagentQueryModel extends AlipayObject {
 	private String agreementNo;
 
 	/**
-	 * 根据不同业务协议类型，传入不同参数。传入协议产品码（personal_product_code，通过协议查询接口、协议签约通知响应参数获取），不填的话默认按照示例值传入
+	 * 根据不同业务协议类型，传入不同参数。传入协议产品码（personal_product_code，通过协议查询接口、协议签约通知响应参数获取），不填的话默认按照示例值传入。 安全发协议：FUND_SAFT_SIGN_WITHHOLDING_P 专用金协议：FLEXIBLE_EMPLOYMENT_SERVICE_P
 	 */
 	@ApiField("agreement_type")
 	private String agreementType;

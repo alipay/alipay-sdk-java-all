@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询申请单中的设备sn
  *
  * @author auto create
- * @since 1.0, 2023-07-05 14:51:21
+ * @since 1.0, 2024-11-26 10:24:42
  */
 public class AlipayCommerceIotProfileSnBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2158794861282568423L;
+	private static final long serialVersionUID = 7451121732512823948L;
 
 	/**
 	 * 申请单id

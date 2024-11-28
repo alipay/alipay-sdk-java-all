@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudpromo.mall.order.consult request
  * 
  * @author auto create
- * @since 1.0, 2024-06-04 20:17:02
+ * @since 1.0, 2024-11-26 10:49:44
  */
 public class AlipayCloudCloudpromoMallOrderConsultRequest implements AlipayRequest<AlipayCloudCloudpromoMallOrderConsultResponse> {
 

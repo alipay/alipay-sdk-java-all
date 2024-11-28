@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.antiflood.switch.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-14 17:41:45
+ * @since 1.0, 2024-11-22 14:41:36
  */
 public class AlipayCloudCloudbaseAntifloodSwitchGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7542726624562375724L;
+	private static final long serialVersionUID = 7537538979625845696L;
 
 	/** 
 	 * 防刷开关状态

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.function.version.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-08-08 22:41:39
+ * @since 1.0, 2024-11-22 14:41:39
  */
 public class AlipayCloudCloudbaseFunctionVersionDeleteRequest implements AlipayRequest<AlipayCloudCloudbaseFunctionVersionDeleteResponse> {
 

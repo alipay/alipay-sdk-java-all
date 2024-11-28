@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.httpaccess.switch.set response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-08 23:36:41
+ * @since 1.0, 2024-11-22 14:41:24
  */
 public class AlipayCloudCloudbaseHttpaccessSwitchSetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5852859413621454721L;
+	private static final long serialVersionUID = 2265543972524458818L;
 
 	/** 
 	 * 设置结果

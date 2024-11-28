@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiCateringPosPrintQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5766734782831977692L;
+	private static final long serialVersionUID = 8673826788642856939L;
 
 	/** 
 	 * 打印机Model对象集合

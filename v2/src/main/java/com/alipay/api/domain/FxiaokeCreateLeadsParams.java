@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 纷享销客创建商机的参数和返回值
  *
  * @author auto create
- * @since 1.0, 2024-05-20 16:54:56
+ * @since 1.0, 2024-11-22 14:21:23
  */
 public class FxiaokeCreateLeadsParams extends AlipayObject {
 
-	private static final long serialVersionUID = 5144296351827936916L;
+	private static final long serialVersionUID = 5242335518761968757L;
 
 	/**
 	 * 实际主导方
@@ -28,6 +28,12 @@ public class FxiaokeCreateLeadsParams extends AlipayObject {
 	 */
 	@ApiField("ali_cloud_bpid_list")
 	private String aliCloudBpidList;
+
+	/**
+	 * 阿里云结算模式枚举值
+	 */
+	@ApiField("alicloud_settlement_mode")
+	private String alicloudSettlementMode;
 
 	/**
 	 * 招标类型
@@ -103,6 +109,36 @@ public class FxiaokeCreateLeadsParams extends AlipayObject {
 	private Date expectSignDate;
 
 	/**
+	 * 最终客户签约对方主体ID
+	 */
+	@ApiField("final_customer_sign_other_party_subject_id")
+	private String finalCustomerSignOtherPartySubjectId;
+
+	/**
+	 * 最终客户签约对方主体名称
+	 */
+	@ApiField("final_customer_sign_other_party_subject_name")
+	private String finalCustomerSignOtherPartySubjectName;
+
+	/**
+	 * 最终客户签约主体ID
+	 */
+	@ApiField("final_customer_sign_subject_id")
+	private String finalCustomerSignSubjectId;
+
+	/**
+	 * 最终客户签约主体名称
+	 */
+	@ApiField("final_customer_sign_subject_name")
+	private String finalCustomerSignSubjectName;
+
+	/**
+	 * 总代合作类型枚举值
+	 */
+	@ApiField("general_agent_cooperation_type")
+	private String generalAgentCooperationType;
+
+	/**
 	 * id
 	 */
 	@ApiField("id")
@@ -151,6 +187,18 @@ public class FxiaokeCreateLeadsParams extends AlipayObject {
 	private String leadsOtherCloudPedestal;
 
 	/**
+	 * 其他伙伴，保存ID，多个逗号隔开
+	 */
+	@ApiField("leads_other_partners")
+	private String leadsOtherPartners;
+
+	/**
+	 * 其他伙伴名字
+	 */
+	@ApiField("leads_other_partners_name")
+	private String leadsOtherPartnersName;
+
+	/**
 	 * 商机产品类别
 	 */
 	@ApiField("leads_product_type")
@@ -173,6 +221,18 @@ public class FxiaokeCreateLeadsParams extends AlipayObject {
 	 */
 	@ApiField("leads_source_partner_id")
 	private String leadsSourcePartnerId;
+
+	/**
+	 * OB签约对方主体ID
+	 */
+	@ApiField("ob_sign_other_party_subject_id")
+	private String obSignOtherPartySubjectId;
+
+	/**
+	 * OB签约对方主体名称
+	 */
+	@ApiField("ob_sign_other_party_subject_name")
+	private String obSignOtherPartySubjectName;
 
 	/**
 	 * 其他合作伙伴（二代）
@@ -318,6 +378,13 @@ public class FxiaokeCreateLeadsParams extends AlipayObject {
 		this.aliCloudBpidList = aliCloudBpidList;
 	}
 
+	public String getAlicloudSettlementMode() {
+		return this.alicloudSettlementMode;
+	}
+	public void setAlicloudSettlementMode(String alicloudSettlementMode) {
+		this.alicloudSettlementMode = alicloudSettlementMode;
+	}
+
 	public String getBidType() {
 		return this.bidType;
 	}
@@ -402,6 +469,41 @@ public class FxiaokeCreateLeadsParams extends AlipayObject {
 		this.expectSignDate = expectSignDate;
 	}
 
+	public String getFinalCustomerSignOtherPartySubjectId() {
+		return this.finalCustomerSignOtherPartySubjectId;
+	}
+	public void setFinalCustomerSignOtherPartySubjectId(String finalCustomerSignOtherPartySubjectId) {
+		this.finalCustomerSignOtherPartySubjectId = finalCustomerSignOtherPartySubjectId;
+	}
+
+	public String getFinalCustomerSignOtherPartySubjectName() {
+		return this.finalCustomerSignOtherPartySubjectName;
+	}
+	public void setFinalCustomerSignOtherPartySubjectName(String finalCustomerSignOtherPartySubjectName) {
+		this.finalCustomerSignOtherPartySubjectName = finalCustomerSignOtherPartySubjectName;
+	}
+
+	public String getFinalCustomerSignSubjectId() {
+		return this.finalCustomerSignSubjectId;
+	}
+	public void setFinalCustomerSignSubjectId(String finalCustomerSignSubjectId) {
+		this.finalCustomerSignSubjectId = finalCustomerSignSubjectId;
+	}
+
+	public String getFinalCustomerSignSubjectName() {
+		return this.finalCustomerSignSubjectName;
+	}
+	public void setFinalCustomerSignSubjectName(String finalCustomerSignSubjectName) {
+		this.finalCustomerSignSubjectName = finalCustomerSignSubjectName;
+	}
+
+	public String getGeneralAgentCooperationType() {
+		return this.generalAgentCooperationType;
+	}
+	public void setGeneralAgentCooperationType(String generalAgentCooperationType) {
+		this.generalAgentCooperationType = generalAgentCooperationType;
+	}
+
 	public Long getId() {
 		return this.id;
 	}
@@ -458,6 +560,20 @@ public class FxiaokeCreateLeadsParams extends AlipayObject {
 		this.leadsOtherCloudPedestal = leadsOtherCloudPedestal;
 	}
 
+	public String getLeadsOtherPartners() {
+		return this.leadsOtherPartners;
+	}
+	public void setLeadsOtherPartners(String leadsOtherPartners) {
+		this.leadsOtherPartners = leadsOtherPartners;
+	}
+
+	public String getLeadsOtherPartnersName() {
+		return this.leadsOtherPartnersName;
+	}
+	public void setLeadsOtherPartnersName(String leadsOtherPartnersName) {
+		this.leadsOtherPartnersName = leadsOtherPartnersName;
+	}
+
 	public String getLeadsProductType() {
 		return this.leadsProductType;
 	}
@@ -484,6 +600,20 @@ public class FxiaokeCreateLeadsParams extends AlipayObject {
 	}
 	public void setLeadsSourcePartnerId(String leadsSourcePartnerId) {
 		this.leadsSourcePartnerId = leadsSourcePartnerId;
+	}
+
+	public String getObSignOtherPartySubjectId() {
+		return this.obSignOtherPartySubjectId;
+	}
+	public void setObSignOtherPartySubjectId(String obSignOtherPartySubjectId) {
+		this.obSignOtherPartySubjectId = obSignOtherPartySubjectId;
+	}
+
+	public String getObSignOtherPartySubjectName() {
+		return this.obSignOtherPartySubjectName;
+	}
+	public void setObSignOtherPartySubjectName(String obSignOtherPartySubjectName) {
+		this.obSignOtherPartySubjectName = obSignOtherPartySubjectName;
 	}
 
 	public List<String> getOtherPartnerPidList() {

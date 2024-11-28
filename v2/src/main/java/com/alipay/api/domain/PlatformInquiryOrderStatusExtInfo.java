@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 问诊订单状态同步-扩展信息
  *
  * @author auto create
- * @since 1.0, 2024-11-18 16:55:19
+ * @since 1.0, 2024-11-22 17:30:56
  */
 public class PlatformInquiryOrderStatusExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8231364136415553572L;
+	private static final long serialVersionUID = 4519558151497848688L;
 
 	/**
 	 * 支付宝交易号

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.merge.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-28 12:27:02
+ * @since 1.0, 2024-11-25 18:02:22
  */
 public class AlipayTradeMergeCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8426916422854611122L;
+	private static final long serialVersionUID = 7168377218643642497L;
 
 	/** 
 	 * 合并交易号，用于后续唤起收银台使用，当所有子订单都下单成功后返回，2小时后失效。失效后需重新发起合并下单请求。

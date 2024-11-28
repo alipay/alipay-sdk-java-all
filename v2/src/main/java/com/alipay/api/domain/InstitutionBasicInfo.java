@@ -9,17 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 制度基本信息
  *
  * @author auto create
- * @since 1.0, 2023-05-08 20:15:53
+ * @since 1.0, 2024-11-20 11:37:53
  */
 public class InstitutionBasicInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4123615663164229197L;
+	private static final long serialVersionUID = 6265192976815859229L;
 
 	/**
 	 * 费控咨询模式
 	 */
 	@ApiField("consult_mode")
 	private String consultMode;
+
+	/**
+	 * 制度可发放资产币种
+	 */
+	@ApiField("currency")
+	private String currency;
 
 	/**
 	 * 制度是否启用
@@ -62,6 +68,13 @@ public class InstitutionBasicInfo extends AlipayObject {
 	}
 	public void setConsultMode(String consultMode) {
 		this.consultMode = consultMode;
+	}
+
+	public String getCurrency() {
+		return this.currency;
+	}
+	public void setCurrency(String currency) {
+		this.currency = currency;
 	}
 
 	public String getEffective() {

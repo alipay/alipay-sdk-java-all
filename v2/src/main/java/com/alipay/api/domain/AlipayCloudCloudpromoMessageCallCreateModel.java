@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序云风险智能电话创建
  *
  * @author auto create
- * @since 1.0, 2024-11-13 11:35:26
+ * @since 1.0, 2024-11-25 17:40:41
  */
 public class AlipayCloudCloudpromoMessageCallCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2254544557936897215L;
+	private static final long serialVersionUID = 4368446866247928324L;
 
 	/**
 	 * 触达策略

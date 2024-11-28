@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.database.task.retry request
  * 
  * @author auto create
- * @since 1.0, 2023-08-18 14:13:00
+ * @since 1.0, 2024-11-22 14:41:42
  */
 public class AlipayCloudCloudbaseDatabaseTaskRetryRequest implements AlipayRequest<AlipayCloudCloudbaseDatabaseTaskRetryResponse> {
 

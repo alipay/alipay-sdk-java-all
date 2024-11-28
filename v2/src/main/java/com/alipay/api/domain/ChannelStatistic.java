@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 渠道统计
  *
  * @author auto create
- * @since 1.0, 2024-10-15 13:10:15
+ * @since 1.0, 2024-11-26 11:27:15
  */
 public class ChannelStatistic extends AlipayObject {
 
-	private static final long serialVersionUID = 5625267229946961753L;
+	private static final long serialVersionUID = 4285659723258415816L;
 
 	/**
 	 * 支付渠道
 	 */
 	@ApiField("pay_channel")
 	private String payChannel;
+
+	/**
+	 * 当前渠道，退款成功的总金额
+	 */
+	@ApiField("refund_amount")
+	private String refundAmount;
 
 	/**
 	 * 实际到账金额
@@ -42,6 +48,13 @@ public class ChannelStatistic extends AlipayObject {
 	}
 	public void setPayChannel(String payChannel) {
 		this.payChannel = payChannel;
+	}
+
+	public String getRefundAmount() {
+		return this.refundAmount;
+	}
+	public void setRefundAmount(String refundAmount) {
+		this.refundAmount = refundAmount;
 	}
 
 	public String getSettleAmount() {

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.env.ak.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-09 10:51:39
+ * @since 1.0, 2024-11-22 14:41:27
  */
 public class AlipayCloudCloudbaseEnvAkModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6715342261293543629L;
+	private static final long serialVersionUID = 5521156978738536757L;
 
 	/** 
 	 * 修改ak结果

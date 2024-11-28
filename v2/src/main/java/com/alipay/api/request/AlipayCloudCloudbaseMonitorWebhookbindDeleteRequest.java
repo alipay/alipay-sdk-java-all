@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.monitor.webhookbind.delete request
  * 
  * @author auto create
- * @since 1.0, 2024-05-08 14:34:21
+ * @since 1.0, 2024-11-22 09:21:24
  */
 public class AlipayCloudCloudbaseMonitorWebhookbindDeleteRequest implements AlipayRequest<AlipayCloudCloudbaseMonitorWebhookbindDeleteResponse> {
 

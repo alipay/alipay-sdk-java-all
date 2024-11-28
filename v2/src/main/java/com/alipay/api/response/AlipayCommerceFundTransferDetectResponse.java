@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.fund.transfer.detect response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-13 11:17:19
+ * @since 1.0, 2024-11-21 21:57:16
  */
 public class AlipayCommerceFundTransferDetectResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7187611191461933954L;
+	private static final long serialVersionUID = 6535317653355249672L;
 
 	/** 
 	 * 返回状态码

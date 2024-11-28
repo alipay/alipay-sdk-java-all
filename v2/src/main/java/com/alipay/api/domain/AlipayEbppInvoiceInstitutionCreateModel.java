@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 制度新增
  *
  * @author auto create
- * @since 1.0, 2024-06-24 10:32:52
+ * @since 1.0, 2024-11-20 11:39:19
  */
 public class AlipayEbppInvoiceInstitutionCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5167734625163626194L;
+	private static final long serialVersionUID = 8669341459282878438L;
 
 	/**
 	 * 企业共同账户id（该字段将废弃，不建议使用，可用enterprise_id字段替换） 当前字段已废弃(该字段将废弃，不建议使用，可用enterprise_id字段替换)
@@ -42,6 +42,12 @@ public class AlipayEbppInvoiceInstitutionCreateModel extends AlipayObject {
 	 */
 	@ApiField("consult_mode")
 	private String consultMode;
+
+	/**
+	 * 该字段用于管控制度下发放的资产币种，不填写默认为人民币，设置该字段后，制度下手工发放的资产币种均为设置值。
+	 */
+	@ApiField("currency")
+	private String currency;
 
 	/**
 	 * 制度生效结束时间
@@ -113,9 +119,10 @@ public class AlipayEbppInvoiceInstitutionCreateModel extends AlipayObject {
 	private String ownerType;
 
 	/**
-	 * 因公场景
+	 * 因公场景 当前字段已废弃(该字段将废弃，不建议使用)
 	 */
 	@ApiField("scene_type")
+	@Deprecated
 	private String sceneType;
 
 	/**
@@ -151,6 +158,13 @@ public class AlipayEbppInvoiceInstitutionCreateModel extends AlipayObject {
 	}
 	public void setConsultMode(String consultMode) {
 		this.consultMode = consultMode;
+	}
+
+	public String getCurrency() {
+		return this.currency;
+	}
+	public void setCurrency(String currency) {
+		this.currency = currency;
 	}
 
 	public Date getEffectiveEndDate() {

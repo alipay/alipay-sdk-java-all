@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniDataVisittrendQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8135847861244546345L;
+	private static final long serialVersionUID = 3438898276322529678L;
 
 	/**
 	 * 查询小程序访问趋势数据的粒度，如HOUR-小时级

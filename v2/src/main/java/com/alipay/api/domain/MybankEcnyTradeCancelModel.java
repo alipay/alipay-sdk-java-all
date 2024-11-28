@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数字人民币交易撤消
  *
  * @author auto create
- * @since 1.0, 2024-03-12 15:16:24
+ * @since 1.0, 2024-11-20 14:46:07
  */
 public class MybankEcnyTradeCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4339631698695135871L;
+	private static final long serialVersionUID = 8431129122173944972L;
 
 	/**
 	 * 商户ID

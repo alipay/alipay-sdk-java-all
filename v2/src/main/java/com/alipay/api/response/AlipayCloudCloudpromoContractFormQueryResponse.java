@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudpromo.contract.form.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-23 19:52:20
+ * @since 1.0, 2024-11-26 10:49:32
  */
 public class AlipayCloudCloudpromoContractFormQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2193829536996998936L;
+	private static final long serialVersionUID = 1217583231945112521L;
 
 	/** 
 	 * 合同数据

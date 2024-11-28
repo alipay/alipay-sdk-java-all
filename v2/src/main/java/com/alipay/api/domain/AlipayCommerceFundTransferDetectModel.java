@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 流水记录校验真假
  *
  * @author auto create
- * @since 1.0, 2024-11-13 11:12:55
+ * @since 1.0, 2024-11-21 21:52:17
  */
 public class AlipayCommerceFundTransferDetectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3454612257914565516L;
+	private static final long serialVersionUID = 7441959672181719962L;
 
 	/**
 	 * 实际支付金额, 单位元

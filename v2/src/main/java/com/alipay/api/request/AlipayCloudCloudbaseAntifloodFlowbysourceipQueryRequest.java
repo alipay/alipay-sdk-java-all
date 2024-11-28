@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.antiflood.flowbysourceip.query request
  * 
  * @author auto create
- * @since 1.0, 2023-09-14 17:41:45
+ * @since 1.0, 2024-11-22 14:41:55
  */
 public class AlipayCloudCloudbaseAntifloodFlowbysourceipQueryRequest implements AlipayRequest<AlipayCloudCloudbaseAntifloodFlowbysourceipQueryResponse> {
 

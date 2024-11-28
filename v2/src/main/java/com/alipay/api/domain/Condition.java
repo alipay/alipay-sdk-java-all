@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class Condition extends AlipayObject {
 
-	private static final long serialVersionUID = 2335735789572799229L;
+	private static final long serialVersionUID = 2751834453725981257L;
 
 	/**
 	 * 字段名称，目前支持以下字段：

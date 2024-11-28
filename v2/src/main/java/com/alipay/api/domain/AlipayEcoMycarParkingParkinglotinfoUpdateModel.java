@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改停车场信息
  *
  * @author auto create
- * @since 1.0, 2024-08-12 15:13:17
+ * @since 1.0, 2024-11-25 20:30:53
  */
 public class AlipayEcoMycarParkingParkinglotinfoUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3172716882439162542L;
+	private static final long serialVersionUID = 5843494836225647469L;
 
 	/**
 	 * 服务商ID（2088开头的16位纯数字），由服务商提供给ISV
@@ -235,6 +235,12 @@ public class AlipayEcoMycarParkingParkinglotinfoUpdateModel extends AlipayObject
 	 */
 	@ApiField("payment_mode")
 	private String paymentMode;
+
+	/**
+	 * 提供用户查看停车状态、缴费功能
+	 */
+	@ApiField("serivce_url")
+	private String serivceUrl;
 
 	/**
 	 * 停车场场内服务信息
@@ -513,6 +519,13 @@ public class AlipayEcoMycarParkingParkinglotinfoUpdateModel extends AlipayObject
 	}
 	public void setPaymentMode(String paymentMode) {
 		this.paymentMode = paymentMode;
+	}
+
+	public String getSerivceUrl() {
+		return this.serivceUrl;
+	}
+	public void setSerivceUrl(String serivceUrl) {
+		this.serivceUrl = serivceUrl;
 	}
 
 	public List<ParkingLotServiceInfo> getServiceList() {

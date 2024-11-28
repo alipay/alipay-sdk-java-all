@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudpromo.contract.form.initialize response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-23 19:52:21
+ * @since 1.0, 2024-11-26 10:49:32
  */
 public class AlipayCloudCloudpromoContractFormInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6664723732755232366L;
+	private static final long serialVersionUID = 4445791632777772768L;
 
 	/** 
 	 * 最早起租时间(单位 天)

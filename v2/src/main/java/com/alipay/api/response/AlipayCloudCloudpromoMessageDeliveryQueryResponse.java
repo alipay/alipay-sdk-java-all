@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudpromo.message.delivery.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-13 11:37:16
+ * @since 1.0, 2024-11-25 17:42:17
  */
 public class AlipayCloudCloudpromoMessageDeliveryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2692233664885771667L;
+	private static final long serialVersionUID = 3834448898222879982L;
 
 	/** 
 	 * 触达记录结果详情

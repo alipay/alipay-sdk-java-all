@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataMdaWelfareagofflineQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6356862564362825172L;
+	private static final long serialVersionUID = 4424742795356586749L;
 
 	/** 
 	 * 火苗捐赠总数

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.antiflood.switch.set request
  * 
  * @author auto create
- * @since 1.0, 2023-09-14 17:46:44
+ * @since 1.0, 2024-11-22 14:41:38
  */
 public class AlipayCloudCloudbaseAntifloodSwitchSetRequest implements AlipayRequest<AlipayCloudCloudbaseAntifloodSwitchSetResponse> {
 

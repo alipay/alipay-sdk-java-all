@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudpromo.queue.push.sync response.
  * 
  * @author auto create
- * @since 1.0, 2024-09-26 15:57:11
+ * @since 1.0, 2024-11-26 10:49:39
  */
 public class AlipayCloudCloudpromoQueuePushSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6625369932266978858L;
+	private static final long serialVersionUID = 8734689442394419641L;
 
 	/** 
 	 * 同步订单

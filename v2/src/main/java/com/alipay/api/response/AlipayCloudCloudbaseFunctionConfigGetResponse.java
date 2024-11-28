@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.function.config.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-25 11:11:59
+ * @since 1.0, 2024-11-22 14:41:40
  */
 public class AlipayCloudCloudbaseFunctionConfigGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5673911169216755363L;
+	private static final long serialVersionUID = 8117176555643993466L;
 
 	/** 
 	 * 云函数配置

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.layer.version.create request
  * 
  * @author auto create
- * @since 1.0, 2023-09-14 17:46:45
+ * @since 1.0, 2024-11-22 14:41:23
  */
 public class AlipayCloudCloudbaseLayerVersionCreateRequest implements AlipayRequest<AlipayCloudCloudbaseLayerVersionCreateResponse> {
 

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 还款业务单交易单查询
  *
  * @author auto create
- * @since 1.0, 2024-11-18 19:55:19
+ * @since 1.0, 2024-11-21 10:51:20
  */
 public class AlipayCommerceWithholdrepayorderTradeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3899668979376868582L;
+	private static final long serialVersionUID = 3214364248334944357L;
 
 	/**
 	 * 银行间联模式下有用，其它场景请不要使用； 双联通过该参数指定需要查询的交易所属收单机构的pid;

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlarmTimeConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 1547138386598199446L;
+	private static final long serialVersionUID = 3317328299343359497L;
 
 	/**
 	 * 生效开始时间(格式：HH:mm:dd)

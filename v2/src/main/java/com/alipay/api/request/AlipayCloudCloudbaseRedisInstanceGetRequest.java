@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.redis.instance.get request
  * 
  * @author auto create
- * @since 1.0, 2023-10-16 13:51:45
+ * @since 1.0, 2024-11-22 14:41:14
  */
 public class AlipayCloudCloudbaseRedisInstanceGetRequest implements AlipayRequest<AlipayCloudCloudbaseRedisInstanceGetResponse> {
 

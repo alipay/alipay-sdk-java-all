@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.wallet.balance.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-16 20:25:03
+ * @since 1.0, 2024-11-22 14:40:37
  */
 public class AlipayCloudCloudbaseWalletBalanceGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5218297223327549859L;
+	private static final long serialVersionUID = 5524519386259593865L;
 
 	/** 
 	 * 可用余额(分)

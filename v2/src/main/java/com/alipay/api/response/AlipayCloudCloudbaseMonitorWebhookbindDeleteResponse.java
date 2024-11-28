@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.monitor.webhookbind.delete response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-08 14:34:21
+ * @since 1.0, 2024-11-22 09:21:24
  */
 public class AlipayCloudCloudbaseMonitorWebhookbindDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7452456426442535999L;
+	private static final long serialVersionUID = 5496418354499238534L;
 
 	/** 
 	 * 删除结果

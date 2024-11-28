@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.extension.redis.destroy response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-17 19:01:45
+ * @since 1.0, 2024-11-22 14:41:43
  */
 public class AlipayCloudCloudbaseExtensionRedisDestroyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4339348764183481238L;
+	private static final long serialVersionUID = 4654348329162822139L;
 
 	/** 
 	 * 是否卸载成功

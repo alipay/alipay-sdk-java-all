@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻信用信息模型
  *
  * @author auto create
- * @since 1.0, 2024-11-04 14:34:52
+ * @since 1.0, 2024-11-26 13:18:04
  */
 public class CreditInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1253894941123253561L;
+	private static final long serialVersionUID = 3548858167888912691L;
 
 	/**
 	 * 芝麻先享受理台用户开通成功后，商家自定义页面跳转地址
@@ -24,6 +24,12 @@ public class CreditInfoDTO extends AlipayObject {
 	 */
 	@ApiField("credit_deposit_period_pay_type")
 	private String creditDepositPeriodPayType;
+
+	/**
+	 * 芝麻任务信息
+	 */
+	@ApiField("credit_go_info")
+	private CreditGoInfo creditGoInfo;
 
 	/**
 	 * 使用芝麻信用服务的产品码，不传默认使用芝麻先享服务
@@ -61,6 +67,13 @@ public class CreditInfoDTO extends AlipayObject {
 	}
 	public void setCreditDepositPeriodPayType(String creditDepositPeriodPayType) {
 		this.creditDepositPeriodPayType = creditDepositPeriodPayType;
+	}
+
+	public CreditGoInfo getCreditGoInfo() {
+		return this.creditGoInfo;
+	}
+	public void setCreditGoInfo(CreditGoInfo creditGoInfo) {
+		this.creditGoInfo = creditGoInfo;
 	}
 
 	public String getCreditProductCode() {

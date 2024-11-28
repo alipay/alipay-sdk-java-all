@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudpromo.queue.push.sync request
  * 
  * @author auto create
- * @since 1.0, 2024-09-26 15:57:11
+ * @since 1.0, 2024-11-26 10:49:39
  */
 public class AlipayCloudCloudpromoQueuePushSyncRequest implements AlipayRequest<AlipayCloudCloudpromoQueuePushSyncResponse> {
 

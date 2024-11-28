@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.extension.mysql.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-18 14:51:45
+ * @since 1.0, 2024-11-22 14:41:37
  */
 public class AlipayCloudCloudbaseExtensionMysqlApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2712571286758685112L;
+	private static final long serialVersionUID = 7594143864618288153L;
 
 	/** 
 	 * 是否已成功开始安装

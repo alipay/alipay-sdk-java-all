@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.ide.accountadmin.auth request
  * 
  * @author auto create
- * @since 1.0, 2023-12-28 10:16:54
+ * @since 1.0, 2024-11-22 09:21:37
  */
 public class AlipayCloudCloudbaseIdeAccountadminAuthRequest implements AlipayRequest<AlipayCloudCloudbaseIdeAccountadminAuthResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.extension.redis.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-12 16:56:56
+ * @since 1.0, 2024-11-22 14:41:43
  */
 public class AlipayCloudCloudbaseExtensionRedisApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8849686528181854785L;
+	private static final long serialVersionUID = 8199983489319159566L;
 
 	/** 
 	 * 是否已成功开始安装

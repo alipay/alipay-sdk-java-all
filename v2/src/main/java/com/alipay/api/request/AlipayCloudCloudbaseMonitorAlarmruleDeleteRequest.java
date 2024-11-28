@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.monitor.alarmrule.delete request
  * 
  * @author auto create
- * @since 1.0, 2024-05-08 14:32:40
+ * @since 1.0, 2024-11-22 09:21:24
  */
 public class AlipayCloudCloudbaseMonitorAlarmruleDeleteRequest implements AlipayRequest<AlipayCloudCloudbaseMonitorAlarmruleDeleteResponse> {
 

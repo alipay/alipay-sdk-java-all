@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudpromo.mall.renfundorder.cancel request
  * 
  * @author auto create
- * @since 1.0, 2024-06-04 20:17:03
+ * @since 1.0, 2024-11-26 10:49:46
  */
 public class AlipayCloudCloudpromoMallRenfundorderCancelRequest implements AlipayRequest<AlipayCloudCloudpromoMallRenfundorderCancelResponse> {
 

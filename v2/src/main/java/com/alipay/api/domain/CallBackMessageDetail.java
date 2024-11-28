@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外呼回执信息明细
  *
  * @author auto create
- * @since 1.0, 2024-11-13 11:38:37
+ * @since 1.0, 2024-11-25 17:41:49
  */
 public class CallBackMessageDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6189822125916554964L;
+	private static final long serialVersionUID = 4374696564688816898L;
 
 	/**
 	 * 用户开始接听时间，是一个时间点
@@ -94,6 +94,12 @@ public class CallBackMessageDetail extends AlipayObject {
 	private String ringTime;
 
 	/**
+	 * 短信条数
+	 */
+	@ApiField("sms_size")
+	private String smsSize;
+
+	/**
 	 * 通话时长(单位秒)
 	 */
 	@ApiField("speaking_duration")
@@ -116,6 +122,12 @@ public class CallBackMessageDetail extends AlipayObject {
 	 */
 	@ApiField("status_description")
 	private String statusDescription;
+
+	/**
+	 * 成功状态
+	 */
+	@ApiField("success")
+	private Boolean success;
 
 	/**
 	 * 外呼任务编号
@@ -220,6 +232,13 @@ public class CallBackMessageDetail extends AlipayObject {
 		this.ringTime = ringTime;
 	}
 
+	public String getSmsSize() {
+		return this.smsSize;
+	}
+	public void setSmsSize(String smsSize) {
+		this.smsSize = smsSize;
+	}
+
 	public String getSpeakingDuration() {
 		return this.speakingDuration;
 	}
@@ -246,6 +265,13 @@ public class CallBackMessageDetail extends AlipayObject {
 	}
 	public void setStatusDescription(String statusDescription) {
 		this.statusDescription = statusDescription;
+	}
+
+	public Boolean getSuccess() {
+		return this.success;
+	}
+	public void setSuccess(Boolean success) {
+		this.success = success;
 	}
 
 	public String getTaskId() {

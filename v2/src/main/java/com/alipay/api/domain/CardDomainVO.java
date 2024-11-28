@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CardDomainVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3676373288593829498L;
+	private static final long serialVersionUID = 3212348346168737915L;
 
 	/**
 	 * 值域域名的描述值，固定为”金融”

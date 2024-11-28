@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.miniapp.layerchannel.query request
  * 
  * @author auto create
- * @since 1.0, 2024-11-04 10:28:01
+ * @since 1.0, 2024-11-22 14:57:17
  */
 public class AlipayOpenMiniMiniappLayerchannelQueryRequest implements AlipayRequest<AlipayOpenMiniMiniappLayerchannelQueryResponse> {
 

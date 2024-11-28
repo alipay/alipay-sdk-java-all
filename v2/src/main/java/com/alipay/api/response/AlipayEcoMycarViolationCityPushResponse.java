@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoMycarViolationCityPushResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8518578414297266277L;
+	private static final long serialVersionUID = 5162574678449819442L;
 
 	
 

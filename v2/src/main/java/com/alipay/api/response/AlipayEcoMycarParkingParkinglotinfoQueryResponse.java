@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.parking.parkinglotinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-15 18:05:30
+ * @since 1.0, 2024-11-26 10:27:16
  */
 public class AlipayEcoMycarParkingParkinglotinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4755966969399582916L;
+	private static final long serialVersionUID = 5272199553297471215L;
 
 	/** 
 	 * 地区编码
@@ -152,6 +152,12 @@ public class AlipayEcoMycarParkingParkinglotinfoQueryResponse extends AlipayResp
 	 */
 	@ApiField("province_id")
 	private String provinceId;
+
+	/** 
+	 * 提供用户查看停车状态、缴费功能
+	 */
+	@ApiField("serivce_url")
+	private String serivceUrl;
 
 	/** 
 	 * 停车场服务信息列表
@@ -324,6 +330,13 @@ public class AlipayEcoMycarParkingParkinglotinfoQueryResponse extends AlipayResp
 	}
 	public String getProvinceId( ) {
 		return this.provinceId;
+	}
+
+	public void setSerivceUrl(String serivceUrl) {
+		this.serivceUrl = serivceUrl;
+	}
+	public String getSerivceUrl( ) {
+		return this.serivceUrl;
 	}
 
 	public void setServiceList(List<ParkingLotServiceInfo> serviceList) {

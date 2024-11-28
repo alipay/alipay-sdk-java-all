@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.merchant.creditservice.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-25 13:57:20
+ * @since 1.0, 2024-11-27 10:34:52
  */
 public class ZhimaMerchantCreditserviceCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5736796348727454878L;
+	private static final long serialVersionUID = 7536725583144231214L;
 
 	/** 
 	 * 成功创建后返回信用服务的ID。

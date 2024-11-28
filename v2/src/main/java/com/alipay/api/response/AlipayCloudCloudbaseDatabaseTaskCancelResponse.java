@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.database.task.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 20:56:42
+ * @since 1.0, 2024-11-22 14:41:35
  */
 public class AlipayCloudCloudbaseDatabaseTaskCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2415885133156332957L;
+	private static final long serialVersionUID = 8381347137921329148L;
 
 	/** 
 	 * 取消任务执行结果

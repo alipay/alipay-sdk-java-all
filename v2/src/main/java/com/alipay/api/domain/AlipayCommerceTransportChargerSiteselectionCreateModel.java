@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建数据查询任务
  *
  * @author auto create
- * @since 1.0, 2024-09-13 22:01:17
+ * @since 1.0, 2024-11-28 13:18:19
  */
 public class AlipayCommerceTransportChargerSiteselectionCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2735435793786348843L;
+	private static final long serialVersionUID = 8191999338581766267L;
 
 	/**
 	 * 数据计算任务条件

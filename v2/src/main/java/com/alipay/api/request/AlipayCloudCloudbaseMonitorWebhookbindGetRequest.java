@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.monitor.webhookbind.get request
  * 
  * @author auto create
- * @since 1.0, 2024-05-08 14:33:34
+ * @since 1.0, 2024-11-22 09:21:22
  */
 public class AlipayCloudCloudbaseMonitorWebhookbindGetRequest implements AlipayRequest<AlipayCloudCloudbaseMonitorWebhookbindGetResponse> {
 

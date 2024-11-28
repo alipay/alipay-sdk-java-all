@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 充值页面创建
  *
  * @author auto create
- * @since 1.0, 2024-07-25 19:24:15
+ * @since 1.0, 2024-11-27 11:57:54
  */
 public class AlipayFundDepositorderPageCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3424629384318441945L;
+	private static final long serialVersionUID = 7655532148444932378L;
 
 	/**
 	 * 订单总金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]；

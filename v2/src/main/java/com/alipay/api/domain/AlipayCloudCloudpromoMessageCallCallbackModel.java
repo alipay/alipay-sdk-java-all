@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序云风险智能电话外呼结果回执
  *
  * @author auto create
- * @since 1.0, 2024-11-13 11:38:38
+ * @since 1.0, 2024-11-25 17:41:49
  */
 public class AlipayCloudCloudpromoMessageCallCallbackModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7631274964289772529L;
+	private static final long serialVersionUID = 4532951742452843832L;
 
 	/**
 	 * 外呼触达明细信息

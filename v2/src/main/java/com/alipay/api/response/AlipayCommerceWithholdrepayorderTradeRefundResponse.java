@@ -15,11 +15,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.withholdrepayorder.trade.refund response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-18 19:57:16
+ * @since 1.0, 2024-11-25 17:47:16
  */
 public class AlipayCommerceWithholdrepayorderTradeRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5737774412931387455L;
+	private static final long serialVersionUID = 7282445774486125443L;
 
 	/** 
 	 * 用户的登录id
@@ -40,7 +40,7 @@ public class AlipayCommerceWithholdrepayorderTradeRefundResponse extends AlipayR
 	private String buyerUserId;
 
 	/** 
-	 * 本次退款是否发生了资金变化
+	 * 本次退款是否发生了资金变化，Y为是，N为否
 	 */
 	@ApiField("fund_change")
 	private String fundChange;
@@ -52,7 +52,7 @@ public class AlipayCommerceWithholdrepayorderTradeRefundResponse extends AlipayR
 	private Date gmtRefundPay;
 
 	/** 
-	 * 是否有银行卡冲退，仅当query_options中传入deposit_back_info时返回
+	 * 是否有银行卡冲退，仅当query_options中传入deposit_back_info时返回，返回值为true或false
 	 */
 	@ApiField("has_deposit_back")
 	private String hasDepositBack;

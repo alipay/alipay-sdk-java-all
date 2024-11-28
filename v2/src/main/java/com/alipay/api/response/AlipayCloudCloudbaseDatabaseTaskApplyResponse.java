@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.database.task.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 20:56:42
+ * @since 1.0, 2024-11-22 14:41:38
  */
 public class AlipayCloudCloudbaseDatabaseTaskApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8711325638885612118L;
+	private static final long serialVersionUID = 2543644471393987355L;
 
 	/** 
 	 * 导入任务url地址

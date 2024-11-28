@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.antiflood.barrier.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-14 17:46:44
+ * @since 1.0, 2024-11-22 14:41:26
  */
 public class AlipayCloudCloudbaseAntifloodBarrierGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8656845692767284249L;
+	private static final long serialVersionUID = 8472257787988336544L;
 
 	/** 
 	 * 封禁时长（秒） [60, 3*86400]

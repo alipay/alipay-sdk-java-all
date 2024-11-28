@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudpromo.mall.renfundorder.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-04 20:17:03
+ * @since 1.0, 2024-11-26 10:49:46
  */
 public class AlipayCloudCloudpromoMallRenfundorderCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3232767835644593416L;
+	private static final long serialVersionUID = 6784373472397383248L;
 
 	/** 
 	 * 纠纷id

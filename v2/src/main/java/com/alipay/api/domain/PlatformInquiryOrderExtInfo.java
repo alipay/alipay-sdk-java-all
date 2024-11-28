@@ -8,11 +8,11 @@ import com.alipay.api.internal.mapping.ApiField;
 
  *
  * @author auto create
- * @since 1.0, 2024-11-14 15:17:07
+ * @since 1.0, 2024-11-22 17:30:37
  */
 public class PlatformInquiryOrderExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6596482318777672916L;
+	private static final long serialVersionUID = 1465656916777762655L;
 
 	/**
 	 * 支付宝渠道订单标识

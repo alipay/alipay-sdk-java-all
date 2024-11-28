@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.periodcard.indirectconfig.create request
  * 
  * @author auto create
- * @since 1.0, 2024-11-15 17:07:21
+ * @since 1.0, 2024-11-28 11:31:50
  */
 public class AlipayCommercePeriodcardIndirectconfigCreateRequest implements AlipayRequest<AlipayCommercePeriodcardIndirectconfigCreateResponse> {
 

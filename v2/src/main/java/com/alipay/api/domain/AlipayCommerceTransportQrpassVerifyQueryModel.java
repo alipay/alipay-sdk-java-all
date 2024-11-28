@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportQrpassVerifyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4658315167938997387L;
+	private static final long serialVersionUID = 1312177776111262132L;
 
 	/**
 	 * 用户卡号

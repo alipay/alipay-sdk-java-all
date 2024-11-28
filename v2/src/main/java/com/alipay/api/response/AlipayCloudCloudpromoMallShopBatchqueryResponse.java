@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudpromo.mall.shop.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-04 20:17:03
+ * @since 1.0, 2024-11-26 10:49:41
  */
 public class AlipayCloudCloudpromoMallShopBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7598171475185592424L;
+	private static final long serialVersionUID = 7117741722584415657L;
 
 	/** 
 	 * 页数

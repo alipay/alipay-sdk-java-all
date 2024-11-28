@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.extension.sms.apply response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-18 15:01:46
+ * @since 1.0, 2024-11-22 14:41:43
  */
 public class AlipayCloudCloudbaseExtensionSmsApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6365963714224437618L;
+	private static final long serialVersionUID = 4698928223453415124L;
 
 	/** 
 	 * 是否已成功开始安装

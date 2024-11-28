@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudpromo.mall.renfundorder.consult response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-04 20:17:03
+ * @since 1.0, 2024-11-26 10:49:46
  */
 public class AlipayCloudCloudpromoMallRenfundorderConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3437347476499142984L;
+	private static final long serialVersionUID = 5455423449826789989L;
 
 	/** 
 	 * 支持的订单退货方式

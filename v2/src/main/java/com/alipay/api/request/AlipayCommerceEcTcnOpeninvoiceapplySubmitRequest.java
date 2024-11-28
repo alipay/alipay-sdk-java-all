@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.ec.tcn.openinvoiceapply.submit request
  * 
  * @author auto create
- * @since 1.0, 2024-09-09 19:52:09
+ * @since 1.0, 2024-11-28 11:31:11
  */
 public class AlipayCommerceEcTcnOpeninvoiceapplySubmitRequest implements AlipayRequest<AlipayCommerceEcTcnOpeninvoiceapplySubmitResponse> {
 

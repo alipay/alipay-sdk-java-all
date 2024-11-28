@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 为设备的应用创建升级任务
  *
  * @author auto create
- * @since 1.0, 2021-01-29 11:12:10
+ * @since 1.0, 2024-11-26 10:25:50
  */
 public class AlipayCommerceIotDeviceUpgradeappCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1859817417975484796L;
+	private static final long serialVersionUID = 3366378649579938641L;
 
 	/**
 	 * 用户问题排查是的问题记录

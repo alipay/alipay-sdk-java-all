@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.invoice.issuebatch.issuerecords.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2024-11-05 14:25:28
+ * @since 1.0, 2024-11-22 11:17:19
  */
 public class AlipayEbppInvoiceIssuebatchIssuerecordsBatchqueryRequest implements AlipayRequest<AlipayEbppInvoiceIssuebatchIssuerecordsBatchqueryResponse> {
 

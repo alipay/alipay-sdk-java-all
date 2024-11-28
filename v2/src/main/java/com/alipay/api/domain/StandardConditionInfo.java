@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 使用规则条件列表
  *
  * @author auto create
- * @since 1.0, 2024-06-07 16:49:16
+ * @since 1.0, 2024-11-20 11:38:56
  */
 public class StandardConditionInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1116367697275172499L;
+	private static final long serialVersionUID = 1744172431521335213L;
 
 	/**
 	 * 条件类型
@@ -32,9 +32,10 @@ public class StandardConditionInfo extends AlipayObject {
 	private String ruleName;
 
 	/**
-	 * 费控条件操作符 枚举值： LT("<","小于") LE("<=","小于等于") EQ("=","等于") NE("!=","不等于") GE(">=","大于等于") GT(">","大于")
+	 * 费控条件操作符 枚举值： LT("<","小于") LE("<=","小于等于") EQ("=","等于") NE("!=","不等于") GE(">=","大于等于") GT(">","大于") 当前字段已废弃(该字段为保留字段，目前未被使用)
 	 */
 	@ApiField("rule_operator")
+	@Deprecated
 	private String ruleOperator;
 
 	/**

@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.order.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-04 14:52:21
+ * @since 1.0, 2024-11-26 13:37:20
  */
 public class AlipayOpenMiniOrderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5191175947369853247L;
+	private static final long serialVersionUID = 8624937713639696131L;
 
 	/** 
 	 * 芝麻信用创单相关参数
@@ -45,6 +45,12 @@ public class AlipayOpenMiniOrderCreateResponse extends AlipayResponse {
 	 */
 	@ApiField("pay_info_response")
 	private PayInfoResponse payInfoResponse;
+
+	/** 
+	 * 订单服务类型
+	 */
+	@ApiField("service_type")
+	private String serviceType;
 
 	public void setCreditInfoResponse(CreditInfoResponse creditInfoResponse) {
 		this.creditInfoResponse = creditInfoResponse;
@@ -79,6 +85,13 @@ public class AlipayOpenMiniOrderCreateResponse extends AlipayResponse {
 	}
 	public PayInfoResponse getPayInfoResponse( ) {
 		return this.payInfoResponse;
+	}
+
+	public void setServiceType(String serviceType) {
+		this.serviceType = serviceType;
+	}
+	public String getServiceType( ) {
+		return this.serviceType;
 	}
 
 }

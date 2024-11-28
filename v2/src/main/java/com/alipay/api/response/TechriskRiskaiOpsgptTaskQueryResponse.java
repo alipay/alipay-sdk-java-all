@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class TechriskRiskaiOpsgptTaskQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1478798223718745769L;
+	private static final long serialVersionUID = 7213547446694911315L;
 
 	/** 
 	 * 模型输出的结果响应。

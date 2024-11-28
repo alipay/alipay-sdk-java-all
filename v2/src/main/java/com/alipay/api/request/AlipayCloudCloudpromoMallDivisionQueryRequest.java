@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudpromo.mall.division.query request
  * 
  * @author auto create
- * @since 1.0, 2024-06-20 15:17:03
+ * @since 1.0, 2024-11-26 10:49:41
  */
 public class AlipayCloudCloudpromoMallDivisionQueryRequest implements AlipayRequest<AlipayCloudCloudpromoMallDivisionQueryResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序云风险智能电话查询
  *
  * @author auto create
- * @since 1.0, 2024-11-13 11:35:56
+ * @since 1.0, 2024-11-25 17:40:41
  */
 public class AlipayCloudCloudpromoMessageDeliveryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1565984129454565193L;
+	private static final long serialVersionUID = 3427145735712894293L;
 
 	/**
 	 * 智能触达查询条件

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数字人民币交易查询
  *
  * @author auto create
- * @since 1.0, 2024-03-12 15:16:03
+ * @since 1.0, 2024-11-20 14:45:57
  */
 public class MybankEcnyTradeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3166833819477691268L;
+	private static final long serialVersionUID = 5857542932557892614L;
 
 	/**
 	 * 商户ID

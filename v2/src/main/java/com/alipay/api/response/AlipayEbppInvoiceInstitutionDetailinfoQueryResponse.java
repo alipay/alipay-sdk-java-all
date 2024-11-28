@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.institution.detailinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-05 13:58:26
+ * @since 1.0, 2024-11-22 11:17:20
  */
 public class AlipayEbppInvoiceInstitutionDetailinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2124229323898851868L;
+	private static final long serialVersionUID = 3133831251631112683L;
 
 	/** 
 	 * 若适用范围为EMPLOYEE_ALL，则表示制度对企业下全员生效，owner_id_list不返回；若适配范围为EMPLOYEE_SELECT，owner_id_list返回员工对应的id信息，返回的id类型通过owner_type区分；若适配范围为EMPLOYEE_DEPARTMENT，则表示对指定的部门生效，返回owner_id_list为部门id列表
@@ -30,6 +30,12 @@ public class AlipayEbppInvoiceInstitutionDetailinfoQueryResponse extends AlipayR
 	 */
 	@ApiField("consult_mode")
 	private String consultMode;
+
+	/** 
+	 * 制度下可发放币种
+	 */
+	@ApiField("currency")
+	private String currency;
 
 	/** 
 	 * 制度启用停用状态
@@ -137,6 +143,13 @@ public class AlipayEbppInvoiceInstitutionDetailinfoQueryResponse extends AlipayR
 	}
 	public String getConsultMode( ) {
 		return this.consultMode;
+	}
+
+	public void setCurrency(String currency) {
+		this.currency = currency;
+	}
+	public String getCurrency( ) {
+		return this.currency;
 	}
 
 	public void setEffective(String effective) {

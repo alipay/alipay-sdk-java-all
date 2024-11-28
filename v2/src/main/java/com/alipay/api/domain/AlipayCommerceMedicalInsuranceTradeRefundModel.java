@@ -7,15 +7,21 @@ import com.alipay.api.internal.mapping.ApiField;
  * 代扣退款
  *
  * @author auto create
- * @since 1.0, 2024-09-19 17:50:43
+ * @since 1.0, 2024-11-22 12:12:16
  */
 public class AlipayCommerceMedicalInsuranceTradeRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6424931177283747821L;
+	private static final long serialVersionUID = 1115477796891184238L;
+
+	/**
+	 * 用于标记支付宝用户在应用下的唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 标识一次退款请求，同一笔交易多次退款需要保证唯一。
-注意：如需部分退款，则本参数必填。
+注意：现调整为必填
 	 */
 	@ApiField("out_request_no")
 	private String outRequestNo;
@@ -33,7 +39,13 @@ public class AlipayCommerceMedicalInsuranceTradeRefundModel extends AlipayObject
 	private String refundAmount;
 
 	/**
-	 * 外部请求来源，用于区分接入保司类型
+	 * 退款类型，ALL-全额退，PART-部分退
+	 */
+	@ApiField("refund_type")
+	private String refundType;
+
+	/**
+	 * 外部请求来源，用于区分接入保司类型或垫资方
 	 */
 	@ApiField("source")
 	private String source;
@@ -43,6 +55,19 @@ public class AlipayCommerceMedicalInsuranceTradeRefundModel extends AlipayObject
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;
+
+	/**
+	 * 支付宝用户的userId。
+	 */
+	@ApiField("user_id")
+	private String userId;
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
 
 	public String getOutRequestNo() {
 		return this.outRequestNo;
@@ -65,6 +90,13 @@ public class AlipayCommerceMedicalInsuranceTradeRefundModel extends AlipayObject
 		this.refundAmount = refundAmount;
 	}
 
+	public String getRefundType() {
+		return this.refundType;
+	}
+	public void setRefundType(String refundType) {
+		this.refundType = refundType;
+	}
+
 	public String getSource() {
 		return this.source;
 	}
@@ -77,6 +109,13 @@ public class AlipayCommerceMedicalInsuranceTradeRefundModel extends AlipayObject
 	}
 	public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
+	}
+
+	public String getUserId() {
+		return this.userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
 
 }

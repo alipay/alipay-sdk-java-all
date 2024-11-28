@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.antiflood.rule.get request
  * 
  * @author auto create
- * @since 1.0, 2023-09-14 17:41:45
+ * @since 1.0, 2024-11-22 14:41:37
  */
 public class AlipayCloudCloudbaseAntifloodRuleGetRequest implements AlipayRequest<AlipayCloudCloudbaseAntifloodRuleGetResponse> {
 

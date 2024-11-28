@@ -15,11 +15,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.fix.task.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 16:55:10
+ * @since 1.0, 2024-11-26 13:32:19
  */
 public class AlipayCommerceFixTaskQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2417866892533547585L;
+	private static final long serialVersionUID = 8158416516124558825L;
 
 	/** 
 	 * 部分规则场景下，对提报问题进行的二次分类

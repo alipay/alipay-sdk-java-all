@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 交易组件业务单创建
  *
  * @author auto create
- * @since 1.0, 2024-11-04 14:34:52
+ * @since 1.0, 2024-11-26 13:18:05
  */
 public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2625534184932849135L;
+	private static final long serialVersionUID = 8374656699415212486L;
 
 	/**
 	 * 订单收货地址
@@ -142,6 +142,12 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 	 */
 	@ApiField("service_provider_model")
 	private String serviceProviderModel;
+
+	/**
+	 * 订单服务类型
+	 */
+	@ApiField("service_type")
+	private String serviceType;
 
 	/**
 	 * 门店信息
@@ -327,6 +333,13 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 	}
 	public void setServiceProviderModel(String serviceProviderModel) {
 		this.serviceProviderModel = serviceProviderModel;
+	}
+
+	public String getServiceType() {
+		return this.serviceType;
+	}
+	public void setServiceType(String serviceType) {
+		this.serviceType = serviceType;
 	}
 
 	public ShopInfoDTO getShopInfo() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 钱包原路退接口
  *
  * @author auto create
- * @since 1.0, 2024-07-31 10:15:25
+ * @since 1.0, 2024-11-27 18:32:58
  */
 public class AlipayFundWalletRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6888988922799143253L;
+	private static final long serialVersionUID = 7669178946145415247L;
 
 	/**
 	 * 金额
@@ -50,7 +50,7 @@ public class AlipayFundWalletRefundModel extends AlipayObject {
 	private String principalOpenId;
 
 	/**
-	 * alipay_user_id代表支付宝用户id mechant_user_id代表商户id
+	 * 主体类型
 	 */
 	@ApiField("principal_type")
 	private String principalType;
@@ -68,7 +68,7 @@ public class AlipayFundWalletRefundModel extends AlipayObject {
 	private RefundBusinessExtend refundBusinessExtend;
 
 	/**
-	 * 提现策略
+	 * 提现策略，默认为原路退
 	 */
 	@ApiField("refund_strategy")
 	private String refundStrategy;

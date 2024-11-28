@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.charger.siteselection.create request
  * 
  * @author auto create
- * @since 1.0, 2024-09-13 22:02:10
+ * @since 1.0, 2024-11-28 13:22:21
  */
 public class AlipayCommerceTransportChargerSiteselectionCreateRequest implements AlipayRequest<AlipayCommerceTransportChargerSiteselectionCreateResponse> {
 

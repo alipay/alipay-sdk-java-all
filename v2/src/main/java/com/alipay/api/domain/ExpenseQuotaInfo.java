@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 额度信息
  *
  * @author auto create
- * @since 1.0, 2024-06-24 13:56:18
+ * @since 1.0, 2024-11-20 11:37:53
  */
 public class ExpenseQuotaInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3635258214458527673L;
+	private static final long serialVersionUID = 6414154971557731557L;
+
+	/**
+	 * 额度对应的币种
+	 */
+	@ApiField("currency")
+	private String currency;
 
 	/**
 	 * 额度失效时间
@@ -112,6 +118,13 @@ MEAL（工作餐）
 	 */
 	@ApiField("target_type")
 	private String targetType;
+
+	public String getCurrency() {
+		return this.currency;
+	}
+	public void setCurrency(String currency) {
+		this.currency = currency;
+	}
 
 	public Date getEffectiveEndDate() {
 		return this.effectiveEndDate;

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pay.app.pocketmoney.redpacket.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-19 17:27:20
+ * @since 1.0, 2024-11-27 11:17:17
  */
 public class AlipayPayAppPocketmoneyRedpacketBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4658741976386413277L;
+	private static final long serialVersionUID = 4475238234625942451L;
 
 	/** 
 	 * 红包详情list

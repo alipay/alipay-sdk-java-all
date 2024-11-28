@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 报销信息
  *
  * @author auto create
- * @since 1.0, 2023-10-13 10:00:44
+ * @since 1.0, 2024-11-27 15:32:49
  */
 public class InvoiceReimburseInfoOpenApiOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 8828433686916486789L;
+	private static final long serialVersionUID = 2675452733763382695L;
 
 	/**
 	 * 费用明细

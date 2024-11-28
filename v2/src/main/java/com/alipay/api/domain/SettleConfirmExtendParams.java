@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 确认结算接口扩展字段模型
  *
  * @author auto create
- * @since 1.0, 2021-11-26 17:20:00
+ * @since 1.0, 2024-11-22 11:04:34
  */
 public class SettleConfirmExtendParams extends AlipayObject {
 
-	private static final long serialVersionUID = 3632872551256772359L;
+	private static final long serialVersionUID = 1453549692353323869L;
 
 	/**
 	 * 是否进行资金冻结，用于后续分账，true表示冻结，false或不传表示不冻结

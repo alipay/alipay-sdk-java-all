@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudpromo.message.call.callback request
  * 
  * @author auto create
- * @since 1.0, 2024-11-13 11:42:19
+ * @since 1.0, 2024-11-25 17:42:17
  */
 public class AlipayCloudCloudpromoMessageCallCallbackRequest implements AlipayRequest<AlipayCloudCloudpromoMessageCallCallbackResponse> {
 

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.withholdrepayorder.trade.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-18 20:07:20
+ * @since 1.0, 2024-11-21 15:32:20
  */
 public class AlipayCommerceWithholdrepayorderTradeCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3777495687722395241L;
+	private static final long serialVersionUID = 5518251766857565678L;
 
 	/** 
 	 * 本次撤销触发的交易动作,接口调用成功且交易存在时返回。可能的返回值： close：交易未支付，触发关闭交易动作，无退款； refund：交易已支付，触发交易退款动作； 未返回：未查询到交易，或接口调用失败；
@@ -40,7 +40,7 @@ public class AlipayCommerceWithholdrepayorderTradeCancelResponse extends AlipayR
 	private String refundSettlementId;
 
 	/** 
-	 * 是否需要重试
+	 * 是否需要重试，Y为需要，N为不需要
 	 */
 	@ApiField("retry_flag")
 	private String retryFlag;

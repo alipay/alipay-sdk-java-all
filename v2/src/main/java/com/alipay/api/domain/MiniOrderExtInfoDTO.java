@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单扩展信息模型
  *
  * @author auto create
- * @since 1.0, 2024-10-21 11:32:51
+ * @since 1.0, 2024-11-26 13:18:04
  */
 public class MiniOrderExtInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2825928662277274654L;
+	private static final long serialVersionUID = 5784851859662795171L;
 
 	/**
 	 * 二方接入交易组件用于返佣计算的特殊参数，单位为元

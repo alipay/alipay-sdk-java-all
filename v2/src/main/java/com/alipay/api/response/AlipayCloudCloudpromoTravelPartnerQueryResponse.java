@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudpromo.travel.partner.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-09-14 17:22:10
+ * @since 1.0, 2024-11-26 10:49:36
  */
 public class AlipayCloudCloudpromoTravelPartnerQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4216983316825818693L;
+	private static final long serialVersionUID = 1596313183926919364L;
 
 	/** 
 	 * 伴游开启状态

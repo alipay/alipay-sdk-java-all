@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户绑定申请token
  *
  * @author auto create
- * @since 1.0, 2024-10-28 22:45:16
+ * @since 1.0, 2024-11-27 18:49:51
  */
 public class AlipayFundWalletTokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3655255493673293244L;
+	private static final long serialVersionUID = 8523266839787962673L;
 
 	/**
 	 * alipay.user.agreement.page.sign返回的代扣签约串
@@ -60,6 +60,12 @@ public class AlipayFundWalletTokenCreateModel extends AlipayObject {
 	private String identityType;
 
 	/**
+	 * 是否校验主体身份信息
+	 */
+	@ApiField("need_check_identity")
+	private Boolean needCheckIdentity;
+
+	/**
 	 * 外部业务号
 	 */
 	@ApiField("out_biz_no")
@@ -88,6 +94,12 @@ public class AlipayFundWalletTokenCreateModel extends AlipayObject {
 	 */
 	@ApiField("wallet_template_id")
 	private String walletTemplateId;
+
+	/**
+	 * 用户主体身份信息
+	 */
+	@ApiField("wallet_user_identity_info")
+	private WalletUserIdentityInfo walletUserIdentityInfo;
 
 	public String getAgreementPaySign() {
 		return this.agreementPaySign;
@@ -138,6 +150,13 @@ public class AlipayFundWalletTokenCreateModel extends AlipayObject {
 		this.identityType = identityType;
 	}
 
+	public Boolean getNeedCheckIdentity() {
+		return this.needCheckIdentity;
+	}
+	public void setNeedCheckIdentity(Boolean needCheckIdentity) {
+		this.needCheckIdentity = needCheckIdentity;
+	}
+
 	public String getOutBizNo() {
 		return this.outBizNo;
 	}
@@ -171,6 +190,13 @@ public class AlipayFundWalletTokenCreateModel extends AlipayObject {
 	}
 	public void setWalletTemplateId(String walletTemplateId) {
 		this.walletTemplateId = walletTemplateId;
+	}
+
+	public WalletUserIdentityInfo getWalletUserIdentityInfo() {
+		return this.walletUserIdentityInfo;
+	}
+	public void setWalletUserIdentityInfo(WalletUserIdentityInfo walletUserIdentityInfo) {
+		this.walletUserIdentityInfo = walletUserIdentityInfo;
 	}
 
 }

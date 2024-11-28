@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudpromo.mall.item.sync response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-12 11:52:05
+ * @since 1.0, 2024-11-26 10:49:42
  */
 public class AlipayCloudCloudpromoMallItemSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6562344128176814839L;
+	private static final long serialVersionUID = 6316654864375362214L;
 
 	/** 
 	 * 同步任务创建状态

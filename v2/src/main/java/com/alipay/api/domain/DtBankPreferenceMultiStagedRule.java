@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 多阶梯立减规则
  *
  * @author auto create
- * @since 1.0, 2023-06-26 09:58:16
+ * @since 1.0, 2024-11-22 14:11:56
  */
 public class DtBankPreferenceMultiStagedRule extends AlipayObject {
 
-	private static final long serialVersionUID = 7869936581464652185L;
+	private static final long serialVersionUID = 3831883862643833538L;
 
 	/**
 	 * 所有区间内最大立减优惠金额值，单位:分

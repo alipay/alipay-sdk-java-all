@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudpromo.ticket.order.sync response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-22 11:37:08
+ * @since 1.0, 2024-11-26 10:49:39
  */
 public class AlipayCloudCloudpromoTicketOrderSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5415522528651426473L;
+	private static final long serialVersionUID = 5593528241267511576L;
 
 	
 

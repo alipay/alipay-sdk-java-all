@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生态设备绑定
  *
  * @author auto create
- * @since 1.0, 2023-11-07 16:08:32
+ * @since 1.0, 2024-11-26 10:25:17
  */
 public class AlipayCommerceIotDeviceEcoBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7562159499618639584L;
+	private static final long serialVersionUID = 8249645531788239764L;
 
 	/**
 	 * 绑定类型，可选项[SUB_MERCHANT,DIRECT_MERCHANT]

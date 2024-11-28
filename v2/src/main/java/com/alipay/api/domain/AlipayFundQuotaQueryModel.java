@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 转账额度查询接口
  *
  * @author auto create
- * @since 1.0, 2024-06-17 13:49:42
+ * @since 1.0, 2024-11-27 11:58:10
  */
 public class AlipayFundQuotaQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2284273864833979279L;
+	private static final long serialVersionUID = 4351238982695369925L;
 
 	/**
 	 * 描述特定的业务场景，与实际转账场景一致，可传的参数如下： DIRECT_TRANSFER：单笔无密转账到支付宝，单笔无密转账到银行卡，现金红包; DEFAULT：使用alipay.fund.trans.toaccount.transfer转账到户场景

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.traas.cloudrisk.riskmetadata.sync response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-05 14:07:05
+ * @since 1.0, 2024-11-26 10:49:37
  */
 public class AlipayCloudTraasCloudriskRiskmetadataSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7166519586468292541L;
+	private static final long serialVersionUID = 6638246727289728824L;
 
 	
 

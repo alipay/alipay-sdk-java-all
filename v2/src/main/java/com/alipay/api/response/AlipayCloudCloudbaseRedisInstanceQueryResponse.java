@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.redis.instance.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-16 13:51:45
+ * @since 1.0, 2024-11-22 14:41:13
  */
 public class AlipayCloudCloudbaseRedisInstanceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7257734382984496796L;
+	private static final long serialVersionUID = 5631318367755816513L;
 
 	/** 
 	 * 实例列表

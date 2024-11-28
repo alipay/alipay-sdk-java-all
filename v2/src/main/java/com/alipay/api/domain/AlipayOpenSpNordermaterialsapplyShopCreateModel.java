@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenSpNordermaterialsapplyShopCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8496299547653829728L;
+	private static final long serialVersionUID = 7594891271115433115L;
 
 	/**
 	 * 创建申请单时，返回的申请单ID
@@ -32,7 +32,7 @@ public class AlipayOpenSpNordermaterialsapplyShopCreateModel extends AlipayObjec
 	private String city;
 
 	/**
-	 * 收货地址，用于后续接收物料的快递
+	 * 物料快递收货地址，用于后续接收物料的快递
 	 */
 	@ApiField("delivery_address")
 	private String deliveryAddress;

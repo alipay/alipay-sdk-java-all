@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁分账计划
  *
  * @author auto create
- * @since 1.0, 2024-11-18 17:44:54
+ * @since 1.0, 2024-11-26 17:36:17
  */
 public class RentRoyalty extends AlipayObject {
 
-	private static final long serialVersionUID = 6346671815578553396L;
+	private static final long serialVersionUID = 5871853171188341786L;
 
 	/**
 	 * 订单id
@@ -44,6 +44,12 @@ public class RentRoyalty extends AlipayObject {
 	private String currentBuyoutPrice;
 
 	/**
+	 * 商户订单号
+	 */
+	@ApiField("out_order_id")
+	private String outOrderId;
+
+	/**
 	 * 代表某一个阶段的第几期的还款计划，要结合stage进行锁定某一期计划
 	 */
 	@ApiField("period")
@@ -56,10 +62,16 @@ public class RentRoyalty extends AlipayObject {
 	private String royaltyAfterPrice;
 
 	/**
-	 * 分账履约方式
+	 * 分账履约方式。历史代偿分账，统一输出COMPENSATORY_ALLOC
 	 */
 	@ApiField("royalty_deliver_type")
 	private String royaltyDeliverType;
+
+	/**
+	 * 分账履约单号
+	 */
+	@ApiField("royalty_installment_no")
+	private String royaltyInstallmentNo;
 
 	/**
 	 * 分账金额，单位：元，精确到小数点后两位
@@ -138,6 +150,13 @@ public class RentRoyalty extends AlipayObject {
 		this.currentBuyoutPrice = currentBuyoutPrice;
 	}
 
+	public String getOutOrderId() {
+		return this.outOrderId;
+	}
+	public void setOutOrderId(String outOrderId) {
+		this.outOrderId = outOrderId;
+	}
+
 	public String getPeriod() {
 		return this.period;
 	}
@@ -157,6 +176,13 @@ public class RentRoyalty extends AlipayObject {
 	}
 	public void setRoyaltyDeliverType(String royaltyDeliverType) {
 		this.royaltyDeliverType = royaltyDeliverType;
+	}
+
+	public String getRoyaltyInstallmentNo() {
+		return this.royaltyInstallmentNo;
+	}
+	public void setRoyaltyInstallmentNo(String royaltyInstallmentNo) {
+		this.royaltyInstallmentNo = royaltyInstallmentNo;
 	}
 
 	public String getRoyaltyPrice() {

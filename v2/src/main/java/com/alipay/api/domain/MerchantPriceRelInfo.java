@@ -7,14 +7,16 @@ import com.alipay.api.internal.mapping.ApiField;
  * 安心付开通接口——价格关联key
  *
  * @author auto create
- * @since 1.0, 2024-10-25 11:06:54
+ * @since 1.0, 2024-11-27 15:37:19
  */
 public class MerchantPriceRelInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8857185538611885454L;
+	private static final long serialVersionUID = 5481485931265951318L;
 
 	/**
-	 * 安心付直联版后台产品code使用商家扣款（I1140100001000001000）、间联版不需要填
+	 * 安心付直联版后台产品code使用商家扣款（I1140100001000001000）、
+间联版不需要、
+安心付先享次卡需要（I1140300001000013424和I1140100001000001000）
 	 */
 	@ApiField("back_product_code")
 	private String backProductCode;

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序商品免审更新SKU
  *
  * @author auto create
- * @since 1.0, 2024-09-10 17:17:51
+ * @since 1.0, 2024-11-21 17:32:23
  */
 public class ItemDirectModifySku extends AlipayObject {
 
-	private static final long serialVersionUID = 3337641496758676137L;
+	private static final long serialVersionUID = 5769549557143765419L;
 
 	/**
 	 * sku原价，分为单位。
@@ -29,7 +29,7 @@ public class ItemDirectModifySku extends AlipayObject {
 	private String outSkuId;
 
 	/**
-	 * sku售价，分为单位
+	 * sku售价，分为单位，当更新商品为租赁套餐的商品时，售价字段不生效，需要填租赁套餐里的totalSalePrice代表商品售价
 	 */
 	@ApiField("sale_price")
 	private Long salePrice;
@@ -41,7 +41,7 @@ public class ItemDirectModifySku extends AlipayObject {
 	private String saleStatus;
 
 	/**
-	 * 商品sku属性
+	 * 商品sku属性，当更新商品是租赁套餐商品时，sku_attrs必须传rent_commodity租赁套餐属性
 	 */
 	@ApiListField("sku_attrs")
 	@ApiField("item_sku_attr_v_o")

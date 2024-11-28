@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEbppIndustryJobDailySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6471871321188557418L;
+	private static final long serialVersionUID = 5529545733113513528L;
 
 	/**
 	 * 学历要求
@@ -124,7 +124,7 @@ URL链接处理可以参考：<a href="https://opendocs.alipay.com/support/01rb1
 	private String partTimeMode;
 
 	/**
-	 * 薪资单位，单位：月、周、日
+	 * 薪资单位，单位：周、日、小时
 	 */
 	@ApiField("pay_period")
 	private String payPeriod;

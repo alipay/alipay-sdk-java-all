@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 大数据选址参数
  *
  * @author auto create
- * @since 1.0, 2024-09-13 22:01:17
+ * @since 1.0, 2024-11-28 13:18:19
  */
 public class SiteSelectionParam extends AlipayObject {
 
-	private static final long serialVersionUID = 2837492362143175335L;
+	private static final long serialVersionUID = 7212246268588912944L;
 
 	/**
 	 * 全国统一城市编码
@@ -23,19 +23,20 @@ public class SiteSelectionParam extends AlipayObject {
 	private String cityCode;
 
 	/**
-	 * 查询数据起始日期
+	 * 数据起始日期
 	 */
 	@ApiField("date_from")
 	private String dateFrom;
 
 	/**
-	 * 查询数据截止日期
+	 * 数据截止日期，请晚于起始日期
 	 */
 	@ApiField("date_to")
 	private String dateTo;
 
 	/**
-	 * H3坐标网格编码（编码为8级，六边形面积约为0.7373km2）
+	 * 1. H3坐标网格编码（编码为8级，六边形面积约为0.7373km2）
+2. 若为预测场站价格时，请传入场站编码
 	 */
 	@ApiListField("index_list")
 	@ApiField("string")

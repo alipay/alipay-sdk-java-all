@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.certification.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:34:59
+ * @since 1.0, 2024-11-26 16:07:16
  */
 public class ZhimaCreditEpCertificationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4243928743582158729L;
+	private static final long serialVersionUID = 2678444341967388766L;
 
 	/** 
 	 * 代理人提交认证时的扫脸时间
@@ -63,7 +63,7 @@ FAIL，代表用户未授权或授权失效
 	private List<String> certifyFailReasons;
 
 	/** 
-	 * 认证模式，取值如下：ATTORNEY代表代理人；LEGAL_PERSON代表法定代表人
+	 * 认证模式，取值如下：ATTORNEY代表代理人；LEGAL_PERSON代表法定代表人；STAFF代表人企；ENTERPRISE 企业
 	 */
 	@ApiField("certify_mode")
 	private String certifyMode;
@@ -143,6 +143,12 @@ FAIL，代表失败
 	 */
 	@ApiField("li_xin_ep")
 	private Boolean liXinEp;
+
+	/** 
+	 * 用户授权手机号返回
+	 */
+	@ApiField("mobile_phone")
+	private String mobilePhone;
 
 	/** 
 	 * 个人用户姓名，字段auth_status为SUCCESS时返回
@@ -288,6 +294,13 @@ FAIL，代表失败
 	}
 	public Boolean getLiXinEp( ) {
 		return this.liXinEp;
+	}
+
+	public void setMobilePhone(String mobilePhone) {
+		this.mobilePhone = mobilePhone;
+	}
+	public String getMobilePhone( ) {
+		return this.mobilePhone;
 	}
 
 	public void setUserName(String userName) {

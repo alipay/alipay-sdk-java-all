@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 智能语音呼叫用户信息
  *
  * @author auto create
- * @since 1.0, 2024-11-13 11:35:26
+ * @since 1.0, 2024-11-25 17:40:41
  */
 public class CallUserInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5526383529282479747L;
+	private static final long serialVersionUID = 6768699994856221282L;
 
 	/**
 	 * 触达类型为AI_CALL时，逾期金额为必填项
@@ -26,10 +26,22 @@ public class CallUserInfo extends AlipayObject {
 	private String customerName;
 
 	/**
+	 * 订单编号
+	 */
+	@ApiField("order_code")
+	private String orderCode;
+
+	/**
 	 * 触达用户电话号
 	 */
 	@ApiField("phone_number")
 	private String phoneNumber;
+
+	/**
+	 * 短信信息中嵌入的链接
+	 */
+	@ApiField("sign_url")
+	private String signUrl;
 
 	public String getAmountOverdue() {
 		return this.amountOverdue;
@@ -45,11 +57,25 @@ public class CallUserInfo extends AlipayObject {
 		this.customerName = customerName;
 	}
 
+	public String getOrderCode() {
+		return this.orderCode;
+	}
+	public void setOrderCode(String orderCode) {
+		this.orderCode = orderCode;
+	}
+
 	public String getPhoneNumber() {
 		return this.phoneNumber;
 	}
 	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
+	}
+
+	public String getSignUrl() {
+		return this.signUrl;
+	}
+	public void setSignUrl(String signUrl) {
+		this.signUrl = signUrl;
 	}
 
 }

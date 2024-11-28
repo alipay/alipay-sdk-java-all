@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.resourcepackage.itempackage.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-03 16:51:50
+ * @since 1.0, 2024-11-22 14:41:13
  */
 public class AlipayCloudCloudbaseResourcepackageItempackageQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8175259226924735613L;
+	private static final long serialVersionUID = 6153985799796183298L;
 
 	/** 
 	 * 单项资源包列表信息

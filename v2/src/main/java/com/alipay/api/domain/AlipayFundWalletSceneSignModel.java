@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 个人用户开通场景钱包
  *
  * @author auto create
- * @since 1.0, 2024-10-28 22:59:15
+ * @since 1.0, 2024-11-27 18:49:49
  */
 public class AlipayFundWalletSceneSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5497744766855455858L;
+	private static final long serialVersionUID = 1739716751649348662L;
 
 	/**
 	 * 钱包业务的场景码
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
+
+	/**
+	 * 是否校验主体身份信息  传入：true/false
+	 */
+	@ApiField("need_check_identity")
+	private Boolean needCheckIdentity;
 
 	/**
 	 * 外部业务号
@@ -55,11 +61,24 @@ public class AlipayFundWalletSceneSignModel extends AlipayObject {
 	@ApiField("wallet_template_id")
 	private String walletTemplateId;
 
+	/**
+	 * 用户主体身份信息
+	 */
+	@ApiField("wallet_user_identity_info")
+	private WalletUserIdentityInfo walletUserIdentityInfo;
+
 	public String getBizScene() {
 		return this.bizScene;
 	}
 	public void setBizScene(String bizScene) {
 		this.bizScene = bizScene;
+	}
+
+	public Boolean getNeedCheckIdentity() {
+		return this.needCheckIdentity;
+	}
+	public void setNeedCheckIdentity(Boolean needCheckIdentity) {
+		this.needCheckIdentity = needCheckIdentity;
 	}
 
 	public String getOutBizNo() {
@@ -102,6 +121,13 @@ public class AlipayFundWalletSceneSignModel extends AlipayObject {
 	}
 	public void setWalletTemplateId(String walletTemplateId) {
 		this.walletTemplateId = walletTemplateId;
+	}
+
+	public WalletUserIdentityInfo getWalletUserIdentityInfo() {
+		return this.walletUserIdentityInfo;
+	}
+	public void setWalletUserIdentityInfo(WalletUserIdentityInfo walletUserIdentityInfo) {
+		this.walletUserIdentityInfo = walletUserIdentityInfo;
 	}
 
 }

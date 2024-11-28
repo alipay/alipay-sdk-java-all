@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntSignFileResult extends AlipayObject {
 
-	private static final long serialVersionUID = 8822836948276218715L;
+	private static final long serialVersionUID = 6673849861732253618L;
 
 	/**
 	 * 文件id

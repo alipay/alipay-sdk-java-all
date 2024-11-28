@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.market.student.apply request
  * 
  * @author auto create
- * @since 1.0, 2024-03-25 13:52:01
+ * @since 1.0, 2024-11-22 09:21:25
  */
 public class AlipayCloudCloudbaseMarketStudentApplyRequest implements AlipayRequest<AlipayCloudCloudbaseMarketStudentApplyResponse> {
 

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEbppIndustryPerformOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5853734482923699386L;
+	private static final long serialVersionUID = 6472189145975915281L;
 
 	/**
 	 * 通过支付宝收银台支付的资产详情，主要包括该笔订单的资产类型、资产金额、资产协议、支付描述等
