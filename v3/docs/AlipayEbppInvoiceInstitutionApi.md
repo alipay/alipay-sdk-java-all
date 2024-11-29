@@ -15,7 +15,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 制度新增
 
-制度新增，包含制度下使用规则列表和发放规则列表的新增。
+制度新增，包含制度下使用规则列表、发放规则列表和适用范围的新增。
 
 ### Example
 ```java

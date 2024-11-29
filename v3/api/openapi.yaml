@@ -2,10 +2,10 @@ openapi: 3.0.3
 info:
   contact:
     name: 开放平台文档中心
-    url: https://openhome.alipay.com/developmentDocument.htm
+    url: https://opendocs.alipay.com/open-v3/053sd1
   description: 支付宝开放平台v3协议文档
   title: 支付宝开放平台API
-  version: 2024-11-12
+  version: 2024-11-29
 servers:
 - description: Production server
   url: https://openapi.alipay.com
@@ -2347,7 +2347,7 @@ paths:
         2、等待一段时间后，使用file_id查询alipay.data.bill.ereceipt.query申请信息。 单个申请建议每5分钟查询一次状态。汇总回单建议30分钟查询一次
       operationId: alipay.data.bill.accountbookereceipt.query
       parameters:
-      - description: 根据申请id查询状态
+      - description: 根据申请id查询状态。申请接口可以参考alipay.data.bill.ereceiptagent.apply
         explode: true
         in: query
         name: file_id
@@ -2356,13 +2356,22 @@ paths:
           example: "12345"
           type: string
         style: form
-      - description: 协议号
+      - description: 协议号，根据不同业务协议类型，传入对应类型的协议号，用于isv授权检查并获取商户信息。如果业务类型未指定，则使用默认类型对应的协议号。
         explode: true
         in: query
         name: agreement_no
         required: false
         schema:
           example: "20205215001418078112"
+          type: string
+        style: form
+      - description: 根据不同业务协议类型，传入不同参数。传入协议产品码（personal_product_code，通过协议查询接口、协议签约通知响应参数获取），不填的话默认按照示例值传入
+        explode: true
+        in: query
+        name: agreement_type
+        required: false
+        schema:
+          example: FUND_SAFT_SIGN_WITHHOLDING_P
           type: string
         style: form
       responses:
@@ -2671,6 +2680,16 @@ paths:
         required: false
         schema:
           example: "2000"
+          type: string
+        style: form
+      - description: 根据不同业务协议类型，传入不同参数。传入协议产品码（personal_product_code，通过协议查询接口、协议签约通知响应参数获取），不填的话默认按照示例值传入。
+          安全发协议：FUND_SAFT_SIGN_WITHHOLDING_P 专用金协议：FLEXIBLE_EMPLOYMENT_SERVICE_P
+        explode: true
+        in: query
+        name: agreement_type
+        required: false
+        schema:
+          example: FUND_SAFT_SIGN_WITHHOLDING_P
           type: string
         style: form
       - description: ISV与商户授权协议号
@@ -3230,22 +3249,22 @@ paths:
       description: 用于获取指定商家指定推广页的留资数据，注意调用频次小于20qps
       operationId: alipay.data.dataservice.ad.promotepage.download
       parameters:
-      - description: 留资开始日期，格式：yyyy-mm-dd，不能早于30天前
+      - description: 留资开始日期，格式：yyyy-mm-dd 或 yyyy-mm-dd hh:mm:ss;不能早于30天前
         explode: true
         in: query
         name: start_date
         required: false
         schema:
-          example: 2020-12-12
+          example: 2020-12-12 00:00:00
           type: string
         style: form
-      - description: 留资结束日期，格式：yyyy-mm-dd；不能晚于当天
+      - description: 留资结束日期，格式：yyyy-mm-dd 或 yyyy-mm-dd hh:mm:ss;不能晚于当天
         explode: true
         in: query
         name: end_date
         required: false
         schema:
-          example: 2020-12-13
+          example: 2020-12-13 23:59:59
           type: string
         style: form
       - description: 分页参数之页数，从1开始
@@ -5199,7 +5218,7 @@ paths:
       x-accepts: application/json
   /v3/alipay/ebpp/invoice/institution/create:
     post:
-      description: 制度新增，包含制度下使用规则列表和发放规则列表的新增。
+      description: 制度新增，包含制度下使用规则列表、发放规则列表和适用范围的新增。
       operationId: alipay.ebpp.invoice.institution.create
       requestBody:
         content:
@@ -18333,7 +18352,7 @@ paths:
       x-accepts: application/json
   /v3/alipay/open/mini/qrcode/bind:
     post:
-      description: 商户可不需更换线下二维码，通过该接口完成配置后，用户用支付宝扫描普通二维码时打开小程序并跳转到指定页面，普通二维码关联小程序最多可设置20条规则。
+      description: 商户可不需更换线下二维码，通过该接口完成配置后，用户用支付宝扫描普通二维码时打开小程序并跳转到指定页面，普通二维码关联小程序最多可设置100条规则。
       operationId: alipay.open.mini.qrcode.bind
       requestBody:
         content:
@@ -19234,9 +19253,9 @@ paths:
       description: 根据状态、端分页查询小程序版本基础信息列表，查询结果根据版本号大小降序排列，即0.0.2在前，0.0.1在后。
       operationId: alipay.open.mini.version.list.query
       parameters:
-      - description: "端参数，用于查询多端版本，不传默认为支付宝端。。常见支持如下客户端：\tcom.alipay.alipaywallet：\
-          支付宝端；\tcom.alibaba.android.rimet：DINGDING端；\tcom.amap.app：高德端；\tcom.alibaba.ailabs.genie.webapps：\
-          天猫精灵端；\tcom.alipay.iot.xpaas：支付宝IoT端。\t如需更多端投放，请联系业务BD。"
+      - description: 端参数，用于查询多端版本，不传默认为支付宝端。如需查看小程序版本信息，则为必传。常见支持如下客户端： com.alipay.alipaywallet：支付宝端；
+          com.alibaba.android.rimet：DINGDING端； com.amap.app：高德端； com.alibaba.ailabs.genie.webapps：天猫精灵端；
+          com.alipay.iot.xpaas：支付宝IoT端。 如需更多端投放，请联系业务BD。
         explode: true
         in: query
         name: bundle_id
@@ -19245,7 +19264,7 @@ paths:
           example: com.alipay.alipaywallet
           type: string
         style: form
-      - description: "版本状态列表，用英文逗号\",\"分割，可选；不填默认不返回。"
+      - description: "版本状态列表，用英文逗号\",\"分割，可选；不填默认不返回。如需查看小程序版本信息，则为必传。"
         explode: true
         in: query
         name: version_status
@@ -19533,6 +19552,213 @@ paths:
       tags:
       - alipay.open.mini.widget.goods
       x-content-type: application/json
+      x-accepts: application/json
+  /v3/alipay/open/operation/openbizmock/delete/query:
+    delete:
+      description: 测试delete类型接口
+      operationId: alipay.open.operation.openbizmock.delete.query
+      parameters:
+      - description: 纬度
+        explode: true
+        in: query
+        name: b_query
+        required: false
+        schema:
+          example: test
+          type: string
+        style: form
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AlipayOpenOperationOpenbizmockDeleteQueryResponseModel'
+          description: common response
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/alipay_open_operation_openbizmock_delete_query_default_response'
+          description: 请求失败
+      summary: 测试delete类型接口
+      tags:
+      - alipay.open.operation.openbizmock.delete
+      x-accepts: application/json
+  /v3/alipay/open/operation/openbizmock/patch/query:
+    patch:
+      description: patch类型接口测试
+      operationId: alipay.open.operation.openbizmock.patch.query
+      parameters:
+      - description: test2222
+        explode: true
+        in: query
+        name: b_query
+        required: false
+        schema:
+          example: test
+          type: string
+        style: form
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AlipayOpenOperationOpenbizmockPatchQueryModel'
+        required: false
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AlipayOpenOperationOpenbizmockPatchQueryResponseModel'
+          description: common response
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/alipay_open_operation_openbizmock_patch_query_default_response'
+          description: 请求失败
+      summary: patch类型接口测试
+      tags:
+      - alipay.open.operation.openbizmock.patch
+      x-content-type: application/json
+      x-accepts: application/json
+  /v3/alipay/open/operation/openbizmock/put/query:
+    put:
+      description: test
+      operationId: alipay.open.operation.openbizmock.put.query
+      parameters:
+      - description: test
+        explode: true
+        in: query
+        name: b_query
+        required: false
+        schema:
+          example: test
+          type: string
+        style: form
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AlipayOpenOperationOpenbizmockPutQueryModel'
+        required: false
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AlipayOpenOperationOpenbizmockPutQueryResponseModel'
+          description: common response
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/alipay_open_operation_openbizmock_put_query_default_response'
+          description: 请求失败
+      summary: 测试put类型接口
+      tags:
+      - alipay.open.operation.openbizmock.put
+      x-content-type: application/json
+      x-accepts: application/json
+  /v3/alipay/open/operation/openbizmock/test/query:
+    post:
+      description: 哈哈
+      operationId: alipay.open.operation.openbizmock.test.query
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AlipayOpenOperationOpenbizmockTestQueryModel'
+        required: false
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AlipayOpenOperationOpenbizmockTestQueryResponseModel'
+          description: common response
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/alipay_open_operation_openbizmock_test_query_default_response'
+          description: 请求失败
+      summary: 测试openpai的openid自动补偿哈哈
+      tags:
+      - alipay.open.operation.openbizmock.test
+      x-content-type: application/json
+      x-accepts: application/json
+  /v3/alipay/open/operation/openbizmock/testpathkey/query/{keykey}/{a}:
+    post:
+      description: 测试网关协议3.0key和path
+      operationId: alipay.open.operation.openbizmock.testpathkey.query
+      parameters:
+      - description: ceshi
+        explode: false
+        in: path
+        name: keykey
+        required: true
+        schema:
+          example: keykey
+          type: string
+        style: simple
+      - description: 测试
+        explode: false
+        in: path
+        name: a
+        required: true
+        schema:
+          example: a
+          type: string
+        style: simple
+      - description: ceshi
+        explode: true
+        in: query
+        name: b
+        required: false
+        schema:
+          example: b
+          type: string
+        style: form
+      - description: 测试
+        explode: true
+        in: query
+        name: c
+        required: false
+        schema:
+          example: c
+          type: string
+        style: form
+      requestBody:
+        content:
+          multipart/form-data:
+            encoding:
+              data:
+                contentType: application/json
+                style: form
+              f:
+                contentType: '*/*'
+                style: form
+            schema:
+              $ref: '#/components/schemas/alipay_open_operation_openbizmock_testpathkey_query_request'
+        required: false
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AlipayOpenOperationOpenbizmockTestpathkeyQueryResponseModel'
+          description: common response
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/alipay_open_operation_openbizmock_testpathkey_query_default_response'
+          description: 请求失败
+      summary: 测试网关协议3.0key和path
+      tags:
+      - alipay.open.operation.openbizmock.testpathkey
+      x-content-type: multipart/form-data
       x-accepts: application/json
   /v3/alipay/open/public/account/create:
     post:
@@ -32717,6 +32943,11 @@ components:
           description: ISV与商户签约授权协议号
           example: "20200826170801"
           type: string
+        agreement_type:
+          description: 根据不同业务协议类型，传入不同参数。传入协议产品码（personal_product_code，通过协议查询接口、协议签约通知响应参数获取），不填的话默认按照示例值传入。
+            安全发协议：FUND_SAFT_SIGN_WITHHOLDING_P 专用金协议：FLEXIBLE_EMPLOYMENT_SERVICE_P
+          example: FUND_SAFT_SIGN_WITHHOLDING_P
+          type: string
         end_time:
           description: "查询时间区间的结束时间，属于闭区间。\t[start_time,end_time]"
           example: 2023-11-08 00:00:00
@@ -35289,7 +35520,7 @@ components:
           type: integer
         quota_id_list:
           description: 额度ID列表
-          example: "[\"2021062xxx\"]"
+          example: "[\"2024103100152611410000000061\"]"
           items:
             type: string
           type: array
@@ -36157,6 +36388,10 @@ components:
           description: 费控咨询模式，默认为0。
           example: "0"
           type: string
+        currency:
+          description: 该字段用于管控制度下发放的资产币种，不填写默认为人民币，设置该字段后，制度下手工发放的资产币种均为设置值。
+          example: USD
+          type: string
         effective_end_date:
           description: 制度生效结束时间
           example: 2022-09-30 23:59:59
@@ -36207,7 +36442,8 @@ components:
           example: ENTERPRISE_PAY_UID
           type: string
         scene_type:
-          description: 因公场景
+          deprecated: true
+          description: 因公场景(该字段将废弃，不建议使用)
           example: OVERTIME
           type: string
         standard_info_list:
@@ -36291,6 +36527,10 @@ components:
         consult_mode:
           description: 费控咨询模式
           example: "0"
+          type: string
+        currency:
+          description: 制度下可发放币种
+          example: USD
           type: string
         effective:
           description: 制度启用停用状态
@@ -36920,7 +37160,7 @@ components:
           example: 0b26c12b16950007742372557ee431
           type: string
         quota_type:
-          description: 额度类型，枚举：COUPON（点券）、CAP（余额）、ISV（外算额度）
+          description: 额度类型，枚举：COUPON（点券）、CAP（余额）
           example: COUPON
           type: string
         share_mode:
@@ -39699,6 +39939,10 @@ components:
           description: 该参数废弃
           example: "1"
           type: string
+        serivce_url:
+          description: 提供用户查看停车状态、缴费功能
+          example: alipays://platformapi/startapp
+          type: string
         service_list:
           description: 停车场服务信息列表
           items:
@@ -39843,6 +40087,10 @@ components:
         province_id:
           description: 省份编码
           example: "110000"
+          type: string
+        serivce_url:
+          description: 提供用户查看停车状态、缴费功能
+          example: alipays://platformapi/startapp
           type: string
         service_list:
           description: 停车场服务信息列表
@@ -40063,6 +40311,10 @@ components:
         payment_mode:
           description: 该参数废弃
           example: "1"
+          type: string
+        serivce_url:
+          description: 提供用户查看停车状态、缴费功能
+          example: alipays://platformapi/startapp
           type: string
         service_list:
           description: 停车场场内服务信息
@@ -43645,6 +43897,7 @@ components:
           - EXCEED_LIMIT_MM_AMOUNT
           - PERM_RECEIVE_CUSTOMER_ALMS_LIMIT
           - PERM_PAY_CUSTOMER_MONTH_QUOTA_ORG_BALANCE_LIMIT
+          - OPENAPI_VERSION_TOO_OLD
           type: string
         links:
           description: 解决方案链接
@@ -60496,7 +60749,7 @@ components:
     AlipayOpenMiniVersionListQueryResponseModel:
       properties:
         app_version_infos:
-          description: 版本列表，根据版本号倒叙排列，即版本号大的在前面；如果不存在任何版本，返回空列表
+          description: 版本列表，根据版本号倒叙排列，最多呈现最近 20 条。即版本号大的在前面；如果不存在任何版本，返回空列表。
           items:
             $ref: '#/components/schemas/AppVersionInfo'
           type: array
@@ -60994,6 +61247,198 @@ components:
         commit_id:
           description: 商品提交生成的唯一标识，用于查询商品信息的审核状态
           example: "20220829000000000101"
+          type: string
+      type: object
+    AlipayOpenOperationOpenbizmockDeleteQueryErrorResponseModel:
+      properties:
+        code:
+          description: 错误码
+          enum:
+          - SYSTEM_ERROR
+          type: string
+        links:
+          description: 解决方案链接
+          type: string
+        message:
+          description: 错误描述
+          type: string
+      required:
+      - code
+      - message
+      type: object
+    AlipayOpenOperationOpenbizmockDeleteQueryResponseModel:
+      properties:
+        result:
+          description: test
+          example: test
+          type: string
+      type: object
+    AlipayOpenOperationOpenbizmockPatchQueryErrorResponseModel:
+      properties:
+        code:
+          description: 错误码
+          enum:
+          - SYSTEM_ERROR
+          - INVALID_PARAMETER
+          type: string
+        links:
+          description: 解决方案链接
+          type: string
+        message:
+          description: 错误描述
+          type: string
+      required:
+      - code
+      - message
+      type: object
+    AlipayOpenOperationOpenbizmockPatchQueryModel:
+      properties:
+        c_body:
+          description: test
+          example: test
+          type: string
+        complex_a:
+          $ref: '#/components/schemas/TestDemo'
+        complex_b:
+          $ref: '#/components/schemas/TestDemo'
+        complex_c:
+          $ref: '#/components/schemas/TestDemoWzw'
+        complex_d:
+          $ref: '#/components/schemas/TestDemoWzw'
+        id_type_modify_open_id:
+          description: "1"
+          example: "1"
+          type: string
+        id_typea:
+          description: id_type
+          example: id_type
+          type: string
+        price:
+          description: 元
+          example: "1.21"
+          type: string
+        uida:
+          description: "1"
+          example: "1"
+          type: string
+      type: object
+    AlipayOpenOperationOpenbizmockPatchQueryResponseModel:
+      properties:
+        result:
+          description: test
+          example: test
+          type: string
+      type: object
+    AlipayOpenOperationOpenbizmockPutQueryErrorResponseModel:
+      properties:
+        code:
+          description: 错误码
+          enum:
+          - SYSTEM_ERROR
+          type: string
+        links:
+          description: 解决方案链接
+          type: string
+        message:
+          description: 错误描述
+          type: string
+      required:
+      - code
+      - message
+      type: object
+    AlipayOpenOperationOpenbizmockPutQueryModel:
+      properties:
+        c_body:
+          description: test
+          example: test
+          type: string
+      type: object
+    AlipayOpenOperationOpenbizmockPutQueryResponseModel:
+      properties:
+        result:
+          description: test
+          example: test
+          type: string
+      type: object
+    AlipayOpenOperationOpenbizmockTestQueryErrorResponseModel:
+      properties:
+        code:
+          description: 错误码
+          enum:
+          - SYSTEM_ERROR
+          type: string
+        links:
+          description: 解决方案链接
+          type: string
+        message:
+          description: 错误描述
+          type: string
+      required:
+      - code
+      - message
+      type: object
+    AlipayOpenOperationOpenbizmockTestQueryModel:
+      properties:
+        fuza:
+          $ref: '#/components/schemas/TestDemoWzw'
+        out_open_id:
+          description: 哈哈
+          example: 074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5
+          type: string
+        u_test:
+          description: 哈哈
+          example: test
+          type: string
+      type: object
+    AlipayOpenOperationOpenbizmockTestQueryResponseModel:
+      properties:
+        out_open_id:
+          description: 哈哈
+          example: 074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5
+          type: string
+        out_test:
+          description: 哈哈
+          example: test
+          type: string
+      type: object
+    AlipayOpenOperationOpenbizmockTestpathkeyQueryErrorResponseModel:
+      properties:
+        code:
+          description: 错误码
+          enum:
+          - LALALA
+          - INVALID_PARAMETER
+          type: string
+        links:
+          description: 解决方案链接
+          type: string
+        message:
+          description: 错误描述
+          type: string
+      required:
+      - code
+      - message
+      type: object
+    AlipayOpenOperationOpenbizmockTestpathkeyQueryModel:
+      properties:
+        d:
+          description: "4"
+          example: d
+          type: string
+        e:
+          description: "1"
+          example: "1"
+          type: string
+        test_price:
+          description: "1"
+          example: "18.1111"
+          type: string
+      type: object
+    AlipayOpenOperationOpenbizmockTestpathkeyQueryResponseModel:
+      properties:
+        result:
+          description: 测试
+          example: success
           type: string
       type: object
     AlipayOpenPublicAccountCreateErrorResponseModel:
@@ -69072,6 +69517,7 @@ components:
           - ACQ.SETTLE_SCENE_NOT_SUPPORT
           - ACQ.ALLOC_REFUSE_BEFORE_SETTLE
           - ACQ.ALLOC_REFUSE_AFTER_REFUND
+          - ACQ.ALREADY_FINISH_ALLOC
           type: string
         links:
           description: 解决方案链接
@@ -70877,6 +71323,7 @@ components:
           - ACQ.SETTLE_SCENE_NOT_SUPPORT
           - ACQ.INVALID_STORE_ID
           - ACQ.SETTLE_ACCOUNT_INVALID
+          - ACQ.UN_SUPPORT_BIZ_TYPE
           type: string
         links:
           description: 解决方案链接
@@ -75233,7 +75680,7 @@ components:
           description: 当前规则可用的资产来源类型，搭配source_id_list使用。
           type: string
         source_id_list:
-          description: 资产共享来源id列表，与share_mode配合设置
+          description: 资产共享来源id列表，与share_mode配合设置，如果share_mode为INSTITUTION，该值则填写制度id列表
           items:
             type: string
           type: array
@@ -75315,8 +75762,7 @@ components:
           description: 营业执照名称，需要与营业执照保持一致
           type: string
         license_no:
-          description: 营业执照号，部分小程序类目需要提交，参照 <a href=‘https://opendocs.alipay.com/b/03al2m’>开放服务类目</a>
-            中是否需要营业执照信息，如果不填默认采用当前小程序应用营业执照号。
+          description: 营业执照号，部分小程序类目需要提交，参照https://docs.alipay.com/isv/10325中是否需要营业执照信息，如果不填默认采用当前小程序应用营业执照号。
           type: string
         license_pic_list:
           description: 营业执照照片地址列表
@@ -75327,8 +75773,7 @@ components:
           description: 营业执有效期，格式为yyyy-MM-dd，9999-12-31表示长期
           type: string
         out_door_pic:
-          description: 门头照图片地址，部分小程序类目需要提交，参照 <a href=‘https://opendocs.alipay.com/b/03al2m’>开放服务类目</a>
-            中是否需要营业执照信息，如果不填默认采用当前小程序门头照图片
+          description: 门头照图片地址，部分小程序类目需要提交，参照https://docs.alipay.com/isv/10325中是否需要营业执照信息，如果不填默认采用当前小程序门头照图片
           type: string
       type: object
     AuthApiDTO:
@@ -75821,7 +76266,7 @@ components:
           type: string
         batch_type:
           description: 是否批量转账
-          example: "true"
+          example: BATCH
           type: string
         biz_type:
           description: 业务类型
@@ -75848,8 +76293,8 @@ components:
           example: 备注
           type: string
         no_mbill_encrypt:
-          description: 是否脱敏
-          example: "true"
+          description: 是否脱敏。非空就是不脱敏，空就是脱敏。脱敏规则根据发生的业务定义
+          example: "Y"
           type: string
         order_id:
           description: 业务订单号
@@ -75901,18 +76346,18 @@ components:
           type: string
         show_detail:
           description: 是否展示细节，默认为true
-          example: "true"
+          example: '"true"'
           type: string
         show_voucher:
           description: 是否出示凭证
-          example: "true"
+          example: '"true"'
           type: string
         source:
           description: 数据来源
           example: bizfund
           type: string
         status:
-          description: 单据状态
+          description: 订单状态
           example: SUCCESS
           type: string
         status_desc:
@@ -79822,6 +80267,10 @@ components:
       type: object
     ExpenseQuotaInfo:
       properties:
+        currency:
+          description: 额度对应的币种
+          example: USD
+          type: string
         effective_end_date:
           description: 额度失效时间
           example: 2021-10-01 00:00:00
@@ -80936,6 +81385,10 @@ components:
         consult_mode:
           description: 费控咨询模式
           example: "0"
+          type: string
+        currency:
+          description: 制度可发放资产币种
+          example: USD
           type: string
         effective:
           description: 制度是否启用
@@ -85549,7 +86002,7 @@ components:
         identity_type:
           description: "参与方的标识类型，目前支持如下类型：\t1、ALIPAY_USER_ID 支付宝的会员ID\t2、ALIPAY_LOGON_ID：\
             支付宝登录号，支持邮箱和手机号格式\t3、ALIPAY_OPEN_ID：支付宝openid\t4、EXPRESS_DC_STFA：对公快捷银\
-            行卡\t5、BANKCARD_ACCOUNT:银行卡账号"
+            行卡"
           type: string
         merchant_user_info:
           description: "商户端的用户信息描述，目前可指定如下属性：\r\tmerchant_user_id：商户端的用户唯一ID\r\tmerchant_user_name：\
@@ -85894,6 +86347,8 @@ components:
             日期。例如1月3日到2月3日为一个自然月，1月3日到4月3日为三个自然月。注意周期类型使用MONTH的时候，计划扣款时间execute_time不\
             允许传28日之后的日期（可以传28日），以此避免有些月份可能不存在对应日期的情况。"
           type: string
+        scene_rule_params:
+          $ref: '#/components/schemas/SceneRuleParams'
         single_amount:
           description: 单次扣款最大金额single_amount是周期扣款产品必填，即每次发起扣款时限制的最大金额，单位为元。商户每次发起扣款都不允许大于此金额。
           type: string
@@ -87397,6 +87852,15 @@ components:
         scene_id:
           description: 场景Id，最长32位，英文字母、数字以及下划线，开发者自定义
           example: "1234"
+          type: string
+      type: object
+    SceneRuleParams:
+      properties:
+        discount_period:
+          description: 在周期扣场景化模板中配置优惠类型为优惠期玩法时需要该参数，表示后续有多少期扣款可享受优惠，值为自然数代表周期
+          type: string
+        low_price_period:
+          description: 在周期扣场景化模板中配置优惠类型为低价玩法时需要该参数，表示代扣低价期持续的时间。单位是天，该值为自然数
           type: string
       type: object
     SchoolBaseInfo:
@@ -89415,8 +89879,10 @@ components:
           description: 费控条件名称
           type: string
         rule_operator:
+          deprecated: true
           description: "费控条件操作符 枚举值： LT(\"<\",\"小于\") LE(\"<=\",\"小于等于\") EQ(\"=\"\
-            ,\"等于\") NE(\"!=\",\"不等于\") GE(\">=\",\"大于等于\") GT(\">\",\"大于\")"
+            ,\"等于\") NE(\"!=\",\"不等于\") GE(\">=\",\"大于等于\") GT(\">\",\"大于\")(该字段为保\
+            留字段，目前未被使用)"
           type: string
         rule_value:
           description: 费控条件值
@@ -89444,7 +89910,7 @@ components:
             额为准，用完为止。否则只受规则里的限额和企业账户资金上限管控；"
           type: string
         expense_type_sub_category:
-          description: 费用类型子类，当制度的费用类型为MEAL时，支持到店、外卖；当费用类型为非MEAL时，与费用类型保持一致
+          description: 费用类型子类
           type: string
         open_rule_id:
           description: 开票规则id，可通过接口alipay.ebpp.invoice.enterpriseconsume.enterpriseopenrule.create
@@ -90083,6 +90549,65 @@ components:
         mini_app_id:
           description: 商家小程序appId
           example: "2018011111111111"
+          type: string
+      type: object
+    TestDemo:
+      properties:
+        a_open_id:
+          description: "1"
+          type: string
+        a_uid:
+          description: "1"
+          type: string
+        date_a:
+          description: test
+          items:
+            type: string
+          type: array
+        open_id:
+          deprecated: true
+          description: test(test废弃字段测试)
+          type: string
+        price_a:
+          description: test
+          items:
+            type: string
+          type: array
+        string_a:
+          description: test
+          items:
+            type: string
+          type: array
+        string_yingshe:
+          description: ttes
+          type: string
+        string_yingshe_1_open_id:
+          description: test
+          type: string
+        string_yingshe_2_openid:
+          description: test
+          type: string
+        uid:
+          deprecated: true
+          description: test(test废弃字段测试)
+          type: string
+      type: object
+    TestDemoWzw:
+      properties:
+        aaopen_id:
+          description: 哈哈
+          type: string
+        aauids:
+          description: 哈哈
+          type: string
+        id_type:
+          description: 哈哈
+          type: string
+        oid_open_id:
+          description: 哈哈
+          type: string
+        uid:
+          description: 哈哈
           type: string
       type: object
     Text:
@@ -97272,6 +97797,34 @@ components:
       anyOf:
       - $ref: '#/components/schemas/CommonErrorType'
       - $ref: '#/components/schemas/AlipayOpenMiniWidgetGoodsUploadErrorResponseModel'
+    alipay_open_operation_openbizmock_delete_query_default_response:
+      anyOf:
+      - $ref: '#/components/schemas/CommonErrorType'
+      - $ref: '#/components/schemas/AlipayOpenOperationOpenbizmockDeleteQueryErrorResponseModel'
+    alipay_open_operation_openbizmock_patch_query_default_response:
+      anyOf:
+      - $ref: '#/components/schemas/CommonErrorType'
+      - $ref: '#/components/schemas/AlipayOpenOperationOpenbizmockPatchQueryErrorResponseModel'
+    alipay_open_operation_openbizmock_put_query_default_response:
+      anyOf:
+      - $ref: '#/components/schemas/CommonErrorType'
+      - $ref: '#/components/schemas/AlipayOpenOperationOpenbizmockPutQueryErrorResponseModel'
+    alipay_open_operation_openbizmock_test_query_default_response:
+      anyOf:
+      - $ref: '#/components/schemas/CommonErrorType'
+      - $ref: '#/components/schemas/AlipayOpenOperationOpenbizmockTestQueryErrorResponseModel'
+    alipay_open_operation_openbizmock_testpathkey_query_request:
+      properties:
+        data:
+          $ref: '#/components/schemas/AlipayOpenOperationOpenbizmockTestpathkeyQueryModel'
+        f:
+          format: binary
+          type: string
+      type: object
+    alipay_open_operation_openbizmock_testpathkey_query_default_response:
+      anyOf:
+      - $ref: '#/components/schemas/CommonErrorType'
+      - $ref: '#/components/schemas/AlipayOpenOperationOpenbizmockTestpathkeyQueryErrorResponseModel'
     alipay_open_public_account_create_default_response:
       anyOf:
       - $ref: '#/components/schemas/CommonErrorType'
