@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 违约金咨询信息
  *
  * @author auto create
- * @since 1.0, 2024-11-06 14:50:16
+ * @since 1.0, 2024-11-28 14:38:54
  */
 public class DamagesConsultInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4295522946768434569L;
+	private static final long serialVersionUID = 6313344972432633247L;
 
 	/**
 	 * 是否可以退卡
@@ -26,7 +26,7 @@ public class DamagesConsultInfo extends AlipayObject {
 	private Long damagesCash;
 
 	/**
-	 * 违约金比例
+	 * 违约金比例，单位：%，例如返回值是30，代表30%
 	 */
 	@ApiField("damages_rate")
 	private String damagesRate;
@@ -38,7 +38,7 @@ public class DamagesConsultInfo extends AlipayObject {
 	private String damagesType;
 
 	/**
-	 * 是否需要违约金
+	 * 注意 如果售卖订单在7天内没有核销使用过，退卡时是没有违约金的
 	 */
 	@ApiField("need_damages")
 	private Boolean needDamages;
@@ -48,6 +48,12 @@ public class DamagesConsultInfo extends AlipayObject {
 	 */
 	@ApiField("refund_cash")
 	private Long refundCash;
+
+	/**
+	 * 不可以退卡的原因
+	 */
+	@ApiField("refuse_close_reason")
+	private String refuseCloseReason;
 
 	public Boolean getCanClose() {
 		return this.canClose;
@@ -89,6 +95,13 @@ public class DamagesConsultInfo extends AlipayObject {
 	}
 	public void setRefundCash(Long refundCash) {
 		this.refundCash = refundCash;
+	}
+
+	public String getRefuseCloseReason() {
+		return this.refuseCloseReason;
+	}
+	public void setRefuseCloseReason(String refuseCloseReason) {
+		this.refuseCloseReason = refuseCloseReason;
 	}
 
 }

@@ -11,11 +11,29 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 协同任务信息
  *
  * @author auto create
- * @since 1.0, 2024-10-08 19:38:51
+ * @since 1.0, 2024-11-29 16:28:20
  */
 public class CollaborateTask extends AlipayObject {
 
-	private static final long serialVersionUID = 3589998486621189137L;
+	private static final long serialVersionUID = 6471785154213494614L;
+
+	/**
+	 * 活动描述，用户参与活动时返回。
+	 */
+	@ApiField("activity_desc")
+	private String activityDesc;
+
+	/**
+	 * 活动id，用户参与活动时返回。
+	 */
+	@ApiField("activity_id")
+	private String activityId;
+
+	/**
+	 * 活动类型，用户参与活动时返回。
+	 */
+	@ApiField("activity_type")
+	private String activityType;
 
 	/**
 	 * 任务拉取时该字段无返回内容，确认领取时会返回该字段。
@@ -52,6 +70,12 @@ public class CollaborateTask extends AlipayObject {
 	 */
 	@ApiField("district_name")
 	private String districtName;
+
+	/**
+	 * 外部展业人员编号
+	 */
+	@ApiField("installer_no")
+	private String installerNo;
 
 	/**
 	 * 服务商可以基于此id判断拉取到的任务需要协同什么样的产品，如： N7 设备。
@@ -109,6 +133,27 @@ public class CollaborateTask extends AlipayObject {
 	@ApiField("tel")
 	private String tel;
 
+	public String getActivityDesc() {
+		return this.activityDesc;
+	}
+	public void setActivityDesc(String activityDesc) {
+		this.activityDesc = activityDesc;
+	}
+
+	public String getActivityId() {
+		return this.activityId;
+	}
+	public void setActivityId(String activityId) {
+		this.activityId = activityId;
+	}
+
+	public String getActivityType() {
+		return this.activityType;
+	}
+	public void setActivityType(String activityType) {
+		this.activityType = activityType;
+	}
+
 	public String getAddress() {
 		return this.address;
 	}
@@ -149,6 +194,13 @@ public class CollaborateTask extends AlipayObject {
 	}
 	public void setDistrictName(String districtName) {
 		this.districtName = districtName;
+	}
+
+	public String getInstallerNo() {
+		return this.installerNo;
+	}
+	public void setInstallerNo(String installerNo) {
+		this.installerNo = installerNo;
 	}
 
 	public String getProductId() {

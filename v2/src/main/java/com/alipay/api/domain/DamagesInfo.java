@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 安心付违约金信息
  *
  * @author auto create
- * @since 1.0, 2024-11-15 15:52:52
+ * @since 1.0, 2024-11-28 14:38:54
  */
 public class DamagesInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6196626172547938836L;
+	private static final long serialVersionUID = 1196627728989376861L;
 
 	/**
 	 * 创建时间
@@ -34,7 +34,7 @@ public class DamagesInfo extends AlipayObject {
 	private String damagesIssueType;
 
 	/**
-	 * 违约金的比例
+	 * 违约金比例，单位：%，例如返回值是30，代表30%
 	 */
 	@ApiField("damages_rate")
 	private String damagesRate;

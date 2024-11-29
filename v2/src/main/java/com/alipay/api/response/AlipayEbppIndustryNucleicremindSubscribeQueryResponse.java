@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppIndustryNucleicremindSubscribeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2313846633372247648L;
+	private static final long serialVersionUID = 1613283638558325728L;
 
 	/** 
 	 * 有效时间，单位小时

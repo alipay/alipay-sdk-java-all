@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenFormFieldDO extends AlipayObject {
 
-	private static final long serialVersionUID = 3128824279816694336L;
+	private static final long serialVersionUID = 2752944634469793833L;
 
 	/**
 	 * 表单可选字段配置，common_fields属性定义一个表单字段数组，表单字段有效值列表与required字段有效值列表相同。

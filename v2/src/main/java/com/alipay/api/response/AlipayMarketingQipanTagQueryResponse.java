@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.qipan.tag.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-04 15:27:03
+ * @since 1.0, 2024-11-28 17:42:19
  */
 public class AlipayMarketingQipanTagQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8274427798438973174L;
+	private static final long serialVersionUID = 1462147145114456641L;
 
 	/** 
 	 * 圈选标签的圈选项、圈选值详情，创建标签圈选请求时，需要传入每个圈选项对应的圈选值

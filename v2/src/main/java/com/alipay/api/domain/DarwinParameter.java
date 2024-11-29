@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DarwinParameter extends AlipayObject {
 
-	private static final long serialVersionUID = 3482299322786656632L;
+	private static final long serialVersionUID = 8589213626625531254L;
 
 	/**
 	 * 达尔文实验参数

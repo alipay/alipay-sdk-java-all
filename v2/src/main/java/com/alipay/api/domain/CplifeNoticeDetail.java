@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CplifeNoticeDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7538828668384391121L;
+	private static final long serialVersionUID = 6382759495387886913L;
 
 	/**
 	 * 通告公告的具体内容

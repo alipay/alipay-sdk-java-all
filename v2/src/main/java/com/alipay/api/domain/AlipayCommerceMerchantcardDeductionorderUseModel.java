@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 安心付核销接口
  *
  * @author auto create
- * @since 1.0, 2024-11-15 15:53:19
+ * @since 1.0, 2024-11-28 14:41:21
  */
 public class AlipayCommerceMerchantcardDeductionorderUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1168351434752192889L;
+	private static final long serialVersionUID = 5747978883919199951L;
 
 	/**
 	 * 幂等号
@@ -26,7 +26,7 @@ public class AlipayCommerceMerchantcardDeductionorderUseModel extends AlipayObje
 	private String cardId;
 
 	/**
-	 * 核销次数
+	 * 注意：先享次卡目前只支持同时核销1次
 	 */
 	@ApiField("count")
 	private Long count;

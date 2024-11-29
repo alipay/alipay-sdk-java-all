@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页查询售卖订单结果
  *
  * @author auto create
- * @since 1.0, 2024-11-06 14:51:17
+ * @since 1.0, 2024-11-28 14:39:21
  */
 public class CardOrderBatchQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 3591197399724315458L;
+	private static final long serialVersionUID = 4716757817769742138L;
 
 	/**
 	 * 售卖订单的余额面额，单位分

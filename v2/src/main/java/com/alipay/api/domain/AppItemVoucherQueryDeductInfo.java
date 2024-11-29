@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AppItemVoucherQueryDeductInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8182414344487424242L;
+	private static final long serialVersionUID = 6495153257956149433L;
 
 	/**
 	 * 满减券优惠

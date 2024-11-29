@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RoomRentQueryVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5541371195829433444L;
+	private static final long serialVersionUID = 4141646793429187278L;
 
 	/**
 	 * 类目ID

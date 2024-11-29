@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenAgentCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1683439517271191616L;
+	private static final long serialVersionUID = 3733143775198148248L;
 
 	/** 
 	 * 本次代商户操作的全局唯一事务编号，后续代商户创建小程序、代签约当面付等产品、提交事务等接口都需要传递该batch_no值，且要确认只有 init 状态的batch_no才能发起调用。

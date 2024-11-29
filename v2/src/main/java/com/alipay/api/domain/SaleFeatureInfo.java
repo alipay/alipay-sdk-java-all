@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SaleFeatureInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5483634429534437462L;
+	private static final long serialVersionUID = 7643351753153451113L;
 
 	/**
 	 * 月销售金额是否大于0 （1：是，0：否）

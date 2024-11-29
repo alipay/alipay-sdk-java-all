@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LeadsCarInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4233967361458455855L;
+	private static final long serialVersionUID = 2365528719881611991L;
 
 	/**
 	 * 车id

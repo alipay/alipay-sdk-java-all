@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PayType extends AlipayObject {
 
-	private static final long serialVersionUID = 7791663429491589278L;
+	private static final long serialVersionUID = 7462259411141355597L;
 
 	/**
 	 * 如果是微信渠道，传bank_type字段

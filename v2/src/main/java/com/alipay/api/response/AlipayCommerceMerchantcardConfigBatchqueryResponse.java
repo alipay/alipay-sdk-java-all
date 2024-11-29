@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMerchantcardConfigBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2348963639883522436L;
+	private static final long serialVersionUID = 7491569753794435469L;
 
 	/** 
 	 * 安心付商户配置
