@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RuntimeProtectConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 8328255846757964391L;
+	private static final long serialVersionUID = 7526592375883391245L;
 
 	/**
 	 * 防调试,0为检测到风险退出，1不处理

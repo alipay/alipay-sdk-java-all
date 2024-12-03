@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPayAppPocketmoneyRedpacketBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5553729814637354267L;
+	private static final long serialVersionUID = 1452656283336722535L;
 
 	/** 
 	 * 红包详情list

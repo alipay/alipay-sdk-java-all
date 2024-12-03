@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BotChatLog extends AlipayObject {
 
-	private static final long serialVersionUID = 7318791122561974989L;
+	private static final long serialVersionUID = 3275833737517554756L;
 
 	/**
 	 * 机器人回答

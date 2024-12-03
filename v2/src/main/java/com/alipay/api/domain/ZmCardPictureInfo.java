@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZmCardPictureInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6394429587964136311L;
+	private static final long serialVersionUID = 3135237246857863379L;
 
 	/**
 	 * 图片名称

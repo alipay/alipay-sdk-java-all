@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.insurance.diffrecovery.pay response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-22 12:07:19
+ * @since 1.0, 2024-12-02 17:32:18
  */
 public class AlipayCommerceMedicalInsuranceDiffrecoveryPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4295361128181884867L;
+	private static final long serialVersionUID = 2376437387567515741L;
 
 	/** 
 	 * 支付宝交易订单号

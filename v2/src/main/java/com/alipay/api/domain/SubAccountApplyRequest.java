@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SubAccountApplyRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 8546543854322911476L;
+	private static final long serialVersionUID = 4244547532275639832L;
 
 	/**
 	 * 在哪个主体下进行子户申请，默认不填时为ZN7

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商保码-差额追偿
  *
  * @author auto create
- * @since 1.0, 2024-11-22 12:00:24
+ * @since 1.0, 2024-12-02 17:23:22
  */
 public class AlipayCommerceMedicalInsuranceDiffrecoveryPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2743265343438375148L;
+	private static final long serialVersionUID = 7332688997432214277L;
 
 	/**
 	 * 标识一次垫付申请，最近一次的垫付申请。

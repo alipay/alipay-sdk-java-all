@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportTravelRecordQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6147548863991346859L;
+	private static final long serialVersionUID = 6215679234947262377L;
 
 	/** 
 	 * 用户乘车记录数据，按日期分类

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class IndustryChargeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2478511328896276412L;
+	private static final long serialVersionUID = 7558998964898841128L;
 
 	/**
 	 * 实收费用。单位：元。

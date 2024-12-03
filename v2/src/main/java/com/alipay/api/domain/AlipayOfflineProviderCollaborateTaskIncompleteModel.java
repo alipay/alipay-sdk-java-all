@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 无法完成协同任务
  *
  * @author auto create
- * @since 1.0, 2024-10-08 15:43:19
+ * @since 1.0, 2024-11-30 15:56:55
  */
 public class AlipayOfflineProviderCollaborateTaskIncompleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1411389968885328127L;
+	private static final long serialVersionUID = 3156181113411675161L;
 
 	/**
 	 * 当前操作在业务系统实际发生的时间。
@@ -32,6 +32,18 @@ public class AlipayOfflineProviderCollaborateTaskIncompleteModel extends AlipayO
 	 */
 	@ApiField("reason_code")
 	private String reasonCode;
+
+	/**
+	 * 原因描述
+	 */
+	@ApiField("reason_desc")
+	private String reasonDesc;
+
+	/**
+	 * 二级原因编码
+	 */
+	@ApiField("reason_sub_code")
+	private String reasonSubCode;
 
 	/**
 	 * 拉取任务时获得的任务号。
@@ -58,6 +70,20 @@ public class AlipayOfflineProviderCollaborateTaskIncompleteModel extends AlipayO
 	}
 	public void setReasonCode(String reasonCode) {
 		this.reasonCode = reasonCode;
+	}
+
+	public String getReasonDesc() {
+		return this.reasonDesc;
+	}
+	public void setReasonDesc(String reasonDesc) {
+		this.reasonDesc = reasonDesc;
+	}
+
+	public String getReasonSubCode() {
+		return this.reasonSubCode;
+	}
+	public void setReasonSubCode(String reasonSubCode) {
+		this.reasonSubCode = reasonSubCode;
 	}
 
 	public String getTaskNo() {

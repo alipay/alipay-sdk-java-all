@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntMerchantExpandTradeorderEventSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5192915532265671932L;
+	private static final long serialVersionUID = 5878244375881717836L;
 
 	/** 
 	 * 物流单状态：WAIT_PAY(待支付)、PAID(已支付)、WAIT_PAY_TIMEOUT(超时未支付)、COURIER_CONFIRMED(快递员已接单)、COURIER_ARRIVED_SEND(快递员已到达寄送点)、GOODS_PICKED(已取件)、GOODS_DELIVERED(已送达)、FINISHED(已完结)

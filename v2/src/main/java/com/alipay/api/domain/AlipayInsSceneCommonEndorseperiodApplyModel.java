@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayInsSceneCommonEndorseperiodApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4822985727943328486L;
+	private static final long serialVersionUID = 3256759523499628774L;
 
 	/**
 	 * 期望的结束时间

@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 违约金信息
  *
  * @author auto create
- * @since 1.0, 2024-11-06 14:50:17
+ * @since 1.0, 2024-12-02 11:17:57
  */
 public class BreakCostsInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2766588334729977427L;
+	private static final long serialVersionUID = 4165473258158915534L;
 
 	/**
-	 * 当违约金类型是REMAIN_REATE时必传，需要设置违约金的收取按照剩余金额的多少比例计算，如0.3代表30%
+	 * 当违约金类型是REMAIN_REATE时必传，需要设置违约金的收取按照剩余金额的多少比例计算，如30代表30%
 	 */
 	@ApiField("damages_rate")
 	private String damagesRate;

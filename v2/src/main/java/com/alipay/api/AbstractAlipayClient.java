@@ -237,6 +237,7 @@ public abstract class AbstractAlipayClient implements AlipayClient {
             }
 
             tRsp.setParams((AlipayHashMap) rt.get("textParams"));
+            addTraceId(tRsp, rt);
             if (!tRsp.isSuccess()) {
                 AlipayLogger.logErrorScene(rt, tRsp, "", costTimeMap);
             } else {
@@ -958,8 +959,8 @@ public abstract class AbstractAlipayClient implements AlipayClient {
         }
 
         tRsp.setParams((AlipayHashMap) rt.get("textParams"));
+        addTraceId(tRsp, rt);
         if (!tRsp.isSuccess()) {
-            addTraceId(tRsp, rt);
             AlipayLogger.logErrorScene(rt, tRsp, "", costTimeMap);
         } else {
             AlipayLogger.logBizSummary(rt, tRsp, costTimeMap);

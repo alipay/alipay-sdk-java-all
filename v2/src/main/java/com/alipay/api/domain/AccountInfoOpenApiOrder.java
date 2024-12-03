@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账务信息
  *
  * @author auto create
- * @since 1.0, 2024-11-27 15:32:49
+ * @since 1.0, 2024-12-02 11:04:53
  */
 public class AccountInfoOpenApiOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 3247119484538622622L;
+	private static final long serialVersionUID = 5357837797371248324L;
 
 	/**
 	 * 科目段编码
@@ -44,13 +44,13 @@ public class AccountInfoOpenApiOrder extends AlipayObject {
 	private String accountingTypeCode;
 
 	/**
-	 * 原币发生额
+	 * 原币发生额，单位为分
 	 */
 	@ApiField("amount")
 	private String amount;
 
 	/**
-	 * 本位币发生额
+	 * 本位币发生额，单位为分
 	 */
 	@ApiField("amount_beq")
 	private String amountBeq;

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SchoolBatchQueryResult extends AlipayObject {
 
-	private static final long serialVersionUID = 3276236634222447781L;
+	private static final long serialVersionUID = 5271859722149378615L;
 
 	/**
 	 * 结果码

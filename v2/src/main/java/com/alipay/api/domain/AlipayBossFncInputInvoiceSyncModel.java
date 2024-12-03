@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 增量同步欢行蚂蚁发票
  *
  * @author auto create
- * @since 1.0, 2024-11-27 14:51:57
+ * @since 1.0, 2024-12-02 11:04:53
  */
 public class AlipayBossFncInputInvoiceSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8291818738731264848L;
+	private static final long serialVersionUID = 5831777185747431919L;
 
 	/**
 	 * 入参

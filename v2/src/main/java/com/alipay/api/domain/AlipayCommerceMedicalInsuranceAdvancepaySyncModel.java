@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商保码-垫付申请状态同步
  *
  * @author auto create
- * @since 1.0, 2024-11-22 12:00:17
+ * @since 1.0, 2024-12-02 17:23:55
  */
 public class AlipayCommerceMedicalInsuranceAdvancepaySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6857317847594685456L;
+	private static final long serialVersionUID = 6628892299462687625L;
 
 	/**
 	 * 垫付申请结果描述。垫付申请失败时，需给出失败原因
@@ -51,6 +51,12 @@ public class AlipayCommerceMedicalInsuranceAdvancepaySyncModel extends AlipayObj
 	 */
 	@ApiField("available_advance_amount")
 	private String availableAdvanceAmount;
+
+	/**
+	 * 业务流水号
+	 */
+	@ApiField("business_no")
+	private String businessNo;
 
 	/**
 	 * 业务进度生效时间（非报文同步时间）
@@ -171,6 +177,13 @@ public class AlipayCommerceMedicalInsuranceAdvancepaySyncModel extends AlipayObj
 	}
 	public void setAvailableAdvanceAmount(String availableAdvanceAmount) {
 		this.availableAdvanceAmount = availableAdvanceAmount;
+	}
+
+	public String getBusinessNo() {
+		return this.businessNo;
+	}
+	public void setBusinessNo(String businessNo) {
+		this.businessNo = businessNo;
 	}
 
 	public String getBusinessTime() {

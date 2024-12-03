@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceZhimaPreorderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3345366746951532691L;
+	private static final long serialVersionUID = 7738169965159123658L;
 
 	/**
 	 * alipay_store_id

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.acommunication.point.clear response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-28 12:02:22
+ * @since 1.0, 2024-12-02 21:52:21
  */
 public class AlipayCommerceAcommunicationPointClearResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6594914726629769175L;
+	private static final long serialVersionUID = 6641674962843742546L;
 
 	/** 
 	 * 积分id

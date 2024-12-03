@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 积分明细
  *
  * @author auto create
- * @since 1.0, 2024-11-28 11:57:19
+ * @since 1.0, 2024-12-02 21:49:54
  */
 public class AlipayPointDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1627226414943551752L;
+	private static final long serialVersionUID = 8153175454317552658L;
 
 	/**
 	 * 回滚对应的订单分组
@@ -26,6 +26,12 @@ public class AlipayPointDetail extends AlipayObject {
 	 */
 	@ApiField("gmt_create")
 	private Date gmtCreate;
+
+	/**
+	 * 该条数据主键id
+	 */
+	@ApiField("id")
+	private Long id;
 
 	/**
 	 * 流入流出类型
@@ -63,6 +69,13 @@ public class AlipayPointDetail extends AlipayObject {
 	}
 	public void setGmtCreate(Date gmtCreate) {
 		this.gmtCreate = gmtCreate;
+	}
+
+	public Long getId() {
+		return this.id;
+	}
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String getInOutType() {

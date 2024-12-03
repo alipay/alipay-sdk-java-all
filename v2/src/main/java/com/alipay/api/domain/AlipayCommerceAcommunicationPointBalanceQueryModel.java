@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 充值金查询
  *
  * @author auto create
- * @since 1.0, 2024-11-28 11:57:46
+ * @since 1.0, 2024-12-02 21:49:19
  */
 public class AlipayCommerceAcommunicationPointBalanceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5571978592338833262L;
+	private static final long serialVersionUID = 8728351258916994794L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识

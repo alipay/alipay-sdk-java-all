@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankFinanceAccountRysenterpriseQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7555457218135663412L;
+	private static final long serialVersionUID = 5627873361988434549L;
 
 	/** 
 	 * 融易收账户Id

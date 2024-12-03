@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiCateringCookConditionBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4161568641336919479L;
+	private static final long serialVersionUID = 3873965328745942364L;
 
 	/** 
 	 * 口碑菜谱模型列表

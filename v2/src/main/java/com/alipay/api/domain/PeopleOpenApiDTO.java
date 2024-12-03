@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PeopleOpenApiDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3823161754536856959L;
+	private static final long serialVersionUID = 8199629937343472694L;
 
 	/**
 	 * 花名

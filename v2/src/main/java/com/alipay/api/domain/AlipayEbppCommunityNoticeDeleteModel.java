@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppCommunityNoticeDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5719252366713434127L;
+	private static final long serialVersionUID = 7118915814614223313L;
 
 	/**
 	 * 支付宝公告id

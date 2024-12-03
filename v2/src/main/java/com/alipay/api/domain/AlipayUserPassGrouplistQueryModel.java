@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserPassGrouplistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2437533143666134464L;
+	private static final long serialVersionUID = 7277377256484782494L;
 
 	/**
 	 * 城市编码，国标码，如果need_shopinfo=true，必须传值

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundTransEntrustCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1674258916216536583L;
+	private static final long serialVersionUID = 4719669251839553633L;
 
 	/**
 	 * CREDIT_SALE_REPAY

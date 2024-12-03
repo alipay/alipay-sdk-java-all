@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 充值金扣减
  *
  * @author auto create
- * @since 1.0, 2024-11-28 11:57:39
+ * @since 1.0, 2024-12-02 21:49:19
  */
 public class AlipayCommerceAcommunicationPointClearModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3449211844214642796L;
+	private static final long serialVersionUID = 6524441472632266214L;
 
 	/**
 	 * 日期类型，可空，为空则为当前时间
