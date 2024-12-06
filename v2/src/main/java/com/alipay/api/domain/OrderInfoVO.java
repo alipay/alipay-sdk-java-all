@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单信息
  *
  * @author auto create
- * @since 1.0, 2024-09-25 15:05:53
+ * @since 1.0, 2024-12-05 10:24:17
  */
 public class OrderInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7847953962563979123L;
+	private static final long serialVersionUID = 4173262567391159638L;
 
 	/**
 	 * 订单取消时间
@@ -118,15 +118,17 @@ public class OrderInfoVO extends AlipayObject {
 	private Date updateTime;
 
 	/**
-	 * 用户期望最晚送达时间
+	 * 用户期望最晚送达时间 当前字段已废弃(该字段和预计最晚送达时间重复，后续取预计最晚送达时间即可)
 	 */
 	@ApiField("user_expect_end_time")
+	@Deprecated
 	private Date userExpectEndTime;
 
 	/**
-	 * 用户期望最早送达时间
+	 * 用户期望最早送达时间 当前字段已废弃(该字段和预计最早送达时间重复，后续取预计最早送达时间即可)
 	 */
 	@ApiField("user_expect_start_time")
+	@Deprecated
 	private Date userExpectStartTime;
 
 	/**

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFinanceFundFundprodQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6251317741882624129L;
+	private static final long serialVersionUID = 7522774618211699312L;
 
 	/** 
 	 * 成立日期，格式为YYYYMMDD

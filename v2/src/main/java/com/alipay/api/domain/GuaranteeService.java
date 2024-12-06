@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝租车保障服务
  *
  * @author auto create
- * @since 1.0, 2024-04-15 16:05:53
+ * @since 1.0, 2024-12-05 11:04:10
  */
 public class GuaranteeService extends AlipayObject {
 
-	private static final long serialVersionUID = 8498754383681669639L;
+	private static final long serialVersionUID = 1297449791294519399L;
 
 	/**
 	 * 垫付保障
@@ -33,6 +33,13 @@ public class GuaranteeService extends AlipayObject {
 	 */
 	@ApiField("depreciation_guarantee")
 	private GuaranteeDetail depreciationGuarantee;
+
+	/**
+	 * 保障服务详细描述
+	 */
+	@ApiListField("guarantee_detail_description")
+	@ApiField("rent_car_guarantee_detail_description")
+	private List<RentCarGuaranteeDetailDescription> guaranteeDetailDescription;
 
 	/**
 	 * 保障服务的名称
@@ -115,6 +122,13 @@ public class GuaranteeService extends AlipayObject {
 	}
 	public void setDepreciationGuarantee(GuaranteeDetail depreciationGuarantee) {
 		this.depreciationGuarantee = depreciationGuarantee;
+	}
+
+	public List<RentCarGuaranteeDetailDescription> getGuaranteeDetailDescription() {
+		return this.guaranteeDetailDescription;
+	}
+	public void setGuaranteeDetailDescription(List<RentCarGuaranteeDetailDescription> guaranteeDetailDescription) {
+		this.guaranteeDetailDescription = guaranteeDetailDescription;
 	}
 
 	public String getName() {

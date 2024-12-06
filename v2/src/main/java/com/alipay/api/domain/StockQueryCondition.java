@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class StockQueryCondition extends AlipayObject {
 
-	private static final long serialVersionUID = 6631533243319228486L;
+	private static final long serialVersionUID = 5777459838964285863L;
 
 	/**
 	 * 库存查询结束时间

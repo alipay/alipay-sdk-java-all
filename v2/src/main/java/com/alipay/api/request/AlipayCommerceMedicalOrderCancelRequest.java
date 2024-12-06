@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.order.cancel request
  * 
  * @author auto create
- * @since 1.0, 2024-09-17 10:42:10
+ * @since 1.0, 2024-12-06 14:02:20
  */
 public class AlipayCommerceMedicalOrderCancelRequest implements AlipayRequest<AlipayCommerceMedicalOrderCancelResponse> {
 

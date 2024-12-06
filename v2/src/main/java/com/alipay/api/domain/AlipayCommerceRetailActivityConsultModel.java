@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 零售活动积分可兑换奖品咨询
  *
  * @author auto create
- * @since 1.0, 2024-11-05 15:45:19
+ * @since 1.0, 2024-12-04 14:18:57
  */
 public class AlipayCommerceRetailActivityConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5896599992311742427L;
+	private static final long serialVersionUID = 3394441858751418647L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识

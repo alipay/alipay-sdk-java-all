@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AnttechBlockchainDefinSaasPaymentCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5414364619983453689L;
+	private static final long serialVersionUID = 4796492759199839543L;
 
 	/** 
 	 * 描述资金流的模型，通常资金流分为：SALE 即时支付；AUTH_CAPTURE 预授权模式；

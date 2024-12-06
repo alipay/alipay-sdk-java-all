@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenAppTimeoutTestQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5759737862677954969L;
+	private static final long serialVersionUID = 4449741582166435445L;
 
 	/**
 	 * 秒

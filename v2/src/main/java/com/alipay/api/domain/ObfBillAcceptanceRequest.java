@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ObfBillAcceptanceRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 1646113814712862253L;
+	private static final long serialVersionUID = 1618618921554478627L;
 
 	/**
 	 * 分摊规则-一次性计收/按时长分摊

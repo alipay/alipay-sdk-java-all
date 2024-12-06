@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.defin.insurance.apply.create request
  * 
  * @author auto create
- * @since 1.0, 2024-08-27 10:29:49
+ * @since 1.0, 2024-12-04 13:36:15
  */
 public class AnttechBlockchainDefinInsuranceApplyCreateRequest implements AlipayRequest<AnttechBlockchainDefinInsuranceApplyCreateResponse> {
 

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayInsAutoAutoinsprodPolicyApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4328943421658641436L;
+	private static final long serialVersionUID = 2674453432268319314L;
 
 	/** 
 	 * 车险询价申请号

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 充电桩绑定信息同步
  *
  * @author auto create
- * @since 1.0, 2024-06-19 16:31:51
+ * @since 1.0, 2024-12-04 16:06:58
  */
 public class AlipayCommerceTransportChargerPrivatebindSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4183165798719812412L;
+	private static final long serialVersionUID = 1149989534738819287L;
 
 	/**
 	 * true: 绑定，false：解绑
@@ -44,6 +44,12 @@ public class AlipayCommerceTransportChargerPrivatebindSyncModel extends AlipayOb
 	 */
 	@ApiField("operator_uid")
 	private String operatorUid;
+
+	/**
+	 * 用户手机号码，该绑定方式需联系业务配置，仅针对部分场景。
+	 */
+	@ApiField("phone_num")
+	private String phoneNum;
 
 	/**
 	 * 支付宝用户的userId。
@@ -84,6 +90,13 @@ public class AlipayCommerceTransportChargerPrivatebindSyncModel extends AlipayOb
 	}
 	public void setOperatorUid(String operatorUid) {
 		this.operatorUid = operatorUid;
+	}
+
+	public String getPhoneNum() {
+		return this.phoneNum;
+	}
+	public void setPhoneNum(String phoneNum) {
+		this.phoneNum = phoneNum;
 	}
 
 	public String getUserId() {

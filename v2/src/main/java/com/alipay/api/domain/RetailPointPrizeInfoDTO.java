@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 积分奖品信息
  *
  * @author auto create
- * @since 1.0, 2024-10-31 10:33:24
+ * @since 1.0, 2024-12-04 14:18:57
  */
 public class RetailPointPrizeInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4162189976533139628L;
+	private static final long serialVersionUID = 5455485551295773252L;
 
 	/**
 	 * 积分奖品的面额，如奖品为30元优惠券，则该字段值为30，默认单位为元
@@ -24,6 +24,12 @@ public class RetailPointPrizeInfoDTO extends AlipayObject {
 	 */
 	@ApiField("floor_amount")
 	private String floorAmount;
+
+	/**
+	 * 活动任务参与单位
+	 */
+	@ApiField("join_limit")
+	private String joinLimit;
 
 	/**
 	 * 兑换奖品后续使用是否支持nfc支付
@@ -50,10 +56,22 @@ public class RetailPointPrizeInfoDTO extends AlipayObject {
 	private String prizeName;
 
 	/**
+	 * 活动任务剩余需参与的数量，结合状态可判断还剩多少数量即可完成活动任务进行兑换
+	 */
+	@ApiField("remaining_join_count")
+	private Long remainingJoinCount;
+
+	/**
 	 * 对应活动的id
 	 */
 	@ApiField("retail_activity_id")
 	private String retailActivityId;
+
+	/**
+	 * 奖品兑换的状态，用于判断如何展示
+	 */
+	@ApiField("status")
+	private String status;
 
 	public String getDiscountAmount() {
 		return this.discountAmount;
@@ -67,6 +85,13 @@ public class RetailPointPrizeInfoDTO extends AlipayObject {
 	}
 	public void setFloorAmount(String floorAmount) {
 		this.floorAmount = floorAmount;
+	}
+
+	public String getJoinLimit() {
+		return this.joinLimit;
+	}
+	public void setJoinLimit(String joinLimit) {
+		this.joinLimit = joinLimit;
 	}
 
 	public Boolean getNfcPay() {
@@ -97,11 +122,25 @@ public class RetailPointPrizeInfoDTO extends AlipayObject {
 		this.prizeName = prizeName;
 	}
 
+	public Long getRemainingJoinCount() {
+		return this.remainingJoinCount;
+	}
+	public void setRemainingJoinCount(Long remainingJoinCount) {
+		this.remainingJoinCount = remainingJoinCount;
+	}
+
 	public String getRetailActivityId() {
 		return this.retailActivityId;
 	}
 	public void setRetailActivityId(String retailActivityId) {
 		this.retailActivityId = retailActivityId;
+	}
+
+	public String getStatus() {
+		return this.status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
 	}
 
 }

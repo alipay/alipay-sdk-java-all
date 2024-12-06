@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 物料生产指令对象, 包括物料生产的相关信息: 订单明细ID, 申请单号, 模板ID, 物料名称, 物料图片Url, 数量,  申请日期,收货人姓名,联系人电话,收货人地址等.
  *
  * @author auto create
- * @since 1.0, 2023-12-21 13:35:58
+ * @since 1.0, 2024-12-05 10:23:55
  */
 public class AssetProduceItem extends AlipayObject {
 
-	private static final long serialVersionUID = 5497292885783715873L;
+	private static final long serialVersionUID = 8662248681912852253L;
 
 	/**
 	 * 生产指令动作类别：套组则为ASSEMBLE，组装
@@ -76,6 +76,12 @@ public class AssetProduceItem extends AlipayObject {
 	 */
 	@ApiField("city")
 	private String city;
+
+	/**
+	 * 有码组序列为 Y,反之则为 N
+	 */
+	@ApiField("code_group_flag")
+	private String codeGroupFlag;
 
 	/**
 	 * 合单批次号
@@ -242,6 +248,12 @@ public class AssetProduceItem extends AlipayObject {
 	private String receiverName;
 
 	/**
+	 * 关联的上游业务单号
+	 */
+	@ApiField("related_out_biz_no")
+	private String relatedOutBizNo;
+
+	/**
 	 * 物料供应商PID，和调用方的供应商PID一致
 	 */
 	@ApiField("supplier_pid")
@@ -333,6 +345,13 @@ public class AssetProduceItem extends AlipayObject {
 	}
 	public void setCity(String city) {
 		this.city = city;
+	}
+
+	public String getCodeGroupFlag() {
+		return this.codeGroupFlag;
+	}
+	public void setCodeGroupFlag(String codeGroupFlag) {
+		this.codeGroupFlag = codeGroupFlag;
 	}
 
 	public String getCombinationBatchNo() {
@@ -522,6 +541,13 @@ public class AssetProduceItem extends AlipayObject {
 	}
 	public void setReceiverName(String receiverName) {
 		this.receiverName = receiverName;
+	}
+
+	public String getRelatedOutBizNo() {
+		return this.relatedOutBizNo;
+	}
+	public void setRelatedOutBizNo(String relatedOutBizNo) {
+		this.relatedOutBizNo = relatedOutBizNo;
 	}
 
 	public String getSupplierPid() {

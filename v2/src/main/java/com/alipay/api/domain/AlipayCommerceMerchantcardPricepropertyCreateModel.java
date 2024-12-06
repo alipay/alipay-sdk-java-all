@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 设置卡自定义价格
  *
  * @author auto create
- * @since 1.0, 2024-11-15 16:02:19
+ * @since 1.0, 2024-12-05 18:45:18
  */
 public class AlipayCommerceMerchantcardPricepropertyCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8656298316822238176L;
+	private static final long serialVersionUID = 7553929196386652832L;
 
 	/**
 	 * 周期卡计费信息，周期卡一客一价需要修改扣款方式可传该字段，非周期卡不传

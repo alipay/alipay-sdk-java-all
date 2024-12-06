@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗服务推荐Maga投放查询接口
  *
  * @author auto create
- * @since 1.0, 2024-09-30 10:13:03
+ * @since 1.0, 2024-12-06 16:59:56
  */
 public class AlipayCommerceMedicalServiceMagaQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6393833289874426485L;
+	private static final long serialVersionUID = 3561524422892326447L;
 
 	/**
 	 * 用于区分同一个app下的机构

@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付信息
  *
  * @author auto create
- * @since 1.0, 2024-08-29 15:36:40
+ * @since 1.0, 2024-12-05 10:24:17
  */
 public class PaymentVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8196996472577694535L;
+	private static final long serialVersionUID = 7199571796482572445L;
+
+	/**
+	 * 订单优惠总金额
+	 */
+	@ApiField("amount_discount")
+	private String amountDiscount;
 
 	/**
 	 * 商品总金额
@@ -78,6 +84,13 @@ public class PaymentVO extends AlipayObject {
 	 */
 	@ApiField("time_markup_price")
 	private String timeMarkupPrice;
+
+	public String getAmountDiscount() {
+		return this.amountDiscount;
+	}
+	public void setAmountDiscount(String amountDiscount) {
+		this.amountDiscount = amountDiscount;
+	}
 
 	public String getAmountItem() {
 		return this.amountItem;

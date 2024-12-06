@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BreakCostsInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4165473258158915534L;
+	private static final long serialVersionUID = 8256443716675657736L;
 
 	/**
 	 * 当违约金类型是REMAIN_REATE时必传，需要设置违约金的收取按照剩余金额的多少比例计算，如30代表30%

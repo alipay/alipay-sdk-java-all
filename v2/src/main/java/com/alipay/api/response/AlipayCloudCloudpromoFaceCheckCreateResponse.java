@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudpromo.face.check.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-19 10:59:52
+ * @since 1.0, 2024-12-03 16:32:25
  */
 public class AlipayCloudCloudpromoFaceCheckCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8429247446842876995L;
+	private static final long serialVersionUID = 5689369738249148666L;
 
 	/** 
 	 * 校验单据号

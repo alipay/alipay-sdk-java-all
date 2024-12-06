@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsSubOrderEmploymentDigest extends AlipayObject {
 
-	private static final long serialVersionUID = 3247388988647111998L;
+	private static final long serialVersionUID = 2572441867836995772L;
 
 	/**
 	 * 子订单关闭原因

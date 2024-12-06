@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 新模型测试校验复杂类型02
  *
  * @author auto create
- * @since 1.0, 2024-12-02 15:56:10
+ * @since 1.0, 2024-12-03 15:07:22
  */
 public class AlipayDataDataserviceSchemacomplextwiceRainystestQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4381631849532618374L;
+	private static final long serialVersionUID = 7645494398431847373L;
 
 	/**
 	 * 强引用复杂类型
@@ -25,6 +25,12 @@ public class AlipayDataDataserviceSchemacomplextwiceRainystestQueryModel extends
 	@ApiField("demo_weak_complextype")
 	private RainyComplexTypeRefWeakFirst demoWeakComplextype;
 
+	/**
+	 * V1.3新增的
+	 */
+	@ApiField("weak_complextype")
+	private RainyComplexTypeRefWeakSecond weakComplextype;
+
 	public RainyComplexTypesTheSecond getDemoStrongComplextype() {
 		return this.demoStrongComplextype;
 	}
@@ -37,6 +43,13 @@ public class AlipayDataDataserviceSchemacomplextwiceRainystestQueryModel extends
 	}
 	public void setDemoWeakComplextype(RainyComplexTypeRefWeakFirst demoWeakComplextype) {
 		this.demoWeakComplextype = demoWeakComplextype;
+	}
+
+	public RainyComplexTypeRefWeakSecond getWeakComplextype() {
+		return this.weakComplextype;
+	}
+	public void setWeakComplextype(RainyComplexTypeRefWeakSecond weakComplextype) {
+		this.weakComplextype = weakComplextype;
 	}
 
 }

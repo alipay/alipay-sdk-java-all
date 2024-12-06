@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MedicalShopDeliveryInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2196279564752558721L;
+	private static final long serialVersionUID = 2187642291343642247L;
 
 	/**
 	 * 多点位按顺时针顺序，首位点位必须相同

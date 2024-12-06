@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudpromo.agent.user.modify response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-19 10:59:59
+ * @since 1.0, 2024-12-03 16:32:25
  */
 public class AlipayCloudCloudpromoAgentUserModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6245355396867921838L;
+	private static final long serialVersionUID = 6312488749675689344L;
 
 	
 

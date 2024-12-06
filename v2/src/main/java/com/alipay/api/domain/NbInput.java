@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class NbInput extends AlipayObject {
 
-	private static final long serialVersionUID = 6256593722569768581L;
+	private static final long serialVersionUID = 3713986787578221717L;
 
 	/**
 	 * 变量名称

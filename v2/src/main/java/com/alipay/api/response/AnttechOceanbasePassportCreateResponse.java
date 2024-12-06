@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.oceanbase.passport.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-17 13:52:00
+ * @since 1.0, 2024-12-03 17:38:36
  */
 public class AnttechOceanbasePassportCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5414763628747176176L;
+	private static final long serialVersionUID = 8151629777935667747L;
 
 	/** 
 	 * 用户通行证id

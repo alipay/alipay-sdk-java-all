@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 汽车车型信息
  *
  * @author auto create
- * @since 1.0, 2024-11-29 18:31:47
+ * @since 1.0, 2024-12-04 10:56:53
  */
 public class SpecInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2481435431949393867L;
+	private static final long serialVersionUID = 3452121981811511678L;
 
 	/**
 	 * 车型ID
@@ -42,6 +42,12 @@ public class SpecInfo extends AlipayObject {
 	 */
 	@ApiField("power_info")
 	private String powerInfo;
+
+	/**
+	 * 车型价格
+	 */
+	@ApiField("price")
+	private String price;
 
 	public String getId() {
 		return this.id;
@@ -76,6 +82,13 @@ public class SpecInfo extends AlipayObject {
 	}
 	public void setPowerInfo(String powerInfo) {
 		this.powerInfo = powerInfo;
+	}
+
+	public String getPrice() {
+		return this.price;
+	}
+	public void setPrice(String price) {
+		this.price = price;
 	}
 
 }

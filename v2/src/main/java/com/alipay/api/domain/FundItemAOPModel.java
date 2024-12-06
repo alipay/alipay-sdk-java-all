@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FundItemAOPModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6377829859213613868L;
+	private static final long serialVersionUID = 2622845138142161462L;
 
 	/**
 	 * 财务外部单据号

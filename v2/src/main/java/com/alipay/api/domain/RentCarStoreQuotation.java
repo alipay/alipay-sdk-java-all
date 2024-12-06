@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝租车门店报价
  *
  * @author auto create
- * @since 1.0, 2024-06-19 11:57:47
+ * @since 1.0, 2024-12-05 11:04:08
  */
 public class RentCarStoreQuotation extends AlipayObject {
 
-	private static final long serialVersionUID = 6725299515931356917L;
+	private static final long serialVersionUID = 5571426769936174398L;
 
 	/**
 	 * 评论数（取用户对商户评论数的总和）
@@ -63,6 +63,12 @@ public class RentCarStoreQuotation extends AlipayObject {
 	 */
 	@ApiField("longitude")
 	private String longitude;
+
+	/**
+	 * 支心租一口价优惠金额，单位分
+	 */
+	@ApiField("one_price_discount")
+	private Long onePriceDiscount;
 
 	/**
 	 * 服务商当前车型、门店报价的id，用于从支付宝租车页面跳转到服务商页面时，准确定位车型、门店及价格数据
@@ -181,6 +187,13 @@ public class RentCarStoreQuotation extends AlipayObject {
 	}
 	public void setLongitude(String longitude) {
 		this.longitude = longitude;
+	}
+
+	public Long getOnePriceDiscount() {
+		return this.onePriceDiscount;
+	}
+	public void setOnePriceDiscount(Long onePriceDiscount) {
+		this.onePriceDiscount = onePriceDiscount;
 	}
 
 	public String getQuoteId() {

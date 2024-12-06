@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayBossBaseAntauthorizeRoleuserQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5632647415132618616L;
+	private static final long serialVersionUID = 1357128319559348417L;
 
 	/**
 	 * 查询职能角色人员列表入参

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 子商户信息
  *
  * @author auto create
- * @since 1.0, 2024-10-09 11:27:01
+ * @since 1.0, 2024-12-06 15:16:49
  */
 public class SubAccountInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2695542789154393725L;
+	private static final long serialVersionUID = 3668827326493955498L;
 
 	/**
 	 * 来源于不同平台的商户号

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IndrReferralCodeRequestParamDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7784571482924198466L;
+	private static final long serialVersionUID = 4571828926187681654L;
 
 	/**
 	 * 如果本次推荐需要定向推荐至某个商户，则此处填入商户id

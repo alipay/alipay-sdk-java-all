@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 策略风险模型
  *
  * @author auto create
- * @since 1.0, 2022-11-14 14:20:55
+ * @since 1.0, 2024-12-05 10:59:54
  */
 public class RiskStrategy extends AlipayObject {
 
-	private static final long serialVersionUID = 4223429354841271163L;
+	private static final long serialVersionUID = 6566685815775417799L;
 
 	/**
 	 * 是否有详情
 	 */
 	@ApiField("has_detail")
 	private Boolean hasDetail;
+
+	/**
+	 * 提示风险 PROMPT_RISK; 重大风险 SIGNIFICANT_RISK
+	 */
+	@ApiField("risk_level")
+	private String riskLevel;
 
 	/**
 	 * 策略命中标识
@@ -60,6 +66,13 @@ public class RiskStrategy extends AlipayObject {
 	}
 	public void setHasDetail(Boolean hasDetail) {
 		this.hasDetail = hasDetail;
+	}
+
+	public String getRiskLevel() {
+		return this.riskLevel;
+	}
+	public void setRiskLevel(String riskLevel) {
+		this.riskLevel = riskLevel;
 	}
 
 	public Boolean getStrategyHitFlag() {

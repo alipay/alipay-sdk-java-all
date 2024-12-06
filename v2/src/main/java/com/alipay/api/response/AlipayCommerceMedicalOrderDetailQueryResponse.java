@@ -3,6 +3,7 @@ package com.alipay.api.response;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.DiscountVO;
 import com.alipay.api.domain.ItemsVO;
 import com.alipay.api.domain.MedicareInfoVO;
 import com.alipay.api.domain.OrderInfoVO;
@@ -16,11 +17,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.order.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-29 10:08:12
+ * @since 1.0, 2024-12-06 14:02:20
  */
 public class AlipayCommerceMedicalOrderDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7739613256874577491L;
+	private static final long serialVersionUID = 8628999623383939427L;
+
+	/** 
+	 * 用户订单维度享受的优惠信息
+	 */
+	@ApiField("discount")
+	private DiscountVO discount;
 
 	/** 
 	 * 商品信息
@@ -58,6 +65,13 @@ public class AlipayCommerceMedicalOrderDetailQueryResponse extends AlipayRespons
 	 */
 	@ApiField("user")
 	private UserSimpleVO user;
+
+	public void setDiscount(DiscountVO discount) {
+		this.discount = discount;
+	}
+	public DiscountVO getDiscount( ) {
+		return this.discount;
+	}
 
 	public void setItems(List<ItemsVO> items) {
 		this.items = items;

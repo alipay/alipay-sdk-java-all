@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class OpenApiOperationalAnalysisTrafficPageResult extends AlipayObject {
 
-	private static final long serialVersionUID = 7811196967198533284L;
+	private static final long serialVersionUID = 1549486169636871879L;
 
 	/**
 	 * 流量页面效果数据
