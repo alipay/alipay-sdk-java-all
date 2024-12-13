@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayBossFncGfsettlePaycontractCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5539358853652715992L;
+	private static final long serialVersionUID = 8251999497551399171L;
 
 	/**
 	 * 付款条款基础信息

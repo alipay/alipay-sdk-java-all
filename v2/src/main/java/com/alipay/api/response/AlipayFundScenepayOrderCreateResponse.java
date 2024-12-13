@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.scenepay.order.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-01 15:12:20
+ * @since 1.0, 2024-12-10 21:37:20
  */
 public class AlipayFundScenepayOrderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1757461893827222865L;
+	private static final long serialVersionUID = 7833937636694216358L;
 
 	/** 
 	 * 场景支付业务单号

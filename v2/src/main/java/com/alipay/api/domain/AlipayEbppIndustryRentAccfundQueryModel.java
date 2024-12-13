@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppIndustryRentAccfundQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3266983523163593732L;
+	private static final long serialVersionUID = 7777419256971411814L;
 
 	/**
 	 * 支付宝交易订单单号

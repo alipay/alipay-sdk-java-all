@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 随身贷授信申请结果查询
  *
  * @author auto create
- * @since 1.0, 2024-12-02 17:42:41
+ * @since 1.0, 2024-12-10 11:28:19
  */
 public class AlipayPcreditLoanSideloansignApplyQuerystatusModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7249953294224693429L;
+	private static final long serialVersionUID = 3223998826933164257L;
 
 	/**
 	 * 用户支付宝ID

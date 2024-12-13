@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.hotel.rateplan.upload response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-30 21:27:02
+ * @since 1.0, 2024-12-11 20:49:29
  */
 public class AlipayCommerceHotelRateplanUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8192292326746578231L;
+	private static final long serialVersionUID = 7878648751926866111L;
 
 	/** 
 	 * 是否成功

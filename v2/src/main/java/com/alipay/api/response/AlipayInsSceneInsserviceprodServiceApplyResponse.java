@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayInsSceneInsserviceprodServiceApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6548474569351873526L;
+	private static final long serialVersionUID = 1269961136129649716L;
 
 	/** 
 	 * 蚂蚁服务申请单号，机构通知蚂蚁生成服务订单后，返回给机构蚂蚁生成的单号，后续进度交互都需基于此单号

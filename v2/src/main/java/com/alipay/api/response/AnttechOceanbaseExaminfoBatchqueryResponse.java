@@ -1,0 +1,34 @@
+package com.alipay.api.response;
+
+import java.util.List;
+import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.ExamInfoDTO;
+
+import com.alipay.api.AlipayResponse;
+
+/**
+ * ALIPAY API: anttech.oceanbase.examinfo.batchquery response.
+ * 
+ * @author auto create
+ * @since 1.0, 2024-12-11 17:12:25
+ */
+public class AnttechOceanbaseExaminfoBatchqueryResponse extends AlipayResponse {
+
+	private static final long serialVersionUID = 5588422961864311324L;
+
+	/** 
+	 * 用户认证考试信息List
+	 */
+	@ApiListField("exam_infos")
+	@ApiField("exam_info_d_t_o")
+	private List<ExamInfoDTO> examInfos;
+
+	public void setExamInfos(List<ExamInfoDTO> examInfos) {
+		this.examInfos = examInfos;
+	}
+	public List<ExamInfoDTO> getExamInfos( ) {
+		return this.examInfos;
+	}
+
+}

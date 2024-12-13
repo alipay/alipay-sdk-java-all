@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class SettleInMerchantLicense extends AlipayObject {
 
-	private static final long serialVersionUID = 8547858378814452282L;
+	private static final long serialVersionUID = 7583268517526114223L;
 
 	/**
 	 * 商户上传资质详情

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 场景支付业务单创建
  *
  * @author auto create
- * @since 1.0, 2024-11-01 15:09:18
+ * @since 1.0, 2024-12-10 21:34:18
  */
 public class AlipayFundScenepayOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1456712328598329836L;
+	private static final long serialVersionUID = 5722125334375111112L;
 
 	/**
 	 * 指定值，由支付宝侧业务提供

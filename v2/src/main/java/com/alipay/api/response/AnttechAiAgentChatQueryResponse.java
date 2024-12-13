@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.ai.agent.chat.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-05 17:27:22
+ * @since 1.0, 2024-12-11 20:44:48
  */
 public class AnttechAiAgentChatQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7898921418172533342L;
+	private static final long serialVersionUID = 6293482554314212965L;
 
 	/** 
 	 * 最终完整结果的内容

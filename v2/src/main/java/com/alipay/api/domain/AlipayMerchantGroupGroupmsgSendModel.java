@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发送商家群内群发消息
  *
  * @author auto create
- * @since 1.0, 2024-09-30 21:05:17
+ * @since 1.0, 2024-12-13 10:25:51
  */
 public class AlipayMerchantGroupGroupmsgSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5819641543749965464L;
+	private static final long serialVersionUID = 8715315723184827212L;
 
 	/**
 	 * 是否需要@所有人，不传默认false(不需要@所有人)

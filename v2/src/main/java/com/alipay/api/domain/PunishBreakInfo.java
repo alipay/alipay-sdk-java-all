@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 失信被执行人信息
  *
  * @author auto create
- * @since 1.0, 2023-12-01 10:43:07
+ * @since 1.0, 2024-12-13 10:54:41
  */
 public class PunishBreakInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6373325742771938872L;
+	private static final long serialVersionUID = 3145317726166593823L;
 
 	/**
 	 * 法定代表人或负责人姓名
@@ -102,6 +102,12 @@ public class PunishBreakInfo extends AlipayObject {
 	 */
 	@ApiField("trpe")
 	private String trpe;
+
+	/**
+	 * 失信人类型
+	 */
+	@ApiField("type")
+	private String type;
 
 	/**
 	 * 未履行金额（元）
@@ -212,6 +218,13 @@ public class PunishBreakInfo extends AlipayObject {
 	}
 	public void setTrpe(String trpe) {
 		this.trpe = trpe;
+	}
+
+	public String getType() {
+		return this.type;
+	}
+	public void setType(String type) {
+		this.type = type;
 	}
 
 	public String getUnPerformPart() {

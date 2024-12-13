@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudTraasContentTextDetectResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4446523684746581242L;
+	private static final long serialVersionUID = 6782456111152764112L;
 
 	/** 
 	 * 唯一请求ID

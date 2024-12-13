@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundTransUniConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5384521355777416224L;
+	private static final long serialVersionUID = 4226723428656297759L;
 
 	/** 
 	 * 咨询时间，格式为yyyy-MM-dd HH:mm:ss

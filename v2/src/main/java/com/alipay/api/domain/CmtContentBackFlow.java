@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CmtContentBackFlow extends AlipayObject {
 
-	private static final long serialVersionUID = 5362345936692898238L;
+	private static final long serialVersionUID = 4315795363961336813L;
 
 	/**
 	 * 订单的评价状态 ,此处只返回评价的基础状态

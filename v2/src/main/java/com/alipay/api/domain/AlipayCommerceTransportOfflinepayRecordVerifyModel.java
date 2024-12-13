@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝脱机操作信息验证
  *
  * @author auto create
- * @since 1.0, 2016-07-01 22:05:47
+ * @since 1.0, 2024-12-09 16:06:22
  */
 public class AlipayCommerceTransportOfflinepayRecordVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3263434458917798769L;
+	private static final long serialVersionUID = 8879892515178952467L;
 
 	/**
 	 * 原始脱机记录信息

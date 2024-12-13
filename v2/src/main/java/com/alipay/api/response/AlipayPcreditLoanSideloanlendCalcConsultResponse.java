@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.sideloanlend.calc.consult response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-02 17:42:09
+ * @since 1.0, 2024-12-10 11:28:20
  */
 public class AlipayPcreditLoanSideloanlendCalcConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6621355917453592765L;
+	private static final long serialVersionUID = 4629513817617956218L;
 
 	/** 
 	 * 授信总额度，单位元，保留两位小数

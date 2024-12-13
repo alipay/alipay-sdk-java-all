@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医保报销信息
  *
  * @author auto create
- * @since 1.0, 2024-08-29 15:36:40
+ * @since 1.0, 2024-12-09 14:45:52
  */
 public class MedicareInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3854678438387894469L;
+	private static final long serialVersionUID = 2163929298676988965L;
 
 	/**
 	 * 医保个账金额

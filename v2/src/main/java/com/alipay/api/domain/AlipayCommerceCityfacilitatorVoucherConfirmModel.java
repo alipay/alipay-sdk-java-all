@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 钱包中地铁票购票，获得核销码，线下地铁自助购票机上凭核销码取票,购票确认
  *
  * @author auto create
- * @since 1.0, 2024-07-04 17:00:55
+ * @since 1.0, 2024-12-09 16:03:37
  */
 public class AlipayCommerceCityfacilitatorVoucherConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3268957366437352779L;
+	private static final long serialVersionUID = 7757132418858873919L;
 
 	/**
 	 * 金额，元为单位

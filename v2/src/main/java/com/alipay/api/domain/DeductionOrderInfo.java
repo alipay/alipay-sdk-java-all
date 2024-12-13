@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 核销订单信息
  *
  * @author auto create
- * @since 1.0, 2024-11-15 15:52:53
+ * @since 1.0, 2024-12-12 19:23:55
  */
 public class DeductionOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6623785295722144994L;
+	private static final long serialVersionUID = 2196926163684885468L;
 
 	/**
 	 * 费用信息集合
@@ -151,6 +151,12 @@ public class DeductionOrderInfo extends AlipayObject {
 	 */
 	@ApiField("plan_deduction_time")
 	private String planDeductionTime;
+
+	/**
+	 * 平台优惠金额，单位分
+	 */
+	@ApiField("platform_discount_price")
+	private Long platformDiscountPrice;
 
 	/**
 	 * 核销方式
@@ -346,6 +352,13 @@ public class DeductionOrderInfo extends AlipayObject {
 	}
 	public void setPlanDeductionTime(String planDeductionTime) {
 		this.planDeductionTime = planDeductionTime;
+	}
+
+	public Long getPlatformDiscountPrice() {
+		return this.platformDiscountPrice;
+	}
+	public void setPlatformDiscountPrice(Long platformDiscountPrice) {
+		this.platformDiscountPrice = platformDiscountPrice;
 	}
 
 	public String getRedeemWay() {

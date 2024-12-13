@@ -10,11 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 卡
  *
  * @author auto create
- * @since 1.0, 2024-12-05 18:44:52
+ * @since 1.0, 2024-12-12 19:24:18
  */
 public class MerchantCardTemplate extends AlipayObject {
 
-	private static final long serialVersionUID = 8695167153632933819L;
+	private static final long serialVersionUID = 2829478381914416956L;
+
+	/**
+	 * 卡营销优惠信息
+	 */
+	@ApiListField("card_promo_list")
+	@ApiField("card_promo_info")
+	private List<CardPromoInfo> cardPromoList;
 
 	/**
 	 * 卡归属的小程序appid
@@ -138,6 +145,13 @@ public class MerchantCardTemplate extends AlipayObject {
 	 */
 	@ApiField("use_info")
 	private CardTemplateUse useInfo;
+
+	public List<CardPromoInfo> getCardPromoList() {
+		return this.cardPromoList;
+	}
+	public void setCardPromoList(List<CardPromoInfo> cardPromoList) {
+		this.cardPromoList = cardPromoList;
+	}
 
 	public String getCardTemplateAppId() {
 		return this.cardTemplateAppId;

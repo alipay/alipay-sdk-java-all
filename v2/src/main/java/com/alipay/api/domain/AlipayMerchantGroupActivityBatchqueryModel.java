@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 顶部运营位批量查询
  *
  * @author auto create
- * @since 1.0, 2024-09-11 17:04:31
+ * @since 1.0, 2024-12-11 10:47:19
  */
 public class AlipayMerchantGroupActivityBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4487783957576415783L;
+	private static final long serialVersionUID = 7885333146673474177L;
 
 	/**
-	 * 商家群活动类型列表，目前支持custom (自定义活动)
+	 * 商家群活动类型列表，目前支持custom (自定义活动)、coupon(优惠群活动)
 	 */
 	@ApiListField("biz_type_list")
 	@ApiField("string")

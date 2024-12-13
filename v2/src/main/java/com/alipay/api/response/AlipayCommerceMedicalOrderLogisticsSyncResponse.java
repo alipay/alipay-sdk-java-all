@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.order.logistics.sync response.
  * 
  * @author auto create
- * @since 1.0, 2024-09-20 11:12:10
+ * @since 1.0, 2024-12-11 17:56:47
  */
 public class AlipayCommerceMedicalOrderLogisticsSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1298168988519786393L;
+	private static final long serialVersionUID = 8433884988329674216L;
 
 	/** 
 	 * true/false

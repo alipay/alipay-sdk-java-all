@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.sideloansign.close.preconsult response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-02 17:42:42
+ * @since 1.0, 2024-12-10 11:32:24
  */
 public class AlipayPcreditLoanSideloansignClosePreconsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7799853827544497948L;
+	private static final long serialVersionUID = 4376726696166931214L;
 
 	/** 
 	 * 关闭申请状态 returnCode为SUCCESS。可选值：

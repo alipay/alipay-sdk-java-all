@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenSearchServiceorderModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8685227528858481555L;
+	private static final long serialVersionUID = 1733867311264221164L;
 
 	/**
 	 * 创建搜索运营申请单的入参。base_items、brand_items、service_items 分别为基础信息、品牌直达、服务直达的模块数据信息，需根据提报类型选择进行相应的设置，不能同时填写。

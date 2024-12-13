@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.supervision.orderfund.unfreeze request
  * 
  * @author auto create
- * @since 1.0, 2024-12-06 10:08:08
+ * @since 1.0, 2024-12-12 15:02:51
  */
 public class AlipayEbppIndustrySupervisionOrderfundUnfreezeRequest implements AlipayRequest<AlipayEbppIndustrySupervisionOrderfundUnfreezeResponse> {
 

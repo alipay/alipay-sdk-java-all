@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GovDocRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 8831915264834917696L;
+	private static final long serialVersionUID = 6541258623933712177L;
 
 	/**
 	 * 请求

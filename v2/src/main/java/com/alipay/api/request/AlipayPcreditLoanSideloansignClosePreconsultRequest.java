@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.loan.sideloansign.close.preconsult request
  * 
  * @author auto create
- * @since 1.0, 2024-12-02 17:42:42
+ * @since 1.0, 2024-12-10 11:32:24
  */
 public class AlipayPcreditLoanSideloansignClosePreconsultRequest implements AlipayRequest<AlipayPcreditLoanSideloansignClosePreconsultResponse> {
 

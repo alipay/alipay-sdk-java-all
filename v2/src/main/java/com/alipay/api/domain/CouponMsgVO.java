@@ -10,17 +10,24 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 优惠券消息内容
  *
  * @author auto create
- * @since 1.0, 2024-09-30 17:58:07
+ * @since 1.0, 2024-12-13 10:25:51
  */
 public class CouponMsgVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3672463671738993591L;
+	private static final long serialVersionUID = 6756393273797488436L;
 
 	/**
 	 * 活动id，即券id
 	 */
 	@ApiField("activity_id")
 	private String activityId;
+
+	/**
+	 * 活动id列表
+	 */
+	@ApiListField("activity_id_list")
+	@ApiField("string")
+	private List<String> activityIdList;
 
 	/**
 	 * 图片id
@@ -33,6 +40,12 @@ public class CouponMsgVO extends AlipayObject {
 	 */
 	@ApiField("long_introduce_text")
 	private String longIntroduceText;
+
+	/**
+	 * 该字段用于描述本群发消息是否使用券包样式, 若为true, 则群发消息展示使用券包样式, 否则使用普通样式
+	 */
+	@ApiField("multi_coupon")
+	private Boolean multiCoupon;
 
 	/**
 	 * 短文本介绍文案列表
@@ -54,6 +67,13 @@ public class CouponMsgVO extends AlipayObject {
 		this.activityId = activityId;
 	}
 
+	public List<String> getActivityIdList() {
+		return this.activityIdList;
+	}
+	public void setActivityIdList(List<String> activityIdList) {
+		this.activityIdList = activityIdList;
+	}
+
 	public String getImageId() {
 		return this.imageId;
 	}
@@ -66,6 +86,13 @@ public class CouponMsgVO extends AlipayObject {
 	}
 	public void setLongIntroduceText(String longIntroduceText) {
 		this.longIntroduceText = longIntroduceText;
+	}
+
+	public Boolean getMultiCoupon() {
+		return this.multiCoupon;
+	}
+	public void setMultiCoupon(Boolean multiCoupon) {
+		this.multiCoupon = multiCoupon;
 	}
 
 	public List<String> getShortIntroduceTextList() {

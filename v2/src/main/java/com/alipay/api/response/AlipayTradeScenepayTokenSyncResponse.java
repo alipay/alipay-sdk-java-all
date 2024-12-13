@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.scenepay.token.sync response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-01 21:16:59
+ * @since 1.0, 2024-12-12 15:02:23
  */
 public class AlipayTradeScenepayTokenSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6327261112143476369L;
+	private static final long serialVersionUID = 3341157317571113836L;
 
 	
 

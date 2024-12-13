@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BizfundSettleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5567659137157275166L;
+	private static final long serialVersionUID = 6818181276116675214L;
 
 	/**
 	 * 请款|账期 模式

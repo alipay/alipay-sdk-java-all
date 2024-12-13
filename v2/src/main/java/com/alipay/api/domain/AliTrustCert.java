@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AliTrustCert extends AlipayObject {
 
-	private static final long serialVersionUID = 4394966295727943127L;
+	private static final long serialVersionUID = 4516315762191325182L;
 
 	/**
 	 * 点击信用认证图标之后的跳转链接

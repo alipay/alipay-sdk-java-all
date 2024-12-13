@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 缺材信息
  *
  * @author auto create
- * @since 1.0, 2024-11-22 12:00:17
+ * @since 1.0, 2024-12-10 17:36:40
  */
 public class LackMaterial extends AlipayObject {
 
-	private static final long serialVersionUID = 2354612371831735415L;
+	private static final long serialVersionUID = 1875795989416322568L;
 
 	/**
 	 * 补充材料话术

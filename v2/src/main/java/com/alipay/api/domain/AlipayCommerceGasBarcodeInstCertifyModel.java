@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceGasBarcodeInstCertifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4541722126296993265L;
+	private static final long serialVersionUID = 8453642722758965213L;
 
 	/**
 	 * 机构的会员编号

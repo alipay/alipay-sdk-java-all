@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppIndustryJobPayslipSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3459578479758116173L;
+	private static final long serialVersionUID = 8271982226468473758L;
 
 	/**
 	 * 付款金额，单位：元
@@ -41,7 +41,7 @@ public class AlipayEbppIndustryJobPayslipSyncModel extends AlipayObject {
 	private String cardNo;
 
 	/**
-	 * 付款渠道
+	 * 用户收款渠道
 	 */
 	@ApiField("channel")
 	private String channel;
@@ -65,7 +65,7 @@ public class AlipayEbppIndustryJobPayslipSyncModel extends AlipayObject {
 	private String contactInfo;
 
 	/**
-	 * 支付宝登录号。业务系统无用户UID时，可通过该参数同步手机号码。因手机号有一定比例无法匹配到UID，建议有UID的情况下优先同步UID。
+	 * 支付宝登录号。业务系统无用户UID时，可通过该参数同步用户支付宝登录账号，手机号/邮箱均可。因手机号/邮箱有一定比例无法匹配到UID，建议有UID的情况下优先同步UID。
 	 */
 	@ApiField("login_id")
 	private String loginId;

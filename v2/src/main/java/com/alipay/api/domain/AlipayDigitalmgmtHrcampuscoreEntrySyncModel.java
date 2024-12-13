@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDigitalmgmtHrcampuscoreEntrySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1493699797652699726L;
+	private static final long serialVersionUID = 7762174662911376151L;
 
 	/**
 	 * 校招签约三方名称（校招传）

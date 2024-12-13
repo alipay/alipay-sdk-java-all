@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 物业缴费生态模式小区信息同步
  *
  * @author auto create
- * @since 1.0, 2024-07-30 15:02:11
+ * @since 1.0, 2024-12-12 14:56:57
  */
 public class AlipayEbppCommunityThirdpartycommunityCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2211439141326418816L;
+	private static final long serialVersionUID = 4795848494795967979L;
 
 	/**
 	 * 小区地址

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.job.payslip.sync response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-04 10:52:20
+ * @since 1.0, 2024-12-11 14:12:21
  */
 public class AlipayEbppIndustryJobPayslipSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2553771898592999458L;
+	private static final long serialVersionUID = 1549144444514764987L;
 
 	/** 
 	 * 业务流水编号

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FailExternalSync extends AlipayObject {
 
-	private static final long serialVersionUID = 3288828923323539885L;
+	private static final long serialVersionUID = 7324226967438756933L;
 
 	/**
 	 * 支付宝账单ID

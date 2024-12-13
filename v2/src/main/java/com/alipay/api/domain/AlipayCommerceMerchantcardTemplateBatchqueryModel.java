@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 卡模版分页查询
  *
  * @author auto create
- * @since 1.0, 2024-12-05 18:44:52
+ * @since 1.0, 2024-12-12 19:24:29
  */
 public class AlipayCommerceMerchantcardTemplateBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4163635443159922989L;
+	private static final long serialVersionUID = 2132446574255957647L;
 
 	/**
 	 * 卡的归属appid
@@ -32,6 +32,12 @@ public class AlipayCommerceMerchantcardTemplateBatchqueryModel extends AlipayObj
 	private String cardType;
 
 	/**
+	 * 用于标记支付宝用户在应用下的唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/**
 	 * 页码
 	 */
 	@ApiField("page_num")
@@ -48,6 +54,12 @@ public class AlipayCommerceMerchantcardTemplateBatchqueryModel extends AlipayObj
 	 */
 	@ApiField("shop_id")
 	private String shopId;
+
+	/**
+	 * 支付宝用户的userId。
+	 */
+	@ApiField("user_id")
+	private String userId;
 
 	public String getCardTemplateAppid() {
 		return this.cardTemplateAppid;
@@ -70,6 +82,13 @@ public class AlipayCommerceMerchantcardTemplateBatchqueryModel extends AlipayObj
 		this.cardType = cardType;
 	}
 
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+
 	public Long getPageNum() {
 		return this.pageNum;
 	}
@@ -89,6 +108,13 @@ public class AlipayCommerceMerchantcardTemplateBatchqueryModel extends AlipayObj
 	}
 	public void setShopId(String shopId) {
 		this.shopId = shopId;
+	}
+
+	public String getUserId() {
+		return this.userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
 
 }

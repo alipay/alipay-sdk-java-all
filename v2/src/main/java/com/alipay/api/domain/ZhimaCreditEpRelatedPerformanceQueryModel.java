@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业法定代表人核验服务
  *
  * @author auto create
- * @since 1.0, 2024-12-03 14:40:43
+ * @since 1.0, 2024-12-13 10:54:41
  */
 public class ZhimaCreditEpRelatedPerformanceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4215826252125434645L;
+	private static final long serialVersionUID = 6663494179956622831L;
 
 	/**
 	 * 企业标识（统一信用代码/注册号/企业名）
@@ -30,6 +30,12 @@ public class ZhimaCreditEpRelatedPerformanceQueryModel extends AlipayObject {
 	 */
 	@ApiField("ry_cert_no")
 	private String ryCertNo;
+
+	/**
+	 * 自然人证件号（身份证号含护照等其他证件）SHA256加密的密文
+	 */
+	@ApiField("ry_cert_no_sha_256")
+	private String ryCertNoSha256;
 
 	/**
 	 * 人员姓名
@@ -56,6 +62,13 @@ public class ZhimaCreditEpRelatedPerformanceQueryModel extends AlipayObject {
 	}
 	public void setRyCertNo(String ryCertNo) {
 		this.ryCertNo = ryCertNo;
+	}
+
+	public String getRyCertNoSha256() {
+		return this.ryCertNoSha256;
+	}
+	public void setRyCertNoSha256(String ryCertNoSha256) {
+		this.ryCertNoSha256 = ryCertNoSha256;
 	}
 
 	public String getRyName() {

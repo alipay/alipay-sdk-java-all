@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class TransferCarData extends AlipayObject {
 
-	private static final long serialVersionUID = 5216694464748115782L;
+	private static final long serialVersionUID = 6512282692384297617L;
 
 	/**
 	 * acid值，车生活的 acid 值，需要传递车生活 acid

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家群活动详情模型
  *
  * @author auto create
- * @since 1.0, 2024-10-30 11:22:55
+ * @since 1.0, 2024-12-11 10:47:22
  */
 public class GroupActivityDetailVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6538498892538827172L;
+	private static final long serialVersionUID = 6781564534339242772L;
 
 	/**
 	 * 业务类型
@@ -28,6 +28,12 @@ public class GroupActivityDetailVO extends AlipayObject {
 	 */
 	@ApiField("client_position")
 	private String clientPosition;
+
+	/**
+	 * 优惠群活动顶部运营位内容
+	 */
+	@ApiField("coupon_content")
+	private CouponActivityContentVO couponContent;
 
 	/**
 	 * 自定义活动顶部运营位内容
@@ -84,6 +90,13 @@ public class GroupActivityDetailVO extends AlipayObject {
 	}
 	public void setClientPosition(String clientPosition) {
 		this.clientPosition = clientPosition;
+	}
+
+	public CouponActivityContentVO getCouponContent() {
+		return this.couponContent;
+	}
+	public void setCouponContent(CouponActivityContentVO couponContent) {
+		this.couponContent = couponContent;
 	}
 
 	public CustomActivityContentVO getCustomContent() {

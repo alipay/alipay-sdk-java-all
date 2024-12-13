@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaCreditPeIndustryTradePayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4674271299789579441L;
+	private static final long serialVersionUID = 5616695124375529753L;
 
 	/** 
 	 * 交易资金流水号

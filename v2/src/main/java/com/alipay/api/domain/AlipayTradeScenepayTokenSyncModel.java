@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景支付凭证同步
  *
  * @author auto create
- * @since 1.0, 2024-04-01 21:16:25
+ * @since 1.0, 2024-12-12 14:57:19
  */
 public class AlipayTradeScenepayTokenSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1748288493383691626L;
+	private static final long serialVersionUID = 4463382629444251251L;
 
 	/**
 	 * 签约协议号

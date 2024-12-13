@@ -11,17 +11,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 顶部运营位创建
  *
  * @author auto create
- * @since 1.0, 2024-09-10 19:45:01
+ * @since 1.0, 2024-12-11 10:47:19
  */
 public class AlipayMerchantGroupActivityCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2671556169253247187L;
+	private static final long serialVersionUID = 8157187894243266843L;
 
 	/**
 	 * 业务类型
 	 */
 	@ApiField("biz_type")
 	private String bizType;
+
+	/**
+	 * 优惠群活动顶部运营位内容
+	 */
+	@ApiField("coupon_content")
+	private CouponActivityContentVO couponContent;
 
 	/**
 	 * 自定义活动顶部运营位内容
@@ -49,7 +55,7 @@ public class AlipayMerchantGroupActivityCreateModel extends AlipayObject {
 	private List<String> groupIds;
 
 	/**
-	 * 展示优先级
+	 * 展示优先级 1-100, 数字越大优先级越高
 	 */
 	@ApiField("priority")
 	private Long priority;
@@ -59,6 +65,13 @@ public class AlipayMerchantGroupActivityCreateModel extends AlipayObject {
 	}
 	public void setBizType(String bizType) {
 		this.bizType = bizType;
+	}
+
+	public CouponActivityContentVO getCouponContent() {
+		return this.couponContent;
+	}
+	public void setCouponContent(CouponActivityContentVO couponContent) {
+		this.couponContent = couponContent;
 	}
 
 	public CustomActivityContentVO getCustomContent() {

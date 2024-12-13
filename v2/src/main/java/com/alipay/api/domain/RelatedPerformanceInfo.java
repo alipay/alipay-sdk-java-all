@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 作为法定代表人/主要管理人员/股东信息  的企业信息
  *
  * @author auto create
- * @since 1.0, 2023-11-29 20:07:37
+ * @since 1.0, 2024-12-13 10:54:41
  */
 public class RelatedPerformanceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1668934257531386561L;
+	private static final long serialVersionUID = 5646754381349837431L;
 
 	/**
 	 * 注册所在地
@@ -164,7 +164,7 @@ public class RelatedPerformanceInfo extends AlipayObject {
 	private String revokeDate;
 
 	/**
-	 * 查询人姓名
+	 * 法人姓名
 	 */
 	@ApiField("ry_name")
 	private String ryName;

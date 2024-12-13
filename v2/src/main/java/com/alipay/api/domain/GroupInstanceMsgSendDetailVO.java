@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 群发消息具体群内发送详情
  *
  * @author auto create
- * @since 1.0, 2024-09-30 17:58:11
+ * @since 1.0, 2024-12-13 10:25:56
  */
 public class GroupInstanceMsgSendDetailVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2733946537748277336L;
+	private static final long serialVersionUID = 8225364134858426284L;
 
 	/**
 	 * 群id
@@ -46,7 +46,7 @@ public class GroupInstanceMsgSendDetailVO extends AlipayObject {
 	private String status;
 
 	/**
-	 * 状态描述
+	 * 群发消息发送记录描述
 	 */
 	@ApiField("tips")
 	private String tips;

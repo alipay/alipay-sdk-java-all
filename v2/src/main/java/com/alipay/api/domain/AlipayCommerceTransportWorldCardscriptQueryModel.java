@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生码脚本查询
  *
  * @author auto create
- * @since 1.0, 2020-03-23 22:07:43
+ * @since 1.0, 2024-12-09 16:05:54
  */
 public class AlipayCommerceTransportWorldCardscriptQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3516585434145566246L;
+	private static final long serialVersionUID = 4537834837933435668L;
 
 	/**
 	 * 脚本名称

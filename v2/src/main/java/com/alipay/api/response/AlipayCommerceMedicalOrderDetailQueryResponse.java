@@ -17,17 +17,18 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.order.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-06 14:02:20
+ * @since 1.0, 2024-12-10 14:56:52
  */
 public class AlipayCommerceMedicalOrderDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8628999623383939427L;
+	private static final long serialVersionUID = 4876469916852731568L;
 
 	/** 
 	 * 用户订单维度享受的优惠信息
 	 */
-	@ApiField("discount")
-	private DiscountVO discount;
+	@ApiListField("discount")
+	@ApiField("discount_v_o")
+	private List<DiscountVO> discount;
 
 	/** 
 	 * 商品信息
@@ -66,10 +67,10 @@ public class AlipayCommerceMedicalOrderDetailQueryResponse extends AlipayRespons
 	@ApiField("user")
 	private UserSimpleVO user;
 
-	public void setDiscount(DiscountVO discount) {
+	public void setDiscount(List<DiscountVO> discount) {
 		this.discount = discount;
 	}
-	public DiscountVO getDiscount( ) {
+	public List<DiscountVO> getDiscount( ) {
 		return this.discount;
 	}
 
