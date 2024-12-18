@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingActivityDeductConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5374988526417743829L;
+	private static final long serialVersionUID = 3452777859523497429L;
 
 	/**
 	 * 券指定的核销appid（如果配券时指定了核销范围为线上小程序及相应的appid则此处必传）

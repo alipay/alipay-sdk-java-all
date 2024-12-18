@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingDataDeerConnectorQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5484853335326785863L;
+	private static final long serialVersionUID = 1622962373161963369L;
 
 	/**
 	 * 活动洞察数据查询标识

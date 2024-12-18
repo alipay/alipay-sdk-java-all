@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySocialAntforestCarbonneutralityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6878642335163313743L;
+	private static final long serialVersionUID = 8873278282657641953L;
 
 	/** 
 	 * 人人1kg预计碳中和排放量

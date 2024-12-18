@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.dcs.merchant.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 16:38:03
+ * @since 1.0, 2024-12-17 17:39:41
  */
 public class AlipayCommerceOperationDcsMerchantQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8527764562394471728L;
+	private static final long serialVersionUID = 3245568417795363315L;
 
 	
 

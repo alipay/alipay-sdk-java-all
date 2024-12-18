@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMsaasMediarecogMmtcapiAntigenIdentifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7847578454959217279L;
+	private static final long serialVersionUID = 4193916166216361659L;
 
 	/** 
 	 * 算法返回结果，json字符串，无敏感信息

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppJfExportUnsignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5454958489278119192L;
+	private static final long serialVersionUID = 6889166731687916243L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识

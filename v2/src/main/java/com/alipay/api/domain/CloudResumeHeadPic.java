@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CloudResumeHeadPic extends AlipayObject {
 
-	private static final long serialVersionUID = 3587115793332782788L;
+	private static final long serialVersionUID = 1441493919961843167L;
 
 	/**
 	 * 头像连接url

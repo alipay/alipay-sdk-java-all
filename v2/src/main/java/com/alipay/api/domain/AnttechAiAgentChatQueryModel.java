@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 数字科技Agent智能体对话
  *
  * @author auto create
- * @since 1.0, 2024-11-05 17:25:41
+ * @since 1.0, 2024-12-17 18:33:51
  */
 public class AnttechAiAgentChatQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2245717864835513712L;
+	private static final long serialVersionUID = 3642339595247922381L;
 
 	/**
 	 * 智能助手标识，由服务提供方发放，用于区别不同服务场景，每个智能助手的服务场景对应不同的配置，如访问的大模型类型、版本、依赖的知识库等等
@@ -28,6 +28,12 @@ public class AnttechAiAgentChatQueryModel extends AlipayObject {
 	@ApiListField("chat_contents")
 	@ApiField("d_t_agent_chat_content")
 	private List<DTAgentChatContent> chatContents;
+
+	/**
+	 * 是否使用心跳模式，为true返回event会包含心跳信息
+	 */
+	@ApiField("heartbeat_mode")
+	private Boolean heartbeatMode;
 
 	/**
 	 * 业务场景参数，用于特殊场景的定制化入参
@@ -53,6 +59,13 @@ public class AnttechAiAgentChatQueryModel extends AlipayObject {
 	}
 	public void setChatContents(List<DTAgentChatContent> chatContents) {
 		this.chatContents = chatContents;
+	}
+
+	public Boolean getHeartbeatMode() {
+		return this.heartbeatMode;
+	}
+	public void setHeartbeatMode(Boolean heartbeatMode) {
+		this.heartbeatMode = heartbeatMode;
 	}
 
 	public DTAgentSceneParam getSceneParam() {

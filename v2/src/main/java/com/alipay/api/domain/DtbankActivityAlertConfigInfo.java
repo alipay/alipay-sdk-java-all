@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 预算预警信息
  *
  * @author auto create
- * @since 1.0, 2024-11-15 16:04:20
+ * @since 1.0, 2024-12-16 13:14:53
  */
 public class DtbankActivityAlertConfigInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3383787287962291662L;
+	private static final long serialVersionUID = 1398198753931192557L;
 
 	/**
 	 * 总剩余预算预警值，单位：分
@@ -42,6 +42,12 @@ public class DtbankActivityAlertConfigInfo extends AlipayObject {
 	@ApiField("string")
 	private List<String> phoneNoList;
 
+	/**
+	 * 配置的核销速率预警值，单位：分
+	 */
+	@ApiField("write_off_rate_alert_value")
+	private Long writeOffRateAlertValue;
+
 	public Long getAlertValue() {
 		return this.alertValue;
 	}
@@ -68,6 +74,13 @@ public class DtbankActivityAlertConfigInfo extends AlipayObject {
 	}
 	public void setPhoneNoList(List<String> phoneNoList) {
 		this.phoneNoList = phoneNoList;
+	}
+
+	public Long getWriteOffRateAlertValue() {
+		return this.writeOffRateAlertValue;
+	}
+	public void setWriteOffRateAlertValue(Long writeOffRateAlertValue) {
+		this.writeOffRateAlertValue = writeOffRateAlertValue;
 	}
 
 }

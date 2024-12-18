@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.yuntask.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 17:41:48
+ * @since 1.0, 2024-12-17 17:26:03
  */
 public class AlipayCommerceYuntaskConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4571414574723222522L;
+	private static final long serialVersionUID = 7881887664643826478L;
 
 	/** 
 	 * 执行成功结果

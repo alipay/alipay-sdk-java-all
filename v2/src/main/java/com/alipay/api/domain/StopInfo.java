@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class StopInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6798921327852424745L;
+	private static final long serialVersionUID = 1433341859468189749L;
 
 	/**
 	 * 经停机场三字码

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceAcommunicationDoublevipSmscodeSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2574585256794153914L;
+	private static final long serialVersionUID = 5337437199179465818L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识

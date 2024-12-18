@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单配送状态同步
  *
  * @author auto create
- * @since 1.0, 2024-09-20 10:35:55
+ * @since 1.0, 2024-12-17 16:15:48
  */
 public class AlipayCommerceMedicalOrderLogisticsSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3391455753976326337L;
+	private static final long serialVersionUID = 1292536175123239969L;
 
 	/**
 	 * 第三方配送商物流单号，取自商家平台呼叫三方配送骑手的配送订单号
@@ -32,10 +32,22 @@ public class AlipayCommerceMedicalOrderLogisticsSyncModel extends AlipayObject {
 	private String courierPhone;
 
 	/**
+	 * 骑手当前的纬度，使用的是高德坐标系
+	 */
+	@ApiField("latitude")
+	private String latitude;
+
+	/**
 	 * 骑手配送状态
 	 */
 	@ApiField("logistics_status")
 	private String logisticsStatus;
+
+	/**
+	 * 骑手当前的经度，使用的是高德坐标系
+	 */
+	@ApiField("longitude")
+	private String longitude;
 
 	/**
 	 * 订单号
@@ -54,6 +66,25 @@ public class AlipayCommerceMedicalOrderLogisticsSyncModel extends AlipayObject {
 	 */
 	@ApiField("provider_phone")
 	private String providerPhone;
+
+	/**
+	 * 配送取消/异常的原因
+	 */
+	@ApiField("reason")
+	private String reason;
+
+	/**
+	 * 配送取消/异常的原因code
+9999 :其他原因（ 商家传入自定义）
+	 */
+	@ApiField("reason_code")
+	private String reasonCode;
+
+	/**
+	 * 当前时间，格式：时间戳
+	 */
+	@ApiField("utc")
+	private String utc;
 
 	public String getCarrierOrderNo() {
 		return this.carrierOrderNo;
@@ -76,11 +107,25 @@ public class AlipayCommerceMedicalOrderLogisticsSyncModel extends AlipayObject {
 		this.courierPhone = courierPhone;
 	}
 
+	public String getLatitude() {
+		return this.latitude;
+	}
+	public void setLatitude(String latitude) {
+		this.latitude = latitude;
+	}
+
 	public String getLogisticsStatus() {
 		return this.logisticsStatus;
 	}
 	public void setLogisticsStatus(String logisticsStatus) {
 		this.logisticsStatus = logisticsStatus;
+	}
+
+	public String getLongitude() {
+		return this.longitude;
+	}
+	public void setLongitude(String longitude) {
+		this.longitude = longitude;
 	}
 
 	public String getOrderNo() {
@@ -102,6 +147,27 @@ public class AlipayCommerceMedicalOrderLogisticsSyncModel extends AlipayObject {
 	}
 	public void setProviderPhone(String providerPhone) {
 		this.providerPhone = providerPhone;
+	}
+
+	public String getReason() {
+		return this.reason;
+	}
+	public void setReason(String reason) {
+		this.reason = reason;
+	}
+
+	public String getReasonCode() {
+		return this.reasonCode;
+	}
+	public void setReasonCode(String reasonCode) {
+		this.reasonCode = reasonCode;
+	}
+
+	public String getUtc() {
+		return this.utc;
+	}
+	public void setUtc(String utc) {
+		this.utc = utc;
 	}
 
 }

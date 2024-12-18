@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.multimedia.test.create request
  * 
  * @author auto create
- * @since 1.0, 2024-08-30 11:19:05
+ * @since 1.0, 2024-12-13 18:55:34
  */
 public class AlipayMultimediaTestCreateRequest implements AlipayRequest<AlipayMultimediaTestCreateResponse> {
 

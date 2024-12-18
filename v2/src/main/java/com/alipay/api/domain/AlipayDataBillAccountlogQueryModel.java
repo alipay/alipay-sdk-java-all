@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataBillAccountlogQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6669214624893556118L;
+	private static final long serialVersionUID = 2263535589759173586L;
 
 	/**
 	 * 协议授权码，特殊场景下使用
@@ -62,7 +62,7 @@ public class AlipayDataBillAccountlogQueryModel extends AlipayObject {
 	private String pageSize;
 
 	/**
-	 * 账务流水创建时间的起始范围
+	 * 账务流水创建时间的起始范围。只能查询一年内的记录
 	 */
 	@ApiField("start_time")
 	private String startTime;

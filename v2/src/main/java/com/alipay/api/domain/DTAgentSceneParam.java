@@ -1,22 +1,33 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 业务场景参数
  *
  * @author auto create
- * @since 1.0, 2024-11-05 17:25:41
+ * @since 1.0, 2024-12-17 18:33:51
  */
 public class DTAgentSceneParam extends AlipayObject {
 
-	private static final long serialVersionUID = 3648297138384374158L;
+	private static final long serialVersionUID = 3375544672477591814L;
 
 	/**
-	 * 场景业务参数
+	 * 自定义业务参数
+	 */
+	@ApiListField("scene_biz_args")
+	@ApiField("d_t_agent_ext_info")
+	private List<DTAgentExtInfo> sceneBizArgs;
+
+	/**
+	 * 场景业务参数 当前字段已废弃(该参数在下游已废弃使用)
 	 */
 	@ApiField("scene_ext_info")
+	@Deprecated
 	private DTAgentExtInfo sceneExtInfo;
 
 	/**
@@ -30,6 +41,13 @@ public class DTAgentSceneParam extends AlipayObject {
 	 */
 	@ApiField("scene_user_id")
 	private String sceneUserId;
+
+	public List<DTAgentExtInfo> getSceneBizArgs() {
+		return this.sceneBizArgs;
+	}
+	public void setSceneBizArgs(List<DTAgentExtInfo> sceneBizArgs) {
+		this.sceneBizArgs = sceneBizArgs;
+	}
 
 	public DTAgentExtInfo getSceneExtInfo() {
 		return this.sceneExtInfo;

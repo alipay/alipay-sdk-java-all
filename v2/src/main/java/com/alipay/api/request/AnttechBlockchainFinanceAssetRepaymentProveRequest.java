@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.finance.asset.repayment.prove request
  * 
  * @author auto create
- * @since 1.0, 2023-08-24 22:12:06
+ * @since 1.0, 2024-12-16 11:43:34
  */
 public class AnttechBlockchainFinanceAssetRepaymentProveRequest implements AlipayRequest<AnttechBlockchainFinanceAssetRepaymentProveResponse> {
 

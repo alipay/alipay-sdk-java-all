@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AdvanceElementsDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5446458433192259786L;
+	private static final long serialVersionUID = 5562191148717242648L;
 
 	/**
 	 * 请款绑定支付宝内部账号

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ApeSearchContext extends AlipayObject {
 
-	private static final long serialVersionUID = 1774445685715155862L;
+	private static final long serialVersionUID = 3618318337426577589L;
 
 	/**
 	 * 用户当前城市编码

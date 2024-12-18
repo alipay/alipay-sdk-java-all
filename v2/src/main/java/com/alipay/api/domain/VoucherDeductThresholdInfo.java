@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VoucherDeductThresholdInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2239347234992887796L;
+	private static final long serialVersionUID = 8376985152392578743L;
 
 	/**
 	 * 自定义门槛描述

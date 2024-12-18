@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CorpShareholderVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1375178324651286923L;
+	private static final long serialVersionUID = 5244988495777247957L;
 
 	/**
 	 * 出资时间

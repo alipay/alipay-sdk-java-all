@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundTaxbillSignUnsignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8577167381774542717L;
+	private static final long serialVersionUID = 5185758452985363262L;
 
 	/** 
 	 * 解约受理结果

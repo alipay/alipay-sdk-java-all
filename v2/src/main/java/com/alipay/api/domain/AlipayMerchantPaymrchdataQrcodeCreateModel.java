@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付商家渠道开通经营码开放接口
  *
  * @author auto create
- * @since 1.0, 2024-10-11 15:35:56
+ * @since 1.0, 2024-12-16 10:44:36
  */
 public class AlipayMerchantPaymrchdataQrcodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1193422229115174594L;
+	private static final long serialVersionUID = 3247223147745172538L;
 
 	/**
 	 * 商户经营地址

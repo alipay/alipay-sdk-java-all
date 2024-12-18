@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 价格计划
  *
  * @author auto create
- * @since 1.0, 2024-07-05 18:25:10
+ * @since 1.0, 2024-12-18 11:21:16
  */
 public class RatePlan extends AlipayObject {
 
-	private static final long serialVersionUID = 6618822933197799133L;
+	private static final long serialVersionUID = 2749524458893764199L;
 
 	/**
 	 * 对应的预订规则编号列表
@@ -23,6 +23,13 @@ public class RatePlan extends AlipayObject {
 	@ApiListField("booking_rule_ids")
 	@ApiField("string")
 	private List<String> bookingRuleIds;
+
+	/**
+	 * 取消规则v2，新增商户对接该字段
+	 */
+	@ApiListField("cancel_rules")
+	@ApiField("cancel_rule")
+	private List<CancelRule> cancelRules;
 
 	/**
 	 * 平均确认时长分钟数，IsInstantConfirm 为false时需传该值
@@ -153,6 +160,13 @@ false:失效
 	}
 	public void setBookingRuleIds(List<String> bookingRuleIds) {
 		this.bookingRuleIds = bookingRuleIds;
+	}
+
+	public List<CancelRule> getCancelRules() {
+		return this.cancelRules;
+	}
+	public void setCancelRules(List<CancelRule> cancelRules) {
+		this.cancelRules = cancelRules;
 	}
 
 	public Long getConfirmMinutes() {

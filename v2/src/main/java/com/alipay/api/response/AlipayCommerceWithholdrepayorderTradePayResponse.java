@@ -17,7 +17,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceWithholdrepayorderTradePayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2529731448185471145L;
+	private static final long serialVersionUID = 3189634826515494619L;
 
 	/** 
 	 * 先享后付2.0垫资金额,不返回表示没有走垫资，非空表示垫资支付的金额

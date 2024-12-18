@@ -7,35 +7,63 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医保报销信息
  *
  * @author auto create
- * @since 1.0, 2024-12-09 14:45:52
+ * @since 1.0, 2024-12-17 16:14:55
  */
 public class MedicareInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2163929298676988965L;
+	private static final long serialVersionUID = 6448526211959611931L;
+
+	/**
+	 * 医保个账金额 当前字段已废弃(字段类型不正确，改为price 元为单位)
+	 */
+	@ApiField("mi_personal_amount")
+	@Deprecated
+	private Long miPersonalAmount;
 
 	/**
 	 * 医保个账金额
 	 */
-	@ApiField("mi_personal_amount")
-	private Long miPersonalAmount;
+	@ApiField("mi_personal_amt")
+	private String miPersonalAmt;
+
+	/**
+	 * 医保统筹金额 当前字段已废弃(字段类型不正确，改为price 元为单位)
+	 */
+	@ApiField("mi_pool_amount")
+	@Deprecated
+	private Long miPoolAmount;
 
 	/**
 	 * 医保统筹金额
 	 */
-	@ApiField("mi_pool_amount")
-	private Long miPoolAmount;
+	@ApiField("mi_pool_amt")
+	private String miPoolAmt;
 
 	/**
-	 * 医保自付金额
+	 * 医保自付金额 当前字段已废弃(字段类型不正确，改为price 元为单位)
 	 */
 	@ApiField("mi_self_amount")
+	@Deprecated
 	private Long miSelfAmount;
+
+	/**
+	 * 自付金额
+	 */
+	@ApiField("mi_self_amt")
+	private String miSelfAmt;
 
 	public Long getMiPersonalAmount() {
 		return this.miPersonalAmount;
 	}
 	public void setMiPersonalAmount(Long miPersonalAmount) {
 		this.miPersonalAmount = miPersonalAmount;
+	}
+
+	public String getMiPersonalAmt() {
+		return this.miPersonalAmt;
+	}
+	public void setMiPersonalAmt(String miPersonalAmt) {
+		this.miPersonalAmt = miPersonalAmt;
 	}
 
 	public Long getMiPoolAmount() {
@@ -45,11 +73,25 @@ public class MedicareInfoVO extends AlipayObject {
 		this.miPoolAmount = miPoolAmount;
 	}
 
+	public String getMiPoolAmt() {
+		return this.miPoolAmt;
+	}
+	public void setMiPoolAmt(String miPoolAmt) {
+		this.miPoolAmt = miPoolAmt;
+	}
+
 	public Long getMiSelfAmount() {
 		return this.miSelfAmount;
 	}
 	public void setMiSelfAmount(Long miSelfAmount) {
 		this.miSelfAmount = miSelfAmount;
+	}
+
+	public String getMiSelfAmt() {
+		return this.miSelfAmt;
+	}
+	public void setMiSelfAmt(String miSelfAmt) {
+		this.miSelfAmt = miSelfAmt;
 	}
 
 }

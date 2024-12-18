@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 物流运单信息
  *
  * @author auto create
- * @since 1.0, 2024-07-22 11:28:13
+ * @since 1.0, 2024-12-17 10:52:38
  */
 public class LogisticsWaybill extends AlipayObject {
 
-	private static final long serialVersionUID = 8476474755812535396L;
+	private static final long serialVersionUID = 5896122973498421178L;
 
 	/**
 	 * 用户自行寄件退货时填写的补充描述

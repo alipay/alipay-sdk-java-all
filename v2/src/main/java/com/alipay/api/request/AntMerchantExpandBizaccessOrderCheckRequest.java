@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.expand.bizaccess.order.check request
  * 
  * @author auto create
- * @since 1.0, 2024-12-09 09:47:23
+ * @since 1.0, 2024-12-17 15:37:21
  */
 public class AntMerchantExpandBizaccessOrderCheckRequest implements AlipayRequest<AntMerchantExpandBizaccessOrderCheckResponse> {
 

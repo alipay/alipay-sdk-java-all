@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySocialAntiepRightsSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5277416741741229894L;
+	private static final long serialVersionUID = 6467285998678472169L;
 
 	/**
 	 * 发放权益时间

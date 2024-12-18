@@ -6,6 +6,7 @@ import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.AftersaleItemInfo;
 import com.alipay.api.domain.OrderMediaInfo;
 import com.alipay.api.domain.LogisticsWaybill;
+import com.alipay.api.domain.AftersaleServiceTag;
 
 import com.alipay.api.AlipayResponse;
 
@@ -13,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.order.aftersale.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-11 19:34:00
+ * @since 1.0, 2024-12-17 10:57:21
  */
 public class AlipayOpenMiniOrderAftersaleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6142556256628524835L;
+	private static final long serialVersionUID = 8386834674241491171L;
 
 	/** 
 	 * 售后单触发类型
@@ -93,6 +94,13 @@ public class AlipayOpenMiniOrderAftersaleQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("path")
 	private String path;
+
+	/** 
+	 * 售后服务标签列表，该笔售后单享有哪些需要关注的售后保障服务。
+	 */
+	@ApiListField("service_tag_list")
+	@ApiField("aftersale_service_tag")
+	private List<AftersaleServiceTag> serviceTagList;
 
 	/** 
 	 * 售后单状态
@@ -194,6 +202,13 @@ public class AlipayOpenMiniOrderAftersaleQueryResponse extends AlipayResponse {
 	}
 	public String getPath( ) {
 		return this.path;
+	}
+
+	public void setServiceTagList(List<AftersaleServiceTag> serviceTagList) {
+		this.serviceTagList = serviceTagList;
+	}
+	public List<AftersaleServiceTag> getServiceTagList( ) {
+		return this.serviceTagList;
 	}
 
 	public void setStatus(String status) {

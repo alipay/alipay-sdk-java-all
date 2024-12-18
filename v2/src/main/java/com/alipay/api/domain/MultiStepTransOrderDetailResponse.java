@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MultiStepTransOrderDetailResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 7326128115797416573L;
+	private static final long serialVersionUID = 5569653945994581327L;
 
 	/**
 	 * 转账额度 单位：元

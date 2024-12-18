@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.ai.agent.chat.query request
  * 
  * @author auto create
- * @since 1.0, 2024-12-11 20:44:48
+ * @since 1.0, 2024-12-17 18:37:21
  */
 public class AnttechAiAgentChatQueryRequest implements AlipayRequest<AnttechAiAgentChatQueryResponse> {
 
