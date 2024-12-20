@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenMiniPlanOperateCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3287822763434581618L;
+	private static final long serialVersionUID = 6339161133726641359L;
 
 	/** 
 	 * 创建支付后推荐方案返回的方案id，后续用户可根据该方案ID对方案进行终止和调整优先级

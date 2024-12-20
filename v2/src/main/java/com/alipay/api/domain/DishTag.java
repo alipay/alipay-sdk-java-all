@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DishTag extends AlipayObject {
 
-	private static final long serialVersionUID = 2773936212844698831L;
+	private static final long serialVersionUID = 7589791795212988126L;
 
 	/**
 	 * 标签类型 : 如"菜属性"，"菜推荐"

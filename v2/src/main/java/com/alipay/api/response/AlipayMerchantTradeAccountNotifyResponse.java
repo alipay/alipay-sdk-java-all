@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.trade.account.notify response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-05 11:47:24
+ * @since 1.0, 2024-12-19 13:37:21
  */
 public class AlipayMerchantTradeAccountNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5643116355959996177L;
+	private static final long serialVersionUID = 8792619118258669291L;
 
 	
 

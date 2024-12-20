@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingPartnershipsStopModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1712925198253331171L;
+	private static final long serialVersionUID = 6824595524338525122L;
 
 	/**
 	 * 本次终止授权给合作方的营销资源。

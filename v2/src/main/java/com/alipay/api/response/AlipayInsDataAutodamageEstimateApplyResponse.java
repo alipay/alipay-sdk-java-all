@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayInsDataAutodamageEstimateApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3171955243273416441L;
+	private static final long serialVersionUID = 7754432352437597377L;
 
 	
 

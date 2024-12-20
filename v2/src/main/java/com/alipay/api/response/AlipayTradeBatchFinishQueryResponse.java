@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayTradeBatchFinishQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7617725217337352417L;
+	private static final long serialVersionUID = 2373719175774658931L;
 
 	/** 
 	 * 关账汇总的查询返回列表，单个关账查询结果的处理规则如下：如查询不存在，则不返回；如单个查询异常，也会过滤不返回；

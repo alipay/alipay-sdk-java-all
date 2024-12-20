@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RcvDto extends AlipayObject {
 
-	private static final long serialVersionUID = 3319155165281654455L;
+	private static final long serialVersionUID = 5285263354655987619L;
 
 	/**
 	 * 公司

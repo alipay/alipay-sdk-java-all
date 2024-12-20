@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 交易组件业务单创建
  *
  * @author auto create
- * @since 1.0, 2024-11-26 13:18:05
+ * @since 1.0, 2024-12-18 14:22:56
  */
 public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5175453124397535488L;
+	private static final long serialVersionUID = 6653769666357478442L;
 
 	/**
 	 * 订单收货地址
@@ -187,6 +187,12 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 	 */
 	@ApiField("title")
 	private String title;
+
+	/**
+	 * 收单appid；商家异收单主体情况下，当前功能不支持（当前默认下单主体为收单主体）；需要商家回传收单主体，实现真实交易流程；
+	 */
+	@ApiField("trade_app_id")
+	private String tradeAppId;
 
 	public MiniReceiverAddressInfoDTO getAddressInfo() {
 		return this.addressInfo;
@@ -382,6 +388,13 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 	}
 	public void setTitle(String title) {
 		this.title = title;
+	}
+
+	public String getTradeAppId() {
+		return this.tradeAppId;
+	}
+	public void setTradeAppId(String tradeAppId) {
+		this.tradeAppId = tradeAppId;
 	}
 
 }

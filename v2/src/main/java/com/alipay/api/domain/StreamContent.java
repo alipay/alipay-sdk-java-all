@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class StreamContent extends AlipayObject {
 
-	private static final long serialVersionUID = 3135499335286266128L;
+	private static final long serialVersionUID = 8172385834999938697L;
 
 	/**
 	 * 代表当前流式类型推送内容状态标识

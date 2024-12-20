@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class OpenApiInvoiceMixInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8818752483234518996L;
+	private static final long serialVersionUID = 3871832329661876678L;
 
 	/**
 	 * 预览融合信息生成的发票列表

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SendCodeResult extends AlipayObject {
 
-	private static final long serialVersionUID = 8113813995594912914L;
+	private static final long serialVersionUID = 2326563573247125156L;
 
 	/**
 	 * 服务商发奖后返回的券码列表

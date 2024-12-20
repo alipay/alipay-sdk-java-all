@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceWithholdTaskCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3828684352125947195L;
+	private static final long serialVersionUID = 6861823388953651822L;
 
 	/**
 	 * 代扣协议号
@@ -25,7 +25,7 @@ public class AlipayCommerceWithholdTaskCreateModel extends AlipayObject {
 	 * 扣款金额，单位为分
 	 */
 	@ApiField("deduct")
-	private Long deduct;
+	private String deduct;
 
 	/**
 	 * 代扣任务结束时间
@@ -58,10 +58,10 @@ public class AlipayCommerceWithholdTaskCreateModel extends AlipayObject {
 		this.agreementNo = agreementNo;
 	}
 
-	public Long getDeduct() {
+	public String getDeduct() {
 		return this.deduct;
 	}
-	public void setDeduct(Long deduct) {
+	public void setDeduct(String deduct) {
 		this.deduct = deduct;
 	}
 

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class DtBankFirstBindCardGiftInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1527784955678827872L;
+	private static final long serialVersionUID = 3434984254683944817L;
 
 	/**
 	 * 是否允许拆分使用

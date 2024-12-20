@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AvatarAnimationVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3597543144445824311L;
+	private static final long serialVersionUID = 5725488183992287287L;
 
 	/**
 	 * 对于动画的具体描述

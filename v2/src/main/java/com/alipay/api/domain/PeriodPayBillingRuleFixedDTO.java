@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PeriodPayBillingRuleFixedDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5827845221325977235L;
+	private static final long serialVersionUID = 2245172524645455877L;
 
 	/**
 	 * 期数单位为晚时使用,超过整点算一期,如果14则表示每日超过14点算一个新计费周期

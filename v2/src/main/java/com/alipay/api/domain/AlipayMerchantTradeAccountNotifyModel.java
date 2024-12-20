@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 间连商户动帐通知
  *
  * @author auto create
- * @since 1.0, 2024-11-06 14:59:52
+ * @since 1.0, 2024-12-19 13:35:18
  */
 public class AlipayMerchantTradeAccountNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6794135688334735211L;
+	private static final long serialVersionUID = 1467565742218141586L;
 
 	/**
 	 * 收银员ID，若收银员需要接收动账通知，需要传该字段。该字段值与商户信息查接口中的收银员ID一致
@@ -36,7 +36,7 @@ public class AlipayMerchantTradeAccountNotifyModel extends AlipayObject {
 	private String merchantNo;
 
 	/**
-	 * 外部业务号，每笔动账确保唯一，否则可能导致消息重复发送
+	 * 外部业务号，与收款详情中出参的order_no保持一致，每笔动账确保唯一，否则可能导致消息重复发送
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
@@ -49,7 +49,7 @@ public class AlipayMerchantTradeAccountNotifyModel extends AlipayObject {
 	private List<PayType> payerBankTypeList;
 
 	/**
-	 * 付款用户在当前商家的当天消费金额
+	 * 付款用户在当前商家的当天消费金额，交易成功金额的总和
 	 */
 	@ApiField("payer_total_amount")
 	private String payerTotalAmount;
@@ -85,8 +85,15 @@ public class AlipayMerchantTradeAccountNotifyModel extends AlipayObject {
 	private String shopName;
 
 	/**
-	 * 如果是支付宝，为smid的值
-如果是微信 ，为sub_mch_id的值
+	 * 本交易是支付宝直连交易还是支付宝间连交易
+	 */
+	@ApiField("sub_trade_channel")
+	private String subTradeChannel;
+
+	/**
+	 * 如果是微信交易 ，为sub_mch_id的值
+如果是间连支付宝交易，为smid的值
+如果是直连支付宝交易，为交易pid的值
 	 */
 	@ApiField("third_party_merchant_no")
 	private String thirdPartyMerchantNo;
@@ -98,7 +105,7 @@ public class AlipayMerchantTradeAccountNotifyModel extends AlipayObject {
 	private String thirdPartyTradeNo;
 
 	/**
-	 * 当日收款总金额
+	 * 当日的交易成功的金额总和
 	 */
 	@ApiField("total_amount")
 	private String totalAmount;
@@ -202,6 +209,13 @@ public class AlipayMerchantTradeAccountNotifyModel extends AlipayObject {
 	}
 	public void setShopName(String shopName) {
 		this.shopName = shopName;
+	}
+
+	public String getSubTradeChannel() {
+		return this.subTradeChannel;
+	}
+	public void setSubTradeChannel(String subTradeChannel) {
+		this.subTradeChannel = subTradeChannel;
 	}
 
 	public String getThirdPartyMerchantNo() {

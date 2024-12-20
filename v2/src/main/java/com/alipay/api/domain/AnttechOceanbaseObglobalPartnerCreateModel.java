@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechOceanbaseObglobalPartnerCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5256669311543572342L;
+	private static final long serialVersionUID = 1276275489243912248L;
 
 	/**
 	 * 创建合作伙伴请求

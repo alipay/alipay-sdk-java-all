@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZXZMessageCard extends AlipayObject {
 
-	private static final long serialVersionUID = 7616181329587158124L;
+	private static final long serialVersionUID = 3565812416644489551L;
 
 	/**
 	 * 详细内容，详情请看文档 《openapi标准化接口》 4.2

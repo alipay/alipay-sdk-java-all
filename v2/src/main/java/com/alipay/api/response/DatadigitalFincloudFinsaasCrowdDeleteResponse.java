@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class DatadigitalFincloudFinsaasCrowdDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8798919877919951479L;
+	private static final long serialVersionUID = 4251278293428759944L;
 
 	/** 
 	 * 人群删除消息+不唯一+删除人群
