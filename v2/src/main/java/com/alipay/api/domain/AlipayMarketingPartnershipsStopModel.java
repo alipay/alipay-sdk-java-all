@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 终止合作关系
  *
  * @author auto create
- * @since 1.0, 2023-11-27 10:24:48
+ * @since 1.0, 2024-12-24 15:40:11
  */
 public class AlipayMarketingPartnershipsStopModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6824595524338525122L;
+	private static final long serialVersionUID = 7649698196196687526L;
 
 	/**
 	 * 本次终止授权给合作方的营销资源。

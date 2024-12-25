@@ -9,22 +9,24 @@ import com.alipay.api.internal.mapping.ApiField;
  * 寄件激励码动销反馈信息同步
  *
  * @author auto create
- * @since 1.0, 2024-09-04 16:25:00
+ * @since 1.0, 2024-12-23 16:03:53
  */
 public class AlipayCommerceLogisticsIncentivecodeOperationSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7585743876982843865L;
+	private static final long serialVersionUID = 7319159952233779323L;
 
 	/**
-	 * 支付宝交易号
+	 * 支付宝交易号 当前字段已废弃(支付成功相关参数，迁移到alipay.commerce.logistics.trade.event.sync接口)
 	 */
 	@ApiField("alipay_trade_no")
+	@Deprecated
 	private String alipayTradeNo;
 
 	/**
-	 * 支付宝交易成功状态
+	 * 支付宝交易成功状态 当前字段已废弃(支付成功相关参数，迁移到alipay.commerce.logistics.trade.event.sync接口)
 	 */
 	@ApiField("alipay_trade_status")
+	@Deprecated
 	private String alipayTradeStatus;
 
 	/**
@@ -43,7 +45,6 @@ public class AlipayCommerceLogisticsIncentivecodeOperationSyncModel extends Alip
 	 * SCAN(用户扫码)
 SEND_ORDER(用户寄件下单)
 RECEIVE_SUCCESS（揽收成功）
-PAY_SUCCESS(完成支付)
 	 */
 	@ApiField("operation_dynamic_sales_type")
 	private String operationDynamicSalesType;
@@ -92,22 +93,25 @@ OTHER 其他渠道
 	private String orderNo;
 
 	/**
-	 * 支付完成页面链接（支付宝小程序链接）
+	 * 支付完成页面链接（支付宝小程序链接） 当前字段已废弃(支付成功相关参数，迁移到alipay.commerce.logistics.trade.event.sync接口)
 	 */
 	@ApiField("pay_finish_url")
+	@Deprecated
 	private String payFinishUrl;
 
 	/**
 	 * 待支付页面链接（支付宝小程序链接）
-当用户下单后有待支付链接请传
+当用户下单后有待支付链接请传 当前字段已废弃(支付成功相关参数，迁移到alipay.commerce.logistics.trade.event.sync接口)
 	 */
 	@ApiField("pay_url")
+	@Deprecated
 	private String payUrl;
 
 	/**
-	 * 运单号
+	 * 运单号 当前字段已废弃(支付成功相关参数，迁移到alipay.commerce.logistics.trade.event.sync接口)
 	 */
 	@ApiField("waybill_no")
+	@Deprecated
 	private String waybillNo;
 
 	public String getAlipayTradeNo() {

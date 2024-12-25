@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花名册场景身份识别接口
  *
  * @author auto create
- * @since 1.0, 2024-12-06 15:08:21
+ * @since 1.0, 2024-12-20 17:17:19
  */
 public class AlipayCommerceEducateRosterIdentityIdentifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4428427684331729666L;
+	private static final long serialVersionUID = 2577226151278161956L;
 
 	/**
 	 * 机构内标

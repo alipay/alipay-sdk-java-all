@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class SimpleRentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4646136721918589349L;
+	private static final long serialVersionUID = 1162525729818533459L;
 
 	/**
 	 * 交易组件的订单Id

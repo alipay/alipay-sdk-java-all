@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NimitzPageCond extends AlipayObject {
 
-	private static final long serialVersionUID = 1578487859159483374L;
+	private static final long serialVersionUID = 1199137849185594827L;
 
 	/**
 	 * 分页查询数量，可以理解成 SQL 里的 limit

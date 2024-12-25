@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 制度编辑
  *
  * @author auto create
- * @since 1.0, 2024-06-24 10:35:39
+ * @since 1.0, 2024-12-24 20:10:18
  */
 public class AlipayEbppInvoiceInstitutionModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7823165674555997969L;
+	private static final long serialVersionUID = 1138677256878768165L;
 
 	/**
 	 * 企业共同账户id
@@ -80,6 +80,24 @@ public class AlipayEbppInvoiceInstitutionModifyModel extends AlipayObject {
 	 */
 	@ApiField("institution_name")
 	private String institutionName;
+
+	/**
+	 * 修改的发放规则详情
+	 */
+	@ApiField("modify_issue_rule_detail_info")
+	private ModifyIssueRuleDetailInfo modifyIssueRuleDetailInfo;
+
+	/**
+	 * 制度下适用范围修改信息
+	 */
+	@ApiField("modify_scope_info")
+	private ModifyScopeInfo modifyScopeInfo;
+
+	/**
+	 * 修改的使用规则详情
+	 */
+	@ApiField("modify_standard_detail_info")
+	private ModifyStandardDetailInfo modifyStandardDetailInfo;
 
 	public String getAccountId() {
 		return this.accountId;
@@ -149,6 +167,27 @@ public class AlipayEbppInvoiceInstitutionModifyModel extends AlipayObject {
 	}
 	public void setInstitutionName(String institutionName) {
 		this.institutionName = institutionName;
+	}
+
+	public ModifyIssueRuleDetailInfo getModifyIssueRuleDetailInfo() {
+		return this.modifyIssueRuleDetailInfo;
+	}
+	public void setModifyIssueRuleDetailInfo(ModifyIssueRuleDetailInfo modifyIssueRuleDetailInfo) {
+		this.modifyIssueRuleDetailInfo = modifyIssueRuleDetailInfo;
+	}
+
+	public ModifyScopeInfo getModifyScopeInfo() {
+		return this.modifyScopeInfo;
+	}
+	public void setModifyScopeInfo(ModifyScopeInfo modifyScopeInfo) {
+		this.modifyScopeInfo = modifyScopeInfo;
+	}
+
+	public ModifyStandardDetailInfo getModifyStandardDetailInfo() {
+		return this.modifyStandardDetailInfo;
+	}
+	public void setModifyStandardDetailInfo(ModifyStandardDetailInfo modifyStandardDetailInfo) {
+		this.modifyStandardDetailInfo = modifyStandardDetailInfo;
 	}
 
 }

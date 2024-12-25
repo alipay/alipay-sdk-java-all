@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.terminal.edgecloud.workorder.changemachine.query request
  * 
  * @author auto create
- * @since 1.0, 2024-12-19 15:52:22
+ * @since 1.0, 2024-12-24 10:05:37
  */
 public class AlipayTerminalEdgecloudWorkorderChangemachineQueryRequest implements AlipayRequest<AlipayTerminalEdgecloudWorkorderChangemachineQueryResponse> {
 

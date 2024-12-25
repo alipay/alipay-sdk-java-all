@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 注册OceanBase官网账号
  *
  * @author auto create
- * @since 1.0, 2024-04-17 13:50:26
+ * @since 1.0, 2024-12-20 15:10:23
  */
 public class AnttechOceanbasePassportCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2188788295763353573L;
+	private static final long serialVersionUID = 8649596385471454656L;
 
 	/**
 	 * 登录凭证 取值为加密后的登录凭证值
@@ -24,6 +24,12 @@ public class AnttechOceanbasePassportCreateModel extends AlipayObject {
 	 */
 	@ApiField("email")
 	private String email;
+
+	/**
+	 * 阿里云精选买家
+	 */
+	@ApiField("entity_role_type")
+	private String entityRoleType;
 
 	/**
 	 * 手机号  取值为加密后的手机号码
@@ -43,6 +49,13 @@ public class AnttechOceanbasePassportCreateModel extends AlipayObject {
 	}
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public String getEntityRoleType() {
+		return this.entityRoleType;
+	}
+	public void setEntityRoleType(String entityRoleType) {
+		this.entityRoleType = entityRoleType;
 	}
 
 	public String getMobilePhone() {

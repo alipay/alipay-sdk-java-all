@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 充值订单业务办理结果通知
  *
  * @author auto create
- * @since 1.0, 2022-07-26 10:22:18
+ * @since 1.0, 2024-12-23 15:02:18
  */
 public class AlipayCommerceAcommunicationOrderNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1264369215857493279L;
+	private static final long serialVersionUID = 4751631245957578521L;
 
 	/**
 	 * 支付宝侧订单号
 	 */
 	@ApiField("alipay_order_no")
 	private String alipayOrderNo;
+
+	/**
+	 * 渠道
+	 */
+	@ApiField("channel")
+	private String channel;
 
 	/**
 	 * 结果码
@@ -50,6 +56,13 @@ FAILED 业务办理失败
 	}
 	public void setAlipayOrderNo(String alipayOrderNo) {
 		this.alipayOrderNo = alipayOrderNo;
+	}
+
+	public String getChannel() {
+		return this.channel;
+	}
+	public void setChannel(String channel) {
+		this.channel = channel;
 	}
 
 	public String getCode() {

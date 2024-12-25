@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MorphoTemplateItem extends AlipayObject {
 
-	private static final long serialVersionUID = 4681381448947922852L;
+	private static final long serialVersionUID = 4399263164699818112L;
 
 	/**
 	 * 最近更新时间

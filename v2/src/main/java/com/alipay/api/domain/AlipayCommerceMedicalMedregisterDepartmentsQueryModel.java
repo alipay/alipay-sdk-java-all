@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询挂号医院的全科室列表
  *
  * @author auto create
- * @since 1.0, 2024-12-09 15:01:57
+ * @since 1.0, 2024-12-24 15:02:24
  */
 public class AlipayCommerceMedicalMedregisterDepartmentsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4888934154683384255L;
+	private static final long serialVersionUID = 5164975255836224178L;
 
 	/**
 	 * 浙江省人民医院（朝晖院区）

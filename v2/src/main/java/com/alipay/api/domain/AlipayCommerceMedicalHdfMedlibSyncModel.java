@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 病历数据同步
  *
  * @author auto create
- * @since 1.0, 2024-12-11 17:00:37
+ * @since 1.0, 2024-12-23 11:37:05
  */
 public class AlipayCommerceMedicalHdfMedlibSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1653727577974729182L;
+	private static final long serialVersionUID = 7797638272247215628L;
 
 	/**
 	 * 内容

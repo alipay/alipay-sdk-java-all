@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 资金监管订单下单接口
  *
  * @author auto create
- * @since 1.0, 2024-02-21 10:22:15
+ * @since 1.0, 2024-12-23 19:36:58
  */
 public class AlipayEbppIndustrySupervisionOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8616562731671566445L;
+	private static final long serialVersionUID = 1133571282512981882L;
 
 	/**
 	 * 支付宝2088
@@ -24,6 +27,13 @@ public class AlipayEbppIndustrySupervisionOrderCreateModel extends AlipayObject 
 	 */
 	@ApiField("amount")
 	private String amount;
+
+	/**
+	 * 冻资订单所需用户签署协议列表
+	 */
+	@ApiListField("authorization_list")
+	@ApiField("string")
+	private List<String> authorizationList;
 
 	/**
 	 * 业务场景
@@ -73,6 +83,13 @@ public class AlipayEbppIndustrySupervisionOrderCreateModel extends AlipayObject 
 	}
 	public void setAmount(String amount) {
 		this.amount = amount;
+	}
+
+	public List<String> getAuthorizationList() {
+		return this.authorizationList;
+	}
+	public void setAuthorizationList(List<String> authorizationList) {
+		this.authorizationList = authorizationList;
 	}
 
 	public String getBizScene() {

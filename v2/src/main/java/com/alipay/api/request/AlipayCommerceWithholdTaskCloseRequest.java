@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.withhold.task.close request
  * 
  * @author auto create
- * @since 1.0, 2024-12-12 16:21:37
+ * @since 1.0, 2024-12-23 16:42:37
  */
 public class AlipayCommerceWithholdTaskCloseRequest implements AlipayRequest<AlipayCommerceWithholdTaskCloseResponse> {
 

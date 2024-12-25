@@ -8,17 +8,30 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.oceanbase.passport.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-03 17:38:36
+ * @since 1.0, 2024-12-20 15:12:22
  */
 public class AnttechOceanbasePassportCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2715234669176719941L;
+	private static final long serialVersionUID = 4214748492592392563L;
+
+	/** 
+	 * 实体角色id
+	 */
+	@ApiField("entity_role_id")
+	private String entityRoleId;
 
 	/** 
 	 * 用户通行证id
 	 */
 	@ApiField("passport_id")
 	private String passportId;
+
+	public void setEntityRoleId(String entityRoleId) {
+		this.entityRoleId = entityRoleId;
+	}
+	public String getEntityRoleId( ) {
+		return this.entityRoleId;
+	}
 
 	public void setPassportId(String passportId) {
 		this.passportId = passportId;

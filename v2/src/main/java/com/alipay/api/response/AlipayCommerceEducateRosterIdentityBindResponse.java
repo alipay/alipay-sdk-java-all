@@ -1,5 +1,6 @@
 package com.alipay.api.response;
 
+import com.alipay.api.internal.mapping.ApiField;
 
 import com.alipay.api.AlipayResponse;
 
@@ -7,14 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.roster.identity.bind response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-05 17:12:20
+ * @since 1.0, 2024-12-20 17:22:24
  */
 public class AlipayCommerceEducateRosterIdentityBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5697392896715382345L;
+	private static final long serialVersionUID = 5349831721395586416L;
 
-	
+	/** 
+	 * 已绑定的支付宝账号
+	 */
+	@ApiField("bind_alipay_account")
+	private String bindAlipayAccount;
 
-	
+	public void setBindAlipayAccount(String bindAlipayAccount) {
+		this.bindAlipayAccount = bindAlipayAccount;
+	}
+	public String getBindAlipayAccount( ) {
+		return this.bindAlipayAccount;
+	}
 
 }

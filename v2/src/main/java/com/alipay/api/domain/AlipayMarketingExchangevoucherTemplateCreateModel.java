@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 兑换券模板创建接口
  *
  * @author auto create
- * @since 1.0, 2023-11-01 14:32:12
+ * @since 1.0, 2024-12-24 15:39:30
  */
 public class AlipayMarketingExchangevoucherTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8219729284385387725L;
+	private static final long serialVersionUID = 6667852294149348256L;
 
 	/**
 	 * 品牌名。用于在卡包中展示，长度不能超过12个字符。

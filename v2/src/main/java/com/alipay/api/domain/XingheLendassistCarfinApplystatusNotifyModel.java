@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车金融订单状态通知接口
  *
  * @author auto create
- * @since 1.0, 2024-09-12 17:42:48
+ * @since 1.0, 2024-12-20 19:29:35
  */
 public class XingheLendassistCarfinApplystatusNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3216682629224549692L;
+	private static final long serialVersionUID = 8717447478974462472L;
 
 	/**
 	 * 星河侧唯一业务编号

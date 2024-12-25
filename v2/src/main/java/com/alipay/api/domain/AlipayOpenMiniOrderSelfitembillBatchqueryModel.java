@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniOrderSelfitembillBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8222696576888673713L;
+	private static final long serialVersionUID = 5894522525817814895L;
 
 	/**
 	 * 凭证号，商家可入参具体凭证号查询单个凭证的明细

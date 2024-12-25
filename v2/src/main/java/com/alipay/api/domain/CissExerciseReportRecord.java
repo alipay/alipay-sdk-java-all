@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CissExerciseReportRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 3579655976978455829L;
+	private static final long serialVersionUID = 4513162664522199513L;
 
 	/**
 	 * 测试项评估

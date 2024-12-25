@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 公积金租房提取余额直付房租的账单详情同步
  *
  * @author auto create
- * @since 1.0, 2024-08-26 16:26:26
+ * @since 1.0, 2024-12-19 22:32:17
  */
 public class AlipayEbppIndustryRentOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1579196439725628214L;
+	private static final long serialVersionUID = 7693185293358957624L;
+
+	/**
+	 * 中心编号
+	 */
+	@ApiField("accfund_center_no")
+	private String accfundCenterNo;
 
 	/**
 	 * 租房账单明细详情
@@ -66,6 +72,25 @@ public class AlipayEbppIndustryRentOrderCreateModel extends AlipayObject {
 	 */
 	@ApiField("redirect_url")
 	private String redirectUrl;
+
+	/**
+	 * 租房直付银行信息
+	 */
+	@ApiField("rent_bank_info")
+	private RentPayBankInfo rentBankInfo;
+
+	/**
+	 * 用户租房合同信息
+	 */
+	@ApiField("rent_contract_info")
+	private RentPayContractInfo rentContractInfo;
+
+	public String getAccfundCenterNo() {
+		return this.accfundCenterNo;
+	}
+	public void setAccfundCenterNo(String accfundCenterNo) {
+		this.accfundCenterNo = accfundCenterNo;
+	}
 
 	public RentPayBillDetail getBillDetail() {
 		return this.billDetail;
@@ -128,6 +153,20 @@ public class AlipayEbppIndustryRentOrderCreateModel extends AlipayObject {
 	}
 	public void setRedirectUrl(String redirectUrl) {
 		this.redirectUrl = redirectUrl;
+	}
+
+	public RentPayBankInfo getRentBankInfo() {
+		return this.rentBankInfo;
+	}
+	public void setRentBankInfo(RentPayBankInfo rentBankInfo) {
+		this.rentBankInfo = rentBankInfo;
+	}
+
+	public RentPayContractInfo getRentContractInfo() {
+		return this.rentContractInfo;
+	}
+	public void setRentContractInfo(RentPayContractInfo rentContractInfo) {
+		this.rentContractInfo = rentContractInfo;
 	}
 
 }

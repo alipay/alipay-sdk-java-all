@@ -16,11 +16,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.finance.energyaggr.subinvite.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-02 10:48:28
+ * @since 1.0, 2024-12-20 15:27:21
  */
 public class AnttechBlockchainFinanceEnergyaggrSubinviteQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2585964151339298356L;
+	private static final long serialVersionUID = 7474712845753142266L;
 
 	/** 
 	 * 场站子邀约中的场站基准曲线

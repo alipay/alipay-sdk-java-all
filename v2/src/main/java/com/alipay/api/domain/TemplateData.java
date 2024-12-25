@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 模板数据
  *
  * @author auto create
- * @since 1.0, 2024-12-04 14:42:56
+ * @since 1.0, 2024-12-23 17:37:55
  */
 public class TemplateData extends AlipayObject {
 
-	private static final long serialVersionUID = 3581375439663526997L;
+	private static final long serialVersionUID = 7596873762359924511L;
+
+	/**
+	 * 返回预期页面的数据
+	 */
+	@ApiField("content")
+	private String content;
 
 	/**
 	 * 卡片id
@@ -24,6 +30,13 @@ public class TemplateData extends AlipayObject {
 	 */
 	@ApiField("title")
 	private String title;
+
+	public String getContent() {
+		return this.content;
+	}
+	public void setContent(String content) {
+		this.content = content;
+	}
 
 	public String getId() {
 		return this.id;

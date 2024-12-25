@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.supervision.orderfund.unfreeze response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-16 19:15:39
+ * @since 1.0, 2024-12-23 19:37:21
  */
 public class AlipayEbppIndustrySupervisionOrderfundUnfreezeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6182993511293149122L;
+	private static final long serialVersionUID = 5369497517924248459L;
 
 	/** 
 	 * 订单金额，整数，单位分
@@ -25,6 +25,12 @@ public class AlipayEbppIndustrySupervisionOrderfundUnfreezeResponse extends Alip
 	 */
 	@ApiField("currency")
 	private String currency;
+
+	/** 
+	 * 行业内部受理当前请求后的受理操作单号。
+	 */
+	@ApiField("operate_no")
+	private String operateNo;
 
 	/** 
 	 * 请求参数中的外部流水号
@@ -50,6 +56,13 @@ public class AlipayEbppIndustrySupervisionOrderfundUnfreezeResponse extends Alip
 	}
 	public String getCurrency( ) {
 		return this.currency;
+	}
+
+	public void setOperateNo(String operateNo) {
+		this.operateNo = operateNo;
+	}
+	public String getOperateNo( ) {
+		return this.operateNo;
 	}
 
 	public void setOutFlowId(String outFlowId) {

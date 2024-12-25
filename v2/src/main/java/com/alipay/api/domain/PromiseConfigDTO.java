@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PromiseConfigDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4631515223778279696L;
+	private static final long serialVersionUID = 1899145345246451469L;
 
 	/**
 	 * 商户客服电话，为必填字段，需为合法电话号码。

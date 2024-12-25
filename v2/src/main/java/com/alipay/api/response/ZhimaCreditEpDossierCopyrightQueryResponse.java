@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.dossier.copyright.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-19 14:22:21
+ * @since 1.0, 2024-12-24 14:32:22
  */
 public class ZhimaCreditEpDossierCopyrightQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3667738562126475286L;
+	private static final long serialVersionUID = 6837436394478886721L;
 
 	/** 
 	 * 查询著作权内容

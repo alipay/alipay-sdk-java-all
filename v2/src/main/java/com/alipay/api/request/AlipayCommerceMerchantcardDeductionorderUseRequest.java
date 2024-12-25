@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.merchantcard.deductionorder.use request
  * 
  * @author auto create
- * @since 1.0, 2024-12-14 11:42:23
+ * @since 1.0, 2024-12-23 15:07:21
  */
 public class AlipayCommerceMerchantcardDeductionorderUseRequest implements AlipayRequest<AlipayCommerceMerchantcardDeductionorderUseResponse> {
 

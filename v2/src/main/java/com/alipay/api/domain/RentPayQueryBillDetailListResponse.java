@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 对账单详情
  *
  * @author auto create
- * @since 1.0, 2024-08-27 16:54:06
+ * @since 1.0, 2024-12-19 22:31:52
  */
 public class RentPayQueryBillDetailListResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 1572578869631316398L;
+	private static final long serialVersionUID = 4814646493446961347L;
 
 	/**
 	 * 公积金付金额，单位：元
@@ -20,7 +20,7 @@ public class RentPayQueryBillDetailListResponse extends AlipayObject {
 	private String accAmount;
 
 	/**
-	 * 公积金付费状态
+	 * 待创单
 	 */
 	@ApiField("acc_pay_status")
 	private String accPayStatus;
@@ -84,6 +84,18 @@ public class RentPayQueryBillDetailListResponse extends AlipayObject {
 	 */
 	@ApiField("payment_date")
 	private String paymentDate;
+
+	/**
+	 * 收款银行全称
+	 */
+	@ApiField("rent_bank_name")
+	private String rentBankName;
+
+	/**
+	 * 收款账户号码
+	 */
+	@ApiField("rent_card_num")
+	private String rentCardNum;
 
 	/**
 	 * 租房直付，非公积金支付金额，单位：元
@@ -191,6 +203,20 @@ public class RentPayQueryBillDetailListResponse extends AlipayObject {
 	}
 	public void setPaymentDate(String paymentDate) {
 		this.paymentDate = paymentDate;
+	}
+
+	public String getRentBankName() {
+		return this.rentBankName;
+	}
+	public void setRentBankName(String rentBankName) {
+		this.rentBankName = rentBankName;
+	}
+
+	public String getRentCardNum() {
+		return this.rentCardNum;
+	}
+	public void setRentCardNum(String rentCardNum) {
+		this.rentCardNum = rentCardNum;
 	}
 
 	public String getSelfAmount() {

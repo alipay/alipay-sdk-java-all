@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudpromo.travel.partner.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-19 10:35:53
+ * @since 1.0, 2024-12-20 15:17:21
  */
 public class AlipayCloudCloudpromoTravelPartnerQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8474958875354697935L;
+	private static final long serialVersionUID = 1665416581111285573L;
 
 	/** 
 	 * 伴游开启状态
@@ -31,10 +31,34 @@ public class AlipayCloudCloudpromoTravelPartnerQueryResponse extends AlipayRespo
 	private String attractionsCount;
 
 	/** 
+	 * 当前播报语音讲解的景点POI
+	 */
+	@ApiField("audio_poi_info")
+	private PoiInfoVo audioPoiInfo;
+
+	/** 
 	 * 预计消耗卡路里
 	 */
 	@ApiField("calorie")
 	private String calorie;
+
+	/** 
+	 * 已游览景点数
+	 */
+	@ApiField("current_attraction_count")
+	private String currentAttractionCount;
+
+	/** 
+	 * 已游玩距离，如540米，1.2千米
+	 */
+	@ApiField("current_distance")
+	private String currentDistance;
+
+	/** 
+	 * 已游玩时长，如20分钟，1时13分，1天
+	 */
+	@ApiField("current_duration")
+	private String currentDuration;
 
 	/** 
 	 * 当前POI景点信息
@@ -53,6 +77,12 @@ public class AlipayCloudCloudpromoTravelPartnerQueryResponse extends AlipayRespo
 	 */
 	@ApiField("duration")
 	private String duration;
+
+	/** 
+	 * 当前路线是否已经走完
+	 */
+	@ApiField("finish_view")
+	private Boolean finishView;
 
 	/** 
 	 * 介绍
@@ -168,11 +198,39 @@ public class AlipayCloudCloudpromoTravelPartnerQueryResponse extends AlipayRespo
 		return this.attractionsCount;
 	}
 
+	public void setAudioPoiInfo(PoiInfoVo audioPoiInfo) {
+		this.audioPoiInfo = audioPoiInfo;
+	}
+	public PoiInfoVo getAudioPoiInfo( ) {
+		return this.audioPoiInfo;
+	}
+
 	public void setCalorie(String calorie) {
 		this.calorie = calorie;
 	}
 	public String getCalorie( ) {
 		return this.calorie;
+	}
+
+	public void setCurrentAttractionCount(String currentAttractionCount) {
+		this.currentAttractionCount = currentAttractionCount;
+	}
+	public String getCurrentAttractionCount( ) {
+		return this.currentAttractionCount;
+	}
+
+	public void setCurrentDistance(String currentDistance) {
+		this.currentDistance = currentDistance;
+	}
+	public String getCurrentDistance( ) {
+		return this.currentDistance;
+	}
+
+	public void setCurrentDuration(String currentDuration) {
+		this.currentDuration = currentDuration;
+	}
+	public String getCurrentDuration( ) {
+		return this.currentDuration;
 	}
 
 	public void setCurrentPoiInfo(PoiInfoVo currentPoiInfo) {
@@ -194,6 +252,13 @@ public class AlipayCloudCloudpromoTravelPartnerQueryResponse extends AlipayRespo
 	}
 	public String getDuration( ) {
 		return this.duration;
+	}
+
+	public void setFinishView(Boolean finishView) {
+		this.finishView = finishView;
+	}
+	public Boolean getFinishView( ) {
+		return this.finishView;
 	}
 
 	public void setIntroduction(String introduction) {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOverseasOpenPoboNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8788612617753421117L;
+	private static final long serialVersionUID = 7652886117215787834L;
 
 	/**
 	 * 留学VCC代付单收款方信息

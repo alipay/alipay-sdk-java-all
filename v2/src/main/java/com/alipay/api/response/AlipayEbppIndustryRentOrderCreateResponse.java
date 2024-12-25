@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.rent.order.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-09 14:37:04
+ * @since 1.0, 2024-12-19 22:32:24
  */
 public class AlipayEbppIndustryRentOrderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5677976837672194679L;
+	private static final long serialVersionUID = 2776178195749531125L;
 
 	/** 
 	 * 租房平台请求支付时的预创单编号

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceIotPointDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7397136857579742676L;
+	private static final long serialVersionUID = 8495629234438776853L;
 
 	/**
 	 * 外部点位编号

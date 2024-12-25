@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CallBackMaterialsInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1233811825535874185L;
+	private static final long serialVersionUID = 5714418322853128464L;
 
 	/**
 	 * 门店桌号

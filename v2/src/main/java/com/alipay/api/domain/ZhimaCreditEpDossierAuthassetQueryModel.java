@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 芝麻企业信用授权企业资产信息查询
  *
  * @author auto create
- * @since 1.0, 2023-07-13 14:13:43
+ * @since 1.0, 2024-12-24 16:41:28
  */
 public class ZhimaCreditEpDossierAuthassetQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6588299558163368793L;
+	private static final long serialVersionUID = 4418126373441153543L;
 
 	/**
 	 * 企业资产类型：

@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 合同签约方DTO
  *
  * @author auto create
- * @since 1.0, 2023-11-06 14:17:23
+ * @since 1.0, 2024-12-23 11:33:45
  */
 public class OpenApiPartnerSaDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5238689999875652742L;
+	private static final long serialVersionUID = 4713648752733929246L;
+
+	/**
+	 * 关键字索引
+	 */
+	@ApiField("keyword_index")
+	private String keywordIndex;
 
 	/**
 	 * 公司主体号
@@ -20,16 +26,36 @@ public class OpenApiPartnerSaDTO extends AlipayObject {
 	private String ouCode;
 
 	/**
+	 * 公司主体id
+	 */
+	@ApiField("ou_id")
+	private String ouId;
+
+	/**
 	 * 签约主体名称
 	 */
 	@ApiField("partner_name")
 	private String partnerName;
+
+	public String getKeywordIndex() {
+		return this.keywordIndex;
+	}
+	public void setKeywordIndex(String keywordIndex) {
+		this.keywordIndex = keywordIndex;
+	}
 
 	public String getOuCode() {
 		return this.ouCode;
 	}
 	public void setOuCode(String ouCode) {
 		this.ouCode = ouCode;
+	}
+
+	public String getOuId() {
+		return this.ouId;
+	}
+	public void setOuId(String ouId) {
+		this.ouId = ouId;
 	}
 
 	public String getPartnerName() {

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 维保换机工单查询
  *
  * @author auto create
- * @since 1.0, 2024-12-19 15:43:35
+ * @since 1.0, 2024-12-24 10:05:37
  */
 public class AlipayTerminalEdgecloudWorkorderChangemachineQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3838378294868737513L;
+	private static final long serialVersionUID = 5164246377883591249L;
 
 	/**
 	 * 设备系列列表，用于查询指定的设备系列

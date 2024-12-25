@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.userule.pid.query request
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 15:51:39
+ * @since 1.0, 2024-12-24 15:40:55
  */
 public class AlipayMarketingUserulePidQueryRequest implements AlipayRequest<AlipayMarketingUserulePidQueryResponse> {
 

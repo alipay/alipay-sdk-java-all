@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.withhold.task.create request
  * 
  * @author auto create
- * @since 1.0, 2024-12-12 16:21:38
+ * @since 1.0, 2024-12-23 16:44:13
  */
 public class AlipayCommerceWithholdTaskCreateRequest implements AlipayRequest<AlipayCommerceWithholdTaskCreateResponse> {
 

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 安心付开通接口
  *
  * @author auto create
- * @since 1.0, 2024-11-27 15:37:19
+ * @since 1.0, 2024-12-20 19:56:17
  */
 public class AlipayCommerceMerchantcardOpenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6135694668819718776L;
+	private static final long serialVersionUID = 3751438518634517212L;
 
 	/**
 	 * 卡类型。其中开通了先享次卡后才能在制卡时使用先享后付的资金模式。

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 激励交易回传
  *
  * @author auto create
- * @since 1.0, 2024-06-19 12:00:40
+ * @since 1.0, 2024-12-23 17:20:55
  */
 public class AlipayCommerceLogisticsTradeEventSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1278621637916265821L;
+	private static final long serialVersionUID = 7451759726711965921L;
 
 	/**
 	 * 支付宝交易号
@@ -32,10 +32,29 @@ public class AlipayCommerceLogisticsTradeEventSyncModel extends AlipayObject {
 	private String expressmanUserId;
 
 	/**
+	 * 激励码值
+	 */
+	@ApiField("incentive_code")
+	private String incentiveCode;
+
+	/**
 	 * 商户标识（接口调用方的渠道编码，由支付宝分配）
 	 */
 	@ApiField("logistics_code")
 	private String logisticsCode;
+
+	/**
+	 * ALIPAY 支付宝操作渠道
+OTHER 其他渠道
+	 */
+	@ApiField("operation_source")
+	private String operationSource;
+
+	/**
+	 * 订单号
+	 */
+	@ApiField("order_no")
+	private String orderNo;
 
 	/**
 	 * 支付者用户标识
@@ -76,11 +95,32 @@ public class AlipayCommerceLogisticsTradeEventSyncModel extends AlipayObject {
 		this.expressmanUserId = expressmanUserId;
 	}
 
+	public String getIncentiveCode() {
+		return this.incentiveCode;
+	}
+	public void setIncentiveCode(String incentiveCode) {
+		this.incentiveCode = incentiveCode;
+	}
+
 	public String getLogisticsCode() {
 		return this.logisticsCode;
 	}
 	public void setLogisticsCode(String logisticsCode) {
 		this.logisticsCode = logisticsCode;
+	}
+
+	public String getOperationSource() {
+		return this.operationSource;
+	}
+	public void setOperationSource(String operationSource) {
+		this.operationSource = operationSource;
+	}
+
+	public String getOrderNo() {
+		return this.orderNo;
+	}
+	public void setOrderNo(String orderNo) {
+		this.orderNo = orderNo;
 	}
 
 	public String getPayOpenId() {

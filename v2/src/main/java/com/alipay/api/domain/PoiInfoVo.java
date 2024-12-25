@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * POI景点数据
  *
  * @author auto create
- * @since 1.0, 2024-09-14 17:21:37
+ * @since 1.0, 2024-12-20 15:07:31
  */
 public class PoiInfoVo extends AlipayObject {
 
-	private static final long serialVersionUID = 1356516915327823326L;
+	private static final long serialVersionUID = 4275199111827311468L;
 
 	/**
 	 * 景点详细地址
@@ -66,6 +66,12 @@ public class PoiInfoVo extends AlipayObject {
 	private List<String> imgList;
 
 	/**
+	 * 景点的一句话介绍
+	 */
+	@ApiField("introduction")
+	private String introduction;
+
+	/**
 	 * 景点ID
 	 */
 	@ApiField("item_id")
@@ -76,6 +82,12 @@ public class PoiInfoVo extends AlipayObject {
 	 */
 	@ApiField("latitude")
 	private String latitude;
+
+	/**
+	 * 两景点间推荐交通方式
+	 */
+	@ApiField("line_type")
+	private String lineType;
 
 	/**
 	 * 经度
@@ -109,6 +121,13 @@ public class PoiInfoVo extends AlipayObject {
 	private String poiType;
 
 	/**
+	 * 当前位置到景点的推荐路线经纬度坐标列表
+	 */
+	@ApiListField("polyline")
+	@ApiField("string")
+	private List<String> polyline;
+
+	/**
 	 * 关联的商家
 	 */
 	@ApiListField("related_merchant_list")
@@ -133,6 +152,18 @@ public class PoiInfoVo extends AlipayObject {
 	 */
 	@ApiField("title")
 	private String title;
+
+	/**
+	 * 路线预计长度，单位米
+	 */
+	@ApiField("travel_distance")
+	private String travelDistance;
+
+	/**
+	 * 路线预计耗时，如10分钟，1时1分
+	 */
+	@ApiField("travel_duration")
+	private String travelDuration;
 
 	public String getAddress() {
 		return this.address;
@@ -190,6 +221,13 @@ public class PoiInfoVo extends AlipayObject {
 		this.imgList = imgList;
 	}
 
+	public String getIntroduction() {
+		return this.introduction;
+	}
+	public void setIntroduction(String introduction) {
+		this.introduction = introduction;
+	}
+
 	public String getItemId() {
 		return this.itemId;
 	}
@@ -202,6 +240,13 @@ public class PoiInfoVo extends AlipayObject {
 	}
 	public void setLatitude(String latitude) {
 		this.latitude = latitude;
+	}
+
+	public String getLineType() {
+		return this.lineType;
+	}
+	public void setLineType(String lineType) {
+		this.lineType = lineType;
 	}
 
 	public String getLongitude() {
@@ -239,6 +284,13 @@ public class PoiInfoVo extends AlipayObject {
 		this.poiType = poiType;
 	}
 
+	public List<String> getPolyline() {
+		return this.polyline;
+	}
+	public void setPolyline(List<String> polyline) {
+		this.polyline = polyline;
+	}
+
 	public List<String> getRelatedMerchantList() {
 		return this.relatedMerchantList;
 	}
@@ -265,6 +317,20 @@ public class PoiInfoVo extends AlipayObject {
 	}
 	public void setTitle(String title) {
 		this.title = title;
+	}
+
+	public String getTravelDistance() {
+		return this.travelDistance;
+	}
+	public void setTravelDistance(String travelDistance) {
+		this.travelDistance = travelDistance;
+	}
+
+	public String getTravelDuration() {
+		return this.travelDuration;
+	}
+	public void setTravelDuration(String travelDuration) {
+		this.travelDuration = travelDuration;
 	}
 
 }

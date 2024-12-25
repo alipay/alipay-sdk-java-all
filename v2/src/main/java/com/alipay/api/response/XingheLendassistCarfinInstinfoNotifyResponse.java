@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class XingheLendassistCarfinInstinfoNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8873886869166428287L;
+	private static final long serialVersionUID = 5185112531573724768L;
 
 	
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户签约PID查询
  *
  * @author auto create
- * @since 1.0, 2023-11-01 14:32:32
+ * @since 1.0, 2024-12-24 15:40:55
  */
 public class AlipayMarketingUserulePidQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1812533516772125726L;
+	private static final long serialVersionUID = 1842588977467351612L;
 
 	/**
 	 * 合作伙伴ID，传入ID必须与当前APPID所属合作伙伴ID一致，否则会报权限不足

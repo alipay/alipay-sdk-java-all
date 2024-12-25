@@ -1,6 +1,8 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.supervision.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-11 11:12:23
+ * @since 1.0, 2024-12-23 19:37:22
  */
 public class AlipayEbppIndustrySupervisionOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2542951187297697686L;
+	private static final long serialVersionUID = 4682829539164119879L;
 
 	/** 
 	 * 冻资单地址
@@ -27,16 +29,29 @@ public class AlipayEbppIndustrySupervisionOrderQueryResponse extends AlipayRespo
 	private String alipayOrderNo;
 
 	/** 
-	 * 订单金额，整数，单位分
+	 * 订单金额（整数，单位：分）
 	 */
 	@ApiField("amount")
 	private String amount;
+
+	/** 
+	 * 冻资订单所需用户签署协议列表
+	 */
+	@ApiListField("authorization_list")
+	@ApiField("string")
+	private List<String> authorizationList;
 
 	/** 
 	 * 默认CNY
 	 */
 	@ApiField("currency")
 	private String currency;
+
+	/** 
+	 * 冻资订单剩余冻资金额（整数，单位：分）
+	 */
+	@ApiField("order_balance")
+	private String orderBalance;
 
 	/** 
 	 * 冻资单状态
@@ -57,13 +72,19 @@ public class AlipayEbppIndustrySupervisionOrderQueryResponse extends AlipayRespo
 	private String outOrderNo;
 
 	/** 
-	 * 已缴金额，整数，单位分
+	 * 已缴金额（整数，单位：分）
 	 */
 	@ApiField("paid_amount")
 	private String paidAmount;
 
 	/** 
-	 * 待缴金额 整数，(单位：分)
+	 * 订单转出金额（整数，单位：分）
+	 */
+	@ApiField("transfer_out_amount")
+	private String transferOutAmount;
+
+	/** 
+	 * 待缴金额（整数，单位：分）
 	 */
 	@ApiField("unpaid_amount")
 	private String unpaidAmount;
@@ -89,11 +110,25 @@ public class AlipayEbppIndustrySupervisionOrderQueryResponse extends AlipayRespo
 		return this.amount;
 	}
 
+	public void setAuthorizationList(List<String> authorizationList) {
+		this.authorizationList = authorizationList;
+	}
+	public List<String> getAuthorizationList( ) {
+		return this.authorizationList;
+	}
+
 	public void setCurrency(String currency) {
 		this.currency = currency;
 	}
 	public String getCurrency( ) {
 		return this.currency;
+	}
+
+	public void setOrderBalance(String orderBalance) {
+		this.orderBalance = orderBalance;
+	}
+	public String getOrderBalance( ) {
+		return this.orderBalance;
 	}
 
 	public void setOrderStatus(String orderStatus) {
@@ -122,6 +157,13 @@ public class AlipayEbppIndustrySupervisionOrderQueryResponse extends AlipayRespo
 	}
 	public String getPaidAmount( ) {
 		return this.paidAmount;
+	}
+
+	public void setTransferOutAmount(String transferOutAmount) {
+		this.transferOutAmount = transferOutAmount;
+	}
+	public String getTransferOutAmount( ) {
+		return this.transferOutAmount;
 	}
 
 	public void setUnpaidAmount(String unpaidAmount) {

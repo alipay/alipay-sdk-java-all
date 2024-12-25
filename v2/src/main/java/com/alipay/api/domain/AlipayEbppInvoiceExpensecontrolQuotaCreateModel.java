@@ -1,19 +1,21 @@
 package com.alipay.api.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 创建额度
  *
  * @author auto create
- * @since 1.0, 2024-11-07 17:24:22
+ * @since 1.0, 2024-12-24 20:07:18
  */
 public class AlipayEbppInvoiceExpensecontrolQuotaCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2773783272851838496L;
+	private static final long serialVersionUID = 8765737934124553722L;
 
 	/**
 	 * 共同账号id（该字段将废弃，不建议使用，可用enterprise_id字段替换） 当前字段已废弃(该字段将废弃，不建议使用，可用enterprise_id字段替换)
@@ -60,33 +62,44 @@ public class AlipayEbppInvoiceExpensecontrolQuotaCreateModel extends AlipayObjec
 	private String issueName;
 
 	/**
+	 * 创建额度发放明细列表
+	 */
+	@ApiListField("issue_quota_target_list")
+	@ApiField("issue_target_info_content")
+	private List<IssueTargetInfoContent> issueQuotaTargetList;
+
+	/**
 	 * 外部操作幂等ID，标识创建额度的唯一性，防止重复创建
 	 */
 	@ApiField("outer_source_id")
 	private String outerSourceId;
 
 	/**
-	 * 额度所属者ID（未切换open_id请使用此字段）：
+	 * 额度所属者ID（未切换open_id请使用此字段）： 当前字段已废弃(字段升级，请使用issue_target_info_list中owner_id字段)
 	 */
 	@ApiField("owner_id")
+	@Deprecated
 	private String ownerId;
 
 	/**
-	 * 额度所属者ID（切换open_id后请使用此字段）：
+	 * 额度所属者ID（切换open_id后请使用此字段）： 当前字段已废弃(字段升级，请使用issue_quota_target_list中owner_open_id)
 	 */
 	@ApiField("owner_open_id")
+	@Deprecated
 	private String ownerOpenId;
 
 	/**
-	 * 额度所属者类型
+	 * 额度所属者类型 当前字段已废弃(字段升级，请使用issue_quota_target_list中owner_type字段)
 	 */
 	@ApiField("owner_type")
+	@Deprecated
 	private String ownerType;
 
 	/**
-	 * 外部平台编码（通常为接入方大写英文缩写）
+	 * 外部平台编码（通常为接入方大写英文缩写） 当前字段已废弃(历史版本字段，不推荐使用)
 	 */
 	@ApiField("platform")
+	@Deprecated
 	private String platform;
 
 	/**
@@ -96,9 +109,10 @@ public class AlipayEbppInvoiceExpensecontrolQuotaCreateModel extends AlipayObjec
 	private String quotaType;
 
 	/**
-	 * 额度值，以（分）为单位
+	 * 额度值，以（分）为单位 当前字段已废弃(字段升级，请使用issue_quota_target_list中issue_quota字段)
 	 */
 	@ApiField("quota_value")
+	@Deprecated
 	private String quotaValue;
 
 	/**
@@ -170,6 +184,13 @@ EXPENSE_TYPE（费用类型维度）
 	}
 	public void setIssueName(String issueName) {
 		this.issueName = issueName;
+	}
+
+	public List<IssueTargetInfoContent> getIssueQuotaTargetList() {
+		return this.issueQuotaTargetList;
+	}
+	public void setIssueQuotaTargetList(List<IssueTargetInfoContent> issueQuotaTargetList) {
+		this.issueQuotaTargetList = issueQuotaTargetList;
 	}
 
 	public String getOuterSourceId() {

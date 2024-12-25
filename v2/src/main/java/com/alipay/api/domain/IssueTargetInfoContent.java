@@ -7,33 +7,32 @@ import com.alipay.api.internal.mapping.ApiField;
  * 员工发放额度信息列表
  *
  * @author auto create
- * @since 1.0, 2024-06-24 10:32:51
+ * @since 1.0, 2024-12-24 20:07:18
  */
 public class IssueTargetInfoContent extends AlipayObject {
 
-	private static final long serialVersionUID = 7294516445975888165L;
+	private static final long serialVersionUID = 3487256786627415317L;
 
 	/**
-	 * 发放金额
+	 * 当发放余额或点券时，单位为元，币种以创建制度时填写的currency为准，不填写默认为人民币。当发放类型为次卡时，单位为次。
 	 */
 	@ApiField("issue_quota")
 	private String issueQuota;
 
 	/**
-	 * 切换open_id前请使用：owner类型为PHONE时该字段表示员工手机号，owner类型为为EMPLOYEE时该字段表示为员工支付宝uid，owner类型为为ENTERPRISE_PAY_UID时该字段表示为员工企业码id
+	 * 切换open_id前请使用：owner类型为PHONE时该字段表示员工手机号，owner类型为EMPLOYEE时该字段表示为员工支付宝uid，owner类型为ENTERPRISE_PAY_UID时该字段表示为员工企业码id，owner类型为ENTERPRISE时可不填，如果填写仅支持填企业id
 	 */
 	@ApiField("owner_id")
 	private String ownerId;
 
 	/**
-	 * 切换open_id后请使用：owner类型，PHONE为员工手机号，EMPLOYEE为员工open_id
+	 * 切换open_id后请使用：owner类型为PHONE时，填写员工手机号，EMPLOYEE时填写员工open_id
 	 */
 	@ApiField("owner_open_id")
 	private String ownerOpenId;
 
 	/**
-	 * owner类型，用来表示owner_id的类型;
-enterprise_id支持PHONE、ENTERPRISE_PAY_UID类型；account_id支持EMPLOYEE类型
+	 * owner类型，用来表示owner_id的类型
 	 */
 	@ApiField("owner_type")
 	private String ownerType;

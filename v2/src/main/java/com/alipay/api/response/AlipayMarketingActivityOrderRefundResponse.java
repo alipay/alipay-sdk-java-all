@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.order.refund response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-24 18:07:07
+ * @since 1.0, 2024-12-24 15:45:56
  */
 public class AlipayMarketingActivityOrderRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8827544781371627586L;
+	private static final long serialVersionUID = 2177819394144278431L;
 
 	/** 
 	 * 购买商家兑换券的营销订单号。

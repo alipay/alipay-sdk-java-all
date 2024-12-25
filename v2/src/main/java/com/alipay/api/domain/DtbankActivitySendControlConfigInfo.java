@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class DtbankActivitySendControlConfigInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3193722565968717157L;
+	private static final long serialVersionUID = 5213763773584245243L;
 
 	/**
 	 * API发放限制的APPID列表

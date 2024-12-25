@@ -7,11 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗大模型服务对外推荐和承接页接口
  *
  * @author auto create
- * @since 1.0, 2024-12-04 14:42:56
+ * @since 1.0, 2024-12-23 17:37:55
  */
 public class AlipayCommerceMedicalLargermodelContentQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7784621121677256571L;
+	private static final long serialVersionUID = 7622145624146912259L;
+
+	/**
+	 * 证件号
+	 */
+	@ApiField("cert_no")
+	private String certNo;
+
+	/**
+	 * 01:身份证,02:护照,03:军官证,04:士兵证,05:户口本,06:警官证,07:台湾居民来往大陆通行证（简称“回乡证”）,08:港澳居民来往内地通行证（简称“回乡证”）,09:临时身份证,10:港澳通行证,11:营业执照,13:香港身份证,15:组织机构代码证,16:行政机关,17:社会团体,19:台湾居民来往大陆通行证,20:港澳居民居住证,21:台湾居民居住证,22:外国人永久居留证
+	 */
+	@ApiField("cert_type")
+	private String certType;
 
 	/**
 	 * 城市编码
@@ -24,6 +36,12 @@ public class AlipayCommerceMedicalLargermodelContentQueryModel extends AlipayObj
 	 */
 	@ApiField("city_name")
 	private String cityName;
+
+	/**
+	 * 参保城市编码
+	 */
+	@ApiField("insured_city_code")
+	private String insuredCityCode;
 
 	/**
 	 * 纬度 无需携带单位符号
@@ -62,10 +80,36 @@ public class AlipayCommerceMedicalLargermodelContentQueryModel extends AlipayObj
 	private String outUserType;
 
 	/**
+	 * 页面id，指定哪个页面模板来获取数据
+	 */
+	@ApiField("page_id")
+	private String pageId;
+
+	/**
 	 * 区分当前对话场景意图 待分配后传入固定值
 	 */
 	@ApiField("scene_code")
 	private String sceneCode;
+
+	/**
+	 * 用户姓名
+	 */
+	@ApiField("username")
+	private String username;
+
+	public String getCertNo() {
+		return this.certNo;
+	}
+	public void setCertNo(String certNo) {
+		this.certNo = certNo;
+	}
+
+	public String getCertType() {
+		return this.certType;
+	}
+	public void setCertType(String certType) {
+		this.certType = certType;
+	}
 
 	public String getCityCode() {
 		return this.cityCode;
@@ -79,6 +123,13 @@ public class AlipayCommerceMedicalLargermodelContentQueryModel extends AlipayObj
 	}
 	public void setCityName(String cityName) {
 		this.cityName = cityName;
+	}
+
+	public String getInsuredCityCode() {
+		return this.insuredCityCode;
+	}
+	public void setInsuredCityCode(String insuredCityCode) {
+		this.insuredCityCode = insuredCityCode;
 	}
 
 	public String getLatitude() {
@@ -123,11 +174,25 @@ public class AlipayCommerceMedicalLargermodelContentQueryModel extends AlipayObj
 		this.outUserType = outUserType;
 	}
 
+	public String getPageId() {
+		return this.pageId;
+	}
+	public void setPageId(String pageId) {
+		this.pageId = pageId;
+	}
+
 	public String getSceneCode() {
 		return this.sceneCode;
 	}
 	public void setSceneCode(String sceneCode) {
 		this.sceneCode = sceneCode;
+	}
+
+	public String getUsername() {
+		return this.username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
 	}
 
 }

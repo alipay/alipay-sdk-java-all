@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 额度发放校验详情
  *
  * @author auto create
- * @since 1.0, 2024-06-24 10:32:51
+ * @since 1.0, 2024-12-24 20:07:18
  */
 public class IssueQuotaCheckInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8611517439512217235L;
+	private static final long serialVersionUID = 4554954897666198336L;
 
 	/**
-	 * 发放金额
+	 * 发放点券和余额时，单位为元，发放次卡时，单位为次
 	 */
 	@ApiField("issue_quota")
 	private String issueQuota;

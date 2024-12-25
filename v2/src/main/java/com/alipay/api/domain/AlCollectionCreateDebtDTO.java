@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlCollectionCreateDebtDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8885996262382387647L;
+	private static final long serialVersionUID = 6825583277728898171L;
 
 	/**
 	 * 法催案件信息：包括 结算附件、合同、附件

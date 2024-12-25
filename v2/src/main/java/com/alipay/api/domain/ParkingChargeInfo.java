@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ParkingChargeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2768661158953963688L;
+	private static final long serialVersionUID = 6175793458776217672L;
 
 	/**
 	 * 计费金额；单位元；

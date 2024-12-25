@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 人企店综合查询服务_店铺信息入参版
  *
  * @author auto create
- * @since 1.0, 2024-07-05 14:49:40
+ * @since 1.0, 2024-12-23 15:09:22
  */
 public class ZhimaCreditEpRebusinessentityStoreQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5188235283675326774L;
+	private static final long serialVersionUID = 7551656756568174817L;
 
 	/**
 	 * 店铺平台ID

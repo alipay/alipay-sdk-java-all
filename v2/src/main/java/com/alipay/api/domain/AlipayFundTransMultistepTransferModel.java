@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 多步转账创建并支付
  *
  * @author auto create
- * @since 1.0, 2024-12-12 22:24:53
+ * @since 1.0, 2024-12-21 19:34:17
  */
 public class AlipayFundTransMultistepTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4337196138365737453L;
+	private static final long serialVersionUID = 6695363651962339929L;
 
 	/**
 	 * 场景码
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
+
+	/**
+	 * JSON格式，传递业务扩展参数。
+	 */
+	@ApiField("business_params")
+	private String businessParams;
 
 	/**
 	 * 多步转账明细
@@ -70,6 +76,13 @@ public class AlipayFundTransMultistepTransferModel extends AlipayObject {
 	}
 	public void setBizScene(String bizScene) {
 		this.bizScene = bizScene;
+	}
+
+	public String getBusinessParams() {
+		return this.businessParams;
+	}
+	public void setBusinessParams(String businessParams) {
+		this.businessParams = businessParams;
 	}
 
 	public List<MultiStepTransOrderDetailRequest> getOrderDetails() {

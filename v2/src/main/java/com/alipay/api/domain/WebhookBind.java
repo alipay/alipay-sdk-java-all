@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class WebhookBind extends AlipayObject {
 
-	private static final long serialVersionUID = 3162923475867487754L;
+	private static final long serialVersionUID = 2589915349179299376L;
 
 	/**
 	 * 绑定ID

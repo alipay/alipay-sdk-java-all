@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySocialBaseContentlibNewsflashSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4499974864581679549L;
+	private static final long serialVersionUID = 1569911518315628597L;
 
 	
 

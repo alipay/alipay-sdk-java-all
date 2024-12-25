@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建合同
  *
  * @author auto create
- * @since 1.0, 2023-11-16 13:51:06
+ * @since 1.0, 2024-12-23 11:33:45
  */
 public class AlipayBossProdContractDetailCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7828457496443457942L;
+	private static final long serialVersionUID = 6838369285912244648L;
 
 	/**
 	 * 申请人信息
@@ -95,6 +95,12 @@ public class AlipayBossProdContractDetailCreateModel extends AlipayObject {
 	private List<OpenApiPartnerSaDTO> oppositeParts;
 
 	/**
+	 * 数据处理关系枚举值，ENTRUST("ENTRUST", "委托处理"),CROSS_OU("CROSS_OU", "跨主体数据采集/共享"),OTHER("OTHER", "其他")
+	 */
+	@ApiField("ou_data_relationship")
+	private String ouDataRelationship;
+
+	/**
 	 * 我方主体名称
 	 */
 	@ApiListField("our_parts")
@@ -113,6 +119,13 @@ public class AlipayBossProdContractDetailCreateModel extends AlipayObject {
 	 */
 	@ApiField("source_system_id")
 	private String sourceSystemId;
+
+	/**
+	 * 合同模版
+	 */
+	@ApiListField("template_files")
+	@ApiField("open_api_contract_file_sa_d_t_o")
+	private List<OpenApiContractFileSaDTO> templateFiles;
 
 	/**
 	 * 租户
@@ -210,6 +223,13 @@ public class AlipayBossProdContractDetailCreateModel extends AlipayObject {
 		this.oppositeParts = oppositeParts;
 	}
 
+	public String getOuDataRelationship() {
+		return this.ouDataRelationship;
+	}
+	public void setOuDataRelationship(String ouDataRelationship) {
+		this.ouDataRelationship = ouDataRelationship;
+	}
+
 	public List<OpenApiPartnerSaDTO> getOurParts() {
 		return this.ourParts;
 	}
@@ -229,6 +249,13 @@ public class AlipayBossProdContractDetailCreateModel extends AlipayObject {
 	}
 	public void setSourceSystemId(String sourceSystemId) {
 		this.sourceSystemId = sourceSystemId;
+	}
+
+	public List<OpenApiContractFileSaDTO> getTemplateFiles() {
+		return this.templateFiles;
+	}
+	public void setTemplateFiles(List<OpenApiContractFileSaDTO> templateFiles) {
+		this.templateFiles = templateFiles;
 	}
 
 	public String getTenant() {

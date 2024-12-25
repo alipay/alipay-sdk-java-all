@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业被执行人明细
  *
  * @author auto create
- * @since 1.0, 2024-12-19 14:28:38
+ * @since 1.0, 2024-12-24 14:42:19
  */
 public class EpExecuteDefendantInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6868334631433495977L;
+	private static final long serialVersionUID = 1273977794523734179L;
 
 	/**
 	 * 案号
@@ -50,7 +50,7 @@ public class EpExecuteDefendantInfo extends AlipayObject {
 	private String zxbd;
 
 	/**
-	 * 身份证号码/组织机构代码
+	 * 组织机构代码
 	 */
 	@ApiField("zzjgdm")
 	private String zzjgdm;

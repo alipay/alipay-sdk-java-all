@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TradeFundBillDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5832423452533588367L;
+	private static final long serialVersionUID = 8458961917952439591L;
 
 	/**
 	 * 交易金额

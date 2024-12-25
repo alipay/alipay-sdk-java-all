@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 合同文件DTO
  *
  * @author auto create
- * @since 1.0, 2023-11-06 14:45:03
+ * @since 1.0, 2024-12-23 10:36:08
  */
 public class OpenApiContractFileSaDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7628637221672179778L;
+	private static final long serialVersionUID = 3746445985391297931L;
 
 	/**
 	 * 合同文件名
 	 */
 	@ApiField("file_name")
 	private String fileName;
+
+	/**
+	 * 签署类型
+	 */
+	@ApiField("file_sign_type")
+	private String fileSignType;
 
 	/**
 	 * 文件下载的http链接
@@ -30,6 +36,13 @@ public class OpenApiContractFileSaDTO extends AlipayObject {
 	}
 	public void setFileName(String fileName) {
 		this.fileName = fileName;
+	}
+
+	public String getFileSignType() {
+		return this.fileSignType;
+	}
+	public void setFileSignType(String fileSignType) {
+		this.fileSignType = fileSignType;
 	}
 
 	public String getFileUrl() {

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BizAreaDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4595519213997569661L;
+	private static final long serialVersionUID = 5592466869311721965L;
 
 	/**
 	 * 地址

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserCertdocCertverifyPreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8196663911938514562L;
+	private static final long serialVersionUID = 3789748575731264781L;
 
 	/**
 	 * 证件号

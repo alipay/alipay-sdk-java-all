@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 制度新增
  *
  * @author auto create
- * @since 1.0, 2024-11-20 11:39:19
+ * @since 1.0, 2024-12-24 20:09:17
  */
 public class AlipayEbppInvoiceInstitutionCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4326912134537667594L;
+	private static final long serialVersionUID = 3838273995458514427L;
 
 	/**
 	 * 企业共同账户id（该字段将废弃，不建议使用，可用enterprise_id字段替换） 当前字段已废弃(该字段将废弃，不建议使用，可用enterprise_id字段替换)
@@ -25,9 +25,10 @@ public class AlipayEbppInvoiceInstitutionCreateModel extends AlipayObject {
 	private String accountId;
 
 	/**
-	 * 制度适配范围
+	 * 制度适配范围 当前字段已废弃(请使用institution_scope_info中adapter_type)
 	 */
 	@ApiField("adapter_type")
+	@Deprecated
 	private String adapterType;
 
 	/**
@@ -86,6 +87,12 @@ public class AlipayEbppInvoiceInstitutionCreateModel extends AlipayObject {
 	private String institutionName;
 
 	/**
+	 * 制度适用范围信息
+	 */
+	@ApiField("institution_scope_info")
+	private InstitutionScopeInfo institutionScopeInfo;
+
+	/**
 	 * 发放规则列表
 	 */
 	@ApiListField("issue_rule_info_list")
@@ -99,23 +106,26 @@ public class AlipayEbppInvoiceInstitutionCreateModel extends AlipayObject {
 	private String outerSourceId;
 
 	/**
-	 * 适配id列表
+	 * 适配id列表 当前字段已废弃(请使用institution_scope_info中owner_id_list)
 	 */
 	@ApiListField("owner_id_list")
 	@ApiField("string")
+	@Deprecated
 	private List<String> ownerIdList;
 
 	/**
-	 * 适配开放id列表
+	 * 适配开放id列表 当前字段已废弃(仅存量使用员工支付宝id配置适配范围的场景需要该字段，新对接方案不推荐使用员工支付宝id)
 	 */
 	@ApiListField("owner_open_id_list")
 	@ApiField("string")
+	@Deprecated
 	private List<String> ownerOpenIdList;
 
 	/**
-	 * 适配id类型
+	 * 适配id类型 当前字段已废弃(请使用institution_scope_info中owner_type)
 	 */
 	@ApiField("owner_type")
+	@Deprecated
 	private String ownerType;
 
 	/**
@@ -207,6 +217,13 @@ public class AlipayEbppInvoiceInstitutionCreateModel extends AlipayObject {
 	}
 	public void setInstitutionName(String institutionName) {
 		this.institutionName = institutionName;
+	}
+
+	public InstitutionScopeInfo getInstitutionScopeInfo() {
+		return this.institutionScopeInfo;
+	}
+	public void setInstitutionScopeInfo(InstitutionScopeInfo institutionScopeInfo) {
+		this.institutionScopeInfo = institutionScopeInfo;
 	}
 
 	public List<IssueRuleInfo> getIssueRuleInfoList() {

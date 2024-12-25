@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 使券失效
  *
  * @author auto create
- * @since 1.0, 2023-11-27 10:21:30
+ * @since 1.0, 2024-12-24 15:44:12
  */
 public class AlipayMarketingActivityOrdervoucherInvalidModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8491333145223367413L;
+	private static final long serialVersionUID = 7177715274268119496L;
 
 	/**
 	 * 优惠券活动id
