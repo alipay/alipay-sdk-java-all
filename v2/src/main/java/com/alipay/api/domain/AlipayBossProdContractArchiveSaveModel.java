@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 合同归档接口
  *
  * @author auto create
- * @since 1.0, 2024-12-23 10:36:08
+ * @since 1.0, 2025-01-02 16:40:19
  */
 public class AlipayBossProdContractArchiveSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6189383985824329612L;
+	private static final long serialVersionUID = 4593622431145425332L;
 
 	/**
 	 * 合同号

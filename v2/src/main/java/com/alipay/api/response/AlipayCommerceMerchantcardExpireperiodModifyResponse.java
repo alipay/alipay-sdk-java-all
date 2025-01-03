@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.merchantcard.expireperiod.modify response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-15 17:02:17
+ * @since 1.0, 2025-01-03 10:27:22
  */
 public class AlipayCommerceMerchantcardExpireperiodModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5559289737618819915L;
+	private static final long serialVersionUID = 5699365777837492519L;
 
 	/** 
 	 * 售卖订单ID

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 还款业务单退款
  *
  * @author auto create
- * @since 1.0, 2024-11-21 10:54:52
+ * @since 1.0, 2024-12-27 15:52:20
  */
 public class AlipayCommerceWithholdrepayorderTradeRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1438467919157916842L;
+	private static final long serialVersionUID = 5315337566812819646L;
 
 	/**
 	 * 退款包含的商品列表信息，Json格式。

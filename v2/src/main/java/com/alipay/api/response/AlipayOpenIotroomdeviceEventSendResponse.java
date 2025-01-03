@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotroomdevice.event.send response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-23 21:50:22
+ * @since 1.0, 2025-01-02 16:56:20
  */
 public class AlipayOpenIotroomdeviceEventSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2837328695156475598L;
+	private static final long serialVersionUID = 4571488744461829697L;
 
 	
 

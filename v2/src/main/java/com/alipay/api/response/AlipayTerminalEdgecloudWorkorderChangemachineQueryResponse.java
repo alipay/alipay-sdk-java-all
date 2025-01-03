@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayTerminalEdgecloudWorkorderChangemachineQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7563357182343269614L;
+	private static final long serialVersionUID = 3532746593498453133L;
 
 	/** 
 	 * 维保换机工单列表，包含维保换机工单信息

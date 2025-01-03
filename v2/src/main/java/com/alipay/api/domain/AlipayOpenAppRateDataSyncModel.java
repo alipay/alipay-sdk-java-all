@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务评价数据同步
  *
  * @author auto create
- * @since 1.0, 2020-04-29 20:42:22
+ * @since 1.0, 2025-01-03 11:05:08
  */
 public class AlipayOpenAppRateDataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8879684765943834972L;
+	private static final long serialVersionUID = 7316673511652863332L;
 
 	/**
 	 * 账单号

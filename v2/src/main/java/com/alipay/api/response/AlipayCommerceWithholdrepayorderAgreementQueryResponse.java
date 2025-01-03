@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.withholdrepayorder.agreement.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-26 17:27:19
+ * @since 1.0, 2024-12-27 15:52:22
  */
 public class AlipayCommerceWithholdrepayorderAgreementQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5899991667756762166L;
+	private static final long serialVersionUID = 7387448289341114118L;
 
 	/** 
 	 * 用户签约成功后的协议号

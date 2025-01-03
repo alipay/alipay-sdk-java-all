@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 签署组件信息
  *
  * @author auto create
- * @since 1.0, 2023-10-08 13:48:39
+ * @since 1.0, 2024-12-27 10:25:16
  */
 public class MultiSignerAndTabVosDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5795923425927816767L;
+	private static final long serialVersionUID = 4283835966847668377L;
+
+	/**
+	 * ture表示自动签署，false表示手动签署。不传默认false
+	 */
+	@ApiField("auto")
+	private Boolean auto;
 
 	/**
 	 * 电子邮件主题 最大99个字
@@ -82,6 +88,13 @@ public class MultiSignerAndTabVosDTO extends AlipayObject {
 	@ApiListField("tabs")
 	@ApiField("seal_tabs_v_o")
 	private List<SealTabsVO> tabs;
+
+	public Boolean getAuto() {
+		return this.auto;
+	}
+	public void setAuto(Boolean auto) {
+		this.auto = auto;
+	}
 
 	public String getEmailBody() {
 		return this.emailBody;

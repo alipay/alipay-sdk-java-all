@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业模糊搜索接口
  *
  * @author auto create
- * @since 1.0, 2024-11-05 10:28:08
+ * @since 1.0, 2024-12-25 11:34:10
  */
 public class ZhimaCreditEpInfoSearchQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3338537269387181765L;
+	private static final long serialVersionUID = 3532349913861283983L;
 
 	/**
 	 * 请输入标准工商注册的企业名称，在此之外的特殊不允许输入

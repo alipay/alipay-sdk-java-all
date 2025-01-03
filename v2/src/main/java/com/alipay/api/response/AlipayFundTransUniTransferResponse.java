@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.uni.transfer response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-23 13:53:54
+ * @since 1.0, 2024-12-27 14:17:21
  */
 public class AlipayFundTransUniTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1254561752363461492L;
+	private static final long serialVersionUID = 4642871975589228983L;
 
 	/** 
 	 * 转账金额，单位为元，默认为空，特殊场景提供。
 	 */
 	@ApiField("amount")
 	private String amount;
+
+	/** 
+	 * 访问链接，用于多阶段转账时，后续阶段跳转支付宝端内领取阵地使用
+	 */
+	@ApiField("link")
+	private String link;
 
 	/** 
 	 * 支付宝转账订单号
@@ -60,6 +66,12 @@ REFUND：退票（转账到支付宝账户不涉及）；
 	private String status;
 
 	/** 
+	 * 转账单据子状态。 SUCCESS（二阶段转账到支付宝账户领取成功）： REFUNDED：退款（二阶段转账到支付宝账户退款）；
+	 */
+	@ApiField("sub_status")
+	private String subStatus;
+
+	/** 
 	 * 订单支付时间，格式为yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("trans_date")
@@ -70,6 +82,13 @@ REFUND：退票（转账到支付宝账户不涉及）；
 	}
 	public String getAmount( ) {
 		return this.amount;
+	}
+
+	public void setLink(String link) {
+		this.link = link;
+	}
+	public String getLink( ) {
+		return this.link;
 	}
 
 	public void setOrderId(String orderId) {
@@ -105,6 +124,13 @@ REFUND：退票（转账到支付宝账户不涉及）；
 	}
 	public String getStatus( ) {
 		return this.status;
+	}
+
+	public void setSubStatus(String subStatus) {
+		this.subStatus = subStatus;
+	}
+	public String getSubStatus( ) {
+		return this.subStatus;
 	}
 
 	public void setTransDate(String transDate) {

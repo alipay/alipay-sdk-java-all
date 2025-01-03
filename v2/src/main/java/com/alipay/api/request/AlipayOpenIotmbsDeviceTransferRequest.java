@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.iotmbs.device.transfer request
  * 
  * @author auto create
- * @since 1.0, 2024-03-28 13:36:58
+ * @since 1.0, 2025-01-02 16:54:57
  */
 public class AlipayOpenIotmbsDeviceTransferRequest implements AlipayRequest<AlipayOpenIotmbsDeviceTransferResponse> {
 

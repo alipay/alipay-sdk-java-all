@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.prod.contract.archive.save request
  * 
  * @author auto create
- * @since 1.0, 2024-12-23 10:37:23
+ * @since 1.0, 2025-01-02 16:42:25
  */
 public class AlipayBossProdContractArchiveSaveRequest implements AlipayRequest<AlipayBossProdContractArchiveSaveResponse> {
 

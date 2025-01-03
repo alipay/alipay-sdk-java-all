@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻企业信用服务受理初始化
  *
  * @author auto create
- * @since 1.0, 2024-07-17 15:56:50
+ * @since 1.0, 2024-12-25 11:30:55
  */
 public class ZhimaCreditEpAcceptanceInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3234973465516976721L;
+	private static final long serialVersionUID = 3121758535954881435L;
 
 	/**
 	 * 平台访问指定的设备类型，不填则前端根据用户实际设备类型自动加载

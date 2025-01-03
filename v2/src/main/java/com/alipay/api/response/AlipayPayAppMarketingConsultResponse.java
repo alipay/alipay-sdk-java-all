@@ -3,6 +3,7 @@ package com.alipay.api.response;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.BizTagEntity;
 import com.alipay.api.domain.PayChannelPromoInfo;
 
 import com.alipay.api.AlipayResponse;
@@ -11,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pay.app.marketing.consult response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-24 15:42:33
+ * @since 1.0, 2025-01-03 15:52:25
  */
 public class AlipayPayAppMarketingConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3729572747778983138L;
+	private static final long serialVersionUID = 4884396254263756449L;
 
 	/** 
 	 * 反作弊等级值；仅当请求入参need_query_anti_rank为true时才会返回
@@ -34,6 +35,15 @@ public class AlipayPayAppMarketingConsultResponse extends AlipayResponse {
 	 */
 	@ApiField("biz_tag")
 	private String bizTag;
+
+	/** 
+	 * name	String	人群标签名称	bindCard	用户匹配到的人群标签。枚举示例
+引导绑卡：bindCard?引导绑信用卡：bindCreditCard?引导花呗签约：huabeiSign
+extParams	Map<String,String>	扩展参数	{"url":"xxx"}	标签对应的扩展信息。类似本次新增的跳转链接地址
+	 */
+	@ApiListField("biz_tag_entity_list")
+	@ApiField("biz_tag_entity")
+	private List<BizTagEntity> bizTagEntityList;
 
 	/** 
 	 * 返回前置咨询用户命中的人群标签，如用户在花呗设首人群中，则透出ALICREDIT_PRIORITY，命中多个标签时以列表形式返回
@@ -119,6 +129,13 @@ morse匿名技术产出的混淆后的密文结果，需使用商户私钥及接
 	}
 	public String getBizTag( ) {
 		return this.bizTag;
+	}
+
+	public void setBizTagEntityList(List<BizTagEntity> bizTagEntityList) {
+		this.bizTagEntityList = bizTagEntityList;
+	}
+	public List<BizTagEntity> getBizTagEntityList( ) {
+		return this.bizTagEntityList;
 	}
 
 	public void setBizTagList(List<String> bizTagList) {

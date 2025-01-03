@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 中海油会员查询接口
  *
  * @author auto create
- * @since 1.0, 2024-11-20 10:47:07
+ * @since 1.0, 2024-12-27 15:44:18
  */
 public class AlipayCommerceGasMemberInstQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5884518163432633222L;
+	private static final long serialVersionUID = 5441388859324394835L;
+
+	/**
+	 * 机构侧会员唯一标识
+	 */
+	@ApiField("member_no")
+	private String memberNo;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识
@@ -24,6 +30,13 @@ public class AlipayCommerceGasMemberInstQueryModel extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getMemberNo() {
+		return this.memberNo;
+	}
+	public void setMemberNo(String memberNo) {
+		this.memberNo = memberNo;
+	}
 
 	public String getOpenId() {
 		return this.openId;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * iot人脸设备解除绑定酒店和房间
  *
  * @author auto create
- * @since 1.0, 2022-05-07 10:53:17
+ * @since 1.0, 2025-01-02 16:57:41
  */
 public class AlipayOpenIotmbsRoomUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4513322633195261818L;
+	private static final long serialVersionUID = 6439297162458164625L;
 
 	/**
 	 * 设备激活ID

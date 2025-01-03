@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.community.deliveryrecentorder.detect response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-24 17:02:21
+ * @since 1.0, 2024-12-25 19:57:21
  */
 public class AlipayEbppIndustryCommunityDeliveryrecentorderDetectResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8728299384378288747L;
+	private static final long serialVersionUID = 2588629378988316627L;
 
 	/** 
 	 * 骑手平台

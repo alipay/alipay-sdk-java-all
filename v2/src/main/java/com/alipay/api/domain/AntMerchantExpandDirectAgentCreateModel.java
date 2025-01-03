@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝直连商户进件
  *
  * @author auto create
- * @since 1.0, 2024-12-24 21:03:55
+ * @since 1.0, 2024-12-25 19:47:52
  */
 public class AntMerchantExpandDirectAgentCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5634517871373567787L;
+	private static final long serialVersionUID = 1895435529666468515L;
 
 	/**
 	 * 实际被商户授权的服务商appId，商户将授权给该appId代商户发起交易。该应用ID需为第三方应用类型。

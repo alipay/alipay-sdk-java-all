@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金退款
  *
  * @author auto create
- * @since 1.0, 2024-12-09 10:35:52
+ * @since 1.0, 2024-12-27 11:29:17
  */
 public class AlipayFundTransRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5615723615446349621L;
+	private static final long serialVersionUID = 1675781838972728592L;
+
+	/**
+	 * 场景码
+	 */
+	@ApiField("biz_scene")
+	private String bizScene;
 
 	/**
 	 * JSON格式，传递业务扩展参数，使用前请与支付宝工程师联系！
@@ -38,6 +44,12 @@ public class AlipayFundTransRefundModel extends AlipayObject {
 	private String passbackParams;
 
 	/**
+	 * 产品码
+	 */
+	@ApiField("product_code")
+	private String productCode;
+
+	/**
 	 * 需要退款的金额，该金额不能大于订单金额,单位为元，支持两位小数
 	 */
 	@ApiField("refund_amount")
@@ -48,6 +60,13 @@ public class AlipayFundTransRefundModel extends AlipayObject {
 	 */
 	@ApiField("remark")
 	private String remark;
+
+	public String getBizScene() {
+		return this.bizScene;
+	}
+	public void setBizScene(String bizScene) {
+		this.bizScene = bizScene;
+	}
 
 	public String getBusinessParams() {
 		return this.businessParams;
@@ -75,6 +94,13 @@ public class AlipayFundTransRefundModel extends AlipayObject {
 	}
 	public void setPassbackParams(String passbackParams) {
 		this.passbackParams = passbackParams;
+	}
+
+	public String getProductCode() {
+		return this.productCode;
+	}
+	public void setProductCode(String productCode) {
+		this.productCode = productCode;
 	}
 
 	public String getRefundAmount() {

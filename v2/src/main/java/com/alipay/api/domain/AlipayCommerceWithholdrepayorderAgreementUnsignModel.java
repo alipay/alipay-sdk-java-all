@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 还款业务单代扣协议解约
  *
  * @author auto create
- * @since 1.0, 2024-11-21 10:51:54
+ * @since 1.0, 2024-12-27 15:51:37
  */
 public class AlipayCommerceWithholdrepayorderAgreementUnsignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3115381745498287812L;
+	private static final long serialVersionUID = 4857738329248281171L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号（用户签约成功后的协议号 ），如果传了该参数，其他参数会被忽略 。 本参数与 external_agreement_no 不可同时为空。

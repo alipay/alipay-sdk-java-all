@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserAccountInfoTaobaoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5617119112842613323L;
+	private static final long serialVersionUID = 4183913569547738494L;
 
 	/**
 	 * target+否+手淘端内绑定支付宝账号+taobaoBindAlipay+固定值+仅支持手淘绑定支付宝链路使用

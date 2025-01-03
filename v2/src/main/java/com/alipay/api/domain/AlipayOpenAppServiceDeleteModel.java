@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务失效接口
  *
  * @author auto create
- * @since 1.0, 2023-11-06 12:51:26
+ * @since 1.0, 2025-01-03 11:05:41
  */
 public class AlipayOpenAppServiceDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1865887145144826426L;
+	private static final long serialVersionUID = 3819762716368648119L;
 
 	/**
 	 * 服务id

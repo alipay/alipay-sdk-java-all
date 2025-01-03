@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.hdf.medlib.sync request
  * 
  * @author auto create
- * @since 1.0, 2024-12-23 11:37:24
+ * @since 1.0, 2025-01-02 11:37:22
  */
 public class AlipayCommerceMedicalHdfMedlibSyncRequest implements AlipayRequest<AlipayCommerceMedicalHdfMedlibSyncResponse> {
 

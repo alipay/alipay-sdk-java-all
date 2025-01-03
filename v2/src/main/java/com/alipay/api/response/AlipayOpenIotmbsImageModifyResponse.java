@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotmbs.image.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 01:01:44
+ * @since 1.0, 2025-01-02 16:55:42
  */
 public class AlipayOpenIotmbsImageModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8592619662266144777L;
+	private static final long serialVersionUID = 3279282945878916778L;
 
 	
 

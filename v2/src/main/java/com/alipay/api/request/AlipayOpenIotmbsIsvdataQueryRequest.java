@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.iotmbs.isvdata.query request
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 04:36:45
+ * @since 1.0, 2025-01-02 16:58:09
  */
 public class AlipayOpenIotmbsIsvdataQueryRequest implements AlipayRequest<AlipayOpenIotmbsIsvdataQueryResponse> {
 

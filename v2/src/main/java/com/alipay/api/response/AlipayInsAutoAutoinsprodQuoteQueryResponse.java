@@ -17,7 +17,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayInsAutoAutoinsprodQuoteQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7756528222453547698L;
+	private static final long serialVersionUID = 7428868322811251864L;
 
 	/** 
 	 * 商业费率浮动系数，0~1分值的数字，精确到小数点后4位，如：0.6589

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SaleControl extends AlipayObject {
 
-	private static final long serialVersionUID = 6435491622127686465L;
+	private static final long serialVersionUID = 1244755377696354142L;
 
 	/**
 	 * 如果是多航段打包规则，传入一个：-1，否则的话，根据数字来判断是第几个航段

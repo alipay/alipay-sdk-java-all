@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoEduKtSettleinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5583344632437921617L;
+	private static final long serialVersionUID = 5321329491461451683L;
 
 	/**
 	 * 结算日期：格式为yyyy-MM-dd

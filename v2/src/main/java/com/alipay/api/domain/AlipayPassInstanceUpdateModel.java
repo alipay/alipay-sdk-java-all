@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPassInstanceUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7426349999912424773L;
+	private static final long serialVersionUID = 7242377613848848666L;
 
 	/**
 	 * 代理商代替商户发放卡券后，再代替商户更新卡券时，此值为商户的pid/appid

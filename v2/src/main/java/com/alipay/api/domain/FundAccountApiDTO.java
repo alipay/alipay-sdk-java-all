@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金专户信息
  *
  * @author auto create
- * @since 1.0, 2023-09-25 17:16:26
+ * @since 1.0, 2025-01-02 16:24:19
  */
 public class FundAccountApiDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4125674987735236432L;
+	private static final long serialVersionUID = 4436324343149959793L;
 
 	/**
 	 * 资金专户ID
 	 */
 	@ApiField("account_book_id")
 	private String accountBookId;
+
+	/**
+	 * 资金专户外表卡信息
+	 */
+	@ApiField("account_card_info")
+	private TransInCardInfo accountCardInfo;
 
 	/**
 	 * 资金专户可用余额，最多两位小数（元）
@@ -42,6 +48,13 @@ public class FundAccountApiDTO extends AlipayObject {
 	}
 	public void setAccountBookId(String accountBookId) {
 		this.accountBookId = accountBookId;
+	}
+
+	public TransInCardInfo getAccountCardInfo() {
+		return this.accountCardInfo;
+	}
+	public void setAccountCardInfo(TransInCardInfo accountCardInfo) {
+		this.accountCardInfo = accountCardInfo;
 	}
 
 	public String getAvailableAmount() {

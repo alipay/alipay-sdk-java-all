@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 还款业务单代扣协议签约
  *
  * @author auto create
- * @since 1.0, 2024-12-05 22:36:53
+ * @since 1.0, 2024-12-27 15:48:28
  */
 public class AlipayCommerceWithholdrepayorderAgreementSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8586785531292999329L;
+	private static final long serialVersionUID = 6752293966265439481L;
 
 	/**
 	 * 请按当前接入的方式进行填充，且输入值必须为文档中的参数取值范围。 扫码或者短信页面签约需要拼装http的请求地址访问中间页面，钱包h5页面签约可直接拼接scheme的请求地址

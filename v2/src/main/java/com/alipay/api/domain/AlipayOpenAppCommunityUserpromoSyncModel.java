@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 社区活动数据同步
  *
  * @author auto create
- * @since 1.0, 2020-06-22 14:29:12
+ * @since 1.0, 2025-01-03 11:04:51
  */
 public class AlipayOpenAppCommunityUserpromoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1311584572891379159L;
+	private static final long serialVersionUID = 7811419485525337657L;
 
 	/**
 	 * 业务数据

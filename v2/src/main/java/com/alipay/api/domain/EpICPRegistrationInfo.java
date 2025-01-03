@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class EpICPRegistrationInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4583818173638668881L;
+	private static final long serialVersionUID = 3818159685896235568L;
 
 	/**
 	 * 网站域名

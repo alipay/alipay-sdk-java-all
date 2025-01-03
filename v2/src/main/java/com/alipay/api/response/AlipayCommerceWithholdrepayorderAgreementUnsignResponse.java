@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.withholdrepayorder.agreement.unsign response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-21 10:52:19
+ * @since 1.0, 2024-12-27 15:52:23
  */
 public class AlipayCommerceWithholdrepayorderAgreementUnsignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3323859998349944663L;
+	private static final long serialVersionUID = 2625171315943278249L;
 
 	
 

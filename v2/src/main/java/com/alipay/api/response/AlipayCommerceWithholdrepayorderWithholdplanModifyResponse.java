@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.withholdrepayorder.withholdplan.modify response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-21 10:42:19
+ * @since 1.0, 2024-12-27 15:02:24
  */
 public class AlipayCommerceWithholdrepayorderWithholdplanModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4645696375618157267L;
+	private static final long serialVersionUID = 1359585623195956975L;
 
 	
 

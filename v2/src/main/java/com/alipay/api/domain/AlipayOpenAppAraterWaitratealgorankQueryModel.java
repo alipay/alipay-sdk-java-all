@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 服务评价待评价列表算法打分
  *
  * @author auto create
- * @since 1.0, 2020-04-29 21:37:46
+ * @since 1.0, 2025-01-03 11:05:28
  */
 public class AlipayOpenAppAraterWaitratealgorankQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1442933726468558864L;
+	private static final long serialVersionUID = 3561963483335829778L;
 
 	/**
 	 * 业务扩展参数

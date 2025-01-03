@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMobilePublicAccountDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1835165414473522828L;
+	private static final long serialVersionUID = 7263428852462453529L;
 
 	/** 
 	 * 结果码

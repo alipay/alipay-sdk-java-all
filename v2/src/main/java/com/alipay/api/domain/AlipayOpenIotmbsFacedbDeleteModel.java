@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * iot根据人脸id删除库中图片
  *
  * @author auto create
- * @since 1.0, 2022-06-08 14:29:41
+ * @since 1.0, 2025-01-02 16:56:05
  */
 public class AlipayOpenIotmbsFacedbDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2463489397132372116L;
+	private static final long serialVersionUID = 7865311713111273514L;
 
 	/**
 	 * 人脸ID

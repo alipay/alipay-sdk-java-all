@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.cityfacilitator.nlink.hgnfc.callback request
  * 
  * @author auto create
- * @since 1.0, 2024-12-23 19:12:21
+ * @since 1.0, 2024-12-31 22:12:21
  */
 public class AlipayCommerceCityfacilitatorNlinkHgnfcCallbackRequest implements AlipayRequest<AlipayCommerceCityfacilitatorNlinkHgnfcCallbackResponse> {
 

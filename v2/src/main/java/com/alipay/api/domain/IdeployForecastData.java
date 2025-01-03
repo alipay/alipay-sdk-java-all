@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IdeployForecastData extends AlipayObject {
 
-	private static final long serialVersionUID = 5862243698858379658L;
+	private static final long serialVersionUID = 2529465425333129882L;
 
 	/**
 	 * 业务线类型

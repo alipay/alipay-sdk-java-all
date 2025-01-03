@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.common.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-23 13:53:13
+ * @since 1.0, 2025-01-03 10:32:22
  */
 public class AlipayFundTransCommonQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7175984317919732142L;
+	private static final long serialVersionUID = 1317516821468671497L;
 
 	/** 
 	 * 预计到账时间，转账到银行卡专用，格式为yyyy-MM-dd HH:mm:ss，转账受理失败不返回。
@@ -83,6 +83,18 @@ public class AlipayFundTransCommonQueryResponse extends AlipayResponse {
 	private String payFundOrderId;
 
 	/** 
+	 * 收款方支付宝账号openid
+	 */
+	@ApiField("receiver_open_id")
+	private String receiverOpenId;
+
+	/** 
+	 * 收款方支付宝账号uid
+	 */
+	@ApiField("receiver_user_id")
+	private String receiverUserId;
+
+	/** 
 	 * 金融机构发起签约类、支付类、差错类业务时，应为每笔业务分配唯一的交易流水号。31位交易流水号组成规则为：“8位日期”+“16位序列号”+“1位预留位”+“6位控制位”，其中：
 a）“8位日期”为系统当前日期，ISODate格式：“YYYYMMDD”
 b）“16位序列号”由金融机构生成，金融机构应确保该值在网联当日唯一
@@ -116,6 +128,12 @@ d）“6位控制位”由金融机构通过平台获取
 	 */
 	@ApiField("sub_order_status")
 	private String subOrderStatus;
+
+	/** 
+	 * 转账单据子状态，SUCCESS：二阶段转账领取成功；REFUNDED：二阶段转账退款
+	 */
+	@ApiField("sub_status")
+	private String subStatus;
 
 	/** 
 	 * 付款金额，收银台场景下付款成功后的支付金额，订单状态为SUCCESS才返回，其他状态不返回。付款金额，单位为元，精确到小数点后两位。
@@ -206,6 +224,20 @@ d）“6位控制位”由金融机构通过平台获取
 		return this.payFundOrderId;
 	}
 
+	public void setReceiverOpenId(String receiverOpenId) {
+		this.receiverOpenId = receiverOpenId;
+	}
+	public String getReceiverOpenId( ) {
+		return this.receiverOpenId;
+	}
+
+	public void setReceiverUserId(String receiverUserId) {
+		this.receiverUserId = receiverUserId;
+	}
+	public String getReceiverUserId( ) {
+		return this.receiverUserId;
+	}
+
 	public void setSettleSerialNo(String settleSerialNo) {
 		this.settleSerialNo = settleSerialNo;
 	}
@@ -239,6 +271,13 @@ d）“6位控制位”由金融机构通过平台获取
 	}
 	public String getSubOrderStatus( ) {
 		return this.subOrderStatus;
+	}
+
+	public void setSubStatus(String subStatus) {
+		this.subStatus = subStatus;
+	}
+	public String getSubStatus( ) {
+		return this.subStatus;
 	}
 
 	public void setTransAmount(String transAmount) {

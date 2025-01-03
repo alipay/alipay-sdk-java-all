@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 通过时间查询官网培训考试成绩
  *
  * @author auto create
- * @since 1.0, 2024-12-11 17:11:29
+ * @since 1.0, 2024-12-26 15:53:31
  */
 public class AnttechOceanbaseExaminfoBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5477129784525826778L;
+	private static final long serialVersionUID = 3429488663925637332L;
 
 	/**
 	 * 结束时间

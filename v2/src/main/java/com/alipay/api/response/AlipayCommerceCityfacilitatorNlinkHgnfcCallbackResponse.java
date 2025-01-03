@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.cityfacilitator.nlink.hgnfc.callback response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-23 19:12:21
+ * @since 1.0, 2024-12-31 22:12:21
  */
 public class AlipayCommerceCityfacilitatorNlinkHgnfcCallbackResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6724588171597444883L;
+	private static final long serialVersionUID = 4839679898185396852L;
 
 	/** 
 	 * 业务场景

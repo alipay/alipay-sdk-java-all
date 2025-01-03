@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 提供给纷享销客的创建接口中的预测订单相关的信息
  *
  * @author auto create
- * @since 1.0, 2023-09-07 17:21:36
+ * @since 1.0, 2024-12-30 17:54:51
  */
 public class FxiaokeCreateOrUpdateLeadsPredictRecordItemRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 2722181754386338374L;
+	private static final long serialVersionUID = 4449398935579869287L;
 
 	/**
 	 * 商品类目code
@@ -26,7 +26,7 @@ public class FxiaokeCreateOrUpdateLeadsPredictRecordItemRequest extends AlipayOb
 	private String contractAmount;
 
 	/**
-	 * 软件订阅年限
+	 * 软件订阅年限，输入1则为1年
 	 */
 	@ApiField("software_subscription_years")
 	private String softwareSubscriptionYears;

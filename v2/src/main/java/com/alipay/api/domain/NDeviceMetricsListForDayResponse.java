@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * N设备日维度明细信息
  *
  * @author auto create
- * @since 1.0, 2024-11-12 19:45:51
+ * @since 1.0, 2024-12-27 19:49:16
  */
 public class NDeviceMetricsListForDayResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 1414425976844143378L;
+	private static final long serialVersionUID = 4172155741914155792L;
 
 	/**
 	 * 支付宝金额，单位元

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发起docusign多方签署
  *
  * @author auto create
- * @since 1.0, 2024-08-02 16:34:29
+ * @since 1.0, 2024-12-27 10:25:17
  */
 public class AlipayBossProdAntlescenterDocusignmultiCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6621354695563994487L;
+	private static final long serialVersionUID = 3386975486231682537L;
 
 	/**
 	 * 申请人工号
@@ -66,6 +66,13 @@ public class AlipayBossProdAntlescenterDocusignmultiCreateModel extends AlipayOb
 	 */
 	@ApiField("business_line_code")
 	private String businessLineCode;
+
+	/**
+	 * docusign抄送人集合
+	 */
+	@ApiListField("carbon_copies")
+	@ApiField("carbon_copies")
+	private List<CarbonCopies> carbonCopies;
 
 	/**
 	 * 合同id
@@ -207,6 +214,13 @@ public class AlipayBossProdAntlescenterDocusignmultiCreateModel extends AlipayOb
 	}
 	public void setBusinessLineCode(String businessLineCode) {
 		this.businessLineCode = businessLineCode;
+	}
+
+	public List<CarbonCopies> getCarbonCopies() {
+		return this.carbonCopies;
+	}
+	public void setCarbonCopies(List<CarbonCopies> carbonCopies) {
+		this.carbonCopies = carbonCopies;
 	}
 
 	public String getContractId() {

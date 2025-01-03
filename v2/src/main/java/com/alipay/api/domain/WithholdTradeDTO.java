@@ -1,5 +1,7 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
@@ -7,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 代扣任务交易
  *
  * @author auto create
- * @since 1.0, 2024-12-12 16:21:36
+ * @since 1.0, 2024-12-31 11:34:45
  */
 public class WithholdTradeDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4326111354997929827L;
+	private static final long serialVersionUID = 4841817474493522284L;
 
 	/**
 	 * 业务受理平台业务28位订单号
@@ -20,10 +22,23 @@ public class WithholdTradeDTO extends AlipayObject {
 	private String billNo;
 
 	/**
-	 * 扣款金额，单位为分
+	 * 当前交易所扣款的金额
+	 */
+	@ApiField("deduct")
+	private String deduct;
+
+	/**
+	 * 扣款金额，单位为分 当前字段已废弃(字段类型变更，不再使用Number)
 	 */
 	@ApiField("deduct_amount")
+	@Deprecated
 	private Long deductAmount;
+
+	/**
+	 * 扣款成功时间
+	 */
+	@ApiField("gmt_pay")
+	private Date gmtPay;
 
 	/**
 	 * 订单状态
@@ -44,11 +59,25 @@ public class WithholdTradeDTO extends AlipayObject {
 		this.billNo = billNo;
 	}
 
+	public String getDeduct() {
+		return this.deduct;
+	}
+	public void setDeduct(String deduct) {
+		this.deduct = deduct;
+	}
+
 	public Long getDeductAmount() {
 		return this.deductAmount;
 	}
 	public void setDeductAmount(Long deductAmount) {
 		this.deductAmount = deductAmount;
+	}
+
+	public Date getGmtPay() {
+		return this.gmtPay;
+	}
+	public void setGmtPay(Date gmtPay) {
+		this.gmtPay = gmtPay;
 	}
 
 	public String getStatus() {

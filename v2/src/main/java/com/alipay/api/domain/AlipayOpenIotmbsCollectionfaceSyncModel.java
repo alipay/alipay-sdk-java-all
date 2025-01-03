@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * iot设备人脸采集结果同步
  *
  * @author auto create
- * @since 1.0, 2022-05-07 10:51:33
+ * @since 1.0, 2025-01-02 16:57:00
  */
 public class AlipayOpenIotmbsCollectionfaceSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4184865113499684466L;
+	private static final long serialVersionUID = 2516963648893712969L;
 
 	/**
 	 * IOT设备唯一标识

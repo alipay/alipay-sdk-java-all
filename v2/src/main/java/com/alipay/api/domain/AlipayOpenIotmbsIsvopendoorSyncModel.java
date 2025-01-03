@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * isv同步开门请求
  *
  * @author auto create
- * @since 1.0, 2023-04-12 10:36:40
+ * @since 1.0, 2025-01-02 16:55:53
  */
 public class AlipayOpenIotmbsIsvopendoorSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3686946236375549333L;
+	private static final long serialVersionUID = 3381124283552851689L;
 
 	/**
 	 * 外部传入的用户id

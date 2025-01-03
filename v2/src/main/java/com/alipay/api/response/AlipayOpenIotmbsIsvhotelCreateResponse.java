@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotmbs.isvhotel.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-30 19:11:47
+ * @since 1.0, 2025-01-02 16:54:12
  */
 public class AlipayOpenIotmbsIsvhotelCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3312855719844182697L;
+	private static final long serialVersionUID = 7517841333277188659L;
 
 	/** 
 	 * project_id+需要编辑的酒店id

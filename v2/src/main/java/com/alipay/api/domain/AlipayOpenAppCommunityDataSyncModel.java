@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 社区生活社区素材内容上传
  *
  * @author auto create
- * @since 1.0, 2019-12-03 14:41:59
+ * @since 1.0, 2025-01-03 11:03:04
  */
 public class AlipayOpenAppCommunityDataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6217194697249294931L;
+	private static final long serialVersionUID = 1732133598628621957L;
 
 	/**
 	 * 操作类型.PUT:新增或覆盖,REMOVE:删除

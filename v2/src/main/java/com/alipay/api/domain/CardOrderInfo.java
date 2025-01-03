@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CardOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8196523393254892118L;
+	private static final long serialVersionUID = 3159625792793614295L;
 
 	/**
 	 * 售卖订单的余额面额，单位分

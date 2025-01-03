@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * NFC货柜行业异步通信回调
  *
  * @author auto create
- * @since 1.0, 2024-12-23 19:07:56
+ * @since 1.0, 2024-12-31 22:08:18
  */
 public class AlipayCommerceCityfacilitatorNlinkHgnfcCallbackModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3385431853626777148L;
+	private static final long serialVersionUID = 4251735379451431153L;
 
 	/**
 	 * 业务服务标识对应的参数

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CinemaList extends AlipayObject {
 
-	private static final long serialVersionUID = 6417464847885514287L;
+	private static final long serialVersionUID = 2421492428145917731L;
 
 	/**
 	 * 影城地址

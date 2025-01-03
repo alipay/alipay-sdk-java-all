@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * Iot酒店设备归属转移
  *
  * @author auto create
- * @since 1.0, 2024-03-28 13:35:27
+ * @since 1.0, 2025-01-02 16:54:57
  */
 public class AlipayOpenIotmbsDeviceTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5192795493698157574L;
+	private static final long serialVersionUID = 5274963749755629733L;
 
 	/**
 	 * 设备要转入的isv的pid

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MedicalGuideTab extends AlipayObject {
 
-	private static final long serialVersionUID = 7236479696689431859L;
+	private static final long serialVersionUID = 3225613694367777327L;
 
 	/**
 	 * 按钮名称

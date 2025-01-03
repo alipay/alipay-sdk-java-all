@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 代扣任务创建
  *
  * @author auto create
- * @since 1.0, 2024-12-12 16:21:37
+ * @since 1.0, 2025-01-02 10:51:54
  */
 public class AlipayCommerceWithholdTaskCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6732386563363778458L;
+	private static final long serialVersionUID = 2368691719864256513L;
 
 	/**
 	 * 代扣协议号
@@ -22,7 +22,7 @@ public class AlipayCommerceWithholdTaskCreateModel extends AlipayObject {
 	private String agreementNo;
 
 	/**
-	 * 扣款金额，单位为分
+	 * 扣款金额，单位为元
 	 */
 	@ApiField("deduct")
 	private String deduct;
@@ -34,21 +34,30 @@ public class AlipayCommerceWithholdTaskCreateModel extends AlipayObject {
 	private Date endTime;
 
 	/**
-	 * 用于标记支付宝用户在应用下的唯一标识
+	 * 用于标记支付宝用户在应用下的唯一标识 当前字段已废弃(agreementNo本身带有uid信息)
 	 */
 	@ApiField("open_id")
+	@Deprecated
 	private String openId;
 
 	/**
-	 * 外部业务号，用作幂等
+	 * 外部业务号，用作幂等 当前字段已废弃(名称修改，不再使用该字段名参数)
 	 */
 	@ApiField("out_biz_no")
+	@Deprecated
 	private String outBizNo;
 
 	/**
-	 * 支付宝用户的userId。
+	 * 外部业务号
+	 */
+	@ApiField("out_trade_no")
+	private String outTradeNo;
+
+	/**
+	 * 支付宝用户的userId。 当前字段已废弃(agreementNo本身带有uid信息)
 	 */
 	@ApiField("uid")
+	@Deprecated
 	private String uid;
 
 	public String getAgreementNo() {
@@ -84,6 +93,13 @@ public class AlipayCommerceWithholdTaskCreateModel extends AlipayObject {
 	}
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
+	}
+
+	public String getOutTradeNo() {
+		return this.outTradeNo;
+	}
+	public void setOutTradeNo(String outTradeNo) {
+		this.outTradeNo = outTradeNo;
 	}
 
 	public String getUid() {

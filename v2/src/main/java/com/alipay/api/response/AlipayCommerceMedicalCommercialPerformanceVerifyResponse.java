@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.commercial.performance.verify response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-30 18:02:03
+ * @since 1.0, 2024-12-25 19:45:40
  */
 public class AlipayCommerceMedicalCommercialPerformanceVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4636766319857469655L;
+	private static final long serialVersionUID = 7442863994176158819L;
 
 	/** 
 	 * biz_order_id用于标识支付宝侧唯一业务单的id，在商户核销用户商品时返回给商户。

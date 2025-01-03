@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CashBackInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3511241487219115419L;
+	private static final long serialVersionUID = 5338329679832752841L;
 
 	/**
 	 * 返还金额

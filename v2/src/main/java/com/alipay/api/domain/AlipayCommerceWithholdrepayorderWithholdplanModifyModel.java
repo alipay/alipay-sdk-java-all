@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 还款业务单代扣协议执行计划修改
  *
  * @author auto create
- * @since 1.0, 2024-11-21 10:42:19
+ * @since 1.0, 2024-12-27 14:59:48
  */
 public class AlipayCommerceWithholdrepayorderWithholdplanModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3675618316439456842L;
+	private static final long serialVersionUID = 4541158228572353573L;
 
 	/**
 	 * 协议号

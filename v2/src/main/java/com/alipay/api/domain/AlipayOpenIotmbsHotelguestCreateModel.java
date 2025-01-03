@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 酒店用户办理入住接口
  *
  * @author auto create
- * @since 1.0, 2023-03-30 14:46:51
+ * @since 1.0, 2025-01-02 16:55:32
  */
 public class AlipayOpenIotmbsHotelguestCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3228388544954876197L;
+	private static final long serialVersionUID = 1413243774483912997L;
 
 	/**
 	 * face_id+用于酒店关联用户和房间等信息

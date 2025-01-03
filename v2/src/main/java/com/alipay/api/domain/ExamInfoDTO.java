@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * oceanbase官网考试相关信息
  *
  * @author auto create
- * @since 1.0, 2024-12-11 17:11:29
+ * @since 1.0, 2024-12-26 15:53:31
  */
 public class ExamInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4698766846453151997L;
+	private static final long serialVersionUID = 2472181315621548421L;
 
 	/**
 	 * 证书颁发日期
@@ -56,6 +56,12 @@ public class ExamInfoDTO extends AlipayObject {
 	 */
 	@ApiField("passport_id")
 	private String passportId;
+
+	/**
+	 * 用户的出生年份
+	 */
+	@ApiField("year_of_birth")
+	private String yearOfBirth;
 
 	public Date getCertificateIssueDate() {
 		return this.certificateIssueDate;
@@ -104,6 +110,13 @@ public class ExamInfoDTO extends AlipayObject {
 	}
 	public void setPassportId(String passportId) {
 		this.passportId = passportId;
+	}
+
+	public String getYearOfBirth() {
+		return this.yearOfBirth;
+	}
+	public void setYearOfBirth(String yearOfBirth) {
+		this.yearOfBirth = yearOfBirth;
 	}
 
 }

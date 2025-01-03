@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * iot服务商查询自己写入数据
  *
  * @author auto create
- * @since 1.0, 2023-02-13 17:44:31
+ * @since 1.0, 2025-01-02 16:58:09
  */
 public class AlipayOpenIotmbsIsvdataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6525562281199631983L;
+	private static final long serialVersionUID = 3792265954868466958L;
 
 	/**
 	 * 根据condition_type，输入相应的查询条件。

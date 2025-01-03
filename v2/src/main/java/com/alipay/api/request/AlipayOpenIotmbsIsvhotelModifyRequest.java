@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.iotmbs.isvhotel.modify request
  * 
  * @author auto create
- * @since 1.0, 2024-05-22 13:41:22
+ * @since 1.0, 2025-01-02 16:52:51
  */
 public class AlipayOpenIotmbsIsvhotelModifyRequest implements AlipayRequest<AlipayOpenIotmbsIsvhotelModifyResponse> {
 

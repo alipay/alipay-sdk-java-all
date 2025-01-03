@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RetailPointPrizeInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7392563133829641299L;
+	private static final long serialVersionUID = 4266365332242612391L;
 
 	/**
 	 * 积分奖品的面额，如奖品为30元优惠券，则该字段值为30，默认单位为元

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 周期信息
  *
  * @author auto create
- * @since 1.0, 2024-12-20 13:31:52
+ * @since 1.0, 2024-12-27 16:01:21
  */
 public class CardCycle extends AlipayObject {
 
-	private static final long serialVersionUID = 8835363298126912619L;
+	private static final long serialVersionUID = 1471874277386386243L;
 
 	/**
 	 * 1.当该参数配置为true时，在用户下单时立即扣第一期的金额

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.gas.member.inst.query request
  * 
  * @author auto create
- * @since 1.0, 2024-11-20 10:52:16
+ * @since 1.0, 2024-12-27 15:47:22
  */
 public class AlipayCommerceGasMemberInstQueryRequest implements AlipayRequest<AlipayCommerceGasMemberInstQueryResponse> {
 

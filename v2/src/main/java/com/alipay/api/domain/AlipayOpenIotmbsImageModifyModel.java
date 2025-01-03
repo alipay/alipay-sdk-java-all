@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * iotmbs图片使用场景修改
  *
  * @author auto create
- * @since 1.0, 2023-05-23 10:11:22
+ * @since 1.0, 2025-01-02 16:55:42
  */
 public class AlipayOpenIotmbsImageModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7666733441766713759L;
+	private static final long serialVersionUID = 8362921476129552581L;
 
 	/**
 	 * 配置的图片id列表

@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.authorize.uni.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-04 18:00:02
+ * @since 1.0, 2025-01-03 10:37:21
  */
 public class AlipayFundAuthorizeUniQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7381931166921264236L;
+	private static final long serialVersionUID = 7871663434882197236L;
 
 	/** 
 	 * 授权协议号
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
+
+	/** 
+	 * true（已授权电子回单）
+	 */
+	@ApiField("authorize_electronic_receipt")
+	private Boolean authorizeElectronicReceipt;
 
 	/** 
 	 * 业务场景码
@@ -45,6 +51,12 @@ public class AlipayFundAuthorizeUniQueryResponse extends AlipayResponse {
 	private String outBizNo;
 
 	/** 
+	 * 标准制单授权（FUND_AUTHORIZE_FLOW）
+	 */
+	@ApiField("personal_product_code")
+	private String personalProductCode;
+
+	/** 
 	 * 业务产品码
 	 */
 	@ApiField("product_code")
@@ -61,6 +73,13 @@ public class AlipayFundAuthorizeUniQueryResponse extends AlipayResponse {
 	}
 	public String getAgreementNo( ) {
 		return this.agreementNo;
+	}
+
+	public void setAuthorizeElectronicReceipt(Boolean authorizeElectronicReceipt) {
+		this.authorizeElectronicReceipt = authorizeElectronicReceipt;
+	}
+	public Boolean getAuthorizeElectronicReceipt( ) {
+		return this.authorizeElectronicReceipt;
 	}
 
 	public void setBizScene(String bizScene) {
@@ -89,6 +108,13 @@ public class AlipayFundAuthorizeUniQueryResponse extends AlipayResponse {
 	}
 	public String getOutBizNo( ) {
 		return this.outBizNo;
+	}
+
+	public void setPersonalProductCode(String personalProductCode) {
+		this.personalProductCode = personalProductCode;
+	}
+	public String getPersonalProductCode( ) {
+		return this.personalProductCode;
 	}
 
 	public void setProductCode(String productCode) {

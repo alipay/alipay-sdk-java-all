@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 酒店行业核验后业务结果同步
  *
  * @author auto create
- * @since 1.0, 2023-11-21 13:42:49
+ * @since 1.0, 2025-01-02 16:55:21
  */
 public class AlipayOpenIotmbsHoteleventSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4624651994338378535L;
+	private static final long serialVersionUID = 7271976636137268991L;
 
 	/**
 	 * 事件类型相关的业务配置，参考接入sop，或者联系对接小二获取。

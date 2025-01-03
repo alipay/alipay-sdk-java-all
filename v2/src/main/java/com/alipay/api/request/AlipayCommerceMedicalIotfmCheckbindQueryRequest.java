@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.iotfm.checkbind.query request
  * 
  * @author auto create
- * @since 1.0, 2023-10-24 14:01:47
+ * @since 1.0, 2024-12-30 12:02:55
  */
 public class AlipayCommerceMedicalIotfmCheckbindQueryRequest implements AlipayRequest<AlipayCommerceMedicalIotfmCheckbindQueryResponse> {
 

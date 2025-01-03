@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.indirect.authorder.close response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-23 11:07:21
+ * @since 1.0, 2025-01-02 15:37:21
  */
 public class AlipayMerchantIndirectAuthorderCloseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4352879762874816436L;
+	private static final long serialVersionUID = 3367245179374387754L;
 
 	
 

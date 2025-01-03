@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PayInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7535139333286429928L;
+	private static final long serialVersionUID = 3781354798684752228L;
 
 	/**
 	 * 禁用渠道,用户不可用指定渠道支付，多个渠道以逗号分隔，与enable_pay_channels互斥  <a href="https://opendocs.alipay.com/open/common/wifww7">渠道列表</a>

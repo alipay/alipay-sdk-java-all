@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 钱包管控配置
  *
  * @author auto create
- * @since 1.0, 2024-10-28 17:30:10
+ * @since 1.0, 2024-12-31 16:57:19
  */
 public class AlipayFundWalletRuleSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6885984393735783132L;
+	private static final long serialVersionUID = 1413899698156236993L;
 
 	/**
 	 * 场景码

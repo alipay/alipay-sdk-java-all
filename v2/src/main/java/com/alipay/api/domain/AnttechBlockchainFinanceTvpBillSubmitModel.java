@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 可信价值中心账单提交
  *
  * @author auto create
- * @since 1.0, 2024-10-23 17:07:24
+ * @since 1.0, 2025-01-03 10:12:55
  */
 public class AnttechBlockchainFinanceTvpBillSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7599529232962859733L;
+	private static final long serialVersionUID = 1638172686782318252L;
 
 	/**
 	 * 账单实际支付金额，单位元

@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFincoreComplianceRcservsmartFunddatasyncSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3247164362242351459L;
+	private static final long serialVersionUID = 2517975485173887441L;
 
 	/** 
 	 * 中欧基金数据同步返回体

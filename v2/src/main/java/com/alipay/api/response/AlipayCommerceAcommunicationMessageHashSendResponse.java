@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.acommunication.message.hash.send response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-18 16:07:05
+ * @since 1.0, 2024-12-25 13:41:31
  */
 public class AlipayCommerceAcommunicationMessageHashSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7656718177792732613L;
+	private static final long serialVersionUID = 8175728126532337564L;
 
 	
 

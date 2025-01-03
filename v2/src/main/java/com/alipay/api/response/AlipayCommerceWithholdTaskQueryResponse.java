@@ -11,17 +11,35 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.withhold.task.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-23 16:45:45
+ * @since 1.0, 2025-01-02 10:52:26
  */
 public class AlipayCommerceWithholdTaskQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3792688242136121981L;
+	private static final long serialVersionUID = 8163695231756713953L;
 
 	/** 
 	 * 用于标记支付宝用户在应用下的唯一标识
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/** 
+	 * 外部业务单号
+	 */
+	@ApiField("out_trade_no")
+	private String outTradeNo;
+
+	/** 
+	 * 代扣委托调度中
+	 */
+	@ApiField("status")
+	private String status;
+
+	/** 
+	 * 当前代扣任务总扣款金额
+	 */
+	@ApiField("total_deduct")
+	private String totalDeduct;
 
 	/** 
 	 * 支付宝用户的userId。
@@ -47,6 +65,27 @@ public class AlipayCommerceWithholdTaskQueryResponse extends AlipayResponse {
 	}
 	public String getOpenId( ) {
 		return this.openId;
+	}
+
+	public void setOutTradeNo(String outTradeNo) {
+		this.outTradeNo = outTradeNo;
+	}
+	public String getOutTradeNo( ) {
+		return this.outTradeNo;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	public String getStatus( ) {
+		return this.status;
+	}
+
+	public void setTotalDeduct(String totalDeduct) {
+		this.totalDeduct = totalDeduct;
+	}
+	public String getTotalDeduct( ) {
+		return this.totalDeduct;
 	}
 
 	public void setUserId(String userId) {

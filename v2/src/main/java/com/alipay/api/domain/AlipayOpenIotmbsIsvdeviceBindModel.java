@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * isv绑定酒店设备
  *
  * @author auto create
- * @since 1.0, 2024-03-28 14:14:51
+ * @since 1.0, 2025-01-02 16:54:47
  */
 public class AlipayOpenIotmbsIsvdeviceBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4171578336339912143L;
+	private static final long serialVersionUID = 2554498872592885545L;
 
 	/**
 	 * 设备蓝牙mac地址

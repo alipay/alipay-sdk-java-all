@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 校园消息用户授权查询
  *
  * @author auto create
- * @since 1.0, 2023-11-03 11:51:08
+ * @since 1.0, 2025-01-02 15:07:52
  */
 public class AlipayCommerceEducateYouthEdumessageauthQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1656828877335256477L;
+	private static final long serialVersionUID = 6791354564444613638L;
 
 	/**
 	 * 业务类型，用于区分不同业务场景

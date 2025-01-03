@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 骑手身份校验接口
  *
  * @author auto create
- * @since 1.0, 2024-12-24 16:59:52
+ * @since 1.0, 2024-12-25 19:57:17
  */
 public class AlipayEbppIndustryCommunityDeliveryrecentorderDetectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1813614661235172522L;
+	private static final long serialVersionUID = 1266559519211439621L;
 
 	/**
 	 * 城市国标编码

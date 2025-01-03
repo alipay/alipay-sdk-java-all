@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankCreditLoanapplySmartcountyLoaninfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3547131491394418284L;
+	private static final long serialVersionUID = 6475853291667844166L;
 
 	/** 
 	 * 前准入状态

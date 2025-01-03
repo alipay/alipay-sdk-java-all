@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiCateringOrderInfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4287972214467884333L;
+	private static final long serialVersionUID = 7818951515135266642L;
 
 	/**
 	 * 订单操作类型，RECEIPT—接单、REJECT—拒单、PREPARE—已备餐、DELIVER—已送餐、REFUND—退款、RENEW—反结、ACCEPT_REFUND 接受退款、REJECT_REFUND 拒接退款、TABLE_CHANGE-修改桌号、PARTIAL_REFUND-部分退款、COOKING-下厨、QUEUE_NUM_SYNC-排队顺序同步、CONFIRM_MODIFY_TIME-确认修改预约时间、REJECT_MODIFY_TIME-拒绝修改预约时间

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankCreditSupplychainWfTokeninvalidstatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3481154643126462572L;
+	private static final long serialVersionUID = 3767894568111531891L;
 
 	
 

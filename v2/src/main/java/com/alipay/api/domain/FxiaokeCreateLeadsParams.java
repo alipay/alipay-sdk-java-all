@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 纷享销客创建商机的参数和返回值
  *
  * @author auto create
- * @since 1.0, 2024-11-22 14:21:23
+ * @since 1.0, 2024-12-30 17:54:51
  */
 public class FxiaokeCreateLeadsParams extends AlipayObject {
 
-	private static final long serialVersionUID = 2643713313228842899L;
+	private static final long serialVersionUID = 3872323644551429593L;
 
 	/**
 	 * 实际主导方
@@ -139,10 +139,16 @@ public class FxiaokeCreateLeadsParams extends AlipayObject {
 	private String generalAgentCooperationType;
 
 	/**
-	 * id
+	 * id，商机ID
 	 */
 	@ApiField("id")
 	private Long id;
+
+	/**
+	 * 0=否  1=是
+	 */
+	@ApiField("if_resource_pool")
+	private String ifResourcePool;
 
 	/**
 	 * 是否招投标0是1否
@@ -272,7 +278,7 @@ public class FxiaokeCreateLeadsParams extends AlipayObject {
 	private String partnerName;
 
 	/**
-	 * 预计个集群对应存储空间大小（公共云）
+	 * 预计个集群对应存储空间大小（公共云），单位由predict_clusters_storage_unit字段来决定
 	 */
 	@ApiField("predict_clusters_storage_capacity")
 	private Long predictClustersStorageCapacity;
@@ -308,8 +314,8 @@ public class FxiaokeCreateLeadsParams extends AlipayObject {
 	private String projectName;
 
 	/**
-	 * 公有云：触达中/交流中/测试中/商务中/使用中/Upsell/下线
-专有云：潜在商机/确认商机/方案沟通/商务谈判?中标/签约中	已签约/项目关闭
+	 * 公有云：触达中/交流中/测试中/商务中/公有云-使用中/Upsell/下线
+专有云：潜在商机/确认商机/方案沟通/商务谈判?中标/签约中	已签约/专有云-使用中/项目关闭
 	 */
 	@ApiField("project_phase")
 	private String projectPhase;
@@ -359,7 +365,7 @@ public class FxiaokeCreateLeadsParams extends AlipayObject {
 	private String source;
 
 	/**
-	 * 商机类型，枚举值{独立项目0，框架项目1，订单项目2}
+	 * 商机类型，{独立项目0，框架项目1，订单项目2}
 	 */
 	@ApiField("type")
 	private String type;
@@ -509,6 +515,13 @@ public class FxiaokeCreateLeadsParams extends AlipayObject {
 	}
 	public void setId(Long id) {
 		this.id = id;
+	}
+
+	public String getIfResourcePool() {
+		return this.ifResourcePool;
+	}
+	public void setIfResourcePool(String ifResourcePool) {
+		this.ifResourcePool = ifResourcePool;
 	}
 
 	public String getIsBid() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 还款业务单代扣协议支付并签约
  *
  * @author auto create
- * @since 1.0, 2024-11-21 21:00:18
+ * @since 1.0, 2024-12-27 15:51:59
  */
 public class AlipayCommerceWithholdrepayorderPaySignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2393413883126553879L;
+	private static final long serialVersionUID = 5856366643277315428L;
 
 	/**
 	 * 签约参数。如果希望在sdk中支付并签约，需要在这里传入签约信息。 周期扣款场景 product_code 为 CYCLE_PAY_AUTH 时必填。

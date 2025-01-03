@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.arater.ratestatus.modify request
  * 
  * @author auto create
- * @since 1.0, 2024-10-28 20:29:39
+ * @since 1.0, 2025-01-03 11:05:16
  */
 public class AlipayOpenAppAraterRatestatusModifyRequest implements AlipayRequest<AlipayOpenAppAraterRatestatusModifyResponse> {
 
