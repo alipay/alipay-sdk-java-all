@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 家庭成员绑定解绑受益人
  *
  * @author auto create
- * @since 1.0, 2024-12-26 20:55:26
+ * @since 1.0, 2025-01-08 15:28:31
  */
 public class AlipayCommerceMedicalEbbenefitMemberBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1263845418318557135L;
+	private static final long serialVersionUID = 2437112682935442353L;
 
 	/**
 	 * 是否绑定好大夫服务，0：未绑定，1：已绑定

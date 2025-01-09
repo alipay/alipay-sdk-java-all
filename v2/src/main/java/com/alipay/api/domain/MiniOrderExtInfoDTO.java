@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MiniOrderExtInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4581953748161745868L;
+	private static final long serialVersionUID = 7666135554811433575L;
 
 	/**
 	 * 二方接入交易组件用于返佣计算的特殊参数，单位为元

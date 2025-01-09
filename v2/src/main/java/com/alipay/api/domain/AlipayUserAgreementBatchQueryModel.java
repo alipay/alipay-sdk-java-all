@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserAgreementBatchQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4448989373982529427L;
+	private static final long serialVersionUID = 7711156132536474688L;
 
 	/**
 	 * 用户的支付宝登录账号，支持邮箱或手机号码格式。本参数与alipay_user_id 不可同时为空，若都填写，则以alipay_user_id 为准。

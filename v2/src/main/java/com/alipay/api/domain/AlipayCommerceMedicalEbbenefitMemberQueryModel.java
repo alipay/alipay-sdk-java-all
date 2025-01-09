@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 家庭成员列表
  *
  * @author auto create
- * @since 1.0, 2024-12-26 21:12:26
+ * @since 1.0, 2025-01-08 15:28:27
  */
 public class AlipayCommerceMedicalEbbenefitMemberQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4614332436348613815L;
+	private static final long serialVersionUID = 5871162933963341959L;
 
 	/**
 	 * 外部自有会员Id，无特殊校验

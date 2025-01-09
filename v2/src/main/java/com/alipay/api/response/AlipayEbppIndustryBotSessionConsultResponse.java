@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.bot.session.consult response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-09 19:18:25
+ * @since 1.0, 2025-01-03 20:47:21
  */
 public class AlipayEbppIndustryBotSessionConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1669269579526174429L;
+	private static final long serialVersionUID = 8655637868643296852L;
 
 	/** 
 	 * 机器人对话问答的回复

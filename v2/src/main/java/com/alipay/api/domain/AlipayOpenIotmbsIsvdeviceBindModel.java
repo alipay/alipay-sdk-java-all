@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * isv绑定酒店设备
  *
  * @author auto create
- * @since 1.0, 2025-01-02 16:54:47
+ * @since 1.0, 2025-01-07 19:28:53
  */
 public class AlipayOpenIotmbsIsvdeviceBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2554498872592885545L;
+	private static final long serialVersionUID = 3827776437517682279L;
 
 	/**
 	 * 设备蓝牙mac地址
@@ -90,7 +90,7 @@ public class AlipayOpenIotmbsIsvdeviceBindModel extends AlipayObject {
 	private String sceneType;
 
 	/**
-	 * 要进行绑定操作的设备sn
+	 * 要进行绑定操作的设备sn，英文逗号隔开
 	 */
 	@ApiField("sn")
 	private String sn;

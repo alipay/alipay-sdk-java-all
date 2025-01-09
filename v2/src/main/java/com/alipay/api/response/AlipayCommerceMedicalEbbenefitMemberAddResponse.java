@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.ebbenefit.member.add response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-26 20:57:22
+ * @since 1.0, 2025-01-08 15:27:25
  */
 public class AlipayCommerceMedicalEbbenefitMemberAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8125676429779995664L;
+	private static final long serialVersionUID = 4845168297948262492L;
 
 	/** 
 	 * 家庭成员id

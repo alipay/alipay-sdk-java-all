@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户是否已经绑定亲情账户
  *
  * @author auto create
- * @since 1.0, 2024-12-30 12:02:55
+ * @since 1.0, 2025-01-07 20:04:47
  */
 public class AlipayCommerceMedicalIotfmCheckbindQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2712117497888418724L;
+	private static final long serialVersionUID = 7751973714657132996L;
 
 	/**
 	 * 主账户刷脸ftoken

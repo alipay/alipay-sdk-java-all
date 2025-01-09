@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝租车先享后付退款
  *
  * @author auto create
- * @since 1.0, 2024-03-12 15:21:49
+ * @since 1.0, 2025-01-06 10:38:54
  */
 public class AlipayEcoMycarRentcarPayafteruseRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4414621935712415357L;
+	private static final long serialVersionUID = 4686257642591854792L;
 
 	/**
 	 * 扣款时的商户交易号

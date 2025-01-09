@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 超上借支授权申请
  *
  * @author auto create
- * @since 1.0, 2024-11-06 15:56:18
+ * @since 1.0, 2025-01-07 17:06:29
  */
 public class AlipayFundAuthorizeUniApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2181148381848918793L;
+	private static final long serialVersionUID = 7745987865236971864L;
 
 	/**
 	 * 超时时间，过期跳转链接失效，格式为yyyy-MM-dd HH:mm。不传，有效期默认7天
@@ -42,6 +42,13 @@ public class AlipayFundAuthorizeUniApplyModel extends AlipayObject {
 	 */
 	@ApiField("back_url")
 	private String backUrl;
+
+	/**
+	 * 回跳地址类型
+默认值: BACK_ALIPAY
+	 */
+	@ApiField("back_url_type")
+	private String backUrlType;
 
 	/**
 	 * 业务场景码，固定值
@@ -125,6 +132,13 @@ pc, h5, tinyapp
 	}
 	public void setBackUrl(String backUrl) {
 		this.backUrl = backUrl;
+	}
+
+	public String getBackUrlType() {
+		return this.backUrlType;
+	}
+	public void setBackUrlType(String backUrlType) {
+		this.backUrlType = backUrlType;
 	}
 
 	public String getBizScene() {

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.etcenterprise.vehicle.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:28:32
+ * @since 1.0, 2025-01-07 14:25:16
  */
 public class AlipayCommerceTransportEtcenterpriseVehicleCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5315832268175985963L;
+	private static final long serialVersionUID = 3191985846361435515L;
 
 	/** 
 	 * SUCCESS：订单申请成功； FAIL:申请失败原因

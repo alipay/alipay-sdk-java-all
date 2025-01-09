@@ -10,6 +10,7 @@ import com.alipay.api.domain.ContactInfoVO;
 import com.alipay.api.domain.DeliveryDetailInfoVO;
 import com.alipay.api.domain.OrderDetailInfoVO;
 import com.alipay.api.domain.RefundInfoVO;
+import com.alipay.api.domain.RentInfoVO;
 import com.alipay.api.domain.ShopInfoDTO;
 import com.alipay.api.domain.StagePayPlanVO;
 
@@ -19,11 +20,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-27 15:18:31
+ * @since 1.0, 2025-01-09 10:27:22
  */
 public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8445488141799192626L;
+	private static final long serialVersionUID = 3582986734152134818L;
 
 	/** 
 	 * 订单受理信息，租赁类型订单且通过快捷下单场景特有
@@ -114,6 +115,12 @@ public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("refund_info")
 	private RefundInfoVO refundInfo;
+
+	/** 
+	 * 租赁信息
+	 */
+	@ApiField("rent_info")
+	private RentInfoVO rentInfo;
 
 	/** 
 	 * 结算方式
@@ -255,6 +262,13 @@ public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 	}
 	public RefundInfoVO getRefundInfo( ) {
 		return this.refundInfo;
+	}
+
+	public void setRentInfo(RentInfoVO rentInfo) {
+		this.rentInfo = rentInfo;
+	}
+	public RentInfoVO getRentInfo( ) {
+		return this.rentInfo;
 	}
 
 	public void setSettleType(String settleType) {

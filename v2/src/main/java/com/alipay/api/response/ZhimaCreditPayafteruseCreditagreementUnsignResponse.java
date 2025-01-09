@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.payafteruse.creditagreement.unsign response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-07 12:06:18
+ * @since 1.0, 2025-01-06 11:15:18
  */
 public class ZhimaCreditPayafteruseCreditagreementUnsignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5444332428723719754L;
+	private static final long serialVersionUID = 8862948615385328632L;
 
 	
 

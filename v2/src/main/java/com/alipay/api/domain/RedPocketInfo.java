@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RedPocketInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3489924798865681689L;
+	private static final long serialVersionUID = 5421255994751666212L;
 
 	/**
 	 * 红包id

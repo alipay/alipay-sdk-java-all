@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 处方药品信息
  *
  * @author auto create
- * @since 1.0, 2024-11-14 15:17:10
+ * @since 1.0, 2025-01-06 16:06:20
  */
 public class PlatformPrescriptionDrugInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5436378471315251454L;
+	private static final long serialVersionUID = 7838955168395168732L;
 
 	/**
 	 * 备注
@@ -42,6 +42,12 @@ public class PlatformPrescriptionDrugInfo extends AlipayObject {
 	 */
 	@ApiField("drug_name")
 	private String drugName;
+
+	/**
+	 * 药品图片链接
+	 */
+	@ApiField("drug_url")
+	private String drugUrl;
 
 	/**
 	 * 用药说明
@@ -94,6 +100,13 @@ public class PlatformPrescriptionDrugInfo extends AlipayObject {
 	}
 	public void setDrugName(String drugName) {
 		this.drugName = drugName;
+	}
+
+	public String getDrugUrl() {
+		return this.drugUrl;
+	}
+	public void setDrugUrl(String drugUrl) {
+		this.drugUrl = drugUrl;
 	}
 
 	public String getInstructions() {

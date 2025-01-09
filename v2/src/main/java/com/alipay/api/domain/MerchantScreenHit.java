@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MerchantScreenHit extends AlipayObject {
 
-	private static final long serialVersionUID = 5147559749916198856L;
+	private static final long serialVersionUID = 8779338171243923775L;
 
 	/**
 	 * 送检的实体类型，如CEO，控股人，等

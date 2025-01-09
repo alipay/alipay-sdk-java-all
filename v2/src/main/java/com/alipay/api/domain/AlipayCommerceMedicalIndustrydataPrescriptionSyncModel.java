@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 处方单回流接口
  *
  * @author auto create
- * @since 1.0, 2024-11-14 15:17:10
+ * @since 1.0, 2025-01-06 16:06:20
  */
 public class AlipayCommerceMedicalIndustrydataPrescriptionSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2693338695555955382L;
+	private static final long serialVersionUID = 6638887923661453965L;
 
 	/**
 	 * 支付宝用户openId
@@ -40,6 +40,12 @@ public class AlipayCommerceMedicalIndustrydataPrescriptionSyncModel extends Alip
 	 */
 	@ApiField("audit_pharmacist_name")
 	private String auditPharmacistName;
+
+	/**
+	 * 诊断结果
+	 */
+	@ApiField("clinic_desc")
+	private String clinicDesc;
 
 	/**
 	 * 开方医生名称
@@ -192,6 +198,13 @@ public class AlipayCommerceMedicalIndustrydataPrescriptionSyncModel extends Alip
 	}
 	public void setAuditPharmacistName(String auditPharmacistName) {
 		this.auditPharmacistName = auditPharmacistName;
+	}
+
+	public String getClinicDesc() {
+		return this.clinicDesc;
+	}
+	public void setClinicDesc(String clinicDesc) {
+		this.clinicDesc = clinicDesc;
 	}
 
 	public String getDoctorName() {

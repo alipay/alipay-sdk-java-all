@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.authorize.uni.apply response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-19 13:37:08
+ * @since 1.0, 2025-01-08 10:22:23
  */
 public class AlipayFundAuthorizeUniApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1327951435497892732L;
+	private static final long serialVersionUID = 3841858985852948587L;
 
 	/** 
 	 * 授权跳转链接
@@ -25,6 +25,12 @@ public class AlipayFundAuthorizeUniApplyResponse extends AlipayResponse {
 	 */
 	@ApiField("authorize_link_type")
 	private String authorizeLinkType;
+
+	/** 
+	 * 在authorize_link_type=OUT_SHOR_URL时，返回授权凭证
+	 */
+	@ApiField("authorize_token")
+	private String authorizeToken;
 
 	/** 
 	 * 业务场景码
@@ -56,6 +62,13 @@ public class AlipayFundAuthorizeUniApplyResponse extends AlipayResponse {
 	}
 	public String getAuthorizeLinkType( ) {
 		return this.authorizeLinkType;
+	}
+
+	public void setAuthorizeToken(String authorizeToken) {
+		this.authorizeToken = authorizeToken;
+	}
+	public String getAuthorizeToken( ) {
+		return this.authorizeToken;
 	}
 
 	public void setBizScene(String bizScene) {

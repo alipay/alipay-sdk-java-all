@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMerchantcardSettleaccountSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4649576755925589618L;
+	private static final long serialVersionUID = 6127169428585665999L;
 
 	/**
 	 * 结算收款的支付宝账号，是登录账号，非pid

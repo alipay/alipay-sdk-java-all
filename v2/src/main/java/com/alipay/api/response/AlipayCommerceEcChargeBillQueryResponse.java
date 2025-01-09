@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceEcChargeBillQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4778417766818532741L;
+	private static final long serialVersionUID = 8582413967322924185L;
 
 	/** 
 	 * 服务费信息列表

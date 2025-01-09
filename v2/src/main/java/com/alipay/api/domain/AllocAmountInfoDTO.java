@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 分账条款
  *
  * @author auto create
- * @since 1.0, 2024-05-13 14:22:16
+ * @since 1.0, 2025-01-07 13:48:44
  */
 public class AllocAmountInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1786873589822628115L;
+	private static final long serialVersionUID = 3359989966281844129L;
 
 	/**
 	 * 买断分账计划
 	 */
 	@ApiField("buy_out_royalty")
 	private RoyaltyDTO buyOutRoyalty;
+
+	/**
+	 * 用于资方明确指定app时使用
+	 */
+	@ApiField("invest_app_id")
+	private String investAppId;
 
 	/**
 	 * 资方PID，对应合作融资的资方pid
@@ -40,6 +46,13 @@ public class AllocAmountInfoDTO extends AlipayObject {
 	}
 	public void setBuyOutRoyalty(RoyaltyDTO buyOutRoyalty) {
 		this.buyOutRoyalty = buyOutRoyalty;
+	}
+
+	public String getInvestAppId() {
+		return this.investAppId;
+	}
+	public void setInvestAppId(String investAppId) {
+		this.investAppId = investAppId;
 	}
 
 	public String getInvestId() {

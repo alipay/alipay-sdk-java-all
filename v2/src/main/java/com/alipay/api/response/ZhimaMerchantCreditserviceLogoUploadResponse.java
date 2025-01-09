@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.merchant.creditservice.logo.upload response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-16 11:28:50
+ * @since 1.0, 2025-01-03 18:12:32
  */
 public class ZhimaMerchantCreditserviceLogoUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5214767316975132214L;
+	private static final long serialVersionUID = 6365612795324225443L;
 
 	/** 
 	 * 上传图片后生成的图片地址

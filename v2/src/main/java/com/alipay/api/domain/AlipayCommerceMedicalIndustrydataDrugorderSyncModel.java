@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 药品订单回流接口
  *
  * @author auto create
- * @since 1.0, 2024-11-14 15:17:09
+ * @since 1.0, 2025-01-06 16:03:53
  */
 public class AlipayCommerceMedicalIndustrydataDrugorderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8629668628335446518L;
+	private static final long serialVersionUID = 8297723135753941375L;
 
 	/**
 	 * 增值服务信息

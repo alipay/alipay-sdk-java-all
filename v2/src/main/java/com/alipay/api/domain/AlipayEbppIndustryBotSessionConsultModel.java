@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业智能助理机器人对话问答
  *
  * @author auto create
- * @since 1.0, 2024-08-27 21:32:15
+ * @since 1.0, 2025-01-03 20:45:16
  */
 public class AlipayEbppIndustryBotSessionConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3453729689169574781L;
+	private static final long serialVersionUID = 1578391682237695299L;
 
 	/**
 	 * 业务扩展信息
@@ -26,7 +26,7 @@ public class AlipayEbppIndustryBotSessionConsultModel extends AlipayObject {
 	private String botId;
 
 	/**
-	 * 业务请求的来源。 alipay：支付宝端内请求 pc：pc端内请求 app：业务机构自研app请求
+	 * 机构用户在政务AI开放平台录入服务数据时选择的渠道参数，如：alipay。由于各机构数据有差异渠道数据不可枚举，具体以导入数据为准。
 	 */
 	@ApiField("channel")
 	private String channel;

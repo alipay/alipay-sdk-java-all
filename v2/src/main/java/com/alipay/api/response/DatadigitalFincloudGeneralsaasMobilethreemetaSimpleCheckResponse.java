@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.fincloud.generalsaas.mobilethreemeta.simple.check response.
  * 
  * @author auto create
- * @since 1.0, 2025-01-02 15:15:23
+ * @since 1.0, 2025-01-06 19:52:20
  */
 public class DatadigitalFincloudGeneralsaasMobilethreemetaSimpleCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7397959598976736543L;
+	private static final long serialVersionUID = 5628517663879175482L;
 
 	/** 
 	 * 认证单据号，用于认证问题排查

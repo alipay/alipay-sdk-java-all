@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 问诊订单状态回流接口
  *
  * @author auto create
- * @since 1.0, 2024-11-22 17:30:56
+ * @since 1.0, 2025-01-06 16:05:52
  */
 public class AlipayCommerceMedicalIndustrydataInquiryorderstatusSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8829721398936137919L;
+	private static final long serialVersionUID = 2366961612846389975L;
 
 	/**
 	 * 支付宝用户openId
@@ -48,6 +48,7 @@ public class AlipayCommerceMedicalIndustrydataInquiryorderstatusSyncModel extend
 退款申请中：REFUND_APPLYING
 退款中：REFUNDING
 已完成：FINISHED
+用户申诉退款：USER_APPEAL_CANCELED
 	 */
 	@ApiField("merchant_order_status")
 	private String merchantOrderStatus;

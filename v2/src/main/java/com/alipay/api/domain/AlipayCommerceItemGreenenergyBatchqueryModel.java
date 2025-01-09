@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业绿色能量插件能量流水查询
  *
  * @author auto create
- * @since 1.0, 2022-11-07 14:51:09
+ * @since 1.0, 2025-01-07 00:29:03
  */
 public class AlipayCommerceItemGreenenergyBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2565356748318286131L;
+	private static final long serialVersionUID = 3489511698231649543L;
 
 	/**
 	 * 支付宝用户uid

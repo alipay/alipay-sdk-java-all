@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.ebbenefit.dingmsg.send response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-26 20:57:22
+ * @since 1.0, 2025-01-08 15:32:22
  */
 public class AlipayCommerceMedicalEbbenefitDingmsgSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2645691417955435177L;
+	private static final long serialVersionUID = 6445821536448677514L;
 
 	
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻信用互查申请
  *
  * @author auto create
- * @since 1.0, 2018-10-25 11:42:44
+ * @since 1.0, 2025-01-03 18:14:43
  */
 public class ZhimaCustomerAuthMutualviewApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1758475712227599199L;
+	private static final long serialVersionUID = 4745874223464218275L;
 
 	/**
 	 * 当前业务操作是查询自己还是查询别人的芝麻分，接口提供方分配的值：

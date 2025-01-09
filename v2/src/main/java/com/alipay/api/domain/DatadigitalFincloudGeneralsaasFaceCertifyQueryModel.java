@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸核身产品身份认证记录查询
  *
  * @author auto create
- * @since 1.0, 2024-11-07 17:12:53
+ * @since 1.0, 2025-01-07 15:25:19
  */
 public class DatadigitalFincloudGeneralsaasFaceCertifyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5473162285164428575L;
+	private static final long serialVersionUID = 8737772415146179252L;
 
 	/**
 	 * 本次申请操作的唯一标识，通过datadigital.fincloud.generalsaas.face.certify.initialize

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 专家问诊预约班次对象
  *
  * @author auto create
- * @since 1.0, 2024-03-07 11:00:44
+ * @since 1.0, 2025-01-06 16:01:52
  */
 public class InquiryDoctorShiftCaseData extends AlipayObject {
 
-	private static final long serialVersionUID = 4891192978697944375L;
+	private static final long serialVersionUID = 2456281233665985257L;
 
 	/**
 	 * 外部排班编码

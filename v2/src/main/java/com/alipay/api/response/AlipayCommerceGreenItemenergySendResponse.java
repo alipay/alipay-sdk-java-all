@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.green.itemenergy.send response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-08 10:09:52
+ * @since 1.0, 2025-01-07 00:27:31
  */
 public class AlipayCommerceGreenItemenergySendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4315175284639984146L;
+	private static final long serialVersionUID = 6656353768527488362L;
 
 	/** 
 	 * 发放的能量数

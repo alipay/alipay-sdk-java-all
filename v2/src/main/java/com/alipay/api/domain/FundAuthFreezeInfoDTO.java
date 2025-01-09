@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金预授权冻结信息
  *
  * @author auto create
- * @since 1.0, 2024-09-01 22:13:15
+ * @since 1.0, 2025-01-07 13:48:44
  */
 public class FundAuthFreezeInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3136413396589448185L;
+	private static final long serialVersionUID = 5881964131233517751L;
 
 	/**
 	 * 芝麻外部类目
@@ -31,6 +31,12 @@ public class FundAuthFreezeInfoDTO extends AlipayObject {
 	 */
 	@ApiField("payee_user_id")
 	private String payeeUserId;
+
+	/**
+	 * 免押风控评估金额，单位：元，精确到小数点后两位
+	 */
+	@ApiField("risk_assessment_price")
+	private String riskAssessmentPrice;
 
 	/**
 	 * 芝麻侧生成的信用服务id
@@ -57,6 +63,13 @@ public class FundAuthFreezeInfoDTO extends AlipayObject {
 	}
 	public void setPayeeUserId(String payeeUserId) {
 		this.payeeUserId = payeeUserId;
+	}
+
+	public String getRiskAssessmentPrice() {
+		return this.riskAssessmentPrice;
+	}
+	public void setRiskAssessmentPrice(String riskAssessmentPrice) {
+		this.riskAssessmentPrice = riskAssessmentPrice;
 	}
 
 	public String getZmServiceId() {

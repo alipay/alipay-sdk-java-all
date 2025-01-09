@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝就业工资条信息同步
  *
  * @author auto create
- * @since 1.0, 2024-10-23 16:10:18
+ * @since 1.0, 2025-01-07 20:59:16
  */
 public class AlipayEbppIndustryJobPayslipSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8864256338218671911L;
+	private static final long serialVersionUID = 1564919715349123532L;
 
 	/**
 	 * 付款金额，单位：元
@@ -99,6 +99,12 @@ public class AlipayEbppIndustryJobPayslipSyncModel extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	/**
+	 * 支付宝账户对应的用户姓名；新接入商户该字段必填
+	 */
+	@ApiField("user_name")
+	private String userName;
 
 	public String getAmount() {
 		return this.amount;
@@ -196,6 +202,13 @@ public class AlipayEbppIndustryJobPayslipSyncModel extends AlipayObject {
 	}
 	public void setUserId(String userId) {
 		this.userId = userId;
+	}
+
+	public String getUserName() {
+		return this.userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 
 }

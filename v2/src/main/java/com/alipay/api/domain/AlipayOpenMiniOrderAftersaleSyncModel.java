@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家售后处理结果同步
  *
  * @author auto create
- * @since 1.0, 2024-07-12 21:39:16
+ * @since 1.0, 2025-01-09 13:59:20
  */
 public class AlipayOpenMiniOrderAftersaleSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5136719451531537335L;
+	private static final long serialVersionUID = 5535789894989977538L;
 
 	/**
 	 * 操作code

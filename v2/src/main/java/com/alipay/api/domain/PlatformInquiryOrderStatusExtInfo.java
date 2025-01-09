@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 问诊订单状态同步-扩展信息
  *
  * @author auto create
- * @since 1.0, 2024-11-22 17:30:56
+ * @since 1.0, 2025-01-06 16:05:52
  */
 public class PlatformInquiryOrderStatusExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8461752667662877441L;
+	private static final long serialVersionUID = 7112734741635796544L;
 
 	/**
 	 * 支付宝交易号
@@ -60,6 +60,12 @@ public class PlatformInquiryOrderStatusExtInfo extends AlipayObject {
 	private String doctorOutName;
 
 	/**
+	 * 医生拒诊原因
+	 */
+	@ApiField("doctor_refuse_reason")
+	private String doctorRefuseReason;
+
+	/**
 	 * 是否首次回复
 	 */
 	@ApiField("first_reply")
@@ -102,6 +108,14 @@ public class PlatformInquiryOrderStatusExtInfo extends AlipayObject {
 	private Date gmtRefundApplying;
 
 	/**
+	 * 问诊完成类型
+DOCTOR_ACTIVE_END：医生主动完成
+TIMEOUT_END：超时结束
+	 */
+	@ApiField("inquiry_complete_status")
+	private String inquiryCompleteStatus;
+
+	/**
 	 * 是否触发消息通知
 	 */
 	@ApiField("notice")
@@ -142,6 +156,12 @@ public class PlatformInquiryOrderStatusExtInfo extends AlipayObject {
 	 */
 	@ApiField("reply_content")
 	private String replyContent;
+
+	/**
+	 * 服务截止时间
+	 */
+	@ApiField("service_end_time")
+	private Date serviceEndTime;
 
 	public String getAlipayTradeNo() {
 		return this.alipayTradeNo;
@@ -190,6 +210,13 @@ public class PlatformInquiryOrderStatusExtInfo extends AlipayObject {
 	}
 	public void setDoctorOutName(String doctorOutName) {
 		this.doctorOutName = doctorOutName;
+	}
+
+	public String getDoctorRefuseReason() {
+		return this.doctorRefuseReason;
+	}
+	public void setDoctorRefuseReason(String doctorRefuseReason) {
+		this.doctorRefuseReason = doctorRefuseReason;
 	}
 
 	public Boolean getFirstReply() {
@@ -241,6 +268,13 @@ public class PlatformInquiryOrderStatusExtInfo extends AlipayObject {
 		this.gmtRefundApplying = gmtRefundApplying;
 	}
 
+	public String getInquiryCompleteStatus() {
+		return this.inquiryCompleteStatus;
+	}
+	public void setInquiryCompleteStatus(String inquiryCompleteStatus) {
+		this.inquiryCompleteStatus = inquiryCompleteStatus;
+	}
+
 	public Boolean getNotice() {
 		return this.notice;
 	}
@@ -288,6 +322,13 @@ public class PlatformInquiryOrderStatusExtInfo extends AlipayObject {
 	}
 	public void setReplyContent(String replyContent) {
 		this.replyContent = replyContent;
+	}
+
+	public Date getServiceEndTime() {
+		return this.serviceEndTime;
+	}
+	public void setServiceEndTime(Date serviceEndTime) {
+		this.serviceEndTime = serviceEndTime;
 	}
 
 }

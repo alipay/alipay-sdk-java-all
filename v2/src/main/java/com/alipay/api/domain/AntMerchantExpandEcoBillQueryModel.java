@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ISV生态供应商查询返佣账单信息接口
  *
  * @author auto create
- * @since 1.0, 2024-07-01 14:08:43
+ * @since 1.0, 2025-01-07 17:30:23
  */
 public class AntMerchantExpandEcoBillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1674722214616329195L;
+	private static final long serialVersionUID = 6334692857194472399L;
 
 	/**
 	 * 出账日期

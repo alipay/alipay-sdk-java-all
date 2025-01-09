@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 员工信息
  *
  * @author auto create
- * @since 1.0, 2024-11-12 10:43:24
+ * @since 1.0, 2025-01-03 17:16:53
  */
 public class EmployeeInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6777144537922934551L;
+	private static final long serialVersionUID = 1771673256674425885L;
 
 	/**
 	 * 是否激活
@@ -108,6 +108,12 @@ public class EmployeeInfoDTO extends AlipayObject {
 	private String iotVid;
 
 	/**
+	 * 员工职级
+	 */
+	@ApiField("job_level_show")
+	private String jobLevelShow;
+
+	/**
 	 * 手机号码
 	 */
 	@ApiField("mobile")
@@ -131,6 +137,12 @@ public class EmployeeInfoDTO extends AlipayObject {
 	@ApiListField("role_list")
 	@ApiField("string")
 	private List<String> roleList;
+
+	/**
+	 * 直属主管员工ID
+	 */
+	@ApiField("tl_employee_id")
+	private String tlEmployeeId;
 
 	/**
 	 * 用户ID（绑定支付宝账号的uid）
@@ -243,6 +255,13 @@ public class EmployeeInfoDTO extends AlipayObject {
 		this.iotVid = iotVid;
 	}
 
+	public String getJobLevelShow() {
+		return this.jobLevelShow;
+	}
+	public void setJobLevelShow(String jobLevelShow) {
+		this.jobLevelShow = jobLevelShow;
+	}
+
 	public String getMobile() {
 		return this.mobile;
 	}
@@ -269,6 +288,13 @@ public class EmployeeInfoDTO extends AlipayObject {
 	}
 	public void setRoleList(List<String> roleList) {
 		this.roleList = roleList;
+	}
+
+	public String getTlEmployeeId() {
+		return this.tlEmployeeId;
+	}
+	public void setTlEmployeeId(String tlEmployeeId) {
+		this.tlEmployeeId = tlEmployeeId;
 	}
 
 	public String getUserId() {

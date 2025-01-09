@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pay.app.pocketmoney.promo.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2024-12-20 16:52:23
+ * @since 1.0, 2025-01-07 10:37:24
  */
 public class AlipayPayAppPocketmoneyPromoBatchqueryRequest implements AlipayRequest<AlipayPayAppPocketmoneyPromoBatchqueryResponse> {
 

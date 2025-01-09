@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 部门信息
  *
  * @author auto create
- * @since 1.0, 2024-07-22 17:48:25
+ * @since 1.0, 2025-01-03 17:16:54
  */
 public class DepartmentInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6774911473619434775L;
+	private static final long serialVersionUID = 5249749742357512272L;
 
 	/**
 	 * 部门编码
@@ -30,6 +30,12 @@ public class DepartmentInfoDTO extends AlipayObject {
 	 */
 	@ApiField("department_name")
 	private String departmentName;
+
+	/**
+	 * 部门负责人员工ID
+	 */
+	@ApiField("dept_charge_employee_id")
+	private String deptChargeEmployeeId;
 
 	/**
 	 * 创建时间
@@ -68,6 +74,13 @@ public class DepartmentInfoDTO extends AlipayObject {
 	}
 	public void setDepartmentName(String departmentName) {
 		this.departmentName = departmentName;
+	}
+
+	public String getDeptChargeEmployeeId() {
+		return this.deptChargeEmployeeId;
+	}
+	public void setDeptChargeEmployeeId(String deptChargeEmployeeId) {
+		this.deptChargeEmployeeId = deptChargeEmployeeId;
 	}
 
 	public String getGmtCreate() {

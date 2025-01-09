@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BaseInfoConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 5717936764459982861L;
+	private static final long serialVersionUID = 5317434732461121878L;
 
 	/**
 	 * 商户联系人邮箱，需为合法的邮箱。

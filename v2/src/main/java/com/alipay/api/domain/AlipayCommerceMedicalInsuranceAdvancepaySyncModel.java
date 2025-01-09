@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商保码-垫付申请状态同步
  *
  * @author auto create
- * @since 1.0, 2024-12-10 17:36:40
+ * @since 1.0, 2025-01-06 15:12:54
  */
 public class AlipayCommerceMedicalInsuranceAdvancepaySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4697778751362136756L;
+	private static final long serialVersionUID = 5251392666421712943L;
 
 	/**
 	 * 垫付申请结果描述。垫付申请失败时，需给出失败原因
@@ -130,6 +130,12 @@ public class AlipayCommerceMedicalInsuranceAdvancepaySyncModel extends AlipayObj
 	 */
 	@ApiField("status")
 	private String status;
+
+	/**
+	 * 是否可追垫标识（TAG_NO-否，TAG_YES-是）
+	 */
+	@ApiField("supplement_tag")
+	private String supplementTag;
 
 	/**
 	 * 支付宝用户的userId。
@@ -268,6 +274,13 @@ public class AlipayCommerceMedicalInsuranceAdvancepaySyncModel extends AlipayObj
 	}
 	public void setStatus(String status) {
 		this.status = status;
+	}
+
+	public String getSupplementTag() {
+		return this.supplementTag;
+	}
+	public void setSupplementTag(String supplementTag) {
+		this.supplementTag = supplementTag;
 	}
 
 	public String getUserId() {

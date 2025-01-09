@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.iotfm.checkbind.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-30 12:02:55
+ * @since 1.0, 2025-01-07 20:07:24
  */
 public class AlipayCommerceMedicalIotfmCheckbindQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3323946889335396743L;
+	private static final long serialVersionUID = 1344459939633533875L;
 
 	/** 
 	 * 主账户是否有绑定亲情账户

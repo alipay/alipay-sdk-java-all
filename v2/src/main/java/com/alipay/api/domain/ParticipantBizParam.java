@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 扩展数据,兼容授信专户业务参数
  *
  * @author auto create
- * @since 1.0, 2024-11-04 10:33:55
+ * @since 1.0, 2025-01-07 17:06:29
  */
 public class ParticipantBizParam extends AlipayObject {
 
-	private static final long serialVersionUID = 1299864317674525622L;
+	private static final long serialVersionUID = 6238899652892291633L;
 
 	/**
 	 * 代发专户ID
@@ -48,6 +48,12 @@ public class ParticipantBizParam extends AlipayObject {
 	 */
 	@ApiField("sub_merchant_id_type")
 	private String subMerchantIdType;
+
+	/**
+	 * 钱包id
+	 */
+	@ApiField("user_wallet_id")
+	private String userWalletId;
 
 	public String getAccountBookId() {
 		return this.accountBookId;
@@ -89,6 +95,13 @@ public class ParticipantBizParam extends AlipayObject {
 	}
 	public void setSubMerchantIdType(String subMerchantIdType) {
 		this.subMerchantIdType = subMerchantIdType;
+	}
+
+	public String getUserWalletId() {
+		return this.userWalletId;
+	}
+	public void setUserWalletId(String userWalletId) {
+		this.userWalletId = userWalletId;
 	}
 
 }

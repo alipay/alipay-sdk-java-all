@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 手机号三要素核验简版
  *
  * @author auto create
- * @since 1.0, 2024-11-20 12:37:31
+ * @since 1.0, 2025-01-06 19:50:08
  */
 public class DatadigitalFincloudGeneralsaasMobilethreemetaSimpleCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5599614961593443335L;
+	private static final long serialVersionUID = 1447946134837316396L;
 
 	/**
 	 * 业务产品码
@@ -30,6 +30,12 @@ public class DatadigitalFincloudGeneralsaasMobilethreemetaSimpleCheckModel exten
 	 */
 	@ApiField("cert_no")
 	private String certNo;
+
+	/**
+	 * 证件类型
+	 */
+	@ApiField("cert_type")
+	private String certType;
 
 	/**
 	 * 客户业务单据号
@@ -62,6 +68,13 @@ public class DatadigitalFincloudGeneralsaasMobilethreemetaSimpleCheckModel exten
 	}
 	public void setCertNo(String certNo) {
 		this.certNo = certNo;
+	}
+
+	public String getCertType() {
+		return this.certType;
+	}
+	public void setCertType(String certType) {
+		this.certType = certType;
 	}
 
 	public String getOuterBizNo() {

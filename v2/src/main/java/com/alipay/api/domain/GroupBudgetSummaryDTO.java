@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GroupBudgetSummaryDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1799939164539754477L;
+	private static final long serialVersionUID = 4672123688436317787L;
 
 	/**
 	 * 预算受益部门编码

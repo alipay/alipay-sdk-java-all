@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayAssetPointOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7318187749288438841L;
+	private static final long serialVersionUID = 5727247677841173747L;
 
 	/**
 	 * isv提供的发放号订单号，由数字和字母组成，最大长度为32为，需要保证每笔发放的唯一性，集分宝系统会对该参数做唯一性控制。调用接口后集分宝系统会根据这个外部订单号查询发放的订单详情。

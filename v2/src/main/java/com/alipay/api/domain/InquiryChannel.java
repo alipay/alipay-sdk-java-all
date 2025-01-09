@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 医生在线问诊渠道（问诊方式，价格，服务链接）
  *
  * @author auto create
- * @since 1.0, 2024-06-25 15:02:50
+ * @since 1.0, 2025-01-06 16:01:52
  */
 public class InquiryChannel extends AlipayObject {
 
-	private static final long serialVersionUID = 4864369259617248441L;
+	private static final long serialVersionUID = 7245469812117175374L;
 
 	/**
 	 * 问诊医生排班信息列表
@@ -53,6 +53,12 @@ public class InquiryChannel extends AlipayObject {
 	 */
 	@ApiField("register_flag")
 	private Boolean registerFlag;
+
+	/**
+	 * 服务时长（单位小时）
+	 */
+	@ApiField("service_duration")
+	private String serviceDuration;
 
 	public List<InquiryDoctorShiftCaseData> getInquiryDoctorShiftCaseList() {
 		return this.inquiryDoctorShiftCaseList;
@@ -94,6 +100,13 @@ public class InquiryChannel extends AlipayObject {
 	}
 	public void setRegisterFlag(Boolean registerFlag) {
 		this.registerFlag = registerFlag;
+	}
+
+	public String getServiceDuration() {
+		return this.serviceDuration;
+	}
+	public void setServiceDuration(String serviceDuration) {
+		this.serviceDuration = serviceDuration;
 	}
 
 }

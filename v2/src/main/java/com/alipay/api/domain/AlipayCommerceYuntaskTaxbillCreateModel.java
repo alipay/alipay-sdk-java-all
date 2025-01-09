@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceYuntaskTaxbillCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7347222124382757517L;
+	private static final long serialVersionUID = 7455659399682753459L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识

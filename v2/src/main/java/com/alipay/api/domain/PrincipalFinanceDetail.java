@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询消耗明细列表
  *
  * @author auto create
- * @since 1.0, 2024-07-24 17:58:00
+ * @since 1.0, 2025-01-07 11:36:55
  */
 public class PrincipalFinanceDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 4427144638613447187L;
+	private static final long serialVersionUID = 8523657715224412223L;
 
 	/**
 	 * 支付宝账号
