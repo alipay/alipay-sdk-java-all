@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据模板文件地址生成相应预览地址
  *
  * @author auto create
- * @since 1.0, 2024-06-11 19:49:27
+ * @since 1.0, 2025-01-10 15:55:22
  */
 public class AlipaySecurityProdTemplateFilepreviewurlGenerateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5238872924168156533L;
+	private static final long serialVersionUID = 5877676193191438814L;
 
 	/**
 	 * 操作人工号

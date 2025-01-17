@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ErrorPageSetting extends AlipayObject {
 
-	private static final long serialVersionUID = 5363153456323899458L;
+	private static final long serialVersionUID = 4446321855839322816L;
 
 	/**
 	 * 404错误页面在静态站点的文件路径，不能以 / 开头

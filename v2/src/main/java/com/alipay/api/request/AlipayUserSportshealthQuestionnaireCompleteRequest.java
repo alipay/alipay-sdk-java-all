@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.sportshealth.questionnaire.complete request
  * 
  * @author auto create
- * @since 1.0, 2024-12-06 18:07:23
+ * @since 1.0, 2025-01-17 11:37:22
  */
 public class AlipayUserSportshealthQuestionnaireCompleteRequest implements AlipayRequest<AlipayUserSportshealthQuestionnaireCompleteResponse> {
 

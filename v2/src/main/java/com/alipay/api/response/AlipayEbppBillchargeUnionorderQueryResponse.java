@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.billcharge.unionorder.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-26 21:32:43
+ * @since 1.0, 2025-01-13 14:23:32
  */
 public class AlipayEbppBillchargeUnionorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8881558919681176574L;
+	private static final long serialVersionUID = 4141899162362957845L;
 
 	/** 
 	 * 主订单流水号

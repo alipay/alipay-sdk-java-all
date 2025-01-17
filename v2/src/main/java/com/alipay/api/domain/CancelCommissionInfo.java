@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CancelCommissionInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7193642187652715321L;
+	private static final long serialVersionUID = 7173761382514659747L;
 
 	/**
 	 * null

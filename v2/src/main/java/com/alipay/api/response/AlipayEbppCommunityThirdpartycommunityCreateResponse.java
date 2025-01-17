@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.community.thirdpartycommunity.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-12 14:57:22
+ * @since 1.0, 2025-01-13 10:17:23
  */
 public class AlipayEbppCommunityThirdpartycommunityCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2874144721461492181L;
+	private static final long serialVersionUID = 3521912353141856924L;
 
 	/** 
 	 * 行业内部生成的物业小区编号
 	 */
 	@ApiField("community_id")
 	private String communityId;
+
+	/** 
+	 * 小区名称缩写
+	 */
+	@ApiField("community_short_name")
+	private String communityShortName;
 
 	/** 
 	 * 对应请求参数「物业公司 community_property_company」「公司缩写 short_name」
@@ -32,6 +38,13 @@ public class AlipayEbppCommunityThirdpartycommunityCreateResponse extends Alipay
 	}
 	public String getCommunityId( ) {
 		return this.communityId;
+	}
+
+	public void setCommunityShortName(String communityShortName) {
+		this.communityShortName = communityShortName;
+	}
+	public String getCommunityShortName( ) {
+		return this.communityShortName;
 	}
 
 	public void setPropertyCompanyShortName(String propertyCompanyShortName) {

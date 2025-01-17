@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.sportshealth.questionnaire.complete response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-06 18:07:23
+ * @since 1.0, 2025-01-17 11:37:22
  */
 public class AlipayUserSportshealthQuestionnaireCompleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6777729473836712198L;
+	private static final long serialVersionUID = 3171767381886558541L;
 
 	
 

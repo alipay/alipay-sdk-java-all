@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 手机号三要素核验简版
  *
  * @author auto create
- * @since 1.0, 2025-01-06 19:50:08
+ * @since 1.0, 2025-01-10 15:28:20
  */
 public class DatadigitalFincloudGeneralsaasMobilethreemetaSimpleCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1447946134837316396L;
+	private static final long serialVersionUID = 1369228475437521732L;
 
 	/**
 	 * 业务产品码

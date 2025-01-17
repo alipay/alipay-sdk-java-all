@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DepartmentLabel extends AlipayObject {
 
-	private static final long serialVersionUID = 4753741597339728268L;
+	private static final long serialVersionUID = 2219639289594152182L;
 
 	/**
 	 * 部门标签码

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.dtbank.dailybill.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-24 10:17:25
+ * @since 1.0, 2025-01-16 16:49:18
  */
 public class AlipayUserDtbankDailybillCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6875933782159273356L;
+	private static final long serialVersionUID = 7674564663695954244L;
 
 	/** 
 	 * 账单申请号

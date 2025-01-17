@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 问卷调查结果同步
  *
  * @author auto create
- * @since 1.0, 2024-12-06 18:05:03
+ * @since 1.0, 2025-01-17 11:37:15
  */
 public class AlipayUserSportshealthQuestionnaireCompleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2868374287975941285L;
+	private static final long serialVersionUID = 8819144833126127238L;
 
 	/**
 	 * 业务唯一标识

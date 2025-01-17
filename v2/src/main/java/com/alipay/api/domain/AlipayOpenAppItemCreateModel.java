@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenAppItemCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2637137683719919175L;
+	private static final long serialVersionUID = 1892571721313213692L;
 
 	/**
 	 * 商品属性
@@ -151,7 +151,7 @@ public class AlipayOpenAppItemCreateModel extends AlipayObject {
 	private Long stockNum;
 
 	/**
-	 * 商品名称，字符类型，最少不低于3，最长不超过60个字。
+	 * 商品名称，字符类型，最少不低于3，最长不超过100个字。
 	 */
 	@ApiField("title")
 	private String title;

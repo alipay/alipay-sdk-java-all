@@ -1,7 +1,10 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 测试新增sdl地址
@@ -11,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataDataserviceDdQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5538842259211114199L;
+	private static final long serialVersionUID = 1832682359925293686L;
 
 	/**
 	 * 金额，单位元
@@ -22,8 +25,9 @@ public class AlipayDataDataserviceDdQueryModel extends AlipayObject {
 	/**
 	 * 测试
 	 */
-	@ApiField("qwe")
-	private String qwe;
+	@ApiListField("qwe")
+	@ApiField("string")
+	private List<String> qwe;
 
 	/**
 	 * 测试
@@ -50,10 +54,10 @@ public class AlipayDataDataserviceDdQueryModel extends AlipayObject {
 		this.amount = amount;
 	}
 
-	public String getQwe() {
+	public List<String> getQwe() {
 		return this.qwe;
 	}
-	public void setQwe(String qwe) {
+	public void setQwe(List<String> qwe) {
 		this.qwe = qwe;
 	}
 

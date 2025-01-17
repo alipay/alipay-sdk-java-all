@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.template.component.generate response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-11 19:52:05
+ * @since 1.0, 2025-01-10 15:52:56
  */
 public class AlipaySecurityProdTemplateComponentGenerateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1634959229722329267L;
+	private static final long serialVersionUID = 3525398962168435153L;
 
 	/** 
 	 * 模板创建结果

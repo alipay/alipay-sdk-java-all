@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户周期卡间连参数配置
  *
  * @author auto create
- * @since 1.0, 2024-11-15 16:07:22
+ * @since 1.0, 2025-01-17 11:28:29
  */
 public class AlipayCommercePeriodcardIndirectconfigCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2538228729781815132L;
+	private static final long serialVersionUID = 2758752755546195282L;
 
 	/**
 	 * 群组code，注意有售卖订单后不能修改该字段

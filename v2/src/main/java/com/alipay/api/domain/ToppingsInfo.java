@@ -10,16 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品加料信息
  *
  * @author auto create
- * @since 1.0, 2025-01-07 17:52:41
+ * @since 1.0, 2025-01-13 18:27:53
  */
 public class ToppingsInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8482723934324797628L;
+	private static final long serialVersionUID = 5175469119741915599L;
 
 	/**
-	 * 加料分类名称
+	 * 加料分类名称 当前字段已废弃(参数名错误，调整成category_name字段)
 	 */
 	@ApiField("category")
+	@Deprecated
 	private String category;
 
 	/**
@@ -29,15 +30,34 @@ public class ToppingsInfo extends AlipayObject {
 	private String categoryId;
 
 	/**
+	 * 加料分类名称
+	 */
+	@ApiField("category_name")
+	private String categoryName;
+
+	/**
 	 * 加料份数，单位份
 	 */
 	@ApiField("count")
 	private Long count;
 
 	/**
-	 * 商品goods id
+	 * 加料商品id
+	 */
+	@ApiField("goods_id")
+	private String goodsId;
+
+	/**
+	 * 加料商品名称
+	 */
+	@ApiField("goods_name")
+	private String goodsName;
+
+	/**
+	 * 商品goods id 当前字段已废弃(错误字段，改为goods_id字段)
 	 */
 	@ApiField("id")
+	@Deprecated
 	private String id;
 
 	/**
@@ -53,9 +73,10 @@ public class ToppingsInfo extends AlipayObject {
 	private Long inventory;
 
 	/**
-	 * 商品加料名称
+	 * 商品加料名称 当前字段已废弃(错误字段，替换成goods_name字段)
 	 */
 	@ApiField("name")
+	@Deprecated
 	private String name;
 
 	/**
@@ -78,13 +99,13 @@ public class ToppingsInfo extends AlipayObject {
 	private String skuId;
 
 	/**
-	 * 分类id，订单计算接口需传入该参数
+	 * 加料规格id，订单计算接口需传入该参数
 	 */
 	@ApiField("spec_id")
 	private String specId;
 
 	/**
-	 * 加料分类名称，订单计算接口需传入该参数
+	 * 加料规格名称，订单计算接口需传入该参数
 	 */
 	@ApiField("spec_name")
 	private String specName;
@@ -109,11 +130,32 @@ public class ToppingsInfo extends AlipayObject {
 		this.categoryId = categoryId;
 	}
 
+	public String getCategoryName() {
+		return this.categoryName;
+	}
+	public void setCategoryName(String categoryName) {
+		this.categoryName = categoryName;
+	}
+
 	public Long getCount() {
 		return this.count;
 	}
 	public void setCount(Long count) {
 		this.count = count;
+	}
+
+	public String getGoodsId() {
+		return this.goodsId;
+	}
+	public void setGoodsId(String goodsId) {
+		this.goodsId = goodsId;
+	}
+
+	public String getGoodsName() {
+		return this.goodsName;
+	}
+	public void setGoodsName(String goodsName) {
+		this.goodsName = goodsName;
 	}
 
 	public String getId() {

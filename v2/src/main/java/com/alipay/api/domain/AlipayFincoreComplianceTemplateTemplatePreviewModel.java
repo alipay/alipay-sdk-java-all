@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 模板预览
  *
  * @author auto create
- * @since 1.0, 2024-05-13 15:02:59
+ * @since 1.0, 2025-01-10 15:55:48
  */
 public class AlipayFincoreComplianceTemplateTemplatePreviewModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6288496495279357548L;
+	private static final long serialVersionUID = 8756596784296423318L;
 
 	/**
 	 * 模版编码列表

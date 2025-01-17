@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序升级成品牌直达
  *
  * @author auto create
- * @since 1.0, 2023-06-12 16:43:33
+ * @since 1.0, 2025-01-14 17:45:47
  */
 public class AlipayOpenSearchboxUpgradeSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7866241467436439373L;
+	private static final long serialVersionUID = 4227739458916428544L;
 
 	/**
 	 * 小程序直达配置的常用服务中带有门店信息时，可添加简称触发词
@@ -55,7 +55,7 @@ public class AlipayOpenSearchboxUpgradeSaveModel extends AlipayObject {
 	private List<String> businessDistrictIds;
 
 	/**
-	 * 自定义触发词，最多可配置6个，限1-8个中文字符。 小程序直达不支持设置此项
+	 * 自定义触发词，最多可配置10个，限1-8个中文字符。 小程序直达不支持设置此项
 	 */
 	@ApiListField("custom_keywords")
 	@ApiField("string")

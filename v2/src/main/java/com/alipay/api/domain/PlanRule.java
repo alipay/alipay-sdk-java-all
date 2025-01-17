@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PlanRule extends AlipayObject {
 
-	private static final long serialVersionUID = 2226654789175157857L;
+	private static final long serialVersionUID = 2167187859615663718L;
 
 	/**
 	 * 当rule_type=FIXED 时,固定值有效

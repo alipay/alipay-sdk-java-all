@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: datadigital.fincloud.generalsaas.mobilethreemeta.simple.check request
  * 
  * @author auto create
- * @since 1.0, 2025-01-06 19:52:20
+ * @since 1.0, 2025-01-13 11:02:22
  */
 public class DatadigitalFincloudGeneralsaasMobilethreemetaSimpleCheckRequest implements AlipayRequest<DatadigitalFincloudGeneralsaasMobilethreemetaSimpleCheckResponse> {
 

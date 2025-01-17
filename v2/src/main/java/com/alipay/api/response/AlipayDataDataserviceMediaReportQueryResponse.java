@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.media.report.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-10 15:12:12
+ * @since 1.0, 2025-01-15 17:52:25
  */
 public class AlipayDataDataserviceMediaReportQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5664369744132636942L;
+	private static final long serialVersionUID = 2571459953877632855L;
 
 	/** 
 	 * 商家pid，类型是服务商并且传参里有m_pid的情况才会返回

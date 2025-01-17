@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 云调用应用已添加产品信息查询
  *
  * @author auto create
- * @since 1.0, 2024-08-30 11:20:23
+ * @since 1.0, 2025-01-16 12:06:14
  */
 public class AlipayOpenCloudAppProductQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6383372928981729585L;
+	private static final long serialVersionUID = 4357315582334447657L;
 
 	/**
 	 * 需要查询的应用appId

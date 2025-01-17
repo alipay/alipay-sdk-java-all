@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.merchantcard.settleaccount.save response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-15 17:07:20
+ * @since 1.0, 2025-01-16 10:39:17
  */
 public class AlipayCommerceMerchantcardSettleaccountSaveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4117653147914939351L;
+	private static final long serialVersionUID = 4754875894776645279L;
 
 	/** 
 	 * 结果

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.template.sync request
  * 
  * @author auto create
- * @since 1.0, 2024-10-28 15:02:22
+ * @since 1.0, 2025-01-10 15:50:34
  */
 public class AlipaySecurityProdTemplateSyncRequest implements AlipayRequest<AlipaySecurityProdTemplateSyncResponse> {
 

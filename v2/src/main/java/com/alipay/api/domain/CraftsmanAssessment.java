@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CraftsmanAssessment extends AlipayObject {
 
-	private static final long serialVersionUID = 2519384452884321349L;
+	private static final long serialVersionUID = 2263137365445924174L;
 
 	/**
 	 * 子评分项

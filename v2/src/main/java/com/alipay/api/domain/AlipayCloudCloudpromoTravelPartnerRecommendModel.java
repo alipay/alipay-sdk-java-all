@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 随心游下一站推荐
  *
  * @author auto create
- * @since 1.0, 2024-12-20 15:07:32
+ * @since 1.0, 2025-01-14 16:53:22
  */
 public class AlipayCloudCloudpromoTravelPartnerRecommendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3775211369319797664L;
+	private static final long serialVersionUID = 1673999768716557481L;
 
 	/**
 	 * 当前坐标经纬度，逗号分隔

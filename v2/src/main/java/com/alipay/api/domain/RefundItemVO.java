@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 退款商品信息
  *
  * @author auto create
- * @since 1.0, 2024-08-28 19:28:41
+ * @since 1.0, 2025-01-15 15:54:54
  */
 public class RefundItemVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6549633895686786184L;
+	private static final long serialVersionUID = 8244589568813396614L;
 
 	/**
 	 * 商品总金额：单位：元
@@ -20,7 +20,7 @@ public class RefundItemVO extends AlipayObject {
 	private String amountItem;
 
 	/**
-	 * APP方商品ID
+	 * APP方商品编码，对应商品接口的sku_code｜商品编码
 	 */
 	@ApiField("app_item_code")
 	private String appItemCode;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保存默认结算账户
  *
  * @author auto create
- * @since 1.0, 2024-11-15 16:07:20
+ * @since 1.0, 2025-01-16 10:39:17
  */
 public class AlipayCommerceMerchantcardSettleaccountSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6127169428585665999L;
+	private static final long serialVersionUID = 5312579228598924865L;
 
 	/**
 	 * 结算收款的支付宝账号，是登录账号，非pid

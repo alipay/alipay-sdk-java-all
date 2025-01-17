@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量条件查询模板
  *
  * @author auto create
- * @since 1.0, 2024-06-11 19:51:53
+ * @since 1.0, 2025-01-10 15:52:06
  */
 public class AlipaySecurityProdTemplateBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4224691115281518727L;
+	private static final long serialVersionUID = 4614593569498246791L;
 
 	/**
 	 * 接口调用人工号

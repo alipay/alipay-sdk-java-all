@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.risk.employee.criminal.check request
  * 
  * @author auto create
- * @since 1.0, 2025-01-08 10:52:23
+ * @since 1.0, 2025-01-10 21:22:21
  */
 public class AlipaySecurityRiskEmployeeCriminalCheckRequest implements AlipayRequest<AlipaySecurityRiskEmployeeCriminalCheckResponse> {
 

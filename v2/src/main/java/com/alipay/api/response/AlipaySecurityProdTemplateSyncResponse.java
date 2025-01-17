@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.template.sync response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-28 15:02:22
+ * @since 1.0, 2025-01-10 15:50:34
  */
 public class AlipaySecurityProdTemplateSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1457533497747491121L;
+	private static final long serialVersionUID = 5812783232327826927L;
 
 	/** 
 	 * 模板模板编码

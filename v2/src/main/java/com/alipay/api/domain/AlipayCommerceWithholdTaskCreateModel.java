@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 代扣任务创建
  *
  * @author auto create
- * @since 1.0, 2025-01-02 10:51:54
+ * @since 1.0, 2025-01-13 15:08:20
  */
 public class AlipayCommerceWithholdTaskCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3633385735273182269L;
+	private static final long serialVersionUID = 1238725317335278955L;
 
 	/**
 	 * 代扣协议号

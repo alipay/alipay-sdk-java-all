@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗行业商业化核销接口
  *
  * @author auto create
- * @since 1.0, 2024-07-30 15:52:15
+ * @since 1.0, 2025-01-13 18:12:07
  */
 public class AlipayCommerceMedicalCommercialPerformanceVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7138781566934713925L;
+	private static final long serialVersionUID = 6321389782853546554L;
 
 	/**
 	 * 商品订单id，支付宝侧用户对商户某一商品的唯一订单子单id。该订单记录了用户的核销次数与总次数，以及订单状态
@@ -89,8 +89,21 @@ public class AlipayCommerceMedicalCommercialPerformanceVerifyModel extends Alipa
 	private String usageCount;
 
 	/**
-	 * 确认场景类型，枚举值用户核销，USER_PERFORMANCE。取消预约，RESERVE_CANCEL。修改预约，RESERVE_MODIFY。上传报告，REPORT_UPLOAD。
-不传，默认为用户核销
+	 * 用于记录实物发货的物流单号、物流公司等信息，并回传给医疗行业侧
+	 */
+	@ApiField("verify_logistics_detail")
+	private VerifyLogisticsDetail verifyLogisticsDetail;
+
+	/**
+	 * 确认场景类型，枚举值：
+用户核销，USER_PERFORMANCE。
+取消预约，RESERVE_CANCEL。
+修改预约，RESERVE_MODIFY。
+上传报告，REPORT_UPLOAD。
+商家确认发货，DELIVERY。
+用户已收到货，DELIVERIED。
+商家收到退货或退款确认，REFUND_CONFIRM。
+该字段为空值默认动作为用户核销 ：USER_PERFORMANCE。
 	 */
 	@ApiField("verify_type")
 	private String verifyType;
@@ -177,6 +190,13 @@ public class AlipayCommerceMedicalCommercialPerformanceVerifyModel extends Alipa
 	}
 	public void setUsageCount(String usageCount) {
 		this.usageCount = usageCount;
+	}
+
+	public VerifyLogisticsDetail getVerifyLogisticsDetail() {
+		return this.verifyLogisticsDetail;
+	}
+	public void setVerifyLogisticsDetail(VerifyLogisticsDetail verifyLogisticsDetail) {
+		this.verifyLogisticsDetail = verifyLogisticsDetail;
 	}
 
 	public String getVerifyType() {

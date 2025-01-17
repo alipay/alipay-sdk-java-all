@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 模板文件地址拷贝
  *
  * @author auto create
- * @since 1.0, 2024-06-11 19:48:28
+ * @since 1.0, 2025-01-10 15:52:56
  */
 public class AlipaySecurityProdTemplateComponentGenerateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7425459396876993399L;
+	private static final long serialVersionUID = 8517928357721925311L;
 
 	/**
 	 * 组件分类

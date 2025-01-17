@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pay.app.pocketmoney.promo.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2025-01-07 10:37:24
+ * @since 1.0, 2025-01-13 14:27:21
  */
 public class AlipayPayAppPocketmoneyPromoBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1786853839335441252L;
+	private static final long serialVersionUID = 7135196479382944173L;
 
 	/** 
 	 * 奖品列表

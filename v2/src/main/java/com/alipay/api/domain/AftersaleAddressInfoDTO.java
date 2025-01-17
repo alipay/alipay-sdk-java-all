@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商家地址
  *
  * @author auto create
- * @since 1.0, 2024-07-12 21:39:16
+ * @since 1.0, 2025-01-10 16:59:55
  */
 public class AftersaleAddressInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4865633349452359641L;
+	private static final long serialVersionUID = 5224869111284741944L;
 
 	/**
 	 * 区县
@@ -38,7 +38,7 @@ public class AftersaleAddressInfoDTO extends AlipayObject {
 	private String phoneNumber;
 
 	/**
-	 * 省份
+	 * 省份，直辖市直接填写简称即可，例如：北京、上海、天津、重庆。
 	 */
 	@ApiField("province")
 	private String province;

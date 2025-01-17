@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.rent.royalty.seller.append response.
  * 
  * @author auto create
- * @since 1.0, 2025-01-09 11:17:24
+ * @since 1.0, 2025-01-13 10:12:25
  */
 public class AlipayCommerceRentRoyaltySellerAppendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8793413632736194411L;
+	private static final long serialVersionUID = 2639392917464256149L;
 
 	/** 
 	 * 单位：元。补分账金额执行的实际金额

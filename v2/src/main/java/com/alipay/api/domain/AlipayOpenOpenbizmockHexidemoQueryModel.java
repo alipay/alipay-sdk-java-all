@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * HeXi接口接入测试
  *
  * @author auto create
- * @since 1.0, 2023-06-08 21:04:50
+ * @since 1.0, 2025-01-17 11:14:03
  */
 public class AlipayOpenOpenbizmockHexidemoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6592663183387696235L;
+	private static final long serialVersionUID = 2628134268359435139L;
 
 	/**
 	 * 复杂接口的类型
@@ -27,6 +27,12 @@ public class AlipayOpenOpenbizmockHexidemoQueryModel extends AlipayObject {
 	 */
 	@ApiField("file_param")
 	private String fileParam;
+
+	/**
+	 * 测试名称
+	 */
+	@ApiField("mock_name")
+	private String mockName;
 
 	/**
 	 * 123
@@ -66,6 +72,12 @@ public class AlipayOpenOpenbizmockHexidemoQueryModel extends AlipayObject {
 	private Long reqNum;
 
 	/**
+	 * 12
+	 */
+	@ApiField("res")
+	private String res;
+
+	/**
 	 * 蚂蚁统一会员ID
 	 */
 	@ApiField("user_id")
@@ -83,6 +95,13 @@ public class AlipayOpenOpenbizmockHexidemoQueryModel extends AlipayObject {
 	}
 	public void setFileParam(String fileParam) {
 		this.fileParam = fileParam;
+	}
+
+	public String getMockName() {
+		return this.mockName;
+	}
+	public void setMockName(String mockName) {
+		this.mockName = mockName;
 	}
 
 	public String getOpenId() {
@@ -125,6 +144,13 @@ public class AlipayOpenOpenbizmockHexidemoQueryModel extends AlipayObject {
 	}
 	public void setReqNum(Long reqNum) {
 		this.reqNum = reqNum;
+	}
+
+	public String getRes() {
+		return this.res;
+	}
+	public void setRes(String res) {
+		this.res = res;
 	}
 
 	public String getUserId() {

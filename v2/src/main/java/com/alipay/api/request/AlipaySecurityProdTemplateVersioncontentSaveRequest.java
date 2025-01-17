@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.template.versioncontent.save request
  * 
  * @author auto create
- * @since 1.0, 2024-06-11 19:52:05
+ * @since 1.0, 2025-01-10 15:52:44
  */
 public class AlipaySecurityProdTemplateVersioncontentSaveRequest implements AlipayRequest<AlipaySecurityProdTemplateVersioncontentSaveResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生成模板文件的编辑url
  *
  * @author auto create
- * @since 1.0, 2024-06-11 19:44:32
+ * @since 1.0, 2025-01-10 15:55:35
  */
 public class AlipaySecurityProdTemplateFilewebofficeurlGenerateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2221379395766865969L;
+	private static final long serialVersionUID = 8189918788775523522L;
 
 	/**
 	 * 操作人工号

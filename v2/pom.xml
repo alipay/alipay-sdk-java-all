@@ -4,7 +4,7 @@
     <groupId>com.alipay.sdk</groupId>
     <artifactId>alipay-sdk-java</artifactId>
     <packaging>jar</packaging>
-    <version>4.40.33.ALL</version>
+    <version>4.40.44.ALL</version>
     <name>alipay-sdk-java</name>
 
     <url>https://open.alipay.com</url>
@@ -162,9 +162,9 @@
                     <docencoding>UTF-8</docencoding>
                     <additionalparam>-Xdoclint:none</additionalparam>
                     <additionalJOption>--allow-script-in-comments</additionalJOption>
-                    <minmemory>2048m</minmemory>
-                    <maxmemory>2048m</maxmemory>
-                    <excludePackageNames>com.alipay.api.request</excludePackageNames>
+                    <minmemory>4096m</minmemory>
+                    <maxmemory>4096m</maxmemory>
+                    <excludePackageNames>com.alipay.api.request,com.alipay.api.response,com.alipay.api.domain</excludePackageNames>
                 </configuration>
                 <executions>
                     <execution>

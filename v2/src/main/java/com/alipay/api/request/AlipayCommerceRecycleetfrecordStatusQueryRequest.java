@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.recycleetfrecord.status.query request
  * 
  * @author auto create
- * @since 1.0, 2024-07-10 11:37:12
+ * @since 1.0, 2025-01-14 14:30:19
  */
 public class AlipayCommerceRecycleetfrecordStatusQueryRequest implements AlipayRequest<AlipayCommerceRecycleetfrecordStatusQueryResponse> {
 

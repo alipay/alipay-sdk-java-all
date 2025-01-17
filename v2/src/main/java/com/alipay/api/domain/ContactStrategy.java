@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 触达策略
  *
  * @author auto create
- * @since 1.0, 2024-11-13 11:35:26
+ * @since 1.0, 2025-01-10 14:37:54
  */
 public class ContactStrategy extends AlipayObject {
 
-	private static final long serialVersionUID = 2617672829339144561L;
+	private static final long serialVersionUID = 8723318954279646119L;
 
 	/**
 	 * 期望拨打时间

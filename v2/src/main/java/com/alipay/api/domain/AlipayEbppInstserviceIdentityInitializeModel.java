@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政务民生机构初始化核身
  *
  * @author auto create
- * @since 1.0, 2022-12-20 12:11:36
+ * @since 1.0, 2025-01-10 17:04:31
  */
 public class AlipayEbppInstserviceIdentityInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7856346325724468243L;
+	private static final long serialVersionUID = 7159627773991529278L;
 
 	/**
 	 * 户号（缴费场景是户号，话费场景是手机号）

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 文件编辑token刷新
  *
  * @author auto create
- * @since 1.0, 2024-06-11 19:49:46
+ * @since 1.0, 2025-01-10 15:54:51
  */
 public class AlipaySecurityProdFileTokenRefreshModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6295418425625496712L;
+	private static final long serialVersionUID = 8313384267379994473L;
 
 	/**
 	 * 文件编辑ak

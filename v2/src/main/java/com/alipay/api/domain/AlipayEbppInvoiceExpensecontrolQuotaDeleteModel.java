@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 删除额度
  *
  * @author auto create
- * @since 1.0, 2024-12-24 16:45:22
+ * @since 1.0, 2025-01-13 14:09:38
  */
 public class AlipayEbppInvoiceExpensecontrolQuotaDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2683791293759482585L;
+	private static final long serialVersionUID = 1741728838676839496L;
 
 	/**
 	 * 企业id

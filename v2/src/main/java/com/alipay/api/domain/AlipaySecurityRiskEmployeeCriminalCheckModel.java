@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业用工疑似前科风险核验服务接口
  *
  * @author auto create
- * @since 1.0, 2025-01-08 10:50:09
+ * @since 1.0, 2025-01-10 21:18:18
  */
 public class AlipaySecurityRiskEmployeeCriminalCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1699254758776687173L;
+	private static final long serialVersionUID = 7676215175546762339L;
 
 	/**
 	 * 雇员身份证号

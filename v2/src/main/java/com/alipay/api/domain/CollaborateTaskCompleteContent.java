@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 协同任务完成内容
  *
  * @author auto create
- * @since 1.0, 2024-11-30 15:56:55
+ * @since 1.0, 2025-01-14 10:33:45
  */
 public class CollaborateTaskCompleteContent extends AlipayObject {
 
-	private static final long serialVersionUID = 2631254728945365883L;
+	private static final long serialVersionUID = 4184374363831555696L;
 
 	/**
 	 * 完成任务以后，反馈内容的类型。

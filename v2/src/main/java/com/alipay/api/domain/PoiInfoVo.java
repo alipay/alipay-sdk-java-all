@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * POI景点数据
  *
  * @author auto create
- * @since 1.0, 2024-12-20 15:07:31
+ * @since 1.0, 2025-01-14 16:53:22
  */
 public class PoiInfoVo extends AlipayObject {
 
-	private static final long serialVersionUID = 8289786257613764686L;
+	private static final long serialVersionUID = 6735329783664125572L;
 
 	/**
 	 * 景点详细地址
@@ -47,6 +47,12 @@ public class PoiInfoVo extends AlipayObject {
 	private String buyUrl;
 
 	/**
+	 * 景点当前的舒适度等级
+	 */
+	@ApiField("comfort_level")
+	private String comfortLevel;
+
+	/**
 	 * 中文描述
 	 */
 	@ApiField("description")
@@ -57,6 +63,12 @@ public class PoiInfoVo extends AlipayObject {
 	 */
 	@ApiField("distance")
 	private String distance;
+
+	/**
+	 * 景点的历史趣闻
+	 */
+	@ApiField("historical_curiosities")
+	private String historicalCuriosities;
 
 	/**
 	 * 景点图片
@@ -200,6 +212,13 @@ public class PoiInfoVo extends AlipayObject {
 		this.buyUrl = buyUrl;
 	}
 
+	public String getComfortLevel() {
+		return this.comfortLevel;
+	}
+	public void setComfortLevel(String comfortLevel) {
+		this.comfortLevel = comfortLevel;
+	}
+
 	public String getDescription() {
 		return this.description;
 	}
@@ -212,6 +231,13 @@ public class PoiInfoVo extends AlipayObject {
 	}
 	public void setDistance(String distance) {
 		this.distance = distance;
+	}
+
+	public String getHistoricalCuriosities() {
+		return this.historicalCuriosities;
+	}
+	public void setHistoricalCuriosities(String historicalCuriosities) {
+		this.historicalCuriosities = historicalCuriosities;
 	}
 
 	public List<String> getImgList() {

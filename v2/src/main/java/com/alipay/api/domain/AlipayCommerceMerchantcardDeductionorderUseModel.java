@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 安心付核销接口
  *
  * @author auto create
- * @since 1.0, 2024-12-23 14:58:18
+ * @since 1.0, 2025-01-16 10:36:36
  */
 public class AlipayCommerceMerchantcardDeductionorderUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7225247947723682618L;
+	private static final long serialVersionUID = 2588655585272147243L;
 
 	/**
 	 * 幂等号

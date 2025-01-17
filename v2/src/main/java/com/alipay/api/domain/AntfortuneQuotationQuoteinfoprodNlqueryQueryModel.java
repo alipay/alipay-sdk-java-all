@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntfortuneQuotationQuoteinfoprodNlqueryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8621621299215172259L;
+	private static final long serialVersionUID = 1366377143633676433L;
 
 	/**
 	 * 应用标识，需要与接口人确定后赋予

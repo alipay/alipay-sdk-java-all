@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 安心付修改商户配置
  *
  * @author auto create
- * @since 1.0, 2024-11-15 16:07:19
+ * @since 1.0, 2025-01-16 10:39:09
  */
 public class AlipayCommerceMerchantcardConfigModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8857911133958197987L;
+	private static final long serialVersionUID = 8136878794534877178L;
 
 	/**
 	 * 安心付商户配置

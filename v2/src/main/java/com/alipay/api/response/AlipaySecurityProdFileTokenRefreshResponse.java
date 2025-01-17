@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.file.token.refresh response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-11 19:52:04
+ * @since 1.0, 2025-01-10 15:54:51
  */
 public class AlipaySecurityProdFileTokenRefreshResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8642948939855665476L;
+	private static final long serialVersionUID = 7194733654687584523L;
 
 	/** 
 	 * token刷新结果

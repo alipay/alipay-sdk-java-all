@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 收结易订单同步
  *
  * @author auto create
- * @since 1.0, 2024-11-25 23:11:52
+ * @since 1.0, 2025-01-10 17:38:51
  */
 public class AlipayTradeUnifiedsettleSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6572159538774288243L;
+	private static final long serialVersionUID = 1855349123463567472L;
 
 	/**
 	 * 收单模式，目前仅支持PLATFORM_BUSINESS
@@ -22,10 +22,10 @@ public class AlipayTradeUnifiedsettleSyncModel extends AlipayObject {
 	private String acquireMode;
 
 	/**
-	 * 同步流水的类型，支付为PAY_SYNC，退款为REFUND_SYNC
+	 * 订单同步金额，biz_type=PAY_SYNC时为支付金额，biz_type=REFUND_SYNC时为退款金额。
 	 */
-	@ApiField("biz_type")
-	private String bizType;
+	@ApiField("amount")
+	private String amount;
 
 	/**
 	 * 扩展字段
@@ -40,7 +40,7 @@ public class AlipayTradeUnifiedsettleSyncModel extends AlipayObject {
 	private Date externalInstBizDate;
 
 	/**
-	 * 外部支付渠道
+	 * 外部收单渠道
 	 */
 	@ApiField("external_inst_channel")
 	private String externalInstChannel;
@@ -52,7 +52,7 @@ public class AlipayTradeUnifiedsettleSyncModel extends AlipayObject {
 	private Date externalInstCreateDate;
 
 	/**
-	 * 外部流水号
+	 * 退款流水号。由商家自定义，64个字符以内，仅支持字母、数字、下划线且需保证在商户端单笔交易维度不重复。
 	 */
 	@ApiField("out_request_no")
 	private String outRequestNo;
@@ -64,22 +64,28 @@ public class AlipayTradeUnifiedsettleSyncModel extends AlipayObject {
 	private String outTradeNo;
 
 	/**
-	 * 支付金额
-	 */
-	@ApiField("pay_amount")
-	private String payAmount;
-
-	/**
 	 * 签约产品码，目前仅支持UNIFIED_SETTLE
 	 */
 	@ApiField("product_code")
 	private String productCode;
 
 	/**
-	 * 退款金额
+	 * 同步流水的类型，支付为PAY_SYNC，退款为REFUND_SYNC
 	 */
-	@ApiField("refund_amount")
-	private String refundAmount;
+	@ApiField("request_type")
+	private String requestType;
+
+	/**
+	 * 结算信息， 直付通模式下requestType=PAY_SYNC时必传。
+	 */
+	@ApiField("settle_info")
+	private SettleInfo settleInfo;
+
+	/**
+	 * 二级商户信息。 直付通模式下requestType=PAY_SYNC时必传
+	 */
+	@ApiField("sub_merchant")
+	private SubMerchant subMerchant;
 
 	public String getAcquireMode() {
 		return this.acquireMode;
@@ -88,11 +94,11 @@ public class AlipayTradeUnifiedsettleSyncModel extends AlipayObject {
 		this.acquireMode = acquireMode;
 	}
 
-	public String getBizType() {
-		return this.bizType;
+	public String getAmount() {
+		return this.amount;
 	}
-	public void setBizType(String bizType) {
-		this.bizType = bizType;
+	public void setAmount(String amount) {
+		this.amount = amount;
 	}
 
 	public UnifiedSettleExtendParams getExtendParams() {
@@ -137,13 +143,6 @@ public class AlipayTradeUnifiedsettleSyncModel extends AlipayObject {
 		this.outTradeNo = outTradeNo;
 	}
 
-	public String getPayAmount() {
-		return this.payAmount;
-	}
-	public void setPayAmount(String payAmount) {
-		this.payAmount = payAmount;
-	}
-
 	public String getProductCode() {
 		return this.productCode;
 	}
@@ -151,11 +150,25 @@ public class AlipayTradeUnifiedsettleSyncModel extends AlipayObject {
 		this.productCode = productCode;
 	}
 
-	public String getRefundAmount() {
-		return this.refundAmount;
+	public String getRequestType() {
+		return this.requestType;
 	}
-	public void setRefundAmount(String refundAmount) {
-		this.refundAmount = refundAmount;
+	public void setRequestType(String requestType) {
+		this.requestType = requestType;
+	}
+
+	public SettleInfo getSettleInfo() {
+		return this.settleInfo;
+	}
+	public void setSettleInfo(SettleInfo settleInfo) {
+		this.settleInfo = settleInfo;
+	}
+
+	public SubMerchant getSubMerchant() {
+		return this.subMerchant;
+	}
+	public void setSubMerchant(SubMerchant subMerchant) {
+		this.subMerchant = subMerchant;
 	}
 
 }

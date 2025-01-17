@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医保报销信息
  *
  * @author auto create
- * @since 1.0, 2024-12-17 16:14:55
+ * @since 1.0, 2025-01-15 15:55:20
  */
 public class MedicareInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1166643274498499697L;
+	private static final long serialVersionUID = 3114973728417785564L;
 
 	/**
-	 * 医保个账金额 当前字段已废弃(字段类型不正确，改为price 元为单位)
+	 * 医保个账金额 当前字段已废弃(字段类型修改为price)
 	 */
 	@ApiField("mi_personal_amount")
 	@Deprecated
@@ -27,7 +27,7 @@ public class MedicareInfoVO extends AlipayObject {
 	private String miPersonalAmt;
 
 	/**
-	 * 医保统筹金额 当前字段已废弃(字段类型不正确，改为price 元为单位)
+	 * 医保统筹金额 当前字段已废弃(字段类型修改为price)
 	 */
 	@ApiField("mi_pool_amount")
 	@Deprecated
@@ -40,7 +40,7 @@ public class MedicareInfoVO extends AlipayObject {
 	private String miPoolAmt;
 
 	/**
-	 * 医保自付金额 当前字段已废弃(字段类型不正确，改为price 元为单位)
+	 * 医保自付金额 当前字段已废弃(字段类型修改为price)
 	 */
 	@ApiField("mi_self_amount")
 	@Deprecated

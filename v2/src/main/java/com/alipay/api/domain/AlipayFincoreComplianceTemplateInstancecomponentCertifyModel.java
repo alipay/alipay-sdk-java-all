@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 实例组件认证
  *
  * @author auto create
- * @since 1.0, 2024-05-13 15:00:04
+ * @since 1.0, 2025-01-10 15:57:26
  */
 public class AlipayFincoreComplianceTemplateInstancecomponentCertifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5413236231558629929L;
+	private static final long serialVersionUID = 5256529851428933115L;
 
 	/**
 	 * 组件编码

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.order.logistics.sync request
  * 
  * @author auto create
- * @since 1.0, 2024-12-17 17:22:23
+ * @since 1.0, 2025-01-15 17:32:22
  */
 public class AlipayCommerceMedicalOrderLogisticsSyncRequest implements AlipayRequest<AlipayCommerceMedicalOrderLogisticsSyncResponse> {
 

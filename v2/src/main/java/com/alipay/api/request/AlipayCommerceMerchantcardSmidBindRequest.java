@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.merchantcard.smid.bind request
  * 
  * @author auto create
- * @since 1.0, 2024-11-15 17:02:17
+ * @since 1.0, 2025-01-17 11:28:52
  */
 public class AlipayCommerceMerchantcardSmidBindRequest implements AlipayRequest<AlipayCommerceMerchantcardSmidBindResponse> {
 

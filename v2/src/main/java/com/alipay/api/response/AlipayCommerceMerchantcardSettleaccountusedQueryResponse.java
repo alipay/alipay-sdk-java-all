@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.merchantcard.settleaccountused.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-15 17:07:20
+ * @since 1.0, 2025-01-16 10:39:36
  */
 public class AlipayCommerceMerchantcardSettleaccountusedQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2859951251837356582L;
+	private static final long serialVersionUID = 3843771228514417894L;
 
 	/** 
 	 * 结算收款的支付宝账号，登录账号，非pid

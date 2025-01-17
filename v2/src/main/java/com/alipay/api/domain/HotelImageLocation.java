@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HotelImageLocation extends AlipayObject {
 
-	private static final long serialVersionUID = 4653437313475641968L;
+	private static final long serialVersionUID = 8537499437793273828L;
 
 	/**
 	 * 图片描述

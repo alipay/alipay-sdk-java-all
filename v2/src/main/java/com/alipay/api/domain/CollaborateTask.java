@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 协同任务信息
  *
  * @author auto create
- * @since 1.0, 2024-11-29 16:28:20
+ * @since 1.0, 2025-01-14 10:33:51
  */
 public class CollaborateTask extends AlipayObject {
 
-	private static final long serialVersionUID = 4766314352926749562L;
+	private static final long serialVersionUID = 8822674686529819255L;
 
 	/**
 	 * 活动描述，用户参与活动时返回。

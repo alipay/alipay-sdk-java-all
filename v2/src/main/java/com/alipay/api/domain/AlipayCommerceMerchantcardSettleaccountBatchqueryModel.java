@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查看可配置的默认结算账户
  *
  * @author auto create
- * @since 1.0, 2024-11-15 16:02:19
+ * @since 1.0, 2025-01-16 10:38:49
  */
 public class AlipayCommerceMerchantcardSettleaccountBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7151434644839796677L;
+	private static final long serialVersionUID = 4128476994575821176L;
 
 	/**
 	 * 次卡周期卡场景下，用到了代扣的能力，所以需要support_deduct=true，过滤掉不支持代扣的账号

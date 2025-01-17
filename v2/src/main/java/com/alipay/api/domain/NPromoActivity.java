@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * N设备推广活动
  *
  * @author auto create
- * @since 1.0, 2024-11-29 15:43:51
+ * @since 1.0, 2025-01-14 15:01:18
  */
 public class NPromoActivity extends AlipayObject {
 
-	private static final long serialVersionUID = 4156369659286914386L;
+	private static final long serialVersionUID = 1422223738869933819L;
 
 	/**
 	 * 活动描述

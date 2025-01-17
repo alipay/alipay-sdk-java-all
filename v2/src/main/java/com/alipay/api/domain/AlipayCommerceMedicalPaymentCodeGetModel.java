@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医保局获取用户付款码接口
  *
  * @author auto create
- * @since 1.0, 2024-09-11 16:55:57
+ * @since 1.0, 2025-01-13 20:50:53
  */
 public class AlipayCommerceMedicalPaymentCodeGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8797297313377151684L;
+	private static final long serialVersionUID = 1521677229518853994L;
 
 	/**
 	 * 用户医保码值
@@ -25,6 +25,12 @@ public class AlipayCommerceMedicalPaymentCodeGetModel extends AlipayObject {
 	@ApiField("org_no")
 	private String orgNo;
 
+	/**
+	 * 通过该参数可以重复获取付款码
+	 */
+	@ApiField("out_request_no")
+	private String outRequestNo;
+
 	public String getMedicalCode() {
 		return this.medicalCode;
 	}
@@ -37,6 +43,13 @@ public class AlipayCommerceMedicalPaymentCodeGetModel extends AlipayObject {
 	}
 	public void setOrgNo(String orgNo) {
 		this.orgNo = orgNo;
+	}
+
+	public String getOutRequestNo() {
+		return this.outRequestNo;
+	}
+	public void setOutRequestNo(String outRequestNo) {
+		this.outRequestNo = outRequestNo;
 	}
 
 }

@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 转换为芝麻先用后付
  *
  * @author auto create
- * @since 1.0, 2024-12-17 17:36:17
+ * @since 1.0, 2025-01-14 17:09:56
  */
 public class ZhimaCreditPayafteruseCreditagreementTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4569577467297797569L;
+	private static final long serialVersionUID = 1241962192265428971L;
 
 	/**
 	 * 芝麻外部类目
 	 */
 	@ApiField("category_id")
 	private String categoryId;
+
+	/**
+	 * 芝麻开通/授权协议号，在用户开通芝麻先享服务后，由芝麻生成并返回给商户；只有当opertaion_type传入AGREEMENT_TRANSFER值是，该字段必传；其他场景不需要传入
+	 */
+	@ApiField("credit_agreement_id")
+	private String creditAgreementId;
 
 	/**
 	 * 用户的代扣协议号
@@ -30,6 +36,12 @@ public class ZhimaCreditPayafteruseCreditagreementTransferModel extends AlipayOb
 	 */
 	@ApiField("extend_params")
 	private String extendParams;
+
+	/**
+	 * AGREEMENT_TRANSFER代表是存量先享协议的主体切换功能；其他场景不需要传入；默认为空；
+	 */
+	@ApiField("operation_type")
+	private String operationType;
 
 	/**
 	 * 商户外部协议号，不同的支付宝用户需要传递不同的外部单号
@@ -56,6 +68,13 @@ public class ZhimaCreditPayafteruseCreditagreementTransferModel extends AlipayOb
 		this.categoryId = categoryId;
 	}
 
+	public String getCreditAgreementId() {
+		return this.creditAgreementId;
+	}
+	public void setCreditAgreementId(String creditAgreementId) {
+		this.creditAgreementId = creditAgreementId;
+	}
+
 	public String getDeductAgreementNo() {
 		return this.deductAgreementNo;
 	}
@@ -68,6 +87,13 @@ public class ZhimaCreditPayafteruseCreditagreementTransferModel extends AlipayOb
 	}
 	public void setExtendParams(String extendParams) {
 		this.extendParams = extendParams;
+	}
+
+	public String getOperationType() {
+		return this.operationType;
+	}
+	public void setOperationType(String operationType) {
+		this.operationType = operationType;
 	}
 
 	public String getOutAgreementNo() {

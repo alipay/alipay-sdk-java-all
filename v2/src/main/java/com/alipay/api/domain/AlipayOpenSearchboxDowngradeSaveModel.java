@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 搜索直达降级
  *
  * @author auto create
- * @since 1.0, 2024-08-15 11:27:50
+ * @since 1.0, 2025-01-14 17:46:11
  */
 public class AlipayOpenSearchboxDowngradeSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1272344781165424785L;
+	private static final long serialVersionUID = 3643988582513979146L;
 
 	/**
 	 * 品牌介绍，5-15个中文字符。 小程序直达时不支持设置
@@ -48,7 +48,7 @@ public class AlipayOpenSearchboxDowngradeSaveModel extends AlipayObject {
 	private List<String> businessDistrictIds;
 
 	/**
-	 * 自定义触发词，最多可配置6个，限1-8个中文字符。 小程序直达不支持设置此项
+	 * 自定义触发词，最多可配置10个，限1-8个中文字符。 小程序直达不支持设置此项
 	 */
 	@ApiListField("custom_keywords")
 	@ApiField("string")

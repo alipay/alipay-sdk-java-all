@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 在线购药：退款订单详细信息
  *
  * @author auto create
- * @since 1.0, 2024-11-18 21:17:19
+ * @since 1.0, 2025-01-15 15:54:55
  */
 public class RefundOrderDetailVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5784367681557442623L;
+	private static final long serialVersionUID = 3538992129793498538L;
 
 	/**
 	 * 退款总金额，单位：元

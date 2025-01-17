@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.employee.criminal.check response.
  * 
  * @author auto create
- * @since 1.0, 2025-01-08 10:52:23
+ * @since 1.0, 2025-01-10 21:22:21
  */
 public class AlipaySecurityRiskEmployeeCriminalCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8497789862657529134L;
+	private static final long serialVersionUID = 3653331582915832673L;
 
 	/** 
 	 * 风险核验受理token

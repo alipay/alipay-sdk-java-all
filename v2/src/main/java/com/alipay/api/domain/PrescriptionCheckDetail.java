@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PrescriptionCheckDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8419348217345271379L;
+	private static final long serialVersionUID = 8788534113288698746L;
 
 	/**
 	 * 校验编码

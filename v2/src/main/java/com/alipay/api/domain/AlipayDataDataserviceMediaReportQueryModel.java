@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 媒体报表查询接口
  *
  * @author auto create
- * @since 1.0, 2024-10-10 11:42:03
+ * @since 1.0, 2025-01-15 17:17:40
  */
 public class AlipayDataDataserviceMediaReportQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2867243837917555623L;
+	private static final long serialVersionUID = 6329942611644155679L;
 
 	/**
 	 * 广告位id
@@ -48,6 +48,12 @@ public class AlipayDataDataserviceMediaReportQueryModel extends AlipayObject {
 	 */
 	@ApiField("page_size")
 	private Long pageSize;
+
+	/**
+	 * 展位码
+	 */
+	@ApiField("space_code")
+	private String spaceCode;
 
 	/**
 	 * 数据查询开始日期，时间格式：yyyyMMdd
@@ -101,6 +107,13 @@ public class AlipayDataDataserviceMediaReportQueryModel extends AlipayObject {
 	}
 	public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
+	}
+
+	public String getSpaceCode() {
+		return this.spaceCode;
+	}
+	public void setSpaceCode(String spaceCode) {
+		this.spaceCode = spaceCode;
 	}
 
 	public String getStartDate() {

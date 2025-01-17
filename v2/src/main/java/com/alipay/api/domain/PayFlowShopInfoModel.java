@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 店铺与交易模型
  *
  * @author auto create
- * @since 1.0, 2024-11-07 09:48:37
+ * @since 1.0, 2025-01-10 11:03:10
  */
 public class PayFlowShopInfoModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1256933431919313889L;
+	private static final long serialVersionUID = 5327388459415621127L;
 
 	/**
 	 * 客户详细地址
@@ -78,15 +78,17 @@ public class PayFlowShopInfoModel extends AlipayObject {
 	private String industryLevel2;
 
 	/**
-	 * 三级行业
+	 * 三级行业 当前字段已废弃(无数据，需要废除无数据字段)
 	 */
 	@ApiField("industry_level_3")
+	@Deprecated
 	private String industryLevel3;
 
 	/**
-	 * 四级行业
+	 * 四级行业 当前字段已废弃(无数据，需要废除无数据字段)
 	 */
 	@ApiField("industry_level_4")
+	@Deprecated
 	private String industryLevel4;
 
 	/**

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 媒体报表数据
  *
  * @author auto create
- * @since 1.0, 2024-10-10 11:42:03
+ * @since 1.0, 2025-01-15 17:17:40
  */
 public class MediaReportDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3217851913373912474L;
+	private static final long serialVersionUID = 8164121561718968861L;
 
 	/**
 	 * 广告位id，如：2023xxxxxxx
@@ -24,6 +24,18 @@ public class MediaReportDetail extends AlipayObject {
 	 */
 	@ApiField("ad_pos_name")
 	private String adPosName;
+
+	/**
+	 * 广告位类型
+	 */
+	@ApiField("ad_pos_type")
+	private String adPosType;
+
+	/**
+	 * 广告位类型名称
+	 */
+	@ApiField("ad_pos_type_name")
+	private String adPosTypeName;
 
 	/**
 	 * 应用名称
@@ -50,6 +62,12 @@ public class MediaReportDetail extends AlipayObject {
 	private String clickRate;
 
 	/**
+	 * 组件被展现的总次数
+	 */
+	@ApiField("component_exposure")
+	private Long componentExposure;
+
+	/**
 	 * 资源位维度预估cpm,千次曝光收入
 	 */
 	@ApiField("cpm")
@@ -73,6 +91,12 @@ public class MediaReportDetail extends AlipayObject {
 	@ApiField("exposure")
 	private Long exposure;
 
+	/**
+	 * 展位码列表
+	 */
+	@ApiField("space_code_list")
+	private String spaceCodeList;
+
 	public String getAdPosId() {
 		return this.adPosId;
 	}
@@ -85,6 +109,20 @@ public class MediaReportDetail extends AlipayObject {
 	}
 	public void setAdPosName(String adPosName) {
 		this.adPosName = adPosName;
+	}
+
+	public String getAdPosType() {
+		return this.adPosType;
+	}
+	public void setAdPosType(String adPosType) {
+		this.adPosType = adPosType;
+	}
+
+	public String getAdPosTypeName() {
+		return this.adPosTypeName;
+	}
+	public void setAdPosTypeName(String adPosTypeName) {
+		this.adPosTypeName = adPosTypeName;
 	}
 
 	public String getAppName() {
@@ -115,6 +153,13 @@ public class MediaReportDetail extends AlipayObject {
 		this.clickRate = clickRate;
 	}
 
+	public Long getComponentExposure() {
+		return this.componentExposure;
+	}
+	public void setComponentExposure(Long componentExposure) {
+		this.componentExposure = componentExposure;
+	}
+
 	public String getCpm() {
 		return this.cpm;
 	}
@@ -141,6 +186,13 @@ public class MediaReportDetail extends AlipayObject {
 	}
 	public void setExposure(Long exposure) {
 		this.exposure = exposure;
+	}
+
+	public String getSpaceCodeList() {
+		return this.spaceCodeList;
+	}
+	public void setSpaceCodeList(String spaceCodeList) {
+		this.spaceCodeList = spaceCodeList;
 	}
 
 }

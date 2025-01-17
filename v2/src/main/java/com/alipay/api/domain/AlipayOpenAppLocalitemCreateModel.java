@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenAppLocalitemCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1252166445963346179L;
+	private static final long serialVersionUID = 7236832299869686628L;
 
 	/**
 	 * 商品属性，通过alipay.open.app.localitem.template.query获取本地商品模板信息接口得到商品属性key，is_required=1时属性必填
@@ -112,7 +112,7 @@ public class AlipayOpenAppLocalitemCreateModel extends AlipayObject {
 
 	/**
 	 * 商品名称。
-商品名称，字符类型，最少不低于3，最长不超过60个字。注：1.商品名称只允许汉字、数字、英文字母、特殊字符集；2.商品名称不得仅为数字、字母、特殊字符集或上述三种的组合。
+商品名称，字符类型，最少不低于3，最长不超过100个字。注：1.商品名称只允许汉字、数字、英文字母、特殊字符集；2.商品名称不得仅为数字、字母、特殊字符集或上述三种的组合。
 	 */
 	@ApiField("title")
 	private String title;
