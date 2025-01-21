@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * NFC货柜交易初始化回调
  *
  * @author auto create
- * @since 1.0, 2024-05-27 20:27:49
+ * @since 1.0, 2025-01-21 15:30:18
  */
 public class AlipayCommerceCityfacilitatorIotbspHgnfcSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8229299125372319523L;
+	private static final long serialVersionUID = 6631325737772576267L;
 
 	/**
 	 * 行业openapi同步信息，具体为初始化信息、注册信息、设备信息等

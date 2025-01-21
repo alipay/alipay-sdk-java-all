@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.finance.electric.user.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2024-12-19 16:57:22
+ * @since 1.0, 2025-01-21 09:57:22
  */
 public class AnttechBlockchainFinanceElectricUserBatchqueryRequest implements AlipayRequest<AnttechBlockchainFinanceElectricUserBatchqueryResponse> {
 

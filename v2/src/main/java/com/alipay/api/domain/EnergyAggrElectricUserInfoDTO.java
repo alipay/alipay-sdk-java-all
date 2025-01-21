@@ -1,5 +1,7 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
@@ -7,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用电用户信息
  *
  * @author auto create
- * @since 1.0, 2024-12-19 10:12:06
+ * @since 1.0, 2025-01-21 09:54:45
  */
 public class EnergyAggrElectricUserInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7451955549474691672L;
+	private static final long serialVersionUID = 7429486246788337881L;
 
 	/**
 	 * 详细地址
@@ -54,6 +56,12 @@ public class EnergyAggrElectricUserInfoDTO extends AlipayObject {
 	 */
 	@ApiField("electric_account_id")
 	private String electricAccountId;
+
+	/**
+	 * 创建时间
+	 */
+	@ApiField("gmt_create")
+	private Date gmtCreate;
 
 	/**
 	 * 0-独立缴费
@@ -122,6 +130,13 @@ public class EnergyAggrElectricUserInfoDTO extends AlipayObject {
 	}
 	public void setElectricAccountId(String electricAccountId) {
 		this.electricAccountId = electricAccountId;
+	}
+
+	public Date getGmtCreate() {
+		return this.gmtCreate;
+	}
+	public void setGmtCreate(Date gmtCreate) {
+		this.gmtCreate = gmtCreate;
 	}
 
 	public Long getPaymentType() {

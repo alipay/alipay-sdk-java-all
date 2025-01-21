@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营销收款账号进件
  *
  * @author auto create
- * @since 1.0, 2023-10-27 17:05:39
+ * @since 1.0, 2025-01-20 15:59:26
  */
 public class AlipayMarketingActivityPayeeinfoCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1484717558611635552L;
+	private static final long serialVersionUID = 4891654239198187139L;
 
 	/**
 	 * 结算使用的收款账号。收款账号必须是支付宝的2088开头的账号。

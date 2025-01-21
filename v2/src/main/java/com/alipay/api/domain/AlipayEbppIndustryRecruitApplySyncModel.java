@@ -1,0 +1,200 @@
+package com.alipay.api.domain;
+
+import java.util.Date;
+
+import com.alipay.api.AlipayObject;
+import com.alipay.api.internal.mapping.ApiField;
+
+/**
+ * 安心招工平台应聘同步1
+ *
+ * @author auto create
+ * @since 1.0, 2025-01-17 16:16:41
+ */
+public class AlipayEbppIndustryRecruitApplySyncModel extends AlipayObject {
+
+	private static final long serialVersionUID = 2735648912762984549L;
+
+	/**
+	 * 应聘信息最新更新时间，如果应聘信息有更新，通过本接口传更新后的信息以及最新更新时间。 在某些情况下更新信息在本接口无法体现，比如服务商侧的应聘状态更详尽，多种状态对应到本岗位的一个状态，（查看简历、一面中、二面均对应到“应聘中”状态），但从查看简历更新到一面中时，仍需要通过本接口同步最新更新时间，支付宝引导用户到服务商小程序查看最新信息 格式：yyyy-MM-dd HH:mm:ss
+	 */
+	@ApiField("apply_change_time")
+	private Date applyChangeTime;
+
+	/**
+	 * 报名用户UID
+	 */
+	@ApiField("apply_open_id")
+	private String applyOpenId;
+
+	/**
+	 * 报名状态
+	 */
+	@ApiField("apply_status")
+	private String applyStatus;
+
+	/**
+	 * 用户发起应聘的时间 格式：yyyy-MM-dd HH:mm:ss
+	 */
+	@ApiField("apply_time")
+	private Date applyTime;
+
+	/**
+	 * 报名用户UID
+	 */
+	@ApiField("apply_user_id")
+	private String applyUserId;
+
+	/**
+	 * 业务场景ID，例如招聘专场id
+	 */
+	@ApiField("biz_id")
+	private String bizId;
+
+	/**
+	 * 用户端岗位报名详情页
+	 */
+	@ApiField("client_apply_url")
+	private String clientApplyUrl;
+
+	/**
+	 * 不合适原因
+	 */
+	@ApiField("inappropriate_reason")
+	private String inappropriateReason;
+
+	/**
+	 * 面试地点
+	 */
+	@ApiField("inter_address")
+	private String interAddress;
+
+	/**
+	 * 面试时间，应聘者到实际到场面试时间，精确到秒
+	 */
+	@ApiField("inter_time")
+	private Date interTime;
+
+	/**
+	 * IoT设备SN号，该字段向IoT服务商定向开放，非IoT服务商无需传值
+	 */
+	@ApiField("iot_sn")
+	private String iotSn;
+
+	/**
+	 * 报名id
+	 */
+	@ApiField("out_apply_id")
+	private String outApplyId;
+
+	/**
+	 * 服务商侧岗位唯一标识
+	 */
+	@ApiField("out_job_id")
+	private String outJobId;
+
+	/**
+	 * 报名管理URL
+	 */
+	@ApiField("server_apply_url")
+	private String serverApplyUrl;
+
+	public Date getApplyChangeTime() {
+		return this.applyChangeTime;
+	}
+	public void setApplyChangeTime(Date applyChangeTime) {
+		this.applyChangeTime = applyChangeTime;
+	}
+
+	public String getApplyOpenId() {
+		return this.applyOpenId;
+	}
+	public void setApplyOpenId(String applyOpenId) {
+		this.applyOpenId = applyOpenId;
+	}
+
+	public String getApplyStatus() {
+		return this.applyStatus;
+	}
+	public void setApplyStatus(String applyStatus) {
+		this.applyStatus = applyStatus;
+	}
+
+	public Date getApplyTime() {
+		return this.applyTime;
+	}
+	public void setApplyTime(Date applyTime) {
+		this.applyTime = applyTime;
+	}
+
+	public String getApplyUserId() {
+		return this.applyUserId;
+	}
+	public void setApplyUserId(String applyUserId) {
+		this.applyUserId = applyUserId;
+	}
+
+	public String getBizId() {
+		return this.bizId;
+	}
+	public void setBizId(String bizId) {
+		this.bizId = bizId;
+	}
+
+	public String getClientApplyUrl() {
+		return this.clientApplyUrl;
+	}
+	public void setClientApplyUrl(String clientApplyUrl) {
+		this.clientApplyUrl = clientApplyUrl;
+	}
+
+	public String getInappropriateReason() {
+		return this.inappropriateReason;
+	}
+	public void setInappropriateReason(String inappropriateReason) {
+		this.inappropriateReason = inappropriateReason;
+	}
+
+	public String getInterAddress() {
+		return this.interAddress;
+	}
+	public void setInterAddress(String interAddress) {
+		this.interAddress = interAddress;
+	}
+
+	public Date getInterTime() {
+		return this.interTime;
+	}
+	public void setInterTime(Date interTime) {
+		this.interTime = interTime;
+	}
+
+	public String getIotSn() {
+		return this.iotSn;
+	}
+	public void setIotSn(String iotSn) {
+		this.iotSn = iotSn;
+	}
+
+	public String getOutApplyId() {
+		return this.outApplyId;
+	}
+	public void setOutApplyId(String outApplyId) {
+		this.outApplyId = outApplyId;
+	}
+
+	public String getOutJobId() {
+		return this.outJobId;
+	}
+	public void setOutJobId(String outJobId) {
+		this.outJobId = outJobId;
+	}
+
+	public String getServerApplyUrl() {
+		return this.serverApplyUrl;
+	}
+	public void setServerApplyUrl(String serverApplyUrl) {
+		this.serverApplyUrl = serverApplyUrl;
+	}
+
+}

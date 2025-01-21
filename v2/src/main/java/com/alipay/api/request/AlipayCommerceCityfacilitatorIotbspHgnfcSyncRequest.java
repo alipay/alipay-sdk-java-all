@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.cityfacilitator.iotbsp.hgnfc.sync request
  * 
  * @author auto create
- * @since 1.0, 2024-05-27 20:32:02
+ * @since 1.0, 2025-01-21 15:32:22
  */
 public class AlipayCommerceCityfacilitatorIotbspHgnfcSyncRequest implements AlipayRequest<AlipayCommerceCityfacilitatorIotbspHgnfcSyncResponse> {
 

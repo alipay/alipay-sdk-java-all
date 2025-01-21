@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.petinsure.query request
  * 
  * @author auto create
- * @since 1.0, 2024-09-03 15:27:08
+ * @since 1.0, 2025-01-21 16:07:21
  */
 public class AlipayCommercePetinsureQueryRequest implements AlipayRequest<AlipayCommercePetinsureQueryResponse> {
 

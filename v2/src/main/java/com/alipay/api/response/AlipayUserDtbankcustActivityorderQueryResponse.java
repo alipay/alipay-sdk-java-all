@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.dtbankcust.activityorder.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-27 08:50:54
+ * @since 1.0, 2025-01-21 14:07:24
  */
 public class AlipayUserDtbankcustActivityorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1364426285395357226L;
+	private static final long serialVersionUID = 7311545975542397334L;
 
 	/** 
 	 * 数字分行活动唯一id
@@ -33,11 +33,7 @@ public class AlipayUserDtbankcustActivityorderQueryResponse extends AlipayRespon
 	private String outBizNo;
 
 	/** 
-	 * 流水状态
-INIT("INIT", "初始化"),
- SUCCESS("SUCCESS", "成功"),
-FAILED("FAILED", "失败"),
-PENDING("PENDING", "挂起"),
+	 * 发放流水状态，SUCCESS表示发放成功，FAILED表示发放失败，INIT表示发放处理中，可原单重试发放，勿换单重试，以免导致额外损失
 	 */
 	@ApiField("status")
 	private String status;

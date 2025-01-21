@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 多阶梯立减规则--单区间优惠配置信息
  *
  * @author auto create
- * @since 1.0, 2023-06-22 00:22:29
+ * @since 1.0, 2025-01-18 13:46:21
  */
 public class DtBankStagedThresholdInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4739367297872987115L;
+	private static final long serialVersionUID = 2656579642258192246L;
 
 	/**
 	 * 满足优惠的订单金额阈值最大值，单位为分

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 授权删除
  *
  * @author auto create
- * @since 1.0, 2024-04-10 16:28:42
+ * @since 1.0, 2025-01-20 16:01:05
  */
 public class AlipayCommerceOperationTimescardAuthorityDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8799139583693477197L;
+	private static final long serialVersionUID = 8639146665315531689L;
 
 	/**
 	 * 店员支付宝账户

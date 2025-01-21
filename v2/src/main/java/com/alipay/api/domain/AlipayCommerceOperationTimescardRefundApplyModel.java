@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 次卡退卡申请
  *
  * @author auto create
- * @since 1.0, 2024-04-10 16:28:20
+ * @since 1.0, 2025-01-20 16:00:08
  */
 public class AlipayCommerceOperationTimescardRefundApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5317845589992748816L;
+	private static final long serialVersionUID = 3489697368463189428L;
 
 	/**
 	 * 次卡id

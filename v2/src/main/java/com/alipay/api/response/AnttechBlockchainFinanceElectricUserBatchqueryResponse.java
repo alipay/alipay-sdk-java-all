@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.finance.electric.user.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-19 16:57:22
+ * @since 1.0, 2025-01-21 09:57:22
  */
 public class AnttechBlockchainFinanceElectricUserBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6868623396792146892L;
+	private static final long serialVersionUID = 6528237389919738723L;
 
 	/** 
 	 * 返回的是用电用户信息列表

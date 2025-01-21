@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 还款业务单代扣支付
  *
  * @author auto create
- * @since 1.0, 2024-12-27 15:51:53
+ * @since 1.0, 2025-01-21 10:33:53
  */
 public class AlipayCommerceWithholdrepayorderTradePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6628816283563813372L;
+	private static final long serialVersionUID = 6355835428945268673L;
 
 	/**
 	 * 代扣信息。 代扣业务需要传入的协议相关信息，使用本参数传入协议号后scene和auth_code不需要再传值。

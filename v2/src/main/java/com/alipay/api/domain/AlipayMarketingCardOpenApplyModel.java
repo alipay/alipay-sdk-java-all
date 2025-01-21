@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员卡开卡（内部无需授权）
  *
  * @author auto create
- * @since 1.0, 2024-09-27 11:02:57
+ * @since 1.0, 2025-01-20 15:55:01
  */
 public class AlipayMarketingCardOpenApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5531333296439434468L;
+	private static final long serialVersionUID = 3291969135166659786L;
 
 	/**
 	 * 外部卡信息(biz_card_no无需填写)

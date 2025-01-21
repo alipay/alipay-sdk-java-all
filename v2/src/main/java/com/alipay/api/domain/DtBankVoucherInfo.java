@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 通用渠道红包活动信息
  *
  * @author auto create
- * @since 1.0, 2024-11-15 16:04:20
+ * @since 1.0, 2025-01-18 13:46:21
  */
 public class DtBankVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3161943822678415663L;
+	private static final long serialVersionUID = 3886946378591215572L;
 
 	/**
 	 * 发放限制信息

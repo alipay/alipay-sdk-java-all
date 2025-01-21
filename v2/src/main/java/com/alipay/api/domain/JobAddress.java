@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 岗位工作地址
  *
  * @author auto create
- * @since 1.0, 2024-09-10 20:09:50
+ * @since 1.0, 2025-01-17 16:16:33
  */
 public class JobAddress extends AlipayObject {
 
-	private static final long serialVersionUID = 7712295532367666887L;
+	private static final long serialVersionUID = 7278277341476241451L;
+
+	/**
+	 * 地址名称
+	 */
+	@ApiField("address_name")
+	private String addressName;
 
 	/**
 	 * 详细办公地址
@@ -39,6 +45,13 @@ public class JobAddress extends AlipayObject {
 	 */
 	@ApiField("region_code")
 	private String regionCode;
+
+	public String getAddressName() {
+		return this.addressName;
+	}
+	public void setAddressName(String addressName) {
+		this.addressName = addressName;
+	}
 
 	public String getDetail() {
 		return this.detail;

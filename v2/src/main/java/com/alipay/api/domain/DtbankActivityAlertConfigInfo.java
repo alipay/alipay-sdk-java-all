@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 预算预警信息
  *
  * @author auto create
- * @since 1.0, 2024-12-16 13:14:53
+ * @since 1.0, 2025-01-18 13:46:21
  */
 public class DtbankActivityAlertConfigInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1148134147433162294L;
+	private static final long serialVersionUID = 8112755759279652844L;
 
 	/**
 	 * 总剩余预算预警值，单位：分
@@ -30,7 +30,7 @@ public class DtbankActivityAlertConfigInfo extends AlipayObject {
 	private List<String> appIdList;
 
 	/**
-	 * 预警方式：MESSAGE：短信；INTERFAC：接口
+	 * 预警方式：MESSAGE：短信；INTERFACE：接口
 	 */
 	@ApiField("budget_alert_notify_type")
 	private String budgetAlertNotifyType;

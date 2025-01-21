@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMerchantcardExpireperiodModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3645524516913547133L;
+	private static final long serialVersionUID = 1893818796951849573L;
 
 	/**
 	 * 将售卖订单的有效期延期到入参的时间点{appoint_date}，时间格式是yyyy-MM-dd HH:mm:ss
@@ -59,7 +59,9 @@ public class AlipayCommerceMerchantcardExpireperiodModifyModel extends AlipayObj
 	private Long periodValue;
 
 	/**
-	 * 【注意】如果指定的期数已经被核销了则不允许延期
+	 * 【注意】
+周期卡：如果指定的期数已经被核销了则不允许延期；
+次卡：只能使用APPOINT模式
 【FIXED】将指定期数及后续期数按固定周期延；月卡、季卡必须按照月延期；周卡必须按照周延期；日卡不支持按固定周期延
 【APPOINT】将指定期数及后续期数都延长{period_value}天
 【RECAST】将指定期数延长{period_value}天，后续期数会自动按周期延

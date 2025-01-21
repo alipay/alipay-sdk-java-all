@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnxinkaDeliverDetailResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 8619665887437831553L;
+	private static final long serialVersionUID = 7535375313718396867L;
 
 	/**
 	 * 代运营服务商佣金，单位：元。精确到小数点后两位

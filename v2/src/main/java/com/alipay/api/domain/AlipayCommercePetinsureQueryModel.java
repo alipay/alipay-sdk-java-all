@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 宠物保险投保详情查询
  *
  * @author auto create
- * @since 1.0, 2024-09-03 14:43:17
+ * @since 1.0, 2025-01-21 15:05:54
  */
 public class AlipayCommercePetinsureQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2689366899751958948L;
+	private static final long serialVersionUID = 7613631167953676658L;
 
 	/**
 	 * 外部业务单号，每一笔新的投保请求应该保持唯一。
 	 */
 	@ApiField("biz_id")
 	private String bizId;
+
+	/**
+	 * 查询保单的来源场景，为空默认为默认场景
+	 */
+	@ApiField("biz_scene")
+	private String bizScene;
 
 	/**
 	 * 买家用户Id
@@ -42,6 +48,13 @@ public class AlipayCommercePetinsureQueryModel extends AlipayObject {
 	}
 	public void setBizId(String bizId) {
 		this.bizId = bizId;
+	}
+
+	public String getBizScene() {
+		return this.bizScene;
+	}
+	public void setBizScene(String bizScene) {
+		this.bizScene = bizScene;
 	}
 
 	public String getBuyerId() {

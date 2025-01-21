@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 企业工商基本信息
  *
  * @author auto create
- * @since 1.0, 2024-12-19 14:28:58
+ * @since 1.0, 2025-01-21 09:39:22
  */
 public class EpBusinessBasicInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5258172962321699431L;
+	private static final long serialVersionUID = 1653714745931924517L;
 
 	/**
 	 * 地址
@@ -221,6 +221,12 @@ public class EpBusinessBasicInfo extends AlipayObject {
 	 */
 	@ApiField("tyshxydm")
 	private String tyshxydm;
+
+	/**
+	 * 注册资本币种
+	 */
+	@ApiField("zczbbz")
+	private String zczbbz;
 
 	/**
 	 * 执行合伙人
@@ -476,6 +482,13 @@ public class EpBusinessBasicInfo extends AlipayObject {
 	}
 	public void setTyshxydm(String tyshxydm) {
 		this.tyshxydm = tyshxydm;
+	}
+
+	public String getZczbbz() {
+		return this.zczbbz;
+	}
+	public void setZczbbz(String zczbbz) {
+		this.zczbbz = zczbbz;
 	}
 
 	public String getZxhhr() {

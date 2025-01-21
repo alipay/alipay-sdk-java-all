@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MaskedUserCertView extends AlipayObject {
 
-	private static final long serialVersionUID = 4331293247246592421L;
+	private static final long serialVersionUID = 1871337942588783665L;
 
 	/**
 	 * 是否通过实名认证， 是 - T； 否 - F

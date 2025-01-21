@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.petinsure.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-09-03 15:27:08
+ * @since 1.0, 2025-01-21 16:07:21
  */
 public class AlipayCommercePetinsureQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4713248293677937321L;
+	private static final long serialVersionUID = 5493128868279753692L;
 
 	/** 
 	 * 投保状态

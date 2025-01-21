@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.timescard.authority.delete response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-10 16:28:42
+ * @since 1.0, 2025-01-20 16:01:05
  */
 public class AlipayCommerceOperationTimescardAuthorityDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3532828181915687729L;
+	private static final long serialVersionUID = 1346254955438635244L;
 
 	
 

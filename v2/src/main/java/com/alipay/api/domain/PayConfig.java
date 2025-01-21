@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PayConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 8293649154916523388L;
+	private static final long serialVersionUID = 1227852243794121199L;
 
 	/**
 	 * 银行渠道模式。YES时必传，可选的字段枚举说明：{BANK:指定银行;BANK_CARD:指定银行卡；BIN:指定银行BIN}

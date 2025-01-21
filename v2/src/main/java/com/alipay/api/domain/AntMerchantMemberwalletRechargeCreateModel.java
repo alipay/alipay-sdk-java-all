@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员钱包充值预下单
  *
  * @author auto create
- * @since 1.0, 2022-05-20 16:07:33
+ * @since 1.0, 2025-01-20 15:56:11
  */
 public class AntMerchantMemberwalletRechargeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7516791917362385372L;
+	private static final long serialVersionUID = 8438732827436577727L;
 
 	/**
 	 * 充值权益金（单位：元）

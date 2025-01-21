@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.dtbankcust.channelvoucher.send response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-02 10:07:19
+ * @since 1.0, 2025-01-21 14:07:24
  */
 public class AlipayUserDtbankcustChannelvoucherSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1175413281775791777L;
+	private static final long serialVersionUID = 3376964968162246589L;
 
 	/** 
 	 * 接收渠道红包的，脱敏后的支付宝登录号
@@ -64,7 +64,7 @@ B.满10元随机立减1元到3元,则值是具体的金额，如果随机1.5元�
 	private Long sendAmount;
 
 	/** 
-	 * 发放流水状态
+	 * 发放流水状态，SUCCESS表示发放成功，FAILED表示发放失败，INIT表示发放处理中，可原单重试发放，勿换单重试，以免导致额外损失。
 	 */
 	@ApiField("send_status")
 	private String sendStatus;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数字分行活动配置查询接口
  *
  * @author auto create
- * @since 1.0, 2024-12-16 13:14:53
+ * @since 1.0, 2025-01-18 13:46:22
  */
 public class AlipayUserDtbankcustActivityconfigQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8228626335952194162L;
+	private static final long serialVersionUID = 1899743598522524873L;
 
 	/**
 	 * 数字分行活动唯一id

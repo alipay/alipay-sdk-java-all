@@ -7,6 +7,7 @@ import com.alipay.api.domain.DtbankActivityAlertConfigInfo;
 import com.alipay.api.domain.DtBankInfo;
 import com.alipay.api.domain.DtBankBudgetInfo;
 import com.alipay.api.domain.DtBankCrowdInfo;
+import com.alipay.api.domain.DtbankActivityDataEffectInfo;
 import com.alipay.api.domain.DtBankPreferenceTypeInfo;
 
 import com.alipay.api.AlipayResponse;
@@ -15,11 +16,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.dtbankcust.activityconfig.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-01-17 11:49:34
+ * @since 1.0, 2025-01-21 14:07:24
  */
 public class AlipayUserDtbankcustActivityconfigQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3884783443827353863L;
+	private static final long serialVersionUID = 3383248463182479426L;
 
 	/** 
 	 * 当入参活动类型是DISCOUNT、VOUCHER、FIRST_BIND_CARD_GIFT时返回活动ID；
@@ -83,6 +84,12 @@ public class AlipayUserDtbankcustActivityconfigQueryResponse extends AlipayRespo
 	 */
 	@ApiField("crowd_info")
 	private DtBankCrowdInfo crowdInfo;
+
+	/** 
+	 * 活动效果数据，一般情况下数据更新到昨日，具体以接口中返回的更新日期为准。
+	 */
+	@ApiField("data_effect_info")
+	private DtbankActivityDataEffectInfo dataEffectInfo;
 
 	/** 
 	 * 优惠类型信息
@@ -176,6 +183,13 @@ public class AlipayUserDtbankcustActivityconfigQueryResponse extends AlipayRespo
 	}
 	public DtBankCrowdInfo getCrowdInfo( ) {
 		return this.crowdInfo;
+	}
+
+	public void setDataEffectInfo(DtbankActivityDataEffectInfo dataEffectInfo) {
+		this.dataEffectInfo = dataEffectInfo;
+	}
+	public DtbankActivityDataEffectInfo getDataEffectInfo( ) {
+		return this.dataEffectInfo;
 	}
 
 	public void setPreferenceTypeInfo(DtBankPreferenceTypeInfo preferenceTypeInfo) {

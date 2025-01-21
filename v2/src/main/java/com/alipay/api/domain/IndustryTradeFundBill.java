@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易支付的渠道属性
  *
  * @author auto create
- * @since 1.0, 2024-09-26 18:30:33
+ * @since 1.0, 2025-01-21 10:33:53
  */
 public class IndustryTradeFundBill extends AlipayObject {
 
-	private static final long serialVersionUID = 2789214689276742329L;
+	private static final long serialVersionUID = 3128659511452491559L;
 
 	/**
 	 * 该支付工具类型所使用的金额
@@ -26,7 +26,7 @@ public class IndustryTradeFundBill extends AlipayObject {
 	private String bankCode;
 
 	/**
-	 * 交易使用的资金渠道，详见支付渠道列表<a herf='https://doc.open.alipay.com/doc2/detail?treeId=26&articleId=103259&docType=1'>支付渠道列表</a>
+	 * 交易使用的资金渠道，详见<a herf="https://opendocs.alipay.com/open/08gj4x">支付渠道列表</a>。
 	 */
 	@ApiField("fund_channel")
 	private String fundChannel;

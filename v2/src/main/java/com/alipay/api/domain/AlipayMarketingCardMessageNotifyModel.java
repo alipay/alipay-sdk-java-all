@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员积分过期提醒
  *
  * @author auto create
- * @since 1.0, 2024-04-10 16:32:30
+ * @since 1.0, 2025-01-20 16:09:13
  */
 public class AlipayMarketingCardMessageNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5757781288165197198L;
+	private static final long serialVersionUID = 4134123659876299361L;
 
 	/**
 	 * 消息通知详情，包含消息通知需要的信息，map 格式存储。

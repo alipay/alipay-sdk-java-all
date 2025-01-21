@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单退款前商户确认退款结果
  *
  * @author auto create
- * @since 1.0, 2023-10-27 18:31:03
+ * @since 1.0, 2025-01-20 15:59:41
  */
 public class AlipayMarketingActivityOrderRefundconfirmcommitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3619333711131584376L;
+	private static final long serialVersionUID = 8653377998383998742L;
 
 	/**
 	 * 买家的支付宝uid
