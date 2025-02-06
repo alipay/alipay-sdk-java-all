@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.salary.recon.query request
  * 
  * @author auto create
- * @since 1.0, 2025-01-06 11:27:28
+ * @since 1.0, 2025-02-06 16:37:26
  */
 public class AlipayEbppIndustrySalaryReconQueryRequest implements AlipayRequest<AlipayEbppIndustrySalaryReconQueryResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MerchantEntryBeneficiaryInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2131259386714473693L;
+	private static final long serialVersionUID = 3331739851579649886L;
 
 	/**
 	 * 受益人的证件有效期，yyyyMMdd。受益人有效期不为长期时，必填。

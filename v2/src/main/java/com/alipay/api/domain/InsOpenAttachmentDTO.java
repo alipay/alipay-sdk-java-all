@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsOpenAttachmentDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3452284959439511667L;
+	private static final long serialVersionUID = 3512898846895579918L;
 
 	/**
 	 * afts的id

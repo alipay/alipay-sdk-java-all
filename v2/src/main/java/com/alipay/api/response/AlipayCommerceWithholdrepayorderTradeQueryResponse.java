@@ -27,7 +27,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceWithholdrepayorderTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3697738529326872216L;
+	private static final long serialVersionUID = 2567524355884482323L;
 
 	/** 
 	 * 交易附加状态： SELLER_NOT_RECEIVED（买家已付款，卖家未收款）；

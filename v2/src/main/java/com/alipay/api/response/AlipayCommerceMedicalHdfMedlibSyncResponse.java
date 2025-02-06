@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMedicalHdfMedlibSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8211454511745788242L;
+	private static final long serialVersionUID = 7732865331553722948L;
 
 	/** 
 	 * 接口返回数据

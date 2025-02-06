@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OutOfConfigGoodsResult extends AlipayObject {
 
-	private static final long serialVersionUID = 5374637984325781846L;
+	private static final long serialVersionUID = 2729587319262857671L;
 
 	/**
 	 * 算法id

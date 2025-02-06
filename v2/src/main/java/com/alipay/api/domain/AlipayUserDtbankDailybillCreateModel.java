@@ -9,11 +9,18 @@ import com.alipay.api.internal.mapping.ApiField;
  * 日账单创建
  *
  * @author auto create
- * @since 1.0, 2024-01-30 11:12:18
+ * @since 1.0, 2025-01-23 11:03:51
  */
 public class AlipayUserDtbankDailybillCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7732792897963685572L;
+	private static final long serialVersionUID = 2797287545653765496L;
+
+	/**
+	 * 活动来源
+【注意事项】bill_source表示活动来源，供银行查询服务商或小二为其配置活动的账单，服务商可忽略不传
+	 */
+	@ApiField("bill_source")
+	private String billSource;
 
 	/**
 	 * 申请查询的账单类型
@@ -32,6 +39,13 @@ public class AlipayUserDtbankDailybillCreateModel extends AlipayObject {
 	 */
 	@ApiField("start_time")
 	private Date startTime;
+
+	public String getBillSource() {
+		return this.billSource;
+	}
+	public void setBillSource(String billSource) {
+		this.billSource = billSource;
+	}
 
 	public String getBillType() {
 		return this.billType;

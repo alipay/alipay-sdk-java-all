@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.ecny.file.upload response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-23 21:13:46
+ * @since 1.0, 2025-01-22 18:33:55
  */
 public class MybankEcnyFileUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6436536266894137857L;
+	private static final long serialVersionUID = 4655988651583955526L;
 
 	/** 
 	 * 文件ID

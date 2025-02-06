@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 日账单查询接口
  *
  * @author auto create
- * @since 1.0, 2024-01-30 11:14:15
+ * @since 1.0, 2025-01-23 11:02:17
  */
 public class AlipayUserDtbankDailybillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6512827542317819292L;
+	private static final long serialVersionUID = 5841584121189786361L;
 
 	/**
 	 * 账单id
@@ -20,9 +20,10 @@ public class AlipayUserDtbankDailybillQueryModel extends AlipayObject {
 	private String billId;
 
 	/**
-	 * 账单类型
+	 * 账单类型 当前字段已废弃(数字分行账单已经全部回迁，不需要这个字段来区分账单是50产出还是数分产出)
 	 */
 	@ApiField("bill_type")
+	@Deprecated
 	private String billType;
 
 	public String getBillId() {

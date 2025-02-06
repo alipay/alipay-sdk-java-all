@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppCommunityRoomCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1433531132657484396L;
+	private static final long serialVersionUID = 1164432337694715776L;
 
 	/** 
 	 * 在支付宝app中，该房间的跳转地址

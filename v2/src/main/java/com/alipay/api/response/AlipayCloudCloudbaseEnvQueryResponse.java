@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.env.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-22 14:41:31
+ * @since 1.0, 2025-01-22 18:04:34
  */
 public class AlipayCloudCloudbaseEnvQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4322688666134146795L;
+	private static final long serialVersionUID = 7446413294268187938L;
 
 	/** 
 	 * 环境信息列表

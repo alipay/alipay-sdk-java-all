@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HighwaySceneData extends AlipayObject {
 
-	private static final long serialVersionUID = 2868496766549578558L;
+	private static final long serialVersionUID = 5719291552739463794L;
 
 	/**
 	 * 车辆类：

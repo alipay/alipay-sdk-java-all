@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBossBaseAntauthorizeMultiQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5355447195675989147L;
+	private static final long serialVersionUID = 1427721447429612519L;
 
 	/** 
 	 * 返回的具体授权信息

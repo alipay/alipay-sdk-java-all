@@ -1,5 +1,6 @@
 package com.alipay.api.response;
 
+import com.alipay.api.internal.mapping.ApiField;
 
 import com.alipay.api.AlipayResponse;
 
@@ -7,14 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.data.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 14:14:28
+ * @since 1.0, 2025-01-22 17:42:26
  */
 public class AlipayDataDataserviceDataQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3266388717894893556L;
+	private static final long serialVersionUID = 3733845614352377415L;
 
-	
+	/** 
+	 * 11
+	 */
+	@ApiField("amount")
+	private Long amount;
 
-	
+	public void setAmount(Long amount) {
+		this.amount = amount;
+	}
+	public Long getAmount( ) {
+		return this.amount;
+	}
 
 }

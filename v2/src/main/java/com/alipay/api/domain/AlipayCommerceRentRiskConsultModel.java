@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 智安通风险咨询API
  *
  * @author auto create
- * @since 1.0, 2025-01-17 20:07:22
+ * @since 1.0, 2025-01-24 17:32:22
  */
 public class AlipayCommerceRentRiskConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2419596375331267266L;
+	private static final long serialVersionUID = 1328368245976476397L;
 
 	/**
 	 * 支付宝用户id

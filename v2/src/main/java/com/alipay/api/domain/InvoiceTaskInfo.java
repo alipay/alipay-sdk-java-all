@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InvoiceTaskInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5872289227189499993L;
+	private static final long serialVersionUID = 4188466257286852591L;
 
 	/**
 	 * 回票完成时间

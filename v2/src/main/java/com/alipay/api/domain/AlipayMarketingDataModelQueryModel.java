@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingDataModelQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6312315946959878477L;
+	private static final long serialVersionUID = 3397974251272814783L;
 
 	/**
 	 * 模型查询输入参数格式。此为参数列表，参数包含外部用户身分信息类型、模型输出字段及模型输出值，根据实际业务需求获取；用于实验试算法模型结果查询

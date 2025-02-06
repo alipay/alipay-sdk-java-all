@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenAppLocalitemCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8165979987294132147L;
+	private static final long serialVersionUID = 6395861553162618884L;
 
 	/** 
 	 * 支付宝平台侧商品ID，是支付宝平台侧商品的唯一标识，后续与平台交互，需要使用该 ID，建议持久化。

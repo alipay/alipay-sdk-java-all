@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenMiniTipsDeliveryBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4736712416959515916L;
+	private static final long serialVersionUID = 5164526173664435758L;
 
 	/** 
 	 * 收藏引导活动信息列表。根据活动状态排序，顺序为：生效中，暂停，审核中，白名单生效中，初始化，审核失败，结束。相同状态优先展示状态更新时间最迟的活动。

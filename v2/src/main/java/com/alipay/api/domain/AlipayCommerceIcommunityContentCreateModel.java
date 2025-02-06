@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 蓝花火社区内容同步接口
  *
  * @author auto create
- * @since 1.0, 2025-01-16 15:37:25
+ * @since 1.0, 2025-01-22 16:51:07
  */
 public class AlipayCommerceIcommunityContentCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8238246437449816554L;
+	private static final long serialVersionUID = 5381748216264766488L;
 
 	/**
 	 * 表示接口调用来源的场景码

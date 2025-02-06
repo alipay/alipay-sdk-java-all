@@ -1,0 +1,30 @@
+package com.alipay.api.response;
+
+import com.alipay.api.internal.mapping.ApiField;
+
+import com.alipay.api.AlipayResponse;
+
+/**
+ * ALIPAY API: alipay.offline.provider.collaborate.task.trigger response.
+ * 
+ * @author auto create
+ * @since 1.0, 2025-01-27 22:52:21
+ */
+public class AlipayOfflineProviderCollaborateTaskTriggerResponse extends AlipayResponse {
+
+	private static final long serialVersionUID = 6284699645134979476L;
+
+	/** 
+	 * 代表一次呼叫的唯一id
+	 */
+	@ApiField("call_id")
+	private String callId;
+
+	public void setCallId(String callId) {
+		this.callId = callId;
+	}
+	public String getCallId( ) {
+		return this.callId;
+	}
+
+}

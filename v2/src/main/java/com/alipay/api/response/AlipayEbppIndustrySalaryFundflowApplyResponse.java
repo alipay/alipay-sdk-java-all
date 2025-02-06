@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.salary.fundflow.apply response.
  * 
  * @author auto create
- * @since 1.0, 2025-01-06 11:27:26
+ * @since 1.0, 2025-02-06 16:42:24
  */
 public class AlipayEbppIndustrySalaryFundflowApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5124959242113984631L;
+	private static final long serialVersionUID = 5491718257161199827L;
 
 	/** 
 	 * 子户账号

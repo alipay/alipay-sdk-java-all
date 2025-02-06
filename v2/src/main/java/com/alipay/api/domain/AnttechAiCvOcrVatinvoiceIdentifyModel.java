@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechAiCvOcrVatinvoiceIdentifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8481741883467735435L;
+	private static final long serialVersionUID = 8682298236915556411L;
 
 	/**
 	 * 目前只支持pdf、jpg两种file_type的识别能力，根据具体传入的发票的格式传入正确的值

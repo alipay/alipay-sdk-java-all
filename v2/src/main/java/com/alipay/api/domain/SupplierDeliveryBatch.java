@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SupplierDeliveryBatch extends AlipayObject {
 
-	private static final long serialVersionUID = 6612941661364356577L;
+	private static final long serialVersionUID = 3128551184575268669L;
 
 	/**
 	 * 实发数量

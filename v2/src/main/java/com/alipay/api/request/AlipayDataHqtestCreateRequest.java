@@ -1,5 +1,6 @@
 package com.alipay.api.request;
 
+import com.alipay.api.domain.AlipayDataHqtestCreateModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
@@ -11,12 +12,24 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.hqtest.create request
  * 
  * @author auto create
- * @since 1.0, 2024-12-13 11:34:42
+ * @since 1.0, 2025-02-05 17:12:25
  */
 public class AlipayDataHqtestCreateRequest implements AlipayRequest<AlipayDataHqtestCreateResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
+
+	/** 
+	* 接口无参数升级验证
+	 */
+	private String bizContent;
+
+	public void setBizContent(String bizContent) {
+		this.bizContent = bizContent;
+	}
+	public String getBizContent() {
+		return this.bizContent;
+	}
 	private String terminalType;
 	private String terminalInfo;	
 	private String prodCode;
@@ -79,6 +92,7 @@ public class AlipayDataHqtestCreateRequest implements AlipayRequest<AlipayDataHq
 
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
+		txtParams.put("biz_content", this.bizContent);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}

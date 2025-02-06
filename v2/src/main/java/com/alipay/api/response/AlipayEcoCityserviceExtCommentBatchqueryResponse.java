@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoCityserviceExtCommentBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3758551613332246864L;
+	private static final long serialVersionUID = 2878477843382775545L;
 
 	/** 
 	 * 评价列表

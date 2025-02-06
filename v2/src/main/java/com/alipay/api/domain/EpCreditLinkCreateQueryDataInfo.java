@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EpCreditLinkCreateQueryDataInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2379245723346394727L;
+	private static final long serialVersionUID = 3564645276585738247L;
 
 	/**
 	 * 信用等级结果

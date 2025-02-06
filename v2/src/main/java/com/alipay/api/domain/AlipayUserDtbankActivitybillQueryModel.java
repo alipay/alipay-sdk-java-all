@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询活动账单信息
  *
  * @author auto create
- * @since 1.0, 2024-01-19 15:34:16
+ * @since 1.0, 2025-01-23 11:03:53
  */
 public class AlipayUserDtbankActivitybillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6429483762548239137L;
+	private static final long serialVersionUID = 3297181223296493253L;
 
 	/**
 	 * 银行活动id/解决方案id
@@ -20,9 +20,10 @@ public class AlipayUserDtbankActivitybillQueryModel extends AlipayObject {
 	private String activityId;
 
 	/**
-	 * 申请查询的账单类型
+	 * 申请查询的账单类型 当前字段已废弃(数字分行账单已经全部迁移)
 	 */
 	@ApiField("bill_type")
+	@Deprecated
 	private String billType;
 
 	public String getActivityId() {

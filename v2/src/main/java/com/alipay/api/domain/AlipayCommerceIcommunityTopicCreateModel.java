@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 蓝花火社区话题创建接口
  *
  * @author auto create
- * @since 1.0, 2025-01-16 15:37:37
+ * @since 1.0, 2025-01-22 16:51:08
  */
 public class AlipayCommerceIcommunityTopicCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6624733255723365871L;
+	private static final long serialVersionUID = 6749512615431357414L;
 
 	/**
 	 * 当前话题创建外部请求的唯一标识

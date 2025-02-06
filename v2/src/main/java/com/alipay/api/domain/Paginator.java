@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class Paginator extends AlipayObject {
 
-	private static final long serialVersionUID = 4762789941569898272L;
+	private static final long serialVersionUID = 4683916649979722512L;
 
 	/**
 	 * 页码

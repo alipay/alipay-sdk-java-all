@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayBossFncWallstreetCompareflowTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1241711181233135927L;
+	private static final long serialVersionUID = 6839415777434716678L;
 
 	/**
 	 * 对比方法名 不唯一 获取对比方法 无枚举 对应方法名称

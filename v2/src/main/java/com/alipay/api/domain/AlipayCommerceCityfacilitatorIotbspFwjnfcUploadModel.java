@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceCityfacilitatorIotbspFwjnfcUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7892383413484917892L;
+	private static final long serialVersionUID = 1281953788628312472L;
 
 	/**
 	 * 线圈链接被读取时事件的时间戳，单位为秒或毫秒的时间戳

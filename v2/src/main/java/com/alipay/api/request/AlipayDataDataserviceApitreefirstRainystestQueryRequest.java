@@ -1,5 +1,6 @@
 package com.alipay.api.request;
 
+import com.alipay.api.domain.AlipayDataDataserviceApitreefirstRainystestQueryModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
@@ -11,12 +12,24 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.dataservice.apitreefirst.rainystest.query request
  * 
  * @author auto create
- * @since 1.0, 2025-01-16 18:52:22
+ * @since 1.0, 2025-01-22 15:27:23
  */
 public class AlipayDataDataserviceApitreefirstRainystestQueryRequest implements AlipayRequest<AlipayDataDataserviceApitreefirstRainystestQueryResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
+
+	/** 
+	* tree模型测试接口
+	 */
+	private String bizContent;
+
+	public void setBizContent(String bizContent) {
+		this.bizContent = bizContent;
+	}
+	public String getBizContent() {
+		return this.bizContent;
+	}
 	private String terminalType;
 	private String terminalInfo;	
 	private String prodCode;
@@ -79,6 +92,7 @@ public class AlipayDataDataserviceApitreefirstRainystestQueryRequest implements 
 
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
+		txtParams.put("biz_content", this.bizContent);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}

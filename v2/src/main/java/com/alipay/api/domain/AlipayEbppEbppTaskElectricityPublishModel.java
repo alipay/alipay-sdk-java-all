@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppEbppTaskElectricityPublishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5694137282724388414L;
+	private static final long serialVersionUID = 4517388367535799954L;
 
 	/**
 	 * 任务结束响应时间，精确到秒

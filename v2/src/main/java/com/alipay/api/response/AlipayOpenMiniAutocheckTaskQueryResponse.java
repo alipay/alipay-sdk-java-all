@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenMiniAutocheckTaskQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3745377518438533846L;
+	private static final long serialVersionUID = 2481869974474632555L;
 
 	/** 
 	 * 任务执行状态

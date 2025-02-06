@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.bot.chat.query request
  * 
  * @author auto create
- * @since 1.0, 2024-12-09 19:12:24
+ * @since 1.0, 2025-01-23 18:06:20
  */
 public class AlipayEbppIndustryBotChatQueryRequest implements AlipayRequest<AlipayEbppIndustryBotChatQueryResponse> {
 

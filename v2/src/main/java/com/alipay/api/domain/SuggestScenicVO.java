@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SuggestScenicVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3391247435624215551L;
+	private static final long serialVersionUID = 7735437778448998292L;
 
 	/**
 	 * 观景图

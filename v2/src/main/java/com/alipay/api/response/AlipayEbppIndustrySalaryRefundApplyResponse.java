@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.salary.refund.apply response.
  * 
  * @author auto create
- * @since 1.0, 2025-01-06 11:27:26
+ * @since 1.0, 2025-02-06 16:42:24
  */
 public class AlipayEbppIndustrySalaryRefundApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2462372969475759894L;
+	private static final long serialVersionUID = 1446728523162894755L;
 
 	/** 
 	 * 退款交易号

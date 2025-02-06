@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ServiceProvider extends AlipayObject {
 
-	private static final long serialVersionUID = 8638389514669352943L;
+	private static final long serialVersionUID = 3197993725476949918L;
 
 	/**
 	 * 服务提供者:医生/医助头像

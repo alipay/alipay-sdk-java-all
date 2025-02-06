@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingQipanCrowdtagQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5619335344121947139L;
+	private static final long serialVersionUID = 4191522831257754899L;
 
 	/** 
 	 * 棋盘开放圈选查询标签值返回

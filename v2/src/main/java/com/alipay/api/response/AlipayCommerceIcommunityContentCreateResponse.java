@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.icommunity.content.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-01-16 15:42:23
+ * @since 1.0, 2025-01-22 16:52:24
  */
 public class AlipayCommerceIcommunityContentCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4217664854173468397L;
+	private static final long serialVersionUID = 4259978695542894241L;
 
 	/** 
 	 * 蓝花火兴趣社区创建的内容的唯一id

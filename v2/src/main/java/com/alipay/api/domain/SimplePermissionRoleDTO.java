@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SimplePermissionRoleDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2858683779684562946L;
+	private static final long serialVersionUID = 5754631494966199618L;
 
 	/**
 	 * actorId-否-用户角色对象id，用户表示角色与服务的关联关系-无枚举-被调方提供-无特殊说明
