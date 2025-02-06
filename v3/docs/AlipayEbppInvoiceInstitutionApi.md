@@ -163,7 +163,7 @@ No authorization required
 
 制度编辑
 
-制度编辑
+制度编辑，支持制度基本信息、制度下适用范围、制度下使用规则和发放规则的修改。
 
 ### Example
 ```java

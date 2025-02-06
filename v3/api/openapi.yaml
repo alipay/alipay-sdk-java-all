@@ -5,7 +5,7 @@ info:
     url: https://opendocs.alipay.com/open-v3/053sd1
   description: 支付宝开放平台v3协议文档
   title: 支付宝开放平台API
-  version: 2024-11-29
+  version: 2025-02-06
 servers:
 - description: Production server
   url: https://openapi.alipay.com
@@ -2396,7 +2396,7 @@ paths:
       description: 为支付宝商家提供支付宝账户的账务流水信息，供对账使用。
       operationId: alipay.data.bill.accountlog.query
       parameters:
-      - description: 账务流水创建时间的起始范围
+      - description: 账务流水创建时间的起始范围。只能查询一年内的记录
         explode: true
         in: query
         name: start_time
@@ -5467,7 +5467,7 @@ paths:
       x-accepts: application/json
   /v3/alipay/ebpp/invoice/institution/modify:
     post:
-      description: 制度编辑
+      description: 制度编辑，支持制度基本信息、制度下适用范围、制度下使用规则和发放规则的修改。
       operationId: alipay.ebpp.invoice.institution.modify
       requestBody:
         content:
@@ -19553,213 +19553,6 @@ paths:
       - alipay.open.mini.widget.goods
       x-content-type: application/json
       x-accepts: application/json
-  /v3/alipay/open/operation/openbizmock/delete/query:
-    delete:
-      description: 测试delete类型接口
-      operationId: alipay.open.operation.openbizmock.delete.query
-      parameters:
-      - description: 纬度
-        explode: true
-        in: query
-        name: b_query
-        required: false
-        schema:
-          example: test
-          type: string
-        style: form
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/AlipayOpenOperationOpenbizmockDeleteQueryResponseModel'
-          description: common response
-        default:
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/alipay_open_operation_openbizmock_delete_query_default_response'
-          description: 请求失败
-      summary: 测试delete类型接口
-      tags:
-      - alipay.open.operation.openbizmock.delete
-      x-accepts: application/json
-  /v3/alipay/open/operation/openbizmock/patch/query:
-    patch:
-      description: patch类型接口测试
-      operationId: alipay.open.operation.openbizmock.patch.query
-      parameters:
-      - description: test2222
-        explode: true
-        in: query
-        name: b_query
-        required: false
-        schema:
-          example: test
-          type: string
-        style: form
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/AlipayOpenOperationOpenbizmockPatchQueryModel'
-        required: false
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/AlipayOpenOperationOpenbizmockPatchQueryResponseModel'
-          description: common response
-        default:
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/alipay_open_operation_openbizmock_patch_query_default_response'
-          description: 请求失败
-      summary: patch类型接口测试
-      tags:
-      - alipay.open.operation.openbizmock.patch
-      x-content-type: application/json
-      x-accepts: application/json
-  /v3/alipay/open/operation/openbizmock/put/query:
-    put:
-      description: test
-      operationId: alipay.open.operation.openbizmock.put.query
-      parameters:
-      - description: test
-        explode: true
-        in: query
-        name: b_query
-        required: false
-        schema:
-          example: test
-          type: string
-        style: form
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/AlipayOpenOperationOpenbizmockPutQueryModel'
-        required: false
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/AlipayOpenOperationOpenbizmockPutQueryResponseModel'
-          description: common response
-        default:
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/alipay_open_operation_openbizmock_put_query_default_response'
-          description: 请求失败
-      summary: 测试put类型接口
-      tags:
-      - alipay.open.operation.openbizmock.put
-      x-content-type: application/json
-      x-accepts: application/json
-  /v3/alipay/open/operation/openbizmock/test/query:
-    post:
-      description: 哈哈
-      operationId: alipay.open.operation.openbizmock.test.query
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/AlipayOpenOperationOpenbizmockTestQueryModel'
-        required: false
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/AlipayOpenOperationOpenbizmockTestQueryResponseModel'
-          description: common response
-        default:
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/alipay_open_operation_openbizmock_test_query_default_response'
-          description: 请求失败
-      summary: 测试openpai的openid自动补偿哈哈
-      tags:
-      - alipay.open.operation.openbizmock.test
-      x-content-type: application/json
-      x-accepts: application/json
-  /v3/alipay/open/operation/openbizmock/testpathkey/query/{keykey}/{a}:
-    post:
-      description: 测试网关协议3.0key和path
-      operationId: alipay.open.operation.openbizmock.testpathkey.query
-      parameters:
-      - description: ceshi
-        explode: false
-        in: path
-        name: keykey
-        required: true
-        schema:
-          example: keykey
-          type: string
-        style: simple
-      - description: 测试
-        explode: false
-        in: path
-        name: a
-        required: true
-        schema:
-          example: a
-          type: string
-        style: simple
-      - description: ceshi
-        explode: true
-        in: query
-        name: b
-        required: false
-        schema:
-          example: b
-          type: string
-        style: form
-      - description: 测试
-        explode: true
-        in: query
-        name: c
-        required: false
-        schema:
-          example: c
-          type: string
-        style: form
-      requestBody:
-        content:
-          multipart/form-data:
-            encoding:
-              data:
-                contentType: application/json
-                style: form
-              f:
-                contentType: '*/*'
-                style: form
-            schema:
-              $ref: '#/components/schemas/alipay_open_operation_openbizmock_testpathkey_query_request'
-        required: false
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/AlipayOpenOperationOpenbizmockTestpathkeyQueryResponseModel'
-          description: common response
-        default:
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/alipay_open_operation_openbizmock_testpathkey_query_default_response'
-          description: 请求失败
-      summary: 测试网关协议3.0key和path
-      tags:
-      - alipay.open.operation.openbizmock.testpathkey
-      x-content-type: multipart/form-data
-      x-accepts: application/json
   /v3/alipay/open/public/account/create:
     post:
       description: 当用户成为商户的关注用户后，可以在商户的服务窗中点击“添加绑定商户会员号”功能，支付宝系统收到操作请求后将该动作通知给商户（使用用户发送信息到商户接口，其中eventType（事件类型）为click，actionParam（按钮标识）为authentication），商户根据此通知调用商户回复消息接口（其中须包含Url链接地址），支付宝收到商户的回复消息中的链接地址后，自动跳转至商户平台的上商户会员绑定界面中，让用户完成账户绑定。
@@ -29874,7 +29667,6 @@ components:
           - NO_AGREEMENT
           - DEPT_NOT_EXIST
           - ENTERPRISE_NOT_EXIST
-          - PARAM_ERROR
           type: string
         links:
           description: 解决方案链接
@@ -32946,6 +32738,7 @@ components:
         agreement_type:
           description: 根据不同业务协议类型，传入不同参数。传入协议产品码（personal_product_code，通过协议查询接口、协议签约通知响应参数获取），不填的话默认按照示例值传入。
             安全发协议：FUND_SAFT_SIGN_WITHHOLDING_P 专用金协议：FLEXIBLE_EMPLOYMENT_SERVICE_P
+            批量有密：FUND_AUTHORIZE_FLOW
           example: FUND_SAFT_SIGN_WITHHOLDING_P
           type: string
         end_time:
@@ -35294,6 +35087,7 @@ components:
           - QUOTA_EXISTS
           - REQUEST_REPEAT
           - ISSUE_BATCH_NO_DUPLICATE
+          - EMPLOYEE_NOT_IN_INSTITUTION_SCOPE
           type: string
         links:
           description: 解决方案链接
@@ -35337,24 +35131,33 @@ components:
           description: 批量发放时，可填写该字段作为发放名称，如果未填写取outer_source_id为默认值
           example: 7号加班餐
           type: string
+        issue_quota_target_list:
+          description: 创建额度发放明细列表
+          items:
+            $ref: '#/components/schemas/IssueTargetInfoContent'
+          type: array
         outer_source_id:
           description: 外部操作幂等ID，标识创建额度的唯一性，防止重复创建
           example: TN00000000000001
           type: string
         owner_id:
-          description: 额度所属者ID（未切换open_id请使用此字段）：
+          deprecated: true
+          description: 额度所属者ID（未切换open_id请使用此字段）：(字段升级，请使用issue_target_info_list中owner_id字段)
           example: "2088210888827370"
           type: string
         owner_open_id:
-          description: 额度所属者ID（切换open_id后请使用此字段）：
+          deprecated: true
+          description: 额度所属者ID（切换open_id后请使用此字段）：(字段升级，请使用issue_quota_target_list中owner_open_id)
           example: "2088210888827370"
           type: string
         owner_type:
-          description: 额度所属者类型
+          deprecated: true
+          description: 额度所属者类型(字段升级，请使用issue_quota_target_list中owner_type字段)
           example: EMPLOYEE
           type: string
         platform:
-          description: 外部平台编码（通常为接入方大写英文缩写）
+          deprecated: true
+          description: 外部平台编码（通常为接入方大写英文缩写）(历史版本字段，不推荐使用)
           example: RJ
           type: string
         quota_type:
@@ -35362,7 +35165,8 @@ components:
           example: COUPON
           type: string
         quota_value:
-          description: 额度值，以（分）为单位
+          deprecated: true
+          description: 额度值，以（分）为单位(字段升级，请使用issue_quota_target_list中issue_quota字段)
           example: "50"
           type: string
         share_mode:
@@ -35384,6 +35188,11 @@ components:
           description: 发放批次id
           example: "2023030600152622370000007434"
           type: string
+        issue_quota_check_failed_list:
+          description: 额度发放明细检查错误列表，可根据报错信息修改发放明细列表
+          items:
+            $ref: '#/components/schemas/IssueQuotaCheckInfo'
+          type: array
         quota_id:
           description: 创建的额度ID
           example: "2023030600152622370000007434"
@@ -36376,7 +36185,8 @@ components:
           example: "2088000194958956"
           type: string
         adapter_type:
-          description: 制度适配范围
+          deprecated: true
+          description: 制度适配范围(请使用institution_scope_info中adapter_type)
           example: EMPLOYEE_ALL
           type: string
         agreement_no:
@@ -36416,6 +36226,8 @@ components:
           description: 制度名称
           example: 费用制度
           type: string
+        institution_scope_info:
+          $ref: '#/components/schemas/InstitutionScopeInfo'
         issue_rule_info_list:
           description: 发放规则列表
           items:
@@ -36426,19 +36238,22 @@ components:
           example: 0b26c12b16900047742372557ee431
           type: string
         owner_id_list:
-          description: 适配id列表
+          deprecated: true
+          description: 适配id列表(请使用institution_scope_info中owner_id_list)
           example: "[\"2088402266061144\",\"2088402266063146\"]"
           items:
             type: string
           type: array
         owner_open_id_list:
-          description: 适配开放id列表
+          deprecated: true
+          description: 适配开放id列表(仅存量使用员工支付宝id配置适配范围的场景需要该字段，新对接方案不推荐使用员工支付宝id)
           example: "[\"abcdxxxx\"]"
           items:
             type: string
           type: array
         owner_type:
-          description: 适配id类型
+          deprecated: true
+          description: 适配id类型(请使用institution_scope_info中owner_type)
           example: ENTERPRISE_PAY_UID
           type: string
         scene_type:
@@ -36849,6 +36664,7 @@ components:
           - INSTITUTION_MODIFY_FAIL
           - MODIFY_CONSULT_FAILED_ISSUE
           - MODIFY_CONSULT_FAILED_CONSUME
+          - RECORD_EXIST
           type: string
         links:
           description: 解决方案链接
@@ -36904,13 +36720,29 @@ components:
           description: 制度名称
           example: 费用制度
           type: string
+        modify_issue_rule_detail_info:
+          $ref: '#/components/schemas/ModifyIssueRuleDetailInfo'
+        modify_scope_info:
+          $ref: '#/components/schemas/ModifyScopeInfo'
+        modify_standard_detail_info:
+          $ref: '#/components/schemas/ModifyStandardDetailInfo'
       type: object
     AlipayEbppInvoiceInstitutionModifyResponseModel:
       properties:
+        issue_rule_id_info_list:
+          description: 新增发放规则时返回外部幂等id和发放规则id的映射关系
+          items:
+            $ref: '#/components/schemas/IssueRuleIdInfo'
+          type: array
         result:
           description: 修改是否成功
           example: true
           type: boolean
+        standard_id_info_list:
+          description: 新增使用规则后会返回外部幂等id和使用规则id的映射关系
+          items:
+            $ref: '#/components/schemas/StandardIdInfo'
+          type: array
       type: object
     AlipayEbppInvoiceInstitutionPageinfoQueryErrorResponseModel:
       properties:
@@ -43471,6 +43303,14 @@ components:
           description: 支付宝支付资金流水号，转账失败不返回。
           example: "20190801110070001506380000251556"
           type: string
+        receiver_open_id:
+          description: 收款方支付宝账号openid
+          example: 074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5
+          type: string
+        receiver_user_id:
+          description: 收款方支付宝账号uid
+          example: "2088828045603300"
+          type: string
         settle_serial_no:
           description: "金融机构发起签约类、支付类、差错类业务时，应为每笔业务分配唯一的交易流水号。31位交易流水号组成规则为：“8位日期”\
             +“16位序列号”+“1位预留位”+“6位控制位”，其中：\ta）“8位日期”为系统当前日期，ISODate格式：“YYYYMMDD”\t\
@@ -43496,6 +43336,10 @@ components:
         sub_order_status:
           description: 退款子单失败状态
           example: FAIL
+          type: string
+        sub_status:
+          description: 转账单据子状态，SUCCESS：二阶段转账领取成功；REFUNDED：二阶段转账退款
+          example: SUCCESS
           type: string
         trans_amount:
           description: 付款金额，收银台场景下付款成功后的支付金额，订单状态为SUCCESS才返回，其他状态不返回。付款金额，单位为元，精确到小数点后两位。
@@ -43661,6 +43505,8 @@ components:
           - PERM_RECEIVE_CUSTOMER_ALMS_LIMIT
           - PAYCARD_UNABLE_PAYMENT
           - PAYEE_USERINFO_ERROR
+          - NOT_SUPPORT_PAYER_ACCOUNT_TYPE
+          - USER_RISK_FREEZE
           type: string
         links:
           description: 解决方案链接
@@ -43786,6 +43632,10 @@ components:
           - ORDER_NOT_EXIST
           - ORDER_STATUS_INVALID
           - MAX_VISIT_LIMIT
+          - INVALID_AMOUNT
+          - REMARK_HAS_SENSITIVE_WORD
+          - CURRENT_ORDER_STATUS_NOT_ALLOW_REFUND_ERROR
+          - USER_CANCEL
           type: string
         links:
           description: 解决方案链接
@@ -43799,6 +43649,10 @@ components:
       type: object
     AlipayFundTransRefundModel:
       properties:
+        biz_scene:
+          description: 场景码
+          example: TWO_PHASE_TRANSFER_REFUND
+          type: string
         business_params:
           description: JSON格式，传递业务扩展参数，使用前请与支付宝工程师联系！
           example: "{\"MERCHANT_PAYER_ID\":\"1234567890\",\"MERCHANT_PAYER_PHONE:\"\
@@ -43815,6 +43669,10 @@ components:
         passback_params:
           description: 公用回传参数，如果请求时传递了该参数，则异步通知商户时会回传该参数。
           example: "{\"merchantBizType\":\"peerPay\"}"
+          type: string
+        product_code:
+          description: 产品码
+          example: TRANS_ACCOUNT_NO_PWD
           type: string
         refund_amount:
           description: "需要退款的金额，该金额不能大于订单金额,单位为元，支持两位小数"
@@ -44132,6 +43990,8 @@ components:
           - GLOBAL_USER_FORBBIDEN_RECIEVE
           - ACCOUNT_OPERATION_LIMIT
           - PAYER_UNABLE_PAYMENT
+          - EXCEED_LIMIT_INTERNAL_SM_AMOUNT
+          - ILLEGAL_STATUS_EXCEPTION
           type: string
         links:
           description: 解决方案链接
@@ -44200,6 +44060,10 @@ components:
           description: 转账金额，单位为元，默认为空，特殊场景提供。
           example: "12.01"
           type: string
+        link:
+          description: 访问链接，用于多阶段转账时，后续阶段跳转支付宝端内领取阵地使用
+          example: o:/pHxYBs7042zs 或復枝此消息打开zh i`怤保，来完成这笔转账  b:/I HU0r89 2022/05/15
+          type: string
         order_id:
           description: 支付宝转账订单号
           example: "20190801110070000006380000250621"
@@ -44222,6 +44086,10 @@ components:
         status:
           description: "转账单据状态。\tSUCCESS（该笔转账交易成功）：成功；\tFAIL：失败（具体失败原因请参见error_code以\
             及fail_reason返回值）；\tDEALING：处理中（转账到支付宝账户不涉及）；\tREFUND：退票（转账到支付宝账户不涉及）；"
+          example: SUCCESS
+          type: string
+        sub_status:
+          description: 转账单据子状态。 SUCCESS（二阶段转账到支付宝账户领取成功）： REFUNDED：退款（二阶段转账到支付宝账户退款）；
           example: SUCCESS
           type: string
         trans_date:
@@ -60181,6 +60049,7 @@ components:
           - MEMO_TRADENO_CHECK_FAIL
           - MINI_APP_VERSION_ITERATION_EXIST
           - MINIAPP_VERSION_NOT_EXSIT
+          - MINI_APP_RESTRICTED_AUDIT_CONTROL
           type: string
         links:
           description: 解决方案链接
@@ -61247,198 +61116,6 @@ components:
         commit_id:
           description: 商品提交生成的唯一标识，用于查询商品信息的审核状态
           example: "20220829000000000101"
-          type: string
-      type: object
-    AlipayOpenOperationOpenbizmockDeleteQueryErrorResponseModel:
-      properties:
-        code:
-          description: 错误码
-          enum:
-          - SYSTEM_ERROR
-          type: string
-        links:
-          description: 解决方案链接
-          type: string
-        message:
-          description: 错误描述
-          type: string
-      required:
-      - code
-      - message
-      type: object
-    AlipayOpenOperationOpenbizmockDeleteQueryResponseModel:
-      properties:
-        result:
-          description: test
-          example: test
-          type: string
-      type: object
-    AlipayOpenOperationOpenbizmockPatchQueryErrorResponseModel:
-      properties:
-        code:
-          description: 错误码
-          enum:
-          - SYSTEM_ERROR
-          - INVALID_PARAMETER
-          type: string
-        links:
-          description: 解决方案链接
-          type: string
-        message:
-          description: 错误描述
-          type: string
-      required:
-      - code
-      - message
-      type: object
-    AlipayOpenOperationOpenbizmockPatchQueryModel:
-      properties:
-        c_body:
-          description: test
-          example: test
-          type: string
-        complex_a:
-          $ref: '#/components/schemas/TestDemo'
-        complex_b:
-          $ref: '#/components/schemas/TestDemo'
-        complex_c:
-          $ref: '#/components/schemas/TestDemoWzw'
-        complex_d:
-          $ref: '#/components/schemas/TestDemoWzw'
-        id_type_modify_open_id:
-          description: "1"
-          example: "1"
-          type: string
-        id_typea:
-          description: id_type
-          example: id_type
-          type: string
-        price:
-          description: 元
-          example: "1.21"
-          type: string
-        uida:
-          description: "1"
-          example: "1"
-          type: string
-      type: object
-    AlipayOpenOperationOpenbizmockPatchQueryResponseModel:
-      properties:
-        result:
-          description: test
-          example: test
-          type: string
-      type: object
-    AlipayOpenOperationOpenbizmockPutQueryErrorResponseModel:
-      properties:
-        code:
-          description: 错误码
-          enum:
-          - SYSTEM_ERROR
-          type: string
-        links:
-          description: 解决方案链接
-          type: string
-        message:
-          description: 错误描述
-          type: string
-      required:
-      - code
-      - message
-      type: object
-    AlipayOpenOperationOpenbizmockPutQueryModel:
-      properties:
-        c_body:
-          description: test
-          example: test
-          type: string
-      type: object
-    AlipayOpenOperationOpenbizmockPutQueryResponseModel:
-      properties:
-        result:
-          description: test
-          example: test
-          type: string
-      type: object
-    AlipayOpenOperationOpenbizmockTestQueryErrorResponseModel:
-      properties:
-        code:
-          description: 错误码
-          enum:
-          - SYSTEM_ERROR
-          type: string
-        links:
-          description: 解决方案链接
-          type: string
-        message:
-          description: 错误描述
-          type: string
-      required:
-      - code
-      - message
-      type: object
-    AlipayOpenOperationOpenbizmockTestQueryModel:
-      properties:
-        fuza:
-          $ref: '#/components/schemas/TestDemoWzw'
-        out_open_id:
-          description: 哈哈
-          example: 074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5
-          type: string
-        u_test:
-          description: 哈哈
-          example: test
-          type: string
-      type: object
-    AlipayOpenOperationOpenbizmockTestQueryResponseModel:
-      properties:
-        out_open_id:
-          description: 哈哈
-          example: 074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5
-          type: string
-        out_test:
-          description: 哈哈
-          example: test
-          type: string
-      type: object
-    AlipayOpenOperationOpenbizmockTestpathkeyQueryErrorResponseModel:
-      properties:
-        code:
-          description: 错误码
-          enum:
-          - LALALA
-          - INVALID_PARAMETER
-          type: string
-        links:
-          description: 解决方案链接
-          type: string
-        message:
-          description: 错误描述
-          type: string
-      required:
-      - code
-      - message
-      type: object
-    AlipayOpenOperationOpenbizmockTestpathkeyQueryModel:
-      properties:
-        d:
-          description: "4"
-          example: d
-          type: string
-        e:
-          description: "1"
-          example: "1"
-          type: string
-        test_price:
-          description: "1"
-          example: "18.1111"
-          type: string
-      type: object
-    AlipayOpenOperationOpenbizmockTestpathkeyQueryResponseModel:
-      properties:
-        result:
-          description: 测试
-          example: success
           type: string
       type: object
     AlipayOpenPublicAccountCreateErrorResponseModel:
@@ -64537,7 +64214,7 @@ components:
             type: string
           type: array
         custom_keywords:
-          description: "自定义触发词，最多可配置6个，限1-8个中文字符。\t小程序直达不支持设置此项"
+          description: "自定义触发词，最多可配置10个，限1-8个中文字符。\t小程序直达不支持设置此项"
           example: "[\"自定义触发词\"]"
           items:
             type: string
@@ -71783,6 +71460,7 @@ components:
           - USER_AGREEMENT_UNSIGN_FAIL
           - USER_AGREEMENT_STATUS_IS_NOT_NORMAL
           - ILLEGAL_PARAMS
+          - MERCHANT_STATUS_IS_NOT_NORMAL
           type: string
         links:
           description: 解决方案链接
@@ -74044,6 +73722,12 @@ components:
           - SUBMIT_DIGITAL_POI_AUDIT_FAIL
           - SHOP_INDUSTRY_CODE_DUPLICATED
           - SHOP_INDUSTRY_REQUIRED_VALUE_NULL
+          - LOCATION_NOT_NULL
+          - SHOP_MODIFY_AUDITING
+          - SHOP_INDUSTRY_LICENSE_REQUIRED_BOTH
+          - SHOP_LICENSE_REQUIRED_NULL
+          - SHOP_INDUSTRY_VALUE_ERROR
+          - BUSINESS_LICENCE_INFO_REQUIRED
           type: string
         links:
           description: 解决方案链接
@@ -74312,6 +73996,7 @@ components:
           - SUBMIT_DIGITAL_POI_AUDIT_FAIL
           - SHOP_INDUSTRY_CODE_DUPLICATED
           - SHOP_INDUSTRY_REQUIRED_VALUE_NULL
+          - SHOP_MODIFY_AUDITING
           type: string
         links:
           description: 解决方案链接
@@ -75762,7 +75447,8 @@ components:
           description: 营业执照名称，需要与营业执照保持一致
           type: string
         license_no:
-          description: 营业执照号，部分小程序类目需要提交，参照https://docs.alipay.com/isv/10325中是否需要营业执照信息，如果不填默认采用当前小程序应用营业执照号。
+          description: 营业执照号，部分小程序类目需要提交，参照 <a href=‘https://opendocs.alipay.com/b/03al2m’>开放服务类目</a>
+            中是否需要营业执照信息，如果不填默认采用当前小程序应用营业执照号。
           type: string
         license_pic_list:
           description: 营业执照照片地址列表
@@ -75773,7 +75459,8 @@ components:
           description: 营业执有效期，格式为yyyy-MM-dd，9999-12-31表示长期
           type: string
         out_door_pic:
-          description: 门头照图片地址，部分小程序类目需要提交，参照https://docs.alipay.com/isv/10325中是否需要营业执照信息，如果不填默认采用当前小程序门头照图片
+          description: 门头照图片地址，部分小程序类目需要提交，参照 <a href=‘https://opendocs.alipay.com/b/03al2m’>开放服务类目</a>
+            中是否需要营业执照信息，如果不填默认采用当前小程序门头照图片
           type: string
       type: object
     AuthApiDTO:
@@ -79084,6 +78771,10 @@ components:
           description: 部门名称
           example: 产品部
           type: string
+        dept_charge_employee_id:
+          description: 部门负责人员工ID
+          example: "228420000000057942506"
+          type: string
         gmt_create:
           description: 创建时间
           example: 2022-06-14 17:15:17
@@ -79647,6 +79338,10 @@ components:
           description: 员工在企业人脸库的人脸唯一标识
           example: 2109b5e671aa3ff2eb4851816c65828f
           type: string
+        job_level_show:
+          description: 员工职级
+          example: S2
+          type: string
         mobile:
           description: 手机号码
           example: "13456782345"
@@ -79666,6 +79361,10 @@ components:
           items:
             type: string
           type: array
+        tl_employee_id:
+          description: 直属主管员工ID
+          example: "228420000000057942506"
+          type: string
         user_id:
           description: 用户ID（绑定支付宝账号的uid）
           example: "2088123454654356"
@@ -81415,6 +81114,23 @@ components:
           example: 餐补制度
           type: string
       type: object
+    InstitutionScopeInfo:
+      properties:
+        adapter_type:
+          description: 制度适用范围，支持配置全员、指定员工和指定部门
+          example: EMPLOYEE_SELECT
+          type: string
+        owner_id_list:
+          description: 适用范围归属id列表
+          example: "[\"2288004000000000\"]"
+          items:
+            type: string
+          type: array
+        owner_type:
+          description: 员工id类型
+          example: ENTERPRISE_PAY_UID
+          type: string
+      type: object
     IntactChargeInfo:
       properties:
         actual_amount:
@@ -82284,43 +82000,34 @@ components:
     IssueQuotaCheckInfo:
       properties:
         issue_quota:
-          description: 发放金额
-          example: "10"
+          description: 发放点券和余额时，单位为元，发放次卡时，单位为次
           type: string
         message:
           description: 校验结果的原因
-          example: 金额不能为负数
           type: string
         owner_id:
           description: 入参的 owner_id
-          example: "13055551515"
           type: string
         owner_open_id:
           description: 入参的  owner_open_id
-          example: abcdxxxx
           type: string
         owner_type:
           description: owner_type
-          example: PHONE
           type: string
         result:
           description: 校验结果
-          example: true
           type: boolean
         user_name:
           description: 用户姓名
-          example: 测试
           type: string
       type: object
     IssueRuleIdInfo:
       properties:
         issue_rule_id:
           description: 发放规则id
-          example: "2022031000152621000000000001"
           type: string
         outer_source_id:
           description: 外部发放规则id
-          example: "123456"
           type: string
       type: object
     IssueRuleInfo:
@@ -82371,25 +82078,19 @@ components:
     IssueTargetInfoContent:
       properties:
         issue_quota:
-          description: 发放金额
-          example: "10"
+          description: 当发放余额或点券时，单位为元，币种以创建制度时填写的currency为准，不填写默认为人民币。当发放类型为次卡时，单位为次。
           type: string
         owner_id:
-          description: 切换open_id前请使用：owner类型为PHONE时该字段表示员工手机号，owner类型为为EMPLOYEE时该字段表示为员工支付宝uid，owner类型为为ENTERPRISE_PAY_UID时该字段表示为员工企业码id
-          example: "13055551515"
+          description: 切换open_id前请使用：owner类型为PHONE时该字段表示员工手机号，owner类型为EMPLOYEE时该字段表示为员工支付宝uid，owner类型为ENTERPRISE_PAY_UID时该字段表示为员工企业码id，owner类型为ENTERPRISE时可不填，如果填写仅支持填企业id
           type: string
         owner_open_id:
-          description: 切换open_id后请使用：owner类型，PHONE为员工手机号，EMPLOYEE为员工open_id
-          example: abcdxxxx
+          description: 切换open_id后请使用：owner类型为PHONE时，填写员工手机号，EMPLOYEE时填写员工open_id
           type: string
         owner_type:
-          description: "owner类型，用来表示owner_id的类型;\tenterprise_id支持PHONE、ENTERPRISE_PAY_UID类\
-            型；account_id支持EMPLOYEE类型"
-          example: PHONE
+          description: owner类型，用来表示owner_id的类型
           type: string
         user_name:
           description: 员工姓名
-          example: 测试
           type: string
       type: object
     IsvAuthSceneInfo:
@@ -84554,6 +84255,46 @@ components:
           example: 申请人身份认证不通过
           type: string
       type: object
+    ModifyIssueRuleDetailInfo:
+      properties:
+        add_issue_rule_list:
+          description: 新增发放规则列表
+          items:
+            $ref: '#/components/schemas/IssueRuleInfo'
+          type: array
+        delete_issue_rule_id_list:
+          description: 删除的发放规则id列表
+          example: "[\"2024090500150000040000040033\"]"
+          items:
+            type: string
+          type: array
+        modify_issue_rule_list:
+          $ref: '#/components/schemas/ModifyIssueRuleInfo'
+      type: object
+    ModifyIssueRuleInfo:
+      properties:
+        effective_period:
+          description: 发放资产的有效时间段，该字段为空时，默认为不限制。当发放资产为余额时，仅支持设置为不限，当发放资产为点券时，可支持设置多种值。具体传值格式请参考文档
+            <a href="https://opendocs.alipay.com/pre-open/07nwcs">接入文档</a>
+          example: "{\\\"all\\\":true}"
+          type: string
+        issue_rule_id:
+          description: 发放规则id
+          example: '"2024090500152621040000040033"'
+          type: string
+        issue_rule_name:
+          description: 发放规则名称
+          example: 发放餐补
+          type: string
+        issue_type:
+          description: 额度发放周期
+          example: ISSUE_DAY
+          type: string
+        quota_type:
+          description: 发放规则发放的额度类型
+          example: COUPON
+          type: string
+      type: object
     ModifyQuotaDetails:
       properties:
         quota_amount:
@@ -84567,6 +84308,95 @@ components:
         role:
           description: "PAYER/PAYEE\t额度管控的角色，收or付款方，目前只支持付款方"
           example: PAYER
+          type: string
+      type: object
+    ModifyScopeInfo:
+      properties:
+        adapter_type:
+          description: 制度的适用范围类型
+          example: EMPLOYEE_ALL
+          type: string
+        add_owner_id_list:
+          description: 增加的归属id列表
+          example: "[\"1001004110381022\"]"
+          items:
+            type: string
+          type: array
+        delete_owner_id_list:
+          description: 删除归属id列表
+          example: "[\"2288000000040864\"]"
+          items:
+            type: string
+          type: array
+        owner_type:
+          description: 归属id类型
+          example: ENTERPRISE_PAY_UID
+          type: string
+      type: object
+    ModifyStandardDetailInfo:
+      properties:
+        add_standard_list:
+          description: 新增的使用规则列表
+          items:
+            $ref: '#/components/schemas/StandardInfo'
+          type: array
+        delete_standard_id_list:
+          description: 待删除的使用规则id列表
+          example: "[\"2024090500000000000000008502\"]"
+          items:
+            type: string
+          type: array
+        modify_standard_list:
+          description: 待修改的使用规则信息列表
+          items:
+            $ref: '#/components/schemas/ModifyStandardInfo'
+          type: array
+      type: object
+    ModifyStandardInfo:
+      properties:
+        add_condition_list:
+          description: 要添加的条件列表
+          items:
+            $ref: '#/components/schemas/StandardConditionInfo'
+          type: array
+        consume_mode:
+          description: 消费模式
+          example: COUPON_ONLY
+          type: string
+        delete_condition_id_list:
+          description: 待删除的条件id列表
+          example: "[\"2024090500152600000000008502\"]"
+          items:
+            type: string
+          type: array
+        modify_condition_list:
+          description: 修改的条件列表
+          items:
+            $ref: '#/components/schemas/StandardConditionInfo'
+          type: array
+        open_rule_id:
+          description: 使用规则绑定的开票规则id
+          example: '"2024090500152000040000008668"'
+          type: string
+        payment_policy:
+          description: 支付策略 当笔消费金额大于规则可用余额时，用于控制支付策略。COMBINATION表示支持因公资产和个人资产组合支付，PERSONAL表示整单个人支付。
+          example: COMBINATION
+          type: string
+        personal_qrcode_mode:
+          description: 个人收款码转账是否支持因公付。可选值：0（不支持）、1（支持）
+          example: 1
+          type: integer
+        standard_desc:
+          description: 使用规则描述
+          example: 到店就餐使用规则
+          type: string
+        standard_id:
+          description: 修改的使用规则id
+          example: '"2024090500152000000000008502"'
+          type: string
+        standard_name:
+          description: 使用规则名称
+          example: 到店规则
           type: string
       type: object
     MonitorHeartbeatSynErrorResponseModel:
@@ -86002,7 +85832,7 @@ components:
         identity_type:
           description: "参与方的标识类型，目前支持如下类型：\t1、ALIPAY_USER_ID 支付宝的会员ID\t2、ALIPAY_LOGON_ID：\
             支付宝登录号，支持邮箱和手机号格式\t3、ALIPAY_OPEN_ID：支付宝openid\t4、EXPRESS_DC_STFA：对公快捷银\
-            行卡"
+            行卡\t5、BANKCARD_ACCOUNT:银行卡账号"
           type: string
         merchant_user_info:
           description: "商户端的用户信息描述，目前可指定如下属性：\r\tmerchant_user_id：商户端的用户唯一ID\r\tmerchant_user_name：\
@@ -86812,7 +86642,10 @@ components:
     PromotePageProperty:
       properties:
         key:
-          description: 留资属性key
+          description: "留资属性key, 如:\t1. principal_name: 商家名称\t2. market_target_name:\
+            \ 营销目标\t3. plan_name: 计划名称\t4. plan_id: 计划id\t5. group_name: 单元名称\t6.\
+            \ group_id:  单元id\t7. ad_name: 创意名称\t8. creative_id: 创意id\t9. click_id:\
+            \ 点击id\t等"
           example: orderId
           type: string
         name:
@@ -86827,7 +86660,10 @@ components:
     PromotePagePropertyInstance:
       properties:
         key:
-          description: 留资属性key
+          description: "留资属性key, 如:\t1. principal_name: 商家名称\t2. market_target_name:\
+            \ 营销目标\t3. plan_name: 计划名称\t4. plan_id: 计划id\t5. group_name: 单元名称\t6.\
+            \ group_id:  单元id\t7. ad_name: 创意名称\t8. creative_id: 创意id\t9. click_id:\
+            \ 点击id\t等"
           example: orderId
           type: string
         name:
@@ -89892,11 +89728,9 @@ components:
       properties:
         outer_source_id:
           description: 外部使用规则id
-          example: "123456"
           type: string
         standard_id:
           description: 使用规则id
-          example: "2022020900152608000000000001"
           type: string
       type: object
     StandardInfo:
@@ -90549,65 +90383,6 @@ components:
         mini_app_id:
           description: 商家小程序appId
           example: "2018011111111111"
-          type: string
-      type: object
-    TestDemo:
-      properties:
-        a_open_id:
-          description: "1"
-          type: string
-        a_uid:
-          description: "1"
-          type: string
-        date_a:
-          description: test
-          items:
-            type: string
-          type: array
-        open_id:
-          deprecated: true
-          description: test(test废弃字段测试)
-          type: string
-        price_a:
-          description: test
-          items:
-            type: string
-          type: array
-        string_a:
-          description: test
-          items:
-            type: string
-          type: array
-        string_yingshe:
-          description: ttes
-          type: string
-        string_yingshe_1_open_id:
-          description: test
-          type: string
-        string_yingshe_2_openid:
-          description: test
-          type: string
-        uid:
-          deprecated: true
-          description: test(test废弃字段测试)
-          type: string
-      type: object
-    TestDemoWzw:
-      properties:
-        aaopen_id:
-          description: 哈哈
-          type: string
-        aauids:
-          description: 哈哈
-          type: string
-        id_type:
-          description: 哈哈
-          type: string
-        oid_open_id:
-          description: 哈哈
-          type: string
-        uid:
-          description: 哈哈
           type: string
       type: object
     Text:
@@ -93286,6 +93061,9 @@ components:
           - SIGN_MODE_NOT_MATCH
           - INVALID_PARAMETER
           - USER_EXIST_VALID_AGREEMENT
+          - EXIST_NOT_FINISHED_ORDER
+          - CREDIT_AGREEMENT_INVALID
+          - CREDIT_AGREEMENT_NOT_MATCH_MERCHANT
           type: string
         links:
           description: 解决方案链接
@@ -93303,6 +93081,10 @@ components:
           description: 芝麻外部类目
           example: credit_pay_test
           type: string
+        credit_agreement_id:
+          description: 芝麻开通/授权协议号，在用户开通芝麻先享服务后，由芝麻生成并返回给商户；只有当opertaion_type传入AGREEMENT_TRANSFER值是，该字段必传；其他场景不需要传入
+          example: ZMOP99202412130200900062227384
+          type: string
         deduct_agreement_no:
           description: 用户的代扣协议号
           example: "20215401139331610689"
@@ -93310,6 +93092,10 @@ components:
         extend_params:
           description: 业务扩展参数，Json格式
           example: "{\"key\":\"value\"}"
+          type: string
+        operation_type:
+          description: AGREEMENT_TRANSFER代表是存量先享协议的主体切换功能；其他场景不需要传入；默认为空；
+          example: AGREEMENT_TRANSFER
           type: string
         out_agreement_no:
           description: 商户外部协议号，不同的支付宝用户需要传递不同的外部单号
@@ -93329,6 +93115,10 @@ components:
         credit_agreement_id:
           description: 芝麻开通协议号
           example: ZMOP99202011240100520025162811
+          type: string
+        deduct_agreement_no:
+          description: 当operation_type==AGREEMENT_TRANSFER时，并且是迁移到小程序商家版时有值，其他情况下不返回
+          example: "202401202021929281"
           type: string
         out_agreement_no:
           description: 商户外部协议号
@@ -97797,34 +97587,6 @@ components:
       anyOf:
       - $ref: '#/components/schemas/CommonErrorType'
       - $ref: '#/components/schemas/AlipayOpenMiniWidgetGoodsUploadErrorResponseModel'
-    alipay_open_operation_openbizmock_delete_query_default_response:
-      anyOf:
-      - $ref: '#/components/schemas/CommonErrorType'
-      - $ref: '#/components/schemas/AlipayOpenOperationOpenbizmockDeleteQueryErrorResponseModel'
-    alipay_open_operation_openbizmock_patch_query_default_response:
-      anyOf:
-      - $ref: '#/components/schemas/CommonErrorType'
-      - $ref: '#/components/schemas/AlipayOpenOperationOpenbizmockPatchQueryErrorResponseModel'
-    alipay_open_operation_openbizmock_put_query_default_response:
-      anyOf:
-      - $ref: '#/components/schemas/CommonErrorType'
-      - $ref: '#/components/schemas/AlipayOpenOperationOpenbizmockPutQueryErrorResponseModel'
-    alipay_open_operation_openbizmock_test_query_default_response:
-      anyOf:
-      - $ref: '#/components/schemas/CommonErrorType'
-      - $ref: '#/components/schemas/AlipayOpenOperationOpenbizmockTestQueryErrorResponseModel'
-    alipay_open_operation_openbizmock_testpathkey_query_request:
-      properties:
-        data:
-          $ref: '#/components/schemas/AlipayOpenOperationOpenbizmockTestpathkeyQueryModel'
-        f:
-          format: binary
-          type: string
-      type: object
-    alipay_open_operation_openbizmock_testpathkey_query_default_response:
-      anyOf:
-      - $ref: '#/components/schemas/CommonErrorType'
-      - $ref: '#/components/schemas/AlipayOpenOperationOpenbizmockTestpathkeyQueryErrorResponseModel'
     alipay_open_public_account_create_default_response:
       anyOf:
       - $ref: '#/components/schemas/CommonErrorType'

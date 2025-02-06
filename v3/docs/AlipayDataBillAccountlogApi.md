@@ -38,7 +38,7 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayDataBillAccountlogApi apiInstance = new AlipayDataBillAccountlogApi(defaultClient);
-    String startTime = "2019-01-01 00:00:00"; // String | 账务流水创建时间的起始范围
+    String startTime = "2019-01-01 00:00:00"; // String | 账务流水创建时间的起始范围。只能查询一年内的记录
     String endTime = "2019-01-02 00:00:00"; // String | 账务流水创建时间的结束范围。与起始时间间隔不超过31天。查询结果为起始时间至结束时间的左闭右开区间
     String alipayOrderNo = "20190101***"; // String | 支付宝订单号，通过支付宝订单号精确查询相关的流水明细，商户订单号与支付宝订单号互斥
     String merchantOrderNo = "TX***"; // String | 商户订单号，通过商户订单号精确查询相关的流水明细，商户订单号与支付宝订单号互斥
@@ -66,7 +66,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **startTime** | **String**| 账务流水创建时间的起始范围 | [optional] |
+| **startTime** | **String**| 账务流水创建时间的起始范围。只能查询一年内的记录 | [optional] |
 | **endTime** | **String**| 账务流水创建时间的结束范围。与起始时间间隔不超过31天。查询结果为起始时间至结束时间的左闭右开区间 | [optional] |
 | **alipayOrderNo** | **String**| 支付宝订单号，通过支付宝订单号精确查询相关的流水明细，商户订单号与支付宝订单号互斥 | [optional] |
 | **merchantOrderNo** | **String**| 商户订单号，通过商户订单号精确查询相关的流水明细，商户订单号与支付宝订单号互斥 | [optional] |
