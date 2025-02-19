@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class SearchBrandItems extends AlipayObject {
 
-	private static final long serialVersionUID = 8698327659354291121L;
+	private static final long serialVersionUID = 8343874175574881414L;
 
 	/**
 	 * 品牌box状态

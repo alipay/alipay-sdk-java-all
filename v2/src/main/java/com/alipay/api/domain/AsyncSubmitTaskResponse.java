@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AsyncSubmitTaskResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 1718555677491885423L;
+	private static final long serialVersionUID = 5589614528574838149L;
 
 	/**
 	 * 本次任务的id，后续使用查询接口以该 id 作为参数查询任务的执行结果

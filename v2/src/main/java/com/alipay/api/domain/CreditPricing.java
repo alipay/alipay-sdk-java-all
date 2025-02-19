@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CreditPricing extends AlipayObject {
 
-	private static final long serialVersionUID = 1418744465229515987L;
+	private static final long serialVersionUID = 5446431534162464962L;
 
 	/**
 	 * 年利率，如为8%，则为0.08

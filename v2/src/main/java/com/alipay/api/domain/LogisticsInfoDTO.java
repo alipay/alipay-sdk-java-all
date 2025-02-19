@@ -9,11 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物流信息模型
  *
  * @author auto create
- * @since 1.0, 2024-08-24 21:07:16
+ * @since 1.0, 2025-02-19 16:55:57
  */
 public class LogisticsInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4325613643636268648L;
+	private static final long serialVersionUID = 2178173574448864478L;
+
+	/**
+	 * 配送时间,格式为 yyyy-MM-dd HH:mm:ss
+	 */
+	@ApiField("delivery_end_time")
+	private Date deliveryEndTime;
+
+	/**
+	 * 配送时间,格式为 yyyy-MM-dd HH:mm:ss
+	 */
+	@ApiField("delivery_start_time")
+	private Date deliveryStartTime;
 
 	/**
 	 * 配送时间,格式为 yyyy-MM-dd HH:mm:ss
@@ -26,6 +38,20 @@ public class LogisticsInfoDTO extends AlipayObject {
 	 */
 	@ApiField("delivery_type")
 	private String deliveryType;
+
+	public Date getDeliveryEndTime() {
+		return this.deliveryEndTime;
+	}
+	public void setDeliveryEndTime(Date deliveryEndTime) {
+		this.deliveryEndTime = deliveryEndTime;
+	}
+
+	public Date getDeliveryStartTime() {
+		return this.deliveryStartTime;
+	}
+	public void setDeliveryStartTime(Date deliveryStartTime) {
+		this.deliveryStartTime = deliveryStartTime;
+	}
 
 	public Date getDeliveryTime() {
 		return this.deliveryTime;

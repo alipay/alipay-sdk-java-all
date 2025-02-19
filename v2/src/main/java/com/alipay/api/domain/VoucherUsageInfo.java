@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VoucherUsageInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2113628945828893775L;
+	private static final long serialVersionUID = 2167785286925286559L;
 
 	/**
 	 * 点击优惠券「去使用」按钮，可以使用优惠券的地址。一般为小程序页面地址。

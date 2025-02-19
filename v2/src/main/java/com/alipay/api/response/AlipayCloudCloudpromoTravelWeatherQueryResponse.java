@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudCloudpromoTravelWeatherQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2822924464674455562L;
+	private static final long serialVersionUID = 3859337996811417172L;
 
 	/** 
 	 * 天气结构

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TicketQRCode extends AlipayObject {
 
-	private static final long serialVersionUID = 7759155175936778353L;
+	private static final long serialVersionUID = 4581818394726816422L;
 
 	/**
 	 * 票 、码的描述

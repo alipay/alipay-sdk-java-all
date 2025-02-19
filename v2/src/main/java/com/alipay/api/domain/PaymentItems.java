@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PaymentItems extends AlipayObject {
 
-	private static final long serialVersionUID = 2297831855766597517L;
+	private static final long serialVersionUID = 5371915918411439985L;
 
 	/**
 	 * is goods allowed partial payment

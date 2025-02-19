@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaCustomerZmcardIdentityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2657826249692272254L;
+	private static final long serialVersionUID = 6624836628825574834L;
 
 	/** 
 	 * 通过该URL可以跳转到芝麻证身份账户详情页面，有效期10分钟。如果是主态访问，已授权的情况下才会返回该链接；如果是客态访问，持证人已授权且身份验证通过的情况下才会返回该链接

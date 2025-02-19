@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 分账条款
  *
  * @author auto create
- * @since 1.0, 2025-01-07 13:48:44
+ * @since 1.0, 2025-02-19 16:55:56
  */
 public class AllocAmountInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3683435275992587659L;
+	private static final long serialVersionUID = 8138978663396542871L;
 
 	/**
 	 * 买断分账计划

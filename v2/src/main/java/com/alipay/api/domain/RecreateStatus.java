@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RecreateStatus extends AlipayObject {
 
-	private static final long serialVersionUID = 8738983876666573979L;
+	private static final long serialVersionUID = 2135912659534244894L;
 
 	/**
 	 * 实例创建原因

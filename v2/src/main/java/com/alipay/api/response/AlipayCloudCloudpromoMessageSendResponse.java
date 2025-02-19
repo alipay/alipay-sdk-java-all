@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudCloudpromoMessageSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5765128875653715668L;
+	private static final long serialVersionUID = 1393778821557829991L;
 
 	/** 
 	 * 短信发送回执id;可根据发送回执id在接口techrisk.innovate.message.details.query中查询具体的发送状态。

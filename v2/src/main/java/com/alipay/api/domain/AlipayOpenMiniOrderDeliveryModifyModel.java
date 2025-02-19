@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 履约状态变更接口
  *
  * @author auto create
- * @since 1.0, 2024-10-11 19:41:17
+ * @since 1.0, 2025-02-19 17:23:20
  */
 public class AlipayOpenMiniOrderDeliveryModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4639613348274167623L;
+	private static final long serialVersionUID = 1144499571182233762L;
 
 	/**
 	 * 需要修改的活动信息列表
@@ -52,6 +52,12 @@ public class AlipayOpenMiniOrderDeliveryModifyModel extends AlipayObject {
 	 */
 	@ApiField("out_order_id")
 	private String outOrderId;
+
+	/**
+	 * 订单价格修改信息
+	 */
+	@ApiField("price_info")
+	private PriceInfoModifyDTO priceInfo;
 
 	/**
 	 * 订单的履约状态
@@ -118,6 +124,13 @@ public class AlipayOpenMiniOrderDeliveryModifyModel extends AlipayObject {
 	}
 	public void setOutOrderId(String outOrderId) {
 		this.outOrderId = outOrderId;
+	}
+
+	public PriceInfoModifyDTO getPriceInfo() {
+		return this.priceInfo;
+	}
+	public void setPriceInfo(PriceInfoModifyDTO priceInfo) {
+		this.priceInfo = priceInfo;
 	}
 
 	public String getStatus() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankCreditCreditriskGuarschemeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6384545435695132732L;
+	private static final long serialVersionUID = 4122118697487914676L;
 
 	/**
 	 * 担保方案查询类型，TYZBL：通用自保理业务场景

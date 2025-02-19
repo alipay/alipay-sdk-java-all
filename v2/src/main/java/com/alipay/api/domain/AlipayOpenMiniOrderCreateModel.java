@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 交易组件业务单创建
  *
  * @author auto create
- * @since 1.0, 2025-01-11 21:10:51
+ * @since 1.0, 2025-02-19 16:55:57
  */
 public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3613457165117663974L;
+	private static final long serialVersionUID = 1369671867847741967L;
 
 	/**
 	 * 订单收货地址
@@ -102,6 +102,12 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 	private FundAuthFreezeInfoDTO fundAuthFreezeInfo;
 
 	/**
+	 * 订单备注
+	 */
+	@ApiField("memo")
+	private String memo;
+
+	/**
 	 * 订单类型
 	 */
 	@ApiField("merchant_biz_type")
@@ -136,6 +142,12 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 	 */
 	@ApiField("seller_id")
 	private String sellerId;
+
+	/**
+	 * 发货地址信息
+	 */
+	@ApiField("send_address_info")
+	private MiniOrderAddressInfoDTO sendAddressInfo;
 
 	/**
 	 * 签约资商通直付通平台商分账产品后，下单时传入平台模式，smid必传；此模式下支持服务商派单模式
@@ -292,6 +304,13 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 		this.fundAuthFreezeInfo = fundAuthFreezeInfo;
 	}
 
+	public String getMemo() {
+		return this.memo;
+	}
+	public void setMemo(String memo) {
+		this.memo = memo;
+	}
+
 	public String getMerchantBizType() {
 		return this.merchantBizType;
 	}
@@ -332,6 +351,13 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 	}
 	public void setSellerId(String sellerId) {
 		this.sellerId = sellerId;
+	}
+
+	public MiniOrderAddressInfoDTO getSendAddressInfo() {
+		return this.sendAddressInfo;
+	}
+	public void setSendAddressInfo(MiniOrderAddressInfoDTO sendAddressInfo) {
+		this.sendAddressInfo = sendAddressInfo;
 	}
 
 	public String getServiceProviderModel() {

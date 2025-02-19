@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DtBankPreferenceSingleRule extends AlipayObject {
 
-	private static final long serialVersionUID = 4128922199861995611L;
+	private static final long serialVersionUID = 8494288669341311639L;
 
 	/**
 	 * 定额立减金额，单位分

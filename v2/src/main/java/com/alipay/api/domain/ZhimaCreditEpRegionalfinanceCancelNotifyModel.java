@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCreditEpRegionalfinanceCancelNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5598593381131181611L;
+	private static final long serialVersionUID = 4367615287266658859L;
 
 	/**
 	 * 金融产品code码，接口提供方分配。不同的机构的金融产品code码不同

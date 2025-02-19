@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportEtcenterpriseWaybillUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7472669397511741266L;
+	private static final long serialVersionUID = 5713391666486982374L;
 
 	/**
 	 * 支付宝企业id

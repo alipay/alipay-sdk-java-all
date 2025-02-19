@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ChatLocation extends AlipayObject {
 
-	private static final long serialVersionUID = 7548992999666189316L;
+	private static final long serialVersionUID = 5137159263513538481L;
 
 	/**
 	 * 地理位置纬度，当用户的query需要位置信息，例如附近点单、查询附近充电桩等场景时候，则该参数必填，单位为度。在其他不涉及位置信息的接口时选填。

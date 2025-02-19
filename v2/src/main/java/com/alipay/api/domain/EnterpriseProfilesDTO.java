@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EnterpriseProfilesDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7787732346833532394L;
+	private static final long serialVersionUID = 8472697441761778366L;
 
 	/**
 	 * 是否需要自动创建企业人脸库，适用于对接团餐刷脸付、门禁刷脸通行等场景；<br/>

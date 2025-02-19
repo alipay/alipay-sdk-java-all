@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.order.delivery.modify request
  * 
  * @author auto create
- * @since 1.0, 2025-02-07 21:20:21
+ * @since 1.0, 2025-02-19 17:27:23
  */
 public class AlipayOpenMiniOrderDeliveryModifyRequest implements AlipayRequest<AlipayOpenMiniOrderDeliveryModifyResponse> {
 

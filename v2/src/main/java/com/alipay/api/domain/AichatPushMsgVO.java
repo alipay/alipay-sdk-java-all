@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AichatPushMsgVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6664954368444465678L;
+	private static final long serialVersionUID = 7831554695757621593L;
 
 	/**
 	 * 待推送的消息内容

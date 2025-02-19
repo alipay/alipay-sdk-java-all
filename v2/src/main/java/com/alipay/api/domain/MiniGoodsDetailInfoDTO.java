@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品列表信息模型
  *
  * @author auto create
- * @since 1.0, 2024-08-24 21:07:15
+ * @since 1.0, 2025-02-19 16:55:56
  */
 public class MiniGoodsDetailInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4747747828694461378L;
+	private static final long serialVersionUID = 6723438759534571382L;
 
 	/**
 	 * 活动信息
@@ -92,6 +92,18 @@ public class MiniGoodsDetailInfoDTO extends AlipayObject {
 	private ItemInstallmentInfoDTO itemInstallmentInfo;
 
 	/**
+	 * 最大售价，单位：元，保留两位小数
+	 */
+	@ApiField("max_sale_price")
+	private String maxSalePrice;
+
+	/**
+	 * 最低售价，单位：元，保留两位小数
+	 */
+	@ApiField("min_sale_price")
+	private String minSalePrice;
+
+	/**
 	 * 商户侧商品id，用于公域场景结算，会影响主播归因。私域场景无需传入，公域场景未传入会影响后续结算
 	 */
 	@ApiField("out_item_id")
@@ -108,6 +120,12 @@ public class MiniGoodsDetailInfoDTO extends AlipayObject {
 	 */
 	@ApiField("platform_item_version_id")
 	private String platformItemVersionId;
+
+	/**
+	 * 默认值：FIXED
+	 */
+	@ApiField("price_mode")
+	private String priceMode;
 
 	/**
 	 * 租金信息，租赁商品特有
@@ -230,6 +248,20 @@ item_discount使用场景：同时购买多件商品时存在优惠，传入优�
 		this.itemInstallmentInfo = itemInstallmentInfo;
 	}
 
+	public String getMaxSalePrice() {
+		return this.maxSalePrice;
+	}
+	public void setMaxSalePrice(String maxSalePrice) {
+		this.maxSalePrice = maxSalePrice;
+	}
+
+	public String getMinSalePrice() {
+		return this.minSalePrice;
+	}
+	public void setMinSalePrice(String minSalePrice) {
+		this.minSalePrice = minSalePrice;
+	}
+
 	public String getOutItemId() {
 		return this.outItemId;
 	}
@@ -249,6 +281,13 @@ item_discount使用场景：同时购买多件商品时存在优惠，传入优�
 	}
 	public void setPlatformItemVersionId(String platformItemVersionId) {
 		this.platformItemVersionId = platformItemVersionId;
+	}
+
+	public String getPriceMode() {
+		return this.priceMode;
+	}
+	public void setPriceMode(String priceMode) {
+		this.priceMode = priceMode;
 	}
 
 	public RentInfoDTO getRentInfo() {

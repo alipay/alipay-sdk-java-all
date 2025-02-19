@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenAppRentroomAreaModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8236414891166272479L;
+	private static final long serialVersionUID = 8628799859333817836L;
 
 	/** 
 	 * 小区ID

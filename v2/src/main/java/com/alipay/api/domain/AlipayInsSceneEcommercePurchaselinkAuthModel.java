@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayInsSceneEcommercePurchaselinkAuthModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5885491643973832423L;
+	private static final long serialVersionUID = 2348547267494173648L;
 
 	/**
 	 * 至少订购天数

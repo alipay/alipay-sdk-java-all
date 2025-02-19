@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class IntelligentGuideTradeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3889838167232833277L;
+	private static final long serialVersionUID = 4195318626641554813L;
 
 	/**
 	 * 商户在口碑侧的门店id，校验纯数字，28位

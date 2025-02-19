@@ -1,5 +1,6 @@
 package com.alipay.api.response;
 
+import java.util.Date;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
@@ -14,11 +15,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.order.aftersale.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-02-14 14:07:11
+ * @since 1.0, 2025-02-19 17:32:23
  */
 public class AlipayOpenMiniOrderAftersaleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7257378273817177694L;
+	private static final long serialVersionUID = 6622879144177334369L;
 
 	/** 
 	 * 售后单触发类型
@@ -63,6 +64,12 @@ public class AlipayOpenMiniOrderAftersaleQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("apply_refund_amount")
 	private String applyRefundAmount;
+
+	/** 
+	 * 创建时间，yyyy-MM-dd HH:mm:ss
+	 */
+	@ApiField("create_time")
+	private Date createTime;
 
 	/** 
 	 * 最终退款金额，单位：元,精确到小数点后两位
@@ -167,6 +174,13 @@ public class AlipayOpenMiniOrderAftersaleQueryResponse extends AlipayResponse {
 	}
 	public String getApplyRefundAmount( ) {
 		return this.applyRefundAmount;
+	}
+
+	public void setCreateTime(Date createTime) {
+		this.createTime = createTime;
+	}
+	public Date getCreateTime( ) {
+		return this.createTime;
 	}
 
 	public void setFinallyRefundAmount(String finallyRefundAmount) {

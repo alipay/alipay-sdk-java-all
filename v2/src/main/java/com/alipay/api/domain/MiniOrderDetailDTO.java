@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单详情模型
  *
  * @author auto create
- * @since 1.0, 2024-11-26 13:18:04
+ * @since 1.0, 2025-02-19 16:55:56
  */
 public class MiniOrderDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2824686264362696346L;
+	private static final long serialVersionUID = 5495971457752468966L;
 
 	/**
 	 * 商品详细信息

@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayIserviceCcmServicerecordCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6843771834352744262L;
+	private static final long serialVersionUID = 6216694326912185184L;
 
 	/**
 	 * 来电唯一标识
