@@ -1,7 +1,7 @@
 # alipay-sdk-java-v3
 
 支付宝开放平台API
-- API version: 2025-02-06
+- API version: 2025-02-19
 
 支付宝开放平台v3协议文档
 
@@ -55,7 +55,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>com.alipay.sdk</groupId>
   <artifactId>alipay-sdk-java-v3</artifactId>
-  <version>3.1.31.ALL</version>
+  <version>3.1.35.ALL</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -71,7 +71,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "com.alipay.sdk:alipay-sdk-java-v3:3.1.31.ALL"
+     implementation "com.alipay.sdk:alipay-sdk-java-v3:3.1.35.ALL"
   }
 ```
 
@@ -85,7 +85,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/alipay-sdk-java-v3-3.1.31.ALL.jar`
+* `target/alipay-sdk-java-v3-3.1.35.ALL.jar`
 * `target/lib/*.jar`
 
 ## Getting Started

@@ -5,7 +5,7 @@ info:
     url: https://opendocs.alipay.com/open-v3/053sd1
   description: 支付宝开放平台v3协议文档
   title: 支付宝开放平台API
-  version: 2025-02-06
+  version: 2025-02-19
 servers:
 - description: Production server
   url: https://openapi.alipay.com
@@ -35243,7 +35243,7 @@ components:
           example: "20215425001112341234"
           type: string
         amount:
-          description: 变更的金额/余额，以（分）为单位，当变更的资产类型为次卡时，当前的单位为次
+          description: 变更的金额/余额，日元或者韩元以（元）为单位，其他币种以（分）为单位，当变更的资产类型为次卡时，单位为次
           example: "10"
           type: string
         enterprise_id:
@@ -35255,7 +35255,8 @@ components:
           example: TN00000000000001
           type: string
         platform:
-          description: 外部平台编码
+          deprecated: true
+          description: 外部平台编码(历史字段，不推荐使用)
           example: RJ
           type: string
         quota_id:
@@ -42948,6 +42949,7 @@ components:
           - ILLEGAL_ARGUMENT
           - CONSULT_MEMBER_FAIL
           - SYSTEM_ERROR
+          - QUERY_USER_INFO_FAIL
           type: string
         links:
           description: 解决方案链接
@@ -70573,6 +70575,7 @@ components:
           - ACQ.REFUND_ACCOUNT_NOT_EXIST
           - ACQ.CUSTOMER_VALIDATE_ERROR
           - ACQ.REFUND_ROYALTY_PAYEE_ACCOUNT_NOT_EXIST
+          - ACQ.REFUNDALLOC_UNAUTH_LIMIT
           type: string
         links:
           description: 解决方案链接
@@ -93210,8 +93213,8 @@ components:
     ZhimaCreditPayafteruseCreditbizorderOrderModel:
       properties:
         amount_type:
-          description: 只有当传递了order_amount时，该参数才有意义； 1）该参数不传时，默认为ORDER_AMOUNT。 2）传ORDER_AMOUNT时，表示order_amount传入的金额为后付金额，在发起扣款时，最大扣款支付金额为order_amount传入的值；
-            3）传RISK_AMOUNT时，表示ORDER_AMOUNT传入的金额为风险预估金额，在发起扣款时，最大扣款支付金额为商户签约时约定的上限额度。
+          description: 只有当传递了order_amount时，该参数才有意义； 1）该参数不传时，默认为ORDER_AMOUNT。 2）传ORDER_AMOUNT时，表示order_amount传入的金额为后付金额，在发起扣款时，最大扣款支付金额为order_amount传入的值（取值单位为元）；
+            3）传RISK_AMOUNT时，表示order_amount传入的金额为风险预估金额，在发起扣款时，最大扣款支付金额为商户签约时约定的上限额度（取值单位为元）。
           example: RISK_AMOUNT
           type: string
         body:
@@ -93222,9 +93225,17 @@ components:
           description: 芝麻外部类目，芝麻先享接入无差异化风控诉求可不传
           example: credit_pay_after_use
           type: string
+        commercial_sub_mode:
+          description: 业务子模式。默认的单次付模式无需传入，阶段付模式传入以区分是分次还是分期子模式。
+          example: STAGE_TIMES_PAYMENT
+          type: string
         credit_agreement_id:
           description: 芝麻开通协议号
           example: ZMOP99202011240100520025162811
+          type: string
+        credit_commercial_mode:
+          description: 信用业务模式，不填默认为单次扣款模式。阶段付模式为STAGE_PAYMENT，其它模式请根据对应的技术支持文档传入
+          example: STAGE_PAYMENT
           type: string
         extend_params:
           description: 业务扩展参数
@@ -93238,9 +93249,17 @@ components:
           description: 商户外部订单号，保证不重复
           example: out00120312323232
           type: string
+        payment_total_times:
+          description: 多阶段订单次数，业务模式为阶段付模式下时需传入
+          example: "12"
+          type: string
         product_code:
           description: 产品码，不传默认为CREDIT_PAY_AFTER_USE
           example: CREDIT_PAY_AFTER_USE
+          type: string
+        stage_period_type:
+          description: 阶段付分期类型。阶段付模式，且子业务模式为分期模式下需要传入，分次不需要
+          example: MONTH
           type: string
         subject:
           description: "订单标题。\t注意：不可使用特殊字符，如 /，=，& 等。"

@@ -4,7 +4,7 @@ apply plugin: 'java'
 apply plugin: 'com.diffplug.spotless'
 
 group = 'com.alipay.sdk'
-version = '3.1.31.ALL'
+version = '3.1.35.ALL'
 
 buildscript {
     repositories {
