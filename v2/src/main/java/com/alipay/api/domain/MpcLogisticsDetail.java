@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MpcLogisticsDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7625782876873591697L;
+	private static final long serialVersionUID = 6787237312481712365L;
 
 	/**
 	 * 物流发生时间

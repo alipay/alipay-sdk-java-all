@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用户资质信息
  *
  * @author auto create
- * @since 1.0, 2024-12-06 16:56:56
+ * @since 1.0, 2025-02-10 15:16:37
  */
 public class CommonMerchantLicenseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2162658417592878489L;
+	private static final long serialVersionUID = 1492443811479183698L;
 
 	/**
 	 * 证件号，比如统一社会信用代码、登记管理部门代码、机构类型代码、行政区划码、主体识别码和校验码等

@@ -11,11 +11,19 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.env.get response.
  * 
  * @author auto create
- * @since 1.0, 2025-01-22 16:50:50
+ * @since 1.0, 2025-02-07 17:08:53
  */
 public class AlipayCloudCloudbaseEnvGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8153685829896368975L;
+	private static final long serialVersionUID = 8637518956839975599L;
+
+	/** 
+	 * 付费方式
+ - 套餐
+ - 计量计费
+	 */
+	@ApiField("billing_model")
+	private String billingModel;
 
 	/** 
 	 * api网关AK
@@ -55,6 +63,12 @@ public class AlipayCloudCloudbaseEnvGetResponse extends AlipayResponse {
 	private String name;
 
 	/** 
+	 * 资源包创建时间
+	 */
+	@ApiField("pkg_create_time")
+	private String pkgCreateTime;
+
+	/** 
 	 * 资源包到期时间
 	 */
 	@ApiField("pkg_expiration_time")
@@ -67,10 +81,27 @@ public class AlipayCloudCloudbaseEnvGetResponse extends AlipayResponse {
 	private String region;
 
 	/** 
+	 * 环境套餐资源包的状态
+	 */
+	@ApiField("resource_pkg_status")
+	private String resourcePkgStatus;
+
+	/** 
 	 * 环境状态
- - INIT
- - ENABLE
- - SYSTEM_DISABLE
+   - INIT
+   - ACTIVATING_UNPAY
+   - ACTIVATING_PAY
+   - ENABLE("正常")
+   - MANUAL_DISABLE
+   - USER_DISABLE
+   - SYSTEM_DISABLE
+   - DELETED
+   - DELETING
+   - SYSTEM_SUSPENDING
+   - RECOVERING
+   - REFUNDING
+   - REFUND_SUCCESS
+   - REFUND_FAILED
 	 */
 	@ApiField("status")
 	private String status;
@@ -80,6 +111,13 @@ public class AlipayCloudCloudbaseEnvGetResponse extends AlipayResponse {
 	 */
 	@ApiField("workspace_pkg_name")
 	private String workspacePkgName;
+
+	public void setBillingModel(String billingModel) {
+		this.billingModel = billingModel;
+	}
+	public String getBillingModel( ) {
+		return this.billingModel;
+	}
 
 	public void setCloudbaseApiGatewayAk(String cloudbaseApiGatewayAk) {
 		this.cloudbaseApiGatewayAk = cloudbaseApiGatewayAk;
@@ -123,6 +161,13 @@ public class AlipayCloudCloudbaseEnvGetResponse extends AlipayResponse {
 		return this.name;
 	}
 
+	public void setPkgCreateTime(String pkgCreateTime) {
+		this.pkgCreateTime = pkgCreateTime;
+	}
+	public String getPkgCreateTime( ) {
+		return this.pkgCreateTime;
+	}
+
 	public void setPkgExpirationTime(String pkgExpirationTime) {
 		this.pkgExpirationTime = pkgExpirationTime;
 	}
@@ -135,6 +180,13 @@ public class AlipayCloudCloudbaseEnvGetResponse extends AlipayResponse {
 	}
 	public String getRegion( ) {
 		return this.region;
+	}
+
+	public void setResourcePkgStatus(String resourcePkgStatus) {
+		this.resourcePkgStatus = resourcePkgStatus;
+	}
+	public String getResourcePkgStatus( ) {
+		return this.resourcePkgStatus;
 	}
 
 	public void setStatus(String status) {

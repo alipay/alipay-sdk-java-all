@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFinancialnetAuthEcsignSealAuthModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6668865437516142636L;
+	private static final long serialVersionUID = 4288655911272347529L;
 
 	/**
 	 * 经过认证的支付宝账号

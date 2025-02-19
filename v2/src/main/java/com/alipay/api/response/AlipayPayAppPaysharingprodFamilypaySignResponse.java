@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPayAppPaysharingprodFamilypaySignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4753714151724929619L;
+	private static final long serialVersionUID = 6858584114749248391L;
 
 	/** 
 	 * 签约授权单号，业务方可通过这个单号进行查询

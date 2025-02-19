@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NPromoSubActivity extends AlipayObject {
 
-	private static final long serialVersionUID = 8155662896239579517L;
+	private static final long serialVersionUID = 8296249886547967329L;
 
 	/**
 	 * 当期任务正常可推进时间，具体到小时。

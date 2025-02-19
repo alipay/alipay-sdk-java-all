@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 协同任务信息
  *
  * @author auto create
- * @since 1.0, 2025-01-27 22:47:00
+ * @since 1.0, 2025-02-18 10:48:16
  */
 public class CollaborateTask extends AlipayObject {
 
-	private static final long serialVersionUID = 7281537262439947451L;
+	private static final long serialVersionUID = 3563189535388196144L;
 
 	/**
 	 * 活动描述，用户参与活动时返回。
@@ -52,6 +52,12 @@ public class CollaborateTask extends AlipayObject {
 	 */
 	@ApiField("city_name")
 	private String cityName;
+
+	/**
+	 * pull接口返回脱敏后的联系人姓名，如刘*,confirm接口确认商家有意愿安装，则返回完整的联系人姓名。
+	 */
+	@ApiField("contact_name")
+	private String contactName;
 
 	/**
 	 * 任务分配的时间。
@@ -180,6 +186,13 @@ public class CollaborateTask extends AlipayObject {
 	}
 	public void setCityName(String cityName) {
 		this.cityName = cityName;
+	}
+
+	public String getContactName() {
+		return this.contactName;
+	}
+	public void setContactName(String contactName) {
+		this.contactName = contactName;
 	}
 
 	public Date getDispatchedTime() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySecurityProdEdgeColorQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8374917922558872472L;
+	private static final long serialVersionUID = 1242396572793776397L;
 
 	/**
 	 * 该参数为业务需要验签的报文的哈希值

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗健康档案数据保存接口
  *
  * @author auto create
- * @since 1.0, 2024-11-27 15:20:08
+ * @since 1.0, 2025-02-17 17:47:13
  */
 public class AlipayCommerceMedicalHealthArchiveSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8861982323263435683L;
+	private static final long serialVersionUID = 8572391385332338852L;
 
 	/**
 	 * 会话ID
@@ -42,6 +42,12 @@ public class AlipayCommerceMedicalHealthArchiveSaveModel extends AlipayObject {
 	 */
 	@ApiField("data_source")
 	private String dataSource;
+
+	/**
+	 * 健康档案字类型，可以用来划分健康自测量表的二级分类，如心理健康下的焦虑症自测，如果不传无法通过subType检测，
+	 */
+	@ApiField("data_sub_type")
+	private String dataSubType;
 
 	/**
 	 * 数据类型
@@ -80,7 +86,7 @@ public class AlipayCommerceMedicalHealthArchiveSaveModel extends AlipayObject {
 	private String userCardNo;
 
 	/**
-	 * 填写证件类型英文编码
+	 * 身份证
 	 */
 	@ApiField("user_cert_type")
 	private String userCertType;
@@ -124,6 +130,13 @@ public class AlipayCommerceMedicalHealthArchiveSaveModel extends AlipayObject {
 	}
 	public void setDataSource(String dataSource) {
 		this.dataSource = dataSource;
+	}
+
+	public String getDataSubType() {
+		return this.dataSubType;
+	}
+	public void setDataSubType(String dataSubType) {
+		this.dataSubType = dataSubType;
 	}
 
 	public String getDataType() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 可信账单订单信息
  *
  * @author auto create
- * @since 1.0, 2024-10-23 17:07:22
+ * @since 1.0, 2025-02-08 11:16:54
  */
 public class TrustBillOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 7555476373864492533L;
+	private static final long serialVersionUID = 2688141334222421998L;
 
 	/**
 	 * 账单支付总金额	，单位元
@@ -54,6 +54,12 @@ public class TrustBillOrder extends AlipayObject {
 	 */
 	@ApiField("out_bill_no")
 	private String outBillNo;
+
+	/**
+	 * 交易备注
+	 */
+	@ApiField("remark")
+	private String remark;
 
 	/**
 	 * 账单状态
@@ -108,6 +114,13 @@ public class TrustBillOrder extends AlipayObject {
 	}
 	public void setOutBillNo(String outBillNo) {
 		this.outBillNo = outBillNo;
+	}
+
+	public String getRemark() {
+		return this.remark;
+	}
+	public void setRemark(String remark) {
+		this.remark = remark;
 	}
 
 	public String getStatus() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量查询门店商品列表
  *
  * @author auto create
- * @since 1.0, 2025-01-16 14:27:55
+ * @since 1.0, 2025-02-06 19:35:19
  */
 public class AlipayCommerceMedicalItemListQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7689973745472933956L;
+	private static final long serialVersionUID = 1441394254232715652L;
 
 	/**
 	 * 分页页数

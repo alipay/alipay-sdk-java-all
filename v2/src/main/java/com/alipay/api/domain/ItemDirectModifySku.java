@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ItemDirectModifySku extends AlipayObject {
 
-	private static final long serialVersionUID = 2227665484736313524L;
+	private static final long serialVersionUID = 2341885773483381238L;
 
 	/**
 	 * sku原价，分为单位。

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserDtbankActivitybillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3297181223296493253L;
+	private static final long serialVersionUID = 8366514432989553821L;
 
 	/**
 	 * 银行活动id/解决方案id
@@ -20,7 +20,7 @@ public class AlipayUserDtbankActivitybillQueryModel extends AlipayObject {
 	private String activityId;
 
 	/**
-	 * 申请查询的账单类型 当前字段已废弃(数字分行账单已经全部迁移)
+	 * 申请查询的账单类型 当前字段已废弃(该参数已废弃，若继续上传，系统也不会消费该参数，存量业务不受影响)
 	 */
 	@ApiField("bill_type")
 	@Deprecated

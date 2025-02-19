@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账号绑定
  *
  * @author auto create
- * @since 1.0, 2024-05-08 16:20:52
+ * @since 1.0, 2025-02-07 17:08:53
  */
 public class AlipayCloudCloudbaseExternalaccountBindInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7662133227688149138L;
+	private static final long serialVersionUID = 5425764966311357479L;
 
 	/**
 	 * 服务商账号ID
@@ -36,6 +36,12 @@ public class AlipayCloudCloudbaseExternalaccountBindInitializeModel extends Alip
 	 */
 	@ApiField("card_type")
 	private String cardType;
+
+	/**
+	 * 登录账号
+	 */
+	@ApiField("main_logon_id")
+	private String mainLogonId;
 
 	/**
 	 * 钱包ID
@@ -69,6 +75,13 @@ public class AlipayCloudCloudbaseExternalaccountBindInitializeModel extends Alip
 	}
 	public void setCardType(String cardType) {
 		this.cardType = cardType;
+	}
+
+	public String getMainLogonId() {
+		return this.mainLogonId;
+	}
+	public void setMainLogonId(String mainLogonId) {
+		this.mainLogonId = mainLogonId;
 	}
 
 	public String getWalletId() {

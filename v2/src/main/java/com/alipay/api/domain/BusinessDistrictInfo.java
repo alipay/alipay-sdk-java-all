@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商圈信息
  *
  * @author auto create
- * @since 1.0, 2023-01-05 21:18:45
+ * @since 1.0, 2025-02-11 14:59:22
  */
 public class BusinessDistrictInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6231962128299522457L;
+	private static final long serialVersionUID = 3828298769186299124L;
 
 	/**
 	 * 是否可被绑定;值是false,unbindable_error_code和unbindable_error_msg会有对应不可绑定的错误code和错误信息

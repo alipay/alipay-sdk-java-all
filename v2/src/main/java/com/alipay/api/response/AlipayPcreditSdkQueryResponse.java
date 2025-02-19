@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.sdk.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-28 15:07:19
+ * @since 1.0, 2025-02-12 16:22:24
  */
 public class AlipayPcreditSdkQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5164819492675492566L;
+	private static final long serialVersionUID = 7269658978387964938L;
 
 	/** 
 	 * 获取签名后的业务数据

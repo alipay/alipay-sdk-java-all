@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.provider.nsales.subactivityfulfill.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2025-01-27 22:52:21
+ * @since 1.0, 2025-02-10 21:27:23
  */
 public class AlipayOfflineProviderNsalesSubactivityfulfillCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3593689978416524671L;
+	private static final long serialVersionUID = 7899461654474998897L;
 
 	
 

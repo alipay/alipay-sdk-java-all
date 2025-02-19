@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 搜索直达底纹词
  *
  * @author auto create
- * @since 1.0, 2023-04-04 11:21:07
+ * @since 1.0, 2025-02-11 14:59:03
  */
 public class BackgroundWordInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6167798867337648692L;
+	private static final long serialVersionUID = 5524517817349374217L;
 
 	/**
 	 * 底纹词

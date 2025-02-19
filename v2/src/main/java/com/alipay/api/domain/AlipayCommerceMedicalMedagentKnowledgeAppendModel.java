@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 医生智能体好大夫追加知识库内容接口
  *
  * @author auto create
- * @since 1.0, 2025-01-23 10:31:00
+ * @since 1.0, 2025-02-14 10:47:57
  */
 public class AlipayCommerceMedicalMedagentKnowledgeAppendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1823347323666663466L;
+	private static final long serialVersionUID = 2187923678227828913L;
 
 	/**
 	 * 组装的医生唯一ID，用于标识知识库所属的代理

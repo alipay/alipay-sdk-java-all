@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 安心招工平台消息发送
  *
  * @author auto create
- * @since 1.0, 2025-01-17 16:16:47
+ * @since 1.0, 2025-02-12 17:42:24
  */
 public class AlipayEbppIndustryRecruitMessageSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6858999816183384711L;
+	private static final long serialVersionUID = 5875949146771247876L;
 
 	/**
 	 * 场景，上班打卡提醒=CLOCK_IN_REMINDER

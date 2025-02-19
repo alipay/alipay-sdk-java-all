@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 淘宝场景金融专项数据结果集
  *
  * @author auto create
- * @since 1.0, 2024-12-23 14:28:34
+ * @since 1.0, 2025-02-08 10:59:21
  */
 public class TaoBaoEcomStoreResult extends AlipayObject {
 
-	private static final long serialVersionUID = 5127683278883965776L;
+	private static final long serialVersionUID = 2718382637832175429L;
 
 	/**
 	 * 行政处罚（市监）信息列表
@@ -29,6 +29,12 @@ public class TaoBaoEcomStoreResult extends AlipayObject {
 	@ApiListField("ecom_shop_info")
 	@ApiField("tao_bao_ecom_store_info")
 	private List<TaoBaoEcomStoreInfo> ecomShopInfo;
+
+	/**
+	 * 法人维度店铺指标数据
+	 */
+	@ApiField("fr_shop_index_info")
+	private FrShopIndexInfo frShopIndexInfo;
 
 	/**
 	 * 失信被执行人信息列表
@@ -63,6 +69,13 @@ public class TaoBaoEcomStoreResult extends AlipayObject {
 	}
 	public void setEcomShopInfo(List<TaoBaoEcomStoreInfo> ecomShopInfo) {
 		this.ecomShopInfo = ecomShopInfo;
+	}
+
+	public FrShopIndexInfo getFrShopIndexInfo() {
+		return this.frShopIndexInfo;
+	}
+	public void setFrShopIndexInfo(FrShopIndexInfo frShopIndexInfo) {
+		this.frShopIndexInfo = frShopIndexInfo;
 	}
 
 	public List<PunishBreakInfo> getPunishBreakList() {

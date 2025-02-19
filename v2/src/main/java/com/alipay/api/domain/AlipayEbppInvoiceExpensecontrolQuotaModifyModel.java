@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改额度
  *
  * @author auto create
- * @since 1.0, 2024-11-11 16:42:12
+ * @since 1.0, 2025-02-10 14:23:18
  */
 public class AlipayEbppInvoiceExpensecontrolQuotaModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8845712378594178492L;
+	private static final long serialVersionUID = 1837864776846926782L;
 
 	/**
 	 * 企业共同账户ID（该字段将废弃，不建议使用，可用enterprise_id字段替换） 当前字段已废弃(该字段将废弃，不建议使用，可用enterprise_id字段替换)
@@ -34,7 +34,7 @@ public class AlipayEbppInvoiceExpensecontrolQuotaModifyModel extends AlipayObjec
 	private String agreementNo;
 
 	/**
-	 * 变更的金额/余额，以（分）为单位，当变更的资产类型为次卡时，当前的单位为次
+	 * 变更的金额/余额，日元或者韩元以（元）为单位，其他币种以（分）为单位，当变更的资产类型为次卡时，单位为次
 	 */
 	@ApiField("amount")
 	private String amount;
@@ -52,9 +52,10 @@ public class AlipayEbppInvoiceExpensecontrolQuotaModifyModel extends AlipayObjec
 	private String outerSourceId;
 
 	/**
-	 * 外部平台编码
+	 * 外部平台编码 当前字段已废弃(历史字段，不推荐使用)
 	 */
 	@ApiField("platform")
+	@Deprecated
 	private String platform;
 
 	/**

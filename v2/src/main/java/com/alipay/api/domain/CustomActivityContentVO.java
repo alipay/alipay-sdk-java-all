@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 自定义商家群活动内容模型
  *
  * @author auto create
- * @since 1.0, 2024-10-30 11:22:55
+ * @since 1.0, 2025-02-11 14:57:44
  */
 public class CustomActivityContentVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2169763194874986839L;
+	private static final long serialVersionUID = 1445985594324821493L;
 
 	/**
 	 * 活动跳转行动点

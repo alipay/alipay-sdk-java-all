@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.antforest.welfareforest.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 19:33:21
+ * @since 1.0, 2025-02-08 16:28:09
  */
 public class AlipaySocialAntforestWelfareforestBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7834933477849954574L;
+	private static final long serialVersionUID = 5228611232569798937L;
 
 	/** 
 	 * 用于页面展示使用的图片等信息

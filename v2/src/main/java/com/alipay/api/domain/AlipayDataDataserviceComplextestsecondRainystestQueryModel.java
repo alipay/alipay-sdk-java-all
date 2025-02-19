@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 复杂类型接口引用01_老流程
  *
  * @author auto create
- * @since 1.0, 2024-12-12 14:17:24
+ * @since 1.0, 2025-02-14 15:08:29
  */
 public class AlipayDataDataserviceComplextestsecondRainystestQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3387427425115582862L;
+	private static final long serialVersionUID = 4374156435292661242L;
 
 	/**
 	 * 引用同迭代的复杂类型

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 可信价值中心账单提交
  *
  * @author auto create
- * @since 1.0, 2025-01-03 10:12:55
+ * @since 1.0, 2025-02-08 10:41:46
  */
 public class AnttechBlockchainFinanceTvpBillSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1118447264195332643L;
+	private static final long serialVersionUID = 3613448893489252972L;
 
 	/**
 	 * 账单实际支付金额，单位元
@@ -54,6 +54,12 @@ original_total_amount + adjust_amount = actual_total_amount
 	private Date endDate;
 
 	/**
+	 * 订单过期时间
+	 */
+	@ApiField("expire_time")
+	private Date expireTime;
+
+	/**
 	 * 账单初始总金额，单位元
 	 */
 	@ApiField("original_total_amount")
@@ -66,7 +72,15 @@ original_total_amount + adjust_amount = actual_total_amount
 	private String outBillNo;
 
 	/**
-	 * 收款方主体
+	 * 收款方账号未管控的场景，需传入收款方账号。
+payee_entity 和 payee_account 不能都为空。
+	 */
+	@ApiField("payee_account")
+	private TrustAccountInfo payeeAccount;
+
+	/**
+	 * 针对收款方账号管控的场景，只需要传入收款方主体名称即可，无需传入收款方账号。
+payee_entity 和 payee_account 不能都为空
 	 */
 	@ApiField("payee_entity")
 	private TrustEntityInfo payeeEntity;
@@ -82,6 +96,12 @@ original_total_amount + adjust_amount = actual_total_amount
 	 */
 	@ApiField("product_code")
 	private String productCode;
+
+	/**
+	 * 备注|附言
+	 */
+	@ApiField("remark")
+	private String remark;
 
 	/**
 	 * 账单核算起始时间
@@ -137,6 +157,13 @@ original_total_amount + adjust_amount = actual_total_amount
 		this.endDate = endDate;
 	}
 
+	public Date getExpireTime() {
+		return this.expireTime;
+	}
+	public void setExpireTime(Date expireTime) {
+		this.expireTime = expireTime;
+	}
+
 	public String getOriginalTotalAmount() {
 		return this.originalTotalAmount;
 	}
@@ -149,6 +176,13 @@ original_total_amount + adjust_amount = actual_total_amount
 	}
 	public void setOutBillNo(String outBillNo) {
 		this.outBillNo = outBillNo;
+	}
+
+	public TrustAccountInfo getPayeeAccount() {
+		return this.payeeAccount;
+	}
+	public void setPayeeAccount(TrustAccountInfo payeeAccount) {
+		this.payeeAccount = payeeAccount;
 	}
 
 	public TrustEntityInfo getPayeeEntity() {
@@ -170,6 +204,13 @@ original_total_amount + adjust_amount = actual_total_amount
 	}
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
+	}
+
+	public String getRemark() {
+		return this.remark;
+	}
+	public void setRemark(String remark) {
+		this.remark = remark;
 	}
 
 	public Date getStartDate() {

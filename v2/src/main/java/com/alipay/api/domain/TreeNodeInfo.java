@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TreeNodeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6734267672549776669L;
+	private static final long serialVersionUID = 5819211846646535518L;
 
 	/**
 	 * 商家创建节点时需要携带的业务信息(比如地址)

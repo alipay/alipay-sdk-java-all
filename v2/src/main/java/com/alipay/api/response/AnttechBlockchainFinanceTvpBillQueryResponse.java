@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.finance.tvp.bill.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-01-23 18:31:55
+ * @since 1.0, 2025-02-08 11:17:21
  */
 public class AnttechBlockchainFinanceTvpBillQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8523898299219485823L;
+	private static final long serialVersionUID = 4296323542857526345L;
 
 	/** 
 	 * 账单支付总金额，单位元
@@ -68,6 +68,12 @@ public class AnttechBlockchainFinanceTvpBillQueryResponse extends AlipayResponse
 	private Date endDate;
 
 	/** 
+	 * 账单过期时间
+	 */
+	@ApiField("expire_time")
+	private Date expireTime;
+
+	/** 
 	 * 账单初始总金额, 单位元
 	 */
 	@ApiField("original_total_amount")
@@ -78,6 +84,12 @@ public class AnttechBlockchainFinanceTvpBillQueryResponse extends AlipayResponse
 	 */
 	@ApiField("out_bill_no")
 	private String outBillNo;
+
+	/** 
+	 * 交易备注
+	 */
+	@ApiField("remark")
+	private String remark;
 
 	/** 
 	 * 账单核算起始时间
@@ -153,6 +165,13 @@ public class AnttechBlockchainFinanceTvpBillQueryResponse extends AlipayResponse
 		return this.endDate;
 	}
 
+	public void setExpireTime(Date expireTime) {
+		this.expireTime = expireTime;
+	}
+	public Date getExpireTime( ) {
+		return this.expireTime;
+	}
+
 	public void setOriginalTotalAmount(String originalTotalAmount) {
 		this.originalTotalAmount = originalTotalAmount;
 	}
@@ -165,6 +184,13 @@ public class AnttechBlockchainFinanceTvpBillQueryResponse extends AlipayResponse
 	}
 	public String getOutBillNo( ) {
 		return this.outBillNo;
+	}
+
+	public void setRemark(String remark) {
+		this.remark = remark;
+	}
+	public String getRemark( ) {
+		return this.remark;
 	}
 
 	public void setStartDate(Date startDate) {

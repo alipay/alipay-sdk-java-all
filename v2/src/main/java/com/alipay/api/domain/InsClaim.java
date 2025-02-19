@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class InsClaim extends AlipayObject {
 
-	private static final long serialVersionUID = 1799562523333667418L;
+	private static final long serialVersionUID = 7693235973149746861L;
 
 	/**
 	 * 理赔因子;标准json 格式

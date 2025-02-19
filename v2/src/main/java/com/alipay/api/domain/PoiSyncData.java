@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PoiSyncData extends AlipayObject {
 
-	private static final long serialVersionUID = 8423265448458826463L;
+	private static final long serialVersionUID = 5336998122786147538L;
 
 	/**
 	 * 小程序appId

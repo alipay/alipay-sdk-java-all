@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceEducateRosterIdentityUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5464617335887855131L;
+	private static final long serialVersionUID = 8853749219985589179L;
 
 	/**
 	 * 机构ID

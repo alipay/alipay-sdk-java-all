@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分期号信息
  *
  * @author auto create
- * @since 1.0, 2024-10-22 14:07:16
+ * @since 1.0, 2025-02-11 11:34:19
  */
 public class InstallmentNoInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8171558973277571385L;
+	private static final long serialVersionUID = 4139816784466514684L;
 
 	/**
 	 * 当前分期数

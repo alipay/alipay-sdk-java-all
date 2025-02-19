@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class BPOpenApiInstancePreviewStep extends AlipayObject {
 
-	private static final long serialVersionUID = 7398669496972368766L;
+	private static final long serialVersionUID = 4319139888862251444L;
 
 	/**
 	 * 活动id

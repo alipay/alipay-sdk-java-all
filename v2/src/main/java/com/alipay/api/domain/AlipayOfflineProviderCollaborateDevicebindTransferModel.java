@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 设备换绑
  *
  * @author auto create
- * @since 1.0, 2025-01-27 22:48:41
+ * @since 1.0, 2025-02-10 14:48:23
  */
 public class AlipayOfflineProviderCollaborateDevicebindTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7348549145312829854L;
+	private static final long serialVersionUID = 5748744931145554167L;
 
 	/**
 	 * 如果换smid必须要传，smid和之前的smid必须是同一个支付宝账户下

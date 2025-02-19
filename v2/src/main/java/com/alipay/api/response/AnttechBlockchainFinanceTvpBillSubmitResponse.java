@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.finance.tvp.bill.submit response.
  * 
  * @author auto create
- * @since 1.0, 2025-01-23 18:32:15
+ * @since 1.0, 2025-02-08 10:42:24
  */
 public class AnttechBlockchainFinanceTvpBillSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2155154475926137147L;
+	private static final long serialVersionUID = 5455439754667879861L;
 
 	/** 
 	 * 账单Id，数科唯一

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceLivestreamOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5416344244274329368L;
+	private static final long serialVersionUID = 5137242217949617315L;
 
 	/**
 	 * 业务授权token，用户允许在该小程序上查询主播直播间订单数据。获取方法：小程序插件组件实例通过ref透出的auth方法获取

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 可信价值中心账单明细查询
  *
  * @author auto create
- * @since 1.0, 2024-10-23 17:07:23
+ * @since 1.0, 2025-02-08 11:16:55
  */
 public class AnttechBlockchainFinanceTvpBillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8872333874773445831L;
+	private static final long serialVersionUID = 5749875173278239962L;
 
 	/**
 	 * 账单id，数科唯一

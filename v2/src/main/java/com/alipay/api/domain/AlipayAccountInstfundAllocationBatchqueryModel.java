@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金调拨执行结果查询
  *
  * @author auto create
- * @since 1.0, 2024-07-30 16:42:50
+ * @since 1.0, 2025-02-12 15:38:51
  */
 public class AlipayAccountInstfundAllocationBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7483112182513699411L;
+	private static final long serialVersionUID = 3865298545368487699L;
 
 	/**
 	 * 最晚执行时间，单位秒

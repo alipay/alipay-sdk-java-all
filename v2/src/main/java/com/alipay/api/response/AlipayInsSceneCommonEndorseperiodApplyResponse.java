@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayInsSceneCommonEndorseperiodApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3836211525872846185L;
+	private static final long serialVersionUID = 4562864592133921526L;
 
 	/** 
 	 * 批单号

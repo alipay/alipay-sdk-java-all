@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 可信价值中心账单查询
  *
  * @author auto create
- * @since 1.0, 2024-10-23 17:07:23
+ * @since 1.0, 2025-02-08 11:16:54
  */
 public class AnttechBlockchainFinanceTvpBillBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2374149169575561492L;
+	private static final long serialVersionUID = 5859282559595218618L;
 
 	/**
 	 * 分页查询，页码。从 0 开始
@@ -28,7 +28,13 @@ public class AnttechBlockchainFinanceTvpBillBatchqueryModel extends AlipayObject
 	private Long pageSize;
 
 	/**
-	 * 收款方
+	 * 收款方账号
+	 */
+	@ApiField("payee_account")
+	private TrustAccountInfo payeeAccount;
+
+	/**
+	 * 收款方主体
 	 */
 	@ApiField("payee_entity")
 	private TrustEntityInfo payeeEntity;
@@ -63,6 +69,13 @@ public class AnttechBlockchainFinanceTvpBillBatchqueryModel extends AlipayObject
 	}
 	public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
+	}
+
+	public TrustAccountInfo getPayeeAccount() {
+		return this.payeeAccount;
+	}
+	public void setPayeeAccount(TrustAccountInfo payeeAccount) {
+		this.payeeAccount = payeeAccount;
 	}
 
 	public TrustEntityInfo getPayeeEntity() {

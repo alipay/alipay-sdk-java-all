@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 搜索直达氛围图模块
  *
  * @author auto create
- * @since 1.0, 2024-08-15 11:28:16
+ * @since 1.0, 2025-02-11 14:58:35
  */
 public class SearchBoxImageModule extends AlipayObject {
 
-	private static final long serialVersionUID = 3654533588273685167L;
+	private static final long serialVersionUID = 5459753544227728878L;
 
 	/**
 	 * 申请单号

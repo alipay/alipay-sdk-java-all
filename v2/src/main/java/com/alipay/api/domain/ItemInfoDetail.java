@@ -1,19 +1,21 @@
 package com.alipay.api.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 商品详情
  *
  * @author auto create
- * @since 1.0, 2025-01-14 14:27:50
+ * @since 1.0, 2025-02-06 19:35:19
  */
 public class ItemInfoDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6143734775559816988L;
+	private static final long serialVersionUID = 6896589277182298998L;
 
 	/**
 	 * 创建药品的时间，格式：yyyy-MM-dd HH:mm:ss
@@ -74,6 +76,13 @@ public class ItemInfoDetail extends AlipayObject {
 	 */
 	@ApiField("sku_info_list")
 	private SkuInfoVO skuInfoList;
+
+	/**
+	 * sku信息
+	 */
+	@ApiListField("sku_list")
+	@ApiField("sku_info_v_o")
+	private List<SkuInfoVO> skuList;
 
 	/**
 	 * 商家自定义店内code
@@ -167,6 +176,13 @@ public class ItemInfoDetail extends AlipayObject {
 	}
 	public void setSkuInfoList(SkuInfoVO skuInfoList) {
 		this.skuInfoList = skuInfoList;
+	}
+
+	public List<SkuInfoVO> getSkuList() {
+		return this.skuList;
+	}
+	public void setSkuList(List<SkuInfoVO> skuList) {
+		this.skuList = skuList;
 	}
 
 	public String getTagCode() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 新模型sdk测试
  *
  * @author auto create
- * @since 1.0, 2024-11-28 15:07:19
+ * @since 1.0, 2025-02-12 16:22:24
  */
 public class AlipayPcreditSdkQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7755823812397511758L;
+	private static final long serialVersionUID = 7318894542988182671L;
 
 	/**
 	 * 年龄

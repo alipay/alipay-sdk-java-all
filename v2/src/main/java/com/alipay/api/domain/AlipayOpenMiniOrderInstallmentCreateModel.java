@@ -1,5 +1,6 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
 import java.util.List;
 
 import com.alipay.api.AlipayObject;
@@ -10,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单分期
  *
  * @author auto create
- * @since 1.0, 2024-10-22 14:07:16
+ * @since 1.0, 2025-02-11 11:34:20
  */
 public class AlipayOpenMiniOrderInstallmentCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7459195953138413963L;
+	private static final long serialVersionUID = 3268414355377736864L;
 
 	/**
 	 * 续租场景分期数，当分期类型为RELET时，该字段必填
@@ -23,13 +24,13 @@ public class AlipayOpenMiniOrderInstallmentCreateModel extends AlipayObject {
 	private Long addonPeriodNum;
 
 	/**
-	 * 当前分期数
+	 * 当前分期数，与installment_no_info_list二选一
 	 */
 	@ApiField("installment_no")
 	private String installmentNo;
 
 	/**
-	 * 分期号信息列表，多期合并主动支付场景传入
+	 * 分期号信息列表，多期合并主动支付场景传入，与installment_no二选一
 	 */
 	@ApiListField("installment_no_info_list")
 	@ApiField("installment_no_info_d_t_o")
@@ -95,6 +96,12 @@ true:已完结
 	 */
 	@ApiField("pay_channel")
 	private String payChannel;
+
+	/**
+	 * 支付时间，特指发生在支付宝端外支付的时间，分期单同步模式且非支付宝渠道支付，请传入该参数
+	 */
+	@ApiField("pay_time")
+	private Date payTime;
 
 	/**
 	 * 普通分期数，当分期类型为RENT或BUYOUT时，该字段必填
@@ -208,6 +215,13 @@ true:已完结
 	}
 	public void setPayChannel(String payChannel) {
 		this.payChannel = payChannel;
+	}
+
+	public Date getPayTime() {
+		return this.payTime;
+	}
+	public void setPayTime(Date payTime) {
+		this.payTime = payTime;
 	}
 
 	public Long getPeriodNum() {

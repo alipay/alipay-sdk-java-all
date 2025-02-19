@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantSolcreditserviceprodDeductionorderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6241844492611917478L;
+	private static final long serialVersionUID = 5129294132226713685L;
 
 	/**
 	 * 扣押金必填，不能大于押金剩余金额

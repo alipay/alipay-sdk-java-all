@@ -4,14 +4,20 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 智安通风险咨询API
+ * 租赁智能风险咨询（智安盾免费版）
  *
  * @author auto create
- * @since 1.0, 2025-01-24 17:32:22
+ * @since 1.0, 2025-02-13 14:57:21
  */
 public class AlipayCommerceRentRiskConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1328368245976476397L;
+	private static final long serialVersionUID = 7662858418622244789L;
+
+	/**
+	 * 支付宝openid
+	 */
+	@ApiField("alipay_open_id")
+	private String alipayOpenId;
 
 	/**
 	 * 支付宝用户id
@@ -30,6 +36,13 @@ public class AlipayCommerceRentRiskConsultModel extends AlipayObject {
 	 */
 	@ApiField("risk_biz_scene")
 	private String riskBizScene;
+
+	public String getAlipayOpenId() {
+		return this.alipayOpenId;
+	}
+	public void setAlipayOpenId(String alipayOpenId) {
+		this.alipayOpenId = alipayOpenId;
+	}
 
 	public String getAlipayUserId() {
 		return this.alipayUserId;

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.externalaccount.bind.initialize response.
  * 
  * @author auto create
- * @since 1.0, 2025-01-22 16:15:11
+ * @since 1.0, 2025-02-07 17:12:23
  */
 public class AlipayCloudCloudbaseExternalaccountBindInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2812219451713787695L;
+	private static final long serialVersionUID = 4388512429663377171L;
 
 	/** 
 	 * 生成的小程序ID

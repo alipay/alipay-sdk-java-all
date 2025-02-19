@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.recruit.message.send request
  * 
  * @author auto create
- * @since 1.0, 2025-01-17 16:16:47
+ * @since 1.0, 2025-02-12 17:42:24
  */
 public class AlipayEbppIndustryRecruitMessageSendRequest implements AlipayRequest<AlipayEbppIndustryRecruitMessageSendResponse> {
 

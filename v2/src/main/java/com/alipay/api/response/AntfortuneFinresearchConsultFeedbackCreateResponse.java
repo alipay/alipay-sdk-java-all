@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntfortuneFinresearchConsultFeedbackCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2429226313769777698L;
+	private static final long serialVersionUID = 6119413747718547877L;
 
 	
 

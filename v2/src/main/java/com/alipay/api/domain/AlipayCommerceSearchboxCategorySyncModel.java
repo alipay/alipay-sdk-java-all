@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceSearchboxCategorySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6241983841263422296L;
+	private static final long serialVersionUID = 5468658195917418464L;
 
 	/**
 	 * 品牌box业务类型，业务约定值

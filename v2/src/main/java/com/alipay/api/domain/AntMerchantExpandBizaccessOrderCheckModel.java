@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 业务开通准入预校验
  *
  * @author auto create
- * @since 1.0, 2024-12-06 16:56:56
+ * @since 1.0, 2025-02-10 15:26:54
  */
 public class AntMerchantExpandBizaccessOrderCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3276488268128656314L;
+	private static final long serialVersionUID = 2817236431693332654L;
 
 	/**
 	 * 服务商抽佣信息。本对象为空表示无需抽佣配置。一期只支持传入一个。

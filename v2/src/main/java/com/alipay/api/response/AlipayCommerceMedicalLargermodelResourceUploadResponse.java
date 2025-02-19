@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.largermodel.resource.upload response.
  * 
  * @author auto create
- * @since 1.0, 2024-09-23 11:12:10
+ * @since 1.0, 2025-02-13 11:22:27
  */
 public class AlipayCommerceMedicalLargermodelResourceUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4616732178317879863L;
+	private static final long serialVersionUID = 6451639375853728392L;
 
 	/** 
 	 * 图片或文件存储在afts的标识

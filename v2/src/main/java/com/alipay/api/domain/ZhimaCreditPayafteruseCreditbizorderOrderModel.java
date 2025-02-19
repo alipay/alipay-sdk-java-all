@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻后付免密下单
  *
  * @author auto create
- * @since 1.0, 2024-01-03 10:39:43
+ * @since 1.0, 2025-02-17 16:04:19
  */
 public class ZhimaCreditPayafteruseCreditbizorderOrderModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8863881821988591643L;
+	private static final long serialVersionUID = 6513627634496811996L;
 
 	/**
-	 * 只有当传递了order_amount时，该参数才有意义； 1）该参数不传时，默认为ORDER_AMOUNT。 2）传ORDER_AMOUNT时，表示order_amount传入的金额为后付金额，在发起扣款时，最大扣款支付金额为order_amount传入的值； 3）传RISK_AMOUNT时，表示ORDER_AMOUNT传入的金额为风险预估金额，在发起扣款时，最大扣款支付金额为商户签约时约定的上限额度。
+	 * 只有当传递了order_amount时，该参数才有意义； 1）该参数不传时，默认为ORDER_AMOUNT。 2）传ORDER_AMOUNT时，表示order_amount传入的金额为后付金额，在发起扣款时，最大扣款支付金额为order_amount传入的值（取值单位为元）； 3）传RISK_AMOUNT时，表示order_amount传入的金额为风险预估金额，在发起扣款时，最大扣款支付金额为商户签约时约定的上限额度（取值单位为元）。
 	 */
 	@ApiField("amount_type")
 	private String amountType;
@@ -32,10 +32,22 @@ public class ZhimaCreditPayafteruseCreditbizorderOrderModel extends AlipayObject
 	private String categoryId;
 
 	/**
+	 * 业务子模式。默认的单次付模式无需传入，阶段付模式传入以区分是分次还是分期子模式。
+	 */
+	@ApiField("commercial_sub_mode")
+	private String commercialSubMode;
+
+	/**
 	 * 芝麻开通协议号
 	 */
 	@ApiField("credit_agreement_id")
 	private String creditAgreementId;
+
+	/**
+	 * 信用业务模式，不填默认为单次扣款模式。阶段付模式为STAGE_PAYMENT，其它模式请根据对应的技术支持文档传入
+	 */
+	@ApiField("credit_commercial_mode")
+	private String creditCommercialMode;
 
 	/**
 	 * 业务扩展参数
@@ -56,10 +68,22 @@ public class ZhimaCreditPayafteruseCreditbizorderOrderModel extends AlipayObject
 	private String outOrderNo;
 
 	/**
+	 * 多阶段订单次数，业务模式为阶段付模式下时需传入
+	 */
+	@ApiField("payment_total_times")
+	private String paymentTotalTimes;
+
+	/**
 	 * 产品码，不传默认为CREDIT_PAY_AFTER_USE
 	 */
 	@ApiField("product_code")
 	private String productCode;
+
+	/**
+	 * 阶段付分期类型。阶段付模式，且子业务模式为分期模式下需要传入，分次不需要
+	 */
+	@ApiField("stage_period_type")
+	private String stagePeriodType;
 
 	/**
 	 * 订单标题。
@@ -89,11 +113,25 @@ public class ZhimaCreditPayafteruseCreditbizorderOrderModel extends AlipayObject
 		this.categoryId = categoryId;
 	}
 
+	public String getCommercialSubMode() {
+		return this.commercialSubMode;
+	}
+	public void setCommercialSubMode(String commercialSubMode) {
+		this.commercialSubMode = commercialSubMode;
+	}
+
 	public String getCreditAgreementId() {
 		return this.creditAgreementId;
 	}
 	public void setCreditAgreementId(String creditAgreementId) {
 		this.creditAgreementId = creditAgreementId;
+	}
+
+	public String getCreditCommercialMode() {
+		return this.creditCommercialMode;
+	}
+	public void setCreditCommercialMode(String creditCommercialMode) {
+		this.creditCommercialMode = creditCommercialMode;
 	}
 
 	public String getExtendParams() {
@@ -117,11 +155,25 @@ public class ZhimaCreditPayafteruseCreditbizorderOrderModel extends AlipayObject
 		this.outOrderNo = outOrderNo;
 	}
 
+	public String getPaymentTotalTimes() {
+		return this.paymentTotalTimes;
+	}
+	public void setPaymentTotalTimes(String paymentTotalTimes) {
+		this.paymentTotalTimes = paymentTotalTimes;
+	}
+
 	public String getProductCode() {
 		return this.productCode;
 	}
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
+	}
+
+	public String getStagePeriodType() {
+		return this.stagePeriodType;
+	}
+	public void setStagePeriodType(String stagePeriodType) {
+		this.stagePeriodType = stagePeriodType;
 	}
 
 	public String getSubject() {

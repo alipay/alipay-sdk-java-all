@@ -1,17 +1,21 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 车金融订单状态通知接口
  *
  * @author auto create
- * @since 1.0, 2024-12-20 19:29:35
+ * @since 1.0, 2025-02-10 18:03:04
  */
 public class XingheLendassistCarfinApplystatusNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7428371645764396972L;
+	private static final long serialVersionUID = 3643558424699567881L;
 
 	/**
 	 * 星河侧唯一业务编号
@@ -20,10 +24,30 @@ public class XingheLendassistCarfinApplystatusNotifyModel extends AlipayObject {
 	private String applyNo;
 
 	/**
+	 * 是否完成完善企业信息（人查企，含非企业主场景）
+true/false
+	 */
+	@ApiField("company_info_completed")
+	private Boolean companyInfoCompleted;
+
+	/**
 	 * 授信金额，单位分
 	 */
 	@ApiField("credit_amt")
 	private Long creditAmt;
+
+	/**
+	 * 授信额度到期时间
+	 */
+	@ApiField("credit_amt_expire_date")
+	private Date creditAmtExpireDate;
+
+	/**
+	 * 授信信息列表
+	 */
+	@ApiListField("credit_list")
+	@ApiField("credit")
+	private List<Credit> creditList;
 
 	/**
 	 * 取消失败时，申请单当前状态
@@ -48,6 +72,12 @@ public class XingheLendassistCarfinApplystatusNotifyModel extends AlipayObject {
 	 */
 	@ApiField("fin_org")
 	private String finOrg;
+
+	/**
+	 * 是否完成实名认证，true/false
+	 */
+	@ApiField("identity_verified")
+	private Boolean identityVerified;
 
 	/**
 	 * 放款金额，单位分
@@ -135,11 +165,32 @@ CANCEL_SUC: 取消成功（适用于客户确定放弃的场景，机构侧后�
 		this.applyNo = applyNo;
 	}
 
+	public Boolean getCompanyInfoCompleted() {
+		return this.companyInfoCompleted;
+	}
+	public void setCompanyInfoCompleted(Boolean companyInfoCompleted) {
+		this.companyInfoCompleted = companyInfoCompleted;
+	}
+
 	public Long getCreditAmt() {
 		return this.creditAmt;
 	}
 	public void setCreditAmt(Long creditAmt) {
 		this.creditAmt = creditAmt;
+	}
+
+	public Date getCreditAmtExpireDate() {
+		return this.creditAmtExpireDate;
+	}
+	public void setCreditAmtExpireDate(Date creditAmtExpireDate) {
+		this.creditAmtExpireDate = creditAmtExpireDate;
+	}
+
+	public List<Credit> getCreditList() {
+		return this.creditList;
+	}
+	public void setCreditList(List<Credit> creditList) {
+		this.creditList = creditList;
 	}
 
 	public String getCurrentStatus() {
@@ -168,6 +219,13 @@ CANCEL_SUC: 取消成功（适用于客户确定放弃的场景，机构侧后�
 	}
 	public void setFinOrg(String finOrg) {
 		this.finOrg = finOrg;
+	}
+
+	public Boolean getIdentityVerified() {
+		return this.identityVerified;
+	}
+	public void setIdentityVerified(Boolean identityVerified) {
+		this.identityVerified = identityVerified;
 	}
 
 	public Long getLoanAmt() {

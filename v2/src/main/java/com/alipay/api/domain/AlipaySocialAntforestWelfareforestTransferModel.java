@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 公益林浇水
  *
  * @author auto create
- * @since 1.0, 2024-05-22 11:36:49
+ * @since 1.0, 2025-02-08 16:27:40
  */
 public class AlipaySocialAntforestWelfareforestTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6368887924533837593L;
+	private static final long serialVersionUID = 5821167118136791487L;
 
 	/**
 	 * 场景码，也由森林侧开发配置后提供出来

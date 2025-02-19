@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantQipanTrendQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2266939165948672864L;
+	private static final long serialVersionUID = 4656127942712566449L;
 
 	/**
 	 * 指标key，全局唯一，查询内容参考：<a href="https://opendocs.alipay.com/pre-open/04phhq#%E8%B6%8B%E5%8A%BF%E5%88%86%E6%9E%90%E4%B8%8D%E5%90%8Cindex_key%E6%9F%A5%E8%AF%A2" target="_blank">趋势分析不同index_key查询</a>

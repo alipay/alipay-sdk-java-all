@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗健康档案数据删除接口
  *
  * @author auto create
- * @since 1.0, 2024-11-27 15:20:18
+ * @since 1.0, 2025-02-17 17:42:24
  */
 public class AlipayCommerceMedicalHealthArchiveDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5269383731486349699L;
+	private static final long serialVersionUID = 4136885691271448522L;
 
 	/**
 	 * 会话ID
@@ -50,7 +50,7 @@ public class AlipayCommerceMedicalHealthArchiveDeleteModel extends AlipayObject 
 	private String userCardNo;
 
 	/**
-	 * 填写证件类型
+	 * 身份证
 	 */
 	@ApiField("user_cert_type")
 	private String userCertType;
