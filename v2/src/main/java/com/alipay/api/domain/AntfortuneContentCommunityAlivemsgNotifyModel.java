@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntfortuneContentCommunityAlivemsgNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7437945594949151117L;
+	private static final long serialVersionUID = 1378683252519356537L;
 
 	/**
 	 * 淘宝直播id

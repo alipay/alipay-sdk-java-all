@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BuyerPayDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5311251814828576345L;
+	private static final long serialVersionUID = 3172325545435687184L;
 
 	/**
 	 * 买家支付金额，单位：元。

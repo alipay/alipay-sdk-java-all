@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OcrIdentifyResult extends AlipayObject {
 
-	private static final long serialVersionUID = 7413811975345621441L;
+	private static final long serialVersionUID = 2798355374622769133L;
 
 	/**
 	 * 当识别驾驶证时，返回家庭住址；

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.digitalmgmt.punchout.pr.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-08 10:56:38
+ * @since 1.0, 2025-02-21 12:04:49
  */
 public class AlipayDigitalmgmtPunchoutPrCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1457544173248855395L;
+	private static final long serialVersionUID = 5475925253517775699L;
 
 	/** 
 	 * pr下单返回数据

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BarcodeEventResponseHeader extends AlipayObject {
 
-	private static final long serialVersionUID = 2429175535451369235L;
+	private static final long serialVersionUID = 8547248182135619519L;
 
 	/**
 	 * 200=成功，400=请求错误，403=bundle查询不到。 Status code used to indicate an error, or "200" for success.

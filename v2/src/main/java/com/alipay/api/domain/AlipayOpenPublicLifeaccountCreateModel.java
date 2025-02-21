@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenPublicLifeaccountCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8293366152137613497L;
+	private static final long serialVersionUID = 2287892412317769836L;
 
 	/**
 	 * 勾选同意生活号协议（true：同意，false：不同意）

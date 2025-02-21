@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceEducateCampusCardUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4375443366481645728L;
+	private static final long serialVersionUID = 6373123192332612682L;
 
 	/**
 	 * 业务来源，需要拆分子渠道的需要上送，例如：

@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class HeatMapData extends AlipayObject {
 
-	private static final long serialVersionUID = 6337869926982826159L;
+	private static final long serialVersionUID = 5469177217392588431L;
 
 	/**
 	 * 城市代码

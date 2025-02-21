@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechMorseMarketingSrtaNonanonymousQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5299627898419744426L;
+	private static final long serialVersionUID = 2295132845958293498L;
 
 	/**
 	 * 扩展字段

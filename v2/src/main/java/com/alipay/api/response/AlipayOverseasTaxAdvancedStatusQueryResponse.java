@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOverseasTaxAdvancedStatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6181698379114515867L;
+	private static final long serialVersionUID = 5789533229935768216L;
 
 	/** 
 	 * 用付款码下单并冻结成功后会返回支付宝用户id

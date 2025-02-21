@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DatadigitalFincloudGeneralsaasBankcardCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3773897773781331742L;
+	private static final long serialVersionUID = 2548868873572883856L;
 
 	/**
 	 * 需核验的银行卡号

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaMerchantZmgoCumulateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5323215428166254378L;
+	private static final long serialVersionUID = 3693393346137915518L;
 
 	/** 
 	 * 总共累计金额

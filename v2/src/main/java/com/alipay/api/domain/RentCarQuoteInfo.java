@@ -1,5 +1,7 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
@@ -7,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租车报价信息
  *
  * @author auto create
- * @since 1.0, 2024-10-15 14:56:33
+ * @since 1.0, 2025-02-20 16:30:19
  */
 public class RentCarQuoteInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2181489881751552135L;
+	private static final long serialVersionUID = 8547432788374995551L;
 
 	/**
 	 * spu下报价排序
@@ -30,6 +32,30 @@ public class RentCarQuoteInfo extends AlipayObject {
 	 */
 	@ApiField("diff_adv_quote_amt")
 	private String diffAdvQuoteAmt;
+
+	/**
+	 * 行程结束详情地址
+	 */
+	@ApiField("end_address")
+	private String endAddress;
+
+	/**
+	 * 行程结束城市名
+	 */
+	@ApiField("end_city_name")
+	private String endCityName;
+
+	/**
+	 * 行程结束纬度
+	 */
+	@ApiField("end_latitude")
+	private String endLatitude;
+
+	/**
+	 * 行程结束经度
+	 */
+	@ApiField("end_longitude")
+	private String endLongitude;
 
 	/**
 	 * 行程结束时间
@@ -98,10 +124,28 @@ public class RentCarQuoteInfo extends AlipayObject {
 	private String startCityName;
 
 	/**
+	 * 行程开始纬度
+	 */
+	@ApiField("start_latitude")
+	private String startLatitude;
+
+	/**
+	 * 行程开始经度
+	 */
+	@ApiField("start_longitude")
+	private String startLongitude;
+
+	/**
 	 * 行程开始时间
 	 */
 	@ApiField("start_time")
 	private String startTime;
+
+	/**
+	 * 请求时间
+	 */
+	@ApiField("trace_datetime")
+	private Date traceDatetime;
 
 	public String getAmtRankSort() {
 		return this.amtRankSort;
@@ -122,6 +166,34 @@ public class RentCarQuoteInfo extends AlipayObject {
 	}
 	public void setDiffAdvQuoteAmt(String diffAdvQuoteAmt) {
 		this.diffAdvQuoteAmt = diffAdvQuoteAmt;
+	}
+
+	public String getEndAddress() {
+		return this.endAddress;
+	}
+	public void setEndAddress(String endAddress) {
+		this.endAddress = endAddress;
+	}
+
+	public String getEndCityName() {
+		return this.endCityName;
+	}
+	public void setEndCityName(String endCityName) {
+		this.endCityName = endCityName;
+	}
+
+	public String getEndLatitude() {
+		return this.endLatitude;
+	}
+	public void setEndLatitude(String endLatitude) {
+		this.endLatitude = endLatitude;
+	}
+
+	public String getEndLongitude() {
+		return this.endLongitude;
+	}
+	public void setEndLongitude(String endLongitude) {
+		this.endLongitude = endLongitude;
 	}
 
 	public String getEndTime() {
@@ -201,11 +273,32 @@ public class RentCarQuoteInfo extends AlipayObject {
 		this.startCityName = startCityName;
 	}
 
+	public String getStartLatitude() {
+		return this.startLatitude;
+	}
+	public void setStartLatitude(String startLatitude) {
+		this.startLatitude = startLatitude;
+	}
+
+	public String getStartLongitude() {
+		return this.startLongitude;
+	}
+	public void setStartLongitude(String startLongitude) {
+		this.startLongitude = startLongitude;
+	}
+
 	public String getStartTime() {
 		return this.startTime;
 	}
 	public void setStartTime(String startTime) {
 		this.startTime = startTime;
+	}
+
+	public Date getTraceDatetime() {
+		return this.traceDatetime;
+	}
+	public void setTraceDatetime(Date traceDatetime) {
+		this.traceDatetime = traceDatetime;
 	}
 
 }

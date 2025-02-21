@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HolidayRuleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8499975683442716188L;
+	private static final long serialVersionUID = 2793595399962528343L;
 
 	/**
 	 * 时间段

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayBossBaseAntauthorizeOrgroleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7164115771125236429L;
+	private static final long serialVersionUID = 3485337315139223624L;
 
 	/**
 	 * 场景用户查询对象-组织视角

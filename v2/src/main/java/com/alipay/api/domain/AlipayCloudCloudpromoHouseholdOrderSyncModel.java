@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCloudCloudpromoHouseholdOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2114831891948496782L;
+	private static final long serialVersionUID = 4234766283631465222L;
 
 	/**
 	 * 支付宝生成的订单id，没有则不传

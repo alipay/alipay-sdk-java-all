@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电商企业明细数据查询接口
  *
  * @author auto create
- * @since 1.0, 2025-01-06 15:44:45
+ * @since 1.0, 2025-02-20 15:11:53
  */
 public class ZhimaCreditEpCrossborderEcomcompanydetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6821226381879256198L;
+	private static final long serialVersionUID = 6454887273254597476L;
+
+	/**
+	 * 授权编号
+	 */
+	@ApiField("auth_id")
+	private String authId;
 
 	/**
 	 * 企业查询key：社会统一信用代码、注册号、企业名入参，建议优先使用统代
@@ -24,6 +30,13 @@ public class ZhimaCreditEpCrossborderEcomcompanydetailQueryModel extends AlipayO
 	 */
 	@ApiField("product_code")
 	private String productCode;
+
+	public String getAuthId() {
+		return this.authId;
+	}
+	public void setAuthId(String authId) {
+		this.authId = authId;
+	}
 
 	public String getCompanyKey() {
 		return this.companyKey;

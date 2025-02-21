@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class UserOccupationTagDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4119339138767454276L;
+	private static final long serialVersionUID = 7846485786578893114L;
 
 	/**
 	 * 用户职业占比

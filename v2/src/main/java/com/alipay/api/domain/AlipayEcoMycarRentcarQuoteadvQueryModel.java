@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租车车辆报价优势数据查询
  *
  * @author auto create
- * @since 1.0, 2024-10-15 14:56:35
+ * @since 1.0, 2025-02-20 16:30:55
  */
 public class AlipayEcoMycarRentcarQuoteadvQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8871154432624269392L;
+	private static final long serialVersionUID = 6714293241696197567L;
 
 	/**
 	 * 页码

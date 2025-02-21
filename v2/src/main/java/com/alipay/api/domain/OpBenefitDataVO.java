@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpBenefitDataVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5766166494892684636L;
+	private static final long serialVersionUID = 2697164575923276957L;
 
 	/**
 	 * 权益logo

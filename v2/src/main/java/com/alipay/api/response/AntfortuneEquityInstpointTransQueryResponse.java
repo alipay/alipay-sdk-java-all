@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntfortuneEquityInstpointTransQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4797183987387841835L;
+	private static final long serialVersionUID = 8874451966932572842L;
 
 	/** 
 	 * 查询到的结果

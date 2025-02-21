@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OmsItemInfoReq extends AlipayObject {
 
-	private static final long serialVersionUID = 5377192659777421187L;
+	private static final long serialVersionUID = 1839199554551839198L;
 
 	/**
 	 * 修改人

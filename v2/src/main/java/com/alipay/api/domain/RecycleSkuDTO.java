@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RecycleSkuDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2878366262189215829L;
+	private static final long serialVersionUID = 3542261224585819431L;
 
 	/**
 	 * null

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FenceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2571948392773959693L;
+	private static final long serialVersionUID = 8616713673444647975L;
 
 	/**
 	 * 电子围栏中心点纬度

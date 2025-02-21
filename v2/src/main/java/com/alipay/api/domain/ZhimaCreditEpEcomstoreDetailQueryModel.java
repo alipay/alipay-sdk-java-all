@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电商店铺明细数据查询
  *
  * @author auto create
- * @since 1.0, 2024-11-13 17:51:04
+ * @since 1.0, 2025-02-20 15:11:54
  */
 public class ZhimaCreditEpEcomstoreDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7242557626838531428L;
+	private static final long serialVersionUID = 4733224541369963818L;
+
+	/**
+	 * 授权编号
+	 */
+	@ApiField("auth_id")
+	private String authId;
 
 	/**
 	 * 店铺平台ID
@@ -30,6 +36,13 @@ public class ZhimaCreditEpEcomstoreDetailQueryModel extends AlipayObject {
 	 */
 	@ApiField("store_id")
 	private String storeId;
+
+	public String getAuthId() {
+		return this.authId;
+	}
+	public void setAuthId(String authId) {
+		this.authId = authId;
+	}
 
 	public String getPlatformId() {
 		return this.platformId;
