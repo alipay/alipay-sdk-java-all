@@ -4,12 +4,12 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**query**](AlipayFundJointaccountSignApi.md#query) | **GET** /v3/alipay/fund/jointaccount/sign/query | 企业签约结果查询 |
+| [**query**](AlipayFundJointaccountSignApi.md#query) | **POST** /v3/alipay/fund/jointaccount/sign/query | 企业签约结果查询 |
 
 
 <a name="query"></a>
 # **query**
-> AlipayFundJointaccountSignQueryResponseModel query(productCode, bizScene, outBizNo, accountId)
+> AlipayFundJointaccountSignQueryResponseModel query(alipayFundJointaccountSignQueryModel)
 
 企业签约结果查询
 
@@ -38,12 +38,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayFundJointaccountSignApi apiInstance = new AlipayFundJointaccountSignApi(defaultClient);
-    String productCode = "ENTERPRISE_PAY"; // String | 产品码，默认值 ENTERPRISE_PAY
-    String bizScene = "ISV_ALIYUN"; // String | 场景码，联系支付宝分配
-    String outBizNo = "123123132"; // String | 外部业务号，查询对应账户状态，优先级高于account_id
-    String accountId = "208812312313213"; // String | 企业签约账户ID,用于外部商户已获取企业签约ID，查询账户状态
+    AlipayFundJointaccountSignQueryModel alipayFundJointaccountSignQueryModel = new AlipayFundJointaccountSignQueryModel(); // AlipayFundJointaccountSignQueryModel | 
     try {
-      AlipayFundJointaccountSignQueryResponseModel result = apiInstance.query(productCode, bizScene, outBizNo, accountId);
+      AlipayFundJointaccountSignQueryResponseModel result = apiInstance.query(alipayFundJointaccountSignQueryModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayFundJointaccountSignApi#query");
@@ -60,10 +57,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **productCode** | **String**| 产品码，默认值 ENTERPRISE_PAY | [optional] |
-| **bizScene** | **String**| 场景码，联系支付宝分配 | [optional] |
-| **outBizNo** | **String**| 外部业务号，查询对应账户状态，优先级高于account_id | [optional] |
-| **accountId** | **String**| 企业签约账户ID,用于外部商户已获取企业签约ID，查询账户状态 | [optional] |
+| **alipayFundJointaccountSignQueryModel** | **AlipayFundJointaccountSignQueryModel**|  | [optional] |
 
 ### Return type
 
@@ -75,7 +69,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

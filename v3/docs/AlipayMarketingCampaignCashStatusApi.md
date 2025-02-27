@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="modify"></a>
 # **modify**
-> Object modify(alipayMarketingCampaignCashStatusModifyModel)
+> Object modify()
 
 更改现金活动状态
 
@@ -38,9 +38,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayMarketingCampaignCashStatusApi apiInstance = new AlipayMarketingCampaignCashStatusApi(defaultClient);
-    AlipayMarketingCampaignCashStatusModifyModel alipayMarketingCampaignCashStatusModifyModel = new AlipayMarketingCampaignCashStatusModifyModel(); // AlipayMarketingCampaignCashStatusModifyModel | 
     try {
-      Object result = apiInstance.modify(alipayMarketingCampaignCashStatusModifyModel);
+      Object result = apiInstance.modify();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayMarketingCampaignCashStatusApi#modify");
@@ -54,10 +53,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **alipayMarketingCampaignCashStatusModifyModel** | **AlipayMarketingCampaignCashStatusModifyModel**|  | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -69,7 +65,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

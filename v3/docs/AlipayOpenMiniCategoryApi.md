@@ -4,12 +4,12 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**query**](AlipayOpenMiniCategoryApi.md#query) | **GET** /v3/alipay/open/mini/category/query | 小程序类目树查询 |
+| [**query**](AlipayOpenMiniCategoryApi.md#query) | **POST** /v3/alipay/open/mini/category/query | 小程序类目树查询 |
 
 
 <a name="query"></a>
 # **query**
-> AlipayOpenMiniCategoryQueryResponseModel query(isFilter)
+> AlipayOpenMiniCategoryQueryResponseModel query()
 
 小程序类目树查询
 
@@ -38,9 +38,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenMiniCategoryApi apiInstance = new AlipayOpenMiniCategoryApi(defaultClient);
-    Boolean isFilter = true; // Boolean | 是否过滤小程序不可用类目。枚举值如下： true：表示过滤不可用类目。 false：表示不过滤不可用类目。
     try {
-      AlipayOpenMiniCategoryQueryResponseModel result = apiInstance.query(isFilter);
+      AlipayOpenMiniCategoryQueryResponseModel result = apiInstance.query();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenMiniCategoryApi#query");
@@ -54,10 +53,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **isFilter** | **Boolean**| 是否过滤小程序不可用类目。枚举值如下： true：表示过滤不可用类目。 false：表示不过滤不可用类目。 | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 

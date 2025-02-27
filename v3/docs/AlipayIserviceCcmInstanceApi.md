@@ -5,8 +5,8 @@ All URIs are relative to *https://openapi.alipay.com*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**create**](AlipayIserviceCcmInstanceApi.md#create) | **POST** /v3/alipay/iservice/ccm/instance/create | 创建租户实例 |
-| [**get**](AlipayIserviceCcmInstanceApi.md#get) | **GET** /v3/alipay/iservice/ccm/instance/get | 查询单个租户实例（数据权限） |
-| [**query**](AlipayIserviceCcmInstanceApi.md#query) | **GET** /v3/alipay/iservice/ccm/instance/query | 列出所有的租户实例（数据权限） |
+| [**get**](AlipayIserviceCcmInstanceApi.md#get) | **POST** /v3/alipay/iservice/ccm/instance/get | 查询单个租户实例（数据权限） |
+| [**query**](AlipayIserviceCcmInstanceApi.md#query) | **POST** /v3/alipay/iservice/ccm/instance/query | 列出所有的租户实例（数据权限） |
 
 
 <a name="create"></a>
@@ -82,7 +82,7 @@ No authorization required
 
 <a name="get"></a>
 # **get**
-> AlipayIserviceCcmInstanceGetResponseModel get(id, externalId)
+> AlipayIserviceCcmInstanceGetResponseModel get(alipayIserviceCcmInstanceGetModel)
 
 查询单个租户实例（数据权限）
 
@@ -111,10 +111,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayIserviceCcmInstanceApi apiInstance = new AlipayIserviceCcmInstanceApi(defaultClient);
-    String id = "pYv_gs0m"; // String | 部门id（即租户实例ID、数据权限ID）
-    String externalId = "5544744"; // String | 外部id
+    AlipayIserviceCcmInstanceGetModel alipayIserviceCcmInstanceGetModel = new AlipayIserviceCcmInstanceGetModel(); // AlipayIserviceCcmInstanceGetModel | 
     try {
-      AlipayIserviceCcmInstanceGetResponseModel result = apiInstance.get(id, externalId);
+      AlipayIserviceCcmInstanceGetResponseModel result = apiInstance.get(alipayIserviceCcmInstanceGetModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayIserviceCcmInstanceApi#get");
@@ -131,8 +130,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **id** | **String**| 部门id（即租户实例ID、数据权限ID） | [optional] |
-| **externalId** | **String**| 外部id | [optional] |
+| **alipayIserviceCcmInstanceGetModel** | **AlipayIserviceCcmInstanceGetModel**|  | [optional] |
 
 ### Return type
 
@@ -144,7 +142,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -155,7 +153,7 @@ No authorization required
 
 <a name="query"></a>
 # **query**
-> AlipayIserviceCcmInstanceQueryResponseModel query(pageNum, pageSize)
+> AlipayIserviceCcmInstanceQueryResponseModel query(alipayIserviceCcmInstanceQueryModel)
 
 列出所有的租户实例（数据权限）
 
@@ -184,10 +182,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayIserviceCcmInstanceApi apiInstance = new AlipayIserviceCcmInstanceApi(defaultClient);
-    Integer pageNum = 1; // Integer | 查询结果的页码，起始值为 1，默认值为 1
-    Integer pageSize = 10; // Integer | 分页查询时设置的每页记录数，最大值 100 行，默认为 10
+    AlipayIserviceCcmInstanceQueryModel alipayIserviceCcmInstanceQueryModel = new AlipayIserviceCcmInstanceQueryModel(); // AlipayIserviceCcmInstanceQueryModel | 
     try {
-      AlipayIserviceCcmInstanceQueryResponseModel result = apiInstance.query(pageNum, pageSize);
+      AlipayIserviceCcmInstanceQueryResponseModel result = apiInstance.query(alipayIserviceCcmInstanceQueryModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayIserviceCcmInstanceApi#query");
@@ -204,8 +201,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **pageNum** | **Integer**| 查询结果的页码，起始值为 1，默认值为 1 | [optional] |
-| **pageSize** | **Integer**| 分页查询时设置的每页记录数，最大值 100 行，默认为 10 | [optional] |
+| **alipayIserviceCcmInstanceQueryModel** | **AlipayIserviceCcmInstanceQueryModel**|  | [optional] |
 
 ### Return type
 
@@ -217,7 +213,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

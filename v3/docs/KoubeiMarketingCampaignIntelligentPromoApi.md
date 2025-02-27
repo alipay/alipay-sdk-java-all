@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="batchquery"></a>
 # **batchquery**
-> KoubeiMarketingCampaignIntelligentPromoBatchqueryResponseModel batchquery(koubeiMarketingCampaignIntelligentPromoBatchqueryModel)
+> KoubeiMarketingCampaignIntelligentPromoBatchqueryResponseModel batchquery()
 
 智能营销活动批量查询
 
@@ -38,9 +38,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     KoubeiMarketingCampaignIntelligentPromoApi apiInstance = new KoubeiMarketingCampaignIntelligentPromoApi(defaultClient);
-    KoubeiMarketingCampaignIntelligentPromoBatchqueryModel koubeiMarketingCampaignIntelligentPromoBatchqueryModel = new KoubeiMarketingCampaignIntelligentPromoBatchqueryModel(); // KoubeiMarketingCampaignIntelligentPromoBatchqueryModel | 
     try {
-      KoubeiMarketingCampaignIntelligentPromoBatchqueryResponseModel result = apiInstance.batchquery(koubeiMarketingCampaignIntelligentPromoBatchqueryModel);
+      KoubeiMarketingCampaignIntelligentPromoBatchqueryResponseModel result = apiInstance.batchquery();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling KoubeiMarketingCampaignIntelligentPromoApi#batchquery");
@@ -54,10 +53,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **koubeiMarketingCampaignIntelligentPromoBatchqueryModel** | **KoubeiMarketingCampaignIntelligentPromoBatchqueryModel**|  | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -69,7 +65,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

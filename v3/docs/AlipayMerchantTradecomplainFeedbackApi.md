@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="submit"></a>
 # **submit**
-> Object submit(alipayMerchantTradecomplainFeedbackSubmitModel)
+> Object submit()
 
 商家处理交易投诉
 
@@ -38,9 +38,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayMerchantTradecomplainFeedbackApi apiInstance = new AlipayMerchantTradecomplainFeedbackApi(defaultClient);
-    AlipayMerchantTradecomplainFeedbackSubmitModel alipayMerchantTradecomplainFeedbackSubmitModel = new AlipayMerchantTradecomplainFeedbackSubmitModel(); // AlipayMerchantTradecomplainFeedbackSubmitModel | 
     try {
-      Object result = apiInstance.submit(alipayMerchantTradecomplainFeedbackSubmitModel);
+      Object result = apiInstance.submit();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayMerchantTradecomplainFeedbackApi#submit");
@@ -54,10 +53,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **alipayMerchantTradecomplainFeedbackSubmitModel** | **AlipayMerchantTradecomplainFeedbackSubmitModel**|  | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -69,7 +65,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

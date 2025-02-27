@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="sync"></a>
 # **sync**
-> AlipayMarketingCardConsumeSyncResponseModel sync(alipayMarketingCardConsumeSyncModel)
+> AlipayMarketingCardConsumeSyncResponseModel sync()
 
 会员卡消费记录同步
 
@@ -38,9 +38,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayMarketingCardConsumeApi apiInstance = new AlipayMarketingCardConsumeApi(defaultClient);
-    AlipayMarketingCardConsumeSyncModel alipayMarketingCardConsumeSyncModel = new AlipayMarketingCardConsumeSyncModel(); // AlipayMarketingCardConsumeSyncModel | 
     try {
-      AlipayMarketingCardConsumeSyncResponseModel result = apiInstance.sync(alipayMarketingCardConsumeSyncModel);
+      AlipayMarketingCardConsumeSyncResponseModel result = apiInstance.sync();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayMarketingCardConsumeApi#sync");
@@ -54,10 +53,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **alipayMarketingCardConsumeSyncModel** | **AlipayMarketingCardConsumeSyncModel**|  | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -69,7 +65,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

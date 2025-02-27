@@ -4,15 +4,15 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**batchquery**](AlipayIserviceCcmSwLibraryApi.md#batchquery) | **GET** /v3/alipay/iservice/ccm/sw/library/batchquery | 知识库-库-批量查询 |
-| [**create**](AlipayIserviceCcmSwLibraryApi.md#create) | **PUT** /v3/alipay/iservice/ccm/sw/library/create | 知识库-库-创建 |
-| [**delete**](AlipayIserviceCcmSwLibraryApi.md#delete) | **DELETE** /v3/alipay/iservice/ccm/sw/library/delete | 知识库-库-删除 |
-| [**modify**](AlipayIserviceCcmSwLibraryApi.md#modify) | **PATCH** /v3/alipay/iservice/ccm/sw/library/modify | 知识库-库-修改 |
+| [**batchquery**](AlipayIserviceCcmSwLibraryApi.md#batchquery) | **POST** /v3/alipay/iservice/ccm/sw/library/batchquery | 知识库-库-批量查询 |
+| [**create**](AlipayIserviceCcmSwLibraryApi.md#create) | **POST** /v3/alipay/iservice/ccm/sw/library/create | 知识库-库-创建 |
+| [**delete**](AlipayIserviceCcmSwLibraryApi.md#delete) | **POST** /v3/alipay/iservice/ccm/sw/library/delete | 知识库-库-删除 |
+| [**modify**](AlipayIserviceCcmSwLibraryApi.md#modify) | **POST** /v3/alipay/iservice/ccm/sw/library/modify | 知识库-库-修改 |
 
 
 <a name="batchquery"></a>
 # **batchquery**
-> AlipayIserviceCcmSwLibraryBatchqueryResponseModel batchquery(ccsInstanceId)
+> AlipayIserviceCcmSwLibraryBatchqueryResponseModel batchquery(alipayIserviceCcmSwLibraryBatchqueryModel)
 
 知识库-库-批量查询
 
@@ -41,9 +41,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayIserviceCcmSwLibraryApi apiInstance = new AlipayIserviceCcmSwLibraryApi(defaultClient);
-    String ccsInstanceId = "ZPNASDK"; // String | 子部门ID，不传为默认部门
+    AlipayIserviceCcmSwLibraryBatchqueryModel alipayIserviceCcmSwLibraryBatchqueryModel = new AlipayIserviceCcmSwLibraryBatchqueryModel(); // AlipayIserviceCcmSwLibraryBatchqueryModel | 
     try {
-      AlipayIserviceCcmSwLibraryBatchqueryResponseModel result = apiInstance.batchquery(ccsInstanceId);
+      AlipayIserviceCcmSwLibraryBatchqueryResponseModel result = apiInstance.batchquery(alipayIserviceCcmSwLibraryBatchqueryModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayIserviceCcmSwLibraryApi#batchquery");
@@ -60,7 +60,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **ccsInstanceId** | **String**| 子部门ID，不传为默认部门 | [optional] |
+| **alipayIserviceCcmSwLibraryBatchqueryModel** | **AlipayIserviceCcmSwLibraryBatchqueryModel**|  | [optional] |
 
 ### Return type
 
@@ -72,7 +72,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -154,7 +154,7 @@ No authorization required
 
 <a name="delete"></a>
 # **delete**
-> Object delete()
+> Object delete(alipayIserviceCcmSwLibraryDeleteModel)
 
 知识库-库-删除
 
@@ -183,8 +183,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayIserviceCcmSwLibraryApi apiInstance = new AlipayIserviceCcmSwLibraryApi(defaultClient);
+    AlipayIserviceCcmSwLibraryDeleteModel alipayIserviceCcmSwLibraryDeleteModel = new AlipayIserviceCcmSwLibraryDeleteModel(); // AlipayIserviceCcmSwLibraryDeleteModel | 
     try {
-      Object result = apiInstance.delete();
+      Object result = apiInstance.delete(alipayIserviceCcmSwLibraryDeleteModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayIserviceCcmSwLibraryApi#delete");
@@ -198,7 +199,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayIserviceCcmSwLibraryDeleteModel** | **AlipayIserviceCcmSwLibraryDeleteModel**|  | [optional] |
 
 ### Return type
 
@@ -210,7 +214,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

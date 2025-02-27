@@ -10,7 +10,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="recall"></a>
 # **recall**
-> Object recall(alipayOpenPublicLifeMsgRecallModel)
+> Object recall()
 
 生活号消息撤回接口
 
@@ -39,9 +39,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenPublicLifeMsgApi apiInstance = new AlipayOpenPublicLifeMsgApi(defaultClient);
-    AlipayOpenPublicLifeMsgRecallModel alipayOpenPublicLifeMsgRecallModel = new AlipayOpenPublicLifeMsgRecallModel(); // AlipayOpenPublicLifeMsgRecallModel | 
     try {
-      Object result = apiInstance.recall(alipayOpenPublicLifeMsgRecallModel);
+      Object result = apiInstance.recall();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenPublicLifeMsgApi#recall");
@@ -55,10 +54,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **alipayOpenPublicLifeMsgRecallModel** | **AlipayOpenPublicLifeMsgRecallModel**|  | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -70,7 +66,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

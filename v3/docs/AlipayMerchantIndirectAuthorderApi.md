@@ -4,7 +4,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**close**](AlipayMerchantIndirectAuthorderApi.md#close) | **PUT** /v3/alipay/merchant/indirect/authorder/close | 商家认证申请单撤销 |
+| [**close**](AlipayMerchantIndirectAuthorderApi.md#close) | **POST** /v3/alipay/merchant/indirect/authorder/close | 商家认证申请单撤销 |
 | [**create**](AlipayMerchantIndirectAuthorderApi.md#create) | **POST** /v3/alipay/merchant/indirect/authorder/create | 商家认证申请单提交 |
 | [**querystatus**](AlipayMerchantIndirectAuthorderApi.md#querystatus) | **POST** /v3/alipay/merchant/indirect/authorder/querystatus | 查询商家认证申请单状态 |
 

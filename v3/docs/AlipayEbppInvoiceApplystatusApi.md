@@ -4,12 +4,12 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**query**](AlipayEbppInvoiceApplystatusApi.md#query) | **POST** /v3/alipay/ebpp/invoice/applystatus/query | 根据外部订单号查询开票状态 |
+| [**query**](AlipayEbppInvoiceApplystatusApi.md#query) | **GET** /v3/alipay/ebpp/invoice/applystatus/query | 根据外部订单号查询开票状态 |
 
 
 <a name="query"></a>
 # **query**
-> AlipayEbppInvoiceApplystatusQueryResponseModel query(alipayEbppInvoiceApplystatusQueryModel)
+> AlipayEbppInvoiceApplystatusQueryResponseModel query(orderNoList, mShortName, subMShortName)
 
 根据外部订单号查询开票状态
 
@@ -38,9 +38,11 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayEbppInvoiceApplystatusApi apiInstance = new AlipayEbppInvoiceApplystatusApi(defaultClient);
-    AlipayEbppInvoiceApplystatusQueryModel alipayEbppInvoiceApplystatusQueryModel = new AlipayEbppInvoiceApplystatusQueryModel(); // AlipayEbppInvoiceApplystatusQueryModel | 
+    List<String> orderNoList = Arrays.asList(); // List<String> | 待查询订单开票状态列表，各订单号间通过英文逗号分割，不限于支付宝体内交易订单号。如：20200520110046966071,20200520110046966072,20200520110046966073
+    String mShortName = "KFC"; // String | 定义商户的一级简称,用于标识商户品牌，对应于商户入驻时填写的\"商户品牌简称\"。 如：肯德基：KFC
+    String subMShortName = "KFC-HZ-19003"; // String | 定义商户的二级简称,用于标识商户品牌下的分支机构，如门店，对应于商户入驻时填写的\"商户门店简称\"。 如：肯德基-杭州西湖区文一西路店：KFC-HZ-19003 要求：\"商户品牌简称+商户门店简称\"作为确定商户及其下属机构的唯一标识，不可重复。
     try {
-      AlipayEbppInvoiceApplystatusQueryResponseModel result = apiInstance.query(alipayEbppInvoiceApplystatusQueryModel);
+      AlipayEbppInvoiceApplystatusQueryResponseModel result = apiInstance.query(orderNoList, mShortName, subMShortName);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayEbppInvoiceApplystatusApi#query");
@@ -57,7 +59,9 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **alipayEbppInvoiceApplystatusQueryModel** | **AlipayEbppInvoiceApplystatusQueryModel**|  | [optional] |
+| **orderNoList** | **List&lt;String&gt;**| 待查询订单开票状态列表，各订单号间通过英文逗号分割，不限于支付宝体内交易订单号。如：20200520110046966071,20200520110046966072,20200520110046966073 | [optional] |
+| **mShortName** | **String**| 定义商户的一级简称,用于标识商户品牌，对应于商户入驻时填写的\&quot;商户品牌简称\&quot;。 如：肯德基：KFC | [optional] |
+| **subMShortName** | **String**| 定义商户的二级简称,用于标识商户品牌下的分支机构，如门店，对应于商户入驻时填写的\&quot;商户门店简称\&quot;。 如：肯德基-杭州西湖区文一西路店：KFC-HZ-19003 要求：\&quot;商户品牌简称+商户门店简称\&quot;作为确定商户及其下属机构的唯一标识，不可重复。 | [optional] |
 
 ### Return type
 
@@ -69,7 +73,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

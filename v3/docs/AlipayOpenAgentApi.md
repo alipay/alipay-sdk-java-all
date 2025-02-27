@@ -11,7 +11,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="cancel"></a>
 # **cancel**
-> Object cancel(alipayOpenAgentCancelModel)
+> Object cancel()
 
 取消代商户签约、创建应用事务
 
@@ -40,9 +40,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenAgentApi apiInstance = new AlipayOpenAgentApi(defaultClient);
-    AlipayOpenAgentCancelModel alipayOpenAgentCancelModel = new AlipayOpenAgentCancelModel(); // AlipayOpenAgentCancelModel | 
     try {
-      Object result = apiInstance.cancel(alipayOpenAgentCancelModel);
+      Object result = apiInstance.cancel();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenAgentApi#cancel");
@@ -56,10 +55,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **alipayOpenAgentCancelModel** | **AlipayOpenAgentCancelModel**|  | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -71,7 +67,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

@@ -4,12 +4,12 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**query**](AlipayIserviceCcmOlsChatrecordApi.md#query) | **GET** /v3/alipay/iservice/ccm/ols/chatrecord/query | 查询某通在线服务的聊天记录 |
+| [**query**](AlipayIserviceCcmOlsChatrecordApi.md#query) | **POST** /v3/alipay/iservice/ccm/ols/chatrecord/query | 查询某通在线服务的聊天记录 |
 
 
 <a name="query"></a>
 # **query**
-> AlipayIserviceCcmOlsChatrecordQueryResponseModel query(ccsInstanceId, id)
+> AlipayIserviceCcmOlsChatrecordQueryResponseModel query(alipayIserviceCcmOlsChatrecordQueryModel)
 
 查询某通在线服务的聊天记录
 
@@ -38,10 +38,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayIserviceCcmOlsChatrecordApi apiInstance = new AlipayIserviceCcmOlsChatrecordApi(defaultClient);
-    String ccsInstanceId = "ZPSDWACN"; // String | 租户实例id（数据权限id），不填，则使用默认的租户实例id
-    String id = "201909021113010100000001922200"; // String | 在线服务记录id
+    AlipayIserviceCcmOlsChatrecordQueryModel alipayIserviceCcmOlsChatrecordQueryModel = new AlipayIserviceCcmOlsChatrecordQueryModel(); // AlipayIserviceCcmOlsChatrecordQueryModel | 
     try {
-      AlipayIserviceCcmOlsChatrecordQueryResponseModel result = apiInstance.query(ccsInstanceId, id);
+      AlipayIserviceCcmOlsChatrecordQueryResponseModel result = apiInstance.query(alipayIserviceCcmOlsChatrecordQueryModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayIserviceCcmOlsChatrecordApi#query");
@@ -58,8 +57,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **ccsInstanceId** | **String**| 租户实例id（数据权限id），不填，则使用默认的租户实例id | [optional] |
-| **id** | **String**| 在线服务记录id | [optional] |
+| **alipayIserviceCcmOlsChatrecordQueryModel** | **AlipayIserviceCcmOlsChatrecordQueryModel**|  | [optional] |
 
 ### Return type
 
@@ -71,7 +69,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

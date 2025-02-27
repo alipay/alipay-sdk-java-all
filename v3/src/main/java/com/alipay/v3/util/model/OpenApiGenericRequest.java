@@ -28,24 +28,14 @@ public class OpenApiGenericRequest {
     private Map<String, Object> queryParams;
 
     /**
-     * body参数
-     */
-    private Map<String, Object> bodyParams;
-
-    /**
-     * 业务参数（废弃，请使用 bodyParams）
+     * 业务参数
      */
     private Map<String, Object> bizParams;
 
     /**
-     * 文件参数（fileParams或byteStreamParams不为空则表示文件上传）
+     * 文件参数（fileParams不为空则表示文件上传）
      */
     private Map<String, File> fileParams;
-
-    /**
-     * 字节流参数（fileParams或byteStreamParams不为空则表示文件上传）
-     */
-    private Map<String, ByteStreamWrapper> byteStreamParams;
 
     /**
      * 额外的header参数
@@ -107,24 +97,6 @@ public class OpenApiGenericRequest {
     }
 
     /**
-     * Getter method for property <tt>bodyParams</tt>.
-     *
-     * @return property value of bodyParams
-     */
-    public Map<String, Object> getBodyParams() {
-        return bodyParams;
-    }
-
-    /**
-     * Setter method for property <tt>bodyParams</tt>.
-     *
-     * @param bodyParams value to be assigned to property bodyParams
-     */
-    public void setBodyParams(Map<String, Object> bodyParams) {
-        this.bodyParams = bodyParams;
-    }
-
-    /**
      * Getter method for property <tt>bizParams</tt>.
      *
      * @return property value of bizParams
@@ -138,7 +110,6 @@ public class OpenApiGenericRequest {
      *
      * @param bizParams value to be assigned to property bizParams
      */
-    @Deprecated
     public void setBizParams(Map<String, Object> bizParams) {
         this.bizParams = bizParams;
     }
@@ -177,23 +148,5 @@ public class OpenApiGenericRequest {
      */
     public void setHeaderParams(Map<String, String> headerParams) {
         this.headerParams = headerParams;
-    }
-
-    /**
-     * Getter method for property <tt>byteStreamParams</tt>.
-     *
-     * @return property value of byteStreamParams
-     */
-    public Map<String, ByteStreamWrapper> getByteStreamParams() {
-        return byteStreamParams;
-    }
-
-    /**
-     * Setter method for property <tt>byteStreamParams</tt>.
-     *
-     * @param byteStreamParams value to be assigned to property byteStreamParams
-     */
-    public void setByteStreamParams(Map<String, ByteStreamWrapper> byteStreamParams) {
-        this.byteStreamParams = byteStreamParams;
     }
 }

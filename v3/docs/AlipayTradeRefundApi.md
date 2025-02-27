@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="apply"></a>
 # **apply**
-> AlipayTradeRefundApplyResponseModel apply(alipayTradeRefundApplyModel)
+> AlipayTradeRefundApplyResponseModel apply(commonNotifyUrlModel)
 
 异步退款受理接口
 
@@ -38,9 +38,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayTradeRefundApi apiInstance = new AlipayTradeRefundApi(defaultClient);
-    AlipayTradeRefundApplyModel alipayTradeRefundApplyModel = new AlipayTradeRefundApplyModel(); // AlipayTradeRefundApplyModel | 
+    CommonNotifyUrlModel commonNotifyUrlModel = new CommonNotifyUrlModel(); // CommonNotifyUrlModel | 
     try {
-      AlipayTradeRefundApplyResponseModel result = apiInstance.apply(alipayTradeRefundApplyModel);
+      AlipayTradeRefundApplyResponseModel result = apiInstance.apply(commonNotifyUrlModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayTradeRefundApi#apply");
@@ -57,7 +57,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **alipayTradeRefundApplyModel** | **AlipayTradeRefundApplyModel**|  | [optional] |
+| **commonNotifyUrlModel** | **CommonNotifyUrlModel**|  | [optional] |
 
 ### Return type
 

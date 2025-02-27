@@ -4,12 +4,12 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**query**](AlipayOpenPublicLifeAgentcreateApi.md#query) | **GET** /v3/alipay/open/public/life/agentcreate/query | isv代创建生活号申请状态查询接口 |
+| [**query**](AlipayOpenPublicLifeAgentcreateApi.md#query) | **POST** /v3/alipay/open/public/life/agentcreate/query | isv代创建生活号申请状态查询接口 |
 
 
 <a name="query"></a>
 # **query**
-> AlipayOpenPublicLifeAgentcreateQueryResponseModel query(outBizNo)
+> AlipayOpenPublicLifeAgentcreateQueryResponseModel query()
 
 isv代创建生活号申请状态查询接口
 
@@ -38,9 +38,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenPublicLifeAgentcreateApi apiInstance = new AlipayOpenPublicLifeAgentcreateApi(defaultClient);
-    String outBizNo = "2016070788301823878"; // String | 由开发者创建的外部入驻申请单据号，需与<a href=\"https://opendocs.alipay.com/apis/api_6/alipay.open.public.life.agent.create\">alipay.open.public.life.agent.create</a>(isv代创建生活号接口)的out_biz_no一致。
     try {
-      AlipayOpenPublicLifeAgentcreateQueryResponseModel result = apiInstance.query(outBizNo);
+      AlipayOpenPublicLifeAgentcreateQueryResponseModel result = apiInstance.query();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenPublicLifeAgentcreateApi#query");
@@ -54,10 +53,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **outBizNo** | **String**| 由开发者创建的外部入驻申请单据号，需与&lt;a href&#x3D;\&quot;https://opendocs.alipay.com/apis/api_6/alipay.open.public.life.agent.create\&quot;&gt;alipay.open.public.life.agent.create&lt;/a&gt;(isv代创建生活号接口)的out_biz_no一致。 | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 

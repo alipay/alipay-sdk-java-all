@@ -15,7 +15,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 制度新增
 
-制度新增，包含制度下使用规则列表、发放规则列表和适用范围的新增。
+制度新增，包含制度下使用规则列表和发放规则列表的新增。
 
 ### Example
 ```java
@@ -111,8 +111,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayEbppInvoiceInstitutionApi apiInstance = new AlipayEbppInvoiceInstitutionApi(defaultClient);
-    String accountId = "2088000194958956"; // String | 企业共同账户id（该字段将废弃，不建议使用，可用enterprise_id字段替换）(该字段将废弃，不建议使用，可用enterprise_id字段替换)
-    String agreementNo = "20215425001181407500"; // String | 授权签约协议号 （该字段将废弃，不建议使用，可用enterprise_id字段替换）(该字段将废弃，不建议使用，可用enterprise_id字段替换)
+    String accountId = "2088000194958956"; // String | 企业共同账户id
+    String agreementNo = "20215425001181407500"; // String | 授权签约协议号
     String enterpriseId = "2088123412341234"; // String | 企业id
     String institutionId = "2022031000152617000000000001"; // String | 制度id
     try {
@@ -133,8 +133,8 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **accountId** | **String**| 企业共同账户id（该字段将废弃，不建议使用，可用enterprise_id字段替换）(该字段将废弃，不建议使用，可用enterprise_id字段替换) | [optional] |
-| **agreementNo** | **String**| 授权签约协议号 （该字段将废弃，不建议使用，可用enterprise_id字段替换）(该字段将废弃，不建议使用，可用enterprise_id字段替换) | [optional] |
+| **accountId** | **String**| 企业共同账户id | [optional] |
+| **agreementNo** | **String**| 授权签约协议号 | [optional] |
 | **enterpriseId** | **String**| 企业id | [optional] |
 | **institutionId** | **String**| 制度id | [optional] |
 
@@ -163,7 +163,7 @@ No authorization required
 
 制度编辑
 
-制度编辑，支持制度基本信息、制度下适用范围、制度下使用规则和发放规则的修改。
+制度编辑
 
 ### Example
 ```java

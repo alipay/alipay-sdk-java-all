@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="modify"></a>
 # **modify**
-> AlipayEcoEduKtSchoolinfoModifyResponseModel modify(alipayEcoEduKtSchoolinfoModifyModel)
+> AlipayEcoEduKtSchoolinfoModifyResponseModel modify()
 
 教育缴费学校信息录入接口
 
@@ -38,9 +38,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayEcoEduKtSchoolinfoApi apiInstance = new AlipayEcoEduKtSchoolinfoApi(defaultClient);
-    AlipayEcoEduKtSchoolinfoModifyModel alipayEcoEduKtSchoolinfoModifyModel = new AlipayEcoEduKtSchoolinfoModifyModel(); // AlipayEcoEduKtSchoolinfoModifyModel | 
     try {
-      AlipayEcoEduKtSchoolinfoModifyResponseModel result = apiInstance.modify(alipayEcoEduKtSchoolinfoModifyModel);
+      AlipayEcoEduKtSchoolinfoModifyResponseModel result = apiInstance.modify();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayEcoEduKtSchoolinfoApi#modify");
@@ -54,10 +53,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **alipayEcoEduKtSchoolinfoModifyModel** | **AlipayEcoEduKtSchoolinfoModifyModel**|  | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -69,7 +65,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

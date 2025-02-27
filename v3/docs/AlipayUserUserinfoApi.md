@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="share"></a>
 # **share**
-> AlipayUserUserinfoShareResponseModel share()
+> AlipayUserUserinfoShareResponseModel share(alipayUserUserinfoShareModel)
 
 支付宝钱包用户信息共享
 
@@ -38,8 +38,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayUserUserinfoApi apiInstance = new AlipayUserUserinfoApi(defaultClient);
+    AlipayUserUserinfoShareModel alipayUserUserinfoShareModel = new AlipayUserUserinfoShareModel(); // AlipayUserUserinfoShareModel | 
     try {
-      AlipayUserUserinfoShareResponseModel result = apiInstance.share();
+      AlipayUserUserinfoShareResponseModel result = apiInstance.share(alipayUserUserinfoShareModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayUserUserinfoApi#share");
@@ -53,7 +54,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayUserUserinfoShareModel** | **AlipayUserUserinfoShareModel**|  | [optional] |
 
 ### Return type
 
@@ -65,7 +69,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="freeze"></a>
 # **freeze**
-> AlipayFundAuthOrderAppFreezeResponseModel freeze(alipayFundAuthOrderAppFreezeModel)
+> AlipayFundAuthOrderAppFreezeResponseModel freeze(commonNotifyUrlModel)
 
 线上资金授权冻结接口
 
@@ -38,9 +38,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayFundAuthOrderAppApi apiInstance = new AlipayFundAuthOrderAppApi(defaultClient);
-    AlipayFundAuthOrderAppFreezeModel alipayFundAuthOrderAppFreezeModel = new AlipayFundAuthOrderAppFreezeModel(); // AlipayFundAuthOrderAppFreezeModel | 
+    CommonNotifyUrlModel commonNotifyUrlModel = new CommonNotifyUrlModel(); // CommonNotifyUrlModel | 
     try {
-      AlipayFundAuthOrderAppFreezeResponseModel result = apiInstance.freeze(alipayFundAuthOrderAppFreezeModel);
+      AlipayFundAuthOrderAppFreezeResponseModel result = apiInstance.freeze(commonNotifyUrlModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayFundAuthOrderAppApi#freeze");
@@ -57,7 +57,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **alipayFundAuthOrderAppFreezeModel** | **AlipayFundAuthOrderAppFreezeModel**|  | [optional] |
+| **commonNotifyUrlModel** | **CommonNotifyUrlModel**|  | [optional] |
 
 ### Return type
 

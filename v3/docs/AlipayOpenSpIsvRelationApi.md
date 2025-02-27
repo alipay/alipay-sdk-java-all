@@ -4,12 +4,12 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**query**](AlipayOpenSpIsvRelationApi.md#query) | **GET** /v3/alipay/open/sp/isv/relation/query | spcenter服务商推广关系查询 |
+| [**query**](AlipayOpenSpIsvRelationApi.md#query) | **POST** /v3/alipay/open/sp/isv/relation/query | spcenter服务商推广关系查询 |
 
 
 <a name="query"></a>
 # **query**
-> AlipayOpenSpIsvRelationQueryResponseModel query(commodityId, pageSize, pageNum)
+> AlipayOpenSpIsvRelationQueryResponseModel query(alipayOpenSpIsvRelationQueryModel)
 
 spcenter服务商推广关系查询
 
@@ -38,11 +38,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenSpIsvRelationApi apiInstance = new AlipayOpenSpIsvRelationApi(defaultClient);
-    String commodityId = "SS010301000000001908"; // String | 服务市场商品Code
-    String pageSize = "10"; // String | 每页数量，范围(1-100)。默认：10
-    String pageNum = "1"; // String | 当前页码，从1开始。默认：1
+    AlipayOpenSpIsvRelationQueryModel alipayOpenSpIsvRelationQueryModel = new AlipayOpenSpIsvRelationQueryModel(); // AlipayOpenSpIsvRelationQueryModel | 
     try {
-      AlipayOpenSpIsvRelationQueryResponseModel result = apiInstance.query(commodityId, pageSize, pageNum);
+      AlipayOpenSpIsvRelationQueryResponseModel result = apiInstance.query(alipayOpenSpIsvRelationQueryModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenSpIsvRelationApi#query");
@@ -59,9 +57,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **commodityId** | **String**| 服务市场商品Code | [optional] |
-| **pageSize** | **String**| 每页数量，范围(1-100)。默认：10 | [optional] |
-| **pageNum** | **String**| 当前页码，从1开始。默认：1 | [optional] |
+| **alipayOpenSpIsvRelationQueryModel** | **AlipayOpenSpIsvRelationQueryModel**|  | [optional] |
 
 ### Return type
 
@@ -73,7 +69,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

@@ -4,12 +4,12 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**query**](AlipayOfflineMarketShopCategoryApi.md#query) | **GET** /v3/alipay/offline/market/shop/category/query | 门店类目配置查询接口 |
+| [**query**](AlipayOfflineMarketShopCategoryApi.md#query) | **POST** /v3/alipay/offline/market/shop/category/query | 门店类目配置查询接口 |
 
 
 <a name="query"></a>
 # **query**
-> AlipayOfflineMarketShopCategoryQueryResponseModel query(categoryId, opRole)
+> AlipayOfflineMarketShopCategoryQueryResponseModel query()
 
 门店类目配置查询接口
 
@@ -38,10 +38,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOfflineMarketShopCategoryApi apiInstance = new AlipayOfflineMarketShopCategoryApi(defaultClient);
-    String categoryId = "2015050700000000"; // String | 类目ID，如果为空则查询全部类目。
-    String opRole = "ISV"; // String | 表示接口业务的调用方身份,默认不填标识为ISV。
     try {
-      AlipayOfflineMarketShopCategoryQueryResponseModel result = apiInstance.query(categoryId, opRole);
+      AlipayOfflineMarketShopCategoryQueryResponseModel result = apiInstance.query();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOfflineMarketShopCategoryApi#query");
@@ -55,11 +53,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **categoryId** | **String**| 类目ID，如果为空则查询全部类目。 | [optional] |
-| **opRole** | **String**| 表示接口业务的调用方身份,默认不填标识为ISV。 | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 

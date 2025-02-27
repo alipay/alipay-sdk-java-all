@@ -6,7 +6,7 @@ All URIs are relative to *https://openapi.alipay.com*
 |------------- | ------------- | -------------|
 | [**batchquery**](AlipayOpenPublicPersonalizedExtensionApi.md#batchquery) | **POST** /v3/alipay/open/public/personalized/extension/batchquery | 扩展区批量查询接口 |
 | [**create**](AlipayOpenPublicPersonalizedExtensionApi.md#create) | **POST** /v3/alipay/open/public/personalized/extension/create | 个性化扩展区创建接口 |
-| [**delete**](AlipayOpenPublicPersonalizedExtensionApi.md#delete) | **DELETE** /v3/alipay/open/public/personalized/extension/delete | 扩展区删除接口 |
+| [**delete**](AlipayOpenPublicPersonalizedExtensionApi.md#delete) | **POST** /v3/alipay/open/public/personalized/extension/delete | 扩展区删除接口 |
 
 
 <a name="batchquery"></a>
@@ -78,7 +78,7 @@ No authorization required
 
 <a name="create"></a>
 # **create**
-> AlipayOpenPublicPersonalizedExtensionCreateResponseModel create(alipayOpenPublicPersonalizedExtensionCreateModel)
+> AlipayOpenPublicPersonalizedExtensionCreateResponseModel create()
 
 个性化扩展区创建接口
 
@@ -107,9 +107,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenPublicPersonalizedExtensionApi apiInstance = new AlipayOpenPublicPersonalizedExtensionApi(defaultClient);
-    AlipayOpenPublicPersonalizedExtensionCreateModel alipayOpenPublicPersonalizedExtensionCreateModel = new AlipayOpenPublicPersonalizedExtensionCreateModel(); // AlipayOpenPublicPersonalizedExtensionCreateModel | 
     try {
-      AlipayOpenPublicPersonalizedExtensionCreateResponseModel result = apiInstance.create(alipayOpenPublicPersonalizedExtensionCreateModel);
+      AlipayOpenPublicPersonalizedExtensionCreateResponseModel result = apiInstance.create();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenPublicPersonalizedExtensionApi#create");
@@ -123,10 +122,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **alipayOpenPublicPersonalizedExtensionCreateModel** | **AlipayOpenPublicPersonalizedExtensionCreateModel**|  | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -138,7 +134,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details
@@ -149,7 +145,7 @@ No authorization required
 
 <a name="delete"></a>
 # **delete**
-> Object delete(extensionKey)
+> Object delete()
 
 扩展区删除接口
 
@@ -178,9 +174,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenPublicPersonalizedExtensionApi apiInstance = new AlipayOpenPublicPersonalizedExtensionApi(defaultClient);
-    String extensionKey = "10000"; // String | 一套扩展区的key，删除默认扩展区时传入default ，查询扩展区列表可以获得每套扩展区的key
     try {
-      Object result = apiInstance.delete(extensionKey);
+      Object result = apiInstance.delete();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenPublicPersonalizedExtensionApi#delete");
@@ -194,10 +189,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **extensionKey** | **String**| 一套扩展区的key，删除默认扩展区时传入default ，查询扩展区列表可以获得每套扩展区的key | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 

@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="query"></a>
 # **query**
-> AlipayOpenPublicGroupCrowdQueryResponseModel query(alipayOpenPublicGroupCrowdQueryModel)
+> AlipayOpenPublicGroupCrowdQueryResponseModel query()
 
 人群数量查询
 
@@ -38,9 +38,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenPublicGroupCrowdApi apiInstance = new AlipayOpenPublicGroupCrowdApi(defaultClient);
-    AlipayOpenPublicGroupCrowdQueryModel alipayOpenPublicGroupCrowdQueryModel = new AlipayOpenPublicGroupCrowdQueryModel(); // AlipayOpenPublicGroupCrowdQueryModel | 
     try {
-      AlipayOpenPublicGroupCrowdQueryResponseModel result = apiInstance.query(alipayOpenPublicGroupCrowdQueryModel);
+      AlipayOpenPublicGroupCrowdQueryResponseModel result = apiInstance.query();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenPublicGroupCrowdApi#query");
@@ -54,10 +53,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **alipayOpenPublicGroupCrowdQueryModel** | **AlipayOpenPublicGroupCrowdQueryModel**|  | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -69,7 +65,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

@@ -5,12 +5,12 @@ All URIs are relative to *https://openapi.alipay.com*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**create**](AlipayOpenPublicLabelApi.md#create) | **POST** /v3/alipay/open/public/label/create | 公众号标签管理-添加标签 |
-| [**query**](AlipayOpenPublicLabelApi.md#query) | **GET** /v3/alipay/open/public/label/query | 公众号标签管理-查询标签 |
+| [**query**](AlipayOpenPublicLabelApi.md#query) | **POST** /v3/alipay/open/public/label/query | 公众号标签管理-查询标签 |
 
 
 <a name="create"></a>
 # **create**
-> AlipayOpenPublicLabelCreateResponseModel create(alipayOpenPublicLabelCreateModel)
+> AlipayOpenPublicLabelCreateResponseModel create()
 
 公众号标签管理-添加标签
 
@@ -39,9 +39,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenPublicLabelApi apiInstance = new AlipayOpenPublicLabelApi(defaultClient);
-    AlipayOpenPublicLabelCreateModel alipayOpenPublicLabelCreateModel = new AlipayOpenPublicLabelCreateModel(); // AlipayOpenPublicLabelCreateModel | 
     try {
-      AlipayOpenPublicLabelCreateResponseModel result = apiInstance.create(alipayOpenPublicLabelCreateModel);
+      AlipayOpenPublicLabelCreateResponseModel result = apiInstance.create();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenPublicLabelApi#create");
@@ -55,10 +54,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **alipayOpenPublicLabelCreateModel** | **AlipayOpenPublicLabelCreateModel**|  | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -70,7 +66,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

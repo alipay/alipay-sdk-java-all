@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="create"></a>
 # **create**
-> AlipayOpenPublicShortlinkCreateResponseModel create(alipayOpenPublicShortlinkCreateModel)
+> AlipayOpenPublicShortlinkCreateResponseModel create()
 
 服务窗短链自主生成接口
 
@@ -38,9 +38,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenPublicShortlinkApi apiInstance = new AlipayOpenPublicShortlinkApi(defaultClient);
-    AlipayOpenPublicShortlinkCreateModel alipayOpenPublicShortlinkCreateModel = new AlipayOpenPublicShortlinkCreateModel(); // AlipayOpenPublicShortlinkCreateModel | 
     try {
-      AlipayOpenPublicShortlinkCreateResponseModel result = apiInstance.create(alipayOpenPublicShortlinkCreateModel);
+      AlipayOpenPublicShortlinkCreateResponseModel result = apiInstance.create();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenPublicShortlinkApi#create");
@@ -54,10 +53,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **alipayOpenPublicShortlinkCreateModel** | **AlipayOpenPublicShortlinkCreateModel**|  | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -69,7 +65,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

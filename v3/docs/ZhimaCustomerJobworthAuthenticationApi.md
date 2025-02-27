@@ -41,7 +41,7 @@ public class Example {
     String connKey = "uuid"; // String | 调用第一步创建接口的out_agreement_no，由外部传入
     String onceToken = "uuid"; // String | 查询身份认证结果的凭证，在认证结果到达终态后只允许查询成功一次，若需要再次查询，则需要调用第一个接口再拉起受理台
     String queryType = "exact\\dim"; // String | exact:精确查询,dim:模糊查询
-    String identityType = "04"; // String | 04:教师，其它身份类型联系芝麻技术支持确认
+    String identityType = "01，02，03"; // String | 01:医生，02:教师，具体参考文档
     String serviceId = "2019120400000000000004450100"; // String | 信用服务id，商家接入产品功能包时有运营同学分配
     String userId = "20881029102921"; // String | 蚂蚁统一会员ID 和身份证任选一个传入
     String openId = "074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5"; // String | 蚂蚁统一会员ID 和身份证任选一个传入
@@ -68,7 +68,7 @@ public class Example {
 | **connKey** | **String**| 调用第一步创建接口的out_agreement_no，由外部传入 | [optional] |
 | **onceToken** | **String**| 查询身份认证结果的凭证，在认证结果到达终态后只允许查询成功一次，若需要再次查询，则需要调用第一个接口再拉起受理台 | [optional] |
 | **queryType** | **String**| exact:精确查询,dim:模糊查询 | [optional] |
-| **identityType** | **String**| 04:教师，其它身份类型联系芝麻技术支持确认 | [optional] |
+| **identityType** | **String**| 01:医生，02:教师，具体参考文档 | [optional] |
 | **serviceId** | **String**| 信用服务id，商家接入产品功能包时有运营同学分配 | [optional] |
 | **userId** | **String**| 蚂蚁统一会员ID 和身份证任选一个传入 | [optional] |
 | **openId** | **String**| 蚂蚁统一会员ID 和身份证任选一个传入 | [optional] |

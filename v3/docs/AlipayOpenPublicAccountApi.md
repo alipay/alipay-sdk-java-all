@@ -5,8 +5,8 @@ All URIs are relative to *https://openapi.alipay.com*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**create**](AlipayOpenPublicAccountApi.md#create) | **POST** /v3/alipay/open/public/account/create | 添加绑定商户会员号 |
-| [**delete**](AlipayOpenPublicAccountApi.md#delete) | **DELETE** /v3/alipay/open/public/account/delete | 解除绑定商户会员号 |
-| [**query**](AlipayOpenPublicAccountApi.md#query) | **GET** /v3/alipay/open/public/account/query | 查询绑定商户会员号 |
+| [**delete**](AlipayOpenPublicAccountApi.md#delete) | **POST** /v3/alipay/open/public/account/delete | 解除绑定商户会员号 |
+| [**query**](AlipayOpenPublicAccountApi.md#query) | **POST** /v3/alipay/open/public/account/query | 查询绑定商户会员号 |
 | [**reset**](AlipayOpenPublicAccountApi.md#reset) | **POST** /v3/alipay/open/public/account/reset | 重新设置绑定商家会员号 |
 
 
@@ -83,7 +83,7 @@ No authorization required
 
 <a name="delete"></a>
 # **delete**
-> Object delete(agreementId, bindAccountNo, fromUserId, openId)
+> Object delete(alipayOpenPublicAccountDeleteModel)
 
 解除绑定商户会员号
 
@@ -112,12 +112,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenPublicAccountApi apiInstance = new AlipayOpenPublicAccountApi(defaultClient);
-    String agreementId = "29022222"; // String | 协议号，商户会员在支付宝服务窗账号中的唯一标识，与bind_account_no不能同时为空
-    String bindAccountNo = "test001"; // String | 绑定帐号，建议在开发者的系统中保持唯一性，与agreement_id不能同时为空
-    String fromUserId = "2088656734541243"; // String | 绑定用户的支付宝userid，2088开头16位长度的字符串，与agreementId不能同时为空
-    String openId = "074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5"; // String | 支付宝用户的唯一标识
+    AlipayOpenPublicAccountDeleteModel alipayOpenPublicAccountDeleteModel = new AlipayOpenPublicAccountDeleteModel(); // AlipayOpenPublicAccountDeleteModel | 
     try {
-      Object result = apiInstance.delete(agreementId, bindAccountNo, fromUserId, openId);
+      Object result = apiInstance.delete(alipayOpenPublicAccountDeleteModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenPublicAccountApi#delete");
@@ -134,10 +131,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **agreementId** | **String**| 协议号，商户会员在支付宝服务窗账号中的唯一标识，与bind_account_no不能同时为空 | [optional] |
-| **bindAccountNo** | **String**| 绑定帐号，建议在开发者的系统中保持唯一性，与agreement_id不能同时为空 | [optional] |
-| **fromUserId** | **String**| 绑定用户的支付宝userid，2088开头16位长度的字符串，与agreementId不能同时为空 | [optional] |
-| **openId** | **String**| 支付宝用户的唯一标识 | [optional] |
+| **alipayOpenPublicAccountDeleteModel** | **AlipayOpenPublicAccountDeleteModel**|  | [optional] |
 
 ### Return type
 
@@ -149,7 +143,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -160,7 +154,7 @@ No authorization required
 
 <a name="query"></a>
 # **query**
-> AlipayOpenPublicAccountQueryResponseModel query(userId, openId)
+> AlipayOpenPublicAccountQueryResponseModel query(alipayOpenPublicAccountQueryModel)
 
 查询绑定商户会员号
 
@@ -189,10 +183,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenPublicAccountApi apiInstance = new AlipayOpenPublicAccountApi(defaultClient);
-    String userId = "2088123412341234"; // String | 用户的支付宝用户号，2088开头。
-    String openId = "074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5"; // String | 支付宝用户的唯一标识
+    AlipayOpenPublicAccountQueryModel alipayOpenPublicAccountQueryModel = new AlipayOpenPublicAccountQueryModel(); // AlipayOpenPublicAccountQueryModel | 
     try {
-      AlipayOpenPublicAccountQueryResponseModel result = apiInstance.query(userId, openId);
+      AlipayOpenPublicAccountQueryResponseModel result = apiInstance.query(alipayOpenPublicAccountQueryModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenPublicAccountApi#query");
@@ -209,8 +202,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **userId** | **String**| 用户的支付宝用户号，2088开头。 | [optional] |
-| **openId** | **String**| 支付宝用户的唯一标识 | [optional] |
+| **alipayOpenPublicAccountQueryModel** | **AlipayOpenPublicAccountQueryModel**|  | [optional] |
 
 ### Return type
 
@@ -222,7 +214,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

@@ -4,7 +4,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**query**](AlipayOpenPublicSettingCategoryApi.md#query) | **GET** /v3/alipay/open/public/setting/category/query | 生活号查询行业设置接口 |
+| [**query**](AlipayOpenPublicSettingCategoryApi.md#query) | **POST** /v3/alipay/open/public/setting/category/query | 生活号查询行业设置接口 |
 
 
 <a name="query"></a>

@@ -4,12 +4,12 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**query**](AlipayOpenPublicUserFollowApi.md#query) | **GET** /v3/alipay/open/public/user/follow/query | 查询用户是否已经关注了生活号 |
+| [**query**](AlipayOpenPublicUserFollowApi.md#query) | **POST** /v3/alipay/open/public/user/follow/query | 查询用户是否已经关注了生活号 |
 
 
 <a name="query"></a>
 # **query**
-> AlipayOpenPublicUserFollowQueryResponseModel query(userId, openId)
+> AlipayOpenPublicUserFollowQueryResponseModel query(alipayOpenPublicUserFollowQueryModel)
 
 查询用户是否已经关注了生活号
 
@@ -38,10 +38,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenPublicUserFollowApi apiInstance = new AlipayOpenPublicUserFollowApi(defaultClient);
-    String userId = "2088132324342243"; // String | 支付宝用户id，用户在支付宝的唯一标识，以 2088 开头的 16 位纯数字组成。
-    String openId = "074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5"; // String | 支付宝用户唯一的标识
+    AlipayOpenPublicUserFollowQueryModel alipayOpenPublicUserFollowQueryModel = new AlipayOpenPublicUserFollowQueryModel(); // AlipayOpenPublicUserFollowQueryModel | 
     try {
-      AlipayOpenPublicUserFollowQueryResponseModel result = apiInstance.query(userId, openId);
+      AlipayOpenPublicUserFollowQueryResponseModel result = apiInstance.query(alipayOpenPublicUserFollowQueryModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenPublicUserFollowApi#query");
@@ -58,8 +57,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **userId** | **String**| 支付宝用户id，用户在支付宝的唯一标识，以 2088 开头的 16 位纯数字组成。 | [optional] |
-| **openId** | **String**| 支付宝用户唯一的标识 | [optional] |
+| **alipayOpenPublicUserFollowQueryModel** | **AlipayOpenPublicUserFollowQueryModel**|  | [optional] |
 
 ### Return type
 
@@ -71,7 +69,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

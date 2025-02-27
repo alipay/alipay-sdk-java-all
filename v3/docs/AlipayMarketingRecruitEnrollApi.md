@@ -6,7 +6,7 @@ All URIs are relative to *https://openapi.alipay.com*
 |------------- | ------------- | -------------|
 | [**close**](AlipayMarketingRecruitEnrollApi.md#close) | **POST** /v3/alipay/marketing/recruit/enroll/close | 下线报名 |
 | [**create**](AlipayMarketingRecruitEnrollApi.md#create) | **POST** /v3/alipay/marketing/recruit/enroll/create | 招商报名提交 |
-| [**query**](AlipayMarketingRecruitEnrollApi.md#query) | **GET** /v3/alipay/marketing/recruit/enroll/query | 报名详情查询 |
+| [**query**](AlipayMarketingRecruitEnrollApi.md#query) | **POST** /v3/alipay/marketing/recruit/enroll/{qi} | 报名详情查询 |
 
 
 <a name="close"></a>
@@ -153,7 +153,7 @@ No authorization required
 
 <a name="query"></a>
 # **query**
-> AlipayMarketingRecruitEnrollQueryResponseModel query(outBizNo, enrollId)
+> AlipayMarketingRecruitEnrollQueryResponseModel query(qi, ass, alipayMarketingRecruitEnrollQueryModel)
 
 报名详情查询
 
@@ -182,10 +182,11 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayMarketingRecruitEnrollApi apiInstance = new AlipayMarketingRecruitEnrollApi(defaultClient);
-    String outBizNo = "21ba1e1c16456985463242192e4d"; // String | 外部操作流水号，创建招商报名时传入。由商家/ISV 自定义，仅支持字母、数字、下划线且需保证每次操作唯一。
-    String enrollId = "2021041201000200000000999999"; // String | 报名ID，此参数和out_biz_no至少传一个，优先取enroll_id
+    String qi = "1"; // String | 111
+    String ass = "1"; // String | 1
+    AlipayMarketingRecruitEnrollQueryModel alipayMarketingRecruitEnrollQueryModel = new AlipayMarketingRecruitEnrollQueryModel(); // AlipayMarketingRecruitEnrollQueryModel | 
     try {
-      AlipayMarketingRecruitEnrollQueryResponseModel result = apiInstance.query(outBizNo, enrollId);
+      AlipayMarketingRecruitEnrollQueryResponseModel result = apiInstance.query(qi, ass, alipayMarketingRecruitEnrollQueryModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayMarketingRecruitEnrollApi#query");
@@ -202,8 +203,9 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **outBizNo** | **String**| 外部操作流水号，创建招商报名时传入。由商家/ISV 自定义，仅支持字母、数字、下划线且需保证每次操作唯一。 | [optional] |
-| **enrollId** | **String**| 报名ID，此参数和out_biz_no至少传一个，优先取enroll_id | [optional] |
+| **qi** | **String**| 111 | |
+| **ass** | **String**| 1 | [optional] |
+| **alipayMarketingRecruitEnrollQueryModel** | **AlipayMarketingRecruitEnrollQueryModel**|  | [optional] |
 
 ### Return type
 
@@ -215,7 +217,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

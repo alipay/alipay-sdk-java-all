@@ -4,16 +4,16 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**query**](AlipayOpenSearchAppkeywordquotaApi.md#query) | **GET** /v3/alipay/open/search/appkeywordquota/query | 查询小程序可配置关键词数 |
+| [**query**](AlipayOpenSearchAppkeywordquotaApi.md#query) | **GET** /v3/alipay/open/search/appkeywordquota/query | 查询小程序可配置关键词数   |
 
 
 <a name="query"></a>
 # **query**
 > AlipayOpenSearchAppkeywordquotaQueryResponseModel query(targetAppid)
 
-查询小程序可配置关键词数
+查询小程序可配置关键词数  
 
-查询小程序可配置关键词数
+查询小程序可配置关键词数  
 
 ### Example
 ```java

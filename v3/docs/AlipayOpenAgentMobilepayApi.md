@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="sign"></a>
 # **sign**
-> Object sign(appAuthPic, appDemo, appHomeScreenshot, appItemScreenshot, appPayScreenshot, businessLicenseAuthPic, businessLicensePic, data, homeScreenshot, inAppScreenshot, payScreenshot, specialLicensePic)
+> Object sign(appAuthPic, appDemo, businessLicenseAuthPic, businessLicensePic, data, homeScreenshot, inAppScreenshot, payScreenshot, specialLicensePic)
 
 代签约APP支付产品
 
@@ -40,9 +40,6 @@ public class Example {
     AlipayOpenAgentMobilepayApi apiInstance = new AlipayOpenAgentMobilepayApi(defaultClient);
     File appAuthPic = new File("/path/to/file"); // File | 
     File appDemo = new File("/path/to/file"); // File | 
-    File appHomeScreenshot = new File("/path/to/file"); // File | 
-    File appItemScreenshot = new File("/path/to/file"); // File | 
-    File appPayScreenshot = new File("/path/to/file"); // File | 
     File businessLicenseAuthPic = new File("/path/to/file"); // File | 
     File businessLicensePic = new File("/path/to/file"); // File | 
     AlipayOpenAgentMobilepaySignModel data = new AlipayOpenAgentMobilepaySignModel(); // AlipayOpenAgentMobilepaySignModel | 
@@ -51,7 +48,7 @@ public class Example {
     File payScreenshot = new File("/path/to/file"); // File | 
     File specialLicensePic = new File("/path/to/file"); // File | 
     try {
-      Object result = apiInstance.sign(appAuthPic, appDemo, appHomeScreenshot, appItemScreenshot, appPayScreenshot, businessLicenseAuthPic, businessLicensePic, data, homeScreenshot, inAppScreenshot, payScreenshot, specialLicensePic);
+      Object result = apiInstance.sign(appAuthPic, appDemo, businessLicenseAuthPic, businessLicensePic, data, homeScreenshot, inAppScreenshot, payScreenshot, specialLicensePic);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenAgentMobilepayApi#sign");
@@ -70,9 +67,6 @@ public class Example {
 |------------- | ------------- | ------------- | -------------|
 | **appAuthPic** | **File**|  | [optional] |
 | **appDemo** | **File**|  | [optional] |
-| **appHomeScreenshot** | **File**|  | [optional] |
-| **appItemScreenshot** | **File**|  | [optional] |
-| **appPayScreenshot** | **File**|  | [optional] |
 | **businessLicenseAuthPic** | **File**|  | [optional] |
 | **businessLicensePic** | **File**|  | [optional] |
 | **data** | **AlipayOpenAgentMobilepaySignModel**|  | [optional] |

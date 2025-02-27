@@ -13,7 +13,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="delete"></a>
 # **delete**
-> Object delete(alipayOpenMiniVersionDeleteModel)
+> Object delete()
 
 小程序删除版本
 
@@ -42,9 +42,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenMiniVersionApi apiInstance = new AlipayOpenMiniVersionApi(defaultClient);
-    AlipayOpenMiniVersionDeleteModel alipayOpenMiniVersionDeleteModel = new AlipayOpenMiniVersionDeleteModel(); // AlipayOpenMiniVersionDeleteModel | 
     try {
-      Object result = apiInstance.delete(alipayOpenMiniVersionDeleteModel);
+      Object result = apiInstance.delete();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenMiniVersionApi#delete");
@@ -58,10 +57,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **alipayOpenMiniVersionDeleteModel** | **AlipayOpenMiniVersionDeleteModel**|  | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -73,7 +69,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details
@@ -226,7 +222,7 @@ No authorization required
 
 <a name="rollback"></a>
 # **rollback**
-> Object rollback(alipayOpenMiniVersionRollbackModel)
+> Object rollback()
 
 小程序回滚
 
@@ -255,9 +251,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenMiniVersionApi apiInstance = new AlipayOpenMiniVersionApi(defaultClient);
-    AlipayOpenMiniVersionRollbackModel alipayOpenMiniVersionRollbackModel = new AlipayOpenMiniVersionRollbackModel(); // AlipayOpenMiniVersionRollbackModel | 
     try {
-      Object result = apiInstance.rollback(alipayOpenMiniVersionRollbackModel);
+      Object result = apiInstance.rollback();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenMiniVersionApi#rollback");
@@ -271,10 +266,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **alipayOpenMiniVersionRollbackModel** | **AlipayOpenMiniVersionRollbackModel**|  | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -286,7 +278,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

@@ -5,12 +5,12 @@ All URIs are relative to *https://openapi.alipay.com*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**apply**](AlipayOpenAppApiFieldApi.md#apply) | **POST** /v3/alipay/open/app/api/field/apply | 申请获取接口用户敏感信息字段 |
-| [**query**](AlipayOpenAppApiFieldApi.md#query) | **GET** /v3/alipay/open/app/api/field/query | 用户信息申请记录查询 |
+| [**query**](AlipayOpenAppApiFieldApi.md#query) | **POST** /v3/alipay/open/app/api/field/query | 用户信息申请记录查询 |
 
 
 <a name="apply"></a>
 # **apply**
-> Object apply(data, picture1, picture2, picture3, picture4, picture5, video)
+> Object apply()
 
 申请获取接口用户敏感信息字段
 
@@ -39,15 +39,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenAppApiFieldApi apiInstance = new AlipayOpenAppApiFieldApi(defaultClient);
-    AlipayOpenAppApiFieldApplyModel data = new AlipayOpenAppApiFieldApplyModel(); // AlipayOpenAppApiFieldApplyModel | 
-    File picture1 = new File("/path/to/file"); // File | 
-    File picture2 = new File("/path/to/file"); // File | 
-    File picture3 = new File("/path/to/file"); // File | 
-    File picture4 = new File("/path/to/file"); // File | 
-    File picture5 = new File("/path/to/file"); // File | 
-    File video = new File("/path/to/file"); // File | 
     try {
-      Object result = apiInstance.apply(data, picture1, picture2, picture3, picture4, picture5, video);
+      Object result = apiInstance.apply();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenAppApiFieldApi#apply");
@@ -61,16 +54,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **data** | **AlipayOpenAppApiFieldApplyModel**|  | [optional] |
-| **picture1** | **File**|  | [optional] |
-| **picture2** | **File**|  | [optional] |
-| **picture3** | **File**|  | [optional] |
-| **picture4** | **File**|  | [optional] |
-| **picture5** | **File**|  | [optional] |
-| **video** | **File**|  | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -82,7 +66,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: multipart/form-data
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details
@@ -97,7 +81,7 @@ No authorization required
 
 用户信息申请记录查询
 
-查询用户信息申请记录，开发者发起请求时会基于当前发起请求的app_id进行查询，若为isv发起的三方代调用则以授权的商户app_id进行查询。
+通过appId查询用户信息申请记录
 
 ### Example
 ```java

@@ -4,12 +4,12 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**query**](AlipayOpenMiniInnerbaseinfoApi.md#query) | **GET** /v3/alipay/open/mini/innerbaseinfo/query | 内部小程序-应用信息查询 |
+| [**query**](AlipayOpenMiniInnerbaseinfoApi.md#query) | **POST** /v3/alipay/open/mini/innerbaseinfo/query | 内部小程序-应用信息查询 |
 
 
 <a name="query"></a>
 # **query**
-> AlipayOpenMiniInnerbaseinfoQueryResponseModel query(miniAppId, instCode, miniAppName, appSubType)
+> AlipayOpenMiniInnerbaseinfoQueryResponseModel query()
 
 内部小程序-应用信息查询
 
@@ -38,12 +38,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenMiniInnerbaseinfoApi apiInstance = new AlipayOpenMiniInnerbaseinfoApi(defaultClient);
-    String miniAppId = "2014060600164699"; // String | 小程序ID，mini_app_id 和 mini_app_name 两个需要有其中一个必填，当填了mini_app_id时只使用id去进行查询。
-    String instCode = "taobao"; // String | 租户code，alipay or taobao
-    String miniAppName = "test"; // String | 小程序name，mini_app_id 和 mini_app_name 两个需要有其中一个必填，当填了mini_app_id时只使用id去进行查询。
-    String appSubType = "TINYAPP_TEMPLATE"; // String | 小程序类型，TINYAPP_TEMPLATE，TINYAPP_NORMAL，TINYAPP_PLUGIN，使用mini_app_name查询的时候，该字段要求必传。
     try {
-      AlipayOpenMiniInnerbaseinfoQueryResponseModel result = apiInstance.query(miniAppId, instCode, miniAppName, appSubType);
+      AlipayOpenMiniInnerbaseinfoQueryResponseModel result = apiInstance.query();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenMiniInnerbaseinfoApi#query");
@@ -57,13 +53,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **miniAppId** | **String**| 小程序ID，mini_app_id 和 mini_app_name 两个需要有其中一个必填，当填了mini_app_id时只使用id去进行查询。 | [optional] |
-| **instCode** | **String**| 租户code，alipay or taobao | [optional] |
-| **miniAppName** | **String**| 小程序name，mini_app_id 和 mini_app_name 两个需要有其中一个必填，当填了mini_app_id时只使用id去进行查询。 | [optional] |
-| **appSubType** | **String**| 小程序类型，TINYAPP_TEMPLATE，TINYAPP_NORMAL，TINYAPP_PLUGIN，使用mini_app_name查询的时候，该字段要求必传。 | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 

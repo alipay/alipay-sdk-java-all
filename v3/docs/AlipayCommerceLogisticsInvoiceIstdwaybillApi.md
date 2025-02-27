@@ -5,7 +5,7 @@ All URIs are relative to *https://openapi.alipay.com*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**create**](AlipayCommerceLogisticsInvoiceIstdwaybillApi.md#create) | **POST** /v3/alipay/commerce/logistics/invoice/istdwaybill/create | 开即时配送订单发票 |
-| [**query**](AlipayCommerceLogisticsInvoiceIstdwaybillApi.md#query) | **GET** /v3/alipay/commerce/logistics/invoice/istdwaybill/query | 查询即时配送订单的开票结果 |
+| [**query**](AlipayCommerceLogisticsInvoiceIstdwaybillApi.md#query) | **POST** /v3/alipay/commerce/logistics/invoice/istdwaybill/query | 查询即时配送订单的开票结果 |
 
 
 <a name="create"></a>
@@ -81,7 +81,7 @@ No authorization required
 
 <a name="query"></a>
 # **query**
-> AlipayCommerceLogisticsInvoiceIstdwaybillQueryResponseModel query(logisticsCode, outInvoiceRequestNo)
+> AlipayCommerceLogisticsInvoiceIstdwaybillQueryResponseModel query(alipayCommerceLogisticsInvoiceIstdwaybillQueryModel)
 
 查询即时配送订单的开票结果
 
@@ -110,10 +110,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayCommerceLogisticsInvoiceIstdwaybillApi apiInstance = new AlipayCommerceLogisticsInvoiceIstdwaybillApi(defaultClient);
-    String logisticsCode = "FENGNIAO"; // String | 即时配送公司编码
-    String outInvoiceRequestNo = "out_invoice_no_00001"; // String | 开票请求流水号
+    AlipayCommerceLogisticsInvoiceIstdwaybillQueryModel alipayCommerceLogisticsInvoiceIstdwaybillQueryModel = new AlipayCommerceLogisticsInvoiceIstdwaybillQueryModel(); // AlipayCommerceLogisticsInvoiceIstdwaybillQueryModel | 
     try {
-      AlipayCommerceLogisticsInvoiceIstdwaybillQueryResponseModel result = apiInstance.query(logisticsCode, outInvoiceRequestNo);
+      AlipayCommerceLogisticsInvoiceIstdwaybillQueryResponseModel result = apiInstance.query(alipayCommerceLogisticsInvoiceIstdwaybillQueryModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayCommerceLogisticsInvoiceIstdwaybillApi#query");
@@ -130,8 +129,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **logisticsCode** | **String**| 即时配送公司编码 | [optional] |
-| **outInvoiceRequestNo** | **String**| 开票请求流水号 | [optional] |
+| **alipayCommerceLogisticsInvoiceIstdwaybillQueryModel** | **AlipayCommerceLogisticsInvoiceIstdwaybillQueryModel**|  | [optional] |
 
 ### Return type
 
@@ -143,7 +141,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

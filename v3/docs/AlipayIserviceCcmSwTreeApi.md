@@ -4,17 +4,17 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**batchquery**](AlipayIserviceCcmSwTreeApi.md#batchquery) | **GET** /v3/alipay/iservice/ccm/sw/tree/batchquery | 知识库-类目-批量查询 |
-| [**create**](AlipayIserviceCcmSwTreeApi.md#create) | **PUT** /v3/alipay/iservice/ccm/sw/tree/create | 知识库-类目-创建 |
-| [**delete**](AlipayIserviceCcmSwTreeApi.md#delete) | **DELETE** /v3/alipay/iservice/ccm/sw/tree/delete | 知识库-类目-删除 |
-| [**get**](AlipayIserviceCcmSwTreeApi.md#get) | **GET** /v3/alipay/iservice/ccm/sw/tree/get | 知识库-类目-获取 |
-| [**modify**](AlipayIserviceCcmSwTreeApi.md#modify) | **PATCH** /v3/alipay/iservice/ccm/sw/tree/modify | 知识库-类目-修改 |
-| [**publish**](AlipayIserviceCcmSwTreeApi.md#publish) | **PUT** /v3/alipay/iservice/ccm/sw/tree/publish | 知识库-类目-发布 |
+| [**batchquery**](AlipayIserviceCcmSwTreeApi.md#batchquery) | **POST** /v3/alipay/iservice/ccm/sw/tree/batchquery | 知识库-类目-批量查询 |
+| [**create**](AlipayIserviceCcmSwTreeApi.md#create) | **POST** /v3/alipay/iservice/ccm/sw/tree/create | 知识库-类目-创建 |
+| [**delete**](AlipayIserviceCcmSwTreeApi.md#delete) | **POST** /v3/alipay/iservice/ccm/sw/tree/delete | 知识库-类目-删除 |
+| [**get**](AlipayIserviceCcmSwTreeApi.md#get) | **POST** /v3/alipay/iservice/ccm/sw/tree/get | 知识库-类目-获取 |
+| [**modify**](AlipayIserviceCcmSwTreeApi.md#modify) | **POST** /v3/alipay/iservice/ccm/sw/tree/modify | 知识库-类目-修改 |
+| [**publish**](AlipayIserviceCcmSwTreeApi.md#publish) | **POST** /v3/alipay/iservice/ccm/sw/tree/publish | 知识库-类目-发布 |
 
 
 <a name="batchquery"></a>
 # **batchquery**
-> AlipayIserviceCcmSwTreeBatchqueryResponseModel batchquery(ccsInstanceId)
+> AlipayIserviceCcmSwTreeBatchqueryResponseModel batchquery(alipayIserviceCcmSwTreeBatchqueryModel)
 
 知识库-类目-批量查询
 
@@ -43,9 +43,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayIserviceCcmSwTreeApi apiInstance = new AlipayIserviceCcmSwTreeApi(defaultClient);
-    String ccsInstanceId = "ZPNASDK"; // String | 子部门ID，不传为默认部门
+    AlipayIserviceCcmSwTreeBatchqueryModel alipayIserviceCcmSwTreeBatchqueryModel = new AlipayIserviceCcmSwTreeBatchqueryModel(); // AlipayIserviceCcmSwTreeBatchqueryModel | 
     try {
-      AlipayIserviceCcmSwTreeBatchqueryResponseModel result = apiInstance.batchquery(ccsInstanceId);
+      AlipayIserviceCcmSwTreeBatchqueryResponseModel result = apiInstance.batchquery(alipayIserviceCcmSwTreeBatchqueryModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayIserviceCcmSwTreeApi#batchquery");
@@ -62,7 +62,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **ccsInstanceId** | **String**| 子部门ID，不传为默认部门 | [optional] |
+| **alipayIserviceCcmSwTreeBatchqueryModel** | **AlipayIserviceCcmSwTreeBatchqueryModel**|  | [optional] |
 
 ### Return type
 
@@ -74,7 +74,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -156,7 +156,7 @@ No authorization required
 
 <a name="delete"></a>
 # **delete**
-> Object delete()
+> Object delete(alipayIserviceCcmSwTreeDeleteModel)
 
 知识库-类目-删除
 
@@ -185,8 +185,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayIserviceCcmSwTreeApi apiInstance = new AlipayIserviceCcmSwTreeApi(defaultClient);
+    AlipayIserviceCcmSwTreeDeleteModel alipayIserviceCcmSwTreeDeleteModel = new AlipayIserviceCcmSwTreeDeleteModel(); // AlipayIserviceCcmSwTreeDeleteModel | 
     try {
-      Object result = apiInstance.delete();
+      Object result = apiInstance.delete(alipayIserviceCcmSwTreeDeleteModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayIserviceCcmSwTreeApi#delete");
@@ -200,7 +201,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayIserviceCcmSwTreeDeleteModel** | **AlipayIserviceCcmSwTreeDeleteModel**|  | [optional] |
 
 ### Return type
 
@@ -212,7 +216,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -223,7 +227,7 @@ No authorization required
 
 <a name="get"></a>
 # **get**
-> AlipayIserviceCcmSwTreeGetResponseModel get(ccsInstanceId, id)
+> AlipayIserviceCcmSwTreeGetResponseModel get(alipayIserviceCcmSwTreeGetModel)
 
 知识库-类目-获取
 
@@ -252,10 +256,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayIserviceCcmSwTreeApi apiInstance = new AlipayIserviceCcmSwTreeApi(defaultClient);
-    String ccsInstanceId = "ZPNASDK"; // String | 子部门ID，不传为默认部门
-    Integer id = 1; // Integer | 类目ID
+    AlipayIserviceCcmSwTreeGetModel alipayIserviceCcmSwTreeGetModel = new AlipayIserviceCcmSwTreeGetModel(); // AlipayIserviceCcmSwTreeGetModel | 
     try {
-      AlipayIserviceCcmSwTreeGetResponseModel result = apiInstance.get(ccsInstanceId, id);
+      AlipayIserviceCcmSwTreeGetResponseModel result = apiInstance.get(alipayIserviceCcmSwTreeGetModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayIserviceCcmSwTreeApi#get");
@@ -272,8 +275,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **ccsInstanceId** | **String**| 子部门ID，不传为默认部门 | [optional] |
-| **id** | **Integer**| 类目ID | [optional] |
+| **alipayIserviceCcmSwTreeGetModel** | **AlipayIserviceCcmSwTreeGetModel**|  | [optional] |
 
 ### Return type
 
@@ -285,7 +287,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

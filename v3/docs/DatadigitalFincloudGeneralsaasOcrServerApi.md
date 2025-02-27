@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="detect"></a>
 # **detect**
-> DatadigitalFincloudGeneralsaasOcrServerDetectResponseModel detect(data, fileContent)
+> DatadigitalFincloudGeneralsaasOcrServerDetectResponseModel detect(datadigitalFincloudGeneralsaasOcrServerDetectModel)
 
 服务端OCR
 
@@ -38,10 +38,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     DatadigitalFincloudGeneralsaasOcrServerApi apiInstance = new DatadigitalFincloudGeneralsaasOcrServerApi(defaultClient);
-    DatadigitalFincloudGeneralsaasOcrServerDetectModel data = new DatadigitalFincloudGeneralsaasOcrServerDetectModel(); // DatadigitalFincloudGeneralsaasOcrServerDetectModel | 
-    File fileContent = new File("/path/to/file"); // File | 
+    DatadigitalFincloudGeneralsaasOcrServerDetectModel datadigitalFincloudGeneralsaasOcrServerDetectModel = new DatadigitalFincloudGeneralsaasOcrServerDetectModel(); // DatadigitalFincloudGeneralsaasOcrServerDetectModel | 
     try {
-      DatadigitalFincloudGeneralsaasOcrServerDetectResponseModel result = apiInstance.detect(data, fileContent);
+      DatadigitalFincloudGeneralsaasOcrServerDetectResponseModel result = apiInstance.detect(datadigitalFincloudGeneralsaasOcrServerDetectModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling DatadigitalFincloudGeneralsaasOcrServerApi#detect");
@@ -58,8 +57,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **data** | **DatadigitalFincloudGeneralsaasOcrServerDetectModel**|  | [optional] |
-| **fileContent** | **File**|  | [optional] |
+| **datadigitalFincloudGeneralsaasOcrServerDetectModel** | **DatadigitalFincloudGeneralsaasOcrServerDetectModel**|  | [optional] |
 
 ### Return type
 
@@ -71,7 +69,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: multipart/form-data
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

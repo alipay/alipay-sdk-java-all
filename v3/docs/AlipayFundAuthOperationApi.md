@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="cancel"></a>
 # **cancel**
-> AlipayFundAuthOperationCancelResponseModel cancel(alipayFundAuthOperationCancelModel)
+> AlipayFundAuthOperationCancelResponseModel cancel(commonNotifyUrlModel)
 
 资金授权撤销接口
 
@@ -38,9 +38,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayFundAuthOperationApi apiInstance = new AlipayFundAuthOperationApi(defaultClient);
-    AlipayFundAuthOperationCancelModel alipayFundAuthOperationCancelModel = new AlipayFundAuthOperationCancelModel(); // AlipayFundAuthOperationCancelModel | 
+    CommonNotifyUrlModel commonNotifyUrlModel = new CommonNotifyUrlModel(); // CommonNotifyUrlModel | 
     try {
-      AlipayFundAuthOperationCancelResponseModel result = apiInstance.cancel(alipayFundAuthOperationCancelModel);
+      AlipayFundAuthOperationCancelResponseModel result = apiInstance.cancel(commonNotifyUrlModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayFundAuthOperationApi#cancel");
@@ -57,7 +57,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **alipayFundAuthOperationCancelModel** | **AlipayFundAuthOperationCancelModel**|  | [optional] |
+| **commonNotifyUrlModel** | **CommonNotifyUrlModel**|  | [optional] |
 
 ### Return type
 

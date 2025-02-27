@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="create"></a>
 # **create**
-> AlipayEcoContractSignflowsCreateResponseModel create(targetAppId, alipayEcoContractSignflowsCreateModel)
+> AlipayEcoContractSignflowsCreateResponseModel create(alipayEcoContractSignflowsCreateModel)
 
 创建电子合同签署流程(E签宝)
 
@@ -38,10 +38,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayEcoContractSignflowsApi apiInstance = new AlipayEcoContractSignflowsApi(defaultClient);
-    String targetAppId = "targetAppId_example"; // String | 目标isv应用ID
     AlipayEcoContractSignflowsCreateModel alipayEcoContractSignflowsCreateModel = new AlipayEcoContractSignflowsCreateModel(); // AlipayEcoContractSignflowsCreateModel | 
     try {
-      AlipayEcoContractSignflowsCreateResponseModel result = apiInstance.create(targetAppId, alipayEcoContractSignflowsCreateModel);
+      AlipayEcoContractSignflowsCreateResponseModel result = apiInstance.create(alipayEcoContractSignflowsCreateModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayEcoContractSignflowsApi#create");
@@ -58,7 +57,6 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **targetAppId** | **String**| 目标isv应用ID | [optional] |
 | **alipayEcoContractSignflowsCreateModel** | **AlipayEcoContractSignflowsCreateModel**|  | [optional] |
 
 ### Return type

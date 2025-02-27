@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="consult"></a>
 # **consult**
-> KoubeiMarketingCampaignIntelligentTemplateConsultResponseModel consult(koubeiMarketingCampaignIntelligentTemplateConsultModel)
+> KoubeiMarketingCampaignIntelligentTemplateConsultResponseModel consult()
 
 智能营销模板咨询
 
@@ -38,9 +38,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     KoubeiMarketingCampaignIntelligentTemplateApi apiInstance = new KoubeiMarketingCampaignIntelligentTemplateApi(defaultClient);
-    KoubeiMarketingCampaignIntelligentTemplateConsultModel koubeiMarketingCampaignIntelligentTemplateConsultModel = new KoubeiMarketingCampaignIntelligentTemplateConsultModel(); // KoubeiMarketingCampaignIntelligentTemplateConsultModel | 
     try {
-      KoubeiMarketingCampaignIntelligentTemplateConsultResponseModel result = apiInstance.consult(koubeiMarketingCampaignIntelligentTemplateConsultModel);
+      KoubeiMarketingCampaignIntelligentTemplateConsultResponseModel result = apiInstance.consult();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling KoubeiMarketingCampaignIntelligentTemplateApi#consult");
@@ -54,10 +53,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **koubeiMarketingCampaignIntelligentTemplateConsultModel** | **KoubeiMarketingCampaignIntelligentTemplateConsultModel**|  | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -69,7 +65,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

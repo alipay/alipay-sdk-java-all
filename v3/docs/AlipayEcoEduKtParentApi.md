@@ -4,12 +4,12 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**query**](AlipayEcoEduKtParentApi.md#query) | **GET** /v3/alipay/eco/edu/kt/parent/query | 查询学生家长状态接口 |
+| [**query**](AlipayEcoEduKtParentApi.md#query) | **POST** /v3/alipay/eco/edu/kt/parent/query | 查询学生家长状态接口 |
 
 
 <a name="query"></a>
 # **query**
-> AlipayEcoEduKtParentQueryResponseModel query(schoolPid, schoolNo, partnerId, childName, userMobile, studentCode, studentIdentify)
+> AlipayEcoEduKtParentQueryResponseModel query()
 
 查询学生家长状态接口
 
@@ -38,15 +38,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayEcoEduKtParentApi apiInstance = new AlipayEcoEduKtParentApi(defaultClient);
-    String schoolPid = "20880012939123234423"; // String | 学校支付宝pid
-    String schoolNo = "11010100000002"; // String | 学校编码，录入学校接口返回的school_no参数
-    String partnerId = "208800129391238873"; // String | Isv的支付宝pid
-    String childName = "张晓晓"; // String | 孩子或学生姓名
-    String userMobile = "13300000000"; // String | 用户手机号，发账单时填写users数组中的一个手机号。结果返回用户是否通过此手机号添加此学生的缴费账户。user_mobile、student_code 、student_identify 必须并且只能填一项。
-    String studentCode = "2098453900091"; // String | 学生的学号，一个学校的学号必须是唯一。结果返回用户是否通过此学号添加此学生的缴费账户。user_mobile、student_code 、student_identify 必须并且只能填一项。
-    String studentIdentify = "982343191010100909"; // String | 学生的身份证号，使用身份证规则验证。结果返回用户是否通过此身份证号添加此学生的缴费账户。user_mobile、student_code 、student_identify 必须并且只能填一项。
     try {
-      AlipayEcoEduKtParentQueryResponseModel result = apiInstance.query(schoolPid, schoolNo, partnerId, childName, userMobile, studentCode, studentIdentify);
+      AlipayEcoEduKtParentQueryResponseModel result = apiInstance.query();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayEcoEduKtParentApi#query");
@@ -60,16 +53,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **schoolPid** | **String**| 学校支付宝pid | [optional] |
-| **schoolNo** | **String**| 学校编码，录入学校接口返回的school_no参数 | [optional] |
-| **partnerId** | **String**| Isv的支付宝pid | [optional] |
-| **childName** | **String**| 孩子或学生姓名 | [optional] |
-| **userMobile** | **String**| 用户手机号，发账单时填写users数组中的一个手机号。结果返回用户是否通过此手机号添加此学生的缴费账户。user_mobile、student_code 、student_identify 必须并且只能填一项。 | [optional] |
-| **studentCode** | **String**| 学生的学号，一个学校的学号必须是唯一。结果返回用户是否通过此学号添加此学生的缴费账户。user_mobile、student_code 、student_identify 必须并且只能填一项。 | [optional] |
-| **studentIdentify** | **String**| 学生的身份证号，使用身份证规则验证。结果返回用户是否通过此身份证号添加此学生的缴费账户。user_mobile、student_code 、student_identify 必须并且只能填一项。 | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 

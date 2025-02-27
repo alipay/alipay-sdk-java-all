@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="send"></a>
 # **send**
-> AlipayOpenPublicMessageTotalSendResponseModel send(alipayOpenPublicMessageTotalSendModel)
+> AlipayOpenPublicMessageTotalSendResponseModel send()
 
 群发消息
 
@@ -38,9 +38,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenPublicMessageTotalApi apiInstance = new AlipayOpenPublicMessageTotalApi(defaultClient);
-    AlipayOpenPublicMessageTotalSendModel alipayOpenPublicMessageTotalSendModel = new AlipayOpenPublicMessageTotalSendModel(); // AlipayOpenPublicMessageTotalSendModel | 
     try {
-      AlipayOpenPublicMessageTotalSendResponseModel result = apiInstance.send(alipayOpenPublicMessageTotalSendModel);
+      AlipayOpenPublicMessageTotalSendResponseModel result = apiInstance.send();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenPublicMessageTotalApi#send");
@@ -54,10 +53,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **alipayOpenPublicMessageTotalSendModel** | **AlipayOpenPublicMessageTotalSendModel**|  | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -69,7 +65,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

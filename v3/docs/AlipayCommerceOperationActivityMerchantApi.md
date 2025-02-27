@@ -11,7 +11,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="modify"></a>
 # **modify**
-> Object modify(alipayCommerceOperationActivityMerchantModifyModel)
+> AlipayCommerceOperationActivityMerchantModifyResponseModel modify(alipayCommerceOperationActivityMerchantModifyModel)
 
 商户签约信息修改
 
@@ -42,7 +42,7 @@ public class Example {
     AlipayCommerceOperationActivityMerchantApi apiInstance = new AlipayCommerceOperationActivityMerchantApi(defaultClient);
     AlipayCommerceOperationActivityMerchantModifyModel alipayCommerceOperationActivityMerchantModifyModel = new AlipayCommerceOperationActivityMerchantModifyModel(); // AlipayCommerceOperationActivityMerchantModifyModel | 
     try {
-      Object result = apiInstance.modify(alipayCommerceOperationActivityMerchantModifyModel);
+      AlipayCommerceOperationActivityMerchantModifyResponseModel result = apiInstance.modify(alipayCommerceOperationActivityMerchantModifyModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayCommerceOperationActivityMerchantApi#modify");
@@ -63,7 +63,7 @@ public class Example {
 
 ### Return type
 
-**Object**
+**AlipayCommerceOperationActivityMerchantModifyResponseModel**
 
 ### Authorization
 
@@ -153,7 +153,7 @@ No authorization required
 
 <a name="unsign"></a>
 # **unsign**
-> Object unsign()
+> AlipayCommerceOperationActivityMerchantUnsignResponseModel unsign()
 
 活动商户解约
 
@@ -183,7 +183,7 @@ public class Example {
 
     AlipayCommerceOperationActivityMerchantApi apiInstance = new AlipayCommerceOperationActivityMerchantApi(defaultClient);
     try {
-      Object result = apiInstance.unsign();
+      AlipayCommerceOperationActivityMerchantUnsignResponseModel result = apiInstance.unsign();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayCommerceOperationActivityMerchantApi#unsign");
@@ -201,7 +201,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**Object**
+**AlipayCommerceOperationActivityMerchantUnsignResponseModel**
 
 ### Authorization
 

@@ -5,7 +5,7 @@ All URIs are relative to *https://openapi.alipay.com*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**finish**](ZhimaCreditPayafteruseCreditbizorderApi.md#finish) | **POST** /v3/zhima/credit/payafteruse/creditbizorder/finish | 结束信用服务订单 |
-| [**order**](ZhimaCreditPayafteruseCreditbizorderApi.md#order) | **POST** /v3/zhima/credit/payafteruse/creditbizorder/order | 芝麻信用服务下单（免用户确认场景） |
+| [**order**](ZhimaCreditPayafteruseCreditbizorderApi.md#order) | **POST** /v3/zhima/credit/payafteruse/creditbizorder/order | 芝麻先享信用服务下单（免用户确认场景） |
 | [**query**](ZhimaCreditPayafteruseCreditbizorderApi.md#query) | **GET** /v3/zhima/credit/payafteruse/creditbizorder/query | 信用服务订单查询 |
 
 
@@ -84,9 +84,9 @@ No authorization required
 # **order**
 > ZhimaCreditPayafteruseCreditbizorderOrderResponseModel order(zhimaCreditPayafteruseCreditbizorderOrderModel)
 
-芝麻信用服务下单（免用户确认场景）
+芝麻先享信用服务下单（免用户确认场景）
 
-芝麻信用产品免密下单，不需要唤起支付宝APP，通过服务端调用完成下单。 涉及芝麻信用服务产品、芝麻风险评估产品
+芝麻先享免密下单，不需要唤起支付宝APP，通过服务端调用完成下单
 
 ### Example
 ```java

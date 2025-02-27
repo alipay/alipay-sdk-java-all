@@ -5,8 +5,8 @@ All URIs are relative to *https://openapi.alipay.com*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**add**](AlipayOpenMiniInnerMembersApi.md#add) | **POST** /v3/alipay/open/mini/inner/members/add | 内部链路添加开发成员 |
-| [**delete**](AlipayOpenMiniInnerMembersApi.md#delete) | **DELETE** /v3/alipay/open/mini/inner/members/delete | 内部链路删除开发成员 |
-| [**query**](AlipayOpenMiniInnerMembersApi.md#query) | **GET** /v3/alipay/open/mini/inner/members/query | 内部链路查询开发成员 |
+| [**delete**](AlipayOpenMiniInnerMembersApi.md#delete) | **POST** /v3/alipay/open/mini/inner/members/delete | 内部链路删除开发成员 |
+| [**query**](AlipayOpenMiniInnerMembersApi.md#query) | **POST** /v3/alipay/open/mini/inner/members/query | 内部链路查询开发成员 |
 
 
 <a name="add"></a>
@@ -82,7 +82,7 @@ No authorization required
 
 <a name="delete"></a>
 # **delete**
-> Object delete(miniAppId, appOrigin, domainAccount, loginId, type)
+> Object delete(alipayOpenMiniInnerMembersDeleteModel)
 
 内部链路删除开发成员
 
@@ -111,13 +111,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenMiniInnerMembersApi apiInstance = new AlipayOpenMiniInnerMembersApi(defaultClient);
-    String miniAppId = "2021154987463214"; // String | 业务小程序id
-    String appOrigin = "ALIPAY"; // String | 业务来源
-    String domainAccount = "域账号"; // String | 域账号（如传入则删除联系人）
-    String loginId = "登陆支付宝账号"; // String | 登陆支付宝账号
-    String type = "1"; // String | 成员类型
+    AlipayOpenMiniInnerMembersDeleteModel alipayOpenMiniInnerMembersDeleteModel = new AlipayOpenMiniInnerMembersDeleteModel(); // AlipayOpenMiniInnerMembersDeleteModel | 
     try {
-      Object result = apiInstance.delete(miniAppId, appOrigin, domainAccount, loginId, type);
+      Object result = apiInstance.delete(alipayOpenMiniInnerMembersDeleteModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenMiniInnerMembersApi#delete");
@@ -134,11 +130,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **miniAppId** | **String**| 业务小程序id | [optional] |
-| **appOrigin** | **String**| 业务来源 | [optional] |
-| **domainAccount** | **String**| 域账号（如传入则删除联系人） | [optional] |
-| **loginId** | **String**| 登陆支付宝账号 | [optional] |
-| **type** | **String**| 成员类型 | [optional] |
+| **alipayOpenMiniInnerMembersDeleteModel** | **AlipayOpenMiniInnerMembersDeleteModel**|  | [optional] |
 
 ### Return type
 
@@ -150,7 +142,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -161,7 +153,7 @@ No authorization required
 
 <a name="query"></a>
 # **query**
-> AlipayOpenMiniInnerMembersQueryResponseModel query(miniAppId, appOrigin)
+> AlipayOpenMiniInnerMembersQueryResponseModel query(alipayOpenMiniInnerMembersQueryModel)
 
 内部链路查询开发成员
 
@@ -190,10 +182,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenMiniInnerMembersApi apiInstance = new AlipayOpenMiniInnerMembersApi(defaultClient);
-    String miniAppId = "2021125487896547"; // String | 业务小程序id
-    String appOrigin = "ALIPAY"; // String | 业务来源
+    AlipayOpenMiniInnerMembersQueryModel alipayOpenMiniInnerMembersQueryModel = new AlipayOpenMiniInnerMembersQueryModel(); // AlipayOpenMiniInnerMembersQueryModel | 
     try {
-      AlipayOpenMiniInnerMembersQueryResponseModel result = apiInstance.query(miniAppId, appOrigin);
+      AlipayOpenMiniInnerMembersQueryResponseModel result = apiInstance.query(alipayOpenMiniInnerMembersQueryModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenMiniInnerMembersApi#query");
@@ -210,8 +201,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **miniAppId** | **String**| 业务小程序id | [optional] |
-| **appOrigin** | **String**| 业务来源 | [optional] |
+| **alipayOpenMiniInnerMembersQueryModel** | **AlipayOpenMiniInnerMembersQueryModel**|  | [optional] |
 
 ### Return type
 
@@ -223,7 +213,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

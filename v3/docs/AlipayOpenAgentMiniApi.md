@@ -13,7 +13,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 代商家创建小程序应用
 
-ISV 代商家创建小程序应用。该接口后续将不再更新迭代，请使用新接口对接开发。新接口介绍文档：https://opendocs.alipay.com/isv/03kqzh ；新接口对接文档：https://opendocs.alipay.com/mini/03l21u 。
+ISV 代商家创建小程序应用
 
 ### Example
 ```java

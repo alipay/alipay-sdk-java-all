@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="modify"></a>
 # **modify**
-> AntMerchantExpandItemStatusModifyResponseModel modify(antMerchantExpandItemStatusModifyModel)
+> AntMerchantExpandItemStatusModifyResponseModel modify()
 
 商品状态修改接口
 
@@ -38,9 +38,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AntMerchantExpandItemStatusApi apiInstance = new AntMerchantExpandItemStatusApi(defaultClient);
-    AntMerchantExpandItemStatusModifyModel antMerchantExpandItemStatusModifyModel = new AntMerchantExpandItemStatusModifyModel(); // AntMerchantExpandItemStatusModifyModel | 
     try {
-      AntMerchantExpandItemStatusModifyResponseModel result = apiInstance.modify(antMerchantExpandItemStatusModifyModel);
+      AntMerchantExpandItemStatusModifyResponseModel result = apiInstance.modify();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AntMerchantExpandItemStatusApi#modify");
@@ -54,10 +53,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **antMerchantExpandItemStatusModifyModel** | **AntMerchantExpandItemStatusModifyModel**|  | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -69,7 +65,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

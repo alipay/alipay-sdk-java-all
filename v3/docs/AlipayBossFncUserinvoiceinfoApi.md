@@ -6,12 +6,12 @@ All URIs are relative to *https://openapi.alipay.com*
 |------------- | ------------- | -------------|
 | [**create**](AlipayBossFncUserinvoiceinfoApi.md#create) | **POST** /v3/alipay/boss/fnc/userinvoiceinfo/create | 新增客户开票资料 |
 | [**modify**](AlipayBossFncUserinvoiceinfoApi.md#modify) | **POST** /v3/alipay/boss/fnc/userinvoiceinfo/modify | 修改用户开票资料 |
-| [**query**](AlipayBossFncUserinvoiceinfoApi.md#query) | **GET** /v3/alipay/boss/fnc/userinvoiceinfo/query | 根据PID获取相关的开票资料 |
+| [**query**](AlipayBossFncUserinvoiceinfoApi.md#query) | **POST** /v3/alipay/boss/fnc/userinvoiceinfo/query | 根据PID获取相关的开票资料 |
 
 
 <a name="create"></a>
 # **create**
-> AlipayBossFncUserinvoiceinfoCreateResponseModel create(alipayBossFncUserinvoiceinfoCreateModel)
+> AlipayBossFncUserinvoiceinfoCreateResponseModel create()
 
 新增客户开票资料
 
@@ -40,9 +40,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayBossFncUserinvoiceinfoApi apiInstance = new AlipayBossFncUserinvoiceinfoApi(defaultClient);
-    AlipayBossFncUserinvoiceinfoCreateModel alipayBossFncUserinvoiceinfoCreateModel = new AlipayBossFncUserinvoiceinfoCreateModel(); // AlipayBossFncUserinvoiceinfoCreateModel | 
     try {
-      AlipayBossFncUserinvoiceinfoCreateResponseModel result = apiInstance.create(alipayBossFncUserinvoiceinfoCreateModel);
+      AlipayBossFncUserinvoiceinfoCreateResponseModel result = apiInstance.create();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayBossFncUserinvoiceinfoApi#create");
@@ -56,10 +55,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **alipayBossFncUserinvoiceinfoCreateModel** | **AlipayBossFncUserinvoiceinfoCreateModel**|  | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -71,7 +67,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details
@@ -82,7 +78,7 @@ No authorization required
 
 <a name="modify"></a>
 # **modify**
-> Object modify(alipayBossFncUserinvoiceinfoModifyModel)
+> Object modify()
 
 修改用户开票资料
 
@@ -111,9 +107,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayBossFncUserinvoiceinfoApi apiInstance = new AlipayBossFncUserinvoiceinfoApi(defaultClient);
-    AlipayBossFncUserinvoiceinfoModifyModel alipayBossFncUserinvoiceinfoModifyModel = new AlipayBossFncUserinvoiceinfoModifyModel(); // AlipayBossFncUserinvoiceinfoModifyModel | 
     try {
-      Object result = apiInstance.modify(alipayBossFncUserinvoiceinfoModifyModel);
+      Object result = apiInstance.modify();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayBossFncUserinvoiceinfoApi#modify");
@@ -127,10 +122,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **alipayBossFncUserinvoiceinfoModifyModel** | **AlipayBossFncUserinvoiceinfoModifyModel**|  | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -142,7 +134,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details
@@ -153,7 +145,7 @@ No authorization required
 
 <a name="query"></a>
 # **query**
-> AlipayBossFncUserinvoiceinfoQueryResponseModel query(pid)
+> AlipayBossFncUserinvoiceinfoQueryResponseModel query()
 
 根据PID获取相关的开票资料
 
@@ -182,9 +174,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayBossFncUserinvoiceinfoApi apiInstance = new AlipayBossFncUserinvoiceinfoApi(defaultClient);
-    String pid = "2088001007243670"; // String | 开票pid/mid/ou，唯一标识商户信息/集团用户信息的ID
     try {
-      AlipayBossFncUserinvoiceinfoQueryResponseModel result = apiInstance.query(pid);
+      AlipayBossFncUserinvoiceinfoQueryResponseModel result = apiInstance.query();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayBossFncUserinvoiceinfoApi#query");
@@ -198,10 +189,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **pid** | **String**| 开票pid/mid/ou，唯一标识商户信息/集团用户信息的ID | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 

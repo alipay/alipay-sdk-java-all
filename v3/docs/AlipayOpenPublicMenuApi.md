@@ -7,7 +7,7 @@ All URIs are relative to *https://openapi.alipay.com*
 | [**batchquery**](AlipayOpenPublicMenuApi.md#batchquery) | **POST** /v3/alipay/open/public/menu/batchquery | 菜单列表查询接口 |
 | [**create**](AlipayOpenPublicMenuApi.md#create) | **POST** /v3/alipay/open/public/menu/create | 默认菜单创建接口 |
 | [**modify**](AlipayOpenPublicMenuApi.md#modify) | **POST** /v3/alipay/open/public/menu/modify | 默认菜单更新接口 |
-| [**query**](AlipayOpenPublicMenuApi.md#query) | **GET** /v3/alipay/open/public/menu/query | 公众服务平台查询菜单 |
+| [**query**](AlipayOpenPublicMenuApi.md#query) | **POST** /v3/alipay/open/public/menu/query | 公众服务平台查询菜单 |
 
 
 <a name="batchquery"></a>
@@ -79,7 +79,7 @@ No authorization required
 
 <a name="create"></a>
 # **create**
-> AlipayOpenPublicMenuCreateResponseModel create(alipayOpenPublicMenuCreateModel)
+> AlipayOpenPublicMenuCreateResponseModel create()
 
 默认菜单创建接口
 
@@ -108,9 +108,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenPublicMenuApi apiInstance = new AlipayOpenPublicMenuApi(defaultClient);
-    AlipayOpenPublicMenuCreateModel alipayOpenPublicMenuCreateModel = new AlipayOpenPublicMenuCreateModel(); // AlipayOpenPublicMenuCreateModel | 
     try {
-      AlipayOpenPublicMenuCreateResponseModel result = apiInstance.create(alipayOpenPublicMenuCreateModel);
+      AlipayOpenPublicMenuCreateResponseModel result = apiInstance.create();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenPublicMenuApi#create");
@@ -124,10 +123,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **alipayOpenPublicMenuCreateModel** | **AlipayOpenPublicMenuCreateModel**|  | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -139,7 +135,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details
@@ -150,7 +146,7 @@ No authorization required
 
 <a name="modify"></a>
 # **modify**
-> Object modify(alipayOpenPublicMenuModifyModel)
+> Object modify()
 
 默认菜单更新接口
 
@@ -179,9 +175,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenPublicMenuApi apiInstance = new AlipayOpenPublicMenuApi(defaultClient);
-    AlipayOpenPublicMenuModifyModel alipayOpenPublicMenuModifyModel = new AlipayOpenPublicMenuModifyModel(); // AlipayOpenPublicMenuModifyModel | 
     try {
-      Object result = apiInstance.modify(alipayOpenPublicMenuModifyModel);
+      Object result = apiInstance.modify();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenPublicMenuApi#modify");
@@ -195,10 +190,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **alipayOpenPublicMenuModifyModel** | **AlipayOpenPublicMenuModifyModel**|  | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -210,7 +202,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

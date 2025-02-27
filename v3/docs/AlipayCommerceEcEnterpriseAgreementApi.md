@@ -39,7 +39,7 @@ public class Example {
 
     AlipayCommerceEcEnterpriseAgreementApi apiInstance = new AlipayCommerceEcEnterpriseAgreementApi(defaultClient);
     String enterpriseId = "2088441399627416"; // String | 企业id；enterprise_id与account_id至少传一个，如果都传了优先使用enterprise_id
-    String accountId = "2088610274867962"; // String | 资金共同账号id；enterprise_id与account_id至少传一个，如果都传了优先使用enterprise_id(为兼容企业码1.0老接口保留的字段，已过时，新接客户请使用enterprise_id)
+    String accountId = "2088610274867962"; // String | 资金共同账号id；enterprise_id与account_id至少传一个，如果都传了优先使用enterprise_id
     try {
       AlipayCommerceEcEnterpriseAgreementQueryResponseModel result = apiInstance.query(enterpriseId, accountId);
       System.out.println(result);
@@ -59,7 +59,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **enterpriseId** | **String**| 企业id；enterprise_id与account_id至少传一个，如果都传了优先使用enterprise_id | [optional] |
-| **accountId** | **String**| 资金共同账号id；enterprise_id与account_id至少传一个，如果都传了优先使用enterprise_id(为兼容企业码1.0老接口保留的字段，已过时，新接客户请使用enterprise_id) | [optional] |
+| **accountId** | **String**| 资金共同账号id；enterprise_id与account_id至少传一个，如果都传了优先使用enterprise_id | [optional] |
 
 ### Return type
 

@@ -4,7 +4,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**query**](AlipayIserviceCcmFunctionApi.md#query) | **GET** /v3/alipay/iservice/ccm/function/query | 列出所有的功能点 |
+| [**query**](AlipayIserviceCcmFunctionApi.md#query) | **POST** /v3/alipay/iservice/ccm/function/query | 列出所有的功能点 |
 
 
 <a name="query"></a>

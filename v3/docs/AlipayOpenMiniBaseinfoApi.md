@@ -5,12 +5,12 @@ All URIs are relative to *https://openapi.alipay.com*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**modify**](AlipayOpenMiniBaseinfoApi.md#modify) | **POST** /v3/alipay/open/mini/baseinfo/modify | 小程序修改基础信息 |
-| [**query**](AlipayOpenMiniBaseinfoApi.md#query) | **GET** /v3/alipay/open/mini/baseinfo/query | 查询小程序基础信息 |
+| [**query**](AlipayOpenMiniBaseinfoApi.md#query) | **POST** /v3/alipay/open/mini/baseinfo/query | 查询小程序基础信息 |
 
 
 <a name="modify"></a>
 # **modify**
-> Object modify(appLogo, data)
+> Object modify()
 
 小程序修改基础信息
 
@@ -39,10 +39,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenMiniBaseinfoApi apiInstance = new AlipayOpenMiniBaseinfoApi(defaultClient);
-    File appLogo = new File("/path/to/file"); // File | 
-    AlipayOpenMiniBaseinfoModifyModel data = new AlipayOpenMiniBaseinfoModifyModel(); // AlipayOpenMiniBaseinfoModifyModel | 
     try {
-      Object result = apiInstance.modify(appLogo, data);
+      Object result = apiInstance.modify();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenMiniBaseinfoApi#modify");
@@ -56,11 +54,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **appLogo** | **File**|  | [optional] |
-| **data** | **AlipayOpenMiniBaseinfoModifyModel**|  | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -72,7 +66,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: multipart/form-data
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

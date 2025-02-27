@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="query"></a>
 # **query**
-> AlipayOpenMiniVersionBuildQueryResponseModel query(appVersion, bundleId)
+> AlipayOpenMiniVersionBuildQueryResponseModel query()
 
 小程序查询版本构建状态
 
@@ -38,10 +38,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenMiniVersionBuildApi apiInstance = new AlipayOpenMiniVersionBuildApi(defaultClient);
-    String appVersion = "0.0.1"; // String | 小程序版本号
-    String bundleId = "com.alipay.alipaywallet"; // String | 小程序客户端类型，默认为支付宝端。常见支持如下客户端： com.alipay.alipaywallet：支付宝端； com.alibaba.android.rimet：DINGDING端； com.amap.app：高德端； com.alibaba.ailabs.genie.webapps：天猫精灵端； com.alipay.iot.xpaas：支付宝IoT端。 如需更多端投放，请联系业务BD。
     try {
-      AlipayOpenMiniVersionBuildQueryResponseModel result = apiInstance.query(appVersion, bundleId);
+      AlipayOpenMiniVersionBuildQueryResponseModel result = apiInstance.query();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenMiniVersionBuildApi#query");
@@ -55,11 +53,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **appVersion** | **String**| 小程序版本号 | [optional] |
-| **bundleId** | **String**| 小程序客户端类型，默认为支付宝端。常见支持如下客户端： com.alipay.alipaywallet：支付宝端； com.alibaba.android.rimet：DINGDING端； com.amap.app：高德端； com.alibaba.ailabs.genie.webapps：天猫精灵端； com.alipay.iot.xpaas：支付宝IoT端。 如需更多端投放，请联系业务BD。 | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 

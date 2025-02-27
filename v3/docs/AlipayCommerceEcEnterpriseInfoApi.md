@@ -4,7 +4,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**modify**](AlipayCommerceEcEnterpriseInfoApi.md#modify) | **PUT** /v3/alipay/commerce/ec/enterprise | 修改企业基础信息 |
+| [**modify**](AlipayCommerceEcEnterpriseInfoApi.md#modify) | **PUT** /v3/alipay/commerce/ec/enterprise | 企业信息修改 |
 | [**query**](AlipayCommerceEcEnterpriseInfoApi.md#query) | **GET** /v3/alipay/commerce/ec/enterprise/info | 查询企业详情 |
 
 
@@ -12,9 +12,9 @@ All URIs are relative to *https://openapi.alipay.com*
 # **modify**
 > Object modify(alipayCommerceEcEnterpriseInfoModifyModel)
 
-修改企业基础信息
+企业信息修改
 
-修改企业基础信息
+修改企业信息
 
 ### Example
 ```java
@@ -81,7 +81,7 @@ No authorization required
 
 <a name="query"></a>
 # **query**
-> AlipayCommerceEcEnterpriseInfoQueryResponseModel query(enterpriseId, outBizNo)
+> AlipayCommerceEcEnterpriseInfoQueryResponseModel query(enterpriseId)
 
 查询企业详情
 
@@ -110,10 +110,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayCommerceEcEnterpriseInfoApi apiInstance = new AlipayCommerceEcEnterpriseInfoApi(defaultClient);
-    String enterpriseId = "20889490309498"; // String | 企业id,从企业注册等接口获取，和out_biz_no参数二选一，都传优先取企业id
-    String outBizNo = "2024051000000001"; // String | 服务商生成的请求唯一流水号/业务幂等号，和enterprise_id参数二选一，都传优先取企业id
+    String enterpriseId = "20889490309498"; // String | 企业id
     try {
-      AlipayCommerceEcEnterpriseInfoQueryResponseModel result = apiInstance.query(enterpriseId, outBizNo);
+      AlipayCommerceEcEnterpriseInfoQueryResponseModel result = apiInstance.query(enterpriseId);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayCommerceEcEnterpriseInfoApi#query");
@@ -130,8 +129,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **enterpriseId** | **String**| 企业id,从企业注册等接口获取，和out_biz_no参数二选一，都传优先取企业id | [optional] |
-| **outBizNo** | **String**| 服务商生成的请求唯一流水号/业务幂等号，和enterprise_id参数二选一，都传优先取企业id | [optional] |
+| **enterpriseId** | **String**| 企业id | [optional] |
 
 ### Return type
 

@@ -5,7 +5,7 @@ All URIs are relative to *https://openapi.alipay.com*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**add**](AlipayMobilePublicMenuApi.md#add) | **POST** /v3/alipay/mobile/public/menu/add | 创建菜单 |
-| [**get**](AlipayMobilePublicMenuApi.md#get) | **GET** /v3/alipay/mobile/public/menu/get | 查询菜单 |
+| [**get**](AlipayMobilePublicMenuApi.md#get) | **POST** /v3/alipay/mobile/public/menu/get | 查询菜单 |
 | [**update**](AlipayMobilePublicMenuApi.md#update) | **POST** /v3/alipay/mobile/public/menu/update | 更新菜单 |
 
 

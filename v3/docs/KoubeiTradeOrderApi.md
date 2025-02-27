@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="consult"></a>
 # **consult**
-> KoubeiTradeOrderConsultResponseModel consult(koubeiTradeOrderConsultModel)
+> KoubeiTradeOrderConsultResponseModel consult()
 
 口碑订单预咨询
 
@@ -38,9 +38,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     KoubeiTradeOrderApi apiInstance = new KoubeiTradeOrderApi(defaultClient);
-    KoubeiTradeOrderConsultModel koubeiTradeOrderConsultModel = new KoubeiTradeOrderConsultModel(); // KoubeiTradeOrderConsultModel | 
     try {
-      KoubeiTradeOrderConsultResponseModel result = apiInstance.consult(koubeiTradeOrderConsultModel);
+      KoubeiTradeOrderConsultResponseModel result = apiInstance.consult();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling KoubeiTradeOrderApi#consult");
@@ -54,10 +53,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **koubeiTradeOrderConsultModel** | **KoubeiTradeOrderConsultModel**|  | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -69,7 +65,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

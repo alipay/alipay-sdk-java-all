@@ -4,16 +4,16 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**callList**](AlipayMobilePublicFollowApi.md#callList) | **GET** /v3/alipay/mobile/public/follow/list | 获取关注者列表 |
+| [**callList**](AlipayMobilePublicFollowApi.md#callList) | **POST** /v3/alipay/mobile/public/follow/list | 获取关注者列表 |
 
 
 <a name="callList"></a>
 # **callList**
-> AlipayMobilePublicFollowListResponseModel callList(bizContent)
+> AlipayMobilePublicFollowListResponseModel callList()
 
 获取关注者列表
 
-公众号可通过本接口来获取帐号的关注者列表，关注者列表由一串userId组成。一次拉取调用最多拉取10000个关注者的userId，可以通过多次拉取的方式来满足需求。  公众号可通过本接口来获取帐号的关注者列表，关注者列表由一串userId组成。一次拉取调用最多拉取10000个关注者的userId，可以通过多次拉取的方式来满足需求。
+公众号可通过本接口来获取账号的关注者列表，关注者列表由一串userId组成。一次拉取调用最多拉取10000个关注者的userId，可以通过多次拉取的方式来满足需求。  公众号可通过本接口来获取帐号的关注者列表，关注者列表由一串userId组成。一次拉取调用最多拉取10000个关注者的userId，可以通过多次拉取的方式来满足需求。
 
 ### Example
 ```java
@@ -38,9 +38,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayMobilePublicFollowApi apiInstance = new AlipayMobilePublicFollowApi(defaultClient);
-    String bizContent = "{\"nextUserId\":\"2088102123322367\"}"; // String | 当nextUserId为空时,代表查询第一组,如果有值时以当前值为准查询下一组  <a href=\"https://doc.open.alipay.com/doc2/detail.htm?spm=a219a.7386797.0.0.eZqycg&treeId=53&articleId=103525&docType=1\">详情请见</a>
     try {
-      AlipayMobilePublicFollowListResponseModel result = apiInstance.callList(bizContent);
+      AlipayMobilePublicFollowListResponseModel result = apiInstance.callList();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayMobilePublicFollowApi#callList");
@@ -54,10 +53,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **bizContent** | **String**| 当nextUserId为空时,代表查询第一组,如果有值时以当前值为准查询下一组  &lt;a href&#x3D;\&quot;https://doc.open.alipay.com/doc2/detail.htm?spm&#x3D;a219a.7386797.0.0.eZqycg&amp;treeId&#x3D;53&amp;articleId&#x3D;103525&amp;docType&#x3D;1\&quot;&gt;详情请见&lt;/a&gt; | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 

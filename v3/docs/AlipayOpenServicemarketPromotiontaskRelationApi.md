@@ -38,7 +38,7 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenServicemarketPromotiontaskRelationApi apiInstance = new AlipayOpenServicemarketPromotiontaskRelationApi(defaultClient);
-    String commodityId = "SS010101000000003954"; // String | 服务商品ID，并不是uid，取值来源于前端的获取
+    String commodityId = "SS010101000000003954"; // String | 服务商品ID
     Integer pageSize = 10; // Integer | 每页数量，范围(1-100)。默认：10
     Integer pageNum = 1; // Integer | 当前页码，从1开始。默认：1
     try {
@@ -59,7 +59,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **commodityId** | **String**| 服务商品ID，并不是uid，取值来源于前端的获取 | [optional] |
+| **commodityId** | **String**| 服务商品ID | [optional] |
 | **pageSize** | **Integer**| 每页数量，范围(1-100)。默认：10 | [optional] |
 | **pageNum** | **Integer**| 当前页码，从1开始。默认：1 | [optional] |
 

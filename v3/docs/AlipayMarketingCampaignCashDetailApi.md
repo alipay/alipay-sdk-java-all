@@ -4,12 +4,12 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**query**](AlipayMarketingCampaignCashDetailApi.md#query) | **GET** /v3/alipay/marketing/campaign/cash/detail/query | 现金活动详情查询 |
+| [**query**](AlipayMarketingCampaignCashDetailApi.md#query) | **POST** /v3/alipay/marketing/campaign/cash/detail/query | 现金活动详情查询 |
 
 
 <a name="query"></a>
 # **query**
-> AlipayMarketingCampaignCashDetailQueryResponseModel query(crowdNo)
+> AlipayMarketingCampaignCashDetailQueryResponseModel query()
 
 现金活动详情查询
 
@@ -38,9 +38,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayMarketingCampaignCashDetailApi apiInstance = new AlipayMarketingCampaignCashDetailApi(defaultClient);
-    String crowdNo = "POYb84lfiKVdIfERAYsqPL_KQRIpfQbl47xfRmmPBlDMnSZ96O-zxUfKlHp5cxmx"; // String | 现金活动号，通过<a href=\"https://opendocs.alipay.com/apis/api_5/alipay.marketing.campaign.cash.create\">alipay.marketing.campaign.cash.create</a>(创建现金活动)接口创建现金活动获取。
     try {
-      AlipayMarketingCampaignCashDetailQueryResponseModel result = apiInstance.query(crowdNo);
+      AlipayMarketingCampaignCashDetailQueryResponseModel result = apiInstance.query();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayMarketingCampaignCashDetailApi#query");
@@ -54,10 +53,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **crowdNo** | **String**| 现金活动号，通过&lt;a href&#x3D;\&quot;https://opendocs.alipay.com/apis/api_5/alipay.marketing.campaign.cash.create\&quot;&gt;alipay.marketing.campaign.cash.create&lt;/a&gt;(创建现金活动)接口创建现金活动获取。 | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 

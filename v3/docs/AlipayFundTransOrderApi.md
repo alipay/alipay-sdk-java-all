@@ -4,12 +4,12 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**query**](AlipayFundTransOrderApi.md#query) | **GET** /v3/alipay/fund/trans/order/query | 查询转账订单接口 |
+| [**query**](AlipayFundTransOrderApi.md#query) | **POST** /v3/alipay/fund/trans/order/query | 查询转账订单接口 |
 
 
 <a name="query"></a>
 # **query**
-> AlipayFundTransOrderQueryResponseModel query(outBizNo, orderId)
+> AlipayFundTransOrderQueryResponseModel query()
 
 查询转账订单接口
 
@@ -38,10 +38,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayFundTransOrderApi apiInstance = new AlipayFundTransOrderApi(defaultClient);
-    String outBizNo = "3142321423432"; // String | 商户转账唯一订单号：发起转账来源方定义的转账单据ID。  和支付宝转账单据号不能同时为空。当和支付宝转账单据号同时提供时，将用支付宝转账单据号进行查询，忽略本参数。
-    String orderId = "20160627110070001502260006780837"; // String | 支付宝转账单据号：和商户转账唯一订单号不能同时为空。当和商户转账唯一订单号同时提供时，将用本参数进行查询，忽略商户转账唯一订单号。
     try {
-      AlipayFundTransOrderQueryResponseModel result = apiInstance.query(outBizNo, orderId);
+      AlipayFundTransOrderQueryResponseModel result = apiInstance.query();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayFundTransOrderApi#query");
@@ -55,11 +53,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **outBizNo** | **String**| 商户转账唯一订单号：发起转账来源方定义的转账单据ID。  和支付宝转账单据号不能同时为空。当和支付宝转账单据号同时提供时，将用支付宝转账单据号进行查询，忽略本参数。 | [optional] |
-| **orderId** | **String**| 支付宝转账单据号：和商户转账唯一订单号不能同时为空。当和商户转账唯一订单号同时提供时，将用本参数进行查询，忽略商户转账唯一订单号。 | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 

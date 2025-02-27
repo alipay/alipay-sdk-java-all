@@ -11,7 +11,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="cancel"></a>
 # **cancel**
-> Object cancel(alipayOpenServicemarketOrderItemCancelModel)
+> Object cancel()
 
 服务订单明细实施项单项取消
 
@@ -40,9 +40,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenServicemarketOrderItemApi apiInstance = new AlipayOpenServicemarketOrderItemApi(defaultClient);
-    AlipayOpenServicemarketOrderItemCancelModel alipayOpenServicemarketOrderItemCancelModel = new AlipayOpenServicemarketOrderItemCancelModel(); // AlipayOpenServicemarketOrderItemCancelModel | 
     try {
-      Object result = apiInstance.cancel(alipayOpenServicemarketOrderItemCancelModel);
+      Object result = apiInstance.cancel();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenServicemarketOrderItemApi#cancel");
@@ -56,10 +55,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **alipayOpenServicemarketOrderItemCancelModel** | **AlipayOpenServicemarketOrderItemCancelModel**|  | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -71,7 +67,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details
@@ -82,7 +78,7 @@ No authorization required
 
 <a name="complete"></a>
 # **complete**
-> Object complete(alipayOpenServicemarketOrderItemCompleteModel)
+> Object complete()
 
 服务商完成订单内单个明细实施项
 
@@ -111,9 +107,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenServicemarketOrderItemApi apiInstance = new AlipayOpenServicemarketOrderItemApi(defaultClient);
-    AlipayOpenServicemarketOrderItemCompleteModel alipayOpenServicemarketOrderItemCompleteModel = new AlipayOpenServicemarketOrderItemCompleteModel(); // AlipayOpenServicemarketOrderItemCompleteModel | 
     try {
-      Object result = apiInstance.complete(alipayOpenServicemarketOrderItemCompleteModel);
+      Object result = apiInstance.complete();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenServicemarketOrderItemApi#complete");
@@ -127,10 +122,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **alipayOpenServicemarketOrderItemCompleteModel** | **AlipayOpenServicemarketOrderItemCompleteModel**|  | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -142,7 +134,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details
@@ -153,7 +145,7 @@ No authorization required
 
 <a name="confirm"></a>
 # **confirm**
-> Object confirm(alipayOpenServicemarketOrderItemConfirmModel)
+> Object confirm()
 
 服务商代商家确认实施完成
 
@@ -182,9 +174,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenServicemarketOrderItemApi apiInstance = new AlipayOpenServicemarketOrderItemApi(defaultClient);
-    AlipayOpenServicemarketOrderItemConfirmModel alipayOpenServicemarketOrderItemConfirmModel = new AlipayOpenServicemarketOrderItemConfirmModel(); // AlipayOpenServicemarketOrderItemConfirmModel | 
     try {
-      Object result = apiInstance.confirm(alipayOpenServicemarketOrderItemConfirmModel);
+      Object result = apiInstance.confirm();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenServicemarketOrderItemApi#confirm");
@@ -198,10 +189,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **alipayOpenServicemarketOrderItemConfirmModel** | **AlipayOpenServicemarketOrderItemConfirmModel**|  | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -213,7 +201,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

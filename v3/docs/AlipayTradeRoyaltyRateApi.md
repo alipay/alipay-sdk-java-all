@@ -4,12 +4,12 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**query**](AlipayTradeRoyaltyRateApi.md#query) | **GET** /v3/alipay/trade/royalty/rate/query | 分账比例查询 |
+| [**query**](AlipayTradeRoyaltyRateApi.md#query) | **POST** /v3/alipay/trade/royalty/rate/query | 分账比例查询 |
 
 
 <a name="query"></a>
 # **query**
-> AlipayTradeRoyaltyRateQueryResponseModel query(outRequestNo)
+> AlipayTradeRoyaltyRateQueryResponseModel query(alipayTradeRoyaltyRateQueryModel)
 
 分账比例查询
 
@@ -38,9 +38,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayTradeRoyaltyRateApi apiInstance = new AlipayTradeRoyaltyRateApi(defaultClient);
-    String outRequestNo = "20220823165400001"; // String | 外部请求号，由商家自定义。32个字符以内，仅可包含字母、数字、下划线。需保证在商户端不重复。
+    AlipayTradeRoyaltyRateQueryModel alipayTradeRoyaltyRateQueryModel = new AlipayTradeRoyaltyRateQueryModel(); // AlipayTradeRoyaltyRateQueryModel | 
     try {
-      AlipayTradeRoyaltyRateQueryResponseModel result = apiInstance.query(outRequestNo);
+      AlipayTradeRoyaltyRateQueryResponseModel result = apiInstance.query(alipayTradeRoyaltyRateQueryModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayTradeRoyaltyRateApi#query");
@@ -57,7 +57,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **outRequestNo** | **String**| 外部请求号，由商家自定义。32个字符以内，仅可包含字母、数字、下划线。需保证在商户端不重复。 | [optional] |
+| **alipayTradeRoyaltyRateQueryModel** | **AlipayTradeRoyaltyRateQueryModel**|  | [optional] |
 
 ### Return type
 
@@ -69,7 +69,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

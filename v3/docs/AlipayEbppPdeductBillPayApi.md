@@ -4,12 +4,12 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**status**](AlipayEbppPdeductBillPayApi.md#status) | **GET** /v3/alipay/ebpp/pdeduct/bill/pay/status | 缴费直连代扣订单支付状态查询 |
+| [**status**](AlipayEbppPdeductBillPayApi.md#status) | **POST** /v3/alipay/ebpp/pdeduct/bill/pay/status | 缴费直连代扣订单支付状态查询 |
 
 
 <a name="status"></a>
 # **status**
-> AlipayEbppPdeductBillPayStatusResponseModel status(agreementId, openId, outOrderNo)
+> AlipayEbppPdeductBillPayStatusResponseModel status()
 
 缴费直连代扣订单支付状态查询
 
@@ -38,11 +38,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayEbppPdeductBillPayApi apiInstance = new AlipayEbppPdeductBillPayApi(defaultClient);
-    String agreementId = "2088123123421312"; // String | 支付宝用户ID
-    String openId = "074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5"; // String | 用户UserId在应用AppId下的唯一用户标识
-    String outOrderNo = "12312313"; // String | 商户代扣业务流水
     try {
-      AlipayEbppPdeductBillPayStatusResponseModel result = apiInstance.status(agreementId, openId, outOrderNo);
+      AlipayEbppPdeductBillPayStatusResponseModel result = apiInstance.status();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayEbppPdeductBillPayApi#status");
@@ -56,12 +53,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **agreementId** | **String**| 支付宝用户ID | [optional] |
-| **openId** | **String**| 用户UserId在应用AppId下的唯一用户标识 | [optional] |
-| **outOrderNo** | **String**| 商户代扣业务流水 | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 

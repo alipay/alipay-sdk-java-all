@@ -5,7 +5,7 @@ All URIs are relative to *https://openapi.alipay.com*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**add**](AlipayEbppBillApi.md#add) | **POST** /v3/alipay/ebpp/bill/add | 创建账单 |
-| [**get**](AlipayEbppBillApi.md#get) | **GET** /v3/alipay/ebpp/bill/get | 查询账单 |
+| [**get**](AlipayEbppBillApi.md#get) | **POST** /v3/alipay/ebpp/bill/get | 查询账单 |
 
 
 <a name="add"></a>
@@ -83,7 +83,7 @@ No authorization required
 
 <a name="get"></a>
 # **get**
-> AlipayEbppBillGetResponseModel get(authToken, orderType, merchantOrderNo)
+> AlipayEbppBillGetResponseModel get(authToken, alipayEbppBillGetModel)
 
 查询账单
 
@@ -113,10 +113,9 @@ public class Example {
 
     AlipayEbppBillApi apiInstance = new AlipayEbppBillApi(defaultClient);
     String authToken = "authToken_example"; // String | 用户授权令牌
-    String orderType = "JF"; // String | 支付宝订单类型。公共事业缴纳JF,信用卡还款HK
-    String merchantOrderNo = "201203031234567"; // String | 输出机构的业务流水号，需要保证唯一性。
+    AlipayEbppBillGetModel alipayEbppBillGetModel = new AlipayEbppBillGetModel(); // AlipayEbppBillGetModel | 
     try {
-      AlipayEbppBillGetResponseModel result = apiInstance.get(authToken, orderType, merchantOrderNo);
+      AlipayEbppBillGetResponseModel result = apiInstance.get(authToken, alipayEbppBillGetModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayEbppBillApi#get");
@@ -134,8 +133,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **authToken** | **String**| 用户授权令牌 | [optional] |
-| **orderType** | **String**| 支付宝订单类型。公共事业缴纳JF,信用卡还款HK | [optional] |
-| **merchantOrderNo** | **String**| 输出机构的业务流水号，需要保证唯一性。 | [optional] |
+| **alipayEbppBillGetModel** | **AlipayEbppBillGetModel**|  | [optional] |
 
 ### Return type
 
@@ -147,7 +145,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

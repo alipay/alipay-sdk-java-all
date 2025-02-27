@@ -5,12 +5,12 @@ All URIs are relative to *https://openapi.alipay.com*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**create**](AlipayOpenPublicPersonalizedMenuApi.md#create) | **POST** /v3/alipay/open/public/personalized/menu/create | 个性化菜单创建 |
-| [**delete**](AlipayOpenPublicPersonalizedMenuApi.md#delete) | **DELETE** /v3/alipay/open/public/personalized/menu/delete | 个性化菜单删除 |
+| [**delete**](AlipayOpenPublicPersonalizedMenuApi.md#delete) | **POST** /v3/alipay/open/public/personalized/menu/delete | 个性化菜单删除 |
 
 
 <a name="create"></a>
 # **create**
-> AlipayOpenPublicPersonalizedMenuCreateResponseModel create(alipayOpenPublicPersonalizedMenuCreateModel)
+> AlipayOpenPublicPersonalizedMenuCreateResponseModel create()
 
 个性化菜单创建
 
@@ -39,9 +39,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenPublicPersonalizedMenuApi apiInstance = new AlipayOpenPublicPersonalizedMenuApi(defaultClient);
-    AlipayOpenPublicPersonalizedMenuCreateModel alipayOpenPublicPersonalizedMenuCreateModel = new AlipayOpenPublicPersonalizedMenuCreateModel(); // AlipayOpenPublicPersonalizedMenuCreateModel | 
     try {
-      AlipayOpenPublicPersonalizedMenuCreateResponseModel result = apiInstance.create(alipayOpenPublicPersonalizedMenuCreateModel);
+      AlipayOpenPublicPersonalizedMenuCreateResponseModel result = apiInstance.create();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenPublicPersonalizedMenuApi#create");
@@ -55,10 +54,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **alipayOpenPublicPersonalizedMenuCreateModel** | **AlipayOpenPublicPersonalizedMenuCreateModel**|  | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -70,7 +66,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details
@@ -81,7 +77,7 @@ No authorization required
 
 <a name="delete"></a>
 # **delete**
-> Object delete(menuKey)
+> Object delete()
 
 个性化菜单删除
 
@@ -110,9 +106,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenPublicPersonalizedMenuApi apiInstance = new AlipayOpenPublicPersonalizedMenuApi(defaultClient);
-    String menuKey = "100000"; // String | 要删除的个性化菜单key。通过 <a href=\"https://opendocs.alipay.com/apis/api_6/alipay.open.public.personalized.menu.create\">alipay.open.public.personalized.menu.create</a>(个性化菜单创建)接口创建个性化菜单后获取。
     try {
-      Object result = apiInstance.delete(menuKey);
+      Object result = apiInstance.delete();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenPublicPersonalizedMenuApi#delete");
@@ -126,10 +121,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **menuKey** | **String**| 要删除的个性化菜单key。通过 &lt;a href&#x3D;\&quot;https://opendocs.alipay.com/apis/api_6/alipay.open.public.personalized.menu.create\&quot;&gt;alipay.open.public.personalized.menu.create&lt;/a&gt;(个性化菜单创建)接口创建个性化菜单后获取。 | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 

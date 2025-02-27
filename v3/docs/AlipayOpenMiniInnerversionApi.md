@@ -5,14 +5,12 @@ All URIs are relative to *https://openapi.alipay.com*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**online**](AlipayOpenMiniInnerversionApi.md#online) | **POST** /v3/alipay/open/mini/innerversion/online | 内部小程序-上架 |
-| [**sync**](AlipayOpenMiniInnerversionApi.md#sync) | **POST** /v3/alipay/open/mini/innerversion/sync | 小程序包信息推送 |
-| [**upgrade**](AlipayOpenMiniInnerversionApi.md#upgrade) | **POST** /v3/alipay/open/mini/innerversion/upgrade | 升级模板实例化小程序 |
 | [**upload**](AlipayOpenMiniInnerversionApi.md#upload) | **POST** /v3/alipay/open/mini/innerversion/upload | 内部小程序-打包构建 |
 
 
 <a name="online"></a>
 # **online**
-> Object online(alipayOpenMiniInnerversionOnlineModel)
+> Object online()
 
 内部小程序-上架
 
@@ -41,9 +39,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenMiniInnerversionApi apiInstance = new AlipayOpenMiniInnerversionApi(defaultClient);
-    AlipayOpenMiniInnerversionOnlineModel alipayOpenMiniInnerversionOnlineModel = new AlipayOpenMiniInnerversionOnlineModel(); // AlipayOpenMiniInnerversionOnlineModel | 
     try {
-      Object result = apiInstance.online(alipayOpenMiniInnerversionOnlineModel);
+      Object result = apiInstance.online();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenMiniInnerversionApi#online");
@@ -57,10 +54,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **alipayOpenMiniInnerversionOnlineModel** | **AlipayOpenMiniInnerversionOnlineModel**|  | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -72,149 +66,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | common response |  -  |
-| **0** | 请求失败 |  -  |
-
-<a name="sync"></a>
-# **sync**
-> Object sync(alipayOpenMiniInnerversionSyncModel)
-
-小程序包信息推送
-
-小程序上架、回滚，因拉包机制，用户无法及时生效，拉到原版本的用户，过期才会失效，该接口能力可以推送新版本到用户
-
-### Example
-```java
-// Import classes:
-import com.alipay.v3.ApiClient;
-import com.alipay.v3.ApiException;
-import com.alipay.v3.Configuration;
-import com.alipay.v3.util.*;
-import com.alipay.v3.api.models.*;
-import com.alipay.v3.api.AlipayOpenMiniInnerversionApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://openapi.alipay.com");
-    // 设置alipayConfig参数（全局设置一次）
-    AlipayConfig config = new AlipayConfig();
-    config.setAppId("app_id");
-    config.setPrivateKey("private_key");
-    config.setAlipayPublicKey("alipay_public_key");
-    config.setEncryptKey("encrypt_key");
-    defaultClient.setAlipayConfig(config);
-
-    AlipayOpenMiniInnerversionApi apiInstance = new AlipayOpenMiniInnerversionApi(defaultClient);
-    AlipayOpenMiniInnerversionSyncModel alipayOpenMiniInnerversionSyncModel = new AlipayOpenMiniInnerversionSyncModel(); // AlipayOpenMiniInnerversionSyncModel | 
-    try {
-      Object result = apiInstance.sync(alipayOpenMiniInnerversionSyncModel);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling AlipayOpenMiniInnerversionApi#sync");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **alipayOpenMiniInnerversionSyncModel** | **AlipayOpenMiniInnerversionSyncModel**|  | [optional] |
-
-### Return type
-
-**Object**
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | common response |  -  |
-| **0** | 请求失败 |  -  |
-
-<a name="upgrade"></a>
-# **upgrade**
-> Object upgrade(alipayOpenMiniInnerversionUpgradeModel)
-
-升级模板实例化小程序
-
-升级基于模板实例化的小程序，升级后不需要重新提交审核；同步接口。
-
-### Example
-```java
-// Import classes:
-import com.alipay.v3.ApiClient;
-import com.alipay.v3.ApiException;
-import com.alipay.v3.Configuration;
-import com.alipay.v3.util.*;
-import com.alipay.v3.api.models.*;
-import com.alipay.v3.api.AlipayOpenMiniInnerversionApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://openapi.alipay.com");
-    // 设置alipayConfig参数（全局设置一次）
-    AlipayConfig config = new AlipayConfig();
-    config.setAppId("app_id");
-    config.setPrivateKey("private_key");
-    config.setAlipayPublicKey("alipay_public_key");
-    config.setEncryptKey("encrypt_key");
-    defaultClient.setAlipayConfig(config);
-
-    AlipayOpenMiniInnerversionApi apiInstance = new AlipayOpenMiniInnerversionApi(defaultClient);
-    AlipayOpenMiniInnerversionUpgradeModel alipayOpenMiniInnerversionUpgradeModel = new AlipayOpenMiniInnerversionUpgradeModel(); // AlipayOpenMiniInnerversionUpgradeModel | 
-    try {
-      Object result = apiInstance.upgrade(alipayOpenMiniInnerversionUpgradeModel);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling AlipayOpenMiniInnerversionApi#upgrade");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **alipayOpenMiniInnerversionUpgradeModel** | **AlipayOpenMiniInnerversionUpgradeModel**|  | [optional] |
-
-### Return type
-
-**Object**
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details
@@ -225,7 +77,7 @@ No authorization required
 
 <a name="upload"></a>
 # **upload**
-> AlipayOpenMiniInnerversionUploadResponseModel upload(alipayOpenMiniInnerversionUploadModel)
+> AlipayOpenMiniInnerversionUploadResponseModel upload()
 
 内部小程序-打包构建
 
@@ -254,9 +106,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenMiniInnerversionApi apiInstance = new AlipayOpenMiniInnerversionApi(defaultClient);
-    AlipayOpenMiniInnerversionUploadModel alipayOpenMiniInnerversionUploadModel = new AlipayOpenMiniInnerversionUploadModel(); // AlipayOpenMiniInnerversionUploadModel | 
     try {
-      AlipayOpenMiniInnerversionUploadResponseModel result = apiInstance.upload(alipayOpenMiniInnerversionUploadModel);
+      AlipayOpenMiniInnerversionUploadResponseModel result = apiInstance.upload();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenMiniInnerversionApi#upload");
@@ -270,10 +121,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **alipayOpenMiniInnerversionUploadModel** | **AlipayOpenMiniInnerversionUploadModel**|  | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -285,7 +133,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

@@ -6,7 +6,7 @@ All URIs are relative to *https://openapi.alipay.com*
 |------------- | ------------- | -------------|
 | [**batchquery**](AlipayMarketingActivityVoucherpackageApi.md#batchquery) | **POST** /v3/alipay/marketing/activity/voucherpackage/batchquery | 券包批量查询 |
 | [**consult**](AlipayMarketingActivityVoucherpackageApi.md#consult) | **POST** /v3/alipay/marketing/activity/voucherpackage/consult | 券包购买咨询 |
-| [**query**](AlipayMarketingActivityVoucherpackageApi.md#query) | **GET** /v3/alipay/marketing/activity/voucherpackage/query | 券包详情查询 |
+| [**query**](AlipayMarketingActivityVoucherpackageApi.md#query) | **POST** /v3/alipay/marketing/activity/voucherpackage/query | 券包详情查询 |
 
 
 <a name="batchquery"></a>
@@ -155,7 +155,7 @@ No authorization required
 
 <a name="query"></a>
 # **query**
-> AlipayMarketingActivityVoucherpackageQueryResponseModel query(voucherPackageId)
+> AlipayMarketingActivityVoucherpackageQueryResponseModel query(alipayMarketingActivityVoucherpackageQueryModel)
 
 券包详情查询
 
@@ -184,9 +184,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayMarketingActivityVoucherpackageApi apiInstance = new AlipayMarketingActivityVoucherpackageApi(defaultClient);
-    String voucherPackageId = "IP20220628016671405804297103167741"; // String | 券包id
+    AlipayMarketingActivityVoucherpackageQueryModel alipayMarketingActivityVoucherpackageQueryModel = new AlipayMarketingActivityVoucherpackageQueryModel(); // AlipayMarketingActivityVoucherpackageQueryModel | 
     try {
-      AlipayMarketingActivityVoucherpackageQueryResponseModel result = apiInstance.query(voucherPackageId);
+      AlipayMarketingActivityVoucherpackageQueryResponseModel result = apiInstance.query(alipayMarketingActivityVoucherpackageQueryModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayMarketingActivityVoucherpackageApi#query");
@@ -203,7 +203,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **voucherPackageId** | **String**| 券包id | [optional] |
+| **alipayMarketingActivityVoucherpackageQueryModel** | **AlipayMarketingActivityVoucherpackageQueryModel**|  | [optional] |
 
 ### Return type
 
@@ -215,7 +215,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
