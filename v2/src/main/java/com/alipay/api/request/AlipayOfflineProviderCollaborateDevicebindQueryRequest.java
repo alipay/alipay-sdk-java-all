@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.provider.collaborate.devicebind.query request
  * 
  * @author auto create
- * @since 1.0, 2025-02-05 15:07:22
+ * @since 1.0, 2025-02-28 16:17:27
  */
 public class AlipayOfflineProviderCollaborateDevicebindQueryRequest implements AlipayRequest<AlipayOfflineProviderCollaborateDevicebindQueryResponse> {
 

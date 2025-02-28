@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenNppdUserpointRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5823788758272825583L;
+	private static final long serialVersionUID = 3371747957283138991L;
 
 	
 

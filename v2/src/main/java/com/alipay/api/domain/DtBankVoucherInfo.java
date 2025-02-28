@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class DtBankVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2754811935527732824L;
+	private static final long serialVersionUID = 2579913939219867633L;
 
 	/**
 	 * 发放限制信息

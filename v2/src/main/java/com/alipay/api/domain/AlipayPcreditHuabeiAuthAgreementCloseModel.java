@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPcreditHuabeiAuthAgreementCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8122861342878956684L;
+	private static final long serialVersionUID = 2486612958964461183L;
 
 	/**
 	 * 花芝协议号，支付宝系统中用以唯一标识用户签约记录的编号，即花芝协议号。

@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 设备参与卖进活动的信息
  *
  * @author auto create
- * @since 1.0, 2025-01-27 22:48:59
+ * @since 1.0, 2025-02-28 15:29:56
  */
 public class DeviceSalesParticipate extends AlipayObject {
 
-	private static final long serialVersionUID = 2737997778161328994L;
+	private static final long serialVersionUID = 1294241566338731513L;
 
 	/**
-	 * 活动 id（0元先享、先采后返的时候必有）
+	 * 活动 id（做任务得设备、先采后返的时候必有）
 	 */
 	@ApiField("activity_id")
 	private String activityId;

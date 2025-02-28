@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserSportsplayGobillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4563883212755378242L;
+	private static final long serialVersionUID = 3273324377876637477L;
 
 	/**
 	 * 路线场景ID

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * tree模型测试接口10
  *
  * @author auto create
- * @since 1.0, 2025-02-13 16:43:01
+ * @since 1.0, 2025-02-27 14:37:55
  */
 public class AlipayDataDataserviceTreeapitenthRainystestQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6134456581556848485L;
+	private static final long serialVersionUID = 3491959578662468613L;
 
 	/**
 	 * 测试数据
@@ -19,11 +19,24 @@ public class AlipayDataDataserviceTreeapitenthRainystestQueryModel extends Alipa
 	@ApiField("demo")
 	private String demo;
 
+	/**
+	 * 测试数据，无需关注
+	 */
+	@ApiField("demo_boolean")
+	private Boolean demoBoolean;
+
 	public String getDemo() {
 		return this.demo;
 	}
 	public void setDemo(String demo) {
 		this.demo = demo;
+	}
+
+	public Boolean getDemoBoolean() {
+		return this.demoBoolean;
+	}
+	public void setDemoBoolean(Boolean demoBoolean) {
+		this.demoBoolean = demoBoolean;
 	}
 
 }

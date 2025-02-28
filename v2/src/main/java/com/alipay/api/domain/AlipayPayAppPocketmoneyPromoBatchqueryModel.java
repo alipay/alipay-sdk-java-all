@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 儿童手表厂商营销活动奖品批量查询
  *
  * @author auto create
- * @since 1.0, 2025-01-13 14:22:58
+ * @since 1.0, 2025-02-25 11:30:09
  */
 public class AlipayPayAppPocketmoneyPromoBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6739334634964196453L;
+	private static final long serialVersionUID = 7354563494672276766L;
 
 	/**
 	 * 为空-批量查询，不为空-根据流水id查询

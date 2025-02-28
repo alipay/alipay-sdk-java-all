@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询售后单
  *
  * @author auto create
- * @since 1.0, 2025-02-19 16:55:56
+ * @since 1.0, 2025-02-28 16:03:21
  */
 public class AlipayOpenMiniOrderAftersaleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3251745731199199783L;
+	private static final long serialVersionUID = 3485938279152183155L;
 
 	/**
 	 * 售后单号，和商家自定义售后单号二选一

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生成型应用调用接口
  *
  * @author auto create
- * @since 1.0, 2024-11-27 09:29:18
+ * @since 1.0, 2025-02-25 19:23:18
  */
 public class AlipayCloudNextbuilderAgentCompletionGenerateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6499742482796361916L;
+	private static final long serialVersionUID = 6494677713658877725L;
 
 	/**
 	 * AI 创作平台创建的智能体 的 id，可从AI 创作平台页面获取
@@ -30,6 +30,24 @@ public class AlipayCloudNextbuilderAgentCompletionGenerateModel extends AlipayOb
 	 */
 	@ApiField("inputs")
 	private String inputs;
+
+	/**
+	 * 纬度数据，如2.247
+	 */
+	@ApiField("latitude")
+	private String latitude;
+
+	/**
+	 * 是否接收思维链数据
+	 */
+	@ApiField("llm_thinking")
+	private Boolean llmThinking;
+
+	/**
+	 * 经度数据，如48.888
+	 */
+	@ApiField("longitude")
+	private String longitude;
 
 	/**
 	 * 客户调用应用的用户唯一标识
@@ -68,6 +86,27 @@ public class AlipayCloudNextbuilderAgentCompletionGenerateModel extends AlipayOb
 	}
 	public void setInputs(String inputs) {
 		this.inputs = inputs;
+	}
+
+	public String getLatitude() {
+		return this.latitude;
+	}
+	public void setLatitude(String latitude) {
+		this.latitude = latitude;
+	}
+
+	public Boolean getLlmThinking() {
+		return this.llmThinking;
+	}
+	public void setLlmThinking(Boolean llmThinking) {
+		this.llmThinking = llmThinking;
+	}
+
+	public String getLongitude() {
+		return this.longitude;
+	}
+	public void setLongitude(String longitude) {
+		this.longitude = longitude;
 	}
 
 	public String getOuterUserId() {

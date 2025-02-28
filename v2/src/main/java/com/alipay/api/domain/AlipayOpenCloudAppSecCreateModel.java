@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建应用在云中环境密钥
  *
  * @author auto create
- * @since 1.0, 2023-04-06 16:52:22
+ * @since 1.0, 2025-02-28 15:49:24
  */
 public class AlipayOpenCloudAppSecCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3316494246743793495L;
+	private static final long serialVersionUID = 2215428529255633232L;
 
 	/**
 	 * 云id

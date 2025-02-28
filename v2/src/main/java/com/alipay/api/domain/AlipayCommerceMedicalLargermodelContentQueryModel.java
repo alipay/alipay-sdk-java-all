@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗大模型服务对外推荐和承接页接口
  *
  * @author auto create
- * @since 1.0, 2024-12-23 17:37:55
+ * @since 1.0, 2025-02-26 22:43:17
  */
 public class AlipayCommerceMedicalLargermodelContentQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7394698655319928555L;
+	private static final long serialVersionUID = 7744392817613234864L;
 
 	/**
 	 * 证件号
@@ -84,6 +84,13 @@ public class AlipayCommerceMedicalLargermodelContentQueryModel extends AlipayObj
 	 */
 	@ApiField("page_id")
 	private String pageId;
+
+	/**
+	 * ADB查询adb的数据
+LLM表示查询大模型的数据
+	 */
+	@ApiField("query_stage")
+	private String queryStage;
 
 	/**
 	 * 区分当前对话场景意图 待分配后传入固定值
@@ -179,6 +186,13 @@ public class AlipayCommerceMedicalLargermodelContentQueryModel extends AlipayObj
 	}
 	public void setPageId(String pageId) {
 		this.pageId = pageId;
+	}
+
+	public String getQueryStage() {
+		return this.queryStage;
+	}
+	public void setQueryStage(String queryStage) {
+		this.queryStage = queryStage;
 	}
 
 	public String getSceneCode() {

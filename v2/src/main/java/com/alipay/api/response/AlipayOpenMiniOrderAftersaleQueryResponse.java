@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.AftersaleAddressInfoVO;
 import com.alipay.api.domain.AftersaleItemInfo;
 import com.alipay.api.domain.OrderMediaInfo;
 import com.alipay.api.domain.LogisticsWaybill;
@@ -15,11 +16,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.order.aftersale.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-02-19 17:32:23
+ * @since 1.0, 2025-02-28 16:07:24
  */
 public class AlipayOpenMiniOrderAftersaleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6219969646999166294L;
+	private static final long serialVersionUID = 7569715168385184774L;
 
 	/** 
 	 * 售后单触发类型
@@ -32,6 +33,12 @@ public class AlipayOpenMiniOrderAftersaleQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("additional_reason")
 	private String additionalReason;
+
+	/** 
+	 * 退货地址信息
+	 */
+	@ApiField("address_info")
+	private AftersaleAddressInfoVO addressInfo;
 
 	/** 
 	 * 商品列表
@@ -139,6 +146,13 @@ public class AlipayOpenMiniOrderAftersaleQueryResponse extends AlipayResponse {
 	}
 	public String getAdditionalReason( ) {
 		return this.additionalReason;
+	}
+
+	public void setAddressInfo(AftersaleAddressInfoVO addressInfo) {
+		this.addressInfo = addressInfo;
+	}
+	public AftersaleAddressInfoVO getAddressInfo( ) {
+		return this.addressInfo;
 	}
 
 	public void setAftersaleGoodsInfoList(List<AftersaleItemInfo> aftersaleGoodsInfoList) {

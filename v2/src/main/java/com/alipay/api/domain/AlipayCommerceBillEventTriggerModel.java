@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 账单消息触发发送接口
  *
  * @author auto create
- * @since 1.0, 2024-07-15 20:49:15
+ * @since 1.0, 2025-02-25 11:21:19
  */
 public class AlipayCommerceBillEventTriggerModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7428221765149394453L;
+	private static final long serialVersionUID = 4768366697195548127L;
+
+	/**
+	 * 当前触发动作的额外信息
+	 */
+	@ApiField("action_ext_info")
+	private ConsumerLoanTriggerActionExtInfo actionExtInfo;
 
 	/**
 	 * 账单ID列表，账单ID格式由各机构自己定义即可，若填写则仅针对指定的账单ID推送还款消息，否则推送该用户下所有的还款消息
@@ -34,6 +40,13 @@ public class AlipayCommerceBillEventTriggerModel extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public ConsumerLoanTriggerActionExtInfo getActionExtInfo() {
+		return this.actionExtInfo;
+	}
+	public void setActionExtInfo(ConsumerLoanTriggerActionExtInfo actionExtInfo) {
+		this.actionExtInfo = actionExtInfo;
+	}
 
 	public List<String> getBillIdList() {
 		return this.billIdList;

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询生活记录详情
  *
  * @author auto create
- * @since 1.0, 2024-04-29 11:37:09
+ * @since 1.0, 2025-02-21 14:39:11
  */
 public class ZhimaCustomerLiferecordBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5196267255941648331L;
+	private static final long serialVersionUID = 6558468211691241173L;
 
 	/**
 	 * 商户id

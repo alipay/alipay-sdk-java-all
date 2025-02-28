@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayIserviceCognitiveInvoicesInferenceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8543368458393943453L;
+	private static final long serialVersionUID = 5867731311939174219L;
 
 	/** 
 	 * 算法版本

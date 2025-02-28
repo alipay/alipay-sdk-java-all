@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RefundPaymentAssetInfos extends AlipayObject {
 
-	private static final long serialVersionUID = 5655876326717477176L;
+	private static final long serialVersionUID = 6335821921674273471L;
 
 	/**
 	 * 银行卡机构id

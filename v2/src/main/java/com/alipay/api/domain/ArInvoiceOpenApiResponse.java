@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票信息展示模型
  *
  * @author auto create
- * @since 1.0, 2024-06-11 19:03:48
+ * @since 1.0, 2025-02-21 17:39:06
  */
 public class ArInvoiceOpenApiResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 6583396969588646524L;
+	private static final long serialVersionUID = 3881845547955553258L;
 
 	/**
 	 * 发票行信息集合
@@ -214,10 +214,29 @@ true：是， false：不是
 	private Boolean online;
 
 	/**
+	 * 外部单据号
+	 */
+	@ApiListField("out_business_no_list")
+	@ApiField("string")
+	private List<String> outBusinessNoList;
+
+	/**
 	 * 收款人
 	 */
 	@ApiField("payee")
 	private String payee;
+
+	/**
+	 * PDF附件名称
+	 */
+	@ApiField("pdf_file_name")
+	private String pdfFileName;
+
+	/**
+	 * 可外网访问的PDF附件的下载链接
+	 */
+	@ApiField("pdf_file_url")
+	private String pdfFileUrl;
 
 	/**
 	 * 邮件信息的主键，用于‘根据发票邮寄ID获取当前的邮寄信息’的查询输入。
@@ -256,6 +275,13 @@ true：是， false：不是
 	 */
 	@ApiField("reviewer")
 	private String reviewer;
+
+	/**
+	 * 销售产品码字符串数组
+	 */
+	@ApiListField("sales_product_name_list")
+	@ApiField("string")
+	private List<String> salesProductNameList;
 
 	/**
 	 * 销方公司地址
@@ -523,11 +549,32 @@ true：是， false：不是
 		this.online = online;
 	}
 
+	public List<String> getOutBusinessNoList() {
+		return this.outBusinessNoList;
+	}
+	public void setOutBusinessNoList(List<String> outBusinessNoList) {
+		this.outBusinessNoList = outBusinessNoList;
+	}
+
 	public String getPayee() {
 		return this.payee;
 	}
 	public void setPayee(String payee) {
 		this.payee = payee;
+	}
+
+	public String getPdfFileName() {
+		return this.pdfFileName;
+	}
+	public void setPdfFileName(String pdfFileName) {
+		this.pdfFileName = pdfFileName;
+	}
+
+	public String getPdfFileUrl() {
+		return this.pdfFileUrl;
+	}
+	public void setPdfFileUrl(String pdfFileUrl) {
+		this.pdfFileUrl = pdfFileUrl;
 	}
 
 	public String getRecentMailId() {
@@ -570,6 +617,13 @@ true：是， false：不是
 	}
 	public void setReviewer(String reviewer) {
 		this.reviewer = reviewer;
+	}
+
+	public List<String> getSalesProductNameList() {
+		return this.salesProductNameList;
+	}
+	public void setSalesProductNameList(List<String> salesProductNameList) {
+		this.salesProductNameList = salesProductNameList;
 	}
 
 	public String getSellerAddress() {

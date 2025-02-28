@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppInvoiceEnterpriseInvoiceinfoBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8158696429953233941L;
+	private static final long serialVersionUID = 8153198172553651986L;
 
 	/**
 	 * 发票日期查询结束时间

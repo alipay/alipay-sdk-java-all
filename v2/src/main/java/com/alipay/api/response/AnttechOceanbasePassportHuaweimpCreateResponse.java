@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AnttechOceanbasePassportHuaweimpCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6464735788249528959L;
+	private static final long serialVersionUID = 3716495166259564766L;
 
 	/** 
 	 * 加密后的账号

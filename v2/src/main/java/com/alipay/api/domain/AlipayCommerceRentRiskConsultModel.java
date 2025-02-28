@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁智能风险咨询（智安盾免费版）
  *
  * @author auto create
- * @since 1.0, 2025-02-13 14:57:21
+ * @since 1.0, 2025-02-27 10:44:36
  */
 public class AlipayCommerceRentRiskConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1592122618284389463L;
+	private static final long serialVersionUID = 5718869726581826543L;
 
 	/**
 	 * 支付宝openid

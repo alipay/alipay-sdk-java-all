@@ -10,17 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 设备绑定申请
  *
  * @author auto create
- * @since 1.0, 2025-01-27 22:47:46
+ * @since 1.0, 2025-02-28 15:30:56
  */
 public class AlipayOfflineProviderCollaborateDevicebindApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3764981647991634928L;
+	private static final long serialVersionUID = 1569841116738122543L;
 
 	/**
-	 * 1. 直联商家三绑定必传：
+	 * 1. 直连绑定必传：
 RECORDS_TYPE_PID(直连 PID)、
 RECORDS_TYPE_SHOPID(shopid);
-2. 可用绑定必传：
+2. 间连绑定必传：
 RECORDS_TYPE_SMID（二级商家 ID）。
 	 */
 	@ApiListField("device_record_files")
@@ -47,8 +47,6 @@ RECORDS_TYPE_SMID（二级商家 ID）。
 
 	/**
 	 * 设备绑定场景
-IOT_DEVICE_RECORDS_G3_DIRECT(直连三绑定)
-IOT_DEVICE_RECORDS_G2(可用绑定)
 	 */
 	@ApiField("scene_code")
 	private String sceneCode;

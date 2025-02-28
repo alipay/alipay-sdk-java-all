@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易分账统一查询
  *
  * @author auto create
- * @since 1.0, 2023-09-20 15:59:15
+ * @since 1.0, 2025-02-25 10:24:03
  */
 public class AlipayTradeOrderOnsettleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7693253155983889796L;
+	private static final long serialVersionUID = 5797219611423884781L;
 
 	/**
 	 * unsettled表示从待结算资金分账；不传表示从售后分账

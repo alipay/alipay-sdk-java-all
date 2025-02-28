@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class EpAdminPenaltyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4365358467917822221L;
+	private static final long serialVersionUID = 4783185262111745311L;
 
 	/**
 	 * 案件名称

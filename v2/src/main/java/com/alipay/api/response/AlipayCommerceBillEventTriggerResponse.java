@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.bill.event.trigger response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-19 15:37:04
+ * @since 1.0, 2025-02-25 11:22:24
  */
 public class AlipayCommerceBillEventTriggerResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2283854154338352148L;
+	private static final long serialVersionUID = 2217999329797348399L;
 
 	/** 
 	 * 是否成功

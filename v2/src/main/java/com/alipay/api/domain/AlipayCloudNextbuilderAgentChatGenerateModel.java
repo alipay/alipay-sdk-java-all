@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 对话消息发送接口（非流式）
  *
  * @author auto create
- * @since 1.0, 2024-08-28 23:24:08
+ * @since 1.0, 2025-02-25 19:22:18
  */
 public class AlipayCloudNextbuilderAgentChatGenerateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1723996147743383178L;
+	private static final long serialVersionUID = 7313725299343175895L;
 
 	/**
 	 * AI 创作平台创建的Agent 的 id，可从AI 创作平台页面获取
@@ -30,6 +30,24 @@ public class AlipayCloudNextbuilderAgentChatGenerateModel extends AlipayObject {
 	 */
 	@ApiField("inputs")
 	private String inputs;
+
+	/**
+	 * 纬度数据，如2.247
+	 */
+	@ApiField("latitude")
+	private String latitude;
+
+	/**
+	 * 是否接收思维链数据
+	 */
+	@ApiField("llm_thinking")
+	private Boolean llmThinking;
+
+	/**
+	 * 经度数据，如48.888
+	 */
+	@ApiField("longitude")
+	private String longitude;
 
 	/**
 	 * 多模态参数：
@@ -82,6 +100,27 @@ images标识是多模态中的图片参数，value是上传图片afts的文件ID
 	}
 	public void setInputs(String inputs) {
 		this.inputs = inputs;
+	}
+
+	public String getLatitude() {
+		return this.latitude;
+	}
+	public void setLatitude(String latitude) {
+		this.latitude = latitude;
+	}
+
+	public Boolean getLlmThinking() {
+		return this.llmThinking;
+	}
+	public void setLlmThinking(Boolean llmThinking) {
+		this.llmThinking = llmThinking;
+	}
+
+	public String getLongitude() {
+		return this.longitude;
+	}
+	public void setLongitude(String longitude) {
+		this.longitude = longitude;
 	}
 
 	public MultiModalInputsRequest getMultiModalInputs() {

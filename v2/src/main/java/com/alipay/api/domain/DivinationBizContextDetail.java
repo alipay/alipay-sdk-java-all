@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DivinationBizContextDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8264616794851313237L;
+	private static final long serialVersionUID = 1848788954853969249L;
 
 	/**
 	 * 签文类别

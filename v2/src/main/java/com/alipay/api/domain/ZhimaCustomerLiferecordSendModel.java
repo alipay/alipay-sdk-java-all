@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 合作商户回传用户的生活记录信息，推进用户生活记录任务
  *
  * @author auto create
- * @since 1.0, 2024-04-29 11:38:06
+ * @since 1.0, 2025-02-21 14:38:14
  */
 public class ZhimaCustomerLiferecordSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7346916439554291788L;
+	private static final long serialVersionUID = 8685712925245762497L;
 
 	/**
 	 * 业务时间，标准时间格式：yyyy-MM-dd HH:mm:ss

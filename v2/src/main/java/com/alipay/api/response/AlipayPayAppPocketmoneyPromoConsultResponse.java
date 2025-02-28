@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pay.app.pocketmoney.promo.consult response.
  * 
  * @author auto create
- * @since 1.0, 2025-01-13 14:22:24
+ * @since 1.0, 2025-02-25 11:30:33
  */
 public class AlipayPayAppPocketmoneyPromoConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2278214699228741637L;
+	private static final long serialVersionUID = 1651849229918944134L;
 
 	/** 
 	 * 奖品详情

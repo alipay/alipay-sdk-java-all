@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 生活记录退出
  *
  * @author auto create
- * @since 1.0, 2024-04-29 11:37:29
+ * @since 1.0, 2025-02-21 14:38:58
  */
 public class ZhimaCustomerLiferecordQuitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4513759722419799934L;
+	private static final long serialVersionUID = 4747286611956946521L;
 
 	/**
 	 * 操作枚举

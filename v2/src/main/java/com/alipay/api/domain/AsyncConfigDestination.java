@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AsyncConfigDestination extends AlipayObject {
 
-	private static final long serialVersionUID = 5415451612684926986L;
+	private static final long serialVersionUID = 4633181377749731441L;
 
 	/**
 	 * 目标类型

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class OpenDeleteCreativeResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 5473668872136582264L;
+	private static final long serialVersionUID = 7782937486584778238L;
 
 	/**
 	 * 创意删除失败详情列表

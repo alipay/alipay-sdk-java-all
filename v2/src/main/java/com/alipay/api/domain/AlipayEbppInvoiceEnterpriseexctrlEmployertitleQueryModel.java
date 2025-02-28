@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业抬头查询
  *
  * @author auto create
- * @since 1.0, 2024-07-22 17:47:29
+ * @since 1.0, 2025-02-24 19:37:20
  */
 public class AlipayEbppInvoiceEnterpriseexctrlEmployertitleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3669538241153221158L;
+	private static final long serialVersionUID = 4484656895728959944L;
 
 	/**
 	 * 企业共同账户id

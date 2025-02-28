@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业智能助理机器人对话问答
  *
  * @author auto create
- * @since 1.0, 2025-01-03 20:45:16
+ * @since 1.0, 2025-02-25 10:55:53
  */
 public class AlipayEbppIndustryBotSessionConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8522877437356412993L;
+	private static final long serialVersionUID = 6738389854285477596L;
 
 	/**
 	 * 业务扩展信息
@@ -72,6 +72,12 @@ public class AlipayEbppIndustryBotSessionConsultModel extends AlipayObject {
 	 */
 	@ApiField("stream_output")
 	private Boolean streamOutput;
+
+	/**
+	 * true为用户选择「深度思考」，在回答内容中会返回思维链内容，具体解析逻辑参考spi：spi.alipay.ebpp.industry.bot.answer.send接口说明。
+	 */
+	@ApiField("think_output")
+	private Boolean thinkOutput;
 
 	/**
 	 * 支付宝用户的userId。
@@ -147,6 +153,13 @@ public class AlipayEbppIndustryBotSessionConsultModel extends AlipayObject {
 	}
 	public void setStreamOutput(Boolean streamOutput) {
 		this.streamOutput = streamOutput;
+	}
+
+	public Boolean getThinkOutput() {
+		return this.thinkOutput;
+	}
+	public void setThinkOutput(Boolean thinkOutput) {
+		this.thinkOutput = thinkOutput;
 	}
 
 	public String getUserId() {

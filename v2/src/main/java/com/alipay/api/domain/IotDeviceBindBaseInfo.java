@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 设备绑定基本信息返回
  *
  * @author auto create
- * @since 1.0, 2025-01-27 22:48:59
+ * @since 1.0, 2025-02-28 15:29:56
  */
 public class IotDeviceBindBaseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6173594769564581372L;
+	private static final long serialVersionUID = 6284461346592342713L;
 
 	/**
 	 * [{"name":"未绑定","value":"UN_BIND"},{"name":"已绑定","value":"BIND"}]
@@ -23,7 +23,8 @@ public class IotDeviceBindBaseInfo extends AlipayObject {
 	private String deviceBindStatus;
 
 	/**
-	 * 1. 直联商家三绑定必传： RECORDS_TYPE_PID(直连 PID)、 RECORDS_TYPE_SHOPID(shopid); 2. 可用绑定必传： RECORDS_TYPE_SMID（二级商家 ID） RECORDS_TYPE_PID(PID)。
+	 * 1. 直连绑定必传： RECORDS_TYPE_PID(直连 PID)、 RECORDS_TYPE_SHOPID(shopid); 
+2. 间连绑定必传： RECORDS_TYPE_SMID（二级商家 ID）
 	 */
 	@ApiListField("device_record_files")
 	@ApiField("device_record_info")

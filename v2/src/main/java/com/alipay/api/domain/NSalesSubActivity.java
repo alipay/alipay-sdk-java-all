@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 卖进活动子任务信息
  *
  * @author auto create
- * @since 1.0, 2025-01-27 22:51:10
+ * @since 1.0, 2025-02-27 14:31:21
  */
 public class NSalesSubActivity extends AlipayObject {
 
-	private static final long serialVersionUID = 1793499556998737894L;
+	private static final long serialVersionUID = 1725748874879377826L;
 
 	/**
 	 * 卖进订单子活动结束时间
@@ -28,7 +28,7 @@ public class NSalesSubActivity extends AlipayObject {
 	private String fulfillAmount;
 
 	/**
-	 * 卖进订单子活动履约状态
+	 * 卖进订单子活动履约状态，初始化或进行中的子任务不会返回该字段。
 	 */
 	@ApiField("fulfill_status")
 	private String fulfillStatus;
@@ -40,13 +40,13 @@ public class NSalesSubActivity extends AlipayObject {
 	private Long periodNo;
 
 	/**
-	 * 当期子活动支付宝记录参考收单笔数
+	 * 当期子活动支付宝记录参考收单笔数，未开启统计前不会返回该字段。
 	 */
 	@ApiField("refer_trade_count")
 	private Long referTradeCount;
 
 	/**
-	 * 当期子活动支付宝记录参考收单天数
+	 * 当期子活动支付宝记录参考收单天数，未开启统计前不会返回该字段。
 	 */
 	@ApiField("refer_trade_days")
 	private Long referTradeDays;

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AnswerClarifyCardDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6795951269639997966L;
+	private static final long serialVersionUID = 5297526299191649432L;
 
 	/**
 	 * 澄清卡片，多轮问答的反问内容。

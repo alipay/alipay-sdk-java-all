@@ -18,11 +18,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.shop.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-09-13 16:52:11
+ * @since 1.0, 2025-02-25 20:02:14
  */
 public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4845537788388684266L;
+	private static final long serialVersionUID = 7642285325377463533L;
 
 	/** 
 	 * 门店地址库 ID，按照一定的平台规则识别出的线下真实存在、真实经营的蚂蚁门店地址库 ID，将作用于服务商的返佣激励、商品/券等权益的公域分发。如平台未返回alipay_poiid，请在确认门店信息真实有效后，稍后再进行查询。
@@ -192,6 +192,15 @@ public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("shop_info_status")
 	private String shopInfoStatus;
+
+	/** 
+	 * 主要针对医疗行业门店主体类型进件使用，不同门店认证主体需要相应的主体资质证书。 
+企业营业执照: ENTERPRISE; 
+事业单位法人证书: INST_RGST_CTF; 
+民办非企业单位登记证书 PRIVATE_NON_ENTERPRISE
+	 */
+	@ApiField("shop_main_type")
+	private String shopMainType;
 
 	/** 
 	 * 店铺名称。
@@ -404,6 +413,13 @@ public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 	}
 	public String getShopInfoStatus( ) {
 		return this.shopInfoStatus;
+	}
+
+	public void setShopMainType(String shopMainType) {
+		this.shopMainType = shopMainType;
+	}
+	public String getShopMainType( ) {
+		return this.shopMainType;
 	}
 
 	public void setShopName(String shopName) {

@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPassCodeAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4659844493129658555L;
+	private static final long serialVersionUID = 7783616965116458818L;
 
 	/** 
 	 * 成功时返回业务参数

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class Location extends AlipayObject {
 
-	private static final long serialVersionUID = 7829714594812817379L;
+	private static final long serialVersionUID = 8149284777521313291L;
 
 	/**
 	 * 朝向角度

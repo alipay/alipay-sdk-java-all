@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻生活记录签约授权
  *
  * @author auto create
- * @since 1.0, 2024-04-29 11:37:49
+ * @since 1.0, 2025-02-21 14:38:36
  */
 public class ZhimaCustomerLiferecordSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5659528893436243686L;
+	private static final long serialVersionUID = 7661772532564769521L;
 
 	/**
 	 * 是否授权

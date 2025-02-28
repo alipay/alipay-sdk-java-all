@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 蚂蚁店铺创建
  *
  * @author auto create
- * @since 1.0, 2024-12-04 15:54:58
+ * @since 1.0, 2025-02-25 14:44:19
  */
 public class AntMerchantExpandShopCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1245386159776999799L;
+	private static final long serialVersionUID = 5173444226387683612L;
 
 	/**
 	 * 门店结算卡信息。本业务当前只允许传入一张结算卡。 说明：本参数仅直付通业务使用，其余业务无需关注。
@@ -173,6 +173,15 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	 */
 	@ApiField("shop_category")
 	private String shopCategory;
+
+	/**
+	 * 主要针对医疗行业门店主体类型进件使用，不同门店认证主体需要相应的主体资质证书。 
+企业营业执照: ENTERPRISE; 
+事业单位法人证书: INST_RGST_CTF; 
+民办非企业单位登记证书 PRIVATE_NON_ENTERPRISE
+	 */
+	@ApiField("shop_main_type")
+	private String shopMainType;
 
 	/**
 	 * 店铺名称, 由商户定义在支付宝内的店铺名称
@@ -365,6 +374,13 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	}
 	public void setShopCategory(String shopCategory) {
 		this.shopCategory = shopCategory;
+	}
+
+	public String getShopMainType() {
+		return this.shopMainType;
+	}
+	public void setShopMainType(String shopMainType) {
+		this.shopMainType = shopMainType;
 	}
 
 	public String getShopName() {

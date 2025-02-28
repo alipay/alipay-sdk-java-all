@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySecurityDataOpenidtestcaseRainytestQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5525577677131553868L;
+	private static final long serialVersionUID = 5242866519931844162L;
 
 	/** 
 	 * 用于标记支付宝用户在应用下的唯一标识

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部权益同步
  *
  * @author auto create
- * @since 1.0, 2023-07-13 00:53:18
+ * @since 1.0, 2025-02-27 10:52:43
  */
 public class AlipayOverseasTravelBenefitSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1665244388256367981L;
+	private static final long serialVersionUID = 7886572515812714835L;
 
 	/**
 	 * 码值信息

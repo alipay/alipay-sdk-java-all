@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商家灰黑产人群中用户信息 -注意：商家会员专用，禁止滥用，因模型升级造成的兼容性问题，后果自负
  *
  * @author auto create
- * @since 1.0, 2025-02-12 16:02:26
+ * @since 1.0, 2025-02-24 10:54:19
  */
 public class QipanGreyBlackCrowdUser extends AlipayObject {
 
-	private static final long serialVersionUID = 7539812856589124751L;
+	private static final long serialVersionUID = 6585943614387895926L;
 
 	/**
 	 * 用户的支付宝账号通过加密类型加密后的结果
@@ -50,6 +50,17 @@ public class QipanGreyBlackCrowdUser extends AlipayObject {
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;
+
+	/**
+	 * 用户黑名单类型，多种类型请用英文逗号隔开，如：FRAUD,DISPUTE。
+枚举值：
+FRAUD：疑似欺诈
+DISPUTE：案件纠纷
+OVERDUE：租赁逾期
+OTHER：其他黑名单
+	 */
+	@ApiField("user_tags")
+	private String userTags;
 
 	public String getEncryptAlipayId() {
 		return this.encryptAlipayId;
@@ -91,6 +102,13 @@ public class QipanGreyBlackCrowdUser extends AlipayObject {
 	}
 	public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
+	}
+
+	public String getUserTags() {
+		return this.userTags;
+	}
+	public void setUserTags(String userTags) {
+		this.userTags = userTags;
 	}
 
 }

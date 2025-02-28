@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 风险咨询服务请求
  *
  * @author auto create
- * @since 1.0, 2024-12-05 15:37:21
+ * @since 1.0, 2025-02-27 11:02:23
  */
 public class RiskDetectionRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 7614582364491391153L;
+	private static final long serialVersionUID = 1128471432126219174L;
 
 	/**
 	 * 检测金额
@@ -62,8 +62,10 @@ public class RiskDetectionRequest extends AlipayObject {
 
 	/**
 	 * 二级业务环节枚举
-BILL_INVOICE_CORRELATION-账票关联
-PAYMENT_RECEIPT_CREATE-付款单创建
+BILL_INVOICE_CORRELATION-VPC老账票关联
+PAYMENT_RECEIPT_CREATE-VPC老付款单创建
+INVOICE_RELATE-VPC新账票关联
+PAYMENT_APPLY-VPC新付款单创建
 	 */
 	@ApiField("second_level_business_link")
 	private String secondLevelBusinessLink;

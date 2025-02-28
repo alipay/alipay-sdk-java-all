@@ -7,26 +7,26 @@ import com.alipay.api.internal.mapping.ApiField;
  * 充电私桩订单信息
  *
  * @author auto create
- * @since 1.0, 2024-06-03 14:15:14
+ * @since 1.0, 2025-02-28 11:09:23
  */
 public class PrivateChargingOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 4556473946936378636L;
+	private static final long serialVersionUID = 2413941718839382372L;
 
 	/**
-	 * A相电流。单位A，含直流（输出）
+	 * A相电流，单位A。含直流（输出）。
 	 */
 	@ApiField("current_a")
 	private String currentA;
 
 	/**
-	 * B相电流
+	 * B相电流，单位A。
 	 */
 	@ApiField("current_b")
 	private String currentB;
 
 	/**
-	 * C相电流
+	 * C相电流，单位A。
 	 */
 	@ApiField("current_c")
 	private String currentC;
@@ -98,7 +98,7 @@ public class PrivateChargingOrder extends AlipayObject {
 	private String startTime;
 
 	/**
-	 * 累计充电量
+	 * 累计充电量，单位为kwh
 	 */
 	@ApiField("total_power")
 	private String totalPower;
@@ -116,13 +116,13 @@ public class PrivateChargingOrder extends AlipayObject {
 	private String voltageA;
 
 	/**
-	 * B相电压
+	 * B相电压，单位V。
 	 */
 	@ApiField("voltage_b")
 	private String voltageB;
 
 	/**
-	 * C相电压
+	 * C相电压，单位V。
 	 */
 	@ApiField("voltage_c")
 	private String voltageC;

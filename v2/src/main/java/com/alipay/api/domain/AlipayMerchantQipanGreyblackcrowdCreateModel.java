@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 上传创建灰黑产人群
  *
  * @author auto create
- * @since 1.0, 2025-02-12 16:02:47
+ * @since 1.0, 2025-02-24 10:54:20
  */
 public class AlipayMerchantQipanGreyblackcrowdCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5685749675662645695L;
+	private static final long serialVersionUID = 1235478662717412143L;
 
 	/**
 	 * 支付宝人群描述

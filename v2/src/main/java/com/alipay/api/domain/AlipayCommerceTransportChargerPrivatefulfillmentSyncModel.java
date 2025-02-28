@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 充电桩履约信息同步
  *
  * @author auto create
- * @since 1.0, 2024-06-03 14:15:14
+ * @since 1.0, 2025-02-28 11:09:23
  */
 public class AlipayCommerceTransportChargerPrivatefulfillmentSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7432157146942182578L;
+	private static final long serialVersionUID = 3488536788239886434L;
 
 	/**
 	 * 履约信息

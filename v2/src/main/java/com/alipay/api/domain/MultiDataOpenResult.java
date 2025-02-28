@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MultiDataOpenResult extends AlipayObject {
 
-	private static final long serialVersionUID = 7648865893658359725L;
+	private static final long serialVersionUID = 2758495733968116987L;
 
 	/**
 	 * 所有区间对应的用户平均数量

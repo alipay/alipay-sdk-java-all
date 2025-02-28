@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 灰黑产人群中删除用户
  *
  * @author auto create
- * @since 1.0, 2025-02-12 16:02:36
+ * @since 1.0, 2025-02-24 10:54:56
  */
 public class AlipayMerchantQipanGreyblackcrowduserDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8668723654222799424L;
+	private static final long serialVersionUID = 5265553276382938896L;
 
 	/**
 	 * 支付宝人群code

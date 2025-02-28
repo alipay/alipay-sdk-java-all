@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 儿童手表红包批量查询
  *
  * @author auto create
- * @since 1.0, 2024-11-27 11:13:20
+ * @since 1.0, 2025-02-25 11:30:46
  */
 public class AlipayPayAppPocketmoneyRedpacketBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3595338767247575945L;
+	private static final long serialVersionUID = 1483441886691817618L;
 
 	/**
 	 * 待查询红包外部单号， 由业务方自定义 ，在支付宝完成红包发送后厂商可根据外部单号查询红包详细信息，数据类型为数组

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 儿童手表厂商触发
  *
  * @author auto create
- * @since 1.0, 2025-01-13 14:21:55
+ * @since 1.0, 2025-02-25 11:30:33
  */
 public class AlipayPayAppPocketmoneyPromoConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3578128319657376124L;
+	private static final long serialVersionUID = 2659571121136142821L;
 
 	/**
 	 * 奖品流水单号，由外部厂商提供，查询时支付宝负责找到对应奖品

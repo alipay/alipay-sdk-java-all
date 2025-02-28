@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntfortuneContentCommunitySubtitleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7498883557292688113L;
+	private static final long serialVersionUID = 5766387181739371991L;
 
 	/**
 	 * 10s内字幕文本，最多1000个字

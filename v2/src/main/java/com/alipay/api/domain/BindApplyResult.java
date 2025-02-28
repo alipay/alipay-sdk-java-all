@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 设备绑定申请结果信息
  *
  * @author auto create
- * @since 1.0, 2025-01-27 22:48:59
+ * @since 1.0, 2025-02-28 15:29:56
  */
 public class BindApplyResult extends AlipayObject {
 
-	private static final long serialVersionUID = 5386194416281418914L;
+	private static final long serialVersionUID = 6528923959751381334L;
 
 	/**
 	 * 设备申请绑定的当前状态（白名单不带卖进方案）
@@ -22,7 +22,7 @@ public class BindApplyResult extends AlipayObject {
 	private String applyStatus;
 
 	/**
-	 * 设备绑定状态
+	 * 本单对应的设备绑定状态
 	 */
 	@ApiField("device_bind_status")
 	private String deviceBindStatus;

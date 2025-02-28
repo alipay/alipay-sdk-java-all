@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AvatarMultiPageConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 5616659252678164215L;
+	private static final long serialVersionUID = 3413792944665217281L;
 
 	/**
 	 * 播报内容

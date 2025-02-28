@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 卖进活动信息
  *
  * @author auto create
- * @since 1.0, 2025-01-27 22:51:10
+ * @since 1.0, 2025-02-27 14:31:21
  */
 public class NSalesActivity extends AlipayObject {
 
-	private static final long serialVersionUID = 4276595664713737966L;
+	private static final long serialVersionUID = 1351536593846727753L;
 
 	/**
 	 * 卖进活动设备编号
@@ -55,7 +55,7 @@ public class NSalesActivity extends AlipayObject {
 	private List<NSalesSubActivity> periodList;
 
 	/**
-	 * 卖进订单活动跳过日期
+	 * 卖进订单活动跳过日期，未配置跳过日期时不返回该字段。
 	 */
 	@ApiListField("skip_dates")
 	@ApiField("date")
