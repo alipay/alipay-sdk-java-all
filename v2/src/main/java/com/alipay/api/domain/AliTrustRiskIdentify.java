@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AliTrustRiskIdentify extends AlipayObject {
 
-	private static final long serialVersionUID = 1354776549254587552L;
+	private static final long serialVersionUID = 6386151332482359662L;
 
 	/**
 	 * 芝麻信用风险名单详情列表

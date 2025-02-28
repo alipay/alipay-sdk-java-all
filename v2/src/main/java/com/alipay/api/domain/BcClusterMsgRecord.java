@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class BcClusterMsgRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 2445534663287669623L;
+	private static final long serialVersionUID = 4362843586974219226L;
 
 	/**
 	 * 业务方id，消息发送时可传入，消息列表返回

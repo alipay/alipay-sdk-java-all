@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceRentRoyaltySellerAppendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2561885689572758429L;
+	private static final long serialVersionUID = 3629697913114123249L;
 
 	/** 
 	 * 单位：元。补分账金额执行的实际金额

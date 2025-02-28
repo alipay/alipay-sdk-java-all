@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaOpenAppKeyanLqlCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3258669177499464588L;
+	private static final long serialVersionUID = 1785925118237628695L;
 
 	
 

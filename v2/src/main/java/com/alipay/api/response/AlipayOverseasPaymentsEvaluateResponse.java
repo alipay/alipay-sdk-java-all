@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOverseasPaymentsEvaluateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3682319259733411767L;
+	private static final long serialVersionUID = 1759264672836458353L;
 
 	/** 
 	 * 当业务返回码为错误码时，代表评估结果为失败；此时，支付方式侧会为此参数赋值，以引导用户进行下一步动作。

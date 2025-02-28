@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ConsumerLoanTriggerActionExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7394377691197721748L;
+	private static final long serialVersionUID = 8855676586918297698L;
 
 	/**
 	 * 触发事件中的动作类型，REPAY代表用户发生了还款

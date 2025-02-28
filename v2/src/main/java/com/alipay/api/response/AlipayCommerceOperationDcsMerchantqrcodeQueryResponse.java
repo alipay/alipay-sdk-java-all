@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceOperationDcsMerchantqrcodeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3672714874757688698L;
+	private static final long serialVersionUID = 6197264824248423754L;
 
 	/** 
 	 * 支付宝进件商户PID, 仅支持进件绑码过查询

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayTradeMerchantCreditQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2412274719871142687L;
+	private static final long serialVersionUID = 1552179437161942477L;
 
 	/**
 	 * 标识本次授信拆分的业务场景，具体的值由支付宝定义

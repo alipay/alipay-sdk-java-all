@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class BpmsMessageDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8831682862773919395L;
+	private static final long serialVersionUID = 4298338793233635235L;
 
 	/**
 	 * bpms消息体

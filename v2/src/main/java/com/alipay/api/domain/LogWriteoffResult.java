@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LogWriteoffResult extends AlipayObject {
 
-	private static final long serialVersionUID = 5661945114939694266L;
+	private static final long serialVersionUID = 8146744177877179284L;
 
 	/**
 	 * 冲销业务失败原因

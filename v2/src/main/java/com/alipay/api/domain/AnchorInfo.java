@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnchorInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3291754771157666769L;
+	private static final long serialVersionUID = 7175878819718113992L;
 
 	/**
 	 * 主播昵称

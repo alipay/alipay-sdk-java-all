@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RentalEbikeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7228739763625216917L;
+	private static final long serialVersionUID = 4134934949961292246L;
 
 	/**
 	 * 车辆唯一标识ID

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PunchoutAccessProductAttrValueDto extends AlipayObject {
 
-	private static final long serialVersionUID = 2198791659374863112L;
+	private static final long serialVersionUID = 4692925639651765999L;
 
 	/**
 	 * attr_desc,用于punchout模式产品同步

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InvoiceTitleOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3477498815964263948L;
+	private static final long serialVersionUID = 2337935594414481385L;
 
 	/**
 	 * 票面上的购买方地址、电话

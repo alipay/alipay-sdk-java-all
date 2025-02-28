@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IsvBizOpenOrderFailReason extends AlipayObject {
 
-	private static final long serialVersionUID = 3538415316392433958L;
+	private static final long serialVersionUID = 3124683294955646563L;
 
 	/**
 	 * 错误码

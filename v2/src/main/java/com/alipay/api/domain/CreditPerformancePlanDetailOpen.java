@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CreditPerformancePlanDetailOpen extends AlipayObject {
 
-	private static final long serialVersionUID = 8214233939391923818L;
+	private static final long serialVersionUID = 3875858848995494562L;
 
 	/**
 	 * 金额，单位为：元（人民币），精确到小数点后两位。

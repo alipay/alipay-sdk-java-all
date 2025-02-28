@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMedicalQrcodeGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6477656363727459912L;
+	private static final long serialVersionUID = 4736779924234132543L;
 
 	/** 
 	 * 就诊人默认参保地映射后的地市编码

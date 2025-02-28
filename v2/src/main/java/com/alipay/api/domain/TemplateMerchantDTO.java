@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TemplateMerchantDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4578997447991744997L;
+	private static final long serialVersionUID = 1744394472679783699L;
 
 	/**
 	 * 卡券所属品牌ID，支持支付宝品牌库与淘宝品牌库录入的品牌，当从对应品牌库录入卡券品牌信息后可获得品牌ID。支持自定义动态参数传值，但动态参数需定义为：$_r_brand_id$。

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceIotMdeviceprodWhitelistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3783188915776177893L;
+	private static final long serialVersionUID = 8411561849285485898L;
 
 	/**
 	 * 白名单所属应用的appID

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class EpReginfoChangeDataInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8638657874899967113L;
+	private static final long serialVersionUID = 8457616519327484261L;
 
 	/**
 	 * 企业工商变更明细列表

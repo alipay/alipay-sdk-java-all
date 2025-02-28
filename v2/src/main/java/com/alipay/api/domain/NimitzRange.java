@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NimitzRange extends AlipayObject {
 
-	private static final long serialVersionUID = 5495428354335184938L;
+	private static final long serialVersionUID = 5631464174597287713L;
 
 	/**
 	 * 范围的最大值

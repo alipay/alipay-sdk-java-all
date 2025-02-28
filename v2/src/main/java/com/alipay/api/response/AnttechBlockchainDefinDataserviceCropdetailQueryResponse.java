@@ -21,7 +21,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AnttechBlockchainDefinDataserviceCropdetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4527427778395535876L;
+	private static final long serialVersionUID = 8331178242941593837L;
 
 	/** 
 	 * 长势检测10期数据，product_code=1002返回
