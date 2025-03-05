@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCloudCloudpromoAssistantPresetquestionConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5212938931378563289L;
+	private static final long serialVersionUID = 6132977437986314936L;
 
 	/**
 	 * 询问时间

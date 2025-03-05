@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商保码-垫付申请状态同步
  *
  * @author auto create
- * @since 1.0, 2025-01-06 15:12:54
+ * @since 1.0, 2025-03-05 11:38:50
  */
 public class AlipayCommerceMedicalInsuranceAdvancepaySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7341263239615764826L;
+	private static final long serialVersionUID = 3734229497145929598L;
 
 	/**
 	 * 垫付申请结果描述。垫付申请失败时，需给出失败原因

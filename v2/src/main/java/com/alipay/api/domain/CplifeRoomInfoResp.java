@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CplifeRoomInfoResp extends AlipayObject {
 
-	private static final long serialVersionUID = 5635257464893445762L;
+	private static final long serialVersionUID = 7664638659133694523L;
 
 	/**
 	 * 商户系统小区房屋唯一ID标示.

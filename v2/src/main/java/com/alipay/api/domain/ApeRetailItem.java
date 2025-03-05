@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ApeRetailItem extends AlipayObject {
 
-	private static final long serialVersionUID = 8162797695781452357L;
+	private static final long serialVersionUID = 6818363458687429496L;
 
 	/**
 	 * 商品可售时间

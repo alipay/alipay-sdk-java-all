@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BackgroundWordInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3536829397363519454L;
+	private static final long serialVersionUID = 3123738846528775289L;
 
 	/**
 	 * 底纹词

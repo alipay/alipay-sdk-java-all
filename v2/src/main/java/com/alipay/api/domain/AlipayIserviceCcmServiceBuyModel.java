@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayIserviceCcmServiceBuyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5551531583818614757L;
+	private static final long serialVersionUID = 4558791332761354415L;
 
 	/**
 	 * 服务代码。通过<a href="https://opendocs.alipay.com/apis/01dmgh">alipay.iservice.ccm.service.initialize</a>(isv服务初始化接口) 获取。

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RiskApplyConsult extends AlipayObject {
 
-	private static final long serialVersionUID = 6399968981372467365L;
+	private static final long serialVersionUID = 8611673235957118332L;
 
 	/**
 	 * 风险咨询时间

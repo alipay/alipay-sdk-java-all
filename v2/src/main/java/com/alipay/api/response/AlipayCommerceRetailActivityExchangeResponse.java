@@ -12,18 +12,18 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceRetailActivityExchangeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8176293577853353334L;
+	private static final long serialVersionUID = 4687793452924997165L;
 
 	/** 
 	 * 积分兑换状态
 	 */
 	@ApiField("status")
-	private String status;
+	private Boolean status;
 
-	public void setStatus(String status) {
+	public void setStatus(Boolean status) {
 		this.status = status;
 	}
-	public String getStatus( ) {
+	public Boolean getStatus( ) {
 		return this.status;
 	}
 

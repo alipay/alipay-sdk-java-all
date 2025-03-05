@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DatadigitalAnttechDtsparkConversationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3449934841772138938L;
+	private static final long serialVersionUID = 5677891442528419366L;
 
 	/**
 	 * AI智库配置的智能会话助手唯一id

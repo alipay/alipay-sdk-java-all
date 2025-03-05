@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportEbikeBindSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8141525124923786225L;
+	private static final long serialVersionUID = 4562825516831914362L;
 
 	/** 
 	 * 结果码

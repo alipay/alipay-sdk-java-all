@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 体检系统口袋医生在线问诊-人员信息查询
  *
  * @author auto create
- * @since 1.0, 2023-09-19 21:02:53
+ * @since 1.0, 2025-03-05 14:26:10
  */
 public class AlipayDigitalmgmtHrhealthKdysPersoninfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1595163576394536622L;
+	private static final long serialVersionUID = 4188932618229967858L;
 
 	/**
 	 * 一般为带'-'的uuid

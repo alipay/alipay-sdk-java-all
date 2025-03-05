@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 负荷聚合中心系统实时数据同步接口
  *
  * @author auto create
- * @since 1.0, 2024-09-02 21:57:14
+ * @since 1.0, 2025-03-03 13:42:39
  */
 public class AnttechBlockchainFinanceEnergyStationsystemSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7824286784583947681L;
+	private static final long serialVersionUID = 2313214877169724253L;
 
 	/**
 	 * 设备数据列表

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserPicture extends AlipayObject {
 
-	private static final long serialVersionUID = 7359557472678729752L;
+	private static final long serialVersionUID = 1219636385829342429L;
 
 	/**
 	 * 图片类型，包括身份证正反面、营业执照等

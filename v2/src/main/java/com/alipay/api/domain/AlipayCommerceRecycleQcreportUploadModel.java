@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 回收行业质检报告上传
  *
  * @author auto create
- * @since 1.0, 2025-02-26 10:41:39
+ * @since 1.0, 2025-03-03 11:32:25
  */
 public class AlipayCommerceRecycleQcreportUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2689839139964983838L;
+	private static final long serialVersionUID = 5169714959919691223L;
 
 	/**
 	 * null
@@ -30,10 +30,22 @@ public class AlipayCommerceRecycleQcreportUploadModel extends AlipayObject {
 	private String merchantNo;
 
 	/**
+	 * 商户自有的质检报告地址，需要传支付宝小程序页面url，规范参考<a href="https://opendocs.alipay.com/support/01rb18">文档</a>
+	 */
+	@ApiField("merchant_report_url")
+	private String merchantReportUrl;
+
+	/**
 	 * 支付宝用户OPENID
 	 */
 	@ApiField("openid")
 	private String openid;
+
+	/**
+	 * 商户订单号
+	 */
+	@ApiField("out_order_id")
+	private String outOrderId;
 
 	/**
 	 * 产品信息
@@ -67,11 +79,25 @@ public class AlipayCommerceRecycleQcreportUploadModel extends AlipayObject {
 		this.merchantNo = merchantNo;
 	}
 
+	public String getMerchantReportUrl() {
+		return this.merchantReportUrl;
+	}
+	public void setMerchantReportUrl(String merchantReportUrl) {
+		this.merchantReportUrl = merchantReportUrl;
+	}
+
 	public String getOpenid() {
 		return this.openid;
 	}
 	public void setOpenid(String openid) {
 		this.openid = openid;
+	}
+
+	public String getOutOrderId() {
+		return this.outOrderId;
+	}
+	public void setOutOrderId(String outOrderId) {
+		this.outOrderId = outOrderId;
 	}
 
 	public RecycleQcReportProductInfo getProductInfo() {

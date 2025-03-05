@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySecurityProdUmidQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5835932239815176991L;
+	private static final long serialVersionUID = 5337781292746976951L;
 
 	/**
 	 * tokenID,客户端对应的token值: token由应用系统生成, 缓存在前台页面, 生成UMID的时候会传到UMID系统

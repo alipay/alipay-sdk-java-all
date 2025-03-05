@@ -9,14 +9,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * CreateCustomerRequest
  *
  * @author auto create
- * @since 1.0, 2024-06-03 16:37:53
+ * @since 1.0, 2025-03-03 14:54:17
  */
 public class CreateCustomerRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 5562464385954152636L;
+	private static final long serialVersionUID = 8813938542429386994L;
 
 	/**
-	 * bd
+	 * 客户bd
 	 */
 	@ApiField("bd")
 	private String bd;
@@ -28,10 +28,16 @@ public class CreateCustomerRequest extends AlipayObject {
 	private String chargePersonName;
 
 	/**
-	 * cid
+	 * 客户cid
 	 */
 	@ApiField("cid")
 	private String cid;
+
+	/**
+	 * CLOUD_TAG=多云标签
+	 */
+	@ApiField("cloud_tag")
+	private String cloudTag;
 
 	/**
 	 * 国家
@@ -76,7 +82,7 @@ public class CreateCustomerRequest extends AlipayObject {
 	private String epRegNo;
 
 	/**
-	 * 经营状态
+	 * 经营状态字符串，16位长度内任意值
 	 */
 	@ApiField("ep_status")
 	private String epStatus;
@@ -106,10 +112,16 @@ public class CreateCustomerRequest extends AlipayObject {
 	private String industryCategory;
 
 	/**
-	 * 重点客户枚举CODE
+	 * 重点客户，来自纷享销客code值
 	 */
 	@ApiField("key_customer")
 	private String keyCustomer;
+
+	/**
+	 * LEADS_CLOUD_TAG=商机多云
+	 */
+	@ApiField("leads_cloud_tag")
+	private String leadsCloudTag;
 
 	/**
 	 * 所属地区
@@ -124,13 +136,19 @@ public class CreateCustomerRequest extends AlipayObject {
 	private String memo;
 
 	/**
-	 * 公有云一级行业枚举CODE
+	 * PLATFORM_CLOUD_TAG=平台多云
+	 */
+	@ApiField("platform_cloud_tag")
+	private String platformCloudTag;
+
+	/**
+	 * 公有云一级行业，来自纷享销客行业值
 	 */
 	@ApiField("pub_cloud_first_level_industry")
 	private String pubCloudFirstLevelIndustry;
 
 	/**
-	 * 公有云二级行业枚举CODE
+	 * 公有云二级行业，来自纷享销客行业值
 	 */
 	@ApiField("pub_cloud_second_level_industry")
 	private String pubCloudSecondLevelIndustry;
@@ -148,13 +166,13 @@ public class CreateCustomerRequest extends AlipayObject {
 	private String registeredAddress;
 
 	/**
-	 * 注册资本
+	 * 注册资本带单位文本值
 	 */
 	@ApiField("registered_capital")
 	private String registeredCapital;
 
 	/**
-	 * 企业人员规模
+	 * 企业人员规模（人数）
 	 */
 	@ApiField("social_security_account")
 	private String socialSecurityAccount;
@@ -178,6 +196,13 @@ public class CreateCustomerRequest extends AlipayObject {
 	}
 	public void setCid(String cid) {
 		this.cid = cid;
+	}
+
+	public String getCloudTag() {
+		return this.cloudTag;
+	}
+	public void setCloudTag(String cloudTag) {
+		this.cloudTag = cloudTag;
 	}
 
 	public String getCountry() {
@@ -271,6 +296,13 @@ public class CreateCustomerRequest extends AlipayObject {
 		this.keyCustomer = keyCustomer;
 	}
 
+	public String getLeadsCloudTag() {
+		return this.leadsCloudTag;
+	}
+	public void setLeadsCloudTag(String leadsCloudTag) {
+		this.leadsCloudTag = leadsCloudTag;
+	}
+
 	public String getLocation() {
 		return this.location;
 	}
@@ -283,6 +315,13 @@ public class CreateCustomerRequest extends AlipayObject {
 	}
 	public void setMemo(String memo) {
 		this.memo = memo;
+	}
+
+	public String getPlatformCloudTag() {
+		return this.platformCloudTag;
+	}
+	public void setPlatformCloudTag(String platformCloudTag) {
+		this.platformCloudTag = platformCloudTag;
 	}
 
 	public String getPubCloudFirstLevelIndustry() {

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁履约明细信息，包含阶段、期数、资金类型、实收金额、分账金额等信息
  *
  * @author auto create
- * @since 1.0, 2025-01-08 16:27:08
+ * @since 1.0, 2025-03-04 18:19:41
  */
 public class RentDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 2228645126937844165L;
+	private static final long serialVersionUID = 8462838863658162528L;
 
 	/**
 	 * 租赁商实收金额，单位：元
@@ -46,7 +46,7 @@ public class RentDetail extends AlipayObject {
 	private String payChannel;
 
 	/**
-	 * 还款期数
+	 * 代表某一个阶段的第几期的还款计划，要结合stage进行锁定某一期计划
 	 */
 	@ApiField("period")
 	private Long period;

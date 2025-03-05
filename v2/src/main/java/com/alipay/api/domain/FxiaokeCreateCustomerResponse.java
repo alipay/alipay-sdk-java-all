@@ -7,32 +7,32 @@ import com.alipay.api.internal.mapping.ApiField;
  * FxiaokeCreateCustomerResponse
  *
  * @author auto create
- * @since 1.0, 2023-10-19 09:49:33
+ * @since 1.0, 2025-03-03 14:54:17
  */
 public class FxiaokeCreateCustomerResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 2176481346363831913L;
+	private static final long serialVersionUID = 5488325695878519516L;
 
 	/**
-	 * bid
+	 * 客户bid
 	 */
 	@ApiField("bid")
 	private String bid;
 
 	/**
-	 * id
+	 * 客户id
 	 */
 	@ApiField("id")
 	private Long id;
 
 	/**
-	 * 蚂蚁关联方代码
+	 * 蚂蚁关联方代码文本值
 	 */
 	@ApiField("intertrade_ou_code")
 	private String intertradeOuCode;
 
 	/**
-	 * 关联交易类型
+	 * 关联交易类型文本值
 	 */
 	@ApiField("intertrade_type")
 	private String intertradeType;
