@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="set"></a>
 # **set**
-> Object set()
+> Object set(alipayMarketingCardFormtemplateSetModel)
 
 会员卡开卡表单模板配置
 
@@ -38,8 +38,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayMarketingCardFormtemplateApi apiInstance = new AlipayMarketingCardFormtemplateApi(defaultClient);
+    AlipayMarketingCardFormtemplateSetModel alipayMarketingCardFormtemplateSetModel = new AlipayMarketingCardFormtemplateSetModel(); // AlipayMarketingCardFormtemplateSetModel | 
     try {
-      Object result = apiInstance.set();
+      Object result = apiInstance.set(alipayMarketingCardFormtemplateSetModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayMarketingCardFormtemplateApi#set");
@@ -53,7 +54,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayMarketingCardFormtemplateSetModel** | **AlipayMarketingCardFormtemplateSetModel**|  | [optional] |
 
 ### Return type
 
@@ -65,7 +69,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

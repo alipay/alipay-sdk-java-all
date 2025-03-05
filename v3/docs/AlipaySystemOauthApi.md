@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="token"></a>
 # **token**
-> AlipaySystemOauthTokenResponseModel token()
+> AlipaySystemOauthTokenResponseModel token(alipaySystemOauthTokenModel)
 
 换取授权访问令牌
 
@@ -38,8 +38,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipaySystemOauthApi apiInstance = new AlipaySystemOauthApi(defaultClient);
+    AlipaySystemOauthTokenModel alipaySystemOauthTokenModel = new AlipaySystemOauthTokenModel(); // AlipaySystemOauthTokenModel | 
     try {
-      AlipaySystemOauthTokenResponseModel result = apiInstance.token();
+      AlipaySystemOauthTokenResponseModel result = apiInstance.token(alipaySystemOauthTokenModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipaySystemOauthApi#token");
@@ -53,7 +54,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipaySystemOauthTokenModel** | **AlipaySystemOauthTokenModel**|  | [optional] |
 
 ### Return type
 
@@ -65,7 +69,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

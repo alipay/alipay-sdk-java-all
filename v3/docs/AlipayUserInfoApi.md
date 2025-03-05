@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="share"></a>
 # **share**
-> AlipayUserInfoShareResponseModel share(authToken, alipayUserInfoShareModel)
+> AlipayUserInfoShareResponseModel share(authToken)
 
 支付宝会员授权信息查询接口
 
@@ -39,9 +39,8 @@ public class Example {
 
     AlipayUserInfoApi apiInstance = new AlipayUserInfoApi(defaultClient);
     String authToken = "authToken_example"; // String | 用户授权令牌
-    AlipayUserInfoShareModel alipayUserInfoShareModel = new AlipayUserInfoShareModel(); // AlipayUserInfoShareModel | 
     try {
-      AlipayUserInfoShareResponseModel result = apiInstance.share(authToken, alipayUserInfoShareModel);
+      AlipayUserInfoShareResponseModel result = apiInstance.share(authToken);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayUserInfoApi#share");
@@ -59,7 +58,6 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **authToken** | **String**| 用户授权令牌 | [optional] |
-| **alipayUserInfoShareModel** | **AlipayUserInfoShareModel**|  | [optional] |
 
 ### Return type
 
@@ -71,7 +69,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

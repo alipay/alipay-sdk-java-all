@@ -6,7 +6,7 @@ All URIs are relative to *https://openapi.alipay.com*
 |------------- | ------------- | -------------|
 | [**create**](AntMerchantExpandApprecommendAccountApi.md#create) | **POST** /v3/ant/merchant/expand/apprecommend/account/create | 关联账号和小程序 |
 | [**delete**](AntMerchantExpandApprecommendAccountApi.md#delete) | **DELETE** /v3/ant/merchant/expand/apprecommend/account/delete | 取消关联账号和小程序 |
-| [**query**](AntMerchantExpandApprecommendAccountApi.md#query) | **POST** /v3/ant/merchant/expand/apprecommend/account/query | 查询已关联指定APP的账号列表 |
+| [**query**](AntMerchantExpandApprecommendAccountApi.md#query) | **GET** /v3/ant/merchant/expand/apprecommend/account/query | 查询已关联指定APP的账号列表 |
 
 
 <a name="create"></a>
@@ -112,7 +112,7 @@ public class Example {
 
     AntMerchantExpandApprecommendAccountApi apiInstance = new AntMerchantExpandApprecommendAccountApi(defaultClient);
     String appNo = "2021000155639069"; // String | 待解绑小程序的app_id
-    String accNo = "2088001969784501"; // String | 待解绑账号PID
+    String accNo = "20880019****4501"; // String | 待解绑账号PID
     try {
       Object result = apiInstance.delete(appNo, accNo);
       System.out.println(result);
@@ -155,7 +155,7 @@ No authorization required
 
 <a name="query"></a>
 # **query**
-> AntMerchantExpandApprecommendAccountQueryResponseModel query(antMerchantExpandApprecommendAccountQueryModel)
+> AntMerchantExpandApprecommendAccountQueryResponseModel query(appNo, pageSize, pageNumber)
 
 查询已关联指定APP的账号列表
 
@@ -184,9 +184,11 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AntMerchantExpandApprecommendAccountApi apiInstance = new AntMerchantExpandApprecommendAccountApi(defaultClient);
-    AntMerchantExpandApprecommendAccountQueryModel antMerchantExpandApprecommendAccountQueryModel = new AntMerchantExpandApprecommendAccountQueryModel(); // AntMerchantExpandApprecommendAccountQueryModel | 
+    String appNo = "20210001****9069"; // String | 已关联小程序的app_id
+    Integer pageSize = 10; // Integer | 单页行数，不能超过100行，单位：行
+    Integer pageNumber = 1; // Integer | 页码
     try {
-      AntMerchantExpandApprecommendAccountQueryResponseModel result = apiInstance.query(antMerchantExpandApprecommendAccountQueryModel);
+      AntMerchantExpandApprecommendAccountQueryResponseModel result = apiInstance.query(appNo, pageSize, pageNumber);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AntMerchantExpandApprecommendAccountApi#query");
@@ -203,7 +205,9 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **antMerchantExpandApprecommendAccountQueryModel** | **AntMerchantExpandApprecommendAccountQueryModel**|  | [optional] |
+| **appNo** | **String**| 已关联小程序的app_id | [optional] |
+| **pageSize** | **Integer**| 单页行数，不能超过100行，单位：行 | [optional] |
+| **pageNumber** | **Integer**| 页码 | [optional] |
 
 ### Return type
 
@@ -215,7 +219,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

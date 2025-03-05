@@ -10,7 +10,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="sign"></a>
 # **sign**
-> Object sign()
+> Object sign(alipayEbppInvoiceAuthSignModel)
 
 发票授权关系签约
 
@@ -39,8 +39,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayEbppInvoiceAuthApi apiInstance = new AlipayEbppInvoiceAuthApi(defaultClient);
+    AlipayEbppInvoiceAuthSignModel alipayEbppInvoiceAuthSignModel = new AlipayEbppInvoiceAuthSignModel(); // AlipayEbppInvoiceAuthSignModel | 
     try {
-      Object result = apiInstance.sign();
+      Object result = apiInstance.sign(alipayEbppInvoiceAuthSignModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayEbppInvoiceAuthApi#sign");
@@ -54,7 +55,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayEbppInvoiceAuthSignModel** | **AlipayEbppInvoiceAuthSignModel**|  | [optional] |
 
 ### Return type
 
@@ -66,7 +70,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -77,7 +81,7 @@ No authorization required
 
 <a name="unsign"></a>
 # **unsign**
-> Object unsign()
+> Object unsign(alipayEbppInvoiceAuthUnsignModel)
 
 发票授权关系解约
 
@@ -106,8 +110,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayEbppInvoiceAuthApi apiInstance = new AlipayEbppInvoiceAuthApi(defaultClient);
+    AlipayEbppInvoiceAuthUnsignModel alipayEbppInvoiceAuthUnsignModel = new AlipayEbppInvoiceAuthUnsignModel(); // AlipayEbppInvoiceAuthUnsignModel | 
     try {
-      Object result = apiInstance.unsign();
+      Object result = apiInstance.unsign(alipayEbppInvoiceAuthUnsignModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayEbppInvoiceAuthApi#unsign");
@@ -121,7 +126,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayEbppInvoiceAuthUnsignModel** | **AlipayEbppInvoiceAuthUnsignModel**|  | [optional] |
 
 ### Return type
 
@@ -133,7 +141,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

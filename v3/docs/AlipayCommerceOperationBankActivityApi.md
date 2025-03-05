@@ -38,8 +38,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayCommerceOperationBankActivityApi apiInstance = new AlipayCommerceOperationBankActivityApi(defaultClient);
-    String openId = "021xxxx"; // String | 支付宝openId
-    String userId = "2088xxxx"; // String | 蚂蚁统一会员ID
+    String openId = "074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5"; // String | 支付宝openId
+    String userId = "208822294389xxxx"; // String | 蚂蚁统一会员ID
     try {
       AlipayCommerceOperationBankActivityQueryResponseModel result = apiInstance.query(openId, userId);
       System.out.println(result);

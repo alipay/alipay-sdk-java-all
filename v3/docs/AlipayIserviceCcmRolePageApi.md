@@ -4,12 +4,12 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**query**](AlipayIserviceCcmRolePageApi.md#query) | **POST** /v3/alipay/iservice/ccm/role/page/query | 分页查询角色 |
+| [**query**](AlipayIserviceCcmRolePageApi.md#query) | **GET** /v3/alipay/iservice/ccm/role/page/query | 分页查询角色 |
 
 
 <a name="query"></a>
 # **query**
-> AlipayIserviceCcmRolePageQueryResponseModel query(alipayIserviceCcmRolePageQueryModel)
+> AlipayIserviceCcmRolePageQueryResponseModel query(name, pageNum, pageSize, ccsInstanceId)
 
 分页查询角色
 
@@ -38,9 +38,12 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayIserviceCcmRolePageApi apiInstance = new AlipayIserviceCcmRolePageApi(defaultClient);
-    AlipayIserviceCcmRolePageQueryModel alipayIserviceCcmRolePageQueryModel = new AlipayIserviceCcmRolePageQueryModel(); // AlipayIserviceCcmRolePageQueryModel | 
+    String name = "普通客服"; // String | 角色名称
+    Integer pageNum = 1; // Integer | 查询结果的页码，起始值为 1，默认值为 1
+    Integer pageSize = 10; // Integer | 分页查询时设置的每页记录数，最大值 100 行，默认为 10
+    String ccsInstanceId = "kaj_9DA1"; // String | 部门id（即租户实例ID、数据权限ID）
     try {
-      AlipayIserviceCcmRolePageQueryResponseModel result = apiInstance.query(alipayIserviceCcmRolePageQueryModel);
+      AlipayIserviceCcmRolePageQueryResponseModel result = apiInstance.query(name, pageNum, pageSize, ccsInstanceId);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayIserviceCcmRolePageApi#query");
@@ -57,7 +60,10 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **alipayIserviceCcmRolePageQueryModel** | **AlipayIserviceCcmRolePageQueryModel**|  | [optional] |
+| **name** | **String**| 角色名称 | [optional] |
+| **pageNum** | **Integer**| 查询结果的页码，起始值为 1，默认值为 1 | [optional] |
+| **pageSize** | **Integer**| 分页查询时设置的每页记录数，最大值 100 行，默认为 10 | [optional] |
+| **ccsInstanceId** | **String**| 部门id（即租户实例ID、数据权限ID） | [optional] |
 
 ### Return type
 
@@ -69,7 +75,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

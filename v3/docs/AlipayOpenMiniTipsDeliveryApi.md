@@ -7,7 +7,7 @@ All URIs are relative to *https://openapi.alipay.com*
 | [**batchquery**](AlipayOpenMiniTipsDeliveryApi.md#batchquery) | **POST** /v3/alipay/open/mini/tips/delivery/batchquery | 小程序收藏引导投放活动配置批量查询 |
 | [**create**](AlipayOpenMiniTipsDeliveryApi.md#create) | **POST** /v3/alipay/open/mini/tips/delivery/create | 小程序收藏引导投放活动配置创建 |
 | [**modify**](AlipayOpenMiniTipsDeliveryApi.md#modify) | **POST** /v3/alipay/open/mini/tips/delivery/modify | 小程序收藏引导投放活动修改 |
-| [**query**](AlipayOpenMiniTipsDeliveryApi.md#query) | **POST** /v3/alipay/open/mini/tips/delivery/query | 小程序收藏引导投放活动详情查询 |
+| [**query**](AlipayOpenMiniTipsDeliveryApi.md#query) | **GET** /v3/alipay/open/mini/tips/delivery/query | 小程序收藏引导投放活动详情查询 |
 
 
 <a name="batchquery"></a>
@@ -225,7 +225,7 @@ No authorization required
 
 <a name="query"></a>
 # **query**
-> AlipayOpenMiniTipsDeliveryQueryResponseModel query(alipayOpenMiniTipsDeliveryQueryModel)
+> AlipayOpenMiniTipsDeliveryQueryResponseModel query(deliveryId)
 
 小程序收藏引导投放活动详情查询
 
@@ -254,9 +254,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenMiniTipsDeliveryApi apiInstance = new AlipayOpenMiniTipsDeliveryApi(defaultClient);
-    AlipayOpenMiniTipsDeliveryQueryModel alipayOpenMiniTipsDeliveryQueryModel = new AlipayOpenMiniTipsDeliveryQueryModel(); // AlipayOpenMiniTipsDeliveryQueryModel | 
+    String deliveryId = "20211114000003057595"; // String | 收藏引导投放活动ID，查询收藏引导活动必填参数
     try {
-      AlipayOpenMiniTipsDeliveryQueryResponseModel result = apiInstance.query(alipayOpenMiniTipsDeliveryQueryModel);
+      AlipayOpenMiniTipsDeliveryQueryResponseModel result = apiInstance.query(deliveryId);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenMiniTipsDeliveryApi#query");
@@ -273,7 +273,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **alipayOpenMiniTipsDeliveryQueryModel** | **AlipayOpenMiniTipsDeliveryQueryModel**|  | [optional] |
+| **deliveryId** | **String**| 收藏引导投放活动ID，查询收藏引导活动必填参数 | [optional] |
 
 ### Return type
 
@@ -285,7 +285,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

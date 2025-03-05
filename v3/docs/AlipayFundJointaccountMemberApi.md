@@ -7,7 +7,7 @@ All URIs are relative to *https://openapi.alipay.com*
 | [**batchquery**](AlipayFundJointaccountMemberApi.md#batchquery) | **POST** /v3/alipay/fund/jointaccount/member/batchquery | 企业批量查询员工信息（分页） |
 | [**bind**](AlipayFundJointaccountMemberApi.md#bind) | **POST** /v3/alipay/fund/jointaccount/member/bind | 因公付邀请员工 |
 | [**consult**](AlipayFundJointaccountMemberApi.md#consult) | **POST** /v3/alipay/fund/jointaccount/member/consult | 员企关系咨询 |
-| [**query**](AlipayFundJointaccountMemberApi.md#query) | **POST** /v3/alipay/fund/jointaccount/member/query | 企业查询员工列表 |
+| [**query**](AlipayFundJointaccountMemberApi.md#query) | **GET** /v3/alipay/fund/jointaccount/member/query | 企业查询员工列表 |
 | [**unbind**](AlipayFundJointaccountMemberApi.md#unbind) | **POST** /v3/alipay/fund/jointaccount/member/unbind | 企业删除员工 |
 
 
@@ -226,7 +226,7 @@ No authorization required
 
 <a name="query"></a>
 # **query**
-> AlipayFundJointaccountMemberQueryResponseModel query(alipayFundJointaccountMemberQueryModel)
+> AlipayFundJointaccountMemberQueryResponseModel query(productCode, bizScene, accountId, pageNum, pageSize, userId, openId, agreementNo)
 
 企业查询员工列表
 
@@ -255,9 +255,16 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayFundJointaccountMemberApi apiInstance = new AlipayFundJointaccountMemberApi(defaultClient);
-    AlipayFundJointaccountMemberQueryModel alipayFundJointaccountMemberQueryModel = new AlipayFundJointaccountMemberQueryModel(); // AlipayFundJointaccountMemberQueryModel | 
+    String productCode = "ENTERPRISE_PAY"; // String | 产品码
+    String bizScene = "DEFAULT"; // String | 业务场景
+    String accountId = "2088900976746215"; // String | 账户ID
+    String pageNum = "1"; // String | 采用分页查询，本参数为空或0默认显示第一页。如果输入的值大于总页数，则支付宝返回最后一页数据。
+    String pageSize = "1"; // String | 每页大小，不传的情况下默认20条，超过20条默认按20条查询；不足20条则按实际记录数返回
+    String userId = "2088900976746215"; // String | 员工id
+    String openId = "074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5"; // String | 员工的openId
+    String agreementNo = "20889009767462151111111"; // String | 授权协议号
     try {
-      AlipayFundJointaccountMemberQueryResponseModel result = apiInstance.query(alipayFundJointaccountMemberQueryModel);
+      AlipayFundJointaccountMemberQueryResponseModel result = apiInstance.query(productCode, bizScene, accountId, pageNum, pageSize, userId, openId, agreementNo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayFundJointaccountMemberApi#query");
@@ -274,7 +281,14 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **alipayFundJointaccountMemberQueryModel** | **AlipayFundJointaccountMemberQueryModel**|  | [optional] |
+| **productCode** | **String**| 产品码 | [optional] |
+| **bizScene** | **String**| 业务场景 | [optional] |
+| **accountId** | **String**| 账户ID | [optional] |
+| **pageNum** | **String**| 采用分页查询，本参数为空或0默认显示第一页。如果输入的值大于总页数，则支付宝返回最后一页数据。 | [optional] |
+| **pageSize** | **String**| 每页大小，不传的情况下默认20条，超过20条默认按20条查询；不足20条则按实际记录数返回 | [optional] |
+| **userId** | **String**| 员工id | [optional] |
+| **openId** | **String**| 员工的openId | [optional] |
+| **agreementNo** | **String**| 授权协议号 | [optional] |
 
 ### Return type
 
@@ -286,7 +300,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

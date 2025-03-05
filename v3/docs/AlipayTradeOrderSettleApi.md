@@ -39,7 +39,7 @@ public class Example {
 
     AlipayTradeOrderSettleApi apiInstance = new AlipayTradeOrderSettleApi(defaultClient);
     String settleNo = "20210706002530020036530021395831"; // String | 支付宝分账请求单号，传入该字段，无需再传外部请求号和支付宝交易号
-    String outRequestNo = "20210727001"; // String | 外部请求号，需要和支付宝交易号一起传入
+    String outRequestNo = "20210727001"; // String | 调用分账接口时指定的外部请求号。分账查询时需要和支付宝交易号一起传入
     String tradeNo = "2021112611001004680 073956707"; // String | 支付宝交易号，传入该字段，需要和外部请求号一起传入
     try {
       AlipayTradeOrderSettleQueryResponseModel result = apiInstance.query(settleNo, outRequestNo, tradeNo);
@@ -60,7 +60,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **settleNo** | **String**| 支付宝分账请求单号，传入该字段，无需再传外部请求号和支付宝交易号 | [optional] |
-| **outRequestNo** | **String**| 外部请求号，需要和支付宝交易号一起传入 | [optional] |
+| **outRequestNo** | **String**| 调用分账接口时指定的外部请求号。分账查询时需要和支付宝交易号一起传入 | [optional] |
 | **tradeNo** | **String**| 支付宝交易号，传入该字段，需要和外部请求号一起传入 | [optional] |
 
 ### Return type

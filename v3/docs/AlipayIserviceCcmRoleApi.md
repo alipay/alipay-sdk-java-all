@@ -5,8 +5,8 @@ All URIs are relative to *https://openapi.alipay.com*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**create**](AlipayIserviceCcmRoleApi.md#create) | **POST** /v3/alipay/iservice/ccm/role/create | 创建角色 |
-| [**delete**](AlipayIserviceCcmRoleApi.md#delete) | **POST** /v3/alipay/iservice/ccm/role/delete | 删除角色 |
-| [**get**](AlipayIserviceCcmRoleApi.md#get) | **POST** /v3/alipay/iservice/ccm/role/get | 获取角色详情 |
+| [**delete**](AlipayIserviceCcmRoleApi.md#delete) | **DELETE** /v3/alipay/iservice/ccm/role/delete | 删除角色 |
+| [**get**](AlipayIserviceCcmRoleApi.md#get) | **GET** /v3/alipay/iservice/ccm/role/get | 获取角色详情 |
 | [**modify**](AlipayIserviceCcmRoleApi.md#modify) | **POST** /v3/alipay/iservice/ccm/role/modify | 更新角色 |
 
 
@@ -83,7 +83,7 @@ No authorization required
 
 <a name="delete"></a>
 # **delete**
-> Object delete(alipayIserviceCcmRoleDeleteModel)
+> Object delete(id, ccsInstanceId)
 
 删除角色
 
@@ -112,9 +112,10 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayIserviceCcmRoleApi apiInstance = new AlipayIserviceCcmRoleApi(defaultClient);
-    AlipayIserviceCcmRoleDeleteModel alipayIserviceCcmRoleDeleteModel = new AlipayIserviceCcmRoleDeleteModel(); // AlipayIserviceCcmRoleDeleteModel | 
+    String id = "123"; // String | 角色id
+    String ccsInstanceId = "ksj_J2Qa"; // String | 部门id（即租户实例ID、数据权限ID），如果不传入，使用租户id
     try {
-      Object result = apiInstance.delete(alipayIserviceCcmRoleDeleteModel);
+      Object result = apiInstance.delete(id, ccsInstanceId);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayIserviceCcmRoleApi#delete");
@@ -131,7 +132,8 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **alipayIserviceCcmRoleDeleteModel** | **AlipayIserviceCcmRoleDeleteModel**|  | [optional] |
+| **id** | **String**| 角色id | [optional] |
+| **ccsInstanceId** | **String**| 部门id（即租户实例ID、数据权限ID），如果不传入，使用租户id | [optional] |
 
 ### Return type
 
@@ -143,7 +145,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details
@@ -154,7 +156,7 @@ No authorization required
 
 <a name="get"></a>
 # **get**
-> AlipayIserviceCcmRoleGetResponseModel get(alipayIserviceCcmRoleGetModel)
+> AlipayIserviceCcmRoleGetResponseModel get(id, ccsInstanceId)
 
 获取角色详情
 
@@ -183,9 +185,10 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayIserviceCcmRoleApi apiInstance = new AlipayIserviceCcmRoleApi(defaultClient);
-    AlipayIserviceCcmRoleGetModel alipayIserviceCcmRoleGetModel = new AlipayIserviceCcmRoleGetModel(); // AlipayIserviceCcmRoleGetModel | 
+    String id = "123"; // String | 角色id
+    String ccsInstanceId = "qi1_FAq1"; // String | 部门id，不传默认用租户ID
     try {
-      AlipayIserviceCcmRoleGetResponseModel result = apiInstance.get(alipayIserviceCcmRoleGetModel);
+      AlipayIserviceCcmRoleGetResponseModel result = apiInstance.get(id, ccsInstanceId);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayIserviceCcmRoleApi#get");
@@ -202,7 +205,8 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **alipayIserviceCcmRoleGetModel** | **AlipayIserviceCcmRoleGetModel**|  | [optional] |
+| **id** | **String**| 角色id | [optional] |
+| **ccsInstanceId** | **String**| 部门id，不传默认用租户ID | [optional] |
 
 ### Return type
 
@@ -214,7 +218,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

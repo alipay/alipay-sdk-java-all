@@ -4,13 +4,13 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**query**](ZhimaMerchantZmgoCumulateApi.md#query) | **POST** /v3/zhima/merchant/zmgo/cumulate/query | 商家芝麻GO累计数据查询接口 |
+| [**query**](ZhimaMerchantZmgoCumulateApi.md#query) | **GET** /v3/zhima/merchant/zmgo/cumulate/query | 商家芝麻GO累计数据查询接口 |
 | [**sync**](ZhimaMerchantZmgoCumulateApi.md#sync) | **POST** /v3/zhima/merchant/zmgo/cumulate/sync | 商家芝麻GO累计数据回传接口 |
 
 
 <a name="query"></a>
 # **query**
-> ZhimaMerchantZmgoCumulateQueryResponseModel query(zhimaMerchantZmgoCumulateQueryModel)
+> ZhimaMerchantZmgoCumulateQueryResponseModel query(agreementId, userId, openId, providerPid, needDetail, pageNo, pageSize)
 
 商家芝麻GO累计数据查询接口
 
@@ -39,9 +39,15 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     ZhimaMerchantZmgoCumulateApi apiInstance = new ZhimaMerchantZmgoCumulateApi(defaultClient);
-    ZhimaMerchantZmgoCumulateQueryModel zhimaMerchantZmgoCumulateQueryModel = new ZhimaMerchantZmgoCumulateQueryModel(); // ZhimaMerchantZmgoCumulateQueryModel | 
+    String agreementId = "20195108518085620000"; // String | 芝麻go协议号，唯一标识一个芝麻go协议。
+    String userId = "2088602002015001"; // String | 用户 id，用户在支付宝的唯一标识，以 2088 开头的 16 位纯数字组成。
+    String openId = "074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5"; // String | 用户 id，用户在支付宝的唯一标识，以 2088 开头的 16 位纯数字组成。
+    String providerPid = "2088621805983504"; // String | 数据回传的商户 ID，即和用户发生业务来往的 PID 主体。商户账号在支付宝的唯一标识，以 2088 开头的 16 位纯数字组成。
+    Boolean needDetail = false; // Boolean | 是否需要回传明细。枚举支持： * true：需要回传明细。 * false：不需要回传明细。
+    Integer pageNo = 1; // Integer | 分页参数，当need_detail=true时需要，代表当前页数，从1开始。
+    Integer pageSize = 20; // Integer | 分页参数，当need_detail=true时需要，代表每页大小，不能大于20。
     try {
-      ZhimaMerchantZmgoCumulateQueryResponseModel result = apiInstance.query(zhimaMerchantZmgoCumulateQueryModel);
+      ZhimaMerchantZmgoCumulateQueryResponseModel result = apiInstance.query(agreementId, userId, openId, providerPid, needDetail, pageNo, pageSize);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling ZhimaMerchantZmgoCumulateApi#query");
@@ -58,7 +64,13 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **zhimaMerchantZmgoCumulateQueryModel** | **ZhimaMerchantZmgoCumulateQueryModel**|  | [optional] |
+| **agreementId** | **String**| 芝麻go协议号，唯一标识一个芝麻go协议。 | [optional] |
+| **userId** | **String**| 用户 id，用户在支付宝的唯一标识，以 2088 开头的 16 位纯数字组成。 | [optional] |
+| **openId** | **String**| 用户 id，用户在支付宝的唯一标识，以 2088 开头的 16 位纯数字组成。 | [optional] |
+| **providerPid** | **String**| 数据回传的商户 ID，即和用户发生业务来往的 PID 主体。商户账号在支付宝的唯一标识，以 2088 开头的 16 位纯数字组成。 | [optional] |
+| **needDetail** | **Boolean**| 是否需要回传明细。枚举支持： * true：需要回传明细。 * false：不需要回传明细。 | [optional] |
+| **pageNo** | **Integer**| 分页参数，当need_detail&#x3D;true时需要，代表当前页数，从1开始。 | [optional] |
+| **pageSize** | **Integer**| 分页参数，当need_detail&#x3D;true时需要，代表每页大小，不能大于20。 | [optional] |
 
 ### Return type
 
@@ -70,7 +82,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

@@ -4,16 +4,16 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**initialize**](DatadigitalFincloudGeneralsaasFaceCertifyApi.md#initialize) | **POST** /v3/datadigital/fincloud/generalsaas/face/certify/initialize | H5人脸核身初始化 |
-| [**query**](DatadigitalFincloudGeneralsaasFaceCertifyApi.md#query) | **POST** /v3/datadigital/fincloud/generalsaas/face/certify/query | 人脸核身产品身份认证记录查询 |
-| [**verify**](DatadigitalFincloudGeneralsaasFaceCertifyApi.md#verify) | **POST** /v3/datadigital/fincloud/generalsaas/face/certify/verify | 人脸核身服务开始认证 |
+| [**initialize**](DatadigitalFincloudGeneralsaasFaceCertifyApi.md#initialize) | **POST** /v3/datadigital/fincloud/generalsaas/face/certify/initialize | 跳转支付宝人脸核身初始化 |
+| [**query**](DatadigitalFincloudGeneralsaasFaceCertifyApi.md#query) | **GET** /v3/datadigital/fincloud/generalsaas/face/certify/query | 跳转支付宝人脸核身查询记录 |
+| [**verify**](DatadigitalFincloudGeneralsaasFaceCertifyApi.md#verify) | **POST** /v3/datadigital/fincloud/generalsaas/face/certify/verify | 跳转支付宝人脸核身开始认证 |
 
 
 <a name="initialize"></a>
 # **initialize**
 > DatadigitalFincloudGeneralsaasFaceCertifyInitializeResponseModel initialize(datadigitalFincloudGeneralsaasFaceCertifyInitializeModel)
 
-H5人脸核身初始化
+跳转支付宝人脸核身初始化
 
 人脸核身初始化服务，用于创建认证流程。供外部客户使用该项服务。
 
@@ -82,11 +82,11 @@ No authorization required
 
 <a name="query"></a>
 # **query**
-> DatadigitalFincloudGeneralsaasFaceCertifyQueryResponseModel query(datadigitalFincloudGeneralsaasFaceCertifyQueryModel)
+> DatadigitalFincloudGeneralsaasFaceCertifyQueryResponseModel query(certifyId)
 
-人脸核身产品身份认证记录查询
+跳转支付宝人脸核身查询记录
 
-商户在开放认证完成后，调用本接口查询认证状态和相关数据
+商户在用户使用支付宝完成刷脸之后，调用本接口查询核身结果状态及相关数据
 
 ### Example
 ```java
@@ -111,9 +111,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     DatadigitalFincloudGeneralsaasFaceCertifyApi apiInstance = new DatadigitalFincloudGeneralsaasFaceCertifyApi(defaultClient);
-    DatadigitalFincloudGeneralsaasFaceCertifyQueryModel datadigitalFincloudGeneralsaasFaceCertifyQueryModel = new DatadigitalFincloudGeneralsaasFaceCertifyQueryModel(); // DatadigitalFincloudGeneralsaasFaceCertifyQueryModel | 
+    String certifyId = "03cdsfsss20048373"; // String | 本次申请操作的唯一标识，通过datadigital.fincloud.generalsaas.face.certify.initialize 接口同步响应获取。
     try {
-      DatadigitalFincloudGeneralsaasFaceCertifyQueryResponseModel result = apiInstance.query(datadigitalFincloudGeneralsaasFaceCertifyQueryModel);
+      DatadigitalFincloudGeneralsaasFaceCertifyQueryResponseModel result = apiInstance.query(certifyId);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling DatadigitalFincloudGeneralsaasFaceCertifyApi#query");
@@ -130,7 +130,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **datadigitalFincloudGeneralsaasFaceCertifyQueryModel** | **DatadigitalFincloudGeneralsaasFaceCertifyQueryModel**|  | [optional] |
+| **certifyId** | **String**| 本次申请操作的唯一标识，通过datadigital.fincloud.generalsaas.face.certify.initialize 接口同步响应获取。 | [optional] |
 
 ### Return type
 
@@ -142,7 +142,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details
@@ -155,7 +155,7 @@ No authorization required
 # **verify**
 > DatadigitalFincloudGeneralsaasFaceCertifyVerifyResponseModel verify(datadigitalFincloudGeneralsaasFaceCertifyVerifyModel)
 
-人脸核身服务开始认证
+跳转支付宝人脸核身开始认证
 
 人脸核身服务开始认证。请根据返回结果渲染页面。
 

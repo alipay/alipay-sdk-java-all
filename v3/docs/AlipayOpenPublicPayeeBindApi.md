@@ -5,12 +5,12 @@ All URIs are relative to *https://openapi.alipay.com*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**create**](AlipayOpenPublicPayeeBindApi.md#create) | **POST** /v3/alipay/open/public/payee/bind/create | 添加收款账号接口 |
-| [**delete**](AlipayOpenPublicPayeeBindApi.md#delete) | **POST** /v3/alipay/open/public/payee/bind/delete | 解绑收款账号接口 |
+| [**delete**](AlipayOpenPublicPayeeBindApi.md#delete) | **DELETE** /v3/alipay/open/public/payee/bind/delete | 解绑收款账号接口 |
 
 
 <a name="create"></a>
 # **create**
-> Object create()
+> Object create(alipayOpenPublicPayeeBindCreateModel)
 
 添加收款账号接口
 
@@ -39,8 +39,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenPublicPayeeBindApi apiInstance = new AlipayOpenPublicPayeeBindApi(defaultClient);
+    AlipayOpenPublicPayeeBindCreateModel alipayOpenPublicPayeeBindCreateModel = new AlipayOpenPublicPayeeBindCreateModel(); // AlipayOpenPublicPayeeBindCreateModel | 
     try {
-      Object result = apiInstance.create();
+      Object result = apiInstance.create(alipayOpenPublicPayeeBindCreateModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenPublicPayeeBindApi#create");
@@ -54,7 +55,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayOpenPublicPayeeBindCreateModel** | **AlipayOpenPublicPayeeBindCreateModel**|  | [optional] |
 
 ### Return type
 
@@ -66,7 +70,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -77,7 +81,7 @@ No authorization required
 
 <a name="delete"></a>
 # **delete**
-> Object delete()
+> Object delete(loginId, pid)
 
 解绑收款账号接口
 
@@ -106,8 +110,10 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenPublicPayeeBindApi apiInstance = new AlipayOpenPublicPayeeBindApi(defaultClient);
+    String loginId = "13434232322"; // String | 收款账号，需要绑定的收款支付宝账号，请勿与 pid 同时传入。
+    String pid = "208844738438439"; // String | 支付宝用户id，2088开头的16位长度字符串，请勿与 login_id 同时传入。
     try {
-      Object result = apiInstance.delete();
+      Object result = apiInstance.delete(loginId, pid);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenPublicPayeeBindApi#delete");
@@ -121,7 +127,11 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **loginId** | **String**| 收款账号，需要绑定的收款支付宝账号，请勿与 pid 同时传入。 | [optional] |
+| **pid** | **String**| 支付宝用户id，2088开头的16位长度字符串，请勿与 login_id 同时传入。 | [optional] |
 
 ### Return type
 

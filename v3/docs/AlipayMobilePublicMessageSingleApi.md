@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="send"></a>
 # **send**
-> AlipayMobilePublicMessageSingleSendResponseModel send()
+> AlipayMobilePublicMessageSingleSendResponseModel send(alipayMobilePublicMessageSingleSendModel)
 
 单发模板消息
 
@@ -38,8 +38,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayMobilePublicMessageSingleApi apiInstance = new AlipayMobilePublicMessageSingleApi(defaultClient);
+    AlipayMobilePublicMessageSingleSendModel alipayMobilePublicMessageSingleSendModel = new AlipayMobilePublicMessageSingleSendModel(); // AlipayMobilePublicMessageSingleSendModel | 
     try {
-      AlipayMobilePublicMessageSingleSendResponseModel result = apiInstance.send();
+      AlipayMobilePublicMessageSingleSendResponseModel result = apiInstance.send(alipayMobilePublicMessageSingleSendModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayMobilePublicMessageSingleApi#send");
@@ -53,7 +54,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayMobilePublicMessageSingleSendModel** | **AlipayMobilePublicMessageSingleSendModel**|  | [optional] |
 
 ### Return type
 
@@ -65,7 +69,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

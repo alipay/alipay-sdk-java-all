@@ -6,7 +6,7 @@ All URIs are relative to *https://openapi.alipay.com*
 |------------- | ------------- | -------------|
 | [**batchquery**](AlipayOpenPublicTopicApi.md#batchquery) | **POST** /v3/alipay/open/public/topic/batchquery | 营销位查询接口 |
 | [**create**](AlipayOpenPublicTopicApi.md#create) | **POST** /v3/alipay/open/public/topic/create | 营销位添加接口 |
-| [**delete**](AlipayOpenPublicTopicApi.md#delete) | **POST** /v3/alipay/open/public/topic/delete | 营销位删除接口 |
+| [**delete**](AlipayOpenPublicTopicApi.md#delete) | **DELETE** /v3/alipay/open/public/topic/delete | 营销位删除接口 |
 | [**modify**](AlipayOpenPublicTopicApi.md#modify) | **POST** /v3/alipay/open/public/topic/modify | 营销位修改接口 |
 
 
@@ -79,7 +79,7 @@ No authorization required
 
 <a name="create"></a>
 # **create**
-> AlipayOpenPublicTopicCreateResponseModel create()
+> AlipayOpenPublicTopicCreateResponseModel create(alipayOpenPublicTopicCreateModel)
 
 营销位添加接口
 
@@ -108,8 +108,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenPublicTopicApi apiInstance = new AlipayOpenPublicTopicApi(defaultClient);
+    AlipayOpenPublicTopicCreateModel alipayOpenPublicTopicCreateModel = new AlipayOpenPublicTopicCreateModel(); // AlipayOpenPublicTopicCreateModel | 
     try {
-      AlipayOpenPublicTopicCreateResponseModel result = apiInstance.create();
+      AlipayOpenPublicTopicCreateResponseModel result = apiInstance.create(alipayOpenPublicTopicCreateModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenPublicTopicApi#create");
@@ -123,7 +124,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayOpenPublicTopicCreateModel** | **AlipayOpenPublicTopicCreateModel**|  | [optional] |
 
 ### Return type
 
@@ -135,7 +139,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -146,11 +150,11 @@ No authorization required
 
 <a name="delete"></a>
 # **delete**
-> Object delete()
+> Object delete(topicId)
 
 营销位删除接口
 
-通过此接口,开发者可以根据营销位的id删除指定的营销位。
+通过此接口,开发者可以根据营销位的分组group删除指定的营销位。
 
 ### Example
 ```java
@@ -175,8 +179,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenPublicTopicApi apiInstance = new AlipayOpenPublicTopicApi(defaultClient);
+    String topicId = "CG202011131013300867029"; // String | 营销位id
     try {
-      Object result = apiInstance.delete();
+      Object result = apiInstance.delete(topicId);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenPublicTopicApi#delete");
@@ -190,7 +195,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **topicId** | **String**| 营销位id | [optional] |
 
 ### Return type
 
@@ -213,7 +221,7 @@ No authorization required
 
 <a name="modify"></a>
 # **modify**
-> Object modify()
+> Object modify(alipayOpenPublicTopicModifyModel)
 
 营销位修改接口
 
@@ -242,8 +250,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenPublicTopicApi apiInstance = new AlipayOpenPublicTopicApi(defaultClient);
+    AlipayOpenPublicTopicModifyModel alipayOpenPublicTopicModifyModel = new AlipayOpenPublicTopicModifyModel(); // AlipayOpenPublicTopicModifyModel | 
     try {
-      Object result = apiInstance.modify();
+      Object result = apiInstance.modify(alipayOpenPublicTopicModifyModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenPublicTopicApi#modify");
@@ -257,7 +266,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayOpenPublicTopicModifyModel** | **AlipayOpenPublicTopicModifyModel**|  | [optional] |
 
 ### Return type
 
@@ -269,7 +281,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

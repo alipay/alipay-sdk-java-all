@@ -6,12 +6,12 @@ All URIs are relative to *https://openapi.alipay.com*
 |------------- | ------------- | -------------|
 | [**apply**](AlipayBossFncInvoiceApi.md#apply) | **POST** /v3/alipay/boss/fnc/invoice/apply | 应收开票申请(根据账单申请) |
 | [**batchquery**](AlipayBossFncInvoiceApi.md#batchquery) | **POST** /v3/alipay/boss/fnc/invoice/batchquery | 应收发票综合查询 |
-| [**query**](AlipayBossFncInvoiceApi.md#query) | **POST** /v3/alipay/boss/fnc/invoice/query | 根据发票ID查询发票信息 |
+| [**query**](AlipayBossFncInvoiceApi.md#query) | **GET** /v3/alipay/boss/fnc/invoice/query | 根据发票ID查询发票信息 |
 
 
 <a name="apply"></a>
 # **apply**
-> AlipayBossFncInvoiceApplyResponseModel apply()
+> AlipayBossFncInvoiceApplyResponseModel apply(alipayBossFncInvoiceApplyModel)
 
 应收开票申请(根据账单申请)
 
@@ -40,8 +40,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayBossFncInvoiceApi apiInstance = new AlipayBossFncInvoiceApi(defaultClient);
+    AlipayBossFncInvoiceApplyModel alipayBossFncInvoiceApplyModel = new AlipayBossFncInvoiceApplyModel(); // AlipayBossFncInvoiceApplyModel | 
     try {
-      AlipayBossFncInvoiceApplyResponseModel result = apiInstance.apply();
+      AlipayBossFncInvoiceApplyResponseModel result = apiInstance.apply(alipayBossFncInvoiceApplyModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayBossFncInvoiceApi#apply");
@@ -55,7 +56,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayBossFncInvoiceApplyModel** | **AlipayBossFncInvoiceApplyModel**|  | [optional] |
 
 ### Return type
 
@@ -67,7 +71,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -78,7 +82,7 @@ No authorization required
 
 <a name="batchquery"></a>
 # **batchquery**
-> AlipayBossFncInvoiceBatchqueryResponseModel batchquery()
+> AlipayBossFncInvoiceBatchqueryResponseModel batchquery(alipayBossFncInvoiceBatchqueryModel)
 
 应收发票综合查询
 
@@ -107,8 +111,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayBossFncInvoiceApi apiInstance = new AlipayBossFncInvoiceApi(defaultClient);
+    AlipayBossFncInvoiceBatchqueryModel alipayBossFncInvoiceBatchqueryModel = new AlipayBossFncInvoiceBatchqueryModel(); // AlipayBossFncInvoiceBatchqueryModel | 
     try {
-      AlipayBossFncInvoiceBatchqueryResponseModel result = apiInstance.batchquery();
+      AlipayBossFncInvoiceBatchqueryResponseModel result = apiInstance.batchquery(alipayBossFncInvoiceBatchqueryModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayBossFncInvoiceApi#batchquery");
@@ -122,7 +127,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayBossFncInvoiceBatchqueryModel** | **AlipayBossFncInvoiceBatchqueryModel**|  | [optional] |
 
 ### Return type
 
@@ -134,7 +142,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -145,7 +153,7 @@ No authorization required
 
 <a name="query"></a>
 # **query**
-> AlipayBossFncInvoiceQueryResponseModel query()
+> AlipayBossFncInvoiceQueryResponseModel query(invoiceId)
 
 根据发票ID查询发票信息
 
@@ -174,8 +182,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayBossFncInvoiceApi apiInstance = new AlipayBossFncInvoiceApi(defaultClient);
+    String invoiceId = "如：2017060210122000040400270002815483"; // String | 查询ID：用于标示一张发票，通过发票综合查询可以查询到该ID。
     try {
-      AlipayBossFncInvoiceQueryResponseModel result = apiInstance.query();
+      AlipayBossFncInvoiceQueryResponseModel result = apiInstance.query(invoiceId);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayBossFncInvoiceApi#query");
@@ -189,7 +198,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **invoiceId** | **String**| 查询ID：用于标示一张发票，通过发票综合查询可以查询到该ID。 | [optional] |
 
 ### Return type
 

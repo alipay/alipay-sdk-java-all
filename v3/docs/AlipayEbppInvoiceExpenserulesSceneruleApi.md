@@ -6,7 +6,7 @@ All URIs are relative to *https://openapi.alipay.com*
 |------------- | ------------- | -------------|
 | [**create**](AlipayEbppInvoiceExpenserulesSceneruleApi.md#create) | **POST** /v3/alipay/ebpp/invoice/expenserules/scenerule/create | 创建费控规则 |
 | [**modify**](AlipayEbppInvoiceExpenserulesSceneruleApi.md#modify) | **POST** /v3/alipay/ebpp/invoice/expenserules/scenerule/modify | 修改费控规则 |
-| [**query**](AlipayEbppInvoiceExpenserulesSceneruleApi.md#query) | **POST** /v3/alipay/ebpp/invoice/expenserules/scenerule/query | 查询费控规则信息 |
+| [**query**](AlipayEbppInvoiceExpenserulesSceneruleApi.md#query) | **GET** /v3/alipay/ebpp/invoice/expenserules/scenerule/query | 查询费控规则信息 |
 
 
 <a name="create"></a>
@@ -153,7 +153,7 @@ No authorization required
 
 <a name="query"></a>
 # **query**
-> AlipayEbppInvoiceExpenserulesSceneruleQueryResponseModel query(alipayEbppInvoiceExpenserulesSceneruleQueryModel)
+> AlipayEbppInvoiceExpenserulesSceneruleQueryResponseModel query(accountId, agreementNo, enterpriseId, standardId, pageNum, pageSize)
 
 查询费控规则信息
 
@@ -182,9 +182,14 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayEbppInvoiceExpenserulesSceneruleApi apiInstance = new AlipayEbppInvoiceExpenserulesSceneruleApi(defaultClient);
-    AlipayEbppInvoiceExpenserulesSceneruleQueryModel alipayEbppInvoiceExpenserulesSceneruleQueryModel = new AlipayEbppInvoiceExpenserulesSceneruleQueryModel(); // AlipayEbppInvoiceExpenserulesSceneruleQueryModel | 
+    String accountId = "2088000194958956"; // String | 企业ID
+    String agreementNo = "20215425001112341234"; // String | 授权签约协议号
+    String enterpriseId = "2088000194958956"; // String | 企业码企业id
+    String standardId = "20215425001112341234"; // String | 费控规则ID
+    Integer pageNum = 1; // Integer | 页数
+    Integer pageSize = 10; // Integer | 页大小
     try {
-      AlipayEbppInvoiceExpenserulesSceneruleQueryResponseModel result = apiInstance.query(alipayEbppInvoiceExpenserulesSceneruleQueryModel);
+      AlipayEbppInvoiceExpenserulesSceneruleQueryResponseModel result = apiInstance.query(accountId, agreementNo, enterpriseId, standardId, pageNum, pageSize);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayEbppInvoiceExpenserulesSceneruleApi#query");
@@ -201,7 +206,12 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **alipayEbppInvoiceExpenserulesSceneruleQueryModel** | **AlipayEbppInvoiceExpenserulesSceneruleQueryModel**|  | [optional] |
+| **accountId** | **String**| 企业ID | [optional] |
+| **agreementNo** | **String**| 授权签约协议号 | [optional] |
+| **enterpriseId** | **String**| 企业码企业id | [optional] |
+| **standardId** | **String**| 费控规则ID | [optional] |
+| **pageNum** | **Integer**| 页数 | [optional] |
+| **pageSize** | **Integer**| 页大小 | [optional] |
 
 ### Return type
 
@@ -213,7 +223,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

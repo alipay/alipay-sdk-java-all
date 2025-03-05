@@ -4,7 +4,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**delete**](AlipayMarketingCardApi.md#delete) | **POST** /v3/alipay/marketing/card/delete | 会员卡删卡 |
+| [**delete**](AlipayMarketingCardApi.md#delete) | **DELETE** /v3/alipay/marketing/card/delete | 会员卡删卡 |
 | [**open**](AlipayMarketingCardApi.md#open) | **POST** /v3/alipay/marketing/card/open | 会员卡开卡 |
 | [**query**](AlipayMarketingCardApi.md#query) | **POST** /v3/alipay/marketing/card/query | 会员卡查询 |
 | [**update**](AlipayMarketingCardApi.md#update) | **POST** /v3/alipay/marketing/card/update | 会员卡更新 |
@@ -12,11 +12,11 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="delete"></a>
 # **delete**
-> AlipayMarketingCardDeleteResponseModel delete()
+> AlipayMarketingCardDeleteResponseModel delete(outSerialNo, targetCardNo, targetCardNoType, reasonCode, extInfo)
 
 会员卡删卡
 
-通过API接口删除商户会员卡
+通过 API 接口删除商家会员卡。
 
 ### Example
 ```java
@@ -41,8 +41,13 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayMarketingCardApi apiInstance = new AlipayMarketingCardApi(defaultClient);
+    String outSerialNo = "2016062700001"; // String | 商户端删卡业务流水号，商户自定义且需确保流水号唯一性。
+    String targetCardNo = "0000001"; // String | 支付宝业务卡号。即开卡接口返回结果中的card_info.biz_card_no。
+    String targetCardNoType = "BIZ_CARD"; // String | 卡号ID类型
+    String reasonCode = "USER_UNBUND"; // String | 删卡原因  USER_UNBUND：用户解绑（可以重新绑定）  CANCEL：销户（完成销户后，就不能再重新绑定）  PRESENT：转赠（可以重新绑定）
+    String extInfo = "{\"new_card_no\":\"12345\",\" donee_user_id\":\"2088102130652460\"}"; // String | 删卡扩展参数，json格式。  用于商户的特定业务信息的传递，只有商户与支付宝约定了传递此参数且约定了参数含义，此参数才有效。  目前支持如下key：  new_card_no：新卡号  donee_user_id：受赠人userId
     try {
-      AlipayMarketingCardDeleteResponseModel result = apiInstance.delete();
+      AlipayMarketingCardDeleteResponseModel result = apiInstance.delete(outSerialNo, targetCardNo, targetCardNoType, reasonCode, extInfo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayMarketingCardApi#delete");
@@ -56,7 +61,14 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **outSerialNo** | **String**| 商户端删卡业务流水号，商户自定义且需确保流水号唯一性。 | [optional] |
+| **targetCardNo** | **String**| 支付宝业务卡号。即开卡接口返回结果中的card_info.biz_card_no。 | [optional] |
+| **targetCardNoType** | **String**| 卡号ID类型 | [optional] |
+| **reasonCode** | **String**| 删卡原因  USER_UNBUND：用户解绑（可以重新绑定）  CANCEL：销户（完成销户后，就不能再重新绑定）  PRESENT：转赠（可以重新绑定） | [optional] |
+| **extInfo** | **String**| 删卡扩展参数，json格式。  用于商户的特定业务信息的传递，只有商户与支付宝约定了传递此参数且约定了参数含义，此参数才有效。  目前支持如下key：  new_card_no：新卡号  donee_user_id：受赠人userId | [optional] |
 
 ### Return type
 
@@ -223,7 +235,7 @@ No authorization required
 
 <a name="update"></a>
 # **update**
-> AlipayMarketingCardUpdateResponseModel update()
+> AlipayMarketingCardUpdateResponseModel update(alipayMarketingCardUpdateModel)
 
 会员卡更新
 
@@ -252,8 +264,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayMarketingCardApi apiInstance = new AlipayMarketingCardApi(defaultClient);
+    AlipayMarketingCardUpdateModel alipayMarketingCardUpdateModel = new AlipayMarketingCardUpdateModel(); // AlipayMarketingCardUpdateModel | 
     try {
-      AlipayMarketingCardUpdateResponseModel result = apiInstance.update();
+      AlipayMarketingCardUpdateResponseModel result = apiInstance.update(alipayMarketingCardUpdateModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayMarketingCardApi#update");
@@ -267,7 +280,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayMarketingCardUpdateModel** | **AlipayMarketingCardUpdateModel**|  | [optional] |
 
 ### Return type
 
@@ -279,7 +295,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

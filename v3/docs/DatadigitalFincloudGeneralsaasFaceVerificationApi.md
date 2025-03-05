@@ -111,7 +111,7 @@ public class Example {
 
     DatadigitalFincloudGeneralsaasFaceVerificationApi apiInstance = new DatadigitalFincloudGeneralsaasFaceVerificationApi(defaultClient);
     String certifyId = "adsfasdfasdf"; // String | 填入人脸核身初始化阶段获取到的certify_id
-    String needAlivePhoto = "N"; // String | 是否需要返回活体结果图片，needAlivePhoto：Y_O （原始图片）、Y_M（虚化，背景马赛克）、N（不返图），默认为N
+    String needAlivePhoto = "N"; // String | 是否需要返回活体结果图片，默认为N（不返图）
     try {
       DatadigitalFincloudGeneralsaasFaceVerificationQueryResponseModel result = apiInstance.query(certifyId, needAlivePhoto);
       System.out.println(result);
@@ -131,7 +131,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **certifyId** | **String**| 填入人脸核身初始化阶段获取到的certify_id | [optional] |
-| **needAlivePhoto** | **String**| 是否需要返回活体结果图片，needAlivePhoto：Y_O （原始图片）、Y_M（虚化，背景马赛克）、N（不返图），默认为N | [optional] |
+| **needAlivePhoto** | **String**| 是否需要返回活体结果图片，默认为N（不返图） | [optional] |
 
 ### Return type
 

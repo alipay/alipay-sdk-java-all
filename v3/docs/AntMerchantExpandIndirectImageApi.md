@@ -4,7 +4,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**upload**](AntMerchantExpandIndirectImageApi.md#upload) | **POST** /v3/ant/merchant/expand/indirect/image/upload | 图片上传 |
+| [**upload**](AntMerchantExpandIndirectImageApi.md#upload) | **POST** /v3/ant/merchant/indirect/image | 图片上传 |
 
 
 <a name="upload"></a>

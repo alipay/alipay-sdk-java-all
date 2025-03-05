@@ -4,12 +4,12 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**get**](AlipayOpenPublicTemplateMessageApi.md#get) | **POST** /v3/alipay/open/public/template/message/get | 消息模板领取接口 |
+| [**get**](AlipayOpenPublicTemplateMessageApi.md#get) | **GET** /v3/alipay/open/public/template/message/get | 消息模板领取接口 |
 
 
 <a name="get"></a>
 # **get**
-> AlipayOpenPublicTemplateMessageGetResponseModel get()
+> AlipayOpenPublicTemplateMessageGetResponseModel get(templateId)
 
 消息模板领取接口
 
@@ -38,8 +38,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenPublicTemplateMessageApi apiInstance = new AlipayOpenPublicTemplateMessageApi(defaultClient);
+    String templateId = "TM000000223"; // String | 消息母板id，登陆生活号后台(fuwu.alipay.com)，点击菜单“模板消息”，点击“模板库”，即可看到相应模板的消息母板id
     try {
-      AlipayOpenPublicTemplateMessageGetResponseModel result = apiInstance.get();
+      AlipayOpenPublicTemplateMessageGetResponseModel result = apiInstance.get(templateId);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenPublicTemplateMessageApi#get");
@@ -53,7 +54,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **templateId** | **String**| 消息母板id，登陆生活号后台(fuwu.alipay.com)，点击菜单“模板消息”，点击“模板库”，即可看到相应模板的消息母板id | [optional] |
 
 ### Return type
 

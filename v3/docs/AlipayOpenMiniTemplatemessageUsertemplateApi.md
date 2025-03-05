@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="apply"></a>
 # **apply**
-> AlipayOpenMiniTemplatemessageUsertemplateApplyResponseModel apply()
+> AlipayOpenMiniTemplatemessageUsertemplateApplyResponseModel apply(alipayOpenMiniTemplatemessageUsertemplateApplyModel)
 
 小程序模板消息申请
 
@@ -38,8 +38,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenMiniTemplatemessageUsertemplateApi apiInstance = new AlipayOpenMiniTemplatemessageUsertemplateApi(defaultClient);
+    AlipayOpenMiniTemplatemessageUsertemplateApplyModel alipayOpenMiniTemplatemessageUsertemplateApplyModel = new AlipayOpenMiniTemplatemessageUsertemplateApplyModel(); // AlipayOpenMiniTemplatemessageUsertemplateApplyModel | 
     try {
-      AlipayOpenMiniTemplatemessageUsertemplateApplyResponseModel result = apiInstance.apply();
+      AlipayOpenMiniTemplatemessageUsertemplateApplyResponseModel result = apiInstance.apply(alipayOpenMiniTemplatemessageUsertemplateApplyModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenMiniTemplatemessageUsertemplateApi#apply");
@@ -53,7 +54,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayOpenMiniTemplatemessageUsertemplateApplyModel** | **AlipayOpenMiniTemplatemessageUsertemplateApplyModel**|  | [optional] |
 
 ### Return type
 
@@ -65,7 +69,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

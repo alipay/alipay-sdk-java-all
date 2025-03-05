@@ -5,7 +5,7 @@ All URIs are relative to *https://openapi.alipay.com*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**add**](AlipayEbppBillApi.md#add) | **POST** /v3/alipay/ebpp/bill/add | 创建账单 |
-| [**get**](AlipayEbppBillApi.md#get) | **POST** /v3/alipay/ebpp/bill/get | 查询账单 |
+| [**get**](AlipayEbppBillApi.md#get) | **GET** /v3/alipay/ebpp/bill/get | 查询账单 |
 
 
 <a name="add"></a>
@@ -83,7 +83,7 @@ No authorization required
 
 <a name="get"></a>
 # **get**
-> AlipayEbppBillGetResponseModel get(authToken, alipayEbppBillGetModel)
+> AlipayEbppBillGetResponseModel get(authToken, orderType, merchantOrderNo)
 
 查询账单
 
@@ -113,9 +113,10 @@ public class Example {
 
     AlipayEbppBillApi apiInstance = new AlipayEbppBillApi(defaultClient);
     String authToken = "authToken_example"; // String | 用户授权令牌
-    AlipayEbppBillGetModel alipayEbppBillGetModel = new AlipayEbppBillGetModel(); // AlipayEbppBillGetModel | 
+    String orderType = "JF"; // String | 支付宝订单类型。公共事业缴纳JF,信用卡还款HK
+    String merchantOrderNo = "201203031234567"; // String | 输出机构的业务流水号，需要保证唯一性。
     try {
-      AlipayEbppBillGetResponseModel result = apiInstance.get(authToken, alipayEbppBillGetModel);
+      AlipayEbppBillGetResponseModel result = apiInstance.get(authToken, orderType, merchantOrderNo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayEbppBillApi#get");
@@ -133,7 +134,8 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **authToken** | **String**| 用户授权令牌 | [optional] |
-| **alipayEbppBillGetModel** | **AlipayEbppBillGetModel**|  | [optional] |
+| **orderType** | **String**| 支付宝订单类型。公共事业缴纳JF,信用卡还款HK | [optional] |
+| **merchantOrderNo** | **String**| 输出机构的业务流水号，需要保证唯一性。 | [optional] |
 
 ### Return type
 
@@ -145,7 +147,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

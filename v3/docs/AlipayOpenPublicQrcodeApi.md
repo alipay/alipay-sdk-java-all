@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="create"></a>
 # **create**
-> AlipayOpenPublicQrcodeCreateResponseModel create()
+> AlipayOpenPublicQrcodeCreateResponseModel create(alipayOpenPublicQrcodeCreateModel)
 
 带参推广二维码接口
 
@@ -38,8 +38,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenPublicQrcodeApi apiInstance = new AlipayOpenPublicQrcodeApi(defaultClient);
+    AlipayOpenPublicQrcodeCreateModel alipayOpenPublicQrcodeCreateModel = new AlipayOpenPublicQrcodeCreateModel(); // AlipayOpenPublicQrcodeCreateModel | 
     try {
-      AlipayOpenPublicQrcodeCreateResponseModel result = apiInstance.create();
+      AlipayOpenPublicQrcodeCreateResponseModel result = apiInstance.create(alipayOpenPublicQrcodeCreateModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenPublicQrcodeApi#create");
@@ -53,7 +54,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayOpenPublicQrcodeCreateModel** | **AlipayOpenPublicQrcodeCreateModel**|  | [optional] |
 
 ### Return type
 
@@ -65,7 +69,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

@@ -6,7 +6,7 @@ All URIs are relative to *https://openapi.alipay.com*
 |------------- | ------------- | -------------|
 | [**batchquery**](AlipayOpenPublicGroupApi.md#batchquery) | **POST** /v3/alipay/open/public/group/batchquery | 查询用户分组列表 |
 | [**create**](AlipayOpenPublicGroupApi.md#create) | **POST** /v3/alipay/open/public/group/create | 用户分组创建接口 |
-| [**delete**](AlipayOpenPublicGroupApi.md#delete) | **POST** /v3/alipay/open/public/group/delete | 用户分组删除接口 |
+| [**delete**](AlipayOpenPublicGroupApi.md#delete) | **DELETE** /v3/alipay/open/public/group/delete | 用户分组删除接口 |
 | [**modify**](AlipayOpenPublicGroupApi.md#modify) | **POST** /v3/alipay/open/public/group/modify | 用户分组修改接口 |
 
 
@@ -16,7 +16,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 查询用户分组列表
 
-使用该接口查询分组列表，并配合其它分组管理接口使用
+使用该接口查询分组列表，并配合其它分组管理接口使用，最多显示200条
 
 ### Example
 ```java
@@ -79,7 +79,7 @@ No authorization required
 
 <a name="create"></a>
 # **create**
-> AlipayOpenPublicGroupCreateResponseModel create()
+> AlipayOpenPublicGroupCreateResponseModel create(alipayOpenPublicGroupCreateModel)
 
 用户分组创建接口
 
@@ -108,8 +108,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenPublicGroupApi apiInstance = new AlipayOpenPublicGroupApi(defaultClient);
+    AlipayOpenPublicGroupCreateModel alipayOpenPublicGroupCreateModel = new AlipayOpenPublicGroupCreateModel(); // AlipayOpenPublicGroupCreateModel | 
     try {
-      AlipayOpenPublicGroupCreateResponseModel result = apiInstance.create();
+      AlipayOpenPublicGroupCreateResponseModel result = apiInstance.create(alipayOpenPublicGroupCreateModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenPublicGroupApi#create");
@@ -123,7 +124,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayOpenPublicGroupCreateModel** | **AlipayOpenPublicGroupCreateModel**|  | [optional] |
 
 ### Return type
 
@@ -135,7 +139,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -146,7 +150,7 @@ No authorization required
 
 <a name="delete"></a>
 # **delete**
-> Object delete()
+> Object delete(groupId)
 
 用户分组删除接口
 
@@ -175,8 +179,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenPublicGroupApi apiInstance = new AlipayOpenPublicGroupApi(defaultClient);
+    String groupId = "100"; // String | 分组ID，通过<a href=\"https://opendocs.alipay.com/apis/api_6/alipay.open.public.group.create\">alipay.open.public.group.create</a>（用户分组创建接口) 创建用户分组获取。
     try {
-      Object result = apiInstance.delete();
+      Object result = apiInstance.delete(groupId);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenPublicGroupApi#delete");
@@ -190,7 +195,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **groupId** | **String**| 分组ID，通过&lt;a href&#x3D;\&quot;https://opendocs.alipay.com/apis/api_6/alipay.open.public.group.create\&quot;&gt;alipay.open.public.group.create&lt;/a&gt;（用户分组创建接口) 创建用户分组获取。 | [optional] |
 
 ### Return type
 
@@ -213,11 +221,11 @@ No authorization required
 
 <a name="modify"></a>
 # **modify**
-> Object modify()
+> Object modify(alipayOpenPublicGroupModifyModel)
 
 用户分组修改接口
 
-调用改接口修改用户分组，包括分组名称以及分组规则，分组圈定的人群必须大于50人。
+调用改接口修改用户分组，仅支持修改分组名称。
 
 ### Example
 ```java
@@ -242,8 +250,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenPublicGroupApi apiInstance = new AlipayOpenPublicGroupApi(defaultClient);
+    AlipayOpenPublicGroupModifyModel alipayOpenPublicGroupModifyModel = new AlipayOpenPublicGroupModifyModel(); // AlipayOpenPublicGroupModifyModel | 
     try {
-      Object result = apiInstance.modify();
+      Object result = apiInstance.modify(alipayOpenPublicGroupModifyModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenPublicGroupApi#modify");
@@ -257,7 +266,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayOpenPublicGroupModifyModel** | **AlipayOpenPublicGroupModifyModel**|  | [optional] |
 
 ### Return type
 
@@ -269,7 +281,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

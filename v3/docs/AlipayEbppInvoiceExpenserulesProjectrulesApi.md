@@ -13,7 +13,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 修改项目费控规则
 
-企业在ISV修改在企业码中创建的项目规则
+修改项目费控规则
 
 ### Example
 ```java

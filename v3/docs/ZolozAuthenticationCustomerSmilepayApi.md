@@ -4,16 +4,16 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**initialize**](ZolozAuthenticationCustomerSmilepayApi.md#initialize) | **POST** /v3/zoloz/authentication/customer/smilepay/initialize | 人脸初始化唤起zim |
+| [**initialize**](ZolozAuthenticationCustomerSmilepayApi.md#initialize) | **POST** /v3/zoloz/authentication/customer/smilepay/initialize | 人脸刷脸付初始化 |
 
 
 <a name="initialize"></a>
 # **initialize**
-> ZolozAuthenticationCustomerSmilepayInitializeResponseModel initialize()
+> ZolozAuthenticationCustomerSmilepayInitializeResponseModel initialize(zolozAuthenticationCustomerSmilepayInitializeModel)
 
-人脸初始化唤起zim
+人脸刷脸付初始化
 
-人脸初始化刷脸付
+人脸刷脸付初始化
 
 ### Example
 ```java
@@ -38,8 +38,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     ZolozAuthenticationCustomerSmilepayApi apiInstance = new ZolozAuthenticationCustomerSmilepayApi(defaultClient);
+    ZolozAuthenticationCustomerSmilepayInitializeModel zolozAuthenticationCustomerSmilepayInitializeModel = new ZolozAuthenticationCustomerSmilepayInitializeModel(); // ZolozAuthenticationCustomerSmilepayInitializeModel | 
     try {
-      ZolozAuthenticationCustomerSmilepayInitializeResponseModel result = apiInstance.initialize();
+      ZolozAuthenticationCustomerSmilepayInitializeResponseModel result = apiInstance.initialize(zolozAuthenticationCustomerSmilepayInitializeModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling ZolozAuthenticationCustomerSmilepayApi#initialize");
@@ -53,7 +54,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **zolozAuthenticationCustomerSmilepayInitializeModel** | **ZolozAuthenticationCustomerSmilepayInitializeModel**|  | [optional] |
 
 ### Return type
 
@@ -65,7 +69,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

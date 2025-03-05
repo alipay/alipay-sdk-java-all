@@ -4,13 +4,13 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**query**](AlipayEcoMycarParkingConfigApi.md#query) | **POST** /v3/alipay/eco/mycar/parking/config/query | ISV系统配置查询接口 |
+| [**query**](AlipayEcoMycarParkingConfigApi.md#query) | **GET** /v3/alipay/eco/mycar/parking/config/query | ISV系统配置查询接口 |
 | [**set**](AlipayEcoMycarParkingConfigApi.md#set) | **POST** /v3/alipay/eco/mycar/parking/config/set | 停车ISV系统配置接口 |
 
 
 <a name="query"></a>
 # **query**
-> AlipayEcoMycarParkingConfigQueryResponseModel query()
+> AlipayEcoMycarParkingConfigQueryResponseModel query(interfaceName, interfaceType)
 
 ISV系统配置查询接口
 
@@ -39,8 +39,10 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayEcoMycarParkingConfigApi apiInstance = new AlipayEcoMycarParkingConfigApi(defaultClient);
+    String interfaceName = "alipay.eco.mycar.parking.userpage.query"; // String | 接口名称。H5传入参数固定值：alipay.eco.mycar.parking.userpage.query； 小程序传入参数固定值：alipay.eco.mycar.parking.isv.homepage； 协议状态变更通知传入参数固定值： alipay.eco.mycar.parking.agreement.notify。
+    String interfaceType = "interface_page"; // String | 接口类型。H5、小程序传入参数固定值：interface_page； 通知接口传入参数固定值：interface_service。
     try {
-      AlipayEcoMycarParkingConfigQueryResponseModel result = apiInstance.query();
+      AlipayEcoMycarParkingConfigQueryResponseModel result = apiInstance.query(interfaceName, interfaceType);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayEcoMycarParkingConfigApi#query");
@@ -54,7 +56,11 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **interfaceName** | **String**| 接口名称。H5传入参数固定值：alipay.eco.mycar.parking.userpage.query； 小程序传入参数固定值：alipay.eco.mycar.parking.isv.homepage； 协议状态变更通知传入参数固定值： alipay.eco.mycar.parking.agreement.notify。 | [optional] |
+| **interfaceType** | **String**| 接口类型。H5、小程序传入参数固定值：interface_page； 通知接口传入参数固定值：interface_service。 | [optional] |
 
 ### Return type
 
@@ -77,7 +83,7 @@ No authorization required
 
 <a name="set"></a>
 # **set**
-> Object set()
+> Object set(alipayEcoMycarParkingConfigSetModel)
 
 停车ISV系统配置接口
 
@@ -106,8 +112,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayEcoMycarParkingConfigApi apiInstance = new AlipayEcoMycarParkingConfigApi(defaultClient);
+    AlipayEcoMycarParkingConfigSetModel alipayEcoMycarParkingConfigSetModel = new AlipayEcoMycarParkingConfigSetModel(); // AlipayEcoMycarParkingConfigSetModel | 
     try {
-      Object result = apiInstance.set();
+      Object result = apiInstance.set(alipayEcoMycarParkingConfigSetModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayEcoMycarParkingConfigApi#set");
@@ -121,7 +128,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayEcoMycarParkingConfigSetModel** | **AlipayEcoMycarParkingConfigSetModel**|  | [optional] |
 
 ### Return type
 
@@ -133,7 +143,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

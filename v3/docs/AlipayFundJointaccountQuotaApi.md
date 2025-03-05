@@ -4,12 +4,12 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**query**](AlipayFundJointaccountQuotaApi.md#query) | **POST** /v3/alipay/fund/jointaccount/quota/query | 查询账户额度详情 |
+| [**query**](AlipayFundJointaccountQuotaApi.md#query) | **GET** /v3/alipay/fund/jointaccount/quota/query | 查询账户额度详情 |
 
 
 <a name="query"></a>
 # **query**
-> AlipayFundJointaccountQuotaQueryResponseModel query(alipayFundJointaccountQuotaQueryModel)
+> AlipayFundJointaccountQuotaQueryResponseModel query(productCode, bizScene, accountId, memberId, memberOpenId, operateRole, agreementNo)
 
 查询账户额度详情
 
@@ -38,9 +38,15 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayFundJointaccountQuotaApi apiInstance = new AlipayFundJointaccountQuotaApi(defaultClient);
-    AlipayFundJointaccountQuotaQueryModel alipayFundJointaccountQuotaQueryModel = new AlipayFundJointaccountQuotaQueryModel(); // AlipayFundJointaccountQuotaQueryModel | 
+    String productCode = "ENTERPRISE_PAY"; // String | 产品码
+    String bizScene = "DEFAULT"; // String | 业务场景
+    String accountId = "2088900976746215"; // String | 账户ID
+    String memberId = "2088900976746215"; // String | 员工ID
+    String memberOpenId = "074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5"; // String | 员工的openid
+    String operateRole = "CREATOR"; // String | 角色：创建方(CREATOR)、参与方(PARTICIPANT)
+    String agreementNo = "208890097674621512312"; // String | 授权协议号
     try {
-      AlipayFundJointaccountQuotaQueryResponseModel result = apiInstance.query(alipayFundJointaccountQuotaQueryModel);
+      AlipayFundJointaccountQuotaQueryResponseModel result = apiInstance.query(productCode, bizScene, accountId, memberId, memberOpenId, operateRole, agreementNo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayFundJointaccountQuotaApi#query");
@@ -57,7 +63,13 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **alipayFundJointaccountQuotaQueryModel** | **AlipayFundJointaccountQuotaQueryModel**|  | [optional] |
+| **productCode** | **String**| 产品码 | [optional] |
+| **bizScene** | **String**| 业务场景 | [optional] |
+| **accountId** | **String**| 账户ID | [optional] |
+| **memberId** | **String**| 员工ID | [optional] |
+| **memberOpenId** | **String**| 员工的openid | [optional] |
+| **operateRole** | **String**| 角色：创建方(CREATOR)、参与方(PARTICIPANT) | [optional] |
+| **agreementNo** | **String**| 授权协议号 | [optional] |
 
 ### Return type
 
@@ -69,7 +81,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

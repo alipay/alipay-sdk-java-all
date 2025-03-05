@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="create"></a>
 # **create**
-> AlipayOpenPublicDefaultExtensionCreateResponseModel create()
+> AlipayOpenPublicDefaultExtensionCreateResponseModel create(alipayOpenPublicDefaultExtensionCreateModel)
 
 默认扩展区创建接口
 
@@ -38,8 +38,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenPublicDefaultExtensionApi apiInstance = new AlipayOpenPublicDefaultExtensionApi(defaultClient);
+    AlipayOpenPublicDefaultExtensionCreateModel alipayOpenPublicDefaultExtensionCreateModel = new AlipayOpenPublicDefaultExtensionCreateModel(); // AlipayOpenPublicDefaultExtensionCreateModel | 
     try {
-      AlipayOpenPublicDefaultExtensionCreateResponseModel result = apiInstance.create();
+      AlipayOpenPublicDefaultExtensionCreateResponseModel result = apiInstance.create(alipayOpenPublicDefaultExtensionCreateModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenPublicDefaultExtensionApi#create");
@@ -53,7 +54,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayOpenPublicDefaultExtensionCreateModel** | **AlipayOpenPublicDefaultExtensionCreateModel**|  | [optional] |
 
 ### Return type
 
@@ -65,7 +69,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

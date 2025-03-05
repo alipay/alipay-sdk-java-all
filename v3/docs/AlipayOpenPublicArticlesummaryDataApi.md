@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="batchquery"></a>
 # **batchquery**
-> AlipayOpenPublicArticlesummaryDataBatchqueryResponseModel batchquery()
+> AlipayOpenPublicArticlesummaryDataBatchqueryResponseModel batchquery(alipayOpenPublicArticlesummaryDataBatchqueryModel)
 
 图文分析-按时间查询数据接口
 
@@ -38,8 +38,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenPublicArticlesummaryDataApi apiInstance = new AlipayOpenPublicArticlesummaryDataApi(defaultClient);
+    AlipayOpenPublicArticlesummaryDataBatchqueryModel alipayOpenPublicArticlesummaryDataBatchqueryModel = new AlipayOpenPublicArticlesummaryDataBatchqueryModel(); // AlipayOpenPublicArticlesummaryDataBatchqueryModel | 
     try {
-      AlipayOpenPublicArticlesummaryDataBatchqueryResponseModel result = apiInstance.batchquery();
+      AlipayOpenPublicArticlesummaryDataBatchqueryResponseModel result = apiInstance.batchquery(alipayOpenPublicArticlesummaryDataBatchqueryModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenPublicArticlesummaryDataApi#batchquery");
@@ -53,7 +54,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayOpenPublicArticlesummaryDataBatchqueryModel** | **AlipayOpenPublicArticlesummaryDataBatchqueryModel**|  | [optional] |
 
 ### Return type
 
@@ -65,7 +69,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

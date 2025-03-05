@@ -4,7 +4,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**query**](AlipayCommerceLogisticsLogisticscompanyInstantdeliveryApi.md#query) | **POST** /v3/alipay/commerce/logistics/logisticscompany/instantdelivery/query | 查询支付宝支持的即时配送公司 |
+| [**query**](AlipayCommerceLogisticsLogisticscompanyInstantdeliveryApi.md#query) | **GET** /v3/alipay/commerce/logistics/logisticscompany/instantdelivery/query | 查询支付宝支持的即时配送公司 |
 
 
 <a name="query"></a>

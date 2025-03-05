@@ -10,7 +10,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="create"></a>
 # **create**
-> ZolozAuthenticationCustomerFacemanageCreateResponseModel create()
+> ZolozAuthenticationCustomerFacemanageCreateResponseModel create(zolozAuthenticationCustomerFacemanageCreateModel)
 
 热脸入库
 
@@ -39,8 +39,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     ZolozAuthenticationCustomerFacemanageApi apiInstance = new ZolozAuthenticationCustomerFacemanageApi(defaultClient);
+    ZolozAuthenticationCustomerFacemanageCreateModel zolozAuthenticationCustomerFacemanageCreateModel = new ZolozAuthenticationCustomerFacemanageCreateModel(); // ZolozAuthenticationCustomerFacemanageCreateModel | 
     try {
-      ZolozAuthenticationCustomerFacemanageCreateResponseModel result = apiInstance.create();
+      ZolozAuthenticationCustomerFacemanageCreateResponseModel result = apiInstance.create(zolozAuthenticationCustomerFacemanageCreateModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling ZolozAuthenticationCustomerFacemanageApi#create");
@@ -54,7 +55,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **zolozAuthenticationCustomerFacemanageCreateModel** | **ZolozAuthenticationCustomerFacemanageCreateModel**|  | [optional] |
 
 ### Return type
 
@@ -66,7 +70,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -77,7 +81,7 @@ No authorization required
 
 <a name="delete"></a>
 # **delete**
-> ZolozAuthenticationCustomerFacemanageDeleteResponseModel delete()
+> ZolozAuthenticationCustomerFacemanageDeleteResponseModel delete(zolozAuthenticationCustomerFacemanageDeleteModel)
 
 热脸出库
 
@@ -106,8 +110,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     ZolozAuthenticationCustomerFacemanageApi apiInstance = new ZolozAuthenticationCustomerFacemanageApi(defaultClient);
+    ZolozAuthenticationCustomerFacemanageDeleteModel zolozAuthenticationCustomerFacemanageDeleteModel = new ZolozAuthenticationCustomerFacemanageDeleteModel(); // ZolozAuthenticationCustomerFacemanageDeleteModel | 
     try {
-      ZolozAuthenticationCustomerFacemanageDeleteResponseModel result = apiInstance.delete();
+      ZolozAuthenticationCustomerFacemanageDeleteResponseModel result = apiInstance.delete(zolozAuthenticationCustomerFacemanageDeleteModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling ZolozAuthenticationCustomerFacemanageApi#delete");
@@ -121,7 +126,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **zolozAuthenticationCustomerFacemanageDeleteModel** | **ZolozAuthenticationCustomerFacemanageDeleteModel**|  | [optional] |
 
 ### Return type
 
@@ -133,7 +141,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

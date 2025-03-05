@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="query"></a>
 # **query**
-> AlipayEbppInvoiceInstitutionDetailinfoQueryResponseModel query(accountId, agreementNo, enterpriseId, institutionId)
+> AlipayEbppInvoiceInstitutionDetailinfoQueryResponseModel query(accountId, agreementNo, enterpriseId, institutionId, outerSourceId, ownerType)
 
 制度详情查询
 
@@ -42,8 +42,10 @@ public class Example {
     String agreementNo = "20215425001112341234"; // String | 授权签约协议号
     String enterpriseId = "2088000194958956"; // String | 企业ID
     String institutionId = "2022071800152609780000004052"; // String | 制度id
+    String outerSourceId = "0b249cd916969304726395528e002c"; // String | 外部唯一标识
+    String ownerType = "PHONE"; // String | 适配id类型
     try {
-      AlipayEbppInvoiceInstitutionDetailinfoQueryResponseModel result = apiInstance.query(accountId, agreementNo, enterpriseId, institutionId);
+      AlipayEbppInvoiceInstitutionDetailinfoQueryResponseModel result = apiInstance.query(accountId, agreementNo, enterpriseId, institutionId, outerSourceId, ownerType);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayEbppInvoiceInstitutionDetailinfoApi#query");
@@ -64,6 +66,8 @@ public class Example {
 | **agreementNo** | **String**| 授权签约协议号 | [optional] |
 | **enterpriseId** | **String**| 企业ID | [optional] |
 | **institutionId** | **String**| 制度id | [optional] |
+| **outerSourceId** | **String**| 外部唯一标识 | [optional] |
+| **ownerType** | **String**| 适配id类型 | [optional] |
 
 ### Return type
 

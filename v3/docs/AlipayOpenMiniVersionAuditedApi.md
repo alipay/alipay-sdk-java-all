@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="cancel"></a>
 # **cancel**
-> Object cancel()
+> Object cancel(alipayOpenMiniVersionAuditedCancelModel)
 
 小程序退回开发
 
@@ -38,8 +38,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenMiniVersionAuditedApi apiInstance = new AlipayOpenMiniVersionAuditedApi(defaultClient);
+    AlipayOpenMiniVersionAuditedCancelModel alipayOpenMiniVersionAuditedCancelModel = new AlipayOpenMiniVersionAuditedCancelModel(); // AlipayOpenMiniVersionAuditedCancelModel | 
     try {
-      Object result = apiInstance.cancel();
+      Object result = apiInstance.cancel(alipayOpenMiniVersionAuditedCancelModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenMiniVersionAuditedApi#cancel");
@@ -53,7 +54,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayOpenMiniVersionAuditedCancelModel** | **AlipayOpenMiniVersionAuditedCancelModel**|  | [optional] |
 
 ### Return type
 
@@ -65,7 +69,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

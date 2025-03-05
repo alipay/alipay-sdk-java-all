@@ -5,18 +5,18 @@ All URIs are relative to *https://openapi.alipay.com*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**create**](AlipayMarketingCardBenefitApi.md#create) | **POST** /v3/alipay/marketing/card/benefit/create | 会员卡模板外部权益创建 |
-| [**delete**](AlipayMarketingCardBenefitApi.md#delete) | **POST** /v3/alipay/marketing/card/benefit/delete | 会员卡模板外部权益删除 |
+| [**delete**](AlipayMarketingCardBenefitApi.md#delete) | **DELETE** /v3/alipay/marketing/card/benefit/delete | 会员卡模板外部权益删除 |
 | [**modify**](AlipayMarketingCardBenefitApi.md#modify) | **POST** /v3/alipay/marketing/card/benefit/modify | 会员卡模板外部权益修改 |
-| [**query**](AlipayMarketingCardBenefitApi.md#query) | **POST** /v3/alipay/marketing/card/benefit/query | 会员卡模板外部权益查询 |
+| [**query**](AlipayMarketingCardBenefitApi.md#query) | **GET** /v3/alipay/marketing/card/benefit/query | 会员卡模板外部权益查询 |
 
 
 <a name="create"></a>
 # **create**
-> AlipayMarketingCardBenefitCreateResponseModel create()
+> AlipayMarketingCardBenefitCreateResponseModel create(alipayMarketingCardBenefitCreateModel)
 
 会员卡模板外部权益创建
 
-会员卡模板外部权益创建
+会员卡模板外部权益创建，创建的权益内容信息将展示在卡包中卡详情页中部区域。
 
 ### Example
 ```java
@@ -41,8 +41,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayMarketingCardBenefitApi apiInstance = new AlipayMarketingCardBenefitApi(defaultClient);
+    AlipayMarketingCardBenefitCreateModel alipayMarketingCardBenefitCreateModel = new AlipayMarketingCardBenefitCreateModel(); // AlipayMarketingCardBenefitCreateModel | 
     try {
-      AlipayMarketingCardBenefitCreateResponseModel result = apiInstance.create();
+      AlipayMarketingCardBenefitCreateResponseModel result = apiInstance.create(alipayMarketingCardBenefitCreateModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayMarketingCardBenefitApi#create");
@@ -56,7 +57,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayMarketingCardBenefitCreateModel** | **AlipayMarketingCardBenefitCreateModel**|  | [optional] |
 
 ### Return type
 
@@ -68,7 +72,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -79,7 +83,7 @@ No authorization required
 
 <a name="delete"></a>
 # **delete**
-> AlipayMarketingCardBenefitDeleteResponseModel delete()
+> AlipayMarketingCardBenefitDeleteResponseModel delete(templateId, benefitId)
 
 会员卡模板外部权益删除
 
@@ -108,8 +112,10 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayMarketingCardBenefitApi apiInstance = new AlipayMarketingCardBenefitApi(defaultClient);
+    String templateId = "20170322000000000068101000300041"; // String | 会员卡模板ID，通过 <a  href=\"https://opendocs.alipay.com/apis/api_5/alipay.marketing.card.template.create\">alipay.marketing.card.template.create</a>（会员卡模板创建)接口创建会员卡模板获取。
+    String benefitId = "20170322000000000068101000300041"; // String | 权益ID，通过 <a  href=\"https://opendocs.alipay.com/apis/api_5/alipay.marketing.card.benefit.create\">alipay.marketing.card.benefit.create</a>(会员卡模板外部权益创建)接口创建获取。
     try {
-      AlipayMarketingCardBenefitDeleteResponseModel result = apiInstance.delete();
+      AlipayMarketingCardBenefitDeleteResponseModel result = apiInstance.delete(templateId, benefitId);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayMarketingCardBenefitApi#delete");
@@ -123,7 +129,11 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **templateId** | **String**| 会员卡模板ID，通过 &lt;a  href&#x3D;\&quot;https://opendocs.alipay.com/apis/api_5/alipay.marketing.card.template.create\&quot;&gt;alipay.marketing.card.template.create&lt;/a&gt;（会员卡模板创建)接口创建会员卡模板获取。 | [optional] |
+| **benefitId** | **String**| 权益ID，通过 &lt;a  href&#x3D;\&quot;https://opendocs.alipay.com/apis/api_5/alipay.marketing.card.benefit.create\&quot;&gt;alipay.marketing.card.benefit.create&lt;/a&gt;(会员卡模板外部权益创建)接口创建获取。 | [optional] |
 
 ### Return type
 
@@ -146,7 +156,7 @@ No authorization required
 
 <a name="modify"></a>
 # **modify**
-> AlipayMarketingCardBenefitModifyResponseModel modify()
+> AlipayMarketingCardBenefitModifyResponseModel modify(alipayMarketingCardBenefitModifyModel)
 
 会员卡模板外部权益修改
 
@@ -175,8 +185,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayMarketingCardBenefitApi apiInstance = new AlipayMarketingCardBenefitApi(defaultClient);
+    AlipayMarketingCardBenefitModifyModel alipayMarketingCardBenefitModifyModel = new AlipayMarketingCardBenefitModifyModel(); // AlipayMarketingCardBenefitModifyModel | 
     try {
-      AlipayMarketingCardBenefitModifyResponseModel result = apiInstance.modify();
+      AlipayMarketingCardBenefitModifyResponseModel result = apiInstance.modify(alipayMarketingCardBenefitModifyModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayMarketingCardBenefitApi#modify");
@@ -190,7 +201,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayMarketingCardBenefitModifyModel** | **AlipayMarketingCardBenefitModifyModel**|  | [optional] |
 
 ### Return type
 
@@ -202,7 +216,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -213,7 +227,7 @@ No authorization required
 
 <a name="query"></a>
 # **query**
-> AlipayMarketingCardBenefitQueryResponseModel query()
+> AlipayMarketingCardBenefitQueryResponseModel query(templateId, benefitId)
 
 会员卡模板外部权益查询
 
@@ -242,8 +256,10 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayMarketingCardBenefitApi apiInstance = new AlipayMarketingCardBenefitApi(defaultClient);
+    String templateId = "20170322000000000068101000300041"; // String | 会员卡模板ID，通过 <a  href=\"https://opendocs.alipay.com/apis/api_5/alipay.marketing.card.template.create\">alipay.marketing.card.template.create</a>（会员卡模板创建)接口创建会员卡模板获取。
+    String benefitId = "20170322000000000068101000300041"; // String | 权益ID，通过 <a  href=\"https://opendocs.alipay.com/apis/api_5/alipay.marketing.card.benefit.create\">alipay.marketing.card.benefit.create</a>(会员卡模板外部权益创建)接口创建获取。
     try {
-      AlipayMarketingCardBenefitQueryResponseModel result = apiInstance.query();
+      AlipayMarketingCardBenefitQueryResponseModel result = apiInstance.query(templateId, benefitId);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayMarketingCardBenefitApi#query");
@@ -257,7 +273,11 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **templateId** | **String**| 会员卡模板ID，通过 &lt;a  href&#x3D;\&quot;https://opendocs.alipay.com/apis/api_5/alipay.marketing.card.template.create\&quot;&gt;alipay.marketing.card.template.create&lt;/a&gt;（会员卡模板创建)接口创建会员卡模板获取。 | [optional] |
+| **benefitId** | **String**| 权益ID，通过 &lt;a  href&#x3D;\&quot;https://opendocs.alipay.com/apis/api_5/alipay.marketing.card.benefit.create\&quot;&gt;alipay.marketing.card.benefit.create&lt;/a&gt;(会员卡模板外部权益创建)接口创建获取。 | [optional] |
 
 ### Return type
 

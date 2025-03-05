@@ -5,8 +5,8 @@ All URIs are relative to *https://openapi.alipay.com*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**create**](AlipayIserviceCcmAgentApi.md#create) | **POST** /v3/alipay/iservice/ccm/agent/create | 新增客服接口 |
-| [**delete**](AlipayIserviceCcmAgentApi.md#delete) | **POST** /v3/alipay/iservice/ccm/agent/delete | 删除客服接口 |
-| [**get**](AlipayIserviceCcmAgentApi.md#get) | **POST** /v3/alipay/iservice/ccm/agent/get | 查询客服详情 |
+| [**delete**](AlipayIserviceCcmAgentApi.md#delete) | **DELETE** /v3/alipay/iservice/ccm/agent/delete | 删除客服接口 |
+| [**get**](AlipayIserviceCcmAgentApi.md#get) | **GET** /v3/alipay/iservice/ccm/agent/get | 查询客服详情 |
 | [**modify**](AlipayIserviceCcmAgentApi.md#modify) | **POST** /v3/alipay/iservice/ccm/agent/modify | 更新客服接口 |
 | [**query**](AlipayIserviceCcmAgentApi.md#query) | **POST** /v3/alipay/iservice/ccm/agent/query | 客服查询接口 |
 
@@ -84,7 +84,7 @@ No authorization required
 
 <a name="delete"></a>
 # **delete**
-> Object delete(alipayIserviceCcmAgentDeleteModel)
+> Object delete(id)
 
 删除客服接口
 
@@ -113,9 +113,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayIserviceCcmAgentApi apiInstance = new AlipayIserviceCcmAgentApi(defaultClient);
-    AlipayIserviceCcmAgentDeleteModel alipayIserviceCcmAgentDeleteModel = new AlipayIserviceCcmAgentDeleteModel(); // AlipayIserviceCcmAgentDeleteModel | 
+    String id = "2019032101896769"; // String | 客服id
     try {
-      Object result = apiInstance.delete(alipayIserviceCcmAgentDeleteModel);
+      Object result = apiInstance.delete(id);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayIserviceCcmAgentApi#delete");
@@ -132,7 +132,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **alipayIserviceCcmAgentDeleteModel** | **AlipayIserviceCcmAgentDeleteModel**|  | [optional] |
+| **id** | **String**| 客服id | [optional] |
 
 ### Return type
 
@@ -144,7 +144,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details
@@ -155,7 +155,7 @@ No authorization required
 
 <a name="get"></a>
 # **get**
-> AlipayIserviceCcmAgentGetResponseModel get(alipayIserviceCcmAgentGetModel)
+> AlipayIserviceCcmAgentGetResponseModel get(id, jobNumber, userChannel, externalUserId)
 
 查询客服详情
 
@@ -184,9 +184,12 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayIserviceCcmAgentApi apiInstance = new AlipayIserviceCcmAgentApi(defaultClient);
-    AlipayIserviceCcmAgentGetModel alipayIserviceCcmAgentGetModel = new AlipayIserviceCcmAgentGetModel(); // AlipayIserviceCcmAgentGetModel | 
+    String id = "2018101801902073"; // String | 客服id
+    String jobNumber = "0001"; // String | 客服工号
+    String userChannel = "ALIPAY"; // String | 客服账号渠道, ALIPAY:支付宝账号 user_channel和external_user_id必须配对使用
+    String externalUserId = "2088xxx"; // String | 客服账号id，当user_channel=ALIPAY时，此id为支付宝2088id external_user_id和user_channel必须配对使用
     try {
-      AlipayIserviceCcmAgentGetResponseModel result = apiInstance.get(alipayIserviceCcmAgentGetModel);
+      AlipayIserviceCcmAgentGetResponseModel result = apiInstance.get(id, jobNumber, userChannel, externalUserId);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayIserviceCcmAgentApi#get");
@@ -203,7 +206,10 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **alipayIserviceCcmAgentGetModel** | **AlipayIserviceCcmAgentGetModel**|  | [optional] |
+| **id** | **String**| 客服id | [optional] |
+| **jobNumber** | **String**| 客服工号 | [optional] |
+| **userChannel** | **String**| 客服账号渠道, ALIPAY:支付宝账号 user_channel和external_user_id必须配对使用 | [optional] |
+| **externalUserId** | **String**| 客服账号id，当user_channel&#x3D;ALIPAY时，此id为支付宝2088id external_user_id和user_channel必须配对使用 | [optional] |
 
 ### Return type
 
@@ -215,7 +221,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

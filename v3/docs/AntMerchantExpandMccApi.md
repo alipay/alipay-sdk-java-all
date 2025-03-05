@@ -4,12 +4,12 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**query**](AntMerchantExpandMccApi.md#query) | **GET** /3/ant/merchant/mcc/query | 商户mcc信息查询 |
+| [**query**](AntMerchantExpandMccApi.md#query) | **GET** /v3/ant/merchant/mcc/query | 商户mcc信息查询 |
 
 
 <a name="query"></a>
 # **query**
-> Object query(mccCodeList)
+> AntMerchantExpandMccQueryResponseModel query(mccCodeList)
 
 商户mcc信息查询
 
@@ -38,9 +38,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AntMerchantExpandMccApi apiInstance = new AntMerchantExpandMccApi(defaultClient);
-    String mccCodeList = "B0001,B0002"; // String | 传入需要查询的code列表，以分号分隔；注：如果需要查询完整类目树，可以传入ROOT
+    String mccCodeList = "B0001,B0002"; // String | 传入需要查询的code列表，以英文逗号分隔
     try {
-      Object result = apiInstance.query(mccCodeList);
+      AntMerchantExpandMccQueryResponseModel result = apiInstance.query(mccCodeList);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AntMerchantExpandMccApi#query");
@@ -57,11 +57,11 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **mccCodeList** | **String**| 传入需要查询的code列表，以分号分隔；注：如果需要查询完整类目树，可以传入ROOT | [optional] |
+| **mccCodeList** | **String**| 传入需要查询的code列表，以英文逗号分隔 | [optional] |
 
 ### Return type
 
-**Object**
+**AntMerchantExpandMccQueryResponseModel**
 
 ### Authorization
 

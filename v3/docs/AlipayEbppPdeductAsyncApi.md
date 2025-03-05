@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="pay"></a>
 # **pay**
-> AlipayEbppPdeductAsyncPayResponseModel pay()
+> AlipayEbppPdeductAsyncPayResponseModel pay(alipayEbppPdeductAsyncPayModel)
 
 公共事业缴费直连代扣异步扣款支付接口
 
@@ -38,8 +38,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayEbppPdeductAsyncApi apiInstance = new AlipayEbppPdeductAsyncApi(defaultClient);
+    AlipayEbppPdeductAsyncPayModel alipayEbppPdeductAsyncPayModel = new AlipayEbppPdeductAsyncPayModel(); // AlipayEbppPdeductAsyncPayModel | 
     try {
-      AlipayEbppPdeductAsyncPayResponseModel result = apiInstance.pay();
+      AlipayEbppPdeductAsyncPayResponseModel result = apiInstance.pay(alipayEbppPdeductAsyncPayModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayEbppPdeductAsyncApi#pay");
@@ -53,7 +54,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayEbppPdeductAsyncPayModel** | **AlipayEbppPdeductAsyncPayModel**|  | [optional] |
 
 ### Return type
 
@@ -65,7 +69,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

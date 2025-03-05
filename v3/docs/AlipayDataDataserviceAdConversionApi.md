@@ -13,7 +13,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 转化数据回传
 
-用于回传转化数据
+供广告商家通过OpenAPI上报转化明细数据，用于广告投放效果的追踪和广告投放的优化。
 
 ### Example
 ```java

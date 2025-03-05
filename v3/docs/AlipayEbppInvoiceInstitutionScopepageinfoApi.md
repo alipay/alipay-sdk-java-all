@@ -38,8 +38,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayEbppInvoiceInstitutionScopepageinfoApi apiInstance = new AlipayEbppInvoiceInstitutionScopepageinfoApi(defaultClient);
-    String accountId = "2088000194958956"; // String | 企业共同账户id
-    String agreementNo = "20215425001112341234"; // String | 授权签约协议号
+    String accountId = "2088000194958956"; // String | 企业共同账户id（该字段将废弃，不建议使用，可用enterprise_id字段替换）(该字段将废弃，不建议使用，可用enterprise_id字段替换)
+    String agreementNo = "20215425001112341234"; // String | 授权签约协议号（该字段将废弃，不建议使用，可用enterprise_id字段替换）(该字段将废弃，不建议使用，可用enterprise_id字段替换)
     String enterpriseId = "2088000194958956"; // String | 企业id
     String institutionId = "2022071800152609780000004052"; // String | 制度id
     String ownerType = "PHONE"; // String | 适配id类型
@@ -63,8 +63,8 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **accountId** | **String**| 企业共同账户id | [optional] |
-| **agreementNo** | **String**| 授权签约协议号 | [optional] |
+| **accountId** | **String**| 企业共同账户id（该字段将废弃，不建议使用，可用enterprise_id字段替换）(该字段将废弃，不建议使用，可用enterprise_id字段替换) | [optional] |
+| **agreementNo** | **String**| 授权签约协议号（该字段将废弃，不建议使用，可用enterprise_id字段替换）(该字段将废弃，不建议使用，可用enterprise_id字段替换) | [optional] |
 | **enterpriseId** | **String**| 企业id | [optional] |
 | **institutionId** | **String**| 制度id | [optional] |
 | **ownerType** | **String**| 适配id类型 | [optional] |

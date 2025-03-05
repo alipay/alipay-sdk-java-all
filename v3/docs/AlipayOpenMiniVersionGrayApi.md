@@ -10,7 +10,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="cancel"></a>
 # **cancel**
-> Object cancel()
+> Object cancel(alipayOpenMiniVersionGrayCancelModel)
 
 小程序结束灰度
 
@@ -39,8 +39,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenMiniVersionGrayApi apiInstance = new AlipayOpenMiniVersionGrayApi(defaultClient);
+    AlipayOpenMiniVersionGrayCancelModel alipayOpenMiniVersionGrayCancelModel = new AlipayOpenMiniVersionGrayCancelModel(); // AlipayOpenMiniVersionGrayCancelModel | 
     try {
-      Object result = apiInstance.cancel();
+      Object result = apiInstance.cancel(alipayOpenMiniVersionGrayCancelModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenMiniVersionGrayApi#cancel");
@@ -54,7 +55,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayOpenMiniVersionGrayCancelModel** | **AlipayOpenMiniVersionGrayCancelModel**|  | [optional] |
 
 ### Return type
 
@@ -66,7 +70,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

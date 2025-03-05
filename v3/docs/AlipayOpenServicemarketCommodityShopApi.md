@@ -10,7 +10,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="offline"></a>
 # **offline**
-> Object offline()
+> Object offline(alipayOpenServicemarketCommodityShopOfflineModel)
 
 门店插件下架操作
 
@@ -39,8 +39,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenServicemarketCommodityShopApi apiInstance = new AlipayOpenServicemarketCommodityShopApi(defaultClient);
+    AlipayOpenServicemarketCommodityShopOfflineModel alipayOpenServicemarketCommodityShopOfflineModel = new AlipayOpenServicemarketCommodityShopOfflineModel(); // AlipayOpenServicemarketCommodityShopOfflineModel | 
     try {
-      Object result = apiInstance.offline();
+      Object result = apiInstance.offline(alipayOpenServicemarketCommodityShopOfflineModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenServicemarketCommodityShopApi#offline");
@@ -54,7 +55,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayOpenServicemarketCommodityShopOfflineModel** | **AlipayOpenServicemarketCommodityShopOfflineModel**|  | [optional] |
 
 ### Return type
 
@@ -66,7 +70,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -77,7 +81,7 @@ No authorization required
 
 <a name="online"></a>
 # **online**
-> Object online()
+> Object online(alipayOpenServicemarketCommodityShopOnlineModel)
 
 门店插件上架操作
 
@@ -106,8 +110,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenServicemarketCommodityShopApi apiInstance = new AlipayOpenServicemarketCommodityShopApi(defaultClient);
+    AlipayOpenServicemarketCommodityShopOnlineModel alipayOpenServicemarketCommodityShopOnlineModel = new AlipayOpenServicemarketCommodityShopOnlineModel(); // AlipayOpenServicemarketCommodityShopOnlineModel | 
     try {
-      Object result = apiInstance.online();
+      Object result = apiInstance.online(alipayOpenServicemarketCommodityShopOnlineModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenServicemarketCommodityShopApi#online");
@@ -121,7 +126,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayOpenServicemarketCommodityShopOnlineModel** | **AlipayOpenServicemarketCommodityShopOnlineModel**|  | [optional] |
 
 ### Return type
 
@@ -133,7 +141,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

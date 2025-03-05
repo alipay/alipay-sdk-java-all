@@ -217,7 +217,7 @@ No authorization required
 
 <a name="upload"></a>
 # **upload**
-> AlipayOpenMiniMiniappBrandUploadResponseModel upload()
+> AlipayOpenMiniMiniappBrandUploadResponseModel upload(fileContent)
 
 小程序品牌提交认证时上传用户资质以及身份信息
 
@@ -246,8 +246,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenMiniMiniappBrandApi apiInstance = new AlipayOpenMiniMiniappBrandApi(defaultClient);
+    File fileContent = new File("/path/to/file"); // File | 
     try {
-      AlipayOpenMiniMiniappBrandUploadResponseModel result = apiInstance.upload();
+      AlipayOpenMiniMiniappBrandUploadResponseModel result = apiInstance.upload(fileContent);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenMiniMiniappBrandApi#upload");
@@ -261,7 +262,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **fileContent** | **File**|  | [optional] |
 
 ### Return type
 
@@ -273,7 +277,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: multipart/form-data
  - **Accept**: application/json
 
 ### HTTP response details

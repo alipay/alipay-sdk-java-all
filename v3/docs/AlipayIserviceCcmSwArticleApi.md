@@ -5,10 +5,10 @@ All URIs are relative to *https://openapi.alipay.com*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**batchquery**](AlipayIserviceCcmSwArticleApi.md#batchquery) | **POST** /v3/alipay/iservice/ccm/sw/article/batchquery | 知识库-问答-批量查询 |
-| [**create**](AlipayIserviceCcmSwArticleApi.md#create) | **POST** /v3/alipay/iservice/ccm/sw/article/create | 知识库-问答-创建 |
-| [**delete**](AlipayIserviceCcmSwArticleApi.md#delete) | **POST** /v3/alipay/iservice/ccm/sw/article/delete | 知识库-问答-删除 |
-| [**get**](AlipayIserviceCcmSwArticleApi.md#get) | **POST** /v3/alipay/iservice/ccm/sw/article/get | 知识库-问答-获取 |
-| [**modify**](AlipayIserviceCcmSwArticleApi.md#modify) | **POST** /v3/alipay/iservice/ccm/sw/article/modify | 知识库-问答-修改 |
+| [**create**](AlipayIserviceCcmSwArticleApi.md#create) | **PUT** /v3/alipay/iservice/ccm/sw/article/create | 知识库-问答-创建 |
+| [**delete**](AlipayIserviceCcmSwArticleApi.md#delete) | **DELETE** /v3/alipay/iservice/ccm/sw/article/delete | 知识库-问答-删除 |
+| [**get**](AlipayIserviceCcmSwArticleApi.md#get) | **GET** /v3/alipay/iservice/ccm/sw/article/get | 知识库-问答-获取 |
+| [**modify**](AlipayIserviceCcmSwArticleApi.md#modify) | **PATCH** /v3/alipay/iservice/ccm/sw/article/modify | 知识库-问答-修改 |
 
 
 <a name="batchquery"></a>
@@ -155,7 +155,7 @@ No authorization required
 
 <a name="delete"></a>
 # **delete**
-> Object delete(alipayIserviceCcmSwArticleDeleteModel)
+> Object delete()
 
 知识库-问答-删除
 
@@ -184,9 +184,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayIserviceCcmSwArticleApi apiInstance = new AlipayIserviceCcmSwArticleApi(defaultClient);
-    AlipayIserviceCcmSwArticleDeleteModel alipayIserviceCcmSwArticleDeleteModel = new AlipayIserviceCcmSwArticleDeleteModel(); // AlipayIserviceCcmSwArticleDeleteModel | 
     try {
-      Object result = apiInstance.delete(alipayIserviceCcmSwArticleDeleteModel);
+      Object result = apiInstance.delete();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayIserviceCcmSwArticleApi#delete");
@@ -200,10 +199,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **alipayIserviceCcmSwArticleDeleteModel** | **AlipayIserviceCcmSwArticleDeleteModel**|  | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -215,7 +211,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details
@@ -226,7 +222,7 @@ No authorization required
 
 <a name="get"></a>
 # **get**
-> AlipayIserviceCcmSwArticleGetResponseModel get(alipayIserviceCcmSwArticleGetModel)
+> AlipayIserviceCcmSwArticleGetResponseModel get(ccsInstanceId, id)
 
 知识库-问答-获取
 
@@ -255,9 +251,10 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayIserviceCcmSwArticleApi apiInstance = new AlipayIserviceCcmSwArticleApi(defaultClient);
-    AlipayIserviceCcmSwArticleGetModel alipayIserviceCcmSwArticleGetModel = new AlipayIserviceCcmSwArticleGetModel(); // AlipayIserviceCcmSwArticleGetModel | 
+    String ccsInstanceId = "ZPNASDK"; // String | 子部门ID，不传为默认部门
+    Integer id = 1; // Integer | 文章ID
     try {
-      AlipayIserviceCcmSwArticleGetResponseModel result = apiInstance.get(alipayIserviceCcmSwArticleGetModel);
+      AlipayIserviceCcmSwArticleGetResponseModel result = apiInstance.get(ccsInstanceId, id);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayIserviceCcmSwArticleApi#get");
@@ -274,7 +271,8 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **alipayIserviceCcmSwArticleGetModel** | **AlipayIserviceCcmSwArticleGetModel**|  | [optional] |
+| **ccsInstanceId** | **String**| 子部门ID，不传为默认部门 | [optional] |
+| **id** | **Integer**| 文章ID | [optional] |
 
 ### Return type
 
@@ -286,7 +284,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

@@ -81,7 +81,7 @@ No authorization required
 
 <a name="update"></a>
 # **update**
-> Object update()
+> Object update(alipayEcoMycarParkingOrderUpdateModel)
 
 订单更新接口
 
@@ -110,8 +110,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayEcoMycarParkingOrderApi apiInstance = new AlipayEcoMycarParkingOrderApi(defaultClient);
+    AlipayEcoMycarParkingOrderUpdateModel alipayEcoMycarParkingOrderUpdateModel = new AlipayEcoMycarParkingOrderUpdateModel(); // AlipayEcoMycarParkingOrderUpdateModel | 
     try {
-      Object result = apiInstance.update();
+      Object result = apiInstance.update(alipayEcoMycarParkingOrderUpdateModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayEcoMycarParkingOrderApi#update");
@@ -125,7 +126,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayEcoMycarParkingOrderUpdateModel** | **AlipayEcoMycarParkingOrderUpdateModel**|  | [optional] |
 
 ### Return type
 
@@ -137,7 +141,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

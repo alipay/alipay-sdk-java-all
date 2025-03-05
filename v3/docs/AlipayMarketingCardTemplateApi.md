@@ -12,7 +12,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="batchquery"></a>
 # **batchquery**
-> AlipayMarketingCardTemplateBatchqueryResponseModel batchquery()
+> AlipayMarketingCardTemplateBatchqueryResponseModel batchquery(alipayMarketingCardTemplateBatchqueryModel)
 
 会员卡模板批量查询
 
@@ -41,8 +41,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayMarketingCardTemplateApi apiInstance = new AlipayMarketingCardTemplateApi(defaultClient);
+    AlipayMarketingCardTemplateBatchqueryModel alipayMarketingCardTemplateBatchqueryModel = new AlipayMarketingCardTemplateBatchqueryModel(); // AlipayMarketingCardTemplateBatchqueryModel | 
     try {
-      AlipayMarketingCardTemplateBatchqueryResponseModel result = apiInstance.batchquery();
+      AlipayMarketingCardTemplateBatchqueryResponseModel result = apiInstance.batchquery(alipayMarketingCardTemplateBatchqueryModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayMarketingCardTemplateApi#batchquery");
@@ -56,7 +57,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayMarketingCardTemplateBatchqueryModel** | **AlipayMarketingCardTemplateBatchqueryModel**|  | [optional] |
 
 ### Return type
 
@@ -68,7 +72,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

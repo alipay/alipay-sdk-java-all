@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="query"></a>
 # **query**
-> AlipayOpenAuthTokenAppQueryResponseModel query()
+> AlipayOpenAuthTokenAppQueryResponseModel query(appAuthToken)
 
 查询某个应用授权AppAuthToken的授权信息
 
@@ -38,8 +38,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenAuthTokenAppApi apiInstance = new AlipayOpenAuthTokenAppApi(defaultClient);
+    String appAuthToken = "201509BBeff9351ad1874306903e96b91d248A36"; // String | 应用授权令牌
     try {
-      AlipayOpenAuthTokenAppQueryResponseModel result = apiInstance.query();
+      AlipayOpenAuthTokenAppQueryResponseModel result = apiInstance.query(appAuthToken);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenAuthTokenAppApi#query");
@@ -53,7 +54,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **appAuthToken** | **String**| 应用授权令牌 | [optional] |
 
 ### Return type
 

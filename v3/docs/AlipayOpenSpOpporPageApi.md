@@ -4,12 +4,12 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**query**](AlipayOpenSpOpporPageApi.md#query) | **POST** /v3/alipay/open/sp/oppor/page/query | 商机作业列表查询 |
+| [**query**](AlipayOpenSpOpporPageApi.md#query) | **GET** /v3/alipay/open/sp/oppor/page/query | 商机作业列表查询 |
 
 
 <a name="query"></a>
 # **query**
-> AlipayOpenSpOpporPageQueryResponseModel query(alipayOpenSpOpporPageQueryModel)
+> AlipayOpenSpOpporPageQueryResponseModel query(isvPid, statusList, pageSize, pageNum)
 
 商机作业列表查询
 
@@ -38,9 +38,12 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenSpOpporPageApi apiInstance = new AlipayOpenSpOpporPageApi(defaultClient);
-    AlipayOpenSpOpporPageQueryModel alipayOpenSpOpporPageQueryModel = new AlipayOpenSpOpporPageQueryModel(); // AlipayOpenSpOpporPageQueryModel | 
+    String isvPid = "2088302213873401"; // String | 服务商pid
+    String statusList = "WAIT_MER_CONFIRM,MER_CONFIRMED,MER_REJECTED,EXPANDING,EXPANDED,EXPAND_FAILED"; // String | 作业记录状态列表,以,拼接传入
+    String pageSize = "10"; // String | 页大小
+    String pageNum = "1"; // String | 页数
     try {
-      AlipayOpenSpOpporPageQueryResponseModel result = apiInstance.query(alipayOpenSpOpporPageQueryModel);
+      AlipayOpenSpOpporPageQueryResponseModel result = apiInstance.query(isvPid, statusList, pageSize, pageNum);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenSpOpporPageApi#query");
@@ -57,7 +60,10 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **alipayOpenSpOpporPageQueryModel** | **AlipayOpenSpOpporPageQueryModel**|  | [optional] |
+| **isvPid** | **String**| 服务商pid | [optional] |
+| **statusList** | **String**| 作业记录状态列表,以,拼接传入 | [optional] |
+| **pageSize** | **String**| 页大小 | [optional] |
+| **pageNum** | **String**| 页数 | [optional] |
 
 ### Return type
 
@@ -69,7 +75,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

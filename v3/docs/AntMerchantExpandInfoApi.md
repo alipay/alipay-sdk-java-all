@@ -4,12 +4,12 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**query**](AntMerchantExpandInfoApi.md#query) | **POST** /v3/ant/merchant/expand/info/query | 蚂蚁商户信息查询接口 |
+| [**query**](AntMerchantExpandInfoApi.md#query) | **GET** /v3/ant/merchant/expand/info/query | 蚂蚁商户信息查询接口 |
 
 
 <a name="query"></a>
 # **query**
-> AntMerchantExpandInfoQueryResponseModel query(antMerchantExpandInfoQueryModel)
+> AntMerchantExpandInfoQueryResponseModel query(merchantNo)
 
 蚂蚁商户信息查询接口
 
@@ -38,9 +38,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AntMerchantExpandInfoApi apiInstance = new AntMerchantExpandInfoApi(defaultClient);
-    AntMerchantExpandInfoQueryModel antMerchantExpandInfoQueryModel = new AntMerchantExpandInfoQueryModel(); // AntMerchantExpandInfoQueryModel | 
+    String merchantNo = "2088123456788765"; // String | 商户号，目前是商户pid
     try {
-      AntMerchantExpandInfoQueryResponseModel result = apiInstance.query(antMerchantExpandInfoQueryModel);
+      AntMerchantExpandInfoQueryResponseModel result = apiInstance.query(merchantNo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AntMerchantExpandInfoApi#query");
@@ -57,7 +57,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **antMerchantExpandInfoQueryModel** | **AntMerchantExpandInfoQueryModel**|  | [optional] |
+| **merchantNo** | **String**| 商户号，目前是商户pid | [optional] |
 
 ### Return type
 
@@ -69,7 +69,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

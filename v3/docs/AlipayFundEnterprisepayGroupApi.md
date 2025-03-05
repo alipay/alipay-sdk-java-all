@@ -5,9 +5,9 @@ All URIs are relative to *https://openapi.alipay.com*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**add**](AlipayFundEnterprisepayGroupApi.md#add) | **POST** /v3/alipay/fund/enterprisepay/group/add | 因公付新增账户下群组 |
-| [**delete**](AlipayFundEnterprisepayGroupApi.md#delete) | **POST** /v3/alipay/fund/enterprisepay/group/delete | 因公付删除账户下群组 |
+| [**delete**](AlipayFundEnterprisepayGroupApi.md#delete) | **DELETE** /v3/alipay/fund/enterprisepay/group/delete | 因公付删除账户下群组 |
 | [**modify**](AlipayFundEnterprisepayGroupApi.md#modify) | **POST** /v3/alipay/fund/enterprisepay/group/modify | 因公付更新账户下群组 |
-| [**query**](AlipayFundEnterprisepayGroupApi.md#query) | **POST** /v3/alipay/fund/enterprisepay/group/query | 因公付查询账户下群组 |
+| [**query**](AlipayFundEnterprisepayGroupApi.md#query) | **GET** /v3/alipay/fund/enterprisepay/group/query | 因公付查询账户下群组 |
 
 
 <a name="add"></a>
@@ -83,7 +83,7 @@ No authorization required
 
 <a name="delete"></a>
 # **delete**
-> Object delete(alipayFundEnterprisepayGroupDeleteModel)
+> Object delete(productCode, bizScene, accountId, agreementNo, outBizNo)
 
 因公付删除账户下群组
 
@@ -112,9 +112,13 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayFundEnterprisepayGroupApi apiInstance = new AlipayFundEnterprisepayGroupApi(defaultClient);
-    AlipayFundEnterprisepayGroupDeleteModel alipayFundEnterprisepayGroupDeleteModel = new AlipayFundEnterprisepayGroupDeleteModel(); // AlipayFundEnterprisepayGroupDeleteModel | 
+    String productCode = "ENTERPRISE_PAY"; // String | 产品码，默认值 ENTERPRISE_PAY
+    String bizScene = "ANT_GROUP"; // String | 场景码，联系支付宝分配
+    String accountId = "2088888888"; // String | 企业签约账户ID
+    String agreementNo = "1231231321323"; // String | 平台和企业的三方授权协议号
+    String outBizNo = "12123123"; // String | 外部业务号
     try {
-      Object result = apiInstance.delete(alipayFundEnterprisepayGroupDeleteModel);
+      Object result = apiInstance.delete(productCode, bizScene, accountId, agreementNo, outBizNo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayFundEnterprisepayGroupApi#delete");
@@ -131,7 +135,11 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **alipayFundEnterprisepayGroupDeleteModel** | **AlipayFundEnterprisepayGroupDeleteModel**|  | [optional] |
+| **productCode** | **String**| 产品码，默认值 ENTERPRISE_PAY | [optional] |
+| **bizScene** | **String**| 场景码，联系支付宝分配 | [optional] |
+| **accountId** | **String**| 企业签约账户ID | [optional] |
+| **agreementNo** | **String**| 平台和企业的三方授权协议号 | [optional] |
+| **outBizNo** | **String**| 外部业务号 | [optional] |
 
 ### Return type
 
@@ -143,7 +151,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details
@@ -225,7 +233,7 @@ No authorization required
 
 <a name="query"></a>
 # **query**
-> AlipayFundEnterprisepayGroupQueryResponseModel query(alipayFundEnterprisepayGroupQueryModel)
+> AlipayFundEnterprisepayGroupQueryResponseModel query(productCode, bizScene, accountId, agreementNo, outBizNo)
 
 因公付查询账户下群组
 
@@ -254,9 +262,13 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayFundEnterprisepayGroupApi apiInstance = new AlipayFundEnterprisepayGroupApi(defaultClient);
-    AlipayFundEnterprisepayGroupQueryModel alipayFundEnterprisepayGroupQueryModel = new AlipayFundEnterprisepayGroupQueryModel(); // AlipayFundEnterprisepayGroupQueryModel | 
+    String productCode = "ENTERPRISE_PAY"; // String | 产品码，默认值 ENTERPRISE_PAY
+    String bizScene = "ANT_GROUP"; // String | 场景码，联系支付宝分配
+    String accountId = "2088888888"; // String | 企业签约账户ID
+    String agreementNo = "1231231321323"; // String | 平台和企业的三方授权协议号
+    String outBizNo = "12312313"; // String | 外部业务号，外部群组号
     try {
-      AlipayFundEnterprisepayGroupQueryResponseModel result = apiInstance.query(alipayFundEnterprisepayGroupQueryModel);
+      AlipayFundEnterprisepayGroupQueryResponseModel result = apiInstance.query(productCode, bizScene, accountId, agreementNo, outBizNo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayFundEnterprisepayGroupApi#query");
@@ -273,7 +285,11 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **alipayFundEnterprisepayGroupQueryModel** | **AlipayFundEnterprisepayGroupQueryModel**|  | [optional] |
+| **productCode** | **String**| 产品码，默认值 ENTERPRISE_PAY | [optional] |
+| **bizScene** | **String**| 场景码，联系支付宝分配 | [optional] |
+| **accountId** | **String**| 企业签约账户ID | [optional] |
+| **agreementNo** | **String**| 平台和企业的三方授权协议号 | [optional] |
+| **outBizNo** | **String**| 外部业务号，外部群组号 | [optional] |
 
 ### Return type
 
@@ -285,7 +301,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

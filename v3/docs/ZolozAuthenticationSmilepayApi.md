@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="initialize"></a>
 # **initialize**
-> ZolozAuthenticationSmilepayInitializeResponseModel initialize()
+> ZolozAuthenticationSmilepayInitializeResponseModel initialize(zolozAuthenticationSmilepayInitializeModel)
 
 刷脸支付初始化
 
@@ -38,8 +38,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     ZolozAuthenticationSmilepayApi apiInstance = new ZolozAuthenticationSmilepayApi(defaultClient);
+    ZolozAuthenticationSmilepayInitializeModel zolozAuthenticationSmilepayInitializeModel = new ZolozAuthenticationSmilepayInitializeModel(); // ZolozAuthenticationSmilepayInitializeModel | 
     try {
-      ZolozAuthenticationSmilepayInitializeResponseModel result = apiInstance.initialize();
+      ZolozAuthenticationSmilepayInitializeResponseModel result = apiInstance.initialize(zolozAuthenticationSmilepayInitializeModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling ZolozAuthenticationSmilepayApi#initialize");
@@ -53,7 +54,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **zolozAuthenticationSmilepayInitializeModel** | **ZolozAuthenticationSmilepayInitializeModel**|  | [optional] |
 
 ### Return type
 
@@ -65,7 +69,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

@@ -5,13 +5,13 @@ All URIs are relative to *https://openapi.alipay.com*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**modify**](AlipayEcoEduKtBillingApi.md#modify) | **POST** /v3/alipay/eco/edu/kt/billing/modify | 教育缴费账单状态同步接口 |
-| [**query**](AlipayEcoEduKtBillingApi.md#query) | **POST** /v3/alipay/eco/edu/kt/billing/query | 缴费账单查询 |
+| [**query**](AlipayEcoEduKtBillingApi.md#query) | **GET** /v3/alipay/eco/edu/kt/billing/query | 缴费账单查询 |
 | [**send**](AlipayEcoEduKtBillingApi.md#send) | **POST** /v3/alipay/eco/edu/kt/billing/send | 教育缴费账单发送接口 |
 
 
 <a name="modify"></a>
 # **modify**
-> AlipayEcoEduKtBillingModifyResponseModel modify()
+> AlipayEcoEduKtBillingModifyResponseModel modify(alipayEcoEduKtBillingModifyModel)
 
 教育缴费账单状态同步接口
 
@@ -40,8 +40,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayEcoEduKtBillingApi apiInstance = new AlipayEcoEduKtBillingApi(defaultClient);
+    AlipayEcoEduKtBillingModifyModel alipayEcoEduKtBillingModifyModel = new AlipayEcoEduKtBillingModifyModel(); // AlipayEcoEduKtBillingModifyModel | 
     try {
-      AlipayEcoEduKtBillingModifyResponseModel result = apiInstance.modify();
+      AlipayEcoEduKtBillingModifyResponseModel result = apiInstance.modify(alipayEcoEduKtBillingModifyModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayEcoEduKtBillingApi#modify");
@@ -55,7 +56,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayEcoEduKtBillingModifyModel** | **AlipayEcoEduKtBillingModifyModel**|  | [optional] |
 
 ### Return type
 
@@ -67,7 +71,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -78,7 +82,7 @@ No authorization required
 
 <a name="query"></a>
 # **query**
-> AlipayEcoEduKtBillingQueryResponseModel query()
+> AlipayEcoEduKtBillingQueryResponseModel query(isvPid, schoolPid, outTradeNo)
 
 缴费账单查询
 
@@ -107,8 +111,11 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayEcoEduKtBillingApi apiInstance = new AlipayEcoEduKtBillingApi(defaultClient);
+    String isvPid = "2088121212121212"; // String | Isv pid
+    String schoolPid = "2088101117955611"; // String | 学校支付宝pid，直付通填写smid
+    String outTradeNo = "58de07de7bb90a437553e464"; // String | ISV调用发送账单接口，返回给商户的order_no
     try {
-      AlipayEcoEduKtBillingQueryResponseModel result = apiInstance.query();
+      AlipayEcoEduKtBillingQueryResponseModel result = apiInstance.query(isvPid, schoolPid, outTradeNo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayEcoEduKtBillingApi#query");
@@ -122,7 +129,12 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **isvPid** | **String**| Isv pid | [optional] |
+| **schoolPid** | **String**| 学校支付宝pid，直付通填写smid | [optional] |
+| **outTradeNo** | **String**| ISV调用发送账单接口，返回给商户的order_no | [optional] |
 
 ### Return type
 

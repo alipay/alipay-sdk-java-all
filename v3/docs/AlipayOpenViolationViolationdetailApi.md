@@ -4,12 +4,12 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**query**](AlipayOpenViolationViolationdetailApi.md#query) | **POST** /v3/alipay/open/violation/violationdetail/query | 违规记录详情查询 |
+| [**query**](AlipayOpenViolationViolationdetailApi.md#query) | **GET** /v3/alipay/open/violation/violationdetail/query | 违规记录详情查询 |
 
 
 <a name="query"></a>
 # **query**
-> AlipayOpenViolationViolationdetailQueryResponseModel query(alipayOpenViolationViolationdetailQueryModel)
+> AlipayOpenViolationViolationdetailQueryResponseModel query(violationRecordId)
 
 违规记录详情查询
 
@@ -38,9 +38,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenViolationViolationdetailApi apiInstance = new AlipayOpenViolationViolationdetailApi(defaultClient);
-    AlipayOpenViolationViolationdetailQueryModel alipayOpenViolationViolationdetailQueryModel = new AlipayOpenViolationViolationdetailQueryModel(); // AlipayOpenViolationViolationdetailQueryModel | 
+    String violationRecordId = "20220524001020000000000001"; // String | 支付宝侧生成的违规记录唯一标识
     try {
-      AlipayOpenViolationViolationdetailQueryResponseModel result = apiInstance.query(alipayOpenViolationViolationdetailQueryModel);
+      AlipayOpenViolationViolationdetailQueryResponseModel result = apiInstance.query(violationRecordId);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenViolationViolationdetailApi#query");
@@ -57,7 +57,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **alipayOpenViolationViolationdetailQueryModel** | **AlipayOpenViolationViolationdetailQueryModel**|  | [optional] |
+| **violationRecordId** | **String**| 支付宝侧生成的违规记录唯一标识 | [optional] |
 
 ### Return type
 
@@ -69,7 +69,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

@@ -10,7 +10,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="create"></a>
 # **create**
-> AlipayMarketingCampaignCashCreateResponseModel create()
+> AlipayMarketingCampaignCashCreateResponseModel create(alipayMarketingCampaignCashCreateModel)
 
 创建现金活动
 
@@ -39,8 +39,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayMarketingCampaignCashApi apiInstance = new AlipayMarketingCampaignCashApi(defaultClient);
+    AlipayMarketingCampaignCashCreateModel alipayMarketingCampaignCashCreateModel = new AlipayMarketingCampaignCashCreateModel(); // AlipayMarketingCampaignCashCreateModel | 
     try {
-      AlipayMarketingCampaignCashCreateResponseModel result = apiInstance.create();
+      AlipayMarketingCampaignCashCreateResponseModel result = apiInstance.create(alipayMarketingCampaignCashCreateModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayMarketingCampaignCashApi#create");
@@ -54,7 +55,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayMarketingCampaignCashCreateModel** | **AlipayMarketingCampaignCashCreateModel**|  | [optional] |
 
 ### Return type
 
@@ -66,7 +70,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

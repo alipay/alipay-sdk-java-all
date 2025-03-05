@@ -5,7 +5,7 @@ All URIs are relative to *https://openapi.alipay.com*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**create**](AlipayOpenSpIsvSignauthApi.md#create) | **POST** /v3/alipay/open/sp/isv/signauth/create | 创建签约授权一体化订单 |
-| [**query**](AlipayOpenSpIsvSignauthApi.md#query) | **POST** /v3/alipay/open/sp/isv/signauth/query | 查询签约授权一体化订单状态详情 |
+| [**query**](AlipayOpenSpIsvSignauthApi.md#query) | **GET** /v3/alipay/open/sp/isv/signauth/query | 查询签约授权一体化订单状态详情 |
 
 
 <a name="create"></a>
@@ -81,7 +81,7 @@ No authorization required
 
 <a name="query"></a>
 # **query**
-> AlipayOpenSpIsvSignauthQueryResponseModel query(alipayOpenSpIsvSignauthQueryModel)
+> AlipayOpenSpIsvSignauthQueryResponseModel query(orderId)
 
 查询签约授权一体化订单状态详情
 
@@ -110,9 +110,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenSpIsvSignauthApi apiInstance = new AlipayOpenSpIsvSignauthApi(defaultClient);
-    AlipayOpenSpIsvSignauthQueryModel alipayOpenSpIsvSignauthQueryModel = new AlipayOpenSpIsvSignauthQueryModel(); // AlipayOpenSpIsvSignauthQueryModel | 
+    String orderId = "20211102034000100000047728652040"; // String | 签约授权一体化订单ID 可通过alipay.open.sp.isv.signauth.create 接口获取
     try {
-      AlipayOpenSpIsvSignauthQueryResponseModel result = apiInstance.query(alipayOpenSpIsvSignauthQueryModel);
+      AlipayOpenSpIsvSignauthQueryResponseModel result = apiInstance.query(orderId);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenSpIsvSignauthApi#query");
@@ -129,7 +129,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **alipayOpenSpIsvSignauthQueryModel** | **AlipayOpenSpIsvSignauthQueryModel**|  | [optional] |
+| **orderId** | **String**| 签约授权一体化订单ID 可通过alipay.open.sp.isv.signauth.create 接口获取 | [optional] |
 
 ### Return type
 
@@ -141,7 +141,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

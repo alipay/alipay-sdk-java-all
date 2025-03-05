@@ -4,14 +4,14 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**query**](AlipayFundAccountbookNotifyApi.md#query) | **POST** /v3/alipay/fund/accountbook/notify/query | 记账本通知订阅关系查询接口 |
+| [**query**](AlipayFundAccountbookNotifyApi.md#query) | **GET** /v3/alipay/fund/accountbook/notify/query | 记账本通知订阅关系查询接口 |
 | [**subscribe**](AlipayFundAccountbookNotifyApi.md#subscribe) | **POST** /v3/alipay/fund/accountbook/notify/subscribe | 记账本通知订阅接口 |
 | [**unsubscribe**](AlipayFundAccountbookNotifyApi.md#unsubscribe) | **POST** /v3/alipay/fund/accountbook/notify/unsubscribe | 记账本通知取消订阅接口 |
 
 
 <a name="query"></a>
 # **query**
-> AlipayFundAccountbookNotifyQueryResponseModel query(alipayFundAccountbookNotifyQueryModel)
+> AlipayFundAccountbookNotifyQueryResponseModel query(productCode, bizScene, accountBookId, agreementNo)
 
 记账本通知订阅关系查询接口
 
@@ -40,9 +40,12 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayFundAccountbookNotifyApi apiInstance = new AlipayFundAccountbookNotifyApi(defaultClient);
-    AlipayFundAccountbookNotifyQueryModel alipayFundAccountbookNotifyQueryModel = new AlipayFundAccountbookNotifyQueryModel(); // AlipayFundAccountbookNotifyQueryModel | 
+    String productCode = "SATF_FUND_BOOK"; // String | 产品码。固定为SATF_FUND_BOOK
+    String bizScene = "DEFAULT"; // String | 场景码。固定为DEFAULT
+    String accountBookId = "2088000147677710"; // String | 记账本ID
+    String agreementNo = "20205724001102186227"; // String | 协议号。 若是基于协议的记账本，则agreement_no必传； 若是自创建的记账本，则agreement_no不传；
     try {
-      AlipayFundAccountbookNotifyQueryResponseModel result = apiInstance.query(alipayFundAccountbookNotifyQueryModel);
+      AlipayFundAccountbookNotifyQueryResponseModel result = apiInstance.query(productCode, bizScene, accountBookId, agreementNo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayFundAccountbookNotifyApi#query");
@@ -59,7 +62,10 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **alipayFundAccountbookNotifyQueryModel** | **AlipayFundAccountbookNotifyQueryModel**|  | [optional] |
+| **productCode** | **String**| 产品码。固定为SATF_FUND_BOOK | [optional] |
+| **bizScene** | **String**| 场景码。固定为DEFAULT | [optional] |
+| **accountBookId** | **String**| 记账本ID | [optional] |
+| **agreementNo** | **String**| 协议号。 若是基于协议的记账本，则agreement_no必传； 若是自创建的记账本，则agreement_no不传； | [optional] |
 
 ### Return type
 
@@ -71,7 +77,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

@@ -10,7 +10,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="create"></a>
 # **create**
-> AlipayOpenPublicMatchuserLabelCreateResponseModel create()
+> AlipayOpenPublicMatchuserLabelCreateResponseModel create(alipayOpenPublicMatchuserLabelCreateModel)
 
 用户打标接口
 
@@ -39,8 +39,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenPublicMatchuserLabelApi apiInstance = new AlipayOpenPublicMatchuserLabelApi(defaultClient);
+    AlipayOpenPublicMatchuserLabelCreateModel alipayOpenPublicMatchuserLabelCreateModel = new AlipayOpenPublicMatchuserLabelCreateModel(); // AlipayOpenPublicMatchuserLabelCreateModel | 
     try {
-      AlipayOpenPublicMatchuserLabelCreateResponseModel result = apiInstance.create();
+      AlipayOpenPublicMatchuserLabelCreateResponseModel result = apiInstance.create(alipayOpenPublicMatchuserLabelCreateModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenPublicMatchuserLabelApi#create");
@@ -54,7 +55,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayOpenPublicMatchuserLabelCreateModel** | **AlipayOpenPublicMatchuserLabelCreateModel**|  | [optional] |
 
 ### Return type
 
@@ -66,7 +70,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -77,7 +81,7 @@ No authorization required
 
 <a name="delete"></a>
 # **delete**
-> AlipayOpenPublicMatchuserLabelDeleteResponseModel delete()
+> AlipayOpenPublicMatchuserLabelDeleteResponseModel delete(alipayOpenPublicMatchuserLabelDeleteModel)
 
 用户取消标签接口
 
@@ -106,8 +110,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenPublicMatchuserLabelApi apiInstance = new AlipayOpenPublicMatchuserLabelApi(defaultClient);
+    AlipayOpenPublicMatchuserLabelDeleteModel alipayOpenPublicMatchuserLabelDeleteModel = new AlipayOpenPublicMatchuserLabelDeleteModel(); // AlipayOpenPublicMatchuserLabelDeleteModel | 
     try {
-      AlipayOpenPublicMatchuserLabelDeleteResponseModel result = apiInstance.delete();
+      AlipayOpenPublicMatchuserLabelDeleteResponseModel result = apiInstance.delete(alipayOpenPublicMatchuserLabelDeleteModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenPublicMatchuserLabelApi#delete");
@@ -121,7 +126,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayOpenPublicMatchuserLabelDeleteModel** | **AlipayOpenPublicMatchuserLabelDeleteModel**|  | [optional] |
 
 ### Return type
 
@@ -133,7 +141,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

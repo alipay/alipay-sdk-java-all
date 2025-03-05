@@ -4,15 +4,15 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**batchquery**](AlipayIserviceCcmSwTreecategoryApi.md#batchquery) | **POST** /v3/alipay/iservice/ccm/sw/treecategory/batchquery | 知识库-节点-批量查询 |
-| [**create**](AlipayIserviceCcmSwTreecategoryApi.md#create) | **POST** /v3/alipay/iservice/ccm/sw/treecategory/create | 知识库-节点-创建 |
-| [**delete**](AlipayIserviceCcmSwTreecategoryApi.md#delete) | **POST** /v3/alipay/iservice/ccm/sw/treecategory/delete | 知识库-节点-删除 |
-| [**modify**](AlipayIserviceCcmSwTreecategoryApi.md#modify) | **POST** /v3/alipay/iservice/ccm/sw/treecategory/modify | 知识库-节点-修改 |
+| [**batchquery**](AlipayIserviceCcmSwTreecategoryApi.md#batchquery) | **GET** /v3/alipay/iservice/ccm/sw/treecategory/batchquery | 知识库-节点-批量查询 |
+| [**create**](AlipayIserviceCcmSwTreecategoryApi.md#create) | **PUT** /v3/alipay/iservice/ccm/sw/treecategory/create | 知识库-节点-创建 |
+| [**delete**](AlipayIserviceCcmSwTreecategoryApi.md#delete) | **DELETE** /v3/alipay/iservice/ccm/sw/treecategory/delete | 知识库-节点-删除 |
+| [**modify**](AlipayIserviceCcmSwTreecategoryApi.md#modify) | **PATCH** /v3/alipay/iservice/ccm/sw/treecategory/modify | 知识库-节点-修改 |
 
 
 <a name="batchquery"></a>
 # **batchquery**
-> AlipayIserviceCcmSwTreecategoryBatchqueryResponseModel batchquery(alipayIserviceCcmSwTreecategoryBatchqueryModel)
+> AlipayIserviceCcmSwTreecategoryBatchqueryResponseModel batchquery(ccsInstanceId, libraryId, name, pageNum, pageSize)
 
 知识库-节点-批量查询
 
@@ -41,9 +41,13 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayIserviceCcmSwTreecategoryApi apiInstance = new AlipayIserviceCcmSwTreecategoryApi(defaultClient);
-    AlipayIserviceCcmSwTreecategoryBatchqueryModel alipayIserviceCcmSwTreecategoryBatchqueryModel = new AlipayIserviceCcmSwTreecategoryBatchqueryModel(); // AlipayIserviceCcmSwTreecategoryBatchqueryModel | 
+    String ccsInstanceId = "ZPNASDK"; // String | 子部门ID，不传为默认部门
+    Integer libraryId = 1; // Integer | 知识库ID
+    String name = "服务群"; // String | 节点名称
+    Integer pageNum = 1; // Integer | 页数，page_size不能为空
+    Integer pageSize = 10; // Integer | 页显示大小，page_num不能为空
     try {
-      AlipayIserviceCcmSwTreecategoryBatchqueryResponseModel result = apiInstance.batchquery(alipayIserviceCcmSwTreecategoryBatchqueryModel);
+      AlipayIserviceCcmSwTreecategoryBatchqueryResponseModel result = apiInstance.batchquery(ccsInstanceId, libraryId, name, pageNum, pageSize);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayIserviceCcmSwTreecategoryApi#batchquery");
@@ -60,7 +64,11 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **alipayIserviceCcmSwTreecategoryBatchqueryModel** | **AlipayIserviceCcmSwTreecategoryBatchqueryModel**|  | [optional] |
+| **ccsInstanceId** | **String**| 子部门ID，不传为默认部门 | [optional] |
+| **libraryId** | **Integer**| 知识库ID | [optional] |
+| **name** | **String**| 节点名称 | [optional] |
+| **pageNum** | **Integer**| 页数，page_size不能为空 | [optional] |
+| **pageSize** | **Integer**| 页显示大小，page_num不能为空 | [optional] |
 
 ### Return type
 
@@ -72,7 +80,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details
@@ -154,7 +162,7 @@ No authorization required
 
 <a name="delete"></a>
 # **delete**
-> Object delete(alipayIserviceCcmSwTreecategoryDeleteModel)
+> Object delete()
 
 知识库-节点-删除
 
@@ -183,9 +191,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayIserviceCcmSwTreecategoryApi apiInstance = new AlipayIserviceCcmSwTreecategoryApi(defaultClient);
-    AlipayIserviceCcmSwTreecategoryDeleteModel alipayIserviceCcmSwTreecategoryDeleteModel = new AlipayIserviceCcmSwTreecategoryDeleteModel(); // AlipayIserviceCcmSwTreecategoryDeleteModel | 
     try {
-      Object result = apiInstance.delete(alipayIserviceCcmSwTreecategoryDeleteModel);
+      Object result = apiInstance.delete();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayIserviceCcmSwTreecategoryApi#delete");
@@ -199,10 +206,7 @@ public class Example {
 ```
 
 ### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **alipayIserviceCcmSwTreecategoryDeleteModel** | **AlipayIserviceCcmSwTreecategoryDeleteModel**|  | [optional] |
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -214,7 +218,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="upload"></a>
 # **upload**
-> AlipayMerchantImageUploadResponseModel upload()
+> AlipayMerchantImageUploadResponseModel upload(data, imageContent)
 
 商户上传处理图片
 
@@ -38,8 +38,10 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayMerchantImageApi apiInstance = new AlipayMerchantImageApi(defaultClient);
+    AlipayMerchantImageUploadModel data = new AlipayMerchantImageUploadModel(); // AlipayMerchantImageUploadModel | 
+    File imageContent = new File("/path/to/file"); // File | 
     try {
-      AlipayMerchantImageUploadResponseModel result = apiInstance.upload();
+      AlipayMerchantImageUploadResponseModel result = apiInstance.upload(data, imageContent);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayMerchantImageApi#upload");
@@ -53,7 +55,11 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **data** | **AlipayMerchantImageUploadModel**|  | [optional] |
+| **imageContent** | **File**|  | [optional] |
 
 ### Return type
 
@@ -65,7 +71,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: multipart/form-data
  - **Accept**: application/json
 
 ### HTTP response details

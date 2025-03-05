@@ -11,7 +11,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="cancel"></a>
 # **cancel**
-> Object cancel()
+> Object cancel(alipayOpenMiniExperienceCancelModel)
 
 小程序取消体验版
 
@@ -40,8 +40,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenMiniExperienceApi apiInstance = new AlipayOpenMiniExperienceApi(defaultClient);
+    AlipayOpenMiniExperienceCancelModel alipayOpenMiniExperienceCancelModel = new AlipayOpenMiniExperienceCancelModel(); // AlipayOpenMiniExperienceCancelModel | 
     try {
-      Object result = apiInstance.cancel();
+      Object result = apiInstance.cancel(alipayOpenMiniExperienceCancelModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenMiniExperienceApi#cancel");
@@ -55,7 +56,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayOpenMiniExperienceCancelModel** | **AlipayOpenMiniExperienceCancelModel**|  | [optional] |
 
 ### Return type
 
@@ -67,7 +71,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -78,7 +82,7 @@ No authorization required
 
 <a name="create"></a>
 # **create**
-> Object create()
+> Object create(alipayOpenMiniExperienceCreateModel)
 
 小程序生成体验版
 
@@ -107,8 +111,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenMiniExperienceApi apiInstance = new AlipayOpenMiniExperienceApi(defaultClient);
+    AlipayOpenMiniExperienceCreateModel alipayOpenMiniExperienceCreateModel = new AlipayOpenMiniExperienceCreateModel(); // AlipayOpenMiniExperienceCreateModel | 
     try {
-      Object result = apiInstance.create();
+      Object result = apiInstance.create(alipayOpenMiniExperienceCreateModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenMiniExperienceApi#create");
@@ -122,7 +127,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayOpenMiniExperienceCreateModel** | **AlipayOpenMiniExperienceCreateModel**|  | [optional] |
 
 ### Return type
 
@@ -134,7 +142,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -175,7 +183,7 @@ public class Example {
 
     AlipayOpenMiniExperienceApi apiInstance = new AlipayOpenMiniExperienceApi(defaultClient);
     String appVersion = "0.0.1"; // String | 商家小程序版本号。
-    String bundleId = "com.alipay.alipaywallet"; // String | 小程序客户端类型，默认为支付宝端。支持如下入参： com.alipay.alipaywallet：支付宝端； com.alibaba.android.rimet：DINGDING端； com.amap.app：高德端； com.alibaba.ailabs.genie.webapps：天猫精灵端； com.alipay.iot.xpaas：支付宝IoT端。
+    String bundleId = "com.alipay.alipaywallet"; // String | 小程序客户端类型，默认为支付宝端。常见支持如下客户端： com.alipay.alipaywallet：支付宝端； com.alibaba.android.rimet：DINGDING端； com.amap.app：高德端； com.alibaba.ailabs.genie.webapps：天猫精灵端； com.alipay.iot.xpaas：支付宝IoT端。 如需更多端投放，请联系业务BD。
     try {
       AlipayOpenMiniExperienceQueryResponseModel result = apiInstance.query(appVersion, bundleId);
       System.out.println(result);
@@ -195,7 +203,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **appVersion** | **String**| 商家小程序版本号。 | [optional] |
-| **bundleId** | **String**| 小程序客户端类型，默认为支付宝端。支持如下入参： com.alipay.alipaywallet：支付宝端； com.alibaba.android.rimet：DINGDING端； com.amap.app：高德端； com.alibaba.ailabs.genie.webapps：天猫精灵端； com.alipay.iot.xpaas：支付宝IoT端。 | [optional] |
+| **bundleId** | **String**| 小程序客户端类型，默认为支付宝端。常见支持如下客户端： com.alipay.alipaywallet：支付宝端； com.alibaba.android.rimet：DINGDING端； com.amap.app：高德端； com.alibaba.ailabs.genie.webapps：天猫精灵端； com.alipay.iot.xpaas：支付宝IoT端。 如需更多端投放，请联系业务BD。 | [optional] |
 
 ### Return type
 

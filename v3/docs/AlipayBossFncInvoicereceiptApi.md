@@ -10,7 +10,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="batchquery"></a>
 # **batchquery**
-> AlipayBossFncInvoicereceiptBatchqueryResponseModel batchquery()
+> AlipayBossFncInvoicereceiptBatchqueryResponseModel batchquery(alipayBossFncInvoicereceiptBatchqueryModel)
 
 根据月账单号集合和来源查询开票单据及金额汇总
 
@@ -39,8 +39,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayBossFncInvoicereceiptApi apiInstance = new AlipayBossFncInvoicereceiptApi(defaultClient);
+    AlipayBossFncInvoicereceiptBatchqueryModel alipayBossFncInvoicereceiptBatchqueryModel = new AlipayBossFncInvoicereceiptBatchqueryModel(); // AlipayBossFncInvoicereceiptBatchqueryModel | 
     try {
-      AlipayBossFncInvoicereceiptBatchqueryResponseModel result = apiInstance.batchquery();
+      AlipayBossFncInvoicereceiptBatchqueryResponseModel result = apiInstance.batchquery(alipayBossFncInvoicereceiptBatchqueryModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayBossFncInvoicereceiptApi#batchquery");
@@ -54,7 +55,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayBossFncInvoicereceiptBatchqueryModel** | **AlipayBossFncInvoicereceiptBatchqueryModel**|  | [optional] |
 
 ### Return type
 
@@ -66,7 +70,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -77,7 +81,7 @@ No authorization required
 
 <a name="create"></a>
 # **create**
-> Object create()
+> Object create(alipayBossFncInvoicereceiptCreateModel)
 
 账单变更同步接口月帐单创建消息同步
 
@@ -106,8 +110,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayBossFncInvoicereceiptApi apiInstance = new AlipayBossFncInvoicereceiptApi(defaultClient);
+    AlipayBossFncInvoicereceiptCreateModel alipayBossFncInvoicereceiptCreateModel = new AlipayBossFncInvoicereceiptCreateModel(); // AlipayBossFncInvoicereceiptCreateModel | 
     try {
-      Object result = apiInstance.create();
+      Object result = apiInstance.create(alipayBossFncInvoicereceiptCreateModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayBossFncInvoicereceiptApi#create");
@@ -121,7 +126,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayBossFncInvoicereceiptCreateModel** | **AlipayBossFncInvoicereceiptCreateModel**|  | [optional] |
 
 ### Return type
 
@@ -133,7 +141,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

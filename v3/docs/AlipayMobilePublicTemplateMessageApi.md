@@ -5,7 +5,7 @@ All URIs are relative to *https://openapi.alipay.com*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**delete**](AlipayMobilePublicTemplateMessageApi.md#delete) | **POST** /v3/alipay/mobile/public/template/message/delete | 模板消息删除接口 |
-| [**get**](AlipayMobilePublicTemplateMessageApi.md#get) | **POST** /v3/alipay/mobile/public/template/message/get | 模板消息领取接口 |
+| [**get**](AlipayMobilePublicTemplateMessageApi.md#get) | **GET** /v3/alipay/mobile/public/template/message/get | 模板消息领取接口 |
 | [**query**](AlipayMobilePublicTemplateMessageApi.md#query) | **POST** /v3/alipay/mobile/public/template/message/query | 模板消息查询接口 |
 
 
@@ -82,7 +82,7 @@ No authorization required
 
 <a name="get"></a>
 # **get**
-> AlipayMobilePublicTemplateMessageGetResponseModel get(alipayMobilePublicTemplateMessageGetModel)
+> AlipayMobilePublicTemplateMessageGetResponseModel get(templateId)
 
 模板消息领取接口
 
@@ -111,9 +111,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayMobilePublicTemplateMessageApi apiInstance = new AlipayMobilePublicTemplateMessageApi(defaultClient);
-    AlipayMobilePublicTemplateMessageGetModel alipayMobilePublicTemplateMessageGetModel = new AlipayMobilePublicTemplateMessageGetModel(); // AlipayMobilePublicTemplateMessageGetModel | 
+    String templateId = "TM000000223"; // String | 消息母板id
     try {
-      AlipayMobilePublicTemplateMessageGetResponseModel result = apiInstance.get(alipayMobilePublicTemplateMessageGetModel);
+      AlipayMobilePublicTemplateMessageGetResponseModel result = apiInstance.get(templateId);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayMobilePublicTemplateMessageApi#get");
@@ -130,7 +130,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **alipayMobilePublicTemplateMessageGetModel** | **AlipayMobilePublicTemplateMessageGetModel**|  | [optional] |
+| **templateId** | **String**| 消息母板id | [optional] |
 
 ### Return type
 
@@ -142,7 +142,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

@@ -6,7 +6,7 @@ All URIs are relative to *https://openapi.alipay.com*
 |------------- | ------------- | -------------|
 | [**batchquery**](AlipayOpenPublicLifeLabelApi.md#batchquery) | **POST** /v3/alipay/open/public/life/label/batchquery | 标签批量查询接口 |
 | [**create**](AlipayOpenPublicLifeLabelApi.md#create) | **POST** /v3/alipay/open/public/life/label/create | 创建标签接口 |
-| [**delete**](AlipayOpenPublicLifeLabelApi.md#delete) | **POST** /v3/alipay/open/public/life/label/delete | 标签删除接口 |
+| [**delete**](AlipayOpenPublicLifeLabelApi.md#delete) | **DELETE** /v3/alipay/open/public/life/label/delete | 标签删除接口 |
 | [**modify**](AlipayOpenPublicLifeLabelApi.md#modify) | **POST** /v3/alipay/open/public/life/label/modify | 标签修改接口 |
 
 
@@ -79,7 +79,7 @@ No authorization required
 
 <a name="create"></a>
 # **create**
-> AlipayOpenPublicLifeLabelCreateResponseModel create()
+> AlipayOpenPublicLifeLabelCreateResponseModel create(alipayOpenPublicLifeLabelCreateModel)
 
 创建标签接口
 
@@ -108,8 +108,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenPublicLifeLabelApi apiInstance = new AlipayOpenPublicLifeLabelApi(defaultClient);
+    AlipayOpenPublicLifeLabelCreateModel alipayOpenPublicLifeLabelCreateModel = new AlipayOpenPublicLifeLabelCreateModel(); // AlipayOpenPublicLifeLabelCreateModel | 
     try {
-      AlipayOpenPublicLifeLabelCreateResponseModel result = apiInstance.create();
+      AlipayOpenPublicLifeLabelCreateResponseModel result = apiInstance.create(alipayOpenPublicLifeLabelCreateModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenPublicLifeLabelApi#create");
@@ -123,7 +124,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayOpenPublicLifeLabelCreateModel** | **AlipayOpenPublicLifeLabelCreateModel**|  | [optional] |
 
 ### Return type
 
@@ -135,7 +139,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
@@ -146,7 +150,7 @@ No authorization required
 
 <a name="delete"></a>
 # **delete**
-> Object delete()
+> Object delete(labelId)
 
 标签删除接口
 
@@ -175,8 +179,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenPublicLifeLabelApi apiInstance = new AlipayOpenPublicLifeLabelApi(defaultClient);
+    String labelId = "10000"; // String | 标签 id，只支持生活号自定义标签。通过 <a href=\"https://opendocs.alipay.com/apis/api_6/alipay.open.public.life.label.create\">alipay.open.public.life.label.create</a>(创建标签接口)创建自定义标签后获取。
     try {
-      Object result = apiInstance.delete();
+      Object result = apiInstance.delete(labelId);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenPublicLifeLabelApi#delete");
@@ -190,7 +195,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **labelId** | **String**| 标签 id，只支持生活号自定义标签。通过 &lt;a href&#x3D;\&quot;https://opendocs.alipay.com/apis/api_6/alipay.open.public.life.label.create\&quot;&gt;alipay.open.public.life.label.create&lt;/a&gt;(创建标签接口)创建自定义标签后获取。 | [optional] |
 
 ### Return type
 
@@ -213,7 +221,7 @@ No authorization required
 
 <a name="modify"></a>
 # **modify**
-> Object modify()
+> Object modify(alipayOpenPublicLifeLabelModifyModel)
 
 标签修改接口
 
@@ -242,8 +250,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenPublicLifeLabelApi apiInstance = new AlipayOpenPublicLifeLabelApi(defaultClient);
+    AlipayOpenPublicLifeLabelModifyModel alipayOpenPublicLifeLabelModifyModel = new AlipayOpenPublicLifeLabelModifyModel(); // AlipayOpenPublicLifeLabelModifyModel | 
     try {
-      Object result = apiInstance.modify();
+      Object result = apiInstance.modify(alipayOpenPublicLifeLabelModifyModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenPublicLifeLabelApi#modify");
@@ -257,7 +266,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayOpenPublicLifeLabelModifyModel** | **AlipayOpenPublicLifeLabelModifyModel**|  | [optional] |
 
 ### Return type
 
@@ -269,7 +281,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

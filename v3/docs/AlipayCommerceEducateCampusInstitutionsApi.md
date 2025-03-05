@@ -5,7 +5,7 @@ All URIs are relative to *https://openapi.alipay.com*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**add**](AlipayCommerceEducateCampusInstitutionsApi.md#add) | **POST** /v3/alipay/commerce/educate/campus/institutions/add | 入驻学校信息 |
-| [**query**](AlipayCommerceEducateCampusInstitutionsApi.md#query) | **POST** /v3/alipay/commerce/educate/campus/institutions/query | 查询学校信息 |
+| [**query**](AlipayCommerceEducateCampusInstitutionsApi.md#query) | **GET** /v3/alipay/commerce/educate/campus/institutions/query | 查询学校信息 |
 
 
 <a name="add"></a>
@@ -81,7 +81,7 @@ No authorization required
 
 <a name="query"></a>
 # **query**
-> AlipayCommerceEducateCampusInstitutionsQueryResponseModel query(alipayCommerceEducateCampusInstitutionsQueryModel)
+> AlipayCommerceEducateCampusInstitutionsQueryResponseModel query(instName, provinceCode, cityCode, instId, instStdCode, likeProperty)
 
 查询学校信息
 
@@ -110,9 +110,14 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayCommerceEducateCampusInstitutionsApi apiInstance = new AlipayCommerceEducateCampusInstitutionsApi(defaultClient);
-    AlipayCommerceEducateCampusInstitutionsQueryModel alipayCommerceEducateCampusInstitutionsQueryModel = new AlipayCommerceEducateCampusInstitutionsQueryModel(); // AlipayCommerceEducateCampusInstitutionsQueryModel | 
+    String instName = "复旦大学"; // String | 学校名称
+    String provinceCode = "370000"; // String | 省份编码，编码标准为中华人民共和国行政区划代码，参见 2020年12月中华人民共和国县以上行政区划代码。
+    String cityCode = "370900"; // String | 城市编码，编码标准为中华人民共和国行政区划代码，参见 2020年12月中华人民共和国县以上行政区划代码。
+    String instId = "2088000139662311"; // String | 学校内标：支付宝内部学校唯一编号。使用内标查询时，默认使用内标进行精确匹配。
+    String instStdCode = "202008016104"; // String | 学校外标：统一社会信用编码或教育部提供的学校标识码。使用学校外标查询时，默认使用外标进行精确匹配。
+    String likeProperty = "1"; // String | 是否使用学校名称模糊匹配进行查询，默认精确匹配。 枚举值如下： 1：精确匹配； 0：模糊匹配
     try {
-      AlipayCommerceEducateCampusInstitutionsQueryResponseModel result = apiInstance.query(alipayCommerceEducateCampusInstitutionsQueryModel);
+      AlipayCommerceEducateCampusInstitutionsQueryResponseModel result = apiInstance.query(instName, provinceCode, cityCode, instId, instStdCode, likeProperty);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayCommerceEducateCampusInstitutionsApi#query");
@@ -129,7 +134,12 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **alipayCommerceEducateCampusInstitutionsQueryModel** | **AlipayCommerceEducateCampusInstitutionsQueryModel**|  | [optional] |
+| **instName** | **String**| 学校名称 | [optional] |
+| **provinceCode** | **String**| 省份编码，编码标准为中华人民共和国行政区划代码，参见 2020年12月中华人民共和国县以上行政区划代码。 | [optional] |
+| **cityCode** | **String**| 城市编码，编码标准为中华人民共和国行政区划代码，参见 2020年12月中华人民共和国县以上行政区划代码。 | [optional] |
+| **instId** | **String**| 学校内标：支付宝内部学校唯一编号。使用内标查询时，默认使用内标进行精确匹配。 | [optional] |
+| **instStdCode** | **String**| 学校外标：统一社会信用编码或教育部提供的学校标识码。使用学校外标查询时，默认使用外标进行精确匹配。 | [optional] |
+| **likeProperty** | **String**| 是否使用学校名称模糊匹配进行查询，默认精确匹配。 枚举值如下： 1：精确匹配； 0：模糊匹配 | [optional] |
 
 ### Return type
 
@@ -141,7 +151,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

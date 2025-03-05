@@ -4,12 +4,12 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**query**](AlipayCommerceCityfacilitatorStationApi.md#query) | **POST** /v3/alipay/commerce/cityfacilitator/station/query | 地铁购票站点数据查询 |
+| [**query**](AlipayCommerceCityfacilitatorStationApi.md#query) | **GET** /v3/alipay/commerce/cityfacilitator/station/query | 地铁购票站点数据查询 |
 
 
 <a name="query"></a>
 # **query**
-> AlipayCommerceCityfacilitatorStationQueryResponseModel query()
+> AlipayCommerceCityfacilitatorStationQueryResponseModel query(cityCode)
 
 地铁购票站点数据查询
 
@@ -38,8 +38,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayCommerceCityfacilitatorStationApi apiInstance = new AlipayCommerceCityfacilitatorStationApi(defaultClient);
+    String cityCode = "440300"; // String | 城市编码请参考查询 <a href=\"http://www.mca.gov.cn/article/sj/xzqh/\">中华人民共和国行政区划代码</a>。 已支持城市：广州 440100，深圳 440300，杭州330100。
     try {
-      AlipayCommerceCityfacilitatorStationQueryResponseModel result = apiInstance.query();
+      AlipayCommerceCityfacilitatorStationQueryResponseModel result = apiInstance.query(cityCode);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayCommerceCityfacilitatorStationApi#query");
@@ -53,7 +54,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **cityCode** | **String**| 城市编码请参考查询 &lt;a href&#x3D;\&quot;http://www.mca.gov.cn/article/sj/xzqh/\&quot;&gt;中华人民共和国行政区划代码&lt;/a&gt;。 已支持城市：广州 440100，深圳 440300，杭州330100。 | [optional] |
 
 ### Return type
 

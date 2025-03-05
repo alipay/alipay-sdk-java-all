@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="approve"></a>
 # **approve**
-> AlipayOpenSpMerchantInconsistentApproveResponseModel approve()
+> AlipayOpenSpMerchantInconsistentApproveResponseModel approve(alipayOpenSpMerchantInconsistentApproveModel)
 
 非同人商家进件资料审批
 
@@ -38,8 +38,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenSpMerchantInconsistentApi apiInstance = new AlipayOpenSpMerchantInconsistentApi(defaultClient);
+    AlipayOpenSpMerchantInconsistentApproveModel alipayOpenSpMerchantInconsistentApproveModel = new AlipayOpenSpMerchantInconsistentApproveModel(); // AlipayOpenSpMerchantInconsistentApproveModel | 
     try {
-      AlipayOpenSpMerchantInconsistentApproveResponseModel result = apiInstance.approve();
+      AlipayOpenSpMerchantInconsistentApproveResponseModel result = apiInstance.approve(alipayOpenSpMerchantInconsistentApproveModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenSpMerchantInconsistentApi#approve");
@@ -53,7 +54,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayOpenSpMerchantInconsistentApproveModel** | **AlipayOpenSpMerchantInconsistentApproveModel**|  | [optional] |
 
 ### Return type
 
@@ -65,7 +69,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

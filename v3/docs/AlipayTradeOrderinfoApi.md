@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="sync"></a>
 # **sync**
-> AlipayTradeOrderinfoSyncResponseModel sync()
+> AlipayTradeOrderinfoSyncResponseModel sync(alipayTradeOrderinfoSyncModel)
 
 支付宝订单信息同步接口
 
@@ -38,8 +38,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayTradeOrderinfoApi apiInstance = new AlipayTradeOrderinfoApi(defaultClient);
+    AlipayTradeOrderinfoSyncModel alipayTradeOrderinfoSyncModel = new AlipayTradeOrderinfoSyncModel(); // AlipayTradeOrderinfoSyncModel | 
     try {
-      AlipayTradeOrderinfoSyncResponseModel result = apiInstance.sync();
+      AlipayTradeOrderinfoSyncResponseModel result = apiInstance.sync(alipayTradeOrderinfoSyncModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayTradeOrderinfoApi#sync");
@@ -53,7 +54,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayTradeOrderinfoSyncModel** | **AlipayTradeOrderinfoSyncModel**|  | [optional] |
 
 ### Return type
 
@@ -65,7 +69,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

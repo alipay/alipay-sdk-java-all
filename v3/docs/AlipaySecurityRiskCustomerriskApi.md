@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="send"></a>
 # **send**
-> Object send()
+> Object send(alipaySecurityRiskCustomerriskSendModel)
 
 商户数据同步
 
@@ -38,8 +38,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipaySecurityRiskCustomerriskApi apiInstance = new AlipaySecurityRiskCustomerriskApi(defaultClient);
+    AlipaySecurityRiskCustomerriskSendModel alipaySecurityRiskCustomerriskSendModel = new AlipaySecurityRiskCustomerriskSendModel(); // AlipaySecurityRiskCustomerriskSendModel | 
     try {
-      Object result = apiInstance.send();
+      Object result = apiInstance.send(alipaySecurityRiskCustomerriskSendModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipaySecurityRiskCustomerriskApi#send");
@@ -53,7 +54,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipaySecurityRiskCustomerriskSendModel** | **AlipaySecurityRiskCustomerriskSendModel**|  | [optional] |
 
 ### Return type
 
@@ -65,7 +69,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

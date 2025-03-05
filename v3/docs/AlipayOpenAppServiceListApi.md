@@ -4,12 +4,12 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**query**](AlipayOpenAppServiceListApi.md#query) | **POST** /v3/alipay/open/app/service/list/query | 服务批量查询 |
+| [**query**](AlipayOpenAppServiceListApi.md#query) | **GET** /v3/alipay/open/app/service/list/query | 服务批量查询 |
 
 
 <a name="query"></a>
 # **query**
-> AlipayOpenAppServiceListQueryResponseModel query(alipayOpenAppServiceListQueryModel)
+> AlipayOpenAppServiceListQueryResponseModel query(serviceName, categoryId, pageSize, pageNum)
 
 服务批量查询
 
@@ -38,9 +38,12 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenAppServiceListApi apiInstance = new AlipayOpenAppServiceListApi(defaultClient);
-    AlipayOpenAppServiceListQueryModel alipayOpenAppServiceListQueryModel = new AlipayOpenAppServiceListQueryModel(); // AlipayOpenAppServiceListQueryModel | 
+    String serviceName = "肯德基"; // String | 服务名称
+    String categoryId = "C15484611"; // String | 类目
+    Integer pageSize = 10; // Integer | 每页记录数
+    Integer pageNum = 1; // Integer | 页码
     try {
-      AlipayOpenAppServiceListQueryResponseModel result = apiInstance.query(alipayOpenAppServiceListQueryModel);
+      AlipayOpenAppServiceListQueryResponseModel result = apiInstance.query(serviceName, categoryId, pageSize, pageNum);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenAppServiceListApi#query");
@@ -57,7 +60,10 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **alipayOpenAppServiceListQueryModel** | **AlipayOpenAppServiceListQueryModel**|  | [optional] |
+| **serviceName** | **String**| 服务名称 | [optional] |
+| **categoryId** | **String**| 类目 | [optional] |
+| **pageSize** | **Integer**| 每页记录数 | [optional] |
+| **pageNum** | **Integer**| 页码 | [optional] |
 
 ### Return type
 
@@ -69,7 +75,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

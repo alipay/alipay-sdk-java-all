@@ -13,7 +13,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 小程序名称检测
 
-小程序名称检测
+小程序名称检测。包含小程序名称基础校验、名称重复、存在敏感信息、存在品牌词、名称宽泛等检测能力。若返回“check_code”：“NONE”，说明小程序名称未检测出异常。
 
 ### Example
 ```java
@@ -38,7 +38,7 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenMiniBaseinfoNameApi apiInstance = new AlipayOpenMiniBaseinfoNameApi(defaultClient);
-    String appName = "吱声小铺"; // String | 小程序名称
+    String appName = "吱声小铺"; // String | 小程序名字，长度限制 3~30 个字符，仅支持包含简体中文、数字、英文、下划线、+、-。
     try {
       AlipayOpenMiniBaseinfoNameCheckResponseModel result = apiInstance.check(appName);
       System.out.println(result);
@@ -57,7 +57,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **appName** | **String**| 小程序名称 | [optional] |
+| **appName** | **String**| 小程序名字，长度限制 3~30 个字符，仅支持包含简体中文、数字、英文、下划线、+、-。 | [optional] |
 
 ### Return type
 

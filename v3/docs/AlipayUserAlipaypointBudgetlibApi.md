@@ -4,12 +4,12 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**query**](AlipayUserAlipaypointBudgetlibApi.md#query) | **POST** /v3/alipay/user/alipaypoint/budgetlib/query | 查询集分宝预算库详情 |
+| [**query**](AlipayUserAlipaypointBudgetlibApi.md#query) | **GET** /v3/alipay/user/alipaypoint/budgetlib/query | 查询集分宝预算库详情 |
 
 
 <a name="query"></a>
 # **query**
-> AlipayUserAlipaypointBudgetlibQueryResponseModel query(alipayUserAlipaypointBudgetlibQueryModel)
+> AlipayUserAlipaypointBudgetlibQueryResponseModel query(budgetCode)
 
 查询集分宝预算库详情
 
@@ -38,9 +38,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayUserAlipaypointBudgetlibApi apiInstance = new AlipayUserAlipaypointBudgetlibApi(defaultClient);
-    AlipayUserAlipaypointBudgetlibQueryModel alipayUserAlipaypointBudgetlibQueryModel = new AlipayUserAlipaypointBudgetlibQueryModel(); // AlipayUserAlipaypointBudgetlibQueryModel | 
+    String budgetCode = "20201107050844"; // String | 集分宝预算库编码
     try {
-      AlipayUserAlipaypointBudgetlibQueryResponseModel result = apiInstance.query(alipayUserAlipaypointBudgetlibQueryModel);
+      AlipayUserAlipaypointBudgetlibQueryResponseModel result = apiInstance.query(budgetCode);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayUserAlipaypointBudgetlibApi#query");
@@ -57,7 +57,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **alipayUserAlipaypointBudgetlibQueryModel** | **AlipayUserAlipaypointBudgetlibQueryModel**|  | [optional] |
+| **budgetCode** | **String**| 集分宝预算库编码 | [optional] |
 
 ### Return type
 
@@ -69,7 +69,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

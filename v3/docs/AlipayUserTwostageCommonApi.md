@@ -4,12 +4,12 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**use**](AlipayUserTwostageCommonApi.md#use) | **GET** /v3/alipay/user/twostage/common/use | 通用当面付二阶段接口 |
+| [**use**](AlipayUserTwostageCommonApi.md#use) | **POST** /v3/alipay/user/twostage/common/use | 通用当面付二阶段接口 |
 
 
 <a name="use"></a>
 # **use**
-> AlipayUserTwostageCommonUseResponseModel use()
+> AlipayUserTwostageCommonUseResponseModel use(alipayUserTwostageCommonUseModel)
 
 通用当面付二阶段接口
 
@@ -38,8 +38,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayUserTwostageCommonApi apiInstance = new AlipayUserTwostageCommonApi(defaultClient);
+    AlipayUserTwostageCommonUseModel alipayUserTwostageCommonUseModel = new AlipayUserTwostageCommonUseModel(); // AlipayUserTwostageCommonUseModel | 
     try {
-      AlipayUserTwostageCommonUseResponseModel result = apiInstance.use();
+      AlipayUserTwostageCommonUseResponseModel result = apiInstance.use(alipayUserTwostageCommonUseModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayUserTwostageCommonApi#use");
@@ -53,7 +54,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **alipayUserTwostageCommonUseModel** | **AlipayUserTwostageCommonUseModel**|  | [optional] |
 
 ### Return type
 
@@ -65,7 +69,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

@@ -5,7 +5,7 @@ All URIs are relative to *https://openapi.alipay.com*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**query**](ZhimaCreditPayafteruseCreditagreementApi.md#query) | **GET** /v3/zhima/credit/payafteruse/creditagreement/query | 查询服务开通/授权信息 |
-| [**transfer**](ZhimaCreditPayafteruseCreditagreementApi.md#transfer) | **POST** /v3/zhima/credit/payafteruse/creditagreement/transfer | 转换为芝麻先享 |
+| [**transfer**](ZhimaCreditPayafteruseCreditagreementApi.md#transfer) | **POST** /v3/zhima/credit/payafteruse/creditagreement/transfer | 芝麻信用服务授权 |
 
 
 <a name="query"></a>
@@ -85,9 +85,9 @@ No authorization required
 # **transfer**
 > ZhimaCreditPayafteruseCreditagreementTransferResponseModel transfer(zhimaCreditPayafteruseCreditagreementTransferModel)
 
-转换为芝麻先享
+芝麻信用服务授权
 
-其他产品功能（例如信用代扣），通过该接口，可以转换为芝麻先享
+其他产品功能（例如信用代扣），通过该接口，可以转换为芝麻产品（芝麻先享产品，芝麻风险评估产品），完成信用服务授权
 
 ### Example
 ```java

@@ -4,13 +4,13 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**delete**](AlipayOpenMiniInnerversionInfoApi.md#delete) | **POST** /v3/alipay/open/mini/innerversion/info/delete | 内部链路删除版本 |
+| [**delete**](AlipayOpenMiniInnerversionInfoApi.md#delete) | **DELETE** /v3/alipay/open/mini/innerversion/info/delete | 内部链路删除版本 |
 | [**query**](AlipayOpenMiniInnerversionInfoApi.md#query) | **GET** /v3/alipay/open/mini/innerversion/info/query | 内部链路小程序版本信息查询 |
 
 
 <a name="delete"></a>
 # **delete**
-> Object delete(alipayOpenMiniInnerversionInfoDeleteModel)
+> Object delete(miniAppId, appOrigin, bundleId, appVersion, pid, instCode)
 
 内部链路删除版本
 
@@ -39,9 +39,14 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenMiniInnerversionInfoApi apiInstance = new AlipayOpenMiniInnerversionInfoApi(defaultClient);
-    AlipayOpenMiniInnerversionInfoDeleteModel alipayOpenMiniInnerversionInfoDeleteModel = new AlipayOpenMiniInnerversionInfoDeleteModel(); // AlipayOpenMiniInnerversionInfoDeleteModel | 
+    String miniAppId = "2018********"; // String | 小程序ID
+    String appOrigin = "ASTORE"; // String | 业务场景来源
+    String bundleId = "com.alipay.alipaywallet"; // String | 端信息
+    String appVersion = "0.0.1"; // String | 小程序版本号
+    String pid = "2088*******"; // String | 操作者ID，支付宝租户必填
+    String instCode = "alipay"; // String | 租户信息
     try {
-      Object result = apiInstance.delete(alipayOpenMiniInnerversionInfoDeleteModel);
+      Object result = apiInstance.delete(miniAppId, appOrigin, bundleId, appVersion, pid, instCode);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenMiniInnerversionInfoApi#delete");
@@ -58,7 +63,12 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **alipayOpenMiniInnerversionInfoDeleteModel** | **AlipayOpenMiniInnerversionInfoDeleteModel**|  | [optional] |
+| **miniAppId** | **String**| 小程序ID | [optional] |
+| **appOrigin** | **String**| 业务场景来源 | [optional] |
+| **bundleId** | **String**| 端信息 | [optional] |
+| **appVersion** | **String**| 小程序版本号 | [optional] |
+| **pid** | **String**| 操作者ID，支付宝租户必填 | [optional] |
+| **instCode** | **String**| 租户信息 | [optional] |
 
 ### Return type
 
@@ -70,7 +80,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details

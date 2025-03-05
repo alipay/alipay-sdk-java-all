@@ -5,7 +5,7 @@ All URIs are relative to *https://openapi.alipay.com*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**declare**](AlipayTradeCustomsApi.md#declare) | **POST** /v3/alipay/trade/customs/declare | 统一收单报关接口 |
-| [**query**](AlipayTradeCustomsApi.md#query) | **POST** /v3/alipay/trade/customs/query | 查询报关详细信息 |
+| [**query**](AlipayTradeCustomsApi.md#query) | **GET** /v3/alipay/trade/customs/query | 查询报关详细信息 |
 
 
 <a name="declare"></a>
@@ -81,7 +81,7 @@ No authorization required
 
 <a name="query"></a>
 # **query**
-> AlipayTradeCustomsQueryResponseModel query()
+> AlipayTradeCustomsQueryResponseModel query(outRequestNos)
 
 查询报关详细信息
 
@@ -110,8 +110,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayTradeCustomsApi apiInstance = new AlipayTradeCustomsApi(defaultClient);
+    String outRequestNos = "201506010001,201506010002,201506010003"; // String | 报关请求号。需要查询的商户端报关请求号，支持批量查询，  多个值用英文半角逗号分隔，单次请求最多10个;
     try {
-      AlipayTradeCustomsQueryResponseModel result = apiInstance.query();
+      AlipayTradeCustomsQueryResponseModel result = apiInstance.query(outRequestNos);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayTradeCustomsApi#query");
@@ -125,7 +126,10 @@ public class Example {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **outRequestNos** | **String**| 报关请求号。需要查询的商户端报关请求号，支持批量查询，  多个值用英文半角逗号分隔，单次请求最多10个; | [optional] |
 
 ### Return type
 

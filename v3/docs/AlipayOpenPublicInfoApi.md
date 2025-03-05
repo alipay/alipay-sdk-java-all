@@ -5,12 +5,12 @@ All URIs are relative to *https://openapi.alipay.com*
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**modify**](AlipayOpenPublicInfoApi.md#modify) | **POST** /v3/alipay/open/public/info/modify | 生活号基础信息修改接口 |
-| [**query**](AlipayOpenPublicInfoApi.md#query) | **POST** /v3/alipay/open/public/info/query | 生活号基础信息查询接口 |
+| [**query**](AlipayOpenPublicInfoApi.md#query) | **GET** /v3/alipay/open/public/info/query | 生活号基础信息查询接口 |
 
 
 <a name="modify"></a>
 # **modify**
-> AlipayOpenPublicInfoModifyResponseModel modify(commonNotifyUrlModel)
+> AlipayOpenPublicInfoModifyResponseModel modify(alipayOpenPublicInfoModifyModel)
 
 生活号基础信息修改接口
 
@@ -39,9 +39,9 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOpenPublicInfoApi apiInstance = new AlipayOpenPublicInfoApi(defaultClient);
-    CommonNotifyUrlModel commonNotifyUrlModel = new CommonNotifyUrlModel(); // CommonNotifyUrlModel | 
+    AlipayOpenPublicInfoModifyModel alipayOpenPublicInfoModifyModel = new AlipayOpenPublicInfoModifyModel(); // AlipayOpenPublicInfoModifyModel | 
     try {
-      AlipayOpenPublicInfoModifyResponseModel result = apiInstance.modify(commonNotifyUrlModel);
+      AlipayOpenPublicInfoModifyResponseModel result = apiInstance.modify(alipayOpenPublicInfoModifyModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenPublicInfoApi#modify");
@@ -58,7 +58,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **commonNotifyUrlModel** | **CommonNotifyUrlModel**|  | [optional] |
+| **alipayOpenPublicInfoModifyModel** | **AlipayOpenPublicInfoModifyModel**|  | [optional] |
 
 ### Return type
 

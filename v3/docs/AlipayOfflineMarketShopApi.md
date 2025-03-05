@@ -7,7 +7,7 @@ All URIs are relative to *https://openapi.alipay.com*
 | [**batchquery**](AlipayOfflineMarketShopApi.md#batchquery) | **POST** /v3/alipay/offline/market/shop/batchquery | 查询商户的门店编号列表 |
 | [**create**](AlipayOfflineMarketShopApi.md#create) | **POST** /v3/alipay/offline/market/shop/create | 创建门店信息 |
 | [**modify**](AlipayOfflineMarketShopApi.md#modify) | **POST** /v3/alipay/offline/market/shop/modify | 修改门店信息 |
-| [**querydetail**](AlipayOfflineMarketShopApi.md#querydetail) | **POST** /v3/alipay/offline/market/shop/querydetail | 查询单个门店信息接口 |
+| [**querydetail**](AlipayOfflineMarketShopApi.md#querydetail) | **GET** /v3/alipay/offline/market/shop/querydetail | 查询单个门店信息接口 |
 
 
 <a name="batchquery"></a>
@@ -225,7 +225,7 @@ No authorization required
 
 <a name="querydetail"></a>
 # **querydetail**
-> AlipayOfflineMarketShopQuerydetailResponseModel querydetail(alipayOfflineMarketShopQuerydetailModel)
+> AlipayOfflineMarketShopQuerydetailResponseModel querydetail(shopId, opRole)
 
 查询单个门店信息接口
 
@@ -254,9 +254,10 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayOfflineMarketShopApi apiInstance = new AlipayOfflineMarketShopApi(defaultClient);
-    AlipayOfflineMarketShopQuerydetailModel alipayOfflineMarketShopQuerydetailModel = new AlipayOfflineMarketShopQuerydetailModel(); // AlipayOfflineMarketShopQuerydetailModel | 
+    String shopId = "2015052100077000000000120773"; // String | 支付宝门店ID
+    String opRole = "MERCHANT或PROVIDER"; // String | 服务商及商户调用情况下务必传递。操作人角色，默认商户操作:MERCHANT；服务商操作：PROVIDER；ISV: 不需要填写
     try {
-      AlipayOfflineMarketShopQuerydetailResponseModel result = apiInstance.querydetail(alipayOfflineMarketShopQuerydetailModel);
+      AlipayOfflineMarketShopQuerydetailResponseModel result = apiInstance.querydetail(shopId, opRole);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOfflineMarketShopApi#querydetail");
@@ -273,7 +274,8 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **alipayOfflineMarketShopQuerydetailModel** | **AlipayOfflineMarketShopQuerydetailModel**|  | [optional] |
+| **shopId** | **String**| 支付宝门店ID | [optional] |
+| **opRole** | **String**| 服务商及商户调用情况下务必传递。操作人角色，默认商户操作:MERCHANT；服务商操作：PROVIDER；ISV: 不需要填写 | [optional] |
 
 ### Return type
 
@@ -285,7 +287,7 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 ### HTTP response details
