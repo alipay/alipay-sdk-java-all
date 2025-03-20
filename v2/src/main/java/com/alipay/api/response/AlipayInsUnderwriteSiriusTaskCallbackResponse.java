@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.underwrite.sirius.task.callback response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:25:20
+ * @since 1.0, 2025-03-11 10:33:37
  */
 public class AlipayInsUnderwriteSiriusTaskCallbackResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3546168519998791732L;
+	private static final long serialVersionUID = 8839557485699893139L;
 
 	/** 
 	 * 天狼星业务id，通常是天狼星任务主键id

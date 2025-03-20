@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 最新抽佣信息
  *
  * @author auto create
- * @since 1.0, 2025-01-07 13:42:22
+ * @since 1.0, 2025-03-19 14:12:28
  */
 public class LatestCommissionInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8856648252641435643L;
+	private static final long serialVersionUID = 3153912921243216286L;
 
 	/**
 	 * 最新比例，单位为百分比

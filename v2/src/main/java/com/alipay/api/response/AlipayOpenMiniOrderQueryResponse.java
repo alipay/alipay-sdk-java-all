@@ -8,6 +8,7 @@ import com.alipay.api.domain.AddressInfoVO;
 import com.alipay.api.domain.BookingInfoDTO;
 import com.alipay.api.domain.ContactInfoVO;
 import com.alipay.api.domain.DeliveryDetailInfoVO;
+import com.alipay.api.domain.LandingChannelInfoVO;
 import com.alipay.api.domain.OrderDetailInfoVO;
 import com.alipay.api.domain.RefundInfoVO;
 import com.alipay.api.domain.RentInfoVO;
@@ -21,11 +22,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-02-19 17:32:23
+ * @since 1.0, 2025-03-14 08:57:24
  */
 public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7461148934464423943L;
+	private static final long serialVersionUID = 1471816141589814794L;
 
 	/** 
 	 * 订单受理信息，租赁类型订单且通过快捷下单场景特有
@@ -68,6 +69,12 @@ public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("delivery_detail")
 	private DeliveryDetailInfoVO deliveryDetail;
+
+	/** 
+	 * 订单来源渠道信息
+	 */
+	@ApiField("landing_channel_info")
+	private LandingChannelInfoVO landingChannelInfo;
 
 	/** 
 	 * 订单类型
@@ -213,6 +220,13 @@ public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 	}
 	public DeliveryDetailInfoVO getDeliveryDetail( ) {
 		return this.deliveryDetail;
+	}
+
+	public void setLandingChannelInfo(LandingChannelInfoVO landingChannelInfo) {
+		this.landingChannelInfo = landingChannelInfo;
+	}
+	public LandingChannelInfoVO getLandingChannelInfo( ) {
+		return this.landingChannelInfo;
 	}
 
 	public void setMerchantBizType(String merchantBizType) {

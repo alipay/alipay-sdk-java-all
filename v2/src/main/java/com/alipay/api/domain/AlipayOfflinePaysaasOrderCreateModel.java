@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部远程订单创建
  *
  * @author auto create
- * @since 1.0, 2025-02-25 19:53:32
+ * @since 1.0, 2025-03-11 17:47:54
  */
 public class AlipayOfflinePaysaasOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5367352977569351874L;
+	private static final long serialVersionUID = 3396196323363974618L;
 
 	/**
 	 * 收款订单投送N手持设备ID

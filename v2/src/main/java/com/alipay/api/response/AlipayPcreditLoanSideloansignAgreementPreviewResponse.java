@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.sideloansign.agreement.preview response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-02 17:42:39
+ * @since 1.0, 2025-03-19 17:02:26
  */
 public class AlipayPcreditLoanSideloansignAgreementPreviewResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4728488174789462269L;
+	private static final long serialVersionUID = 2386598794461385435L;
 
 	/** 
 	 * 协议渲染返回对象列表

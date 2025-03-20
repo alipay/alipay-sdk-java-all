@@ -1,5 +1,6 @@
 package com.alipay.api.response;
 
+import java.util.Date;
 import com.alipay.api.internal.mapping.ApiField;
 
 import com.alipay.api.AlipayResponse;
@@ -8,14 +9,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.paysaas.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-02-26 11:02:27
+ * @since 1.0, 2025-03-11 17:48:42
  */
 public class AlipayOfflinePaysaasOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2288964626593943895L;
+	private static final long serialVersionUID = 1146523346482465615L;
 
 	/** 
-	 * 给外部订单生成的唯一单号
+	 * 推单业务的唯一单号
 	 */
 	@ApiField("isv_order_no")
 	private String isvOrderNo;
@@ -25,6 +26,12 @@ public class AlipayOfflinePaysaasOrderQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("order_status")
 	private String orderStatus;
+
+	/** 
+	 * 推单对应的支付时间
+	 */
+	@ApiField("pay_time")
+	private Date payTime;
 
 	public void setIsvOrderNo(String isvOrderNo) {
 		this.isvOrderNo = isvOrderNo;
@@ -38,6 +45,13 @@ public class AlipayOfflinePaysaasOrderQueryResponse extends AlipayResponse {
 	}
 	public String getOrderStatus( ) {
 		return this.orderStatus;
+	}
+
+	public void setPayTime(Date payTime) {
+		this.payTime = payTime;
+	}
+	public Date getPayTime( ) {
+		return this.payTime;
 	}
 
 }

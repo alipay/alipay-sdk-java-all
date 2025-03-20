@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗行业商业化核销接口
  *
  * @author auto create
- * @since 1.0, 2025-02-19 16:51:55
+ * @since 1.0, 2025-03-19 10:52:53
  */
 public class AlipayCommerceMedicalCommercialPerformanceVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5537122538531472558L;
+	private static final long serialVersionUID = 1386773121162617636L;
 
 	/**
 	 * 商品订单id，支付宝侧用户对商户某一商品的唯一订单子单id。该订单记录了用户的核销次数与总次数，以及订单状态
@@ -68,6 +68,12 @@ public class AlipayCommerceMedicalCommercialPerformanceVerifyModel extends Alipa
 	 */
 	@ApiField("out_product_id")
 	private String outProductId;
+
+	/**
+	 * 用于商户核销时，需要携带特殊业务参数场景
+	 */
+	@ApiField("special_biz_info")
+	private String specialBizInfo;
 
 	/**
 	 * status核销或确认场景使用，枚举值为S\C\R\N，正常核销或确认商品时传S、核销权益次数完结传C、拒绝核销或确认传入N、逆向核销回补使用次数时传递R。
@@ -169,6 +175,13 @@ public class AlipayCommerceMedicalCommercialPerformanceVerifyModel extends Alipa
 	}
 	public void setOutProductId(String outProductId) {
 		this.outProductId = outProductId;
+	}
+
+	public String getSpecialBizInfo() {
+		return this.specialBizInfo;
+	}
+	public void setSpecialBizInfo(String specialBizInfo) {
+		this.specialBizInfo = specialBizInfo;
 	}
 
 	public String getStatus() {

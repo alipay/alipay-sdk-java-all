@@ -1,5 +1,6 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
 import java.util.List;
 
 import com.alipay.api.AlipayObject;
@@ -10,11 +11,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-02-12 10:17:22
+ * @since 1.0, 2025-03-19 14:12:26
  */
 public class RecycleSkuDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1368784416525453944L;
+	private static final long serialVersionUID = 1868533862655854591L;
+
+	/**
+	 * 当前sku的过期时间，如果为空时，不同的场景平台会有默认的过期时间
+	 */
+	@ApiField("expired_time")
+	private Date expiredTime;
 
 	/**
 	 * null
@@ -34,6 +41,13 @@ public class RecycleSkuDTO extends AlipayObject {
 	 */
 	@ApiField("status")
 	private String status;
+
+	public Date getExpiredTime() {
+		return this.expiredTime;
+	}
+	public void setExpiredTime(Date expiredTime) {
+		this.expiredTime = expiredTime;
+	}
 
 	public List<RecycleSkuAttrDTO> getSkuAttrs() {
 		return this.skuAttrs;

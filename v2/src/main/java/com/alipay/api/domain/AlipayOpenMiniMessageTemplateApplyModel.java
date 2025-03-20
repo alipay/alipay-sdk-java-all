@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 消息模板申领接口
  *
  * @author auto create
- * @since 1.0, 2024-01-25 21:08:30
+ * @since 1.0, 2025-03-06 11:45:50
  */
 public class AlipayOpenMiniMessageTemplateApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1682994815932975516L;
+	private static final long serialVersionUID = 3484451684982265591L;
 
 	/**
 	 * 消息关键词列表，需要传入2到5个关键词，关键词内容需要与对应母板关键词对应。注意需传入json数组格式，[{"name":"第一个关键词"},{"name":"第二个关键词"}]

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.recycle.marketprice.sync response.
  * 
  * @author auto create
- * @since 1.0, 2025-01-13 14:37:23
+ * @since 1.0, 2025-03-19 14:12:27
  */
 public class AlipayCommerceRecycleMarketpriceSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5478955424731324725L;
+	private static final long serialVersionUID = 6141514441633721983L;
 
 	
 

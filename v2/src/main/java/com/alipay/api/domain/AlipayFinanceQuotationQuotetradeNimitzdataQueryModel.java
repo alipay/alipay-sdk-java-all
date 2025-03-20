@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFinanceQuotationQuotetradeNimitzdataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3525691734972532962L;
+	private static final long serialVersionUID = 6516451614974727737L;
 
 	/**
 	 * 行情数据集请求

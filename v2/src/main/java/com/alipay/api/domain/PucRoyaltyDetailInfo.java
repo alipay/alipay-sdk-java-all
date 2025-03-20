@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 缴费分账模型
  *
  * @author auto create
- * @since 1.0, 2023-11-08 19:09:22
+ * @since 1.0, 2025-03-17 17:17:53
  */
 public class PucRoyaltyDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1234165341419341689L;
+	private static final long serialVersionUID = 1746865578597119443L;
 
 	/**
 	 * 分账金额，单位元

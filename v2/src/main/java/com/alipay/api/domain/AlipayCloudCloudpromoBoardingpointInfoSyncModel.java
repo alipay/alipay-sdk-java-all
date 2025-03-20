@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 同步上车点客流信息
  *
  * @author auto create
- * @since 1.0, 2025-02-28 18:46:44
+ * @since 1.0, 2025-03-07 19:54:54
  */
 public class AlipayCloudCloudpromoBoardingpointInfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3225876715564242936L;
+	private static final long serialVersionUID = 1536226789284835386L;
 
 	/**
 	 * 1号上车点
@@ -48,6 +48,12 @@ public class AlipayCloudCloudpromoBoardingpointInfoSyncModel extends AlipayObjec
 	 */
 	@ApiField("place_name")
 	private String placeName;
+
+	/**
+	 * 位置ID，用于区分不同poi点位的唯一值
+	 */
+	@ApiField("poi_id")
+	private String poiId;
 
 	/**
 	 * 出租车
@@ -107,6 +113,13 @@ public class AlipayCloudCloudpromoBoardingpointInfoSyncModel extends AlipayObjec
 	}
 	public void setPlaceName(String placeName) {
 		this.placeName = placeName;
+	}
+
+	public String getPoiId() {
+		return this.poiId;
+	}
+	public void setPoiId(String poiId) {
+		this.poiId = poiId;
 	}
 
 	public String getVehicleType() {

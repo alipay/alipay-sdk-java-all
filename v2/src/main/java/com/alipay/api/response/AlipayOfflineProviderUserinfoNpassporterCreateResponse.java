@@ -8,14 +8,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.provider.userinfo.npassporter.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-02-27 10:57:24
+ * @since 1.0, 2025-03-12 14:47:28
  */
 public class AlipayOfflineProviderUserinfoNpassporterCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7161396569363358931L;
+	private static final long serialVersionUID = 1819333322794834597L;
 
 	/** 
-	 * 用户VID，是传入身份信息之后，和身份证一一对应的ID，服务商需要保存下来，用于后续核身时关联系统内部身份信息。
+	 * 用户VID，是传入身份信息之后，和身份证一一对应的ID，服务商需要保存下来，用于后续核身时关联系统内部身份信息。多次入库返回的VID是相同的。
 	 */
 	@ApiField("vid")
 	private String vid;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 11123213
  *
  * @author auto create
- * @since 1.0, 2025-02-13 11:27:22
+ * @since 1.0, 2025-03-19 10:38:52
  */
 public class AlipayOpenCccDedeCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3633484561358633746L;
+	private static final long serialVersionUID = 1243594794487848667L;
 
 	/**
 	 * 测试

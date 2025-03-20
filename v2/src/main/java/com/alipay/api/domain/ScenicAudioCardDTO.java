@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 音频介绍卡片1
  *
  * @author auto create
- * @since 1.0, 2025-01-08 14:57:24
+ * @since 1.0, 2025-03-19 14:12:27
  */
 public class ScenicAudioCardDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4713717483443173751L;
+	private static final long serialVersionUID = 4896726984579634493L;
 
 	/**
 	 * 语音讲解url

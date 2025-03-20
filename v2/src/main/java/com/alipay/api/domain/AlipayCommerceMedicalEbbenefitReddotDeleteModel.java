@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 未读红点消除
  *
  * @author auto create
- * @since 1.0, 2025-01-08 15:28:36
+ * @since 1.0, 2025-03-13 16:46:57
  */
 public class AlipayCommerceMedicalEbbenefitReddotDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3679952679373411782L;
+	private static final long serialVersionUID = 1431712267679338573L;
 
 	/**
 	 * 会员id

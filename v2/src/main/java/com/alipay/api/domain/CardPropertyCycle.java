@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 卡属性周期计费信息
  *
  * @author auto create
- * @since 1.0, 2024-10-23 20:50:55
+ * @since 1.0, 2025-03-06 11:22:18
  */
 public class CardPropertyCycle extends AlipayObject {
 
-	private static final long serialVersionUID = 1312977467323822733L;
+	private static final long serialVersionUID = 4233836771873885296L;
 
 	/**
 	 * 指定周期付首期扣款的方式

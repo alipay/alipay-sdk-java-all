@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TabFilterTag extends AlipayObject {
 
-	private static final long serialVersionUID = 1449976624978397831L;
+	private static final long serialVersionUID = 4197196693927555827L;
 
 	/**
 	 * id

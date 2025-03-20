@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保单摘要数据
  *
  * @author auto create
- * @since 1.0, 2024-03-25 11:17:35
+ * @since 1.0, 2025-03-19 18:14:32
  */
 public class InsOpenPolicyDigestDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2295649848221492191L;
+	private static final long serialVersionUID = 1179457694647917461L;
 
 	/**
 	 * 保险公司id
@@ -69,6 +69,12 @@ public class InsOpenPolicyDigestDTO extends AlipayObject {
 	 */
 	@ApiField("product_code")
 	private String productCode;
+
+	/**
+	 * 自行寄回保额，单位分，仅在运费险产品返回
+	 */
+	@ApiField("self_delivery_sum_insured")
+	private Long selfDeliverySumInsured;
 
 	/**
 	 * 保额，单位分
@@ -137,6 +143,13 @@ public class InsOpenPolicyDigestDTO extends AlipayObject {
 	}
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
+	}
+
+	public Long getSelfDeliverySumInsured() {
+		return this.selfDeliverySumInsured;
+	}
+	public void setSelfDeliverySumInsured(Long selfDeliverySumInsured) {
+		this.selfDeliverySumInsured = selfDeliverySumInsured;
 	}
 
 	public Long getSumInsured() {

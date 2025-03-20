@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 电商申请报案
  *
  * @author auto create
- * @since 1.0, 2024-07-09 14:47:50
+ * @since 1.0, 2025-03-19 16:08:56
  */
 public class AlipayInsSceneEcommerceClaimApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2622528841252755313L;
+	private static final long serialVersionUID = 2838524351116829523L;
 
 	/**
 	 * 申请报案金额（单位：分）
@@ -83,6 +83,12 @@ public class AlipayInsSceneEcommerceClaimApplyModel extends AlipayObject {
 	 */
 	@ApiField("refund_dispute")
 	private EcomRefundDisputeDTO refundDispute;
+
+	/**
+	 * 退货物流信息
+	 */
+	@ApiField("refund_logistics_order")
+	private EcomLogisticsOrderDTO refundLogisticsOrder;
 
 	/**
 	 * 报案操作人类型
@@ -183,6 +189,13 @@ public class AlipayInsSceneEcommerceClaimApplyModel extends AlipayObject {
 	}
 	public void setRefundDispute(EcomRefundDisputeDTO refundDispute) {
 		this.refundDispute = refundDispute;
+	}
+
+	public EcomLogisticsOrderDTO getRefundLogisticsOrder() {
+		return this.refundLogisticsOrder;
+	}
+	public void setRefundLogisticsOrder(EcomLogisticsOrderDTO refundLogisticsOrder) {
+		this.refundLogisticsOrder = refundLogisticsOrder;
 	}
 
 	public String getReportOperatorType() {

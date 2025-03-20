@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 停车离场信息同步接口
  *
  * @author auto create
- * @since 1.0, 2024-08-12 17:31:52
+ * @since 1.0, 2025-03-07 16:59:07
  */
 public class AlipayCommerceTransportParkingExitinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4693825145861254595L;
+	private static final long serialVersionUID = 7515443881943484122L;
 
 	/**
 	 * 车辆出场的出口通道名称；取实地通道名称；

@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 设备换绑
  *
  * @author auto create
- * @since 1.0, 2025-02-28 15:30:23
+ * @since 1.0, 2025-03-08 11:07:22
  */
 public class AlipayOfflineProviderCollaborateDevicebindTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5125545983318512471L;
+	private static final long serialVersionUID = 2413245728662895646L;
 
 	/**
-	 * 如果换smid必须要传，smid和之前的smid必须是同一个支付宝账户下
+	 * 如果换smid必须要传，smid和之前的smid必须是同一个支付宝账户下；维保换绑场景必传
 	 */
 	@ApiListField("device_record_files")
 	@ApiField("device_record_info")
@@ -30,7 +30,7 @@ public class AlipayOfflineProviderCollaborateDevicebindTransferModel extends Ali
 	private String deviceSn;
 
 	/**
-	 * 如果需要改动其中的内容，则需要传，不改动的话，继承之前sn的信息
+	 * 如果需要改动其中的内容，则需要传；维保换绑场景必传
 	 */
 	@ApiField("ext_params")
 	private DeviceExtAttribute extParams;

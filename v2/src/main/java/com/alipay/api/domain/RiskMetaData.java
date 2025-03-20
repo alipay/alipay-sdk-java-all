@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RiskMetaData extends AlipayObject {
 
-	private static final long serialVersionUID = 8778582425319188376L;
+	private static final long serialVersionUID = 3897535718955744225L;
 
 	/**
 	 * 对该条数据的操作类型，新增或删除。删除仅支持当前app_id下的数据。相同数据不会重复添加。

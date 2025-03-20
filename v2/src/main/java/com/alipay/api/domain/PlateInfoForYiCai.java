@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PlateInfoForYiCai extends AlipayObject {
 
-	private static final long serialVersionUID = 4665253569531351145L;
+	private static final long serialVersionUID = 6375996912247954651L;
 
 	/**
 	 * 板块所属类型

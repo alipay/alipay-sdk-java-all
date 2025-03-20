@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.group.activity.modify response.
  * 
  * @author auto create
- * @since 1.0, 2025-02-26 11:37:43
+ * @since 1.0, 2025-03-18 11:37:26
  */
 public class AlipayMerchantGroupActivityModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1565179468392325248L;
+	private static final long serialVersionUID = 7254939526668517163L;
 
 	
 

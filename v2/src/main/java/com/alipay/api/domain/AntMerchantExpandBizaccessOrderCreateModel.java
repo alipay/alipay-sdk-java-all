@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发起业务开通
  *
  * @author auto create
- * @since 1.0, 2025-02-10 15:16:37
+ * @since 1.0, 2025-03-11 11:08:21
  */
 public class AntMerchantExpandBizaccessOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1242867741963433587L;
+	private static final long serialVersionUID = 2483812775977598783L;
+
+	/**
+	 * 受益人证照
+	 */
+	@ApiField("benefit_info")
+	private CertificateInfoForEntry benefitInfo;
 
 	/**
 	 * 服务商抽佣信息。本对象为空表示无需抽佣配置。一期只支持传入一个
@@ -24,7 +30,19 @@ public class AntMerchantExpandBizaccessOrderCreateModel extends AlipayObject {
 	private List<IsvCommissionInfo> isvCommissionInfo;
 
 	/**
-	 * 商家主体证件信息。对于企业或个体户商户，其值为营业执照信息
+	 * 法人证照
+	 */
+	@ApiField("legal_info")
+	private CertificateInfoForEntry legalInfo;
+
+	/**
+	 * 法人登录号
+	 */
+	@ApiField("legal_person_logon_id")
+	private String legalPersonLogonId;
+
+	/**
+	 * 商家主体证件信息。对于企业或个体户商户，其值为营业执照信息。事业单位、民办非当前无需传入。
 	 */
 	@ApiField("license_info")
 	private CommonMerchantLicenseInfo licenseInfo;
@@ -48,7 +66,13 @@ public class AntMerchantExpandBizaccessOrderCreateModel extends AlipayObject {
 	private String merchantName;
 
 	/**
-	 * 是否需要代开发授权，默认为false
+	 * 商户类型
+	 */
+	@ApiField("merchant_type")
+	private String merchantType;
+
+	/**
+	 * 是否需要代开发授权，默认为false。注意，如果重复发起代开发授权，会刷新商户的token。请调用后参考文档进行token重新获取。https://opendocs.alipay.com/isv/03l4iy?pathHash=92c490b7
 	 */
 	@ApiField("need_interface_auth")
 	private Boolean needInterfaceAuth;
@@ -58,6 +82,19 @@ public class AntMerchantExpandBizaccessOrderCreateModel extends AlipayObject {
 	 */
 	@ApiField("need_operation_auth")
 	private Boolean needOperationAuth;
+
+	/**
+	 * 是否需要代入驻
+	 */
+	@ApiField("need_register_merchant")
+	private Boolean needRegisterMerchant;
+
+	/**
+	 * 某些场景，允许传入可选开通的产品。具体传参与业务BD联系沟通
+	 */
+	@ApiListField("optional_front_prod_code")
+	@ApiField("string")
+	private List<String> optionalFrontProdCode;
 
 	/**
 	 * 联系方式
@@ -86,11 +123,32 @@ public class AntMerchantExpandBizaccessOrderCreateModel extends AlipayObject {
 	@ApiField("string")
 	private List<String> sceneBizCode;
 
+	public CertificateInfoForEntry getBenefitInfo() {
+		return this.benefitInfo;
+	}
+	public void setBenefitInfo(CertificateInfoForEntry benefitInfo) {
+		this.benefitInfo = benefitInfo;
+	}
+
 	public List<IsvCommissionInfo> getIsvCommissionInfo() {
 		return this.isvCommissionInfo;
 	}
 	public void setIsvCommissionInfo(List<IsvCommissionInfo> isvCommissionInfo) {
 		this.isvCommissionInfo = isvCommissionInfo;
+	}
+
+	public CertificateInfoForEntry getLegalInfo() {
+		return this.legalInfo;
+	}
+	public void setLegalInfo(CertificateInfoForEntry legalInfo) {
+		this.legalInfo = legalInfo;
+	}
+
+	public String getLegalPersonLogonId() {
+		return this.legalPersonLogonId;
+	}
+	public void setLegalPersonLogonId(String legalPersonLogonId) {
+		this.legalPersonLogonId = legalPersonLogonId;
 	}
 
 	public CommonMerchantLicenseInfo getLicenseInfo() {
@@ -121,6 +179,13 @@ public class AntMerchantExpandBizaccessOrderCreateModel extends AlipayObject {
 		this.merchantName = merchantName;
 	}
 
+	public String getMerchantType() {
+		return this.merchantType;
+	}
+	public void setMerchantType(String merchantType) {
+		this.merchantType = merchantType;
+	}
+
 	public Boolean getNeedInterfaceAuth() {
 		return this.needInterfaceAuth;
 	}
@@ -133,6 +198,20 @@ public class AntMerchantExpandBizaccessOrderCreateModel extends AlipayObject {
 	}
 	public void setNeedOperationAuth(Boolean needOperationAuth) {
 		this.needOperationAuth = needOperationAuth;
+	}
+
+	public Boolean getNeedRegisterMerchant() {
+		return this.needRegisterMerchant;
+	}
+	public void setNeedRegisterMerchant(Boolean needRegisterMerchant) {
+		this.needRegisterMerchant = needRegisterMerchant;
+	}
+
+	public List<String> getOptionalFrontProdCode() {
+		return this.optionalFrontProdCode;
+	}
+	public void setOptionalFrontProdCode(List<String> optionalFrontProdCode) {
+		this.optionalFrontProdCode = optionalFrontProdCode;
 	}
 
 	public String getPhone() {

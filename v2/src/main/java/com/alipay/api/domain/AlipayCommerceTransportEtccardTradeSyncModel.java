@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC行程卡交易上传
  *
  * @author auto create
- * @since 1.0, 2024-11-08 16:51:39
+ * @since 1.0, 2025-03-14 16:52:20
  */
 public class AlipayCommerceTransportEtccardTradeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4253249624859319396L;
+	private static final long serialVersionUID = 7446688816568278184L;
 
 	/**
 	 * ETC卡编号

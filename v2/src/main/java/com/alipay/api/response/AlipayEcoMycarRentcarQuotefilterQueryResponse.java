@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoMycarRentcarQuotefilterQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4668456478286851692L;
+	private static final long serialVersionUID = 3164492281597391574L;
 
 	/** 
 	 * 被过滤的报价信息

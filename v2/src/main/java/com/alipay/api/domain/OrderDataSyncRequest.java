@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 售卖订单数据同步请求模型
  *
  * @author auto create
- * @since 1.0, 2025-01-10 11:23:41
+ * @since 1.0, 2025-03-11 21:15:17
  */
 public class OrderDataSyncRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 6481396276589771469L;
+	private static final long serialVersionUID = 5568599486749757871L;
 
 	/**
 	 * 业务id，唯一键标识
@@ -48,7 +48,7 @@ public class OrderDataSyncRequest extends AlipayObject {
 	private String channelType;
 
 	/**
-	 * 周期卡次数单位，标识是几周或者几个月
+	 * 周期卡次数单位，天:DAY，周:WEEK，月:MONTH，季:QUARTER
 	 */
 	@ApiField("count_unit")
 	private String countUnit;
@@ -89,6 +89,12 @@ public class OrderDataSyncRequest extends AlipayObject {
 	 */
 	@ApiField("expired_start_time")
 	private Date expiredStartTime;
+
+	/**
+	 * 服务提供商PID
+	 */
+	@ApiField("isv_pid")
+	private String isvPid;
 
 	/**
 	 * 商品编码，由外部传入
@@ -286,6 +292,13 @@ public class OrderDataSyncRequest extends AlipayObject {
 	}
 	public void setExpiredStartTime(Date expiredStartTime) {
 		this.expiredStartTime = expiredStartTime;
+	}
+
+	public String getIsvPid() {
+		return this.isvPid;
+	}
+	public void setIsvPid(String isvPid) {
+		this.isvPid = isvPid;
 	}
 
 	public String getItemCode() {

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.sirius.task.callback response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-16 16:16:49
+ * @since 1.0, 2025-03-11 10:33:44
  */
 public class AlipayPcreditLoanSiriusTaskCallbackResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7561997682637416274L;
+	private static final long serialVersionUID = 2462453226411596595L;
 
 	/** 
 	 * 天狼星业务id，通常是天狼星任务主键id

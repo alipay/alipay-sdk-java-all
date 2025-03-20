@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 手持设备外部关联交易事件上报
  *
  * @author auto create
- * @since 1.0, 2025-02-21 15:20:45
+ * @since 1.0, 2025-03-17 22:00:53
  */
 public class AlipayOpenPaysaasTradeeventSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5446753939151192558L;
+	private static final long serialVersionUID = 7899468657786382757L;
 
 	/**
 	 * 单位为分，最大值为100000000分

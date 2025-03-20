@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySecurityRiskEmployeeCriminalCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1526684751371844996L;
+	private static final long serialVersionUID = 4278981464239126318L;
 
 	/**
 	 * 雇员身份证号

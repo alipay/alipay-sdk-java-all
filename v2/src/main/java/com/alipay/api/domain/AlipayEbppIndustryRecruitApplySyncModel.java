@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 安心招工平台应聘同步1
  *
  * @author auto create
- * @since 1.0, 2025-01-17 16:16:41
+ * @since 1.0, 2025-03-11 16:52:23
  */
 public class AlipayEbppIndustryRecruitApplySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7794828481318639421L;
+	private static final long serialVersionUID = 4617973434769778878L;
 
 	/**
 	 * 应聘信息最新更新时间，如果应聘信息有更新，通过本接口传更新后的信息以及最新更新时间。 在某些情况下更新信息在本接口无法体现，比如服务商侧的应聘状态更详尽，多种状态对应到本岗位的一个状态，（查看简历、一面中、二面均对应到“应聘中”状态），但从查看简历更新到一面中时，仍需要通过本接口同步最新更新时间，支付宝引导用户到服务商小程序查看最新信息 格式：yyyy-MM-dd HH:mm:ss
@@ -40,7 +40,7 @@ public class AlipayEbppIndustryRecruitApplySyncModel extends AlipayObject {
 	private Date applyTime;
 
 	/**
-	 * 报名用户UID
+	 * 报名用户支付宝UID
 	 */
 	@ApiField("apply_user_id")
 	private String applyUserId;
@@ -94,10 +94,22 @@ public class AlipayEbppIndustryRecruitApplySyncModel extends AlipayObject {
 	private String outJobId;
 
 	/**
+	 * 外部用户id
+	 */
+	@ApiField("out_user_id")
+	private String outUserId;
+
+	/**
 	 * 报名管理URL
 	 */
 	@ApiField("server_apply_url")
 	private String serverApplyUrl;
+
+	/**
+	 * 应聘报名投递的数据来源
+	 */
+	@ApiField("source")
+	private String source;
 
 	public Date getApplyChangeTime() {
 		return this.applyChangeTime;
@@ -190,11 +202,25 @@ public class AlipayEbppIndustryRecruitApplySyncModel extends AlipayObject {
 		this.outJobId = outJobId;
 	}
 
+	public String getOutUserId() {
+		return this.outUserId;
+	}
+	public void setOutUserId(String outUserId) {
+		this.outUserId = outUserId;
+	}
+
 	public String getServerApplyUrl() {
 		return this.serverApplyUrl;
 	}
 	public void setServerApplyUrl(String serverApplyUrl) {
 		this.serverApplyUrl = serverApplyUrl;
+	}
+
+	public String getSource() {
+		return this.source;
+	}
+	public void setSource(String source) {
+		this.source = source;
 	}
 
 }

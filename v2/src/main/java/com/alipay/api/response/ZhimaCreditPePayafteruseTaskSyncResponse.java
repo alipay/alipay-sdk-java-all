@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.pe.payafteruse.task.sync response.
  * 
  * @author auto create
- * @since 1.0, 2025-02-19 16:27:25
+ * @since 1.0, 2025-03-13 17:22:27
  */
 public class ZhimaCreditPePayafteruseTaskSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7525995596371163786L;
+	private static final long serialVersionUID = 2585375648277423562L;
 
 	/** 
 	 * 更新是否被幂等处理

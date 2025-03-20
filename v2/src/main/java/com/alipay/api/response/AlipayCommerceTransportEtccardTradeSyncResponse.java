@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.etccard.trade.sync response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-08 16:57:21
+ * @since 1.0, 2025-03-14 16:52:25
  */
 public class AlipayCommerceTransportEtccardTradeSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2435575659869922635L;
+	private static final long serialVersionUID = 8358655962542352511L;
 
 	/** 
 	 * 用于标记支付宝用户在应用下的唯一标识

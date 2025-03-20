@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单关闭
  *
  * @author auto create
- * @since 1.0, 2025-02-27 14:48:57
+ * @since 1.0, 2025-03-20 10:59:57
  */
 public class AlipayOpenMiniOrderCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5746393838918844519L;
+	private static final long serialVersionUID = 6527226666686413962L;
 
 	/**
 	 * 买家open_id；open_id和user_id二选一
@@ -30,6 +30,18 @@ public class AlipayOpenMiniOrderCloseModel extends AlipayObject {
 	 */
 	@ApiField("out_order_id")
 	private String outOrderId;
+
+	/**
+	 * 关闭原因编码对应的描述信息
+	 */
+	@ApiField("reason")
+	private String reason;
+
+	/**
+	 * 取消订单的原因编码，不同业务的取消原因不同
+	 */
+	@ApiField("reason_code")
+	private String reasonCode;
 
 	/**
 	 * 买家支付宝用户ID；open_id和user_id二选一
@@ -56,6 +68,20 @@ public class AlipayOpenMiniOrderCloseModel extends AlipayObject {
 	}
 	public void setOutOrderId(String outOrderId) {
 		this.outOrderId = outOrderId;
+	}
+
+	public String getReason() {
+		return this.reason;
+	}
+	public void setReason(String reason) {
+		this.reason = reason;
+	}
+
+	public String getReasonCode() {
+		return this.reasonCode;
+	}
+	public void setReasonCode(String reasonCode) {
+		this.reasonCode = reasonCode;
 	}
 
 	public String getUserId() {

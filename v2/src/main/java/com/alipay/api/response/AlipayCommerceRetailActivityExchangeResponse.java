@@ -8,14 +8,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.retail.activity.exchange response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-05 16:42:20
+ * @since 1.0, 2025-03-12 14:42:24
  */
 public class AlipayCommerceRetailActivityExchangeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4687793452924997165L;
+	private static final long serialVersionUID = 5116422261886752358L;
 
 	/** 
-	 * 积分兑换状态
+	 * 积分兑换结果，true为成功，false为失败
 	 */
 	@ApiField("status")
 	private Boolean status;

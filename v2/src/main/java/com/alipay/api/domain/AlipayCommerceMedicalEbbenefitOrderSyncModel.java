@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务订单同步
  *
  * @author auto create
- * @since 1.0, 2025-01-08 15:27:00
+ * @since 1.0, 2025-03-13 16:47:23
  */
 public class AlipayCommerceMedicalEbbenefitOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4513917442626415235L;
+	private static final long serialVersionUID = 3551916576589111565L;
 
 	/**
 	 * 采购企业id （蚂蚁提供）

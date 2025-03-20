@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 主订单查询
  *
  * @author auto create
- * @since 1.0, 2025-01-10 15:50:47
+ * @since 1.0, 2025-03-19 13:10:19
  */
 public class AlipayEbppBillchargeUnionorderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6278832285856877832L;
+	private static final long serialVersionUID = 4325927878169633691L;
 
 	/**
 	 * 蚂蚁统一会员ID
@@ -30,6 +30,12 @@ public class AlipayEbppBillchargeUnionorderQueryModel extends AlipayObject {
 	 */
 	@ApiField("source")
 	private String source;
+
+	/**
+	 * 50链路单订单情况下的单个订单号
+	 */
+	@ApiField("sub_order_no")
+	private String subOrderNo;
 
 	/**
 	 * 蚂蚁统一会员ID
@@ -56,6 +62,13 @@ public class AlipayEbppBillchargeUnionorderQueryModel extends AlipayObject {
 	}
 	public void setSource(String source) {
 		this.source = source;
+	}
+
+	public String getSubOrderNo() {
+		return this.subOrderNo;
+	}
+	public void setSubOrderNo(String subOrderNo) {
+		this.subOrderNo = subOrderNo;
 	}
 
 	public String getUserId() {

@@ -8,14 +8,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.paysaas.order.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-02-25 19:57:26
+ * @since 1.0, 2025-03-11 17:47:54
  */
 public class AlipayOfflinePaysaasOrderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6815241943655811127L;
+	private static final long serialVersionUID = 3151616518254941753L;
 
 	/** 
-	 * 给外部订单生成的唯一单号
+	 * 推单业务的唯一单号
 	 */
 	@ApiField("isv_order_no")
 	private String isvOrderNo;

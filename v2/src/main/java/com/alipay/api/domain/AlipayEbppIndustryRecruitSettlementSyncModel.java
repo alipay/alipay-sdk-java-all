@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 安心招工平台结算信息同步
  *
  * @author auto create
- * @since 1.0, 2025-01-17 16:17:23
+ * @since 1.0, 2025-03-11 16:57:28
  */
 public class AlipayEbppIndustryRecruitSettlementSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4279829647466227598L;
+	private static final long serialVersionUID = 5824771938774994689L;
 
 	/**
 	 * 实际工时；当前结算单对应的实际工时，（单位：小时），例如：8小时 
@@ -66,6 +66,12 @@ public class AlipayEbppIndustryRecruitSettlementSyncModel extends AlipayObject {
 	private String outSettlementId;
 
 	/**
+	 * 外部用户id
+	 */
+	@ApiField("out_user_id")
+	private String outUserId;
+
+	/**
 	 * 调整后工时：（单位：小时）
 	 */
 	@ApiField("real_attendance_time")
@@ -94,6 +100,12 @@ public class AlipayEbppIndustryRecruitSettlementSyncModel extends AlipayObject {
 	 */
 	@ApiField("settle_status")
 	private String settleStatus;
+
+	/**
+	 * 结算信息来源
+	 */
+	@ApiField("source")
+	private String source;
 
 	public String getAttendanceTime() {
 		return this.attendanceTime;
@@ -151,6 +163,13 @@ public class AlipayEbppIndustryRecruitSettlementSyncModel extends AlipayObject {
 		this.outSettlementId = outSettlementId;
 	}
 
+	public String getOutUserId() {
+		return this.outUserId;
+	}
+	public void setOutUserId(String outUserId) {
+		this.outUserId = outUserId;
+	}
+
 	public String getRealAttendanceTime() {
 		return this.realAttendanceTime;
 	}
@@ -184,6 +203,13 @@ public class AlipayEbppIndustryRecruitSettlementSyncModel extends AlipayObject {
 	}
 	public void setSettleStatus(String settleStatus) {
 		this.settleStatus = settleStatus;
+	}
+
+	public String getSource() {
+		return this.source;
+	}
+	public void setSource(String source) {
+		this.source = source;
 	}
 
 }

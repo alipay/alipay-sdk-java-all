@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 医生智能体好大夫追加知识库内容接口
  *
  * @author auto create
- * @since 1.0, 2025-02-14 10:47:57
+ * @since 1.0, 2025-03-17 16:58:20
  */
 public class AlipayCommerceMedicalMedagentKnowledgeAppendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3823992658947396583L;
+	private static final long serialVersionUID = 5686483884293632112L;
 
 	/**
 	 * 组装的医生唯一ID，用于标识知识库所属的代理
@@ -34,6 +34,12 @@ public class AlipayCommerceMedicalMedagentKnowledgeAppendModel extends AlipayObj
 	 */
 	@ApiField("id")
 	private String id;
+
+	/**
+	 * metadata数据
+	 */
+	@ApiField("metadata")
+	private String metadata;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识
@@ -97,6 +103,13 @@ public class AlipayCommerceMedicalMedagentKnowledgeAppendModel extends AlipayObj
 	}
 	public void setId(String id) {
 		this.id = id;
+	}
+
+	public String getMetadata() {
+		return this.metadata;
+	}
+	public void setMetadata(String metadata) {
+		this.metadata = metadata;
 	}
 
 	public String getOpenId() {

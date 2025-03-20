@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 回收商品，包含回收商品的款式、价格、状态等信息
  *
  * @author auto create
- * @since 1.0, 2025-02-12 10:17:22
+ * @since 1.0, 2025-03-19 14:12:26
  */
 public class RecycleItemDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8759815365576349688L;
+	private static final long serialVersionUID = 3595526776272369668L;
 
 	/**
 	 * 产品code，用来描述商品的SPU_ID

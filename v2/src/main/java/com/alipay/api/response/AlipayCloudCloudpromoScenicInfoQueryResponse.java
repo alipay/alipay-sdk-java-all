@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudpromo.scenic.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-01-08 14:57:24
+ * @since 1.0, 2025-03-19 14:12:27
  */
 public class AlipayCloudCloudpromoScenicInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1566935194867938689L;
+	private static final long serialVersionUID = 1326884624182271715L;
 
 	/** 
 	 * 租户ID

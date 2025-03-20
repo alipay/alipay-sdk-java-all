@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 群发消息详情
  *
  * @author auto create
- * @since 1.0, 2024-09-30 17:58:10
+ * @since 1.0, 2025-03-07 16:52:55
  */
 public class GroupMsgDetailVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3875673942738192718L;
+	private static final long serialVersionUID = 6492697919367324479L;
 
 	/**
 	 * 是否@所有人
@@ -28,6 +28,12 @@ public class GroupMsgDetailVO extends AlipayObject {
 	 */
 	@ApiField("biz_id")
 	private String bizId;
+
+	/**
+	 * 用于描述定时群发消息发送失败的原因包括校验异常或者是消息内容异常等信息, 一般与send_status一起判断, 当send_status不等于成功时, 可以查看该字段是否有校验错误信息
+	 */
+	@ApiField("error_msg")
+	private String errorMsg;
 
 	/**
 	 * 创建时间
@@ -73,7 +79,7 @@ public class GroupMsgDetailVO extends AlipayObject {
 	private Long sendStatus;
 
 	/**
-	 * 发送策略。目前支持0（立即发送）。
+	 * 发送策略。支持0（立即发送）和1（定时发送）。
 	 */
 	@ApiField("send_strategy")
 	private String sendStrategy;
@@ -102,6 +108,13 @@ public class GroupMsgDetailVO extends AlipayObject {
 	}
 	public void setBizId(String bizId) {
 		this.bizId = bizId;
+	}
+
+	public String getErrorMsg() {
+		return this.errorMsg;
+	}
+	public void setErrorMsg(String errorMsg) {
+		this.errorMsg = errorMsg;
 	}
 
 	public Date getGmtCreate() {

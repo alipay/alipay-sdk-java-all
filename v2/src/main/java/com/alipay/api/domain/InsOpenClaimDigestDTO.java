@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景开放平台电商 理赔单摘要模型
  *
  * @author auto create
- * @since 1.0, 2024-07-09 14:47:50
+ * @since 1.0, 2025-03-19 16:08:56
  */
 public class InsOpenClaimDigestDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8393499299468774633L;
+	private static final long serialVersionUID = 6745227143381866375L;
 
 	/**
 	 * 报案时间

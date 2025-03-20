@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechAiCvDsbGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6252217246359944675L;
+	private static final long serialVersionUID = 1379676911753486915L;
 
 	/**
 	 * 定损任务接口返回的task_id

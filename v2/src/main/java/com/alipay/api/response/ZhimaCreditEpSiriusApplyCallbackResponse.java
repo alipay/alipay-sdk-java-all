@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.sirius.apply.callback response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-26 14:21:59
+ * @since 1.0, 2025-03-11 10:34:04
  */
 public class ZhimaCreditEpSiriusApplyCallbackResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4153219199655947734L;
+	private static final long serialVersionUID = 3493892428628658741L;
 
 	/** 
 	 * 天狼星业务id

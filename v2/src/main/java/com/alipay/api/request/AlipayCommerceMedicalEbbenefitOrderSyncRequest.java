@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.ebbenefit.order.sync request
  * 
  * @author auto create
- * @since 1.0, 2025-01-08 15:27:25
+ * @since 1.0, 2025-03-13 16:47:25
  */
 public class AlipayCommerceMedicalEbbenefitOrderSyncRequest implements AlipayRequest<AlipayCommerceMedicalEbbenefitOrderSyncResponse> {
 

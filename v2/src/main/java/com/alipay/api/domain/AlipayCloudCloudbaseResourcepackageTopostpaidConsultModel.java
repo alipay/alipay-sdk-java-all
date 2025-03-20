@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 套餐转按量询价
  *
  * @author auto create
- * @since 1.0, 2024-08-19 10:36:02
+ * @since 1.0, 2025-03-12 16:05:57
  */
 public class AlipayCloudCloudbaseResourcepackageTopostpaidConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4166476773353955911L;
+	private static final long serialVersionUID = 4282239935647181261L;
 
 	/**
 	 * 小程序云应用APPID

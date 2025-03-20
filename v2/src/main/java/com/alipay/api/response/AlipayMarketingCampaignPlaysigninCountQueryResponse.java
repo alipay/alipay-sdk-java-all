@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.playsignin.count.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-14 16:41:45
+ * @since 1.0, 2025-03-13 16:34:39
  */
 public class AlipayMarketingCampaignPlaysigninCountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6726386759865762447L;
+	private static final long serialVersionUID = 3553526313887239612L;
 
 	/** 
 	 * 连续签到次数

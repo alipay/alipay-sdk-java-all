@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用印状态查询接口
  *
  * @author auto create
- * @since 1.0, 2024-08-02 16:32:22
+ * @since 1.0, 2025-03-13 10:49:22
  */
 public class AlipayFincoreComplianceSignStatusQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4384697391193584273L;
+	private static final long serialVersionUID = 7555472563761157913L;
 
 	/**
 	 * 业务单据号
 	 */
 	@ApiField("business_id")
 	private String businessId;
+
+	/**
+	 * 用印工单文件编号
+	 */
+	@ApiField("file_code")
+	private String fileCode;
 
 	/**
 	 * 系统来源
@@ -30,6 +36,13 @@ public class AlipayFincoreComplianceSignStatusQueryModel extends AlipayObject {
 	}
 	public void setBusinessId(String businessId) {
 		this.businessId = businessId;
+	}
+
+	public String getFileCode() {
+		return this.fileCode;
+	}
+	public void setFileCode(String fileCode) {
+		this.fileCode = fileCode;
 	}
 
 	public String getSourceSystemId() {

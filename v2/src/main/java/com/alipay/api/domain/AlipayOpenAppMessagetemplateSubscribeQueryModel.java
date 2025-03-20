@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 模板订阅关系查询
  *
  * @author auto create
- * @since 1.0, 2024-07-08 14:16:41
+ * @since 1.0, 2025-03-06 11:45:05
  */
 public class AlipayOpenAppMessagetemplateSubscribeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5295634833457115773L;
+	private static final long serialVersionUID = 3824158551488246698L;
 
 	/**
 	 * 支付宝openId，用于支付宝用户在当前应用下的用户标识。

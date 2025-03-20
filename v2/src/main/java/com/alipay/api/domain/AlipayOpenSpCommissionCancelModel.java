@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 服务商停止抽佣接口
  *
  * @author auto create
- * @since 1.0, 2025-01-05 10:07:23
+ * @since 1.0, 2025-03-19 14:12:27
  */
 public class AlipayOpenSpCommissionCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5147582372848524935L;
+	private static final long serialVersionUID = 6461676423799424318L;
 
 	/**
 	 * 动作 CANCEL,TERMINAL

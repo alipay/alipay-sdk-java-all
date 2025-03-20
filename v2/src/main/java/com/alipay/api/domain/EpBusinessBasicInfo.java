@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 企业工商基本信息
  *
  * @author auto create
- * @since 1.0, 2025-01-21 09:39:22
+ * @since 1.0, 2025-03-07 15:17:20
  */
 public class EpBusinessBasicInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5847624673332989328L;
+	private static final long serialVersionUID = 1548699149219939424L;
 
 	/**
 	 * 地址
@@ -76,6 +76,12 @@ public class EpBusinessBasicInfo extends AlipayObject {
 	 */
 	@ApiField("frdb")
 	private String frdb;
+
+	/**
+	 * 企业所属行业信息
+	 */
+	@ApiField("industry_model")
+	private EpIndustryModel industryModel;
 
 	/**
 	 * 投资人
@@ -314,6 +320,13 @@ public class EpBusinessBasicInfo extends AlipayObject {
 	}
 	public void setFrdb(String frdb) {
 		this.frdb = frdb;
+	}
+
+	public EpIndustryModel getIndustryModel() {
+		return this.industryModel;
+	}
+	public void setIndustryModel(EpIndustryModel industryModel) {
+		this.industryModel = industryModel;
 	}
 
 	public String getInvestors() {

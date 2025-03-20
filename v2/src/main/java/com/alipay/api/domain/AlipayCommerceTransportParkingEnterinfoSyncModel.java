@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 停车入场信息同步接口
  *
  * @author auto create
- * @since 1.0, 2024-11-25 18:09:26
+ * @since 1.0, 2025-03-07 15:26:22
  */
 public class AlipayCommerceTransportParkingEnterinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4389785189344722928L;
+	private static final long serialVersionUID = 3533315294495638252L;
 
 	/**
 	 * 是否启用车牌代扣状态查询功能，true为启用，false为停用

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudpromo.boardingpoint.info.sync request
  * 
  * @author auto create
- * @since 1.0, 2025-03-03 16:10:13
+ * @since 1.0, 2025-03-07 23:02:23
  */
 public class AlipayCloudCloudpromoBoardingpointInfoSyncRequest implements AlipayRequest<AlipayCloudCloudpromoBoardingpointInfoSyncResponse> {
 

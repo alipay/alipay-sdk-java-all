@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-01-13 14:37:23
+ * @since 1.0, 2025-03-19 14:12:27
  */
 public class RecycleMarketPriceCreateRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 2372497431168993363L;
+	private static final long serialVersionUID = 7379995916779417817L;
 
 	/**
 	 * 用来描述回收商品的成色

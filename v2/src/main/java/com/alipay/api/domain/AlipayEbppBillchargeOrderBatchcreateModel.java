@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量创单接口
  *
  * @author auto create
- * @since 1.0, 2025-01-03 16:03:11
+ * @since 1.0, 2025-03-19 13:10:20
  */
 public class AlipayEbppBillchargeOrderBatchcreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5159578838517441917L;
+	private static final long serialVersionUID = 3711988495494779756L;
 
 	/**
 	 * 账单列表
@@ -30,7 +30,7 @@ public class AlipayEbppBillchargeOrderBatchcreateModel extends AlipayObject {
 	private String openId;
 
 	/**
-	 * 1234567890
+	 * 外部订单id
 	 */
 	@ApiField("out_biz_id")
 	private String outBizId;

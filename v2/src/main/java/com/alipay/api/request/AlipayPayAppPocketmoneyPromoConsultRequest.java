@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pay.app.pocketmoney.promo.consult request
  * 
  * @author auto create
- * @since 1.0, 2025-02-25 11:30:33
+ * @since 1.0, 2025-03-11 10:50:35
  */
 public class AlipayPayAppPocketmoneyPromoConsultRequest implements AlipayRequest<AlipayPayAppPocketmoneyPromoConsultResponse> {
 

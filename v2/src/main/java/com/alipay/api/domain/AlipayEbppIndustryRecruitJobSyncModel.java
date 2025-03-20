@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 安心招工平台岗位同步
  *
  * @author auto create
- * @since 1.0, 2025-01-17 16:16:34
+ * @since 1.0, 2025-03-11 16:52:24
  */
 public class AlipayEbppIndustryRecruitJobSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4472786664793786671L;
+	private static final long serialVersionUID = 8765528745781618126L;
 
 	/**
 	 * 学历要求
@@ -136,6 +136,12 @@ public class AlipayEbppIndustryRecruitJobSyncModel extends AlipayObject {
 	private String jobType;
 
 	/**
+	 * 外部服务商雇主id
+	 */
+	@ApiField("out_hire_user_id")
+	private String outHireUserId;
+
+	/**
 	 * ISV侧岗位唯一标识
 	 */
 	@ApiField("out_job_id")
@@ -182,6 +188,12 @@ public class AlipayEbppIndustryRecruitJobSyncModel extends AlipayObject {
 	 */
 	@ApiField("server_job_url")
 	private String serverJobUrl;
+
+	/**
+	 * 岗位来源
+	 */
+	@ApiField("source")
+	private String source;
 
 	/**
 	 * 工作结束日期，格式:yyyy-MM-dd
@@ -353,6 +365,13 @@ public class AlipayEbppIndustryRecruitJobSyncModel extends AlipayObject {
 		this.jobType = jobType;
 	}
 
+	public String getOutHireUserId() {
+		return this.outHireUserId;
+	}
+	public void setOutHireUserId(String outHireUserId) {
+		this.outHireUserId = outHireUserId;
+	}
+
 	public String getOutJobId() {
 		return this.outJobId;
 	}
@@ -407,6 +426,13 @@ public class AlipayEbppIndustryRecruitJobSyncModel extends AlipayObject {
 	}
 	public void setServerJobUrl(String serverJobUrl) {
 		this.serverJobUrl = serverJobUrl;
+	}
+
+	public String getSource() {
+		return this.source;
+	}
+	public void setSource(String source) {
+		this.source = source;
 	}
 
 	public String getWorkEndDate() {

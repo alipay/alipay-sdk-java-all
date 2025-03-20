@@ -4,17 +4,17 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 分账计划明细模型
+ * null
  *
  * @author auto create
- * @since 1.0, 2025-03-03 17:38:21
+ * @since 1.0, 2025-03-19 14:12:26
  */
 public class RoyaltyInfoRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 4665189236531178279L;
+	private static final long serialVersionUID = 7366544438334882649L;
 
 	/**
-	 * 买断分账金
+	 * 买断分账金，人明币，单位：元
 	 */
 	@ApiField("buy_out_royalty")
 	private String buyOutRoyalty;

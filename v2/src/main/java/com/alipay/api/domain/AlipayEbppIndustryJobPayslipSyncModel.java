@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝就业工资条信息同步
  *
  * @author auto create
- * @since 1.0, 2025-01-07 20:59:16
+ * @since 1.0, 2025-03-18 20:56:54
  */
 public class AlipayEbppIndustryJobPayslipSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8641434844794695997L;
+	private static final long serialVersionUID = 6748632787696315875L;
 
 	/**
 	 * 付款金额，单位：元
@@ -75,6 +75,12 @@ public class AlipayEbppIndustryJobPayslipSyncModel extends AlipayObject {
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/**
+	 * 支付宝转账订单id，新接入的商户必填
+	 */
+	@ApiField("order_id")
+	private String orderId;
 
 	/**
 	 * 外部业务编号
@@ -174,6 +180,13 @@ public class AlipayEbppIndustryJobPayslipSyncModel extends AlipayObject {
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public String getOrderId() {
+		return this.orderId;
+	}
+	public void setOrderId(String orderId) {
+		this.orderId = orderId;
 	}
 
 	public String getOutBizNo() {

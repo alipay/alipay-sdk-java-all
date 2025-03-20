@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.provider.userinfo.npassporter.delete request
  * 
  * @author auto create
- * @since 1.0, 2025-02-27 10:57:23
+ * @since 1.0, 2025-03-12 14:47:28
  */
 public class AlipayOfflineProviderUserinfoNpassporterDeleteRequest implements AlipayRequest<AlipayOfflineProviderUserinfoNpassporterDeleteResponse> {
 

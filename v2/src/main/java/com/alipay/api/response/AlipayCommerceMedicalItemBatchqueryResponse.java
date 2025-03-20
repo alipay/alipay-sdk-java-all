@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.item.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2025-02-14 11:17:23
+ * @since 1.0, 2025-03-18 15:42:25
  */
 public class AlipayCommerceMedicalItemBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3412782258526221991L;
+	private static final long serialVersionUID = 5326356938339316943L;
 
 	/** 
 	 * 门店商品详情信息列表，包含单规格/多规格售卖信息

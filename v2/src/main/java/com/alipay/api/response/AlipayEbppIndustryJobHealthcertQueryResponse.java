@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.job.healthcert.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-09-27 16:07:13
+ * @since 1.0, 2025-03-06 13:52:26
  */
 public class AlipayEbppIndustryJobHealthcertQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7886483697947198428L;
+	private static final long serialVersionUID = 3127768285675736649L;
 
 	/** 
 	 * 是否有证，有证返回true，无证返回false
@@ -39,10 +39,13 @@ public class AlipayEbppIndustryJobHealthcertQueryResponse extends AlipayResponse
 	private String uid;
 
 	/** 
-	 * 健康证有效期，
+	 * 健康证有效期，单位：天
 枚举值:
 距过期时间>30天，
 距过期时间≤30天，
+失效日期＞60天,
+失效日期＞90天,
+失效日期＞180天,
 已过期
 	 */
 	@ApiField("valid_period")

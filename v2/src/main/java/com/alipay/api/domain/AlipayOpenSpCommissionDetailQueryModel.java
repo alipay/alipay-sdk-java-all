@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 抽佣详情查询接口
  *
  * @author auto create
- * @since 1.0, 2025-01-07 13:42:22
+ * @since 1.0, 2025-03-19 14:12:28
  */
 public class AlipayOpenSpCommissionDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8227522792383651951L;
+	private static final long serialVersionUID = 8866421551725746673L;
 
 	/**
 	 * 抽佣场景

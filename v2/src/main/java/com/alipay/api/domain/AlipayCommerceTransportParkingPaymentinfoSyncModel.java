@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 停车支付信息同步接口
  *
  * @author auto create
- * @since 1.0, 2024-09-13 11:13:18
+ * @since 1.0, 2025-03-07 16:39:41
  */
 public class AlipayCommerceTransportParkingPaymentinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7723697853147221337L;
+	private static final long serialVersionUID = 8388279388666193479L;
 
 	/**
 	 * 支付宝交易号；

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-01-08 14:57:24
+ * @since 1.0, 2025-03-19 14:12:27
  */
 public class SuggestScenicVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3587382192541681296L;
+	private static final long serialVersionUID = 1287687118674741124L;
 
 	/**
 	 * 观景图

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户意图确认
  *
  * @author auto create
- * @since 1.0, 2025-02-18 11:26:20
+ * @since 1.0, 2025-03-10 13:51:21
  */
 public class AlipayOfflineProviderCollaborateTaskConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7174194398633566114L;
+	private static final long serialVersionUID = 2769162895286712276L;
 
 	/**
 	 * 当前操作在业务系统实际发生的时间。
@@ -23,7 +23,7 @@ public class AlipayOfflineProviderCollaborateTaskConfirmModel extends AlipayObje
 	private Date bizTime;
 
 	/**
-	 * 商家意图确认结果
+	 * 商家意图确认结果；当反馈商家有意向 HAS,接口将返回详细作业信息，任务状态推进到已确认；当反馈商家无意向 NOT_HAS,接口不返回详细作业信息，任务状态推进到无法完成，当反馈商家无法联系，接口将根据业务规则判断是否返回详细作业信息，任务状态不推进
 	 */
 	@ApiField("confirm_result")
 	private String confirmResult;

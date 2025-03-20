@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.playsignin.signin response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:27:00
+ * @since 1.0, 2025-03-13 16:32:27
  */
 public class AlipayMarketingCampaignPlaysigninSigninResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7511856224546376338L;
+	private static final long serialVersionUID = 5531712523818613385L;
 
 	/** 
 	 * 签到发奖流水

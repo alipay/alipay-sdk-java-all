@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 协同任务信息
  *
  * @author auto create
- * @since 1.0, 2025-02-18 10:48:16
+ * @since 1.0, 2025-03-10 13:51:21
  */
 public class CollaborateTask extends AlipayObject {
 
-	private static final long serialVersionUID = 4655366442996796633L;
+	private static final long serialVersionUID = 2636377519134828813L;
 
 	/**
 	 * 活动描述，用户参与活动时返回。
@@ -36,7 +36,7 @@ public class CollaborateTask extends AlipayObject {
 	private String activityType;
 
 	/**
-	 * 任务拉取时该字段无返回内容，确认领取时会返回该字段。
+	 * 任务拉取时该字段无返回内容，确认商户有安装意图时返回该字段
 	 */
 	@ApiField("address")
 	private String address;
@@ -141,7 +141,7 @@ public class CollaborateTask extends AlipayObject {
 	private List<String> taskTags;
 
 	/**
-	 * 任务拉取时该字段无返回内容，确认领取时会返回该字段。
+	 * 任务拉取时无该内容返回，确认领取时返回脱敏内容，如131****2222，确认商户有意图或呼叫商户N次未接通的情况会返回该字段未脱敏数据，N以实际业务沟通为准
 	 */
 	@ApiField("tel")
 	private String tel;

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayBossFncAntbudgetGroupbudgetBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6554973744792127289L;
+	private static final long serialVersionUID = 6571695545857559559L;
 
 	/**
 	 * 财年，例如：2021

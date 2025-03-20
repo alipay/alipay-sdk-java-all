@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.etcenterprise.vehicle.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-01-07 14:25:16
+ * @since 1.0, 2025-03-12 16:07:28
  */
 public class AlipayCommerceTransportEtcenterpriseVehicleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6796469419777384665L;
+	private static final long serialVersionUID = 2824574321491796226L;
 
 	/** 
 	 * 支付宝etc平台扣款协议号
@@ -86,6 +86,18 @@ public class AlipayCommerceTransportEtcenterpriseVehicleQueryResponse extends Al
 	 */
 	@ApiField("service_exp")
 	private Date serviceExp;
+
+	/** 
+	 * 用于区分车辆归属真实企业信息，vehicle_corp_id由两部分组成corp-租车公司Id
+	 */
+	@ApiField("vehicle_corp_id")
+	private String vehicleCorpId;
+
+	/** 
+	 * 用于展示车辆归属企业名称
+	 */
+	@ApiField("vehicle_corp_name")
+	private String vehicleCorpName;
 
 	/** 
 	 * 支付宝车辆id
@@ -175,6 +187,20 @@ public class AlipayCommerceTransportEtcenterpriseVehicleQueryResponse extends Al
 	}
 	public Date getServiceExp( ) {
 		return this.serviceExp;
+	}
+
+	public void setVehicleCorpId(String vehicleCorpId) {
+		this.vehicleCorpId = vehicleCorpId;
+	}
+	public String getVehicleCorpId( ) {
+		return this.vehicleCorpId;
+	}
+
+	public void setVehicleCorpName(String vehicleCorpName) {
+		this.vehicleCorpName = vehicleCorpName;
+	}
+	public String getVehicleCorpName( ) {
+		return this.vehicleCorpName;
 	}
 
 	public void setVehicleId(String vehicleId) {

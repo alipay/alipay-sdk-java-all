@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudpromo.travel.record.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-01-08 15:27:25
+ * @since 1.0, 2025-03-19 14:12:27
  */
 public class AlipayCloudCloudpromoTravelRecordQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5843873886161419261L;
+	private static final long serialVersionUID = 1132398839781649773L;
 
 	/** 
 	 * 沪小游

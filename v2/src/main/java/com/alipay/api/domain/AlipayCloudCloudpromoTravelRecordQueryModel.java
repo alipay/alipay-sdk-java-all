@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询游历记录
  *
  * @author auto create
- * @since 1.0, 2025-01-08 15:27:25
+ * @since 1.0, 2025-03-19 14:12:27
  */
 public class AlipayCloudCloudpromoTravelRecordQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4626755778824861129L;
+	private static final long serialVersionUID = 7135362694647865138L;
 
 	/**
 	 * 游历记录ID

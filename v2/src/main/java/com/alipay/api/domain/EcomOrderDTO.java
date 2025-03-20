@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 场景开放平台电商订单模型
  *
  * @author auto create
- * @since 1.0, 2024-07-09 14:47:50
+ * @since 1.0, 2025-03-19 16:08:56
  */
 public class EcomOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1521557522511868394L;
+	private static final long serialVersionUID = 6149827557387478254L;
 
 	/**
 	 * 实际支付金额，单位：分
@@ -185,6 +185,12 @@ public class EcomOrderDTO extends AlipayObject {
 	 */
 	@ApiField("post_fee")
 	private Long postFee;
+
+	/**
+	 * 订单商家物流寄件方式
+	 */
+	@ApiField("post_type")
+	private String postType;
 
 	/**
 	 * 卖家id
@@ -424,6 +430,13 @@ public class EcomOrderDTO extends AlipayObject {
 	}
 	public void setPostFee(Long postFee) {
 		this.postFee = postFee;
+	}
+
+	public String getPostType() {
+		return this.postType;
+	}
+	public void setPostType(String postType) {
+		this.postType = postType;
 	}
 
 	public String getSellerId() {

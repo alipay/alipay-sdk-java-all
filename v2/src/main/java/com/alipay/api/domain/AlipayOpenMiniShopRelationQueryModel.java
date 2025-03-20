@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenMiniShopRelationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4497467822441553895L;
+	private static final long serialVersionUID = 4353772753295885466L;
 
 	/**
 	 * 门店 ID 列表。支付宝门店（蚂蚁门店）的 ShopID。

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.coupon.wufu.card.apply response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:28:50
+ * @since 1.0, 2025-03-14 11:11:42
  */
 public class AlipayFundCouponWufuCardApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2449866215459217798L;
+	private static final long serialVersionUID = 4815599626911139264L;
 
 	/** 
 	 * 请求成功（未返回错误码时），该值不为空，为奖品列表信息；若该值为空，可联系五福排查

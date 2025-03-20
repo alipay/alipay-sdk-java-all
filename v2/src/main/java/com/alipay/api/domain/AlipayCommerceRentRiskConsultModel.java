@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * 租赁智能风险咨询（智安盾免费版）
+ * 租赁行业风险咨询
  *
  * @author auto create
- * @since 1.0, 2025-02-27 10:44:36
+ * @since 1.0, 2025-03-19 14:12:25
  */
 public class AlipayCommerceRentRiskConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4532357153376171168L;
+	private static final long serialVersionUID = 7412314371518253864L;
 
 	/**
 	 * 支付宝openid
@@ -24,6 +27,13 @@ public class AlipayCommerceRentRiskConsultModel extends AlipayObject {
 	 */
 	@ApiField("alipay_user_id")
 	private String alipayUserId;
+
+	/**
+	 * null
+	 */
+	@ApiListField("consult_risk_types")
+	@ApiField("string")
+	private List<String> consultRiskTypes;
 
 	/**
 	 * 商家系统订单号
@@ -49,6 +59,13 @@ public class AlipayCommerceRentRiskConsultModel extends AlipayObject {
 	}
 	public void setAlipayUserId(String alipayUserId) {
 		this.alipayUserId = alipayUserId;
+	}
+
+	public List<String> getConsultRiskTypes() {
+		return this.consultRiskTypes;
+	}
+	public void setConsultRiskTypes(List<String> consultRiskTypes) {
+		this.consultRiskTypes = consultRiskTypes;
 	}
 
 	public String getOutBizNo() {

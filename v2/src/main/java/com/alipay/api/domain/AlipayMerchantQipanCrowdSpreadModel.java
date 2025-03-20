@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 人群扩展接口
  *
  * @author auto create
- * @since 1.0, 2025-02-13 17:01:33
+ * @since 1.0, 2025-03-17 10:35:41
  */
 public class AlipayMerchantQipanCrowdSpreadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2898946874155357469L;
+	private static final long serialVersionUID = 4379234971526642976L;
 
 	/**
 	 * 安全应用范围，参考文档 <a href="https://opendocs.alipay.com/open/04zfa9?pathHash=f4809e98">安全应用范围枚举</a>

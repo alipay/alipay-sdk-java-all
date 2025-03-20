@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MiniAppPackageInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6495245375855744682L;
+	private static final long serialVersionUID = 3697426212796979984L;
 
 	/**
 	 * 包二维码地址

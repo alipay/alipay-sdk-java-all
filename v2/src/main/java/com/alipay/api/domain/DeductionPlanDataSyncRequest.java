@@ -9,14 +9,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 扣款计划数据同步请求模型
  *
  * @author auto create
- * @since 1.0, 2025-01-10 11:23:41
+ * @since 1.0, 2025-03-11 21:15:17
  */
 public class DeductionPlanDataSyncRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 4435661357878788592L;
+	private static final long serialVersionUID = 4168947199457811594L;
 
 	/**
-	 * 课时数（电教馆教培特有）
+	 * 课时数（电教馆教培特有）,单位个，表示有1个课时
 	 */
 	@ApiField("class_hours")
 	private Long classHours;
@@ -52,7 +52,7 @@ public class DeductionPlanDataSyncRequest extends AlipayObject {
 	private String originalAmount;
 
 	/**
-	 * 期数
+	 * 期数，具体数值，如1表示第1期
 	 */
 	@ApiField("period")
 	private String period;

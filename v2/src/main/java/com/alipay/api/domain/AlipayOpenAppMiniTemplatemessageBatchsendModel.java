@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量发送模板消息
  *
  * @author auto create
- * @since 1.0, 2024-01-14 22:42:48
+ * @since 1.0, 2025-03-06 11:44:53
  */
 public class AlipayOpenAppMiniTemplatemessageBatchsendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1558781352624641344L;
+	private static final long serialVersionUID = 7357214588196387928L;
 
 	/**
 	 * 棋盘人群编码。参数非必传。若传入棋盘人群编码，平台将会对棋盘人群包内的用户和消息模板订阅人群取交集，进行定向消息投送；若不传则默认对该消息模板的订阅人群进行批量发送。

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.commercial.performance.verify request
  * 
  * @author auto create
- * @since 1.0, 2025-02-20 16:57:28
+ * @since 1.0, 2025-03-19 10:57:27
  */
 public class AlipayCommerceMedicalCommercialPerformanceVerifyRequest implements AlipayRequest<AlipayCommerceMedicalCommercialPerformanceVerifyResponse> {
 

@@ -11,11 +11,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 获取已授权的订购地址
  *
  * @author auto create
- * @since 1.0, 2024-05-15 15:08:14
+ * @since 1.0, 2025-03-19 18:14:26
  */
 public class AlipayInsSceneEcommercePurchaselinkAuthModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4833966463295118118L;
+	private static final long serialVersionUID = 6485191661165751361L;
+
+	/**
+	 * 如果明确要求需要指定扣费账户，传入用于蚂蚁保进行校验
+	 */
+	@ApiField("assign_withdraw_account_no")
+	private String assignWithdrawAccountNo;
 
 	/**
 	 * 至少订购天数
@@ -42,7 +48,7 @@ public class AlipayInsSceneEcommercePurchaselinkAuthModel extends AlipayObject {
 	private String loginUserId;
 
 	/**
-	 * session过期时间
+	 * session过期时间，具体的过期结束时间
 	 */
 	@ApiField("out_session_expiration")
 	private Date outSessionExpiration;
@@ -98,6 +104,13 @@ BUYER  买家
 	 */
 	@ApiField("user_client")
 	private String userClient;
+
+	public String getAssignWithdrawAccountNo() {
+		return this.assignWithdrawAccountNo;
+	}
+	public void setAssignWithdrawAccountNo(String assignWithdrawAccountNo) {
+		this.assignWithdrawAccountNo = assignWithdrawAccountNo;
+	}
 
 	public Long getAtLeastDays() {
 		return this.atLeastDays;

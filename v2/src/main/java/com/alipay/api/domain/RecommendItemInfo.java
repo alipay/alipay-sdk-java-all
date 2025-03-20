@@ -7,14 +7,16 @@ import com.alipay.api.internal.mapping.ApiField;
  * 客户端询价返回的商品信息
  *
  * @author auto create
- * @since 1.0, 2024-06-13 09:55:55
+ * @since 1.0, 2025-03-13 11:11:09
  */
 public class RecommendItemInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5485648789535549457L;
+	private static final long serialVersionUID = 1623665569216857538L;
 
 	/**
-	 * 用户要对自己的手机号进行充值的面额
+	 * 单元：元。
+话费面值，比如50/100/200
+用户要对自己的手机号进行充值的金额。
 	 */
 	@ApiField("face")
 	private String face;
@@ -26,7 +28,7 @@ public class RecommendItemInfo extends AlipayObject {
 	private String itemId;
 
 	/**
-	 * 当前面额的价格为50元
+	 * 商品价格，50.00表示当前面额的价格为50元，但商品价格和面额不一定等价，也就是50的面额价格不一定是50.00元。
 	 */
 	@ApiField("price")
 	private String price;

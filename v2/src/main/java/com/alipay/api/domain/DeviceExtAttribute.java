@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 设备绑定需要的额外信息
  *
  * @author auto create
- * @since 1.0, 2025-02-28 15:29:56
+ * @since 1.0, 2025-03-17 16:40:21
  */
 public class DeviceExtAttribute extends AlipayObject {
 
-	private static final long serialVersionUID = 3656261318189521425L;
+	private static final long serialVersionUID = 1347853828922469598L;
 
 	/**
 	 * 商家编号，由服务商定义，需要保证在服务商下唯一
@@ -24,6 +24,12 @@ public class DeviceExtAttribute extends AlipayObject {
 	 */
 	@ApiField("external_shop_id")
 	private String externalShopId;
+
+	/**
+	 * 卖进方案扩展信息
+	 */
+	@ApiField("sales_solution_ext")
+	private SalesSolutionExt salesSolutionExt;
 
 	/**
 	 * 间连绑定时必有，用于设备左上角展示，可以区分设备所在门店
@@ -73,6 +79,13 @@ public class DeviceExtAttribute extends AlipayObject {
 	}
 	public void setExternalShopId(String externalShopId) {
 		this.externalShopId = externalShopId;
+	}
+
+	public SalesSolutionExt getSalesSolutionExt() {
+		return this.salesSolutionExt;
+	}
+	public void setSalesSolutionExt(SalesSolutionExt salesSolutionExt) {
+		this.salesSolutionExt = salesSolutionExt;
 	}
 
 	public String getShopName() {

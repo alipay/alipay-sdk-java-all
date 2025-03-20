@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家群活动详情模型
  *
  * @author auto create
- * @since 1.0, 2025-02-11 14:57:44
+ * @since 1.0, 2025-03-06 15:40:12
  */
 public class GroupActivityDetailVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4196539959336669868L;
+	private static final long serialVersionUID = 2557321592465564496L;
 
 	/**
 	 * 业务类型
@@ -52,6 +52,12 @@ public class GroupActivityDetailVO extends AlipayObject {
 	 */
 	@ApiField("gmt_start")
 	private Date gmtStart;
+
+	/**
+	 * 商品活动顶部运营位内容
+	 */
+	@ApiField("goods_content")
+	private GoodsActivityContentVO goodsContent;
 
 	/**
 	 * 商家群活动id
@@ -118,6 +124,13 @@ public class GroupActivityDetailVO extends AlipayObject {
 	}
 	public void setGmtStart(Date gmtStart) {
 		this.gmtStart = gmtStart;
+	}
+
+	public GoodsActivityContentVO getGoodsContent() {
+		return this.goodsContent;
+	}
+	public void setGoodsContent(GoodsActivityContentVO goodsContent) {
+		this.goodsContent = goodsContent;
 	}
 
 	public String getGroupActivityId() {

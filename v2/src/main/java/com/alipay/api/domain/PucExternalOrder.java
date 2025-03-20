@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 生活缴费外部交易模型
  *
  * @author auto create
- * @since 1.0, 2023-11-09 14:42:41
+ * @since 1.0, 2025-03-17 17:17:53
  */
 public class PucExternalOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 8821796717792939839L;
+	private static final long serialVersionUID = 3597625551727984659L;
 
 	/**
 	 * 公共事业单位收费账号对应的地址或者收费商户自行定义的地址

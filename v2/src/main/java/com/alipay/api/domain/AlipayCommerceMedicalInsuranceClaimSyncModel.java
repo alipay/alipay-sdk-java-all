@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 理赔案件结果同步
  *
  * @author auto create
- * @since 1.0, 2025-03-05 11:38:45
+ * @since 1.0, 2025-03-18 17:55:50
  */
 public class AlipayCommerceMedicalInsuranceClaimSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7361875385469936928L;
+	private static final long serialVersionUID = 8825212343345869627L;
 
 	/**
 	 * TPA垫付金额，单位为元，精确到小数点后两位

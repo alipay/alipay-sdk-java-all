@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class DatadigitalFincloudFinsaasAccountAppliedSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6868216253481324386L;
+	private static final long serialVersionUID = 2248145933698714457L;
 
 	
 

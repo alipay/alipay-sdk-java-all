@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 安心招工平台考勤信息同步
  *
  * @author auto create
- * @since 1.0, 2025-01-17 16:17:23
+ * @since 1.0, 2025-03-11 16:52:28
  */
 public class AlipayEbppIndustryRecruitAttendanceSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6589864591956858592L;
+	private static final long serialVersionUID = 7459869529824929979L;
 
 	/**
 	 * 考勤打卡信息同步
@@ -75,6 +75,18 @@ public class AlipayEbppIndustryRecruitAttendanceSyncModel extends AlipayObject {
 	 */
 	@ApiField("out_job_id")
 	private String outJobId;
+
+	/**
+	 * 外部用户id
+	 */
+	@ApiField("out_user_id")
+	private String outUserId;
+
+	/**
+	 * 考勤信息来源
+	 */
+	@ApiField("source")
+	private String source;
 
 	public String getAttendanceType() {
 		return this.attendanceType;
@@ -144,6 +156,20 @@ public class AlipayEbppIndustryRecruitAttendanceSyncModel extends AlipayObject {
 	}
 	public void setOutJobId(String outJobId) {
 		this.outJobId = outJobId;
+	}
+
+	public String getOutUserId() {
+		return this.outUserId;
+	}
+	public void setOutUserId(String outUserId) {
+		this.outUserId = outUserId;
+	}
+
+	public String getSource() {
+		return this.source;
+	}
+	public void setSource(String source) {
+		this.source = source;
 	}
 
 }

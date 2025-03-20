@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 碰一下点餐物料申请
  *
  * @author auto create
- * @since 1.0, 2024-11-06 11:11:54
+ * @since 1.0, 2025-03-13 11:31:41
  */
 public class AlipayOpenSpNordermaterialsapplyOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4881594454929864981L;
+	private static final long serialVersionUID = 8224335743327146857L;
 
 	/**
 	 * 与支付宝约定模版样式后，提供模版编号，接口传入

@@ -8,11 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fincore.compliance.sign.status.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-02 16:32:22
+ * @since 1.0, 2025-03-13 10:52:27
  */
 public class AlipayFincoreComplianceSignStatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3747544986644572747L;
+	private static final long serialVersionUID = 1519574132973491359L;
+
+	/** 
+	 * 用印归档文件下载地址，有效期12小时
+	 */
+	@ApiField("archived_file_http_url")
+	private String archivedFileHttpUrl;
 
 	/** 
 	 * 业务单据号
@@ -31,6 +37,13 @@ public class AlipayFincoreComplianceSignStatusQueryResponse extends AlipayRespon
 	 */
 	@ApiField("status")
 	private String status;
+
+	public void setArchivedFileHttpUrl(String archivedFileHttpUrl) {
+		this.archivedFileHttpUrl = archivedFileHttpUrl;
+	}
+	public String getArchivedFileHttpUrl( ) {
+		return this.archivedFileHttpUrl;
+	}
 
 	public void setBusinessId(String businessId) {
 		this.businessId = businessId;

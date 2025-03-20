@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.pe.payafteruse.task.sync request
  * 
  * @author auto create
- * @since 1.0, 2025-02-19 16:27:25
+ * @since 1.0, 2025-03-13 17:22:27
  */
 public class ZhimaCreditPePayafteruseTaskSyncRequest implements AlipayRequest<ZhimaCreditPePayafteruseTaskSyncResponse> {
 

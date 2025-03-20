@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 微付宝签约吱口令创建
  *
  * @author auto create
- * @since 1.0, 2024-10-30 15:45:19
+ * @since 1.0, 2025-03-06 20:01:53
  */
 public class AlipayCommerceSignShakecodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6173273685527173427L;
+	private static final long serialVersionUID = 1637268668295579884L;
 
 	/**
 	 * 吱口令跳转链接
@@ -19,11 +19,24 @@ public class AlipayCommerceSignShakecodeCreateModel extends AlipayObject {
 	@ApiField("biz_linked_id")
 	private String bizLinkedId;
 
+	/**
+	 * SHARE_CODE：吱口令；SHORT_URL：短链接，不传默认为：SHARE_CODE
+	 */
+	@ApiField("type")
+	private String type;
+
 	public String getBizLinkedId() {
 		return this.bizLinkedId;
 	}
 	public void setBizLinkedId(String bizLinkedId) {
 		this.bizLinkedId = bizLinkedId;
+	}
+
+	public String getType() {
+		return this.type;
+	}
+	public void setType(String type) {
+		this.type = type;
 	}
 
 }

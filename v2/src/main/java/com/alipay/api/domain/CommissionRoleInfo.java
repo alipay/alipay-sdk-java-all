@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-01-07 13:42:22
+ * @since 1.0, 2025-03-19 14:12:27
  */
 public class CommissionRoleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5252356264232377893L;
+	private static final long serialVersionUID = 8619441965452565949L;
 
 	/**
 	 * 合作伙伴支付宝账号名称

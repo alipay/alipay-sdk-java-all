@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.tradecomplain.feedback.submit request
  * 
  * @author auto create
- * @since 1.0, 2023-11-06 10:52:20
+ * @since 1.0, 2025-03-12 16:40:01
  */
 public class AlipayMerchantTradecomplainFeedbackSubmitRequest implements AlipayRequest<AlipayMerchantTradecomplainFeedbackSubmitResponse> {
 
@@ -24,13 +24,15 @@ public class AlipayMerchantTradecomplainFeedbackSubmitRequest implements AlipayR
 	private String complainEventId;
 
 	/** 
-	* 反馈类目ID
-00:使用体验保障金退款；
+	* 小程序交易反馈类目ID：
 02:通过其他方式退款;
 03:已发货;
 04:其他;
 05:已完成售后服务;
-06:非我方责任范围；
+06:非我方责任范围;
+
+安心付/先享后付反馈类目ID：
+194:反馈处理结果;
 	 */
 	private String feedbackCode;
 

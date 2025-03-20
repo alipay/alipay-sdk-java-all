@@ -1,5 +1,6 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
 import java.util.List;
 
 import com.alipay.api.AlipayObject;
@@ -10,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发送商家群内群发消息
  *
  * @author auto create
- * @since 1.0, 2024-12-13 10:25:51
+ * @since 1.0, 2025-03-07 16:52:56
  */
 public class AlipayMerchantGroupGroupmsgSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8694417249662613456L;
+	private static final long serialVersionUID = 6177154323487131275L;
 
 	/**
 	 * 是否需要@所有人，不传默认false(不需要@所有人)
@@ -40,6 +41,24 @@ public class AlipayMerchantGroupGroupmsgSendModel extends AlipayObject {
 	 */
 	@ApiField("msg_data")
 	private GroupMessageVO msgData;
+
+	/**
+	 * 该参数用于修改时传入创建得到的msgId字段，创建时无需传入，且只有定时发送消息在发送之前可以进行修改，立即发送不支持修改
+	 */
+	@ApiField("msg_id")
+	private String msgId;
+
+	/**
+	 * 该参数用于描述群发消息是立即发送还是定时发送，0表示立即发送，1表示定时发送，不填表示定时发送
+	 */
+	@ApiField("send_strategy")
+	private String sendStrategy;
+
+	/**
+	 * 该参数使用 yyyy-MM-dd HH:mm:ss 格式的日期，用于设置定时发送的时间，若不填则默认采用当前时间
+	 */
+	@ApiField("send_time")
+	private Date sendTime;
 
 	/**
 	 * 推送的消息文案标题（参考：好物分享来咯！）
@@ -73,6 +92,27 @@ public class AlipayMerchantGroupGroupmsgSendModel extends AlipayObject {
 	}
 	public void setMsgData(GroupMessageVO msgData) {
 		this.msgData = msgData;
+	}
+
+	public String getMsgId() {
+		return this.msgId;
+	}
+	public void setMsgId(String msgId) {
+		this.msgId = msgId;
+	}
+
+	public String getSendStrategy() {
+		return this.sendStrategy;
+	}
+	public void setSendStrategy(String sendStrategy) {
+		this.sendStrategy = sendStrategy;
+	}
+
+	public Date getSendTime() {
+		return this.sendTime;
+	}
+	public void setSendTime(Date sendTime) {
+		this.sendTime = sendTime;
 	}
 
 	public String getTitle() {

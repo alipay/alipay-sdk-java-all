@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用服务产品交易支付
  *
  * @author auto create
- * @since 1.0, 2022-12-29 10:38:42
+ * @since 1.0, 2025-03-19 16:01:09
  */
 public class ZhimaCreditPeIndustryTradePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3352778183879297123L;
+	private static final long serialVersionUID = 1831479331699939331L;
 
 	/**
 	 * 支付金额,单位元,支持两位小数

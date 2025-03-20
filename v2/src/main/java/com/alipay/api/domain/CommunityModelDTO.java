@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-03-04 13:52:24
+ * @since 1.0, 2025-03-19 14:12:26
  */
 public class CommunityModelDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6817138917135896741L;
+	private static final long serialVersionUID = 2881864981242942442L;
 
 	/**
 	 * null

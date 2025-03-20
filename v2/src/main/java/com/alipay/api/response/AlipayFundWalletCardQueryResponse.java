@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundWalletCardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5397977763456524457L;
+	private static final long serialVersionUID = 4256931533359554365L;
 
 	/** 
 	 * 礼品卡对客展示

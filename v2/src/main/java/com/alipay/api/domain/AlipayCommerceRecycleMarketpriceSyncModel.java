@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 回收行情价格同步
  *
  * @author auto create
- * @since 1.0, 2025-01-13 14:37:23
+ * @since 1.0, 2025-03-19 14:12:27
  */
 public class AlipayCommerceRecycleMarketpriceSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7389428653354548452L;
+	private static final long serialVersionUID = 2547457239827854522L;
 
 	/**
 	 * null

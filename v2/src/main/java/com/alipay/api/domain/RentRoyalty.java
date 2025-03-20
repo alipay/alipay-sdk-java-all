@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁分账计划
  *
  * @author auto create
- * @since 1.0, 2025-01-08 16:24:26
+ * @since 1.0, 2025-03-18 14:19:33
  */
 public class RentRoyalty extends AlipayObject {
 
-	private static final long serialVersionUID = 3595276929527542927L;
+	private static final long serialVersionUID = 7329842991243581552L;
 
 	/**
 	 * 订单id
@@ -90,6 +90,12 @@ public class RentRoyalty extends AlipayObject {
 	 */
 	@ApiField("royalty_time")
 	private String royaltyTime;
+
+	/**
+	 * 分账触发方式
+	 */
+	@ApiField("royalty_trigger_type")
+	private String royaltyTriggerType;
 
 	/**
 	 * 仅在代偿给资方时，资方的收款方式为到银行卡的场景下才有值，资方的入金流水号
@@ -204,6 +210,13 @@ public class RentRoyalty extends AlipayObject {
 	}
 	public void setRoyaltyTime(String royaltyTime) {
 		this.royaltyTime = royaltyTime;
+	}
+
+	public String getRoyaltyTriggerType() {
+		return this.royaltyTriggerType;
+	}
+	public void setRoyaltyTriggerType(String royaltyTriggerType) {
+		this.royaltyTriggerType = royaltyTriggerType;
 	}
 
 	public String getSettleSerialNo() {

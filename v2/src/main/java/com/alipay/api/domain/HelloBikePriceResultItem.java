@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HelloBikePriceResultItem extends AlipayObject {
 
-	private static final long serialVersionUID = 5252967478396867183L;
+	private static final long serialVersionUID = 1752899982871122584L;
 
 	/**
 	 * 优惠卡类型，枚举值为 mcard,qcard,hycard,ycard,tcard

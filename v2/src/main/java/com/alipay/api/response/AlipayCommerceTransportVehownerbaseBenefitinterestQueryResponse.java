@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportVehownerbaseBenefitinterestQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8135562111896488634L;
+	private static final long serialVersionUID = 5586356428263782458L;
 
 	/** 
 	 * 权益编码

@@ -10,20 +10,20 @@ import com.alipay.api.internal.mapping.ApiListField;
  * NFC核身用户入库
  *
  * @author auto create
- * @since 1.0, 2025-02-27 10:41:59
+ * @since 1.0, 2025-03-12 13:25:54
  */
 public class AlipayOfflineProviderUserinfoNpassporterCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1814683127871642352L;
+	private static final long serialVersionUID = 4141611928185824389L;
 
 	/**
-	 * 身份证号
+	 * 身份证号。可以传明文，也可以传身份证号的32位大写MD5值。尽量使用MD5值
 	 */
 	@ApiField("identity_card")
 	private String identityCard;
 
 	/**
-	 * 用户姓名
+	 * 用户身份证姓名，如果没有可以不填
 	 */
 	@ApiField("name")
 	private String name;
@@ -36,7 +36,7 @@ public class AlipayOfflineProviderUserinfoNpassporterCreateModel extends AlipayO
 	private List<String> outBizNo;
 
 	/**
-	 * 用户手机号，非必须，为了后续数据输出方便，尽量传入
+	 * 用户手机号。如果身份证选择不传，那手机号必须有。 如果有身份证信息，手机号非必须，为了后续数据输出方便，尽量传入。
 	 */
 	@ApiField("phone")
 	private String phone;

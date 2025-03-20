@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 服务平台服务商虚拟号申请
  *
  * @author auto create
- * @since 1.0, 2025-01-13 16:50:01
+ * @since 1.0, 2025-03-07 11:38:35
  */
 public class AlipayInsSceneInsserviceprodSerprivacyApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4163429483326421273L;
+	private static final long serialVersionUID = 4672479728574395237L;
 
 	/**
 	 * 蚂蚁服务申请单号

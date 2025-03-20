@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资方确认租赁订单关系
  *
  * @author auto create
- * @since 1.0, 2025-03-05 10:26:58
+ * @since 1.0, 2025-03-18 16:06:22
  */
 public class AlipayCommerceRentOrderInvestConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4413271724994544715L;
+	private static final long serialVersionUID = 2486592164912729193L;
 
 	/**
 	 * 2088开头的16位纯数字，小程序场景下获取用户ID请参考：用户授权; 其它场景下获取用户ID请参考：网页授权获取用户信息; 其中buyer_id与buyer_open_id不能同时为空
@@ -26,13 +26,32 @@ public class AlipayCommerceRentOrderInvestConfirmModel extends AlipayObject {
 	private String buyerOpenId;
 
 	/**
+	 * 如果是确认放款款那么这个confirm_out_order_id就是放款借据ID
+如果是确认还款那么这个confirm_out_order_id就是还款借据ID
+	 */
+	@ApiField("confirm_out_order_id")
+	private String confirmOutOrderId;
+
+	/**
+	 * 资方放款失败、还款失败、结清失败的原因
+	 */
+	@ApiField("confirm_reason")
+	private String confirmReason;
+
+	/**
 	 * 资方确认结果
 	 */
 	@ApiField("confirm_result")
 	private String confirmResult;
 
 	/**
-	 * 订单、分账、放款确认类型
+	 * 放款、还款、结清确认时间，格式：yyyy-MM-dd HH:mm:ss
+	 */
+	@ApiField("confirm_time")
+	private String confirmTime;
+
+	/**
+	 * 订单、分账、放款、还款、结清确认类型
 	 */
 	@ApiField("confirm_type")
 	private String confirmType;
@@ -75,11 +94,32 @@ public class AlipayCommerceRentOrderInvestConfirmModel extends AlipayObject {
 		this.buyerOpenId = buyerOpenId;
 	}
 
+	public String getConfirmOutOrderId() {
+		return this.confirmOutOrderId;
+	}
+	public void setConfirmOutOrderId(String confirmOutOrderId) {
+		this.confirmOutOrderId = confirmOutOrderId;
+	}
+
+	public String getConfirmReason() {
+		return this.confirmReason;
+	}
+	public void setConfirmReason(String confirmReason) {
+		this.confirmReason = confirmReason;
+	}
+
 	public String getConfirmResult() {
 		return this.confirmResult;
 	}
 	public void setConfirmResult(String confirmResult) {
 		this.confirmResult = confirmResult;
+	}
+
+	public String getConfirmTime() {
+		return this.confirmTime;
+	}
+	public void setConfirmTime(String confirmTime) {
+		this.confirmTime = confirmTime;
 	}
 
 	public String getConfirmType() {

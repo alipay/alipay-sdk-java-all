@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 接口协议信息字段类型定义
  *
  * @author auto create
- * @since 1.0, 2024-12-02 17:42:39
+ * @since 1.0, 2025-03-19 16:59:24
  */
 public class AgreementView extends AlipayObject {
 
-	private static final long serialVersionUID = 5287874788878321941L;
+	private static final long serialVersionUID = 2133311837128545621L;
+
+	/**
+	 * 协议状态枚举值(INIT/ENABLE/FREEZE/DISABLE)
+	 */
+	@ApiField("agreement_status")
+	private String agreementStatus;
 
 	/**
 	 * 合同模板code带版本号
@@ -38,6 +44,12 @@ public class AgreementView extends AlipayObject {
 	private String contentType;
 
 	/**
+	 * 合同编号
+	 */
+	@ApiField("contract_no")
+	private String contractNo;
+
+	/**
 	 * 当前协议是否强制阅读
 	 */
 	@ApiField("force_read")
@@ -60,6 +72,13 @@ public class AgreementView extends AlipayObject {
 	 */
 	@ApiField("name")
 	private String name;
+
+	public String getAgreementStatus() {
+		return this.agreementStatus;
+	}
+	public void setAgreementStatus(String agreementStatus) {
+		this.agreementStatus = agreementStatus;
+	}
 
 	public String getAgreementVersion() {
 		return this.agreementVersion;
@@ -87,6 +106,13 @@ public class AgreementView extends AlipayObject {
 	}
 	public void setContentType(String contentType) {
 		this.contentType = contentType;
+	}
+
+	public String getContractNo() {
+		return this.contractNo;
+	}
+	public void setContractNo(String contractNo) {
+		this.contractNo = contractNo;
 	}
 
 	public Boolean getForceRead() {

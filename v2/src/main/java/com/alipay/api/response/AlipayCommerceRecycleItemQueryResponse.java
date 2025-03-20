@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.recycle.item.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-02-12 10:17:22
+ * @since 1.0, 2025-03-19 14:12:26
  */
 public class AlipayCommerceRecycleItemQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4382361427399736332L;
+	private static final long serialVersionUID = 4713531746498161318L;
 
 	/** 
 	 * 回收商品，包含回收商品的款式、价格、状态等信息

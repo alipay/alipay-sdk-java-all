@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ScheduleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3759575643299373491L;
+	private static final long serialVersionUID = 4229133433885974495L;
 
 	/**
 	 * 根据定义的间隔长度跟单位，将date的时间切分，例如将2016-11-29整天按30分钟为一段切分为48段： 111111111111111111111111111111111110000011111111 ， 其中0表示不可用，1表示可用

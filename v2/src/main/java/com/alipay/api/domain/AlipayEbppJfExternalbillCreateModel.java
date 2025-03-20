@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 缴费外部账单
  *
  * @author auto create
- * @since 1.0, 2023-11-16 11:32:39
+ * @since 1.0, 2025-03-17 17:17:53
  */
 public class AlipayEbppJfExternalbillCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8763143327282478976L;
+	private static final long serialVersionUID = 4548932421279923522L;
 
 	/**
 	 * 蚂蚁统一会员ID

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询景点信息详情
  *
  * @author auto create
- * @since 1.0, 2025-01-08 14:57:24
+ * @since 1.0, 2025-03-19 14:12:27
  */
 public class AlipayCloudCloudpromoScenicInfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2432165597658392776L;
+	private static final long serialVersionUID = 5843823512992395913L;
 
 	/**
 	 * 租户ID

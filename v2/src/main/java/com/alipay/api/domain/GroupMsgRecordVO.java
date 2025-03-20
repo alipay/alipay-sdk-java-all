@@ -11,17 +11,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家群群内消息发送记录模型
  *
  * @author auto create
- * @since 1.0, 2024-09-06 15:05:52
+ * @since 1.0, 2025-03-07 16:52:22
  */
 public class GroupMsgRecordVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4855981368174484766L;
+	private static final long serialVersionUID = 5696375338284146117L;
 
 	/**
 	 * 业务自己定义的业务id
 	 */
 	@ApiField("biz_id")
 	private String bizId;
+
+	/**
+	 * 用于描述定时群发消息发送失败的原因包括校验异常或者是消息内容异常等信息, 一般与send_status一起判断, 当send_status不等于成功时, 可以查看该字段是否有校验错误信息
+	 */
+	@ApiField("error_msg")
+	private String errorMsg;
 
 	/**
 	 * 群组id列表
@@ -62,6 +68,12 @@ public class GroupMsgRecordVO extends AlipayObject {
 	private Long sendStatus;
 
 	/**
+	 * 发送策略支持0立即发送和1定时发送
+	 */
+	@ApiField("send_strategy")
+	private String sendStrategy;
+
+	/**
 	 * 消息发送时间
 	 */
 	@ApiField("send_time")
@@ -78,6 +90,13 @@ public class GroupMsgRecordVO extends AlipayObject {
 	}
 	public void setBizId(String bizId) {
 		this.bizId = bizId;
+	}
+
+	public String getErrorMsg() {
+		return this.errorMsg;
+	}
+	public void setErrorMsg(String errorMsg) {
+		this.errorMsg = errorMsg;
 	}
 
 	public List<String> getGroupIds() {
@@ -106,6 +125,13 @@ public class GroupMsgRecordVO extends AlipayObject {
 	}
 	public void setSendStatus(Long sendStatus) {
 		this.sendStatus = sendStatus;
+	}
+
+	public String getSendStrategy() {
+		return this.sendStrategy;
+	}
+	public void setSendStrategy(String sendStrategy) {
+		this.sendStrategy = sendStrategy;
 	}
 
 	public Date getSendTime() {

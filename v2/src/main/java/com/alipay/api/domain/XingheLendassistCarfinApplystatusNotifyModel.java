@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 车金融订单状态通知接口
  *
  * @author auto create
- * @since 1.0, 2025-02-10 18:03:04
+ * @since 1.0, 2025-03-14 15:05:25
  */
 public class XingheLendassistCarfinApplystatusNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2217589926369756525L;
+	private static final long serialVersionUID = 5816693276626874926L;
 
 	/**
 	 * 星河侧唯一业务编号
@@ -72,6 +72,12 @@ true/false
 	 */
 	@ApiField("fin_org")
 	private String finOrg;
+
+	/**
+	 * 资金利率
+	 */
+	@ApiField("fund_rate")
+	private String fundRate;
 
 	/**
 	 * 是否完成实名认证，true/false
@@ -144,6 +150,12 @@ true/false
 	 */
 	@ApiField("repay_type")
 	private String repayType;
+
+	/**
+	 * 服务费率（融担费率、保险费率等）
+	 */
+	@ApiField("service_fee_rate")
+	private String serviceFeeRate;
 
 	/**
 	 * CANCEL_FAIL: 取消失败（适用于客户挽回成功的场景，经联系后客户愿意继续办理）
@@ -219,6 +231,13 @@ CANCEL_SUC: 取消成功（适用于客户确定放弃的场景，机构侧后�
 	}
 	public void setFinOrg(String finOrg) {
 		this.finOrg = finOrg;
+	}
+
+	public String getFundRate() {
+		return this.fundRate;
+	}
+	public void setFundRate(String fundRate) {
+		this.fundRate = fundRate;
 	}
 
 	public Boolean getIdentityVerified() {
@@ -303,6 +322,13 @@ CANCEL_SUC: 取消成功（适用于客户确定放弃的场景，机构侧后�
 	}
 	public void setRepayType(String repayType) {
 		this.repayType = repayType;
+	}
+
+	public String getServiceFeeRate() {
+		return this.serviceFeeRate;
+	}
+	public void setServiceFeeRate(String serviceFeeRate) {
+		this.serviceFeeRate = serviceFeeRate;
 	}
 
 	public String getStatus() {

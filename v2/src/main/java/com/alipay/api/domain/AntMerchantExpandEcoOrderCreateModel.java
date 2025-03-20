@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ISV订单信息创建
  *
  * @author auto create
- * @since 1.0, 2024-07-10 15:05:16
+ * @since 1.0, 2025-03-06 20:48:19
  */
 public class AntMerchantExpandEcoOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8464777952352546843L;
+	private static final long serialVersionUID = 5514891515955797771L;
 
 	/**
 	 * 交易平台
@@ -84,6 +84,13 @@ public class AntMerchantExpandEcoOrderCreateModel extends AlipayObject {
 	 */
 	@ApiField("shop_code")
 	private String shopCode;
+
+	/**
+	 * nfc线圈的tag_id
+	 */
+	@ApiListField("tag_ids")
+	@ApiField("string")
+	private List<String> tagIds;
 
 	public String getBusiPlatform() {
 		return this.busiPlatform;
@@ -160,6 +167,13 @@ public class AntMerchantExpandEcoOrderCreateModel extends AlipayObject {
 	}
 	public void setShopCode(String shopCode) {
 		this.shopCode = shopCode;
+	}
+
+	public List<String> getTagIds() {
+		return this.tagIds;
+	}
+	public void setTagIds(List<String> tagIds) {
+		this.tagIds = tagIds;
 	}
 
 }

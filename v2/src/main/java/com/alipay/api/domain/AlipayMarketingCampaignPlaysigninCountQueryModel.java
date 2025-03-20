@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签到次数查询（包含连续签到次数和累积签到次数）
  *
  * @author auto create
- * @since 1.0, 2023-10-14 16:39:22
+ * @since 1.0, 2025-03-13 16:34:39
  */
 public class AlipayMarketingCampaignPlaysigninCountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1834819332692515766L;
+	private static final long serialVersionUID = 4343244481316365934L;
 
 	/**
 	 * openid

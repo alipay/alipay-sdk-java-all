@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CallDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4839183685557263589L;
+	private static final long serialVersionUID = 2714835946433774673L;
 
 	/**
 	 * 附加中间号码，双呼场景下可能用到。

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MovieList extends AlipayObject {
 
-	private static final long serialVersionUID = 3252955468767895429L;
+	private static final long serialVersionUID = 6727311175566115845L;
 
 	/**
 	 * 演员阵容

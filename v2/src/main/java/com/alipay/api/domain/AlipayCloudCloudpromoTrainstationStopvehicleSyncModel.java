@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 同步停车库车辆入场信息
  *
  * @author auto create
- * @since 1.0, 2025-02-28 19:01:52
+ * @since 1.0, 2025-03-07 19:54:22
  */
 public class AlipayCloudCloudpromoTrainstationStopvehicleSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7817487459282252246L;
+	private static final long serialVersionUID = 3465899991625675472L;
 
 	/**
 	 * 停车照片链接，车辆状态是已停入，需要传该参数
@@ -80,6 +80,12 @@ public class AlipayCloudCloudpromoTrainstationStopvehicleSyncModel extends Alipa
 	 */
 	@ApiField("place_name")
 	private String placeName;
+
+	/**
+	 * 位置ID，用于区分不同poi点位的唯一值
+	 */
+	@ApiField("poi_id")
+	private String poiId;
 
 	/**
 	 * 已入场：车辆进入停车场
@@ -171,6 +177,13 @@ public class AlipayCloudCloudpromoTrainstationStopvehicleSyncModel extends Alipa
 	}
 	public void setPlaceName(String placeName) {
 		this.placeName = placeName;
+	}
+
+	public String getPoiId() {
+		return this.poiId;
+	}
+	public void setPoiId(String poiId) {
+		this.poiId = poiId;
 	}
 
 	public String getStatus() {

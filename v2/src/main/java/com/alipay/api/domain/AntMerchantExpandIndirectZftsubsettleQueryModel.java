@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 二级商户结算信息查询
  *
  * @author auto create
- * @since 1.0, 2024-01-09 13:57:52
+ * @since 1.0, 2025-03-19 10:44:52
  */
 public class AntMerchantExpandIndirectZftsubsettleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1485921471915145719L;
+	private static final long serialVersionUID = 2198116446452175162L;
 
 	/**
 	 * 二级商户smid

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.ebbenefit.reddot.delete response.
  * 
  * @author auto create
- * @since 1.0, 2025-01-08 15:32:22
+ * @since 1.0, 2025-03-13 16:47:25
  */
 public class AlipayCommerceMedicalEbbenefitReddotDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8363135854333285273L;
+	private static final long serialVersionUID = 7324526629833363379L;
 
 	
 

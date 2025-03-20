@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudCloudbaseFunctionTrafficconfigGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3312864316556274827L;
+	private static final long serialVersionUID = 5661651389914718566L;
 
 	/** 
 	 * 流量分配规则列表

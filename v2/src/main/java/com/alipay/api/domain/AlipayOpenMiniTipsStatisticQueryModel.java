@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序收藏tips引导投放查询汇总数据
  *
  * @author auto create
- * @since 1.0, 2024-07-12 11:06:15
+ * @since 1.0, 2025-03-14 14:18:54
  */
 public class AlipayOpenMiniTipsStatisticQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2768723155784288215L;
+	private static final long serialVersionUID = 5561988299434638545L;
 
 	/**
 	 * 收藏引导投放活动ID，供查询收藏引导活动配置接口调用

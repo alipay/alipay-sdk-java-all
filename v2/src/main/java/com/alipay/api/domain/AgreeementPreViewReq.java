@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 协议预览请求
  *
  * @author auto create
- * @since 1.0, 2024-12-02 17:42:39
+ * @since 1.0, 2025-03-19 16:59:24
  */
 public class AgreeementPreViewReq extends AlipayObject {
 
-	private static final long serialVersionUID = 7551919616571688652L;
+	private static final long serialVersionUID = 8579389289718428823L;
+
+	/**
+	 * 协议状态枚举值(INIT/ENABLE/FREEZE/DISABLE)
+	 */
+	@ApiField("agreement_status")
+	private String agreementStatus;
 
 	/**
 	 * 合同模板code带版本号
@@ -26,10 +32,23 @@ public class AgreeementPreViewReq extends AlipayObject {
 	private String code;
 
 	/**
+	 * 合同编号
+	 */
+	@ApiField("contract_no")
+	private String contractNo;
+
+	/**
 	 * 机构信息
 	 */
 	@ApiField("fund_supplier")
 	private InstitutionVO fundSupplier;
+
+	public String getAgreementStatus() {
+		return this.agreementStatus;
+	}
+	public void setAgreementStatus(String agreementStatus) {
+		this.agreementStatus = agreementStatus;
+	}
 
 	public String getAgreementVersion() {
 		return this.agreementVersion;
@@ -43,6 +62,13 @@ public class AgreeementPreViewReq extends AlipayObject {
 	}
 	public void setCode(String code) {
 		this.code = code;
+	}
+
+	public String getContractNo() {
+		return this.contractNo;
+	}
+	public void setContractNo(String contractNo) {
+		this.contractNo = contractNo;
 	}
 
 	public InstitutionVO getFundSupplier() {

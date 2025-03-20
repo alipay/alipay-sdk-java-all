@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 纷享销客创建商机的参数和返回值
  *
  * @author auto create
- * @since 1.0, 2024-12-30 17:54:51
+ * @since 1.0, 2025-03-11 17:29:54
  */
 public class FxiaokeCreateLeadsParams extends AlipayObject {
 
-	private static final long serialVersionUID = 5156989886741832957L;
+	private static final long serialVersionUID = 1465677367957161341L;
 
 	/**
 	 * 实际主导方
@@ -365,7 +365,7 @@ public class FxiaokeCreateLeadsParams extends AlipayObject {
 	private String source;
 
 	/**
-	 * 商机类型，{独立项目0，框架项目1，订单项目2}
+	 * 商机类型，{独立项目0，框架项目1，订单项目2，ULA3}
 	 */
 	@ApiField("type")
 	private String type;

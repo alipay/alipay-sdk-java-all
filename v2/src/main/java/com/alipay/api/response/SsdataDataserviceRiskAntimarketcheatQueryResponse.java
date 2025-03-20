@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class SsdataDataserviceRiskAntimarketcheatQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2756557226463373569L;
+	private static final long serialVersionUID = 6481229915776124764L;
 
 	/** 
 	 * 风险解释，从垃圾注册、虚假交易、名单库、身份冒用和不良记录等5个方面描述作弊风险

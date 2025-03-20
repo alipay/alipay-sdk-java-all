@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景开放平台逆向纠纷单模型
  *
  * @author auto create
- * @since 1.0, 2024-07-09 14:47:50
+ * @since 1.0, 2025-03-19 16:08:56
  */
 public class EcomRefundDisputeDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2623193671489826157L;
+	private static final long serialVersionUID = 1757429415952377261L;
 
 	/**
 	 * 事故发生地址

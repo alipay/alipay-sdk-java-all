@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * 租赁订单详情，包含租赁时间、金额、订单信息、分期计划、分账计划等详情
+ * 租赁订单详情，包含租赁时间、金额、订单信息、分期计划、分账计划、租赁单风控信息等详情
  *
  * @author auto create
- * @since 1.0, 2025-03-04 18:19:46
+ * @since 1.0, 2025-03-18 16:05:54
  */
 public class RentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7154893127236242612L;
+	private static final long serialVersionUID = 2459285185797989454L;
 
 	/**
 	 * 交易组件的订单Id

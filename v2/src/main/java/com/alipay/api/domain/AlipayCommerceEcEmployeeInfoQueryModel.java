@@ -7,11 +7,35 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询员工详情
  *
  * @author auto create
- * @since 1.0, 2025-01-03 17:16:53
+ * @since 1.0, 2025-03-11 11:06:19
  */
 public class AlipayCommerceEcEmployeeInfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2249815944571757535L;
+	private static final long serialVersionUID = 4772567941654749424L;
+
+	/**
+	 * 支付宝登录号（手机号或邮箱）
+	 */
+	@ApiField("alipay_logon_id")
+	private String alipayLogonId;
+
+	/**
+	 * 员工证件号码
+	 */
+	@ApiField("employee_cert_no")
+	private String employeeCertNo;
+
+	/**
+	 * 员工证件类型
+	 */
+	@ApiField("employee_cert_type")
+	private String employeeCertType;
+
+	/**
+	 * 员工邮箱
+	 */
+	@ApiField("employee_email")
+	private String employeeEmail;
 
 	/**
 	 * 员工id
@@ -38,10 +62,38 @@ public class AlipayCommerceEcEmployeeInfoQueryModel extends AlipayObject {
 	private String openId;
 
 	/**
-	 * 蚂蚁统一会员ID
+	 * 支付宝用户ID
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getAlipayLogonId() {
+		return this.alipayLogonId;
+	}
+	public void setAlipayLogonId(String alipayLogonId) {
+		this.alipayLogonId = alipayLogonId;
+	}
+
+	public String getEmployeeCertNo() {
+		return this.employeeCertNo;
+	}
+	public void setEmployeeCertNo(String employeeCertNo) {
+		this.employeeCertNo = employeeCertNo;
+	}
+
+	public String getEmployeeCertType() {
+		return this.employeeCertType;
+	}
+	public void setEmployeeCertType(String employeeCertType) {
+		this.employeeCertType = employeeCertType;
+	}
+
+	public String getEmployeeEmail() {
+		return this.employeeEmail;
+	}
+	public void setEmployeeEmail(String employeeEmail) {
+		this.employeeEmail = employeeEmail;
+	}
 
 	public String getEmployeeId() {
 		return this.employeeId;

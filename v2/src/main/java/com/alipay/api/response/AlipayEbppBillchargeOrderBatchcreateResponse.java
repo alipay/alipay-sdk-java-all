@@ -11,11 +11,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.billcharge.order.batchcreate response.
  * 
  * @author auto create
- * @since 1.0, 2025-01-13 13:45:40
+ * @since 1.0, 2025-03-19 13:12:26
  */
 public class AlipayEbppBillchargeOrderBatchcreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7863187379377915783L;
+	private static final long serialVersionUID = 7867377126982719972L;
+
+	/** 
+	 * 行业收单流水,50新链路单笔订单创建的时候返回。对应原本的子订单号中的参数
+	 */
+	@ApiField("bill_no")
+	private String billNo;
+
+	/** 
+	 * 用于作为交易号拉起 my.tradePay 收银台
+	 */
+	@ApiField("merge_trade_no")
+	private String mergeTradeNo;
 
 	/** 
 	 * 蚂蚁统一会员ID
@@ -56,10 +68,30 @@ I-等待付款 P-已支付 C-单据关闭
 	private String totalPayAmount;
 
 	/** 
+	 * 统一收单流水号用于非合并支付情况下50新链路拉起收银台
+	 */
+	@ApiField("trade_no")
+	private String tradeNo;
+
+	/** 
 	 * 蚂蚁统一会员ID
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public void setBillNo(String billNo) {
+		this.billNo = billNo;
+	}
+	public String getBillNo( ) {
+		return this.billNo;
+	}
+
+	public void setMergeTradeNo(String mergeTradeNo) {
+		this.mergeTradeNo = mergeTradeNo;
+	}
+	public String getMergeTradeNo( ) {
+		return this.mergeTradeNo;
+	}
 
 	public void setOpenId(String openId) {
 		this.openId = openId;
@@ -101,6 +133,13 @@ I-等待付款 P-已支付 C-单据关闭
 	}
 	public String getTotalPayAmount( ) {
 		return this.totalPayAmount;
+	}
+
+	public void setTradeNo(String tradeNo) {
+		this.tradeNo = tradeNo;
+	}
+	public String getTradeNo( ) {
+		return this.tradeNo;
 	}
 
 	public void setUserId(String userId) {

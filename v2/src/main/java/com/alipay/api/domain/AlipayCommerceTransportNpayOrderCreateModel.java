@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝出行行业N支付订单创建
  *
  * @author auto create
- * @since 1.0, 2025-02-28 17:22:45
+ * @since 1.0, 2025-03-18 11:25:56
  */
 public class AlipayCommerceTransportNpayOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8229467274484121821L;
+	private static final long serialVersionUID = 2314523513181627978L;
 
 	/**
 	 * 订单金额

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业ETC车辆入驻
  *
  * @author auto create
- * @since 1.0, 2023-12-20 11:12:48
+ * @since 1.0, 2025-03-12 16:06:54
  */
 public class AlipayCommerceTransportEtcenterpriseVehicleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5714237968612746596L;
+	private static final long serialVersionUID = 7481211653147541431L;
 
 	/**
 	 * 经办人证件号
@@ -42,6 +42,12 @@ public class AlipayCommerceTransportEtcenterpriseVehicleCreateModel extends Alip
 	 */
 	@ApiField("corp_vehicle_id")
 	private String corpVehicleId;
+
+	/**
+	 * 车辆所属企业id
+	 */
+	@ApiField("vehicle_corp_id")
+	private String vehicleCorpId;
 
 	/**
 	 * ETC办理车辆信息
@@ -88,6 +94,13 @@ public class AlipayCommerceTransportEtcenterpriseVehicleCreateModel extends Alip
 	}
 	public void setCorpVehicleId(String corpVehicleId) {
 		this.corpVehicleId = corpVehicleId;
+	}
+
+	public String getVehicleCorpId() {
+		return this.vehicleCorpId;
+	}
+	public void setVehicleCorpId(String vehicleCorpId) {
+		this.vehicleCorpId = vehicleCorpId;
 	}
 
 	public EtcVehicleInfo getVehicleInfo() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用服务产品交易关闭
  *
  * @author auto create
- * @since 1.0, 2022-12-29 10:36:32
+ * @since 1.0, 2025-03-19 16:00:53
  */
 public class ZhimaCreditPeIndustryTradeCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7163367429374723957L;
+	private static final long serialVersionUID = 3554774753189949927L;
 
 	/**
 	 * 关闭时间,接入方通过其他渠道实际收款时间,应小于当前时间. 可空,不传将默认取服务器当前时间
