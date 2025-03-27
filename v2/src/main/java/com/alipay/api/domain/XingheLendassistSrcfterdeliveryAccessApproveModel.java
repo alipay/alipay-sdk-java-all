@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政企团购分期终端交付审核
  *
  * @author auto create
- * @since 1.0, 2025-02-14 19:43:37
+ * @since 1.0, 2025-03-21 17:37:21
  */
 public class XingheLendassistSrcfterdeliveryAccessApproveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4644551332365743979L;
+	private static final long serialVersionUID = 5339969956325979135L;
 
 	/**
 	 * 是否代收标识，NOT_COLLECTION-非代收 、COLLECTION-代收

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserAccountOperatorLogonpasswordVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2866737659175771169L;
+	private static final long serialVersionUID = 4215311472523681765L;
 
 	/** 
 	 * PASSWORD_NOT_MATCH 密码不匹配

@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.store.codelist.get response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-19 16:22:38
+ * @since 1.0, 2025-03-20 15:27:26
  */
 public class AlipayCommerceMedicalStoreCodelistGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7443857787288853163L;
+	private static final long serialVersionUID = 7219284822269134881L;
 
 	/** 
 	 * 门店编码数组

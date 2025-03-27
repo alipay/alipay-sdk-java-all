@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 学生信息
  *
  * @author auto create
- * @since 1.0, 2020-11-30 14:07:00
+ * @since 1.0, 2025-03-24 18:57:40
  */
 public class TuitionISVStudentInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2311942317828843383L;
+	private static final long serialVersionUID = 2639824851496295359L;
 
 	/**
 	 * 电子邮箱
@@ -42,6 +42,12 @@ public class TuitionISVStudentInfoDTO extends AlipayObject {
 	 */
 	@ApiField("last_name")
 	private String lastName;
+
+	/**
+	 * 学制信息，可根据枚举值传入，学年制
+	 */
+	@ApiField("length_of_schooling")
+	private String lengthOfSchooling;
 
 	/**
 	 * 学生姓名
@@ -94,6 +100,13 @@ public class TuitionISVStudentInfoDTO extends AlipayObject {
 	}
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
+	}
+
+	public String getLengthOfSchooling() {
+		return this.lengthOfSchooling;
+	}
+	public void setLengthOfSchooling(String lengthOfSchooling) {
+		this.lengthOfSchooling = lengthOfSchooling;
 	}
 
 	public String getStudentName() {

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: xinghe.lendassist.srcfgestagecredit.second.approve response.
  * 
  * @author auto create
- * @since 1.0, 2025-02-14 19:47:23
+ * @since 1.0, 2025-03-21 17:37:26
  */
 public class XingheLendassistSrcfgestagecreditSecondApproveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5512419754393549219L;
+	private static final long serialVersionUID = 6146187671248183414L;
 
 	/** 
 	 * 初审审核结果，APPROVE_PASS-审批通过、APPROVE_REJECT-审批拒绝

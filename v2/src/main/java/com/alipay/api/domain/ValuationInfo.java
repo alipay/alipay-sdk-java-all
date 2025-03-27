@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ValuationInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6291881814374142116L;
+	private static final long serialVersionUID = 5664623537978278474L;
 
 	/**
 	 * 车辆估值金额，单位元

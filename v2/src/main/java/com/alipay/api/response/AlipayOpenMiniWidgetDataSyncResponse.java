@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenMiniWidgetDataSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5818996225427877128L;
+	private static final long serialVersionUID = 8644364891337286459L;
 
 	/** 
 	 * 同步接口生成的唯一标识，用于查询提交数据的审核状态

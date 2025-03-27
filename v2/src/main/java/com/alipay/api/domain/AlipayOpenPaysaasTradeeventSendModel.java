@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 手持设备外部关联交易事件上报
  *
  * @author auto create
- * @since 1.0, 2025-03-17 22:00:53
+ * @since 1.0, 2025-03-26 17:13:02
  */
 public class AlipayOpenPaysaasTradeeventSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7899468657786382757L;
+	private static final long serialVersionUID = 7426715576489215587L;
 
 	/**
 	 * 单位为分，最大值为100000000分
@@ -46,10 +46,22 @@ public class AlipayOpenPaysaasTradeeventSendModel extends AlipayObject {
 	private String merchantType;
 
 	/**
+	 * 设备sn
+	 */
+	@ApiField("sn")
+	private String sn;
+
+	/**
 	 * 触发提醒的时间戳，可以不填，不填写，默认为接收到请求的时间
 	 */
 	@ApiField("start_time")
 	private Date startTime;
+
+	/**
+	 * 供应商ID
+	 */
+	@ApiField("supply_id")
+	private String supplyId;
 
 	/**
 	 * 交易订单id,生产环境必传
@@ -98,11 +110,25 @@ public class AlipayOpenPaysaasTradeeventSendModel extends AlipayObject {
 		this.merchantType = merchantType;
 	}
 
+	public String getSn() {
+		return this.sn;
+	}
+	public void setSn(String sn) {
+		this.sn = sn;
+	}
+
 	public Date getStartTime() {
 		return this.startTime;
 	}
 	public void setStartTime(Date startTime) {
 		this.startTime = startTime;
+	}
+
+	public String getSupplyId() {
+		return this.supplyId;
+	}
+	public void setSupplyId(String supplyId) {
+		this.supplyId = supplyId;
 	}
 
 	public String getTradeId() {

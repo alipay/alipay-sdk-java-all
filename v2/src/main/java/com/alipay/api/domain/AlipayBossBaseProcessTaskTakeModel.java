@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 流程任务申领
  *
  * @author auto create
- * @since 1.0, 2024-07-30 11:37:23
+ * @since 1.0, 2025-03-20 16:42:06
  */
 public class AlipayBossBaseProcessTaskTakeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2566499382352935881L;
+	private static final long serialVersionUID = 4838874598485656779L;
 
 	/**
 	 * 备注

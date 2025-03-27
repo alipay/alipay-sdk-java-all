@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 履约状态变更接口
  *
  * @author auto create
- * @since 1.0, 2025-02-19 17:23:20
+ * @since 1.0, 2025-03-20 22:45:16
  */
 public class AlipayOpenMiniOrderDeliveryModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2463749816526115242L;
+	private static final long serialVersionUID = 8857843954552871486L;
 
 	/**
 	 * 需要修改的活动信息列表
@@ -22,6 +22,12 @@ public class AlipayOpenMiniOrderDeliveryModifyModel extends AlipayObject {
 	@ApiListField("activity_infos")
 	@ApiField("activity_info_modify_d_t_o")
 	private List<ActivityInfoModifyDTO> activityInfos;
+
+	/**
+	 * 收货地址
+	 */
+	@ApiField("address_info")
+	private MiniReceiverAddressInfoDTO addressInfo;
 
 	/**
 	 * 酒店预订信息
@@ -36,6 +42,13 @@ public class AlipayOpenMiniOrderDeliveryModifyModel extends AlipayObject {
 	private ContactInfoDTO contactInfo;
 
 	/**
+	 * 商品修改信息
+	 */
+	@ApiListField("item_infos")
+	@ApiField("goods_info_modify_d_t_o")
+	private List<GoodsInfoModifyDTO> itemInfos;
+
+	/**
 	 * 买家open_id；open_id和user_id二选一
 	 */
 	@ApiField("open_id")
@@ -48,6 +61,12 @@ public class AlipayOpenMiniOrderDeliveryModifyModel extends AlipayObject {
 	private String orderId;
 
 	/**
+	 * 订单质检金额，单位：元
+	 */
+	@ApiField("order_inspect_price")
+	private String orderInspectPrice;
+
+	/**
 	 * 商户订单号，创建订单请求由商户传入；order_id和out_order_id二选一
 	 */
 	@ApiField("out_order_id")
@@ -58,6 +77,18 @@ public class AlipayOpenMiniOrderDeliveryModifyModel extends AlipayObject {
 	 */
 	@ApiField("price_info")
 	private PriceInfoModifyDTO priceInfo;
+
+	/**
+	 * 履约原因编码，特指拒绝场景下的原因
+	 */
+	@ApiField("reason_code")
+	private String reasonCode;
+
+	/**
+	 * 派单联系人信息
+	 */
+	@ApiField("send_order_contact_info")
+	private SendOrderContactInfoDTO sendOrderContactInfo;
 
 	/**
 	 * 订单的履约状态
@@ -91,6 +122,13 @@ public class AlipayOpenMiniOrderDeliveryModifyModel extends AlipayObject {
 		this.activityInfos = activityInfos;
 	}
 
+	public MiniReceiverAddressInfoDTO getAddressInfo() {
+		return this.addressInfo;
+	}
+	public void setAddressInfo(MiniReceiverAddressInfoDTO addressInfo) {
+		this.addressInfo = addressInfo;
+	}
+
 	public BookingInfoDTO getBookingInfo() {
 		return this.bookingInfo;
 	}
@@ -103,6 +141,13 @@ public class AlipayOpenMiniOrderDeliveryModifyModel extends AlipayObject {
 	}
 	public void setContactInfo(ContactInfoDTO contactInfo) {
 		this.contactInfo = contactInfo;
+	}
+
+	public List<GoodsInfoModifyDTO> getItemInfos() {
+		return this.itemInfos;
+	}
+	public void setItemInfos(List<GoodsInfoModifyDTO> itemInfos) {
+		this.itemInfos = itemInfos;
 	}
 
 	public String getOpenId() {
@@ -119,6 +164,13 @@ public class AlipayOpenMiniOrderDeliveryModifyModel extends AlipayObject {
 		this.orderId = orderId;
 	}
 
+	public String getOrderInspectPrice() {
+		return this.orderInspectPrice;
+	}
+	public void setOrderInspectPrice(String orderInspectPrice) {
+		this.orderInspectPrice = orderInspectPrice;
+	}
+
 	public String getOutOrderId() {
 		return this.outOrderId;
 	}
@@ -131,6 +183,20 @@ public class AlipayOpenMiniOrderDeliveryModifyModel extends AlipayObject {
 	}
 	public void setPriceInfo(PriceInfoModifyDTO priceInfo) {
 		this.priceInfo = priceInfo;
+	}
+
+	public String getReasonCode() {
+		return this.reasonCode;
+	}
+	public void setReasonCode(String reasonCode) {
+		this.reasonCode = reasonCode;
+	}
+
+	public SendOrderContactInfoDTO getSendOrderContactInfo() {
+		return this.sendOrderContactInfo;
+	}
+	public void setSendOrderContactInfo(SendOrderContactInfoDTO sendOrderContactInfo) {
+		this.sendOrderContactInfo = sendOrderContactInfo;
 	}
 
 	public String getStatus() {

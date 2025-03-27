@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC办理申请单创建或修改
  *
  * @author auto create
- * @since 1.0, 2024-06-24 21:33:17
+ * @since 1.0, 2025-03-21 16:25:57
  */
 public class AlipayCommerceTransportEtcApplyorderCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8838256856615764162L;
+	private static final long serialVersionUID = 4469474949952574263L;
 
 	/**
 	 * 支付宝订单号，提供则认为是更新
@@ -104,6 +104,12 @@ LIMEGREEN: 黄绿色。
 	 */
 	@ApiField("plate_no")
 	private String plateNo;
+
+	/**
+	 * 参数需要咨询业务同学,车系品牌id
+	 */
+	@ApiField("product_id")
+	private String productId;
 
 	/**
 	 * 发行方的标识ID
@@ -317,6 +323,13 @@ LIMEGREEN: 黄绿色。
 	}
 	public void setPlateNo(String plateNo) {
 		this.plateNo = plateNo;
+	}
+
+	public String getProductId() {
+		return this.productId;
+	}
+	public void setProductId(String productId) {
+		this.productId = productId;
 	}
 
 	public String getSellerId() {

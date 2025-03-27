@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 广告投放数据通用查询
  *
  * @author auto create
- * @since 1.0, 2024-05-11 18:12:34
+ * @since 1.0, 2025-03-25 16:12:24
  */
 public class AlipayDataDataserviceAdReportdataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2539773885339364617L;
+	private static final long serialVersionUID = 4817187151196174377L;
 
 	/**
 	 * 数据维度：
@@ -37,10 +37,31 @@ PRINCIPAL-商家;
 	private String alipayPid;
 
 	/**
-	 * 权限token,唯一值,在广告投放平台商家详情获取。
+	 * 权限token,唯一值,在广告投放平台代理商详情获取。<a href="https://opendocs.alipay.com/xlight/0eu31u?pathHash=79e13a13">获取文档</a>
 	 */
 	@ApiField("biz_token")
 	private String bizToken;
+
+	/**
+	 * 传值为2.0时入参：show_conv_data、conv_time_join_rule、query_type=HOUR，出参：cost_format、cpm、click_rate、cpc、conv_result、cvr、avg_conv_cost生效。
+	 */
+	@ApiField("biz_version")
+	private String bizVersion;
+
+	/**
+	 * 转化指标Code数组
+	 */
+	@ApiListField("conv_code_list")
+	@ApiField("string")
+	private List<String> convCodeList;
+
+	/**
+	 * 转化时间归因：将广告带来的转化数据统计到广告转化发生（或广告转化回传）时间；
+计费时间归因：将广告带来的转化数据统计到广告计费对应的事件（点击或曝光）发生时间;
+【默认转化时间归因】
+	 */
+	@ApiField("conv_time_join_rule")
+	private String convTimeJoinRule;
 
 	/**
 	 * 广告投放平台生成的创意ID，此为数据筛选条件不影响数据汇总纬度。
@@ -64,7 +85,7 @@ TRUST_TOUFANG-托管式；
 	private String deliveryMode;
 
 	/**
-	 * 数据查询结束时间，查询时间不能大于最近7天，时间格式：yyyyMMdd【最大时间-最小时间<=7时间左闭右闭】
+	 * 数据查询结束时间，查询时间不能大于最近7天(query_type为HOUR时最大1天)，时间格式：yyyyMMdd【最大时间-最小时间<=7时间左闭右闭】
 	 */
 	@ApiField("end_date")
 	private String endDate;
@@ -97,15 +118,13 @@ TRUST_TOUFANG-托管式；
 	private List<String> planIdList;
 
 	/**
-	 * 商家标志,唯一值,在广告投放平台商家详情获取。
+	 * 代理商商家标识,在广告投放平台代理商详情获取。<a href="https://opendocs.alipay.com/xlight/0eucvz?pathHash=dc01fadb">获取文档</a>
 	 */
 	@ApiField("principal_tag")
 	private String principalTag;
 
 	/**
-	 * 数据汇总方式。SUM-汇总；DETAIL-明细分天；
-【SUM时：根据ad_level汇总为单条数据。
-DETAIL时：汇总成分天x ad_level的多条数据】
+	 * 数据汇总方式：汇总/明细分天/明细分小时。
 	 */
 	@ApiField("query_type")
 	private String queryType;
@@ -121,7 +140,13 @@ BRAND-品牌投放
 	private String sceneType;
 
 	/**
-	 * 数据查询开始时间，查询时间不能大于最近7天，时间格式：yyyyMMdd
+	 * 接口出参是否透出转化指标数据，默认true；
+	 */
+	@ApiField("show_conv_data")
+	private Boolean showConvData;
+
+	/**
+	 * 数据查询开始时间，查询时间不能大于最近7天(query_type为HOUR时最大1天)，时间格式：yyyyMMdd
 	 */
 	@ApiField("start_date")
 	private String startDate;
@@ -145,6 +170,27 @@ BRAND-品牌投放
 	}
 	public void setBizToken(String bizToken) {
 		this.bizToken = bizToken;
+	}
+
+	public String getBizVersion() {
+		return this.bizVersion;
+	}
+	public void setBizVersion(String bizVersion) {
+		this.bizVersion = bizVersion;
+	}
+
+	public List<String> getConvCodeList() {
+		return this.convCodeList;
+	}
+	public void setConvCodeList(List<String> convCodeList) {
+		this.convCodeList = convCodeList;
+	}
+
+	public String getConvTimeJoinRule() {
+		return this.convTimeJoinRule;
+	}
+	public void setConvTimeJoinRule(String convTimeJoinRule) {
+		this.convTimeJoinRule = convTimeJoinRule;
 	}
 
 	public List<String> getCreativeIdList() {
@@ -222,6 +268,13 @@ BRAND-品牌投放
 	}
 	public void setSceneType(String sceneType) {
 		this.sceneType = sceneType;
+	}
+
+	public Boolean getShowConvData() {
+		return this.showConvData;
+	}
+	public void setShowConvData(Boolean showConvData) {
+		this.showConvData = showConvData;
 	}
 
 	public String getStartDate() {

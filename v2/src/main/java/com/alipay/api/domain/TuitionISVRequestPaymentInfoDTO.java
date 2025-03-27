@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 付款信息
  *
  * @author auto create
- * @since 1.0, 2024-05-28 11:51:10
+ * @since 1.0, 2025-03-24 18:57:40
  */
 public class TuitionISVRequestPaymentInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3664378797562695762L;
+	private static final long serialVersionUID = 3153375271626784534L;
 
 	/**
 	 * 170
@@ -26,6 +26,12 @@ public class TuitionISVRequestPaymentInfoDTO extends AlipayObject {
 	 */
 	@ApiField("amount")
 	private TuitionMoneyDTO amount;
+
+	/**
+	 * billerCode字段，当收款类型为BPAY时，该字段必传
+	 */
+	@ApiField("biller_code")
+	private String billerCode;
 
 	/**
 	 * 证书列表
@@ -58,6 +64,12 @@ public class TuitionISVRequestPaymentInfoDTO extends AlipayObject {
 	private String postScript;
 
 	/**
+	 * referenceNumber字段，当收款类型为BPAY时，该字段必传
+	 */
+	@ApiField("reference_number")
+	private String referenceNumber;
+
+	/**
 	 * 学校id
 	 */
 	@ApiField("school_id")
@@ -75,6 +87,13 @@ public class TuitionISVRequestPaymentInfoDTO extends AlipayObject {
 	}
 	public void setAmount(TuitionMoneyDTO amount) {
 		this.amount = amount;
+	}
+
+	public String getBillerCode() {
+		return this.billerCode;
+	}
+	public void setBillerCode(String billerCode) {
+		this.billerCode = billerCode;
 	}
 
 	public String getCertificateList() {
@@ -110,6 +129,13 @@ public class TuitionISVRequestPaymentInfoDTO extends AlipayObject {
 	}
 	public void setPostScript(String postScript) {
 		this.postScript = postScript;
+	}
+
+	public String getReferenceNumber() {
+		return this.referenceNumber;
+	}
+	public void setReferenceNumber(String referenceNumber) {
+		this.referenceNumber = referenceNumber;
 	}
 
 	public String getSchoolId() {

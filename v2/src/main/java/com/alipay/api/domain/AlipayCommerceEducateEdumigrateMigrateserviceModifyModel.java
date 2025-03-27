@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 教育缴费迁移工具接口
  *
  * @author auto create
- * @since 1.0, 2023-04-14 10:12:52
+ * @since 1.0, 2025-03-20 19:26:38
  */
 public class AlipayCommerceEducateEdumigrateMigrateserviceModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5365674489878485325L;
+	private static final long serialVersionUID = 6431569911623825289L;
 
 	/**
 	 * 调用的服务名称 操作类型 + 具体服务名称

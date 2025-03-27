@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataMdaMaplineinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6825376514212314495L;
+	private static final long serialVersionUID = 8143927651433322748L;
 
 	/** 
 	 * 火炬传递飞线图

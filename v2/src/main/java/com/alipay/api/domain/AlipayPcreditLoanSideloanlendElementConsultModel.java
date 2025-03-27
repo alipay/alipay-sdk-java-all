@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 随身贷支用要素查询
  *
  * @author auto create
- * @since 1.0, 2024-12-10 11:28:53
+ * @since 1.0, 2025-03-26 15:13:19
  */
 public class AlipayPcreditLoanSideloanlendElementConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3313819474978379789L;
+	private static final long serialVersionUID = 3481427135295947297L;
 
 	/**
 	 * 支付宝用户id，客户在支付宝的身份证
@@ -24,6 +24,12 @@ public class AlipayPcreditLoanSideloanlendElementConsultModel extends AlipayObje
 	 */
 	@ApiField("extension")
 	private String extension;
+
+	/**
+	 * 支用类型枚举值(NORMAL/HOME_LOAN_CONSISTENT)
+	 */
+	@ApiField("loan_type")
+	private String loanType;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识
@@ -49,6 +55,13 @@ public class AlipayPcreditLoanSideloanlendElementConsultModel extends AlipayObje
 	}
 	public void setExtension(String extension) {
 		this.extension = extension;
+	}
+
+	public String getLoanType() {
+		return this.loanType;
+	}
+	public void setLoanType(String loanType) {
+		this.loanType = loanType;
 	}
 
 	public String getOpenId() {

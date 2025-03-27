@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建审批单
  *
  * @author auto create
- * @since 1.0, 2024-06-04 13:45:11
+ * @since 1.0, 2025-03-25 10:54:21
  */
 public class AlipayCommerceEcApprovalCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4821751564949453257L;
+	private static final long serialVersionUID = 1652694199922364238L;
 
 	/**
 	 * 员工id

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: xinghe.lendassist.srcfterdelivery.access.approve response.
  * 
  * @author auto create
- * @since 1.0, 2025-02-14 19:47:23
+ * @since 1.0, 2025-03-21 17:37:26
  */
 public class XingheLendassistSrcfterdeliveryAccessApproveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6348758466657318523L;
+	private static final long serialVersionUID = 2322295627174294845L;
 
 	/** 
 	 * 审核结果，APPROVE_PASS-审批通过、APPROVE_REJECT-审批拒绝

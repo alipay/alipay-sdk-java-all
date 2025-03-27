@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySecurityRiskEmployeeEmpriskCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8281742928881887868L;
+	private static final long serialVersionUID = 5389411273795379134L;
 
 	/**
 	 * 雇员身份证号

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DomainBind extends AlipayObject {
 
-	private static final long serialVersionUID = 5689152279383684459L;
+	private static final long serialVersionUID = 6745128638852962372L;
 
 	/**
 	 * 路由绑定ID

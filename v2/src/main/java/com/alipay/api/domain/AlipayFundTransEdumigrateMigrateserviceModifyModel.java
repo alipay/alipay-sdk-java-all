@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * k12教育缴费迁移域内迁移服务API
  *
  * @author auto create
- * @since 1.0, 2023-05-09 16:11:03
+ * @since 1.0, 2025-03-20 19:23:30
  */
 public class AlipayFundTransEdumigrateMigrateserviceModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8573629655859824999L;
+	private static final long serialVersionUID = 6351628964793557176L;
 
 	/**
 	 * 调用的服务名称 操作类型 + 具体服务名称

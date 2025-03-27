@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.common.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-20 11:47:28
+ * @since 1.0, 2025-03-24 21:37:25
  */
 public class AlipayFundTransCommonQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8142763834626349266L;
+	private static final long serialVersionUID = 6641912825459525262L;
 
 	/** 
 	 * 预计到账时间，转账到银行卡专用，格式为yyyy-MM-dd HH:mm:ss，转账受理失败不返回。
@@ -33,6 +33,24 @@ public class AlipayFundTransCommonQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("error_code")
 	private String errorCode;
+
+	/** 
+	 * 查询到的订单状态为FAIL失败时，返回具体报错银行的错误码。
+	 */
+	@ApiField("fail_inst_error_code")
+	private String failInstErrorCode;
+
+	/** 
+	 * 查询到的订单状态为FAIL失败时，返回具体的报错银行名称
+	 */
+	@ApiField("fail_inst_name")
+	private String failInstName;
+
+	/** 
+	 * 查询到的订单状态为FAIL失败时，返回具体的原因。
+	 */
+	@ApiField("fail_inst_reason")
+	private String failInstReason;
 
 	/** 
 	 * 查询到的订单状态为FAIL失败或REFUND退票时，返回具体的原因。
@@ -166,6 +184,27 @@ d）“6位控制位”由金融机构通过平台获取
 	}
 	public String getErrorCode( ) {
 		return this.errorCode;
+	}
+
+	public void setFailInstErrorCode(String failInstErrorCode) {
+		this.failInstErrorCode = failInstErrorCode;
+	}
+	public String getFailInstErrorCode( ) {
+		return this.failInstErrorCode;
+	}
+
+	public void setFailInstName(String failInstName) {
+		this.failInstName = failInstName;
+	}
+	public String getFailInstName( ) {
+		return this.failInstName;
+	}
+
+	public void setFailInstReason(String failInstReason) {
+		this.failInstReason = failInstReason;
+	}
+	public String getFailInstReason( ) {
+		return this.failInstReason;
 	}
 
 	public void setFailReason(String failReason) {

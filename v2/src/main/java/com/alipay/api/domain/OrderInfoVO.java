@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单信息
  *
  * @author auto create
- * @since 1.0, 2024-12-05 10:24:17
+ * @since 1.0, 2025-03-20 23:00:20
  */
 public class OrderInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7789453429883876665L;
+	private static final long serialVersionUID = 6471799291129842125L;
 
 	/**
 	 * 订单取消时间
@@ -64,6 +64,12 @@ public class OrderInfoVO extends AlipayObject {
 	private String note;
 
 	/**
+	 * 订单的场景值   1:O2O订单，2:B2C订单
+	 */
+	@ApiField("order_scene")
+	private Long orderScene;
+
+	/**
 	 * 当日订单顺序号
 	 */
 	@ApiField("order_seq")
@@ -106,7 +112,7 @@ public class OrderInfoVO extends AlipayObject {
 	private Date predictDeliveryStartTime;
 
 	/**
-	 * 商品总数量，保留小数点后3位 + 单位， 单位固定两种（g和ml）
+	 * 商品总数量
 	 */
 	@ApiField("quantity")
 	private Long quantity;
@@ -132,9 +138,10 @@ public class OrderInfoVO extends AlipayObject {
 	private Date userExpectStartTime;
 
 	/**
-	 * 商品总重量，保留小数点后3位 + 单位， 单位固定两种（g和ml）
+	 * 商品总重量，保留小数点后3位 + 单位， 单位固定两种（g和ml） 当前字段已废弃(商品总重量由items-weight_item汇总计算即可)
 	 */
 	@ApiField("weight")
+	@Deprecated
 	private Long weight;
 
 	public Date getCancelTime() {
@@ -191,6 +198,13 @@ public class OrderInfoVO extends AlipayObject {
 	}
 	public void setNote(String note) {
 		this.note = note;
+	}
+
+	public Long getOrderScene() {
+		return this.orderScene;
+	}
+	public void setOrderScene(Long orderScene) {
+		this.orderScene = orderScene;
 	}
 
 	public String getOrderSeq() {

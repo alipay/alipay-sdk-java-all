@@ -9,11 +9,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.sideloanlend.amount.consult response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-10 11:28:22
+ * @since 1.0, 2025-03-26 15:17:28
  */
 public class AlipayPcreditLoanSideloanlendAmountConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4241718627164519943L;
+	private static final long serialVersionUID = 2797314818233589139L;
+
+	/** 
+	 * 渠道户状态枚举值（INIT/ENABLE/DISABLE）
+	 */
+	@ApiField("account_status")
+	private String accountStatus;
 
 	/** 
 	 * 授信总额度，单位元，保留?数点后两位
@@ -120,6 +126,13 @@ public class AlipayPcreditLoanSideloanlendAmountConsultResponse extends AlipayRe
 	 */
 	@ApiField("temp_interest_rate_start_time")
 	private Date tempInterestRateStartTime;
+
+	public void setAccountStatus(String accountStatus) {
+		this.accountStatus = accountStatus;
+	}
+	public String getAccountStatus( ) {
+		return this.accountStatus;
+	}
 
 	public void setCreditQuota(String creditQuota) {
 		this.creditQuota = creditQuota;

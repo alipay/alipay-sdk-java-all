@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 校园支付银行优惠活动查询
  *
  * @author auto create
- * @since 1.0, 2023-12-28 17:13:18
+ * @since 1.0, 2025-03-20 19:28:44
  */
 public class AlipayCommerceEducateCampusPaymentactivityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7317796943925828873L;
+	private static final long serialVersionUID = 6768958548692758761L;
 
 	/**
 	 * 商户pid

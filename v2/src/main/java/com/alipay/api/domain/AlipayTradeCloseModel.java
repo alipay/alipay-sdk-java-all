@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 统一收单交易关闭接口
  *
  * @author auto create
- * @since 1.0, 2025-01-08 17:05:07
+ * @since 1.0, 2025-03-26 21:29:54
  */
 public class AlipayTradeCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5724895732939453627L;
+	private static final long serialVersionUID = 3253344783124548691L;
+
+	/**
+	 * 扩展字段
+	 */
+	@ApiField("extend_params")
+	private CloseExtendParams extendParams;
 
 	/**
 	 * 商家操作员编号 id，由商家自定义。
@@ -30,6 +36,13 @@ public class AlipayTradeCloseModel extends AlipayObject {
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;
+
+	public CloseExtendParams getExtendParams() {
+		return this.extendParams;
+	}
+	public void setExtendParams(CloseExtendParams extendParams) {
+		this.extendParams = extendParams;
+	}
 
 	public String getOperatorId() {
 		return this.operatorId;

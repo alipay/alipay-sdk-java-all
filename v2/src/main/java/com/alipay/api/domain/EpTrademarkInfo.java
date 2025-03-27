@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 企业商标查询明细
  *
  * @author auto create
- * @since 1.0, 2024-12-19 11:28:16
+ * @since 1.0, 2025-03-21 10:24:55
  */
 public class EpTrademarkInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6414887178983319497L;
+	private static final long serialVersionUID = 2661714868211946196L;
 
 	/**
 	 * 申请人地址中文
@@ -69,6 +69,12 @@ public class EpTrademarkInfo extends AlipayObject {
 	 */
 	@ApiField("jointly_owned_trademark")
 	private Boolean jointlyOwnedTrademark;
+
+	/**
+	 * 商标图片地址。链接地址1个小时内有效
+	 */
+	@ApiField("logo_oss_path")
+	private String logoOssPath;
 
 	/**
 	 * 商标名称
@@ -180,6 +186,13 @@ public class EpTrademarkInfo extends AlipayObject {
 	}
 	public void setJointlyOwnedTrademark(Boolean jointlyOwnedTrademark) {
 		this.jointlyOwnedTrademark = jointlyOwnedTrademark;
+	}
+
+	public String getLogoOssPath() {
+		return this.logoOssPath;
+	}
+	public void setLogoOssPath(String logoOssPath) {
+		this.logoOssPath = logoOssPath;
 	}
 
 	public String getName() {

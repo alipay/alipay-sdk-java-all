@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 票据平台票据信息归集接口
  *
  * @author auto create
- * @since 1.0, 2024-11-22 10:10:54
+ * @since 1.0, 2025-03-21 11:21:20
  */
 public class AlipayFundTransInvoiceSyncdataModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3357143336725345747L;
+	private static final long serialVersionUID = 4389935534128831184L;
 
 	/**
 	 * 票据总金额（元）
@@ -121,6 +121,12 @@ public class AlipayFundTransInvoiceSyncdataModifyModel extends AlipayObject {
 	 */
 	@ApiField("time")
 	private String time;
+
+	/**
+	 * 机构开票成功的交易流水号集合，用于公益侧开票对账
+	 */
+	@ApiField("trade_no_list")
+	private String tradeNoList;
 
 	/**
 	 * 票据状态: 1医疗，2捐赠，3教育，4罚没，5其他
@@ -270,6 +276,13 @@ public class AlipayFundTransInvoiceSyncdataModifyModel extends AlipayObject {
 	}
 	public void setTime(String time) {
 		this.time = time;
+	}
+
+	public String getTradeNoList() {
+		return this.tradeNoList;
+	}
+	public void setTradeNoList(String tradeNoList) {
+		this.tradeNoList = tradeNoList;
 	}
 
 	public String getType() {

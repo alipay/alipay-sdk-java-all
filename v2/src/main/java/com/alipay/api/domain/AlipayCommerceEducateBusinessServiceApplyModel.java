@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 申请开通教育行业服务
  *
  * @author auto create
- * @since 1.0, 2023-04-14 10:15:03
+ * @since 1.0, 2025-03-20 19:27:05
  */
 public class AlipayCommerceEducateBusinessServiceApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7153659247559539425L;
+	private static final long serialVersionUID = 2424192964241218134L;
 
 	/**
 	 * 如果所在学校有多个校区，传入分校区名称

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账户验证
  *
  * @author auto create
- * @since 1.0, 2025-03-07 14:52:56
+ * @since 1.0, 2025-03-24 18:56:57
  */
 public class AlipayOverseasOpenAccountConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1546939843192721555L;
+	private static final long serialVersionUID = 4461876662269162788L;
 
 	/**
 	 * 账户名称
@@ -40,6 +40,12 @@ public class AlipayOverseasOpenAccountConsultModel extends AlipayObject {
 	 */
 	@ApiField("bank_code")
 	private String bankCode;
+
+	/**
+	 * 如果收款方式是BPAY类型，biller_code是必传字段
+	 */
+	@ApiField("biller_code")
+	private String billerCode;
 
 	/**
 	 * 国家
@@ -84,6 +90,13 @@ public class AlipayOverseasOpenAccountConsultModel extends AlipayObject {
 	}
 	public void setBankCode(String bankCode) {
 		this.bankCode = bankCode;
+	}
+
+	public String getBillerCode() {
+		return this.billerCode;
+	}
+	public void setBillerCode(String billerCode) {
+		this.billerCode = billerCode;
 	}
 
 	public String getCountry() {

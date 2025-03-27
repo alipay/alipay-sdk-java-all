@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NbDrawSize extends AlipayObject {
 
-	private static final long serialVersionUID = 7361984949538727194L;
+	private static final long serialVersionUID = 6534886931961698838L;
 
 	/**
 	 * 图片高度，单位像素

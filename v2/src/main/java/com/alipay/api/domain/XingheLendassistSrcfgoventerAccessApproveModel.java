@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政企单位准入审核
  *
  * @author auto create
- * @since 1.0, 2025-02-14 19:44:17
+ * @since 1.0, 2025-03-21 17:36:56
  */
 public class XingheLendassistSrcfgoventerAccessApproveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4859221268675625181L;
+	private static final long serialVersionUID = 6322182277667382638L;
 
 	/**
 	 * 需审核的政企单位统一社会信用代码

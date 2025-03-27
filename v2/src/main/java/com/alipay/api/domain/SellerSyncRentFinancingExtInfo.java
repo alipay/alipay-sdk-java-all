@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SellerSyncRentFinancingExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2611969749777551431L;
+	private static final long serialVersionUID = 6426152785459245571L;
 
 	/**
 	 * 需要融资的金额，币种：人民币

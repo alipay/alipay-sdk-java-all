@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 教育学校信息查询
  *
  * @author auto create
- * @since 1.0, 2024-06-18 10:42:15
+ * @since 1.0, 2025-03-21 18:45:26
  */
 public class AlipayCommerceEducateCampusInstitutionsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1245324885235179541L;
+	private static final long serialVersionUID = 4572754277498744849L;
 
 	/**
 	 * 城市编码，编码标准为中华人民共和国行政区划代码，参见 2020年12月中华人民共和国县以上行政区划代码。

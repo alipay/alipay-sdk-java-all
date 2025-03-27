@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DcmealDishDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 4491725273839224964L;
+	private static final long serialVersionUID = 7716313599284471121L;
 
 	/**
 	 * 智盘平台菜品id

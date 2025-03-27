@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.paysaas.tradeevent.send request
  * 
  * @author auto create
- * @since 1.0, 2025-03-17 22:00:53
+ * @since 1.0, 2025-03-26 17:17:27
  */
 public class AlipayOpenPaysaasTradeeventSendRequest implements AlipayRequest<AlipayOpenPaysaasTradeeventSendResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝校园卡支付查询
  *
  * @author auto create
- * @since 1.0, 2023-06-12 14:22:51
+ * @since 1.0, 2025-03-20 19:28:10
  */
 public class AlipayCommerceEducateCampusSchoolcardQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6283811415842739767L;
+	private static final long serialVersionUID = 8447666361336565391L;
 
 	/**
 	 * 学校签约的签约ID，由支付宝生成，分配给商户

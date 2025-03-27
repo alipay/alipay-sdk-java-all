@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 每日价格
  *
  * @author auto create
- * @since 1.0, 2024-05-21 19:36:20
+ * @since 1.0, 2025-03-26 15:27:51
  */
 public class NightlyRate extends AlipayObject {
 
-	private static final long serialVersionUID = 4177748588479823317L;
+	private static final long serialVersionUID = 7463219929597111624L;
 
 	/**
 	 * 加床价
@@ -50,6 +50,12 @@ public class NightlyRate extends AlipayObject {
 	 */
 	@ApiField("date")
 	private String date;
+
+	/**
+	 * 当日库存数
+	 */
+	@ApiField("inventory")
+	private Long inventory;
 
 	/**
 	 * 会员价（BigDecimal）（元）
@@ -127,6 +133,13 @@ public class NightlyRate extends AlipayObject {
 	}
 	public void setDate(String date) {
 		this.date = date;
+	}
+
+	public Long getInventory() {
+		return this.inventory;
+	}
+	public void setInventory(Long inventory) {
+		this.inventory = inventory;
 	}
 
 	public String getMember() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * isv解除认证关系
  *
  * @author auto create
- * @since 1.0, 2023-08-18 22:45:14
+ * @since 1.0, 2025-03-20 19:30:13
  */
 public class AlipayCommerceEducateAuthenticateCampuscardDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4291732442369946661L;
+	private static final long serialVersionUID = 8758712894386186524L;
 
 	/**
 	 * 卡号，证件号与卡号至少存在一个

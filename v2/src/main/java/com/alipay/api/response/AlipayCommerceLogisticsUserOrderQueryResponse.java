@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceLogisticsUserOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8747513347321875769L;
+	private static final long serialVersionUID = 3819298851527482327L;
 
 	/** 
 	 * 格式 : json , 目前 json 的 key 有 biz_unique_no

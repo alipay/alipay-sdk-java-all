@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金记账号的信息查询
  *
  * @author auto create
- * @since 1.0, 2024-07-02 16:17:51
+ * @since 1.0, 2025-03-26 19:52:19
  */
 public class AlipayFundAccountbookQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1654791836476446699L;
+	private static final long serialVersionUID = 6869189513133599688L;
 
 	/**
 	 * 记账账簿id
@@ -20,7 +20,9 @@ public class AlipayFundAccountbookQueryModel extends AlipayObject {
 	private String accountBookId;
 
 	/**
-	 * JSON格式，传递业务扩展参数
+	 * 传递业务扩展参数。
+注意：ext_info字段本质上是String类型，所以传递
+的是转义后的json字符串。
 	 */
 	@ApiField("ext_info")
 	private String extInfo;

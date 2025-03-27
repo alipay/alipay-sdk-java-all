@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票
  *
  * @author auto create
- * @since 1.0, 2024-01-24 10:57:25
+ * @since 1.0, 2025-03-26 10:31:51
  */
 public class HotelInvoice extends AlipayObject {
 
-	private static final long serialVersionUID = 1294283864246618897L;
+	private static final long serialVersionUID = 5127194465986962332L;
 
 	/**
 	 * 发票模式
@@ -39,6 +39,12 @@ public class HotelInvoice extends AlipayObject {
 	@ApiListField("invoice_type")
 	@ApiField("string")
 	private List<String> invoiceType;
+
+	/**
+	 * 1 支持预约开票，2不支持预约开票
+	 */
+	@ApiField("order_invoice")
+	private String orderInvoice;
 
 	/**
 	 * 邮费提供方：
@@ -69,6 +75,13 @@ public class HotelInvoice extends AlipayObject {
 	}
 	public void setInvoiceType(List<String> invoiceType) {
 		this.invoiceType = invoiceType;
+	}
+
+	public String getOrderInvoice() {
+		return this.orderInvoice;
+	}
+	public void setOrderInvoice(String orderInvoice) {
+		this.orderInvoice = orderInvoice;
 	}
 
 	public String getPostageProvider() {

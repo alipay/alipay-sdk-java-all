@@ -1,5 +1,7 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
@@ -7,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁分账计划
  *
  * @author auto create
- * @since 1.0, 2025-03-18 14:19:33
+ * @since 1.0, 2025-03-26 17:17:04
  */
 public class RentRoyalty extends AlipayObject {
 
-	private static final long serialVersionUID = 7329842991243581552L;
+	private static final long serialVersionUID = 6282154165266815812L;
 
 	/**
 	 * 订单id
@@ -42,6 +44,12 @@ public class RentRoyalty extends AlipayObject {
 	 */
 	@ApiField("current_buyout_price")
 	private String currentBuyoutPrice;
+
+	/**
+	 * 预期分账时间
+	 */
+	@ApiField("expect_royalty_time")
+	private Date expectRoyaltyTime;
 
 	/**
 	 * 商户订单号
@@ -154,6 +162,13 @@ public class RentRoyalty extends AlipayObject {
 	}
 	public void setCurrentBuyoutPrice(String currentBuyoutPrice) {
 		this.currentBuyoutPrice = currentBuyoutPrice;
+	}
+
+	public Date getExpectRoyaltyTime() {
+		return this.expectRoyaltyTime;
+	}
+	public void setExpectRoyaltyTime(Date expectRoyaltyTime) {
+		this.expectRoyaltyTime = expectRoyaltyTime;
 	}
 
 	public String getOutOrderId() {

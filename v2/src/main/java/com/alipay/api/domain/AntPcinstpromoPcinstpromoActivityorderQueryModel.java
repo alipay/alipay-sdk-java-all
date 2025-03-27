@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntPcinstpromoPcinstpromoActivityorderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2233845799219928248L;
+	private static final long serialVersionUID = 5585594365367352495L;
 
 	/**
 	 * p站机构营销配置的活动id，activity_order_id为空时必填

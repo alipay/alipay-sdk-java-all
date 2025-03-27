@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RentFinancingExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7318852319211668815L;
+	private static final long serialVersionUID = 5437118676758166264L;
 
 	/**
 	 * 需要融资的金额，币种：人民币

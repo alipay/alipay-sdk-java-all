@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政企团购分期授信复审
  *
  * @author auto create
- * @since 1.0, 2025-02-14 19:44:31
+ * @since 1.0, 2025-03-21 17:36:56
  */
 public class XingheLendassistSrcfgestagecreditSecondApproveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8714136766395847942L;
+	private static final long serialVersionUID = 5284919375422962661L;
 
 	/**
 	 * 政企员工团购分期授信初审的申请单号

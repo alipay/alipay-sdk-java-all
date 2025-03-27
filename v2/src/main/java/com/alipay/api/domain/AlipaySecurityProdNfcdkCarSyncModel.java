@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySecurityProdNfcdkCarSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4488753359822615746L;
+	private static final long serialVersionUID = 6725653132536152464L;
 
 	/**
 	 * 车辆状态数据

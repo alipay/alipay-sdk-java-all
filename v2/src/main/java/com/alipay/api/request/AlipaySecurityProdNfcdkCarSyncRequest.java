@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.nfcdk.car.sync request
  * 
  * @author auto create
- * @since 1.0, 2025-03-06 14:12:26
+ * @since 1.0, 2025-03-24 15:27:25
  */
 public class AlipaySecurityProdNfcdkCarSyncRequest implements AlipayRequest<AlipaySecurityProdNfcdkCarSyncResponse> {
 

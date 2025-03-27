@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: xinghe.lendassist.srcfgestagecredit.first.approve request
  * 
  * @author auto create
- * @since 1.0, 2025-02-14 19:47:23
+ * @since 1.0, 2025-03-21 17:37:26
  */
 public class XingheLendassistSrcfgestagecreditFirstApproveRequest implements AlipayRequest<XingheLendassistSrcfgestagecreditFirstApproveResponse> {
 

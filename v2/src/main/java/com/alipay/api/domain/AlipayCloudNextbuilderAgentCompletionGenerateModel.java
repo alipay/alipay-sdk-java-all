@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生成型应用调用接口
  *
  * @author auto create
- * @since 1.0, 2025-02-25 19:23:18
+ * @since 1.0, 2025-03-25 17:36:41
  */
 public class AlipayCloudNextbuilderAgentCompletionGenerateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4723725132277712395L;
+	private static final long serialVersionUID = 6249436564748177154L;
 
 	/**
 	 * AI 创作平台创建的智能体 的 id，可从AI 创作平台页面获取

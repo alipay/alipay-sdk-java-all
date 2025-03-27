@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.store.businesstime.modify request
  * 
  * @author auto create
- * @since 1.0, 2025-03-19 16:22:37
+ * @since 1.0, 2025-03-20 15:27:26
  */
 public class AlipayCommerceMedicalStoreBusinesstimeModifyRequest implements AlipayRequest<AlipayCommerceMedicalStoreBusinesstimeModifyResponse> {
 

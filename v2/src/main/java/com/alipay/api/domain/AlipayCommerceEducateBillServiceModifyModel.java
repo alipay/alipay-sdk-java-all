@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 教育缴费账单更新
  *
  * @author auto create
- * @since 1.0, 2023-04-14 10:14:38
+ * @since 1.0, 2025-03-20 19:29:00
  */
 public class AlipayCommerceEducateBillServiceModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6476986435319366242L;
+	private static final long serialVersionUID = 8825818139748187181L;
 
 	/**
 	 * 支付宝外部交易号

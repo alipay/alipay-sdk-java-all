@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政企团购分期支用外部订单映射同步
  *
  * @author auto create
- * @since 1.0, 2025-02-14 19:43:51
+ * @since 1.0, 2025-03-21 17:37:21
  */
 public class XingheLendassistSrcfgestagelendOutordermappingSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7878615466951587786L;
+	private static final long serialVersionUID = 5554522678314124398L;
 
 	/**
 	 * 政企员工团购分期授信初审的申请单号

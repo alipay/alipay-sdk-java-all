@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ObArtifactSyncDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3145523969394188654L;
+	private static final long serialVersionUID = 2575449385587853223L;
 
 	/**
 	 * 制品全称

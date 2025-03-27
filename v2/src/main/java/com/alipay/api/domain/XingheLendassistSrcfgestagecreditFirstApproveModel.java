@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政企团购分期授信初审
  *
  * @author auto create
- * @since 1.0, 2025-02-14 19:44:03
+ * @since 1.0, 2025-03-21 17:36:55
  */
 public class XingheLendassistSrcfgestagecreditFirstApproveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8417482165692342869L;
+	private static final long serialVersionUID = 2786924144325481232L;
 
 	/**
 	 * 政企客户经理所属市

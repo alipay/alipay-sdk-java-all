@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.paysaas.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-11 17:48:42
+ * @since 1.0, 2025-03-26 19:37:25
  */
 public class AlipayOfflinePaysaasOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1146523346482465615L;
+	private static final long serialVersionUID = 6397484328392713532L;
 
 	/** 
 	 * 推单业务的唯一单号

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 教育缴费交易创建接口
  *
  * @author auto create
- * @since 1.0, 2023-09-06 10:37:01
+ * @since 1.0, 2025-03-20 19:29:15
  */
 public class AlipayCommerceEducateOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5152833947465685582L;
+	private static final long serialVersionUID = 8792126856774183882L;
 
 	/**
 	 * 订单附加信息。

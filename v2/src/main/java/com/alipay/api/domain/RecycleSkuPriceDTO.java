@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 具体款式商品的价格，包含最低价与最高价
  *
  * @author auto create
- * @since 1.0, 2025-03-19 14:12:26
+ * @since 1.0, 2025-03-20 19:52:27
  */
 public class RecycleSkuPriceDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1673373255131567722L;
+	private static final long serialVersionUID = 5179185476199671752L;
 
 	/**
 	 * 最高价（单位为元，金额超过1000就不允许小数点）
@@ -25,6 +28,13 @@ public class RecycleSkuPriceDTO extends AlipayObject {
 	@ApiField("min_price")
 	private String minPrice;
 
+	/**
+	 * null
+	 */
+	@ApiListField("price_ext")
+	@ApiField("recycle_price_ext_d_t_o")
+	private List<RecyclePriceExtDTO> priceExt;
+
 	public String getMaxPrice() {
 		return this.maxPrice;
 	}
@@ -37,6 +47,13 @@ public class RecycleSkuPriceDTO extends AlipayObject {
 	}
 	public void setMinPrice(String minPrice) {
 		this.minPrice = minPrice;
+	}
+
+	public List<RecyclePriceExtDTO> getPriceExt() {
+		return this.priceExt;
+	}
+	public void setPriceExt(List<RecyclePriceExtDTO> priceExt) {
+		this.priceExt = priceExt;
 	}
 
 }

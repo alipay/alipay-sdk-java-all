@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 缴费账单查询
  *
  * @author auto create
- * @since 1.0, 2023-04-14 10:12:16
+ * @since 1.0, 2025-03-20 19:24:30
  */
 public class AlipayEcoEduKtBillingQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4195182777516872698L;
+	private static final long serialVersionUID = 1238125716289199996L;
 
 	/**
 	 * Isv pid

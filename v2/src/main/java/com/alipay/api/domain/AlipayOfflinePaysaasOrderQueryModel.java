@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单状态查询
  *
  * @author auto create
- * @since 1.0, 2025-03-11 17:48:42
+ * @since 1.0, 2025-03-26 19:34:18
  */
 public class AlipayOfflinePaysaasOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2494131933148547989L;
+	private static final long serialVersionUID = 1674642956594481736L;
 
 	/**
 	 * 收款订单投送N手持设备ID
@@ -25,6 +25,24 @@ public class AlipayOfflinePaysaasOrderQueryModel extends AlipayObject {
 	@ApiField("isv_out_order_no")
 	private String isvOutOrderNo;
 
+	/**
+	 * 商家的直间连类型，按照商家类型，选择正确的枚举值。
+	 */
+	@ApiField("merchant_type")
+	private String merchantType;
+
+	/**
+	 * 设备序列号
+	 */
+	@ApiField("sn")
+	private String sn;
+
+	/**
+	 * 设备供应商 ID：supplierId，如意生态版AMX设备请填写“201901111100635561”
+	 */
+	@ApiField("supplier_id")
+	private String supplierId;
+
 	public String getBizTid() {
 		return this.bizTid;
 	}
@@ -37,6 +55,27 @@ public class AlipayOfflinePaysaasOrderQueryModel extends AlipayObject {
 	}
 	public void setIsvOutOrderNo(String isvOutOrderNo) {
 		this.isvOutOrderNo = isvOutOrderNo;
+	}
+
+	public String getMerchantType() {
+		return this.merchantType;
+	}
+	public void setMerchantType(String merchantType) {
+		this.merchantType = merchantType;
+	}
+
+	public String getSn() {
+		return this.sn;
+	}
+	public void setSn(String sn) {
+		this.sn = sn;
+	}
+
+	public String getSupplierId() {
+		return this.supplierId;
+	}
+	public void setSupplierId(String supplierId) {
+		this.supplierId = supplierId;
 	}
 
 }
