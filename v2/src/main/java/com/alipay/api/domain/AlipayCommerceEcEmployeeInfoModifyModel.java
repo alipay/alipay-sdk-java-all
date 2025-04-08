@@ -10,11 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 员工信息修改
  *
  * @author auto create
- * @since 1.0, 2024-07-09 11:19:15
+ * @since 1.0, 2025-03-27 19:34:18
  */
 public class AlipayCommerceEcEmployeeInfoModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3348467326386615829L;
+	private static final long serialVersionUID = 7247697619412885577L;
+
+	/**
+	 * 员工所属核算主体，核算主体可用于管控不同员工的出资方式，建议和不同出资账户关联，一个员工只能有一个核算主体。
+	 */
+	@ApiListField("accounting_entity_ids")
+	@ApiField("string")
+	private List<String> accountingEntityIds;
 
 	/**
 	 * 员工所属部门。如果不传值，则不更新所属部门
@@ -60,6 +67,14 @@ public class AlipayCommerceEcEmployeeInfoModifyModel extends AlipayObject {
 	private String enterpriseId;
 
 	/**
+	 * 员工标签，用于员工的打标分类，后续费控管理可使用标签进行控制，支持输入多个标签，如“差旅员工，用餐员工”等；<br/><br/>
+使用场景：1. 请严格对标签分类，不要滥用员工标签，否则影响员工和费控管理； 2. 一个员工最多10个标签，如无必要请勿使用；3. 标签名只能包含字母（大小写）、数字或中文字符
+	 */
+	@ApiListField("label_names")
+	@ApiField("string")
+	private List<String> labelNames;
+
+	/**
 	 * 个性化信息。如果不传值，则不更新个性化信息。 <a href='https://opendocs.alipay.com/pre-open/0ceh47?pathHash=14fac87c'>详见文档</a>
 	 */
 	@ApiField("profiles")
@@ -71,6 +86,13 @@ public class AlipayCommerceEcEmployeeInfoModifyModel extends AlipayObject {
 	@ApiListField("role_list")
 	@ApiField("string")
 	private List<String> roleList;
+
+	public List<String> getAccountingEntityIds() {
+		return this.accountingEntityIds;
+	}
+	public void setAccountingEntityIds(List<String> accountingEntityIds) {
+		this.accountingEntityIds = accountingEntityIds;
+	}
 
 	public List<String> getDepartmentIds() {
 		return this.departmentIds;
@@ -119,6 +141,13 @@ public class AlipayCommerceEcEmployeeInfoModifyModel extends AlipayObject {
 	}
 	public void setEnterpriseId(String enterpriseId) {
 		this.enterpriseId = enterpriseId;
+	}
+
+	public List<String> getLabelNames() {
+		return this.labelNames;
+	}
+	public void setLabelNames(List<String> labelNames) {
+		this.labelNames = labelNames;
 	}
 
 	public String getProfiles() {

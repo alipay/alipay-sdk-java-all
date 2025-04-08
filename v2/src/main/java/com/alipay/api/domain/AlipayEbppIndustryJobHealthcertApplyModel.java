@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppIndustryJobHealthcertApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3458368924114435394L;
+	private static final long serialVersionUID = 8351331526231478468L;
 
 	/**
 	 * 使用支付宝就业健康证认证服务后，回跳到该商户指定的地址

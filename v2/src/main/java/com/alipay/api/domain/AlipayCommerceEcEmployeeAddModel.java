@@ -10,11 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 添加员工
  *
  * @author auto create
- * @since 1.0, 2025-03-11 11:05:53
+ * @since 1.0, 2025-04-08 10:41:20
  */
 public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4269592199639271986L;
+	private static final long serialVersionUID = 8357392621995932768L;
+
+	/**
+	 * 员工所属核算主体，核算主体可用于管控不同员工的出资方式，建议和不同出资账户关联
+	 */
+	@ApiListField("accounting_entity_ids")
+	@ApiField("string")
+	private List<String> accountingEntityIds;
 
 	/**
 	 * 是否需要生成吱口令，默认不生成
@@ -122,6 +129,13 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	private String iotVid;
 
 	/**
+	 * 员工标签，用于员工的打标分类，后续费控管理可使用标签进行控制，支持输入多个标签，如“差旅员工，用餐员工”等；若企业需要将离职员工统一管理且不变更员工状态，可打标“离职员工”
+	 */
+	@ApiListField("label_names")
+	@ApiField("string")
+	private List<String> labelNames;
+
+	/**
 	 * 个性化信息 <a href='https://opendocs.alipay.com/pre-open/0ceh47?pathHash=14fac87c'>详见文档</a>
 	 */
 	@ApiField("profiles")
@@ -152,6 +166,13 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	 */
 	@ApiField("withholding_sign_str")
 	private String withholdingSignStr;
+
+	public List<String> getAccountingEntityIds() {
+		return this.accountingEntityIds;
+	}
+	public void setAccountingEntityIds(List<String> accountingEntityIds) {
+		this.accountingEntityIds = accountingEntityIds;
+	}
 
 	public Boolean getCreateShareCode() {
 		return this.createShareCode;
@@ -270,6 +291,13 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	}
 	public void setIotVid(String iotVid) {
 		this.iotVid = iotVid;
+	}
+
+	public List<String> getLabelNames() {
+		return this.labelNames;
+	}
+	public void setLabelNames(List<String> labelNames) {
+		this.labelNames = labelNames;
 	}
 
 	public String getProfiles() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 回收行业质检报告上传
  *
  * @author auto create
- * @since 1.0, 2025-03-25 14:16:45
+ * @since 1.0, 2025-04-08 18:12:28
  */
 public class AlipayCommerceRecycleQcreportUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2443514343653619235L;
+	private static final long serialVersionUID = 7663251565287472163L;
 
 	/**
 	 * null

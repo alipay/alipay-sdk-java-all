@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.housing.dict.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-19 14:12:26
+ * @since 1.0, 2025-04-08 17:07:58
  */
 public class AlipayCommerceHousingDictQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4348861114549292374L;
+	private static final long serialVersionUID = 6193992487156787615L;
 
 	/** 
 	 * null

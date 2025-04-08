@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 返回结果
  *
  * @author auto create
- * @since 1.0, 2025-03-19 14:12:26
+ * @since 1.0, 2025-04-08 16:57:40
  */
 public class ApartmentHouseModelDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7542625134312648997L;
+	private static final long serialVersionUID = 2127919263811769781L;
 
 	/**
 	 * 公寓房源id

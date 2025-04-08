@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 品牌资产授权
  *
  * @author auto create
- * @since 1.0, 2023-06-01 11:41:41
+ * @since 1.0, 2025-04-01 11:33:20
  */
 public class AntMerchantExpandBrandAssetAuthModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2268843812444253912L;
+	private static final long serialVersionUID = 3627981367245958869L;
 
 	/**
 	 * 资产ID，资产类型为账号时传入pid/smid，为门店时传入shopId，为小程序生活号时传入appid

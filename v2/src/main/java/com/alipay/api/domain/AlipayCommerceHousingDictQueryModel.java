@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 房源常量字典查询
  *
  * @author auto create
- * @since 1.0, 2025-03-19 14:12:26
+ * @since 1.0, 2025-04-08 17:07:58
  */
 public class AlipayCommerceHousingDictQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7284915228922638115L;
+	private static final long serialVersionUID = 1129971178183372945L;
 
 	/**
 	 * 单个值，非固定枚举值

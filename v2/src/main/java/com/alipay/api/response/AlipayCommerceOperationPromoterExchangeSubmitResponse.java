@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.promoter.exchange.submit response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-08 11:38:23
+ * @since 1.0, 2025-04-03 11:13:20
  */
 public class AlipayCommerceOperationPromoterExchangeSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1682172164486392318L;
+	private static final long serialVersionUID = 6563947495172754971L;
 
 	/** 
 	 * 积分兑换奖品处理结果

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租车spu曝光信息
  *
  * @author auto create
- * @since 1.0, 2024-10-15 14:56:35
+ * @since 1.0, 2025-04-07 14:48:58
  */
 public class RentCarSpuExpoInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2284871397992366115L;
+	private static final long serialVersionUID = 3659617957632851826L;
 
 	/**
 	 * 车型类型
@@ -30,6 +30,18 @@ public class RentCarSpuExpoInfo extends AlipayObject {
 	 */
 	@ApiField("expo_rank")
 	private Long expoRank;
+
+	/**
+	 * 分城市订单排名（订单量越大值越小）
+	 */
+	@ApiField("order_rank")
+	private Long orderRank;
+
+	/**
+	 * spu的标识
+	 */
+	@ApiField("spu_id")
+	private String spuId;
 
 	/**
 	 * spu名称
@@ -62,6 +74,20 @@ public class RentCarSpuExpoInfo extends AlipayObject {
 	}
 	public void setExpoRank(Long expoRank) {
 		this.expoRank = expoRank;
+	}
+
+	public Long getOrderRank() {
+		return this.orderRank;
+	}
+	public void setOrderRank(Long orderRank) {
+		this.orderRank = orderRank;
+	}
+
+	public String getSpuId() {
+		return this.spuId;
+	}
+	public void setSpuId(String spuId) {
+		this.spuId = spuId;
 	}
 
 	public String getSpuName() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品列表信息模型
  *
  * @author auto create
- * @since 1.0, 2025-02-19 16:55:56
+ * @since 1.0, 2025-04-03 19:49:54
  */
 public class MiniGoodsDetailInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4755762478647271344L;
+	private static final long serialVersionUID = 1519619177146763991L;
 
 	/**
 	 * 活动信息
@@ -43,10 +43,9 @@ public class MiniGoodsDetailInfoDTO extends AlipayObject {
 	private List<EffectiveDatesDTO> effectiveDates;
 
 	/**
-	 * 商品类目 当前字段已废弃(暂时未使用)
+	 * 商品类目
 	 */
 	@ApiField("goods_category")
-	@Deprecated
 	private String goodsCategory;
 
 	/**
@@ -74,10 +73,23 @@ public class MiniGoodsDetailInfoDTO extends AlipayObject {
 	private String imageMaterialId;
 
 	/**
+	 * 品牌编号；商品品牌信息https://xfpzl.yuque.com/dgw58m/apg2ie/qlqvdv0dhsbldyhv#kIy4；参考此文档传入品牌编号
+	 */
+	@ApiField("item_brand")
+	private String itemBrand;
+
+	/**
 	 * 商品数量
 	 */
 	@ApiField("item_cnt")
 	private String itemCnt;
+
+	/**
+	 * 商品成色 当前字段已废弃(商品成色有成色和等级两个信息。该字段定义模糊。)
+	 */
+	@ApiField("item_condition")
+	@Deprecated
+	private String itemCondition;
 
 	/**
 	 * 单位元有优惠信息时需要传入，优惠方式sale_real_price与item_discount二选一sale_real_price使用场景：商品有单价优惠，传入商品实际成交单价item_discount使用场景：同时购买多件商品时存在优惠，传入优惠总额优惠计算参考：<a href="https://opendocs.alipay.com/mini/0ag2e1?pathHash=20b9a409">文档</a> 中资金平衡校验
@@ -126,6 +138,12 @@ public class MiniGoodsDetailInfoDTO extends AlipayObject {
 	 */
 	@ApiField("price_mode")
 	private String priceMode;
+
+	/**
+	 * 租赁商品扩展信息
+	 */
+	@ApiField("rent_goods_info")
+	private RentGoodsInfoDTO rentGoodsInfo;
 
 	/**
 	 * 租金信息，租赁商品特有
@@ -227,11 +245,25 @@ item_discount使用场景：同时购买多件商品时存在优惠，传入优�
 		this.imageMaterialId = imageMaterialId;
 	}
 
+	public String getItemBrand() {
+		return this.itemBrand;
+	}
+	public void setItemBrand(String itemBrand) {
+		this.itemBrand = itemBrand;
+	}
+
 	public String getItemCnt() {
 		return this.itemCnt;
 	}
 	public void setItemCnt(String itemCnt) {
 		this.itemCnt = itemCnt;
+	}
+
+	public String getItemCondition() {
+		return this.itemCondition;
+	}
+	public void setItemCondition(String itemCondition) {
+		this.itemCondition = itemCondition;
 	}
 
 	public String getItemDiscount() {
@@ -288,6 +320,13 @@ item_discount使用场景：同时购买多件商品时存在优惠，传入优�
 	}
 	public void setPriceMode(String priceMode) {
 		this.priceMode = priceMode;
+	}
+
+	public RentGoodsInfoDTO getRentGoodsInfo() {
+		return this.rentGoodsInfo;
+	}
+	public void setRentGoodsInfo(RentGoodsInfoDTO rentGoodsInfo) {
+		this.rentGoodsInfo = rentGoodsInfo;
 	}
 
 	public RentInfoDTO getRentInfo() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数字人多分镜页面配置
  *
  * @author auto create
- * @since 1.0, 2024-04-25 17:02:57
+ * @since 1.0, 2025-03-27 21:27:21
  */
 public class AvatarMultiPageConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 7718346686957862194L;
+	private static final long serialVersionUID = 7752413967699855757L;
 
 	/**
 	 * 播报内容

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.nft.transfer.apply response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-12 11:01:25
+ * @since 1.0, 2025-03-31 11:32:30
  */
 public class AnttechNftTransferApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3256261159332453683L;
+	private static final long serialVersionUID = 2274134193229268348L;
 
 	/** 
 	 * 流转的nftId

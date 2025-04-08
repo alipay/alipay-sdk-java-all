@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.itask.avatar.gentask.sync response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-25 16:21:48
+ * @since 1.0, 2025-03-28 10:07:28
  */
 public class AlipayIserviceItaskAvatarGentaskSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4841157277258286398L;
+	private static final long serialVersionUID = 6759126948781144614L;
 
 	/** 
 	 * 数字人视频结果

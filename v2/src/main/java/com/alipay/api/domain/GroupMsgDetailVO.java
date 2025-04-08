@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 群发消息详情
  *
  * @author auto create
- * @since 1.0, 2025-03-07 16:52:55
+ * @since 1.0, 2025-03-31 16:32:20
  */
 public class GroupMsgDetailVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7363671589475578954L;
+	private static final long serialVersionUID = 8284112226213297525L;
 
 	/**
 	 * 是否@所有人
@@ -53,6 +53,12 @@ public class GroupMsgDetailVO extends AlipayObject {
 	@ApiListField("group_ids")
 	@ApiField("string")
 	private List<String> groupIds;
+
+	/**
+	 * 用于描述周期消息的发送配置
+	 */
+	@ApiField("group_msg_schedule_config")
+	private GroupMsgScheduleConfigVO groupMsgScheduleConfig;
 
 	/**
 	 * 创建者
@@ -136,6 +142,13 @@ public class GroupMsgDetailVO extends AlipayObject {
 	}
 	public void setGroupIds(List<String> groupIds) {
 		this.groupIds = groupIds;
+	}
+
+	public GroupMsgScheduleConfigVO getGroupMsgScheduleConfig() {
+		return this.groupMsgScheduleConfig;
+	}
+	public void setGroupMsgScheduleConfig(GroupMsgScheduleConfigVO groupMsgScheduleConfig) {
+		this.groupMsgScheduleConfig = groupMsgScheduleConfig;
 	}
 
 	public String getMerchantName() {

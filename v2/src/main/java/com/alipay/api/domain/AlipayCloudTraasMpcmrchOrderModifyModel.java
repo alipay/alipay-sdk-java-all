@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序云租赁订单同步
  *
  * @author auto create
- * @since 1.0, 2024-07-05 12:04:51
+ * @since 1.0, 2025-03-28 15:21:55
  */
 public class AlipayCloudTraasMpcmrchOrderModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7848244162663847351L;
+	private static final long serialVersionUID = 3555543918791299842L;
 
 	/**
 	 * 客户详情

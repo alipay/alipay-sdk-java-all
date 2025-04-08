@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 新增非标品牌
  *
  * @author auto create
- * @since 1.0, 2023-06-01 11:40:58
+ * @since 1.0, 2025-04-01 11:32:51
  */
 public class AntMerchantExpandBrandCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3829748716233227674L;
+	private static final long serialVersionUID = 6736926668399127945L;
 
 	/**
 	 * 品牌中文名，中文名与英文名至少填写一个。

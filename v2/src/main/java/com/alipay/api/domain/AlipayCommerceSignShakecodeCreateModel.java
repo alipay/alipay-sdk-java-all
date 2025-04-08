@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 微付宝签约吱口令创建
  *
  * @author auto create
- * @since 1.0, 2025-03-06 20:01:53
+ * @since 1.0, 2025-03-27 19:34:53
  */
 public class AlipayCommerceSignShakecodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5497876654362728656L;
+	private static final long serialVersionUID = 8652832674358444379L;
 
 	/**
 	 * 吱口令跳转链接

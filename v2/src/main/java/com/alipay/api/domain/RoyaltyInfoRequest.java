@@ -1,5 +1,7 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
@@ -7,17 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-03-20 19:49:41
+ * @since 1.0, 2025-04-01 19:52:26
  */
 public class RoyaltyInfoRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 6442675635156615658L;
+	private static final long serialVersionUID = 6612598271449974742L;
 
 	/**
 	 * 买断分账金，人明币，单位：元
 	 */
 	@ApiField("buy_out_royalty")
 	private String buyOutRoyalty;
+
+	/**
+	 * 预期分账时间
+	 */
+	@ApiField("expect_royalty_time")
+	private Date expectRoyaltyTime;
 
 	/**
 	 * 分账期数
@@ -42,6 +50,13 @@ public class RoyaltyInfoRequest extends AlipayObject {
 	}
 	public void setBuyOutRoyalty(String buyOutRoyalty) {
 		this.buyOutRoyalty = buyOutRoyalty;
+	}
+
+	public Date getExpectRoyaltyTime() {
+		return this.expectRoyaltyTime;
+	}
+	public void setExpectRoyaltyTime(Date expectRoyaltyTime) {
+		this.expectRoyaltyTime = expectRoyaltyTime;
 	}
 
 	public String getRoyaltyPeriod() {

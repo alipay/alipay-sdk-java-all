@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 数字人短视频生产
  *
  * @author auto create
- * @since 1.0, 2024-10-30 13:37:11
+ * @since 1.0, 2025-03-27 21:27:21
  */
 public class AlipayIserviceItaskAvatarGentaskSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6854475726653336645L;
+	private static final long serialVersionUID = 1736425374388129951L;
 
 	/**
 	 * 位置信息
@@ -28,6 +28,12 @@ public class AlipayIserviceItaskAvatarGentaskSyncModel extends AlipayObject {
 	@ApiListField("multi_page_config")
 	@ApiField("avatar_multi_page_config")
 	private List<AvatarMultiPageConfig> multiPageConfig;
+
+	/**
+	 * 需要添加水印
+	 */
+	@ApiField("need_water_mark")
+	private Boolean needWaterMark;
 
 	/**
 	 * 播报内容，不超过1000个字
@@ -49,7 +55,7 @@ public class AlipayIserviceItaskAvatarGentaskSyncModel extends AlipayObject {
 	private Long projectId;
 
 	/**
-	 * 分辨率，720/1080两种
+	 * 分辨率，单位为像素
 	 */
 	@ApiField("resolution")
 	private String resolution;
@@ -102,6 +108,13 @@ public class AlipayIserviceItaskAvatarGentaskSyncModel extends AlipayObject {
 	}
 	public void setMultiPageConfig(List<AvatarMultiPageConfig> multiPageConfig) {
 		this.multiPageConfig = multiPageConfig;
+	}
+
+	public Boolean getNeedWaterMark() {
+		return this.needWaterMark;
+	}
+	public void setNeedWaterMark(Boolean needWaterMark) {
+		this.needWaterMark = needWaterMark;
 	}
 
 	public String getOriText() {

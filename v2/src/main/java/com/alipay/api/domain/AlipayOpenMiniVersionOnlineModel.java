@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniVersionOnlineModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1773922978227662679L;
+	private static final long serialVersionUID = 3728236678855447433L;
 
 	/**
 	 * 商家小程序版本号，需为审核通过状态或灰度中版本。
@@ -32,7 +32,7 @@ com.alipay.iot.xpaas：支付宝IoT端。
 	private String bundleId;
 
 	/**
-	 * true - 性能优先； false - 覆盖优先（默认）
+	 * true - 性能优先； false - 覆盖优先（默认）；试点开放，如需使用，请咨询在线客服
 	 */
 	@ApiField("downgrade")
 	private Boolean downgrade;

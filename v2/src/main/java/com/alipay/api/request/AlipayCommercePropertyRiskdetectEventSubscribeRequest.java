@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.property.riskdetect.event.subscribe request
  * 
  * @author auto create
- * @since 1.0, 2025-03-25 14:11:28
+ * @since 1.0, 2025-03-27 21:47:18
  */
 public class AlipayCommercePropertyRiskdetectEventSubscribeRequest implements AlipayRequest<AlipayCommercePropertyRiskdetectEventSubscribeResponse> {
 

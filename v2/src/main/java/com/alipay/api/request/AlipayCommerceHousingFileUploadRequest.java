@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.housing.file.upload request
  * 
  * @author auto create
- * @since 1.0, 2025-03-13 14:37:25
+ * @since 1.0, 2025-04-08 17:06:02
  */
 public class AlipayCommerceHousingFileUploadRequest implements AlipayUploadRequest<AlipayCommerceHousingFileUploadResponse> {
 

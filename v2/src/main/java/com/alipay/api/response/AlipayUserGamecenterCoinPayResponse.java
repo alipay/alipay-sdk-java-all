@@ -8,14 +8,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.gamecenter.coin.pay response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-11 16:48:01
+ * @since 1.0, 2025-04-01 16:42:27
  */
 public class AlipayUserGamecenterCoinPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3317582784195213334L;
+	private static final long serialVersionUID = 6838887224768237247L;
 
 	/** 
-	 * 预扣后的用户游戏币余额
+	 * 预扣后的用户游戏币余额数量，单位:个
 	 */
 	@ApiField("balance")
 	private Long balance;

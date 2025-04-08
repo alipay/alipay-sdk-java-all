@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户店铺信息
  *
  * @author auto create
- * @since 1.0, 2024-12-05 10:24:17
+ * @since 1.0, 2025-03-31 14:57:55
  */
 public class StoreVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3613965565195731345L;
+	private static final long serialVersionUID = 5362377918113696758L;
 
 	/**
 	 * 门店纬度

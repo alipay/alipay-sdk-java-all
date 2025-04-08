@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 品牌资产查询
  *
  * @author auto create
- * @since 1.0, 2023-06-01 11:41:21
+ * @since 1.0, 2025-04-01 11:33:10
  */
 public class AntMerchantExpandBrandAssetQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7769112969628629934L;
+	private static final long serialVersionUID = 6691452564456767551L;
 
 	/**
 	 * 资产类型

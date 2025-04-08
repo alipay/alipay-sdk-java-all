@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物流扩展信息
  *
  * @author auto create
- * @since 1.0, 2025-03-19 14:22:26
+ * @since 1.0, 2025-04-01 19:52:25
  */
 public class SellerSyncRentDeliveryExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2743395581869543579L;
+	private static final long serialVersionUID = 2726348314472629439L;
 
 	/**
 	 * 物流公司的物流单号，例如：顺丰的物流单号

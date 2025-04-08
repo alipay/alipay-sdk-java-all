@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业跳转到支付宝端内小程序进行线下支付
  *
  * @author auto create
- * @since 1.0, 2023-03-07 19:54:22
+ * @since 1.0, 2025-04-07 17:00:39
  */
 public class AlipayFundJointaccountTradePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4456636351472713143L;
+	private static final long serialVersionUID = 5221921452764436365L;
 
 	/**
 	 * 企业账户ID

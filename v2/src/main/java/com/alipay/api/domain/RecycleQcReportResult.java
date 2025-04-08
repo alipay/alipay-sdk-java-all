@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户质检结果
  *
  * @author auto create
- * @since 1.0, 2025-03-25 14:16:45
+ * @since 1.0, 2025-04-08 18:12:28
  */
 public class RecycleQcReportResult extends AlipayObject {
 
-	private static final long serialVersionUID = 2589483715267922463L;
+	private static final long serialVersionUID = 4582929356162772577L;
 
 	/**
 	 * null
@@ -22,6 +22,13 @@ public class RecycleQcReportResult extends AlipayObject {
 	@ApiListField("image_id_list")
 	@ApiField("string")
 	private List<String> imageIdList;
+
+	/**
+	 * option_code是问卷中的问题选项code，和text二选一传入
+使用支付宝问卷问题时，传入option_code；非支付宝问卷，传入text
+	 */
+	@ApiField("option_code")
+	private String optionCode;
 
 	/**
 	 * 文案
@@ -34,6 +41,13 @@ public class RecycleQcReportResult extends AlipayObject {
 	}
 	public void setImageIdList(List<String> imageIdList) {
 		this.imageIdList = imageIdList;
+	}
+
+	public String getOptionCode() {
+		return this.optionCode;
+	}
+	public void setOptionCode(String optionCode) {
+		this.optionCode = optionCode;
 	}
 
 	public String getText() {

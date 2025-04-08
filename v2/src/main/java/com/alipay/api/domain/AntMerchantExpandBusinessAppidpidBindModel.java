@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商业关系小程序收单账号绑定
  *
  * @author auto create
- * @since 1.0, 2024-10-31 14:50:15
+ * @since 1.0, 2025-04-01 11:18:02
  */
 public class AntMerchantExpandBusinessAppidpidBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6386665972519862394L;
+	private static final long serialVersionUID = 2572179781431176512L;
 
 	/**
 	 * 小程序id，用于绑定的收单账号的小程序id

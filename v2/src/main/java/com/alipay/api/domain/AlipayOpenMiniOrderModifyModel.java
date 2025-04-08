@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租赁订单修改
  *
  * @author auto create
- * @since 1.0, 2025-02-19 16:53:06
+ * @since 1.0, 2025-04-01 11:24:56
  */
 public class AlipayOpenMiniOrderModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1818122385673443933L;
+	private static final long serialVersionUID = 7347353739416829615L;
 
 	/**
 	 * 收货地址
@@ -27,6 +27,12 @@ public class AlipayOpenMiniOrderModifyModel extends AlipayObject {
 	 */
 	@ApiField("alloc_amount_info")
 	private AllocAmountInfoDTO allocAmountInfo;
+
+	/**
+	 * 履约信息
+	 */
+	@ApiField("delivery_detail")
+	private MiniDeliveryInfoUpdateDTO deliveryDetail;
 
 	/**
 	 * 商品修改信息
@@ -60,6 +66,12 @@ public class AlipayOpenMiniOrderModifyModel extends AlipayObject {
 	private PriceInfoModifyDTO priceInfo;
 
 	/**
+	 * 发件人地址：工程师上门地址、快递上门地址
+	 */
+	@ApiField("send_address_info")
+	private MiniOrderAddressInfoDTO sendAddressInfo;
+
+	/**
 	 * 阶段付款计划列表，请在修改付款计划时传入
 	 */
 	@ApiListField("stage_pay_plans")
@@ -90,6 +102,13 @@ public class AlipayOpenMiniOrderModifyModel extends AlipayObject {
 	}
 	public void setAllocAmountInfo(AllocAmountInfoDTO allocAmountInfo) {
 		this.allocAmountInfo = allocAmountInfo;
+	}
+
+	public MiniDeliveryInfoUpdateDTO getDeliveryDetail() {
+		return this.deliveryDetail;
+	}
+	public void setDeliveryDetail(MiniDeliveryInfoUpdateDTO deliveryDetail) {
+		this.deliveryDetail = deliveryDetail;
 	}
 
 	public List<GoodsInfoModifyDTO> getItemInfos() {
@@ -125,6 +144,13 @@ public class AlipayOpenMiniOrderModifyModel extends AlipayObject {
 	}
 	public void setPriceInfo(PriceInfoModifyDTO priceInfo) {
 		this.priceInfo = priceInfo;
+	}
+
+	public MiniOrderAddressInfoDTO getSendAddressInfo() {
+		return this.sendAddressInfo;
+	}
+	public void setSendAddressInfo(MiniOrderAddressInfoDTO sendAddressInfo) {
+		this.sendAddressInfo = sendAddressInfo;
 	}
 
 	public List<StagePayPlanDTO> getStagePayPlans() {

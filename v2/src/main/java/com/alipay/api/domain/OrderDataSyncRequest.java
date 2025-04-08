@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 售卖订单数据同步请求模型
  *
  * @author auto create
- * @since 1.0, 2025-03-11 21:15:17
+ * @since 1.0, 2025-04-07 19:51:56
  */
 public class OrderDataSyncRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 4511759588437185279L;
+	private static final long serialVersionUID = 1664194517361129564L;
 
 	/**
 	 * 业务id，唯一键标识
@@ -167,6 +167,12 @@ public class OrderDataSyncRequest extends AlipayObject {
 	 */
 	@ApiField("remain_count")
 	private Long remainCount;
+
+	/**
+	 * 商户smid
+	 */
+	@ApiField("smid")
+	private String smid;
 
 	/**
 	 * 解决方案类型（卡类型）
@@ -383,6 +389,13 @@ public class OrderDataSyncRequest extends AlipayObject {
 	}
 	public void setRemainCount(Long remainCount) {
 		this.remainCount = remainCount;
+	}
+
+	public String getSmid() {
+		return this.smid;
+	}
+	public void setSmid(String smid) {
+		this.smid = smid;
 	}
 
 	public String getSolutionType() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小区查询
  *
  * @author auto create
- * @since 1.0, 2025-03-04 13:42:25
+ * @since 1.0, 2025-04-08 17:07:21
  */
 public class AlipayCommerceHousingCommunityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7821964833163397322L;
+	private static final long serialVersionUID = 5825986659565775718L;
 
 	/**
 	 * 小区id

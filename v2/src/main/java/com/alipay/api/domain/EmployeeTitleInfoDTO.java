@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 员工抬头信息
  *
  * @author auto create
- * @since 1.0, 2024-05-31 09:57:58
+ * @since 1.0, 2025-04-01 15:52:19
  */
 public class EmployeeTitleInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2615386643997817238L;
+	private static final long serialVersionUID = 6366743164894271258L;
 
 	/**
 	 * 地址

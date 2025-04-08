@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 设备绑定申请
  *
  * @author auto create
- * @since 1.0, 2025-03-17 16:40:21
+ * @since 1.0, 2025-04-01 20:56:19
  */
 public class AlipayOfflineProviderCollaborateDevicebindApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5812379377431626948L;
+	private static final long serialVersionUID = 4486817741786694163L;
 
 	/**
 	 * 1. 直连绑定必传：

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户维度的交易信息
  *
  * @author auto create
- * @since 1.0, 2024-11-28 17:32:42
+ * @since 1.0, 2025-04-02 09:51:40
  */
 public class GovernGoodsMerchantTrans extends AlipayObject {
 
-	private static final long serialVersionUID = 7276366196753218432L;
+	private static final long serialVersionUID = 2732773389147734717L;
 
 	/**
 	 * 异常交易ID
@@ -34,6 +34,18 @@ public class GovernGoodsMerchantTrans extends AlipayObject {
 	 */
 	@ApiField("merchant_id")
 	private String merchantId;
+
+	/**
+	 * 二级商户ID
+	 */
+	@ApiField("sub_merchant_id")
+	private String subMerchantId;
+
+	/**
+	 * 1:商户+商品，2:二级商户+商品
+	 */
+	@ApiField("task_type")
+	private Long taskType;
 
 	/**
 	 * 交易笔数，单位笔
@@ -60,6 +72,20 @@ public class GovernGoodsMerchantTrans extends AlipayObject {
 	}
 	public void setMerchantId(String merchantId) {
 		this.merchantId = merchantId;
+	}
+
+	public String getSubMerchantId() {
+		return this.subMerchantId;
+	}
+	public void setSubMerchantId(String subMerchantId) {
+		this.subMerchantId = subMerchantId;
+	}
+
+	public Long getTaskType() {
+		return this.taskType;
+	}
+	public void setTaskType(Long taskType) {
+		this.taskType = taskType;
 	}
 
 	public Long getTransCount() {

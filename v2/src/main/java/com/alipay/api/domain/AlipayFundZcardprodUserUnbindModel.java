@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支卡通-用户解绑
  *
  * @author auto create
- * @since 1.0, 2024-03-01 14:31:56
+ * @since 1.0, 2025-04-07 17:10:34
  */
 public class AlipayFundZcardprodUserUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3233949723868154611L;
+	private static final long serialVersionUID = 6765245251648178573L;
 
 	/**
 	 * 账户id

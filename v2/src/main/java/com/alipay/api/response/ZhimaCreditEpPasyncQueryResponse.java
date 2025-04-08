@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.pasync.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-01-10 11:07:25
+ * @since 1.0, 2025-03-28 15:27:24
  */
 public class ZhimaCreditEpPasyncQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6334151872281567796L;
+	private static final long serialVersionUID = 8522147173375461376L;
 
 	/** 
 	 * 支付收单数据集

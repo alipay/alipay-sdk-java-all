@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.opportunity.leads.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-26 17:02:05
+ * @since 1.0, 2025-04-01 17:17:28
  */
 public class AlipayCommerceOperationOpportunityLeadsCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3572764919812712957L;
+	private static final long serialVersionUID = 1461468452715332413L;
 
 	/** 
 	 * 商机id
@@ -25,6 +25,12 @@ public class AlipayCommerceOperationOpportunityLeadsCreateResponse extends Alipa
 	 */
 	@ApiField("opportunity_status")
 	private String opportunityStatus;
+
+	/** 
+	 * 商机状态信息，在门店 Leads 创建失败时传入创建失败原因
+	 */
+	@ApiField("opportunity_status_info")
+	private String opportunityStatusInfo;
 
 	/** 
 	 * 外部流水号
@@ -44,6 +50,13 @@ public class AlipayCommerceOperationOpportunityLeadsCreateResponse extends Alipa
 	}
 	public String getOpportunityStatus( ) {
 		return this.opportunityStatus;
+	}
+
+	public void setOpportunityStatusInfo(String opportunityStatusInfo) {
+		this.opportunityStatusInfo = opportunityStatusInfo;
+	}
+	public String getOpportunityStatusInfo( ) {
+		return this.opportunityStatusInfo;
 	}
 
 	public void setOutBizNo(String outBizNo) {

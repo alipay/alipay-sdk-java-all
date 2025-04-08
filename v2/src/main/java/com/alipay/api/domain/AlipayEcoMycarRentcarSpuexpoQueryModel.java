@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租车分城市SPU曝光排名查询
  *
  * @author auto create
- * @since 1.0, 2024-10-15 14:56:35
+ * @since 1.0, 2025-04-07 14:48:58
  */
 public class AlipayEcoMycarRentcarSpuexpoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5397638767483141436L;
+	private static final long serialVersionUID = 4731966561255483538L;
 
 	/**
 	 * 查询某日的曝光数据，最多支持近七天

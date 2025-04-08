@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.sign.shakecode.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-06 20:07:25
+ * @since 1.0, 2025-04-02 11:03:15
  */
 public class AlipayCommerceSignShakecodeCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8339135378321629726L;
+	private static final long serialVersionUID = 5399521976395849386L;
 
 	/** 
 	 * 创建的吱口令，可复制拉起签约页面

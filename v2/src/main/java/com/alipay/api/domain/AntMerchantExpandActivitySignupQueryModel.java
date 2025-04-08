@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntMerchantExpandActivitySignupQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6326559548193319433L;
+	private static final long serialVersionUID = 8535581442977636793L;
 
 	/**
 	 * 参数名：活动标识

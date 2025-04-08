@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LeasePlanOfferDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6368575521485685192L;
+	private static final long serialVersionUID = 8477392211163666672L;
 
 	/**
 	 * 租赁下单跳转地址

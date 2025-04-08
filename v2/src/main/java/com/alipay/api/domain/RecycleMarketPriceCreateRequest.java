@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RecycleMarketPriceCreateRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 8598789991425117291L;
+	private static final long serialVersionUID = 7389892411568899971L;
 
 	/**
 	 * 用来描述回收商品的成色

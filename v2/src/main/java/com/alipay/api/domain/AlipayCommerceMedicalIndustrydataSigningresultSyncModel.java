@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 互医签约审核结果同步接口
  *
  * @author auto create
- * @since 1.0, 2025-03-19 16:24:34
+ * @since 1.0, 2025-03-31 19:54:54
  */
 public class AlipayCommerceMedicalIndustrydataSigningresultSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2713721129248723542L;
+	private static final long serialVersionUID = 3729567912148371328L;
 
 	/**
 	 * 合作医院code，由支付宝侧分配

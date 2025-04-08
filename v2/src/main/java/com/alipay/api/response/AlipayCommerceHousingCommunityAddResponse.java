@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.housing.community.add response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-04 13:47:27
+ * @since 1.0, 2025-04-08 17:13:30
  */
 public class AlipayCommerceHousingCommunityAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4461429159219816984L;
+	private static final long serialVersionUID = 5283747214867951854L;
 
 	/** 
 	 * 小区id

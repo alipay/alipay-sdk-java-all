@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查看推广码
  *
  * @author auto create
- * @since 1.0, 2021-10-08 15:08:31
+ * @since 1.0, 2025-04-03 11:13:43
  */
 public class AlipayCommerceOperationPromoterQrcodeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3218665526241219551L;
+	private static final long serialVersionUID = 2828383653477334272L;
 
 	/**
 	 * 需要绑定的门店对映的pid

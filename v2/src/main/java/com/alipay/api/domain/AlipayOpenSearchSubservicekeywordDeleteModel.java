@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenSearchSubservicekeywordDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4158811855561773893L;
+	private static final long serialVersionUID = 5127357615817744213L;
 
 	/**
 	 * 关键词配置ID

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付信息
  *
  * @author auto create
- * @since 1.0, 2024-12-05 10:24:17
+ * @since 1.0, 2025-03-31 14:57:55
  */
 public class PaymentVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5333348141252137969L;
+	private static final long serialVersionUID = 5583312856229186668L;
 
 	/**
 	 * 订单优惠总金额
@@ -80,10 +80,22 @@ public class PaymentVO extends AlipayObject {
 	private String packingFee;
 
 	/**
+	 * 购药saas平台支付单号，对应医保对账单中的平台订单号
+	 */
+	@ApiField("pay_num")
+	private String payNum;
+
+	/**
 	 * 特殊时段加价费用，单位：元，保留2位小数
 	 */
 	@ApiField("time_markup_price")
 	private String timeMarkupPrice;
+
+	/**
+	 * 此字段对应B站对账单中的商家订单号
+	 */
+	@ApiField("yk_pay_no")
+	private String ykPayNo;
 
 	public String getAmountDiscount() {
 		return this.amountDiscount;
@@ -162,11 +174,25 @@ public class PaymentVO extends AlipayObject {
 		this.packingFee = packingFee;
 	}
 
+	public String getPayNum() {
+		return this.payNum;
+	}
+	public void setPayNum(String payNum) {
+		this.payNum = payNum;
+	}
+
 	public String getTimeMarkupPrice() {
 		return this.timeMarkupPrice;
 	}
 	public void setTimeMarkupPrice(String timeMarkupPrice) {
 		this.timeMarkupPrice = timeMarkupPrice;
+	}
+
+	public String getYkPayNo() {
+		return this.ykPayNo;
+	}
+	public void setYkPayNo(String ykPayNo) {
+		this.ykPayNo = ykPayNo;
 	}
 
 }

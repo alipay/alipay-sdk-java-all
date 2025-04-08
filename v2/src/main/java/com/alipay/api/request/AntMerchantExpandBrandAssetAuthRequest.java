@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.expand.brand.asset.auth request
  * 
  * @author auto create
- * @since 1.0, 2023-08-24 22:11:42
+ * @since 1.0, 2025-04-01 11:33:20
  */
 public class AntMerchantExpandBrandAssetAuthRequest implements AlipayRequest<AntMerchantExpandBrandAssetAuthResponse> {
 

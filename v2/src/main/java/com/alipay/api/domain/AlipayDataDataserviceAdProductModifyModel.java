@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品状态更新接口
  *
  * @author auto create
- * @since 1.0, 2024-06-03 20:35:46
+ * @since 1.0, 2025-04-02 15:27:20
  */
 public class AlipayDataDataserviceAdProductModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5421799147482539311L;
+	private static final long serialVersionUID = 6875431843628828932L;
+
+	/**
+	 * 商品归属的商户oid, 传入oid时优先使用oid，否则使用pid
+	 */
+	@ApiField("alipay_oid")
+	private String alipayOid;
 
 	/**
 	 * 支付宝唯一id，用于操作鉴权
@@ -48,6 +54,13 @@ public class AlipayDataDataserviceAdProductModifyModel extends AlipayObject {
 	 */
 	@ApiField("source_status")
 	private String sourceStatus;
+
+	public String getAlipayOid() {
+		return this.alipayOid;
+	}
+	public void setAlipayOid(String alipayOid) {
+		this.alipayOid = alipayOid;
+	}
 
 	public String getAlipayPid() {
 		return this.alipayPid;

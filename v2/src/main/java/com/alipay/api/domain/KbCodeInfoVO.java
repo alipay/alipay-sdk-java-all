@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KbCodeInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6574451491251151188L;
+	private static final long serialVersionUID = 6864774381197429465L;
 
 	/**
 	 * 创建口碑码的批次号

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.housing.community.add request
  * 
  * @author auto create
- * @since 1.0, 2025-03-04 13:47:27
+ * @since 1.0, 2025-04-08 17:13:30
  */
 public class AlipayCommerceHousingCommunityAddRequest implements AlipayRequest<AlipayCommerceHousingCommunityAddResponse> {
 

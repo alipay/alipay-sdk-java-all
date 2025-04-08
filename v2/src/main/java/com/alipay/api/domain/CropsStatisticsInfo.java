@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CropsStatisticsInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6463225368531284313L;
+	private static final long serialVersionUID = 4464716352438199637L;
 
 	/**
 	 * 附加信息

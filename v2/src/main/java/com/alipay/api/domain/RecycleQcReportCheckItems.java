@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-03-25 14:16:45
+ * @since 1.0, 2025-04-08 18:12:28
  */
 public class RecycleQcReportCheckItems extends AlipayObject {
 
-	private static final long serialVersionUID = 4375356532563867991L;
+	private static final long serialVersionUID = 8693693534896858334L;
 
 	/**
-	 * 质检属性名
+	 * 质检项目名
 	 */
 	@ApiField("attr_name")
 	private String attrName;
@@ -28,6 +28,12 @@ public class RecycleQcReportCheckItems extends AlipayObject {
 	@ApiListField("items")
 	@ApiField("recycle_qc_report_check_item")
 	private List<RecycleQcReportCheckItem> items;
+
+	/**
+	 * question_code是问卷中的问题code，attr_name是问题文本描述，两个二选一传入。
+	 */
+	@ApiField("question_code")
+	private String questionCode;
 
 	public String getAttrName() {
 		return this.attrName;
@@ -41,6 +47,13 @@ public class RecycleQcReportCheckItems extends AlipayObject {
 	}
 	public void setItems(List<RecycleQcReportCheckItem> items) {
 		this.items = items;
+	}
+
+	public String getQuestionCode() {
+		return this.questionCode;
+	}
+	public void setQuestionCode(String questionCode) {
+		this.questionCode = questionCode;
 	}
 
 }

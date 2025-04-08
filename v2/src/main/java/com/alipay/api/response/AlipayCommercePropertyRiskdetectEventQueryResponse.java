@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.property.riskdetect.event.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-25 14:12:28
+ * @since 1.0, 2025-03-27 21:47:26
  */
 public class AlipayCommercePropertyRiskdetectEventQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5538476435261355213L;
+	private static final long serialVersionUID = 2728394861789231885L;
 
 	/** 
 	 * null

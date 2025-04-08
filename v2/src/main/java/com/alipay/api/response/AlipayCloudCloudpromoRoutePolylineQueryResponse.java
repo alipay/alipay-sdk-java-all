@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudCloudpromoRoutePolylineQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8485747837613371116L;
+	private static final long serialVersionUID = 1591325376956425868L;
 
 	/** 
 	 * 景点讲解文本

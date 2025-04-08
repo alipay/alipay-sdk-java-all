@@ -10,11 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量添加的单个员工信息
  *
  * @author auto create
- * @since 1.0, 2024-05-22 13:32:17
+ * @since 1.0, 2025-03-27 19:33:20
  */
 public class EmployeeBatchAddDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4696556247323763939L;
+	private static final long serialVersionUID = 4422111262552175185L;
+
+	/**
+	 * 员工所属核算主体，核算主体可用于管控不同员工的出资方式，建议和不同出资账户关联
+	 */
+	@ApiListField("accounting_entity_ids")
+	@ApiField("string")
+	private List<String> accountingEntityIds;
 
 	/**
 	 * 员工所属部门
@@ -72,6 +79,13 @@ public class EmployeeBatchAddDTO extends AlipayObject {
 	private String encryptMobile;
 
 	/**
+	 * 员工标签，用于员工的打标分类，后续费控管理可使用标签进行控制，支持输入多个标签，如“差旅员工，用餐员工”等
+	 */
+	@ApiListField("label_names")
+	@ApiField("string")
+	private List<String> labelNames;
+
+	/**
 	 * 个性化信息 <a href='https://opendocs.alipay.com/pre-open/0ceh47?pathHash=14fac87c'>详见文档</a>
 	 */
 	@ApiField("profiles")
@@ -83,6 +97,13 @@ public class EmployeeBatchAddDTO extends AlipayObject {
 	@ApiListField("role_list")
 	@ApiField("string")
 	private List<String> roleList;
+
+	public List<String> getAccountingEntityIds() {
+		return this.accountingEntityIds;
+	}
+	public void setAccountingEntityIds(List<String> accountingEntityIds) {
+		this.accountingEntityIds = accountingEntityIds;
+	}
 
 	public List<String> getDepartmentIds() {
 		return this.departmentIds;
@@ -145,6 +166,13 @@ public class EmployeeBatchAddDTO extends AlipayObject {
 	}
 	public void setEncryptMobile(String encryptMobile) {
 		this.encryptMobile = encryptMobile;
+	}
+
+	public List<String> getLabelNames() {
+		return this.labelNames;
+	}
+	public void setLabelNames(List<String> labelNames) {
+		this.labelNames = labelNames;
 	}
 
 	public String getProfiles() {

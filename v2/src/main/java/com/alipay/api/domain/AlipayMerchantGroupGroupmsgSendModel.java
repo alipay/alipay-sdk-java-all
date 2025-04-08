@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发送商家群内群发消息
  *
  * @author auto create
- * @since 1.0, 2025-03-07 16:52:56
+ * @since 1.0, 2025-03-31 16:32:19
  */
 public class AlipayMerchantGroupGroupmsgSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5183375948567935679L;
+	private static final long serialVersionUID = 1643554722424438432L;
 
 	/**
 	 * 是否需要@所有人，不传默认false(不需要@所有人)
@@ -37,6 +37,12 @@ public class AlipayMerchantGroupGroupmsgSendModel extends AlipayObject {
 	private List<String> groupIds;
 
 	/**
+	 * 用于描述周期消息的发送时间
+	 */
+	@ApiField("group_msg_schedule_config")
+	private GroupMsgScheduleConfigVO groupMsgScheduleConfig;
+
+	/**
 	 * 群发消息内容模型
 	 */
 	@ApiField("msg_data")
@@ -49,7 +55,7 @@ public class AlipayMerchantGroupGroupmsgSendModel extends AlipayObject {
 	private String msgId;
 
 	/**
-	 * 该参数用于描述群发消息是立即发送还是定时发送，0表示立即发送，1表示定时发送，不填表示定时发送
+	 * 该参数用于描述群发消息是立即发送还是定时发送，0表示立即发送，1表示定时发送，2表示周期发送，不填表示定时发送
 	 */
 	@ApiField("send_strategy")
 	private String sendStrategy;
@@ -85,6 +91,13 @@ public class AlipayMerchantGroupGroupmsgSendModel extends AlipayObject {
 	}
 	public void setGroupIds(List<String> groupIds) {
 		this.groupIds = groupIds;
+	}
+
+	public GroupMsgScheduleConfigVO getGroupMsgScheduleConfig() {
+		return this.groupMsgScheduleConfig;
+	}
+	public void setGroupMsgScheduleConfig(GroupMsgScheduleConfigVO groupMsgScheduleConfig) {
+		this.groupMsgScheduleConfig = groupMsgScheduleConfig;
 	}
 
 	public GroupMessageVO getMsgData() {

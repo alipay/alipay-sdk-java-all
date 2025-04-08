@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.ep.pasync.query request
  * 
  * @author auto create
- * @since 1.0, 2025-01-10 11:07:25
+ * @since 1.0, 2025-03-28 15:27:24
  */
 public class ZhimaCreditEpPasyncQueryRequest implements AlipayRequest<ZhimaCreditEpPasyncQueryResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品治理结果
  *
  * @author auto create
- * @since 1.0, 2024-11-28 17:32:31
+ * @since 1.0, 2025-04-02 11:00:54
  */
 public class GovernGoodsCheckMessage extends AlipayObject {
 
-	private static final long serialVersionUID = 1191491726241717818L;
+	private static final long serialVersionUID = 6462874296231422577L;
 
 	/**
 	 * 商户ID
@@ -30,6 +30,12 @@ public class GovernGoodsCheckMessage extends AlipayObject {
 	 */
 	@ApiField("result")
 	private String result;
+
+	/**
+	 * 治理的类型，即哪个地方需要治理
+	 */
+	@ApiField("type")
+	private String type;
 
 	public String getMerchantId() {
 		return this.merchantId;
@@ -50,6 +56,13 @@ public class GovernGoodsCheckMessage extends AlipayObject {
 	}
 	public void setResult(String result) {
 		this.result = result;
+	}
+
+	public String getType() {
+		return this.type;
+	}
+	public void setType(String type) {
+		this.type = type;
 	}
 
 }

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小助手定向消息详情模型
  *
  * @author auto create
- * @since 1.0, 2024-07-30 14:29:49
+ * @since 1.0, 2025-04-01 13:40:54
  */
 public class AssistantMsgDetailVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4351844489252944777L;
+	private static final long serialVersionUID = 7736952555164975691L;
 
 	/**
 	 * 自定义活动内容
@@ -30,7 +30,7 @@ public class AssistantMsgDetailVO extends AlipayObject {
 	private BenefitAssistantMsgContentVO benefitContent;
 
 	/**
-	 * 小助手类型，目前支持 activity_recommend (自定义活动)、benefit_recommend（权益推荐）
+	 * 小助手类型，目前支持 activity_recommend (自定义活动)、benefit_recommend（权益推荐）、goods_recommend（商品推荐）
 	 */
 	@ApiField("biz_type")
 	private String bizType;
@@ -46,6 +46,12 @@ public class AssistantMsgDetailVO extends AlipayObject {
 	 */
 	@ApiField("gmt_published")
 	private Date gmtPublished;
+
+	/**
+	 * 商品推荐小助手内容
+	 */
+	@ApiField("goods_content")
+	private GoodsAssistantMsgContentVO goodsContent;
 
 	/**
 	 * 群组id列表，创建群组时对应的一个群组id
@@ -107,6 +113,13 @@ DELETED (删除);
 	}
 	public void setGmtPublished(Date gmtPublished) {
 		this.gmtPublished = gmtPublished;
+	}
+
+	public GoodsAssistantMsgContentVO getGoodsContent() {
+		return this.goodsContent;
+	}
+	public void setGoodsContent(GoodsAssistantMsgContentVO goodsContent) {
+		this.goodsContent = goodsContent;
 	}
 
 	public List<String> getGroupIds() {

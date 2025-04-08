@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.verification.trade.audit response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-07 14:12:25
+ * @since 1.0, 2025-04-02 17:36:12
  */
 public class AlipayMarketingVerificationTradeAuditResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5594241176334654944L;
+	private static final long serialVersionUID = 8136115784554247969L;
 
 	/** 
 	 * 审计单id,写操作接口返回

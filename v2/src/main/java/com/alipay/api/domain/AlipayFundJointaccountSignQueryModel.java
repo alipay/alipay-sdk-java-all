@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业签约结果查询
  *
  * @author auto create
- * @since 1.0, 2023-03-07 19:54:05
+ * @since 1.0, 2025-04-07 17:13:16
  */
 public class AlipayFundJointaccountSignQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1711172563766346161L;
+	private static final long serialVersionUID = 5599633876226149996L;
 
 	/**
 	 * 企业签约账户ID,用于外部商户已获取企业签约ID，查询账户状态

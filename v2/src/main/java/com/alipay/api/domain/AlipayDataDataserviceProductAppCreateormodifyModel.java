@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序商品状态变更
  *
  * @author auto create
- * @since 1.0, 2024-06-19 15:32:16
+ * @since 1.0, 2025-04-02 15:27:57
  */
 public class AlipayDataDataserviceProductAppCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3517276172813316446L;
+	private static final long serialVersionUID = 2827156847518828816L;
 
 	/**
 	 * 商品属性列表
@@ -92,7 +92,7 @@ public class AlipayDataDataserviceProductAppCreateormodifyModel extends AlipayOb
 	private List<LandingTypeDto> landing;
 
 	/**
-	 * 商品原价，分为单位
+	 * 商品原价，单位为分（人民币）
 	 */
 	@ApiField("original_price")
 	private Long originalPrice;
@@ -108,6 +108,12 @@ public class AlipayDataDataserviceProductAppCreateormodifyModel extends AlipayOb
 	 */
 	@ApiField("out_source")
 	private String outSource;
+
+	/**
+	 * 商品归属的商户oid, 传入oid时优先使用oid，否则使用pid
+	 */
+	@ApiField("owner_oid")
+	private String ownerOid;
 
 	/**
 	 * 商品归属的商户pid
@@ -279,6 +285,13 @@ public class AlipayDataDataserviceProductAppCreateormodifyModel extends AlipayOb
 	}
 	public void setOutSource(String outSource) {
 		this.outSource = outSource;
+	}
+
+	public String getOwnerOid() {
+		return this.ownerOid;
+	}
+	public void setOwnerOid(String ownerOid) {
+		this.ownerOid = ownerOid;
 	}
 
 	public String getOwnerPid() {

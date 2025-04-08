@@ -8,14 +8,14 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * 商家群群内消息发送记录模型
+ * null
  *
  * @author auto create
- * @since 1.0, 2025-03-07 16:52:22
+ * @since 1.0, 2025-03-31 17:02:29
  */
 public class GroupMsgRecordVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4395857392351334827L;
+	private static final long serialVersionUID = 2767757292945543583L;
 
 	/**
 	 * 业务自己定义的业务id
@@ -30,11 +30,17 @@ public class GroupMsgRecordVO extends AlipayObject {
 	private String errorMsg;
 
 	/**
-	 * 群组id列表
+	 * null
 	 */
 	@ApiListField("group_ids")
 	@ApiField("string")
 	private List<String> groupIds;
+
+	/**
+	 * 用于描述周期消息发送配置
+	 */
+	@ApiField("group_msg_schedule_config")
+	private GroupMsgScheduleConfigVO groupMsgScheduleConfig;
 
 	/**
 	 * 消息id
@@ -104,6 +110,13 @@ public class GroupMsgRecordVO extends AlipayObject {
 	}
 	public void setGroupIds(List<String> groupIds) {
 		this.groupIds = groupIds;
+	}
+
+	public GroupMsgScheduleConfigVO getGroupMsgScheduleConfig() {
+		return this.groupMsgScheduleConfig;
+	}
+	public void setGroupMsgScheduleConfig(GroupMsgScheduleConfigVO groupMsgScheduleConfig) {
+		this.groupMsgScheduleConfig = groupMsgScheduleConfig;
 	}
 
 	public String getMsgId() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-03-19 11:42:25
+ * @since 1.0, 2025-04-02 16:32:26
  */
 public class RentLoanConsultResult extends AlipayObject {
 
-	private static final long serialVersionUID = 1517464467936778999L;
+	private static final long serialVersionUID = 1192282672428814696L;
 
 	/**
 	 * ALLOW：表示允许放款

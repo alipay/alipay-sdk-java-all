@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 接收行业商品治理结果
  *
  * @author auto create
- * @since 1.0, 2024-11-28 17:32:31
+ * @since 1.0, 2025-04-02 11:00:54
  */
 public class AlipayMsaasMediarecogMmportalGoverngoodsresultSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4742977792627537163L;
+	private static final long serialVersionUID = 1898121942982981371L;
 
 	/**
 	 * 算法ID

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 车金融订单状态通知接口
  *
  * @author auto create
- * @since 1.0, 2025-03-14 15:05:25
+ * @since 1.0, 2025-03-28 00:04:16
  */
 public class XingheLendassistCarfinApplystatusNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2671537727644589929L;
+	private static final long serialVersionUID = 8561753818623718731L;
 
 	/**
 	 * 星河侧唯一业务编号
@@ -104,28 +104,35 @@ true/false
 	private String loanRate;
 
 	/**
-	 * 贷款期次
+	 * 贷款期次，单位根据loan_term_unit字段决定(Y年/M月/D日)
 	 */
 	@ApiField("loan_term")
 	private Long loanTerm;
 
 	/**
-	 * 客户贷款期次类型，Y、M、D分别代表年月日
+	 * 贷款期次类型
+Y、M、D分别代表年月日
 	 */
 	@ApiField("loan_term_unit")
 	private String loanTermUnit;
 
 	/**
-	 * 抵押率，授信金额/车辆估值金额
+	 * 抵押率（授信金额/车辆估值金额），单位为小数
 	 */
 	@ApiField("mortgage_rate")
 	private String mortgageRate;
 
 	/**
-	 * 机构侧支用号，放款时必传
+	 * 机构侧支用号
 	 */
 	@ApiField("org_drawdown_no")
 	private String orgDrawdownNo;
+
+	/**
+	 * 其他信息
+	 */
+	@ApiField("other")
+	private CarfinStatusNotifyOther other;
 
 	/**
 	 * 机构侧唯一业务编号
@@ -134,7 +141,7 @@ true/false
 	private String outApplyNo;
 
 	/**
-	 * 拒绝原因错误码
+	 * 拒绝原因错误
 	 */
 	@ApiField("refuse_code")
 	private String refuseCode;
@@ -152,7 +159,7 @@ true/false
 	private String repayType;
 
 	/**
-	 * 服务费率（融担费率、保险费率等）
+	 * 服务费率（融担费率、保险费率等），单位为小数
 	 */
 	@ApiField("service_fee_rate")
 	private String serviceFeeRate;
@@ -294,6 +301,13 @@ CANCEL_SUC: 取消成功（适用于客户确定放弃的场景，机构侧后�
 	}
 	public void setOrgDrawdownNo(String orgDrawdownNo) {
 		this.orgDrawdownNo = orgDrawdownNo;
+	}
+
+	public CarfinStatusNotifyOther getOther() {
+		return this.other;
+	}
+	public void setOther(CarfinStatusNotifyOther other) {
+		this.other = other;
 	}
 
 	public String getOutApplyNo() {

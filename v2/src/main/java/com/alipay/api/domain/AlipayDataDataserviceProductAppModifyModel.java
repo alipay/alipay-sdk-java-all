@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序商品状态更新
  *
  * @author auto create
- * @since 1.0, 2024-06-03 20:35:19
+ * @since 1.0, 2025-04-02 15:27:56
  */
 public class AlipayDataDataserviceProductAppModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5395756851174746592L;
+	private static final long serialVersionUID = 3677162387546731237L;
 
 	/**
 	 * 灯火平台提供给外部系统的访问token
@@ -36,6 +36,12 @@ public class AlipayDataDataserviceProductAppModifyModel extends AlipayObject {
 	 */
 	@ApiField("out_source")
 	private String outSource;
+
+	/**
+	 * 商品归属的商户oid, 传入oid时优先使用oid，否则使用pid
+	 */
+	@ApiField("owner_oid")
+	private String ownerOid;
 
 	/**
 	 * 商品归属的商户pid
@@ -87,6 +93,13 @@ public class AlipayDataDataserviceProductAppModifyModel extends AlipayObject {
 	}
 	public void setOutSource(String outSource) {
 		this.outSource = outSource;
+	}
+
+	public String getOwnerOid() {
+		return this.ownerOid;
+	}
+	public void setOwnerOid(String ownerOid) {
+		this.ownerOid = ownerOid;
 	}
 
 	public String getOwnerPid() {

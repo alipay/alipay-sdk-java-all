@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.rent.order.seller.publish request
  * 
  * @author auto create
- * @since 1.0, 2025-03-20 19:49:41
+ * @since 1.0, 2025-04-01 19:52:26
  */
 public class AlipayCommerceRentOrderSellerPublishRequest implements AlipayRequest<AlipayCommerceRentOrderSellerPublishResponse> {
 

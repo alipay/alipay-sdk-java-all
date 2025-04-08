@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 内容风险同步识别对外开放接口
  *
  * @author auto create
- * @since 1.0, 2024-01-11 17:56:22
+ * @since 1.0, 2025-04-02 17:42:17
  */
 public class AlipaySecurityRiskContentSyncDetectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5876412182163667895L;
+	private static final long serialVersionUID = 5827256966932375842L;
 
 	/**
 	 * 来源渠道，按照实际申请开通的产品权限相应传值：

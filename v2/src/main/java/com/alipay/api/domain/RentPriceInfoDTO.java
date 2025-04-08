@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁价格明细信息
  *
  * @author auto create
- * @since 1.0, 2025-03-19 11:42:25
+ * @since 1.0, 2025-04-02 16:32:26
  */
 public class RentPriceInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8538752116175717223L;
+	private static final long serialVersionUID = 3368253461984691533L;
 
 	/**
 	 * 商家优惠金额，单位：元，精确到小数点后两位

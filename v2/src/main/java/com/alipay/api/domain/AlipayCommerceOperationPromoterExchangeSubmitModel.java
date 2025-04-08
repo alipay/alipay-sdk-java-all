@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 积分兑换奖品点击确认
  *
  * @author auto create
- * @since 1.0, 2021-12-06 14:40:14
+ * @since 1.0, 2025-04-03 11:13:20
  */
 public class AlipayCommerceOperationPromoterExchangeSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3612624961533558632L;
+	private static final long serialVersionUID = 2184772445469688957L;
 
 	/**
 	 * 交兑换订单时作为外部订单号,用于防重复提交

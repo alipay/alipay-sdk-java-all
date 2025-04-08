@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.property.riskdetect.content.sync response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-25 14:11:29
+ * @since 1.0, 2025-03-27 21:47:18
  */
 public class AlipayCommercePropertyRiskdetectContentSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8236942973183737242L;
+	private static final long serialVersionUID = 1876929786185794693L;
 
 	/** 
 	 * 支付宝侧内容id

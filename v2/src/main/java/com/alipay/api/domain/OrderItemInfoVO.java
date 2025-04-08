@@ -10,17 +10,35 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品信息
  *
  * @author auto create
- * @since 1.0, 2024-07-15 15:44:16
+ * @since 1.0, 2025-03-31 19:27:19
  */
 public class OrderItemInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1394645451155568382L;
+	private static final long serialVersionUID = 7676823966722414818L;
+
+	/**
+	 * 商品类目ID
+	 */
+	@ApiField("category_id")
+	private String categoryId;
+
+	/**
+	 * 商品名称
+	 */
+	@ApiField("item_brand")
+	private String itemBrand;
 
 	/**
 	 * 商品数量
 	 */
 	@ApiField("item_cnt")
 	private Long itemCnt;
+
+	/**
+	 * 商品成色
+	 */
+	@ApiField("item_condition")
+	private String itemCondition;
 
 	/**
 	 * 支付宝平台侧商品ID
@@ -60,6 +78,12 @@ public class OrderItemInfoVO extends AlipayObject {
 	private String outSkuId;
 
 	/**
+	 * 租赁商品扩展信息
+	 */
+	@ApiField("rent_item_info")
+	private RentItemInfoVO rentItemInfo;
+
+	/**
 	 * 商品单价，单位：元,精确到小数点后两位，可以跟上传商品接口的价格不一致
 	 */
 	@ApiField("sale_price")
@@ -77,11 +101,32 @@ public class OrderItemInfoVO extends AlipayObject {
 	@ApiField("sku_id")
 	private String skuId;
 
+	public String getCategoryId() {
+		return this.categoryId;
+	}
+	public void setCategoryId(String categoryId) {
+		this.categoryId = categoryId;
+	}
+
+	public String getItemBrand() {
+		return this.itemBrand;
+	}
+	public void setItemBrand(String itemBrand) {
+		this.itemBrand = itemBrand;
+	}
+
 	public Long getItemCnt() {
 		return this.itemCnt;
 	}
 	public void setItemCnt(Long itemCnt) {
 		this.itemCnt = itemCnt;
+	}
+
+	public String getItemCondition() {
+		return this.itemCondition;
+	}
+	public void setItemCondition(String itemCondition) {
+		this.itemCondition = itemCondition;
 	}
 
 	public String getItemId() {
@@ -124,6 +169,13 @@ public class OrderItemInfoVO extends AlipayObject {
 	}
 	public void setOutSkuId(String outSkuId) {
 		this.outSkuId = outSkuId;
+	}
+
+	public RentItemInfoVO getRentItemInfo() {
+		return this.rentItemInfo;
+	}
+	public void setRentItemInfo(RentItemInfoVO rentItemInfo) {
+		this.rentItemInfo = rentItemInfo;
 	}
 
 	public String getSalePrice() {

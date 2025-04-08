@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 媒体报表查询接口
  *
  * @author auto create
- * @since 1.0, 2025-01-15 17:17:40
+ * @since 1.0, 2025-04-08 10:04:53
  */
 public class AlipayDataDataserviceMediaReportQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3563688793811262651L;
+	private static final long serialVersionUID = 3875714912378298674L;
 
 	/**
 	 * 广告位id

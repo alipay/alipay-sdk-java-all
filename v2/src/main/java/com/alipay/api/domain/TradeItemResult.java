@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易记录详情信息
  *
  * @author auto create
- * @since 1.0, 2019-10-10 16:20:06
+ * @since 1.0, 2025-03-28 16:35:54
  */
 public class TradeItemResult extends AlipayObject {
 
-	private static final long serialVersionUID = 1831167919496957595L;
+	private static final long serialVersionUID = 2545162492247491664L;
 
 	/**
 	 * 支付宝订单号。对账使用，不脱敏
@@ -26,7 +26,7 @@ public class TradeItemResult extends AlipayObject {
 	private String gmtCreate;
 
 	/**
-	 * 交易支付时间
+	 * 交易支付时间。支付后会有值
 	 */
 	@ApiField("gmt_pay")
 	private String gmtPay;
@@ -74,7 +74,7 @@ public class TradeItemResult extends AlipayObject {
 	private String refundAmount;
 
 	/**
-	 * 服务费金额
+	 * 服务费金额，人民币元
 	 */
 	@ApiField("service_fee")
 	private String serviceFee;

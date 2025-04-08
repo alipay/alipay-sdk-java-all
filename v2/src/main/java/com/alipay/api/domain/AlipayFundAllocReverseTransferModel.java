@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 转账抽佣逆向退分佣
  *
  * @author auto create
- * @since 1.0, 2023-11-21 20:35:20
+ * @since 1.0, 2025-04-07 17:12:20
  */
 public class AlipayFundAllocReverseTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2457521198449734295L;
+	private static final long serialVersionUID = 6771217296839344873L;
 
 	/**
 	 * 正向分佣时使用的协议号

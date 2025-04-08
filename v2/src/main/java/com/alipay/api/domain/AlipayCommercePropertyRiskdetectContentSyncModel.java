@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物业风险检测内容同步
  *
  * @author auto create
- * @since 1.0, 2025-03-25 14:11:29
+ * @since 1.0, 2025-03-27 21:47:18
  */
 public class AlipayCommercePropertyRiskdetectContentSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6767352968191296635L;
+	private static final long serialVersionUID = 7233915275638288128L;
 
 	/**
 	 * createTime	内容物抓取时间,格式

@@ -9,17 +9,24 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员信息同步
  *
  * @author auto create
- * @since 1.0, 2024-10-24 16:23:11
+ * @since 1.0, 2025-04-05 14:58:55
  */
 public class AlipayEcoMycarMemberInfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2777796965173731365L;
+	private static final long serialVersionUID = 4767715476819238588L;
 
 	/**
 	 * 会员ID
 	 */
 	@ApiField("card_id")
 	private String cardId;
+
+	/**
+	 * true代表是关闭
+不传和false 代表开通
+	 */
+	@ApiField("closed")
+	private Boolean closed;
 
 	/**
 	 * 会员卡发放时间
@@ -81,6 +88,13 @@ public class AlipayEcoMycarMemberInfoSyncModel extends AlipayObject {
 	}
 	public void setCardId(String cardId) {
 		this.cardId = cardId;
+	}
+
+	public Boolean getClosed() {
+		return this.closed;
+	}
+	public void setClosed(Boolean closed) {
+		this.closed = closed;
 	}
 
 	public Date getIssuanceDate() {

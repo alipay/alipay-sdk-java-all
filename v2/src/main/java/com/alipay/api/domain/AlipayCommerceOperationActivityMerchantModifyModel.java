@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户签约信息修改
  *
  * @author auto create
- * @since 1.0, 2022-10-27 17:37:44
+ * @since 1.0, 2025-04-03 11:15:15
  */
 public class AlipayCommerceOperationActivityMerchantModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5569724294432659855L;
+	private static final long serialVersionUID = 8725584426716628146L;
 
 	/**
 	 * 消费门槛，单位分

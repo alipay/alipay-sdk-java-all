@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayTradeOrderSettleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6294155628765126935L;
+	private static final long serialVersionUID = 2831883925928556245L;
 
 	/** 
 	 * 分账受理时间

@@ -10,11 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 员工信息
  *
  * @author auto create
- * @since 1.0, 2025-01-03 17:16:53
+ * @since 1.0, 2025-03-27 19:32:22
  */
 public class EmployeeInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2862962331461423345L;
+	private static final long serialVersionUID = 5693376887788236396L;
+
+	/**
+	 * 员工所属核算主体列表
+	 */
+	@ApiListField("accounting_entity_list")
+	@ApiField("employee_accounting_entity_d_t_o")
+	private List<EmployeeAccountingEntityDTO> accountingEntityList;
 
 	/**
 	 * 是否激活
@@ -114,6 +121,13 @@ public class EmployeeInfoDTO extends AlipayObject {
 	private String jobLevelShow;
 
 	/**
+	 * 员工标签
+	 */
+	@ApiListField("label_names")
+	@ApiField("string")
+	private List<String> labelNames;
+
+	/**
 	 * 手机号码
 	 */
 	@ApiField("mobile")
@@ -149,6 +163,13 @@ public class EmployeeInfoDTO extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public List<EmployeeAccountingEntityDTO> getAccountingEntityList() {
+		return this.accountingEntityList;
+	}
+	public void setAccountingEntityList(List<EmployeeAccountingEntityDTO> accountingEntityList) {
+		this.accountingEntityList = accountingEntityList;
+	}
 
 	public String getActivate() {
 		return this.activate;
@@ -260,6 +281,13 @@ public class EmployeeInfoDTO extends AlipayObject {
 	}
 	public void setJobLevelShow(String jobLevelShow) {
 		this.jobLevelShow = jobLevelShow;
+	}
+
+	public List<String> getLabelNames() {
+		return this.labelNames;
+	}
+	public void setLabelNames(List<String> labelNames) {
+		this.labelNames = labelNames;
 	}
 
 	public String getMobile() {

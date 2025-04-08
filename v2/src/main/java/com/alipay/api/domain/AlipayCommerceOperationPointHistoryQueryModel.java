@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 积分明细
  *
  * @author auto create
- * @since 1.0, 2021-12-03 14:12:59
+ * @since 1.0, 2025-04-03 11:14:59
  */
 public class AlipayCommerceOperationPointHistoryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6185219916651514685L;
+	private static final long serialVersionUID = 8326129848972628354L;
 
 	/**
 	 * 分页数

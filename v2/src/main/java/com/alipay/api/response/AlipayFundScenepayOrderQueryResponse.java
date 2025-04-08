@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.scenepay.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-10 21:37:20
+ * @since 1.0, 2025-04-07 16:57:41
  */
 public class AlipayFundScenepayOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4644552955888166382L;
+	private static final long serialVersionUID = 5696979396911297786L;
 
 	/** 
 	 * 交易中包含的业务优惠金额

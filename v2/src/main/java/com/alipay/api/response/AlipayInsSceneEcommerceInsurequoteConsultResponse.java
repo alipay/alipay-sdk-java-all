@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayInsSceneEcommerceInsurequoteConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7855262753787631796L;
+	private static final long serialVersionUID = 8729598367788989975L;
 
 	/** 
 	 * 投保方案

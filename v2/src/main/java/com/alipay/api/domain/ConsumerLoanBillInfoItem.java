@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 消费贷还款账单信息ITEM
  *
  * @author auto create
- * @since 1.0, 2024-08-06 11:22:35
+ * @since 1.0, 2025-04-03 10:14:19
  */
 public class ConsumerLoanBillInfoItem extends AlipayObject {
 
-	private static final long serialVersionUID = 7299284288439424968L;
+	private static final long serialVersionUID = 7677829277229224662L;
 
 	/**
 	 * 可提前还款的日期，日期格式为YYYY-MM-DD hh:mm:ss
@@ -24,6 +27,12 @@ public class ConsumerLoanBillInfoItem extends AlipayObject {
 	 */
 	@ApiField("bill_id")
 	private String billId;
+
+	/**
+	 * 手续费金额，单位为分（如1000代表10.00元）
+	 */
+	@ApiField("commission_amount")
+	private Long commissionAmount;
 
 	/**
 	 * 本期还款金额，单位为分，1000代表10.00元，状态为“本期已还”时必填，其余状态选填
@@ -86,10 +95,23 @@ public class ConsumerLoanBillInfoItem extends AlipayObject {
 	private Long principalAmount;
 
 	/**
+	 * 当前账单和借据的关系
+	 */
+	@ApiListField("related_loan_info")
+	@ApiField("consumer_loan_bill_loan_relation")
+	private List<ConsumerLoanBillLoanRelation> relatedLoanInfo;
+
+	/**
 	 * 单位为分，1000代表10.00元
 	 */
 	@ApiField("repay_amount")
 	private Long repayAmount;
+
+	/**
+	 * 账单待还金额，单位为分（1000代表10.00元），不包含手续费，仅包含账单本身金额（如本金、利息、罚息等）
+	 */
+	@ApiField("repay_bill_amount")
+	private Long repayBillAmount;
 
 	/**
 	 * 账单还款日，日期格式为YYYY-MM-DD hh:mm:ss
@@ -135,6 +157,13 @@ selectType = UN_LIMIT
 	}
 	public void setBillId(String billId) {
 		this.billId = billId;
+	}
+
+	public Long getCommissionAmount() {
+		return this.commissionAmount;
+	}
+	public void setCommissionAmount(Long commissionAmount) {
+		this.commissionAmount = commissionAmount;
 	}
 
 	public Long getCurrentPeriodPaidAmount() {
@@ -207,11 +236,25 @@ selectType = UN_LIMIT
 		this.principalAmount = principalAmount;
 	}
 
+	public List<ConsumerLoanBillLoanRelation> getRelatedLoanInfo() {
+		return this.relatedLoanInfo;
+	}
+	public void setRelatedLoanInfo(List<ConsumerLoanBillLoanRelation> relatedLoanInfo) {
+		this.relatedLoanInfo = relatedLoanInfo;
+	}
+
 	public Long getRepayAmount() {
 		return this.repayAmount;
 	}
 	public void setRepayAmount(Long repayAmount) {
 		this.repayAmount = repayAmount;
+	}
+
+	public Long getRepayBillAmount() {
+		return this.repayBillAmount;
+	}
+	public void setRepayBillAmount(Long repayBillAmount) {
+		this.repayBillAmount = repayBillAmount;
 	}
 
 	public String getRepayDate() {

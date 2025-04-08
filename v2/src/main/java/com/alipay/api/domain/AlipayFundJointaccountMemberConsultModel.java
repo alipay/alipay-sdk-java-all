@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 员企关系咨询
  *
  * @author auto create
- * @since 1.0, 2023-03-07 21:43:16
+ * @since 1.0, 2025-04-07 17:01:29
  */
 public class AlipayFundJointaccountMemberConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4749645256272148256L;
+	private static final long serialVersionUID = 2121278286654695679L;
 
 	/**
 	 * 企业ID

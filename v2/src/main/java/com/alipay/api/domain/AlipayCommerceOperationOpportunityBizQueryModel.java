@@ -7,17 +7,30 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商机业务流水号查询
  *
  * @author auto create
- * @since 1.0, 2025-03-25 12:49:37
+ * @since 1.0, 2025-04-01 16:35:53
  */
 public class AlipayCommerceOperationOpportunityBizQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6533294159524956975L;
+	private static final long serialVersionUID = 7248964653214977263L;
+
+	/**
+	 * 商机 ID
+	 */
+	@ApiField("opportunity_id")
+	private String opportunityId;
 
 	/**
 	 * 业务申请编号。业务自定义，保证唯一
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
+
+	public String getOpportunityId() {
+		return this.opportunityId;
+	}
+	public void setOpportunityId(String opportunityId) {
+		this.opportunityId = opportunityId;
+	}
 
 	public String getOutBizNo() {
 		return this.outBizNo;

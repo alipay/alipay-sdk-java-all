@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-03-25 14:12:28
+ * @since 1.0, 2025-03-27 21:47:26
  */
 public class EvnetResultVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4896924398815295617L;
+	private static final long serialVersionUID = 4877739467455834848L;
 
 	/**
 	 * 事件回溯,按照回溯内容事件升序排序

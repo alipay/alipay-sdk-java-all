@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.group.assistant.msg.create request
  * 
  * @author auto create
- * @since 1.0, 2025-03-11 10:41:37
+ * @since 1.0, 2025-04-01 13:42:27
  */
 public class AlipayMerchantGroupAssistantMsgCreateRequest implements AlipayRequest<AlipayMerchantGroupAssistantMsgCreateResponse> {
 

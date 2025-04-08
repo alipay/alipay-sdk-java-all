@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 定价信息
  *
  * @author auto create
- * @since 1.0, 2025-02-10 18:03:03
+ * @since 1.0, 2025-03-28 00:04:16
  */
 public class CreditPricing extends AlipayObject {
 
-	private static final long serialVersionUID = 1363276596879879988L;
+	private static final long serialVersionUID = 6273299185181227365L;
+
+	/**
+	 * 金额，单位分
+	 */
+	@ApiField("amount")
+	private Long amount;
 
 	/**
 	 * 年利率，如为8%，则为0.08
@@ -20,7 +26,7 @@ public class CreditPricing extends AlipayObject {
 	private String intRate;
 
 	/**
-	 * 贷款期限长度
+	 * 贷款期限长度，单位根据loan_term_unit字段决定(Y年/M月/D日)
 	 */
 	@ApiField("loan_term")
 	private Long loanTerm;
@@ -36,6 +42,13 @@ public class CreditPricing extends AlipayObject {
 	 */
 	@ApiField("repay_type")
 	private String repayType;
+
+	public Long getAmount() {
+		return this.amount;
+	}
+	public void setAmount(Long amount) {
+		this.amount = amount;
+	}
 
 	public String getIntRate() {
 		return this.intRate;

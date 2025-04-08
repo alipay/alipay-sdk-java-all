@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景支付业务单查询
  *
  * @author auto create
- * @since 1.0, 2024-12-10 21:34:18
+ * @since 1.0, 2025-04-07 16:57:41
  */
 public class AlipayFundScenepayOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8122726193575245861L;
+	private static final long serialVersionUID = 3534313494944695342L;
 
 	/**
 	 * 业务单号由场景支付业务单创建接口获得

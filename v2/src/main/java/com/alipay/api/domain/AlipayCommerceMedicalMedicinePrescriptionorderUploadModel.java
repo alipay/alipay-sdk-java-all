@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 开方购药处方单同步
  *
  * @author auto create
- * @since 1.0, 2025-03-19 16:23:43
+ * @since 1.0, 2025-03-27 16:07:19
  */
 public class AlipayCommerceMedicalMedicinePrescriptionorderUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8686923354114643582L;
+	private static final long serialVersionUID = 4798719666738817788L;
 
 	/**
 	 * 科室名称

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-03-25 14:11:28
+ * @since 1.0, 2025-03-27 21:47:18
  */
 public class EventAttrDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2837258786769168181L;
+	private static final long serialVersionUID = 6136931165742914646L;
 
 	/**
 	 * 配置名称:

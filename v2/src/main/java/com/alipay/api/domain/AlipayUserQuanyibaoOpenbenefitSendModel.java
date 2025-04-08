@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayUserQuanyibaoOpenbenefitSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6869384371142772415L;
+	private static final long serialVersionUID = 6815948753224424532L;
 
 	/**
 	 * 支付宝登录账号，支持邮箱和手机号格式，与alipay_user_id字段必须选填一个

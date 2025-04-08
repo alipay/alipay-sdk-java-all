@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 因公付企业解约
  *
  * @author auto create
- * @since 1.0, 2023-03-07 19:53:56
+ * @since 1.0, 2025-04-07 17:13:24
  */
 public class AlipayFundEnterprisepayUnsignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2327695541167696881L;
+	private static final long serialVersionUID = 7227826681184561273L;
 
 	/**
 	 * 企业账号

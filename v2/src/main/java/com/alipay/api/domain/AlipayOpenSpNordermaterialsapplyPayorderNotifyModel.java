@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * n点餐物料申请订单支付完成通知
  *
  * @author auto create
- * @since 1.0, 2025-03-20 11:12:46
+ * @since 1.0, 2025-04-07 19:24:22
  */
 public class AlipayOpenSpNordermaterialsapplyPayorderNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5675679557775275169L;
+	private static final long serialVersionUID = 6481719698482435648L;
 
 	/**
 	 * 门店作业单据标识唯一标识，一个作业单据只需要支付一次保证金

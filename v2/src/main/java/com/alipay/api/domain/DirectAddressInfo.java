@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DirectAddressInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8587544159442248326L;
+	private static final long serialVersionUID = 8267367373938454365L;
 
 	/**
 	 * 城市编码，请按照<a href="https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx">表格</a>中内容填写。

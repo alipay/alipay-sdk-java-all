@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.group.assistant.msg.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-11 10:41:37
+ * @since 1.0, 2025-04-01 13:42:27
  */
 public class AlipayMerchantGroupAssistantMsgCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5146943914832937259L;
+	private static final long serialVersionUID = 4327294111243874323L;
 
 	/** 
 	 * 小助手消息内容id

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询门店是否可以作业商机
  *
  * @author auto create
- * @since 1.0, 2025-03-25 12:45:37
+ * @since 1.0, 2025-03-29 23:01:52
  */
 public class AlipayCommerceOperationOpportunityPoiQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5545944328117711788L;
+	private static final long serialVersionUID = 3444829248965477459L;
 
 	/**
 	 * 业务主体

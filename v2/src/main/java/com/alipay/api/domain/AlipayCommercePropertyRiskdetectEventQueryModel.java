@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 风险检测事件查询
  *
  * @author auto create
- * @since 1.0, 2025-03-25 14:12:28
+ * @since 1.0, 2025-03-27 21:47:26
  */
 public class AlipayCommercePropertyRiskdetectEventQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8517517189175793198L;
+	private static final long serialVersionUID = 7844741461635743869L;
 
 	/**
 	 * deviceId和outDeviceId至少传其一

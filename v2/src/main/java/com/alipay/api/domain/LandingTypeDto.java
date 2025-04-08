@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 落地页信息
  *
  * @author auto create
- * @since 1.0, 2024-08-27 17:39:22
+ * @since 1.0, 2025-04-02 15:27:56
  */
 public class LandingTypeDto extends AlipayObject {
 
-	private static final long serialVersionUID = 3117123777245299233L;
+	private static final long serialVersionUID = 6314275295177337288L;
 
 	/**
 	 * 活动列表

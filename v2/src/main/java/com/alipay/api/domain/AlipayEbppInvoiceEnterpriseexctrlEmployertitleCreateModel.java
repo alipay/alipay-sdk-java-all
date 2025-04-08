@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业抬头新增
  *
  * @author auto create
- * @since 1.0, 2025-02-24 19:37:34
+ * @since 1.0, 2025-04-01 15:52:18
  */
 public class AlipayEbppInvoiceEnterpriseexctrlEmployertitleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1549196688355144823L;
+	private static final long serialVersionUID = 4725874691357874495L;
 
 	/**
 	 * 企业共同账户id
@@ -60,6 +60,12 @@ public class AlipayEbppInvoiceEnterpriseexctrlEmployertitleCreateModel extends A
 	 */
 	@ApiField("telephone")
 	private String telephone;
+
+	/**
+	 * 抬头编码
+	 */
+	@ApiField("title_code")
+	private String titleCode;
 
 	/**
 	 * 企业抬头名称
@@ -121,6 +127,13 @@ public class AlipayEbppInvoiceEnterpriseexctrlEmployertitleCreateModel extends A
 	}
 	public void setTelephone(String telephone) {
 		this.telephone = telephone;
+	}
+
+	public String getTitleCode() {
+		return this.titleCode;
+	}
+	public void setTitleCode(String titleCode) {
+		this.titleCode = titleCode;
 	}
 
 	public String getTitleName() {

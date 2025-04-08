@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.brand.asset.unbind response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 00:36:43
+ * @since 1.0, 2025-04-01 11:33:00
  */
 public class AntMerchantExpandBrandAssetUnbindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4565342133984719294L;
+	private static final long serialVersionUID = 4898662278721828321L;
 
 	/** 
 	 * 操作失败的资产ID集合

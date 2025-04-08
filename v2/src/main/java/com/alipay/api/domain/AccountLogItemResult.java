@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账务明细
  *
  * @author auto create
- * @since 1.0, 2022-04-24 16:37:20
+ * @since 1.0, 2025-03-28 16:36:19
  */
 public class AccountLogItemResult extends AlipayObject {
 
-	private static final long serialVersionUID = 8642548259911863752L;
+	private static final long serialVersionUID = 2468999939142624331L;
 
 	/**
 	 * 支付宝账务流水号。对账使用，不脱敏
@@ -26,7 +26,7 @@ public class AccountLogItemResult extends AlipayObject {
 	private String alipayOrderNo;
 
 	/**
-	 * 余额，仅供参考。由于架构原因，余额变动并不保证连续。也就是余额不一定等于上一笔余额减去当笔金额。但是会保证最终一致。
+	 * 余额，单位元，仅供参考。由于架构原因，余额变动并不保证连续。也就是余额不一定等于上一笔余额减去当笔金额。但是会保证最终一致。
 	 */
 	@ApiField("balance")
 	private String balance;
@@ -92,7 +92,7 @@ public class AccountLogItemResult extends AlipayObject {
 	private String storeName;
 
 	/**
-	 * 金额
+	 * 金额，单位元
 	 */
 	@ApiField("trans_amount")
 	private String transAmount;

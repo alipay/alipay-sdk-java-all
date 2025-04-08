@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.recycle.marketspuprice.sync request
  * 
  * @author auto create
- * @since 1.0, 2025-03-20 19:52:27
+ * @since 1.0, 2025-04-02 10:52:24
  */
 public class AlipayCommerceRecycleMarketspupriceSyncRequest implements AlipayRequest<AlipayCommerceRecycleMarketspupriceSyncResponse> {
 

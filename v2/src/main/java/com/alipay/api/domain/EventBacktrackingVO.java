@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 事件回溯,按照回溯内容事件升序排序
  *
  * @author auto create
- * @since 1.0, 2025-03-25 14:12:28
+ * @since 1.0, 2025-03-27 21:47:26
  */
 public class EventBacktrackingVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8752926742923229574L;
+	private static final long serialVersionUID = 7617958681976547524L;
 
 	/**
 	 * 支付宝内容ID

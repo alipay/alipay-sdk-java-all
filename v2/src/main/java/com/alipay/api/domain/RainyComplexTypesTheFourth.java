@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * 复杂类型第四个，包括所有openid映射关系
+ * 出参测试数据
  *
  * @author auto create
- * @since 1.0, 2024-12-16 19:23:27
+ * @since 1.0, 2025-04-02 17:57:30
  */
 public class RainyComplexTypesTheFourth extends AlipayObject {
 
-	private static final long serialVersionUID = 8221514786885124583L;
+	private static final long serialVersionUID = 4755617891676439712L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识
@@ -29,14 +29,14 @@ public class RainyComplexTypesTheFourth extends AlipayObject {
 	private String idtypeUserId;
 
 	/**
-	 * 用于标记支付宝用户在应用下的唯一标识
+	 * null
 	 */
 	@ApiListField("json_open_id_json")
 	@ApiField("string")
 	private List<String> jsonOpenIdJson;
 
 	/**
-	 * 支付宝用户的userId。
+	 * null
 	 */
 	@ApiListField("json_user_id")
 	@ApiField("string")

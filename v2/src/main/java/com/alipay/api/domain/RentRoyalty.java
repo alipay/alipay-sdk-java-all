@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁分账计划
  *
  * @author auto create
- * @since 1.0, 2025-03-26 17:17:04
+ * @since 1.0, 2025-03-28 17:33:53
  */
 public class RentRoyalty extends AlipayObject {
 
-	private static final long serialVersionUID = 6282154165266815812L;
+	private static final long serialVersionUID = 4565976593752127497L;
 
 	/**
 	 * 订单id

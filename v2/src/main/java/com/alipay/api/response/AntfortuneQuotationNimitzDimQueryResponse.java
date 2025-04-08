@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntfortuneQuotationNimitzDimQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6157437623513698991L;
+	private static final long serialVersionUID = 4167125819313349454L;
 
 	/** 
 	 * Nimitz 维度查询返回值，json形式

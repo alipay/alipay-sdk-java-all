@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品视频信息详情
  *
  * @author auto create
- * @since 1.0, 2024-08-23 16:23:20
+ * @since 1.0, 2025-04-02 15:27:56
  */
 public class VideoInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3412421554911422899L;
+	private static final long serialVersionUID = 6397671183447536931L;
 
 	/**
 	 * 视频时长，单位为秒

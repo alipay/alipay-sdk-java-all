@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 回收行情商户商品spu价格同步
  *
  * @author auto create
- * @since 1.0, 2025-03-20 19:52:27
+ * @since 1.0, 2025-04-02 10:52:24
  */
 public class AlipayCommerceRecycleMarketspupriceSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6839892941511759213L;
+	private static final long serialVersionUID = 8652825488291673743L;
 
 	/**
 	 * C2B:回收价：用户将旧机给回收商，回收商提供给C的回收价。

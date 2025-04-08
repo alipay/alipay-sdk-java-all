@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 2d短视频任务结果
  *
  * @author auto create
- * @since 1.0, 2024-04-25 17:02:57
+ * @since 1.0, 2025-03-27 21:27:21
  */
 public class AvatarHumanTaskResultDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1366871338987356671L;
+	private static final long serialVersionUID = 8449468159277929929L;
 
 	/**
 	 * 视频时长，单位秒
@@ -44,7 +44,7 @@ public class AvatarHumanTaskResultDTO extends AlipayObject {
 	private String preview;
 
 	/**
-	 * 视频状态
+	 * 当前视频查询结果
 	 */
 	@ApiField("status")
 	private String status;

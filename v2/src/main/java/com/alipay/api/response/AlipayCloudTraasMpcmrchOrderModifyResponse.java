@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.traas.mpcmrch.order.modify response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-14 11:20:33
+ * @since 1.0, 2025-03-31 09:57:29
  */
 public class AlipayCloudTraasMpcmrchOrderModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3678822923974852888L;
+	private static final long serialVersionUID = 8724935892953982816L;
 
 	
 

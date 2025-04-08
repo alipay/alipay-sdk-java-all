@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.property.file.upload response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-25 14:11:27
+ * @since 1.0, 2025-03-27 21:52:26
  */
 public class AlipayCommercePropertyFileUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8793412182978219179L;
+	private static final long serialVersionUID = 1679998118781434884L;
 
 	/** 
 	 * 文件所在业务场景下关联的支付宝侧业务ID，与bizScene字段配合使用

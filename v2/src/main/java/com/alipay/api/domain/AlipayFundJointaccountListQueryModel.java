@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业查询代付账户列表
  *
  * @author auto create
- * @since 1.0, 2023-03-07 19:53:38
+ * @since 1.0, 2025-04-07 17:00:29
  */
 public class AlipayFundJointaccountListQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1597188315868447632L;
+	private static final long serialVersionUID = 6876982434598398955L;
 
 	/**
 	 * 授权协议号

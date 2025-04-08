@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 二手车车辆数据
  *
  * @author auto create
- * @since 1.0, 2024-10-10 14:13:25
+ * @since 1.0, 2025-04-01 10:56:19
  */
 public class TransferCarData extends AlipayObject {
 
-	private static final long serialVersionUID = 3154469873786673515L;
+	private static final long serialVersionUID = 8515362611416585178L;
 
 	/**
 	 * acid值，车生活的 acid 值，需要传递车生活 acid
@@ -58,6 +58,12 @@ public class TransferCarData extends AlipayObject {
 	 */
 	@ApiField("brand_name")
 	private String brandName;
+
+	/**
+	 * 是否品牌官方门店
+	 */
+	@ApiField("brand_official_store")
+	private Boolean brandOfficialStore;
 
 	/**
 	 * 呼叫号码
@@ -107,6 +113,12 @@ public class TransferCarData extends AlipayObject {
 	 */
 	@ApiField("car_year")
 	private Long carYear;
+
+	/**
+	 * 检查报告内容明细 DTO
+	 */
+	@ApiField("check_report_data")
+	private CheckReportData checkReportData;
 
 	/**
 	 * 车源地；行政区城市编码值
@@ -247,6 +259,18 @@ public class TransferCarData extends AlipayObject {
 	@ApiField("vehicle_display_status")
 	private Long vehicleDisplayStatus;
 
+	/**
+	 * 车辆 video url 地址
+	 */
+	@ApiField("vehicle_video_url")
+	private String vehicleVideoUrl;
+
+	/**
+	 * 车辆识别代码（VIN）
+	 */
+	@ApiField("vin")
+	private String vin;
+
 	public String getAcid() {
 		return this.acid;
 	}
@@ -294,6 +318,13 @@ public class TransferCarData extends AlipayObject {
 	}
 	public void setBrandName(String brandName) {
 		this.brandName = brandName;
+	}
+
+	public Boolean getBrandOfficialStore() {
+		return this.brandOfficialStore;
+	}
+	public void setBrandOfficialStore(Boolean brandOfficialStore) {
+		this.brandOfficialStore = brandOfficialStore;
 	}
 
 	public String getCallPhone() {
@@ -350,6 +381,13 @@ public class TransferCarData extends AlipayObject {
 	}
 	public void setCarYear(Long carYear) {
 		this.carYear = carYear;
+	}
+
+	public CheckReportData getCheckReportData() {
+		return this.checkReportData;
+	}
+	public void setCheckReportData(CheckReportData checkReportData) {
+		this.checkReportData = checkReportData;
 	}
 
 	public String getCityCode() {
@@ -504,6 +542,20 @@ public class TransferCarData extends AlipayObject {
 	}
 	public void setVehicleDisplayStatus(Long vehicleDisplayStatus) {
 		this.vehicleDisplayStatus = vehicleDisplayStatus;
+	}
+
+	public String getVehicleVideoUrl() {
+		return this.vehicleVideoUrl;
+	}
+	public void setVehicleVideoUrl(String vehicleVideoUrl) {
+		this.vehicleVideoUrl = vehicleVideoUrl;
+	}
+
+	public String getVin() {
+		return this.vin;
+	}
+	public void setVin(String vin) {
+		this.vin = vin;
 	}
 
 }

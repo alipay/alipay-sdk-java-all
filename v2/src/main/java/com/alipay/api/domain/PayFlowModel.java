@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付交易模型
  *
  * @author auto create
- * @since 1.0, 2024-11-07 09:48:37
+ * @since 1.0, 2025-03-28 14:42:07
  */
 public class PayFlowModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4832389529324684245L;
+	private static final long serialVersionUID = 8354233324983824674L;
+
+	/**
+	 * 是否查得
+	 */
+	@ApiField("is_effective")
+	private String isEffective;
 
 	/**
 	 * 店铺信息列表
@@ -28,6 +34,13 @@ public class PayFlowModel extends AlipayObject {
 	 */
 	@ApiField("shop_num")
 	private String shopNum;
+
+	public String getIsEffective() {
+		return this.isEffective;
+	}
+	public void setIsEffective(String isEffective) {
+		this.isEffective = isEffective;
+	}
 
 	public List<PayFlowShopInfoModel> getShopList() {
 		return this.shopList;

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 二手房修改
  *
  * @author auto create
- * @since 1.0, 2025-03-04 13:47:26
+ * @since 1.0, 2025-04-08 16:58:25
  */
 public class AlipayCommerceHousingHouseSaleModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8738551479957849947L;
+	private static final long serialVersionUID = 1641794139217489811L;
 
 	/**
 	 * 建筑的描述

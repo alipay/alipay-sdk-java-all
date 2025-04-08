@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.enterpriseexctrl.employertitle.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-17 19:08:34
+ * @since 1.0, 2025-04-01 17:17:29
  */
 public class AlipayEbppInvoiceEnterpriseexctrlEmployertitleBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8539853599978342315L;
+	private static final long serialVersionUID = 4472922223355622373L;
 
 	/** 
 	 * 返回码
@@ -30,6 +30,12 @@ public class AlipayEbppInvoiceEnterpriseexctrlEmployertitleBatchqueryResponse ex
 	 */
 	@ApiField("msg")
 	private String msg;
+
+	/** 
+	 * 抬头编码
+	 */
+	@ApiField("title_code")
+	private String titleCode;
 
 	/** 
 	 * 企业抬头信息
@@ -50,6 +56,13 @@ public class AlipayEbppInvoiceEnterpriseexctrlEmployertitleBatchqueryResponse ex
 	}
 	public String getMsg( ) {
 		return this.msg;
+	}
+
+	public void setTitleCode(String titleCode) {
+		this.titleCode = titleCode;
+	}
+	public String getTitleCode( ) {
+		return this.titleCode;
 	}
 
 	public void setTitleInfoList(List<EnterpriseTitleInfo> titleInfoList) {

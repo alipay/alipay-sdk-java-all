@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建门店提交leads作业接口
  *
  * @author auto create
- * @since 1.0, 2025-03-25 12:45:38
+ * @since 1.0, 2025-04-01 17:14:18
  */
 public class AlipayCommerceOperationOpportunityLeadsCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8383415772442866277L;
+	private static final long serialVersionUID = 5537567984938719811L;
 
 	/**
 	 * 业务主体
@@ -56,6 +56,12 @@ public class AlipayCommerceOperationOpportunityLeadsCreateModel extends AlipayOb
 	 */
 	@ApiField("mcc_info")
 	private BsMccInfo mccInfo;
+
+	/**
+	 * 商机ID
+	 */
+	@ApiField("opportunity_id")
+	private String opportunityId;
 
 	/**
 	 * 外部业务流水号（业务申请编号；业务自定义，保证唯一）
@@ -115,6 +121,13 @@ public class AlipayCommerceOperationOpportunityLeadsCreateModel extends AlipayOb
 	}
 	public void setMccInfo(BsMccInfo mccInfo) {
 		this.mccInfo = mccInfo;
+	}
+
+	public String getOpportunityId() {
+		return this.opportunityId;
+	}
+	public void setOpportunityId(String opportunityId) {
+		this.opportunityId = opportunityId;
 	}
 
 	public String getOutBizNo() {

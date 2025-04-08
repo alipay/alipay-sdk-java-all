@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.nordermaterialsapply.payorder.notify response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-20 14:32:28
+ * @since 1.0, 2025-04-07 19:42:27
  */
 public class AlipayOpenSpNordermaterialsapplyPayorderNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4655773575334727791L;
+	private static final long serialVersionUID = 7554797153175714419L;
 
 	
 

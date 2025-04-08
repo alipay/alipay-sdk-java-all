@@ -15,11 +15,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.withholdrepayorder.trade.refund response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-27 15:52:22
+ * @since 1.0, 2025-04-02 11:03:14
  */
 public class AlipayCommerceWithholdrepayorderTradeRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7479644327465299622L;
+	private static final long serialVersionUID = 2178516977691695474L;
 
 	/** 
 	 * 用户的登录id

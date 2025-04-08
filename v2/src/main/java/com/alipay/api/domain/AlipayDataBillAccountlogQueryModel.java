@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝商家账户账务明细查询
  *
  * @author auto create
- * @since 1.0, 2022-04-21 19:53:13
+ * @since 1.0, 2025-03-28 16:36:19
  */
 public class AlipayDataBillAccountlogQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4755387418739722542L;
+	private static final long serialVersionUID = 8657269355248144384L;
 
 	/**
 	 * 协议授权码，特殊场景下使用
@@ -38,7 +38,7 @@ public class AlipayDataBillAccountlogQueryModel extends AlipayObject {
 	private String billUserId;
 
 	/**
-	 * 账务流水创建时间的结束范围。与起始时间间隔不超过31天。查询结果为起始时间至结束时间的左闭右开区间
+	 * 账务流水创建时间的结束范围。与起始时间间隔不超过31天。查询结果为起始时间至结束时间的左闭右开区间。精确查询不需要指定
 	 */
 	@ApiField("end_time")
 	private String endTime;
@@ -48,6 +48,12 @@ public class AlipayDataBillAccountlogQueryModel extends AlipayObject {
 	 */
 	@ApiField("merchant_order_no")
 	private String merchantOrderNo;
+
+	/**
+	 * 用于标记支付宝用户在应用下的唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 分页号，从1开始
@@ -62,7 +68,7 @@ public class AlipayDataBillAccountlogQueryModel extends AlipayObject {
 	private String pageSize;
 
 	/**
-	 * 账务流水创建时间的起始范围。只能查询一年内的记录
+	 * 账务流水创建时间的起始范围。只能查询一年内的记录。精确查询不需要指定
 	 */
 	@ApiField("start_time")
 	private String startTime;
@@ -113,6 +119,13 @@ public class AlipayDataBillAccountlogQueryModel extends AlipayObject {
 	}
 	public void setMerchantOrderNo(String merchantOrderNo) {
 		this.merchantOrderNo = merchantOrderNo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getPageNo() {

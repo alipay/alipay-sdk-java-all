@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询员工详情
  *
  * @author auto create
- * @since 1.0, 2025-03-11 11:06:19
+ * @since 1.0, 2025-03-27 19:32:22
  */
 public class AlipayCommerceEcEmployeeInfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5573622554418898299L;
+	private static final long serialVersionUID = 1758738883173588766L;
 
 	/**
 	 * 支付宝登录号（手机号或邮箱）

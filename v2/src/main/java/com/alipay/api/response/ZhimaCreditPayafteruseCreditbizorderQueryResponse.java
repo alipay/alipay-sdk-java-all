@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.payafteruse.creditbizorder.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-21 14:16:24
+ * @since 1.0, 2025-04-01 19:12:25
  */
 public class ZhimaCreditPayafteruseCreditbizorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7556459822838434981L;
+	private static final long serialVersionUID = 1764311616885173955L;
 
 	/** 
 	 * 订单创建时间
@@ -55,6 +55,12 @@ public class ZhimaCreditPayafteruseCreditbizorderQueryResponse extends AlipayRes
 	 */
 	@ApiField("total_amount")
 	private String totalAmount;
+
+	/** 
+	 * 信用服务订单中信用支付金额，不包含支付宝营销金额
+	 */
+	@ApiField("total_credit_pay_amount")
+	private String totalCreditPayAmount;
 
 	/** 
 	 * 支付宝交易号。
@@ -109,6 +115,13 @@ public class ZhimaCreditPayafteruseCreditbizorderQueryResponse extends AlipayRes
 	}
 	public String getTotalAmount( ) {
 		return this.totalAmount;
+	}
+
+	public void setTotalCreditPayAmount(String totalCreditPayAmount) {
+		this.totalCreditPayAmount = totalCreditPayAmount;
+	}
+	public String getTotalCreditPayAmount( ) {
+		return this.totalCreditPayAmount;
 	}
 
 	public void setTradeNo(String tradeNo) {

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportEtcCardapplyNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5345994968762835993L;
+	private static final long serialVersionUID = 6556253333632439785L;
 
 	/**
 	 * 银行侧开卡回传状态。注意对同一个开卡申请单每个阶段的状态不可被相互覆盖。例如：申请提交成功了，不再接受申请提交失败；申请提交失败了也不再接受申请提交成功。

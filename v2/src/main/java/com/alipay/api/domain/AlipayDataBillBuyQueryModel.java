@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝商家账户买入交易查询
  *
  * @author auto create
- * @since 1.0, 2025-03-20 10:14:58
+ * @since 1.0, 2025-03-28 16:35:54
  */
 public class AlipayDataBillBuyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2152614794148195746L;
+	private static final long serialVersionUID = 2114642893133113376L;
 
 	/**
 	 * 支付宝交易流水号。如果查询参数中指定流水号，则只查询流水号相关的记录
