@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.nft.poap.distribute.submit request
  * 
  * @author auto create
- * @since 1.0, 2025-04-08 11:47:28
+ * @since 1.0, 2025-04-17 17:37:28
  */
 public class AnttechNftPoapDistributeSubmitRequest implements AlipayRequest<AnttechNftPoapDistributeSubmitResponse> {
 

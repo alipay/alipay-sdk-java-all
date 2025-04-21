@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.nft.poap.tenant.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-08 11:42:26
+ * @since 1.0, 2025-04-17 17:42:27
  */
 public class AnttechNftPoapTenantQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1549252436517266394L;
+	private static final long serialVersionUID = 7638513744153778349L;
 
 	/** 
 	 * 是否有下一页

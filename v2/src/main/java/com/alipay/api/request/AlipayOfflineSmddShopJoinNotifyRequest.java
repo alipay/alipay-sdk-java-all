@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.smdd.shop.join.notify request
  * 
  * @author auto create
- * @since 1.0, 2025-04-08 16:27:27
+ * @since 1.0, 2025-04-12 16:02:27
  */
 public class AlipayOfflineSmddShopJoinNotifyRequest implements AlipayRequest<AlipayOfflineSmddShopJoinNotifyResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 家医CBD医生状态同步接口
  *
  * @author auto create
- * @since 1.0, 2025-04-02 13:50:47
+ * @since 1.0, 2025-04-16 15:03:11
  */
 public class AlipayInsCbddoctorStatusSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1137369162432512167L;
+	private static final long serialVersionUID = 3231674621353756967L;
 
 	/**
 	 * 医院内部分配给医生并且提前录入到蚂蚁系统内的工号，用于唯一标识一位医生

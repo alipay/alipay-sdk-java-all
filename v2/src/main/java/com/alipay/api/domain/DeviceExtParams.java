@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 设备档案拓展信息
  *
  * @author auto create
- * @since 1.0, 2024-11-20 15:48:20
+ * @since 1.0, 2025-04-11 15:55:19
  */
 public class DeviceExtParams extends AlipayObject {
 
-	private static final long serialVersionUID = 5577369618552721924L;
+	private static final long serialVersionUID = 1722573372538234629L;
 
 	/**
 	 * 商户编号，由ISV定义，需要保证在ISV下唯一
@@ -24,6 +24,12 @@ public class DeviceExtParams extends AlipayObject {
 	 */
 	@ApiField("external_shop_id")
 	private String externalShopId;
+
+	/**
+	 * 服务商通过这个参数传入服务商定制版本信息，不传默认为标准版
+	 */
+	@ApiField("isv_device_version_tag")
+	private String isvDeviceVersionTag;
 
 	/**
 	 * 支付类型
@@ -75,6 +81,13 @@ public class DeviceExtParams extends AlipayObject {
 	}
 	public void setExternalShopId(String externalShopId) {
 		this.externalShopId = externalShopId;
+	}
+
+	public String getIsvDeviceVersionTag() {
+		return this.isvDeviceVersionTag;
+	}
+	public void setIsvDeviceVersionTag(String isvDeviceVersionTag) {
+		this.isvDeviceVersionTag = isvDeviceVersionTag;
 	}
 
 	public String getPaymentType() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品信息
  *
  * @author auto create
- * @since 1.0, 2025-03-31 14:57:55
+ * @since 1.0, 2025-04-17 18:04:26
  */
 public class ItemsVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3339865213744534624L;
+	private static final long serialVersionUID = 8874264791449182251L;
 
 	/**
 	 * 商品总价
@@ -32,10 +32,22 @@ public class ItemsVO extends AlipayObject {
 	private Long isMiItem;
 
 	/**
+	 * 1是处方药品，2不是处方药品
+	 */
+	@ApiField("is_rx_item")
+	private Long isRxItem;
+
+	/**
 	 * 商品名称
 	 */
 	@ApiField("item_name")
 	private String itemName;
+
+	/**
+	 * 商品医保编码
+	 */
+	@ApiField("mi_code")
+	private String miCode;
 
 	/**
 	 * 商品原价，单位：元
@@ -106,11 +118,25 @@ public class ItemsVO extends AlipayObject {
 		this.isMiItem = isMiItem;
 	}
 
+	public Long getIsRxItem() {
+		return this.isRxItem;
+	}
+	public void setIsRxItem(Long isRxItem) {
+		this.isRxItem = isRxItem;
+	}
+
 	public String getItemName() {
 		return this.itemName;
 	}
 	public void setItemName(String itemName) {
 		this.itemName = itemName;
+	}
+
+	public String getMiCode() {
+		return this.miCode;
+	}
+	public void setMiCode(String miCode) {
+		this.miCode = miCode;
 	}
 
 	public String getPriceOriginal() {

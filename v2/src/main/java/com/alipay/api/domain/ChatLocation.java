@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 地理位置信息
+ * 地理位置列表，包含对话所需要的各种地理位置信息，例如当前位置、目标位置、家庭等等
  *
  * @author auto create
- * @since 1.0, 2024-12-04 19:50:43
+ * @since 1.0, 2025-04-17 15:32:28
  */
 public class ChatLocation extends AlipayObject {
 
-	private static final long serialVersionUID = 3888213623421663939L;
+	private static final long serialVersionUID = 8656513779733288875L;
 
 	/**
 	 * 地理位置纬度，当用户的query需要位置信息，例如附近点单、查询附近充电桩等场景时候，则该参数必填，单位为度。在其他不涉及位置信息的接口时选填。

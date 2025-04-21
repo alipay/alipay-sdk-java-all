@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询结果数据列表
  *
  * @author auto create
- * @since 1.0, 2025-03-21 11:50:25
+ * @since 1.0, 2025-04-09 11:30:54
  */
 public class AdReportDataDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8559564953839633445L;
+	private static final long serialVersionUID = 6873393435841553153L;
 
 	/**
 	 * 代理商账号(只在代理商接口返回)
@@ -47,7 +47,7 @@ public class AdReportDataDetail extends AlipayObject {
 	private Long click;
 
 	/**
-	 * 广告被点击的次数占展示次数的百分比。计算方法：点击数/展示量*100%
+	 * 广告被点击的次数占展示次数的百分比。计算方法：点击数/展示量*100
 	 */
 	@ApiField("click_rate")
 	private String clickRate;
@@ -96,7 +96,7 @@ public class AdReportDataDetail extends AlipayObject {
 	private String creativeName;
 
 	/**
-	 * 广告被用户转化的次数占点击次数的百分比。计算方式：转化量/点击量*100%
+	 * 广告被用户转化的次数占点击次数的百分比。计算方式：转化量/点击量*100
 	 */
 	@ApiField("cvr")
 	private String cvr;

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenLotteryCampBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8217283882813652994L;
+	private static final long serialVersionUID = 1635979175553732868L;
 
 	/**
 	 * 环境

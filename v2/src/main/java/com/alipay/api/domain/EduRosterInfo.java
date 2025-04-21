@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 教育花名册详情
  *
  * @author auto create
- * @since 1.0, 2024-11-08 16:13:53
+ * @since 1.0, 2025-04-17 20:04:19
  */
 public class EduRosterInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8442147359723798617L;
+	private static final long serialVersionUID = 5491734832592558245L;
 
 	/**
 	 * 绑定状态
@@ -28,6 +28,12 @@ public class EduRosterInfo extends AlipayObject {
 	 */
 	@ApiField("cert_no")
 	private String certNo;
+
+	/**
+	 * 证件号尾号
+	 */
+	@ApiField("cert_no_tail")
+	private String certNoTail;
 
 	/**
 	 * 证件类型
@@ -50,6 +56,12 @@ public class EduRosterInfo extends AlipayObject {
 	private List<EduDepartmentNode> departmentInfoList;
 
 	/**
+	 * 邮箱
+	 */
+	@ApiField("email")
+	private String email;
+
+	/**
 	 * 学号或工号
 	 */
 	@ApiField("employee_no")
@@ -68,7 +80,7 @@ public class EduRosterInfo extends AlipayObject {
 	private String gender;
 
 	/**
-	 * 机构ID
+	 * 机构内标
 	 */
 	@ApiField("inst_id")
 	private String instId;
@@ -92,7 +104,21 @@ public class EduRosterInfo extends AlipayObject {
 	private String name;
 
 	/**
-	 * 角色名称，可自定义，未自定义则使用默认值
+	 * 组织节点信息列表，一个人可能属于多个组织节点，列表记录的都是最低级组织部门节点
+	 */
+	@ApiListField("node_info_list")
+	@ApiField("edu_node_info")
+	private List<EduNodeInfo> nodeInfoList;
+
+	/**
+	 * 角色信息列表
+	 */
+	@ApiListField("role_info_list")
+	@ApiField("edu_role_info")
+	private List<EduRoleInfo> roleInfoList;
+
+	/**
+	 * 角色类型名称
 	 */
 	@ApiField("role_name")
 	private String roleName;
@@ -123,6 +149,13 @@ public class EduRosterInfo extends AlipayObject {
 		this.certNo = certNo;
 	}
 
+	public String getCertNoTail() {
+		return this.certNoTail;
+	}
+	public void setCertNoTail(String certNoTail) {
+		this.certNoTail = certNoTail;
+	}
+
 	public String getCertType() {
 		return this.certType;
 	}
@@ -142,6 +175,13 @@ public class EduRosterInfo extends AlipayObject {
 	}
 	public void setDepartmentInfoList(List<EduDepartmentNode> departmentInfoList) {
 		this.departmentInfoList = departmentInfoList;
+	}
+
+	public String getEmail() {
+		return this.email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public String getEmployeeNo() {
@@ -191,6 +231,20 @@ public class EduRosterInfo extends AlipayObject {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public List<EduNodeInfo> getNodeInfoList() {
+		return this.nodeInfoList;
+	}
+	public void setNodeInfoList(List<EduNodeInfo> nodeInfoList) {
+		this.nodeInfoList = nodeInfoList;
+	}
+
+	public List<EduRoleInfo> getRoleInfoList() {
+		return this.roleInfoList;
+	}
+	public void setRoleInfoList(List<EduRoleInfo> roleInfoList) {
+		this.roleInfoList = roleInfoList;
 	}
 
 	public String getRoleName() {

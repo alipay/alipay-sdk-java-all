@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.rightsorder.pre.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-03 15:12:34
+ * @since 1.0, 2025-04-09 16:32:29
  */
 public class AlipayInsRightsorderPreQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7519815316838369832L;
+	private static final long serialVersionUID = 5654987289497524134L;
 
 	/** 
 	 * 当前订单是否有效，true表示有效，可继续执行下单

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 消费贷还款借据信息ITEM
  *
  * @author auto create
- * @since 1.0, 2024-08-06 11:22:35
+ * @since 1.0, 2025-04-21 15:15:48
  */
 public class ConsumerLoanLoanInfoItem extends AlipayObject {
 
-	private static final long serialVersionUID = 1641238843385423378L;
+	private static final long serialVersionUID = 5865385345624264789L;
 
 	/**
 	 * 是否可提前还款，true-允许，false-不允许
@@ -48,6 +48,12 @@ public class ConsumerLoanLoanInfoItem extends AlipayObject {
 	 */
 	@ApiField("last_principal_amount")
 	private Long lastPrincipalAmount;
+
+	/**
+	 * 当前该笔借据剩余待还总金额，单位为分，如1000代表10.00元
+	 */
+	@ApiField("last_total_repay_amount")
+	private Long lastTotalRepayAmount;
 
 	/**
 	 * 总借款金额，单位为分，1000代表10.00元
@@ -141,6 +147,13 @@ OVER_DUE：逾期
 	}
 	public void setLastPrincipalAmount(Long lastPrincipalAmount) {
 		this.lastPrincipalAmount = lastPrincipalAmount;
+	}
+
+	public Long getLastTotalRepayAmount() {
+		return this.lastTotalRepayAmount;
+	}
+	public void setLastTotalRepayAmount(Long lastTotalRepayAmount) {
+		this.lastTotalRepayAmount = lastTotalRepayAmount;
 	}
 
 	public Long getLoanAmount() {

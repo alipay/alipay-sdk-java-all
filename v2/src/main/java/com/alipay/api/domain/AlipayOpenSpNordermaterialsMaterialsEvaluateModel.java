@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * N点餐物料生产后回传核验
  *
  * @author auto create
- * @since 1.0, 2025-03-13 11:32:49
+ * @since 1.0, 2025-04-18 15:32:11
  */
 public class AlipayOpenSpNordermaterialsMaterialsEvaluateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8513781314251976474L;
+	private static final long serialVersionUID = 5388254673783935664L;
 
 	/**
 	 * 生产单号，用于匹配物料信息校验

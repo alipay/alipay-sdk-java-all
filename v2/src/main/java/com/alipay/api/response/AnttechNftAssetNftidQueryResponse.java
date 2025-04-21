@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.nft.asset.nftid.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-18 10:42:29
+ * @since 1.0, 2025-04-17 17:42:27
  */
 public class AnttechNftAssetNftidQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4313339251124545752L;
+	private static final long serialVersionUID = 4754683858995969296L;
 
 	/** 
 	 * NFT的创作者名称

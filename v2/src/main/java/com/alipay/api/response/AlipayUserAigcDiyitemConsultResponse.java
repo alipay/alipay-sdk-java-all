@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.aigc.diyitem.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-15 20:26:54
+ * @since 1.0, 2025-04-17 13:53:19
  */
 public class AlipayUserAigcDiyitemConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3111783359348221156L;
+	private static final long serialVersionUID = 8138652493263447517L;
 
 	/** 
 	 * 咨询是否通过

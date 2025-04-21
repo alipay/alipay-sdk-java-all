@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建店铺
  *
  * @author auto create
- * @since 1.0, 2021-03-11 10:08:08
+ * @since 1.0, 2025-04-14 11:20:50
  */
 public class AlipayCommerceEducateTrainShopCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7868977924677775184L;
+	private static final long serialVersionUID = 6247851216262824939L;
 
 	/**
 	 * 经营地址信息

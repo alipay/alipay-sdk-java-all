@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 出租车司机车辆信息同步接口
  *
  * @author auto create
- * @since 1.0, 2021-09-09 20:47:08
+ * @since 1.0, 2025-04-14 11:05:15
  */
 public class AlipayCommerceTransportTaxiDrivercarinfoSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1618258882395611774L;
+	private static final long serialVersionUID = 1595529845735432253L;
 
 	/**
 	 * 出租车司机车辆信息列表

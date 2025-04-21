@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.smdd.catering.order.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-08 16:22:18
+ * @since 1.0, 2025-04-11 15:42:27
  */
 public class AlipayOfflineSmddCateringOrderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1866446947419987214L;
+	private static final long serialVersionUID = 3115812816189681416L;
 
 	/** 
 	 * 订单id

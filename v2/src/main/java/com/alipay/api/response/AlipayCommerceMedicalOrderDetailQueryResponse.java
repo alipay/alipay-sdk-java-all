@@ -8,6 +8,7 @@ import com.alipay.api.domain.ItemsVO;
 import com.alipay.api.domain.MedicareInfoVO;
 import com.alipay.api.domain.OrderInfoVO;
 import com.alipay.api.domain.PaymentVO;
+import com.alipay.api.domain.PrescriptionVO;
 import com.alipay.api.domain.StoreVO;
 import com.alipay.api.domain.UserSimpleVO;
 
@@ -17,11 +18,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.order.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-02 16:45:20
+ * @since 1.0, 2025-04-17 18:37:26
  */
 public class AlipayCommerceMedicalOrderDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3498957242769998858L;
+	private static final long serialVersionUID = 5551693694645548825L;
 
 	/** 
 	 * 用户订单维度享受的优惠信息
@@ -54,6 +55,13 @@ public class AlipayCommerceMedicalOrderDetailQueryResponse extends AlipayRespons
 	 */
 	@ApiField("payment")
 	private PaymentVO payment;
+
+	/** 
+	 * 处方信息
+	 */
+	@ApiListField("prescriptions")
+	@ApiField("prescription_v_o")
+	private List<PrescriptionVO> prescriptions;
 
 	/** 
 	 * 商户店铺信息
@@ -100,6 +108,13 @@ public class AlipayCommerceMedicalOrderDetailQueryResponse extends AlipayRespons
 	}
 	public PaymentVO getPayment( ) {
 		return this.payment;
+	}
+
+	public void setPrescriptions(List<PrescriptionVO> prescriptions) {
+		this.prescriptions = prescriptions;
+	}
+	public List<PrescriptionVO> getPrescriptions( ) {
+		return this.prescriptions;
 	}
 
 	public void setStore(StoreVO store) {

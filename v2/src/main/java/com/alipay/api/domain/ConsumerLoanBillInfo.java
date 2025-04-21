@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 消费贷还款账单信息
  *
  * @author auto create
- * @since 1.0, 2024-08-06 11:22:35
+ * @since 1.0, 2025-04-21 15:15:49
  */
 public class ConsumerLoanBillInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4393923177615326641L;
+	private static final long serialVersionUID = 7332582664585966651L;
 
 	/**
 	 * 账单列表
@@ -30,7 +30,7 @@ public class ConsumerLoanBillInfo extends AlipayObject {
 	private ConsumerLoanLoanInfo loanInfo;
 
 	/**
-	 * 还款周期数
+	 * 待还款期数，单位：笔
 	 */
 	@ApiField("period_count")
 	private Long periodCount;

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 藏品批量销毁
  *
  * @author auto create
- * @since 1.0, 2025-03-31 10:20:06
+ * @since 1.0, 2025-04-17 17:38:22
  */
 public class AnttechNftAssetBatchDestroyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6577944447292576819L;
+	private static final long serialVersionUID = 3821957777639718534L;
 
 	/**
 	 * 上游幂等单号

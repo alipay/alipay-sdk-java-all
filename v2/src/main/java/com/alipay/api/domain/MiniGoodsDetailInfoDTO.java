@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品列表信息模型
  *
  * @author auto create
- * @since 1.0, 2025-04-03 19:49:54
+ * @since 1.0, 2025-04-18 19:17:57
  */
 public class MiniGoodsDetailInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1519619177146763991L;
+	private static final long serialVersionUID = 8524532556564844474L;
 
 	/**
 	 * 活动信息
@@ -96,6 +96,18 @@ public class MiniGoodsDetailInfoDTO extends AlipayObject {
 	 */
 	@ApiField("item_discount")
 	private String itemDiscount;
+
+	/**
+	 * 商品成色
+	 */
+	@ApiField("item_fineness")
+	private String itemFineness;
+
+	/**
+	 * 成色等级，成色为二手时需传入此字段
+	 */
+	@ApiField("item_fineness_grade")
+	private String itemFinenessGrade;
 
 	/**
 	 * 商品分期信息
@@ -271,6 +283,20 @@ item_discount使用场景：同时购买多件商品时存在优惠，传入优�
 	}
 	public void setItemDiscount(String itemDiscount) {
 		this.itemDiscount = itemDiscount;
+	}
+
+	public String getItemFineness() {
+		return this.itemFineness;
+	}
+	public void setItemFineness(String itemFineness) {
+		this.itemFineness = itemFineness;
+	}
+
+	public String getItemFinenessGrade() {
+		return this.itemFinenessGrade;
+	}
+	public void setItemFinenessGrade(String itemFinenessGrade) {
+		this.itemFinenessGrade = itemFinenessGrade;
 	}
 
 	public ItemInstallmentInfoDTO getItemInstallmentInfo() {

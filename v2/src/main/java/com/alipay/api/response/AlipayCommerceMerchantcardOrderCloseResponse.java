@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.merchantcard.order.close response.
  * 
  * @author auto create
- * @since 1.0, 2025-01-16 10:38:39
+ * @since 1.0, 2025-04-09 11:07:30
  */
 public class AlipayCommerceMerchantcardOrderCloseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7163971632284716122L;
+	private static final long serialVersionUID = 3374399937242914633L;
 
 	/** 
 	 * 售卖订单ID

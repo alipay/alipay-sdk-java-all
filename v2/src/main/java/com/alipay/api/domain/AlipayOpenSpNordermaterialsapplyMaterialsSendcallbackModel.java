@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 碰一下点餐物料铺设回传
  *
  * @author auto create
- * @since 1.0, 2025-03-13 11:31:50
+ * @since 1.0, 2025-04-18 15:31:06
  */
 public class AlipayOpenSpNordermaterialsapplyMaterialsSendcallbackModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1575327612259969613L;
+	private static final long serialVersionUID = 8294769125531586217L;
 
 	/**
 	 * 申请单ID，等同创建申请单返回的ID

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商家群群组推广渠道删除
  *
  * @author auto create
- * @since 1.0, 2024-09-30 16:40:05
+ * @since 1.0, 2025-04-15 16:33:19
  */
 public class AlipayMerchantGroupPromotechannelDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7358694775287157974L;
+	private static final long serialVersionUID = 5449376974723447193L;
 
 	/**
 	 * 群组id，表里唯一键，创建群组自动生成，编辑群组必填

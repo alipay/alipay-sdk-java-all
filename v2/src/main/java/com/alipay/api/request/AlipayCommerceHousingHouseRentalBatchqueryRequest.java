@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.housing.house.rental.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2025-03-19 14:12:26
+ * @since 1.0, 2025-04-14 11:32:26
  */
 public class AlipayCommerceHousingHouseRentalBatchqueryRequest implements AlipayRequest<AlipayCommerceHousingHouseRentalBatchqueryResponse> {
 

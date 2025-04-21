@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-04-08 18:12:28
+ * @since 1.0, 2025-04-14 20:47:26
  */
 public class RecycleQcReportCheckItems extends AlipayObject {
 
-	private static final long serialVersionUID = 8693693534896858334L;
+	private static final long serialVersionUID = 7349473165947569891L;
 
 	/**
 	 * 质检项目名

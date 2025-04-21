@@ -7,11 +7,41 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁融资扩展信息
  *
  * @author auto create
- * @since 1.0, 2025-03-18 16:05:55
+ * @since 1.0, 2025-04-18 17:40:56
  */
 public class RentFinancingExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1818457322541828156L;
+	private static final long serialVersionUID = 6398724894734176522L;
+
+	/**
+	 * 收款银行卡账户
+	 */
+	@ApiField("beneficiary_account_number")
+	private String beneficiaryAccountNumber;
+
+	/**
+	 * 收款支行名称
+	 */
+	@ApiField("beneficiary_bank_name")
+	private String beneficiaryBankName;
+
+	/**
+	 * 收款户名
+	 */
+	@ApiField("beneficiary_name")
+	private String beneficiaryName;
+
+	/**
+	 * 买断金融资金额，单位：元
+	 */
+	@ApiField("buyout_financing_amount")
+	private String buyoutFinancingAmount;
+
+	/**
+	 * 买断金还款方式
+	 */
+	@ApiField("buyout_repayment_type")
+	private String buyoutRepaymentType;
 
 	/**
 	 * 需要融资的金额，币种：人民币
@@ -86,10 +116,51 @@ public class RentFinancingExtInfo extends AlipayObject {
 	private String payeeMemo;
 
 	/**
-	 * 还款的方式，例如：等额本息/等额本差
+	 * 租金融资金额，单位：元
+	 */
+	@ApiField("rent_financing_amount")
+	private String rentFinancingAmount;
+
+	/**
+	 * 租金还款的方式，例如：等额本息/等额本差
 	 */
 	@ApiField("repayment_type")
 	private String repaymentType;
+
+	public String getBeneficiaryAccountNumber() {
+		return this.beneficiaryAccountNumber;
+	}
+	public void setBeneficiaryAccountNumber(String beneficiaryAccountNumber) {
+		this.beneficiaryAccountNumber = beneficiaryAccountNumber;
+	}
+
+	public String getBeneficiaryBankName() {
+		return this.beneficiaryBankName;
+	}
+	public void setBeneficiaryBankName(String beneficiaryBankName) {
+		this.beneficiaryBankName = beneficiaryBankName;
+	}
+
+	public String getBeneficiaryName() {
+		return this.beneficiaryName;
+	}
+	public void setBeneficiaryName(String beneficiaryName) {
+		this.beneficiaryName = beneficiaryName;
+	}
+
+	public String getBuyoutFinancingAmount() {
+		return this.buyoutFinancingAmount;
+	}
+	public void setBuyoutFinancingAmount(String buyoutFinancingAmount) {
+		this.buyoutFinancingAmount = buyoutFinancingAmount;
+	}
+
+	public String getBuyoutRepaymentType() {
+		return this.buyoutRepaymentType;
+	}
+	public void setBuyoutRepaymentType(String buyoutRepaymentType) {
+		this.buyoutRepaymentType = buyoutRepaymentType;
+	}
 
 	public String getFinancingAmount() {
 		return this.financingAmount;
@@ -173,6 +244,13 @@ public class RentFinancingExtInfo extends AlipayObject {
 	}
 	public void setPayeeMemo(String payeeMemo) {
 		this.payeeMemo = payeeMemo;
+	}
+
+	public String getRentFinancingAmount() {
+		return this.rentFinancingAmount;
+	}
+	public void setRentFinancingAmount(String rentFinancingAmount) {
+		this.rentFinancingAmount = rentFinancingAmount;
 	}
 
 	public String getRepaymentType() {

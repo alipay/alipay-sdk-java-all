@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.smdd.catering.order.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-08 16:22:25
+ * @since 1.0, 2025-04-11 15:42:27
  */
 public class AlipayOfflineSmddCateringOrderConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5898929522195273972L;
+	private static final long serialVersionUID = 3673442155759822294L;
 
 	/** 
 	 * 活动列表，商品促销活动
@@ -42,6 +42,12 @@ public class AlipayOfflineSmddCateringOrderConfirmResponse extends AlipayRespons
 	 */
 	@ApiField("discounted_price")
 	private String discountedPrice;
+
+	/** 
+	 * 订单确认时友好地异常信息（可以直接透出）
+	 */
+	@ApiField("exception_msg")
+	private String exceptionMsg;
 
 	/** 
 	 * 该价格是商品总价-满减优惠的，不包含外送费，打包费，单位元
@@ -106,6 +112,13 @@ public class AlipayOfflineSmddCateringOrderConfirmResponse extends AlipayRespons
 	}
 	public String getDiscountedPrice( ) {
 		return this.discountedPrice;
+	}
+
+	public void setExceptionMsg(String exceptionMsg) {
+		this.exceptionMsg = exceptionMsg;
+	}
+	public String getExceptionMsg( ) {
+		return this.exceptionMsg;
 	}
 
 	public void setItemTotalPrice(String itemTotalPrice) {

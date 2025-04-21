@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商家群群组修改
  *
  * @author auto create
- * @since 1.0, 2024-09-30 21:05:19
+ * @since 1.0, 2025-04-15 16:33:58
  */
 public class AlipayMerchantGroupGroupinfoModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8781442627213697368L;
+	private static final long serialVersionUID = 1398572325183547523L;
 
 	/**
 	 * 群组基础信息。包含群组id、群组名称、群组管理员列表等信息

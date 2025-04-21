@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 家医CBD结束问诊
  *
  * @author auto create
- * @since 1.0, 2025-04-02 13:50:45
+ * @since 1.0, 2025-04-16 15:06:28
  */
 public class AlipayInsCbddoctorDiagnosisFinishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3124849845928278475L;
+	private static final long serialVersionUID = 1841254833944899852L;
 
 	/**
 	 * 蚂蚁服务单编号

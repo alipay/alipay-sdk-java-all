@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票登记模型
  *
  * @author auto create
- * @since 1.0, 2023-08-30 14:25:46
+ * @since 1.0, 2025-04-14 17:44:09
  */
 public class InputInvoiceRegisterOpenApiDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5227998915945583842L;
+	private static final long serialVersionUID = 2388181917751443546L;
 
 	/**
 	 * 金额类,币种见currency字段
@@ -23,10 +23,22 @@ public class InputInvoiceRegisterOpenApiDTO extends AlipayObject {
 	private String amount;
 
 	/**
+	 * 标识是否走主站登记链路
+	 */
+	@ApiField("ant_group_register_flag")
+	private String antGroupRegisterFlag;
+
+	/**
 	 * 是否海外某些国家的发票使用
 	 */
 	@ApiField("authorized_dealer")
 	private String authorizedDealer;
+
+	/**
+	 * 表示是否需要勾选抵扣
+	 */
+	@ApiField("certify_deduct_flag")
+	private String certifyDeductFlag;
 
 	/**
 	 * 校验码
@@ -47,6 +59,12 @@ public class InputInvoiceRegisterOpenApiDTO extends AlipayObject {
 	private String currency;
 
 	/**
+	 * 发展基金
+	 */
+	@ApiField("development_fund")
+	private String developmentFund;
+
+	/**
 	 * 有效税额，币种见currency字段
 	 */
 	@ApiField("effective_tax_amount")
@@ -65,10 +83,28 @@ public class InputInvoiceRegisterOpenApiDTO extends AlipayObject {
 	private String excludingTaxAmount;
 
 	/**
+	 * 票价信息
+	 */
+	@ApiField("fare")
+	private String fare;
+
+	/**
 	 * 文件下载http地址
 	 */
 	@ApiField("file_download_http_url")
 	private String fileDownloadHttpUrl;
+
+	/**
+	 * 燃油附加费
+	 */
+	@ApiField("fuel_surcharge")
+	private String fuelSurcharge;
+
+	/**
+	 * 全电票标签，根据具体发票类型传入
+	 */
+	@ApiField("full_elc_flag")
+	private String fullElcFlag;
 
 	/**
 	 * 影像原始文件名称
@@ -312,11 +348,25 @@ public class InputInvoiceRegisterOpenApiDTO extends AlipayObject {
 		this.amount = amount;
 	}
 
+	public String getAntGroupRegisterFlag() {
+		return this.antGroupRegisterFlag;
+	}
+	public void setAntGroupRegisterFlag(String antGroupRegisterFlag) {
+		this.antGroupRegisterFlag = antGroupRegisterFlag;
+	}
+
 	public String getAuthorizedDealer() {
 		return this.authorizedDealer;
 	}
 	public void setAuthorizedDealer(String authorizedDealer) {
 		this.authorizedDealer = authorizedDealer;
+	}
+
+	public String getCertifyDeductFlag() {
+		return this.certifyDeductFlag;
+	}
+	public void setCertifyDeductFlag(String certifyDeductFlag) {
+		this.certifyDeductFlag = certifyDeductFlag;
 	}
 
 	public String getCheckSum() {
@@ -340,6 +390,13 @@ public class InputInvoiceRegisterOpenApiDTO extends AlipayObject {
 		this.currency = currency;
 	}
 
+	public String getDevelopmentFund() {
+		return this.developmentFund;
+	}
+	public void setDevelopmentFund(String developmentFund) {
+		this.developmentFund = developmentFund;
+	}
+
 	public String getEffectiveTaxAmount() {
 		return this.effectiveTaxAmount;
 	}
@@ -361,11 +418,32 @@ public class InputInvoiceRegisterOpenApiDTO extends AlipayObject {
 		this.excludingTaxAmount = excludingTaxAmount;
 	}
 
+	public String getFare() {
+		return this.fare;
+	}
+	public void setFare(String fare) {
+		this.fare = fare;
+	}
+
 	public String getFileDownloadHttpUrl() {
 		return this.fileDownloadHttpUrl;
 	}
 	public void setFileDownloadHttpUrl(String fileDownloadHttpUrl) {
 		this.fileDownloadHttpUrl = fileDownloadHttpUrl;
+	}
+
+	public String getFuelSurcharge() {
+		return this.fuelSurcharge;
+	}
+	public void setFuelSurcharge(String fuelSurcharge) {
+		this.fuelSurcharge = fuelSurcharge;
+	}
+
+	public String getFullElcFlag() {
+		return this.fullElcFlag;
+	}
+	public void setFullElcFlag(String fullElcFlag) {
+		this.fullElcFlag = fullElcFlag;
 	}
 
 	public String getImageFileName() {

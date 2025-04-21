@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资产放贷风控结果查询
  *
  * @author auto create
- * @since 1.0, 2025-04-02 16:32:26
+ * @since 1.0, 2025-04-10 15:12:29
  */
 public class AlipayCommerceRentLoanQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6856746482453579338L;
+	private static final long serialVersionUID = 4861653993712443848L;
 
 	/**
 	 * 买家支付宝用户id，小程序场景下获取用户ID请参考：用户授权; 其它场景下获取用户ID请参考：网页授权获取用户信息。

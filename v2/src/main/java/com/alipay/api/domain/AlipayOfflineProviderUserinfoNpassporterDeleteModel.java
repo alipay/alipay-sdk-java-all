@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * NFC核身用户出库
  *
  * @author auto create
- * @since 1.0, 2025-03-12 13:25:54
+ * @since 1.0, 2025-04-16 16:25:24
  */
 public class AlipayOfflineProviderUserinfoNpassporterDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8582685762193136176L;
+	private static final long serialVersionUID = 6862118187216664518L;
 
 	/**
 	 * 身份证号。可以传明文，也可以传身份证号的32位大写MD5值。尽量使用MD5值

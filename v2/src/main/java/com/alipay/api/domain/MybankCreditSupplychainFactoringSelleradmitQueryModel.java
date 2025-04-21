@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保理门店准入查询
  *
  * @author auto create
- * @since 1.0, 2024-06-20 16:24:51
+ * @since 1.0, 2025-04-15 15:20:26
  */
 public class MybankCreditSupplychainFactoringSelleradmitQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5843685532323722668L;
+	private static final long serialVersionUID = 8729977184334865758L;
+
+	/**
+	 * 基于社会统一信用代码查询门店是否在黑名单内
+	 */
+	@ApiField("business_license_no")
+	private String businessLicenseNo;
 
 	/**
 	 * isv支付宝id
@@ -42,6 +48,13 @@ public class MybankCreditSupplychainFactoringSelleradmitQueryModel extends Alipa
 	 */
 	@ApiField("seller_login_id")
 	private String sellerLoginId;
+
+	public String getBusinessLicenseNo() {
+		return this.businessLicenseNo;
+	}
+	public void setBusinessLicenseNo(String businessLicenseNo) {
+		this.businessLicenseNo = businessLicenseNo;
+	}
 
 	public String getBuyerAlipayId() {
 		return this.buyerAlipayId;

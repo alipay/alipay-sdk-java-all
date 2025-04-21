@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.nft.skuinfo.skuid.query request
  * 
  * @author auto create
- * @since 1.0, 2025-03-31 10:22:29
+ * @since 1.0, 2025-04-17 17:42:26
  */
 public class AnttechNftSkuinfoSkuidQueryRequest implements AlipayRequest<AnttechNftSkuinfoSkuidQueryResponse> {
 

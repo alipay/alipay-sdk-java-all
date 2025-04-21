@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品价格
  *
  * @author auto create
- * @since 1.0, 2024-09-25 21:14:18
+ * @since 1.0, 2025-04-14 15:47:11
  */
 public class SkuPriceDeatail extends AlipayObject {
 
-	private static final long serialVersionUID = 4862286982181853251L;
+	private static final long serialVersionUID = 1624842753855663113L;
 
 	/**
 	 * 价格，单位元。币种 ：人民币。
@@ -20,7 +20,7 @@ public class SkuPriceDeatail extends AlipayObject {
 	private String price;
 
 	/**
-	 * 商品编码
+	 * OMS厂商sku编码, 厂商自行维护
 	 */
 	@ApiField("sku_code")
 	private String skuCode;

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 公寓新增
  *
  * @author auto create
- * @since 1.0, 2025-03-13 14:42:28
+ * @since 1.0, 2025-04-14 11:17:29
  */
 public class AlipayCommerceHousingApartmentAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1734491219437771586L;
+	private static final long serialVersionUID = 6749572714468761543L;
 
 	/**
 	 * null
@@ -169,14 +169,13 @@ public class AlipayCommerceHousingApartmentAddModel extends AlipayObject {
 	private String houseStructure;
 
 	/**
-	 * 房源类型
+	 * (该字段已删除)
 	 */
 	@ApiField("housing_type")
 	private String housingType;
 
 	/**
-	 * 政府申请页地址：HTTP://
-
+	 * (该字段已删除)
 	 */
 	@ApiField("intentional_application")
 	private String intentionalApplication;
@@ -221,8 +220,7 @@ public class AlipayCommerceHousingApartmentAddModel extends AlipayObject {
 	private String provinceCode;
 
 	/**
-	 * 户籍等，描述文字
-
+	 * (该字段已删除)
 	 */
 	@ApiField("qualification_requirements")
 	private String qualificationRequirements;

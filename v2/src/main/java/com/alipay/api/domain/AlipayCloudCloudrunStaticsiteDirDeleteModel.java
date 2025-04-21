@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 静态站点删除文件夹
  *
  * @author auto create
- * @since 1.0, 2025-04-01 10:47:52
+ * @since 1.0, 2025-04-17 19:36:54
  */
 public class AlipayCloudCloudrunStaticsiteDirDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6365869496958744181L;
+	private static final long serialVersionUID = 1418916234957653275L;
+
+	/**
+	 * 内部使用，uiam角色扮演token
+	 */
+	@ApiField("assume_token")
+	private String assumeToken;
 
 	/**
 	 * 要删除的文件名称
@@ -30,6 +36,13 @@ public class AlipayCloudCloudrunStaticsiteDirDeleteModel extends AlipayObject {
 	 */
 	@ApiField("path")
 	private String path;
+
+	public String getAssumeToken() {
+		return this.assumeToken;
+	}
+	public void setAssumeToken(String assumeToken) {
+		this.assumeToken = assumeToken;
+	}
 
 	public String getDirName() {
 		return this.dirName;

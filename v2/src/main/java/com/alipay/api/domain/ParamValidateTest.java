@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ParamValidateTest extends AlipayObject {
 
-	private static final long serialVersionUID = 5246661717999353394L;
+	private static final long serialVersionUID = 1332473717318869715L;
 
 	/**
 	 * 1

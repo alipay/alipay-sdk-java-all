@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 消费贷还款借据账单列表查询返回结果
  *
  * @author auto create
- * @since 1.0, 2024-08-06 11:22:35
+ * @since 1.0, 2025-04-21 15:15:49
  */
 public class ConsumerLoanBillListQueryData extends AlipayObject {
 
-	private static final long serialVersionUID = 6647235765964318749L;
+	private static final long serialVersionUID = 3119964131463786457L;
 
 	/**
 	 * 账单信息

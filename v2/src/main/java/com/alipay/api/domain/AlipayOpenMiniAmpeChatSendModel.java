@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ampe对话服务发送query
  *
  * @author auto create
- * @since 1.0, 2024-12-04 19:50:43
+ * @since 1.0, 2025-04-17 20:12:19
  */
 public class AlipayOpenMiniAmpeChatSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6792179282655999912L;
+	private static final long serialVersionUID = 5842457813585493542L;
 
 	/**
 	 * AMPE设备id，代表唯一一台设备，在支付宝开放平台，或者通过openapi接口注册。
@@ -29,7 +29,7 @@ public class AlipayOpenMiniAmpeChatSendModel extends AlipayObject {
 	private String ampeProductId;
 
 	/**
-	 * 支付宝的意图code，由支付宝定义，意图列表可从参见BD提供的意图code列表，不定期更新。接入方可以根据支付宝提供的语料对自由的模型进行训练标注，经过自有模型意图分析后，在调用本接口时传入，这样会提高query的识别准确度，并提高响应速度。如果不传入，支付宝将根据自己的模型对query进行意图识别。
+	 * 支付宝的意图code，由支付宝定义，意图列表可从参见BD提供的意图code列表，不定期更新。接入方可以根据支付宝提供的语料对自由的模型进行训练标注，经过自有模型意图分析后，在调用本接口时传入，这样会提高query的识别准确度，并提高响应速度。如果不传入，支付宝将根据自己的模型对query进行意图识别。目前可选值为:SMART_ORDER（智能点单）
 	 */
 	@ApiField("intent_code")
 	private String intentCode;
@@ -40,6 +40,12 @@ public class AlipayOpenMiniAmpeChatSendModel extends AlipayObject {
 	@ApiListField("locations")
 	@ApiField("chat_location")
 	private List<ChatLocation> locations;
+
+	/**
+	 * 用于标记支付宝用户在应用下的唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 用户输入的原始query，不能改写。
@@ -58,6 +64,12 @@ public class AlipayOpenMiniAmpeChatSendModel extends AlipayObject {
 	 */
 	@ApiField("session_id")
 	private String sessionId;
+
+	/**
+	 * 支付宝用户的userId。
+	 */
+	@ApiField("user_id")
+	private String userId;
 
 	/**
 	 * 支付宝用户uid的加密串，可以通过客户端接口获取。不涉及用户个人数据操作的可为空，其他场景都为非空。
@@ -93,6 +105,13 @@ public class AlipayOpenMiniAmpeChatSendModel extends AlipayObject {
 		this.locations = locations;
 	}
 
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+
 	public String getQuery() {
 		return this.query;
 	}
@@ -112,6 +131,13 @@ public class AlipayOpenMiniAmpeChatSendModel extends AlipayObject {
 	}
 	public void setSessionId(String sessionId) {
 		this.sessionId = sessionId;
+	}
+
+	public String getUserId() {
+		return this.userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
 
 	public String getUserKey() {

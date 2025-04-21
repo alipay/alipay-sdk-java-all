@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.financialnet.auth.user.inner.certify request
  * 
  * @author auto create
- * @since 1.0, 2025-03-13 15:52:28
+ * @since 1.0, 2025-04-11 18:04:54
  */
 public class AlipayFinancialnetAuthUserInnerCertifyRequest implements AlipayRequest<AlipayFinancialnetAuthUserInnerCertifyResponse> {
 

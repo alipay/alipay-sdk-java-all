@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.itask.outorder.privacyphone.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-16 14:17:23
+ * @since 1.0, 2025-04-15 11:47:26
  */
 public class AlipayIserviceItaskOutorderPrivacyphoneQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1141976543374731676L;
+	private static final long serialVersionUID = 7744377814114329545L;
 
 	/** 
 	 * 隐私小号过期时间
@@ -27,6 +27,12 @@ public class AlipayIserviceItaskOutorderPrivacyphoneQueryResponse extends Alipay
 	@ApiField("privacy_bind_phone")
 	private String privacyBindPhone;
 
+	/** 
+	 * 用户手机类型
+	 */
+	@ApiField("user_phone_type")
+	private String userPhoneType;
+
 	public void setCurrentExpireTime(Date currentExpireTime) {
 		this.currentExpireTime = currentExpireTime;
 	}
@@ -39,6 +45,13 @@ public class AlipayIserviceItaskOutorderPrivacyphoneQueryResponse extends Alipay
 	}
 	public String getPrivacyBindPhone( ) {
 		return this.privacyBindPhone;
+	}
+
+	public void setUserPhoneType(String userPhoneType) {
+		this.userPhoneType = userPhoneType;
+	}
+	public String getUserPhoneType( ) {
+		return this.userPhoneType;
 	}
 
 }

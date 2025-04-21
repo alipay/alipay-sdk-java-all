@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建订单
  *
  * @author auto create
- * @since 1.0, 2025-04-08 16:22:18
+ * @since 1.0, 2025-04-11 15:39:58
  */
 public class AlipayOfflineSmddCateringOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2125617734248174256L;
+	private static final long serialVersionUID = 4482474395615689245L;
 
 	/**
 	 * 商品促销活动，订单确认接口中的 activity_list 透传，无商品促销活动可不传

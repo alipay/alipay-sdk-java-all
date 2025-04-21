@@ -5,6 +5,9 @@ import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.EduDepartmentNode;
+import com.alipay.api.domain.EduNodeInfo;
+import com.alipay.api.domain.EduPlaceInfo;
+import com.alipay.api.domain.EduRoleInfo;
 
 import com.alipay.api.AlipayResponse;
 
@@ -12,11 +15,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.roster.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-04 15:07:21
+ * @since 1.0, 2025-04-17 20:07:27
  */
 public class AlipayCommerceEducateRosterDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3199488339629775669L;
+	private static final long serialVersionUID = 8231459123857422197L;
 
 	/** 
 	 * 花名册是否绑定支付宝
@@ -31,6 +34,12 @@ public class AlipayCommerceEducateRosterDetailQueryResponse extends AlipayRespon
 	private String certNo;
 
 	/** 
+	 * 证件号尾号
+	 */
+	@ApiField("cert_no_tail")
+	private String certNoTail;
+
+	/** 
 	 * 证件类型
 	 */
 	@ApiField("cert_type")
@@ -42,6 +51,12 @@ public class AlipayCommerceEducateRosterDetailQueryResponse extends AlipayRespon
 	@ApiListField("department_info")
 	@ApiField("edu_department_node")
 	private List<EduDepartmentNode> departmentInfo;
+
+	/** 
+	 * 邮箱
+	 */
+	@ApiField("email")
+	private String email;
 
 	/** 
 	 * 学工号
@@ -86,6 +101,27 @@ public class AlipayCommerceEducateRosterDetailQueryResponse extends AlipayRespon
 	private String name;
 
 	/** 
+	 * 所属组织节点列表
+	 */
+	@ApiListField("node_info_list")
+	@ApiField("edu_node_info")
+	private List<EduNodeInfo> nodeInfoList;
+
+	/** 
+	 * 所属位置列表
+	 */
+	@ApiListField("place_info_list")
+	@ApiField("edu_place_info")
+	private List<EduPlaceInfo> placeInfoList;
+
+	/** 
+	 * 所属角色列表
+	 */
+	@ApiListField("role_info_list")
+	@ApiField("edu_role_info")
+	private List<EduRoleInfo> roleInfoList;
+
+	/** 
 	 * 角色名称，可自定义，未自定义则使用默认值
 	 */
 	@ApiField("role_name")
@@ -117,6 +153,13 @@ public class AlipayCommerceEducateRosterDetailQueryResponse extends AlipayRespon
 		return this.certNo;
 	}
 
+	public void setCertNoTail(String certNoTail) {
+		this.certNoTail = certNoTail;
+	}
+	public String getCertNoTail( ) {
+		return this.certNoTail;
+	}
+
 	public void setCertType(String certType) {
 		this.certType = certType;
 	}
@@ -129,6 +172,13 @@ public class AlipayCommerceEducateRosterDetailQueryResponse extends AlipayRespon
 	}
 	public List<EduDepartmentNode> getDepartmentInfo( ) {
 		return this.departmentInfo;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getEmail( ) {
+		return this.email;
 	}
 
 	public void setEmployeeNo(String employeeNo) {
@@ -178,6 +228,27 @@ public class AlipayCommerceEducateRosterDetailQueryResponse extends AlipayRespon
 	}
 	public String getName( ) {
 		return this.name;
+	}
+
+	public void setNodeInfoList(List<EduNodeInfo> nodeInfoList) {
+		this.nodeInfoList = nodeInfoList;
+	}
+	public List<EduNodeInfo> getNodeInfoList( ) {
+		return this.nodeInfoList;
+	}
+
+	public void setPlaceInfoList(List<EduPlaceInfo> placeInfoList) {
+		this.placeInfoList = placeInfoList;
+	}
+	public List<EduPlaceInfo> getPlaceInfoList( ) {
+		return this.placeInfoList;
+	}
+
+	public void setRoleInfoList(List<EduRoleInfo> roleInfoList) {
+		this.roleInfoList = roleInfoList;
+	}
+	public List<EduRoleInfo> getRoleInfoList( ) {
+		return this.roleInfoList;
 	}
 
 	public void setRoleName(String roleName) {

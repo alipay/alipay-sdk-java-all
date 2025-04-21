@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOfflineProviderNsalesOrderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1249412178361545938L;
+	private static final long serialVersionUID = 6284956312693196411L;
 
 	/** 
 	 * 绝对过期时间

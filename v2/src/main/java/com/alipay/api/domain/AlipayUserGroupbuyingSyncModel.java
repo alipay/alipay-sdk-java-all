@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserGroupbuyingSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8535556889823223714L;
+	private static final long serialVersionUID = 5672219421771885393L;
 
 	/**
 	 * 拼团结束时间的timestamp

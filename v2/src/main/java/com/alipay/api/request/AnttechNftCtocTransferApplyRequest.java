@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.nft.ctoc.transfer.apply request
  * 
  * @author auto create
- * @since 1.0, 2025-03-31 11:42:29
+ * @since 1.0, 2025-04-17 17:42:27
  */
 public class AnttechNftCtocTransferApplyRequest implements AlipayRequest<AnttechNftCtocTransferApplyResponse> {
 

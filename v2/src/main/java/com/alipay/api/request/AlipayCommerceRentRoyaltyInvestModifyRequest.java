@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.rent.royalty.invest.modify request
  * 
  * @author auto create
- * @since 1.0, 2025-03-20 19:49:27
+ * @since 1.0, 2025-04-18 17:47:28
  */
 public class AlipayCommerceRentRoyaltyInvestModifyRequest implements AlipayRequest<AlipayCommerceRentRoyaltyInvestModifyResponse> {
 

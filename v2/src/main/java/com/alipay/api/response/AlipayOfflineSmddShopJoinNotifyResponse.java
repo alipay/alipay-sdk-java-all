@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.smdd.shop.join.notify response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-08 16:27:27
+ * @since 1.0, 2025-04-12 16:02:27
  */
 public class AlipayOfflineSmddShopJoinNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5695316474833313269L;
+	private static final long serialVersionUID = 2644191957491543863L;
 
 	/** 
 	 * 店铺id，进件通过后返回

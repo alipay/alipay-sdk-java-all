@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行情nimitz查询服务
  *
  * @author auto create
- * @since 1.0, 2024-07-23 16:25:16
+ * @since 1.0, 2025-04-10 16:38:57
  */
 public class AlipayFinanceQuotationQuotetradeNimitzdataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1668485297849987589L;
+	private static final long serialVersionUID = 8739657921819842617L;
 
 	/**
 	 * 行情数据集请求

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 纷享销客创建海图商机
  *
  * @author auto create
- * @since 1.0, 2025-03-11 17:29:54
+ * @since 1.0, 2025-04-18 11:17:11
  */
 public class AnttechOceanbaseObglobalFxiaokeleadsCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8824599586467421426L;
+	private static final long serialVersionUID = 7826296145291154736L;
 
 	/**
 	 * 提供给纷享销客创建商机接口的入参

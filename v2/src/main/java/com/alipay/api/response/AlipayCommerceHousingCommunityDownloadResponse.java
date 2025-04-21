@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.housing.community.download response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-04 13:52:24
+ * @since 1.0, 2025-04-14 11:17:29
  */
 public class AlipayCommerceHousingCommunityDownloadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6326862152744437285L;
+	private static final long serialVersionUID = 5396194269544876849L;
 
 	/** 
 	 * 下载链接

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租房查询
  *
  * @author auto create
- * @since 1.0, 2025-03-04 13:47:26
+ * @since 1.0, 2025-04-14 11:17:28
  */
 public class AlipayCommerceHousingHouseRentalQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3449652484486258597L;
+	private static final long serialVersionUID = 6292853446971488532L;
 
 	/**
 	 * 服务商房源编码(和房源id二选一进行必传)

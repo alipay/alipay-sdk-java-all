@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 微信进件通知
  *
  * @author auto create
- * @since 1.0, 2025-04-08 16:22:38
+ * @since 1.0, 2025-04-12 16:01:16
  */
 public class AlipayOfflineSmddShopJoinNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8847761717853779149L;
+	private static final long serialVersionUID = 5266147422859338417L;
 
 	/**
 	 * 审核备注
@@ -20,7 +20,7 @@ public class AlipayOfflineSmddShopJoinNotifyModel extends AlipayObject {
 	private String auditMemo;
 
 	/**
-	 * 待提交/审核中/审核通过/审核拒绝
+	 * 待提交/审核中/审核通过/审核拒绝/待处理
 	 */
 	@ApiField("audit_status")
 	private String auditStatus;

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.nordermaterials.materials.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-13 11:32:32
+ * @since 1.0, 2025-04-18 15:31:46
  */
 public class AlipayOpenSpNordermaterialsMaterialsBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8442288828357585137L;
+	private static final long serialVersionUID = 4635146518633585952L;
 
 	/** 
 	 * 数据列表

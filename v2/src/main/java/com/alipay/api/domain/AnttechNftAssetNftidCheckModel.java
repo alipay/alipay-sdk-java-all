@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据nftId确认用户是否拥有藏品
  *
  * @author auto create
- * @since 1.0, 2025-03-31 10:21:27
+ * @since 1.0, 2025-04-17 17:38:40
  */
 public class AnttechNftAssetNftidCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2749255999182479868L;
+	private static final long serialVersionUID = 6367461122797688493L;
 
 	/**
 	 * 用户账号

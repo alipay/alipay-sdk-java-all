@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业凭证核销
  *
  * @author auto create
- * @since 1.0, 2023-12-26 16:12:58
+ * @since 1.0, 2025-04-14 11:22:45
  */
 public class AlipayCommerceTransportTourVoucherVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5654998433529418379L;
+	private static final long serialVersionUID = 3261325969719519179L;
 
 	/**
 	 * 核销凭证的门店ID

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 产品信息
  *
  * @author auto create
- * @since 1.0, 2025-04-08 18:12:28
+ * @since 1.0, 2025-04-14 20:47:26
  */
 public class RecycleQcReportProductInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5669926182334785618L;
+	private static final long serialVersionUID = 6652711417736254522L;
 
 	/**
 	 * 用户下单前的预估价格，单位为元，最多两位小数

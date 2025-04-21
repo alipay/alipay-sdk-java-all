@@ -11,17 +11,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 花名册信息导入
  *
  * @author auto create
- * @since 1.0, 2024-12-06 16:01:55
+ * @since 1.0, 2025-04-21 20:08:53
  */
 public class AlipayCommerceEducateRosterInfoSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5596697716896125791L;
+	private static final long serialVersionUID = 8866217115724577585L;
 
 	/**
 	 * 证件号
 	 */
 	@ApiField("cert_no")
 	private String certNo;
+
+	/**
+	 * 证件号尾号
+	 */
+	@ApiField("cert_no_tail")
+	private String certNoTail;
 
 	/**
 	 * 证件类型
@@ -35,6 +41,12 @@ public class AlipayCommerceEducateRosterInfoSaveModel extends AlipayObject {
 	@ApiListField("department_info")
 	@ApiField("edu_department_node")
 	private List<EduDepartmentNode> departmentInfo;
+
+	/**
+	 * 邮箱
+	 */
+	@ApiField("email")
+	private String email;
 
 	/**
 	 * 学号或工号
@@ -79,10 +91,24 @@ public class AlipayCommerceEducateRosterInfoSaveModel extends AlipayObject {
 	private String name;
 
 	/**
+	 * 组织节点ID列表
+	 */
+	@ApiListField("node_id_list")
+	@ApiField("string")
+	private List<String> nodeIdList;
+
+	/**
 	 * 角色名称，不传则使用默认值
 	 */
 	@ApiField("role_name")
 	private String roleName;
+
+	/**
+	 * 角色名称列表
+	 */
+	@ApiListField("role_name_list")
+	@ApiField("string")
+	private List<String> roleNameList;
 
 	/**
 	 * 角色类型
@@ -97,6 +123,13 @@ public class AlipayCommerceEducateRosterInfoSaveModel extends AlipayObject {
 		this.certNo = certNo;
 	}
 
+	public String getCertNoTail() {
+		return this.certNoTail;
+	}
+	public void setCertNoTail(String certNoTail) {
+		this.certNoTail = certNoTail;
+	}
+
 	public String getCertType() {
 		return this.certType;
 	}
@@ -109,6 +142,13 @@ public class AlipayCommerceEducateRosterInfoSaveModel extends AlipayObject {
 	}
 	public void setDepartmentInfo(List<EduDepartmentNode> departmentInfo) {
 		this.departmentInfo = departmentInfo;
+	}
+
+	public String getEmail() {
+		return this.email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public String getEmployeeNo() {
@@ -160,11 +200,25 @@ public class AlipayCommerceEducateRosterInfoSaveModel extends AlipayObject {
 		this.name = name;
 	}
 
+	public List<String> getNodeIdList() {
+		return this.nodeIdList;
+	}
+	public void setNodeIdList(List<String> nodeIdList) {
+		this.nodeIdList = nodeIdList;
+	}
+
 	public String getRoleName() {
 		return this.roleName;
 	}
 	public void setRoleName(String roleName) {
 		this.roleName = roleName;
+	}
+
+	public List<String> getRoleNameList() {
+		return this.roleNameList;
+	}
+	public void setRoleNameList(List<String> roleNameList) {
+		this.roleNameList = roleNameList;
 	}
 
 	public String getRoleType() {

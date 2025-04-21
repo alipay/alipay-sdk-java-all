@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 二手房新增
  *
  * @author auto create
- * @since 1.0, 2025-04-08 16:55:56
+ * @since 1.0, 2025-04-14 11:12:26
  */
 public class AlipayCommerceHousingHouseSaleAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8298345983958776126L;
+	private static final long serialVersionUID = 3865622722468959248L;
 
 	/**
 	 * 卫生间数量，单位：个
@@ -89,9 +89,10 @@ public class AlipayCommerceHousingHouseSaleAddModel extends AlipayObject {
 	private String elevator;
 
 	/**
-	 * 梯户比，例：一梯两户
+	 * （该字段废弃） 当前字段已废弃(枚举值过多，另加字段采用数字传输)
 	 */
 	@ApiField("elevator_to_unit_ratio")
+	@Deprecated
 	private String elevatorToUnitRatio;
 
 	/**

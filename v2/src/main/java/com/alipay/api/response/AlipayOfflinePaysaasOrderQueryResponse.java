@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.paysaas.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-26 19:37:25
+ * @since 1.0, 2025-04-14 16:52:26
  */
 public class AlipayOfflinePaysaasOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2554321299827877241L;
+	private static final long serialVersionUID = 2483277575436552972L;
 
 	/** 
 	 * 推单业务的唯一单号
@@ -32,6 +32,12 @@ public class AlipayOfflinePaysaasOrderQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("pay_time")
 	private Date payTime;
+
+	/** 
+	 * 支付时isv返回的内部订单号，当订单状态为：PAID、REFUND_CLOSED可以返回该值
+	 */
+	@ApiField("third_order_no")
+	private String thirdOrderNo;
 
 	public void setIsvOrderNo(String isvOrderNo) {
 		this.isvOrderNo = isvOrderNo;
@@ -52,6 +58,13 @@ public class AlipayOfflinePaysaasOrderQueryResponse extends AlipayResponse {
 	}
 	public Date getPayTime( ) {
 		return this.payTime;
+	}
+
+	public void setThirdOrderNo(String thirdOrderNo) {
+		this.thirdOrderNo = thirdOrderNo;
+	}
+	public String getThirdOrderNo( ) {
+		return this.thirdOrderNo;
 	}
 
 }

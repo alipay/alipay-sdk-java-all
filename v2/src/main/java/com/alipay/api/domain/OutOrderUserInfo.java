@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 正向创单用户信息
  *
  * @author auto create
- * @since 1.0, 2024-01-25 10:11:53
+ * @since 1.0, 2025-04-15 11:31:51
  */
 public class OutOrderUserInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1881398897143482344L;
+	private static final long serialVersionUID = 3339832789383351195L;
 
 	/**
 	 * 用户姓名
@@ -25,6 +25,14 @@ public class OutOrderUserInfo extends AlipayObject {
 	@ApiField("user_phone")
 	private String userPhone;
 
+	/**
+	 * 用户手机类型
+PRIVACY---隐私号
+ENCRYPT---加密号
+	 */
+	@ApiField("user_phone_type")
+	private String userPhoneType;
+
 	public String getUserName() {
 		return this.userName;
 	}
@@ -37,6 +45,13 @@ public class OutOrderUserInfo extends AlipayObject {
 	}
 	public void setUserPhone(String userPhone) {
 		this.userPhone = userPhone;
+	}
+
+	public String getUserPhoneType() {
+		return this.userPhoneType;
+	}
+	public void setUserPhoneType(String userPhoneType) {
+		this.userPhoneType = userPhoneType;
 	}
 
 }

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 推送淘宝营销人群
  *
  * @author auto create
- * @since 1.0, 2025-03-31 11:32:00
+ * @since 1.0, 2025-04-10 15:22:59
  */
 public class AlipayTradeCrowdConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1647354393416379955L;
+	private static final long serialVersionUID = 8853832529256448292L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识

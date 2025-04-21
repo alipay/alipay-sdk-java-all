@@ -9,6 +9,7 @@ import com.alipay.api.domain.BookingInfoDTO;
 import com.alipay.api.domain.ContactInfoVO;
 import com.alipay.api.domain.DeliveryDetailInfoVO;
 import com.alipay.api.domain.LandingChannelInfoVO;
+import com.alipay.api.domain.OrderCancelInfo;
 import com.alipay.api.domain.OrderDetailInfoVO;
 import com.alipay.api.domain.RefundInfoVO;
 import com.alipay.api.domain.RentInfoVO;
@@ -22,11 +23,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-01 10:12:29
+ * @since 1.0, 2025-04-21 09:47:26
  */
 public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7579728953234552898L;
+	private static final long serialVersionUID = 5688881757975294816L;
 
 	/** 
 	 * 订单受理信息，租赁类型订单且通过快捷下单场景特有
@@ -87,6 +88,12 @@ public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/** 
+	 * 订单取消信息
+	 */
+	@ApiField("order_cancel_info")
+	private OrderCancelInfo orderCancelInfo;
 
 	/** 
 	 * 订单详细数据
@@ -241,6 +248,13 @@ public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 	}
 	public String getOpenId( ) {
 		return this.openId;
+	}
+
+	public void setOrderCancelInfo(OrderCancelInfo orderCancelInfo) {
+		this.orderCancelInfo = orderCancelInfo;
+	}
+	public OrderCancelInfo getOrderCancelInfo( ) {
+		return this.orderCancelInfo;
 	}
 
 	public void setOrderDetail(OrderDetailInfoVO orderDetail) {

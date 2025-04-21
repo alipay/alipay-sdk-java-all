@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 零花钱授权查询
  *
  * @author auto create
- * @since 1.0, 2025-02-25 11:31:00
+ * @since 1.0, 2025-04-09 21:32:51
  */
 public class AlipayPayAppPocketmoneyAuthQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5875434596916171135L;
+	private static final long serialVersionUID = 2247415813513524358L;
 
 	/**
 	 * 设备ID
@@ -24,6 +24,12 @@ public class AlipayPayAppPocketmoneyAuthQueryModel extends AlipayObject {
 	 */
 	@ApiField("extra_device_id")
 	private String extraDeviceId;
+
+	/**
+	 * 厂商名称
+	 */
+	@ApiField("solution_vendor")
+	private String solutionVendor;
 
 	/**
 	 * 厂商家长ID
@@ -43,6 +49,13 @@ public class AlipayPayAppPocketmoneyAuthQueryModel extends AlipayObject {
 	}
 	public void setExtraDeviceId(String extraDeviceId) {
 		this.extraDeviceId = extraDeviceId;
+	}
+
+	public String getSolutionVendor() {
+		return this.solutionVendor;
+	}
+	public void setSolutionVendor(String solutionVendor) {
+		this.solutionVendor = solutionVendor;
 	}
 
 	public String getVendorParentId() {

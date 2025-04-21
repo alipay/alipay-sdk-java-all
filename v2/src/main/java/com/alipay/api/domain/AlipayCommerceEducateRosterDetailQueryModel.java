@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花名册详情查询
  *
  * @author auto create
- * @since 1.0, 2024-11-04 15:02:56
+ * @since 1.0, 2025-04-17 20:04:19
  */
 public class AlipayCommerceEducateRosterDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3487196563538681164L;
+	private static final long serialVersionUID = 3121647444325872866L;
 
 	/**
 	 * 机构ID

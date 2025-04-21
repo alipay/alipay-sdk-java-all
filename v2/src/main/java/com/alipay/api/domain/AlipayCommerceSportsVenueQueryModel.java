@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场馆信息查询
  *
  * @author auto create
- * @since 1.0, 2021-11-16 20:16:05
+ * @since 1.0, 2025-04-14 11:50:53
  */
 public class AlipayCommerceSportsVenueQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7482942694431972662L;
+	private static final long serialVersionUID = 3652778684728995433L;
 
 	/**
 	 * 服务商场馆ID

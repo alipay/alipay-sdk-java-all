@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.housing.apartment.modify request
  * 
  * @author auto create
- * @since 1.0, 2025-03-13 14:37:25
+ * @since 1.0, 2025-04-14 11:17:29
  */
 public class AlipayCommerceHousingApartmentModifyRequest implements AlipayRequest<AlipayCommerceHousingApartmentModifyResponse> {
 

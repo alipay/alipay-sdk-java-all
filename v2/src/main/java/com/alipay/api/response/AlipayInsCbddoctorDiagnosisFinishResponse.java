@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.cbddoctor.diagnosis.finish response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-02 13:50:45
+ * @since 1.0, 2025-04-16 15:06:28
  */
 public class AlipayInsCbddoctorDiagnosisFinishResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8545875267316293313L;
+	private static final long serialVersionUID = 1472247823844714699L;
 
 	
 

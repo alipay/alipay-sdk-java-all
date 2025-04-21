@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.nft.asset.batch.destroy request
  * 
  * @author auto create
- * @since 1.0, 2025-03-31 10:20:07
+ * @since 1.0, 2025-04-17 17:38:22
  */
 public class AnttechNftAssetBatchDestroyRequest implements AlipayRequest<AnttechNftAssetBatchDestroyResponse> {
 

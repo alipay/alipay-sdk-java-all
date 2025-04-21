@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 设备绑定需要的额外信息
  *
  * @author auto create
- * @since 1.0, 2025-04-01 20:56:19
+ * @since 1.0, 2025-04-10 19:51:19
  */
 public class DeviceExtAttribute extends AlipayObject {
 
-	private static final long serialVersionUID = 5628539823958541994L;
+	private static final long serialVersionUID = 1447469691295833218L;
 
 	/**
 	 * 商家编号，由服务商定义，需要保证在服务商下唯一
@@ -24,6 +24,12 @@ public class DeviceExtAttribute extends AlipayObject {
 	 */
 	@ApiField("external_shop_id")
 	private String externalShopId;
+
+	/**
+	 * 小写字母串_服务商PID
+	 */
+	@ApiField("isv_device_version_tag")
+	private String isvDeviceVersionTag;
 
 	/**
 	 * 卖进订单id，先卖进后绑定模式下必传。
@@ -85,6 +91,13 @@ public class DeviceExtAttribute extends AlipayObject {
 	}
 	public void setExternalShopId(String externalShopId) {
 		this.externalShopId = externalShopId;
+	}
+
+	public String getIsvDeviceVersionTag() {
+		return this.isvDeviceVersionTag;
+	}
+	public void setIsvDeviceVersionTag(String isvDeviceVersionTag) {
+		this.isvDeviceVersionTag = isvDeviceVersionTag;
 	}
 
 	public String getSalesEntryOrderId() {

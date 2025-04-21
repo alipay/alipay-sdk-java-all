@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 买家身份证地址
  *
  * @author auto create
- * @since 1.0, 2025-04-01 19:52:25
+ * @since 1.0, 2025-04-18 20:07:27
  */
 public class RentAddress extends AlipayObject {
 
-	private static final long serialVersionUID = 3859899458985872643L;
+	private static final long serialVersionUID = 4739517564334137948L;
 
 	/**
 	 * 所在的城市编码，取值：参考最新的国标编码

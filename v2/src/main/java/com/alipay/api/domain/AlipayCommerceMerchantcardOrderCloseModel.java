@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订购单关闭
  *
  * @author auto create
- * @since 1.0, 2025-01-16 10:38:39
+ * @since 1.0, 2025-04-09 11:04:54
  */
 public class AlipayCommerceMerchantcardOrderCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3168886767275994727L;
+	private static final long serialVersionUID = 1819113231643318783L;
 
 	/**
 	 * 售卖订单ID

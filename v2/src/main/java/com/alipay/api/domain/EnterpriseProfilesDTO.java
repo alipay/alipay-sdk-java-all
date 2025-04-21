@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业个性化信息
  *
  * @author auto create
- * @since 1.0, 2024-08-05 10:30:17
+ * @since 1.0, 2025-04-21 13:10:57
  */
 public class EnterpriseProfilesDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4522615452499873731L;
+	private static final long serialVersionUID = 8731192822178416649L;
 
 	/**
 	 * 是否需要自动创建企业人脸库，适用于对接团餐刷脸付、门禁刷脸通行等场景；<br/>
@@ -39,6 +39,12 @@ public class EnterpriseProfilesDTO extends AlipayObject {
 	@ApiField("group_app_id")
 	private String groupAppId;
 
+	/**
+	 * 接口返回的PC端企业注册链接，需适用的集成模式；<br/>不传默认为网页跳转的模式，需要跳转页面链接进入企业注册页面；如需以页面组件嵌入其他系统，请传入iframe
+	 */
+	@ApiField("pc_invite_url_mode")
+	private String pcInviteUrlMode;
+
 	public Boolean getCreateIotGroup() {
 		return this.createIotGroup;
 	}
@@ -65,6 +71,13 @@ public class EnterpriseProfilesDTO extends AlipayObject {
 	}
 	public void setGroupAppId(String groupAppId) {
 		this.groupAppId = groupAppId;
+	}
+
+	public String getPcInviteUrlMode() {
+		return this.pcInviteUrlMode;
+	}
+	public void setPcInviteUrlMode(String pcInviteUrlMode) {
+		this.pcInviteUrlMode = pcInviteUrlMode;
 	}
 
 }

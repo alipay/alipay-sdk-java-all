@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.mall.walletrule.set request
  * 
  * @author auto create
- * @since 1.0, 2024-11-18 19:02:57
+ * @since 1.0, 2025-04-18 19:22:28
  */
 public class AlipayCommerceMallWalletruleSetRequest implements AlipayRequest<AlipayCommerceMallWalletruleSetResponse> {
 

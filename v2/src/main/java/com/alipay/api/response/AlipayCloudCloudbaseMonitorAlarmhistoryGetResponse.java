@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudCloudbaseMonitorAlarmhistoryGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8194526851277684867L;
+	private static final long serialVersionUID = 3153853394859521621L;
 
 	/** 
 	 * 报警级别

@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 静态站点缓存刷新
  *
  * @author auto create
- * @since 1.0, 2025-04-01 10:47:34
+ * @since 1.0, 2025-04-17 19:37:54
  */
 public class AlipayCloudCloudrunStaticsiteCacheruleRefreshModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7839491291142719689L;
+	private static final long serialVersionUID = 2725354939749777446L;
+
+	/**
+	 * 内部使用，uiam角色扮演token
+	 */
+	@ApiField("assume_token")
+	private String assumeToken;
 
 	/**
 	 * 文件/目录路径
@@ -36,6 +42,13 @@ public class AlipayCloudCloudrunStaticsiteCacheruleRefreshModel extends AlipayOb
 	 */
 	@ApiField("type")
 	private String type;
+
+	public String getAssumeToken() {
+		return this.assumeToken;
+	}
+	public void setAssumeToken(String assumeToken) {
+		this.assumeToken = assumeToken;
+	}
 
 	public String getData() {
 		return this.data;

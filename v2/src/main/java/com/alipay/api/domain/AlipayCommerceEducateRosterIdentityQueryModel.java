@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花名册人员详情查询
  *
  * @author auto create
- * @since 1.0, 2024-11-05 17:12:19
+ * @since 1.0, 2025-04-17 20:29:20
  */
 public class AlipayCommerceEducateRosterIdentityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1545117335379136296L;
+	private static final long serialVersionUID = 3463421693983759657L;
 
 	/**
 	 * 机构内标

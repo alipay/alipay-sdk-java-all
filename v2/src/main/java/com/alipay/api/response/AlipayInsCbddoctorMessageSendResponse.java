@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.cbddoctor.message.send response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-02 13:52:27
+ * @since 1.0, 2025-04-16 15:03:55
  */
 public class AlipayInsCbddoctorMessageSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8177116572934417662L;
+	private static final long serialVersionUID = 1276735231358117121L;
 
 	
 

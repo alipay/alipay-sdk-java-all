@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceYuntaskRecruitenrolledinfoBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7655784727545516776L;
+	private static final long serialVersionUID = 3538912725945896925L;
 
 	/**
 	 * 零售商的pid

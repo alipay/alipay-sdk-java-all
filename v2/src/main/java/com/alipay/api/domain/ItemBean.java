@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品对象
  *
  * @author auto create
- * @since 1.0, 2025-04-08 16:22:30
+ * @since 1.0, 2025-04-11 15:38:40
  */
 public class ItemBean extends AlipayObject {
 
-	private static final long serialVersionUID = 8268524288712946243L;
+	private static final long serialVersionUID = 8155661946355473436L;
 
 	/**
 	 * 属性列表
@@ -22,6 +22,12 @@ public class ItemBean extends AlipayObject {
 	@ApiListField("attribute_list")
 	@ApiField("attribute_bean")
 	private List<AttributeBean> attributeList;
+
+	/**
+	 * 商品描述
+	 */
+	@ApiField("description")
+	private String description;
 
 	/**
 	 * 商品图片
@@ -66,6 +72,12 @@ public class ItemBean extends AlipayObject {
 	private OriginSkuBean originSku;
 
 	/**
+	 * 当前库存数量，单位：份/个
+	 */
+	@ApiField("quantity")
+	private Long quantity;
+
+	/**
 	 * true/false -- 当且仅当 true 时才是必选，false 或者字段不存在，都表示非必选商品
 	 */
 	@ApiField("required")
@@ -108,6 +120,13 @@ public class ItemBean extends AlipayObject {
 	}
 	public void setAttributeList(List<AttributeBean> attributeList) {
 		this.attributeList = attributeList;
+	}
+
+	public String getDescription() {
+		return this.description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
 	public String getImageUrl() {
@@ -157,6 +176,13 @@ public class ItemBean extends AlipayObject {
 	}
 	public void setOriginSku(OriginSkuBean originSku) {
 		this.originSku = originSku;
+	}
+
+	public Long getQuantity() {
+		return this.quantity;
+	}
+	public void setQuantity(Long quantity) {
+		this.quantity = quantity;
 	}
 
 	public Boolean getRequired() {

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudrun.staticsite.cacherule.refresh request
  * 
  * @author auto create
- * @since 1.0, 2025-04-01 10:52:31
+ * @since 1.0, 2025-04-17 19:42:26
  */
 public class AlipayCloudCloudrunStaticsiteCacheruleRefreshRequest implements AlipayRequest<AlipayCloudCloudrunStaticsiteCacheruleRefreshResponse> {
 

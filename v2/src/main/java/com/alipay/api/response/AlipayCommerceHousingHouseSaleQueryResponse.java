@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.housing.house.sale.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-04 13:37:24
+ * @since 1.0, 2025-04-14 11:17:27
  */
 public class AlipayCommerceHousingHouseSaleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1374634539314411847L;
+	private static final long serialVersionUID = 6674675465139239438L;
 
 	/** 
 	 * 卫生间数量，单位：个

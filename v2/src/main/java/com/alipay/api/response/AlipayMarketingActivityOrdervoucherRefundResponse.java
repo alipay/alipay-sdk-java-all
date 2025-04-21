@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingActivityOrdervoucherRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7251346247285197777L;
+	private static final long serialVersionUID = 2381525241657553571L;
 
 	/** 
 	 * 优惠券活动id

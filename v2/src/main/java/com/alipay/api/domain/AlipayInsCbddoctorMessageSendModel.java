@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 家医CBD医生消息发送
  *
  * @author auto create
- * @since 1.0, 2025-04-02 13:50:46
+ * @since 1.0, 2025-04-16 15:03:55
  */
 public class AlipayInsCbddoctorMessageSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6374811755781713455L;
+	private static final long serialVersionUID = 1112698224571113173L;
 
 	/**
 	 * 互医生成的msgId。需要唯一，用于防止消息发送重复。

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.loan.sideloansign.agreement.pull request
  * 
  * @author auto create
- * @since 1.0, 2025-03-19 16:59:57
+ * @since 1.0, 2025-04-18 11:02:29
  */
 public class AlipayPcreditLoanSideloansignAgreementPullRequest implements AlipayRequest<AlipayPcreditLoanSideloansignAgreementPullResponse> {
 

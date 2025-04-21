@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单取消信息
  *
  * @author auto create
- * @since 1.0, 2025-03-14 17:37:49
+ * @since 1.0, 2025-04-15 13:41:57
  */
 public class OrderCancelInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7766436473678667258L;
+	private static final long serialVersionUID = 6266783788734877666L;
 
 	/**
 	 * 订单取消操作方
@@ -25,6 +25,12 @@ public class OrderCancelInfo extends AlipayObject {
 	@ApiField("reason")
 	private String reason;
 
+	/**
+	 * 取消原因编码
+	 */
+	@ApiField("reason_code")
+	private String reasonCode;
+
 	public String getOperator() {
 		return this.operator;
 	}
@@ -37,6 +43,13 @@ public class OrderCancelInfo extends AlipayObject {
 	}
 	public void setReason(String reason) {
 		this.reason = reason;
+	}
+
+	public String getReasonCode() {
+		return this.reasonCode;
+	}
+	public void setReasonCode(String reasonCode) {
+		this.reasonCode = reasonCode;
 	}
 
 }

@@ -1,0 +1,107 @@
+package com.alipay.api.domain;
+
+import com.alipay.api.AlipayObject;
+import com.alipay.api.internal.mapping.ApiField;
+
+/**
+ * AMPE情景推荐服务查询
+ *
+ * @author auto create
+ * @since 1.0, 2025-04-17 19:32:28
+ */
+public class AlipayOpenMiniAmpeRecommendQueryModel extends AlipayObject {
+
+	private static final long serialVersionUID = 6287497535946752946L;
+
+	/**
+	 * 业务场景，由支付宝统一分配，用于指定推荐的内容。
+	 */
+	@ApiField("biz_scene")
+	private String bizScene;
+
+	/**
+	 * AMPE设备ID，用于标记唯一的一台设备。
+	 */
+	@ApiField("device_id")
+	private String deviceId;
+
+	/**
+	 * 运行时的设备、卡片信息
+	 */
+	@ApiField("device_info")
+	private AmpeDeviceInfo deviceInfo;
+
+	/**
+	 * 支付宝用户openId
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/**
+	 * AMPE产品ID，在开放平台注册后可获取。
+	 */
+	@ApiField("product_id")
+	private Long productId;
+
+	/**
+	 * 请求流水号。
+	 */
+	@ApiField("req_no")
+	private String reqNo;
+
+	/**
+	 * 支付宝用户userId
+	 */
+	@ApiField("user_id")
+	private String userId;
+
+	public String getBizScene() {
+		return this.bizScene;
+	}
+	public void setBizScene(String bizScene) {
+		this.bizScene = bizScene;
+	}
+
+	public String getDeviceId() {
+		return this.deviceId;
+	}
+	public void setDeviceId(String deviceId) {
+		this.deviceId = deviceId;
+	}
+
+	public AmpeDeviceInfo getDeviceInfo() {
+		return this.deviceInfo;
+	}
+	public void setDeviceInfo(AmpeDeviceInfo deviceInfo) {
+		this.deviceInfo = deviceInfo;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+
+	public Long getProductId() {
+		return this.productId;
+	}
+	public void setProductId(Long productId) {
+		this.productId = productId;
+	}
+
+	public String getReqNo() {
+		return this.reqNo;
+	}
+	public void setReqNo(String reqNo) {
+		this.reqNo = reqNo;
+	}
+
+	public String getUserId() {
+		return this.userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+
+}

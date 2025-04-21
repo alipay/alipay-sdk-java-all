@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 藏品销毁批量解锁接口
  *
  * @author auto create
- * @since 1.0, 2025-03-31 10:19:57
+ * @since 1.0, 2025-04-17 17:37:27
  */
 public class AnttechNftWithdrawBatchUnfreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8379356644943255491L;
+	private static final long serialVersionUID = 3757462533278361852L;
 
 	/**
 	 * 上游幂等单号,由博域提供

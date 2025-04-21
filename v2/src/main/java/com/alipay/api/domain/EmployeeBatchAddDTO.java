@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量添加的单个员工信息
  *
  * @author auto create
- * @since 1.0, 2025-03-27 19:33:20
+ * @since 1.0, 2025-04-09 15:57:21
  */
 public class EmployeeBatchAddDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4422111262552175185L;
+	private static final long serialVersionUID = 6898869297824833442L;
 
 	/**
 	 * 员工所属核算主体，核算主体可用于管控不同员工的出资方式，建议和不同出资账户关联

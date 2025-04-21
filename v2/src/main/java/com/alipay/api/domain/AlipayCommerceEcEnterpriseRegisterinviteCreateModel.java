@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 邀请企业注册
  *
  * @author auto create
- * @since 1.0, 2024-08-05 10:30:17
+ * @since 1.0, 2025-04-21 13:10:57
  */
 public class AlipayCommerceEcEnterpriseRegisterinviteCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4728421998923774695L;
+	private static final long serialVersionUID = 5671293174944689292L;
+
+	/**
+	 * 企业基本信息，仅用于企业注册页面回显信息，用户可编辑修改，请按需使用
+	 */
+	@ApiField("base_info")
+	private EnterpriseBaseInfoDTO baseInfo;
 
 	/**
 	 * 企业管理员身份唯一标识，搭配 identity_type 传参：<br/>
@@ -48,7 +54,7 @@ public class AlipayCommerceEcEnterpriseRegisterinviteCreateModel extends AlipayO
 	private String outBizNo;
 
 	/**
-	 * 企业个性化信息，适用于特殊场景，可按需使用
+	 * 企业个性化信息，适用于特殊场景，请按需使用
 	 */
 	@ApiField("profiles")
 	private EnterpriseProfilesDTO profiles;
@@ -66,6 +72,13 @@ public class AlipayCommerceEcEnterpriseRegisterinviteCreateModel extends AlipayO
 	 */
 	@ApiField("sign_fund_way")
 	private String signFundWay;
+
+	public EnterpriseBaseInfoDTO getBaseInfo() {
+		return this.baseInfo;
+	}
+	public void setBaseInfo(EnterpriseBaseInfoDTO baseInfo) {
+		this.baseInfo = baseInfo;
+	}
 
 	public String getIdentity() {
 		return this.identity;

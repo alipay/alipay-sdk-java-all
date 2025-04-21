@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 履约状态变更接口
  *
  * @author auto create
- * @since 1.0, 2025-03-20 22:45:16
+ * @since 1.0, 2025-04-15 19:42:53
  */
 public class AlipayOpenMiniOrderDeliveryModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6431776178465223914L;
+	private static final long serialVersionUID = 6494368868899645175L;
 
 	/**
 	 * 需要修改的活动信息列表
@@ -108,6 +108,12 @@ public class AlipayOpenMiniOrderDeliveryModifyModel extends AlipayObject {
 	 */
 	@ApiField("tour_info")
 	private TourInfoDTO tourInfo;
+
+	/**
+	 * 用户确认金额，单位：元
+	 */
+	@ApiField("user_confirm_price")
+	private String userConfirmPrice;
 
 	/**
 	 * 买家支付宝用户id，小程序场景下获取用户ID请参考：<a href="https://opendocs.alipay.com/mini/05dxgc?pathHash=1a3ecb13">用户授权</a>; 其它场景下获取用户ID请参考：<a href="https://opendocs.alipay.com/open/284/web">网页授权获取用户信息</a>。
@@ -218,6 +224,13 @@ public class AlipayOpenMiniOrderDeliveryModifyModel extends AlipayObject {
 	}
 	public void setTourInfo(TourInfoDTO tourInfo) {
 		this.tourInfo = tourInfo;
+	}
+
+	public String getUserConfirmPrice() {
+		return this.userConfirmPrice;
+	}
+	public void setUserConfirmPrice(String userConfirmPrice) {
+		this.userConfirmPrice = userConfirmPrice;
 	}
 
 	public String getUserId() {

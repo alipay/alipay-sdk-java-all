@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用户权益查询
  *
  * @author auto create
- * @since 1.0, 2023-03-29 14:58:09
+ * @since 1.0, 2025-04-14 11:17:05
  */
 public class AlipayCommerceTransportVirtualcardRightsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8379469549534927817L;
+	private static final long serialVersionUID = 2744465664168191433L;
 
 	/**
 	 * 卡号

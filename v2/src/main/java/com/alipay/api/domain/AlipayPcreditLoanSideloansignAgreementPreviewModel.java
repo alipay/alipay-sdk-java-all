@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 随身贷授信协议预览
  *
  * @author auto create
- * @since 1.0, 2025-03-19 16:59:24
+ * @since 1.0, 2025-04-17 23:56:21
  */
 public class AlipayPcreditLoanSideloansignAgreementPreviewModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8568156535819122762L;
+	private static final long serialVersionUID = 1282764487395364445L;
 
 	/**
 	 * 指定agreementList以动态渲染和预览对应的协议合同内容

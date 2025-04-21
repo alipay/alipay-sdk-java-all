@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 直付通二级商户创建
  *
  * @author auto create
- * @since 1.0, 2024-10-24 14:40:02
+ * @since 1.0, 2025-04-21 13:22:57
  */
 public class AntMerchantExpandIndirectZftCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3591184285774752657L;
+	private static final long serialVersionUID = 8343688612769954141L;
 
 	/**
 	 * 商户别名。支付宝账单中的商户名称会展示此处设置的别名，如果涉及支付宝APP内的支付，支付结果页也会展示该别名。如果涉及当面付场景，请填写线下店铺名称
@@ -134,7 +134,7 @@ public class AntMerchantExpandIndirectZftCreateModel extends AlipayObject {
 	private String legalCertFrontImage;
 
 	/**
-	 * 法人身份证号。非个人商户类型必填
+	 * 法人身份证号。
 	 */
 	@ApiField("legal_cert_no")
 	private String legalCertNo;
@@ -146,7 +146,7 @@ public class AntMerchantExpandIndirectZftCreateModel extends AlipayObject {
 	private String legalCertType;
 
 	/**
-	 * 法人名称。非个人商户类型必填
+	 * 法人名称。
 	 */
 	@ApiField("legal_name")
 	private String legalName;

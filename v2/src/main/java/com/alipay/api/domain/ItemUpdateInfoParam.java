@@ -10,11 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量更新商品接口, 商品信息
  *
  * @author auto create
- * @since 1.0, 2025-02-13 23:23:32
+ * @since 1.0, 2025-04-21 11:43:04
  */
 public class ItemUpdateInfoParam extends AlipayObject {
 
-	private static final long serialVersionUID = 6458773366733225742L;
+	private static final long serialVersionUID = 7423546938989149776L;
+
+	/**
+	 * 病种编码, 厂商自行维护
+	 */
+	@ApiField("disease_code")
+	private String diseaseCode;
+
+	/**
+	 * 病种名称
+	 */
+	@ApiField("disease_name")
+	private String diseaseName;
 
 	/**
 	 * 是否医保商品
@@ -42,9 +54,10 @@ public class ItemUpdateInfoParam extends AlipayObject {
 	private List<SkuUpdateInfoParam> skuList;
 
 	/**
-	 * 商品上下架状态
+	 * 商品上下架状态 当前字段已废弃(如需操作上下架请使用上下架接口)
 	 */
 	@ApiField("status")
+	@Deprecated
 	private String status;
 
 	/**
@@ -52,6 +65,20 @@ public class ItemUpdateInfoParam extends AlipayObject {
 	 */
 	@ApiField("tag_code")
 	private String tagCode;
+
+	public String getDiseaseCode() {
+		return this.diseaseCode;
+	}
+	public void setDiseaseCode(String diseaseCode) {
+		this.diseaseCode = diseaseCode;
+	}
+
+	public String getDiseaseName() {
+		return this.diseaseName;
+	}
+	public void setDiseaseName(String diseaseName) {
+		this.diseaseName = diseaseName;
+	}
 
 	public String getInsurance() {
 		return this.insurance;

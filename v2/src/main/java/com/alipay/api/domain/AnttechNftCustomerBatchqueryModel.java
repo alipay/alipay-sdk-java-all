@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据租户ID维度藏品查询接口
  *
  * @author auto create
- * @since 1.0, 2025-03-12 11:01:25
+ * @since 1.0, 2025-04-17 17:41:39
  */
 public class AnttechNftCustomerBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3318455755799533433L;
+	private static final long serialVersionUID = 7853395673624796439L;
 
 	/**
 	 * 用户标识

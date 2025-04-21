@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 群信息。包含群id、群名称、群介绍、欢迎语等群配置信息。
  *
  * @author auto create
- * @since 1.0, 2024-09-05 17:19:58
+ * @since 1.0, 2025-04-15 16:33:59
  */
 public class GroupInstanceInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1529899229438434518L;
+	private static final long serialVersionUID = 3418929995449553254L;
 
 	/**
 	 * 请一定打开，开启后获得满500人自动裂变新群聊功能。true：开启；false：关闭。
@@ -28,6 +28,12 @@ public class GroupInstanceInfoVO extends AlipayObject {
 	 */
 	@ApiField("forbid_admin_chat")
 	private Boolean forbidAdminChat;
+
+	/**
+	 * 禁止用户同时加入该群组下多个群聊, true表示禁止
+	 */
+	@ApiField("forbid_join_multiple_group_chat")
+	private Boolean forbidJoinMultipleGroupChat;
 
 	/**
 	 * 允许群员发起私聊：建议关闭；关闭后群员将不能主动添加群主或其它群内用户好友。true：关闭；false：开启。
@@ -121,6 +127,13 @@ public class GroupInstanceInfoVO extends AlipayObject {
 	}
 	public void setForbidAdminChat(Boolean forbidAdminChat) {
 		this.forbidAdminChat = forbidAdminChat;
+	}
+
+	public Boolean getForbidJoinMultipleGroupChat() {
+		return this.forbidJoinMultipleGroupChat;
+	}
+	public void setForbidJoinMultipleGroupChat(Boolean forbidJoinMultipleGroupChat) {
+		this.forbidJoinMultipleGroupChat = forbidJoinMultipleGroupChat;
 	}
 
 	public Boolean getForbidMemberChat() {

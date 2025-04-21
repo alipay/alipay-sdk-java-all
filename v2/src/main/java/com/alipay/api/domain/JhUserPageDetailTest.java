@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 测试用
  *
  * @author auto create
- * @since 1.0, 2025-04-01 16:27:29
+ * @since 1.0, 2025-04-10 11:19:05
  */
 public class JhUserPageDetailTest extends AlipayObject {
 
-	private static final long serialVersionUID = 8695362397415286966L;
+	private static final long serialVersionUID = 5854367845117328591L;
 
 	/**
 	 * 支付宝用户的userId。

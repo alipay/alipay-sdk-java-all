@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.cbddoctor.status.sync request
  * 
  * @author auto create
- * @since 1.0, 2025-04-02 13:52:28
+ * @since 1.0, 2025-04-16 15:03:11
  */
 public class AlipayInsCbddoctorStatusSyncRequest implements AlipayRequest<AlipayInsCbddoctorStatusSyncResponse> {
 

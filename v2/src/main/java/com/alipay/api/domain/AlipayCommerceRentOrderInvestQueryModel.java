@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 面向资方的订单查询服务
  *
  * @author auto create
- * @since 1.0, 2025-03-18 16:05:55
+ * @since 1.0, 2025-04-18 20:00:31
  */
 public class AlipayCommerceRentOrderInvestQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6771115526699588356L;
+	private static final long serialVersionUID = 6378599225549118463L;
 
 	/**
 	 * 2088开头的16位纯数字，小程序场景下获取用户ID请参考：用户授权;

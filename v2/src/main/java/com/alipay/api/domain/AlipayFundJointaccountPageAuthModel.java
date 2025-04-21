@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 共享资金-页面预授权
  *
  * @author auto create
- * @since 1.0, 2022-07-21 12:14:24
+ * @since 1.0, 2025-04-21 14:57:57
  */
 public class AlipayFundJointaccountPageAuthModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1377423181632129528L;
+	private static final long serialVersionUID = 4192262569754823934L;
 
 	/**
 	 * 账户ID<br>
@@ -59,12 +59,31 @@ public class AlipayFundJointaccountPageAuthModel extends AlipayObject {
 	private String identityType;
 
 	/**
+	 * 被邀请账号支付宝侧唯一标识
+	 */
+	@ApiField("invitee_id")
+	private String inviteeId;
+
+	/**
+	 * 用于标记支付宝用户在应用下的唯一标识
+	 */
+	@ApiField("invitee_open_id")
+	private String inviteeOpenId;
+
+	/**
+	 * 用于标记支付宝用户在应用下的唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/**
 	 * 预授权页面类型</br>
 - CLOSE_ACCOUNT：注销账户 </br>
  - BILL_LIST：查看账单列表</br>
  - FUND_PLAN_RESTART：重启自动攒计划</br>
  - MAKE_PROFIT ：开启生息</br>
- - UNFREEZE ：解锁
+ - UNFREEZE ：解锁</br>
+ - DEVICE_MANAGE ：设备管理
 	 */
 	@ApiField("page")
 	private String page;
@@ -74,6 +93,12 @@ public class AlipayFundJointaccountPageAuthModel extends AlipayObject {
 	 */
 	@ApiField("product_code")
 	private String productCode;
+
+	/**
+	 * 关系id，唯一代表设备和小荷包关系
+	 */
+	@ApiField("relation_id")
+	private String relationId;
 
 	public String getAccountId() {
 		return this.accountId;
@@ -117,6 +142,27 @@ public class AlipayFundJointaccountPageAuthModel extends AlipayObject {
 		this.identityType = identityType;
 	}
 
+	public String getInviteeId() {
+		return this.inviteeId;
+	}
+	public void setInviteeId(String inviteeId) {
+		this.inviteeId = inviteeId;
+	}
+
+	public String getInviteeOpenId() {
+		return this.inviteeOpenId;
+	}
+	public void setInviteeOpenId(String inviteeOpenId) {
+		this.inviteeOpenId = inviteeOpenId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+
 	public String getPage() {
 		return this.page;
 	}
@@ -129,6 +175,13 @@ public class AlipayFundJointaccountPageAuthModel extends AlipayObject {
 	}
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
+	}
+
+	public String getRelationId() {
+		return this.relationId;
+	}
+	public void setRelationId(String relationId) {
+		this.relationId = relationId;
 	}
 
 }

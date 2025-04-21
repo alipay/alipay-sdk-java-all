@@ -1,5 +1,6 @@
 package com.alipay.api.request;
 
+import com.alipay.api.domain.AlipayDataDataserviceOnlineerrorRainyQueryModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
@@ -11,12 +12,24 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.dataservice.onlineerror.rainy.query request
  * 
  * @author auto create
- * @since 1.0, 2024-11-04 14:22:20
+ * @since 1.0, 2025-04-16 10:12:33
  */
 public class AlipayDataDataserviceOnlineerrorRainyQueryRequest implements AlipayRequest<AlipayDataDataserviceOnlineerrorRainyQueryResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
+
+	/** 
+	* 线上问题回归测试验证02无参数
+	 */
+	private String bizContent;
+
+	public void setBizContent(String bizContent) {
+		this.bizContent = bizContent;
+	}
+	public String getBizContent() {
+		return this.bizContent;
+	}
 	private String terminalType;
 	private String terminalInfo;	
 	private String prodCode;
@@ -79,6 +92,7 @@ public class AlipayDataDataserviceOnlineerrorRainyQueryRequest implements Alipay
 
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
+		txtParams.put("biz_content", this.bizContent);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}

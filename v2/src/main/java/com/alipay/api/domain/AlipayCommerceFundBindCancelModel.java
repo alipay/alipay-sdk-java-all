@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceFundBindCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5351445581427618145L;
+	private static final long serialVersionUID = 2674443844235747557L;
 
 	/**
 	 * 需解绑的协议号

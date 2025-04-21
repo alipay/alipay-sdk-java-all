@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据分类查询商品列表查询
  *
  * @author auto create
- * @since 1.0, 2025-04-08 16:22:30
+ * @since 1.0, 2025-04-11 15:38:40
  */
 public class AlipayOfflineSmddCategoryItemQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7237334598216946616L;
+	private static final long serialVersionUID = 7328451947994647432L;
 
 	/**
 	 * 买家唯一标识

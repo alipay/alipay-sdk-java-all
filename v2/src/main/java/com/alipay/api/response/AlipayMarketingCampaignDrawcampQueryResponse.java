@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.drawcamp.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-09-11 13:34:22
+ * @since 1.0, 2025-04-21 10:28:45
  */
 public class AlipayMarketingCampaignDrawcampQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5379488746451128559L;
+	private static final long serialVersionUID = 6196491965473992617L;
 
 	/** 
 	 * 单用户以支付宝账号维度可参与当前营销活动的总次数，由开发者自定义此数值

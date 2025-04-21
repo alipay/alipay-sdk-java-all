@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 运营商行业信用购预咨询
  *
  * @author auto create
- * @since 1.0, 2025-04-03 16:28:05
+ * @since 1.0, 2025-04-18 16:08:04
  */
 public class AlipayCommerceAcommunicationCreditphoneOrderPreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8465375656474598573L;
+	private static final long serialVersionUID = 7535689937583692295L;
 
 	/**
 	 * 支付宝用户id
@@ -24,6 +24,12 @@ public class AlipayCommerceAcommunicationCreditphoneOrderPreconsultModel extends
 	 */
 	@ApiField("alipay_user_id")
 	private String alipayUserId;
+
+	/**
+	 * 用户身份证号
+	 */
+	@ApiField("cert_no")
+	private String certNo;
 
 	/**
 	 * 冻结金额，单位元
@@ -48,6 +54,12 @@ public class AlipayCommerceAcommunicationCreditphoneOrderPreconsultModel extends
 	 */
 	@ApiField("merchant_name")
 	private String merchantName;
+
+	/**
+	 * 用户手机号
+	 */
+	@ApiField("mobile")
+	private String mobile;
 
 	/**
 	 * 省份
@@ -81,6 +93,13 @@ public class AlipayCommerceAcommunicationCreditphoneOrderPreconsultModel extends
 		this.alipayUserId = alipayUserId;
 	}
 
+	public String getCertNo() {
+		return this.certNo;
+	}
+	public void setCertNo(String certNo) {
+		this.certNo = certNo;
+	}
+
 	public String getFreezeAmount() {
 		return this.freezeAmount;
 	}
@@ -107,6 +126,13 @@ public class AlipayCommerceAcommunicationCreditphoneOrderPreconsultModel extends
 	}
 	public void setMerchantName(String merchantName) {
 		this.merchantName = merchantName;
+	}
+
+	public String getMobile() {
+		return this.mobile;
+	}
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
 	}
 
 	public String getProvince() {

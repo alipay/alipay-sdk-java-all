@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝行情symbol属性列表查询
  *
  * @author auto create
- * @since 1.0, 2020-12-02 23:08:10
+ * @since 1.0, 2025-04-10 13:42:06
  */
 public class AlipayFinanceQuotationQuotetradeSymbolsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5514939539146412966L;
+	private static final long serialVersionUID = 3626414339984126326L;
 
 	/**
 	 * 股票市场,多个市场按逗号分隔

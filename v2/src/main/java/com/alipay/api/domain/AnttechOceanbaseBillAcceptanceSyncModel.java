@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 计财对外账单受理数据同步
  *
  * @author auto create
- * @since 1.0, 2024-05-07 15:24:07
+ * @since 1.0, 2025-04-21 11:03:24
  */
 public class AnttechOceanbaseBillAcceptanceSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2659951552116115467L;
+	private static final long serialVersionUID = 5836854633775274834L;
 
 	/**
 	 * 计财账单受理请求入参，支持批量list写入，strategyIdentity需要和OB计财系统约定，idempotentKey作为幂等键，保证不会重复，重复幂等会被拒绝，额外的扩展信息properties通过json的方式传入

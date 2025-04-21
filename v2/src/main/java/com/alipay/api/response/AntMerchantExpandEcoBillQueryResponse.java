@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.eco.bill.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-01-07 17:32:22
+ * @since 1.0, 2025-04-08 21:22:26
  */
 public class AntMerchantExpandEcoBillQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3348313916524281844L;
+	private static final long serialVersionUID = 1148768269897378651L;
 
 	/** 
 	 * 出账日期

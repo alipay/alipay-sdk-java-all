@@ -10,11 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量创建商品, 商品信息
  *
  * @author auto create
- * @since 1.0, 2025-02-13 23:23:29
+ * @since 1.0, 2025-04-21 10:42:28
  */
 public class ItemCreateInfoParam extends AlipayObject {
 
-	private static final long serialVersionUID = 3221996396217572388L;
+	private static final long serialVersionUID = 2298156859738619226L;
+
+	/**
+	 * 病种编码, 厂商自行维护
+	 */
+	@ApiField("disease_code")
+	private String diseaseCode;
+
+	/**
+	 * 病种名称
+	 */
+	@ApiField("disease_name")
+	private String diseaseName;
 
 	/**
 	 * 是否为医保商品, 0不是, 1是, 默认1
@@ -42,9 +54,10 @@ public class ItemCreateInfoParam extends AlipayObject {
 	private List<SkuCreateInfoParam> skuList;
 
 	/**
-	 * 商品上下架状态
+	 * 商品上下架状态 当前字段已废弃(创建商品默认下架状态, 如需上架请使用上下架接口)
 	 */
 	@ApiField("status")
+	@Deprecated
 	private String status;
 
 	/**
@@ -58,6 +71,20 @@ public class ItemCreateInfoParam extends AlipayObject {
 	 */
 	@ApiField("tag_code")
 	private String tagCode;
+
+	public String getDiseaseCode() {
+		return this.diseaseCode;
+	}
+	public void setDiseaseCode(String diseaseCode) {
+		this.diseaseCode = diseaseCode;
+	}
+
+	public String getDiseaseName() {
+		return this.diseaseName;
+	}
+	public void setDiseaseName(String diseaseName) {
+		this.diseaseName = diseaseName;
+	}
 
 	public String getInsurance() {
 		return this.insurance;

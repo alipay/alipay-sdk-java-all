@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 公寓分页查询
  *
  * @author auto create
- * @since 1.0, 2025-04-08 17:11:30
+ * @since 1.0, 2025-04-14 11:17:28
  */
 public class AlipayCommerceHousingApartmentBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8821127387654335395L;
+	private static final long serialVersionUID = 8869434423686578722L;
 
 	/**
 	 * 城市code

@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 儿童手表营销活动发奖详情
  *
  * @author auto create
- * @since 1.0, 2024-12-20 16:51:10
+ * @since 1.0, 2025-04-09 21:32:53
  */
 public class WatchPromoPrizeDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7124593668227298617L;
+	private static final long serialVersionUID = 1586926354952363115L;
+
+	/**
+	 * 不同奖品类型返回不能的结果数据，例如10卡路里，兑换10g蚂蚁森林能量
+	 */
+	@ApiField("biz_data")
+	private String bizData;
 
 	/**
 	 * 发奖单号
@@ -42,6 +48,13 @@ public class WatchPromoPrizeDetail extends AlipayObject {
 	 */
 	@ApiField("skin_id")
 	private String skinId;
+
+	public String getBizData() {
+		return this.bizData;
+	}
+	public void setBizData(String bizData) {
+		this.bizData = bizData;
+	}
 
 	public String getBizNo() {
 		return this.bizNo;

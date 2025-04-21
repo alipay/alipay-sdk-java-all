@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户勋章(租户维度)
  *
  * @author auto create
- * @since 1.0, 2025-04-08 11:41:50
+ * @since 1.0, 2025-04-17 17:37:52
  */
 public class AnttechNftPoapTenantQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1424723367897341734L;
+	private static final long serialVersionUID = 8663514623796124968L;
 
 	/**
 	 * 用户ID

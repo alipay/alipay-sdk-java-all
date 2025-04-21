@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.nft.asset.batch.destroy response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-31 10:20:07
+ * @since 1.0, 2025-04-17 17:38:22
  */
 public class AnttechNftAssetBatchDestroyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8183737681332429665L;
+	private static final long serialVersionUID = 1225514977455494115L;
 
 	/** 
 	 * 成功执行回收的nftid列表数据

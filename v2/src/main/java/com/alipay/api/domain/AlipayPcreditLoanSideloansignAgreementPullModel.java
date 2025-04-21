@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 代签协议获取
  *
  * @author auto create
- * @since 1.0, 2025-03-19 16:59:57
+ * @since 1.0, 2025-04-18 10:59:57
  */
 public class AlipayPcreditLoanSideloansignAgreementPullModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1768774841244922391L;
+	private static final long serialVersionUID = 2612417432957683631L;
 
 	/**
 	 * 信贷业务场景类型Code

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * trusple外贸贷外部机构信登
  *
  * @author auto create
- * @since 1.0, 2022-12-23 10:39:05
+ * @since 1.0, 2025-04-21 11:01:33
  */
 public class AnttechBlockchainFinanceTruspleAuthloginSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4166258193586327261L;
+	private static final long serialVersionUID = 8623837113427183162L;
 
 	/**
 	 * 法人身份证号

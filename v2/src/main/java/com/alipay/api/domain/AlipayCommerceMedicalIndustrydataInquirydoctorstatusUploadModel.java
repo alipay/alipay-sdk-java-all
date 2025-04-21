@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceMedicalIndustrydataInquirydoctorstatusUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3345417284379684275L;
+	private static final long serialVersionUID = 2673947551223892232L;
 
 	/**
 	 * 医生问诊状态信息列表

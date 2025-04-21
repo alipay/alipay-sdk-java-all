@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单信息
  *
  * @author auto create
- * @since 1.0, 2025-03-20 23:00:20
+ * @since 1.0, 2025-04-16 20:00:53
  */
 public class OrderInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7157414814287875618L;
+	private static final long serialVersionUID = 7682563717972923619L;
 
 	/**
 	 * 订单取消时间
@@ -116,6 +116,12 @@ public class OrderInfoVO extends AlipayObject {
 	 */
 	@ApiField("quantity")
 	private Long quantity;
+
+	/**
+	 * 1-处方订单，2-非处方订单
+	 */
+	@ApiField("rx_type")
+	private Long rxType;
 
 	/**
 	 * 订单更新时间
@@ -261,6 +267,13 @@ public class OrderInfoVO extends AlipayObject {
 	}
 	public void setQuantity(Long quantity) {
 		this.quantity = quantity;
+	}
+
+	public Long getRxType() {
+		return this.rxType;
+	}
+	public void setRxType(Long rxType) {
+		this.rxType = rxType;
 	}
 
 	public Date getUpdateTime() {

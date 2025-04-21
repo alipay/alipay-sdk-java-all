@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 具体款式商品的价格，包含最低价与最高价
  *
  * @author auto create
- * @since 1.0, 2025-04-02 10:52:24
+ * @since 1.0, 2025-04-14 19:39:03
  */
 public class RecycleSkuPriceDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4511668418916576315L;
+	private static final long serialVersionUID = 3181428952943561889L;
 
 	/**
 	 * 最高价（单位为元，金额超过1000就不允许小数点）

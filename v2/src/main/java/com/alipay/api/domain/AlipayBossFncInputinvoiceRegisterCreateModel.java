@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票录入登记
  *
  * @author auto create
- * @since 1.0, 2025-02-12 15:45:58
+ * @since 1.0, 2025-04-14 17:44:09
  */
 public class AlipayBossFncInputinvoiceRegisterCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7425157651984925756L;
+	private static final long serialVersionUID = 6656239428531748384L;
 
 	/**
 	 * 发票登记入参

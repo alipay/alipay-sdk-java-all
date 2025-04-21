@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发布分账计划模型
  *
  * @author auto create
- * @since 1.0, 2025-03-18 16:30:54
+ * @since 1.0, 2025-04-18 20:00:32
  */
 public class AlipayCommerceRentRoyaltyInvestPublishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2775294567742997831L;
+	private static final long serialVersionUID = 6655559615418126893L;
 
 	/**
 	 * 2088开头的16位纯数字，小程序场景下获取用户ID请参考：用户授权; 其它场景下获取用户ID请参考：网页授权获取用户信息; 其中buyer_id与buyer_open_id不能同时为空

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取accessToken
  *
  * @author auto create
- * @since 1.0, 2025-03-19 11:56:29
+ * @since 1.0, 2025-04-17 17:37:44
  */
 public class AnttechNftOauthtokenApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2313345525196759416L;
+	private static final long serialVersionUID = 2594114273377367395L;
 
 	/**
 	 * 授权码，用户对应用授权后得到。为 refresh_token 时不填。

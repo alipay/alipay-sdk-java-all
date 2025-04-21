@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开方购药处方状态同步
  *
  * @author auto create
- * @since 1.0, 2025-03-19 16:24:54
+ * @since 1.0, 2025-04-17 15:43:58
  */
 public class AlipayCommerceMedicalMedicinePrescriptionstatusSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2834437661255667984L;
+	private static final long serialVersionUID = 6681363822648489116L;
 
 	/**
 	 * 审核药师手写签名url

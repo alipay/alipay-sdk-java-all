@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁订单风控信息
  *
  * @author auto create
- * @since 1.0, 2025-03-18 16:05:55
+ * @since 1.0, 2025-04-18 17:40:56
  */
 public class RentRiskInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1863431881189659298L;
+	private static final long serialVersionUID = 2469416953621471119L;
 
 	/**
 	 * 风控结果

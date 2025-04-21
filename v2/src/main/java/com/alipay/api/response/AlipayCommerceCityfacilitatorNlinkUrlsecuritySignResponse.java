@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.cityfacilitator.nlink.urlsecurity.sign response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-06 20:17:25
+ * @since 1.0, 2025-04-21 09:32:13
  */
 public class AlipayCommerceCityfacilitatorNlinkUrlsecuritySignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5321375224417726723L;
+	private static final long serialVersionUID = 1579479555117966446L;
 
 	/** 
 	 * 耗时单位毫秒

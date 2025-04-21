@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 场馆入驻（新）
  *
  * @author auto create
- * @since 1.0, 2022-03-04 16:15:49
+ * @since 1.0, 2025-04-14 11:50:43
  */
 public class AlipayCommerceSportsVenueSimpleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1194647176197663447L;
+	private static final long serialVersionUID = 7422385484161562937L;
 
 	/**
 	 * 具体地址

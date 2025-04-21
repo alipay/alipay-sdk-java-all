@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.acommunication.creditphone.order.preconsult response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-03 16:28:05
+ * @since 1.0, 2025-04-18 16:12:28
  */
 public class AlipayCommerceAcommunicationCreditphoneOrderPreconsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2667393687253149498L;
+	private static final long serialVersionUID = 8378282137827731737L;
 
 	/** 
 	 * 渠道列表

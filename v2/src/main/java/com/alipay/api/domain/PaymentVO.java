@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付信息
  *
  * @author auto create
- * @since 1.0, 2025-03-31 14:57:55
+ * @since 1.0, 2025-04-17 12:35:39
  */
 public class PaymentVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5583312856229186668L;
+	private static final long serialVersionUID = 8686918811834653974L;
 
 	/**
 	 * 订单优惠总金额
@@ -84,6 +84,12 @@ public class PaymentVO extends AlipayObject {
 	 */
 	@ApiField("pay_num")
 	private String payNum;
+
+	/**
+	 * 自费支付产生费用时的订单号
+	 */
+	@ApiField("self_trade_no")
+	private String selfTradeNo;
 
 	/**
 	 * 特殊时段加价费用，单位：元，保留2位小数
@@ -179,6 +185,13 @@ public class PaymentVO extends AlipayObject {
 	}
 	public void setPayNum(String payNum) {
 		this.payNum = payNum;
+	}
+
+	public String getSelfTradeNo() {
+		return this.selfTradeNo;
+	}
+	public void setSelfTradeNo(String selfTradeNo) {
+		this.selfTradeNo = selfTradeNo;
 	}
 
 	public String getTimeMarkupPrice() {

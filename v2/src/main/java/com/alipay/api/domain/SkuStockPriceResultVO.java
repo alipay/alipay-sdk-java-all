@@ -7,17 +7,30 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量修改库存价格结果
  *
  * @author auto create
- * @since 1.0, 2024-08-29 14:17:14
+ * @since 1.0, 2025-04-14 15:47:11
  */
 public class SkuStockPriceResultVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4396898182152521498L;
+	private static final long serialVersionUID = 2281126344876895679L;
 
 	/**
-	 * 商家的商品sku编码，该编码是商家侧内部自用的商品id，一般连锁商家模式下，该编码都是连锁维度全国唯一。购药内部系统，该编码与内部系统的商品skuID唯一对应。
+	 * 提示信息
+	 */
+	@ApiField("desc")
+	private String desc;
+
+	/**
+	 * OMS厂商sku编码, 厂商自行维护
 	 */
 	@ApiField("sku_code")
 	private String skuCode;
+
+	public String getDesc() {
+		return this.desc;
+	}
+	public void setDesc(String desc) {
+		this.desc = desc;
+	}
 
 	public String getSkuCode() {
 		return this.skuCode;

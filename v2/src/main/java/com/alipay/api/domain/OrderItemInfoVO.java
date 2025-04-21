@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品信息
  *
  * @author auto create
- * @since 1.0, 2025-03-31 19:27:19
+ * @since 1.0, 2025-04-18 19:17:58
  */
 public class OrderItemInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7676823966722414818L;
+	private static final long serialVersionUID = 1539623446492743271L;
 
 	/**
 	 * 商品类目ID
 	 */
 	@ApiField("category_id")
 	private String categoryId;
+
+	/**
+	 * 商品erp编码
+	 */
+	@ApiField("erp_code")
+	private String erpCode;
 
 	/**
 	 * 商品名称
@@ -39,6 +45,12 @@ public class OrderItemInfoVO extends AlipayObject {
 	 */
 	@ApiField("item_condition")
 	private String itemCondition;
+
+	/**
+	 * 商品成色等级
+	 */
+	@ApiField("item_condition_grade")
+	private String itemConditionGrade;
 
 	/**
 	 * 支付宝平台侧商品ID
@@ -108,6 +120,13 @@ public class OrderItemInfoVO extends AlipayObject {
 		this.categoryId = categoryId;
 	}
 
+	public String getErpCode() {
+		return this.erpCode;
+	}
+	public void setErpCode(String erpCode) {
+		this.erpCode = erpCode;
+	}
+
 	public String getItemBrand() {
 		return this.itemBrand;
 	}
@@ -127,6 +146,13 @@ public class OrderItemInfoVO extends AlipayObject {
 	}
 	public void setItemCondition(String itemCondition) {
 		this.itemCondition = itemCondition;
+	}
+
+	public String getItemConditionGrade() {
+		return this.itemConditionGrade;
+	}
+	public void setItemConditionGrade(String itemConditionGrade) {
+		this.itemConditionGrade = itemConditionGrade;
 	}
 
 	public String getItemId() {

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RegressionPublic extends AlipayObject {
 
-	private static final long serialVersionUID = 4385892564534853241L;
+	private static final long serialVersionUID = 8275694545876238628L;
 
 	/**
 	 * 1

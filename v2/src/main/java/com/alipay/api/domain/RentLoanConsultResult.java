@@ -7,15 +7,16 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-04-02 16:32:26
+ * @since 1.0, 2025-04-10 15:12:29
  */
 public class RentLoanConsultResult extends AlipayObject {
 
-	private static final long serialVersionUID = 1192282672428814696L;
+	private static final long serialVersionUID = 4127566195323477598L;
 
 	/**
-	 * ALLOW：表示允许放款
-FORBID：表示不允许放款
+	 * ALLOW：表示允许通过
+FORBID：表示不允许通过
+UN_KNOW：风险未知,无法识别
 	 */
 	@ApiField("consult_result")
 	private String consultResult;

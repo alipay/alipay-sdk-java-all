@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 协同任务信息
  *
  * @author auto create
- * @since 1.0, 2025-03-10 13:51:21
+ * @since 1.0, 2025-04-11 22:13:23
  */
 public class CollaborateTask extends AlipayObject {
 
-	private static final long serialVersionUID = 7587264739468943335L;
+	private static final long serialVersionUID = 7676262585733169637L;
 
 	/**
 	 * 活动描述，用户参与活动时返回。
@@ -115,6 +115,12 @@ public class CollaborateTask extends AlipayObject {
 	private String provinceName;
 
 	/**
+	 * 线上强leads签约了必有
+	 */
+	@ApiField("sales_order_id")
+	private String salesOrderId;
+
+	/**
 	 * 任务拉取时该字段无返回内容，确认领取时会返回该字段。
 	 */
 	@ApiField("shop_name")
@@ -126,6 +132,12 @@ public class CollaborateTask extends AlipayObject {
 	@ApiListField("smid_list")
 	@ApiField("string")
 	private List<String> smidList;
+
+	/**
+	 * 线上有参与活动的必有
+	 */
+	@ApiField("solution_id")
+	private String solutionId;
 
 	/**
 	 * 任务编号
@@ -258,6 +270,13 @@ public class CollaborateTask extends AlipayObject {
 		this.provinceName = provinceName;
 	}
 
+	public String getSalesOrderId() {
+		return this.salesOrderId;
+	}
+	public void setSalesOrderId(String salesOrderId) {
+		this.salesOrderId = salesOrderId;
+	}
+
 	public String getShopName() {
 		return this.shopName;
 	}
@@ -270,6 +289,13 @@ public class CollaborateTask extends AlipayObject {
 	}
 	public void setSmidList(List<String> smidList) {
 		this.smidList = smidList;
+	}
+
+	public String getSolutionId() {
+		return this.solutionId;
+	}
+	public void setSolutionId(String solutionId) {
+		this.solutionId = solutionId;
 	}
 
 	public String getTaskNo() {

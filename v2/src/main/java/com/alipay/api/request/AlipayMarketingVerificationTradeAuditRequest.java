@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.verification.trade.audit request
  * 
  * @author auto create
- * @since 1.0, 2025-04-02 17:36:12
+ * @since 1.0, 2025-04-11 12:02:27
  */
 public class AlipayMarketingVerificationTradeAuditRequest implements AlipayUploadRequest<AlipayMarketingVerificationTradeAuditResponse> {
 
@@ -31,6 +31,11 @@ public class AlipayMarketingVerificationTradeAuditRequest implements AlipayUploa
 	private String bizInfo;
 
 	/** 
+	* 送货清单，转为字节流传递，要求为jpg、jpeg、png格式
+	 */
+	private FileItem deliveryListContent;
+
+	/** 
 	* 辅助文件信息，如四码照片，转为字节流传递，要求为jpg、jpeg、png格式
 	 */
 	private FileItem evidentiaryContent;
@@ -44,6 +49,11 @@ public class AlipayMarketingVerificationTradeAuditRequest implements AlipayUploa
 	* 外部订单号
 	 */
 	private String outTradeNo;
+
+	/** 
+	* 销货清单，转为字节流传递，要求为jpg、jpeg、png格式
+	 */
+	private FileItem salesListContent;
 
 	/** 
 	* 支付宝分配的场景编码，用于识别活动场景及区域等信息
@@ -62,6 +72,13 @@ public class AlipayMarketingVerificationTradeAuditRequest implements AlipayUploa
 	}
 	public String getBizInfo() {
 		return this.bizInfo;
+	}
+
+	public void setDeliveryListContent(FileItem deliveryListContent) {
+		this.deliveryListContent = deliveryListContent;
+	}
+	public FileItem getDeliveryListContent() {
+		return this.deliveryListContent;
 	}
 
 	public void setEvidentiaryContent(FileItem evidentiaryContent) {
@@ -83,6 +100,13 @@ public class AlipayMarketingVerificationTradeAuditRequest implements AlipayUploa
 	}
 	public String getOutTradeNo() {
 		return this.outTradeNo;
+	}
+
+	public void setSalesListContent(FileItem salesListContent) {
+		this.salesListContent = salesListContent;
+	}
+	public FileItem getSalesListContent() {
+		return this.salesListContent;
 	}
 
 	public void setSceneCode(String sceneCode) {
@@ -171,8 +195,10 @@ public class AlipayMarketingVerificationTradeAuditRequest implements AlipayUploa
 
 	public Map<String, FileItem> getFileParams() {
 		Map<String, FileItem> params = new HashMap<String, FileItem>();
+		params.put("delivery_list_content", this.deliveryListContent);
 		params.put("evidentiary_content", this.evidentiaryContent);
 		params.put("invoice_content", this.invoiceContent);
+		params.put("sales_list_content", this.salesListContent);
 		return params;
 	}
 

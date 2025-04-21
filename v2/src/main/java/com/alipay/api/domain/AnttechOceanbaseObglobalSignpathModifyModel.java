@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商机同步签约路径开放接口
  *
  * @author auto create
- * @since 1.0, 2024-11-22 11:25:20
+ * @since 1.0, 2025-04-18 11:27:25
  */
 public class AnttechOceanbaseObglobalSignpathModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4889856859518818598L;
+	private static final long serialVersionUID = 4696212689229973115L;
 
 	/**
 	 * 阿里云结算模式

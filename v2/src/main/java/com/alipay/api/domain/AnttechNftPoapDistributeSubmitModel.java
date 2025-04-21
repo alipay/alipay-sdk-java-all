@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 勋章发放接口
  *
  * @author auto create
- * @since 1.0, 2025-04-08 11:41:58
+ * @since 1.0, 2025-04-17 17:36:27
  */
 public class AnttechNftPoapDistributeSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7316185497163778133L;
+	private static final long serialVersionUID = 6516149649317593142L;
 
 	/**
 	 * 业务单号,作为幂等校验

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.smdd.category.item.query request
  * 
  * @author auto create
- * @since 1.0, 2025-04-08 16:22:30
+ * @since 1.0, 2025-04-11 15:42:27
  */
 public class AlipayOfflineSmddCategoryItemQueryRequest implements AlipayRequest<AlipayOfflineSmddCategoryItemQueryResponse> {
 

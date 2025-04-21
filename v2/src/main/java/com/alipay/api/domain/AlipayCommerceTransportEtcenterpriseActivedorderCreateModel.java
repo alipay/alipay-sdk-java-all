@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业ETC激活订单创建
  *
  * @author auto create
- * @since 1.0, 2024-06-10 11:11:07
+ * @since 1.0, 2025-04-21 14:49:24
  */
 public class AlipayCommerceTransportEtcenterpriseActivedorderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2418229729599599949L;
+	private static final long serialVersionUID = 7828167874283838282L;
 
 	/**
 	 * 经办人证件号

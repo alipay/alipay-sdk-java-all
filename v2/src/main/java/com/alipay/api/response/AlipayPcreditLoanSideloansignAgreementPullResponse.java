@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.sideloansign.agreement.pull response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-19 16:59:57
+ * @since 1.0, 2025-04-18 11:02:29
  */
 public class AlipayPcreditLoanSideloansignAgreementPullResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3177687882943842755L;
+	private static final long serialVersionUID = 1648338442481548229L;
 
 	/** 
 	 * 曝光返回需要签署的协议列表, 类型为List<AgreementView>

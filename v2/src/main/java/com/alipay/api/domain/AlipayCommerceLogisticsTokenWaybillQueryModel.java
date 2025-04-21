@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询匹配的包裹信息
  *
  * @author auto create
- * @since 1.0, 2025-03-27 17:20:42
+ * @since 1.0, 2025-04-14 16:03:23
  */
 public class AlipayCommerceLogisticsTokenWaybillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4817325214577548466L;
+	private static final long serialVersionUID = 4257837619172233371L;
 
 	/**
 	 * 支付宝跳转商户小程序携带的token，商户通过token回查支付宝获取token关联的运单信息

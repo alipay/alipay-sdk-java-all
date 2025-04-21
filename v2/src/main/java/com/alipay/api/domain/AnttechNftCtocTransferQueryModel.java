@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * C2C藏品流转状态查询
  *
  * @author auto create
- * @since 1.0, 2025-03-31 11:38:12
+ * @since 1.0, 2025-04-17 17:35:39
  */
 public class AnttechNftCtocTransferQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3279112899989644629L;
+	private static final long serialVersionUID = 4217631611921835718L;
 
 	/**
 	 * 业务单号

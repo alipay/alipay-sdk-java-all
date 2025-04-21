@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 行业风险识别先享后付违约
  *
  * @author auto create
- * @since 1.0, 2024-04-01 14:38:42
+ * @since 1.0, 2025-04-08 20:18:53
  */
 public class AlipaySecurityRiskIndustryNsfQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6275943783664658892L;
+	private static final long serialVersionUID = 3286745843812243337L;
 
 	/**
 	 * 终端唯一标识
@@ -47,13 +47,21 @@ public class AlipaySecurityRiskIndustryNsfQueryModel extends AlipayObject {
 	private String channel;
 
 	/**
-	 * 城市编码；请按照https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx 表格中内容填写。 （参考资料： http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/）
+	 * 城市编码；请按照
+<a href="https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx">城市编码</a>
+ 表格中内容填写。 （参考资料： 
+<a href="http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/">参考资料</a>
+）
 	 */
 	@ApiField("city_code")
 	private String cityCode;
 
 	/**
-	 * 区域编码；请按照https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx 表格中内容填写。 （参考资料： http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/）
+	 * 区域编码；请按照
+<a href="https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx">区域编码</a>
+ 表格中内容填写。 （参考资料： 
+<a href="http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/">参考资料</a>
+）
 	 */
 	@ApiField("district_code")
 	private String districtCode;
@@ -174,7 +182,10 @@ public class AlipaySecurityRiskIndustryNsfQueryModel extends AlipayObject {
 	private String outletAddress;
 
 	/**
-	 * 省编码；请按照https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx 表格中内容填写。 （参考资料： http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/）
+	 * 省编码；请按照
+<a href="https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx">省编码</a> 表格中内容填写。 （参考资料： 
+<a href="http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/">参考资料</a>
+）
 	 */
 	@ApiField("province_code")
 	private String provinceCode;

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PersonalityInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7214156318736154687L;
+	private static final long serialVersionUID = 7147634349445845624L;
 
 	/**
 	 * 枚举名code

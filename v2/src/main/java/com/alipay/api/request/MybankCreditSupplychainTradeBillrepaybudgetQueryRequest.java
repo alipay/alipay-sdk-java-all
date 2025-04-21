@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.supplychain.trade.billrepaybudget.query request
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 19:39:07
+ * @since 1.0, 2025-04-15 10:30:13
  */
 public class MybankCreditSupplychainTradeBillrepaybudgetQueryRequest implements AlipayRequest<MybankCreditSupplychainTradeBillrepaybudgetQueryResponse> {
 

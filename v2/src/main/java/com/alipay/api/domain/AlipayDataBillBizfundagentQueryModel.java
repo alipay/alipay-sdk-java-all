@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataBillBizfundagentQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1478115913299384479L;
+	private static final long serialVersionUID = 7652721234657613645L;
 
 	/**
 	 * 记账本id，服务商在帮助商户开通时候获取的唯一身份号

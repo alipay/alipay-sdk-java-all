@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 儿童手表厂商营销活动奖品批量查询
  *
  * @author auto create
- * @since 1.0, 2025-02-25 11:30:09
+ * @since 1.0, 2025-04-09 21:33:20
  */
 public class AlipayPayAppPocketmoneyPromoBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6391667562259724979L;
+	private static final long serialVersionUID = 7715613794832347681L;
 
 	/**
 	 * 为空-批量查询，不为空-根据流水id查询
@@ -22,6 +22,13 @@ public class AlipayPayAppPocketmoneyPromoBatchqueryModel extends AlipayObject {
 	@ApiListField("biz_no_list")
 	@ApiField("string")
 	private List<String> bizNoList;
+
+	/**
+	 * 活动场景数组
+	 */
+	@ApiListField("biz_scene_list")
+	@ApiField("string")
+	private List<String> bizSceneList;
 
 	/**
 	 * 设备号，openWatchId，rtos设备可不传
@@ -52,6 +59,13 @@ public class AlipayPayAppPocketmoneyPromoBatchqueryModel extends AlipayObject {
 	}
 	public void setBizNoList(List<String> bizNoList) {
 		this.bizNoList = bizNoList;
+	}
+
+	public List<String> getBizSceneList() {
+		return this.bizSceneList;
+	}
+	public void setBizSceneList(List<String> bizSceneList) {
+		this.bizSceneList = bizSceneList;
 	}
 
 	public String getDeviceId() {

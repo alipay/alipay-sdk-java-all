@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据nftId查询nft资产信息
  *
  * @author auto create
- * @since 1.0, 2025-03-31 10:21:11
+ * @since 1.0, 2025-04-17 17:41:33
  */
 public class AnttechNftBaseinfoNftidQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2493135869738517275L;
+	private static final long serialVersionUID = 2838865118657131814L;
 
 	/**
 	 * 资产唯一编码

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保险权益下单有效性校验
  *
  * @author auto create
- * @since 1.0, 2025-04-02 17:35:44
+ * @since 1.0, 2025-04-09 16:30:23
  */
 public class AlipayInsRightsorderPreQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5722197786442354718L;
+	private static final long serialVersionUID = 2758437293533651335L;
 
 	/**
 	 * 当前下单的实际原始商品id。

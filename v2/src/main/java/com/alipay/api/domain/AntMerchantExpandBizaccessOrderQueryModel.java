@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开通进度主动查询
  *
  * @author auto create
- * @since 1.0, 2024-12-18 14:15:19
+ * @since 1.0, 2025-04-15 22:36:18
  */
 public class AntMerchantExpandBizaccessOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5169475585478423523L;
+	private static final long serialVersionUID = 3126643811525949461L;
 
 	/**
 	 * 表示服务商代商户开通业务申请单的主单号（必填，本期仅支持使用order_id查询）

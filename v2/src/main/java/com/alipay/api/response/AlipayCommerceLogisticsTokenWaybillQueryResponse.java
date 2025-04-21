@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.logistics.token.waybill.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-27 17:22:25
+ * @since 1.0, 2025-04-14 16:07:27
  */
 public class AlipayCommerceLogisticsTokenWaybillQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6134239672461916986L;
+	private static final long serialVersionUID = 7768249329682625911L;
 
 	/** 
 	 * 寄件信息

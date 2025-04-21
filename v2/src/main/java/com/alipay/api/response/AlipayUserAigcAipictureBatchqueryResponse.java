@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.aigc.aipicture.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-15 20:26:54
+ * @since 1.0, 2025-04-17 13:53:27
  */
 public class AlipayUserAigcAipictureBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8298764129223639619L;
+	private static final long serialVersionUID = 3631644374461162797L;
 
 	/** 
 	 * AIGC生成的多媒体图片列表

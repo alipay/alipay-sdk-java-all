@@ -1,5 +1,6 @@
 package com.alipay.api.response;
 
+import com.alipay.api.internal.mapping.ApiField;
 
 import com.alipay.api.AlipayResponse;
 
@@ -7,14 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.schemaapiseventh.rainystest.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-01-22 14:57:24
+ * @since 1.0, 2025-04-16 09:47:29
  */
 public class AlipayDataDataserviceSchemaapiseventhRainystestQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7555564569392741559L;
+	private static final long serialVersionUID = 6146877163398248587L;
 
-	
+	/** 
+	 * id
+	 */
+	@ApiField("user_id")
+	private String userId;
 
-	
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+	public String getUserId( ) {
+		return this.userId;
+	}
 
 }

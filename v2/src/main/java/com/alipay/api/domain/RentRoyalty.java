@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁分账计划
  *
  * @author auto create
- * @since 1.0, 2025-03-28 17:33:53
+ * @since 1.0, 2025-04-18 17:39:19
  */
 public class RentRoyalty extends AlipayObject {
 
-	private static final long serialVersionUID = 4565976593752127497L;
+	private static final long serialVersionUID = 8144776455266111435L;
 
 	/**
 	 * 订单id
@@ -52,6 +52,12 @@ public class RentRoyalty extends AlipayObject {
 	private Date expectRoyaltyTime;
 
 	/**
+	 * 当前请求分账期数,true表示是当前请求的分账期数，面向资金方的分账成功消息该字段才有值。
+	 */
+	@ApiField("is_current_request")
+	private String isCurrentRequest;
+
+	/**
 	 * 商户订单号
 	 */
 	@ApiField("out_order_id")
@@ -82,10 +88,22 @@ public class RentRoyalty extends AlipayObject {
 	private String royaltyInstallmentNo;
 
 	/**
+	 * 分账利息，币种：人民币，单位：元。
+	 */
+	@ApiField("royalty_interest_price")
+	private String royaltyInterestPrice;
+
+	/**
 	 * 分账金额，单位：元，精确到小数点后两位
 	 */
 	@ApiField("royalty_price")
 	private String royaltyPrice;
+
+	/**
+	 * 分账本金，币种：人民币，单位:元。
+	 */
+	@ApiField("royalty_principal_price")
+	private String royaltyPrincipalPrice;
 
 	/**
 	 * 分账计划的状态
@@ -100,7 +118,7 @@ public class RentRoyalty extends AlipayObject {
 	private String royaltyTime;
 
 	/**
-	 * 分账触发方式
+	 * 提前结清的分账触发方式
 	 */
 	@ApiField("royalty_trigger_type")
 	private String royaltyTriggerType;
@@ -171,6 +189,13 @@ public class RentRoyalty extends AlipayObject {
 		this.expectRoyaltyTime = expectRoyaltyTime;
 	}
 
+	public String getIsCurrentRequest() {
+		return this.isCurrentRequest;
+	}
+	public void setIsCurrentRequest(String isCurrentRequest) {
+		this.isCurrentRequest = isCurrentRequest;
+	}
+
 	public String getOutOrderId() {
 		return this.outOrderId;
 	}
@@ -206,11 +231,25 @@ public class RentRoyalty extends AlipayObject {
 		this.royaltyInstallmentNo = royaltyInstallmentNo;
 	}
 
+	public String getRoyaltyInterestPrice() {
+		return this.royaltyInterestPrice;
+	}
+	public void setRoyaltyInterestPrice(String royaltyInterestPrice) {
+		this.royaltyInterestPrice = royaltyInterestPrice;
+	}
+
 	public String getRoyaltyPrice() {
 		return this.royaltyPrice;
 	}
 	public void setRoyaltyPrice(String royaltyPrice) {
 		this.royaltyPrice = royaltyPrice;
+	}
+
+	public String getRoyaltyPrincipalPrice() {
+		return this.royaltyPrincipalPrice;
+	}
+	public void setRoyaltyPrincipalPrice(String royaltyPrincipalPrice) {
+		this.royaltyPrincipalPrice = royaltyPrincipalPrice;
 	}
 
 	public String getRoyaltyStatus() {

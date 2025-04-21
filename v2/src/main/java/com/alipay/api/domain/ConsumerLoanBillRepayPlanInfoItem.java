@@ -7,17 +7,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * 消费贷还款聚合账单还款计划ITEM
  *
  * @author auto create
- * @since 1.0, 2024-08-06 11:22:35
+ * @since 1.0, 2025-04-21 15:15:48
  */
 public class ConsumerLoanBillRepayPlanInfoItem extends AlipayObject {
 
-	private static final long serialVersionUID = 1179436926992448252L;
+	private static final long serialVersionUID = 8416711535633279857L;
 
 	/**
 	 * 该还款计划详情关联的账单ID
 	 */
 	@ApiField("bill_id")
 	private String billId;
+
+	/**
+	 * 当前该笔还款所归属的借据号
+	 */
+	@ApiField("loan_id")
+	private String loanId;
+
+	/**
+	 * 在该项还款计划所关联的借据中的期号
+	 */
+	@ApiField("period_no")
+	private Long periodNo;
 
 	/**
 	 * 还款金额，单位为分，1000代表10.00元
@@ -42,6 +54,20 @@ public class ConsumerLoanBillRepayPlanInfoItem extends AlipayObject {
 	}
 	public void setBillId(String billId) {
 		this.billId = billId;
+	}
+
+	public String getLoanId() {
+		return this.loanId;
+	}
+	public void setLoanId(String loanId) {
+		this.loanId = loanId;
+	}
+
+	public Long getPeriodNo() {
+		return this.periodNo;
+	}
+	public void setPeriodNo(Long periodNo) {
+		this.periodNo = periodNo;
 	}
 
 	public Long getRepayAmount() {

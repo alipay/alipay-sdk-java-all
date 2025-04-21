@@ -1,5 +1,7 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
@@ -7,17 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 门店快递信息
  *
  * @author auto create
- * @since 1.0, 2024-11-04 11:21:28
+ * @since 1.0, 2025-04-18 16:08:05
  */
 public class ShopDeliveryInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7173539935813356533L;
+	private static final long serialVersionUID = 7898317688288646766L;
 
 	/**
 	 * 发货物流状态
 	 */
 	@ApiField("delivery_status")
 	private String deliveryStatus;
+
+	/**
+	 * 发货时间
+	 */
+	@ApiField("delivery_time")
+	private Date deliveryTime;
 
 	/**
 	 * 物流公司编码
@@ -38,6 +46,18 @@ public class ShopDeliveryInfo extends AlipayObject {
 	private Long materialsNum;
 
 	/**
+	 * 生产完成时间
+	 */
+	@ApiField("produce_finish_time")
+	private Date produceFinishTime;
+
+	/**
+	 * 签收时间
+	 */
+	@ApiField("received_time")
+	private Date receivedTime;
+
+	/**
 	 * 快递物流单号
 	 */
 	@ApiField("waybill_no")
@@ -48,6 +68,13 @@ public class ShopDeliveryInfo extends AlipayObject {
 	}
 	public void setDeliveryStatus(String deliveryStatus) {
 		this.deliveryStatus = deliveryStatus;
+	}
+
+	public Date getDeliveryTime() {
+		return this.deliveryTime;
+	}
+	public void setDeliveryTime(Date deliveryTime) {
+		this.deliveryTime = deliveryTime;
 	}
 
 	public String getLogisticsCode() {
@@ -69,6 +96,20 @@ public class ShopDeliveryInfo extends AlipayObject {
 	}
 	public void setMaterialsNum(Long materialsNum) {
 		this.materialsNum = materialsNum;
+	}
+
+	public Date getProduceFinishTime() {
+		return this.produceFinishTime;
+	}
+	public void setProduceFinishTime(Date produceFinishTime) {
+		this.produceFinishTime = produceFinishTime;
+	}
+
+	public Date getReceivedTime() {
+		return this.receivedTime;
+	}
+	public void setReceivedTime(Date receivedTime) {
+		this.receivedTime = receivedTime;
 	}
 
 	public String getWaybillNo() {

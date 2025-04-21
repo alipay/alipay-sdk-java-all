@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租赁订单的简单信息
  *
  * @author auto create
- * @since 1.0, 2025-03-04 18:19:42
+ * @since 1.0, 2025-04-18 17:39:21
  */
 public class SimpleRentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7115232436844828523L;
+	private static final long serialVersionUID = 1776392312522487578L;
 
 	/**
 	 * 交易组件的订单Id
@@ -39,6 +39,18 @@ public class SimpleRentInfo extends AlipayObject {
 	 */
 	@ApiField("buyout_price")
 	private String buyoutPrice;
+
+	/**
+	 * 提前结清,true表示提前结清
+	 */
+	@ApiField("early_settle")
+	private Boolean earlySettle;
+
+	/**
+	 * 提前结清金额，单位：元
+	 */
+	@ApiField("early_settle_price")
+	private String earlySettlePrice;
 
 	/**
 	 * 租赁订单的结束时间
@@ -135,6 +147,20 @@ public class SimpleRentInfo extends AlipayObject {
 	}
 	public void setBuyoutPrice(String buyoutPrice) {
 		this.buyoutPrice = buyoutPrice;
+	}
+
+	public Boolean getEarlySettle() {
+		return this.earlySettle;
+	}
+	public void setEarlySettle(Boolean earlySettle) {
+		this.earlySettle = earlySettle;
+	}
+
+	public String getEarlySettlePrice() {
+		return this.earlySettlePrice;
+	}
+	public void setEarlySettlePrice(String earlySettlePrice) {
+		this.earlySettlePrice = earlySettlePrice;
 	}
 
 	public String getEndTime() {

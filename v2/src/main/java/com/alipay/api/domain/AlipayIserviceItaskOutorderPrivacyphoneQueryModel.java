@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询隐私小号
  *
  * @author auto create
- * @since 1.0, 2024-12-16 14:12:32
+ * @since 1.0, 2025-04-15 11:43:04
  */
 public class AlipayIserviceItaskOutorderPrivacyphoneQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7628895115532315135L;
+	private static final long serialVersionUID = 4389297879777393147L;
 
 	/**
 	 * 机构侧工单号

@@ -7,17 +7,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * 儿童手表厂商触发
  *
  * @author auto create
- * @since 1.0, 2025-02-25 11:30:33
+ * @since 1.0, 2025-04-09 21:32:53
  */
 public class AlipayPayAppPocketmoneyPromoConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1122759524952656217L;
+	private static final long serialVersionUID = 5332572135276525389L;
 
 	/**
 	 * 奖品流水单号，由外部厂商提供，查询时支付宝负责找到对应奖品
 	 */
 	@ApiField("biz_no")
 	private String bizNo;
+
+	/**
+	 * 活动业务场景
+	 */
+	@ApiField("biz_scene")
+	private String bizScene;
+
+	/**
+	 * 运动步数（单位步）、跳绳数（单位次）等
+	 */
+	@ApiField("biz_value")
+	private String bizValue;
 
 	/**
 	 * 设备号，openWatchId，rtos设备可不传
@@ -54,6 +66,20 @@ public class AlipayPayAppPocketmoneyPromoConsultModel extends AlipayObject {
 	}
 	public void setBizNo(String bizNo) {
 		this.bizNo = bizNo;
+	}
+
+	public String getBizScene() {
+		return this.bizScene;
+	}
+	public void setBizScene(String bizScene) {
+		this.bizScene = bizScene;
+	}
+
+	public String getBizValue() {
+		return this.bizValue;
+	}
+	public void setBizValue(String bizValue) {
+		this.bizValue = bizValue;
 	}
 
 	public String getDeviceId() {

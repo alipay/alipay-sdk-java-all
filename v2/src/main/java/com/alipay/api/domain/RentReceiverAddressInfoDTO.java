@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单收货地址
  *
  * @author auto create
- * @since 1.0, 2025-04-02 16:32:26
+ * @since 1.0, 2025-04-10 15:12:29
  */
 public class RentReceiverAddressInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8632598287567862348L;
+	private static final long serialVersionUID = 7416932581844469943L;
 
 	/**
 	 * 收货地址信息

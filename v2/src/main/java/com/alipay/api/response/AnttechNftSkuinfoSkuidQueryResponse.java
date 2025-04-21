@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.nft.skuinfo.skuid.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-31 10:22:29
+ * @since 1.0, 2025-04-17 17:42:26
  */
 public class AnttechNftSkuinfoSkuidQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6486328667523461653L;
+	private static final long serialVersionUID = 1364259743955183127L;
 
 	/** 
 	 * sku铸造数量

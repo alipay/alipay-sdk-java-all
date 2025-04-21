@@ -4,6 +4,8 @@ import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.IsvBizOpenOrderFailReason;
+import com.alipay.api.domain.IsvBizOpenOrderContent;
+import com.alipay.api.domain.IsvSubMerchantOrderVO;
 
 import com.alipay.api.AlipayResponse;
 
@@ -11,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.bizaccess.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-08 14:06:03
+ * @since 1.0, 2025-04-15 23:42:25
  */
 public class AntMerchantExpandBizaccessOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2644497137527286734L;
+	private static final long serialVersionUID = 6888953486539964285L;
 
 	/** 
 	 * 失败原因
@@ -23,6 +25,12 @@ public class AntMerchantExpandBizaccessOrderQueryResponse extends AlipayResponse
 	@ApiListField("fail_reasons")
 	@ApiField("isv_biz_open_order_fail_reason")
 	private List<IsvBizOpenOrderFailReason> failReasons;
+
+	/** 
+	 * 订单信息
+	 */
+	@ApiField("order_content")
+	private IsvBizOpenOrderContent orderContent;
 
 	/** 
 	 * 业务开通主单号
@@ -37,6 +45,13 @@ public class AntMerchantExpandBizaccessOrderQueryResponse extends AlipayResponse
 	private String orderStatus;
 
 	/** 
+	 * 子单列表
+	 */
+	@ApiListField("sub_merchant_orders")
+	@ApiField("isv_sub_merchant_order_v_o")
+	private List<IsvSubMerchantOrderVO> subMerchantOrders;
+
+	/** 
 	 * 待办url
 	 */
 	@ApiField("wait_process_task_url")
@@ -47,6 +62,13 @@ public class AntMerchantExpandBizaccessOrderQueryResponse extends AlipayResponse
 	}
 	public List<IsvBizOpenOrderFailReason> getFailReasons( ) {
 		return this.failReasons;
+	}
+
+	public void setOrderContent(IsvBizOpenOrderContent orderContent) {
+		this.orderContent = orderContent;
+	}
+	public IsvBizOpenOrderContent getOrderContent( ) {
+		return this.orderContent;
 	}
 
 	public void setOrderId(String orderId) {
@@ -61,6 +83,13 @@ public class AntMerchantExpandBizaccessOrderQueryResponse extends AlipayResponse
 	}
 	public String getOrderStatus( ) {
 		return this.orderStatus;
+	}
+
+	public void setSubMerchantOrders(List<IsvSubMerchantOrderVO> subMerchantOrders) {
+		this.subMerchantOrders = subMerchantOrders;
+	}
+	public List<IsvSubMerchantOrderVO> getSubMerchantOrders( ) {
+		return this.subMerchantOrders;
 	}
 
 	public void setWaitProcessTaskUrl(String waitProcessTaskUrl) {

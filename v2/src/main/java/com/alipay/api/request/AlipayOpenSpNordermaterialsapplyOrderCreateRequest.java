@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.sp.nordermaterialsapply.order.create request
  * 
  * @author auto create
- * @since 1.0, 2025-03-13 11:31:41
+ * @since 1.0, 2025-04-18 15:30:49
  */
 public class AlipayOpenSpNordermaterialsapplyOrderCreateRequest implements AlipayRequest<AlipayOpenSpNordermaterialsapplyOrderCreateResponse> {
 

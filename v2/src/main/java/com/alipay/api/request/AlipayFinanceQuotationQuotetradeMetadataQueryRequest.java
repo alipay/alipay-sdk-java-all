@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.finance.quotation.quotetrade.metadata.query request
  * 
  * @author auto create
- * @since 1.0, 2024-07-18 14:48:28
+ * @since 1.0, 2025-04-10 16:39:16
  */
 public class AlipayFinanceQuotationQuotetradeMetadataQueryRequest implements AlipayRequest<AlipayFinanceQuotationQuotetradeMetadataQueryResponse> {
 
