@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.item.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-21 10:47:28
+ * @since 1.0, 2025-04-22 09:47:27
  */
 public class AlipayCommerceMedicalItemCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4712767777699938466L;
+	private static final long serialVersionUID = 1129134362441636476L;
 
 	/** 
 	 * 失败记录

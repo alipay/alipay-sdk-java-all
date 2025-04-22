@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FastAuditTaskInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7198372511694842494L;
+	private static final long serialVersionUID = 7539858463762641923L;
 
 	/**
 	 * 审核任务内容

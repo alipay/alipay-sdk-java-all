@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.eco.nfc.bind response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-06 18:02:25
+ * @since 1.0, 2025-04-22 11:51:25
  */
 public class AntMerchantExpandEcoNfcBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4844255723368532731L;
+	private static final long serialVersionUID = 8191615587953622568L;
 
 	/** 
 	 * 绑定失败的具体原因

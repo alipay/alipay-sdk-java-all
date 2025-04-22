@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CollaborateTaskCompleteContent extends AlipayObject {
 
-	private static final long serialVersionUID = 3552887432441493186L;
+	private static final long serialVersionUID = 5878166129486632642L;
 
 	/**
 	 * 完成任务以后，反馈内容的类型。

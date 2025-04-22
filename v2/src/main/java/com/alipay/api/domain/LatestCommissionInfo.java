@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LatestCommissionInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4152832922513174314L;
+	private static final long serialVersionUID = 8772218359672643687L;
 
 	/**
 	 * 最新比例，单位为百分比

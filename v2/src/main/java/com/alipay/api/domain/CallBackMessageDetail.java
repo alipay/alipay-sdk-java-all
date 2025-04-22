@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CallBackMessageDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5816633935532637582L;
+	private static final long serialVersionUID = 3579351768143865681L;
 
 	/**
 	 * 用户开始接听时间，是一个时间点

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceKidsAccountModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6362526564271823248L;
+	private static final long serialVersionUID = 5412323566967255929L;
 
 	/**
 	 * 格式为yyyy-MM-dd，需要满足18周岁以下（不包含18周岁生日当天）

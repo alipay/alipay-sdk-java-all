@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CreditSettlementOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 8613694982818195893L;
+	private static final long serialVersionUID = 1555864595713173923L;
 
 	/**
 	 * 信用服务订单号

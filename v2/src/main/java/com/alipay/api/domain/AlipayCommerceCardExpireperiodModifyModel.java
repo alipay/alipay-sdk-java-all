@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceCardExpireperiodModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7674439779955232424L;
+	private static final long serialVersionUID = 4876247349395157628L;
 
 	/**
 	 * 当industry_solution_type为TIMES_CARD时使用、代表将原有的有效期延期到这个时间点

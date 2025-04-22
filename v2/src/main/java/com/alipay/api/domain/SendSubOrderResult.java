@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SendSubOrderResult extends AlipayObject {
 
-	private static final long serialVersionUID = 5658686199325494724L;
+	private static final long serialVersionUID = 3613355692619763163L;
 
 	/**
 	 * 订单有效期，日期类型，格式：yyyy-MM-dd HH:mm:ss

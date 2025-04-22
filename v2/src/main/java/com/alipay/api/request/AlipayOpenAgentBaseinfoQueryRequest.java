@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.agent.baseinfo.query request
  * 
  * @author auto create
- * @since 1.0, 2025-04-16 11:43:43
+ * @since 1.0, 2025-04-22 10:57:28
  */
 public class AlipayOpenAgentBaseinfoQueryRequest implements AlipayRequest<AlipayOpenAgentBaseinfoQueryResponse> {
 

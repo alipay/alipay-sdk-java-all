@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingActivityDeliveryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5176798538144346673L;
+	private static final long serialVersionUID = 2131991125425278631L;
 
 	/**
 	 * "服务商代商户创建投放必选。 bussinessType设置为ISV_FOR_MERCHANT。"

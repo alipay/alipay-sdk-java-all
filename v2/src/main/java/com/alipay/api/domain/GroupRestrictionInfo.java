@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GroupRestrictionInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4472962854731887836L;
+	private static final long serialVersionUID = 5176873288736359138L;
 
 	/**
 	 * 商品该做法最大选择份数

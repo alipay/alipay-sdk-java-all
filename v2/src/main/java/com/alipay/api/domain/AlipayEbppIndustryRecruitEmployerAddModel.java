@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppIndustryRecruitEmployerAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3358738353632679467L;
+	private static final long serialVersionUID = 2794183581165959651L;
 
 	/**
 	 * 雇主是否通过快招渠道在服务商侧新注册，true=通过快招渠道新注册用户，false=非快招渠道注册的用户

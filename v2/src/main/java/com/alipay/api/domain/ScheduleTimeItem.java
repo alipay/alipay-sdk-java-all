@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ScheduleTimeItem extends AlipayObject {
 
-	private static final long serialVersionUID = 7335677235595755683L;
+	private static final long serialVersionUID = 1696785914566669552L;
 
 	/**
 	 * 起点站发车时刻列表，如07:00:00,07:30:00,…,21:30:00,22:00:00

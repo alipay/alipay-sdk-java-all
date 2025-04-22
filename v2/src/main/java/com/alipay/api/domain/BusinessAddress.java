@@ -8,11 +8,11 @@ import com.alipay.api.internal.mapping.ApiField;
 在撤柜场景下，该值可为空。其它场景下，该值不能为空
  *
  * @author auto create
- * @since 1.0, 2025-04-17 11:16:42
+ * @since 1.0, 2025-04-22 10:47:27
  */
 public class BusinessAddress extends AlipayObject {
 
-	private static final long serialVersionUID = 2117973927756396267L;
+	private static final long serialVersionUID = 5377827991348793578L;
 
 	/**
 	 * 详细地址

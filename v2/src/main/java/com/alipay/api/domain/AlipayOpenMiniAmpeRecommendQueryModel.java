@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * AMPE情景推荐服务查询
  *
  * @author auto create
- * @since 1.0, 2025-04-17 19:32:28
+ * @since 1.0, 2025-04-21 20:37:26
  */
 public class AlipayOpenMiniAmpeRecommendQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6287497535946752946L;
+	private static final long serialVersionUID = 1899813259777393244L;
 
 	/**
 	 * 业务场景，由支付宝统一分配，用于指定推荐的内容。

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * Boolean类型结果，true-命中高风险 false-未命中高风险
  *
  * @author auto create
- * @since 1.0, 2025-04-21 20:07:27
+ * @since 1.0, 2025-04-22 13:42:26
  */
 public class RentRiskProVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6627855183748874546L;
+	private static final long serialVersionUID = 8468187691517475318L;
 
 	/**
 	 * 描述信息

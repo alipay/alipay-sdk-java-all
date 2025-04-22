@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SettleInfoListDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7571628618614388665L;
+	private static final long serialVersionUID = 4198835349249631779L;
 
 	/**
 	 * 分账失败原因

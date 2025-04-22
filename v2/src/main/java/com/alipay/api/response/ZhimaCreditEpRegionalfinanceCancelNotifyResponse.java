@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaCreditEpRegionalfinanceCancelNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8428529829845893441L;
+	private static final long serialVersionUID = 3632393141276178221L;
 
 	
 

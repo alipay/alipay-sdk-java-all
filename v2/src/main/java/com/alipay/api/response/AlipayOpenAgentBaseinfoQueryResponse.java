@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.agent.baseinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-16 11:43:43
+ * @since 1.0, 2025-04-22 10:57:28
  */
 public class AlipayOpenAgentBaseinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1187695545475979762L;
+	private static final long serialVersionUID = 6189598945413244222L;
 
 	/** 
 	 * 智能体应用描述
@@ -76,6 +76,18 @@ public class AlipayOpenAgentBaseinfoQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("continue_ask")
 	private Boolean continueAsk;
+
+	/** 
+	 * 自定义卡片配置信息
+	 */
+	@ApiField("custom_card_body")
+	private String customCardBody;
+
+	/** 
+	 * 自定卡片ID
+	 */
+	@ApiField("custom_card_id")
+	private String customCardId;
 
 	/** 
 	 * null
@@ -152,6 +164,20 @@ public class AlipayOpenAgentBaseinfoQueryResponse extends AlipayResponse {
 	}
 	public Boolean getContinueAsk( ) {
 		return this.continueAsk;
+	}
+
+	public void setCustomCardBody(String customCardBody) {
+		this.customCardBody = customCardBody;
+	}
+	public String getCustomCardBody( ) {
+		return this.customCardBody;
+	}
+
+	public void setCustomCardId(String customCardId) {
+		this.customCardId = customCardId;
+	}
+	public String getCustomCardId( ) {
+		return this.customCardId;
 	}
 
 	public void setSupportQaMode(List<String> supportQaMode) {

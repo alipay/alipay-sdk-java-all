@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.expand.eco.nfc.bind request
  * 
  * @author auto create
- * @since 1.0, 2025-03-06 18:02:25
+ * @since 1.0, 2025-04-22 11:51:25
  */
 public class AntMerchantExpandEcoNfcBindRequest implements AlipayRequest<AntMerchantExpandEcoNfcBindResponse> {
 

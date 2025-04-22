@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySecurityProdNfcdkBrandSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6843734422484494712L;
+	private static final long serialVersionUID = 8814319337788315798L;
 
 	/**
 	 * 用户账号名称，分享时选择的用户名称

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class BenefitAssistantMsgContentVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3776691915389546731L;
+	private static final long serialVersionUID = 8547423914654742842L;
 
 	/**
 	 * 活动id，即券id。传入活动id后可支持在群内发小助手优惠券定向消息。请先通过优惠券创建接口创建优惠券<a href="https://opendocs.alipay.com/open/7ad3a7bf_alipay.marketing.activity.ordervoucher.create?scene=a0667e04ac87431eb7e6adc5f13cc8ba&pathHash=3262435d">https://opendocs.alipay.com/open/7ad3a7bf_alipay.marketing.activity.ordervoucher.create?scene=a0667e04ac87431eb7e6adc5f13cc8ba&pathHash=3262435d</a>并获取activity_id优惠券id作为这个入参的值。

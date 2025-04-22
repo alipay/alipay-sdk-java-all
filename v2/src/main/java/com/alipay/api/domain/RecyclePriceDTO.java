@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 价格类型对应的价格值
  *
  * @author auto create
- * @since 1.0, 2025-04-14 19:39:03
+ * @since 1.0, 2025-04-22 15:42:27
  */
 public class RecyclePriceDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1483459622363521436L;
+	private static final long serialVersionUID = 3643978778598618498L;
 
 	/**
 	 * 最高价（单位为元，金额超过1000就不允许小数点）

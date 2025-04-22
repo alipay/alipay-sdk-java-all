@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FeeItemPrice extends AlipayObject {
 
-	private static final long serialVersionUID = 2222462774976795488L;
+	private static final long serialVersionUID = 7515651658272156946L;
 
 	/**
 	 * 单价(分)

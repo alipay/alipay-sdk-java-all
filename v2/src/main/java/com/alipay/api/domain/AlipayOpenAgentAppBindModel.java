@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 绑定智能体ID
  *
  * @author auto create
- * @since 1.0, 2025-04-11 10:19:56
+ * @since 1.0, 2025-04-22 10:53:20
  */
 public class AlipayOpenAgentAppBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6557226334253138154L;
+	private static final long serialVersionUID = 2253747883439562215L;
 
 	/**
 	 * 智能体code

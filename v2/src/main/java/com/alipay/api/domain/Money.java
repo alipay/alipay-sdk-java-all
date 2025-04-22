@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class Money extends AlipayObject {
 
-	private static final long serialVersionUID = 2517112678243959769L;
+	private static final long serialVersionUID = 6482739768721258785L;
 
 	/**
 	 * 3-letter currency code, refer to ISO 4217 Standard currency alphabetic code

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaCreditEpDossierLabelQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5764986214632538795L;
+	private static final long serialVersionUID = 7855794832485662712L;
 
 	/** 
 	 * 统一社会信用代码或营业执照注册号

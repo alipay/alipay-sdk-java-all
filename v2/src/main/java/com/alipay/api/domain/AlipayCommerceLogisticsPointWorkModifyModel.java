@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物流作业平台铺设点变更
  *
  * @author auto create
- * @since 1.0, 2025-04-17 11:16:42
+ * @since 1.0, 2025-04-22 10:47:27
  */
 public class AlipayCommerceLogisticsPointWorkModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6339189775175784125L;
+	private static final long serialVersionUID = 1361325126371166754L;
 
 	/**
 	 * 新的铺设点描述
@@ -59,6 +59,12 @@ public class AlipayCommerceLogisticsPointWorkModifyModel extends AlipayObject {
 	private String nfcStatus;
 
 	/**
+	 * 变更前的铺设点ID
+	 */
+	@ApiField("old_place_id")
+	private String oldPlaceId;
+
+	/**
 	 * 变更前的点位ID
 	 */
 	@ApiField("old_point_id")
@@ -71,9 +77,10 @@ public class AlipayCommerceLogisticsPointWorkModifyModel extends AlipayObject {
 	private String operatorType;
 
 	/**
-	 * 变更前的铺设点ID
+	 * 变更前的铺设点ID 当前字段已废弃(该参数拼写错误，实际应该是old_place_id，请用old_place_id传参。)
 	 */
 	@ApiField("out_place_id")
+	@Deprecated
 	private String outPlaceId;
 
 	/**
@@ -136,6 +143,13 @@ public class AlipayCommerceLogisticsPointWorkModifyModel extends AlipayObject {
 	}
 	public void setNfcStatus(String nfcStatus) {
 		this.nfcStatus = nfcStatus;
+	}
+
+	public String getOldPlaceId() {
+		return this.oldPlaceId;
+	}
+	public void setOldPlaceId(String oldPlaceId) {
+		this.oldPlaceId = oldPlaceId;
 	}
 
 	public String getOldPointId() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPcreditHuabeiSpayAuthConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2713778536645812862L;
+	private static final long serialVersionUID = 4814796476238463317L;
 
 	/**
 	 * 月月付的资产编码类型；月月付接口，此处必须传：ALICREDITFF

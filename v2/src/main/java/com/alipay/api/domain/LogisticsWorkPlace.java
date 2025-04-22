@@ -4,17 +4,17 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 物流作业平台作业位置模型
+ * 物流作业平台铺设点模型
  *
  * @author auto create
- * @since 1.0, 2025-02-28 14:25:46
+ * @since 1.0, 2025-04-22 10:30:13
  */
 public class LogisticsWorkPlace extends AlipayObject {
 
-	private static final long serialVersionUID = 3398189187384645685L;
+	private static final long serialVersionUID = 5673252254931796527L;
 
 	/**
-	 * 描述铺设位置。对于铺设位置的进一步描述，方便进行作业区分。例如：主柜、副柜、驿站内1号柜。
+	 * 对于铺设点的进一步描述，该值目前不会在作业小程序上展示，仅用作内部标识
 	 */
 	@ApiField("desc")
 	private String desc;
@@ -26,19 +26,21 @@ public class LogisticsWorkPlace extends AlipayObject {
 	private String miniAppRedirectUrl;
 
 	/**
-	 * 铺设位置地址。如果该值为空，铺设位置会取值铺设点位的位置信息
+	 * 铺设点地址。如果该值为空，铺设点地址会取值上层点位的位置信息
 	 */
 	@ApiField("work_place_address")
 	private BusinessAddress workPlaceAddress;
 
 	/**
-	 * 表示线圈铺设实际铺设位置。例如：一个柜组下有3个柜子需要铺设线圈，柜组为铺设点位，待铺设的柜子为实际铺设位置。
+	 * 物流行业作业平台线圈作业时的最小铺设单位。
+例如：蚂蚁A空间北门的柜组下有3个柜子需要铺设线圈。柜组ID=点位ID，柜子ID=铺设点ID
 	 */
 	@ApiField("work_place_id")
 	private String workPlaceId;
 
 	/**
-	 * 表示线圈铺设实际铺设位置。例如：一个柜组下有3个柜子需要铺设线圈，柜组为铺设点位，待铺设的柜子为实际铺设位置。
+	 * 物流行业作业平台线圈作业时的最小铺设单位。
+例如：蚂蚁A空间北门的柜组下有3个柜子需要铺设线圈。柜组ID=点位ID，柜子ID=铺设点ID
 	 */
 	@ApiField("work_place_name")
 	private String workPlaceName;

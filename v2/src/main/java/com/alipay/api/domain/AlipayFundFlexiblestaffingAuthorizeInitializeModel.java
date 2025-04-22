@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundFlexiblestaffingAuthorizeInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7829962576623837862L;
+	private static final long serialVersionUID = 4768846647514569841L;
 
 	/**
 	 * 授权完成后的跳转地址，支持https的h5地址和小程序scheme url，不支持跳转支付宝端外app和页面。

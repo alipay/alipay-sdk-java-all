@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SourceVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4356695755291926861L;
+	private static final long serialVersionUID = 8483433669535917822L;
 
 	/**
 	 * 每小时一个时间段，按该字段分组筛选号源

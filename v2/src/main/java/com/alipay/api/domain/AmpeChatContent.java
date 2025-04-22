@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AmpeChatContent extends AlipayObject {
 
-	private static final long serialVersionUID = 4223119659511637898L;
+	private static final long serialVersionUID = 1536195223686117672L;
 
 	/**
 	 * 返回生成对话

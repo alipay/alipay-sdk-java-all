@@ -18,7 +18,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class LogisticsExternalInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4834146983871345686L;
+	private static final long serialVersionUID = 1854163876627422664L;
 
 	/**
 	 * 在CUPBOARD（取餐柜模式 场景），为指定设备编号，单元格编号；

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenMiniResourceCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4498816772439747494L;
+	private static final long serialVersionUID = 6376284672845744442L;
 
 	/**
 	 * 流量位的计费模式，目前可选择值为：CPS、CPC，根据自己的业务模式选择合适的计费模式。

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 具体款式商品的价格，包含最低价与最高价
  *
  * @author auto create
- * @since 1.0, 2025-04-14 19:39:03
+ * @since 1.0, 2025-04-22 15:42:27
  */
 public class RecycleSkuPriceDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3181428952943561889L;
+	private static final long serialVersionUID = 4357287696145533443L;
 
 	/**
 	 * 最高价（单位为元，金额超过1000就不允许小数点）
@@ -40,6 +40,20 @@ public class RecycleSkuPriceDTO extends AlipayObject {
 	 */
 	@ApiField("price_extend")
 	private RecycleSkuPriceExtDTO priceExtend;
+
+	/**
+	 * 销售价（单位为元，金额超过1000就不允许小数点）
+	 */
+	@ApiField("sale_price")
+	private String salePrice;
+
+	/**
+	 * 区间价时，回收商品会透出一个范围价格，包含最小值与最大值；
+一口价时，回收商品只会透出一个准确的价格；
+四品相价时，回收商品会针对4个品相透出4个区间价
+	 */
+	@ApiField("sku_price_type")
+	private String skuPriceType;
 
 	public String getMaxPrice() {
 		return this.maxPrice;
@@ -67,6 +81,20 @@ public class RecycleSkuPriceDTO extends AlipayObject {
 	}
 	public void setPriceExtend(RecycleSkuPriceExtDTO priceExtend) {
 		this.priceExtend = priceExtend;
+	}
+
+	public String getSalePrice() {
+		return this.salePrice;
+	}
+	public void setSalePrice(String salePrice) {
+		this.salePrice = salePrice;
+	}
+
+	public String getSkuPriceType() {
+		return this.skuPriceType;
+	}
+	public void setSkuPriceType(String skuPriceType) {
+		this.skuPriceType = skuPriceType;
 	}
 
 }

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoLicenseOcrIdentifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6734624684948428998L;
+	private static final long serialVersionUID = 8327679588824428621L;
 
 	/**
 	 * 图片字节byte[]经过base64处理的字符串

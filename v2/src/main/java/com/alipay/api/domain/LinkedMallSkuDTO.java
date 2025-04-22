@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class LinkedMallSkuDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4463462826343923888L;
+	private static final long serialVersionUID = 6787267974465334781L;
 
 	/**
 	 * 69码
