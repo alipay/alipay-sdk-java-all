@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单查询
  *
  * @author auto create
- * @since 1.0, 2024-12-02 16:34:31
+ * @since 1.0, 2025-04-22 17:39:53
  */
 public class AlipayCommerceMedicalInsuranceOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4529979751999343693L;
+	private static final long serialVersionUID = 1576657582499767474L;
 
 	/**
 	 * 标识实际赔付的保险公司，由支付宝定义枚举值，垫资的实际理赔保司为众安，那么枚举值为ZHONGAN

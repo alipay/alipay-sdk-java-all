@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改蚂蚁操作员信息
  *
  * @author auto create
- * @since 1.0, 2022-10-27 17:38:08
+ * @since 1.0, 2025-04-27 14:27:30
  */
 public class AlipayOpenAuthOperatorInfoModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6329694859359944546L;
+	private static final long serialVersionUID = 7276246233149748563L;
 
 	/**
 	 * 操作员信息修改内容

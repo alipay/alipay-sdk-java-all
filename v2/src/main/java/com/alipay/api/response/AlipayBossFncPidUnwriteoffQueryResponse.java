@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBossFncPidUnwriteoffQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1156587358912828874L;
+	private static final long serialVersionUID = 1394921817815878232L;
 
 	/** 
 	 * true表示正在核销，false表示当前没有核销的单据

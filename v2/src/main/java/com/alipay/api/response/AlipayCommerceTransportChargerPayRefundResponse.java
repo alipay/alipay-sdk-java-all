@@ -1,5 +1,6 @@
 package com.alipay.api.response;
 
+import com.alipay.api.internal.mapping.ApiField;
 
 import com.alipay.api.AlipayResponse;
 
@@ -7,14 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.charger.pay.refund response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-14 11:02:29
+ * @since 1.0, 2025-04-25 19:37:28
  */
 public class AlipayCommerceTransportChargerPayRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2599178396648833868L;
+	private static final long serialVersionUID = 1883294837673725711L;
 
-	
+	/** 
+	 * 行业退款业务流水号
+	 */
+	@ApiField("refund_id")
+	private String refundId;
 
-	
+	public void setRefundId(String refundId) {
+		this.refundId = refundId;
+	}
+	public String getRefundId( ) {
+		return this.refundId;
+	}
 
 }

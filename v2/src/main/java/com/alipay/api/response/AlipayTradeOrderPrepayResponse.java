@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayTradeOrderPrepayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3887476542545165445L;
+	private static final long serialVersionUID = 6475842144663555738L;
 
 	/** 
 	 * 支付跳转信息。 用于打开支付方式 app 的 scheme URL，详细使用方式参考<a href="https://global.alipay.com/docs/ac/cashier_payment_cn/redirection#FH33G">链接</a>。

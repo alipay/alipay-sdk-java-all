@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间连弱关联绑定二维码生成
  *
  * @author auto create
- * @since 1.0, 2021-11-25 11:17:48
+ * @since 1.0, 2025-04-27 14:26:38
  */
 public class AntMerchantExpandIndirectBindQrcodecreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8844838253377946824L;
+	private static final long serialVersionUID = 1351741489563428467L;
 
 	/**
 	 * 动作类型，绑定bind/解除绑定un_bind

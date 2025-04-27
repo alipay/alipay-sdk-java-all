@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.wallet.depositorder.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-31 11:27:29
+ * @since 1.0, 2025-04-25 13:52:29
  */
 public class AlipayFundWalletDepositorderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7329913849965949291L;
+	private static final long serialVersionUID = 1877742148499611454L;
 
 	/** 
 	 * 内部单据

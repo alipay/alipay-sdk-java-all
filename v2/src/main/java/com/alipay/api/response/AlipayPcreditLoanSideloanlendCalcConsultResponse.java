@@ -12,11 +12,18 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.sideloanlend.calc.consult response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-14 20:57:49
+ * @since 1.0, 2025-04-25 11:22:28
  */
 public class AlipayPcreditLoanSideloanlendCalcConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8284699941163718121L;
+	private static final long serialVersionUID = 3488949262738778283L;
+
+	/** 
+	 * 本次试算使用的营销卡券列表
+	 */
+	@ApiListField("coupon_code_list")
+	@ApiField("string")
+	private List<String> couponCodeList;
 
 	/** 
 	 * 授信总额度，单位元，保留两位小数
@@ -108,6 +115,13 @@ public class AlipayPcreditLoanSideloanlendCalcConsultResponse extends AlipayResp
 	 */
 	@ApiField("total_amount")
 	private String totalAmount;
+
+	public void setCouponCodeList(List<String> couponCodeList) {
+		this.couponCodeList = couponCodeList;
+	}
+	public List<String> getCouponCodeList( ) {
+		return this.couponCodeList;
+	}
 
 	public void setCreditQuota(String creditQuota) {
 		this.creditQuota = creditQuota;

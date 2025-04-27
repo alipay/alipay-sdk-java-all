@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.servicemarket.test.jianhui.query request
  * 
  * @author auto create
- * @since 1.0, 2025-04-10 11:19:05
+ * @since 1.0, 2025-04-23 13:17:27
  */
 public class AlipayOpenServicemarketTestJianhuiQueryRequest implements AlipayRequest<AlipayOpenServicemarketTestJianhuiQueryResponse> {
 

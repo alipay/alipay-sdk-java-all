@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * API审批时长统计
  *
  * @author auto create
- * @since 1.0, 2025-04-17 10:32:28
+ * @since 1.0, 2025-04-23 17:17:28
  */
 public class AlipayDataTimeTongjiQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4713399553778341916L;
+	private static final long serialVersionUID = 2869861449594977783L;
 
 	/**
 	 * 姓名

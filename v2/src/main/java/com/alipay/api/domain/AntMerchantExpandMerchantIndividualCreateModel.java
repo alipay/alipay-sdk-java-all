@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商家个体工商户创建接口
  *
  * @author auto create
- * @since 1.0, 2022-04-20 17:51:16
+ * @since 1.0, 2025-04-27 14:29:18
  */
 public class AntMerchantExpandMerchantIndividualCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8129267374642313942L;
+	private static final long serialVersionUID = 1651886111632222224L;
 
 	/**
 	 * 商户证件编号（企业或者个体工商户提供营业执照，事业单位提供事证号）

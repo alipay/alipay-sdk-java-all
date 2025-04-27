@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AvatarHumanTaskResultDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7136524862229472858L;
+	private static final long serialVersionUID = 7188367617175989172L;
 
 	/**
 	 * 视频时长，单位秒

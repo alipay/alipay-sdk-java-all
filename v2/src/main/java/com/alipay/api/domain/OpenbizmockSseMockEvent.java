@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenbizmockSseMockEvent extends AlipayObject {
 
-	private static final long serialVersionUID = 4171881426752246557L;
+	private static final long serialVersionUID = 6747759336447781878L;
 
 	/**
 	 * sse注释

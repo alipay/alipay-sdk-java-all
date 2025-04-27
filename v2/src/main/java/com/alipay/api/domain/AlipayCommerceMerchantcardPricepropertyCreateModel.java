@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceMerchantcardPricepropertyCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5584983437812176685L;
+	private static final long serialVersionUID = 7129261737558214762L;
 
 	/**
 	 * 周期卡计费信息，周期卡一客一价需要修改扣款方式可传该字段，非周期卡不传

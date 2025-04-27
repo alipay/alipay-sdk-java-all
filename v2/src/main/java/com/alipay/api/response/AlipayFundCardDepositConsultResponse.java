@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.card.deposit.consult response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-02 10:32:04
+ * @since 1.0, 2025-04-27 10:31:21
  */
 public class AlipayFundCardDepositConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4263136225866841125L;
+	private static final long serialVersionUID = 8113564777547796888L;
 
 	/** 
 	 * 凭证号

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 科室医生排班列表推荐接口
  *
  * @author auto create
- * @since 1.0, 2025-04-22 15:03:58
+ * @since 1.0, 2025-04-27 11:49:03
  */
 public class AlipayCommerceMedicalLargermodelDepartmentscheduleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4152511852365782231L;
+	private static final long serialVersionUID = 7299814253696337161L;
 
 	/**
 	 * 来源渠道

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppIndustryBotVoteSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2666538334424131177L;
+	private static final long serialVersionUID = 6618215694364741347L;
 
 	/**
 	 * 机器人id，机构用户在政务智能助理开放平台创建的机器人id，若获取不到，可联系相关人员获取

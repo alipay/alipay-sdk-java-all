@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-04-22 13:42:26
+ * @since 1.0, 2025-04-24 16:22:26
  */
 public class RiskItemVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1121414711549921216L;
+	private static final long serialVersionUID = 7676351475595127274L;
 
 	/**
 	 * 命中的风险详细信息 当前字段已废弃(字段删除，后续不再透出)
@@ -29,7 +29,6 @@ public class RiskItemVO extends AlipayObject {
 	/**
 	 * 【订单维度共租风险】low / mid / high；
 【小程序交易健康度】数值范围 0.0 ~ 5.0 ，值越大越健康；
-【小程序维度共租风险（已废弃）】P1 ~ P6，数字越大风险越高；
 	 */
 	@ApiField("risk_level")
 	private String riskLevel;

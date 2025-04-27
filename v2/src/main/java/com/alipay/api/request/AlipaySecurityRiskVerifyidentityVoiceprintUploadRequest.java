@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.risk.verifyidentity.voiceprint.upload request
  * 
  * @author auto create
- * @since 1.0, 2025-04-18 13:42:27
+ * @since 1.0, 2025-04-23 19:12:26
  */
 public class AlipaySecurityRiskVerifyidentityVoiceprintUploadRequest implements AlipayRequest<AlipaySecurityRiskVerifyidentityVoiceprintUploadResponse> {
 

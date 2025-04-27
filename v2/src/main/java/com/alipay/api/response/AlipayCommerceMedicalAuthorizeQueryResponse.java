@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.authorize.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-13 17:07:16
+ * @since 1.0, 2025-04-26 11:12:27
  */
 public class AlipayCommerceMedicalAuthorizeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8846941544287228516L;
+	private static final long serialVersionUID = 8163741592558325967L;
 
 	/** 
 	 * 支持：true,不支持：false
 	 */
 	@ApiField("institution_ecode_status")
 	private Boolean institutionEcodeStatus;
+
+	/** 
+	 * 结果页地址
+	 */
+	@ApiField("page_result_url")
+	private String pageResultUrl;
 
 	/** 
 	 * ecode_open:开通一码付
@@ -43,6 +49,13 @@ public class AlipayCommerceMedicalAuthorizeQueryResponse extends AlipayResponse 
 	}
 	public Boolean getInstitutionEcodeStatus( ) {
 		return this.institutionEcodeStatus;
+	}
+
+	public void setPageResultUrl(String pageResultUrl) {
+		this.pageResultUrl = pageResultUrl;
+	}
+	public String getPageResultUrl( ) {
+		return this.pageResultUrl;
 	}
 
 	public void setPageSuggestion(String pageSuggestion) {

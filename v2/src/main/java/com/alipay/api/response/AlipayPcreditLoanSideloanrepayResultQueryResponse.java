@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.sideloanrepay.result.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-02 17:42:38
+ * @since 1.0, 2025-04-25 14:07:30
  */
 public class AlipayPcreditLoanSideloanrepayResultQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6588411191381145651L;
+	private static final long serialVersionUID = 3445737175686314736L;
 
 	/** 
 	 * 还款失败原因编码

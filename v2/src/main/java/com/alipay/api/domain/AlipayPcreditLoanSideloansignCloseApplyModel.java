@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 随身贷解绑退出申请
  *
  * @author auto create
- * @since 1.0, 2024-12-02 17:42:14
+ * @since 1.0, 2025-04-25 14:01:26
  */
 public class AlipayPcreditLoanSideloansignCloseApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4649953617288456348L;
+	private static final long serialVersionUID = 8233913633283246929L;
 
 	/**
 	 * 支付宝用户id，客户在支付宝的身份证

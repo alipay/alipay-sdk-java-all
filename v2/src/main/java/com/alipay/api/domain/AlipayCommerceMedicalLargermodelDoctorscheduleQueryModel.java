@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医生排班列表查询接口
  *
  * @author auto create
- * @since 1.0, 2025-04-22 15:04:13
+ * @since 1.0, 2025-04-27 11:47:51
  */
 public class AlipayCommerceMedicalLargermodelDoctorscheduleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8199464597766151612L;
+	private static final long serialVersionUID = 2735179724312647415L;
 
 	/**
 	 * 来源渠道，健康管家渠道码：HEALTH_BUTLER_REGISTER

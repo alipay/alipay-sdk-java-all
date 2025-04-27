@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.sideloansign.close.apply response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-02 17:42:14
+ * @since 1.0, 2025-04-25 14:01:26
  */
 public class AlipayPcreditLoanSideloansignCloseApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3677741956883827288L;
+	private static final long serialVersionUID = 2774572336692966372L;
 
 	/** 
 	 * 失败原因描述

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量查询签到规则
  *
  * @author auto create
- * @since 1.0, 2025-04-17 17:32:51
+ * @since 1.0, 2025-04-22 19:21:52
  */
 public class AlipayCommerceEducateCheckinRuleBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6753662555344961753L;
+	private static final long serialVersionUID = 1685255527612821264L;
 
 	/**
 	 * 规则生效状态

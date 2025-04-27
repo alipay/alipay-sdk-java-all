@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建门店提交leads作业接口
  *
  * @author auto create
- * @since 1.0, 2025-04-01 17:14:18
+ * @since 1.0, 2025-04-25 20:04:27
  */
 public class AlipayCommerceOperationOpportunityLeadsCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2721457538278344993L;
+	private static final long serialVersionUID = 8826191944963517425L;
 
 	/**
 	 * 业务主体
@@ -43,6 +43,12 @@ public class AlipayCommerceOperationOpportunityLeadsCreateModel extends AlipayOb
 	 */
 	@ApiField("contact_person_info")
 	private BsContactPersonInfo contactPersonInfo;
+
+	/**
+	 * 支付宝侧铺设设备类型
+	 */
+	@ApiField("device_type")
+	private String deviceType;
 
 	/**
 	 * 补充材料
@@ -107,6 +113,13 @@ public class AlipayCommerceOperationOpportunityLeadsCreateModel extends AlipayOb
 	}
 	public void setContactPersonInfo(BsContactPersonInfo contactPersonInfo) {
 		this.contactPersonInfo = contactPersonInfo;
+	}
+
+	public String getDeviceType() {
+		return this.deviceType;
+	}
+	public void setDeviceType(String deviceType) {
+		this.deviceType = deviceType;
 	}
 
 	public BsExtraCredentials getExtraCredentials() {

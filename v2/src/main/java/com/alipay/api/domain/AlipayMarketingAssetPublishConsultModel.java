@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 权益发放批量咨询
  *
  * @author auto create
- * @since 1.0, 2024-08-30 15:12:17
+ * @since 1.0, 2025-04-24 16:50:37
  */
 public class AlipayMarketingAssetPublishConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1211789546484949319L;
+	private static final long serialVersionUID = 4269614868151424612L;
 
 	/**
 	 * 传入业务信息

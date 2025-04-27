@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenCrowdOperationOptionRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 7265383925729684834L;
+	private static final long serialVersionUID = 1162422526836599399L;
 
 	/**
 	 * 当前圈选项数据类型为「NUMBER_RANGE_VALUE 数值范围类型」，需要单独传入圈选范围值。

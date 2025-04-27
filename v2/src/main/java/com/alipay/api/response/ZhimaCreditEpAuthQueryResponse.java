@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.auth.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-18 11:06:48
+ * @since 1.0, 2025-04-25 11:52:29
  */
 public class ZhimaCreditEpAuthQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2525985548578458583L;
+	private static final long serialVersionUID = 6227794546433657664L;
 
 	/** 
 	 * 统一社会信用代码或营业执照注册号
@@ -25,6 +25,12 @@ public class ZhimaCreditEpAuthQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("ep_name")
 	private String epName;
+
+	/** 
+	 * 在cpa模式的预算下，创建投放计划，可以对需要用户进行授权上传的信息进行配置（如身份证照片等），用户上传后，客户可通过CPA接口进行查询
+	 */
+	@ApiField("ext_info")
+	private String extInfo;
 
 	/** 
 	 * 法人身份证号
@@ -56,6 +62,13 @@ public class ZhimaCreditEpAuthQueryResponse extends AlipayResponse {
 	}
 	public String getEpName( ) {
 		return this.epName;
+	}
+
+	public void setExtInfo(String extInfo) {
+		this.extInfo = extInfo;
+	}
+	public String getExtInfo( ) {
+		return this.extInfo;
 	}
 
 	public void setLegalPersonCertNo(String legalPersonCertNo) {

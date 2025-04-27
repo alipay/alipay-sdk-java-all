@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class UsedHouseModelDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6722831582392172367L;
+	private static final long serialVersionUID = 2426255384585183575L;
 
 	/**
 	 * 卫生间数量，单位：个

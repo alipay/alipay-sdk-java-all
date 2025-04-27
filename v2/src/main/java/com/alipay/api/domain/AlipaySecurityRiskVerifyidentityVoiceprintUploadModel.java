@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * AI眼镜声纹核身环境信息数据上报
  *
  * @author auto create
- * @since 1.0, 2025-04-18 13:39:55
+ * @since 1.0, 2025-04-23 17:34:41
  */
 public class AlipaySecurityRiskVerifyidentityVoiceprintUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1451158978745648837L;
+	private static final long serialVersionUID = 1589784638595724617L;
 
 	/**
 	 * 数据类型描述

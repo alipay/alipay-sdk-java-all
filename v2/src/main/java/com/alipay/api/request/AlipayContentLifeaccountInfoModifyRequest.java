@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.content.lifeaccount.info.modify request
  * 
  * @author auto create
- * @since 1.0, 2025-04-18 14:06:08
+ * @since 1.0, 2025-04-27 10:55:26
  */
 public class AlipayContentLifeaccountInfoModifyRequest implements AlipayRequest<AlipayContentLifeaccountInfoModifyResponse> {
 

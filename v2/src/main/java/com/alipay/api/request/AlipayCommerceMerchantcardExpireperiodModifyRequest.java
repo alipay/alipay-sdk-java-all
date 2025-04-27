@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.merchantcard.expireperiod.modify request
  * 
  * @author auto create
- * @since 1.0, 2025-02-21 16:17:26
+ * @since 1.0, 2025-04-23 10:30:23
  */
 public class AlipayCommerceMerchantcardExpireperiodModifyRequest implements AlipayRequest<AlipayCommerceMerchantcardExpireperiodModifyResponse> {
 

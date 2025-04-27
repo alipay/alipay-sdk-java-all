@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户是否签约一码付
  *
  * @author auto create
- * @since 1.0, 2024-11-13 17:02:24
+ * @since 1.0, 2025-04-26 11:09:19
  */
 public class AlipayCommerceMedicalAuthorizeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3136834686343393673L;
+	private static final long serialVersionUID = 8134998236486352579L;
+
+	/**
+	 * 设备SN
+	 */
+	@ApiField("device_sn")
+	private String deviceSn;
 
 	/**
 	 * 用户在IOT设备上刷脸获得的ftoken
@@ -36,6 +42,13 @@ public class AlipayCommerceMedicalAuthorizeQueryModel extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getDeviceSn() {
+		return this.deviceSn;
+	}
+	public void setDeviceSn(String deviceSn) {
+		this.deviceSn = deviceSn;
+	}
 
 	public String getFtoken() {
 		return this.ftoken;

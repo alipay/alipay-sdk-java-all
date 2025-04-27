@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业充电退款查询接口
  *
  * @author auto create
- * @since 1.0, 2025-04-10 12:00:44
+ * @since 1.0, 2025-04-25 19:35:23
  */
 public class AlipayCommerceTransportChargerRefundQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2238748483178135464L;
+	private static final long serialVersionUID = 7854562232243275529L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识

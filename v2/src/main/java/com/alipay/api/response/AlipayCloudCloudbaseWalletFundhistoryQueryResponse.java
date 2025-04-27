@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudCloudbaseWalletFundhistoryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8438418977683945331L;
+	private static final long serialVersionUID = 4572781489838668795L;
 
 	/** 
 	 * 充值记录列表

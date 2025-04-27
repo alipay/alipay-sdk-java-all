@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * sku信息
  *
  * @author auto create
- * @since 1.0, 2025-01-14 14:27:50
+ * @since 1.0, 2025-04-23 10:42:56
  */
 public class SkuInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3318358154669271585L;
+	private static final long serialVersionUID = 8444728579557552361L;
 
 	/**
 	 * sku价格, 单位元
@@ -74,9 +74,10 @@ public class SkuInfoVO extends AlipayObject {
 	private Long volumeWidth;
 
 	/**
-	 * 保留三位小数，单位g/ml
+	 * 保留三位小数，单位g/ml 当前字段已废弃(和其他接口定义保持一致, 使用字符串类型. 此字段不再返回值, 请使用weight_v_2)
 	 */
 	@ApiField("weight")
+	@Deprecated
 	private Long weight;
 
 	/**
@@ -84,6 +85,12 @@ public class SkuInfoVO extends AlipayObject {
 	 */
 	@ApiField("weight_unit")
 	private String weightUnit;
+
+	/**
+	 * 重量信息, 内容需要为纯数字, 精度支持小数点后三位. 重量单位为weight_unit字段的值
+	 */
+	@ApiField("weight_v_2")
+	private String weightV2;
 
 	public String getPrice() {
 		return this.price;
@@ -167,6 +174,13 @@ public class SkuInfoVO extends AlipayObject {
 	}
 	public void setWeightUnit(String weightUnit) {
 		this.weightUnit = weightUnit;
+	}
+
+	public String getWeightV2() {
+		return this.weightV2;
+	}
+	public void setWeightV2(String weightV2) {
+		this.weightV2 = weightV2;
 	}
 
 }

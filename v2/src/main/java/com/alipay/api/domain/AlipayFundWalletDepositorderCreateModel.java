@@ -1,19 +1,21 @@
 package com.alipay.api.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 用户充值创建订单
  *
  * @author auto create
- * @since 1.0, 2024-10-28 22:59:17
+ * @since 1.0, 2025-04-25 12:48:06
  */
 public class AlipayFundWalletDepositorderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7587782719477522113L;
+	private static final long serialVersionUID = 3342234638157199148L;
 
 	/**
 	 * 充值的本金金额，单位：元（人民币）
@@ -93,6 +95,13 @@ public class AlipayFundWalletDepositorderCreateModel extends AlipayObject {
 	 */
 	@ApiField("valid_date")
 	private String validDate;
+
+	/**
+	 * 需要家宴的用户主体信息
+	 */
+	@ApiListField("validate_user_principal_list")
+	@ApiField("validate_user_principal")
+	private List<ValidateUserPrincipal> validateUserPrincipalList;
 
 	public String getAmount() {
 		return this.amount;
@@ -183,6 +192,13 @@ public class AlipayFundWalletDepositorderCreateModel extends AlipayObject {
 	}
 	public void setValidDate(String validDate) {
 		this.validDate = validDate;
+	}
+
+	public List<ValidateUserPrincipal> getValidateUserPrincipalList() {
+		return this.validateUserPrincipalList;
+	}
+	public void setValidateUserPrincipalList(List<ValidateUserPrincipal> validateUserPrincipalList) {
+		this.validateUserPrincipalList = validateUserPrincipalList;
 	}
 
 }

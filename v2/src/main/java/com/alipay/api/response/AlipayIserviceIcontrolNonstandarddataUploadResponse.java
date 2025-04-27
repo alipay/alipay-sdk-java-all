@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.icontrol.nonstandarddata.upload response.
  * 
  * @author auto create
- * @since 1.0, 2024-09-25 09:27:10
+ * @since 1.0, 2025-04-22 17:37:26
  */
 public class AlipayIserviceIcontrolNonstandarddataUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6375376189253828155L;
+	private static final long serialVersionUID = 7429386761294627292L;
 
 	
 

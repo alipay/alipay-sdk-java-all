@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 排班医生
  *
  * @author auto create
- * @since 1.0, 2025-04-22 15:03:58
+ * @since 1.0, 2025-04-27 11:49:03
  */
 public class RegisterDoctorInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5124442371985611565L;
+	private static final long serialVersionUID = 5389918952569561455L;
 
 	/**
 	 * 挂号医生地址
@@ -57,6 +57,12 @@ public class RegisterDoctorInfoDTO extends AlipayObject {
 	 */
 	@ApiField("distance")
 	private String distance;
+
+	/**
+	 * 医生性别
+	 */
+	@ApiField("doctor_gender")
+	private String doctorGender;
 
 	/**
 	 * 平台医生id
@@ -236,6 +242,13 @@ public class RegisterDoctorInfoDTO extends AlipayObject {
 	}
 	public void setDistance(String distance) {
 		this.distance = distance;
+	}
+
+	public String getDoctorGender() {
+		return this.doctorGender;
+	}
+	public void setDoctorGender(String doctorGender) {
+		this.doctorGender = doctorGender;
 	}
 
 	public String getDoctorId() {

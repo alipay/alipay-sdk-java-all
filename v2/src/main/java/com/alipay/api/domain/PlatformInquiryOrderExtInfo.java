@@ -8,11 +8,11 @@ import com.alipay.api.internal.mapping.ApiField;
 
  *
  * @author auto create
- * @since 1.0, 2024-11-22 17:30:37
+ * @since 1.0, 2025-04-25 11:25:30
  */
 public class PlatformInquiryOrderExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7853834348112588528L;
+	private static final long serialVersionUID = 3543252734274581428L;
 
 	/**
 	 * 支付宝渠道订单标识
@@ -28,6 +28,12 @@ public class PlatformInquiryOrderExtInfo extends AlipayObject {
 	 */
 	@ApiField("approve_comment")
 	private String approveComment;
+
+	/**
+	 * 渠道描述
+	 */
+	@ApiField("channel_desc")
+	private String channelDesc;
 
 	/**
 	 * 医患沟通详情链接
@@ -99,6 +105,13 @@ public class PlatformInquiryOrderExtInfo extends AlipayObject {
 	}
 	public void setApproveComment(String approveComment) {
 		this.approveComment = approveComment;
+	}
+
+	public String getChannelDesc() {
+		return this.channelDesc;
+	}
+	public void setChannelDesc(String channelDesc) {
+		this.channelDesc = channelDesc;
 	}
 
 	public String getChatUrl() {

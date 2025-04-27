@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.rent.risk.consult response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-22 13:42:26
+ * @since 1.0, 2025-04-24 16:22:26
  */
 public class AlipayCommerceRentRiskConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2154149296615966983L;
+	private static final long serialVersionUID = 2459732994545335657L;
 
 	/** 
 	 * Boolean类型结果，true-命中极低风险 false-未命中极低风险
@@ -44,6 +44,12 @@ PRO-智安盾专业版，面向签约商户；
 	@ApiField("rent_risk_info_v_o")
 	private List<RentRiskInfoVO> riskInfos;
 
+	/** 
+	 * 对赌实验命中的分组
+	 */
+	@ApiField("vam_group")
+	private String vamGroup;
+
 	public void setExtremelyLowRiskModels(RentRiskProVO extremelyLowRiskModels) {
 		this.extremelyLowRiskModels = extremelyLowRiskModels;
 	}
@@ -70,6 +76,13 @@ PRO-智安盾专业版，面向签约商户；
 	}
 	public List<RentRiskInfoVO> getRiskInfos( ) {
 		return this.riskInfos;
+	}
+
+	public void setVamGroup(String vamGroup) {
+		this.vamGroup = vamGroup;
+	}
+	public String getVamGroup( ) {
+		return this.vamGroup;
 	}
 
 }

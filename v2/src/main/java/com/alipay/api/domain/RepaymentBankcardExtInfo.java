@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RepaymentBankcardExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2135662934912342663L;
+	private static final long serialVersionUID = 5389337677922211161L;
 
 	/**
 	 * 银行卡收款账户类型

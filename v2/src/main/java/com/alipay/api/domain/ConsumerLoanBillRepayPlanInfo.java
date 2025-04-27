@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ConsumerLoanBillRepayPlanInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2623162885823462266L;
+	private static final long serialVersionUID = 7467825821844144239L;
 
 	/**
 	 * 剩余还款期数

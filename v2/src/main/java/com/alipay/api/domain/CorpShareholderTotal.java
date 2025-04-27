@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CorpShareholderTotal extends AlipayObject {
 
-	private static final long serialVersionUID = 6758995187926177795L;
+	private static final long serialVersionUID = 2226438532753119874L;
 
 	/**
 	 * 出资方式

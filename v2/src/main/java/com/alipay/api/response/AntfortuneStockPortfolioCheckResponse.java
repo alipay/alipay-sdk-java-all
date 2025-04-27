@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.stock.portfolio.check response.
  * 
  * @author auto create
- * @since 1.0, 2025-01-09 10:37:22
+ * @since 1.0, 2025-04-23 16:37:26
  */
 public class AntfortuneStockPortfolioCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6479856879435799447L;
+	private static final long serialVersionUID = 1823574712554341592L;
 
 	/** 
 	 * 在自选列表的标的

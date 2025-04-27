@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CreditFreezeSubOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 4245463995823388374L;
+	private static final long serialVersionUID = 4296839434432246617L;
 
 	/**
 	 * 用信冻结额度，单位为元，取值范围[0.01,100000000]，精确到小数点后2位

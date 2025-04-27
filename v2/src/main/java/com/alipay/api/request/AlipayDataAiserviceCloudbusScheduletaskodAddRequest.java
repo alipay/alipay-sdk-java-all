@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.aiservice.cloudbus.scheduletaskod.add request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 08:38:25
+ * @since 1.0, 2025-04-27 13:26:17
  */
 public class AlipayDataAiserviceCloudbusScheduletaskodAddRequest implements AlipayRequest<AlipayDataAiserviceCloudbusScheduletaskodAddResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoCityserviceOpeneventAppitemCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2415621276255848886L;
+	private static final long serialVersionUID = 7228952396288645138L;
 
 	/** 
 	 * 商品在光华侧的唯一标识

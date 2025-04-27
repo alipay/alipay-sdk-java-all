@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签到数据下载
  *
  * @author auto create
- * @since 1.0, 2025-04-21 17:33:40
+ * @since 1.0, 2025-04-22 19:19:13
  */
 public class AlipayCommerceEducateCampusCheckinDownloadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8414122212653515499L;
+	private static final long serialVersionUID = 1522733681621754895L;
 
 	/**
 	 * 机构内标

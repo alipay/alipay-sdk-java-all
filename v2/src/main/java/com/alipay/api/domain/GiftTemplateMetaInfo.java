@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GiftTemplateMetaInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4396768997235968387L;
+	private static final long serialVersionUID = 2424377916847863731L;
 
 	/**
 	 * 视觉资源链接，使用于红包详情页

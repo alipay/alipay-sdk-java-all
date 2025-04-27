@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCloudCloudpromoBoardingpointInfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3699899574939753784L;
+	private static final long serialVersionUID = 6138511661264849861L;
 
 	/**
 	 * 1号上车点

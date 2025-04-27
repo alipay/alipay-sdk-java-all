@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMallApplyruleBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4149186382746156598L;
+	private static final long serialVersionUID = 2413712439411978565L;
 
 	/**
 	 * 商圈mallid，由支付宝侧业务提供

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMerchantQipanLbscrowdCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8212275333953119951L;
+	private static final long serialVersionUID = 2378931276953389778L;
 
 	/** 
 	 * 支付宝人群code

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 宠物险-结算单状态同步
  *
  * @author auto create
- * @since 1.0, 2024-07-23 22:08:28
+ * @since 1.0, 2025-04-24 11:39:56
  */
 public class AlipayInsSceneSettleWorkersaasSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6555993977792324775L;
+	private static final long serialVersionUID = 4362846899463819224L;
 
 	/**
 	 * 收款人户名

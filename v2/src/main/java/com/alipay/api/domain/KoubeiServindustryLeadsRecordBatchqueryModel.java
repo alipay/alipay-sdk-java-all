@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiServindustryLeadsRecordBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3331989177516836575L;
+	private static final long serialVersionUID = 2344294814193953184L;
 
 	/**
 	 * 查询时间范围结束时间（客资创建时间）,不能早于查询时间范围的开始时间，查询时间范围要在三个月之内（开始和结束时间的跨度），不能超过三个月。

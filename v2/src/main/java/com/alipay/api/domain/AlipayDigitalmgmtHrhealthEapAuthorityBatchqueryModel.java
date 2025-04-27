@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDigitalmgmtHrhealthEapAuthorityBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3858856418296153473L;
+	private static final long serialVersionUID = 6824271969159689256L;
 
 	/**
 	 * 该参数用来标识进入供应商系统的用户标志，是登录供应商应用后解析来的，蚂蚁EAP会将此参数作为用户标志

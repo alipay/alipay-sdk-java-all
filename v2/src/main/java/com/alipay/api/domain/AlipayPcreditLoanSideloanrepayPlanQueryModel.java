@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 随身贷合并还款计划查询
  *
  * @author auto create
- * @since 1.0, 2024-12-02 17:42:07
+ * @since 1.0, 2025-04-25 15:45:05
  */
 public class AlipayPcreditLoanSideloanrepayPlanQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1466694263943938644L;
+	private static final long serialVersionUID = 3681748589186868837L;
 
 	/**
 	 * 支付宝用户id

@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 随身贷支用试算
  *
  * @author auto create
- * @since 1.0, 2024-12-10 11:28:20
+ * @since 1.0, 2025-04-25 11:19:58
  */
 public class AlipayPcreditLoanSideloanlendCalcConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1376244579722641953L;
+	private static final long serialVersionUID = 8761714372362761515L;
 
 	/**
 	 * 支付宝用户id，客户在支付宝的身份证
@@ -24,6 +27,13 @@ public class AlipayPcreditLoanSideloanlendCalcConsultModel extends AlipayObject 
 	 */
 	@ApiField("apply_loan_amount")
 	private String applyLoanAmount;
+
+	/**
+	 * 营销卡券Code列表，传权益实例ID列表，试算接口从列表中可选的卡券进行试算
+	 */
+	@ApiListField("coupon_code_list")
+	@ApiField("string")
+	private List<String> couponCodeList;
 
 	/**
 	 * 待补充
@@ -78,6 +88,13 @@ BALLOON_MORTGAGE按期付息到期还本
 	}
 	public void setApplyLoanAmount(String applyLoanAmount) {
 		this.applyLoanAmount = applyLoanAmount;
+	}
+
+	public List<String> getCouponCodeList() {
+		return this.couponCodeList;
+	}
+	public void setCouponCodeList(List<String> couponCodeList) {
+		this.couponCodeList = couponCodeList;
 	}
 
 	public String getExtension() {

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.sideloanrepay.budget.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-02 17:42:43
+ * @since 1.0, 2025-04-25 15:47:28
  */
 public class AlipayPcreditLoanSideloanrepayBudgetQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5766469388661984533L;
+	private static final long serialVersionUID = 5574891322855848521L;
 
 	/** 
 	 * 试算还款利息 单位:元, 精度:小数点后两位

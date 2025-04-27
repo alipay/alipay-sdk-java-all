@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 停车支付信息同步接口
  *
  * @author auto create
- * @since 1.0, 2025-03-07 16:39:41
+ * @since 1.0, 2025-04-22 19:21:18
  */
 public class AlipayCommerceTransportParkingPaymentinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6387156537251991334L;
+	private static final long serialVersionUID = 7445245885199433662L;
 
 	/**
 	 * 支付宝交易号；
@@ -61,6 +61,12 @@ public class AlipayCommerceTransportParkingPaymentinfoSyncModel extends AlipayOb
 	private String mobileNumber;
 
 	/**
+	 * 表示当前请求类型：用户缴费或用户在岗亭前缴费准备离场状态
+	 */
+	@ApiField("node_type")
+	private String nodeType;
+
+	/**
 	 * 蚂蚁会员统一ID对应的归属应用appid
 	 */
 	@ApiField("open_appid")
@@ -71,6 +77,12 @@ public class AlipayCommerceTransportParkingPaymentinfoSyncModel extends AlipayOb
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/**
+	 * 停车岗亭前订单创建时间，格式"YYYY-MM-DD HH:mm:ss"，24小时制，请保证服务器时间准确，创建时不应晚于当前网络时间
+	 */
+	@ApiField("order_create_time")
+	private Date orderCreateTime;
 
 	/**
 	 * 服务商停车费支付订单号；
@@ -202,6 +214,13 @@ FREE: 免费
 		this.mobileNumber = mobileNumber;
 	}
 
+	public String getNodeType() {
+		return this.nodeType;
+	}
+	public void setNodeType(String nodeType) {
+		this.nodeType = nodeType;
+	}
+
 	public String getOpenAppid() {
 		return this.openAppid;
 	}
@@ -214,6 +233,13 @@ FREE: 免费
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public Date getOrderCreateTime() {
+		return this.orderCreateTime;
+	}
+	public void setOrderCreateTime(Date orderCreateTime) {
+		this.orderCreateTime = orderCreateTime;
 	}
 
 	public String getOutOrderNo() {

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 随身贷产品支用试算时返回的详细还款计划列表对象
  *
  * @author auto create
- * @since 1.0, 2024-12-02 17:42:09
+ * @since 1.0, 2025-04-25 11:19:58
  */
 public class InstallmentPlan extends AlipayObject {
 
-	private static final long serialVersionUID = 4441932557249545921L;
+	private static final long serialVersionUID = 8816927745634434478L;
 
 	/**
 	 * 分期还款日、分期到期日
@@ -38,6 +38,12 @@ public class InstallmentPlan extends AlipayObject {
 	 */
 	@ApiField("principal")
 	private String principal;
+
+	/**
+	 * 优惠利息，单位元，保留两位小数
+	 */
+	@ApiField("promotion_amount")
+	private String promotionAmount;
 
 	/**
 	 * 总金额，单位元，保留两位小数
@@ -71,6 +77,13 @@ public class InstallmentPlan extends AlipayObject {
 	}
 	public void setPrincipal(String principal) {
 		this.principal = principal;
+	}
+
+	public String getPromotionAmount() {
+		return this.promotionAmount;
+	}
+	public void setPromotionAmount(String promotionAmount) {
+		this.promotionAmount = promotionAmount;
 	}
 
 	public String getTotalAmount() {

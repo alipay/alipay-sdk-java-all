@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 校验标的是否在自选列表
  *
  * @author auto create
- * @since 1.0, 2025-01-09 10:32:01
+ * @since 1.0, 2025-04-23 16:33:19
  */
 public class AntfortuneStockPortfolioCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4149142531127853918L;
+	private static final long serialVersionUID = 7349716926381796675L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识

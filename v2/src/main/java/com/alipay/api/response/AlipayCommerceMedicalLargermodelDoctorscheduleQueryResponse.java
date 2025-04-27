@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.largermodel.doctorschedule.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-22 15:07:28
+ * @since 1.0, 2025-04-27 11:52:26
  */
 public class AlipayCommerceMedicalLargermodelDoctorscheduleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8791647748459625925L;
+	private static final long serialVersionUID = 1194826928514349153L;
 
 	/** 
 	 * 会话id
@@ -35,6 +35,12 @@ public class AlipayCommerceMedicalLargermodelDoctorscheduleQueryResponse extends
 	 */
 	@ApiField("detail_url")
 	private String detailUrl;
+
+	/** 
+	 * 医生性别
+	 */
+	@ApiField("doctor_gender")
+	private String doctorGender;
 
 	/** 
 	 * 外部平台医生Id
@@ -170,6 +176,13 @@ PHYSICIANS ：医师
 	}
 	public String getDetailUrl( ) {
 		return this.detailUrl;
+	}
+
+	public void setDoctorGender(String doctorGender) {
+		this.doctorGender = doctorGender;
+	}
+	public String getDoctorGender( ) {
+		return this.doctorGender;
 	}
 
 	public void setDoctorId(String doctorId) {

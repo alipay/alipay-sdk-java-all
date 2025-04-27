@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 随身贷支用申请
  *
  * @author auto create
- * @since 1.0, 2024-12-02 17:42:10
+ * @since 1.0, 2025-04-25 11:19:58
  */
 public class AlipayPcreditLoanSideloanlendLendApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5815727916677587578L;
+	private static final long serialVersionUID = 3279517657978629773L;
 
 	/**
 	 * 支付宝用户id
@@ -24,6 +27,13 @@ public class AlipayPcreditLoanSideloanlendLendApplyModel extends AlipayObject {
 	 */
 	@ApiField("bank_card_id")
 	private String bankCardId;
+
+	/**
+	 * 营销卡券Code列表,不能超过100个
+	 */
+	@ApiListField("coupon_code_list")
+	@ApiField("string")
+	private List<String> couponCodeList;
 
 	/**
 	 * 扩展字段JSON String
@@ -77,6 +87,12 @@ TERM -- “期”
 	private String productCode;
 
 	/**
+	 * 优惠利息，单位元，保留2位小数
+	 */
+	@ApiField("promotion_amount")
+	private String promotionAmount;
+
+	/**
 	 * 固定还款日
 	 */
 	@ApiField("repayment_day")
@@ -110,6 +126,13 @@ REPAY_OUTRIGHT一次性到期还本付息
 	}
 	public void setBankCardId(String bankCardId) {
 		this.bankCardId = bankCardId;
+	}
+
+	public List<String> getCouponCodeList() {
+		return this.couponCodeList;
+	}
+	public void setCouponCodeList(List<String> couponCodeList) {
+		this.couponCodeList = couponCodeList;
 	}
 
 	public String getExtension() {
@@ -166,6 +189,13 @@ REPAY_OUTRIGHT一次性到期还本付息
 	}
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
+	}
+
+	public String getPromotionAmount() {
+		return this.promotionAmount;
+	}
+	public void setPromotionAmount(String promotionAmount) {
+		this.promotionAmount = promotionAmount;
 	}
 
 	public Long getRepaymentDay() {

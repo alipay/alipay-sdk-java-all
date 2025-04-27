@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportEbikerentalDiscountPreconsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6325216236147233586L;
+	private static final long serialVersionUID = 1692424159345477378L;
 
 	/** 
 	 * 订单优惠金额，单位元

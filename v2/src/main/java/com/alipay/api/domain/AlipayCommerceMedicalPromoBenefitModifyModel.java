@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 阿里云商品修改同步接口
  *
  * @author auto create
- * @since 1.0, 2025-04-11 18:05:59
+ * @since 1.0, 2025-04-23 11:53:07
  */
 public class AlipayCommerceMedicalPromoBenefitModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6455627728556175613L;
+	private static final long serialVersionUID = 2722337764669644849L;
 
 	/**
 	 * 类目id
@@ -27,6 +27,12 @@ public class AlipayCommerceMedicalPromoBenefitModifyModel extends AlipayObject {
 	 */
 	@ApiField("category_name")
 	private String categoryName;
+
+	/**
+	 * 动作
+	 */
+	@ApiField("item_action")
+	private String itemAction;
 
 	/**
 	 * 淘宝商品id
@@ -77,6 +83,13 @@ public class AlipayCommerceMedicalPromoBenefitModifyModel extends AlipayObject {
 	}
 	public void setCategoryName(String categoryName) {
 		this.categoryName = categoryName;
+	}
+
+	public String getItemAction() {
+		return this.itemAction;
+	}
+	public void setItemAction(String itemAction) {
+		this.itemAction = itemAction;
 	}
 
 	public String getItemId() {

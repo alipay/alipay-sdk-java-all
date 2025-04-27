@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 随身贷还款试算
  *
  * @author auto create
- * @since 1.0, 2024-12-02 17:42:43
+ * @since 1.0, 2025-04-25 15:45:24
  */
 public class AlipayPcreditLoanSideloanrepayBudgetQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6232592334552443834L;
+	private static final long serialVersionUID = 3297493728119629411L;
 
 	/**
 	 * 支付宝用户id

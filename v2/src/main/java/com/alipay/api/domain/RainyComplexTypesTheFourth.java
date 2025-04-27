@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * 出参测试数据
+ * null
  *
  * @author auto create
  * @since 1.0, 2025-04-02 17:57:30
  */
 public class RainyComplexTypesTheFourth extends AlipayObject {
 
-	private static final long serialVersionUID = 6832434557512811525L;
+	private static final long serialVersionUID = 8324331632848225418L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识

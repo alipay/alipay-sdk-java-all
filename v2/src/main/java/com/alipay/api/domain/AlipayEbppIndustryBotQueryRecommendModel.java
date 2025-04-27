@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业智能助理机器人继续问推荐
  *
  * @author auto create
- * @since 1.0, 2025-02-18 18:34:28
+ * @since 1.0, 2025-04-25 16:37:21
  */
 public class AlipayEbppIndustryBotQueryRecommendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1638762644744994163L;
+	private static final long serialVersionUID = 5424489817272779169L;
 
 	/**
 	 * 在获取不到用户定位时，传递的兜底城市编码

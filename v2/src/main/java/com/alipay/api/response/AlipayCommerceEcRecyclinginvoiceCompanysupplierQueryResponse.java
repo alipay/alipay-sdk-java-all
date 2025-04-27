@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.recyclinginvoice.companysupplier.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-22 16:24:35
+ * @since 1.0, 2025-04-22 16:27:30
  */
 public class AlipayCommerceEcRecyclinginvoiceCompanysupplierQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5139968345712457859L;
+	private static final long serialVersionUID = 3248659893769342898L;
 
 	/** 
 	 * 当前页实际数据条数
