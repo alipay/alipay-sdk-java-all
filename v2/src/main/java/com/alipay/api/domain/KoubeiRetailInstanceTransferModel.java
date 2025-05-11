@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KoubeiRetailInstanceTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2311223496889145978L;
+	private static final long serialVersionUID = 5739817113339357922L;
 
 	/**
 	 * 置顶的券id列表信息，id的顺序指定置顶的券的顺序，如果空表示将原先的id删除。列表数量限制为20

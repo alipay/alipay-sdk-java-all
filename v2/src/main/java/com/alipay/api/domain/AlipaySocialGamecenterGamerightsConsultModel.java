@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 咨询游戏乐园发奖信息
  *
  * @author auto create
- * @since 1.0, 2025-04-10 16:11:15
+ * @since 1.0, 2025-05-08 23:37:53
  */
 public class AlipaySocialGamecenterGamerightsConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4879321816417461234L;
+	private static final long serialVersionUID = 7843822979888334551L;
 
 	/**
 	 * 咨询权益数量

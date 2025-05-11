@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 设置卡自定义价格
  *
  * @author auto create
- * @since 1.0, 2025-03-06 11:22:18
+ * @since 1.0, 2025-04-30 20:04:22
  */
 public class AlipayCommerceMerchantcardPricepropertyCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7129261737558214762L;
+	private static final long serialVersionUID = 5747517768789978378L;
 
 	/**
 	 * 周期卡计费信息，周期卡一客一价需要修改扣款方式可传该字段，非周期卡不传
@@ -39,6 +39,12 @@ public class AlipayCommerceMerchantcardPricepropertyCreateModel extends AlipayOb
 	 */
 	@ApiField("card_type")
 	private String cardType;
+
+	/**
+	 * 是否立即扣款，如果传入为true，则下单时则立即扣款。否则不立即扣款。
+	 */
+	@ApiField("charge_now")
+	private Boolean chargeNow;
 
 	/**
 	 * 原价，单位：分
@@ -85,6 +91,13 @@ public class AlipayCommerceMerchantcardPricepropertyCreateModel extends AlipayOb
 	}
 	public void setCardType(String cardType) {
 		this.cardType = cardType;
+	}
+
+	public Boolean getChargeNow() {
+		return this.chargeNow;
+	}
+	public void setChargeNow(Boolean chargeNow) {
+		this.chargeNow = chargeNow;
 	}
 
 	public Long getOriginalPrice() {

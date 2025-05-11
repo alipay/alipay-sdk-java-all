@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPayAppBainaPrizeReturnModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2845518597876416749L;
+	private static final long serialVersionUID = 2584237354268383245L;
 
 	/**
 	 * 下单商品id

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SlmCaseErrorInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4856314157681158525L;
+	private static final long serialVersionUID = 8194981576893797647L;
 
 	/**
 	 * 错误描述

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业ETC车辆行程查询
  *
  * @author auto create
- * @since 1.0, 2024-06-10 16:53:51
+ * @since 1.0, 2025-04-29 21:55:18
  */
 public class AlipayCommerceTransportEtcenterpriseTripQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3583875865217334619L;
+	private static final long serialVersionUID = 6633846839114453925L;
 
 	/**
 	 * 支付宝企业id

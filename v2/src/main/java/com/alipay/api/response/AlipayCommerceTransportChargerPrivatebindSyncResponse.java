@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.charger.privatebind.sync response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-04 16:07:19
+ * @since 1.0, 2025-05-06 17:32:30
  */
 public class AlipayCommerceTransportChargerPrivatebindSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5154995145278983491L;
+	private static final long serialVersionUID = 5832298176451246118L;
 
 	
 

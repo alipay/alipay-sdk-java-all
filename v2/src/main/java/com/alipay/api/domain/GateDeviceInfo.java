@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * null
+ * 门禁设备信息模型
  *
  * @author auto create
- * @since 1.0, 2025-04-23 17:22:30
+ * @since 1.0, 2025-04-23 17:17:22
  */
 public class GateDeviceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6175417444928526542L;
+	private static final long serialVersionUID = 6664281123413689853L;
 
 	/**
 	 * 开卡平台支持的门禁厂商，平台会根据小区和门禁厂商，决策对应的开卡设备

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 授信信息
  *
  * @author auto create
- * @since 1.0, 2025-03-28 00:04:16
+ * @since 1.0, 2025-05-08 14:48:56
  */
 public class Credit extends AlipayObject {
 
-	private static final long serialVersionUID = 8138138782889787224L;
+	private static final long serialVersionUID = 4735354237813779987L;
 
 	/**
 	 * 客户授信金额，单位分
@@ -28,6 +28,12 @@ public class Credit extends AlipayObject {
 	@ApiListField("credit_pricing_list")
 	@ApiField("credit_pricing")
 	private List<CreditPricing> creditPricingList;
+
+	/**
+	 * 是否默认授信
+	 */
+	@ApiField("default_credit")
+	private Boolean defaultCredit;
 
 	/**
 	 * 授信过期时间，格式：yyyy-MM-dd HH:mm:ss
@@ -59,6 +65,13 @@ public class Credit extends AlipayObject {
 	}
 	public void setCreditPricingList(List<CreditPricing> creditPricingList) {
 		this.creditPricingList = creditPricingList;
+	}
+
+	public Boolean getDefaultCredit() {
+		return this.defaultCredit;
+	}
+	public void setDefaultCredit(Boolean defaultCredit) {
+		this.defaultCredit = defaultCredit;
 	}
 
 	public String getExpireTime() {

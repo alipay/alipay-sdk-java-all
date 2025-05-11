@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 提现使用的扩展策略
  *
  * @author auto create
- * @since 1.0, 2024-07-04 22:19:49
+ * @since 1.0, 2025-04-27 21:51:16
  */
 public class ExtendStrategy extends AlipayObject {
 
-	private static final long serialVersionUID = 2456828815725691576L;
+	private static final long serialVersionUID = 5268322487225624512L;
 
 	/**
 	 * 账户信息
@@ -20,7 +20,9 @@ public class ExtendStrategy extends AlipayObject {
 	private ParticipantForm participantForm;
 
 	/**
-	 * 提现策略，当前支持同人账户提现（策略key: withdrawToSamePersonAccount）
+	 * 提现策略。
+withdrawToSamePersonAccount仅支持支付宝已注销，但是场景钱包仍有余额的情况；
+withdrawToSameCidAccount支持同CID，且双方支付宝未注销时，场景钱包提现到同CID支付宝余额。
 	 */
 	@ApiField("strategy")
 	private String strategy;

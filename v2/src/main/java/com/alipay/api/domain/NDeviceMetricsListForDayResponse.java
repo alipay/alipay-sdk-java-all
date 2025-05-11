@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * N设备日维度明细信息
  *
  * @author auto create
- * @since 1.0, 2024-12-27 19:49:16
+ * @since 1.0, 2025-05-08 11:09:27
  */
 public class NDeviceMetricsListForDayResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 4217926912122537727L;
+	private static final long serialVersionUID = 7779674387898786343L;
 
 	/**
 	 * 支付宝金额，单位元
@@ -170,6 +170,12 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 	 */
 	@ApiField("store_id")
 	private String storeId;
+
+	/**
+	 * 碰一下用户数，单位为人，日维度已去重
+	 */
+	@ApiField("trd_nfc_device_usercnt")
+	private String trdNfcDeviceUsercnt;
 
 	public String getAlipayAmount() {
 		return this.alipayAmount;
@@ -351,6 +357,13 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 	}
 	public void setStoreId(String storeId) {
 		this.storeId = storeId;
+	}
+
+	public String getTrdNfcDeviceUsercnt() {
+		return this.trdNfcDeviceUsercnt;
+	}
+	public void setTrdNfcDeviceUsercnt(String trdNfcDeviceUsercnt) {
+		this.trdNfcDeviceUsercnt = trdNfcDeviceUsercnt;
 	}
 
 }

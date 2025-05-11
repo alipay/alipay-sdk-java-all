@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 删除签到规则
  *
  * @author auto create
- * @since 1.0, 2025-04-22 19:18:43
+ * @since 1.0, 2025-04-29 14:17:57
  */
 public class AlipayCommerceEducateCheckinRuleDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2491788332836999293L;
+	private static final long serialVersionUID = 5394352686613534761L;
 
 	/**
 	 * 机构内标

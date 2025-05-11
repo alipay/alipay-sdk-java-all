@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CarbonJusticeQueryOpenapiDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6279558143132983229L;
+	private static final long serialVersionUID = 7559131561491634589L;
 
 	/**
 	 * 本次绿色行程的距离。单位-米。目前仅地铁支持距离计算

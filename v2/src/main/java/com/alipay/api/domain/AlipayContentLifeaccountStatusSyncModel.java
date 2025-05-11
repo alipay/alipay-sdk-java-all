@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部账号状态同步
  *
  * @author auto create
- * @since 1.0, 2025-04-08 09:57:20
+ * @since 1.0, 2025-04-28 17:15:02
  */
 public class AlipayContentLifeaccountStatusSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6398437536719242873L;
+	private static final long serialVersionUID = 8867444756312712895L;
 
 	/**
 	 * 账号最新状态，当前仅支持注销

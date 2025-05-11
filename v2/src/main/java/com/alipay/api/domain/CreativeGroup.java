@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CreativeGroup extends AlipayObject {
 
-	private static final long serialVersionUID = 8135784657812437498L;
+	private static final long serialVersionUID = 2761341446772715563L;
 
 	/**
 	 * 素材组创建时间

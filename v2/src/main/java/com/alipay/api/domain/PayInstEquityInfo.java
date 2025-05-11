@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PayInstEquityInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3553958694387924235L;
+	private static final long serialVersionUID = 3356814538356672895L;
 
 	/**
 	 * 权益可用开始时间，遵循rfc3339标准格式，格式为yyyy-MM-DDTHH:mm:ss.sss+TIMEZONE，yyyy-MM-DD表示年月日，T出现在字符串中，表示time元素的开头，HH:mm:ss.sss表示时分秒毫秒，TIMEZONE表示时区（+08:00表示东八区时间，领先UTC 8小时，即北京时间）。例如：2024-05-08T13:29:35.120+08:00表示，北京时间2024年5月8日 13点29分35秒。

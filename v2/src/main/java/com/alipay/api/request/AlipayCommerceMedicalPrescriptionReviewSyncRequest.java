@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.prescription.review.sync request
  * 
  * @author auto create
- * @since 1.0, 2025-04-16 10:37:30
+ * @since 1.0, 2025-04-30 15:43:13
  */
 public class AlipayCommerceMedicalPrescriptionReviewSyncRequest implements AlipayRequest<AlipayCommerceMedicalPrescriptionReviewSyncResponse> {
 

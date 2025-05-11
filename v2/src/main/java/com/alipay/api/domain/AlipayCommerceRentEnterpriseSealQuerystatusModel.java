@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签署状态查询
  *
  * @author auto create
- * @since 1.0, 2025-03-07 10:19:46
+ * @since 1.0, 2025-04-28 17:32:10
  */
 public class AlipayCommerceRentEnterpriseSealQuerystatusModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5752476397874473621L;
+	private static final long serialVersionUID = 1683384567455121642L;
 
 	/**
 	 * 业务流水号

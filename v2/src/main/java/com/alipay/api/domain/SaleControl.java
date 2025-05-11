@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 机票的售卖条件组合
  *
  * @author auto create
- * @since 1.0, 2024-09-30 01:14:32
+ * @since 1.0, 2025-04-28 21:59:18
  */
 public class SaleControl extends AlipayObject {
 
-	private static final long serialVersionUID = 1249382841591236769L;
+	private static final long serialVersionUID = 6125368229217233929L;
 
 	/**
 	 * 如果是多航段打包规则，传入一个：-1，否则的话，根据数字来判断是第几个航段

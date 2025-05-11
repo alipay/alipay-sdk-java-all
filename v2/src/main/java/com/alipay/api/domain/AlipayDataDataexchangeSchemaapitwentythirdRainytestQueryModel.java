@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 新模型接口测试23_引用复杂类型
  *
  * @author auto create
- * @since 1.0, 2025-04-23 16:41:31
+ * @since 1.0, 2025-05-07 10:32:27
  */
 public class AlipayDataDataexchangeSchemaapitwentythirdRainytestQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8618668988868871753L;
+	private static final long serialVersionUID = 1184243168712199869L;
+
+	/**
+	 * 1.1版本新增的 测试数据
+	 */
+	@ApiField("demo")
+	private String demo;
 
 	/**
 	 * 测试数据，匿名复杂类型示例
@@ -26,10 +32,23 @@ public class AlipayDataDataexchangeSchemaapitwentythirdRainytestQueryModel exten
 	private RainyComplexTypesTheThirteen demoStrongRef;
 
 	/**
+	 * 新增的测试数据
+	 */
+	@ApiField("demo_vv_ref")
+	private RainyComplexTypesTheFourteen demoVvRef;
+
+	/**
 	 * 测试数据，弱引用复杂类型示例
 	 */
 	@ApiField("demo_wink_ref")
 	private RainyComplexTypesTheFourteenOne demoWinkRef;
+
+	public String getDemo() {
+		return this.demo;
+	}
+	public void setDemo(String demo) {
+		this.demo = demo;
+	}
 
 	public RainyComplexTypesRefWeakFifth getDemoRef() {
 		return this.demoRef;
@@ -43,6 +62,13 @@ public class AlipayDataDataexchangeSchemaapitwentythirdRainytestQueryModel exten
 	}
 	public void setDemoStrongRef(RainyComplexTypesTheThirteen demoStrongRef) {
 		this.demoStrongRef = demoStrongRef;
+	}
+
+	public RainyComplexTypesTheFourteen getDemoVvRef() {
+		return this.demoVvRef;
+	}
+	public void setDemoVvRef(RainyComplexTypesTheFourteen demoVvRef) {
+		this.demoVvRef = demoVvRef;
 	}
 
 	public RainyComplexTypesTheFourteenOne getDemoWinkRef() {

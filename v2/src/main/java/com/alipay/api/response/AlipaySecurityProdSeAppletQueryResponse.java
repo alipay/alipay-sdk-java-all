@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.se.applet.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 19:33:19
+ * @since 1.0, 2025-04-29 15:07:39
  */
 public class AlipaySecurityProdSeAppletQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2616968559212495585L;
+	private static final long serialVersionUID = 6378824723993232941L;
 
 	/** 
 	 * apdu_commands:apdu指令列表，逗号分隔，根据该值确定硬件端对applet的具体操作

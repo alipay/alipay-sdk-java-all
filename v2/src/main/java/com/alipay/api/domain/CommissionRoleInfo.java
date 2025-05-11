@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * null
+ * 抽佣角色信息
  *
  * @author auto create
- * @since 1.0, 2025-03-19 14:12:27
+ * @since 1.0, 2025-01-05 10:03:05
  */
 public class CommissionRoleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8397952337741343319L;
+	private static final long serialVersionUID = 4174656455452298969L;
 
 	/**
 	 * 合作伙伴支付宝账号名称

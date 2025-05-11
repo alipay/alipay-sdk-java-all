@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenMiniCloudAositemQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4357716134727447856L;
+	private static final long serialVersionUID = 1178361792289483315L;
 
 	/**
 	 * 需要进行聚合返回的字段，如需要对搜索的结果的发货地字段进行聚合，则将发货地对应的字段名称传给后段既可

@@ -4,23 +4,23 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 运行时的设备、卡片信息
+ * AMPE设备运行时环境信息
  *
  * @author auto create
- * @since 1.0, 2025-04-17 15:32:28
+ * @since 1.0, 2025-04-17 19:27:39
  */
 public class AmpeDeviceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4571919397734935459L;
+	private static final long serialVersionUID = 6156133473425176182L;
 
 	/**
-	 * 支付宝卡片的高度
+	 * 支付宝卡片的高度，单位：像素
 	 */
 	@ApiField("card_height")
 	private Long cardHeight;
 
 	/**
-	 * 支付宝卡片的宽度
+	 * 支付宝卡片的宽度，单位：像素
 	 */
 	@ApiField("card_width")
 	private Long cardWidth;

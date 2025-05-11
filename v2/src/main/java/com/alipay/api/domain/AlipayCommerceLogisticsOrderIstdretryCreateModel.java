@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceLogisticsOrderIstdretryCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6266269241349149144L;
+	private static final long serialVersionUID = 8146393727672275546L;
 
 	/**
 	 * 消费者id， 如果consumer_source是alipay，则consumer_id必须是支付宝用户uid；如果consumer_source是wx，则consumer_id可以为空

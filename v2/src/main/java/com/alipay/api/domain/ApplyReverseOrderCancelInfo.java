@@ -10,11 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 逆向入库ARO单撤销消息体
  *
  * @author auto create
- * @since 1.0, 2025-04-21 10:29:16
+ * @since 1.0, 2025-04-30 17:55:53
  */
 public class ApplyReverseOrderCancelInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3734494355934463415L;
+	private static final long serialVersionUID = 5489973971868194676L;
+
+	/**
+	 * 指令id列表
+	 */
+	@ApiListField("assign_item_id")
+	@ApiField("string")
+	private List<String> assignItemId;
 
 	/**
 	 * 逆向配送指令集合
@@ -28,6 +35,13 @@ public class ApplyReverseOrderCancelInfo extends AlipayObject {
 	 */
 	@ApiField("reverse_apply_order_id")
 	private String reverseApplyOrderId;
+
+	public List<String> getAssignItemId() {
+		return this.assignItemId;
+	}
+	public void setAssignItemId(List<String> assignItemId) {
+		this.assignItemId = assignItemId;
+	}
 
 	public List<String> getAssignItemIds() {
 		return this.assignItemIds;

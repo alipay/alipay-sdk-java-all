@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NfcFWJCommonResult extends AlipayObject {
 
-	private static final long serialVersionUID = 4383225262771524976L;
+	private static final long serialVersionUID = 1752253331346871948L;
 
 	/**
 	 * NFC烧录URL

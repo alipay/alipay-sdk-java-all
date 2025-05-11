@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * null
+ * SPU属性列表
  *
  * @author auto create
- * @since 1.0, 2025-03-31 19:57:27
+ * @since 1.0, 2025-03-31 11:41:53
  */
 public class SpuAttributeInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4263285849738271643L;
+	private static final long serialVersionUID = 4538781516161628282L;
 
 	/**
 	 * 属性KEY

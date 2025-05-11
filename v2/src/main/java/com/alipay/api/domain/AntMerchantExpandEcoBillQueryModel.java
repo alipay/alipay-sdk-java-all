@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ISV生态供应商查询返佣账单信息接口
  *
  * @author auto create
- * @since 1.0, 2025-04-08 21:18:17
+ * @since 1.0, 2025-04-30 15:41:57
  */
 public class AntMerchantExpandEcoBillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7736192933697938136L;
+	private static final long serialVersionUID = 5121399263451998547L;
 
 	/**
 	 * 出账日期
@@ -24,6 +24,12 @@ public class AntMerchantExpandEcoBillQueryModel extends AlipayObject {
 	 */
 	@ApiField("eco_code")
 	private String ecoCode;
+
+	/**
+	 * 当前页码
+	 */
+	@ApiField("page_num")
+	private Long pageNum;
 
 	/**
 	 * 生态供应商店铺编号
@@ -43,6 +49,13 @@ public class AntMerchantExpandEcoBillQueryModel extends AlipayObject {
 	}
 	public void setEcoCode(String ecoCode) {
 		this.ecoCode = ecoCode;
+	}
+
+	public Long getPageNum() {
+		return this.pageNum;
+	}
+	public void setPageNum(Long pageNum) {
+		this.pageNum = pageNum;
 	}
 
 	public String getShopCode() {

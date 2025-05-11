@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * null
+ * 类目属性值相关信息
  *
  * @author auto create
- * @since 1.0, 2025-03-31 19:57:27
+ * @since 1.0, 2025-03-31 11:41:30
  */
 public class AttributeValueInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4726714182392798328L;
+	private static final long serialVersionUID = 6729559457737461468L;
 
 	/**
 	 * 属性值别名

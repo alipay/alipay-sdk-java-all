@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.eco.bill.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-24 18:34:18
+ * @since 1.0, 2025-04-30 15:42:26
  */
 public class AntMerchantExpandEcoBillQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2766991245951958143L;
+	private static final long serialVersionUID = 4661385889755174464L;
 
 	/** 
 	 * 出账日期
@@ -30,6 +30,12 @@ public class AntMerchantExpandEcoBillQueryResponse extends AlipayResponse {
 	@ApiField("asset_eco_bill_detail")
 	private List<AssetEcoBillDetail> ecoBillDetails;
 
+	/** 
+	 * 是否还有下一页
+	 */
+	@ApiField("has_next_page")
+	private Boolean hasNextPage;
+
 	public void setBillDate(String billDate) {
 		this.billDate = billDate;
 	}
@@ -42,6 +48,13 @@ public class AntMerchantExpandEcoBillQueryResponse extends AlipayResponse {
 	}
 	public List<AssetEcoBillDetail> getEcoBillDetails( ) {
 		return this.ecoBillDetails;
+	}
+
+	public void setHasNextPage(Boolean hasNextPage) {
+		this.hasNextPage = hasNextPage;
+	}
+	public Boolean getHasNextPage( ) {
+		return this.hasNextPage;
 	}
 
 }

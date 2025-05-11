@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 安装Redis扩展
  *
  * @author auto create
- * @since 1.0, 2023-12-12 16:52:10
+ * @since 1.0, 2025-05-08 17:13:55
  */
 public class AlipayCloudCloudbaseExtensionRedisApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4771542249957889753L;
+	private static final long serialVersionUID = 5728434645369352293L;
 
 	/**
 	 * 架构类型。集群版：分片集群架构，支持扩缩容、规格调整; 标准版：标准的 master-slave 架构，支持规格调整; 极简版：第一年免费;
@@ -41,6 +41,8 @@ public class AlipayCloudCloudbaseExtensionRedisApplyModel extends AlipayObject {
 	 * 实例规格，每个数据节点的内存大小
  - 1GB
  - 4GB
+ - 8GB
+ - 16GB
  - 128MB
 	 */
 	@ApiField("instance_spec")

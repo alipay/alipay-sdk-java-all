@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayInsDataAutodamageEstimateApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5285186313882498962L;
+	private static final long serialVersionUID = 5386373793269716429L;
 
 	/**
 	 * 车险商业险保单号

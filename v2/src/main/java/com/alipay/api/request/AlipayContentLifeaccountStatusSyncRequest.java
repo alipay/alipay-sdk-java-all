@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.content.lifeaccount.status.sync request
  * 
  * @author auto create
- * @since 1.0, 2025-04-27 10:55:34
+ * @since 1.0, 2025-04-28 17:17:28
  */
 public class AlipayContentLifeaccountStatusSyncRequest implements AlipayRequest<AlipayContentLifeaccountStatusSyncResponse> {
 

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 营销活动结构
  *
  * @author auto create
- * @since 1.0, 2020-04-21 14:23:27
+ * @since 1.0, 2025-04-30 10:34:56
  */
 public class BFActivityOpenApiInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8582419658378792939L;
+	private static final long serialVersionUID = 5156444786447865941L;
 
 	/**
 	 * 活动收费配置信息
@@ -23,6 +23,13 @@ public class BFActivityOpenApiInfo extends AlipayObject {
 	@ApiListField("activity_fund_infos")
 	@ApiField("b_f_activity_fund_info")
 	private List<BFActivityFundInfo> activityFundInfos;
+
+	/**
+	 * 多主体信息，指定渠道贴息，相较于activityFundInfos补充资产和机构信息
+	 */
+	@ApiListField("activity_fund_infos_new")
+	@ApiField("b_f_activity_fund_info_new")
+	private List<BFActivityFundInfoNew> activityFundInfosNew;
 
 	/**
 	 * 活动模板ID
@@ -85,6 +92,12 @@ public class BFActivityOpenApiInfo extends AlipayObject {
 	private String productId;
 
 	/**
+	 * 活动类型
+	 */
+	@ApiField("product_type")
+	private String productType;
+
+	/**
 	 * 活动费率的版本信息
 	 */
 	@ApiField("rate_version")
@@ -95,6 +108,13 @@ public class BFActivityOpenApiInfo extends AlipayObject {
 	}
 	public void setActivityFundInfos(List<BFActivityFundInfo> activityFundInfos) {
 		this.activityFundInfos = activityFundInfos;
+	}
+
+	public List<BFActivityFundInfoNew> getActivityFundInfosNew() {
+		return this.activityFundInfosNew;
+	}
+	public void setActivityFundInfosNew(List<BFActivityFundInfoNew> activityFundInfosNew) {
+		this.activityFundInfosNew = activityFundInfosNew;
 	}
 
 	public String getAggrId() {
@@ -165,6 +185,13 @@ public class BFActivityOpenApiInfo extends AlipayObject {
 	}
 	public void setProductId(String productId) {
 		this.productId = productId;
+	}
+
+	public String getProductType() {
+		return this.productType;
+	}
+	public void setProductType(String productType) {
+		this.productType = productType;
 	}
 
 	public String getRateVersion() {

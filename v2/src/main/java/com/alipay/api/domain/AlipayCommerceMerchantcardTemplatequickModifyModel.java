@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品免审快速修改
  *
  * @author auto create
- * @since 1.0, 2025-01-16 10:37:20
+ * @since 1.0, 2025-04-30 12:13:18
  */
 public class AlipayCommerceMerchantcardTemplatequickModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4745593654977947493L;
+	private static final long serialVersionUID = 3648331622721551798L;
 
 	/**
 	 * 卡id
 	 */
 	@ApiField("card_template_id")
 	private String cardTemplateId;
+
+	/**
+	 * 线上售卖开关，可选。传入01表示将卡推广至线上售卖。传入02标识关闭线上售卖。
+	 */
+	@ApiField("online_sale_switch")
+	private String onlineSaleSwitch;
 
 	/**
 	 * 售卖信息
@@ -36,6 +42,13 @@ public class AlipayCommerceMerchantcardTemplatequickModifyModel extends AlipayOb
 	}
 	public void setCardTemplateId(String cardTemplateId) {
 		this.cardTemplateId = cardTemplateId;
+	}
+
+	public String getOnlineSaleSwitch() {
+		return this.onlineSaleSwitch;
+	}
+	public void setOnlineSaleSwitch(String onlineSaleSwitch) {
+		this.onlineSaleSwitch = onlineSaleSwitch;
 	}
 
 	public CardTemplateSale getSaleInfo() {

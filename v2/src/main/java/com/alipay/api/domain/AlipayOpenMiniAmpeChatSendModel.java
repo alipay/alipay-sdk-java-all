@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ampe对话服务发送query
  *
  * @author auto create
- * @since 1.0, 2025-04-17 20:12:19
+ * @since 1.0, 2025-04-29 13:38:58
  */
 public class AlipayOpenMiniAmpeChatSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8546368973878457347L;
+	private static final long serialVersionUID = 4294927754253189925L;
 
 	/**
 	 * AMPE设备id，代表唯一一台设备，在支付宝开放平台，或者通过openapi接口注册。
@@ -27,6 +27,12 @@ public class AlipayOpenMiniAmpeChatSendModel extends AlipayObject {
 	 */
 	@ApiField("ampe_product_id")
 	private String ampeProductId;
+
+	/**
+	 * AMPE运行时的设备信息，仅用于云卡片场景
+	 */
+	@ApiField("device_info")
+	private AmpeDeviceInfo deviceInfo;
 
 	/**
 	 * 支付宝的意图code，由支付宝定义，意图列表可从参见BD提供的意图code列表，不定期更新。接入方可以根据支付宝提供的语料对自由的模型进行训练标注，经过自有模型意图分析后，在调用本接口时传入，这样会提高query的识别准确度，并提高响应速度。如果不传入，支付宝将根据自己的模型对query进行意图识别。目前可选值为:SMART_ORDER（智能点单）
@@ -89,6 +95,13 @@ public class AlipayOpenMiniAmpeChatSendModel extends AlipayObject {
 	}
 	public void setAmpeProductId(String ampeProductId) {
 		this.ampeProductId = ampeProductId;
+	}
+
+	public AmpeDeviceInfo getDeviceInfo() {
+		return this.deviceInfo;
+	}
+	public void setDeviceInfo(AmpeDeviceInfo deviceInfo) {
+		this.deviceInfo = deviceInfo;
 	}
 
 	public String getIntentCode() {

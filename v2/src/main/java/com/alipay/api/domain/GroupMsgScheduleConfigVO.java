@@ -6,14 +6,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 用于描述周期消息发送配置
+ * 群发消息周期消息定时配置
  *
  * @author auto create
- * @since 1.0, 2025-03-31 17:02:29
+ * @since 1.0, 2025-03-31 11:26:52
  */
 public class GroupMsgScheduleConfigVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8326977491451247129L;
+	private static final long serialVersionUID = 3114143245599738836L;
 
 	/**
 	 * 用于描述定时发送的具体时间,  格式化为 HH:mm:ss

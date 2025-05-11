@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 签到规则
  *
  * @author auto create
- * @since 1.0, 2025-04-17 17:32:47
+ * @since 1.0, 2025-04-29 14:17:57
  */
 public class EduCheckInRule extends AlipayObject {
 
-	private static final long serialVersionUID = 7194388745152374873L;
+	private static final long serialVersionUID = 4295785222261313266L;
 
 	/**
 	 * 规则生效状态
@@ -60,7 +60,7 @@ public class EduCheckInRule extends AlipayObject {
 	private List<EduPlaceInfo> placeList;
 
 	/**
-	 * 签到半径
+	 * 签到半径，单位米
 	 */
 	@ApiField("radius")
 	private Long radius;

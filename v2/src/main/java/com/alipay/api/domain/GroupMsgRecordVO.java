@@ -8,14 +8,14 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * null
+ * 商家群群内消息发送记录模型
  *
  * @author auto create
- * @since 1.0, 2025-03-31 17:02:29
+ * @since 1.0, 2025-03-31 11:26:52
  */
 public class GroupMsgRecordVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8739454683331184739L;
+	private static final long serialVersionUID = 2289318794113742297L;
 
 	/**
 	 * 业务自己定义的业务id
@@ -30,7 +30,7 @@ public class GroupMsgRecordVO extends AlipayObject {
 	private String errorMsg;
 
 	/**
-	 * null
+	 * 群组id列表
 	 */
 	@ApiListField("group_ids")
 	@ApiField("string")

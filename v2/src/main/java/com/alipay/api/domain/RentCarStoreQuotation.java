@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝租车门店报价
  *
  * @author auto create
- * @since 1.0, 2024-12-05 11:04:08
+ * @since 1.0, 2025-04-29 15:03:16
  */
 public class RentCarStoreQuotation extends AlipayObject {
 
-	private static final long serialVersionUID = 5395833995929436174L;
+	private static final long serialVersionUID = 4498228615735459859L;
 
 	/**
 	 * 评论数（取用户对商户评论数的总和）
@@ -63,6 +63,12 @@ public class RentCarStoreQuotation extends AlipayObject {
 	 */
 	@ApiField("longitude")
 	private String longitude;
+
+	/**
+	 * 当报价是小伤免赔的报价时，该字段表示报价加购小伤免赔的额外费用，单位分
+	 */
+	@ApiField("minor_injury_exemption_amount")
+	private Long minorInjuryExemptionAmount;
 
 	/**
 	 * 支心租一口价优惠金额，单位分
@@ -187,6 +193,13 @@ public class RentCarStoreQuotation extends AlipayObject {
 	}
 	public void setLongitude(String longitude) {
 		this.longitude = longitude;
+	}
+
+	public Long getMinorInjuryExemptionAmount() {
+		return this.minorInjuryExemptionAmount;
+	}
+	public void setMinorInjuryExemptionAmount(Long minorInjuryExemptionAmount) {
+		this.minorInjuryExemptionAmount = minorInjuryExemptionAmount;
 	}
 
 	public Long getOnePriceDiscount() {

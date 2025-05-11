@@ -7,14 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * 完全copy和字段copy引用类型的复杂类型
+ * 新增的测试数据
  *
  * @author auto create
- * @since 1.0, 2025-04-23 15:40:13
+ * @since 1.0, 2025-05-07 10:32:27
  */
 public class RainyComplexTypesTheFourteen extends AlipayObject {
 
-	private static final long serialVersionUID = 5873765567673799988L;
+	private static final long serialVersionUID = 6886128231836218318L;
+
+	/**
+	 * 复杂类型2.0新增的数据
+	 */
+	@ApiField("demo_case")
+	private RainyComplexTypesRefWeakFirst demoCase;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识
@@ -23,11 +29,18 @@ public class RainyComplexTypesTheFourteen extends AlipayObject {
 	private String openId;
 
 	/**
-	 * 完全引用
+	 * null
 	 */
 	@ApiListField("weak_ref")
 	@ApiField("rainy_complex_types_the_fourth")
 	private List<RainyComplexTypesTheFourth> weakRef;
+
+	public RainyComplexTypesRefWeakFirst getDemoCase() {
+		return this.demoCase;
+	}
+	public void setDemoCase(RainyComplexTypesRefWeakFirst demoCase) {
+		this.demoCase = demoCase;
+	}
 
 	public String getOpenId() {
 		return this.openId;

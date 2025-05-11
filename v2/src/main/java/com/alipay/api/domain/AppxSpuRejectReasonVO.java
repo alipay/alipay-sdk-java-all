@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AppxSpuRejectReasonVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5383537645866724776L;
+	private static final long serialVersionUID = 3394987274179467518L;
 
 	/**
 	 * 备注原因

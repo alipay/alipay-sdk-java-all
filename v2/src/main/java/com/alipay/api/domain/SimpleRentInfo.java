@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租赁订单的简单信息
  *
  * @author auto create
- * @since 1.0, 2025-04-18 17:39:21
+ * @since 1.0, 2025-05-06 10:40:25
  */
 public class SimpleRentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7173838622323381518L;
+	private static final long serialVersionUID = 4197739448982646857L;
 
 	/**
 	 * 交易组件的订单Id
@@ -57,6 +57,18 @@ public class SimpleRentInfo extends AlipayObject {
 	 */
 	@ApiField("end_time")
 	private String endTime;
+
+	/**
+	 * 放款金额，单位：元
+	 */
+	@ApiField("loan_price")
+	private String loanPrice;
+
+	/**
+	 * 放款时间
+	 */
+	@ApiField("loan_time")
+	private String loanTime;
 
 	/**
 	 * 商户订单号
@@ -168,6 +180,20 @@ public class SimpleRentInfo extends AlipayObject {
 	}
 	public void setEndTime(String endTime) {
 		this.endTime = endTime;
+	}
+
+	public String getLoanPrice() {
+		return this.loanPrice;
+	}
+	public void setLoanPrice(String loanPrice) {
+		this.loanPrice = loanPrice;
+	}
+
+	public String getLoanTime() {
+		return this.loanTime;
+	}
+	public void setLoanTime(String loanTime) {
+		this.loanTime = loanTime;
 	}
 
 	public String getOutOrderId() {

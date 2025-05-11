@@ -9,11 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页查询售卖订单结果
  *
  * @author auto create
- * @since 1.0, 2024-11-28 14:39:21
+ * @since 1.0, 2025-04-28 22:36:57
  */
 public class CardOrderBatchQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 5631162931968327815L;
+	private static final long serialVersionUID = 5724937224226639232L;
+
+	/**
+	 * 卡关联的最新的售后单编号
+	 */
+	@ApiField("aftersales_id")
+	private String aftersalesId;
+
+	/**
+	 * 用于描述订单关联的售后单的最新状态
+	 */
+	@ApiField("aftersales_status")
+	private String aftersalesStatus;
 
 	/**
 	 * 售卖订单的余额面额，单位分
@@ -219,6 +231,20 @@ public class CardOrderBatchQueryResponse extends AlipayObject {
 	 */
 	@ApiField("user_phone")
 	private String userPhone;
+
+	public String getAftersalesId() {
+		return this.aftersalesId;
+	}
+	public void setAftersalesId(String aftersalesId) {
+		this.aftersalesId = aftersalesId;
+	}
+
+	public String getAftersalesStatus() {
+		return this.aftersalesStatus;
+	}
+	public void setAftersalesStatus(String aftersalesStatus) {
+		this.aftersalesStatus = aftersalesStatus;
+	}
 
 	public Long getAvailableAmount() {
 		return this.availableAmount;

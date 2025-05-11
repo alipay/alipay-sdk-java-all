@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 更新位置信息
  *
  * @author auto create
- * @since 1.0, 2025-04-17 17:32:55
+ * @since 1.0, 2025-04-28 19:42:21
  */
 public class AlipayCommerceEducatePlaceInfoModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4699467917214551547L;
+	private static final long serialVersionUID = 7469222249626129317L;
 
 	/**
 	 * 关联学工号列表，比如某寝室居住4名学生的学工号列表

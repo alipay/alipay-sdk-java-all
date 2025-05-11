@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订购单延期
  *
  * @author auto create
- * @since 1.0, 2025-02-19 10:02:54
+ * @since 1.0, 2025-04-30 19:55:15
  */
 public class AlipayCommerceMerchantcardExpireperiodModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2533654586971423684L;
+	private static final long serialVersionUID = 1459626625273219678L;
 
 	/**
 	 * 将售卖订单的有效期延期到入参的时间点{appoint_date}，时间格式是yyyy-MM-dd HH:mm:ss
@@ -59,12 +59,19 @@ public class AlipayCommerceMerchantcardExpireperiodModifyModel extends AlipayObj
 	private Long periodValue;
 
 	/**
+	 * FORWARD：正向延期，REVERSE：逆向延期，不填默认正向延期
+	 */
+	@ApiField("update_action")
+	private String updateAction;
+
+	/**
 	 * 【注意】
 周期卡：如果指定的期数已经被核销了则不允许延期；
 次卡：只能使用APPOINT模式
 【FIXED】将指定期数及后续期数按固定周期延；月卡、季卡必须按照月延期；周卡必须按照周延期；日卡不支持按固定周期延
 【APPOINT】将指定期数及后续期数都延长{period_value}天
 【RECAST】将指定期数延长{period_value}天，后续期数会自动按周期延
+【SPECIFIED_FAILED_PERIOD】将指定失败期数延长到指定日期{appoint_date}
 	 */
 	@ApiField("update_type")
 	private String updateType;
@@ -122,6 +129,13 @@ public class AlipayCommerceMerchantcardExpireperiodModifyModel extends AlipayObj
 	}
 	public void setPeriodValue(Long periodValue) {
 		this.periodValue = periodValue;
+	}
+
+	public String getUpdateAction() {
+		return this.updateAction;
+	}
+	public void setUpdateAction(String updateAction) {
+		this.updateAction = updateAction;
 	}
 
 	public String getUpdateType() {

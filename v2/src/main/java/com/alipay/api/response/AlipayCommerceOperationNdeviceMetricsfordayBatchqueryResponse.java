@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.ndevice.metricsforday.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-27 19:52:23
+ * @since 1.0, 2025-05-08 11:12:26
  */
 public class AlipayCommerceOperationNdeviceMetricsfordayBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8578719524973594385L;
+	private static final long serialVersionUID = 6843376592947659781L;
 
 	/** 
 	 * 数据总数

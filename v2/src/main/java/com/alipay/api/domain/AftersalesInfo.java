@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 售后详情
  *
  * @author auto create
- * @since 1.0, 2025-04-27 18:27:27
+ * @since 1.0, 2025-04-28 14:27:28
  */
 public class AftersalesInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7691266288783758831L;
+	private static final long serialVersionUID = 3546626544239535555L;
 
 	/**
 	 * 售后单编号

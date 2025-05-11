@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceCardtemplateStatusModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2697619122126873773L;
+	private static final long serialVersionUID = 4394766335434555831L;
 
 	/**
 	 * 卡模版ID

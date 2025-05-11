@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 医保码支付订单上传接口
  *
  * @author auto create
- * @since 1.0, 2024-10-15 19:36:11
+ * @since 1.0, 2025-04-28 20:33:55
  */
 public class AlipayCommerceMedicalPaymentOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2737348127841537273L;
+	private static final long serialVersionUID = 5476946395479795256L;
 
 	/**
 	 * 使用支付宝支付的金额
@@ -96,6 +96,12 @@ public class AlipayCommerceMedicalPaymentOrderSyncModel extends AlipayObject {
 	 */
 	@ApiField("own_pay_amt")
 	private String ownPayAmt;
+
+	/**
+	 * 通过换码拿到的自费付款码
+	 */
+	@ApiField("pay_code")
+	private String payCode;
 
 	/**
 	 * 就医所在地城市编码，需传入国家标准行政区划编码
@@ -234,6 +240,13 @@ public class AlipayCommerceMedicalPaymentOrderSyncModel extends AlipayObject {
 	}
 	public void setOwnPayAmt(String ownPayAmt) {
 		this.ownPayAmt = ownPayAmt;
+	}
+
+	public String getPayCode() {
+		return this.payCode;
+	}
+	public void setPayCode(String payCode) {
+		this.payCode = payCode;
 	}
 
 	public String getPaymentCityCode() {

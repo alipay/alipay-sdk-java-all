@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 补充资质材料接口
  *
  * @author auto create
- * @since 1.0, 2025-04-08 09:57:19
+ * @since 1.0, 2025-04-28 19:11:50
  */
 public class AlipayContentLifeaccountCertificateSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8677847228586588685L;
+	private static final long serialVersionUID = 7781754411473338316L;
 
 	/**
 	 * 资质证明

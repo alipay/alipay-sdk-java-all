@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * etc行程信息
  *
  * @author auto create
- * @since 1.0, 2023-12-20 10:09:11
+ * @since 1.0, 2025-04-29 21:55:17
  */
 public class EtcTripInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8374283378813675536L;
+	private static final long serialVersionUID = 3562888748919149591L;
+
+	/**
+	 * 0:未垫资,1:已垫资,2:垫资已还款
+	 */
+	@ApiField("advance_status")
+	private String advanceStatus;
 
 	/**
 	 * 1、收费站出口名称 2、格式为省份+收费站名，比如“黑龙江瓦盆窑西站”
@@ -58,6 +64,12 @@ public class EtcTripInfo extends AlipayObject {
 	private String tradeNo;
 
 	/**
+	 * 行程扣款状态： "S":"支付成功"; "F":"支付失败";"R":"已退款";"PR", "部分退款";
+	 */
+	@ApiField("trade_status")
+	private String tradeStatus;
+
+	/**
 	 * 行程结束时间
 	 */
 	@ApiField("trip_end_time")
@@ -74,6 +86,13 @@ public class EtcTripInfo extends AlipayObject {
 	 */
 	@ApiField("trip_start_time")
 	private Date tripStartTime;
+
+	public String getAdvanceStatus() {
+		return this.advanceStatus;
+	}
+	public void setAdvanceStatus(String advanceStatus) {
+		this.advanceStatus = advanceStatus;
+	}
 
 	public String getEndStationName() {
 		return this.endStationName;
@@ -122,6 +141,13 @@ public class EtcTripInfo extends AlipayObject {
 	}
 	public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
+	}
+
+	public String getTradeStatus() {
+		return this.tradeStatus;
+	}
+	public void setTradeStatus(String tradeStatus) {
+		this.tradeStatus = tradeStatus;
 	}
 
 	public Date getTripEndTime() {

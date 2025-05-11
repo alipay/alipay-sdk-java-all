@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 买家身份证地址
+ * 租赁地址信息
  *
  * @author auto create
- * @since 1.0, 2025-04-18 20:07:27
+ * @since 1.0, 2025-03-18 16:05:55
  */
 public class RentAddress extends AlipayObject {
 
-	private static final long serialVersionUID = 1686675695866285993L;
+	private static final long serialVersionUID = 8864935154964182885L;
 
 	/**
 	 * 所在的城市编码，取值：参考最新的国标编码

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 测试数据，匿名复杂类型示例
  *
  * @author auto create
- * @since 1.0, 2025-04-23 16:41:31
+ * @since 1.0, 2025-05-07 10:32:27
  */
 public class RainyComplexTypesRefWeakFifth extends AlipayObject {
 
-	private static final long serialVersionUID = 3431229473398271561L;
+	private static final long serialVersionUID = 8697339169964327512L;
 
 	/**
 	 * 测试数据

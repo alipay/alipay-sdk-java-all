@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 车金融订单状态通知接口
  *
  * @author auto create
- * @since 1.0, 2025-03-28 00:04:16
+ * @since 1.0, 2025-05-08 14:48:56
  */
 public class XingheLendassistCarfinApplystatusNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8263542342513231181L;
+	private static final long serialVersionUID = 1594598158628962928L;
 
 	/**
 	 * 星河侧唯一业务编号
@@ -117,6 +117,12 @@ Y、M、D分别代表年月日
 	private String loanTermUnit;
 
 	/**
+	 * 是否合并初终审
+	 */
+	@ApiField("merged_approval_flag")
+	private Boolean mergedApprovalFlag;
+
+	/**
 	 * 抵押率（授信金额/车辆估值金额），单位为小数
 	 */
 	@ApiField("mortgage_rate")
@@ -170,6 +176,18 @@ CANCEL_SUC: 取消成功（适用于客户确定放弃的场景，机构侧后�
 	 */
 	@ApiField("status")
 	private String status;
+
+	/**
+	 * 是否需要补充信息或流水
+	 */
+	@ApiField("supplement_info_flag")
+	private Boolean supplementInfoFlag;
+
+	/**
+	 * 用户类别
+	 */
+	@ApiField("user_tier")
+	private String userTier;
 
 	/**
 	 * 车辆估值金额，单位分
@@ -289,6 +307,13 @@ CANCEL_SUC: 取消成功（适用于客户确定放弃的场景，机构侧后�
 		this.loanTermUnit = loanTermUnit;
 	}
 
+	public Boolean getMergedApprovalFlag() {
+		return this.mergedApprovalFlag;
+	}
+	public void setMergedApprovalFlag(Boolean mergedApprovalFlag) {
+		this.mergedApprovalFlag = mergedApprovalFlag;
+	}
+
 	public String getMortgageRate() {
 		return this.mortgageRate;
 	}
@@ -350,6 +375,20 @@ CANCEL_SUC: 取消成功（适用于客户确定放弃的场景，机构侧后�
 	}
 	public void setStatus(String status) {
 		this.status = status;
+	}
+
+	public Boolean getSupplementInfoFlag() {
+		return this.supplementInfoFlag;
+	}
+	public void setSupplementInfoFlag(Boolean supplementInfoFlag) {
+		this.supplementInfoFlag = supplementInfoFlag;
+	}
+
+	public String getUserTier() {
+		return this.userTier;
+	}
+	public void setUserTier(String userTier) {
+		this.userTier = userTier;
 	}
 
 	public Long getValuatePrice() {

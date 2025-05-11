@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.ampe.recommend.query request
  * 
  * @author auto create
- * @since 1.0, 2025-04-21 20:37:26
+ * @since 1.0, 2025-05-09 11:02:28
  */
 public class AlipayOpenMiniAmpeRecommendQueryRequest implements AlipayRequest<AlipayOpenMiniAmpeRecommendQueryResponse> {
 

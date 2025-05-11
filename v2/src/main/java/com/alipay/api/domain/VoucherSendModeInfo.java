@@ -1,17 +1,27 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 券发放方式
  *
  * @author auto create
- * @since 1.0, 2025-04-23 17:31:16
+ * @since 1.0, 2025-04-27 19:40:18
  */
 public class VoucherSendModeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3172559236881687427L;
+	private static final long serialVersionUID = 7758451884795192364L;
+
+	/**
+	 * 推广渠道列表
+	 */
+	@ApiListField("delivery_channel_list")
+	@ApiField("string")
+	private List<String> deliveryChannelList;
 
 	/**
 	 * 券包信息。
@@ -36,6 +46,13 @@ public class VoucherSendModeInfo extends AlipayObject {
 	 */
 	@ApiField("voucher_send_rule_info")
 	private VoucherSendRuleInfo voucherSendRuleInfo;
+
+	public List<String> getDeliveryChannelList() {
+		return this.deliveryChannelList;
+	}
+	public void setDeliveryChannelList(List<String> deliveryChannelList) {
+		this.deliveryChannelList = deliveryChannelList;
+	}
 
 	public VoucherPackageModeInfo getVoucherPackageModeInfo() {
 		return this.voucherPackageModeInfo;

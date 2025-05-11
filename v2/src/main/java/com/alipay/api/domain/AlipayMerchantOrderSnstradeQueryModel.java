@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ISV动销数据接口
  *
  * @author auto create
- * @since 1.0, 2025-03-17 19:21:53
+ * @since 1.0, 2025-04-29 16:33:19
  */
 public class AlipayMerchantOrderSnstradeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6871859914757454918L;
+	private static final long serialVersionUID = 5541972647283417453L;
 
 	/**
 	 * 物料售卖接入id

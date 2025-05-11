@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.gamecenter.gamerights.trigger response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-11 10:32:27
+ * @since 1.0, 2025-05-09 01:02:24
  */
 public class AlipaySocialGamecenterGamerightsTriggerResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3159394773513312584L;
+	private static final long serialVersionUID = 7694352572861739373L;
 
 	/** 
 	 * 不可触发权益原因

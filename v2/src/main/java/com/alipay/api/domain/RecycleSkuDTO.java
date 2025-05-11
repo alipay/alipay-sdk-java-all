@@ -8,14 +8,14 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * null
+ * 回收商品款式信息
  *
  * @author auto create
- * @since 1.0, 2025-04-22 15:42:27
+ * @since 1.0, 2025-04-02 10:38:55
  */
 public class RecycleSkuDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8346223145356511217L;
+	private static final long serialVersionUID = 7571466728599814536L;
 
 	/**
 	 * 当前sku的过期时间，如果为空时，不同的场景平台会有默认的过期时间
@@ -24,7 +24,7 @@ public class RecycleSkuDTO extends AlipayObject {
 	private Date expiredTime;
 
 	/**
-	 * null
+	 * 商品款式的描述，例如一款商品有3个属性进行选择，那么款式列表里需要包含3个属性的具体选项，与回收的问券和选项一致
 	 */
 	@ApiListField("sku_attrs")
 	@ApiField("recycle_sku_attr_d_t_o")

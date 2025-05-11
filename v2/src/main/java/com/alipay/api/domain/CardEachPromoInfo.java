@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 卡单期优惠信息
  *
  * @author auto create
- * @since 1.0, 2024-12-12 19:24:18
+ * @since 1.0, 2025-04-28 22:35:23
  */
 public class CardEachPromoInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6346917977369836722L;
+	private static final long serialVersionUID = 5875564327251213153L;
 
 	/**
 	 * 每期优惠价，单位分
@@ -20,7 +20,7 @@ public class CardEachPromoInfo extends AlipayObject {
 	private Long eachPromoPrice;
 
 	/**
-	 * 期数
+	 * 期数，根据cycle_type确定单位，如周，天，月
 	 */
 	@ApiField("period")
 	private Long period;

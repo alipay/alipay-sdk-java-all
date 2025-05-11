@@ -7,16 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 售卖限制的详情
  *
  * @author auto create
- * @since 1.0, 2024-09-30 01:14:32
+ * @since 1.0, 2025-04-28 21:59:17
  */
 public class SaleControlDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8356433823746616979L;
+	private static final long serialVersionUID = 7529745856847712779L;
 
 	/**
 	 * 售卖策略为SPEC_CROWD时传入该值，null标识无限制，枚举类型
-● STUDENT：学生
-● MEMBER：会员
+1. STUDENT：学生
+2. SILVER：银发人群（老人）
+3. MEMBER：会员
 	 */
 	@ApiField("crowd_type")
 	private String crowdType;

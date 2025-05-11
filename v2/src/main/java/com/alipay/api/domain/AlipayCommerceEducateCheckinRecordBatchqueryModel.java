@@ -11,17 +11,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量查询签到记录
  *
  * @author auto create
- * @since 1.0, 2025-04-17 17:32:46
+ * @since 1.0, 2025-04-29 14:16:20
  */
 public class AlipayCommerceEducateCheckinRecordBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1217982347417422887L;
+	private static final long serialVersionUID = 7875928359426495484L;
 
 	/**
 	 * 签到结束时间
 	 */
 	@ApiField("check_in_end_time")
 	private Date checkInEndTime;
+
+	/**
+	 * 签到结果
+	 */
+	@ApiField("check_in_result")
+	private String checkInResult;
 
 	/**
 	 * 签到开始时间
@@ -72,11 +78,25 @@ public class AlipayCommerceEducateCheckinRecordBatchqueryModel extends AlipayObj
 	@ApiField("page_size")
 	private Long pageSize;
 
+	/**
+	 * 签到记录所属位置Id列表
+	 */
+	@ApiListField("place_id_list")
+	@ApiField("string")
+	private List<String> placeIdList;
+
 	public Date getCheckInEndTime() {
 		return this.checkInEndTime;
 	}
 	public void setCheckInEndTime(Date checkInEndTime) {
 		this.checkInEndTime = checkInEndTime;
+	}
+
+	public String getCheckInResult() {
+		return this.checkInResult;
+	}
+	public void setCheckInResult(String checkInResult) {
+		this.checkInResult = checkInResult;
 	}
 
 	public Date getCheckInStartTime() {
@@ -133,6 +153,13 @@ public class AlipayCommerceEducateCheckinRecordBatchqueryModel extends AlipayObj
 	}
 	public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
+	}
+
+	public List<String> getPlaceIdList() {
+		return this.placeIdList;
+	}
+	public void setPlaceIdList(List<String> placeIdList) {
+		this.placeIdList = placeIdList;
 	}
 
 }

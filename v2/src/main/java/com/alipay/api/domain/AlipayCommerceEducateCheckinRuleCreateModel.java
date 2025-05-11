@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建签到规则
  *
  * @author auto create
- * @since 1.0, 2025-04-22 19:18:16
+ * @since 1.0, 2025-04-29 14:17:19
  */
 public class AlipayCommerceEducateCheckinRuleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7113436889579947132L;
+	private static final long serialVersionUID = 3114335278676157735L;
 
 	/**
 	 * 规则生效状态

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金卡充值前置咨询接口
  *
  * @author auto create
- * @since 1.0, 2024-07-02 10:30:14
+ * @since 1.0, 2025-05-08 15:51:53
  */
 public class AlipayFundCardDepositConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8812886621887238865L;
+	private static final long serialVersionUID = 7822279693119495933L;
 
 	/**
 	 * 场景码，DEPOSIT_CERT：充值凭证

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PoiListDayVo extends AlipayObject {
 
-	private static final long serialVersionUID = 3557153983261395847L;
+	private static final long serialVersionUID = 3329135174572794677L;
 
 	/**
 	 * 第几天

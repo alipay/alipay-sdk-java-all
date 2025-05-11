@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * AI眼镜声纹核身校验
  *
  * @author auto create
- * @since 1.0, 2025-04-18 13:38:57
+ * @since 1.0, 2025-05-07 17:05:22
  */
 public class AlipaySecurityRiskVerifyidentityVoiceprintVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2589344872768933652L;
+	private static final long serialVersionUID = 1629496311933932787L;
 
 	/**
 	 * base64加密后的语音数据字符串
@@ -24,6 +24,12 @@ public class AlipaySecurityRiskVerifyidentityVoiceprintVerifyModel extends Alipa
 	 */
 	@ApiField("device_id")
 	private String deviceId;
+
+	/**
+	 * 设备名称
+	 */
+	@ApiField("device_name")
+	private String deviceName;
 
 	/**
 	 * 流程类型
@@ -73,6 +79,13 @@ public class AlipaySecurityRiskVerifyidentityVoiceprintVerifyModel extends Alipa
 	}
 	public void setDeviceId(String deviceId) {
 		this.deviceId = deviceId;
+	}
+
+	public String getDeviceName() {
+		return this.deviceName;
+	}
+	public void setDeviceName(String deviceName) {
+		this.deviceName = deviceName;
 	}
 
 	public String getFlowData() {

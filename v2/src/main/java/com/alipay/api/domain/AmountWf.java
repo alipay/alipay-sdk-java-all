@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AmountWf extends AlipayObject {
 
-	private static final long serialVersionUID = 7422571969331714628L;
+	private static final long serialVersionUID = 5265624375892481576L;
 
 	/**
 	 * 币种

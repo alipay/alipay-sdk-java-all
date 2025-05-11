@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 协同任务信息
  *
  * @author auto create
- * @since 1.0, 2025-04-11 22:13:23
+ * @since 1.0, 2025-04-29 16:26:56
  */
 public class CollaborateTask extends AlipayObject {
 
-	private static final long serialVersionUID = 3175149267342692179L;
+	private static final long serialVersionUID = 6128364165869292441L;
 
 	/**
 	 * 活动描述，用户参与活动时返回。
@@ -58,6 +58,12 @@ public class CollaborateTask extends AlipayObject {
 	 */
 	@ApiField("contact_name")
 	private String contactName;
+
+	/**
+	 * 如果为空默认是N7，商户需要铺设设备的类型
+	 */
+	@ApiField("device_type")
+	private String deviceType;
 
 	/**
 	 * 任务分配的时间。
@@ -146,7 +152,10 @@ public class CollaborateTask extends AlipayObject {
 	private String taskNo;
 
 	/**
-	 * 任务标签，如：强意愿用户
+	 * WILLNGNESS-强意愿用户（多次提报）
+NOT_SIGNING-未签约
+HAS_SIGNED-已签约
+STOCK-存量摸排
 	 */
 	@ApiListField("task_tags")
 	@ApiField("string")
@@ -205,6 +214,13 @@ public class CollaborateTask extends AlipayObject {
 	}
 	public void setContactName(String contactName) {
 		this.contactName = contactName;
+	}
+
+	public String getDeviceType() {
+		return this.deviceType;
+	}
+	public void setDeviceType(String deviceType) {
+		this.deviceType = deviceType;
 	}
 
 	public Date getDispatchedTime() {

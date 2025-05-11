@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.campus.checkin.download request
  * 
  * @author auto create
- * @since 1.0, 2025-04-22 19:19:13
+ * @since 1.0, 2025-04-29 14:17:26
  */
 public class AlipayCommerceEducateCampusCheckinDownloadRequest implements AlipayRequest<AlipayCommerceEducateCampusCheckinDownloadResponse> {
 

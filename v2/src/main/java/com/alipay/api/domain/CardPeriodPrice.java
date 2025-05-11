@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 阶梯价格
  *
  * @author auto create
- * @since 1.0, 2024-12-05 18:44:52
+ * @since 1.0, 2025-04-28 22:35:20
  */
 public class CardPeriodPrice extends AlipayObject {
 
-	private static final long serialVersionUID = 6114953668259286496L;
+	private static final long serialVersionUID = 4217491337544874575L;
 
 	/**
 	 * 原价，单位分。
@@ -21,7 +21,7 @@ public class CardPeriodPrice extends AlipayObject {
 	private Long originalPrice;
 
 	/**
-	 * 期数
+	 * 期数，根据cycle_type确定单位，如周，天，月
 	 */
 	@ApiField("period")
 	private Long period;

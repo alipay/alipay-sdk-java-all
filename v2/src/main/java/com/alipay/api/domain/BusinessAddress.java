@@ -4,15 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 变更后的点位地址。
-在撤柜场景下，该值可为空。其它场景下，该值不能为空
+ * 地理位置
  *
  * @author auto create
- * @since 1.0, 2025-04-22 10:47:27
+ * @since 1.0, 2023-10-26 11:57:09
  */
 public class BusinessAddress extends AlipayObject {
 
-	private static final long serialVersionUID = 5822734269729586522L;
+	private static final long serialVersionUID = 3335544912334597917L;
 
 	/**
 	 * 详细地址

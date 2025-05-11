@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * null
+ * 回收商品的款式信息
  *
  * @author auto create
- * @since 1.0, 2025-04-22 15:42:27
+ * @since 1.0, 2025-02-07 12:54:21
  */
 public class RecycleSkuAttrDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2633259223296773523L;
+	private static final long serialVersionUID = 3584479871667953827L;
 
 	/**
 	 * 回收商品销售属性code值，对应回收问券的问题code值

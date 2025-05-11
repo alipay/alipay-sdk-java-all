@@ -7,17 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * 价格的扩展对象
+ * 价格个性化扩展
  *
  * @author auto create
- * @since 1.0, 2025-04-22 15:42:27
+ * @since 1.0, 2025-04-02 10:38:55
  */
 public class RecycleSkuPriceExtDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1322415648762661712L;
+	private static final long serialVersionUID = 7759528146959975324L;
 
 	/**
-	 * null
+	 * 价格的个性化扩展列表
 	 */
 	@ApiListField("custom_prices")
 	@ApiField("recycle_sku_custom_price_d_t_o")

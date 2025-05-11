@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 上门取件物流信息查询
  *
  * @author auto create
- * @since 1.0, 2025-04-12 12:28:55
+ * @since 1.0, 2025-04-29 10:47:57
  */
 public class AssetPickupLogisticsDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5592649835951317492L;
+	private static final long serialVersionUID = 6571223575735518119L;
 
 	/**
 	 * 逆向入库指令

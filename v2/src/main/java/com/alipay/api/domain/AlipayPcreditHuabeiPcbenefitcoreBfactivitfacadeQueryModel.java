@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询花呗营销分期贴息活动信息
  *
  * @author auto create
- * @since 1.0, 2020-05-20 20:37:29
+ * @since 1.0, 2025-04-30 10:34:57
  */
 public class AlipayPcreditHuabeiPcbenefitcoreBfactivitfacadeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1816698611375535256L;
+	private static final long serialVersionUID = 6129338545415928714L;
 
 	/**
 	 * 商户ID

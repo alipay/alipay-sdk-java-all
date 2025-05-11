@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiTradeBencftestRefuseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7857319281593744334L;
+	private static final long serialVersionUID = 2328545484616738927L;
 
 	
 

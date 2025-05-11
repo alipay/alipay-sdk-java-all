@@ -11,17 +11,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataexchange.schemaapitwentythird.rainytest.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-23 16:41:31
+ * @since 1.0, 2025-05-07 10:32:27
  */
 public class AlipayDataDataexchangeSchemaapitwentythirdRainytestQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4858861971334649223L;
+	private static final long serialVersionUID = 6749251998286636338L;
 
 	/** 
 	 * 测试数据，匿名复杂类型示例
 	 */
 	@ApiField("demo_ref")
 	private RainyComplexTypesRefWeakFifth demoRef;
+
+	/** 
+	 * 1.1版本新增的 测试数据
+	 */
+	@ApiField("demo_res")
+	private String demoRes;
 
 	/** 
 	 * 测试数据，强引用复杂类型示例
@@ -46,6 +52,13 @@ public class AlipayDataDataexchangeSchemaapitwentythirdRainytestQueryResponse ex
 	}
 	public RainyComplexTypesRefWeakFifth getDemoRef( ) {
 		return this.demoRef;
+	}
+
+	public void setDemoRes(String demoRes) {
+		this.demoRes = demoRes;
+	}
+	public String getDemoRes( ) {
+		return this.demoRes;
 	}
 
 	public void setDemoStrongRef(RainyComplexTypesTheThirteen demoStrongRef) {

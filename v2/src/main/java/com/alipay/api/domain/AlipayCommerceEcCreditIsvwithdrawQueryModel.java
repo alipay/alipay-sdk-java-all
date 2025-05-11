@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceEcCreditIsvwithdrawQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7345921619383133163L;
+	private static final long serialVersionUID = 7366438942114272715L;
 
 	/**
 	 * 请款时传入的支付宝支付流水号

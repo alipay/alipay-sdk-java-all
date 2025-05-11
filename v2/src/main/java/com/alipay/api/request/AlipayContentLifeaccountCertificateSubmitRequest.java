@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.content.lifeaccount.certificate.submit request
  * 
  * @author auto create
- * @since 1.0, 2025-04-27 10:55:18
+ * @since 1.0, 2025-04-28 19:12:27
  */
 public class AlipayContentLifeaccountCertificateSubmitRequest implements AlipayRequest<AlipayContentLifeaccountCertificateSubmitResponse> {
 

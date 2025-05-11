@@ -11,11 +11,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 售卖订单信息
  *
  * @author auto create
- * @since 1.0, 2024-11-28 14:38:55
+ * @since 1.0, 2025-04-28 22:36:52
  */
 public class CardOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7634769697377465255L;
+	private static final long serialVersionUID = 7635733466253784487L;
+
+	/**
+	 * 卡关联的最新一笔售后单编号
+	 */
+	@ApiField("aftersales_id")
+	private String aftersalesId;
+
+	/**
+	 * 售后单状态
+	 */
+	@ApiField("aftersales_status")
+	private String aftersalesStatus;
 
 	/**
 	 * 售卖订单的余额面额，单位分
@@ -48,7 +60,7 @@ public class CardOrderInfo extends AlipayObject {
 	private String cardId;
 
 	/**
-	 * （1）TIMES_CARD / PERIOD_PAY / AXF_MERCHANT_PERIOD_PAY / AXF_MERCHANT_PERIOD_PAY_INDIRECT： init、available、used_up、closing、closed、pause （2）AXF_MONEY_CARD：available、invalid、paid、refund、timeout_closed、used_up （3）AXF_MONEY_TIME_CARD：wait_pay、paid、available、timeout_closed、used_up、closed、closing、expired
+	 * （1）TIMES_CARD / PERIOD_PAY / AXF_MERCHANT_PERIOD_PAY / AXF_MERCHANT_PERIOD_PAY_INDIRECT： init、available、used_up、closing、closed、pause （2）AXF_MONEY_CARD：available、invalid、paid、refund、timeout_closed、used_up、closing（3）AXF_MONEY_TIME_CARD：wait_pay、paid、available、timeout_closed、used_up、closed、closing、expired
 	 */
 	@ApiField("card_status")
 	private String cardStatus;
@@ -228,6 +240,20 @@ public class CardOrderInfo extends AlipayObject {
 	 */
 	@ApiField("user_phone")
 	private String userPhone;
+
+	public String getAftersalesId() {
+		return this.aftersalesId;
+	}
+	public void setAftersalesId(String aftersalesId) {
+		this.aftersalesId = aftersalesId;
+	}
+
+	public String getAftersalesStatus() {
+		return this.aftersalesStatus;
+	}
+	public void setAftersalesStatus(String aftersalesStatus) {
+		this.aftersalesStatus = aftersalesStatus;
+	}
 
 	public Long getAvailableAmount() {
 		return this.availableAmount;

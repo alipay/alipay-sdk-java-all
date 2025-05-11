@@ -7,17 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * null
+ * 抽佣信息
  *
  * @author auto create
- * @since 1.0, 2025-03-19 14:12:27
+ * @since 1.0, 2025-01-05 10:03:05
  */
 public class CommissionInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3684514123411681991L;
+	private static final long serialVersionUID = 7539657358574543252L;
 
 	/**
-	 * null
+	 * 角色列表
 	 */
 	@ApiListField("commission_role_list")
 	@ApiField("commission_role_info")

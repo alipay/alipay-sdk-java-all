@@ -1,5 +1,6 @@
 package com.alipay.api.request;
 
+import com.alipay.api.domain.AlipayOpenSpCanteenOpenQueryModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
@@ -11,12 +12,24 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.sp.canteen.open.query request
  * 
  * @author auto create
- * @since 1.0, 2025-04-22 22:22:26
+ * @since 1.0, 2025-05-02 14:47:25
  */
 public class AlipayOpenSpCanteenOpenQueryRequest implements AlipayRequest<AlipayOpenSpCanteenOpenQueryResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
+
+	/** 
+	* 查询商户点餐业务开通状态信息
+	 */
+	private String bizContent;
+
+	public void setBizContent(String bizContent) {
+		this.bizContent = bizContent;
+	}
+	public String getBizContent() {
+		return this.bizContent;
+	}
 	private String terminalType;
 	private String terminalInfo;	
 	private String prodCode;
@@ -79,6 +92,7 @@ public class AlipayOpenSpCanteenOpenQueryRequest implements AlipayRequest<Alipay
 
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
+		txtParams.put("biz_content", this.bizContent);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.rent.enterprise.seal.querystatus request
  * 
  * @author auto create
- * @since 1.0, 2025-03-07 13:42:24
+ * @since 1.0, 2025-04-28 17:32:10
  */
 public class AlipayCommerceRentEnterpriseSealQuerystatusRequest implements AlipayRequest<AlipayCommerceRentEnterpriseSealQuerystatusResponse> {
 

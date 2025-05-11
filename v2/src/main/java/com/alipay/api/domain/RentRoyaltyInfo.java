@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 分账和分期详情信息
  *
  * @author auto create
- * @since 1.0, 2025-03-28 17:33:55
+ * @since 1.0, 2025-05-09 11:02:21
  */
 public class RentRoyaltyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2639212287549157321L;
+	private static final long serialVersionUID = 4338343668476236914L;
 
 	/**
 	 * 2088开头的16位纯数字，小程序场景下获取用户ID请参考：用户授权; 其它场景下获取用户ID请参考：网页授权获取用户信息; 其中buyer_id与buyer_open_id不能同时为空
@@ -27,6 +27,18 @@ public class RentRoyaltyInfo extends AlipayObject {
 	 */
 	@ApiField("buyer_open_id")
 	private String buyerOpenId;
+
+	/**
+	 * 提前结清标志
+	 */
+	@ApiField("early_settle")
+	private Boolean earlySettle;
+
+	/**
+	 * 提前结清金额,单位：元
+	 */
+	@ApiField("early_settle_price")
+	private String earlySettlePrice;
 
 	/**
 	 * 资方appid
@@ -84,6 +96,20 @@ public class RentRoyaltyInfo extends AlipayObject {
 	}
 	public void setBuyerOpenId(String buyerOpenId) {
 		this.buyerOpenId = buyerOpenId;
+	}
+
+	public Boolean getEarlySettle() {
+		return this.earlySettle;
+	}
+	public void setEarlySettle(Boolean earlySettle) {
+		this.earlySettle = earlySettle;
+	}
+
+	public String getEarlySettlePrice() {
+		return this.earlySettlePrice;
+	}
+	public void setEarlySettlePrice(String earlySettlePrice) {
+		this.earlySettlePrice = earlySettlePrice;
 	}
 
 	public String getInvestAppId() {

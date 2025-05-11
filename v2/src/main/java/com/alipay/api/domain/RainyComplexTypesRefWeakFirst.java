@@ -1,17 +1,27 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * 迭代内新增
+ * 新模型新建复杂类型--RainyComplexTypesRefWeakFirst
  *
  * @author auto create
- * @since 1.0, 2024-12-02 17:17:18
+ * @since 1.0, 2024-12-02 20:47:11
  */
 public class RainyComplexTypesRefWeakFirst extends AlipayObject {
 
-	private static final long serialVersionUID = 2386883966865616874L;
+	private static final long serialVersionUID = 5592299998352436741L;
+
+	/**
+	 * 布尔
+	 */
+	@ApiListField("schema_param_boolean")
+	@ApiField("boolean")
+	private List<Boolean> schemaParamBoolean;
 
 	/**
 	 * 数字类型
@@ -24,6 +34,13 @@ public class RainyComplexTypesRefWeakFirst extends AlipayObject {
 	 */
 	@ApiField("schema_param_string")
 	private String schemaParamString;
+
+	public List<Boolean> getSchemaParamBoolean() {
+		return this.schemaParamBoolean;
+	}
+	public void setSchemaParamBoolean(List<Boolean> schemaParamBoolean) {
+		this.schemaParamBoolean = schemaParamBoolean;
+	}
 
 	public Long getSchemaParamNum() {
 		return this.schemaParamNum;

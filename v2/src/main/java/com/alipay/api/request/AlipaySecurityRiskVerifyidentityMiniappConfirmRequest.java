@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.risk.verifyidentity.miniapp.confirm request
  * 
  * @author auto create
- * @since 1.0, 2024-07-18 11:25:30
+ * @since 1.0, 2025-05-06 11:25:24
  */
 public class AlipaySecurityRiskVerifyidentityMiniappConfirmRequest implements AlipayRequest<AlipaySecurityRiskVerifyidentityMiniappConfirmResponse> {
 

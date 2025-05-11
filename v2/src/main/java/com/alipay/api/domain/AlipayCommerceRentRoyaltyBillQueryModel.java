@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账单查询接口
  *
  * @author auto create
- * @since 1.0, 2025-04-24 14:27:34
+ * @since 1.0, 2025-04-28 17:30:12
  */
 public class AlipayCommerceRentRoyaltyBillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1719191678958236587L;
+	private static final long serialVersionUID = 2432345996238622832L;
 
 	/**
 	 * 分账完成起始日期

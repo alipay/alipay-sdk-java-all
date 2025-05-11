@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.card.deposit.consult response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-27 10:31:21
+ * @since 1.0, 2025-05-08 15:52:27
  */
 public class AlipayFundCardDepositConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8113564777547796888L;
+	private static final long serialVersionUID = 7571743532174315633L;
 
 	/** 
 	 * 凭证号
@@ -31,6 +31,12 @@ public class AlipayFundCardDepositConsultResponse extends AlipayResponse {
 	 */
 	@ApiField("expired_time")
 	private String expiredTime;
+
+	/** 
+	 * 制卡单id
+	 */
+	@ApiField("generate_card_order_id")
+	private String generateCardOrderId;
 
 	/** 
 	 * 卡片状态
@@ -57,6 +63,13 @@ public class AlipayFundCardDepositConsultResponse extends AlipayResponse {
 	}
 	public String getExpiredTime( ) {
 		return this.expiredTime;
+	}
+
+	public void setGenerateCardOrderId(String generateCardOrderId) {
+		this.generateCardOrderId = generateCardOrderId;
+	}
+	public String getGenerateCardOrderId( ) {
+		return this.generateCardOrderId;
 	}
 
 	public void setStatus(String status) {

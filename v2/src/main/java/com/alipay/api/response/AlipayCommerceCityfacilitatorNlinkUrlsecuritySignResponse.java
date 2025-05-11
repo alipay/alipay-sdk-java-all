@@ -8,11 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.cityfacilitator.nlink.urlsecurity.sign response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-21 09:32:13
+ * @since 1.0, 2025-04-29 10:37:27
  */
 public class AlipayCommerceCityfacilitatorNlinkUrlsecuritySignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6324161562774244239L;
+	private static final long serialVersionUID = 8883368675969812127L;
+
+	/** 
+	 * 设备biztid
+	 */
+	@ApiField("biztid")
+	private String biztid;
 
 	/** 
 	 * 耗时单位毫秒
@@ -43,6 +49,13 @@ public class AlipayCommerceCityfacilitatorNlinkUrlsecuritySignResponse extends A
 	 */
 	@ApiField("url")
 	private String url;
+
+	public void setBiztid(String biztid) {
+		this.biztid = biztid;
+	}
+	public String getBiztid( ) {
+		return this.biztid;
+	}
 
 	public void setCostTime(Long costTime) {
 		this.costTime = costTime;

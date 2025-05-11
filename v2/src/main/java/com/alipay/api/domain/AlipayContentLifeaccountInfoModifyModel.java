@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生活号信息修改
  *
  * @author auto create
- * @since 1.0, 2025-04-08 09:57:19
+ * @since 1.0, 2025-04-28 19:11:47
  */
 public class AlipayContentLifeaccountInfoModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8485568185244327717L;
+	private static final long serialVersionUID = 8793173476745643724L;
 
 	/**
 	 * 医生描述，如职称等信息

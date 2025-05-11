@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * AMPE情景推荐服务查询
  *
  * @author auto create
- * @since 1.0, 2025-04-21 20:37:26
+ * @since 1.0, 2025-05-09 11:02:28
  */
 public class AlipayOpenMiniAmpeRecommendQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5683945898774962516L;
+	private static final long serialVersionUID = 1457112535844512311L;
 
 	/**
 	 * 业务场景，由支付宝统一分配，用于指定推荐的内容。
@@ -32,9 +32,10 @@ public class AlipayOpenMiniAmpeRecommendQueryModel extends AlipayObject {
 	private AmpeDeviceInfo deviceInfo;
 
 	/**
-	 * 支付宝用户openId
+	 * 支付宝用户openId 当前字段已废弃(通过accessToken获取userId)
 	 */
 	@ApiField("open_id")
+	@Deprecated
 	private String openId;
 
 	/**
@@ -50,9 +51,10 @@ public class AlipayOpenMiniAmpeRecommendQueryModel extends AlipayObject {
 	private String reqNo;
 
 	/**
-	 * 支付宝用户userId
+	 * 支付宝用户userId 当前字段已废弃(通过accessToken获取userId)
 	 */
 	@ApiField("user_id")
+	@Deprecated
 	private String userId;
 
 	public String getBizScene() {

@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 定价信息
  *
  * @author auto create
- * @since 1.0, 2025-03-28 00:04:16
+ * @since 1.0, 2025-05-08 14:48:56
  */
 public class CreditPricing extends AlipayObject {
 
-	private static final long serialVersionUID = 4519443169899427916L;
+	private static final long serialVersionUID = 1852713215596487291L;
 
 	/**
 	 * 金额，单位分
 	 */
 	@ApiField("amount")
 	private Long amount;
+
+	/**
+	 * 是否默认定价
+	 */
+	@ApiField("default_credit_pricing")
+	private Boolean defaultCreditPricing;
 
 	/**
 	 * 年利率，如为8%，则为0.08
@@ -48,6 +54,13 @@ public class CreditPricing extends AlipayObject {
 	}
 	public void setAmount(Long amount) {
 		this.amount = amount;
+	}
+
+	public Boolean getDefaultCreditPricing() {
+		return this.defaultCreditPricing;
+	}
+	public void setDefaultCreditPricing(Boolean defaultCreditPricing) {
+		this.defaultCreditPricing = defaultCreditPricing;
 	}
 
 	public String getIntRate() {

@@ -13,10 +13,10 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportChargerPrivatebindSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7311958578451166846L;
+	private static final long serialVersionUID = 2524525815578794768L;
 
 	/**
-	 * true: 绑定，false：解绑
+	 * true: 绑定，false：解绑；支持user_id和phone_num绑定，支持user_id解绑
 	 */
 	@ApiField("bind_status")
 	private Boolean bindStatus;
@@ -40,13 +40,13 @@ public class AlipayCommerceTransportChargerPrivatebindSyncModel extends AlipayOb
 	private Date operateTime;
 
 	/**
-	 * 商家用户ID
+	 * 商家侧的用户ID
 	 */
 	@ApiField("operator_uid")
 	private String operatorUid;
 
 	/**
-	 * 用户手机号码，该绑定方式需联系业务配置，仅针对部分场景。
+	 * 用户的支付宝登陆手机号。通过手机号绑定，仅针对部分场景，需联系业务或技术支持配置开放。
 	 */
 	@ApiField("phone_num")
 	private String phoneNum;

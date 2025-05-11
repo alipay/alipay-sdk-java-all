@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 同步评论
  *
  * @author auto create
- * @since 1.0, 2025-04-22 13:51:54
+ * @since 1.0, 2025-04-29 14:16:53
  */
 public class AlipayContentLiveCommentSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7695185367142418657L;
+	private static final long serialVersionUID = 7137257294353995613L;
 
 	/**
 	 * tab侧的直播间id（加密后）

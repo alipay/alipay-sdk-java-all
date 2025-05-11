@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.campus.checkin.download response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-22 19:19:13
+ * @since 1.0, 2025-04-29 14:17:26
  */
 public class AlipayCommerceEducateCampusCheckinDownloadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6113574347683738432L;
+	private static final long serialVersionUID = 6368786114695463991L;
 
 	/** 
 	 * file_path

@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * null
+ * ApiScheameTwo测试
  *
  * @author auto create
- * @since 1.0, 2024-12-05 10:17:20
+ * @since 1.0, 2024-12-05 10:13:35
  */
 public class ApiScheameTwo extends AlipayObject {
 
-	private static final long serialVersionUID = 8553813458558896261L;
+	private static final long serialVersionUID = 3619755582829483676L;
 
 	/**
 	 * 卡名称

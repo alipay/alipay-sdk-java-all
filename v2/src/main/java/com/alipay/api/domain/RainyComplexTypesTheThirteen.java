@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * 测试数据，强引用复杂类型示例
+ * 引用复杂类型
  *
  * @author auto create
- * @since 1.0, 2025-04-23 18:29:48
+ * @since 1.0, 2025-04-15 13:53:48
  */
 public class RainyComplexTypesTheThirteen extends AlipayObject {
 
-	private static final long serialVersionUID = 2161144966261274177L;
+	private static final long serialVersionUID = 8148624562768168122L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识
@@ -23,7 +23,7 @@ public class RainyComplexTypesTheThirteen extends AlipayObject {
 	private String openId;
 
 	/**
-	 * null
+	 * 用于标记支付宝用户在应用下的唯一标识
 	 */
 	@ApiListField("open_ids")
 	@ApiField("string")

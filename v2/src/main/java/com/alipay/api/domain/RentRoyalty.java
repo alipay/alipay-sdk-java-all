@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁分账计划
  *
  * @author auto create
- * @since 1.0, 2025-04-18 17:39:19
+ * @since 1.0, 2025-05-09 17:53:49
  */
 public class RentRoyalty extends AlipayObject {
 
-	private static final long serialVersionUID = 7687974745589484324L;
+	private static final long serialVersionUID = 2645285814483434211L;
 
 	/**
 	 * 订单id
@@ -68,6 +68,12 @@ public class RentRoyalty extends AlipayObject {
 	 */
 	@ApiField("period")
 	private String period;
+
+	/**
+	 * 应还日（资方
+	 */
+	@ApiField("repay_time")
+	private Date repayTime;
 
 	/**
 	 * 改账中的分账金额，单位：元，精确到小数点后两位
@@ -208,6 +214,13 @@ public class RentRoyalty extends AlipayObject {
 	}
 	public void setPeriod(String period) {
 		this.period = period;
+	}
+
+	public Date getRepayTime() {
+		return this.repayTime;
+	}
+	public void setRepayTime(Date repayTime) {
+		this.repayTime = repayTime;
 	}
 
 	public String getRoyaltyAfterPrice() {

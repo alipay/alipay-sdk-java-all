@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 卡
  *
  * @author auto create
- * @since 1.0, 2024-12-20 13:31:52
+ * @since 1.0, 2025-04-28 22:35:23
  */
 public class MerchantCardTemplate extends AlipayObject {
 
-	private static final long serialVersionUID = 7541613768722326661L;
+	private static final long serialVersionUID = 1817944293662933726L;
+
+	/**
+	 * 违约金信息
+	 */
+	@ApiField("break_costs_info")
+	private BreakCostsInfo breakCostsInfo;
 
 	/**
 	 * 卡营销优惠信息
@@ -110,6 +116,12 @@ public class MerchantCardTemplate extends AlipayObject {
 	private String msgAppId;
 
 	/**
+	 * 线上售卖表示。01标识已开启线上售卖。02标识未开启线上售卖.
+	 */
+	@ApiField("online_sale_switch")
+	private String onlineSaleSwitch;
+
+	/**
 	 * 外部卡ID
 	 */
 	@ApiField("out_card_id")
@@ -135,6 +147,12 @@ public class MerchantCardTemplate extends AlipayObject {
 	private String settleType;
 
 	/**
+	 * 是否支持用户主动退卡
+	 */
+	@ApiField("support_withdraw")
+	private String supportWithdraw;
+
+	/**
 	 * 次卡信息
 	 */
 	@ApiField("times_card_info")
@@ -145,6 +163,13 @@ public class MerchantCardTemplate extends AlipayObject {
 	 */
 	@ApiField("use_info")
 	private CardTemplateUse useInfo;
+
+	public BreakCostsInfo getBreakCostsInfo() {
+		return this.breakCostsInfo;
+	}
+	public void setBreakCostsInfo(BreakCostsInfo breakCostsInfo) {
+		this.breakCostsInfo = breakCostsInfo;
+	}
 
 	public List<CardPromoInfo> getCardPromoList() {
 		return this.cardPromoList;
@@ -244,6 +269,13 @@ public class MerchantCardTemplate extends AlipayObject {
 		this.msgAppId = msgAppId;
 	}
 
+	public String getOnlineSaleSwitch() {
+		return this.onlineSaleSwitch;
+	}
+	public void setOnlineSaleSwitch(String onlineSaleSwitch) {
+		this.onlineSaleSwitch = onlineSaleSwitch;
+	}
+
 	public String getOutCardId() {
 		return this.outCardId;
 	}
@@ -270,6 +302,13 @@ public class MerchantCardTemplate extends AlipayObject {
 	}
 	public void setSettleType(String settleType) {
 		this.settleType = settleType;
+	}
+
+	public String getSupportWithdraw() {
+		return this.supportWithdraw;
+	}
+	public void setSupportWithdraw(String supportWithdraw) {
+		this.supportWithdraw = supportWithdraw;
 	}
 
 	public TimesCardInfo getTimesCardInfo() {

@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 融资期数
+ * 租赁期数
  *
  * @author auto create
- * @since 1.0, 2025-04-18 20:07:27
+ * @since 1.0, 2025-03-18 16:05:55
  */
 public class RentPeriod extends AlipayObject {
 
-	private static final long serialVersionUID = 1622821373489273329L;
+	private static final long serialVersionUID = 3151567341385335921L;
 
 	/**
 	 * 期数的步长，单位：天/月/年

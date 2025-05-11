@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniMgpEventTriggerModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8719986365893791737L;
+	private static final long serialVersionUID = 8556757136229438564L;
 
 	/**
 	 * 业务类型，优先级低于event_code，如果同时传入event_code和biz_type则会优先使用event_code

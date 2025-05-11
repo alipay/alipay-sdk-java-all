@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceDataMonitordataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3517743926614438559L;
+	private static final long serialVersionUID = 4733642764796189483L;
 
 	/**
 	 * 传入的批量打包数据，dataEntry和dataDim的组合数据，详见dataEntry和dataDim的说明

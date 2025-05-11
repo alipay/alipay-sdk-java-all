@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 触发对应乐园奖励
  *
  * @author auto create
- * @since 1.0, 2025-04-10 16:10:32
+ * @since 1.0, 2025-05-08 23:37:17
  */
 public class AlipaySocialGamecenterGamerightsTriggerModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6891582323476762282L;
+	private static final long serialVersionUID = 2147534999635284898L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识

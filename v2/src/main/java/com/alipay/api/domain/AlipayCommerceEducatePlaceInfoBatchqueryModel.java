@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页查询位置信息列表
  *
  * @author auto create
- * @since 1.0, 2025-04-17 17:32:50
+ * @since 1.0, 2025-05-08 17:24:56
  */
 public class AlipayCommerceEducatePlaceInfoBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1828579528862977744L;
+	private static final long serialVersionUID = 4665457925485498221L;
 
 	/**
 	 * 机构内标
@@ -30,6 +30,12 @@ public class AlipayCommerceEducatePlaceInfoBatchqueryModel extends AlipayObject 
 	 */
 	@ApiField("page_size")
 	private Long pageSize;
+
+	/**
+	 * 父级楼栋ID。
+	 */
+	@ApiField("parent_id")
+	private String parentId;
 
 	/**
 	 * 位置标签
@@ -62,6 +68,13 @@ public class AlipayCommerceEducatePlaceInfoBatchqueryModel extends AlipayObject 
 	}
 	public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
+	}
+
+	public String getParentId() {
+		return this.parentId;
+	}
+	public void setParentId(String parentId) {
+		this.parentId = parentId;
 	}
 
 	public String getPlaceLabel() {

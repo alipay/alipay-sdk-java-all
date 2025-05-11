@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.verifyidentity.voiceprint.verify response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-18 13:42:27
+ * @since 1.0, 2025-05-07 17:12:25
  */
 public class AlipaySecurityRiskVerifyidentityVoiceprintVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6227652466435691345L;
+	private static final long serialVersionUID = 3887535844816158874L;
 
 	/** 
 	 * 语音识别文本

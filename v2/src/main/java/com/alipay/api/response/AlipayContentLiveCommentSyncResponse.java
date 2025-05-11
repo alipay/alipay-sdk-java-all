@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.content.live.comment.sync response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-22 13:57:29
+ * @since 1.0, 2025-04-29 14:17:26
  */
 public class AlipayContentLiveCommentSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6878295729911127826L;
+	private static final long serialVersionUID = 6165437213538989372L;
 
 	/** 
 	 * 外部在Tab3侧生成的评论id

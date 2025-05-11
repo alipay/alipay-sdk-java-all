@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * N设备作业状态查询
  *
  * @author auto create
- * @since 1.0, 2025-04-24 14:59:40
+ * @since 1.0, 2025-04-30 11:35:23
  */
 public class AlipayOpenSpNdeviceWorkstatusQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6158799425214421691L;
+	private static final long serialVersionUID = 8788432853219693998L;
 
 	/**
 	 * 碰一下设备SN标识

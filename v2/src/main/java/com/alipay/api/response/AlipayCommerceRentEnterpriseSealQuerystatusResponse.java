@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.rent.enterprise.seal.querystatus response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-07 13:42:24
+ * @since 1.0, 2025-04-28 17:32:10
  */
 public class AlipayCommerceRentEnterpriseSealQuerystatusResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7565372949664256442L;
+	private static final long serialVersionUID = 8677364315779835631L;
 
 	/** 
 	 * 业务流水号

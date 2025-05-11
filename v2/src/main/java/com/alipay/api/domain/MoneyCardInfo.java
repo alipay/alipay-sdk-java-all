@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 金额卡独有信息
  *
  * @author auto create
- * @since 1.0, 2024-12-20 13:31:52
+ * @since 1.0, 2025-04-28 22:35:20
  */
 public class MoneyCardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2422562362753127829L;
+	private static final long serialVersionUID = 4114454652357859771L;
 
 	/**
 	 * 可使用天数，单位天(购卡后立即生效，生效后x天失效）
@@ -73,9 +73,10 @@ public class MoneyCardInfo extends AlipayObject {
 	private Long stockNum;
 
 	/**
-	 * 是否支持用户主动退卡。true表示用户可在有效期内主动退卡，无需商家操作，false表示商家可在后台订单管理中手动操作退卡，用户可电话联系商家协商退款
+	 * 是否支持用户主动退卡。true表示用户可在有效期内主动退卡，无需商家操作，false表示商家可在后台订单管理中手动操作退卡，用户可电话联系商家协商退款 当前字段已废弃(因是否支持退卡新增参数值，该字段已废弃，请使用最外层的support_withdraw字段)
 	 */
 	@ApiField("support_withdraw")
+	@Deprecated
 	private Boolean supportWithdraw;
 
 	/**

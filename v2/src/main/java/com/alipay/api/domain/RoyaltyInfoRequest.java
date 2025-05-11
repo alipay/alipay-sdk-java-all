@@ -6,14 +6,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * null
+ * 分账计划明细模型
  *
  * @author auto create
- * @since 1.0, 2025-04-01 19:52:26
+ * @since 1.0, 2025-05-09 19:49:19
  */
 public class RoyaltyInfoRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 1196915428861541744L;
+	private static final long serialVersionUID = 1587717137244476227L;
 
 	/**
 	 * 买断分账金，人明币，单位：元
@@ -28,6 +28,18 @@ public class RoyaltyInfoRequest extends AlipayObject {
 	private Date expectRoyaltyTime;
 
 	/**
+	 * 应还日（资方）
+	 */
+	@ApiField("repay_time")
+	private Date repayTime;
+
+	/**
+	 * 分账利息，币种：人民币。
+	 */
+	@ApiField("royalty_interest_price")
+	private String royaltyInterestPrice;
+
+	/**
 	 * 分账期数
 	 */
 	@ApiField("royalty_period")
@@ -38,6 +50,12 @@ public class RoyaltyInfoRequest extends AlipayObject {
 	 */
 	@ApiField("royalty_price")
 	private String royaltyPrice;
+
+	/**
+	 * 分账本金，币种:人民币
+	 */
+	@ApiField("royalty_principal_price")
+	private String royaltyPrincipalPrice;
 
 	/**
 	 * 分账类型
@@ -59,6 +77,20 @@ public class RoyaltyInfoRequest extends AlipayObject {
 		this.expectRoyaltyTime = expectRoyaltyTime;
 	}
 
+	public Date getRepayTime() {
+		return this.repayTime;
+	}
+	public void setRepayTime(Date repayTime) {
+		this.repayTime = repayTime;
+	}
+
+	public String getRoyaltyInterestPrice() {
+		return this.royaltyInterestPrice;
+	}
+	public void setRoyaltyInterestPrice(String royaltyInterestPrice) {
+		this.royaltyInterestPrice = royaltyInterestPrice;
+	}
+
 	public String getRoyaltyPeriod() {
 		return this.royaltyPeriod;
 	}
@@ -71,6 +103,13 @@ public class RoyaltyInfoRequest extends AlipayObject {
 	}
 	public void setRoyaltyPrice(String royaltyPrice) {
 		this.royaltyPrice = royaltyPrice;
+	}
+
+	public String getRoyaltyPrincipalPrice() {
+		return this.royaltyPrincipalPrice;
+	}
+	public void setRoyaltyPrincipalPrice(String royaltyPrincipalPrice) {
+		this.royaltyPrincipalPrice = royaltyPrincipalPrice;
 	}
 
 	public String getRoyaltyType() {

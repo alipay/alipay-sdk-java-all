@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMedicalCommercialPerformanceVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2612334314167375775L;
+	private static final long serialVersionUID = 7182482377915841673L;
 
 	/** 
 	 * biz_order_id用于标识支付宝侧唯一业务单的id，在商户核销用户商品时返回给商户。

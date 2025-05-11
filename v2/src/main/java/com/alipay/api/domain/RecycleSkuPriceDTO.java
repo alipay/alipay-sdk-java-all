@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * 具体款式商品的价格，包含最低价与最高价
+ * 回收商品款式的价格
  *
  * @author auto create
- * @since 1.0, 2025-04-22 15:42:27
+ * @since 1.0, 2025-04-13 17:00:17
  */
 public class RecycleSkuPriceDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5747341771694872729L;
+	private static final long serialVersionUID = 8284449917736198369L;
 
 	/**
 	 * 最高价（单位为元，金额超过1000就不允许小数点）
@@ -29,10 +29,11 @@ public class RecycleSkuPriceDTO extends AlipayObject {
 	private String minPrice;
 
 	/**
-	 * null
+	 * 商户同步商品价格的扩展 当前字段已废弃(需要升级同步商品价格的扩展)
 	 */
 	@ApiListField("price_ext")
 	@ApiField("recycle_price_ext_d_t_o")
+	@Deprecated
 	private List<RecyclePriceExtDTO> priceExt;
 
 	/**
