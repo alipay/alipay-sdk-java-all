@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NewsAggregationValue extends AlipayObject {
 
-	private static final long serialVersionUID = 5691449897317793274L;
+	private static final long serialVersionUID = 4264974456457667917L;
 
 	/**
 	 * 聚合结果数量

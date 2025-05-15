@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 票务信息修改模型
  *
  * @author auto create
- * @since 1.0, 2024-03-11 10:50:14
+ * @since 1.0, 2025-05-13 17:22:20
  */
 public class TicketInfoModifyDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4693129448427382769L;
+	private static final long serialVersionUID = 5869462146634933794L;
 
 	/**
 	 * 需要更新的场次结束时间

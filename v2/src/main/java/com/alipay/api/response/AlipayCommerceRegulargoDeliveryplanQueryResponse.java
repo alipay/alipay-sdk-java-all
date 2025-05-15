@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceRegulargoDeliveryplanQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3633211396675626918L;
+	private static final long serialVersionUID = 1554568469681618266L;
 
 	/** 
 	 * 配送计划中的履约信息

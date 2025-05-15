@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 地址信息，包含联系人、联系电话、地址
  *
  * @author auto create
- * @since 1.0, 2025-02-19 16:52:54
+ * @since 1.0, 2025-05-13 17:30:54
  */
 public class MiniOrderAddressInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7748441863389742468L;
+	private static final long serialVersionUID = 3382274232511175262L;
 
 	/**
 	 * 详细地址信息

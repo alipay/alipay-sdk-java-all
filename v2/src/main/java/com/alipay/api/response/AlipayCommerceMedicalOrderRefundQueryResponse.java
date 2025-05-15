@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMedicalOrderRefundQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7636372849555474971L;
+	private static final long serialVersionUID = 6555739666593448277L;
 
 	/** 
 	 * 退款订单列表

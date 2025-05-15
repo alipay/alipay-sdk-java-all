@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝商户自营销信息查询
  *
  * @author auto create
- * @since 1.0, 2021-07-13 14:21:17
+ * @since 1.0, 2025-05-12 19:36:08
  */
 public class AlipayMarketingCampaignSelfActivityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1378393396468111823L;
+	private static final long serialVersionUID = 1622228611198518145L;
 
 	/**
 	 * b.alipay.com 运营中心配置后台-活动详情-活动id

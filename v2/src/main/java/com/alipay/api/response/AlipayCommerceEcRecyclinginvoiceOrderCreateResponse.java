@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.recyclinginvoice.order.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-09 20:32:34
+ * @since 1.0, 2025-05-12 19:42:25
  */
 public class AlipayCommerceEcRecyclinginvoiceOrderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7573934493937126729L;
+	private static final long serialVersionUID = 3136528731937565925L;
 
 	/** 
 	 * 收款即开票页面支付宝URL（自然人端）
@@ -30,6 +30,12 @@ public class AlipayCommerceEcRecyclinginvoiceOrderCreateResponse extends AlipayR
 	 */
 	@ApiField("collection_invoice_page_url")
 	private String collectionInvoicePageUrl;
+
+	/** 
+	 * 订单的备注字段,用于发票的备注显示
+	 */
+	@ApiField("memo")
+	private String memo;
 
 	/** 
 	 * 订单号
@@ -84,6 +90,13 @@ public class AlipayCommerceEcRecyclinginvoiceOrderCreateResponse extends AlipayR
 	}
 	public String getCollectionInvoicePageUrl( ) {
 		return this.collectionInvoicePageUrl;
+	}
+
+	public void setMemo(String memo) {
+		this.memo = memo;
+	}
+	public String getMemo( ) {
+		return this.memo;
 	}
 
 	public void setOrderId(String orderId) {

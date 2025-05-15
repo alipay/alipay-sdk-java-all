@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 反向订单操作_审核
  *
  * @author auto create
- * @since 1.0, 2025-04-22 15:38:17
+ * @since 1.0, 2025-05-12 19:42:20
  */
 public class AlipayCommerceEcRecyclinginvoiceOrderAuditModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1172434519543596662L;
+	private static final long serialVersionUID = 6164964956554919616L;
+
+	/**
+	 * 订单的备注字段,用于发票的备注显示
+	 */
+	@ApiField("memo")
+	private String memo;
 
 	/**
 	 * 订单号，调用反向订单创建接口时返回，也可以通过反向订单查询接口通过外部订单号查询
@@ -40,6 +46,13 @@ public class AlipayCommerceEcRecyclinginvoiceOrderAuditModel extends AlipayObjec
 	 */
 	@ApiField("tax_no")
 	private String taxNo;
+
+	public String getMemo() {
+		return this.memo;
+	}
+	public void setMemo(String memo) {
+		this.memo = memo;
+	}
 
 	public String getOrderId() {
 		return this.orderId;

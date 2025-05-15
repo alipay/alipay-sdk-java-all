@@ -9,14 +9,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租金信息
  *
  * @author auto create
- * @since 1.0, 2024-09-24 20:45:51
+ * @since 1.0, 2025-05-13 17:22:20
  */
 public class RentInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2329143615126947713L;
+	private static final long serialVersionUID = 3578944888391529567L;
 
 	/**
-	 * 续租总期数，1-12的整数，包含边界值
+	 * 续租总期数，1-12的整数，包含边界值。度量单位：期
 	 */
 	@ApiField("addon_period_num")
 	private String addonPeriodNum;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金预授权冻结信息
  *
  * @author auto create
- * @since 1.0, 2025-01-07 13:48:44
+ * @since 1.0, 2025-05-13 17:30:56
  */
 public class FundAuthFreezeInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6718847457694164594L;
+	private static final long serialVersionUID = 5848295721987977341L;
 
 	/**
 	 * 芝麻外部类目

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ArMonthlyBillDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5142334757498543945L;
+	private static final long serialVersionUID = 7112549621285916521L;
 
 	/**
 	 * 出账日

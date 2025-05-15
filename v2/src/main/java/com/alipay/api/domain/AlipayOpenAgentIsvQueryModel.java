@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务商查询代商家创建智能体记录
  *
  * @author auto create
- * @since 1.0, 2025-04-11 10:02:27
+ * @since 1.0, 2025-05-15 09:56:57
  */
 public class AlipayOpenAgentIsvQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6661656389373946231L;
+	private static final long serialVersionUID = 4492387577329444286L;
 
 	/**
 	 * 服务商代商家创建智能体，由支付宝开放平台返回的订单号用于后续查询处理进展。

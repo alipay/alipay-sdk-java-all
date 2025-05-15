@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.sideloansign.credit.consult response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-06 10:36:48
+ * @since 1.0, 2025-05-12 11:37:27
  */
 public class AlipayPcreditLoanSideloansignCreditConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3189378152265424497L;
+	private static final long serialVersionUID = 6168734792933567679L;
 
 	/** 
 	 * true - 有签约方案
@@ -27,6 +27,12 @@ false - 无签约方案
 	 */
 	@ApiField("alipay_desensitize_login_id")
 	private String alipayDesensitizeLoginId;
+
+	/** 
+	 * 冷静期类型，LONG-长，SHORT-短，NONE-无
+	 */
+	@ApiField("cool_off_type")
+	private String coolOffType;
 
 	/** 
 	 * 扩展信息
@@ -100,6 +106,13 @@ false - 无签约方案
 	}
 	public String getAlipayDesensitizeLoginId( ) {
 		return this.alipayDesensitizeLoginId;
+	}
+
+	public void setCoolOffType(String coolOffType) {
+		this.coolOffType = coolOffType;
+	}
+	public String getCoolOffType( ) {
+		return this.coolOffType;
 	}
 
 	public void setExtension(String extension) {

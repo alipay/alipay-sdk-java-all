@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 对话消息体，包含提问内容，附件列表，上下文参数等
  *
  * @author auto create
- * @since 1.0, 2025-05-09 15:43:23
+ * @since 1.0, 2025-05-12 14:12:27
  */
 public class ChatPayload extends AlipayObject {
 
-	private static final long serialVersionUID = 6415645588169898376L;
+	private static final long serialVersionUID = 5769635191447599467L;
 
 	/**
 	 * null

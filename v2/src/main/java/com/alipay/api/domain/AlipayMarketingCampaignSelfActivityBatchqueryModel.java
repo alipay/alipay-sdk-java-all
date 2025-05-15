@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝商户活动批量信息查询
  *
  * @author auto create
- * @since 1.0, 2021-07-13 16:40:02
+ * @since 1.0, 2025-05-12 19:37:49
  */
 public class AlipayMarketingCampaignSelfActivityBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5812182715126476926L;
+	private static final long serialVersionUID = 6382223775442641978L;
 
 	/**
 	 * 是否需要券核销范围信息（包括pid列表、门店id列表和小程序appid列表，由于字段可能较大默认不返回，业务方也请慎用。pid列表:PID，门店id列表:SHOP_ID，小程序appid列表:APP_ID）

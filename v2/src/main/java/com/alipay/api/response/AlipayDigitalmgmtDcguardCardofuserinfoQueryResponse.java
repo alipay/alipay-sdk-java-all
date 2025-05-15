@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDigitalmgmtDcguardCardofuserinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7425427718963793936L;
+	private static final long serialVersionUID = 5722184252973946135L;
 
 	/** 
 	 * 工卡查询人员结果

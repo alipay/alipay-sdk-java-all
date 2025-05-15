@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 反向订单申请红字发票
  *
  * @author auto create
- * @since 1.0, 2025-04-22 15:37:56
+ * @since 1.0, 2025-05-12 19:40:20
  */
 public class AlipayCommerceEcRecyclinginvoiceOrderredinvoiceApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3464578991223891826L;
+	private static final long serialVersionUID = 4164827516571612736L;
 
 	/**
 	 * 订单号，调用反向订单创建接口时返回，也可以通过反向订单查询接口通过外部订单号查询

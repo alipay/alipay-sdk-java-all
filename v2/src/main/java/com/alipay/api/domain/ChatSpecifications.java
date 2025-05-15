@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 智能应用特性设置
  *
  * @author auto create
- * @since 1.0, 2025-05-09 15:43:23
+ * @since 1.0, 2025-05-12 14:12:27
  */
 public class ChatSpecifications extends AlipayObject {
 
-	private static final long serialVersionUID = 6632939141635713271L;
+	private static final long serialVersionUID = 3491658962797668815L;
 
 	/**
 	 * null

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品列表信息模型
  *
  * @author auto create
- * @since 1.0, 2025-04-18 19:17:57
+ * @since 1.0, 2025-05-13 17:30:56
  */
 public class MiniGoodsDetailInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8215491363655983943L;
+	private static final long serialVersionUID = 1469335475975757282L;
 
 	/**
 	 * 活动信息
@@ -73,7 +73,7 @@ public class MiniGoodsDetailInfoDTO extends AlipayObject {
 	private String imageMaterialId;
 
 	/**
-	 * 品牌编号；商品品牌信息https://xfpzl.yuque.com/dgw58m/apg2ie/qlqvdv0dhsbldyhv#kIy4；参考此文档传入品牌编号
+	 * 品牌编号；商品品牌信息参<a href="https://xfpzl.yuque.com/dgw58m/apg2ie/qlqvdv0dhsbldyhv#kIy4">https://xfpzl.yuque.com/dgw58m/apg2ie/qlqvdv0dhsbldyhv#kIy4 </a>考此文档传入品牌编号
 	 */
 	@ApiField("item_brand")
 	private String itemBrand;

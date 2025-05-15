@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KbAdvertContentPassword extends AlipayObject {
 
-	private static final long serialVersionUID = 1563466767119797951L;
+	private static final long serialVersionUID = 4441492978265598356L;
 
 	/**
 	 * 红包口令

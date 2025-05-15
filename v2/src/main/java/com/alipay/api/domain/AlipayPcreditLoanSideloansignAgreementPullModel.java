@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 代签协议获取
  *
  * @author auto create
- * @since 1.0, 2025-04-18 10:59:57
+ * @since 1.0, 2025-05-12 09:54:20
  */
 public class AlipayPcreditLoanSideloansignAgreementPullModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5542916736595459911L;
+	private static final long serialVersionUID = 4396737534548734322L;
 
 	/**
 	 * 信贷业务场景类型Code
@@ -42,6 +45,13 @@ public class AlipayPcreditLoanSideloansignAgreementPullModel extends AlipayObjec
 	 */
 	@ApiField("fund_supplier_code")
 	private String fundSupplierCode;
+
+	/**
+	 * 授信机构id列表
+	 */
+	@ApiListField("fund_supplier_code_list")
+	@ApiField("string")
+	private List<String> fundSupplierCodeList;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识
@@ -88,6 +98,13 @@ public class AlipayPcreditLoanSideloansignAgreementPullModel extends AlipayObjec
 	}
 	public void setFundSupplierCode(String fundSupplierCode) {
 		this.fundSupplierCode = fundSupplierCode;
+	}
+
+	public List<String> getFundSupplierCodeList() {
+		return this.fundSupplierCodeList;
+	}
+	public void setFundSupplierCodeList(List<String> fundSupplierCodeList) {
+		this.fundSupplierCodeList = fundSupplierCodeList;
 	}
 
 	public String getOpenId() {

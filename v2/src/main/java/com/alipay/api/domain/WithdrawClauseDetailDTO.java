@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class WithdrawClauseDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6748691924539591393L;
+	private static final long serialVersionUID = 6264762169578853566L;
 
 	/**
 	 * 金额

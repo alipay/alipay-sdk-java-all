@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayDataDataserviceAdcampaignGroupCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8873888621433172959L;
+	private static final long serialVersionUID = 7435284441695332186L;
 
 	/**
 	 * 年龄定向
@@ -156,7 +156,7 @@ CUSTOMER同pid
 	private Long groupId;
 
 	/**
-	 * 单元继承Id同主体鉴权
+	 * 同营销目标和同主体下的单元ID
 	 */
 	@ApiField("group_inherit")
 	private Long groupInherit;

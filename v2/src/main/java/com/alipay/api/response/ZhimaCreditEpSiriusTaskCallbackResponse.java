@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaCreditEpSiriusTaskCallbackResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4599998142748415178L;
+	private static final long serialVersionUID = 6834238654654276211L;
 
 	/** 
 	 * 天狼星业务id，通常是天狼星任务主键id

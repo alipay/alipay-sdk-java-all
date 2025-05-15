@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 反向订单创建
  *
  * @author auto create
- * @since 1.0, 2025-04-22 15:37:33
+ * @since 1.0, 2025-05-12 19:41:53
  */
 public class AlipayCommerceEcRecyclinginvoiceOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3131683918744624539L;
+	private static final long serialVersionUID = 3519147125218384287L;
 
 	/**
 	 * 企业（商户）营业员ID，传值为已维护的企业（商户）营业员编号，可调用反向企业营业员查询接口查询
@@ -27,6 +27,12 @@ public class AlipayCommerceEcRecyclinginvoiceOrderCreateModel extends AlipayObje
 	 */
 	@ApiField("company_supplier_id")
 	private String companySupplierId;
+
+	/**
+	 * 订单的备注字段,用于发票的备注显示
+	 */
+	@ApiField("memo")
+	private String memo;
 
 	/**
 	 * 订单商品明细
@@ -71,6 +77,13 @@ public class AlipayCommerceEcRecyclinginvoiceOrderCreateModel extends AlipayObje
 	}
 	public void setCompanySupplierId(String companySupplierId) {
 		this.companySupplierId = companySupplierId;
+	}
+
+	public String getMemo() {
+		return this.memo;
+	}
+	public void setMemo(String memo) {
+		this.memo = memo;
 	}
 
 	public List<RecyclinginvoiceOrderCreateItem> getOrderItemList() {

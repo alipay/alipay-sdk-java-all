@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.etc.signinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-07 19:59:33
+ * @since 1.0, 2025-05-14 16:12:28
  */
 public class AlipayCommerceTransportEtcSigninfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1214368342317374538L;
+	private static final long serialVersionUID = 4194314734165754434L;
 
 	/** 
 	 * 支付宝ETC平台代扣协议号，该协议号是经过ETC业务域包装过的，只有该业务域能解析。
 	 */
 	@ApiField("biz_agreement_no")
 	private String bizAgreementNo;
+
+	/** 
+	 * 订单状态
+	 */
+	@ApiField("order_status")
+	private String orderStatus;
 
 	/** 
 	 * 签约状态的描述。
@@ -40,6 +46,13 @@ public class AlipayCommerceTransportEtcSigninfoQueryResponse extends AlipayRespo
 	}
 	public String getBizAgreementNo( ) {
 		return this.bizAgreementNo;
+	}
+
+	public void setOrderStatus(String orderStatus) {
+		this.orderStatus = orderStatus;
+	}
+	public String getOrderStatus( ) {
+		return this.orderStatus;
 	}
 
 	public void setSignStatus(String signStatus) {

@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.adcampaign.creative.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-07 13:45:49
+ * @since 1.0, 2025-05-13 13:52:25
  */
 public class AlipayDataDataserviceAdcampaignCreativeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2578754569455187948L;
+	private static final long serialVersionUID = 3235582896851685883L;
 
 	/** 
 	 * 交互动作属性集合
@@ -44,7 +44,7 @@ public class AlipayDataDataserviceAdcampaignCreativeQueryResponse extends Alipay
 	private String adName;
 
 	/** 
-	 * 创意点击检测地址
+	 * 创意点击监测地址
 	 */
 	@ApiField("click_track_url")
 	private String clickTrackUrl;
@@ -68,7 +68,7 @@ public class AlipayDataDataserviceAdcampaignCreativeQueryResponse extends Alipay
 	private String groupName;
 
 	/** 
-	 * 创意曝光检测地址
+	 * 创意曝光监测地址
 	 */
 	@ApiField("impression_track_url")
 	private String impressionTrackUrl;
@@ -115,6 +115,12 @@ public class AlipayDataDataserviceAdcampaignCreativeQueryResponse extends Alipay
 	 */
 	@ApiField("scene_code")
 	private String sceneCode;
+
+	/** 
+	 * true打开/false关闭
+	 */
+	@ApiField("smart_switch")
+	private Boolean smartSwitch;
 
 	/** 
 	 * 创意状态
@@ -238,6 +244,13 @@ public class AlipayDataDataserviceAdcampaignCreativeQueryResponse extends Alipay
 	}
 	public String getSceneCode( ) {
 		return this.sceneCode;
+	}
+
+	public void setSmartSwitch(Boolean smartSwitch) {
+		this.smartSwitch = smartSwitch;
+	}
+	public Boolean getSmartSwitch( ) {
+		return this.smartSwitch;
 	}
 
 	public void setStatus(String status) {

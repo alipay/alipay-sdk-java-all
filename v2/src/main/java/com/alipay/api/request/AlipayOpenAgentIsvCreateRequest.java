@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.agent.isv.create request
  * 
  * @author auto create
- * @since 1.0, 2025-04-21 16:57:28
+ * @since 1.0, 2025-05-15 09:56:41
  */
 public class AlipayOpenAgentIsvCreateRequest implements AlipayRequest<AlipayOpenAgentIsvCreateResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.bill.accountbookereceipt.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-15 16:42:20
+ * @since 1.0, 2025-05-12 13:56:48
  */
 public class AlipayDataBillAccountbookereceiptQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1268412518247624152L;
+	private static final long serialVersionUID = 7282648643748134862L;
 
 	/** 
 	 * 下载链接。status为SUCCESS时返回。用户可以使用此http链接下载文件内容。有效时间20s。

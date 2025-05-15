@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 评论删除
  *
  * @author auto create
- * @since 1.0, 2025-04-22 13:51:51
+ * @since 1.0, 2025-05-13 13:56:54
  */
 public class AlipayContentLiveCommentDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4692526514586254927L;
+	private static final long serialVersionUID = 3211773137898462541L;
 
 	/**
 	 * tab3评论id

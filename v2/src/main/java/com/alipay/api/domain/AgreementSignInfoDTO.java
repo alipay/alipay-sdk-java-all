@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户个人协议签约信息
  *
  * @author auto create
- * @since 1.0, 2024-09-01 22:13:15
+ * @since 1.0, 2025-05-13 17:30:56
  */
 public class AgreementSignInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3377323146416121262L;
+	private static final long serialVersionUID = 3619156247375734661L;
 
 	/**
 	 * 用户个人协议签约消息通知地址，接入租赁快捷下单商户可通过指定该地址监听支付宝侧用户个人协议签约成功消息

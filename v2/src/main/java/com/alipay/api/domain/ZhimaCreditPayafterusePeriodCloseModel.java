@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 周期单0元关单
  *
  * @author auto create
- * @since 1.0, 2025-04-25 14:22:26
+ * @since 1.0, 2025-05-13 15:07:25
  */
 public class ZhimaCreditPayafterusePeriodCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4677986984633536783L;
+	private static final long serialVersionUID = 7522595651474599721L;
 
 	/**
 	 * 芝麻开通协议号

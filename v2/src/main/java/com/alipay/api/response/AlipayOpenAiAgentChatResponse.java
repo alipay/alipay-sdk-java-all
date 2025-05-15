@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.ai.agent.chat response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-09 15:43:23
+ * @since 1.0, 2025-05-12 14:12:27
  */
 public class AlipayOpenAiAgentChatResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4114182825332378844L;
+	private static final long serialVersionUID = 8334622325985375825L;
 
 	/** 
 	 * 对话返回事件类型

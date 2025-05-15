@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用户权限校验
  *
  * @author auto create
- * @since 1.0, 2023-07-10 10:04:54
+ * @since 1.0, 2025-05-13 20:24:19
  */
 public class AlipayIserviceIsportalPermissioncheckQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5374515472928641971L;
+	private static final long serialVersionUID = 1281188226587836253L;
 
 	/**
 	 * 星云对应的buservice的ID
@@ -29,6 +29,12 @@ public class AlipayIserviceIsportalPermissioncheckQueryModel extends AlipayObjec
 	private String busvcId;
 
 	/**
+	 * 工作台用户id
+	 */
+	@ApiField("clv_user_id")
+	private String clvUserId;
+
+	/**
 	 * 权限码
 	 */
 	@ApiListField("codes")
@@ -36,10 +42,28 @@ public class AlipayIserviceIsportalPermissioncheckQueryModel extends AlipayObjec
 	private List<String> codes;
 
 	/**
+	 * 租户id
+	 */
+	@ApiField("tnt_inst_id")
+	private String tntInstId;
+
+	/**
+	 * 人力资源id
+	 */
+	@ApiField("ur_id")
+	private String urId;
+
+	/**
 	 * 鉴权uri
 	 */
 	@ApiField("uri")
 	private String uri;
+
+	/**
+	 * 星云用户id
+	 */
+	@ApiField("user_id")
+	private String userId;
 
 	public String getBusvcCloudId() {
 		return this.busvcCloudId;
@@ -55,6 +79,13 @@ public class AlipayIserviceIsportalPermissioncheckQueryModel extends AlipayObjec
 		this.busvcId = busvcId;
 	}
 
+	public String getClvUserId() {
+		return this.clvUserId;
+	}
+	public void setClvUserId(String clvUserId) {
+		this.clvUserId = clvUserId;
+	}
+
 	public List<String> getCodes() {
 		return this.codes;
 	}
@@ -62,11 +93,32 @@ public class AlipayIserviceIsportalPermissioncheckQueryModel extends AlipayObjec
 		this.codes = codes;
 	}
 
+	public String getTntInstId() {
+		return this.tntInstId;
+	}
+	public void setTntInstId(String tntInstId) {
+		this.tntInstId = tntInstId;
+	}
+
+	public String getUrId() {
+		return this.urId;
+	}
+	public void setUrId(String urId) {
+		this.urId = urId;
+	}
+
 	public String getUri() {
 		return this.uri;
 	}
 	public void setUri(String uri) {
 		this.uri = uri;
+	}
+
+	public String getUserId() {
+		return this.userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
 
 }

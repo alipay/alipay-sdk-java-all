@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCloudTraasMpcmrchOrderModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4344225843687513444L;
+	private static final long serialVersionUID = 5117798641386613639L;
 
 	/**
 	 * 客户详情

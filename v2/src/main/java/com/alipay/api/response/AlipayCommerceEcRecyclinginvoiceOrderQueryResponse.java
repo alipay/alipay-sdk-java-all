@@ -15,11 +15,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.recyclinginvoice.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-09 20:32:51
+ * @since 1.0, 2025-05-12 19:42:25
  */
 public class AlipayCommerceEcRecyclinginvoiceOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1326557759964776124L;
+	private static final long serialVersionUID = 6615631148122321134L;
 
 	/** 
 	 * 收款即开票页面支付宝URL（自然人端） 在支付宝里打开的自然人缴税并收款页面，可从企业（商户）/服务商自有APP/小程序页面打开 供应商ID存在值时返回 未安装支付宝或使用受限目标容器时可能无法打开
@@ -52,6 +52,12 @@ public class AlipayCommerceEcRecyclinginvoiceOrderQueryResponse extends AlipayRe
 	 */
 	@ApiField("gmt_success")
 	private Date gmtSuccess;
+
+	/** 
+	 * 订单的备注字段,用于发票的备注显示
+	 */
+	@ApiField("memo")
+	private String memo;
 
 	/** 
 	 * 订单金额（元，两位小数）
@@ -200,6 +206,13 @@ public class AlipayCommerceEcRecyclinginvoiceOrderQueryResponse extends AlipayRe
 	}
 	public Date getGmtSuccess( ) {
 		return this.gmtSuccess;
+	}
+
+	public void setMemo(String memo) {
+		this.memo = memo;
+	}
+	public String getMemo( ) {
+		return this.memo;
 	}
 
 	public void setOrderAmount(String orderAmount) {

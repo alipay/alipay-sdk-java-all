@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LabelDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2196119386395699496L;
+	private static final long serialVersionUID = 3652628441367126792L;
 
 	/**
 	 * label 不唯一 spi不支持map，该dto作为tenantDTO的map 无枚举 被调用方提供 无特殊说明

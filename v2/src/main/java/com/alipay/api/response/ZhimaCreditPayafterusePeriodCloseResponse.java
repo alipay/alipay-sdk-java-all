@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.payafteruse.period.close response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-25 14:22:26
+ * @since 1.0, 2025-05-13 15:07:25
  */
 public class ZhimaCreditPayafterusePeriodCloseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1238265732714828752L;
+	private static final long serialVersionUID = 1289354245811536216L;
 
 	
 

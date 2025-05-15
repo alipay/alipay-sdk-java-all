@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻信用信息模型
  *
  * @author auto create
- * @since 1.0, 2024-11-26 13:18:04
+ * @since 1.0, 2025-05-13 17:30:56
  */
 public class CreditInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1754233479488174848L;
+	private static final long serialVersionUID = 2271616555293939295L;
 
 	/**
 	 * 芝麻先享受理台用户开通成功后，商家自定义页面跳转地址

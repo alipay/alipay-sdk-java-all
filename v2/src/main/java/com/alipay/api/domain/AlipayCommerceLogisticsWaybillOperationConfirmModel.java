@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 包裹操作确认接口
  *
  * @author auto create
- * @since 1.0, 2025-04-11 11:38:18
+ * @since 1.0, 2025-05-12 15:22:21
  */
 public class AlipayCommerceLogisticsWaybillOperationConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6559279522442931446L;
+	private static final long serialVersionUID = 7544749213361361494L;
 
 	/**
 	 * 接口调用方的渠道名称，由支付宝分配

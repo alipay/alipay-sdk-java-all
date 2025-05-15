@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiTradeTicketSendCloseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8488188137139375929L;
+	private static final long serialVersionUID = 1195178992646358593L;
 
 	/** 
 	 * 该字段用于描述本次返回中的业务属性，现有：BIZ_ALREADY_SUCCESS（幂等业务码）。

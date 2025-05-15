@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.cbddoctor.message.send request
  * 
  * @author auto create
- * @since 1.0, 2025-04-16 15:03:55
+ * @since 1.0, 2025-05-12 11:42:25
  */
 public class AlipayInsCbddoctorMessageSendRequest implements AlipayRequest<AlipayInsCbddoctorMessageSendResponse> {
 

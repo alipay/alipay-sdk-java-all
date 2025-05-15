@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 智能应用对话服务
  *
  * @author auto create
- * @since 1.0, 2025-05-09 15:43:23
+ * @since 1.0, 2025-05-12 14:12:27
  */
 public class AlipayOpenAiAgentChatModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2863386435667187589L;
+	private static final long serialVersionUID = 8865141965975331198L;
 
 	/**
 	 * 对话消息体，包含提问内容，附件列表，上下文参数等
@@ -44,7 +44,7 @@ public class AlipayOpenAiAgentChatModel extends AlipayObject {
 	private String initiatorType;
 
 	/**
-	 * 会话ID，用来串联同一次会话的多轮对话。如果调用方不传入则由平台生成。会在请求结果中返回。 默认情况下session 超过30分钟自动超时
+	 * 会话ID，用来串联同一次会话的多轮对话。如果调用方不传入则由平台生成。会在请求结果中返回。 默认情况下session 超过6个小时自动关闭
 	 */
 	@ApiField("session_id")
 	private String sessionId;
