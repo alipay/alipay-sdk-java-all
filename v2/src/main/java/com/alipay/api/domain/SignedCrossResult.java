@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SignedCrossResult extends AlipayObject {
 
-	private static final long serialVersionUID = 5434172731343225735L;
+	private static final long serialVersionUID = 8123242676736896418L;
 
 	/**
 	 * 骑缝章签署区位置横坐标，px

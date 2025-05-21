@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankPaymentTradeQrcodeDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3187276885466222771L;
+	private static final long serialVersionUID = 5777854714246382499L;
 
 	/**
 	 * 加密token

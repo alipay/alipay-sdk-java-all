@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取本地商品类目接口
  *
  * @author auto create
- * @since 1.0, 2024-07-02 11:59:16
+ * @since 1.0, 2025-05-20 19:29:31
  */
 public class AlipayOpenAppLocalitemAllcategoryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8398554457235535983L;
+	private static final long serialVersionUID = 6621986536628276452L;
 
 	/**
 	 * 返回筛选状态的类目

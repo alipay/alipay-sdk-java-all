@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 反向订单创建
  *
  * @author auto create
- * @since 1.0, 2025-05-12 19:41:53
+ * @since 1.0, 2025-05-15 17:38:21
  */
 public class AlipayCommerceEcRecyclinginvoiceOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3519147125218384287L;
+	private static final long serialVersionUID = 6752215827724298915L;
 
 	/**
 	 * 企业（商户）营业员ID，传值为已维护的企业（商户）营业员编号，可调用反向企业营业员查询接口查询

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单扩展信息
  *
  * @author auto create
- * @since 1.0, 2025-04-18 20:07:27
+ * @since 1.0, 2025-05-21 10:52:01
  */
 public class SellerSyncRentOrderExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2157918482137699929L;
+	private static final long serialVersionUID = 8588964562299554241L;
 
 	/**
 	 * 租赁的模式：到期归还/到期即送/到期买断

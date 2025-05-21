@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.sideloanlend.calc.consult response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-25 11:22:28
+ * @since 1.0, 2025-05-16 15:03:14
  */
 public class AlipayPcreditLoanSideloanlendCalcConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3333177686352625148L;
+	private static final long serialVersionUID = 2435381163784359822L;
 
 	/** 
 	 * 本次试算使用的营销卡券列表

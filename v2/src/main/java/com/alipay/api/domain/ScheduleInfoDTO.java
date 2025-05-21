@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ScheduleInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8517426451311181541L;
+	private static final long serialVersionUID = 5575627116633164375L;
 
 	/**
 	 * 时间段类型的调度的每天开始时间点

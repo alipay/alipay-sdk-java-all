@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 公寓新增
  *
  * @author auto create
- * @since 1.0, 2025-04-14 11:17:29
+ * @since 1.0, 2025-05-19 15:12:27
  */
 public class AlipayCommerceHousingApartmentAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8161882732534469279L;
+	private static final long serialVersionUID = 8617735933818199467L;
 
 	/**
 	 * null
@@ -169,15 +169,17 @@ public class AlipayCommerceHousingApartmentAddModel extends AlipayObject {
 	private String houseStructure;
 
 	/**
-	 * (该字段已删除)
+	 * (该字段已删除) 当前字段已废弃(业务删除,后续不再需要)
 	 */
 	@ApiField("housing_type")
+	@Deprecated
 	private String housingType;
 
 	/**
-	 * (该字段已删除)
+	 * (该字段已删除) 当前字段已废弃(业务删除,后续不再需要)
 	 */
 	@ApiField("intentional_application")
+	@Deprecated
 	private String intentionalApplication;
 
 	/**
@@ -192,6 +194,12 @@ public class AlipayCommerceHousingApartmentAddModel extends AlipayObject {
 	 */
 	@ApiField("other")
 	private String other;
+
+	/**
+	 * 小程序详情跳转地址，例如：page=pages/af-home/index?myKey%3DmyValue
+	 */
+	@ApiField("page")
+	private String page;
 
 	/**
 	 * 户型介绍
@@ -220,9 +228,10 @@ public class AlipayCommerceHousingApartmentAddModel extends AlipayObject {
 	private String provinceCode;
 
 	/**
-	 * (该字段已删除)
+	 * (该字段已删除) 当前字段已废弃(业务删除,后续不再需要)
 	 */
 	@ApiField("qualification_requirements")
+	@Deprecated
 	private String qualificationRequirements;
 
 	/**
@@ -459,6 +468,13 @@ public class AlipayCommerceHousingApartmentAddModel extends AlipayObject {
 	}
 	public void setOther(String other) {
 		this.other = other;
+	}
+
+	public String getPage() {
+		return this.page;
+	}
+	public void setPage(String page) {
+		this.page = page;
 	}
 
 	public String getPropertyDescription() {

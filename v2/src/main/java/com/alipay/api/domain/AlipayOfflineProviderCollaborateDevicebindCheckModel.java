@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 设备绑定申请的预校验接口
  *
  * @author auto create
- * @since 1.0, 2025-03-13 14:05:20
+ * @since 1.0, 2025-05-15 14:48:19
  */
 public class AlipayOfflineProviderCollaborateDevicebindCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6634163132122175599L;
+	private static final long serialVersionUID = 5582396538466863728L;
 
 	/**
 	 * 1. 直连绑定必传： RECORDS_TYPE_PID(直连 PID)、 RECORDS_TYPE_SHOPID(shopid); 2. 间连绑定必传： RECORDS_TYPE_SMID（二级商家 ID）。

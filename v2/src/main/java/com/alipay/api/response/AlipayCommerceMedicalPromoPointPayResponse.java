@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.promo.point.pay response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-09 11:32:31
+ * @since 1.0, 2025-05-19 18:42:25
  */
 public class AlipayCommerceMedicalPromoPointPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1537981525148995859L;
+	private static final long serialVersionUID = 2772283182343353959L;
 
 	/** 
 	 * 业务处理码

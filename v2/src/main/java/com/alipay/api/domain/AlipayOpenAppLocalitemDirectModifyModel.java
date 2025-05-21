@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序本地商品免审更新商品接口
  *
  * @author auto create
- * @since 1.0, 2024-06-28 17:22:52
+ * @since 1.0, 2025-05-21 16:23:30
  */
 public class AlipayOpenAppLocalitemDirectModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7682967161269417278L;
+	private static final long serialVersionUID = 5713113278943188536L;
 
 	/**
 	 * 商品属性列表
@@ -41,6 +41,12 @@ public class AlipayOpenAppLocalitemDirectModifyModel extends AlipayObject {
 	 */
 	@ApiField("out_item_id")
 	private String outItemId;
+
+	/**
+	 * 商品的售卖状态，有值时更新。
+	 */
+	@ApiField("sale_status")
+	private String saleStatus;
 
 	/**
 	 * sku数组
@@ -81,6 +87,13 @@ public class AlipayOpenAppLocalitemDirectModifyModel extends AlipayObject {
 	}
 	public void setOutItemId(String outItemId) {
 		this.outItemId = outItemId;
+	}
+
+	public String getSaleStatus() {
+		return this.saleStatus;
+	}
+	public void setSaleStatus(String saleStatus) {
+		this.saleStatus = saleStatus;
 	}
 
 	public List<LocalItemDirectModifySku> getSkus() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改蚂蚁店铺
  *
  * @author auto create
- * @since 1.0, 2025-02-25 15:05:53
+ * @since 1.0, 2025-05-20 20:21:29
  */
 public class AntMerchantExpandShopModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3547981899561792717L;
+	private static final long serialVersionUID = 2152924996546821826L;
 
 	/**
 	 * "门店结算卡信息。本业务当前只允许传入一张结算卡。 说明：本参数仅直付通业务使用，其余业务无需关注。"
@@ -140,6 +140,13 @@ public class AntMerchantExpandShopModifyModel extends AlipayObject {
 	 */
 	@ApiField("memo")
 	private String memo;
+
+	/**
+	 * 门店营业时间，支持一周7天，支持1天内多时间段
+	 */
+	@ApiListField("new_business_time")
+	@ApiField("complex_business_time")
+	private List<ComplexBusinessTime> newBusinessTime;
 
 	/**
 	 * 门头照，其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。若无需更新本信息项，可以不填写。若填写则会整体覆盖原有的门头照列表
@@ -338,6 +345,13 @@ public class AntMerchantExpandShopModifyModel extends AlipayObject {
 	}
 	public void setMemo(String memo) {
 		this.memo = memo;
+	}
+
+	public List<ComplexBusinessTime> getNewBusinessTime() {
+		return this.newBusinessTime;
+	}
+	public void setNewBusinessTime(List<ComplexBusinessTime> newBusinessTime) {
+		this.newBusinessTime = newBusinessTime;
 	}
 
 	public List<String> getOutDoorImages() {

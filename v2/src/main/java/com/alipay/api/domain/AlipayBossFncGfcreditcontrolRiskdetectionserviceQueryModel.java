@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 结算风险咨询openapi
  *
  * @author auto create
- * @since 1.0, 2025-02-27 11:02:23
+ * @since 1.0, 2025-05-15 17:04:25
  */
 public class AlipayBossFncGfcreditcontrolRiskdetectionserviceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3216234111299464168L;
+	private static final long serialVersionUID = 7482417968876522277L;
 
 	/**
 	 * 风险咨询服务请求

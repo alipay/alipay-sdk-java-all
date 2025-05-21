@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 阿里云订单状态变化
  *
  * @author auto create
- * @since 1.0, 2025-04-15 20:25:17
+ * @since 1.0, 2025-05-19 18:40:20
  */
 public class AlipayCommerceMedicalPromoOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5526119487281693143L;
+	private static final long serialVersionUID = 7448974856179815671L;
 
 	/**
 	 * LM配置商品价格时填的客户业务值（权益id），医疗用来区分代币种类
@@ -48,6 +48,12 @@ public class AlipayCommerceMedicalPromoOrderSyncModel extends AlipayObject {
 	 */
 	@ApiField("item_list")
 	private String itemList;
+
+	/**
+	 * 渠道信息
+	 */
+	@ApiField("kz_info")
+	private String kzInfo;
 
 	/**
 	 * lm订单id
@@ -161,6 +167,13 @@ public class AlipayCommerceMedicalPromoOrderSyncModel extends AlipayObject {
 	}
 	public void setItemList(String itemList) {
 		this.itemList = itemList;
+	}
+
+	public String getKzInfo() {
+		return this.kzInfo;
+	}
+	public void setKzInfo(String kzInfo) {
+		this.kzInfo = kzInfo;
 	}
 
 	public String getLmOrderId() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小区新增
  *
  * @author auto create
- * @since 1.0, 2025-04-14 11:17:28
+ * @since 1.0, 2025-05-19 15:12:27
  */
 public class AlipayCommerceHousingCommunityAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6115697215578412923L;
+	private static final long serialVersionUID = 6252568125836663266L;
 
 	/**
 	 * null
@@ -29,6 +29,12 @@ public class AlipayCommerceHousingCommunityAddModel extends AlipayObject {
 	@ApiListField("apartment_services")
 	@ApiField("string")
 	private List<String> apartmentServices;
+
+	/**
+	 * 10000元/平米
+	 */
+	@ApiField("avg_price")
+	private String avgPrice;
 
 	/**
 	 * 商圈
@@ -149,7 +155,7 @@ public class AlipayCommerceHousingCommunityAddModel extends AlipayObject {
 	private String externalId;
 
 	/**
-	 * 容积率
+	 * 容积率/百分比
 	 */
 	@ApiField("floor_area_ratio")
 	private String floorAreaRatio;
@@ -256,6 +262,13 @@ public class AlipayCommerceHousingCommunityAddModel extends AlipayObject {
 	}
 	public void setApartmentServices(List<String> apartmentServices) {
 		this.apartmentServices = apartmentServices;
+	}
+
+	public String getAvgPrice() {
+		return this.avgPrice;
+	}
+	public void setAvgPrice(String avgPrice) {
+		this.avgPrice = avgPrice;
 	}
 
 	public String getBusinessDistrict() {

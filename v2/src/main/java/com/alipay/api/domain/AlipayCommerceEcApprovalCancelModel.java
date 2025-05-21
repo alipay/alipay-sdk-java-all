@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceEcApprovalCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8767116387311722334L;
+	private static final long serialVersionUID = 7111215259127322925L;
 
 	/**
 	 * 企业id

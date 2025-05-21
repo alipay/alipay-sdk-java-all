@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁商品扩展信息
  *
  * @author auto create
- * @since 1.0, 2025-03-18 16:05:55
+ * @since 1.0, 2025-05-19 10:32:15
  */
 public class RentItemExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7693944151976777289L;
+	private static final long serialVersionUID = 7789766652885527533L;
+
+	/**
+	 * 券后签约价格，币种：人民币，单位：元
+	 */
+	@ApiField("after_coupon_price")
+	private String afterCouponPrice;
 
 	/**
 	 * 商品的品牌名称
@@ -72,6 +78,13 @@ public class RentItemExtInfo extends AlipayObject {
 	 */
 	@ApiField("serial_no")
 	private String serialNo;
+
+	public String getAfterCouponPrice() {
+		return this.afterCouponPrice;
+	}
+	public void setAfterCouponPrice(String afterCouponPrice) {
+		this.afterCouponPrice = afterCouponPrice;
+	}
 
 	public String getItemBrand() {
 		return this.itemBrand;

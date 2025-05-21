@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 门店分页查询详情
  *
  * @author auto create
- * @since 1.0, 2024-04-02 10:47:55
+ * @since 1.0, 2025-05-20 20:21:31
  */
 public class ShopQueryOpenApiVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4835698825563477424L;
+	private static final long serialVersionUID = 1217651526295272288L;
 
 	/**
 	 * 经营地址
@@ -40,6 +40,13 @@ public class ShopQueryOpenApiVO extends AlipayObject {
 	 */
 	@ApiField("contact_phone")
 	private String contactPhone;
+
+	/**
+	 * 门店营业时间，支持一周7天，支持1天内多时间段
+	 */
+	@ApiListField("new_business_time")
+	@ApiField("complex_business_time")
+	private List<ComplexBusinessTime> newBusinessTime;
 
 	/**
 	 * 新版门店类目标准二级类目code.类目标准及与原shop_category映射关系参见<a href="https://gw.alipayobjects.com/os/bmw-prod/4b3f82df-e53e-4b84-bc41-fe025101e726.xlsx">文档</a>
@@ -115,6 +122,13 @@ public class ShopQueryOpenApiVO extends AlipayObject {
 	}
 	public void setContactPhone(String contactPhone) {
 		this.contactPhone = contactPhone;
+	}
+
+	public List<ComplexBusinessTime> getNewBusinessTime() {
+		return this.newBusinessTime;
+	}
+	public void setNewBusinessTime(List<ComplexBusinessTime> newBusinessTime) {
+		this.newBusinessTime = newBusinessTime;
 	}
 
 	public String getNewShopCategory() {

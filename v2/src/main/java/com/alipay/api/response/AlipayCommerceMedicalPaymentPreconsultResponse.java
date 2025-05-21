@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.payment.preconsult response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-05 10:57:22
+ * @since 1.0, 2025-05-19 17:24:25
  */
 public class AlipayCommerceMedicalPaymentPreconsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7437924828368832665L;
+	private static final long serialVersionUID = 3683795928598798519L;
 
 	/** 
 	 * 建议的推进策略；商家可参考建议推进业务动作

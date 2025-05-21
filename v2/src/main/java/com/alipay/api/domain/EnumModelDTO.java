@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-04-14 11:12:26
+ * @since 1.0, 2025-05-19 15:12:27
  */
 public class EnumModelDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8268849785793167618L;
+	private static final long serialVersionUID = 8859989824225879722L;
 
 	/**
-	 * 单个值，非固定枚举值
+	 * 一类枚举的值，非小范围枚举类型，无法用枚举全列举出来
 	 */
 	@ApiField("enum_code")
 	private String enumCode;

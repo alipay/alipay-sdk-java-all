@@ -9,11 +9,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.sideloansign.apply.querystatus response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-25 14:02:28
+ * @since 1.0, 2025-05-20 14:42:27
  */
 public class AlipayPcreditLoanSideloansignApplyQuerystatusResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2173888976195291655L;
+	private static final long serialVersionUID = 7284476546197317873L;
+
+	/** 
+	 * 冷静期类型，LONG-长，SHORT-短，NONE-无
+	 */
+	@ApiField("cool_off_type")
+	private String coolOffType;
 
 	/** 
 	 * 授信成功后返回，授信总额度，单位元，保留两位小数
@@ -98,6 +104,13 @@ NEED_RETRY状态下，返回具体
 	 */
 	@ApiField("start_time")
 	private Date startTime;
+
+	public void setCoolOffType(String coolOffType) {
+		this.coolOffType = coolOffType;
+	}
+	public String getCoolOffType( ) {
+		return this.coolOffType;
+	}
 
 	public void setCreditQuota(String creditQuota) {
 		this.creditQuota = creditQuota;

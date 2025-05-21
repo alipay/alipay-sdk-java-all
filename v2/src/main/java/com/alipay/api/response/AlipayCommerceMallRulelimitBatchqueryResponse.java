@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMallRulelimitBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6661135372435955626L;
+	private static final long serialVersionUID = 2896362476121152842L;
 
 	/** 
 	 * 商圈商场付多门店业务规则限制对象信息集合

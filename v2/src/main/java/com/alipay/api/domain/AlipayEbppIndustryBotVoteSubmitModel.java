@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业智能助理机器人会话点赞点踩接口
  *
  * @author auto create
- * @since 1.0, 2024-07-31 11:02:40
+ * @since 1.0, 2025-05-19 19:09:57
  */
 public class AlipayEbppIndustryBotVoteSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6144948718238793424L;
+	private static final long serialVersionUID = 6296923273278837124L;
 
 	/**
 	 * 机器人id，机构用户在政务智能助理开放平台创建的机器人id，若获取不到，可联系相关人员获取

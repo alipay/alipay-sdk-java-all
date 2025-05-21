@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.provider.collaborate.devicebind.check response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-13 14:07:24
+ * @since 1.0, 2025-05-16 18:05:38
  */
 public class AlipayOfflineProviderCollaborateDevicebindCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6855378644476357456L;
+	private static final long serialVersionUID = 5699149519551995353L;
 
 	/** 
 	 * 设备备注信息，可将该提示展示给小二，由小二决定是否展示二维码给商户签约

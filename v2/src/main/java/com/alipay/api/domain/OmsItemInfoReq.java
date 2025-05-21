@@ -1,19 +1,21 @@
 package com.alipay.api.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 非接口新增商品通知厂商的商品信息实体
  *
  * @author auto create
- * @since 1.0, 2025-02-13 20:09:42
+ * @since 1.0, 2025-05-15 19:16:25
  */
 public class OmsItemInfoReq extends AlipayObject {
 
-	private static final long serialVersionUID = 7119633448987426984L;
+	private static final long serialVersionUID = 3862258859945339192L;
 
 	/**
 	 * 修改人
@@ -58,10 +60,18 @@ public class OmsItemInfoReq extends AlipayObject {
 	private String platform;
 
 	/**
-	 * 商品的售卖信息列表
+	 * 商品的售卖信息列表 当前字段已废弃(使用新字段替换老字段结构)
 	 */
 	@ApiField("sku_info_list")
+	@Deprecated
 	private OmsItemSkuInfoReq skuInfoList;
+
+	/**
+	 * 商品信息中sku售卖相关信息
+	 */
+	@ApiListField("sku_list_v_2")
+	@ApiField("oms_item_sku_info_req")
+	private List<OmsItemSkuInfoReq> skuListV2;
 
 	/**
 	 * 枚举值：0-上架，-1-下架
@@ -141,6 +151,13 @@ public class OmsItemInfoReq extends AlipayObject {
 	}
 	public void setSkuInfoList(OmsItemSkuInfoReq skuInfoList) {
 		this.skuInfoList = skuInfoList;
+	}
+
+	public List<OmsItemSkuInfoReq> getSkuListV2() {
+		return this.skuListV2;
+	}
+	public void setSkuListV2(List<OmsItemSkuInfoReq> skuListV2) {
+		this.skuListV2 = skuListV2;
 	}
 
 	public String getStatus() {

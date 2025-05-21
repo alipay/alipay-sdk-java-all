@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租赁订单详情，包含租赁时间、金额、订单信息、分期计划、分账计划、租赁单风控信息等详情
  *
  * @author auto create
- * @since 1.0, 2025-04-18 17:40:55
+ * @since 1.0, 2025-05-19 10:32:14
  */
 public class RentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8284913864787886661L;
+	private static final long serialVersionUID = 8217265131465187469L;
 
 	/**
 	 * 交易组件的订单Id
@@ -53,6 +53,12 @@ public class RentInfo extends AlipayObject {
 	private String earlySettlePrice;
 
 	/**
+	 * 提前结清时间，具体到天
+	 */
+	@ApiField("early_settle_time")
+	private String earlySettleTime;
+
+	/**
 	 * 租赁订单的结束时间
 	 */
 	@ApiField("end_time")
@@ -63,6 +69,12 @@ public class RentInfo extends AlipayObject {
 	 */
 	@ApiField("invest_app_id")
 	private String investAppId;
+
+	/**
+	 * 资方pid
+	 */
+	@ApiField("invest_pid")
+	private String investPid;
 
 	/**
 	 * 订单信息，包含订单信息、商品信息、收货人信息以及价格信息
@@ -175,6 +187,13 @@ public class RentInfo extends AlipayObject {
 		this.earlySettlePrice = earlySettlePrice;
 	}
 
+	public String getEarlySettleTime() {
+		return this.earlySettleTime;
+	}
+	public void setEarlySettleTime(String earlySettleTime) {
+		this.earlySettleTime = earlySettleTime;
+	}
+
 	public String getEndTime() {
 		return this.endTime;
 	}
@@ -187,6 +206,13 @@ public class RentInfo extends AlipayObject {
 	}
 	public void setInvestAppId(String investAppId) {
 		this.investAppId = investAppId;
+	}
+
+	public String getInvestPid() {
+		return this.investPid;
+	}
+	public void setInvestPid(String investPid) {
+		this.investPid = investPid;
 	}
 
 	public SimpleOrderInfo getOrderInfo() {

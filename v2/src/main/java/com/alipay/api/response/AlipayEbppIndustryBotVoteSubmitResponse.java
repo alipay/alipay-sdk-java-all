@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.bot.vote.submit response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-31 11:07:03
+ * @since 1.0, 2025-05-19 19:12:27
  */
 public class AlipayEbppIndustryBotVoteSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2716666192889174117L;
+	private static final long serialVersionUID = 7578354251181772256L;
 
 	
 

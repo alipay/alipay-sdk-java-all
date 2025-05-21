@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CoordinateInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7413824766231622782L;
+	private static final long serialVersionUID = 2881592714492834278L;
 
 	/**
 	 * 识别信息内容

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建支付宝素材
  *
  * @author auto create
- * @since 1.0, 2024-09-25 16:25:22
+ * @since 1.0, 2025-05-21 15:40:30
  */
 public class AlipayMarketingMaterialCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4452773485692187155L;
+	private static final long serialVersionUID = 4724261888244363819L;
 
 	/**
 	 * 素材字段列表，素材提报的具体内容，包含三种类型：图片、文本、链接。图片类型，则根据“图片资源上传接口”中返回的resource_id字段值进行素材字段的设值。文本或链接类型，则按照实际需要设值即可，需满足具体的规范要求。规范要求详情请参见产品文档。

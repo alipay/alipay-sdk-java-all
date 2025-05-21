@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserSigncardExistenceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2511993283684171783L;
+	private static final long serialVersionUID = 3667625175387365396L;
 
 	/** 
 	 * 是否已经签约快捷或卡通，只统计已激活的签约信息。T代表是，F代表否。

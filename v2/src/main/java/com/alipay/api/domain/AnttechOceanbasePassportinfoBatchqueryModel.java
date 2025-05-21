@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 通过时间查询注册用户信息
  *
  * @author auto create
- * @since 1.0, 2023-10-08 11:04:47
+ * @since 1.0, 2025-05-20 21:28:08
  */
 public class AnttechOceanbasePassportinfoBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8522565179581479143L;
+	private static final long serialVersionUID = 8512498555225842796L;
 
 	/**
 	 * 结束时间

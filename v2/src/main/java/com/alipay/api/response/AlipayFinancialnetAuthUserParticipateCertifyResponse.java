@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.financialnet.auth.user.participate.certify response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-11 18:04:55
+ * @since 1.0, 2025-05-20 14:24:37
  */
 public class AlipayFinancialnetAuthUserParticipateCertifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3372138631846362847L;
+	private static final long serialVersionUID = 7798112894763792544L;
 
 	/** 
 	 * 认证成功的id， 如果未认证成功 则返回为空。

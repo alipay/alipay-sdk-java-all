@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-04-14 11:17:28
+ * @since 1.0, 2025-05-19 15:12:27
  */
 public class CommunityModelDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5894321734775819924L;
+	private static final long serialVersionUID = 2449121421554666243L;
 
 	/**
 	 * null
@@ -161,7 +161,7 @@ public class CommunityModelDTO extends AlipayObject {
 	private String externalId;
 
 	/**
-	 * 容积率
+	 * 容积率(百分比)
 	 */
 	@ApiField("floor_area_ratio")
 	private String floorAreaRatio;

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KbIsvMaCode extends AlipayObject {
 
-	private static final long serialVersionUID = 2757516155791376582L;
+	private static final long serialVersionUID = 5324945714255135899L;
 
 	/**
 	 * 凭证码值

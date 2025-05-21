@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenViolationViolationeventBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5868835443793351963L;
+	private static final long serialVersionUID = 2459547649547566416L;
 
 	/** 
 	 * 违规记录列表

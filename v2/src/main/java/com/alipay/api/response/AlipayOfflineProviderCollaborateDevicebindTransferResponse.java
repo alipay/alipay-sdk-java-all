@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.provider.collaborate.devicebind.transfer response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-10 11:07:28
+ * @since 1.0, 2025-05-16 18:06:16
  */
 public class AlipayOfflineProviderCollaborateDevicebindTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5835293774663992855L;
+	private static final long serialVersionUID = 8176358292655988994L;
 
 	/** 
 	 * 如果换smid必须有

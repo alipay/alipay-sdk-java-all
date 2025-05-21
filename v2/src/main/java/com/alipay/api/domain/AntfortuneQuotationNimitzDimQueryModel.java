@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntfortuneQuotationNimitzDimQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4683963688242979782L;
+	private static final long serialVersionUID = 7342413936395319649L;
 
 	/**
 	 * Nimitz 查询语境

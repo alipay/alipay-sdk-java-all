@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序商品修改接口
  *
  * @author auto create
- * @since 1.0, 2024-12-19 14:49:19
+ * @since 1.0, 2025-05-21 16:23:31
  */
 public class AlipayOpenAppLocalitemModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4342814481897568889L;
+	private static final long serialVersionUID = 6234343662976961931L;
 
 	/**
 	 * 商品属性，通过alipay.open.app.localitem.template.query获取本地商品模板信息接口得到商品属性key
@@ -68,7 +68,7 @@ public class AlipayOpenAppLocalitemModifyModel extends AlipayObject {
 	private String itemId;
 
 	/**
-	 * 商品模版类型：1. 团购 2. 代金券 3. 次卡 4. 日历房
+	 * 商品类型
 	 */
 	@ApiField("item_type")
 	private String itemType;
@@ -90,6 +90,12 @@ public class AlipayOpenAppLocalitemModifyModel extends AlipayObject {
 	 */
 	@ApiField("path")
 	private String path;
+
+	/**
+	 * 商品的售卖状态，默认：可售卖(AVAILABLE)。
+	 */
+	@ApiField("sale_status")
+	private String saleStatus;
 
 	/**
 	 * sku数组
@@ -198,6 +204,13 @@ public class AlipayOpenAppLocalitemModifyModel extends AlipayObject {
 	}
 	public void setPath(String path) {
 		this.path = path;
+	}
+
+	public String getSaleStatus() {
+		return this.saleStatus;
+	}
+	public void setSaleStatus(String saleStatus) {
+		this.saleStatus = saleStatus;
 	}
 
 	public List<LocalItemSkuModifyVO> getSkus() {

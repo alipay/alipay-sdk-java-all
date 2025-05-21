@@ -9,6 +9,7 @@ import com.alipay.api.domain.ContactInfo;
 import com.alipay.api.domain.ShopExtInfo;
 import com.alipay.api.domain.MerchantShopIndustryInfo;
 import com.alipay.api.domain.ShopIndustryLicense;
+import com.alipay.api.domain.ComplexBusinessTime;
 import com.alipay.api.domain.IndustryQualificationInfo;
 import com.alipay.api.domain.ShopRecommendInfo;
 
@@ -18,11 +19,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.shop.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-10 15:57:26
+ * @since 1.0, 2025-05-20 20:32:27
  */
 public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5152915791658538683L;
+	private static final long serialVersionUID = 2356568827811999795L;
 
 	/** 
 	 * 门店地址库 ID，按照一定的平台规则识别出的线下真实存在、真实经营的蚂蚁门店地址库 ID，将作用于服务商的返佣激励、商品/券等权益的公域分发。如平台未返回alipay_poiid，请在确认门店信息真实有效后，稍后再进行查询。
@@ -142,6 +143,13 @@ public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("memo")
 	private String memo;
+
+	/** 
+	 * 门店营业时间，支持一周7天，支持1天内多时间段
+	 */
+	@ApiListField("new_business_time")
+	@ApiField("complex_business_time")
+	private List<ComplexBusinessTime> newBusinessTime;
 
 	/** 
 	 * 新版门店类目标准二级类目code
@@ -357,6 +365,13 @@ public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 	}
 	public String getMemo( ) {
 		return this.memo;
+	}
+
+	public void setNewBusinessTime(List<ComplexBusinessTime> newBusinessTime) {
+		this.newBusinessTime = newBusinessTime;
+	}
+	public List<ComplexBusinessTime> getNewBusinessTime( ) {
+		return this.newBusinessTime;
 	}
 
 	public void setNewShopCategory(String newShopCategory) {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 阿里云支付医疗积分
  *
  * @author auto create
- * @since 1.0, 2025-04-09 11:28:57
+ * @since 1.0, 2025-05-19 18:40:10
  */
 public class AlipayCommerceMedicalPromoPointPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5514721341933737152L;
+	private static final long serialVersionUID = 2442761472577826748L;
 
 	/**
 	 * LM配置商品价格时填的客户业务值（权益id），医疗用来区分代币种类
@@ -36,6 +36,12 @@ public class AlipayCommerceMedicalPromoPointPayModel extends AlipayObject {
 	 */
 	@ApiField("item_id")
 	private String itemId;
+
+	/**
+	 * 渠道信息
+	 */
+	@ApiField("kz_info")
+	private String kzInfo;
 
 	/**
 	 * lm订单id
@@ -99,6 +105,13 @@ public class AlipayCommerceMedicalPromoPointPayModel extends AlipayObject {
 	}
 	public void setItemId(String itemId) {
 		this.itemId = itemId;
+	}
+
+	public String getKzInfo() {
+		return this.kzInfo;
+	}
+	public void setKzInfo(String kzInfo) {
+		this.kzInfo = kzInfo;
 	}
 
 	public String getLmOrderId() {

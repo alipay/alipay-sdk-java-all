@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 二手房新增
  *
  * @author auto create
- * @since 1.0, 2025-04-14 11:12:26
+ * @since 1.0, 2025-05-19 15:12:27
  */
 public class AlipayCommerceHousingHouseSaleAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3415895636284378694L;
+	private static final long serialVersionUID = 4593817687426116224L;
 
 	/**
 	 * 卫生间数量，单位：个
@@ -211,6 +211,12 @@ public class AlipayCommerceHousingHouseSaleAddModel extends AlipayObject {
 	 */
 	@ApiField("owner_name")
 	private String ownerName;
+
+	/**
+	 * 小程序跳转页面，例如：page=pages/af-home/index?myKey%3DmyValue
+	 */
+	@ApiField("page")
+	private String page;
 
 	/**
 	 * 车位，是否带车位，列举：是，否
@@ -538,6 +544,13 @@ public class AlipayCommerceHousingHouseSaleAddModel extends AlipayObject {
 	}
 	public void setOwnerName(String ownerName) {
 		this.ownerName = ownerName;
+	}
+
+	public String getPage() {
+		return this.page;
+	}
+	public void setPage(String page) {
+		this.page = page;
 	}
 
 	public String getParkingSpace() {

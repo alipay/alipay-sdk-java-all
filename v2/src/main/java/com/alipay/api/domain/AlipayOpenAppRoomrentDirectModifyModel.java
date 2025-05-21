@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租房商品免审更新接口
  *
  * @author auto create
- * @since 1.0, 2024-10-12 11:14:16
+ * @since 1.0, 2025-05-20 19:28:21
  */
 public class AlipayOpenAppRoomrentDirectModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3373758683179449511L;
+	private static final long serialVersionUID = 6331125799865943296L;
 
 	/**
 	 * 支付宝平台侧商品ID，是支付宝平台侧商品的唯一标识，后续与平台交互，需要使用该 ID，建议持久化。

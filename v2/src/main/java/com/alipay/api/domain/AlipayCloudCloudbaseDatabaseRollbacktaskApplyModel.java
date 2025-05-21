@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 执行数据库回档任务
  *
  * @author auto create
- * @since 1.0, 2024-03-13 16:51:53
+ * @since 1.0, 2025-05-16 15:15:20
  */
 public class AlipayCloudCloudbaseDatabaseRollbacktaskApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1724226466857322628L;
+	private static final long serialVersionUID = 3349377855395294669L;
 
 	/**
 	 * 归档时间

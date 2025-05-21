@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySecurityDataInfoSecuritydataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8398947296786751434L;
+	private static final long serialVersionUID = 8321619936632146531L;
 
 	/**
 	 * 业务代码.由蚂蚁金服定义的风控查询业务类型，例如: EX0001：查询风控黑名单，EX0002:查询地理信息数据

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class WatchPromoPrizeDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 2862826229832232915L;
+	private static final long serialVersionUID = 1473275291666731273L;
 
 	/**
 	 * 不同奖品类型返回不能的结果数据，例如10卡路里，兑换10g蚂蚁森林能量

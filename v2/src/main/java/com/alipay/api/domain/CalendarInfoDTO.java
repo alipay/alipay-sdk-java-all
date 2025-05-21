@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CalendarInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1614691757846533314L;
+	private static final long serialVersionUID = 3174425429598167549L;
 
 	/**
 	 * 日历维度重复类型，支持工作日（WORK_DAY）和每天（DAILY）

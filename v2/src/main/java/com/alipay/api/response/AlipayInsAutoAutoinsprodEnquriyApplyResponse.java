@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.auto.autoinsprod.enquriy.apply response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 15:51:36
+ * @since 1.0, 2025-05-19 17:15:49
  */
 public class AlipayInsAutoAutoinsprodEnquriyApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2123316593666213687L;
+	private static final long serialVersionUID = 7325471454311521788L;
 
 	/** 
 	 * 车辆的品牌型号列表

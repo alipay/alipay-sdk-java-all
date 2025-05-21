@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小区分页查询
  *
  * @author auto create
- * @since 1.0, 2025-04-14 11:17:28
+ * @since 1.0, 2025-05-19 15:12:27
  */
 public class AlipayCommerceHousingCommunityBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4448965291933852434L;
+	private static final long serialVersionUID = 1861859372927153714L;
 
 	/**
 	 * 城市编码
 	 */
 	@ApiField("city_code")
 	private String cityCode;
+
+	/**
+	 * 小区名称
+	 */
+	@ApiField("community_name")
+	private String communityName;
 
 	/**
 	 * 区县编码
@@ -42,6 +48,13 @@ public class AlipayCommerceHousingCommunityBatchqueryModel extends AlipayObject 
 	}
 	public void setCityCode(String cityCode) {
 		this.cityCode = cityCode;
+	}
+
+	public String getCommunityName() {
+		return this.communityName;
+	}
+	public void setCommunityName(String communityName) {
+		this.communityName = communityName;
 	}
 
 	public String getDistrictCode() {

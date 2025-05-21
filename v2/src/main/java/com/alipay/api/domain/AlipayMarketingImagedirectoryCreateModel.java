@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 图片目录创建接口
  *
  * @author auto create
- * @since 1.0, 2024-08-05 19:23:19
+ * @since 1.0, 2025-05-21 15:41:01
  */
 public class AlipayMarketingImagedirectoryCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6538238584273544394L;
+	private static final long serialVersionUID = 6783241217546498957L;
 
 	/**
 	 * 新增目录名。

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.nordermaterialsapply.task.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-07 19:42:27
+ * @since 1.0, 2025-05-20 16:29:17
  */
 public class AlipayOpenSpNordermaterialsapplyTaskQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2571492495813388629L;
+	private static final long serialVersionUID = 5438689313866693192L;
 
 	/** 
 	 * 近30天内有交易情况，有为TRUE，无为FALSE，无数据、未知为UNKNOWN

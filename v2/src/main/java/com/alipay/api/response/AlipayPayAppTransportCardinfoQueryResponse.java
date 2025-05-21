@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pay.app.transport.cardinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 04:26:57
+ * @since 1.0, 2025-05-15 17:55:08
  */
 public class AlipayPayAppTransportCardinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5749654337739157363L;
+	private static final long serialVersionUID = 5739145798521968356L;
 
 	/** 
 	 * 卡信息密文

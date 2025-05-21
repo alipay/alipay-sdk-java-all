@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TaskVoucherBasicInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1525779583869126479L;
+	private static final long serialVersionUID = 4671455466534839332L;
 
 	/**
 	 * 券图标
