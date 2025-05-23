@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PointPrizeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4784254644417528428L;
+	private static final long serialVersionUID = 5343182638459711992L;
 
 	/**
 	 * 奖品兑换的结束时间

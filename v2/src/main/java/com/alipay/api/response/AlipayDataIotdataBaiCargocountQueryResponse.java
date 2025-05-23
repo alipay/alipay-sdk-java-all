@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataIotdataBaiCargocountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4134417289241729369L;
+	private static final long serialVersionUID = 4797259777335773512L;
 
 	/** 
 	 * JSON字符串，包含盘点结果详情，如检测到每个货物的中心点坐标

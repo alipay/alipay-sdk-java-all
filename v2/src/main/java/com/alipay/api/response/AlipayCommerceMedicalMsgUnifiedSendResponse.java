@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.msg.unified.send response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-24 11:06:09
+ * @since 1.0, 2025-05-22 10:47:27
  */
 public class AlipayCommerceMedicalMsgUnifiedSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5123146745652786645L;
+	private static final long serialVersionUID = 4331969665518864194L;
 
 	/** 
 	 * 支付宝消息id列表

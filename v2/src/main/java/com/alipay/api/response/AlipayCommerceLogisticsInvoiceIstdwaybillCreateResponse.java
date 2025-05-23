@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceLogisticsInvoiceIstdwaybillCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1744842293382155315L;
+	private static final long serialVersionUID = 3221383615764259631L;
 
 	/** 
 	 * 开票金额

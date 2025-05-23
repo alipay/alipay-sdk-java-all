@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GFAOpenAPITaxInfoDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6631436113387677984L;
+	private static final long serialVersionUID = 7133172673739838975L;
 
 	/**
 	 * 外部计税传入高精度税金。

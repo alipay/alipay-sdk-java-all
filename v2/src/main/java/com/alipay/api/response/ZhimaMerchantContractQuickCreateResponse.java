@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaMerchantContractQuickCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6432699179529896255L;
+	private static final long serialVersionUID = 8749311179832971318L;
 
 	/** 
 	 * 错误码

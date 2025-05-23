@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySecurityRiskEmployeeCriminalCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7154119413388656127L;
+	private static final long serialVersionUID = 8733434386717388934L;
 
 	/** 
 	 * 风险核验受理token

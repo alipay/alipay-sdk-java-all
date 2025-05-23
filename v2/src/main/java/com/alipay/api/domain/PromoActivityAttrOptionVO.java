@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PromoActivityAttrOptionVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6487284692734835646L;
+	private static final long serialVersionUID = 6529445983223975834L;
 
 	/**
 	 * 描述可选项的名称

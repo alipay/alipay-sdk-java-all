@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayIserviceIsportalPermissioncheckQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4262172284429152671L;
+	private static final long serialVersionUID = 6854751847536111139L;
 
 	/**
 	 * 星云对应的buservice的ID

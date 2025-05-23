@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询敏感信息字段应用场景
  *
  * @author auto create
- * @since 1.0, 2025-03-26 11:36:58
+ * @since 1.0, 2025-05-22 10:06:46
  */
 public class AlipayOpenAppApiSceneQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5162624531663778568L;
+	private static final long serialVersionUID = 1294393718422285319L;
 
 	/**
 	 * 接口英文名。

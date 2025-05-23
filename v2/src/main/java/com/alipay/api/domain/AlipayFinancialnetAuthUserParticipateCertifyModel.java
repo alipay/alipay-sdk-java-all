@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 以旧换新政府补贴资格认证接口
  *
  * @author auto create
- * @since 1.0, 2025-01-10 16:23:19
+ * @since 1.0, 2025-05-22 20:37:48
  */
 public class AlipayFinancialnetAuthUserParticipateCertifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6765746874877874323L;
+	private static final long serialVersionUID = 6215316582378928487L;
 
 	/**
 	 * 进行认证的证件号
@@ -36,6 +36,12 @@ public class AlipayFinancialnetAuthUserParticipateCertifyModel extends AlipayObj
 	 */
 	@ApiField("phone")
 	private String phone;
+
+	/**
+	 * 浙江省杭州市地区编码
+	 */
+	@ApiField("region_code")
+	private String regionCode;
 
 	/**
 	 * 传入外部商户的名称即可，记录发起认证的用户来自哪一个外部商户
@@ -69,6 +75,13 @@ public class AlipayFinancialnetAuthUserParticipateCertifyModel extends AlipayObj
 	}
 	public void setPhone(String phone) {
 		this.phone = phone;
+	}
+
+	public String getRegionCode() {
+		return this.regionCode;
+	}
+	public void setRegionCode(String regionCode) {
+		this.regionCode = regionCode;
 	}
 
 	public String getSource() {

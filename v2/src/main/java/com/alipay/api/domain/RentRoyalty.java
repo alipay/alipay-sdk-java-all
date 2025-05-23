@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁分账计划
  *
  * @author auto create
- * @since 1.0, 2025-05-09 17:53:49
+ * @since 1.0, 2025-05-22 10:04:46
  */
 public class RentRoyalty extends AlipayObject {
 
-	private static final long serialVersionUID = 7725996898343821872L;
+	private static final long serialVersionUID = 6168939141293835755L;
 
 	/**
 	 * 订单id
@@ -74,6 +74,30 @@ public class RentRoyalty extends AlipayObject {
 	 */
 	@ApiField("repay_time")
 	private Date repayTime;
+
+	/**
+	 * 还款利息,单位：元
+	 */
+	@ApiField("repayment_interest_price")
+	private String repaymentInterestPrice;
+
+	/**
+	 * 还款本金，单位：元
+	 */
+	@ApiField("repayment_principal_price")
+	private String repaymentPrincipalPrice;
+
+	/**
+	 * 实际还款日
+	 */
+	@ApiField("repayment_time")
+	private Date repaymentTime;
+
+	/**
+	 * 还款总金额,单位：元
+	 */
+	@ApiField("repayment_total_price")
+	private String repaymentTotalPrice;
 
 	/**
 	 * 改账中的分账金额，单位：元，精确到小数点后两位
@@ -221,6 +245,34 @@ public class RentRoyalty extends AlipayObject {
 	}
 	public void setRepayTime(Date repayTime) {
 		this.repayTime = repayTime;
+	}
+
+	public String getRepaymentInterestPrice() {
+		return this.repaymentInterestPrice;
+	}
+	public void setRepaymentInterestPrice(String repaymentInterestPrice) {
+		this.repaymentInterestPrice = repaymentInterestPrice;
+	}
+
+	public String getRepaymentPrincipalPrice() {
+		return this.repaymentPrincipalPrice;
+	}
+	public void setRepaymentPrincipalPrice(String repaymentPrincipalPrice) {
+		this.repaymentPrincipalPrice = repaymentPrincipalPrice;
+	}
+
+	public Date getRepaymentTime() {
+		return this.repaymentTime;
+	}
+	public void setRepaymentTime(Date repaymentTime) {
+		this.repaymentTime = repaymentTime;
+	}
+
+	public String getRepaymentTotalPrice() {
+		return this.repaymentTotalPrice;
+	}
+	public void setRepaymentTotalPrice(String repaymentTotalPrice) {
+		this.repaymentTotalPrice = repaymentTotalPrice;
 	}
 
 	public String getRoyaltyAfterPrice() {

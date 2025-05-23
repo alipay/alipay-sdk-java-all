@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 售后详情
  *
  * @author auto create
- * @since 1.0, 2025-05-19 15:39:51
+ * @since 1.0, 2025-05-22 16:17:26
  */
 public class AftersalesInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4761943943781367892L;
+	private static final long serialVersionUID = 4137127997935463713L;
 
 	/**
 	 * 售后单编号
@@ -36,10 +36,28 @@ public class AftersalesInfo extends AlipayObject {
 	private String cardId;
 
 	/**
+	 * 咨询的违约金金额，单位分，这个违约金金额是根据制卡时设置的规则以及当前卡所剩价值算出来的，无需违约金则为0
+	 */
+	@ApiField("consult_damages_cash")
+	private Long consultDamagesCash;
+
+	/**
+	 * 咨询的退款金额，单位分，即当前卡所剩价值
+	 */
+	@ApiField("consult_refund_cash")
+	private Long consultRefundCash;
+
+	/**
 	 * 售后发起时间
 	 */
 	@ApiField("create_time")
 	private Date createTime;
+
+	/**
+	 * 实际的违约金金额，单位分，最大不超过consultDamagesCash，商家可以调小，最小为0。售后单状态为待商家确认时，此字段没值。
+	 */
+	@ApiField("damages_cash")
+	private Long damagesCash;
 
 	/**
 	 * 用户发起售后的描述
@@ -81,11 +99,32 @@ public class AftersalesInfo extends AlipayObject {
 		this.cardId = cardId;
 	}
 
+	public Long getConsultDamagesCash() {
+		return this.consultDamagesCash;
+	}
+	public void setConsultDamagesCash(Long consultDamagesCash) {
+		this.consultDamagesCash = consultDamagesCash;
+	}
+
+	public Long getConsultRefundCash() {
+		return this.consultRefundCash;
+	}
+	public void setConsultRefundCash(Long consultRefundCash) {
+		this.consultRefundCash = consultRefundCash;
+	}
+
 	public Date getCreateTime() {
 		return this.createTime;
 	}
 	public void setCreateTime(Date createTime) {
 		this.createTime = createTime;
+	}
+
+	public Long getDamagesCash() {
+		return this.damagesCash;
+	}
+	public void setDamagesCash(Long damagesCash) {
+		this.damagesCash = damagesCash;
 	}
 
 	public String getDesc() {

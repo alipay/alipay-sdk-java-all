@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayDigitalmgmtWelfarefoundationVolunteersBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6449622717345346696L;
+	private static final long serialVersionUID = 2372814561357785782L;
 
 	/**
 	 * 人员ID

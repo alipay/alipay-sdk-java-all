@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppIndustryBotQueryRecommendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1832361531519232766L;
+	private static final long serialVersionUID = 2157424352748169331L;
 
 	/** 
 	 * 详细介绍下社保缴纳标准

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RecycleDeductQueryVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3814312936664551667L;
+	private static final long serialVersionUID = 4892179933577767561L;
 
 	/**
 	 * 绑定状态

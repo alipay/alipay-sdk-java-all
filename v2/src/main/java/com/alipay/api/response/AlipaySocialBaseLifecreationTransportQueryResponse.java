@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.base.lifecreation.transport.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-09-10 10:17:09
+ * @since 1.0, 2025-05-23 13:34:19
  */
 public class AlipaySocialBaseLifecreationTransportQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3477998529335334982L;
+	private static final long serialVersionUID = 5389825938888585397L;
 
 	/** 
 	 * 创作搬运信息列表

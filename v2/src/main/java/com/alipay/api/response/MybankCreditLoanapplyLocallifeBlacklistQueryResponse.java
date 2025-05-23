@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankCreditLoanapplyLocallifeBlacklistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5241279939563219836L;
+	private static final long serialVersionUID = 2583351614489419345L;
 
 	/** 
 	 * 是否是黑名单

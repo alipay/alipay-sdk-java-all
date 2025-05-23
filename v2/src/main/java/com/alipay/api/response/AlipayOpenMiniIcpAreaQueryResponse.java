@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenMiniIcpAreaQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8765263715785548579L;
+	private static final long serialVersionUID = 6295351267773922553L;
 
 	/** 
 	 * 省市区列表信息

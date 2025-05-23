@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.baseinfo.modify response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-12 19:17:25
+ * @since 1.0, 2025-05-22 10:05:47
  */
 public class AlipayOpenMiniBaseinfoModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6639311272628783775L;
+	private static final long serialVersionUID = 7164798797972295376L;
 
 	/** 
 	 * 小程序基础信息修改结果，无开发中版本或仅有开发中版本修改立即生效，有上架版本会启动小程序信息审核，审核通过后信息修改生效。

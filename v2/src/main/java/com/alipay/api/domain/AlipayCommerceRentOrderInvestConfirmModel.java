@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资方确认租赁订单关系
  *
  * @author auto create
- * @since 1.0, 2025-03-18 16:06:22
+ * @since 1.0, 2025-05-22 10:12:24
  */
 public class AlipayCommerceRentOrderInvestConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7881899121469964934L;
+	private static final long serialVersionUID = 3216867819585737687L;
 
 	/**
 	 * 2088开头的16位纯数字，小程序场景下获取用户ID请参考：用户授权; 其它场景下获取用户ID请参考：网页授权获取用户信息; 其中buyer_id与buyer_open_id不能同时为空
@@ -61,6 +61,24 @@ public class AlipayCommerceRentOrderInvestConfirmModel extends AlipayObject {
 	 */
 	@ApiField("order_id")
 	private String orderId;
+
+	/**
+	 * 还款利息，单位：元
+	 */
+	@ApiField("repayment_interest_price")
+	private String repaymentInterestPrice;
+
+	/**
+	 * 还款本金，单位：元
+	 */
+	@ApiField("repayment_principal_price")
+	private String repaymentPrincipalPrice;
+
+	/**
+	 * 还款总金额,单位：元
+	 */
+	@ApiField("repayment_total_price")
+	private String repaymentTotalPrice;
 
 	/**
 	 * 代表第几阶段的还款计划，要配合royalty_stage锁定第几期还款计划，royalty_type=BUYOUT的情况下，可不填
@@ -134,6 +152,27 @@ public class AlipayCommerceRentOrderInvestConfirmModel extends AlipayObject {
 	}
 	public void setOrderId(String orderId) {
 		this.orderId = orderId;
+	}
+
+	public String getRepaymentInterestPrice() {
+		return this.repaymentInterestPrice;
+	}
+	public void setRepaymentInterestPrice(String repaymentInterestPrice) {
+		this.repaymentInterestPrice = repaymentInterestPrice;
+	}
+
+	public String getRepaymentPrincipalPrice() {
+		return this.repaymentPrincipalPrice;
+	}
+	public void setRepaymentPrincipalPrice(String repaymentPrincipalPrice) {
+		this.repaymentPrincipalPrice = repaymentPrincipalPrice;
+	}
+
+	public String getRepaymentTotalPrice() {
+		return this.repaymentTotalPrice;
+	}
+	public void setRepaymentTotalPrice(String repaymentTotalPrice) {
+		this.repaymentTotalPrice = repaymentTotalPrice;
 	}
 
 	public Long getRoyaltyPeriod() {

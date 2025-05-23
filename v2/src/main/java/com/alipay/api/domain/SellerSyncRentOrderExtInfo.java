@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SellerSyncRentOrderExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8588964562299554241L;
+	private static final long serialVersionUID = 4313147129916636959L;
 
 	/**
 	 * 租赁的模式：到期归还/到期即送/到期买断

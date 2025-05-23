@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RcvLineResultOutDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3168928788381913613L;
+	private static final long serialVersionUID = 3732357677815741414L;
 
 	/**
 	 * 费用归属月份

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppIndustryJobHealthcertQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6489987363723551524L;
+	private static final long serialVersionUID = 2356458715751656338L;
 
 	/**
 	 * 一次认证的唯一标识,在商户调用认证页申请是拼接在回调地址上

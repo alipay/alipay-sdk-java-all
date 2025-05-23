@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceDataCustommetricSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7247519511432324143L;
+	private static final long serialVersionUID = 2195176695513475276L;
 
 	/**
 	 * 自定义监控指标数据结构，商户与支付宝进行监控共建场景使用，用户按照数据结构自主上传

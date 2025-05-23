@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InvoicingNoAndDate extends AlipayObject {
 
-	private static final long serialVersionUID = 5377395361821954984L;
+	private static final long serialVersionUID = 5188968452895762745L;
 
 	/**
 	 * 发票号

@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayInsSceneChannelsaleVoucherQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2143878578674215113L;
+	private static final long serialVersionUID = 4466546966149141372L;
 
 	/** 
 	 * 凭证失效时间

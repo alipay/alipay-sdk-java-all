@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BusinessRelationShopMemberAddOption extends AlipayObject {
 
-	private static final long serialVersionUID = 8147435742456492944L;
+	private static final long serialVersionUID = 2242173224728582961L;
 
 	/**
 	 * 增加方式对应的业务值 如类型选择为TRADE_NO,则该值为订单号实际值

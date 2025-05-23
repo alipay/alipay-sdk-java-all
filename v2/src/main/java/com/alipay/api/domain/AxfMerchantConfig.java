@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AxfMerchantConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 5388225864651287524L;
+	private static final long serialVersionUID = 5223345288216274842L;
 
 	/**
 	 * 如果需要监听开放消息，并且卡上没有配置msg_app_id，一定要配置MERCHANT_MSG_APP_ID

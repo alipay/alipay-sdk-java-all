@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.auth.isv.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-02 15:27:27
+ * @since 1.0, 2025-05-22 10:05:58
  */
 public class AlipayOpenAuthIsvQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3726825382134435439L;
+	private static final long serialVersionUID = 2222964874421783711L;
 
 	/** 
 	 * 脱敏后的授权商户的支付宝账号

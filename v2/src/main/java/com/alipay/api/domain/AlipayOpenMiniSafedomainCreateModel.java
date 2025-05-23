@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序添加域白名单
  *
  * @author auto create
- * @since 1.0, 2025-03-13 11:14:34
+ * @since 1.0, 2025-05-22 10:06:56
  */
 public class AlipayOpenMiniSafedomainCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6116186257222587994L;
+	private static final long serialVersionUID = 8792527285619636624L;
 
 	/**
 	 * 服务器域名白名单。支付宝小程序在HTTP请求、上传文件等场景只能与域名白名单中的域名进行通讯 。
