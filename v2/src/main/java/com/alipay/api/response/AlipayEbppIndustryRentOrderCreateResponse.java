@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppIndustryRentOrderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5421794519175682463L;
+	private static final long serialVersionUID = 2817971797946613185L;
 
 	/** 
 	 * 租房平台请求支付时的预创单编号

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class SsdataDataserviceRiskContentVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8555731224781318592L;
+	private static final long serialVersionUID = 6828731731371161895L;
 
 	/** 
 	 * 对应传入的每一种风险类型的所有风险识别结果

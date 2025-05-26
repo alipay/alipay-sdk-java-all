@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOverseasRemitFundInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7353392972452248656L;
+	private static final long serialVersionUID = 8651717548268732199L;
 
 	/**
 	 * 发端生成的单据号

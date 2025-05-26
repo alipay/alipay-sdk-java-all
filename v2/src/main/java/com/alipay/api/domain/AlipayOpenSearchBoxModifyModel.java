@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改搜索直达
  *
  * @author auto create
- * @since 1.0, 2024-08-15 13:30:55
+ * @since 1.0, 2025-05-23 15:56:19
  */
 public class AlipayOpenSearchBoxModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6474727314161483284L;
+	private static final long serialVersionUID = 5319565563641149634L;
 
 	/**
 	 * 品牌介绍，5-15个中文字符。当修改品牌介绍模块(module_type=BOX_EXCLUSIVE_BASE)时传入。
@@ -49,7 +49,7 @@ public class AlipayOpenSearchBoxModifyModel extends AlipayObject {
 	private List<String> businessDistrictIds;
 
 	/**
-	 * 1024
+	 * 自定义触发词
 	 */
 	@ApiField("custom_keywords")
 	private String customKeywords;

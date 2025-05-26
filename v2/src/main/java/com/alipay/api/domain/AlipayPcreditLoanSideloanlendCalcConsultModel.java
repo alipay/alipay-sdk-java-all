@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 随身贷支用试算
  *
  * @author auto create
- * @since 1.0, 2025-04-25 11:19:58
+ * @since 1.0, 2025-05-26 11:42:04
  */
 public class AlipayPcreditLoanSideloanlendCalcConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4492891189341297558L;
+	private static final long serialVersionUID = 3134816146273435597L;
 
 	/**
 	 * 支付宝用户id，客户在支付宝的身份证
@@ -27,6 +27,12 @@ public class AlipayPcreditLoanSideloanlendCalcConsultModel extends AlipayObject 
 	 */
 	@ApiField("apply_loan_amount")
 	private String applyLoanAmount;
+
+	/**
+	 * 端上请求时间（时间戳，精确到毫秒）
+	 */
+	@ApiField("calc_time")
+	private String calcTime;
 
 	/**
 	 * 营销卡券Code列表，传权益实例ID列表，试算接口从列表中可选的卡券进行试算
@@ -88,6 +94,13 @@ BALLOON_MORTGAGE按期付息到期还本
 	}
 	public void setApplyLoanAmount(String applyLoanAmount) {
 		this.applyLoanAmount = applyLoanAmount;
+	}
+
+	public String getCalcTime() {
+		return this.calcTime;
+	}
+	public void setCalcTime(String calcTime) {
+		this.calcTime = calcTime;
 	}
 
 	public List<String> getCouponCodeList() {

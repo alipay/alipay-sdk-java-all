@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PromiseApiConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 3489569893567746993L;
+	private static final long serialVersionUID = 8769735384987521848L;
 
 	/**
 	 * 合约履约周期，以天为单位。

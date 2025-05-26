@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.nfccard.send request
  * 
  * @author auto create
- * @since 1.0, 2025-05-20 20:22:27
+ * @since 1.0, 2025-05-26 10:49:43
  */
 public class AlipayCommerceTransportNfccardSendRequest implements AlipayRequest<AlipayCommerceTransportNfccardSendResponse> {
 

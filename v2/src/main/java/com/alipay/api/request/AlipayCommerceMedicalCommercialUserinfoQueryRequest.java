@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.commercial.userinfo.query request
  * 
  * @author auto create
- * @since 1.0, 2025-03-06 10:47:27
+ * @since 1.0, 2025-05-26 12:47:13
  */
 public class AlipayCommerceMedicalCommercialUserinfoQueryRequest implements AlipayRequest<AlipayCommerceMedicalCommercialUserinfoQueryResponse> {
 

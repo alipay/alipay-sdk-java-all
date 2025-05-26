@@ -6,23 +6,29 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 智能选址充电桩订单信息同步
+ * 新能源行业，充电订单信息
  *
  * @author auto create
- * @since 1.0, 2024-09-13 20:14:14
+ * @since 1.0, 2025-05-26 15:36:44
  */
 public class SiteChargerOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7455986448563214995L;
+	private static final long serialVersionUID = 6141545772719333559L;
 
 	/**
-	 * 充电设备编码
+	 * 互联互通充电枪（设备）编号
 	 */
 	@ApiField("connector_id")
 	private String connectorId;
 
 	/**
-	 * 结束充电时间
+	 * 设备订单号，用于匹配桩SDK上报的订单
+	 */
+	@ApiField("device_order_id")
+	private String deviceOrderId;
+
+	/**
+	 * 结束充电时间，格式：yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("end_time")
 	private Date endTime;
@@ -34,95 +40,97 @@ public class SiteChargerOrderDTO extends AlipayObject {
 	private String openId;
 
 	/**
-	 * 运营商编码
+	 * 互联互通运营商编码
 	 */
 	@ApiField("operator_id")
 	private String operatorId;
 
 	/**
-	 * 运营商名称
+	 * 互联互通运营商名称
 	 */
 	@ApiField("operator_name")
 	private String operatorName;
 
 	/**
-	 * 支付渠道：
-ALIPAY（支付宝）；
-WECHAT（微信）；
-QUICKPASS（云闪付）；
-OTHER（其他支付渠道）；
+	 * 支付渠道
 	 */
 	@ApiField("pay_channel")
 	private String payChannel;
 
 	/**
-	 * 付款交易号，通过支付宝付款的必传
+	 * 支付单交易号，支付宝交易号（必传）或者其他渠道的交易号
 	 */
 	@ApiField("payment_trade_no")
 	private String paymentTradeNo;
 
 	/**
-	 * 充电订单号
+	 * 互联互通充电订单号
 	 */
 	@ApiField("start_charge_seq")
 	private String startChargeSeq;
 
 	/**
-	 * 开始充电时间
+	 * 开始充电时间，格式：yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("start_time")
 	private Date startTime;
 
 	/**
-	 * 充电站ID
+	 * 互联互通充电场站编号
 	 */
 	@ApiField("station_id")
 	private String stationId;
 
 	/**
-	 * 充电站名称
+	 * 互联互通充电站名称
 	 */
 	@ApiField("station_name")
 	private String stationName;
 
 	/**
-	 * 总服务费，单位:元
+	 * 互联互通二级运营商编码，请联系BD或者解决方案获取映射清单
+	 */
+	@ApiField("sub_operator_id")
+	private String subOperatorId;
+
+	/**
+	 * 订单用户应付电费，单位：元，精度为两位小数
 	 */
 	@ApiField("total_elec_money")
 	private String totalElecMoney;
 
 	/**
-	 * 总金额（总电费+总服务费）,单位:元
+	 * 订单用户应付金额（总电费+总服务费），单位：元，精度为两位小数
 	 */
 	@ApiField("total_money")
 	private String totalMoney;
 
 	/**
-	 * 累计充电量，单位:度
+	 * 订单累计充电量，单位：kWh
 	 */
 	@ApiField("total_power")
 	private String totalPower;
 
 	/**
-	 * 总实际支付电费，单位:元
+	 * 订单用户实际支付电费，单位：元，精度为两位小数
 	 */
 	@ApiField("total_real_elec_money")
 	private String totalRealElecMoney;
 
 	/**
-	 * 总实际支付服务费，单位:元
+	 * 订单用户实际支付服务费，单位：元，精度为两位小数
 	 */
 	@ApiField("total_real_service_money")
 	private String totalRealServiceMoney;
 
 	/**
-	 * 总服务费，单位:元
+	 * 订单用户应付服务费，单位：元，精度为两位小数
 	 */
 	@ApiField("total_service_money")
 	private String totalServiceMoney;
 
 	/**
-	 * 支付宝用户的userId。
+	 * 支付宝用户的userId
 	 */
 	@ApiField("user_id")
 	private String userId;
@@ -132,6 +140,13 @@ OTHER（其他支付渠道）；
 	}
 	public void setConnectorId(String connectorId) {
 		this.connectorId = connectorId;
+	}
+
+	public String getDeviceOrderId() {
+		return this.deviceOrderId;
+	}
+	public void setDeviceOrderId(String deviceOrderId) {
+		this.deviceOrderId = deviceOrderId;
 	}
 
 	public Date getEndTime() {
@@ -202,6 +217,13 @@ OTHER（其他支付渠道）；
 	}
 	public void setStationName(String stationName) {
 		this.stationName = stationName;
+	}
+
+	public String getSubOperatorId() {
+		return this.subOperatorId;
+	}
+	public void setSubOperatorId(String subOperatorId) {
+		this.subOperatorId = subOperatorId;
 	}
 
 	public String getTotalElecMoney() {

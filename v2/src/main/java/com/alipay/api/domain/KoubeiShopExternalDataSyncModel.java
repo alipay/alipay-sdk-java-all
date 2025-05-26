@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiShopExternalDataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2791784247366582988L;
+	private static final long serialVersionUID = 1744216665615759229L;
 
 	/**
 	 * 操作类型：Bind:建立口碑门店和饿了么外卖关系

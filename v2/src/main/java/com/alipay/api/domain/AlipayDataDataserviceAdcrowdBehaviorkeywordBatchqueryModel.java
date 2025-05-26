@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataDataserviceAdcrowdBehaviorkeywordBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3262946946352387564L;
+	private static final long serialVersionUID = 6334998555997537271L;
 
 	/**
 	 * 该参数为搜索行为人群类目时填写的搜索词，填写后查询结果将包含填写的词。

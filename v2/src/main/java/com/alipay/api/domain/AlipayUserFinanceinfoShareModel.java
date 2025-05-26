@@ -12,7 +12,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserFinanceinfoShareModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6785837745367111188L;
+	private static final long serialVersionUID = 6723824991697355118L;
 
 	/**
 	 * 支付宝会员的userId

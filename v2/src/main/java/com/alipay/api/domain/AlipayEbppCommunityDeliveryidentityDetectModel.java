@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外卖骑手进小区核验接口
  *
  * @author auto create
- * @since 1.0, 2024-12-25 19:58:16
+ * @since 1.0, 2025-05-24 20:21:30
  */
 public class AlipayEbppCommunityDeliveryidentityDetectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4522653397515848453L;
+	private static final long serialVersionUID = 5396926714182879755L;
+
+	/**
+	 * 城市国标编码
+	 */
+	@ApiField("city_code")
+	private String cityCode;
 
 	/**
 	 * 城市名
@@ -54,6 +60,13 @@ public class AlipayEbppCommunityDeliveryidentityDetectModel extends AlipayObject
 	 */
 	@ApiField("delivery_user_id")
 	private String deliveryUserId;
+
+	public String getCityCode() {
+		return this.cityCode;
+	}
+	public void setCityCode(String cityCode) {
+		this.cityCode = cityCode;
+	}
 
 	public String getCityName() {
 		return this.cityName;

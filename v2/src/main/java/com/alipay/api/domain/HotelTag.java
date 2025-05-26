@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HotelTag extends AlipayObject {
 
-	private static final long serialVersionUID = 5664644168746657552L;
+	private static final long serialVersionUID = 3788539278968314518L;
 
 	/**
 	 * 是否支持早餐

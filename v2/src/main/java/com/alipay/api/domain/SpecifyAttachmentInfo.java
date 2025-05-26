@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class SpecifyAttachmentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2348351687355239263L;
+	private static final long serialVersionUID = 5812286597834813592L;
 
 	/**
 	 * 是否允许上传更多附件，默认值为false。开启后，除了“collect_common_codes”中指定的附件，签署人可自由上传至多10张图片。

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 绿色行为描述模型
  *
  * @author auto create
- * @since 1.0, 2023-06-09 14:46:41
+ * @since 1.0, 2025-05-23 17:16:09
  */
 public class GreenAction extends AlipayObject {
 
-	private static final long serialVersionUID = 6388871692447951488L;
+	private static final long serialVersionUID = 6423276713754323421L;
 
 	/**
 	 * 不同的绿色行为的业务值描述，比如用户回收1000g废纸，即传入1000，具体生成能量信息由森林侧计算生成

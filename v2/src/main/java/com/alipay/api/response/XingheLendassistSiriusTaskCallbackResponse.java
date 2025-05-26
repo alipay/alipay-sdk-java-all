@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class XingheLendassistSiriusTaskCallbackResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5542114983377863864L;
+	private static final long serialVersionUID = 3457595656181715953L;
 
 	/** 
 	 * 天狼星业务id

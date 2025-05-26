@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalCardFmpluginGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6773175397359585112L;
+	private static final long serialVersionUID = 7715459148383161549L;
 
 	/**
 	 * 用户在插件中操作完成后回跳地址

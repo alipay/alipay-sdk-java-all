@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 智能选址充电桩订单信息同步
  *
  * @author auto create
- * @since 1.0, 2024-09-13 20:14:14
+ * @since 1.0, 2025-05-26 15:36:44
  */
 public class AlipayCommerceTransportChargerOrderinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6286363233459827543L;
+	private static final long serialVersionUID = 3236281914566435418L;
 
 	/**
 	 * 订单详情信息

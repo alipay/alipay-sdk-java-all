@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBossFncWallstreetRcvbankaccountinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6865884299379358375L;
+	private static final long serialVersionUID = 7239745797873815318L;
 
 	/** 
 	 * 账户信息列表

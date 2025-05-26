@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class UserAsset extends AlipayObject {
 
-	private static final long serialVersionUID = 2751829983764918781L;
+	private static final long serialVersionUID = 1857916669274486358L;
 
 	/**
 	 * NFT的创作者名称

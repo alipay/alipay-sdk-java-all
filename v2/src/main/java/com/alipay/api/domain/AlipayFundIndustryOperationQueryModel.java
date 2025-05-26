@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundIndustryOperationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1344184469474288629L;
+	private static final long serialVersionUID = 5576647671868568756L;
 
 	/**
 	 * 支付宝流水号（fascore流水号）

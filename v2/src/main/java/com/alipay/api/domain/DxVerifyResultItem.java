@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DxVerifyResultItem extends AlipayObject {
 
-	private static final long serialVersionUID = 6669152724292792689L;
+	private static final long serialVersionUID = 7214651961721164451L;
 
 	/**
 	 * 错误码

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 外部单据申请开票
  *
  * @author auto create
- * @since 1.0, 2024-01-22 09:39:20
+ * @since 1.0, 2025-05-26 10:06:33
  */
 public class AlipayBossFncOutputinvoiceOutbillApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6622793429985565398L;
+	private static final long serialVersionUID = 7824627824436731511L;
 
 	/**
 	 * 调用方身份识别标记(应用名称) 与业务单据号联合唯一 必填

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.digitalmgmt.hrcampuscore.entry.sync response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-26 11:42:08
+ * @since 1.0, 2025-05-23 18:12:27
  */
 public class AlipayDigitalmgmtHrcampuscoreEntrySyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6452849672391882812L;
+	private static final long serialVersionUID = 6845171683731265251L;
 
 	/** 
 	 * 入职表单号

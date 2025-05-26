@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalStoreCodelistGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5699939218714168189L;
+	private static final long serialVersionUID = 8893227263382429369L;
 
 	/**
 	 * 每次获取数据限制的最大条数，举例：传100时，则在数据量满足的情况下，单次最多返回100条数据
