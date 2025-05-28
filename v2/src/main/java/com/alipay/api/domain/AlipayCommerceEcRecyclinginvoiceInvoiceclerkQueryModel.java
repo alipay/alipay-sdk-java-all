@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业乐企可用开票员信息查询
  *
  * @author auto create
- * @since 1.0, 2025-04-22 15:38:18
+ * @since 1.0, 2025-05-27 10:19:50
  */
 public class AlipayCommerceEcRecyclinginvoiceInvoiceclerkQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4816525496955883967L;
+	private static final long serialVersionUID = 8657354452335873496L;
 
 	/**
 	 * 企业（商户）税号

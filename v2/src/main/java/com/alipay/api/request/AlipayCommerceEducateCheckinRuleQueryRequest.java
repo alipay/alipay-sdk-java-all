@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.checkin.rule.query request
  * 
  * @author auto create
- * @since 1.0, 2025-04-29 14:17:57
+ * @since 1.0, 2025-05-27 17:56:53
  */
 public class AlipayCommerceEducateCheckinRuleQueryRequest implements AlipayRequest<AlipayCommerceEducateCheckinRuleQueryResponse> {
 

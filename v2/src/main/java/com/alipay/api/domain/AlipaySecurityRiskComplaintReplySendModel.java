@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySecurityRiskComplaintReplySendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4778984531649667235L;
+	private static final long serialVersionUID = 8284793161734222487L;
 
 	/**
 	 * 本次进行留言回复的投诉id(主表主键)

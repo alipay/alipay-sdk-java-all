@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MedicalHealthArchiveOptDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7536533629795972671L;
+	private static final long serialVersionUID = 5122534389883674437L;
 
 	/**
 	 * 数据ID

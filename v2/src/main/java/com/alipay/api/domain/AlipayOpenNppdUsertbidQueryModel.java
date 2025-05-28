@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取淘宝ID
  *
  * @author auto create
- * @since 1.0, 2024-12-31 10:20:32
+ * @since 1.0, 2025-05-27 13:57:40
  */
 public class AlipayOpenNppdUsertbidQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1824721169676626834L;
+	private static final long serialVersionUID = 6132512917726963763L;
 
 	/**
 	 * 请求凭证

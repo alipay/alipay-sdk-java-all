@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class StallModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8645446162428581481L;
+	private static final long serialVersionUID = 4815231314445196928L;
 
 	/**
 	 * 档口下菜品集合

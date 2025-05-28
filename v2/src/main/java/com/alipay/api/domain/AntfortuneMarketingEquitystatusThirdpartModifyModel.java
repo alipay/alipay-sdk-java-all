@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntfortuneMarketingEquitystatusThirdpartModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5871168191318826686L;
+	private static final long serialVersionUID = 5247477388258644178L;
 
 	/**
 	 * 第三方权益码

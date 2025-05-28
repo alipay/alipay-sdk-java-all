@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 出资关系组明细
  *
  * @author auto create
- * @since 1.0, 2025-05-25 11:08:06
+ * @since 1.0, 2025-05-27 17:11:31
  */
 public class FsFundRelationDetailForm extends AlipayObject {
 
-	private static final long serialVersionUID = 2222172898226925663L;
+	private static final long serialVersionUID = 1587488288299141626L;
 
 	/**
 	 * 出资金额是否允许上浮，默认允许true

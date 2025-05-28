@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DstCampRuleModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1544999377933395982L;
+	private static final long serialVersionUID = 2186137423298815761L;
 
 	/**
 	 * 支付宝收银台:PC端:PC   安全支付端:WIRELESS_CLIENT   无线WAP端:WIRELESS_WAP   协议支付;AGREEMENTPAY

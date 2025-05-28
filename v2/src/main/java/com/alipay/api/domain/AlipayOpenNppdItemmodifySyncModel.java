@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 同步商品修改信息
  *
  * @author auto create
- * @since 1.0, 2024-12-31 10:20:45
+ * @since 1.0, 2025-05-27 13:57:32
  */
 public class AlipayOpenNppdItemmodifySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4635689743568234174L;
+	private static final long serialVersionUID = 1124255693443684388L;
 
 	/**
 	 * 客户业务ID

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.benefitaccount.account.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-25 11:12:26
+ * @since 1.0, 2025-05-27 18:22:26
  */
 public class AlipayMarketingBenefitaccountAccountCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8147912586421653387L;
+	private static final long serialVersionUID = 3465778588634361159L;
 
 	/** 
 	 * 权益账户号

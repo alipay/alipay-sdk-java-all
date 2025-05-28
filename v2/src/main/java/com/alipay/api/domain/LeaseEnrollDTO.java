@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LeaseEnrollDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3326321545787422251L;
+	private static final long serialVersionUID = 5365321967279139967L;
 
 	/**
 	 * 品牌商pid

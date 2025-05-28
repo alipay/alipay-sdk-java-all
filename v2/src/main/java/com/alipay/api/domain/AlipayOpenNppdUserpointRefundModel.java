@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 退还用户积分
  *
  * @author auto create
- * @since 1.0, 2024-12-31 10:20:18
+ * @since 1.0, 2025-05-27 13:57:48
  */
 public class AlipayOpenNppdUserpointRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6529328281163912393L;
+	private static final long serialVersionUID = 3212111519123369371L;
 
 	/**
 	 * 原始扣积分的请求ID

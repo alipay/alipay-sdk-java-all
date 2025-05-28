@@ -12,11 +12,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.sideloanrepay.result.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-25 14:07:30
+ * @since 1.0, 2025-05-27 11:52:26
  */
 public class AlipayPcreditLoanSideloanrepayResultQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2263583835823169267L;
+	private static final long serialVersionUID = 4596926481519731943L;
+
+	/** 
+	 * 还款失败的金额(单位元)。精确小数点后2位。主动还款部分成功部分失败时，此值必传
+	 */
+	@ApiField("charge_back_amount")
+	private String chargeBackAmount;
 
 	/** 
 	 * 还款失败原因编码
@@ -116,6 +122,13 @@ FAIL - 不可重试
 	 */
 	@ApiField("return_sub_message")
 	private String returnSubMessage;
+
+	public void setChargeBackAmount(String chargeBackAmount) {
+		this.chargeBackAmount = chargeBackAmount;
+	}
+	public String getChargeBackAmount( ) {
+		return this.chargeBackAmount;
+	}
 
 	public void setFailReasonCode(String failReasonCode) {
 		this.failReasonCode = failReasonCode;

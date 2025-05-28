@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.roster.info.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-17 20:07:28
+ * @since 1.0, 2025-05-27 14:19:55
  */
 public class AlipayCommerceEducateRosterInfoBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5251432354137635433L;
+	private static final long serialVersionUID = 7258284463926145758L;
 
 	/** 
 	 * 花名册列表

@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.vehownerbase.benefitinterest.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-01-16 14:17:22
+ * @since 1.0, 2025-05-27 19:17:26
  */
 public class AlipayCommerceTransportVehownerbaseBenefitinterestQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6525775721658182195L;
+	private static final long serialVersionUID = 7637275252566573379L;
 
 	/** 
 	 * 权益编码

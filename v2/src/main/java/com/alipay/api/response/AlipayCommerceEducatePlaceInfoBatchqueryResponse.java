@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.place.info.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-08 17:27:24
+ * @since 1.0, 2025-05-27 17:57:12
  */
 public class AlipayCommerceEducatePlaceInfoBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4178286484281331343L;
+	private static final long serialVersionUID = 1627422515211797453L;
 
 	/** 
 	 * 位置信息列表

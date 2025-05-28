@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 删除商品后信息同步接口
  *
  * @author auto create
- * @since 1.0, 2024-12-31 10:20:58
+ * @since 1.0, 2025-05-27 13:58:05
  */
 public class AlipayOpenNppdItemdeleteSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2146772498698624774L;
+	private static final long serialVersionUID = 7572633278713174448L;
 
 	/**
 	 * 客户业务ID

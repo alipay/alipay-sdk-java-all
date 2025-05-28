@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankPaymentTradeDepositVerifyMatchModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5664539561216364693L;
+	private static final long serialVersionUID = 7686878633381847929L;
 
 	/**
 	 * 打款金额，单位：分

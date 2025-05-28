@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 反向企业信息查询
  *
  * @author auto create
- * @since 1.0, 2025-05-20 20:12:30
+ * @since 1.0, 2025-05-27 10:19:41
  */
 public class AlipayCommerceEcRecyclinginvoiceCompanyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3366261135334926714L;
+	private static final long serialVersionUID = 4797685689335718132L;
 
 	/**
 	 * 企业（商户）税号

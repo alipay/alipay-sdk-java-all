@@ -11,14 +11,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单分期
  *
  * @author auto create
- * @since 1.0, 2025-04-27 10:37:21
+ * @since 1.0, 2025-05-27 15:39:54
  */
 public class AlipayOpenMiniOrderInstallmentCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1315868348985518954L;
+	private static final long serialVersionUID = 3656192641692185696L;
 
 	/**
-	 * 续租场景分期数，当分期类型为RELET时，该字段必填
+	 * 续租场景分期数，当分期类型为RELET时，该字段必填，单位：期。
 	 */
 	@ApiField("addon_period_num")
 	private Long addonPeriodNum;
@@ -48,6 +48,7 @@ public class AlipayOpenMiniOrderInstallmentCreateModel extends AlipayObject {
       期数非1时，分期金额=每期金额，如果有尾期金额，最后一期分期金额=尾期金额；
   当分期类型为BUYOUT，分期金额=买断价 buyout_price；
    当分期类型为RELET，分期金额即续租金额；
+单位：元。
 	 */
 	@ApiField("installment_price")
 	private String installmentPrice;

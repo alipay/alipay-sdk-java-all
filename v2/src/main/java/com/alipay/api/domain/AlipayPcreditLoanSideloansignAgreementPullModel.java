@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayPcreditLoanSideloansignAgreementPullModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6839374776214622138L;
+	private static final long serialVersionUID = 6432473467796493491L;
 
 	/**
 	 * 信贷业务场景类型Code

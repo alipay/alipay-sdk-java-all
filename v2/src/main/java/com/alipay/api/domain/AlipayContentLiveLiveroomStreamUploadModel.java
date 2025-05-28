@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 直播间推流
  *
  * @author auto create
- * @since 1.0, 2025-04-29 14:28:48
+ * @since 1.0, 2025-05-27 10:42:58
  */
 public class AlipayContentLiveLiveroomStreamUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6891624142598497645L;
+	private static final long serialVersionUID = 6192484926372169686L;
 
 	/**
 	 * 脱敏后的支付宝直播间ID

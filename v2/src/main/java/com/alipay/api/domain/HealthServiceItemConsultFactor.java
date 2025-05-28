@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HealthServiceItemConsultFactor extends AlipayObject {
 
-	private static final long serialVersionUID = 8728233471259298925L;
+	private static final long serialVersionUID = 3626961754859962649L;
 
 	/**
 	 * 咨询因子Key

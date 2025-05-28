@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建或者修改小助手快捷服务
  *
  * @author auto create
- * @since 1.0, 2024-08-13 16:30:46
+ * @since 1.0, 2025-05-27 10:30:27
  */
 public class AlipayMerchantGroupAssistantServiceCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2582866589542778335L;
+	private static final long serialVersionUID = 7244622947686667768L;
 
 	/**
 	 * 小助手内容id，创建快捷服务时返回的数据唯一id

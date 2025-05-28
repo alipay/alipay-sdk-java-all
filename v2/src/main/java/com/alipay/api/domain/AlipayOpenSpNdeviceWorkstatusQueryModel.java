@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenSpNdeviceWorkstatusQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8821764714137792137L;
+	private static final long serialVersionUID = 8281882428499474935L;
 
 	/**
 	 * 碰一下设备SN标识

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 审批单城市信息
  *
  * @author auto create
- * @since 1.0, 2023-01-31 14:05:38
+ * @since 1.0, 2025-05-26 20:01:30
  */
 public class ApprovalCityDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3469442816731483417L;
+	private static final long serialVersionUID = 1412777841144652313L;
 
 	/**
 	 * 城市行政编码

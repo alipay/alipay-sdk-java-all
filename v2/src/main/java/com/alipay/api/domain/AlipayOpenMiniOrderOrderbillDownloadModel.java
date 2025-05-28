@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniOrderOrderbillDownloadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5446411527697684268L;
+	private static final long serialVersionUID = 4787453566913923246L;
 
 	/**
 	 * * 日账单格式为yyyy-MM-dd，最早可下载2016年1月1日开始的日账单。不支持下载当日账单，只能下载前一日24点前的账单数据（T+1），当日数据一般于次日 9 点前生成，特殊情况可能延迟。

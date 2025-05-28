@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AttachmentDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5197136363862958115L;
+	private static final long serialVersionUID = 3388161751647163837L;
 
 	/**
 	 * 创建流程时指定的附件code，可能为空。（身份证正反面的固定code：正面：ESIGN_IDCARD，背面：ESIGN_BACK_IDCARD）

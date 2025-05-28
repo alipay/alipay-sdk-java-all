@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.nppd.userpoint.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-31 10:22:24
+ * @since 1.0, 2025-05-27 13:57:16
  */
 public class AlipayOpenNppdUserpointQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4372927391987153141L;
+	private static final long serialVersionUID = 6795446539656593522L;
 
 	/** 
 	 * 用户等级

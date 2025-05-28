@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RegionState extends AlipayObject {
 
-	private static final long serialVersionUID = 8887972854888233527L;
+	private static final long serialVersionUID = 2355737791723126714L;
 
 	/**
 	 * 区域所在层

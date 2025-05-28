@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 车生活停车平台录入停车场信息
  *
  * @author auto create
- * @since 1.0, 2024-11-26 10:23:54
+ * @since 1.0, 2025-05-27 10:43:29
  */
 public class AlipayEcoMycarParkingParkinglotinfoCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1218881184262749822L;
+	private static final long serialVersionUID = 3544925315679244486L;
 
 	/**
 	 * 服务商的支付宝账号ID（2088开头的16位纯数字，<a href="https://opendocs.alipay.com/common/02ncut">获取方式</a>），由服务商提供给ISV
@@ -28,6 +28,12 @@ public class AlipayEcoMycarParkingParkinglotinfoCreateModel extends AlipayObject
 	@ApiListField("business_isv")
 	@ApiField("business_item")
 	private List<BusinessItem> businessIsv;
+
+	/**
+	 * 停车场充电车位数 单位:个
+	 */
+	@ApiField("charge_sum_space")
+	private String chargeSumSpace;
 
 	/**
 	 * 停车场详细计费规则
@@ -171,7 +177,7 @@ public class AlipayEcoMycarParkingParkinglotinfoCreateModel extends AlipayObject
 	private String parkingFeeDescriptionImg;
 
 	/**
-	 * 停车场类型，1为居民小区、2为商圈停车场（购物中心商业广场商场等）、3为路侧停车、4为公园景点（景点乐园公园老街古镇等）、5为商务楼宇（酒店写字楼商务楼园区等）、6为其他、7为交通枢纽（机场火车站汽车站码头港口等）、8为市政设施（体育场博物图书馆医院学校等）
+	 * 停车场类型，COMMUNITY为居民小区、BUSINESS_AREA为商圈停车场（购物中心商业广场商场等）、ROADSIDE为路侧停车、PARK_SCENIC为公园景点（景点乐园公园老街古镇等）、OFFICE_BUILDING为商务楼宇（酒店写字楼商务楼园区等）、OTHER为其他、TRANSPORTATION为交通枢纽（机场火车站汽车站码头港口等）、PUBLIC_FACILITIES为市政设施（体育场博物图书馆医院学校等）、TERRITORY独立园区（办公工业物流园区等）、BUSINESS_PLACE经营场所（4S店、门市餐饮等
 	 */
 	@ApiField("parking_lot_type")
 	private String parkingLotType;
@@ -281,6 +287,13 @@ N：不支持。
 	}
 	public void setBusinessIsv(List<BusinessItem> businessIsv) {
 		this.businessIsv = businessIsv;
+	}
+
+	public String getChargeSumSpace() {
+		return this.chargeSumSpace;
+	}
+	public void setChargeSumSpace(String chargeSumSpace) {
+		this.chargeSumSpace = chargeSumSpace;
 	}
 
 	public List<ParkingLotChargingRuleInfo> getChargingRule() {

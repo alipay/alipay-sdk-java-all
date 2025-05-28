@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.oceanbase.passport.huaweimp.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-17 14:37:00
+ * @since 1.0, 2025-05-27 13:39:12
  */
 public class AnttechOceanbasePassportHuaweimpCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1575793219333913785L;
+	private static final long serialVersionUID = 6268712527315588457L;
 
 	/** 
 	 * 加密后的账号

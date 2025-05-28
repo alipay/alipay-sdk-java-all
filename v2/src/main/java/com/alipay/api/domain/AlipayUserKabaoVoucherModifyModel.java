@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserKabaoVoucherModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1697674929741539832L;
+	private static final long serialVersionUID = 5357526969798498768L;
 
 	/**
 	 * 兑换券价值信息

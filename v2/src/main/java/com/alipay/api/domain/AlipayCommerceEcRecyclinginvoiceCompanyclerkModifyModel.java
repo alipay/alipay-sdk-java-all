@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 反向企业营业员变更
  *
  * @author auto create
- * @since 1.0, 2025-04-22 15:37:35
+ * @since 1.0, 2025-05-27 10:19:53
  */
 public class AlipayCommerceEcRecyclinginvoiceCompanyclerkModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8895559519628148136L;
+	private static final long serialVersionUID = 4422352374842548335L;
 
 	/**
 	 * 员工名称

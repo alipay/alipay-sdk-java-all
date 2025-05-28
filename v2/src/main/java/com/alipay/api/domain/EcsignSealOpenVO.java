@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EcsignSealOpenVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5597864147248668961L;
+	private static final long serialVersionUID = 7443381933947947822L;
 
 	/**
 	 * 企业社会统一信用代码，无需唯一，用户企业信息校验及授权，需要与企业名称对应。

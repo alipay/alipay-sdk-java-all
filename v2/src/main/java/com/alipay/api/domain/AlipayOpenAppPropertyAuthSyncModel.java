@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenAppPropertyAuthSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1515831597793366187L;
+	private static final long serialVersionUID = 5122661455329633314L;
 
 	/**
 	 * 需要同步的小区认证信息，批量操作时，事务控制，一条数据失败，整个事务回滚。

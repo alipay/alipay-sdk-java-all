@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenPublicLifeMsgSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3858952194867835339L;
+	private static final long serialVersionUID = 1673837245351512936L;
 
 	/** 
 	 * 生活号消息唯一标识

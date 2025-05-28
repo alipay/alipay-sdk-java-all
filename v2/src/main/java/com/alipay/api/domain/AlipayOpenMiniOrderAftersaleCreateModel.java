@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建售后
  *
  * @author auto create
- * @since 1.0, 2024-09-03 17:15:16
+ * @since 1.0, 2025-05-26 16:45:43
  */
 public class AlipayOpenMiniOrderAftersaleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3148823315345175946L;
+	private static final long serialVersionUID = 6625733964872927645L;
+
+	/**
+	 * 售后原因code
+	 */
+	@ApiField("aftersale_reason_code")
+	private String aftersaleReasonCode;
 
 	/**
 	 * 退换商品的信息
@@ -22,6 +28,12 @@ public class AlipayOpenMiniOrderAftersaleCreateModel extends AlipayObject {
 	@ApiListField("item_infos")
 	@ApiField("aftersale_item_info_d_t_o")
 	private List<AftersaleItemInfoDTO> itemInfos;
+
+	/**
+	 * 地址信息
+	 */
+	@ApiField("merchant_address_info")
+	private AftersaleAddressInfoDTO merchantAddressInfo;
 
 	/**
 	 * 用户的openId
@@ -78,11 +90,25 @@ order_id、out_order_id，二选一
 	@ApiField("user_id")
 	private String userId;
 
+	public String getAftersaleReasonCode() {
+		return this.aftersaleReasonCode;
+	}
+	public void setAftersaleReasonCode(String aftersaleReasonCode) {
+		this.aftersaleReasonCode = aftersaleReasonCode;
+	}
+
 	public List<AftersaleItemInfoDTO> getItemInfos() {
 		return this.itemInfos;
 	}
 	public void setItemInfos(List<AftersaleItemInfoDTO> itemInfos) {
 		this.itemInfos = itemInfos;
+	}
+
+	public AftersaleAddressInfoDTO getMerchantAddressInfo() {
+		return this.merchantAddressInfo;
+	}
+	public void setMerchantAddressInfo(AftersaleAddressInfoDTO merchantAddressInfo) {
+		this.merchantAddressInfo = merchantAddressInfo;
 	}
 
 	public String getOpenId() {

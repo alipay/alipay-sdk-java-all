@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AnttechNftWithdrawBatchFreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5448645762473759296L;
+	private static final long serialVersionUID = 1167297355639818683L;
 
 	/**
 	 * 上游幂等单号

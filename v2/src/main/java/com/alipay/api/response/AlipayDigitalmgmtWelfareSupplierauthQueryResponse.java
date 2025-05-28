@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDigitalmgmtWelfareSupplierauthQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8786739536467712595L;
+	private static final long serialVersionUID = 3166379462415991134L;
 
 	/** 
 	 * 该参数作为家属出生日期，通过家空间小程序绑定家属中获取到，主要用于供应商为家属开通权益的必填字段之一。

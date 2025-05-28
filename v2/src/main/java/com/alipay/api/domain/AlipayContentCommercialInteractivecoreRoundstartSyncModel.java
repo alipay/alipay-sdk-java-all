@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayContentCommercialInteractivecoreRoundstartSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2562679961362975872L;
+	private static final long serialVersionUID = 4155571258142388465L;
 
 	/**
 	 * 玩法token

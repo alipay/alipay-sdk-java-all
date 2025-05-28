@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 出租车司机状态查询接口
  *
  * @author auto create
- * @since 1.0, 2022-03-09 17:24:55
+ * @since 1.0, 2025-05-27 16:30:55
  */
 public class AlipayCommerceTransportTaxiDriverstatusQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4739731773734363433L;
+	private static final long serialVersionUID = 7327777663165158237L;
 
 	/**
 	 * 请求时间，Unix Timestamp单位毫秒

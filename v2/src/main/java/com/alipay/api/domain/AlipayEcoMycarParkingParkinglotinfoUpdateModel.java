@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改停车场信息
  *
  * @author auto create
- * @since 1.0, 2024-11-25 20:30:53
+ * @since 1.0, 2025-05-27 10:43:20
  */
 public class AlipayEcoMycarParkingParkinglotinfoUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8632635292261993296L;
+	private static final long serialVersionUID = 7492294972198234761L;
 
 	/**
 	 * 服务商ID（2088开头的16位纯数字），由服务商提供给ISV
@@ -28,6 +28,12 @@ public class AlipayEcoMycarParkingParkinglotinfoUpdateModel extends AlipayObject
 	@ApiListField("business_isv")
 	@ApiField("business_item")
 	private List<BusinessItem> businessIsv;
+
+	/**
+	 * 停车场充电车位数 单位:个
+	 */
+	@ApiField("charge_sum_space")
+	private String chargeSumSpace;
 
 	/**
 	 * 停车场详细计费规则详细说明
@@ -237,6 +243,12 @@ public class AlipayEcoMycarParkingParkinglotinfoUpdateModel extends AlipayObject
 	private String paymentMode;
 
 	/**
+	 * 剩余车位数 单位：个
+	 */
+	@ApiField("remain_space")
+	private String remainSpace;
+
+	/**
 	 * 提供用户查看停车状态、缴费功能
 	 */
 	@ApiField("serivce_url")
@@ -288,6 +300,13 @@ public class AlipayEcoMycarParkingParkinglotinfoUpdateModel extends AlipayObject
 	}
 	public void setBusinessIsv(List<BusinessItem> businessIsv) {
 		this.businessIsv = businessIsv;
+	}
+
+	public String getChargeSumSpace() {
+		return this.chargeSumSpace;
+	}
+	public void setChargeSumSpace(String chargeSumSpace) {
+		this.chargeSumSpace = chargeSumSpace;
 	}
 
 	public List<ParkingLotChargingRuleInfo> getChargingRule() {
@@ -519,6 +538,13 @@ public class AlipayEcoMycarParkingParkinglotinfoUpdateModel extends AlipayObject
 	}
 	public void setPaymentMode(String paymentMode) {
 		this.paymentMode = paymentMode;
+	}
+
+	public String getRemainSpace() {
+		return this.remainSpace;
+	}
+	public void setRemainSpace(String remainSpace) {
+		this.remainSpace = remainSpace;
 	}
 
 	public String getSerivceUrl() {

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.nppd.userpoint.refund response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-31 10:22:23
+ * @since 1.0, 2025-05-27 13:57:48
  */
 public class AlipayOpenNppdUserpointRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5561474779856835593L;
+	private static final long serialVersionUID = 5425138684753638144L;
 
 	
 

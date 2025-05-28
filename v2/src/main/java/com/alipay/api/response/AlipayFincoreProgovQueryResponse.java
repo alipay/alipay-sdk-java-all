@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFincoreProgovQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2369489948156477596L;
+	private static final long serialVersionUID = 4424498775724163547L;
 
 	/** 
 	 * 工单当前状态

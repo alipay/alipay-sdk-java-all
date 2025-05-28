@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayTradeSettleEfundUnfreezeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1862465219513192286L;
+	private static final long serialVersionUID = 5165853878618937134L;
 
 	/** 
 	 * 实际解冻金额，单位元

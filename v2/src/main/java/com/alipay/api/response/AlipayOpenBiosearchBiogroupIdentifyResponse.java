@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenBiosearchBiogroupIdentifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1348682355256534843L;
+	private static final long serialVersionUID = 8581389952454233811L;
 
 	/** 
 	 * 生物搜索结果，可能没有可能多个

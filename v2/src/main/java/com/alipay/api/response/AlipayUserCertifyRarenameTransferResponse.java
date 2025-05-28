@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserCertifyRarenameTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1686776214243779118L;
+	private static final long serialVersionUID = 6441526897715612748L;
 
 	/** 
 	 * 结果姓名列表，多个姓名之间用逗号分隔。

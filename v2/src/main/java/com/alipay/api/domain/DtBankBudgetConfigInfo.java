@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DtBankBudgetConfigInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2296644936228357625L;
+	private static final long serialVersionUID = 8758733953435146579L;
 
 	/**
 	 * 每日预算类型

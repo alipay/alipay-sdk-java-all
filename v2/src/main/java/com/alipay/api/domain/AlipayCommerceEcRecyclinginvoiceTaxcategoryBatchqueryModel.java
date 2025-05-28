@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 税收分类编码分页查询
  *
  * @author auto create
- * @since 1.0, 2025-04-22 15:38:16
+ * @since 1.0, 2025-05-27 10:18:23
  */
 public class AlipayCommerceEcRecyclinginvoiceTaxcategoryBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3875149572721256146L;
+	private static final long serialVersionUID = 6765977314413519652L;
 
 	/**
 	 * 根据企业所开通的产品查询该产品ID

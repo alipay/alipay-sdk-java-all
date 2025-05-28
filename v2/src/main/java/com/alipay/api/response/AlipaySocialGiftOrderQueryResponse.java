@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySocialGiftOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2245345769729721741L;
+	private static final long serialVersionUID = 5365663892433764491L;
 
 	/** 
 	 * 礼物单状态：
