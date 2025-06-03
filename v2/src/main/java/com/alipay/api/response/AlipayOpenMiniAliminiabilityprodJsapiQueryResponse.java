@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.aliminiabilityprod.jsapi.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 21:11:42
+ * @since 1.0, 2025-05-29 10:46:17
  */
 public class AlipayOpenMiniAliminiabilityprodJsapiQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5181951658392697856L;
+	private static final long serialVersionUID = 2656482871497488465L;
 
 	/** 
 	 * 错误码

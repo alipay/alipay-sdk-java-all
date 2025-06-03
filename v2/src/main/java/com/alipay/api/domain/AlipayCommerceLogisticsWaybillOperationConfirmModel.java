@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 包裹操作确认接口
  *
  * @author auto create
- * @since 1.0, 2025-05-12 15:22:21
+ * @since 1.0, 2025-06-03 10:15:11
  */
 public class AlipayCommerceLogisticsWaybillOperationConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4392276544996868892L;
+	private static final long serialVersionUID = 3585157975327727122L;
 
 	/**
 	 * 接口调用方的渠道名称，由支付宝分配
@@ -26,6 +26,18 @@ public class AlipayCommerceLogisticsWaybillOperationConfirmModel extends AlipayO
 	private String channelWaybillOperationScope;
 
 	/**
+	 * 身份标识
+	 */
+	@ApiField("identity_tag")
+	private String identityTag;
+
+	/**
+	 * 身份类型
+	 */
+	@ApiField("identity_type")
+	private String identityType;
+
+	/**
 	 * 仓节点唯一id
 	 */
 	@ApiField("lbx")
@@ -38,9 +50,10 @@ public class AlipayCommerceLogisticsWaybillOperationConfirmModel extends AlipayO
 	private String logisticsCode;
 
 	/**
-	 * 用于标记支付宝用户在应用下的唯一标识
+	 * 用于标记支付宝用户在应用下的唯一标识 当前字段已废弃(文档升级，请使用identity_tag与identity_type)
 	 */
 	@ApiField("open_id")
+	@Deprecated
 	private String openId;
 
 	/**
@@ -56,9 +69,10 @@ public class AlipayCommerceLogisticsWaybillOperationConfirmModel extends AlipayO
 	private String outbizOrderId;
 
 	/**
-	 * 支付宝用户的userId。
+	 * 支付宝用户的userId。 当前字段已废弃(文档升级，请使用identity_tag与identity_type)
 	 */
 	@ApiField("user_id")
+	@Deprecated
 	private String userId;
 
 	/**
@@ -79,6 +93,20 @@ public class AlipayCommerceLogisticsWaybillOperationConfirmModel extends AlipayO
 	}
 	public void setChannelWaybillOperationScope(String channelWaybillOperationScope) {
 		this.channelWaybillOperationScope = channelWaybillOperationScope;
+	}
+
+	public String getIdentityTag() {
+		return this.identityTag;
+	}
+	public void setIdentityTag(String identityTag) {
+		this.identityTag = identityTag;
+	}
+
+	public String getIdentityType() {
+		return this.identityType;
+	}
+	public void setIdentityType(String identityType) {
+		this.identityType = identityType;
 	}
 
 	public String getLbx() {

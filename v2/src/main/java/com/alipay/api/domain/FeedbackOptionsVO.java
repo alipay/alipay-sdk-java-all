@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 反馈选项类
  *
  * @author auto create
- * @since 1.0, 2025-03-31 14:08:34
+ * @since 1.0, 2025-05-29 10:02:01
  */
 public class FeedbackOptionsVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8493456835527966856L;
+	private static final long serialVersionUID = 3565368448665156957L;
 
 	/**
 	 * 一级选项名称
@@ -23,7 +23,7 @@ public class FeedbackOptionsVO extends AlipayObject {
 	private String primaryClass;
 
 	/**
-	 * 一级分类名称code
+	 * 一级分类名称
 	 */
 	@ApiField("primary_class_code")
 	private String primaryClassCode;

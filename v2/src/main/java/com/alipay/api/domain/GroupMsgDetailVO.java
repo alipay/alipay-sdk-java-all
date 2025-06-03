@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 群发消息详情
  *
  * @author auto create
- * @since 1.0, 2025-03-31 16:32:20
+ * @since 1.0, 2025-05-30 14:58:15
  */
 public class GroupMsgDetailVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5812921675288815372L;
+	private static final long serialVersionUID = 1858521925131997314L;
 
 	/**
 	 * 是否@所有人
@@ -73,10 +73,23 @@ public class GroupMsgDetailVO extends AlipayObject {
 	private GroupMessageVO msgData;
 
 	/**
+	 * 复合消息数据详情
+	 */
+	@ApiListField("msg_data_list")
+	@ApiField("group_message_v_o")
+	private List<GroupMessageVO> msgDataList;
+
+	/**
 	 * 消息id
 	 */
 	@ApiField("msg_id")
 	private String msgId;
+
+	/**
+	 * 区分是单条消息发送还是复合消息发送
+	 */
+	@ApiField("send_batch")
+	private Boolean sendBatch;
 
 	/**
 	 * 发送状态， 2:待发送, 3: 发送中, 4: 发送成功, 5: 发送失败, 6: 部分失败, 7: 重发, 8: 待撤回, 9: 撤回中, 10: 已撤回, 12: 部分撤回, 13: 部分成功, 14: 部分删除, 15: 部分发送中
@@ -165,11 +178,25 @@ public class GroupMsgDetailVO extends AlipayObject {
 		this.msgData = msgData;
 	}
 
+	public List<GroupMessageVO> getMsgDataList() {
+		return this.msgDataList;
+	}
+	public void setMsgDataList(List<GroupMessageVO> msgDataList) {
+		this.msgDataList = msgDataList;
+	}
+
 	public String getMsgId() {
 		return this.msgId;
 	}
 	public void setMsgId(String msgId) {
 		this.msgId = msgId;
+	}
+
+	public Boolean getSendBatch() {
+		return this.sendBatch;
+	}
+	public void setSendBatch(Boolean sendBatch) {
+		this.sendBatch = sendBatch;
 	}
 
 	public Long getSendStatus() {

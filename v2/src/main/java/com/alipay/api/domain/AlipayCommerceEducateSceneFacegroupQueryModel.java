@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 学校人脸库信息查询
  *
  * @author auto create
- * @since 1.0, 2021-12-24 18:02:53
+ * @since 1.0, 2025-05-29 15:56:54
  */
 public class AlipayCommerceEducateSceneFacegroupQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4646594268347381945L;
+	private static final long serialVersionUID = 3118357825593135641L;
 
 	/**
 	 * 支付宝学校内标

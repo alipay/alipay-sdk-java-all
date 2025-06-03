@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ModifyQuotaDetails extends AlipayObject {
 
-	private static final long serialVersionUID = 7143945621398627697L;
+	private static final long serialVersionUID = 2318667742877244158L;
 
 	/**
 	 * 具体额度，单位：元。如金额为空，表示删除已有的额度设置，无已有额度设置则忽略。

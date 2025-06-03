@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsOpenVoucherBizDataDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8611974573596536831L;
+	private static final long serialVersionUID = 4149529882512989463L;
 
 	/**
 	 * 加密后的手机号

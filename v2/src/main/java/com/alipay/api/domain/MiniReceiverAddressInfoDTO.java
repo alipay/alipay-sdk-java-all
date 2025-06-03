@@ -7,17 +7,41 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单收货地址模型
  *
  * @author auto create
- * @since 1.0, 2025-02-19 16:55:56
+ * @since 1.0, 2025-06-03 13:32:51
  */
 public class MiniReceiverAddressInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2779373771442576694L;
+	private static final long serialVersionUID = 3385143516966373716L;
+
+	/**
+	 * 不包含省、市、区的详细地址
+	 */
+	@ApiField("address")
+	private String address;
+
+	/**
+	 * 地址区信息
+	 */
+	@ApiField("area")
+	private String area;
+
+	/**
+	 * 地址市信息
+	 */
+	@ApiField("city")
+	private String city;
 
 	/**
 	 * 收货地址信息
 	 */
 	@ApiField("detailed_address")
 	private String detailedAddress;
+
+	/**
+	 * 地址的省份信息
+	 */
+	@ApiField("province")
+	private String province;
 
 	/**
 	 * 标准城市域码
@@ -43,11 +67,39 @@ public class MiniReceiverAddressInfoDTO extends AlipayObject {
 	@ApiField("tel_number")
 	private String telNumber;
 
+	public String getAddress() {
+		return this.address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getArea() {
+		return this.area;
+	}
+	public void setArea(String area) {
+		this.area = area;
+	}
+
+	public String getCity() {
+		return this.city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+
 	public String getDetailedAddress() {
 		return this.detailedAddress;
 	}
 	public void setDetailedAddress(String detailedAddress) {
 		this.detailedAddress = detailedAddress;
+	}
+
+	public String getProvince() {
+		return this.province;
+	}
+	public void setProvince(String province) {
+		this.province = province;
 	}
 
 	public String getReceiverDivisionCode() {

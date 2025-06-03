@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BookPopularityInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7857561322184636361L;
+	private static final long serialVersionUID = 1774759496828517293L;
 
 	/**
 	 * 书籍购买量

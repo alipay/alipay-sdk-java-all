@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class TaoBaoEcomStoreResult extends AlipayObject {
 
-	private static final long serialVersionUID = 3466183395665556377L;
+	private static final long serialVersionUID = 8645915646724882752L;
 
 	/**
 	 * 行政处罚（市监）信息列表

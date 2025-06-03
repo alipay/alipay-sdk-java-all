@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景（如消费/核身）消息上报接口
  *
  * @author auto create
- * @since 1.0, 2023-03-20 15:43:50
+ * @since 1.0, 2025-05-29 16:00:29
  */
 public class AlipayCommerceKidsMsgSceneSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2584867351881743179L;
+	private static final long serialVersionUID = 4735289876599787651L;
 
 	/**
 	 * 业务码

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取校园支付token
  *
  * @author auto create
- * @since 1.0, 2024-11-15 13:09:17
+ * @since 1.0, 2025-05-29 15:44:15
  */
 public class AlipayCommerceEducateMultideductTokenApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6427484893383214156L;
+	private static final long serialVersionUID = 1794171776428765227L;
 
 	/**
 	 * 业务码。可选的字段枚举说明：{SCHOOL_MULTI_DEDUCT:校园支付;SCHOOL_PAYMENT:刷脸支付}

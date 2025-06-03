@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询指定产品开通的场景列表
  *
  * @author auto create
- * @since 1.0, 2021-09-22 17:40:55
+ * @since 1.0, 2025-05-29 10:27:52
  */
 public class AlipayOpenMiniAmpeSceneQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8479212677949428486L;
+	private static final long serialVersionUID = 5298765273426722965L;
 
 	/**
 	 * 设备产品的productId，由系统生成

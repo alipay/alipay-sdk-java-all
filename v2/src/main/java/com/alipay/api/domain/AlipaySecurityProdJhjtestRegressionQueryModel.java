@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySecurityProdJhjtestRegressionQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5838524788882288946L;
+	private static final long serialVersionUID = 6799532585192986497L;
 
 	/**
 	 * a下普通字段a

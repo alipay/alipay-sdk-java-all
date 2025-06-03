@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改人脸库的人脸扩展信息模型
  *
  * @author auto create
- * @since 1.0, 2022-01-10 16:29:08
+ * @since 1.0, 2025-05-29 16:19:00
  */
 public class TinyFaceUserInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5446877384444358785L;
+	private static final long serialVersionUID = 7216332173785597948L;
 
 	/**
 	 * 人脸库扩展字段修改后的信息。(如果需要清空扩展字段，需使用空json——“{}”)

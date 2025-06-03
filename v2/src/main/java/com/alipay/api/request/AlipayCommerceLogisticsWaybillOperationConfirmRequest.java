@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.logistics.waybill.operation.confirm request
  * 
  * @author auto create
- * @since 1.0, 2025-05-12 15:22:26
+ * @since 1.0, 2025-06-03 10:17:25
  */
 public class AlipayCommerceLogisticsWaybillOperationConfirmRequest implements AlipayRequest<AlipayCommerceLogisticsWaybillOperationConfirmResponse> {
 

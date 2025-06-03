@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class SkuBean extends AlipayObject {
 
-	private static final long serialVersionUID = 4522696132153322378L;
+	private static final long serialVersionUID = 8122786462346828596L;
 
 	/**
 	 * 活动对象,购物车相关接口的活动视图

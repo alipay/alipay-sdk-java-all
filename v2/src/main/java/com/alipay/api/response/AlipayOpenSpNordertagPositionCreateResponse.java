@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.nordertag.position.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-06 16:47:27
+ * @since 1.0, 2025-06-03 15:12:28
  */
 public class AlipayOpenSpNordertagPositionCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8156462351763769435L;
+	private static final long serialVersionUID = 6242175215175224654L;
 
 	/** 
 	 * 点位id,主要为新建点位时生成的点位唯一标识

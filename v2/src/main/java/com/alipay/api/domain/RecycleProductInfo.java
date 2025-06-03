@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 回收产品模型
  *
  * @author auto create
- * @since 1.0, 2023-08-22 17:48:09
+ * @since 1.0, 2025-05-29 22:24:26
  */
 public class RecycleProductInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7165886419454117193L;
+	private static final long serialVersionUID = 8287488413775582765L;
 
 	/**
 	 * 品牌code
@@ -26,6 +29,20 @@ public class RecycleProductInfo extends AlipayObject {
 	private String categoryCode;
 
 	/**
+	 * 实物金图片地址列表，图片url
+	 */
+	@ApiListField("entity_image_url_list")
+	@ApiField("string")
+	private List<String> entityImageUrlList;
+
+	/**
+	 * 发票图片地址列表，图片url
+	 */
+	@ApiListField("invoice_image_url_list")
+	@ApiField("string")
+	private List<String> invoiceImageUrlList;
+
+	/**
 	 * 产品编码
 	 */
 	@ApiField("product_code")
@@ -36,6 +53,36 @@ public class RecycleProductInfo extends AlipayObject {
 	 */
 	@ApiField("product_name")
 	private String productName;
+
+	/**
+	 * 商品重量。支持两位小数点。单位为克，在检测结果确认前传入预估克重。
+	 */
+	@ApiField("quantity")
+	private String quantity;
+
+	/**
+	 * 商品最大重量。支持两位小数点。单位为克，在检测结果确认前传入预估克重。
+	 */
+	@ApiField("quantity_max")
+	private String quantityMax;
+
+	/**
+	 * 商品最小重量。支持两位小数点。单位为克，在检测结果确认前传入预估克重。
+	 */
+	@ApiField("quantity_min")
+	private String quantityMin;
+
+	/**
+	 * 单位，默认为克
+	 */
+	@ApiField("unit")
+	private String unit;
+
+	/**
+	 * 商品价格，单位元。
+	 */
+	@ApiField("unit_price")
+	private String unitPrice;
 
 	public String getBrandCode() {
 		return this.brandCode;
@@ -51,6 +98,20 @@ public class RecycleProductInfo extends AlipayObject {
 		this.categoryCode = categoryCode;
 	}
 
+	public List<String> getEntityImageUrlList() {
+		return this.entityImageUrlList;
+	}
+	public void setEntityImageUrlList(List<String> entityImageUrlList) {
+		this.entityImageUrlList = entityImageUrlList;
+	}
+
+	public List<String> getInvoiceImageUrlList() {
+		return this.invoiceImageUrlList;
+	}
+	public void setInvoiceImageUrlList(List<String> invoiceImageUrlList) {
+		this.invoiceImageUrlList = invoiceImageUrlList;
+	}
+
 	public String getProductCode() {
 		return this.productCode;
 	}
@@ -63,6 +124,41 @@ public class RecycleProductInfo extends AlipayObject {
 	}
 	public void setProductName(String productName) {
 		this.productName = productName;
+	}
+
+	public String getQuantity() {
+		return this.quantity;
+	}
+	public void setQuantity(String quantity) {
+		this.quantity = quantity;
+	}
+
+	public String getQuantityMax() {
+		return this.quantityMax;
+	}
+	public void setQuantityMax(String quantityMax) {
+		this.quantityMax = quantityMax;
+	}
+
+	public String getQuantityMin() {
+		return this.quantityMin;
+	}
+	public void setQuantityMin(String quantityMin) {
+		this.quantityMin = quantityMin;
+	}
+
+	public String getUnit() {
+		return this.unit;
+	}
+	public void setUnit(String unit) {
+		this.unit = unit;
+	}
+
+	public String getUnitPrice() {
+		return this.unitPrice;
+	}
+	public void setUnitPrice(String unitPrice) {
+		this.unitPrice = unitPrice;
 	}
 
 }

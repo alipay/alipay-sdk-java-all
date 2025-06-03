@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 刷脸用户信息开通申请
  *
  * @author auto create
- * @since 1.0, 2022-11-17 15:26:13
+ * @since 1.0, 2025-05-29 15:57:45
  */
 public class AlipayCommerceEducateSceneUserSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2864231665182758739L;
+	private static final long serialVersionUID = 5532146894331756156L;
 
 	/**
 	 * 开通人绑定的支付宝openId

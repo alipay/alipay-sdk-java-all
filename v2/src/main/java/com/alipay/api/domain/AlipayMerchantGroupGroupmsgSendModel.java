@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发送商家群内群发消息
  *
  * @author auto create
- * @since 1.0, 2025-04-28 13:13:18
+ * @since 1.0, 2025-05-30 14:58:15
  */
 public class AlipayMerchantGroupGroupmsgSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8717771895722536896L;
+	private static final long serialVersionUID = 1146814435928734284L;
 
 	/**
 	 * 是否需要@所有人，不传默认false(不需要@所有人)
@@ -47,6 +47,13 @@ public class AlipayMerchantGroupGroupmsgSendModel extends AlipayObject {
 	 */
 	@ApiField("msg_data")
 	private GroupMessageVO msgData;
+
+	/**
+	 * 群发复合消息内容模型
+	 */
+	@ApiListField("msg_data_list")
+	@ApiField("group_message_v_o")
+	private List<GroupMessageVO> msgDataList;
 
 	/**
 	 * 该参数用于修改时传入创建得到的msgId字段，创建时无需传入，且只有定时发送消息在发送之前可以进行修改，立即发送不支持修改
@@ -105,6 +112,13 @@ public class AlipayMerchantGroupGroupmsgSendModel extends AlipayObject {
 	}
 	public void setMsgData(GroupMessageVO msgData) {
 		this.msgData = msgData;
+	}
+
+	public List<GroupMessageVO> getMsgDataList() {
+		return this.msgDataList;
+	}
+	public void setMsgDataList(List<GroupMessageVO> msgDataList) {
+		this.msgDataList = msgDataList;
 	}
 
 	public String getMsgId() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询账户信息列表
  *
  * @author auto create
- * @since 1.0, 2022-11-28 11:33:50
+ * @since 1.0, 2025-06-03 15:19:34
  */
 public class AlipayFinancialnetAccountlistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2376386762796159112L;
+	private static final long serialVersionUID = 2246664478898583177L;
 
 	/**
 	 * 蚂蚁统一会员ID

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家群群内消息发送记录模型
  *
  * @author auto create
- * @since 1.0, 2025-03-31 11:26:52
+ * @since 1.0, 2025-05-30 14:58:35
  */
 public class GroupMsgRecordVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2195747891439826334L;
+	private static final long serialVersionUID = 6746722244668219773L;
 
 	/**
 	 * 业务自己定义的业务id
@@ -49,10 +49,16 @@ public class GroupMsgRecordVO extends AlipayObject {
 	private String msgId;
 
 	/**
-	 * 群消息类型枚举，小程序消息:"APP"，图片消息:"IMAGE"，链接消息:"LINK"，纯文本消息:"TEXT"，优惠券消息:"COUPON"。
+	 * 群消息类型枚举，小程序消息:"APP"，图片消息:"IMAGE"，链接消息:"LINK"，纯文本消息:"TEXT"，优惠券消息:"COUPON"，商品消息:GOODS。当发送消息类型为复合消息（send_batch为true时），返回结果为几种消息类型的组合，示例:["APP", "COUPON", "IMAGE"]
 	 */
 	@ApiField("msg_type")
 	private String msgType;
+
+	/**
+	 * 描述发送的是单条消息还是复合消息
+	 */
+	@ApiField("send_batch")
+	private Boolean sendBatch;
 
 	/**
 	 * 发送状态，
@@ -131,6 +137,13 @@ public class GroupMsgRecordVO extends AlipayObject {
 	}
 	public void setMsgType(String msgType) {
 		this.msgType = msgType;
+	}
+
+	public Boolean getSendBatch() {
+		return this.sendBatch;
+	}
+	public void setSendBatch(Boolean sendBatch) {
+		this.sendBatch = sendBatch;
 	}
 
 	public Long getSendStatus() {

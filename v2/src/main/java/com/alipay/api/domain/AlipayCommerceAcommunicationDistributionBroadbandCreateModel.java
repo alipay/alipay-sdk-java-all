@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 运营商宽带创建订单
  *
  * @author auto create
- * @since 1.0, 2024-11-08 11:42:19
+ * @since 1.0, 2025-05-29 14:16:15
  */
 public class AlipayCommerceAcommunicationDistributionBroadbandCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6469589144332515412L;
+	private static final long serialVersionUID = 8646437572735492468L;
 
 	/**
 	 * 地址详情

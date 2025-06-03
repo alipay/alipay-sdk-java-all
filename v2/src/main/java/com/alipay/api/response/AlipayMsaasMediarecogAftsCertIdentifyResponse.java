@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMsaasMediarecogAftsCertIdentifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5244464867251128798L;
+	private static final long serialVersionUID = 7281649941587884517L;
 
 	/** 
 	 * 浮点数，属于该证件类型的概率

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 求签业务上下文详情，在外部调用方调用支付回执动作的同时，将支付业务属性的内容也传输过来，端侧能够快速响应呈现，完成闭环
  *
  * @author auto create
- * @since 1.0, 2025-02-19 10:25:12
+ * @since 1.0, 2025-06-03 11:44:53
  */
 public class DivinationBizContextDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6219951941234362564L;
+	private static final long serialVersionUID = 2888897895275112325L;
 
 	/**
 	 * 签文类别

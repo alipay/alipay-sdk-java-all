@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商家群消息模型
  *
  * @author auto create
- * @since 1.0, 2024-09-30 17:58:10
+ * @since 1.0, 2025-05-30 14:58:13
  */
 public class GroupMessageVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6455831662112521765L;
+	private static final long serialVersionUID = 8599846988886469149L;
 
 	/**
 	 * 优惠券消息内容模型，当消息类型(msg_type)选 "COUPON" 的时候，这个内容必须得填充
 	 */
 	@ApiField("coupon_msg_content")
 	private CouponMsgVO couponMsgContent;
+
+	/**
+	 * 商品消息内容模型，当消息类型(msg_type)选 "GOODS" 的时候，这个内容必须得填充
+	 */
+	@ApiField("goods_msg_content")
+	private GoodsMsgVO goodsMsgContent;
 
 	/**
 	 * 图片消息内容模型，当消息类型(msg_type)选 "IMAGE" 的时候，这个内容必须得填充
@@ -32,7 +38,7 @@ public class GroupMessageVO extends AlipayObject {
 	private LinkMsgVO linkMsgContent;
 
 	/**
-	 * 群消息类型枚举，小程序消息:"APP"，图片消息:"IMAGE"，链接消息:"LINK"，纯文本消息:"TEXT"，优惠券消息:"COUPON"
+	 * 群消息类型枚举，小程序消息:"APP"，图片消息:"IMAGE"，链接消息:"LINK"，纯文本消息:"TEXT"，优惠券消息:"COUPON"，商品消息:"GOODS"
 	 */
 	@ApiField("msg_type")
 	private String msgType;
@@ -54,6 +60,13 @@ public class GroupMessageVO extends AlipayObject {
 	}
 	public void setCouponMsgContent(CouponMsgVO couponMsgContent) {
 		this.couponMsgContent = couponMsgContent;
+	}
+
+	public GoodsMsgVO getGoodsMsgContent() {
+		return this.goodsMsgContent;
+	}
+	public void setGoodsMsgContent(GoodsMsgVO goodsMsgContent) {
+		this.goodsMsgContent = goodsMsgContent;
 	}
 
 	public ImageMsgVO getImageMsgContent() {

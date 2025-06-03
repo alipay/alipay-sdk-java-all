@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 反馈保存
  *
  * @author auto create
- * @since 1.0, 2025-03-31 14:04:03
+ * @since 1.0, 2025-05-29 10:02:00
  */
 public class AlipayCommerceMedicalLargermodelFeedbackSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3118217134317177399L;
+	private static final long serialVersionUID = 5875319951761357623L;
 
 	/**
 	 * 卡片信息
@@ -73,6 +73,7 @@ public class AlipayCommerceMedicalLargermodelFeedbackSendModel extends AlipayObj
 ● 多模态反馈（报告解读、药盒识别）：multimodal
 ● 云陪诊：cloudAccompaniedAiagnosis
 ● 深度思考+多模态反馈：deepThinkingAndMultimodal
+云陪诊住院反馈：ypzHospitalized
 	 */
 	@ApiField("feedback_class")
 	private String feedbackClass;

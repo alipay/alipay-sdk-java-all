@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsQuoteDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3345317137415797833L;
+	private static final long serialVersionUID = 1792112793513553858L;
 
 	/**
 	 * 折扣率

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMsaasMediarecogMmtcaftscvPicvideoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7267217329484375476L;
+	private static final long serialVersionUID = 6461579737478137425L;
 
 	/** 
 	 * 货柜每层视频展示信息

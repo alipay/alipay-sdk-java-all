@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 位置信息
  *
  * @author auto create
- * @since 1.0, 2023-07-25 17:45:53
+ * @since 1.0, 2025-05-29 15:11:25
  */
 public class Location extends AlipayObject {
 
-	private static final long serialVersionUID = 3762553912738273397L;
+	private static final long serialVersionUID = 6591119545857359559L;
 
 	/**
 	 * 朝向角度
@@ -24,6 +27,13 @@ public class Location extends AlipayObject {
 	 */
 	@ApiField("lat")
 	private String lat;
+
+	/**
+	 * 位置扩展信息列表
+	 */
+	@ApiListField("location_ext_infos")
+	@ApiField("transport_ext_info")
+	private List<TransportExtInfo> locationExtInfos;
 
 	/**
 	 * 经度
@@ -55,6 +65,13 @@ public class Location extends AlipayObject {
 	}
 	public void setLat(String lat) {
 		this.lat = lat;
+	}
+
+	public List<TransportExtInfo> getLocationExtInfos() {
+		return this.locationExtInfos;
+	}
+	public void setLocationExtInfos(List<TransportExtInfo> locationExtInfos) {
+		this.locationExtInfos = locationExtInfos;
 	}
 
 	public String getLon() {

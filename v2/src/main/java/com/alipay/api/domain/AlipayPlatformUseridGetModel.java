@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 根据OpenId获取UserId
  *
  * @author auto create
- * @since 1.0, 2016-02-19 20:04:41
+ * @since 1.0, 2025-05-28 13:35:43
  */
 public class AlipayPlatformUseridGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4525427843838898923L;
+	private static final long serialVersionUID = 8482971498895229765L;
 
 	/**
 	 * openId的列表

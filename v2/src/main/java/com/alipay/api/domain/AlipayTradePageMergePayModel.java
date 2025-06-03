@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayTradePageMergePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4532268783127331611L;
+	private static final long serialVersionUID = 1428376678119383895L;
 
 	/**
 	 * 外部指定买家

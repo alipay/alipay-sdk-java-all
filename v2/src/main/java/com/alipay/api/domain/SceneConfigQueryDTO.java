@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 一脸通行配置查询结果
  *
  * @author auto create
- * @since 1.0, 2022-01-13 16:40:10
+ * @since 1.0, 2025-05-29 16:18:51
  */
 public class SceneConfigQueryDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6143142823316236781L;
+	private static final long serialVersionUID = 1292742354335839953L;
 
 	/**
 	 * 经营范围

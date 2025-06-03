@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.ai.device.pay.callback response.
  * 
  * @author auto create
- * @since 1.0, 2025-02-19 10:27:23
+ * @since 1.0, 2025-06-03 11:47:25
  */
 public class AnttechAiDevicePayCallbackResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1777828151915311493L;
+	private static final long serialVersionUID = 4133778482458377647L;
 
 	/** 
 	 * 业务回执，调用方需要 说明： 如果在提交创建任务的请求参数中传入了biz_receiet，则此处返回对应的biz_receiet

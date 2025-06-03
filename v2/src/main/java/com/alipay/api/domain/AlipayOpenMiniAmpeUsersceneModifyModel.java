@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改用户关联的场景列表
  *
  * @author auto create
- * @since 1.0, 2021-09-22 16:49:45
+ * @since 1.0, 2025-05-29 10:27:03
  */
 public class AlipayOpenMiniAmpeUsersceneModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2558833436284275819L;
+	private static final long serialVersionUID = 3443958623111817926L;
 
 	/**
 	 * 设备标识

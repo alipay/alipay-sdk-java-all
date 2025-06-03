@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询校园支付状态
  *
  * @author auto create
- * @since 1.0, 2024-11-15 14:39:54
+ * @since 1.0, 2025-05-29 16:02:17
  */
 public class AlipayCommerceEducateMultideductQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2757682917858247535L;
+	private static final long serialVersionUID = 6712323671457955498L;
 
 	/**
 	 * 业务码

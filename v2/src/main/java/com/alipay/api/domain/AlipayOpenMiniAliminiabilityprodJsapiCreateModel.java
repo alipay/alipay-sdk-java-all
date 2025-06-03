@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 交换中心JSAPI创建
  *
  * @author auto create
- * @since 1.0, 2019-12-26 18:17:15
+ * @since 1.0, 2025-05-29 10:44:21
  */
 public class AlipayOpenMiniAliminiabilityprodJsapiCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4354385429947428315L;
+	private static final long serialVersionUID = 4586815552185384528L;
 
 	/**
 	 * api基本参数

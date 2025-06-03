@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸库用户扩展信息修改失败的用户信息模型
  *
  * @author auto create
- * @since 1.0, 2022-01-10 16:29:18
+ * @since 1.0, 2025-05-29 16:18:55
  */
 public class FailFaceUserInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5719612687171975348L;
+	private static final long serialVersionUID = 8546693873648642777L;
 
 	/**
 	 * 错误码。

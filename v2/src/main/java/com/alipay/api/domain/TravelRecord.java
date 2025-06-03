@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TravelRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 2519618748976825463L;
+	private static final long serialVersionUID = 5592931342237878429L;
 
 	/**
 	 * 当天公交乘车记录是否存在

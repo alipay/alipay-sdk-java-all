@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZFTWithholdingInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7517547987266383221L;
+	private static final long serialVersionUID = 7694426722735592753L;
 
 	/**
 	 * 代扣签约场景码

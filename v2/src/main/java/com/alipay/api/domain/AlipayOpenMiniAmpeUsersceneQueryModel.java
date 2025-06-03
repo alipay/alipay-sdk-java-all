@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户关联的场景列表
  *
  * @author auto create
- * @since 1.0, 2021-09-22 17:41:09
+ * @since 1.0, 2025-05-29 10:24:57
  */
 public class AlipayOpenMiniAmpeUsersceneQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7475963678941598425L;
+	private static final long serialVersionUID = 4444993593634675962L;
 
 	/**
 	 * 设备标识

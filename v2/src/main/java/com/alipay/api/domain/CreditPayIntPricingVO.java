@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CreditPayIntPricingVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7877356827985686281L;
+	private static final long serialVersionUID = 7392447631541516843L;
 
 	/**
 	 * 实际日利率，百分比形式

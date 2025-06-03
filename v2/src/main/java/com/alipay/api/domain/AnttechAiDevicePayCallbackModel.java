@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * AICO数字人设备支付回执接口
  *
  * @author auto create
- * @since 1.0, 2025-02-19 10:25:12
+ * @since 1.0, 2025-06-03 11:44:53
  */
 public class AnttechAiDevicePayCallbackModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3851697545722962753L;
+	private static final long serialVersionUID = 2625122631834916539L;
 
 	/**
 	 * 求签业务上下文数据，与当前支付记录一一对应的业务属性

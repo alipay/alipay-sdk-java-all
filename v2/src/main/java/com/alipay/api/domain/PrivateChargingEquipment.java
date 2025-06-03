@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 充电私桩信息
  *
  * @author auto create
- * @since 1.0, 2024-12-04 16:06:58
+ * @since 1.0, 2025-06-03 10:35:43
  */
 public class PrivateChargingEquipment extends AlipayObject {
 
-	private static final long serialVersionUID = 8722782533253499365L;
+	private static final long serialVersionUID = 7461251597265914352L;
 
 	/**
 	 * 充电桩二维码值
@@ -94,6 +94,12 @@ public class PrivateChargingEquipment extends AlipayObject {
 	 */
 	@ApiField("rated_voltage")
 	private String ratedVoltage;
+
+	/**
+	 * 设备有二级品牌商，需要传二级品牌编号
+	 */
+	@ApiField("s_brand_code")
+	private String sBrandCode;
 
 	public String getBindQrcode() {
 		return this.bindQrcode;
@@ -184,6 +190,13 @@ public class PrivateChargingEquipment extends AlipayObject {
 	}
 	public void setRatedVoltage(String ratedVoltage) {
 		this.ratedVoltage = ratedVoltage;
+	}
+
+	public String getsBrandCode() {
+		return this.sBrandCode;
+	}
+	public void setsBrandCode(String sBrandCode) {
+		this.sBrandCode = sBrandCode;
 	}
 
 }

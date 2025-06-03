@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸开通支付申请
  *
  * @author auto create
- * @since 1.0, 2024-11-15 13:08:58
+ * @since 1.0, 2025-05-29 15:43:57
  */
 public class AlipayCommerceEducateFacepayApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8259174136318849687L;
+	private static final long serialVersionUID = 5766483881847219177L;
 
 	/**
 	 * 扩展信息，json格式。 例如：

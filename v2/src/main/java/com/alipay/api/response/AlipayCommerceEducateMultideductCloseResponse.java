@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.multideduct.close response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-18 16:17:05
+ * @since 1.0, 2025-05-29 15:54:26
  */
 public class AlipayCommerceEducateMultideductCloseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5445967138718139534L;
+	private static final long serialVersionUID = 3569852567916897875L;
 
 	
 

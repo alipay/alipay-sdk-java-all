@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 关闭校园支付
  *
  * @author auto create
- * @since 1.0, 2024-06-18 16:13:54
+ * @since 1.0, 2025-05-29 15:54:26
  */
 public class AlipayCommerceEducateMultideductCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4438655821524191373L;
+	private static final long serialVersionUID = 5558377847788869628L;
 
 	/**
 	 * 业务码

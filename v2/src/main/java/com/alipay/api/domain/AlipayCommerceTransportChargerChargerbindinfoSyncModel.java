@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 充电运营商同步用户绑定充电桩信息接口
  *
  * @author auto create
- * @since 1.0, 2023-12-12 10:26:30
+ * @since 1.0, 2025-06-03 13:59:16
  */
 public class AlipayCommerceTransportChargerChargerbindinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8717588118137697423L;
+	private static final long serialVersionUID = 6259778868776437663L;
 
 	/**
 	 * 绑定充电桩二维码值，用户扫码绑桩扫描的二维码
@@ -119,6 +119,12 @@ public class AlipayCommerceTransportChargerChargerbindinfoSyncModel extends Alip
 	 */
 	@ApiField("rated_voltage")
 	private String ratedVoltage;
+
+	/**
+	 * 设备有二级品牌商，需要传二级品牌编号
+	 */
+	@ApiField("s_brand_code")
+	private String sBrandCode;
 
 	/**
 	 * 解绑时间，解绑必传
@@ -236,6 +242,13 @@ public class AlipayCommerceTransportChargerChargerbindinfoSyncModel extends Alip
 	}
 	public void setRatedVoltage(String ratedVoltage) {
 		this.ratedVoltage = ratedVoltage;
+	}
+
+	public String getsBrandCode() {
+		return this.sBrandCode;
+	}
+	public void setsBrandCode(String sBrandCode) {
+		this.sBrandCode = sBrandCode;
 	}
 
 	public Date getUnbindTime() {

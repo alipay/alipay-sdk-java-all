@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交换中心JSAPI查询
  *
  * @author auto create
- * @since 1.0, 2019-12-26 18:14:30
+ * @since 1.0, 2025-05-29 10:46:17
  */
 public class AlipayOpenMiniAliminiabilityprodJsapiQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5427396625397185988L;
+	private static final long serialVersionUID = 3814864312139433614L;
 
 	/**
 	 * 来源端,高德:com.amap.app,IOT:com.alipay.iot.xpaas,微博:com.weibo.app,优酷:com.youku.app,网商银行:com.mybank.phone,菜鸟:com.cainiao.app,天猫精灵:com.alibaba.ailabs.genie.webapps,UC:com.uc.app,支付宝:com.alipay.alipaywallet,口碑:com.koubei.mobile.KoubeiClient,财富:com.alipay.antfortune,学习强国:com.xuexi.app,支付宝香港:com.alipay.wallethk

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建售后
  *
  * @author auto create
- * @since 1.0, 2025-05-26 16:45:43
+ * @since 1.0, 2025-05-29 10:14:26
  */
 public class AlipayOpenMiniOrderAftersaleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6625733964872927645L;
+	private static final long serialVersionUID = 4193519692218898916L;
 
 	/**
 	 * 售后原因code

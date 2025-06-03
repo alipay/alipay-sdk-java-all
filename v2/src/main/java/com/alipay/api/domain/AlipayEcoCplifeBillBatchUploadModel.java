@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEcoCplifeBillBatchUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4581922727498186948L;
+	private static final long serialVersionUID = 1236655249493327358L;
 
 	/**
 	 * 每次上传物业费账单，都需要提供一个批次号。对于每一个合作伙伴，传递的每一个批次号都必须保证唯一性，同时对于批次号内的账单明细数据必须保证唯一性；

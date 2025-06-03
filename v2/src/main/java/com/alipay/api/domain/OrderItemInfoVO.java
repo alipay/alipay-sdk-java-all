@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品信息
  *
  * @author auto create
- * @since 1.0, 2025-04-18 19:17:58
+ * @since 1.0, 2025-06-03 13:32:52
  */
 public class OrderItemInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1867746349697536797L;
+	private static final long serialVersionUID = 4435584798538573835L;
+
+	/**
+	 * 商品69码
+	 */
+	@ApiField("bar_code")
+	private String barCode;
 
 	/**
 	 * 商品类目ID
@@ -112,6 +118,13 @@ public class OrderItemInfoVO extends AlipayObject {
 	 */
 	@ApiField("sku_id")
 	private String skuId;
+
+	public String getBarCode() {
+		return this.barCode;
+	}
+	public void setBarCode(String barCode) {
+		this.barCode = barCode;
+	}
 
 	public String getCategoryId() {
 		return this.categoryId;

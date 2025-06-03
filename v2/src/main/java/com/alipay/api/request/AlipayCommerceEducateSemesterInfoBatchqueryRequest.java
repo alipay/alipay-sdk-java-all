@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.semester.info.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2025-05-27 18:49:00
+ * @since 1.0, 2025-05-28 18:00:11
  */
 public class AlipayCommerceEducateSemesterInfoBatchqueryRequest implements AlipayRequest<AlipayCommerceEducateSemesterInfoBatchqueryResponse> {
 

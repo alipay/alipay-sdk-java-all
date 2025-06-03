@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 状态变更模型
  *
  * @author auto create
- * @since 1.0, 2024-06-18 16:13:51
+ * @since 1.0, 2025-05-29 16:18:38
  */
 public class ChangeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5811667634764948839L;
+	private static final long serialVersionUID = 7771228566891488933L;
 
 	/**
 	 * 支付宝协议支付的协议号。SCHOOL_DEDUCT_OPEN时返回

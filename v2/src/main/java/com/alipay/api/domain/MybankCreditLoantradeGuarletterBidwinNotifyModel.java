@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankCreditLoantradeGuarletterBidwinNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4815466687991816821L;
+	private static final long serialVersionUID = 3529971115361154444L;
 
 	/**
 	 * 标的明细

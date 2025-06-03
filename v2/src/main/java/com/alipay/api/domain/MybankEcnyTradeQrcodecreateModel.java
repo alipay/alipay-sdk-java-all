@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankEcnyTradeQrcodecreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2533992867398949544L;
+	private static final long serialVersionUID = 3116835532651694988L;
 
 	/**
 	 * 未设置为不带金额的收款码，设置为带金额的收款码
