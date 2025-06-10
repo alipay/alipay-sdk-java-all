@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.acommunication.distribution.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-13 16:17:19
+ * @since 1.0, 2025-06-09 10:51:34
  */
 public class AlipayCommerceAcommunicationDistributionOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7741435725772252827L;
+	private static final long serialVersionUID = 6892233596563754327L;
 
 	/** 
 	 * 支付宝订单号

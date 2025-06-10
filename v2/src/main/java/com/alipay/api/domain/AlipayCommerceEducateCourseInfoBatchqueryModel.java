@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 分页查询课程列表
  *
  * @author auto create
- * @since 1.0, 2025-05-27 18:49:03
+ * @since 1.0, 2025-06-09 09:58:54
  */
 public class AlipayCommerceEducateCourseInfoBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1535241398221462447L;
+	private static final long serialVersionUID = 7749372965311995613L;
 
 	/**
 	 * 课程ID

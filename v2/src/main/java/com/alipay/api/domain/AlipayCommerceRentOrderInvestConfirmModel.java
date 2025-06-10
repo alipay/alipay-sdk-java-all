@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资方确认租赁订单关系
  *
  * @author auto create
- * @since 1.0, 2025-05-22 10:12:24
+ * @since 1.0, 2025-06-05 13:08:31
  */
 public class AlipayCommerceRentOrderInvestConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5198576537713759748L;
+	private static final long serialVersionUID = 8637657977179791873L;
 
 	/**
 	 * 2088开头的16位纯数字，小程序场景下获取用户ID请参考：用户授权; 其它场景下获取用户ID请参考：网页授权获取用户信息; 其中buyer_id与buyer_open_id不能同时为空
@@ -55,6 +55,12 @@ public class AlipayCommerceRentOrderInvestConfirmModel extends AlipayObject {
 	 */
 	@ApiField("confirm_type")
 	private String confirmType;
+
+	/**
+	 * 放款总金额,单位：元
+	 */
+	@ApiField("loan_amount")
+	private String loanAmount;
 
 	/**
 	 * 交易组件的业务订单Id
@@ -145,6 +151,13 @@ public class AlipayCommerceRentOrderInvestConfirmModel extends AlipayObject {
 	}
 	public void setConfirmType(String confirmType) {
 		this.confirmType = confirmType;
+	}
+
+	public String getLoanAmount() {
+		return this.loanAmount;
+	}
+	public void setLoanAmount(String loanAmount) {
+		this.loanAmount = loanAmount;
 	}
 
 	public String getOrderId() {

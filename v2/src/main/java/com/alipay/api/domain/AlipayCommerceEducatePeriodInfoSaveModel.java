@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 保存课时
  *
  * @author auto create
- * @since 1.0, 2025-05-27 18:48:56
+ * @since 1.0, 2025-06-09 09:57:53
  */
 public class AlipayCommerceEducatePeriodInfoSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1482373453771674873L;
+	private static final long serialVersionUID = 1218497951694853224L;
 
 	/**
 	 * 机构内标

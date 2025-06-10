@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.institution.modify response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-24 20:12:24
+ * @since 1.0, 2025-06-04 18:08:06
  */
 public class AlipayEbppInvoiceInstitutionModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3737343211898755452L;
+	private static final long serialVersionUID = 8637713966124289422L;
 
 	/** 
 	 * 新增发放规则时返回外部幂等id和发放规则id的映射关系

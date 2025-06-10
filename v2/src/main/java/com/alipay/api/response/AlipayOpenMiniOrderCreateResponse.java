@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenMiniOrderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6478879447619665254L;
+	private static final long serialVersionUID = 5894154313926588776L;
 
 	/** 
 	 * 芝麻信用创单相关参数

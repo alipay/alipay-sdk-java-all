@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CallUserInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3484787277444284855L;
+	private static final long serialVersionUID = 7272656598698357797L;
 
 	/**
 	 * 触达类型为AI_CALL时，逾期金额为必填项

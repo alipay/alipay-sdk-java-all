@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySocialQuestionnareFatigueSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4332939814434697894L;
+	private static final long serialVersionUID = 6669664412126718826L;
 
 	/**
 	 * 异步问卷投递时间

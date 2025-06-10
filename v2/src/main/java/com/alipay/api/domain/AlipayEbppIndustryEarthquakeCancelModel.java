@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 地震预警撤销接口
  *
  * @author auto create
- * @since 1.0, 2025-04-22 00:52:27
+ * @since 1.0, 2025-06-04 17:41:32
  */
 public class AlipayEbppIndustryEarthquakeCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2492172755599226215L;
+	private static final long serialVersionUID = 5581463995989137826L;
 
 	/**
 	 * null

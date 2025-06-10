@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 碰一下线圈查询碰一下页面跳转链接
  *
  * @author auto create
- * @since 1.0, 2025-05-06 10:45:07
+ * @since 1.0, 2025-06-03 16:34:25
  */
 public class AlipayOpenSpNordertagQrcodeurlQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5175118434714788888L;
+	private static final long serialVersionUID = 6424155216979926616L;
 
 	/**
 	 * 线圈编号

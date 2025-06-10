@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.asset.publish.consult response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-29 14:37:26
+ * @since 1.0, 2025-06-04 09:22:25
  */
 public class AlipayMarketingAssetPublishConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8568873814866795139L;
+	private static final long serialVersionUID = 6389147677526297356L;
 
 	/** 
 	 * 发放咨询结果，包括权益id、实体id、是否通过等信息

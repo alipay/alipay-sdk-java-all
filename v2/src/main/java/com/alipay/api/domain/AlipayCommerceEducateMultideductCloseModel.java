@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceEducateMultideductCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5558377847788869628L;
+	private static final long serialVersionUID = 7256685363126113476L;
 
 	/**
 	 * 业务码

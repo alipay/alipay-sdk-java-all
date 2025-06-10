@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PlantPlace extends AlipayObject {
 
-	private static final long serialVersionUID = 6456538746782248321L;
+	private static final long serialVersionUID = 2593836232952963795L;
 
 	/**
 	 * 林区面积，单位：亩

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.property.acard.task.apply request
  * 
  * @author auto create
- * @since 1.0, 2025-04-23 17:17:23
+ * @since 1.0, 2025-06-05 15:27:28
  */
 public class AlipayCommercePropertyAcardTaskApplyRequest implements AlipayRequest<AlipayCommercePropertyAcardTaskApplyResponse> {
 

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-03-27 21:47:18
+ * @since 1.0, 2025-06-05 15:27:29
  */
 public class DetectEvent extends AlipayObject {
 
-	private static final long serialVersionUID = 6291138325188297176L;
+	private static final long serialVersionUID = 5535937254248516738L;
 
 	/**
 	 * null

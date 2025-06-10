@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 健康管家云陪诊开放接口
  *
  * @author auto create
- * @since 1.0, 2025-02-28 11:24:07
+ * @since 1.0, 2025-06-06 10:48:47
  */
 public class AlipayCommerceMedicalYpzEventSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1137434493383945621L;
+	private static final long serialVersionUID = 7879651228222148536L;
 
 	/**
 	 * 服务端根据功能需要传过来
@@ -21,6 +21,7 @@ public class AlipayCommerceMedicalYpzEventSendModel extends AlipayObject {
 
 	/**
 	 * 业务类型：
+预约记录:YYJL
 挂号记录(预约+当日):GHJL
 门诊就诊记录:MZJZJL
 停诊通知:TZTZ

@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 课程签到规则
  *
  * @author auto create
- * @since 1.0, 2025-05-27 18:48:55
+ * @since 1.0, 2025-06-09 09:57:55
  */
 public class EduCourseCheckInRule extends AlipayObject {
 
-	private static final long serialVersionUID = 4133752334797557453L;
+	private static final long serialVersionUID = 4658571278923417973L;
 
 	/**
 	 * 自动刷新二维码
@@ -50,6 +53,12 @@ public class EduCourseCheckInRule extends AlipayObject {
 	private String courseRuleName;
 
 	/**
+	 * 每周天次，用1-7分别表示周一到周日
+	 */
+	@ApiField("day_of_week")
+	private Long dayOfWeek;
+
+	/**
 	 * 签到规则信息
 	 */
 	@ApiField("edu_check_in_rule")
@@ -74,6 +83,13 @@ public class EduCourseCheckInRule extends AlipayObject {
 	private Boolean manualClose;
 
 	/**
+	 * 课时节次，即每天第几节课，与课时配置保持一致
+	 */
+	@ApiListField("period_no_list")
+	@ApiField("number")
+	private List<Long> periodNoList;
+
+	/**
 	 * 刷新二维码频率（单位：秒）
 	 */
 	@ApiField("refresh_qr_code_frequency")
@@ -96,6 +112,13 @@ public class EduCourseCheckInRule extends AlipayObject {
 	 */
 	@ApiField("semester_name")
 	private String semesterName;
+
+	/**
+	 * 学期周次列表，即课程在本学期的哪些周上课
+	 */
+	@ApiListField("week_list")
+	@ApiField("number")
+	private List<Long> weekList;
 
 	public Boolean getAutomaticRefresh() {
 		return this.automaticRefresh;
@@ -139,6 +162,13 @@ public class EduCourseCheckInRule extends AlipayObject {
 		this.courseRuleName = courseRuleName;
 	}
 
+	public Long getDayOfWeek() {
+		return this.dayOfWeek;
+	}
+	public void setDayOfWeek(Long dayOfWeek) {
+		this.dayOfWeek = dayOfWeek;
+	}
+
 	public EduCheckInRuleConfig getEduCheckInRule() {
 		return this.eduCheckInRule;
 	}
@@ -167,6 +197,13 @@ public class EduCourseCheckInRule extends AlipayObject {
 		this.manualClose = manualClose;
 	}
 
+	public List<Long> getPeriodNoList() {
+		return this.periodNoList;
+	}
+	public void setPeriodNoList(List<Long> periodNoList) {
+		this.periodNoList = periodNoList;
+	}
+
 	public Long getRefreshQrCodeFrequency() {
 		return this.refreshQrCodeFrequency;
 	}
@@ -193,6 +230,13 @@ public class EduCourseCheckInRule extends AlipayObject {
 	}
 	public void setSemesterName(String semesterName) {
 		this.semesterName = semesterName;
+	}
+
+	public List<Long> getWeekList() {
+		return this.weekList;
+	}
+	public void setWeekList(List<Long> weekList) {
+		this.weekList = weekList;
 	}
 
 }

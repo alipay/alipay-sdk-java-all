@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.property.acard.task.apply response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-23 17:17:23
+ * @since 1.0, 2025-06-05 15:27:28
  */
 public class AlipayCommercePropertyAcardTaskApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5567638344339846144L;
+	private static final long serialVersionUID = 1131229591883434956L;
 
 	/** 
 	 * 制卡请求受理后的制卡任务唯一ID，与outBizId一一对应

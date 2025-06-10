@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudCloudpromoAichatStreammsgCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7792773883648847768L;
+	private static final long serialVersionUID = 6543983756795391328L;
 
 	/** 
 	 * 答案内容

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.earthquake.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-22 00:52:27
+ * @since 1.0, 2025-06-04 17:41:32
  */
 public class AlipayEbppIndustryEarthquakeCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1621433126726592121L;
+	private static final long serialVersionUID = 1182662226271488483L;
 
 	
 

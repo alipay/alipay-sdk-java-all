@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 运营商行业信用购预咨询
  *
  * @author auto create
- * @since 1.0, 2025-04-18 16:08:04
+ * @since 1.0, 2025-06-10 13:54:37
  */
 public class AlipayCommerceAcommunicationCreditphoneOrderPreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1513362395446681496L;
+	private static final long serialVersionUID = 4164115417675575527L;
 
 	/**
 	 * 支付宝用户id
@@ -26,10 +26,22 @@ public class AlipayCommerceAcommunicationCreditphoneOrderPreconsultModel extends
 	private String alipayUserId;
 
 	/**
+	 * 套餐金额
+	 */
+	@ApiField("busi_level")
+	private String busiLevel;
+
+	/**
 	 * 用户身份证号
 	 */
 	@ApiField("cert_no")
 	private String certNo;
+
+	/**
+	 * 是否需要身份证一致性校验，默认是false
+	 */
+	@ApiField("check_cert_no")
+	private Boolean checkCertNo;
 
 	/**
 	 * 冻结金额，单位元
@@ -38,10 +50,22 @@ public class AlipayCommerceAcommunicationCreditphoneOrderPreconsultModel extends
 	private String freezeAmount;
 
 	/**
+	 * 分期期数
+	 */
+	@ApiField("installment_numbers")
+	private Long installmentNumbers;
+
+	/**
 	 * 运营商简称，中国移动、中国电信、中国联通、中国广电
 	 */
 	@ApiField("isp_abbr_cn")
 	private String ispAbbrCn;
+
+	/**
+	 * 商品名称
+	 */
+	@ApiField("item_name")
+	private String itemName;
 
 	/**
 	 * 门店id
@@ -79,6 +103,12 @@ public class AlipayCommerceAcommunicationCreditphoneOrderPreconsultModel extends
 	@ApiField("spu_id")
 	private String spuId;
 
+	/**
+	 * 用户姓名
+	 */
+	@ApiField("user_name")
+	private String userName;
+
 	public String getAlipayOpenId() {
 		return this.alipayOpenId;
 	}
@@ -93,11 +123,25 @@ public class AlipayCommerceAcommunicationCreditphoneOrderPreconsultModel extends
 		this.alipayUserId = alipayUserId;
 	}
 
+	public String getBusiLevel() {
+		return this.busiLevel;
+	}
+	public void setBusiLevel(String busiLevel) {
+		this.busiLevel = busiLevel;
+	}
+
 	public String getCertNo() {
 		return this.certNo;
 	}
 	public void setCertNo(String certNo) {
 		this.certNo = certNo;
+	}
+
+	public Boolean getCheckCertNo() {
+		return this.checkCertNo;
+	}
+	public void setCheckCertNo(Boolean checkCertNo) {
+		this.checkCertNo = checkCertNo;
 	}
 
 	public String getFreezeAmount() {
@@ -107,11 +151,25 @@ public class AlipayCommerceAcommunicationCreditphoneOrderPreconsultModel extends
 		this.freezeAmount = freezeAmount;
 	}
 
+	public Long getInstallmentNumbers() {
+		return this.installmentNumbers;
+	}
+	public void setInstallmentNumbers(Long installmentNumbers) {
+		this.installmentNumbers = installmentNumbers;
+	}
+
 	public String getIspAbbrCn() {
 		return this.ispAbbrCn;
 	}
 	public void setIspAbbrCn(String ispAbbrCn) {
 		this.ispAbbrCn = ispAbbrCn;
+	}
+
+	public String getItemName() {
+		return this.itemName;
+	}
+	public void setItemName(String itemName) {
+		this.itemName = itemName;
 	}
 
 	public String getMerchantId() {
@@ -154,6 +212,13 @@ public class AlipayCommerceAcommunicationCreditphoneOrderPreconsultModel extends
 	}
 	public void setSpuId(String spuId) {
 		this.spuId = spuId;
+	}
+
+	public String getUserName() {
+		return this.userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 
 }

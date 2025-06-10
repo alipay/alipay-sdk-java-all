@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceCityfacilitatorIotbspFwjnfcSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1546896226228845511L;
+	private static final long serialVersionUID = 5799154386281413935L;
 
 	/**
 	 * 贴一贴后需要跳转的小程序appId

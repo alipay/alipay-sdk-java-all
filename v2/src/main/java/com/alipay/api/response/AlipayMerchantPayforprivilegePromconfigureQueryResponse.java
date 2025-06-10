@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMerchantPayforprivilegePromconfigureQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2446416875916281273L;
+	private static final long serialVersionUID = 3572933782525338286L;
 
 	/** 
 	 * 可核销的店铺id列表

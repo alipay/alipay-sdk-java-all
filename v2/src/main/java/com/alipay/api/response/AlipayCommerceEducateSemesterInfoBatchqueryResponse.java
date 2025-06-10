@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.semester.info.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-28 18:00:11
+ * @since 1.0, 2025-06-09 10:02:29
  */
 public class AlipayCommerceEducateSemesterInfoBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5761185488998214214L;
+	private static final long serialVersionUID = 7538536166643761397L;
 
 	/** 
 	 * 学期信息列表

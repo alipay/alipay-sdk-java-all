@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.earthquake.sync request
  * 
  * @author auto create
- * @since 1.0, 2025-04-22 00:52:27
+ * @since 1.0, 2025-06-04 17:41:12
  */
 public class AlipayEbppIndustryEarthquakeSyncRequest implements AlipayRequest<AlipayEbppIndustryEarthquakeSyncResponse> {
 

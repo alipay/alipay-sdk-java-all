@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 学期信息
  *
  * @author auto create
- * @since 1.0, 2025-05-27 18:48:59
+ * @since 1.0, 2025-06-09 09:59:07
  */
 public class EduSemesterInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3118486763715313986L;
+	private static final long serialVersionUID = 1464281275361135367L;
 
 	/**
 	 * 学期结束日期
@@ -26,6 +26,12 @@ public class EduSemesterInfo extends AlipayObject {
 	 */
 	@ApiField("inst_id")
 	private String instId;
+
+	/**
+	 * 学期最大周数
+	 */
+	@ApiField("max_week")
+	private Long maxWeek;
 
 	/**
 	 * 修改时间
@@ -81,6 +87,13 @@ public class EduSemesterInfo extends AlipayObject {
 	}
 	public void setInstId(String instId) {
 		this.instId = instId;
+	}
+
+	public Long getMaxWeek() {
+		return this.maxWeek;
+	}
+	public void setMaxWeek(Long maxWeek) {
+		this.maxWeek = maxWeek;
 	}
 
 	public Date getModifiedTime() {

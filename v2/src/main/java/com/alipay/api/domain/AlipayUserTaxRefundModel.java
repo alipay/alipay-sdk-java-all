@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 离境退税服务
  *
  * @author auto create
- * @since 1.0, 2025-06-01 09:46:09
+ * @since 1.0, 2025-06-03 16:10:56
  */
 public class AlipayUserTaxRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1297342392647132343L;
+	private static final long serialVersionUID = 5846792692487211231L;
 
 	/**
 	 * 资金记账本id
@@ -44,7 +44,7 @@ public class AlipayUserTaxRefundModel extends AlipayObject {
 	private String qrCode;
 
 	/**
-	 * 总金额，单位为元，精确到小数点后两位，取值范围[0.01,100000000]。
+	 * 总金额，单位为元，精确到小数点后两位，取值范围[0.1,100000000]。
 	 */
 	@ApiField("refund_amount")
 	private String refundAmount;

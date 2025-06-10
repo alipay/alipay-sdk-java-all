@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁森林奖励资格认证
  *
  * @author auto create
- * @since 1.0, 2025-05-19 15:45:05
+ * @since 1.0, 2025-06-09 20:32:45
  */
 public class AlipaySocialAntforestRewardCertifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8395966814191421681L;
+	private static final long serialVersionUID = 6262336528436899993L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识

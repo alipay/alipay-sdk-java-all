@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 电商申请报案
  *
  * @author auto create
- * @since 1.0, 2025-03-19 16:08:56
+ * @since 1.0, 2025-06-04 10:02:01
  */
 public class AlipayInsSceneEcommerceClaimApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8127899871524316911L;
+	private static final long serialVersionUID = 4415325421593775944L;
 
 	/**
 	 * 申请报案金额（单位：分）
@@ -52,6 +52,12 @@ public class AlipayInsSceneEcommerceClaimApplyModel extends AlipayObject {
 	 */
 	@ApiField("item")
 	private EcomItemDTO item;
+
+	/**
+	 * 蚂蚁保系统生成的责任编号
+	 */
+	@ApiField("liability_no")
+	private String liabilityNo;
 
 	/**
 	 * 订单
@@ -154,6 +160,13 @@ public class AlipayInsSceneEcommerceClaimApplyModel extends AlipayObject {
 	}
 	public void setItem(EcomItemDTO item) {
 		this.item = item;
+	}
+
+	public String getLiabilityNo() {
+		return this.liabilityNo;
+	}
+	public void setLiabilityNo(String liabilityNo) {
+		this.liabilityNo = liabilityNo;
 	}
 
 	public EcomOrderDTO getOrderDto() {

@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.crowd.consult response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-22 15:11:15
+ * @since 1.0, 2025-06-09 15:17:27
  */
 public class AlipayTradeCrowdConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3415782727555137711L;
+	private static final long serialVersionUID = 4875716937878879718L;
 
 	/** 
 	 * 淘宝的活动id列表

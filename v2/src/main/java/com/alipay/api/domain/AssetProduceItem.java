@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 物料生产指令对象, 包括物料生产的相关信息: 订单明细ID, 申请单号, 模板ID, 物料名称, 物料图片Url, 数量,  申请日期,收货人姓名,联系人电话,收货人地址等.
  *
  * @author auto create
- * @since 1.0, 2024-12-05 10:23:55
+ * @since 1.0, 2025-06-06 15:39:58
  */
 public class AssetProduceItem extends AlipayObject {
 
-	private static final long serialVersionUID = 7758398582128819721L;
+	private static final long serialVersionUID = 8486413748931876775L;
 
 	/**
 	 * 生产指令动作类别：套组则为ASSEMBLE，组装
@@ -270,6 +270,12 @@ public class AssetProduceItem extends AlipayObject {
 	 */
 	@ApiField("template_name")
 	private String templateName;
+
+	/**
+	 * 加急单标识，Y是加急单 N非加急单
+	 */
+	@ApiField("urgent_order_flag")
+	private String urgentOrderFlag;
 
 	/**
 	 * 动作
@@ -569,6 +575,13 @@ public class AssetProduceItem extends AlipayObject {
 	}
 	public void setTemplateName(String templateName) {
 		this.templateName = templateName;
+	}
+
+	public String getUrgentOrderFlag() {
+		return this.urgentOrderFlag;
+	}
+	public void setUrgentOrderFlag(String urgentOrderFlag) {
+		this.urgentOrderFlag = urgentOrderFlag;
 	}
 
 	public String getWorkProcess() {

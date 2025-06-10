@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 制卡任务申请接口
  *
  * @author auto create
- * @since 1.0, 2025-04-23 17:17:23
+ * @since 1.0, 2025-06-05 15:27:28
  */
 public class AlipayCommercePropertyAcardTaskApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7566989191471431217L;
+	private static final long serialVersionUID = 8127514493377538259L;
 
 	/**
 	 * 卡操作的类型 枚举值： ● NEW：制新卡 ● REPLACE：覆盖卡权限 ● MODIFY：修改卡权限 ● DELETE：删卡

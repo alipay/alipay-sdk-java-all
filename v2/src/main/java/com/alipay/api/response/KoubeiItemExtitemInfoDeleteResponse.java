@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiItemExtitemInfoDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7367698297538745969L;
+	private static final long serialVersionUID = 2653551995995465352L;
 
 	/** 
 	 * 删除成功，返回主键id

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class SubProtocolResult extends AlipayObject {
 
-	private static final long serialVersionUID = 8613551766746441397L;
+	private static final long serialVersionUID = 6682433683456728146L;
 
 	/**
 	 * 与蚂蚁业务方约定的类型，同时约定$orgCode值

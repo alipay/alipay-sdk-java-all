@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 删除位置
  *
  * @author auto create
- * @since 1.0, 2025-04-28 19:41:54
+ * @since 1.0, 2025-06-09 09:57:47
  */
 public class AlipayCommerceEducatePlaceInfoDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7121118464962568685L;
+	private static final long serialVersionUID = 2157333819197781575L;
 
 	/**
 	 * 机构内标

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分账计划明细模型
  *
  * @author auto create
- * @since 1.0, 2025-05-09 19:49:19
+ * @since 1.0, 2025-06-04 13:51:41
  */
 public class RoyaltyInfoRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 8218229681172148281L;
+	private static final long serialVersionUID = 5452827437299361164L;
 
 	/**
 	 * 买断分账金，人明币，单位：元
@@ -32,6 +32,12 @@ public class RoyaltyInfoRequest extends AlipayObject {
 	 */
 	@ApiField("repay_time")
 	private Date repayTime;
+
+	/**
+	 * 计息时间，到天维度即可，例如2025-05-12
+	 */
+	@ApiField("royalty_interest_date")
+	private String royaltyInterestDate;
 
 	/**
 	 * 分账利息，币种：人民币。
@@ -82,6 +88,13 @@ public class RoyaltyInfoRequest extends AlipayObject {
 	}
 	public void setRepayTime(Date repayTime) {
 		this.repayTime = repayTime;
+	}
+
+	public String getRoyaltyInterestDate() {
+		return this.royaltyInterestDate;
+	}
+	public void setRoyaltyInterestDate(String royaltyInterestDate) {
+		this.royaltyInterestDate = royaltyInterestDate;
 	}
 
 	public String getRoyaltyInterestPrice() {

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页查询售卖订单结果
  *
  * @author auto create
- * @since 1.0, 2025-04-28 22:36:57
+ * @since 1.0, 2025-06-09 14:24:22
  */
 public class CardOrderBatchQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 4637967632159759152L;
+	private static final long serialVersionUID = 6794844533598488466L;
 
 	/**
 	 * 卡关联的最新的售后单编号
@@ -38,6 +38,12 @@ public class CardOrderBatchQueryResponse extends AlipayObject {
 	 */
 	@ApiField("axf_card_bind_info")
 	private AxfCardBindInfo axfCardBindInfo;
+
+	/**
+	 * 订单备注信息
+	 */
+	@ApiField("axf_order_memo_info")
+	private AxfOrderMemoInfo axfOrderMemoInfo;
 
 	/**
 	 * 用于区分订购单的取消类型
@@ -258,6 +264,13 @@ public class CardOrderBatchQueryResponse extends AlipayObject {
 	}
 	public void setAxfCardBindInfo(AxfCardBindInfo axfCardBindInfo) {
 		this.axfCardBindInfo = axfCardBindInfo;
+	}
+
+	public AxfOrderMemoInfo getAxfOrderMemoInfo() {
+		return this.axfOrderMemoInfo;
+	}
+	public void setAxfOrderMemoInfo(AxfOrderMemoInfo axfOrderMemoInfo) {
+		this.axfOrderMemoInfo = axfOrderMemoInfo;
 	}
 
 	public String getCancelType() {

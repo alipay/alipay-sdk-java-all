@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量查询签到规则
  *
  * @author auto create
- * @since 1.0, 2025-04-29 14:17:58
+ * @since 1.0, 2025-06-09 09:59:22
  */
 public class AlipayCommerceEducateCheckinRuleBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5678998576772246725L;
+	private static final long serialVersionUID = 4234411278884383928L;
 
 	/**
 	 * 规则生效状态
@@ -42,6 +42,12 @@ public class AlipayCommerceEducateCheckinRuleBatchqueryModel extends AlipayObjec
 	 */
 	@ApiField("rule_name")
 	private String ruleName;
+
+	/**
+	 * 签到规则类型
+	 */
+	@ApiField("rule_type")
+	private String ruleType;
 
 	public Boolean getEnableStatus() {
 		return this.enableStatus;
@@ -76,6 +82,13 @@ public class AlipayCommerceEducateCheckinRuleBatchqueryModel extends AlipayObjec
 	}
 	public void setRuleName(String ruleName) {
 		this.ruleName = ruleName;
+	}
+
+	public String getRuleType() {
+		return this.ruleType;
+	}
+	public void setRuleType(String ruleType) {
+		this.ruleType = ruleType;
 	}
 
 }

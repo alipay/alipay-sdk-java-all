@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改签到规则
  *
  * @author auto create
- * @since 1.0, 2025-04-29 14:16:21
+ * @since 1.0, 2025-06-09 09:57:00
  */
 public class AlipayCommerceEducateCheckinRuleModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1692361554918911136L;
+	private static final long serialVersionUID = 1483469561683454769L;
 
 	/**
 	 * 规则生效状态
@@ -23,10 +23,22 @@ public class AlipayCommerceEducateCheckinRuleModifyModel extends AlipayObject {
 	private Boolean enableStatus;
 
 	/**
+	 * 结束时间，用于标识签到结束类型的时间，单位分钟
+	 */
+	@ApiField("end_minutes")
+	private Long endMinutes;
+
+	/**
 	 * 签到结束时间，格式：HH:mm:ss
 	 */
 	@ApiField("end_time")
 	private String endTime;
+
+	/**
+	 * 签到结束类型
+	 */
+	@ApiField("end_type")
+	private String endType;
 
 	/**
 	 * 签到频率类型
@@ -39,6 +51,12 @@ public class AlipayCommerceEducateCheckinRuleModifyModel extends AlipayObject {
 	 */
 	@ApiField("inst_id")
 	private String instId;
+
+	/**
+	 * 碰一下签到校验开关
+	 */
+	@ApiField("nfc_check")
+	private Boolean nfcCheck;
 
 	/**
 	 * 是否启用拍照校验
@@ -78,10 +96,28 @@ public class AlipayCommerceEducateCheckinRuleModifyModel extends AlipayObject {
 	private String ruleName;
 
 	/**
+	 * 签到规则类型，不传默认为寝室签到
+	 */
+	@ApiField("rule_type")
+	private String ruleType;
+
+	/**
+	 * 开始时间，用于标识签到开始类型的时间，单位分钟
+	 */
+	@ApiField("start_minutes")
+	private Long startMinutes;
+
+	/**
 	 * 签到开始时间，格式：HH:mm:ss
 	 */
 	@ApiField("start_time")
 	private String startTime;
+
+	/**
+	 * 签到开始类型
+	 */
+	@ApiField("start_type")
+	private String startType;
 
 	/**
 	 * 周天列表，数字1-7分别表示周一到周日。
@@ -97,11 +133,25 @@ public class AlipayCommerceEducateCheckinRuleModifyModel extends AlipayObject {
 		this.enableStatus = enableStatus;
 	}
 
+	public Long getEndMinutes() {
+		return this.endMinutes;
+	}
+	public void setEndMinutes(Long endMinutes) {
+		this.endMinutes = endMinutes;
+	}
+
 	public String getEndTime() {
 		return this.endTime;
 	}
 	public void setEndTime(String endTime) {
 		this.endTime = endTime;
+	}
+
+	public String getEndType() {
+		return this.endType;
+	}
+	public void setEndType(String endType) {
+		this.endType = endType;
 	}
 
 	public String getFrequencyType() {
@@ -116,6 +166,13 @@ public class AlipayCommerceEducateCheckinRuleModifyModel extends AlipayObject {
 	}
 	public void setInstId(String instId) {
 		this.instId = instId;
+	}
+
+	public Boolean getNfcCheck() {
+		return this.nfcCheck;
+	}
+	public void setNfcCheck(Boolean nfcCheck) {
+		this.nfcCheck = nfcCheck;
 	}
 
 	public Boolean getPictureCheck() {
@@ -160,11 +217,32 @@ public class AlipayCommerceEducateCheckinRuleModifyModel extends AlipayObject {
 		this.ruleName = ruleName;
 	}
 
+	public String getRuleType() {
+		return this.ruleType;
+	}
+	public void setRuleType(String ruleType) {
+		this.ruleType = ruleType;
+	}
+
+	public Long getStartMinutes() {
+		return this.startMinutes;
+	}
+	public void setStartMinutes(Long startMinutes) {
+		this.startMinutes = startMinutes;
+	}
+
 	public String getStartTime() {
 		return this.startTime;
 	}
 	public void setStartTime(String startTime) {
 		this.startTime = startTime;
+	}
+
+	public String getStartType() {
+		return this.startType;
+	}
+	public void setStartType(String startType) {
+		this.startType = startType;
 	}
 
 	public List<Long> getWeekDayList() {

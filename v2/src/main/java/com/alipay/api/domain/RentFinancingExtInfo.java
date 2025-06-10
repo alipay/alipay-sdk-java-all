@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁融资扩展信息
  *
  * @author auto create
- * @since 1.0, 2025-04-18 17:40:56
+ * @since 1.0, 2025-06-05 15:58:54
  */
 public class RentFinancingExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4318883674278931944L;
+	private static final long serialVersionUID = 4183219259581447749L;
 
 	/**
 	 * 收款银行卡账户
@@ -36,6 +36,12 @@ public class RentFinancingExtInfo extends AlipayObject {
 	 */
 	@ApiField("buyout_financing_amount")
 	private String buyoutFinancingAmount;
+
+	/**
+	 * 买断金的融资期数
+	 */
+	@ApiField("buyout_financing_period")
+	private RentPeriod buyoutFinancingPeriod;
 
 	/**
 	 * 买断金还款方式
@@ -127,6 +133,12 @@ public class RentFinancingExtInfo extends AlipayObject {
 	@ApiField("repayment_type")
 	private String repaymentType;
 
+	/**
+	 * 租金融资起始期数，比如租赁有12期，租金融资想从第3期，开始融资，则此处设置为3
+	 */
+	@ApiField("start_financing_period")
+	private Long startFinancingPeriod;
+
 	public String getBeneficiaryAccountNumber() {
 		return this.beneficiaryAccountNumber;
 	}
@@ -153,6 +165,13 @@ public class RentFinancingExtInfo extends AlipayObject {
 	}
 	public void setBuyoutFinancingAmount(String buyoutFinancingAmount) {
 		this.buyoutFinancingAmount = buyoutFinancingAmount;
+	}
+
+	public RentPeriod getBuyoutFinancingPeriod() {
+		return this.buyoutFinancingPeriod;
+	}
+	public void setBuyoutFinancingPeriod(RentPeriod buyoutFinancingPeriod) {
+		this.buyoutFinancingPeriod = buyoutFinancingPeriod;
 	}
 
 	public String getBuyoutRepaymentType() {
@@ -258,6 +277,13 @@ public class RentFinancingExtInfo extends AlipayObject {
 	}
 	public void setRepaymentType(String repaymentType) {
 		this.repaymentType = repaymentType;
+	}
+
+	public Long getStartFinancingPeriod() {
+		return this.startFinancingPeriod;
+	}
+	public void setStartFinancingPeriod(Long startFinancingPeriod) {
+		this.startFinancingPeriod = startFinancingPeriod;
 	}
 
 }

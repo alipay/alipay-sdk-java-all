@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.logistics.freightflow.tradereceipt.apply response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-28 16:56:38
+ * @since 1.0, 2025-06-10 11:07:28
  */
 public class AlipayCommerceLogisticsFreightflowTradereceiptApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7882752914149512456L;
+	private static final long serialVersionUID = 2578718345918774733L;
 
 	/** 
 	 * Base64加密

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 员工信息
  *
  * @author auto create
- * @since 1.0, 2025-04-09 15:57:21
+ * @since 1.0, 2025-06-04 17:12:07
  */
 public class EmployeeInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8637463927377957158L;
+	private static final long serialVersionUID = 4144872487849566539L;
 
 	/**
 	 * 员工所属核算主体列表
@@ -95,6 +95,12 @@ public class EmployeeInfoDTO extends AlipayObject {
 	 */
 	@ApiField("gmt_modified")
 	private String gmtModified;
+
+	/**
+	 * 员工收票邮箱
+	 */
+	@ApiField("invoice_email")
+	private String invoiceEmail;
 
 	/**
 	 * 员工是否人脸在库
@@ -253,6 +259,13 @@ public class EmployeeInfoDTO extends AlipayObject {
 	}
 	public void setGmtModified(String gmtModified) {
 		this.gmtModified = gmtModified;
+	}
+
+	public String getInvoiceEmail() {
+		return this.invoiceEmail;
+	}
+	public void setInvoiceEmail(String invoiceEmail) {
+		this.invoiceEmail = invoiceEmail;
 	}
 
 	public String getIotFaceStatus() {

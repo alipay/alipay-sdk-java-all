@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 配送指令增加正向业务场景
  *
  * @author auto create
- * @since 1.0, 2023-12-11 11:52:17
+ * @since 1.0, 2025-06-06 15:11:08
  */
 public class AssetDeliveryItem extends AlipayObject {
 
-	private static final long serialVersionUID = 1595951617333876986L;
+	private static final long serialVersionUID = 4345457812326556161L;
 
 	/**
 	 * SEND - 发货指令(执行向目的地进行发货动作) , RECEIVE - 收货指令(执行从来源地进行收货动作)
@@ -271,6 +271,12 @@ N 不需要合单
 	 */
 	@ApiField("to_address")
 	private AssetDeliveryAddress toAddress;
+
+	/**
+	 * 加急单的标识，Y是加急单 N非加急单
+	 */
+	@ApiField("urgent_order_flag")
+	private String urgentOrderFlag;
 
 	/**
 	 * 动作
@@ -570,6 +576,13 @@ N 不需要合单
 	}
 	public void setToAddress(AssetDeliveryAddress toAddress) {
 		this.toAddress = toAddress;
+	}
+
+	public String getUrgentOrderFlag() {
+		return this.urgentOrderFlag;
+	}
+	public void setUrgentOrderFlag(String urgentOrderFlag) {
+		this.urgentOrderFlag = urgentOrderFlag;
 	}
 
 	public String getWorkProcess() {

@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 签到规则
  *
  * @author auto create
- * @since 1.0, 2025-04-29 14:17:57
+ * @since 1.0, 2025-06-09 09:59:21
  */
 public class EduCheckInRule extends AlipayObject {
 
-	private static final long serialVersionUID = 2236654242867378566L;
+	private static final long serialVersionUID = 8443757848441697784L;
+
+	/**
+	 * 课程签到扩展参数
+	 */
+	@ApiField("course_config_ext")
+	private EduCheckInRuleConfigExt courseConfigExt;
 
 	/**
 	 * 规则生效状态
@@ -39,6 +45,12 @@ public class EduCheckInRule extends AlipayObject {
 	 */
 	@ApiField("inst_id")
 	private String instId;
+
+	/**
+	 * 碰一下签到校验开关
+	 */
+	@ApiField("nfc_check")
+	private Boolean nfcCheck;
 
 	/**
 	 * 是否启用拍照校验
@@ -78,6 +90,12 @@ public class EduCheckInRule extends AlipayObject {
 	private String ruleName;
 
 	/**
+	 * 签到类型
+	 */
+	@ApiField("rule_type")
+	private String ruleType;
+
+	/**
 	 * 签到开始时间，格式：HH:mm:ss
 	 */
 	@ApiField("start_time")
@@ -89,6 +107,13 @@ public class EduCheckInRule extends AlipayObject {
 	@ApiListField("week_day_list")
 	@ApiField("number")
 	private List<Long> weekDayList;
+
+	public EduCheckInRuleConfigExt getCourseConfigExt() {
+		return this.courseConfigExt;
+	}
+	public void setCourseConfigExt(EduCheckInRuleConfigExt courseConfigExt) {
+		this.courseConfigExt = courseConfigExt;
+	}
 
 	public Boolean getEnableStatus() {
 		return this.enableStatus;
@@ -116,6 +141,13 @@ public class EduCheckInRule extends AlipayObject {
 	}
 	public void setInstId(String instId) {
 		this.instId = instId;
+	}
+
+	public Boolean getNfcCheck() {
+		return this.nfcCheck;
+	}
+	public void setNfcCheck(Boolean nfcCheck) {
+		this.nfcCheck = nfcCheck;
 	}
 
 	public Boolean getPictureCheck() {
@@ -158,6 +190,13 @@ public class EduCheckInRule extends AlipayObject {
 	}
 	public void setRuleName(String ruleName) {
 		this.ruleName = ruleName;
+	}
+
+	public String getRuleType() {
+		return this.ruleType;
+	}
+	public void setRuleType(String ruleType) {
+		this.ruleType = ruleType;
 	}
 
 	public String getStartTime() {

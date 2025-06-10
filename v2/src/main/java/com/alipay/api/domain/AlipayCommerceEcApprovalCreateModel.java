@@ -1,5 +1,6 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
 import java.util.List;
 
 import com.alipay.api.AlipayObject;
@@ -10,11 +11,29 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建审批单
  *
  * @author auto create
- * @since 1.0, 2025-03-25 10:54:21
+ * @since 1.0, 2025-06-03 17:06:52
  */
 public class AlipayCommerceEcApprovalCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2729188274654928178L;
+	private static final long serialVersionUID = 3334152834657345722L;
+
+	/**
+	 * 申请结束时间
+	 */
+	@ApiField("apply_finish_time")
+	private Date applyFinishTime;
+
+	/**
+	 * 申请单开始时间
+	 */
+	@ApiField("apply_start_time")
+	private Date applyStartTime;
+
+	/**
+	 * 审批单类型
+	 */
+	@ApiField("category")
+	private String category;
 
 	/**
 	 * 员工id
@@ -29,11 +48,23 @@ public class AlipayCommerceEcApprovalCreateModel extends AlipayObject {
 	private String enterpriseId;
 
 	/**
+	 * 二级场景，详情见：
+	 */
+	@ApiField("expense_type_sub_category")
+	private String expenseTypeSubCategory;
+
+	/**
 	 * 审批单关联制度列表，当企业出资方式为企业出资且设置此字段非空时，会查询最优制度并发放额度至该最优制度关联的员工
 	 */
 	@ApiListField("institution_id_list")
 	@ApiField("string")
 	private List<String> institutionIdList;
+
+	/**
+	 * 支付类型
+	 */
+	@ApiField("payment_type")
+	private String paymentType;
 
 	/**
 	 * 外部平台审批单id
@@ -46,6 +77,12 @@ public class AlipayCommerceEcApprovalCreateModel extends AlipayObject {
 	 */
 	@ApiField("purpose")
 	private String purpose;
+
+	/**
+	 * 一级场景，详情见：
+	 */
+	@ApiField("scene")
+	private String scene;
 
 	/**
 	 * 同行人信息列表
@@ -61,6 +98,27 @@ public class AlipayCommerceEcApprovalCreateModel extends AlipayObject {
 	@ApiField("approval_trip_d_t_o")
 	private List<ApprovalTripDTO> tripInfoList;
 
+	public Date getApplyFinishTime() {
+		return this.applyFinishTime;
+	}
+	public void setApplyFinishTime(Date applyFinishTime) {
+		this.applyFinishTime = applyFinishTime;
+	}
+
+	public Date getApplyStartTime() {
+		return this.applyStartTime;
+	}
+	public void setApplyStartTime(Date applyStartTime) {
+		this.applyStartTime = applyStartTime;
+	}
+
+	public String getCategory() {
+		return this.category;
+	}
+	public void setCategory(String category) {
+		this.category = category;
+	}
+
 	public String getEmployeeId() {
 		return this.employeeId;
 	}
@@ -75,11 +133,25 @@ public class AlipayCommerceEcApprovalCreateModel extends AlipayObject {
 		this.enterpriseId = enterpriseId;
 	}
 
+	public String getExpenseTypeSubCategory() {
+		return this.expenseTypeSubCategory;
+	}
+	public void setExpenseTypeSubCategory(String expenseTypeSubCategory) {
+		this.expenseTypeSubCategory = expenseTypeSubCategory;
+	}
+
 	public List<String> getInstitutionIdList() {
 		return this.institutionIdList;
 	}
 	public void setInstitutionIdList(List<String> institutionIdList) {
 		this.institutionIdList = institutionIdList;
+	}
+
+	public String getPaymentType() {
+		return this.paymentType;
+	}
+	public void setPaymentType(String paymentType) {
+		this.paymentType = paymentType;
 	}
 
 	public String getPlatformApprovalId() {
@@ -94,6 +166,13 @@ public class AlipayCommerceEcApprovalCreateModel extends AlipayObject {
 	}
 	public void setPurpose(String purpose) {
 		this.purpose = purpose;
+	}
+
+	public String getScene() {
+		return this.scene;
+	}
+	public void setScene(String scene) {
+		this.scene = scene;
 	}
 
 	public List<ApprovalTravelerDTO> getTravelerList() {

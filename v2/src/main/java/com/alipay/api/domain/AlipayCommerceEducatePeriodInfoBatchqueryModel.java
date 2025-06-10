@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页查询课时配置
  *
  * @author auto create
- * @since 1.0, 2025-05-27 18:48:57
+ * @since 1.0, 2025-06-09 09:58:55
  */
 public class AlipayCommerceEducatePeriodInfoBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5349762414419724279L;
+	private static final long serialVersionUID = 3744784737921975569L;
 
 	/**
 	 * 机构内标

@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用购机商品信息
  *
  * @author auto create
- * @since 1.0, 2024-10-09 20:16:18
+ * @since 1.0, 2025-06-10 11:23:40
  */
 public class CreditPhoneInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5218955366124525881L;
+	private static final long serialVersionUID = 8429916579251836925L;
+
+	/**
+	 * 套餐编号
+	 */
+	@ApiField("busi_id")
+	private String busiId;
 
 	/**
 	 * 单位是元。套餐每月保底金额
@@ -30,6 +36,12 @@ public class CreditPhoneInfo extends AlipayObject {
 	 */
 	@ApiField("busi_type")
 	private String busiType;
+
+	/**
+	 * 申请人备用手机号
+	 */
+	@ApiField("contace_mobile_no")
+	private String contaceMobileNo;
 
 	/**
 	 * 每个月份的逾期日期
@@ -54,6 +66,18 @@ public class CreditPhoneInfo extends AlipayObject {
 	 */
 	@ApiField("isp_abbr_cn")
 	private String ispAbbrCn;
+
+	/**
+	 * 运营商订单号
+	 */
+	@ApiField("isp_order_no")
+	private String ispOrderNo;
+
+	/**
+	 * 商品名称
+	 */
+	@ApiField("item_name")
+	private String itemName;
 
 	/**
 	 * 单位是元。单期最大扣款金额。注意单期最大扣款金额*分期数不得超过订单总金额
@@ -86,6 +110,12 @@ public class CreditPhoneInfo extends AlipayObject {
 	private String province;
 
 	/**
+	 * 省份账单日
+	 */
+	@ApiField("province_bill_date")
+	private Long provinceBillDate;
+
+	/**
 	 * 要求在网月数，单位 月
 	 */
 	@ApiField("require_month_count")
@@ -109,6 +139,13 @@ public class CreditPhoneInfo extends AlipayObject {
 	@ApiField("total_bonus")
 	private String totalBonus;
 
+	public String getBusiId() {
+		return this.busiId;
+	}
+	public void setBusiId(String busiId) {
+		this.busiId = busiId;
+	}
+
 	public String getBusiLevel() {
 		return this.busiLevel;
 	}
@@ -128,6 +165,13 @@ public class CreditPhoneInfo extends AlipayObject {
 	}
 	public void setBusiType(String busiType) {
 		this.busiType = busiType;
+	}
+
+	public String getContaceMobileNo() {
+		return this.contaceMobileNo;
+	}
+	public void setContaceMobileNo(String contaceMobileNo) {
+		this.contaceMobileNo = contaceMobileNo;
 	}
 
 	public Long getDueDate() {
@@ -156,6 +200,20 @@ public class CreditPhoneInfo extends AlipayObject {
 	}
 	public void setIspAbbrCn(String ispAbbrCn) {
 		this.ispAbbrCn = ispAbbrCn;
+	}
+
+	public String getIspOrderNo() {
+		return this.ispOrderNo;
+	}
+	public void setIspOrderNo(String ispOrderNo) {
+		this.ispOrderNo = ispOrderNo;
+	}
+
+	public String getItemName() {
+		return this.itemName;
+	}
+	public void setItemName(String itemName) {
+		this.itemName = itemName;
 	}
 
 	public String getMaxAmountPerInstallment() {
@@ -191,6 +249,13 @@ public class CreditPhoneInfo extends AlipayObject {
 	}
 	public void setProvince(String province) {
 		this.province = province;
+	}
+
+	public Long getProvinceBillDate() {
+		return this.provinceBillDate;
+	}
+	public void setProvinceBillDate(Long provinceBillDate) {
+		this.provinceBillDate = provinceBillDate;
 	}
 
 	public Long getRequireMonthCount() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ResourceUserDataVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1537554746557753725L;
+	private static final long serialVersionUID = 3819875212551441592L;
 
 	/**
 	 * 用户画像的类别

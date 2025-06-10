@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 课程签到二维码查询
  *
  * @author auto create
- * @since 1.0, 2025-05-27 18:48:54
+ * @since 1.0, 2025-06-09 09:57:43
  */
 public class AlipayCommerceEducateCourseCheckinqrcodeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8682765228493718578L;
+	private static final long serialVersionUID = 8142374252296835727L;
 
 	/**
 	 * 课程签到规则ID

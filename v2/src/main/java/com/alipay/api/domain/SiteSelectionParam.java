@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * 大数据选址参数
+ * 新能源充电-大数据智能选址计算参数
  *
  * @author auto create
- * @since 1.0, 2024-11-28 13:18:19
+ * @since 1.0, 2025-06-03 19:39:43
  */
 public class SiteSelectionParam extends AlipayObject {
 
-	private static final long serialVersionUID = 6642415619186991486L;
+	private static final long serialVersionUID = 5532124637868627286L;
 
 	/**
 	 * 全国统一城市编码
@@ -35,8 +35,8 @@ public class SiteSelectionParam extends AlipayObject {
 	private String dateTo;
 
 	/**
-	 * 1. H3坐标网格编码（编码为8级，六边形面积约为0.7373km2）
-2. 若为预测场站价格时，请传入场站编码
+	 * 1. H3坐标网格编码；支持等级6-9的网格编码。
+2. 若为预测场站价格时，请传入互联互通场站编码。
 	 */
 	@ApiListField("index_list")
 	@ApiField("string")
@@ -50,16 +50,28 @@ public class SiteSelectionParam extends AlipayObject {
 	private List<LngAndLatParam> lngLatList;
 
 	/**
-	 * 最短停留时长，单位为分钟。当获取停留车辆数据「T_RESIDENT_VEHICLE」时，必传。
+	 * 最短停留时长，单位为分钟
 	 */
 	@ApiField("min_parking_period")
 	private Long minParkingPeriod;
 
 	/**
-	 * 车辆停留天数（单位：天）。当获取停留车辆数据「template_code = T_RESIDENT_VEHICLE」时，必传。
+	 * 其他参数
+	 */
+	@ApiField("params")
+	private String params;
+
+	/**
+	 * 车辆停留天数（单位：天）
 	 */
 	@ApiField("parking_days")
 	private Long parkingDays;
+
+	/**
+	 * 服务费
+	 */
+	@ApiField("service_fee")
+	private String serviceFee;
 
 	public String getCityCode() {
 		return this.cityCode;
@@ -103,11 +115,25 @@ public class SiteSelectionParam extends AlipayObject {
 		this.minParkingPeriod = minParkingPeriod;
 	}
 
+	public String getParams() {
+		return this.params;
+	}
+	public void setParams(String params) {
+		this.params = params;
+	}
+
 	public Long getParkingDays() {
 		return this.parkingDays;
 	}
 	public void setParkingDays(Long parkingDays) {
 		this.parkingDays = parkingDays;
+	}
+
+	public String getServiceFee() {
+		return this.serviceFee;
+	}
+	public void setServiceFee(String serviceFee) {
+		this.serviceFee = serviceFee;
 	}
 
 }

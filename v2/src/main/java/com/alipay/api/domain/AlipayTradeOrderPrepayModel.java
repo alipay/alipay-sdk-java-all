@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 统一收单交易订单预支付接口
  *
  * @author auto create
- * @since 1.0, 2024-09-19 11:42:42
+ * @since 1.0, 2025-06-03 16:24:10
  */
 public class AlipayTradeOrderPrepayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4716621668958273921L;
+	private static final long serialVersionUID = 4747489953871762341L;
 
 	/**
 	 * 订单附加信息。 如果请求时传递了该参数，将在异步通知、对账单中原样返回，同时会在商户和用户的pc账单详情中作为交易描述展示

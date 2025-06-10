@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询审批单详情
  *
  * @author auto create
- * @since 1.0, 2025-03-25 10:55:16
+ * @since 1.0, 2025-06-03 17:07:12
  */
 public class AlipayCommerceEcApprovalQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5613319935649733228L;
+	private static final long serialVersionUID = 2552727965873761875L;
+
+	/**
+	 * 审批单唯一ID，用于唯一标识一条审批单记录
+	 */
+	@ApiField("approval_id")
+	private String approvalId;
 
 	/**
 	 * 企业id
@@ -24,6 +30,13 @@ public class AlipayCommerceEcApprovalQueryModel extends AlipayObject {
 	 */
 	@ApiField("platform_approval_id")
 	private String platformApprovalId;
+
+	public String getApprovalId() {
+		return this.approvalId;
+	}
+	public void setApprovalId(String approvalId) {
+		this.approvalId = approvalId;
+	}
 
 	public String getEnterpriseId() {
 		return this.enterpriseId;

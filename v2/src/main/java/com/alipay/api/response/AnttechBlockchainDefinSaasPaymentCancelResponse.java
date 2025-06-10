@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AnttechBlockchainDefinSaasPaymentCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1773415261133979255L;
+	private static final long serialVersionUID = 4591519777196554935L;
 
 	/** 
 	 * 可用金额，单位为元。可用金额=总金额-已请款金额-已撤销金额。精确到小数点后两位，取值范围[0.01,100000000]

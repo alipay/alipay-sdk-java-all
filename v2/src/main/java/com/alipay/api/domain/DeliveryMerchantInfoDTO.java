@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DeliveryMerchantInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1213827833478356686L;
+	private static final long serialVersionUID = 4275536821232815547L;
 
 	/**
 	 * 代扣出账号，本参数为代扣的支付宝账号对应的支付宝唯一用户号。以2088开头的纯16位数字。

@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发起业务开通
  *
  * @author auto create
- * @since 1.0, 2025-04-07 14:41:56
+ * @since 1.0, 2025-06-06 14:00:42
  */
 public class AntMerchantExpandBizaccessOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4361213716269686974L;
+	private static final long serialVersionUID = 3639354855369388143L;
 
 	/**
 	 * 受益人证照
 	 */
 	@ApiField("benefit_info")
 	private CertificateInfoForEntry benefitInfo;
+
+	/**
+	 * 关联外部单号
+	 */
+	@ApiField("external_id")
+	private String externalId;
 
 	/**
 	 * 服务商抽佣信息。本对象为空表示无需抽佣配置。一期只支持传入一个
@@ -128,6 +134,13 @@ public class AntMerchantExpandBizaccessOrderCreateModel extends AlipayObject {
 	}
 	public void setBenefitInfo(CertificateInfoForEntry benefitInfo) {
 		this.benefitInfo = benefitInfo;
+	}
+
+	public String getExternalId() {
+		return this.externalId;
+	}
+	public void setExternalId(String externalId) {
+		this.externalId = externalId;
 	}
 
 	public List<IsvCommissionInfo> getIsvCommissionInfo() {

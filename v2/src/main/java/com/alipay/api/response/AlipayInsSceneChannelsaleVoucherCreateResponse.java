@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.channelsale.voucher.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-20 10:04:53
+ * @since 1.0, 2025-06-05 10:42:28
  */
 public class AlipayInsSceneChannelsaleVoucherCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3199819973838959617L;
+	private static final long serialVersionUID = 6629866278161394416L;
 
 	/** 
 	 * 凭证失效时间

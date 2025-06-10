@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 流量订单预校验
  *
  * @author auto create
- * @since 1.0, 2024-07-11 14:17:15
+ * @since 1.0, 2025-06-04 10:41:16
  */
 public class AlipayCommerceAcommunicationDistributionFlowPreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1867868245245141948L;
+	private static final long serialVersionUID = 2124576213161858971L;
 
 	/**
 	 * 商品id

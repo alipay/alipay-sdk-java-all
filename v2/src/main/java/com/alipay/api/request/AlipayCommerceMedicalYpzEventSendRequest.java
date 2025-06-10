@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.ypz.event.send request
  * 
  * @author auto create
- * @since 1.0, 2025-02-28 11:27:24
+ * @since 1.0, 2025-06-06 10:52:28
  */
 public class AlipayCommerceMedicalYpzEventSendRequest implements AlipayRequest<AlipayCommerceMedicalYpzEventSendResponse> {
 

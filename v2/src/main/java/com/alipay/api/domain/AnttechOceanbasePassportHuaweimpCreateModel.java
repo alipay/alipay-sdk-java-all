@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 通过华为云MP注册账号
  *
  * @author auto create
- * @since 1.0, 2024-04-17 14:36:50
+ * @since 1.0, 2025-06-09 15:19:25
  */
 public class AnttechOceanbasePassportHuaweimpCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1434229941331252137L;
+	private static final long serialVersionUID = 6463984886127267413L;
 
 	/**
 	 * 非必传，取值为加密后的登录凭证

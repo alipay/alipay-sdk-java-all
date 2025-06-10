@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingCardConsumeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4139787597633399395L;
+	private static final long serialVersionUID = 1613924191378959698L;
 
 	/**
 	 * 用户实际付的现金金额

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.checkin.rule.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2025-05-27 15:39:57
+ * @since 1.0, 2025-06-09 10:02:30
  */
 public class AlipayCommerceEducateCheckinRuleBatchqueryRequest implements AlipayRequest<AlipayCommerceEducateCheckinRuleBatchqueryResponse> {
 

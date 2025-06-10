@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗行业商业化核销接口
  *
  * @author auto create
- * @since 1.0, 2025-05-21 20:52:00
+ * @since 1.0, 2025-06-04 17:40:34
  */
 public class AlipayCommerceMedicalCommercialPerformanceVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8621757734229759595L;
+	private static final long serialVersionUID = 5853927538191339392L;
 
 	/**
 	 * 商品订单id，支付宝侧用户对商户某一商品的唯一订单子单id。该订单记录了用户的核销次数与总次数，以及订单状态
@@ -102,9 +102,10 @@ public class AlipayCommerceMedicalCommercialPerformanceVerifyModel extends Alipa
 
 	/**
 	 * 确认场景类型，枚举值：
+确认预约，RESERVE。
 用户核销，USER_PERFORMANCE。
-取消预约，RESERVE_CANCEL。
-修改预约，RESERVE_MODIFY。
+确认取消预约，RESERVE_CANCEL。
+确认修改预约，RESERVE_MODIFY。
 上传报告，REPORT_UPLOAD。
 商家确认发货，DELIVERY。
 用户已收到货，DELIVERIED。

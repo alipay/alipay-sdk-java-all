@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PostPayment extends AlipayObject {
 
-	private static final long serialVersionUID = 6655424636219113914L;
+	private static final long serialVersionUID = 5878958455248873453L;
 
 	/**
 	 * 后付费金额，单位为：元（人民币），精确到小数点后两位。

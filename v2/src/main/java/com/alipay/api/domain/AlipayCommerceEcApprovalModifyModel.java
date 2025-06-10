@@ -1,5 +1,6 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
 import java.util.List;
 
 import com.alipay.api.AlipayObject;
@@ -10,11 +11,29 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改审批单
  *
  * @author auto create
- * @since 1.0, 2025-03-25 10:54:37
+ * @since 1.0, 2025-06-03 17:07:13
  */
 public class AlipayCommerceEcApprovalModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7166343581687771394L;
+	private static final long serialVersionUID = 5167684919569571544L;
+
+	/**
+	 * 申请结束时间
+	 */
+	@ApiField("apply_finish_time")
+	private Date applyFinishTime;
+
+	/**
+	 * 申请单开始时间
+	 */
+	@ApiField("apply_start_time")
+	private Date applyStartTime;
+
+	/**
+	 * 申请单状态
+	 */
+	@ApiField("approval_status")
+	private String approvalStatus;
 
 	/**
 	 * 企业id
@@ -49,11 +68,32 @@ public class AlipayCommerceEcApprovalModifyModel extends AlipayObject {
 	private List<ApprovalTravelerDTO> travelerList;
 
 	/**
-	 * 行程信息列表
+	 * 行程信息列表（传入覆盖修改）
 	 */
 	@ApiListField("trip_info_list")
 	@ApiField("approval_trip_d_t_o")
 	private List<ApprovalTripDTO> tripInfoList;
+
+	public Date getApplyFinishTime() {
+		return this.applyFinishTime;
+	}
+	public void setApplyFinishTime(Date applyFinishTime) {
+		this.applyFinishTime = applyFinishTime;
+	}
+
+	public Date getApplyStartTime() {
+		return this.applyStartTime;
+	}
+	public void setApplyStartTime(Date applyStartTime) {
+		this.applyStartTime = applyStartTime;
+	}
+
+	public String getApprovalStatus() {
+		return this.approvalStatus;
+	}
+	public void setApprovalStatus(String approvalStatus) {
+		this.approvalStatus = approvalStatus;
+	}
 
 	public String getEnterpriseId() {
 		return this.enterpriseId;

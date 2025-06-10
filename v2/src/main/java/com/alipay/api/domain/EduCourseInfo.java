@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 课程信息
  *
  * @author auto create
- * @since 1.0, 2025-05-27 18:49:03
+ * @since 1.0, 2025-06-09 09:58:54
  */
 public class EduCourseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7818778729573134272L;
+	private static final long serialVersionUID = 8382253539334538233L;
 
 	/**
 	 * 课程描述
@@ -79,6 +79,12 @@ public class EduCourseInfo extends AlipayObject {
 	private String placeName;
 
 	/**
+	 * 位置外部唯一编号
+	 */
+	@ApiField("place_out_biz_no")
+	private String placeOutBizNo;
+
+	/**
 	 * 学期ID
 	 */
 	@ApiField("semester_id")
@@ -89,6 +95,12 @@ public class EduCourseInfo extends AlipayObject {
 	 */
 	@ApiField("semester_name")
 	private String semesterName;
+
+	/**
+	 * 老师学工号
+	 */
+	@ApiField("teacher_employee_no")
+	private String teacherEmployeeNo;
 
 	/**
 	 * 教师花名册ID
@@ -179,6 +191,13 @@ public class EduCourseInfo extends AlipayObject {
 		this.placeName = placeName;
 	}
 
+	public String getPlaceOutBizNo() {
+		return this.placeOutBizNo;
+	}
+	public void setPlaceOutBizNo(String placeOutBizNo) {
+		this.placeOutBizNo = placeOutBizNo;
+	}
+
 	public String getSemesterId() {
 		return this.semesterId;
 	}
@@ -191,6 +210,13 @@ public class EduCourseInfo extends AlipayObject {
 	}
 	public void setSemesterName(String semesterName) {
 		this.semesterName = semesterName;
+	}
+
+	public String getTeacherEmployeeNo() {
+		return this.teacherEmployeeNo;
+	}
+	public void setTeacherEmployeeNo(String teacherEmployeeNo) {
+		this.teacherEmployeeNo = teacherEmployeeNo;
 	}
 
 	public String getTeacherRosterId() {

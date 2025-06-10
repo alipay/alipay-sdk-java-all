@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMerchantcardSettleaccountBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2792823612692595371L;
+	private static final long serialVersionUID = 3849464157127419498L;
 
 	/**
 	 * 次卡周期卡场景下，用到了代扣的能力，所以需要support_deduct=true，过滤掉不支持代扣的账号

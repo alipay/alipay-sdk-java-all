@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 推送淘宝营销人群
  *
  * @author auto create
- * @since 1.0, 2025-04-10 15:22:59
+ * @since 1.0, 2025-06-09 15:13:09
  */
 public class AlipayTradeCrowdConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6239266999423741448L;
+	private static final long serialVersionUID = 1342115361178798122L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识
@@ -24,6 +27,15 @@ public class AlipayTradeCrowdConsultModel extends AlipayObject {
 	 */
 	@ApiField("scene")
 	private String scene;
+
+	/**
+	 * 表明着笔请求的场景，可以同时包含多个场景，目前支持
+AAC潜客营销-aacProspectMarketing
+未绑卡人群首绑营销-bindCard
+	 */
+	@ApiListField("scene_list")
+	@ApiField("string")
+	private List<String> sceneList;
 
 	/**
 	 * 支付宝用户的userId。
@@ -43,6 +55,13 @@ public class AlipayTradeCrowdConsultModel extends AlipayObject {
 	}
 	public void setScene(String scene) {
 		this.scene = scene;
+	}
+
+	public List<String> getSceneList() {
+		return this.sceneList;
+	}
+	public void setSceneList(List<String> sceneList) {
+		this.sceneList = sceneList;
 	}
 
 	public String getUserId() {

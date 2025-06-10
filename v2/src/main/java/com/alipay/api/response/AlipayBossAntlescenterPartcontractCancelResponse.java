@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBossAntlescenterPartcontractCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4386149544154365317L;
+	private static final long serialVersionUID = 4537858876772738358L;
 
 	/** 
 	 * 合同编号

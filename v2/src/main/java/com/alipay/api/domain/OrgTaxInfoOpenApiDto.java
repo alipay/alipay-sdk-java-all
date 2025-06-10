@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class OrgTaxInfoOpenApiDto extends AlipayObject {
 
-	private static final long serialVersionUID = 8418348426858772126L;
+	private static final long serialVersionUID = 5411434622811795447L;
 
 	/**
 	 * 银行账号

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class DeliveryFatigueInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1385787735886111851L;
+	private static final long serialVersionUID = 3441547152283244932L;
 
 	/**
 	 * 内容疲劳度

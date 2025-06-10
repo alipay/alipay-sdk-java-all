@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品扩展信息
  *
  * @author auto create
- * @since 1.0, 2025-05-21 10:52:01
+ * @since 1.0, 2025-06-06 15:37:29
  */
 public class SellerSyncRentItemExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8167597853117739282L;
+	private static final long serialVersionUID = 5112936189918211164L;
+
+	/**
+	 * 券后签约价格，币种：人民币，单位：元
+	 */
+	@ApiField("after_coupon_price")
+	private String afterCouponPrice;
 
 	/**
 	 * 商品的品牌名称
@@ -72,6 +78,13 @@ public class SellerSyncRentItemExtInfo extends AlipayObject {
 	 */
 	@ApiField("serial_no")
 	private String serialNo;
+
+	public String getAfterCouponPrice() {
+		return this.afterCouponPrice;
+	}
+	public void setAfterCouponPrice(String afterCouponPrice) {
+		this.afterCouponPrice = afterCouponPrice;
+	}
 
 	public String getItemBrand() {
 		return this.itemBrand;

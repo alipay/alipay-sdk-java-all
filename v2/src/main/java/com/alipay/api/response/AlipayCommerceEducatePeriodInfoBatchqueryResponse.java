@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.period.info.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-27 18:48:58
+ * @since 1.0, 2025-06-09 10:02:29
  */
 public class AlipayCommerceEducatePeriodInfoBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7676381975525555377L;
+	private static final long serialVersionUID = 3386912422439172766L;
 
 	/** 
 	 * 课时列表

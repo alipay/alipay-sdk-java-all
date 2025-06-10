@@ -1,19 +1,21 @@
 package com.alipay.api.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 保单摘要数据
  *
  * @author auto create
- * @since 1.0, 2025-03-19 18:14:32
+ * @since 1.0, 2025-06-04 10:02:20
  */
 public class InsOpenPolicyDigestDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6191696977286862628L;
+	private static final long serialVersionUID = 4564189128331421274L;
 
 	/**
 	 * 保险公司id
@@ -26,6 +28,13 @@ public class InsOpenPolicyDigestDTO extends AlipayObject {
 	 */
 	@ApiField("inst_policy_no")
 	private String instPolicyNo;
+
+	/**
+	 * 保单关联的责任摘要信息
+	 */
+	@ApiListField("liabilities")
+	@ApiField("ins_open_policy_liability_digest_d_t_o")
+	private List<InsOpenPolicyLiabilityDigestDTO> liabilities;
 
 	/**
 	 * 保单生效时间
@@ -94,6 +103,13 @@ public class InsOpenPolicyDigestDTO extends AlipayObject {
 	}
 	public void setInstPolicyNo(String instPolicyNo) {
 		this.instPolicyNo = instPolicyNo;
+	}
+
+	public List<InsOpenPolicyLiabilityDigestDTO> getLiabilities() {
+		return this.liabilities;
+	}
+	public void setLiabilities(List<InsOpenPolicyLiabilityDigestDTO> liabilities) {
+		this.liabilities = liabilities;
 	}
 
 	public String getPolicyEffectTime() {

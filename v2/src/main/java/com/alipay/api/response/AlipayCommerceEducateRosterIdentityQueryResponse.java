@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.roster.identity.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-27 19:45:02
+ * @since 1.0, 2025-06-09 10:02:29
  */
 public class AlipayCommerceEducateRosterIdentityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6527726265175786559L;
+	private static final long serialVersionUID = 8453356236352562299L;
 
 	/** 
 	 * 人员所属的部门、学院或班级名称
@@ -67,6 +67,12 @@ public class AlipayCommerceEducateRosterIdentityQueryResponse extends AlipayResp
 	 */
 	@ApiField("role_type")
 	private String roleType;
+
+	/** 
+	 * 花名册ID
+	 */
+	@ApiField("roster_id")
+	private String rosterId;
 
 	/** 
 	 * 支付宝用户的userId。
@@ -135,6 +141,13 @@ public class AlipayCommerceEducateRosterIdentityQueryResponse extends AlipayResp
 	}
 	public String getRoleType( ) {
 		return this.roleType;
+	}
+
+	public void setRosterId(String rosterId) {
+		this.rosterId = rosterId;
+	}
+	public String getRosterId( ) {
+		return this.rosterId;
 	}
 
 	public void setUserId(String userId) {

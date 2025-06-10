@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 审批单行程信息
  *
  * @author auto create
- * @since 1.0, 2023-02-01 13:38:43
+ * @since 1.0, 2025-06-03 17:06:52
  */
 public class ApprovalTripDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7761119134197913835L;
+	private static final long serialVersionUID = 6812443799512643367L;
 
 	/**
 	 * 行程对应到达日期
@@ -46,20 +46,13 @@ public class ApprovalTripDTO extends AlipayObject {
 	private ApprovalCityDTO origin;
 
 	/**
-	 * 行程模式，可选值：
-PLANE-飞机；
-TRAIN-火车；
-HOTEL-酒店
+	 * 行程模式，默认值为其他
 	 */
 	@ApiField("trip_mode")
 	private String tripMode;
 
 	/**
-	 * 行程类型，可选值：
-单程：SINGLE；
-往返：RETURN；
-多程：MULTI；
-默认为 SINGLE
+	 * 行程类型
 	 */
 	@ApiField("trip_way")
 	private String tripWay;

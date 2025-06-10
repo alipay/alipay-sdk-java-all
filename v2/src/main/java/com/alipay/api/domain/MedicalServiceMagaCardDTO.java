@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MedicalServiceMagaCardDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5472125165871229812L;
+	private static final long serialVersionUID = 7341729914644727341L;
 
 	/**
 	 * 描述

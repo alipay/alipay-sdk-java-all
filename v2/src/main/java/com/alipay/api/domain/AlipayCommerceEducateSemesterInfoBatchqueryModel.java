@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页查询学期
  *
  * @author auto create
- * @since 1.0, 2025-05-27 18:48:59
+ * @since 1.0, 2025-06-09 09:59:07
  */
 public class AlipayCommerceEducateSemesterInfoBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2759635543134525563L;
+	private static final long serialVersionUID = 3147719543795976716L;
 
 	/**
 	 * 机构内标

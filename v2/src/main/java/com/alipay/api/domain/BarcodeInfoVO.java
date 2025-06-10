@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BarcodeInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1419688632954936117L;
+	private static final long serialVersionUID = 1768934651911449381L;
 
 	/**
 	 * 条形码数字字符串

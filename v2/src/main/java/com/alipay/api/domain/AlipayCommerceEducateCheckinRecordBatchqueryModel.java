@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量查询签到记录
  *
  * @author auto create
- * @since 1.0, 2025-04-29 14:16:20
+ * @since 1.0, 2025-06-09 09:57:56
  */
 public class AlipayCommerceEducateCheckinRecordBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3472254152854555131L;
+	private static final long serialVersionUID = 4264114443677328348L;
 
 	/**
 	 * 签到结束时间
@@ -40,6 +40,13 @@ public class AlipayCommerceEducateCheckinRecordBatchqueryModel extends AlipayObj
 	 */
 	@ApiField("check_in_type")
 	private String checkInType;
+
+	/**
+	 * 课程id列表
+	 */
+	@ApiListField("course_id_list")
+	@ApiField("string")
+	private List<String> courseIdList;
 
 	/**
 	 * 学号或工号
@@ -85,6 +92,12 @@ public class AlipayCommerceEducateCheckinRecordBatchqueryModel extends AlipayObj
 	@ApiField("string")
 	private List<String> placeIdList;
 
+	/**
+	 * 教师花名册id
+	 */
+	@ApiField("teacher_roster_id")
+	private String teacherRosterId;
+
 	public Date getCheckInEndTime() {
 		return this.checkInEndTime;
 	}
@@ -111,6 +124,13 @@ public class AlipayCommerceEducateCheckinRecordBatchqueryModel extends AlipayObj
 	}
 	public void setCheckInType(String checkInType) {
 		this.checkInType = checkInType;
+	}
+
+	public List<String> getCourseIdList() {
+		return this.courseIdList;
+	}
+	public void setCourseIdList(List<String> courseIdList) {
+		this.courseIdList = courseIdList;
 	}
 
 	public String getEmployeeNo() {
@@ -160,6 +180,13 @@ public class AlipayCommerceEducateCheckinRecordBatchqueryModel extends AlipayObj
 	}
 	public void setPlaceIdList(List<String> placeIdList) {
 		this.placeIdList = placeIdList;
+	}
+
+	public String getTeacherRosterId() {
+		return this.teacherRosterId;
+	}
+	public void setTeacherRosterId(String teacherRosterId) {
+		this.teacherRosterId = teacherRosterId;
 	}
 
 }

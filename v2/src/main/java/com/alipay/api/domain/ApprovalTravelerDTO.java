@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 审批单同行人信息
  *
  * @author auto create
- * @since 1.0, 2023-01-31 14:06:04
+ * @since 1.0, 2025-06-03 17:06:52
  */
 public class ApprovalTravelerDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5357774461381868215L;
+	private static final long serialVersionUID = 1567558634769592234L;
 
 	/**
 	 * 员工id

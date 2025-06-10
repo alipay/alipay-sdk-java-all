@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.course.checkinqrcode.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-27 18:52:26
+ * @since 1.0, 2025-06-09 10:02:29
  */
 public class AlipayCommerceEducateCourseCheckinqrcodeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7118992117995619561L;
+	private static final long serialVersionUID = 8388736499623414331L;
 
 	/** 
 	 * 自动刷新二维码

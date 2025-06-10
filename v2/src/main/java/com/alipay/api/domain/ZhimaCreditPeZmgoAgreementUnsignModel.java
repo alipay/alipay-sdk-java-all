@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCreditPeZmgoAgreementUnsignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4394753155538428462L;
+	private static final long serialVersionUID = 8593734266512944547L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号。

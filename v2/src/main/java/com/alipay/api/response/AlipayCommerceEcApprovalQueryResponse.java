@@ -1,5 +1,6 @@
 package com.alipay.api.response;
 
+import java.util.Date;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
@@ -12,15 +13,26 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.approval.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-27 20:16:51
+ * @since 1.0, 2025-06-03 19:02:26
  */
 public class AlipayCommerceEcApprovalQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7718793936669176271L;
+	private static final long serialVersionUID = 8842393131843651847L;
 
 	/** 
-	 * 审批结果，可选值：
-APPLYING-申请中；VALID-已生效；CANCELLED-已取消；REJECTED-已驳回
+	 * 申请单的结束时间
+	 */
+	@ApiField("apply_finish_time")
+	private Date applyFinishTime;
+
+	/** 
+	 * 申请单的开始时间
+	 */
+	@ApiField("apply_start_time")
+	private Date applyStartTime;
+
+	/** 
+	 * 审批结果（审批单状态）
 	 */
 	@ApiField("approval_result")
 	private String approvalResult;
@@ -40,6 +52,12 @@ APPLYING-申请中；VALID-已生效；CANCELLED-已取消；REJECTED-已驳回
 	private List<ApprovalTripDTO> approvalTripDtoList;
 
 	/** 
+	 * 申请单类型
+	 */
+	@ApiField("category")
+	private String category;
+
+	/** 
 	 * 员工id
 	 */
 	@ApiField("employee_id")
@@ -52,6 +70,18 @@ APPLYING-申请中；VALID-已生效；CANCELLED-已取消；REJECTED-已驳回
 	private String enterpriseId;
 
 	/** 
+	 * 二级场景，更多枚举请见：
+	 */
+	@ApiField("expense_type_sub_category")
+	private String expenseTypeSubCategory;
+
+	/** 
+	 * 支付类型
+	 */
+	@ApiField("payment_type")
+	private String paymentType;
+
+	/** 
 	 * 外部平台审批单id
 	 */
 	@ApiField("platform_approval_id")
@@ -62,6 +92,26 @@ APPLYING-申请中；VALID-已生效；CANCELLED-已取消；REJECTED-已驳回
 	 */
 	@ApiField("purpose")
 	private String purpose;
+
+	/** 
+	 * 一级场景，更多枚举请见：
+	 */
+	@ApiField("scene")
+	private String scene;
+
+	public void setApplyFinishTime(Date applyFinishTime) {
+		this.applyFinishTime = applyFinishTime;
+	}
+	public Date getApplyFinishTime( ) {
+		return this.applyFinishTime;
+	}
+
+	public void setApplyStartTime(Date applyStartTime) {
+		this.applyStartTime = applyStartTime;
+	}
+	public Date getApplyStartTime( ) {
+		return this.applyStartTime;
+	}
 
 	public void setApprovalResult(String approvalResult) {
 		this.approvalResult = approvalResult;
@@ -84,6 +134,13 @@ APPLYING-申请中；VALID-已生效；CANCELLED-已取消；REJECTED-已驳回
 		return this.approvalTripDtoList;
 	}
 
+	public void setCategory(String category) {
+		this.category = category;
+	}
+	public String getCategory( ) {
+		return this.category;
+	}
+
 	public void setEmployeeId(String employeeId) {
 		this.employeeId = employeeId;
 	}
@@ -98,6 +155,20 @@ APPLYING-申请中；VALID-已生效；CANCELLED-已取消；REJECTED-已驳回
 		return this.enterpriseId;
 	}
 
+	public void setExpenseTypeSubCategory(String expenseTypeSubCategory) {
+		this.expenseTypeSubCategory = expenseTypeSubCategory;
+	}
+	public String getExpenseTypeSubCategory( ) {
+		return this.expenseTypeSubCategory;
+	}
+
+	public void setPaymentType(String paymentType) {
+		this.paymentType = paymentType;
+	}
+	public String getPaymentType( ) {
+		return this.paymentType;
+	}
+
 	public void setPlatformApprovalId(String platformApprovalId) {
 		this.platformApprovalId = platformApprovalId;
 	}
@@ -110,6 +181,13 @@ APPLYING-申请中；VALID-已生效；CANCELLED-已取消；REJECTED-已驳回
 	}
 	public String getPurpose( ) {
 		return this.purpose;
+	}
+
+	public void setScene(String scene) {
+		this.scene = scene;
+	}
+	public String getScene( ) {
+		return this.scene;
 	}
 
 }

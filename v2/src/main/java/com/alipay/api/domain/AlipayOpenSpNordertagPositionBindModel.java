@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenSpNordertagPositionBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1493858165424961634L;
+	private static final long serialVersionUID = 5824348198132844691L;
 
 	/**
 	 * 线圈编号

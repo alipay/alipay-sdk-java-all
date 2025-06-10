@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.antforest.reward.certify request
  * 
  * @author auto create
- * @since 1.0, 2025-05-19 15:47:25
+ * @since 1.0, 2025-06-09 20:42:28
  */
 public class AlipaySocialAntforestRewardCertifyRequest implements AlipayRequest<AlipaySocialAntforestRewardCertifyResponse> {
 

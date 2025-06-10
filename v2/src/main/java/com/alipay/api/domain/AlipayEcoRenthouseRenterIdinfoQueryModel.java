@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoRenthouseRenterIdinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8786936992228224238L;
+	private static final long serialVersionUID = 3867748518627399666L;
 
 	/**
 	 * 身份证号

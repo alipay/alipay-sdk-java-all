@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业信息
  *
  * @author auto create
- * @since 1.0, 2024-07-22 17:49:15
+ * @since 1.0, 2025-06-04 17:12:52
  */
 public class EnterpriseInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6312911671337898298L;
+	private static final long serialVersionUID = 8743165323676525397L;
 
 	/**
 	 * 共同账户id
@@ -50,6 +50,15 @@ public class EnterpriseInfoDTO extends AlipayObject {
 	 */
 	@ApiField("enterprise_alias")
 	private String enterpriseAlias;
+
+	/**
+	 * 企业简称审核状态
+PASSED： 通过
+REJECTED： 驳回
+AUDITING： 审核中
+	 */
+	@ApiField("enterprise_alias_audit_status")
+	private String enterpriseAliasAuditStatus;
 
 	/**
 	 * 统一社会信用码
@@ -163,6 +172,13 @@ public class EnterpriseInfoDTO extends AlipayObject {
 	}
 	public void setEnterpriseAlias(String enterpriseAlias) {
 		this.enterpriseAlias = enterpriseAlias;
+	}
+
+	public String getEnterpriseAliasAuditStatus() {
+		return this.enterpriseAliasAuditStatus;
+	}
+	public void setEnterpriseAliasAuditStatus(String enterpriseAliasAuditStatus) {
+		this.enterpriseAliasAuditStatus = enterpriseAliasAuditStatus;
 	}
 
 	public String getEnterpriseCode() {

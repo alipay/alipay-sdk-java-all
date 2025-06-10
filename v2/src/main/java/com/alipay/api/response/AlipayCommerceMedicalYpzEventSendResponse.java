@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.ypz.event.send response.
  * 
  * @author auto create
- * @since 1.0, 2025-02-28 11:27:24
+ * @since 1.0, 2025-06-06 10:52:28
  */
 public class AlipayCommerceMedicalYpzEventSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7459834492552673387L;
+	private static final long serialVersionUID = 2335765339559497621L;
 
 	/** 
 	 * 返回数据

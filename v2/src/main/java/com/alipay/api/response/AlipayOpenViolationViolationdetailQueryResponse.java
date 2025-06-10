@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.violation.violationdetail.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-12 10:47:26
+ * @since 1.0, 2025-06-04 17:17:03
  */
 public class AlipayOpenViolationViolationdetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3658344395835736595L;
+	private static final long serialVersionUID = 3254233757855252389L;
 
 	/** 
 	 * 申诉截止日期。

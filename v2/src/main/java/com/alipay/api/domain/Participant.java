@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class Participant extends AlipayObject {
 
-	private static final long serialVersionUID = 7635621635813485785L;
+	private static final long serialVersionUID = 2832524816563879762L;
 
 	/**
 	 * 如果identity_type为BANKCARD_NO需传递该参数，涉及属性如下： inst_name 银行卡卡开户银行 inst_province 银行所在省份 inst_city 银行所在市 inst_branch_name 收款银行所属支行 bank_code 银行卡支行联行号 account_type 银行卡账户类型 1:对公 2：对私

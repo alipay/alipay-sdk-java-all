@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.data.riskservicecloud.input.send response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-29 10:42:04
+ * @since 1.0, 2025-06-05 11:27:46
  */
 public class AlipaySecurityDataRiskservicecloudInputSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4468184679797475749L;
+	private static final long serialVersionUID = 3654673138996371535L;
 
 	
 

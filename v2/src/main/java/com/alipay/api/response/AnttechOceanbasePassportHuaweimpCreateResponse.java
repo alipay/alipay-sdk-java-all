@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.oceanbase.passport.huaweimp.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-27 13:39:12
+ * @since 1.0, 2025-06-09 15:22:29
  */
 public class AnttechOceanbasePassportHuaweimpCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2615995382778738369L;
+	private static final long serialVersionUID = 6721546187779475129L;
 
 	/** 
 	 * 加密后的账号
 	 */
 	@ApiField("account_name")
 	private String accountName;
+
+	/** 
+	 * 实体角色id
+	 */
+	@ApiField("entity_role_id")
+	private String entityRoleId;
 
 	/** 
 	 * true时，accountName为空
@@ -38,6 +44,13 @@ false时，accountName为实际注册使用账号
 	}
 	public String getAccountName( ) {
 		return this.accountName;
+	}
+
+	public void setEntityRoleId(String entityRoleId) {
+		this.entityRoleId = entityRoleId;
+	}
+	public String getEntityRoleId( ) {
+		return this.entityRoleId;
 	}
 
 	public void setIdempotent(Boolean idempotent) {
