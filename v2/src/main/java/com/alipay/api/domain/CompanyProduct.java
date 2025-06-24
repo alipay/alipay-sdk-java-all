@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业（商户）已开通产品
  *
  * @author auto create
- * @since 1.0, 2025-04-22 15:38:14
+ * @since 1.0, 2025-06-12 14:48:45
  */
 public class CompanyProduct extends AlipayObject {
 
-	private static final long serialVersionUID = 7754623322917541128L;
+	private static final long serialVersionUID = 1146763333188481267L;
+
+	/**
+	 * 企业信息查询会将校验失败的异常信息返回,无校验异常则返回空数组
+	 */
+	@ApiField("check_error_list")
+	private ProductInvoiceCheckResult checkErrorList;
 
 	/**
 	 * 企业（商户）转账账户ID
@@ -36,6 +42,13 @@ public class CompanyProduct extends AlipayObject {
 	 */
 	@ApiField("product_name")
 	private String productName;
+
+	public ProductInvoiceCheckResult getCheckErrorList() {
+		return this.checkErrorList;
+	}
+	public void setCheckErrorList(ProductInvoiceCheckResult checkErrorList) {
+		this.checkErrorList = checkErrorList;
+	}
 
 	public String getCompanyAccountId() {
 		return this.companyAccountId;

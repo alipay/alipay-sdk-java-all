@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.roomrent.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-01 13:42:05
+ * @since 1.0, 2025-06-13 10:18:24
  */
 public class AlipayOpenAppRoomrentQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5821433934258386367L;
+	private static final long serialVersionUID = 5271663967198781249L;
 
 	/** 
 	 * 通过alipay.open.app.localitem.template.query获取本地商品模板信息接口得到商品属性key，is_required=1时属性必填

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 海图商机查询
  *
  * @author auto create
- * @since 1.0, 2024-03-06 09:54:54
+ * @since 1.0, 2025-06-18 15:26:02
  */
 public class AnttechOceanbaseObglobalLeadsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7467461713256666265L;
+	private static final long serialVersionUID = 5626711843724653112L;
 
 	/**
 	 * 海图商机查询请求

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 配送范围详细信息
  *
  * @author auto create
- * @since 1.0, 2025-03-19 16:22:34
+ * @since 1.0, 2025-06-19 19:03:02
  */
 public class Delivery extends AlipayObject {
 
-	private static final long serialVersionUID = 4273567489818725274L;
+	private static final long serialVersionUID = 2129479472382326621L;
 
 	/**
 	 * App配送范围code

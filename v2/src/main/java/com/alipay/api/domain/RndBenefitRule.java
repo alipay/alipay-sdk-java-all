@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 随机立减优惠规则
  *
  * @author auto create
- * @since 1.0, 2022-11-14 19:24:05
+ * @since 1.0, 2025-06-14 18:32:46
  */
 public class RndBenefitRule extends AlipayObject {
 
-	private static final long serialVersionUID = 4681674776751618234L;
+	private static final long serialVersionUID = 3157461642723358237L;
 
 	/**
 	 * 最大优惠

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建门店提交leads作业接口
  *
  * @author auto create
- * @since 1.0, 2025-04-25 20:04:27
+ * @since 1.0, 2025-06-23 14:54:58
  */
 public class AlipayCommerceOperationOpportunityLeadsCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3785669521678847146L;
+	private static final long serialVersionUID = 2238983816373718843L;
 
 	/**
 	 * 业务主体
@@ -43,6 +43,12 @@ public class AlipayCommerceOperationOpportunityLeadsCreateModel extends AlipayOb
 	 */
 	@ApiField("contact_person_info")
 	private BsContactPersonInfo contactPersonInfo;
+
+	/**
+	 * 设备数量
+	 */
+	@ApiField("device_num")
+	private Long deviceNum;
 
 	/**
 	 * 支付宝侧铺设设备类型
@@ -87,6 +93,12 @@ public class AlipayCommerceOperationOpportunityLeadsCreateModel extends AlipayOb
 	@ApiField("shop_info")
 	private BsShopInfoDetail shopInfo;
 
+	/**
+	 * 饿了么渠道区分
+	 */
+	@ApiField("source")
+	private String source;
+
 	public BizEntityInfo getBizEntityInfo() {
 		return this.bizEntityInfo;
 	}
@@ -113,6 +125,13 @@ public class AlipayCommerceOperationOpportunityLeadsCreateModel extends AlipayOb
 	}
 	public void setContactPersonInfo(BsContactPersonInfo contactPersonInfo) {
 		this.contactPersonInfo = contactPersonInfo;
+	}
+
+	public Long getDeviceNum() {
+		return this.deviceNum;
+	}
+	public void setDeviceNum(Long deviceNum) {
+		this.deviceNum = deviceNum;
 	}
 
 	public String getDeviceType() {
@@ -162,6 +181,13 @@ public class AlipayCommerceOperationOpportunityLeadsCreateModel extends AlipayOb
 	}
 	public void setShopInfo(BsShopInfoDetail shopInfo) {
 		this.shopInfo = shopInfo;
+	}
+
+	public String getSource() {
+		return this.source;
+	}
+	public void setSource(String source) {
+		this.source = source;
 	}
 
 }

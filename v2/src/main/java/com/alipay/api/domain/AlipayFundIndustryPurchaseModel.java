@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业基金申购
  *
  * @author auto create
- * @since 1.0, 2022-12-08 19:17:49
+ * @since 1.0, 2025-06-10 18:10:31
  */
 public class AlipayFundIndustryPurchaseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7775949342698619863L;
+	private static final long serialVersionUID = 4888831735378376363L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号，调用签约接口成功时返回。

@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租赁订单支付
  *
  * @author auto create
- * @since 1.0, 2025-06-09 16:48:47
+ * @since 1.0, 2025-06-17 10:34:11
  */
 public class AlipayCommerceRentOrderPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2784428371899146162L;
+	private static final long serialVersionUID = 7555211529189226167L;
 
 	/**
-	 * 交易组件业务订单号
+	 * 交易组件订单号
 	 */
 	@ApiField("order_id")
 	private String orderId;
@@ -54,7 +54,7 @@ public class AlipayCommerceRentOrderPayModel extends AlipayObject {
 	private String payNotifyUrl;
 
 	/**
-	 * 从交易创建时间开始计算。 该笔支付允许的最晚付款时间，逾期将关闭交易。取值范围：1m～15d。m-分钟，h-小时，d-天。 该参数数值不接受小数点， 如 1.5h，可转换为 90m。 当面付场景默认值为3h； 其它场景默认值为15d;
+	 * 从交易创建时间开始计算。 该笔支付允许的最晚付款时间，逾期将关闭交易。取值范围：1m～15d。m-分钟，h-小时，d-天。 该参数数值不接受小数点， 如 1.5h，可转换为 90m。 租赁代扣默认值为5m、JSAPI支付默认值30m
 	 */
 	@ApiField("pay_timeout_express")
 	private String payTimeoutExpress;

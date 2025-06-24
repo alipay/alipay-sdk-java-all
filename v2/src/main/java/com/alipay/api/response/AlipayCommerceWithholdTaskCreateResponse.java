@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.withhold.task.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-01-13 15:12:24
+ * @since 1.0, 2025-06-19 13:47:10
  */
 public class AlipayCommerceWithholdTaskCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3664789596959427437L;
+	private static final long serialVersionUID = 1775171522461451871L;
 
 	/** 
 	 * 代扣协议号

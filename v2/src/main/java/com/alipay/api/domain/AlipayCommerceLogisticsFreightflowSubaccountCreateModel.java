@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 货运企业支付子户开户
  *
  * @author auto create
- * @since 1.0, 2025-03-19 14:44:54
+ * @since 1.0, 2025-06-23 15:19:18
  */
 public class AlipayCommerceLogisticsFreightflowSubaccountCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4422325911998619139L;
+	private static final long serialVersionUID = 8696836347896234982L;
 
 	/**
 	 * 物流公司编码
@@ -54,6 +54,12 @@ public class AlipayCommerceLogisticsFreightflowSubaccountCreateModel extends Ali
 	 */
 	@ApiField("partner_id")
 	private String partnerId;
+
+	/**
+	 * 运企付开户时子户归属人信息,网货平台必填
+	 */
+	@ApiField("sub_account_owner_info")
+	private FreightFlowSubAccountOwnerInfo subAccountOwnerInfo;
 
 	public String getLogisticsCode() {
 		return this.logisticsCode;
@@ -102,6 +108,13 @@ public class AlipayCommerceLogisticsFreightflowSubaccountCreateModel extends Ali
 	}
 	public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
+	}
+
+	public FreightFlowSubAccountOwnerInfo getSubAccountOwnerInfo() {
+		return this.subAccountOwnerInfo;
+	}
+	public void setSubAccountOwnerInfo(FreightFlowSubAccountOwnerInfo subAccountOwnerInfo) {
+		this.subAccountOwnerInfo = subAccountOwnerInfo;
 	}
 
 }

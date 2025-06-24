@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 货运企业支付转账申请
  *
  * @author auto create
- * @since 1.0, 2025-05-07 10:08:50
+ * @since 1.0, 2025-06-23 15:19:35
  */
 public class AlipayCommerceLogisticsFreightflowTransferApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4484741424938184138L;
+	private static final long serialVersionUID = 1827721379625318975L;
 
 	/**
 	 * 转账金额，单位分
@@ -73,6 +73,18 @@ ANT_MYBANK(网商银行模式)
 	 */
 	@ApiField("request_time")
 	private String requestTime;
+
+	/**
+	 * 交易用途
+	 */
+	@ApiField("trans_purpose")
+	private String transPurpose;
+
+	/**
+	 * 运单信息
+	 */
+	@ApiField("waybill_info")
+	private FreightFlowWaybillInfo waybillInfo;
 
 	public String getAmount() {
 		return this.amount;
@@ -142,6 +154,20 @@ ANT_MYBANK(网商银行模式)
 	}
 	public void setRequestTime(String requestTime) {
 		this.requestTime = requestTime;
+	}
+
+	public String getTransPurpose() {
+		return this.transPurpose;
+	}
+	public void setTransPurpose(String transPurpose) {
+		this.transPurpose = transPurpose;
+	}
+
+	public FreightFlowWaybillInfo getWaybillInfo() {
+		return this.waybillInfo;
+	}
+	public void setWaybillInfo(FreightFlowWaybillInfo waybillInfo) {
+		this.waybillInfo = waybillInfo;
 	}
 
 }

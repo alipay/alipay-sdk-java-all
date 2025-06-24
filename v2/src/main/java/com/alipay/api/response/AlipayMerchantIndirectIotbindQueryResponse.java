@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.indirect.iotbind.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-17 11:28:28
+ * @since 1.0, 2025-06-21 14:12:27
  */
 public class AlipayMerchantIndirectIotbindQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1498773416184482761L;
+	private static final long serialVersionUID = 8495591526981578433L;
 
 	/** 
 	 * 设备绑定状态：BIND代表绑定，UNBIND代表未绑定

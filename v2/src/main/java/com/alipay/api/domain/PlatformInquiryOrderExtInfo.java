@@ -5,14 +5,13 @@ import com.alipay.api.internal.mapping.ApiField;
 
 /**
  * 问诊订单扩展信息
-
  *
  * @author auto create
- * @since 1.0, 2025-04-25 11:25:30
+ * @since 1.0, 2025-06-12 13:36:47
  */
 public class PlatformInquiryOrderExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8118222946145482826L;
+	private static final long serialVersionUID = 8388218666619484245L;
 
 	/**
 	 * 支付宝渠道订单标识
@@ -72,6 +71,12 @@ public class PlatformInquiryOrderExtInfo extends AlipayObject {
 	private String orderPid;
 
 	/**
+	 * 订单原价，单位元，保留小数点2位
+	 */
+	@ApiField("original_price")
+	private String originalPrice;
+
+	/**
 	 * 加号扩展信息
 	 */
 	@ApiField("plus_register_info")
@@ -89,6 +94,7 @@ public class PlatformInquiryOrderExtInfo extends AlipayObject {
 支付宝义诊频道:ALIPAY_PUBLIC_WELFARE_INQUIRY_CHANNEL
 支付宝小程序:ALIPAY_MINI_APP
 支付宝其他渠道:ALIPAY_OTHER_CHANNEL
+和PC,H5,PATIENT_APP,WECHAT_APP
 	 */
 	@ApiField("source")
 	private String source;
@@ -154,6 +160,13 @@ public class PlatformInquiryOrderExtInfo extends AlipayObject {
 	}
 	public void setOrderPid(String orderPid) {
 		this.orderPid = orderPid;
+	}
+
+	public String getOriginalPrice() {
+		return this.originalPrice;
+	}
+	public void setOriginalPrice(String originalPrice) {
+		this.originalPrice = originalPrice;
 	}
 
 	public PlatformPlusRegisterInfo getPlusRegisterInfo() {

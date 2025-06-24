@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.verifyidentity.voiceprint.verify response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-05 18:42:10
+ * @since 1.0, 2025-06-17 19:07:28
  */
 public class AlipaySecurityRiskVerifyidentityVoiceprintVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8716993643172714952L;
+	private static final long serialVersionUID = 5622824344129329263L;
 
 	/** 
 	 * 语音识别文本
@@ -27,10 +27,22 @@ public class AlipaySecurityRiskVerifyidentityVoiceprintVerifyResponse extends Al
 	private String longVerifySessionId;
 
 	/** 
+	 * 校验结果描述
+	 */
+	@ApiField("verify_code")
+	private String verifyCode;
+
+	/** 
 	 * 核身渲染信息
 	 */
 	@ApiField("verify_data")
 	private String verifyData;
+
+	/** 
+	 * 校验过程中透出的文案
+	 */
+	@ApiField("verify_message")
+	private String verifyMessage;
 
 	/** 
 	 * 核身校验是否通过
@@ -58,11 +70,25 @@ public class AlipaySecurityRiskVerifyidentityVoiceprintVerifyResponse extends Al
 		return this.longVerifySessionId;
 	}
 
+	public void setVerifyCode(String verifyCode) {
+		this.verifyCode = verifyCode;
+	}
+	public String getVerifyCode( ) {
+		return this.verifyCode;
+	}
+
 	public void setVerifyData(String verifyData) {
 		this.verifyData = verifyData;
 	}
 	public String getVerifyData( ) {
 		return this.verifyData;
+	}
+
+	public void setVerifyMessage(String verifyMessage) {
+		this.verifyMessage = verifyMessage;
+	}
+	public String getVerifyMessage( ) {
+		return this.verifyMessage;
 	}
 
 	public void setVerifyPass(String verifyPass) {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 货运账户信息模型
  *
  * @author auto create
- * @since 1.0, 2025-03-19 14:44:54
+ * @since 1.0, 2025-06-23 15:19:18
  */
 public class FreigtFlowAccount extends AlipayObject {
 
-	private static final long serialVersionUID = 1481998154359899695L;
+	private static final long serialVersionUID = 5252537732353834543L;
 
 	/**
 	 * 银行类型，如果为网商银行则传

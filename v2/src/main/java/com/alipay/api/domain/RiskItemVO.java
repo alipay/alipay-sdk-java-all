@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 智安盾-租赁风险项模型
  *
  * @author auto create
- * @since 1.0, 2025-04-23 19:24:17
+ * @since 1.0, 2025-06-17 16:07:25
  */
 public class RiskItemVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2621445776746573485L;
+	private static final long serialVersionUID = 2282764967735446593L;
 
 	/**
 	 * 命中的风险详细信息 当前字段已废弃(字段删除，后续不再透出)
@@ -27,7 +27,7 @@ public class RiskItemVO extends AlipayObject {
 	private String riskCode;
 
 	/**
-	 * 【订单维度共租风险】low / mid / high；
+	 * 【订单维度共租风险】nor-无共租行为, low-低风险, mid-中风险, high-高风险, sup-超高风险；
 【小程序交易健康度】数值范围 0.0 ~ 5.0 ，值越大越健康；
 	 */
 	@ApiField("risk_level")

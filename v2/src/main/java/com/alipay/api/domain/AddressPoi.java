@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 位置poi信息
  *
  * @author auto create
- * @since 1.0, 2023-11-17 14:55:29
+ * @since 1.0, 2025-06-18 14:51:07
  */
 public class AddressPoi extends AlipayObject {
 
-	private static final long serialVersionUID = 7422382698594478687L;
+	private static final long serialVersionUID = 7715986937459111698L;
+
+	/**
+	 * 区域形成编码
+	 */
+	@ApiField("ad_code")
+	private String adCode;
 
 	/**
 	 * 城市编码
@@ -42,6 +48,13 @@ public class AddressPoi extends AlipayObject {
 	 */
 	@ApiField("poi_id")
 	private String poiId;
+
+	public String getAdCode() {
+		return this.adCode;
+	}
+	public void setAdCode(String adCode) {
+		this.adCode = adCode;
+	}
 
 	public String getCountyCode() {
 		return this.countyCode;

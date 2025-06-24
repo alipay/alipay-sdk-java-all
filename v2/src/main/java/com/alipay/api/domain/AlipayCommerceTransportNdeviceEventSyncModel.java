@@ -7,14 +7,21 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝出行行业司机签到同步
  *
  * @author auto create
- * @since 1.0, 2025-05-27 20:41:52
+ * @since 1.0, 2025-06-11 14:31:32
  */
 public class AlipayCommerceTransportNdeviceEventSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3562115338318547314L;
+	private static final long serialVersionUID = 2453186719645343365L;
+
+	/**
+	 * type为driverManualSign传入司机id
+	 */
+	@ApiField("biz_event_identity")
+	private String bizEventIdentity;
 
 	/**
 	 * 司机签到-driverSign
+司机人工签到-driverManualSign
 	 */
 	@ApiField("biz_event_type")
 	private String bizEventType;
@@ -30,6 +37,13 @@ public class AlipayCommerceTransportNdeviceEventSyncModel extends AlipayObject {
 	 */
 	@ApiField("sn")
 	private String sn;
+
+	public String getBizEventIdentity() {
+		return this.bizEventIdentity;
+	}
+	public void setBizEventIdentity(String bizEventIdentity) {
+		this.bizEventIdentity = bizEventIdentity;
+	}
 
 	public String getBizEventType() {
 		return this.bizEventType;

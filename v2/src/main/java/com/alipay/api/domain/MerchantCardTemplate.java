@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 卡
  *
  * @author auto create
- * @since 1.0, 2025-04-28 22:35:23
+ * @since 1.0, 2025-06-17 15:42:05
  */
 public class MerchantCardTemplate extends AlipayObject {
 
-	private static final long serialVersionUID = 5171954294624691488L;
+	private static final long serialVersionUID = 6122794859229536863L;
 
 	/**
 	 * 违约金信息
@@ -114,6 +114,12 @@ public class MerchantCardTemplate extends AlipayObject {
 	 */
 	@ApiField("msg_app_id")
 	private String msgAppId;
+
+	/**
+	 * 用户购买该卡的时候是否需要签署购卡协议
+	 */
+	@ApiField("need_order_agreement")
+	private Boolean needOrderAgreement;
 
 	/**
 	 * 线上售卖表示。01标识已开启线上售卖。02标识未开启线上售卖.
@@ -267,6 +273,13 @@ public class MerchantCardTemplate extends AlipayObject {
 	}
 	public void setMsgAppId(String msgAppId) {
 		this.msgAppId = msgAppId;
+	}
+
+	public Boolean getNeedOrderAgreement() {
+		return this.needOrderAgreement;
+	}
+	public void setNeedOrderAgreement(Boolean needOrderAgreement) {
+		this.needOrderAgreement = needOrderAgreement;
 	}
 
 	public String getOnlineSaleSwitch() {

@@ -7,17 +7,30 @@ import com.alipay.api.internal.mapping.ApiField;
  * 绑定智能体ID
  *
  * @author auto create
- * @since 1.0, 2025-04-22 10:53:20
+ * @since 1.0, 2025-06-17 11:23:39
  */
 public class AlipayOpenAgentAppBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4385164157999177196L;
+	private static final long serialVersionUID = 7842973794731811295L;
+
+	/**
+	 * 百灵智能体id
+	 */
+	@ApiField("agent_id")
+	private String agentId;
 
 	/**
 	 * 智能体code
 	 */
 	@ApiField("app_agentcode")
 	private String appAgentcode;
+
+	public String getAgentId() {
+		return this.agentId;
+	}
+	public void setAgentId(String agentId) {
+		this.agentId = agentId;
+	}
 
 	public String getAppAgentcode() {
 		return this.appAgentcode;

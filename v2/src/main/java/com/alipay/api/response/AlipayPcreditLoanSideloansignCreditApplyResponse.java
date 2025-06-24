@@ -8,11 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.sideloansign.credit.apply response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-12 21:42:26
+ * @since 1.0, 2025-06-19 18:57:31
  */
 public class AlipayPcreditLoanSideloansignCreditApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4574317463958915356L;
+	private static final long serialVersionUID = 4661464156542443849L;
+
+	/** 
+	 * 冷静期类型
+	 */
+	@ApiField("cool_off_type")
+	private String coolOffType;
 
 	/** 
 	 * 授信申请状态
@@ -55,6 +61,13 @@ public class AlipayPcreditLoanSideloansignCreditApplyResponse extends AlipayResp
 	 */
 	@ApiField("return_sub_message")
 	private String returnSubMessage;
+
+	public void setCoolOffType(String coolOffType) {
+		this.coolOffType = coolOffType;
+	}
+	public String getCoolOffType( ) {
+		return this.coolOffType;
+	}
 
 	public void setCreditStatus(String creditStatus) {
 		this.creditStatus = creditStatus;

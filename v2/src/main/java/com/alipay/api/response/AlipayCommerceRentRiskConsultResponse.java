@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.rent.risk.consult response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-24 16:22:26
+ * @since 1.0, 2025-06-17 16:17:28
  */
 public class AlipayCommerceRentRiskConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5776278461869928948L;
+	private static final long serialVersionUID = 4656474899792879272L;
 
 	/** 
 	 * Boolean类型结果，true-命中极低风险 false-未命中极低风险

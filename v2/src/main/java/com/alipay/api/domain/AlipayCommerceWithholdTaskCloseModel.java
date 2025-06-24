@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 代扣任务取消
  *
  * @author auto create
- * @since 1.0, 2025-01-02 10:52:18
+ * @since 1.0, 2025-06-19 13:47:33
  */
 public class AlipayCommerceWithholdTaskCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6136144579979857645L;
+	private static final long serialVersionUID = 1372889834685937521L;
 
 	/**
 	 * 外部业务单号

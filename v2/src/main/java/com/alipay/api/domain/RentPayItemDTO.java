@@ -7,16 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁订单费用项明细
  *
  * @author auto create
- * @since 1.0, 2025-06-09 16:48:47
+ * @since 1.0, 2025-06-11 17:30:27
  */
 public class RentPayItemDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4771318782155688881L;
+	private static final long serialVersionUID = 4816896188879126147L;
 
 	/**
-	 * 费用金额，单位：元，精确到小数点后两位。
+	 * 费用金额，单位：元，精确到小数点后两位。 当前字段已废弃(不再需要商户传该字段)
 	 */
 	@ApiField("amount")
+	@Deprecated
 	private String amount;
 
 	/**
@@ -24,6 +25,12 @@ public class RentPayItemDTO extends AlipayObject {
 	 */
 	@ApiField("installment_no")
 	private Long installmentNo;
+
+	/**
+	 * 当前费用项支付金额，单位：元，精确到小数点后两位。
+	 */
+	@ApiField("pay_amount")
+	private String payAmount;
 
 	/**
 	 * 商家租中减收费用时传，单位：元，精确到小数点后两位。
@@ -49,6 +56,13 @@ public class RentPayItemDTO extends AlipayObject {
 	}
 	public void setInstallmentNo(Long installmentNo) {
 		this.installmentNo = installmentNo;
+	}
+
+	public String getPayAmount() {
+		return this.payAmount;
+	}
+	public void setPayAmount(String payAmount) {
+		this.payAmount = payAmount;
 	}
 
 	public String getReduction() {

@@ -1,23 +1,51 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 优惠券咨询结果
  *
  * @author auto create
- * @since 1.0, 2023-06-19 20:35:54
+ * @since 1.0, 2025-06-18 11:27:56
  */
 public class VoucherConsultInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7794943876375252953L;
+	private static final long serialVersionUID = 2123823139694987634L;
+
+	/**
+	 * 开始时间，立减为活动开始时间，券为券生效时间
+	 */
+	@ApiField("active_time")
+	private Date activeTime;
+
+	/**
+	 * 资产优惠类型，用于区分不同优惠
+	 */
+	@ApiField("asset_type")
+	private String assetType;
+
+	/**
+	 * 资产编码
+	 */
+	@ApiField("assets_code")
+	private String assetsCode;
 
 	/**
 	 * 封顶优惠金额，单位为元
 	 */
 	@ApiField("ceiling_amount")
 	private String ceilingAmount;
+
+	/**
+	 * 结束时间，立减为活动结束时间，券为券失效时间
+	 */
+	@ApiField("expired_time")
+	private Date expiredTime;
 
 	/**
 	 * 单品券商品优惠信息，仅针对单品券
@@ -50,13 +78,20 @@ public class VoucherConsultInfo extends AlipayObject {
 	private String promoType;
 
 	/**
+	 * 额度信息
+	 */
+	@ApiListField("quota_info_list")
+	@ApiField("quota_info_d_t_o")
+	private List<QuotaInfoDTO> quotaInfoList;
+
+	/**
 	 * 满减金额，单位为元，仅针对代金券
 	 */
 	@ApiField("reduction_amount")
 	private String reductionAmount;
 
 	/**
-	 * 优惠额度，如3折券，返回0.7，仅针对折扣券
+	 * 优惠额度，小数表示，0.7 表示 30% 的折扣
 	 */
 	@ApiField("reduction_ratio")
 	private String reductionRatio;
@@ -91,11 +126,39 @@ public class VoucherConsultInfo extends AlipayObject {
 	@ApiField("voucher_type")
 	private String voucherType;
 
+	public Date getActiveTime() {
+		return this.activeTime;
+	}
+	public void setActiveTime(Date activeTime) {
+		this.activeTime = activeTime;
+	}
+
+	public String getAssetType() {
+		return this.assetType;
+	}
+	public void setAssetType(String assetType) {
+		this.assetType = assetType;
+	}
+
+	public String getAssetsCode() {
+		return this.assetsCode;
+	}
+	public void setAssetsCode(String assetsCode) {
+		this.assetsCode = assetsCode;
+	}
+
 	public String getCeilingAmount() {
 		return this.ceilingAmount;
 	}
 	public void setCeilingAmount(String ceilingAmount) {
 		this.ceilingAmount = ceilingAmount;
+	}
+
+	public Date getExpiredTime() {
+		return this.expiredTime;
+	}
+	public void setExpiredTime(Date expiredTime) {
+		this.expiredTime = expiredTime;
 	}
 
 	public ItemPromoInfo getItemPromoInfo() {
@@ -131,6 +194,13 @@ public class VoucherConsultInfo extends AlipayObject {
 	}
 	public void setPromoType(String promoType) {
 		this.promoType = promoType;
+	}
+
+	public List<QuotaInfoDTO> getQuotaInfoList() {
+		return this.quotaInfoList;
+	}
+	public void setQuotaInfoList(List<QuotaInfoDTO> quotaInfoList) {
+		this.quotaInfoList = quotaInfoList;
 	}
 
 	public String getReductionAmount() {

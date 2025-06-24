@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.sign.shakecode.create request
  * 
  * @author auto create
- * @since 1.0, 2025-04-02 11:03:15
+ * @since 1.0, 2025-06-19 13:44:45
  */
 public class AlipayCommerceSignShakecodeCreateRequest implements AlipayRequest<AlipayCommerceSignShakecodeCreateResponse> {
 

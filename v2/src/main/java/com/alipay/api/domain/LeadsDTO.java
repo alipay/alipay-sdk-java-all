@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 海图商机对象
  *
  * @author auto create
- * @since 1.0, 2024-03-05 14:14:08
+ * @since 1.0, 2025-06-18 15:26:02
  */
 public class LeadsDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7888355184444543715L;
+	private static final long serialVersionUID = 5159215191539799765L;
 
 	/**
 	 * BD团队名称
@@ -92,6 +92,12 @@ public class LeadsDTO extends AlipayObject {
 	 */
 	@ApiField("ob_sa_work_no")
 	private String obSaWorkNo;
+
+	/**
+	 * 商机或项目名称
+	 */
+	@ApiField("project_name")
+	private String projectName;
 
 	/**
 	 * 商机阶段CODE
@@ -206,6 +212,13 @@ public class LeadsDTO extends AlipayObject {
 	}
 	public void setObSaWorkNo(String obSaWorkNo) {
 		this.obSaWorkNo = obSaWorkNo;
+	}
+
+	public String getProjectName() {
+		return this.projectName;
+	}
+	public void setProjectName(String projectName) {
+		this.projectName = projectName;
 	}
 
 	public String getProjectPhase() {

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.airticket.order.sync response.
  * 
  * @author auto create
- * @since 1.0, 2025-01-09 13:55:49
+ * @since 1.0, 2025-06-17 11:01:09
  */
 public class AlipayCommerceTransportAirticketOrderSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6664411923477321864L;
+	private static final long serialVersionUID = 5411393849384711557L;
 
 	/** 
 	 * 订单修改时间，与请求入参的modified_time保持一致

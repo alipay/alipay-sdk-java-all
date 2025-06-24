@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 处方信息
  *
  * @author auto create
- * @since 1.0, 2025-04-16 20:00:53
+ * @since 1.0, 2025-06-11 16:13:06
  */
 public class PrescriptionVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1699752748664355697L;
+	private static final long serialVersionUID = 2577432751332832923L;
 
 	/**
 	 * 创建处方的时间，即开方时间

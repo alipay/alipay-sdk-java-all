@@ -10,18 +10,24 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 碰一下线圈绑定点位
  *
  * @author auto create
- * @since 1.0, 2025-06-03 13:49:01
+ * @since 1.0, 2025-06-10 19:24:54
  */
 public class AlipayOpenSpNordertagPositionBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5824348198132844691L;
+	private static final long serialVersionUID = 3531541914826119361L;
 
 	/**
-	 * 线圈编号
+	 * 物料编号，若和碰一下链接同时传入，以物料编号为准
 	 */
 	@ApiListField("cloi_no")
 	@ApiField("string")
 	private List<String> cloiNo;
+
+	/**
+	 * 除物料编号外其他支持绑定的物料绑定参数，现支持碰一下链接绑定，都存在时已物料编号为绑定条件
+	 */
+	@ApiField("ext_param")
+	private NOrderTagBindResp extParam;
 
 	/**
 	 * 进行的操作
@@ -40,6 +46,13 @@ public class AlipayOpenSpNordertagPositionBindModel extends AlipayObject {
 	}
 	public void setCloiNo(List<String> cloiNo) {
 		this.cloiNo = cloiNo;
+	}
+
+	public NOrderTagBindResp getExtParam() {
+		return this.extParam;
+	}
+	public void setExtParam(NOrderTagBindResp extParam) {
+		this.extParam = extParam;
 	}
 
 	public String getOperate() {

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 售卖订单信息
  *
  * @author auto create
- * @since 1.0, 2025-06-09 14:24:05
+ * @since 1.0, 2025-06-17 16:16:37
  */
 public class CardOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2542143411966714331L;
+	private static final long serialVersionUID = 8738391259275586254L;
 
 	/**
 	 * 卡关联的最新一笔售后单编号
@@ -163,10 +163,22 @@ public class CardOrderInfo extends AlipayObject {
 	private String openId;
 
 	/**
+	 * 订单金额，单位分
+	 */
+	@ApiField("order_amount")
+	private Long orderAmount;
+
+	/**
 	 * 交易组件订单编号
 	 */
 	@ApiField("order_id")
 	private String orderId;
+
+	/**
+	 * 私域订单展示为非计费渠道
+	 */
+	@ApiField("order_scene")
+	private String orderScene;
 
 	/**
 	 * 用户购卡时的卡原价，单位分
@@ -181,10 +193,34 @@ public class CardOrderInfo extends AlipayObject {
 	private String outOrderNo;
 
 	/**
+	 * 违约金金额，单位分
+	 */
+	@ApiField("penalty_amount")
+	private Long penaltyAmount;
+
+	/**
+	 * 退卡金额，单位分
+	 */
+	@ApiField("refund_amount")
+	private Long refundAmount;
+
+	/**
 	 * 退款金额，单位：分
 	 */
 	@ApiField("refund_cash")
 	private Long refundCash;
+
+	/**
+	 * 退卡时间
+	 */
+	@ApiField("refund_time")
+	private Date refundTime;
+
+	/**
+	 * 剩余金额，单位：分
+	 */
+	@ApiField("remain_amount")
+	private Long remainAmount;
 
 	/**
 	 * 剩余期数(次数)
@@ -203,6 +239,12 @@ public class CardOrderInfo extends AlipayObject {
 	 */
 	@ApiField("shop_id")
 	private String shopId;
+
+	/**
+	 * 当前订单再购卡时是否签署了购卡协议
+	 */
+	@ApiField("signed_order_agreement")
+	private Boolean signedOrderAgreement;
 
 	/**
 	 * 总期数(次数)
@@ -224,10 +266,22 @@ public class CardOrderInfo extends AlipayObject {
 	private Long usableCash;
 
 	/**
+	 * 已使用金额，单位分
+	 */
+	@ApiField("used_amount")
+	private Long usedAmount;
+
+	/**
 	 * 已核销金额，包含退款金额，单位：分
 	 */
 	@ApiField("used_cash")
 	private Long usedCash;
+
+	/**
+	 * 已使用次数
+	 */
+	@ApiField("used_count")
+	private Long usedCount;
 
 	/**
 	 * 支付宝用户的userId。
@@ -415,11 +469,25 @@ public class CardOrderInfo extends AlipayObject {
 		this.openId = openId;
 	}
 
+	public Long getOrderAmount() {
+		return this.orderAmount;
+	}
+	public void setOrderAmount(Long orderAmount) {
+		this.orderAmount = orderAmount;
+	}
+
 	public String getOrderId() {
 		return this.orderId;
 	}
 	public void setOrderId(String orderId) {
 		this.orderId = orderId;
+	}
+
+	public String getOrderScene() {
+		return this.orderScene;
+	}
+	public void setOrderScene(String orderScene) {
+		this.orderScene = orderScene;
 	}
 
 	public Long getOriginPriceTotal() {
@@ -436,11 +504,39 @@ public class CardOrderInfo extends AlipayObject {
 		this.outOrderNo = outOrderNo;
 	}
 
+	public Long getPenaltyAmount() {
+		return this.penaltyAmount;
+	}
+	public void setPenaltyAmount(Long penaltyAmount) {
+		this.penaltyAmount = penaltyAmount;
+	}
+
+	public Long getRefundAmount() {
+		return this.refundAmount;
+	}
+	public void setRefundAmount(Long refundAmount) {
+		this.refundAmount = refundAmount;
+	}
+
 	public Long getRefundCash() {
 		return this.refundCash;
 	}
 	public void setRefundCash(Long refundCash) {
 		this.refundCash = refundCash;
+	}
+
+	public Date getRefundTime() {
+		return this.refundTime;
+	}
+	public void setRefundTime(Date refundTime) {
+		this.refundTime = refundTime;
+	}
+
+	public Long getRemainAmount() {
+		return this.remainAmount;
+	}
+	public void setRemainAmount(Long remainAmount) {
+		this.remainAmount = remainAmount;
 	}
 
 	public Long getRemainCount() {
@@ -464,6 +560,13 @@ public class CardOrderInfo extends AlipayObject {
 		this.shopId = shopId;
 	}
 
+	public Boolean getSignedOrderAgreement() {
+		return this.signedOrderAgreement;
+	}
+	public void setSignedOrderAgreement(Boolean signedOrderAgreement) {
+		this.signedOrderAgreement = signedOrderAgreement;
+	}
+
 	public Long getTotalCount() {
 		return this.totalCount;
 	}
@@ -485,11 +588,25 @@ public class CardOrderInfo extends AlipayObject {
 		this.usableCash = usableCash;
 	}
 
+	public Long getUsedAmount() {
+		return this.usedAmount;
+	}
+	public void setUsedAmount(Long usedAmount) {
+		this.usedAmount = usedAmount;
+	}
+
 	public Long getUsedCash() {
 		return this.usedCash;
 	}
 	public void setUsedCash(Long usedCash) {
 		this.usedCash = usedCash;
+	}
+
+	public Long getUsedCount() {
+		return this.usedCount;
+	}
+	public void setUsedCount(Long usedCount) {
+		this.usedCount = usedCount;
 	}
 
 	public String getUserId() {

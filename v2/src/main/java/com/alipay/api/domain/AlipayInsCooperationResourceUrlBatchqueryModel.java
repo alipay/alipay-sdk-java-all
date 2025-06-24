@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保险管家沟通多媒体文件实时文件地址获取
  *
  * @author auto create
- * @since 1.0, 2022-06-02 15:37:19
+ * @since 1.0, 2025-06-20 10:44:58
  */
 public class AlipayInsCooperationResourceUrlBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8246124227436873687L;
+	private static final long serialVersionUID = 7251735198798792719L;
 
 	/**
 	 * 请求发生的时间

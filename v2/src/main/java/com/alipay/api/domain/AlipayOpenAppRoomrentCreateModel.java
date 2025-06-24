@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租房商品创建接口
  *
  * @author auto create
- * @since 1.0, 2024-06-26 16:20:27
+ * @since 1.0, 2025-06-13 10:18:14
  */
 public class AlipayOpenAppRoomrentCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2649924194872295153L;
+	private static final long serialVersionUID = 1536266547876831387L;
 
 	/**
 	 * 通过alipay.open.app.localitem.template.query获取本地商品模板信息接口得到商品属性key，is_required=1时属性必填

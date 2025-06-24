@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开票受理单据
  *
  * @author auto create
- * @since 1.0, 2024-06-11 19:03:36
+ * @since 1.0, 2025-06-11 16:27:28
  */
 public class InvoiceApplyOpenApi extends AlipayObject {
 
-	private static final long serialVersionUID = 7692652264255787765L;
+	private static final long serialVersionUID = 5418831235425137151L;
 
 	/**
 	 * 金额
@@ -162,6 +162,12 @@ public class InvoiceApplyOpenApi extends AlipayObject {
 	 */
 	@ApiField("source")
 	private String source;
+
+	/**
+	 * 指定开票金额
+	 */
+	@ApiField("specify_apply_amount")
+	private String specifyApplyAmount;
 
 	/**
 	 * 税收分类编码，非必填
@@ -360,6 +366,13 @@ public class InvoiceApplyOpenApi extends AlipayObject {
 	}
 	public void setSource(String source) {
 		this.source = source;
+	}
+
+	public String getSpecifyApplyAmount() {
+		return this.specifyApplyAmount;
+	}
+	public void setSpecifyApplyAmount(String specifyApplyAmount) {
+		this.specifyApplyAmount = specifyApplyAmount;
 	}
 
 	public String getTaxClassificationCode() {

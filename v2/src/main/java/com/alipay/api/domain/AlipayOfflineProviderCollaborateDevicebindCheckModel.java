@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOfflineProviderCollaborateDevicebindCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8876252997225818649L;
+	private static final long serialVersionUID = 7226721152557713718L;
 
 	/**
 	 * 1. 直连绑定必传： RECORDS_TYPE_PID(直连 PID)、 RECORDS_TYPE_SHOPID(shopid); 2. 间连绑定必传： RECORDS_TYPE_SMID（二级商家 ID）。

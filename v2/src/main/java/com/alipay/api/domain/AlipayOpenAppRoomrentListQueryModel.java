@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租房商品分页查询接口
  *
  * @author auto create
- * @since 1.0, 2024-07-01 13:33:14
+ * @since 1.0, 2025-06-13 10:18:43
  */
 public class AlipayOpenAppRoomrentListQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8469253432466954182L;
+	private static final long serialVersionUID = 6187279379929933151L;
 
 	/**
 	 * 支付宝平台侧商品ID列表，最多20个。

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AnttechMorseMarketingBillsBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5175643413438471818L;
+	private static final long serialVersionUID = 1467411818795468521L;
 
 	/** 
 	 * 交易账单列表

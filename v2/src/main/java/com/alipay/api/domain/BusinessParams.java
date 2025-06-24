@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业务信息参数
  *
  * @author auto create
- * @since 1.0, 2025-04-28 11:27:20
+ * @since 1.0, 2025-06-16 16:34:28
  */
 public class BusinessParams extends AlipayObject {
 
-	private static final long serialVersionUID = 8598248844817133481L;
+	private static final long serialVersionUID = 3129218295975281436L;
 
 	/**
 	 * 实际订单时间，在乘车码场景，传入的是用户刷码乘车时间
 	 */
 	@ApiField("actual_order_time")
 	private String actualOrderTime;
+
+	/**
+	 * 买家备注信息
+	 */
+	@ApiField("buyer_memo")
+	private String buyerMemo;
 
 	/**
 	 * 校园卡编号
@@ -84,6 +90,13 @@ COMMON_ASSET：自有资金资产
 	}
 	public void setActualOrderTime(String actualOrderTime) {
 		this.actualOrderTime = actualOrderTime;
+	}
+
+	public String getBuyerMemo() {
+		return this.buyerMemo;
+	}
+	public void setBuyerMemo(String buyerMemo) {
+		this.buyerMemo = buyerMemo;
 	}
 
 	public String getCampusCard() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户确认创建钱包
  *
  * @author auto create
- * @since 1.0, 2024-08-14 11:00:52
+ * @since 1.0, 2025-06-17 23:47:59
  */
 public class AlipayFundWalletTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1633467498287589392L;
+	private static final long serialVersionUID = 3825719956936572121L;
 
 	/**
 	 * 开户场景
@@ -24,6 +24,12 @@ public class AlipayFundWalletTemplateCreateModel extends AlipayObject {
 	 */
 	@ApiField("consume_extend")
 	private ConsumeExtend consumeExtend;
+
+	/**
+	 * 如果存在大量入金笔数不出金场景，将该字段传为true。大量入金笔数且不出金场景，支付宝内部会有性能问题，一个钱包超过2000笔未核销笔数会阻断交易
+	 */
+	@ApiField("has_large_details_scene")
+	private Boolean hasLargeDetailsScene;
 
 	/**
 	 * 外部业务号
@@ -61,6 +67,13 @@ public class AlipayFundWalletTemplateCreateModel extends AlipayObject {
 	}
 	public void setConsumeExtend(ConsumeExtend consumeExtend) {
 		this.consumeExtend = consumeExtend;
+	}
+
+	public Boolean getHasLargeDetailsScene() {
+		return this.hasLargeDetailsScene;
+	}
+	public void setHasLargeDetailsScene(Boolean hasLargeDetailsScene) {
+		this.hasLargeDetailsScene = hasLargeDetailsScene;
 	}
 
 	public String getOutBizNo() {

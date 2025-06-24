@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.multideduct.token.apply response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-29 17:03:42
+ * @since 1.0, 2025-06-16 16:27:28
  */
 public class AlipayCommerceEducateMultideductTokenApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5233232165958995427L;
+	private static final long serialVersionUID = 2443243256878716737L;
 
 	/** 
 	 * 校园支付token。用于跳转小程序开通或查询用户开通状态

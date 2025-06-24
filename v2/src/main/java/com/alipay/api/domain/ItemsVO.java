@@ -1,17 +1,26 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 商品信息
  *
  * @author auto create
- * @since 1.0, 2025-04-17 18:04:26
+ * @since 1.0, 2025-06-11 16:13:06
  */
 public class ItemsVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4718742232735245171L;
+	private static final long serialVersionUID = 4269472558569336553L;
+
+	/**
+	 * 商品优惠后总金额=商品总金额-商品优惠总金额，（商品优惠总金额= 商品优惠详情discount中优惠金额总和）单位：元
+	 */
+	@ApiField("amount_discount_item")
+	private String amountDiscountItem;
 
 	/**
 	 * 商品总价
@@ -24,6 +33,13 @@ public class ItemsVO extends AlipayObject {
 	 */
 	@ApiField("app_item_code")
 	private String appItemCode;
+
+	/**
+	 * 用户商品维度享受的优惠信息
+	 */
+	@ApiListField("discount")
+	@ApiField("discount_v_o")
+	private List<DiscountVO> discount;
 
 	/**
 	 * 是否医保商品
@@ -97,6 +113,13 @@ public class ItemsVO extends AlipayObject {
 	@ApiField("weight_unit")
 	private String weightUnit;
 
+	public String getAmountDiscountItem() {
+		return this.amountDiscountItem;
+	}
+	public void setAmountDiscountItem(String amountDiscountItem) {
+		this.amountDiscountItem = amountDiscountItem;
+	}
+
 	public String getAmountItem() {
 		return this.amountItem;
 	}
@@ -109,6 +132,13 @@ public class ItemsVO extends AlipayObject {
 	}
 	public void setAppItemCode(String appItemCode) {
 		this.appItemCode = appItemCode;
+	}
+
+	public List<DiscountVO> getDiscount() {
+		return this.discount;
+	}
+	public void setDiscount(List<DiscountVO> discount) {
+		this.discount = discount;
 	}
 
 	public Long getIsMiItem() {

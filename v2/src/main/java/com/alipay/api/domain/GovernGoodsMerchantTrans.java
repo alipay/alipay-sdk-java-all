@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class GovernGoodsMerchantTrans extends AlipayObject {
 
-	private static final long serialVersionUID = 1313521925799717185L;
+	private static final long serialVersionUID = 5272629411717641671L;
 
 	/**
 	 * 异常交易ID

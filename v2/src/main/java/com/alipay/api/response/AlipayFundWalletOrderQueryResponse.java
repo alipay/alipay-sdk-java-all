@@ -3,6 +3,7 @@ package com.alipay.api.response;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.PaymentFundInfo;
 import com.alipay.api.domain.RefundPaymentAssetInfo;
 
 import com.alipay.api.AlipayResponse;
@@ -11,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.wallet.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-20 10:32:25
+ * @since 1.0, 2025-06-18 09:37:30
  */
 public class AlipayFundWalletOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5528864394641248668L;
+	private static final long serialVersionUID = 6228925154254153924L;
 
 	/** 
 	 * 实际交易金额，单位：元
@@ -28,6 +29,12 @@ public class AlipayFundWalletOrderQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("execute_time")
 	private String executeTime;
+
+	/** 
+	 * 支付资金明细
+	 */
+	@ApiField("payment_fund_info")
+	private PaymentFundInfo paymentFundInfo;
 
 	/** 
 	 * 退款明细。仅充值退查询时，且退款单据成功且才会展示。
@@ -61,6 +68,13 @@ public class AlipayFundWalletOrderQueryResponse extends AlipayResponse {
 	}
 	public String getExecuteTime( ) {
 		return this.executeTime;
+	}
+
+	public void setPaymentFundInfo(PaymentFundInfo paymentFundInfo) {
+		this.paymentFundInfo = paymentFundInfo;
+	}
+	public PaymentFundInfo getPaymentFundInfo( ) {
+		return this.paymentFundInfo;
 	}
 
 	public void setRefundPaymentAssetInfos(List<RefundPaymentAssetInfo> refundPaymentAssetInfos) {

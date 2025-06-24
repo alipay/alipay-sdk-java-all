@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.scene.token.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-29 16:02:01
+ * @since 1.0, 2025-06-17 15:37:29
  */
 public class AlipayCommerceEducateSceneTokenQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6822658173161211956L;
+	private static final long serialVersionUID = 2158573426545782412L;
 
 	/** 
 	 * 资产信息，生成token时候，上传查询资产字段才会返回
@@ -57,6 +57,18 @@ public class AlipayCommerceEducateSceneTokenQueryResponse extends AlipayResponse
 	 */
 	@ApiField("parent_user_id")
 	private String parentUserId;
+
+	/** 
+	 * 支付账户uid
+	 */
+	@ApiField("pay_open_id")
+	private String payOpenId;
+
+	/** 
+	 * 支付账户uid
+	 */
+	@ApiField("pay_uid")
+	private String payUid;
 
 	/** 
 	 * 用户已签约的 PID 列表
@@ -142,6 +154,20 @@ public class AlipayCommerceEducateSceneTokenQueryResponse extends AlipayResponse
 	}
 	public String getParentUserId( ) {
 		return this.parentUserId;
+	}
+
+	public void setPayOpenId(String payOpenId) {
+		this.payOpenId = payOpenId;
+	}
+	public String getPayOpenId( ) {
+		return this.payOpenId;
+	}
+
+	public void setPayUid(String payUid) {
+		this.payUid = payUid;
+	}
+	public String getPayUid( ) {
+		return this.payUid;
 	}
 
 	public void setPaymentPidList(List<String> paymentPidList) {

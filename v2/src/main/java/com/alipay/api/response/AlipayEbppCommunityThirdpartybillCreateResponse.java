@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.community.thirdpartybill.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-04 14:43:53
+ * @since 1.0, 2025-06-12 09:42:30
  */
 public class AlipayEbppCommunityThirdpartybillCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2756217459563477632L;
+	private static final long serialVersionUID = 1842595953729257758L;
 
 	/** 
 	 * 支付宝内部生成账单流水号。

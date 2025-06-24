@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 气象预测查询服务
  *
  * @author auto create
- * @since 1.0, 2025-05-20 19:21:36
+ * @since 1.0, 2025-06-12 19:34:56
  */
 public class DatadigitalAnttechWeatherHistoryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4818237346687597471L;
+	private static final long serialVersionUID = 5679433584642333439L;
 
 	/**
 	 * 蚂蚁数科气象服务产品码，找蚂蚁数科运营同学获取

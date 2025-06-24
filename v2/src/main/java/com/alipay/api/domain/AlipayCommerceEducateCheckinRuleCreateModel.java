@@ -10,11 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建签到规则
  *
  * @author auto create
- * @since 1.0, 2025-06-09 09:56:57
+ * @since 1.0, 2025-06-18 17:17:15
  */
 public class AlipayCommerceEducateCheckinRuleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2338924525367928663L;
+	private static final long serialVersionUID = 1643151588269596158L;
+
+	/**
+	 * 活动平台id
+	 */
+	@ApiField("auth_activity_id")
+	private String authActivityId;
+
+	/**
+	 * 签到核身认证类型
+	 */
+	@ApiField("authentication_type")
+	private String authenticationType;
 
 	/**
 	 * 规则生效状态
@@ -119,6 +131,20 @@ public class AlipayCommerceEducateCheckinRuleCreateModel extends AlipayObject {
 	@ApiListField("week_day_list")
 	@ApiField("number")
 	private List<Long> weekDayList;
+
+	public String getAuthActivityId() {
+		return this.authActivityId;
+	}
+	public void setAuthActivityId(String authActivityId) {
+		this.authActivityId = authActivityId;
+	}
+
+	public String getAuthenticationType() {
+		return this.authenticationType;
+	}
+	public void setAuthenticationType(String authenticationType) {
+		this.authenticationType = authenticationType;
+	}
 
 	public Boolean getEnableStatus() {
 		return this.enableStatus;

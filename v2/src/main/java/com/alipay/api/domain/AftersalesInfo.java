@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 售后详情
  *
  * @author auto create
- * @since 1.0, 2025-06-06 14:46:11
+ * @since 1.0, 2025-06-17 15:47:28
  */
 public class AftersalesInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2171842277487328225L;
+	private static final long serialVersionUID = 6345849813253358389L;
 
 	/**
 	 * 售后单编号
@@ -77,6 +77,12 @@ public class AftersalesInfo extends AlipayObject {
 	 */
 	@ApiField("reason")
 	private String reason;
+
+	/**
+	 * 当前售后的卡在购卡的时候是否签署了购卡协议
+	 */
+	@ApiField("signed_order_agreement")
+	private Boolean signedOrderAgreement;
 
 	public String getAftersalesId() {
 		return this.aftersalesId;
@@ -146,6 +152,13 @@ public class AftersalesInfo extends AlipayObject {
 	}
 	public void setReason(String reason) {
 		this.reason = reason;
+	}
+
+	public Boolean getSignedOrderAgreement() {
+		return this.signedOrderAgreement;
+	}
+	public void setSignedOrderAgreement(Boolean signedOrderAgreement) {
+		this.signedOrderAgreement = signedOrderAgreement;
 	}
 
 }

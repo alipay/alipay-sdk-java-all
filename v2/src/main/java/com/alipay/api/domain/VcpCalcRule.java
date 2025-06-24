@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 折扣计算规则
  *
  * @author auto create
- * @since 1.0, 2022-11-14 19:37:39
+ * @since 1.0, 2025-06-14 18:32:46
  */
 public class VcpCalcRule extends AlipayObject {
 
-	private static final long serialVersionUID = 7158575328159869536L;
+	private static final long serialVersionUID = 3185446281692816999L;
 
 	/**
 	 * 计算条件

@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 补充材料
  *
  * @author auto create
- * @since 1.0, 2025-03-25 12:45:38
+ * @since 1.0, 2025-06-23 14:54:58
  */
 public class BsExtraCredentials extends AlipayObject {
 
-	private static final long serialVersionUID = 4142761361816633693L;
+	private static final long serialVersionUID = 4784897364679875715L;
+
+	/**
+	 * 饿了么品牌pid
+	 */
+	@ApiField("brand_id")
+	private String brandId;
 
 	/**
 	 * 品牌名称
@@ -38,6 +44,12 @@ public class BsExtraCredentials extends AlipayObject {
 	private String powerBankImg;
 
 	/**
+	 * 饿了么门店id
+	 */
+	@ApiField("store_id")
+	private String storeId;
+
+	/**
 	 * 资源服务商地推小二联系方式
 	 */
 	@ApiField("supply_isv_contact_phone_no")
@@ -48,6 +60,13 @@ public class BsExtraCredentials extends AlipayObject {
 	 */
 	@ApiField("supply_isv_leads_level")
 	private String supplyIsvLeadsLevel;
+
+	public String getBrandId() {
+		return this.brandId;
+	}
+	public void setBrandId(String brandId) {
+		this.brandId = brandId;
+	}
 
 	public String getBrandName() {
 		return this.brandName;
@@ -75,6 +94,13 @@ public class BsExtraCredentials extends AlipayObject {
 	}
 	public void setPowerBankImg(String powerBankImg) {
 		this.powerBankImg = powerBankImg;
+	}
+
+	public String getStoreId() {
+		return this.storeId;
+	}
+	public void setStoreId(String storeId) {
+		this.storeId = storeId;
 	}
 
 	public String getSupplyIsvContactPhoneNo() {

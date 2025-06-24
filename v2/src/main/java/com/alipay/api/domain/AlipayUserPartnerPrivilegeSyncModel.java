@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户消费（领取、核销）特权数据同步
  *
  * @author auto create
- * @since 1.0, 2021-08-27 17:09:22
+ * @since 1.0, 2025-06-18 15:59:20
  */
 public class AlipayUserPartnerPrivilegeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5774743295319162788L;
+	private static final long serialVersionUID = 4562982121459525463L;
 
 	/**
 	 * 业务发生时间

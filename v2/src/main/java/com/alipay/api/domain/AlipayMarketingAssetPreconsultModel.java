@@ -10,17 +10,35 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 权益前置咨询
  *
  * @author auto create
- * @since 1.0, 2025-05-30 16:34:27
+ * @since 1.0, 2025-06-18 11:27:56
  */
 public class AlipayMarketingAssetPreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6516539676567751628L;
+	private static final long serialVersionUID = 6896182861388486448L;
+
+	/**
+	 * 作为内部交易号使用
+	 */
+	@ApiField("biz_no")
+	private String bizNo;
 
 	/**
 	 * 业务参数大字段，优惠咨询的控制参数，json格式；目前支持传入useBigAmountSkipOrderThold为N来控制不使用大金额跳过优惠的订单门槛检查；默认不传；
 	 */
 	@ApiField("business_param")
 	private String businessParam;
+
+	/**
+	 * 证件号码，例如身份证号
+	 */
+	@ApiField("cert_no")
+	private String certNo;
+
+	/**
+	 * 证件类型，支持传入身份证类型：IDENTITY_CARD
+	 */
+	@ApiField("cert_type")
+	private String certType;
 
 	/**
 	 * 商品咨询请求列表（当需要咨询单品券时必传，如果某商品不希望参与本次单品优惠咨询则不传递对应信息即可）
@@ -54,7 +72,7 @@ public class AlipayMarketingAssetPreconsultModel extends AlipayObject {
 	private String promoRule;
 
 	/**
-	 * 场景码：默认传：MULTIEND_ORDER_PRE_SCENE
+	 * 场景码，每个业务场景独立分配
 	 */
 	@ApiField("scene_code")
 	private String sceneCode;
@@ -71,11 +89,32 @@ public class AlipayMarketingAssetPreconsultModel extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
+	public String getBizNo() {
+		return this.bizNo;
+	}
+	public void setBizNo(String bizNo) {
+		this.bizNo = bizNo;
+	}
+
 	public String getBusinessParam() {
 		return this.businessParam;
 	}
 	public void setBusinessParam(String businessParam) {
 		this.businessParam = businessParam;
+	}
+
+	public String getCertNo() {
+		return this.certNo;
+	}
+	public void setCertNo(String certNo) {
+		this.certNo = certNo;
+	}
+
+	public String getCertType() {
+		return this.certType;
+	}
+	public void setCertType(String certType) {
+		this.certType = certType;
 	}
 
 	public List<ItemConsultRequest> getItemConsultList() {

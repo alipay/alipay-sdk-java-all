@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CardPropertyCycle extends AlipayObject {
 
-	private static final long serialVersionUID = 2546228688498765378L;
+	private static final long serialVersionUID = 5772641789817474284L;
 
 	/**
 	 * 指定周期付首期扣款的方式

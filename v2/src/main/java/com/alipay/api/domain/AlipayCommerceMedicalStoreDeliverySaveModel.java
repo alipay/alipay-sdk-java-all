@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建更新门店配送范围
  *
  * @author auto create
- * @since 1.0, 2025-03-19 16:22:34
+ * @since 1.0, 2025-06-19 19:05:02
  */
 public class AlipayCommerceMedicalStoreDeliverySaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4563972332256359996L;
+	private static final long serialVersionUID = 1391655268787971897L;
 
 	/**
 	 * 配送范围详情

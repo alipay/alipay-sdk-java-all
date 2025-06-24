@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 同步门店配送范围
  *
  * @author auto create
- * @since 1.0, 2025-05-30 16:38:54
+ * @since 1.0, 2025-06-19 19:00:51
  */
 public class AlipayCommerceMedicalStoreDeliverySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8251957825747173259L;
+	private static final long serialVersionUID = 2691619122331925191L;
 
 	/**
-	 * 配送范围集合，仅支持高德坐标系的经纬度集。坐标数上限：99；电子围栏首尾坐标需闭合。
+	 * 配送范围集合，仅支持高德坐标系的经纬度集。坐标数上限：200；电子围栏首尾坐标需闭合。
 	 */
 	@ApiListField("delivery_area_list")
 	@ApiField("delivery_point_d_t_o")

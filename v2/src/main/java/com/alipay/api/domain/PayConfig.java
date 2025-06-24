@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 校园支付设置
  *
  * @author auto create
- * @since 1.0, 2025-05-29 16:18:34
+ * @since 1.0, 2025-06-16 16:27:19
  */
 public class PayConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 6259853486298557813L;
+	private static final long serialVersionUID = 2225726845191464826L;
 
 	/**
 	 * 银行渠道模式。YES时必传，可选的字段枚举说明：{BANK:指定银行;BANK_CARD:指定银行卡；BIN:指定银行BIN}
@@ -36,6 +36,12 @@ public class PayConfig extends AlipayObject {
 	 */
 	@ApiField("open_asset_role")
 	private String openAssetRole;
+
+	/**
+	 * 是否单开户，默认为false。开通家长小荷包时必选
+	 */
+	@ApiField("open_single_account")
+	private Boolean openSingleAccount;
 
 	/**
 	 * 使用银行渠道。可选的字段枚举说明：{YES:使用银行渠道;NO:使用支付宝默认扣款顺序}
@@ -70,6 +76,13 @@ public class PayConfig extends AlipayObject {
 	}
 	public void setOpenAssetRole(String openAssetRole) {
 		this.openAssetRole = openAssetRole;
+	}
+
+	public Boolean getOpenSingleAccount() {
+		return this.openSingleAccount;
+	}
+	public void setOpenSingleAccount(Boolean openSingleAccount) {
+		this.openSingleAccount = openSingleAccount;
 	}
 
 	public String getUseBankChannel() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花名册信息分页查询
  *
  * @author auto create
- * @since 1.0, 2025-06-09 10:00:07
+ * @since 1.0, 2025-06-18 17:16:30
  */
 public class AlipayCommerceEducateRosterInfoBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5589226168447413863L;
+	private static final long serialVersionUID = 8355663458613926221L;
 
 	/**
 	 * 学号或工号
@@ -26,10 +26,22 @@ public class AlipayCommerceEducateRosterInfoBatchqueryModel extends AlipayObject
 	private String instId;
 
 	/**
+	 * 手机号
+	 */
+	@ApiField("mobile")
+	private String mobile;
+
+	/**
 	 * 姓名
 	 */
 	@ApiField("name")
 	private String name;
+
+	/**
+	 * 组织节点ID
+	 */
+	@ApiField("node_id")
+	private String nodeId;
 
 	/**
 	 * 页数
@@ -63,11 +75,25 @@ public class AlipayCommerceEducateRosterInfoBatchqueryModel extends AlipayObject
 		this.instId = instId;
 	}
 
+	public String getMobile() {
+		return this.mobile;
+	}
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
+	}
+
 	public String getName() {
 		return this.name;
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getNodeId() {
+		return this.nodeId;
+	}
+	public void setNodeId(String nodeId) {
+		this.nodeId = nodeId;
 	}
 
 	public Long getPageNum() {

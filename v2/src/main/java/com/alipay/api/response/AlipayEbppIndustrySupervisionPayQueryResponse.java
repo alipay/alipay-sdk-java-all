@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppIndustrySupervisionPayQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4563224245857668535L;
+	private static final long serialVersionUID = 2188559724664835225L;
 
 	/** 
 	 * 支付单金额，单位:分  示例: 100元则传入 "10000"

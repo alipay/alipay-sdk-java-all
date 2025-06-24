@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.agent.baseinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-06 15:21:33
+ * @since 1.0, 2025-06-17 11:27:30
  */
 public class AlipayOpenAgentBaseinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4318245527924812271L;
+	private static final long serialVersionUID = 8341855176331113157L;
 
 	/** 
 	 * 智能体应用描述
@@ -36,7 +36,7 @@ public class AlipayOpenAgentBaseinfoQueryResponse extends AlipayResponse {
 	private String appLogo;
 
 	/** 
-	 * 智能体应用名称
+	 * 智能体应用名称，要求名称长度为3-30个字符，一个中文字等于2个字符；名称可以由中文、数字、英文、下划线、+、-组成。
 	 */
 	@ApiField("app_name")
 	private String appName;
@@ -88,6 +88,19 @@ public class AlipayOpenAgentBaseinfoQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("custom_card_id")
 	private String customCardId;
+
+	/** 
+	 * 默认问答模式
+	 */
+	@ApiField("default_qa_mode")
+	private String defaultQaMode;
+
+	/** 
+	 * null
+	 */
+	@ApiListField("leading_questions")
+	@ApiField("string")
+	private List<String> leadingQuestions;
 
 	/** 
 	 * null
@@ -178,6 +191,20 @@ public class AlipayOpenAgentBaseinfoQueryResponse extends AlipayResponse {
 	}
 	public String getCustomCardId( ) {
 		return this.customCardId;
+	}
+
+	public void setDefaultQaMode(String defaultQaMode) {
+		this.defaultQaMode = defaultQaMode;
+	}
+	public String getDefaultQaMode( ) {
+		return this.defaultQaMode;
+	}
+
+	public void setLeadingQuestions(List<String> leadingQuestions) {
+		this.leadingQuestions = leadingQuestions;
+	}
+	public List<String> getLeadingQuestions( ) {
+		return this.leadingQuestions;
 	}
 
 	public void setSupportQaMode(List<String> supportQaMode) {

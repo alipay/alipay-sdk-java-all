@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.agent.version.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-22 10:57:29
+ * @since 1.0, 2025-06-17 11:22:29
  */
 public class AlipayOpenAgentVersionDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1736647569546622983L;
+	private static final long serialVersionUID = 6561191824696463169L;
 
 	/** 
 	 * 智能体应用logo图标
@@ -28,7 +28,7 @@ public class AlipayOpenAgentVersionDetailQueryResponse extends AlipayResponse {
 	private String appName;
 
 	/** 
-	 * 智能体提审版本号
+	 * 智能体开发包版本号
 	 */
 	@ApiField("app_version")
 	private String appVersion;
@@ -82,7 +82,7 @@ public class AlipayOpenAgentVersionDetailQueryResponse extends AlipayResponse {
 	private String status;
 
 	/** 
-	 * 版本备注
+	 * 智能体版本备注
 	 */
 	@ApiField("version_desc")
 	private String versionDesc;

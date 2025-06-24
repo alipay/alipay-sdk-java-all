@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.withhold.task.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-01-02 10:52:26
+ * @since 1.0, 2025-06-19 13:47:40
  */
 public class AlipayCommerceWithholdTaskQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1884452374586976853L;
+	private static final long serialVersionUID = 2543434453247918229L;
 
 	/** 
 	 * 用于标记支付宝用户在应用下的唯一标识

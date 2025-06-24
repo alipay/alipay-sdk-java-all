@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiSalesKbassetStuffCancelstockinorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3823264555812236999L;
+	private static final long serialVersionUID = 8713722887931451942L;
 
 	/** 
 	 * 待取消的入库单号

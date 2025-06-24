@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ob制品同步入参
  *
  * @author auto create
- * @since 1.0, 2024-01-10 16:55:51
+ * @since 1.0, 2025-06-19 15:34:52
  */
 public class ObArtifactSyncDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2627956394651147323L;
+	private static final long serialVersionUID = 2575815721996348862L;
 
 	/**
 	 * 制品全称
@@ -28,6 +28,12 @@ public class ObArtifactSyncDTO extends AlipayObject {
 	 */
 	@ApiField("artifact_version")
 	private String artifactVersion;
+
+	/**
+	 * OB制品产品ID
+	 */
+	@ApiField("boss_id")
+	private Long bossId;
 
 	/**
 	 * 打包的tag或者branch
@@ -152,6 +158,13 @@ public class ObArtifactSyncDTO extends AlipayObject {
 	}
 	public void setArtifactVersion(String artifactVersion) {
 		this.artifactVersion = artifactVersion;
+	}
+
+	public Long getBossId() {
+		return this.bossId;
+	}
+	public void setBossId(Long bossId) {
+		this.bossId = bossId;
 	}
 
 	public String getBranchOrTag() {

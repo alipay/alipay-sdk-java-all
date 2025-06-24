@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 通行证批量查询
  *
  * @author auto create
- * @since 1.0, 2023-06-20 10:26:34
+ * @since 1.0, 2025-06-16 14:50:56
  */
 public class AnttechOceanbasePassportBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2785925377873894928L;
+	private static final long serialVersionUID = 3555839986291425759L;
 
 	/**
 	 * 通行证id列表

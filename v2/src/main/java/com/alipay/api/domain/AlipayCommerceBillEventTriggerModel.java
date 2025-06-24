@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 账单消息触发发送接口
  *
  * @author auto create
- * @since 1.0, 2025-02-25 11:21:19
+ * @since 1.0, 2025-06-19 13:45:44
  */
 public class AlipayCommerceBillEventTriggerModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3437418247241398358L;
+	private static final long serialVersionUID = 5817892436776737479L;
 
 	/**
 	 * 当前触发动作的额外信息

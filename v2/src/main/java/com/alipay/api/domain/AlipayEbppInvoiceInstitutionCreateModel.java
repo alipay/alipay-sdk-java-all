@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 制度新增
  *
  * @author auto create
- * @since 1.0, 2024-12-24 20:09:17
+ * @since 1.0, 2025-06-19 14:12:55
  */
 public class AlipayEbppInvoiceInstitutionCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4464164952399475942L;
+	private static final long serialVersionUID = 4253428471457358531L;
 
 	/**
 	 * 企业共同账户id（该字段将废弃，不建议使用，可用enterprise_id字段替换） 当前字段已废弃(该字段将废弃，不建议使用，可用enterprise_id字段替换)
@@ -98,6 +98,12 @@ public class AlipayEbppInvoiceInstitutionCreateModel extends AlipayObject {
 	@ApiListField("issue_rule_info_list")
 	@ApiField("issue_rule_info")
 	private List<IssueRuleInfo> issueRuleInfoList;
+
+	/**
+	 * 制度下额度是否支持多人共享。如果支持，则制度下资产所有人共享；如果不支持，则制度下的资产为个人资产，成员之间不共享。
+	 */
+	@ApiField("multi_employee_share_mode")
+	private String multiEmployeeShareMode;
 
 	/**
 	 * 外部唯一标识，可用于防止重复创建
@@ -231,6 +237,13 @@ public class AlipayEbppInvoiceInstitutionCreateModel extends AlipayObject {
 	}
 	public void setIssueRuleInfoList(List<IssueRuleInfo> issueRuleInfoList) {
 		this.issueRuleInfoList = issueRuleInfoList;
+	}
+
+	public String getMultiEmployeeShareMode() {
+		return this.multiEmployeeShareMode;
+	}
+	public void setMultiEmployeeShareMode(String multiEmployeeShareMode) {
+		this.multiEmployeeShareMode = multiEmployeeShareMode;
 	}
 
 	public String getOuterSourceId() {

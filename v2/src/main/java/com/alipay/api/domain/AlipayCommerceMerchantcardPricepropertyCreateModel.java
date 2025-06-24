@@ -10,11 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 设置卡自定义价格
  *
  * @author auto create
- * @since 1.0, 2025-04-30 20:04:22
+ * @since 1.0, 2025-06-17 16:41:57
  */
 public class AlipayCommerceMerchantcardPricepropertyCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7289743568243778751L;
+	private static final long serialVersionUID = 6789315532197718559L;
+
+	/**
+	 * 设置一客一价的具体违约金规则
+	 */
+	@ApiField("break_costs")
+	private BreakCosts breakCosts;
+
+	/**
+	 * 当break_costs存在且break_costs_type为REMAIN_RATE时，需要设置免违约金规则
+	 */
+	@ApiField("break_costs_exempt_rule")
+	private BreakCostsExemptRule breakCostsExemptRule;
 
 	/**
 	 * 周期卡计费信息，周期卡一客一价需要修改扣款方式可传该字段，非周期卡不传
@@ -64,6 +76,20 @@ public class AlipayCommerceMerchantcardPricepropertyCreateModel extends AlipayOb
 	 */
 	@ApiField("sale_price")
 	private Long salePrice;
+
+	public BreakCosts getBreakCosts() {
+		return this.breakCosts;
+	}
+	public void setBreakCosts(BreakCosts breakCosts) {
+		this.breakCosts = breakCosts;
+	}
+
+	public BreakCostsExemptRule getBreakCostsExemptRule() {
+		return this.breakCostsExemptRule;
+	}
+	public void setBreakCostsExemptRule(BreakCostsExemptRule breakCostsExemptRule) {
+		this.breakCostsExemptRule = breakCostsExemptRule;
+	}
 
 	public CardPropertyCycle getCardPropertyCycle() {
 		return this.cardPropertyCycle;

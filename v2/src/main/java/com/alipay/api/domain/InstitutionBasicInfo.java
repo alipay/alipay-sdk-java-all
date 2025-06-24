@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 制度基本信息
  *
  * @author auto create
- * @since 1.0, 2024-11-20 11:37:53
+ * @since 1.0, 2025-06-19 14:13:46
  */
 public class InstitutionBasicInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4549757471145427747L;
+	private static final long serialVersionUID = 5357488714528246338L;
 
 	/**
 	 * 费控咨询模式
@@ -62,6 +62,12 @@ public class InstitutionBasicInfo extends AlipayObject {
 	 */
 	@ApiField("institution_name")
 	private String institutionName;
+
+	/**
+	 * 制度下额度是否支持多人共享。如果支持，则制度下资产所有人共享；如果不支持，则制度下的资产为个人资产，成员之间不共享。
+	 */
+	@ApiField("multi_employee_share_mode")
+	private String multiEmployeeShareMode;
 
 	public String getConsultMode() {
 		return this.consultMode;
@@ -117,6 +123,13 @@ public class InstitutionBasicInfo extends AlipayObject {
 	}
 	public void setInstitutionName(String institutionName) {
 		this.institutionName = institutionName;
+	}
+
+	public String getMultiEmployeeShareMode() {
+		return this.multiEmployeeShareMode;
+	}
+	public void setMultiEmployeeShareMode(String multiEmployeeShareMode) {
+		this.multiEmployeeShareMode = multiEmployeeShareMode;
 	}
 
 }

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 气象参数
  *
  * @author auto create
- * @since 1.0, 2025-05-20 19:21:36
+ * @since 1.0, 2025-06-12 19:34:27
  */
 public class WeatherVariables extends AlipayObject {
 
-	private static final long serialVersionUID = 6653111185119588193L;
+	private static final long serialVersionUID = 2845897962276266951L;
 
 	/**
 	 * 总云量，单位%
@@ -42,7 +42,14 @@ public class WeatherVariables extends AlipayObject {
 	/**
 	 * 地面两米处的露点温度，单位 摄氏度
 	 */
+	@ApiField("dew_point_2_m")
+	private String dewPoint2M;
+
+	/**
+	 * 地面两米处的露点温度，单位 摄氏度 当前字段已废弃(网关SDK字段映射不一致)
+	 */
 	@ApiField("dew_point_2m")
+	@Deprecated
 	private String dewPoint2m;
 
 	/**
@@ -78,7 +85,14 @@ public class WeatherVariables extends AlipayObject {
 	/**
 	 * 地面两米处的相对空气湿度，单位 %
 	 */
+	@ApiField("relative_humidity_2_m")
+	private String relativeHumidity2M;
+
+	/**
+	 * 地面两米处的相对空气湿度，单位 % 当前字段已废弃(网关SDK字段映射不一致)
+	 */
 	@ApiField("relative_humidity_2m")
+	@Deprecated
 	private String relativeHumidity2m;
 
 	/**
@@ -96,7 +110,14 @@ public class WeatherVariables extends AlipayObject {
 	/**
 	 * 地面两米处的空气温度, 单位 摄氏度
 	 */
+	@ApiField("temperature_2_m")
+	private String temperature2M;
+
+	/**
+	 * 地面两米处的空气温度, 单位 摄氏度 当前字段已废弃(网关SDK字段映射不一致)
+	 */
 	@ApiField("temperature_2m")
+	@Deprecated
 	private String temperature2m;
 
 	/**
@@ -108,37 +129,79 @@ public class WeatherVariables extends AlipayObject {
 	/**
 	 * 地面10米处风向，单位 °
 	 */
+	@ApiField("wind_direction_10_m")
+	private String windDirection10M;
+
+	/**
+	 * 地面10米处风向，单位 ° 当前字段已废弃(网关SDK字段映射不一致)
+	 */
 	@ApiField("wind_direction_10m")
+	@Deprecated
 	private String windDirection10m;
 
 	/**
 	 * 地面 120 米处风向，单位	°
 	 */
+	@ApiField("wind_direction_120_m")
+	private String windDirection120M;
+
+	/**
+	 * 地面 120 米处风向，单位	° 当前字段已废弃(网关SDK字段映射不一致)
+	 */
 	@ApiField("wind_direction_120m")
+	@Deprecated
 	private String windDirection120m;
 
 	/**
 	 * 地面80米处风向，单位°
 	 */
+	@ApiField("wind_direction_80_m")
+	private String windDirection80M;
+
+	/**
+	 * 地面80米处风向，单位° 当前字段已废弃(网关SDK字段映射不一致)
+	 */
 	@ApiField("wind_direction_80m")
+	@Deprecated
 	private String windDirection80m;
 
 	/**
 	 * 地面十米处风速，单位 km/h
 	 */
+	@ApiField("wind_speed_10_m")
+	private String windSpeed10M;
+
+	/**
+	 * 地面十米处风速，单位 km/h 当前字段已废弃(网关SDK字段映射不一致)
+	 */
 	@ApiField("wind_speed_10m")
+	@Deprecated
 	private String windSpeed10m;
 
 	/**
 	 * 地面 120 米处风速，单位km/h
 	 */
+	@ApiField("wind_speed_120_m")
+	private String windSpeed120M;
+
+	/**
+	 * 地面 120 米处风速，单位km/h 当前字段已废弃(网关SDK字段映射不一致)
+	 */
 	@ApiField("wind_speed_120m")
+	@Deprecated
 	private String windSpeed120m;
 
 	/**
 	 * 地面80米处风速，单位 km/h
 	 */
+	@ApiField("wind_speed_80_m")
+	private String windSpeed80M;
+
+	/**
+	 * 地面80米处风速，单位 km/h 当前字段已废弃(网关SDK字段映射不一致)
+	 */
 	@ApiField("wind_speed_80m")
+	@Deprecated
 	private String windSpeed80m;
 
 	public String getCloudCover() {
@@ -167,6 +230,13 @@ public class WeatherVariables extends AlipayObject {
 	}
 	public void setCloudCoverMid(String cloudCoverMid) {
 		this.cloudCoverMid = cloudCoverMid;
+	}
+
+	public String getDewPoint2M() {
+		return this.dewPoint2M;
+	}
+	public void setDewPoint2M(String dewPoint2M) {
+		this.dewPoint2M = dewPoint2M;
 	}
 
 	public String getDewPoint2m() {
@@ -211,6 +281,13 @@ public class WeatherVariables extends AlipayObject {
 		this.pressureMsl = pressureMsl;
 	}
 
+	public String getRelativeHumidity2M() {
+		return this.relativeHumidity2M;
+	}
+	public void setRelativeHumidity2M(String relativeHumidity2M) {
+		this.relativeHumidity2M = relativeHumidity2M;
+	}
+
 	public String getRelativeHumidity2m() {
 		return this.relativeHumidity2m;
 	}
@@ -232,6 +309,13 @@ public class WeatherVariables extends AlipayObject {
 		this.surfacePressure = surfacePressure;
 	}
 
+	public String getTemperature2M() {
+		return this.temperature2M;
+	}
+	public void setTemperature2M(String temperature2M) {
+		this.temperature2M = temperature2M;
+	}
+
 	public String getTemperature2m() {
 		return this.temperature2m;
 	}
@@ -246,11 +330,25 @@ public class WeatherVariables extends AlipayObject {
 		this.variableDate = variableDate;
 	}
 
+	public String getWindDirection10M() {
+		return this.windDirection10M;
+	}
+	public void setWindDirection10M(String windDirection10M) {
+		this.windDirection10M = windDirection10M;
+	}
+
 	public String getWindDirection10m() {
 		return this.windDirection10m;
 	}
 	public void setWindDirection10m(String windDirection10m) {
 		this.windDirection10m = windDirection10m;
+	}
+
+	public String getWindDirection120M() {
+		return this.windDirection120M;
+	}
+	public void setWindDirection120M(String windDirection120M) {
+		this.windDirection120M = windDirection120M;
 	}
 
 	public String getWindDirection120m() {
@@ -260,11 +358,25 @@ public class WeatherVariables extends AlipayObject {
 		this.windDirection120m = windDirection120m;
 	}
 
+	public String getWindDirection80M() {
+		return this.windDirection80M;
+	}
+	public void setWindDirection80M(String windDirection80M) {
+		this.windDirection80M = windDirection80M;
+	}
+
 	public String getWindDirection80m() {
 		return this.windDirection80m;
 	}
 	public void setWindDirection80m(String windDirection80m) {
 		this.windDirection80m = windDirection80m;
+	}
+
+	public String getWindSpeed10M() {
+		return this.windSpeed10M;
+	}
+	public void setWindSpeed10M(String windSpeed10M) {
+		this.windSpeed10M = windSpeed10M;
 	}
 
 	public String getWindSpeed10m() {
@@ -274,11 +386,25 @@ public class WeatherVariables extends AlipayObject {
 		this.windSpeed10m = windSpeed10m;
 	}
 
+	public String getWindSpeed120M() {
+		return this.windSpeed120M;
+	}
+	public void setWindSpeed120M(String windSpeed120M) {
+		this.windSpeed120M = windSpeed120M;
+	}
+
 	public String getWindSpeed120m() {
 		return this.windSpeed120m;
 	}
 	public void setWindSpeed120m(String windSpeed120m) {
 		this.windSpeed120m = windSpeed120m;
+	}
+
+	public String getWindSpeed80M() {
+		return this.windSpeed80M;
+	}
+	public void setWindSpeed80M(String windSpeed80M) {
+		this.windSpeed80M = windSpeed80M;
 	}
 
 	public String getWindSpeed80m() {

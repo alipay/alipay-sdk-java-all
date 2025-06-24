@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 扣减用户积分
  *
  * @author auto create
- * @since 1.0, 2025-05-27 13:57:57
+ * @since 1.0, 2025-06-11 15:24:14
  */
 public class AlipayOpenNppdUserpointDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7579425264238677942L;
+	private static final long serialVersionUID = 6648978334579192762L;
 
 	/**
 	 * 积分核销ID

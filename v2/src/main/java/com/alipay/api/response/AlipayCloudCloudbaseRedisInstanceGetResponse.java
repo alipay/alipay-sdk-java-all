@@ -8,16 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.redis.instance.get response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-22 14:41:14
+ * @since 1.0, 2025-06-13 14:17:28
  */
 public class AlipayCloudCloudbaseRedisInstanceGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4395898543325834539L;
+	private static final long serialVersionUID = 3567873358249689765L;
 
 	/** 
 	 * 架构类型。集群版：分片集群架构，支持扩缩容、规格调整; 标准版：标准的 master-slave 架构，支持规格调整
  - CLUSTER(集群版)
  - STANDARD(标准版)
+- MINISPEC(极简版)
 	 */
 	@ApiField("architecture_type")
 	private String architectureType;
@@ -32,6 +33,7 @@ public class AlipayCloudCloudbaseRedisInstanceGetResponse extends AlipayResponse
 	 * 实例规格，每个数据节点的内存大小
  - 1GB
  - 4GB
+-128MB
 	 */
 	@ApiField("instance_spec")
 	private String instanceSpec;
@@ -96,6 +98,12 @@ public class AlipayCloudCloudbaseRedisInstanceGetResponse extends AlipayResponse
 	 */
 	@ApiField("status")
 	private String status;
+
+	/** 
+	 * 机房
+	 */
+	@ApiField("zone")
+	private String zone;
 
 	public void setArchitectureType(String architectureType) {
 		this.architectureType = architectureType;
@@ -172,6 +180,13 @@ public class AlipayCloudCloudbaseRedisInstanceGetResponse extends AlipayResponse
 	}
 	public String getStatus( ) {
 		return this.status;
+	}
+
+	public void setZone(String zone) {
+		this.zone = zone;
+	}
+	public String getZone( ) {
+		return this.zone;
 	}
 
 }

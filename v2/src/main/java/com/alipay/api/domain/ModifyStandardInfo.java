@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 使用规则修改信息
  *
  * @author auto create
- * @since 1.0, 2024-12-24 20:10:18
+ * @since 1.0, 2025-06-19 14:13:26
  */
 public class ModifyStandardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7697233652495798394L;
+	private static final long serialVersionUID = 2188173658696886815L;
 
 	/**
 	 * 要添加的条件列表
@@ -22,6 +22,12 @@ public class ModifyStandardInfo extends AlipayObject {
 	@ApiListField("add_condition_list")
 	@ApiField("standard_condition_info")
 	private List<StandardConditionInfo> addConditionList;
+
+	/**
+	 * 当前规则可使用的其他资产来源信息
+	 */
+	@ApiField("asset_share_source_info")
+	private AssetShareSourceInfo assetShareSourceInfo;
 
 	/**
 	 * 消费模式
@@ -84,6 +90,13 @@ public class ModifyStandardInfo extends AlipayObject {
 	}
 	public void setAddConditionList(List<StandardConditionInfo> addConditionList) {
 		this.addConditionList = addConditionList;
+	}
+
+	public AssetShareSourceInfo getAssetShareSourceInfo() {
+		return this.assetShareSourceInfo;
+	}
+	public void setAssetShareSourceInfo(AssetShareSourceInfo assetShareSourceInfo) {
+		this.assetShareSourceInfo = assetShareSourceInfo;
 	}
 
 	public String getConsumeMode() {

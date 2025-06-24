@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayUserPortraitQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3149833426792114115L;
+	private static final long serialVersionUID = 4221656359495892187L;
 
 	/**
 	 * 1688端传递havanaId的列表过来，单次传递不超过2个

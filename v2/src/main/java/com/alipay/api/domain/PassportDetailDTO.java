@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 通行证详情
  *
  * @author auto create
- * @since 1.0, 2023-06-20 10:26:34
+ * @since 1.0, 2025-06-16 14:50:56
  */
 public class PassportDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2169416949372434314L;
+	private static final long serialVersionUID = 8472194167476717568L;
+
+	/**
+	 * 用于返回关联企业名称
+	 */
+	@ApiField("company_name")
+	private String companyName;
 
 	/**
 	 * id
@@ -40,6 +46,13 @@ public class PassportDetailDTO extends AlipayObject {
 	 */
 	@ApiField("status")
 	private String status;
+
+	public String getCompanyName() {
+		return this.companyName;
+	}
+	public void setCompanyName(String companyName) {
+		this.companyName = companyName;
+	}
 
 	public String getId() {
 		return this.id;

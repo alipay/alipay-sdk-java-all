@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询redis实例详情
  *
  * @author auto create
- * @since 1.0, 2023-10-16 13:48:45
+ * @since 1.0, 2025-06-13 14:14:28
  */
 public class AlipayCloudCloudbaseRedisInstanceGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3191297544914425573L;
+	private static final long serialVersionUID = 6231681791514982565L;
 
 	/**
 	 * 小程序id

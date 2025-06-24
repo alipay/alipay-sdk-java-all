@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOverseasOpenIndrpreorderCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6552587541648672138L;
+	private static final long serialVersionUID = 5229654261417498367L;
 
 	/**
 	 * 预订单号

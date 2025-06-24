@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商保码-保单数据回流接口
  *
  * @author auto create
- * @since 1.0, 2025-06-05 11:14:56
+ * @since 1.0, 2025-06-20 11:00:30
  */
 public class AlipayCommerceMedicalInsurancePolicyinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3264257628436652248L;
+	private static final long serialVersionUID = 3594327492334267631L;
 
 	/**
 	 * 保司类型
@@ -168,6 +168,12 @@ YYYY-MM-DD HH:MM:SS
 	 */
 	@ApiField("prod_no")
 	private String prodNo;
+
+	/**
+	 * 保单的产品方案代码
+	 */
+	@ApiField("product_scheme_code")
+	private String productSchemeCode;
 
 	/**
 	 * 加油包场景会有主子保单
@@ -381,6 +387,13 @@ YYYY-MM-DD HH:MM:SS
 	}
 	public void setProdNo(String prodNo) {
 		this.prodNo = prodNo;
+	}
+
+	public String getProductSchemeCode() {
+		return this.productSchemeCode;
+	}
+	public void setProductSchemeCode(String productSchemeCode) {
+		this.productSchemeCode = productSchemeCode;
 	}
 
 	public String getSourcePolicyNo() {

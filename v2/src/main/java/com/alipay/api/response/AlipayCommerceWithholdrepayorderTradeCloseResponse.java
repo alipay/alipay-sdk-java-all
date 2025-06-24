@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.withholdrepayorder.trade.close response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-02 11:03:14
+ * @since 1.0, 2025-06-19 13:44:52
  */
 public class AlipayCommerceWithholdrepayorderTradeCloseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3453362616962883628L;
+	private static final long serialVersionUID = 8484384317363429733L;
 
 	/** 
 	 * 创建交易传入的商户订单号

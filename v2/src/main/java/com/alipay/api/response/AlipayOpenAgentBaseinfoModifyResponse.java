@@ -8,11 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.agent.baseinfo.modify response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-10 11:33:01
+ * @since 1.0, 2025-06-17 11:22:28
  */
 public class AlipayOpenAgentBaseinfoModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7311864632738651852L;
+	private static final long serialVersionUID = 4834353775845799973L;
+
+	/** 
+	 * 安全驳回原因
+	 */
+	@ApiField("reject_reason")
+	private String rejectReason;
 
 	/** 
 	 * 安全驳回原因
@@ -25,6 +31,13 @@ public class AlipayOpenAgentBaseinfoModifyResponse extends AlipayResponse {
 	 */
 	@ApiField("safe_result")
 	private String safeResult;
+
+	public void setRejectReason(String rejectReason) {
+		this.rejectReason = rejectReason;
+	}
+	public String getRejectReason( ) {
+		return this.rejectReason;
+	}
 
 	public void setRejectResion(String rejectResion) {
 		this.rejectResion = rejectResion;

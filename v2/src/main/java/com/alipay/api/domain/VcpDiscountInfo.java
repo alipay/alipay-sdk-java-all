@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 券折扣计算模型
  *
  * @author auto create
- * @since 1.0, 2022-11-14 23:56:09
+ * @since 1.0, 2025-06-14 18:32:46
  */
 public class VcpDiscountInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5132593276457121937L;
+	private static final long serialVersionUID = 5739237684467966376L;
 
 	/**
 	 * 计算规则列表

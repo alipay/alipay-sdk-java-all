@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分账信息
  *
  * @author auto create
- * @since 1.0, 2025-03-31 19:26:53
+ * @since 1.0, 2025-06-17 10:07:29
  */
 public class RoyaltyDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6574824932146818631L;
+	private static final long serialVersionUID = 1116449862923457584L;
 
 	/**
 	 * 对应这一期买断分账金，不能超过当期买断金，单位：元，精确到小数点后两位；
@@ -28,6 +28,12 @@ public class RoyaltyDTO extends AlipayObject {
 	private Date expectRoyaltyTime;
 
 	/**
+	 * 分账利息，单位：元，精确到小数点后两位；
+	 */
+	@ApiField("royalty_interest_price")
+	private String royaltyInterestPrice;
+
+	/**
 	 * 租金分账期数，举例1、2、3.....
 	 */
 	@ApiField("royalty_period")
@@ -38,6 +44,12 @@ public class RoyaltyDTO extends AlipayObject {
 	 */
 	@ApiField("royalty_price")
 	private String royaltyPrice;
+
+	/**
+	 * 分账本金，单位：元，精确到小数点后两位；
+	 */
+	@ApiField("royalty_principal_price")
+	private String royaltyPrincipalPrice;
 
 	/**
 	 * 分账金类型，目前仅支持：
@@ -60,6 +72,13 @@ RENT(租金分账)、BUYOUT(买断分账)
 		this.expectRoyaltyTime = expectRoyaltyTime;
 	}
 
+	public String getRoyaltyInterestPrice() {
+		return this.royaltyInterestPrice;
+	}
+	public void setRoyaltyInterestPrice(String royaltyInterestPrice) {
+		this.royaltyInterestPrice = royaltyInterestPrice;
+	}
+
 	public Long getRoyaltyPeriod() {
 		return this.royaltyPeriod;
 	}
@@ -72,6 +91,13 @@ RENT(租金分账)、BUYOUT(买断分账)
 	}
 	public void setRoyaltyPrice(String royaltyPrice) {
 		this.royaltyPrice = royaltyPrice;
+	}
+
+	public String getRoyaltyPrincipalPrice() {
+		return this.royaltyPrincipalPrice;
+	}
+	public void setRoyaltyPrincipalPrice(String royaltyPrincipalPrice) {
+		this.royaltyPrincipalPrice = royaltyPrincipalPrice;
 	}
 
 	public String getRoyaltyType() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁商品扩展信息
  *
  * @author auto create
- * @since 1.0, 2025-03-31 19:26:53
+ * @since 1.0, 2025-06-17 10:07:50
  */
 public class RentGoodsInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6468748755924692484L;
+	private static final long serialVersionUID = 3326933346377134381L;
 
 	/**
 	 * 商品总价值，单位：元，精确到小数点后两位。

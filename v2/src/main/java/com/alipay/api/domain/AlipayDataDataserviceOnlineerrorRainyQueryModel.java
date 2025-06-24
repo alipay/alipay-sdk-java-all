@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 线上问题回归测试验证02无参数
  *
  * @author auto create
- * @since 1.0, 2025-04-16 10:07:33
+ * @since 1.0, 2025-06-23 20:13:56
  */
 public class AlipayDataDataserviceOnlineerrorRainyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8729231855628576356L;
+	private static final long serialVersionUID = 2476197761157112158L;
 
 	/**
 	 * 第五个复杂类型

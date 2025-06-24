@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.csfu.case.modify request
  * 
  * @author auto create
- * @since 1.0, 2025-02-20 21:02:24
+ * @since 1.0, 2025-06-19 15:54:52
  */
 public class AlipayIserviceCsfuCaseModifyRequest implements AlipayRequest<AlipayIserviceCsfuCaseModifyResponse> {
 

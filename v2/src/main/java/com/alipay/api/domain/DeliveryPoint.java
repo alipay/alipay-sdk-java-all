@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 配送范围坐标，包含经度和纬度
  *
  * @author auto create
- * @since 1.0, 2025-03-19 16:22:32
+ * @since 1.0, 2025-06-19 19:03:01
  */
 public class DeliveryPoint extends AlipayObject {
 
-	private static final long serialVersionUID = 3583616616539679865L;
+	private static final long serialVersionUID = 4531816369983234797L;
 
 	/**
 	 * 纬度坐标

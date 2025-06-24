@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.roomrent.list.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-01 13:42:05
+ * @since 1.0, 2025-06-13 10:18:43
  */
 public class AlipayOpenAppRoomrentListQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2376854445941739466L;
+	private static final long serialVersionUID = 5256971283232667855L;
 
 	/** 
 	 * 商品列表

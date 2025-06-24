@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租赁订单创建
  *
  * @author auto create
- * @since 1.0, 2025-06-10 11:42:11
+ * @since 1.0, 2025-06-17 10:34:39
  */
 public class AlipayCommerceRentOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5749624851144429227L;
+	private static final long serialVersionUID = 2481126534733632938L;
 
 	/**
 	 * 订单收货地址
@@ -144,7 +144,7 @@ public class AlipayCommerceRentOrderCreateModel extends AlipayObject {
 	private String title;
 
 	/**
-	 * 收单APPID。商家异收单主体情况下，当前功能不支持（当前默认下单主体为收单主体）；需要商家回传收单主体，实现真实交易流程
+	 * 当商家收单appid与下单appid不一致时必传
 	 */
 	@ApiField("trade_app_id")
 	private String tradeAppId;

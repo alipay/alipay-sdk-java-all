@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.invoice.expensecontrol.issuebatch.create request
  * 
  * @author auto create
- * @since 1.0, 2024-06-28 10:49:24
+ * @since 1.0, 2025-06-23 17:42:32
  */
 public class AlipayEbppInvoiceExpensecontrolIssuebatchCreateRequest implements AlipayRequest<AlipayEbppInvoiceExpensecontrolIssuebatchCreateResponse> {
 

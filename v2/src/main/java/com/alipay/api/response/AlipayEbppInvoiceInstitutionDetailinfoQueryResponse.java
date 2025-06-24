@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.institution.detailinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-04 18:06:40
+ * @since 1.0, 2025-06-23 15:22:31
  */
 public class AlipayEbppInvoiceInstitutionDetailinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8815181165213672342L;
+	private static final long serialVersionUID = 2136793575736821287L;
 
 	/** 
 	 * 若适用范围为EMPLOYEE_ALL，则表示制度对企业下全员生效，owner_id_list不返回；若适配范围为EMPLOYEE_SELECT，owner_id_list返回员工对应的id信息，返回的id类型通过owner_type区分；若适配范围为EMPLOYEE_DEPARTMENT，则表示对指定的部门生效，返回owner_id_list为部门id列表
@@ -85,6 +85,12 @@ public class AlipayEbppInvoiceInstitutionDetailinfoQueryResponse extends AlipayR
 	@ApiListField("issue_rule_info_list")
 	@ApiField("issue_rule_info")
 	private List<IssueRuleInfo> issueRuleInfoList;
+
+	/** 
+	 * 制度下额度是否支持多人共享。如果支持，则制度下资产所有人共享；如果不支持，则制度下的资产为个人资产，成员之间不共享。
+	 */
+	@ApiField("multi_employee_share_mode")
+	private String multiEmployeeShareMode;
 
 	/** 
 	 * 外部唯一标识
@@ -206,6 +212,13 @@ public class AlipayEbppInvoiceInstitutionDetailinfoQueryResponse extends AlipayR
 	}
 	public List<IssueRuleInfo> getIssueRuleInfoList( ) {
 		return this.issueRuleInfoList;
+	}
+
+	public void setMultiEmployeeShareMode(String multiEmployeeShareMode) {
+		this.multiEmployeeShareMode = multiEmployeeShareMode;
+	}
+	public String getMultiEmployeeShareMode( ) {
+		return this.multiEmployeeShareMode;
 	}
 
 	public void setOuterSourceId(String outerSourceId) {

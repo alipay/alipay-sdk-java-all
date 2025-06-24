@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 提报门店信息对应模型
  *
  * @author auto create
- * @since 1.0, 2025-03-25 12:45:37
+ * @since 1.0, 2025-06-22 11:01:46
  */
 public class BsShopInfoDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1464374759789674343L;
+	private static final long serialVersionUID = 6529726682764628349L;
 
 	/**
 	 * 提报门店对应的详细地址
@@ -42,6 +42,18 @@ public class BsShopInfoDetail extends AlipayObject {
 	 */
 	@ApiField("district_name")
 	private String districtName;
+
+	/**
+	 * 纬度
+	 */
+	@ApiField("latitude")
+	private String latitude;
+
+	/**
+	 * 经度
+	 */
+	@ApiField("longitude")
+	private String longitude;
 
 	/**
 	 * 详细的门店名称
@@ -94,6 +106,20 @@ public class BsShopInfoDetail extends AlipayObject {
 	}
 	public void setDistrictName(String districtName) {
 		this.districtName = districtName;
+	}
+
+	public String getLatitude() {
+		return this.latitude;
+	}
+	public void setLatitude(String latitude) {
+		this.latitude = latitude;
+	}
+
+	public String getLongitude() {
+		return this.longitude;
+	}
+	public void setLongitude(String longitude) {
+		this.longitude = longitude;
 	}
 
 	public String getName() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 资产共享来源信息
  *
  * @author auto create
- * @since 1.0, 2024-11-20 11:38:57
+ * @since 1.0, 2025-06-19 14:12:55
  */
 public class AssetShareSourceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5892162566872696552L;
+	private static final long serialVersionUID = 1379436827968947226L;
 
 	/**
 	 * 当前规则可用的资产来源类型，搭配source_id_list使用。

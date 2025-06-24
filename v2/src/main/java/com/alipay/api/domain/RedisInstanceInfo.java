@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RedisInstanceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3175634498152227764L;
+	private static final long serialVersionUID = 7841325988659683788L;
 
 	/**
 	 * Redis实例ID

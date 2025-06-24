@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 多维核算并账受理
  *
  * @author auto create
- * @since 1.0, 2022-04-21 20:34:07
+ * @since 1.0, 2025-06-23 14:54:04
  */
 public class AlipayBossFncGfaccenterConsolidationAcceptModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4287217422135991315L;
+	private static final long serialVersionUID = 6411245842985245247L;
 
 	/**
 	 * （必填）会计期间（非调整账期yyyyMM，调整账期yyyy-MM），默认为期望并账会计日期前6位

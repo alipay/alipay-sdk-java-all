@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改智能体基础信息
  *
  * @author auto create
- * @since 1.0, 2025-06-10 11:33:01
+ * @since 1.0, 2025-06-17 11:22:28
  */
 public class AlipayOpenAgentBaseinfoModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5714829299345914526L;
+	private static final long serialVersionUID = 7138121437982759516L;
 
 	/**
 	 * 智能体应用描述
@@ -30,13 +30,13 @@ public class AlipayOpenAgentBaseinfoModifyModel extends AlipayObject {
 	private List<String> appLabel;
 
 	/**
-	 * 智能体应用logo
+	 * 智能体应用logo，建议上传像素为 200*200 ，小于200kb的图标。
 	 */
 	@ApiField("app_logo")
 	private String appLogo;
 
 	/**
-	 * 智能体应用名称
+	 * 智能体应用名称。名称长度为3-30个字符，一个中文字等于2个字符，名称可以由中文、数字、英文、下划线、+、-组成。
 	 */
 	@ApiField("app_name")
 	private String appName;
@@ -48,7 +48,7 @@ public class AlipayOpenAgentBaseinfoModifyModel extends AlipayObject {
 	private String appTone;
 
 	/**
-	 * 对话页的背景图片
+	 * 对话页的背景图片，建议像素为750x1624，小于500kb的图片
 	 */
 	@ApiField("background")
 	private String background;
@@ -66,6 +66,12 @@ public class AlipayOpenAgentBaseinfoModifyModel extends AlipayObject {
 	private String cardGuide;
 
 	/**
+	 * 推荐问题，当card_type为FUNCTIONAL_CARD是为必填
+	 */
+	@ApiField("card_recommend")
+	private RecommendQuestion cardRecommend;
+
+	/**
 	 * 选择智能体开场展现的类型
 	 */
 	@ApiField("card_type")
@@ -78,16 +84,34 @@ public class AlipayOpenAgentBaseinfoModifyModel extends AlipayObject {
 	private Boolean continueAsk;
 
 	/**
-	 * 自定义卡片body
+	 * 自定卡片内容，当card_type为CUSTOM_CARD时需要填写。
+	 */
+	@ApiField("custom_card")
+	private CustomCard customCard;
+
+	/**
+	 * 自定义卡片body，选择自定义卡片时需要填写
 	 */
 	@ApiField("custom_card_body")
 	private String customCardBody;
 
 	/**
-	 * 自定义卡片ID
+	 * 自定义卡片ID，选择自定义卡片时需要填写
 	 */
 	@ApiField("custom_card_id")
 	private String customCardId;
+
+	/**
+	 * 默认问答模式，必须在support_qa_mode列表里面
+	 */
+	@ApiField("default_qa_mode")
+	private String defaultQaMode;
+
+	/**
+	 * 引导问题，当card_type为LEADING_TEXT_DEFAULT_CARD(默认文本卡片)或EXPERT_CARD(专家智能体卡片)时支持修改引导语，最大支持3条。
+	 */
+	@ApiField("leading_questions")
+	private String leadingQuestions;
 
 	/**
 	 * null
@@ -152,6 +176,13 @@ public class AlipayOpenAgentBaseinfoModifyModel extends AlipayObject {
 		this.cardGuide = cardGuide;
 	}
 
+	public RecommendQuestion getCardRecommend() {
+		return this.cardRecommend;
+	}
+	public void setCardRecommend(RecommendQuestion cardRecommend) {
+		this.cardRecommend = cardRecommend;
+	}
+
 	public String getCardType() {
 		return this.cardType;
 	}
@@ -166,6 +197,13 @@ public class AlipayOpenAgentBaseinfoModifyModel extends AlipayObject {
 		this.continueAsk = continueAsk;
 	}
 
+	public CustomCard getCustomCard() {
+		return this.customCard;
+	}
+	public void setCustomCard(CustomCard customCard) {
+		this.customCard = customCard;
+	}
+
 	public String getCustomCardBody() {
 		return this.customCardBody;
 	}
@@ -178,6 +216,20 @@ public class AlipayOpenAgentBaseinfoModifyModel extends AlipayObject {
 	}
 	public void setCustomCardId(String customCardId) {
 		this.customCardId = customCardId;
+	}
+
+	public String getDefaultQaMode() {
+		return this.defaultQaMode;
+	}
+	public void setDefaultQaMode(String defaultQaMode) {
+		this.defaultQaMode = defaultQaMode;
+	}
+
+	public String getLeadingQuestions() {
+		return this.leadingQuestions;
+	}
+	public void setLeadingQuestions(String leadingQuestions) {
+		this.leadingQuestions = leadingQuestions;
 	}
 
 	public List<String> getSupportQaMode() {

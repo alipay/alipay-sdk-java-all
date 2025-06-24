@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 结束时间
  *
  * @author auto create
- * @since 1.0, 2024-09-02 17:16:57
+ * @since 1.0, 2025-06-17 16:18:32
  */
 public class EndTimeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2356287194244967644L;
+	private static final long serialVersionUID = 3536962124341532725L;
 
 	/**
 	 * 结束时间  格式：HH:mm:ss

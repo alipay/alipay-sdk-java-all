@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 节假日规则
  *
  * @author auto create
- * @since 1.0, 2024-09-02 17:16:57
+ * @since 1.0, 2025-06-17 16:18:32
  */
 public class HolidayRuleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7345673812925475699L;
+	private static final long serialVersionUID = 6854556728763922437L;
 
 	/**
 	 * 时间段

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 碰一下点餐物料申请门店信息同步
  *
  * @author auto create
- * @since 1.0, 2025-04-18 15:30:37
+ * @since 1.0, 2025-06-17 15:06:47
  */
 public class AlipayOpenSpNordermaterialsapplyShopCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5597521331758869487L;
+	private static final long serialVersionUID = 3769336323533657951L;
 
 	/**
 	 * 创建申请单时，返回的申请单ID
@@ -26,10 +26,22 @@ public class AlipayOpenSpNordermaterialsapplyShopCreateModel extends AlipayObjec
 	private String area;
 
 	/**
+	 * 所在区县编码
+	 */
+	@ApiField("area_code")
+	private String areaCode;
+
+	/**
 	 * 门店所处城市
 	 */
 	@ApiField("city")
 	private String city;
+
+	/**
+	 * 城市code
+	 */
+	@ApiField("city_code")
+	private String cityCode;
 
 	/**
 	 * 物料快递收货地址，用于后续接收物料的快递
@@ -66,6 +78,12 @@ public class AlipayOpenSpNordermaterialsapplyShopCreateModel extends AlipayObjec
 	 */
 	@ApiField("province")
 	private String province;
+
+	/**
+	 * 省份编码
+	 */
+	@ApiField("province_code")
+	private String provinceCode;
 
 	/**
 	 * 返佣pid，在带有门店信息下支持提前落位，否则仍然需要在后面铺设回传时传递
@@ -111,11 +129,25 @@ public class AlipayOpenSpNordermaterialsapplyShopCreateModel extends AlipayObjec
 		this.area = area;
 	}
 
+	public String getAreaCode() {
+		return this.areaCode;
+	}
+	public void setAreaCode(String areaCode) {
+		this.areaCode = areaCode;
+	}
+
 	public String getCity() {
 		return this.city;
 	}
 	public void setCity(String city) {
 		this.city = city;
+	}
+
+	public String getCityCode() {
+		return this.cityCode;
+	}
+	public void setCityCode(String cityCode) {
+		this.cityCode = cityCode;
 	}
 
 	public String getDeliveryAddress() {
@@ -158,6 +190,13 @@ public class AlipayOpenSpNordermaterialsapplyShopCreateModel extends AlipayObjec
 	}
 	public void setProvince(String province) {
 		this.province = province;
+	}
+
+	public String getProvinceCode() {
+		return this.provinceCode;
+	}
+	public void setProvinceCode(String provinceCode) {
+		this.provinceCode = provinceCode;
 	}
 
 	public String getRebatePid() {

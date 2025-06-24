@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC办理申请单创建或修改
  *
  * @author auto create
- * @since 1.0, 2025-03-21 16:25:57
+ * @since 1.0, 2025-06-11 14:39:19
  */
 public class AlipayCommerceTransportEtcApplyorderCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8589123635614839499L;
+	private static final long serialVersionUID = 5847478926719356239L;
 
 	/**
 	 * 支付宝订单号，提供则认为是更新
@@ -41,6 +41,7 @@ public class AlipayCommerceTransportEtcApplyorderCreateormodifyModel extends Ali
 	 * 车辆类型；
 CAR：客车
 TRUCK：货车
+MOTO: 摩托车
 	 */
 	@ApiField("car_type")
 	private String carType;

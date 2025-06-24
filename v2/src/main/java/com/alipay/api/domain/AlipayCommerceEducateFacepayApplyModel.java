@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人脸开通支付申请
  *
  * @author auto create
- * @since 1.0, 2025-05-29 15:43:57
+ * @since 1.0, 2025-06-16 16:30:04
  */
 public class AlipayCommerceEducateFacepayApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4358636996818597597L;
+	private static final long serialVersionUID = 7377253917872594189L;
 
 	/**
 	 * 扩展信息，json格式。 例如：
@@ -23,6 +23,7 @@ public class AlipayCommerceEducateFacepayApplyModel extends AlipayObject {
 ● 使用银行代扣且指定数币编号，{"useBankChannel":"YES","useBankMode":"DCEP_CARD","cardNo":"00123445678951302"}。
 ● 使用银行代扣切指定BIN（cardNo为银行识别码；openAssetRole为开通资产角色，可选的有「CHILD：孩子，PARENT：家长」；【可选】cardHolderName为持卡人姓名），{"useBankChannel":"YES","useBankMode":"BIN","cardNo":"123456","openAssetRole":"CHILD","cardHolderName":"张三"}
 如果指定银行卡但未提供cardNo，必须实现获取银行卡信息的SPIAPI。
+● 禁止使用的扣款渠道（prohibitAsset禁止的渠道，目前仅支持「SMALL_POUCH：小荷包），{"prohibitAsset":"SMALL_POUCH"}
 	 */
 	@ApiField("ext_info")
 	private String extInfo;

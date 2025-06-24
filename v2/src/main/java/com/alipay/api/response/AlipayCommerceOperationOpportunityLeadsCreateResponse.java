@@ -8,11 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.opportunity.leads.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-25 20:07:28
+ * @since 1.0, 2025-06-23 14:57:28
  */
 public class AlipayCommerceOperationOpportunityLeadsCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7416442581772637238L;
+	private static final long serialVersionUID = 6713623171665489444L;
+
+	/** 
+	 * 安装码
+	 */
+	@ApiField("installation_code")
+	private String installationCode;
 
 	/** 
 	 * 商机id
@@ -37,6 +43,19 @@ public class AlipayCommerceOperationOpportunityLeadsCreateResponse extends Alipa
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
+
+	/** 
+	 * 饿了么专项渠道标识
+	 */
+	@ApiField("source")
+	private String source;
+
+	public void setInstallationCode(String installationCode) {
+		this.installationCode = installationCode;
+	}
+	public String getInstallationCode( ) {
+		return this.installationCode;
+	}
 
 	public void setOpportunityId(String opportunityId) {
 		this.opportunityId = opportunityId;
@@ -64,6 +83,13 @@ public class AlipayCommerceOperationOpportunityLeadsCreateResponse extends Alipa
 	}
 	public String getOutBizNo( ) {
 		return this.outBizNo;
+	}
+
+	public void setSource(String source) {
+		this.source = source;
+	}
+	public String getSource( ) {
+		return this.source;
 	}
 
 }

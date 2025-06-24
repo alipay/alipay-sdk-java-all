@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.oceanbase.obglobal.obartifact.sync response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-10 16:56:58
+ * @since 1.0, 2025-06-19 15:47:30
  */
 public class AnttechOceanbaseObglobalObartifactSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6823261267151457815L;
+	private static final long serialVersionUID = 1771813368491643175L;
 
 	
 

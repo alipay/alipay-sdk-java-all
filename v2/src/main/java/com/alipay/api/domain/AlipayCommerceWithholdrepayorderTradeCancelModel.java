@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 融资租赁业务单交易撤销
  *
  * @author auto create
- * @since 1.0, 2024-12-27 16:23:53
+ * @since 1.0, 2025-06-19 13:47:54
  */
 public class AlipayCommerceWithholdrepayorderTradeCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2285546144233789868L;
+	private static final long serialVersionUID = 8799151255527598867L;
 
 	/**
 	 * 原支付请求的商户订单号,和支付宝交易号不能同时为空

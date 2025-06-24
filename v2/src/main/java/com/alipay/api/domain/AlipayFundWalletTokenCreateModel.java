@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户绑定申请token
  *
  * @author auto create
- * @since 1.0, 2024-11-27 18:49:51
+ * @since 1.0, 2025-06-17 23:47:49
  */
 public class AlipayFundWalletTokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5767623465289436335L;
+	private static final long serialVersionUID = 6122647243699212595L;
 
 	/**
 	 * alipay.user.agreement.page.sign返回的代扣签约串
@@ -40,6 +40,12 @@ public class AlipayFundWalletTokenCreateModel extends AlipayObject {
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
+
+	/**
+	 * 业务拓展参数
+	 */
+	@ApiField("business_params")
+	private String businessParams;
 
 	/**
 	 * 如果是ALIPAY_USER_ID，则传用户账号；如果是ALIPAY_LOGON_ID，则传手机号
@@ -90,6 +96,12 @@ public class AlipayFundWalletTokenCreateModel extends AlipayObject {
 	private Boolean skipResult;
 
 	/**
+	 * 钱包开通时是否跳过结果页,true为跳过，false为不跳过。默认不跳过
+	 */
+	@ApiField("skip_result_when_wallet_opened")
+	private Boolean skipResultWhenWalletOpened;
+
+	/**
 	 * 场景钱包模版id
 	 */
 	@ApiField("wallet_template_id")
@@ -127,6 +139,13 @@ public class AlipayFundWalletTokenCreateModel extends AlipayObject {
 	}
 	public void setBizScene(String bizScene) {
 		this.bizScene = bizScene;
+	}
+
+	public String getBusinessParams() {
+		return this.businessParams;
+	}
+	public void setBusinessParams(String businessParams) {
+		this.businessParams = businessParams;
 	}
 
 	public String getIdentity() {
@@ -183,6 +202,13 @@ public class AlipayFundWalletTokenCreateModel extends AlipayObject {
 	}
 	public void setSkipResult(Boolean skipResult) {
 		this.skipResult = skipResult;
+	}
+
+	public Boolean getSkipResultWhenWalletOpened() {
+		return this.skipResultWhenWalletOpened;
+	}
+	public void setSkipResultWhenWalletOpened(Boolean skipResultWhenWalletOpened) {
+		this.skipResultWhenWalletOpened = skipResultWhenWalletOpened;
 	}
 
 	public String getWalletTemplateId() {

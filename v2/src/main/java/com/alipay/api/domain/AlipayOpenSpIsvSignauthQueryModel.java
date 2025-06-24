@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询签约授权一体化订单状态
  *
  * @author auto create
- * @since 1.0, 2024-10-14 14:06:28
+ * @since 1.0, 2025-06-17 15:55:26
  */
 public class AlipayOpenSpIsvSignauthQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1344518779568362336L;
+	private static final long serialVersionUID = 8292537123757282434L;
 
 	/**
 	 * 签约授权一体化订单ID
