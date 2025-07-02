@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易对手核验实时接口
  *
  * @author auto create
- * @since 1.0, 2025-06-16 10:09:16
+ * @since 1.0, 2025-06-30 18:46:43
  */
 public class ZhimaCreditEpCounterpartyVerificationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1872711752533362621L;
+	private static final long serialVersionUID = 6368532533866399148L;
 
 	/**
 	 * 授权编号

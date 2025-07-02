@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySocialGamecenterGamerightsConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3863927981854729995L;
+	private static final long serialVersionUID = 1465556192887826674L;
 
 	/**
 	 * 咨询权益数量

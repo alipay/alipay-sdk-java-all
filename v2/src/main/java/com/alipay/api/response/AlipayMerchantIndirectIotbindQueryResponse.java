@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.indirect.iotbind.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-21 14:12:27
+ * @since 1.0, 2025-06-26 21:12:31
  */
 public class AlipayMerchantIndirectIotbindQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8495591526981578433L;
+	private static final long serialVersionUID = 3674334568817767895L;
 
 	/** 
 	 * 设备绑定状态：BIND代表绑定，UNBIND代表未绑定
@@ -32,6 +32,12 @@ public class AlipayMerchantIndirectIotbindQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("device_id")
 	private String deviceId;
+
+	/** 
+	 * 碰音箱在商户绑定时上传的二维码地址。
+	 */
+	@ApiField("encode_url")
+	private String encodeUrl;
 
 	/** 
 	 * 设备绑定的商户在支付宝体系内的唯一id,一般以2088开头。设备处于已绑定状态时会返回对应绑定商户id。如果设备没有绑定过或者已经解绑，该字段为空
@@ -64,6 +70,13 @@ public class AlipayMerchantIndirectIotbindQueryResponse extends AlipayResponse {
 	}
 	public String getDeviceId( ) {
 		return this.deviceId;
+	}
+
+	public void setEncodeUrl(String encodeUrl) {
+		this.encodeUrl = encodeUrl;
+	}
+	public String getEncodeUrl( ) {
+		return this.encodeUrl;
 	}
 
 	public void setSmid(String smid) {

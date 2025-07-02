@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.charger.privatebind.sync request
  * 
  * @author auto create
- * @since 1.0, 2025-06-19 10:08:17
+ * @since 1.0, 2025-06-25 19:32:29
  */
 public class AlipayCommerceTransportChargerPrivatebindSyncRequest implements AlipayRequest<AlipayCommerceTransportChargerPrivatebindSyncResponse> {
 

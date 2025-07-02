@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 光华平台服务运营数据批量查询
  *
  * @author auto create
- * @since 1.0, 2024-10-31 11:18:21
+ * @since 1.0, 2025-06-25 20:20:38
  */
 public class AlipayEcoCityserviceOpeneventAppdataBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8131277946794643779L;
+	private static final long serialVersionUID = 4626179162229375512L;
 
 	/**
 	 * 行业编码，一网通办机构传 CITYSERVICE

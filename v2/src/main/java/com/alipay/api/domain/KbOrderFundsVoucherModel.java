@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KbOrderFundsVoucherModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2758311573262875941L;
+	private static final long serialVersionUID = 5651883343951985238L;
 
 	/**
 	 * 资金流入账户,打款动作存在该字段

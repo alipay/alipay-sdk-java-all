@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.risk.gravity.consult request
  * 
  * @author auto create
- * @since 1.0, 2025-06-05 11:29:07
+ * @since 1.0, 2025-07-01 15:02:29
  */
 public class AlipaySecurityRiskGravityConsultRequest implements AlipayRequest<AlipaySecurityRiskGravityConsultResponse> {
 

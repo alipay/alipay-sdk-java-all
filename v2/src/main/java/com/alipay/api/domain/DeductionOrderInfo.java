@@ -1,5 +1,6 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
 import java.util.List;
 
 import com.alipay.api.AlipayObject;
@@ -10,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 核销订单信息
  *
  * @author auto create
- * @since 1.0, 2024-12-12 19:23:55
+ * @since 1.0, 2025-06-24 13:55:53
  */
 public class DeductionOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4787311456461954941L;
+	private static final long serialVersionUID = 6343592823975138613L;
 
 	/**
 	 * 费用信息集合
@@ -165,10 +166,22 @@ public class DeductionOrderInfo extends AlipayObject {
 	private String redeemWay;
 
 	/**
+	 * 核销退款金额（单位分）
+	 */
+	@ApiField("refund_amount")
+	private Long refundAmount;
+
+	/**
 	 * 退款金额，单位：分
 	 */
 	@ApiField("refund_cash")
 	private Long refundCash;
+
+	/**
+	 * 核销退款时间
+	 */
+	@ApiField("refund_time")
+	private Date refundTime;
 
 	/**
 	 * 门店ID
@@ -187,6 +200,18 @@ public class DeductionOrderInfo extends AlipayObject {
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;
+
+	/**
+	 * 核销金额，面额价，单位分
+	 */
+	@ApiField("use_amount")
+	private Long useAmount;
+
+	/**
+	 * 核销门店名称
+	 */
+	@ApiField("use_shop_name")
+	private String useShopName;
 
 	/**
 	 * 支付宝用户的userId。
@@ -368,11 +393,25 @@ public class DeductionOrderInfo extends AlipayObject {
 		this.redeemWay = redeemWay;
 	}
 
+	public Long getRefundAmount() {
+		return this.refundAmount;
+	}
+	public void setRefundAmount(Long refundAmount) {
+		this.refundAmount = refundAmount;
+	}
+
 	public Long getRefundCash() {
 		return this.refundCash;
 	}
 	public void setRefundCash(Long refundCash) {
 		this.refundCash = refundCash;
+	}
+
+	public Date getRefundTime() {
+		return this.refundTime;
+	}
+	public void setRefundTime(Date refundTime) {
+		this.refundTime = refundTime;
 	}
 
 	public String getShopId() {
@@ -394,6 +433,20 @@ public class DeductionOrderInfo extends AlipayObject {
 	}
 	public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
+	}
+
+	public Long getUseAmount() {
+		return this.useAmount;
+	}
+	public void setUseAmount(Long useAmount) {
+		this.useAmount = useAmount;
+	}
+
+	public String getUseShopName() {
+		return this.useShopName;
+	}
+	public void setUseShopName(String useShopName) {
+		this.useShopName = useShopName;
 	}
 
 	public String getUserId() {

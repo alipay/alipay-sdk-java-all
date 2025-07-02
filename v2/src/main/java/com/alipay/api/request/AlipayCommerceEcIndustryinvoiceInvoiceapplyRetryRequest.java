@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.ec.industryinvoice.invoiceapply.retry request
  * 
  * @author auto create
- * @since 1.0, 2025-06-23 18:37:31
+ * @since 1.0, 2025-07-01 15:10:09
  */
 public class AlipayCommerceEcIndustryinvoiceInvoiceapplyRetryRequest implements AlipayRequest<AlipayCommerceEcIndustryinvoiceInvoiceapplyRetryResponse> {
 

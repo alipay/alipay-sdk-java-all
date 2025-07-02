@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.corpus.common.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-29 10:42:29
+ * @since 1.0, 2025-07-01 19:17:33
  */
 public class AlipayEbppIndustryCorpusCommonQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8198659146368959497L;
+	private static final long serialVersionUID = 2531877762596945243L;
 
 	/** 
 	 * 知识发布任务结果

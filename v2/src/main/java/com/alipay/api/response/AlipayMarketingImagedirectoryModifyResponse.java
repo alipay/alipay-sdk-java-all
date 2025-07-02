@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.imagedirectory.modify response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-21 15:41:10
+ * @since 1.0, 2025-06-24 13:34:57
  */
 public class AlipayMarketingImagedirectoryModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2239717859884953733L;
+	private static final long serialVersionUID = 4889578737964876552L;
 
 	
 

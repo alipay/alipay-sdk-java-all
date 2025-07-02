@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayInsScenePolicySurrenderApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3417829958733566727L;
+	private static final long serialVersionUID = 8182396118896173492L;
 
 	/**
 	 * 退保扩展参数 ;标准json格式

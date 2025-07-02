@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 出行机票订单数据同步-乘机人信息
  *
  * @author auto create
- * @since 1.0, 2024-09-26 20:34:18
+ * @since 1.0, 2025-07-01 17:35:43
  */
 public class TrafficAirticketOrderPassengerInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6153533174981791766L;
+	private static final long serialVersionUID = 6144794347534234936L;
 
 	/**
 	 * 证件号，与证件类型cert_type对应的号码

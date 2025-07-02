@@ -7,11 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 游历分享
  *
  * @author auto create
- * @since 1.0, 2025-01-08 15:32:22
+ * @since 1.0, 2025-06-27 10:32:28
  */
 public class AlipayCloudCloudpromoTravelPicCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5443833621572548865L;
+	private static final long serialVersionUID = 2233722175286525687L;
+
+	/**
+	 * 页脚标题
+	 */
+	@ApiField("footer_title")
+	private String footerTitle;
+
+	/**
+	 * 头像链接
+	 */
+	@ApiField("logo")
+	private String logo;
 
 	/**
 	 * tab1图片
@@ -36,6 +48,12 @@ public class AlipayCloudCloudpromoTravelPicCreateModel extends AlipayObject {
 	 */
 	@ApiField("pic_4")
 	private String pic4;
+
+	/**
+	 * 页面标题
+	 */
+	@ApiField("share_desc")
+	private String shareDesc;
 
 	/**
 	 * 模板ID
@@ -67,6 +85,20 @@ public class AlipayCloudCloudpromoTravelPicCreateModel extends AlipayObject {
 	@ApiField("text_4")
 	private String text4;
 
+	public String getFooterTitle() {
+		return this.footerTitle;
+	}
+	public void setFooterTitle(String footerTitle) {
+		this.footerTitle = footerTitle;
+	}
+
+	public String getLogo() {
+		return this.logo;
+	}
+	public void setLogo(String logo) {
+		this.logo = logo;
+	}
+
 	public String getPic1() {
 		return this.pic1;
 	}
@@ -93,6 +125,13 @@ public class AlipayCloudCloudpromoTravelPicCreateModel extends AlipayObject {
 	}
 	public void setPic4(String pic4) {
 		this.pic4 = pic4;
+	}
+
+	public String getShareDesc() {
+		return this.shareDesc;
+	}
+	public void setShareDesc(String shareDesc) {
+		this.shareDesc = shareDesc;
 	}
 
 	public String getTemplateId() {

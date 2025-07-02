@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayIserviceCognitiveOcrTablesQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3651722992296565573L;
+	private static final long serialVersionUID = 8773966248963391863L;
 
 	/** 
 	 * true：识别成功

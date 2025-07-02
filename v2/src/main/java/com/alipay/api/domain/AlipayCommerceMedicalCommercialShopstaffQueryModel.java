@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询医疗门店店员信息
  *
  * @author auto create
- * @since 1.0, 2025-05-27 15:11:54
+ * @since 1.0, 2025-06-25 19:19:47
  */
 public class AlipayCommerceMedicalCommercialShopstaffQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3195982671633332931L;
+	private static final long serialVersionUID = 2785465788285625967L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识

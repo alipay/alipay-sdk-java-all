@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenAppQrcodeTemporaryCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8247943525265216366L;
+	private static final long serialVersionUID = 3684886136313381995L;
 
 	/**
 	 * 圆形二维码颜色（十六进制颜色色值），仅圆形二维码支持颜色设置，方形二维码默认为黑色。

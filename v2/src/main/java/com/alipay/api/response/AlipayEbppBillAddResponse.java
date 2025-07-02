@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.bill.add response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-20 16:05:45
+ * @since 1.0, 2025-06-24 19:22:29
  */
 public class AlipayEbppBillAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1752775176584523463L;
+	private static final long serialVersionUID = 6524752144568851856L;
 
 	/** 
 	 * 支付宝的业务订单号，具有唯一性。
@@ -109,6 +109,12 @@ public class AlipayEbppBillAddResponse extends AlipayResponse {
 	@ApiField("sub_order_type")
 	private String subOrderType;
 
+	/** 
+	 * 50新链路订单号
+	 */
+	@ApiField("trade_no")
+	private String tradeNo;
+
 	public void setAlipayOrderNo(String alipayOrderNo) {
 		this.alipayOrderNo = alipayOrderNo;
 	}
@@ -198,6 +204,13 @@ public class AlipayEbppBillAddResponse extends AlipayResponse {
 	}
 	public String getSubOrderType( ) {
 		return this.subOrderType;
+	}
+
+	public void setTradeNo(String tradeNo) {
+		this.tradeNo = tradeNo;
+	}
+	public String getTradeNo( ) {
+		return this.tradeNo;
 	}
 
 }

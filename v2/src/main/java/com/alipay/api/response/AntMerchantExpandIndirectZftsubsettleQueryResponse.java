@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.indirect.zftsubsettle.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-27 16:42:29
+ * @since 1.0, 2025-06-25 16:07:28
  */
 public class AntMerchantExpandIndirectZftsubsettleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7367753387979964957L;
+	private static final long serialVersionUID = 8177592762254454187L;
 
 	/** 
 	 * 二级商户结算账号

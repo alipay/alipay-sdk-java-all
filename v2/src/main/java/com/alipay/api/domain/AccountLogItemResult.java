@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账务明细
  *
  * @author auto create
- * @since 1.0, 2025-03-28 16:36:19
+ * @since 1.0, 2025-06-26 21:12:45
  */
 public class AccountLogItemResult extends AlipayObject {
 
-	private static final long serialVersionUID = 2848916414718976674L;
+	private static final long serialVersionUID = 8668946439125231288L;
 
 	/**
 	 * 支付宝账务流水号。对账使用，不脱敏

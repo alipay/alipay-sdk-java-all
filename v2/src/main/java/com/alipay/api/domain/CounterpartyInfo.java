@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易对手企业信息
  *
  * @author auto create
- * @since 1.0, 2025-06-16 10:09:16
+ * @since 1.0, 2025-06-30 18:46:43
  */
 public class CounterpartyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7412477191784258892L;
+	private static final long serialVersionUID = 4486426834164847617L;
 
 	/**
 	 * 与对手方近6个月资金往来金额等级

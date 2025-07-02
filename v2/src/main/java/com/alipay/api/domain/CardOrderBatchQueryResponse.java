@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页查询售卖订单结果
  *
  * @author auto create
- * @since 1.0, 2025-06-09 14:24:22
+ * @since 1.0, 2025-06-24 13:56:43
  */
 public class CardOrderBatchQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 5341237299578551371L;
+	private static final long serialVersionUID = 3137491287951264225L;
 
 	/**
 	 * 卡关联的最新的售后单编号
@@ -154,10 +154,22 @@ public class CardOrderBatchQueryResponse extends AlipayObject {
 	private String openId;
 
 	/**
+	 * 订单金额，单位分
+	 */
+	@ApiField("order_amount")
+	private Long orderAmount;
+
+	/**
 	 * 业务单ID
 	 */
 	@ApiField("order_id")
 	private String orderId;
+
+	/**
+	 * 私域订单展示为非计费渠道
+	 */
+	@ApiField("order_scene")
+	private String orderScene;
 
 	/**
 	 * 用户购卡时的卡原价，单位分
@@ -172,10 +184,34 @@ public class CardOrderBatchQueryResponse extends AlipayObject {
 	private String outOrderNo;
 
 	/**
+	 * 违约金金额，单位分
+	 */
+	@ApiField("penalty_amount")
+	private Long penaltyAmount;
+
+	/**
+	 * 退卡金额，单位分
+	 */
+	@ApiField("refund_amount")
+	private Long refundAmount;
+
+	/**
 	 * 退款金额，单位：分
 	 */
 	@ApiField("refund_cash")
 	private Long refundCash;
+
+	/**
+	 * 退卡时间
+	 */
+	@ApiField("refund_time")
+	private Date refundTime;
+
+	/**
+	 * 剩余金额，单位分
+	 */
+	@ApiField("remain_amount")
+	private Long remainAmount;
 
 	/**
 	 * 剩余期数(次数)
@@ -215,10 +251,22 @@ public class CardOrderBatchQueryResponse extends AlipayObject {
 	private Long usableCash;
 
 	/**
+	 * 已使用金额，单位分
+	 */
+	@ApiField("used_amount")
+	private Long usedAmount;
+
+	/**
 	 * 已核销金额，单位：分
 	 */
 	@ApiField("used_cash")
 	private Long usedCash;
+
+	/**
+	 * 已使用次数
+	 */
+	@ApiField("used_count")
+	private Long usedCount;
 
 	/**
 	 * 支付宝用户的userId。
@@ -399,11 +447,25 @@ public class CardOrderBatchQueryResponse extends AlipayObject {
 		this.openId = openId;
 	}
 
+	public Long getOrderAmount() {
+		return this.orderAmount;
+	}
+	public void setOrderAmount(Long orderAmount) {
+		this.orderAmount = orderAmount;
+	}
+
 	public String getOrderId() {
 		return this.orderId;
 	}
 	public void setOrderId(String orderId) {
 		this.orderId = orderId;
+	}
+
+	public String getOrderScene() {
+		return this.orderScene;
+	}
+	public void setOrderScene(String orderScene) {
+		this.orderScene = orderScene;
 	}
 
 	public Long getOriginPriceTotal() {
@@ -420,11 +482,39 @@ public class CardOrderBatchQueryResponse extends AlipayObject {
 		this.outOrderNo = outOrderNo;
 	}
 
+	public Long getPenaltyAmount() {
+		return this.penaltyAmount;
+	}
+	public void setPenaltyAmount(Long penaltyAmount) {
+		this.penaltyAmount = penaltyAmount;
+	}
+
+	public Long getRefundAmount() {
+		return this.refundAmount;
+	}
+	public void setRefundAmount(Long refundAmount) {
+		this.refundAmount = refundAmount;
+	}
+
 	public Long getRefundCash() {
 		return this.refundCash;
 	}
 	public void setRefundCash(Long refundCash) {
 		this.refundCash = refundCash;
+	}
+
+	public Date getRefundTime() {
+		return this.refundTime;
+	}
+	public void setRefundTime(Date refundTime) {
+		this.refundTime = refundTime;
+	}
+
+	public Long getRemainAmount() {
+		return this.remainAmount;
+	}
+	public void setRemainAmount(Long remainAmount) {
+		this.remainAmount = remainAmount;
 	}
 
 	public Long getRemainCount() {
@@ -469,11 +559,25 @@ public class CardOrderBatchQueryResponse extends AlipayObject {
 		this.usableCash = usableCash;
 	}
 
+	public Long getUsedAmount() {
+		return this.usedAmount;
+	}
+	public void setUsedAmount(Long usedAmount) {
+		this.usedAmount = usedAmount;
+	}
+
 	public Long getUsedCash() {
 		return this.usedCash;
 	}
 	public void setUsedCash(Long usedCash) {
 		this.usedCash = usedCash;
+	}
+
+	public Long getUsedCount() {
+		return this.usedCount;
+	}
+	public void setUsedCount(Long usedCount) {
+		this.usedCount = usedCount;
 	}
 
 	public String getUserId() {

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudpromo.travel.pic.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-01-08 15:32:22
+ * @since 1.0, 2025-06-27 10:32:28
  */
 public class AlipayCloudCloudpromoTravelPicCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6837693558747941967L;
+	private static final long serialVersionUID = 5213188685989839283L;
 
 	/** 
 	 * 模板ID

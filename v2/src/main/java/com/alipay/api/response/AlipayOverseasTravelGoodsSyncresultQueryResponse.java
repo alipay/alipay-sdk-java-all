@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOverseasTravelGoodsSyncresultQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5265645481122433416L;
+	private static final long serialVersionUID = 8825636975555245267L;
 
 	/** 
 	 * 商品状态，NORMAL表示如正在售卖，CLOSED表示下架；当syncStatus为SUCCESS时该值一定存在，其他状态不一定存在。

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.logistics.incentivecode.operation.sync request
  * 
  * @author auto create
- * @since 1.0, 2024-12-23 16:07:25
+ * @since 1.0, 2025-06-30 17:27:30
  */
 public class AlipayCommerceLogisticsIncentivecodeOperationSyncRequest implements AlipayRequest<AlipayCommerceLogisticsIncentivecodeOperationSyncResponse> {
 

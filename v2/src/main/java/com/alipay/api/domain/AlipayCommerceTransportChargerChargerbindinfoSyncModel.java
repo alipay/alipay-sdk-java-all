@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 充电运营商同步用户绑定充电桩信息接口
  *
  * @author auto create
- * @since 1.0, 2025-06-03 13:59:16
+ * @since 1.0, 2025-06-25 19:30:27
  */
 public class AlipayCommerceTransportChargerChargerbindinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1746737126251563959L;
+	private static final long serialVersionUID = 6881779375839524461L;
 
 	/**
 	 * 绑定充电桩二维码值，用户扫码绑桩扫描的二维码
@@ -89,6 +89,18 @@ public class AlipayCommerceTransportChargerChargerbindinfoSyncModel extends Alip
 	 */
 	@ApiField("equip_type_no")
 	private String equipTypeNo;
+
+	/**
+	 * 流量开始时间
+	 */
+	@ApiField("network_data_begin_time")
+	private Date networkDataBeginTime;
+
+	/**
+	 * 流量结束时间
+	 */
+	@ApiField("network_data_end_time")
+	private Date networkDataEndTime;
 
 	/**
 	 * 运营商编码，一般为企业组织机构代码
@@ -207,6 +219,20 @@ public class AlipayCommerceTransportChargerChargerbindinfoSyncModel extends Alip
 	}
 	public void setEquipTypeNo(String equipTypeNo) {
 		this.equipTypeNo = equipTypeNo;
+	}
+
+	public Date getNetworkDataBeginTime() {
+		return this.networkDataBeginTime;
+	}
+	public void setNetworkDataBeginTime(Date networkDataBeginTime) {
+		this.networkDataBeginTime = networkDataBeginTime;
+	}
+
+	public Date getNetworkDataEndTime() {
+		return this.networkDataEndTime;
+	}
+	public void setNetworkDataEndTime(Date networkDataEndTime) {
+		this.networkDataEndTime = networkDataEndTime;
 	}
 
 	public String getOperatorId() {

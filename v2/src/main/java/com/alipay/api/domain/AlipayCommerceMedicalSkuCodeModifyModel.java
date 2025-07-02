@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceMedicalSkuCodeModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3652856367498792815L;
+	private static final long serialVersionUID = 4638158349677545594L;
 
 	/**
 	 * 商家需要修改的旧sku店内码&新sku店内码组合列表

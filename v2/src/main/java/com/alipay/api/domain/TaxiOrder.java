@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 出租车订单
  *
  * @author auto create
- * @since 1.0, 2022-11-22 14:11:15
+ * @since 1.0, 2025-06-27 10:12:17
  */
 public class TaxiOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 7624713864474664639L;
+	private static final long serialVersionUID = 5656676192597787825L;
 
 	/**
 	 * 出租车外部订单号

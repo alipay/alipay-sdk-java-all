@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PortraitCityValue extends AlipayObject {
 
-	private static final long serialVersionUID = 1749637595379852739L;
+	private static final long serialVersionUID = 4311446971164242192L;
 
 	/**
 	 * 城市地区编码，唯一，遵循国标

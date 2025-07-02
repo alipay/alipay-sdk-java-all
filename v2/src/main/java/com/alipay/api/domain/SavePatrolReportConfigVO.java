@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 一方报事配置
  *
  * @author auto create
- * @since 1.0, 2025-06-19 20:02:23
+ * @since 1.0, 2025-06-25 15:22:32
  */
 public class SavePatrolReportConfigVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2444454269989654433L;
+	private static final long serialVersionUID = 7663813622596779231L;
 
 	/**
 	 * null

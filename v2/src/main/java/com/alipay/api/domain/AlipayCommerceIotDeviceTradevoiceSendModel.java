@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 到账播报
  *
  * @author auto create
- * @since 1.0, 2023-07-05 14:50:49
+ * @since 1.0, 2025-07-01 16:42:59
  */
 public class AlipayCommerceIotDeviceTradevoiceSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7647626744475282857L;
+	private static final long serialVersionUID = 5443789181795999531L;
 
 	/**
 	 * 播报的金额，必须大于0

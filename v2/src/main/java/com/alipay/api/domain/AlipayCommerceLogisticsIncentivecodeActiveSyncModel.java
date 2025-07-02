@@ -9,11 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 寄件激励码绑码激活信息同步
  *
  * @author auto create
- * @since 1.0, 2024-09-04 16:25:17
+ * @since 1.0, 2025-06-25 20:47:42
  */
 public class AlipayCommerceLogisticsIncentivecodeActiveSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8664597888597119497L;
+	private static final long serialVersionUID = 8246616937596821513L;
+
+	/**
+	 * 码值绑定时位置的区
+	 */
+	@ApiField("active_area")
+	private String activeArea;
+
+	/**
+	 * 码值绑定时位置的城市
+	 */
+	@ApiField("active_city")
+	private String activeCity;
 
 	/**
 	 * 码值绑定主体对应的支付宝用户id
@@ -28,6 +40,12 @@ public class AlipayCommerceLogisticsIncentivecodeActiveSyncModel extends AlipayO
 	private String activeCodeUserId;
 
 	/**
+	 * 码值绑定时位置的详细地址
+	 */
+	@ApiField("active_detail_address")
+	private String activeDetailAddress;
+
+	/**
 	 * 码值绑定时位置的纬度，单位：度
 	 */
 	@ApiField("active_latitude")
@@ -38,6 +56,18 @@ public class AlipayCommerceLogisticsIncentivecodeActiveSyncModel extends AlipayO
 	 */
 	@ApiField("active_longitude")
 	private String activeLongitude;
+
+	/**
+	 * 码值绑定时位置的省份
+	 */
+	@ApiField("active_province")
+	private String activeProvince;
+
+	/**
+	 * 码值绑定时位置的街道
+	 */
+	@ApiField("active_street")
+	private String activeStreet;
 
 	/**
 	 * 用于传入的时间，标准时间格式：yyyy-MM-dd HH:mm:ss
@@ -64,6 +94,20 @@ STATION 代表驿站
 	@ApiField("logistics_code")
 	private String logisticsCode;
 
+	public String getActiveArea() {
+		return this.activeArea;
+	}
+	public void setActiveArea(String activeArea) {
+		this.activeArea = activeArea;
+	}
+
+	public String getActiveCity() {
+		return this.activeCity;
+	}
+	public void setActiveCity(String activeCity) {
+		this.activeCity = activeCity;
+	}
+
 	public String getActiveCodeOpenId() {
 		return this.activeCodeOpenId;
 	}
@@ -78,6 +122,13 @@ STATION 代表驿站
 		this.activeCodeUserId = activeCodeUserId;
 	}
 
+	public String getActiveDetailAddress() {
+		return this.activeDetailAddress;
+	}
+	public void setActiveDetailAddress(String activeDetailAddress) {
+		this.activeDetailAddress = activeDetailAddress;
+	}
+
 	public String getActiveLatitude() {
 		return this.activeLatitude;
 	}
@@ -90,6 +141,20 @@ STATION 代表驿站
 	}
 	public void setActiveLongitude(String activeLongitude) {
 		this.activeLongitude = activeLongitude;
+	}
+
+	public String getActiveProvince() {
+		return this.activeProvince;
+	}
+	public void setActiveProvince(String activeProvince) {
+		this.activeProvince = activeProvince;
+	}
+
+	public String getActiveStreet() {
+		return this.activeStreet;
+	}
+	public void setActiveStreet(String activeStreet) {
+		this.activeStreet = activeStreet;
 	}
 
 	public Date getActiveTime() {

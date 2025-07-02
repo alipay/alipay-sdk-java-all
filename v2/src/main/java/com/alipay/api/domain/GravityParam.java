@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 多方安全风控服务咨询参数
  *
  * @author auto create
- * @since 1.0, 2022-06-17 14:18:45
+ * @since 1.0, 2025-07-01 14:59:40
  */
 public class GravityParam extends AlipayObject {
 
-	private static final long serialVersionUID = 6895233113568359945L;
+	private static final long serialVersionUID = 8882973519172287186L;
 
 	/**
 	 * 属性名：content+是否唯一：无需唯一+场景：多方安全风控服务参数值+枚举：无枚举值+如何获取：调用方根据不同风控产品所需参数对其加密后传入（是否加密根据数安、隐私审批结果决定，由多方安全风控平台提供）+特殊说明：如需加密，密文加密方式为AES(SHA256(data))，AES秘钥为随机生成的128位会话秘钥

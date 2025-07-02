@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 购物车活动对象
  *
  * @author auto create
- * @since 1.0, 2025-04-08 16:22:18
+ * @since 1.0, 2025-06-27 14:17:14
  */
 public class CartActivityBean extends AlipayObject {
 
-	private static final long serialVersionUID = 2399275657991952672L;
+	private static final long serialVersionUID = 5228924451796219629L;
 
 	/**
 	 * 活动ID
@@ -26,7 +26,7 @@ public class CartActivityBean extends AlipayObject {
 	private Long limitCnt;
 
 	/**
-	 * 商品原价
+	 * 商品原价【人民币】
 	 */
 	@ApiField("original_price")
 	private String originalPrice;

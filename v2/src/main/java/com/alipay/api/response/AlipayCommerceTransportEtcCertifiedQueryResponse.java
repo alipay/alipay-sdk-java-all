@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.etc.certified.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-17 10:02:28
+ * @since 1.0, 2025-06-27 22:42:30
  */
 public class AlipayCommerceTransportEtcCertifiedQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2358587551129932545L;
+	private static final long serialVersionUID = 1737428789724511355L;
 
 	/** 
 	 * 认证信息结果

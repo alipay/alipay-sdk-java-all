@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 寄件激励码动销反馈信息同步
  *
  * @author auto create
- * @since 1.0, 2024-12-23 16:03:53
+ * @since 1.0, 2025-06-30 17:25:52
  */
 public class AlipayCommerceLogisticsIncentivecodeOperationSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1178392986433722626L;
+	private static final long serialVersionUID = 8455818791354278899L;
 
 	/**
 	 * 支付宝交易号 当前字段已废弃(支付成功相关参数，迁移到alipay.commerce.logistics.trade.event.sync接口)
@@ -40,6 +40,12 @@ public class AlipayCommerceLogisticsIncentivecodeOperationSyncModel extends Alip
 	 */
 	@ApiField("logistics_code")
 	private String logisticsCode;
+
+	/**
+	 * 物料类型
+	 */
+	@ApiField("material_type")
+	private String materialType;
 
 	/**
 	 * SCAN(用户扫码)
@@ -140,6 +146,13 @@ OTHER 其他渠道
 	}
 	public void setLogisticsCode(String logisticsCode) {
 		this.logisticsCode = logisticsCode;
+	}
+
+	public String getMaterialType() {
+		return this.materialType;
+	}
+	public void setMaterialType(String materialType) {
+		this.materialType = materialType;
 	}
 
 	public String getOperationDynamicSalesType() {

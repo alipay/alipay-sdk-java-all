@@ -1,5 +1,6 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
 import java.util.List;
 
 import com.alipay.api.AlipayObject;
@@ -10,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租赁订单的简单信息
  *
  * @author auto create
- * @since 1.0, 2025-05-06 10:40:25
+ * @since 1.0, 2025-06-25 11:17:28
  */
 public class SimpleRentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7725377171374225422L;
+	private static final long serialVersionUID = 2865544424996419427L;
 
 	/**
 	 * 交易组件的订单Id
@@ -39,6 +40,24 @@ public class SimpleRentInfo extends AlipayObject {
 	 */
 	@ApiField("buyout_price")
 	private String buyoutPrice;
+
+	/**
+	 * 本次分账金额，单位：元。此字段只有在分账成功才有值
+	 */
+	@ApiField("current_royalty_amount")
+	private String currentRoyaltyAmount;
+
+	/**
+	 * 本次分账模式，此字段只有在分账成功才有值。
+	 */
+	@ApiField("current_royalty_mode")
+	private String currentRoyaltyMode;
+
+	/**
+	 * 本次分账时间，此字段只有在分账成功才有值。
+	 */
+	@ApiField("current_royalty_time")
+	private Date currentRoyaltyTime;
 
 	/**
 	 * 提前结清,true表示提前结清
@@ -159,6 +178,27 @@ public class SimpleRentInfo extends AlipayObject {
 	}
 	public void setBuyoutPrice(String buyoutPrice) {
 		this.buyoutPrice = buyoutPrice;
+	}
+
+	public String getCurrentRoyaltyAmount() {
+		return this.currentRoyaltyAmount;
+	}
+	public void setCurrentRoyaltyAmount(String currentRoyaltyAmount) {
+		this.currentRoyaltyAmount = currentRoyaltyAmount;
+	}
+
+	public String getCurrentRoyaltyMode() {
+		return this.currentRoyaltyMode;
+	}
+	public void setCurrentRoyaltyMode(String currentRoyaltyMode) {
+		this.currentRoyaltyMode = currentRoyaltyMode;
+	}
+
+	public Date getCurrentRoyaltyTime() {
+		return this.currentRoyaltyTime;
+	}
+	public void setCurrentRoyaltyTime(Date currentRoyaltyTime) {
+		this.currentRoyaltyTime = currentRoyaltyTime;
 	}
 
 	public Boolean getEarlySettle() {

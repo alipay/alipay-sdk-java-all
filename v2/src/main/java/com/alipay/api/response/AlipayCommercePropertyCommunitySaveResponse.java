@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.property.community.save response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-19 20:02:23
+ * @since 1.0, 2025-06-25 15:22:32
  */
 public class AlipayCommercePropertyCommunitySaveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8659395753189269419L;
+	private static final long serialVersionUID = 1786646812874321163L;
 
 	/** 
 	 * 项目ID

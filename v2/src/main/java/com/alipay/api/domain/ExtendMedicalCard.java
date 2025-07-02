@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户的已绑定卡数据
  *
  * @author auto create
- * @since 1.0, 2023-11-01 14:37:28
+ * @since 1.0, 2025-06-24 16:47:37
  */
 public class ExtendMedicalCard extends AlipayObject {
 
-	private static final long serialVersionUID = 8711296978371744172L;
+	private static final long serialVersionUID = 8394498851529191852L;
 
 	/**
 	 * 签约状态为成功绑定为不可空

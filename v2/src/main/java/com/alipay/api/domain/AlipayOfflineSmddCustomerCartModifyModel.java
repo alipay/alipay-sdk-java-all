@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 加入购物车
  *
  * @author auto create
- * @since 1.0, 2025-04-08 16:22:26
+ * @since 1.0, 2025-06-27 14:17:29
  */
 public class AlipayOfflineSmddCustomerCartModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2283989199651151633L;
+	private static final long serialVersionUID = 2476988195666556327L;
 
 	/**
 	 * 买家唯一标识

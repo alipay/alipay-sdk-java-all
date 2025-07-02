@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 共享资金-提现
  *
  * @author auto create
- * @since 1.0, 2022-07-21 12:13:53
+ * @since 1.0, 2025-06-30 21:39:01
  */
 public class AlipayFundJointaccountFundWithdrawModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6815363596299817145L;
+	private static final long serialVersionUID = 5692461871993557951L;
 
 	/**
 	 * 账户ID</br>
@@ -63,6 +63,12 @@ ALIPAY_USER_ID：支付宝侧用户唯一标识
 	 */
 	@ApiField("identity_type")
 	private String identityType;
+
+	/**
+	 * 用于标记支付宝用户在应用下的唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 备注标题</br>
@@ -131,6 +137,13 @@ ALIPAY_USER_ID：支付宝侧用户唯一标识
 	}
 	public void setIdentityType(String identityType) {
 		this.identityType = identityType;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrderTitle() {

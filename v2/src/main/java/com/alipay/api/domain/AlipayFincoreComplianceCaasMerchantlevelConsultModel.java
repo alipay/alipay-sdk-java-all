@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFincoreComplianceCaasMerchantlevelConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8377884244255921275L;
+	private static final long serialVersionUID = 4898253872628637236L;
 
 	/**
 	 * 订单金额

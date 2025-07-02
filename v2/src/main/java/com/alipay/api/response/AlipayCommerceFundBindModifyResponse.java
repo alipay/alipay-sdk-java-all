@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceFundBindModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4462682775518175542L;
+	private static final long serialVersionUID = 5316336697821318381L;
 
 	/** 
 	 * 本此绑卡操作是否幂等。true表示该out_bind_no已经生成过schema，此时的schema为上次已生成的schema

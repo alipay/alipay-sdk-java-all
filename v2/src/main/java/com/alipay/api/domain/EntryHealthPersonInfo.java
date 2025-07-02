@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EntryHealthPersonInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4172716317742288289L;
+	private static final long serialVersionUID = 5532335644294692159L;
 
 	/**
 	 * 参数代表候选人的表单号，根据数据库id加盐生成，字符串类型，供应商拿到该单号之后需要为该单号初始化信息用于登陆供应商系统，该字段不会为空

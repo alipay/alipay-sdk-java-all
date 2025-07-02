@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.institution.expenserule.modify response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-28 10:47:04
+ * @since 1.0, 2025-06-24 15:02:31
  */
 public class AlipayEbppInvoiceInstitutionExpenseruleModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3662354249476742428L;
+	private static final long serialVersionUID = 2861711132295748178L;
 
 	/** 
 	 * 编辑结果是否成功

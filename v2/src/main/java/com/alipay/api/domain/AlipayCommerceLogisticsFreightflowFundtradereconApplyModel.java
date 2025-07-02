@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 货运企业支付收银台资金支付对账单查询
  *
  * @author auto create
- * @since 1.0, 2025-05-28 17:02:27
+ * @since 1.0, 2025-07-01 13:45:25
  */
 public class AlipayCommerceLogisticsFreightflowFundtradereconApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3598677337979443615L;
+	private static final long serialVersionUID = 2784442413564537316L;
 
 	/**
 	 * 由商户系统生成,只能包含字母,数字,下划线;商户需保证不重复.

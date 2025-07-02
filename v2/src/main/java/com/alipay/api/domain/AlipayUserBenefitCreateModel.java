@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserBenefitCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8383714617275975813L;
+	private static final long serialVersionUID = 4518592541627955111L;
 
 	/**
 	 * 权益专区码，在创建权益前应该先向蚂蚁会员平台申请一个合适的专区码。 专区必须存在。

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 问诊订单状态同步-扩展信息
  *
  * @author auto create
- * @since 1.0, 2025-01-06 16:05:52
+ * @since 1.0, 2025-06-30 16:14:40
  */
 public class PlatformInquiryOrderStatusExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2471281376534262788L;
+	private static final long serialVersionUID = 4451357681543639722L;
 
 	/**
 	 * 支付宝交易号
@@ -42,6 +42,12 @@ public class PlatformInquiryOrderStatusExtInfo extends AlipayObject {
 	private String complaint;
 
 	/**
+	 * 医生头像
+	 */
+	@ApiField("doctor_avatar")
+	private String doctorAvatar;
+
+	/**
 	 * 联系医生问诊链接
 	 */
 	@ApiField("doctor_inquiry_link_page")
@@ -64,6 +70,12 @@ public class PlatformInquiryOrderStatusExtInfo extends AlipayObject {
 	 */
 	@ApiField("doctor_refuse_reason")
 	private String doctorRefuseReason;
+
+	/**
+	 * 医生职称
+	 */
+	@ApiField("doctor_title")
+	private String doctorTitle;
 
 	/**
 	 * 是否首次回复
@@ -106,6 +118,12 @@ public class PlatformInquiryOrderStatusExtInfo extends AlipayObject {
 	 */
 	@ApiField("gmt_refund_applying")
 	private Date gmtRefundApplying;
+
+	/**
+	 * 医院名称
+	 */
+	@ApiField("hospital_name")
+	private String hospitalName;
 
 	/**
 	 * 问诊完成类型
@@ -191,6 +209,13 @@ TIMEOUT_END：超时结束
 		this.complaint = complaint;
 	}
 
+	public String getDoctorAvatar() {
+		return this.doctorAvatar;
+	}
+	public void setDoctorAvatar(String doctorAvatar) {
+		this.doctorAvatar = doctorAvatar;
+	}
+
 	public String getDoctorInquiryLinkPage() {
 		return this.doctorInquiryLinkPage;
 	}
@@ -217,6 +242,13 @@ TIMEOUT_END：超时结束
 	}
 	public void setDoctorRefuseReason(String doctorRefuseReason) {
 		this.doctorRefuseReason = doctorRefuseReason;
+	}
+
+	public String getDoctorTitle() {
+		return this.doctorTitle;
+	}
+	public void setDoctorTitle(String doctorTitle) {
+		this.doctorTitle = doctorTitle;
 	}
 
 	public Boolean getFirstReply() {
@@ -266,6 +298,13 @@ TIMEOUT_END：超时结束
 	}
 	public void setGmtRefundApplying(Date gmtRefundApplying) {
 		this.gmtRefundApplying = gmtRefundApplying;
+	}
+
+	public String getHospitalName() {
+		return this.hospitalName;
+	}
+	public void setHospitalName(String hospitalName) {
+		this.hospitalName = hospitalName;
 	}
 
 	public String getInquiryCompleteStatus() {

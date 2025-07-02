@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.card.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-19 17:17:04
+ * @since 1.0, 2025-06-24 16:52:30
  */
 public class AlipayCommerceMedicalCardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2754212614893516745L;
+	private static final long serialVersionUID = 4881251864495576627L;
 
 	/** 
 	 * 签约协议号

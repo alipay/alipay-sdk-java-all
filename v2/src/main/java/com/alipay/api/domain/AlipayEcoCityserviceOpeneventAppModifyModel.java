@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 光华平台服务入驻修改服务信息接口
  *
  * @author auto create
- * @since 1.0, 2024-10-31 11:17:13
+ * @since 1.0, 2025-06-25 20:20:57
  */
 public class AlipayEcoCityserviceOpeneventAppModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5295699474474184992L;
+	private static final long serialVersionUID = 5445762232813464797L;
 
 	/**
 	 * 光华平台服务入驻接口返回的唯一编码

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.logistics.freightflow.fundtrade.create request
  * 
  * @author auto create
- * @since 1.0, 2025-05-28 17:02:27
+ * @since 1.0, 2025-07-01 13:45:07
  */
 public class AlipayCommerceLogisticsFreightflowFundtradeCreateRequest implements AlipayRequest<AlipayCommerceLogisticsFreightflowFundtradeCreateResponse> {
 

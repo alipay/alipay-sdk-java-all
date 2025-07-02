@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoMycarFuellingShopModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8321736861699183758L;
+	private static final long serialVersionUID = 6573259948543852367L;
 
 	/**
 	 * 门店地址

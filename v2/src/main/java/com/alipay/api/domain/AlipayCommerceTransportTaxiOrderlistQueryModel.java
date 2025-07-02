@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝出租车司机交易订单列表查询
  *
  * @author auto create
- * @since 1.0, 2025-05-27 16:29:13
+ * @since 1.0, 2025-06-27 10:12:17
  */
 public class AlipayCommerceTransportTaxiOrderlistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1589389878776115919L;
+	private static final long serialVersionUID = 6723847652968743329L;
 
 	/**
 	 * 查询结束时间，未填默认取当前时间

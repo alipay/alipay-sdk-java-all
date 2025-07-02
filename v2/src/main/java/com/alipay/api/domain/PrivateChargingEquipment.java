@@ -1,5 +1,6 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
 import java.util.List;
 
 import com.alipay.api.AlipayObject;
@@ -10,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 充电私桩信息
  *
  * @author auto create
- * @since 1.0, 2025-06-03 10:35:43
+ * @since 1.0, 2025-06-25 16:24:04
  */
 public class PrivateChargingEquipment extends AlipayObject {
 
-	private static final long serialVersionUID = 8728219842328879288L;
+	private static final long serialVersionUID = 1873811775617611281L;
 
 	/**
 	 * 充电桩二维码值
@@ -76,6 +77,18 @@ public class PrivateChargingEquipment extends AlipayObject {
 	@ApiListField("modes")
 	@ApiField("string")
 	private List<String> modes;
+
+	/**
+	 * 流量开始时间
+	 */
+	@ApiField("network_data_begin_time")
+	private Date networkDataBeginTime;
+
+	/**
+	 * 流量结束时间
+	 */
+	@ApiField("network_data_end_time")
+	private Date networkDataEndTime;
 
 	/**
 	 * 额定电流
@@ -169,6 +182,20 @@ public class PrivateChargingEquipment extends AlipayObject {
 	}
 	public void setModes(List<String> modes) {
 		this.modes = modes;
+	}
+
+	public Date getNetworkDataBeginTime() {
+		return this.networkDataBeginTime;
+	}
+	public void setNetworkDataBeginTime(Date networkDataBeginTime) {
+		this.networkDataBeginTime = networkDataBeginTime;
+	}
+
+	public Date getNetworkDataEndTime() {
+		return this.networkDataEndTime;
+	}
+	public void setNetworkDataEndTime(Date networkDataEndTime) {
+		this.networkDataEndTime = networkDataEndTime;
 	}
 
 	public String getRatedCurrent() {

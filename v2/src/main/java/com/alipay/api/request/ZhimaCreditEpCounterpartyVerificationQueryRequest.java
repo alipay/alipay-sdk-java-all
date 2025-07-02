@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.ep.counterparty.verification.query request
  * 
  * @author auto create
- * @since 1.0, 2025-06-16 10:12:29
+ * @since 1.0, 2025-06-30 18:47:31
  */
 public class ZhimaCreditEpCounterpartyVerificationQueryRequest implements AlipayRequest<ZhimaCreditEpCounterpartyVerificationQueryResponse> {
 

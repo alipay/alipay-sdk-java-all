@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 芝麻企业信用场景账户结果同步
  *
  * @author auto create
- * @since 1.0, 2025-03-06 11:53:27
+ * @since 1.0, 2025-06-26 14:37:10
  */
 public class ZhimaCreditEpSceneAccountSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8696961254592939965L;
+	private static final long serialVersionUID = 7893636197821275227L;
 
 	/**
 	 * 芝麻企业信用赋予的唯一业务单号
@@ -36,6 +39,13 @@ public class ZhimaCreditEpSceneAccountSyncModel extends AlipayObject {
 	 */
 	@ApiField("open_status")
 	private String openStatus;
+
+	/**
+	 * 同步平台账户在平台的相关操作
+	 */
+	@ApiListField("sync_content")
+	@ApiField("string")
+	private List<String> syncContent;
 
 	public String getBizNo() {
 		return this.bizNo;
@@ -63,6 +73,13 @@ public class ZhimaCreditEpSceneAccountSyncModel extends AlipayObject {
 	}
 	public void setOpenStatus(String openStatus) {
 		this.openStatus = openStatus;
+	}
+
+	public List<String> getSyncContent() {
+		return this.syncContent;
+	}
+	public void setSyncContent(List<String> syncContent) {
+		this.syncContent = syncContent;
 	}
 
 }

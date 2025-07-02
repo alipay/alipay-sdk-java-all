@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HotelPromotionDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 4566993111999425998L;
+	private static final long serialVersionUID = 1737284236335895137L;
 
 	/**
 	 * 酒店优惠活动金额

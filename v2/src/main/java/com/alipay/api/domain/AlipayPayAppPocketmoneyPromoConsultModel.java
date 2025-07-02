@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPayAppPocketmoneyPromoConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6657637881186474365L;
+	private static final long serialVersionUID = 7176474179938799544L;
 
 	/**
 	 * 奖品流水单号，由外部厂商提供，查询时支付宝负责找到对应奖品

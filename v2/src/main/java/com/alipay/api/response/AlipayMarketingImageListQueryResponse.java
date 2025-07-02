@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.image.list.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-21 15:40:20
+ * @since 1.0, 2025-06-24 13:34:55
  */
 public class AlipayMarketingImageListQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5186945977117974983L;
+	private static final long serialVersionUID = 8724331779597237914L;
 
 	/** 
 	 * 图片列表。

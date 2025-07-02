@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 自定义配置
  *
  * @author auto create
- * @since 1.0, 2025-06-19 20:02:23
+ * @since 1.0, 2025-06-25 15:22:32
  */
 public class CustomConfigVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6546532363959827971L;
+	private static final long serialVersionUID = 6454763269667332992L;
 
 	/**
 	 * 配置开关 true|false
@@ -20,13 +20,13 @@ public class CustomConfigVO extends AlipayObject {
 	private Boolean configSwitch;
 
 	/**
-	 * 图片地址
+	 * 图片地址，当type=IMAGE时必选
 	 */
 	@ApiField("image_url")
 	private String imageUrl;
 
 	/**
-	 * 链接地址
+	 * 链接地址，当type=LINK时必选
 	 */
 	@ApiField("link_url")
 	private String linkUrl;

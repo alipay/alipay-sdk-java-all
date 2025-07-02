@@ -11,17 +11,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 离线文本质检
  *
  * @author auto create
- * @since 1.0, 2025-06-06 11:34:43
+ * @since 1.0, 2025-06-30 15:17:31
  */
 public class OfflineTextQc extends AlipayObject {
 
-	private static final long serialVersionUID = 8545646352359694354L;
+	private static final long serialVersionUID = 5252648387419249871L;
 
 	/**
 	 * 热线可以选择传递的号码
 	 */
 	@ApiField("caller_phone")
 	private String callerPhone;
+
+	/**
+	 * 渠道来源
+	 */
+	@ApiField("channel")
+	private String channel;
 
 	/**
 	 * 对话内容
@@ -47,6 +53,13 @@ public class OfflineTextQc extends AlipayObject {
 	}
 	public void setCallerPhone(String callerPhone) {
 		this.callerPhone = callerPhone;
+	}
+
+	public String getChannel() {
+		return this.channel;
+	}
+	public void setChannel(String channel) {
+		this.channel = channel;
 	}
 
 	public List<QcDialog> getContent() {

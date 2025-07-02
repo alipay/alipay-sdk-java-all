@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 可用门店
  *
  * @author auto create
- * @since 1.0, 2024-06-24 21:42:14
+ * @since 1.0, 2025-06-30 14:08:38
  */
 public class VoucherAvailableGeographyShopInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5743139524165829867L;
+	private static final long serialVersionUID = 6796761758672876642L;
 
 	/**
 	 * 全部门店可用
@@ -23,7 +23,7 @@ public class VoucherAvailableGeographyShopInfo extends AlipayObject {
 	private VoucherAvailableGeographyAllShopInfo availableGeographyAllShop;
 
 	/**
-	 * 代运营商业关系门店列表，列表中的门店id是调用接口alipay.business.relation.shop.create创建门店返回的real_shop_id 接口参数是列表类型。
+	 * 券可使用的物理门店列表，列表中的门店id是调用接口alipay.business.relation.shop.create创建门店返回的real_shop_id 接口参数是列表类型。
 	 */
 	@ApiListField("available_real_shop_ids")
 	@ApiField("string")

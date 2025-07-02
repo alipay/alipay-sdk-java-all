@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * Boolean类型结果，true-命中高风险 false-未命中高风险
+ * Tn_Level类型结果，risk_level字段取值范围T1-T10（T1 ~ T4: 低风险；T5 ~ T6: 中风险；T7 ~ T8: 高风险；T9 ~ T10: 极高风险）
  *
  * @author auto create
- * @since 1.0, 2025-06-17 16:17:28
+ * @since 1.0, 2025-07-01 11:22:31
  */
 public class RentRiskProVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7223465174227635162L;
+	private static final long serialVersionUID = 7177228594531552911L;
 
 	/**
 	 * 描述信息

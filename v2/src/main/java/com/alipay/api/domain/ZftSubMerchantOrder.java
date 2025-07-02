@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 直付通二级商户进件申请单信息
  *
  * @author auto create
- * @since 1.0, 2023-11-16 20:06:18
+ * @since 1.0, 2025-07-01 14:40:22
  */
 public class ZftSubMerchantOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 3653269419629991852L;
+	private static final long serialVersionUID = 8431982978152348165L;
 
 	/**
 	 * 是否开通线上预授权
@@ -98,6 +98,12 @@ public class ZftSubMerchantOrder extends AlipayObject {
 	 */
 	@ApiField("reason")
 	private String reason;
+
+	/**
+	 * 签约支付宝账号（脱敏）
+	 */
+	@ApiField("safe_binding_logon_id")
+	private String safeBindingLogonId;
 
 	/**
 	 * 二级商户id。当总体申请状态status为99时，smid才算进件完成
@@ -225,6 +231,13 @@ public class ZftSubMerchantOrder extends AlipayObject {
 	}
 	public void setReason(String reason) {
 		this.reason = reason;
+	}
+
+	public String getSafeBindingLogonId() {
+		return this.safeBindingLogonId;
+	}
+	public void setSafeBindingLogonId(String safeBindingLogonId) {
+		this.safeBindingLogonId = safeBindingLogonId;
 	}
 
 	public String getSmid() {

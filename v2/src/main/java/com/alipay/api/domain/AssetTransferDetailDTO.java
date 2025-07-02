@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资产明细DTO
  *
  * @author auto create
- * @since 1.0, 2025-06-04 16:49:31
+ * @since 1.0, 2025-06-25 21:54:56
  */
 public class AssetTransferDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3512762155888638165L;
+	private static final long serialVersionUID = 2739911446329465139L;
 
 	/**
 	 * 金额，单位分
@@ -26,6 +26,12 @@ public class AssetTransferDetailDTO extends AlipayObject {
 	 */
 	@ApiField("asset_id")
 	private String assetId;
+
+	/**
+	 * 带出业务参数
+	 */
+	@ApiField("biz_param")
+	private String bizParam;
 
 	/**
 	 * 业务类型
@@ -111,6 +117,13 @@ public class AssetTransferDetailDTO extends AlipayObject {
 	}
 	public void setAssetId(String assetId) {
 		this.assetId = assetId;
+	}
+
+	public String getBizParam() {
+		return this.bizParam;
+	}
+	public void setBizParam(String bizParam) {
+		this.bizParam = bizParam;
 	}
 
 	public String getBizType() {

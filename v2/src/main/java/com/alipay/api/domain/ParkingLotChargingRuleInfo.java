@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ParkingLotChargingRuleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2538647323637588336L;
+	private static final long serialVersionUID = 7548191658389622658L;
 
 	/**
 	 * 停车收费时间段，输入24小时制的小时时间段格式: 

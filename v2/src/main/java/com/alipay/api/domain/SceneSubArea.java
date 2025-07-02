@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SceneSubArea extends AlipayObject {
 
-	private static final long serialVersionUID = 6143699721675922895L;
+	private static final long serialVersionUID = 7228588499925462164L;
 
 	/**
 	 * 区域id

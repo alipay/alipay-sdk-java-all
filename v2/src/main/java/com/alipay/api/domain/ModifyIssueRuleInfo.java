@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ModifyIssueRuleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5798138971559647776L;
+	private static final long serialVersionUID = 6329421278327991889L;
 
 	/**
 	 * 发放资产的有效时间段，该字段为空时，默认为不限制。当发放资产为余额时，仅支持设置为不限，当发放资产为点券时，可支持设置多种值。具体传值格式请参考文档 <a href="https://opendocs.alipay.com/pre-open/07nwcs">接入文档</a>

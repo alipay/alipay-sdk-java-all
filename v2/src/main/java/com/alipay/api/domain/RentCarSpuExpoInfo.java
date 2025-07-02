@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RentCarSpuExpoInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2315776354346442739L;
+	private static final long serialVersionUID = 4487351855699311845L;
 
 	/**
 	 * 车型类型

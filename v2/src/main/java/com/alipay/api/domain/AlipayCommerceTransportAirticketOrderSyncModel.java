@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 出行机票订单数据同步
  *
  * @author auto create
- * @since 1.0, 2025-01-09 13:55:49
+ * @since 1.0, 2025-07-01 17:35:43
  */
 public class AlipayCommerceTransportAirticketOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6288122983482779176L;
+	private static final long serialVersionUID = 5524773544532321153L;
 
 	/**
 	 * 订单总金额，币种：人民币，单位：元
@@ -103,6 +103,13 @@ public class AlipayCommerceTransportAirticketOrderSyncModel extends AlipayObject
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
+
+	/**
+	 * 乘机人四要素加密信息列表，其中的certType证件号和手机号经过了对称加密密钥加密过
+	 */
+	@ApiListField("passenger_info_encrypted_list")
+	@ApiField("traffic_air_ticket_passenger_encrypted_info")
+	private List<TrafficAirTicketPassengerEncryptedInfo> passengerInfoEncryptedList;
 
 	/**
 	 * 乘机人信息
@@ -243,6 +250,13 @@ public class AlipayCommerceTransportAirticketOrderSyncModel extends AlipayObject
 	}
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
+	}
+
+	public List<TrafficAirTicketPassengerEncryptedInfo> getPassengerInfoEncryptedList() {
+		return this.passengerInfoEncryptedList;
+	}
+	public void setPassengerInfoEncryptedList(List<TrafficAirTicketPassengerEncryptedInfo> passengerInfoEncryptedList) {
+		this.passengerInfoEncryptedList = passengerInfoEncryptedList;
 	}
 
 	public List<TrafficAirticketOrderPassengerInfo> getPassengerInfoList() {

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.imagedirectory.modify request
  * 
  * @author auto create
- * @since 1.0, 2025-05-21 15:41:10
+ * @since 1.0, 2025-06-24 13:34:57
  */
 public class AlipayMarketingImagedirectoryModifyRequest implements AlipayRequest<AlipayMarketingImagedirectoryModifyResponse> {
 

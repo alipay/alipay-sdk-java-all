@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.ec.enterprise.registerinvite.create request
  * 
  * @author auto create
- * @since 1.0, 2025-06-05 20:17:26
+ * @since 1.0, 2025-06-24 16:32:47
  */
 public class AlipayCommerceEcEnterpriseRegisterinviteCreateRequest implements AlipayRequest<AlipayCommerceEcEnterpriseRegisterinviteCreateResponse> {
 

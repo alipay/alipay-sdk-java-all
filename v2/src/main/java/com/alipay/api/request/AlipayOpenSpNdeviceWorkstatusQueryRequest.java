@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.sp.ndevice.workstatus.query request
  * 
  * @author auto create
- * @since 1.0, 2025-04-30 11:57:25
+ * @since 1.0, 2025-07-01 20:51:08
  */
 public class AlipayOpenSpNdeviceWorkstatusQueryRequest implements AlipayRequest<AlipayOpenSpNdeviceWorkstatusQueryResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询运单行程
  *
  * @author auto create
- * @since 1.0, 2025-06-17 09:59:26
+ * @since 1.0, 2025-06-27 22:40:51
  */
 public class AlipayCommerceTransportEtcCertifiedtripQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2412315897329297754L;
+	private static final long serialVersionUID = 2896923972256668568L;
 
 	/**
 	 * 支付宝认证协议号

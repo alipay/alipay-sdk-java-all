@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 认证信息查询
  *
  * @author auto create
- * @since 1.0, 2025-06-17 09:59:28
+ * @since 1.0, 2025-06-27 22:40:41
  */
 public class AlipayCommerceTransportEtcCertifiedQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1563834382987342547L;
+	private static final long serialVersionUID = 1125698768811428644L;
 
 	/**
 	 * 授权协议号

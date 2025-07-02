@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 收结易订单同步
  *
  * @author auto create
- * @since 1.0, 2025-01-10 17:38:51
+ * @since 1.0, 2025-06-26 16:32:40
  */
 public class AlipayTradeUnifiedsettleSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7556148784212392169L;
+	private static final long serialVersionUID = 6752513795441127854L;
 
 	/**
 	 * 收单模式，目前仅支持PLATFORM_BUSINESS

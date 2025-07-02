@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.invoice.apply request
  * 
  * @author auto create
- * @since 1.0, 2025-06-16 15:42:28
+ * @since 1.0, 2025-07-01 15:02:29
  */
 public class AlipayCloudCloudbaseInvoiceApplyRequest implements AlipayRequest<AlipayCloudCloudbaseInvoiceApplyResponse> {
 

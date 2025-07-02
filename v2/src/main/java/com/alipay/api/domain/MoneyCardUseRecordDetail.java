@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 金额卡核销订单
  *
  * @author auto create
- * @since 1.0, 2024-11-15 16:01:53
+ * @since 1.0, 2025-06-24 13:56:03
  */
 public class MoneyCardUseRecordDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7549484281267961344L;
+	private static final long serialVersionUID = 1457881777312347228L;
 
 	/**
 	 * 金额，对应金额卡实际核销金额，单位：分
@@ -79,6 +79,18 @@ public class MoneyCardUseRecordDetail extends AlipayObject {
 	private String ownerUid;
 
 	/**
+	 * 核销退款金额（单位分）
+	 */
+	@ApiField("refund_amount")
+	private Long refundAmount;
+
+	/**
+	 * 核销退款时间
+	 */
+	@ApiField("refund_time")
+	private Date refundTime;
+
+	/**
 	 * 交易号
 	 */
 	@ApiField("trade_no")
@@ -89,6 +101,12 @@ public class MoneyCardUseRecordDetail extends AlipayObject {
 	 */
 	@ApiField("trade_pid")
 	private String tradePid;
+
+	/**
+	 * 面额价，单位：分
+	 */
+	@ApiField("use_amount")
+	private Long useAmount;
 
 	/**
 	 * 核销门店id
@@ -184,6 +202,20 @@ public class MoneyCardUseRecordDetail extends AlipayObject {
 		this.ownerUid = ownerUid;
 	}
 
+	public Long getRefundAmount() {
+		return this.refundAmount;
+	}
+	public void setRefundAmount(Long refundAmount) {
+		this.refundAmount = refundAmount;
+	}
+
+	public Date getRefundTime() {
+		return this.refundTime;
+	}
+	public void setRefundTime(Date refundTime) {
+		this.refundTime = refundTime;
+	}
+
 	public String getTradeNo() {
 		return this.tradeNo;
 	}
@@ -196,6 +228,13 @@ public class MoneyCardUseRecordDetail extends AlipayObject {
 	}
 	public void setTradePid(String tradePid) {
 		this.tradePid = tradePid;
+	}
+
+	public Long getUseAmount() {
+		return this.useAmount;
+	}
+	public void setUseAmount(Long useAmount) {
+		this.useAmount = useAmount;
 	}
 
 	public String getUseShopId() {

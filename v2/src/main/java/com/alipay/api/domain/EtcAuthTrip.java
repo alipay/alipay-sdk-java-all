@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 高德授权认证结果查询
  *
  * @author auto create
- * @since 1.0, 2025-06-17 09:59:26
+ * @since 1.0, 2025-06-27 18:13:52
  */
 public class EtcAuthTrip extends AlipayObject {
 
-	private static final long serialVersionUID = 4781876498269468623L;
+	private static final long serialVersionUID = 6731266148725223539L;
 
 	/**
 	 * 出站名称
@@ -24,6 +24,18 @@ public class EtcAuthTrip extends AlipayObject {
 	 */
 	@ApiField("end_station_time")
 	private String endStationTime;
+
+	/**
+	 * 商户侧运单号
+	 */
+	@ApiField("out_waybill_no")
+	private String outWaybillNo;
+
+	/**
+	 * 行程账单支付时间
+	 */
+	@ApiField("pay_time")
+	private String payTime;
 
 	/**
 	 * 车牌颜色
@@ -67,6 +79,12 @@ public class EtcAuthTrip extends AlipayObject {
 	@ApiField("trade_id")
 	private String tradeId;
 
+	/**
+	 * 支付宝运单号
+	 */
+	@ApiField("waybill_no")
+	private String waybillNo;
+
 	public String getEndStationName() {
 		return this.endStationName;
 	}
@@ -79,6 +97,20 @@ public class EtcAuthTrip extends AlipayObject {
 	}
 	public void setEndStationTime(String endStationTime) {
 		this.endStationTime = endStationTime;
+	}
+
+	public String getOutWaybillNo() {
+		return this.outWaybillNo;
+	}
+	public void setOutWaybillNo(String outWaybillNo) {
+		this.outWaybillNo = outWaybillNo;
+	}
+
+	public String getPayTime() {
+		return this.payTime;
+	}
+	public void setPayTime(String payTime) {
+		this.payTime = payTime;
 	}
 
 	public String getPlateColor() {
@@ -128,6 +160,13 @@ public class EtcAuthTrip extends AlipayObject {
 	}
 	public void setTradeId(String tradeId) {
 		this.tradeId = tradeId;
+	}
+
+	public String getWaybillNo() {
+		return this.waybillNo;
+	}
+	public void setWaybillNo(String waybillNo) {
+		this.waybillNo = waybillNo;
 	}
 
 }

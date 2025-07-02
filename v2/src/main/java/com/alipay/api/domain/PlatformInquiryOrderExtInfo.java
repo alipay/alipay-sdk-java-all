@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 问诊订单扩展信息
  *
  * @author auto create
- * @since 1.0, 2025-06-12 13:36:47
+ * @since 1.0, 2025-06-30 16:14:35
  */
 public class PlatformInquiryOrderExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8388218666619484245L;
+	private static final long serialVersionUID = 5442988697819597942L;
 
 	/**
 	 * 支付宝渠道订单标识
@@ -47,10 +47,34 @@ public class PlatformInquiryOrderExtInfo extends AlipayObject {
 	private String complaint;
 
 	/**
+	 * 医生职称中文描述
+	 */
+	@ApiField("doctor_avatar")
+	private String doctorAvatar;
+
+	/**
 	 * 联系医生问诊链接
 	 */
 	@ApiField("doctor_inquiry_link_page")
 	private String doctorInquiryLinkPage;
+
+	/**
+	 * 医生职称
+	 */
+	@ApiField("doctor_title")
+	private String doctorTitle;
+
+	/**
+	 * 医生类型
+	 */
+	@ApiField("doctor_type")
+	private String doctorType;
+
+	/**
+	 * 医院名称
+	 */
+	@ApiField("hospital_name")
+	private String hospitalName;
 
 	/**
 	 * 订单开票入口
@@ -65,16 +89,34 @@ public class PlatformInquiryOrderExtInfo extends AlipayObject {
 	private PlatformInquiryOrderEvaluateInfo medicalInquiryOrderEvaluateInfo;
 
 	/**
+	 * 给好大夫定义的一个订单来源
+	 */
+	@ApiField("order_from")
+	private String orderFrom;
+
+	/**
 	 * 订单所属pid
 	 */
 	@ApiField("order_pid")
 	private String orderPid;
 
 	/**
+	 * 订单商品的spu名
+	 */
+	@ApiField("order_spu")
+	private String orderSpu;
+
+	/**
 	 * 订单原价，单位元，保留小数点2位
 	 */
 	@ApiField("original_price")
 	private String originalPrice;
+
+	/**
+	 * 外部业务单号
+	 */
+	@ApiField("out_biz_no")
+	private String outBizNo;
 
 	/**
 	 * 加号扩展信息
@@ -134,11 +176,39 @@ public class PlatformInquiryOrderExtInfo extends AlipayObject {
 		this.complaint = complaint;
 	}
 
+	public String getDoctorAvatar() {
+		return this.doctorAvatar;
+	}
+	public void setDoctorAvatar(String doctorAvatar) {
+		this.doctorAvatar = doctorAvatar;
+	}
+
 	public String getDoctorInquiryLinkPage() {
 		return this.doctorInquiryLinkPage;
 	}
 	public void setDoctorInquiryLinkPage(String doctorInquiryLinkPage) {
 		this.doctorInquiryLinkPage = doctorInquiryLinkPage;
+	}
+
+	public String getDoctorTitle() {
+		return this.doctorTitle;
+	}
+	public void setDoctorTitle(String doctorTitle) {
+		this.doctorTitle = doctorTitle;
+	}
+
+	public String getDoctorType() {
+		return this.doctorType;
+	}
+	public void setDoctorType(String doctorType) {
+		this.doctorType = doctorType;
+	}
+
+	public String getHospitalName() {
+		return this.hospitalName;
+	}
+	public void setHospitalName(String hospitalName) {
+		this.hospitalName = hospitalName;
 	}
 
 	public String getInvoiceUrl() {
@@ -155,6 +225,13 @@ public class PlatformInquiryOrderExtInfo extends AlipayObject {
 		this.medicalInquiryOrderEvaluateInfo = medicalInquiryOrderEvaluateInfo;
 	}
 
+	public String getOrderFrom() {
+		return this.orderFrom;
+	}
+	public void setOrderFrom(String orderFrom) {
+		this.orderFrom = orderFrom;
+	}
+
 	public String getOrderPid() {
 		return this.orderPid;
 	}
@@ -162,11 +239,25 @@ public class PlatformInquiryOrderExtInfo extends AlipayObject {
 		this.orderPid = orderPid;
 	}
 
+	public String getOrderSpu() {
+		return this.orderSpu;
+	}
+	public void setOrderSpu(String orderSpu) {
+		this.orderSpu = orderSpu;
+	}
+
 	public String getOriginalPrice() {
 		return this.originalPrice;
 	}
 	public void setOriginalPrice(String originalPrice) {
 		this.originalPrice = originalPrice;
+	}
+
+	public String getOutBizNo() {
+		return this.outBizNo;
+	}
+	public void setOutBizNo(String outBizNo) {
+		this.outBizNo = outBizNo;
 	}
 
 	public PlatformPlusRegisterInfo getPlusRegisterInfo() {

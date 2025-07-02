@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.ndevice.workstatus.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-30 11:57:25
+ * @since 1.0, 2025-07-01 20:51:08
  */
 public class AlipayOpenSpNdeviceWorkstatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3612456263786341653L;
+	private static final long serialVersionUID = 6698241842676839549L;
 
 	/** 
 	 * 设备绑定状态，true表示当前设备已经绑定，false表示当前设备维未绑定

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BookPriceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4627221515493685347L;
+	private static final long serialVersionUID = 8249236435175513615L;
 
 	/**
 	 * 书籍原价。单位元，最多两位小数。收费书籍必填

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 光华平台商品入驻创建商品接口
  *
  * @author auto create
- * @since 1.0, 2024-11-19 17:34:56
+ * @since 1.0, 2025-06-25 20:19:46
  */
 public class AlipayEcoCityserviceOpeneventAppitemCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4482522814842927958L;
+	private static final long serialVersionUID = 5269781424232142261L;
 
 	/**
 	 * 行业编码，表示商品提报时，需要提报的行业。一般有支付宝侧分配

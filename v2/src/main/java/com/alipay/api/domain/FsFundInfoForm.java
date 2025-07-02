@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 权益账户出资方信息
  *
  * @author auto create
- * @since 1.0, 2025-05-25 11:08:06
+ * @since 1.0, 2025-06-30 14:02:49
  */
 public class FsFundInfoForm extends AlipayObject {
 
-	private static final long serialVersionUID = 2187466254799142555L;
+	private static final long serialVersionUID = 3418777312859649721L;
+
+	/**
+	 * 退款时为出资方退款金额，单位：元
+	 */
+	@ApiField("amount")
+	private String amount;
 
 	/**
 	 * 出资方类型：平台出资，商户出资，第三方机构出资
@@ -30,6 +36,13 @@ public class FsFundInfoForm extends AlipayObject {
 	 */
 	@ApiField("fund_user_id")
 	private String fundUserId;
+
+	public String getAmount() {
+		return this.amount;
+	}
+	public void setAmount(String amount) {
+		this.amount = amount;
+	}
 
 	public String getFundProvider() {
 		return this.fundProvider;

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudpromo.travel.pic.create request
  * 
  * @author auto create
- * @since 1.0, 2025-01-08 15:32:22
+ * @since 1.0, 2025-06-27 10:32:28
  */
 public class AlipayCloudCloudpromoTravelPicCreateRequest implements AlipayRequest<AlipayCloudCloudpromoTravelPicCreateResponse> {
 

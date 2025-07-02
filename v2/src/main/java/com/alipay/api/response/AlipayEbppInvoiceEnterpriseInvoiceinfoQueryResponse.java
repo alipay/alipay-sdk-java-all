@@ -1,7 +1,9 @@
 package com.alipay.api.response;
 
 import java.util.Date;
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 import com.alipay.api.AlipayResponse;
 
@@ -9,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.enterprise.invoiceinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-06 14:42:00
+ * @since 1.0, 2025-06-27 15:22:31
  */
 public class AlipayEbppInvoiceEnterpriseInvoiceinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4333927256676331616L;
+	private static final long serialVersionUID = 7787275496912129912L;
 
 	/** 
 	 * 防伪码
@@ -56,6 +58,13 @@ public class AlipayEbppInvoiceEnterpriseInvoiceinfoQueryResponse extends AlipayR
 	 */
 	@ApiField("file_type")
 	private String fileType;
+
+	/** 
+	 * 特定行业信息，需要根据特定行业要素类型（specific_factor），获取<a href="https://opendocs.alipay.com/pre-open/07wr4t?pathHash=5d7c31e5#%E8%A1%8C%E4%B8%9A%E6%A8%A1%E5%9E%8B%E5%AE%9A%E4%B9%89">具体行业模型</a>
+	 */
+	@ApiListField("industry_specific_infos")
+	@ApiField("string")
+	private List<String> industrySpecificInfos;
 
 	/** 
 	 * 发票查验结果
@@ -190,10 +199,22 @@ public class AlipayEbppInvoiceEnterpriseInvoiceinfoQueryResponse extends AlipayR
 	private String payerRegisterNo;
 
 	/** 
+	 * 发票关联到账单时，该参数有值，为关联账单的交易号
+	 */
+	@ApiField("related_pay_no")
+	private String relatedPayNo;
+
+	/** 
 	 * 是否关联账单
 	 */
 	@ApiField("related_to_consume")
 	private Boolean relatedToConsume;
+
+	/** 
+	 * 特定行业要素类型
+	 */
+	@ApiField("specific_factor")
+	private String specificFactor;
 
 	/** 
 	 * 发票金额，单位元
@@ -260,6 +281,13 @@ public class AlipayEbppInvoiceEnterpriseInvoiceinfoQueryResponse extends AlipayR
 	}
 	public String getFileType( ) {
 		return this.fileType;
+	}
+
+	public void setIndustrySpecificInfos(List<String> industrySpecificInfos) {
+		this.industrySpecificInfos = industrySpecificInfos;
+	}
+	public List<String> getIndustrySpecificInfos( ) {
+		return this.industrySpecificInfos;
 	}
 
 	public void setInvoiceCheckResult(String invoiceCheckResult) {
@@ -416,11 +444,25 @@ public class AlipayEbppInvoiceEnterpriseInvoiceinfoQueryResponse extends AlipayR
 		return this.payerRegisterNo;
 	}
 
+	public void setRelatedPayNo(String relatedPayNo) {
+		this.relatedPayNo = relatedPayNo;
+	}
+	public String getRelatedPayNo( ) {
+		return this.relatedPayNo;
+	}
+
 	public void setRelatedToConsume(Boolean relatedToConsume) {
 		this.relatedToConsume = relatedToConsume;
 	}
 	public Boolean getRelatedToConsume( ) {
 		return this.relatedToConsume;
+	}
+
+	public void setSpecificFactor(String specificFactor) {
+		this.specificFactor = specificFactor;
+	}
+	public String getSpecificFactor( ) {
+		return this.specificFactor;
 	}
 
 	public void setSumAmount(String sumAmount) {

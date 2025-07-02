@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业同步黑白名单用户接口
  *
  * @author auto create
- * @since 1.0, 2023-08-22 14:05:25
+ * @since 1.0, 2025-06-25 17:04:59
  */
 public class AlipayCommerceCityfacilitatorNamelistSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7278429568961149981L;
+	private static final long serialVersionUID = 1251993391829657799L;
 
 	/**
 	 * 设备biztid
@@ -36,6 +36,12 @@ public class AlipayCommerceCityfacilitatorNamelistSyncModel extends AlipayObject
 	 */
 	@ApiField("remark")
 	private String remark;
+
+	/**
+	 * 全局维度黑名单
+	 */
+	@ApiField("scene_type")
+	private String sceneType;
 
 	/**
 	 * 黑、白属性
@@ -87,6 +93,13 @@ public class AlipayCommerceCityfacilitatorNamelistSyncModel extends AlipayObject
 	}
 	public void setRemark(String remark) {
 		this.remark = remark;
+	}
+
+	public String getSceneType() {
+		return this.sceneType;
+	}
+	public void setSceneType(String sceneType) {
+		this.sceneType = sceneType;
 	}
 
 	public String getType() {

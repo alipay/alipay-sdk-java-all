@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 充值跳端
  *
  * @author auto create
- * @since 1.0, 2022-07-21 16:39:23
+ * @since 1.0, 2025-06-30 21:39:11
  */
 public class AlipayFundJointaccountFundDepositModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3777492261438788996L;
+	private static final long serialVersionUID = 8238866994612851259L;
 
 	/**
 	 * 合花群ID<br>
@@ -63,6 +63,12 @@ public class AlipayFundJointaccountFundDepositModel extends AlipayObject {
 	 */
 	@ApiField("identity_type")
 	private String identityType;
+
+	/**
+	 * 用于标记支付宝用户在应用下的唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 订单标题，长度超长会拒绝交易，可包括数字、字母、空格、汉字，但不能包括特殊字符、emoji等
@@ -130,6 +136,13 @@ public class AlipayFundJointaccountFundDepositModel extends AlipayObject {
 	}
 	public void setIdentityType(String identityType) {
 		this.identityType = identityType;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOrderTitle() {

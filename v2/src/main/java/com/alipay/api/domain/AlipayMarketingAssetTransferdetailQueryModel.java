@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 国补营销查询
  *
  * @author auto create
- * @since 1.0, 2025-06-04 16:49:32
+ * @since 1.0, 2025-06-25 21:54:56
  */
 public class AlipayMarketingAssetTransferdetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3518427164926473688L;
+	private static final long serialVersionUID = 4639571529623675872L;
 
 	/**
 	 * 通过场景码控制查询范围

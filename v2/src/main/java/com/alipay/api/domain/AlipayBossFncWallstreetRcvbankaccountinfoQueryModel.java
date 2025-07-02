@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayBossFncWallstreetRcvbankaccountinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6457528929668186961L;
+	private static final long serialVersionUID = 1831723731916721137L;
 
 	/**
 	 * 币种编码
