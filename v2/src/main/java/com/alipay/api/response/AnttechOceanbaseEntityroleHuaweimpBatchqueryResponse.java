@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.oceanbase.entityrole.huaweimp.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-21 10:02:31
+ * @since 1.0, 2025-07-04 14:06:58
  */
 public class AnttechOceanbaseEntityroleHuaweimpBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7232525426769373857L;
+	private static final long serialVersionUID = 5653584878862835418L;
 
 	/** 
 	 * [{"passportId":"test1","customerId":"test1","customerName":"test"}]

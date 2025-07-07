@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPcreditLoanSideloanlendCalcConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3493456931743159768L;
+	private static final long serialVersionUID = 7565553485964618275L;
 
 	/** 
 	 * 本次试算使用的营销卡券列表

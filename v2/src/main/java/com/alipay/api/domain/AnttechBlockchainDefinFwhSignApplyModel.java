@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechBlockchainDefinFwhSignApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3138462674224426522L;
+	private static final long serialVersionUID = 3223491429455176661L;
 
 	/**
 	 * 授权有效期，单位为天；不填为永久有效

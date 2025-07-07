@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPcreditHuabeiPcreditbenefitFuncardflagQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6345758942854125496L;
+	private static final long serialVersionUID = 8675331367499715423L;
 
 	/**
 	 * 支付宝用户的userId

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.wallet.rule.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-31 17:17:22
+ * @since 1.0, 2025-07-04 12:12:31
  */
 public class AlipayFundWalletRuleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7551425659444664447L;
+	private static final long serialVersionUID = 8567511575729398187L;
 
 	/** 
 	 * 钱包使用规则

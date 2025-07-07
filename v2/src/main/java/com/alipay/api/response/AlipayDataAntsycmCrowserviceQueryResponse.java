@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.antsycm.crowservice.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-12 17:02:28
+ * @since 1.0, 2025-07-02 16:12:54
  */
 public class AlipayDataAntsycmCrowserviceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3485596743292786334L;
+	private static final long serialVersionUID = 4828619526735497499L;
 
 	/** 
 	 * is_exist_in_crowd:查询用户是否存在于人群中 

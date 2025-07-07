@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 问诊订单扩展信息
  *
  * @author auto create
- * @since 1.0, 2025-06-30 16:14:35
+ * @since 1.0, 2025-07-03 15:21:55
  */
 public class PlatformInquiryOrderExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5442988697819597942L;
+	private static final long serialVersionUID = 4463187279757677296L;
 
 	/**
 	 * 支付宝渠道订单标识
@@ -136,7 +136,13 @@ public class PlatformInquiryOrderExtInfo extends AlipayObject {
 支付宝义诊频道:ALIPAY_PUBLIC_WELFARE_INQUIRY_CHANNEL
 支付宝小程序:ALIPAY_MINI_APP
 支付宝其他渠道:ALIPAY_OTHER_CHANNEL
-和PC,H5,PATIENT_APP,WECHAT_APP
+H5页面:H5
+患者端app:PATIENT_APP
+pc端:PC
+微信小程序:WECHAT_APP
+支付宝AQ:ALIPAY_AQ
+AQ-APP:AQ_APP
+AQ-小程序:AQ_MINI_APP
 	 */
 	@ApiField("source")
 	private String source;

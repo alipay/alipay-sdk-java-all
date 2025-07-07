@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceSportsTaskcenterFinishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1346697246295568576L;
+	private static final long serialVersionUID = 4291591468422233153L;
 
 	/**
 	 * 用户在支付宝APP或服务商小程序选择的城市code

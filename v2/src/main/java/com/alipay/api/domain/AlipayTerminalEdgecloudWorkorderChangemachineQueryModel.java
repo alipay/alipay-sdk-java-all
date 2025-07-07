@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayTerminalEdgecloudWorkorderChangemachineQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3428619675517224892L;
+	private static final long serialVersionUID = 6438724211793342238L;
 
 	/**
 	 * 设备系列列表，用于查询指定的设备系列

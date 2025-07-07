@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品详细信息
  *
  * @author auto create
- * @since 1.0, 2025-06-10 11:42:10
+ * @since 1.0, 2025-07-02 15:50:51
  */
 public class RentGoodsDetailInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7653963419258439664L;
+	private static final long serialVersionUID = 3616831761152563261L;
 
 	/**
 	 * 商品描述信息
@@ -26,7 +26,7 @@ public class RentGoodsDetailInfoDTO extends AlipayObject {
 	private String imageMaterialId;
 
 	/**
-	 * 品牌编号；参考此文档传入品牌编号：https://xfpzl.yuque.com/dgw58m/apg2ie/qlqvdv0dhsbldyhv#kIy4
+	 * 品牌编号；参考租赁行业空间品牌编号文档
 	 */
 	@ApiField("item_brand")
 	private String itemBrand;

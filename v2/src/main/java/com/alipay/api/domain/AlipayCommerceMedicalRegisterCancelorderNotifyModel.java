@@ -7,11 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 号源停诊通知
  *
  * @author auto create
- * @since 1.0, 2025-06-23 15:14:24
+ * @since 1.0, 2025-07-04 18:56:48
  */
 public class AlipayCommerceMedicalRegisterCancelorderNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3787897865498657864L;
+	private static final long serialVersionUID = 8191795527269942334L;
+
+	/**
+	 * 支付宝id(必填)
+	 */
+	@ApiField("alipay_user_id")
+	private String alipayUserId;
+
+	/**
+	 * 服务商code 微医
+	 */
+	@ApiField("isv_code")
+	private String isvCode;
 
 	/**
 	 * 排版下具体号源信息id
@@ -36,6 +48,20 @@ public class AlipayCommerceMedicalRegisterCancelorderNotifyModel extends AlipayO
 	 */
 	@ApiField("register_id")
 	private String registerId;
+
+	public String getAlipayUserId() {
+		return this.alipayUserId;
+	}
+	public void setAlipayUserId(String alipayUserId) {
+		this.alipayUserId = alipayUserId;
+	}
+
+	public String getIsvCode() {
+		return this.isvCode;
+	}
+	public void setIsvCode(String isvCode) {
+		this.isvCode = isvCode;
+	}
 
 	public String getNumberNo() {
 		return this.numberNo;

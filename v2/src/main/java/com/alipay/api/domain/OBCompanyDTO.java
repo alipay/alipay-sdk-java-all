@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * OB企业信息
  *
  * @author auto create
- * @since 1.0, 2024-01-02 19:48:10
+ * @since 1.0, 2025-07-02 18:05:55
  */
 public class OBCompanyDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1356813176111611758L;
+	private static final long serialVersionUID = 5639492833751523481L;
+
+	/**
+	 * 个人认证为用户身份证号码，企业认证为企业统一社会信用码
+	 */
+	@ApiField("cert_no")
+	private String certNo;
 
 	/**
 	 * 合同列表
@@ -52,6 +58,13 @@ public class OBCompanyDTO extends AlipayObject {
 	 */
 	@ApiField("work_order_permission")
 	private Boolean workOrderPermission;
+
+	public String getCertNo() {
+		return this.certNo;
+	}
+	public void setCertNo(String certNo) {
+		this.certNo = certNo;
+	}
 
 	public List<OBContractDTO> getContractList() {
 		return this.contractList;

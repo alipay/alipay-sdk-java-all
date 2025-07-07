@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 货运企业支付交易结果查询
  *
  * @author auto create
- * @since 1.0, 2025-06-04 13:17:05
+ * @since 1.0, 2025-07-02 19:14:34
  */
 public class AlipayCommerceLogisticsFreightflowTraderesultQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3827226758874262968L;
+	private static final long serialVersionUID = 4221386938393645426L;
 
 	/**
 	 * 如果biz_scene是转账场景，则传入转账申请时候的幂等号
@@ -36,6 +36,12 @@ public class AlipayCommerceLogisticsFreightflowTraderesultQueryModel extends Ali
 	 */
 	@ApiField("mode")
 	private String mode;
+
+	/**
+	 * 网商银行应用id,当mode为ANT_MYBANK时由网商提供给商户
+	 */
+	@ApiField("mybank_app_id")
+	private String mybankAppId;
 
 	/**
 	 * 发起网商操作(如转账)时网商返回的操作单号
@@ -75,6 +81,13 @@ public class AlipayCommerceLogisticsFreightflowTraderesultQueryModel extends Ali
 	}
 	public void setMode(String mode) {
 		this.mode = mode;
+	}
+
+	public String getMybankAppId() {
+		return this.mybankAppId;
+	}
+	public void setMybankAppId(String mybankAppId) {
+		this.mybankAppId = mybankAppId;
 	}
 
 	public String getOperateNo() {

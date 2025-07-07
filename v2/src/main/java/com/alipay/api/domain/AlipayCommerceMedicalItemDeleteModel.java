@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalItemDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3841441658544468362L;
+	private static final long serialVersionUID = 5125239752741294178L;
 
 	/**
 	 * OMS厂商商品编码, 厂商自行维护

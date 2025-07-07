@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页查询售卖订单结果
  *
  * @author auto create
- * @since 1.0, 2025-06-24 13:56:43
+ * @since 1.0, 2025-07-07 09:47:31
  */
 public class CardOrderBatchQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 3137491287951264225L;
+	private static final long serialVersionUID = 8549572617258575777L;
 
 	/**
 	 * 卡关联的最新的售后单编号
@@ -224,6 +224,12 @@ public class CardOrderBatchQueryResponse extends AlipayObject {
 	 */
 	@ApiField("sale_price_total")
 	private Long salePriceTotal;
+
+	/**
+	 * 售卖门店对应外部门店编号
+	 */
+	@ApiField("sell_rel_shop_id")
+	private String sellRelShopId;
 
 	/**
 	 * 购卡时的门店ID
@@ -529,6 +535,13 @@ public class CardOrderBatchQueryResponse extends AlipayObject {
 	}
 	public void setSalePriceTotal(Long salePriceTotal) {
 		this.salePriceTotal = salePriceTotal;
+	}
+
+	public String getSellRelShopId() {
+		return this.sellRelShopId;
+	}
+	public void setSellRelShopId(String sellRelShopId) {
+		this.sellRelShopId = sellRelShopId;
 	}
 
 	public String getShopId() {

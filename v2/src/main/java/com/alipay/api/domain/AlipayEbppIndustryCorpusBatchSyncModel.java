@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 行业智能体知识创建
  *
  * @author auto create
- * @since 1.0, 2025-05-29 10:37:40
+ * @since 1.0, 2025-07-04 13:22:37
  */
 public class AlipayEbppIndustryCorpusBatchSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4467794349179151954L;
+	private static final long serialVersionUID = 4358416958719395963L;
 
 	/**
 	 * 政务智能体id。在政务AI（光华）开放平台配置云端私有化版本智能体后可以获取该参数信息

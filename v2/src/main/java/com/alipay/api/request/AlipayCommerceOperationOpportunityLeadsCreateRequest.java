@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.opportunity.leads.create request
  * 
  * @author auto create
- * @since 1.0, 2025-06-25 19:57:30
+ * @since 1.0, 2025-07-05 17:22:30
  */
 public class AlipayCommerceOperationOpportunityLeadsCreateRequest implements AlipayRequest<AlipayCommerceOperationOpportunityLeadsCreateResponse> {
 

@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景钱包规则查询
  *
  * @author auto create
- * @since 1.0, 2024-12-31 16:56:54
+ * @since 1.0, 2025-07-04 11:57:42
  */
 public class AlipayFundWalletRuleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4824137375386135355L;
+	private static final long serialVersionUID = 1443642492889288941L;
 
 	/**
 	 * 场景码
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
+
+	/**
+	 * 使用实体条件
+	 */
+	@ApiField("entity_condition")
+	private String entityCondition;
 
 	/**
 	 * 当前页码
@@ -48,6 +54,13 @@ public class AlipayFundWalletRuleQueryModel extends AlipayObject {
 	}
 	public void setBizScene(String bizScene) {
 		this.bizScene = bizScene;
+	}
+
+	public String getEntityCondition() {
+		return this.entityCondition;
+	}
+	public void setEntityCondition(String entityCondition) {
+		this.entityCondition = entityCondition;
 	}
 
 	public Long getPageNo() {

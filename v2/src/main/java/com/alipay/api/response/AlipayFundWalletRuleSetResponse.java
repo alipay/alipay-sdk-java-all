@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.wallet.rule.set response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-31 17:17:22
+ * @since 1.0, 2025-07-04 12:12:31
  */
 public class AlipayFundWalletRuleSetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8596924539152466383L;
+	private static final long serialVersionUID = 4316479398336924351L;
 
 	
 

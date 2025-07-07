@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniGeneralChatSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4749585668355823613L;
+	private static final long serialVersionUID = 8647593864146431727L;
 
 	/**
 	 * AMPE设备id，代表唯一一台设备，在支付宝开放平台，或者通过openapi接口注册。

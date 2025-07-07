@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOverseasTravelFliggyAuthorityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6686679545235942611L;
+	private static final long serialVersionUID = 2259679645176143995L;
 
 	/**
 	 * 支付宝运营店ID

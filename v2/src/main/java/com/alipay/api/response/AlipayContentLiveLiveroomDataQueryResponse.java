@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.content.live.liveroom.data.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-22 13:51:53
+ * @since 1.0, 2025-07-03 10:35:33
  */
 public class AlipayContentLiveLiveroomDataQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7493231991716548368L;
+	private static final long serialVersionUID = 5554324594398426395L;
 
 	/** 
 	 * 直播中观看人数Uv

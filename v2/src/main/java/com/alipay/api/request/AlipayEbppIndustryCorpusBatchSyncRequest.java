@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.corpus.batch.sync request
  * 
  * @author auto create
- * @since 1.0, 2025-07-01 19:12:34
+ * @since 1.0, 2025-07-04 13:27:31
  */
 public class AlipayEbppIndustryCorpusBatchSyncRequest implements AlipayRequest<AlipayEbppIndustryCorpusBatchSyncResponse> {
 

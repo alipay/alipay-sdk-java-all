@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MultiModalInputsRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 1519965927228124226L;
+	private static final long serialVersionUID = 7715527774266281731L;
 
 	/**
 	 * 上传到atfs后的图片文件 ID 列表

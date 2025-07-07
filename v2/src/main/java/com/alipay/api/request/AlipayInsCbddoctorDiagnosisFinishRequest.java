@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.cbddoctor.diagnosis.finish request
  * 
  * @author auto create
- * @since 1.0, 2025-05-12 11:42:26
+ * @since 1.0, 2025-07-04 16:13:40
  */
 public class AlipayInsCbddoctorDiagnosisFinishRequest implements AlipayRequest<AlipayInsCbddoctorDiagnosisFinishResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁订单费用项明细
  *
  * @author auto create
- * @since 1.0, 2025-06-11 17:30:27
+ * @since 1.0, 2025-07-02 15:29:42
  */
 public class RentPayItemDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7235599789286542893L;
+	private static final long serialVersionUID = 1317148774387757576L;
 
 	/**
 	 * 费用金额，单位：元，精确到小数点后两位。 当前字段已废弃(不再需要商户传该字段)

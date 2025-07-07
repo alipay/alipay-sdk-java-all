@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.etcenterprise.waybill.upload request
  * 
  * @author auto create
- * @since 1.0, 2025-05-29 17:52:22
+ * @since 1.0, 2025-07-04 14:17:33
  */
 public class AlipayCommerceTransportEtcenterpriseWaybillUploadRequest implements AlipayRequest<AlipayCommerceTransportEtcenterpriseWaybillUploadResponse> {
 

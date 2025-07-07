@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单收货地址模型
  *
  * @author auto create
- * @since 1.0, 2025-06-03 13:32:51
+ * @since 1.0, 2025-07-04 14:14:08
  */
 public class MiniReceiverAddressInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4228475292348852161L;
+	private static final long serialVersionUID = 3158446159352656166L;
 
 	/**
 	 * 不包含省、市、区的详细地址

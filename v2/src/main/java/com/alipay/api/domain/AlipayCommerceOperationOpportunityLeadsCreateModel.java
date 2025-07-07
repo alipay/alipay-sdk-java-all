@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建门店提交leads作业接口
  *
  * @author auto create
- * @since 1.0, 2025-06-25 19:53:02
+ * @since 1.0, 2025-07-05 17:20:08
  */
 public class AlipayCommerceOperationOpportunityLeadsCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5621941894597982724L;
+	private static final long serialVersionUID = 3769317984474184472L;
 
 	/**
 	 * 业务主体
@@ -62,6 +62,12 @@ public class AlipayCommerceOperationOpportunityLeadsCreateModel extends AlipayOb
 	 */
 	@ApiField("extra_credentials")
 	private BsExtraCredentials extraCredentials;
+
+	/**
+	 * leads线索来源
+	 */
+	@ApiField("leads_from")
+	private String leadsFrom;
 
 	/**
 	 * 门店关联的支付宝类目
@@ -146,6 +152,13 @@ public class AlipayCommerceOperationOpportunityLeadsCreateModel extends AlipayOb
 	}
 	public void setExtraCredentials(BsExtraCredentials extraCredentials) {
 		this.extraCredentials = extraCredentials;
+	}
+
+	public String getLeadsFrom() {
+		return this.leadsFrom;
+	}
+	public void setLeadsFrom(String leadsFrom) {
+		this.leadsFrom = leadsFrom;
 	}
 
 	public BsMccInfo getMccInfo() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 履约状态变更接口
  *
  * @author auto create
- * @since 1.0, 2025-05-13 17:22:20
+ * @since 1.0, 2025-07-07 13:57:24
  */
 public class AlipayOpenMiniOrderDeliveryModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4115578143577693177L;
+	private static final long serialVersionUID = 2362183711762388714L;
 
 	/**
 	 * 需要修改的活动信息列表

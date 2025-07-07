@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 处方信息
  *
  * @author auto create
- * @since 1.0, 2025-06-11 16:13:06
+ * @since 1.0, 2025-07-07 15:36:52
  */
 public class PrescriptionVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6687516672164418218L;
+	private static final long serialVersionUID = 7797974915991976432L;
 
 	/**
 	 * 创建处方的时间，即开方时间
@@ -34,7 +34,7 @@ public class PrescriptionVO extends AlipayObject {
 	private String reviewRejectNote;
 
 	/**
-	 * 商家侧药师审核处方的时间
+	 * 商家侧药师审核处方的日期，有年月日，时分秒，精确到秒
 	 */
 	@ApiField("review_time")
 	private Date reviewTime;

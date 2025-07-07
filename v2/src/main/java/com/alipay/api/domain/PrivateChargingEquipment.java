@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 充电私桩信息
  *
  * @author auto create
- * @since 1.0, 2025-06-25 16:24:04
+ * @since 1.0, 2025-07-07 10:34:04
  */
 public class PrivateChargingEquipment extends AlipayObject {
 
-	private static final long serialVersionUID = 1873811775617611281L;
+	private static final long serialVersionUID = 6384317226544633515L;
 
 	/**
 	 * 充电桩二维码值

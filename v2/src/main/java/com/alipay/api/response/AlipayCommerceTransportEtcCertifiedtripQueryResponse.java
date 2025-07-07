@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.etc.certifiedtrip.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-27 22:42:30
+ * @since 1.0, 2025-07-04 21:27:31
  */
 public class AlipayCommerceTransportEtcCertifiedtripQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2767274275773456745L;
+	private static final long serialVersionUID = 6826254967215425596L;
 
 	/** 
 	 * SUCCESS：订单申请成功； FAIL:申请失败

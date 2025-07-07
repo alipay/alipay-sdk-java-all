@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.antsycm.shopdata.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-12 17:42:00
+ * @since 1.0, 2025-07-02 16:12:55
  */
 public class AlipayDataAntsycmShopdataQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5142699518734237218L;
+	private static final long serialVersionUID = 2721951546443233482L;
 
 	/** 
 	 * 蚂蚁poi

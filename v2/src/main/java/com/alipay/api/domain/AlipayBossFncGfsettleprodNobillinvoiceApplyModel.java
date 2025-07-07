@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayBossFncGfsettleprodNobillinvoiceApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3144159244619413782L;
+	private static final long serialVersionUID = 5569234562372847422L;
 
 	/**
 	 * 指定的审批人员，值为审批人员的域账号

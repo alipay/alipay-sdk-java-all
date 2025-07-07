@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IvrTrackingVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8684962953277981274L;
+	private static final long serialVersionUID = 6182961518396965775L;
 
 	/**
 	 * 被叫号码

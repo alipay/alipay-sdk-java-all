@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommercePropertyRiskdetectContentSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8144788644365715518L;
+	private static final long serialVersionUID = 1149976318574455147L;
 
 	/**
 	 * createTime	内容物抓取时间,格式

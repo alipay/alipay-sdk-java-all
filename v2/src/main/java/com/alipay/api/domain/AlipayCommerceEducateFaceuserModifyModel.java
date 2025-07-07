@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceEducateFaceuserModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4423693362241945749L;
+	private static final long serialVersionUID = 6297413853921119969L;
 
 	/**
 	 * 业务码。可选的场景码有：{TRAFFIC:出行行业，BUSINESS:企业行业，SCENIC:景区行业，COMMUNITY:社区行业}

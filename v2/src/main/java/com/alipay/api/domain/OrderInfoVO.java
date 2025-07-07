@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单信息
  *
  * @author auto create
- * @since 1.0, 2025-04-16 20:00:53
+ * @since 1.0, 2025-07-07 15:36:52
  */
 public class OrderInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4149897512587746667L;
+	private static final long serialVersionUID = 8222482934497246763L;
 
 	/**
 	 * 订单取消时间
@@ -62,6 +62,12 @@ public class OrderInfoVO extends AlipayObject {
 	 */
 	@ApiField("note")
 	private String note;
+
+	/**
+	 * 用于标记支付宝用户在应用下的唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 订单的场景值   1:O2O订单，2:B2C订单
@@ -144,6 +150,12 @@ public class OrderInfoVO extends AlipayObject {
 	private Date userExpectStartTime;
 
 	/**
+	 * 支付宝用户的userId。
+	 */
+	@ApiField("user_id")
+	private String userId;
+
+	/**
 	 * 商品总重量，保留小数点后3位 + 单位， 单位固定两种（g和ml） 当前字段已废弃(商品总重量由items-weight_item汇总计算即可)
 	 */
 	@ApiField("weight")
@@ -204,6 +216,13 @@ public class OrderInfoVO extends AlipayObject {
 	}
 	public void setNote(String note) {
 		this.note = note;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public Long getOrderScene() {
@@ -295,6 +314,13 @@ public class OrderInfoVO extends AlipayObject {
 	}
 	public void setUserExpectStartTime(Date userExpectStartTime) {
 		this.userExpectStartTime = userExpectStartTime;
+	}
+
+	public String getUserId() {
+		return this.userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
 
 	public Long getWeight() {

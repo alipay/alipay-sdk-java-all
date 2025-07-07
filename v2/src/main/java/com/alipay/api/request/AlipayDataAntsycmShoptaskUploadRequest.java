@@ -17,7 +17,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.antsycm.shoptask.upload request
  * 
  * @author auto create
- * @since 1.0, 2024-04-12 17:42:00
+ * @since 1.0, 2025-07-02 16:12:54
  */
 public class AlipayDataAntsycmShoptaskUploadRequest implements AlipayUploadRequest<AlipayDataAntsycmShoptaskUploadResponse> {
 

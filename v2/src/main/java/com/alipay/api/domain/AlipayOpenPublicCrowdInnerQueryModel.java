@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenPublicCrowdInnerQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6347979758461734268L;
+	private static final long serialVersionUID = 3233496355919943768L;
 
 	/**
 	 * 人群来源

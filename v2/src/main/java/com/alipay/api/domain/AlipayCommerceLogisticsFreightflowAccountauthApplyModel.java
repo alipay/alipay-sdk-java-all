@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 货运企业支付账户授权申请
  *
  * @author auto create
- * @since 1.0, 2025-05-28 16:56:27
+ * @since 1.0, 2025-07-02 19:16:37
  */
 public class AlipayCommerceLogisticsFreightflowAccountauthApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4692382341936131154L;
+	private static final long serialVersionUID = 2271215756852364982L;
 
 	/**
 	 * 格式标准：需要在尾部添加时间戳，格式为yyyyMMdd。 ●外部需要保证重复请求不更换时间戳，否则会导致幂等击穿
@@ -48,6 +51,26 @@ public class AlipayCommerceLogisticsFreightflowAccountauthApplyModel extends Ali
 	 */
 	@ApiField("mode")
 	private String mode;
+
+	/**
+	 * 网商银行应用id,当mode为ANT_MYBANK时由网商提供给商户
+	 */
+	@ApiField("mybank_app_id")
+	private String mybankAppId;
+
+	/**
+	 * 网商银行解决方案CODE,当mode为ANT_MYBANK时由网商提供给商户
+	 */
+	@ApiField("mybank_scene_code")
+	private String mybankSceneCode;
+
+	/**
+	 * 授权操作的补充信息.
+授权代付涉及到补充的操作信息，是必填的，需要填充代付收方的主体信息，支持多个
+	 */
+	@ApiListField("opposite_account_info")
+	@ApiField("freight_flow_opposite_account_info")
+	private List<FreightFlowOppositeAccountInfo> oppositeAccountInfo;
 
 	/**
 	 * 如果mode为网商银行，则为网商银行分配
@@ -95,6 +118,27 @@ public class AlipayCommerceLogisticsFreightflowAccountauthApplyModel extends Ali
 	}
 	public void setMode(String mode) {
 		this.mode = mode;
+	}
+
+	public String getMybankAppId() {
+		return this.mybankAppId;
+	}
+	public void setMybankAppId(String mybankAppId) {
+		this.mybankAppId = mybankAppId;
+	}
+
+	public String getMybankSceneCode() {
+		return this.mybankSceneCode;
+	}
+	public void setMybankSceneCode(String mybankSceneCode) {
+		this.mybankSceneCode = mybankSceneCode;
+	}
+
+	public List<FreightFlowOppositeAccountInfo> getOppositeAccountInfo() {
+		return this.oppositeAccountInfo;
+	}
+	public void setOppositeAccountInfo(List<FreightFlowOppositeAccountInfo> oppositeAccountInfo) {
+		this.oppositeAccountInfo = oppositeAccountInfo;
 	}
 
 	public String getPartnerId() {

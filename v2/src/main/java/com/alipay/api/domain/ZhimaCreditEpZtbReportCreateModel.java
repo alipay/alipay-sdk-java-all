@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻企业信用招投标报告创建请求
  *
  * @author auto create
- * @since 1.0, 2024-12-25 11:32:49
+ * @since 1.0, 2025-07-02 16:55:17
  */
 public class ZhimaCreditEpZtbReportCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5583686781721135636L;
+	private static final long serialVersionUID = 7255286539334854824L;
 
 	/**
 	 * 招标类型，属于多种类型的话，用-拼接。例如采购中标-工程中标-服务中标
@@ -44,16 +44,34 @@ public class ZhimaCreditEpZtbReportCreateModel extends AlipayObject {
 	private String biddingEpName;
 
 	/**
+	 * 合作方客户id
+	 */
+	@ApiField("customer_id")
+	private String customerId;
+
+	/**
 	 * 招标信息标题标的物，多个用,隔开
 	 */
 	@ApiField("heading_object")
 	private String headingObject;
 
 	/**
+	 * 报告类型。不传入默认为EP_ZTB_REPORT
+	 */
+	@ApiField("order_type")
+	private String orderType;
+
+	/**
 	 * 商户唯一业务流水号，由大小写字母和数字构成。
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
+
+	/**
+	 * 套餐类别
+	 */
+	@ApiField("pack_type")
+	private String packType;
 
 	/**
 	 * 招标项目所在省市区国标编码，若获取不到，默认给编码值000000
@@ -78,6 +96,12 @@ public class ZhimaCreditEpZtbReportCreateModel extends AlipayObject {
 	 */
 	@ApiField("project_name")
 	private String projectName;
+
+	/**
+	 * 报告价格。单位人民币元
+	 */
+	@ApiField("report_amount")
+	private String reportAmount;
 
 	/**
 	 * 受理场景码，由蚂蚁企业信用方分发提供，配置有误会返回参数错误
@@ -126,6 +150,13 @@ public class ZhimaCreditEpZtbReportCreateModel extends AlipayObject {
 		this.biddingEpName = biddingEpName;
 	}
 
+	public String getCustomerId() {
+		return this.customerId;
+	}
+	public void setCustomerId(String customerId) {
+		this.customerId = customerId;
+	}
+
 	public String getHeadingObject() {
 		return this.headingObject;
 	}
@@ -133,11 +164,25 @@ public class ZhimaCreditEpZtbReportCreateModel extends AlipayObject {
 		this.headingObject = headingObject;
 	}
 
+	public String getOrderType() {
+		return this.orderType;
+	}
+	public void setOrderType(String orderType) {
+		this.orderType = orderType;
+	}
+
 	public String getOutBizNo() {
 		return this.outBizNo;
 	}
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
+	}
+
+	public String getPackType() {
+		return this.packType;
+	}
+	public void setPackType(String packType) {
+		this.packType = packType;
 	}
 
 	public String getProjectAreaCode() {
@@ -166,6 +211,13 @@ public class ZhimaCreditEpZtbReportCreateModel extends AlipayObject {
 	}
 	public void setProjectName(String projectName) {
 		this.projectName = projectName;
+	}
+
+	public String getReportAmount() {
+		return this.reportAmount;
+	}
+	public void setReportAmount(String reportAmount) {
+		this.reportAmount = reportAmount;
 	}
 
 	public String getSceneCode() {

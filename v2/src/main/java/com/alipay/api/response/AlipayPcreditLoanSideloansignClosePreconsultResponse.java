@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPcreditLoanSideloansignClosePreconsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4266966169584912125L;
+	private static final long serialVersionUID = 1481857847544488334L;
 
 	/** 
 	 * 关闭申请状态 returnCode为SUCCESS。可选值：

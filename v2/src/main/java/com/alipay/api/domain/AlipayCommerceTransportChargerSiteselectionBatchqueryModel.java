@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询充电智能选址任务
  *
  * @author auto create
- * @since 1.0, 2024-06-24 10:27:38
+ * @since 1.0, 2025-07-02 19:13:03
  */
 public class AlipayCommerceTransportChargerSiteselectionBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3494386857472764265L;
+	private static final long serialVersionUID = 7557779589244849345L;
 
 	/**
 	 * 计算任务编号

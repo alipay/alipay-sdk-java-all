@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.bizaccess.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-15 23:42:25
+ * @since 1.0, 2025-07-04 09:47:31
  */
 public class AntMerchantExpandBizaccessOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6745887453313291136L;
+	private static final long serialVersionUID = 6475393993321411193L;
 
 	/** 
 	 * 失败原因
@@ -25,6 +25,12 @@ public class AntMerchantExpandBizaccessOrderQueryResponse extends AlipayResponse
 	@ApiListField("fail_reasons")
 	@ApiField("isv_biz_open_order_fail_reason")
 	private List<IsvBizOpenOrderFailReason> failReasons;
+
+	/** 
+	 * 商户号
+	 */
+	@ApiField("merchant_pid")
+	private String merchantPid;
 
 	/** 
 	 * 订单信息
@@ -62,6 +68,13 @@ public class AntMerchantExpandBizaccessOrderQueryResponse extends AlipayResponse
 	}
 	public List<IsvBizOpenOrderFailReason> getFailReasons( ) {
 		return this.failReasons;
+	}
+
+	public void setMerchantPid(String merchantPid) {
+		this.merchantPid = merchantPid;
+	}
+	public String getMerchantPid( ) {
+		return this.merchantPid;
 	}
 
 	public void setOrderContent(IsvBizOpenOrderContent orderContent) {

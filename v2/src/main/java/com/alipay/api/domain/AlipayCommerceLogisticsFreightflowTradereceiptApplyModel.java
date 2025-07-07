@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 货运企业支付单笔交易凭证下载申请
  *
  * @author auto create
- * @since 1.0, 2025-05-28 16:56:38
+ * @since 1.0, 2025-07-02 19:15:33
  */
 public class AlipayCommerceLogisticsFreightflowTradereceiptApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2856789414525969727L;
+	private static final long serialVersionUID = 8598828986534934198L;
 
 	/**
 	 * 账户编号
@@ -40,6 +40,12 @@ ANT_MYBANK(网商银行模式)
 	 */
 	@ApiField("mode")
 	private String mode;
+
+	/**
+	 * 网商银行应用id,当mode为ANT_MYBANK时由网商提供给商户
+	 */
+	@ApiField("mybank_app_id")
+	private String mybankAppId;
 
 	/**
 	 * 外部订单请求流水号
@@ -103,6 +109,13 @@ STANDARD_TRADE_RECEIPT
 	}
 	public void setMode(String mode) {
 		this.mode = mode;
+	}
+
+	public String getMybankAppId() {
+		return this.mybankAppId;
+	}
+	public void setMybankAppId(String mybankAppId) {
+		this.mybankAppId = mybankAppId;
 	}
 
 	public String getOutTradeNo() {

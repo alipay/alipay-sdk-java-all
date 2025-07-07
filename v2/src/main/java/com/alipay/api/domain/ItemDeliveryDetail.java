@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物料生产订单物流详情, 包括物流订单号, 物流公司名称等信息
  *
  * @author auto create
- * @since 1.0, 2023-11-13 11:53:40
+ * @since 1.0, 2025-07-02 11:35:04
  */
 public class ItemDeliveryDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 2885952573114337139L;
+	private static final long serialVersionUID = 2332328629151759476L;
 
 	/**
 	 * 已生产数量, 分批反馈时候必传.
@@ -30,6 +30,12 @@ public class ItemDeliveryDetail extends AlipayObject {
 	 */
 	@ApiField("batch_no")
 	private String batchNo;
+
+	/**
+	 * 物料版本信息
+	 */
+	@ApiField("item_version_info")
+	private AssetItemVersion itemVersionInfo;
 
 	/**
 	 * 物流公司code, 比如: SF-顺丰, POST-中国邮政, CAINIAO-菜鸟.
@@ -74,6 +80,13 @@ public class ItemDeliveryDetail extends AlipayObject {
 	}
 	public void setBatchNo(String batchNo) {
 		this.batchNo = batchNo;
+	}
+
+	public AssetItemVersion getItemVersionInfo() {
+		return this.itemVersionInfo;
+	}
+	public void setItemVersionInfo(AssetItemVersion itemVersionInfo) {
+		this.itemVersionInfo = itemVersionInfo;
 	}
 
 	public String getLogisticCode() {

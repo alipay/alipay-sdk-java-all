@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IndustryWithholdPlanDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2556575674651683955L;
+	private static final long serialVersionUID = 1288463144436939135L;
 
 	/**
 	 * 某一笔交易中的已扣款金额，单位为分

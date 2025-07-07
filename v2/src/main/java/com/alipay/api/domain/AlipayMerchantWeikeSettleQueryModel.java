@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMerchantWeikeSettleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5159156346468467552L;
+	private static final long serialVersionUID = 5162268758793895934L;
 
 	/**
 	 * 外部业务号

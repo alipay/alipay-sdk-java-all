@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 活动信息修改模型，用于商家同步修改履约信息
  *
  * @author auto create
- * @since 1.0, 2025-05-13 17:22:20
+ * @since 1.0, 2025-07-07 13:57:24
  */
 public class ActivityInfoModifyDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6646443877449911316L;
+	private static final long serialVersionUID = 7593826794193113235L;
 
 	/**
 	 * 活动编码ID，活动的唯一标识

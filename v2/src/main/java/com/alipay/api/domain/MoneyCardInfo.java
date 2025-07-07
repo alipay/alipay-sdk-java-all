@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 金额卡独有信息
  *
  * @author auto create
- * @since 1.0, 2025-04-28 22:35:20
+ * @since 1.0, 2025-07-04 17:17:53
  */
 public class MoneyCardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2687973959284273978L;
+	private static final long serialVersionUID = 3772416422635492679L;
 
 	/**
 	 * 可使用天数，单位天(购卡后立即生效，生效后x天失效）
@@ -84,6 +84,13 @@ public class MoneyCardInfo extends AlipayObject {
 	 */
 	@ApiField("use_duration")
 	private UseDuration useDuration;
+
+	/**
+	 * 用户核销方式
+	 */
+	@ApiListField("use_method")
+	@ApiField("card_use_method_info")
+	private List<CardUseMethodInfo> useMethod;
 
 	/**
 	 * 核销方式
@@ -166,6 +173,13 @@ public class MoneyCardInfo extends AlipayObject {
 	}
 	public void setUseDuration(UseDuration useDuration) {
 		this.useDuration = useDuration;
+	}
+
+	public List<CardUseMethodInfo> getUseMethod() {
+		return this.useMethod;
+	}
+	public void setUseMethod(List<CardUseMethodInfo> useMethod) {
+		this.useMethod = useMethod;
 	}
 
 	public String getUseType() {

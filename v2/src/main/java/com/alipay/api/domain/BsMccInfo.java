@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 门店关联的支付宝类目
  *
  * @author auto create
- * @since 1.0, 2025-06-22 11:01:46
+ * @since 1.0, 2025-07-05 17:20:08
  */
 public class BsMccInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5428615188168849171L;
+	private static final long serialVersionUID = 3756376191752952572L;
 
 	/**
 	 * 门店对应的一级类目编码

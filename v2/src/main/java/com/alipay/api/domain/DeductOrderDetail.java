@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DeductOrderDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7229527818714371971L;
+	private static final long serialVersionUID = 7776521599236281792L;
 
 	/**
 	 * ● 单位：元

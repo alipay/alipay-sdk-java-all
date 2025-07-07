@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.logistics.freightflow.fundtrade.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-01 13:45:07
+ * @since 1.0, 2025-07-02 19:17:32
  */
 public class AlipayCommerceLogisticsFreightflowFundtradeCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2488627892212833316L;
+	private static final long serialVersionUID = 5111418347244923672L;
 
 	/** 
 	 * 业务请求没有失败码返回时必填,同入参中的biz_no
@@ -33,7 +33,7 @@ public class AlipayCommerceLogisticsFreightflowFundtradeCreateResponse extends A
 	private String status;
 
 	/** 
-	 * 交易号,查询支付结果时使用(status为SUCCESS时必填)
+	 * 当status=SUCCESS时必选
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;

@@ -6,14 +6,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 充电智能选址计算任务
+ * 充电智能选址计算任务详情
  *
  * @author auto create
- * @since 1.0, 2024-06-24 10:27:38
+ * @since 1.0, 2025-07-02 19:13:03
  */
 public class SiteSelectionTask extends AlipayObject {
 
-	private static final long serialVersionUID = 7358195511994918745L;
+	private static final long serialVersionUID = 7795468861326487792L;
 
 	/**
 	 * 任务创建时间
@@ -22,7 +22,7 @@ public class SiteSelectionTask extends AlipayObject {
 	private Date createTime;
 
 	/**
-	 * 下载链接
+	 * 数据下载链接地址；当状态为SUCCESS时，url为空表示无数据返回
 	 */
 	@ApiField("download_url")
 	private String downloadUrl;

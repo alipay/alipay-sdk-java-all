@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 货运企业支付转账申请
  *
  * @author auto create
- * @since 1.0, 2025-06-23 15:19:35
+ * @since 1.0, 2025-07-02 19:14:23
  */
 public class AlipayCommerceLogisticsFreightflowTransferApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7695757893161857995L;
+	private static final long serialVersionUID = 4388173521524241582L;
 
 	/**
 	 * 转账金额，单位分
@@ -49,6 +49,18 @@ ANT_MYBANK(网商银行模式)
 	 */
 	@ApiField("mode")
 	private String mode;
+
+	/**
+	 * 网商银行应用id,当mode为ANT_MYBANK时由网商提供给商户
+	 */
+	@ApiField("mybank_app_id")
+	private String mybankAppId;
+
+	/**
+	 * 网商银行解决方案CODE,当mode为ANT_MYBANK时由网商提供给商户
+	 */
+	@ApiField("mybank_scene_code")
+	private String mybankSceneCode;
 
 	/**
 	 * 如果mode为网商银行，则为网商银行分配
@@ -126,6 +138,20 @@ ANT_MYBANK(网商银行模式)
 	}
 	public void setMode(String mode) {
 		this.mode = mode;
+	}
+
+	public String getMybankAppId() {
+		return this.mybankAppId;
+	}
+	public void setMybankAppId(String mybankAppId) {
+		this.mybankAppId = mybankAppId;
+	}
+
+	public String getMybankSceneCode() {
+		return this.mybankSceneCode;
+	}
+	public void setMybankSceneCode(String mybankSceneCode) {
+		this.mybankSceneCode = mybankSceneCode;
 	}
 
 	public String getPartnerId() {

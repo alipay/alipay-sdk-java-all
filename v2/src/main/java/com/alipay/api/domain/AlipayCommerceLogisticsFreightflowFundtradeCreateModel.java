@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 货运企业支付收银台资金支付创单
  *
  * @author auto create
- * @since 1.0, 2025-07-01 13:45:07
+ * @since 1.0, 2025-07-02 19:17:32
  */
 public class AlipayCommerceLogisticsFreightflowFundtradeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6593794298749146218L;
+	private static final long serialVersionUID = 5359511633758225988L;
 
 	/**
 	 * 商户需要保证业务流水号的唯一性，运企付内部通过业务流水号进行幂等处理
@@ -50,10 +50,22 @@ public class AlipayCommerceLogisticsFreightflowFundtradeCreateModel extends Alip
 	private String mode;
 
 	/**
+	 * 网商银行应用id,当mode为ANT_MYBANK时由网商提供给商户
+	 */
+	@ApiField("mybank_app_id")
+	private String mybankAppId;
+
+	/**
 	 * 网商银行分配的合作方机构号
 	 */
 	@ApiField("partner_id")
 	private String partnerId;
+
+	/**
+	 * 关单时间2024-06-18 15:12:36
+	 */
+	@ApiField("pay_expire_time")
+	private String payExpireTime;
 
 	/**
 	 * 收款方户名
@@ -115,11 +127,25 @@ public class AlipayCommerceLogisticsFreightflowFundtradeCreateModel extends Alip
 		this.mode = mode;
 	}
 
+	public String getMybankAppId() {
+		return this.mybankAppId;
+	}
+	public void setMybankAppId(String mybankAppId) {
+		this.mybankAppId = mybankAppId;
+	}
+
 	public String getPartnerId() {
 		return this.partnerId;
 	}
 	public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
+	}
+
+	public String getPayExpireTime() {
+		return this.payExpireTime;
+	}
+	public void setPayExpireTime(String payExpireTime) {
+		this.payExpireTime = payExpireTime;
 	}
 
 	public String getPayeeCardName() {

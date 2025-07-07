@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceEducateFacefeatureGroupkeyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3694667967634598317L;
+	private static final long serialVersionUID = 3264887663385819851L;
 
 	/** 
 	 * 学校人脸库ID

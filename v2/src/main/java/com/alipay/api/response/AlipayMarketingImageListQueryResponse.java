@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingImageListQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8724331779597237914L;
+	private static final long serialVersionUID = 5376784544121476555L;
 
 	/** 
 	 * 图片列表。

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 货运企业支付子户开户
  *
  * @author auto create
- * @since 1.0, 2025-06-23 15:19:18
+ * @since 1.0, 2025-07-02 19:15:54
  */
 public class AlipayCommerceLogisticsFreightflowSubaccountCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8436188294814577225L;
+	private static final long serialVersionUID = 8768652635564889527L;
 
 	/**
 	 * 物流公司编码
@@ -24,6 +24,30 @@ public class AlipayCommerceLogisticsFreightflowSubaccountCreateModel extends Ali
 	 */
 	@ApiField("mode")
 	private String mode;
+
+	/**
+	 * 网商银行应用id,当mode为ANT_MYBANK时由网商提供给商户
+	 */
+	@ApiField("mybank_app_id")
+	private String mybankAppId;
+
+	/**
+	 * 网商银行解决方案CODE,当mode为ANT_MYBANK时由网商提供给商户
+	 */
+	@ApiField("mybank_scene_code")
+	private String mybankSceneCode;
+
+	/**
+	 * 网商场景.当mode为ANT_MYBANK时由网商提供给商户
+	 */
+	@ApiField("mybank_scene_type")
+	private String mybankSceneType;
+
+	/**
+	 * 网商子场景,当mode为ANT_MYBANK时由网商提供给商户
+	 */
+	@ApiField("mybank_sub_scene")
+	private String mybankSubScene;
 
 	/**
 	 * 唯一性区分
@@ -73,6 +97,34 @@ public class AlipayCommerceLogisticsFreightflowSubaccountCreateModel extends Ali
 	}
 	public void setMode(String mode) {
 		this.mode = mode;
+	}
+
+	public String getMybankAppId() {
+		return this.mybankAppId;
+	}
+	public void setMybankAppId(String mybankAppId) {
+		this.mybankAppId = mybankAppId;
+	}
+
+	public String getMybankSceneCode() {
+		return this.mybankSceneCode;
+	}
+	public void setMybankSceneCode(String mybankSceneCode) {
+		this.mybankSceneCode = mybankSceneCode;
+	}
+
+	public String getMybankSceneType() {
+		return this.mybankSceneType;
+	}
+	public void setMybankSceneType(String mybankSceneType) {
+		this.mybankSceneType = mybankSceneType;
+	}
+
+	public String getMybankSubScene() {
+		return this.mybankSubScene;
+	}
+	public void setMybankSubScene(String mybankSubScene) {
+		this.mybankSubScene = mybankSubScene;
 	}
 
 	public String getOutTradeNo() {

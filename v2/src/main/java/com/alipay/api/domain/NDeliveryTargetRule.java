@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NDeliveryTargetRule extends AlipayObject {
 
-	private static final long serialVersionUID = 8726793921198993494L;
+	private static final long serialVersionUID = 7453593868488317327L;
 
 	/**
 	 * 碰一下设备的SN，若传入则与n_delivery_merchant_rule为且关系

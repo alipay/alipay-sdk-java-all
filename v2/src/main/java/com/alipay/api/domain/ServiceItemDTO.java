@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 办事事项
  *
  * @author auto create
- * @since 1.0, 2025-05-29 10:37:14
+ * @since 1.0, 2025-07-04 13:22:37
  */
 public class ServiceItemDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3755582419752691588L;
+	private static final long serialVersionUID = 4471337688779619665L;
 
 	/**
 	 * 受理条件
@@ -68,7 +68,7 @@ public class ServiceItemDTO extends AlipayObject {
 	private String processLocation;
 
 	/**
-	 * 事项办理的时间。时间单位一般具体到上午、下午、小时
+	 * 事项办理的时间。
 	 */
 	@ApiField("process_time")
 	private String processTime;

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.content.live.liveroom.data.query request
  * 
  * @author auto create
- * @since 1.0, 2025-04-22 13:51:53
+ * @since 1.0, 2025-07-03 10:35:33
  */
 public class AlipayContentLiveLiveroomDataQueryRequest implements AlipayRequest<AlipayContentLiveLiveroomDataQueryResponse> {
 

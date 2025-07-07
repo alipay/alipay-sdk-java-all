@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 运企付开户时子户归属人信息
  *
  * @author auto create
- * @since 1.0, 2025-06-23 15:19:18
+ * @since 1.0, 2025-07-02 19:15:54
  */
 public class FreightFlowSubAccountOwnerInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4393732846459192413L;
+	private static final long serialVersionUID = 5629169549746545192L;
 
 	/**
 	 * 证件号码

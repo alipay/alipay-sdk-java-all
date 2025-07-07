@@ -4,17 +4,17 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 商品使用方法
+ * 用户核销方式
  *
  * @author auto create
- * @since 1.0, 2024-05-15 15:25:51
+ * @since 1.0, 2025-07-04 17:17:52
  */
 public class CardUseMethodInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4288634788771878695L;
+	private static final long serialVersionUID = 8898573941147752128L;
 
 	/**
-	 * 用户使用方式类型
+	 * 用户核销方式类型
 	 */
 	@ApiField("use_method_type")
 	private String useMethodType;

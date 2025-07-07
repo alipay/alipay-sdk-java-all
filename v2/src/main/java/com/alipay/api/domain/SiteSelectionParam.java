@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 新能源充电-大数据智能选址计算参数
  *
  * @author auto create
- * @since 1.0, 2025-06-03 19:39:43
+ * @since 1.0, 2025-07-02 19:13:17
  */
 public class SiteSelectionParam extends AlipayObject {
 
-	private static final long serialVersionUID = 1614248521269766884L;
+	private static final long serialVersionUID = 7287416423183694381L;
 
 	/**
-	 * 全国统一城市编码
+	 * 全国统一城市编码（地级市级别），eg：北京市110100，杭州市330100
 	 */
 	@ApiField("city_code")
 	private String cityCode;
@@ -35,7 +35,7 @@ public class SiteSelectionParam extends AlipayObject {
 	private String dateTo;
 
 	/**
-	 * 1. H3坐标网格编码；支持等级6-9的网格编码。
+	 * 1. H3坐标网格编码。
 2. 若为预测场站价格时，请传入互联互通场站编码。
 	 */
 	@ApiListField("index_list")

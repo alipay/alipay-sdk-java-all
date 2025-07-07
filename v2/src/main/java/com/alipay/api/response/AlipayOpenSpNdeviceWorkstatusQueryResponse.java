@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.ndevice.workstatus.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-01 20:51:08
+ * @since 1.0, 2025-07-07 11:17:30
  */
 public class AlipayOpenSpNdeviceWorkstatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6698241842676839549L;
+	private static final long serialVersionUID = 3528358452791477414L;
 
 	/** 
 	 * 设备绑定状态，true表示当前设备已经绑定，false表示当前设备维未绑定
@@ -39,10 +39,28 @@ public class AlipayOpenSpNdeviceWorkstatusQueryResponse extends AlipayResponse {
 	private String leadsId;
 
 	/** 
+	 * 操作人未脱敏支付宝登记的电话号码 - 绑定场景为作业人员电话号码 - 内部解绑场景为空 - 产品层解绑场景为解绑操作人员电话号码
+	 */
+	@ApiField("operator_contact_number")
+	private String operatorContactNumber;
+
+	/** 
+	 * 操作人未脱敏名称 - 绑定场景为作业人员名称 - 内部解绑场景为SYSTEM - 产品层解绑场景为解绑操作人员名称
+	 */
+	@ApiField("operator_name")
+	private String operatorName;
+
+	/** 
 	 * 外部门店编号，门店leads上报时的外部门店编号
 	 */
 	@ApiField("out_store_id")
 	private String outStoreId;
+
+	/** 
+	 * 点位id
+	 */
+	@ApiField("position_id")
+	private String positionId;
 
 	/** 
 	 * 关联设备sn唯一标识
@@ -78,11 +96,32 @@ public class AlipayOpenSpNdeviceWorkstatusQueryResponse extends AlipayResponse {
 		return this.leadsId;
 	}
 
+	public void setOperatorContactNumber(String operatorContactNumber) {
+		this.operatorContactNumber = operatorContactNumber;
+	}
+	public String getOperatorContactNumber( ) {
+		return this.operatorContactNumber;
+	}
+
+	public void setOperatorName(String operatorName) {
+		this.operatorName = operatorName;
+	}
+	public String getOperatorName( ) {
+		return this.operatorName;
+	}
+
 	public void setOutStoreId(String outStoreId) {
 		this.outStoreId = outStoreId;
 	}
 	public String getOutStoreId( ) {
 		return this.outStoreId;
+	}
+
+	public void setPositionId(String positionId) {
+		this.positionId = positionId;
+	}
+	public String getPositionId( ) {
+		return this.positionId;
 	}
 
 	public void setRelatedDeviceSn(String relatedDeviceSn) {

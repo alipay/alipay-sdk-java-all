@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租赁订单操作申请确认
  *
  * @author auto create
- * @since 1.0, 2025-06-09 16:51:38
+ * @since 1.0, 2025-07-02 16:58:15
  */
 public class AlipayCommerceRentOrderAftersaleConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2311358958489436145L;
+	private static final long serialVersionUID = 5738372161445729884L;
 
 	/**
 	 * 补充描述
@@ -30,7 +30,7 @@ public class AlipayCommerceRentOrderAftersaleConfirmModel extends AlipayObject {
 	private List<AftersaleMediaInfoVO> additionalMediaList;
 
 	/**
-	 * 售后单号，可从售后通知消息（alipay.commerce.rent.order.aftersale.notify）中获取
+	 * 售后单号
 	 */
 	@ApiField("aftersale_id")
 	private String aftersaleId;
@@ -52,6 +52,26 @@ public class AlipayCommerceRentOrderAftersaleConfirmModel extends AlipayObject {
 	 */
 	@ApiField("operation_type")
 	private String operationType;
+
+	/**
+	 * 商户售后单号，要保证唯一性
+	 */
+	@ApiField("out_aftersale_id")
+	private String outAftersaleId;
+
+	/**
+	 * 支付金额，单位：元，精确到小数点后两位。
+注意事项
+	 */
+	@ApiField("pay_amount")
+	private String payAmount;
+
+	/**
+	 * 订单费用项明细列表
+	 */
+	@ApiListField("pay_items")
+	@ApiField("aftersale_pay_item_v_o")
+	private List<AftersalePayItemVO> payItems;
 
 	/**
 	 * 操作原因类型
@@ -99,6 +119,27 @@ public class AlipayCommerceRentOrderAftersaleConfirmModel extends AlipayObject {
 	}
 	public void setOperationType(String operationType) {
 		this.operationType = operationType;
+	}
+
+	public String getOutAftersaleId() {
+		return this.outAftersaleId;
+	}
+	public void setOutAftersaleId(String outAftersaleId) {
+		this.outAftersaleId = outAftersaleId;
+	}
+
+	public String getPayAmount() {
+		return this.payAmount;
+	}
+	public void setPayAmount(String payAmount) {
+		this.payAmount = payAmount;
+	}
+
+	public List<AftersalePayItemVO> getPayItems() {
+		return this.payItems;
+	}
+	public void setPayItems(List<AftersalePayItemVO> payItems) {
+		this.payItems = payItems;
 	}
 
 	public String getReasonCode() {

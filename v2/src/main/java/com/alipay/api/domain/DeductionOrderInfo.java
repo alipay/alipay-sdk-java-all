@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 核销订单信息
  *
  * @author auto create
- * @since 1.0, 2025-06-24 13:55:53
+ * @since 1.0, 2025-07-07 09:47:37
  */
 public class DeductionOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6343592823975138613L;
+	private static final long serialVersionUID = 3796796571532424449L;
 
 	/**
 	 * 费用信息集合
@@ -184,6 +184,18 @@ public class DeductionOrderInfo extends AlipayObject {
 	private Date refundTime;
 
 	/**
+	 * 售卖门店对应的外部门店编号
+	 */
+	@ApiField("sell_rel_shop_id")
+	private String sellRelShopId;
+
+	/**
+	 * 售卖门店id
+	 */
+	@ApiField("sell_shop_id")
+	private String sellShopId;
+
+	/**
 	 * 门店ID
 	 */
 	@ApiField("shop_id")
@@ -206,6 +218,12 @@ public class DeductionOrderInfo extends AlipayObject {
 	 */
 	@ApiField("use_amount")
 	private Long useAmount;
+
+	/**
+	 * 核销门店对应的外部门店编号
+	 */
+	@ApiField("use_rel_shop_id")
+	private String useRelShopId;
 
 	/**
 	 * 核销门店名称
@@ -414,6 +432,20 @@ public class DeductionOrderInfo extends AlipayObject {
 		this.refundTime = refundTime;
 	}
 
+	public String getSellRelShopId() {
+		return this.sellRelShopId;
+	}
+	public void setSellRelShopId(String sellRelShopId) {
+		this.sellRelShopId = sellRelShopId;
+	}
+
+	public String getSellShopId() {
+		return this.sellShopId;
+	}
+	public void setSellShopId(String sellShopId) {
+		this.sellShopId = sellShopId;
+	}
+
 	public String getShopId() {
 		return this.shopId;
 	}
@@ -440,6 +472,13 @@ public class DeductionOrderInfo extends AlipayObject {
 	}
 	public void setUseAmount(Long useAmount) {
 		this.useAmount = useAmount;
+	}
+
+	public String getUseRelShopId() {
+		return this.useRelShopId;
+	}
+	public void setUseRelShopId(String useRelShopId) {
+		this.useRelShopId = useRelShopId;
 	}
 
 	public String getUseShopName() {

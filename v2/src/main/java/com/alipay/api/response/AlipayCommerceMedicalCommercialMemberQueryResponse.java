@@ -1,7 +1,10 @@
 package com.alipay.api.response;
 
 import java.util.Date;
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.VoucherList;
 
 import com.alipay.api.AlipayResponse;
 
@@ -9,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.commercial.member.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-30 21:14:06
+ * @since 1.0, 2025-07-03 17:27:31
  */
 public class AlipayCommerceMedicalCommercialMemberQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7621727866863659251L;
+	private static final long serialVersionUID = 3786888255656857181L;
 
 	/** 
 	 * 权益订单id，支付宝侧用户对商户某一权益的唯一订单子单id。该订单记录了用户的核销次数与总次数，以及订单状态
@@ -74,6 +77,13 @@ public class AlipayCommerceMedicalCommercialMemberQueryResponse extends AlipayRe
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	/** 
+	 * 券列表
+	 */
+	@ApiListField("voucher_list")
+	@ApiField("voucher_list")
+	private List<VoucherList> voucherList;
 
 	public void setBizOrderId(String bizOrderId) {
 		this.bizOrderId = bizOrderId;
@@ -143,6 +153,13 @@ public class AlipayCommerceMedicalCommercialMemberQueryResponse extends AlipayRe
 	}
 	public String getUserId( ) {
 		return this.userId;
+	}
+
+	public void setVoucherList(List<VoucherList> voucherList) {
+		this.voucherList = voucherList;
+	}
+	public List<VoucherList> getVoucherList( ) {
+		return this.voucherList;
 	}
 
 }

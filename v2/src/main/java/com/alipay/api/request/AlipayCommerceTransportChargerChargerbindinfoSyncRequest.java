@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.charger.chargerbindinfo.sync request
  * 
  * @author auto create
- * @since 1.0, 2025-06-25 19:32:29
+ * @since 1.0, 2025-07-07 13:37:32
  */
 public class AlipayCommerceTransportChargerChargerbindinfoSyncRequest implements AlipayRequest<AlipayCommerceTransportChargerChargerbindinfoSyncResponse> {
 

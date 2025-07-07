@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 新_问诊订单回流接口
  *
  * @author auto create
- * @since 1.0, 2025-06-30 16:14:35
+ * @since 1.0, 2025-07-03 15:21:55
  */
 public class AlipayCommerceMedicalIndustrydataInquiryorderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7392575639846496147L;
+	private static final long serialVersionUID = 5837571915751249289L;
 
 	/**
 	 * 支付宝openid

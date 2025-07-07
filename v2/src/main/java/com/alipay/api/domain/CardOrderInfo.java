@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 售卖订单信息
  *
  * @author auto create
- * @since 1.0, 2025-06-17 16:16:37
+ * @since 1.0, 2025-07-07 09:47:31
  */
 public class CardOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5151233186352934651L;
+	private static final long serialVersionUID = 1293581573383687936L;
 
 	/**
 	 * 卡关联的最新一笔售后单编号
@@ -235,7 +235,13 @@ public class CardOrderInfo extends AlipayObject {
 	private Long salePriceTotal;
 
 	/**
-	 * 购卡时的门店ID
+	 * 售卖门店对应的外部门店编号
+	 */
+	@ApiField("sell_rel_shop_id")
+	private String sellRelShopId;
+
+	/**
+	 * 售卖时的门店ID
 	 */
 	@ApiField("shop_id")
 	private String shopId;
@@ -551,6 +557,13 @@ public class CardOrderInfo extends AlipayObject {
 	}
 	public void setSalePriceTotal(Long salePriceTotal) {
 		this.salePriceTotal = salePriceTotal;
+	}
+
+	public String getSellRelShopId() {
+		return this.sellRelShopId;
+	}
+	public void setSellRelShopId(String sellRelShopId) {
+		this.sellRelShopId = sellRelShopId;
 	}
 
 	public String getShopId() {

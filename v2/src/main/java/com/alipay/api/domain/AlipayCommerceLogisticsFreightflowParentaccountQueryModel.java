@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 货运企业支付主账户实时查余
  *
  * @author auto create
- * @since 1.0, 2025-05-07 10:09:35
+ * @since 1.0, 2025-07-02 19:13:53
  */
 public class AlipayCommerceLogisticsFreightflowParentaccountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6582224955231833336L;
+	private static final long serialVersionUID = 7373166619243819774L;
 
 	/**
 	 * 账户卡号
@@ -30,6 +30,18 @@ public class AlipayCommerceLogisticsFreightflowParentaccountQueryModel extends A
 	 */
 	@ApiField("mode")
 	private String mode;
+
+	/**
+	 * 网商银行应用id,当mode为ANT_MYBANK时由网商提供给商户
+	 */
+	@ApiField("mybank_app_id")
+	private String mybankAppId;
+
+	/**
+	 * 网商解决方案CODE,当mode为ANT_MYBANK时由网商提供给商户
+	 */
+	@ApiField("mybank_scene_code")
+	private String mybankSceneCode;
 
 	public String getAccountCardNo() {
 		return this.accountCardNo;
@@ -50,6 +62,20 @@ public class AlipayCommerceLogisticsFreightflowParentaccountQueryModel extends A
 	}
 	public void setMode(String mode) {
 		this.mode = mode;
+	}
+
+	public String getMybankAppId() {
+		return this.mybankAppId;
+	}
+	public void setMybankAppId(String mybankAppId) {
+		this.mybankAppId = mybankAppId;
+	}
+
+	public String getMybankSceneCode() {
+		return this.mybankSceneCode;
+	}
+	public void setMybankSceneCode(String mybankSceneCode) {
+		this.mybankSceneCode = mybankSceneCode;
 	}
 
 }

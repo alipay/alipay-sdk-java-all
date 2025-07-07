@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RentFundAuthFreezeInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7783518675246788413L;
+	private static final long serialVersionUID = 4726444466965267558L;
 
 	/**
 	 * 预授权成功消息通知地址，商户可通过指定该地址监听支付宝侧预授权消息

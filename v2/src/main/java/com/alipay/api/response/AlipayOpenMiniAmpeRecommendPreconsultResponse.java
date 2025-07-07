@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenMiniAmpeRecommendPreconsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5572325449454882441L;
+	private static final long serialVersionUID = 1523561426634624191L;
 
 	/** 
 	 * 预估是否有推荐的内容，如果是true，则表示有推荐内容，需要展示卡片。

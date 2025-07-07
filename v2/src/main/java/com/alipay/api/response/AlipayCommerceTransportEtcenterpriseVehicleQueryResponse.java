@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.etcenterprise.vehicle.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-29 17:43:36
+ * @since 1.0, 2025-07-04 14:17:33
  */
 public class AlipayCommerceTransportEtcenterpriseVehicleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1346259434479971128L;
+	private static final long serialVersionUID = 7616443236328845271L;
 
 	/** 
 	 * 支付宝etc平台扣款协议号
@@ -32,6 +32,12 @@ public class AlipayCommerceTransportEtcenterpriseVehicleQueryResponse extends Al
 	 */
 	@ApiField("biz_msg")
 	private String bizMsg;
+
+	/** 
+	 * 用户ETC卡号
+	 */
+	@ApiField("card_no")
+	private String cardNo;
 
 	/** 
 	 * 代扣签约状态
@@ -124,6 +130,13 @@ public class AlipayCommerceTransportEtcenterpriseVehicleQueryResponse extends Al
 	}
 	public String getBizMsg( ) {
 		return this.bizMsg;
+	}
+
+	public void setCardNo(String cardNo) {
+		this.cardNo = cardNo;
+	}
+	public String getCardNo( ) {
+		return this.cardNo;
 	}
 
 	public void setDeductSignStatus(String deductSignStatus) {

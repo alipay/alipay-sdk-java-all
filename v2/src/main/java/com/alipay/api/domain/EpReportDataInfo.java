@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用于企信接收商户上传数据，例如招投标报告相关附件信息等
  *
  * @author auto create
- * @since 1.0, 2024-11-05 10:27:13
+ * @since 1.0, 2025-07-02 16:55:25
  */
 public class EpReportDataInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6682331343433957828L;
+	private static final long serialVersionUID = 6677832554411963742L;
 
 	/**
 	 * 上传数据所属业务类型

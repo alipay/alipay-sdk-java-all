@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceDataScenicMappingQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1577348919834993319L;
+	private static final long serialVersionUID = 3134829173218367442L;
 
 	/**
 	 * 景区审核信息查询请求。 集合长度不能超过200
