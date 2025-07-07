@@ -26,12 +26,12 @@
     <distributionManagement>
         <snapshotRepository>
             <id>sonatype-nexus-snapshots</id>
-			<url>https://central.sonatype.com/repository/maven-snapshots/</url>
-		</snapshotRepository>
+            <url>https://central.sonatype.com/repository/maven-snapshots/</url>
+        </snapshotRepository>
         <repository>
             <id>sonatype-nexus-staging</id>
-			<url>https://ossrh-staging-api.central.sonatype.com/service/local/staging/deploy/maven2/</url>
-		</repository>
+            <url>https://ossrh-staging-api.central.sonatype.com/service/local/staging/deploy/maven2/</url>
+        </repository>
     </distributionManagement>
 
     <licenses>
@@ -128,8 +128,8 @@
                 <extensions>true</extensions>
                 <configuration>
                     <serverId>ossrh</serverId>
-					<nexusUrl>https://ossrh-staging-api.central.sonatype.com/</nexusUrl>
-					<autoReleaseAfterClose>true</autoReleaseAfterClose>
+                    <nexusUrl>https://ossrh-staging-api.central.sonatype.com/</nexusUrl>
+                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
                 </configuration>
             </plugin>
             <plugin>
@@ -164,8 +164,8 @@
                     <additionalJOption>--allow-script-in-comments</additionalJOption>
                     <minmemory>4096m</minmemory>
                     <maxmemory>4096m</maxmemory>
-					<excludePackageNames>com.alipay.api.request,com.alipay.api.response,com.alipay.api.domain</excludePackageNames>
-				</configuration>
+                    <excludePackageNames>com.alipay.api.request,com.alipay.api.response,com.alipay.api.domain</excludePackageNames>
+                </configuration>
                 <executions>
                     <execution>
                         <id>attach-javadocs</id>
