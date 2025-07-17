@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.dtbank.crowd.create request
  * 
  * @author auto create
- * @since 1.0, 2025-07-07 11:52:30
+ * @since 1.0, 2025-07-09 13:52:33
  */
 public class AlipayUserDtbankCrowdCreateRequest implements AlipayUploadRequest<AlipayUserDtbankCrowdCreateResponse> {
 

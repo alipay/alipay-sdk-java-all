@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 单元分页返回对象
  *
  * @author auto create
- * @since 1.0, 2025-05-12 16:15:00
+ * @since 1.0, 2025-07-15 19:27:42
  */
 public class GroupPageListRes extends AlipayObject {
 
-	private static final long serialVersionUID = 8242699954148742992L;
+	private static final long serialVersionUID = 7484475171832461952L;
 
 	/**
 	 * 单元出价类型
@@ -128,6 +128,12 @@ public class GroupPageListRes extends AlipayObject {
 	 */
 	@ApiField("target_cpa")
 	private String targetCpa;
+
+	/**
+	 * 目标ROI，单位【元】，人民币。 bidType= ROI时候必填
+	 */
+	@ApiField("target_roi")
+	private String targetRoi;
 
 	public String getBidType() {
 		return this.bidType;
@@ -260,6 +266,13 @@ public class GroupPageListRes extends AlipayObject {
 	}
 	public void setTargetCpa(String targetCpa) {
 		this.targetCpa = targetCpa;
+	}
+
+	public String getTargetRoi() {
+		return this.targetRoi;
+	}
+	public void setTargetRoi(String targetRoi) {
+		this.targetRoi = targetRoi;
 	}
 
 }

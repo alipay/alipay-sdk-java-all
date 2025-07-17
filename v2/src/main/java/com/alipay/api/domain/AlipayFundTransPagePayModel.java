@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金转账页面支付接口
  *
  * @author auto create
- * @since 1.0, 2024-07-31 10:18:29
+ * @since 1.0, 2025-07-14 13:42:49
  */
 public class AlipayFundTransPagePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4288534567539779658L;
+	private static final long serialVersionUID = 3267965339278974685L;
 
 	/**
 	 * 描述特定的业务场景，比如对党费缴纳场景需走党费专户

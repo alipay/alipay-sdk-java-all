@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingCampaignPrizepoolPrizeDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6329321866731818574L;
+	private static final long serialVersionUID = 2437524629492113581L;
 
 	
 

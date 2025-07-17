@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.ai.cv.rs.tiff.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-28 14:41:56
+ * @since 1.0, 2025-07-07 16:53:19
  */
 public class AnttechAiCvRsTiffQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6497529462723878727L;
+	private static final long serialVersionUID = 1264693118944427291L;
 
 	/** 
 	 * tiff瓦片图像的base64结果

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  *  创意分页返回对象
  *
  * @author auto create
- * @since 1.0, 2025-05-12 16:15:04
+ * @since 1.0, 2025-07-15 15:12:34
  */
 public class CreativePageListRes extends AlipayObject {
 
-	private static final long serialVersionUID = 7761597341583344811L;
+	private static final long serialVersionUID = 1392664522185719111L;
 
 	/**
 	 * 创意id
@@ -26,6 +26,12 @@ public class CreativePageListRes extends AlipayObject {
 	 */
 	@ApiField("ad_name")
 	private String adName;
+
+	/**
+	 * 审核拒绝文案，由审核方填充。
+	 */
+	@ApiField("audit_refuse_reason")
+	private String auditRefuseReason;
 
 	/**
 	 * 创意业务状态 PARTIALLY_ENABLE 代表有效-部分审核不通过状态
@@ -94,6 +100,12 @@ public class CreativePageListRes extends AlipayObject {
 	private String punishReason;
 
 	/**
+	 * 审核拒绝扩展信息
+	 */
+	@ApiField("refuse_extend_info_res")
+	private CreativeRefuseExtendInfoRes refuseExtendInfoRes;
+
+	/**
 	 * 创意处置。状态 0:正常,1:风控
 	 */
 	@ApiField("risk_status")
@@ -129,6 +141,13 @@ public class CreativePageListRes extends AlipayObject {
 	}
 	public void setAdName(String adName) {
 		this.adName = adName;
+	}
+
+	public String getAuditRefuseReason() {
+		return this.auditRefuseReason;
+	}
+	public void setAuditRefuseReason(String auditRefuseReason) {
+		this.auditRefuseReason = auditRefuseReason;
 	}
 
 	public String getCreativeBizStatus() {
@@ -206,6 +225,13 @@ public class CreativePageListRes extends AlipayObject {
 	}
 	public void setPunishReason(String punishReason) {
 		this.punishReason = punishReason;
+	}
+
+	public CreativeRefuseExtendInfoRes getRefuseExtendInfoRes() {
+		return this.refuseExtendInfoRes;
+	}
+	public void setRefuseExtendInfoRes(CreativeRefuseExtendInfoRes refuseExtendInfoRes) {
+		this.refuseExtendInfoRes = refuseExtendInfoRes;
 	}
 
 	public String getRiskStatus() {

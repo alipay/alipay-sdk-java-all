@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据类目id获取类目属性列表
  *
  * @author auto create
- * @since 1.0, 2025-03-31 19:57:27
+ * @since 1.0, 2025-07-10 11:28:20
  */
 public class AlipayOpenAppItemCateattrQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3827154258724765884L;
+	private static final long serialVersionUID = 1783661265241496651L;
 
 	/**
 	 * 类目ID，查询类目信息获取类目ID

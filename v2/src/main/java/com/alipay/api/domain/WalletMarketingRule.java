@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 钱包营销规则对象
  *
  * @author auto create
- * @since 1.0, 2024-07-30 17:24:14
+ * @since 1.0, 2025-07-11 19:23:09
  */
 public class WalletMarketingRule extends AlipayObject {
 
-	private static final long serialVersionUID = 2214643738856565736L;
+	private static final long serialVersionUID = 3643275955754754884L;
 
 	/**
 	 * 营销类型
@@ -24,6 +24,12 @@ public class WalletMarketingRule extends AlipayObject {
 	 */
 	@ApiField("ma_value")
 	private String maValue;
+
+	/**
+	 * 指定退款账户
+	 */
+	@ApiField("refund_marketing_account_no")
+	private String refundMarketingAccountNo;
 
 	/**
 	 * 退营销金额，单位：元
@@ -43,6 +49,13 @@ public class WalletMarketingRule extends AlipayObject {
 	}
 	public void setMaValue(String maValue) {
 		this.maValue = maValue;
+	}
+
+	public String getRefundMarketingAccountNo() {
+		return this.refundMarketingAccountNo;
+	}
+	public void setRefundMarketingAccountNo(String refundMarketingAccountNo) {
+		this.refundMarketingAccountNo = refundMarketingAccountNo;
 	}
 
 	public String getRefundMarketingAmount() {

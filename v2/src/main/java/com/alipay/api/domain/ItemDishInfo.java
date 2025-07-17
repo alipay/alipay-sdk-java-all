@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ItemDishInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8135643859176965656L;
+	private static final long serialVersionUID = 3725636752325155346L;
 
 	/**
 	 * 商品详情-菜品图片中的图片描述

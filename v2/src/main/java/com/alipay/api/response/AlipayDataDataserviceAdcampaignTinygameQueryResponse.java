@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.adcampaign.tinygame.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-17 13:57:30
+ * @since 1.0, 2025-07-14 17:37:32
  */
 public class AlipayDataDataserviceAdcampaignTinygameQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2336697815262323633L;
+	private static final long serialVersionUID = 2863189773351364321L;
 
 	/** 
 	 * 小游戏列表信息，返回商家下面可投的所有小游戏appId。若无小游戏，返回空列表

@@ -1,6 +1,7 @@
 package com.alipay.api.request;
 
 import java.util.Date;
+import java.util.List;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -14,7 +15,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pay.poster.batch.modify request
  * 
  * @author auto create
- * @since 1.0, 2025-07-07 11:00:23
+ * @since 1.0, 2025-07-16 15:37:31
  */
 public class AlipayPayPosterBatchModifyRequest implements AlipayUploadRequest<AlipayPayPosterBatchModifyResponse> {
 
@@ -27,6 +28,11 @@ public class AlipayPayPosterBatchModifyRequest implements AlipayUploadRequest<Al
 	private FileItem deviceFile;
 
 	/** 
+	* 编辑操作人
+	 */
+	private List<String> deviceIds;
+
+	/** 
 	* 海报结束时间
 	 */
 	private Date endTime;
@@ -35,6 +41,11 @@ public class AlipayPayPosterBatchModifyRequest implements AlipayUploadRequest<Al
 	* 海报图片链接
 	 */
 	private String imgUrl;
+
+	/** 
+	* 货柜对应的商家id
+	 */
+	private String merchantId;
 
 	/** 
 	* 是否进行活动下线
@@ -63,6 +74,13 @@ public class AlipayPayPosterBatchModifyRequest implements AlipayUploadRequest<Al
 		return this.deviceFile;
 	}
 
+	public void setDeviceIds(List<String> deviceIds) {
+		this.deviceIds = deviceIds;
+	}
+	public List<String> getDeviceIds() {
+		return this.deviceIds;
+	}
+
 	public void setEndTime(Date endTime) {
 		this.endTime = endTime;
 	}
@@ -75,6 +93,13 @@ public class AlipayPayPosterBatchModifyRequest implements AlipayUploadRequest<Al
 	}
 	public String getImgUrl() {
 		return this.imgUrl;
+	}
+
+	public void setMerchantId(String merchantId) {
+		this.merchantId = merchantId;
+	}
+	public String getMerchantId() {
+		return this.merchantId;
 	}
 
 	public void setOffline(Boolean offline) {
@@ -165,8 +190,10 @@ public class AlipayPayPosterBatchModifyRequest implements AlipayUploadRequest<Al
 
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
+		txtParams.put("device_ids", this.deviceIds == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.deviceIds, true));
 		txtParams.put("end_time", this.endTime);
 		txtParams.put("img_url", this.imgUrl);
+		txtParams.put("merchant_id", this.merchantId);
 		txtParams.put("offline", this.offline);
 		txtParams.put("operator", this.operator);
 		txtParams.put("plan_id", this.planId);

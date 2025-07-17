@@ -5,6 +5,7 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.CreativeActionProperty;
 import com.alipay.api.domain.CreativeMaterial;
+import com.alipay.api.domain.CreativeRefuseExtendInfoRes;
 
 import com.alipay.api.AlipayResponse;
 
@@ -12,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.adcampaign.creative.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-18 16:23:34
+ * @since 1.0, 2025-07-14 21:02:34
  */
 public class AlipayDataDataserviceAdcampaignCreativeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6543954914731367969L;
+	private static final long serialVersionUID = 7274268288346329388L;
 
 	/** 
 	 * 交互动作属性集合
@@ -44,10 +45,22 @@ public class AlipayDataDataserviceAdcampaignCreativeQueryResponse extends Alipay
 	private String adName;
 
 	/** 
+	 * 创意拒绝理由文案信息，由审核方填充
+	 */
+	@ApiField("audit_refuse_reason")
+	private String auditRefuseReason;
+
+	/** 
 	 * 创意点击监测地址
 	 */
 	@ApiField("click_track_url")
 	private String clickTrackUrl;
+
+	/** 
+	 * 创意业务状态
+	 */
+	@ApiField("creative_biz_status")
+	private String creativeBizStatus;
 
 	/** 
 	 * 修改时间
@@ -74,7 +87,7 @@ public class AlipayDataDataserviceAdcampaignCreativeQueryResponse extends Alipay
 	private String impressionTrackUrl;
 
 	/** 
-	 * 二级营销目标code
+	 * 二级营销目标
 	 */
 	@ApiField("market_target_code")
 	private String marketTargetCode;
@@ -109,6 +122,24 @@ public class AlipayDataDataserviceAdcampaignCreativeQueryResponse extends Alipay
 	 */
 	@ApiField("principal_id")
 	private Long principalId;
+
+	/** 
+	 * 处置理由
+	 */
+	@ApiField("punish_reason")
+	private String punishReason;
+
+	/** 
+	 * 审核拒绝扩展信息
+	 */
+	@ApiField("refuse_extend_info_res")
+	private CreativeRefuseExtendInfoRes refuseExtendInfoRes;
+
+	/** 
+	 * 创意处置。状态 0:正常,1:风控
+	 */
+	@ApiField("risk_status")
+	private String riskStatus;
 
 	/** 
 	 * 场景code
@@ -162,11 +193,25 @@ public class AlipayDataDataserviceAdcampaignCreativeQueryResponse extends Alipay
 		return this.adName;
 	}
 
+	public void setAuditRefuseReason(String auditRefuseReason) {
+		this.auditRefuseReason = auditRefuseReason;
+	}
+	public String getAuditRefuseReason( ) {
+		return this.auditRefuseReason;
+	}
+
 	public void setClickTrackUrl(String clickTrackUrl) {
 		this.clickTrackUrl = clickTrackUrl;
 	}
 	public String getClickTrackUrl( ) {
 		return this.clickTrackUrl;
+	}
+
+	public void setCreativeBizStatus(String creativeBizStatus) {
+		this.creativeBizStatus = creativeBizStatus;
+	}
+	public String getCreativeBizStatus( ) {
+		return this.creativeBizStatus;
 	}
 
 	public void setGmtModified(String gmtModified) {
@@ -237,6 +282,27 @@ public class AlipayDataDataserviceAdcampaignCreativeQueryResponse extends Alipay
 	}
 	public Long getPrincipalId( ) {
 		return this.principalId;
+	}
+
+	public void setPunishReason(String punishReason) {
+		this.punishReason = punishReason;
+	}
+	public String getPunishReason( ) {
+		return this.punishReason;
+	}
+
+	public void setRefuseExtendInfoRes(CreativeRefuseExtendInfoRes refuseExtendInfoRes) {
+		this.refuseExtendInfoRes = refuseExtendInfoRes;
+	}
+	public CreativeRefuseExtendInfoRes getRefuseExtendInfoRes( ) {
+		return this.refuseExtendInfoRes;
+	}
+
+	public void setRiskStatus(String riskStatus) {
+		this.riskStatus = riskStatus;
+	}
+	public String getRiskStatus( ) {
+		return this.riskStatus;
 	}
 
 	public void setSceneCode(String sceneCode) {

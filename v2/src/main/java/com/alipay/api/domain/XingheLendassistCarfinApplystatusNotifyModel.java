@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 车金融订单状态通知接口
  *
  * @author auto create
- * @since 1.0, 2025-05-08 14:48:56
+ * @since 1.0, 2025-07-10 09:48:40
  */
 public class XingheLendassistCarfinApplystatusNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6748683885453115926L;
+	private static final long serialVersionUID = 6736131886183268737L;
 
 	/**
 	 * 星河侧唯一业务编号
@@ -176,6 +176,13 @@ CANCEL_SUC: 取消成功（适用于客户确定放弃的场景，机构侧后�
 	 */
 	@ApiField("status")
 	private String status;
+
+	/**
+	 * 补充类别信息
+	 */
+	@ApiListField("supplement_category_list")
+	@ApiField("supplement_category_info")
+	private List<SupplementCategoryInfo> supplementCategoryList;
 
 	/**
 	 * 是否需要补充信息或流水
@@ -375,6 +382,13 @@ CANCEL_SUC: 取消成功（适用于客户确定放弃的场景，机构侧后�
 	}
 	public void setStatus(String status) {
 		this.status = status;
+	}
+
+	public List<SupplementCategoryInfo> getSupplementCategoryList() {
+		return this.supplementCategoryList;
+	}
+	public void setSupplementCategoryList(List<SupplementCategoryInfo> supplementCategoryList) {
+		this.supplementCategoryList = supplementCategoryList;
 	}
 
 	public Boolean getSupplementInfoFlag() {

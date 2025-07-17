@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用于回调使用
  *
  * @author auto create
- * @since 1.0, 2023-02-06 14:15:57
+ * @since 1.0, 2025-07-15 17:28:02
  */
 public class AssetCallbackInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4548237715473915838L;
+	private static final long serialVersionUID = 1839249438886434851L;
 
 	/**
 	 * 是哪一个交互动作之后的回调
@@ -46,6 +46,12 @@ public class AssetCallbackInfo extends AlipayObject {
 	 */
 	@ApiField("error_desc")
 	private String errorDesc;
+
+	/**
+	 * 物料版本反馈信息
+	 */
+	@ApiField("feedback_info")
+	private AssetItemVersionFeedBackInfo feedbackInfo;
 
 	/**
 	 * 是否处理成功
@@ -86,6 +92,13 @@ public class AssetCallbackInfo extends AlipayObject {
 	}
 	public void setErrorDesc(String errorDesc) {
 		this.errorDesc = errorDesc;
+	}
+
+	public AssetItemVersionFeedBackInfo getFeedbackInfo() {
+		return this.feedbackInfo;
+	}
+	public void setFeedbackInfo(AssetItemVersionFeedBackInfo feedbackInfo) {
+		this.feedbackInfo = feedbackInfo;
 	}
 
 	public Boolean getSuccess() {

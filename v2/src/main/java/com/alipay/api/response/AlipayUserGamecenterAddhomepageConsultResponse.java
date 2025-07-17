@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.gamecenter.addhomepage.consult response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-01 16:42:26
+ * @since 1.0, 2025-07-16 12:57:37
  */
 public class AlipayUserGamecenterAddhomepageConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1365569697893448926L;
+	private static final long serialVersionUID = 6842154768194118315L;
 
 	/** 
 	 * Y：已添加首页，N：未添加首页

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 冲鸭用户行为上报
  *
  * @author auto create
- * @since 1.0, 2025-06-27 13:52:31
+ * @since 1.0, 2025-07-15 10:32:32
  */
 public class AlipayCommerceAcommunicationChongyaUserNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8391693261166444797L;
+	private static final long serialVersionUID = 8841412985665735656L;
 
 	/**
 	 * action用户行为：POINTS_AVAILABLE；POINTS_ CLAIMED

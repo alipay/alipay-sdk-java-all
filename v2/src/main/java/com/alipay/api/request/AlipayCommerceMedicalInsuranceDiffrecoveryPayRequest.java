@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.insurance.diffrecovery.pay request
  * 
  * @author auto create
- * @since 1.0, 2024-12-02 17:32:18
+ * @since 1.0, 2025-07-16 16:07:33
  */
 public class AlipayCommerceMedicalInsuranceDiffrecoveryPayRequest implements AlipayRequest<AlipayCommerceMedicalInsuranceDiffrecoveryPayResponse> {
 

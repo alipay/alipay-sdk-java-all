@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻信用信用服务创建
  *
  * @author auto create
- * @since 1.0, 2024-10-16 11:23:44
+ * @since 1.0, 2025-07-16 16:38:26
  */
 public class ZhimaMerchantCreditserviceDetailCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4725746491725396242L;
+	private static final long serialVersionUID = 5259244982831464496L;
 
 	/**
 	 * 信用服务基础信息配置，为必传字段。此字段为复杂模型，其中服务名称和服务logo为必传属性。

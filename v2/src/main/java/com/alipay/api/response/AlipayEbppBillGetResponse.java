@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppBillGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1859989749789497946L;
+	private static final long serialVersionUID = 5836183769251526756L;
 
 	/** 
 	 * 支付宝的业务订单号，具有唯一性。

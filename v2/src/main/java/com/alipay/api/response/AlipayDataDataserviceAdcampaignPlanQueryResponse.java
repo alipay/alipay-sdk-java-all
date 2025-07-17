@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.adcampaign.plan.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-12 16:22:27
+ * @since 1.0, 2025-07-15 15:17:34
  */
 public class AlipayDataDataserviceAdcampaignPlanQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4333536619636836338L;
+	private static final long serialVersionUID = 3448471878942181326L;
 
 	/** 
 	 * 计划日预算。单位：元【人民币】不限日预算时此值为空
@@ -72,11 +72,6 @@ public class AlipayDataDataserviceAdcampaignPlanQueryResponse extends AlipayResp
 
 	/** 
 	 * 计划状态
-        "PLAN_END",
-        "PLAN_DELETE",
-        "PLAN_EFFECTIVE",
-        "PLAN_PAUSE",
-        "PLAN_NOT_BEGIN"
 	 */
 	@ApiField("plan_status")
 	private String planStatus;
@@ -114,7 +109,7 @@ public class AlipayDataDataserviceAdcampaignPlanQueryResponse extends AlipayResp
 	private String promoteTargetAppType;
 
 	/** 
-	 * RTB冻结单号
+	 * 冻结单id
 	 */
 	@ApiField("rtb_freeze_order_id")
 	private String rtbFreezeOrderId;

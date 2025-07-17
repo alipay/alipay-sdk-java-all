@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据类目id获取可选品牌
  *
  * @author auto create
- * @since 1.0, 2025-03-31 19:57:27
+ * @since 1.0, 2025-07-10 11:28:28
  */
 public class AlipayOpenAppItemBrandQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2487745145117559818L;
+	private static final long serialVersionUID = 1434774691842599187L;
 
 	/**
 	 * 类目ID，查询类目信息获取类目ID

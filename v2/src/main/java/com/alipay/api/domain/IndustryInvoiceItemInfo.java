@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 正向通用发票商品信息
  *
  * @author auto create
- * @since 1.0, 2025-06-18 22:39:09
+ * @since 1.0, 2025-07-09 16:26:26
  */
 public class IndustryInvoiceItemInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3759434867446749686L;
+	private static final long serialVersionUID = 5385615361691361617L;
 
 	/**
 	 * 优惠政策标识
@@ -27,7 +27,7 @@ public class IndustryInvoiceItemInfo extends AlipayObject {
 	private String invoiceAmount;
 
 	/**
-	 * 发票行性质，当前仅支持 正常行-NORMAL_LINE
+	 * 发票行性质，仅支持 正常行-NORMAL_LINE
 	 */
 	@ApiField("invoice_line_property")
 	private String invoiceLineProperty;

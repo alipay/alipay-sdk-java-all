@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FundHistory extends AlipayObject {
 
-	private static final long serialVersionUID = 4254472481991315358L;
+	private static final long serialVersionUID = 1566676655563792349L;
 
 	/**
 	 * 充值金额(分)

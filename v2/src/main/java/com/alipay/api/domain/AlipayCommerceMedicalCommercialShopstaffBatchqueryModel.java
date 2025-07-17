@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询医疗门店店员列表
  *
  * @author auto create
- * @since 1.0, 2025-06-13 10:05:23
+ * @since 1.0, 2025-07-14 16:17:16
  */
 public class AlipayCommerceMedicalCommercialShopstaffBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2326278296758694725L;
+	private static final long serialVersionUID = 4231387825758981883L;
 
 	/**
 	 * 蚂蚁门店ID

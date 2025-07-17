@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁售后费用项明细
  *
  * @author auto create
- * @since 1.0, 2025-07-02 16:58:15
+ * @since 1.0, 2025-07-16 13:39:36
  */
 public class AftersalePayItemVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6134916365279818819L;
+	private static final long serialVersionUID = 5792946637293857981L;
 
 	/**
 	 * 当前费用项支付金额，单位：元，精确到小数点后两位

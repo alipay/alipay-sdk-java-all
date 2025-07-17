@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.ai.cv.rs.result.get request
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 04:36:45
+ * @since 1.0, 2025-07-07 16:53:16
  */
 public class AnttechAiCvRsResultGetRequest implements AlipayRequest<AnttechAiCvRsResultGetResponse> {
 

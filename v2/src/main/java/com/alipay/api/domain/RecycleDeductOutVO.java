@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RecycleDeductOutVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4457987814783792413L;
+	private static final long serialVersionUID = 5498633691234259417L;
 
 	/**
 	 * 当出资类型=余额，传入出资账户2088. 当出资类型=钱包，传入出资账户钱包ID

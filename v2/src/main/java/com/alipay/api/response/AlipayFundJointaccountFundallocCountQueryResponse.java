@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundJointaccountFundallocCountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1329141261665278799L;
+	private static final long serialVersionUID = 1213859682416323231L;
 
 	/** 
 	 * 自动攒计划的调拨汇总金额（单位为元，必须大于0且最多小数点后两位）

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayUserDtbankcustActivityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6655138712377666667L;
+	private static final long serialVersionUID = 1543367764691176293L;
 
 	/**
 	 * 活动类型列表：

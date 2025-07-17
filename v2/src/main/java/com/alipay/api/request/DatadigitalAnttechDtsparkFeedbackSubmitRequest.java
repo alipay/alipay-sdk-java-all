@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: datadigital.anttech.dtspark.feedback.submit request
  * 
  * @author auto create
- * @since 1.0, 2024-12-26 10:22:24
+ * @since 1.0, 2025-07-09 16:33:33
  */
 public class DatadigitalAnttechDtsparkFeedbackSubmitRequest implements AlipayRequest<DatadigitalAnttechDtsparkFeedbackSubmitResponse> {
 

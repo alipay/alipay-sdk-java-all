@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.isrisk.qualitycontrol.submit request
  * 
  * @author auto create
- * @since 1.0, 2025-06-30 15:17:32
+ * @since 1.0, 2025-07-15 11:57:30
  */
 public class AlipayIserviceIsriskQualitycontrolSubmitRequest implements AlipayRequest<AlipayIserviceIsriskQualitycontrolSubmitResponse> {
 

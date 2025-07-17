@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租赁订单支付主动同步
  *
  * @author auto create
- * @since 1.0, 2025-06-11 17:30:27
+ * @since 1.0, 2025-07-16 16:53:44
  */
 public class AlipayCommerceRentOrderPaySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6495585917378499451L;
+	private static final long serialVersionUID = 8387255996969867584L;
+
+	/**
+	 * 租赁售后单号
+	 */
+	@ApiField("aftersale_id")
+	private String aftersaleId;
 
 	/**
 	 * 交易组件订单号
@@ -46,6 +52,13 @@ public class AlipayCommerceRentOrderPaySyncModel extends AlipayObject {
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;
+
+	public String getAftersaleId() {
+		return this.aftersaleId;
+	}
+	public void setAftersaleId(String aftersaleId) {
+		this.aftersaleId = aftersaleId;
+	}
 
 	public String getOrderId() {
 		return this.orderId;

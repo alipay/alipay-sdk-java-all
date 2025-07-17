@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 补充材料
  *
  * @author auto create
- * @since 1.0, 2025-06-23 14:54:58
+ * @since 1.0, 2025-07-09 10:36:37
  */
 public class BsExtraCredentials extends AlipayObject {
 
-	private static final long serialVersionUID = 4199548363816118894L;
+	private static final long serialVersionUID = 1339742531612928155L;
 
 	/**
 	 * 饿了么品牌pid
@@ -44,7 +44,7 @@ public class BsExtraCredentials extends AlipayObject {
 	private String powerBankImg;
 
 	/**
-	 * 饿了么门店id
+	 * 门店id
 	 */
 	@ApiField("store_id")
 	private String storeId;

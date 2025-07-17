@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品信息
  *
  * @author auto create
- * @since 1.0, 2025-06-03 13:32:52
+ * @since 1.0, 2025-07-08 10:26:17
  */
 public class OrderItemInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6175872349247369128L;
+	private static final long serialVersionUID = 7476859454939365231L;
 
 	/**
 	 * 商品69码
@@ -33,6 +33,12 @@ public class OrderItemInfoVO extends AlipayObject {
 	 */
 	@ApiField("erp_code")
 	private String erpCode;
+
+	/**
+	 * 商品图片
+	 */
+	@ApiField("head_img_url")
+	private String headImgUrl;
 
 	/**
 	 * 商品名称
@@ -63,6 +69,12 @@ public class OrderItemInfoVO extends AlipayObject {
 	 */
 	@ApiField("item_id")
 	private String itemId;
+
+	/**
+	 * 商品名称
+	 */
+	@ApiField("item_name")
+	private String itemName;
 
 	/**
 	 * 商品退款信息
@@ -140,6 +152,13 @@ public class OrderItemInfoVO extends AlipayObject {
 		this.erpCode = erpCode;
 	}
 
+	public String getHeadImgUrl() {
+		return this.headImgUrl;
+	}
+	public void setHeadImgUrl(String headImgUrl) {
+		this.headImgUrl = headImgUrl;
+	}
+
 	public String getItemBrand() {
 		return this.itemBrand;
 	}
@@ -173,6 +192,13 @@ public class OrderItemInfoVO extends AlipayObject {
 	}
 	public void setItemId(String itemId) {
 		this.itemId = itemId;
+	}
+
+	public String getItemName() {
+		return this.itemName;
+	}
+	public void setItemName(String itemName) {
+		this.itemName = itemName;
 	}
 
 	public ItemRefundInfoVO getItemRefundInfo() {

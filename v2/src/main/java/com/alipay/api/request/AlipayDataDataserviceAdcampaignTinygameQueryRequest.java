@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.dataservice.adcampaign.tinygame.query request
  * 
  * @author auto create
- * @since 1.0, 2025-06-17 13:57:30
+ * @since 1.0, 2025-07-14 17:37:32
  */
 public class AlipayDataDataserviceAdcampaignTinygameQueryRequest implements AlipayRequest<AlipayDataDataserviceAdcampaignTinygameQueryResponse> {
 

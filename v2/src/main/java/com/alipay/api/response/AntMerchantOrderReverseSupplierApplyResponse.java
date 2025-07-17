@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.order.reverse.supplier.apply response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-01 17:42:22
+ * @since 1.0, 2025-07-13 23:31:27
  */
 public class AntMerchantOrderReverseSupplierApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8554138744615713716L;
+	private static final long serialVersionUID = 5855812476237248834L;
 
 	/** 
 	 * 未妥投反馈处理结果

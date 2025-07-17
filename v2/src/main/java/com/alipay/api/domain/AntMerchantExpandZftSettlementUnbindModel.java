@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntMerchantExpandZftSettlementUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1316263356944257717L;
+	private static final long serialVersionUID = 5567616697864935418L;
 
 	/**
 	 * 结算支付宝账号（与进件生成的卡编号二选其一）

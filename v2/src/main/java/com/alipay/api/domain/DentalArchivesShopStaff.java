@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口腔健康管家店员类
  *
  * @author auto create
- * @since 1.0, 2025-06-13 10:05:23
+ * @since 1.0, 2025-07-14 16:17:16
  */
 public class DentalArchivesShopStaff extends AlipayObject {
 
-	private static final long serialVersionUID = 7343745514573994888L;
+	private static final long serialVersionUID = 7752299874576769362L;
 
 	/**
 	 * 店员账号
@@ -30,6 +30,12 @@ public class DentalArchivesShopStaff extends AlipayObject {
 	 */
 	@ApiField("staff_name")
 	private String staffName;
+
+	/**
+	 * 店员用户ID
+	 */
+	@ApiField("staff_user_id")
+	private String staffUserId;
 
 	public String getAlipayLogonId() {
 		return this.alipayLogonId;
@@ -50,6 +56,13 @@ public class DentalArchivesShopStaff extends AlipayObject {
 	}
 	public void setStaffName(String staffName) {
 		this.staffName = staffName;
+	}
+
+	public String getStaffUserId() {
+		return this.staffUserId;
+	}
+	public void setStaffUserId(String staffUserId) {
+		this.staffUserId = staffUserId;
 	}
 
 }

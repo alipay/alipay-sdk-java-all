@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 0g能量兑换蚂蚁森林树种
  *
  * @author auto create
- * @since 1.0, 2025-05-29 14:31:43
+ * @since 1.0, 2025-07-09 16:17:17
  */
 public class AlipaySocialAntforestFreeplantApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4286554553111521146L;
+	private static final long serialVersionUID = 1532233487765628959L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识

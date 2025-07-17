@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.ai.cv.rs.xytile.get response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 02:36:58
+ * @since 1.0, 2025-07-07 16:53:23
  */
 public class AnttechAiCvRsXytileGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1669413559416826521L;
+	private static final long serialVersionUID = 3777786539498649288L;
 
 	/** 
 	 * 图片原始内容

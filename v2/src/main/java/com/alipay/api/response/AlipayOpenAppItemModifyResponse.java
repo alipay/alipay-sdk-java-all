@@ -11,11 +11,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.item.modify response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-27 15:59:11
+ * @since 1.0, 2025-07-14 11:42:31
  */
 public class AlipayOpenAppItemModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6511183518151452949L;
+	private static final long serialVersionUID = 3366375785628371446L;
+
+	/** 
+	 * 商品业务模式，租赁业务模式包含（短租：0；长租：1；先租后买 ： 2）
+	 */
+	@ApiField("business_model")
+	private String businessModel;
 
 	/** 
 	 * 支付宝平台侧spu ID，是支付宝平台侧商品的唯一标识，后续与平台交互，需要使用该 ID，建议持久化。
@@ -35,6 +41,13 @@ public class AlipayOpenAppItemModifyResponse extends AlipayResponse {
 	@ApiListField("skus")
 	@ApiField("item_sku_id_pair")
 	private List<ItemSkuIdPair> skus;
+
+	public void setBusinessModel(String businessModel) {
+		this.businessModel = businessModel;
+	}
+	public String getBusinessModel( ) {
+		return this.businessModel;
+	}
 
 	public void setItemId(String itemId) {
 		this.itemId = itemId;

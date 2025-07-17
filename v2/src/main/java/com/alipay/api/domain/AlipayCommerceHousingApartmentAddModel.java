@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 公寓新增
  *
  * @author auto create
- * @since 1.0, 2025-05-19 15:12:27
+ * @since 1.0, 2025-07-08 19:52:30
  */
 public class AlipayCommerceHousingApartmentAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8832862641997716365L;
+	private static final long serialVersionUID = 8199647724392696147L;
 
 	/**
 	 * null
@@ -73,6 +73,12 @@ public class AlipayCommerceHousingApartmentAddModel extends AlipayObject {
 	private String apartmentVr;
 
 	/**
+	 * 卫生间数量
+	 */
+	@ApiField("bath_room")
+	private String bathRoom;
+
+	/**
 	 * 居室，1居，2居，3居等
 
 	 */
@@ -92,6 +98,12 @@ public class AlipayCommerceHousingApartmentAddModel extends AlipayObject {
 	 */
 	@ApiField("city_code")
 	private String cityCode;
+
+	/**
+	 * 建筑年代
+	 */
+	@ApiField("construction_year")
+	private String constructionYear;
 
 	/**
 	 * 张三
@@ -183,6 +195,18 @@ public class AlipayCommerceHousingApartmentAddModel extends AlipayObject {
 	private String intentionalApplication;
 
 	/**
+	 * 厨房数量
+	 */
+	@ApiField("kitchen")
+	private String kitchen;
+
+	/**
+	 * 客厅数量
+	 */
+	@ApiField("living_room")
+	private String livingRoom;
+
+	/**
 	 * 朝向
 
 	 */
@@ -194,6 +218,18 @@ public class AlipayCommerceHousingApartmentAddModel extends AlipayObject {
 	 */
 	@ApiField("other")
 	private String other;
+
+	/**
+	 * 所有者身份证
+	 */
+	@ApiField("owner_id")
+	private String ownerId;
+
+	/**
+	 * 所有者姓名
+	 */
+	@ApiField("owner_name")
+	private String ownerName;
 
 	/**
 	 * 小程序详情跳转地址，例如：page=pages/af-home/index?myKey%3DmyValue
@@ -282,6 +318,12 @@ public class AlipayCommerceHousingApartmentAddModel extends AlipayObject {
 	private String usableAreaStart;
 
 	/**
+	 * 校验码
+	 */
+	@ApiField("verification_code")
+	private String verificationCode;
+
+	/**
 	 * null
 	 */
 	@ApiListField("viewing_time")
@@ -344,6 +386,13 @@ public class AlipayCommerceHousingApartmentAddModel extends AlipayObject {
 		this.apartmentVr = apartmentVr;
 	}
 
+	public String getBathRoom() {
+		return this.bathRoom;
+	}
+	public void setBathRoom(String bathRoom) {
+		this.bathRoom = bathRoom;
+	}
+
 	public String getBedRoom() {
 		return this.bedRoom;
 	}
@@ -363,6 +412,13 @@ public class AlipayCommerceHousingApartmentAddModel extends AlipayObject {
 	}
 	public void setCityCode(String cityCode) {
 		this.cityCode = cityCode;
+	}
+
+	public String getConstructionYear() {
+		return this.constructionYear;
+	}
+	public void setConstructionYear(String constructionYear) {
+		this.constructionYear = constructionYear;
 	}
 
 	public String getContactPerson() {
@@ -456,6 +512,20 @@ public class AlipayCommerceHousingApartmentAddModel extends AlipayObject {
 		this.intentionalApplication = intentionalApplication;
 	}
 
+	public String getKitchen() {
+		return this.kitchen;
+	}
+	public void setKitchen(String kitchen) {
+		this.kitchen = kitchen;
+	}
+
+	public String getLivingRoom() {
+		return this.livingRoom;
+	}
+	public void setLivingRoom(String livingRoom) {
+		this.livingRoom = livingRoom;
+	}
+
 	public String getOrientation() {
 		return this.orientation;
 	}
@@ -468,6 +538,20 @@ public class AlipayCommerceHousingApartmentAddModel extends AlipayObject {
 	}
 	public void setOther(String other) {
 		this.other = other;
+	}
+
+	public String getOwnerId() {
+		return this.ownerId;
+	}
+	public void setOwnerId(String ownerId) {
+		this.ownerId = ownerId;
+	}
+
+	public String getOwnerName() {
+		return this.ownerName;
+	}
+	public void setOwnerName(String ownerName) {
+		this.ownerName = ownerName;
 	}
 
 	public String getPage() {
@@ -559,6 +643,13 @@ public class AlipayCommerceHousingApartmentAddModel extends AlipayObject {
 	}
 	public void setUsableAreaStart(String usableAreaStart) {
 		this.usableAreaStart = usableAreaStart;
+	}
+
+	public String getVerificationCode() {
+		return this.verificationCode;
+	}
+	public void setVerificationCode(String verificationCode) {
+		this.verificationCode = verificationCode;
 	}
 
 	public List<String> getViewingTime() {

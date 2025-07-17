@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.account.device.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:29:00
+ * @since 1.0, 2025-07-14 14:39:10
  */
 public class AlipayUserAccountDeviceInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8539837131736534678L;
+	private static final long serialVersionUID = 5129326849125992251L;
 
 	/** 
 	 * 满足投放条件的简要设备信息

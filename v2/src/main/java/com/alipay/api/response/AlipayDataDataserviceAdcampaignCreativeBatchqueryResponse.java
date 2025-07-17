@@ -1,6 +1,8 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.CreativePageListRes;
 import com.alipay.api.domain.AdCamPagination;
 
@@ -10,11 +12,18 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.adcampaign.creative.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-18 16:24:07
+ * @since 1.0, 2025-07-15 15:17:34
  */
 public class AlipayDataDataserviceAdcampaignCreativeBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8433293347341859849L;
+	private static final long serialVersionUID = 1754712592766314531L;
+
+	/** 
+	 * 创意分页数据
+	 */
+	@ApiListField("content_list")
+	@ApiField("creative_page_list_res")
+	private List<CreativePageListRes> contentList;
 
 	/** 
 	 * 分页数据
@@ -27,6 +36,13 @@ public class AlipayDataDataserviceAdcampaignCreativeBatchqueryResponse extends A
 	 */
 	@ApiField("pagination")
 	private AdCamPagination pagination;
+
+	public void setContentList(List<CreativePageListRes> contentList) {
+		this.contentList = contentList;
+	}
+	public List<CreativePageListRes> getContentList( ) {
+		return this.contentList;
+	}
 
 	public void setList(CreativePageListRes list) {
 		this.list = list;

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 充电运营商同步用户绑定充电桩信息接口
  *
  * @author auto create
- * @since 1.0, 2025-07-07 13:35:49
+ * @since 1.0, 2025-07-10 16:04:48
  */
 public class AlipayCommerceTransportChargerChargerbindinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6744711388687615268L;
+	private static final long serialVersionUID = 8154915523178717494L;
 
 	/**
 	 * 绑定充电桩二维码值，用户扫码绑桩扫描的二维码

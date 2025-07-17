@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.acommunication.distribution.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-09 10:51:34
+ * @since 1.0, 2025-07-14 14:47:34
  */
 public class AlipayCommerceAcommunicationDistributionOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2271617965597684422L;
+	private static final long serialVersionUID = 6365473856535567911L;
 
 	/** 
 	 * 支付宝订单号
@@ -29,6 +29,12 @@ public class AlipayCommerceAcommunicationDistributionOrderQueryResponse extends 
 	@ApiListField("biz_order_message_list")
 	@ApiField("biz_order_message")
 	private List<BizOrderMessage> bizOrderMessageList;
+
+	/** 
+	 * 活动id,海豚发奖相关
+	 */
+	@ApiField("camp_id")
+	private String campId;
 
 	/** 
 	 * 机构订单号
@@ -54,6 +60,18 @@ public class AlipayCommerceAcommunicationDistributionOrderQueryResponse extends 
 	@ApiField("order_status_desc")
 	private String orderStatusDesc;
 
+	/** 
+	 * 外部奖品id，如果为券，则为券id
+	 */
+	@ApiField("out_prize_id")
+	private String outPrizeId;
+
+	/** 
+	 * 奖品id,海豚发券相关
+	 */
+	@ApiField("prize_id")
+	private String prizeId;
+
 	public void setAlipayOrderId(String alipayOrderId) {
 		this.alipayOrderId = alipayOrderId;
 	}
@@ -66,6 +84,13 @@ public class AlipayCommerceAcommunicationDistributionOrderQueryResponse extends 
 	}
 	public List<BizOrderMessage> getBizOrderMessageList( ) {
 		return this.bizOrderMessageList;
+	}
+
+	public void setCampId(String campId) {
+		this.campId = campId;
+	}
+	public String getCampId( ) {
+		return this.campId;
 	}
 
 	public void setInstOrderId(String instOrderId) {
@@ -94,6 +119,20 @@ public class AlipayCommerceAcommunicationDistributionOrderQueryResponse extends 
 	}
 	public String getOrderStatusDesc( ) {
 		return this.orderStatusDesc;
+	}
+
+	public void setOutPrizeId(String outPrizeId) {
+		this.outPrizeId = outPrizeId;
+	}
+	public String getOutPrizeId( ) {
+		return this.outPrizeId;
+	}
+
+	public void setPrizeId(String prizeId) {
+		this.prizeId = prizeId;
+	}
+	public String getPrizeId( ) {
+		return this.prizeId;
 	}
 
 }

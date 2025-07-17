@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.ai.cv.rs.vector.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-28 14:41:56
+ * @since 1.0, 2025-07-07 16:53:21
  */
 public class AnttechAiCvRsVectorQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3539938433445868565L;
+	private static final long serialVersionUID = 3222947974373728293L;
 
 	/** 
 	 * 碳汇地块信息

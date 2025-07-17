@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenPublicTemplateMessageGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6712336319749769813L;
+	private static final long serialVersionUID = 1279764385772871537L;
 
 	/**
 	 * 消息母板id，登陆生活号后台(fuwu.alipay.com)，点击菜单“模板消息”，点击“模板库”，即可看到相应模板的消息母板id

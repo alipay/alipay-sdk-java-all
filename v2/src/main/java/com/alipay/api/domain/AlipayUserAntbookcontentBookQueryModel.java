@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayUserAntbookcontentBookQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2451298351747424725L;
+	private static final long serialVersionUID = 7673837289267381275L;
 
 	/**
 	 * 最新版本审核状态，用做过滤。如果传入AUDIT_REJECT，则只返回审核失败的书籍

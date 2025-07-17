@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 设备绑定需要的额外信息
  *
  * @author auto create
- * @since 1.0, 2025-05-27 10:57:19
+ * @since 1.0, 2025-07-16 20:07:34
  */
 public class DeviceExtAttribute extends AlipayObject {
 
-	private static final long serialVersionUID = 3232186846911327367L;
+	private static final long serialVersionUID = 4623758627991663576L;
+
+	/**
+	 * 设备外挂配件的SN号，仅设备有外挂配件时需要传
+	 */
+	@ApiField("accessory_sn")
+	private String accessorySn;
 
 	/**
 	 * 商家编号，由服务商定义，需要保证在服务商下唯一
@@ -84,6 +90,13 @@ public class DeviceExtAttribute extends AlipayObject {
 	 */
 	@ApiField("terminal_bind_info")
 	private String terminalBindInfo;
+
+	public String getAccessorySn() {
+		return this.accessorySn;
+	}
+	public void setAccessorySn(String accessorySn) {
+		this.accessorySn = accessorySn;
+	}
 
 	public String getExternalId() {
 		return this.externalId;

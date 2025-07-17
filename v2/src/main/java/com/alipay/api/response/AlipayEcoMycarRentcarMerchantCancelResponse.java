@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoMycarRentcarMerchantCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1369269157791963344L;
+	private static final long serialVersionUID = 5842221241734265154L;
 
 	
 

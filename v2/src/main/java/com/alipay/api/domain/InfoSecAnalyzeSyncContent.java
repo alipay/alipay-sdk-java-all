@@ -12,7 +12,7 @@ data内容可以包含几类: 文本，图片，视频，音频
  */
 public class InfoSecAnalyzeSyncContent extends AlipayObject {
 
-	private static final long serialVersionUID = 5323783536866713632L;
+	private static final long serialVersionUID = 6478916265696492682L;
 
 	/**
 	 * 业务id

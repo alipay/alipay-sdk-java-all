@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ConsumerLoanBillInfoItem extends AlipayObject {
 
-	private static final long serialVersionUID = 2364394114318261427L;
+	private static final long serialVersionUID = 6276832772629722722L;
 
 	/**
 	 * 可提前还款的日期，日期格式为YYYY-MM-DD hh:mm:ss

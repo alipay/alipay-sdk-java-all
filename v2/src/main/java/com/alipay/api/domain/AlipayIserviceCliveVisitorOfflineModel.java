@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayIserviceCliveVisitorOfflineModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5174683881444421182L;
+	private static final long serialVersionUID = 2262111242177439194L;
 
 	/**
 	 * 访客id

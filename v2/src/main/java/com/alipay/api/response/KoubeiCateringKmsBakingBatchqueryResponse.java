@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiCateringKmsBakingBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3243766177792224615L;
+	private static final long serialVersionUID = 6171714222114789245L;
 
 	/** 
 	 * 烘焙商品销量预测

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 问诊订单状态同步-扩展信息
  *
  * @author auto create
- * @since 1.0, 2025-06-30 16:14:40
+ * @since 1.0, 2025-07-16 16:28:43
  */
 public class PlatformInquiryOrderStatusExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4356467475612429152L;
+	private static final long serialVersionUID = 2281391696294436118L;
 
 	/**
 	 * 支付宝交易号
@@ -76,6 +76,12 @@ public class PlatformInquiryOrderStatusExtInfo extends AlipayObject {
 	 */
 	@ApiField("doctor_title")
 	private String doctorTitle;
+
+	/**
+	 * 医生类型，判断医生属于家庭医生还是专科医生
+	 */
+	@ApiField("doctor_type")
+	private String doctorType;
 
 	/**
 	 * 是否首次回复
@@ -249,6 +255,13 @@ TIMEOUT_END：超时结束
 	}
 	public void setDoctorTitle(String doctorTitle) {
 		this.doctorTitle = doctorTitle;
+	}
+
+	public String getDoctorType() {
+		return this.doctorType;
+	}
+	public void setDoctorType(String doctorType) {
+		this.doctorType = doctorType;
 	}
 
 	public Boolean getFirstReply() {

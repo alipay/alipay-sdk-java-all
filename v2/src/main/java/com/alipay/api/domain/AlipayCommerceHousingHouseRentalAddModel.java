@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租房新增
  *
  * @author auto create
- * @since 1.0, 2025-05-19 15:12:27
+ * @since 1.0, 2025-07-08 19:52:30
  */
 public class AlipayCommerceHousingHouseRentalAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8566424735917283966L;
+	private static final long serialVersionUID = 3572442692124549955L;
 
 	/**
 	 * null

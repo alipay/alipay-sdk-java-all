@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 直付通c2c进件接口
  *
  * @author auto create
- * @since 1.0, 2025-06-27 18:56:03
+ * @since 1.0, 2025-07-15 11:32:20
  */
 public class AntMerchantExpandIndirectZftforcCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6867947768871823896L;
+	private static final long serialVersionUID = 1283129478911829581L;
 
 	/**
 	 * 支付宝收银台及账单中的商户名称会展示此处设置的别名。如果涉及支付宝APP内的支付，支付结果页也会展示该别名；如果涉及线下当面付场景，请填写线下店铺名称
@@ -84,6 +84,12 @@ public class AntMerchantExpandIndirectZftforcCreateModel extends AlipayObject {
 	@ApiListField("service")
 	@ApiField("string")
 	private List<String> service;
+
+	/**
+	 * 二级商户与服务商的签约时间
+	 */
+	@ApiField("sign_time_with_isv")
+	private String signTimeWithIsv;
 
 	/**
 	 * 商户站点信息，包括网站、app、小程序。商户使用服务包含电脑支付、wap支付时，必须填充一个类型为01(网站)的SiteInfo对象，site_type/site_url/site_name必填；当包含app支付时，必须至少填充类型为02(APP)或06(支付宝小程序)中一种类型的SiteInfo对象，site_type/site_name必填；当包含jsapi支付时，必须填充一个类型为06(支付宝小程序)的SiteInfo对象；
@@ -173,6 +179,13 @@ public class AntMerchantExpandIndirectZftforcCreateModel extends AlipayObject {
 	}
 	public void setService(List<String> service) {
 		this.service = service;
+	}
+
+	public String getSignTimeWithIsv() {
+		return this.signTimeWithIsv;
+	}
+	public void setSignTimeWithIsv(String signTimeWithIsv) {
+		this.signTimeWithIsv = signTimeWithIsv;
 	}
 
 	public List<SiteInfo> getSites() {

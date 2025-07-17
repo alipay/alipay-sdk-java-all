@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询单元列表
  *
  * @author auto create
- * @since 1.0, 2025-05-12 16:15:00
+ * @since 1.0, 2025-07-15 19:27:43
  */
 public class AlipayDataDataserviceAdcampaignGroupBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1342667718533523813L;
+	private static final long serialVersionUID = 5467329753418487962L;
 
 	/**
 	 * 出价方式类型
@@ -43,9 +43,6 @@ public class AlipayDataDataserviceAdcampaignGroupBatchqueryModel extends AlipayO
 
 	/**
 	 * 二级营销目标code。
-注意事项：层级关系和投放平台层级关系保持一致。
-1.销售线索收集（一级）:tag000001，销售线索收集（二级）tag200600
-2.自定义投放（一级）tag000004，自定义投放（二级）tag902001
 	 */
 	@ApiField("market_target_code")
 	private String marketTargetCode;

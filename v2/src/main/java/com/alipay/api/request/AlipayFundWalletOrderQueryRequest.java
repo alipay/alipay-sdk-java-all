@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.wallet.order.query request
  * 
  * @author auto create
- * @since 1.0, 2025-06-18 09:37:30
+ * @since 1.0, 2025-07-14 13:41:14
  */
 public class AlipayFundWalletOrderQueryRequest implements AlipayRequest<AlipayFundWalletOrderQueryResponse> {
 

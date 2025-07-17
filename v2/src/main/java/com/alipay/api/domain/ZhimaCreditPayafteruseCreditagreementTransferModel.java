@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 转换为芝麻先用后付
  *
  * @author auto create
- * @since 1.0, 2025-01-14 17:09:56
+ * @since 1.0, 2025-07-16 16:33:37
  */
 public class ZhimaCreditPayafteruseCreditagreementTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2676421347819472521L;
+	private static final long serialVersionUID = 1428665517496424667L;
 
 	/**
 	 * 芝麻外部类目

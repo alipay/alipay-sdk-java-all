@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayUserAntbooksSoundQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3255725784187793663L;
+	private static final long serialVersionUID = 2273716533512641812L;
 
 	/**
 	 * 最新版本审核状态，用做过滤。如果传入AUDIT_REJECT，则只返回审核失败的声音

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 设备解绑
  *
  * @author auto create
- * @since 1.0, 2025-02-10 14:48:21
+ * @since 1.0, 2025-07-11 14:27:48
  */
 public class AlipayOfflineProviderCollaborateDeviceUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3222416825329179228L;
+	private static final long serialVersionUID = 6242563238234586228L;
 
 	/**
 	 * 设备SN

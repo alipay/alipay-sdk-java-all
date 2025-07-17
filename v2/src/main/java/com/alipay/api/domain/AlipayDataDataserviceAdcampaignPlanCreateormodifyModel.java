@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 计划新增或修改
  *
  * @author auto create
- * @since 1.0, 2025-05-12 16:14:57
+ * @since 1.0, 2025-07-15 17:18:43
  */
 public class AlipayDataDataserviceAdcampaignPlanCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2419771459441998391L;
+	private static final long serialVersionUID = 8298843165531362797L;
 
 	/**
 	 * 计划日预算，单位元【人民币】
@@ -30,6 +30,12 @@ public class AlipayDataDataserviceAdcampaignPlanCreateormodifyModel extends Alip
 	 */
 	@ApiField("market_target_code")
 	private String marketTargetCode;
+
+	/**
+	 * 营销目标配置
+	 */
+	@ApiField("market_target_config")
+	private MarketTargetConfiguration marketTargetConfig;
 
 	/**
 	 * 计划id
@@ -55,6 +61,12 @@ OFF：开启计划日预算（计划日预算字段必填）
 	 */
 	@ApiField("principal_tag")
 	private String principalTag;
+
+	/**
+	 * 冻结单id
+	 */
+	@ApiField("rtb_freeze_order_id")
+	private String rtbFreezeOrderId;
 
 	/**
 	 * 计划开始投放日期，格式为yyyy-MM-dd，新增或者编辑时有改动必须大于等于今天
@@ -90,6 +102,13 @@ OFF：开启计划日预算（计划日预算字段必填）
 		this.marketTargetCode = marketTargetCode;
 	}
 
+	public MarketTargetConfiguration getMarketTargetConfig() {
+		return this.marketTargetConfig;
+	}
+	public void setMarketTargetConfig(MarketTargetConfiguration marketTargetConfig) {
+		this.marketTargetConfig = marketTargetConfig;
+	}
+
 	public Long getPlanId() {
 		return this.planId;
 	}
@@ -116,6 +135,13 @@ OFF：开启计划日预算（计划日预算字段必填）
 	}
 	public void setPrincipalTag(String principalTag) {
 		this.principalTag = principalTag;
+	}
+
+	public String getRtbFreezeOrderId() {
+		return this.rtbFreezeOrderId;
+	}
+	public void setRtbFreezeOrderId(String rtbFreezeOrderId) {
+		this.rtbFreezeOrderId = rtbFreezeOrderId;
 	}
 
 	public String getStartDate() {

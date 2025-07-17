@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单状态查询
  *
  * @author auto create
- * @since 1.0, 2025-04-11 14:53:03
+ * @since 1.0, 2025-07-16 19:33:47
  */
 public class AlipayOfflinePaysaasOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4439634834572994343L;
+	private static final long serialVersionUID = 1433282796852787635L;
 
 	/**
 	 * 收款订单投送N手持设备ID

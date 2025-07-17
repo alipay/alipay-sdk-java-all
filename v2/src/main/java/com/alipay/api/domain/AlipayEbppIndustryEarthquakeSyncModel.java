@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 地震预警信息同步
  *
  * @author auto create
- * @since 1.0, 2025-06-04 17:41:12
+ * @since 1.0, 2025-07-09 14:50:58
  */
 public class AlipayEbppIndustryEarthquakeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7683211888468158213L;
+	private static final long serialVersionUID = 6586325819255263831L;
 
 	/**
 	 * 六位adcode

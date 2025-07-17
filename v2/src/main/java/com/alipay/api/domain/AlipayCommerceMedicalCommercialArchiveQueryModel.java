@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗行业查询会员受益人列表
  *
  * @author auto create
- * @since 1.0, 2025-06-18 11:11:40
+ * @since 1.0, 2025-07-11 10:17:46
  */
 public class AlipayCommerceMedicalCommercialArchiveQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7539979483567725832L;
+	private static final long serialVersionUID = 1681859449768386456L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识

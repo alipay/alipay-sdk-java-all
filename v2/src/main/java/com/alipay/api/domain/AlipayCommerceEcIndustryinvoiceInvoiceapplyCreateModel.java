@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付可开票开票申请创建
  *
  * @author auto create
- * @since 1.0, 2025-06-18 22:39:09
+ * @since 1.0, 2025-07-09 16:26:26
  */
 public class AlipayCommerceEcIndustryinvoiceInvoiceapplyCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2715353142828311246L;
+	private static final long serialVersionUID = 6827331742144714122L;
 
 	/**
 	 * 购买方地址
@@ -70,6 +70,12 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyCreateModel extends Alip
 	 */
 	@ApiField("invoice_kind")
 	private String invoiceKind;
+
+	/**
+	 * 红冲原因
+	 */
+	@ApiField("invoice_red_reason")
+	private String invoiceRedReason;
 
 	/**
 	 * 发票类型
@@ -182,6 +188,13 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyCreateModel extends Alip
 	}
 	public void setInvoiceKind(String invoiceKind) {
 		this.invoiceKind = invoiceKind;
+	}
+
+	public String getInvoiceRedReason() {
+		return this.invoiceRedReason;
+	}
+	public void setInvoiceRedReason(String invoiceRedReason) {
+		this.invoiceRedReason = invoiceRedReason;
 	}
 
 	public String getInvoiceType() {

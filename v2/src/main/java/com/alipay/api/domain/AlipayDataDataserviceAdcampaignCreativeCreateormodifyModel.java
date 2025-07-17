@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创意新增或者编辑
  *
  * @author auto create
- * @since 1.0, 2025-05-12 16:15:05
+ * @since 1.0, 2025-07-15 19:51:26
  */
 public class AlipayDataDataserviceAdcampaignCreativeCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7237762843698329653L;
+	private static final long serialVersionUID = 2889743914471478678L;
 
 	/**
 	 * 创意交互动作属性集合，根据接入文档落地页参数配置来补充相关字段

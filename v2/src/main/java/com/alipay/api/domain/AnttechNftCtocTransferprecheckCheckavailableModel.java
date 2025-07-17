@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 鲸探提供藏品秒转调用第三方校验交易安全接口
  *
  * @author auto create
- * @since 1.0, 2025-07-02 21:07:11
+ * @since 1.0, 2025-07-08 15:23:52
  */
 public class AnttechNftCtocTransferprecheckCheckavailableModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3568855445767251661L;
+	private static final long serialVersionUID = 6233145947472266441L;
 
 	/**
 	 * 藏品上架时间

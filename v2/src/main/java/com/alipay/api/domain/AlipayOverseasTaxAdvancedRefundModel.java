@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOverseasTaxAdvancedRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1169251665457989933L;
+	private static final long serialVersionUID = 8675518461976651858L;
 
 	/**
 	 * 支付宝退税资金订单号

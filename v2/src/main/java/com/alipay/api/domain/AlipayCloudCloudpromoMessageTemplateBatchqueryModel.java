@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCloudCloudpromoMessageTemplateBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2461221541662849526L;
+	private static final long serialVersionUID = 1624339795747332775L;
 
 	/**
 	 * 展示第几页的模板信息。默认取值为1。

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudHoloinsightMicroappMetricQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1222748362764972834L;
+	private static final long serialVersionUID = 1252876468165252839L;
 
 	/** 
 	 * 时序数据

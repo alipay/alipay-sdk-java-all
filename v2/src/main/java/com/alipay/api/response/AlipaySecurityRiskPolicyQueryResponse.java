@@ -1,6 +1,8 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,17 +10,24 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.policy.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-02 11:12:26
+ * @since 1.0, 2025-07-09 13:57:30
  */
 public class AlipaySecurityRiskPolicyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4391741786919251716L;
+	private static final long serialVersionUID = 5416634515463995566L;
 
 	/** 
 	 * 是否出二次核身的标识
 	 */
 	@ApiField("has_to_check")
 	private Boolean hasToCheck;
+
+	/** 
+	 * 参数主要描述安全内部不透出对外的系统状态，相当于是标
+	 */
+	@ApiListField("inner_system_code")
+	@ApiField("string")
+	private List<String> innerSystemCode;
 
 	/** 
 	 * 风险咨询情况下返回的风险等级，风险处理不会返回该值
@@ -73,6 +82,13 @@ public class AlipaySecurityRiskPolicyQueryResponse extends AlipayResponse {
 	}
 	public Boolean getHasToCheck( ) {
 		return this.hasToCheck;
+	}
+
+	public void setInnerSystemCode(List<String> innerSystemCode) {
+		this.innerSystemCode = innerSystemCode;
+	}
+	public List<String> getInnerSystemCode( ) {
+		return this.innerSystemCode;
 	}
 
 	public void setLevel(Long level) {

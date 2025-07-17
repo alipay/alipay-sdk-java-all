@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenMiniWidgetGoodsModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5522951623493866847L;
+	private static final long serialVersionUID = 4873876598889365187L;
 
 	/** 
 	 * 商品修改返回的提交ID，用于查询商品信息的审核状态

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.commercial.shopstaff.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-26 10:09:59
+ * @since 1.0, 2025-07-14 16:17:32
  */
 public class AlipayCommerceMedicalCommercialShopstaffBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6629699839573787619L;
+	private static final long serialVersionUID = 7615799914266888761L;
 
 	/** 
 	 * 门店店员列表

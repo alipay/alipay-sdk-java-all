@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.checkin.record.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-09 10:02:28
+ * @since 1.0, 2025-07-16 16:47:33
  */
 public class AlipayCommerceEducateCheckinRecordBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4827351976783649999L;
+	private static final long serialVersionUID = 3388446951536684845L;
 
 	/** 
 	 * 签到记录列表

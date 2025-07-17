@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.order.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-17 16:22:30
+ * @since 1.0, 2025-07-10 14:32:58
  */
 public class AlipayOpenMiniOrderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4741399363935769968L;
+	private static final long serialVersionUID = 8855924728742578693L;
 
 	/** 
 	 * 芝麻信用创单相关参数

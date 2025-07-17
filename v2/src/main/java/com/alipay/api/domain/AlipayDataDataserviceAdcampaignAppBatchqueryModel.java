@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询小程序信息
  *
  * @author auto create
- * @since 1.0, 2025-05-12 17:40:06
+ * @since 1.0, 2025-07-14 20:59:26
  */
 public class AlipayDataDataserviceAdcampaignAppBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7824531944143222185L;
+	private static final long serialVersionUID = 6233471311369577649L;
 
 	/**
 	 * 选择的创意交互动作类型需从接口获取，该字段类型从前置模版配置接口获取当前创意可提交的落地页类型 alipay.data.dataservice.adcampaign.actionandtemplate.query

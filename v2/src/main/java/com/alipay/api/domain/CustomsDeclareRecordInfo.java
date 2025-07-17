@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 报关记录详情数据结构
  *
  * @author auto create
- * @since 1.0, 2022-07-29 14:54:45
+ * @since 1.0, 2025-07-15 16:41:26
  */
 public class CustomsDeclareRecordInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2261925865868827979L;
+	private static final long serialVersionUID = 5231439473739955556L;
 
 	/**
 	 * 支付宝报关流水号。
@@ -32,21 +32,20 @@ public class CustomsDeclareRecordInfo extends AlipayObject {
 	private String customsPlace;
 
 	/**
-	 * 发起报关后，海关返回回执中的结果码。目前只有总署的报关，并且总署回执接收成功的请求才会返回此参数
-2：电子口岸申报中
-3：发送海关成功
-4：发送海关失败
-100：海关退单
-399：海关审结
+	 * 发起报关后，海关返回回执中的结果码。总署回执接收成功的请求透传总署参数，其它海关成功时返回 succ，异常时返回 fail
+支付宝原样返回总署返回的数据，参数值以海关的定义为准，总署回执参数参考如下：
+ 2：电子口岸申报中
+ 3：发送海关成功
+ 4：发送海关失败 
+100：海关退单 
+399：海关审结 
 小于0的数字：表示处理异常回执
-   注意：
-支付宝原样返回海关返回的数据，参数值以海关的定义为准。
 	 */
 	@ApiField("customs_result_code")
 	private String customsResultCode;
 
 	/**
-	 * 发起报关后，海关返回回执中的结果描述信息。目前只有总署报关，并且总署成功返回回执的时候会有此值
+	 * 发起报关后，海关返回回执中的结果描述信息。
 	 */
 	@ApiField("customs_result_info")
 	private String customsResultInfo;

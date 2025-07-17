@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenPublicMessageContentCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8643889757481687143L;
+	private static final long serialVersionUID = 3213413578591742726L;
 
 	/**
 	 * 活动利益点，最多10个字符。仅 ctype 为 activity 类型时才需传入。

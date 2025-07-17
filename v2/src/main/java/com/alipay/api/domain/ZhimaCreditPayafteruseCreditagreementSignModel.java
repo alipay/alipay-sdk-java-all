@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 先用后付记签约
  *
  * @author auto create
- * @since 1.0, 2025-01-02 14:32:06
+ * @since 1.0, 2025-07-16 16:35:29
  */
 public class ZhimaCreditPayafteruseCreditagreementSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5248416491437597857L;
+	private static final long serialVersionUID = 7165499342561738965L;
 
 	/**
 	 * 当用户进入信用服务开通/授权页面后，点击左上角的回退按钮，中断开通流程，跳转回商户的页面地址。支持scheme协议。不传该链接时，默认返回上一级页面，由外部app唤起支付宝的情况，会返回支付宝首页。

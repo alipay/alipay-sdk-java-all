@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.earthquake.sync response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-04 17:41:12
+ * @since 1.0, 2025-07-09 14:50:58
  */
 public class AlipayEbppIndustryEarthquakeSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4269582251894724138L;
+	private static final long serialVersionUID = 5126241226375597312L;
 
 	
 

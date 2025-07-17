@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.ai.cv.rs.xytile.get request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 02:36:58
+ * @since 1.0, 2025-07-07 16:53:23
  */
 public class AnttechAiCvRsXytileGetRequest implements AlipayRequest<AnttechAiCvRsXytileGetResponse> {
 

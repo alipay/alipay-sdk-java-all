@@ -5,6 +5,7 @@ import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.OpenLbsEntry;
+import com.alipay.api.domain.SearchWord;
 
 import com.alipay.api.AlipayResponse;
 
@@ -12,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.adcampaign.group.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-01 11:43:07
+ * @since 1.0, 2025-07-14 21:02:34
  */
 public class AlipayDataDataserviceAdcampaignGroupQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6852266989153225755L;
+	private static final long serialVersionUID = 3398965816414896683L;
 
 	/** 
 	 * 年龄
@@ -202,7 +203,7 @@ public class AlipayDataDataserviceAdcampaignGroupQueryResponse extends AlipayRes
 	private List<OpenLbsEntry> lbsList;
 
 	/** 
-	 * 二级营销目标code
+	 * 二级营销目标
 	 */
 	@ApiField("market_target_code")
 	private String marketTargetCode;
@@ -245,6 +246,12 @@ public class AlipayDataDataserviceAdcampaignGroupQueryResponse extends AlipayRes
 	private Long principalId;
 
 	/** 
+	 * 是否开启推荐流量开关.0关闭，1开启
+	 */
+	@ApiField("referral_traffic_switch")
+	private Long referralTrafficSwitch;
+
+	/** 
 	 * 地理位置-行政区域，行政区域编码和省市区县对应关系见<a href="https://www.mca.gov.cn/mzsj/xzqh/2022/202201xzqh.html">文档</a>
 	 */
 	@ApiListField("region_list")
@@ -264,10 +271,23 @@ public class AlipayDataDataserviceAdcampaignGroupQueryResponse extends AlipayRes
 	private String sceneCode;
 
 	/** 
+	 * 搜索词列表
+	 */
+	@ApiListField("search_word_list")
+	@ApiField("search_word")
+	private List<SearchWord> searchWordList;
+
+	/** 
 	 * 转化目标成本。单位：元【人民币】
 	 */
 	@ApiField("target_cpa")
 	private String targetCpa;
+
+	/** 
+	 * 目标ROI,单位：元【人民币】
+	 */
+	@ApiField("target_roi")
+	private String targetRoi;
 
 	/** 
 	 * 行业主题人群
@@ -528,6 +548,13 @@ public class AlipayDataDataserviceAdcampaignGroupQueryResponse extends AlipayRes
 		return this.principalId;
 	}
 
+	public void setReferralTrafficSwitch(Long referralTrafficSwitch) {
+		this.referralTrafficSwitch = referralTrafficSwitch;
+	}
+	public Long getReferralTrafficSwitch( ) {
+		return this.referralTrafficSwitch;
+	}
+
 	public void setRegionList(List<String> regionList) {
 		this.regionList = regionList;
 	}
@@ -549,11 +576,25 @@ public class AlipayDataDataserviceAdcampaignGroupQueryResponse extends AlipayRes
 		return this.sceneCode;
 	}
 
+	public void setSearchWordList(List<SearchWord> searchWordList) {
+		this.searchWordList = searchWordList;
+	}
+	public List<SearchWord> getSearchWordList( ) {
+		return this.searchWordList;
+	}
+
 	public void setTargetCpa(String targetCpa) {
 		this.targetCpa = targetCpa;
 	}
 	public String getTargetCpa( ) {
 		return this.targetCpa;
+	}
+
+	public void setTargetRoi(String targetRoi) {
+		this.targetRoi = targetRoi;
+	}
+	public String getTargetRoi( ) {
+		return this.targetRoi;
 	}
 
 	public void setThemeCrowdList(List<String> themeCrowdList) {

@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.security.knowledge.check response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-09 09:42:27
+ * @since 1.0, 2025-07-09 15:13:43
  */
 public class AlipayEbppIndustrySecurityKnowledgeCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3225577622662515353L;
+	private static final long serialVersionUID = 2863389355584637762L;
 
 	/** 
 	 * 检测未通过链接的索引列表

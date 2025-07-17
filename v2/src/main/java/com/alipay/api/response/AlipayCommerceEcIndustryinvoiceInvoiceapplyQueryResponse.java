@@ -1,5 +1,6 @@
 package com.alipay.api.response;
 
+import java.util.Date;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
@@ -13,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.industryinvoice.invoiceapply.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-23 18:22:28
+ * @since 1.0, 2025-07-11 09:37:30
  */
 public class AlipayCommerceEcIndustryinvoiceInvoiceapplyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8453792721324393275L;
+	private static final long serialVersionUID = 3838557863718233611L;
 
 	/** 
 	 * 购买方地址
@@ -68,7 +69,7 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyQueryResponse extends Al
 	private String imgFileUrl;
 
 	/** 
-	 * 发票总金额
+	 * 发票总金额，单位：元
 	 */
 	@ApiField("invoice_amount")
 	private String invoiceAmount;
@@ -84,6 +85,12 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyQueryResponse extends Al
 	 */
 	@ApiField("invoice_apply_id")
 	private String invoiceApplyId;
+
+	/** 
+	 * 开票时间
+	 */
+	@ApiField("invoice_date")
+	private Date invoiceDate;
 
 	/** 
 	 * 开票异常错误码
@@ -117,6 +124,12 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyQueryResponse extends Al
 	private String invoiceNo;
 
 	/** 
+	 * 红冲原因
+	 */
+	@ApiField("invoice_red_reason")
+	private String invoiceRedReason;
+
+	/** 
 	 * 开票状态
 	 */
 	@ApiField("invoice_status")
@@ -127,6 +140,12 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyQueryResponse extends Al
 	 */
 	@ApiField("invoice_tax_amount")
 	private String invoiceTaxAmount;
+
+	/** 
+	 * 发票类型
+	 */
+	@ApiField("invoice_type")
+	private String invoiceType;
 
 	/** 
 	 * 外部开票申请ID
@@ -152,6 +171,12 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyQueryResponse extends Al
 	@ApiListField("real_property_business_list")
 	@ApiField("industry_invoice_real_property_business")
 	private List<IndustryInvoiceRealPropertyBusiness> realPropertyBusinessList;
+
+	/** 
+	 * 关联蓝票发票号码
+	 */
+	@ApiField("related_blue_invoice_no")
+	private String relatedBlueInvoiceNo;
 
 	/** 
 	 * 销售方名称
@@ -255,6 +280,13 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyQueryResponse extends Al
 		return this.invoiceApplyId;
 	}
 
+	public void setInvoiceDate(Date invoiceDate) {
+		this.invoiceDate = invoiceDate;
+	}
+	public Date getInvoiceDate( ) {
+		return this.invoiceDate;
+	}
+
 	public void setInvoiceFailCode(String invoiceFailCode) {
 		this.invoiceFailCode = invoiceFailCode;
 	}
@@ -290,6 +322,13 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyQueryResponse extends Al
 		return this.invoiceNo;
 	}
 
+	public void setInvoiceRedReason(String invoiceRedReason) {
+		this.invoiceRedReason = invoiceRedReason;
+	}
+	public String getInvoiceRedReason( ) {
+		return this.invoiceRedReason;
+	}
+
 	public void setInvoiceStatus(String invoiceStatus) {
 		this.invoiceStatus = invoiceStatus;
 	}
@@ -302,6 +341,13 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyQueryResponse extends Al
 	}
 	public String getInvoiceTaxAmount( ) {
 		return this.invoiceTaxAmount;
+	}
+
+	public void setInvoiceType(String invoiceType) {
+		this.invoiceType = invoiceType;
+	}
+	public String getInvoiceType( ) {
+		return this.invoiceType;
 	}
 
 	public void setOuterApplyId(String outerApplyId) {
@@ -330,6 +376,13 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyQueryResponse extends Al
 	}
 	public List<IndustryInvoiceRealPropertyBusiness> getRealPropertyBusinessList( ) {
 		return this.realPropertyBusinessList;
+	}
+
+	public void setRelatedBlueInvoiceNo(String relatedBlueInvoiceNo) {
+		this.relatedBlueInvoiceNo = relatedBlueInvoiceNo;
+	}
+	public String getRelatedBlueInvoiceNo( ) {
+		return this.relatedBlueInvoiceNo;
 	}
 
 	public void setSellerName(String sellerName) {

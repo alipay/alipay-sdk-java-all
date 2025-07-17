@@ -9,17 +9,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.paysaas.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-14 16:52:26
+ * @since 1.0, 2025-07-16 19:37:30
  */
 public class AlipayOfflinePaysaasOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5729544762621634766L;
+	private static final long serialVersionUID = 4248738446426899187L;
 
 	/** 
 	 * 推单业务的唯一单号
 	 */
 	@ApiField("isv_order_no")
 	private String isvOrderNo;
+
+	/** 
+	 * 商户系统内唯一订单号，对isv为外部订单号
+	 */
+	@ApiField("merchant_order_no")
+	private String merchantOrderNo;
 
 	/** 
 	 * 收款订单状态，用于服务商收银机展示收款状态
@@ -44,6 +50,13 @@ public class AlipayOfflinePaysaasOrderQueryResponse extends AlipayResponse {
 	}
 	public String getIsvOrderNo( ) {
 		return this.isvOrderNo;
+	}
+
+	public void setMerchantOrderNo(String merchantOrderNo) {
+		this.merchantOrderNo = merchantOrderNo;
+	}
+	public String getMerchantOrderNo( ) {
+		return this.merchantOrderNo;
 	}
 
 	public void setOrderStatus(String orderStatus) {

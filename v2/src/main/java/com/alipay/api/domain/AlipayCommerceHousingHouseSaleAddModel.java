@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 二手房新增
  *
  * @author auto create
- * @since 1.0, 2025-05-19 15:12:27
+ * @since 1.0, 2025-07-08 19:57:32
  */
 public class AlipayCommerceHousingHouseSaleAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3165754111739815861L;
+	private static final long serialVersionUID = 1493151772458328645L;
 
 	/**
 	 * 卫生间数量，单位：个

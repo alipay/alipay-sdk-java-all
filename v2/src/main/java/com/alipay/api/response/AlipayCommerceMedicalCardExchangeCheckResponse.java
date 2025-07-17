@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.card.exchange.check response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-03 21:07:29
+ * @since 1.0, 2025-07-10 17:27:32
  */
 public class AlipayCommerceMedicalCardExchangeCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3189785248367396481L;
+	private static final long serialVersionUID = 6618946629521159694L;
 
 	/** 
 	 * 该手机号已开通过支付宝健康会员

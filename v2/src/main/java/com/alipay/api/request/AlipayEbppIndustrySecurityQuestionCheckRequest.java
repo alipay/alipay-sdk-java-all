@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.security.question.check request
  * 
  * @author auto create
- * @since 1.0, 2025-06-09 13:47:28
+ * @since 1.0, 2025-07-09 15:13:43
  */
 public class AlipayEbppIndustrySecurityQuestionCheckRequest implements AlipayRequest<AlipayEbppIndustrySecurityQuestionCheckResponse> {
 

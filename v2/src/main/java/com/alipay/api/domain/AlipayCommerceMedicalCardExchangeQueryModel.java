@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户兑换资格查询
  *
  * @author auto create
- * @since 1.0, 2025-07-07 15:57:11
+ * @since 1.0, 2025-07-10 13:57:47
  */
 public class AlipayCommerceMedicalCardExchangeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3464333779122384678L;
+	private static final long serialVersionUID = 4811228813664353883L;
 
 	/**
 	 * 会员卡流水ID

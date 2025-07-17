@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEcoCplifeNoticePublishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8118328699966112174L;
+	private static final long serialVersionUID = 4123362192261758682L;
 
 	/**
 	 * 待发布通知的目标物业小区ID列表，使用支付宝平台统一的小区ID编码。

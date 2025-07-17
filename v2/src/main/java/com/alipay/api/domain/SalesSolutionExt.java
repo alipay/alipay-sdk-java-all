@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SalesSolutionExt extends AlipayObject {
 
-	private static final long serialVersionUID = 4646141449716682413L;
+	private static final long serialVersionUID = 4235353968121335987L;
 
 	/**
 	 * 必须是数字格式，单位元，在使用全额付动态价格方案做卖进时，根据该字段传入该次卖进的价格。

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 物流信息模型
  *
  * @author auto create
- * @since 1.0, 2024-05-30 16:06:18
+ * @since 1.0, 2025-07-08 10:26:17
  */
 public class DeliveryInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6754238521177638671L;
+	private static final long serialVersionUID = 8727776258845383987L;
 
 	/**
 	 * 快递公司ID，物流公司ID列表请查看
@@ -22,6 +22,12 @@ public class DeliveryInfoVO extends AlipayObject {
 	 */
 	@ApiField("delivery_id")
 	private String deliveryId;
+
+	/**
+	 * 首次发货时间
+	 */
+	@ApiField("first_delivery_time")
+	private String firstDeliveryTime;
 
 	/**
 	 * 商品信息
@@ -41,6 +47,13 @@ public class DeliveryInfoVO extends AlipayObject {
 	}
 	public void setDeliveryId(String deliveryId) {
 		this.deliveryId = deliveryId;
+	}
+
+	public String getFirstDeliveryTime() {
+		return this.firstDeliveryTime;
+	}
+	public void setFirstDeliveryTime(String firstDeliveryTime) {
+		this.firstDeliveryTime = firstDeliveryTime;
 	}
 
 	public List<DeliveryItemInfoVO> getItemInfoList() {

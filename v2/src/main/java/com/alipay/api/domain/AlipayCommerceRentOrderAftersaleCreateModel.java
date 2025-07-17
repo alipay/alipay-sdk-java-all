@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租赁售后单创建
  *
  * @author auto create
- * @since 1.0, 2025-07-02 15:57:52
+ * @since 1.0, 2025-07-16 13:39:58
  */
 public class AlipayCommerceRentOrderAftersaleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6636424941178636377L;
+	private static final long serialVersionUID = 8444497571861477418L;
 
 	/**
 	 * 补充描述
@@ -66,7 +66,18 @@ public class AlipayCommerceRentOrderAftersaleCreateModel extends AlipayObject {
 	private String path;
 
 	/**
-	 * 用户发起售后原因
+	 * 订单费用项明细列表
+	 */
+	@ApiListField("pay_items")
+	@ApiField("aftersale_pay_item_v_o")
+	private List<AftersalePayItemVO> payItems;
+
+	/**
+	 * 用户发起售后原因，具体传入规则如下：
+1. 取消订单售后场景下，根据当前订单状态是「待发货」和「已发货」，可传入的原因类型不同：
+1.1. 已发货：可传入TIMEOUT_FOR_CONFIRM、LOGISTICS_ILLEGAL、REJECT_TO_CONFIRM、NO_NEED、BUYER_AGREED、OTHER；
+1.2. 待发货：可传入OTHER_CHANNEL_CHEAP、CHEAPER_ITEM、RENT_AMOUNT_OVER_PLAN、NO_NEED、NO_GOODS_OR_REJECT、NEED_TO_CHANGE_CHANNEL、NEED_TO_PAY_MANY_PERIOD_AMOUNT、CANNOT_CAONTACT_WITH_MERCHANT、OTHER。
+2. 赔付售后场景下，如果pay_items中金额类型为INDEMNITY，则可以传入ITEM_DAMAGED、ITEM_REPAIR、ITEM_LOST和ITEM_DEPRECIATION；如果金额类型为LATE_FEE，则可以传入RETURN_EARLY和RETURN_OVERDUE。
 	 */
 	@ApiField("reason_code")
 	private String reasonCode;
@@ -125,6 +136,13 @@ public class AlipayCommerceRentOrderAftersaleCreateModel extends AlipayObject {
 	}
 	public void setPath(String path) {
 		this.path = path;
+	}
+
+	public List<AftersalePayItemVO> getPayItems() {
+		return this.payItems;
+	}
+	public void setPayItems(List<AftersalePayItemVO> payItems) {
+		this.payItems = payItems;
 	}
 
 	public String getReasonCode() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付可开票查询结果商品明细
  *
  * @author auto create
- * @since 1.0, 2025-06-18 22:39:12
+ * @since 1.0, 2025-07-09 16:26:10
  */
 public class IndustryInvoiceItemInfoQueryRes extends AlipayObject {
 
-	private static final long serialVersionUID = 8585835779885555848L;
+	private static final long serialVersionUID = 7299911955963827941L;
 
 	/**
 	 * 优惠政策标识

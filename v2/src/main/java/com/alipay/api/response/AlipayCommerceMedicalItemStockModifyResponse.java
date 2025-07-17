@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMedicalItemStockModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4315974612561597482L;
+	private static final long serialVersionUID = 5627475193674946144L;
 
 	/** 
 	 * 该参数代表批量操作失败的列表，会具体返回失败的商品信息以及失败代码和失败原因。

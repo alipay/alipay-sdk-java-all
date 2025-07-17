@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CollectLimitRuleDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2839694961485327549L;
+	private static final long serialVersionUID = 6351524581762754348L;
 
 	/**
 	 * 1  就是一次

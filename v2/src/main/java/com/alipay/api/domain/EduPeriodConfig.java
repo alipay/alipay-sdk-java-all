@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EduPeriodConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 3456985379311456851L;
+	private static final long serialVersionUID = 6348434233426558936L;
 
 	/**
 	 * 课时结束时间，格式"HH:mm"

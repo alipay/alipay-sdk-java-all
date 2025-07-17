@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserMemberCitycardSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6775483191144977883L;
+	private static final long serialVersionUID = 1228391982481181693L;
 
 	/**
 	 * 支付宝用户的openid

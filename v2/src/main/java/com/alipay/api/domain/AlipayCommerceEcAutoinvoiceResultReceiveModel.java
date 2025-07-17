@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 自动开票开票结果接收
  *
  * @author auto create
- * @since 1.0, 2025-07-03 10:01:51
+ * @since 1.0, 2025-07-15 19:46:16
  */
 public class AlipayCommerceEcAutoinvoiceResultReceiveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5513749844962683346L;
+	private static final long serialVersionUID = 2123235519277173184L;
 
 	/**
 	 * 开票场景

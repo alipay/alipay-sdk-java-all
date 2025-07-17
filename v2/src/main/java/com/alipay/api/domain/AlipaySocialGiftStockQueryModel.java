@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipaySocialGiftStockQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4778223484239528687L;
+	private static final long serialVersionUID = 3535571642466775955L;
 
 	/**
 	 * 券码列表，商户体系内可兑换使用的券码。如果该值为空的话，则改接口会检查总库存和剩余可用库存。不为空则检查该列表中对应的卡码是否正确导入。

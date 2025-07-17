@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceEcCreditIsvwithdrawQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6248147864574222453L;
+	private static final long serialVersionUID = 8775999516234457172L;
 
 	/** 
 	 * 银行审核失败原因，情况状态为APPROVE_FAIL时必填

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.dtbank.crowd.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-07 11:52:30
+ * @since 1.0, 2025-07-09 13:52:33
  */
 public class AlipayUserDtbankCrowdCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2469779353869944759L;
+	private static final long serialVersionUID = 3335532473543915765L;
 
 	/** 
 	 * 创建时间

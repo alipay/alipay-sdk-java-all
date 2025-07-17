@@ -32,7 +32,7 @@ Alipay SDK for Java让您不用复杂编程即可访支付宝开放平台开放�
 <dependency>
     <groupId>com.alipay.sdk</groupId>
     <artifactId>alipay-sdk-java</artifactId>
-    <version>4.40.308.ALL</version>
+    <version>4.40.327.ALL</version>
 </dependency>
 ```
 
@@ -118,7 +118,7 @@ public class Main {
 <dependency>
     <groupId>com.alipay.sdk</groupId>
     <artifactId>alipay-sdk-java</artifactId>
-    <version>4.40.308.ALL</version>
+    <version>4.40.327.ALL</version>
 </dependency>
 ```
 

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签到记录
  *
  * @author auto create
- * @since 1.0, 2025-04-17 17:32:45
+ * @since 1.0, 2025-07-09 14:35:02
  */
 public class EduCheckInRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 2737778561232178928L;
+	private static final long serialVersionUID = 1228656737956839136L;
 
 	/**
 	 * 签到图片链接

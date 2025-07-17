@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量查询签到记录
  *
  * @author auto create
- * @since 1.0, 2025-06-09 09:57:56
+ * @since 1.0, 2025-07-16 16:44:38
  */
 public class AlipayCommerceEducateCheckinRecordBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8432144654829662816L;
+	private static final long serialVersionUID = 5423317176188694422L;
 
 	/**
 	 * 签到结束时间

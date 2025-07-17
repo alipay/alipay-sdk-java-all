@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipaySecurityRiskRiskprofileQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5177851288691537962L;
+	private static final long serialVersionUID = 8283751132648769313L;
 
 	/**
 	 * 请求来源，业务唯一标示；

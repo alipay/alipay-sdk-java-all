@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.card.exchange.check request
  * 
  * @author auto create
- * @since 1.0, 2025-07-03 21:07:29
+ * @since 1.0, 2025-07-10 17:27:32
  */
 public class AlipayCommerceMedicalCardExchangeCheckRequest implements AlipayRequest<AlipayCommerceMedicalCardExchangeCheckResponse> {
 

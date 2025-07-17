@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.recycle.order.merchant.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-25 14:47:31
+ * @since 1.0, 2025-07-14 15:22:31
  */
 public class AlipayCommerceRecycleOrderMerchantConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6179527852652183153L;
+	private static final long serialVersionUID = 3323873364489568439L;
 
 	
 

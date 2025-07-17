@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.housing.house.rental.add request
  * 
  * @author auto create
- * @since 1.0, 2025-05-19 15:12:27
+ * @since 1.0, 2025-07-08 19:52:30
  */
 public class AlipayCommerceHousingHouseRentalAddRequest implements AlipayRequest<AlipayCommerceHousingHouseRentalAddResponse> {
 

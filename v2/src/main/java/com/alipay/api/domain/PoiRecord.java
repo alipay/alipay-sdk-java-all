@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PoiRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 5455716899888133868L;
+	private static final long serialVersionUID = 2449518664473464538L;
 
 	/**
 	 * 图片

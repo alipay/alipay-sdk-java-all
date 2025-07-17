@@ -1,5 +1,7 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
@@ -7,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预授权信息
  *
  * @author auto create
- * @since 1.0, 2025-07-02 15:11:59
+ * @since 1.0, 2025-07-16 13:39:50
  */
 public class RentFundAuthFreezeInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5355724117141948565L;
+	private static final long serialVersionUID = 8362157823931471956L;
+
+	/**
+	 * 预授权冻结单号
+	 */
+	@ApiField("auth_no")
+	private String authNo;
 
 	/**
 	 * 预授权成功消息通知地址，商户可通过指定该地址监听支付宝侧预授权消息
@@ -30,6 +38,25 @@ public class RentFundAuthFreezeInfoVO extends AlipayObject {
 	 */
 	@ApiField("risk_assessment_price")
 	private String riskAssessmentPrice;
+
+	/**
+	 * 签约状态
+	 */
+	@ApiField("sign_status")
+	private String signStatus;
+
+	/**
+	 * 签约时间
+	 */
+	@ApiField("sign_time")
+	private Date signTime;
+
+	public String getAuthNo() {
+		return this.authNo;
+	}
+	public void setAuthNo(String authNo) {
+		this.authNo = authNo;
+	}
 
 	public String getFreezeNotifyUrl() {
 		return this.freezeNotifyUrl;
@@ -50,6 +77,20 @@ public class RentFundAuthFreezeInfoVO extends AlipayObject {
 	}
 	public void setRiskAssessmentPrice(String riskAssessmentPrice) {
 		this.riskAssessmentPrice = riskAssessmentPrice;
+	}
+
+	public String getSignStatus() {
+		return this.signStatus;
+	}
+	public void setSignStatus(String signStatus) {
+		this.signStatus = signStatus;
+	}
+
+	public Date getSignTime() {
+		return this.signTime;
+	}
+	public void setSignTime(Date signTime) {
+		this.signTime = signTime;
 	}
 
 }

@@ -2,6 +2,7 @@ package com.alipay.api.response;
 
 import java.util.Date;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.domain.CouponSendResult;
 
 import com.alipay.api.AlipayResponse;
 
@@ -9,17 +10,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.sideloansign.apply.querystatus response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-07 13:59:23
+ * @since 1.0, 2025-07-10 14:52:31
  */
 public class AlipayPcreditLoanSideloansignApplyQuerystatusResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7318132885814455195L;
+	private static final long serialVersionUID = 3595938667776854683L;
 
 	/** 
 	 * 冷静期类型，LONG-长，SHORT-短，NONE-无
 	 */
 	@ApiField("cool_off_type")
 	private String coolOffType;
+
+	/** 
+	 * 签约奖品发放结果
+	 */
+	@ApiField("coupon_send_result")
+	private CouponSendResult couponSendResult;
 
 	/** 
 	 * 授信成功后返回，授信总额度，单位元，保留两位小数
@@ -110,6 +117,13 @@ NEED_RETRY状态下，返回具体
 	}
 	public String getCoolOffType( ) {
 		return this.coolOffType;
+	}
+
+	public void setCouponSendResult(CouponSendResult couponSendResult) {
+		this.couponSendResult = couponSendResult;
+	}
+	public CouponSendResult getCouponSendResult( ) {
+		return this.couponSendResult;
 	}
 
 	public void setCreditQuota(String creditQuota) {

@@ -9,6 +9,7 @@ import com.alipay.api.domain.RentOrderDeliveryInfoVO;
 import com.alipay.api.domain.RentGoodsDetailInfoVO;
 import com.alipay.api.domain.RentPathInfoVO;
 import com.alipay.api.domain.RentOrderPriceInfoVO;
+import com.alipay.api.domain.RentPromoInfoVO;
 import com.alipay.api.domain.RentPlanInfoVO;
 import com.alipay.api.domain.RentSignInfoVO;
 import com.alipay.api.domain.RentOrderStatementInfoVO;
@@ -20,11 +21,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.rent.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-04 21:52:29
+ * @since 1.0, 2025-07-16 13:42:33
  */
 public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5299625318356122292L;
+	private static final long serialVersionUID = 4295642798682312159L;
 
 	/** 
 	 * 订单收货地址
@@ -98,6 +99,12 @@ public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("price_info")
 	private RentOrderPriceInfoVO priceInfo;
+
+	/** 
+	 * 优惠信息，包含分期优惠
+	 */
+	@ApiField("promo_info")
+	private RentPromoInfoVO promoInfo;
 
 	/** 
 	 * 租赁计划信息
@@ -224,6 +231,13 @@ public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 	}
 	public RentOrderPriceInfoVO getPriceInfo( ) {
 		return this.priceInfo;
+	}
+
+	public void setPromoInfo(RentPromoInfoVO promoInfo) {
+		this.promoInfo = promoInfo;
+	}
+	public RentPromoInfoVO getPromoInfo( ) {
+		return this.promoInfo;
 	}
 
 	public void setRentPlanInfo(RentPlanInfoVO rentPlanInfo) {

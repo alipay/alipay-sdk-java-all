@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudCloudpromoImageGenfromtextApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7348248119925172832L;
+	private static final long serialVersionUID = 6742326916911394775L;
 
 	/** 
 	 * 支付宝内部订单id，唯一

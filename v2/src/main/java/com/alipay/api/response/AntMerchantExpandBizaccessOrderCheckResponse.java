@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.bizaccess.order.check response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-11 11:32:29
+ * @since 1.0, 2025-07-14 19:47:33
  */
 public class AntMerchantExpandBizaccessOrderCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2347238187458565889L;
+	private static final long serialVersionUID = 2261878291623622865L;
 
 	/** 
 	 * 失败原因
@@ -24,11 +24,24 @@ public class AntMerchantExpandBizaccessOrderCheckResponse extends AlipayResponse
 	@ApiField("isv_biz_open_order_fail_reason")
 	private List<IsvBizOpenOrderFailReason> failReasons;
 
+	/** 
+	 * 业务开通主单号
+	 */
+	@ApiField("order_id")
+	private String orderId;
+
 	public void setFailReasons(List<IsvBizOpenOrderFailReason> failReasons) {
 		this.failReasons = failReasons;
 	}
 	public List<IsvBizOpenOrderFailReason> getFailReasons( ) {
 		return this.failReasons;
+	}
+
+	public void setOrderId(String orderId) {
+		this.orderId = orderId;
+	}
+	public String getOrderId( ) {
+		return this.orderId;
 	}
 
 }

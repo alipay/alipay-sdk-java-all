@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceEducateStudentIdentityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1396129255276278763L;
+	private static final long serialVersionUID = 4626962347266799337L;
 
 	/** 
 	 * 查询用户所在大学，查询商户需要商务层面申请此字段，且支付宝模型中存在此字段才能返回。

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataDataserviceMediaReportQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5547363155965148786L;
+	private static final long serialVersionUID = 2581562737113382592L;
 
 	/**
 	 * 广告位id
@@ -32,7 +32,7 @@ public class AlipayDataDataserviceMediaReportQueryModel extends AlipayObject {
 	private String endDate;
 
 	/**
-	 * 商家pid，非必填参数；type=AGENCY的情况可以传入
+	 * 商家pid，非必填参数；type=AGENCY的情况必须传入
 	 */
 	@ApiField("m_pid")
 	private String mPid;

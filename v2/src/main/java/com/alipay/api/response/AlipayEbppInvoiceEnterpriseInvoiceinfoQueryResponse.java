@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.enterprise.invoiceinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-27 15:22:31
+ * @since 1.0, 2025-07-16 10:07:32
  */
 public class AlipayEbppInvoiceEnterpriseInvoiceinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6567684532299243932L;
+	private static final long serialVersionUID = 3695173594399287991L;
 
 	/** 
 	 * 防伪码
@@ -58,6 +58,12 @@ public class AlipayEbppInvoiceEnterpriseInvoiceinfoQueryResponse extends AlipayR
 	 */
 	@ApiField("file_type")
 	private String fileType;
+
+	/** 
+	 * 发票预览图地址
+	 */
+	@ApiField("image_url")
+	private String imageUrl;
 
 	/** 
 	 * 特定行业信息，需要根据特定行业要素类型（specific_factor），获取<a href="https://opendocs.alipay.com/pre-open/07wr4t?pathHash=5d7c31e5#%E8%A1%8C%E4%B8%9A%E6%A8%A1%E5%9E%8B%E5%AE%9A%E4%B9%89">具体行业模型</a>
@@ -281,6 +287,13 @@ public class AlipayEbppInvoiceEnterpriseInvoiceinfoQueryResponse extends AlipayR
 	}
 	public String getFileType( ) {
 		return this.fileType;
+	}
+
+	public void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
+	}
+	public String getImageUrl( ) {
+		return this.imageUrl;
 	}
 
 	public void setIndustrySpecificInfos(List<String> industrySpecificInfos) {

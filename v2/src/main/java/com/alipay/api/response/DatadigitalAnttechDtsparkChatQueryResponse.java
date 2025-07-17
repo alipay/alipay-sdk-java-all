@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.anttech.dtspark.chat.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-26 10:22:24
+ * @since 1.0, 2025-07-09 16:33:34
  */
 public class DatadigitalAnttechDtsparkChatQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4779214298428212154L;
+	private static final long serialVersionUID = 7458645939163956568L;
 
 	/** 
 	 * 会话流式输出结果

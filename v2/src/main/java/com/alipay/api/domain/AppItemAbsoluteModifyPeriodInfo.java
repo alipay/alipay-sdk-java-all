@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AppItemAbsoluteModifyPeriodInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5513885559948329299L;
+	private static final long serialVersionUID = 5635968714236679165L;
 
 	/**
 	 * 可用结束时间格式：yyyy-MM-dd HH:mm:ss 匹配格式yyyy-MM-dd HH:mm:ss的date类型

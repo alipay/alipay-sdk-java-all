@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 公寓房源新增
  *
  * @author auto create
- * @since 1.0, 2025-04-14 11:17:28
+ * @since 1.0, 2025-07-08 19:52:30
  */
 public class AlipayCommerceHousingApartmentRentalAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4285636248975147415L;
+	private static final long serialVersionUID = 2578155228496346122L;
 
 	/**
 	 * 公寓id
@@ -92,9 +92,10 @@ public class AlipayCommerceHousingApartmentRentalAddModel extends AlipayObject {
 	private String status;
 
 	/**
-	 * 校验码
+	 * 校验码 当前字段已废弃(业务对字段调整，废弃该参数)
 	 */
 	@ApiField("verification_code")
+	@Deprecated
 	private String verificationCode;
 
 	public String getApartmentId() {

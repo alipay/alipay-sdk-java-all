@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁订单的分期计划
  *
  * @author auto create
- * @since 1.0, 2025-03-18 14:19:35
+ * @since 1.0, 2025-07-10 10:54:22
  */
 public class RentPlan extends AlipayObject {
 
-	private static final long serialVersionUID = 1812359796666873161L;
+	private static final long serialVersionUID = 4594913815321976272L;
 
 	/**
 	 * 实际还款时间
@@ -54,6 +54,12 @@ public class RentPlan extends AlipayObject {
 	 */
 	@ApiField("rent_price")
 	private String rentPrice;
+
+	/**
+	 * 商户同步的支付信息
+	 */
+	@ApiField("seller_sync_rent_pay_info")
+	private SellerSyncRentPayInfo sellerSyncRentPayInfo;
 
 	/**
 	 * 代表第几阶段的还款计划，要配合period锁定第几期还款计划
@@ -108,6 +114,13 @@ public class RentPlan extends AlipayObject {
 	}
 	public void setRentPrice(String rentPrice) {
 		this.rentPrice = rentPrice;
+	}
+
+	public SellerSyncRentPayInfo getSellerSyncRentPayInfo() {
+		return this.sellerSyncRentPayInfo;
+	}
+	public void setSellerSyncRentPayInfo(SellerSyncRentPayInfo sellerSyncRentPayInfo) {
+		this.sellerSyncRentPayInfo = sellerSyncRentPayInfo;
 	}
 
 	public Long getStage() {

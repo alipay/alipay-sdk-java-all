@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayZdataassetsMetadataResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3457971338914458631L;
+	private static final long serialVersionUID = 3725872621619397563L;
 
 	/** 
 	 * 用户标签集合

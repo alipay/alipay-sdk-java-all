@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 流量分销创单接口
  *
  * @author auto create
- * @since 1.0, 2025-06-04 10:41:55
+ * @since 1.0, 2025-07-15 16:59:32
  */
 public class AlipayCommerceAcommunicationDistributionFloworderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7552966278973979397L;
+	private static final long serialVersionUID = 7872941992941988762L;
+
+	/**
+	 * 用于标记支付宝用户在应用下的唯一标识
+	 */
+	@ApiField("alipay_user_id")
+	private String alipayUserId;
 
 	/**
 	 * 机构订单id
@@ -30,6 +36,12 @@ public class AlipayCommerceAcommunicationDistributionFloworderCreateModel extend
 	 */
 	@ApiField("mobile")
 	private String mobile;
+
+	/**
+	 * 用于标记支付宝用户在应用下的唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 支付类型
@@ -55,6 +67,13 @@ public class AlipayCommerceAcommunicationDistributionFloworderCreateModel extend
 	@ApiField("sms_code")
 	private String smsCode;
 
+	public String getAlipayUserId() {
+		return this.alipayUserId;
+	}
+	public void setAlipayUserId(String alipayUserId) {
+		this.alipayUserId = alipayUserId;
+	}
+
 	public String getInstOrderId() {
 		return this.instOrderId;
 	}
@@ -74,6 +93,13 @@ public class AlipayCommerceAcommunicationDistributionFloworderCreateModel extend
 	}
 	public void setMobile(String mobile) {
 		this.mobile = mobile;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getPayType() {

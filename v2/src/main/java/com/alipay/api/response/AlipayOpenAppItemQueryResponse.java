@@ -18,11 +18,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.item.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-27 15:58:31
+ * @since 1.0, 2025-07-14 11:42:31
  */
 public class AlipayOpenAppItemQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6598577973452697538L;
+	private static final long serialVersionUID = 6538223359815541516L;
 
 	/** 
 	 * 商品属性列表，kv形式
@@ -42,6 +42,12 @@ public class AlipayOpenAppItemQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("barcode")
 	private String barcode;
+
+	/** 
+	 * 商品业务模式，租赁业务模式包含（短租：0；长租：1；先租后买 ： 2）
+	 */
+	@ApiField("business_model")
+	private String businessModel;
 
 	/** 
 	 * 平台类目，填写的类目必须在类目表列出，多级类目只填最后一级。商品类目 ID 及信息可通过商品类目表获取。
@@ -223,6 +229,13 @@ public class AlipayOpenAppItemQueryResponse extends AlipayResponse {
 	}
 	public String getBarcode( ) {
 		return this.barcode;
+	}
+
+	public void setBusinessModel(String businessModel) {
+		this.businessModel = businessModel;
+	}
+	public String getBusinessModel( ) {
+		return this.businessModel;
 	}
 
 	public void setCategoryId(String categoryId) {

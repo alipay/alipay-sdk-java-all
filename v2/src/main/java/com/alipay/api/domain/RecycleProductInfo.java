@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 回收产品模型
  *
  * @author auto create
- * @since 1.0, 2025-05-29 22:24:26
+ * @since 1.0, 2025-07-08 11:35:06
  */
 public class RecycleProductInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7163767739283875515L;
+	private static final long serialVersionUID = 1655381997537137689L;
 
 	/**
 	 * 品牌code
@@ -29,14 +29,14 @@ public class RecycleProductInfo extends AlipayObject {
 	private String categoryCode;
 
 	/**
-	 * 实物金图片地址列表，图片url
+	 * 实物图片地址（公网图片地址）
 	 */
 	@ApiListField("entity_image_url_list")
 	@ApiField("string")
 	private List<String> entityImageUrlList;
 
 	/**
-	 * 发票图片地址列表，图片url
+	 * 发票图片地址（公网图片地址）
 	 */
 	@ApiListField("invoice_image_url_list")
 	@ApiField("string")
@@ -55,7 +55,7 @@ public class RecycleProductInfo extends AlipayObject {
 	private String productName;
 
 	/**
-	 * 商品重量。支持两位小数点。单位为克，在检测结果确认前传入预估克重。
+	 * 商品重量/数量。支持两位小数点。默认为1
 	 */
 	@ApiField("quantity")
 	private String quantity;
@@ -73,13 +73,13 @@ public class RecycleProductInfo extends AlipayObject {
 	private String quantityMin;
 
 	/**
-	 * 单位，默认为克
+	 * 单位，默认为piece
 	 */
 	@ApiField("unit")
 	private String unit;
 
 	/**
-	 * 商品价格，单位元。
+	 * 单位价格，支持两位小数点，价格单位为元
 	 */
 	@ApiField("unit_price")
 	private String unitPrice;
