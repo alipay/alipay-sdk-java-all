@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserGamepaycoinTradeorderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7498226716159371872L;
+	private static final long serialVersionUID = 6798966575154793355L;
 
 	/**
 	 * 开发者自定义订单号，在下单的时候传入的customId

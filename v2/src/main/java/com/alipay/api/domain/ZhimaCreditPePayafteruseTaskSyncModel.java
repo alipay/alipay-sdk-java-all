@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCreditPePayafteruseTaskSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5489368923348478157L;
+	private static final long serialVersionUID = 5591738712548192795L;
 
 	/**
 	 * 实际业务动作的发生时间，比如任务完成的业务时间

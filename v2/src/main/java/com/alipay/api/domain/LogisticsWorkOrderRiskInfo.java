@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LogisticsWorkOrderRiskInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5721528829449334277L;
+	private static final long serialVersionUID = 4234225431296471876L;
 
 	/**
 	 * 风控完成时间

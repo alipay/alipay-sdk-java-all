@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 处方详情
  *
  * @author auto create
- * @since 1.0, 2025-06-10 19:20:18
+ * @since 1.0, 2025-07-17 15:33:53
  */
 public class PrscVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8819999815786268527L;
+	private static final long serialVersionUID = 6862427433311413185L;
 
 	/**
 	 * 订单渠道
@@ -26,6 +26,36 @@ public class PrscVO extends AlipayObject {
 	 */
 	@ApiField("create_time")
 	private Date createTime;
+
+	/**
+	 * 用药人性别,1-男 2-女
+	 */
+	@ApiField("gender")
+	private Long gender;
+
+	/**
+	 * 用药人年龄,单位  天/月/岁
+	 */
+	@ApiField("patient_age")
+	private String patientAge;
+
+	/**
+	 * 用药人证件号
+	 */
+	@ApiField("patient_id_no")
+	private String patientIdNo;
+
+	/**
+	 * 用药人姓名
+	 */
+	@ApiField("patient_name")
+	private String patientName;
+
+	/**
+	 * 用药人联系号码
+	 */
+	@ApiField("patient_phone_no")
+	private String patientPhoneNo;
 
 	/**
 	 * 处方审核记录
@@ -105,6 +135,41 @@ public class PrscVO extends AlipayObject {
 	}
 	public void setCreateTime(Date createTime) {
 		this.createTime = createTime;
+	}
+
+	public Long getGender() {
+		return this.gender;
+	}
+	public void setGender(Long gender) {
+		this.gender = gender;
+	}
+
+	public String getPatientAge() {
+		return this.patientAge;
+	}
+	public void setPatientAge(String patientAge) {
+		this.patientAge = patientAge;
+	}
+
+	public String getPatientIdNo() {
+		return this.patientIdNo;
+	}
+	public void setPatientIdNo(String patientIdNo) {
+		this.patientIdNo = patientIdNo;
+	}
+
+	public String getPatientName() {
+		return this.patientName;
+	}
+	public void setPatientName(String patientName) {
+		this.patientName = patientName;
+	}
+
+	public String getPatientPhoneNo() {
+		return this.patientPhoneNo;
+	}
+	public void setPatientPhoneNo(String patientPhoneNo) {
+		this.patientPhoneNo = patientPhoneNo;
 	}
 
 	public PrescReview getPrescriReview() {

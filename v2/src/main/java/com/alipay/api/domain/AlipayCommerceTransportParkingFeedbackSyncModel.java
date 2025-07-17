@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 停车行程异常情况反馈
  *
  * @author auto create
- * @since 1.0, 2025-07-15 14:26:54
+ * @since 1.0, 2025-07-17 15:24:44
  */
 public class AlipayCommerceTransportParkingFeedbackSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2775311679578596892L;
+	private static final long serialVersionUID = 3234931353713517589L;
 
 	/**
 	 * 服务商对于支付宝提供的异常行程处理的结果

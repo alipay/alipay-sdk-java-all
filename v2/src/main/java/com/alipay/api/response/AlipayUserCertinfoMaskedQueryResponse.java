@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserCertinfoMaskedQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4567877851376589588L;
+	private static final long serialVersionUID = 8522283682577647197L;
 
 	/** 
 	 * 脱敏后的用户身份信息。【注意】如果入参中某一userId不存在，返回的视图列表中将不包含该userId对应视图。（举例：入参里10个userId，其中1个userId不存在，则出参列表里有9个视图）

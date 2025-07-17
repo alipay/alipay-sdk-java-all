@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceEcInvoiceMerchantproductApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1754281334859884764L;
+	private static final long serialVersionUID = 4232371129483783653L;
 
 	/**
 	 * 由外部系统（如合作伙伴平台或第三方服务）生成的唯一业务标识，用于关联外部系统的申请请求。

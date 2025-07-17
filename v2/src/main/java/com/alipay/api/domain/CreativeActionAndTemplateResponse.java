@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CreativeActionAndTemplateResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 4669582151915624446L;
+	private static final long serialVersionUID = 7593784375573661926L;
 
 	/**
 	 * 当前创建创意时可选择的交互类型集合,会根据挂载单元查询出对应所有创意模版对应的可选交互类型集合信息

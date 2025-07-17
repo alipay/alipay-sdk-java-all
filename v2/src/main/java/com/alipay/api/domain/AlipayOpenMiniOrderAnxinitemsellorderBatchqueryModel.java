@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniOrderAnxinitemsellorderBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3686364561451713783L;
+	private static final long serialVersionUID = 5471548564735215984L;
 
 	/**
 	 * 订单创建日期，格式为yyyy-MM-dd

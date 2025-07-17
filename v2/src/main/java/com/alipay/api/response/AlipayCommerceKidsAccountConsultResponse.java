@@ -17,7 +17,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceKidsAccountConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5416364192476546268L;
+	private static final long serialVersionUID = 4175884557787479938L;
 
 	/** 
 	 * 是否满足开户条件

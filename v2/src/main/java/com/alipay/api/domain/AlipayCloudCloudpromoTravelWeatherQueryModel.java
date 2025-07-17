@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCloudCloudpromoTravelWeatherQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1264495568445958451L;
+	private static final long serialVersionUID = 4397778776775329781L;
 
 	/**
 	 * 纬度

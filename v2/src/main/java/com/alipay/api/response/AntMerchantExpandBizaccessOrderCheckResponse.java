@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.bizaccess.order.check response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-14 19:47:33
+ * @since 1.0, 2025-07-17 18:52:31
  */
 public class AntMerchantExpandBizaccessOrderCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2261878291623622865L;
+	private static final long serialVersionUID = 6224955567654387135L;
 
 	/** 
 	 * 失败原因

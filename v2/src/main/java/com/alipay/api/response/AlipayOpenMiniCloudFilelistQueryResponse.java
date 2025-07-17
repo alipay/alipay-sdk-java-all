@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenMiniCloudFilelistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7742188739379694919L;
+	private static final long serialVersionUID = 7428493285529838328L;
 
 	/** 
 	 * 文件列表

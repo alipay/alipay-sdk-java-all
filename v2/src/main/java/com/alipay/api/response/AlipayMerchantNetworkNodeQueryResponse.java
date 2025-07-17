@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMerchantNetworkNodeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5167575169354791658L;
+	private static final long serialVersionUID = 4691384611347143241L;
 
 	/** 
 	 * 商家创建节点时需要携带的业务信息（比如地址）

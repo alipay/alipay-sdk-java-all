@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VoucherRefundDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1385417928691449456L;
+	private static final long serialVersionUID = 8732862137739444324L;
 
 	/**
 	 * 本次取消核销次数

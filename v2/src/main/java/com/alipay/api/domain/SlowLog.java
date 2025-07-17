@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SlowLog extends AlipayObject {
 
-	private static final long serialVersionUID = 6725933795337479783L;
+	private static final long serialVersionUID = 1446249746492145582L;
 
 	/**
 	 * 客户端IP

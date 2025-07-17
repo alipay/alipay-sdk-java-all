@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class WelfareForestPersonWaterDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8256626726311922723L;
+	private static final long serialVersionUID = 2587774174345786743L;
 
 	/**
 	 * 用户浇水次数，Long类型

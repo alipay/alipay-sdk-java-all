@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceSportsCheerResultConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2442999662371151636L;
+	private static final long serialVersionUID = 5762233557239747488L;
 
 	/**
 	 * 用户助威记录流水号

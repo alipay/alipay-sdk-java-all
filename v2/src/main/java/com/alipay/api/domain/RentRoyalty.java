@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁分账计划
  *
  * @author auto create
- * @since 1.0, 2025-05-22 10:04:46
+ * @since 1.0, 2025-07-17 16:44:56
  */
 public class RentRoyalty extends AlipayObject {
 
-	private static final long serialVersionUID = 3611287965112371817L;
+	private static final long serialVersionUID = 1727473345379963782L;
 
 	/**
 	 * 订单id
@@ -122,6 +122,18 @@ public class RentRoyalty extends AlipayObject {
 	 */
 	@ApiField("royalty_interest_price")
 	private String royaltyInterestPrice;
+
+	/**
+	 * 分账支付方式（for资方），到卡、到户或者部分到卡，部分到户
+	 */
+	@ApiField("royalty_payment_method")
+	private String royaltyPaymentMethod;
+
+	/**
+	 * 和royalty_payment_method配合使用。履约单号+"-到卡"或者+"到户"，多笔履约单号之前用“;”隔开。
+	 */
+	@ApiField("royalty_payment_method_note")
+	private String royaltyPaymentMethodNote;
 
 	/**
 	 * 分账金额，单位：元，精确到小数点后两位
@@ -301,6 +313,20 @@ public class RentRoyalty extends AlipayObject {
 	}
 	public void setRoyaltyInterestPrice(String royaltyInterestPrice) {
 		this.royaltyInterestPrice = royaltyInterestPrice;
+	}
+
+	public String getRoyaltyPaymentMethod() {
+		return this.royaltyPaymentMethod;
+	}
+	public void setRoyaltyPaymentMethod(String royaltyPaymentMethod) {
+		this.royaltyPaymentMethod = royaltyPaymentMethod;
+	}
+
+	public String getRoyaltyPaymentMethodNote() {
+		return this.royaltyPaymentMethodNote;
+	}
+	public void setRoyaltyPaymentMethodNote(String royaltyPaymentMethodNote) {
+		this.royaltyPaymentMethodNote = royaltyPaymentMethodNote;
 	}
 
 	public String getRoyaltyPrice() {

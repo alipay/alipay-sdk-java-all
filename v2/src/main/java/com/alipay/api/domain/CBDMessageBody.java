@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CBDMessageBody extends AlipayObject {
 
-	private static final long serialVersionUID = 8674695119653368595L;
+	private static final long serialVersionUID = 7745893785838235868L;
 
 	/**
 	 * 消息模板编号

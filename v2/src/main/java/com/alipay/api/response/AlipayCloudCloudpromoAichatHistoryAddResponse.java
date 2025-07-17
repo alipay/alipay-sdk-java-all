@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudCloudpromoAichatHistoryAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2775612623711955954L;
+	private static final long serialVersionUID = 4299847131294182323L;
 
 	/** 
 	 * 本次请求的的ID，可以用来查询历史记录

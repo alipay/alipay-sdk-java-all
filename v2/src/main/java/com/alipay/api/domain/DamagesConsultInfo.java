@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DamagesConsultInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1593228217359164516L;
+	private static final long serialVersionUID = 8354963837471788214L;
 
 	/**
 	 * 是否可以退卡

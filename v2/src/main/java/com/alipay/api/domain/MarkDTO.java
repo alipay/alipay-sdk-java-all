@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MarkDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6215678639417966657L;
+	private static final long serialVersionUID = 6439251996385952895L;
 
 	/**
 	 * null

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RentFundAuthFreezeInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8362157823931471956L;
+	private static final long serialVersionUID = 1879159584375421768L;
 
 	/**
 	 * 预授权冻结单号

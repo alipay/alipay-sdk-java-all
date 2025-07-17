@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 回收订单创建
  *
  * @author auto create
- * @since 1.0, 2025-07-03 14:13:31
+ * @since 1.0, 2025-07-17 13:45:28
  */
 public class AlipayCommerceRecycleOutOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8534717796253424578L;
+	private static final long serialVersionUID = 6868499996983394461L;
 
 	/**
 	 * 地址信息

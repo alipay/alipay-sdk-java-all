@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SsdataDataserviceDtevalIdentitycheckQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5443856363275266377L;
+	private static final long serialVersionUID = 3845822754482413816L;
 
 	/**
 	 * 工单流水号

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudCloudpromoContractFormInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1532248272755756287L;
+	private static final long serialVersionUID = 2459155468412658331L;
 
 	/** 
 	 * 最早起租时间(单位 天)

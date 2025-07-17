@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CardRejectReasonInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4219571411873339218L;
+	private static final long serialVersionUID = 6856943685934514957L;
 
 	/**
 	 * 驳回项
