@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BalanceAccountDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 2549197937224699356L;
+	private static final long serialVersionUID = 5517639653382778844L;
 
 	/**
 	 * acs余额，单位：元

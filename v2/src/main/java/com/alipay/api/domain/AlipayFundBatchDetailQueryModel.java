@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量代发明细统一查询接口
  *
  * @author auto create
- * @since 1.0, 2024-11-18 17:28:21
+ * @since 1.0, 2025-07-21 11:37:47
  */
 public class AlipayFundBatchDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7483129386131853229L;
+	private static final long serialVersionUID = 8422896137673163933L;
 
 	/**
 	 * 11～32位的数字或字母或数字与字母的组合，且区分大小写。（注：只有境外代发使用，其他场景请使用out_batch_no）

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 权益账户充值
  *
  * @author auto create
- * @since 1.0, 2025-05-25 11:07:10
+ * @since 1.0, 2025-07-21 15:38:40
  */
 public class AlipayMarketingBenefitaccountAccountPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6494246227194781178L;
+	private static final long serialVersionUID = 1479688482529641631L;
 
 	/**
 	 * 充值金额，单位元
@@ -46,16 +46,40 @@ public class AlipayMarketingBenefitaccountAccountPayModel extends AlipayObject {
 	private String extendInfo;
 
 	/**
+	 * 本次充值出资方
+	 */
+	@ApiField("fund_provider")
+	private String fundProvider;
+
+	/**
 	 * 出资账号用户ID
 	 */
 	@ApiField("fund_user_id")
 	private String fundUserId;
 
 	/**
+	 * 是否他人代付
+	 */
+	@ApiField("other_pay")
+	private Boolean otherPay;
+
+	/**
+	 * 代付人支付宝账号
+	 */
+	@ApiField("other_pay_fund_user_id")
+	private String otherPayFundUserId;
+
+	/**
 	 * 创建人用户ID
 	 */
 	@ApiField("publisher_user_id")
 	private String publisherUserId;
+
+	/**
+	 * 充值类型
+	 */
+	@ApiField("recharge_type")
+	private String rechargeType;
 
 	/**
 	 * 支付成功跳转url
@@ -98,6 +122,13 @@ public class AlipayMarketingBenefitaccountAccountPayModel extends AlipayObject {
 		this.extendInfo = extendInfo;
 	}
 
+	public String getFundProvider() {
+		return this.fundProvider;
+	}
+	public void setFundProvider(String fundProvider) {
+		this.fundProvider = fundProvider;
+	}
+
 	public String getFundUserId() {
 		return this.fundUserId;
 	}
@@ -105,11 +136,32 @@ public class AlipayMarketingBenefitaccountAccountPayModel extends AlipayObject {
 		this.fundUserId = fundUserId;
 	}
 
+	public Boolean getOtherPay() {
+		return this.otherPay;
+	}
+	public void setOtherPay(Boolean otherPay) {
+		this.otherPay = otherPay;
+	}
+
+	public String getOtherPayFundUserId() {
+		return this.otherPayFundUserId;
+	}
+	public void setOtherPayFundUserId(String otherPayFundUserId) {
+		this.otherPayFundUserId = otherPayFundUserId;
+	}
+
 	public String getPublisherUserId() {
 		return this.publisherUserId;
 	}
 	public void setPublisherUserId(String publisherUserId) {
 		this.publisherUserId = publisherUserId;
+	}
+
+	public String getRechargeType() {
+		return this.rechargeType;
+	}
+	public void setRechargeType(String rechargeType) {
+		this.rechargeType = rechargeType;
 	}
 
 	public String getRedirectUrl() {

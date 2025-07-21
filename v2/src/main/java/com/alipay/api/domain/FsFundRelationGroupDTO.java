@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 出资关系组
  *
  * @author auto create
- * @since 1.0, 2025-06-30 14:03:30
+ * @since 1.0, 2025-07-21 14:51:04
  */
 public class FsFundRelationGroupDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4195927719565873179L;
+	private static final long serialVersionUID = 5579932883187461162L;
 
 	/**
 	 * 出资关系明细列表
@@ -29,6 +29,12 @@ public class FsFundRelationGroupDTO extends AlipayObject {
 	@ApiField("fund_strategy")
 	private String fundStrategy;
 
+	/**
+	 * 出资组ID
+	 */
+	@ApiField("group_id")
+	private String groupId;
+
 	public List<FsFundRelationDetailDTO> getFundRelationDetails() {
 		return this.fundRelationDetails;
 	}
@@ -41,6 +47,13 @@ public class FsFundRelationGroupDTO extends AlipayObject {
 	}
 	public void setFundStrategy(String fundStrategy) {
 		this.fundStrategy = fundStrategy;
+	}
+
+	public String getGroupId() {
+		return this.groupId;
+	}
+	public void setGroupId(String groupId) {
+		this.groupId = groupId;
 	}
 
 }

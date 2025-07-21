@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenApiTransferSkillGroupInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2434181694554298554L;
+	private static final long serialVersionUID = 8169458683773321111L;
 
 	/**
 	 * 旧平台技能组id

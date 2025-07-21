@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 权益账户出资方信息
  *
  * @author auto create
- * @since 1.0, 2025-06-30 14:02:49
+ * @since 1.0, 2025-07-21 14:51:04
  */
 public class FsFundInfoForm extends AlipayObject {
 
-	private static final long serialVersionUID = 2321785266384271884L;
+	private static final long serialVersionUID = 4528581712527174987L;
 
 	/**
 	 * 退款时为出资方退款金额，单位：元

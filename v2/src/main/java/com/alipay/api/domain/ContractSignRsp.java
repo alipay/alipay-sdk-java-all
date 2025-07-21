@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ContractSignRsp extends AlipayObject {
 
-	private static final long serialVersionUID = 4619799222365923841L;
+	private static final long serialVersionUID = 3461365766946675946L;
 
 	/**
 	 * 用户id映射openId

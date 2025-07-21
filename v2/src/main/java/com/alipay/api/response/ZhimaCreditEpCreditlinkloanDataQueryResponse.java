@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaCreditEpCreditlinkloanDataQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5248355354226288147L;
+	private static final long serialVersionUID = 7864848336563666815L;
 
 	/** 
 	 * 查询到的的数据信息，是JSON结构，其key值和入参中的collect_data_type对应，例如 {"ELEME_RISK_ADMISSION":{"passStatus":1,"epList":[{"epName":"A","epCertNo":"001A","operatorName":"张三"},{"epName":"B","epCertNo":"001B","operatorName":"张三"}]}}

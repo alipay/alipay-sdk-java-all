@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceEducateCampusPointQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2693428275341456789L;
+	private static final long serialVersionUID = 5426546644818748637L;
 
 	/** 
 	 * 校区点位信息

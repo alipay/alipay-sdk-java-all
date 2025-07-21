@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 代用户查询回收订单详情
  *
  * @author auto create
- * @since 1.0, 2025-07-03 23:43:54
+ * @since 1.0, 2025-07-21 14:40:02
  */
 public class AlipayCommerceRecycleOrderDelegateBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7722542699959179685L;
+	private static final long serialVersionUID = 2719932584775385486L;
 
 	/**
 	 * 淘宝品牌店铺：BRAND

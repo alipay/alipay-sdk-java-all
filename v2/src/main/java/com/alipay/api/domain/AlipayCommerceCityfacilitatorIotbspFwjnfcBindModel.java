@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceCityfacilitatorIotbspFwjnfcBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7279958561181496296L;
+	private static final long serialVersionUID = 4498839918372686815L;
 
 	/**
 	 * NFC模块SN

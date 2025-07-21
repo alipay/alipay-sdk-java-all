@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.address.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-12 09:52:04
+ * @since 1.0, 2025-07-21 10:44:05
  */
 public class AntMerchantExpandAddressQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1274519597198979322L;
+	private static final long serialVersionUID = 4251389999391136815L;
 
 	/** 
 	 * 商家地址库基本信息集合的list,会有多个商家地址基础信息返回

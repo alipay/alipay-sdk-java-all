@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 合并转账预下单接口
  *
  * @author auto create
- * @since 1.0, 2024-05-23 14:09:03
+ * @since 1.0, 2025-07-21 11:38:30
  */
 public class AlipayFundTransMergePrecreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3845376318732133318L;
+	private static final long serialVersionUID = 1789857563372931457L;
 
 	/**
 	 * 业务场景。

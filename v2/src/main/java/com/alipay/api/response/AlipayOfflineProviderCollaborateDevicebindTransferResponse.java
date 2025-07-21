@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOfflineProviderCollaborateDevicebindTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2772763144226627217L;
+	private static final long serialVersionUID = 1395828435471462391L;
 
 	/** 
 	 * 如果换smid必须有

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 代用户拒绝回收订单
  *
  * @author auto create
- * @since 1.0, 2025-07-03 10:20:06
+ * @since 1.0, 2025-07-21 14:28:37
  */
 public class AlipayCommerceRecycleOrderDelegateRefuseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2154235126486749328L;
+	private static final long serialVersionUID = 3386976752831723958L;
 
 	/**
 	 * BRAND:淘宝品牌店铺
@@ -44,10 +44,40 @@ public class AlipayCommerceRecycleOrderDelegateRefuseModel extends AlipayObject 
 	private String reasonCode;
 
 	/**
+	 * 用户收货地址， 如果是商户邮寄，创单时候用户已经存入且不传入，则默认用创单的作为收货地址
+	 */
+	@ApiField("user_address")
+	private String userAddress;
+
+	/**
+	 * 地区
+	 */
+	@ApiField("user_area")
+	private String userArea;
+
+	/**
+	 * 城市
+	 */
+	@ApiField("user_city")
+	private String userCity;
+
+	/**
 	 * 支付宝用户的userId。
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	/**
+	 * 1241414142
+	 */
+	@ApiField("user_phone")
+	private String userPhone;
+
+	/**
+	 * 省份
+	 */
+	@ApiField("user_province")
+	private String userProvince;
 
 	public String getDelegateType() {
 		return this.delegateType;
@@ -84,11 +114,46 @@ public class AlipayCommerceRecycleOrderDelegateRefuseModel extends AlipayObject 
 		this.reasonCode = reasonCode;
 	}
 
+	public String getUserAddress() {
+		return this.userAddress;
+	}
+	public void setUserAddress(String userAddress) {
+		this.userAddress = userAddress;
+	}
+
+	public String getUserArea() {
+		return this.userArea;
+	}
+	public void setUserArea(String userArea) {
+		this.userArea = userArea;
+	}
+
+	public String getUserCity() {
+		return this.userCity;
+	}
+	public void setUserCity(String userCity) {
+		this.userCity = userCity;
+	}
+
 	public String getUserId() {
 		return this.userId;
 	}
 	public void setUserId(String userId) {
 		this.userId = userId;
+	}
+
+	public String getUserPhone() {
+		return this.userPhone;
+	}
+	public void setUserPhone(String userPhone) {
+		this.userPhone = userPhone;
+	}
+
+	public String getUserProvince() {
+		return this.userProvince;
+	}
+	public void setUserProvince(String userProvince) {
+		this.userProvince = userProvince;
 	}
 
 }

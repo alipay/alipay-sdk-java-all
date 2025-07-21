@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 记账本注销
  *
  * @author auto create
- * @since 1.0, 2024-11-15 10:27:57
+ * @since 1.0, 2025-07-21 11:37:58
  */
 public class AlipayFundAccountbookCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7336837211532585297L;
+	private static final long serialVersionUID = 5694733499432543613L;
 
 	/**
 	 * 资金记账本ID，指定需要注销的资金记账本

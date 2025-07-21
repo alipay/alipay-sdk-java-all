@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFinanceQuotationQuotetradeopenSymbolsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5777117883261215545L;
+	private static final long serialVersionUID = 1316782792426193938L;
 
 	/** 
 	 * 股票的唯一代码：symbol=code.market

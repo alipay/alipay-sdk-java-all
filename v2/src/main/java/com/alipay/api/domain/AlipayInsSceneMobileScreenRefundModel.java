@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayInsSceneMobileScreenRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2613161749955492348L;
+	private static final long serialVersionUID = 5464173971927962387L;
 
 	/**
 	 * 请求渠道来源

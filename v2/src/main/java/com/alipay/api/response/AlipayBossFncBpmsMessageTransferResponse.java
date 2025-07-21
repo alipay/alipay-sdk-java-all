@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.bpms.message.transfer response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-25 14:27:05
+ * @since 1.0, 2025-07-18 10:58:49
  */
 public class AlipayBossFncBpmsMessageTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1179516795881715627L;
+	private static final long serialVersionUID = 8694948772243335976L;
 
 	
 

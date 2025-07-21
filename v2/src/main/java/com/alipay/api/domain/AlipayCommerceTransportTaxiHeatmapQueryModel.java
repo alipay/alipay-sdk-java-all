@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportTaxiHeatmapQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2899954498337156847L;
+	private static final long serialVersionUID = 2728543918591958549L;
 
 	/**
 	 * 城市代码

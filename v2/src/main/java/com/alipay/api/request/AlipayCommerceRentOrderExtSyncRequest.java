@@ -4,6 +4,7 @@ import java.util.List;
 import com.alipay.api.domain.SellerSyncRentBuyerExtInfo;
 import com.alipay.api.domain.SellerSyncRentDeliveryExtInfo;
 import com.alipay.api.domain.SellerSyncRentFinancingExtInfo;
+import com.alipay.api.domain.RentHistoricalAssetFinancingExtInfoDTO;
 import com.alipay.api.domain.SellerSyncRentItemExtInfo;
 import com.alipay.api.domain.SellerSyncRentOrderExtInfo;
 import java.util.HashMap;
@@ -19,7 +20,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.rent.order.ext.sync request
  * 
  * @author auto create
- * @since 1.0, 2025-07-15 10:12:35
+ * @since 1.0, 2025-07-21 14:47:34
  */
 public class AlipayCommerceRentOrderExtSyncRequest implements AlipayUploadRequest<AlipayCommerceRentOrderExtSyncResponse> {
 
@@ -75,6 +76,11 @@ public class AlipayCommerceRentOrderExtSyncRequest implements AlipayUploadReques
 	* 租赁协议
 	 */
 	private FileItem financingRentProtocol;
+
+	/** 
+	* 历史资产融资扩展信息
+	 */
+	private RentHistoricalAssetFinancingExtInfoDTO historicalAssetFinancingExtInfo;
 
 	/** 
 	* 商品扩展信息
@@ -169,6 +175,13 @@ public class AlipayCommerceRentOrderExtSyncRequest implements AlipayUploadReques
 	}
 	public FileItem getFinancingRentProtocol() {
 		return this.financingRentProtocol;
+	}
+
+	public void setHistoricalAssetFinancingExtInfo(RentHistoricalAssetFinancingExtInfoDTO historicalAssetFinancingExtInfo) {
+		this.historicalAssetFinancingExtInfo = historicalAssetFinancingExtInfo;
+	}
+	public RentHistoricalAssetFinancingExtInfoDTO getHistoricalAssetFinancingExtInfo() {
+		return this.historicalAssetFinancingExtInfo;
 	}
 
 	public void setItemExtInfo(SellerSyncRentItemExtInfo itemExtInfo) {
@@ -271,6 +284,7 @@ public class AlipayCommerceRentOrderExtSyncRequest implements AlipayUploadReques
 		txtParams.put("buyer_open_id", this.buyerOpenId);
 		txtParams.put("delivery_ext_info", this.deliveryExtInfo == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.deliveryExtInfo, true));
 		txtParams.put("financing_ext_info", this.financingExtInfo == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.financingExtInfo, true));
+		txtParams.put("historical_asset_financing_ext_info", this.historicalAssetFinancingExtInfo == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.historicalAssetFinancingExtInfo, true));
 		txtParams.put("item_ext_info", this.itemExtInfo == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.itemExtInfo, true));
 		txtParams.put("order_ext_info", this.orderExtInfo == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.orderExtInfo, true));
 		txtParams.put("order_id", this.orderId);

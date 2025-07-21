@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 支付信息
  *
  * @author auto create
- * @since 1.0, 2025-04-17 12:35:39
+ * @since 1.0, 2025-07-21 10:19:00
  */
 public class PaymentVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4782828989294427798L;
+	private static final long serialVersionUID = 1825134869999894477L;
 
 	/**
 	 * 订单优惠总金额
@@ -36,6 +39,13 @@ public class PaymentVO extends AlipayObject {
 	 */
 	@ApiField("amount_user")
 	private String amountUser;
+
+	/**
+	 * 此字段对应B站对账单中抽佣部分的交易单号
+	 */
+	@ApiListField("commission_trade_nos")
+	@ApiField("string")
+	private List<String> commissionTradeNos;
 
 	/**
 	 * 配送优惠金额
@@ -129,6 +139,13 @@ public class PaymentVO extends AlipayObject {
 	}
 	public void setAmountUser(String amountUser) {
 		this.amountUser = amountUser;
+	}
+
+	public List<String> getCommissionTradeNos() {
+		return this.commissionTradeNos;
+	}
+	public void setCommissionTradeNos(List<String> commissionTradeNos) {
+		this.commissionTradeNos = commissionTradeNos;
 	}
 
 	public String getDeliveryDiscountFee() {

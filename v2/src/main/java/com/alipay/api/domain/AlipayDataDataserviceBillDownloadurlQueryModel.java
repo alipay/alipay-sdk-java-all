@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 无授权模式的查询对账单下载地址
  *
  * @author auto create
- * @since 1.0, 2024-01-15 15:08:50
+ * @since 1.0, 2025-07-21 15:06:29
  */
 public class AlipayDataDataserviceBillDownloadurlQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6598188766386495683L;
+	private static final long serialVersionUID = 4549383134882126337L;
 
 	/**
 	 * 账单时间： 

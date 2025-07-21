@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * N设备日维度明细信息
  *
  * @author auto create
- * @since 1.0, 2025-05-08 11:09:27
+ * @since 1.0, 2025-07-18 14:15:05
  */
 public class NDeviceMetricsListForDayResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 2585788832987168516L;
+	private static final long serialVersionUID = 7142282513288467164L;
 
 	/**
 	 * 支付宝金额，单位元
@@ -82,10 +82,28 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 	private Boolean doCheckIn;
 
 	/**
+	 * 有效开机标识,当日开机大于6h即为有效开机
+	 */
+	@ApiField("effective_turnon_device")
+	private Boolean effectiveTurnonDevice;
+
+	/**
 	 * nfc是否动销
 	 */
 	@ApiField("has_nfc_trade")
 	private Boolean hasNfcTrade;
+
+	/**
+	 * leads门店名称
+	 */
+	@ApiField("leads_location")
+	private String leadsLocation;
+
+	/**
+	 * leads门店地址
+	 */
+	@ApiField("leads_location_address")
+	private String leadsLocationAddress;
 
 	/**
 	 * 作业人员uid
@@ -254,11 +272,32 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 		this.doCheckIn = doCheckIn;
 	}
 
+	public Boolean getEffectiveTurnonDevice() {
+		return this.effectiveTurnonDevice;
+	}
+	public void setEffectiveTurnonDevice(Boolean effectiveTurnonDevice) {
+		this.effectiveTurnonDevice = effectiveTurnonDevice;
+	}
+
 	public Boolean getHasNfcTrade() {
 		return this.hasNfcTrade;
 	}
 	public void setHasNfcTrade(Boolean hasNfcTrade) {
 		this.hasNfcTrade = hasNfcTrade;
+	}
+
+	public String getLeadsLocation() {
+		return this.leadsLocation;
+	}
+	public void setLeadsLocation(String leadsLocation) {
+		this.leadsLocation = leadsLocation;
+	}
+
+	public String getLeadsLocationAddress() {
+		return this.leadsLocationAddress;
+	}
+	public void setLeadsLocationAddress(String leadsLocationAddress) {
+		this.leadsLocationAddress = leadsLocationAddress;
 	}
 
 	public String getLeadsWorkerId() {

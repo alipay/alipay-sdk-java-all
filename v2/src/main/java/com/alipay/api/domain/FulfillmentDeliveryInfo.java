@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FulfillmentDeliveryInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6549349235749845715L;
+	private static final long serialVersionUID = 5676411113591364216L;
 
 	/**
 	 * 请查看<a href="https://opendocs.alipay.com/mini/07hva0?pathHash=5de3c48d">快递公司ID列表</a>，请确认传入的值在此列表内，若发货的快递公司不在此列表内，可以传入值other

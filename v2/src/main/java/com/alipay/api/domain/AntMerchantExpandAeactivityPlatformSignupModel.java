@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝饿了么联营活动报名
  *
  * @author auto create
- * @since 1.0, 2025-06-26 10:32:17
+ * @since 1.0, 2025-07-18 19:46:04
  */
 public class AntMerchantExpandAeactivityPlatformSignupModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5643725499768337273L;
+	private static final long serialVersionUID = 3521337158952333341L;
 
 	/**
 	 * 点餐码url

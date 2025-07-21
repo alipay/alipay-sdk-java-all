@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.data.qingliangceshi.ceshiceshiceshi.query request
  * 
  * @author auto create
- * @since 1.0, 2025-07-14 14:42:30
+ * @since 1.0, 2025-07-21 11:42:32
  */
 public class AlipaySecurityDataQingliangceshiCeshiceshiceshiQueryRequest implements AlipayRequest<AlipaySecurityDataQingliangceshiCeshiceshiceshiQueryResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁融资扩展信息
  *
  * @author auto create
- * @since 1.0, 2025-06-05 15:58:54
+ * @since 1.0, 2025-07-18 18:44:51
  */
 public class RentFinancingExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4417517426938279898L;
+	private static final long serialVersionUID = 4249632691482951744L;
 
 	/**
 	 * 收款银行卡账户
@@ -134,9 +134,10 @@ public class RentFinancingExtInfo extends AlipayObject {
 	private String repaymentType;
 
 	/**
-	 * 租金融资起始期数，比如租赁有12期，租金融资想从第3期，开始融资，则此处设置为3
+	 * 租金融资起始期数，比如租赁有12期，租金融资想从第3期，开始融资，则此处设置为3 当前字段已废弃(该参数已转移至历史融资扩展信息)
 	 */
 	@ApiField("start_financing_period")
+	@Deprecated
 	private Long startFinancingPeriod;
 
 	public String getBeneficiaryAccountNumber() {

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class OpenCrowdOperationPoolRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 4747428957472118157L;
+	private static final long serialVersionUID = 2216453779244588633L;
 
 	/**
 	 * 组合内节点类型必须一致，都是标签，或者都是人群

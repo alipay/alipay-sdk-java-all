@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TourOrderSyncResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 7368212697542762264L;
+	private static final long serialVersionUID = 3479758758575196799L;
 
 	/**
 	 * 订单号

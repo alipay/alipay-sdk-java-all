@@ -3,6 +3,8 @@ package com.alipay.api.response;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.domain.RecycleStdOrderBaseVO;
 import com.alipay.api.domain.RecycleDeliveryVO;
+import com.alipay.api.domain.RecycleStdOrderFundSubSidyVO;
+import com.alipay.api.domain.RecycleStdOrderMerchantInfoVO;
 
 import com.alipay.api.AlipayResponse;
 
@@ -10,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.recycle.order.delegate.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-04 13:58:57
+ * @since 1.0, 2025-07-21 14:47:34
  */
 public class AlipayCommerceRecycleOrderDelegateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8279164762956177684L;
+	private static final long serialVersionUID = 4827319514994644646L;
 
 	/** 
 	 * 订单基础信息
@@ -27,6 +29,18 @@ public class AlipayCommerceRecycleOrderDelegateQueryResponse extends AlipayRespo
 	 */
 	@ApiField("order_delivery")
 	private RecycleDeliveryVO orderDelivery;
+
+	/** 
+	 * 品牌膨胀金信息
+	 */
+	@ApiField("order_fund_subsidy")
+	private RecycleStdOrderFundSubSidyVO orderFundSubsidy;
+
+	/** 
+	 * 回收商户信息
+	 */
+	@ApiField("order_merchant")
+	private RecycleStdOrderMerchantInfoVO orderMerchant;
 
 	/** 
 	 * 订单退货信息
@@ -46,6 +60,20 @@ public class AlipayCommerceRecycleOrderDelegateQueryResponse extends AlipayRespo
 	}
 	public RecycleDeliveryVO getOrderDelivery( ) {
 		return this.orderDelivery;
+	}
+
+	public void setOrderFundSubsidy(RecycleStdOrderFundSubSidyVO orderFundSubsidy) {
+		this.orderFundSubsidy = orderFundSubsidy;
+	}
+	public RecycleStdOrderFundSubSidyVO getOrderFundSubsidy( ) {
+		return this.orderFundSubsidy;
+	}
+
+	public void setOrderMerchant(RecycleStdOrderMerchantInfoVO orderMerchant) {
+		this.orderMerchant = orderMerchant;
+	}
+	public RecycleStdOrderMerchantInfoVO getOrderMerchant( ) {
+		return this.orderMerchant;
 	}
 
 	public void setOrderSendback(RecycleDeliveryVO orderSendback) {

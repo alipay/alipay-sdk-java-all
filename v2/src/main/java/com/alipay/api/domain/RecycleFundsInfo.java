@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RecycleFundsInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7241525836721368827L;
+	private static final long serialVersionUID = 5872959744893889696L;
 
 	/**
 	 * 支付宝支付资金流水号，对应转账接口的出参pay_fund_order_id，转账类型（尾款和预付款）必填

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.msg.unified.send request
  * 
  * @author auto create
- * @since 1.0, 2025-05-22 10:47:27
+ * @since 1.0, 2025-07-21 11:36:06
  */
 public class AlipayCommerceMedicalMsgUnifiedSendRequest implements AlipayRequest<AlipayCommerceMedicalMsgUnifiedSendResponse> {
 

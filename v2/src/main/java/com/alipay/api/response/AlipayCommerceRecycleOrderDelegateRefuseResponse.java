@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.recycle.order.delegate.refuse response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-16 10:47:50
+ * @since 1.0, 2025-07-21 14:47:34
  */
 public class AlipayCommerceRecycleOrderDelegateRefuseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3119684315558453834L;
+	private static final long serialVersionUID = 1448935622866645915L;
 
 	
 

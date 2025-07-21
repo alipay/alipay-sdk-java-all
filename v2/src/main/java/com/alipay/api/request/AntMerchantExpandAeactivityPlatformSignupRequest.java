@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.expand.aeactivity.platform.signup request
  * 
  * @author auto create
- * @since 1.0, 2025-06-26 10:37:29
+ * @since 1.0, 2025-07-18 19:47:33
  */
 public class AntMerchantExpandAeactivityPlatformSignupRequest implements AlipayRequest<AntMerchantExpandAeactivityPlatformSignupResponse> {
 

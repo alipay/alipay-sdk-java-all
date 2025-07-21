@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserFamilyRelationValidQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7232165253872719849L;
+	private static final long serialVersionUID = 2411619322522112935L;
 
 	/** 
 	 * 是否加入过家庭

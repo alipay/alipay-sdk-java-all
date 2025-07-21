@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * poi批量查询接口
  *
  * @author auto create
- * @since 1.0, 2024-06-12 09:48:55
+ * @since 1.0, 2025-07-21 10:44:05
  */
 public class AntMerchantExpandAddressQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5766459561116216984L;
+	private static final long serialVersionUID = 4779935463876761452L;
 
 	/**
 	 * 数组类型,包含多个address_id,可查询多个商家地址address_id下面对应的商家地址信息
