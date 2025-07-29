@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付可开票开票申请查询
  *
  * @author auto create
- * @since 1.0, 2025-07-09 16:26:10
+ * @since 1.0, 2025-07-25 14:01:39
  */
 public class AlipayCommerceEcIndustryinvoiceInvoiceapplyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4852887928816487328L;
+	private static final long serialVersionUID = 3527392459691364418L;
 
 	/**
 	 * 开票申请ID

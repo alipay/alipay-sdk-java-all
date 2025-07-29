@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 物料生产订单物流详情, 包括物流订单号, 物流公司名称等信息
  *
  * @author auto create
- * @since 1.0, 2025-07-02 11:35:04
+ * @since 1.0, 2025-07-24 17:18:28
  */
 public class ItemDeliveryDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7395193413527165115L;
+	private static final long serialVersionUID = 6422476219732113568L;
 
 	/**
 	 * 已生产数量, 分批反馈时候必传.
@@ -54,6 +57,13 @@ public class ItemDeliveryDetail extends AlipayObject {
 	 */
 	@ApiField("logistics_no")
 	private String logisticsNo;
+
+	/**
+	 * 选配物料信息
+	 */
+	@ApiListField("optional_item_infos")
+	@ApiField("optional_item_info")
+	private List<OptionalItemInfo> optionalItemInfos;
 
 	/**
 	 * 供应商传入库存动销明细对应的凭证日期
@@ -108,6 +118,13 @@ public class ItemDeliveryDetail extends AlipayObject {
 	}
 	public void setLogisticsNo(String logisticsNo) {
 		this.logisticsNo = logisticsNo;
+	}
+
+	public List<OptionalItemInfo> getOptionalItemInfos() {
+		return this.optionalItemInfos;
+	}
+	public void setOptionalItemInfos(List<OptionalItemInfo> optionalItemInfos) {
+		this.optionalItemInfos = optionalItemInfos;
 	}
 
 	public String getVoucherTime() {

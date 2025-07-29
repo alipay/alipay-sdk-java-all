@@ -1,0 +1,111 @@
+package com.alipay.api.domain;
+
+import java.util.List;
+
+import com.alipay.api.AlipayObject;
+import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
+
+/**
+ * 泛行业教培点评信息同步
+ *
+ * @author auto create
+ * @since 1.0, 2025-07-24 10:57:33
+ */
+public class AlipayCommerceFhyeduEvaluationSyncModel extends AlipayObject {
+
+	private static final long serialVersionUID = 7895772831391313217L;
+
+	/**
+	 * 课后点评
+	 */
+	@ApiField("assessment")
+	private String assessment;
+
+	/**
+	 * 课程id
+	 */
+	@ApiField("course_id")
+	private String courseId;
+
+	/**
+	 * 课程名称
+	 */
+	@ApiField("course_name")
+	private String courseName;
+
+	/**
+	 * 机构id
+	 */
+	@ApiField("inst_id")
+	private String instId;
+
+	/**
+	 * 课次id
+	 */
+	@ApiField("sched_id")
+	private String schedId;
+
+	/**
+	 * null
+	 */
+	@ApiListField("score_list")
+	@ApiField("edu_assessment_score")
+	private List<EduAssessmentScore> scoreList;
+
+	/**
+	 * 学员id
+	 */
+	@ApiField("student_id")
+	private String studentId;
+
+	public String getAssessment() {
+		return this.assessment;
+	}
+	public void setAssessment(String assessment) {
+		this.assessment = assessment;
+	}
+
+	public String getCourseId() {
+		return this.courseId;
+	}
+	public void setCourseId(String courseId) {
+		this.courseId = courseId;
+	}
+
+	public String getCourseName() {
+		return this.courseName;
+	}
+	public void setCourseName(String courseName) {
+		this.courseName = courseName;
+	}
+
+	public String getInstId() {
+		return this.instId;
+	}
+	public void setInstId(String instId) {
+		this.instId = instId;
+	}
+
+	public String getSchedId() {
+		return this.schedId;
+	}
+	public void setSchedId(String schedId) {
+		this.schedId = schedId;
+	}
+
+	public List<EduAssessmentScore> getScoreList() {
+		return this.scoreList;
+	}
+	public void setScoreList(List<EduAssessmentScore> scoreList) {
+		this.scoreList = scoreList;
+	}
+
+	public String getStudentId() {
+		return this.studentId;
+	}
+	public void setStudentId(String studentId) {
+		this.studentId = studentId;
+	}
+
+}

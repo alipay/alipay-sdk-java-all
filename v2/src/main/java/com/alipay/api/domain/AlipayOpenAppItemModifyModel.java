@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序商品更新接口
  *
  * @author auto create
- * @since 1.0, 2025-07-17 18:20:08
+ * @since 1.0, 2025-07-24 16:45:39
  */
 public class AlipayOpenAppItemModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3425652397556272464L;
+	private static final long serialVersionUID = 7599978813392668188L;
 
 	/**
 	 * 商品属性
@@ -30,7 +30,7 @@ public class AlipayOpenAppItemModifyModel extends AlipayObject {
 	private String barcode;
 
 	/**
-	 * 商品业务模式，租赁业务模式包含（短租：0；长租：1；先租后买 ： 2）
+	 * 商品业务模式，租赁业务模式包含（短租：0；长租：1）
 	 */
 	@ApiField("business_model")
 	private String businessModel;

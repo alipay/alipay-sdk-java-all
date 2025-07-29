@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 同步评论
  *
  * @author auto create
- * @since 1.0, 2025-05-13 13:57:54
+ * @since 1.0, 2025-07-28 15:34:17
  */
 public class AlipayContentLiveCommentSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2733761642674125995L;
+	private static final long serialVersionUID = 4381966274144229485L;
 
 	/**
 	 * tab侧的直播间id（加密后）
 	 */
 	@ApiField("alipay_live_id")
 	private String alipayLiveId;
+
+	/**
+	 * 评论发送给目标用户的ID，课代表角色发的评论这里指加密后的支付宝用户2088
+	 */
+	@ApiField("alipay_target_id")
+	private String alipayTargetId;
 
 	/**
 	 * 评论内容
@@ -67,11 +73,24 @@ public class AlipayContentLiveCommentSyncModel extends AlipayObject {
 	@ApiField("tail_link_url")
 	private String tailLinkUrl;
 
+	/**
+	 * 评论可见范围，ALL：所有人可见【默认】，ONLY_ONESELF
+	 */
+	@ApiField("visible_scope")
+	private String visibleScope;
+
 	public String getAlipayLiveId() {
 		return this.alipayLiveId;
 	}
 	public void setAlipayLiveId(String alipayLiveId) {
 		this.alipayLiveId = alipayLiveId;
+	}
+
+	public String getAlipayTargetId() {
+		return this.alipayTargetId;
+	}
+	public void setAlipayTargetId(String alipayTargetId) {
+		this.alipayTargetId = alipayTargetId;
 	}
 
 	public String getCommentText() {
@@ -128,6 +147,13 @@ public class AlipayContentLiveCommentSyncModel extends AlipayObject {
 	}
 	public void setTailLinkUrl(String tailLinkUrl) {
 		this.tailLinkUrl = tailLinkUrl;
+	}
+
+	public String getVisibleScope() {
+		return this.visibleScope;
+	}
+	public void setVisibleScope(String visibleScope) {
+		this.visibleScope = visibleScope;
 	}
 
 }

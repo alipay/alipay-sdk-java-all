@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenIotroomdeviceEventSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3227988543555924653L;
+	private static final long serialVersionUID = 6789173321451296429L;
 
 	/**
 	 * 设备ID

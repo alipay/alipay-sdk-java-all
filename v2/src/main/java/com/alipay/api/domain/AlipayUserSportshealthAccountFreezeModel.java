@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserSportshealthAccountFreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4227618422782281787L;
+	private static final long serialVersionUID = 3841487776446268969L;
 
 	/**
 	 * 账户流水明细描述，会展示在用户运动币明细列表中

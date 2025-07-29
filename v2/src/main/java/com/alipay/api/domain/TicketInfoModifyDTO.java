@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TicketInfoModifyDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6195774944511157911L;
+	private static final long serialVersionUID = 6666233277849386448L;
 
 	/**
 	 * 需要更新的场次结束时间

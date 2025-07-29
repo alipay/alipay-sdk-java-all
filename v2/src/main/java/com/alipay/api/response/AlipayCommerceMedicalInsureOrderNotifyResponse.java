@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.insure.order.notify response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-03 15:32:34
+ * @since 1.0, 2025-07-24 17:47:33
  */
 public class AlipayCommerceMedicalInsureOrderNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1223777627219181246L;
+	private static final long serialVersionUID = 4566893627111869168L;
 
 	/** 
 	 * 通知描述

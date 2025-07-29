@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 直付通c2c进件接口
  *
  * @author auto create
- * @since 1.0, 2025-07-15 11:32:20
+ * @since 1.0, 2025-07-28 15:06:55
  */
 public class AntMerchantExpandIndirectZftforcCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4272387124854128916L;
+	private static final long serialVersionUID = 3446823242972967214L;
 
 	/**
 	 * 支付宝收银台及账单中的商户名称会展示此处设置的别名。如果涉及支付宝APP内的支付，支付结果页也会展示该别名；如果涉及线下当面付场景，请填写线下店铺名称

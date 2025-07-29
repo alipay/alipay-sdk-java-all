@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.recycle.question.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-03 16:22:30
+ * @since 1.0, 2025-07-22 16:27:34
  */
 public class AlipayCommerceRecycleQuestionQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4192911432892734675L;
+	private static final long serialVersionUID = 8764675386532652896L;
 
 	/** 
 	 * 问卷选项约束关系

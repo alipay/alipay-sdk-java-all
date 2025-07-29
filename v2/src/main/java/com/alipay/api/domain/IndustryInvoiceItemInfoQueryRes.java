@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付可开票查询结果商品明细
  *
  * @author auto create
- * @since 1.0, 2025-07-09 16:26:10
+ * @since 1.0, 2025-07-25 14:01:38
  */
 public class IndustryInvoiceItemInfoQueryRes extends AlipayObject {
 
-	private static final long serialVersionUID = 5285822436656377324L;
+	private static final long serialVersionUID = 6759525196354317185L;
 
 	/**
 	 * 优惠政策标识
@@ -26,7 +26,7 @@ public class IndustryInvoiceItemInfoQueryRes extends AlipayObject {
 	private String invoiceLineProperty;
 
 	/**
-	 * 开票金额（含税金额），单位：元
+	 * 开票金额：总位数20位，最多16位整数，最多2位小数，单位：元
 	 */
 	@ApiField("item_amount")
 	private String itemAmount;
@@ -50,7 +50,7 @@ public class IndustryInvoiceItemInfoQueryRes extends AlipayObject {
 	private String itemName;
 
 	/**
-	 * 商品数量
+	 * 商品数量：总位数26位，最多15整数,10小数
 	 */
 	@ApiField("item_num")
 	private String itemNum;

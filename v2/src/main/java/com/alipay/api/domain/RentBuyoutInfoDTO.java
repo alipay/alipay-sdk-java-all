@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁订单购买信息
  *
  * @author auto create
- * @since 1.0, 2025-06-10 11:42:10
+ * @since 1.0, 2025-07-22 20:49:52
  */
 public class RentBuyoutInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7128292855835553417L;
+	private static final long serialVersionUID = 6387197737999382525L;
 
 	/**
 	 * 租赁阶梯购买分期号
@@ -25,6 +25,12 @@ public class RentBuyoutInfoDTO extends AlipayObject {
 	@ApiField("origin_order_id")
 	private String originOrderId;
 
+	/**
+	 * 支付宝服务器主动通知商户服务器里指定的页面http/https路径
+	 */
+	@ApiField("pay_notify_url")
+	private String payNotifyUrl;
+
 	public Long getBuyoutInstallmentNo() {
 		return this.buyoutInstallmentNo;
 	}
@@ -37,6 +43,13 @@ public class RentBuyoutInfoDTO extends AlipayObject {
 	}
 	public void setOriginOrderId(String originOrderId) {
 		this.originOrderId = originOrderId;
+	}
+
+	public String getPayNotifyUrl() {
+		return this.payNotifyUrl;
+	}
+	public void setPayNotifyUrl(String payNotifyUrl) {
+		this.payNotifyUrl = payNotifyUrl;
 	}
 
 }

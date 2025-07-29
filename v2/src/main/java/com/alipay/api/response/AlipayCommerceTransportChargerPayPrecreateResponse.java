@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.charger.pay.precreate response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-21 10:08:37
+ * @since 1.0, 2025-07-28 16:32:35
  */
 public class AlipayCommerceTransportChargerPayPrecreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7537959263576675189L;
+	private static final long serialVersionUID = 5133958281333233367L;
 
 	/** 
 	 * 行业支付订单号

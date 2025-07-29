@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechAiCvTfjsModelQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7138399824566634894L;
+	private static final long serialVersionUID = 1721961137275561932L;
 
 	/**
 	 * 模型服务code，模型服务唯一标示

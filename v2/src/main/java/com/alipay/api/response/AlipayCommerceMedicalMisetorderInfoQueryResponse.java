@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.misetorder.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-21 10:42:13
+ * @since 1.0, 2025-07-24 09:56:38
  */
 public class AlipayCommerceMedicalMisetorderInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5321684672186887647L;
+	private static final long serialVersionUID = 7239119797552861467L;
 
 	/** 
 	 * 人员证书编号，用于唯一标识证书。

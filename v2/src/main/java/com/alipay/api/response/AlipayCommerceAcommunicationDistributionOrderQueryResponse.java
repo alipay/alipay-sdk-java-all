@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.acommunication.distribution.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-14 14:47:34
+ * @since 1.0, 2025-07-29 09:37:33
  */
 public class AlipayCommerceAcommunicationDistributionOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4269331127487646648L;
+	private static final long serialVersionUID = 3496771361827569827L;
 
 	/** 
 	 * 支付宝订单号
@@ -71,6 +71,12 @@ public class AlipayCommerceAcommunicationDistributionOrderQueryResponse extends 
 	 */
 	@ApiField("prize_id")
 	private String prizeId;
+
+	/** 
+	 * 运营商侧的订单号，当下游运营商系统存在自己内部订单号的情况下这里为运营商订单号。否则这里为空。仅对部分服务商开放
+	 */
+	@ApiField("supplier_order_no")
+	private String supplierOrderNo;
 
 	public void setAlipayOrderId(String alipayOrderId) {
 		this.alipayOrderId = alipayOrderId;
@@ -133,6 +139,13 @@ public class AlipayCommerceAcommunicationDistributionOrderQueryResponse extends 
 	}
 	public String getPrizeId( ) {
 		return this.prizeId;
+	}
+
+	public void setSupplierOrderNo(String supplierOrderNo) {
+		this.supplierOrderNo = supplierOrderNo;
+	}
+	public String getSupplierOrderNo( ) {
+		return this.supplierOrderNo;
 	}
 
 }

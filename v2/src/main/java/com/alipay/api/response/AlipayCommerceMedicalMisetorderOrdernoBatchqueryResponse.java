@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.misetorder.orderno.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-17 20:53:02
+ * @since 1.0, 2025-07-24 09:56:43
  */
 public class AlipayCommerceMedicalMisetorderOrdernoBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7233711788226239523L;
+	private static final long serialVersionUID = 8537782436974134374L;
 
 	/** 
 	 * 订单号

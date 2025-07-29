@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.recycle.merchantasset.withdraw response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-03 16:22:32
+ * @since 1.0, 2025-07-22 16:32:35
  */
 public class AlipayCommerceRecycleMerchantassetWithdrawResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6435835225619888466L;
+	private static final long serialVersionUID = 2578671413621386367L;
 
 	/** 
 	 * 流水id，保证是唯一的

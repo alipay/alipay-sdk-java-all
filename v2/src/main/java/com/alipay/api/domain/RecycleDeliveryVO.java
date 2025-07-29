@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  *  回收履约信息
  *
  * @author auto create
- * @since 1.0, 2025-07-03 23:43:54
+ * @since 1.0, 2025-07-23 11:12:35
  */
 public class RecycleDeliveryVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7422594568463359115L;
+	private static final long serialVersionUID = 7218467845945573291L;
 
 	/**
 	 * 实际取件时间
@@ -60,6 +60,18 @@ public class RecycleDeliveryVO extends AlipayObject {
 	 */
 	@ApiField("start_time")
 	private String startTime;
+
+	/**
+	 * 用户不卖了的收货地址
+	 */
+	@ApiField("user_address")
+	private String userAddress;
+
+	/**
+	 * 用户联系方式
+	 */
+	@ApiField("user_phone")
+	private String userPhone;
 
 	public String getActualTime() {
 		return this.actualTime;
@@ -115,6 +127,20 @@ public class RecycleDeliveryVO extends AlipayObject {
 	}
 	public void setStartTime(String startTime) {
 		this.startTime = startTime;
+	}
+
+	public String getUserAddress() {
+		return this.userAddress;
+	}
+	public void setUserAddress(String userAddress) {
+		this.userAddress = userAddress;
+	}
+
+	public String getUserPhone() {
+		return this.userPhone;
+	}
+	public void setUserPhone(String userPhone) {
+		this.userPhone = userPhone;
 	}
 
 }

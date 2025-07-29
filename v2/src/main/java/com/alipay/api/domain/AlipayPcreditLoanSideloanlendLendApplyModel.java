@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 随身贷支用申请
  *
  * @author auto create
- * @since 1.0, 2025-04-25 11:19:58
+ * @since 1.0, 2025-07-25 14:59:44
  */
 public class AlipayPcreditLoanSideloanlendLendApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5237825292311879311L;
+	private static final long serialVersionUID = 4577177113511242116L;
 
 	/**
 	 * 支付宝用户id
@@ -34,6 +34,12 @@ public class AlipayPcreditLoanSideloanlendLendApplyModel extends AlipayObject {
 	@ApiListField("coupon_code_list")
 	@ApiField("string")
 	private List<String> couponCodeList;
+
+	/**
+	 * 渠道侧授信申请单号
+	 */
+	@ApiField("credit_apply_no")
+	private String creditApplyNo;
 
 	/**
 	 * 扩展字段JSON String
@@ -73,6 +79,12 @@ TERM -- “期”
 	 */
 	@ApiField("loan_term_unit")
 	private String loanTermUnit;
+
+	/**
+	 * 支用类型
+	 */
+	@ApiField("loan_type")
+	private String loanType;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识
@@ -135,6 +147,13 @@ REPAY_OUTRIGHT一次性到期还本付息
 		this.couponCodeList = couponCodeList;
 	}
 
+	public String getCreditApplyNo() {
+		return this.creditApplyNo;
+	}
+	public void setCreditApplyNo(String creditApplyNo) {
+		this.creditApplyNo = creditApplyNo;
+	}
+
 	public String getExtension() {
 		return this.extension;
 	}
@@ -175,6 +194,13 @@ REPAY_OUTRIGHT一次性到期还本付息
 	}
 	public void setLoanTermUnit(String loanTermUnit) {
 		this.loanTermUnit = loanTermUnit;
+	}
+
+	public String getLoanType() {
+		return this.loanType;
+	}
+	public void setLoanType(String loanType) {
+		this.loanType = loanType;
 	}
 
 	public String getOpenId() {

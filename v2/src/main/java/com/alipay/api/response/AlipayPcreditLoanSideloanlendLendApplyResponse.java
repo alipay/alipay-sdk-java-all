@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.sideloanlend.lend.apply response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-18 11:12:00
+ * @since 1.0, 2025-07-25 15:02:33
  */
 public class AlipayPcreditLoanSideloanlendLendApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4823967534129522258L;
+	private static final long serialVersionUID = 2255483184493238837L;
 
 	/** 
 	 * loanStatus=FAILED支用失败，拒绝原因码

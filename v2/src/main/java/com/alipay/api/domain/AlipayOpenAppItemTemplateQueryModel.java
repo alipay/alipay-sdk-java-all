@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取商品类目信息
  *
  * @author auto create
- * @since 1.0, 2025-07-11 17:33:40
+ * @since 1.0, 2025-07-24 16:36:13
  */
 public class AlipayOpenAppItemTemplateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4341221461137867143L;
+	private static final long serialVersionUID = 1529916365622158674L;
 
 	/**
-	 * 商品业务模式，租赁业务模式包含（短租：0；长租：1；先租后买 ： 2）
+	 * 商品业务模式，租赁业务模式包含（短租：0；长租：1）
 	 */
 	@ApiField("business_model")
 	private String businessModel;

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOverseasTravelRateCurrencyBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2711769438942125447L;
+	private static final long serialVersionUID = 5647974236796516319L;
 
 	/** 
 	 * 汇率币种列表

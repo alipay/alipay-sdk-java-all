@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 全网通搜
  *
  * @author auto create
- * @since 1.0, 2025-02-28 17:31:59
+ * @since 1.0, 2025-07-24 21:30:34
  */
 public class DatadigitalFincloudFinsaasInsuranceOpensearchQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1723553512868468115L;
+	private static final long serialVersionUID = 5846417351864327352L;
 
 	/**
 	 * 搜索的领域值，默认为all 全网搜索
 	 */
 	@ApiField("domain")
 	private String domain;
+
+	/**
+	 * 多站点"｜"分割，最大支持个数为3
+	 */
+	@ApiField("include_sites")
+	private String includeSites;
 
 	/**
 	 * 不传默认10
@@ -48,6 +54,13 @@ public class DatadigitalFincloudFinsaasInsuranceOpensearchQueryModel extends Ali
 	}
 	public void setDomain(String domain) {
 		this.domain = domain;
+	}
+
+	public String getIncludeSites() {
+		return this.includeSites;
+	}
+	public void setIncludeSites(String includeSites) {
+		this.includeSites = includeSites;
 	}
 
 	public Long getPageSize() {

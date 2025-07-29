@@ -7,17 +7,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * 即插即充预下单同步
  *
  * @author auto create
- * @since 1.0, 2025-04-10 12:00:48
+ * @since 1.0, 2025-07-28 16:31:34
  */
 public class AlipayCommerceTransportChargerPayPrecreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8361827679674658927L;
+	private static final long serialVersionUID = 4523189724476481823L;
 
 	/**
 	 * 互联互通充电枪（设备）ID，用于关联用户充电使用的充电站
 	 */
 	@ApiField("connector_id")
 	private String connectorId;
+
+	/**
+	 * 充电站纬度
+	 */
+	@ApiField("latitude")
+	private String latitude;
+
+	/**
+	 * 充电站经度
+	 */
+	@ApiField("longitude")
+	private String longitude;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识
@@ -44,6 +56,12 @@ public class AlipayCommerceTransportChargerPayPrecreateModel extends AlipayObjec
 	private String stationId;
 
 	/**
+	 * 互联互通充电站名称
+	 */
+	@ApiField("station_name")
+	private String stationName;
+
+	/**
 	 * 订单标题
 	 */
 	@ApiField("subject")
@@ -66,6 +84,20 @@ public class AlipayCommerceTransportChargerPayPrecreateModel extends AlipayObjec
 	}
 	public void setConnectorId(String connectorId) {
 		this.connectorId = connectorId;
+	}
+
+	public String getLatitude() {
+		return this.latitude;
+	}
+	public void setLatitude(String latitude) {
+		this.latitude = latitude;
+	}
+
+	public String getLongitude() {
+		return this.longitude;
+	}
+	public void setLongitude(String longitude) {
+		this.longitude = longitude;
 	}
 
 	public String getOpenId() {
@@ -94,6 +126,13 @@ public class AlipayCommerceTransportChargerPayPrecreateModel extends AlipayObjec
 	}
 	public void setStationId(String stationId) {
 		this.stationId = stationId;
+	}
+
+	public String getStationName() {
+		return this.stationName;
+	}
+	public void setStationName(String stationName) {
+		this.stationName = stationName;
 	}
 
 	public String getSubject() {

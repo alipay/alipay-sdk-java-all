@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 随身贷授信协议预览
  *
  * @author auto create
- * @since 1.0, 2025-04-17 23:56:21
+ * @since 1.0, 2025-07-25 14:59:44
  */
 public class AlipayPcreditLoanSideloansignAgreementPreviewModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6531226885199229328L;
+	private static final long serialVersionUID = 7812338237515734424L;
 
 	/**
 	 * 指定agreementList以动态渲染和预览对应的协议合同内容
@@ -64,6 +64,12 @@ public class AlipayPcreditLoanSideloansignAgreementPreviewModel extends AlipayOb
 	 */
 	@ApiField("product_code")
 	private String productCode;
+
+	/**
+	 * 子授信模式
+	 */
+	@ApiField("sub_credit_type")
+	private String subCreditType;
 
 	public List<AgreeementPreViewReq> getAgreementList() {
 		return this.agreementList;
@@ -119,6 +125,13 @@ public class AlipayPcreditLoanSideloansignAgreementPreviewModel extends AlipayOb
 	}
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
+	}
+
+	public String getSubCreditType() {
+		return this.subCreditType;
+	}
+	public void setSubCreditType(String subCreditType) {
+		this.subCreditType = subCreditType;
 	}
 
 }

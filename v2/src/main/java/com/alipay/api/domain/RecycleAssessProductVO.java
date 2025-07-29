@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 回收估价产品信息（估价产品是用户选择的产品，可能跟实际商家质检产品型号不一致）
  *
  * @author auto create
- * @since 1.0, 2025-07-03 21:27:55
+ * @since 1.0, 2025-07-23 11:12:35
  */
 public class RecycleAssessProductVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1194787274832594952L;
+	private static final long serialVersionUID = 3483164516111889483L;
 
 	/**
 	 * 估价最高金额、固定价
@@ -88,6 +88,18 @@ RANGE_PRICE：区间价，如潮奢、酒水
 	private String productCode;
 
 	/**
+	 * 产品图片
+	 */
+	@ApiField("product_logo")
+	private String productLogo;
+
+	/**
+	 * 支付宝侧的回收产品名称
+	 */
+	@ApiField("product_name")
+	private String productName;
+
+	/**
 	 * PIECE：一部手机、一瓶酒水
 KG：衣物称斤，一公斤
 G：黄金按克重算单价
@@ -156,6 +168,20 @@ G：黄金按克重算单价
 	}
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
+	}
+
+	public String getProductLogo() {
+		return this.productLogo;
+	}
+	public void setProductLogo(String productLogo) {
+		this.productLogo = productLogo;
+	}
+
+	public String getProductName() {
+		return this.productName;
+	}
+	public void setProductName(String productName) {
+		this.productName = productName;
 	}
 
 	public String getUnitType() {

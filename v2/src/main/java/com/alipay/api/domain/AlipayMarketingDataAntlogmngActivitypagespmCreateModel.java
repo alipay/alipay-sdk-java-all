@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingDataAntlogmngActivitypagespmCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1576345532255737726L;
+	private static final long serialVersionUID = 8663138692487975259L;
 
 	/**
 	 * 活动Id

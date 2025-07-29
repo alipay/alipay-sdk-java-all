@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 代用户查询回收订单详情
  *
  * @author auto create
- * @since 1.0, 2025-07-21 14:40:02
+ * @since 1.0, 2025-07-23 11:12:37
  */
 public class AlipayCommerceRecycleOrderDelegateBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2719932584775385486L;
+	private static final long serialVersionUID = 1434569543125845454L;
 
 	/**
 	 * 淘宝品牌店铺：BRAND
@@ -29,10 +29,18 @@ public class AlipayCommerceRecycleOrderDelegateBatchqueryModel extends AlipayObj
 	private String openId;
 
 	/**
-	 * 回收主订单状态。详见回收订单状态机
+	 * 回收主订单状态。详见回收订单状态机 当前字段已废弃(调整字段为数组类型调整字段为数组类型)
 	 */
 	@ApiField("order_status")
+	@Deprecated
 	private String orderStatus;
+
+	/**
+	 * 过滤的回收状态
+	 */
+	@ApiListField("order_status_list")
+	@ApiField("string")
+	private List<String> orderStatusList;
 
 	/**
 	 * 起始页码为1
@@ -78,6 +86,13 @@ public class AlipayCommerceRecycleOrderDelegateBatchqueryModel extends AlipayObj
 	}
 	public void setOrderStatus(String orderStatus) {
 		this.orderStatus = orderStatus;
+	}
+
+	public List<String> getOrderStatusList() {
+		return this.orderStatusList;
+	}
+	public void setOrderStatusList(List<String> orderStatusList) {
+		this.orderStatusList = orderStatusList;
 	}
 
 	public Long getPageNo() {

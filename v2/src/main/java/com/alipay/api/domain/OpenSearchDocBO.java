@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * Rag召回的doc
  *
  * @author auto create
- * @since 1.0, 2025-02-25 11:07:37
+ * @since 1.0, 2025-07-24 21:30:34
  */
 public class OpenSearchDocBO extends AlipayObject {
 
-	private static final long serialVersionUID = 3157193766627636793L;
+	private static final long serialVersionUID = 7393973595784569128L;
 
 	/**
 	 * 短摘要

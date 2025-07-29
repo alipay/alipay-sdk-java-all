@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.order.prepay response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-03 16:24:10
+ * @since 1.0, 2025-07-25 11:32:35
  */
 public class AlipayTradeOrderPrepayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6124835634546184565L;
+	private static final long serialVersionUID = 8315836977292334372L;
 
 	/** 
 	 * 支付跳转信息。 用于打开支付方式 app 的 scheme URL，详细使用方式参考<a href="https://global.alipay.com/docs/ac/cashier_payment_cn/redirection#FH33G">链接</a>。
@@ -26,6 +26,12 @@ public class AlipayTradeOrderPrepayResponse extends AlipayResponse {
 	 */
 	@ApiField("out_trade_no")
 	private String outTradeNo;
+
+	/** 
+	 * 预下单ID，后续通过该预下单ID唤起收银台支付
+	 */
+	@ApiField("prepay_id")
+	private String prepayId;
 
 	/** 
 	 * 账户机构唤端需要的订单唯一标识
@@ -51,6 +57,13 @@ public class AlipayTradeOrderPrepayResponse extends AlipayResponse {
 	}
 	public String getOutTradeNo( ) {
 		return this.outTradeNo;
+	}
+
+	public void setPrepayId(String prepayId) {
+		this.prepayId = prepayId;
+	}
+	public String getPrepayId( ) {
+		return this.prepayId;
 	}
 
 	public void setTn(String tn) {

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayAccountExrateSourcerateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3194522365495789757L;
+	private static final long serialVersionUID = 5375621127588591596L;
 
 	/** 
 	 * 源汇率记录

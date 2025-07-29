@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.benefitaccount.account.modify response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-21 14:52:33
+ * @since 1.0, 2025-07-22 17:32:33
  */
 public class AlipayMarketingBenefitaccountAccountModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6394211146732661828L;
+	private static final long serialVersionUID = 2454175115369771439L;
 
 	/** 
 	 * 权益账户账号

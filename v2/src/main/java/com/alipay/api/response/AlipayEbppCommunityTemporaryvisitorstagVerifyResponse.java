@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppCommunityTemporaryvisitorstagVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7246536594663957664L;
+	private static final long serialVersionUID = 6664841453874288247L;
 
 	/** 
 	 * 认证平台链接列表

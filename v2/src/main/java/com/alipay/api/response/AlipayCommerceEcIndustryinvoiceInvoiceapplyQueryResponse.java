@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.industryinvoice.invoiceapply.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-11 09:37:30
+ * @since 1.0, 2025-07-25 14:57:32
  */
 public class AlipayCommerceEcIndustryinvoiceInvoiceapplyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4776537782655318228L;
+	private static final long serialVersionUID = 5271946649352176962L;
 
 	/** 
 	 * 购买方地址

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.terminal.edgecloud.swnetflow.cardfull.sync response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-11 16:42:30
+ * @since 1.0, 2025-07-28 15:18:03
  */
 public class AlipayTerminalEdgecloudSwnetflowCardfullSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6255824284846823829L;
+	private static final long serialVersionUID = 3773972745243469465L;
 
 	
 

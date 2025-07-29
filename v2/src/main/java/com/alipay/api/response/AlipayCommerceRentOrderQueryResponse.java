@@ -14,6 +14,7 @@ import com.alipay.api.domain.RentPlanInfoVO;
 import com.alipay.api.domain.RentSignInfoVO;
 import com.alipay.api.domain.RentOrderStatementInfoVO;
 import com.alipay.api.domain.RentSubMerchantVO;
+import com.alipay.api.domain.RentFulfillmentDeliveryInfoVO;
 
 import com.alipay.api.AlipayResponse;
 
@@ -21,11 +22,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.rent.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-16 13:42:33
+ * @since 1.0, 2025-07-25 21:42:33
  */
 public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3355339418882655224L;
+	private static final long serialVersionUID = 8582166923177156323L;
 
 	/** 
 	 * 订单收货地址
@@ -75,6 +76,12 @@ public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("order_create_time")
 	private Date orderCreateTime;
+
+	/** 
+	 * 交易组件订单号
+	 */
+	@ApiField("order_id")
+	private String orderId;
 
 	/** 
 	 * 订单类型
@@ -138,6 +145,13 @@ public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 	private RentSubMerchantVO subMerchant;
 
 	/** 
+	 * 原订单关联的买断或续租子订单号列表
+	 */
+	@ApiListField("sub_order_ids")
+	@ApiField("string")
+	private List<String> subOrderIds;
+
+	/** 
 	 * 租赁订单标题，用于支付宝小程序订单中心、芝麻租赁频道中对用户展示
 	 */
 	@ApiField("title")
@@ -148,6 +162,13 @@ public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("trade_app_id")
 	private String tradeAppId;
+
+	/** 
+	 * 用户归还物流信息
+	 */
+	@ApiListField("user_delivery_logistics_infos")
+	@ApiField("rent_fulfillment_delivery_info_v_o")
+	private List<RentFulfillmentDeliveryInfoVO> userDeliveryLogisticsInfos;
 
 	public void setAddressInfo(RentOrderReceiverAddressInfoVO addressInfo) {
 		this.addressInfo = addressInfo;
@@ -203,6 +224,13 @@ public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 	}
 	public Date getOrderCreateTime( ) {
 		return this.orderCreateTime;
+	}
+
+	public void setOrderId(String orderId) {
+		this.orderId = orderId;
+	}
+	public String getOrderId( ) {
+		return this.orderId;
 	}
 
 	public void setOrderType(String orderType) {
@@ -275,6 +303,13 @@ public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 		return this.subMerchant;
 	}
 
+	public void setSubOrderIds(List<String> subOrderIds) {
+		this.subOrderIds = subOrderIds;
+	}
+	public List<String> getSubOrderIds( ) {
+		return this.subOrderIds;
+	}
+
 	public void setTitle(String title) {
 		this.title = title;
 	}
@@ -287,6 +322,13 @@ public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 	}
 	public String getTradeAppId( ) {
 		return this.tradeAppId;
+	}
+
+	public void setUserDeliveryLogisticsInfos(List<RentFulfillmentDeliveryInfoVO> userDeliveryLogisticsInfos) {
+		this.userDeliveryLogisticsInfos = userDeliveryLogisticsInfos;
+	}
+	public List<RentFulfillmentDeliveryInfoVO> getUserDeliveryLogisticsInfos( ) {
+		return this.userDeliveryLogisticsInfos;
 	}
 
 }

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.community.deliveryidentity.detect request
  * 
  * @author auto create
- * @since 1.0, 2025-05-24 20:22:26
+ * @since 1.0, 2025-07-22 15:52:34
  */
 public class AlipayEbppCommunityDeliveryidentityDetectRequest implements AlipayRequest<AlipayEbppCommunityDeliveryidentityDetectResponse> {
 

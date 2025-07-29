@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 正向通用发票商品信息
  *
  * @author auto create
- * @since 1.0, 2025-07-09 16:26:26
+ * @since 1.0, 2025-07-25 14:01:50
  */
 public class IndustryInvoiceItemInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1217328743494255259L;
+	private static final long serialVersionUID = 8194621912616838151L;
 
 	/**
 	 * 优惠政策标识
@@ -33,7 +33,7 @@ public class IndustryInvoiceItemInfo extends AlipayObject {
 	private String invoiceLineProperty;
 
 	/**
-	 * 开票金额（含税金额），单位：元
+	 * 开票金额：总位数20位，最多16位整数，最多2位小数，单位：元
 	 */
 	@ApiField("item_amount")
 	private String itemAmount;
@@ -51,7 +51,7 @@ public class IndustryInvoiceItemInfo extends AlipayObject {
 	private String itemName;
 
 	/**
-	 * 商品数量，整数位最长七位，小数位最长六位
+	 * 商品数量：总27位数，最多15位整数，最多10位小数
 	 */
 	@ApiField("item_num")
 	private String itemNum;

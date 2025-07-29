@@ -12,11 +12,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.sideloanlend.calc.consult response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-18 11:08:38
+ * @since 1.0, 2025-07-25 15:02:33
  */
 public class AlipayPcreditLoanSideloanlendCalcConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4333186562479296317L;
+	private static final long serialVersionUID = 2826815813416226311L;
+
+	/** 
+	 * 试算是否准入
+	 */
+	@ApiField("admit")
+	private Boolean admit;
 
 	/** 
 	 * 本次试算使用的营销卡券列表
@@ -42,6 +48,18 @@ public class AlipayPcreditLoanSideloanlendCalcConsultResponse extends AlipayResp
 	 */
 	@ApiField("extension")
 	private String extension;
+
+	/** 
+	 * 拒绝必填，支用拒绝原因code
+	 */
+	@ApiField("fail_reason_code")
+	private String failReasonCode;
+
+	/** 
+	 * 咨询不准入时拒绝原因描述
+	 */
+	@ApiField("fail_reason_message")
+	private String failReasonMessage;
 
 	/** 
 	 * 放款机构
@@ -116,6 +134,13 @@ public class AlipayPcreditLoanSideloanlendCalcConsultResponse extends AlipayResp
 	@ApiField("total_amount")
 	private String totalAmount;
 
+	public void setAdmit(Boolean admit) {
+		this.admit = admit;
+	}
+	public Boolean getAdmit( ) {
+		return this.admit;
+	}
+
 	public void setCouponCodeList(List<String> couponCodeList) {
 		this.couponCodeList = couponCodeList;
 	}
@@ -142,6 +167,20 @@ public class AlipayPcreditLoanSideloanlendCalcConsultResponse extends AlipayResp
 	}
 	public String getExtension( ) {
 		return this.extension;
+	}
+
+	public void setFailReasonCode(String failReasonCode) {
+		this.failReasonCode = failReasonCode;
+	}
+	public String getFailReasonCode( ) {
+		return this.failReasonCode;
+	}
+
+	public void setFailReasonMessage(String failReasonMessage) {
+		this.failReasonMessage = failReasonMessage;
+	}
+	public String getFailReasonMessage( ) {
+		return this.failReasonMessage;
 	}
 
 	public void setFundSupplier(SideloanInstitution fundSupplier) {

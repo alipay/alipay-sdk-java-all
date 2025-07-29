@@ -18,11 +18,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.item.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-14 11:42:31
+ * @since 1.0, 2025-07-24 16:52:33
  */
 public class AlipayOpenAppItemQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7888371534562841777L;
+	private static final long serialVersionUID = 7354254477226871554L;
 
 	/** 
 	 * 商品属性列表，kv形式
@@ -44,7 +44,7 @@ public class AlipayOpenAppItemQueryResponse extends AlipayResponse {
 	private String barcode;
 
 	/** 
-	 * 商品业务模式，租赁业务模式包含（短租：0；长租：1；先租后买 ： 2）
+	 * 商品业务模式，租赁业务模式包含（短租：0；长租：1）
 	 */
 	@ApiField("business_model")
 	private String businessModel;

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.misetorder.orderno.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2025-04-17 20:53:02
+ * @since 1.0, 2025-07-24 09:56:43
  */
 public class AlipayCommerceMedicalMisetorderOrdernoBatchqueryRequest implements AlipayRequest<AlipayCommerceMedicalMisetorderOrdernoBatchqueryResponse> {
 

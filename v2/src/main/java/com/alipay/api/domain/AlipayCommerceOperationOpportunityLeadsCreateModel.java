@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建门店提交leads作业接口
  *
  * @author auto create
- * @since 1.0, 2025-07-09 10:36:38
+ * @since 1.0, 2025-07-21 23:52:41
  */
 public class AlipayCommerceOperationOpportunityLeadsCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3463583968335914118L;
+	private static final long serialVersionUID = 4119188338649744685L;
 
 	/**
 	 * 业务主体

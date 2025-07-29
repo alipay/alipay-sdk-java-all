@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommercePropertyNfctagDownloadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1743881898381525492L;
+	private static final long serialVersionUID = 2212414715634256381L;
 
 	/**
 	 * 业务类型

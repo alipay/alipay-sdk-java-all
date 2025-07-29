@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 青凉测试003
  *
  * @author auto create
- * @since 1.0, 2025-07-21 11:42:32
+ * @since 1.0, 2025-07-24 11:02:34
  */
 public class AlipaySecurityDataQingliangceshiCeshiceshiceshiQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1681368593663376974L;
+	private static final long serialVersionUID = 3313439679878197323L;
 
 	/**
-	 * 测试目标
+	 * 测试目标前端
 	 */
 	@ApiField("blance")
 	private String blance;

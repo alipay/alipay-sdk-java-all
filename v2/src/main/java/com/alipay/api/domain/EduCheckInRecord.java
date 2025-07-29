@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签到记录
  *
  * @author auto create
- * @since 1.0, 2025-07-09 14:35:02
+ * @since 1.0, 2025-07-24 14:19:40
  */
 public class EduCheckInRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 1362668663331489543L;
+	private static final long serialVersionUID = 2267582351511677549L;
 
 	/**
 	 * 签到图片链接
@@ -26,6 +26,12 @@ public class EduCheckInRecord extends AlipayObject {
 	 */
 	@ApiField("check_in_result")
 	private String checkInResult;
+
+	/**
+	 * 签到来源类型
+	 */
+	@ApiField("check_in_source_type")
+	private String checkInSourceType;
 
 	/**
 	 * 签到时间
@@ -50,6 +56,18 @@ public class EduCheckInRecord extends AlipayObject {
 	 */
 	@ApiField("inst_id")
 	private String instId;
+
+	/**
+	 * 纬度
+	 */
+	@ApiField("latitude")
+	private String latitude;
+
+	/**
+	 * 经度
+	 */
+	@ApiField("longitude")
+	private String longitude;
 
 	/**
 	 * 姓名
@@ -107,6 +125,13 @@ public class EduCheckInRecord extends AlipayObject {
 		this.checkInResult = checkInResult;
 	}
 
+	public String getCheckInSourceType() {
+		return this.checkInSourceType;
+	}
+	public void setCheckInSourceType(String checkInSourceType) {
+		this.checkInSourceType = checkInSourceType;
+	}
+
 	public Date getCheckInTime() {
 		return this.checkInTime;
 	}
@@ -133,6 +158,20 @@ public class EduCheckInRecord extends AlipayObject {
 	}
 	public void setInstId(String instId) {
 		this.instId = instId;
+	}
+
+	public String getLatitude() {
+		return this.latitude;
+	}
+	public void setLatitude(String latitude) {
+		this.latitude = latitude;
+	}
+
+	public String getLongitude() {
+		return this.longitude;
+	}
+	public void setLongitude(String longitude) {
+		this.longitude = longitude;
 	}
 
 	public String getName() {

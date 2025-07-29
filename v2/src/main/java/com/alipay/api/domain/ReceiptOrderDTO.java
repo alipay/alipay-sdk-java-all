@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ReceiptOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2623664297516178828L;
+	private static final long serialVersionUID = 5296831999457968122L;
 
 	/**
 	 * 支付宝用户openid

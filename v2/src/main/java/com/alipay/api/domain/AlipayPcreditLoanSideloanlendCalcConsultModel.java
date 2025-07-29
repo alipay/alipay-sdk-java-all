@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 随身贷支用试算
  *
  * @author auto create
- * @since 1.0, 2025-05-26 11:42:04
+ * @since 1.0, 2025-07-25 14:59:44
  */
 public class AlipayPcreditLoanSideloanlendCalcConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2421557294816946889L;
+	private static final long serialVersionUID = 4697464957247392476L;
 
 	/**
 	 * 支付宝用户id，客户在支付宝的身份证
@@ -60,6 +60,12 @@ DAY -- "日"
 	 */
 	@ApiField("loan_term_unit")
 	private String loanTermUnit;
+
+	/**
+	 * 支用类型
+	 */
+	@ApiField("loan_type")
+	private String loanType;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识
@@ -129,6 +135,13 @@ BALLOON_MORTGAGE按期付息到期还本
 	}
 	public void setLoanTermUnit(String loanTermUnit) {
 		this.loanTermUnit = loanTermUnit;
+	}
+
+	public String getLoanType() {
+		return this.loanType;
+	}
+	public void setLoanType(String loanType) {
+		this.loanType = loanType;
 	}
 
 	public String getOpenId() {

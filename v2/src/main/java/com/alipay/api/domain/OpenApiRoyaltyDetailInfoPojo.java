@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资产类型信息变更
  *
  * @author auto create
- * @since 1.0, 2024-12-20 21:41:16
+ * @since 1.0, 2025-07-24 21:07:37
  */
 public class OpenApiRoyaltyDetailInfoPojo extends AlipayObject {
 
-	private static final long serialVersionUID = 8335355418915527587L;
+	private static final long serialVersionUID = 5656363848339924222L;
 
 	/**
 	 * 分账的金额，单位为元
@@ -44,7 +44,7 @@ public class OpenApiRoyaltyDetailInfoPojo extends AlipayObject {
 	private String royaltyType;
 
 	/**
-	 * 收入方账户。如果收入方账户类型为userId，本参数为收入方的支付宝账号对应的支付宝唯一用户号，以2088开头的纯16位数字；如果收入方类型为cardAliasNo，本参数为收入方在支付宝绑定的卡编号；如果收入方类型为loginName，本参数为收入方的支付宝登录号；
+	 * 收入方账户。如果收入方账户类型为userId，本参数为收入方的支付宝账号对应的支付宝唯一用户号，以2088开头的纯16位数字；如果收入方类型为cardAliasNo，本参数为收入方在支付宝绑定的卡编号；如果收入方类型为loginName，本参数为收入方的支付宝登录号；如果收入方类型为openId，本参数为收入方的支付宝openId信息
 	 */
 	@ApiField("trans_in")
 	private String transIn;

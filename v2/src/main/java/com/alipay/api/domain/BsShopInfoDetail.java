@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 提报门店信息对应模型
  *
  * @author auto create
- * @since 1.0, 2025-06-22 11:01:46
+ * @since 1.0, 2025-07-21 23:52:41
  */
 public class BsShopInfoDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5869898547545635199L;
+	private static final long serialVersionUID = 8813819732335277116L;
 
 	/**
 	 * 提报门店对应的详细地址

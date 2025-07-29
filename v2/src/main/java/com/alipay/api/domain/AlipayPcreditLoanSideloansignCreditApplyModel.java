@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 随身贷授信申请提交
  *
  * @author auto create
- * @since 1.0, 2025-07-10 14:48:20
+ * @since 1.0, 2025-07-25 14:59:46
  */
 public class AlipayPcreditLoanSideloansignCreditApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2825263486254452344L;
+	private static final long serialVersionUID = 4714937791144729175L;
 
 	/**
 	 * 签约发奖的活动id，无发奖活动时可为空

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VcpAssetDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1179938812215344819L;
+	private static final long serialVersionUID = 8755234688115389765L;
 
 	/**
 	 * 资金金额

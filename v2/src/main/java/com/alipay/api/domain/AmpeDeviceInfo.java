@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AmpeDeviceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5516312438768325666L;
+	private static final long serialVersionUID = 3769686697971945963L;
 
 	/**
 	 * 支付宝卡片的高度，单位：像素

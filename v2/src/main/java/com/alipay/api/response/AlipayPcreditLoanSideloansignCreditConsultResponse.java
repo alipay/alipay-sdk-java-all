@@ -1,6 +1,7 @@
 package com.alipay.api.response;
 
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.domain.GrantBankCard;
 import com.alipay.api.domain.InstitutionVO;
 
 import com.alipay.api.AlipayResponse;
@@ -9,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.sideloansign.credit.consult response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-18 13:38:37
+ * @since 1.0, 2025-07-25 15:02:33
  */
 public class AlipayPcreditLoanSideloansignCreditConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2456252344139352892L;
+	private static final long serialVersionUID = 7622449764834149437L;
 
 	/** 
 	 * true - 有签约方案
@@ -33,6 +34,12 @@ false - 无签约方案
 	 */
 	@ApiField("cool_off_type")
 	private String coolOffType;
+
+	/** 
+	 * 默认放款卡，只有签支合一才有，可能会空
+	 */
+	@ApiField("default_bank_card")
+	private GrantBankCard defaultBankCard;
 
 	/** 
 	 * 扩展信息
@@ -113,6 +120,13 @@ false - 无签约方案
 	}
 	public String getCoolOffType( ) {
 		return this.coolOffType;
+	}
+
+	public void setDefaultBankCard(GrantBankCard defaultBankCard) {
+		this.defaultBankCard = defaultBankCard;
+	}
+	public GrantBankCard getDefaultBankCard( ) {
+		return this.defaultBankCard;
 	}
 
 	public void setExtension(String extension) {

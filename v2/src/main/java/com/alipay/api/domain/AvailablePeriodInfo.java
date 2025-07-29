@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AvailablePeriodInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3751643839964117566L;
+	private static final long serialVersionUID = 8873313622266198991L;
 
 	/**
 	 * 每周可用天列表。格式为星期几并用逗号分隔。如周一周二可用则为“1,2”，周五周六可用则为"5,6"

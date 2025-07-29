@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.place.info.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-09 10:02:28
+ * @since 1.0, 2025-07-23 14:52:33
  */
 public class AlipayCommerceEducatePlaceInfoCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1282961736713359235L;
+	private static final long serialVersionUID = 8415194463743829776L;
 
 	/** 
 	 * 不在花名册中的学工号列表
@@ -23,11 +23,24 @@ public class AlipayCommerceEducatePlaceInfoCreateResponse extends AlipayResponse
 	@ApiField("string")
 	private List<String> notExistEmployeeNoList;
 
+	/** 
+	 * 位置id
+	 */
+	@ApiField("place_id")
+	private String placeId;
+
 	public void setNotExistEmployeeNoList(List<String> notExistEmployeeNoList) {
 		this.notExistEmployeeNoList = notExistEmployeeNoList;
 	}
 	public List<String> getNotExistEmployeeNoList( ) {
 		return this.notExistEmployeeNoList;
+	}
+
+	public void setPlaceId(String placeId) {
+		this.placeId = placeId;
+	}
+	public String getPlaceId( ) {
+		return this.placeId;
 	}
 
 }

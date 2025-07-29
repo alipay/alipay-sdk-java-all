@@ -10,11 +10,24 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 该数据结构用于承载供应商发起未妥投对应的运单号和sn列表
  *
  * @author auto create
- * @since 1.0, 2023-11-24 16:04:59
+ * @since 1.0, 2025-07-24 17:27:19
  */
 public class AssetReverseSupplierApplyExpressSnDetails extends AlipayObject {
 
-	private static final long serialVersionUID = 3383744717873646817L;
+	private static final long serialVersionUID = 6688153915621616598L;
+
+	/**
+	 * 未妥投申请数量，无SN未妥投时必传
+	 */
+	@ApiField("apply_count")
+	private String applyCount;
+
+	/**
+	 * 逆向退回的物料明细：后续供应商收货拆包后直接扫描品条码，若判断品名有sn则需仓库进行sn信息反馈
+	 */
+	@ApiListField("asset_reverse_item_details")
+	@ApiField("asset_reverse_item_detail")
+	private List<AssetReverseItemDetail> assetReverseItemDetails;
 
 	/**
 	 * 物流信息
@@ -28,6 +41,20 @@ public class AssetReverseSupplierApplyExpressSnDetails extends AlipayObject {
 	@ApiListField("sn_records")
 	@ApiField("string")
 	private List<String> snRecords;
+
+	public String getApplyCount() {
+		return this.applyCount;
+	}
+	public void setApplyCount(String applyCount) {
+		this.applyCount = applyCount;
+	}
+
+	public List<AssetReverseItemDetail> getAssetReverseItemDetails() {
+		return this.assetReverseItemDetails;
+	}
+	public void setAssetReverseItemDetails(List<AssetReverseItemDetail> assetReverseItemDetails) {
+		this.assetReverseItemDetails = assetReverseItemDetails;
+	}
 
 	public LogisticsInfo getLogisticsInfos() {
 		return this.logisticsInfos;

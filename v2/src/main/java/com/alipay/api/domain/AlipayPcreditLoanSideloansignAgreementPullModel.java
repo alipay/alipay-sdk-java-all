@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 代签协议获取
  *
  * @author auto create
- * @since 1.0, 2025-05-12 09:54:20
+ * @since 1.0, 2025-07-25 14:59:53
  */
 public class AlipayPcreditLoanSideloansignAgreementPullModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3453378137554399295L;
+	private static final long serialVersionUID = 7146515573486373826L;
 
 	/**
 	 * 信贷业务场景类型Code
@@ -64,6 +64,12 @@ public class AlipayPcreditLoanSideloansignAgreementPullModel extends AlipayObjec
 	 */
 	@ApiField("product_code")
 	private String productCode;
+
+	/**
+	 * 子授信模式，目前仅在签支合一的情况下传入
+	 */
+	@ApiField("sub_credit_type")
+	private String subCreditType;
 
 	public String getAgreementType() {
 		return this.agreementType;
@@ -119,6 +125,13 @@ public class AlipayPcreditLoanSideloansignAgreementPullModel extends AlipayObjec
 	}
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
+	}
+
+	public String getSubCreditType() {
+		return this.subCreditType;
+	}
+	public void setSubCreditType(String subCreditType) {
+		this.subCreditType = subCreditType;
 	}
 
 }

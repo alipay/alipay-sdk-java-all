@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CampaignExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7258888217746249571L;
+	private static final long serialVersionUID = 5897761643141683185L;
 
 	/**
 	 * 用户不活跃间隔时间，当用户集点满足阙值且满足不活跃间隔时间后，发送召回通知

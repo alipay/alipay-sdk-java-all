@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PdfCertificateResult extends AlipayObject {
 
-	private static final long serialVersionUID = 5234862221726866139L;
+	private static final long serialVersionUID = 1341372992366743596L;
 
 	/**
 	 * 颁发者

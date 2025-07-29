@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenBiosearchBiogroupIdentifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4169315791356985122L;
+	private static final long serialVersionUID = 3292186784469424143L;
 
 	/**
 	 * 随机数，用于排查定位每笔请求

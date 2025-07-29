@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.recycle.order.delegate.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2025-07-21 14:47:34
+ * @since 1.0, 2025-07-23 11:27:33
  */
 public class AlipayCommerceRecycleOrderDelegateBatchqueryRequest implements AlipayRequest<AlipayCommerceRecycleOrderDelegateBatchqueryResponse> {
 

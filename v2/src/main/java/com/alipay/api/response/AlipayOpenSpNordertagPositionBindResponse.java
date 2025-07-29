@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.nordertag.position.bind response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-10 19:27:29
+ * @since 1.0, 2025-07-28 11:34:04
  */
 public class AlipayOpenSpNordertagPositionBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6868633645876619244L;
+	private static final long serialVersionUID = 6275314942882467217L;
 
 	/** 
 	 * 绑定操作结果

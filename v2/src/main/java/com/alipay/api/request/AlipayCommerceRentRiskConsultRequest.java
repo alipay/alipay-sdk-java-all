@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.rent.risk.consult request
  * 
  * @author auto create
- * @since 1.0, 2025-07-21 11:42:32
+ * @since 1.0, 2025-07-28 16:22:34
  */
 public class AlipayCommerceRentRiskConsultRequest implements AlipayRequest<AlipayCommerceRentRiskConsultResponse> {
 
@@ -19,7 +19,7 @@ public class AlipayCommerceRentRiskConsultRequest implements AlipayRequest<Alipa
 	private String apiVersion="1.0";
 
 	/** 
-	* 租赁行业风险咨询接口，通过商家侧唯一订单号 out_biz_no、uid/openid，查询当前订单用户的共租风险等级、小程序交易健康度等数据信息。
+	* 租赁行业风险咨询接口，通过商家侧唯一订单号 out_biz_no、uid/openid，查询当前订单用户的共租风险等级、综合风险等级等数据信息。
 	 */
 	private String bizContent;
 

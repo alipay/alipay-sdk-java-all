@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 配送指令增加正向业务场景
  *
  * @author auto create
- * @since 1.0, 2025-06-06 15:11:08
+ * @since 1.0, 2025-07-24 17:27:21
  */
 public class AssetDeliveryItem extends AlipayObject {
 
-	private static final long serialVersionUID = 1899194674717796753L;
+	private static final long serialVersionUID = 3368994937899923222L;
 
 	/**
 	 * SEND - 发货指令(执行向目的地进行发货动作) , RECEIVE - 收货指令(执行从来源地进行收货动作)
@@ -204,6 +204,19 @@ N 不需要合单
 	 */
 	@ApiField("operate_info")
 	private String operateInfo;
+
+	/**
+	 * 是否有选配物料
+	 */
+	@ApiField("optional_item_flag")
+	private String optionalItemFlag;
+
+	/**
+	 * 是否有选配物料标识
+	 */
+	@ApiListField("optional_item_infos")
+	@ApiField("optional_item_info")
+	private List<OptionalItemInfo> optionalItemInfos;
 
 	/**
 	 * 公司主体代码
@@ -499,6 +512,20 @@ N 不需要合单
 	}
 	public void setOperateInfo(String operateInfo) {
 		this.operateInfo = operateInfo;
+	}
+
+	public String getOptionalItemFlag() {
+		return this.optionalItemFlag;
+	}
+	public void setOptionalItemFlag(String optionalItemFlag) {
+		this.optionalItemFlag = optionalItemFlag;
+	}
+
+	public List<OptionalItemInfo> getOptionalItemInfos() {
+		return this.optionalItemInfos;
+	}
+	public void setOptionalItemInfos(List<OptionalItemInfo> optionalItemInfos) {
+		this.optionalItemInfos = optionalItemInfos;
 	}
 
 	public String getOuCode() {

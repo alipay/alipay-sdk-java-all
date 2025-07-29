@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.precreate.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-14 19:26:39
+ * @since 1.0, 2025-07-21 21:37:34
  */
 public class AlipayTradePrecreateConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4133987661157955478L;
+	private static final long serialVersionUID = 8196275342864712566L;
 
 	/** 
 	 * 收单模式
@@ -31,6 +31,12 @@ normalOrderMode
 	 */
 	@ApiField("acquiring_mode")
 	private String acquiringMode;
+
+	/** 
+	 * 该参数代表该笔交易购买者的资产渠道的路由标识，cngw代表走中国统一网关，空或者无改key则是网联
+	 */
+	@ApiField("expect_channel_route")
+	private String expectChannelRoute;
 
 	/** 
 	 * 间联商户信息,若商户是间联商户则必选
@@ -129,6 +135,13 @@ normalOrderMode
 	}
 	public String getAcquiringMode( ) {
 		return this.acquiringMode;
+	}
+
+	public void setExpectChannelRoute(String expectChannelRoute) {
+		this.expectChannelRoute = expectChannelRoute;
+	}
+	public String getExpectChannelRoute( ) {
+		return this.expectChannelRoute;
 	}
 
 	public void setIndirectMerchantInfo(TradePrecreateConfirmIndirectMerchantInfo indirectMerchantInfo) {

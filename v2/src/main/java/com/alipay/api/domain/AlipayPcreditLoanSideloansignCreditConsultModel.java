@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 随身贷授信方案咨询
  *
  * @author auto create
- * @since 1.0, 2025-05-12 11:37:20
+ * @since 1.0, 2025-07-25 14:59:41
  */
 public class AlipayPcreditLoanSideloansignCreditConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3333656726857963526L;
+	private static final long serialVersionUID = 6886198889289484331L;
 
 	/**
 	 * 支付宝用户id，客户在支付宝的身份证
@@ -48,6 +48,12 @@ public class AlipayPcreditLoanSideloansignCreditConsultModel extends AlipayObjec
 	 */
 	@ApiField("product_code")
 	private String productCode;
+
+	/**
+	 * 子授信模式
+	 */
+	@ApiField("sub_credit_type")
+	private String subCreditType;
 
 	public String getAlipayUserId() {
 		return this.alipayUserId;
@@ -89,6 +95,13 @@ public class AlipayPcreditLoanSideloansignCreditConsultModel extends AlipayObjec
 	}
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
+	}
+
+	public String getSubCreditType() {
+		return this.subCreditType;
+	}
+	public void setSubCreditType(String subCreditType) {
+		this.subCreditType = subCreditType;
 	}
 
 }

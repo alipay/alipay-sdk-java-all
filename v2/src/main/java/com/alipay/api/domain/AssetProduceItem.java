@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 物料生产指令对象, 包括物料生产的相关信息: 订单明细ID, 申请单号, 模板ID, 物料名称, 物料图片Url, 数量,  申请日期,收货人姓名,联系人电话,收货人地址等.
  *
  * @author auto create
- * @since 1.0, 2025-06-06 15:39:58
+ * @since 1.0, 2025-07-24 17:18:14
  */
 public class AssetProduceItem extends AlipayObject {
 
-	private static final long serialVersionUID = 2338315266478948553L;
+	private static final long serialVersionUID = 8722147224854997558L;
 
 	/**
 	 * 生产指令动作类别：套组则为ASSEMBLE，组装
@@ -155,6 +155,19 @@ public class AssetProduceItem extends AlipayObject {
 	 */
 	@ApiField("memo")
 	private String memo;
+
+	/**
+	 * 是否有选配物料标识
+	 */
+	@ApiField("optional_item_flag")
+	private String optionalItemFlag;
+
+	/**
+	 * 选配物料信息列表
+	 */
+	@ApiListField("optional_item_infos")
+	@ApiField("optional_item_info")
+	private List<OptionalItemInfo> optionalItemInfos;
 
 	/**
 	 * 公司主体代码
@@ -442,6 +455,20 @@ public class AssetProduceItem extends AlipayObject {
 	}
 	public void setMemo(String memo) {
 		this.memo = memo;
+	}
+
+	public String getOptionalItemFlag() {
+		return this.optionalItemFlag;
+	}
+	public void setOptionalItemFlag(String optionalItemFlag) {
+		this.optionalItemFlag = optionalItemFlag;
+	}
+
+	public List<OptionalItemInfo> getOptionalItemInfos() {
+		return this.optionalItemInfos;
+	}
+	public void setOptionalItemInfos(List<OptionalItemInfo> optionalItemInfos) {
+		this.optionalItemInfos = optionalItemInfos;
 	}
 
 	public String getOuCode() {

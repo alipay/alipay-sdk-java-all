@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 供应商逆向申请明细
  *
  * @author auto create
- * @since 1.0, 2024-06-03 14:37:50
+ * @since 1.0, 2025-07-24 17:27:19
  */
 public class AssetReverseSupplierApplyDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6844976186838644632L;
+	private static final long serialVersionUID = 7319796167526993995L;
 
 	/**
 	 * ["发起未妥投的sn和物流信息1","发起未妥投的sn和物流信息2"]
@@ -22,6 +22,12 @@ public class AssetReverseSupplierApplyDetail extends AlipayObject {
 	@ApiListField("express_sn_details")
 	@ApiField("asset_reverse_supplier_apply_express_sn_details")
 	private List<AssetReverseSupplierApplyExpressSnDetails> expressSnDetails;
+
+	/**
+	 * 未妥投类型，默认REVERSE_SUPPLIER_WITH_SN 有SN未妥投
+	 */
+	@ApiField("reverse_supplier_type")
+	private String reverseSupplierType;
 
 	/**
 	 * 发起未妥投供应商id
@@ -46,6 +52,13 @@ public class AssetReverseSupplierApplyDetail extends AlipayObject {
 	}
 	public void setExpressSnDetails(List<AssetReverseSupplierApplyExpressSnDetails> expressSnDetails) {
 		this.expressSnDetails = expressSnDetails;
+	}
+
+	public String getReverseSupplierType() {
+		return this.reverseSupplierType;
+	}
+	public void setReverseSupplierType(String reverseSupplierType) {
+		this.reverseSupplierType = reverseSupplierType;
 	}
 
 	public String getSupplierId() {

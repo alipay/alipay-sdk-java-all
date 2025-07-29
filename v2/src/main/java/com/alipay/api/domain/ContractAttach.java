@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ContractAttach extends AlipayObject {
 
-	private static final long serialVersionUID = 7346998145869547262L;
+	private static final long serialVersionUID = 3415537982857227614L;
 
 	/**
 	 * 合同附件业务状态 申请用印时传递 已定稿 CREATED 已创建 CONFIRMED 已定稿 DELETE 已删除

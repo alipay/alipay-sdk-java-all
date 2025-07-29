@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayTradeDeductMergePayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5267649612679524661L;
+	private static final long serialVersionUID = 8464737666511473886L;
 
 	/** 
 	 * 用户userId，2088开头

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenIotvspFaceimgstateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8165939185771799861L;
+	private static final long serialVersionUID = 2862825194215873914L;
 
 	/**
 	 * 刷脸产生的ftoken

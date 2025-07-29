@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenAppRoomrentDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1787752755158732115L;
+	private static final long serialVersionUID = 2382778461122932257L;
 
 	/** 
 	 * 支付宝平台侧商品ID列表，最多20个。

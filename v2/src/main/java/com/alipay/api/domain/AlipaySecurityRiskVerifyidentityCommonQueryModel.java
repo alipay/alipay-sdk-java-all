@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 核身相关通用类查询
  *
  * @author auto create
- * @since 1.0, 2022-03-21 20:37:01
+ * @since 1.0, 2025-07-21 17:08:41
  */
 public class AlipaySecurityRiskVerifyidentityCommonQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6565258784515649759L;
+	private static final long serialVersionUID = 4873656992382569896L;
 
 	/**
 	 * 根据不同的值选择查询接口的查询类型：

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceTransportEbikeBindSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7394361661454392928L;
+	private static final long serialVersionUID = 6319662757827251134L;
 
 	/**
 	 * 电动车品牌绑定状态列表

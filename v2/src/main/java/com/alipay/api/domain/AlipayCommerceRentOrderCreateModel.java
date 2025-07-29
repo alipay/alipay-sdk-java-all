@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租赁订单创建
  *
  * @author auto create
- * @since 1.0, 2025-07-16 19:25:03
+ * @since 1.0, 2025-07-22 20:49:53
  */
 public class AlipayCommerceRentOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3571775341617698948L;
+	private static final long serialVersionUID = 6326214224113148455L;
+
+	/**
+	 * 优惠前置咨询组件返回的优惠活动咨询ID
+	 */
+	@ApiField("activity_consult_id")
+	private String activityConsultId;
 
 	/**
 	 * 订单收货地址
@@ -154,6 +160,13 @@ public class AlipayCommerceRentOrderCreateModel extends AlipayObject {
 	 */
 	@ApiField("zst_info")
 	private RentZstInfoDTO zstInfo;
+
+	public String getActivityConsultId() {
+		return this.activityConsultId;
+	}
+	public void setActivityConsultId(String activityConsultId) {
+		this.activityConsultId = activityConsultId;
+	}
 
 	public RentOrderReceiverAddressInfoDTO getAddressInfo() {
 		return this.addressInfo;

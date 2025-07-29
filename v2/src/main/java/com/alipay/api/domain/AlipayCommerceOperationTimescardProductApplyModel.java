@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceOperationTimescardProductApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7515295141113568422L;
+	private static final long serialVersionUID = 2511422877476891532L;
 
 	/**
 	 * 预付宝：ALIPAY_YUFUBAO
