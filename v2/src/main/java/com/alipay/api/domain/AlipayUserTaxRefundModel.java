@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 离境退税服务
  *
  * @author auto create
- * @since 1.0, 2025-07-01 20:29:07
+ * @since 1.0, 2025-07-29 15:52:01
  */
 public class AlipayUserTaxRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1169977973814872139L;
+	private static final long serialVersionUID = 3892251276926294912L;
 
 	/**
 	 * 资金记账本id

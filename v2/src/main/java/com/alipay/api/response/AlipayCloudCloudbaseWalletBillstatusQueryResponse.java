@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.wallet.billstatus.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-27 17:52:05
+ * @since 1.0, 2025-08-04 11:08:37
  */
 public class AlipayCloudCloudbaseWalletBillstatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5479627932137583499L;
+	private static final long serialVersionUID = 7253886751654731432L;
 
 	/** 
 	 * 出账状态

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.database.slowsqldetail.query request
  * 
  * @author auto create
- * @since 1.0, 2024-05-28 11:37:04
+ * @since 1.0, 2025-08-04 11:09:40
  */
 public class AlipayCloudCloudbaseDatabaseSlowsqldetailQueryRequest implements AlipayRequest<AlipayCloudCloudbaseDatabaseSlowsqldetailQueryResponse> {
 

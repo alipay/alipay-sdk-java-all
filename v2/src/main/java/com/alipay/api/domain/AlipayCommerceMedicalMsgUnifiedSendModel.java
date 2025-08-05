@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗行业就医就医消息统一发送
  *
  * @author auto create
- * @since 1.0, 2025-05-22 10:45:19
+ * @since 1.0, 2025-08-04 16:34:41
  */
 public class AlipayCommerceMedicalMsgUnifiedSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3628222848691722818L;
+	private static final long serialVersionUID = 3371358858758923295L;
 
 	/**
 	 * 支付宝openid
@@ -36,10 +36,28 @@ alipay.medical.nosubscribe.msg.send 免订阅服务
 	private String apiService;
 
 	/**
+	 * 报表统计的维度属性，各业务部门新增
+	 */
+	@ApiField("ext_info")
+	private String extInfo;
+
+	/**
 	 * 扩展参数
 	 */
 	@ApiField("ext_params")
 	private String extParams;
+
+	/**
+	 * 业务方的分院区编码，当有重复院区名称时用来定位
+	 */
+	@ApiField("hospital_code")
+	private String hospitalCode;
+
+	/**
+	 * 具体到某个分院区的消息
+	 */
+	@ApiField("hospital_name")
+	private String hospitalName;
 
 	/**
 	 * 订单状态
@@ -66,6 +84,12 @@ alipay.medical.nosubscribe.msg.send 免订阅服务
 	private Date orderModifiedTime;
 
 	/**
+	 * 推送该消息的医院
+	 */
+	@ApiField("org_name")
+	private String orgName;
+
+	/**
 	 * 商户订单id，请保持唯一
 	 */
 	@ApiField("out_biz_no")
@@ -82,6 +106,12 @@ alipay.medical.nosubscribe.msg.send 免订阅服务
 	 */
 	@ApiField("template_code")
 	private String templateCode;
+
+	/**
+	 * 发送消息主体的社会信用代码
+	 */
+	@ApiField("uscc")
+	private String uscc;
 
 	/**
 	 * 用户证件号
@@ -116,11 +146,32 @@ alipay.medical.nosubscribe.msg.send 免订阅服务
 		this.apiService = apiService;
 	}
 
+	public String getExtInfo() {
+		return this.extInfo;
+	}
+	public void setExtInfo(String extInfo) {
+		this.extInfo = extInfo;
+	}
+
 	public String getExtParams() {
 		return this.extParams;
 	}
 	public void setExtParams(String extParams) {
 		this.extParams = extParams;
+	}
+
+	public String getHospitalCode() {
+		return this.hospitalCode;
+	}
+	public void setHospitalCode(String hospitalCode) {
+		this.hospitalCode = hospitalCode;
+	}
+
+	public String getHospitalName() {
+		return this.hospitalName;
+	}
+	public void setHospitalName(String hospitalName) {
+		this.hospitalName = hospitalName;
 	}
 
 	public String getMerchantOrderStatus() {
@@ -151,6 +202,13 @@ alipay.medical.nosubscribe.msg.send 免订阅服务
 		this.orderModifiedTime = orderModifiedTime;
 	}
 
+	public String getOrgName() {
+		return this.orgName;
+	}
+	public void setOrgName(String orgName) {
+		this.orgName = orgName;
+	}
+
 	public String getOutBizNo() {
 		return this.outBizNo;
 	}
@@ -170,6 +228,13 @@ alipay.medical.nosubscribe.msg.send 免订阅服务
 	}
 	public void setTemplateCode(String templateCode) {
 		this.templateCode = templateCode;
+	}
+
+	public String getUscc() {
+		return this.uscc;
+	}
+	public void setUscc(String uscc) {
+		this.uscc = uscc;
 	}
 
 	public String getUserCardNo() {

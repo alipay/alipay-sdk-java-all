@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 网吧线圈动销数据查询
  *
  * @author auto create
- * @since 1.0, 2025-06-22 10:42:30
+ * @since 1.0, 2025-07-31 10:52:34
  */
 public class AlipayEbppIndustryInternetbarDevicedataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6368833663424348499L;
+	private static final long serialVersionUID = 6226831787686111562L;
 
 	/**
 	 * 日期格式为yyyy-MM-dd，返回结果中包含该日期的数据。结束日期可以等于开始日期，但不能早于开始日期。最大日期跨度180天。

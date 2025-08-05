@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.adentitylibrary.serviceentity.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-15 12:02:36
+ * @since 1.0, 2025-07-29 17:02:36
  */
 public class AlipayDataDataserviceAdentitylibraryServiceentityBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7649186138453286756L;
+	private static final long serialVersionUID = 1774499574459864359L;
 
 	/** 
 	 * 实体详情信息的列表

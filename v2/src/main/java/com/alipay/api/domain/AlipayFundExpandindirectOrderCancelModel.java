@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金二级商户KYB代进件单取消接口
  *
  * @author auto create
- * @since 1.0, 2025-07-25 16:37:33
+ * @since 1.0, 2025-07-31 17:25:39
  */
 public class AlipayFundExpandindirectOrderCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5737423368121566736L;
+	private static final long serialVersionUID = 6377483529432566387L;
 
 	/**
 	 * 场景码

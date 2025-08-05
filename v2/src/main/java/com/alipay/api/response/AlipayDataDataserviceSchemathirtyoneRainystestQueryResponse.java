@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.schemathirtyone.rainystest.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-28 15:37:52
+ * @since 1.0, 2025-07-29 15:52:34
  */
 public class AlipayDataDataserviceSchemathirtyoneRainystestQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4322798888424954422L;
+	private static final long serialVersionUID = 2819279662872992374L;
 
 	/** 
 	 * test case
@@ -23,13 +23,20 @@ public class AlipayDataDataserviceSchemathirtyoneRainystestQueryResponse extends
 	private String demo;
 
 	/** 
-	 * test case
+	 * test CASE FOR PRE
+	 */
+	@ApiField("demo_empty_vv")
+	private String demoEmptyVv;
+
+	/** 
+	 * test case change the value
 	 */
 	@ApiField("demo_emtpy")
 	private String demoEmtpy;
 
 	/** 
 	 * test case
+change the empty
 	 */
 	@ApiField("demo_other")
 	private String demoOther;
@@ -51,6 +58,13 @@ public class AlipayDataDataserviceSchemathirtyoneRainystestQueryResponse extends
 	}
 	public String getDemo( ) {
 		return this.demo;
+	}
+
+	public void setDemoEmptyVv(String demoEmptyVv) {
+		this.demoEmptyVv = demoEmptyVv;
+	}
+	public String getDemoEmptyVv( ) {
+		return this.demoEmptyVv;
 	}
 
 	public void setDemoEmtpy(String demoEmtpy) {

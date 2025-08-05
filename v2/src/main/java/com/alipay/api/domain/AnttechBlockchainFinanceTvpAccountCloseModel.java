@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户协议解约
  *
  * @author auto create
- * @since 1.0, 2024-10-23 17:07:25
+ * @since 1.0, 2025-07-30 11:56:36
  */
 public class AnttechBlockchainFinanceTvpAccountCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7671873488777167561L;
+	private static final long serialVersionUID = 3763837316187879881L;
 
 	/**
 	 * 账号

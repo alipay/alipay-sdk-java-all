@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PreRepayPlanTermVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1447222422232478415L;
+	private static final long serialVersionUID = 2328737367146445735L;
 
 	/**
 	 * 当期利息

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 收益分配订单查询
  *
  * @author auto create
- * @since 1.0, 2023-07-19 19:25:17
+ * @since 1.0, 2025-07-30 12:00:45
  */
 public class AnttechBlockchainFinanceDistributionBillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4631878742465529883L;
+	private static final long serialVersionUID = 1369579887667877826L;
 
 	/**
 	 * 收益分配账单Id 二选一

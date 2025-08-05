@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ContractApprovalInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2136526428392715165L;
+	private static final long serialVersionUID = 6564579398362768913L;
 
 	/**
 	 * 审批附件url列表

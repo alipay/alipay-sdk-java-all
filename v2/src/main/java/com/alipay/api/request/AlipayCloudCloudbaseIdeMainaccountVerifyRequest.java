@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.ide.mainaccount.verify request
  * 
  * @author auto create
- * @since 1.0, 2024-11-22 09:21:36
+ * @since 1.0, 2025-08-04 10:54:06
  */
 public class AlipayCloudCloudbaseIdeMainaccountVerifyRequest implements AlipayRequest<AlipayCloudCloudbaseIdeMainaccountVerifyResponse> {
 

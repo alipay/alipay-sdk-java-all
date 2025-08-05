@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayContentCommercialInteractivecoreGamestopSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4442265979921572222L;
+	private static final long serialVersionUID = 7735489319117841495L;
 
 	/**
 	 * 玩法token

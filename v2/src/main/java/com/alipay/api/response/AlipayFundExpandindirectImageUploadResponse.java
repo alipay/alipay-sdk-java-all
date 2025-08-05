@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.expandindirect.image.upload response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-25 16:42:37
+ * @since 1.0, 2025-07-29 15:57:37
  */
 public class AlipayFundExpandindirectImageUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6785547442738553854L;
+	private static final long serialVersionUID = 2736978433921184987L;
 
 	/** 
 	 * 文件在平台上传的标识，比如oss的key

@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.place.info.modify response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-09 09:57:26
+ * @since 1.0, 2025-08-04 17:27:35
  */
 public class AlipayCommerceEducatePlaceInfoModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1851696875875619966L;
+	private static final long serialVersionUID = 8297138255158748261L;
 
 	/** 
 	 * 不在花名册中的学工号列表

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.fhyedu.rollcall.sync request
  * 
  * @author auto create
- * @since 1.0, 2025-07-24 10:57:33
+ * @since 1.0, 2025-08-05 14:22:35
  */
 public class AlipayCommerceFhyeduRollcallSyncRequest implements AlipayRequest<AlipayCommerceFhyeduRollcallSyncResponse> {
 

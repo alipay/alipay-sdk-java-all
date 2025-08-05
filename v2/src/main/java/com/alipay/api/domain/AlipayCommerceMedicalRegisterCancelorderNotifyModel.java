@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 号源停诊通知
  *
  * @author auto create
- * @since 1.0, 2025-07-04 18:56:48
+ * @since 1.0, 2025-07-31 17:32:34
  */
 public class AlipayCommerceMedicalRegisterCancelorderNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6143913255146959538L;
+	private static final long serialVersionUID = 8327527555345219933L;
 
 	/**
 	 * 支付宝id(必填)

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝代运营商业关系物理门店资产增查询
  *
  * @author auto create
- * @since 1.0, 2023-09-07 17:45:05
+ * @since 1.0, 2025-07-31 17:09:35
  */
 public class AlipayBusinessRelationShopmemberBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3283946757129646378L;
+	private static final long serialVersionUID = 2292558479143429186L;
 
 	/**
 	 * 商业关系组织id 由组织信息创建接口返回或bd分配或业务标识id，如mallid

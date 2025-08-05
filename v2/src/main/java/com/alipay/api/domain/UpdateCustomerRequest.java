@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * UpdateCustomerRequest
  *
  * @author auto create
- * @since 1.0, 2025-03-03 14:53:54
+ * @since 1.0, 2025-07-31 16:55:05
  */
 public class UpdateCustomerRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 8484268168624749148L;
+	private static final long serialVersionUID = 5866954587559268984L;
 
 	/**
 	 * 客户bd
@@ -50,6 +50,12 @@ public class UpdateCustomerRequest extends AlipayObject {
 	 */
 	@ApiField("customer_industry")
 	private String customerIndustry;
+
+	/**
+	 * 客户常用名
+	 */
+	@ApiField("customer_short_name")
+	private String customerShortName;
 
 	/**
 	 * 客户来源
@@ -217,6 +223,13 @@ public class UpdateCustomerRequest extends AlipayObject {
 	}
 	public void setCustomerIndustry(String customerIndustry) {
 		this.customerIndustry = customerIndustry;
+	}
+
+	public String getCustomerShortName() {
+		return this.customerShortName;
+	}
+	public void setCustomerShortName(String customerShortName) {
+		this.customerShortName = customerShortName;
 	}
 
 	public String getCustomerSource() {

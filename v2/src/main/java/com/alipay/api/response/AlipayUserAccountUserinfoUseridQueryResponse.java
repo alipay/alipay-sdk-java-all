@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.account.userinfo.userid.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-15 20:40:00
+ * @since 1.0, 2025-07-29 15:52:26
  */
 public class AlipayUserAccountUserinfoUseridQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6312445712836246662L;
+	private static final long serialVersionUID = 5123373745842252597L;
 
 	/** 
 	 * 用于标记支付宝用户在应用下的唯一标识

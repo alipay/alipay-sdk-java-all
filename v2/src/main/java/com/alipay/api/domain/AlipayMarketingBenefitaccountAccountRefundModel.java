@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 权益账户退款
  *
  * @author auto create
- * @since 1.0, 2025-06-30 14:02:49
+ * @since 1.0, 2025-08-01 17:19:03
  */
 public class AlipayMarketingBenefitaccountAccountRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1136662467114974478L;
+	private static final long serialVersionUID = 5267295962211944925L;
 
 	/**
 	 * 本次操作退款总金额，单位：元
@@ -64,6 +64,12 @@ public class AlipayMarketingBenefitaccountAccountRefundModel extends AlipayObjec
 	 */
 	@ApiField("publisher_user_id")
 	private String publisherUserId;
+
+	/**
+	 * 退款策略，默认是业务分配退款策略，biz_alloc
+	 */
+	@ApiField("refund_strategy")
+	private String refundStrategy;
 
 	public String getAmount() {
 		return this.amount;
@@ -119,6 +125,13 @@ public class AlipayMarketingBenefitaccountAccountRefundModel extends AlipayObjec
 	}
 	public void setPublisherUserId(String publisherUserId) {
 		this.publisherUserId = publisherUserId;
+	}
+
+	public String getRefundStrategy() {
+		return this.refundStrategy;
+	}
+	public void setRefundStrategy(String refundStrategy) {
+		this.refundStrategy = refundStrategy;
 	}
 
 }

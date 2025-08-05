@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NotaryResultDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7258147793782612679L;
+	private static final long serialVersionUID = 3395312969234299657L;
 
 	/**
 	 * 文本存证内容，仅文本存证上链有该值

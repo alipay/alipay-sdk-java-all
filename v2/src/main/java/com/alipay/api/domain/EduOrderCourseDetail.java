@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-07-24 10:54:03
+ * @since 1.0, 2025-08-05 14:20:49
  */
 public class EduOrderCourseDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6113678394414499783L;
+	private static final long serialVersionUID = 8359227498396368967L;
 
 	/**
 	 * 上课结束日期
@@ -106,7 +106,7 @@ YUAN：元
 	private String originalPriceAfterDiscount;
 
 	/**
-	 * NCOME-收入
+	 * INCOME-收入
 EXPENSE-支出
 	 */
 	@ApiField("payment_type")

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.finance.tvp.bill.cancel request
  * 
  * @author auto create
- * @since 1.0, 2025-02-07 17:17:25
+ * @since 1.0, 2025-07-30 11:55:04
  */
 public class AnttechBlockchainFinanceTvpBillCancelRequest implements AlipayRequest<AnttechBlockchainFinanceTvpBillCancelResponse> {
 

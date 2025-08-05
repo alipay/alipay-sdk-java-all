@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.sp.nordertag.position.bind request
  * 
  * @author auto create
- * @since 1.0, 2025-07-28 11:34:04
+ * @since 1.0, 2025-07-30 03:12:34
  */
 public class AlipayOpenSpNordertagPositionBindRequest implements AlipayRequest<AlipayOpenSpNordertagPositionBindResponse> {
 

@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * test case
  *
  * @author auto create
- * @since 1.0, 2025-07-28 15:37:52
+ * @since 1.0, 2025-07-29 15:52:34
  */
 public class RainysCompelxTypeWeakRefTwo extends AlipayObject {
 
-	private static final long serialVersionUID = 2416719565182834712L;
+	private static final long serialVersionUID = 4728828364884326725L;
+
+	/**
+	 * test case
+	 */
+	@ApiField("demo_emtpy_prod_vv")
+	private String demoEmtpyProdVv;
 
 	/**
 	 * case
@@ -24,6 +30,13 @@ public class RainysCompelxTypeWeakRefTwo extends AlipayObject {
 	 */
 	@ApiField("demo_weak_value")
 	private String demoWeakValue;
+
+	public String getDemoEmtpyProdVv() {
+		return this.demoEmtpyProdVv;
+	}
+	public void setDemoEmtpyProdVv(String demoEmtpyProdVv) {
+		this.demoEmtpyProdVv = demoEmtpyProdVv;
+	}
 
 	public String getDemoWeakEmpty() {
 		return this.demoWeakEmpty;

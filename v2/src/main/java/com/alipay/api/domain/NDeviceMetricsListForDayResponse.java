@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * N设备日维度明细信息
  *
  * @author auto create
- * @since 1.0, 2025-07-18 14:15:05
+ * @since 1.0, 2025-07-30 20:30:20
  */
 public class NDeviceMetricsListForDayResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 7391871316178651597L;
+	private static final long serialVersionUID = 3119175756353749515L;
 
 	/**
 	 * 支付宝金额，单位元
@@ -166,6 +166,18 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 	private String provinceName;
 
 	/**
+	 * 退款金额（追溯近60天）  单位元，精确到分
+	 */
+	@ApiField("refund_order_amt")
+	private String refundOrderAmt;
+
+	/**
+	 * 退款笔数（追溯近60天）
+	 */
+	@ApiField("refund_order_cnt")
+	private String refundOrderCnt;
+
+	/**
 	 * 注册时间
 	 */
 	@ApiField("register_time")
@@ -188,6 +200,12 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 	 */
 	@ApiField("store_id")
 	private String storeId;
+
+	/**
+	 * 首次点亮30天内碰交易大于等于2元用户数
+	 */
+	@ApiField("trd_amt_2_n_user_cnt_fromlight_30_d")
+	private String trdAmt2NUserCntFromlight30D;
 
 	/**
 	 * 碰一下用户数，单位为人，日维度已去重
@@ -370,6 +388,20 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 		this.provinceName = provinceName;
 	}
 
+	public String getRefundOrderAmt() {
+		return this.refundOrderAmt;
+	}
+	public void setRefundOrderAmt(String refundOrderAmt) {
+		this.refundOrderAmt = refundOrderAmt;
+	}
+
+	public String getRefundOrderCnt() {
+		return this.refundOrderCnt;
+	}
+	public void setRefundOrderCnt(String refundOrderCnt) {
+		this.refundOrderCnt = refundOrderCnt;
+	}
+
 	public Date getRegisterTime() {
 		return this.registerTime;
 	}
@@ -396,6 +428,13 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 	}
 	public void setStoreId(String storeId) {
 		this.storeId = storeId;
+	}
+
+	public String getTrdAmt2NUserCntFromlight30D() {
+		return this.trdAmt2NUserCntFromlight30D;
+	}
+	public void setTrdAmt2NUserCntFromlight30D(String trdAmt2NUserCntFromlight30D) {
+		this.trdAmt2NUserCntFromlight30D = trdAmt2NUserCntFromlight30D;
 	}
 
 	public String getTrdNfcDeviceUsercnt() {

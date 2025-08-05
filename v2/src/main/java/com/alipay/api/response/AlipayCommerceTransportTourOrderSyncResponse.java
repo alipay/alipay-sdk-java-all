@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.tour.order.sync response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-16 16:37:28
+ * @since 1.0, 2025-08-04 11:02:35
  */
 public class AlipayCommerceTransportTourOrderSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4274375988843486976L;
+	private static final long serialVersionUID = 3541338112157473823L;
 
 	/** 
 	 * null
@@ -25,7 +25,9 @@ public class AlipayCommerceTransportTourOrderSyncResponse extends AlipayResponse
 	private List<TourOrderSyncResponse> successOrderList;
 
 	/** 
-	 * 失败的订单id
+	 * 失败的订单凭证号。
+结构：
+outBizNum|outVoucherId
 	 */
 	@ApiField("un_sync_order_no_list")
 	private String unSyncOrderNoList;

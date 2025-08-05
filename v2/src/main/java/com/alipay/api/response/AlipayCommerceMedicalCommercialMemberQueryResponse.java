@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.commercial.member.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-03 17:27:31
+ * @since 1.0, 2025-08-05 15:24:29
  */
 public class AlipayCommerceMedicalCommercialMemberQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3467545132775973219L;
+	private static final long serialVersionUID = 7691548419556493377L;
 
 	/** 
 	 * 权益订单id，支付宝侧用户对商户某一权益的唯一订单子单id。该订单记录了用户的核销次数与总次数，以及订单状态

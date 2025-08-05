@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.isresource.enterpriseuser.auth response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-12 10:20:07
+ * @since 1.0, 2025-08-04 15:43:46
  */
 public class AlipayIserviceIsresourceEnterpriseuserAuthResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6654267483363481935L;
+	private static final long serialVersionUID = 2487879265817294854L;
 
 	/** 
 	 * 返回的信登token，用于跳转并写登录态

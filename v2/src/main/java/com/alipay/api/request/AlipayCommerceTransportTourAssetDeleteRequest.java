@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.tour.asset.delete request
  * 
  * @author auto create
- * @since 1.0, 2025-06-16 16:42:28
+ * @since 1.0, 2025-07-30 22:02:33
  */
 public class AlipayCommerceTransportTourAssetDeleteRequest implements AlipayRequest<AlipayCommerceTransportTourAssetDeleteResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.function.layer.modify response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-31 14:46:09
+ * @since 1.0, 2025-08-04 11:07:39
  */
 public class AlipayCloudCloudbaseFunctionLayerModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8114958231416546583L;
+	private static final long serialVersionUID = 4754197973128998161L;
 
 	/** 
 	 * 调整绑定层优先级结果

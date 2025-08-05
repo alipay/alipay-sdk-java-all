@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.isresource.enterpriseuser.auth request
  * 
  * @author auto create
- * @since 1.0, 2025-05-12 10:20:07
+ * @since 1.0, 2025-08-04 15:43:46
  */
 public class AlipayIserviceIsresourceEnterpriseuserAuthRequest implements AlipayRequest<AlipayIserviceIsresourceEnterpriseuserAuthResponse> {
 

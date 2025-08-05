@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序删除收藏业务关系
  *
  * @author auto create
- * @since 1.0, 2022-12-16 16:25:17
+ * @since 1.0, 2025-07-30 14:22:18
  */
 public class AlipayOpenMiniMiniappFavoriteextDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6383366716247762845L;
+	private static final long serialVersionUID = 3328535586492732242L;
 
 	/**
 	 * 小程序收藏业务类型，需要申请分配

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 地震预警信息同步
  *
  * @author auto create
- * @since 1.0, 2025-07-09 14:50:58
+ * @since 1.0, 2025-08-05 10:07:35
  */
 public class AlipayEbppIndustryEarthquakeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1248238453232946342L;
+	private static final long serialVersionUID = 2312721285368263531L;
 
 	/**
 	 * 六位adcode
@@ -73,6 +73,13 @@ test:测试
 	@ApiListField("mqtt_header")
 	@ApiField("m_q_t_t_header_param")
 	private List<MQTTHeaderParam> mqttHeader;
+
+	/**
+	 * ALARM 预警消息
+QUICK_REPORT 速报消息
+	 */
+	@ApiField("msg_type")
+	private String msgType;
 
 	/**
 	 * 地震发生时间
@@ -162,6 +169,13 @@ blue:蓝色预警
 	}
 	public void setMqttHeader(List<MQTTHeaderParam> mqttHeader) {
 		this.mqttHeader = mqttHeader;
+	}
+
+	public String getMsgType() {
+		return this.msgType;
+	}
+	public void setMsgType(String msgType) {
+		this.msgType = msgType;
 	}
 
 	public Date getOriTime() {

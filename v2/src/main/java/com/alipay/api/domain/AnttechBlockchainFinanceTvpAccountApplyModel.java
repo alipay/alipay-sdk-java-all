@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 可信价值中心用户合约申请
  *
  * @author auto create
- * @since 1.0, 2024-10-23 17:07:27
+ * @since 1.0, 2025-07-30 11:56:43
  */
 public class AnttechBlockchainFinanceTvpAccountApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8774639422858957963L;
+	private static final long serialVersionUID = 1725124924258645624L;
 
 	/**
 	 * 子户开立申请主体

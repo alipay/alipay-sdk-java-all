@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayTradeRepaybillModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4379549862197778566L;
+	private static final long serialVersionUID = 3698478235434161495L;
 
 	/**
 	 * 要修改的目标相对金额； 如果要在原先的金额上增加则使用正数，要在原来的基础上减少则使用负数。注意：只有operation_type为金额修改类操作，这个值才有效

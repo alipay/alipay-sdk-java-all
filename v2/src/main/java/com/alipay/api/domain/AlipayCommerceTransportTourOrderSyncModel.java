@@ -10,11 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 文旅订单同步接口
  *
  * @author auto create
- * @since 1.0, 2025-06-16 16:37:28
+ * @since 1.0, 2025-08-04 11:02:35
  */
 public class AlipayCommerceTransportTourOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5611127232514764527L;
+	private static final long serialVersionUID = 2169289293823578512L;
+
+	/**
+	 * null
+	 */
+	@ApiListField("scene_codes")
+	@ApiField("string")
+	private List<String> sceneCodes;
 
 	/**
 	 * null
@@ -22,6 +29,13 @@ public class AlipayCommerceTransportTourOrderSyncModel extends AlipayObject {
 	@ApiListField("tour_order_list")
 	@ApiField("tour_order_sync_detail")
 	private List<TourOrderSyncDetail> tourOrderList;
+
+	public List<String> getSceneCodes() {
+		return this.sceneCodes;
+	}
+	public void setSceneCodes(List<String> sceneCodes) {
+		this.sceneCodes = sceneCodes;
+	}
 
 	public List<TourOrderSyncDetail> getTourOrderList() {
 		return this.tourOrderList;

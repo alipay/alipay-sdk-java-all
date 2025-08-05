@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MoneyCardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1762935381298617746L;
+	private static final long serialVersionUID = 7284821631595447727L;
 
 	/**
 	 * 可使用天数，单位天(购卡后立即生效，生效后x天失效）

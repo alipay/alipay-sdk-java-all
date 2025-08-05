@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 管控账户资金划拨结果查询
  *
  * @author auto create
- * @since 1.0, 2024-02-01 17:40:57
+ * @since 1.0, 2025-07-30 12:00:02
  */
 public class AnttechBlockchainFinanceFsupvTransferQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6629112917342599321L;
+	private static final long serialVersionUID = 8452282235148663881L;
 
 	/**
 	 * 受理号，即管控账户资金划拨响应中返回的受理号

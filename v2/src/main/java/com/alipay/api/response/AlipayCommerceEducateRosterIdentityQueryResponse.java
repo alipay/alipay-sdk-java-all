@@ -1,6 +1,8 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.roster.identity.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-24 19:57:57
+ * @since 1.0, 2025-08-01 11:27:35
  */
 public class AlipayCommerceEducateRosterIdentityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7113866932518685568L;
+	private static final long serialVersionUID = 7384653277911119154L;
 
 	/** 
 	 * 人员所属的部门、学院或班级名称
@@ -79,6 +81,13 @@ public class AlipayCommerceEducateRosterIdentityQueryResponse extends AlipayResp
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	/** 
+	 * 白名单名称列表
+	 */
+	@ApiListField("white_name_list")
+	@ApiField("string")
+	private List<String> whiteNameList;
 
 	public void setDepartmentName(String departmentName) {
 		this.departmentName = departmentName;
@@ -155,6 +164,13 @@ public class AlipayCommerceEducateRosterIdentityQueryResponse extends AlipayResp
 	}
 	public String getUserId( ) {
 		return this.userId;
+	}
+
+	public void setWhiteNameList(List<String> whiteNameList) {
+		this.whiteNameList = whiteNameList;
+	}
+	public List<String> getWhiteNameList( ) {
+		return this.whiteNameList;
 	}
 
 }

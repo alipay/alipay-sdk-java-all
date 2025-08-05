@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataDataserviceBusinessReportQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6235191244787454735L;
+	private static final long serialVersionUID = 7649232385417616934L;
 
 	/** 
 	 * 商圈内品牌排行结果

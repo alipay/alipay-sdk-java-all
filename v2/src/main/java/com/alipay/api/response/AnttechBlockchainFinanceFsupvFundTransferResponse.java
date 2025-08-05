@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.finance.fsupv.fund.transfer response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-28 10:32:03
+ * @since 1.0, 2025-07-30 11:59:32
  */
 public class AnttechBlockchainFinanceFsupvFundTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2471754142339678644L;
+	private static final long serialVersionUID = 4773339873857157466L;
 
 	/** 
 	 * 受理单号

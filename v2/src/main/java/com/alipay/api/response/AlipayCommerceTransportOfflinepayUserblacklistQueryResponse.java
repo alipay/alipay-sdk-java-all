@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportOfflinepayUserblacklistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7341541773644229474L;
+	private static final long serialVersionUID = 1491641123212882265L;
 
 	/** 
 	 * 黑名单用户ID

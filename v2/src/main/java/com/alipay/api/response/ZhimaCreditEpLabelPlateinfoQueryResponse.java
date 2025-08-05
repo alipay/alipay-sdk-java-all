@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.label.plateinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-08 10:21:56
+ * @since 1.0, 2025-08-04 11:24:04
  */
 public class ZhimaCreditEpLabelPlateinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4123729629165847716L;
+	private static final long serialVersionUID = 2546248112652452492L;
 
 	/** 
 	 * 实力标牌高清图片+下载高清图+通过内部单号获取

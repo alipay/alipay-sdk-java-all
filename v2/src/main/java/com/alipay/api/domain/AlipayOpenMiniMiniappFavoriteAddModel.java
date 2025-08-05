@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改小程序收藏的状态
  *
  * @author auto create
- * @since 1.0, 2022-12-15 21:26:51
+ * @since 1.0, 2025-07-30 14:21:15
  */
 public class AlipayOpenMiniMiniappFavoriteAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6161298624774242718L;
+	private static final long serialVersionUID = 7392848173877996353L;
 
 	/**
 	 * 需要指定收藏的app_id，若开放平台分配的app_id与具体的小程序不同时，才需要传参

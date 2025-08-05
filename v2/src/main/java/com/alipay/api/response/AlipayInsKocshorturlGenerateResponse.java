@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayInsKocshorturlGenerateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1813516942744484459L;
+	private static final long serialVersionUID = 3392748966633998535L;
 
 	/** 
 	 * 校验成功后，基于入参拼接完链接参数后经转换生成的短链接，在用户进入投保页后会被重定向为原始链接，并由我方前端做进一步解析

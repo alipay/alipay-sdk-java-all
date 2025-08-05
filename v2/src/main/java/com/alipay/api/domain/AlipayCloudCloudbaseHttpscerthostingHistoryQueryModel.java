@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * Https证书历史查询
  *
  * @author auto create
- * @since 1.0, 2024-07-09 14:52:14
+ * @since 1.0, 2025-08-04 11:08:45
  */
 public class AlipayCloudCloudbaseHttpscerthostingHistoryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6438424682537254273L;
+	private static final long serialVersionUID = 5321145569815414136L;
 
 	/**
 	 * 小程序云应用APPID

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资产穿透账单查询
  *
  * @author auto create
- * @since 1.0, 2024-05-16 17:14:40
+ * @since 1.0, 2025-07-30 11:58:05
  */
 public class AnttechBlockchainFinanceAssetmanagePenetratebillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4323245956146351614L;
+	private static final long serialVersionUID = 1823571437868558972L;
 
 	/**
 	 * 产品合约代码

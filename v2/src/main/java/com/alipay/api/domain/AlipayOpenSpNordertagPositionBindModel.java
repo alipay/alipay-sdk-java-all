@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 碰一下线圈绑定点位
  *
  * @author auto create
- * @since 1.0, 2025-06-10 19:24:54
+ * @since 1.0, 2025-07-30 03:11:18
  */
 public class AlipayOpenSpNordertagPositionBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1536532822759756238L;
+	private static final long serialVersionUID = 4677529985141174881L;
 
 	/**
 	 * 物料编号，若和碰一下链接同时传入，以物料编号为准

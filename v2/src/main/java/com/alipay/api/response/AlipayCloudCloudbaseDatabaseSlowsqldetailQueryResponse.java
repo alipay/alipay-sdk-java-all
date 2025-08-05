@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.database.slowsqldetail.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-28 11:37:04
+ * @since 1.0, 2025-08-04 11:09:40
  */
 public class AlipayCloudCloudbaseDatabaseSlowsqldetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1667665497297417691L;
+	private static final long serialVersionUID = 2726265467449653814L;
 
 	/** 
 	 * 页码

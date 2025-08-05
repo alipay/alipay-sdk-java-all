@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.ep.creditloan.coupon.notify request
  * 
  * @author auto create
- * @since 1.0, 2024-06-21 10:12:04
+ * @since 1.0, 2025-08-04 13:43:51
  */
 public class ZhimaCreditEpCreditloanCouponNotifyRequest implements AlipayRequest<ZhimaCreditEpCreditloanCouponNotifyResponse> {
 

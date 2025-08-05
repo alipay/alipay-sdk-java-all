@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.rent.order.close request
  * 
  * @author auto create
- * @since 1.0, 2025-06-13 11:17:28
+ * @since 1.0, 2025-08-05 11:07:35
  */
 public class AlipayCommerceRentOrderCloseRequest implements AlipayRequest<AlipayCommerceRentOrderCloseResponse> {
 

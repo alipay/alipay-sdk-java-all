@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 将申请的备案服务码授权给阿里云指定账号
  *
  * @author auto create
- * @since 1.0, 2024-06-27 15:09:07
+ * @since 1.0, 2025-08-04 11:09:02
  */
 public class AlipayCloudCloudbaseBsnAssignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1622724588172591234L;
+	private static final long serialVersionUID = 1165197897691216973L;
 
 	/**
 	 * 阿里云账号ID

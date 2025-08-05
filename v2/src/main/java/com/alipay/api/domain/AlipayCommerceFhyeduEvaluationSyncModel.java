@@ -1,5 +1,6 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
 import java.util.List;
 
 import com.alipay.api.AlipayObject;
@@ -10,14 +11,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 泛行业教培点评信息同步
  *
  * @author auto create
- * @since 1.0, 2025-07-24 10:57:33
+ * @since 1.0, 2025-08-05 14:22:35
  */
 public class AlipayCommerceFhyeduEvaluationSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7895772831391313217L;
+	private static final long serialVersionUID = 5754454197666424344L;
 
 	/**
-	 * 课后点评
+	 * 课后点评内容
 	 */
 	@ApiField("assessment")
 	private String assessment;
@@ -33,6 +34,24 @@ public class AlipayCommerceFhyeduEvaluationSyncModel extends AlipayObject {
 	 */
 	@ApiField("course_name")
 	private String courseName;
+
+	/**
+	 * 点评id
+	 */
+	@ApiField("evaluation_id")
+	private String evaluationId;
+
+	/**
+	 * 点评时间
+	 */
+	@ApiField("evaluation_time")
+	private Date evaluationTime;
+
+	/**
+	 * 点评人
+	 */
+	@ApiField("evaluator")
+	private String evaluator;
 
 	/**
 	 * 机构id
@@ -78,6 +97,27 @@ public class AlipayCommerceFhyeduEvaluationSyncModel extends AlipayObject {
 	}
 	public void setCourseName(String courseName) {
 		this.courseName = courseName;
+	}
+
+	public String getEvaluationId() {
+		return this.evaluationId;
+	}
+	public void setEvaluationId(String evaluationId) {
+		this.evaluationId = evaluationId;
+	}
+
+	public Date getEvaluationTime() {
+		return this.evaluationTime;
+	}
+	public void setEvaluationTime(Date evaluationTime) {
+		this.evaluationTime = evaluationTime;
+	}
+
+	public String getEvaluator() {
+		return this.evaluator;
+	}
+	public void setEvaluator(String evaluator) {
+		this.evaluator = evaluator;
 	}
 
 	public String getInstId() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 投放电子门店码
  *
  * @author auto create
- * @since 1.0, 2022-10-17 11:12:21
+ * @since 1.0, 2025-08-04 10:45:31
  */
 public class AlipayCommerceIotShopcodeApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5816511963264456766L;
+	private static final long serialVersionUID = 3168581455344557584L;
 
 	/**
 	 * 设备绑定的商户pid，直连场景填写商户收单pid，间连场景填写smid绑定的pid

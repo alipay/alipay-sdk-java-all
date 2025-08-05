@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.certify.customer.relativenum.apply response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-17 14:47:19
+ * @since 1.0, 2025-07-31 18:49:48
  */
 public class AlipayUserCertifyCustomerRelativenumApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1569236676365476177L;
+	private static final long serialVersionUID = 6451923945677885148L;
 
 	
 

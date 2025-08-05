@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantIndirectAccountNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2879749198222165784L;
+	private static final long serialVersionUID = 7139687624715713787L;
 
 	/**
 	 * 交易金额

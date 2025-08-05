@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CreatePartnerRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 3139846266631533135L;
+	private static final long serialVersionUID = 5645478925415146341L;
 
 	/**
 	 * bd

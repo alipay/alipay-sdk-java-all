@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.authentication.consistency.check request
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 19:33:14
+ * @since 1.0, 2025-07-31 17:01:19
  */
 public class AlipayUserAuthenticationConsistencyCheckRequest implements AlipayRequest<AlipayUserAuthenticationConsistencyCheckResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝代运营商业关系门店资产新增
  *
  * @author auto create
- * @since 1.0, 2023-08-07 09:53:35
+ * @since 1.0, 2025-07-31 17:12:26
  */
 public class AlipayBusinessRelationShopmemberAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8893541928936639161L;
+	private static final long serialVersionUID = 7171277318439976388L;
 
 	/**
 	 * 门店资产增加方式

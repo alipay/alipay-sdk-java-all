@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.fhyedu.rollcall.sync response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-24 10:57:33
+ * @since 1.0, 2025-08-05 14:22:35
  */
 public class AlipayCommerceFhyeduRollcallSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6591986156237818439L;
+	private static final long serialVersionUID = 4692513179283853638L;
 
 	
 

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySocialBaseContentlibNewsflashSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4733532795735382779L;
+	private static final long serialVersionUID = 2357616371619881715L;
 
 	/**
 	 * 作者

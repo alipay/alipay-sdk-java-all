@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.finance.tvp.accountbalance.release request
  * 
  * @author auto create
- * @since 1.0, 2024-10-24 16:42:21
+ * @since 1.0, 2025-07-30 11:56:31
  */
 public class AnttechBlockchainFinanceTvpAccountbalanceReleaseRequest implements AlipayRequest<AnttechBlockchainFinanceTvpAccountbalanceReleaseResponse> {
 

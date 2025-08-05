@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.ad.dmp.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-16 13:46:37
+ * @since 1.0, 2025-08-04 19:02:04
  */
 public class AlipayDataDataserviceAdDmpCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3618236759182831732L;
+	private static final long serialVersionUID = 4759793561543454696L;
 
 	/** 
 	 * 创建或更新人群包成功时返回的人群包编码

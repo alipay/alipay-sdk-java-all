@@ -1,0 +1,133 @@
+package com.alipay.api.domain;
+
+import com.alipay.api.AlipayObject;
+import com.alipay.api.internal.mapping.ApiField;
+
+/**
+ * 发起对话
+ *
+ * @author auto create
+ * @since 1.0, 2025-08-01 00:22:34
+ */
+public class AlipayCloudCloudpromoChatCreateModel extends AlipayObject {
+
+	private static final long serialVersionUID = 5776899977612898139L;
+
+	/**
+	 * 要进行会话聊天的智能体ID。
+	 */
+	@ApiField("agent_id")
+	private String agentId;
+
+	/**
+	 * 要进行会话聊天的智能体版本。智能体的版本号是”v1.0“，这里需要传入”1.0“。
+	 */
+	@ApiField("agent_version")
+	private String agentVersion;
+
+	/**
+	 * 创建消息时的附加消息，获取消息时也会返回此附加消息。对应智能体应用中的自定义参数，即对话时的附加数据。
+	 */
+	@ApiField("business_data")
+	private String businessData;
+
+	/**
+	 * 会话 ID，即会话的唯一标识。
+	 */
+	@ApiField("conversation_id")
+	private String conversationId;
+
+	/**
+	 * 附加参数，通常用于特殊场景下指定一些必要参数供模型判断，例如指定经纬度，并询问智能体此位置的天气。
+	 */
+	@ApiField("extra_params")
+	private ChatExtraParams extraParams;
+
+	/**
+	 * 压测标识。默认为 false。
+	 */
+	@ApiField("load_test")
+	private Boolean loadTest;
+
+	/**
+	 * 用户发给智能体的问题内容。
+	 */
+	@ApiField("question")
+	private String question;
+
+	/**
+	 * 重试标识。默认为 false。
+	 */
+	@ApiField("retry")
+	private Boolean retry;
+
+	/**
+	 * 标识当前与智能体对话的用户，由使用方自行定义、生成与维护。
+	 */
+	@ApiField("user_id")
+	private String userId;
+
+	public String getAgentId() {
+		return this.agentId;
+	}
+	public void setAgentId(String agentId) {
+		this.agentId = agentId;
+	}
+
+	public String getAgentVersion() {
+		return this.agentVersion;
+	}
+	public void setAgentVersion(String agentVersion) {
+		this.agentVersion = agentVersion;
+	}
+
+	public String getBusinessData() {
+		return this.businessData;
+	}
+	public void setBusinessData(String businessData) {
+		this.businessData = businessData;
+	}
+
+	public String getConversationId() {
+		return this.conversationId;
+	}
+	public void setConversationId(String conversationId) {
+		this.conversationId = conversationId;
+	}
+
+	public ChatExtraParams getExtraParams() {
+		return this.extraParams;
+	}
+	public void setExtraParams(ChatExtraParams extraParams) {
+		this.extraParams = extraParams;
+	}
+
+	public Boolean getLoadTest() {
+		return this.loadTest;
+	}
+	public void setLoadTest(Boolean loadTest) {
+		this.loadTest = loadTest;
+	}
+
+	public String getQuestion() {
+		return this.question;
+	}
+	public void setQuestion(String question) {
+		this.question = question;
+	}
+
+	public Boolean getRetry() {
+		return this.retry;
+	}
+	public void setRetry(Boolean retry) {
+		this.retry = retry;
+	}
+
+	public String getUserId() {
+		return this.userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+
+}

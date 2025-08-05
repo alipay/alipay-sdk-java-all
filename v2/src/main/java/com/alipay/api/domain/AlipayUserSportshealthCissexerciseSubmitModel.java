@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayUserSportshealthCissexerciseSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3152692313469337299L;
+	private static final long serialVersionUID = 3273852837758433557L;
 
 	/**
 	 * 进行自测时填写的年龄

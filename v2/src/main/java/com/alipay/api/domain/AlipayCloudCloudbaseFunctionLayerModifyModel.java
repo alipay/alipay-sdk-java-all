@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 调整绑定层优先级
  *
  * @author auto create
- * @since 1.0, 2024-06-27 15:07:25
+ * @since 1.0, 2025-08-04 11:07:39
  */
 public class AlipayCloudCloudbaseFunctionLayerModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3651581182547162848L;
+	private static final long serialVersionUID = 2522513894936362118L;
 
 	/**
 	 * 绑定配置

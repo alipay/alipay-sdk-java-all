@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 续费询券
  *
  * @author auto create
- * @since 1.0, 2024-05-22 17:26:51
+ * @since 1.0, 2025-08-04 11:10:24
  */
 public class AlipayCloudCloudbaseCouponsRenewQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4448239675741825784L;
+	private static final long serialVersionUID = 5466923574368129377L;
 
 	/**
 	 * 应用ID

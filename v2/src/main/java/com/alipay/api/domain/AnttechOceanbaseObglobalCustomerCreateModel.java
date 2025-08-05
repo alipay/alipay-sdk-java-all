@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * crm创建客户
  *
  * @author auto create
- * @since 1.0, 2025-03-03 14:54:17
+ * @since 1.0, 2025-07-31 16:55:07
  */
 public class AnttechOceanbaseObglobalCustomerCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1461793493355612542L;
+	private static final long serialVersionUID = 2161613126731424164L;
 
 	/**
 	 * 创建客户请求

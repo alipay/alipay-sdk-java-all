@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金管控任务取消
  *
  * @author auto create
- * @since 1.0, 2023-06-16 18:48:31
+ * @since 1.0, 2025-07-30 11:59:56
  */
 public class AnttechBlockchainFinanceFsupvTaskCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2763122734658272743L;
+	private static final long serialVersionUID = 3291387638833863472L;
 
 	/**
 	 * 资金管控任务产品码，可联系产品或运营同学获取

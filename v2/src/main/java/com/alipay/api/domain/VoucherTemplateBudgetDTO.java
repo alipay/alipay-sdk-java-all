@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VoucherTemplateBudgetDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4364482392751645527L;
+	private static final long serialVersionUID = 2861443952858544498L;
 
 	/**
 	 * 当前可用余额，单位：分

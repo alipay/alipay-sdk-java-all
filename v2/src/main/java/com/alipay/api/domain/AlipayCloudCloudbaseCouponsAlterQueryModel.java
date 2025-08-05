@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 变配询券
  *
  * @author auto create
- * @since 1.0, 2024-05-22 17:26:54
+ * @since 1.0, 2025-08-04 11:09:58
  */
 public class AlipayCloudCloudbaseCouponsAlterQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1567427567963427431L;
+	private static final long serialVersionUID = 3694546682783568793L;
 
 	/**
 	 * 变配资源包规格编码

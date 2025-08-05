@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 可信价值中心账单撤销
  *
  * @author auto create
- * @since 1.0, 2025-02-07 17:13:30
+ * @since 1.0, 2025-07-30 11:55:04
  */
 public class AnttechBlockchainFinanceTvpBillCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5252838729143839951L;
+	private static final long serialVersionUID = 4573589523183253132L;
 
 	/**
 	 * 可信账单ID

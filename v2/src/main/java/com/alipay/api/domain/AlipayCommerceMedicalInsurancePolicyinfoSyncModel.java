@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商保码-保单数据回流接口
  *
  * @author auto create
- * @since 1.0, 2025-07-15 17:45:02
+ * @since 1.0, 2025-08-01 23:16:03
  */
 public class AlipayCommerceMedicalInsurancePolicyinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7457866851798543383L;
+	private static final long serialVersionUID = 2237996573646524661L;
 
 	/**
 	 * 保司类型
@@ -81,6 +81,13 @@ YYYY-MM-DD HH:MM:SS
 	 */
 	@ApiField("electronic_policy_url")
 	private String electronicPolicyUrl;
+
+	/**
+	 * 保司自定义扩展
+Json 格式
+	 */
+	@ApiField("ext_info")
+	private String extInfo;
 
 	/**
 	 * 首期应收保费
@@ -309,6 +316,13 @@ YYYY-MM-DD HH:MM:SS
 	}
 	public void setElectronicPolicyUrl(String electronicPolicyUrl) {
 		this.electronicPolicyUrl = electronicPolicyUrl;
+	}
+
+	public String getExtInfo() {
+		return this.extInfo;
+	}
+	public void setExtInfo(String extInfo) {
+		this.extInfo = extInfo;
 	}
 
 	public String getFirstPremium() {

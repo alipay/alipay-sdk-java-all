@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.internetbar.devicedata.query request
  * 
  * @author auto create
- * @since 1.0, 2025-06-22 10:42:30
+ * @since 1.0, 2025-07-31 10:52:34
  */
 public class AlipayEbppIndustryInternetbarDevicedataQueryRequest implements AlipayRequest<AlipayEbppIndustryInternetbarDevicedataQueryResponse> {
 

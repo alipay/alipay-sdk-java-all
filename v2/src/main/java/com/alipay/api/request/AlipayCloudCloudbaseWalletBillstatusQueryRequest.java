@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.wallet.billstatus.query request
  * 
  * @author auto create
- * @since 1.0, 2024-06-27 17:52:05
+ * @since 1.0, 2025-08-04 11:08:37
  */
 public class AlipayCloudCloudbaseWalletBillstatusQueryRequest implements AlipayRequest<AlipayCloudCloudbaseWalletBillstatusQueryResponse> {
 

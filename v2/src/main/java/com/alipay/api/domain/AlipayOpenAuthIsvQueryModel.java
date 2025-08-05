@@ -10,7 +10,7 @@ import com.alipay.api.AlipayObject;
  */
 public class AlipayOpenAuthIsvQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7226988594781642172L;
+	private static final long serialVersionUID = 5243926194286714719L;
 
 	
 

@@ -11,17 +11,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 权益账户开户
  *
  * @author auto create
- * @since 1.0, 2025-05-27 17:11:31
+ * @since 1.0, 2025-08-01 17:18:24
  */
 public class AlipayMarketingBenefitaccountAccountCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7456829395982967895L;
+	private static final long serialVersionUID = 2156551841151386521L;
 
 	/**
 	 * 授权信息
 	 */
 	@ApiField("authorization_info")
 	private FsAuthorizationInfoForm authorizationInfo;
+
+	/**
+	 * 开户来源场景，天猫国际，TMGJ
+	 */
+	@ApiField("biz_from")
+	private String bizFrom;
 
 	/**
 	 * 业务订单号-用于户号幂等，一个户号一个bizNo业务订单号
@@ -78,6 +84,13 @@ public class AlipayMarketingBenefitaccountAccountCreateModel extends AlipayObjec
 	}
 	public void setAuthorizationInfo(FsAuthorizationInfoForm authorizationInfo) {
 		this.authorizationInfo = authorizationInfo;
+	}
+
+	public String getBizFrom() {
+		return this.bizFrom;
+	}
+	public void setBizFrom(String bizFrom) {
+		this.bizFrom = bizFrom;
 	}
 
 	public String getBizNo() {

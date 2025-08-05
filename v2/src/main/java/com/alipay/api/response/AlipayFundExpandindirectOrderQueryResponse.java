@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.expandindirect.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-25 16:37:41
+ * @since 1.0, 2025-07-29 15:57:37
  */
 public class AlipayFundExpandindirectOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5172428846493586585L;
+	private static final long serialVersionUID = 7768424274885883987L;
 
 	/** 
 	 * 场景码

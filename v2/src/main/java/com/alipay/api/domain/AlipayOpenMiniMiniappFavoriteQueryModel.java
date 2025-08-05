@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户是否已收藏调用者的小程序
  *
  * @author auto create
- * @since 1.0, 2022-12-15 21:37:50
+ * @since 1.0, 2025-07-30 14:22:58
  */
 public class AlipayOpenMiniMiniappFavoriteQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6274666385388851117L;
+	private static final long serialVersionUID = 5776825342538478336L;
 
 	/**
 	 * 需要指定查询收藏的app_id，若开放平台分配的app_id与具体的小程序不同时，才需要传参

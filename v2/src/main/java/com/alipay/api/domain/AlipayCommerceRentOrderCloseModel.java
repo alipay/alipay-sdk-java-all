@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁订单关闭
  *
  * @author auto create
- * @since 1.0, 2025-06-12 13:17:53
+ * @since 1.0, 2025-08-05 10:59:55
  */
 public class AlipayCommerceRentOrderCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8399182884281528416L;
+	private static final long serialVersionUID = 8596263781994852466L;
 
 	/**
 	 * 买家支付宝用户id，小程序场景下获取用户ID请参考：用户授权; 其它场景下获取用户ID请参考：网页授权获取用户信息。
@@ -38,7 +38,7 @@ public class AlipayCommerceRentOrderCloseModel extends AlipayObject {
 	private String outOrderId;
 
 	/**
-	 * 关单原因编码：<a href="https://xfpzl.yuque.com/dgw58m/apg2ie/rhxb4dml3erlgqmi?singleDoc#" target="_blank">租赁订单取消原因枚举值</a>
+	 * 租赁订单取消原因枚举值
 	 */
 	@ApiField("reason_code")
 	private String reasonCode;

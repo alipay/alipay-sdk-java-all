@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 问诊订单扩展信息
  *
  * @author auto create
- * @since 1.0, 2025-07-23 14:55:15
+ * @since 1.0, 2025-07-30 11:03:19
  */
 public class PlatformInquiryOrderExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4835641615531691978L;
+	private static final long serialVersionUID = 3448759696754397498L;
 
 	/**
 	 * 支付宝渠道订单标识

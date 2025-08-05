@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * tree模型测试接口14_copy复杂类型
  *
  * @author auto create
- * @since 1.0, 2025-07-28 15:45:47
+ * @since 1.0, 2025-07-29 15:38:44
  */
 public class AlipayDataDataserviceTreeapifourteenRainystestQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3549547851371122843L;
+	private static final long serialVersionUID = 5435481224979536632L;
 
 	/**
 	 * 完全copy引用复杂类型

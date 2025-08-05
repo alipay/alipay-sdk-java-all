@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.coupons.alter.query request
  * 
  * @author auto create
- * @since 1.0, 2024-05-22 17:27:03
+ * @since 1.0, 2025-08-04 11:09:58
  */
 public class AlipayCloudCloudbaseCouponsAlterQueryRequest implements AlipayRequest<AlipayCloudCloudbaseCouponsAlterQueryResponse> {
 

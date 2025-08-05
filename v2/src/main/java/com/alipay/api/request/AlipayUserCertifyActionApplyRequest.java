@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.certify.action.apply request
  * 
  * @author auto create
- * @since 1.0, 2024-12-17 14:47:37
+ * @since 1.0, 2025-07-31 18:49:47
  */
 public class AlipayUserCertifyActionApplyRequest implements AlipayRequest<AlipayUserCertifyActionApplyResponse> {
 

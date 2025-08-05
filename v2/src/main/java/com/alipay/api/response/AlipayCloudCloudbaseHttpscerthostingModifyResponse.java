@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.httpscerthosting.modify response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-06 16:22:02
+ * @since 1.0, 2025-08-04 11:08:53
  */
 public class AlipayCloudCloudbaseHttpscerthostingModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5343114672912913495L;
+	private static final long serialVersionUID = 5275573376781695724L;
 
 	/** 
 	 * 是否修改成功

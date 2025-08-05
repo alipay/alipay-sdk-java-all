@@ -1,19 +1,21 @@
 package com.alipay.api.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 发票流水信息
  *
  * @author auto create
- * @since 1.0, 2024-05-06 14:38:31
+ * @since 1.0, 2025-07-29 13:06:34
  */
 public class EnterpriseInvoiceInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7351957256491341495L;
+	private static final long serialVersionUID = 3297342531611246342L;
 
 	/**
 	 * 防伪码
@@ -58,6 +60,13 @@ public class EnterpriseInvoiceInfoDTO extends AlipayObject {
 	private String fileType;
 
 	/**
+	 * 特定行业信息，需要根据特定行业要素类型（specific_factor），获取<a href="https://opendocs.alipay.com/pre-open/07wr4t?pathHash=5d7c31e5#%E8%A1%8C%E4%B8%9A%E6%A8%A1%E5%9E%8B%E5%AE%9A%E4%B9%89">具体行业模型</a>
+	 */
+	@ApiListField("industry_specific_infos")
+	@ApiField("string")
+	private List<String> industrySpecificInfos;
+
+	/**
 	 * 发票查验结果
 	 */
 	@ApiField("invoice_check_result")
@@ -80,6 +89,13 @@ public class EnterpriseInvoiceInfoDTO extends AlipayObject {
 	 */
 	@ApiField("invoice_date")
 	private String invoiceDate;
+
+	/**
+	 * 发票明细列表
+	 */
+	@ApiListField("invoice_item_list")
+	@ApiField("enterprise_invoice_item_d_t_o")
+	private List<EnterpriseInvoiceItemDTO> invoiceItemList;
 
 	/**
 	 * 发票类型
@@ -196,6 +212,12 @@ public class EnterpriseInvoiceInfoDTO extends AlipayObject {
 	private Boolean relatedToConsume;
 
 	/**
+	 * 特定行业要素类型
+	 */
+	@ApiField("specific_factor")
+	private String specificFactor;
+
+	/**
 	 * 发票金额，价税合计金额，单位元
 	 */
 	@ApiField("sum_amount")
@@ -262,6 +284,13 @@ public class EnterpriseInvoiceInfoDTO extends AlipayObject {
 		this.fileType = fileType;
 	}
 
+	public List<String> getIndustrySpecificInfos() {
+		return this.industrySpecificInfos;
+	}
+	public void setIndustrySpecificInfos(List<String> industrySpecificInfos) {
+		this.industrySpecificInfos = industrySpecificInfos;
+	}
+
 	public String getInvoiceCheckResult() {
 		return this.invoiceCheckResult;
 	}
@@ -288,6 +317,13 @@ public class EnterpriseInvoiceInfoDTO extends AlipayObject {
 	}
 	public void setInvoiceDate(String invoiceDate) {
 		this.invoiceDate = invoiceDate;
+	}
+
+	public List<EnterpriseInvoiceItemDTO> getInvoiceItemList() {
+		return this.invoiceItemList;
+	}
+	public void setInvoiceItemList(List<EnterpriseInvoiceItemDTO> invoiceItemList) {
+		this.invoiceItemList = invoiceItemList;
 	}
 
 	public String getInvoiceKind() {
@@ -421,6 +457,13 @@ public class EnterpriseInvoiceInfoDTO extends AlipayObject {
 	}
 	public void setRelatedToConsume(Boolean relatedToConsume) {
 		this.relatedToConsume = relatedToConsume;
+	}
+
+	public String getSpecificFactor() {
+		return this.specificFactor;
+	}
+	public void setSpecificFactor(String specificFactor) {
+		this.specificFactor = specificFactor;
 	}
 
 	public String getSumAmount() {

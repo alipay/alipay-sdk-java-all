@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金管控任务创建
  *
  * @author auto create
- * @since 1.0, 2024-10-31 10:11:09
+ * @since 1.0, 2025-07-30 11:55:27
  */
 public class AnttechBlockchainFinanceFsupvTaskCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6258551551526566273L;
+	private static final long serialVersionUID = 6834584569576116586L;
 
 	/**
 	 * 资金管控任务产品码，可联系产品或运营同学获取

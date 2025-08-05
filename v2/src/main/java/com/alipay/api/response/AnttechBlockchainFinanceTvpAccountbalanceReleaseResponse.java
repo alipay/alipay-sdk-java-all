@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.finance.tvp.accountbalance.release response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-24 16:42:21
+ * @since 1.0, 2025-07-30 11:56:31
  */
 public class AnttechBlockchainFinanceTvpAccountbalanceReleaseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5726498711886464756L;
+	private static final long serialVersionUID = 4512996542241668187L;
 
 	/** 
 	 * 机构侧资金释放流水

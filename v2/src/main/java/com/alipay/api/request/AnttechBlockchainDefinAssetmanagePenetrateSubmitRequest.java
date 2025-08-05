@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.defin.assetmanage.penetrate.submit request
  * 
  * @author auto create
- * @since 1.0, 2024-05-17 12:00:02
+ * @since 1.0, 2025-07-29 18:05:45
  */
 public class AnttechBlockchainDefinAssetmanagePenetrateSubmitRequest implements AlipayRequest<AnttechBlockchainDefinAssetmanagePenetrateSubmitResponse> {
 

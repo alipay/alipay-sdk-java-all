@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.httpscerthosting.domainprovider.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-06 16:22:02
+ * @since 1.0, 2025-08-04 11:09:20
  */
 public class AlipayCloudCloudbaseHttpscerthostingDomainproviderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3194616676954832348L;
+	private static final long serialVersionUID = 7758549266453835356L;
 
 	/** 
 	 * DNS服务提供商列表

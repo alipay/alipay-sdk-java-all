@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataIotdataPointDeviceUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4654413234119479478L;
+	private static final long serialVersionUID = 3742439952815298653L;
 
 	/**
 	 * 业务id

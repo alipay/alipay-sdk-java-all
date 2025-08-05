@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AgentWelcomeCardDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5689862219258544421L;
+	private static final long serialVersionUID = 1562817426487158578L;
 
 	/**
 	 * 智能体名称

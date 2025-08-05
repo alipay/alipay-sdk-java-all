@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceSignShakecodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1643286253876813731L;
+	private static final long serialVersionUID = 6317488335758921319L;
 
 	/**
 	 * 吱口令跳转链接

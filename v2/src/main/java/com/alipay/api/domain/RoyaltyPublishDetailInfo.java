@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 分账计划详情，可为空
  *
  * @author auto create
- * @since 1.0, 2025-05-09 11:17:27
+ * @since 1.0, 2025-08-04 14:16:24
  */
 public class RoyaltyPublishDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5487249639779692626L;
+	private static final long serialVersionUID = 4734458621297957543L;
 
 	/**
 	 * null

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CorpusPublishTaskResult extends AlipayObject {
 
-	private static final long serialVersionUID = 5315848999224351232L;
+	private static final long serialVersionUID = 3467753133255872893L;
 
 	/**
 	 * 知识语料类型

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 广告投放实体信息
  *
  * @author auto create
- * @since 1.0, 2025-07-14 20:50:50
+ * @since 1.0, 2025-07-29 16:58:32
  */
 public class ServiceEntity extends AlipayObject {
 
-	private static final long serialVersionUID = 8371497177393915432L;
+	private static final long serialVersionUID = 7478287862592458686L;
 
 	/**
 	 * 商品所属的小程序appId
@@ -39,6 +39,13 @@ public class ServiceEntity extends AlipayObject {
 	 */
 	@ApiField("service_entity_desc")
 	private String serviceEntityDesc;
+
+	/**
+	 * 商品上绑定的落地也相关信息
+	 */
+	@ApiListField("service_entity_landing_page")
+	@ApiField("landing_type_dto")
+	private List<LandingTypeDto> serviceEntityLandingPage;
 
 	/**
 	 * 实体名称
@@ -134,6 +141,13 @@ public class ServiceEntity extends AlipayObject {
 	}
 	public void setServiceEntityDesc(String serviceEntityDesc) {
 		this.serviceEntityDesc = serviceEntityDesc;
+	}
+
+	public List<LandingTypeDto> getServiceEntityLandingPage() {
+		return this.serviceEntityLandingPage;
+	}
+	public void setServiceEntityLandingPage(List<LandingTypeDto> serviceEntityLandingPage) {
+		this.serviceEntityLandingPage = serviceEntityLandingPage;
 	}
 
 	public String getServiceEntityName() {

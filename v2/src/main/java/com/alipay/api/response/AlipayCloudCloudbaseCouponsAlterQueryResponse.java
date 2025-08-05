@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.coupons.alter.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-22 17:27:03
+ * @since 1.0, 2025-08-04 11:09:58
  */
 public class AlipayCloudCloudbaseCouponsAlterQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2152914619324323859L;
+	private static final long serialVersionUID = 5576581162915139163L;
 
 	/** 
 	 * 优惠券详情列表

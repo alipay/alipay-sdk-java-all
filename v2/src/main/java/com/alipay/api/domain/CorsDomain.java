@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CorsDomain extends AlipayObject {
 
-	private static final long serialVersionUID = 3827613185447196884L;
+	private static final long serialVersionUID = 7198864914581668292L;
 
 	/**
 	 * 域名

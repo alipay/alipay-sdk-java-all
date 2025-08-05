@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.fhyedu.order.sync request
  * 
  * @author auto create
- * @since 1.0, 2025-07-24 10:54:03
+ * @since 1.0, 2025-08-05 14:20:49
  */
 public class AlipayCommerceFhyeduOrderSyncRequest implements AlipayRequest<AlipayCommerceFhyeduOrderSyncResponse> {
 

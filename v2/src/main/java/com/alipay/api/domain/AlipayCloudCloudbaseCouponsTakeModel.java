@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 领券
  *
  * @author auto create
- * @since 1.0, 2024-05-20 10:28:13
+ * @since 1.0, 2025-08-04 11:12:12
  */
 public class AlipayCloudCloudbaseCouponsTakeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4579485117178433516L;
+	private static final long serialVersionUID = 5596319315588464423L;
 
 	/**
 	 * 活动编码

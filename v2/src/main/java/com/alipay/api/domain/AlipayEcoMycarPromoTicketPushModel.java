@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoMycarPromoTicketPushModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8377211668127277173L;
+	private static final long serialVersionUID = 5759161328514736461L;
 
 	/**
 	 * 核销流水

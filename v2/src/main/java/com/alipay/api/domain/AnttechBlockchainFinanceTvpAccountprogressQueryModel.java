@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 可信价值中心开户进度查询
  *
  * @author auto create
- * @since 1.0, 2024-10-23 17:07:26
+ * @since 1.0, 2025-07-30 11:55:35
  */
 public class AnttechBlockchainFinanceTvpAccountprogressQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6176652572786793412L;
+	private static final long serialVersionUID = 7594384814917489774L;
 
 	/**
 	 * 可信价值中心产品码，由对接业务同学提供

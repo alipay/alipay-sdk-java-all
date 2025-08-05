@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.account.taobao.bind.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-27 13:37:26
+ * @since 1.0, 2025-07-30 15:43:47
  */
 public class AlipayUserAccountTaobaoBindQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1715262662272553363L;
+	private static final long serialVersionUID = 2219682999985699283L;
 
 	/** 
 	 * 支付宝用户设置的头像

@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.EnterpriseInvoiceItemDTO;
 
 import com.alipay.api.AlipayResponse;
 
@@ -11,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.enterprise.invoiceinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-24 10:07:02
+ * @since 1.0, 2025-07-29 13:52:35
  */
 public class AlipayEbppInvoiceEnterpriseInvoiceinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3893336975877496827L;
+	private static final long serialVersionUID = 1544754287589586769L;
 
 	/** 
 	 * 防伪码
@@ -95,6 +96,13 @@ public class AlipayEbppInvoiceEnterpriseInvoiceinfoQueryResponse extends AlipayR
 	 */
 	@ApiField("invoice_date")
 	private String invoiceDate;
+
+	/** 
+	 * 发票明细列表
+	 */
+	@ApiListField("invoice_item_list")
+	@ApiField("enterprise_invoice_item_d_t_o")
+	private List<EnterpriseInvoiceItemDTO> invoiceItemList;
 
 	/** 
 	 * 发票种类
@@ -329,6 +337,13 @@ public class AlipayEbppInvoiceEnterpriseInvoiceinfoQueryResponse extends AlipayR
 	}
 	public String getInvoiceDate( ) {
 		return this.invoiceDate;
+	}
+
+	public void setInvoiceItemList(List<EnterpriseInvoiceItemDTO> invoiceItemList) {
+		this.invoiceItemList = invoiceItemList;
+	}
+	public List<EnterpriseInvoiceItemDTO> getInvoiceItemList( ) {
+		return this.invoiceItemList;
 	}
 
 	public void setInvoiceKind(String invoiceKind) {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySocialAntiepLinkedmallenergyReturnModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7377554641988287471L;
+	private static final long serialVersionUID = 5813753599367478873L;
 
 	/**
 	 * LinkedMall分配的业务ID

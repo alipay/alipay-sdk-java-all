@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntMerchantExpandApprecommendAvailableQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4463853581619624478L;
+	private static final long serialVersionUID = 1462834771997496311L;
 
 	/** 
 	 * 总页数

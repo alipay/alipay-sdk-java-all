@@ -10,11 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 物料绑定点位时所需要的物料参数
  *
  * @author auto create
- * @since 1.0, 2025-06-10 19:24:54
+ * @since 1.0, 2025-07-30 03:11:18
  */
 public class NOrderTagBindResp extends AlipayObject {
 
-	private static final long serialVersionUID = 7656916469426254845L;
+	private static final long serialVersionUID = 5784974549166321923L;
+
+	/**
+	 * 服务商调用接口绑定点位和物料关系时的现场作业图片
+	 */
+	@ApiListField("bind_pic")
+	@ApiField("string")
+	private List<String> bindPic;
 
 	/**
 	 * 需要绑定点位的碰一下链接
@@ -22,6 +29,13 @@ public class NOrderTagBindResp extends AlipayObject {
 	@ApiListField("nfc_url")
 	@ApiField("string")
 	private List<String> nfcUrl;
+
+	public List<String> getBindPic() {
+		return this.bindPic;
+	}
+	public void setBindPic(List<String> bindPic) {
+		this.bindPic = bindPic;
+	}
 
 	public List<String> getNfcUrl() {
 		return this.nfcUrl;

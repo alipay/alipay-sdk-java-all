@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EpContactBaseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7863931494381853135L;
+	private static final long serialVersionUID = 6162875883619395646L;
 
 	/**
 	 * 联系方式可信度

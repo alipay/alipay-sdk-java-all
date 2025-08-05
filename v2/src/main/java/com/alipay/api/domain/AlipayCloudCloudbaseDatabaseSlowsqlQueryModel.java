@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询DB访问慢日志汇总
  *
  * @author auto create
- * @since 1.0, 2024-05-28 11:33:37
+ * @since 1.0, 2025-08-04 11:09:50
  */
 public class AlipayCloudCloudbaseDatabaseSlowsqlQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7629723197365898172L;
+	private static final long serialVersionUID = 3386566624616533338L;
 
 	/**
 	 * 应用ID
