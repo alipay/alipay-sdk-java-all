@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 口腔健康管家店员类
  *
  * @author auto create
- * @since 1.0, 2025-07-14 16:17:16
+ * @since 1.0, 2025-08-05 19:56:24
  */
 public class DentalArchivesShopStaff extends AlipayObject {
 
-	private static final long serialVersionUID = 4899641542613895298L;
+	private static final long serialVersionUID = 1646498664991389599L;
 
 	/**
 	 * 店员账号
 	 */
 	@ApiField("alipay_logon_id")
 	private String alipayLogonId;
+
+	/**
+	 * 用于标记支付宝用户在应用下的唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 店员角色
@@ -42,6 +48,13 @@ public class DentalArchivesShopStaff extends AlipayObject {
 	}
 	public void setAlipayLogonId(String alipayLogonId) {
 		this.alipayLogonId = alipayLogonId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getRole() {

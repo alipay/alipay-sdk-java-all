@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniInnerbaseinfoPrecreateConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4139578251215373946L;
+	private static final long serialVersionUID = 7515199759139687833L;
 
 	/**
 	 * 小程序ID

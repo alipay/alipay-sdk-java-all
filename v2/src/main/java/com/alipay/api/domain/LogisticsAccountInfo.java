@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LogisticsAccountInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1895485342555262464L;
+	private static final long serialVersionUID = 4468477196295668875L;
 
 	/**
 	 * 商家在配送公司的账户的审核说明

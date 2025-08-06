@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.data.item.recommend.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 00:29:39
+ * @since 1.0, 2025-08-06 10:52:51
  */
 public class AlipayOpenDataItemRecommendBatchqueryRequest implements AlipayRequest<AlipayOpenDataItemRecommendBatchqueryResponse> {
 

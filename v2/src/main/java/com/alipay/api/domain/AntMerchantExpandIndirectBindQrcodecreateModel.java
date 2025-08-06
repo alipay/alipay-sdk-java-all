@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntMerchantExpandIndirectBindQrcodecreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2448341842624696611L;
+	private static final long serialVersionUID = 7753913472466641284L;
 
 	/**
 	 * 动作类型，绑定bind/解除绑定un_bind

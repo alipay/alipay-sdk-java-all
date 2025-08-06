@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.approval.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-24 20:10:27
+ * @since 1.0, 2025-08-06 11:27:35
  */
 public class AlipayCommerceEcApprovalQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2428425478236899999L;
+	private static final long serialVersionUID = 6348114188685543551L;
 
 	/** 
 	 * 申请单的结束时间
@@ -70,10 +70,22 @@ public class AlipayCommerceEcApprovalQueryResponse extends AlipayResponse {
 	private String enterpriseId;
 
 	/** 
+	 * 审批单相关的扩展信息，如花呗券ID和金额等
+	 */
+	@ApiField("ex_json")
+	private String exJson;
+
+	/** 
 	 * 二级场景，更多枚举请见：
 	 */
 	@ApiField("expense_type_sub_category")
 	private String expenseTypeSubCategory;
+
+	/** 
+	 * 用于保存外部扩展信息内容，如差旅预估金额
+	 */
+	@ApiField("out_ext")
+	private String outExt;
 
 	/** 
 	 * 支付类型
@@ -155,11 +167,25 @@ public class AlipayCommerceEcApprovalQueryResponse extends AlipayResponse {
 		return this.enterpriseId;
 	}
 
+	public void setExJson(String exJson) {
+		this.exJson = exJson;
+	}
+	public String getExJson( ) {
+		return this.exJson;
+	}
+
 	public void setExpenseTypeSubCategory(String expenseTypeSubCategory) {
 		this.expenseTypeSubCategory = expenseTypeSubCategory;
 	}
 	public String getExpenseTypeSubCategory( ) {
 		return this.expenseTypeSubCategory;
+	}
+
+	public void setOutExt(String outExt) {
+		this.outExt = outExt;
+	}
+	public String getOutExt( ) {
+		return this.outExt;
 	}
 
 	public void setPaymentType(String paymentType) {

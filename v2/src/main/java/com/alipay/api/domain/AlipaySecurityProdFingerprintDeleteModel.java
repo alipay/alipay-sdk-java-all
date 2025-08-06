@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySecurityProdFingerprintDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2784191541263348371L;
+	private static final long serialVersionUID = 1692784586537962859L;
 
 	/**
 	 * IFAA协议的版本，目前为2.0

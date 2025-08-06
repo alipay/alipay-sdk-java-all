@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 刷脸核验照片查询
  *
  * @author auto create
- * @since 1.0, 2025-07-30 16:48:39
+ * @since 1.0, 2025-08-05 20:28:59
  */
 public class AlipayOfflineProviderVerifyphotoNpassporterQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4578557313416415996L;
+	private static final long serialVersionUID = 2584623432176488188L;
 
 	/**
 	 * 字符串

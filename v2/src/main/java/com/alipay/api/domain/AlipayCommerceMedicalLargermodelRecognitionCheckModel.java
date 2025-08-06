@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 安诊儿图片识别分类
  *
  * @author auto create
- * @since 1.0, 2025-08-01 15:09:59
+ * @since 1.0, 2025-08-06 09:58:13
  */
 public class AlipayCommerceMedicalLargermodelRecognitionCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4347881876394888751L;
+	private static final long serialVersionUID = 8374697548768676937L;
 
 	/**
 	 * 区分请求来源

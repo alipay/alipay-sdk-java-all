@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RemindVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6427587381272835862L;
+	private static final long serialVersionUID = 4645311547942111288L;
 
 	/**
 	 * 提醒内容

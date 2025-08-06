@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建审批单
  *
  * @author auto create
- * @since 1.0, 2025-06-03 17:06:52
+ * @since 1.0, 2025-08-06 11:02:51
  */
 public class AlipayCommerceEcApprovalCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7444896959843897582L;
+	private static final long serialVersionUID = 6687981866328825962L;
 
 	/**
 	 * 申请结束时间
@@ -59,6 +59,12 @@ public class AlipayCommerceEcApprovalCreateModel extends AlipayObject {
 	@ApiListField("institution_id_list")
 	@ApiField("string")
 	private List<String> institutionIdList;
+
+	/**
+	 * 用于保存外部扩展信息内容，如差旅预估金额
+	 */
+	@ApiField("out_ext")
+	private String outExt;
 
 	/**
 	 * 支付类型
@@ -146,6 +152,13 @@ public class AlipayCommerceEcApprovalCreateModel extends AlipayObject {
 	}
 	public void setInstitutionIdList(List<String> institutionIdList) {
 		this.institutionIdList = institutionIdList;
+	}
+
+	public String getOutExt() {
+		return this.outExt;
+	}
+	public void setOutExt(String outExt) {
+		this.outExt = outExt;
 	}
 
 	public String getPaymentType() {

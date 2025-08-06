@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外卖骑手进小区核验接口
  *
  * @author auto create
- * @since 1.0, 2025-07-22 15:52:07
+ * @since 1.0, 2025-08-06 11:15:04
  */
 public class AlipayEbppCommunityDeliveryidentityDetectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6466521531931471619L;
+	private static final long serialVersionUID = 1673611955625969924L;
 
 	/**
 	 * 城市国标编码

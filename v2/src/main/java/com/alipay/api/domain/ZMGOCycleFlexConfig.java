@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZMGOCycleFlexConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 7478185242987936188L;
+	private static final long serialVersionUID = 3455388154638677246L;
 
 	/**
 	 * 周期灵活扣的费用名称

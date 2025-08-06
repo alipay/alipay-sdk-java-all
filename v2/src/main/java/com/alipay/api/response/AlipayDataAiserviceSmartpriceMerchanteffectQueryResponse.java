@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.aiservice.smartprice.merchanteffect.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-27 13:25:52
+ * @since 1.0, 2025-08-06 11:18:44
  */
 public class AlipayDataAiserviceSmartpriceMerchanteffectQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6858842633453169951L;
+	private static final long serialVersionUID = 1165375472234272695L;
 
 	/** 
 	 * 商家效果展示列表返回值

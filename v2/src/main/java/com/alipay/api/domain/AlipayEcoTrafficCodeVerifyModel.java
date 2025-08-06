@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoTrafficCodeVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7821117955613871682L;
+	private static final long serialVersionUID = 7258467914811984727L;
 
 	/**
 	 * 凭证服务类型

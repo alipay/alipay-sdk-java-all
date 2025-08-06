@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPointBudgetGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1521488351624698535L;
+	private static final long serialVersionUID = 3845167877336892429L;
 
 	/** 
 	 * 还可以发放的集分宝个数

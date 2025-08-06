@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankEcnyEntwalletCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4522529529594126266L;
+	private static final long serialVersionUID = 4479652899841436288L;
 
 	/** 
 	 * 外部请求号

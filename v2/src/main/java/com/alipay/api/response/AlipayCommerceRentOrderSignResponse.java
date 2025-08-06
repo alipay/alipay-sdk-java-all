@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceRentOrderSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6775931937498225542L;
+	private static final long serialVersionUID = 7675611357275676651L;
 
 	/** 
 	 * 签约方式，使用插件拉起受理台进行签约，具体使用方法请参考 <a href="https://opendocs.alipay.com/solution/0h845z?pathHash=d2c7ca4f#%E7%AD%BE%E7%BA%A6%E8%AE%A2%E5%8D%95" target="_blank">接入指南-签约订单</a>

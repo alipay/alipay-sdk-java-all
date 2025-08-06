@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserCharityRecordexistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3338197316954855383L;
+	private static final long serialVersionUID = 7144948665958543439L;
 
 	/** 
 	 * 是否有过捐赠记录(有:true,否:false)

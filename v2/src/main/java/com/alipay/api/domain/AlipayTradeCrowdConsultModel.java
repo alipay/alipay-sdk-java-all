@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayTradeCrowdConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6782143512161749376L;
+	private static final long serialVersionUID = 5317223192738258535L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识

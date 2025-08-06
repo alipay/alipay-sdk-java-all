@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsHealthGainFlowResult extends AlipayObject {
 
-	private static final long serialVersionUID = 1218965667265981968L;
+	private static final long serialVersionUID = 5445181877757812933L;
 
 	/**
 	 * 业务类型。免费医疗金 HEALTH_BEAN_SIMPLE_UPGRADE、守护金 HEALTH_GUARDIAN_GOLD、多收多宝新门诊 HEALTH_DSDB_NEW_OUTPATIENT

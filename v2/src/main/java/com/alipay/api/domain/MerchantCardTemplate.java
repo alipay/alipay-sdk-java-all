@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MerchantCardTemplate extends AlipayObject {
 
-	private static final long serialVersionUID = 4871357231146325179L;
+	private static final long serialVersionUID = 6233175912956593871L;
 
 	/**
 	 * 违约金信息

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.community.deliveryrecentorder.detect response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-22 15:52:34
+ * @since 1.0, 2025-08-06 11:17:35
  */
 public class AlipayEbppIndustryCommunityDeliveryrecentorderDetectResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8123894178895958778L;
+	private static final long serialVersionUID = 8534343874512897698L;
 
 	/** 
 	 * 与平台方合作，通过个人手机号或者身份信息，查询个人是否为该平台骑手身份以及在指定区域和时间范围内是否有订单。

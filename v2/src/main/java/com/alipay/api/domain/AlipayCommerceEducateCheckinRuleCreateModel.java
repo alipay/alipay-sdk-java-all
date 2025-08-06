@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建签到规则
  *
  * @author auto create
- * @since 1.0, 2025-07-23 11:03:54
+ * @since 1.0, 2025-08-05 17:18:56
  */
 public class AlipayCommerceEducateCheckinRuleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7388447297136184875L;
+	private static final long serialVersionUID = 3894842184325742998L;
 
 	/**
 	 * 活动平台id
@@ -27,6 +27,12 @@ public class AlipayCommerceEducateCheckinRuleCreateModel extends AlipayObject {
 	 */
 	@ApiField("authentication_type")
 	private String authenticationType;
+
+	/**
+	 * 寝室签到规则扩展
+	 */
+	@ApiField("dormitory_config")
+	private DormitoryConfig dormitoryConfig;
 
 	/**
 	 * 规则生效状态
@@ -144,6 +150,13 @@ public class AlipayCommerceEducateCheckinRuleCreateModel extends AlipayObject {
 	}
 	public void setAuthenticationType(String authenticationType) {
 		this.authenticationType = authenticationType;
+	}
+
+	public DormitoryConfig getDormitoryConfig() {
+		return this.dormitoryConfig;
+	}
+	public void setDormitoryConfig(DormitoryConfig dormitoryConfig) {
+		this.dormitoryConfig = dormitoryConfig;
 	}
 
 	public Boolean getEnableStatus() {

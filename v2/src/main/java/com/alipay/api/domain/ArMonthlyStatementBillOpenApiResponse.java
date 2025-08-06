@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ArMonthlyStatementBillOpenApiResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 1854667387416247823L;
+	private static final long serialVersionUID = 1344452157561431889L;
 
 	/**
 	 * 账单核算时区
