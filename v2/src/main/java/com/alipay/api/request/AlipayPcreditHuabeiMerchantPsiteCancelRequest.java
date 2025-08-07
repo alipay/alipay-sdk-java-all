@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.huabei.merchant.psite.cancel request
  * 
  * @author auto create
- * @since 1.0, 2025-07-25 09:43:38
+ * @since 1.0, 2025-08-07 10:12:37
  */
 public class AlipayPcreditHuabeiMerchantPsiteCancelRequest implements AlipayRequest<AlipayPcreditHuabeiMerchantPsiteCancelResponse> {
 

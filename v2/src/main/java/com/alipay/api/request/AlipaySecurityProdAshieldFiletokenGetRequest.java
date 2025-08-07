@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.ashield.filetoken.get request
  * 
  * @author auto create
- * @since 1.0, 2024-08-08 22:18:41
+ * @since 1.0, 2025-08-07 13:04:40
  */
 public class AlipaySecurityProdAshieldFiletokenGetRequest implements AlipayRequest<AlipaySecurityProdAshieldFiletokenGetResponse> {
 

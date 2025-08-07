@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.nppd.itemincrement.sync request
  * 
  * @author auto create
- * @since 1.0, 2025-05-27 13:58:14
+ * @since 1.0, 2025-08-07 12:27:37
  */
 public class AlipayOpenNppdItemincrementSyncRequest implements AlipayRequest<AlipayOpenNppdItemincrementSyncResponse> {
 

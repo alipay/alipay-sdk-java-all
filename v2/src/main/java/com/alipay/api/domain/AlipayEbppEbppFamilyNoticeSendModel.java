@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生活缴费家庭消息发送
  *
  * @author auto create
- * @since 1.0, 2025-04-24 13:38:43
+ * @since 1.0, 2025-08-07 11:27:36
  */
 public class AlipayEbppEbppFamilyNoticeSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6754139995118372278L;
+	private static final long serialVersionUID = 6219254939942439649L;
 
 	/**
 	 * 发送的消息类型

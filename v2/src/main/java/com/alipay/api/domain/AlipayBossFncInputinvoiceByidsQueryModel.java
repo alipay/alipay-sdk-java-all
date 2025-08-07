@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据id查询发票
  *
  * @author auto create
- * @since 1.0, 2023-08-29 20:52:13
+ * @since 1.0, 2025-08-07 17:57:42
  */
 public class AlipayBossFncInputinvoiceByidsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3288532474124793597L;
+	private static final long serialVersionUID = 1692921565274433844L;
 
 	/**
 	 * 发票查询入参

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.health.archive.save request
  * 
  * @author auto create
- * @since 1.0, 2025-03-10 17:37:26
+ * @since 1.0, 2025-08-06 17:56:30
  */
 public class AlipayCommerceMedicalHealthArchiveSaveRequest implements AlipayRequest<AlipayCommerceMedicalHealthArchiveSaveResponse> {
 

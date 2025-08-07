@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * NFC线圈导出下载接口
  *
  * @author auto create
- * @since 1.0, 2025-06-19 20:02:26
+ * @since 1.0, 2025-08-07 10:37:36
  */
 public class AlipayCommercePropertyNfctagDownloadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8536921852926621549L;
+	private static final long serialVersionUID = 4485788839816369741L;
 
 	/**
 	 * 业务类型

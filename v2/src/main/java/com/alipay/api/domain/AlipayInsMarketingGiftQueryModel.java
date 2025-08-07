@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 赠险产品是否开通查询
  *
  * @author auto create
- * @since 1.0, 2023-01-10 20:49:17
+ * @since 1.0, 2025-08-07 18:43:58
  */
 public class AlipayInsMarketingGiftQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4219281848895163786L;
+	private static final long serialVersionUID = 8117311232261383611L;
 
 	/**
 	 * 渠道规则编码

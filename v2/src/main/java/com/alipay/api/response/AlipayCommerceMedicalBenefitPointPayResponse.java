@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.benefit.point.pay response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-23 15:47:49
+ * @since 1.0, 2025-08-07 10:17:37
  */
 public class AlipayCommerceMedicalBenefitPointPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2461174239564692296L;
+	private static final long serialVersionUID = 7447261564673876946L;
 
 	/** 
 	 * 处理码

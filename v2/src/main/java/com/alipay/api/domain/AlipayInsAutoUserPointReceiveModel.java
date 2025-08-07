@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户攒油请求
  *
  * @author auto create
- * @since 1.0, 2023-01-10 20:47:10
+ * @since 1.0, 2025-08-07 18:44:26
  */
 public class AlipayInsAutoUserPointReceiveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1841356361587837264L;
+	private static final long serialVersionUID = 4612637454821495817L;
 
 	/**
 	 * 车险活动类型编码。

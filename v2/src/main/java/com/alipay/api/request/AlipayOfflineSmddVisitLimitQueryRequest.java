@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.smdd.visit.limit.query request
  * 
  * @author auto create
- * @since 1.0, 2025-04-08 16:22:39
+ * @since 1.0, 2025-08-07 11:22:38
  */
 public class AlipayOfflineSmddVisitLimitQueryRequest implements AlipayRequest<AlipayOfflineSmddVisitLimitQueryResponse> {
 

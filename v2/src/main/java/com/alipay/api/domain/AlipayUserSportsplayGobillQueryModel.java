@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户走路线流水
  *
  * @author auto create
- * @since 1.0, 2023-10-27 14:11:40
+ * @since 1.0, 2025-08-07 10:00:55
  */
 public class AlipayUserSportsplayGobillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1444187725363916718L;
+	private static final long serialVersionUID = 7248398832564147816L;
 
 	/**
 	 * 路线场景ID

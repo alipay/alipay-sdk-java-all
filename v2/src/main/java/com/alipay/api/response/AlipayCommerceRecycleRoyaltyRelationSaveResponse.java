@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.recycle.royalty.relation.save response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-20 18:05:14
+ * @since 1.0, 2025-08-07 11:12:36
  */
 public class AlipayCommerceRecycleRoyaltyRelationSaveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2675989135959466274L;
+	private static final long serialVersionUID = 8138124268813811723L;
 
 	
 

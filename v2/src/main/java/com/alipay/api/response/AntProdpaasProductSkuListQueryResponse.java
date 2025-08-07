@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.prodpaas.product.sku.list.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-11 13:50:17
+ * @since 1.0, 2025-08-07 14:45:10
  */
 public class AntProdpaasProductSkuListQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4128646243895127196L;
+	private static final long serialVersionUID = 7822723882459642361L;
 
 	/** 
 	 * 状态码(success|failure)

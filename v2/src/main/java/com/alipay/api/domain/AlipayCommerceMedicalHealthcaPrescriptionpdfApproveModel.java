@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 处方PDF加签
  *
  * @author auto create
- * @since 1.0, 2025-05-06 16:10:12
+ * @since 1.0, 2025-08-06 20:08:43
  */
 public class AlipayCommerceMedicalHealthcaPrescriptionpdfApproveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6573692726231885456L;
+	private static final long serialVersionUID = 5493276554271858217L;
 
 	/**
 	 * 身份证号

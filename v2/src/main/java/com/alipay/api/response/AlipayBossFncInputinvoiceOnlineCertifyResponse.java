@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.fnc.inputinvoice.online.certify response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-30 16:41:43
+ * @since 1.0, 2025-08-07 17:57:56
  */
 public class AlipayBossFncInputinvoiceOnlineCertifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5447287825883188348L;
+	private static final long serialVersionUID = 2589795521272262192L;
 
 	/** 
 	 * 勾选结果

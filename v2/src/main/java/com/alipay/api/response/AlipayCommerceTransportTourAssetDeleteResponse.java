@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.tour.asset.delete response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-30 22:02:33
+ * @since 1.0, 2025-08-06 21:07:35
  */
 public class AlipayCommerceTransportTourAssetDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8176223974255563766L;
+	private static final long serialVersionUID = 2111375478394687775L;
 
 	/** 
 	 * 出库失败的订单号列表。

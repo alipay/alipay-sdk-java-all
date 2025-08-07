@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.pcinstpromo.pcinstpromo.activityorder.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-09-10 18:08:44
+ * @since 1.0, 2025-08-07 13:11:56
  */
 public class AntPcinstpromoPcinstpromoActivityorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6797369421558512353L;
+	private static final long serialVersionUID = 1723367916291657962L;
 
 	/** 
 	 * P站配置的活动id

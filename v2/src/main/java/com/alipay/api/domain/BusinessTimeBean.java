@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BusinessTimeBean extends AlipayObject {
 
-	private static final long serialVersionUID = 2274246466593279567L;
+	private static final long serialVersionUID = 1115393736697557786L;
 
 	/**
 	 * 停止营业时间

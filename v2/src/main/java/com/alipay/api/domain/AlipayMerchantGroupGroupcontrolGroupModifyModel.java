@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改广告屏蔽群组
  *
  * @author auto create
- * @since 1.0, 2025-07-09 11:39:24
+ * @since 1.0, 2025-08-07 10:37:36
  */
 public class AlipayMerchantGroupGroupcontrolGroupModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6889985256392147215L;
+	private static final long serialVersionUID = 1556842854556998689L;
 
 	/**
 	 * 是否全部群组

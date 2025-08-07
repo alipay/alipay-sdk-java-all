@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 根据PO编号查询PO信息
  *
  * @author auto create
- * @since 1.0, 2023-09-15 09:58:58
+ * @since 1.0, 2025-08-07 19:07:45
  */
 public class AlipayDigitalmgmtPoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2214462917797738396L;
+	private static final long serialVersionUID = 4683667833684389775L;
 
 	/**
 	 * 实际需求方采购组织ID

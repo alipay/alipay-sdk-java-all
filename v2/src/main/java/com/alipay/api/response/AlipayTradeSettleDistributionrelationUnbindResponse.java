@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.settle.distributionrelation.unbind response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-13 10:37:29
+ * @since 1.0, 2025-08-07 12:22:37
  */
 public class AlipayTradeSettleDistributionrelationUnbindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5461723646168312629L;
+	private static final long serialVersionUID = 6619841883695964177L;
 
 	
 

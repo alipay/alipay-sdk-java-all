@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.smdd.shop.wechat.apply request
  * 
  * @author auto create
- * @since 1.0, 2025-04-08 16:22:15
+ * @since 1.0, 2025-08-07 11:12:37
  */
 public class AlipayOfflineSmddShopWechatApplyRequest implements AlipayRequest<AlipayOfflineSmddShopWechatApplyResponse> {
 

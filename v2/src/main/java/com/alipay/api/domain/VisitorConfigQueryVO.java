@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 门禁视频配置 enableMonitorRoom=true必填
  *
  * @author auto create
- * @since 1.0, 2025-06-19 20:02:29
+ * @since 1.0, 2025-08-07 10:42:37
  */
 public class VisitorConfigQueryVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6376655367429245113L;
+	private static final long serialVersionUID = 1579698539119655891L;
 
 	/**
 	 * 开门配置

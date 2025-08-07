@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.marketing.aiplayfieldbus.itemdelete.sync response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-02 15:04:45
+ * @since 1.0, 2025-08-07 10:07:37
  */
 public class AlipayOfflineMarketingAiplayfieldbusItemdeleteSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5891247772772543552L;
+	private static final long serialVersionUID = 3538554448787818315L;
 
 	/** 
 	 * 请求id

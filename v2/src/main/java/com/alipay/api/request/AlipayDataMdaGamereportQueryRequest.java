@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.mda.gamereport.query request
  * 
  * @author auto create
- * @since 1.0, 2024-08-08 22:08:45
+ * @since 1.0, 2025-08-07 13:00:13
  */
 public class AlipayDataMdaGamereportQueryRequest implements AlipayRequest<AlipayDataMdaGamereportQueryResponse> {
 

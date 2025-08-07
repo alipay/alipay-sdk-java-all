@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.antlescenter.partcontract.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-14 15:48:30
+ * @since 1.0, 2025-08-07 12:47:36
  */
 public class AlipayBossAntlescenterPartcontractCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8665523591991545677L;
+	private static final long serialVersionUID = 2795518237854839949L;
 
 	/** 
 	 * 合同编号

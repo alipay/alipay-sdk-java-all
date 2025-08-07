@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FriendListVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7329732329387182861L;
+	private static final long serialVersionUID = 3381181311177376663L;
 
 	/**
 	 * 头像的服务地址

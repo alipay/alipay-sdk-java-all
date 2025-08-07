@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.sportsplay.gobill.query request
  * 
  * @author auto create
- * @since 1.0, 2023-10-27 14:16:49
+ * @since 1.0, 2025-08-07 10:00:55
  */
 public class AlipayUserSportsplayGobillQueryRequest implements AlipayRequest<AlipayUserSportsplayGobillQueryResponse> {
 

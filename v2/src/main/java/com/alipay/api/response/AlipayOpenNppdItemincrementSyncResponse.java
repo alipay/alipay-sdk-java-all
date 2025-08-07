@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.nppd.itemincrement.sync response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-27 13:58:14
+ * @since 1.0, 2025-08-07 12:27:37
  */
 public class AlipayOpenNppdItemincrementSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5882334734578199738L;
+	private static final long serialVersionUID = 6243163964241686278L;
 
 	/** 
 	 * 请求标识

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.invoice.summary.download response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-16 15:41:09
+ * @since 1.0, 2025-08-07 12:47:37
  */
 public class AlipayFundInvoiceSummaryDownloadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2625764993571696691L;
+	private static final long serialVersionUID = 6594871733945743615L;
 
 	/** 
 	 * 文件下载地址

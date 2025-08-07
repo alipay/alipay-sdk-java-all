@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.agent.vesion.preview response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-11 18:10:37
+ * @since 1.0, 2025-08-07 11:07:37
  */
 public class AlipayOpenAgentVesionPreviewResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7352427213343261749L;
+	private static final long serialVersionUID = 4292648694282531688L;
 
 	/** 
 	 * 二维码预览链接

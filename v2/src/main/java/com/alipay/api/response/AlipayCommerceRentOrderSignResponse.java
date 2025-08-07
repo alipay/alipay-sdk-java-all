@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.rent.order.sign response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-01 16:17:35
+ * @since 1.0, 2025-08-07 10:52:34
  */
 public class AlipayCommerceRentOrderSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7675611357275676651L;
+	private static final long serialVersionUID = 8292916188137946965L;
 
 	/** 
 	 * 签约方式，使用插件拉起受理台进行签约，具体使用方法请参考 <a href="https://opendocs.alipay.com/solution/0h845z?pathHash=d2c7ca4f#%E7%AD%BE%E7%BA%A6%E8%AE%A2%E5%8D%95" target="_blank">接入指南-签约订单</a>

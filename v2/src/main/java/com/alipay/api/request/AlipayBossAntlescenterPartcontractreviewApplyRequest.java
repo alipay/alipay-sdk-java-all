@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.antlescenter.partcontractreview.apply request
  * 
  * @author auto create
- * @since 1.0, 2024-08-14 15:48:30
+ * @since 1.0, 2025-08-07 12:47:36
  */
 public class AlipayBossAntlescenterPartcontractreviewApplyRequest implements AlipayRequest<AlipayBossAntlescenterPartcontractreviewApplyResponse> {
 

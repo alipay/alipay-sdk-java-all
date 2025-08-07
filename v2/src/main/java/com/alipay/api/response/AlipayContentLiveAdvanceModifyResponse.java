@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.content.live.advance.modify response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-22 13:58:09
+ * @since 1.0, 2025-08-07 11:07:37
  */
 public class AlipayContentLiveAdvanceModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1339723189438146374L;
+	private static final long serialVersionUID = 2356622718899765142L;
 
 	/** 
 	 * 支付宝直播预告id，脱敏返回

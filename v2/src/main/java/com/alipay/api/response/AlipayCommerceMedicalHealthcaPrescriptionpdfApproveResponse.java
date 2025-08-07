@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.healthca.prescriptionpdf.approve response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-06 16:12:28
+ * @since 1.0, 2025-08-06 20:12:35
  */
 public class AlipayCommerceMedicalHealthcaPrescriptionpdfApproveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6359245518937233796L;
+	private static final long serialVersionUID = 1271662747727278185L;
 
 	/** 
 	 * 签署合同ID

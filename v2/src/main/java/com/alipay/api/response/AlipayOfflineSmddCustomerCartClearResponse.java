@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.smdd.customer.cart.clear response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-08 16:22:23
+ * @since 1.0, 2025-08-07 11:22:36
  */
 public class AlipayOfflineSmddCustomerCartClearResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5156266312961634418L;
+	private static final long serialVersionUID = 7354931266629539145L;
 
 	/** 
 	 * 优惠文案信息

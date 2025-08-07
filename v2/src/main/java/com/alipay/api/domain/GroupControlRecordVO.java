@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 广告屏蔽记录列表
  *
  * @author auto create
- * @since 1.0, 2025-07-09 11:39:25
+ * @since 1.0, 2025-08-07 10:37:36
  */
 public class GroupControlRecordVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4242352235993635294L;
+	private static final long serialVersionUID = 2179849747558559532L;
 
 	/**
 	 * 创建时间

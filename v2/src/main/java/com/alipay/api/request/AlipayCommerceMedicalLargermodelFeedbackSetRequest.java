@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.largermodel.feedback.set request
  * 
  * @author auto create
- * @since 1.0, 2024-08-01 20:52:03
+ * @since 1.0, 2025-08-06 18:19:14
  */
 public class AlipayCommerceMedicalLargermodelFeedbackSetRequest implements AlipayRequest<AlipayCommerceMedicalLargermodelFeedbackSetResponse> {
 

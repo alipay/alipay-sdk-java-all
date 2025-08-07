@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询用户爱攒油信息
  *
  * @author auto create
- * @since 1.0, 2023-01-10 20:47:31
+ * @since 1.0, 2025-08-07 18:45:24
  */
 public class AlipayInsAutoUserOilQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5215618764127963812L;
+	private static final long serialVersionUID = 2283524755142249943L;
 
 	/**
 	 * 蚂蚁统一会员ID

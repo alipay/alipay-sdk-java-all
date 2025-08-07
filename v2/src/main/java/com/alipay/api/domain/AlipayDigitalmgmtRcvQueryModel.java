@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据rcv编号查询采购rcv详情
  *
  * @author auto create
- * @since 1.0, 2023-09-15 09:58:53
+ * @since 1.0, 2025-08-07 19:09:31
  */
 public class AlipayDigitalmgmtRcvQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5642684187996623693L;
+	private static final long serialVersionUID = 1657186216823375554L;
 
 	/**
 	 * rcv编号

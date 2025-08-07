@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.mda.digitalpay.query request
  * 
  * @author auto create
- * @since 1.0, 2024-08-08 22:09:02
+ * @since 1.0, 2025-08-07 13:00:49
  */
 public class AlipayDataMdaDigitalpayQueryRequest implements AlipayRequest<AlipayDataMdaDigitalpayQueryResponse> {
 

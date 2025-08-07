@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 位置授权配置
  *
  * @author auto create
- * @since 1.0, 2025-06-19 20:02:29
+ * @since 1.0, 2025-08-07 10:42:37
  */
 public class LocationAuthConfigQueryVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2258682352485351128L;
+	private static final long serialVersionUID = 8359713888164736854L;
 
 	/**
 	 * 配置开关

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 场景商户角色修改
  *
  * @author auto create
- * @since 1.0, 2025-06-17 20:22:26
+ * @since 1.0, 2025-08-07 10:47:36
  */
 public class AntMerchantExpandSceneRoleModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7817349868292241341L;
+	private static final long serialVersionUID = 8546527388898362149L;
 
 	/**
 	 * 商户别名

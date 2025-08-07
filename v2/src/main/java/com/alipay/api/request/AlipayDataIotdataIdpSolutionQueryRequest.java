@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.iotdata.idp.solution.query request
  * 
  * @author auto create
- * @since 1.0, 2024-08-08 22:09:19
+ * @since 1.0, 2025-08-07 13:01:27
  */
 public class AlipayDataIotdataIdpSolutionQueryRequest implements AlipayRequest<AlipayDataIotdataIdpSolutionQueryResponse> {
 

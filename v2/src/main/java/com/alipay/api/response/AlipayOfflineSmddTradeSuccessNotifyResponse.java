@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.smdd.trade.success.notify response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-08 16:22:27
+ * @since 1.0, 2025-08-07 11:12:37
  */
 public class AlipayOfflineSmddTradeSuccessNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3719611127948885134L;
+	private static final long serialVersionUID = 8637251946184876375L;
 
 	
 

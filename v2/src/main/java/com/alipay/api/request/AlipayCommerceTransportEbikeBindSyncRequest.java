@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.ebike.bind.sync request
  * 
  * @author auto create
- * @since 1.0, 2024-11-12 16:36:20
+ * @since 1.0, 2025-08-07 13:19:54
  */
 public class AlipayCommerceTransportEbikeBindSyncRequest implements AlipayRequest<AlipayCommerceTransportEbikeBindSyncResponse> {
 

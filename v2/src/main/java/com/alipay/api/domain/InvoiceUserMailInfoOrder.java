@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InvoiceUserMailInfoOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 6685394119525562289L;
+	private static final long serialVersionUID = 2853191912687488879L;
 
 	/**
 	 * 城市

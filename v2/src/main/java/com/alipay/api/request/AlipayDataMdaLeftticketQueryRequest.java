@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.mda.leftticket.query request
  * 
  * @author auto create
- * @since 1.0, 2024-08-08 22:12:45
+ * @since 1.0, 2025-08-07 13:03:11
  */
 public class AlipayDataMdaLeftticketQueryRequest implements AlipayRequest<AlipayDataMdaLeftticketQueryResponse> {
 

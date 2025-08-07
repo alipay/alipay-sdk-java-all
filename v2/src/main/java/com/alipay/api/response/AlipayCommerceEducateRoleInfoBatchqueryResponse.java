@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.role.info.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-17 17:32:59
+ * @since 1.0, 2025-08-07 11:02:37
  */
 public class AlipayCommerceEducateRoleInfoBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8685645656651893382L;
+	private static final long serialVersionUID = 8118482356756266639L;
 
 	/** 
 	 * 角色列表

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BookPromoInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1575729813159859487L;
+	private static final long serialVersionUID = 7291542995823436554L;
 
 	/**
 	 * 营销活动折扣价（即到手价），如果有营销活动且promo_type="DISCOUNT"时，该字段不可为空。

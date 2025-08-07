@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserAntbooksAlbumQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3143119762598467111L;
+	private static final long serialVersionUID = 7581527279815763739L;
 
 	/** 
 	 * 专辑信息列表

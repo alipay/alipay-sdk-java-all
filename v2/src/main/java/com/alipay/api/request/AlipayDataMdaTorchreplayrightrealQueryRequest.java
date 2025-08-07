@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.mda.torchreplayrightreal.query request
  * 
  * @author auto create
- * @since 1.0, 2024-08-08 22:19:56
+ * @since 1.0, 2025-08-07 13:04:57
  */
 public class AlipayDataMdaTorchreplayrightrealQueryRequest implements AlipayRequest<AlipayDataMdaTorchreplayrightrealQueryResponse> {
 

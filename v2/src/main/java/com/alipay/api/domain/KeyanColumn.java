@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KeyanColumn extends AlipayObject {
 
-	private static final long serialVersionUID = 4246217964718564677L;
+	private static final long serialVersionUID = 7643291781231697697L;
 
 	/**
 	 * 密码

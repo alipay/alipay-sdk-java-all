@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCloudCloudbaseAntifloodBarrierSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7695512124861385896L;
+	private static final long serialVersionUID = 3285463156779212393L;
 
 	/**
 	 * 封禁时长（秒） [60, 3*86400]

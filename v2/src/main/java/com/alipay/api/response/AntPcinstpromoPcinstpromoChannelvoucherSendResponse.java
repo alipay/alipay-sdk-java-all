@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.pcinstpromo.pcinstpromo.channelvoucher.send response.
  * 
  * @author auto create
- * @since 1.0, 2024-09-10 18:08:55
+ * @since 1.0, 2025-08-07 13:17:21
  */
 public class AntPcinstpromoPcinstpromoChannelvoucherSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3136245538997949254L;
+	private static final long serialVersionUID = 1252656534587197452L;
 
 	/** 
 	 * 接收渠道红包的，脱敏后的支付宝登录号

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.provider.npromoactivity.status.sync response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-29 15:43:53
+ * @since 1.0, 2025-08-07 12:32:37
  */
 public class AlipayOfflineProviderNpromoactivityStatusSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6881865527473819756L;
+	private static final long serialVersionUID = 8466513236491637438L;
 
 	
 

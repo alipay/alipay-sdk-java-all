@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 员工删除接口
  *
  * @author auto create
- * @since 1.0, 2025-06-19 20:02:27
+ * @since 1.0, 2025-08-07 10:42:37
  */
 public class AlipayCommercePropertyStaffDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8326452588652576538L;
+	private static final long serialVersionUID = 8871459516641599564L;
 
 	/**
 	 * 员工id

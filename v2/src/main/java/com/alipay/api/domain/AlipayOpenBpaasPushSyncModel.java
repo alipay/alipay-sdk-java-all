@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenBpaasPushSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6758851394655871514L;
+	private static final long serialVersionUID = 4597296234254451671L;
 
 	/**
 	 * bpaas应用ID

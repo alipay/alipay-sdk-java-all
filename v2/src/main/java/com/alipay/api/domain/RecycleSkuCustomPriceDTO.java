@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RecycleSkuCustomPriceDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7186698127139791722L;
+	private static final long serialVersionUID = 7243832653681331948L;
 
 	/**
 	 * 自定义价格类型

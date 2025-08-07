@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AnttechNftOauthtokenApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3727821526162388723L;
+	private static final long serialVersionUID = 2824432528712287859L;
 
 	/** 
 	 * 后续调用接口鉴权的token，有效期30天

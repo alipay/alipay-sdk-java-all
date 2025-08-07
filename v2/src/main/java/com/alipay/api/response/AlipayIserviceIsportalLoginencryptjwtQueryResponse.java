@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.isportal.loginencryptjwt.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-08 16:35:19
+ * @since 1.0, 2025-08-07 10:47:36
  */
 public class AlipayIserviceIsportalLoginencryptjwtQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4315832448433417332L;
+	private static final long serialVersionUID = 7733186719522223555L;
 
 	/** 
 	 * 加密的登录态jwt信息

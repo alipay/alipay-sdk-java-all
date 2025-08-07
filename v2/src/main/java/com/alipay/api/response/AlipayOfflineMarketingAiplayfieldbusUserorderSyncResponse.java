@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.marketing.aiplayfieldbus.userorder.sync response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-02 15:04:46
+ * @since 1.0, 2025-08-07 10:07:37
  */
 public class AlipayOfflineMarketingAiplayfieldbusUserorderSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6552994613248285442L;
+	private static final long serialVersionUID = 3592956978568247182L;
 
 	/** 
 	 * 请求id

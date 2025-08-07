@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMedicalItemListQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2272141754743856323L;
+	private static final long serialVersionUID = 2287516645173512181L;
 
 	/** 
 	 * 商品详情

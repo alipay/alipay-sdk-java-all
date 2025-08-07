@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.account.balanceremind.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-18 15:57:59
+ * @since 1.0, 2025-08-07 12:57:37
  */
 public class AlipayFundAccountBalanceremindCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5287892394781182355L;
+	private static final long serialVersionUID = 3587429897648346327L;
 
 	/** 
 	 * 创建的计划在支付宝域内的id

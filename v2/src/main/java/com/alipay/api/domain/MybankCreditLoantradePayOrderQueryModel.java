@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankCreditLoantradePayOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8225719963526854956L;
+	private static final long serialVersionUID = 3695814944744245684L;
 
 	/**
 	 * 支付宝UID

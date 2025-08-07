@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.provider.npromoactivity.withholdvoucher.create request
  * 
  * @author auto create
- * @since 1.0, 2024-11-29 15:43:49
+ * @since 1.0, 2025-08-07 12:32:37
  */
 public class AlipayOfflineProviderNpromoactivityWithholdvoucherCreateRequest implements AlipayRequest<AlipayOfflineProviderNpromoactivityWithholdvoucherCreateResponse> {
 

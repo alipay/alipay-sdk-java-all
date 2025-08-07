@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OmsItemDeleteReq extends AlipayObject {
 
-	private static final long serialVersionUID = 1251249695949313563L;
+	private static final long serialVersionUID = 8456519926158759348L;
 
 	/**
 	 * 系统注册账号名

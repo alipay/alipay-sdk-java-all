@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商家补分账
  *
  * @author auto create
- * @since 1.0, 2025-04-28 17:32:01
+ * @since 1.0, 2025-08-07 13:56:33
  */
 public class AlipayCommerceRentRoyaltySellerAppendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6577529248458758966L;
+	private static final long serialVersionUID = 1236476911799332957L;
 
 	/**
 	 * 16位纯数字，小程序场景下获取用户ID请参考：用户授权; 其它场景下获取用户ID请参考：网页授权获取用户信息;其中buyer_id与buyer_open_id不能同时为空

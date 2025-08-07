@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建采购接收货单据
  *
  * @author auto create
- * @since 1.0, 2023-09-15 09:59:04
+ * @since 1.0, 2025-08-07 19:09:50
  */
 public class AlipayDigitalmgmtRcvCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3178465258926973669L;
+	private static final long serialVersionUID = 3246923315381199815L;
 
 	/**
 	 * 创建rcv参数

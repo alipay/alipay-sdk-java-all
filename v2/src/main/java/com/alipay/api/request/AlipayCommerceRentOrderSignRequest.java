@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.rent.order.sign request
  * 
  * @author auto create
- * @since 1.0, 2025-08-01 16:17:35
+ * @since 1.0, 2025-08-07 10:52:34
  */
 public class AlipayCommerceRentOrderSignRequest implements AlipayRequest<AlipayCommerceRentOrderSignResponse> {
 

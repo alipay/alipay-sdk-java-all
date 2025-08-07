@@ -4,7 +4,7 @@
     <groupId>com.alipay.sdk</groupId>
     <artifactId>alipay-sdk-java</artifactId>
     <packaging>jar</packaging>
-    <version>4.40.379.ALL</version>
+    <version>4.40.382.ALL</version>
     <name>alipay-sdk-java</name>
 
     <url>https://open.alipay.com</url>
@@ -121,27 +121,27 @@
                     </execution>
                 </executions>
             </plugin>
-                <plugin>
-                    <groupId>org.sonatype.plugins</groupId>
-                    <artifactId>nexus-staging-maven-plugin</artifactId>
-                    <version>1.6.7</version>
-                    <extensions>true</extensions>
-                    <configuration>
-                        <serverId>ossrh</serverId>
-                        <nexusUrl>https://ossrh-staging-api.central.sonatype.com/</nexusUrl>
-                        <autoReleaseAfterClose>true</autoReleaseAfterClose>
-                    </configuration>
-                </plugin>
-<!--            <plugin>-->
-<!--                <groupId>org.sonatype.central</groupId>-->
-<!--                <artifactId>central-publishing-maven-plugin</artifactId>-->
-<!--                <version>0.8.0</version>-->
-<!--                <extensions>true</extensions>-->
-<!--                <configuration>-->
-<!--                    <publishingServerId>ossrh</publishingServerId>-->
-<!--                    <autoPublish>true</autoPublish>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
+<!--                <plugin>-->
+<!--                    <groupId>org.sonatype.plugins</groupId>-->
+<!--                    <artifactId>nexus-staging-maven-plugin</artifactId>-->
+<!--                    <version>1.6.7</version>-->
+<!--                    <extensions>true</extensions>-->
+<!--                    <configuration>-->
+<!--                        <serverId>ossrh</serverId>-->
+<!--                        <nexusUrl>https://ossrh-staging-api.central.sonatype.com/</nexusUrl>-->
+<!--                        <autoReleaseAfterClose>true</autoReleaseAfterClose>-->
+<!--                    </configuration>-->
+<!--                </plugin>-->
+            <plugin>
+                <groupId>org.sonatype.central</groupId>
+                <artifactId>central-publishing-maven-plugin</artifactId>
+                <version>0.8.0</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <publishingServerId>ossrh</publishingServerId>
+                    <autoPublish>true</autoPublish>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-scm-plugin</artifactId>

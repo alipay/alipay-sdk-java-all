@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询自动回复详情
  *
  * @author auto create
- * @since 1.0, 2025-07-09 11:39:29
+ * @since 1.0, 2025-08-06 15:27:37
  */
 public class AlipayMerchantGroupAutoreplyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7128615758856374899L;
+	private static final long serialVersionUID = 4662164258696624326L;
 
 	/**
 	 * 自动回复id

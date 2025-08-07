@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenPublicPayeeBindCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3658725787589877326L;
+	private static final long serialVersionUID = 5625157151113791797L;
 
 	/**
 	 * 收款账号，需要绑定的收款支付宝账号，请勿与 pid 同时传入。

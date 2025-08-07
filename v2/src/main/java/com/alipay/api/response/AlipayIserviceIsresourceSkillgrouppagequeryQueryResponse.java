@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayIserviceIsresourceSkillgrouppagequeryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3482763881445171168L;
+	private static final long serialVersionUID = 2128292875563989388L;
 
 	/** 
 	 * 技能组列表

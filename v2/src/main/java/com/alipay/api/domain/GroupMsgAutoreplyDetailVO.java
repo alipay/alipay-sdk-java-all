@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 自动回复详情
  *
  * @author auto create
- * @since 1.0, 2025-07-09 11:39:29
+ * @since 1.0, 2025-08-06 15:27:37
  */
 public class GroupMsgAutoreplyDetailVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7896887915645698473L;
+	private static final long serialVersionUID = 2621595464664754244L;
 
 	/**
 	 * 自动回复id

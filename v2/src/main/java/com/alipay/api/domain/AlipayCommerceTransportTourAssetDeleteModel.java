@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 信息出库接口
  *
  * @author auto create
- * @since 1.0, 2025-07-30 21:57:59
+ * @since 1.0, 2025-08-06 21:06:44
  */
 public class AlipayCommerceTransportTourAssetDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4295917478145272552L;
+	private static final long serialVersionUID = 5334635958382462757L;
 
 	/**
 	 * 用户资产出库实体类集合

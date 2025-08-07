@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.invoice.summary.download request
  * 
  * @author auto create
- * @since 1.0, 2025-06-16 15:41:09
+ * @since 1.0, 2025-08-07 12:47:37
  */
 public class AlipayFundInvoiceSummaryDownloadRequest implements AlipayRequest<AlipayFundInvoiceSummaryDownloadResponse> {
 

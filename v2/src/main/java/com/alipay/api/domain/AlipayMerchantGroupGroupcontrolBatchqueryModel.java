@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商家群广告屏蔽分页查询
  *
  * @author auto create
- * @since 1.0, 2025-07-09 11:39:25
+ * @since 1.0, 2025-08-07 10:37:36
  */
 public class AlipayMerchantGroupGroupcontrolBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1313144353674355249L;
+	private static final long serialVersionUID = 1793619915821225586L;
 
 	/**
 	 * 当前第几页

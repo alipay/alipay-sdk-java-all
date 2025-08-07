@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayDataDataserviceAntdataassetsUploadjobCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2498483874961891281L;
+	private static final long serialVersionUID = 1177491768441333693L;
 
 	/**
 	 * ODPS表的guid

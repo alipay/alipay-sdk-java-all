@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.smdd.ocr.image.identify request
  * 
  * @author auto create
- * @since 1.0, 2025-04-08 16:22:14
+ * @since 1.0, 2025-08-07 11:12:36
  */
 public class AlipayOfflineSmddOcrImageIdentifyRequest implements AlipayRequest<AlipayOfflineSmddOcrImageIdentifyResponse> {
 

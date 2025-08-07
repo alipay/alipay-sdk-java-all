@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.agent.vesion.preview request
  * 
  * @author auto create
- * @since 1.0, 2025-04-11 18:10:37
+ * @since 1.0, 2025-08-07 11:07:37
  */
 public class AlipayOpenAgentVesionPreviewRequest implements AlipayRequest<AlipayOpenAgentVesionPreviewResponse> {
 

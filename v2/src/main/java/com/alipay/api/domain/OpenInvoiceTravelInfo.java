@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenInvoiceTravelInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8122598971933297479L;
+	private static final long serialVersionUID = 5469262128719473126L;
 
 	/**
 	 * 有效证件号

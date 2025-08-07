@@ -6,11 +6,11 @@ import com.alipay.api.AlipayObject;
  * 新模型参数校验接口测试01
  *
  * @author auto create
- * @since 1.0, 2025-01-15 11:20:32
+ * @since 1.0, 2025-08-07 12:22:36
  */
 public class AlipayDataDataserviceSchemaapifirstRainystestQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2525486349658671661L;
+	private static final long serialVersionUID = 6697375332844884292L;
 
 	
 

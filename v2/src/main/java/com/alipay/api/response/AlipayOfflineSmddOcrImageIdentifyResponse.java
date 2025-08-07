@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.smdd.ocr.image.identify response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-08 16:22:14
+ * @since 1.0, 2025-08-07 11:12:36
  */
 public class AlipayOfflineSmddOcrImageIdentifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3747139637911927278L;
+	private static final long serialVersionUID = 5867854223227519793L;
 
 	/** 
 	 * 解析结果

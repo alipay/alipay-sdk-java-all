@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物理门店批量查询
  *
  * @author auto create
- * @since 1.0, 2025-06-27 19:37:47
+ * @since 1.0, 2025-08-06 17:31:20
  */
 public class AlipayCommerceOperationMallhomePhysicalshopQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1672116177571843292L;
+	private static final long serialVersionUID = 3763239818639271467L;
 
 	/**
 	 * 商圈id

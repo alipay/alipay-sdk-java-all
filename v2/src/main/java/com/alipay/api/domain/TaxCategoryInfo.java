@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class TaxCategoryInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2823553275246218615L;
+	private static final long serialVersionUID = 3816367876922381133L;
 
 	/**
 	 * 参考征收率信息

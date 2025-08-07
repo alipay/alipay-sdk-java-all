@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 一方报事配置
  *
  * @author auto create
- * @since 1.0, 2025-06-19 20:02:29
+ * @since 1.0, 2025-08-07 10:42:37
  */
 public class PatrolReportConfigVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3494171593567999531L;
+	private static final long serialVersionUID = 1465969482334117652L;
 
 	/**
 	 * null

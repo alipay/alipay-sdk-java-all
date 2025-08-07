@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.provider.npromoactivity.cancel request
  * 
  * @author auto create
- * @since 1.0, 2024-11-29 15:43:50
+ * @since 1.0, 2025-08-07 12:32:37
  */
 public class AlipayOfflineProviderNpromoactivityCancelRequest implements AlipayRequest<AlipayOfflineProviderNpromoactivityCancelResponse> {
 

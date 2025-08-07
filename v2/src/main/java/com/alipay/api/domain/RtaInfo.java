@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RtaInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1574493759565439982L;
+	private static final long serialVersionUID = 2344264979551578383L;
 
 	/**
 	 * 广告投放账户id

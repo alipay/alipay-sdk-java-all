@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.largermodel.agentwelcomecard.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-10 19:18:47
+ * @since 1.0, 2025-08-07 12:42:36
  */
 public class AlipayCommerceMedicalLargermodelAgentwelcomecardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5541321952522267483L;
+	private static final long serialVersionUID = 3363853826992147189L;
 
 	/** 
 	 * 欢迎页卡片数据

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.expand.scene.role.modify request
  * 
  * @author auto create
- * @since 1.0, 2025-06-17 20:22:26
+ * @since 1.0, 2025-08-07 10:47:36
  */
 public class AntMerchantExpandSceneRoleModifyRequest implements AlipayRequest<AntMerchantExpandSceneRoleModifyResponse> {
 

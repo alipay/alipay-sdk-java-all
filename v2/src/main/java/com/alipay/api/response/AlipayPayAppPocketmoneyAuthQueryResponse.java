@@ -1,6 +1,9 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.WatchAppInfo;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +11,18 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pay.app.pocketmoney.auth.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-09 18:19:55
+ * @since 1.0, 2025-08-06 20:27:37
  */
 public class AlipayPayAppPocketmoneyAuthQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3565991717522159879L;
+	private static final long serialVersionUID = 2348946764749322377L;
+
+	/** 
+	 * app信息
+	 */
+	@ApiListField("app_infos")
+	@ApiField("watch_app_info")
+	private List<WatchAppInfo> appInfos;
 
 	/** 
 	 * 授权结果，枚举值（ok：授权成功，exist：已经存在）
@@ -31,6 +41,13 @@ public class AlipayPayAppPocketmoneyAuthQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("vendor_parent_id")
 	private String vendorParentId;
+
+	public void setAppInfos(List<WatchAppInfo> appInfos) {
+		this.appInfos = appInfos;
+	}
+	public List<WatchAppInfo> getAppInfos( ) {
+		return this.appInfos;
+	}
 
 	public void setAuthResult(String authResult) {
 		this.authResult = authResult;

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.isportal.logincontext.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-08 16:35:17
+ * @since 1.0, 2025-08-07 10:47:36
  */
 public class AlipayIserviceIsportalLogincontextQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4662324643959129523L;
+	private static final long serialVersionUID = 5822433356356466895L;
 
 	/** 
 	 * 登录信息

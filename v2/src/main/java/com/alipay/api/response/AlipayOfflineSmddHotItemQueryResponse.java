@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.smdd.hot.item.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-08 16:22:16
+ * @since 1.0, 2025-08-07 11:22:36
  */
 public class AlipayOfflineSmddHotItemQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8648745249278555751L;
+	private static final long serialVersionUID = 4144982164569325616L;
 
 	/** 
 	 * 商品对象

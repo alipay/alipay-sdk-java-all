@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.mda.torchreplayleftstati.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-08 22:18:58
+ * @since 1.0, 2025-08-07 13:05:48
  */
 public class AlipayDataMdaTorchreplayleftstatiQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8461633111316165344L;
+	private static final long serialVersionUID = 2789597244692239653L;
 
 	/** 
 	 * 参与国家数

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.oceanbase.passportinfo.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2025-05-20 21:28:08
+ * @since 1.0, 2025-08-07 12:59:16
  */
 public class AnttechOceanbasePassportinfoBatchqueryRequest implements AlipayRequest<AnttechOceanbasePassportinfoBatchqueryResponse> {
 

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.template.filepreviewurl.generate response.
  * 
  * @author auto create
- * @since 1.0, 2025-01-10 15:55:22
+ * @since 1.0, 2025-08-07 12:57:37
  */
 public class AlipaySecurityProdTemplateFilepreviewurlGenerateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2884146296212417422L;
+	private static final long serialVersionUID = 8398466952796427999L;
 
 	/** 
 	 * 获取预览地址返回结果

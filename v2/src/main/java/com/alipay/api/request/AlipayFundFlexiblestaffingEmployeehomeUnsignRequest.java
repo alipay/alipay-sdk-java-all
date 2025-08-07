@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.flexiblestaffing.employeehome.unsign request
  * 
  * @author auto create
- * @since 1.0, 2024-04-01 22:56:49
+ * @since 1.0, 2025-08-07 13:18:56
  */
 public class AlipayFundFlexiblestaffingEmployeehomeUnsignRequest implements AlipayRequest<AlipayFundFlexiblestaffingEmployeehomeUnsignResponse> {
 

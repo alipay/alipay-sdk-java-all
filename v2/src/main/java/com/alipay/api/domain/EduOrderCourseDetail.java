@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-08-05 14:20:49
+ * @since 1.0, 2025-08-06 17:12:35
  */
 public class EduOrderCourseDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5295458362445687598L;
+	private static final long serialVersionUID = 7839151896196186147L;
 
 	/**
 	 * 上课结束日期

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.housing.newhouse.project.save response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-19 10:41:35
+ * @since 1.0, 2025-08-07 11:07:37
  */
 public class AlipayCommerceHousingNewhouseProjectSaveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6744611466949746239L;
+	private static final long serialVersionUID = 3738679259219873361L;
 
 	/** 
 	 * 楼盘id

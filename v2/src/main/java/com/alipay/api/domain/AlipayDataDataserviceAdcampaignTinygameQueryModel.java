@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataDataserviceAdcampaignTinygameQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6689222641297548683L;
+	private static final long serialVersionUID = 6187739137666861667L;
 
 	/**
 	 * 商家标志,唯一值,在广告投放平台商家详情获取

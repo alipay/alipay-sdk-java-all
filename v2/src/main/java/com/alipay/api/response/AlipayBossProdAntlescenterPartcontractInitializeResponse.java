@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.prod.antlescenter.partcontract.initialize response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-14 15:48:29
+ * @since 1.0, 2025-08-07 12:47:37
  */
 public class AlipayBossProdAntlescenterPartcontractInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2452269657372658238L;
+	private static final long serialVersionUID = 4171559935593355828L;
 
 	/** 
 	 * 合同编号

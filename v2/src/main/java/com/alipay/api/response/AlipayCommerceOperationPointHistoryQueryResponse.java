@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceOperationPointHistoryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3749938437654312592L;
+	private static final long serialVersionUID = 6813337586714354759L;
 
 	/** 
 	 * 是否存在下一页

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.marketing.aiplayfieldbus.payorder.check response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-02 15:04:47
+ * @since 1.0, 2025-08-07 10:07:37
  */
 public class AlipayOfflineMarketingAiplayfieldbusPayorderCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1528773458412321357L;
+	private static final long serialVersionUID = 2692634656762439828L;
 
 	/** 
 	 * 校验结果

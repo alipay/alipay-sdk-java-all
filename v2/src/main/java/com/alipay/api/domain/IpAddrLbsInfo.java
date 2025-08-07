@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IpAddrLbsInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7616694892137695556L;
+	private static final long serialVersionUID = 2358895741762359373L;
 
 	/**
 	 * IP地址归属地所以城市

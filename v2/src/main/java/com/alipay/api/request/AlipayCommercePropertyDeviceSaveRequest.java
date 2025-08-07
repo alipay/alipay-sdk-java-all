@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.property.device.save request
  * 
  * @author auto create
- * @since 1.0, 2025-06-19 19:58:55
+ * @since 1.0, 2025-08-07 10:27:37
  */
 public class AlipayCommercePropertyDeviceSaveRequest implements AlipayRequest<AlipayCommercePropertyDeviceSaveResponse> {
 

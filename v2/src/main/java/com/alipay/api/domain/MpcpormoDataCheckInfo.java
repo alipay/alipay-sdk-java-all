@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MpcpormoDataCheckInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1428661916685218888L;
+	private static final long serialVersionUID = 3791278615481226982L;
 
 	/**
 	 * 校验信息

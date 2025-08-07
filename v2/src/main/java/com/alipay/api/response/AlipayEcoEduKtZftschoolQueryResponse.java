@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoEduKtZftschoolQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7589695395745897924L;
+	private static final long serialVersionUID = 4679727927911643166L;
 
 	/** 
 	 * 商户进件失败原因。有则返回，进件成功则不返回，失败原因可参考直付通接口说明，https://docs.alipay.com/pre-open/api_pre/ant.merchant.expand.indirect.zft.create

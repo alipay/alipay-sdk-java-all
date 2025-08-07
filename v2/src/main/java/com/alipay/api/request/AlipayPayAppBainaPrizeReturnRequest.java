@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pay.app.baina.prize.return request
  * 
  * @author auto create
- * @since 1.0, 2025-04-16 11:02:04
+ * @since 1.0, 2025-08-07 11:27:36
  */
 public class AlipayPayAppBainaPrizeReturnRequest implements AlipayRequest<AlipayPayAppBainaPrizeReturnResponse> {
 

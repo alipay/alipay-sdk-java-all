@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class JfExportInstBillModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5532126596899157453L;
+	private static final long serialVersionUID = 5763816652938923852L;
 
 	/**
 	 * 账单金额，单位为：RMB元。

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.role.info.modify request
  * 
  * @author auto create
- * @since 1.0, 2025-04-17 17:32:43
+ * @since 1.0, 2025-08-07 11:02:37
  */
 public class AlipayCommerceEducateRoleInfoModifyRequest implements AlipayRequest<AlipayCommerceEducateRoleInfoModifyResponse> {
 

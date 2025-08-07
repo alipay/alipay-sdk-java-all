@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class QcDialog extends AlipayObject {
 
-	private static final long serialVersionUID = 6775911969171522878L;
+	private static final long serialVersionUID = 1665264184878561485L;
 
 	/**
 	 * 文本内容

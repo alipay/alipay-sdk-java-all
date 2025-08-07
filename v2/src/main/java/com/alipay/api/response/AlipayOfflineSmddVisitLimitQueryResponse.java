@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.smdd.visit.limit.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-08 16:22:39
+ * @since 1.0, 2025-08-07 11:22:38
  */
 public class AlipayOfflineSmddVisitLimitQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6324622394124156577L;
+	private static final long serialVersionUID = 6328519171733114614L;
 
 	/** 
 	 * true:禁止

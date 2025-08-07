@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.auth.operation.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-23 17:13:54
+ * @since 1.0, 2025-08-07 13:09:31
  */
 public class AlipayFundAuthOperationDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3386694113212784117L;
+	private static final long serialVersionUID = 6681556429538578925L;
 
 	/** 
 	 * 该笔资金操作流水operation_id对应的操作金额，单位为：元（人民币）

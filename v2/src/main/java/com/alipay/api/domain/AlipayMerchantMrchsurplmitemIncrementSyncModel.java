@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantMrchsurplmitemIncrementSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1724476657434371326L;
+	private static final long serialVersionUID = 4756251625587247367L;
 
 	/**
 	 * 商家促活入驻LinkedMall的业务ID

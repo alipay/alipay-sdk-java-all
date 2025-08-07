@@ -1,6 +1,8 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.PhysicalShopInfo;
 
 import com.alipay.api.AlipayResponse;
@@ -9,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.mallhome.physicalshop.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-27 19:47:28
+ * @since 1.0, 2025-08-06 17:52:35
  */
 public class AlipayCommerceOperationMallhomePhysicalshopQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5676664484191415137L;
+	private static final long serialVersionUID = 6589873764289268439L;
 
 	/** 
 	 * 起始页
@@ -30,8 +32,9 @@ public class AlipayCommerceOperationMallhomePhysicalshopQueryResponse extends Al
 	/** 
 	 * 物理门店列表
 	 */
-	@ApiField("physical_shop_list")
-	private PhysicalShopInfo physicalShopList;
+	@ApiListField("physical_shop_list")
+	@ApiField("physical_shop_info")
+	private List<PhysicalShopInfo> physicalShopList;
 
 	/** 
 	 * 总数
@@ -53,10 +56,10 @@ public class AlipayCommerceOperationMallhomePhysicalshopQueryResponse extends Al
 		return this.pageSize;
 	}
 
-	public void setPhysicalShopList(PhysicalShopInfo physicalShopList) {
+	public void setPhysicalShopList(List<PhysicalShopInfo> physicalShopList) {
 		this.physicalShopList = physicalShopList;
 	}
-	public PhysicalShopInfo getPhysicalShopList( ) {
+	public List<PhysicalShopInfo> getPhysicalShopList( ) {
 		return this.physicalShopList;
 	}
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.isportal.encrypt.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-08 16:35:19
+ * @since 1.0, 2025-08-07 10:47:37
  */
 public class AlipayIserviceIsportalEncryptQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6575978838227467855L;
+	private static final long serialVersionUID = 1279226559457496571L;
 
 	/** 
 	 * 公钥

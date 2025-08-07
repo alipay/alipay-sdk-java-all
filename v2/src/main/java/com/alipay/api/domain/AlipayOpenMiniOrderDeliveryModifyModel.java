@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 履约状态变更接口
  *
  * @author auto create
- * @since 1.0, 2025-07-07 13:57:24
+ * @since 1.0, 2025-08-07 19:10:40
  */
 public class AlipayOpenMiniOrderDeliveryModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3284617691819818898L;
+	private static final long serialVersionUID = 8245471794521542167L;
 
 	/**
 	 * 需要修改的活动信息列表
@@ -28,6 +28,13 @@ public class AlipayOpenMiniOrderDeliveryModifyModel extends AlipayObject {
 	 */
 	@ApiField("address_info")
 	private MiniReceiverAddressInfoDTO addressInfo;
+
+	/**
+	 * 履约属性扩展信息
+	 */
+	@ApiListField("attr_ext_info_list")
+	@ApiField("attr_ext_info_d_t_o")
+	private List<AttrExtInfoDTO> attrExtInfoList;
 
 	/**
 	 * 酒店预订信息
@@ -133,6 +140,13 @@ public class AlipayOpenMiniOrderDeliveryModifyModel extends AlipayObject {
 	}
 	public void setAddressInfo(MiniReceiverAddressInfoDTO addressInfo) {
 		this.addressInfo = addressInfo;
+	}
+
+	public List<AttrExtInfoDTO> getAttrExtInfoList() {
+		return this.attrExtInfoList;
+	}
+	public void setAttrExtInfoList(List<AttrExtInfoDTO> attrExtInfoList) {
+		this.attrExtInfoList = attrExtInfoList;
 	}
 
 	public BookingInfoDTO getBookingInfo() {

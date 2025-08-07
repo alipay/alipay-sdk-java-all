@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.property.manager.auth response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-19 19:58:53
+ * @since 1.0, 2025-08-07 10:17:37
  */
 public class AlipayCommercePropertyManagerAuthResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8654993496996495796L;
+	private static final long serialVersionUID = 4213122153524538666L;
 
 	/** 
 	 * 视频通话页面请求webSocket建联token

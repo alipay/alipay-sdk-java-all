@@ -16,11 +16,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.health.gift.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 17:31:58
+ * @since 1.0, 2025-08-07 18:43:03
  */
 public class AlipayInsSceneHealthGiftBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3183464539186768235L;
+	private static final long serialVersionUID = 1879198678252392164L;
 
 	/** 
 	 * 用户从某个source领取成功的保额

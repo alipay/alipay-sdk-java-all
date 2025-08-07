@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.recruit.plan.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 17:41:16
+ * @since 1.0, 2025-08-07 13:20:12
  */
 public class AlipayMarketingRecruitPlanQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7273593994462523468L;
+	private static final long serialVersionUID = 1697768135287624878L;
 
 	/** 
 	 * 招商方案描述：富文本内容，可能包含html标签

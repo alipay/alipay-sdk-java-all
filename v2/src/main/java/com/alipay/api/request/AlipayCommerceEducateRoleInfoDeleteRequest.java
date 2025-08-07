@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.role.info.delete request
  * 
  * @author auto create
- * @since 1.0, 2025-04-17 17:33:00
+ * @since 1.0, 2025-08-07 11:02:37
  */
 public class AlipayCommerceEducateRoleInfoDeleteRequest implements AlipayRequest<AlipayCommerceEducateRoleInfoDeleteResponse> {
 

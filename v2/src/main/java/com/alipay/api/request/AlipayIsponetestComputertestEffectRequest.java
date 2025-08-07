@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.isponetest.computertest.effect request
  * 
  * @author auto create
- * @since 1.0, 2024-08-08 21:50:24
+ * @since 1.0, 2025-08-07 13:01:44
  */
 public class AlipayIsponetestComputertestEffectRequest implements AlipayRequest<AlipayIsponetestComputertestEffectResponse> {
 

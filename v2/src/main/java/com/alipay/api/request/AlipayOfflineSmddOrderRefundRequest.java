@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.smdd.order.refund request
  * 
  * @author auto create
- * @since 1.0, 2025-04-08 16:22:21
+ * @since 1.0, 2025-08-07 10:57:35
  */
 public class AlipayOfflineSmddOrderRefundRequest implements AlipayRequest<AlipayOfflineSmddOrderRefundResponse> {
 

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 编辑自动回复
  *
  * @author auto create
- * @since 1.0, 2025-07-09 11:39:28
+ * @since 1.0, 2025-08-07 10:32:37
  */
 public class AlipayMerchantGroupAutoreplyCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8566561942888182178L;
+	private static final long serialVersionUID = 7196645175443818519L;
 
 	/**
 	 * 修改操作必填

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.hdf.medlib.generate response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-11 17:00:29
+ * @since 1.0, 2025-08-07 12:37:37
  */
 public class AlipayCommerceMedicalHdfMedlibGenerateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6193237838324382477L;
+	private static final long serialVersionUID = 6574215535467376929L;
 
 	/** 
 	 * 返回结果消息体内的具体内容

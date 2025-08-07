@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pay.app.baina.prize.preconsult response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-16 11:02:03
+ * @since 1.0, 2025-08-07 11:27:37
  */
 public class AlipayPayAppBainaPrizePreconsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8649552781282214231L;
+	private static final long serialVersionUID = 4675398712429436787L;
 
 	/** 
 	 * 该字段表示用户是否可下单，true=可以下单，false=不能下单

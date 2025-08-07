@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * Schema模型的测试接口27_新建经典版_回归验证
  *
  * @author auto create
- * @since 1.0, 2025-04-15 20:18:23
+ * @since 1.0, 2025-08-07 10:52:36
  */
 public class AlipayDataDataserviceSchematwentyseventhRainystestQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5296919339655955871L;
+	private static final long serialVersionUID = 4388596882981115769L;
 
 	/**
 	 * 测试数据，无需关注

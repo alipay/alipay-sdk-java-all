@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenContentIotCouponQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4327386987622828276L;
+	private static final long serialVersionUID = 5653453373627497593L;
 
 	/**
 	 * 活动ID，用于获取相应的活动信息，来源于商家在B站的配置

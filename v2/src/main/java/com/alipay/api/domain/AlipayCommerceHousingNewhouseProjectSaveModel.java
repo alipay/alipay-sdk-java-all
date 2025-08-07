@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 新房楼盘新增或更新接口
  *
  * @author auto create
- * @since 1.0, 2025-05-19 10:41:35
+ * @since 1.0, 2025-08-07 11:07:37
  */
 public class AlipayCommerceHousingNewhouseProjectSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7575946553249322254L;
+	private static final long serialVersionUID = 8819234621953578428L;
 
 	/**
 	 * 楼盘地址

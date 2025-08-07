@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: techrisk.riskai.opsgpt.task.query request
  * 
  * @author auto create
- * @since 1.0, 2024-09-03 09:55:30
+ * @since 1.0, 2025-08-07 12:42:36
  */
 public class TechriskRiskaiOpsgptTaskQueryRequest implements AlipayRequest<TechriskRiskaiOpsgptTaskQueryResponse> {
 

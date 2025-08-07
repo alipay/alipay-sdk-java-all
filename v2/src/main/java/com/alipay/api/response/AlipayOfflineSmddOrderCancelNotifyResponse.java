@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.smdd.order.cancel.notify response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-08 16:22:27
+ * @since 1.0, 2025-08-07 11:12:37
  */
 public class AlipayOfflineSmddOrderCancelNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1769836261389899168L;
+	private static final long serialVersionUID = 3256573526136985783L;
 
 	
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.sportsplay.gobill.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-27 14:16:49
+ * @since 1.0, 2025-08-07 10:00:55
  */
 public class AlipayUserSportsplayGobillQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1669211751129311857L;
+	private static final long serialVersionUID = 3788724951238442898L;
 
 	/** 
 	 * Go业务时间 时间戳

@@ -1,17 +1,27 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 商品修改信息
  *
  * @author auto create
- * @since 1.0, 2025-03-20 22:45:16
+ * @since 1.0, 2025-08-07 19:10:39
  */
 public class GoodsInfoModifyDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8555289973477371631L;
+	private static final long serialVersionUID = 3381975153913327973L;
+
+	/**
+	 * 商品属性信息
+	 */
+	@ApiListField("attr_ext_info_list")
+	@ApiField("attr_ext_info_d_t_o")
+	private List<AttrExtInfoDTO> attrExtInfoList;
 
 	/**
 	 * 质检金额，单位为元
@@ -42,6 +52,13 @@ public class GoodsInfoModifyDTO extends AlipayObject {
 	 */
 	@ApiField("rent_info")
 	private RentInfoDTO rentInfo;
+
+	public List<AttrExtInfoDTO> getAttrExtInfoList() {
+		return this.attrExtInfoList;
+	}
+	public void setAttrExtInfoList(List<AttrExtInfoDTO> attrExtInfoList) {
+		this.attrExtInfoList = attrExtInfoList;
+	}
 
 	public String getInspectPrice() {
 		return this.inspectPrice;

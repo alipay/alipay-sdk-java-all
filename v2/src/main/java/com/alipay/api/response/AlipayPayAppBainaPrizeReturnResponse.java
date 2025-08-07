@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pay.app.baina.prize.return response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-16 11:02:04
+ * @since 1.0, 2025-08-07 11:27:36
  */
 public class AlipayPayAppBainaPrizeReturnResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8597816143152415735L;
+	private static final long serialVersionUID = 1539974472817372247L;
 
 	
 

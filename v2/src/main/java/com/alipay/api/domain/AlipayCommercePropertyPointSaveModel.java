@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 点位新增或更新接口
  *
  * @author auto create
- * @since 1.0, 2025-06-19 20:02:26
+ * @since 1.0, 2025-08-07 10:42:37
  */
 public class AlipayCommercePropertyPointSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3841354622362213479L;
+	private static final long serialVersionUID = 3747541353826912782L;
 
 	/**
 	 * 执行动作

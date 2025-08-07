@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.antbookcontent.book.sync request
  * 
  * @author auto create
- * @since 1.0, 2024-03-12 15:08:42
+ * @since 1.0, 2025-08-07 13:06:49
  */
 public class AlipayUserAntbookcontentBookSyncRequest implements AlipayRequest<AlipayUserAntbookcontentBookSyncResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户资产出库请求实体类
  *
  * @author auto create
- * @since 1.0, 2025-07-30 21:57:59
+ * @since 1.0, 2025-08-06 21:06:44
  */
 public class AssetOutPutRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 8493228433311911575L;
+	private static final long serialVersionUID = 3558917289538956668L;
 
 	/**
 	 * 身份证号
@@ -20,7 +20,7 @@ public class AssetOutPutRequest extends AlipayObject {
 	private String certNo;
 
 	/**
-	 * 权益号
+	 * 订单号
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
@@ -32,7 +32,7 @@ public class AssetOutPutRequest extends AlipayObject {
 	private String outVoucherId;
 
 	/**
-	 * 景区id
+	 * 项目id
 	 */
 	@ApiField("project_id")
 	private String projectId;
