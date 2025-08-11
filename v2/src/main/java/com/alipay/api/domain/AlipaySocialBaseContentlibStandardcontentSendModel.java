@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySocialBaseContentlibStandardcontentSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4435868111325248426L;
+	private static final long serialVersionUID = 5529498344314847258L;
 
 	/**
 	 * action_type为此次请求类型，值为枚举，有三种，publish(发布),depublish(撤回),heartbeat(心跳),具体对接请联系负责人,必填

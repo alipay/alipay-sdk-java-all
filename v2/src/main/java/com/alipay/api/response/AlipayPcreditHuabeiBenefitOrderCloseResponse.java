@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPcreditHuabeiBenefitOrderCloseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3895729813818382712L;
+	private static final long serialVersionUID = 5217458554269819298L;
 
 	/** 
 	 * 权益订单id

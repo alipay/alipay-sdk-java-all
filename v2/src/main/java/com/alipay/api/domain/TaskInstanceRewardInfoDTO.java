@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TaskInstanceRewardInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6546531667589111932L;
+	private static final long serialVersionUID = 8719951177149857183L;
 
 	/**
 	 * 当前进度

@@ -24,11 +24,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-09 16:07:23
+ * @since 1.0, 2025-08-11 14:17:38
  */
 public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3576592232234214882L;
+	private static final long serialVersionUID = 6492598343739625653L;
 
 	/** 
 	 * 订单受理信息，租赁类型订单且通过快捷下单场景特有

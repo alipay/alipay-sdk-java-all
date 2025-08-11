@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotvsp.group.clear response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-19 15:17:04
+ * @since 1.0, 2025-08-08 14:32:36
  */
 public class AlipayOpenIotvspGroupClearResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7437399417245761579L;
+	private static final long serialVersionUID = 6536811981295227374L;
 
 	/** 
 	 * 支付宝侧生成的清库任务ID

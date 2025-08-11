@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportIntelligentizeOdpredictionCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8539776697318253625L;
+	private static final long serialVersionUID = 7572679572223328514L;
 
 	/** 
 	 * 找不到当前任务对应线路站点数据

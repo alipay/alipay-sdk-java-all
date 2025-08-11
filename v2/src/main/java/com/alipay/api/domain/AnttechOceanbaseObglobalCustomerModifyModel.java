@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechOceanbaseObglobalCustomerModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8366955887886292519L;
+	private static final long serialVersionUID = 2144145572174679668L;
 
 	/**
 	 * 修改客户请求

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KoubeiItemDescription extends AlipayObject {
 
-	private static final long serialVersionUID = 7245884119879479858L;
+	private static final long serialVersionUID = 5448443556211653764L;
 
 	/**
 	 * 标题下的描述列表，列表类型，每项不得为空,最多10项，总长度不能超过2600个中文字符

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 汇率openapi通用操作接口
  *
  * @author auto create
- * @since 1.0, 2024-09-04 11:54:52
+ * @since 1.0, 2025-08-07 21:46:21
  */
 public class AlipayAccountExrateRateSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1389295526822888214L;
+	private static final long serialVersionUID = 2438431816215531482L;
 
 	/**
 	 * 通用接口入参，json字符串的形式。比如该openapi绑定客户汇率发布能力，则以json字符串的形式传入客户汇率

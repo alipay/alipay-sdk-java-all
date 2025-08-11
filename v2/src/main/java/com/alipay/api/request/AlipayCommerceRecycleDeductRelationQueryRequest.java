@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.recycle.deduct.relation.query request
  * 
  * @author auto create
- * @since 1.0, 2025-08-05 17:12:36
+ * @since 1.0, 2025-08-08 15:55:02
  */
 public class AlipayCommerceRecycleDeductRelationQueryRequest implements AlipayRequest<AlipayCommerceRecycleDeductRelationQueryResponse> {
 

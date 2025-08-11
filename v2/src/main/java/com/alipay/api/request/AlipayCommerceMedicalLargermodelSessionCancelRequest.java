@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.largermodel.session.cancel request
  * 
  * @author auto create
- * @since 1.0, 2024-02-26 16:56:57
+ * @since 1.0, 2025-08-08 10:11:23
  */
 public class AlipayCommerceMedicalLargermodelSessionCancelRequest implements AlipayRequest<AlipayCommerceMedicalLargermodelSessionCancelResponse> {
 

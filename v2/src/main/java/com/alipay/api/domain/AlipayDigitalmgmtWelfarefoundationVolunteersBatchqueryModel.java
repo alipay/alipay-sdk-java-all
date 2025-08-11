@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 志愿者活动时批量查询
  *
  * @author auto create
- * @since 1.0, 2023-06-16 11:22:35
+ * @since 1.0, 2025-08-11 10:16:51
  */
 public class AlipayDigitalmgmtWelfarefoundationVolunteersBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7741683316995632986L;
+	private static final long serialVersionUID = 5852463987181163849L;
 
 	/**
 	 * 人员ID

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotvsp.userstate.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-21 14:37:02
+ * @since 1.0, 2025-08-08 14:32:05
  */
 public class AlipayOpenIotvspUserstateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3892575926111861119L;
+	private static final long serialVersionUID = 5377514839792843743L;
 
 	/** 
 	 * 0-不下发

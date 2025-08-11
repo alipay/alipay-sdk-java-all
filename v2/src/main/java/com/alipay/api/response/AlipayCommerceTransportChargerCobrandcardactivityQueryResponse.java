@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.charger.cobrandcardactivity.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-06 15:02:37
+ * @since 1.0, 2025-08-08 11:17:37
  */
 public class AlipayCommerceTransportChargerCobrandcardactivityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7761142165885188535L;
+	private static final long serialVersionUID = 3794237543565217735L;
 
 	/** 
 	 * 活动编号

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 机构人员库清理接口
  *
  * @author auto create
- * @since 1.0, 2024-07-19 15:13:58
+ * @since 1.0, 2025-08-08 14:32:36
  */
 public class AlipayOpenIotvspGroupClearModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6125854893991571587L;
+	private static final long serialVersionUID = 8538212457672529162L;
 
 	/**
 	 * 业务id，由调用方生成的唯一业务流水，原则上不可重复

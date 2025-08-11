@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 机构人员库清理任务查询
  *
  * @author auto create
- * @since 1.0, 2024-07-19 15:14:19
+ * @since 1.0, 2025-08-08 14:33:02
  */
 public class AlipayOpenIotvspGroupclearQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5758256685688179337L;
+	private static final long serialVersionUID = 8732931288252821382L;
 
 	/**
 	 * 清库任务id

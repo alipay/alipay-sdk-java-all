@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 负荷预测服务
  *
  * @author auto create
- * @since 1.0, 2025-06-27 16:45:44
+ * @since 1.0, 2025-08-11 14:04:34
  */
 public class DatadigitalAnttechLoadForecastQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6715842631479951473L;
+	private static final long serialVersionUID = 7771774984736622396L;
 
 	/**
 	 * 蚂蚁数科气象服务产品码，找蚂蚁数科运营同学获取

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayAccountExrateSentimentDataSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8517823323235463388L;
+	private static final long serialVersionUID = 4478844447937442698L;
 
 	/**
 	 * 国家制裁提交数据内容

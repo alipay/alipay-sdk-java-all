@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IotPaymentCustomInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4471452829282841988L;
+	private static final long serialVersionUID = 1179232287181231452L;
 
 	/**
 	 * 金额类展示内容，可在实际金额前置附加单位或其他自定义前置字段，title为餐补，amountShow 为￥5.00，

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataDataserviceAdcrowdThemecrowdBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2376332774889947739L;
+	private static final long serialVersionUID = 4775767635542832687L;
 
 	/**
 	 * 该参数为模糊搜索行业主题人群包名称时填写的搜索词

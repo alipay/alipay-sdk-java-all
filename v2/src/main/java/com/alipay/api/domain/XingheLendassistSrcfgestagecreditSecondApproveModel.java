@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class XingheLendassistSrcfgestagecreditSecondApproveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5249685465221632693L;
+	private static final long serialVersionUID = 4664975367697427433L;
 
 	/**
 	 * 政企员工团购分期授信初审的申请单号

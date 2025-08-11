@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class WatchAppInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7617542163753394396L;
+	private static final long serialVersionUID = 2657197257391478953L;
 
 	/**
 	 * pocketMoney：手表零花钱

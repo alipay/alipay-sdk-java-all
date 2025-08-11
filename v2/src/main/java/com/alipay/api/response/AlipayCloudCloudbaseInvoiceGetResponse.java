@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.invoice.get response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-01 15:02:29
+ * @since 1.0, 2025-08-11 15:07:36
  */
 public class AlipayCloudCloudbaseInvoiceGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5229629337755844622L;
+	private static final long serialVersionUID = 4324883557486864981L;
 
 	/** 
 	 * 开票记录uuid

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class LlmAnswerCardDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8591323332787526785L;
+	private static final long serialVersionUID = 1859421588283767529L;
 
 	/**
 	 * 用于返回卡片的固定回答文本内容

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用户库切换
  *
  * @author auto create
- * @since 1.0, 2024-11-05 17:20:23
+ * @since 1.0, 2025-08-08 14:30:17
  */
 public class AlipayOpenIotvspUsergroupengineTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4357643872545857576L;
+	private static final long serialVersionUID = 3343318678397991477L;
 
 	/**
 	 * 业务流水id,便于问题排查

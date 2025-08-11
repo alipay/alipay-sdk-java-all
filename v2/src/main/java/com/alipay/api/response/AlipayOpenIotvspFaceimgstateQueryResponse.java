@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotvsp.faceimgstate.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-18 15:56:59
+ * @since 1.0, 2025-08-08 14:31:01
  */
 public class AlipayOpenIotvspFaceimgstateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1155226393487838422L;
+	private static final long serialVersionUID = 2747226156688257896L;
 
 	/** 
 	 * true-已上传

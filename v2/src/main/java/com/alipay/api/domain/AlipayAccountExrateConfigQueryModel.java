@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 主站配置查询接口
  *
  * @author auto create
- * @since 1.0, 2022-05-18 16:19:24
+ * @since 1.0, 2025-08-07 21:47:07
  */
 public class AlipayAccountExrateConfigQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8878181819726675439L;
+	private static final long serialVersionUID = 2668561915364597114L;
 
 	/**
 	 * 国际同步到主站的scheduler配置的编码信息,唯一表示一条scheduler配置

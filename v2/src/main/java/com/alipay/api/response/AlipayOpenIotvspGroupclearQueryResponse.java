@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotvsp.groupclear.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-19 15:17:04
+ * @since 1.0, 2025-08-08 14:33:02
  */
 public class AlipayOpenIotvspGroupclearQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1636824446135912878L;
+	private static final long serialVersionUID = 1837641593898851355L;
 
 	/** 
 	 * 接口成功时返回status字段

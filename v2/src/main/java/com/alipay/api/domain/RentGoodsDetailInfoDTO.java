@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品详细信息
  *
  * @author auto create
- * @since 1.0, 2025-07-02 15:50:51
+ * @since 1.0, 2025-08-08 18:31:09
  */
 public class RentGoodsDetailInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5415464364422479563L;
+	private static final long serialVersionUID = 3799439479996854199L;
 
 	/**
 	 * 商品描述信息
@@ -62,7 +62,7 @@ public class RentGoodsDetailInfoDTO extends AlipayObject {
 	private String itemFinenessGrade;
 
 	/**
-	 * 商品名称
+	 * 商品名称，用于支付宝小程序订单中心、芝麻租赁频道中对用户展示
 	 */
 	@ApiField("item_name")
 	private String itemName;
@@ -92,13 +92,13 @@ public class RentGoodsDetailInfoDTO extends AlipayObject {
 	private String rentModel;
 
 	/**
-	 * 商品单价，单位：元，精确到小数点后两位，注：租赁商品请传入日租金，如10元/天
+	 * 商品平均日租金，单位：元，精确到小数点后两位，注：租赁商品请传入日租金，如10元/天
 	 */
 	@ApiField("sale_price")
 	private String salePrice;
 
 	/**
-	 * 是否监管机
+	 * 是否监管机，仅3C手机适用
 	 */
 	@ApiField("supervised")
 	private Boolean supervised;

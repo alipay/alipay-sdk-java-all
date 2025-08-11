@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.iotvsp.faceimgstate.query request
  * 
  * @author auto create
- * @since 1.0, 2024-03-18 15:56:59
+ * @since 1.0, 2025-08-08 14:31:01
  */
 public class AlipayOpenIotvspFaceimgstateQueryRequest implements AlipayRequest<AlipayOpenIotvspFaceimgstateQueryResponse> {
 

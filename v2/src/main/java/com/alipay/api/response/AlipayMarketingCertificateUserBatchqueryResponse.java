@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.certificate.user.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-24 15:46:21
+ * @since 1.0, 2025-08-11 11:42:26
  */
 public class AlipayMarketingCertificateUserBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8443475945834995497L;
+	private static final long serialVersionUID = 2671763531824468656L;
 
 	/** 
 	 * 凭证信息列表

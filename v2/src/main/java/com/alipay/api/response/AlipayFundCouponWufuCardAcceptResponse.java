@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundCouponWufuCardAcceptResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1738693299436425781L;
+	private static final long serialVersionUID = 6724798719485613133L;
 
 	/** 
 	 * 福卡名称

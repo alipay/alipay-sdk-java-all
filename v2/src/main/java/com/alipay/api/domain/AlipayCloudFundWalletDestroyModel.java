@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCloudFundWalletDestroyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5797339584841684816L;
+	private static final long serialVersionUID = 5889274932698969463L;
 
 	/**
 	 * 单位元，退款金额

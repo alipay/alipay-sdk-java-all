@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DetailCommissionRoleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3221165365878158949L;
+	private static final long serialVersionUID = 3676541354253983867L;
 
 	/**
 	 * 最新抽佣信息

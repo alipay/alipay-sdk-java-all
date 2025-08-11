@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GetLeadsByLeadsCodeRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 7811687244142529268L;
+	private static final long serialVersionUID = 6417851994334582472L;
 
 	/**
 	 * 海图商机编码

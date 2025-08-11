@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询反馈类型选项
  *
  * @author auto create
- * @since 1.0, 2025-05-29 10:02:02
+ * @since 1.0, 2025-08-11 15:23:08
  */
 public class AlipayCommerceMedicalLargermodelFeedbackQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7621988747793147842L;
+	private static final long serialVersionUID = 2779492689288483433L;
 
 	/**
 	 * 反馈渠道：
@@ -32,6 +32,12 @@ public class AlipayCommerceMedicalLargermodelFeedbackQueryModel extends AlipayOb
 云陪诊：cloudAccompaniedAiagnosis
 深度思考+多模态反馈：deepThinkingAndMultimodal
 云陪诊住院反馈:ypzHospitalized
+云陪诊nps低分：ypzNpsLow
+云陪诊nps中分：ypzNpsMid
+云陪诊nps高分：ypzNpsHigh
+nps低分：npsLow
+nps中分：npsMid
+nps高分：npsHigh
 	 */
 	@ApiField("scene_code")
 	private String sceneCode;

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ImageMsgVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7391121952543254763L;
+	private static final long serialVersionUID = 3771586634299529935L;
 
 	/**
 	 * 图片高度，请必须传图片真实的高度，否则客户端会按照填的宽高进行剪裁，单位为像素

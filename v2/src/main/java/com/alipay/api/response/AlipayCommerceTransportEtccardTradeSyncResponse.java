@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportEtccardTradeSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8472576177144764217L;
+	private static final long serialVersionUID = 3691346592739775143L;
 
 	/** 
 	 * 用于标记支付宝用户在应用下的唯一标识

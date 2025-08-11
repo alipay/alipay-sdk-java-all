@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 离境退税服务
  *
  * @author auto create
- * @since 1.0, 2025-07-29 15:52:01
+ * @since 1.0, 2025-08-11 11:30:37
  */
 public class AlipayUserTaxRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8263965416813999375L;
+	private static final long serialVersionUID = 3663383472736531797L;
 
 	/**
 	 * 资金记账本id
@@ -54,6 +54,12 @@ public class AlipayUserTaxRefundModel extends AlipayObject {
 	 */
 	@ApiField("refund_biz_no")
 	private String refundBizNo;
+
+	/**
+	 * 退税人回乡证英文姓名
+	 */
+	@ApiField("user_name")
+	private String userName;
 
 	public String getAccountBookId() {
 		return this.accountBookId;
@@ -102,6 +108,13 @@ public class AlipayUserTaxRefundModel extends AlipayObject {
 	}
 	public void setRefundBizNo(String refundBizNo) {
 		this.refundBizNo = refundBizNo;
+	}
+
+	public String getUserName() {
+		return this.userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 
 }

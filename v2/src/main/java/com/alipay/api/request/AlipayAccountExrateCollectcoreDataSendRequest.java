@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.account.exrate.collectcore.data.send request
  * 
  * @author auto create
- * @since 1.0, 2024-09-04 11:54:15
+ * @since 1.0, 2025-08-07 21:46:42
  */
 public class AlipayAccountExrateCollectcoreDataSendRequest implements AlipayRequest<AlipayAccountExrateCollectcoreDataSendResponse> {
 

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 录入机构用户信息（自定义vid）
  *
  * @author auto create
- * @since 1.0, 2024-05-21 10:59:35
+ * @since 1.0, 2025-08-08 14:29:37
  */
 public class AlipayOpenIotvspUserwithvidCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5515514796915642595L;
+	private static final long serialVersionUID = 5842447838982952468L;
 
 	/**
 	 * 组件编码，该参数与userInfoList配对使用。详见接入指南

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 3C租赁网商受托代扣URL地址获取
  *
  * @author auto create
- * @since 1.0, 2023-02-03 14:43:51
+ * @since 1.0, 2025-08-08 10:07:21
  */
 public class MybankCreditLoanapplyFinleaseTokenQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6222542691348936431L;
+	private static final long serialVersionUID = 7452977354612532942L;
 
 	/**
 	 * 蚂蚁统一会员ID

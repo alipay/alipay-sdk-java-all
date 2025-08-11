@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayPayAppPocketmoneyPromoBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5695178751387251157L;
+	private static final long serialVersionUID = 5219724717788592461L;
 
 	/**
 	 * 为空-批量查询，不为空-根据流水id查询

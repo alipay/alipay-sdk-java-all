@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.largermodel.doctorcard.query request
  * 
  * @author auto create
- * @since 1.0, 2024-07-26 11:37:05
+ * @since 1.0, 2025-08-08 10:11:14
  */
 public class AlipayCommerceMedicalLargermodelDoctorcardQueryRequest implements AlipayRequest<AlipayCommerceMedicalLargermodelDoctorcardQueryResponse> {
 

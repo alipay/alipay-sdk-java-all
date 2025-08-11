@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.digitalmgmt.rcv.create request
  * 
  * @author auto create
- * @since 1.0, 2025-08-07 19:09:50
+ * @since 1.0, 2025-08-08 15:32:43
  */
 public class AlipayDigitalmgmtRcvCreateRequest implements AlipayRequest<AlipayDigitalmgmtRcvCreateResponse> {
 

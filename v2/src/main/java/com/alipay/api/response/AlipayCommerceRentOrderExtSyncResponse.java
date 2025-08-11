@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.rent.order.ext.sync response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-21 14:47:34
+ * @since 1.0, 2025-08-11 11:18:17
  */
 public class AlipayCommerceRentOrderExtSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3133418975453255923L;
+	private static final long serialVersionUID = 2189314233297179652L;
 
 	
 

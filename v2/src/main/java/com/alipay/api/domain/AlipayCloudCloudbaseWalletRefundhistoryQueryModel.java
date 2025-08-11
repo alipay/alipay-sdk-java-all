@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 提现记录查询
  *
  * @author auto create
- * @since 1.0, 2023-09-01 16:01:56
+ * @since 1.0, 2025-08-08 10:17:15
  */
 public class AlipayCloudCloudbaseWalletRefundhistoryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6731631767172995955L;
+	private static final long serialVersionUID = 1119969581293229797L;
 
 	/**
 	 * 小程序id

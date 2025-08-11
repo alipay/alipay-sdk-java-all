@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.agreement.agent.sign response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-29 14:17:35
+ * @since 1.0, 2025-08-11 16:02:37
  */
 public class AlipayUserAgreementAgentSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6258637665893339354L;
+	private static final long serialVersionUID = 3776393374423496525L;
 
 	/** 
 	 * 获取签名后的业务数据

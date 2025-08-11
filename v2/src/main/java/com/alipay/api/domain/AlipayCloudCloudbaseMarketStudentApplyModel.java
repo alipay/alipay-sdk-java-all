@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 学生身份认证
  *
  * @author auto create
- * @since 1.0, 2023-12-26 19:54:17
+ * @since 1.0, 2025-08-08 10:14:57
  */
 public class AlipayCloudCloudbaseMarketStudentApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8474256547626389169L;
+	private static final long serialVersionUID = 2495911494893135637L;
 
 	/**
 	 * 支付宝用户ID

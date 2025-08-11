@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.largermodel.feedback.set response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-06 18:19:14
+ * @since 1.0, 2025-08-08 14:47:35
  */
 public class AlipayCommerceMedicalLargermodelFeedbackSetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6529837215174621535L;
+	private static final long serialVersionUID = 4189629815622192899L;
 
 	/** 
 	 * 是否业务处理成功

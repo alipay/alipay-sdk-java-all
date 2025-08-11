@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 刷脸图片上传状态查询
  *
  * @author auto create
- * @since 1.0, 2024-03-18 15:54:20
+ * @since 1.0, 2025-08-08 14:31:01
  */
 public class AlipayOpenIotvspFaceimgstateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8134967873886219273L;
+	private static final long serialVersionUID = 2873817184211424973L;
 
 	/**
 	 * 刷脸产生的ftoken

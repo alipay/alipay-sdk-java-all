@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品扩展信息
  *
  * @author auto create
- * @since 1.0, 2025-07-21 14:47:34
+ * @since 1.0, 2025-08-11 11:18:17
  */
 public class SellerSyncRentItemExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3886452216636264685L;
+	private static final long serialVersionUID = 1426784489935923386L;
 
 	/**
 	 * 券后签约价格，币种：人民币，单位：元

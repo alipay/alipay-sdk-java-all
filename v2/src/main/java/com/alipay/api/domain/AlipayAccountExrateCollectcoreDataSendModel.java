@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 金融信息受理接口
  *
  * @author auto create
- * @since 1.0, 2024-09-04 11:54:15
+ * @since 1.0, 2025-08-07 21:46:42
  */
 public class AlipayAccountExrateCollectcoreDataSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3265827752917787673L;
+	private static final long serialVersionUID = 6523178412534725141L;
 
 	/**
 	 * 上数提交数据内容

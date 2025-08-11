@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.rent.royalty.invest.publish response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-12 11:57:28
+ * @since 1.0, 2025-08-10 19:22:35
  */
 public class AlipayCommerceRentRoyaltyInvestPublishResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5546877991737185498L;
+	private static final long serialVersionUID = 7774623922797726144L;
 
 	
 

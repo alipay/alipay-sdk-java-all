@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 国际同步主站配置通用接口
  *
  * @author auto create
- * @since 1.0, 2022-05-18 16:19:45
+ * @since 1.0, 2025-08-07 21:46:54
  */
 public class AlipayAccountExrateConfigSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4537793749894637697L;
+	private static final long serialVersionUID = 8332937662986958511L;
 
 	/**
 	 * 自定义规则，字符串的形式。国际要同步到主站的拓展信息

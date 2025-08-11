@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayAccountInstfundAllocationBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8244867693117693974L;
+	private static final long serialVersionUID = 8579736729141894315L;
 
 	/**
 	 * 最晚执行时间，单位秒

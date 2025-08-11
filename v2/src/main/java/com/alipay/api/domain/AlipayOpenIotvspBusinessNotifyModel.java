@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 核身业务结果通知
  *
  * @author auto create
- * @since 1.0, 2024-05-21 10:58:21
+ * @since 1.0, 2025-08-08 14:31:31
  */
 public class AlipayOpenIotvspBusinessNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2288379746384129416L;
+	private static final long serialVersionUID = 8635631496593289696L;
 
 	/**
 	 * 用于幂等操作，不存则平台自动生成，幂等失效。

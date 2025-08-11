@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudCloudpromoMallRenfundorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8187648681373569686L;
+	private static final long serialVersionUID = 6265487583585873812L;
 
 	/** 
 	 * 订单退货方式

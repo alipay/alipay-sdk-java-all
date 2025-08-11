@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单列表查询返回的订单信息
  *
  * @author auto create
- * @since 1.0, 2025-07-07 14:10:00
+ * @since 1.0, 2025-08-11 14:13:18
  */
 public class SimpleMiniOrderInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6373212395842317354L;
+	private static final long serialVersionUID = 5671111484376331866L;
 
 	/**
 	 * 创建时间，yyyy-MM-dd HH:mm:ss

@@ -10,6 +10,7 @@ import com.alipay.api.domain.RentGoodsDetailInfoVO;
 import com.alipay.api.domain.RentPathInfoVO;
 import com.alipay.api.domain.RentOrderPriceInfoVO;
 import com.alipay.api.domain.RentPromoInfoVO;
+import com.alipay.api.domain.RentOrderPayInfoVO;
 import com.alipay.api.domain.RentPlanInfoVO;
 import com.alipay.api.domain.RentSignInfoVO;
 import com.alipay.api.domain.RentOrderStatementInfoVO;
@@ -22,11 +23,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.rent.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-06 19:49:56
+ * @since 1.0, 2025-08-11 11:27:35
  */
 public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2212826415613158775L;
+	private static final long serialVersionUID = 4485771165732856659L;
 
 	/** 
 	 * 订单收货地址
@@ -57,6 +58,12 @@ public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("delivery_info")
 	private RentOrderDeliveryInfoVO deliveryInfo;
+
+	/** 
+	 * 人脸核身结果
+	 */
+	@ApiField("face_verify_result")
+	private String faceVerifyResult;
 
 	/** 
 	 * 商品详细信息。当前只会有单个商品
@@ -112,6 +119,13 @@ public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("promo_info")
 	private RentPromoInfoVO promoInfo;
+
+	/** 
+	 * 租赁支付单信息
+	 */
+	@ApiListField("rent_pay_infos")
+	@ApiField("rent_order_pay_info_v_o")
+	private List<RentOrderPayInfoVO> rentPayInfos;
 
 	/** 
 	 * 租赁计划信息
@@ -205,6 +219,13 @@ public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 		return this.deliveryInfo;
 	}
 
+	public void setFaceVerifyResult(String faceVerifyResult) {
+		this.faceVerifyResult = faceVerifyResult;
+	}
+	public String getFaceVerifyResult( ) {
+		return this.faceVerifyResult;
+	}
+
 	public void setItemInfos(List<RentGoodsDetailInfoVO> itemInfos) {
 		this.itemInfos = itemInfos;
 	}
@@ -266,6 +287,13 @@ public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 	}
 	public RentPromoInfoVO getPromoInfo( ) {
 		return this.promoInfo;
+	}
+
+	public void setRentPayInfos(List<RentOrderPayInfoVO> rentPayInfos) {
+		this.rentPayInfos = rentPayInfos;
+	}
+	public List<RentOrderPayInfoVO> getRentPayInfos( ) {
+		return this.rentPayInfos;
 	}
 
 	public void setRentPlanInfo(RentPlanInfoVO rentPlanInfo) {
