@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PhoneCardShippingAddressModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5686574168453841336L;
+	private static final long serialVersionUID = 5293283278417742659L;
 
 	/**
 	 * 收货地址

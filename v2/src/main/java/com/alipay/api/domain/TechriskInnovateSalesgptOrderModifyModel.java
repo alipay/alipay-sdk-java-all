@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TechriskInnovateSalesgptOrderModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5828435176793789875L;
+	private static final long serialVersionUID = 6888693213416214147L;
 
 	/**
 	 * 详细内容数据

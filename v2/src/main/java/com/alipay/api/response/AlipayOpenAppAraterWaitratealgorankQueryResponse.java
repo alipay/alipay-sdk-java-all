@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenAppAraterWaitratealgorankQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7424292262782324626L;
+	private static final long serialVersionUID = 8677929237694939573L;
 
 	/** 
 	 * 待评价列表打分结果

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 不动产信息
  *
  * @author auto create
- * @since 1.0, 2025-07-25 14:01:38
+ * @since 1.0, 2025-08-11 23:07:19
  */
 public class IndustryInvoiceRealPropertyBusiness extends AlipayObject {
 
-	private static final long serialVersionUID = 1817879253275427634L;
+	private static final long serialVersionUID = 8492114573521339855L;
 
 	/**
 	 * 跨地（市）标志

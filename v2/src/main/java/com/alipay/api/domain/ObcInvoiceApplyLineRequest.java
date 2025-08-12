@@ -1,23 +1,33 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 多云发票明细行
  *
  * @author auto create
- * @since 1.0, 2025-06-20 10:11:33
+ * @since 1.0, 2025-08-12 16:14:50
  */
 public class ObcInvoiceApplyLineRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 5871359855545928643L;
+	private static final long serialVersionUID = 5258887724621821471L;
 
 	/**
 	 * 货币单位，必填
 	 */
 	@ApiField("currency_code")
 	private String currencyCode;
+
+	/**
+	 * 开票对象明细列表
+	 */
+	@ApiListField("details")
+	@ApiField("obc_invoice_object_request")
+	private List<ObcInvoiceObjectRequest> details;
 
 	/**
 	 * 金额的String类型，CNY币种下单位为元
@@ -44,7 +54,7 @@ public class ObcInvoiceApplyLineRequest extends AlipayObject {
 	private String productName;
 
 	/**
-	 * 数量，小数点后最多保留4位，单价*数量=金额
+	 * 数量，小数点后最多保留4位，单价*数量=金额，数量的单位由接入方根据票面展示效果指定，不使用枚举
 	 */
 	@ApiField("quantity")
 	private String quantity;
@@ -62,7 +72,7 @@ public class ObcInvoiceApplyLineRequest extends AlipayObject {
 	private String taxRate;
 
 	/**
-	 * 提供服务或商品的单位
+	 * 提供服务或商品的单位，个/位，等具体单位由发票开具票面想展示的为准
 	 */
 	@ApiField("unit")
 	private String unit;
@@ -72,6 +82,13 @@ public class ObcInvoiceApplyLineRequest extends AlipayObject {
 	}
 	public void setCurrencyCode(String currencyCode) {
 		this.currencyCode = currencyCode;
+	}
+
+	public List<ObcInvoiceObjectRequest> getDetails() {
+		return this.details;
+	}
+	public void setDetails(List<ObcInvoiceObjectRequest> details) {
+		this.details = details;
 	}
 
 	public String getInvoiceAmount() {

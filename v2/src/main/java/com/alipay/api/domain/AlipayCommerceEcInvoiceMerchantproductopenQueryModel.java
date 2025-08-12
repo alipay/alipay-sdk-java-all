@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票产品开通查询
  *
  * @author auto create
- * @since 1.0, 2025-04-22 15:37:34
+ * @since 1.0, 2025-08-11 23:07:28
  */
 public class AlipayCommerceEcInvoiceMerchantproductopenQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7468977643135724729L;
+	private static final long serialVersionUID = 5369374526361427196L;
 
 	/**
 	 * 产品开通流水ID

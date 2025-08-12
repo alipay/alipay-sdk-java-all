@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SportsToolRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 3689486582216315249L;
+	private static final long serialVersionUID = 3663757181896721654L;
 
 	/**
 	 * 加速度传感器步频(步/min)

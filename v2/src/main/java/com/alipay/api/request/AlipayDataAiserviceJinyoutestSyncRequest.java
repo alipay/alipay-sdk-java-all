@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.aiservice.jinyoutest.sync request
  * 
  * @author auto create
- * @since 1.0, 2024-08-30 11:27:19
+ * @since 1.0, 2025-08-12 14:42:35
  */
 public class AlipayDataAiserviceJinyoutestSyncRequest implements AlipayRequest<AlipayDataAiserviceJinyoutestSyncResponse> {
 

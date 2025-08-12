@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFinanceFundFundnetvaluesBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6592343425586676987L;
+	private static final long serialVersionUID = 5644398176267227246L;
 
 	/** 
 	 * 基金代码

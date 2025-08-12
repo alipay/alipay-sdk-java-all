@@ -8,14 +8,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.gamepaycoin.tradeorder.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-22 20:07:33
+ * @since 1.0, 2025-08-12 16:42:35
  */
 public class AlipayUserGamepaycoinTradeorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4734827786364427724L;
+	private static final long serialVersionUID = 4317921972349459587L;
 
 	/** 
-	 * 交易订单钻石数量
+	 * 交易订单虚拟币数量(个)
 	 */
 	@ApiField("bill_amount")
 	private Long billAmount;
@@ -33,7 +33,7 @@ public class AlipayUserGamepaycoinTradeorderQueryResponse extends AlipayResponse
 	private String goodsName;
 
 	/** 
-	 * 交易退款钻石数量，未发生退款时为0
+	 * 交易退款虚拟币数量(个)，未发生退款时为0
 	 */
 	@ApiField("refund_amount")
 	private Long refundAmount;

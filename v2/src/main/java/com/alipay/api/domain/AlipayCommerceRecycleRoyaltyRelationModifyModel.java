@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 回收平台订单分账关系修改
  *
  * @author auto create
- * @since 1.0, 2025-06-24 22:19:59
+ * @since 1.0, 2025-08-11 22:47:23
  */
 public class AlipayCommerceRecycleRoyaltyRelationModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8359346943327171514L;
+	private static final long serialVersionUID = 3626496396358647946L;
 
 	/**
 	 * 回收商订单ID

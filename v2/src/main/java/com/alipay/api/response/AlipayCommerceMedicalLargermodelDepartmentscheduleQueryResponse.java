@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.largermodel.departmentschedule.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-18 10:27:48
+ * @since 1.0, 2025-08-12 15:06:52
  */
 public class AlipayCommerceMedicalLargermodelDepartmentscheduleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2356244735324636235L;
+	private static final long serialVersionUID = 4377782184326318797L;
 
 	/** 
 	 * 会话id

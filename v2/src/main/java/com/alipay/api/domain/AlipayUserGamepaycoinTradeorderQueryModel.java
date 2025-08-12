@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小游戏虚拟币交易订单查询
  *
  * @author auto create
- * @since 1.0, 2025-07-22 20:05:50
+ * @since 1.0, 2025-08-12 16:41:09
  */
 public class AlipayUserGamepaycoinTradeorderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8396925141454248476L;
+	private static final long serialVersionUID = 6322838657652792551L;
 
 	/**
 	 * 开发者自定义订单号，在下单的时候传入的customId

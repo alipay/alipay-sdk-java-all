@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayAccountExrateSourcerateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2226211765879133956L;
+	private static final long serialVersionUID = 6886972833252462812L;
 
 	/**
 	 * 查询截止报价生成时间

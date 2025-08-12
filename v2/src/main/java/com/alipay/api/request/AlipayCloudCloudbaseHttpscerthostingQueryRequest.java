@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.httpscerthosting.query request
  * 
  * @author auto create
- * @since 1.0, 2025-08-07 12:57:37
+ * @since 1.0, 2025-08-12 16:17:10
  */
 public class AlipayCloudCloudbaseHttpscerthostingQueryRequest implements AlipayRequest<AlipayCloudCloudbaseHttpscerthostingQueryResponse> {
 

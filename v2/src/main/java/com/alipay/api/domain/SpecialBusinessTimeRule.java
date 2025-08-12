@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class SpecialBusinessTimeRule extends AlipayObject {
 
-	private static final long serialVersionUID = 3367679289457726841L;
+	private static final long serialVersionUID = 2422896587515665866L;
 
 	/**
 	 * 开始日期

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 金柚测试toMsgapi
  *
  * @author auto create
- * @since 1.0, 2024-08-30 11:27:19
+ * @since 1.0, 2025-08-12 14:41:26
  */
 public class AlipayDataAiserviceJinyoutestSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7494424144691566363L;
+	private static final long serialVersionUID = 1515597355361355568L;
 
 	/**
 	 * 11

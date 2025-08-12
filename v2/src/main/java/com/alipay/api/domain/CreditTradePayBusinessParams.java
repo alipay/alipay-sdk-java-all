@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CreditTradePayBusinessParams extends AlipayObject {
 
-	private static final long serialVersionUID = 7346254479258364911L;
+	private static final long serialVersionUID = 1843333127384795911L;
 
 	/**
 	 * 信用参数，可选

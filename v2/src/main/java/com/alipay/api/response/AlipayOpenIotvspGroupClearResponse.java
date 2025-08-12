@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenIotvspGroupClearResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6536811981295227374L;
+	private static final long serialVersionUID = 7726333856825116872L;
 
 	/** 
 	 * 支付宝侧生成的清库任务ID

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用回收分账信息
  *
  * @author auto create
- * @since 1.0, 2025-06-24 22:19:59
+ * @since 1.0, 2025-08-11 22:47:15
  */
 public class RecycleRoyaltyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3758786654822254683L;
+	private static final long serialVersionUID = 7164388256417525918L;
 
 	/**
 	 * 金额单位元，支持小数点后2位，必须大于0
@@ -36,6 +36,18 @@ public class RecycleRoyaltyInfo extends AlipayObject {
 	 */
 	@ApiField("trans_in")
 	private String transIn;
+
+	/**
+	 * 转入方登录id
+	 */
+	@ApiField("trans_in_login_id")
+	private String transInLoginId;
+
+	/**
+	 * 转入方2088账户
+	 */
+	@ApiField("trans_in_open_id")
+	private String transInOpenId;
 
 	/**
 	 * 接受分账金额的账户类型
@@ -77,6 +89,20 @@ MERCHANT_RECEIVED_CONFIRMED:回收商确认收货
 	}
 	public void setTransIn(String transIn) {
 		this.transIn = transIn;
+	}
+
+	public String getTransInLoginId() {
+		return this.transInLoginId;
+	}
+	public void setTransInLoginId(String transInLoginId) {
+		this.transInLoginId = transInLoginId;
+	}
+
+	public String getTransInOpenId() {
+		return this.transInOpenId;
+	}
+	public void setTransInOpenId(String transInOpenId) {
+		this.transInOpenId = transInOpenId;
 	}
 
 	public String getTransInType() {

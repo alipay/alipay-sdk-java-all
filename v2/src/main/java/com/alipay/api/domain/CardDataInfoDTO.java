@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CardDataInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3865379939795387977L;
+	private static final long serialVersionUID = 2731928295531768714L;
 
 	/**
 	 * 可空，是卡片当前链接的支付宝侧id——如科室id，医生id

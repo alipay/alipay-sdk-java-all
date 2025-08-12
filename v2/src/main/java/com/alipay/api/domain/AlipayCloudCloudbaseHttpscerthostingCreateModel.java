@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 新增Https证书
  *
  * @author auto create
- * @since 1.0, 2024-07-09 14:52:52
+ * @since 1.0, 2025-08-12 16:17:01
  */
 public class AlipayCloudCloudbaseHttpscerthostingCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2853675365847932452L;
+	private static final long serialVersionUID = 2839932741369439173L;
 
 	/**
 	 * acme需要的key列表

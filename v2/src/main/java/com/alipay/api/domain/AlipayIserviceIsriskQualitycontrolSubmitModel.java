@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 质检接口提交
  *
  * @author auto create
- * @since 1.0, 2025-07-15 11:52:37
+ * @since 1.0, 2025-08-12 11:24:09
  */
 public class AlipayIserviceIsriskQualitycontrolSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3682691261339265995L;
+	private static final long serialVersionUID = 5443518413287573743L;
 
 	/**
 	 * 业务唯一标识id

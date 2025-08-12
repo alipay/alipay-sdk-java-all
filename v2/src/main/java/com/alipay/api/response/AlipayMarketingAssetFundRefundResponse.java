@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingAssetFundRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3658572249262943438L;
+	private static final long serialVersionUID = 7353761775863637175L;
 
 	/** 
 	 * 当笔资产资金操作的流水id

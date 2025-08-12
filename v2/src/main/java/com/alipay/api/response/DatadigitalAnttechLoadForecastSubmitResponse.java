@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class DatadigitalAnttechLoadForecastSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3383837256395968646L;
+	private static final long serialVersionUID = 1577994357138751732L;
 
 	
 

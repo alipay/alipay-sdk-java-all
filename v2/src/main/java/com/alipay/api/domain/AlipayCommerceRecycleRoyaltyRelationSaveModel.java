@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 回收平台分账关系保存接口
  *
  * @author auto create
- * @since 1.0, 2025-06-20 18:05:14
+ * @since 1.0, 2025-08-11 22:47:28
  */
 public class AlipayCommerceRecycleRoyaltyRelationSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1258893311255524237L;
+	private static final long serialVersionUID = 7442639637424931692L;
 
 	/**
 	 * 关系绑定处理类型枚举

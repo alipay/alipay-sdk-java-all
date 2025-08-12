@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.mall.circle.recommenditem.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 19:33:56
+ * @since 1.0, 2025-08-12 11:43:26
  */
 public class KoubeiMallCircleRecommenditemQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4772878133564231555L;
+	private static final long serialVersionUID = 7497277598395475434L;
 
 	/** 
 	 * 错误码

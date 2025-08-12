@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySecurityProdCyftestGreyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3512276776769671998L;
+	private static final long serialVersionUID = 3669866225226724294L;
 
 	
 

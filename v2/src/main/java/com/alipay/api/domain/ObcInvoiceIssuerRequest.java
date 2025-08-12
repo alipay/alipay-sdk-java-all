@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 开票申请的发票抬头信息
  *
  * @author auto create
- * @since 1.0, 2025-06-20 10:11:33
+ * @since 1.0, 2025-08-12 16:14:50
  */
 public class ObcInvoiceIssuerRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 8781925596679442829L;
+	private static final long serialVersionUID = 6571545688638562963L;
 
 	/**
 	 * 购方银行账户

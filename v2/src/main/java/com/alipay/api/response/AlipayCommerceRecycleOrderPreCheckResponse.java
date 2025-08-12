@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.recycle.order.pre.check response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-11 17:32:27
+ * @since 1.0, 2025-08-12 10:57:36
  */
 public class AlipayCommerceRecycleOrderPreCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1665559338952592544L;
+	private static final long serialVersionUID = 3573942698184717446L;
 
 	/** 
 	 * 用来标识，当前工单或用户进件状态校验结果

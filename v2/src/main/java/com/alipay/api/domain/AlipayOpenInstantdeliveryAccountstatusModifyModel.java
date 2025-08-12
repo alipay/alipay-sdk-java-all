@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenInstantdeliveryAccountstatusModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5819354711953439451L;
+	private static final long serialVersionUID = 7674198428673177447L;
 
 	/**
 	 * 要更新的商家账户列表

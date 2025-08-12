@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单关闭
  *
  * @author auto create
- * @since 1.0, 2025-07-16 14:13:44
+ * @since 1.0, 2025-08-12 13:41:21
  */
 public class AlipayOpenMiniOrderCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7784164577977269623L;
+	private static final long serialVersionUID = 3591657769325857385L;
 
 	/**
 	 * 买家open_id；open_id和user_id二选一

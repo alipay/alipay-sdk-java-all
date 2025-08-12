@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalLargermodelSessionCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8157799175586912995L;
+	private static final long serialVersionUID = 3351184853452337745L;
 
 	/**
 	 * 卫健委通用助理——WJWCOMASS

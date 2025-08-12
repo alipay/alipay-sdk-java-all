@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 买家扩展信息
  *
  * @author auto create
- * @since 1.0, 2025-08-11 11:18:17
+ * @since 1.0, 2025-08-11 20:27:36
  */
 public class SellerSyncRentBuyerExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6467953689349234194L;
+	private static final long serialVersionUID = 4825269254482355146L;
 
 	/**
 	 * 买家身份证地址
@@ -20,10 +20,22 @@ public class SellerSyncRentBuyerExtInfo extends AlipayObject {
 	private RentAddress certAddress;
 
 	/**
+	 * 身份证有效期失效时间
+	 */
+	@ApiField("cert_expire_time")
+	private String certExpireTime;
+
+	/**
 	 * 买家的身份号码
 	 */
 	@ApiField("cert_no")
 	private String certNo;
+
+	/**
+	 * 身份证有效期开始时间
+	 */
+	@ApiField("cert_start_time")
+	private String certStartTime;
 
 	/**
 	 * 买家的手机号码
@@ -44,11 +56,25 @@ public class SellerSyncRentBuyerExtInfo extends AlipayObject {
 		this.certAddress = certAddress;
 	}
 
+	public String getCertExpireTime() {
+		return this.certExpireTime;
+	}
+	public void setCertExpireTime(String certExpireTime) {
+		this.certExpireTime = certExpireTime;
+	}
+
 	public String getCertNo() {
 		return this.certNo;
 	}
 	public void setCertNo(String certNo) {
 		this.certNo = certNo;
+	}
+
+	public String getCertStartTime() {
+		return this.certStartTime;
+	}
+	public void setCertStartTime(String certStartTime) {
+		this.certStartTime = certStartTime;
 	}
 
 	public String getMobile() {

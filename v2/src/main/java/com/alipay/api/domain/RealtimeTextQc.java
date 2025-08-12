@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 实时文本质检
  *
  * @author auto create
- * @since 1.0, 2025-06-06 11:34:43
+ * @since 1.0, 2025-08-12 11:24:09
  */
 public class RealtimeTextQc extends AlipayObject {
 
-	private static final long serialVersionUID = 6776832322773583128L;
+	private static final long serialVersionUID = 3742997456383686676L;
 
 	/**
 	 * 当前时间
@@ -26,6 +26,12 @@ public class RealtimeTextQc extends AlipayObject {
 	 */
 	@ApiField("dialog_id")
 	private String dialogId;
+
+	/**
+	 * 文本中的基本项，一般不需要填写
+	 */
+	@ApiField("realtime_qc_dialog")
+	private RealtimeQcDialog realtimeQcDialog;
 
 	/**
 	 * 角色id
@@ -47,6 +53,7 @@ public class RealtimeTextQc extends AlipayObject {
 
 	/**
 	 * 当前待检文本角色
+格式为RealtimeQcDialog的list类型
 	 */
 	@ApiField("text")
 	private String text;
@@ -63,6 +70,13 @@ public class RealtimeTextQc extends AlipayObject {
 	}
 	public void setDialogId(String dialogId) {
 		this.dialogId = dialogId;
+	}
+
+	public RealtimeQcDialog getRealtimeQcDialog() {
+		return this.realtimeQcDialog;
+	}
+	public void setRealtimeQcDialog(RealtimeQcDialog realtimeQcDialog) {
+		this.realtimeQcDialog = realtimeQcDialog;
 	}
 
 	public String getRole() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntMerchantExpandMembercardRefundSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4457169869837324638L;
+	private static final long serialVersionUID = 1476224869239965241L;
 
 	/**
 	 * 商家的安心充配置的唯一编号

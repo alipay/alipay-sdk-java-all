@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AutoRentPhaseRiskDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7147262742117213948L;
+	private static final long serialVersionUID = 7252132887865775888L;
 
 	/**
 	 * 多个风控厂商的风控结果详情

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 开票申请
  *
  * @author auto create
- * @since 1.0, 2025-06-20 10:11:33
+ * @since 1.0, 2025-08-12 16:14:50
  */
 public class AnttechOceanbaseInvoiceApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4832918316173468821L;
+	private static final long serialVersionUID = 1275496162622327498L;
 
 	/**
 	 * 业务唯一键，可做幂等
@@ -23,7 +23,7 @@ public class AnttechOceanbaseInvoiceApplyModel extends AlipayObject {
 	private String bizNo;
 
 	/**
-	 * 业务类型，需要向OB申请业务接入分配业务类型
+	 * 业务类型，需要向OB申请业务接入分配业务类型，动态增加，不使用枚举
 	 */
 	@ApiField("biz_type")
 	private String bizType;
@@ -45,6 +45,12 @@ public class AnttechOceanbaseInvoiceApplyModel extends AlipayObject {
 	 */
 	@ApiField("currency_code")
 	private String currencyCode;
+
+	/**
+	 * 财务备注信息，当经过了财务审批时，财务会填写备注信息
+	 */
+	@ApiField("finance_remarks")
+	private String financeRemarks;
 
 	/**
 	 * 开票金额,CNY币种下单位为元
@@ -110,6 +116,13 @@ public class AnttechOceanbaseInvoiceApplyModel extends AlipayObject {
 	}
 	public void setCurrencyCode(String currencyCode) {
 		this.currencyCode = currencyCode;
+	}
+
+	public String getFinanceRemarks() {
+		return this.financeRemarks;
+	}
+	public void setFinanceRemarks(String financeRemarks) {
+		this.financeRemarks = financeRemarks;
 	}
 
 	public String getInvoiceAmount() {

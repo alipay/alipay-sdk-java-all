@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 超上借支授权申请
  *
  * @author auto create
- * @since 1.0, 2025-01-07 17:06:29
+ * @since 1.0, 2025-08-12 15:10:01
  */
 public class AlipayFundAuthorizeUniApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4513985447778545959L;
+	private static final long serialVersionUID = 3694653779245727356L;
 
 	/**
 	 * 超时时间，过期跳转链接失效，格式为yyyy-MM-dd HH:mm。不传，有效期默认7天
@@ -30,6 +30,12 @@ public class AlipayFundAuthorizeUniApplyModel extends AlipayObject {
 	 */
 	@ApiField("auth_expire_time")
 	private String authExpireTime;
+
+	/**
+	 * 出资授权校验规则条目
+	 */
+	@ApiField("authorize_check_rule")
+	private AuthorizeCheckRule authorizeCheckRule;
 
 	/**
 	 * 授权跳转类型，有限枚举：SHORT_URL
@@ -118,6 +124,13 @@ pc, h5, tinyapp
 	}
 	public void setAuthExpireTime(String authExpireTime) {
 		this.authExpireTime = authExpireTime;
+	}
+
+	public AuthorizeCheckRule getAuthorizeCheckRule() {
+		return this.authorizeCheckRule;
+	}
+	public void setAuthorizeCheckRule(AuthorizeCheckRule authorizeCheckRule) {
+		this.authorizeCheckRule = authorizeCheckRule;
 	}
 
 	public String getAuthorizeLinkType() {

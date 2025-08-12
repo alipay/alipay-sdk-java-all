@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁买家扩展信息
  *
  * @author auto create
- * @since 1.0, 2025-03-18 16:05:55
+ * @since 1.0, 2025-08-11 19:29:39
  */
 public class RentBuyerExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6628547967693943342L;
+	private static final long serialVersionUID = 1899512982329217216L;
 
 	/**
 	 * 买家身份证地址
@@ -26,6 +26,12 @@ public class RentBuyerExtInfo extends AlipayObject {
 	private RentFile certBackPic;
 
 	/**
+	 * 身份证有效期失效时间
+	 */
+	@ApiField("cert_expire_time")
+	private String certExpireTime;
+
+	/**
 	 * 买家身份证正面照片
 	 */
 	@ApiField("cert_font_pic")
@@ -36,6 +42,12 @@ public class RentBuyerExtInfo extends AlipayObject {
 	 */
 	@ApiField("cert_no")
 	private String certNo;
+
+	/**
+	 * 身份证有效期开始时间
+	 */
+	@ApiField("cert_start_time")
+	private String certStartTime;
 
 	/**
 	 * 买家活体检测照片
@@ -69,6 +81,13 @@ public class RentBuyerExtInfo extends AlipayObject {
 		this.certBackPic = certBackPic;
 	}
 
+	public String getCertExpireTime() {
+		return this.certExpireTime;
+	}
+	public void setCertExpireTime(String certExpireTime) {
+		this.certExpireTime = certExpireTime;
+	}
+
 	public RentFile getCertFontPic() {
 		return this.certFontPic;
 	}
@@ -81,6 +100,13 @@ public class RentBuyerExtInfo extends AlipayObject {
 	}
 	public void setCertNo(String certNo) {
 		this.certNo = certNo;
+	}
+
+	public String getCertStartTime() {
+		return this.certStartTime;
+	}
+	public void setCertStartTime(String certStartTime) {
+		this.certStartTime = certStartTime;
 	}
 
 	public RentFile getLivePic() {

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class DTAgentSceneParam extends AlipayObject {
 
-	private static final long serialVersionUID = 2671383995611325444L;
+	private static final long serialVersionUID = 2213516871365993751L;
 
 	/**
 	 * 自定义业务参数

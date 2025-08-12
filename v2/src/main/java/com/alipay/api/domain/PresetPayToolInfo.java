@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PresetPayToolInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5521328257775146994L;
+	private static final long serialVersionUID = 4395144675756491647L;
 
 	/**
 	 * 前置资产金额

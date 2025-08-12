@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 二级回收商代扣关系维护
  *
  * @author auto create
- * @since 1.0, 2025-06-20 18:04:52
+ * @since 1.0, 2025-08-11 22:47:57
  */
 public class AlipayCommerceRecycleDeductRelationSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2785146561898397448L;
+	private static final long serialVersionUID = 2216253349319951389L;
 
 	/**
 	 * 绑定的收款钱包信息Id 场景钱包:钱包id，余额：userId
 	 */
 	@ApiField("bind_wallet_id")
 	private String bindWalletId;
+
+	/**
+	 * 绑定的收款钱包信息Id 场景钱包:钱包id，余额：userId
+	 */
+	@ApiField("bind_wallet_open_id")
+	private String bindWalletOpenId;
 
 	/**
 	 * 代扣关系支付类型
@@ -32,7 +38,7 @@ public class AlipayCommerceRecycleDeductRelationSaveModel extends AlipayObject {
 	private String handleType;
 
 	/**
-	 * 二级商户openid
+	 * 二级商户pid
 	 */
 	@ApiField("second_merchant_open_id")
 	private String secondMerchantOpenId;
@@ -48,6 +54,13 @@ public class AlipayCommerceRecycleDeductRelationSaveModel extends AlipayObject {
 	}
 	public void setBindWalletId(String bindWalletId) {
 		this.bindWalletId = bindWalletId;
+	}
+
+	public String getBindWalletOpenId() {
+		return this.bindWalletOpenId;
+	}
+	public void setBindWalletOpenId(String bindWalletOpenId) {
+		this.bindWalletOpenId = bindWalletOpenId;
 	}
 
 	public String getBindWalletType() {
