@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.members.huoban.delete request
  * 
  * @author auto create
- * @since 1.0, 2025-08-05 11:02:01
+ * @since 1.0, 2025-08-13 14:32:42
  */
 public class AlipayOpenMiniMembersHuobanDeleteRequest implements AlipayRequest<AlipayOpenMiniMembersHuobanDeleteResponse> {
 

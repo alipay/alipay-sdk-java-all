@@ -1,6 +1,8 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.cstraining.userdata.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-06 13:42:35
+ * @since 1.0, 2025-08-20 13:57:37
  */
 public class AlipayIserviceCstrainingUserdataQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5794842548716672894L;
+	private static final long serialVersionUID = 7147668729224917911L;
 
 	/** 
 	 * 页码
@@ -31,6 +33,13 @@ public class AlipayIserviceCstrainingUserdataQueryResponse extends AlipayRespons
 	 */
 	@ApiField("result_list")
 	private String resultList;
+
+	/** 
+	 * 返回学员学习信息统计数据数组格式
+	 */
+	@ApiListField("results_list")
+	@ApiField("string")
+	private List<String> resultsList;
 
 	/** 
 	 * 总共数据数量
@@ -57,6 +66,13 @@ public class AlipayIserviceCstrainingUserdataQueryResponse extends AlipayRespons
 	}
 	public String getResultList( ) {
 		return this.resultList;
+	}
+
+	public void setResultsList(List<String> resultsList) {
+		this.resultsList = resultsList;
+	}
+	public List<String> getResultsList( ) {
+		return this.resultsList;
 	}
 
 	public void setTotalSize(Long totalSize) {

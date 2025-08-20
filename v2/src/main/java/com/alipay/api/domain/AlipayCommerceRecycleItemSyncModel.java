@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 回收商品同步服务
  *
  * @author auto create
- * @since 1.0, 2025-04-13 17:37:27
+ * @since 1.0, 2025-08-20 11:00:38
  */
 public class AlipayCommerceRecycleItemSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4125822321262755513L;
+	private static final long serialVersionUID = 2429368267854674247L;
 
 	/**
 	 * 回收商进行产品（商品）变更时需要传入唯一的流水号

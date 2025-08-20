@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: techrisk.innovate.cloudbaseenv.workspace.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2025-08-07 13:14:11
+ * @since 1.0, 2025-08-13 14:27:43
  */
 public class TechriskInnovateCloudbaseenvWorkspaceBatchqueryRequest implements AlipayRequest<TechriskInnovateCloudbaseenvWorkspaceBatchqueryResponse> {
 

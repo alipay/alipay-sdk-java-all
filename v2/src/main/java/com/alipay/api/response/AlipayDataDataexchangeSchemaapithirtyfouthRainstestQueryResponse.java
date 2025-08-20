@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataexchange.schemaapithirtyfouth.rainstest.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-10 17:47:30
+ * @since 1.0, 2025-08-18 23:02:57
  */
 public class AlipayDataDataexchangeSchemaapithirtyfouthRainstestQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7837152157436894148L;
+	private static final long serialVersionUID = 1452687521138343534L;
 
 	/** 
 	 * 测试数据无需关注

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.pcinstpromo.pcinstpromo.activityorder.query request
  * 
  * @author auto create
- * @since 1.0, 2025-08-07 13:11:56
+ * @since 1.0, 2025-08-13 14:27:44
  */
 public class AntPcinstpromoPcinstpromoActivityorderQueryRequest implements AlipayRequest<AntPcinstpromoPcinstpromoActivityorderQueryResponse> {
 

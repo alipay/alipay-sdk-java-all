@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.zhima.preorder.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-17 17:26:12
+ * @since 1.0, 2025-08-13 15:37:40
  */
 public class AlipayCommerceZhimaPreorderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6147845297769224596L;
+	private static final long serialVersionUID = 2687576467776912948L;
 
 	/** 
 	 * 业务类型

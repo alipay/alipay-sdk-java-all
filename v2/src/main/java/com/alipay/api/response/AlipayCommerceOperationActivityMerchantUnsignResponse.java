@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.activity.merchant.unsign response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-03 11:08:41
+ * @since 1.0, 2025-08-13 15:12:38
  */
 public class AlipayCommerceOperationActivityMerchantUnsignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5343786455956519651L;
+	private static final long serialVersionUID = 8351465672837848939L;
 
 	
 

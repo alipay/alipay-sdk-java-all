@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.cstraining.userdata.query request
  * 
  * @author auto create
- * @since 1.0, 2025-08-06 13:42:35
+ * @since 1.0, 2025-08-20 13:57:37
  */
 public class AlipayIserviceCstrainingUserdataQueryRequest implements AlipayRequest<AlipayIserviceCstrainingUserdataQueryResponse> {
 

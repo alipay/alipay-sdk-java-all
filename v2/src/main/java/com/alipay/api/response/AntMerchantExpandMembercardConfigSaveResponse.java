@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntMerchantExpandMembercardConfigSaveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3391258838472746591L;
+	private static final long serialVersionUID = 7731221614572269987L;
 
 	/** 
 	 * 商家的安心充配置的唯一编号；

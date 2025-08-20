@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改appid与MTOP appKey关联关系
  *
  * @author auto create
- * @since 1.0, 2021-09-13 17:21:07
+ * @since 1.0, 2025-08-20 17:46:37
  */
 public class AlipayOpenMiniInnerMtopsyncModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4148358575118995517L;
+	private static final long serialVersionUID = 1163462792573768191L;
 
 	/**
 	 * 支付宝小程序id

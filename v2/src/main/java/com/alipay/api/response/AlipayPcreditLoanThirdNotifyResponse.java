@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.third.notify response.
  * 
  * @author auto create
- * @since 1.0, 2024-09-10 18:07:34
+ * @since 1.0, 2025-08-13 22:02:41
  */
 public class AlipayPcreditLoanThirdNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8492632352289289834L;
+	private static final long serialVersionUID = 3197799749719344685L;
 
 	
 

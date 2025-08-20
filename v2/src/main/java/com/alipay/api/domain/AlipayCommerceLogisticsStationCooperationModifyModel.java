@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 驿站取消小件员的驿站门店合作关系
  *
  * @author auto create
- * @since 1.0, 2024-01-26 10:15:40
+ * @since 1.0, 2025-08-20 13:42:54
  */
 public class AlipayCommerceLogisticsStationCooperationModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7893536512848729344L;
+	private static final long serialVersionUID = 2388325335167588683L;
 
 	/**
 	 * 事件类型

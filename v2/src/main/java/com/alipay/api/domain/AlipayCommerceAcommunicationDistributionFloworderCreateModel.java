@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 流量分销创单接口
  *
  * @author auto create
- * @since 1.0, 2025-07-15 16:59:32
+ * @since 1.0, 2025-08-20 14:20:39
  */
 public class AlipayCommerceAcommunicationDistributionFloworderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8663843249157529581L;
+	private static final long serialVersionUID = 7454595367954891241L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识
 	 */
 	@ApiField("alipay_user_id")
 	private String alipayUserId;
+
+	/**
+	 * 加密后手机号
+	 */
+	@ApiField("encrypted_mobile")
+	private String encryptedMobile;
 
 	/**
 	 * 机构订单id
@@ -72,6 +78,13 @@ public class AlipayCommerceAcommunicationDistributionFloworderCreateModel extend
 	}
 	public void setAlipayUserId(String alipayUserId) {
 		this.alipayUserId = alipayUserId;
+	}
+
+	public String getEncryptedMobile() {
+		return this.encryptedMobile;
+	}
+	public void setEncryptedMobile(String encryptedMobile) {
+		this.encryptedMobile = encryptedMobile;
 	}
 
 	public String getInstOrderId() {

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceRecycleUserassetWithdrawResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4792365332736421675L;
+	private static final long serialVersionUID = 1155625368469786496L;
 
 	/** 
 	 * 流水id，保证是唯一的

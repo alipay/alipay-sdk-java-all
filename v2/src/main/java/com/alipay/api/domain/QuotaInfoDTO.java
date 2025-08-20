@@ -7,11 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 额度信息模型
  *
  * @author auto create
- * @since 1.0, 2025-06-18 11:27:56
+ * @since 1.0, 2025-08-19 15:24:54
  */
 public class QuotaInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7182266365297199549L;
+	private static final long serialVersionUID = 2839517996858644623L;
+
+	/**
+	 * 总限额
+	 */
+	@ApiField("limit_money")
+	private String limitMoney;
+
+	/**
+	 * 总限次
+	 */
+	@ApiField("limit_times")
+	private String limitTimes;
 
 	/**
 	 * 剩余额度
@@ -30,6 +42,20 @@ public class QuotaInfoDTO extends AlipayObject {
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;
+
+	public String getLimitMoney() {
+		return this.limitMoney;
+	}
+	public void setLimitMoney(String limitMoney) {
+		this.limitMoney = limitMoney;
+	}
+
+	public String getLimitTimes() {
+		return this.limitTimes;
+	}
+	public void setLimitTimes(String limitTimes) {
+		this.limitTimes = limitTimes;
+	}
 
 	public String getRemainMoney() {
 		return this.remainMoney;

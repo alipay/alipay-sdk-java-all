@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.industrydata.useralternatedoctor.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-26 14:32:25
+ * @since 1.0, 2025-08-13 19:21:56
  */
 public class AlipayCommerceMedicalIndustrydataUseralternatedoctorQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1857916361698797863L;
+	private static final long serialVersionUID = 5131813351897114962L;
 
 	/** 
 	 * 支付宝用户的userId。

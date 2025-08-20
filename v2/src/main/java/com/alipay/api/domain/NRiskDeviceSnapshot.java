@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * N设备信息
  *
  * @author auto create
- * @since 1.0, 2025-05-28 09:56:24
+ * @since 1.0, 2025-08-15 15:24:30
  */
 public class NRiskDeviceSnapshot extends AlipayObject {
 
-	private static final long serialVersionUID = 3584393863826182961L;
+	private static final long serialVersionUID = 8365559448662368466L;
 
 	/**
 	 * 描叙商家品牌
@@ -24,6 +24,12 @@ public class NRiskDeviceSnapshot extends AlipayObject {
 	 */
 	@ApiField("device_type")
 	private String deviceType;
+
+	/**
+	 * 设备扩展信息
+	 */
+	@ApiField("ext_info")
+	private NRiskDeviceSnapshotExtInfo extInfo;
 
 	/**
 	 * 记录设备最后一次交易时间
@@ -67,6 +73,13 @@ public class NRiskDeviceSnapshot extends AlipayObject {
 	}
 	public void setDeviceType(String deviceType) {
 		this.deviceType = deviceType;
+	}
+
+	public NRiskDeviceSnapshotExtInfo getExtInfo() {
+		return this.extInfo;
+	}
+	public void setExtInfo(NRiskDeviceSnapshotExtInfo extInfo) {
+		this.extInfo = extInfo;
 	}
 
 	public String getLastTradeTime() {

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 在线购药：退款订单详细信息
  *
  * @author auto create
- * @since 1.0, 2025-01-15 15:54:55
+ * @since 1.0, 2025-08-19 17:04:28
  */
 public class RefundOrderDetailVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6659887225476841646L;
+	private static final long serialVersionUID = 5776959588274397521L;
 
 	/**
 	 * 退款总金额，单位：元
@@ -126,6 +126,13 @@ public class RefundOrderDetailVO extends AlipayObject {
 	 */
 	@ApiField("reason_code")
 	private String reasonCode;
+
+	/**
+	 * 在退款状态为31 or 32的时候才有值，对应B站对账单中退佣交易单号
+	 */
+	@ApiListField("refund_commission_nos")
+	@ApiField("string")
+	private List<String> refundCommissionNos;
 
 	/**
 	 * 退款状态描述
@@ -299,6 +306,13 @@ public class RefundOrderDetailVO extends AlipayObject {
 	}
 	public void setReasonCode(String reasonCode) {
 		this.reasonCode = reasonCode;
+	}
+
+	public List<String> getRefundCommissionNos() {
+		return this.refundCommissionNos;
+	}
+	public void setRefundCommissionNos(List<String> refundCommissionNos) {
+		this.refundCommissionNos = refundCommissionNos;
 	}
 
 	public String getRefundMsg() {

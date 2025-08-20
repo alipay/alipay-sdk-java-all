@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 若用户使用花呗分期支付，且商家开通返回此通知参数，则会返回花呗分期信息。
  *
  * @author auto create
- * @since 1.0, 2022-04-24 11:31:11
+ * @since 1.0, 2025-08-14 16:29:25
  */
 public class HbFqPayInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7793251982457923587L;
+	private static final long serialVersionUID = 6365446411621813497L;
 
 	/**
 	 * 用户使用花呗分期支付的金额数
 	 */
 	@ApiField("fq_amount")
 	private String fqAmount;
+
+	/**
+	 * 提供分期服务的机构ID
+	 */
+	@ApiField("fq_inst_id")
+	private String fqInstId;
 
 	/**
 	 * 用户使用花呗分期支付的分期数
@@ -30,6 +36,13 @@ public class HbFqPayInfo extends AlipayObject {
 	}
 	public void setFqAmount(String fqAmount) {
 		this.fqAmount = fqAmount;
+	}
+
+	public String getFqInstId() {
+		return this.fqInstId;
+	}
+	public void setFqInstId(String fqInstId) {
+		this.fqInstId = fqInstId;
 	}
 
 	public String getUserInstallNum() {

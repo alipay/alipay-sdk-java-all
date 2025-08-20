@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.ampe.device.delete response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-29 10:35:10
+ * @since 1.0, 2025-08-13 14:47:42
  */
 public class AlipayOpenMiniAmpeDeviceDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7613755382633477477L;
+	private static final long serialVersionUID = 5339635435295265275L;
 
 	
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dpc.alisis.olapprocessor response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 17:31:49
+ * @since 1.0, 2025-08-18 10:08:47
  */
 public class AlipayDataDpcAlisisOlapprocessorResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7358853685456596948L;
+	private static final long serialVersionUID = 8893635398899256754L;
 
 	/** 
 	 * 业务处理后返回的数据

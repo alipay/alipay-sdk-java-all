@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.finance.tvp.account.apply request
  * 
  * @author auto create
- * @since 1.0, 2025-08-07 13:08:05
+ * @since 1.0, 2025-08-13 14:27:45
  */
 public class AnttechBlockchainFinanceTvpAccountApplyRequest implements AlipayRequest<AnttechBlockchainFinanceTvpAccountApplyResponse> {
 

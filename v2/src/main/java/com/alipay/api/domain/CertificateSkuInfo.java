@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品的Sku信息
  *
  * @author auto create
- * @since 1.0, 2024-11-08 14:49:19
+ * @since 1.0, 2025-08-15 16:20:58
  */
 public class CertificateSkuInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6341384423465635397L;
+	private static final long serialVersionUID = 2168272965352577893L;
+
+	/**
+	 * 商品套餐
+	 */
+	@ApiField("commodity")
+	private String commodity;
 
 	/**
 	 * 支付宝平台侧商品ID，是支付宝平台侧商品的唯一标识，后续与平台交互，需要使用该 ID，建议持久化。
@@ -23,6 +29,7 @@ public class CertificateSkuInfo extends AlipayObject {
 	 * 商品模版类型：
 1. 团购套餐
 2. 代金券
+3. 次卡
 此字段与使用alipay.open.app.localitem.create接口创建本地生活商品时传入的item_type字段值保持一致。
 	 */
 	@ApiField("item_type")
@@ -51,6 +58,13 @@ public class CertificateSkuInfo extends AlipayObject {
 	 */
 	@ApiField("title")
 	private String title;
+
+	public String getCommodity() {
+		return this.commodity;
+	}
+	public void setCommodity(String commodity) {
+		this.commodity = commodity;
+	}
 
 	public String getItemId() {
 		return this.itemId;

@@ -3,6 +3,7 @@ package com.alipay.api.response;
 import java.util.Date;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.domain.ActivityBaseInfo;
+import com.alipay.api.domain.AuditResultInfo;
 import com.alipay.api.domain.PaymentVoucherBelongMerchantInfo;
 import com.alipay.api.domain.VoucherSummary;
 import com.alipay.api.domain.VoucherAvailableScopeInfo;
@@ -24,11 +25,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.voucher.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-04 19:36:45
+ * @since 1.0, 2025-08-14 10:27:36
  */
 public class AlipayMarketingActivityVoucherQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5683952665785457485L;
+	private static final long serialVersionUID = 5851463333253344711L;
 
 	/** 
 	 * 活动基础信息
@@ -54,6 +55,12 @@ public class AlipayMarketingActivityVoucherQueryResponse extends AlipayResponse 
 	 */
 	@ApiField("activity_status")
 	private String activityStatus;
+
+	/** 
+	 * 审核结果信息
+	 */
+	@ApiField("audit_result_info")
+	private AuditResultInfo auditResultInfo;
 
 	/** 
 	 * 归属商户信息
@@ -183,6 +190,13 @@ public class AlipayMarketingActivityVoucherQueryResponse extends AlipayResponse 
 	}
 	public String getActivityStatus( ) {
 		return this.activityStatus;
+	}
+
+	public void setAuditResultInfo(AuditResultInfo auditResultInfo) {
+		this.auditResultInfo = auditResultInfo;
+	}
+	public AuditResultInfo getAuditResultInfo( ) {
+		return this.auditResultInfo;
 	}
 
 	public void setBelongMerchantInfo(PaymentVoucherBelongMerchantInfo belongMerchantInfo) {

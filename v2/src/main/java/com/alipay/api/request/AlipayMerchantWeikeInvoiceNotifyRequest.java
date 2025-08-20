@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.weike.invoice.notify request
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 18:06:51
+ * @since 1.0, 2025-08-19 17:52:35
  */
 public class AlipayMerchantWeikeInvoiceNotifyRequest implements AlipayRequest<AlipayMerchantWeikeInvoiceNotifyResponse> {
 

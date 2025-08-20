@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class BalanceRemindPlanDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1549447886311282336L;
+	private static final long serialVersionUID = 6734716348781863429L;
 
 	/**
 	 * 单位：元，当设置了触发余额提醒的上限阈值时返回该值，余额大于该值时按规则发送余额提醒通知

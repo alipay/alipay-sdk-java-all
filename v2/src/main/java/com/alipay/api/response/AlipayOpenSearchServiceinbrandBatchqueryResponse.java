@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.search.serviceinbrand.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 17:41:23
+ * @since 1.0, 2025-08-18 14:37:36
  */
 public class AlipayOpenSearchServiceinbrandBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8616182667226439834L;
+	private static final long serialVersionUID = 2463316155261736135L;
 
 	/** 
 	 * 品牌绑定的官方账号详情

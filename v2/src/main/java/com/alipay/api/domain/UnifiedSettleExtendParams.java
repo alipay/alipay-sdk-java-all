@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 收结易扩展字段
  *
  * @author auto create
- * @since 1.0, 2025-06-26 16:32:39
+ * @since 1.0, 2025-08-13 14:26:39
  */
 public class UnifiedSettleExtendParams extends AlipayObject {
 
-	private static final long serialVersionUID = 2257263282265418476L;
+	private static final long serialVersionUID = 5418497587633223211L;
 
 	/**
 	 * 提现到银行卡备注
 	 */
 	@ApiField("bank_memo")
 	private String bankMemo;
+
+	/**
+	 * 表示机构打款单号，一个 inst_serial_no 对应用户的一次打款。回传来账明细查询接口返回的 order_id 字段即可。
+	 */
+	@ApiField("inst_order_id")
+	private String instOrderId;
 
 	/**
 	 * 备注 当前字段已废弃(不需要该参数了不需要该参数了)
@@ -44,11 +50,24 @@ public class UnifiedSettleExtendParams extends AlipayObject {
 	@ApiField("settle_mode")
 	private String settleMode;
 
+	/**
+	 * 用于指定收结易订单的附言，可用于对账
+	 */
+	@ApiField("trans_memo")
+	private String transMemo;
+
 	public String getBankMemo() {
 		return this.bankMemo;
 	}
 	public void setBankMemo(String bankMemo) {
 		this.bankMemo = bankMemo;
+	}
+
+	public String getInstOrderId() {
+		return this.instOrderId;
+	}
+	public void setInstOrderId(String instOrderId) {
+		this.instOrderId = instOrderId;
 	}
 
 	public String getMemo() {
@@ -77,6 +96,13 @@ public class UnifiedSettleExtendParams extends AlipayObject {
 	}
 	public void setSettleMode(String settleMode) {
 		this.settleMode = settleMode;
+	}
+
+	public String getTransMemo() {
+		return this.transMemo;
+	}
+	public void setTransMemo(String transMemo) {
+		this.transMemo = transMemo;
 	}
 
 }

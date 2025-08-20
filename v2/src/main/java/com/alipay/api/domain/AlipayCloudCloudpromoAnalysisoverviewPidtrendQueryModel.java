@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCloudCloudpromoAnalysisoverviewPidtrendQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8728125732431831753L;
+	private static final long serialVersionUID = 4515185657237415611L;
 
 	/**
 	 * 经营分析、经营概况模块公用入参

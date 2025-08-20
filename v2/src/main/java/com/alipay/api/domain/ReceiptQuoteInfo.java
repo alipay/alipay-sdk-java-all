@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ReceiptQuoteInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4639268172288739246L;
+	private static final long serialVersionUID = 8333977865871275615L;
 
 	/**
 	 * The base currency

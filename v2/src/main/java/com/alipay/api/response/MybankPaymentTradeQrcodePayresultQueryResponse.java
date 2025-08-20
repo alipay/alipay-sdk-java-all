@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankPaymentTradeQrcodePayresultQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4529724355558842325L;
+	private static final long serialVersionUID = 8215714952195938752L;
 
 	/** 
 	 * 受理时间

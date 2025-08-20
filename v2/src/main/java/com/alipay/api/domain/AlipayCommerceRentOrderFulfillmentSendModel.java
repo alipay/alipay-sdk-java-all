@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 履约物流发货
  *
  * @author auto create
- * @since 1.0, 2025-07-24 19:49:40
+ * @since 1.0, 2025-08-14 19:15:47
  */
 public class AlipayCommerceRentOrderFulfillmentSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2513414376158838112L;
+	private static final long serialVersionUID = 8328523874623779394L;
 
 	/**
 	 * 物流信息

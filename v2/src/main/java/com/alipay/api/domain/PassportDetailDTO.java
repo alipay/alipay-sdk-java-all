@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PassportDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1861187717217436165L;
+	private static final long serialVersionUID = 8896213894148321844L;
 
 	/**
 	 * 用于返回关联企业名称

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.credit.loantrade.guarletter.bidwin.notify request
  * 
  * @author auto create
- * @since 1.0, 2023-09-18 20:03:10
+ * @since 1.0, 2025-08-19 20:07:35
  */
 public class MybankCreditLoantradeGuarletterBidwinNotifyRequest implements AlipayRequest<MybankCreditLoantradeGuarletterBidwinNotifyResponse> {
 

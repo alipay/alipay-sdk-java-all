@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 芝麻企业信用场景账户结果同步
  *
  * @author auto create
- * @since 1.0, 2025-06-26 14:37:10
+ * @since 1.0, 2025-08-20 09:50:56
  */
 public class ZhimaCreditEpSceneAccountSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6663562361441143336L;
+	private static final long serialVersionUID = 3462965435784926116L;
 
 	/**
 	 * 芝麻企业信用赋予的唯一业务单号

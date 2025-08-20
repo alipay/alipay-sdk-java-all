@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceAcommunicationCreditphonePeriodorderCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8452136895142249754L;
+	private static final long serialVersionUID = 2418487332871784162L;
 
 	/**
 	 * 当期支付宝订单号

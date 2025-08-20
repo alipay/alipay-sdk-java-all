@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.timescard.order.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-24 10:19:39
+ * @since 1.0, 2025-08-13 15:32:42
  */
 public class AlipayCommerceOperationTimescardOrderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4249659726287173819L;
+	private static final long serialVersionUID = 2242317633481439377L;
 
 	/** 
 	 * 是否需要调用jsapi确认向卡包发卡

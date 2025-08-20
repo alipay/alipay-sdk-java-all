@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InquiryDoctorShiftCaseData extends AlipayObject {
 
-	private static final long serialVersionUID = 2562443955318797874L;
+	private static final long serialVersionUID = 4284544846864355186L;
 
 	/**
 	 * 外部排班编码

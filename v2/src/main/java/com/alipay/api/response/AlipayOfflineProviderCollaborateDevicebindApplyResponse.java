@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.provider.collaborate.devicebind.apply response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-16 20:47:30
+ * @since 1.0, 2025-08-20 13:47:02
  */
 public class AlipayOfflineProviderCollaborateDevicebindApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8266573317657548141L;
+	private static final long serialVersionUID = 5463758876114448943L;
 
 	/** 
 	 * 商户签约链接，需要将该链接生成二维码让商户扫码签约，非白名单情况一定有

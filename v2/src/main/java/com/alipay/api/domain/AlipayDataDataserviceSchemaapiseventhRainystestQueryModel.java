@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 参数校验为关闭的测试接口
  *
  * @author auto create
- * @since 1.0, 2025-04-16 09:47:29
+ * @since 1.0, 2025-08-18 23:02:56
  */
 public class AlipayDataDataserviceSchemaapiseventhRainystestQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5162348657374681178L;
+	private static final long serialVersionUID = 3818616339469927574L;
 
 	/**
 	 * 测试参数，无需关注

@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.ecny.file.upload request
  * 
  * @author auto create
- * @since 1.0, 2025-01-22 18:33:55
+ * @since 1.0, 2025-08-13 15:22:39
  */
 public class MybankEcnyFileUploadRequest implements AlipayUploadRequest<MybankEcnyFileUploadResponse> {
 

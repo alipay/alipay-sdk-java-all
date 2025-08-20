@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保函缴费链接生成
  *
  * @author auto create
- * @since 1.0, 2023-09-18 20:01:48
+ * @since 1.0, 2025-08-19 20:05:55
  */
 public class MybankCreditLoantradeGuarletterPayurlCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2727536879657264736L;
+	private static final long serialVersionUID = 7771281545993639916L;
 
 	/**
 	 * 申请单号

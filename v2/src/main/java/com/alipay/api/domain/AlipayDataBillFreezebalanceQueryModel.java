@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 冻结余额查询
  *
  * @author auto create
- * @since 1.0, 2024-01-15 15:09:34
+ * @since 1.0, 2025-08-14 18:11:49
  */
 public class AlipayDataBillFreezebalanceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2456189365962365665L;
+	private static final long serialVersionUID = 6795676334695529653L;
 
 	/**
 	 * 目标查询用户uid

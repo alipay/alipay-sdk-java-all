@@ -9,17 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁单扩展信息
  *
  * @author auto create
- * @since 1.0, 2025-06-05 15:58:54
+ * @since 1.0, 2025-08-20 09:30:32
  */
 public class RentOrderExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5884883191198638794L;
+	private static final long serialVersionUID = 7757533115555439376L;
 
 	/**
-	 * 用户和租赁商合同上约定的租赁价格
+	 * 用户和租赁商合同上约定的租赁价格，单位：元
 	 */
 	@ApiField("order_sign_price")
 	private String orderSignPrice;
+
+	/**
+	 * 订单类型:HEAD_LEASE首租,LEASE_RENEWAL续租
+	 */
+	@ApiField("order_type")
+	private String orderType;
 
 	/**
 	 * 用户租赁的结束时间
@@ -44,6 +50,13 @@ public class RentOrderExtInfo extends AlipayObject {
 	}
 	public void setOrderSignPrice(String orderSignPrice) {
 		this.orderSignPrice = orderSignPrice;
+	}
+
+	public String getOrderType() {
+		return this.orderType;
+	}
+	public void setOrderType(String orderType) {
+		this.orderType = orderType;
 	}
 
 	public Date getRentEndTime() {

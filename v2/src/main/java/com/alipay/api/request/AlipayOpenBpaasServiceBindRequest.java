@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.bpaas.service.bind request
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 01:10:22
+ * @since 1.0, 2025-08-18 14:57:34
  */
 public class AlipayOpenBpaasServiceBindRequest implements AlipayRequest<AlipayOpenBpaasServiceBindResponse> {
 

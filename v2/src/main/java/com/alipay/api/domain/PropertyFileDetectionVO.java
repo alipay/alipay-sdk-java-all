@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PropertyFileDetectionVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4515314841648115527L;
+	private static final long serialVersionUID = 6773462359829758182L;
 
 	/**
 	 * 唯一编码标识

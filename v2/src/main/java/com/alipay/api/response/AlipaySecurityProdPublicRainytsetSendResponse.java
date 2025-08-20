@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.public.rainytset.send response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-19 17:46:48
+ * @since 1.0, 2025-08-13 15:32:42
  */
 public class AlipaySecurityProdPublicRainytsetSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6669253618792771317L;
+	private static final long serialVersionUID = 4622183433417433635L;
 
 	/** 
 	 * 结果码

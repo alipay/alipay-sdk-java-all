@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签约返点比率查询接口
  *
  * @author auto create
- * @since 1.0, 2016-09-09 20:38:21
+ * @since 1.0, 2025-08-18 22:59:38
  */
 public class AntProdpaasArrangementRebateRateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2535431563791648717L;
+	private static final long serialVersionUID = 4754293682989611711L;
 
 	/**
 	 * 数据项名称

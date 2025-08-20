@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.group.schedulemsg.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2025-05-30 17:32:26
+ * @since 1.0, 2025-08-19 16:54:25
  */
 public class AlipayMerchantGroupSchedulemsgBatchqueryRequest implements AlipayRequest<AlipayMerchantGroupSchedulemsgBatchqueryResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.iotmbs.hoteldevice.query request
  * 
  * @author auto create
- * @since 1.0, 2025-01-02 16:56:48
+ * @since 1.0, 2025-08-13 15:32:39
  */
 public class AlipayOpenIotmbsHoteldeviceQueryRequest implements AlipayRequest<AlipayOpenIotmbsHoteldeviceQueryResponse> {
 

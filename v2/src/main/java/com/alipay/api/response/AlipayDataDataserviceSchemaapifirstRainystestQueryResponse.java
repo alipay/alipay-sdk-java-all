@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.schemaapifirst.rainystest.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-07 12:22:36
+ * @since 1.0, 2025-08-18 23:02:53
  */
 public class AlipayDataDataserviceSchemaapifirstRainystestQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2459274948187835581L;
+	private static final long serialVersionUID = 2153457813937926521L;
 
 	/** 
 	 * 获取签名后的业务数据

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.loantrade.guarletter.apply.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-18 20:00:11
+ * @since 1.0, 2025-08-19 20:07:34
  */
 public class MybankCreditLoantradeGuarletterApplyCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1224678251461976177L;
+	private static final long serialVersionUID = 4127146733318765312L;
 
 	/** 
 	 * 取消申请单号

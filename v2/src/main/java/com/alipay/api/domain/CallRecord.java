@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CallRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 3333131547339481768L;
+	private static final long serialVersionUID = 1576437829684394375L;
 
 	/**
 	 * 通话ID

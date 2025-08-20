@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 售卖订单数据同步
  *
  * @author auto create
- * @since 1.0, 2025-04-07 19:51:56
+ * @since 1.0, 2025-08-18 15:35:34
  */
 public class AlipayCommerceMerchantcardOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4184121227719574553L;
+	private static final long serialVersionUID = 2836316628712257331L;
 
 	/**
 	 * 推送批次号，由外部传入，用于标识是哪一次推送任务

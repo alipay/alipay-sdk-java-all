@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 重新加密申请
  *
  * @author auto create
- * @since 1.0, 2023-09-18 20:02:29
+ * @since 1.0, 2025-08-19 20:05:00
  */
 public class MybankCreditLoantradeGuarletterReencryptApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7495886357164184232L;
+	private static final long serialVersionUID = 7215122414175715746L;
 
 	/**
 	 * 新的公钥值

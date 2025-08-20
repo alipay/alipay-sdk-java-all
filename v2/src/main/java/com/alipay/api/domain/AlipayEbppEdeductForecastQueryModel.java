@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppEdeductForecastQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7243994977826765453L;
+	private static final long serialVersionUID = 1678997946495167764L;
 
 	/**
 	 * 该扣款批次总金额

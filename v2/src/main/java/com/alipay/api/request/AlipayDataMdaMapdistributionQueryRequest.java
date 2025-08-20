@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.mda.mapdistribution.query request
  * 
  * @author auto create
- * @since 1.0, 2024-08-08 22:22:18
+ * @since 1.0, 2025-08-14 11:02:36
  */
 public class AlipayDataMdaMapdistributionQueryRequest implements AlipayRequest<AlipayDataMdaMapdistributionQueryResponse> {
 

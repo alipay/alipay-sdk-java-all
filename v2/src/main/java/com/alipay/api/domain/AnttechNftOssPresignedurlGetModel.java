@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生成预签名URL
  *
  * @author auto create
- * @since 1.0, 2025-07-29 10:03:07
+ * @since 1.0, 2025-08-14 17:28:13
  */
 public class AnttechNftOssPresignedurlGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6527745389218166777L;
+	private static final long serialVersionUID = 8222318752347641819L;
 
 	/**
 	 * 上传文件数据的业务日期

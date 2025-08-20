@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.merchantcard.deduction.sync response.
  * 
  * @author auto create
- * @since 1.0, 2025-01-10 11:27:22
+ * @since 1.0, 2025-08-18 15:42:35
  */
 public class AlipayCommerceMerchantcardDeductionSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3325247859327342999L;
+	private static final long serialVersionUID = 3719429824442914621L;
 
 	/** 
 	 * 数据同步响应模型，返回数据同步任务处理的结果

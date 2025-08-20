@@ -9,17 +9,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分账计划明细模型
  *
  * @author auto create
- * @since 1.0, 2025-06-04 13:51:41
+ * @since 1.0, 2025-08-18 10:26:30
  */
 public class RoyaltyInfoRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 7366326637783576415L;
+	private static final long serialVersionUID = 7844896547336595564L;
 
 	/**
-	 * 买断分账金，人明币，单位：元
+	 * 买断分账金，人民币，单位：元
 	 */
 	@ApiField("buy_out_royalty")
 	private String buyOutRoyalty;
+
+	/**
+	 * 买断分账利息，人民币，单位：元
+	 */
+	@ApiField("buy_out_royalty_interest_price")
+	private String buyOutRoyaltyInterestPrice;
+
+	/**
+	 * 买断分账本金，人民币，单位：元
+	 */
+	@ApiField("buy_out_royalty_principal_price")
+	private String buyOutRoyaltyPrincipalPrice;
 
 	/**
 	 * 预期分账时间
@@ -74,6 +86,20 @@ public class RoyaltyInfoRequest extends AlipayObject {
 	}
 	public void setBuyOutRoyalty(String buyOutRoyalty) {
 		this.buyOutRoyalty = buyOutRoyalty;
+	}
+
+	public String getBuyOutRoyaltyInterestPrice() {
+		return this.buyOutRoyaltyInterestPrice;
+	}
+	public void setBuyOutRoyaltyInterestPrice(String buyOutRoyaltyInterestPrice) {
+		this.buyOutRoyaltyInterestPrice = buyOutRoyaltyInterestPrice;
+	}
+
+	public String getBuyOutRoyaltyPrincipalPrice() {
+		return this.buyOutRoyaltyPrincipalPrice;
+	}
+	public void setBuyOutRoyaltyPrincipalPrice(String buyOutRoyaltyPrincipalPrice) {
+		this.buyOutRoyaltyPrincipalPrice = buyOutRoyaltyPrincipalPrice;
 	}
 
 	public Date getExpectRoyaltyTime() {

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fincore.compliance.customs.info.create request
  * 
  * @author auto create
- * @since 1.0, 2024-03-26 21:39:37
+ * @since 1.0, 2025-08-14 10:47:36
  */
 public class AlipayFincoreComplianceCustomsInfoCreateRequest implements AlipayRequest<AlipayFincoreComplianceCustomsInfoCreateResponse> {
 

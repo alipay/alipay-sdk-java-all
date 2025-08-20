@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻企业信用报告查询接口
  *
  * @author auto create
- * @since 1.0, 2025-07-02 16:55:14
+ * @since 1.0, 2025-08-18 11:25:30
  */
 public class ZhimaCreditEpReportQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3868354444982944561L;
+	private static final long serialVersionUID = 4516223312971149211L;
 
 	/**
 	 * 企信生成的报告订单号，用于唯一查询

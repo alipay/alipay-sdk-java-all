@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ssdata.dataservice.risk.audio.set response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-05 15:50:08
+ * @since 1.0, 2025-08-13 14:42:42
  */
 public class SsdataDataserviceRiskAudioSetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7271878766237131618L;
+	private static final long serialVersionUID = 7383996155858555336L;
 
 	/** 
 	 * 查询出的关键词数量

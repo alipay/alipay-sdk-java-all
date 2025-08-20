@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发起对话
  *
  * @author auto create
- * @since 1.0, 2025-08-01 00:22:34
+ * @since 1.0, 2025-08-15 16:37:35
  */
 public class AlipayCloudCloudpromoChatCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5196563256478119573L;
+	private static final long serialVersionUID = 1872347436842871354L;
 
 	/**
 	 * 要进行会话聊天的智能体ID。
@@ -42,6 +42,12 @@ public class AlipayCloudCloudpromoChatCreateModel extends AlipayObject {
 	 */
 	@ApiField("extra_params")
 	private ChatExtraParams extraParams;
+
+	/**
+	 * 用于验证客户端身份的API-Key。你可以在百宝箱中生成API-Key，详细信息可参考<a href="https://alipaytbox.yuque.com/sxs0ba/huntb8/hhmpxnxaoxaulyil">链接</a>。
+	 */
+	@ApiField("inc_access_id")
+	private String incAccessId;
 
 	/**
 	 * 压测标识。默认为 false。
@@ -100,6 +106,13 @@ public class AlipayCloudCloudpromoChatCreateModel extends AlipayObject {
 	}
 	public void setExtraParams(ChatExtraParams extraParams) {
 		this.extraParams = extraParams;
+	}
+
+	public String getIncAccessId() {
+		return this.incAccessId;
+	}
+	public void setIncAccessId(String incAccessId) {
+		this.incAccessId = incAccessId;
 	}
 
 	public Boolean getLoadTest() {

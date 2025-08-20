@@ -11,11 +11,11 @@ chat 事件中，data 为 Chat Object。
 message、audio 事件中，data 为 Message Object。
  *
  * @author auto create
- * @since 1.0, 2025-08-01 00:22:34
+ * @since 1.0, 2025-08-15 16:37:35
  */
 public class ChatResponseData extends AlipayObject {
 
-	private static final long serialVersionUID = 1174731659173841176L;
+	private static final long serialVersionUID = 4534923355472457163L;
 
 	/**
 	 * 要进行会话聊天的智能体ID。

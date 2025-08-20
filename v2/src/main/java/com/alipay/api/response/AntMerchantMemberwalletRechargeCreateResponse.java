@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.memberwallet.recharge.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-01-20 15:56:11
+ * @since 1.0, 2025-08-13 15:22:41
  */
 public class AntMerchantMemberwalletRechargeCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4148719659282663368L;
+	private static final long serialVersionUID = 5686321934542554878L;
 
 	/** 
 	 * 充值订单ID

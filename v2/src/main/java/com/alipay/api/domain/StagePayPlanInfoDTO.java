@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class StagePayPlanInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3246733869192666198L;
+	private static final long serialVersionUID = 3356958354662853692L;
 
 	/**
 	 * 计划买断金额，支持随时买断场景；回传当期买断金，当期买断金=当期买断价-截止到当期已支付租金；单位：元，精确到小数点后两位；

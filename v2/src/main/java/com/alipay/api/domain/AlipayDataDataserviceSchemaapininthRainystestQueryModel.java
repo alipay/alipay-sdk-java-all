@@ -6,11 +6,11 @@ import com.alipay.api.AlipayObject;
  * Schema模型的测试接口09
  *
  * @author auto create
- * @since 1.0, 2025-08-07 11:32:37
+ * @since 1.0, 2025-08-18 23:02:52
  */
 public class AlipayDataDataserviceSchemaapininthRainystestQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2417353975174624215L;
+	private static final long serialVersionUID = 6737927348121812717L;
 
 	
 

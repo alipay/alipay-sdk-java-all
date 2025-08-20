@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.provider.monitor.log.sync request
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 17:41:19
+ * @since 1.0, 2025-08-18 14:37:35
  */
 public class AlipayOfflineProviderMonitorLogSyncRequest implements AlipayRequest<AlipayOfflineProviderMonitorLogSyncResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 清空购物车
  *
  * @author auto create
- * @since 1.0, 2025-04-08 16:22:23
+ * @since 1.0, 2025-08-20 14:24:06
  */
 public class AlipayOfflineSmddCustomerCartClearModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8842314748971299499L;
+	private static final long serialVersionUID = 8687218569417382918L;
 
 	/**
 	 * 买家唯一标识

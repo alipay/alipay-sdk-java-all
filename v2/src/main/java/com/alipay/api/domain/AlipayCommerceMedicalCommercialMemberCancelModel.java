@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗大健康用户兑换资格取消接口
  *
  * @author auto create
- * @since 1.0, 2025-08-08 17:34:51
+ * @since 1.0, 2025-08-19 15:21:11
  */
 public class AlipayCommerceMedicalCommercialMemberCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6518795682234743677L;
+	private static final long serialVersionUID = 3688648112734931365L;
 
 	/**
 	 * 会员的会员卡号，字符串类型

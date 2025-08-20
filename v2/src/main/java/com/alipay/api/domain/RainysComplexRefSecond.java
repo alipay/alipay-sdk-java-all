@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 弱引用
  *
  * @author auto create
- * @since 1.0, 2025-03-07 11:00:02
+ * @since 1.0, 2025-08-18 23:02:18
  */
 public class RainysComplexRefSecond extends AlipayObject {
 
-	private static final long serialVersionUID = 8394678986623833937L;
+	private static final long serialVersionUID = 3253657293935468352L;
 
 	/**
 	 * null

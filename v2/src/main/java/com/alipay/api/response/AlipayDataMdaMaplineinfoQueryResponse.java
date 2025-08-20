@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.mda.maplineinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-08 22:10:49
+ * @since 1.0, 2025-08-14 11:02:36
  */
 public class AlipayDataMdaMaplineinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1226962933119837581L;
+	private static final long serialVersionUID = 7649115453921762265L;
 
 	/** 
 	 * 火炬传递飞线图

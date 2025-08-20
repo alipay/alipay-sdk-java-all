@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DtBankStagedThresholdInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4722731858332299394L;
+	private static final long serialVersionUID = 2261319123466138346L;
 
 	/**
 	 * 满足优惠的订单金额阈值最大值，单位为分

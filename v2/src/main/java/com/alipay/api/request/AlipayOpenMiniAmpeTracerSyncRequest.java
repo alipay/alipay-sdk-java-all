@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.ampe.tracer.sync request
  * 
  * @author auto create
- * @since 1.0, 2024-09-11 16:08:22
+ * @since 1.0, 2025-08-13 18:07:41
  */
 public class AlipayOpenMiniAmpeTracerSyncRequest implements AlipayRequest<AlipayOpenMiniAmpeTracerSyncResponse> {
 

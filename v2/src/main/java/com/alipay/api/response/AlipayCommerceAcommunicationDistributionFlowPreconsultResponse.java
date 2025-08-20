@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.acommunication.distribution.flow.preconsult response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-15 17:02:35
+ * @since 1.0, 2025-08-20 14:22:37
  */
 public class AlipayCommerceAcommunicationDistributionFlowPreconsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6869911186313326634L;
+	private static final long serialVersionUID = 5123257582151912289L;
 
 	
 

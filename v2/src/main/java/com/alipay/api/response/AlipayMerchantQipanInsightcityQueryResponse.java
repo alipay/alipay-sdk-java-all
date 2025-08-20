@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.qipan.insightcity.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-19 15:39:25
+ * @since 1.0, 2025-08-14 11:12:37
  */
 public class AlipayMerchantQipanInsightcityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2193872557825448252L;
+	private static final long serialVersionUID = 6673247654199742253L;
 
 	/** 
 	 * 画像值中去除未知和其他后的总量占当前画像总量的比例

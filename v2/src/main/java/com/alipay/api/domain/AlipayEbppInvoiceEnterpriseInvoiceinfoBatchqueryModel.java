@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业发票分页查询
  *
  * @author auto create
- * @since 1.0, 2025-07-29 13:06:34
+ * @since 1.0, 2025-08-15 11:00:30
  */
 public class AlipayEbppInvoiceEnterpriseInvoiceinfoBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5145395512653815834L;
+	private static final long serialVersionUID = 5875331425798214886L;
 
 	/**
 	 * 发票日期查询结束时间

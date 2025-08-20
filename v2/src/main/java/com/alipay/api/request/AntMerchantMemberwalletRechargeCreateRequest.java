@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.memberwallet.recharge.create request
  * 
  * @author auto create
- * @since 1.0, 2025-01-20 15:56:11
+ * @since 1.0, 2025-08-13 15:22:41
  */
 public class AntMerchantMemberwalletRechargeCreateRequest implements AlipayRequest<AntMerchantMemberwalletRechargeCreateResponse> {
 

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.parking.agreement.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-28 00:37:35
+ * @since 1.0, 2025-08-14 11:52:36
  */
 public class AlipayEcoMycarParkingAgreementQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7223919921613753589L;
+	private static final long serialVersionUID = 6363191513192763158L;
 
 	/** 
 	 * 车牌垫资状态:

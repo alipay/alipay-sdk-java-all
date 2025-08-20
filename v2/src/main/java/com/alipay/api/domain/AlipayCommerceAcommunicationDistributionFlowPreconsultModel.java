@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 流量订单预校验
  *
  * @author auto create
- * @since 1.0, 2025-07-15 16:59:26
+ * @since 1.0, 2025-08-20 14:20:34
  */
 public class AlipayCommerceAcommunicationDistributionFlowPreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2694655859736949852L;
+	private static final long serialVersionUID = 3391189972386484594L;
 
 	/**
 	 * 支付宝的userId
 	 */
 	@ApiField("alipay_user_id")
 	private String alipayUserId;
+
+	/**
+	 * 加密后手机号
+	 */
+	@ApiField("encrypted_mobile")
+	private String encryptedMobile;
 
 	/**
 	 * 商品id
@@ -48,6 +54,13 @@ public class AlipayCommerceAcommunicationDistributionFlowPreconsultModel extends
 	}
 	public void setAlipayUserId(String alipayUserId) {
 		this.alipayUserId = alipayUserId;
+	}
+
+	public String getEncryptedMobile() {
+		return this.encryptedMobile;
+	}
+	public void setEncryptedMobile(String encryptedMobile) {
+		this.encryptedMobile = encryptedMobile;
 	}
 
 	public String getItemId() {

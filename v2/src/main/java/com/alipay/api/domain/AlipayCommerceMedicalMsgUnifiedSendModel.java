@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗行业就医就医消息统一发送
  *
  * @author auto create
- * @since 1.0, 2025-08-04 16:34:41
+ * @since 1.0, 2025-08-18 14:20:32
  */
 public class AlipayCommerceMedicalMsgUnifiedSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3267143999823254895L;
+	private static final long serialVersionUID = 4811461154577563399L;
 
 	/**
 	 * 支付宝openid

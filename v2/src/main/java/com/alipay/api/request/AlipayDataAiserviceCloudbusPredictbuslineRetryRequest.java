@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.aiservice.cloudbus.predictbusline.retry request
  * 
  * @author auto create
- * @since 1.0, 2025-04-27 13:25:53
+ * @since 1.0, 2025-08-13 14:57:44
  */
 public class AlipayDataAiserviceCloudbusPredictbuslineRetryRequest implements AlipayRequest<AlipayDataAiserviceCloudbusPredictbuslineRetryResponse> {
 

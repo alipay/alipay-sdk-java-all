@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * V1.3新增的
  *
  * @author auto create
- * @since 1.0, 2024-12-03 15:07:22
+ * @since 1.0, 2025-08-18 23:02:31
  */
 public class RainyComplexTypeRefWeakSecond extends AlipayObject {
 
-	private static final long serialVersionUID = 8481946714473175837L;
+	private static final long serialVersionUID = 6485458859459676423L;
 
 	/**
 	 * boolean

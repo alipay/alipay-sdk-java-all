@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.appcontent.function.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-01-03 11:02:34
+ * @since 1.0, 2025-08-13 15:27:44
  */
 public class AlipayOpenAppAppcontentFunctionQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1441137387625591366L;
+	private static final long serialVersionUID = 1618136821467744669L;
 
 	/** 
 	 * 服务区域编码；默认值为1，表示全国范围；编码参考高德地图JS API相关下载中的行政区编码与城市编码表：https://lbs.amap.com/api/javascript-api/download/

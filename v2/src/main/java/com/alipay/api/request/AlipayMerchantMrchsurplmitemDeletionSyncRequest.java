@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.mrchsurplmitem.deletion.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 05:34:33
+ * @since 1.0, 2025-08-18 15:02:36
  */
 public class AlipayMerchantMrchsurplmitemDeletionSyncRequest implements AlipayRequest<AlipayMerchantMrchsurplmitemDeletionSyncResponse> {
 

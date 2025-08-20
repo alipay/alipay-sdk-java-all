@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 渠道商家直接开通会员
  *
  * @author auto create
- * @since 1.0, 2025-07-14 14:57:54
+ * @since 1.0, 2025-08-19 14:21:38
  */
 public class AlipayCommerceMedicalExchangeRedirectVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6675833493682384677L;
+	private static final long serialVersionUID = 3257926168576438595L;
 
 	/**
 	 * 会员卡权益ID
@@ -30,6 +30,12 @@ public class AlipayCommerceMedicalExchangeRedirectVerifyModel extends AlipayObje
 	 */
 	@ApiField("phone")
 	private String phone;
+
+	/**
+	 * true 是续费 false是非续费
+	 */
+	@ApiField("renew")
+	private Boolean renew;
 
 	public String getBenefitId() {
 		return this.benefitId;
@@ -50,6 +56,13 @@ public class AlipayCommerceMedicalExchangeRedirectVerifyModel extends AlipayObje
 	}
 	public void setPhone(String phone) {
 		this.phone = phone;
+	}
+
+	public Boolean getRenew() {
+		return this.renew;
+	}
+	public void setRenew(Boolean renew) {
+		this.renew = renew;
 	}
 
 }

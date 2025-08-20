@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.dataservice.democreat.rainystest.query request
  * 
  * @author auto create
- * @since 1.0, 2025-01-15 11:07:22
+ * @since 1.0, 2025-08-18 23:02:32
  */
 public class AlipayDataDataserviceDemocreatRainystestQueryRequest implements AlipayRequest<AlipayDataDataserviceDemocreatRainystestQueryResponse> {
 

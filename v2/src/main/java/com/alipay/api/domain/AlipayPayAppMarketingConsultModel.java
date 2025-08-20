@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户前置营销内容咨询接口
  *
  * @author auto create
- * @since 1.0, 2025-01-03 15:35:53
+ * @since 1.0, 2025-08-15 16:00:34
  */
 public class AlipayPayAppMarketingConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8275899293968737318L;
+	private static final long serialVersionUID = 6737865324743988129L;
 
 	/**
 	 * 业务场景，用于区分商户具体的咨场景，示例：ORDER_PAGE：下单页营销咨询；其他新场景接入时需与支付宝协商约定
@@ -28,6 +28,18 @@ public class AlipayPayAppMarketingConsultModel extends AlipayObject {
 	 */
 	@ApiField("blind_mobile")
 	private String blindMobile;
+
+	/**
+	 * 身份证号
+	 */
+	@ApiField("cert_no")
+	private String certNo;
+
+	/**
+	 * 身份证类别
+	 */
+	@ApiField("cert_type")
+	private String certType;
 
 	/**
 	 * 混淆后的手机号MD5值列表；
@@ -165,6 +177,20 @@ public class AlipayPayAppMarketingConsultModel extends AlipayObject {
 	}
 	public void setBlindMobile(String blindMobile) {
 		this.blindMobile = blindMobile;
+	}
+
+	public String getCertNo() {
+		return this.certNo;
+	}
+	public void setCertNo(String certNo) {
+		this.certNo = certNo;
+	}
+
+	public String getCertType() {
+		return this.certType;
+	}
+	public void setCertType(String certType) {
+		this.certType = certType;
 	}
 
 	public List<String> getConfusedMobileList() {

@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class FlowItemInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5258386963318956336L;
+	private static final long serialVersionUID = 4467132798287691916L;
 
 	/**
 	 * 权益列表

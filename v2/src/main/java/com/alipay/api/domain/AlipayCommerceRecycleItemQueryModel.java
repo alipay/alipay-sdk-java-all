@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 回收商品查询服务
  *
  * @author auto create
- * @since 1.0, 2025-04-13 19:42:26
+ * @since 1.0, 2025-08-20 11:00:58
  */
 public class AlipayCommerceRecycleItemQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1844915526965827744L;
+	private static final long serialVersionUID = 1864592627676314113L;
 
 	/**
 	 * 产品code，用来描述商品的SPU_ID

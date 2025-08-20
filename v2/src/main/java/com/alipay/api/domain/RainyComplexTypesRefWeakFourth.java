@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * TEST DATA
  *
  * @author auto create
- * @since 1.0, 2025-04-02 17:57:30
+ * @since 1.0, 2025-08-18 23:02:19
  */
 public class RainyComplexTypesRefWeakFourth extends AlipayObject {
 
-	private static final long serialVersionUID = 8848456258679527794L;
+	private static final long serialVersionUID = 1636526673558427432L;
 
 	/**
 	 * 测试数据，无需关注

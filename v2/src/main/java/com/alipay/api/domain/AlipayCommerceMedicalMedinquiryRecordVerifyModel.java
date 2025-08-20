@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询预问诊病例是否存在
  *
  * @author auto create
- * @since 1.0, 2025-03-28 15:53:12
+ * @since 1.0, 2025-08-13 10:48:28
  */
 public class AlipayCommerceMedicalMedinquiryRecordVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8524743697843532538L;
+	private static final long serialVersionUID = 3158349721456552398L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识

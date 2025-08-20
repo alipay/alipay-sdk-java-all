@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.merchantcard.order.sync request
  * 
  * @author auto create
- * @since 1.0, 2025-04-07 19:52:27
+ * @since 1.0, 2025-08-18 15:42:35
  */
 public class AlipayCommerceMerchantcardOrderSyncRequest implements AlipayRequest<AlipayCommerceMerchantcardOrderSyncResponse> {
 

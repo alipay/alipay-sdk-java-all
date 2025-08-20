@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFinanceQuotationProtocolAuthorizeUnsubscribeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8116255937141578124L;
+	private static final long serialVersionUID = 4559529642266569525L;
 
 	/** 
 	 * 协议最终是否订阅的结果

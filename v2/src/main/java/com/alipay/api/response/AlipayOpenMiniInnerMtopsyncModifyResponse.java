@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.inner.mtopsync.modify response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 20:52:38
+ * @since 1.0, 2025-08-20 17:47:36
  */
 public class AlipayOpenMiniInnerMtopsyncModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8787668834481346169L;
+	private static final long serialVersionUID = 3358114111282969861L;
 
 	/** 
 	 * 业务调用成功code

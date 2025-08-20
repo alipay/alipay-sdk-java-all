@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票流水信息
  *
  * @author auto create
- * @since 1.0, 2025-07-29 13:06:34
+ * @since 1.0, 2025-08-15 11:00:29
  */
 public class EnterpriseInvoiceInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4331386916437531744L;
+	private static final long serialVersionUID = 3568628492291138968L;
 
 	/**
 	 * 防伪码
@@ -34,6 +34,12 @@ public class EnterpriseInvoiceInfoDTO extends AlipayObject {
 	 */
 	@ApiField("checker")
 	private String checker;
+
+	/**
+	 * 发票归集来源
+	 */
+	@ApiField("collect_source")
+	private String collectSource;
 
 	/**
 	 * 员工ID
@@ -254,6 +260,13 @@ public class EnterpriseInvoiceInfoDTO extends AlipayObject {
 	}
 	public void setChecker(String checker) {
 		this.checker = checker;
+	}
+
+	public String getCollectSource() {
+		return this.collectSource;
+	}
+	public void setCollectSource(String collectSource) {
+		this.collectSource = collectSource;
 	}
 
 	public String getEmployeeId() {

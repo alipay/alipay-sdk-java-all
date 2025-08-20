@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: koubei.quality.testxxx.batchcreate response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-01 23:05:06
+ * @since 1.0, 2025-08-14 11:02:37
  */
 public class KoubeiQualityTestxxxBatchcreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8313194994812425685L;
+	private static final long serialVersionUID = 4327796765345999216L;
 
 	/** 
 	 * 1

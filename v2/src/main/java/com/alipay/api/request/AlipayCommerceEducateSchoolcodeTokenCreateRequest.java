@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.schoolcode.token.create request
  * 
  * @author auto create
- * @since 1.0, 2025-03-20 19:25:36
+ * @since 1.0, 2025-08-13 15:12:42
  */
 public class AlipayCommerceEducateSchoolcodeTokenCreateRequest implements AlipayRequest<AlipayCommerceEducateSchoolcodeTokenCreateResponse> {
 

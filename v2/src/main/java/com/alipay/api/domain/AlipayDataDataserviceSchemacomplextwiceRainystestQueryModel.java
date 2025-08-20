@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 新模型测试校验复杂类型02
  *
  * @author auto create
- * @since 1.0, 2024-12-03 15:07:22
+ * @since 1.0, 2025-08-18 23:02:31
  */
 public class AlipayDataDataserviceSchemacomplextwiceRainystestQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1743226957917173237L;
+	private static final long serialVersionUID = 2694858861457853314L;
 
 	/**
 	 * 强引用复杂类型

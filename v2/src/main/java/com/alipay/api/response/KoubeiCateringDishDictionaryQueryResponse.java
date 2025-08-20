@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiCateringDishDictionaryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7547326383351428222L;
+	private static final long serialVersionUID = 1587685133316512453L;
 
 	/** 
 	 * 返回的字典数据列表

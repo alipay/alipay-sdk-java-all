@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.notify.modify request
  * 
  * @author auto create
- * @since 1.0, 2024-08-08 22:13:36
+ * @since 1.0, 2025-08-18 13:02:36
  */
 public class AlipayOpenAppNotifyModifyRequest implements AlipayRequest<AlipayOpenAppNotifyModifyResponse> {
 

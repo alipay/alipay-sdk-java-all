@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.unitedopencoupon.prizechoose.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-07 13:17:01
+ * @since 1.0, 2025-08-13 14:27:42
  */
 public class AlipayMarketingCampaignUnitedopencouponPrizechooseQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5316327327523432915L;
+	private static final long serialVersionUID = 1698679381891644477L;
 
 	/** 
 	 * 是否绑定手机号。（只有活动规则上配置要求绑定手机号且当前用户未绑定手机号情况下该字段才会返回false，其余情况下不返回或者返回为空（null）

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniInnerversionAuditCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3248446144614697296L;
+	private static final long serialVersionUID = 8882356467593777766L;
 
 	/**
 	 * 业务来源

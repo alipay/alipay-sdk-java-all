@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.daf.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-08 22:14:27
+ * @since 1.0, 2025-08-18 12:57:36
  */
 public class AlipayOpenDafBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3228318556583559788L;
+	private static final long serialVersionUID = 7197493781231331427L;
 
 	
 

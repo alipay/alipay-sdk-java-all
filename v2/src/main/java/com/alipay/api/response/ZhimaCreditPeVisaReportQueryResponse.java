@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.pe.visa.report.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-07 19:08:36
+ * @since 1.0, 2025-08-18 11:12:26
  */
 public class ZhimaCreditPeVisaReportQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4189958367868324748L;
+	private static final long serialVersionUID = 1254651966937288669L;
 
 	/** 
 	 * 用户签证报告申请状态，枚举字段：

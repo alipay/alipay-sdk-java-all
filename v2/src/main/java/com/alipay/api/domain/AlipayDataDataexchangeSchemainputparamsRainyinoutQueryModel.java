@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * Schema模型入参测试接口01
  *
  * @author auto create
- * @since 1.0, 2024-11-14 19:15:01
+ * @since 1.0, 2025-08-18 23:03:01
  */
 public class AlipayDataDataexchangeSchemainputparamsRainyinoutQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4553181318543562919L;
+	private static final long serialVersionUID = 5124915969466933481L;
 
 	/**
 	 * 中文描述

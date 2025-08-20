@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AntProdpaasGrmcoreSrInvalidModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1332212666978517156L;
+	private static final long serialVersionUID = 6123336875391822344L;
 
 	/**
 	 * 环境标识，送“prod”

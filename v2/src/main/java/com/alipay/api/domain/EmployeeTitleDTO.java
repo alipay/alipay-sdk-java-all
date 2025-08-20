@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 员工抬头关系信息
  *
  * @author auto create
- * @since 1.0, 2025-04-01 15:52:19
+ * @since 1.0, 2025-08-15 19:24:29
  */
 public class EmployeeTitleDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6886317649332954399L;
+	private static final long serialVersionUID = 7597191885265557849L;
 
 	/**
 	 * 共同账户id,与enterprise_id两者必填其一
@@ -48,6 +48,12 @@ public class EmployeeTitleDTO extends AlipayObject {
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/**
+	 * 税号
+	 */
+	@ApiField("tax_register_no")
+	private String taxRegisterNo;
 
 	/**
 	 * 抬头id
@@ -107,6 +113,13 @@ public class EmployeeTitleDTO extends AlipayObject {
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public String getTaxRegisterNo() {
+		return this.taxRegisterNo;
+	}
+	public void setTaxRegisterNo(String taxRegisterNo) {
+		this.taxRegisterNo = taxRegisterNo;
 	}
 
 	public String getTitleId() {

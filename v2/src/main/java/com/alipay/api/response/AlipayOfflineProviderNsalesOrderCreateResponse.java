@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.provider.nsales.order.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-01 14:57:29
+ * @since 1.0, 2025-08-20 12:01:38
  */
 public class AlipayOfflineProviderNsalesOrderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1281158513461156721L;
+	private static final long serialVersionUID = 6467723733285235625L;
 
 	/** 
 	 * 绝对过期时间

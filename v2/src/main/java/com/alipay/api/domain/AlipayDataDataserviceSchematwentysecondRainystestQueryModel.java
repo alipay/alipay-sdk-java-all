@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 新模型接口测试22_N选一与openid映射
  *
  * @author auto create
- * @since 1.0, 2025-04-02 17:57:30
+ * @since 1.0, 2025-08-18 23:02:19
  */
 public class AlipayDataDataserviceSchematwentysecondRainystestQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1792223377786916329L;
+	private static final long serialVersionUID = 6623384184973519117L;
 
 	/**
 	 * 测试数据，无需关注

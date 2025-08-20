@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.scene.photoremote.apply response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-29 15:49:26
+ * @since 1.0, 2025-08-13 14:47:41
  */
 public class AlipayCommerceEducateScenePhotoremoteApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3336584186779353821L;
+	private static final long serialVersionUID = 4681818128255796185L;
 
 	
 

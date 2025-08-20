@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.auto.autoinsprod.common.notify response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-19 17:15:49
+ * @since 1.0, 2025-08-13 14:47:45
  */
 public class AlipayInsAutoAutoinsprodCommonNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4683565372193713635L;
+	private static final long serialVersionUID = 2654566798361686895L;
 
 	/** 
 	 * 具体内容按照业务类型对应的key值传输

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.campaign.cash.status.modify request
  * 
  * @author auto create
- * @since 1.0, 2025-04-21 10:28:47
+ * @since 1.0, 2025-08-13 15:02:40
  */
 public class AlipayMarketingCampaignCashStatusModifyRequest implements AlipayRequest<AlipayMarketingCampaignCashStatusModifyResponse> {
 

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.boss.prod.antlegalchain.textnotary.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-05 13:35:10
+ * @since 1.0, 2025-08-13 16:07:42
  */
 public class AlipayBossProdAntlegalchainTextnotaryCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2172263452288586215L;
+	private static final long serialVersionUID = 1394978786379848972L;
 
 	/** 
 	 * 通过app_code和business_unique_id确定唯一的id，使得上链串行,无返回则说明上链失败，返回只能说明初始化存证成功，不表示上链成功

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.hqteess.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-06 16:22:41
+ * @since 1.0, 2025-08-18 23:02:11
  */
 public class AlipayDataHqteessQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5871147281369998825L;
+	private static final long serialVersionUID = 3671793713664963936L;
 
 	
 

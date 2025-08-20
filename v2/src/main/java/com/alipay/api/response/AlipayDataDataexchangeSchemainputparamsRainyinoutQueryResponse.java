@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataexchange.schemainputparams.rainyinout.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-14 19:15:01
+ * @since 1.0, 2025-08-18 23:03:01
  */
 public class AlipayDataDataexchangeSchemainputparamsRainyinoutQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3824984441183339598L;
+	private static final long serialVersionUID = 1771612169948764447L;
 
 	/** 
 	 * true

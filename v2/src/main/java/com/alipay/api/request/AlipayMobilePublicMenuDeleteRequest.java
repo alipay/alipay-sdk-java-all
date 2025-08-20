@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.mobile.public.menu.delete request
  * 
  * @author auto create
- * @since 1.0, 2024-09-11 12:03:38
+ * @since 1.0, 2025-08-13 18:27:42
  */
 public class AlipayMobilePublicMenuDeleteRequest implements AlipayRequest<AlipayMobilePublicMenuDeleteResponse> {
 

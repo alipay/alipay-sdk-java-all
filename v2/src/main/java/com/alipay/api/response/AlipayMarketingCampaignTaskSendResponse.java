@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.campaign.task.send response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-21 10:27:39
+ * @since 1.0, 2025-08-13 15:02:42
  */
 public class AlipayMarketingCampaignTaskSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2319358375628525442L;
+	private static final long serialVersionUID = 4221913288414162288L;
 
 	/** 
 	 * 任务基本属性信息

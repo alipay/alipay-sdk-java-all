@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pay.codec.share.token.create request
  * 
  * @author auto create
- * @since 1.0, 2025-08-07 12:58:39
+ * @since 1.0, 2025-08-13 14:32:41
  */
 public class AlipayPayCodecShareTokenCreateRequest implements AlipayRequest<AlipayPayCodecShareTokenCreateResponse> {
 

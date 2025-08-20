@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.iotmbs.facedb.delete request
  * 
  * @author auto create
- * @since 1.0, 2025-01-02 16:56:05
+ * @since 1.0, 2025-08-13 15:32:40
  */
 public class AlipayOpenIotmbsFacedbDeleteRequest implements AlipayRequest<AlipayOpenIotmbsFacedbDeleteResponse> {
 

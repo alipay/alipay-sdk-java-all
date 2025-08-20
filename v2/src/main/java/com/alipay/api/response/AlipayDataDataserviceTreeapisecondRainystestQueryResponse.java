@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.treeapisecond.rainystest.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-02-10 14:47:24
+ * @since 1.0, 2025-08-18 23:02:17
  */
 public class AlipayDataDataserviceTreeapisecondRainystestQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6427972399572458159L;
+	private static final long serialVersionUID = 6564845627715474719L;
 
 	
 

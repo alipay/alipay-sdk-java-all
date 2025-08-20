@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LocationInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1862656958628147427L;
+	private static final long serialVersionUID = 1471517189155135132L;
 
 	/**
 	 * 用户所处的经度

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: antfortune.content.community.segment.realtime.save request
  * 
  * @author auto create
- * @since 1.0, 2024-11-13 11:46:58
+ * @since 1.0, 2025-08-13 15:57:41
  */
 public class AntfortuneContentCommunitySegmentRealtimeSaveRequest implements AlipayRequest<AntfortuneContentCommunitySegmentRealtimeSaveResponse> {
 

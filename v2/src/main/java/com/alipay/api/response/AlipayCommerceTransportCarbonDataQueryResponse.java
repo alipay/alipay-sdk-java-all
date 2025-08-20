@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.carbon.data.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-25 11:03:51
+ * @since 1.0, 2025-08-13 16:22:42
  */
 public class AlipayCommerceTransportCarbonDataQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1244162238128847464L;
+	private static final long serialVersionUID = 6157587341966278247L;
 
 	/** 
 	 * 返回碳积分记录数量

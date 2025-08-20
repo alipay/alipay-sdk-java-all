@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.financialnet.auth.yep.model.consult response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-28 00:37:52
+ * @since 1.0, 2025-08-14 11:17:36
  */
 public class AlipayFinancialnetAuthYepModelConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3429737311636882359L;
+	private static final long serialVersionUID = 7499294573546238387L;
 
 	/** 
 	 * 业务模式

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询对象
  *
  * @author auto create
- * @since 1.0, 2024-12-06 11:27:20
+ * @since 1.0, 2025-08-18 23:02:13
  */
 public class HeXiQueryVo extends AlipayObject {
 
-	private static final long serialVersionUID = 5464747766854899312L;
+	private static final long serialVersionUID = 5333682187555318866L;
 
 	/**
 	 * db模式

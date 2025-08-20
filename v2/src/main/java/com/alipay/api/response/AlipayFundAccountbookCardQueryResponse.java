@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.accountbook.card.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-15 10:34:59
+ * @since 1.0, 2025-08-13 15:57:41
  */
 public class AlipayFundAccountbookCardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3541183633151732132L;
+	private static final long serialVersionUID = 1472114494169465956L;
 
 	/** 
 	 * 记账本外卡卡号

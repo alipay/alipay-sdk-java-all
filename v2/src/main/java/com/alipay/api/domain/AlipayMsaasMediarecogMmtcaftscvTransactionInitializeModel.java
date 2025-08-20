@@ -10,14 +10,22 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 多媒体视觉付交易初始化接口
  *
  * @author auto create
- * @since 1.0, 2024-11-08 11:22:56
+ * @since 1.0, 2025-08-14 13:59:25
  */
 public class AlipayMsaasMediarecogMmtcaftscvTransactionInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8162724519392588771L;
+	private static final long serialVersionUID = 1462322669116977761L;
 
 	/**
-	 * 货柜类型，STATIC-静态柜，DYNAMIC-动态重力柜，PURE_DYNAMIC-动态视觉货柜
+	 * 该参数用于明确指定货柜 air 是否开启识别。
+
+非air 柜默认开启识别。
+	 */
+	@ApiField("air_identify")
+	private Boolean airIdentify;
+
+	/**
+	 * 货柜类型，STATIC-静态柜，DYNAMIC-动态重力柜，PURE_DYNAMIC-动态视觉货柜，STATIC_STATE_WEIGHT-静态重力柜
 	 */
 	@ApiField("device_identify_type")
 	private String deviceIdentifyType;
@@ -83,6 +91,13 @@ public class AlipayMsaasMediarecogMmtcaftscvTransactionInitializeModel extends A
 	@ApiListField("weight_template")
 	@ApiField("weight_floor")
 	private List<WeightFloor> weightTemplate;
+
+	public Boolean getAirIdentify() {
+		return this.airIdentify;
+	}
+	public void setAirIdentify(Boolean airIdentify) {
+		this.airIdentify = airIdentify;
+	}
 
 	public String getDeviceIdentifyType() {
 		return this.deviceIdentifyType;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 合约通用查询接口
  *
  * @author auto create
- * @since 1.0, 2016-09-09 20:38:43
+ * @since 1.0, 2025-08-18 22:59:13
  */
 public class AntProdpaasArrangementCommonQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1848998962498781735L;
+	private static final long serialVersionUID = 7641142461155797957L;
 
 	/**
 	 * 合约基本信息选择器，根据产品编码，合约状态编码来过滤合约

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.finance.quotation.findata.send response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-11 16:29:22
+ * @since 1.0, 2025-08-13 15:07:39
  */
 public class AlipayFinanceQuotationFindataSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3589597224362389178L;
+	private static final long serialVersionUID = 6741693451229727737L;
 
 	/** 
 	 * 是否投递成功

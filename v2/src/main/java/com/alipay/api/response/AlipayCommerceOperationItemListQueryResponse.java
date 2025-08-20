@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.item.list.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-08 11:38:20
+ * @since 1.0, 2025-08-13 16:47:41
  */
 public class AlipayCommerceOperationItemListQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7754496288664814524L;
+	private static final long serialVersionUID = 6282556612196313816L;
 
 	/** 
 	 * 奖品列表

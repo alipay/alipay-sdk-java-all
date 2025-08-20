@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.gamepaycoin.tradeorder.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-12 16:42:35
+ * @since 1.0, 2025-08-13 18:02:36
  */
 public class AlipayUserGamepaycoinTradeorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4317921972349459587L;
+	private static final long serialVersionUID = 7884768644247835349L;
 
 	/** 
 	 * 交易订单虚拟币数量(个)

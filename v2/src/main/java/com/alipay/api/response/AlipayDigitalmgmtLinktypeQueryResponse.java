@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.digitalmgmt.linktype.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 01:48:46
+ * @since 1.0, 2025-08-18 14:57:35
  */
 public class AlipayDigitalmgmtLinktypeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1287696931274841359L;
+	private static final long serialVersionUID = 4636181121642677839L;
 
 	/** 
 	 * 环节类型信息列表

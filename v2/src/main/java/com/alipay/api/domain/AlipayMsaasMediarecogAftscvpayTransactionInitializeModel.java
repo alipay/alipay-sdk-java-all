@@ -10,11 +10,19 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 多媒体afts平台视觉付交易初始化接口
  *
  * @author auto create
- * @since 1.0, 2024-11-08 11:22:55
+ * @since 1.0, 2025-08-14 13:52:12
  */
 public class AlipayMsaasMediarecogAftscvpayTransactionInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8712185439521554586L;
+	private static final long serialVersionUID = 4121851624872371189L;
+
+	/**
+	 * 仅明确指定该标志为 true 时开启识别，否则不开启识别，仅货柜 air 使用。
+
+其他类型货柜（静态柜、货柜Lite）默认开始识别。
+	 */
+	@ApiField("air_identify")
+	private Boolean airIdentify;
 
 	/**
 	 * 货柜类型
@@ -101,6 +109,13 @@ public class AlipayMsaasMediarecogAftscvpayTransactionInitializeModel extends Al
 	@ApiListField("weight_template")
 	@ApiField("weight_floor")
 	private List<WeightFloor> weightTemplate;
+
+	public Boolean getAirIdentify() {
+		return this.airIdentify;
+	}
+	public void setAirIdentify(Boolean airIdentify) {
+		this.airIdentify = airIdentify;
+	}
 
 	public String getDeviceIdentifyType() {
 		return this.deviceIdentifyType;

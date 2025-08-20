@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户资金代扣签约申请
  *
  * @author auto create
- * @since 1.0, 2023-06-09 11:27:24
+ * @since 1.0, 2025-08-20 16:43:02
  */
 public class AnttechBlockchainDefinFwhSignApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1754692433523475525L;
+	private static final long serialVersionUID = 7192377663932669157L;
 
 	/**
 	 * 授权有效期，单位为天；不填为永久有效

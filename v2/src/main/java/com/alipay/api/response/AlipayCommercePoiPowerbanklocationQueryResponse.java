@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.poi.powerbanklocation.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-29 10:48:30
+ * @since 1.0, 2025-08-13 14:57:39
  */
 public class AlipayCommercePoiPowerbanklocationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7586282151451245994L;
+	private static final long serialVersionUID = 1362385181641596824L;
 
 	/** 
 	 * 充电宝位置

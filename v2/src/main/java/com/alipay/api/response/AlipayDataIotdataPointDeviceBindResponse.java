@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.iotdata.point.device.bind response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-29 15:07:30
+ * @since 1.0, 2025-08-13 14:52:43
  */
 public class AlipayDataIotdataPointDeviceBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8896993525359563927L;
+	private static final long serialVersionUID = 2315293273223955571L;
 
 	
 

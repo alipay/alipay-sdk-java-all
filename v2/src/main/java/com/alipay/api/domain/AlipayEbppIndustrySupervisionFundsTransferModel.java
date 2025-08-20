@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 政务监管资金划拨
  *
  * @author auto create
- * @since 1.0, 2024-08-21 15:24:19
+ * @since 1.0, 2025-08-18 16:36:13
  */
 public class AlipayEbppIndustrySupervisionFundsTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5816433563823668539L;
+	private static final long serialVersionUID = 4864428748678167766L;
+
+	/**
+	 * 协议签约通知返回的授权合约号
+	 */
+	@ApiField("agreement_no")
+	private String agreementNo;
 
 	/**
 	 * 资金划拨的金额。单位：分
@@ -104,6 +110,13 @@ public class AlipayEbppIndustrySupervisionFundsTransferModel extends AlipayObjec
 	 */
 	@ApiField("scene")
 	private String scene;
+
+	public String getAgreementNo() {
+		return this.agreementNo;
+	}
+	public void setAgreementNo(String agreementNo) {
+		this.agreementNo = agreementNo;
+	}
 
 	public Long getAmount() {
 		return this.amount;

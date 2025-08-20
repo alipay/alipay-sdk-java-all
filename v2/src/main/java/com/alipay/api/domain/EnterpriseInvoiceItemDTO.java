@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业发票明细项
  *
  * @author auto create
- * @since 1.0, 2025-08-07 16:42:17
+ * @since 1.0, 2025-08-15 11:00:29
  */
 public class EnterpriseInvoiceItemDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6472164168946261359L;
+	private static final long serialVersionUID = 6831157388168684711L;
 
 	/**
 	 * 价税合计。格式为2位小数，单位为元
@@ -32,7 +32,7 @@ public class EnterpriseInvoiceItemDTO extends AlipayObject {
 	private String itemNo;
 
 	/**
-	 * 商品单价。格式为2位小数，单位为元
+	 * 商品单价。单位为元
 	 */
 	@ApiField("price")
 	private String price;

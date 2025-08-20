@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 收结易订单同步
  *
  * @author auto create
- * @since 1.0, 2025-06-26 16:32:40
+ * @since 1.0, 2025-08-13 14:26:39
  */
 public class AlipayTradeUnifiedsettleSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5394921133995475954L;
+	private static final long serialVersionUID = 1359237512376823595L;
 
 	/**
 	 * 收单模式，目前仅支持PLATFORM_BUSINESS
@@ -22,10 +22,16 @@ public class AlipayTradeUnifiedsettleSyncModel extends AlipayObject {
 	private String acquireMode;
 
 	/**
-	 * 订单同步金额，biz_type=PAY_SYNC时为支付金额，biz_type=REFUND_SYNC时为退款金额。
+	 * 订单同步金额，biz_type=PAY_SYNC时为支付金额，biz_type=REFUND_SYNC时为退款金额。以元为单位，人民币。
 	 */
 	@ApiField("amount")
 	private String amount;
+
+	/**
+	 * 用于标识收结易的业务模式，不传为默认模式
+	 */
+	@ApiField("biz_scene")
+	private String bizScene;
 
 	/**
 	 * 扩展字段
@@ -99,6 +105,13 @@ public class AlipayTradeUnifiedsettleSyncModel extends AlipayObject {
 	}
 	public void setAmount(String amount) {
 		this.amount = amount;
+	}
+
+	public String getBizScene() {
+		return this.bizScene;
+	}
+	public void setBizScene(String bizScene) {
+		this.bizScene = bizScene;
 	}
 
 	public UnifiedSettleExtendParams getExtendParams() {

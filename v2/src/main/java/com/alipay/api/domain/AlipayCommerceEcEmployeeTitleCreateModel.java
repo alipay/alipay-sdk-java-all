@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 新增员工抬头关系
  *
  * @author auto create
- * @since 1.0, 2025-04-01 15:52:19
+ * @since 1.0, 2025-08-15 19:24:29
  */
 public class AlipayCommerceEcEmployeeTitleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7386677835936626974L;
+	private static final long serialVersionUID = 4828252478661455332L;
 
 	/**
 	 * 员工与抬头关系列表

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.huabei.auth.refund.apply response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-16 11:27:56
+ * @since 1.0, 2025-08-13 16:27:42
  */
 public class AlipayPcreditHuabeiAuthRefundApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4589738198469386113L;
+	private static final long serialVersionUID = 4725765923445348262L;
 
 	/** 
 	 * 授权支付单ID

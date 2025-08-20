@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.voucher.stock.match response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 15:51:39
+ * @since 1.0, 2025-08-18 14:47:36
  */
 public class AlipayMarketingVoucherStockMatchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2266416778267333516L;
+	private static final long serialVersionUID = 5516311214523917781L;
 
 	/** 
 	 * 已存在券码列表, 已通过创建接口上传的列表

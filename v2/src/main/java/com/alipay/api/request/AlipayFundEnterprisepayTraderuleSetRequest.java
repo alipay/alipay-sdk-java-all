@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.enterprisepay.traderule.set request
  * 
  * @author auto create
- * @since 1.0, 2025-04-07 17:01:58
+ * @since 1.0, 2025-08-13 15:07:41
  */
 public class AlipayFundEnterprisepayTraderuleSetRequest implements AlipayRequest<AlipayFundEnterprisepayTraderuleSetResponse> {
 

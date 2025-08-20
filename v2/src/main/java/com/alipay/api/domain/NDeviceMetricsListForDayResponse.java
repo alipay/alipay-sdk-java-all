@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * N设备日维度明细信息
  *
  * @author auto create
- * @since 1.0, 2025-07-30 20:30:20
+ * @since 1.0, 2025-08-19 14:01:55
  */
 public class NDeviceMetricsListForDayResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 5662571789322831486L;
+	private static final long serialVersionUID = 4186848542765751177L;
 
 	/**
 	 * 支付宝金额，单位元
@@ -64,6 +64,18 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 	private String cityName;
 
 	/**
+	 * 设备连接电脑系统类型
+	 */
+	@ApiField("device_system")
+	private String deviceSystem;
+
+	/**
+	 * 设备类型
+	 */
+	@ApiField("device_type")
+	private String deviceType;
+
+	/**
 	 * 区编码
 	 */
 	@ApiField("district_code")
@@ -82,6 +94,18 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 	private Boolean doCheckIn;
 
 	/**
+	 * 设备碰一下或扫码交易大于等于2元的支付笔数且一个用户同一天交易笔数最多为2笔
+	 */
+	@ApiField("effective_alipay_transaction_count")
+	private String effectiveAlipayTransactionCount;
+
+	/**
+	 * 设备碰一下交易大于等于2元的支付笔数且一个用户同一天交易笔数最多为2笔
+	 */
+	@ApiField("effective_nfc_transaction_count")
+	private String effectiveNfcTransactionCount;
+
+	/**
 	 * 有效开机标识,当日开机大于6h即为有效开机
 	 */
 	@ApiField("effective_turnon_device")
@@ -92,6 +116,36 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 	 */
 	@ApiField("has_nfc_trade")
 	private Boolean hasNfcTrade;
+
+	/**
+	 * 设备当日至少有一笔碰一下且交易金额大于等于2元，则为是
+	 */
+	@ApiField("has_nfc_trade_greater_2")
+	private Boolean hasNfcTradeGreater2;
+
+	/**
+	 * 点亮30天内打卡天数
+	 */
+	@ApiField("last_30_checkin_days")
+	private String last30CheckinDays;
+
+	/**
+	 * 点亮30天内动销≥2元天数
+	 */
+	@ApiField("last_30_sales_over_2_days")
+	private String last30SalesOver2Days;
+
+	/**
+	 * 点亮30天内有效开机天数
+	 */
+	@ApiField("last_30_valid_boot_days")
+	private String last30ValidBootDays;
+
+	/**
+	 * 点亮7天内打卡天数
+	 */
+	@ApiField("last_7_checkin_days")
+	private String last7CheckinDays;
 
 	/**
 	 * leads门店名称
@@ -136,10 +190,22 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 	private String metricsDate;
 
 	/**
+	 * 近7天小指令有活跃，不区分saas、免研小指令
+	 */
+	@ApiField("micro_command_active_7_day")
+	private Boolean microCommandActive7Day;
+
+	/**
 	 * nfc金额，单位元
 	 */
 	@ApiField("nfc_amount")
 	private String nfcAmount;
+
+	/**
+	 * 设备当日至少有一笔碰一下或扫码交易且交易金额大于等于2元，则为是
+	 */
+	@ApiField("nfc_trade_greater_2")
+	private Boolean nfcTradeGreater2;
 
 	/**
 	 * nfc笔数
@@ -196,10 +262,22 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 	private String sn;
 
 	/**
+	 * 最新门店首次大于等于1元动销时间
+	 */
+	@ApiField("store_first_sale_1_yuan_date")
+	private Date storeFirstSale1YuanDate;
+
+	/**
 	 * 外部门店号
 	 */
 	@ApiField("store_id")
 	private String storeId;
+
+	/**
+	 * 累计已点亮自然月
+	 */
+	@ApiField("total_lighted_months")
+	private String totalLightedMonths;
 
 	/**
 	 * 首次点亮30天内碰交易大于等于2元用户数
@@ -208,10 +286,22 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 	private String trdAmt2NUserCntFromlight30D;
 
 	/**
+	 * 大于等于2元碰一下交易的用户数，单位为人，日维度去重
+	 */
+	@ApiField("trd_greater_2_nfc_device_usercnt")
+	private String trdGreater2NfcDeviceUsercnt;
+
+	/**
 	 * 碰一下用户数，单位为人，日维度已去重
 	 */
 	@ApiField("trd_nfc_device_usercnt")
 	private String trdNfcDeviceUsercnt;
+
+	/**
+	 * 设备最近绑定门店的时间
+	 */
+	@ApiField("update_register_time")
+	private Date updateRegisterTime;
 
 	public String getAlipayAmount() {
 		return this.alipayAmount;
@@ -269,6 +359,20 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 		this.cityName = cityName;
 	}
 
+	public String getDeviceSystem() {
+		return this.deviceSystem;
+	}
+	public void setDeviceSystem(String deviceSystem) {
+		this.deviceSystem = deviceSystem;
+	}
+
+	public String getDeviceType() {
+		return this.deviceType;
+	}
+	public void setDeviceType(String deviceType) {
+		this.deviceType = deviceType;
+	}
+
 	public String getDistrictCode() {
 		return this.districtCode;
 	}
@@ -290,6 +394,20 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 		this.doCheckIn = doCheckIn;
 	}
 
+	public String getEffectiveAlipayTransactionCount() {
+		return this.effectiveAlipayTransactionCount;
+	}
+	public void setEffectiveAlipayTransactionCount(String effectiveAlipayTransactionCount) {
+		this.effectiveAlipayTransactionCount = effectiveAlipayTransactionCount;
+	}
+
+	public String getEffectiveNfcTransactionCount() {
+		return this.effectiveNfcTransactionCount;
+	}
+	public void setEffectiveNfcTransactionCount(String effectiveNfcTransactionCount) {
+		this.effectiveNfcTransactionCount = effectiveNfcTransactionCount;
+	}
+
 	public Boolean getEffectiveTurnonDevice() {
 		return this.effectiveTurnonDevice;
 	}
@@ -302,6 +420,41 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 	}
 	public void setHasNfcTrade(Boolean hasNfcTrade) {
 		this.hasNfcTrade = hasNfcTrade;
+	}
+
+	public Boolean getHasNfcTradeGreater2() {
+		return this.hasNfcTradeGreater2;
+	}
+	public void setHasNfcTradeGreater2(Boolean hasNfcTradeGreater2) {
+		this.hasNfcTradeGreater2 = hasNfcTradeGreater2;
+	}
+
+	public String getLast30CheckinDays() {
+		return this.last30CheckinDays;
+	}
+	public void setLast30CheckinDays(String last30CheckinDays) {
+		this.last30CheckinDays = last30CheckinDays;
+	}
+
+	public String getLast30SalesOver2Days() {
+		return this.last30SalesOver2Days;
+	}
+	public void setLast30SalesOver2Days(String last30SalesOver2Days) {
+		this.last30SalesOver2Days = last30SalesOver2Days;
+	}
+
+	public String getLast30ValidBootDays() {
+		return this.last30ValidBootDays;
+	}
+	public void setLast30ValidBootDays(String last30ValidBootDays) {
+		this.last30ValidBootDays = last30ValidBootDays;
+	}
+
+	public String getLast7CheckinDays() {
+		return this.last7CheckinDays;
+	}
+	public void setLast7CheckinDays(String last7CheckinDays) {
+		this.last7CheckinDays = last7CheckinDays;
 	}
 
 	public String getLeadsLocation() {
@@ -353,11 +506,25 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 		this.metricsDate = metricsDate;
 	}
 
+	public Boolean getMicroCommandActive7Day() {
+		return this.microCommandActive7Day;
+	}
+	public void setMicroCommandActive7Day(Boolean microCommandActive7Day) {
+		this.microCommandActive7Day = microCommandActive7Day;
+	}
+
 	public String getNfcAmount() {
 		return this.nfcAmount;
 	}
 	public void setNfcAmount(String nfcAmount) {
 		this.nfcAmount = nfcAmount;
+	}
+
+	public Boolean getNfcTradeGreater2() {
+		return this.nfcTradeGreater2;
+	}
+	public void setNfcTradeGreater2(Boolean nfcTradeGreater2) {
+		this.nfcTradeGreater2 = nfcTradeGreater2;
 	}
 
 	public Long getNfcTransactionCount() {
@@ -423,11 +590,25 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 		this.sn = sn;
 	}
 
+	public Date getStoreFirstSale1YuanDate() {
+		return this.storeFirstSale1YuanDate;
+	}
+	public void setStoreFirstSale1YuanDate(Date storeFirstSale1YuanDate) {
+		this.storeFirstSale1YuanDate = storeFirstSale1YuanDate;
+	}
+
 	public String getStoreId() {
 		return this.storeId;
 	}
 	public void setStoreId(String storeId) {
 		this.storeId = storeId;
+	}
+
+	public String getTotalLightedMonths() {
+		return this.totalLightedMonths;
+	}
+	public void setTotalLightedMonths(String totalLightedMonths) {
+		this.totalLightedMonths = totalLightedMonths;
 	}
 
 	public String getTrdAmt2NUserCntFromlight30D() {
@@ -437,11 +618,25 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 		this.trdAmt2NUserCntFromlight30D = trdAmt2NUserCntFromlight30D;
 	}
 
+	public String getTrdGreater2NfcDeviceUsercnt() {
+		return this.trdGreater2NfcDeviceUsercnt;
+	}
+	public void setTrdGreater2NfcDeviceUsercnt(String trdGreater2NfcDeviceUsercnt) {
+		this.trdGreater2NfcDeviceUsercnt = trdGreater2NfcDeviceUsercnt;
+	}
+
 	public String getTrdNfcDeviceUsercnt() {
 		return this.trdNfcDeviceUsercnt;
 	}
 	public void setTrdNfcDeviceUsercnt(String trdNfcDeviceUsercnt) {
 		this.trdNfcDeviceUsercnt = trdNfcDeviceUsercnt;
+	}
+
+	public Date getUpdateRegisterTime() {
+		return this.updateRegisterTime;
+	}
+	public void setUpdateRegisterTime(Date updateRegisterTime) {
+		this.updateRegisterTime = updateRegisterTime;
 	}
 
 }

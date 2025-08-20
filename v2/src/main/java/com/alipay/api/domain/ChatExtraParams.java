@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 附加参数，通常用于特殊场景下指定一些必要参数供模型判断，例如指定经纬度，并询问智能体此位置的天气。
  *
  * @author auto create
- * @since 1.0, 2025-08-01 00:22:34
+ * @since 1.0, 2025-08-15 16:37:35
  */
 public class ChatExtraParams extends AlipayObject {
 
-	private static final long serialVersionUID = 7374618751795927948L;
+	private static final long serialVersionUID = 3276678232614336984L;
 
 	/**
 	 * 用于描述客户端信息，业务自定义信息。对应“支小宝投放”生码的“业务自定义信息”

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.ecny.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-20 14:45:57
+ * @since 1.0, 2025-08-13 15:52:42
  */
 public class MybankEcnyTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5375974967892167145L;
+	private static final long serialVersionUID = 7581555243875497541L;
 
 	/** 
 	 * 买家钱包ID，支付成功时必填

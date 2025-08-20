@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 新模型接口测试08
  *
  * @author auto create
- * @since 1.0, 2025-01-22 13:57:21
+ * @since 1.0, 2025-08-18 23:02:55
  */
 public class AlipayDataDataserviceSchemaapieighteenRainystestQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4573939264288719869L;
+	private static final long serialVersionUID = 5837232819221393888L;
 
 	/**
 	 * null

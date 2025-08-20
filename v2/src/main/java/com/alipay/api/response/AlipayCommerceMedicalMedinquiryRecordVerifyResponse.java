@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.medinquiry.record.verify response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-28 15:57:27
+ * @since 1.0, 2025-08-13 10:52:36
  */
 public class AlipayCommerceMedicalMedinquiryRecordVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1211119675685564525L;
+	private static final long serialVersionUID = 7649185114678272919L;
 
 	/** 
 	 * 返回是否存在预问诊病例

@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 修改员工抬头信息
  *
  * @author auto create
- * @since 1.0, 2025-04-08 19:45:20
+ * @since 1.0, 2025-08-18 15:53:33
  */
 public class AlipayCommerceEcEmployeeTitleModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2471873619929273946L;
+	private static final long serialVersionUID = 6814429417246912479L;
 
 	/**
 	 * 共同账号id，与enterprise_id两者必填其一
@@ -44,6 +47,13 @@ public class AlipayCommerceEcEmployeeTitleModifyModel extends AlipayObject {
 	private String modifyBy;
 
 	/**
+	 * 绑定的抬头ID列表
+	 */
+	@ApiListField("multi_title_list")
+	@ApiField("ec_employee_title_modify_tax_no_and_title_id")
+	private List<EcEmployeeTitleModifyTaxNoAndTitleId> multiTitleList;
+
+	/**
 	 * 修改后的抬头id
 	 */
 	@ApiField("new_title_id")
@@ -61,6 +71,12 @@ public class AlipayCommerceEcEmployeeTitleModifyModel extends AlipayObject {
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/**
+	 * 税号
+	 */
+	@ApiField("tax_register_no")
+	private String taxRegisterNo;
 
 	/**
 	 * 员工抬头关系标
@@ -109,6 +125,13 @@ public class AlipayCommerceEcEmployeeTitleModifyModel extends AlipayObject {
 		this.modifyBy = modifyBy;
 	}
 
+	public List<EcEmployeeTitleModifyTaxNoAndTitleId> getMultiTitleList() {
+		return this.multiTitleList;
+	}
+	public void setMultiTitleList(List<EcEmployeeTitleModifyTaxNoAndTitleId> multiTitleList) {
+		this.multiTitleList = multiTitleList;
+	}
+
 	public String getNewTitleId() {
 		return this.newTitleId;
 	}
@@ -128,6 +151,13 @@ public class AlipayCommerceEcEmployeeTitleModifyModel extends AlipayObject {
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public String getTaxRegisterNo() {
+		return this.taxRegisterNo;
+	}
+	public void setTaxRegisterNo(String taxRegisterNo) {
+		this.taxRegisterNo = taxRegisterNo;
 	}
 
 	public String getTitleTag() {

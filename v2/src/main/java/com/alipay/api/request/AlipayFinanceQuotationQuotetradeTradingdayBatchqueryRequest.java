@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.finance.quotation.quotetrade.tradingday.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2025-04-10 13:42:53
+ * @since 1.0, 2025-08-13 15:07:39
  */
 public class AlipayFinanceQuotationQuotetradeTradingdayBatchqueryRequest implements AlipayRequest<AlipayFinanceQuotationQuotetradeTradingdayBatchqueryResponse> {
 

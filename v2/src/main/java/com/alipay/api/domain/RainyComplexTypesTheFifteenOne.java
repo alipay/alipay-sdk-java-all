@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 测试数据，弱引用复杂类型示例
  *
  * @author auto create
- * @since 1.0, 2025-08-07 11:27:36
+ * @since 1.0, 2025-08-18 23:02:57
  */
 public class RainyComplexTypesTheFifteenOne extends AlipayObject {
 
-	private static final long serialVersionUID = 2729161747522428497L;
+	private static final long serialVersionUID = 8667954726367994323L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业码员工抬头关系操作失败信息
  *
  * @author auto create
- * @since 1.0, 2025-04-01 15:52:19
+ * @since 1.0, 2025-08-15 19:24:29
  */
 public class EcEmployeeTitleFailed extends AlipayObject {
 
-	private static final long serialVersionUID = 3451146951835817224L;
+	private static final long serialVersionUID = 2526569186265678757L;
 
 	/**
 	 * 员工ID

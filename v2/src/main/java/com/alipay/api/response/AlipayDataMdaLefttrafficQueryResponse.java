@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.mda.lefttraffic.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-07 13:02:53
+ * @since 1.0, 2025-08-13 14:32:39
  */
 public class AlipayDataMdaLefttrafficQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4882547871898672541L;
+	private static final long serialVersionUID = 6743415526771259884L;
 
 	/** 
 	 * 今日持证出行人次

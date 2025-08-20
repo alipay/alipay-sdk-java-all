@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁商品扩展信息
  *
  * @author auto create
- * @since 1.0, 2025-05-19 10:32:15
+ * @since 1.0, 2025-08-20 09:30:32
  */
 public class RentItemExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8526956367873425935L;
+	private static final long serialVersionUID = 3716386566766628235L;
 
 	/**
 	 * 券后签约价格，币种：人民币，单位：元
@@ -60,6 +60,12 @@ public class RentItemExtInfo extends AlipayObject {
 	 */
 	@ApiField("item_state")
 	private String itemState;
+
+	/**
+	 * 官网价，单位：元。
+	 */
+	@ApiField("official_price")
+	private String officialPrice;
 
 	/**
 	 * 商品的供应商名称，例如：深圳爱租机苹果供应商
@@ -133,6 +139,13 @@ public class RentItemExtInfo extends AlipayObject {
 	}
 	public void setItemState(String itemState) {
 		this.itemState = itemState;
+	}
+
+	public String getOfficialPrice() {
+		return this.officialPrice;
+	}
+	public void setOfficialPrice(String officialPrice) {
+		this.officialPrice = officialPrice;
 	}
 
 	public String getProviderName() {

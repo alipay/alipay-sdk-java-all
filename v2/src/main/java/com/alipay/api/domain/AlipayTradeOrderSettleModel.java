@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 统一收单交易结算接口
  *
  * @author auto create
- * @since 1.0, 2025-07-24 21:07:37
+ * @since 1.0, 2025-08-20 19:45:23
  */
 public class AlipayTradeOrderSettleModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5282379887916282642L;
+	private static final long serialVersionUID = 6628234228212992651L;
 
 	/**
 	 * 分账结算业务扩展参数
@@ -29,7 +29,7 @@ public class AlipayTradeOrderSettleModel extends AlipayObject {
 	private String operatorId;
 
 	/**
-	 * 结算请求流水号，由商家自定义。32个字符以内，仅可包含字母、数字、下划线。需保证在商户端不重复。
+	 * 结算请求流水号，由商家自定义。64个字符以内，仅可包含字母、数字、下划线。需保证在商户端不重复。
 	 */
 	@ApiField("out_request_no")
 	private String outRequestNo;

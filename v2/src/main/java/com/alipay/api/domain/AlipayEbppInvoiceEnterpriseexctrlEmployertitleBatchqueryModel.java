@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业抬头批量查询
  *
  * @author auto create
- * @since 1.0, 2025-04-01 15:52:18
+ * @since 1.0, 2025-08-15 19:24:21
  */
 public class AlipayEbppInvoiceEnterpriseexctrlEmployertitleBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2862354232873825752L;
+	private static final long serialVersionUID = 8221946638121519374L;
 
 	/**
 	 * 企业共同账户id
@@ -42,6 +42,12 @@ public class AlipayEbppInvoiceEnterpriseexctrlEmployertitleBatchqueryModel exten
 	 */
 	@ApiField("page_size")
 	private Long pageSize;
+
+	/**
+	 * 税号
+	 */
+	@ApiField("tax_register_no")
+	private String taxRegisterNo;
 
 	public String getAccountId() {
 		return this.accountId;
@@ -76,6 +82,13 @@ public class AlipayEbppInvoiceEnterpriseexctrlEmployertitleBatchqueryModel exten
 	}
 	public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
+	}
+
+	public String getTaxRegisterNo() {
+		return this.taxRegisterNo;
+	}
+	public void setTaxRegisterNo(String taxRegisterNo) {
+		this.taxRegisterNo = taxRegisterNo;
 	}
 
 }

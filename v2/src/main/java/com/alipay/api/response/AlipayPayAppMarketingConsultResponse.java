@@ -5,6 +5,7 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.BizTagEntity;
 import com.alipay.api.domain.PayChannelPromoInfo;
+import com.alipay.api.domain.DiscountQuotaInfo;
 
 import com.alipay.api.AlipayResponse;
 
@@ -12,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pay.app.marketing.consult response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-17 19:50:07
+ * @since 1.0, 2025-08-15 16:02:35
  */
 public class AlipayPayAppMarketingConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4117813438478255951L;
+	private static final long serialVersionUID = 8265783279729195775L;
 
 	/** 
 	 * 反作弊等级值；仅当请求入参need_query_anti_rank为true时才会返回
@@ -73,6 +74,13 @@ morse匿名技术产出的混淆后的密文结果，需使用商户私钥及接
 	@ApiListField("confused_cipher_list")
 	@ApiField("string")
 	private List<String> confusedCipherList;
+
+	/** 
+	 * 优惠额度信息
+	 */
+	@ApiListField("discount_quota_infos")
+	@ApiField("discount_quota_info")
+	private List<DiscountQuotaInfo> discountQuotaInfos;
 
 	/** 
 	 * 已废弃不再使用
@@ -164,6 +172,13 @@ morse匿名技术产出的混淆后的密文结果，需使用商户私钥及接
 	}
 	public List<String> getConfusedCipherList( ) {
 		return this.confusedCipherList;
+	}
+
+	public void setDiscountQuotaInfos(List<DiscountQuotaInfo> discountQuotaInfos) {
+		this.discountQuotaInfos = discountQuotaInfos;
+	}
+	public List<DiscountQuotaInfo> getDiscountQuotaInfos( ) {
+		return this.discountQuotaInfos;
 	}
 
 	public void setImage(String image) {

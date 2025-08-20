@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.brandsolution.merchantactivity.pause response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-17 17:39:26
+ * @since 1.0, 2025-08-13 15:32:44
  */
 public class AlipayCommerceOperationBrandsolutionMerchantactivityPauseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4388292888179653617L;
+	private static final long serialVersionUID = 1574843475286718839L;
 
 	/** 
 	 * 批量修改结果

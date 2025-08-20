@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class WorkListVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5155555916826427613L;
+	private static final long serialVersionUID = 2691141797652325778L;
 
 	/**
 	 * 作业完成时间

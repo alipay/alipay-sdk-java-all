@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEbppIndustryJobResumesubmiturlGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2267344478563836718L;
+	private static final long serialVersionUID = 8616156618186536828L;
 
 	/**
 	 * 机构同步给岗位后返回的jobId

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租赁单扩展信息
  *
  * @author auto create
- * @since 1.0, 2025-07-18 18:44:51
+ * @since 1.0, 2025-08-20 09:30:32
  */
 public class RentExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7546532947318145337L;
+	private static final long serialVersionUID = 2884836548326385678L;
 
 	/**
 	 * 买家扩展信息
@@ -34,6 +34,12 @@ public class RentExtInfo extends AlipayObject {
 	@ApiListField("financing_ext_info")
 	@ApiField("rent_financing_ext_info")
 	private List<RentFinancingExtInfo> financingExtInfo;
+
+	/**
+	 * 首租相关信息
+	 */
+	@ApiField("head_lease_ext_info")
+	private RentHeadLeaseExtInfo headLeaseExtInfo;
 
 	/**
 	 * 历史资产融资扩展信息
@@ -72,6 +78,13 @@ public class RentExtInfo extends AlipayObject {
 	}
 	public void setFinancingExtInfo(List<RentFinancingExtInfo> financingExtInfo) {
 		this.financingExtInfo = financingExtInfo;
+	}
+
+	public RentHeadLeaseExtInfo getHeadLeaseExtInfo() {
+		return this.headLeaseExtInfo;
+	}
+	public void setHeadLeaseExtInfo(RentHeadLeaseExtInfo headLeaseExtInfo) {
+		this.headLeaseExtInfo = headLeaseExtInfo;
 	}
 
 	public RentHistoricalAssetFinancingExtInfoDTO getHistoricalAssetFinancingExtInfo() {

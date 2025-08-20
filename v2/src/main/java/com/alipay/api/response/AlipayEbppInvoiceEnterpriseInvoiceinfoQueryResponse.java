@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.enterprise.invoiceinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-29 13:52:35
+ * @since 1.0, 2025-08-15 14:17:36
  */
 public class AlipayEbppInvoiceEnterpriseInvoiceinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5564283816275488335L;
+	private static final long serialVersionUID = 8174192855221281844L;
 
 	/** 
 	 * 防伪码
@@ -35,6 +35,12 @@ public class AlipayEbppInvoiceEnterpriseInvoiceinfoQueryResponse extends AlipayR
 	 */
 	@ApiField("checker")
 	private String checker;
+
+	/** 
+	 * 发票归集来源
+	 */
+	@ApiField("collect_source")
+	private String collectSource;
 
 	/** 
 	 * 员工ID
@@ -267,6 +273,13 @@ public class AlipayEbppInvoiceEnterpriseInvoiceinfoQueryResponse extends AlipayR
 	}
 	public String getChecker( ) {
 		return this.checker;
+	}
+
+	public void setCollectSource(String collectSource) {
+		this.collectSource = collectSource;
+	}
+	public String getCollectSource( ) {
+		return this.collectSource;
 	}
 
 	public void setEmployeeId(String employeeId) {

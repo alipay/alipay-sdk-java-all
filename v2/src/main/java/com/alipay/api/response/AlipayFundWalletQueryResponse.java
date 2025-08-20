@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.wallet.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 17:32:01
+ * @since 1.0, 2025-08-18 14:42:35
  */
 public class AlipayFundWalletQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8311562144212517988L;
+	private static final long serialVersionUID = 6234322968836229497L;
 
 	/** 
 	 * 李x

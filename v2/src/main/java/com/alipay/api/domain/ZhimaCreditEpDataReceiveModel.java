@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 企业相关数据采集接收
  *
  * @author auto create
- * @since 1.0, 2025-07-02 16:55:25
+ * @since 1.0, 2025-08-18 11:25:31
  */
 public class ZhimaCreditEpDataReceiveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3431359535682896985L;
+	private static final long serialVersionUID = 1729549786584584412L;
 
 	/**
 	 * 用于接收商户上传的企业相关数据，例如招投标报告的部分附件信息

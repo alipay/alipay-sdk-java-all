@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 从自选列表删除标的
  *
  * @author auto create
- * @since 1.0, 2025-01-09 10:32:16
+ * @since 1.0, 2025-08-15 15:51:06
  */
 public class AntfortuneStockPortfolioDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5291326258234854287L;
+	private static final long serialVersionUID = 8628617219884297796L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识

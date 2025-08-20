@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 先采后付信用订单查询
  *
  * @author auto create
- * @since 1.0, 2025-07-07 15:59:04
+ * @since 1.0, 2025-08-18 17:05:38
  */
 public class AlipayTradeCreditOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8441581582743111393L;
+	private static final long serialVersionUID = 3321924377445574233L;
 
 	/**
 	 * 信用服务订单号
@@ -19,11 +19,24 @@ public class AlipayTradeCreditOrderQueryModel extends AlipayObject {
 	@ApiField("credit_biz_order_id")
 	private String creditBizOrderId;
 
+	/**
+	 * 外部交易号
+	 */
+	@ApiField("out_trade_no")
+	private String outTradeNo;
+
 	public String getCreditBizOrderId() {
 		return this.creditBizOrderId;
 	}
 	public void setCreditBizOrderId(String creditBizOrderId) {
 		this.creditBizOrderId = creditBizOrderId;
+	}
+
+	public String getOutTradeNo() {
+		return this.outTradeNo;
+	}
+	public void setOutTradeNo(String outTradeNo) {
+		this.outTradeNo = outTradeNo;
 	}
 
 }

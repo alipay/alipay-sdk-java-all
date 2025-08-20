@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 渠道扩展信息
  *
  * @author auto create
- * @since 1.0, 2024-07-19 20:00:51
+ * @since 1.0, 2025-08-15 16:00:34
  */
 public class ChannelDetailParams extends AlipayObject {
 
-	private static final long serialVersionUID = 6191911245633952438L;
+	private static final long serialVersionUID = 4256548143123417758L;
 
 	/**
 	 * 预付卡分组名称
@@ -36,6 +36,12 @@ public class ChannelDetailParams extends AlipayObject {
 	 */
 	@ApiField("refuse_code")
 	private String refuseCode;
+
+	/**
+	 * 用户是否已签约
+	 */
+	@ApiField("user_has_sign")
+	private String userHasSign;
 
 	public String getCardGroupName() {
 		return this.cardGroupName;
@@ -63,6 +69,13 @@ public class ChannelDetailParams extends AlipayObject {
 	}
 	public void setRefuseCode(String refuseCode) {
 		this.refuseCode = refuseCode;
+	}
+
+	public String getUserHasSign() {
+		return this.userHasSign;
+	}
+	public void setUserHasSign(String userHasSign) {
+		this.userHasSign = userHasSign;
 	}
 
 }

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDigitalmgmtHrhealthEntryUserSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3615513388459814545L;
+	private static final long serialVersionUID = 3777948844565362763L;
 
 	/**
 	 * 该参数为候选人在供应商系统预约时选择的机构名称，由候选人选择体检机构后确定传入，字符串，蚂蚁系统接收后存入数据库用于后续业务操作，候选人预约成功时传入

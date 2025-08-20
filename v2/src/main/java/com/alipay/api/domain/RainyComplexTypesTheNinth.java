@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 强引用
  *
  * @author auto create
- * @since 1.0, 2025-03-07 19:52:24
+ * @since 1.0, 2025-08-18 23:02:54
  */
 public class RainyComplexTypesTheNinth extends AlipayObject {
 
-	private static final long serialVersionUID = 5176213343725522461L;
+	private static final long serialVersionUID = 5722984837277626117L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识

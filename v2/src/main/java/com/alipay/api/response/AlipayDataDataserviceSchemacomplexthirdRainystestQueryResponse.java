@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.schemacomplexthird.rainystest.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-02 17:17:18
+ * @since 1.0, 2025-08-18 23:02:20
  */
 public class AlipayDataDataserviceSchemacomplexthirdRainystestQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4444448799442964436L;
+	private static final long serialVersionUID = 8723118789552859442L;
 
 	/** 
 	 * 用于跳转支付宝页面的信息，POST和GET方法生成内容不同：使用POST方法执行，结果为html form表单，在浏览器渲染即可；使用GET方法会得到支付宝URL，需要打开或重定向到该URL。建议使用POST方式。

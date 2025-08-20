@@ -9,14 +9,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.credit.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-07 16:57:34
+ * @since 1.0, 2025-08-18 17:07:35
  */
 public class AlipayTradeCreditOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3741396991234186359L;
+	private static final long serialVersionUID = 1859822275934287396L;
 
 	/** 
-	 * 信用服务订单中的垫资金额。
+	 * 信用服务订单中的垫资金额。单位：元
 	 */
 	@ApiField("advance_total_fee")
 	private String advanceTotalFee;
@@ -76,7 +76,7 @@ public class AlipayTradeCreditOrderQueryResponse extends AlipayResponse {
 	private String outTradeNo;
 
 	/** 
-	 * 信用支付逾期时间
+	 * 信用支付逾期时间。年-月-日 时-分-秒
 	 */
 	@ApiField("overdue_time")
 	private Date overdueTime;

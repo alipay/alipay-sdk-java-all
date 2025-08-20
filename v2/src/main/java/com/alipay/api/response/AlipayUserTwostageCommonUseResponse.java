@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.twostage.common.use response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-31 11:29:25
+ * @since 1.0, 2025-08-14 11:32:37
  */
 public class AlipayUserTwostageCommonUseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4313693567251757385L;
+	private static final long serialVersionUID = 3289927996618481263L;
 
 	/** 
 	 * open_id

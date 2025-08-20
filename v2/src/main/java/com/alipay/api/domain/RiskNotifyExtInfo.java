@@ -1,0 +1,29 @@
+package com.alipay.api.domain;
+
+import com.alipay.api.AlipayObject;
+import com.alipay.api.internal.mapping.ApiField;
+
+/**
+ * 健康度事件同步扩展信息
+ *
+ * @author auto create
+ * @since 1.0, 2025-08-15 15:24:31
+ */
+public class RiskNotifyExtInfo extends AlipayObject {
+
+	private static final long serialVersionUID = 4746337595381683254L;
+
+	/**
+	 * 同步的消息ID
+	 */
+	@ApiField("msg_id")
+	private String msgId;
+
+	public String getMsgId() {
+		return this.msgId;
+	}
+	public void setMsgId(String msgId) {
+		this.msgId = msgId;
+	}
+
+}

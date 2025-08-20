@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.smdd.catering.order.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-27 14:17:31
+ * @since 1.0, 2025-08-20 14:27:36
  */
 public class AlipayOfflineSmddCateringOrderConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3342515569221475437L;
+	private static final long serialVersionUID = 6793793383549319935L;
 
 	/** 
 	 * 活动列表，商品促销活动

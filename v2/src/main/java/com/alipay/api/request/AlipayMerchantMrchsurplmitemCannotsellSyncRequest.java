@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.mrchsurplmitem.cannotsell.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 17:18:20
+ * @since 1.0, 2025-08-18 15:07:35
  */
 public class AlipayMerchantMrchsurplmitemCannotsellSyncRequest implements AlipayRequest<AlipayMerchantMrchsurplmitemCannotsellSyncResponse> {
 
