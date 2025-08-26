@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租赁订单创建
  *
  * @author auto create
- * @since 1.0, 2025-08-08 18:31:09
+ * @since 1.0, 2025-08-25 20:57:32
  */
 public class AlipayCommerceRentOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3668747729926545197L;
+	private static final long serialVersionUID = 2381194913592533695L;
 
 	/**
 	 * 优惠前置咨询组件返回的优惠活动咨询ID

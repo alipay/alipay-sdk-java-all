@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPayDeviceNlinkNfccallbackSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4591181695759539255L;
+	private static final long serialVersionUID = 5328274938681344656L;
 
 	/**
 	 * 业务code

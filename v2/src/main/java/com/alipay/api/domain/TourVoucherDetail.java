@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 文旅凭证信息
  *
  * @author auto create
- * @since 1.0, 2025-08-04 10:58:13
+ * @since 1.0, 2025-08-25 14:05:51
  */
 public class TourVoucherDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3323233612777645518L;
+	private static final long serialVersionUID = 2575258151119849766L;
 
 	/**
 	 * 游客身份证号。必须与手机号选一必填
@@ -22,7 +22,7 @@ public class TourVoucherDetail extends AlipayObject {
 	/**
 	 * 码信息。
 一码通场景使用，碰一下场景可空。
-其中seed代表码种子
+其中seed代表商户码种子；codeToken可从扫码的码协议中获取
 	 */
 	@ApiField("code_info")
 	private String codeInfo;

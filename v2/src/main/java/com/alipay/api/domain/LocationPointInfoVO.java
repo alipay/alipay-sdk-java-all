@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LocationPointInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8265998634554723178L;
+	private static final long serialVersionUID = 4353936129721834958L;
 
 	/**
 	 * 绑定的线圈id

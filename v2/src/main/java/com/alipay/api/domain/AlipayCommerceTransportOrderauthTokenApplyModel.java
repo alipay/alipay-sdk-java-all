@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 申请出行行业订单授权Token
  *
  * @author auto create
- * @since 1.0, 2025-06-12 19:17:28
+ * @since 1.0, 2025-08-21 16:37:36
  */
 public class AlipayCommerceTransportOrderauthTokenApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6856378552765935118L;
+	private static final long serialVersionUID = 6578194697193631878L;
 
 	/**
 	 * 16位支付宝小程序应用APPID，默认是当前调用方
@@ -38,10 +38,28 @@ public class AlipayCommerceTransportOrderauthTokenApplyModel extends AlipayObjec
 	private String idCardNumber;
 
 	/**
+	 * 支付宝用户唯一开放ID
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/**
 	 * 手机号码
 	 */
 	@ApiField("phone_number")
 	private String phoneNumber;
+
+	/**
+	 * 支付宝用户唯一开放ID
+	 */
+	@ApiField("user_id")
+	private String userId;
+
+	/**
+	 * 用户信息来源
+	 */
+	@ApiField("user_info_source")
+	private String userInfoSource;
 
 	public String getAuthAppid() {
 		return this.authAppid;
@@ -71,11 +89,32 @@ public class AlipayCommerceTransportOrderauthTokenApplyModel extends AlipayObjec
 		this.idCardNumber = idCardNumber;
 	}
 
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+
 	public String getPhoneNumber() {
 		return this.phoneNumber;
 	}
 	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
+	}
+
+	public String getUserId() {
+		return this.userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+
+	public String getUserInfoSource() {
+		return this.userInfoSource;
+	}
+	public void setUserInfoSource(String userInfoSource) {
+		this.userInfoSource = userInfoSource;
 	}
 
 }

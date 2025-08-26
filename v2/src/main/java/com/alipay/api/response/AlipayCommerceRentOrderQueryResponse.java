@@ -6,10 +6,13 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.RentOrderReceiverAddressInfoVO;
 import com.alipay.api.domain.RentOrderDeliveryInfoVO;
+import com.alipay.api.domain.RentOrderExtendInfoVO;
+import com.alipay.api.domain.RentFastAuditInfoVO;
 import com.alipay.api.domain.RentGoodsDetailInfoVO;
 import com.alipay.api.domain.RentPathInfoVO;
 import com.alipay.api.domain.RentOrderPriceInfoVO;
 import com.alipay.api.domain.RentPromoInfoVO;
+import com.alipay.api.domain.RentAftersaleOrderVO;
 import com.alipay.api.domain.RentOrderPayInfoVO;
 import com.alipay.api.domain.RentPlanInfoVO;
 import com.alipay.api.domain.RentSignInfoVO;
@@ -23,11 +26,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.rent.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-11 11:27:35
+ * @since 1.0, 2025-08-22 21:07:35
  */
 public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4351842711853848319L;
+	private static final long serialVersionUID = 8444359852923489313L;
 
 	/** 
 	 * 订单收货地址
@@ -60,10 +63,22 @@ public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 	private RentOrderDeliveryInfoVO deliveryInfo;
 
 	/** 
+	 * 租赁订单拓展信息
+	 */
+	@ApiField("extend_info")
+	private RentOrderExtendInfoVO extendInfo;
+
+	/** 
 	 * 人脸核身结果
 	 */
 	@ApiField("face_verify_result")
 	private String faceVerifyResult;
+
+	/** 
+	 * 极速审核信息
+	 */
+	@ApiField("fast_audit_info")
+	private RentFastAuditInfoVO fastAuditInfo;
 
 	/** 
 	 * 商品详细信息。当前只会有单个商品
@@ -121,6 +136,13 @@ public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 	private RentPromoInfoVO promoInfo;
 
 	/** 
+	 * 租赁售后单
+	 */
+	@ApiListField("rent_aftersale_orders")
+	@ApiField("rent_aftersale_order_v_o")
+	private List<RentAftersaleOrderVO> rentAftersaleOrders;
+
+	/** 
 	 * 租赁支付单信息
 	 */
 	@ApiListField("rent_pay_infos")
@@ -145,6 +167,12 @@ public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 	@ApiListField("rent_statement_infos")
 	@ApiField("rent_order_statement_info_v_o")
 	private List<RentOrderStatementInfoVO> rentStatementInfos;
+
+	/** 
+	 * 结算方式
+	 */
+	@ApiField("settle_type")
+	private String settleType;
 
 	/** 
 	 * 订单状态
@@ -219,11 +247,25 @@ public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 		return this.deliveryInfo;
 	}
 
+	public void setExtendInfo(RentOrderExtendInfoVO extendInfo) {
+		this.extendInfo = extendInfo;
+	}
+	public RentOrderExtendInfoVO getExtendInfo( ) {
+		return this.extendInfo;
+	}
+
 	public void setFaceVerifyResult(String faceVerifyResult) {
 		this.faceVerifyResult = faceVerifyResult;
 	}
 	public String getFaceVerifyResult( ) {
 		return this.faceVerifyResult;
+	}
+
+	public void setFastAuditInfo(RentFastAuditInfoVO fastAuditInfo) {
+		this.fastAuditInfo = fastAuditInfo;
+	}
+	public RentFastAuditInfoVO getFastAuditInfo( ) {
+		return this.fastAuditInfo;
 	}
 
 	public void setItemInfos(List<RentGoodsDetailInfoVO> itemInfos) {
@@ -289,6 +331,13 @@ public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 		return this.promoInfo;
 	}
 
+	public void setRentAftersaleOrders(List<RentAftersaleOrderVO> rentAftersaleOrders) {
+		this.rentAftersaleOrders = rentAftersaleOrders;
+	}
+	public List<RentAftersaleOrderVO> getRentAftersaleOrders( ) {
+		return this.rentAftersaleOrders;
+	}
+
 	public void setRentPayInfos(List<RentOrderPayInfoVO> rentPayInfos) {
 		this.rentPayInfos = rentPayInfos;
 	}
@@ -315,6 +364,13 @@ public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 	}
 	public List<RentOrderStatementInfoVO> getRentStatementInfos( ) {
 		return this.rentStatementInfos;
+	}
+
+	public void setSettleType(String settleType) {
+		this.settleType = settleType;
+	}
+	public String getSettleType( ) {
+		return this.settleType;
 	}
 
 	public void setStatus(String status) {

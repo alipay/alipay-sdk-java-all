@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceAcommunicationPointClearModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7836466529462191835L;
+	private static final long serialVersionUID = 7259795136481481754L;
 
 	/**
 	 * 日期类型，可空，为空则为当前时间

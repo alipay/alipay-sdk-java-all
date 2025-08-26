@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.gateway.domain.delete request
  * 
  * @author auto create
- * @since 1.0, 2025-08-19 15:47:35
+ * @since 1.0, 2025-08-22 14:12:36
  */
 public class AlipayCloudCloudbaseGatewayDomainDeleteRequest implements AlipayRequest<AlipayCloudCloudbaseGatewayDomainDeleteResponse> {
 

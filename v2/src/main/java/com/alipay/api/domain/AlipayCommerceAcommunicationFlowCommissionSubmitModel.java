@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceAcommunicationFlowCommissionSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8123411897266193556L;
+	private static final long serialVersionUID = 8351587369865959114L;
 
 	/**
 	 * 分佣单价，商品理论佣金单价，单位：元

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pay.instruct.cloud.bind response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-13 10:22:37
+ * @since 1.0, 2025-08-22 17:57:36
  */
 public class AlipayPayInstructCloudBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1755432635149576897L;
+	private static final long serialVersionUID = 8619716352739974449L;
 
 	
 

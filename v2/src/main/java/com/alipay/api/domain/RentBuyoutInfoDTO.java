@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁订单购买信息
  *
  * @author auto create
- * @since 1.0, 2025-07-22 20:49:52
+ * @since 1.0, 2025-08-25 20:57:32
  */
 public class RentBuyoutInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3523169415517858744L;
+	private static final long serialVersionUID = 7353149748284799556L;
 
 	/**
 	 * 租赁阶梯购买分期号
@@ -30,6 +30,12 @@ public class RentBuyoutInfoDTO extends AlipayObject {
 	 */
 	@ApiField("pay_notify_url")
 	private String payNotifyUrl;
+
+	/**
+	 * true表示当前购买订单创建不需要自动创建支付宝trade_no。商户需自行处理收款后，通过alipay.commerce.rent.order.pay.sync接口进行同步。
+	 */
+	@ApiField("sync_pay")
+	private Boolean syncPay;
 
 	public Long getBuyoutInstallmentNo() {
 		return this.buyoutInstallmentNo;
@@ -50,6 +56,13 @@ public class RentBuyoutInfoDTO extends AlipayObject {
 	}
 	public void setPayNotifyUrl(String payNotifyUrl) {
 		this.payNotifyUrl = payNotifyUrl;
+	}
+
+	public Boolean getSyncPay() {
+		return this.syncPay;
+	}
+	public void setSyncPay(Boolean syncPay) {
+		this.syncPay = syncPay;
 	}
 
 }

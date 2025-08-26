@@ -1,19 +1,21 @@
 package com.alipay.api.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 订单扩展信息模型
  *
  * @author auto create
- * @since 1.0, 2025-05-13 17:30:55
+ * @since 1.0, 2025-08-26 10:51:43
  */
 public class MiniOrderExtInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4454186461947942921L;
+	private static final long serialVersionUID = 2772187696167418859L;
 
 	/**
 	 * 二方接入交易组件用于返佣计算的特殊参数，单位为元
@@ -26,6 +28,13 @@ public class MiniOrderExtInfoDTO extends AlipayObject {
 	 */
 	@ApiField("alipay_account")
 	private String alipayAccount;
+
+	/**
+	 * 订单扩展属性信息
+	 */
+	@ApiListField("attr_ext_info_list")
+	@ApiField("attr_ext_info_d_t_o")
+	private List<AttrExtInfoDTO> attrExtInfoList;
 
 	/**
 	 * 企业的统一社会信用代码，营业执照上有该信息，企业租赁业务需要传递该参数。
@@ -94,6 +103,13 @@ public class MiniOrderExtInfoDTO extends AlipayObject {
 	}
 	public void setAlipayAccount(String alipayAccount) {
 		this.alipayAccount = alipayAccount;
+	}
+
+	public List<AttrExtInfoDTO> getAttrExtInfoList() {
+		return this.attrExtInfoList;
+	}
+	public void setAttrExtInfoList(List<AttrExtInfoDTO> attrExtInfoList) {
+		this.attrExtInfoList = attrExtInfoList;
 	}
 
 	public String getCreditCode() {

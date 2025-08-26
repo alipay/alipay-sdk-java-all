@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询机构开放库id
  *
  * @author auto create
- * @since 1.0, 2023-09-19 16:04:20
+ * @since 1.0, 2025-08-21 16:58:18
  */
 public class AlipayOpenIotvspLogicgroupidQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7128575234689171761L;
+	private static final long serialVersionUID = 8123183454146434869L;
 
 	/**
 	 * ISV的PID

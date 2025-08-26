@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IncentiveMode extends AlipayObject {
 
-	private static final long serialVersionUID = 1698168778587379437L;
+	private static final long serialVersionUID = 1514734227186325444L;
 
 	/**
 	 * 完成次数

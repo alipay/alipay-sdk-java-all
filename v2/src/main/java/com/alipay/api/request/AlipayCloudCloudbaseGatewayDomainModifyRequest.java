@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.gateway.domain.modify request
  * 
  * @author auto create
- * @since 1.0, 2025-08-19 15:47:35
+ * @since 1.0, 2025-08-22 14:22:36
  */
 public class AlipayCloudCloudbaseGatewayDomainModifyRequest implements AlipayRequest<AlipayCloudCloudbaseGatewayDomainModifyResponse> {
 

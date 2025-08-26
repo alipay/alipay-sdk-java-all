@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 履约商家信息
  *
  * @author auto create
- * @since 1.0, 2025-05-13 17:30:55
+ * @since 1.0, 2025-08-26 10:51:43
  */
 public class DeliveryMerchantInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7512252576276755584L;
+	private static final long serialVersionUID = 2387454329741783283L;
 
 	/**
-	 * 代扣出账号，本参数为代扣的支付宝账号对应的支付宝唯一用户号。以2088开头的纯16位数字。
+	 * 代扣出账号，如果是余额代扣类型则本参数为代扣的支付宝账号对应的支付宝唯一用户号，以2088开头的纯16位数字。
 	 */
 	@ApiField("deduct_out")
 	private String deductOut;
@@ -26,9 +26,16 @@ public class DeliveryMerchantInfoDTO extends AlipayObject {
 	private String deductOutType;
 
 	/**
-	 * 具体是由哪个商家履约的
+	 * 二级回收商PID信息
+	 */
+	@ApiField("merchant_pid")
+	private String merchantPid;
+
+	/**
+	 * 具体履约商家的PID 当前字段已废弃(更换字段名称，换为merchant_pid)
 	 */
 	@ApiField("mrchant_pid")
+	@Deprecated
 	private String mrchantPid;
 
 	public String getDeductOut() {
@@ -43,6 +50,13 @@ public class DeliveryMerchantInfoDTO extends AlipayObject {
 	}
 	public void setDeductOutType(String deductOutType) {
 		this.deductOutType = deductOutType;
+	}
+
+	public String getMerchantPid() {
+		return this.merchantPid;
+	}
+	public void setMerchantPid(String merchantPid) {
+		this.merchantPid = merchantPid;
 	}
 
 	public String getMrchantPid() {

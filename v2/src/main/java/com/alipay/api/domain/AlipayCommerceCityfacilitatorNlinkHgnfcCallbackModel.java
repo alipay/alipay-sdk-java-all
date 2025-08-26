@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceCityfacilitatorNlinkHgnfcCallbackModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5349369567173852916L;
+	private static final long serialVersionUID = 4133653858725515161L;
 
 	/**
 	 * 业务服务标识对应的参数

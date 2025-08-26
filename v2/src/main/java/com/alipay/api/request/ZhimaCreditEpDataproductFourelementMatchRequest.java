@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.ep.dataproduct.fourelement.match request
  * 
  * @author auto create
- * @since 1.0, 2025-08-15 15:50:14
+ * @since 1.0, 2025-08-21 11:17:36
  */
 public class ZhimaCreditEpDataproductFourelementMatchRequest implements AlipayRequest<ZhimaCreditEpDataproductFourelementMatchResponse> {
 

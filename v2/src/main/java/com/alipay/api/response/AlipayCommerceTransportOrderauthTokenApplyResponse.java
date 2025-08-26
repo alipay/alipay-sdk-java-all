@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.orderauth.token.apply response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-12 19:17:28
+ * @since 1.0, 2025-08-21 16:37:36
  */
 public class AlipayCommerceTransportOrderauthTokenApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1195741895921158781L;
+	private static final long serialVersionUID = 7738392582512948418L;
 
 	/** 
 	 * 无需乱码，用来做用户授权

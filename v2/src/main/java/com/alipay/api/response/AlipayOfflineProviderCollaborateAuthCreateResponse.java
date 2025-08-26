@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOfflineProviderCollaborateAuthCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5254486913915263128L;
+	private static final long serialVersionUID = 8365968831585331336L;
 
 	/** 
 	 * 申请授权的二维码链接，需要将该链接生成二维码引导被授权人（即签约卖进方案的用户）进行扫码，扫码后将会引导向smid的法人或联系人申请设备绑定授权。

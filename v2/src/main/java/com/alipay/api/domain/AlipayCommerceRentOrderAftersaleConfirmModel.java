@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租赁订单操作申请确认
  *
  * @author auto create
- * @since 1.0, 2025-07-22 17:13:36
+ * @since 1.0, 2025-08-22 13:47:48
  */
 public class AlipayCommerceRentOrderAftersaleConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8428297761918111556L;
+	private static final long serialVersionUID = 8655178399261866597L;
 
 	/**
 	 * 补充描述
@@ -46,6 +46,12 @@ public class AlipayCommerceRentOrderAftersaleConfirmModel extends AlipayObject {
 	 */
 	@ApiField("buyer_open_id")
 	private String buyerOpenId;
+
+	/**
+	 * 赔付支付参数信息
+	 */
+	@ApiField("compensation_info")
+	private AftersaleCompensationInfoVO compensationInfo;
 
 	/**
 	 * 操作类型
@@ -112,6 +118,13 @@ public class AlipayCommerceRentOrderAftersaleConfirmModel extends AlipayObject {
 	}
 	public void setBuyerOpenId(String buyerOpenId) {
 		this.buyerOpenId = buyerOpenId;
+	}
+
+	public AftersaleCompensationInfoVO getCompensationInfo() {
+		return this.compensationInfo;
+	}
+	public void setCompensationInfo(AftersaleCompensationInfoVO compensationInfo) {
+		this.compensationInfo = compensationInfo;
 	}
 
 	public String getOperationType() {

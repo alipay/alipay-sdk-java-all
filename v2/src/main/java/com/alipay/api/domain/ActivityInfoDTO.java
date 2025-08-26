@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 活动信息模型，用于创单时，支持付费活动类型订单传入活动特有属性
  *
  * @author auto create
- * @since 1.0, 2024-03-11 10:48:49
+ * @since 1.0, 2025-08-26 10:51:42
  */
 public class ActivityInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1473558568378862914L;
+	private static final long serialVersionUID = 7132127551895915734L;
 
 	/**
 	 * 活动编码ID，活动的唯一标识

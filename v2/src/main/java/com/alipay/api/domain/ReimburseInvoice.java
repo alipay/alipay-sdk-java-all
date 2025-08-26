@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ReimburseInvoice extends AlipayObject {
 
-	private static final long serialVersionUID = 8738623823943528364L;
+	private static final long serialVersionUID = 3534767135142965691L;
 
 	/**
 	 * 发票代码，数电票中没有发票代码。传统税控票中发票代码通常12位

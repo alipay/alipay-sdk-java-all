@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiShopMallCardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7251629452914664917L;
+	private static final long serialVersionUID = 5742556499864851199L;
 
 	/** 
 	 * 商圈发行的会员卡信息

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BirthCertificateDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8796416634896888434L;
+	private static final long serialVersionUID = 2454933813237764324L;
 
 	/**
 	 * 出生孕周

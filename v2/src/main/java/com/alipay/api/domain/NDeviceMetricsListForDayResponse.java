@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * N设备日维度明细信息
  *
  * @author auto create
- * @since 1.0, 2025-08-19 14:01:55
+ * @since 1.0, 2025-08-21 13:45:03
  */
 public class NDeviceMetricsListForDayResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 4186848542765751177L;
+	private static final long serialVersionUID = 5366967844551948947L;
 
 	/**
 	 * 支付宝金额，单位元
@@ -230,6 +230,18 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 	 */
 	@ApiField("province_name")
 	private String provinceName;
+
+	/**
+	 * 设备在统计当天所产生的用户碰一下实付金额总额（限定交易时间在统计当日） 单位元，精确到分
+	 */
+	@ApiField("real_consume_fee")
+	private String realConsumeFee;
+
+	/**
+	 * 设备在统计当天所发生的nfc交易实付退款金额（仅限定退款时间在当日）单位元，精确到分
+	 */
+	@ApiField("real_refund_fee")
+	private String realRefundFee;
 
 	/**
 	 * 退款金额（追溯近60天）  单位元，精确到分
@@ -553,6 +565,20 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 	}
 	public void setProvinceName(String provinceName) {
 		this.provinceName = provinceName;
+	}
+
+	public String getRealConsumeFee() {
+		return this.realConsumeFee;
+	}
+	public void setRealConsumeFee(String realConsumeFee) {
+		this.realConsumeFee = realConsumeFee;
+	}
+
+	public String getRealRefundFee() {
+		return this.realRefundFee;
+	}
+	public void setRealRefundFee(String realRefundFee) {
+		this.realRefundFee = realRefundFee;
 	}
 
 	public String getRefundOrderAmt() {

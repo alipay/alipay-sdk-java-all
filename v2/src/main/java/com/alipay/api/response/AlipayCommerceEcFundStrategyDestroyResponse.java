@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.fund.strategy.destroy response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-30 10:47:34
+ * @since 1.0, 2025-08-25 14:02:36
  */
 public class AlipayCommerceEcFundStrategyDestroyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5434263169565783924L;
+	private static final long serialVersionUID = 1111225598622129892L;
 
 	
 

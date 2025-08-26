@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * N设备日维度明细数据查询
  *
  * @author auto create
- * @since 1.0, 2025-08-19 14:01:55
+ * @since 1.0, 2025-08-21 13:45:03
  */
 public class AlipayCommerceOperationNdeviceMetricsfordayBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8611299183653516625L;
+	private static final long serialVersionUID = 2518327662418497827L;
 
 	/**
 	 * 数据统计时间，具体到某年某月某天，2024年09月19日

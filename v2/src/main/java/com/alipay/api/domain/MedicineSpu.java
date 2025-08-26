@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MedicineSpu extends AlipayObject {
 
-	private static final long serialVersionUID = 1244761458917444237L;
+	private static final long serialVersionUID = 2477923259859964551L;
 
 	/**
 	 * 药品类型特有字段，给药途径

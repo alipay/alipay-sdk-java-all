@@ -4,6 +4,7 @@ import java.util.List;
 import com.alipay.api.domain.SellerSyncRentBuyerExtInfo;
 import com.alipay.api.domain.SellerSyncRentDeliveryExtInfo;
 import com.alipay.api.domain.SellerSyncRentFinancingExtInfo;
+import com.alipay.api.domain.SellerSyncRentHeadLeaseExtInfo;
 import com.alipay.api.domain.RentHistoricalAssetFinancingExtInfoDTO;
 import com.alipay.api.domain.SellerSyncRentItemExtInfo;
 import com.alipay.api.domain.SellerSyncRentOrderExtInfo;
@@ -20,7 +21,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.rent.order.ext.sync request
  * 
  * @author auto create
- * @since 1.0, 2025-08-13 16:56:31
+ * @since 1.0, 2025-08-20 21:37:35
  */
 public class AlipayCommerceRentOrderExtSyncRequest implements AlipayUploadRequest<AlipayCommerceRentOrderExtSyncResponse> {
 
@@ -78,6 +79,16 @@ public class AlipayCommerceRentOrderExtSyncRequest implements AlipayUploadReques
 	private FileItem financingRentProtocol;
 
 	/** 
+	* 首租信息
+	 */
+	private SellerSyncRentHeadLeaseExtInfo headLeaseExtInfo;
+
+	/** 
+	* 首租协议
+	 */
+	private FileItem headLeaseProtocol;
+
+	/** 
 	* 历史资产融资扩展信息
 	 */
 	private RentHistoricalAssetFinancingExtInfoDTO historicalAssetFinancingExtInfo;
@@ -101,6 +112,11 @@ public class AlipayCommerceRentOrderExtSyncRequest implements AlipayUploadReques
 	* 外部业务单号，取值：业务方自己的单据号
 	 */
 	private String outBizId;
+
+	/** 
+	* 平台服务协议
+	 */
+	private FileItem platformServiceProtocol;
 
 	/** 
 	* 同步场景(枚举值)
@@ -177,6 +193,20 @@ public class AlipayCommerceRentOrderExtSyncRequest implements AlipayUploadReques
 		return this.financingRentProtocol;
 	}
 
+	public void setHeadLeaseExtInfo(SellerSyncRentHeadLeaseExtInfo headLeaseExtInfo) {
+		this.headLeaseExtInfo = headLeaseExtInfo;
+	}
+	public SellerSyncRentHeadLeaseExtInfo getHeadLeaseExtInfo() {
+		return this.headLeaseExtInfo;
+	}
+
+	public void setHeadLeaseProtocol(FileItem headLeaseProtocol) {
+		this.headLeaseProtocol = headLeaseProtocol;
+	}
+	public FileItem getHeadLeaseProtocol() {
+		return this.headLeaseProtocol;
+	}
+
 	public void setHistoricalAssetFinancingExtInfo(RentHistoricalAssetFinancingExtInfoDTO historicalAssetFinancingExtInfo) {
 		this.historicalAssetFinancingExtInfo = historicalAssetFinancingExtInfo;
 	}
@@ -210,6 +240,13 @@ public class AlipayCommerceRentOrderExtSyncRequest implements AlipayUploadReques
 	}
 	public String getOutBizId() {
 		return this.outBizId;
+	}
+
+	public void setPlatformServiceProtocol(FileItem platformServiceProtocol) {
+		this.platformServiceProtocol = platformServiceProtocol;
+	}
+	public FileItem getPlatformServiceProtocol() {
+		return this.platformServiceProtocol;
 	}
 
 	public void setSyncScene(String syncScene) {
@@ -284,6 +321,7 @@ public class AlipayCommerceRentOrderExtSyncRequest implements AlipayUploadReques
 		txtParams.put("buyer_open_id", this.buyerOpenId);
 		txtParams.put("delivery_ext_info", this.deliveryExtInfo == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.deliveryExtInfo, true));
 		txtParams.put("financing_ext_info", this.financingExtInfo == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.financingExtInfo, true));
+		txtParams.put("head_lease_ext_info", this.headLeaseExtInfo == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.headLeaseExtInfo, true));
 		txtParams.put("historical_asset_financing_ext_info", this.historicalAssetFinancingExtInfo == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.historicalAssetFinancingExtInfo, true));
 		txtParams.put("item_ext_info", this.itemExtInfo == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.itemExtInfo, true));
 		txtParams.put("order_ext_info", this.orderExtInfo == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.orderExtInfo, true));
@@ -310,6 +348,8 @@ public class AlipayCommerceRentOrderExtSyncRequest implements AlipayUploadReques
 		params.put("buyer_live_pic", this.buyerLivePic);
 		params.put("delivery_received_pic", this.deliveryReceivedPic);
 		params.put("financing_rent_protocol", this.financingRentProtocol);
+		params.put("head_lease_protocol", this.headLeaseProtocol);
+		params.put("platform_service_protocol", this.platformServiceProtocol);
 		return params;
 	}
 

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-08-13 15:38:31
+ * @since 1.0, 2025-08-25 14:07:36
  */
 public class TourOrderSyncDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6182222545633484531L;
+	private static final long serialVersionUID = 5494637157984177842L;
 
 	/**
 	 * 可核销总数。凭证可核销数量总和

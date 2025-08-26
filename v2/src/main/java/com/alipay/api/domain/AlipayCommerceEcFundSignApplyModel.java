@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账户签约申请
  *
  * @author auto create
- * @since 1.0, 2025-07-28 19:29:06
+ * @since 1.0, 2025-08-25 13:55:50
  */
 public class AlipayCommerceEcFundSignApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5892179399243142824L;
+	private static final long serialVersionUID = 6225815318364766986L;
 
 	/**
 	 * 系统自动生成企业唯一标识

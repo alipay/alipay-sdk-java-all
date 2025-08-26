@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BkdfmacBizActionLogDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7755993865174682882L;
+	private static final long serialVersionUID = 8442462461319221318L;
 
 	/**
 	 * 预算申请金额

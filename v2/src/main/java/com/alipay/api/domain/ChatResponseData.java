@@ -15,7 +15,7 @@ message、audio 事件中，data 为 Message Object。
  */
 public class ChatResponseData extends AlipayObject {
 
-	private static final long serialVersionUID = 4534923355472457163L;
+	private static final long serialVersionUID = 8643646251224185477L;
 
 	/**
 	 * 要进行会话聊天的智能体ID。

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.icontrol.seatevent.upload response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-23 16:31:24
+ * @since 1.0, 2025-08-25 11:27:36
  */
 public class AlipayIserviceIcontrolSeateventUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7428316138447734351L;
+	private static final long serialVersionUID = 3214369741929598977L;
 
 	
 

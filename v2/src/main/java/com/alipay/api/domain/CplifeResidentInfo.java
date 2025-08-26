@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CplifeResidentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8589342411884667421L;
+	private static final long serialVersionUID = 6599558874886138474L;
 
 	/**
 	 * 业主关联的房产在支付宝平台中的唯一标识。(该属性和property_entity_id两个至少需要填写一项，如果两项都填写则以entity_id为准.)

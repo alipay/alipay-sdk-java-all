@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DesignatedDrivingDriverInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4772155671915737654L;
+	private static final long serialVersionUID = 7419399776542835891L;
 
 	/**
 	 * 司机联系方式，可能是渠道处理后的电话

@@ -10,11 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询结果数据列表
  *
  * @author auto create
- * @since 1.0, 2025-04-09 11:30:54
+ * @since 1.0, 2025-08-22 14:11:29
  */
 public class AdReportDataDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 2698273497311739532L;
+	private static final long serialVersionUID = 2282587735711351588L;
+
+	/**
+	 * 查询素材数据，ALL层级透出
+	 */
+	@ApiField("action_point")
+	private String actionPoint;
+
+	/**
+	 * 查询素材数据，ALL层级透出
+	 */
+	@ApiField("action_point_id")
+	private String actionPointId;
 
 	/**
 	 * 代理商账号(只在代理商接口返回)
@@ -90,6 +102,12 @@ public class AdReportDataDetail extends AlipayObject {
 	private String cpm;
 
 	/**
+	 * 创意id
+	 */
+	@ApiField("creative_id")
+	private String creativeId;
+
+	/**
 	 * 创意名称
 	 */
 	@ApiField("creative_name")
@@ -124,6 +142,78 @@ public class AdReportDataDetail extends AlipayObject {
 	 */
 	@ApiField("impression")
 	private Long impression;
+
+	/**
+	 * 查询素材数据，非VIDEO层级透出
+	 */
+	@ApiField("main_picture_height")
+	private String mainPictureHeight;
+
+	/**
+	 * 查询素材数据时，非VIDEO层级时透出
+	 */
+	@ApiField("main_picture_id")
+	private String mainPictureId;
+
+	/**
+	 * 查询素材数据，非VIDEO层级透出
+	 */
+	@ApiField("main_picture_name")
+	private String mainPictureName;
+
+	/**
+	 * 查询素材数据，非VIDEO层级透出
+	 */
+	@ApiField("main_picture_url")
+	private String mainPictureUrl;
+
+	/**
+	 * 查询素材数据，非VIDEO层级透出
+	 */
+	@ApiField("main_picture_width")
+	private String mainPictureWidth;
+
+	/**
+	 * 查询素材数据，ALL层级透出
+	 */
+	@ApiField("main_title")
+	private String mainTitle;
+
+	/**
+	 * 查询素材数据，ALL层级透出
+	 */
+	@ApiField("main_title_id")
+	private String mainTitleId;
+
+	/**
+	 * 查询素材数据，非PHOTO层级透出
+	 */
+	@ApiField("main_video_height")
+	private Long mainVideoHeight;
+
+	/**
+	 * 查询素材数据，非PHOTO层级透出
+	 */
+	@ApiField("main_video_id")
+	private String mainVideoId;
+
+	/**
+	 * 查询素材数据，非PHOTO层级透出
+	 */
+	@ApiField("main_video_name")
+	private String mainVideoName;
+
+	/**
+	 * 查询素材数据，非PHOTO层级透出
+	 */
+	@ApiField("main_video_url")
+	private String mainVideoUrl;
+
+	/**
+	 * 查询素材数据，非PHOTO层级透出
+	 */
+	@ApiField("main_video_width")
+	private Long mainVideoWidth;
 
 	/**
 	 * 营销目标名称
@@ -178,6 +268,32 @@ public class AdReportDataDetail extends AlipayObject {
 	 */
 	@ApiField("scene_name")
 	private String sceneName;
+
+	/**
+	 * 查询素材数据，ALL层级透出
+	 */
+	@ApiField("sub_title")
+	private String subTitle;
+
+	/**
+	 * 查询素材数据，ALL层级透出
+	 */
+	@ApiField("sub_title_id")
+	private String subTitleId;
+
+	public String getActionPoint() {
+		return this.actionPoint;
+	}
+	public void setActionPoint(String actionPoint) {
+		this.actionPoint = actionPoint;
+	}
+
+	public String getActionPointId() {
+		return this.actionPointId;
+	}
+	public void setActionPointId(String actionPointId) {
+		this.actionPointId = actionPointId;
+	}
 
 	public String getAgentAlipayAccount() {
 		return this.agentAlipayAccount;
@@ -263,6 +379,13 @@ public class AdReportDataDetail extends AlipayObject {
 		this.cpm = cpm;
 	}
 
+	public String getCreativeId() {
+		return this.creativeId;
+	}
+	public void setCreativeId(String creativeId) {
+		this.creativeId = creativeId;
+	}
+
 	public String getCreativeName() {
 		return this.creativeName;
 	}
@@ -303,6 +426,90 @@ public class AdReportDataDetail extends AlipayObject {
 	}
 	public void setImpression(Long impression) {
 		this.impression = impression;
+	}
+
+	public String getMainPictureHeight() {
+		return this.mainPictureHeight;
+	}
+	public void setMainPictureHeight(String mainPictureHeight) {
+		this.mainPictureHeight = mainPictureHeight;
+	}
+
+	public String getMainPictureId() {
+		return this.mainPictureId;
+	}
+	public void setMainPictureId(String mainPictureId) {
+		this.mainPictureId = mainPictureId;
+	}
+
+	public String getMainPictureName() {
+		return this.mainPictureName;
+	}
+	public void setMainPictureName(String mainPictureName) {
+		this.mainPictureName = mainPictureName;
+	}
+
+	public String getMainPictureUrl() {
+		return this.mainPictureUrl;
+	}
+	public void setMainPictureUrl(String mainPictureUrl) {
+		this.mainPictureUrl = mainPictureUrl;
+	}
+
+	public String getMainPictureWidth() {
+		return this.mainPictureWidth;
+	}
+	public void setMainPictureWidth(String mainPictureWidth) {
+		this.mainPictureWidth = mainPictureWidth;
+	}
+
+	public String getMainTitle() {
+		return this.mainTitle;
+	}
+	public void setMainTitle(String mainTitle) {
+		this.mainTitle = mainTitle;
+	}
+
+	public String getMainTitleId() {
+		return this.mainTitleId;
+	}
+	public void setMainTitleId(String mainTitleId) {
+		this.mainTitleId = mainTitleId;
+	}
+
+	public Long getMainVideoHeight() {
+		return this.mainVideoHeight;
+	}
+	public void setMainVideoHeight(Long mainVideoHeight) {
+		this.mainVideoHeight = mainVideoHeight;
+	}
+
+	public String getMainVideoId() {
+		return this.mainVideoId;
+	}
+	public void setMainVideoId(String mainVideoId) {
+		this.mainVideoId = mainVideoId;
+	}
+
+	public String getMainVideoName() {
+		return this.mainVideoName;
+	}
+	public void setMainVideoName(String mainVideoName) {
+		this.mainVideoName = mainVideoName;
+	}
+
+	public String getMainVideoUrl() {
+		return this.mainVideoUrl;
+	}
+	public void setMainVideoUrl(String mainVideoUrl) {
+		this.mainVideoUrl = mainVideoUrl;
+	}
+
+	public Long getMainVideoWidth() {
+		return this.mainVideoWidth;
+	}
+	public void setMainVideoWidth(Long mainVideoWidth) {
+		this.mainVideoWidth = mainVideoWidth;
 	}
 
 	public String getMarketTargetName() {
@@ -366,6 +573,20 @@ public class AdReportDataDetail extends AlipayObject {
 	}
 	public void setSceneName(String sceneName) {
 		this.sceneName = sceneName;
+	}
+
+	public String getSubTitle() {
+		return this.subTitle;
+	}
+	public void setSubTitle(String subTitle) {
+		this.subTitle = subTitle;
+	}
+
+	public String getSubTitleId() {
+		return this.subTitleId;
+	}
+	public void setSubTitleId(String subTitleId) {
+		this.subTitleId = subTitleId;
 	}
 
 }

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 交易组件业务单创建
  *
  * @author auto create
- * @since 1.0, 2025-06-17 10:07:52
+ * @since 1.0, 2025-08-26 10:51:43
  */
 public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7255193549696696266L;
+	private static final long serialVersionUID = 2869699256682244674L;
 
 	/**
 	 * 订单收货地址
@@ -136,6 +136,12 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 	 */
 	@ApiField("promo_detail_info")
 	private PromoDetailInfoDTO promoDetailInfo;
+
+	/**
+	 * 描述分账信息
+	 */
+	@ApiField("royalty_info")
+	private RoyaltyInfo royaltyInfo;
 
 	/**
 	 * 卖家支付宝用户ID。收款账号优先级规则：门店绑定的收款账户>请求传入的seller_id>商户签约账号对应的支付宝用户ID；  注：直付通和机构间联场景下seller_id无需传入或者保持跟pid一致；  如果传入的seller_id与pid不一致，需要联系支付宝小二配置收款关系；本地商品无需填写
@@ -344,6 +350,13 @@ public class AlipayOpenMiniOrderCreateModel extends AlipayObject {
 	}
 	public void setPromoDetailInfo(PromoDetailInfoDTO promoDetailInfo) {
 		this.promoDetailInfo = promoDetailInfo;
+	}
+
+	public RoyaltyInfo getRoyaltyInfo() {
+		return this.royaltyInfo;
+	}
+	public void setRoyaltyInfo(RoyaltyInfo royaltyInfo) {
+		this.royaltyInfo = royaltyInfo;
 	}
 
 	public String getSellerId() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntfarmUserOrnament extends AlipayObject {
 
-	private static final long serialVersionUID = 7151478578713858244L;
+	private static final long serialVersionUID = 5125647441187927362L;
 
 	/**
 	 * 装扮名称

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小游戏用户事件上报
  *
  * @author auto create
- * @since 1.0, 2025-08-08 10:33:00
+ * @since 1.0, 2025-08-25 11:26:27
  */
 public class AlipayUserGamecenterEventSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8637728859286316117L;
+	private static final long serialVersionUID = 6228477525796464124L;
 
 	/**
 	 * 支付宝用户ID

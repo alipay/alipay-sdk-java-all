@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业信息修改
  *
  * @author auto create
- * @since 1.0, 2024-07-22 17:42:07
+ * @since 1.0, 2025-08-25 14:03:32
  */
 public class AlipayCommerceEcEnterpriseInfoModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8767857244396179571L;
+	private static final long serialVersionUID = 4794648212628515512L;
 
 	/**
 	 * 企业简称
@@ -30,6 +30,12 @@ public class AlipayCommerceEcEnterpriseInfoModifyModel extends AlipayObject {
 	 */
 	@ApiField("enterprise_name")
 	private String enterpriseName;
+
+	/**
+	 * 企业个性化信息，仅适用于可信渠道（如钉钉），普通场景请勿传此参数
+	 */
+	@ApiField("reliable_profiles")
+	private ReliableEnterpriseProfilesDTO reliableProfiles;
 
 	public String getEnterpriseAlias() {
 		return this.enterpriseAlias;
@@ -50,6 +56,13 @@ public class AlipayCommerceEcEnterpriseInfoModifyModel extends AlipayObject {
 	}
 	public void setEnterpriseName(String enterpriseName) {
 		this.enterpriseName = enterpriseName;
+	}
+
+	public ReliableEnterpriseProfilesDTO getReliableProfiles() {
+		return this.reliableProfiles;
+	}
+	public void setReliableProfiles(ReliableEnterpriseProfilesDTO reliableProfiles) {
+		this.reliableProfiles = reliableProfiles;
 	}
 
 }

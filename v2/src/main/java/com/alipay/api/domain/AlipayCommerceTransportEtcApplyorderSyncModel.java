@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC办理申请单信息同步
  *
  * @author auto create
- * @since 1.0, 2024-08-28 15:45:53
+ * @since 1.0, 2025-08-25 16:00:46
  */
 public class AlipayCommerceTransportEtcApplyorderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8325372389462926131L;
+	private static final long serialVersionUID = 2688532921366381775L;
 
 	/**
 	 * 支付宝ETC平台扣款协议号，与order_id参数 二选一。
@@ -24,6 +24,12 @@ public class AlipayCommerceTransportEtcApplyorderSyncModel extends AlipayObject 
 	 */
 	@ApiField("biz_time")
 	private String bizTime;
+
+	/**
+	 * 取消原因编码
+	 */
+	@ApiField("cancel_code")
+	private String cancelCode;
 
 	/**
 	 * 用户取消订单原因，在取消状态同步时必填
@@ -224,6 +230,13 @@ CANCEL：取消；
 	}
 	public void setBizTime(String bizTime) {
 		this.bizTime = bizTime;
+	}
+
+	public String getCancelCode() {
+		return this.cancelCode;
+	}
+	public void setCancelCode(String cancelCode) {
+		this.cancelCode = cancelCode;
 	}
 
 	public String getCancelReason() {

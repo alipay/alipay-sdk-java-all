@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 票务信息模型
  *
  * @author auto create
- * @since 1.0, 2024-02-26 17:12:47
+ * @since 1.0, 2025-08-26 10:51:42
  */
 public class TicketInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3438653287979571263L;
+	private static final long serialVersionUID = 2335753167949364535L;
 
 	/**
 	 * 演出地点所属的城市

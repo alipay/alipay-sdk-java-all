@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 回收商户质检报价
  *
  * @author auto create
- * @since 1.0, 2025-08-11 22:47:15
+ * @since 1.0, 2025-08-21 14:42:01
  */
 public class AlipayCommerceRecycleOrderMerchantConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2756744766453841755L;
+	private static final long serialVersionUID = 3439563398698485615L;
 
 	/**
 	 * 二级回收商出资账号

@@ -1,20 +1,23 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * null
  *
  * @author auto create
- * @since 1.0, 2025-08-13 15:38:31
+ * @since 1.0, 2025-08-25 14:07:36
  */
 public class TourOrderSyncResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 7447448941485227159L;
+	private static final long serialVersionUID = 7627143655452852729L;
 
 	/**
-	 * 用于标记支付宝用户在应用下的唯一标识。一码通场景必须保存
+	 * 用于标记支付宝用户在应用下的唯一标识。
 	 */
 	@ApiField("open_id")
 	private String openId;
@@ -32,8 +35,7 @@ public class TourOrderSyncResponse extends AlipayObject {
 	private String outVoucherId;
 
 	/**
-	 * 支付宝用户的userId。
-一码通场景必须保存
+	 * 下单用户的支付宝userId。
 	 */
 	@ApiField("user_id")
 	private String userId;
@@ -43,6 +45,13 @@ public class TourOrderSyncResponse extends AlipayObject {
 	 */
 	@ApiField("vid")
 	private String vid;
+
+	/**
+	 * null
+	 */
+	@ApiListField("vourcher_user_ids")
+	@ApiField("string")
+	private List<String> vourcherUserIds;
 
 	public String getOpenId() {
 		return this.openId;
@@ -77,6 +86,13 @@ public class TourOrderSyncResponse extends AlipayObject {
 	}
 	public void setVid(String vid) {
 		this.vid = vid;
+	}
+
+	public List<String> getVourcherUserIds() {
+		return this.vourcherUserIds;
+	}
+	public void setVourcherUserIds(List<String> vourcherUserIds) {
+		this.vourcherUserIds = vourcherUserIds;
 	}
 
 }

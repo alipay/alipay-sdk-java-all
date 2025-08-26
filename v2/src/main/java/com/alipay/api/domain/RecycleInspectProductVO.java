@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 回收质检产品模型
  *
  * @author auto create
- * @since 1.0, 2025-06-25 14:43:28
+ * @since 1.0, 2025-08-21 14:42:01
  */
 public class RecycleInspectProductVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5325644875115752223L;
+	private static final long serialVersionUID = 1423714323257231244L;
+
+	/**
+	 * 3c行业质检扩展属性
+	 */
+	@ApiField("digital_product_info")
+	private RecycleInspectDigitalProductOpenVO digitalProductInfo;
 
 	/**
 	 * 单个产品的质检金额
@@ -52,6 +58,13 @@ public class RecycleInspectProductVO extends AlipayObject {
 	 */
 	@ApiField("product_code")
 	private String productCode;
+
+	public RecycleInspectDigitalProductOpenVO getDigitalProductInfo() {
+		return this.digitalProductInfo;
+	}
+	public void setDigitalProductInfo(RecycleInspectDigitalProductOpenVO digitalProductInfo) {
+		this.digitalProductInfo = digitalProductInfo;
+	}
 
 	public String getInspectPrice() {
 		return this.inspectPrice;

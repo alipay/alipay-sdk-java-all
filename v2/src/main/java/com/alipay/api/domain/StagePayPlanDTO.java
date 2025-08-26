@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 阶段付款计划模型
  *
  * @author auto create
- * @since 1.0, 2024-11-26 13:18:05
+ * @since 1.0, 2025-08-26 10:26:21
  */
 public class StagePayPlanDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3147652965834261854L;
+	private static final long serialVersionUID = 3341351461765559253L;
 
 	/**
 	 * 阶段付款计划阶段编号，标识当前计划处于第几阶段，起始值为1，多阶段需保证阶段编号递增

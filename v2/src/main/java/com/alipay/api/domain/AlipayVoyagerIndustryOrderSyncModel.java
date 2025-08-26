@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * Voyager商户订单状态变更通知接口
  *
  * @author auto create
- * @since 1.0, 2025-05-27 14:56:23
+ * @since 1.0, 2025-08-22 10:10:14
  */
 public class AlipayVoyagerIndustryOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6852746364821169762L;
+	private static final long serialVersionUID = 3396999668548283196L;
 
 	/**
 	 * 买家信息
 	 */
 	@ApiField("buyer_info")
 	private Buyer buyerInfo;
+
+	/**
+	 * 优惠金额
+	 */
+	@ApiField("discount_amount")
+	private AmountDTO discountAmount;
 
 	/**
 	 * 扩展信息
@@ -98,6 +104,12 @@ public class AlipayVoyagerIndustryOrderSyncModel extends AlipayObject {
 	private String paymentNo;
 
 	/**
+	 * 来源APP
+	 */
+	@ApiField("source_app")
+	private String sourceApp;
+
+	/**
 	 * 支付宝用户的userId，可传openid，不传userid。
 	 */
 	@ApiField("user_id")
@@ -108,6 +120,13 @@ public class AlipayVoyagerIndustryOrderSyncModel extends AlipayObject {
 	}
 	public void setBuyerInfo(Buyer buyerInfo) {
 		this.buyerInfo = buyerInfo;
+	}
+
+	public AmountDTO getDiscountAmount() {
+		return this.discountAmount;
+	}
+	public void setDiscountAmount(AmountDTO discountAmount) {
+		this.discountAmount = discountAmount;
 	}
 
 	public List<String> getExtInfo() {
@@ -192,6 +211,13 @@ public class AlipayVoyagerIndustryOrderSyncModel extends AlipayObject {
 	}
 	public void setPaymentNo(String paymentNo) {
 		this.paymentNo = paymentNo;
+	}
+
+	public String getSourceApp() {
+		return this.sourceApp;
+	}
+	public void setSourceApp(String sourceApp) {
+		this.sourceApp = sourceApp;
 	}
 
 	public String getUserId() {

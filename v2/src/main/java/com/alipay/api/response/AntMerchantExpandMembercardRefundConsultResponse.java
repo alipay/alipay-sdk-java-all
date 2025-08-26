@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntMerchantExpandMembercardRefundConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6342793576125939426L;
+	private static final long serialVersionUID = 1381238429426444786L;
 
 	/** 
 	 * 退卡明细

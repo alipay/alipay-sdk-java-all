@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 星云小二坐席事件上报
  *
  * @author auto create
- * @since 1.0, 2024-07-24 20:04:14
+ * @since 1.0, 2025-08-25 11:24:53
  */
 public class AlipayIserviceIcontrolSeateventUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2159352885543338527L;
+	private static final long serialVersionUID = 4163561113717689334L;
+
+	/**
+	 * 坐席类型，有呼入和呼出
+	 */
+	@ApiField("channel_type")
+	private String channelType;
 
 	/**
 	 * 客服呼入类坐席事件上报报文
@@ -37,6 +43,13 @@ CUSTORMER_SERVICE_INBOUND: 客服-呼入类（客权客服
 	 */
 	@ApiField("service_uniq_code")
 	private String serviceUniqCode;
+
+	public String getChannelType() {
+		return this.channelType;
+	}
+	public void setChannelType(String channelType) {
+		this.channelType = channelType;
+	}
 
 	public IcInboundSeatEventModel getIcInboundSeatEventPayload() {
 		return this.icInboundSeatEventPayload;

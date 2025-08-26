@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品扩展信息
  *
  * @author auto create
- * @since 1.0, 2025-08-13 16:56:31
+ * @since 1.0, 2025-08-20 21:37:35
  */
 public class SellerSyncRentItemExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2338617688445673937L;
+	private static final long serialVersionUID = 4733842447467546536L;
 
 	/**
 	 * 券后签约价格，币种：人民币，单位：元
@@ -50,7 +50,7 @@ public class SellerSyncRentItemExtInfo extends AlipayObject {
 	private String itemName;
 
 	/**
-	 * 商品的内存大小，手机需要设置，单位：GB/MB/KB
+	 * 商品的内存大小，如果是手机的时候需要设置，单位：GB/MB/KB
 	 */
 	@ApiField("item_ram")
 	private String itemRam;
@@ -60,6 +60,12 @@ public class SellerSyncRentItemExtInfo extends AlipayObject {
 	 */
 	@ApiField("item_state")
 	private String itemState;
+
+	/**
+	 * 官网价，单位：元。
+	 */
+	@ApiField("official_price")
+	private String officialPrice;
 
 	/**
 	 * 商品的供应商名称，例如：深圳爱租机苹果供应商
@@ -133,6 +139,13 @@ public class SellerSyncRentItemExtInfo extends AlipayObject {
 	}
 	public void setItemState(String itemState) {
 		this.itemState = itemState;
+	}
+
+	public String getOfficialPrice() {
+		return this.officialPrice;
+	}
+	public void setOfficialPrice(String officialPrice) {
+		this.officialPrice = officialPrice;
 	}
 
 	public String getProviderName() {

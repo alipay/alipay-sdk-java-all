@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗健康权益包查询镁信药品明细数据结构
  *
  * @author auto create
- * @since 1.0, 2025-02-25 14:50:21
+ * @since 1.0, 2025-08-21 15:21:37
  */
 public class MedicineDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3523318179695634372L;
+	private static final long serialVersionUID = 2392841364355779828L;
 
 	/**
 	 * 药品说明
 	 */
 	@ApiField("description")
 	private String description;
+
+	/**
+	 * 价格25.99元
+	 */
+	@ApiField("discount_price")
+	private String discountPrice;
 
 	/**
 	 * xx药品id
@@ -48,6 +54,13 @@ public class MedicineDetail extends AlipayObject {
 	}
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	public String getDiscountPrice() {
+		return this.discountPrice;
+	}
+	public void setDiscountPrice(String discountPrice) {
+		this.discountPrice = discountPrice;
 	}
 
 	public String getId() {

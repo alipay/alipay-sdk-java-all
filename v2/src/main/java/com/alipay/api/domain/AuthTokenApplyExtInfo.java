@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 额外参数
  *
  * @author auto create
- * @since 1.0, 2025-06-12 19:17:28
+ * @since 1.0, 2025-08-21 16:37:36
  */
 public class AuthTokenApplyExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5773695154294484997L;
+	private static final long serialVersionUID = 4464518886927681596L;
 
 	/**
 	 * 车牌号
@@ -19,11 +19,24 @@ public class AuthTokenApplyExtInfo extends AlipayObject {
 	@ApiField("plate_no")
 	private String plateNo;
 
+	/**
+	 * 请求来源
+	 */
+	@ApiField("request_channel")
+	private String requestChannel;
+
 	public String getPlateNo() {
 		return this.plateNo;
 	}
 	public void setPlateNo(String plateNo) {
 		this.plateNo = plateNo;
+	}
+
+	public String getRequestChannel() {
+		return this.requestChannel;
+	}
+	public void setRequestChannel(String requestChannel) {
+		this.requestChannel = requestChannel;
 	}
 
 }

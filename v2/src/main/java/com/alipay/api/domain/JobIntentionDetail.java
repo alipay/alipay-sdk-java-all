@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class JobIntentionDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5841643911449659555L;
+	private static final long serialVersionUID = 6756777236756791677L;
 
 	/**
 	 * 城市行政区划编码，参考<a href="https://jiuye.yuque.com/org-wiki-jiuye-cpfcqs/araxo9/ed5yn3asbtes7ni4" target="_blank">全量城市行政区划编码（2020Q1版本）<a/>

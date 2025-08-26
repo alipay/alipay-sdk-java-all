@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ClaimAdvancePaymentDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5854819263546454415L;
+	private static final long serialVersionUID = 6699594152346175735L;
 
 	/**
 	 * 赔案号

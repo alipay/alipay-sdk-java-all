@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 广告投放数据通用查询
  *
  * @author auto create
- * @since 1.0, 2025-04-09 11:30:54
+ * @since 1.0, 2025-08-22 14:11:29
  */
 public class AlipayDataDataserviceAdReportdataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3734429979512149151L;
+	private static final long serialVersionUID = 1486825959553147289L;
 
 	/**
 	 * 数据维度：
@@ -24,6 +24,7 @@ GROUP-单元；
 CREATIVE-创意；
 MARKET_TARGET-营销目标；
 PRINCIPAL-商家;
+MATERIAL-素材 （仅biz_version=2.0版本且为全域智投场景下支持素材层级数据）
 【不同数据维度决定了出参data_id代表的数据类型不一样分别为plan_id,group_id,order_id,creative_id，营销目标和商家维度时data_id为空且不返回conversion_data_list数据】
 	 */
 	@ApiField("ad_level")
@@ -44,12 +45,16 @@ PRINCIPAL-商家;
 
 	/**
 	 * 传值为2.0时入参：show_conv_data、conv_time_join_rule、query_type=HOUR，出参：cost_format、cpm、click_rate、cpc、conv_result、cvr、avg_conv_cost生效。
+仅2.0版本支持素材维度数据查询
 	 */
 	@ApiField("biz_version")
 	private String bizVersion;
 
 	/**
-	 * 转化指标Code数组
+	 * 转化指标Code数组，
+当ad_level= MATERIAL的时候，不传，默认输出9个基础指标数据，且最多查询50个；
+其他ad_level层级时，不传默认全部，传入按实际传入指标出数据。
+指标信息获取方式：alipay.data.dataservice.ad.reportmetric.query
 	 */
 	@ApiListField("conv_code_list")
 	@ApiField("string")
@@ -98,6 +103,12 @@ TRUST_TOUFANG-托管式；
 	private List<String> groupIdList;
 
 	/**
+	 * 素材维度，当ad_level= MATERIAL的时候，必填
+	 */
+	@ApiField("material_level")
+	private String materialLevel;
+
+	/**
 	 * 广告投放平台生成的订单ID，此为数据筛选条件不影响数据汇总纬度。
 	 */
 	@ApiListField("order_id_list")
@@ -109,6 +120,14 @@ TRUST_TOUFANG-托管式；
 	 */
 	@ApiField("page_size")
 	private Long pageSize;
+
+	/**
+	 * 素材层级时，可以传入
+广告投放平台生成的图片ID，此为数据筛选条件不影响数据汇总纬度
+	 */
+	@ApiListField("photo_id_list")
+	@ApiField("string")
+	private List<String> photoIdList;
 
 	/**
 	 * 广告投放平台生成的计划ID，此为数据筛选条件不影响数据汇总纬度。
@@ -150,6 +169,14 @@ BRAND-品牌投放
 	 */
 	@ApiField("start_date")
 	private String startDate;
+
+	/**
+	 * 素材层级时，参数生效
+广告投放平台生成的视频ID，此为数据筛选条件不影响数据汇总纬度
+	 */
+	@ApiListField("video_id_list")
+	@ApiField("string")
+	private List<String> videoIdList;
 
 	public String getAdLevel() {
 		return this.adLevel;
@@ -228,6 +255,13 @@ BRAND-品牌投放
 		this.groupIdList = groupIdList;
 	}
 
+	public String getMaterialLevel() {
+		return this.materialLevel;
+	}
+	public void setMaterialLevel(String materialLevel) {
+		this.materialLevel = materialLevel;
+	}
+
 	public List<String> getOrderIdList() {
 		return this.orderIdList;
 	}
@@ -240,6 +274,13 @@ BRAND-品牌投放
 	}
 	public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
+	}
+
+	public List<String> getPhotoIdList() {
+		return this.photoIdList;
+	}
+	public void setPhotoIdList(List<String> photoIdList) {
+		this.photoIdList = photoIdList;
 	}
 
 	public List<String> getPlanIdList() {
@@ -282,6 +323,13 @@ BRAND-品牌投放
 	}
 	public void setStartDate(String startDate) {
 		this.startDate = startDate;
+	}
+
+	public List<String> getVideoIdList() {
+		return this.videoIdList;
+	}
+	public void setVideoIdList(List<String> videoIdList) {
+		this.videoIdList = videoIdList;
 	}
 
 }

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.acommunication.discount.phone.pay request
  * 
  * @author auto create
- * @since 1.0, 2024-06-13 09:57:04
+ * @since 1.0, 2025-08-22 15:22:36
  */
 public class AlipayCommerceAcommunicationDiscountPhonePayRequest implements AlipayRequest<AlipayCommerceAcommunicationDiscountPhonePayResponse> {
 

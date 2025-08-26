@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.gateway.domain.delete response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-19 15:47:35
+ * @since 1.0, 2025-08-22 14:12:36
  */
 public class AlipayCloudCloudbaseGatewayDomainDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7332469441545145622L;
+	private static final long serialVersionUID = 1792791611372218874L;
 
 	/** 
 	 * 接口调用信息

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻企业信用数据产品企业四要素匹配核验
  *
  * @author auto create
- * @since 1.0, 2024-01-11 14:02:50
+ * @since 1.0, 2025-08-21 11:16:00
  */
 public class ZhimaCreditEpDataproductFourelementMatchModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1388963426748865821L;
+	private static final long serialVersionUID = 2754265832313218829L;
 
 	/**
 	 * 企业统一社会信用代码
@@ -30,6 +30,18 @@ public class ZhimaCreditEpDataproductFourelementMatchModel extends AlipayObject 
 	 */
 	@ApiField("fr_cert_no")
 	private String frCertNo;
+
+	/**
+	 * 法人证件号md5值
+	 */
+	@ApiField("fr_cert_no_md_5")
+	private String frCertNoMd5;
+
+	/**
+	 * 法人证件号（身份证号含护照等其他证件）SHA256加密的密文
+	 */
+	@ApiField("fr_cert_no_sha_256")
+	private String frCertNoSha256;
 
 	/**
 	 * 法人姓名
@@ -68,6 +80,20 @@ public class ZhimaCreditEpDataproductFourelementMatchModel extends AlipayObject 
 	}
 	public void setFrCertNo(String frCertNo) {
 		this.frCertNo = frCertNo;
+	}
+
+	public String getFrCertNoMd5() {
+		return this.frCertNoMd5;
+	}
+	public void setFrCertNoMd5(String frCertNoMd5) {
+		this.frCertNoMd5 = frCertNoMd5;
+	}
+
+	public String getFrCertNoSha256() {
+		return this.frCertNoSha256;
+	}
+	public void setFrCertNoSha256(String frCertNoSha256) {
+		this.frCertNoSha256 = frCertNoSha256;
 	}
 
 	public String getFrName() {

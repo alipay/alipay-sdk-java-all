@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceLeasePlanPublishResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4591235829944257873L;
+	private static final long serialVersionUID = 6318356193373176361L;
 
 	/** 
 	 * 租赁计划id

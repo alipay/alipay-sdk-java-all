@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.item.catespu.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-10 11:28:11
+ * @since 1.0, 2025-08-21 14:27:36
  */
 public class AlipayOpenAppItemCatespuQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2344146897966241977L;
+	private static final long serialVersionUID = 7755411635696146139L;
 
 	/** 
 	 * 分页查询的页码。默认从1开始

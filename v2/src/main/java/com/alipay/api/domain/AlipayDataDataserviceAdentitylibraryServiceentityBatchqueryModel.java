@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页查询广告投放实体
  *
  * @author auto create
- * @since 1.0, 2025-07-29 16:58:32
+ * @since 1.0, 2025-08-22 14:05:15
  */
 public class AlipayDataDataserviceAdentitylibraryServiceentityBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6464539253661978768L;
+	private static final long serialVersionUID = 6233371787451925373L;
 
 	/**
 	 * 当前页的页码
@@ -42,6 +42,12 @@ public class AlipayDataDataserviceAdentitylibraryServiceentityBatchqueryModel ex
 	 */
 	@ApiField("principal_tag")
 	private String principalTag;
+
+	/**
+	 * 商品所属的小程序appId
+	 */
+	@ApiField("service_entity_app_id")
+	private String serviceEntityAppId;
 
 	/**
 	 * 用于表示实体来源
@@ -88,6 +94,13 @@ public class AlipayDataDataserviceAdentitylibraryServiceentityBatchqueryModel ex
 	}
 	public void setPrincipalTag(String principalTag) {
 		this.principalTag = principalTag;
+	}
+
+	public String getServiceEntityAppId() {
+		return this.serviceEntityAppId;
+	}
+	public void setServiceEntityAppId(String serviceEntityAppId) {
+		this.serviceEntityAppId = serviceEntityAppId;
 	}
 
 	public String getServiceEntityOutSource() {

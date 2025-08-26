@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pay.instruct.cloud.bind request
  * 
  * @author auto create
- * @since 1.0, 2025-08-13 10:22:37
+ * @since 1.0, 2025-08-22 17:57:36
  */
 public class AlipayPayInstructCloudBindRequest implements AlipayRequest<AlipayPayInstructCloudBindResponse> {
 

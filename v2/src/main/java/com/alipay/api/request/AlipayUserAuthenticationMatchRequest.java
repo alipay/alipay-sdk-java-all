@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.authentication.match request
  * 
  * @author auto create
- * @since 1.0, 2025-08-18 14:32:35
+ * @since 1.0, 2025-08-21 09:58:15
  */
 public class AlipayUserAuthenticationMatchRequest implements AlipayRequest<AlipayUserAuthenticationMatchResponse> {
 

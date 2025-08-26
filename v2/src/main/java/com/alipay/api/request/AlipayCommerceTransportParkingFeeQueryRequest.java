@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.parking.fee.query request
  * 
  * @author auto create
- * @since 1.0, 2025-08-18 15:12:36
+ * @since 1.0, 2025-08-21 10:22:36
  */
 public class AlipayCommerceTransportParkingFeeQueryRequest implements AlipayRequest<AlipayCommerceTransportParkingFeeQueryResponse> {
 

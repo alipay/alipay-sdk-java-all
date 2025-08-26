@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ChargerTradeSettleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8277679669739866313L;
+	private static final long serialVersionUID = 6597264672171164257L;
 
 	/**
 	 * 垫资状态

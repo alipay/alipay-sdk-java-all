@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 科室医生排班列表推荐接口
  *
  * @author auto create
- * @since 1.0, 2025-07-02 09:57:12
+ * @since 1.0, 2025-08-25 14:59:38
  */
 public class AlipayCommerceMedicalLargermodelDepartmentscheduleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7793564936379764972L;
+	private static final long serialVersionUID = 3594589585889918798L;
 
 	/**
 	 * 来源渠道
@@ -74,11 +74,25 @@ false: 不使用兜底召回策略
 	private List<String> hosGradeList;
 
 	/**
+	 * 针对医院机构搜索意图
+	 */
+	@ApiListField("hos_institution_code_list")
+	@ApiField("string")
+	private List<String> hosInstitutionCodeList;
+
+	/**
 	 * 意图识别医院名称列表
 	 */
 	@ApiListField("hos_name_list")
 	@ApiField("string")
 	private List<String> hosNameList;
+
+	/**
+	 * 针对单医院院区搜索意图
+	 */
+	@ApiListField("hos_uniq_code_list")
+	@ApiField("string")
+	private List<String> hosUniqCodeList;
 
 	/**
 	 * LBS纬度
@@ -236,11 +250,25 @@ CHANNEL_SEARCH
 		this.hosGradeList = hosGradeList;
 	}
 
+	public List<String> getHosInstitutionCodeList() {
+		return this.hosInstitutionCodeList;
+	}
+	public void setHosInstitutionCodeList(List<String> hosInstitutionCodeList) {
+		this.hosInstitutionCodeList = hosInstitutionCodeList;
+	}
+
 	public List<String> getHosNameList() {
 		return this.hosNameList;
 	}
 	public void setHosNameList(List<String> hosNameList) {
 		this.hosNameList = hosNameList;
+	}
+
+	public List<String> getHosUniqCodeList() {
+		return this.hosUniqCodeList;
+	}
+	public void setHosUniqCodeList(List<String> hosUniqCodeList) {
+		this.hosUniqCodeList = hosUniqCodeList;
 	}
 
 	public String getLatitude() {

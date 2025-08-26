@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.provider.userinfo.expo.create request
  * 
  * @author auto create
- * @since 1.0, 2025-08-19 10:57:06
+ * @since 1.0, 2025-08-20 20:42:35
  */
 public class AlipayOfflineProviderUserinfoExpoCreateRequest implements AlipayRequest<AlipayOfflineProviderUserinfoExpoCreateResponse> {
 

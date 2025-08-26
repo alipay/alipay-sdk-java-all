@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SearchToggleBoxStatusRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 8845858613688286553L;
+	private static final long serialVersionUID = 2268999376868482986L;
 
 	/**
 	 * 品牌id

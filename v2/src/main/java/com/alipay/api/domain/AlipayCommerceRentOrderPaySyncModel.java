@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租赁订单支付主动同步
  *
  * @author auto create
- * @since 1.0, 2025-08-12 19:12:30
+ * @since 1.0, 2025-08-22 20:57:03
  */
 public class AlipayCommerceRentOrderPaySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3248716461462665178L;
+	private static final long serialVersionUID = 1148468282587828426L;
 
 	/**
 	 * 租赁售后单号
