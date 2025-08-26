@@ -4,16 +4,16 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**create**](AlipayCommerceEcEmployeeTitleApi.md#create) | **POST** /v3/alipay/commerce/ec/employee/title | 新增员工抬头关系 |
-| [**delete**](AlipayCommerceEcEmployeeTitleApi.md#delete) | **POST** /v3/alipay/commerce/ec/employee/title/delete | 删除员工抬头信息 |
+| [**create**](AlipayCommerceEcEmployeeTitleApi.md#create) | **POST** /v3/alipay/commerce/ec/employee/title | 员工抬头：新增员工抬头关系 |
+| [**delete**](AlipayCommerceEcEmployeeTitleApi.md#delete) | **POST** /v3/alipay/commerce/ec/employee/title/delete | 员工抬头：失效员工抬头关系 |
 | [**modify**](AlipayCommerceEcEmployeeTitleApi.md#modify) | **PUT** /v3/alipay/commerce/ec/employee/title | 修改员工抬头信息 |
 
 
 <a name="create"></a>
 # **create**
-> Object create(alipayCommerceEcEmployeeTitleCreateModel)
+> AlipayCommerceEcEmployeeTitleCreateResponseModel create(alipayCommerceEcEmployeeTitleCreateModel)
 
-新增员工抬头关系
+员工抬头：新增员工抬头关系
 
 批量新增员工抬头关系，单次新增最大一千条
 
@@ -42,7 +42,7 @@ public class Example {
     AlipayCommerceEcEmployeeTitleApi apiInstance = new AlipayCommerceEcEmployeeTitleApi(defaultClient);
     AlipayCommerceEcEmployeeTitleCreateModel alipayCommerceEcEmployeeTitleCreateModel = new AlipayCommerceEcEmployeeTitleCreateModel(); // AlipayCommerceEcEmployeeTitleCreateModel | 
     try {
-      Object result = apiInstance.create(alipayCommerceEcEmployeeTitleCreateModel);
+      AlipayCommerceEcEmployeeTitleCreateResponseModel result = apiInstance.create(alipayCommerceEcEmployeeTitleCreateModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayCommerceEcEmployeeTitleApi#create");
@@ -63,7 +63,7 @@ public class Example {
 
 ### Return type
 
-**Object**
+**AlipayCommerceEcEmployeeTitleCreateResponseModel**
 
 ### Authorization
 
@@ -82,11 +82,11 @@ No authorization required
 
 <a name="delete"></a>
 # **delete**
-> Object delete(alipayCommerceEcEmployeeTitleDeleteModel)
+> AlipayCommerceEcEmployeeTitleDeleteResponseModel delete(alipayCommerceEcEmployeeTitleDeleteModel)
 
-删除员工抬头信息
+员工抬头：失效员工抬头关系
 
-批量删除员工抬头信息，单次删除最大一百条
+对员工抬头关系做失效处理。
 
 ### Example
 ```java
@@ -113,7 +113,7 @@ public class Example {
     AlipayCommerceEcEmployeeTitleApi apiInstance = new AlipayCommerceEcEmployeeTitleApi(defaultClient);
     AlipayCommerceEcEmployeeTitleDeleteModel alipayCommerceEcEmployeeTitleDeleteModel = new AlipayCommerceEcEmployeeTitleDeleteModel(); // AlipayCommerceEcEmployeeTitleDeleteModel | 
     try {
-      Object result = apiInstance.delete(alipayCommerceEcEmployeeTitleDeleteModel);
+      AlipayCommerceEcEmployeeTitleDeleteResponseModel result = apiInstance.delete(alipayCommerceEcEmployeeTitleDeleteModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayCommerceEcEmployeeTitleApi#delete");
@@ -134,7 +134,7 @@ public class Example {
 
 ### Return type
 
-**Object**
+**AlipayCommerceEcEmployeeTitleDeleteResponseModel**
 
 ### Authorization
 

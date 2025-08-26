@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="query"></a>
 # **query**
-> ZhimaCustomerJobworthInfoQueryResponseModel query(userName, connKey, certNo, userId, openId, backUrl, certType, kaVisitorId, visitorType, visitorName, companyCertificate, visitorUrl, hasButton, hasNumber, hasQrCode, hasHtml, jobId, industryId, cloudResumeScene)
+> ZhimaCustomerJobworthInfoQueryResponseModel query(connKey, userName, certNo, userId, openId, backUrl, certType, kaVisitorId, visitorType, visitorName, companyCertificate, visitorUrl, hasButton, hasNumber, hasQrCode, hasHtml, jobId, industryId, cloudResumeScene)
 
 职得工作证信息查询
 
@@ -38,8 +38,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     ZhimaCustomerJobworthInfoApi apiInstance = new ZhimaCustomerJobworthInfoApi(defaultClient);
-    String userName = "张三"; // String | 姓名
     String connKey = "ttest11234"; // String | 外部订单号，zhima.credit.payafteruse.creditagreement.sign的入参 out_agreement_no智能简历场景支持只传该值
+    String userName = "张三"; // String | 姓名
     String certNo = "42011719880304XXXX"; // String | 证件号 ，根据cert_type类型设置对应证件号码，选择身份证校验时必传
     String userId = "2088XXXXXXXX"; // String | 蚂蚁统一会员ID ，为2088开头的唯一标识 选择支付宝uid检验时必传，支付宝uid或身份证+身份证类型 查询2选1，都设置时uid优先
     String openId = "074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5"; // String | 蚂蚁统一会员ID ，为2088开头的唯一标识 选择支付宝uid检验时必传，支付宝uid或身份证+身份证类型 查询2选1，都设置时uid优先
@@ -58,7 +58,7 @@ public class Example {
     String industryId = "05A21"; // String | 行业描述ID
     String cloudResumeScene = "GREEN_HIRE"; // String | 子场景
     try {
-      ZhimaCustomerJobworthInfoQueryResponseModel result = apiInstance.query(userName, connKey, certNo, userId, openId, backUrl, certType, kaVisitorId, visitorType, visitorName, companyCertificate, visitorUrl, hasButton, hasNumber, hasQrCode, hasHtml, jobId, industryId, cloudResumeScene);
+      ZhimaCustomerJobworthInfoQueryResponseModel result = apiInstance.query(connKey, userName, certNo, userId, openId, backUrl, certType, kaVisitorId, visitorType, visitorName, companyCertificate, visitorUrl, hasButton, hasNumber, hasQrCode, hasHtml, jobId, industryId, cloudResumeScene);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling ZhimaCustomerJobworthInfoApi#query");
@@ -75,8 +75,8 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **userName** | **String**| 姓名 | [optional] |
 | **connKey** | **String**| 外部订单号，zhima.credit.payafteruse.creditagreement.sign的入参 out_agreement_no智能简历场景支持只传该值 | [optional] |
+| **userName** | **String**| 姓名 | [optional] |
 | **certNo** | **String**| 证件号 ，根据cert_type类型设置对应证件号码，选择身份证校验时必传 | [optional] |
 | **userId** | **String**| 蚂蚁统一会员ID ，为2088开头的唯一标识 选择支付宝uid检验时必传，支付宝uid或身份证+身份证类型 查询2选1，都设置时uid优先 | [optional] |
 | **openId** | **String**| 蚂蚁统一会员ID ，为2088开头的唯一标识 选择支付宝uid检验时必传，支付宝uid或身份证+身份证类型 查询2选1，都设置时uid优先 | [optional] |

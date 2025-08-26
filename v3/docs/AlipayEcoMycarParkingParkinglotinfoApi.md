@@ -155,7 +155,7 @@ No authorization required
 
 <a name="update"></a>
 # **update**
-> Object update(alipayEcoMycarParkingParkinglotinfoUpdateModel)
+> AlipayEcoMycarParkingParkinglotinfoUpdateResponseModel update(alipayEcoMycarParkingParkinglotinfoUpdateModel)
 
 修改停车场信息
 
@@ -186,7 +186,7 @@ public class Example {
     AlipayEcoMycarParkingParkinglotinfoApi apiInstance = new AlipayEcoMycarParkingParkinglotinfoApi(defaultClient);
     AlipayEcoMycarParkingParkinglotinfoUpdateModel alipayEcoMycarParkingParkinglotinfoUpdateModel = new AlipayEcoMycarParkingParkinglotinfoUpdateModel(); // AlipayEcoMycarParkingParkinglotinfoUpdateModel | 
     try {
-      Object result = apiInstance.update(alipayEcoMycarParkingParkinglotinfoUpdateModel);
+      AlipayEcoMycarParkingParkinglotinfoUpdateResponseModel result = apiInstance.update(alipayEcoMycarParkingParkinglotinfoUpdateModel);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayEcoMycarParkingParkinglotinfoApi#update");
@@ -207,7 +207,7 @@ public class Example {
 
 ### Return type
 
-**Object**
+**AlipayEcoMycarParkingParkinglotinfoUpdateResponseModel**
 
 ### Authorization
 

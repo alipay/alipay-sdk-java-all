@@ -4,17 +4,17 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**batchquery**](AlipayEbppInvoiceEnterpriseexctrlEmployertitleApi.md#batchquery) | **POST** /v3/alipay/ebpp/invoice/enterpriseexctrl/employertitle/batchquery | 批量查询企业抬头 |
-| [**create**](AlipayEbppInvoiceEnterpriseexctrlEmployertitleApi.md#create) | **POST** /v3/alipay/ebpp/invoice/enterpriseexctrl/employertitle/create | 新增企业抬头 |
-| [**modify**](AlipayEbppInvoiceEnterpriseexctrlEmployertitleApi.md#modify) | **PUT** /v3/alipay/ebpp/invoice/enterpriseexctrl/employertitle | 修改企业抬头 |
-| [**query**](AlipayEbppInvoiceEnterpriseexctrlEmployertitleApi.md#query) | **GET** /v3/alipay/ebpp/invoice/enterpriseexctrl/employertitle/query | 查询企业抬头 |
+| [**batchquery**](AlipayEbppInvoiceEnterpriseexctrlEmployertitleApi.md#batchquery) | **POST** /v3/alipay/ebpp/invoice/enterpriseexctrl/employertitle/batchquery | 企业抬头：分页查询企业抬头信息 |
+| [**create**](AlipayEbppInvoiceEnterpriseexctrlEmployertitleApi.md#create) | **POST** /v3/alipay/ebpp/invoice/enterpriseexctrl/employertitle/create | 企业抬头：新增企业抬头 |
+| [**modify**](AlipayEbppInvoiceEnterpriseexctrlEmployertitleApi.md#modify) | **PUT** /v3/alipay/ebpp/invoice/enterpriseexctrl/employertitle | 企业抬头：修改企业抬头 |
+| [**query**](AlipayEbppInvoiceEnterpriseexctrlEmployertitleApi.md#query) | **GET** /v3/alipay/ebpp/invoice/enterpriseexctrl/employertitle/query | 企业抬头：查询企业抬头 |
 
 
 <a name="batchquery"></a>
 # **batchquery**
 > AlipayEbppInvoiceEnterpriseexctrlEmployertitleBatchqueryResponseModel batchquery(alipayEbppInvoiceEnterpriseexctrlEmployertitleBatchqueryModel)
 
-批量查询企业抬头
+企业抬头：分页查询企业抬头信息
 
 分页查询企业抬头列表
 
@@ -85,7 +85,7 @@ No authorization required
 # **create**
 > AlipayEbppInvoiceEnterpriseexctrlEmployertitleCreateResponseModel create(alipayEbppInvoiceEnterpriseexctrlEmployertitleCreateModel)
 
-新增企业抬头
+企业抬头：新增企业抬头
 
 新增一条企业开票抬头
 
@@ -156,7 +156,7 @@ No authorization required
 # **modify**
 > AlipayEbppInvoiceEnterpriseexctrlEmployertitleModifyResponseModel modify(alipayEbppInvoiceEnterpriseexctrlEmployertitleModifyModel)
 
-修改企业抬头
+企业抬头：修改企业抬头
 
 修改企业开票抬头
 
@@ -225,9 +225,9 @@ No authorization required
 
 <a name="query"></a>
 # **query**
-> AlipayEbppInvoiceEnterpriseexctrlEmployertitleQueryResponseModel query(accountId, enterpriseId, agreementNo, titleId)
+> AlipayEbppInvoiceEnterpriseexctrlEmployertitleQueryResponseModel query(accountId, enterpriseId, agreementNo, titleId, taxRegisterNo)
 
-查询企业抬头
+企业抬头：查询企业抬头
 
 根据抬头ID查询企业抬头详情
 
@@ -258,8 +258,9 @@ public class Example {
     String enterpriseId = "2088123412341234"; // String | 企业id
     String agreementNo = "20215425001181407500"; // String | 授权签约协议号
     String titleId = "2022110200152710030000000003"; // String | 抬头ID
+    String taxRegisterNo = "9133*********5852F"; // String | 税号
     try {
-      AlipayEbppInvoiceEnterpriseexctrlEmployertitleQueryResponseModel result = apiInstance.query(accountId, enterpriseId, agreementNo, titleId);
+      AlipayEbppInvoiceEnterpriseexctrlEmployertitleQueryResponseModel result = apiInstance.query(accountId, enterpriseId, agreementNo, titleId, taxRegisterNo);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayEbppInvoiceEnterpriseexctrlEmployertitleApi#query");
@@ -280,6 +281,7 @@ public class Example {
 | **enterpriseId** | **String**| 企业id | [optional] |
 | **agreementNo** | **String**| 授权签约协议号 | [optional] |
 | **titleId** | **String**| 抬头ID | [optional] |
+| **taxRegisterNo** | **String**| 税号 | [optional] |
 
 ### Return type
 

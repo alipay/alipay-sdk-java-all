@@ -6,7 +6,6 @@ All URIs are relative to *https://openapi.alipay.com*
 |------------- | ------------- | -------------|
 | [**online**](AlipayOpenMiniInnerversionApi.md#online) | **POST** /v3/alipay/open/mini/innerversion/online | 内部小程序-上架 |
 | [**sync**](AlipayOpenMiniInnerversionApi.md#sync) | **POST** /v3/alipay/open/mini/innerversion/sync | 小程序包信息推送 |
-| [**upgrade**](AlipayOpenMiniInnerversionApi.md#upgrade) | **POST** /v3/alipay/open/mini/innerversion/upgrade | 升级模板实例化小程序 |
 | [**upload**](AlipayOpenMiniInnerversionApi.md#upload) | **POST** /v3/alipay/open/mini/innerversion/upload | 内部小程序-打包构建 |
 
 
@@ -132,77 +131,6 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **alipayOpenMiniInnerversionSyncModel** | **AlipayOpenMiniInnerversionSyncModel**|  | [optional] |
-
-### Return type
-
-**Object**
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | common response |  -  |
-| **0** | 请求失败 |  -  |
-
-<a name="upgrade"></a>
-# **upgrade**
-> Object upgrade(alipayOpenMiniInnerversionUpgradeModel)
-
-升级模板实例化小程序
-
-升级基于模板实例化的小程序，升级后不需要重新提交审核；同步接口。
-
-### Example
-```java
-// Import classes:
-import com.alipay.v3.ApiClient;
-import com.alipay.v3.ApiException;
-import com.alipay.v3.Configuration;
-import com.alipay.v3.util.*;
-import com.alipay.v3.api.models.*;
-import com.alipay.v3.api.AlipayOpenMiniInnerversionApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://openapi.alipay.com");
-    // 设置alipayConfig参数（全局设置一次）
-    AlipayConfig config = new AlipayConfig();
-    config.setAppId("app_id");
-    config.setPrivateKey("private_key");
-    config.setAlipayPublicKey("alipay_public_key");
-    config.setEncryptKey("encrypt_key");
-    defaultClient.setAlipayConfig(config);
-
-    AlipayOpenMiniInnerversionApi apiInstance = new AlipayOpenMiniInnerversionApi(defaultClient);
-    AlipayOpenMiniInnerversionUpgradeModel alipayOpenMiniInnerversionUpgradeModel = new AlipayOpenMiniInnerversionUpgradeModel(); // AlipayOpenMiniInnerversionUpgradeModel | 
-    try {
-      Object result = apiInstance.upgrade(alipayOpenMiniInnerversionUpgradeModel);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling AlipayOpenMiniInnerversionApi#upgrade");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **alipayOpenMiniInnerversionUpgradeModel** | **AlipayOpenMiniInnerversionUpgradeModel**|  | [optional] |
 
 ### Return type
 

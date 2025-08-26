@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="query"></a>
 # **query**
-> AlipayDataBillAccountlogQueryResponseModel query(startTime, endTime, alipayOrderNo, merchantOrderNo, pageNo, pageSize, transCode, agreementNo, agreementProductCode, billUserId)
+> AlipayDataBillAccountlogQueryResponseModel query(startTime, endTime, alipayOrderNo, merchantOrderNo, pageNo, pageSize, transCode, agreementNo, agreementProductCode, billUserId, openId)
 
 支付宝商家账户账务明细查询
 
@@ -38,8 +38,8 @@ public class Example {
     defaultClient.setAlipayConfig(config);
 
     AlipayDataBillAccountlogApi apiInstance = new AlipayDataBillAccountlogApi(defaultClient);
-    String startTime = "2019-01-01 00:00:00"; // String | 账务流水创建时间的起始范围。只能查询一年内的记录
-    String endTime = "2019-01-02 00:00:00"; // String | 账务流水创建时间的结束范围。与起始时间间隔不超过31天。查询结果为起始时间至结束时间的左闭右开区间
+    String startTime = "2019-01-01 00:00:00"; // String | 账务流水创建时间的起始范围。只能查询一年内的记录。精确查询不需要指定
+    String endTime = "2019-01-02 00:00:00"; // String | 账务流水创建时间的结束范围。与起始时间间隔不超过31天。查询结果为起始时间至结束时间的左闭右开区间。精确查询不需要指定
     String alipayOrderNo = "20190101***"; // String | 支付宝订单号，通过支付宝订单号精确查询相关的流水明细，商户订单号与支付宝订单号互斥
     String merchantOrderNo = "TX***"; // String | 商户订单号，通过商户订单号精确查询相关的流水明细，商户订单号与支付宝订单号互斥
     String pageNo = "1"; // String | 分页号，从1开始
@@ -48,8 +48,9 @@ public class Example {
     String agreementNo = "20215606000635888888"; // String | 协议授权码，特殊场景下使用
     String agreementProductCode = "FUND_SIGN_WITHHOLDING"; // String | 协议产品码。特殊场景下使用
     String billUserId = "2088123456789012"; // String | 指定用户做账单查询
+    String openId = "074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5"; // String | 用于标记支付宝用户在应用下的唯一标识
     try {
-      AlipayDataBillAccountlogQueryResponseModel result = apiInstance.query(startTime, endTime, alipayOrderNo, merchantOrderNo, pageNo, pageSize, transCode, agreementNo, agreementProductCode, billUserId);
+      AlipayDataBillAccountlogQueryResponseModel result = apiInstance.query(startTime, endTime, alipayOrderNo, merchantOrderNo, pageNo, pageSize, transCode, agreementNo, agreementProductCode, billUserId, openId);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayDataBillAccountlogApi#query");
@@ -66,8 +67,8 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **startTime** | **String**| 账务流水创建时间的起始范围。只能查询一年内的记录 | [optional] |
-| **endTime** | **String**| 账务流水创建时间的结束范围。与起始时间间隔不超过31天。查询结果为起始时间至结束时间的左闭右开区间 | [optional] |
+| **startTime** | **String**| 账务流水创建时间的起始范围。只能查询一年内的记录。精确查询不需要指定 | [optional] |
+| **endTime** | **String**| 账务流水创建时间的结束范围。与起始时间间隔不超过31天。查询结果为起始时间至结束时间的左闭右开区间。精确查询不需要指定 | [optional] |
 | **alipayOrderNo** | **String**| 支付宝订单号，通过支付宝订单号精确查询相关的流水明细，商户订单号与支付宝订单号互斥 | [optional] |
 | **merchantOrderNo** | **String**| 商户订单号，通过商户订单号精确查询相关的流水明细，商户订单号与支付宝订单号互斥 | [optional] |
 | **pageNo** | **String**| 分页号，从1开始 | [optional] |
@@ -76,6 +77,7 @@ public class Example {
 | **agreementNo** | **String**| 协议授权码，特殊场景下使用 | [optional] |
 | **agreementProductCode** | **String**| 协议产品码。特殊场景下使用 | [optional] |
 | **billUserId** | **String**| 指定用户做账单查询 | [optional] |
+| **openId** | **String**| 用于标记支付宝用户在应用下的唯一标识 | [optional] |
 
 ### Return type
 

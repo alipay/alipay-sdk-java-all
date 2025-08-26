@@ -10,7 +10,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="modify"></a>
 # **modify**
-> Object modify(appLogo, data)
+> AlipayOpenMiniBaseinfoModifyResponseModel modify(appLogo, data)
 
 小程序修改基础信息
 
@@ -42,7 +42,7 @@ public class Example {
     File appLogo = new File("/path/to/file"); // File | 
     AlipayOpenMiniBaseinfoModifyModel data = new AlipayOpenMiniBaseinfoModifyModel(); // AlipayOpenMiniBaseinfoModifyModel | 
     try {
-      Object result = apiInstance.modify(appLogo, data);
+      AlipayOpenMiniBaseinfoModifyResponseModel result = apiInstance.modify(appLogo, data);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayOpenMiniBaseinfoApi#modify");
@@ -64,7 +64,7 @@ public class Example {
 
 ### Return type
 
-**Object**
+**AlipayOpenMiniBaseinfoModifyResponseModel**
 
 ### Authorization
 

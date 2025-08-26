@@ -81,7 +81,7 @@ No authorization required
 
 <a name="query"></a>
 # **query**
-> AlipayCommerceEcEmployeeInfoQueryResponseModel query(enterpriseId, employeeId, openId, userId, mobile)
+> AlipayCommerceEcEmployeeInfoQueryResponseModel query(enterpriseId, openId, userId, employeeId, mobile, alipayLogonId, employeeCertType, employeeCertNo, employeeEmail)
 
 查询员工详情
 
@@ -111,12 +111,16 @@ public class Example {
 
     AlipayCommerceEcEmployeeInfoApi apiInstance = new AlipayCommerceEcEmployeeInfoApi(defaultClient);
     String enterpriseId = "2088441363102941"; // String | 企业id
-    String employeeId = "228420000000057942506"; // String | 员工id
     String openId = "074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5"; // String | 蚂蚁统一会员ID
-    String userId = "2088501304519332"; // String | 蚂蚁统一会员ID
+    String userId = "2088501304519332"; // String | 支付宝用户ID
+    String employeeId = "2284200000000000"; // String | 员工id
     String mobile = "134XXXX2526"; // String | 员工手机号码
+    String alipayLogonId = "134xxxx2526"; // String | 支付宝登录号（手机号或邮箱）
+    String employeeCertType = "IDENTITY_CARD"; // String | 员工证件类型
+    String employeeCertNo = "220000000000000000"; // String | 员工证件号码
+    String employeeEmail = "123@xxx.com"; // String | 员工邮箱
     try {
-      AlipayCommerceEcEmployeeInfoQueryResponseModel result = apiInstance.query(enterpriseId, employeeId, openId, userId, mobile);
+      AlipayCommerceEcEmployeeInfoQueryResponseModel result = apiInstance.query(enterpriseId, openId, userId, employeeId, mobile, alipayLogonId, employeeCertType, employeeCertNo, employeeEmail);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AlipayCommerceEcEmployeeInfoApi#query");
@@ -134,10 +138,14 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **enterpriseId** | **String**| 企业id | [optional] |
-| **employeeId** | **String**| 员工id | [optional] |
 | **openId** | **String**| 蚂蚁统一会员ID | [optional] |
-| **userId** | **String**| 蚂蚁统一会员ID | [optional] |
+| **userId** | **String**| 支付宝用户ID | [optional] |
+| **employeeId** | **String**| 员工id | [optional] |
 | **mobile** | **String**| 员工手机号码 | [optional] |
+| **alipayLogonId** | **String**| 支付宝登录号（手机号或邮箱） | [optional] |
+| **employeeCertType** | **String**| 员工证件类型 | [optional] |
+| **employeeCertNo** | **String**| 员工证件号码 | [optional] |
+| **employeeEmail** | **String**| 员工邮箱 | [optional] |
 
 ### Return type
 
