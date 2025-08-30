@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DepositBackInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4846468537334267635L;
+	private static final long serialVersionUID = 3373311192699534139L;
 
 	/**
 	 * 银行响应时间，格式为yyyy-MM-dd HH:mm:ss

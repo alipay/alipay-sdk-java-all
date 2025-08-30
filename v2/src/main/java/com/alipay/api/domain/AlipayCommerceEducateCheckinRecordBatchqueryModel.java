@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量查询签到记录
  *
  * @author auto create
- * @since 1.0, 2025-07-24 14:19:40
+ * @since 1.0, 2025-08-29 19:41:25
  */
 public class AlipayCommerceEducateCheckinRecordBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5644293427934929861L;
+	private static final long serialVersionUID = 2793725196823271371L;
 
 	/**
 	 * 签到结束时间
@@ -34,6 +34,12 @@ public class AlipayCommerceEducateCheckinRecordBatchqueryModel extends AlipayObj
 	 */
 	@ApiField("check_in_start_time")
 	private Date checkInStartTime;
+
+	/**
+	 * 签到状态
+	 */
+	@ApiField("check_in_status")
+	private String checkInStatus;
 
 	/**
 	 * 签到类型，由学生签到时，匹配到的签到规则决定
@@ -117,6 +123,13 @@ public class AlipayCommerceEducateCheckinRecordBatchqueryModel extends AlipayObj
 	}
 	public void setCheckInStartTime(Date checkInStartTime) {
 		this.checkInStartTime = checkInStartTime;
+	}
+
+	public String getCheckInStatus() {
+		return this.checkInStatus;
+	}
+	public void setCheckInStatus(String checkInStatus) {
+		this.checkInStatus = checkInStatus;
 	}
 
 	public String getCheckInType() {

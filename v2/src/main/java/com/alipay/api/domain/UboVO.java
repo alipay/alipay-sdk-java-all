@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class UboVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8491891559589615723L;
+	private static final long serialVersionUID = 1161899612558253686L;
 
 	/**
 	 * 职务

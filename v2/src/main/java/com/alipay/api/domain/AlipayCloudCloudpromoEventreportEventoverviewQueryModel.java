@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCloudCloudpromoEventreportEventoverviewQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3362878613714992668L;
+	private static final long serialVersionUID = 6666631533388964812L;
 
 	/**
 	 * 自定义事件报表的查询请求参数

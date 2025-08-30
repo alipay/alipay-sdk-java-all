@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FqNumChargeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5449983517171678918L;
+	private static final long serialVersionUID = 5586436812964691483L;
 
 	/**
 	 * 分期数

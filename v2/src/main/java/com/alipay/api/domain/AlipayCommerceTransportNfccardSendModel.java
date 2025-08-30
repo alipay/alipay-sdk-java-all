@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportNfccardSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1384121321141413569L;
+	private static final long serialVersionUID = 7769471567725371233L;
 
 	/**
 	 * 发卡方pid

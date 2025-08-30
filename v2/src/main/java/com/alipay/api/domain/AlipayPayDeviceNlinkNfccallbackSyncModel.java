@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 碰一下业务数据回传设备
  *
  * @author auto create
- * @since 1.0, 2025-08-13 10:18:30
+ * @since 1.0, 2025-08-29 17:26:09
  */
 public class AlipayPayDeviceNlinkNfccallbackSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5328274938681344656L;
+	private static final long serialVersionUID = 2852247877339635921L;
 
 	/**
 	 * 业务code

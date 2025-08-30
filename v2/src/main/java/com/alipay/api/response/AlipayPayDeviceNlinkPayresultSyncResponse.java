@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pay.device.nlink.payresult.sync response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-21 15:04:14
+ * @since 1.0, 2025-08-27 14:47:36
  */
 public class AlipayPayDeviceNlinkPayresultSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4848671632819545573L;
+	private static final long serialVersionUID = 5883181655229148915L;
 
 	
 

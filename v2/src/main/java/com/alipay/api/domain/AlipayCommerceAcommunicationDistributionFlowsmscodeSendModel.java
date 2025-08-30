@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 流量分销发送验证码
  *
  * @author auto create
- * @since 1.0, 2024-11-12 15:39:16
+ * @since 1.0, 2025-08-27 13:33:13
  */
 public class AlipayCommerceAcommunicationDistributionFlowsmscodeSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8676791991238537928L;
+	private static final long serialVersionUID = 8885881293114965317L;
 
 	/**
 	 * 分销商订单号

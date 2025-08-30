@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.logistics.activity.access.consult response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-26 10:32:36
+ * @since 1.0, 2025-08-28 14:22:37
  */
 public class AlipayCommerceLogisticsActivityAccessConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4357915699697478621L;
+	private static final long serialVersionUID = 4322327915478877364L;
 
 	/** 
 	 * true表示可参加活动，false表示不可参加活动

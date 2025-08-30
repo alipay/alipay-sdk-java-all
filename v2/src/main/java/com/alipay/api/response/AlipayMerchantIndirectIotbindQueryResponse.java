@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.indirect.iotbind.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-22 13:36:57
+ * @since 1.0, 2025-08-27 10:12:36
  */
 public class AlipayMerchantIndirectIotbindQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8541573499872969736L;
+	private static final long serialVersionUID = 7589239935415242878L;
 
 	/** 
 	 * 设备绑定状态：BIND代表绑定，UNBIND代表未绑定
@@ -40,10 +40,22 @@ public class AlipayMerchantIndirectIotbindQueryResponse extends AlipayResponse {
 	private String encodeUrl;
 
 	/** 
+	 * 最近一次预投的非支付宝交易到账播报语料ID。
+	 */
+	@ApiField("msg_id")
+	private String msgId;
+
+	/** 
 	 * 设备绑定的商户在支付宝体系内的唯一id,一般以2088开头。设备处于已绑定状态时会返回对应绑定商户id。如果设备没有绑定过或者已经解绑，该字段为空
 	 */
 	@ApiField("smid")
 	private String smid;
+
+	/** 
+	 * 最近一次预投的非支付宝交易到账播报语料内容。
+	 */
+	@ApiField("speech_content")
+	private String speechContent;
 
 	/** 
 	 * 不同物联网平台接入渠道不同值，支付宝物联网平台传设备sourceId号，阿里云物联网平台传设备productKey
@@ -79,11 +91,25 @@ public class AlipayMerchantIndirectIotbindQueryResponse extends AlipayResponse {
 		return this.encodeUrl;
 	}
 
+	public void setMsgId(String msgId) {
+		this.msgId = msgId;
+	}
+	public String getMsgId( ) {
+		return this.msgId;
+	}
+
 	public void setSmid(String smid) {
 		this.smid = smid;
 	}
 	public String getSmid( ) {
 		return this.smid;
+	}
+
+	public void setSpeechContent(String speechContent) {
+		this.speechContent = speechContent;
+	}
+	public String getSpeechContent( ) {
+		return this.speechContent;
 	}
 
 	public void setSupplierId(String supplierId) {

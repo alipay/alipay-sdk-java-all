@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.roster.identity.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-01 11:27:35
+ * @since 1.0, 2025-08-29 09:44:12
  */
 public class AlipayCommerceEducateRosterIdentityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8834132569744299666L;
+	private static final long serialVersionUID = 5859274995311699988L;
 
 	/** 
 	 * 人员所属的部门、学院或班级名称

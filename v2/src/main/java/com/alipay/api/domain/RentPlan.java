@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RentPlan extends AlipayObject {
 
-	private static final long serialVersionUID = 2626354185852961896L;
+	private static final long serialVersionUID = 3362661837873347542L;
 
 	/**
 	 * 实际还款时间

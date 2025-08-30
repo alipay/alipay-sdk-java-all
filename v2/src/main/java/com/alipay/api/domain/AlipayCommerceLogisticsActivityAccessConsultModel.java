@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 我的快递营销活动准入咨询服务
  *
  * @author auto create
- * @since 1.0, 2025-08-26 10:32:36
+ * @since 1.0, 2025-08-28 14:22:37
  */
 public class AlipayCommerceLogisticsActivityAccessConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1817291738562545236L;
+	private static final long serialVersionUID = 2848886138523315817L;
 
 	/**
 	 * 约定值，可找对接方技术确认，数字和字母组成的字符，长度在8-32之间

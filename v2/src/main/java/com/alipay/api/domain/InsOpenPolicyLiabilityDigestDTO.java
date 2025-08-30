@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsOpenPolicyLiabilityDigestDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6645816176892336288L;
+	private static final long serialVersionUID = 3737371951696866976L;
 
 	/**
 	 * 蚂蚁保某个保险产品的责任名称

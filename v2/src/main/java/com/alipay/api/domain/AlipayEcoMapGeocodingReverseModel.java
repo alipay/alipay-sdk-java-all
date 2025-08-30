@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoMapGeocodingReverseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2141757966196618998L;
+	private static final long serialVersionUID = 5211523191733466152L;
 
 	/**
 	 * 渠道 0-高德地图 1-百度地图

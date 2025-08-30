@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RankSaleTrendResult extends AlipayObject {
 
-	private static final long serialVersionUID = 3819778567936181372L;
+	private static final long serialVersionUID = 3226663417157141963L;
 
 	/**
 	 * 城市名称

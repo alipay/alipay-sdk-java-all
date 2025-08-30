@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 权益账户开户
  *
  * @author auto create
- * @since 1.0, 2025-08-01 17:18:24
+ * @since 1.0, 2025-08-29 11:05:55
  */
 public class AlipayMarketingBenefitaccountAccountCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7818683913323467457L;
+	private static final long serialVersionUID = 1586226253526533146L;
 
 	/**
 	 * 授权信息
@@ -28,6 +28,12 @@ public class AlipayMarketingBenefitaccountAccountCreateModel extends AlipayObjec
 	 */
 	@ApiField("biz_from")
 	private String bizFrom;
+
+	/**
+	 * 业务身份，由支付宝侧分配，目前权益账户传递benefit_account，信用红包传递credit_coupon
+	 */
+	@ApiField("biz_identity")
+	private String bizIdentity;
 
 	/**
 	 * 业务订单号-用于户号幂等，一个户号一个bizNo业务订单号
@@ -79,6 +85,12 @@ public class AlipayMarketingBenefitaccountAccountCreateModel extends AlipayObjec
 	@ApiField("publisher_user_id")
 	private String publisherUserId;
 
+	/**
+	 * 核身口令
+	 */
+	@ApiField("verify_id")
+	private String verifyId;
+
 	public FsAuthorizationInfoForm getAuthorizationInfo() {
 		return this.authorizationInfo;
 	}
@@ -91,6 +103,13 @@ public class AlipayMarketingBenefitaccountAccountCreateModel extends AlipayObjec
 	}
 	public void setBizFrom(String bizFrom) {
 		this.bizFrom = bizFrom;
+	}
+
+	public String getBizIdentity() {
+		return this.bizIdentity;
+	}
+	public void setBizIdentity(String bizIdentity) {
+		this.bizIdentity = bizIdentity;
 	}
 
 	public String getBizNo() {
@@ -147,6 +166,13 @@ public class AlipayMarketingBenefitaccountAccountCreateModel extends AlipayObjec
 	}
 	public void setPublisherUserId(String publisherUserId) {
 		this.publisherUserId = publisherUserId;
+	}
+
+	public String getVerifyId() {
+		return this.verifyId;
+	}
+	public void setVerifyId(String verifyId) {
+		this.verifyId = verifyId;
 	}
 
 }

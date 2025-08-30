@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.fhyedu.learnplan.sync response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-06 17:22:36
+ * @since 1.0, 2025-08-29 14:32:38
  */
 public class AlipayCommerceFhyeduLearnplanSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2641247887245716415L;
+	private static final long serialVersionUID = 4382358379349286875L;
 
 	
 

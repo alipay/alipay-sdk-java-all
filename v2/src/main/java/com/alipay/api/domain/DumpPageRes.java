@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class DumpPageRes extends AlipayObject {
 
-	private static final long serialVersionUID = 2838744471766114855L;
+	private static final long serialVersionUID = 7766145176558952528L;
 
 	/**
 	 * 元素为单个dump任务的信息

@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserApplepayOtpresolutionmethodsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5393891612655526793L;
+	private static final long serialVersionUID = 1855641925589278228L;
 
 	/** 
 	 * OpenApi的Otp校验方法负责对象

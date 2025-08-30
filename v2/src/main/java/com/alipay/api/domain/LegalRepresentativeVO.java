@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LegalRepresentativeVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7791371336766953755L;
+	private static final long serialVersionUID = 1573783271294124683L;
 
 	/**
 	 * 职务

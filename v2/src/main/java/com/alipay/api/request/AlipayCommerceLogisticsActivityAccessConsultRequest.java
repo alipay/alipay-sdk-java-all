@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.logistics.activity.access.consult request
  * 
  * @author auto create
- * @since 1.0, 2025-08-26 10:32:36
+ * @since 1.0, 2025-08-28 14:22:37
  */
 public class AlipayCommerceLogisticsActivityAccessConsultRequest implements AlipayRequest<AlipayCommerceLogisticsActivityAccessConsultResponse> {
 

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-08-06 17:12:35
+ * @since 1.0, 2025-08-29 14:32:38
  */
 public class EduOrderCourseDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6722156237365881856L;
+	private static final long serialVersionUID = 6444584757961278239L;
 
 	/**
 	 * 上课结束日期
@@ -34,7 +34,7 @@ public class EduOrderCourseDetail extends AlipayObject {
 	private Date courseStartDate;
 
 	/**
-	 * 直减金额/手续费/亏损费，度量单位人民币。
+	 * 直减金额/手续费/亏损费，度量单位人民币，单位：元。
 	 */
 	@ApiField("deduction_amount")
 	private String deductionAmount;
@@ -94,13 +94,13 @@ YUAN：元
 	private String oriOrderId;
 
 	/**
-	 * 商品原金额/转出金额（含手续费）/转出金额（不含亏损费）
+	 * 商品原金额/转出金额（含手续费）/转出金额（不含亏损费），单位：元。
 	 */
 	@ApiField("original_price")
 	private String originalPrice;
 
 	/**
-	 * 优惠后金额/转出金额（不含手续费）/转出金额（含亏损费）
+	 * 优惠后金额/转出金额（不含手续费）/转出金额（含亏损费），单位：元。
 	 */
 	@ApiField("original_price_after_discount")
 	private String originalPriceAfterDiscount;
@@ -139,7 +139,7 @@ PACKET：笔
 	private String quantityUnit;
 
 	/**
-	 * 商品规格价格
+	 * 商品规格价格，单位：元。
 	 */
 	@ApiField("spec_current_price")
 	private String specCurrentPrice;
@@ -169,7 +169,7 @@ PACKET：笔
 	private String suiteCommodityName;
 
 	/**
-	 * 欠费金额
+	 * 欠费金额，单位：元。
 	 */
 	@ApiField("unpaid_amount")
 	private String unpaidAmount;

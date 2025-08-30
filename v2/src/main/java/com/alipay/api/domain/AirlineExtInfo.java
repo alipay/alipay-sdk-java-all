@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AirlineExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7143422272978185934L;
+	private static final long serialVersionUID = 6272269715992811725L;
 
 	/**
 	 * 航班到达的准点率

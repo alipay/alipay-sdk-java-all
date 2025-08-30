@@ -1,5 +1,6 @@
 package com.alipay.api.response;
 
+import com.alipay.api.internal.mapping.ApiField;
 
 import com.alipay.api.AlipayResponse;
 
@@ -7,14 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.indirect.iotcover.bind response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-22 13:36:32
+ * @since 1.0, 2025-08-27 10:12:37
  */
 public class AlipayMerchantIndirectIotcoverBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8891623899517495864L;
+	private static final long serialVersionUID = 8161422241398119565L;
 
-	
+	/** 
+	 * 非支付宝交易到账播报语料ID，仅入参中传入speech_content时会返回该值。
+	 */
+	@ApiField("msg_id")
+	private String msgId;
 
-	
+	public void setMsgId(String msgId) {
+		this.msgId = msgId;
+	}
+	public String getMsgId( ) {
+		return this.msgId;
+	}
 
 }

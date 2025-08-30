@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class QrcodeWhiteList extends AlipayObject {
 
-	private static final long serialVersionUID = 2462839372883422423L;
+	private static final long serialVersionUID = 3242522989715314652L;
 
 	/**
 	 * 小程序id或域名

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签到记录
  *
  * @author auto create
- * @since 1.0, 2025-07-24 14:19:40
+ * @since 1.0, 2025-08-29 19:41:25
  */
 public class EduCheckInRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 2217852188189948659L;
+	private static final long serialVersionUID = 1141624976251297128L;
 
 	/**
 	 * 签到图片链接
@@ -34,6 +34,12 @@ public class EduCheckInRecord extends AlipayObject {
 	private String checkInSourceType;
 
 	/**
+	 * 签到状态
+	 */
+	@ApiField("check_in_status")
+	private String checkInStatus;
+
+	/**
 	 * 签到时间
 	 */
 	@ApiField("check_in_time")
@@ -44,6 +50,18 @@ public class EduCheckInRecord extends AlipayObject {
 	 */
 	@ApiField("check_in_type")
 	private String checkInType;
+
+	/**
+	 * 签退图片url
+	 */
+	@ApiField("check_out_picture")
+	private String checkOutPicture;
+
+	/**
+	 * 签退时间
+	 */
+	@ApiField("check_out_time")
+	private Date checkOutTime;
 
 	/**
 	 * 学号或工号
@@ -132,6 +150,13 @@ public class EduCheckInRecord extends AlipayObject {
 		this.checkInSourceType = checkInSourceType;
 	}
 
+	public String getCheckInStatus() {
+		return this.checkInStatus;
+	}
+	public void setCheckInStatus(String checkInStatus) {
+		this.checkInStatus = checkInStatus;
+	}
+
 	public Date getCheckInTime() {
 		return this.checkInTime;
 	}
@@ -144,6 +169,20 @@ public class EduCheckInRecord extends AlipayObject {
 	}
 	public void setCheckInType(String checkInType) {
 		this.checkInType = checkInType;
+	}
+
+	public String getCheckOutPicture() {
+		return this.checkOutPicture;
+	}
+	public void setCheckOutPicture(String checkOutPicture) {
+		this.checkOutPicture = checkOutPicture;
+	}
+
+	public Date getCheckOutTime() {
+		return this.checkOutTime;
+	}
+	public void setCheckOutTime(Date checkOutTime) {
+		this.checkOutTime = checkOutTime;
 	}
 
 	public String getEmployeeNo() {

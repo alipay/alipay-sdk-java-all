@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySecurityDataIprVideoCallbackResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3379667284297242397L;
+	private static final long serialVersionUID = 7337557583195619222L;
 
 	
 

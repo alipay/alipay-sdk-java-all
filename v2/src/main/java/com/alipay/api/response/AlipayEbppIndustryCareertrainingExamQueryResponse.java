@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.careertraining.exam.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-18 14:27:36
+ * @since 1.0, 2025-08-27 19:07:36
  */
 public class AlipayEbppIndustryCareertrainingExamQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1281169797394821744L;
+	private static final long serialVersionUID = 2321577751683115133L;
 
 	/** 
 	 * null
@@ -121,7 +121,7 @@ maxPrice和minPrice都填写时, minPrice<=maxPrice
 	private String registrationNotes;
 
 	/** 
-	 * 大json，key/value 机构自己定
+	 * 报考要求
 	 */
 	@ApiField("registration_requirement")
 	private String registrationRequirement;

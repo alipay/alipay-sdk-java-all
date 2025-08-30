@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fincore.fundds.order.witness.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 03:08:38
+ * @since 1.0, 2025-08-29 15:32:38
  */
 public class AlipayFincoreFunddsOrderWitnessQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3582341625157158231L;
+	private static final long serialVersionUID = 2378763999993275684L;
 
 	/** 
 	 * fundds订单号

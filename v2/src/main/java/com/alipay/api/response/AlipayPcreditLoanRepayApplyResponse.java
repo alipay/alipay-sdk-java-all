@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPcreditLoanRepayApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7524114622875253698L;
+	private static final long serialVersionUID = 4841754774291645875L;
 
 	/** 
 	 * 跳转至支付宝地址

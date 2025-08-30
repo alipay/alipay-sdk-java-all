@@ -10,11 +10,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.pe.visa.report.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-18 11:12:26
+ * @since 1.0, 2025-08-30 09:27:37
  */
 public class ZhimaCreditPeVisaReportQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6179658883969419339L;
+	private static final long serialVersionUID = 4819316177938423953L;
+
+	/** 
+	 * 签证报告中对应的姓名拼音
+	 */
+	@ApiField("name_spell")
+	private String nameSpell;
+
+	/** 
+	 * 签证报告对应的护照号，用于校验跟外部的护照号是否一致
+	 */
+	@ApiField("passport_no")
+	private String passportNo;
 
 	/** 
 	 * 用户签证报告申请状态，枚举字段：
@@ -38,6 +50,26 @@ public class ZhimaCreditPeVisaReportQueryResponse extends AlipayResponse {
 	@ApiField("user_permit_status")
 	private Boolean userPermitStatus;
 
+	/** 
+	 * 签证报告有效期时间戳
+	 */
+	@ApiField("valid_time")
+	private String validTime;
+
+	public void setNameSpell(String nameSpell) {
+		this.nameSpell = nameSpell;
+	}
+	public String getNameSpell( ) {
+		return this.nameSpell;
+	}
+
+	public void setPassportNo(String passportNo) {
+		this.passportNo = passportNo;
+	}
+	public String getPassportNo( ) {
+		return this.passportNo;
+	}
+
 	public void setReportApplyStatus(String reportApplyStatus) {
 		this.reportApplyStatus = reportApplyStatus;
 	}
@@ -57,6 +89,13 @@ public class ZhimaCreditPeVisaReportQueryResponse extends AlipayResponse {
 	}
 	public Boolean getUserPermitStatus( ) {
 		return this.userPermitStatus;
+	}
+
+	public void setValidTime(String validTime) {
+		this.validTime = validTime;
+	}
+	public String getValidTime( ) {
+		return this.validTime;
 	}
 
 }

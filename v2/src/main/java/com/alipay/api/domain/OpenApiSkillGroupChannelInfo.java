@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenApiSkillGroupChannelInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3574247623283376273L;
+	private static final long serialVersionUID = 7785427927733461726L;
 
 	/**
 	 * Cc管理员的id

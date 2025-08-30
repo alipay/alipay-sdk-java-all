@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.nft.oss.presignedurl.get response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-14 17:32:36
+ * @since 1.0, 2025-08-28 11:33:52
  */
 public class AnttechNftOssPresignedurlGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6787832114625756819L;
+	private static final long serialVersionUID = 3489669123213884624L;
 
 	/** 
 	 * oss回调头，包含回调方法体

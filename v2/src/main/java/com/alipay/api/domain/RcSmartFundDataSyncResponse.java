@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RcSmartFundDataSyncResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 3353745261559994827L;
+	private static final long serialVersionUID = 2252342982858438118L;
 
 	/**
 	 * 创建返回结果

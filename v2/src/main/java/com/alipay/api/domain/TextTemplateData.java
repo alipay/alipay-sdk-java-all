@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TextTemplateData extends AlipayObject {
 
-	private static final long serialVersionUID = 2847786677284564136L;
+	private static final long serialVersionUID = 4195965686594192195L;
 
 	/**
 	 * 文本消息的文字

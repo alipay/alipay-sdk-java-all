@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class VcpDiscountInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6484757434883899559L;
+	private static final long serialVersionUID = 6392192657516554815L;
 
 	/**
 	 * 计算规则列表

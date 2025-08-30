@@ -14,17 +14,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.benefitaccount.account.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-19 12:02:26
+ * @since 1.0, 2025-08-29 11:17:39
  */
 public class AlipayMarketingBenefitaccountAccountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2746938114747197365L;
+	private static final long serialVersionUID = 3873394673495491574L;
 
 	/** 
 	 * 权益账户号
 	 */
 	@ApiField("benefit_account_no")
 	private String benefitAccountNo;
+
+	/** 
+	 * 业务身份，支付宝分配
+	 */
+	@ApiField("biz_identity")
+	private String bizIdentity;
 
 	/** 
 	 * 权益账户当前剩余可核销金额，单位：元
@@ -71,6 +77,12 @@ public class AlipayMarketingBenefitaccountAccountQueryResponse extends AlipayRes
 	private String name;
 
 	/** 
+	 * 外标卡号
+	 */
+	@ApiField("out_card_no")
+	private String outCardNo;
+
+	/** 
 	 * 有效
 	 */
 	@ApiField("status")
@@ -87,6 +99,13 @@ public class AlipayMarketingBenefitaccountAccountQueryResponse extends AlipayRes
 	}
 	public String getBenefitAccountNo( ) {
 		return this.benefitAccountNo;
+	}
+
+	public void setBizIdentity(String bizIdentity) {
+		this.bizIdentity = bizIdentity;
+	}
+	public String getBizIdentity( ) {
+		return this.bizIdentity;
 	}
 
 	public void setCurrentAmount(String currentAmount) {
@@ -136,6 +155,13 @@ public class AlipayMarketingBenefitaccountAccountQueryResponse extends AlipayRes
 	}
 	public String getName( ) {
 		return this.name;
+	}
+
+	public void setOutCardNo(String outCardNo) {
+		this.outCardNo = outCardNo;
+	}
+	public String getOutCardNo( ) {
+		return this.outCardNo;
 	}
 
 	public void setStatus(String status) {

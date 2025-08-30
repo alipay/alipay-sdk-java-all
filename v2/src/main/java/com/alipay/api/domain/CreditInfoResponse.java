@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CreditInfoResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 3753214865253758588L;
+	private static final long serialVersionUID = 5627265655613366931L;
 
 	/**
 	 * 芝麻信用下单页面地址

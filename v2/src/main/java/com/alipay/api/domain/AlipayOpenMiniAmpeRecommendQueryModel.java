@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniAmpeRecommendQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5774914223363132113L;
+	private static final long serialVersionUID = 1487335191993843782L;
 
 	/**
 	 * 业务场景，由支付宝统一分配，用于指定推荐的内容。

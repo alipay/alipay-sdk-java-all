@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class QueryCriteria extends AlipayObject {
 
-	private static final long serialVersionUID = 1451674831481879953L;
+	private static final long serialVersionUID = 5454137794948752749L;
 
 	/**
 	 * 输入结束时间时，开始时间不能为空

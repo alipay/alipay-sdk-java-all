@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * Voyager机票供应商通知变更接口
  *
  * @author auto create
- * @since 1.0, 2025-01-06 16:48:14
+ * @since 1.0, 2025-08-27 11:35:13
  */
 public class AlipayVoyagerFlightSupplierNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3533555684641375793L;
+	private static final long serialVersionUID = 4313279838567615519L;
 
 	/**
 	 * 通知事件类型。
@@ -30,6 +30,8 @@ ORDER_FLIGHT_CANCELLED_EVENT：航变-航程取消事件
 ORDER_REBOOK_CREATED_EVENT: 改签-提交改签
 ORDER_REBOOK_SUCC_EVENT: 改签-改签成功
 ORDER_REBOOK_FAILED_EVENT：改签-改签失败
+ORDER_REFUND_FY_APPROVED_EVENT:辅营退款成功
+ORDER_FY_PAID_DONE_EVENT：辅营支付成功
 	 */
 	@ApiField("event_type")
 	private String eventType;

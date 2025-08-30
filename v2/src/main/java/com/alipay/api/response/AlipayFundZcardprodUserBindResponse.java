@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundZcardprodUserBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8652635496329837936L;
+	private static final long serialVersionUID = 3666243813712245897L;
 
 	/** 
 	 * 邀请密钥

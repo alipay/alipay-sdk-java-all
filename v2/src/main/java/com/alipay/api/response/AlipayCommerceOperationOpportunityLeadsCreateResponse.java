@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.opportunity.leads.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-14 14:02:31
+ * @since 1.0, 2025-08-26 19:22:37
  */
 public class AlipayCommerceOperationOpportunityLeadsCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1328916485857874815L;
+	private static final long serialVersionUID = 2853536982596185423L;
 
 	/** 
 	 * 安装码
 	 */
 	@ApiField("installation_code")
 	private String installationCode;
+
+	/** 
+	 * 线索ID
+	 */
+	@ApiField("leads_id")
+	private String leadsId;
 
 	/** 
 	 * 商机id
@@ -55,6 +61,13 @@ public class AlipayCommerceOperationOpportunityLeadsCreateResponse extends Alipa
 	}
 	public String getInstallationCode( ) {
 		return this.installationCode;
+	}
+
+	public void setLeadsId(String leadsId) {
+		this.leadsId = leadsId;
+	}
+	public String getLeadsId( ) {
+		return this.leadsId;
 	}
 
 	public void setOpportunityId(String opportunityId) {

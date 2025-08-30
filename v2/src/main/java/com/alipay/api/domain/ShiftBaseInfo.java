@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ShiftBaseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6621526857195715199L;
+	private static final long serialVersionUID = 6295547382654358845L;
 
 	/**
 	 * 班次唯一编号

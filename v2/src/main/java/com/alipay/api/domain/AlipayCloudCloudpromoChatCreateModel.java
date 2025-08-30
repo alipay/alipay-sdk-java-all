@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发起对话
  *
  * @author auto create
- * @since 1.0, 2025-08-15 16:37:35
+ * @since 1.0, 2025-08-28 19:37:38
  */
 public class AlipayCloudCloudpromoChatCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3516314811883295698L;
+	private static final long serialVersionUID = 7754931241635866264L;
 
 	/**
 	 * 要进行会话聊天的智能体ID。

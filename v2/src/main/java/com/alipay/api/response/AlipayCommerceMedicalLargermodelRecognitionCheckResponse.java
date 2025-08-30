@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.largermodel.recognition.check response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-06 16:22:36
+ * @since 1.0, 2025-08-27 18:07:36
  */
 public class AlipayCommerceMedicalLargermodelRecognitionCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5667293723376546157L;
+	private static final long serialVersionUID = 6156717293297289624L;
 
 	/** 
 	 * 文件上传afts后返回id

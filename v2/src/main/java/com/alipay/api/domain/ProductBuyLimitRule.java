@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ProductBuyLimitRule extends AlipayObject {
 
-	private static final long serialVersionUID = 5495491873876331385L;
+	private static final long serialVersionUID = 1569397352761932844L;
 
 	/**
 	 * 购买时间限制，商品可下单的时间范围，为“可购买开始时间-可购买截止时间”时间段列表。全天可购买时可以不传值或者传["00:00:00-23:59:59"]；全天不可购买时传值["00:00:00-00:00:00"]。每个时间段内截止时间不能早于开始时间，多个时间段相互不能重合，如果传值错误会导致商品信息无法正常展示而被隐藏。

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金二级商户KYB代进件
  *
  * @author auto create
- * @since 1.0, 2025-07-31 17:25:43
+ * @since 1.0, 2025-08-28 16:56:16
  */
 public class AlipayFundExpandindirectCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7584866547771848845L;
+	private static final long serialVersionUID = 3439743899193673218L;
 
 	/**
 	 * 场景码

@@ -9,17 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 付款码同步设备
  *
  * @author auto create
- * @since 1.0, 2025-08-13 10:18:30
+ * @since 1.0, 2025-08-27 20:00:53
  */
 public class AlipayPayDeviceNlinkPaycodeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8423283884565195928L;
+	private static final long serialVersionUID = 1395311968539781679L;
 
 	/**
 	 * 用户的userId。
 	 */
 	@ApiField("biz_user_id")
 	private String bizUserId;
+
+	/**
+	 * 付款码创建时间
+	 */
+	@ApiField("create_time")
+	private Date createTime;
 
 	/**
 	 * 付款码过期时间
@@ -56,6 +62,13 @@ public class AlipayPayDeviceNlinkPaycodeSyncModel extends AlipayObject {
 	}
 	public void setBizUserId(String bizUserId) {
 		this.bizUserId = bizUserId;
+	}
+
+	public Date getCreateTime() {
+		return this.createTime;
+	}
+	public void setCreateTime(Date createTime) {
+		this.createTime = createTime;
 	}
 
 	public Date getExpireTime() {

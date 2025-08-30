@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 出资明细
  *
  * @author auto create
- * @since 1.0, 2025-06-30 14:03:30
+ * @since 1.0, 2025-08-29 11:05:55
  */
 public class FsFundRelationDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3679164727617747868L;
+	private static final long serialVersionUID = 2559827866473424831L;
 
 	/**
 	 * 出资金额是否允许上浮
@@ -30,6 +30,12 @@ public class FsFundRelationDetailDTO extends AlipayObject {
 	 */
 	@ApiField("ceiling_amount")
 	private String ceilingAmount;
+
+	/**
+	 * 出资主体
+	 */
+	@ApiField("fund_principal")
+	private String fundPrincipal;
 
 	/**
 	 * 优先级，按顺序出资时必填，值越小优先级越大
@@ -80,6 +86,13 @@ public class FsFundRelationDetailDTO extends AlipayObject {
 	}
 	public void setCeilingAmount(String ceilingAmount) {
 		this.ceilingAmount = ceilingAmount;
+	}
+
+	public String getFundPrincipal() {
+		return this.fundPrincipal;
+	}
+	public void setFundPrincipal(String fundPrincipal) {
+		this.fundPrincipal = fundPrincipal;
 	}
 
 	public Long getFundPriority() {

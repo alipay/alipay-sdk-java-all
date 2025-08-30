@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.checkin.rule.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-25 11:03:20
+ * @since 1.0, 2025-08-29 19:42:38
  */
 public class AlipayCommerceEducateCheckinRuleCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7446474762129729729L;
+	private static final long serialVersionUID = 7551136781548425636L;
 
 	/** 
 	 * 签到规则id

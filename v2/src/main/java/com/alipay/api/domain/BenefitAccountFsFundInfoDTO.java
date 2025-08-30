@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 权益账户资金明细
  *
  * @author auto create
- * @since 1.0, 2025-06-30 14:03:30
+ * @since 1.0, 2025-08-29 11:05:36
  */
 public class BenefitAccountFsFundInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8858976244196263529L;
+	private static final long serialVersionUID = 5582636745685316985L;
 
 	/**
 	 * 账户查询时为出资金额；提现时为该出资方提现金额；单位：元
@@ -24,6 +24,12 @@ public class BenefitAccountFsFundInfoDTO extends AlipayObject {
 	 */
 	@ApiField("current_amount")
 	private String currentAmount;
+
+	/**
+	 * 出资主体
+	 */
+	@ApiField("fund_principal")
+	private String fundPrincipal;
 
 	/**
 	 * 商户出资
@@ -43,6 +49,12 @@ public class BenefitAccountFsFundInfoDTO extends AlipayObject {
 	@ApiField("fund_user_id")
 	private String fundUserId;
 
+	/**
+	 * 还款账号信息
+	 */
+	@ApiField("repay_bank_info")
+	private BenefitAccountRepayBankInfoDTO repayBankInfo;
+
 	public String getAmount() {
 		return this.amount;
 	}
@@ -55,6 +67,13 @@ public class BenefitAccountFsFundInfoDTO extends AlipayObject {
 	}
 	public void setCurrentAmount(String currentAmount) {
 		this.currentAmount = currentAmount;
+	}
+
+	public String getFundPrincipal() {
+		return this.fundPrincipal;
+	}
+	public void setFundPrincipal(String fundPrincipal) {
+		this.fundPrincipal = fundPrincipal;
 	}
 
 	public String getFundProvider() {
@@ -76,6 +95,13 @@ public class BenefitAccountFsFundInfoDTO extends AlipayObject {
 	}
 	public void setFundUserId(String fundUserId) {
 		this.fundUserId = fundUserId;
+	}
+
+	public BenefitAccountRepayBankInfoDTO getRepayBankInfo() {
+		return this.repayBankInfo;
+	}
+	public void setRepayBankInfo(BenefitAccountRepayBankInfoDTO repayBankInfo) {
+		this.repayBankInfo = repayBankInfo;
 	}
 
 }

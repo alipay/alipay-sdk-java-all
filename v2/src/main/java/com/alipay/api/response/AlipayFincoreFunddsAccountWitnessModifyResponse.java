@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fincore.fundds.account.witness.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-06 20:26:07
+ * @since 1.0, 2025-08-29 15:32:38
  */
 public class AlipayFincoreFunddsAccountWitnessModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8194956468965312184L;
+	private static final long serialVersionUID = 1347283694198155722L;
 
 	/** 
 	 * 账号

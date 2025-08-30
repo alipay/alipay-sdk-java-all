@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-08-15 14:31:52
+ * @since 1.0, 2025-08-27 10:52:35
  */
 public class CategoryAttributeInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1897348231851398851L;
+	private static final long serialVersionUID = 1166539954996277282L;
 
 	/**
 	 * 属性code
@@ -64,6 +64,12 @@ public class CategoryAttributeInfoVO extends AlipayObject {
 	 */
 	@ApiField("custom_input")
 	private String customInput;
+
+	/**
+	 * 是否决策属性
+	 */
+	@ApiField("decided")
+	private String decided;
 
 	/**
 	 * 提报商品时该属性是否支持多选
@@ -137,6 +143,13 @@ public class CategoryAttributeInfoVO extends AlipayObject {
 	}
 	public void setCustomInput(String customInput) {
 		this.customInput = customInput;
+	}
+
+	public String getDecided() {
+		return this.decided;
+	}
+	public void setDecided(String decided) {
+		this.decided = decided;
 	}
 
 	public String getMultiSelect() {

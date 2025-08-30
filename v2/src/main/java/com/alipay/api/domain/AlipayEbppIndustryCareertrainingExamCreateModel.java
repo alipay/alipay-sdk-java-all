@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建职业培训考试信息
  *
  * @author auto create
- * @since 1.0, 2025-08-18 14:22:36
+ * @since 1.0, 2025-08-26 19:07:36
  */
 public class AlipayEbppIndustryCareertrainingExamCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4786793579646471151L;
+	private static final long serialVersionUID = 8519556595343329418L;
 
 	/**
 	 * null
@@ -106,7 +106,7 @@ maxPrice和minPrice都填写时, minPrice<=maxPrice
 	private String registrationNotes;
 
 	/**
-	 * 大json，key/value 机构自己定
+	 * 报考要求
 	 */
 	@ApiField("registration_requirement")
 	private String registrationRequirement;

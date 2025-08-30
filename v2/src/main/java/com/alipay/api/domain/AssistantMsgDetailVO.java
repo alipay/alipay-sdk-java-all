@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小助手定向消息详情模型
  *
  * @author auto create
- * @since 1.0, 2025-04-01 13:40:54
+ * @since 1.0, 2025-08-27 10:11:43
  */
 public class AssistantMsgDetailVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4369652457755711331L;
+	private static final long serialVersionUID = 5463817882593894852L;
 
 	/**
 	 * 自定义活动内容
@@ -30,7 +30,7 @@ public class AssistantMsgDetailVO extends AlipayObject {
 	private BenefitAssistantMsgContentVO benefitContent;
 
 	/**
-	 * 小助手类型，目前支持 activity_recommend (自定义活动)、benefit_recommend（权益推荐）、goods_recommend（商品推荐）
+	 * 小助手类型，目前支持 activity_recommend (自定义活动)、benefit_recommend（权益推荐）、goods_recommend（商品推荐）、red_packet_recommend（红包推荐）
 	 */
 	@ApiField("biz_type")
 	private String bizType;
@@ -65,6 +65,12 @@ public class AssistantMsgDetailVO extends AlipayObject {
 	 */
 	@ApiField("name")
 	private String name;
+
+	/**
+	 * 红包推荐小助手内容
+	 */
+	@ApiField("red_packet_content")
+	private RedPacketAssistantMsgContentVO redPacketContent;
 
 	/**
 	 * 消息发送状态
@@ -134,6 +140,13 @@ DELETED (删除);
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public RedPacketAssistantMsgContentVO getRedPacketContent() {
+		return this.redPacketContent;
+	}
+	public void setRedPacketContent(RedPacketAssistantMsgContentVO redPacketContent) {
+		this.redPacketContent = redPacketContent;
 	}
 
 	public String getStatus() {

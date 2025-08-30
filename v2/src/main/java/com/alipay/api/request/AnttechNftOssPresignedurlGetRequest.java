@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.nft.oss.presignedurl.get request
  * 
  * @author auto create
- * @since 1.0, 2025-08-14 17:32:36
+ * @since 1.0, 2025-08-28 11:33:52
  */
 public class AnttechNftOssPresignedurlGetRequest implements AlipayRequest<AnttechNftOssPresignedurlGetResponse> {
 

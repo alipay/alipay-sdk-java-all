@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 展会核验用户出库
  *
  * @author auto create
- * @since 1.0, 2025-06-10 19:06:36
+ * @since 1.0, 2025-08-26 20:11:43
  */
 public class AlipayOfflineProviderUserinfoExpoDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5751365297691643685L;
+	private static final long serialVersionUID = 8782794449966555546L;
+
+	/**
+	 * 身份证号。可以传明文，也可以传身份证号的32位大写MD5值。尽量使用MD5值
+	 */
+	@ApiField("identity_card")
+	private String identityCard;
 
 	/**
 	 * 手机号
@@ -24,6 +30,13 @@ public class AlipayOfflineProviderUserinfoExpoDeleteModel extends AlipayObject {
 	 */
 	@ApiField("time_uuid")
 	private String timeUuid;
+
+	public String getIdentityCard() {
+		return this.identityCard;
+	}
+	public void setIdentityCard(String identityCard) {
+		this.identityCard = identityCard;
+	}
 
 	public String getPhone() {
 		return this.phone;

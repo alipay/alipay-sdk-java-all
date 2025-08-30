@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechNftAssetNftidCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3534873615648731535L;
+	private static final long serialVersionUID = 4681616464128551829L;
 
 	/**
 	 * 用户账号

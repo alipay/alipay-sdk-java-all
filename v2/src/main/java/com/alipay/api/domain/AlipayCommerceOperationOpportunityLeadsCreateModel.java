@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建门店提交leads作业接口
  *
  * @author auto create
- * @since 1.0, 2025-07-21 23:52:41
+ * @since 1.0, 2025-08-26 19:20:43
  */
 public class AlipayCommerceOperationOpportunityLeadsCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7892785867187793624L;
+	private static final long serialVersionUID = 5214653844581856961L;
 
 	/**
 	 * 业务主体
@@ -43,6 +43,12 @@ public class AlipayCommerceOperationOpportunityLeadsCreateModel extends AlipayOb
 	 */
 	@ApiField("contact_person_info")
 	private BsContactPersonInfo contactPersonInfo;
+
+	/**
+	 * 自定义返佣金额
+	 */
+	@ApiField("custom_pricing")
+	private Long customPricing;
 
 	/**
 	 * 设备数量
@@ -131,6 +137,13 @@ public class AlipayCommerceOperationOpportunityLeadsCreateModel extends AlipayOb
 	}
 	public void setContactPersonInfo(BsContactPersonInfo contactPersonInfo) {
 		this.contactPersonInfo = contactPersonInfo;
+	}
+
+	public Long getCustomPricing() {
+		return this.customPricing;
+	}
+	public void setCustomPricing(Long customPricing) {
+		this.customPricing = customPricing;
 	}
 
 	public Long getDeviceNum() {

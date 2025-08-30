@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 确认扣减用户运动币数量
  *
  * @author auto create
- * @since 1.0, 2022-10-24 15:10:38
+ * @since 1.0, 2025-08-28 14:19:17
  */
 public class AlipayUserSportshealthAccountConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1556737623765359318L;
+	private static final long serialVersionUID = 6133273133525336858L;
 
 	/**
 	 * 账户流水明细描述，会展示在用户运动币明细列表中

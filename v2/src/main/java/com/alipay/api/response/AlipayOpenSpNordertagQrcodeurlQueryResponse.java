@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenSpNordertagQrcodeurlQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8284477659922256777L;
+	private static final long serialVersionUID = 6837512822559968212L;
 
 	/** 
 	 * 物料信息返回值

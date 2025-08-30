@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pay.device.nlink.payresult.sync request
  * 
  * @author auto create
- * @since 1.0, 2025-08-21 15:04:14
+ * @since 1.0, 2025-08-27 14:47:36
  */
 public class AlipayPayDeviceNlinkPayresultSyncRequest implements AlipayRequest<AlipayPayDeviceNlinkPayresultSyncResponse> {
 

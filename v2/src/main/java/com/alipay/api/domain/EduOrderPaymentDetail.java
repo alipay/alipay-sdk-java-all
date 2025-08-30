@@ -9,14 +9,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-08-06 17:12:35
+ * @since 1.0, 2025-08-29 14:32:38
  */
 public class EduOrderPaymentDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7849211433715649585L;
+	private static final long serialVersionUID = 3225284616966823899L;
 
 	/**
-	 * 支付金额
+	 * 支付金额，单位：元。
 	 */
 	@ApiField("pay_amount")
 	private String payAmount;

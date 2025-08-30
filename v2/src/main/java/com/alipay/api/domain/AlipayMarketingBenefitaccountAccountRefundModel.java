@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 权益账户退款
  *
  * @author auto create
- * @since 1.0, 2025-08-01 17:19:03
+ * @since 1.0, 2025-08-29 11:05:36
  */
 public class AlipayMarketingBenefitaccountAccountRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4499584299118382757L;
+	private static final long serialVersionUID = 1654422775783678557L;
 
 	/**
 	 * 本次操作退款总金额，单位：元

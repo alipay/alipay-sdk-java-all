@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付结果同步设备
  *
  * @author auto create
- * @since 1.0, 2025-08-18 16:36:17
+ * @since 1.0, 2025-08-27 14:43:59
  */
 public class AlipayPayDeviceNlinkPayresultSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2545712795863889976L;
+	private static final long serialVersionUID = 6756175425572624452L;
 
 	/**
 	 * 动态码token

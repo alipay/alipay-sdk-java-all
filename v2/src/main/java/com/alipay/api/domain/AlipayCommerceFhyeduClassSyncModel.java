@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 泛行业教培上课信息
  *
  * @author auto create
- * @since 1.0, 2025-08-05 14:22:35
+ * @since 1.0, 2025-08-29 14:32:38
  */
 public class AlipayCommerceFhyeduClassSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6636244576326456176L;
+	private static final long serialVersionUID = 7225561821525813729L;
 
 	/**
 	 * 上课地址

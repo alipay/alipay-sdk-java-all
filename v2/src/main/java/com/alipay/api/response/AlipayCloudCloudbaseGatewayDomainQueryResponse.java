@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.gateway.domain.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-19 15:44:43
+ * @since 1.0, 2025-08-27 20:57:36
  */
 public class AlipayCloudCloudbaseGatewayDomainQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5239855686935928252L;
+	private static final long serialVersionUID = 8174611593367657886L;
 
 	/** 
 	 * 域信息列表

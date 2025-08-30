@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家群小助手定向消息创建
  *
  * @author auto create
- * @since 1.0, 2025-04-01 13:40:53
+ * @since 1.0, 2025-08-27 10:20:45
  */
 public class AlipayMerchantGroupAssistantMsgCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2274739959849327299L;
+	private static final long serialVersionUID = 5756849187538817725L;
 
 	/**
 	 * 自定义活动类型的消息内容，对应biz_type 为 activity_recommend 时必须传相关内容
@@ -30,7 +30,7 @@ public class AlipayMerchantGroupAssistantMsgCreateModel extends AlipayObject {
 	private BenefitAssistantMsgContentVO benefitContent;
 
 	/**
-	 * 小助手类型，目前支持 activity_recommend (自定义活动)、benefit_recommend（权益推荐）、goods_recommend（商品推荐）
+	 * 小助手类型，目前支持 activity_recommend (自定义活动)、benefit_recommend（权益推荐）、goods_recommend（商品推荐）、red_packet_recommend（红包推荐）
 	 */
 	@ApiField("biz_type")
 	private String bizType;
@@ -59,6 +59,12 @@ public class AlipayMerchantGroupAssistantMsgCreateModel extends AlipayObject {
 	 */
 	@ApiField("name")
 	private String name;
+
+	/**
+	 * 红包推荐活动类型的消息内容，对应biz_type 为 red_packet_recommend 时必须传相关内容
+	 */
+	@ApiField("red_packet_content")
+	private RedPacketAssistantMsgContentVO redPacketContent;
 
 	public ActivityAssistantMsgContentVO getActivityContent() {
 		return this.activityContent;
@@ -107,6 +113,13 @@ public class AlipayMerchantGroupAssistantMsgCreateModel extends AlipayObject {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public RedPacketAssistantMsgContentVO getRedPacketContent() {
+		return this.redPacketContent;
+	}
+	public void setRedPacketContent(RedPacketAssistantMsgContentVO redPacketContent) {
+		this.redPacketContent = redPacketContent;
 	}
 
 }

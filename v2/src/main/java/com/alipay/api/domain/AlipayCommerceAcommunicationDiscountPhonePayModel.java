@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 充值话费下单并支付
  *
  * @author auto create
- * @since 1.0, 2024-06-13 09:55:50
+ * @since 1.0, 2025-08-27 14:51:32
  */
 public class AlipayCommerceAcommunicationDiscountPhonePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3158756342654794234L;
+	private static final long serialVersionUID = 5191324811471694493L;
 
 	/**
 	 * 下单用户的Ip
@@ -30,6 +30,12 @@ public class AlipayCommerceAcommunicationDiscountPhonePayModel extends AlipayObj
 	 */
 	@ApiField("item_id")
 	private String itemId;
+
+	/**
+	 * 用于表达使用商品不同的分层履约能力，同一个商品可能会涉及多个履约能力，这里包含了时长的不同等信息，调用方可根据需要发起调用，如果不需要分层溢价能力，可以不传该字段，默认3小时到账。
+	 */
+	@ApiField("item_tag")
+	private String itemTag;
 
 	/**
 	 * 手机号
@@ -80,6 +86,13 @@ public class AlipayCommerceAcommunicationDiscountPhonePayModel extends AlipayObj
 	}
 	public void setItemId(String itemId) {
 		this.itemId = itemId;
+	}
+
+	public String getItemTag() {
+		return this.itemTag;
+	}
+	public void setItemTag(String itemTag) {
+		this.itemTag = itemTag;
 	}
 
 	public String getMobile() {

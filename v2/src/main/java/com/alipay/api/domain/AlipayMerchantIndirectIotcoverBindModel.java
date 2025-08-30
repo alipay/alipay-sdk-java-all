@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间连IoT设备标准化覆盖绑定接口
  *
  * @author auto create
- * @since 1.0, 2025-06-26 21:03:27
+ * @since 1.0, 2025-08-26 20:09:48
  */
 public class AlipayMerchantIndirectIotcoverBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5165323319885613256L;
+	private static final long serialVersionUID = 1839618657684865945L;
 
 	/**
 	 * 声网入网申请单编号编号是由服务商和支付宝BD录入IoT设备接入协议后生成的，用于后续政策返佣、播报跟踪等重要场景。需要联系支付宝的业务经理获取。
@@ -36,6 +36,12 @@ public class AlipayMerchantIndirectIotcoverBindModel extends AlipayObject {
 	 */
 	@ApiField("smid")
 	private String smid;
+
+	/**
+	 * 播报内容配置，如不传时将使用默认播报内容。仅支持SDK模式音响类型设备，其他类型设备请勿传该字段。
+	 */
+	@ApiField("speech_content")
+	private IotSpeechContentConfig speechContent;
 
 	/**
 	 * 合约机模式必传设备sourceId号，千里传音模式必传设备的productKey，lite模式必传分配给服务商的设备型号编码
@@ -69,6 +75,13 @@ public class AlipayMerchantIndirectIotcoverBindModel extends AlipayObject {
 	}
 	public void setSmid(String smid) {
 		this.smid = smid;
+	}
+
+	public IotSpeechContentConfig getSpeechContent() {
+		return this.speechContent;
+	}
+	public void setSpeechContent(IotSpeechContentConfig speechContent) {
+		this.speechContent = speechContent;
 	}
 
 	public String getSupplierId() {

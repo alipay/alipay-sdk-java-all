@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建签到规则
  *
  * @author auto create
- * @since 1.0, 2025-08-05 17:18:56
+ * @since 1.0, 2025-08-29 19:42:17
  */
 public class AlipayCommerceEducateCheckinRuleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6845847649731435688L;
+	private static final long serialVersionUID = 5646871449122228239L;
 
 	/**
 	 * 活动平台id
@@ -29,10 +29,46 @@ public class AlipayCommerceEducateCheckinRuleCreateModel extends AlipayObject {
 	private String authenticationType;
 
 	/**
+	 * 课程签到类型相关参数，签退结束分钟
+	 */
+	@ApiField("check_out_end_minutes")
+	private Long checkOutEndMinutes;
+
+	/**
+	 * 课程签到类型相关参数，签退结束类型
+	 */
+	@ApiField("check_out_end_type")
+	private String checkOutEndType;
+
+	/**
+	 * 课程签到类型相关参数，签退开始分钟
+	 */
+	@ApiField("check_out_start_minutes")
+	private Long checkOutStartMinutes;
+
+	/**
+	 * 课程签到类型相关参数，签退开始类型
+	 */
+	@ApiField("check_out_start_type")
+	private String checkOutStartType;
+
+	/**
 	 * 寝室签到规则扩展
 	 */
 	@ApiField("dormitory_config")
 	private DormitoryConfig dormitoryConfig;
+
+	/**
+	 * 课程签到类型相关参数，是否开始签到开关，兜底为OFF
+	 */
+	@ApiField("enable_check_in")
+	private String enableCheckIn;
+
+	/**
+	 * 课程签到类型相关参数，是否开启签退开关，兜底为OFF
+	 */
+	@ApiField("enable_check_out")
+	private String enableCheckOut;
 
 	/**
 	 * 规则生效状态
@@ -152,11 +188,53 @@ public class AlipayCommerceEducateCheckinRuleCreateModel extends AlipayObject {
 		this.authenticationType = authenticationType;
 	}
 
+	public Long getCheckOutEndMinutes() {
+		return this.checkOutEndMinutes;
+	}
+	public void setCheckOutEndMinutes(Long checkOutEndMinutes) {
+		this.checkOutEndMinutes = checkOutEndMinutes;
+	}
+
+	public String getCheckOutEndType() {
+		return this.checkOutEndType;
+	}
+	public void setCheckOutEndType(String checkOutEndType) {
+		this.checkOutEndType = checkOutEndType;
+	}
+
+	public Long getCheckOutStartMinutes() {
+		return this.checkOutStartMinutes;
+	}
+	public void setCheckOutStartMinutes(Long checkOutStartMinutes) {
+		this.checkOutStartMinutes = checkOutStartMinutes;
+	}
+
+	public String getCheckOutStartType() {
+		return this.checkOutStartType;
+	}
+	public void setCheckOutStartType(String checkOutStartType) {
+		this.checkOutStartType = checkOutStartType;
+	}
+
 	public DormitoryConfig getDormitoryConfig() {
 		return this.dormitoryConfig;
 	}
 	public void setDormitoryConfig(DormitoryConfig dormitoryConfig) {
 		this.dormitoryConfig = dormitoryConfig;
+	}
+
+	public String getEnableCheckIn() {
+		return this.enableCheckIn;
+	}
+	public void setEnableCheckIn(String enableCheckIn) {
+		this.enableCheckIn = enableCheckIn;
+	}
+
+	public String getEnableCheckOut() {
+		return this.enableCheckOut;
+	}
+	public void setEnableCheckOut(String enableCheckOut) {
+		this.enableCheckOut = enableCheckOut;
 	}
 
 	public Boolean getEnableStatus() {

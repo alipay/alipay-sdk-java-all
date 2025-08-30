@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.rent.order.aftersale.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-22 13:52:36
+ * @since 1.0, 2025-08-28 17:32:38
  */
 public class AlipayCommerceRentOrderAftersaleConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8523881855251278393L;
+	private static final long serialVersionUID = 5682263791748857856L;
 
 	/** 
 	 * 支付宝交易号

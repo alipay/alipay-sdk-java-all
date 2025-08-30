@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改职业培训机构信息
  *
  * @author auto create
- * @since 1.0, 2025-08-18 14:12:34
+ * @since 1.0, 2025-08-26 13:52:36
  */
 public class AlipayEbppIndustryCareertrainingOrginfoModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4159855762532829439L;
+	private static final long serialVersionUID = 2644658935964331555L;
 
 	/**
 	 * 机构地址\考评组织地点

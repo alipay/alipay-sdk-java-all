@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BillNotifyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1521129394225451248L;
+	private static final long serialVersionUID = 6733691446427316167L;
 
 	/**
 	 * 脱敏地址，按照国网40号文：保留省、市、区县及门牌号最后5位信息

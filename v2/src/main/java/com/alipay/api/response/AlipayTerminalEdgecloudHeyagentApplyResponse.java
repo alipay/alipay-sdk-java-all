@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayTerminalEdgecloudHeyagentApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1531691475435721723L;
+	private static final long serialVersionUID = 2527898154764671257L;
 
 	/** 
 	 * 本次启动云渲染会话ID

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenIotmbsHoteleventSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3393484189477238492L;
+	private static final long serialVersionUID = 2294127782524373332L;
 
 	/**
 	 * 事件类型相关的业务配置，参考接入sop，或者联系对接小二获取。

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.nft.ctoc.transferprecheck.checkavailable response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-08 15:27:31
+ * @since 1.0, 2025-08-28 11:33:20
  */
 public class AnttechNftCtocTransferprecheckCheckavailableResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4864442287674232863L;
+	private static final long serialVersionUID = 1334445117199462393L;
 
 	/** 
 	 * 前置校验id

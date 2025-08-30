@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.nft.ctoc.transferprecheck.checkavailable request
  * 
  * @author auto create
- * @since 1.0, 2025-07-08 15:27:31
+ * @since 1.0, 2025-08-28 11:33:20
  */
 public class AnttechNftCtocTransferprecheckCheckavailableRequest implements AlipayRequest<AnttechNftCtocTransferprecheckCheckavailableResponse> {
 

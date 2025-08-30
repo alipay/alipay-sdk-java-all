@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.fhyedu.evaluation.sync request
  * 
  * @author auto create
- * @since 1.0, 2025-08-05 14:22:35
+ * @since 1.0, 2025-08-29 14:32:38
  */
 public class AlipayCommerceFhyeduEvaluationSyncRequest implements AlipayRequest<AlipayCommerceFhyeduEvaluationSyncResponse> {
 

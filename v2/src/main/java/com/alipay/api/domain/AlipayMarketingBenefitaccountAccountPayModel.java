@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 权益账户充值
  *
  * @author auto create
- * @since 1.0, 2025-07-21 15:38:40
+ * @since 1.0, 2025-08-29 11:05:51
  */
 public class AlipayMarketingBenefitaccountAccountPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3187236879762784499L;
+	private static final long serialVersionUID = 2643178839873359495L;
 
 	/**
 	 * 充值金额，单位元
@@ -44,6 +44,12 @@ public class AlipayMarketingBenefitaccountAccountPayModel extends AlipayObject {
 	 */
 	@ApiField("extend_info")
 	private String extendInfo;
+
+	/**
+	 * 出资主体
+	 */
+	@ApiField("fund_principal")
+	private String fundPrincipal;
 
 	/**
 	 * 本次充值出资方
@@ -120,6 +126,13 @@ public class AlipayMarketingBenefitaccountAccountPayModel extends AlipayObject {
 	}
 	public void setExtendInfo(String extendInfo) {
 		this.extendInfo = extendInfo;
+	}
+
+	public String getFundPrincipal() {
+		return this.fundPrincipal;
+	}
+	public void setFundPrincipal(String fundPrincipal) {
+		this.fundPrincipal = fundPrincipal;
 	}
 
 	public String getFundProvider() {
