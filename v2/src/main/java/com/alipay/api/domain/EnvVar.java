@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EnvVar extends AlipayObject {
 
-	private static final long serialVersionUID = 5818349513332587626L;
+	private static final long serialVersionUID = 7121482349796335314L;
 
 	/**
 	 * 自定义环境变量Key值

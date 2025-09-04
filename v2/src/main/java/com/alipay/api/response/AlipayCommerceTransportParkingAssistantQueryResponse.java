@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.parking.assistant.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-22 16:12:36
+ * @since 1.0, 2025-09-03 13:57:37
  */
 public class AlipayCommerceTransportParkingAssistantQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8496582115387875172L;
+	private static final long serialVersionUID = 3315186367552272384L;
 
 	/** 
 	 * 停车助手服务状态；开通服务：

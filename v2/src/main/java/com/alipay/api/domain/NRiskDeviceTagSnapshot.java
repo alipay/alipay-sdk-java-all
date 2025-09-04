@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NRiskDeviceTagSnapshot extends AlipayObject {
 
-	private static final long serialVersionUID = 8656877762944988634L;
+	private static final long serialVersionUID = 8353754827571355365L;
 
 	/**
 	 * 描叙N线圈类型

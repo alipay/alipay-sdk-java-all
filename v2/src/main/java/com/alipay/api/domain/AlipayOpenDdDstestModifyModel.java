@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenDdDstestModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6184924839962886878L;
+	private static final long serialVersionUID = 1243477735919845666L;
 
 	/**
 	 * 详细地址

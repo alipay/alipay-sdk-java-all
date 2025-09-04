@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.cashticket.template.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-27 10:28:00
+ * @since 1.0, 2025-09-03 10:25:06
  */
 public class AlipayMarketingCashticketTemplateCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4161946912879816221L;
+	private static final long serialVersionUID = 3179554574378778862L;
 
 	/** 
 	 * 模板支付确认链接

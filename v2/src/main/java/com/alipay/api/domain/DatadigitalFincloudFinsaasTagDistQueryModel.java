@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DatadigitalFincloudFinsaasTagDistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3841614244699737427L;
+	private static final long serialVersionUID = 6725387487878874342L;
 
 	/**
 	 * 标签展示类型

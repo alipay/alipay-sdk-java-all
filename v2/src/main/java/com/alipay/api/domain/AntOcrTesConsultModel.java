@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntOcrTesConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5728548425965993695L;
+	private static final long serialVersionUID = 3682787335545696431L;
 
 	/**
 	 * 1

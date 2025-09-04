@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 知识产权保护平台采购三方原片数据回调
  *
  * @author auto create
- * @since 1.0, 2025-08-04 14:03:59
+ * @since 1.0, 2025-09-01 16:59:38
  */
 public class AlipaySecurityDataIprVideoCallbackModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7768849583341538551L;
+	private static final long serialVersionUID = 2411273294732241576L;
 
 	/**
 	 * 标识外部数据来源渠道，不同渠道对接前请先与接口人确认，每个渠道唯一。错误使用会导致数据保存失败，对接前请务必确认。

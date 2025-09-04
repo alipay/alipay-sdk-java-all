@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceYuntaskAccountbookWithdrawModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7873454624612339816L;
+	private static final long serialVersionUID = 3497243491222864952L;
 
 	/**
 	 * 记账本id

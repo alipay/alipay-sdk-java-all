@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序模板消息申请
  *
  * @author auto create
- * @since 1.0, 2021-01-06 19:38:56
+ * @since 1.0, 2025-09-02 11:22:08
  */
 public class AlipayOpenMiniTemplatemessageUsertemplateApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8221723885936441947L;
+	private static final long serialVersionUID = 3385884957575219827L;
 
 	/**
 	 * 开发者自行组合好的模板关键词列表，关键词之间使用英文的逗号“,”进行分割，关键词顺序可以自由搭配，最多支持10个关键词组合,这里组织的关键词，在发送模板消息接口中，按照这里的顺序进行占位符替换

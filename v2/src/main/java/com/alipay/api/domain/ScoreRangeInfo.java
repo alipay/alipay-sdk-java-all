@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ScoreRangeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7175324972892669318L;
+	private static final long serialVersionUID = 1356737343264625669L;
 
 	/**
 	 * 最大品类卖力值范围区间，对应0-100分

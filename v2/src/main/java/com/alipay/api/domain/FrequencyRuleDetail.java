@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FrequencyRuleDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3118794375316162192L;
+	private static final long serialVersionUID = 5793121313383579496L;
 
 	/**
 	 * 频次单位数量，2月1次，则frequencyDuration为2，totalTimes为1，frequencyType为MONTH

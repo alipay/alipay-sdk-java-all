@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPcreditHuabeiSharecodeHbfqCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5497458762965313727L;
+	private static final long serialVersionUID = 2557865347376714124L;
 
 	/**
 	 * 用户在支付宝的唯一标识，以 2088 开头的 16 位纯数字组成。

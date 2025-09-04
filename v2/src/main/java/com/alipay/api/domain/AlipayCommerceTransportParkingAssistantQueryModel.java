@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 停车助手查询接口
  *
  * @author auto create
- * @since 1.0, 2025-08-22 16:12:36
+ * @since 1.0, 2025-09-03 13:57:37
  */
 public class AlipayCommerceTransportParkingAssistantQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2477871884793382365L;
+	private static final long serialVersionUID = 6175154854475387429L;
 
 	/**
-	 * 车牌颜色，如果不填，则默认7位位蓝色，8位为绿色；
+	 * 车牌颜色，如果不填，则默认7位为蓝色，8位为绿色；
 枚举值：
 蓝:BLUE
 绿:GREEN

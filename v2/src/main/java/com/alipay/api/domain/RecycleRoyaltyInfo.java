@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用回收分账信息
  *
  * @author auto create
- * @since 1.0, 2025-08-11 22:47:15
+ * @since 1.0, 2025-09-01 19:33:32
  */
 public class RecycleRoyaltyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8165785791893939574L;
+	private static final long serialVersionUID = 7476592288641689414L;
 
 	/**
 	 * 金额单位元，支持小数点后2位，必须大于0

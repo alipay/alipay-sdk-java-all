@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.data.ipr.video.callback request
  * 
  * @author auto create
- * @since 1.0, 2025-08-04 14:07:35
+ * @since 1.0, 2025-09-01 17:02:38
  */
 public class AlipaySecurityDataIprVideoCallbackRequest implements AlipayRequest<AlipaySecurityDataIprVideoCallbackResponse> {
 

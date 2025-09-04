@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 客户评价数据回传
  *
  * @author auto create
- * @since 1.0, 2025-08-28 13:49:01
+ * @since 1.0, 2025-09-02 21:41:24
  */
 public class ZhimaCustomerCreditinfoCommentdataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6316891432567755487L;
+	private static final long serialVersionUID = 3487913137723696365L;
 
 	/**
 	 * 高德侧传入的本次评价单号

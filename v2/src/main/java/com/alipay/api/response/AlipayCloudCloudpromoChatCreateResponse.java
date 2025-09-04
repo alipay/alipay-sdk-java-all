@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudpromo.chat.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-28 19:37:38
+ * @since 1.0, 2025-09-02 18:02:38
  */
 public class AlipayCloudCloudpromoChatCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6645754743678784363L;
+	private static final long serialVersionUID = 3195944654618489613L;
 
 	/** 
 	 * 消息内容。其中，chat 事件和 message 事件的格式不同。

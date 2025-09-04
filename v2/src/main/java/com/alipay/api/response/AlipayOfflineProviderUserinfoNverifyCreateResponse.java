@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOfflineProviderUserinfoNverifyCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8753764282376321931L;
+	private static final long serialVersionUID = 6587121553341199586L;
 
 	/** 
 	 * 用户VID，是传入身份信息之后，和身份证一一对应的ID，服务商需要保存下来，用于后续核身时关联系统内部身份信息。多次入库返回的VID是相同的。

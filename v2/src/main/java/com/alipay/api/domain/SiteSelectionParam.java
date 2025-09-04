@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class SiteSelectionParam extends AlipayObject {
 
-	private static final long serialVersionUID = 6358641136121193384L;
+	private static final long serialVersionUID = 1713574447877755418L;
 
 	/**
 	 * 全国统一城市编码（地级市级别），eg：北京市110100，杭州市330100

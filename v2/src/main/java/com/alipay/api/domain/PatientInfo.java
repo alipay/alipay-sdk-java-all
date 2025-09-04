@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 就诊人信息
  *
  * @author auto create
- * @since 1.0, 2025-03-13 20:50:43
+ * @since 1.0, 2025-09-04 10:07:45
  */
 public class PatientInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5328613177245968653L;
+	private static final long serialVersionUID = 7498495578554781115L;
 
 	/**
 	 * 过敏史
@@ -62,10 +62,10 @@ public class PatientInfo extends AlipayObject {
 	private String patientAge;
 
 	/**
-	 * 患者年龄单位（day、month、year）
-○ 小于30天：day-天 
-○ 30天~1年：month-月 
-○ 大于等于1年：year-岁
+	 * 患者年龄单位
+○ 小于30天：天 
+○ 30天~1年：月 
+○ 大于等于1年：岁
 	 */
 	@ApiField("patient_age_unit")
 	private String patientAgeUnit;

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayContentLivePlayRightTriggerModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3891423445267534652L;
+	private static final long serialVersionUID = 8567184483245874192L;
 
 	/**
 	 * 支付宝直播间id

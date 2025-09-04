@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PointBusinessTime extends AlipayObject {
 
-	private static final long serialVersionUID = 1874289737557493347L;
+	private static final long serialVersionUID = 8625991497623237295L;
 
 	/**
 	 * 关门时间 格式HH:mm

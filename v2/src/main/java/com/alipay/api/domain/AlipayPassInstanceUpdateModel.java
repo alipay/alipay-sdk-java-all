@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝pass更新卡券实例接口
  *
  * @author auto create
- * @since 1.0, 2025-08-21 19:58:47
+ * @since 1.0, 2025-09-01 10:22:31
  */
 public class AlipayPassInstanceUpdateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4131872987684663389L;
+	private static final long serialVersionUID = 1181316378431834524L;
 
 	/**
 	 * 代理商代替商户发放卡券后，再代替商户更新卡券时，此值为商户的pid/appid

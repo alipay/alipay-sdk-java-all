@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class QAChatDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 4614284859677354286L;
+	private static final long serialVersionUID = 7254791498949943746L;
 
 	/**
 	 * 机器人回答详情

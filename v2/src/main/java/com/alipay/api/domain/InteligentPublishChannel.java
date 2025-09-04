@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InteligentPublishChannel extends AlipayObject {
 
-	private static final long serialVersionUID = 1896338937673955168L;
+	private static final long serialVersionUID = 5413413919656756433L;
 
 	/**
 	 * 当type为MERCHANT_CROWD时，config需填入口令送的密码和图片，样例如下："config":"{\"PASSWORD\":\"口令送密码\",\"BACKGROUND_LOGO\":\"1T8Pp00AT7eo9NoAJkMR3AAAACMAAQEC\"}"

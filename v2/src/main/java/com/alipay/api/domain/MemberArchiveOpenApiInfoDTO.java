@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * MemberArchiveOpenApiInfoDTO
  *
  * @author auto create
- * @since 1.0, 2025-06-18 11:11:39
+ * @since 1.0, 2025-08-30 19:03:05
  */
 public class MemberArchiveOpenApiInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4827843831173922635L;
+	private static final long serialVersionUID = 2538491763428333833L;
 
 	/**
 	 * 年龄
 	 */
 	@ApiField("age")
 	private Long age;
+
+	/**
+	 * 档案编号
+	 */
+	@ApiField("archive_no")
+	private String archiveNo;
 
 	/**
 	 * 头像链接
@@ -97,6 +103,13 @@ OTHER:OTHER
 	}
 	public void setAge(Long age) {
 		this.age = age;
+	}
+
+	public String getArchiveNo() {
+		return this.archiveNo;
+	}
+	public void setArchiveNo(String archiveNo) {
+		this.archiveNo = archiveNo;
 	}
 
 	public String getAvatar() {

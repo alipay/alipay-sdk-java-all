@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AppItemFixVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5733592344324416913L;
+	private static final long serialVersionUID = 8842137984976622431L;
 
 	/**
 	 * 【描述】券的优惠面额

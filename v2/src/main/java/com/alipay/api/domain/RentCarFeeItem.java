@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RentCarFeeItem extends AlipayObject {
 
-	private static final long serialVersionUID = 5585359366384649519L;
+	private static final long serialVersionUID = 8359399861461151414L;
 
 	/**
 	 * 费用金额，单位分

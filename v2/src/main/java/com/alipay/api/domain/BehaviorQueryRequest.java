@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BehaviorQueryRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 3591546594785818384L;
+	private static final long serialVersionUID = 1511376558955372631L;
 
 	/**
 	 * 查询访问用户 30 天内访问频次（次）和时长（天）（scene_code=vis_features）、查询会员用户 30 天内支付频次（次）和支付客单（元）（scene_code=mem_features）、以及查询支付用户 30 天内支付频次（次）、支付客单（元）和支付距今天数（天）（scene_code=pay_user_features）时必填。

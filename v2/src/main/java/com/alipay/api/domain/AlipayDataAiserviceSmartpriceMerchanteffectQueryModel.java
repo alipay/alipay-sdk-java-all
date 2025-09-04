@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataAiserviceSmartpriceMerchanteffectQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5397139683494272983L;
+	private static final long serialVersionUID = 6128422632291945227L;
 
 	/**
 	 * 内部接口版本号

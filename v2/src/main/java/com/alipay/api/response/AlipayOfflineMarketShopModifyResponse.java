@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOfflineMarketShopModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5136845427668625577L;
+	private static final long serialVersionUID = 4519845125235337691L;
 
 	/** 
 	 * 修改门店请求受理成功后返回的支付宝流水ID，根据此ID调用接口

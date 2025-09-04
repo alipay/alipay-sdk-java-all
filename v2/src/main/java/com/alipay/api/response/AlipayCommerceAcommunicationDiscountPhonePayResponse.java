@@ -1,6 +1,7 @@
 package com.alipay.api.response;
 
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.domain.ToBDiscountCustomerServiceInfo;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.acommunication.discount.phone.pay response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-28 11:50:14
+ * @since 1.0, 2025-09-01 16:37:39
  */
 public class AlipayCommerceAcommunicationDiscountPhonePayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5326837751988628711L;
+	private static final long serialVersionUID = 4666419123555993169L;
 
 	/** 
 	 * 支付宝业务订单号
@@ -26,6 +27,12 @@ public class AlipayCommerceAcommunicationDiscountPhonePayResponse extends Alipay
 	@ApiField("alipay_trade_no")
 	private String alipayTradeNo;
 
+	/** 
+	 * 客服信息
+	 */
+	@ApiField("customer_service_info")
+	private ToBDiscountCustomerServiceInfo customerServiceInfo;
+
 	public void setAlipayBizNo(String alipayBizNo) {
 		this.alipayBizNo = alipayBizNo;
 	}
@@ -38,6 +45,13 @@ public class AlipayCommerceAcommunicationDiscountPhonePayResponse extends Alipay
 	}
 	public String getAlipayTradeNo( ) {
 		return this.alipayTradeNo;
+	}
+
+	public void setCustomerServiceInfo(ToBDiscountCustomerServiceInfo customerServiceInfo) {
+		this.customerServiceInfo = customerServiceInfo;
+	}
+	public ToBDiscountCustomerServiceInfo getCustomerServiceInfo( ) {
+		return this.customerServiceInfo;
 	}
 
 }

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 有资金间联票创建接口
  *
  * @author auto create
- * @since 1.0, 2023-11-27 10:29:05
+ * @since 1.0, 2025-09-03 10:23:52
  */
 public class AlipayMarketingIndirectcashticketTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1499257251975964145L;
+	private static final long serialVersionUID = 3495869857184549982L;
 
 	/**
 	 * 票价值面额，即每张票最多可以抵扣的金额。（仅用于有资金定额票,有资金不定额票不能填写此值）。币种为人民币，单位为元。小数点以后最多保留两位，没有抵扣完的面额，可以下次使用；该数值有效范围为0.1~9999

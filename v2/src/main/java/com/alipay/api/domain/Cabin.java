@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class Cabin extends AlipayObject {
 
-	private static final long serialVersionUID = 7577525635792229338L;
+	private static final long serialVersionUID = 7218749488353482424L;
 
 	/**
 	 * 减免后成人价，精确到元

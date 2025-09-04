@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipaySocialAntforestCarbondayQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8321927419928221362L;
+	private static final long serialVersionUID = 5719917418383883483L;
 
 	/**
 	 * 碳账户绿色场景类型，类型为字符串数组。

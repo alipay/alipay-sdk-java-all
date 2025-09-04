@@ -20,7 +20,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayInsSceneHealthGiftBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3133555197428263386L;
+	private static final long serialVersionUID = 1329868713389316662L;
 
 	/** 
 	 * 用户从某个source领取成功的保额

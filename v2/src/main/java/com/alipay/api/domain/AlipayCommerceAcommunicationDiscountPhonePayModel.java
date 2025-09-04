@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 充值话费下单并支付
  *
  * @author auto create
- * @since 1.0, 2025-08-27 14:51:32
+ * @since 1.0, 2025-09-01 16:35:23
  */
 public class AlipayCommerceAcommunicationDiscountPhonePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5191324811471694493L;
+	private static final long serialVersionUID = 7564754724688724766L;
 
 	/**
 	 * 下单用户的Ip

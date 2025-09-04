@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TinyFaceUserInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4285336681694858435L;
+	private static final long serialVersionUID = 7856474625862815657L;
 
 	/**
 	 * 人脸库扩展字段修改后的信息。(如果需要清空扩展字段，需使用空json——“{}”)

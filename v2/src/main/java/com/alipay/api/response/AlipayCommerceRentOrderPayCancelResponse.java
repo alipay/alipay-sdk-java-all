@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.rent.order.pay.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-09 20:12:29
+ * @since 1.0, 2025-09-04 11:02:38
  */
 public class AlipayCommerceRentOrderPayCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4337393585956561866L;
+	private static final long serialVersionUID = 7883473761861251291L;
 
 	/** 
 	 * 交易组件业务订单号

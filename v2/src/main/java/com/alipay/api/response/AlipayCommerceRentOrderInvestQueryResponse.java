@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.rent.order.invest.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-20 10:42:36
+ * @since 1.0, 2025-09-04 10:52:38
  */
 public class AlipayCommerceRentOrderInvestQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4494816387444789968L;
+	private static final long serialVersionUID = 8168896845721311123L;
 
 	/** 
 	 * 租赁扩展信息

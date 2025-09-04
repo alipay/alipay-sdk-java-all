@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 卡
  *
  * @author auto create
- * @since 1.0, 2025-06-17 15:42:05
+ * @since 1.0, 2025-09-04 10:30:46
  */
 public class MerchantCardTemplate extends AlipayObject {
 
-	private static final long serialVersionUID = 2736164289629562151L;
+	private static final long serialVersionUID = 6695724982372692284L;
 
 	/**
 	 * 违约金信息
@@ -64,6 +64,13 @@ public class MerchantCardTemplate extends AlipayObject {
 	 */
 	@ApiField("category_id")
 	private String categoryId;
+
+	/**
+	 * 资金模式，预付或先享，新增时不传默认先享，编辑时不传默认不改变原值
+	 */
+	@ApiListField("funding_model")
+	@ApiField("string")
+	private List<String> fundingModel;
 
 	/**
 	 * 客服电话
@@ -224,6 +231,13 @@ public class MerchantCardTemplate extends AlipayObject {
 	}
 	public void setCategoryId(String categoryId) {
 		this.categoryId = categoryId;
+	}
+
+	public List<String> getFundingModel() {
+		return this.fundingModel;
+	}
+	public void setFundingModel(List<String> fundingModel) {
+		this.fundingModel = fundingModel;
 	}
 
 	public String getHotline() {

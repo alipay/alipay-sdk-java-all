@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.templatemessage.usertemplate.apply response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 15:51:35
+ * @since 1.0, 2025-09-02 11:22:39
  */
 public class AlipayOpenMiniTemplatemessageUsertemplateApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6498587882323996186L;
+	private static final long serialVersionUID = 1366759359578315352L;
 
 	/** 
 	 * 开发者申请的模板id号，使用该模板id号，开发者可以调用alipay.open.app.mini.templatemessage.send接口进行模板消息发送

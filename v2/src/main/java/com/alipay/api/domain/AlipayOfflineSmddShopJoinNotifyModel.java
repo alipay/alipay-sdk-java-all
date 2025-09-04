@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOfflineSmddShopJoinNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4721541831964399112L;
+	private static final long serialVersionUID = 4144579888955765145L;
 
 	/**
 	 * 审核备注

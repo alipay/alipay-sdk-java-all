@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPcreditHuabeiPcreditbenefitFuncardflagQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7779482275173865373L;
+	private static final long serialVersionUID = 7837913718511846858L;
 
 	/** 
 	 * 当前是否有饿了么额度券

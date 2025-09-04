@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserAccountTaobaoBindQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5143249156325461827L;
+	private static final long serialVersionUID = 6428519616768866873L;
 
 	/**
 	 * 淘宝havanaId

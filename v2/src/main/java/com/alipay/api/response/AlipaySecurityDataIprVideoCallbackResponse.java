@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.data.ipr.video.callback response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-04 14:07:35
+ * @since 1.0, 2025-09-01 17:02:38
  */
 public class AlipaySecurityDataIprVideoCallbackResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7337557583195619222L;
+	private static final long serialVersionUID = 2875753948277554818L;
 
 	
 

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券包批量查询
  *
  * @author auto create
- * @since 1.0, 2023-06-29 14:47:51
+ * @since 1.0, 2025-09-03 10:29:46
  */
 public class AlipayMarketingActivityVoucherpackageBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2731847327714157693L;
+	private static final long serialVersionUID = 7451149115188994642L;
 
 	/**
 	 * 分页参数，需要查询的页码，起始页是1
