@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RentRoyalty extends AlipayObject {
 
-	private static final long serialVersionUID = 4624255976642472194L;
+	private static final long serialVersionUID = 1828312863261597898L;
 
 	/**
 	 * 订单id

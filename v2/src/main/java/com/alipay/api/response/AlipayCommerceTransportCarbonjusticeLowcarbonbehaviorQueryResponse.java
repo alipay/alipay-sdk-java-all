@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportCarbonjusticeLowcarbonbehaviorQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3448297424229313363L;
+	private static final long serialVersionUID = 1618461335931367373L;
 
 	/** 
 	 * 碳权益查询结果列表

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 花名册信息删除
  *
  * @author auto create
- * @since 1.0, 2025-04-28 19:41:58
+ * @since 1.0, 2025-09-04 16:05:06
  */
 public class AlipayCommerceEducateRosterInfoDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7639595993471855711L;
+	private static final long serialVersionUID = 3213669375669871859L;
 
 	/**
 	 * 机构ID

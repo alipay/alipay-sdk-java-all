@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ExpenseControlQuotaPayInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5416278499229582293L;
+	private static final long serialVersionUID = 5422654927282729611L;
 
 	/**
 	 * 金额（分）

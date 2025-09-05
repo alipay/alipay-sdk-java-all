@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.node.info.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-29 09:33:24
+ * @since 1.0, 2025-09-05 10:12:38
  */
 public class AlipayCommerceEducateNodeInfoCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5687979957788695995L;
+	private static final long serialVersionUID = 1574778782935945399L;
 
 	/** 
 	 * 创建的组织节点ID，如果组织节点已被创建，则返回原组织节点ID。

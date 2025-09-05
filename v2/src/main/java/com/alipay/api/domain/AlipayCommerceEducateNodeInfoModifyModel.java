@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改组织节点
  *
  * @author auto create
- * @since 1.0, 2025-04-17 17:32:39
+ * @since 1.0, 2025-09-04 16:05:02
  */
 public class AlipayCommerceEducateNodeInfoModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7856199587897531224L;
+	private static final long serialVersionUID = 1829779799615477665L;
 
 	/**
 	 * 机构内标

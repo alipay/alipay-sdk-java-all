@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AnttechNftWithdrawBatchFreezeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8259958857524472165L;
+	private static final long serialVersionUID = 7834452514229694651L;
 
 	
 

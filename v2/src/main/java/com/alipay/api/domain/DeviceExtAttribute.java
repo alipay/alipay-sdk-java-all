@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 设备绑定需要的额外信息
  *
  * @author auto create
- * @since 1.0, 2025-07-16 20:07:34
+ * @since 1.0, 2025-09-05 14:51:47
  */
 public class DeviceExtAttribute extends AlipayObject {
 
-	private static final long serialVersionUID = 4654157473921177991L;
+	private static final long serialVersionUID = 8617194356414211511L;
 
 	/**
 	 * 设备外挂配件的SN号，仅设备有外挂配件时需要传
@@ -44,10 +44,23 @@ public class DeviceExtAttribute extends AlipayObject {
 	private String isvDeviceVersionTag;
 
 	/**
-	 * 卖进订单id，先卖进后绑定模式下必传。
+	 * 卖进订单id，先卖进后绑定模式下必传。 当前字段已废弃(调用此接口创建的订单为预订单，因此字段命名不准确，后续请使用 sales_entry_pre_order_id 字段。)
 	 */
 	@ApiField("sales_entry_order_id")
+	@Deprecated
 	private String salesEntryOrderId;
+
+	/**
+	 * 卖进订单id，批签模式下如果在绑定时用户订单核销成功，但是绑定失败，会返回核销生产的卖进订单id，后续再重试绑定时，可以重新在绑定接口传入该字段，这样则不会占用签约额度。
+	 */
+	@ApiField("sales_order_id")
+	private String salesOrderId;
+
+	/**
+	 * 卖进预订单id
+	 */
+	@ApiField("sales_pre_order_id")
+	private String salesPreOrderId;
 
 	/**
 	 * 卖进方案扩展信息
@@ -131,6 +144,20 @@ public class DeviceExtAttribute extends AlipayObject {
 	}
 	public void setSalesEntryOrderId(String salesEntryOrderId) {
 		this.salesEntryOrderId = salesEntryOrderId;
+	}
+
+	public String getSalesOrderId() {
+		return this.salesOrderId;
+	}
+	public void setSalesOrderId(String salesOrderId) {
+		this.salesOrderId = salesOrderId;
+	}
+
+	public String getSalesPreOrderId() {
+		return this.salesPreOrderId;
+	}
+	public void setSalesPreOrderId(String salesPreOrderId) {
+		this.salesPreOrderId = salesPreOrderId;
 	}
 
 	public SalesSolutionExt getSalesSolutionExt() {

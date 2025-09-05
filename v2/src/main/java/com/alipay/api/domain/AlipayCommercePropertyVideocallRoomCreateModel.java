@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建视频房间
  *
  * @author auto create
- * @since 1.0, 2025-09-01 15:01:30
+ * @since 1.0, 2025-09-05 11:21:27
  */
 public class AlipayCommercePropertyVideocallRoomCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7733932454812564428L;
+	private static final long serialVersionUID = 4529197386152382454L;
 
 	/**
 	 * 如果typeList有天猫精灵，则deviceId必传

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.roster.info.save response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-29 10:29:43
+ * @since 1.0, 2025-09-04 16:07:38
  */
 public class AlipayCommerceEducateRosterInfoSaveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8266465919731532943L;
+	private static final long serialVersionUID = 2211285857775461359L;
 
 	/** 
 	 * 花名册ID

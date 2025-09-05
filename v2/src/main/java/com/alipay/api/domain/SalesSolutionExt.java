@@ -7,17 +7,30 @@ import com.alipay.api.internal.mapping.ApiField;
  * 卖进方案扩展信息
  *
  * @author auto create
- * @since 1.0, 2025-03-17 16:40:21
+ * @since 1.0, 2025-09-05 14:51:47
  */
 public class SalesSolutionExt extends AlipayObject {
 
-	private static final long serialVersionUID = 6726317865972119489L;
+	private static final long serialVersionUID = 4856791386836219415L;
+
+	/**
+	 * 批量签约的数量（该字段只在先卖进后绑定模式下使用）
+	 */
+	@ApiField("batch_sign_count")
+	private Long batchSignCount;
 
 	/**
 	 * 必须是数字格式，单位元，在使用全额付动态价格方案做卖进时，根据该字段传入该次卖进的价格。
 	 */
 	@ApiField("price")
 	private String price;
+
+	public Long getBatchSignCount() {
+		return this.batchSignCount;
+	}
+	public void setBatchSignCount(Long batchSignCount) {
+		this.batchSignCount = batchSignCount;
+	}
 
 	public String getPrice() {
 		return this.price;

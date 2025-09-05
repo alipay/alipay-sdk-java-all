@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发起对话
  *
  * @author auto create
- * @since 1.0, 2025-09-02 18:02:38
+ * @since 1.0, 2025-09-04 21:32:37
  */
 public class AlipayCloudCloudpromoChatCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8888672825813533378L;
+	private static final long serialVersionUID = 7449266551884175739L;
 
 	/**
 	 * 要进行会话聊天的智能体ID。
@@ -66,6 +66,12 @@ public class AlipayCloudCloudpromoChatCreateModel extends AlipayObject {
 	 */
 	@ApiField("retry")
 	private Boolean retry;
+
+	/**
+	 * 会话 ID，即会话的唯一标识。
+	 */
+	@ApiField("session_id")
+	private String sessionId;
 
 	/**
 	 * 标识当前与智能体对话的用户，由使用方自行定义、生成与维护。
@@ -134,6 +140,13 @@ public class AlipayCloudCloudpromoChatCreateModel extends AlipayObject {
 	}
 	public void setRetry(Boolean retry) {
 		this.retry = retry;
+	}
+
+	public String getSessionId() {
+		return this.sessionId;
+	}
+	public void setSessionId(String sessionId) {
+		this.sessionId = sessionId;
 	}
 
 	public String getUserId() {

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayTradeFinanceAdvanceApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5739834583151958112L;
+	private static final long serialVersionUID = 6396472732772557362L;
 
 	/**
 	 * 垫资申请金额，单位元，精确到小数点后2位

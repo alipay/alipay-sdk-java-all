@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceLogisticsFreightflowSubaccountCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1536445445897512168L;
+	private static final long serialVersionUID = 4722194411927375263L;
 
 	/** 
 	 * 母户的账户名称

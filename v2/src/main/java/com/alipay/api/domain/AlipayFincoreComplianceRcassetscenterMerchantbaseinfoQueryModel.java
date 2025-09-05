@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFincoreComplianceRcassetscenterMerchantbaseinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7649173615794615983L;
+	private static final long serialVersionUID = 1136863979712291448L;
 
 	/**
 	 * 企业名称

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.property.videocall.room.create request
  * 
  * @author auto create
- * @since 1.0, 2025-09-01 15:01:31
+ * @since 1.0, 2025-09-05 11:22:38
  */
 public class AlipayCommercePropertyVideocallRoomCreateRequest implements AlipayRequest<AlipayCommercePropertyVideocallRoomCreateResponse> {
 

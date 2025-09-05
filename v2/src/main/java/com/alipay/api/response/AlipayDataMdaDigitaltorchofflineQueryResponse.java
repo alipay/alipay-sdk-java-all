@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataMdaDigitaltorchofflineQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7585716374565462578L;
+	private static final long serialVersionUID = 6262579256865319329L;
 
 	/** 
 	 * 数字火炬手年龄分布

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 寄件激励码绑码激活信息同步
  *
  * @author auto create
- * @since 1.0, 2025-06-25 20:47:42
+ * @since 1.0, 2025-09-05 14:35:25
  */
 public class AlipayCommerceLogisticsIncentivecodeActiveSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4553825145447417794L;
+	private static final long serialVersionUID = 1397451294856141245L;
 
 	/**
 	 * 码值绑定时位置的区
@@ -58,10 +58,22 @@ public class AlipayCommerceLogisticsIncentivecodeActiveSyncModel extends AlipayO
 	private String activeLongitude;
 
 	/**
+	 * 碰一下物料铺设门店编码
+	 */
+	@ApiField("active_out_shop_id")
+	private String activeOutShopId;
+
+	/**
 	 * 码值绑定时位置的省份
 	 */
 	@ApiField("active_province")
 	private String activeProvince;
+
+	/**
+	 * 碰一下物料铺设门店名称
+	 */
+	@ApiField("active_shop_name")
+	private String activeShopName;
 
 	/**
 	 * 码值绑定时位置的街道
@@ -93,6 +105,12 @@ STATION 代表驿站
 	 */
 	@ApiField("logistics_code")
 	private String logisticsCode;
+
+	/**
+	 * 物料类型
+	 */
+	@ApiField("material_type")
+	private String materialType;
 
 	public String getActiveArea() {
 		return this.activeArea;
@@ -143,11 +161,25 @@ STATION 代表驿站
 		this.activeLongitude = activeLongitude;
 	}
 
+	public String getActiveOutShopId() {
+		return this.activeOutShopId;
+	}
+	public void setActiveOutShopId(String activeOutShopId) {
+		this.activeOutShopId = activeOutShopId;
+	}
+
 	public String getActiveProvince() {
 		return this.activeProvince;
 	}
 	public void setActiveProvince(String activeProvince) {
 		this.activeProvince = activeProvince;
+	}
+
+	public String getActiveShopName() {
+		return this.activeShopName;
+	}
+	public void setActiveShopName(String activeShopName) {
+		this.activeShopName = activeShopName;
 	}
 
 	public String getActiveStreet() {
@@ -183,6 +215,13 @@ STATION 代表驿站
 	}
 	public void setLogisticsCode(String logisticsCode) {
 		this.logisticsCode = logisticsCode;
+	}
+
+	public String getMaterialType() {
+		return this.materialType;
+	}
+	public void setMaterialType(String materialType) {
+		this.materialType = materialType;
 	}
 
 }

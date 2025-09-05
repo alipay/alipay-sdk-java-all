@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 线下用工项目登记记录查询
  *
  * @author auto create
- * @since 1.0, 2025-08-29 13:40:10
+ * @since 1.0, 2025-09-05 17:05:07
  */
 public class AlipayEbppIndustryOfflinelaborRegisterQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8268748476343345763L;
+	private static final long serialVersionUID = 2675675349484727867L;
 
 	/**
 	 * 登记状态

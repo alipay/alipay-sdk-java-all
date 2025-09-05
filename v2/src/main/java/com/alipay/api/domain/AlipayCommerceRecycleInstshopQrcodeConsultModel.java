@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceRecycleInstshopQrcodeConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6894174376576635855L;
+	private static final long serialVersionUID = 3345291146456817112L;
 
 	/**
 	 * 标准蚂蚁门店ID

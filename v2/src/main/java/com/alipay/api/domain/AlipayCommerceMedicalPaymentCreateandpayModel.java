@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 国家医保局线上业务下单支付接口
  *
  * @author auto create
- * @since 1.0, 2024-09-27 16:00:52
+ * @since 1.0, 2025-09-04 21:20:42
  */
 public class AlipayCommerceMedicalPaymentCreateandpayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2329427183347251296L;
+	private static final long serialVersionUID = 6652264358287717961L;
 
 	/**
 	 * 个人账户支付金额

@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataAiserviceCloudbusAvailableQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7637194351767853348L;
+	private static final long serialVersionUID = 3235421773378554786L;
 
 	/** 
 	 * 城市可用时间和用户geohash可用额度

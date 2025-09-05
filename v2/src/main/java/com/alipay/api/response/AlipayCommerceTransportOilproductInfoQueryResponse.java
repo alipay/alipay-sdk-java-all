@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportOilproductInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6487128148956614624L;
+	private static final long serialVersionUID = 5517421336744383558L;
 
 	/** 
 	 * 油站列表

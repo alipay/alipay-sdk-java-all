@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 挂号订单回流
  *
  * @author auto create
- * @since 1.0, 2025-05-29 20:08:56
+ * @since 1.0, 2025-09-04 18:12:59
  */
 public class AlipayCommerceMedicalRegisterOrderNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4864231962942173657L;
+	private static final long serialVersionUID = 7543264249669453874L;
 
 	/**
 	 * 订单创建 INSERT,
@@ -155,6 +155,12 @@ public class AlipayCommerceMedicalRegisterOrderNotifyModel extends AlipayObject 
 	 */
 	@ApiField("order_no")
 	private String orderNo;
+
+	/**
+	 * 挂号订单属性
+	 */
+	@ApiField("order_prop")
+	private String orderProp;
 
 	/**
 	 * 订单状态
@@ -377,6 +383,13 @@ public class AlipayCommerceMedicalRegisterOrderNotifyModel extends AlipayObject 
 	}
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
+	}
+
+	public String getOrderProp() {
+		return this.orderProp;
+	}
+	public void setOrderProp(String orderProp) {
+		this.orderProp = orderProp;
 	}
 
 	public String getOrderStatus() {

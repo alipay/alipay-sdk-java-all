@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingCampaignPromotionactivityConsumerviewBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5255513762242945953L;
+	private static final long serialVersionUID = 8727214949979687369L;
 
 	/**
 	 * 单品券场景下对应的goods_id,单次最多限制5个

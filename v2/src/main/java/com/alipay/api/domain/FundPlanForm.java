@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FundPlanForm extends AlipayObject {
 
-	private static final long serialVersionUID = 1149721595988716268L;
+	private static final long serialVersionUID = 4595583473749446153L;
 
 	/**
 	 * 自动充值金额（单位为元，必须大于0且最多小数点后两位）

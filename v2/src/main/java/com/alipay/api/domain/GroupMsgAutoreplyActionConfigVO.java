@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GroupMsgAutoreplyActionConfigVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2876976287377744785L;
+	private static final long serialVersionUID = 1173991582343673279L;
 
 	/**
 	 * 图片文件id，请先通过图片上传接口上传图片<a href="https://opendocs.alipay.com/apis/036ros">https://opendocs.alipay.com/apis/036ros</a> 并获取到 file_id 作为这个入参的值

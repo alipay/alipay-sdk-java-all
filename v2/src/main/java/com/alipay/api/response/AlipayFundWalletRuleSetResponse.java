@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundWalletRuleSetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1776257781334228595L;
+	private static final long serialVersionUID = 2496793722981292546L;
 
 	
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMerchantcardSettleaccountusedQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2324277497622537573L;
+	private static final long serialVersionUID = 3134737699739577863L;
 
 	/** 
 	 * 结算收款的支付宝账号，登录账号，非pid

@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.property.videocall.room.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-01 15:01:31
+ * @since 1.0, 2025-09-05 11:22:38
  */
 public class AlipayCommercePropertyVideocallRoomCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6221565772624197739L;
+	private static final long serialVersionUID = 6266855638184616841L;
 
 	/** 
 	 * 业务名称
 	 */
 	@ApiField("biz_name")
 	private String bizName;
+
+	/** 
+	 * 设备ID
+	 */
+	@ApiField("device_id")
+	private String deviceId;
 
 	/** 
 	 * 业主ID值
@@ -45,6 +51,12 @@ public class AlipayCommercePropertyVideocallRoomCreateResponse extends AlipayRes
 	private String roomSign;
 
 	/** 
+	 * 服务url
+	 */
+	@ApiField("server_url_arr")
+	private String serverUrlArr;
+
+	/** 
 	 * 子业务名称
 	 */
 	@ApiField("sub_biz_name")
@@ -67,6 +79,13 @@ public class AlipayCommercePropertyVideocallRoomCreateResponse extends AlipayRes
 	}
 	public String getBizName( ) {
 		return this.bizName;
+	}
+
+	public void setDeviceId(String deviceId) {
+		this.deviceId = deviceId;
+	}
+	public String getDeviceId( ) {
+		return this.deviceId;
 	}
 
 	public void setOwnerId(String ownerId) {
@@ -95,6 +114,13 @@ public class AlipayCommercePropertyVideocallRoomCreateResponse extends AlipayRes
 	}
 	public String getRoomSign( ) {
 		return this.roomSign;
+	}
+
+	public void setServerUrlArr(String serverUrlArr) {
+		this.serverUrlArr = serverUrlArr;
+	}
+	public String getServerUrlArr( ) {
+		return this.serverUrlArr;
 	}
 
 	public void setSubBizName(String subBizName) {

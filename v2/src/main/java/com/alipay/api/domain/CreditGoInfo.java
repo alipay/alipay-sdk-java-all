@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CreditGoInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1432314314621874223L;
+	private static final long serialVersionUID = 8119626817467516125L;
 
 	/**
 	 * 芝麻任务权益信息

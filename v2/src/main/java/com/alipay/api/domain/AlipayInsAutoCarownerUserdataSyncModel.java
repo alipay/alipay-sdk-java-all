@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayInsAutoCarownerUserdataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7322163346464289539L;
+	private static final long serialVersionUID = 3138446173646856687L;
 
 	/**
 	 * 发动机号

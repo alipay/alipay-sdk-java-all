@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class TuitionISVAmountInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5427339796785129916L;
+	private static final long serialVersionUID = 2124958833647786316L;
 
 	/**
 	 * 费用明细

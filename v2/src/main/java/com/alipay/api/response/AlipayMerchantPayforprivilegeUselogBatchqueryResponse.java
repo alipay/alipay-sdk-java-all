@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMerchantPayforprivilegeUselogBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4536245267362765792L;
+	private static final long serialVersionUID = 5827129228429236354L;
 
 	/** 
 	 * 余额使用记录

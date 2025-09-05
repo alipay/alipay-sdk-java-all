@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceGasBarcodeInstCertifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8568798627727376336L;
+	private static final long serialVersionUID = 7394668418561554872L;
 
 	/** 
 	 * 机构支付验证动态码

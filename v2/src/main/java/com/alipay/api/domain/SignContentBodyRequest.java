@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SignContentBodyRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 4534152669726331399L;
+	private static final long serialVersionUID = 1459678722779392785L;
 
 	/**
 	 * 文件名
