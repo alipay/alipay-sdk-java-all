@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 充值、提现、转账明细记录
  *
  * @author auto create
- * @since 1.0, 2025-06-26 21:22:25
+ * @since 1.0, 2025-09-12 17:31:12
  */
 public class TransferDetailResult extends AlipayObject {
 
-	private static final long serialVersionUID = 6457775799899684258L;
+	private static final long serialVersionUID = 8817517731481882721L;
 
 	/**
 	 * 付款/收款账户。充值记录中是付款账户。提现、转账记录中是收款账户。支付宝名称及账号脱敏；银行账户的户名脱敏，银行账户显示银行名称+银行卡号后四位
@@ -20,7 +20,7 @@ public class TransferDetailResult extends AlipayObject {
 	private String account;
 
 	/**
-	 * 金额
+	 * 金额，人民币元
 	 */
 	@ApiField("amount")
 	private String amount;
@@ -50,7 +50,7 @@ public class TransferDetailResult extends AlipayObject {
 	private String orderNo;
 
 	/**
-	 * 服务费金额
+	 * 服务费金额，人民币元
 	 */
 	@ApiField("service_fee")
 	private String serviceFee;

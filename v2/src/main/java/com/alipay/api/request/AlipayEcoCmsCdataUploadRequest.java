@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.eco.cms.cdata.upload request
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 17:31:53
+ * @since 1.0, 2025-09-08 10:17:41
  */
 public class AlipayEcoCmsCdataUploadRequest implements AlipayRequest<AlipayEcoCmsCdataUploadResponse> {
 

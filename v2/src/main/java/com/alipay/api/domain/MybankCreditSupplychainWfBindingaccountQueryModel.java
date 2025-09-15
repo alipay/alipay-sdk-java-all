@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * wf 查询绑定关系
  *
  * @author auto create
- * @since 1.0, 2022-05-13 17:18:16
+ * @since 1.0, 2025-09-08 12:03:16
  */
 public class MybankCreditSupplychainWfBindingaccountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8367941128752772275L;
+	private static final long serialVersionUID = 5514765141913923331L;
 
 	/**
 	 * 场景码，固定，WF提前收款个人

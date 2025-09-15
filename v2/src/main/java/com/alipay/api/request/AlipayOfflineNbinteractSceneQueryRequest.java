@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.nbinteract.scene.query request
  * 
  * @author auto create
- * @since 1.0, 2025-09-02 14:59:45
+ * @since 1.0, 2025-09-12 09:57:40
  */
 public class AlipayOfflineNbinteractSceneQueryRequest implements AlipayRequest<AlipayOfflineNbinteractSceneQueryResponse> {
 

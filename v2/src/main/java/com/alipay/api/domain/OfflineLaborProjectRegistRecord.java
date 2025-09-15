@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-09-05 17:05:07
+ * @since 1.0, 2025-09-12 21:32:38
  */
 public class OfflineLaborProjectRegistRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 4348565946676834668L;
+	private static final long serialVersionUID = 7386541624581875591L;
 
 	/**
 	 * 用户支付宝账号
@@ -74,10 +74,24 @@ public class OfflineLaborProjectRegistRecord extends AlipayObject {
 	private String openId;
 
 	/**
-	 * 外部登记记录编号
+	 * 外部登记号 当前字段已废弃(字段名称调整,新增 out_register_id 字段替代)
 	 */
 	@ApiField("out_regist_id")
+	@Deprecated
 	private String outRegistId;
+
+	/**
+	 * 外部登记号
+	 */
+	@ApiField("out_register_id")
+	private String outRegisterId;
+
+	/**
+	 * 外部登记号 当前字段已废弃(字段名称调整,新增 out_register_id 字段替代)
+	 */
+	@ApiField("out_register_no")
+	@Deprecated
+	private String outRegisterNo;
 
 	/**
 	 * 用户手机号
@@ -190,6 +204,20 @@ public class OfflineLaborProjectRegistRecord extends AlipayObject {
 	}
 	public void setOutRegistId(String outRegistId) {
 		this.outRegistId = outRegistId;
+	}
+
+	public String getOutRegisterId() {
+		return this.outRegisterId;
+	}
+	public void setOutRegisterId(String outRegisterId) {
+		this.outRegisterId = outRegisterId;
+	}
+
+	public String getOutRegisterNo() {
+		return this.outRegisterNo;
+	}
+	public void setOutRegisterNo(String outRegisterNo) {
+		this.outRegisterNo = outRegisterNo;
 	}
 
 	public String getPhoneNumber() {

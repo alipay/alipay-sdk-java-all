@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.hotel.locker.device.sync response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-02 11:48:48
+ * @since 1.0, 2025-09-12 10:02:40
  */
 public class AlipayCommerceHotelLockerDeviceSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4676123678479831837L;
+	private static final long serialVersionUID = 4517139848423333881L;
 
 	
 

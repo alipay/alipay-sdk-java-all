@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 正向通用发票商品信息
  *
  * @author auto create
- * @since 1.0, 2025-08-11 23:07:19
+ * @since 1.0, 2025-09-10 00:31:43
  */
 public class IndustryInvoiceItemInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7642434177232277476L;
+	private static final long serialVersionUID = 8467127612185924419L;
 
 	/**
 	 * 优惠政策标识
@@ -34,9 +34,20 @@ public class IndustryInvoiceItemInfo extends AlipayObject {
 
 	/**
 	 * 开票金额：总位数20位，最多16位整数，最多2位小数，单位：元
+开票金额与不含税金额必须二选一传入，不传入则系统自行计算，传入则只做校验
+更多计算、校验、进位规则详情见：
+<a href="https://opendocs.alipay.com/mini/0i3ikm">https://opendocs.alipay.com/mini/0i3ikm</a>
 	 */
 	@ApiField("item_amount")
 	private String itemAmount;
+
+	/**
+	 * 不含税金额：总位数20位，最多16位整数，最多2位小数，单位：元
+不含税金额与开票金额必须二选一传入
+不传入则系统自行计算，传入则只做校验
+	 */
+	@ApiField("item_amount_without_tax")
+	private String itemAmountWithoutTax;
 
 	/**
 	 * 商品配置编码
@@ -51,7 +62,8 @@ public class IndustryInvoiceItemInfo extends AlipayObject {
 	private String itemName;
 
 	/**
-	 * 商品数量：总27位数，最多15位整数，最多10位小数
+	 * 商品数量：总27位数，最多17位整数，最多13位小数
+不传入则系统自行计算，传入则只做校验
 	 */
 	@ApiField("item_num")
 	private String itemNum;
@@ -61,6 +73,13 @@ public class IndustryInvoiceItemInfo extends AlipayObject {
 	 */
 	@ApiField("item_spec")
 	private String itemSpec;
+
+	/**
+	 * 商品税额：总位数20位，最多16位整数，最多2位小数，单位：元
+不传入则系统自行计算，传入则只做校验
+	 */
+	@ApiField("item_tax_amount")
+	private String itemTaxAmount;
 
 	/**
 	 * 商品税率，小数介于(0, 1)，小数部分最多保留四位
@@ -76,6 +95,13 @@ public class IndustryInvoiceItemInfo extends AlipayObject {
 	 */
 	@ApiField("item_unit")
 	private String itemUnit;
+
+	/**
+	 * 不含税单价：总27位数，最多17位整数，最多13位小数 单位：元
+不传入则系统自行计算，传入则只做校验
+	 */
+	@ApiField("item_unit_amount")
+	private String itemUnitAmount;
 
 	/**
 	 * 关联蓝票明细行序号
@@ -123,6 +149,13 @@ public class IndustryInvoiceItemInfo extends AlipayObject {
 		this.itemAmount = itemAmount;
 	}
 
+	public String getItemAmountWithoutTax() {
+		return this.itemAmountWithoutTax;
+	}
+	public void setItemAmountWithoutTax(String itemAmountWithoutTax) {
+		this.itemAmountWithoutTax = itemAmountWithoutTax;
+	}
+
 	public String getItemCode() {
 		return this.itemCode;
 	}
@@ -151,6 +184,13 @@ public class IndustryInvoiceItemInfo extends AlipayObject {
 		this.itemSpec = itemSpec;
 	}
 
+	public String getItemTaxAmount() {
+		return this.itemTaxAmount;
+	}
+	public void setItemTaxAmount(String itemTaxAmount) {
+		this.itemTaxAmount = itemTaxAmount;
+	}
+
 	public String getItemTaxRate() {
 		return this.itemTaxRate;
 	}
@@ -163,6 +203,13 @@ public class IndustryInvoiceItemInfo extends AlipayObject {
 	}
 	public void setItemUnit(String itemUnit) {
 		this.itemUnit = itemUnit;
+	}
+
+	public String getItemUnitAmount() {
+		return this.itemUnitAmount;
+	}
+	public void setItemUnitAmount(String itemUnitAmount) {
+		this.itemUnitAmount = itemUnitAmount;
 	}
 
 	public Long getRelatedBlueSerialNo() {

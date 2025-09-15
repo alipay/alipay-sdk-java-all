@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.honor.loan.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-01 17:07:38
+ * @since 1.0, 2025-09-12 16:17:40
  */
 public class AlipayPcreditLoanHonorLoanBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7553572564862867623L;
+	private static final long serialVersionUID = 3459177784973224968L;
 
 	/** 
 	 * 入参传了currentPage才返回

@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.honor.lendadmit.consult response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-01 17:32:38
+ * @since 1.0, 2025-09-12 17:12:40
  */
 public class AlipayPcreditLoanHonorLendadmitConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1869769731466769981L;
+	private static final long serialVersionUID = 3199391638238574231L;
 
 	/** 
 	 * 不需要核身，true-跳过核身，false-需要核身 （用于dev mock）

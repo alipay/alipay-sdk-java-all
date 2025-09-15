@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ActivityAssistantMsgContentVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5215853234413693479L;
+	private static final long serialVersionUID = 1651515127836822898L;
 
 	/**
 	 * 小助手活动内容信息列表

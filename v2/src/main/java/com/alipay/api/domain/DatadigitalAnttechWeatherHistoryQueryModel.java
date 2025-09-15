@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DatadigitalAnttechWeatherHistoryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3371526489379337454L;
+	private static final long serialVersionUID = 3336388476558336871L;
 
 	/**
 	 * 蚂蚁数科气象服务产品码，找蚂蚁数科运营同学获取

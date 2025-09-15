@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 新流程测试接口
  *
  * @author auto create
- * @since 1.0, 2025-08-18 23:02:13
+ * @since 1.0, 2025-09-11 13:45:32
  */
 public class AlipayOpenAppHexidemoModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1368918622457212752L;
+	private static final long serialVersionUID = 1621255467349957294L;
 
 	/**
 	 * 查询对象

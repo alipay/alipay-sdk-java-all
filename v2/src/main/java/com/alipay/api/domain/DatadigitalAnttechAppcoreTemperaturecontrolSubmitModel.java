@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DatadigitalAnttechAppcoreTemperaturecontrolSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3339687259998367993L;
+	private static final long serialVersionUID = 7333934119594479275L;
 
 	/**
 	 * 企业统一社会信用代码，和热力公司定义保持一致

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AccessFailReasonVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2884919547874768973L;
+	private static final long serialVersionUID = 8373526165346717898L;
 
 	/**
 	 * 一般为引导商户修改账号配置的链接

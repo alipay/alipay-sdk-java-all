@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaCreditEpAcceptanceApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4476815673935166958L;
+	private static final long serialVersionUID = 3489821524618524487L;
 
 	/** 
 	 * 用于跳转支付宝页面的信息，POST和GET方法生成内容不同：使用POST方法执行，结果为html form表单，在浏览器渲染即可；使用GET方法会得到支付宝URL，需要打开或重定向到该URL。建议使用POST方式。

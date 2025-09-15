@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询类目可关联spu信息
  *
  * @author auto create
- * @since 1.0, 2025-08-21 14:27:36
+ * @since 1.0, 2025-09-15 13:49:32
  */
 public class AlipayOpenAppItemCatespuQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1616236786246452457L;
+	private static final long serialVersionUID = 5744123684199866824L;
 
 	/**
 	 * 类目ID，查询类目信息获取叶子类目ID

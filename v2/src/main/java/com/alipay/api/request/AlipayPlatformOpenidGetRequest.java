@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.platform.openid.get request
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 19:33:36
+ * @since 1.0, 2025-09-08 10:23:17
  */
 public class AlipayPlatformOpenidGetRequest implements AlipayRequest<AlipayPlatformOpenidGetResponse> {
 

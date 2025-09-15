@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.honor.cert.check response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-01 17:26:25
+ * @since 1.0, 2025-09-12 17:12:39
  */
 public class AlipayPcreditLoanHonorCertCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5281417854656798928L;
+	private static final long serialVersionUID = 6859752388469413888L;
 
 	/** 
 	 * 校验结果, true-一致, false-不一致

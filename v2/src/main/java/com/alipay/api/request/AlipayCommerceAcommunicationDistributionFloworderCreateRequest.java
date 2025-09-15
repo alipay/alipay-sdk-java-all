@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.acommunication.distribution.floworder.create request
  * 
  * @author auto create
- * @since 1.0, 2025-08-28 15:57:14
+ * @since 1.0, 2025-09-15 14:27:38
  */
 public class AlipayCommerceAcommunicationDistributionFloworderCreateRequest implements AlipayRequest<AlipayCommerceAcommunicationDistributionFloworderCreateResponse> {
 

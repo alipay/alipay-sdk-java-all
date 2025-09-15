@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 荣耀获取拉银行卡列表token
  *
  * @author auto create
- * @since 1.0, 2025-09-01 17:30:04
+ * @since 1.0, 2025-09-12 17:09:49
  */
 public class AlipayPcreditLoanHonorBankcardtokenGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8468861862175993412L;
+	private static final long serialVersionUID = 2755823593375351761L;
 
 	/**
 	 * 支付宝用户id
@@ -36,6 +36,12 @@ public class AlipayPcreditLoanHonorBankcardtokenGetModel extends AlipayObject {
 	 */
 	@ApiField("out_trace_id")
 	private String outTraceId;
+
+	/**
+	 * 渠道产品码
+	 */
+	@ApiField("product_code")
+	private String productCode;
 
 	/**
 	 * 请求来源 CUSTOMER-C端对应用户发起、SCHEDULER-调度发起、BACKDOOR-小二对应后台用户调用
@@ -69,6 +75,13 @@ public class AlipayPcreditLoanHonorBankcardtokenGetModel extends AlipayObject {
 	}
 	public void setOutTraceId(String outTraceId) {
 		this.outTraceId = outTraceId;
+	}
+
+	public String getProductCode() {
+		return this.productCode;
+	}
+	public void setProductCode(String productCode) {
+		this.productCode = productCode;
 	}
 
 	public String getRequestSource() {

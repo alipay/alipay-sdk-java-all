@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 状态变更模型
  *
  * @author auto create
- * @since 1.0, 2025-05-29 16:18:38
+ * @since 1.0, 2025-09-09 15:07:24
  */
 public class ChangeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2887889627798737619L;
+	private static final long serialVersionUID = 7241471832135755277L;
 
 	/**
 	 * 支付宝协议支付的协议号。SCHOOL_DEDUCT_OPEN时返回
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
+
+	/**
+	 * 资产id，如小荷包accountId
+	 */
+	@ApiField("asset_id")
+	private String assetId;
 
 	/**
 	 * 变更状态。可选的字段枚举说明：{SUCCESS:变更成功;FAIL:变更失败}
@@ -36,6 +42,13 @@ public class ChangeModel extends AlipayObject {
 	}
 	public void setAgreementNo(String agreementNo) {
 		this.agreementNo = agreementNo;
+	}
+
+	public String getAssetId() {
+		return this.assetId;
+	}
+	public void setAssetId(String assetId) {
+		this.assetId = assetId;
 	}
 
 	public String getStatus() {

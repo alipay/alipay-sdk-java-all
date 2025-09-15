@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.isponetest.computertest.quickcreate response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 17:41:15
+ * @since 1.0, 2025-09-08 10:13:31
  */
 public class AlipayIsponetestComputertestQuickcreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3722736868352888117L;
+	private static final long serialVersionUID = 1886458427837949942L;
 
 	/** 
 	 * 3

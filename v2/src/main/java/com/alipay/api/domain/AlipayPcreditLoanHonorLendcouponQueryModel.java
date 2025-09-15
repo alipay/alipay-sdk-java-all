@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 荣耀借款可用优惠券查询
  *
  * @author auto create
- * @since 1.0, 2025-09-01 17:23:27
+ * @since 1.0, 2025-09-12 17:09:56
  */
 public class AlipayPcreditLoanHonorLendcouponQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8321579576556886541L;
+	private static final long serialVersionUID = 2333311796383252554L;
 
 	/**
 	 * 支付宝2088用户id
@@ -42,6 +42,12 @@ public class AlipayPcreditLoanHonorLendcouponQueryModel extends AlipayObject {
 	 */
 	@ApiField("out_trace_id")
 	private String outTraceId;
+
+	/**
+	 * 渠道产品码
+	 */
+	@ApiField("product_code")
+	private String productCode;
 
 	/**
 	 * 还款方式，枚举值：
@@ -98,6 +104,13 @@ public class AlipayPcreditLoanHonorLendcouponQueryModel extends AlipayObject {
 	}
 	public void setOutTraceId(String outTraceId) {
 		this.outTraceId = outTraceId;
+	}
+
+	public String getProductCode() {
+		return this.productCode;
+	}
+	public void setProductCode(String productCode) {
+		this.productCode = productCode;
 	}
 
 	public Long getRepayMethod() {

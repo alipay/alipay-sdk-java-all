@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 荣耀用户实名校验
  *
  * @author auto create
- * @since 1.0, 2025-09-01 17:26:25
+ * @since 1.0, 2025-09-12 17:10:13
  */
 public class AlipayPcreditLoanHonorCertCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6445818811888478236L;
+	private static final long serialVersionUID = 4385729712987586565L;
 
 	/**
 	 * 支付宝用户id
@@ -42,6 +42,12 @@ public class AlipayPcreditLoanHonorCertCheckModel extends AlipayObject {
 	 */
 	@ApiField("out_trace_id")
 	private String outTraceId;
+
+	/**
+	 * 渠道产品码
+	 */
+	@ApiField("product_code")
+	private String productCode;
 
 	/**
 	 * 姓名
@@ -88,6 +94,13 @@ public class AlipayPcreditLoanHonorCertCheckModel extends AlipayObject {
 	}
 	public void setOutTraceId(String outTraceId) {
 		this.outTraceId = outTraceId;
+	}
+
+	public String getProductCode() {
+		return this.productCode;
+	}
+	public void setProductCode(String productCode) {
+		this.productCode = productCode;
 	}
 
 	public String getRealName() {

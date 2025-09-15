@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundAllocSignDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2856766557527572735L;
+	private static final long serialVersionUID = 4498339874465229824L;
 
 	/**
 	 * 授权协议号

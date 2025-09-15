@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenAppLocalitemCalendarpriceSaveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6384143628337548763L;
+	private static final long serialVersionUID = 1266421524545261529L;
 
 	
 

@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业（商户）产品配置
  *
  * @author auto create
- * @since 1.0, 2025-04-22 15:37:57
+ * @since 1.0, 2025-09-10 00:28:15
  */
 public class CompanyProductConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 5385812112659741411L;
+	private static final long serialVersionUID = 6529638954365914338L;
+
+	/**
+	 * 字段为Y时，扫码关联的订单在自然人确认后，会邀约自然人成为供应商，前提自然人非当前企业的供应商 字段默认为N
+	 */
+	@ApiField("invite_suppliers_after_order_confirm")
+	private String inviteSuppliersAfterOrderConfirm;
 
 	/**
 	 * 票种
@@ -36,6 +42,13 @@ public class CompanyProductConfig extends AlipayObject {
 	 */
 	@ApiField("tax_rate")
 	private String taxRate;
+
+	public String getInviteSuppliersAfterOrderConfirm() {
+		return this.inviteSuppliersAfterOrderConfirm;
+	}
+	public void setInviteSuppliersAfterOrderConfirm(String inviteSuppliersAfterOrderConfirm) {
+		this.inviteSuppliersAfterOrderConfirm = inviteSuppliersAfterOrderConfirm;
+	}
 
 	public String getInvoiceKind() {
 		return this.invoiceKind;

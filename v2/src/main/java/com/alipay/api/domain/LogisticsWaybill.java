@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class LogisticsWaybill extends AlipayObject {
 
-	private static final long serialVersionUID = 2442881856144124925L;
+	private static final long serialVersionUID = 8425149523224231964L;
 
 	/**
 	 * 用户自行寄件退货时填写的补充描述

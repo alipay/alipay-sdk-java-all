@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 不动产信息
  *
  * @author auto create
- * @since 1.0, 2025-08-11 23:07:19
+ * @since 1.0, 2025-09-10 00:31:43
  */
 public class IndustryInvoiceRealPropertyBusiness extends AlipayObject {
 
-	private static final long serialVersionUID = 6286912988317798262L;
+	private static final long serialVersionUID = 4527449314818476864L;
 
 	/**
 	 * 跨地（市）标志
@@ -42,7 +42,8 @@ public class IndustryInvoiceRealPropertyBusiness extends AlipayObject {
 	private String realPropertyAddress;
 
 	/**
-	 * 不动产使用面积，整数最长15位，小数最长10位
+	 * 不动产使用面积，整数最长17位，小数最长13位
+单位为平方米
 	 */
 	@ApiField("real_property_area")
 	private String realPropertyArea;

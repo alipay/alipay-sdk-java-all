@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.dataservice.violationinfo.share response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 17:31:54
+ * @since 1.0, 2025-09-08 10:17:40
  */
 public class AlipayEcoMycarDataserviceViolationinfoShareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6435942946659364525L;
+	private static final long serialVersionUID = 4517951341657277418L;
 
 	/** 
 	 * 车架号

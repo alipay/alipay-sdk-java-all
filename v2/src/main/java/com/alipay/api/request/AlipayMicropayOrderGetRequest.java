@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.micropay.order.get request
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 16:38:07
+ * @since 1.0, 2025-09-08 10:13:31
  */
 public class AlipayMicropayOrderGetRequest implements AlipayRequest<AlipayMicropayOrderGetResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CommonVoucherUseRule extends AlipayObject {
 
-	private static final long serialVersionUID = 3426164689377737284L;
+	private static final long serialVersionUID = 4611543375961458729L;
 
 	/**
 	 * 折扣券详情。

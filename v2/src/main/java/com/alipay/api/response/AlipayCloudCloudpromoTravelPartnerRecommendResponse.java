@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudpromo.travel.partner.recommend response.
  * 
  * @author auto create
- * @since 1.0, 2025-01-14 16:57:22
+ * @since 1.0, 2025-09-09 20:47:38
  */
 public class AlipayCloudCloudpromoTravelPartnerRecommendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3731993622874539116L;
+	private static final long serialVersionUID = 2678845517545932985L;
 
 	/** 
 	 * 来源为智能体则给出智能体id，用于后续查询交互

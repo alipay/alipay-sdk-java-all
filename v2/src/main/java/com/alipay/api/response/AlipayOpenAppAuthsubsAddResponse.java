@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.authsubs.add response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 17:41:20
+ * @since 1.0, 2025-09-08 10:13:24
  */
 public class AlipayOpenAppAuthsubsAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5353592585621733665L;
+	private static final long serialVersionUID = 4851352942794824234L;
 
 	/** 
 	 * 授权结果唯一标识

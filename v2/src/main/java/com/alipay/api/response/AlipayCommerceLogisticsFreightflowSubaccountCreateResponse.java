@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.logistics.freightflow.subaccount.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-02 19:17:32
+ * @since 1.0, 2025-09-12 16:05:46
  */
 public class AlipayCommerceLogisticsFreightflowSubaccountCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4722194411927375263L;
+	private static final long serialVersionUID = 3667577263268916845L;
 
 	/** 
 	 * 母户的账户名称

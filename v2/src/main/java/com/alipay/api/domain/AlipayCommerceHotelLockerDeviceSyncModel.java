@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 酒店智慧住设备信息同步
  *
  * @author auto create
- * @since 1.0, 2025-09-02 11:48:48
+ * @since 1.0, 2025-09-12 10:02:40
  */
 public class AlipayCommerceHotelLockerDeviceSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5126731914337648985L;
+	private static final long serialVersionUID = 8187374164165662623L;
 
 	/**
 	 * 所属支付宝侧机构ID

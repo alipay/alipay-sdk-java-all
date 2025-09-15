@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-08-19 16:54:25
+ * @since 1.0, 2025-09-11 15:42:40
  */
 public class GroupScheduleMsgVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7283189845146857728L;
+	private static final long serialVersionUID = 4284348849928164827L;
 
 	/**
 	 * 业务自己定义的业务id
@@ -49,7 +49,7 @@ public class GroupScheduleMsgVO extends AlipayObject {
 	private String msgId;
 
 	/**
-	 * 群消息类型枚举，小程序消息:"APP"，图片消息:"IMAGE"，链接消息:"LINK"，纯文本消息:"TEXT"，优惠券消息:"COUPON"，商品消息:"GOODS"。
+	 * 群消息类型枚举，小程序消息:"APP"，图片消息:"IMAGE"，链接消息:"LINK"，纯文本消息:"TEXT"，优惠券消息:"COUPON"，商品消息:"GOODS"，图文消息:"IMAGE_TEXT"。
 当发送消息类型为复合消息（send_batch为true时），返回结果为几种消息类型的组合，示例:["APP", "COUPON", "IMAGE"]
 	 */
 	@ApiField("msg_type")

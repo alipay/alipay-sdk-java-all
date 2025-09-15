@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.testmysqltoob.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-03 21:57:31
+ * @since 1.0, 2025-09-10 14:59:38
  */
 public class AlipaySecurityTestmysqltoobQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3334832583844537136L;
+	private static final long serialVersionUID = 5592521187433785224L;
 
 	/** 
 	 * 11

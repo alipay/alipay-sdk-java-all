@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单分期关闭
  *
  * @author auto create
- * @since 1.0, 2024-04-22 19:08:30
+ * @since 1.0, 2025-09-08 14:24:52
  */
 public class AlipayOpenMiniOrderInstallmentCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7262866831492556343L;
+	private static final long serialVersionUID = 6245246482658619499L;
 
 	/**
 	 * 分期单号。在代扣等场景下使用

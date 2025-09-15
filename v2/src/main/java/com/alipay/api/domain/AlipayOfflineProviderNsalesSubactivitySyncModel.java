@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 卖进订单子活动任务状态同步
  *
  * @author auto create
- * @since 1.0, 2025-01-27 22:48:30
+ * @since 1.0, 2025-09-08 10:45:44
  */
 public class AlipayOfflineProviderNsalesSubactivitySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6198599546828822799L;
+	private static final long serialVersionUID = 7399937737883199762L;
 
 	/**
 	 * 卖进订单子活动同步状态
@@ -20,7 +20,7 @@ public class AlipayOfflineProviderNsalesSubactivitySyncModel extends AlipayObjec
 	private String status;
 
 	/**
-	 * 支付宝用户的userId。
+	 * 卖进任务子活动id
 	 */
 	@ApiField("sub_activity_id")
 	private String subActivityId;

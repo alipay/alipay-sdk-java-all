@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 配送指令增加正向业务场景
  *
  * @author auto create
- * @since 1.0, 2025-07-24 17:27:21
+ * @since 1.0, 2025-09-05 22:33:54
  */
 public class AssetDeliveryItem extends AlipayObject {
 
-	private static final long serialVersionUID = 4675851344444823443L;
+	private static final long serialVersionUID = 1333255625875222733L;
 
 	/**
 	 * SEND - 发货指令(执行向目的地进行发货动作) , RECEIVE - 收货指令(执行从来源地进行收货动作)
@@ -266,6 +266,31 @@ N 不需要合单
 	 */
 	@ApiField("record_type")
 	private String recordType;
+
+	/**
+	 * 父业务单据号下子业务单据数量，数量等于related_others_out_biz_no的列表数量+1
+	 */
+	@ApiField("related_children_out_biz_no_count")
+	private Long relatedChildrenOutBizNoCount;
+
+	/**
+	 * 关联其它业务单据号，同一个父业务单据号的其它业务单据号（不包含related_out_biz_no）
+	 */
+	@ApiListField("related_others_out_biz_no")
+	@ApiField("string")
+	private List<String> relatedOthersOutBizNo;
+
+	/**
+	 * 关联的上游业务单号
+	 */
+	@ApiField("related_out_biz_no")
+	private String relatedOutBizNo;
+
+	/**
+	 * 父业务单据号（组合订单号），同related_out_biz_no形成父子关系
+	 */
+	@ApiField("related_parent_out_biz_no")
+	private String relatedParentOutBizNo;
 
 	/**
 	 * 对应供应商pid
@@ -582,6 +607,34 @@ N 不需要合单
 	}
 	public void setRecordType(String recordType) {
 		this.recordType = recordType;
+	}
+
+	public Long getRelatedChildrenOutBizNoCount() {
+		return this.relatedChildrenOutBizNoCount;
+	}
+	public void setRelatedChildrenOutBizNoCount(Long relatedChildrenOutBizNoCount) {
+		this.relatedChildrenOutBizNoCount = relatedChildrenOutBizNoCount;
+	}
+
+	public List<String> getRelatedOthersOutBizNo() {
+		return this.relatedOthersOutBizNo;
+	}
+	public void setRelatedOthersOutBizNo(List<String> relatedOthersOutBizNo) {
+		this.relatedOthersOutBizNo = relatedOthersOutBizNo;
+	}
+
+	public String getRelatedOutBizNo() {
+		return this.relatedOutBizNo;
+	}
+	public void setRelatedOutBizNo(String relatedOutBizNo) {
+		this.relatedOutBizNo = relatedOutBizNo;
+	}
+
+	public String getRelatedParentOutBizNo() {
+		return this.relatedParentOutBizNo;
+	}
+	public void setRelatedParentOutBizNo(String relatedParentOutBizNo) {
+		this.relatedParentOutBizNo = relatedParentOutBizNo;
 	}
 
 	public String getSupplierId() {

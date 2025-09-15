@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ChannelRuleDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7564696911924336948L;
+	private static final long serialVersionUID = 1515456991456792317L;
 
 	/**
 	 * 营销类型列表+不唯一+获取渠道详情+从数据库获取

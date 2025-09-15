@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 荣耀所有类型优惠券列表查询
  *
  * @author auto create
- * @since 1.0, 2025-09-01 17:25:28
+ * @since 1.0, 2025-09-12 17:08:50
  */
 public class AlipayPcreditLoanHonorCouponQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1469123573647229368L;
+	private static final long serialVersionUID = 8487432168848212956L;
 
 	/**
 	 * 支付宝用户id
@@ -36,6 +36,12 @@ public class AlipayPcreditLoanHonorCouponQueryModel extends AlipayObject {
 	 */
 	@ApiField("out_trace_id")
 	private String outTraceId;
+
+	/**
+	 * 渠道产品码
+	 */
+	@ApiField("product_code")
+	private String productCode;
 
 	/**
 	 * 请求来源 CUSTOMER-C端对应用户发起、SCHEDULER-调度发起、BACKDOOR-小二对应后台用户调用
@@ -69,6 +75,13 @@ public class AlipayPcreditLoanHonorCouponQueryModel extends AlipayObject {
 	}
 	public void setOutTraceId(String outTraceId) {
 		this.outTraceId = outTraceId;
+	}
+
+	public String getProductCode() {
+		return this.productCode;
+	}
+	public void setProductCode(String productCode) {
+		this.productCode = productCode;
 	}
 
 	public String getRequestSource() {

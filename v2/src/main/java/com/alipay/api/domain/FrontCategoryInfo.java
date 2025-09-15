@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 前台类目数据模型
  *
  * @author auto create
- * @since 1.0, 2019-09-06 10:28:00
+ * @since 1.0, 2025-09-09 10:41:18
  */
 public class FrontCategoryInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5755657836352645486L;
+	private static final long serialVersionUID = 8328994316888279345L;
 
 	/**
 	 * 前台类目描述

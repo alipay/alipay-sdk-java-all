@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页查询商家群内群发周期消息发送记录
  *
  * @author auto create
- * @since 1.0, 2025-08-19 16:53:46
+ * @since 1.0, 2025-09-11 15:42:40
  */
 public class AlipayMerchantGroupGroupmsgSendrecordBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1253231585713167116L;
+	private static final long serialVersionUID = 3871477848975657884L;
 
 	/**
 	 * 周期消息的消息id, 取调用创建接口时返回的id

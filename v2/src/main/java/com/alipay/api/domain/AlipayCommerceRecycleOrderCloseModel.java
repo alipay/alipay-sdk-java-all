@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 回收订单商家关闭
  *
  * @author auto create
- * @since 1.0, 2025-09-02 11:22:06
+ * @since 1.0, 2025-09-09 15:32:07
  */
 public class AlipayCommerceRecycleOrderCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7665497255378728616L;
+	private static final long serialVersionUID = 3541821532138527558L;
 
 	/**
 	 * 关闭的原因

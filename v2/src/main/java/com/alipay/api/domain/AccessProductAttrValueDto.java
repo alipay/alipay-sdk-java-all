@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AccessProductAttrValueDto extends AlipayObject {
 
-	private static final long serialVersionUID = 8264996841355688134L;
+	private static final long serialVersionUID = 8368985526561366189L;
 
 	/**
 	 * attr_name，用于商品同步，由调用方传入

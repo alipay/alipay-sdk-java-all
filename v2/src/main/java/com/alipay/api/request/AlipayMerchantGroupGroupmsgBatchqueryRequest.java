@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.group.groupmsg.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2025-08-19 16:54:08
+ * @since 1.0, 2025-09-11 15:42:40
  */
 public class AlipayMerchantGroupGroupmsgBatchqueryRequest implements AlipayRequest<AlipayMerchantGroupGroupmsgBatchqueryResponse> {
 

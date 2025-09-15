@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.provider.collaborate.devicebind.apply response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-20 13:47:02
+ * @since 1.0, 2025-09-10 20:32:39
  */
 public class AlipayOfflineProviderCollaborateDevicebindApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7199167757184383366L;
+	private static final long serialVersionUID = 1438785741217985911L;
 
 	/** 
 	 * 商户签约链接，需要将该链接生成二维码让商户扫码签约，非白名单情况一定有
@@ -49,6 +49,12 @@ public class AlipayOfflineProviderCollaborateDevicebindApplyResponse extends Ali
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
+
+	/** 
+	 * 批签模式下，绑定后会直接生成任务，并返回任务id。
+	 */
+	@ApiField("promo_activity_id")
+	private String promoActivityId;
 
 	/** 
 	 * 卖进订单id，有参与卖进订单的一定有
@@ -102,6 +108,13 @@ public class AlipayOfflineProviderCollaborateDevicebindApplyResponse extends Ali
 	}
 	public String getOutBizNo( ) {
 		return this.outBizNo;
+	}
+
+	public void setPromoActivityId(String promoActivityId) {
+		this.promoActivityId = promoActivityId;
+	}
+	public String getPromoActivityId( ) {
+		return this.promoActivityId;
 	}
 
 	public void setSalesEntryOrderId(String salesEntryOrderId) {

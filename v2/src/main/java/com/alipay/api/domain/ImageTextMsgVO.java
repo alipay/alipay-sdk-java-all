@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 图文消息内容
  *
  * @author auto create
- * @since 1.0, 2024-09-05 17:19:59
+ * @since 1.0, 2025-09-11 10:24:33
  */
 public class ImageTextMsgVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7444134179847838434L;
+	private static final long serialVersionUID = 1333851683241199826L;
 
 	/**
 	 * 对推送商品的简单介绍（参考：美妆好物应有尽有，快戳进来看看呀）
@@ -36,6 +39,13 @@ public class ImageTextMsgVO extends AlipayObject {
 	 */
 	@ApiField("image_url")
 	private String imageUrl;
+
+	/**
+	 * 文字链接组合
+	 */
+	@ApiListField("text_link_list")
+	@ApiField("text_link_v_o")
+	private List<TextLinkVO> textLinkList;
 
 	/**
 	 * 推送的消息文案标题（参考：好物分享来咯！）
@@ -75,6 +85,13 @@ public class ImageTextMsgVO extends AlipayObject {
 	}
 	public void setImageUrl(String imageUrl) {
 		this.imageUrl = imageUrl;
+	}
+
+	public List<TextLinkVO> getTextLinkList() {
+		return this.textLinkList;
+	}
+	public void setTextLinkList(List<TextLinkVO> textLinkList) {
+		this.textLinkList = textLinkList;
 	}
 
 	public String getTitle() {

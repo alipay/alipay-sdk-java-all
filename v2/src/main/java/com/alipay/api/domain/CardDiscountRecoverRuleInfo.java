@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CardDiscountRecoverRuleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6567974158373152697L;
+	private static final long serialVersionUID = 1459952294745466357L;
 
 	/**
 	 * 周期付

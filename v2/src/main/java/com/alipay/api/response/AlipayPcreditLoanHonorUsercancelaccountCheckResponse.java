@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.honor.usercancelaccount.check response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-01 16:57:38
+ * @since 1.0, 2025-09-12 15:32:39
  */
 public class AlipayPcreditLoanHonorUsercancelaccountCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5246577355319661635L;
+	private static final long serialVersionUID = 2293879176594997386L;
 
 	/** 
 	 * 是否可注销

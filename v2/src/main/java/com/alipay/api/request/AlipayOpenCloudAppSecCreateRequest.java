@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.cloud.app.sec.create request
  * 
  * @author auto create
- * @since 1.0, 2025-02-28 15:52:24
+ * @since 1.0, 2025-09-08 10:23:15
  */
 public class AlipayOpenCloudAppSecCreateRequest implements AlipayRequest<AlipayOpenCloudAppSecCreateResponse> {
 

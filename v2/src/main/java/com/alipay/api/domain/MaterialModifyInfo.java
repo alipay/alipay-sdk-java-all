@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 素材编辑模型
  *
  * @author auto create
- * @since 1.0, 2019-09-06 10:27:10
+ * @since 1.0, 2025-09-09 10:41:25
  */
 public class MaterialModifyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3577323221387733172L;
+	private static final long serialVersionUID = 8625987299873113495L;
 
 	/**
 	 * 素材内容（素材地址或素材KEY）

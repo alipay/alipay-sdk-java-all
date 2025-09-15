@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.openbizmocktools.daniel.query request
  * 
  * @author auto create
- * @since 1.0, 2024-11-19 11:12:19
+ * @since 1.0, 2025-09-08 10:13:25
  */
 public class AlipayOpenAppOpenbizmocktoolsDanielQueryRequest implements AlipayRequest<AlipayOpenAppOpenbizmocktoolsDanielQueryResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalCommercialMemberCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4336641447978732121L;
+	private static final long serialVersionUID = 2617518395486811526L;
 
 	/**
 	 * 会员的会员卡号，字符串类型

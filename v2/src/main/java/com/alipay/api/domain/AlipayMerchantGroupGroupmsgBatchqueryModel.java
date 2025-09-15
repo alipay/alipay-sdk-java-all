@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页查询商家群内群发消息记录
  *
  * @author auto create
- * @since 1.0, 2025-05-30 14:58:35
+ * @since 1.0, 2025-09-11 10:24:19
  */
 public class AlipayMerchantGroupGroupmsgBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5366189979444472878L;
+	private static final long serialVersionUID = 6542668733841578152L;
 
 	/**
 	 * 消息id

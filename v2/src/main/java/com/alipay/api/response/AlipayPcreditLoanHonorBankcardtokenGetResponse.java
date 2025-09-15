@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.honor.bankcardtoken.get response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-01 17:32:38
+ * @since 1.0, 2025-09-12 17:12:40
  */
 public class AlipayPcreditLoanHonorBankcardtokenGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6523863286863168362L;
+	private static final long serialVersionUID = 7547328482567397988L;
 
 	/** 
 	 * 查询银行卡列表token

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ShopExtendParams extends AlipayObject {
 
-	private static final long serialVersionUID = 8821144154557875681L;
+	private static final long serialVersionUID = 6372178341662633175L;
 
 	/**
 	 * 店铺类目列表。外卖场景下必填，支持回传多个，可用值需要联系支付宝对口BD给出

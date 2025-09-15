@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户订单中心商品订单开放接口返回结果
  *
  * @author auto create
- * @since 1.0, 2018-11-27 15:37:09
+ * @since 1.0, 2025-09-09 10:41:32
  */
 public class ItemOrderOpenData extends AlipayObject {
 
-	private static final long serialVersionUID = 2816659182271341537L;
+	private static final long serialVersionUID = 7748443438135243282L;
 
 	/**
 	 * 商品订单扩展信息

@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.rent.risk.consult response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-28 20:22:37
+ * @since 1.0, 2025-09-08 17:12:39
  */
 public class AlipayCommerceRentRiskConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3482146486399739982L;
+	private static final long serialVersionUID = 5367617597239796995L;
 
 	/** 
 	 * Tn_Level类型结果，risk_level字段取值范围T1-T10（T1 ~ T4: 低风险；T5 ~ T6: 中风险；T7 ~ T8: 高风险；T9 ~ T10: 极高风险）
@@ -51,7 +51,7 @@ PRO-租安盾专业版，面向签约商户；
 	private List<RentRiskInfoVO> riskInfos;
 
 	/** 
-	 * 对赌实验命中的分组
+	 * 联营商户订单分组
 	 */
 	@ApiField("vam_group")
 	private String vamGroup;

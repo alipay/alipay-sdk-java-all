@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenPaysaasTradeeventSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8695937735272581445L;
+	private static final long serialVersionUID = 7733835474911416282L;
 
 	/**
 	 * 单位为分，最大值为100000000分

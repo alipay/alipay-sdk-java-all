@@ -17,7 +17,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataDataserviceAdcampaignGroupQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2451996835547848262L;
+	private static final long serialVersionUID = 1636971679532442985L;
 
 	/** 
 	 * 年龄

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CDataJianTestOne extends AlipayObject {
 
-	private static final long serialVersionUID = 7474357215946746646L;
+	private static final long serialVersionUID = 5175475621215762942L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识

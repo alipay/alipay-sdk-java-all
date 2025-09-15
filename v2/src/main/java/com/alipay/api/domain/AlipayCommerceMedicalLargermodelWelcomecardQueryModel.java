@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 首页maga投放及问题推荐
  *
  * @author auto create
- * @since 1.0, 2024-10-10 19:18:28
+ * @since 1.0, 2025-09-09 13:37:07
  */
 public class AlipayCommerceMedicalLargermodelWelcomecardQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1484246763286625858L;
+	private static final long serialVersionUID = 7347442231987876439L;
 
 	/**
 	 * 用户城市编码

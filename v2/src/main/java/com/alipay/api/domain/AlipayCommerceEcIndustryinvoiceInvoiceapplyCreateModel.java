@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付可开票开票申请创建
  *
  * @author auto create
- * @since 1.0, 2025-08-11 23:07:19
+ * @since 1.0, 2025-09-10 00:31:43
  */
 public class AlipayCommerceEcIndustryinvoiceInvoiceapplyCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3155777258522732199L;
+	private static final long serialVersionUID = 2499845774962454227L;
 
 	/**
 	 * 购买方地址
@@ -59,6 +59,31 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyCreateModel extends Alip
 	private String buyerTel;
 
 	/**
+	 * 复核人
+	 */
+	@ApiField("checker")
+	private String checker;
+
+	/**
+	 * 开票员姓名，用户可自助选择开票员传入，开票员姓名，证件类型，证件号码，必须同时存在，同时为空。
+用户传入的开票员将会校验其合法性（开票员是否授权开票）
+	 */
+	@ApiField("clerk")
+	private String clerk;
+
+	/**
+	 * 开票员证件号码
+	 */
+	@ApiField("clerk_cert_no")
+	private String clerkCertNo;
+
+	/**
+	 * 开票员证件类型
+	 */
+	@ApiField("clerk_cert_type")
+	private String clerkCertType;
+
+	/**
 	 * 商品明细列表，根据产品区分
 	 */
 	@ApiListField("invoice_item_list")
@@ -84,10 +109,50 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyCreateModel extends Alip
 	private String invoiceType;
 
 	/**
+	 * 购买方自然人证件号码
+	 */
+	@ApiField("nature_person_cert_no")
+	private String naturePersonCertNo;
+
+	/**
+	 * 购买方自然人身份证件类型
+更多枚举详情见：
+<a href="https://opendocs.alipay.com/mini/0i32us">https://opendocs.alipay.com/mini/0i32us</a>
+	 */
+	@ApiField("nature_person_cert_type")
+	private String naturePersonCertType;
+
+	/**
+	 * 当“自然人证件类型”选择“居民身份证”时，校验是否为“中国”;
+当“自然人证件类型”选择“港澳居民来往内地通行证”时，如果“证件号码 ”以H开头，“国籍(或地区)”必须为“中国香港”;如果“证件号码”以M开头，“国籍 (或地区)”必须为“中国澳门”;校验证件号码必须以H或M开头。
+ 当“自然人证件类型”选择“台湾居民来往大陆通行证”时，校验是否为 “中国台湾”。
+当“自然人证件类型”选择“中华人民共和国护照”时，校验是否为“中国”。
+ 当“自然人证件类型”选择“中华人民共和国港澳居民居住证”时，校验证件 号码必须以810000或820000开头，如果“证件号码”以810000开头，“国籍(或地区)”必须为 “中国香港”;如果“证件号码”以820000开头，“国籍(或地区)”必须为“中国澳门 ”;
+当“自然人证件类型”选择“中华人民共和国台湾居民居住证”时，校验是否为“中国台湾”。
+
+更多枚举详情见：<a href="https://opendocs.alipay.com/mini/0i32us">https://opendocs.alipay.com/mini/0i32us</a>
+	 */
+	@ApiField("nature_person_country")
+	private String naturePersonCountry;
+
+	/**
+	 * 购买方自然人标志为N时，购买方信息（ (购买方)自然人国籍代码、(购买方)自然人证件类型、(购买方)自然人证件号码)）必须为空
+购买方自然人标志为Y时，若“(购买方)自然人证件类型”填写“居民身份证”，购买方纳税人识别号必须与(购买方)自然人证件号码完全一致
+	 */
+	@ApiField("nature_person_flag")
+	private String naturePersonFlag;
+
+	/**
 	 * 外部开票申请ID
 	 */
 	@ApiField("outer_apply_id")
 	private String outerApplyId;
+
+	/**
+	 * 收款人
+	 */
+	@ApiField("payee")
+	private String payee;
 
 	/**
 	 * 发票产品ID
@@ -113,6 +178,44 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyCreateModel extends Alip
 	 */
 	@ApiField("remark")
 	private String remark;
+
+	/**
+	 * 销售方地址
+	 */
+	@ApiField("seller_address")
+	private String sellerAddress;
+
+	/**
+	 * 销售方银行卡账号
+	 */
+	@ApiField("seller_bank_account")
+	private String sellerBankAccount;
+
+	/**
+	 * 销售方开户行
+	 */
+	@ApiField("seller_bank_name")
+	private String sellerBankName;
+
+	/**
+	 * 销售方电话
+	 */
+	@ApiField("seller_tel")
+	private String sellerTel;
+
+	/**
+	 * 是否展示购买方方银行信息
+字段值为Y，则会在发票上展示购买方的银行信息（购买方开户行，购买方银行卡账号），不填默认为N
+	 */
+	@ApiField("show_buyer_bank_info")
+	private String showBuyerBankInfo;
+
+	/**
+	 * 是否展示销售方银行信息
+字段值为Y，则会在发票上展示销售方的银行信息（销售方开户行，销售方银行卡账号），不填默认为N
+	 */
+	@ApiField("show_seller_bank_info")
+	private String showSellerBankInfo;
 
 	/**
 	 * 企业（商户）税号
@@ -176,6 +279,34 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyCreateModel extends Alip
 		this.buyerTel = buyerTel;
 	}
 
+	public String getChecker() {
+		return this.checker;
+	}
+	public void setChecker(String checker) {
+		this.checker = checker;
+	}
+
+	public String getClerk() {
+		return this.clerk;
+	}
+	public void setClerk(String clerk) {
+		this.clerk = clerk;
+	}
+
+	public String getClerkCertNo() {
+		return this.clerkCertNo;
+	}
+	public void setClerkCertNo(String clerkCertNo) {
+		this.clerkCertNo = clerkCertNo;
+	}
+
+	public String getClerkCertType() {
+		return this.clerkCertType;
+	}
+	public void setClerkCertType(String clerkCertType) {
+		this.clerkCertType = clerkCertType;
+	}
+
 	public List<IndustryInvoiceItemInfo> getInvoiceItemList() {
 		return this.invoiceItemList;
 	}
@@ -204,11 +335,46 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyCreateModel extends Alip
 		this.invoiceType = invoiceType;
 	}
 
+	public String getNaturePersonCertNo() {
+		return this.naturePersonCertNo;
+	}
+	public void setNaturePersonCertNo(String naturePersonCertNo) {
+		this.naturePersonCertNo = naturePersonCertNo;
+	}
+
+	public String getNaturePersonCertType() {
+		return this.naturePersonCertType;
+	}
+	public void setNaturePersonCertType(String naturePersonCertType) {
+		this.naturePersonCertType = naturePersonCertType;
+	}
+
+	public String getNaturePersonCountry() {
+		return this.naturePersonCountry;
+	}
+	public void setNaturePersonCountry(String naturePersonCountry) {
+		this.naturePersonCountry = naturePersonCountry;
+	}
+
+	public String getNaturePersonFlag() {
+		return this.naturePersonFlag;
+	}
+	public void setNaturePersonFlag(String naturePersonFlag) {
+		this.naturePersonFlag = naturePersonFlag;
+	}
+
 	public String getOuterApplyId() {
 		return this.outerApplyId;
 	}
 	public void setOuterApplyId(String outerApplyId) {
 		this.outerApplyId = outerApplyId;
+	}
+
+	public String getPayee() {
+		return this.payee;
+	}
+	public void setPayee(String payee) {
+		this.payee = payee;
 	}
 
 	public String getProductId() {
@@ -237,6 +403,48 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyCreateModel extends Alip
 	}
 	public void setRemark(String remark) {
 		this.remark = remark;
+	}
+
+	public String getSellerAddress() {
+		return this.sellerAddress;
+	}
+	public void setSellerAddress(String sellerAddress) {
+		this.sellerAddress = sellerAddress;
+	}
+
+	public String getSellerBankAccount() {
+		return this.sellerBankAccount;
+	}
+	public void setSellerBankAccount(String sellerBankAccount) {
+		this.sellerBankAccount = sellerBankAccount;
+	}
+
+	public String getSellerBankName() {
+		return this.sellerBankName;
+	}
+	public void setSellerBankName(String sellerBankName) {
+		this.sellerBankName = sellerBankName;
+	}
+
+	public String getSellerTel() {
+		return this.sellerTel;
+	}
+	public void setSellerTel(String sellerTel) {
+		this.sellerTel = sellerTel;
+	}
+
+	public String getShowBuyerBankInfo() {
+		return this.showBuyerBankInfo;
+	}
+	public void setShowBuyerBankInfo(String showBuyerBankInfo) {
+		this.showBuyerBankInfo = showBuyerBankInfo;
+	}
+
+	public String getShowSellerBankInfo() {
+		return this.showSellerBankInfo;
+	}
+	public void setShowSellerBankInfo(String showSellerBankInfo) {
+		this.showSellerBankInfo = showSellerBankInfo;
 	}
 
 	public String getTaxNo() {

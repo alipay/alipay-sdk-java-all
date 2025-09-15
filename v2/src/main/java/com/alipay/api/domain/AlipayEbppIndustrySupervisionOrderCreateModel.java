@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 资金监管订单下单接口
  *
  * @author auto create
- * @since 1.0, 2024-12-23 19:36:58
+ * @since 1.0, 2025-09-12 13:16:03
  */
 public class AlipayEbppIndustrySupervisionOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4159932236377849392L;
+	private static final long serialVersionUID = 1867766259827538522L;
 
 	/**
 	 * 支付宝2088

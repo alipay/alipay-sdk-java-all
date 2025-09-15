@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 二级商户进件申请单信息
  *
  * @author auto create
- * @since 1.0, 2025-07-08 16:06:48
+ * @since 1.0, 2025-09-11 14:39:28
  */
 public class ZftSubMerchantOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 1449415578112754934L;
+	private static final long serialVersionUID = 1667588929815161668L;
 
 	/**
 	 * 是否开通线上预授权
@@ -94,7 +94,7 @@ public class ZftSubMerchantOrder extends AlipayObject {
 	private String orderId;
 
 	/**
-	 * 申请单处理失败时，通过此此段返回具体的失败理由；与kf_audit_memo和kz_audit_memo配合使用
+	 * 申请单处理失败时，通过此字段返回具体的失败理由；与fk_audit_memo和kz_audit_memo配合使用
 	 */
 	@ApiField("reason")
 	private String reason;

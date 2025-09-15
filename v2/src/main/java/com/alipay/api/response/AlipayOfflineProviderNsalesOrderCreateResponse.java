@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.provider.nsales.order.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-20 12:01:38
+ * @since 1.0, 2025-09-08 10:47:39
  */
 public class AlipayOfflineProviderNsalesOrderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1373563151361587968L;
+	private static final long serialVersionUID = 1333448425898567322L;
 
 	/** 
 	 * 绝对过期时间
@@ -32,6 +32,12 @@ public class AlipayOfflineProviderNsalesOrderCreateResponse extends AlipayRespon
 	 */
 	@ApiField("sales_entry_order_id")
 	private String salesEntryOrderId;
+
+	/** 
+	 * 卖进预订单id
+	 */
+	@ApiField("sales_entry_pre_order_id")
+	private String salesEntryPreOrderId;
 
 	public void setExpressTimeout(Date expressTimeout) {
 		this.expressTimeout = expressTimeout;
@@ -52,6 +58,13 @@ public class AlipayOfflineProviderNsalesOrderCreateResponse extends AlipayRespon
 	}
 	public String getSalesEntryOrderId( ) {
 		return this.salesEntryOrderId;
+	}
+
+	public void setSalesEntryPreOrderId(String salesEntryPreOrderId) {
+		this.salesEntryPreOrderId = salesEntryPreOrderId;
+	}
+	public String getSalesEntryPreOrderId( ) {
+		return this.salesEntryPreOrderId;
 	}
 
 }

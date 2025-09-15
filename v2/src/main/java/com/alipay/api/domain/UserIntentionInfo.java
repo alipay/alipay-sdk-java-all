@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 求职意向
  *
  * @author auto create
- * @since 1.0, 2025-08-27 20:17:36
+ * @since 1.0, 2025-09-09 15:57:39
  */
 public class UserIntentionInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5779862192738489264L;
+	private static final long serialVersionUID = 4236859181572497269L;
 
 	/**
 	 * 城市编码
@@ -24,6 +24,12 @@ public class UserIntentionInfo extends AlipayObject {
 	 */
 	@ApiField("city_name")
 	private String cityName;
+
+	/**
+	 * 期望岗位编码
+	 */
+	@ApiField("expect_job_code")
+	private String expectJobCode;
 
 	/**
 	 * 期望工作类型
@@ -73,6 +79,13 @@ public class UserIntentionInfo extends AlipayObject {
 	}
 	public void setCityName(String cityName) {
 		this.cityName = cityName;
+	}
+
+	public String getExpectJobCode() {
+		return this.expectJobCode;
+	}
+	public void setExpectJobCode(String expectJobCode) {
+		this.expectJobCode = expectJobCode;
 	}
 
 	public String getExpectJobType() {

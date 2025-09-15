@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OverdueDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 2797951879458227772L;
+	private static final long serialVersionUID = 3147381486199437966L;
 
 	/**
 	 * 逾期的天数

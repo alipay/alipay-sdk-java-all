@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 线索数据变更
  *
  * @author auto create
- * @since 1.0, 2025-06-13 11:24:29
+ * @since 1.0, 2025-09-09 20:33:07
  */
 public class AlipayEcoMycarLeadsBizstatusSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2139223772521257739L;
+	private static final long serialVersionUID = 3186444584627349111L;
 
 	/**
 	 * 已到店，支付宝方统一分配
@@ -20,7 +20,7 @@ public class AlipayEcoMycarLeadsBizstatusSyncModel extends AlipayObject {
 	private String leadsBizCode;
 
 	/**
-	 * 线索id
+	 * 线索id（当source_channel和scene_code为空时必选，有线索id时优先通过线索id唯一定位线索）
 	 */
 	@ApiField("leads_id")
 	private String leadsId;
@@ -36,6 +36,18 @@ public class AlipayEcoMycarLeadsBizstatusSyncModel extends AlipayObject {
 	 */
 	@ApiField("remark")
 	private String remark;
+
+	/**
+	 * 线索场景码（当leads_id为空时必选）
+	 */
+	@ApiField("scene_code")
+	private String sceneCode;
+
+	/**
+	 * 线索渠道（当leads_id为空时必选）
+	 */
+	@ApiField("source_channel")
+	private String sourceChannel;
 
 	/**
 	 * 支付宝用户的userId。
@@ -69,6 +81,20 @@ public class AlipayEcoMycarLeadsBizstatusSyncModel extends AlipayObject {
 	}
 	public void setRemark(String remark) {
 		this.remark = remark;
+	}
+
+	public String getSceneCode() {
+		return this.sceneCode;
+	}
+	public void setSceneCode(String sceneCode) {
+		this.sceneCode = sceneCode;
+	}
+
+	public String getSourceChannel() {
+		return this.sourceChannel;
+	}
+	public void setSourceChannel(String sourceChannel) {
+		this.sourceChannel = sourceChannel;
 	}
 
 	public String getUserId() {

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.property.videocall.check request
  * 
  * @author auto create
- * @since 1.0, 2025-09-01 15:01:31
+ * @since 1.0, 2025-09-12 09:52:40
  */
 public class AlipayCommercePropertyVideocallCheckRequest implements AlipayRequest<AlipayCommercePropertyVideocallCheckResponse> {
 

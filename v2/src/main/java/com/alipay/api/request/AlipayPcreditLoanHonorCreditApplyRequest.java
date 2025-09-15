@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.loan.honor.credit.apply request
  * 
  * @author auto create
- * @since 1.0, 2025-09-01 17:02:38
+ * @since 1.0, 2025-09-12 16:12:38
  */
 public class AlipayPcreditLoanHonorCreditApplyRequest implements AlipayRequest<AlipayPcreditLoanHonorCreditApplyResponse> {
 

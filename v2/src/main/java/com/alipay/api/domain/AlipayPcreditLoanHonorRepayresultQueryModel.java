@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 荣耀还款结果查询
  *
  * @author auto create
- * @since 1.0, 2025-09-01 17:04:40
+ * @since 1.0, 2025-09-12 16:14:05
  */
 public class AlipayPcreditLoanHonorRepayresultQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3461849934147735967L;
+	private static final long serialVersionUID = 5318784619227864693L;
 
 	/**
 	 * 支付宝用户ID
@@ -36,6 +36,12 @@ public class AlipayPcreditLoanHonorRepayresultQueryModel extends AlipayObject {
 	 */
 	@ApiField("out_trace_id")
 	private String outTraceId;
+
+	/**
+	 * 渠道产品码
+	 */
+	@ApiField("product_code")
+	private String productCode;
 
 	/**
 	 * 荣耀侧还款交易流水号
@@ -75,6 +81,13 @@ public class AlipayPcreditLoanHonorRepayresultQueryModel extends AlipayObject {
 	}
 	public void setOutTraceId(String outTraceId) {
 		this.outTraceId = outTraceId;
+	}
+
+	public String getProductCode() {
+		return this.productCode;
+	}
+	public void setProductCode(String productCode) {
+		this.productCode = productCode;
 	}
 
 	public String getRepayNo() {

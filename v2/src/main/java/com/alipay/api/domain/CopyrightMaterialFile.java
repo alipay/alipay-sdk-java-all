@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CopyrightMaterialFile extends AlipayObject {
 
-	private static final long serialVersionUID = 1828754756566511644L;
+	private static final long serialVersionUID = 8864161872897718858L;
 
 	/**
 	 * 授权文件通过上传接口上传后得到的文件id

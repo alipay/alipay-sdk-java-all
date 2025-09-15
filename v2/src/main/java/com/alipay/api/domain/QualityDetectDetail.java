@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 质检详情
  *
  * @author auto create
- * @since 1.0, 2025-07-29 14:47:06
+ * @since 1.0, 2025-09-12 17:00:09
  */
 public class QualityDetectDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 2253667869876269943L;
+	private static final long serialVersionUID = 4262561749632428343L;
+
+	/**
+	 * 线圈烧录的UTC时间戳
+	 */
+	@ApiField("burning_time_stamp")
+	private Long burningTimeStamp;
 
 	/**
 	 * 品检详情信息，其中每个key代表需要品检的字段，value则是供应商品检过程中识别到的物料实体信息值
@@ -42,6 +48,13 @@ public class QualityDetectDetail extends AlipayObject {
 	 */
 	@ApiField("unique_id")
 	private String uniqueId;
+
+	public Long getBurningTimeStamp() {
+		return this.burningTimeStamp;
+	}
+	public void setBurningTimeStamp(Long burningTimeStamp) {
+		this.burningTimeStamp = burningTimeStamp;
+	}
 
 	public String getDetectDetail() {
 		return this.detectDetail;

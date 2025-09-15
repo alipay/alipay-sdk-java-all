@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 流量订单预校验
  *
  * @author auto create
- * @since 1.0, 2025-08-20 14:20:34
+ * @since 1.0, 2025-09-15 14:24:33
  */
 public class AlipayCommerceAcommunicationDistributionFlowPreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6414146913821891511L;
+	private static final long serialVersionUID = 2625492619665469561L;
 
 	/**
 	 * 支付宝的userId
@@ -48,6 +48,12 @@ public class AlipayCommerceAcommunicationDistributionFlowPreconsultModel extends
 	 */
 	@ApiField("request_id")
 	private String requestId;
+
+	/**
+	 * 目标账号
+	 */
+	@ApiField("target_account")
+	private String targetAccount;
 
 	public String getAlipayUserId() {
 		return this.alipayUserId;
@@ -89,6 +95,13 @@ public class AlipayCommerceAcommunicationDistributionFlowPreconsultModel extends
 	}
 	public void setRequestId(String requestId) {
 		this.requestId = requestId;
+	}
+
+	public String getTargetAccount() {
+		return this.targetAccount;
+	}
+	public void setTargetAccount(String targetAccount) {
+		this.targetAccount = targetAccount;
 	}
 
 }

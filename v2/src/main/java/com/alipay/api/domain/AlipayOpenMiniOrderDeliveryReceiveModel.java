@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenMiniOrderDeliveryReceiveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5525342831782173895L;
+	private static final long serialVersionUID = 1732844692955242877L;
 
 	/**
 	 * 确认收货的物流单列表，当有多个物流单时，可以指定物流单确认收货，不传入时，默认进行全部确认收货。

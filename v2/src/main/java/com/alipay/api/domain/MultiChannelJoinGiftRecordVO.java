@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MultiChannelJoinGiftRecordVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8689539842499441896L;
+	private static final long serialVersionUID = 7269971711846529129L;
 
 	/**
 	 * 配置渠道code列表

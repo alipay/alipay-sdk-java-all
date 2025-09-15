@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 注销申请
  *
  * @author auto create
- * @since 1.0, 2025-09-01 17:06:34
+ * @since 1.0, 2025-09-12 15:30:03
  */
 public class AlipayPcreditLoanHonorUsercancelaccountApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2693132297418294371L;
+	private static final long serialVersionUID = 8353115951481143629L;
 
 	/**
 	 * 支付宝用户id
@@ -42,6 +42,12 @@ public class AlipayPcreditLoanHonorUsercancelaccountApplyModel extends AlipayObj
 	 */
 	@ApiField("out_trace_id")
 	private String outTraceId;
+
+	/**
+	 * SL_PD_SALE_CODE-HONOR
+	 */
+	@ApiField("product_code")
+	private String productCode;
 
 	/**
 	 * 请求源
@@ -82,6 +88,13 @@ public class AlipayPcreditLoanHonorUsercancelaccountApplyModel extends AlipayObj
 	}
 	public void setOutTraceId(String outTraceId) {
 		this.outTraceId = outTraceId;
+	}
+
+	public String getProductCode() {
+		return this.productCode;
+	}
+	public void setProductCode(String productCode) {
+		this.productCode = productCode;
 	}
 
 	public String getRequestSource() {

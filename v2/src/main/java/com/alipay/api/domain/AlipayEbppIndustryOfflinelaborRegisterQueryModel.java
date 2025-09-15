@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 线下用工项目登记记录查询
  *
  * @author auto create
- * @since 1.0, 2025-09-05 17:05:07
+ * @since 1.0, 2025-09-12 21:32:38
  */
 public class AlipayEbppIndustryOfflinelaborRegisterQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2675675349484727867L;
+	private static final long serialVersionUID = 1174515385662822974L;
 
 	/**
 	 * 登记状态
@@ -32,10 +32,31 @@ public class AlipayEbppIndustryOfflinelaborRegisterQueryModel extends AlipayObje
 	private String jobName;
 
 	/**
-	 * 外部登记号
+	 * 外部登记号 当前字段已废弃(字段名称调整,新增 out_register_id 字段替代)
+	 */
+	@ApiField("out_regist_id")
+	@Deprecated
+	private String outRegistId;
+
+	/**
+	 * 外部登记号 当前字段已废弃(字段名称调整,新增 out_register_id 字段替代)
 	 */
 	@ApiField("out_regist_no")
+	@Deprecated
 	private String outRegistNo;
+
+	/**
+	 * 外部登记号
+	 */
+	@ApiField("out_register_id")
+	private String outRegisterId;
+
+	/**
+	 * 外部登记号 当前字段已废弃(字段名称调整,新增 out_register_id 字段替代)
+	 */
+	@ApiField("out_register_no")
+	@Deprecated
+	private String outRegisterNo;
 
 	/**
 	 * 页码（从 1 开始）
@@ -106,11 +127,32 @@ public class AlipayEbppIndustryOfflinelaborRegisterQueryModel extends AlipayObje
 		this.jobName = jobName;
 	}
 
+	public String getOutRegistId() {
+		return this.outRegistId;
+	}
+	public void setOutRegistId(String outRegistId) {
+		this.outRegistId = outRegistId;
+	}
+
 	public String getOutRegistNo() {
 		return this.outRegistNo;
 	}
 	public void setOutRegistNo(String outRegistNo) {
 		this.outRegistNo = outRegistNo;
+	}
+
+	public String getOutRegisterId() {
+		return this.outRegisterId;
+	}
+	public void setOutRegisterId(String outRegisterId) {
+		this.outRegisterId = outRegisterId;
+	}
+
+	public String getOutRegisterNo() {
+		return this.outRegisterNo;
+	}
+	public void setOutRegisterNo(String outRegisterNo) {
+		this.outRegisterNo = outRegisterNo;
 	}
 
 	public Long getPageNum() {

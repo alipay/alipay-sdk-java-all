@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ISV订单信息创建
  *
  * @author auto create
- * @since 1.0, 2025-03-06 20:48:19
+ * @since 1.0, 2025-09-09 19:10:21
  */
 public class AntMerchantExpandEcoOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8284279676288853384L;
+	private static final long serialVersionUID = 5499513236944863246L;
 
 	/**
 	 * 交易平台
@@ -52,6 +52,25 @@ public class AntMerchantExpandEcoOrderCreateModel extends AlipayObject {
 	 */
 	@ApiField("out_order_id")
 	private String outOrderId;
+
+	/**
+	 * 数组，商品图片file_key，就是在订单上传之前需要先上传订单对应的商品图片，上传成功之后返回的oss_key
+	 */
+	@ApiListField("product_image_file_keys")
+	@ApiField("string")
+	private List<String> productImageFileKeys;
+
+	/**
+	 * 商品名称
+	 */
+	@ApiField("product_name")
+	private String productName;
+
+	/**
+	 * 商品规格
+	 */
+	@ApiField("product_specifications")
+	private String productSpecifications;
 
 	/**
 	 * osskey数组,将文件上传的返回的osskey一并上传
@@ -132,6 +151,27 @@ public class AntMerchantExpandEcoOrderCreateModel extends AlipayObject {
 	}
 	public void setOutOrderId(String outOrderId) {
 		this.outOrderId = outOrderId;
+	}
+
+	public List<String> getProductImageFileKeys() {
+		return this.productImageFileKeys;
+	}
+	public void setProductImageFileKeys(List<String> productImageFileKeys) {
+		this.productImageFileKeys = productImageFileKeys;
+	}
+
+	public String getProductName() {
+		return this.productName;
+	}
+	public void setProductName(String productName) {
+		this.productName = productName;
+	}
+
+	public String getProductSpecifications() {
+		return this.productSpecifications;
+	}
+	public void setProductSpecifications(String productSpecifications) {
+		this.productSpecifications = productSpecifications;
 	}
 
 	public List<String> getQrcodeImgs() {

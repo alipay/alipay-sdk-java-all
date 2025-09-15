@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 广告代理商投放数据查询
  *
  * @author auto create
- * @since 1.0, 2025-03-21 11:50:25
+ * @since 1.0, 2025-09-09 14:11:51
  */
 public class AlipayDataDataserviceAdAgentreportdataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5775433864418431816L;
+	private static final long serialVersionUID = 7622943255664229152L;
 
 	/**
 	 * 登录用户支付宝统一ID,2088开头字符串,代理商自身PID。

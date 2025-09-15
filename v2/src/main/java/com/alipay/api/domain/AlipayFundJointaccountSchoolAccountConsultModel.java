@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 校园小荷包账号咨询接口
  *
  * @author auto create
- * @since 1.0, 2025-07-16 15:45:54
+ * @since 1.0, 2025-09-07 11:01:14
  */
 public class AlipayFundJointaccountSchoolAccountConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5499358499155333724L;
+	private static final long serialVersionUID = 4733311615971224998L;
 
 	/**
 	 * 业务场景
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
+
+	/**
+	 * 签约校园刷脸时的faceId
+	 */
+	@ApiField("face_id")
+	private String faceId;
 
 	/**
 	 * 小荷包开户群主openId，用于查询该用户是否开通小荷包。master_user_id与master_open_id不能同时为空，如果同时传值需保证master_user_id和master_open_id的关联性。
@@ -36,6 +42,12 @@ public class AlipayFundJointaccountSchoolAccountConsultModel extends AlipayObjec
 	 */
 	@ApiField("product_code")
 	private String productCode;
+
+	/**
+	 * 开通时签约方式
+	 */
+	@ApiField("school_sign_type")
+	private String schoolSignType;
 
 	/**
 	 * 学生证件号，用于验证该学生是否已经加入到指定的小荷包，判断时会验证学生姓名、证件类型、证件号与支付宝侧预留的是否一致
@@ -62,6 +74,13 @@ public class AlipayFundJointaccountSchoolAccountConsultModel extends AlipayObjec
 		this.bizScene = bizScene;
 	}
 
+	public String getFaceId() {
+		return this.faceId;
+	}
+	public void setFaceId(String faceId) {
+		this.faceId = faceId;
+	}
+
 	public String getMasterOpenId() {
 		return this.masterOpenId;
 	}
@@ -81,6 +100,13 @@ public class AlipayFundJointaccountSchoolAccountConsultModel extends AlipayObjec
 	}
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
+	}
+
+	public String getSchoolSignType() {
+		return this.schoolSignType;
+	}
+	public void setSchoolSignType(String schoolSignType) {
+		this.schoolSignType = schoolSignType;
 	}
 
 	public String getStudentCertNo() {

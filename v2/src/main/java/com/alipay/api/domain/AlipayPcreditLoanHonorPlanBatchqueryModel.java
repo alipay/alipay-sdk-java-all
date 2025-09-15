@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 待还款计划列表查询
  *
  * @author auto create
- * @since 1.0, 2025-09-01 17:10:11
+ * @since 1.0, 2025-09-12 16:16:22
  */
 public class AlipayPcreditLoanHonorPlanBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7223182777272967131L;
+	private static final long serialVersionUID = 1442133897683183156L;
 
 	/**
 	 * 支付宝用户ID
@@ -42,6 +42,12 @@ public class AlipayPcreditLoanHonorPlanBatchqueryModel extends AlipayObject {
 	 */
 	@ApiField("out_trace_id")
 	private String outTraceId;
+
+	/**
+	 * 渠道产品码
+	 */
+	@ApiField("product_code")
+	private String productCode;
 
 	/**
 	 * 请求来源 CUSTOMER-C端对应用户发起、SCHEDULER-调度发起、BACKDOOR-小二对应后台用户调用
@@ -82,6 +88,13 @@ public class AlipayPcreditLoanHonorPlanBatchqueryModel extends AlipayObject {
 	}
 	public void setOutTraceId(String outTraceId) {
 		this.outTraceId = outTraceId;
+	}
+
+	public String getProductCode() {
+		return this.productCode;
+	}
+	public void setProductCode(String productCode) {
+		this.productCode = productCode;
 	}
 
 	public String getRequestSource() {

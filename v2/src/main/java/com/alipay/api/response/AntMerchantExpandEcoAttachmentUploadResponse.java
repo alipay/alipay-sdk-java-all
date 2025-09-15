@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.eco.attachment.upload response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-06 15:02:03
+ * @since 1.0, 2025-09-09 19:12:39
  */
 public class AntMerchantExpandEcoAttachmentUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6265597625948323716L;
+	private static final long serialVersionUID = 3586943195697368156L;
 
 	/** 
 	 * 文件上传成功返回的osskey

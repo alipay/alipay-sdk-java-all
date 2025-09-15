@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 合同详情查询
  *
  * @author auto create
- * @since 1.0, 2025-09-01 17:04:32
+ * @since 1.0, 2025-09-12 15:18:38
  */
 public class AlipayPcreditLoanHonorContractdetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6179919397153426424L;
+	private static final long serialVersionUID = 3555889993751591856L;
 
 	/**
 	 * 支付宝用户id
@@ -56,6 +56,12 @@ public class AlipayPcreditLoanHonorContractdetailQueryModel extends AlipayObject
 	 */
 	@ApiField("pre_consult_id")
 	private String preConsultId;
+
+	/**
+	 * SL_PD_SALE_CODE-HONOR
+	 */
+	@ApiField("product_code")
+	private String productCode;
 
 	/**
 	 * 请求来源
@@ -116,6 +122,13 @@ public class AlipayPcreditLoanHonorContractdetailQueryModel extends AlipayObject
 	}
 	public void setPreConsultId(String preConsultId) {
 		this.preConsultId = preConsultId;
+	}
+
+	public String getProductCode() {
+		return this.productCode;
+	}
+	public void setProductCode(String productCode) {
+		this.productCode = productCode;
 	}
 
 	public String getRequestSource() {

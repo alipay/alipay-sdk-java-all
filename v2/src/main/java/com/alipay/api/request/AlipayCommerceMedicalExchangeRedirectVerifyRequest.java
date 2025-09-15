@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.exchange.redirect.verify request
  * 
  * @author auto create
- * @since 1.0, 2025-09-03 18:22:42
+ * @since 1.0, 2025-09-11 13:58:51
  */
 public class AlipayCommerceMedicalExchangeRedirectVerifyRequest implements AlipayRequest<AlipayCommerceMedicalExchangeRedirectVerifyResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.loan.honor.cert.check request
  * 
  * @author auto create
- * @since 1.0, 2025-09-01 17:26:25
+ * @since 1.0, 2025-09-12 17:12:39
  */
 public class AlipayPcreditLoanHonorCertCheckRequest implements AlipayRequest<AlipayPcreditLoanHonorCertCheckResponse> {
 

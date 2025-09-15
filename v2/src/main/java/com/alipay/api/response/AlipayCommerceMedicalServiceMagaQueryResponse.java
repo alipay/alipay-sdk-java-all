@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.service.maga.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-06 17:56:31
+ * @since 1.0, 2025-09-10 10:43:48
  */
 public class AlipayCommerceMedicalServiceMagaQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7176455561361225945L;
+	private static final long serialVersionUID = 5243218639118889925L;
 
 	/** 
 	 * 服务投放数据实体

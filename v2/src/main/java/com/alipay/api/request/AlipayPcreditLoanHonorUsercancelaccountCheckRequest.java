@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.loan.honor.usercancelaccount.check request
  * 
  * @author auto create
- * @since 1.0, 2025-09-01 16:57:38
+ * @since 1.0, 2025-09-12 15:32:39
  */
 public class AlipayPcreditLoanHonorUsercancelaccountCheckRequest implements AlipayRequest<AlipayPcreditLoanHonorUsercancelaccountCheckResponse> {
 

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.openid.openidtounionid.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-27 11:47:03
+ * @since 1.0, 2025-09-08 10:23:21
  */
 public class AlipayOpenAppOpenidOpenidtounionidBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8579267657947238132L;
+	private static final long serialVersionUID = 4765648227664992695L;
 
 	/** 
 	 * 不合法的openid列表

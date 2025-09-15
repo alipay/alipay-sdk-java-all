@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务商账单数据回传
  *
  * @author auto create
- * @since 1.0, 2024-03-07 10:55:52
+ * @since 1.0, 2025-09-12 14:08:11
  */
 public class AlipayOpenSpIsvBillSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2891574839559343242L;
+	private static final long serialVersionUID = 2454527456446866361L;
 
 	/**
 	 * 账单结束时间

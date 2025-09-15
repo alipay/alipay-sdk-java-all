@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-08-27 10:52:35
+ * @since 1.0, 2025-09-15 13:49:22
  */
 public class ControlRuleVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5659978955144276423L;
+	private static final long serialVersionUID = 7467299659223236332L;
 
 	/**
 	 * 管控规则的key

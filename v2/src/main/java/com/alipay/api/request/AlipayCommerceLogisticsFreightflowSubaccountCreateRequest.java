@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.logistics.freightflow.subaccount.create request
  * 
  * @author auto create
- * @since 1.0, 2025-07-02 19:17:32
+ * @since 1.0, 2025-09-12 16:05:46
  */
 public class AlipayCommerceLogisticsFreightflowSubaccountCreateRequest implements AlipayRequest<AlipayCommerceLogisticsFreightflowSubaccountCreateResponse> {
 

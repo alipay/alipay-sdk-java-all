@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品扩展信息KV对象
  *
  * @author auto create
- * @since 1.0, 2019-09-06 10:27:32
+ * @since 1.0, 2025-09-09 10:41:29
  */
 public class ItemExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3122277656815723753L;
+	private static final long serialVersionUID = 6652735315232213287L;
 
 	/**
 	 * 扩展信息的key

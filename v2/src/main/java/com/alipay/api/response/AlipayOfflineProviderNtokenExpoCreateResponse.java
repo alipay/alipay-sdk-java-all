@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.provider.ntoken.expo.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-04 14:16:22
+ * @since 1.0, 2025-09-11 15:17:39
  */
 public class AlipayOfflineProviderNtokenExpoCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2859636556362413854L;
+	private static final long serialVersionUID = 4365311131712975814L;
 
 	/** 
 	 * 收藏token

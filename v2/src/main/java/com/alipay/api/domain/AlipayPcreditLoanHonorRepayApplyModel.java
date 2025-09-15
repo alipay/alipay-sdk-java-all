@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 荣耀主动还款申请
  *
  * @author auto create
- * @since 1.0, 2025-09-01 17:03:47
+ * @since 1.0, 2025-09-12 16:15:29
  */
 public class AlipayPcreditLoanHonorRepayApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4887344251837663864L;
+	private static final long serialVersionUID = 7367526577948579447L;
 
 	/**
 	 * 支付宝用户ID
@@ -74,6 +74,12 @@ OVD_AND_CURRENT_REPAY-到期逾期预算
 	 */
 	@ApiField("out_trace_id")
 	private String outTraceId;
+
+	/**
+	 * 渠道产品码
+	 */
+	@ApiField("product_code")
+	private String productCode;
 
 	/**
 	 * 用户申请的还款金额，单位：分
@@ -162,6 +168,13 @@ CUSTOMER-C端对应用户发起、SCHEDULER-调度发起、BACKDOOR-小二对应
 	}
 	public void setOutTraceId(String outTraceId) {
 		this.outTraceId = outTraceId;
+	}
+
+	public String getProductCode() {
+		return this.productCode;
+	}
+	public void setProductCode(String productCode) {
+		this.productCode = productCode;
 	}
 
 	public String getRepayAmount() {

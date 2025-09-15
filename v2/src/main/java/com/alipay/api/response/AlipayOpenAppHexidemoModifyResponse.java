@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.hexidemo.modify response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-18 23:02:13
+ * @since 1.0, 2025-09-11 13:45:32
  */
 public class AlipayOpenAppHexidemoModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6271117877949485971L;
+	private static final long serialVersionUID = 3386932392652641854L;
 
 	/** 
 	 * 呜呜呜

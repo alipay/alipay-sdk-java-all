@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-08-27 10:52:35
+ * @since 1.0, 2025-09-15 13:49:22
  */
 public class CategoryAttributeInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8387731815525651255L;
+	private static final long serialVersionUID = 5752317649311894986L;
 
 	/**
 	 * 属性code

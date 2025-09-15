@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.item.catespu.query request
  * 
  * @author auto create
- * @since 1.0, 2025-08-21 14:27:36
+ * @since 1.0, 2025-09-15 13:49:32
  */
 public class AlipayOpenAppItemCatespuQueryRequest implements AlipayRequest<AlipayOpenAppItemCatespuQueryResponse> {
 

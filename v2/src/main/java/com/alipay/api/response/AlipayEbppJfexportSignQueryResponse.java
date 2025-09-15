@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppJfexportSignQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2696321591129178336L;
+	private static final long serialVersionUID = 3647845785492535794L;
 
 	/** 
 	 * 资产id银行卡签约号

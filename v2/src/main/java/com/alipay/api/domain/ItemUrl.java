@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品地址
  *
  * @author auto create
- * @since 1.0, 2020-07-23 15:13:44
+ * @since 1.0, 2025-09-09 10:40:48
  */
 public class ItemUrl extends AlipayObject {
 
-	private static final long serialVersionUID = 7612525519978245169L;
+	private static final long serialVersionUID = 5516381318331324424L;
 
 	/**
 	 * 地址类型；可选值: SC_MINI_APP(支付宝小程序)

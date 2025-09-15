@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 周期信息
  *
  * @author auto create
- * @since 1.0, 2024-12-27 16:01:21
+ * @since 1.0, 2025-09-15 11:04:30
  */
 public class CardCycle extends AlipayObject {
 
-	private static final long serialVersionUID = 3149285868381462281L;
+	private static final long serialVersionUID = 6271811332835335863L;
 
 	/**
 	 * 1.当该参数配置为true时，在用户下单时立即扣第一期的金额
@@ -25,6 +25,12 @@ public class CardCycle extends AlipayObject {
 	 */
 	@ApiField("cycle_charge_type")
 	private String cycleChargeType;
+
+	/**
+	 * 表示固定周期扣费的步长，比如28表示每隔28个自然日扣费。
+	 */
+	@ApiField("cycle_range")
+	private Long cycleRange;
 
 	/**
 	 * 指定周期付的周期单位
@@ -66,6 +72,13 @@ public class CardCycle extends AlipayObject {
 	}
 	public void setCycleChargeType(String cycleChargeType) {
 		this.cycleChargeType = cycleChargeType;
+	}
+
+	public Long getCycleRange() {
+		return this.cycleRange;
+	}
+	public void setCycleRange(Long cycleRange) {
+		this.cycleRange = cycleRange;
 	}
 
 	public String getCycleType() {

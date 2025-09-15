@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NearMallBo extends AlipayObject {
 
-	private static final long serialVersionUID = 4683191129717764647L;
+	private static final long serialVersionUID = 6378155481463257483L;
 
 	/**
 	 * json字符串表示额外信息

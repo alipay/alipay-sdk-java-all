@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易记录详情信息
  *
  * @author auto create
- * @since 1.0, 2025-03-28 16:35:54
+ * @since 1.0, 2025-09-12 17:31:28
  */
 public class TradeItemResult extends AlipayObject {
 
-	private static final long serialVersionUID = 2841656189295696297L;
+	private static final long serialVersionUID = 6751914944942982973L;
 
 	/**
 	 * 支付宝订单号。对账使用，不脱敏
@@ -56,7 +56,7 @@ public class TradeItemResult extends AlipayObject {
 	private String merchantOrderNo;
 
 	/**
-	 * 商家优惠金额
+	 * 商家优惠金额，人民币元
 	 */
 	@ApiField("net_mdiscount")
 	private String netMdiscount;
@@ -68,7 +68,7 @@ public class TradeItemResult extends AlipayObject {
 	private String otherAccount;
 
 	/**
-	 * 订单退款金额
+	 * 订单退款金额，人民币元
 	 */
 	@ApiField("refund_amount")
 	private String refundAmount;
@@ -92,7 +92,7 @@ public class TradeItemResult extends AlipayObject {
 	private String storeNo;
 
 	/**
-	 * 订单金额
+	 * 订单金额，人民币元
 	 */
 	@ApiField("total_amount")
 	private String totalAmount;

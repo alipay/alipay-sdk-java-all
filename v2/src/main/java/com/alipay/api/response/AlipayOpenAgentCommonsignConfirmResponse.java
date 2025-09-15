@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenAgentCommonsignConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6817113334939737474L;
+	private static final long serialVersionUID = 3769294799694389757L;
 
 	/** 
 	 * 签约单号

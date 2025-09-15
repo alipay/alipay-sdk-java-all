@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DesignatedDrivingDynamicPrice extends AlipayObject {
 
-	private static final long serialVersionUID = 1851713198347443754L;
+	private static final long serialVersionUID = 2856217654132657573L;
 
 	/**
 	 * 调价金额，元

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询刷脸用户开通详细信息
  *
  * @author auto create
- * @since 1.0, 2025-06-16 16:52:12
+ * @since 1.0, 2025-09-09 14:09:58
  */
 public class AlipayCommerceEducateSceneTokenQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7493579831867422633L;
+	private static final long serialVersionUID = 4137414531399435327L;
 
 	/**
 	 * 用于查询用户详情的凭证

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账务明细
  *
  * @author auto create
- * @since 1.0, 2025-06-26 21:12:45
+ * @since 1.0, 2025-09-12 17:31:41
  */
 public class AccountLogItemResult extends AlipayObject {
 
-	private static final long serialVersionUID = 2311498345231589782L;
+	private static final long serialVersionUID = 1222675474427427656L;
 
 	/**
 	 * 支付宝账务流水号。对账使用，不脱敏
@@ -110,7 +110,7 @@ public class AccountLogItemResult extends AlipayObject {
 	private String transMemo;
 
 	/**
-	 * 账务记录的类型，仅供参考
+	 * 账务记录的类型，仅供参考（可能会变化）
 	 */
 	@ApiField("type")
 	private String type;

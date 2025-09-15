@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.honor.coupon.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-01 17:27:39
+ * @since 1.0, 2025-09-12 17:12:40
  */
 public class AlipayPcreditLoanHonorCouponQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3863515732276394888L;
+	private static final long serialVersionUID = 6426173494769448195L;
 
 	/** 
 	 * 优惠券列表（未使用、已使用、已过期）

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommercePropertyVideocallAnswerNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8472918412199242227L;
+	private static final long serialVersionUID = 6384236344662313293L;
 
 	
 
