@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class FxiaokeCreateInvoiceRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 7769253773536643748L;
+	private static final long serialVersionUID = 1362796386173854782L;
 
 	/**
 	 * 附件

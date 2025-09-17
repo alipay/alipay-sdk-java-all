@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-09-09 14:12:27
+ * @since 1.0, 2025-09-15 15:42:39
  */
 public class TourOrderSyncResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 4722465352266886191L;
+	private static final long serialVersionUID = 3237585534634959442L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识。
@@ -45,6 +45,13 @@ public class TourOrderSyncResponse extends AlipayObject {
 	 */
 	@ApiField("vid")
 	private String vid;
+
+	/**
+	 * null
+	 */
+	@ApiListField("voucher_user_ids")
+	@ApiField("string")
+	private List<String> voucherUserIds;
 
 	/**
 	 * null
@@ -86,6 +93,13 @@ public class TourOrderSyncResponse extends AlipayObject {
 	}
 	public void setVid(String vid) {
 		this.vid = vid;
+	}
+
+	public List<String> getVoucherUserIds() {
+		return this.voucherUserIds;
+	}
+	public void setVoucherUserIds(List<String> voucherUserIds) {
+		this.voucherUserIds = voucherUserIds;
 	}
 
 	public List<String> getVourcherUserIds() {

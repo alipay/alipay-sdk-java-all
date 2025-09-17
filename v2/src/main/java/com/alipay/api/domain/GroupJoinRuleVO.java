@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GroupJoinRuleVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2789887447368571635L;
+	private static final long serialVersionUID = 6729624596245268757L;
 
 	/**
 	 * 入群规则id

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayIserviceIssalarySettledataCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5419383465397169159L;
+	private static final long serialVersionUID = 1624965993986789155L;
 
 	/**
 	 * 结算数据日期入参

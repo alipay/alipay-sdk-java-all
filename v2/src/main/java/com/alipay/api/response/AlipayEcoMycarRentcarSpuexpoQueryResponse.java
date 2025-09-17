@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.rentcar.spuexpo.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-07 14:52:26
+ * @since 1.0, 2025-09-15 15:57:39
  */
 public class AlipayEcoMycarRentcarSpuexpoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2242861711841136557L;
+	private static final long serialVersionUID = 3579513661443295267L;
 
 	/** 
 	 * 曝光信息

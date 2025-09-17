@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.offlinelabor.project.create request
  * 
  * @author auto create
- * @since 1.0, 2025-08-29 13:40:00
+ * @since 1.0, 2025-09-17 10:02:39
  */
 public class AlipayEbppIndustryOfflinelaborProjectCreateRequest implements AlipayRequest<AlipayEbppIndustryOfflinelaborProjectCreateResponse> {
 
@@ -19,7 +19,7 @@ public class AlipayEbppIndustryOfflinelaborProjectCreateRequest implements Alipa
 	private String apiVersion="1.0";
 
 	/** 
-	* 线下用工项目创建
+	* 项目和岗位创建
 	 */
 	private String bizContent;
 

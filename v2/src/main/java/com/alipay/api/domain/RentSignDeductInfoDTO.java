@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RentSignDeductInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5853824227353656991L;
+	private static final long serialVersionUID = 7778197183118165399L;
 
 	/**
 	 * 代扣签约场景。租赁代扣固定传入RENT_DEDUCT

@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportAirticketOrderSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3619634265113368548L;
+	private static final long serialVersionUID = 8276554855787595752L;
 
 	/** 
 	 * 订单修改时间，与请求入参的modified_time保持一致

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据SKUID维度藏品查询接口
  *
  * @author auto create
- * @since 1.0, 2025-04-17 11:38:07
+ * @since 1.0, 2025-09-16 13:45:37
  */
 public class AnttechNftAssetbyskuidQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4322524963424158289L;
+	private static final long serialVersionUID = 4115912692749478541L;
 
 	/**
 	 * 用户标识

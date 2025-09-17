@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.digitalmgmt.hrcominsu.insuclaim.prog.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:34:28
+ * @since 1.0, 2025-09-16 17:47:40
  */
 public class AlipayDigitalmgmtHrcominsuInsuclaimProgBatchqueryRequest implements AlipayRequest<AlipayDigitalmgmtHrcominsuInsuclaimProgBatchqueryResponse> {
 

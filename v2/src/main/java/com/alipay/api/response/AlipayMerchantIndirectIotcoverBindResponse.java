@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.indirect.iotcover.bind response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-05 16:07:58
+ * @since 1.0, 2025-09-16 15:52:38
  */
 public class AlipayMerchantIndirectIotcoverBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2825481876376894749L;
+	private static final long serialVersionUID = 1138426962513443749L;
 
 	/** 
 	 * 非支付宝交易到账播报语料ID，仅入参中传入speech_content时会返回该值。

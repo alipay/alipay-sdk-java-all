@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.tour.userinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-08 14:11:29
+ * @since 1.0, 2025-09-15 15:12:40
  */
 public class AlipayCommerceTransportTourUserinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2642491745341648234L;
+	private static final long serialVersionUID = 2797141633442649322L;
 
 	/** 
 	 * 证件号
@@ -26,6 +26,12 @@ IDENTITY_CARD --身份证；PASSPORT -- 护照
 	 */
 	@ApiField("cert_type")
 	private String certType;
+
+	/** 
+	 * 身份类型验证结果通过：true，其余unknow
+	 */
+	@ApiField("identity_check_result")
+	private String identityCheckResult;
 
 	/** 
 	 * 用户姓名
@@ -51,6 +57,13 @@ IDENTITY_CARD --身份证；PASSPORT -- 护照
 	}
 	public String getCertType( ) {
 		return this.certType;
+	}
+
+	public void setIdentityCheckResult(String identityCheckResult) {
+		this.identityCheckResult = identityCheckResult;
+	}
+	public String getIdentityCheckResult( ) {
+		return this.identityCheckResult;
 	}
 
 	public void setName(String name) {

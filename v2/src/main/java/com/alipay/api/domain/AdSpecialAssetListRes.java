@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AdSpecialAssetListRes extends AlipayObject {
 
-	private static final long serialVersionUID = 2227374612961257627L;
+	private static final long serialVersionUID = 2366954861667942585L;
 
 	/**
 	 * 冻结单余额

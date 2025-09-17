@@ -3,6 +3,7 @@ package com.alipay.api.response;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.SceneResult;
 
 import com.alipay.api.AlipayResponse;
 
@@ -10,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.crowd.consult response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-08 11:48:42
+ * @since 1.0, 2025-09-15 14:42:40
  */
 public class AlipayTradeCrowdConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1296664434379738453L;
+	private static final long serialVersionUID = 4496666511559538989L;
 
 	/** 
 	 * 淘宝的活动id列表
@@ -30,6 +31,12 @@ N表示不是营销人群
 	@ApiField("promoted_user")
 	private String promotedUser;
 
+	/** 
+	 * 场景对应的执行结果
+	 */
+	@ApiField("scene_result")
+	private SceneResult sceneResult;
+
 	public void setActivityCodeList(List<String> activityCodeList) {
 		this.activityCodeList = activityCodeList;
 	}
@@ -42,6 +49,13 @@ N表示不是营销人群
 	}
 	public String getPromotedUser( ) {
 		return this.promotedUser;
+	}
+
+	public void setSceneResult(SceneResult sceneResult) {
+		this.sceneResult = sceneResult;
+	}
+	public SceneResult getSceneResult( ) {
+		return this.sceneResult;
 	}
 
 }

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.nft.customer.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-07 10:52:36
+ * @since 1.0, 2025-09-16 13:47:38
  */
 public class AnttechNftCustomerBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6327263544623552551L;
+	private static final long serialVersionUID = 2394537192525983837L;
 
 	/** 
 	 * 用户资产列表

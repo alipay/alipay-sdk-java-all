@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户绑定申请token
  *
  * @author auto create
- * @since 1.0, 2025-07-14 13:41:05
+ * @since 1.0, 2025-09-16 17:03:44
  */
 public class AlipayFundWalletTokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3343136514582576188L;
+	private static final long serialVersionUID = 8743518218229293276L;
 
 	/**
 	 * alipay.user.agreement.page.sign返回的代扣签约串
@@ -70,6 +70,12 @@ public class AlipayFundWalletTokenCreateModel extends AlipayObject {
 	 */
 	@ApiField("need_check_identity")
 	private Boolean needCheckIdentity;
+
+	/**
+	 * 是否引导开通自动充
+	 */
+	@ApiField("need_guide_auto_deposit")
+	private String needGuideAutoDeposit;
 
 	/**
 	 * 外部业务号
@@ -174,6 +180,13 @@ public class AlipayFundWalletTokenCreateModel extends AlipayObject {
 	}
 	public void setNeedCheckIdentity(Boolean needCheckIdentity) {
 		this.needCheckIdentity = needCheckIdentity;
+	}
+
+	public String getNeedGuideAutoDeposit() {
+		return this.needGuideAutoDeposit;
+	}
+	public void setNeedGuideAutoDeposit(String needGuideAutoDeposit) {
+		this.needGuideAutoDeposit = needGuideAutoDeposit;
 	}
 
 	public String getOutBizNo() {

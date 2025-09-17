@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.offlinelabor.project.query request
  * 
  * @author auto create
- * @since 1.0, 2025-08-29 13:42:37
+ * @since 1.0, 2025-09-17 10:02:39
  */
 public class AlipayEbppIndustryOfflinelaborProjectQueryRequest implements AlipayRequest<AlipayEbppIndustryOfflinelaborProjectQueryResponse> {
 
@@ -19,7 +19,7 @@ public class AlipayEbppIndustryOfflinelaborProjectQueryRequest implements Alipay
 	private String apiVersion="1.0";
 
 	/** 
-	* 线下用工项目查询
+	* 项目和岗位查询
 	 */
 	private String bizContent;
 

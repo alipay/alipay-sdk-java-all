@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-09-12 21:32:38
+ * @since 1.0, 2025-09-17 10:02:39
  */
 public class OfflineLaborProjectRegistRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 7386541624581875591L;
+	private static final long serialVersionUID = 6186973176625592271L;
 
 	/**
 	 * 用户支付宝账号

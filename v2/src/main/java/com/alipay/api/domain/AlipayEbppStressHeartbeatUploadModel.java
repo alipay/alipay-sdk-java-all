@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEbppStressHeartbeatUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1566338733177414281L;
+	private static final long serialVersionUID = 7444217588238848892L;
 
 	/**
 	 * 引擎错误原因

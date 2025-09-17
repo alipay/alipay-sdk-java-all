@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GreenOrderReceiptSendInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1136928541999473917L;
+	private static final long serialVersionUID = 1534391477437834584L;
 
 	/**
 	 * 订单回传失败字典值对应数值：DENGHUO_ORDER_NOT_SUPPORT、ORDER_HAS_SYNC

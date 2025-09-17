@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 寄件激励码动销反馈信息同步
  *
  * @author auto create
- * @since 1.0, 2025-06-30 17:25:52
+ * @since 1.0, 2025-09-16 13:51:27
  */
 public class AlipayCommerceLogisticsIncentivecodeOperationSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3725916612171829616L;
+	private static final long serialVersionUID = 3277961931672968945L;
 
 	/**
 	 * 支付宝交易号 当前字段已废弃(支付成功相关参数，迁移到alipay.commerce.logistics.trade.event.sync接口)

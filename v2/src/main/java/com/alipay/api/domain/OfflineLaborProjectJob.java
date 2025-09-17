@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-08-29 13:42:37
+ * @since 1.0, 2025-09-17 10:02:39
  */
 public class OfflineLaborProjectJob extends AlipayObject {
 
-	private static final long serialVersionUID = 1426954843473161213L;
+	private static final long serialVersionUID = 7444648292747838223L;
 
 	/**
 	 * 学历要求

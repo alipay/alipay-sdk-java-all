@@ -6,14 +6,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 安心登记卡线下报名状态变更修改
+ * 安心登记卡项目登记记录状态同步
  *
  * @author auto create
- * @since 1.0, 2025-08-13 17:27:37
+ * @since 1.0, 2025-09-17 10:02:39
  */
 public class AlipayEbppIndustryOfflinelaborRegisterModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1448491271581162771L;
+	private static final long serialVersionUID = 2674389493757173633L;
 
 	/**
 	 * 应聘状态

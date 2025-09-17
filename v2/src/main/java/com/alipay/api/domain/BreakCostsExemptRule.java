@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BreakCostsExemptRule extends AlipayObject {
 
-	private static final long serialVersionUID = 4114988294334953564L;
+	private static final long serialVersionUID = 2442579385365191833L;
 
 	/**
 	 * 购卡7天内退卡不收违约金

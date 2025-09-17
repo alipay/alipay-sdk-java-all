@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁历史融资扩展信息
  *
  * @author auto create
- * @since 1.0, 2025-07-18 18:44:51
+ * @since 1.0, 2025-09-16 20:02:25
  */
 public class RentHistoricalAssetFinancingExtInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8219564726856363695L;
+	private static final long serialVersionUID = 2461521582987389194L;
 
 	/**
 	 * 已还期数
@@ -20,7 +20,7 @@ public class RentHistoricalAssetFinancingExtInfoDTO extends AlipayObject {
 	private Long paidPeriod;
 
 	/**
-	 * 已还租金
+	 * 已还租金，单位：元。
 	 */
 	@ApiField("paid_price")
 	private String paidPrice;
@@ -38,7 +38,7 @@ public class RentHistoricalAssetFinancingExtInfoDTO extends AlipayObject {
 	private Long unpaidPeriod;
 
 	/**
-	 * 剩余未还租金
+	 * 剩余未还租金，单位：元。
 	 */
 	@ApiField("unpaid_price")
 	private String unpaidPrice;

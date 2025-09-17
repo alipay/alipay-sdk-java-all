@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayBossFncGfcreditcontrolRiskdetectionserviceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3383359679341835439L;
+	private static final long serialVersionUID = 1316184815564359968L;
 
 	/**
 	 * 风险咨询服务请求

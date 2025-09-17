@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 货运企业支付子户退款申请
  *
  * @author auto create
- * @since 1.0, 2025-07-24 14:37:07
+ * @since 1.0, 2025-09-16 16:49:43
  */
 public class AlipayCommerceLogisticsFreightflowSubaccountrefundApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5265111473378779229L;
+	private static final long serialVersionUID = 2174146758416257398L;
 
 	/**
 	 * 物流公司编码

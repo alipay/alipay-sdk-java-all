@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOverseasTravelRateCurrencyBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5821783389229173618L;
+	private static final long serialVersionUID = 7624687313272611517L;
 
 	/**
 	 * 业务类型:

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class IcInboundSeatEventModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6782189267455522132L;
+	private static final long serialVersionUID = 2819545557889563683L;
 
 	/**
 	 * 事件发生时间，1970年以来的毫秒数

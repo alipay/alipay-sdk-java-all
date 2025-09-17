@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 激励交易回传
  *
  * @author auto create
- * @since 1.0, 2025-06-30 19:50:34
+ * @since 1.0, 2025-09-16 14:36:35
  */
 public class AlipayCommerceLogisticsTradeEventSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2762949547282631281L;
+	private static final long serialVersionUID = 4368212122619187959L;
 
 	/**
 	 * 支付宝交易号

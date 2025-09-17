@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceEcCreditBillrepayQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6294362242131951532L;
+	private static final long serialVersionUID = 5134596737534382867L;
 
 	/** 
 	 * 授信账单还款信息

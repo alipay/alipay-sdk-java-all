@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DatadigitalAnttechAmpAigcApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8891597361761968781L;
+	private static final long serialVersionUID = 8459641188144738272L;
 
 	/**
 	 * 生成图片或视频的文本或文件id

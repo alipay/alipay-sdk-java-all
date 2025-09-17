@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 金融通用搜索
  *
  * @author auto create
- * @since 1.0, 2025-02-20 15:24:05
+ * @since 1.0, 2025-09-16 19:49:55
  */
 public class DatadigitalFincloudFinsaasOpensearchQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3617662314483999958L;
+	private static final long serialVersionUID = 5368339573568878472L;
 
 	/**
 	 * 搜索的领域，不传默认全部all

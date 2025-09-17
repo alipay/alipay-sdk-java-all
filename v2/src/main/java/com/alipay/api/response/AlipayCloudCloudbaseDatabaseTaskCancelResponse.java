@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudCloudbaseDatabaseTaskCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7868179974812592583L;
+	private static final long serialVersionUID = 1755677313427375311L;
 
 	/** 
 	 * 取消任务执行结果

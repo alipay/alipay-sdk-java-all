@@ -4,6 +4,7 @@ import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.TourOrderSyncResponse;
+import com.alipay.api.domain.TourOrderSyncFailureDetail;
 
 import com.alipay.api.AlipayResponse;
 
@@ -11,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.tour.order.sync response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-09 14:12:27
+ * @since 1.0, 2025-09-15 15:42:39
  */
 public class AlipayCommerceTransportTourOrderSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2376488139229999689L;
+	private static final long serialVersionUID = 5563117223849777561L;
 
 	/** 
 	 * null
@@ -23,6 +24,13 @@ public class AlipayCommerceTransportTourOrderSyncResponse extends AlipayResponse
 	@ApiListField("success_order_list")
 	@ApiField("tour_order_sync_response")
 	private List<TourOrderSyncResponse> successOrderList;
+
+	/** 
+	 * null
+	 */
+	@ApiListField("sync_failure_detail_list")
+	@ApiField("tour_order_sync_failure_detail")
+	private List<TourOrderSyncFailureDetail> syncFailureDetailList;
 
 	/** 
 	 * 失败的订单凭证号。
@@ -37,6 +45,13 @@ outBizNum|outVoucherId
 	}
 	public List<TourOrderSyncResponse> getSuccessOrderList( ) {
 		return this.successOrderList;
+	}
+
+	public void setSyncFailureDetailList(List<TourOrderSyncFailureDetail> syncFailureDetailList) {
+		this.syncFailureDetailList = syncFailureDetailList;
+	}
+	public List<TourOrderSyncFailureDetail> getSyncFailureDetailList( ) {
+		return this.syncFailureDetailList;
 	}
 
 	public void setUnSyncOrderNoList(String unSyncOrderNoList) {

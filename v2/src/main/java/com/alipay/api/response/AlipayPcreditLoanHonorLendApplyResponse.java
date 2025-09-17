@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.loan.honor.lend.apply response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-12 17:10:24
+ * @since 1.0, 2025-09-16 13:47:38
  */
 public class AlipayPcreditLoanHonorLendApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2298699453842227297L;
+	private static final long serialVersionUID = 8518933931595975546L;
 
 	/** 
 	 * 随身贷借款受理单号(受理成功后才有)

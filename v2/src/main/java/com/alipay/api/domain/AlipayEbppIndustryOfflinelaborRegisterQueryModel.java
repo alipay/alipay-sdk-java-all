@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 线下用工项目登记记录查询
+ * 安心登记卡项目登记记录查询
  *
  * @author auto create
- * @since 1.0, 2025-09-12 21:32:38
+ * @since 1.0, 2025-09-17 10:02:39
  */
 public class AlipayEbppIndustryOfflinelaborRegisterQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1174515385662822974L;
+	private static final long serialVersionUID = 4666619621699632149L;
 
 	/**
 	 * 登记状态

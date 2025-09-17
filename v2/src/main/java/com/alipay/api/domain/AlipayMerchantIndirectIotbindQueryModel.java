@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间连IoT绑定关系查询
  *
  * @author auto create
- * @since 1.0, 2025-08-26 20:10:52
+ * @since 1.0, 2025-09-16 16:18:29
  */
 public class AlipayMerchantIndirectIotbindQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6261158772795986762L;
+	private static final long serialVersionUID = 3651355232725217419L;
 
 	/**
 	 * 合约机和lite接入模式传设备SN号，千里传音接入模式传设备deviceName

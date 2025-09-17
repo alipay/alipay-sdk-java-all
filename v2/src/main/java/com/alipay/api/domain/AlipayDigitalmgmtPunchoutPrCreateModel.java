@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDigitalmgmtPunchoutPrCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8788627715443251985L;
+	private static final long serialVersionUID = 6332284625818331162L;
 
 	/**
 	 * pur_req,用于下pr单

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IotIdentityOrgUserSpiResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 5658211566452451564L;
+	private static final long serialVersionUID = 4887132355916235711L;
 
 	/**
 	 * 证件号

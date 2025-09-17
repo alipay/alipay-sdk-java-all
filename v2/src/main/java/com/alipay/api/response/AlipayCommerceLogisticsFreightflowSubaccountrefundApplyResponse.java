@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.logistics.freightflow.subaccountrefund.apply response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-12 16:05:56
+ * @since 1.0, 2025-09-16 16:52:40
  */
 public class AlipayCommerceLogisticsFreightflowSubaccountrefundApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2376787791382423993L;
+	private static final long serialVersionUID = 6152592793616897958L;
 
 	/** 
 	 * 申请是否成功

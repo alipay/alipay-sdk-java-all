@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MarketingAuthorizedData extends AlipayObject {
 
-	private static final long serialVersionUID = 1266814425713476839L;
+	private static final long serialVersionUID = 5366127787456288493L;
 
 	/**
 	 * 营销活动ID，当type=PROMO_ACTIVITY即授权业务类别为营销活动时该值必填

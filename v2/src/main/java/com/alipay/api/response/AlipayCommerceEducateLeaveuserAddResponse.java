@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.leaveuser.add response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-29 14:28:12
+ * @since 1.0, 2025-09-16 13:47:38
  */
 public class AlipayCommerceEducateLeaveuserAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6686841745133593268L;
+	private static final long serialVersionUID = 6321364313466752997L;
 
 	/** 
 	 * 请假申请单号

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.indirect.iotbind.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-05 15:55:28
+ * @since 1.0, 2025-09-16 16:27:39
  */
 public class AlipayMerchantIndirectIotbindQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4179478967195231793L;
+	private static final long serialVersionUID = 5865327764796681783L;
 
 	/** 
 	 * 设备绑定状态：BIND代表绑定，UNBIND代表未绑定
@@ -40,10 +40,22 @@ public class AlipayMerchantIndirectIotbindQueryResponse extends AlipayResponse {
 	private String encodeUrl;
 
 	/** 
+	 * 商家名称
+	 */
+	@ApiField("merchant_name")
+	private String merchantName;
+
+	/** 
 	 * 最近一次预投的非支付宝交易到账播报语料ID。
 	 */
 	@ApiField("msg_id")
 	private String msgId;
+
+	/** 
+	 * 屏幕收款二维码链接
+	 */
+	@ApiField("screen_pay_qr_link")
+	private String screenPayQrLink;
 
 	/** 
 	 * 设备绑定的商户在支付宝体系内的唯一id,一般以2088开头。设备处于已绑定状态时会返回对应绑定商户id。如果设备没有绑定过或者已经解绑，该字段为空
@@ -91,11 +103,25 @@ public class AlipayMerchantIndirectIotbindQueryResponse extends AlipayResponse {
 		return this.encodeUrl;
 	}
 
+	public void setMerchantName(String merchantName) {
+		this.merchantName = merchantName;
+	}
+	public String getMerchantName( ) {
+		return this.merchantName;
+	}
+
 	public void setMsgId(String msgId) {
 		this.msgId = msgId;
 	}
 	public String getMsgId( ) {
 		return this.msgId;
+	}
+
+	public void setScreenPayQrLink(String screenPayQrLink) {
+		this.screenPayQrLink = screenPayQrLink;
+	}
+	public String getScreenPayQrLink( ) {
+		return this.screenPayQrLink;
 	}
 
 	public void setSmid(String smid) {

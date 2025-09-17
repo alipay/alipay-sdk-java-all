@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-09-09 14:12:27
+ * @since 1.0, 2025-09-15 15:42:39
  */
 public class TourOrderSyncDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1286296678344933135L;
+	private static final long serialVersionUID = 8625296474826271491L;
 
 	/**
 	 * 可核销总数。凭证可核销数量总和
@@ -68,10 +68,16 @@ USED -- 已核销
 	private String outBizNo;
 
 	/**
-	 * 项目id。由支付宝分配
+	 * 项目id，由支付宝分配
 	 */
 	@ApiField("project_id")
 	private String projectId;
+
+	/**
+	 * 凭证可用的场景类型，场景code（sceneCodes）为一码通（qrcode）时必须填写该参数，不传时默认为「免证登记」场景。
+	 */
+	@ApiField("scene_type")
+	private String sceneType;
 
 	/**
 	 * 下单用户手机号
@@ -146,6 +152,13 @@ USED -- 已核销
 	}
 	public void setProjectId(String projectId) {
 		this.projectId = projectId;
+	}
+
+	public String getSceneType() {
+		return this.sceneType;
+	}
+	public void setSceneType(String sceneType) {
+		this.sceneType = sceneType;
 	}
 
 	public String getTeleNo() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenPublicContentCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1353422696898922532L;
+	private static final long serialVersionUID = 8259822328666248595L;
 
 	/**
 	 * message_id 是发布接口调用之后拿到的返回值，用来撤回已经发布的对应内容

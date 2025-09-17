@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.logistics.freightflow.subaccountrefund.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-12 16:05:33
+ * @since 1.0, 2025-09-16 16:12:39
  */
 public class AlipayCommerceLogisticsFreightflowSubaccountrefundQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5628938189682632793L;
+	private static final long serialVersionUID = 6349841764327663272L;
 
 	/** 
 	 * 实际退款成功金额，单位分，仅当退款成功时消费。

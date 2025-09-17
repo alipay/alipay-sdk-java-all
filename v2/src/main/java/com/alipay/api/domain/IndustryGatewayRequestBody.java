@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class IndustryGatewayRequestBody extends AlipayObject {
 
-	private static final long serialVersionUID = 2895752929969443755L;
+	private static final long serialVersionUID = 6594421752299255483L;
 
 	/**
 	 * 场景标识 si_payment_income 缴费到账 si_medical_consume_detail 医保消费 si_medical_consume_month 医保月账单

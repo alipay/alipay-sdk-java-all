@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AssetCertInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8348564332148477896L;
+	private static final long serialVersionUID = 4814516343455867275L;
 
 	/**
 	 * 预付卡卡号

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝商家账户账务明细查询
  *
  * @author auto create
- * @since 1.0, 2025-09-12 17:31:41
+ * @since 1.0, 2025-09-15 16:12:27
  */
 public class AlipayDataBillAccountlogQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1722236698553729921L;
+	private static final long serialVersionUID = 3547616475869299988L;
 
 	/**
 	 * 协议授权码，特殊场景下使用
@@ -26,7 +26,7 @@ public class AlipayDataBillAccountlogQueryModel extends AlipayObject {
 	private String agreementProductCode;
 
 	/**
-	 * 支付宝订单号，通过支付宝订单号精确查询相关的流水明细，商户订单号与支付宝订单号互斥
+	 * 支付宝订单号，通过支付宝订单号精确查询相关的流水明细。支付宝订单号和商户订单号互斥。选择支付宝订单号时，不可选商户订单号。
 	 */
 	@ApiField("alipay_order_no")
 	private String alipayOrderNo;
@@ -44,7 +44,7 @@ public class AlipayDataBillAccountlogQueryModel extends AlipayObject {
 	private String endTime;
 
 	/**
-	 * 商户订单号，通过商户订单号精确查询相关的流水明细，商户订单号与支付宝订单号互斥
+	 * 商户订单号，通过商户订单号精确查询相关的流水明细。支付宝订单号和商户订单号互斥。选择商户订单号时，不可选支付宝订单号。
 	 */
 	@ApiField("merchant_order_no")
 	private String merchantOrderNo;

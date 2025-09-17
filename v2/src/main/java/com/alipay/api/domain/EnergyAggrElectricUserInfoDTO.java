@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EnergyAggrElectricUserInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3179733645958491616L;
+	private static final long serialVersionUID = 8161749112511954687L;
 
 	/**
 	 * 详细地址

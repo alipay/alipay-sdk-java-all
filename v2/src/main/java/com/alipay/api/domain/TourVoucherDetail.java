@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 文旅凭证信息
  *
  * @author auto create
- * @since 1.0, 2025-08-25 14:05:51
+ * @since 1.0, 2025-09-15 15:38:47
  */
 public class TourVoucherDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7151222821295833663L;
+	private static final long serialVersionUID = 3817475855987935235L;
 
 	/**
 	 * 游客身份证号。必须与手机号选一必填
@@ -26,6 +26,12 @@ public class TourVoucherDetail extends AlipayObject {
 	 */
 	@ApiField("code_info")
 	private String codeInfo;
+
+	/**
+	 * 特殊人群。即凭证所适用的人群类型，比如：学生票，教师票，老人票等等。当该凭证为特殊人群凭证时必须填写，不填写时默认该凭证为普通成人票，枚举值详见对接文档。
+	 */
+	@ApiField("identity_type")
+	private String identityType;
 
 	/**
 	 * 游客姓名
@@ -47,7 +53,7 @@ public class TourVoucherDetail extends AlipayObject {
 	private String outVoucherId;
 
 	/**
-	 * 支付宝景点id
+	 * 支付宝景点id。如果是多个景区，则以逗号形式分隔id
 	 */
 	@ApiField("scenic_id")
 	private String scenicId;
@@ -74,8 +80,22 @@ REFUNDED-已退款
 	private String teleNo;
 
 	/**
+	 * 凭证核销用户的openId，当凭证为核销状态时必传
+	 */
+	@ApiField("verify_open_id")
+	private String verifyOpenId;
+
+	/**
+	 * 核销用户的支付宝账户ID。凭证为核销状态时，此字段必须填写
+	 */
+	@ApiField("verify_user_id")
+	private String verifyUserId;
+
+	/**
 	 * 凭证详情信息。
 startTime和endTime代表凭证的起止日期，必填。
+verifyTime：核销时间。当凭证为核销状态时必须填写该字段。
+voucherName：凭证名称/票名称，必填
 	 */
 	@ApiField("voucher_info")
 	private String voucherInfo;
@@ -92,6 +112,13 @@ startTime和endTime代表凭证的起止日期，必填。
 	}
 	public void setCodeInfo(String codeInfo) {
 		this.codeInfo = codeInfo;
+	}
+
+	public String getIdentityType() {
+		return this.identityType;
+	}
+	public void setIdentityType(String identityType) {
+		this.identityType = identityType;
 	}
 
 	public String getName() {
@@ -141,6 +168,20 @@ startTime和endTime代表凭证的起止日期，必填。
 	}
 	public void setTeleNo(String teleNo) {
 		this.teleNo = teleNo;
+	}
+
+	public String getVerifyOpenId() {
+		return this.verifyOpenId;
+	}
+	public void setVerifyOpenId(String verifyOpenId) {
+		this.verifyOpenId = verifyOpenId;
+	}
+
+	public String getVerifyUserId() {
+		return this.verifyUserId;
+	}
+	public void setVerifyUserId(String verifyUserId) {
+		this.verifyUserId = verifyUserId;
 	}
 
 	public String getVoucherInfo() {

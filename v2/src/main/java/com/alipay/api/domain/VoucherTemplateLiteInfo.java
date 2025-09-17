@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VoucherTemplateLiteInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4746422115329584273L;
+	private static final long serialVersionUID = 4167581356727842425L;
 
 	/**
 	 * 模板激活时间。草稿状态的模板该项为空

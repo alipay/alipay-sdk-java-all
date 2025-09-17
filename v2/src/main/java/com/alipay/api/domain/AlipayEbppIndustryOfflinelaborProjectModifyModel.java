@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 线下用工项目修改
+ * 安心登记卡线下用工项目修改
  *
  * @author auto create
- * @since 1.0, 2025-08-29 13:42:37
+ * @since 1.0, 2025-09-17 10:02:39
  */
 public class AlipayEbppIndustryOfflinelaborProjectModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7178349915748588463L;
+	private static final long serialVersionUID = 7674884536711684723L;
 
 	/**
 	 * 学历要求
