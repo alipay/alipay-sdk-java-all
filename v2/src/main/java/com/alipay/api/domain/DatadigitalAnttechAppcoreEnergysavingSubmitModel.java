@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DatadigitalAnttechAppcoreEnergysavingSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2395876589312841852L;
+	private static final long serialVersionUID = 7422394966639973719L;
 
 	/**
 	 * 申请时间

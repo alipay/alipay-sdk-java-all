@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * linkedmall 支付森林能量
  *
  * @author auto create
- * @since 1.0, 2025-09-05 14:29:17
+ * @since 1.0, 2025-09-17 16:58:33
  */
 public class AlipaySocialAntiepLinkedmallenergyPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3136344166264161474L;
+	private static final long serialVersionUID = 6383516524346761418L;
+
+	/**
+	 * 跳转商品链接时传递，有就透传回来，没有不用传
+	 */
+	@ApiField("biz_context")
+	private String bizContext;
 
 	/**
 	 * LinkedMall入驻的业务ID
@@ -78,6 +84,13 @@ public class AlipaySocialAntiepLinkedmallenergyPayModel extends AlipayObject {
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getBizContext() {
+		return this.bizContext;
+	}
+	public void setBizContext(String bizContext) {
+		this.bizContext = bizContext;
+	}
 
 	public String getBizId() {
 		return this.bizId;

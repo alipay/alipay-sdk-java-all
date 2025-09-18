@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ChapterInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8833711726916666374L;
+	private static final long serialVersionUID = 8792867327519345264L;
 
 	/**
 	 * 书籍（电子书）名称

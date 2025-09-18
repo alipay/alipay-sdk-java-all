@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CheckReportData extends AlipayObject {
 
-	private static final long serialVersionUID = 5168835168217622136L;
+	private static final long serialVersionUID = 3664581969147624757L;
 
 	/**
 	 * 是否支持回购认证， 90 天回购认证

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalInsuranceOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1527457165744988354L;
+	private static final long serialVersionUID = 8326282464797628845L;
 
 	/**
 	 * 标识实际赔付的保险公司，由支付宝定义枚举值，垫资的实际理赔保司为众安，那么枚举值为ZHONGAN

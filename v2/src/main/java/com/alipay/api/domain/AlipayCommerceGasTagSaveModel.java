@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceGasTagSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8716594778648816453L;
+	private static final long serialVersionUID = 7736968397861927887L;
 
 	/**
 	 * 加油业务标签的key

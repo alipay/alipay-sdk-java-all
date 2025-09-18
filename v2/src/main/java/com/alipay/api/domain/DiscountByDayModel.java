@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DiscountByDayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7186193856316555213L;
+	private static final long serialVersionUID = 2644528387492794538L;
 
 	/**
 	 * 开始天数，最小为1

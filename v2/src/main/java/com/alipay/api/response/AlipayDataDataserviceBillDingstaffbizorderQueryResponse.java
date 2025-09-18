@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataDataserviceBillDingstaffbizorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2429958577281352672L;
+	private static final long serialVersionUID = 7185572665133181685L;
 
 	/** 
 	 * 账单明细列表。如果返回数量小于page_size，则表示查询结束

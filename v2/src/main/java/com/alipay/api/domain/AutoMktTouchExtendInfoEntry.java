@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AutoMktTouchExtendInfoEntry extends AlipayObject {
 
-	private static final long serialVersionUID = 3122272652947522632L;
+	private static final long serialVersionUID = 2489631347311189131L;
 
 	/**
 	 * 扩展信息元素的Key值。

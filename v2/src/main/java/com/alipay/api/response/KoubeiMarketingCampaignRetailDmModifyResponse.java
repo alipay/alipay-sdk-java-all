@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiMarketingCampaignRetailDmModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4384177159645872489L;
+	private static final long serialVersionUID = 6243615936167416667L;
 
 	/** 
 	 * 内容id：该活动/商品入库成功之后，会将该活动/商品的id返回，作为商品/活动的内容id

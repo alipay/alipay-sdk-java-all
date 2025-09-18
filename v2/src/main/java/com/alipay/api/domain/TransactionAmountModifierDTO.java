@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TransactionAmountModifierDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1784936784761972214L;
+	private static final long serialVersionUID = 7817334613587699155L;
 
 	/**
 	 * 金额

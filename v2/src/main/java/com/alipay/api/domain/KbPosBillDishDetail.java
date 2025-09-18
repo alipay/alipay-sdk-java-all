@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KbPosBillDishDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7216549937228354568L;
+	private static final long serialVersionUID = 3438321613646982251L;
 
 	/**
 	 * pos本地订单菜明细流水号

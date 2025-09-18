@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RentCarStoreComment extends AlipayObject {
 
-	private static final long serialVersionUID = 6118156145238491264L;
+	private static final long serialVersionUID = 3216591385516935633L;
 
 	/**
 	 * 评价内容，100字以内

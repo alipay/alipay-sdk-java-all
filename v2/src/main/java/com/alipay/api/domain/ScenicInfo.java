@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ScenicInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3364156452417532493L;
+	private static final long serialVersionUID = 3164532474869482499L;
 
 	/**
 	 * 支付宝景区详细地址

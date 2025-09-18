@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FundLimit extends AlipayObject {
 
-	private static final long serialVersionUID = 2825498864464611476L;
+	private static final long serialVersionUID = 3877983811385677933L;
 
 	/**
 	 * 限制类型

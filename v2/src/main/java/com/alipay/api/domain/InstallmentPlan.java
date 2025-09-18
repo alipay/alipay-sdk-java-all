@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InstallmentPlan extends AlipayObject {
 
-	private static final long serialVersionUID = 4441987725239871923L;
+	private static final long serialVersionUID = 8196777798679625729L;
 
 	/**
 	 * 分期还款日、分期到期日

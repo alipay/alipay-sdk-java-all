@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AmapPoiInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3198852725842494142L;
+	private static final long serialVersionUID = 6662542946861969189L;
 
 	/**
 	 * 区域编码，area_code属于复杂类型poi_info的子属性，由调用者通过其它途径获取到的poi信息列表中直接携带传入

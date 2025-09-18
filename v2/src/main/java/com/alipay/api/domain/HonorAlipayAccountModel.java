@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HonorAlipayAccountModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5855996531834445829L;
+	private static final long serialVersionUID = 4396257898289758756L;
 
 	/**
 	 * 账号 (掩码)

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class TimeTableLineInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8511939479598931789L;
+	private static final long serialVersionUID = 4817496865561727433L;
 
 	/**
 	 * 自定义发车间隔列表，在指定时间区间内覆盖全局配置

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.wanxinnnn.query request
  * 
  * @author auto create
- * @since 1.0, 2025-09-11 19:07:40
+ * @since 1.0, 2025-09-17 17:12:39
  */
 public class AlipayOpenWanxinnnnQueryRequest implements AlipayRequest<AlipayOpenWanxinnnnQueryResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EpRiskIndicatorModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7688234492546957445L;
+	private static final long serialVersionUID = 2818683435593744113L;
 
 	/**
 	 * 指标码值

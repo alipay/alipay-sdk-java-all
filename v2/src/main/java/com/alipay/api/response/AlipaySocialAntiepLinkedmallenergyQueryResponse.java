@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.antiep.linkedmallenergy.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-05 14:48:27
+ * @since 1.0, 2025-09-17 17:02:39
  */
 public class AlipaySocialAntiepLinkedmallenergyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2662179574644932497L;
+	private static final long serialVersionUID = 8116992444187921735L;
 
 	/** 
 	 * 支持积分的处理结果描述，这个文案展示给用户查看

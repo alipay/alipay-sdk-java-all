@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝个人协议页面签约接口
  *
  * @author auto create
- * @since 1.0, 2024-11-18 15:48:34
+ * @since 1.0, 2025-09-17 16:20:21
  */
 public class AlipayUserAgreementPageSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1819149116854676928L;
+	private static final long serialVersionUID = 6716525759814665192L;
 
 	/**
 	 * 请按当前接入的方式进行填充，且输入值必须为文档中的参数取值范围。
@@ -72,6 +72,12 @@ public class AlipayUserAgreementPageSignModel extends AlipayObject {
 	 */
 	@ApiField("merchant_process_url")
 	private String merchantProcessUrl;
+
+	/**
+	 * 商户可通过支付产品接口回传订单或外部账户相关数据（敏感数据可加密后回传），结合支付宝内部已有的数据，可以有效提升对风险交易的识别及对可信交易的保护。支付宝针对风险交易的管控包括但不限于：交易提醒、交易拦截等；针对可信账户、可信渠道、可信交易等将重点保障支付体验。
+	 */
+	@ApiField("out_risk_info")
+	private String outRiskInfo;
 
 	/**
 	 * 业务透传参数
@@ -225,6 +231,13 @@ public class AlipayUserAgreementPageSignModel extends AlipayObject {
 	}
 	public void setMerchantProcessUrl(String merchantProcessUrl) {
 		this.merchantProcessUrl = merchantProcessUrl;
+	}
+
+	public String getOutRiskInfo() {
+		return this.outRiskInfo;
+	}
+	public void setOutRiskInfo(String outRiskInfo) {
+		this.outRiskInfo = outRiskInfo;
 	}
 
 	public String getPassParams() {

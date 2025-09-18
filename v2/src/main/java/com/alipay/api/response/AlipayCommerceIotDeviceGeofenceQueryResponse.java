@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceIotDeviceGeofenceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8624182486886161683L;
+	private static final long serialVersionUID = 6845669686384499814L;
 
 	/** 
 	 * 返回线路上绑定的设备列表

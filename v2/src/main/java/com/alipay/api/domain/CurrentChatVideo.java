@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CurrentChatVideo extends AlipayObject {
 
-	private static final long serialVersionUID = 1193941866726652884L;
+	private static final long serialVersionUID = 3482151919696445416L;
 
 	/**
 	 * 文件类型

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceFundBindCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2826224444668379164L;
+	private static final long serialVersionUID = 3792334613826626728L;
 
 	/**
 	 * 绑卡用户的证件号，需要和cert_type联合使用

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceRentRoyaltySellerAppendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1739625143336474663L;
+	private static final long serialVersionUID = 5566641216364551662L;
 
 	/**
 	 * 16位纯数字，小程序场景下获取用户ID请参考：用户授权; 其它场景下获取用户ID请参考：网页授权获取用户信息;其中buyer_id与buyer_open_id不能同时为空
