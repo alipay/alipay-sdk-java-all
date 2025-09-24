@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CategoryRiskDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6488796272912178198L;
+	private static final long serialVersionUID = 3128437581364257943L;
 
 	/**
 	 * 风控类目code，为必传字段

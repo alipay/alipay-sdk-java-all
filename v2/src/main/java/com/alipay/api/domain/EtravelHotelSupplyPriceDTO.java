@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 酒旅项目价格
  *
  * @author auto create
- * @since 1.0, 2025-03-26 10:34:17
+ * @since 1.0, 2025-09-24 13:42:22
  */
 public class EtravelHotelSupplyPriceDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5353591514162197138L;
+	private static final long serialVersionUID = 3681864198549925739L;
 
 	/**
 	 * 金额

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.huabei.isv.openinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-30 15:52:00
+ * @since 1.0, 2025-09-18 13:42:22
  */
 public class AlipayPcreditHuabeiIsvOpeninfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8252859432576468324L;
+	private static final long serialVersionUID = 3558735761637153355L;
 
 	/** 
 	 * 声明了本响应数据的用途.仅做说明使用,调用方无需消费.

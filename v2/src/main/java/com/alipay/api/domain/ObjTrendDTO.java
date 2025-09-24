@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ObjTrendDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4878792385513639691L;
+	private static final long serialVersionUID = 6669335181269483255L;
 
 	/**
 	 * 个股标识

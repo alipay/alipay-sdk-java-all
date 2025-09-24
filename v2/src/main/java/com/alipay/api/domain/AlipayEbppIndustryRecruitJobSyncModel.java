@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEbppIndustryRecruitJobSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7559877821886426921L;
+	private static final long serialVersionUID = 4166568736315433768L;
 
 	/**
 	 * 学历要求

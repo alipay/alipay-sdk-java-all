@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 反向企业营业员创建
  *
  * @author auto create
- * @since 1.0, 2025-05-27 10:19:58
+ * @since 1.0, 2025-09-18 14:18:17
  */
 public class AlipayCommerceEcRecyclinginvoiceCompanyclerkCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6869917318531672117L;
+	private static final long serialVersionUID = 4798741753891731953L;
 
 	/**
 	 * 员工名称，新增开票员时以乐企可信开票员信息为准

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsTransportItineraryDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5421735465877243789L;
+	private static final long serialVersionUID = 5896245863222831357L;
 
 	/**
 	 * 到达具体地址

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.recyclinginvoice.companyclerk.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-17 14:35:01
+ * @since 1.0, 2025-09-18 14:32:40
  */
 public class AlipayCommerceEcRecyclinginvoiceCompanyclerkQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3275239326527376113L;
+	private static final long serialVersionUID = 8581526953331954414L;
 
 	/** 
 	 * 员工名称
@@ -31,6 +31,12 @@ public class AlipayCommerceEcRecyclinginvoiceCompanyclerkQueryResponse extends A
 	 */
 	@ApiField("clerk_role")
 	private String clerkRole;
+
+	/** 
+	 * 营业员状态
+	 */
+	@ApiField("clerk_status")
+	private String clerkStatus;
 
 	/** 
 	 * 企业（商户）营业员ID
@@ -63,6 +69,13 @@ public class AlipayCommerceEcRecyclinginvoiceCompanyclerkQueryResponse extends A
 	}
 	public String getClerkRole( ) {
 		return this.clerkRole;
+	}
+
+	public void setClerkStatus(String clerkStatus) {
+		this.clerkStatus = clerkStatus;
+	}
+	public String getClerkStatus( ) {
+		return this.clerkStatus;
 	}
 
 	public void setCompanyClerkId(String companyClerkId) {

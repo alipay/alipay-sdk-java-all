@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayAssetPointPointprodPointlibQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8822239131961439113L;
+	private static final long serialVersionUID = 4768595331235663449L;
 
 	/**
 	 * 集分宝积分库ID

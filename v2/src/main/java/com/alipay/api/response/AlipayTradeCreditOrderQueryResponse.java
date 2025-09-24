@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.credit.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-18 17:07:35
+ * @since 1.0, 2025-09-22 10:35:26
  */
 public class AlipayTradeCreditOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4699452732134975923L;
+	private static final long serialVersionUID = 6646587685591478929L;
 
 	/** 
 	 * 信用服务订单中的垫资金额。单位：元

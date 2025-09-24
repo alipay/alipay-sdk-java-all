@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCloudCloudbaseWalletRechargeVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2817326936585423659L;
+	private static final long serialVersionUID = 1567575799716768374L;
 
 	/**
 	 * 小程序AppID

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GrouponRule extends AlipayObject {
 
-	private static final long serialVersionUID = 3274975422277152472L;
+	private static final long serialVersionUID = 2331631878669773187L;
 
 	/**
 	 * 拼团成团人数

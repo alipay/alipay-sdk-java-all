@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁订单签约
  *
  * @author auto create
- * @since 1.0, 2025-09-16 11:01:39
+ * @since 1.0, 2025-09-24 11:20:40
  */
 public class AlipayCommerceRentOrderSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8242615799228458496L;
+	private static final long serialVersionUID = 3348492821955483986L;
+
+	/**
+	 * 芝麻信用拓展信息
+	 */
+	@ApiField("credit_ext_info")
+	private RentCreditExtInfoDTO creditExtInfo;
 
 	/**
 	 * 是否需要人脸核身
@@ -32,6 +38,13 @@ false：无需人脸核身
 	 */
 	@ApiField("rent_sign_info")
 	private RentDoSignInfoDTO rentSignInfo;
+
+	public RentCreditExtInfoDTO getCreditExtInfo() {
+		return this.creditExtInfo;
+	}
+	public void setCreditExtInfo(RentCreditExtInfoDTO creditExtInfo) {
+		this.creditExtInfo = creditExtInfo;
+	}
 
 	public Boolean getNeedFaceValidateFlag() {
 		return this.needFaceValidateFlag;

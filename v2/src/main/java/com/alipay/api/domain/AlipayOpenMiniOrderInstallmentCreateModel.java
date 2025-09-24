@@ -11,17 +11,24 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单分期
  *
  * @author auto create
- * @since 1.0, 2025-05-27 15:39:54
+ * @since 1.0, 2025-09-23 10:46:51
  */
 public class AlipayOpenMiniOrderInstallmentCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2192792148256284448L;
+	private static final long serialVersionUID = 1797437753119279379L;
 
 	/**
 	 * 续租场景分期数，当分期类型为RELET时，该字段必填，单位：期。
 	 */
 	@ApiField("addon_period_num")
 	private Long addonPeriodNum;
+
+	/**
+	 * 订单扩展属性信息
+	 */
+	@ApiListField("attr_ext_info_list")
+	@ApiField("attr_ext_info_d_t_o")
+	private List<AttrExtInfoDTO> attrExtInfoList;
 
 	/**
 	 * 当前分期数，与installment_no_info_list二选一
@@ -145,6 +152,13 @@ true:已完结
 	}
 	public void setAddonPeriodNum(Long addonPeriodNum) {
 		this.addonPeriodNum = addonPeriodNum;
+	}
+
+	public List<AttrExtInfoDTO> getAttrExtInfoList() {
+		return this.attrExtInfoList;
+	}
+	public void setAttrExtInfoList(List<AttrExtInfoDTO> attrExtInfoList) {
+		this.attrExtInfoList = attrExtInfoList;
 	}
 
 	public String getInstallmentNo() {

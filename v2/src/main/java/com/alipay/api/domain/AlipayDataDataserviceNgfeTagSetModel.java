@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 非淘系业务写入图灵实时标签
  *
  * @author auto create
- * @since 1.0, 2025-09-11 11:02:38
+ * @since 1.0, 2025-09-18 16:08:15
  */
 public class AlipayDataDataserviceNgfeTagSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4252655823736798725L;
+	private static final long serialVersionUID = 1238515727389479784L;
 
 	/**
 	 * 标签写入应用，用于鉴权, 业务方按实际填写

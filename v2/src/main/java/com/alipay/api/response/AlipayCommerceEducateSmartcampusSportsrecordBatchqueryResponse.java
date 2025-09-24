@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.smartcampus.sportsrecord.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-04 11:42:28
+ * @since 1.0, 2025-09-23 15:17:40
  */
 public class AlipayCommerceEducateSmartcampusSportsrecordBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2276189382352329295L;
+	private static final long serialVersionUID = 1394878459967236954L;
 
 	/** 
 	 * 是否有下一页

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.fincloud.finsaas.insurance.opensearch.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-17 14:00:57
+ * @since 1.0, 2025-09-23 16:52:40
  */
 public class DatadigitalFincloudFinsaasInsuranceOpensearchQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1573797811797819995L;
+	private static final long serialVersionUID = 6437449615481269715L;
 
 	/** 
 	 * 调试信息

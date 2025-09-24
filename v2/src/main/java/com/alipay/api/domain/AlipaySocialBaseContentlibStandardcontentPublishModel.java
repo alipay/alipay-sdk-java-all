@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 内容发布接口
  *
  * @author auto create
- * @since 1.0, 2025-09-11 10:23:04
+ * @since 1.0, 2025-09-19 11:27:51
  */
 public class AlipaySocialBaseContentlibStandardcontentPublishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3886331231278853619L;
+	private static final long serialVersionUID = 4497295743373174894L;
 
 	/**
 	 * 内容分发范围。1 - 所有人可见，2 - 分发范围受限。
@@ -58,6 +58,12 @@ public class AlipaySocialBaseContentlibStandardcontentPublishModel extends Alipa
 	@ApiListField("source_media_infos")
 	@ApiField("source_media_info")
 	private List<SourceMediaInfo> sourceMediaInfos;
+
+	/**
+	 * 音乐code，仅发布短图文类型内容时有效，传递值为 random 时表示在已上架的音乐库里随机选择一首音乐
+	 */
+	@ApiField("source_music_code")
+	private String sourceMusicCode;
 
 	/**
 	 * 内容关联服务，1个内容最多关联1个服务；offerId为关联的服务ID，支持小程序/小程序服务/优惠券活动/商品/小游戏
@@ -137,6 +143,13 @@ public class AlipaySocialBaseContentlibStandardcontentPublishModel extends Alipa
 	}
 	public void setSourceMediaInfos(List<SourceMediaInfo> sourceMediaInfos) {
 		this.sourceMediaInfos = sourceMediaInfos;
+	}
+
+	public String getSourceMusicCode() {
+		return this.sourceMusicCode;
+	}
+	public void setSourceMusicCode(String sourceMusicCode) {
+		this.sourceMusicCode = sourceMusicCode;
 	}
 
 	public List<SourceOffer> getSourceOffers() {

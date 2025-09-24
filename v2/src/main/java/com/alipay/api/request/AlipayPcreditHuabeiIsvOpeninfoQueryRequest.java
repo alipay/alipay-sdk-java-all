@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.huabei.isv.openinfo.query request
  * 
  * @author auto create
- * @since 1.0, 2024-01-30 15:52:00
+ * @since 1.0, 2025-09-18 13:42:22
  */
 public class AlipayPcreditHuabeiIsvOpeninfoQueryRequest implements AlipayRequest<AlipayPcreditHuabeiIsvOpeninfoQueryResponse> {
 

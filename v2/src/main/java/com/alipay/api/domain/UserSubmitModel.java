@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class UserSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7784348274846894229L;
+	private static final long serialVersionUID = 8458762231223452168L;
 
 	/**
 	 * 提交答案中每道题的具体答案数据

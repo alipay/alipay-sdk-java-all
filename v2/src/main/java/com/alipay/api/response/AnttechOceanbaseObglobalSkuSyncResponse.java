@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AnttechOceanbaseObglobalSkuSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1246392137967697716L;
+	private static final long serialVersionUID = 6719435114617912896L;
 
 	
 

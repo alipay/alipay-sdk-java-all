@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TransferCarUpdateData extends AlipayObject {
 
-	private static final long serialVersionUID = 1816633519414223259L;
+	private static final long serialVersionUID = 5734535661643724649L;
 
 	/**
 	 * 活动结束时间

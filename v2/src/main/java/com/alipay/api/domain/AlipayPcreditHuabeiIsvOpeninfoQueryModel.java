@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询服务商开放信息
  *
  * @author auto create
- * @since 1.0, 2024-01-30 15:48:31
+ * @since 1.0, 2025-09-18 13:42:22
  */
 public class AlipayPcreditHuabeiIsvOpeninfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4496364686173896449L;
+	private static final long serialVersionUID = 6387918299112193246L;
 
 	/**
 	 * 一次请求的唯一性标识,调用时需要保证在非重试类请求中不重复.

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * Rag召回的doc
  *
  * @author auto create
- * @since 1.0, 2025-07-24 21:30:34
+ * @since 1.0, 2025-09-23 16:47:53
  */
 public class OpenSearchDocBO extends AlipayObject {
 
-	private static final long serialVersionUID = 8474359948732517665L;
+	private static final long serialVersionUID = 8515135872332229845L;
 
 	/**
 	 * 短摘要
@@ -24,6 +24,12 @@ public class OpenSearchDocBO extends AlipayObject {
 	 */
 	@ApiField("channel")
 	private String channel;
+
+	/**
+	 * 原网页文本chunk
+	 */
+	@ApiField("chunk")
+	private String chunk;
 
 	/**
 	 * 搜索的原文内容
@@ -86,6 +92,18 @@ public class OpenSearchDocBO extends AlipayObject {
 	private String scaleScore;
 
 	/**
+	 * 摘要组
+	 */
+	@ApiField("search_doc_abstract")
+	private SearchDocAbstractBO searchDocAbstract;
+
+	/**
+	 * 分数组
+	 */
+	@ApiField("search_score_info")
+	private SearchScoreInfoBO searchScoreInfo;
+
+	/**
 	 * 来源信息
 	 */
 	@ApiField("source")
@@ -115,6 +133,13 @@ public class OpenSearchDocBO extends AlipayObject {
 	}
 	public void setChannel(String channel) {
 		this.channel = channel;
+	}
+
+	public String getChunk() {
+		return this.chunk;
+	}
+	public void setChunk(String chunk) {
+		this.chunk = chunk;
 	}
 
 	public String getDoc() {
@@ -185,6 +210,20 @@ public class OpenSearchDocBO extends AlipayObject {
 	}
 	public void setScaleScore(String scaleScore) {
 		this.scaleScore = scaleScore;
+	}
+
+	public SearchDocAbstractBO getSearchDocAbstract() {
+		return this.searchDocAbstract;
+	}
+	public void setSearchDocAbstract(SearchDocAbstractBO searchDocAbstract) {
+		this.searchDocAbstract = searchDocAbstract;
+	}
+
+	public SearchScoreInfoBO getSearchScoreInfo() {
+		return this.searchScoreInfo;
+	}
+	public void setSearchScoreInfo(SearchScoreInfoBO searchScoreInfo) {
+		this.searchScoreInfo = searchScoreInfo;
 	}
 
 	public String getSource() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppJfSignConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1218522882213592521L;
+	private static final long serialVersionUID = 4638381891644386555L;
 
 	/**
 	 * 签约户号

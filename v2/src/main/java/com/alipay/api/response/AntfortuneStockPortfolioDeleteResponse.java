@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntfortuneStockPortfolioDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6232525232968762171L;
+	private static final long serialVersionUID = 4294851296412274469L;
 
 	
 

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 收结易订单同步
  *
  * @author auto create
- * @since 1.0, 2025-08-13 14:26:39
+ * @since 1.0, 2025-09-22 10:55:08
  */
 public class AlipayTradeUnifiedsettleSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5228259483616145354L;
+	private static final long serialVersionUID = 7812817544476346535L;
 
 	/**
 	 * 收单模式，目前仅支持PLATFORM_BUSINESS
@@ -74,6 +74,12 @@ public class AlipayTradeUnifiedsettleSyncModel extends AlipayObject {
 	 */
 	@ApiField("product_code")
 	private String productCode;
+
+	/**
+	 * 退款同步时可选传入，包括退款相关的具体属性
+	 */
+	@ApiField("refund_info")
+	private UnifiedSettleRefundInfo refundInfo;
 
 	/**
 	 * 同步流水的类型，支付为PAY_SYNC，退款为REFUND_SYNC
@@ -161,6 +167,13 @@ public class AlipayTradeUnifiedsettleSyncModel extends AlipayObject {
 	}
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
+	}
+
+	public UnifiedSettleRefundInfo getRefundInfo() {
+		return this.refundInfo;
+	}
+	public void setRefundInfo(UnifiedSettleRefundInfo refundInfo) {
+		this.refundInfo = refundInfo;
 	}
 
 	public String getRequestType() {

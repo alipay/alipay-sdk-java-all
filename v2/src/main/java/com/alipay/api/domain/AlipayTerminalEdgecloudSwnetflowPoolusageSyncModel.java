@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayTerminalEdgecloudSwnetflowPoolusageSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3472557219119968921L;
+	private static final long serialVersionUID = 2564399473584551636L;
 
 	/**
 	 * 池套餐周期类型，例如年包，月包

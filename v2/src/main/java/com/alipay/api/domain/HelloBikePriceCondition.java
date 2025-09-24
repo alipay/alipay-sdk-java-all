@@ -16,7 +16,7 @@ card_type_left * coefficient_left >= card_type_right * coefficient_right
  */
 public class HelloBikePriceCondition extends AlipayObject {
 
-	private static final long serialVersionUID = 2388566852497936522L;
+	private static final long serialVersionUID = 7123847474332799518L;
 
 	/**
 	 * 算式左侧优惠卡类型，枚举值为 mcard,qcard,hycard,ycard,tcard

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚁盾内容识别
  *
  * @author auto create
- * @since 1.0, 2019-07-29 16:05:35
+ * @since 1.0, 2025-09-18 16:26:46
  */
 public class SsdataDataserviceRiskContentVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6178224812535128996L;
+	private static final long serialVersionUID = 6586335364444992665L;
 
 	/**
 	 * 需要识别的文本，不要包含特殊字符以及双引号等可能引起json格式化错误问题的字符

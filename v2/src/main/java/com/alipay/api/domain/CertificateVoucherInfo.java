@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CertificateVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8656885582778442859L;
+	private static final long serialVersionUID = 2325315859463198972L;
 
 	/**
 	 * 用户领取的券码code,支付宝商家券活动才会返回券码，其他优惠券活动该值为空

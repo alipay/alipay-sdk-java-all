@@ -10,11 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 回收商品同步服务
  *
  * @author auto create
- * @since 1.0, 2025-08-20 11:00:38
+ * @since 1.0, 2025-09-22 11:27:40
  */
 public class AlipayCommerceRecycleItemSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3775542925832559729L;
+	private static final long serialVersionUID = 1142526723977314591L;
+
+	/**
+	 * null
+	 */
+	@ApiListField("delivery_configs")
+	@ApiField("recycle_delivery_config_d_t_o")
+	private List<RecycleDeliveryConfigDTO> deliveryConfigs;
 
 	/**
 	 * 回收商进行产品（商品）变更时需要传入唯一的流水号
@@ -34,6 +41,13 @@ public class AlipayCommerceRecycleItemSyncModel extends AlipayObject {
 	@ApiListField("skus")
 	@ApiField("recycle_sku_d_t_o")
 	private List<RecycleSkuDTO> skus;
+
+	public List<RecycleDeliveryConfigDTO> getDeliveryConfigs() {
+		return this.deliveryConfigs;
+	}
+	public void setDeliveryConfigs(List<RecycleDeliveryConfigDTO> deliveryConfigs) {
+		this.deliveryConfigs = deliveryConfigs;
+	}
 
 	public String getOutBizId() {
 		return this.outBizId;

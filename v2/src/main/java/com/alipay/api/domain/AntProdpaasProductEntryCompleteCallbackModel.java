@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AntProdpaasProductEntryCompleteCallbackModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4833144636796233623L;
+	private static final long serialVersionUID = 8151218142682339775L;
 
 	/**
 	 * 实收数量

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenIotvspLogicgroupidQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3582526582164164119L;
+	private static final long serialVersionUID = 5628227228719854139L;
 
 	/**
 	 * ISV的PID

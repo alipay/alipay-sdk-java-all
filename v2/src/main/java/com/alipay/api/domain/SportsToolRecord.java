@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 智能体运动记录
  *
  * @author auto create
- * @since 1.0, 2025-06-04 11:40:33
+ * @since 1.0, 2025-09-23 14:06:49
  */
 public class SportsToolRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 5558559323252243547L;
+	private static final long serialVersionUID = 1424427252388671142L;
 
 	/**
 	 * 加速度传感器步频(步/min)
@@ -28,6 +28,18 @@ public class SportsToolRecord extends AlipayObject {
 	private String calorie;
 
 	/**
+	 * 支付宝客户端步数
+	 */
+	@ApiField("client_step")
+	private String clientStep;
+
+	/**
+	 * 支付宝客户端步频(步/min)
+	 */
+	@ApiField("client_step_frequency")
+	private String clientStepFrequency;
+
+	/**
 	 * 运动距离，单位米（可能为小数）
 	 */
 	@ApiField("distance")
@@ -38,6 +50,12 @@ public class SportsToolRecord extends AlipayObject {
 	 */
 	@ApiField("duration")
 	private String duration;
+
+	/**
+	 * 运动结束步数
+	 */
+	@ApiField("end_step")
+	private String endStep;
 
 	/**
 	 * 结束时人脸核验通过
@@ -124,6 +142,12 @@ public class SportsToolRecord extends AlipayObject {
 	private Boolean startFaceVerifyPass;
 
 	/**
+	 * 运动开始步数
+	 */
+	@ApiField("start_step")
+	private String startStep;
+
+	/**
 	 * 运动开始时间
 	 */
 	@ApiField("start_time")
@@ -167,6 +191,20 @@ public class SportsToolRecord extends AlipayObject {
 		this.calorie = calorie;
 	}
 
+	public String getClientStep() {
+		return this.clientStep;
+	}
+	public void setClientStep(String clientStep) {
+		this.clientStep = clientStep;
+	}
+
+	public String getClientStepFrequency() {
+		return this.clientStepFrequency;
+	}
+	public void setClientStepFrequency(String clientStepFrequency) {
+		this.clientStepFrequency = clientStepFrequency;
+	}
+
 	public String getDistance() {
 		return this.distance;
 	}
@@ -179,6 +217,13 @@ public class SportsToolRecord extends AlipayObject {
 	}
 	public void setDuration(String duration) {
 		this.duration = duration;
+	}
+
+	public String getEndStep() {
+		return this.endStep;
+	}
+	public void setEndStep(String endStep) {
+		this.endStep = endStep;
 	}
 
 	public Boolean getFinishFaceVerifyPass() {
@@ -277,6 +322,13 @@ public class SportsToolRecord extends AlipayObject {
 	}
 	public void setStartFaceVerifyPass(Boolean startFaceVerifyPass) {
 		this.startFaceVerifyPass = startFaceVerifyPass;
+	}
+
+	public String getStartStep() {
+		return this.startStep;
+	}
+	public void setStartStep(String startStep) {
+		this.startStep = startStep;
 	}
 
 	public Date getStartTime() {

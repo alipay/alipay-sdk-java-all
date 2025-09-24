@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.credit.refund.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-07 16:02:35
+ * @since 1.0, 2025-09-19 17:42:19
  */
 public class AlipayTradeCreditRefundQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8438957623697325553L;
+	private static final long serialVersionUID = 8288768612626268425L;
 
 	/** 
 	 * 信用单号

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KbpFundTool extends AlipayObject {
 
-	private static final long serialVersionUID = 6338184319125541753L;
+	private static final long serialVersionUID = 4453566769916964282L;
 
 	/**
 	 * 非现金类支付明细抵扣金额；单位：分；字符类型必须为正整数格式

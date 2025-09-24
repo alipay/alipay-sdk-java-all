@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class UserVoucherBaseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4883984713271883812L;
+	private static final long serialVersionUID = 5372485458422722541L;
 
 	/**
 	 * 若商家券操作过关联商户订单信息，则该字段返回商家券已关联的商户订单号。

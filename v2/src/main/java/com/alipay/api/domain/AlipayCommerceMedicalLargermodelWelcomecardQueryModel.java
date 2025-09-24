@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 首页maga投放及问题推荐
  *
  * @author auto create
- * @since 1.0, 2025-09-09 13:37:07
+ * @since 1.0, 2025-09-22 14:48:25
  */
 public class AlipayCommerceMedicalLargermodelWelcomecardQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4424658953946425875L;
+	private static final long serialVersionUID = 1313585797322815646L;
 
 	/**
 	 * 用户城市编码
 	 */
 	@ApiField("city_code")
 	private String cityCode;
+
+	/**
+	 * 预览的请求必填，正式的不用填
+	 */
+	@ApiField("config_id")
+	private String configId;
 
 	/**
 	 * 纬度
@@ -66,6 +72,13 @@ public class AlipayCommerceMedicalLargermodelWelcomecardQueryModel extends Alipa
 	}
 	public void setCityCode(String cityCode) {
 		this.cityCode = cityCode;
+	}
+
+	public String getConfigId() {
+		return this.configId;
+	}
+	public void setConfigId(String configId) {
+		this.configId = configId;
 	}
 
 	public String getLatitude() {

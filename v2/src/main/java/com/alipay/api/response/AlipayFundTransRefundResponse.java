@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundTransRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5785876632512677986L;
+	private static final long serialVersionUID = 2315175564811511585L;
 
 	/** 
 	 * 发红包时支付宝返回的支付宝订单号order_id。

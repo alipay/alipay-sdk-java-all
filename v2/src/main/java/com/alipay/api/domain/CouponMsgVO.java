@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 优惠券消息内容
  *
  * @author auto create
- * @since 1.0, 2024-12-13 10:25:51
+ * @since 1.0, 2025-09-23 14:37:45
  */
 public class CouponMsgVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1518581684741955636L;
+	private static final long serialVersionUID = 4458482342528356269L;
 
 	/**
 	 * 活动id，即券id

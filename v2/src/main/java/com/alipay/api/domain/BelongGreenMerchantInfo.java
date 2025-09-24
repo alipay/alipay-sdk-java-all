@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BelongGreenMerchantInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4141295581899526259L;
+	private static final long serialVersionUID = 4445218426812611283L;
 
 	/**
 	 * 合作业务类型. 枚举值如下： 

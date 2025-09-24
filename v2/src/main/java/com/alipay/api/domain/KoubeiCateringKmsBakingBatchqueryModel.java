@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KoubeiCateringKmsBakingBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2238497356527362747L;
+	private static final long serialVersionUID = 4453196676317882338L;
 
 	/**
 	 * 预测日期，目前只支持预测当天日期

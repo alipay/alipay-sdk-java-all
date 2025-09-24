@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppIndustryCommunityDeliveryrecentorderDetectResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2173144573795463452L;
+	private static final long serialVersionUID = 2316361631934172248L;
 
 	/** 
 	 * 与平台方合作，通过个人手机号或者身份信息，查询个人是否为该平台骑手身份以及在指定区域和时间范围内是否有订单。

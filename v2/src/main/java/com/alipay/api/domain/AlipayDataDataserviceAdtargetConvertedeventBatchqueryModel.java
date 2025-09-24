@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataDataserviceAdtargetConvertedeventBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7271162556677665277L;
+	private static final long serialVersionUID = 6478935437941183585L;
 
 	/**
 	 * 该参数表明计划id，可通过计划查询接口获取，或通过计划创建接口的返回值中获取

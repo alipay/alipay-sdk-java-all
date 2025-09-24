@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 渠道扩展信息
  *
  * @author auto create
- * @since 1.0, 2025-08-15 16:00:34
+ * @since 1.0, 2025-09-18 21:24:23
  */
 public class ChannelDetailParams extends AlipayObject {
 
-	private static final long serialVersionUID = 5145314281493212382L;
+	private static final long serialVersionUID = 8692688739939971195L;
 
 	/**
 	 * 预付卡分组名称
@@ -24,6 +24,18 @@ public class ChannelDetailParams extends AlipayObject {
 	 */
 	@ApiField("credit_risk_info")
 	private String creditRiskInfo;
+
+	/**
+	 * 国家贴息
+	 */
+	@ApiField("gov_subsidy")
+	private String govSubsidy;
+
+	/**
+	 * 银行贴息
+	 */
+	@ApiField("inst_subsidy")
+	private String instSubsidy;
 
 	/**
 	 * 芝麻人群标签
@@ -55,6 +67,20 @@ public class ChannelDetailParams extends AlipayObject {
 	}
 	public void setCreditRiskInfo(String creditRiskInfo) {
 		this.creditRiskInfo = creditRiskInfo;
+	}
+
+	public String getGovSubsidy() {
+		return this.govSubsidy;
+	}
+	public void setGovSubsidy(String govSubsidy) {
+		this.govSubsidy = govSubsidy;
+	}
+
+	public String getInstSubsidy() {
+		return this.instSubsidy;
+	}
+	public void setInstSubsidy(String instSubsidy) {
+		this.instSubsidy = instSubsidy;
 	}
 
 	public String getMarketingFlag() {

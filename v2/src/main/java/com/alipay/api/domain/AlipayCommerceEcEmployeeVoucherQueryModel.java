@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 员工券列表查询
  *
  * @author auto create
- * @since 1.0, 2025-05-20 10:43:36
+ * @since 1.0, 2025-09-23 16:44:29
  */
 public class AlipayCommerceEcEmployeeVoucherQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1483432777839982486L;
+	private static final long serialVersionUID = 4462855758383591213L;
 
 	/**
 	 * 活动id

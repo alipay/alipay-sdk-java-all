@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DefaultInCartInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1741871465867711645L;
+	private static final long serialVersionUID = 2281337958269774815L;
 
 	/**
 	 * 如果不设置就餐人数，该字段必填，代表开台菜的默认必点数量。

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.ngfe.tag.set response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-12 16:22:15
+ * @since 1.0, 2025-09-18 16:12:40
  */
 public class AlipayDataDataserviceNgfeTagSetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2874262963657513943L;
+	private static final long serialVersionUID = 6782516665647771531L;
 
 	
 

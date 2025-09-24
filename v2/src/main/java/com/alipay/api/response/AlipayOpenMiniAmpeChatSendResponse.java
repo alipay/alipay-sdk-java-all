@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenMiniAmpeChatSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5712978655598455834L;
+	private static final long serialVersionUID = 6467845296888265932L;
 
 	/** 
 	 * 对话服务的回答，经过编码的字符串，只需要将该响应字符串交由支付宝客户端处理即可。

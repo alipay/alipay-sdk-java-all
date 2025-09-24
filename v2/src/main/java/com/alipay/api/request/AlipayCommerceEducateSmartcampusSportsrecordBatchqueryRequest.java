@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.smartcampus.sportsrecord.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2025-06-04 11:42:28
+ * @since 1.0, 2025-09-23 15:17:40
  */
 public class AlipayCommerceEducateSmartcampusSportsrecordBatchqueryRequest implements AlipayRequest<AlipayCommerceEducateSmartcampusSportsrecordBatchqueryResponse> {
 

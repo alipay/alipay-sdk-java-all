@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOfflineNbinteractSceneQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2534243235847511582L;
+	private static final long serialVersionUID = 4734598926264725755L;
 
 	/**
 	 * 碰一下互动跳转链接所属类型,从枚举中选择,不填写则查询该设备所有互动绑定关系

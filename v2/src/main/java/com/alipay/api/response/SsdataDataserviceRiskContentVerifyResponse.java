@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ssdata.dataservice.risk.content.verify response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-13 14:42:42
+ * @since 1.0, 2025-09-18 16:26:46
  */
 public class SsdataDataserviceRiskContentVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8639395721969421113L;
+	private static final long serialVersionUID = 5235945158434719984L;
 
 	/** 
 	 * 对应传入的每一种风险类型的所有风险识别结果

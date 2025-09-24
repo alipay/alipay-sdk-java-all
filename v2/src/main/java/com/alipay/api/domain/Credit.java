@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 授信信息
  *
  * @author auto create
- * @since 1.0, 2025-05-08 14:48:56
+ * @since 1.0, 2025-09-18 16:03:34
  */
 public class Credit extends AlipayObject {
 
-	private static final long serialVersionUID = 2672815121378931545L;
+	private static final long serialVersionUID = 7732623481317522262L;
 
 	/**
 	 * 客户授信金额，单位分

@@ -10,11 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单详细数据
  *
  * @author auto create
- * @since 1.0, 2024-09-29 21:27:45
+ * @since 1.0, 2025-09-18 19:07:22
  */
 public class OrderDetailInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2734924933528881339L;
+	private static final long serialVersionUID = 3448753231643116873L;
+
+	/**
+	 * 业务自定义标签属性
+	 */
+	@ApiListField("business_order_tag_info_list")
+	@ApiField("attr_ext_info_d_t_o")
+	private List<AttrExtInfoDTO> businessOrderTagInfoList;
 
 	/**
 	 * 拼团信息
@@ -58,6 +65,13 @@ public class OrderDetailInfoVO extends AlipayObject {
 	 */
 	@ApiField("promo_info")
 	private PromoInfoVO promoInfo;
+
+	public List<AttrExtInfoDTO> getBusinessOrderTagInfoList() {
+		return this.businessOrderTagInfoList;
+	}
+	public void setBusinessOrderTagInfoList(List<AttrExtInfoDTO> businessOrderTagInfoList) {
+		this.businessOrderTagInfoList = businessOrderTagInfoList;
+	}
 
 	public GroupBuyInfo getGroupBuyInfo() {
 		return this.groupBuyInfo;

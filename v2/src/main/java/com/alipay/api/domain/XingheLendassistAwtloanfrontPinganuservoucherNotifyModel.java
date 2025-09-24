@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class XingheLendassistAwtloanfrontPinganuservoucherNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7268676849812168179L;
+	private static final long serialVersionUID = 4726755852315126111L;
 
 	/**
 	 * 利息抵扣券核销时间，格式：yyyy-MM-dd HH:mm:ss

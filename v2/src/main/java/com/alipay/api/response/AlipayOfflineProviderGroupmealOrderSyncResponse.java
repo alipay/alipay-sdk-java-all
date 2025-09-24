@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.provider.groupmeal.order.sync response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-16 15:42:39
+ * @since 1.0, 2025-09-23 14:14:33
  */
 public class AlipayOfflineProviderGroupmealOrderSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7774968793724938735L;
+	private static final long serialVersionUID = 3338115875221423286L;
 
 	/** 
 	 * 订单同步成功后产生的支付宝订单号

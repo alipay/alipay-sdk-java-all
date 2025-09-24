@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 上传服务商开放信息
  *
  * @author auto create
- * @since 1.0, 2024-01-30 15:49:26
+ * @since 1.0, 2025-09-22 11:03:44
  */
 public class AlipayPcreditHuabeiIsvOpeninfoCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1743827623954973565L;
+	private static final long serialVersionUID = 5868224867662823439L;
 
 	/**
 	 * 扩展字段,用于后续其它一些定制化需求.

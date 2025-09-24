@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EcoContractDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6489165676246897926L;
+	private static final long serialVersionUID = 2276433396755239791L;
 
 	/**
 	 * 该电子借条是否使用了免费的份额，true代表该份使用了免费份额，false代表未使用免费份额

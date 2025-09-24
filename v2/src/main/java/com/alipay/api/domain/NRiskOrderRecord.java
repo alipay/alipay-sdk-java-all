@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NRiskOrderRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 4749555888172372839L;
+	private static final long serialVersionUID = 3819616562643392694L;
 
 	/**
 	 * 描叙事件的唯一编号

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KbdishPracticeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6593945678656535432L;
+	private static final long serialVersionUID = 7649827491283212536L;
 
 	/**
 	 * 口碑的菜品id

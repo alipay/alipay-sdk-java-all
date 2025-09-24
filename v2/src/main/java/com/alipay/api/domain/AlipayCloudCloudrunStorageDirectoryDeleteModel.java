@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCloudCloudrunStorageDirectoryDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5289918512299866652L;
+	private static final long serialVersionUID = 5374663655858517546L;
 
 	/**
 	 * 要删除的文件名称

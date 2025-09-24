@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceDataCampaignCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4199588255981776816L;
+	private static final long serialVersionUID = 3712416232819454696L;
 
 	/**
 	 * 集点活动任务完成时用户得到的集点奖品名称，用于在服务提醒消息中进行展示

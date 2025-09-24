@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoMycarRentcarMerchantCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3639776188881163453L;
+	private static final long serialVersionUID = 2815925217396716145L;
 
 	/**
 	 * 取消原因

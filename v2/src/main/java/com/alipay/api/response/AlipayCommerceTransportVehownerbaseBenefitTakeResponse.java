@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.vehownerbase.benefit.take response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-09 16:37:06
+ * @since 1.0, 2025-09-24 10:52:40
  */
 public class AlipayCommerceTransportVehownerbaseBenefitTakeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3217213916621944873L;
+	private static final long serialVersionUID = 7432583247921598469L;
 
 	/** 
 	 * 权益发放组件集

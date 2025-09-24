@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发券规则
  *
  * @author auto create
- * @since 1.0, 2025-04-23 17:31:16
+ * @since 1.0, 2025-09-23 19:29:13
  */
 public class VoucherSendRuleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5441413116238498933L;
+	private static final long serialVersionUID = 1585437244512393262L;
 
 	/**
 	 * 设置此字段，允许指定单天最大发券数量。
@@ -58,6 +58,12 @@ public class VoucherSendRuleInfo extends AlipayObject {
 	private Long quantity;
 
 	/**
+	 * 每人每日可领取数量限制，填0或者不填表示不限制。
+	 */
+	@ApiField("quantity_day_limit_per_user")
+	private Long quantityDayLimitPerUser;
+
+	/**
 	 * 每人领取限制。 默认按照支付宝账号进行领取限制; 不填写或填入0表示没有领取限制.
 	 */
 	@ApiField("quantity_limit_per_user")
@@ -68,6 +74,18 @@ public class VoucherSendRuleInfo extends AlipayObject {
 	 */
 	@ApiField("quantity_limit_per_user_period_type")
 	private String quantityLimitPerUserPeriodType;
+
+	/**
+	 * 每人每月可领取数量限制，填0或者不填表示不限制
+	 */
+	@ApiField("quantity_month_limit_per_user")
+	private Long quantityMonthLimitPerUser;
+
+	/**
+	 * 每人每周可领取数量限制，填0或者不填表示不限制
+	 */
+	@ApiField("quantity_week_limit_per_user")
+	private Long quantityWeekLimitPerUser;
 
 	/**
 	 * 限制支付宝实名用户才能领取支付券,默认为false表示不限制 枚举值 true\false
@@ -124,6 +142,13 @@ public class VoucherSendRuleInfo extends AlipayObject {
 		this.quantity = quantity;
 	}
 
+	public Long getQuantityDayLimitPerUser() {
+		return this.quantityDayLimitPerUser;
+	}
+	public void setQuantityDayLimitPerUser(Long quantityDayLimitPerUser) {
+		this.quantityDayLimitPerUser = quantityDayLimitPerUser;
+	}
+
 	public Long getQuantityLimitPerUser() {
 		return this.quantityLimitPerUser;
 	}
@@ -136,6 +161,20 @@ public class VoucherSendRuleInfo extends AlipayObject {
 	}
 	public void setQuantityLimitPerUserPeriodType(String quantityLimitPerUserPeriodType) {
 		this.quantityLimitPerUserPeriodType = quantityLimitPerUserPeriodType;
+	}
+
+	public Long getQuantityMonthLimitPerUser() {
+		return this.quantityMonthLimitPerUser;
+	}
+	public void setQuantityMonthLimitPerUser(Long quantityMonthLimitPerUser) {
+		this.quantityMonthLimitPerUser = quantityMonthLimitPerUser;
+	}
+
+	public Long getQuantityWeekLimitPerUser() {
+		return this.quantityWeekLimitPerUser;
+	}
+	public void setQuantityWeekLimitPerUser(Long quantityWeekLimitPerUser) {
+		this.quantityWeekLimitPerUser = quantityWeekLimitPerUser;
 	}
 
 	public Boolean getRealNameLimit() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 证券用户投放内容详情查询
  *
  * @author auto create
- * @since 1.0, 2024-09-19 17:40:30
+ * @since 1.0, 2025-09-24 11:06:12
  */
 public class AntfortuneStockCustomerDeliverydetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6716611534422691834L;
+	private static final long serialVersionUID = 8773797352659335978L;
 
 	/**
 	 * 签约协议号（uid在某个机构处的唯一标识）

@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class XingheLendassistCarfinFollowupstatuschangeNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3612976822955374368L;
+	private static final long serialVersionUID = 3732471132564626127L;
 
 	/**
 	 * 星河侧唯一申请单号

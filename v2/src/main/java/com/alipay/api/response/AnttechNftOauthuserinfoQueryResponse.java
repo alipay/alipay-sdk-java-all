@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.nft.oauthuserinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-17 17:42:27
+ * @since 1.0, 2025-09-23 19:31:58
  */
 public class AnttechNftOauthuserinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1752141913348791378L;
+	private static final long serialVersionUID = 3863377163657192763L;
 
 	/** 
 	 * 头像链接

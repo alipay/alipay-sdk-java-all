@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ZhimaCustomerLiferecordQuitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3543424984386268567L;
+	private static final long serialVersionUID = 3757178166241663118L;
 
 	/**
 	 * 操作枚举

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PrscVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4397692674512281312L;
+	private static final long serialVersionUID = 1231767328286497124L;
 
 	/**
 	 * 订单渠道

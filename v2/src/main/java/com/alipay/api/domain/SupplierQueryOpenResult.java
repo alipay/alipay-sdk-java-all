@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用于查询供应商信息
  *
  * @author auto create
- * @since 1.0, 2025-04-22 15:37:52
+ * @since 1.0, 2025-09-18 14:18:19
  */
 public class SupplierQueryOpenResult extends AlipayObject {
 
-	private static final long serialVersionUID = 3515713418753397638L;
+	private static final long serialVersionUID = 5356377476824851362L;
 
 	/**
 	 * 支付宝账号类型
@@ -24,6 +24,12 @@ public class SupplierQueryOpenResult extends AlipayObject {
 	 */
 	@ApiField("supplier_account_no")
 	private String supplierAccountNo;
+
+	/**
+	 * 供应商ID
+	 */
+	@ApiField("supplier_id")
+	private String supplierId;
 
 	/**
 	 * 供应商姓名
@@ -49,6 +55,13 @@ public class SupplierQueryOpenResult extends AlipayObject {
 	}
 	public void setSupplierAccountNo(String supplierAccountNo) {
 		this.supplierAccountNo = supplierAccountNo;
+	}
+
+	public String getSupplierId() {
+		return this.supplierId;
+	}
+	public void setSupplierId(String supplierId) {
+		this.supplierId = supplierId;
 	}
 
 	public String getSupplierName() {

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 批量查询跑步记录
  *
  * @author auto create
- * @since 1.0, 2025-06-04 11:40:33
+ * @since 1.0, 2025-09-23 15:16:06
  */
 public class AlipayCommerceEducateSmartcampusSportsrecordBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8399485485855769955L;
+	private static final long serialVersionUID = 6241659791471542723L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 定价信息
  *
  * @author auto create
- * @since 1.0, 2025-05-08 14:48:56
+ * @since 1.0, 2025-09-18 16:03:33
  */
 public class CreditPricing extends AlipayObject {
 
-	private static final long serialVersionUID = 3857726199918246925L;
+	private static final long serialVersionUID = 3732337214856524216L;
 
 	/**
 	 * 金额，单位分
@@ -24,6 +24,12 @@ public class CreditPricing extends AlipayObject {
 	 */
 	@ApiField("default_credit_pricing")
 	private Boolean defaultCreditPricing;
+
+	/**
+	 * 资金利率，如为8%，则为0.08
+	 */
+	@ApiField("funding_rate")
+	private String fundingRate;
 
 	/**
 	 * 年利率，如为8%，则为0.08
@@ -49,6 +55,12 @@ public class CreditPricing extends AlipayObject {
 	@ApiField("repay_type")
 	private String repayType;
 
+	/**
+	 * 担保费率，如为8%，则为0.08
+	 */
+	@ApiField("serv_rate")
+	private String servRate;
+
 	public Long getAmount() {
 		return this.amount;
 	}
@@ -61,6 +73,13 @@ public class CreditPricing extends AlipayObject {
 	}
 	public void setDefaultCreditPricing(Boolean defaultCreditPricing) {
 		this.defaultCreditPricing = defaultCreditPricing;
+	}
+
+	public String getFundingRate() {
+		return this.fundingRate;
+	}
+	public void setFundingRate(String fundingRate) {
+		this.fundingRate = fundingRate;
 	}
 
 	public String getIntRate() {
@@ -89,6 +108,13 @@ public class CreditPricing extends AlipayObject {
 	}
 	public void setRepayType(String repayType) {
 		this.repayType = repayType;
+	}
+
+	public String getServRate() {
+		return this.servRate;
+	}
+	public void setServRate(String servRate) {
+		this.servRate = servRate;
 	}
 
 }

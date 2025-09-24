@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MediaReportDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 2666789215679154557L;
+	private static final long serialVersionUID = 5839989665824582199L;
 
 	/**
 	 * 广告位id，如：2023xxxxxxx
