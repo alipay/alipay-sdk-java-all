@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class DatadigitalAnttechLoadForecastQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4853154534261412453L;
+	private static final long serialVersionUID = 7851354673599429573L;
 
 	/**
 	 * 蚂蚁数科气象服务产品码，找蚂蚁数科运营同学获取

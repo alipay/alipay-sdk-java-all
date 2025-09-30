@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFincoreComplianceSignStatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2714375663126274465L;
+	private static final long serialVersionUID = 7781985799671193333L;
 
 	/** 
 	 * 用印归档文件下载地址，有效期12小时

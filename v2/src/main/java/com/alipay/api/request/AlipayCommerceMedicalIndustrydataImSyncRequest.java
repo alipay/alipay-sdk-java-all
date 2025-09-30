@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.industrydata.im.sync request
  * 
  * @author auto create
- * @since 1.0, 2025-09-11 17:33:50
+ * @since 1.0, 2025-09-25 11:27:41
  */
 public class AlipayCommerceMedicalIndustrydataImSyncRequest implements AlipayRequest<AlipayCommerceMedicalIndustrydataImSyncResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.customer.pointbalance.query request
  * 
  * @author auto create
- * @since 1.0, 2025-09-23 15:02:19
+ * @since 1.0, 2025-09-24 16:27:40
  */
 public class ZhimaCustomerPointbalanceQueryRequest implements AlipayRequest<ZhimaCustomerPointbalanceQueryResponse> {
 

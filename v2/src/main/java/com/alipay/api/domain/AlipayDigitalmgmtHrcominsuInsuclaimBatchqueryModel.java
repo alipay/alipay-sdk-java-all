@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页查询理赔报案数据
  *
  * @author auto create
- * @since 1.0, 2023-07-28 17:46:21
+ * @since 1.0, 2025-09-28 19:36:25
  */
 public class AlipayDigitalmgmtHrcominsuInsuclaimBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4733345226735317862L;
+	private static final long serialVersionUID = 7375762287721334989L;
 
 	/**
 	 * current_page+不唯一+供应商查询未提交给理赔公司的，理赔状态为进行中的理赔报案数据+枚举值(无)+员工申请理赔+特殊说明(无)

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 人才就业岗位应聘信息同步
  *
  * @author auto create
- * @since 1.0, 2024-06-14 11:14:51
+ * @since 1.0, 2025-09-26 17:19:25
  */
 public class AlipayEbppIndustryJobApplySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2824292876622485431L;
+	private static final long serialVersionUID = 4862194214483555754L;
 
 	/**
 	 * 应聘信息最新更新时间
@@ -52,6 +52,12 @@ public class AlipayEbppIndustryJobApplySyncModel extends AlipayObject {
 	 */
 	@ApiField("biz_id")
 	private String bizId;
+
+	/**
+	 * 描述数据来源渠道
+	 */
+	@ApiField("channel")
+	private String channel;
 
 	/**
 	 * 用于记录面试地点信息
@@ -116,6 +122,13 @@ public class AlipayEbppIndustryJobApplySyncModel extends AlipayObject {
 	}
 	public void setBizId(String bizId) {
 		this.bizId = bizId;
+	}
+
+	public String getChannel() {
+		return this.channel;
+	}
+	public void setChannel(String channel) {
+		this.channel = channel;
 	}
 
 	public String getInterAddress() {

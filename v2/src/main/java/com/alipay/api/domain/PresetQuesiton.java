@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PresetQuesiton extends AlipayObject {
 
-	private static final long serialVersionUID = 4157544641115944843L;
+	private static final long serialVersionUID = 7378111424935462393L;
 
 	/**
 	 * 问题的父id

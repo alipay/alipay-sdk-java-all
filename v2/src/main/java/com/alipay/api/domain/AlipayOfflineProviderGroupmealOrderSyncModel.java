@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * N设备碰一下就餐订单上报
  *
  * @author auto create
- * @since 1.0, 2025-09-16 15:39:34
+ * @since 1.0, 2025-09-29 15:17:43
  */
 public class AlipayOfflineProviderGroupmealOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3188621991821562191L;
+	private static final long serialVersionUID = 6835692224338125673L;
 
 	/**
 	 * 开通企业码后的共享账户ID

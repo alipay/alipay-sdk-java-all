@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenAgentVesionPreviewModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6667269312513827753L;
+	private static final long serialVersionUID = 5756616113631762393L;
 
 	/**
 	 * 智能体版本号

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserCertifyMfvSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5758886943595392743L;
+	private static final long serialVersionUID = 4729635928392399457L;
 
 	/** 
 	 * extend_map是核验的扩展数据，根据不同的scene_id，返回的数据不同。

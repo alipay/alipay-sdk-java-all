@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceMedicalStoreBusinesstimeModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5884838254857814275L;
+	private static final long serialVersionUID = 6474439628172468151L;
 
 	/**
 	 * 门店营业时间

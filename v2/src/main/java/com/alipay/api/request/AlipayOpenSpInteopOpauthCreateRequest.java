@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.sp.inteop.opauth.create request
  * 
  * @author auto create
- * @since 1.0, 2025-09-02 15:12:38
+ * @since 1.0, 2025-09-25 16:52:58
  */
 public class AlipayOpenSpInteopOpauthCreateRequest implements AlipayRequest<AlipayOpenSpInteopOpauthCreateResponse> {
 

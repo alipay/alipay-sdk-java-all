@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenMiniAmpeProductCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6793732952896775622L;
+	private static final long serialVersionUID = 7677836214254883775L;
 
 	/** 
 	 * 创建成功生成的productId

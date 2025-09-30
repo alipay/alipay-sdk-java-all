@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DataCount extends AlipayObject {
 
-	private static final long serialVersionUID = 1797322129328375684L;
+	private static final long serialVersionUID = 1445477636978828982L;
 
 	/**
 	 * 高亮文本

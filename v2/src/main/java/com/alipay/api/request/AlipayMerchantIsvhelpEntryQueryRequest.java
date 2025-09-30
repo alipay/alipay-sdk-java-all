@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.isvhelp.entry.query request
  * 
  * @author auto create
- * @since 1.0, 2024-08-06 18:15:59
+ * @since 1.0, 2025-09-29 20:22:39
  */
 public class AlipayMerchantIsvhelpEntryQueryRequest implements AlipayRequest<AlipayMerchantIsvhelpEntryQueryResponse> {
 

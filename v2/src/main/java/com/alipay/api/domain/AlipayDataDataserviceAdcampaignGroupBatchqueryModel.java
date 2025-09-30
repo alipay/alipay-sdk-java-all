@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询单元列表
  *
  * @author auto create
- * @since 1.0, 2025-07-15 19:27:43
+ * @since 1.0, 2025-09-28 20:36:46
  */
 public class AlipayDataDataserviceAdcampaignGroupBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4439861387864692547L;
+	private static final long serialVersionUID = 3481352856121792581L;
 
 	/**
 	 * 出价方式类型

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class Room extends AlipayObject {
 
-	private static final long serialVersionUID = 6143688432795694349L;
+	private static final long serialVersionUID = 3443694721884448913L;
 
 	/**
 	 * 出行人信息

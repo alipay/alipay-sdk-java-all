@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEbppIndustryRecruitSettlementSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8684992113665556553L;
+	private static final long serialVersionUID = 5137488343676745132L;
 
 	/**
 	 * 实际工时；当前结算单对应的实际工时，（单位：小时），例如：8小时 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserAccountInfoTaobaoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4891286947842397984L;
+	private static final long serialVersionUID = 6247956594318155272L;
 
 	/** 
 	 * alipay_user_id+是+手淘端内绑定支付宝账号+无+token获取+无

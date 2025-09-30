@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayTerminalEdgecloudHeyagentCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4842699492915273911L;
+	private static final long serialVersionUID = 4249449883981882894L;
 
 	/**
 	 * 本次绘话的ID

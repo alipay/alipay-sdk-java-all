@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.jump.tab.apply request
  * 
  * @author auto create
- * @since 1.0, 2025-09-23 20:42:39
+ * @since 1.0, 2025-09-24 22:12:39
  */
 public class AlipayCommerceMedicalJumpTabApplyRequest implements AlipayRequest<AlipayCommerceMedicalJumpTabApplyResponse> {
 

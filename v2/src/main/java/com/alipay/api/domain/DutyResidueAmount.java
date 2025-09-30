@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商保支付-查询用户保单信息-责任剩余保额
  *
  * @author auto create
- * @since 1.0, 2025-03-05 11:30:46
+ * @since 1.0, 2025-09-29 10:24:07
  */
 public class DutyResidueAmount extends AlipayObject {
 
-	private static final long serialVersionUID = 5275427127489157428L;
+	private static final long serialVersionUID = 6111489589988133483L;
 
 	/**
 	 * 理赔责任编码
@@ -36,6 +36,12 @@ public class DutyResidueAmount extends AlipayObject {
 	 */
 	@ApiField("duty_residue_amount")
 	private String dutyResidueAmount;
+
+	/**
+	 * 等待期
+	 */
+	@ApiField("waiting_period")
+	private String waitingPeriod;
 
 	public String getClaimDutyCode() {
 		return this.claimDutyCode;
@@ -63,6 +69,13 @@ public class DutyResidueAmount extends AlipayObject {
 	}
 	public void setDutyResidueAmount(String dutyResidueAmount) {
 		this.dutyResidueAmount = dutyResidueAmount;
+	}
+
+	public String getWaitingPeriod() {
+		return this.waitingPeriod;
+	}
+	public void setWaitingPeriod(String waitingPeriod) {
+		this.waitingPeriod = waitingPeriod;
 	}
 
 }

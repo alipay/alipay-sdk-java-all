@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * im医生回复消息
  *
  * @author auto create
- * @since 1.0, 2025-04-14 15:33:22
+ * @since 1.0, 2025-09-25 11:25:44
  */
 public class AlipayCommerceMedicalIndustrydataImSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7814396988471517254L;
+	private static final long serialVersionUID = 8445112595681539112L;
 
 	/**
 	 * 内部im会话chatId

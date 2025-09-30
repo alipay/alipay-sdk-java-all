@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BusinessDistrictInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4392993679692736175L;
+	private static final long serialVersionUID = 2114695579729931471L;
 
 	/**
 	 * 是否可被绑定;值是false,unbindable_error_code和unbindable_error_msg会有对应不可绑定的错误code和错误信息

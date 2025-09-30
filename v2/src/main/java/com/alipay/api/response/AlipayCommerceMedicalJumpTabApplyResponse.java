@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.jump.tab.apply response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-23 20:42:39
+ * @since 1.0, 2025-09-24 22:12:39
  */
 public class AlipayCommerceMedicalJumpTabApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2147371551526858643L;
+	private static final long serialVersionUID = 3586112646299177873L;
 
 	/** 
 	 * tab4建联的链接

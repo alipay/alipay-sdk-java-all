@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.dataservice.adentitylibrary.serviceentity.query request
  * 
  * @author auto create
- * @since 1.0, 2025-09-04 10:17:38
+ * @since 1.0, 2025-09-25 12:00:27
  */
 public class AlipayDataDataserviceAdentitylibraryServiceentityQueryRequest implements AlipayRequest<AlipayDataDataserviceAdentitylibraryServiceentityQueryResponse> {
 

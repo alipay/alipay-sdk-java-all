@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.customer.creditinfo.authaward.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-27 20:52:36
+ * @since 1.0, 2025-09-26 11:17:41
  */
 public class ZhimaCustomerCreditinfoAuthawardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4556135739368258452L;
+	private static final long serialVersionUID = 5215253857228178257L;
 
 	/** 
 	 * 当auth=true时，才会返回奖励相关信息

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MerchantPromoDetailInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2536475253653982787L;
+	private static final long serialVersionUID = 1511964337465918156L;
 
 	/**
 	 * 芝麻差异化定价优惠金额

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.nft.benefit.nftid.exchange request
  * 
  * @author auto create
- * @since 1.0, 2025-05-28 18:07:27
+ * @since 1.0, 2025-09-28 17:27:39
  */
 public class AnttechNftBenefitNftidExchangeRequest implements AlipayRequest<AnttechNftBenefitNftidExchangeResponse> {
 

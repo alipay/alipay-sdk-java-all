@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量更新疫苗商品价格
  *
  * @author auto create
- * @since 1.0, 2025-09-19 16:39:55
+ * @since 1.0, 2025-09-26 14:24:47
  */
 public class AlipayCommerceMedicalItempriceByisvitemidModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8317642717788297728L;
+	private static final long serialVersionUID = 3736827513825363621L;
 
 	/**
 	 * OMS厂商门店编码, 厂商自行维护

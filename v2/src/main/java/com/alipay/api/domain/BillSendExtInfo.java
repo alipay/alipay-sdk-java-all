@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BillSendExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7833126585821853292L;
+	private static final long serialVersionUID = 1763695427453675886L;
 
 	/**
 	 * 学校外标编号

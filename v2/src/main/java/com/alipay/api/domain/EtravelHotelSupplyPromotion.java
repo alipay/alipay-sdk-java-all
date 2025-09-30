@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EtravelHotelSupplyPromotion extends AlipayObject {
 
-	private static final long serialVersionUID = 7521471811178921774L;
+	private static final long serialVersionUID = 1672613652987575567L;
 
 	/**
 	 * 可对用户展示优惠信息

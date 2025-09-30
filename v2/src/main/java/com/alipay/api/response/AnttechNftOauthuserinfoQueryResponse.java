@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.nft.oauthuserinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-23 19:31:58
+ * @since 1.0, 2025-09-28 17:27:39
  */
 public class AnttechNftOauthuserinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3863377163657192763L;
+	private static final long serialVersionUID = 4447346536352362179L;
 
 	/** 
 	 * 头像链接
 	 */
 	@ApiField("avatar")
 	private String avatar;
+
+	/** 
+	 * 0-未实名 1-已实名
+	 */
+	@ApiField("is_real_name_verified")
+	private Long isRealNameVerified;
 
 	/** 
 	 * 中文名称
@@ -49,6 +55,13 @@ public class AnttechNftOauthuserinfoQueryResponse extends AlipayResponse {
 	}
 	public String getAvatar( ) {
 		return this.avatar;
+	}
+
+	public void setIsRealNameVerified(Long isRealNameVerified) {
+		this.isRealNameVerified = isRealNameVerified;
+	}
+	public Long getIsRealNameVerified( ) {
+		return this.isRealNameVerified;
 	}
 
 	public void setNickName(String nickName) {

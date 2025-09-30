@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.activity.voucher.modify response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-24 15:45:33
+ * @since 1.0, 2025-09-24 17:42:37
  */
 public class AlipayMarketingActivityVoucherModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4384481883516984567L;
+	private static final long serialVersionUID = 8446922982367441975L;
 
 	
 

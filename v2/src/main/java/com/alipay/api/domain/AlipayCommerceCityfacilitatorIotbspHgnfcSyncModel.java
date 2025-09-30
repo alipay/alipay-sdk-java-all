@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceCityfacilitatorIotbspHgnfcSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5493268899921718696L;
+	private static final long serialVersionUID = 6631189867933346219L;
 
 	/**
 	 * 行业openapi同步信息，具体为初始化信息、注册信息、设备信息等

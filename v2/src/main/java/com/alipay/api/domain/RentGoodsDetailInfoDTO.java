@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 商品详细信息
  *
  * @author auto create
- * @since 1.0, 2025-08-08 18:31:09
+ * @since 1.0, 2025-09-26 11:46:43
  */
 public class RentGoodsDetailInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2811799437296153529L;
+	private static final long serialVersionUID = 5885711442396234556L;
 
 	/**
 	 * 商品描述信息
@@ -20,10 +23,23 @@ public class RentGoodsDetailInfoDTO extends AlipayObject {
 	private String body;
 
 	/**
+	 * 商品图，线下租赁场景使用
+	 */
+	@ApiListField("goods_picture_ids")
+	@ApiField("string")
+	private List<String> goodsPictureIds;
+
+	/**
 	 * 商品图片，用于小程序订单中心展示，可通过 alipay.merchant.item.file.upload 接口上传素材获取素材id。默认使用已上报的商品库素材信息。
 	 */
 	@ApiField("image_material_id")
 	private String imageMaterialId;
+
+	/**
+	 * imei
+	 */
+	@ApiField("imei")
+	private String imei;
 
 	/**
 	 * 品牌编号；参考租赁行业空间品牌编号文档
@@ -110,11 +126,25 @@ public class RentGoodsDetailInfoDTO extends AlipayObject {
 		this.body = body;
 	}
 
+	public List<String> getGoodsPictureIds() {
+		return this.goodsPictureIds;
+	}
+	public void setGoodsPictureIds(List<String> goodsPictureIds) {
+		this.goodsPictureIds = goodsPictureIds;
+	}
+
 	public String getImageMaterialId() {
 		return this.imageMaterialId;
 	}
 	public void setImageMaterialId(String imageMaterialId) {
 		this.imageMaterialId = imageMaterialId;
+	}
+
+	public String getImei() {
+		return this.imei;
+	}
+	public void setImei(String imei) {
+		this.imei = imei;
 	}
 
 	public String getItemBrand() {

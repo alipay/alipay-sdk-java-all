@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 域信息列表
  *
  * @author auto create
- * @since 1.0, 2023-08-22 11:20:54
+ * @since 1.0, 2025-09-28 10:51:19
  */
 public class CloudDomain extends AlipayObject {
 
-	private static final long serialVersionUID = 6492243796231749241L;
+	private static final long serialVersionUID = 5758845865187234749L;
 
 	/**
 	 * 目标CNAME地址
 	 */
 	@ApiField("cname")
 	private String cname;
+
+	/**
+	 * 备案状态 - CONNECTED：已备案已接入 - UNCONNECT：已备案未接入
+	 */
+	@ApiField("connect_status")
+	private String connectStatus;
 
 	/**
 	 * 是否为强制HTTPS
@@ -68,6 +74,13 @@ PpJ76GhptJ5sA7ZS6hAGX1w
 	}
 	public void setCname(String cname) {
 		this.cname = cname;
+	}
+
+	public String getConnectStatus() {
+		return this.connectStatus;
+	}
+	public void setConnectStatus(String connectStatus) {
+		this.connectStatus = connectStatus;
 	}
 
 	public Boolean getForceHttps() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询理赔报案接口
  *
  * @author auto create
- * @since 1.0, 2023-07-28 17:47:47
+ * @since 1.0, 2025-09-28 19:35:56
  */
 public class AlipayDigitalmgmtHrcominsuInsuclaimQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2512395511169161277L;
+	private static final long serialVersionUID = 8265835778331886369L;
 
 	/**
 	 * data_key+唯一+分发给供应商的加密 key，用于识别供应商类型+枚举值(无)+业务生成后，分发给供应商+特殊说明(无)

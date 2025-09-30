@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 智安盾-租赁风险项模型
  *
  * @author auto create
- * @since 1.0, 2025-07-28 16:13:43
+ * @since 1.0, 2025-09-29 17:09:02
  */
 public class RiskItemVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8242432874578591476L;
+	private static final long serialVersionUID = 2889127966879457416L;
 
 	/**
 	 * 命中的风险详细信息 当前字段已废弃(字段删除，后续不再透出)

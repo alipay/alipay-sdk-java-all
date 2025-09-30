@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.isvhelp.entry.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-09 13:35:51
+ * @since 1.0, 2025-09-29 19:27:40
  */
 public class AlipayMerchantIsvhelpEntryCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2612451485836561479L;
+	private static final long serialVersionUID = 1381496636155665352L;
 
 	
 

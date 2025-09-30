@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntMerchantExpandShopCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5575935711655513929L;
+	private static final long serialVersionUID = 2569613116721139376L;
 
 	/**
 	 * 商户角色id，表示将要开的店属于哪个商户角色。对于直连开店场景，填写商户pid；对于间连开店场景（线上、线下、直付通），填写商户smid。若未传入shop_id 则本参数与store_id均必填。

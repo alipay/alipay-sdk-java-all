@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.itemprice.byisvitemid.modify response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-19 18:32:40
+ * @since 1.0, 2025-09-26 14:27:41
  */
 public class AlipayCommerceMedicalItempriceByisvitemidModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1346258568189949821L;
+	private static final long serialVersionUID = 6443198787614754932L;
 
 	/** 
 	 * 失败信息

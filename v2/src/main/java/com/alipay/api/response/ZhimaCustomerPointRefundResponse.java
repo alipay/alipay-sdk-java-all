@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.customer.point.refund response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-23 15:02:18
+ * @since 1.0, 2025-09-24 17:17:40
  */
 public class ZhimaCustomerPointRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3878458479934135956L;
+	private static final long serialVersionUID = 6674176125875877794L;
 
 	/** 
 	 * 芝麻粒是否返还完成

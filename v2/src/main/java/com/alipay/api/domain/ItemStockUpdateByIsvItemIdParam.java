@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用于外部服务商修改疫苗商品库存入参
  *
  * @author auto create
- * @since 1.0, 2025-09-19 16:39:58
+ * @since 1.0, 2025-09-25 13:40:51
  */
 public class ItemStockUpdateByIsvItemIdParam extends AlipayObject {
 
-	private static final long serialVersionUID = 1539419978448686677L;
+	private static final long serialVersionUID = 6735528499162177348L;
 
 	/**
 	 * 库存结束时间, 毫秒精度时间戳

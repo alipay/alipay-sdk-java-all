@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用产品信息
  *
  * @author auto create
- * @since 1.0, 2025-06-06 17:52:47
+ * @since 1.0, 2025-09-26 11:46:43
  */
 public class RentCreditInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2872316616357259969L;
+	private static final long serialVersionUID = 3835453716668886258L;
 
 	/**
-	 * 芝麻外部类目
+	 * 芝麻外部类目 <a href="https://opendocs.alipay.com/open/10719" target="_blank">类目枚举文档</a>
 	 */
 	@ApiField("category_id")
 	private String categoryId;

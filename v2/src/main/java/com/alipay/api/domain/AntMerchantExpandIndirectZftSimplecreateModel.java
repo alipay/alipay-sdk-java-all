@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 直付通二级商户免证照进件
  *
  * @author auto create
- * @since 1.0, 2025-07-15 11:33:29
+ * @since 1.0, 2025-09-26 16:48:53
  */
 public class AntMerchantExpandIndirectZftSimplecreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8678814481779671575L;
+	private static final long serialVersionUID = 4669189246546589882L;
 
 	/**
 	 * 补充证件图片，与additional_cert_no、additional_cert_type同时提供。当商户类型为个人时，使用当面付收款有限额，补充这组证件信息可提额。目前仅允许个人类型商户传入。其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。
@@ -125,6 +125,12 @@ public class AntMerchantExpandIndirectZftSimplecreateModel extends AlipayObject 
 	private String name;
 
 	/**
+	 * 是否需要发送待办
+	 */
+	@ApiField("need_send_todo_notify")
+	private Boolean needSendTodoNotify;
+
+	/**
 	 * 门头照，使用当面付服务时必填。其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key。
 	 */
 	@ApiField("out_door_images")
@@ -161,6 +167,12 @@ public class AntMerchantExpandIndirectZftSimplecreateModel extends AlipayObject 
 	 */
 	@ApiField("service_phone")
 	private String servicePhone;
+
+	/**
+	 * 签约确认方式
+	 */
+	@ApiField("sign_confirm_type")
+	private String signConfirmType;
 
 	/**
 	 * 二级商户与服务商的签约时间。
@@ -313,6 +325,13 @@ public class AntMerchantExpandIndirectZftSimplecreateModel extends AlipayObject 
 		this.name = name;
 	}
 
+	public Boolean getNeedSendTodoNotify() {
+		return this.needSendTodoNotify;
+	}
+	public void setNeedSendTodoNotify(Boolean needSendTodoNotify) {
+		this.needSendTodoNotify = needSendTodoNotify;
+	}
+
 	public String getOutDoorImages() {
 		return this.outDoorImages;
 	}
@@ -353,6 +372,13 @@ public class AntMerchantExpandIndirectZftSimplecreateModel extends AlipayObject 
 	}
 	public void setServicePhone(String servicePhone) {
 		this.servicePhone = servicePhone;
+	}
+
+	public String getSignConfirmType() {
+		return this.signConfirmType;
+	}
+	public void setSignConfirmType(String signConfirmType) {
+		this.signConfirmType = signConfirmType;
 	}
 
 	public String getSignTimeWithIsv() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 理赔报案Vo
  *
  * @author auto create
- * @since 1.0, 2023-07-27 10:21:00
+ * @since 1.0, 2025-09-28 19:35:53
  */
 public class InsuClaimVo extends AlipayObject {
 
-	private static final long serialVersionUID = 2878816883436742171L;
+	private static final long serialVersionUID = 1823159245544199998L;
 
 	/**
 	 * accident_date+不唯一+供应商查询未提交给理赔公司的，理赔状态为进行中的理赔报案数据+枚举值(无)+员工申请理赔+特殊说明(无)
@@ -36,9 +36,16 @@ public class InsuClaimVo extends AlipayObject {
 	private List<String> attachmentUrl;
 
 	/**
-	 * claim_attachment_vo+不唯一+供应商查询未提交给理赔公司的，理赔状态为进行中的理赔报案数据+枚举值(无)+员工申请理赔+特殊说明(无)
+	 * 该参数是同学在提交理赔时上传的理赔材料信息，其中包含病历、发票，需要同步给供应商报案使用，后续逐步替换claim_attachment_vo参数
+	 */
+	@ApiField("claim_attachment_url_vo")
+	private ClaimAttachmentUrlVo claimAttachmentUrlVo;
+
+	/**
+	 * claim_attachment_vo+不唯一+供应商查询未提交给理赔公司的，理赔状态为进行中的理赔报案数据+枚举值(无)+员工申请理赔+特殊说明(无) 当前字段已废弃(原文件存储方式变更，需替换到claim_attachment_url_vo参数中)
 	 */
 	@ApiField("claim_attachment_vo")
+	@Deprecated
 	private InsuClaimAttachmentVo claimAttachmentVo;
 
 	/**
@@ -162,7 +169,7 @@ public class InsuClaimVo extends AlipayObject {
 	private String relateSex;
 
 	/**
-	 * insurant_birthday+不唯一+供应商查询未提交给理赔公司的，理赔状态为进行中的理赔报案数据+枚举值(无)+员工申请理赔+特殊说明(无)
+	 * 该参数供应商查询未提交给理赔公司的，理赔状态为进行中的理赔报案数据中的理赔金额，单位采用人民币。
 	 */
 	@ApiField("report_amount")
 	private String reportAmount;
@@ -210,6 +217,13 @@ public class InsuClaimVo extends AlipayObject {
 	}
 	public void setAttachmentUrl(List<String> attachmentUrl) {
 		this.attachmentUrl = attachmentUrl;
+	}
+
+	public ClaimAttachmentUrlVo getClaimAttachmentUrlVo() {
+		return this.claimAttachmentUrlVo;
+	}
+	public void setClaimAttachmentUrlVo(ClaimAttachmentUrlVo claimAttachmentUrlVo) {
+		this.claimAttachmentUrlVo = claimAttachmentUrlVo;
 	}
 
 	public InsuClaimAttachmentVo getClaimAttachmentVo() {

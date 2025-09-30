@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.unifiedsettle.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-18 10:27:40
+ * @since 1.0, 2025-09-28 14:57:39
  */
 public class AlipayTradeUnifiedsettleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5759888641757794164L;
+	private static final long serialVersionUID = 7725666197766399994L;
 
 	/** 
 	 * 收结易明细列表数据

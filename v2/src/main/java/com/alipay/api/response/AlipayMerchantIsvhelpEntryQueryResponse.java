@@ -10,17 +10,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.isvhelp.entry.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-06 18:15:59
+ * @since 1.0, 2025-09-29 20:22:39
  */
 public class AlipayMerchantIsvhelpEntryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8593314337639234552L;
+	private static final long serialVersionUID = 4321998436134285618L;
 
 	/** 
 	 * 支付宝账号
 	 */
 	@ApiField("alipay_logon_id")
 	private String alipayLogonId;
+
+	/** 
+	 * 合作方入驻账号
+	 */
+	@ApiField("alipay_partner")
+	private String alipayPartner;
 
 	/** 
 	 * 服务商代入驻申请单状态枚举
@@ -52,6 +58,13 @@ public class AlipayMerchantIsvhelpEntryQueryResponse extends AlipayResponse {
 	}
 	public String getAlipayLogonId( ) {
 		return this.alipayLogonId;
+	}
+
+	public void setAlipayPartner(String alipayPartner) {
+		this.alipayPartner = alipayPartner;
+	}
+	public String getAlipayPartner( ) {
+		return this.alipayPartner;
 	}
 
 	public void setBizStatus(String bizStatus) {

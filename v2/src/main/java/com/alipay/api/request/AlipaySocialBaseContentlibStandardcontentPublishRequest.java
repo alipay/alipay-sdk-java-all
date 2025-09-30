@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.social.base.contentlib.standardcontent.publish request
  * 
  * @author auto create
- * @since 1.0, 2025-09-19 11:37:40
+ * @since 1.0, 2025-09-29 17:07:34
  */
 public class AlipaySocialBaseContentlibStandardcontentPublishRequest implements AlipayRequest<AlipaySocialBaseContentlibStandardcontentPublishResponse> {
 

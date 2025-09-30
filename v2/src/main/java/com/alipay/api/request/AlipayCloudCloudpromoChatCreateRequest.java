@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudpromo.chat.create request
  * 
  * @author auto create
- * @since 1.0, 2025-09-04 21:32:37
+ * @since 1.0, 2025-09-25 17:37:41
  */
 public class AlipayCloudCloudpromoChatCreateRequest implements AlipayRequest<AlipayCloudCloudpromoChatCreateResponse> {
 

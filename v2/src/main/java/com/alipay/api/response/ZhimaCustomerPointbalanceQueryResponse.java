@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.customer.pointbalance.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-23 15:02:19
+ * @since 1.0, 2025-09-24 16:27:40
  */
 public class ZhimaCustomerPointbalanceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2167415616955474715L;
+	private static final long serialVersionUID = 1195687261113162122L;
 
 	/** 
 	 * 芝麻粒余额

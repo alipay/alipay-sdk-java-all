@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * tab4建联链接跳转支持
  *
  * @author auto create
- * @since 1.0, 2025-09-23 20:42:13
+ * @since 1.0, 2025-09-24 22:11:28
  */
 public class AlipayCommerceMedicalJumpTabApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1645368618261364992L;
+	private static final long serialVersionUID = 4728865891663754684L;
 
 	/**
 	 * 请求来源的字符串

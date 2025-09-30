@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.customer.point.refund request
  * 
  * @author auto create
- * @since 1.0, 2025-09-23 15:02:18
+ * @since 1.0, 2025-09-24 17:17:40
  */
 public class ZhimaCustomerPointRefundRequest implements AlipayRequest<ZhimaCustomerPointRefundResponse> {
 

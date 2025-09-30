@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.exchange.redirect.verify response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-11 13:58:51
+ * @since 1.0, 2025-09-28 14:57:39
  */
 public class AlipayCommerceMedicalExchangeRedirectVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1358825617523747448L;
+	private static final long serialVersionUID = 8733447724685212812L;
 
 	/** 
 	 * 会员卡流水号
 	 */
 	@ApiField("card_no")
 	private String cardNo;
+
+	/** 
+	 * 返回给外部，所开卡的到期时间
+	 */
+	@ApiField("expire_time")
+	private String expireTime;
 
 	/** 
 	 * 可以开通 true 、不能开通 false
@@ -43,6 +49,13 @@ public class AlipayCommerceMedicalExchangeRedirectVerifyResponse extends AlipayR
 	}
 	public String getCardNo( ) {
 		return this.cardNo;
+	}
+
+	public void setExpireTime(String expireTime) {
+		this.expireTime = expireTime;
+	}
+	public String getExpireTime( ) {
+		return this.expireTime;
 	}
 
 	public void setOpen(Boolean open) {

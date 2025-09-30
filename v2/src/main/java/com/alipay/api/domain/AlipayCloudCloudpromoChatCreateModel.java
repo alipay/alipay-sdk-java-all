@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 发起对话
  *
  * @author auto create
- * @since 1.0, 2025-09-04 21:32:37
+ * @since 1.0, 2025-09-25 17:37:41
  */
 public class AlipayCloudCloudpromoChatCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6765268866977161636L;
+	private static final long serialVersionUID = 5199323943334457944L;
 
 	/**
 	 * 要进行会话聊天的智能体ID。
@@ -54,6 +57,13 @@ public class AlipayCloudCloudpromoChatCreateModel extends AlipayObject {
 	 */
 	@ApiField("load_test")
 	private Boolean loadTest;
+
+	/**
+	 * null
+	 */
+	@ApiListField("media_contents")
+	@ApiField("media_content")
+	private List<MediaContent> mediaContents;
 
 	/**
 	 * 用户发给智能体的问题内容。
@@ -126,6 +136,13 @@ public class AlipayCloudCloudpromoChatCreateModel extends AlipayObject {
 	}
 	public void setLoadTest(Boolean loadTest) {
 		this.loadTest = loadTest;
+	}
+
+	public List<MediaContent> getMediaContents() {
+		return this.mediaContents;
+	}
+	public void setMediaContents(List<MediaContent> mediaContents) {
+		this.mediaContents = mediaContents;
 	}
 
 	public String getQuestion() {

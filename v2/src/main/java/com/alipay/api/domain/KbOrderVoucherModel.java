@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KbOrderVoucherModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3159749417417956633L;
+	private static final long serialVersionUID = 3377244141983321799L;
 
 	/**
 	 * 商品凭证过期时间

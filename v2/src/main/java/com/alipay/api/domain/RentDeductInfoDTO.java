@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁代扣签约信息
  *
  * @author auto create
- * @since 1.0, 2025-08-08 18:31:09
+ * @since 1.0, 2025-09-26 11:46:43
  */
 public class RentDeductInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3645992773787618916L;
+	private static final long serialVersionUID = 6727183121531782448L;
+
+	/**
+	 * 商户代扣协议号
+	 */
+	@ApiField("agreement_no")
+	private String agreementNo;
 
 	/**
 	 * 代扣服务名称。用于在代扣协议详情中展示，方便用户区分该笔代扣对应的订单，建议传入标准的商品名称
@@ -24,6 +30,13 @@ public class RentDeductInfoDTO extends AlipayObject {
 	 */
 	@ApiField("sign_scene")
 	private String signScene;
+
+	public String getAgreementNo() {
+		return this.agreementNo;
+	}
+	public void setAgreementNo(String agreementNo) {
+		this.agreementNo = agreementNo;
+	}
 
 	public String getServiceName() {
 		return this.serviceName;

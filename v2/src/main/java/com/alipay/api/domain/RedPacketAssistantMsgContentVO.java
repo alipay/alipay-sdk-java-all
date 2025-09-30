@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RedPacketAssistantMsgContentVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4381264152173848693L;
+	private static final long serialVersionUID = 3229591925643627994L;
 
 	/**
 	 * 小助手定向消息内容，发送小助手时推送给用户的群内推荐内容

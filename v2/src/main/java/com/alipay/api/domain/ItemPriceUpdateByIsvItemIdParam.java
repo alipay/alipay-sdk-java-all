@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用于外部服务商修改疫苗商品价格入参
  *
  * @author auto create
- * @since 1.0, 2025-09-19 16:39:55
+ * @since 1.0, 2025-09-26 14:24:47
  */
 public class ItemPriceUpdateByIsvItemIdParam extends AlipayObject {
 
-	private static final long serialVersionUID = 8498692992432429318L;
+	private static final long serialVersionUID = 2613961957379711588L;
 
 	/**
 	 * 服务商商品id

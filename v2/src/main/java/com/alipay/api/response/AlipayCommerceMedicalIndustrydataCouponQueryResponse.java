@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.industrydata.coupon.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-11 10:57:04
+ * @since 1.0, 2025-09-28 10:41:21
  */
 public class AlipayCommerceMedicalIndustrydataCouponQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8637623692499452925L;
+	private static final long serialVersionUID = 8581385469481317623L;
 
 	/** 
 	 * 该参数是返回查询得到用户可用营销优惠卷信息，数组为空则表示没有查询到

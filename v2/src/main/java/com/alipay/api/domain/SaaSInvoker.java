@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SaaSInvoker extends AlipayObject {
 
-	private static final long serialVersionUID = 3364321562319985374L;
+	private static final long serialVersionUID = 4526145823513526879L;
 
 	/**
 	 * 阿里云用户ID

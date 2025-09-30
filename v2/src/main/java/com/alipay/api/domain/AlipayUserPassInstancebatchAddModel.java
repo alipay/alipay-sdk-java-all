@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayUserPassInstancebatchAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3518885816562415925L;
+	private static final long serialVersionUID = 7526712968844323427L;
 
 	/**
 	 * alipass实例操作信息列表。

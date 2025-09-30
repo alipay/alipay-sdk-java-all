@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户确认创建钱包
  *
  * @author auto create
- * @since 1.0, 2025-07-14 13:40:49
+ * @since 1.0, 2025-09-25 20:01:42
  */
 public class AlipayFundWalletTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4857291725473749687L;
+	private static final long serialVersionUID = 3644966189664699946L;
+
+	/**
+	 * 业务身份
+	 */
+	@ApiField("biz_identity")
+	private String bizIdentity;
 
 	/**
 	 * 开户场景
@@ -44,6 +50,12 @@ public class AlipayFundWalletTemplateCreateModel extends AlipayObject {
 	private String productCode;
 
 	/**
+	 * 是否支持钱包核销规则
+	 */
+	@ApiField("support_wallet_use_rule_define")
+	private String supportWalletUseRuleDefine;
+
+	/**
 	 * 钱包名字
 	 */
 	@ApiField("wallet_template_name")
@@ -54,6 +66,13 @@ public class AlipayFundWalletTemplateCreateModel extends AlipayObject {
 	 */
 	@ApiField("wallet_use_rule")
 	private WalletUseRule walletUseRule;
+
+	public String getBizIdentity() {
+		return this.bizIdentity;
+	}
+	public void setBizIdentity(String bizIdentity) {
+		this.bizIdentity = bizIdentity;
+	}
 
 	public String getBizScene() {
 		return this.bizScene;
@@ -88,6 +107,13 @@ public class AlipayFundWalletTemplateCreateModel extends AlipayObject {
 	}
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
+	}
+
+	public String getSupportWalletUseRuleDefine() {
+		return this.supportWalletUseRuleDefine;
+	}
+	public void setSupportWalletUseRuleDefine(String supportWalletUseRuleDefine) {
+		this.supportWalletUseRuleDefine = supportWalletUseRuleDefine;
 	}
 
 	public String getWalletTemplateName() {

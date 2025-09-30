@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 消息内容
  *
  * @author auto create
- * @since 1.0, 2025-04-14 15:33:22
+ * @since 1.0, 2025-09-25 11:25:44
  */
 public class ContentVo extends AlipayObject {
 
-	private static final long serialVersionUID = 3515987122897814498L;
+	private static final long serialVersionUID = 3897425967187487373L;
 
 	/**
 	 * 消息类型为卡片时必传，卡片内容

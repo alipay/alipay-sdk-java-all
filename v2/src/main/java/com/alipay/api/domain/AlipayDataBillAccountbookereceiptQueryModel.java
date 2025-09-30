@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询子账本电子回单状态(incubating)
  *
  * @author auto create
- * @since 1.0, 2025-05-12 13:56:48
+ * @since 1.0, 2025-09-28 13:15:34
  */
 public class AlipayDataBillAccountbookereceiptQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1677476727858343575L;
+	private static final long serialVersionUID = 6427212192545341292L;
 
 	/**
 	 * 协议号，根据不同业务协议类型，传入对应类型的协议号，用于isv授权检查并获取商户信息。如果业务类型未指定，则使用默认类型对应的协议号。
@@ -30,6 +30,13 @@ public class AlipayDataBillAccountbookereceiptQueryModel extends AlipayObject {
 	 */
 	@ApiField("file_id")
 	private String fileId;
+
+	/**
+	 * true表示使用安全链接，即返回的下载链接为https。
+非true值的情况下，统一为false，使用http链接。
+	 */
+	@ApiField("secure")
+	private String secure;
 
 	public String getAgreementNo() {
 		return this.agreementNo;
@@ -50,6 +57,13 @@ public class AlipayDataBillAccountbookereceiptQueryModel extends AlipayObject {
 	}
 	public void setFileId(String fileId) {
 		this.fileId = fileId;
+	}
+
+	public String getSecure() {
+		return this.secure;
+	}
+	public void setSecure(String secure) {
+		this.secure = secure;
 	}
 
 }

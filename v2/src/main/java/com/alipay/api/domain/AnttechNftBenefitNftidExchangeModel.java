@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 权益兑换状态同步
  *
  * @author auto create
- * @since 1.0, 2025-05-28 18:02:21
+ * @since 1.0, 2025-09-28 17:27:32
  */
 public class AnttechNftBenefitNftidExchangeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7286191679814598578L;
+	private static final long serialVersionUID = 5135247627713731214L;
 
 	/**
 	 * nftId藏品的账号id
@@ -26,7 +26,7 @@ public class AnttechNftBenefitNftidExchangeModel extends AlipayObject {
 	private String reqMsgId;
 
 	/**
-	 * 租户id
+	 * 租户id(该字段已废弃)
 	 */
 	@ApiField("tenant_id")
 	private String tenantId;

@@ -10,11 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量同步疫苗商品库存
  *
  * @author auto create
- * @since 1.0, 2025-09-19 16:39:58
+ * @since 1.0, 2025-09-25 13:40:51
  */
 public class AlipayCommerceMedicalItemstockByisvitemidModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7655918136121939493L;
+	private static final long serialVersionUID = 2183141766499899383L;
+
+	/**
+	 * 清空库存商品id集合
+	 */
+	@ApiListField("clear_isv_item_id_list")
+	@ApiField("string")
+	private List<String> clearIsvItemIdList;
 
 	/**
 	 * OMS厂商门店编码, 录入门店时填写的值, 厂商自行维护
@@ -28,6 +35,13 @@ public class AlipayCommerceMedicalItemstockByisvitemidModifyModel extends Alipay
 	@ApiListField("item_stock_list")
 	@ApiField("item_stock_update_by_isv_item_id_param")
 	private List<ItemStockUpdateByIsvItemIdParam> itemStockList;
+
+	public List<String> getClearIsvItemIdList() {
+		return this.clearIsvItemIdList;
+	}
+	public void setClearIsvItemIdList(List<String> clearIsvItemIdList) {
+		this.clearIsvItemIdList = clearIsvItemIdList;
+	}
 
 	public String getIsvStoreCode() {
 		return this.isvStoreCode;

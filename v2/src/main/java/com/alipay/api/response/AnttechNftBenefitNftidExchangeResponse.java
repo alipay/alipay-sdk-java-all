@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.nft.benefit.nftid.exchange response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-28 18:07:27
+ * @since 1.0, 2025-09-28 17:27:39
  */
 public class AnttechNftBenefitNftidExchangeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6113411625319584634L;
+	private static final long serialVersionUID = 2392562287883254956L;
 
 	
 

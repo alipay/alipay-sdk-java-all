@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务商代入驻申请单进驻状态查询
  *
  * @author auto create
- * @since 1.0, 2024-08-06 18:15:59
+ * @since 1.0, 2025-09-29 20:07:18
  */
 public class AlipayMerchantIsvhelpEntryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2289731743712823454L;
+	private static final long serialVersionUID = 4563418354725179374L;
 
 	/**
 	 * 服务商自定义的申请编号，每个申请编号唯一对应一个申请单，需在服务商下唯一。只能用数字、字母或下划线组成

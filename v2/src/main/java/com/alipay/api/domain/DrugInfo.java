@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 药品信息
  *
  * @author auto create
- * @since 1.0, 2025-03-27 16:07:19
+ * @since 1.0, 2025-09-25 10:22:22
  */
 public class DrugInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5233611341677754578L;
+	private static final long serialVersionUID = 8167892645212543743L;
 
 	/**
 	 * 品牌名称
@@ -73,6 +73,18 @@ public class DrugInfo extends AlipayObject {
 	 */
 	@ApiField("generic_name")
 	private String genericName;
+
+	/**
+	 * 购药风险确认
+	 */
+	@ApiField("risk_confirm")
+	private Boolean riskConfirm;
+
+	/**
+	 * 风险等级
+	 */
+	@ApiField("risk_level")
+	private String riskLevel;
 
 	/**
 	 * 规格 
@@ -155,6 +167,20 @@ public class DrugInfo extends AlipayObject {
 	}
 	public void setGenericName(String genericName) {
 		this.genericName = genericName;
+	}
+
+	public Boolean getRiskConfirm() {
+		return this.riskConfirm;
+	}
+	public void setRiskConfirm(Boolean riskConfirm) {
+		this.riskConfirm = riskConfirm;
+	}
+
+	public String getRiskLevel() {
+		return this.riskLevel;
+	}
+	public void setRiskLevel(String riskLevel) {
+		this.riskLevel = riskLevel;
 	}
 
 	public String getSpec() {
