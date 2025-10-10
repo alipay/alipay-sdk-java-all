@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceAcommunicationItemstatusNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1364664118616856225L;
+	private static final long serialVersionUID = 7291859244866119385L;
 
 	/**
 	 * 商品状态操作类型，1/上架，2/下架

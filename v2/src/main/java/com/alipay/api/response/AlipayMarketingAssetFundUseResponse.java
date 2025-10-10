@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.asset.fund.use response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-09 16:02:14
+ * @since 1.0, 2025-10-10 14:49:34
  */
 public class AlipayMarketingAssetFundUseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6595583485518191128L;
+	private static final long serialVersionUID = 7193643798521411159L;
 
 	/** 
 	 * 当笔资产资金核销操作的流水id

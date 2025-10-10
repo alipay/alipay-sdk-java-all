@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用支付先采后付确认收货接口
  *
  * @author auto create
- * @since 1.0, 2025-07-07 15:59:03
+ * @since 1.0, 2025-09-30 17:08:06
  */
 public class AlipayTradeCreditGoodsConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1415899388376757276L;
+	private static final long serialVersionUID = 3477161759487889379L;
 
 	/**
 	 * 信用服务订单号

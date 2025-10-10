@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租方指定资方或制定分账计划
  *
  * @author auto create
- * @since 1.0, 2025-09-25 16:38:26
+ * @since 1.0, 2025-10-10 16:22:38
  */
 public class AlipayCommerceRentOrderSellerPublishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5279346288819232937L;
+	private static final long serialVersionUID = 6799697767443518133L;
 
 	/**
 	 * 买家支付宝用户ID
@@ -58,6 +58,12 @@ public class AlipayCommerceRentOrderSellerPublishModel extends AlipayObject {
 	@ApiListField("royalty_publish_detail")
 	@ApiField("royalty_publish_detail_info")
 	private List<RoyaltyPublishDetailInfo> royaltyPublishDetail;
+
+	/**
+	 * 二级商户信息	
+	 */
+	@ApiField("sub_merchant")
+	private RentSubMerchant subMerchant;
 
 	public String getBuyerId() {
 		return this.buyerId;
@@ -106,6 +112,13 @@ public class AlipayCommerceRentOrderSellerPublishModel extends AlipayObject {
 	}
 	public void setRoyaltyPublishDetail(List<RoyaltyPublishDetailInfo> royaltyPublishDetail) {
 		this.royaltyPublishDetail = royaltyPublishDetail;
+	}
+
+	public RentSubMerchant getSubMerchant() {
+		return this.subMerchant;
+	}
+	public void setSubMerchant(RentSubMerchant subMerchant) {
+		this.subMerchant = subMerchant;
 	}
 
 }

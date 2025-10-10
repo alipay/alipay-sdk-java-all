@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 合作商兑换券码和兑换页链接
  *
  * @author auto create
- * @since 1.0, 2025-07-10 16:24:47
+ * @since 1.0, 2025-09-29 23:05:20
  */
 public class AlipayCommerceMedicalCardExchangeApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8188526759733862798L;
+	private static final long serialVersionUID = 7583758568264773961L;
 
 	/**
 	 * 申请数量，单位是个
@@ -45,10 +45,22 @@ public class AlipayCommerceMedicalCardExchangeApplyModel extends AlipayObject {
 	private String cooperateMode;
 
 	/**
+	 * 用于标记支付宝用户在应用下的唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/**
 	 * 电话号码
 	 */
 	@ApiField("phone")
 	private String phone;
+
+	/**
+	 * 支付宝用户的userId。
+	 */
+	@ApiField("user_id")
+	private String userId;
 
 	public Long getApplySum() {
 		return this.applySum;
@@ -85,11 +97,25 @@ public class AlipayCommerceMedicalCardExchangeApplyModel extends AlipayObject {
 		this.cooperateMode = cooperateMode;
 	}
 
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+
 	public String getPhone() {
 		return this.phone;
 	}
 	public void setPhone(String phone) {
 		this.phone = phone;
+	}
+
+	public String getUserId() {
+		return this.userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
 
 }

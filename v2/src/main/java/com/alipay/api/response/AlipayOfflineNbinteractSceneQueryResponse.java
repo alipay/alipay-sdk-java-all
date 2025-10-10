@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.nbinteract.scene.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-12 09:57:40
+ * @since 1.0, 2025-10-10 16:22:38
  */
 public class AlipayOfflineNbinteractSceneQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3897314457788654298L;
+	private static final long serialVersionUID = 4598486879683244447L;
 
 	/** 
 	 * 设备互动链接绑定状态

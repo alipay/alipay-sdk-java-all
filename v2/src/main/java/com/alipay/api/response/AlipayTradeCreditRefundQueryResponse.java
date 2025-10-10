@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.credit.refund.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-19 17:42:19
+ * @since 1.0, 2025-09-30 17:12:40
  */
 public class AlipayTradeCreditRefundQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2156428869371954382L;
+	private static final long serialVersionUID = 7551336436719432365L;
 
 	/** 
 	 * 信用单号
@@ -37,6 +37,12 @@ public class AlipayTradeCreditRefundQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("refund_amount")
 	private String refundAmount;
+
+	/** 
+	 * 支付宝交易号。
+	 */
+	@ApiField("trade_no")
+	private String tradeNo;
 
 	public void setCreditBizOrderId(String creditBizOrderId) {
 		this.creditBizOrderId = creditBizOrderId;
@@ -64,6 +70,13 @@ public class AlipayTradeCreditRefundQueryResponse extends AlipayResponse {
 	}
 	public String getRefundAmount( ) {
 		return this.refundAmount;
+	}
+
+	public void setTradeNo(String tradeNo) {
+		this.tradeNo = tradeNo;
+	}
+	public String getTradeNo( ) {
+		return this.tradeNo;
 	}
 
 }

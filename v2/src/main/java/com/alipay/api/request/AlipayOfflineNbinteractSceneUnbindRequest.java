@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.nbinteract.scene.unbind request
  * 
  * @author auto create
- * @since 1.0, 2025-09-11 15:22:39
+ * @since 1.0, 2025-10-10 16:22:38
  */
 public class AlipayOfflineNbinteractSceneUnbindRequest implements AlipayRequest<AlipayOfflineNbinteractSceneUnbindResponse> {
 

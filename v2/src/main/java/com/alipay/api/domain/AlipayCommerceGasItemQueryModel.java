@@ -1,0 +1,68 @@
+package com.alipay.api.domain;
+
+import com.alipay.api.AlipayObject;
+import com.alipay.api.internal.mapping.ApiField;
+
+/**
+ * 加油商品信息查询
+ *
+ * @author auto create
+ * @since 1.0, 2025-10-10 11:52:40
+ */
+public class AlipayCommerceGasItemQueryModel extends AlipayObject {
+
+	private static final long serialVersionUID = 4821153187175364561L;
+
+	/**
+	 * 商品前台类目id: null 表示所有分类
+	 */
+	@ApiField("front_category_id")
+	private String frontCategoryId;
+
+	/**
+	 * 商品状态：EFFECT、INVALID、PAUSE；不填返回所有状态商品
+	 */
+	@ApiField("status")
+	private String status;
+
+	/**
+	 * 商品归属主体id
+	 */
+	@ApiField("target_id")
+	private String targetId;
+
+	/**
+	 * 商品归属主体类型: 5: 店铺 4: 主站MID 3: 参与者 2: 角色 1: 联系人
+	 */
+	@ApiField("target_type")
+	private String targetType;
+
+	public String getFrontCategoryId() {
+		return this.frontCategoryId;
+	}
+	public void setFrontCategoryId(String frontCategoryId) {
+		this.frontCategoryId = frontCategoryId;
+	}
+
+	public String getStatus() {
+		return this.status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public String getTargetId() {
+		return this.targetId;
+	}
+	public void setTargetId(String targetId) {
+		this.targetId = targetId;
+	}
+
+	public String getTargetType() {
+		return this.targetType;
+	}
+	public void setTargetType(String targetType) {
+		this.targetType = targetType;
+	}
+
+}

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NoInvoicePayOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 1211543855482943352L;
+	private static final long serialVersionUID = 2233419172645546342L;
 
 	/**
 	 * 账单单据号

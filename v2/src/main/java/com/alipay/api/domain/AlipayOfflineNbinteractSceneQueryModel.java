@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 设备场景绑定查询
  *
  * @author auto create
- * @since 1.0, 2025-09-02 14:59:45
+ * @since 1.0, 2025-10-10 16:21:41
  */
 public class AlipayOfflineNbinteractSceneQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6686477145953934695L;
+	private static final long serialVersionUID = 2171676928425612159L;
 
 	/**
-	 * 碰一下互动跳转链接所属类型,从枚举中选择,不填写则查询该设备所有互动绑定关系
+	 * 碰一下互动跳转链接所属类型,从枚举中选择,不填写默认返回最新的
 	 */
 	@ApiField("link_url_type")
 	private String linkUrlType;
@@ -26,7 +26,7 @@ public class AlipayOfflineNbinteractSceneQueryModel extends AlipayObject {
 	private String sn;
 
 	/**
-	 * 设备供应商 ID：supplierId，如意生态版AMX设备请填写“201901111100635561”
+	 * 设备供应商 ID
 	 */
 	@ApiField("supplier_id")
 	private String supplierId;

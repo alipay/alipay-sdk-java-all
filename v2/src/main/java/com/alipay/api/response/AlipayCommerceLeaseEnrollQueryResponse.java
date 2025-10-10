@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceLeaseEnrollQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1391118852871127154L;
+	private static final long serialVersionUID = 4797235367596939537L;
 
 	/** 
 	 * 租赁商报名计划信息列表

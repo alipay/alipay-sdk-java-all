@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.marketing.ticketstub.purchase.sync request
  * 
  * @author auto create
- * @since 1.0, 2025-09-18 10:47:40
+ * @since 1.0, 2025-10-10 16:42:39
  */
 public class AlipayOfflineMarketingTicketstubPurchaseSyncRequest implements AlipayRequest<AlipayOfflineMarketingTicketstubPurchaseSyncResponse> {
 

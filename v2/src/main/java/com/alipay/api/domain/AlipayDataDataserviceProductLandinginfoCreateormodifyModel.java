@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品落地页信息创建或更新
  *
  * @author auto create
- * @since 1.0, 2024-08-27 17:39:22
+ * @since 1.0, 2025-10-09 12:34:53
  */
 public class AlipayDataDataserviceProductLandinginfoCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5378834922952566261L;
+	private static final long serialVersionUID = 2854395221432165464L;
 
 	/**
 	 * 支付宝平台侧商品ID，是支付宝平台侧商品的唯一标识，后续与平台交互，需要使用该 ID

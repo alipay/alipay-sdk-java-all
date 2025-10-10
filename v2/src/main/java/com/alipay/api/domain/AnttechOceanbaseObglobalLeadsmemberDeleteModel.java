@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechOceanbaseObglobalLeadsmemberDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2329638411386931928L;
+	private static final long serialVersionUID = 7897487146533518691L;
 
 	/**
 	 * 提供给分享逍客的删除商机成员的接口的参数

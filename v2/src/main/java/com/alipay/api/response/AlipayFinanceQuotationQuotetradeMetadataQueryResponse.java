@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFinanceQuotationQuotetradeMetadataQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8394665217593312989L;
+	private static final long serialVersionUID = 1739399597787223926L;
 
 	/** 
 	 * 返回结果（JSON格式），biz_type为STOCK_SYMBOL_BATCH时，biz_content为证券信息列表。返回信息字段名及含义如下：

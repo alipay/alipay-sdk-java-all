@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundMbpcardInvoicetaskBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8182127868438315198L;
+	private static final long serialVersionUID = 6557917676995147186L;
 
 	/** 
 	 * 当前页

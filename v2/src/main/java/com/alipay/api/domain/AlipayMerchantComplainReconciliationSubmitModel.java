@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 市监局添加一键和解商户
  *
  * @author auto create
- * @since 1.0, 2024-08-20 19:06:48
+ * @since 1.0, 2025-10-10 15:57:16
  */
 public class AlipayMerchantComplainReconciliationSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3363353468765164924L;
+	private static final long serialVersionUID = 3125352328857267144L;
 
 	/**
 	 * 统一社会信用代码

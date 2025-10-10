@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ShareAirline extends AlipayObject {
 
-	private static final long serialVersionUID = 6253558562563894811L;
+	private static final long serialVersionUID = 7621157658749521284L;
 
 	/**
 	 * 共享航班主飞航司二字码

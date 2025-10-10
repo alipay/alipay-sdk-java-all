@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.marketing.ticketstub.purchase.sync response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-18 10:47:40
+ * @since 1.0, 2025-10-10 16:42:39
  */
 public class AlipayOfflineMarketingTicketstubPurchaseSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2166971528576536644L;
+	private static final long serialVersionUID = 7668975953446533479L;
 
 	/** 
 	 * 业务流水号

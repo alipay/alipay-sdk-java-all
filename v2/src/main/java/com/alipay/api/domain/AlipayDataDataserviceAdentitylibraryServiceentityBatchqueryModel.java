@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页查询广告投放实体
  *
  * @author auto create
- * @since 1.0, 2025-08-22 14:05:15
+ * @since 1.0, 2025-10-09 12:35:39
  */
 public class AlipayDataDataserviceAdentitylibraryServiceentityBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8714669919715988729L;
+	private static final long serialVersionUID = 3389312244284539887L;
 
 	/**
 	 * 当前页的页码

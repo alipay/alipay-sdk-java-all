@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenSpNdeviceWorkBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2556335927375918695L;
+	private static final long serialVersionUID = 7342865338694129835L;
 
 	/**
 	 * 碰一下设备SN标识

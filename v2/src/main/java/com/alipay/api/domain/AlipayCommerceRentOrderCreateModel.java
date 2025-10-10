@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租赁订单创建
  *
  * @author auto create
- * @since 1.0, 2025-09-26 11:46:43
+ * @since 1.0, 2025-09-30 10:47:48
  */
 public class AlipayCommerceRentOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2556192539686718222L;
+	private static final long serialVersionUID = 4292928177785928268L;
 
 	/**
 	 * 优惠前置咨询组件返回的优惠活动咨询ID
@@ -76,6 +76,12 @@ public class AlipayCommerceRentOrderCreateModel extends AlipayObject {
 	 */
 	@ApiField("memo")
 	private String memo;
+
+	/**
+	 * 线下租赁信息
+	 */
+	@ApiField("offline_shopping_info")
+	private RentOfflineShoppingDTO offlineShoppingInfo;
 
 	/**
 	 * 订单类型
@@ -229,6 +235,13 @@ public class AlipayCommerceRentOrderCreateModel extends AlipayObject {
 	}
 	public void setMemo(String memo) {
 		this.memo = memo;
+	}
+
+	public RentOfflineShoppingDTO getOfflineShoppingInfo() {
+		return this.offlineShoppingInfo;
+	}
+	public void setOfflineShoppingInfo(RentOfflineShoppingDTO offlineShoppingInfo) {
+		this.offlineShoppingInfo = offlineShoppingInfo;
 	}
 
 	public String getOrderType() {

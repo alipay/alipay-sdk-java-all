@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayAccountCashpoolDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7891161523432224889L;
+	private static final long serialVersionUID = 5776768115292212499L;
 
 	
 

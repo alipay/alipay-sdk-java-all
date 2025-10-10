@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceEcShopgroupCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4426449598241896489L;
+	private static final long serialVersionUID = 4264687945437135187L;
 
 	/**
 	 * 地址信息，表示查询符合此地址规则的门店

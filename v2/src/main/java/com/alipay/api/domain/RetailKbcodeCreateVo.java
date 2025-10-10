@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RetailKbcodeCreateVo extends AlipayObject {
 
-	private static final long serialVersionUID = 2622465112576493197L;
+	private static final long serialVersionUID = 2287536831868329799L;
 
 	/**
 	 * 指定码图片上显示的名称，建议使用商户名称

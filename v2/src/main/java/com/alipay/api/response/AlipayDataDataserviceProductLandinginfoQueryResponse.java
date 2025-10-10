@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.product.landinginfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-25 11:45:55
+ * @since 1.0, 2025-10-09 12:37:40
  */
 public class AlipayDataDataserviceProductLandinginfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1152238348886963863L;
+	private static final long serialVersionUID = 1526574648185388131L;
 
 	/** 
 	 * 请求成功时返回该字段；支付宝平台侧商品ID，是支付宝平台侧商品的唯一标识，后续与平台交互，需要使用该 ID。

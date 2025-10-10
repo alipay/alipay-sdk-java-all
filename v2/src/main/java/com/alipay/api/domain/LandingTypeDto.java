@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 落地页信息
  *
  * @author auto create
- * @since 1.0, 2025-04-02 15:27:56
+ * @since 1.0, 2025-10-09 12:34:53
  */
 public class LandingTypeDto extends AlipayObject {
 
-	private static final long serialVersionUID = 6725791553255236434L;
+	private static final long serialVersionUID = 6178592767733682724L;
 
 	/**
 	 * 活动列表
@@ -28,6 +28,12 @@ public class LandingTypeDto extends AlipayObject {
 	 */
 	@ApiField("landing_id")
 	private String landingId;
+
+	/**
+	 * 服务商L1L2落地页标识，L1表示非通投，L2表示可以通投
+	 */
+	@ApiField("landing_level")
+	private String landingLevel;
 
 	/**
 	 * 落地页名称，同一个商品的落地页名称唯一。
@@ -73,6 +79,13 @@ public class LandingTypeDto extends AlipayObject {
 	}
 	public void setLandingId(String landingId) {
 		this.landingId = landingId;
+	}
+
+	public String getLandingLevel() {
+		return this.landingLevel;
+	}
+	public void setLandingLevel(String landingLevel) {
+		this.landingLevel = landingLevel;
 	}
 
 	public String getLandingName() {

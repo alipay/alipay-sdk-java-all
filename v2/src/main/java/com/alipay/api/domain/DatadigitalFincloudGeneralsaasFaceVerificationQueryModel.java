@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DatadigitalFincloudGeneralsaasFaceVerificationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3671782744296524255L;
+	private static final long serialVersionUID = 1864589555798594139L;
 
 	/**
 	 * 填入人脸核身初始化阶段获取到的certify_id

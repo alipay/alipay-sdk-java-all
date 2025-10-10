@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipaySecurityDataIprVideoCallbackModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4139576242768229594L;
+	private static final long serialVersionUID = 6167148271725798898L;
 
 	/**
 	 * 标识外部数据来源渠道，不同渠道对接前请先与接口人确认，每个渠道唯一。错误使用会导致数据保存失败，对接前请务必确认。

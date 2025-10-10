@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ZmepDossierBackgroundDataInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8552477671423488216L;
+	private static final long serialVersionUID = 5251251456216437238L;
 
 	/**
 	 * 数据结果

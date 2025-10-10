@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 设备场景解绑
  *
  * @author auto create
- * @since 1.0, 2025-09-02 14:59:43
+ * @since 1.0, 2025-10-10 16:21:28
  */
 public class AlipayOfflineNbinteractSceneUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3522917389968294737L;
+	private static final long serialVersionUID = 6681663683196658218L;
 
 	/**
-	 * 碰一下互动跳转链接所属类型
+	 * 碰一下互动跳转链接所属类型,从枚举中选择
 	 */
 	@ApiField("link_url_type")
 	private String linkUrlType;

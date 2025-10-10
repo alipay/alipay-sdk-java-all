@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 红包模板消耗信息
  *
  * @author auto create
- * @since 1.0, 2023-04-21 09:30:55
+ * @since 1.0, 2025-10-10 13:16:45
  */
 public class CouponTemplateConsumeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6833447949791638476L;
+	private static final long serialVersionUID = 6281336273982241777L;
 
 	/**
-	 * 该活动上剩余红包金额，分为单位 888代表剩余8.88元 请注意：该结果可能存在2个小时之内的时间延迟，特殊情况下可能延迟会更久
+	 * 该活动上剩余红包金额，元为单位 8.88代表剩余8.88元 请注意：该结果可能存在2个小时之内的时间延迟，特殊情况下可能延迟会更久
 	 */
 	@ApiField("available_amount")
 	private String availableAmount;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 票根码购票信息同步
  *
  * @author auto create
- * @since 1.0, 2025-09-18 10:43:42
+ * @since 1.0, 2025-10-10 16:27:52
  */
 public class AlipayOfflineMarketingTicketstubPurchaseSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8315149358977436425L;
+	private static final long serialVersionUID = 5173148346913489752L;
 
 	/**
 	 * 用户购票的操作信息

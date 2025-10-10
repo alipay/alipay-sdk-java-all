@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 先采后付信用订单查询
  *
  * @author auto create
- * @since 1.0, 2025-08-18 17:05:38
+ * @since 1.0, 2025-09-30 17:11:45
  */
 public class AlipayTradeCreditOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1589359469141998961L;
+	private static final long serialVersionUID = 2717786256813223551L;
 
 	/**
 	 * 信用服务订单号

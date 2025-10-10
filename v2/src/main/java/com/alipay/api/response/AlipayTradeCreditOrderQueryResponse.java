@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.credit.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-22 10:35:26
+ * @since 1.0, 2025-09-30 17:12:40
  */
 public class AlipayTradeCreditOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5671822418618641715L;
+	private static final long serialVersionUID = 4848142433684158935L;
 
 	/** 
 	 * 信用服务订单中的垫资金额。单位：元
@@ -34,7 +34,7 @@ public class AlipayTradeCreditOrderQueryResponse extends AlipayResponse {
 	private String creditBizOrderId;
 
 	/** 
-	 * 信用服务订单中信用支付金额，不包含支付宝营销金额
+	 * 信用服务订单中信用支付金额，不包含支付宝营销金额。单位：元
 	 */
 	@ApiField("credit_pay_fee")
 	private String creditPayFee;
@@ -52,13 +52,19 @@ public class AlipayTradeCreditOrderQueryResponse extends AlipayResponse {
 	private Date creditQuotaPayTime;
 
 	/** 
-	 * 信用支付退款金额
+	 * 信用支付退款金额。单位：元
 	 */
 	@ApiField("credit_refund_fee")
 	private String creditRefundFee;
 
 	/** 
-	 * 信用服务订单中的订单金额，包含营销。
+	 * 确认收货后，计划首次发起履约扣款的时间，未确认收货前则不返回
+	 */
+	@ApiField("credit_task_first_exec_time")
+	private Date creditTaskFirstExecTime;
+
+	/** 
+	 * 信用服务订单中的订单金额，包含营销。单位：元
 	 */
 	@ApiField("credit_total_fee")
 	private String creditTotalFee;
@@ -140,6 +146,13 @@ public class AlipayTradeCreditOrderQueryResponse extends AlipayResponse {
 	}
 	public String getCreditRefundFee( ) {
 		return this.creditRefundFee;
+	}
+
+	public void setCreditTaskFirstExecTime(Date creditTaskFirstExecTime) {
+		this.creditTaskFirstExecTime = creditTaskFirstExecTime;
+	}
+	public Date getCreditTaskFirstExecTime( ) {
+		return this.creditTaskFirstExecTime;
 	}
 
 	public void setCreditTotalFee(String creditTotalFee) {

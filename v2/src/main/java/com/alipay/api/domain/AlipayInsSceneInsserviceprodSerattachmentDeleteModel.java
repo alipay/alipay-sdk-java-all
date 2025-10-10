@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayInsSceneInsserviceprodSerattachmentDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2325479879657975655L;
+	private static final long serialVersionUID = 5823246858657499413L;
 
 	/**
 	 * 待撤回的文件编号

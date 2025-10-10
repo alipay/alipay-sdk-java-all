@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserKabaoVoucherCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5684947541731488247L;
+	private static final long serialVersionUID = 1159474268768824269L;
 
 	/**
 	 * 1、每批优惠券用一个唯一的批次id。

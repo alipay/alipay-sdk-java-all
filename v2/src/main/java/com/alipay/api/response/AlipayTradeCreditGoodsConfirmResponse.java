@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.credit.goods.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-22 10:35:02
+ * @since 1.0, 2025-09-30 17:12:40
  */
 public class AlipayTradeCreditGoodsConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7778183566419422271L;
+	private static final long serialVersionUID = 8723472993742549632L;
 
 	/** 
 	 * 信用服务订单号。
@@ -27,6 +27,12 @@ public class AlipayTradeCreditGoodsConfirmResponse extends AlipayResponse {
 	@ApiField("credit_confirm_receive_goods_time")
 	private Date creditConfirmReceiveGoodsTime;
 
+	/** 
+	 * 确认收货后，计划首次发起履约扣款的时间
+	 */
+	@ApiField("credit_task_first_exec_time")
+	private Date creditTaskFirstExecTime;
+
 	public void setCreditBizOrderId(String creditBizOrderId) {
 		this.creditBizOrderId = creditBizOrderId;
 	}
@@ -39,6 +45,13 @@ public class AlipayTradeCreditGoodsConfirmResponse extends AlipayResponse {
 	}
 	public Date getCreditConfirmReceiveGoodsTime( ) {
 		return this.creditConfirmReceiveGoodsTime;
+	}
+
+	public void setCreditTaskFirstExecTime(Date creditTaskFirstExecTime) {
+		this.creditTaskFirstExecTime = creditTaskFirstExecTime;
+	}
+	public Date getCreditTaskFirstExecTime( ) {
+		return this.creditTaskFirstExecTime;
 	}
 
 }
