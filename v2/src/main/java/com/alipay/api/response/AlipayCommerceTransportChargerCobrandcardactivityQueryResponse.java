@@ -1,6 +1,8 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.ActivityPhase;
 
 import com.alipay.api.AlipayResponse;
@@ -9,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.charger.cobrandcardactivity.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-25 15:34:05
+ * @since 1.0, 2025-10-13 17:47:40
  */
 public class AlipayCommerceTransportChargerCobrandcardactivityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6432544273682951433L;
+	private static final long serialVersionUID = 2576694371859671358L;
 
 	/** 
 	 * 活动编号
@@ -24,8 +26,9 @@ public class AlipayCommerceTransportChargerCobrandcardactivityQueryResponse exte
 	/** 
 	 * 活动阶段
 	 */
-	@ApiField("activity_phases")
-	private ActivityPhase activityPhases;
+	@ApiListField("activity_phases")
+	@ApiField("activity_phase")
+	private List<ActivityPhase> activityPhases;
 
 	/** 
 	 * 当前查询用户完成的订单笔数
@@ -40,10 +43,10 @@ public class AlipayCommerceTransportChargerCobrandcardactivityQueryResponse exte
 		return this.activityId;
 	}
 
-	public void setActivityPhases(ActivityPhase activityPhases) {
+	public void setActivityPhases(List<ActivityPhase> activityPhases) {
 		this.activityPhases = activityPhases;
 	}
-	public ActivityPhase getActivityPhases( ) {
+	public List<ActivityPhase> getActivityPhases( ) {
 		return this.activityPhases;
 	}
 

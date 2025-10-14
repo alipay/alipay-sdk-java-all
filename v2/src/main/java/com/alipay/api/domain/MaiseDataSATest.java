@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MaiseDataSATest extends AlipayObject {
 
-	private static final long serialVersionUID = 2833729941482256225L;
+	private static final long serialVersionUID = 2172227546333649397L;
 
 	/**
 	 * 11

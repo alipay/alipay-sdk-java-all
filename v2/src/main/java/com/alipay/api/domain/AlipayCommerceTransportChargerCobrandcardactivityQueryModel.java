@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 当前冲单活动进度查询
  *
  * @author auto create
- * @since 1.0, 2025-08-06 14:57:15
+ * @since 1.0, 2025-10-11 16:07:13
  */
 public class AlipayCommerceTransportChargerCobrandcardactivityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5777837969215995838L;
+	private static final long serialVersionUID = 6273278262644764634L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识

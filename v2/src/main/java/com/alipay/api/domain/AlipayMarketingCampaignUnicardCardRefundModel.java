@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCampaignUnicardCardRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7729988735596582327L;
+	private static final long serialVersionUID = 7527682685726878571L;
 
 	/**
 	 * 联营卡卡号。 用户在C端开通的联营卡后分配的卡号，目前一个周期的卡号是唯一的，且卡号会对应确定的卡模板id。

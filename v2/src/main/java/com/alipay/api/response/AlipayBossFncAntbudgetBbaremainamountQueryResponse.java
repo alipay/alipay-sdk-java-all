@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBossFncAntbudgetBbaremainamountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8411729762718691755L;
+	private static final long serialVersionUID = 3888917635333413494L;
 
 	/** 
 	 * BBA可用、剩余金额

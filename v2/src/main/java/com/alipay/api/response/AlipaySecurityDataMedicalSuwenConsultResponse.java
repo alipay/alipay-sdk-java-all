@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySecurityDataMedicalSuwenConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1326147256622881153L;
+	private static final long serialVersionUID = 2711627339237445972L;
 
 	/** 
 	 * 素问医疗信息咨询结果列表

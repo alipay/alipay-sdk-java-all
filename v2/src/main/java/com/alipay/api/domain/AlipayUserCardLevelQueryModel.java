@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 卡等级配置查询
  *
  * @author auto create
- * @since 1.0, 2022-11-04 10:32:20
+ * @since 1.0, 2025-10-13 12:22:52
  */
 public class AlipayUserCardLevelQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8216853146997644811L;
+	private static final long serialVersionUID = 6435292514242796158L;
 
 	/**
 	 * template_id：卡模版id，为alipay.user.card.template.create接口返回的模版id

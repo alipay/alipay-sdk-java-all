@@ -9,17 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 返回语音播报数据Item
  *
  * @author auto create
- * @since 1.0, 2025-08-26 15:55:12
+ * @since 1.0, 2025-10-13 13:10:46
  */
 public class BroadcastReportItem extends AlipayObject {
 
-	private static final long serialVersionUID = 1586221197886225315L;
+	private static final long serialVersionUID = 4418959316583192857L;
 
 	/**
 	 * 设备激活时间（查询条件，日期选择组件）
 	 */
 	@ApiField("biz_active_time")
 	private Date bizActiveTime;
+
+	/**
+	 * 设备碰激活时间
+	 */
+	@ApiField("biz_touch_active_time")
+	private String bizTouchActiveTime;
 
 	/**
 	 * 设备模式
@@ -98,6 +104,13 @@ public class BroadcastReportItem extends AlipayObject {
 	}
 	public void setBizActiveTime(Date bizActiveTime) {
 		this.bizActiveTime = bizActiveTime;
+	}
+
+	public String getBizTouchActiveTime() {
+		return this.bizTouchActiveTime;
+	}
+	public void setBizTouchActiveTime(String bizTouchActiveTime) {
+		this.bizTouchActiveTime = bizTouchActiveTime;
 	}
 
 	public String getCoopMode() {

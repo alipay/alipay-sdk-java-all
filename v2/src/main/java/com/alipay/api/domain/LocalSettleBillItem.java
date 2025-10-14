@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LocalSettleBillItem extends AlipayObject {
 
-	private static final long serialVersionUID = 3835918418781567638L;
+	private static final long serialVersionUID = 6438124699982976762L;
 
 	/**
 	 * 支付宝优惠（元）

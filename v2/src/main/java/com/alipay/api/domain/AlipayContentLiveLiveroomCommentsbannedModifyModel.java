@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayContentLiveLiveroomCommentsbannedModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6821258182525755511L;
+	private static final long serialVersionUID = 2699316882475971551L;
 
 	/**
 	 * 加密后的直播ID，在直播间操作禁言或者解除禁言的时候传此参数，非直播间操作禁言或者解除禁言可以不传此参数

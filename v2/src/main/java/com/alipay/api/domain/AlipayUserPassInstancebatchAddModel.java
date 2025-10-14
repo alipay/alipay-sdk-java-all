@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 卡券实例批量发放接口
  *
  * @author auto create
- * @since 1.0, 2023-03-20 16:35:06
+ * @since 1.0, 2025-10-13 12:21:00
  */
 public class AlipayUserPassInstancebatchAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8875428679917584498L;
+	private static final long serialVersionUID = 3782347954219938323L;
 
 	/**
 	 * alipass实例操作信息列表。

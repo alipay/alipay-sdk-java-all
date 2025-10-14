@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 卡实例查询
  *
  * @author auto create
- * @since 1.0, 2022-11-04 10:32:30
+ * @since 1.0, 2025-10-13 12:23:24
  */
 public class AlipayUserCardInstanceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7685765589814942294L;
+	private static final long serialVersionUID = 4853293511792444542L;
 
 	/**
 	 * card_no：商家业务系统中的卡号

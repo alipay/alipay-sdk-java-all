@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 回收推广订单信息
  *
  * @author auto create
- * @since 1.0, 2025-09-11 19:55:50
+ * @since 1.0, 2025-10-13 20:53:06
  */
 public class MarketingPromotionOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4691816589785943879L;
+	private static final long serialVersionUID = 7177416661567842853L;
 
 	/**
 	 * 预估金额（固定值）单位为元
@@ -160,6 +160,12 @@ public class MarketingPromotionOrderInfo extends AlipayObject {
 	 */
 	@ApiField("unit_type")
 	private String unitType;
+
+	/**
+	 * 支付宝用户的userId。
+	 */
+	@ApiField("user_id")
+	private String userId;
 
 	public String getAssessAmount() {
 		return this.assessAmount;
@@ -327,6 +333,13 @@ public class MarketingPromotionOrderInfo extends AlipayObject {
 	}
 	public void setUnitType(String unitType) {
 		this.unitType = unitType;
+	}
+
+	public String getUserId() {
+		return this.userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
 
 }

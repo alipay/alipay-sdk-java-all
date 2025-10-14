@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建职业培训考试信息
  *
  * @author auto create
- * @since 1.0, 2025-08-26 19:07:36
+ * @since 1.0, 2025-10-13 16:22:40
  */
 public class AlipayEbppIndustryCareertrainingExamCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6448955593336321277L;
+	private static final long serialVersionUID = 3381157532783328476L;
 
 	/**
 	 * null
@@ -56,7 +56,7 @@ public class AlipayEbppIndustryCareertrainingExamCreateModel extends AlipayObjec
 	private String examName;
 
 	/**
-	 * 考试时间描述
+	 * 考试时间描述，建议输入开始时间和结束时间，逗号分隔。例如：yyyy-MM-dd HH:mm,yyyy-MM-dd HH:mm
 	 */
 	@ApiField("exam_time_notes")
 	private String examTimeNotes;

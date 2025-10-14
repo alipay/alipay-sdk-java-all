@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 文体-视频跟练-同步爱动课程
  *
  * @author auto create
- * @since 1.0, 2023-07-07 16:57:36
+ * @since 1.0, 2025-10-13 13:50:30
  */
 public class AlipayCommerceSportsLessonBackstageSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8566274282177243716L;
+	private static final long serialVersionUID = 7116555639357181122L;
 
 	/**
 	 * 投放结束时间

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayInsCbddoctorStatusSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5685376527733533458L;
+	private static final long serialVersionUID = 3769714614276528662L;
 
 	/**
 	 * 医院内部分配给医生并且提前录入到蚂蚁系统内的工号，用于唯一标识一位医生

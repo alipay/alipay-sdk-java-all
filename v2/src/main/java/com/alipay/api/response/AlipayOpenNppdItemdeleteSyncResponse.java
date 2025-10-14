@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenNppdItemdeleteSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8645591395852294141L;
+	private static final long serialVersionUID = 5613296781541968593L;
 
 	/** 
 	 * 请求标识

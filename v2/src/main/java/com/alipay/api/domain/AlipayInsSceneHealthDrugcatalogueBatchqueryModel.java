@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 健康门诊险药品目录批量查询接口
  *
  * @author auto create
- * @since 1.0, 2023-08-07 19:23:52
+ * @since 1.0, 2025-10-13 19:45:51
  */
 public class AlipayInsSceneHealthDrugcatalogueBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5179361674849213451L;
+	private static final long serialVersionUID = 4563621582517537817L;
 
 	/**
 	 * 蚂蚁合约单号
@@ -49,6 +49,13 @@ public class AlipayInsSceneHealthDrugcatalogueBatchqueryModel extends AlipayObje
 	@ApiField("string")
 	private List<String> itemNameList;
 
+	/**
+	 * 查询时预选药品信息列表
+	 */
+	@ApiListField("pre_select_drug_list")
+	@ApiField("drug_d_t_o")
+	private List<DrugDTO> preSelectDrugList;
+
 	public String getAntSerContractNo() {
 		return this.antSerContractNo;
 	}
@@ -82,6 +89,13 @@ public class AlipayInsSceneHealthDrugcatalogueBatchqueryModel extends AlipayObje
 	}
 	public void setItemNameList(List<String> itemNameList) {
 		this.itemNameList = itemNameList;
+	}
+
+	public List<DrugDTO> getPreSelectDrugList() {
+		return this.preSelectDrugList;
+	}
+	public void setPreSelectDrugList(List<DrugDTO> preSelectDrugList) {
+		this.preSelectDrugList = preSelectDrugList;
 	}
 
 }

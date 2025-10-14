@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayContentLiveLiveroomCommentsbannedModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2761248257236924849L;
+	private static final long serialVersionUID = 1352594394511655614L;
 
 	/** 
 	 * 日志链路ID

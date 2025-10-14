@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RsData extends AlipayObject {
 
-	private static final long serialVersionUID = 3461365826655933999L;
+	private static final long serialVersionUID = 6145459981519366695L;
 
 	/**
 	 * Nimitz 数据表

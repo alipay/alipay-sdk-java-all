@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class SceneCommissionInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1229762491575874213L;
+	private static final long serialVersionUID = 4855137118397625394L;
 
 	/**
 	 * 抽佣结束时间

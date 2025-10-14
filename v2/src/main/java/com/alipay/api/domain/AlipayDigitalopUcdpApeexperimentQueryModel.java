@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDigitalopUcdpApeexperimentQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1557162883866712567L;
+	private static final long serialVersionUID = 3196784726335276551L;
 
 	/**
 	 * 查询实验数据的结束时间

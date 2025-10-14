@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayFinanceQuotationQuotetradeopenSymbolBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2893178324438851985L;
+	private static final long serialVersionUID = 3328316246134113288L;
 
 	/**
 	 * 股票唯一编码，symbol=code.market

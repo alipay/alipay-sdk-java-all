@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MedicalHospitalOrderUploadExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5699594117256485776L;
+	private static final long serialVersionUID = 5716714771923674999L;
 
 	/**
 	 * 叫号进度页面跳转链接，支付宝小程序链接

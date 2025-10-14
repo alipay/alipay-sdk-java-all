@@ -1,22 +1,25 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 活动阶段
  *
  * @author auto create
- * @since 1.0, 2025-08-06 14:57:15
+ * @since 1.0, 2025-10-11 16:07:13
  */
 public class ActivityPhase extends AlipayObject {
 
-	private static final long serialVersionUID = 1857756164739413294L;
+	private static final long serialVersionUID = 7295155986389751895L;
 
 	/**
-	 * 0:无领取；
-1:可领取；
-2:已领取。
+	 * 0:未发放；
+1:发放中；
+2:已发放。
 	 */
 	@ApiField("award_status")
 	private Long awardStatus;
@@ -32,6 +35,13 @@ public class ActivityPhase extends AlipayObject {
 	 */
 	@ApiField("ldp_code")
 	private String ldpCode;
+
+	/**
+	 * 权限奖品列表
+	 */
+	@ApiListField("rewards")
+	@ApiField("activity_reward")
+	private List<ActivityReward> rewards;
 
 	/**
 	 * 目标计数
@@ -58,6 +68,13 @@ public class ActivityPhase extends AlipayObject {
 	}
 	public void setLdpCode(String ldpCode) {
 		this.ldpCode = ldpCode;
+	}
+
+	public List<ActivityReward> getRewards() {
+		return this.rewards;
+	}
+	public void setRewards(List<ActivityReward> rewards) {
+		this.rewards = rewards;
 	}
 
 	public Long getTargetCount() {

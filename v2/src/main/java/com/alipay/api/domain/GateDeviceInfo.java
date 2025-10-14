@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GateDeviceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5439735884258259697L;
+	private static final long serialVersionUID = 5419227257729581146L;
 
 	/**
 	 * 开卡平台支持的门禁厂商，平台会根据小区和门禁厂商，决策对应的开卡设备

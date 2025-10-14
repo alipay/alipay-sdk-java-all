@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.pass.instance.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 17:41:16
+ * @since 1.0, 2025-10-13 12:27:39
  */
 public class AlipayMarketingPassInstanceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2346694733211223392L;
+	private static final long serialVersionUID = 2266732944237719647L;
 
 	/** 
 	 * 卡券实例列表

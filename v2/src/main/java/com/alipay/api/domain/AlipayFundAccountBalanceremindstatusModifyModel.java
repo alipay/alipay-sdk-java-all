@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundAccountBalanceremindstatusModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4864816749553236874L;
+	private static final long serialVersionUID = 8895228963928462798L;
 
 	/**
 	 * 场景码，固定传：MODIFY_PLAN_STATUS

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.trade.test.error.modify request
  * 
  * @author auto create
- * @since 1.0, 2025-10-10 15:02:40
+ * @since 1.0, 2025-10-11 15:02:40
  */
 public class AlipayTradeTestErrorModifyRequest implements AlipayRequest<AlipayTradeTestErrorModifyResponse> {
 

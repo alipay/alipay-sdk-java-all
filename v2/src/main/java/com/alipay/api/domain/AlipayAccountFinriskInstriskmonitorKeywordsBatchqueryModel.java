@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayAccountFinriskInstriskmonitorKeywordsBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4876818336815541891L;
+	private static final long serialVersionUID = 6861232941623218299L;
 
 	/**
 	 * 查询机构关键词

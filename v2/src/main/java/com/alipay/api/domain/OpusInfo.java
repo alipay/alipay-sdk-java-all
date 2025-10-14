@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpusInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2883236448253653455L;
+	private static final long serialVersionUID = 4656816588932857636L;
 
 	/**
 	 * 展示权重；必须大于等于0；排序规则：权重倒叙;默认值为0

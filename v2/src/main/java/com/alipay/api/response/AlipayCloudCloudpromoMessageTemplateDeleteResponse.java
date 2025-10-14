@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudCloudpromoMessageTemplateDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5311722284674242793L;
+	private static final long serialVersionUID = 7245241436979932852L;
 
 	/** 
 	 * 短信模板Code

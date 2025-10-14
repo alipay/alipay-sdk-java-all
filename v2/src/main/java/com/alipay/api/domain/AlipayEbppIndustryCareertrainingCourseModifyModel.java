@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改职业培训课程信息
  *
  * @author auto create
- * @since 1.0, 2025-08-27 17:27:36
+ * @since 1.0, 2025-10-13 16:22:39
  */
 public class AlipayEbppIndustryCareertrainingCourseModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3322661755531189868L;
+	private static final long serialVersionUID = 6643296679483356145L;
 
 	/**
 	 * null
@@ -32,7 +32,7 @@ public class AlipayEbppIndustryCareertrainingCourseModifyModel extends AlipayObj
 
 	/**
 	 * 课程封面视频
-生活号视频id,非URL。获取方式见：<a href="https://adccloud.yuque.com/adccloud/abilitywarehouse/cggokr7us69cxxo8?singleDoc#" target="_blank">链接</a>
+生活号视频id,非URL。
 	 */
 	@ApiField("course_cover_video")
 	private String courseCoverVideo;

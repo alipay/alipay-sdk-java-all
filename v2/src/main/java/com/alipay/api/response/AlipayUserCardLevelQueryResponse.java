@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.card.level.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-14 12:07:37
+ * @since 1.0, 2025-10-13 12:22:52
  */
 public class AlipayUserCardLevelQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4322472324399611797L;
+	private static final long serialVersionUID = 1192374992744487571L;
 
 	/** 
 	 * card_level_configs：卡等级配置

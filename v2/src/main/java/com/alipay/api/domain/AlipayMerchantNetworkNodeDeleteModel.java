@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantNetworkNodeDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1238953122735738965L;
+	private static final long serialVersionUID = 5786546559256559363L;
 
 	/**
 	 * 商家的网络节点ID，一般为商家系统的公司，部门等关系之间的唯一ID

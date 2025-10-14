@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.careertraining.exam.create request
  * 
  * @author auto create
- * @since 1.0, 2025-08-26 19:07:36
+ * @since 1.0, 2025-10-13 16:22:40
  */
 public class AlipayEbppIndustryCareertrainingExamCreateRequest implements AlipayRequest<AlipayEbppIndustryCareertrainingExamCreateResponse> {
 

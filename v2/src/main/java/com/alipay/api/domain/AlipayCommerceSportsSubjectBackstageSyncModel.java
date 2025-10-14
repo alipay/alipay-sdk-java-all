@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 文体-视频跟练-同步爱动主题
  *
  * @author auto create
- * @since 1.0, 2023-07-07 16:58:05
+ * @since 1.0, 2025-10-13 13:49:30
  */
 public class AlipayCommerceSportsSubjectBackstageSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5721711829388871865L;
+	private static final long serialVersionUID = 1277743842691782491L;
 
 	/**
 	 * 主题列表
