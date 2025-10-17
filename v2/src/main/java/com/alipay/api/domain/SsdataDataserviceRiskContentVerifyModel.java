@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SsdataDataserviceRiskContentVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2151317674443746984L;
+	private static final long serialVersionUID = 3435415782315316142L;
 
 	/**
 	 * 需要识别的文本，不要包含特殊字符以及双引号等可能引起json格式化错误问题的字符

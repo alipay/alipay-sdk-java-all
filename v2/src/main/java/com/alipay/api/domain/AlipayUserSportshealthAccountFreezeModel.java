@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 冻结运动币账户运动币数量
  *
  * @author auto create
- * @since 1.0, 2025-08-28 14:19:05
+ * @since 1.0, 2025-10-17 16:47:31
  */
 public class AlipayUserSportshealthAccountFreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4618483135539165474L;
+	private static final long serialVersionUID = 1129631758281321242L;
 
 	/**
 	 * 账户流水明细描述，会展示在用户运动币明细列表中

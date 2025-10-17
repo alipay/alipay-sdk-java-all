@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EbppOrderItem extends AlipayObject {
 
-	private static final long serialVersionUID = 7489976386382485567L;
+	private static final long serialVersionUID = 5513347123391499421L;
 
 	/**
 	 * 支付宝对该子项所代表的这笔业务的唯一标识。

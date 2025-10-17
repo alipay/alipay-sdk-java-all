@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMedicalPaymentPreconsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2799341619191381435L;
+	private static final long serialVersionUID = 7212578226874494479L;
 
 	/** 
 	 * 激活医保电子凭证地址。当result=1时返回。如果请求参数中有callbackURL，那么当用户完成医保电子凭证激活操作后后自动回跳至callbackURL指向的页面

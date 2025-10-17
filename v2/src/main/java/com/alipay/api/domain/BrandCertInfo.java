@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BrandCertInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6266574487366633494L;
+	private static final long serialVersionUID = 6535272499868799398L;
 
 	/**
 	 * 是否完成品牌认证

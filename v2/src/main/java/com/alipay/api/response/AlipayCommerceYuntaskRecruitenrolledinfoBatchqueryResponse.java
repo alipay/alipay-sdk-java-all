@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceYuntaskRecruitenrolledinfoBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8863983663399129459L;
+	private static final long serialVersionUID = 7616646891171929857L;
 
 	/** 
 	 * 招商报名记录

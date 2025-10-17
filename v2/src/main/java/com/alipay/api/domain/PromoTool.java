@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PromoTool extends AlipayObject {
 
-	private static final long serialVersionUID = 1375295152796421978L;
+	private static final long serialVersionUID = 4463649664773565772L;
 
 	/**
 	 * 集点卡工具，仅在活动类型为POINT_SEND时才有效且必填，其他活动类型此字段必须为null

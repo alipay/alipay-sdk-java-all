@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HonorRepayApplyTermDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6616382897171145493L;
+	private static final long serialVersionUID = 1183925521536955382L;
 
 	/**
 	 * 本期还款总额，单位：分

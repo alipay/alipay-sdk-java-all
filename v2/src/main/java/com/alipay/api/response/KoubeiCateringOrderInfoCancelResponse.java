@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiCateringOrderInfoCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7283269835287775842L;
+	private static final long serialVersionUID = 6876722729673611357L;
 
 	/** 
 	 * 是否需要重试,true-需要重试 ,false-不需要重试

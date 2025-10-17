@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ItemGwDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3452751279288576655L;
+	private static final long serialVersionUID = 5259856933974843227L;
 
 	/**
 	 * 该事项的办理需要前提的条件

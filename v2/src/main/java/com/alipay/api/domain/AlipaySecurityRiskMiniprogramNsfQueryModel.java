@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序云行业风险识别坏账
  *
  * @author auto create
- * @since 1.0, 2023-06-07 09:51:58
+ * @since 1.0, 2025-10-15 11:06:15
  */
 public class AlipaySecurityRiskMiniprogramNsfQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5541127259292544379L;
+	private static final long serialVersionUID = 2873213543979236876L;
 
 	/**
 	 * 终端唯一标识

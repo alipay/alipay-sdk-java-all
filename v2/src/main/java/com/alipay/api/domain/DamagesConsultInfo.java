@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 违约金咨询信息
  *
  * @author auto create
- * @since 1.0, 2024-11-28 14:38:54
+ * @since 1.0, 2025-10-17 17:27:43
  */
 public class DamagesConsultInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2838872951154752818L;
+	private static final long serialVersionUID = 7621844674276359767L;
 
 	/**
 	 * 是否可以退卡

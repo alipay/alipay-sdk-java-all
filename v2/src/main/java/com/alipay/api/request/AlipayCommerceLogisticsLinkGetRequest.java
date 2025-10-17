@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.logistics.link.get request
  * 
  * @author auto create
- * @since 1.0, 2025-06-11 10:07:28
+ * @since 1.0, 2025-10-14 16:40:20
  */
 public class AlipayCommerceLogisticsLinkGetRequest implements AlipayRequest<AlipayCommerceLogisticsLinkGetResponse> {
 

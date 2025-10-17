@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CampusCardPicture extends AlipayObject {
 
-	private static final long serialVersionUID = 2187419994237395952L;
+	private static final long serialVersionUID = 2695826921928818281L;
 
 	/**
 	 * 枚举类型：内页（1）、外页 （2）、录取通知书（3）

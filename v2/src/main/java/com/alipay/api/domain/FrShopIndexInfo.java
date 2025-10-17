@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FrShopIndexInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1646859114327778251L;
+	private static final long serialVersionUID = 4159893812721485628L;
 
 	/**
 	 * 数据月份

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayFinancialnetAuthEcsignTemplateSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3475626727965463267L;
+	private static final long serialVersionUID = 2747252774878149826L;
 
 	/**
 	 * 企业印章类型矩形框组件可选。

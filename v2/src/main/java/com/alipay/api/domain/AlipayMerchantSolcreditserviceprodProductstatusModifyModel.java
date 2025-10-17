@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantSolcreditserviceprodProductstatusModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4516235358411296559L;
+	private static final long serialVersionUID = 2159933758442841562L;
 
 	/**
 	 * 系统生成的商品编号

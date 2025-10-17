@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 安心付违约金信息
  *
  * @author auto create
- * @since 1.0, 2024-11-28 14:38:54
+ * @since 1.0, 2025-10-17 17:27:43
  */
 public class DamagesInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8632581768596577594L;
+	private static final long serialVersionUID = 1142771924137973257L;
 
 	/**
 	 * 创建时间

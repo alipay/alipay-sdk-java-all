@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.risk.miniprogram.farming.query request
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:29:15
+ * @since 1.0, 2025-10-15 11:06:01
  */
 public class AlipaySecurityRiskMiniprogramFarmingQueryRequest implements AlipayRequest<AlipaySecurityRiskMiniprogramFarmingQueryResponse> {
 

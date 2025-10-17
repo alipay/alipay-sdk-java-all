@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceYuntaskTestpassTriggerResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5793183421986571977L;
+	private static final long serialVersionUID = 5575469995877712262L;
 
 	
 

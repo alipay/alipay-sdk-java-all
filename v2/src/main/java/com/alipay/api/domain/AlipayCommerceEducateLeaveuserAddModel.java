@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceEducateLeaveuserAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7659659247512928315L;
+	private static final long serialVersionUID = 6845815151867237762L;
 
 	/**
 	 * 请假结束时间，格式yyyy-MM-dd HH:mm

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * UpdatePartnerRequest
  *
  * @author auto create
- * @since 1.0, 2023-10-19 09:49:14
+ * @since 1.0, 2025-10-16 15:38:25
  */
 public class UpdatePartnerRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 5424774171168148865L;
+	private static final long serialVersionUID = 3684998878454586474L;
 
 	/**
 	 * bd

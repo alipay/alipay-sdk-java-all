@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ApeRecommendStrategy extends AlipayObject {
 
-	private static final long serialVersionUID = 7362235228655393815L;
+	private static final long serialVersionUID = 1492112799329458349L;
 
 	/**
 	 * 点击疲劳的时间间隔，30m表示30分钟，1h表示1小时

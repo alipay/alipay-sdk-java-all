@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.poi.vending.upload request
  * 
  * @author auto create
- * @since 1.0, 2025-08-13 15:07:42
+ * @since 1.0, 2025-10-15 19:47:32
  */
 public class AlipayCommerceOperationPoiVendingUploadRequest implements AlipayRequest<AlipayCommerceOperationPoiVendingUploadResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceYuntaskRefuseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8846328551838738737L;
+	private static final long serialVersionUID = 7484621284358337595L;
 
 	
 

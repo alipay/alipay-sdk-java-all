@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.customer.zmcard.professional.add response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-10 17:12:04
+ * @since 1.0, 2025-10-15 15:02:29
  */
 public class ZhimaCustomerZmcardProfessionalAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3875118844698621246L;
+	private static final long serialVersionUID = 2487317954922758392L;
 
 	
 

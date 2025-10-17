@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class SignInBonusStrategy extends AlipayObject {
 
-	private static final long serialVersionUID = 5455547888383591871L;
+	private static final long serialVersionUID = 4731452315569642888L;
 
 	/**
 	 * 次数上限（发奖的最大签到次数）

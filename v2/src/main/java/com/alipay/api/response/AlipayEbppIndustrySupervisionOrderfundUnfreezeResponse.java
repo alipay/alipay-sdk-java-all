@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.supervision.orderfund.unfreeze response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-12 13:17:38
+ * @since 1.0, 2025-10-14 19:17:39
  */
 public class AlipayEbppIndustrySupervisionOrderfundUnfreezeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8215522364595716172L;
+	private static final long serialVersionUID = 6182437388938558345L;
 
 	/** 
 	 * 订单金额，整数，单位分

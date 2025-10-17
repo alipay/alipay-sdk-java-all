@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceTransportIntelligentizeChargescheduleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6731594151927293967L;
+	private static final long serialVersionUID = 7261764122557388138L;
 
 	/**
 	 * 充电规划模式

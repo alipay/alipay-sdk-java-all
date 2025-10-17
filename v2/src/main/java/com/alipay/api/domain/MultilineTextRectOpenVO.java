@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MultilineTextRectOpenVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4542726673532859268L;
+	private static final long serialVersionUID = 6358221423615426729L;
 
 	/**
 	 * X轴偏移量，相对当前页左下角原点的X轴偏移量，非负数值，最大取值497，由用户输入，请注意取值范围。

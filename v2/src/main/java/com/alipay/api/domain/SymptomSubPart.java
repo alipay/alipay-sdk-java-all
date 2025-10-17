@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class SymptomSubPart extends AlipayObject {
 
-	private static final long serialVersionUID = 5699362832815654762L;
+	private static final long serialVersionUID = 7222374224455923832L;
 
 	/**
 	 * 标志

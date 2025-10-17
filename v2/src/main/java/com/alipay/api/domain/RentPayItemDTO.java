@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RentPayItemDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7773784795999264571L;
+	private static final long serialVersionUID = 1525456152379758791L;
 
 	/**
 	 * 费用金额，单位：元，精确到小数点后两位。 当前字段已废弃(不再需要商户传该字段)

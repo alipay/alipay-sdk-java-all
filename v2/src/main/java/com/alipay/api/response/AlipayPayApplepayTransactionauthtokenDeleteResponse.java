@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pay.applepay.transactionauthtoken.delete response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 01:16:46
+ * @since 1.0, 2025-10-15 10:56:12
  */
 public class AlipayPayApplepayTransactionauthtokenDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4644551538422392965L;
+	private static final long serialVersionUID = 3422415881318685169L;
 
 	/** 
 	 * 响应报文头部

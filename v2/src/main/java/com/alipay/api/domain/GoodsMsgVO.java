@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class GoodsMsgVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3863524325763912764L;
+	private static final long serialVersionUID = 1295124375661421365L;
 
 	/**
 	 * 多个商品投放类型支持优惠券

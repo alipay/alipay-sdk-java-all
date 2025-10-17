@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 激励交易回传
  *
  * @author auto create
- * @since 1.0, 2025-09-16 14:36:35
+ * @since 1.0, 2025-10-14 16:55:05
  */
 public class AlipayCommerceLogisticsTradeEventSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8467843769619345552L;
+	private static final long serialVersionUID = 8494282688517424461L;
 
 	/**
 	 * 支付宝交易号
@@ -48,6 +48,15 @@ public class AlipayCommerceLogisticsTradeEventSyncModel extends AlipayObject {
 	 */
 	@ApiField("material_type")
 	private String materialType;
+
+	/**
+	 * true 代表仅记录，不激励快递员
+false 代表正常记录，并激励快递员
+
+默认false
+	 */
+	@ApiField("only_record")
+	private Boolean onlyRecord;
 
 	/**
 	 * ALIPAY 支付宝操作渠道
@@ -120,6 +129,13 @@ OTHER 其他渠道
 	}
 	public void setMaterialType(String materialType) {
 		this.materialType = materialType;
+	}
+
+	public Boolean getOnlyRecord() {
+		return this.onlyRecord;
+	}
+	public void setOnlyRecord(Boolean onlyRecord) {
+		this.onlyRecord = onlyRecord;
 	}
 
 	public String getOperationSource() {

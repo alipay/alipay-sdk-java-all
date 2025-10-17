@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序云行业风险识别刷单
  *
  * @author auto create
- * @since 1.0, 2023-06-07 09:52:18
+ * @since 1.0, 2025-10-15 11:06:01
  */
 public class AlipaySecurityRiskMiniprogramFarmingQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3125463741424665319L;
+	private static final long serialVersionUID = 3643478761593355163L;
 
 	/**
 	 * 银行卡号，如无法提供，可填写为空值（null）

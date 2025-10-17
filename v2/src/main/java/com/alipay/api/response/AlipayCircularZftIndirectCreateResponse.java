@@ -8,11 +8,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.circular.zft.indirect.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-10-13 16:38:16
+ * @since 1.0, 2025-10-16 10:37:39
  */
 public class AlipayCircularZftIndirectCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2731768697598472967L;
+	private static final long serialVersionUID = 7754841816634914928L;
+
+	/** 
+	 * 签约状态
+	 */
+	@ApiField("prod_confirm")
+	private String prodConfirm;
 
 	/** 
 	 * 进件申请单中的二级商户openid
@@ -31,6 +37,19 @@ public class AlipayCircularZftIndirectCreateResponse extends AlipayResponse {
 	 */
 	@ApiField("status")
 	private String status;
+
+	/** 
+	 * 二级商户确认状态
+	 */
+	@ApiField("sub_confirm")
+	private String subConfirm;
+
+	public void setProdConfirm(String prodConfirm) {
+		this.prodConfirm = prodConfirm;
+	}
+	public String getProdConfirm( ) {
+		return this.prodConfirm;
+	}
 
 	public void setRelationOpenid(String relationOpenid) {
 		this.relationOpenid = relationOpenid;
@@ -51,6 +70,13 @@ public class AlipayCircularZftIndirectCreateResponse extends AlipayResponse {
 	}
 	public String getStatus( ) {
 		return this.status;
+	}
+
+	public void setSubConfirm(String subConfirm) {
+		this.subConfirm = subConfirm;
+	}
+	public String getSubConfirm( ) {
+		return this.subConfirm;
 	}
 
 }

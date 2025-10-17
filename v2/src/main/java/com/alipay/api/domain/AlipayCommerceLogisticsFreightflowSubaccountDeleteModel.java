@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 货运企业支付子户销户
  *
  * @author auto create
- * @since 1.0, 2025-07-02 17:39:35
+ * @since 1.0, 2025-10-16 15:21:21
  */
 public class AlipayCommerceLogisticsFreightflowSubaccountDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7861942179686967124L;
+	private static final long serialVersionUID = 2461968427124695215L;
 
 	/**
 	 * 物流公司编码

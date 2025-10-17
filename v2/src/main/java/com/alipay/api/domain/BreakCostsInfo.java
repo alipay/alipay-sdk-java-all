@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 违约金信息
  *
  * @author auto create
- * @since 1.0, 2025-04-28 22:35:21
+ * @since 1.0, 2025-10-17 17:27:49
  */
 public class BreakCostsInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4441527481458432861L;
+	private static final long serialVersionUID = 8357318451747394821L;
 
 	/**
 	 * 卡到期后是否收取违约金，默认01
@@ -36,6 +36,12 @@ public class BreakCostsInfo extends AlipayObject {
 	 */
 	@ApiField("damages_type")
 	private String damagesType;
+
+	/**
+	 * 该字段含义根据违约金模式的值来确定，当违约金模式=固定违约金时，表示的是固定违约金的金额（单位元）
+	 */
+	@ApiField("damages_value")
+	private String damagesValue;
 
 	/**
 	 * 用于设置是否支持免违约金规则
@@ -81,6 +87,13 @@ public class BreakCostsInfo extends AlipayObject {
 	}
 	public void setDamagesType(String damagesType) {
 		this.damagesType = damagesType;
+	}
+
+	public String getDamagesValue() {
+		return this.damagesValue;
+	}
+	public void setDamagesValue(String damagesValue) {
+		this.damagesValue = damagesValue;
 	}
 
 	public String getNoBreakCostsFlag() {

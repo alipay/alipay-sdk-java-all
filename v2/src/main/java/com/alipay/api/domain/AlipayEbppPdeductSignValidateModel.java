@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppPdeductSignValidateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8691821214267527474L;
+	private static final long serialVersionUID = 6477166854288247114L;
 
 	/**
 	 * 机构签约代扣来源渠道

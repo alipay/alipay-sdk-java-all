@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁直付通进件申请
  *
  * @author auto create
- * @since 1.0, 2025-09-22 14:16:37
+ * @since 1.0, 2025-10-16 10:37:37
  */
 public class AlipayCircularZftIndirectCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7386786125784752388L;
+	private static final long serialVersionUID = 3373556844445857549L;
 
 	/**
 	 * 签约支付宝账户

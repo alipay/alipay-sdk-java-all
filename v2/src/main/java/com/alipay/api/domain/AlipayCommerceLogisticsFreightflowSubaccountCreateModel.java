@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 货运企业支付子户开户
  *
  * @author auto create
- * @since 1.0, 2025-07-02 19:15:54
+ * @since 1.0, 2025-10-16 15:21:26
  */
 public class AlipayCommerceLogisticsFreightflowSubaccountCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6888722631181647696L;
+	private static final long serialVersionUID = 6113785311656341831L;
 
 	/**
 	 * 物流公司编码

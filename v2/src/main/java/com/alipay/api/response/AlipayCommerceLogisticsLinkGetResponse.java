@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.logistics.link.get response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-11 10:07:28
+ * @since 1.0, 2025-10-14 16:40:20
  */
 public class AlipayCommerceLogisticsLinkGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3736458299545869837L;
+	private static final long serialVersionUID = 7116543333558654745L;
 
 	/** 
 	 * 根据请求logistics_wallet_open返回

@@ -12,7 +12,7 @@ content 的数据结构与 type 相关，即 type 决定 content 中的内容。
  */
 public class ChatMsg extends AlipayObject {
 
-	private static final long serialVersionUID = 5128742596848851357L;
+	private static final long serialVersionUID = 7486768131858778415L;
 
 	/**
 	 * 消息的具体内容

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 卡使用信息
  *
  * @author auto create
- * @since 1.0, 2025-09-10 10:50:47
+ * @since 1.0, 2025-10-17 17:27:47
  */
 public class CardTemplateUse extends AlipayObject {
 
-	private static final long serialVersionUID = 6877358677294323675L;
+	private static final long serialVersionUID = 8343839423483764464L;
 
 	/**
 	 * 周期付需要配置周期信息
@@ -40,6 +40,12 @@ public class CardTemplateUse extends AlipayObject {
 	@ApiListField("period_price_list")
 	@ApiField("card_period_price")
 	private List<CardPeriodPrice> periodPriceList;
+
+	/**
+	 * 购卡须知信息，可以设置适用人群，适用人数，预约规则，用于卡详情展示。
+	 */
+	@ApiField("purchase_notice")
+	private CardPurchaseNotice purchaseNotice;
 
 	/**
 	 * 周期付场景下预约链接，填写小程序地址。当card_type= PERIOD_PAY时生效。
@@ -112,6 +118,13 @@ public class CardTemplateUse extends AlipayObject {
 	}
 	public void setPeriodPriceList(List<CardPeriodPrice> periodPriceList) {
 		this.periodPriceList = periodPriceList;
+	}
+
+	public CardPurchaseNotice getPurchaseNotice() {
+		return this.purchaseNotice;
+	}
+	public void setPurchaseNotice(CardPurchaseNotice purchaseNotice) {
+		this.purchaseNotice = purchaseNotice;
 	}
 
 	public String getReservationUrl() {
