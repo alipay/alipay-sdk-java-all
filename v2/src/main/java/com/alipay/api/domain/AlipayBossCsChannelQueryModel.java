@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayBossCsChannelQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6438437595654187517L;
+	private static final long serialVersionUID = 7737396462379265727L;
 
 	/**
 	 * 平均通话时长的qualifier

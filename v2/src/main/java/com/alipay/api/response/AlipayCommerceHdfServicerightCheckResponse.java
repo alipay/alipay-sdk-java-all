@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.hdf.serviceright.check response.
  * 
  * @author auto create
- * @since 1.0, 2025-10-17 17:25:21
+ * @since 1.0, 2025-10-20 20:31:43
  */
 public class AlipayCommerceHdfServicerightCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4665716412497957175L;
+	private static final long serialVersionUID = 8353348616151592131L;
 
 	/** 
 	 * 业务身份

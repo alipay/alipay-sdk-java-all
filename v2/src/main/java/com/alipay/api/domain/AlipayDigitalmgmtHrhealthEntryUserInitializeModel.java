@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDigitalmgmtHrhealthEntryUserInitializeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6534321835264593617L;
+	private static final long serialVersionUID = 4834143471941711531L;
 
 	/**
 	 * 账号，候选人登陆爱康系统的账号，由供应商系统生成传回，用于给候选人发送邮件时带入，让候选人可以登陆供应商系统

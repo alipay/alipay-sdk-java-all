@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ShowText extends AlipayObject {
 
-	private static final long serialVersionUID = 5789419685756277871L;
+	private static final long serialVersionUID = 4659697896838389847L;
 
 	/**
 	 * 订单对应的菜品档口信息，用于小程序页面文案展示，如：早餐/午餐/晚餐/夜宵

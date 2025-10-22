@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceEducateSemesterInfoSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5117238299237792764L;
+	private static final long serialVersionUID = 1176423944978467587L;
 
 	/**
 	 * 学期结束日期，格式：yyyyMMdd

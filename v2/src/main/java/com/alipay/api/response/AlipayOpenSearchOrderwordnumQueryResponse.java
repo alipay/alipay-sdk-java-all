@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenSearchOrderwordnumQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5854826628325816785L;
+	private static final long serialVersionUID = 2299332951564178599L;
 
 	/** 
 	 * 可配置关键词数量

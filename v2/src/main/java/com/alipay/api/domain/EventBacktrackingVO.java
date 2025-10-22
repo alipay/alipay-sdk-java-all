@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EventBacktrackingVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8411355888427862595L;
+	private static final long serialVersionUID = 5282656811895291185L;
 
 	/**
 	 * 支付宝内容ID

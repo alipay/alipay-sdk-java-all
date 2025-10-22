@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商家群小助手定向消息创建
  *
  * @author auto create
- * @since 1.0, 2025-08-27 10:20:45
+ * @since 1.0, 2025-10-22 09:34:45
  */
 public class AlipayMerchantGroupAssistantMsgCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6757415767452121796L;
+	private static final long serialVersionUID = 7144791295654417827L;
 
 	/**
 	 * 自定义活动类型的消息内容，对应biz_type 为 activity_recommend 时必须传相关内容

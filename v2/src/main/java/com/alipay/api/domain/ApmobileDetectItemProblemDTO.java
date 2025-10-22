@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ApmobileDetectItemProblemDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1337689214349388752L;
+	private static final long serialVersionUID = 1236257397123679627L;
 
 	/**
 	 * 检测项子项目

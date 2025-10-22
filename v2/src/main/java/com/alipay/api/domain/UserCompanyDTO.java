@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class UserCompanyDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2696643989119137657L;
+	private static final long serialVersionUID = 8577883649316952685L;
 
 	/**
 	 * 实体id

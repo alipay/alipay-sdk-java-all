@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportTravelRecordQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7658328737727675832L;
+	private static final long serialVersionUID = 4436325782921874531L;
 
 	/**
 	 * 结束时间，精确到秒，小于结束时间（不包含结束时间）

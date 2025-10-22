@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenSpNcardadvertiseTaskQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7561191351232517446L;
+	private static final long serialVersionUID = 3169736655932261325L;
 
 	/** 
 	 * 线圈作业单列表

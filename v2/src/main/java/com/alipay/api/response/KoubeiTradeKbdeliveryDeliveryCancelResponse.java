@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiTradeKbdeliveryDeliveryCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2149819795722566566L;
+	private static final long serialVersionUID = 8772374513574422375L;
 
 	/** 
 	 * 成功关闭时间，时间格式:

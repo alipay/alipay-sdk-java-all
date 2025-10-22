@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.customer.zmcard.identity.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-10 11:57:04
+ * @since 1.0, 2025-10-21 19:32:40
  */
 public class ZhimaCustomerZmcardIdentityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6155372973462896486L;
+	private static final long serialVersionUID = 5625245293565298413L;
 
 	/** 
 	 * 通过该URL可以跳转到芝麻证身份账户详情页面，有效期10分钟。如果是主态访问，已授权的情况下才会返回该链接；如果是客态访问，持证人已授权且身份验证通过的情况下才会返回该链接

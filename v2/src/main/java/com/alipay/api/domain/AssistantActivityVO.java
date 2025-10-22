@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小助手活动模型
  *
  * @author auto create
- * @since 1.0, 2024-06-11 12:10:20
+ * @since 1.0, 2025-10-22 09:34:45
  */
 public class AssistantActivityVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3145599822599638913L;
+	private static final long serialVersionUID = 3583639197932355839L;
 
 	/**
 	 * 活动跳转行动点
@@ -30,6 +30,12 @@ public class AssistantActivityVO extends AlipayObject {
 	 */
 	@ApiField("crowd_code")
 	private String crowdCode;
+
+	/**
+	 * 人群类型
+	 */
+	@ApiField("crowd_type")
+	private String crowdType;
 
 	/**
 	 * 活动描述，可以不填
@@ -68,6 +74,13 @@ public class AssistantActivityVO extends AlipayObject {
 	}
 	public void setCrowdCode(String crowdCode) {
 		this.crowdCode = crowdCode;
+	}
+
+	public String getCrowdType() {
+		return this.crowdType;
+	}
+	public void setCrowdType(String crowdType) {
+		this.crowdType = crowdType;
 	}
 
 	public String getDesc() {

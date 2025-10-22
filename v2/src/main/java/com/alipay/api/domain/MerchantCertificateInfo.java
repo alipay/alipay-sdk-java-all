@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MerchantCertificateInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4493836643984465912L;
+	private static final long serialVersionUID = 3627656893977339159L;
 
 	/**
 	 * 证件背面url，图片通过通过 ant.merchant.expand.indirect.image.upload 接口上传图片后得到的 image_id

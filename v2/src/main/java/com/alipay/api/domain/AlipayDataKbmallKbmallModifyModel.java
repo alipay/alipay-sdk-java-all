@@ -10,7 +10,7 @@ import com.alipay.api.AlipayObject;
  */
 public class AlipayDataKbmallKbmallModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4449431425638519763L;
+	private static final long serialVersionUID = 1581119593251988522L;
 
 	
 

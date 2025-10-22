@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.customer.zmcard.carowner.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-10-17 17:47:40
+ * @since 1.0, 2025-10-22 10:22:40
  */
 public class ZhimaCustomerZmcardCarownerQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3674571457384892785L;
+	private static final long serialVersionUID = 5187596355932843569L;
 
 	/** 
 	 * 车主名片驾驶证信息

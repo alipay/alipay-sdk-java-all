@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.member.chat.query request
  * 
  * @author auto create
- * @since 1.0, 2025-09-29 15:37:39
+ * @since 1.0, 2025-10-21 19:26:31
  */
 public class AlipayCommerceMedicalMemberChatQueryRequest implements AlipayRequest<AlipayCommerceMedicalMemberChatQueryResponse> {
 

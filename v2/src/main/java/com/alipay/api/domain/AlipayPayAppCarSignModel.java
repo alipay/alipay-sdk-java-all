@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPayAppCarSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6284523349747626158L;
+	private static final long serialVersionUID = 3538129449323786356L;
 
 	/**
 	 * 当前登录的用户ID

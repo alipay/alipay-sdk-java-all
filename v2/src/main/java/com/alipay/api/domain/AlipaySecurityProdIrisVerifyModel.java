@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySecurityProdIrisVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6722227353652627812L;
+	private static final long serialVersionUID = 2224271353966118268L;
 
 	/**
 	 * 虹膜校验的关联token，用于二次校验

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 合同同步接口
  *
  * @author auto create
- * @since 1.0, 2025-09-22 13:37:56
+ * @since 1.0, 2025-10-21 15:04:15
  */
 public class AlipayBossFncGfsettleprodGfcontractcenterCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5739392712448873526L;
+	private static final long serialVersionUID = 8419314239253279824L;
 
 	/**
 	 * 用于承载合同同步信息

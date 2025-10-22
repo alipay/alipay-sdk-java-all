@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取物流业务场景链接
  *
  * @author auto create
- * @since 1.0, 2025-10-14 16:40:20
+ * @since 1.0, 2025-10-21 16:42:40
  */
 public class AlipayCommerceLogisticsLinkGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8896397838165455576L;
+	private static final long serialVersionUID = 3121517581996245443L;
+
+	/**
+	 * 小件员和驿站结算的支付宝账号
+	 */
+	@ApiField("expressman_alipay_logon_id")
+	private String expressmanAlipayLogonId;
 
 	/**
 	 * 物流产品配置生成，用于标识物流业务场景以及执行的动作
@@ -48,6 +54,13 @@ public class AlipayCommerceLogisticsLinkGetModel extends AlipayObject {
 	 */
 	@ApiField("merchant_station_shop_id")
 	private String merchantStationShopId;
+
+	public String getExpressmanAlipayLogonId() {
+		return this.expressmanAlipayLogonId;
+	}
+	public void setExpressmanAlipayLogonId(String expressmanAlipayLogonId) {
+		this.expressmanAlipayLogonId = expressmanAlipayLogonId;
+	}
 
 	public String getLogisticsBizSceneAction() {
 		return this.logisticsBizSceneAction;

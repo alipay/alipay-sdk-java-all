@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.circular.agreement.sign response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-24 16:32:41
+ * @since 1.0, 2025-10-22 10:24:15
  */
 public class AlipayCircularAgreementSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1738532474836499278L;
+	private static final long serialVersionUID = 4174645223848146957L;
 
 	/** 
 	 * 签约状态
@@ -21,7 +21,7 @@ public class AlipayCircularAgreementSignResponse extends AlipayResponse {
 	private String status;
 
 	/** 
-	 * 代扣页面链接
+	 * 代扣页面链接，与sign_channel关联
 	 */
 	@ApiField("url")
 	private String url;

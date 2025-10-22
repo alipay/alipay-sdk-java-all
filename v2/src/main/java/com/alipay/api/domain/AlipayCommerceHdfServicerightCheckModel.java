@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 好大夫域外请求域内做权益校验
  *
  * @author auto create
- * @since 1.0, 2025-10-17 17:25:21
+ * @since 1.0, 2025-10-20 20:31:43
  */
 public class AlipayCommerceHdfServicerightCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6764814472758137468L;
+	private static final long serialVersionUID = 1465651277969782186L;
 
 	/**
 	 * 业务身份

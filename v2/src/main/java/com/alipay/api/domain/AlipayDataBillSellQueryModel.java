@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataBillSellQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2775584822836579167L;
+	private static final long serialVersionUID = 5722639274642573381L;
 
 	/**
 	 * 支付宝交易流水号。如果查询参数中指定流水号，则只查询流水号相关的记录

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PeriodPayBillingRuleDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5432153815132817742L;
+	private static final long serialVersionUID = 6159181174197149876L;
 
 	/**
 	 * 每期动态类型必填

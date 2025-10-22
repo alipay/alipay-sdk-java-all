@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.terminal.edgecloud.swnetflow.cardfull.sync request
  * 
  * @author auto create
- * @since 1.0, 2025-07-28 15:18:03
+ * @since 1.0, 2025-10-21 13:52:40
  */
 public class AlipayTerminalEdgecloudSwnetflowCardfullSyncRequest implements AlipayRequest<AlipayTerminalEdgecloudSwnetflowCardfullSyncResponse> {
 

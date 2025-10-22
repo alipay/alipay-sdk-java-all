@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻车主名片双证信息查询
  *
  * @author auto create
- * @since 1.0, 2025-10-17 10:20:18
+ * @since 1.0, 2025-10-22 10:15:57
  */
 public class ZhimaCustomerZmcardCarownerQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3182232558852347586L;
+	private static final long serialVersionUID = 4256773689713785229L;
 
 	/**
 	 * 真实姓名

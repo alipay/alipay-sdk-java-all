@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻车主名片车辆信息
  *
  * @author auto create
- * @since 1.0, 2025-10-17 10:20:18
+ * @since 1.0, 2025-10-22 10:04:32
  */
 public class ZmCarOwnerVehicleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7613663731738785757L;
+	private static final long serialVersionUID = 2636824185157269828L;
 
 	/**
 	 * 车牌号
@@ -42,6 +42,12 @@ public class ZmCarOwnerVehicleInfo extends AlipayObject {
 	 */
 	@ApiField("vehicle_register_date")
 	private String vehicleRegisterDate;
+
+	/**
+	 * 车辆类型
+	 */
+	@ApiField("vehicle_type")
+	private String vehicleType;
 
 	/**
 	 * 车辆使用性质
@@ -94,6 +100,13 @@ public class ZmCarOwnerVehicleInfo extends AlipayObject {
 	}
 	public void setVehicleRegisterDate(String vehicleRegisterDate) {
 		this.vehicleRegisterDate = vehicleRegisterDate;
+	}
+
+	public String getVehicleType() {
+		return this.vehicleType;
+	}
+	public void setVehicleType(String vehicleType) {
+		this.vehicleType = vehicleType;
 	}
 
 	public String getVehicleUsage() {

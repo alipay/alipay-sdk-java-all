@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 高德门店信息修改同步给支付宝
  *
  * @author auto create
- * @since 1.0, 2025-10-10 14:20:16
+ * @since 1.0, 2025-10-21 11:19:42
  */
 public class AntMerchantExpandDigitalgroupApplyModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1587164875567188292L;
+	private static final long serialVersionUID = 4269189585538281964L;
 
 	/**
 	 * 高德门店地址

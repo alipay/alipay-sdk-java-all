@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RecruitPlanLight extends AlipayObject {
 
-	private static final long serialVersionUID = 8494165276277468666L;
+	private static final long serialVersionUID = 4743498428267194112L;
 
 	/**
 	 * 招商方案描述：富文本内容，可能包含html标签

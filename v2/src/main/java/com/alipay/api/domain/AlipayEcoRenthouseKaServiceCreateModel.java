@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoRenthouseKaServiceCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8453474252642734465L;
+	private static final long serialVersionUID = 8733844613284943113L;
 
 	/**
 	 * 地址-对应在网关注册时候的接口标识

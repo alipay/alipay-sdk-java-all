@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalMedicineSpuModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1281147811472578661L;
+	private static final long serialVersionUID = 2243239162274232416L;
 
 	/**
 	 * 药品标品信息

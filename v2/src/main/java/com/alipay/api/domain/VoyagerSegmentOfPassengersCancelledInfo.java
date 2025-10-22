@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VoyagerSegmentOfPassengersCancelledInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2395835615863965797L;
+	private static final long serialVersionUID = 4833282221623553214L;
 
 	/**
 	 * 到达城市

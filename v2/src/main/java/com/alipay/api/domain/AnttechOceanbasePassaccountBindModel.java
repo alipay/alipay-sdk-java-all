@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechOceanbasePassaccountBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1223697119182619458L;
+	private static final long serialVersionUID = 4836167387844226179L;
 
 	/**
 	 * 邮箱 取值为加密后的邮箱

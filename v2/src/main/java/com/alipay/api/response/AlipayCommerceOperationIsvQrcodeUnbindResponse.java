@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceOperationIsvQrcodeUnbindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6716583753888833634L;
+	private static final long serialVersionUID = 2512826736726557632L;
 
 	
 

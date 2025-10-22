@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻工作证相关图片信息
  *
  * @author auto create
- * @since 1.0, 2024-07-03 18:02:04
+ * @since 1.0, 2025-10-21 20:37:41
  */
 public class ZmCardPictureInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7647774786339474617L;
+	private static final long serialVersionUID = 3886371639193749511L;
 
 	/**
 	 * 图片名称

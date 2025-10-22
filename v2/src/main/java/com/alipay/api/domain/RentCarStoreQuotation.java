@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RentCarStoreQuotation extends AlipayObject {
 
-	private static final long serialVersionUID = 3569988573317452719L;
+	private static final long serialVersionUID = 8635348754371949643L;
 
 	/**
 	 * 评论数（取用户对商户评论数的总和）

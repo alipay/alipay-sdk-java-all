@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.circular.zft.indirect.create request
  * 
  * @author auto create
- * @since 1.0, 2025-10-16 10:37:39
+ * @since 1.0, 2025-10-20 13:52:40
  */
 public class AlipayCircularZftIndirectCreateRequest implements AlipayRequest<AlipayCircularZftIndirectCreateResponse> {
 

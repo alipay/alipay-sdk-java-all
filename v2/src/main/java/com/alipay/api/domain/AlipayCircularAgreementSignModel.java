@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁商家扣款签约
  *
  * @author auto create
- * @since 1.0, 2025-09-22 14:16:35
+ * @since 1.0, 2025-10-22 10:21:41
  */
 public class AlipayCircularAgreementSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1123768984344833285L;
+	private static final long serialVersionUID = 4858518855832535478L;
 
 	/**
 	 * 绑定的收款钱包信息Id
@@ -42,6 +42,12 @@ public class AlipayCircularAgreementSignModel extends AlipayObject {
 	 */
 	@ApiField("scene_code")
 	private String sceneCode;
+
+	/**
+	 * 签约方式，默认QRCODE
+	 */
+	@ApiField("sign_channel")
+	private String signChannel;
 
 	public String getBindWalletId() {
 		return this.bindWalletId;
@@ -76,6 +82,13 @@ public class AlipayCircularAgreementSignModel extends AlipayObject {
 	}
 	public void setSceneCode(String sceneCode) {
 		this.sceneCode = sceneCode;
+	}
+
+	public String getSignChannel() {
+		return this.signChannel;
+	}
+	public void setSignChannel(String signChannel) {
+		this.signChannel = signChannel;
 	}
 
 }

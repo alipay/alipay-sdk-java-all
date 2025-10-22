@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 车主名片驾驶证信息
  *
  * @author auto create
- * @since 1.0, 2025-10-17 10:20:18
+ * @since 1.0, 2025-10-22 10:04:32
  */
 public class ZmCarOwnerDrivingLicenseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8295741379187614373L;
+	private static final long serialVersionUID = 7837557552438182796L;
 
 	/**
 	 * 驾驶证失效日期

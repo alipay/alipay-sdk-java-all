@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ReimbursementPolicy extends AlipayObject {
 
-	private static final long serialVersionUID = 2757169171631896593L;
+	private static final long serialVersionUID = 7152653787282919473L;
 
 	/**
 	 * 航段编号（-1为打包说明）

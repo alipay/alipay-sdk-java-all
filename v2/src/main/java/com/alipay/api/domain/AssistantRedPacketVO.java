@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 红包小助手推荐红包模型
  *
  * @author auto create
- * @since 1.0, 2025-08-27 10:11:43
+ * @since 1.0, 2025-10-22 09:34:45
  */
 public class AssistantRedPacketVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1476187388519231432L;
+	private static final long serialVersionUID = 1553821461677947634L;
+
+	/**
+	 * 人群类型
+	 */
+	@ApiField("crowd_type")
+	private String crowdType;
 
 	/**
 	 * 用于填写红包id
@@ -24,6 +30,13 @@ public class AssistantRedPacketVO extends AlipayObject {
 	 */
 	@ApiField("visible_users")
 	private String visibleUsers;
+
+	public String getCrowdType() {
+		return this.crowdType;
+	}
+	public void setCrowdType(String crowdType) {
+		this.crowdType = crowdType;
+	}
 
 	public String getRedPacketId() {
 		return this.redPacketId;

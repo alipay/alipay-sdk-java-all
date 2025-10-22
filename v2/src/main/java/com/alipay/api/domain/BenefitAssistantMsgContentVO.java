@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 权益推荐小助手内容模型
  *
  * @author auto create
- * @since 1.0, 2024-12-13 10:26:01
+ * @since 1.0, 2025-10-22 09:34:45
  */
 public class BenefitAssistantMsgContentVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8614128259759264466L;
+	private static final long serialVersionUID = 5115186672653987225L;
 
 	/**
 	 * 活动id，即券id。传入活动id后可支持在群内发小助手优惠券定向消息。请先通过优惠券创建接口创建优惠券<a href="https://opendocs.alipay.com/open/7ad3a7bf_alipay.marketing.activity.ordervoucher.create?scene=a0667e04ac87431eb7e6adc5f13cc8ba&pathHash=3262435d">https://opendocs.alipay.com/open/7ad3a7bf_alipay.marketing.activity.ordervoucher.create?scene=a0667e04ac87431eb7e6adc5f13cc8ba&pathHash=3262435d</a>并获取activity_id优惠券id作为这个入参的值。
@@ -34,6 +34,12 @@ public class BenefitAssistantMsgContentVO extends AlipayObject {
 	 */
 	@ApiField("crowd_code")
 	private String crowdCode;
+
+	/**
+	 * 人群类型
+	 */
+	@ApiField("crowd_type")
+	private String crowdType;
 
 	/**
 	 * 该字段用于描述本群发消息是否使用券包样式, 若为true, 则群发消息展示使用券包样式, 否则使用普通样式
@@ -66,6 +72,13 @@ public class BenefitAssistantMsgContentVO extends AlipayObject {
 	}
 	public void setCrowdCode(String crowdCode) {
 		this.crowdCode = crowdCode;
+	}
+
+	public String getCrowdType() {
+		return this.crowdType;
+	}
+	public void setCrowdType(String crowdType) {
+		this.crowdType = crowdType;
 	}
 
 	public Boolean getMultiCoupon() {

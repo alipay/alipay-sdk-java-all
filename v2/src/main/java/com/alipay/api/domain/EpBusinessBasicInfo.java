@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 企业工商基本信息
  *
  * @author auto create
- * @since 1.0, 2025-03-07 15:17:20
+ * @since 1.0, 2025-10-21 15:33:21
  */
 public class EpBusinessBasicInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3152685342834566685L;
+	private static final long serialVersionUID = 4531934886656482351L;
 
 	/**
 	 * 地址
@@ -178,6 +178,12 @@ public class EpBusinessBasicInfo extends AlipayObject {
 	 */
 	@ApiField("registration_capital")
 	private String registrationCapital;
+
+	/**
+	 * 企业注册地信息
+	 */
+	@ApiField("registration_place")
+	private ZmEpRegistrationPlaceInfo registrationPlace;
 
 	/**
 	 * 吊销日期
@@ -439,6 +445,13 @@ public class EpBusinessBasicInfo extends AlipayObject {
 	}
 	public void setRegistrationCapital(String registrationCapital) {
 		this.registrationCapital = registrationCapital;
+	}
+
+	public ZmEpRegistrationPlaceInfo getRegistrationPlace() {
+		return this.registrationPlace;
+	}
+	public void setRegistrationPlace(ZmEpRegistrationPlaceInfo registrationPlace) {
+		this.registrationPlace = registrationPlace;
 	}
 
 	public String getRevocationDate() {

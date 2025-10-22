@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TaskGoodConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 8766639893817959569L;
+	private static final long serialVersionUID = 1365996388456917917L;
 
 	/**
 	 * 商品id

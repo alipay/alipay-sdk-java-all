@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LandingChannelInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6895692792175486443L;
+	private static final long serialVersionUID = 2529957726727542846L;
 
 	/**
 	 * 是否来自闪租频道，标记为联营，值为Y/N

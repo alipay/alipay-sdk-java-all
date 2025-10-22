@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlarmFunctionFilter extends AlipayObject {
 
-	private static final long serialVersionUID = 6653937298795782842L;
+	private static final long serialVersionUID = 4159113285758921318L;
 
 	/**
 	 * 过滤类型

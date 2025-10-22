@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceAcommunicationDiscountPhoneRecommendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1734554766634741521L;
+	private static final long serialVersionUID = 3722665596186721332L;
 
 	/**
 	 * 格式是逗号分隔的字符串看，示例值中给值代表，客户端只需要5元，10元，20元，50元金额的面值的充值商品。

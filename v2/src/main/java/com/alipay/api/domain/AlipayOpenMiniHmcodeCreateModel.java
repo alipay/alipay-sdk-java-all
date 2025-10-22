@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * alipay.open.app.hmcode.create
  *
  * @author auto create
- * @since 1.0, 2021-07-22 15:38:11
+ * @since 1.0, 2025-10-20 11:09:03
  */
 public class AlipayOpenMiniHmcodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7662711443816268723L;
+	private static final long serialVersionUID = 1698459465825448647L;
 
 	/**
 	 * 对应的异形码描述

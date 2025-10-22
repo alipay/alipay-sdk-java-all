@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业员工发票查验
  *
  * @author auto create
- * @since 1.0, 2025-06-03 10:19:36
+ * @since 1.0, 2025-10-21 16:13:29
  */
 public class AlipayCommerceEcEmployeeInvoiceVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1352513351451226585L;
+	private static final long serialVersionUID = 7639494724646235368L;
 
 	/**
 	 * 企业码员工ID

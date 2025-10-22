@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 尚闻流量卡全量信息同步
  *
  * @author auto create
- * @since 1.0, 2025-06-11 16:41:35
+ * @since 1.0, 2025-10-21 13:48:23
  */
 public class AlipayTerminalEdgecloudSwnetflowCardfullSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6662652536278615154L;
+	private static final long serialVersionUID = 3124765887843841562L;
 
 	/**
 	 * 卡激活时间
@@ -92,6 +92,12 @@ public class AlipayTerminalEdgecloudSwnetflowCardfullSyncModel extends AlipayObj
 	private String poolId;
 
 	/**
+	 * 卡剩余流量， 单位KB
+	 */
+	@ApiField("rest_flow_amount")
+	private String restFlowAmount;
+
+	/**
 	 * 用户查询尚闻订单唯一表示标识
 	 */
 	@ApiField("sw_order_id")
@@ -102,6 +108,12 @@ public class AlipayTerminalEdgecloudSwnetflowCardfullSyncModel extends AlipayObj
 	 */
 	@ApiField("total_flow_amount")
 	private String totalFlowAmount;
+
+	/**
+	 * 卡使用流量，单位KB。
+	 */
+	@ApiField("used_flow_amount")
+	private String usedFlowAmount;
 
 	/**
 	 * 卡运营商
@@ -200,6 +212,13 @@ public class AlipayTerminalEdgecloudSwnetflowCardfullSyncModel extends AlipayObj
 		this.poolId = poolId;
 	}
 
+	public String getRestFlowAmount() {
+		return this.restFlowAmount;
+	}
+	public void setRestFlowAmount(String restFlowAmount) {
+		this.restFlowAmount = restFlowAmount;
+	}
+
 	public String getSwOrderId() {
 		return this.swOrderId;
 	}
@@ -212,6 +231,13 @@ public class AlipayTerminalEdgecloudSwnetflowCardfullSyncModel extends AlipayObj
 	}
 	public void setTotalFlowAmount(String totalFlowAmount) {
 		this.totalFlowAmount = totalFlowAmount;
+	}
+
+	public String getUsedFlowAmount() {
+		return this.usedFlowAmount;
+	}
+	public void setUsedFlowAmount(String usedFlowAmount) {
+		this.usedFlowAmount = usedFlowAmount;
 	}
 
 	public String getVendorId() {
