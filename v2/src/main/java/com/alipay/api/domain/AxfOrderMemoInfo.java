@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AxfOrderMemoInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1279581576336754441L;
+	private static final long serialVersionUID = 2892736773619634164L;
 
 	/**
 	 * 销售人员姓名

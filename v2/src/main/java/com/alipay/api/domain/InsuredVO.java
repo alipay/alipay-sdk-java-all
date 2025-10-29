@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 被保人对象
  *
  * @author auto create
- * @since 1.0, 2025-10-16 14:04:42
+ * @since 1.0, 2025-10-24 21:04:58
  */
 public class InsuredVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6872458265232125475L;
+	private static final long serialVersionUID = 1721976414539971821L;
 
 	/**
 	 * 被保人出生日期
@@ -28,7 +28,7 @@ yyyy-MM-dd
 	private String certNo;
 
 	/**
-	 * 公民身份证I，户口簿H
+	 * 公民身份证 I，户口簿 H，港澳居民来往内地通行证 GJ，台湾居民来往大陆通行证 TB，护照(指他国护照) P，往来港澳通行证 GA，港澳居民居住证 GARP，台湾居民居住证 TWRP
 	 */
 	@ApiField("cert_type")
 	private String certType;

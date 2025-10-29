@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 市监局查询商家一键和解是否开通
  *
  * @author auto create
- * @since 1.0, 2023-06-27 09:48:43
+ * @since 1.0, 2025-10-24 10:36:12
  */
 public class AlipayMerchantComplainReconciliationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7427957439556335426L;
+	private static final long serialVersionUID = 4813152378957636744L;
 
 	/**
 	 * 商家支付宝账号

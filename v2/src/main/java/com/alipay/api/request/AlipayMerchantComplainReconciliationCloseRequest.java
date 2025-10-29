@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.complain.reconciliation.close request
  * 
  * @author auto create
- * @since 1.0, 2025-10-17 17:06:02
+ * @since 1.0, 2025-10-24 10:37:40
  */
 public class AlipayMerchantComplainReconciliationCloseRequest implements AlipayRequest<AlipayMerchantComplainReconciliationCloseResponse> {
 

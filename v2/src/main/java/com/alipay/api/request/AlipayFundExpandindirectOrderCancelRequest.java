@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.expandindirect.order.cancel request
  * 
  * @author auto create
- * @since 1.0, 2025-07-31 17:57:35
+ * @since 1.0, 2025-10-24 14:20:00
  */
 public class AlipayFundExpandindirectOrderCancelRequest implements AlipayRequest<AlipayFundExpandindirectOrderCancelResponse> {
 

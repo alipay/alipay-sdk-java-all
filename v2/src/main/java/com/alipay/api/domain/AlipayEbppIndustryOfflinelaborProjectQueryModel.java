@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 安心登记卡线下用工项目查询
  *
  * @author auto create
- * @since 1.0, 2025-09-17 10:02:39
+ * @since 1.0, 2025-10-23 20:47:40
  */
 public class AlipayEbppIndustryOfflinelaborProjectQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2739785377846845831L;
+	private static final long serialVersionUID = 1687532485493665335L;
 
 	/**
 	 * 服务商内部岗位 Id

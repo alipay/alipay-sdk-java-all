@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 履约计划详情，用来操作履约计划详情变更
  *
  * @author auto create
- * @since 1.0, 2024-05-22 14:04:08
+ * @since 1.0, 2025-10-27 09:58:58
  */
 public class CreditPerformancePlanDetailOpen extends AlipayObject {
 
-	private static final long serialVersionUID = 5687568648846958999L;
+	private static final long serialVersionUID = 7272846913343436646L;
 
 	/**
 	 * 金额，单位为：元（人民币），精确到小数点后两位。

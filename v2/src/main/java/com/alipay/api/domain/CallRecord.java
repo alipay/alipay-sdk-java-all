@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 通话记录信息对象
  *
  * @author auto create
- * @since 1.0, 2025-04-14 10:58:46
+ * @since 1.0, 2025-10-23 09:55:57
  */
 public class CallRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 2627262965795584291L;
+	private static final long serialVersionUID = 8296226841291187647L;
 
 	/**
 	 * 通话ID
@@ -34,7 +34,7 @@ public class CallRecord extends AlipayObject {
 	private Date callTime;
 
 	/**
-	 * 呼叫类型，人机协同呼叫，人工呼叫，智能呼叫，客户呼入
+	 * 呼叫类型，人机协同呼叫，人工呼叫，智能呼叫，客户呼入，呼入，手动外呼，机器人外呼，双向外呼，内呼，预测式外呼
 	 */
 	@ApiField("call_type")
 	private String callType;

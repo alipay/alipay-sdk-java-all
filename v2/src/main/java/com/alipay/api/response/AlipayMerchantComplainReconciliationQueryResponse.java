@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.complain.reconciliation.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-10-21 10:39:41
+ * @since 1.0, 2025-10-24 10:37:40
  */
 public class AlipayMerchantComplainReconciliationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5391374952962582443L;
+	private static final long serialVersionUID = 2746791344399992811L;
 
 	/** 
 	 * 一些不影响开通12315一键和解流程，但是有问题的地方

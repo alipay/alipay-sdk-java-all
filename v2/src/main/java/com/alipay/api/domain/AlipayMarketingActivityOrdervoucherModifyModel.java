@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单券修改
  *
  * @author auto create
- * @since 1.0, 2025-09-23 19:29:15
+ * @since 1.0, 2025-10-22 17:34:46
  */
 public class AlipayMarketingActivityOrdervoucherModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5521925797733118246L;
+	private static final long serialVersionUID = 4178512994592211476L;
 
 	/**
 	 * 活动基础信息

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻商业信用履约计划创建
  *
  * @author auto create
- * @since 1.0, 2024-10-24 20:56:52
+ * @since 1.0, 2025-10-27 09:58:59
  */
 public class ZhimaCreditBusinessPlanCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1741934284873372392L;
+	private static final long serialVersionUID = 7788987918789433436L;
 
 	/**
 	 * 商户订单号。 商家自定义需保证在商户端不重复。仅支持字母、数字、下划线。
@@ -20,7 +20,7 @@ public class ZhimaCreditBusinessPlanCreateModel extends AlipayObject {
 	private String outOrderNo;
 
 	/**
-	 * 计划信息
+	 * 履约计划信息
 	 */
 	@ApiField("plan_info")
 	private CreditPerformancePlanInfoOpen planInfo;

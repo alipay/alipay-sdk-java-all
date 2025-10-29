@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.quota.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-27 11:58:10
+ * @since 1.0, 2025-10-24 16:55:38
  */
 public class AlipayFundQuotaQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5648635341729452628L;
+	private static final long serialVersionUID = 5261448478352299817L;
 
 	/** 
 	 * 对公日可用额度，单位为元，精确到小数点后两位

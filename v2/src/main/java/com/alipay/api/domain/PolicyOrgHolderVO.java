@@ -7,20 +7,15 @@ import com.alipay.api.internal.mapping.ApiField;
  * 投保单位对象
  *
  * @author auto create
- * @since 1.0, 2025-10-16 14:04:43
+ * @since 1.0, 2025-10-22 19:11:14
  */
 public class PolicyOrgHolderVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2242221456746331968L;
+	private static final long serialVersionUID = 1727219367875837474L;
 
 	/**
 	 * 枚举值：
-税务登记号:101
-营业执照:102
-组织机构代码:103
 统一社会信用代码:24
-掩码证件号:104
-其他:199
 	 */
 	@ApiField("cert_type")
 	private String certType;

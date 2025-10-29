@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租赁行业风险咨询
  *
  * @author auto create
- * @since 1.0, 2025-09-30 09:07:39
+ * @since 1.0, 2025-10-28 18:12:41
  */
 public class AlipayCommerceRentRiskConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8456261266715114199L;
+	private static final long serialVersionUID = 8172655456547817655L;
 
 	/**
 	 * 支付宝openid

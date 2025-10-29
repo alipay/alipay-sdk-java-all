@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.exchange.redirect.verify response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-28 14:57:39
+ * @since 1.0, 2025-10-27 15:58:26
  */
 public class AlipayCommerceMedicalExchangeRedirectVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7356573678196225775L;
+	private static final long serialVersionUID = 8163985592496429337L;
 
 	/** 
 	 * 会员卡流水号

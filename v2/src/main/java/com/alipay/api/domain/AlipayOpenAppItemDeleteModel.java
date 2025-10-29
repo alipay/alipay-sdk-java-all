@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序商品删除接口
  *
  * @author auto create
- * @since 1.0, 2023-11-24 13:35:19
+ * @since 1.0, 2025-10-22 17:07:52
  */
 public class AlipayOpenAppItemDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5472433863746171426L;
+	private static final long serialVersionUID = 1642846199227248971L;
+
+	/**
+	 * 店铺id
+	 */
+	@ApiField("a_store_id")
+	private String aStoreId;
 
 	/**
 	 * 支付宝平台侧商品ID列表，最多20个，所选商品下所有sku均会被删除。
@@ -31,6 +37,13 @@ public class AlipayOpenAppItemDeleteModel extends AlipayObject {
 	@ApiListField("out_item_id_list")
 	@ApiField("string")
 	private List<String> outItemIdList;
+
+	public String getaStoreId() {
+		return this.aStoreId;
+	}
+	public void setaStoreId(String aStoreId) {
+		this.aStoreId = aStoreId;
+	}
 
 	public List<String> getItemIdList() {
 		return this.itemIdList;

@@ -1,5 +1,6 @@
 package com.alipay.api.response;
 
+import java.util.Date;
 import com.alipay.api.internal.mapping.ApiField;
 
 import com.alipay.api.AlipayResponse;
@@ -8,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.hdf.serviceright.check response.
  * 
  * @author auto create
- * @since 1.0, 2025-10-20 20:31:43
+ * @since 1.0, 2025-10-28 18:57:40
  */
 public class AlipayCommerceHdfServicerightCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8353348616151592131L;
+	private static final long serialVersionUID = 4295152539893232345L;
 
 	/** 
 	 * 业务身份
@@ -33,10 +34,28 @@ public class AlipayCommerceHdfServicerightCheckResponse extends AlipayResponse {
 	private String openPartnerUserId;
 
 	/** 
-	 * 权益数量
+	 * 权益剩余数量
 	 */
 	@ApiField("right_cnt")
 	private String rightCnt;
+
+	/** 
+	 * 权益结束时间
+	 */
+	@ApiField("right_end_time")
+	private Date rightEndTime;
+
+	/** 
+	 * 权益开始时间
+	 */
+	@ApiField("right_start_time")
+	private Date rightStartTime;
+
+	/** 
+	 * 权益总数量
+	 */
+	@ApiField("right_total_cnt")
+	private String rightTotalCnt;
 
 	public void setBizIdentity(String bizIdentity) {
 		this.bizIdentity = bizIdentity;
@@ -64,6 +83,27 @@ public class AlipayCommerceHdfServicerightCheckResponse extends AlipayResponse {
 	}
 	public String getRightCnt( ) {
 		return this.rightCnt;
+	}
+
+	public void setRightEndTime(Date rightEndTime) {
+		this.rightEndTime = rightEndTime;
+	}
+	public Date getRightEndTime( ) {
+		return this.rightEndTime;
+	}
+
+	public void setRightStartTime(Date rightStartTime) {
+		this.rightStartTime = rightStartTime;
+	}
+	public Date getRightStartTime( ) {
+		return this.rightStartTime;
+	}
+
+	public void setRightTotalCnt(String rightTotalCnt) {
+		this.rightTotalCnt = rightTotalCnt;
+	}
+	public String getRightTotalCnt( ) {
+		return this.rightTotalCnt;
 	}
 
 }

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class TagRuleCrowdDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7374959591371496965L;
+	private static final long serialVersionUID = 3671822885736876846L;
 
 	/**
 	 * 人群名称+不唯一

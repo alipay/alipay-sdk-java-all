@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.circular.zft.indirect.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-10-20 13:52:40
+ * @since 1.0, 2025-10-28 15:02:41
  */
 public class AlipayCircularZftIndirectCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1499554212654331345L;
+	private static final long serialVersionUID = 4717325553431254327L;
 
 	/** 
 	 * 签约状态

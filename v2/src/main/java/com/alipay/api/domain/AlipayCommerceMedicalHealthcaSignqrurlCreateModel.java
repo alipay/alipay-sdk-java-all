@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建签约链接
  *
  * @author auto create
- * @since 1.0, 2025-10-11 17:03:15
+ * @since 1.0, 2025-10-23 11:44:15
  */
 public class AlipayCommerceMedicalHealthcaSignqrurlCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7462858485532816977L;
+	private static final long serialVersionUID = 7117863572443618641L;
 
 	/**
 	 * 业务标识
@@ -48,6 +48,12 @@ public class AlipayCommerceMedicalHealthcaSignqrurlCreateModel extends AlipayObj
 	 */
 	@ApiField("pos_y")
 	private Long posY;
+
+	/**
+	 * 签署完成后的重定向链接，只有签署成功才会跳转
+	 */
+	@ApiField("redirect_url")
+	private String redirectUrl;
 
 	/**
 	 * 请求唯一标识
@@ -125,6 +131,13 @@ public class AlipayCommerceMedicalHealthcaSignqrurlCreateModel extends AlipayObj
 	}
 	public void setPosY(Long posY) {
 		this.posY = posY;
+	}
+
+	public String getRedirectUrl() {
+		return this.redirectUrl;
+	}
+	public void setRedirectUrl(String redirectUrl) {
+		this.redirectUrl = redirectUrl;
 	}
 
 	public String getRequestId() {

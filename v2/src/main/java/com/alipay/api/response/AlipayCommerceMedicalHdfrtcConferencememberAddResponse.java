@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.hdfrtc.conferencemember.add response.
  * 
  * @author auto create
- * @since 1.0, 2025-10-22 00:30:34
+ * @since 1.0, 2025-10-22 11:07:40
  */
 public class AlipayCommerceMedicalHdfrtcConferencememberAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4288629449513146757L;
+	private static final long serialVersionUID = 3554685448723714133L;
 
 	
 

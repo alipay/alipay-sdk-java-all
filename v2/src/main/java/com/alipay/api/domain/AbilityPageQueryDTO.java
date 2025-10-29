@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AbilityPageQueryDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7563964194534452864L;
+	private static final long serialVersionUID = 1239838612829517216L;
 
 	/**
 	 * 搜索运营列表的分页数据

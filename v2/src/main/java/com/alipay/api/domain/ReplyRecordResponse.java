@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用户与商家之间的协商记录
  *
  * @author auto create
- * @since 1.0, 2025-10-16 10:36:24
+ * @since 1.0, 2025-10-24 10:35:52
  */
 public class ReplyRecordResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 6872915735637952438L;
+	private static final long serialVersionUID = 5145942911558523926L;
 
 	/**
 	 * 回复内容
@@ -42,11 +42,7 @@ public class ReplyRecordResponse extends AlipayObject {
 	private String replierName;
 
 	/**
-	 * 用户：USER 
-商家：MERCHANT
-系统：SYSTEM
-审核小二：AUDITOR
-政府单位：GOVERNMENT
+	 * 回复人角色
 	 */
 	@ApiField("replier_role")
 	private String replierRole;

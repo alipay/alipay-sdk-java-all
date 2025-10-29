@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.healthca.signqrurl.create request
  * 
  * @author auto create
- * @since 1.0, 2025-10-11 17:17:40
+ * @since 1.0, 2025-10-23 11:52:41
  */
 public class AlipayCommerceMedicalHealthcaSignqrurlCreateRequest implements AlipayRequest<AlipayCommerceMedicalHealthcaSignqrurlCreateResponse> {
 

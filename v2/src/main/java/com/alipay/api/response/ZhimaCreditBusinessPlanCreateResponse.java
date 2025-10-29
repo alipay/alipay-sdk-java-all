@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.business.plan.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-12 11:02:16
+ * @since 1.0, 2025-10-27 10:02:40
  */
 public class ZhimaCreditBusinessPlanCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7551581411165111562L;
+	private static final long serialVersionUID = 7591422731343694646L;
 
 	
 

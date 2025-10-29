@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询通话记录详情
  *
  * @author auto create
- * @since 1.0, 2025-04-14 10:58:46
+ * @since 1.0, 2025-10-23 09:55:57
  */
 public class AlipayIserviceCcmCrmCallrecordQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2731897317985974863L;
+	private static final long serialVersionUID = 3274189362396246152L;
 
 	/**
 	 * 当前页码，可选参数，不选默认值为:1
@@ -26,7 +26,13 @@ public class AlipayIserviceCcmCrmCallrecordQueryModel extends AlipayObject {
 	private String dataId;
 
 	/**
-	 * 页大小，可选，默认:10
+	 * dataId的数据类型
+	 */
+	@ApiField("data_type")
+	private String dataType;
+
+	/**
+	 * 页大小，可选，默认:10（单位：条）
 	 */
 	@ApiField("page_size")
 	private Long pageSize;
@@ -49,6 +55,13 @@ public class AlipayIserviceCcmCrmCallrecordQueryModel extends AlipayObject {
 	}
 	public void setDataId(String dataId) {
 		this.dataId = dataId;
+	}
+
+	public String getDataType() {
+		return this.dataType;
+	}
+	public void setDataType(String dataType) {
+		this.dataType = dataType;
 	}
 
 	public Long getPageSize() {

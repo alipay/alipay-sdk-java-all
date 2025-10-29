@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayIserviceIssalaryPayQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5877813174755128522L;
+	private static final long serialVersionUID = 2557993969872344566L;
 
 	/**
 	 * 小二薪酬编号列表, user_bill_no的列表

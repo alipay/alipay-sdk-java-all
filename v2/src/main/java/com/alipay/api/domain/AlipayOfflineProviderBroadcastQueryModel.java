@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 语音播报报表查询
  *
  * @author auto create
- * @since 1.0, 2025-10-13 13:10:46
+ * @since 1.0, 2025-10-27 17:02:01
  */
 public class AlipayOfflineProviderBroadcastQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7633339813194442869L;
+	private static final long serialVersionUID = 8197473827564887152L;
 
 	/**
 	 * 查询的作业截止日期，要求最近60天以内

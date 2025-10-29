@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class InstitutionScopeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5177686832611189169L;
+	private static final long serialVersionUID = 4493514687862869381L;
 
 	/**
 	 * 制度适用范围，支持配置全员、指定员工和指定部门

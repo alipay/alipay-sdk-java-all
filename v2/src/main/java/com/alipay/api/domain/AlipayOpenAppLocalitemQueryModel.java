@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小程序本地商品详情查询接口
  *
  * @author auto create
- * @since 1.0, 2025-05-21 16:23:47
+ * @since 1.0, 2025-10-22 16:58:04
  */
 public class AlipayOpenAppLocalitemQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2188641526699145447L;
+	private static final long serialVersionUID = 8536378376244617963L;
+
+	/**
+	 * 店铺id
+	 */
+	@ApiField("a_store_id")
+	private String aStoreId;
 
 	/**
 	 * 支付平台侧商品id。与商家侧商品id不能同时为空，如果都提供，优先使用商家侧商品id
@@ -30,6 +36,13 @@ public class AlipayOpenAppLocalitemQueryModel extends AlipayObject {
 	 */
 	@ApiField("out_item_id")
 	private String outItemId;
+
+	public String getaStoreId() {
+		return this.aStoreId;
+	}
+	public void setaStoreId(String aStoreId) {
+		this.aStoreId = aStoreId;
+	}
 
 	public String getItemId() {
 		return this.itemId;

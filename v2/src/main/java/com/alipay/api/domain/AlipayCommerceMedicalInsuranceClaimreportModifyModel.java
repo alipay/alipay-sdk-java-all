@@ -10,11 +10,29 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 更新理赔单状态
  *
  * @author auto create
- * @since 1.0, 2025-06-24 19:18:35
+ * @since 1.0, 2025-10-24 11:14:55
  */
 public class AlipayCommerceMedicalInsuranceClaimreportModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7396194378625282597L;
+	private static final long serialVersionUID = 6281275879429957957L;
+
+	/**
+	 * 保司理赔申请号
+	 */
+	@ApiField("apply_no")
+	private String applyNo;
+
+	/**
+	 * 支付宝生成的业务流水号
+	 */
+	@ApiField("biz_no")
+	private String bizNo;
+
+	/**
+	 * 是否是赔案重开
+	 */
+	@ApiField("case_reopened")
+	private Boolean caseReopened;
 
 	/**
 	 * 证件号
@@ -29,6 +47,12 @@ public class AlipayCommerceMedicalInsuranceClaimreportModifyModel extends Alipay
 	private String certType;
 
 	/**
+	 * claim_no 保司报案号
+	 */
+	@ApiField("claim_no")
+	private String claimNo;
+
+	/**
 	 * 报案号
 	 */
 	@ApiField("claim_report_no")
@@ -41,10 +65,29 @@ public class AlipayCommerceMedicalInsuranceClaimreportModifyModel extends Alipay
 	private String claimStatus;
 
 	/**
+	 * 申请材料
+	 */
+	@ApiListField("identity_materials")
+	@ApiField("identity_materials")
+	private List<IdentityMaterials> identityMaterials;
+
+	/**
+	 * 补材场景
+	 */
+	@ApiField("lack_materials_sense")
+	private String lackMaterialsSense;
+
+	/**
 	 * 姓名
 	 */
 	@ApiField("name")
 	private String name;
+
+	/**
+	 * 理赔通知书
+	 */
+	@ApiField("note_url")
+	private String noteUrl;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识
@@ -53,7 +96,13 @@ public class AlipayCommerceMedicalInsuranceClaimreportModifyModel extends Alipay
 	private String openId;
 
 	/**
-	 * ?付宝?成的业务流?号
+	 * 立案失败原因或拒赔原因
+	 */
+	@ApiField("reject_reason")
+	private String rejectReason;
+
+	/**
+	 * 支付宝生成的流水号
 	 */
 	@ApiField("report_no")
 	private String reportNo;
@@ -83,6 +132,27 @@ public class AlipayCommerceMedicalInsuranceClaimreportModifyModel extends Alipay
 	@ApiField("user_id")
 	private String userId;
 
+	public String getApplyNo() {
+		return this.applyNo;
+	}
+	public void setApplyNo(String applyNo) {
+		this.applyNo = applyNo;
+	}
+
+	public String getBizNo() {
+		return this.bizNo;
+	}
+	public void setBizNo(String bizNo) {
+		this.bizNo = bizNo;
+	}
+
+	public Boolean getCaseReopened() {
+		return this.caseReopened;
+	}
+	public void setCaseReopened(Boolean caseReopened) {
+		this.caseReopened = caseReopened;
+	}
+
 	public String getCertNo() {
 		return this.certNo;
 	}
@@ -95,6 +165,13 @@ public class AlipayCommerceMedicalInsuranceClaimreportModifyModel extends Alipay
 	}
 	public void setCertType(String certType) {
 		this.certType = certType;
+	}
+
+	public String getClaimNo() {
+		return this.claimNo;
+	}
+	public void setClaimNo(String claimNo) {
+		this.claimNo = claimNo;
 	}
 
 	public String getClaimReportNo() {
@@ -111,6 +188,20 @@ public class AlipayCommerceMedicalInsuranceClaimreportModifyModel extends Alipay
 		this.claimStatus = claimStatus;
 	}
 
+	public List<IdentityMaterials> getIdentityMaterials() {
+		return this.identityMaterials;
+	}
+	public void setIdentityMaterials(List<IdentityMaterials> identityMaterials) {
+		this.identityMaterials = identityMaterials;
+	}
+
+	public String getLackMaterialsSense() {
+		return this.lackMaterialsSense;
+	}
+	public void setLackMaterialsSense(String lackMaterialsSense) {
+		this.lackMaterialsSense = lackMaterialsSense;
+	}
+
 	public String getName() {
 		return this.name;
 	}
@@ -118,11 +209,25 @@ public class AlipayCommerceMedicalInsuranceClaimreportModifyModel extends Alipay
 		this.name = name;
 	}
 
+	public String getNoteUrl() {
+		return this.noteUrl;
+	}
+	public void setNoteUrl(String noteUrl) {
+		this.noteUrl = noteUrl;
+	}
+
 	public String getOpenId() {
 		return this.openId;
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public String getRejectReason() {
+		return this.rejectReason;
+	}
+	public void setRejectReason(String rejectReason) {
+		this.rejectReason = rejectReason;
 	}
 
 	public String getReportNo() {

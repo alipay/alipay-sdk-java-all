@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.httpaccess.domain.create request
  * 
  * @author auto create
- * @since 1.0, 2024-11-22 14:41:14
+ * @since 1.0, 2025-10-24 19:12:40
  */
 public class AlipayCloudCloudbaseHttpaccessDomainCreateRequest implements AlipayRequest<AlipayCloudCloudbaseHttpaccessDomainCreateResponse> {
 

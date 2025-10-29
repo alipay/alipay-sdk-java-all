@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * NFC碰一下品牌车厂钥匙数据同步
  *
  * @author auto create
- * @since 1.0, 2025-03-06 14:10:24
+ * @since 1.0, 2025-10-27 15:23:10
  */
 public class AlipaySecurityProdNfcdkBrandSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8631774657344414484L;
+	private static final long serialVersionUID = 6471585555581858955L;
 
 	/**
 	 * 用户账号名称，分享时选择的用户名称

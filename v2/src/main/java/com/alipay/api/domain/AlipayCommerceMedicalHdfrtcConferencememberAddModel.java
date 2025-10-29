@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户进入视频会议
  *
  * @author auto create
- * @since 1.0, 2025-10-17 14:44:11
+ * @since 1.0, 2025-10-22 11:05:30
  */
 public class AlipayCommerceMedicalHdfrtcConferencememberAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3515523399547765855L;
+	private static final long serialVersionUID = 2349666828661546885L;
 
 	/**
 	 * 角色类型

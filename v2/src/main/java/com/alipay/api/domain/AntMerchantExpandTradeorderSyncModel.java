@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AntMerchantExpandTradeorderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5465222599892731872L;
+	private static final long serialVersionUID = 2611827223858796126L;
 
 	/**
 	 * 订单金额（单位：分）

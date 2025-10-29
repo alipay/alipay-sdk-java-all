@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.customer.zmcard.professional.add request
  * 
  * @author auto create
- * @since 1.0, 2025-10-21 20:57:40
+ * @since 1.0, 2025-10-22 14:22:40
  */
 public class ZhimaCustomerZmcardProfessionalAddRequest implements AlipayRequest<ZhimaCustomerZmcardProfessionalAddResponse> {
 

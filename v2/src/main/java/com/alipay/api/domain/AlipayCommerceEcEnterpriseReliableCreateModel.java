@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 可信渠道创建企业
  *
  * @author auto create
- * @since 1.0, 2025-08-25 14:03:11
+ * @since 1.0, 2025-10-23 10:02:35
  */
 public class AlipayCommerceEcEnterpriseReliableCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8433363587535731828L;
+	private static final long serialVersionUID = 4676962351283923828L;
 
 	/**
 	 * 企业基本信息
@@ -22,9 +22,19 @@ public class AlipayCommerceEcEnterpriseReliableCreateModel extends AlipayObject 
 	/**
 	 * 企业管理员身份唯一标识，搭配 identity_type 传参：<br/>
 1. 当identity_type=ENTERPRISE_EMAIL时，identity传企业邮箱；
+<br/>
+2. identity_type=ALIPAY_USER_ID时，identity传支付宝会员uid（此时可与identity_open_id二选一）；
+<br/>
+3. 当identity_type=ALIPAY_LOGON_ID时，identity传已注册支付宝且可以登录支付宝的手机号或邮箱
 	 */
 	@ApiField("identity")
 	private String identity;
+
+	/**
+	 * 企业管理员身份标识openId
+	 */
+	@ApiField("identity_open_id")
+	private String identityOpenId;
 
 	/**
 	 * 企业管理员身份类型
@@ -62,6 +72,13 @@ public class AlipayCommerceEcEnterpriseReliableCreateModel extends AlipayObject 
 	}
 	public void setIdentity(String identity) {
 		this.identity = identity;
+	}
+
+	public String getIdentityOpenId() {
+		return this.identityOpenId;
+	}
+	public void setIdentityOpenId(String identityOpenId) {
+		this.identityOpenId = identityOpenId;
 	}
 
 	public String getIdentityType() {

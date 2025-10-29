@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租赁订单的简单信息
  *
  * @author auto create
- * @since 1.0, 2025-06-25 11:17:28
+ * @since 1.0, 2025-10-28 17:57:48
  */
 public class SimpleRentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4196264862979161633L;
+	private static final long serialVersionUID = 3587327941741174483L;
 
 	/**
 	 * 交易组件的订单Id
@@ -88,6 +88,18 @@ public class SimpleRentInfo extends AlipayObject {
 	 */
 	@ApiField("loan_time")
 	private String loanTime;
+
+	/**
+	 * 商家下单APPID
+	 */
+	@ApiField("merchant_app_id")
+	private String merchantAppId;
+
+	/**
+	 * 商家统一社会信用代码
+	 */
+	@ApiField("merchant_uscc")
+	private String merchantUscc;
 
 	/**
 	 * 商户订单号
@@ -234,6 +246,20 @@ public class SimpleRentInfo extends AlipayObject {
 	}
 	public void setLoanTime(String loanTime) {
 		this.loanTime = loanTime;
+	}
+
+	public String getMerchantAppId() {
+		return this.merchantAppId;
+	}
+	public void setMerchantAppId(String merchantAppId) {
+		this.merchantAppId = merchantAppId;
+	}
+
+	public String getMerchantUscc() {
+		return this.merchantUscc;
+	}
+	public void setMerchantUscc(String merchantUscc) {
+		this.merchantUscc = merchantUscc;
 	}
 
 	public String getOutOrderId() {

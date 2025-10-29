@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车辆信息
  *
  * @author auto create
- * @since 1.0, 2024-09-23 14:45:54
+ * @since 1.0, 2025-10-22 15:48:02
  */
 public class CarInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5335522169329732623L;
+	private static final long serialVersionUID = 8589145252284279486L;
 
 	/**
 	 * 地址
@@ -26,10 +26,22 @@ public class CarInfo extends AlipayObject {
 	private String carBrand;
 
 	/**
+	 * 车辆品牌id
+	 */
+	@ApiField("car_brand_id")
+	private String carBrandId;
+
+	/**
 	 * 车牌号
 	 */
 	@ApiField("car_license")
 	private String carLicense;
+
+	/**
+	 * 车型来源（车型id的来源）
+	 */
+	@ApiField("car_model_source")
+	private String carModelSource;
 
 	/**
 	 * 车辆车系
@@ -38,10 +50,22 @@ public class CarInfo extends AlipayObject {
 	private String carSeries;
 
 	/**
+	 * 车辆车系id
+	 */
+	@ApiField("car_series_id")
+	private String carSeriesId;
+
+	/**
 	 * 车辆型号
 	 */
 	@ApiField("car_type")
 	private String carType;
+
+	/**
+	 * 车辆型号id
+	 */
+	@ApiField("car_type_id")
+	private String carTypeId;
 
 	/**
 	 * 车架号（车辆识别代码）
@@ -87,11 +111,25 @@ public class CarInfo extends AlipayObject {
 		this.carBrand = carBrand;
 	}
 
+	public String getCarBrandId() {
+		return this.carBrandId;
+	}
+	public void setCarBrandId(String carBrandId) {
+		this.carBrandId = carBrandId;
+	}
+
 	public String getCarLicense() {
 		return this.carLicense;
 	}
 	public void setCarLicense(String carLicense) {
 		this.carLicense = carLicense;
+	}
+
+	public String getCarModelSource() {
+		return this.carModelSource;
+	}
+	public void setCarModelSource(String carModelSource) {
+		this.carModelSource = carModelSource;
 	}
 
 	public String getCarSeries() {
@@ -101,11 +139,25 @@ public class CarInfo extends AlipayObject {
 		this.carSeries = carSeries;
 	}
 
+	public String getCarSeriesId() {
+		return this.carSeriesId;
+	}
+	public void setCarSeriesId(String carSeriesId) {
+		this.carSeriesId = carSeriesId;
+	}
+
 	public String getCarType() {
 		return this.carType;
 	}
 	public void setCarType(String carType) {
 		this.carType = carType;
+	}
+
+	public String getCarTypeId() {
+		return this.carTypeId;
+	}
+	public void setCarTypeId(String carTypeId) {
+		this.carTypeId = carTypeId;
 	}
 
 	public String getCarVin() {

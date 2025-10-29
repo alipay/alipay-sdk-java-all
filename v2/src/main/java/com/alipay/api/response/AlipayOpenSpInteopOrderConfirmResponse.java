@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.inteop.order.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-02 15:12:38
+ * @since 1.0, 2025-10-23 20:37:41
  */
 public class AlipayOpenSpInteopOrderConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2326583717785625928L;
+	private static final long serialVersionUID = 3221812244887484165L;
 
 	/** 
 	 * 一体化作业的校验结果

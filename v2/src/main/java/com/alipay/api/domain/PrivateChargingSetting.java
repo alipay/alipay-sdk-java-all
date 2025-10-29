@@ -7,54 +7,50 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * 充电私桩设置
+ * 私有充电桩的设置信息
  *
  * @author auto create
- * @since 1.0, 2024-06-18 21:03:40
+ * @since 1.0, 2025-10-24 11:08:26
  */
 public class PrivateChargingSetting extends AlipayObject {
 
-	private static final long serialVersionUID = 7451952371193788899L;
+	private static final long serialVersionUID = 3892723137938431247L;
 
 	/**
-	 * 循环模式
+	 * 充电桩预约模式的循环方式。当充电桩处于预约模式时，该参数必传。
 	 */
 	@ApiField("cycle_mode")
 	private String cycleMode;
 
 	/**
-	 * 预约启动时间
-HH:mm   表示 具体时间
--            表示  充满截止
+	 * 充电桩预约模式的结束充电时间。当充电桩处于预约模式时，该参数必传。时间的格式为HH:mm，【-】表示充电桩充满为止。
 	 */
 	@ApiField("end_time")
 	private String endTime;
 
 	/**
-	 * 启动模式
+	 * 充电桩的充电启动模式
 	 */
 	@ApiListField("mode")
 	@ApiField("string")
 	private List<String> mode;
 
 	/**
-	 * 预约标志:
-1 表示开启预约
-0 表示不开启预约
+	 * 充电桩是否启用预约的标识，
+开启预约：1
+未开启预约：0
 	 */
 	@ApiField("reservation_flag")
 	private String reservationFlag;
 
 	/**
-	 * 预约启动时间
-HH:mm   表示 具体时间
--           表示  立即启动
+	 * 充电桩预约模式的启动充电时间。当充电桩处于预约模式时，该参数必传。时间的格式为HH:mm，【-】表示充电桩立即启动充电。
 	 */
 	@ApiField("start_time")
 	private String startTime;
 
 	/**
-	 * 充电策略
+	 * 充电桩使用的充电策略
 	 */
 	@ApiField("strategy")
 	private String strategy;

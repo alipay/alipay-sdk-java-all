@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceTransportEbikerentalStoreSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4629241385863266778L;
+	private static final long serialVersionUID = 5754931673123686459L;
 
 	/**
 	 * 营业时间

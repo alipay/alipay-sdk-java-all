@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.inteop.opauth.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-25 16:52:58
+ * @since 1.0, 2025-10-27 11:07:40
  */
 public class AlipayOpenSpInteopOpauthCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3853759411246484898L;
+	private static final long serialVersionUID = 6272527128891289829L;
 
 	/** 
 	 * 代运营授权信息，记录创建代运营授权子单以及对应的产品信息。

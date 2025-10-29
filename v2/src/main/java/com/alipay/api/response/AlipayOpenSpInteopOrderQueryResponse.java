@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.inteop.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-10-13 16:40:09
+ * @since 1.0, 2025-10-23 20:37:41
  */
 public class AlipayOpenSpInteopOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5668645443676643144L;
+	private static final long serialVersionUID = 3452495544989812855L;
 
 	/** 
 	 * 一体化作业主单号
@@ -36,6 +36,24 @@ public class AlipayOpenSpInteopOrderQueryResponse extends AlipayResponse {
 	@ApiField("inte_op_sub_order_info")
 	private List<InteOpSubOrderInfo> inteopSubOrderInfos;
 
+	/** 
+	 * 待办二维码跳转链接
+	 */
+	@ApiField("wp_qr_code")
+	private String wpQrCode;
+
+	/** 
+	 * 待办二维码图片链接
+	 */
+	@ApiField("wp_qr_code_img_url")
+	private String wpQrCodeImgUrl;
+
+	/** 
+	 * 待办web页面链接
+	 */
+	@ApiField("wp_web_link")
+	private String wpWebLink;
+
 	public void setInteopOrderNo(String inteopOrderNo) {
 		this.inteopOrderNo = inteopOrderNo;
 	}
@@ -55,6 +73,27 @@ public class AlipayOpenSpInteopOrderQueryResponse extends AlipayResponse {
 	}
 	public List<InteOpSubOrderInfo> getInteopSubOrderInfos( ) {
 		return this.inteopSubOrderInfos;
+	}
+
+	public void setWpQrCode(String wpQrCode) {
+		this.wpQrCode = wpQrCode;
+	}
+	public String getWpQrCode( ) {
+		return this.wpQrCode;
+	}
+
+	public void setWpQrCodeImgUrl(String wpQrCodeImgUrl) {
+		this.wpQrCodeImgUrl = wpQrCodeImgUrl;
+	}
+	public String getWpQrCodeImgUrl( ) {
+		return this.wpQrCodeImgUrl;
+	}
+
+	public void setWpWebLink(String wpWebLink) {
+		this.wpWebLink = wpWebLink;
+	}
+	public String getWpWebLink( ) {
+		return this.wpWebLink;
 	}
 
 }

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取物流业务场景链接
  *
  * @author auto create
- * @since 1.0, 2025-10-21 16:42:40
+ * @since 1.0, 2025-10-22 10:47:40
  */
 public class AlipayCommerceLogisticsLinkGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3121517581996245443L;
+	private static final long serialVersionUID = 4391425456541253773L;
 
 	/**
 	 * 小件员和驿站结算的支付宝账号

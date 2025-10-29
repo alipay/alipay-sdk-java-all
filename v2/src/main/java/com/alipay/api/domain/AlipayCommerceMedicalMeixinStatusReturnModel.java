@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceMedicalMeixinStatusReturnModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7753527281511134499L;
+	private static final long serialVersionUID = 6521352122876953244L;
 
 	/**
 	 * 案件号

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建自定义网关域名
  *
  * @author auto create
- * @since 1.0, 2025-08-19 15:45:04
+ * @since 1.0, 2025-10-24 19:11:15
  */
 public class AlipayCloudCloudbaseGatewayDomainCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1564922259551596816L;
+	private static final long serialVersionUID = 5166475714499255538L;
 
 	/**
 	 * 小程序id

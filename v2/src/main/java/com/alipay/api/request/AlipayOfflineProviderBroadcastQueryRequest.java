@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.provider.broadcast.query request
  * 
  * @author auto create
- * @since 1.0, 2025-10-13 14:02:39
+ * @since 1.0, 2025-10-27 17:02:01
  */
 public class AlipayOfflineProviderBroadcastQueryRequest implements AlipayRequest<AlipayOfflineProviderBroadcastQueryResponse> {
 

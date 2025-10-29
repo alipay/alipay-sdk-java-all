@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.hdf.serviceright.check request
  * 
  * @author auto create
- * @since 1.0, 2025-10-20 20:31:43
+ * @since 1.0, 2025-10-28 18:57:40
  */
 public class AlipayCommerceHdfServicerightCheckRequest implements AlipayRequest<AlipayCommerceHdfServicerightCheckResponse> {
 

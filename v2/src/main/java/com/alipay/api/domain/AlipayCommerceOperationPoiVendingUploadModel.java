@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 智能售卖点位数据上传
  *
  * @author auto create
- * @since 1.0, 2025-10-15 19:47:32
+ * @since 1.0, 2025-10-24 10:52:01
  */
 public class AlipayCommerceOperationPoiVendingUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1413588757583593726L;
+	private static final long serialVersionUID = 7819727469423274213L;
 
 	/**
 	 * 地址描述

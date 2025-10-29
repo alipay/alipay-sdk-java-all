@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayContentCommercialCollectioncontentInfoModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3136816396682292631L;
+	private static final long serialVersionUID = 3649296646196466823L;
 
 	/**
 	 * 合集ID，对应内容id关联的合集/短剧ID,来源于内容生态生成的ID，生产规则为日期+类型+版本号，该合集ID通过调用内容发布接口时自动生成

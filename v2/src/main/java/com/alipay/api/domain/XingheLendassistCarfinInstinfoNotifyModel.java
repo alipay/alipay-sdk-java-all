@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 信息回传接口
  *
  * @author auto create
- * @since 1.0, 2024-09-23 14:45:54
+ * @since 1.0, 2025-10-22 15:48:03
  */
 public class XingheLendassistCarfinInstinfoNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8359515541647745411L;
+	private static final long serialVersionUID = 7649499286434874253L;
 
 	/**
 	 * 星河侧唯一业务编号
@@ -27,6 +27,12 @@ public class XingheLendassistCarfinInstinfoNotifyModel extends AlipayObject {
 	 */
 	@ApiField("car_info")
 	private CarInfo carInfo;
+
+	/**
+	 * 车管所所在区
+	 */
+	@ApiField("dmv_location")
+	private DMVLocation dmvLocation;
 
 	/**
 	 * 文件列表
@@ -66,6 +72,13 @@ public class XingheLendassistCarfinInstinfoNotifyModel extends AlipayObject {
 	}
 	public void setCarInfo(CarInfo carInfo) {
 		this.carInfo = carInfo;
+	}
+
+	public DMVLocation getDmvLocation() {
+		return this.dmvLocation;
+	}
+	public void setDmvLocation(DMVLocation dmvLocation) {
+		this.dmvLocation = dmvLocation;
 	}
 
 	public List<FileDetail> getFileList() {

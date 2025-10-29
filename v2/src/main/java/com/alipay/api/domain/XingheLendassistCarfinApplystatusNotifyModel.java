@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 车金融订单状态通知接口
  *
  * @author auto create
- * @since 1.0, 2025-07-10 09:48:40
+ * @since 1.0, 2025-10-22 15:55:26
  */
 public class XingheLendassistCarfinApplystatusNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6173947434233613111L;
+	private static final long serialVersionUID = 7552622594913645941L;
 
 	/**
 	 * 星河侧唯一业务编号
@@ -74,7 +74,7 @@ true/false
 	private String finOrg;
 
 	/**
-	 * 资金利率
+	 * 资金利率，如：1%传0.01
 	 */
 	@ApiField("fund_rate")
 	private String fundRate;
@@ -189,6 +189,18 @@ CANCEL_SUC: 取消成功（适用于客户确定放弃的场景，机构侧后�
 	 */
 	@ApiField("supplement_info_flag")
 	private Boolean supplementInfoFlag;
+
+	/**
+	 * 需要补充的原因
+	 */
+	@ApiField("supplement_reason")
+	private String supplementReason;
+
+	/**
+	 * 是否支持先放后抵
+	 */
+	@ApiField("support_lend_before_mortgage")
+	private Boolean supportLendBeforeMortgage;
 
 	/**
 	 * 用户类别
@@ -396,6 +408,20 @@ CANCEL_SUC: 取消成功（适用于客户确定放弃的场景，机构侧后�
 	}
 	public void setSupplementInfoFlag(Boolean supplementInfoFlag) {
 		this.supplementInfoFlag = supplementInfoFlag;
+	}
+
+	public String getSupplementReason() {
+		return this.supplementReason;
+	}
+	public void setSupplementReason(String supplementReason) {
+		this.supplementReason = supplementReason;
+	}
+
+	public Boolean getSupportLendBeforeMortgage() {
+		return this.supportLendBeforeMortgage;
+	}
+	public void setSupportLendBeforeMortgage(Boolean supportLendBeforeMortgage) {
+		this.supportLendBeforeMortgage = supportLendBeforeMortgage;
 	}
 
 	public String getUserTier() {

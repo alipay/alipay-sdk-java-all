@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundFlexiblestaffingEmployeehomeUnsignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1191245161146341188L;
+	private static final long serialVersionUID = 4868421625361721534L;
 
 	/** 
 	 * 解除的服务id

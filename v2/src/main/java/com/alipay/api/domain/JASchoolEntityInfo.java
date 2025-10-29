@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class JASchoolEntityInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8686539398998396481L;
+	private static final long serialVersionUID = 1495788175314225544L;
 
 	/**
 	 * 小荷包ID

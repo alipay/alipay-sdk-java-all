@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 服务商一体化开通作业添加代运营授权项
  *
  * @author auto create
- * @since 1.0, 2025-09-02 15:07:34
+ * @since 1.0, 2025-10-23 20:35:29
  */
 public class AlipayOpenSpInteopOpauthCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7718942278516969366L;
+	private static final long serialVersionUID = 1797621695214884789L;
 
 	/**
 	 * 业务开通主单号，用于一体化作业过程的申请单串联
@@ -23,11 +23,11 @@ public class AlipayOpenSpInteopOpauthCreateModel extends AlipayObject {
 	private String inteopOrderNo;
 
 	/**
-	 * 产品信息
+	 * 授权产品信息
 	 */
-	@ApiListField("product_codes")
-	@ApiField("string")
-	private List<String> productCodes;
+	@ApiListField("inteop_product_info")
+	@ApiField("inteop_op_auth_product_info")
+	private List<InteopOpAuthProductInfo> inteopProductInfo;
 
 	public String getInteopOrderNo() {
 		return this.inteopOrderNo;
@@ -36,11 +36,11 @@ public class AlipayOpenSpInteopOpauthCreateModel extends AlipayObject {
 		this.inteopOrderNo = inteopOrderNo;
 	}
 
-	public List<String> getProductCodes() {
-		return this.productCodes;
+	public List<InteopOpAuthProductInfo> getInteopProductInfo() {
+		return this.inteopProductInfo;
 	}
-	public void setProductCodes(List<String> productCodes) {
-		this.productCodes = productCodes;
+	public void setInteopProductInfo(List<InteopOpAuthProductInfo> inteopProductInfo) {
+		this.inteopProductInfo = inteopProductInfo;
 	}
 
 }

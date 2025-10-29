@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询指定城市的所有高校点位
  *
  * @author auto create
- * @since 1.0, 2025-04-24 10:58:34
+ * @since 1.0, 2025-10-27 19:35:32
  */
 public class AlipayCommerceEducateCampusPointQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1416799426637931418L;
+	private static final long serialVersionUID = 4517458474198669463L;
 
 	/**
 	 * 城市编码
