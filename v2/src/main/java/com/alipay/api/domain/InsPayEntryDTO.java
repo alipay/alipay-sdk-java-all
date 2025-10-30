@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 当前支付信息
  *
  * @author auto create
- * @since 1.0, 2025-10-23 21:17:08
+ * @since 1.0, 2025-10-29 16:07:29
  */
 public class InsPayEntryDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7142184646351615233L;
+	private static final long serialVersionUID = 5262945119377782225L;
 
 	/**
 	 * 金额，单位分

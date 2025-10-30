@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 更新理赔单状态
  *
  * @author auto create
- * @since 1.0, 2025-10-24 11:14:55
+ * @since 1.0, 2025-10-29 17:38:45
  */
 public class AlipayCommerceMedicalInsuranceClaimreportModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6281275879429957957L;
+	private static final long serialVersionUID = 2866912791863917626L;
 
 	/**
 	 * 保司理赔申请号
@@ -63,6 +63,12 @@ public class AlipayCommerceMedicalInsuranceClaimreportModifyModel extends Alipay
 	 */
 	@ApiField("claim_status")
 	private String claimStatus;
+
+	/**
+	 * 保司类型
+	 */
+	@ApiField("company_type")
+	private String companyType;
 
 	/**
 	 * 申请材料
@@ -186,6 +192,13 @@ public class AlipayCommerceMedicalInsuranceClaimreportModifyModel extends Alipay
 	}
 	public void setClaimStatus(String claimStatus) {
 		this.claimStatus = claimStatus;
+	}
+
+	public String getCompanyType() {
+		return this.companyType;
+	}
+	public void setCompanyType(String companyType) {
+		this.companyType = companyType;
 	}
 
 	public List<IdentityMaterials> getIdentityMaterials() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenAppRoomrentDirectModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6253417289923272645L;
+	private static final long serialVersionUID = 8787117353132827144L;
 
 	/**
 	 * 支付宝平台侧商品ID，是支付宝平台侧商品的唯一标识，后续与平台交互，需要使用该 ID，建议持久化。

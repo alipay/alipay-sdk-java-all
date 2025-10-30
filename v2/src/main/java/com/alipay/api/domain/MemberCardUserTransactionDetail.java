@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MemberCardUserTransactionDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 2784737641449327147L;
+	private static final long serialVersionUID = 8329235915377999571L;
 
 	/**
 	 * 储值总金额，单位元。

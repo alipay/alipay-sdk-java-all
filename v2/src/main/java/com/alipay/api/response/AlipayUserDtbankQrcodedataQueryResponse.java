@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserDtbankQrcodedataQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2284348697397444483L;
+	private static final long serialVersionUID = 8357773986213774675L;
 
 	/** 
 	 * 引导绑卡数量

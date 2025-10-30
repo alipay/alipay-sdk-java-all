@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiMerchantRoleDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5781349889859193984L;
+	private static final long serialVersionUID = 3267295437218211616L;
 
 	/** 
 	 * 根据主体查询到的主体拥有的角色信息

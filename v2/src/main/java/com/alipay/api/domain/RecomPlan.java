@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RecomPlan extends AlipayObject {
 
-	private static final long serialVersionUID = 8623328175589441629L;
+	private static final long serialVersionUID = 7452918874217613837L;
 
 	/**
 	 * 投保key关键字

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DeductionPlanDataSyncRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 1364822463239292677L;
+	private static final long serialVersionUID = 6579811611587894858L;
 
 	/**
 	 * 课时数（电教馆教培特有）,单位个，表示有1个课时

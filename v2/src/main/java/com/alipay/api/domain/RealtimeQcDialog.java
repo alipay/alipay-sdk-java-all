@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RealtimeQcDialog extends AlipayObject {
 
-	private static final long serialVersionUID = 7663195781928733874L;
+	private static final long serialVersionUID = 8148869871211885577L;
 
 	/**
 	 * Long类型

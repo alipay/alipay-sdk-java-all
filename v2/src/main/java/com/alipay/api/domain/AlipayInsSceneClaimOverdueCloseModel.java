@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 关闭追偿单
  *
  * @author auto create
- * @since 1.0, 2025-10-28 21:32:31
+ * @since 1.0, 2025-10-29 16:07:29
  */
 public class AlipayInsSceneClaimOverdueCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1539894388847687933L;
+	private static final long serialVersionUID = 3898749578961181394L;
 
 	/**
 	 * 赔案单号
@@ -58,6 +58,12 @@ public class AlipayInsSceneClaimOverdueCloseModel extends AlipayObject {
 	 */
 	@ApiField("policy_no")
 	private String policyNo;
+
+	/**
+	 * 产品方案id
+	 */
+	@ApiField("product_plan_id")
+	private String productPlanId;
 
 	public String getClaimNo() {
 		return this.claimNo;
@@ -106,6 +112,13 @@ public class AlipayInsSceneClaimOverdueCloseModel extends AlipayObject {
 	}
 	public void setPolicyNo(String policyNo) {
 		this.policyNo = policyNo;
+	}
+
+	public String getProductPlanId() {
+		return this.productPlanId;
+	}
+	public void setProductPlanId(String productPlanId) {
+		this.productPlanId = productPlanId;
 	}
 
 }

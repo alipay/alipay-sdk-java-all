@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenCertifyMetaInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2145978725971358759L;
+	private static final long serialVersionUID = 4264313223142242118L;
 
 	/**
 	 * 设备操作系统类型

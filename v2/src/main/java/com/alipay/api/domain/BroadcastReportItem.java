@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 返回语音播报数据Item
  *
  * @author auto create
- * @since 1.0, 2025-10-13 13:10:46
+ * @since 1.0, 2025-10-29 14:52:26
  */
 public class BroadcastReportItem extends AlipayObject {
 
-	private static final long serialVersionUID = 6492599695896384228L;
+	private static final long serialVersionUID = 3212323765116424698L;
 
 	/**
 	 * 设备激活时间（查询条件，日期选择组件）

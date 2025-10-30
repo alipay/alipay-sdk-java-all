@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class WalletMarketingRule extends AlipayObject {
 
-	private static final long serialVersionUID = 4176929522117824348L;
+	private static final long serialVersionUID = 5832797722948353337L;
 
 	/**
 	 * 营销类型

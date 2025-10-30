@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ConditionItemPattern extends AlipayObject {
 
-	private static final long serialVersionUID = 4732824633172616941L;
+	private static final long serialVersionUID = 5183495853562349798L;
 
 	/**
 	 * 智慧餐厅用户规则操作符，EQ表示相等，GT表示大于，GTEQ表示大于等于，LT表示小于，LTEQ表示小于等于

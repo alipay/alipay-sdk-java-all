@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class WelfareForestEntityDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4783318854271626748L;
+	private static final long serialVersionUID = 6395196735767871773L;
 
 	/**
 	 * 公益林描述

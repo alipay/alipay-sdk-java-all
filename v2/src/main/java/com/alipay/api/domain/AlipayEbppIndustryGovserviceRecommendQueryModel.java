@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppIndustryGovserviceRecommendQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6188992489328772837L;
+	private static final long serialVersionUID = 5366191448189578711L;
 
 	/**
 	 * 兜底城市code

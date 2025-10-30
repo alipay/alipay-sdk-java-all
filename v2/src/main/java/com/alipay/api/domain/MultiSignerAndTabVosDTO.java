@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MultiSignerAndTabVosDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3391596918854562991L;
+	private static final long serialVersionUID = 5589648732349538126L;
 
 	/**
 	 * ture表示自动签署，false表示手动签署。不传默认false

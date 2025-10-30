@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.member.chat.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-10-27 19:44:30
+ * @since 1.0, 2025-10-29 18:08:50
  */
 public class AlipayCommerceMedicalMemberChatQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7611564361846452739L;
+	private static final long serialVersionUID = 2649658393316946789L;
 
 	/** 
 	 * 头像地址

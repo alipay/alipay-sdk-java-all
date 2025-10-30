@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RepaymemtPlanPreview extends AlipayObject {
 
-	private static final long serialVersionUID = 1844259355892319524L;
+	private static final long serialVersionUID = 3649921814599347768L;
 
 	/**
 	 * 每期优惠利息，单位：元

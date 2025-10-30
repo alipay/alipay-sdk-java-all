@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NorderTagPositionExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4494735854696289564L;
+	private static final long serialVersionUID = 2332619322473352694L;
 
 	/**
 	 * 厂商的品牌信息

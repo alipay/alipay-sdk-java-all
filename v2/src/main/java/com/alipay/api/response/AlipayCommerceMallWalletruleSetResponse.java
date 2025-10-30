@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMallWalletruleSetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4892119229133731194L;
+	private static final long serialVersionUID = 8647471869783565196L;
 
 	/** 
 	 * 操作类型为query时返回，此钱包模板下配置的核销数字化门店列表；操作类型为add时返回，此次操作下配置的已生效的核销数字化门店列表；

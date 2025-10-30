@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.nordermaterialsapply.order.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-21 13:52:27
+ * @since 1.0, 2025-10-29 14:17:11
  */
 public class AlipayOpenSpNordermaterialsapplyOrderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6697531818813675158L;
+	private static final long serialVersionUID = 6835291562744571697L;
 
 	/** 
 	 * 申请单ID，后续接口需要依赖该单号

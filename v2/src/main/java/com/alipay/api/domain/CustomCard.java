@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CustomCard extends AlipayObject {
 
-	private static final long serialVersionUID = 1627341292521615145L;
+	private static final long serialVersionUID = 5388327822994211158L;
 
 	/**
 	 * 自定义卡片body，选择自定义卡片时需要填写

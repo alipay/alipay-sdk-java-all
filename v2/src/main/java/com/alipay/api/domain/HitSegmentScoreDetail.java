@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HitSegmentScoreDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7179821399841593798L;
+	private static final long serialVersionUID = 7232439155654229818L;
 
 	/**
 	 * 全文相似度评分（以小数形式表示，取值范围为0到1）

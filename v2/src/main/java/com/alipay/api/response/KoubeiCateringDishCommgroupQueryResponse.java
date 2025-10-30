@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiCateringDishCommgroupQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5172546753948625831L;
+	private static final long serialVersionUID = 8534928839777957243L;
 
 	/** 
 	 * 客制化组分页信息

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMedicalIndustrydataInquiryinfochangeUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5328181615292481129L;
+	private static final long serialVersionUID = 1652784746227879348L;
 
 	/** 
 	 * 支付宝问诊订单状态 待支付:WAIT_PAY 已取消:CANCELED 待接诊:WAIT_INQUIRY 退款中:REFUNDING 已退款:REFUNDED 问诊中:IN_INQUIRY 退款申请中:REFUND_APPLYING 已完成:FINISHED 用户申诉退款:USER_APPEAL_CANCELED

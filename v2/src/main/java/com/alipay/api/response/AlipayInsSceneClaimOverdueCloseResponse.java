@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.claim.overdue.close response.
  * 
  * @author auto create
- * @since 1.0, 2025-10-28 21:57:40
+ * @since 1.0, 2025-10-30 09:57:40
  */
 public class AlipayInsSceneClaimOverdueCloseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5583383562261856885L;
+	private static final long serialVersionUID = 1133397551815437794L;
 
 	/** 
 	 * 追偿单号

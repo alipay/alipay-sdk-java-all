@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class TgiTagVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6641442256139353818L;
+	private static final long serialVersionUID = 1743749434212326989L;
 
 	/**
 	 * 显著性特征推荐

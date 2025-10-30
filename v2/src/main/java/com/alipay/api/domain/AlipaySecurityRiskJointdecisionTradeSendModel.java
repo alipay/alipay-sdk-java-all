@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户风险数据回传接口
  *
  * @author auto create
- * @since 1.0, 2025-03-05 14:29:14
+ * @since 1.0, 2025-10-29 14:04:48
  */
 public class AlipaySecurityRiskJointdecisionTradeSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3243366533988648868L;
+	private static final long serialVersionUID = 1212298253433474462L;
 
 	/**
 	 * 外部交易号

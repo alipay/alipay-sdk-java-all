@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenMiniPrivacyAuditCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3685664371478222665L;
+	private static final long serialVersionUID = 5662867972115523352L;
 
 	/**
 	 * 联系人邮箱。邮箱和联系电话不可都为空

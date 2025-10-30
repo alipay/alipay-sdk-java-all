@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.offlinelabor.register.modify request
  * 
  * @author auto create
- * @since 1.0, 2025-10-23 20:47:39
+ * @since 1.0, 2025-10-29 16:17:40
  */
 public class AlipayEbppIndustryOfflinelaborRegisterModifyRequest implements AlipayRequest<AlipayEbppIndustryOfflinelaborRegisterModifyResponse> {
 

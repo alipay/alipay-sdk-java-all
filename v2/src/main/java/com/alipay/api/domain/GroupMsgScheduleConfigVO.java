@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GroupMsgScheduleConfigVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1392419224569146378L;
+	private static final long serialVersionUID = 6687768157294739417L;
 
 	/**
 	 * 用于描述定时发送的具体时间,  格式化为 HH:mm:ss

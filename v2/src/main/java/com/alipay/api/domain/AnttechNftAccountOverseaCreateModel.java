@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechNftAccountOverseaCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3232195986367557325L;
+	private static final long serialVersionUID = 2582841267472886574L;
 
 	/**
 	 * aldaba链上地址

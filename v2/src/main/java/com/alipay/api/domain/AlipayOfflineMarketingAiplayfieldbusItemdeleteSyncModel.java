@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOfflineMarketingAiplayfieldbusItemdeleteSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4747371751334595564L;
+	private static final long serialVersionUID = 4558867123388841132L;
 
 	/**
 	 * 业务标识
