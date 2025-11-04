@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 三方履约问诊订单信息回传API
  *
  * @author auto create
- * @since 1.0, 2025-10-27 14:22:40
+ * @since 1.0, 2025-11-03 16:12:40
  */
 public class AlipayCommerceMedicalOuterorderStatusNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1457846953699647647L;
+	private static final long serialVersionUID = 2393593334162919744L;
 
 	/**
 	 * 咨询场景

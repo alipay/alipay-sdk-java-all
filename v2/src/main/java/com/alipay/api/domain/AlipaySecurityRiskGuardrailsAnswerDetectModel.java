@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 天鉴大模型防御-回答检测服务
  *
  * @author auto create
- * @since 1.0, 2025-07-18 17:57:36
+ * @since 1.0, 2025-11-03 14:01:32
  */
 public class AlipaySecurityRiskGuardrailsAnswerDetectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7725829568114853756L;
+	private static final long serialVersionUID = 8779922179582535811L;
 
 	/**
 	 * 当前回答内容，最大长度10000个字符。回答时必传

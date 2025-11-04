@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayAccountClearingcenterPayoffQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5896832114921231969L;
+	private static final long serialVersionUID = 6615245932591635996L;
 
 	/** 
 	 * 待解付登记薄列表

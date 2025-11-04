@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业基本信息
  *
  * @author auto create
- * @since 1.0, 2025-10-23 10:02:35
+ * @since 1.0, 2025-11-03 15:46:55
  */
 public class ReliableEnterpriseBaseInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6828915867339934142L;
+	private static final long serialVersionUID = 3252725875915368147L;
 
 	/**
 	 * 企业认证状态

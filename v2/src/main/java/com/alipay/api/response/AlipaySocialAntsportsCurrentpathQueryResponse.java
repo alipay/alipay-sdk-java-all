@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySocialAntsportsCurrentpathQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4265611213966951793L;
+	private static final long serialVersionUID = 5575169171478751443L;
 
 	/** 
 	 * 运动数据今日已消费步数

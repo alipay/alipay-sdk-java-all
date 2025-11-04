@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 文旅凭证信息
  *
  * @author auto create
- * @since 1.0, 2025-10-27 15:16:52
+ * @since 1.0, 2025-11-03 14:41:37
  */
 public class TourVoucherDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5556251521128754513L;
+	private static final long serialVersionUID = 3712666113878285593L;
 
 	/**
 	 * 游客身份证号。必须与手机号选一必填
@@ -36,8 +39,9 @@ public class TourVoucherDetail extends AlipayObject {
 	/**
 	 * 特殊人群。即凭证所适用的人群类型，比如：学生票，教师票，老人票等等。当该凭证为特殊人群凭证时必须填写，不填写时默认该凭证为普通成人票，枚举值详见对接文档。
 	 */
-	@ApiField("identity_type")
-	private String identityType;
+	@ApiListField("identity_type")
+	@ApiField("string")
+	private List<String> identityType;
 
 	/**
 	 * 游客姓名
@@ -127,10 +131,10 @@ voucherName：凭证名称/票名称，必填
 		this.identityName = identityName;
 	}
 
-	public String getIdentityType() {
+	public List<String> getIdentityType() {
 		return this.identityType;
 	}
-	public void setIdentityType(String identityType) {
+	public void setIdentityType(List<String> identityType) {
 		this.identityType = identityType;
 	}
 

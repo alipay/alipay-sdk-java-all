@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 结束视频会议
  *
  * @author auto create
- * @since 1.0, 2025-10-17 14:44:14
+ * @since 1.0, 2025-11-03 10:41:01
  */
 public class AlipayCommerceMedicalHdfrtcVideoconferenceStopModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4771653796689616712L;
+	private static final long serialVersionUID = 2322683287445313653L;
 
 	/**
 	 * 视频结束类型 (ManualEnd:手动结束 TimeoutEnd:超时结束)

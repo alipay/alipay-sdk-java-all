@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class GroupTicketSKU extends AlipayObject {
 
-	private static final long serialVersionUID = 2229578442915657269L;
+	private static final long serialVersionUID = 1894626715697969581L;
 
 	/**
 	 * 分类的名称

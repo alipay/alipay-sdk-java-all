@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PendingEquityVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3338725891319243315L;
+	private static final long serialVersionUID = 6362567993622595833L;
 
 	/**
 	 * 预算类型

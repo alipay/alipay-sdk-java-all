@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 酒店智慧住权限信息同步
  *
  * @author auto create
- * @since 1.0, 2025-10-24 14:27:41
+ * @since 1.0, 2025-11-01 10:17:40
  */
 public class AlipayCommerceHotelLockerAuthSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3373921636392884323L;
+	private static final long serialVersionUID = 5347176797885223125L;
 
 	/**
 	 * 服务商auhtId，一次授权保证唯一，如果一次授权多个设备权限，需要在auth_id内部拼接

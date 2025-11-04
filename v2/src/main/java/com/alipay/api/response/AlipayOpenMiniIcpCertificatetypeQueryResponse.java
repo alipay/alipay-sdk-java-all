@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenMiniIcpCertificatetypeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3896648968272987485L;
+	private static final long serialVersionUID = 3326211887722899443L;
 
 	/** 
 	 * 证件类型列表

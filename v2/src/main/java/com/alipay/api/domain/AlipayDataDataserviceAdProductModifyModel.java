@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品状态更新接口
  *
  * @author auto create
- * @since 1.0, 2025-04-02 15:27:20
+ * @since 1.0, 2025-10-30 14:23:23
  */
 public class AlipayDataDataserviceAdProductModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5189941484729449216L;
+	private static final long serialVersionUID = 8183163714653157969L;
 
 	/**
 	 * 商品归属的商户oid, 传入oid时优先使用oid，否则使用pid

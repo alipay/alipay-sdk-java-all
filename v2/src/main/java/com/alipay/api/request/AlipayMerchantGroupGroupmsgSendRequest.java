@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.group.groupmsg.send request
  * 
  * @author auto create
- * @since 1.0, 2025-09-23 15:27:39
+ * @since 1.0, 2025-11-03 14:24:55
  */
 public class AlipayMerchantGroupGroupmsgSendRequest implements AlipayRequest<AlipayMerchantGroupGroupmsgSendResponse> {
 

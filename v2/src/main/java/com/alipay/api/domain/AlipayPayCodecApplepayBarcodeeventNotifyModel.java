@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPayCodecApplepayBarcodeeventNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2833939488951397779L;
+	private static final long serialVersionUID = 5263139619892611156L;
 
 	/**
 	 * 码的id。{Identifier for this credential}

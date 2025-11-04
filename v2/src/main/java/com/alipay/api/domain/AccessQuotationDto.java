@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AccessQuotationDto extends AlipayObject {
 
-	private static final long serialVersionUID = 2728548317538481373L;
+	private static final long serialVersionUID = 8496625537763582863L;
 
 	/**
 	 * currency_code，用于商品同步，由调用方传入

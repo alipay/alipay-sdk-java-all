@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AppItemVoucherDeductInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8698919534432284842L;
+	private static final long serialVersionUID = 7891898781786193378L;
 
 	/**
 	 * 满减券 当promoType=FIX_AMOUNT时不能为空

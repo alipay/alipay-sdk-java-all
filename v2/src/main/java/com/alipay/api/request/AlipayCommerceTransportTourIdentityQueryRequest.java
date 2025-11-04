@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.tour.identity.query request
  * 
  * @author auto create
- * @since 1.0, 2025-10-27 15:22:40
+ * @since 1.0, 2025-11-01 14:42:40
  */
 public class AlipayCommerceTransportTourIdentityQueryRequest implements AlipayRequest<AlipayCommerceTransportTourIdentityQueryResponse> {
 

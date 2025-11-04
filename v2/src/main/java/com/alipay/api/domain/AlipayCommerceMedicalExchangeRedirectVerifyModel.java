@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 渠道商家直接开通会员
  *
  * @author auto create
- * @since 1.0, 2025-09-28 14:29:25
+ * @since 1.0, 2025-11-04 09:50:44
  */
 public class AlipayCommerceMedicalExchangeRedirectVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4587349355718284669L;
+	private static final long serialVersionUID = 8137754743287946533L;
 
 	/**
 	 * 会员卡权益ID
@@ -38,6 +38,12 @@ public class AlipayCommerceMedicalExchangeRedirectVerifyModel extends AlipayObje
 	private String openId;
 
 	/**
+	 * 外部开卡开始时间
+	 */
+	@ApiField("out_service_start_time")
+	private String outServiceStartTime;
+
+	/**
 	 * 电话号码
 	 */
 	@ApiField("phone")
@@ -48,6 +54,12 @@ public class AlipayCommerceMedicalExchangeRedirectVerifyModel extends AlipayObje
 	 */
 	@ApiField("renew")
 	private Boolean renew;
+
+	/**
+	 * 会员卡结束时间戳
+	 */
+	@ApiField("service_end_time")
+	private String serviceEndTime;
 
 	/**
 	 * 支付宝用户的userId。
@@ -83,6 +95,13 @@ public class AlipayCommerceMedicalExchangeRedirectVerifyModel extends AlipayObje
 		this.openId = openId;
 	}
 
+	public String getOutServiceStartTime() {
+		return this.outServiceStartTime;
+	}
+	public void setOutServiceStartTime(String outServiceStartTime) {
+		this.outServiceStartTime = outServiceStartTime;
+	}
+
 	public String getPhone() {
 		return this.phone;
 	}
@@ -95,6 +114,13 @@ public class AlipayCommerceMedicalExchangeRedirectVerifyModel extends AlipayObje
 	}
 	public void setRenew(Boolean renew) {
 		this.renew = renew;
+	}
+
+	public String getServiceEndTime() {
+		return this.serviceEndTime;
+	}
+	public void setServiceEndTime(String serviceEndTime) {
+		this.serviceEndTime = serviceEndTime;
 	}
 
 	public String getUserId() {

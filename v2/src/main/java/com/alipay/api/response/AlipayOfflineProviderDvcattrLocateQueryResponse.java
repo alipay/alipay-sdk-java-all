@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOfflineProviderDvcattrLocateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3776926925154322749L;
+	private static final long serialVersionUID = 8412244189686919568L;
 
 	/** 
 	 * 设备辅助室内定位数据列表

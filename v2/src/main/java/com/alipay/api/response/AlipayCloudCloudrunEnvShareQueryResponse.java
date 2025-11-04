@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudCloudrunEnvShareQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7426268822839594197L;
+	private static final long serialVersionUID = 8695977914782178435L;
 
 	/** 
 	 * 资源复用关联应用环境，已资源复用源app_id（公共请求参数中的app_id）资源环境关联列表中的单个应用环境。其中包括关联应用id、源应用id的环境id、源应用id的环境资源所属产品code等

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.rent.order.rentplaninfo.append request
  * 
  * @author auto create
- * @since 1.0, 2025-08-12 10:12:36
+ * @since 1.0, 2025-11-03 11:22:19
  */
 public class AlipayCommerceRentOrderRentplaninfoAppendRequest implements AlipayRequest<AlipayCommerceRentOrderRentplaninfoAppendResponse> {
 

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序商品状态变更
  *
  * @author auto create
- * @since 1.0, 2025-10-09 12:35:52
+ * @since 1.0, 2025-10-30 14:21:52
  */
 public class AlipayDataDataserviceProductAppCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3438211363379824694L;
+	private static final long serialVersionUID = 5473499712878635289L;
 
 	/**
 	 * 商品属性列表

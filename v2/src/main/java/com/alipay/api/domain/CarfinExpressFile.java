@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CarfinExpressFile extends AlipayObject {
 
-	private static final long serialVersionUID = 2897962665613417363L;
+	private static final long serialVersionUID = 8827668686641142261L;
 
 	/**
 	 * 支付宝开放平台文件AFTSID

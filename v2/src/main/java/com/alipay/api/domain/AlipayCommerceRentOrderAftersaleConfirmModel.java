@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceRentOrderAftersaleConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4471594624797972969L;
+	private static final long serialVersionUID = 4138849381135163257L;
 
 	/**
 	 * 补充描述

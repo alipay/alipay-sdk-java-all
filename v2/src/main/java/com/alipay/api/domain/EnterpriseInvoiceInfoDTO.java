@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发票流水信息
  *
  * @author auto create
- * @since 1.0, 2025-08-15 11:00:29
+ * @since 1.0, 2025-11-03 20:24:46
  */
 public class EnterpriseInvoiceInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6895526841324983223L;
+	private static final long serialVersionUID = 3856474388368888752L;
 
 	/**
 	 * 防伪码
@@ -210,6 +210,12 @@ public class EnterpriseInvoiceInfoDTO extends AlipayObject {
 	 */
 	@ApiField("payer_register_no")
 	private String payerRegisterNo;
+
+	/**
+	 * 报销状态：REIMBURSE_WAIT：待报销；REIMBURSE_APPLY：报销已提交；REIMBURSE_FINISH：报销完成
+	 */
+	@ApiField("reimburse_status")
+	private String reimburseStatus;
 
 	/**
 	 * 是否关联到账单
@@ -463,6 +469,13 @@ public class EnterpriseInvoiceInfoDTO extends AlipayObject {
 	}
 	public void setPayerRegisterNo(String payerRegisterNo) {
 		this.payerRegisterNo = payerRegisterNo;
+	}
+
+	public String getReimburseStatus() {
+		return this.reimburseStatus;
+	}
+	public void setReimburseStatus(String reimburseStatus) {
+		this.reimburseStatus = reimburseStatus;
 	}
 
 	public Boolean getRelatedToConsume() {

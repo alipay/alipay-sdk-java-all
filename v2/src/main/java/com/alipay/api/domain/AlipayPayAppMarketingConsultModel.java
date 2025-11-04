@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户前置营销内容咨询接口
  *
  * @author auto create
- * @since 1.0, 2025-09-18 21:24:23
+ * @since 1.0, 2025-11-03 19:38:44
  */
 public class AlipayPayAppMarketingConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1266484452258996657L;
+	private static final long serialVersionUID = 6516339869517629412L;
 
 	/**
 	 * 业务场景，用于区分商户具体的咨场景，示例：ORDER_PAGE：下单页营销咨询；其他新场景接入时需与支付宝协商约定
@@ -87,9 +87,10 @@ public class AlipayPayAppMarketingConsultModel extends AlipayObject {
 	private String merchantUserId;
 
 	/**
-	 * 已废弃不支持
+	 * 已废弃不支持 当前字段已废弃(不支持手机明文传输,废弃该字段)
 	 */
 	@ApiField("mobile")
+	@Deprecated
 	private String mobile;
 
 	/**
@@ -127,6 +128,12 @@ public class AlipayPayAppMarketingConsultModel extends AlipayObject {
 	 */
 	@ApiField("partner_id")
 	private String partnerId;
+
+	/**
+	 * 外部商户咨询场景参数
+	 */
+	@ApiField("proconsult_scene")
+	private String proconsultScene;
 
 	/**
 	 * 销售产品码，商家和支付宝签约的产品码
@@ -289,6 +296,13 @@ public class AlipayPayAppMarketingConsultModel extends AlipayObject {
 	}
 	public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
+	}
+
+	public String getProconsultScene() {
+		return this.proconsultScene;
+	}
+	public void setProconsultScene(String proconsultScene) {
+		this.proconsultScene = proconsultScene;
 	}
 
 	public String getProductCode() {

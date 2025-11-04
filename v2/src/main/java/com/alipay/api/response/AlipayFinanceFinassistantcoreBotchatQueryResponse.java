@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.finance.finassistantcore.botchat.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-07 20:56:44
+ * @since 1.0, 2025-11-04 10:02:23
  */
 public class AlipayFinanceFinassistantcoreBotchatQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6832431228452266933L;
+	private static final long serialVersionUID = 5158155975223898755L;
 
 	/** 
 	 * 支小宝的回复内容

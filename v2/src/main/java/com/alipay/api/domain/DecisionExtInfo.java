@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DecisionExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2483853271979536922L;
+	private static final long serialVersionUID = 2737494753323476583L;
 
 	/**
 	 * 省份编码，由入参传入后拼接到结果数据中

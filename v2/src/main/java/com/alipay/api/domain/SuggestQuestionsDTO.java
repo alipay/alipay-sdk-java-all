@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class SuggestQuestionsDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3783226996846822471L;
+	private static final long serialVersionUID = 1179858351839581236L;
 
 	/**
 	 * 推荐问题列表

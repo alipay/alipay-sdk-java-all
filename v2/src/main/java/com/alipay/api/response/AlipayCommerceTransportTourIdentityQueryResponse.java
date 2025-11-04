@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.tour.identity.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-10-27 15:22:40
+ * @since 1.0, 2025-11-01 14:42:40
  */
 public class AlipayCommerceTransportTourIdentityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1227441655987513424L;
+	private static final long serialVersionUID = 5486721557216531741L;
 
 	/** 
 	 * 查询返回结果

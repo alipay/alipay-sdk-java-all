@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.dataservice.ad.product.modify request
  * 
  * @author auto create
- * @since 1.0, 2025-04-02 15:27:28
+ * @since 1.0, 2025-10-30 14:23:23
  */
 public class AlipayDataDataserviceAdProductModifyRequest implements AlipayRequest<AlipayDataDataserviceAdProductModifyResponse> {
 

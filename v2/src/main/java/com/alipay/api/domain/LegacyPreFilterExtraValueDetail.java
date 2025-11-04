@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LegacyPreFilterExtraValueDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5241157315992335388L;
+	private static final long serialVersionUID = 3348634454938479687L;
 
 	/**
 	 * 筛选值

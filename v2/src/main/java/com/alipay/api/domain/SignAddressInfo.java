@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签约地址
  *
  * @author auto create
- * @since 1.0, 2024-05-21 10:12:51
+ * @since 1.0, 2025-10-30 15:11:13
  */
 public class SignAddressInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6598649543318344131L;
+	private static final long serialVersionUID = 1466748257714489469L;
 
 	/**
-	 * 城市编码。请按照<a href="https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx">表格</a> 中内容填写。 （参考资料： <a href="http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/">参考资料</a>）
+	 * 城市编码。请按照<a href="https://mdn.alipayobjects.com/huamei_sm7gq8/afts/file/A*blT9RqSR9_gAAAAAAAAAAAAADuKQAQ/2022%E8%9A%82%E8%9A%81%E9%87%91%E6%9C%8D%E5%9C%B0%E5%8C%BA%E7%A0%81.xlsx">地区码表格</a> 中内容填写。 （参考资料： <a href="https://www.mca.gov.cn/n156/n186/index.html">参考资料</a>）
 	 */
 	@ApiField("city_code")
 	private String cityCode;
@@ -32,7 +32,7 @@ public class SignAddressInfo extends AlipayObject {
 	private String detailAddress;
 
 	/**
-	 * 区县编码。请按照<a href="https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx">表格</a> 中内容填写。 （参考资料： <a href="http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/">参考资料</a>）
+	 * 区县编码。请按照<a href="https://mdn.alipayobjects.com/huamei_sm7gq8/afts/file/A*blT9RqSR9_gAAAAAAAAAAAAADuKQAQ/2022%E8%9A%82%E8%9A%81%E9%87%91%E6%9C%8D%E5%9C%B0%E5%8C%BA%E7%A0%81.xlsx">地区码表格</a> 中内容填写。 （参考资料： <a href="https://www.mca.gov.cn/n156/n186/index.html">参考资料</a>）
 	 */
 	@ApiField("district_code")
 	private String districtCode;
@@ -50,7 +50,7 @@ public class SignAddressInfo extends AlipayObject {
 	private String longitude;
 
 	/**
-	 * 省份编码。请按照<a href="https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx">表格</a> 中内容填写。 （参考资料： <a href="http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/">参考资料</a>）
+	 * 省份编码。请按照<a href="https://mdn.alipayobjects.com/huamei_sm7gq8/afts/file/A*blT9RqSR9_gAAAAAAAAAAAAADuKQAQ/2022%E8%9A%82%E8%9A%81%E9%87%91%E6%9C%8D%E5%9C%B0%E5%8C%BA%E7%A0%81.xlsx">地区码表格</a> 中内容填写。 （参考资料： <a href="https://www.mca.gov.cn/n156/n186/index.html">参考资料</a>）
 	 */
 	@ApiField("province_code")
 	private String provinceCode;

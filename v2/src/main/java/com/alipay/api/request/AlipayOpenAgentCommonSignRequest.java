@@ -14,7 +14,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.agent.common.sign request
  * 
  * @author auto create
- * @since 1.0, 2025-09-16 16:32:40
+ * @since 1.0, 2025-10-30 15:17:41
  */
 public class AlipayOpenAgentCommonSignRequest implements AlipayUploadRequest<AlipayOpenAgentCommonSignResponse> {
 
@@ -193,7 +193,7 @@ public class AlipayOpenAgentCommonSignRequest implements AlipayUploadRequest<Ali
 	private String rate;
 
 	/** 
-	* 门店所在城市
+	* 门店所在城市。请按照<a href="https://mdn.alipayobjects.com/huamei_sm7gq8/afts/file/A*blT9RqSR9_gAAAAAAAAAAAAADuKQAQ/2022%E8%9A%82%E8%9A%81%E9%87%91%E6%9C%8D%E5%9C%B0%E5%8C%BA%E7%A0%81.xlsx">地区码表格</a> 中内容填写。
 	 */
 	private String shopCityCode;
 
@@ -203,7 +203,7 @@ public class AlipayOpenAgentCommonSignRequest implements AlipayUploadRequest<Ali
 	private String shopDetailAddress;
 
 	/** 
-	* 门店所在区/县
+	* 门店所在区/县。请按照<a href="https://mdn.alipayobjects.com/huamei_sm7gq8/afts/file/A*blT9RqSR9_gAAAAAAAAAAAAADuKQAQ/2022%E8%9A%82%E8%9A%81%E9%87%91%E6%9C%8D%E5%9C%B0%E5%8C%BA%E7%A0%81.xlsx">地区码表格</a> 中内容填写。
 	 */
 	private String shopDistrictCode;
 
@@ -213,7 +213,7 @@ public class AlipayOpenAgentCommonSignRequest implements AlipayUploadRequest<Ali
 	private String shopName;
 
 	/** 
-	* 门店所在省份
+	* 门店所在省份。请按照<a href="https://mdn.alipayobjects.com/huamei_sm7gq8/afts/file/A*blT9RqSR9_gAAAAAAAAAAAAADuKQAQ/2022%E8%9A%82%E8%9A%81%E9%87%91%E6%9C%8D%E5%9C%B0%E5%8C%BA%E7%A0%81.xlsx">地区码表格</a> 中内容填写。
 	 */
 	private String shopProvinceCode;
 

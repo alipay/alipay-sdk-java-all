@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCircularRentAuthDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4416789474532149427L;
+	private static final long serialVersionUID = 7673297816558119919L;
 
 	/**
 	 * 支付宝授权资金订单号。 与商户的授权资金订单号不能同时为空，二者都传入时，以支付宝资金授权订单号为准，该参数与支付宝授权资金操作流水号配对使用。

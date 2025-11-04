@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class BizOpenCertificateInfoForEntry extends AlipayObject {
 
-	private static final long serialVersionUID = 8243496139317983119L;
+	private static final long serialVersionUID = 7655155683175579933L;
 
 	/**
 	 * 证件名称

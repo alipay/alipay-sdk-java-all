@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * 商户身份查询接口
+ * 用户特殊身份校验接口
  *
  * @author auto create
- * @since 1.0, 2025-10-27 15:22:40
+ * @since 1.0, 2025-11-01 14:42:40
  */
 public class AlipayCommerceTransportTourIdentityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2743482652377451582L;
+	private static final long serialVersionUID = 7732887614579696515L;
 
 	/**
 	 * 会话信息	

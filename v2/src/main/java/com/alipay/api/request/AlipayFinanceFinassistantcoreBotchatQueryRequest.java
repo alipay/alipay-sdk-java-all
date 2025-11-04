@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.finance.finassistantcore.botchat.query request
  * 
  * @author auto create
- * @since 1.0, 2023-10-07 20:56:44
+ * @since 1.0, 2025-11-04 10:02:23
  */
 public class AlipayFinanceFinassistantcoreBotchatQueryRequest implements AlipayRequest<AlipayFinanceFinassistantcoreBotchatQueryResponse> {
 

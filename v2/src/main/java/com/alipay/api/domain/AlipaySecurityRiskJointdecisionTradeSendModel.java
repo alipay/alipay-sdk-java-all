@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户风险数据回传接口
  *
  * @author auto create
- * @since 1.0, 2025-10-29 14:04:48
+ * @since 1.0, 2025-10-30 10:47:53
  */
 public class AlipaySecurityRiskJointdecisionTradeSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1212298253433474462L;
+	private static final long serialVersionUID = 4519553886568963273L;
 
 	/**
 	 * 外部交易号
@@ -20,10 +20,28 @@ public class AlipaySecurityRiskJointdecisionTradeSendModel extends AlipayObject 
 	private String outTradeNo;
 
 	/**
+	 * 付款方账户（商户侧账户信息）
+	 */
+	@ApiField("payee_account")
+	private String payeeAccount;
+
+	/**
+	 * 付款方账户（商户侧账户信息）
+	 */
+	@ApiField("payee_account_open_id")
+	private String payeeAccountOpenId;
+
+	/**
 	 * 商户pid
 	 */
 	@ApiField("pid")
 	private String pid;
+
+	/**
+	 * 根据商户回传的风险类型场景，可由商户自定义填写
+	 */
+	@ApiField("risk_custom_info")
+	private String riskCustomInfo;
 
 	/**
 	 * 01：暂停发货；02：延迟结算；03：关停账户；04：暂停发货+关停账户；05：延迟结算+关停账户；06：订单拦截中；07：订单已退款；08：订单已履约交付无法退款；09：其他
@@ -72,11 +90,32 @@ public class AlipaySecurityRiskJointdecisionTradeSendModel extends AlipayObject 
 		this.outTradeNo = outTradeNo;
 	}
 
+	public String getPayeeAccount() {
+		return this.payeeAccount;
+	}
+	public void setPayeeAccount(String payeeAccount) {
+		this.payeeAccount = payeeAccount;
+	}
+
+	public String getPayeeAccountOpenId() {
+		return this.payeeAccountOpenId;
+	}
+	public void setPayeeAccountOpenId(String payeeAccountOpenId) {
+		this.payeeAccountOpenId = payeeAccountOpenId;
+	}
+
 	public String getPid() {
 		return this.pid;
 	}
 	public void setPid(String pid) {
 		this.pid = pid;
+	}
+
+	public String getRiskCustomInfo() {
+		return this.riskCustomInfo;
+	}
+	public void setRiskCustomInfo(String riskCustomInfo) {
+		this.riskCustomInfo = riskCustomInfo;
 	}
 
 	public String getRiskTradeFeedback() {

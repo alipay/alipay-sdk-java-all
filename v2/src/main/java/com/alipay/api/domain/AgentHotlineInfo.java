@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AgentHotlineInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4362333873259354651L;
+	private static final long serialVersionUID = 8112392463559622126L;
 
 	/**
 	 * 数据权限id(租户实例id)
