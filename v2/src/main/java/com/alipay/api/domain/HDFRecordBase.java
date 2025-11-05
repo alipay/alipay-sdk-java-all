@@ -12,7 +12,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HDFRecordBase extends AlipayObject {
 
-	private static final long serialVersionUID = 8189824388891694743L;
+	private static final long serialVersionUID = 4331495932522997259L;
 
 	/**
 	 * 单位厘米

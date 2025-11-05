@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantIsvhelpEntryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5514938386421896192L;
+	private static final long serialVersionUID = 1249352138377155336L;
 
 	/**
 	 * 服务商自定义的申请编号，每个申请编号唯一对应一个申请单，需在服务商下唯一。只能用数字、字母或下划线组成

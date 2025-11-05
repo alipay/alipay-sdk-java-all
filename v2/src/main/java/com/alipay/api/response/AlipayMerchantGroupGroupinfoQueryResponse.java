@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMerchantGroupGroupinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3895429544452299933L;
+	private static final long serialVersionUID = 2821235591334481281L;
 
 	/** 
 	 * 群组详情信息。

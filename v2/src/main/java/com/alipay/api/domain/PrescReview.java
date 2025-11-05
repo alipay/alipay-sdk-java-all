@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PrescReview extends AlipayObject {
 
-	private static final long serialVersionUID = 4197963994778761993L;
+	private static final long serialVersionUID = 3117717679537339123L;
 
 	/**
 	 * 商家审方药师姓名

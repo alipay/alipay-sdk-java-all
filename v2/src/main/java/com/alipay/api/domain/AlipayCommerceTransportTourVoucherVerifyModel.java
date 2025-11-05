@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportTourVoucherVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7773588231953171827L;
+	private static final long serialVersionUID = 3483558467474744654L;
 
 	/**
 	 * 核销凭证的门店ID

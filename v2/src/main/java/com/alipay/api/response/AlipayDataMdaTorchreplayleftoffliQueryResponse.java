@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataMdaTorchreplayleftoffliQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5793166445861649188L;
+	private static final long serialVersionUID = 4895939172115422732L;
 
 	/** 
 	 * 分享亚运精神用户数

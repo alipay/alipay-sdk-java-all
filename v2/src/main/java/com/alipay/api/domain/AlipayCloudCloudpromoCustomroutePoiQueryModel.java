@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCloudCloudpromoCustomroutePoiQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3414661163165724367L;
+	private static final long serialVersionUID = 8878713852462217356L;
 
 	/**
 	 * 伴游卡片唯一id

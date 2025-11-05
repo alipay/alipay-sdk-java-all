@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenSearchAbilityBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4242418586815222363L;
+	private static final long serialVersionUID = 3248824689782458697L;
 
 	/**
 	 * 搜索运营列表的查询request

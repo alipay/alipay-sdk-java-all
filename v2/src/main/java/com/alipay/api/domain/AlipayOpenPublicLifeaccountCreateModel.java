@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ka外部平台一键入驻生活号
  *
  * @author auto create
- * @since 1.0, 2022-12-14 19:41:14
+ * @since 1.0, 2025-11-04 15:45:40
  */
 public class AlipayOpenPublicLifeaccountCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6169163995942316966L;
+	private static final long serialVersionUID = 1652439772513834211L;
 
 	/**
 	 * 勾选同意生活号协议（true：同意，false：不同意）

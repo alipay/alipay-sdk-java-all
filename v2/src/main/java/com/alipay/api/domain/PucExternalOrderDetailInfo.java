@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PucExternalOrderDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6468539962543342431L;
+	private static final long serialVersionUID = 3895149243483335885L;
 
 	/**
 	 * 缴费收费账号, 由收费单位定义

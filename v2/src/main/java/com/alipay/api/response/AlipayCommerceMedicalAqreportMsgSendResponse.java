@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.aqreport.msg.send response.
  * 
  * @author auto create
- * @since 1.0, 2025-10-21 10:37:41
+ * @since 1.0, 2025-11-04 18:12:41
  */
 public class AlipayCommerceMedicalAqreportMsgSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5626623594224857472L;
+	private static final long serialVersionUID = 3537351712394452926L;
 
 	/** 
 	 * 消息id列表

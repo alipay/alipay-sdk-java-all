@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * AQ报告消息推送
  *
  * @author auto create
- * @since 1.0, 2025-10-21 10:34:04
+ * @since 1.0, 2025-11-04 18:10:25
  */
 public class AlipayCommerceMedicalAqreportMsgSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5399347818449695389L;
+	private static final long serialVersionUID = 2613372248768893217L;
 
 	/**
 	 * AQ报告查询

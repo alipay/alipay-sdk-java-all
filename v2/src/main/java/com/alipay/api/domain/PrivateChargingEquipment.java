@@ -8,14 +8,14 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * 充电私桩信息
+ * 私有四轮充电桩的基本信息
  *
  * @author auto create
- * @since 1.0, 2025-07-07 10:34:04
+ * @since 1.0, 2025-11-05 10:31:36
  */
 public class PrivateChargingEquipment extends AlipayObject {
 
-	private static final long serialVersionUID = 8267753812671331671L;
+	private static final long serialVersionUID = 6846842462475194855L;
 
 	/**
 	 * 充电桩二维码值
@@ -60,7 +60,7 @@ public class PrivateChargingEquipment extends AlipayObject {
 	private String equipSn;
 
 	/**
-	 * 设备类型
+	 * 充电桩的设备类型。智能开关是指与无联网功能充电桩配套使用的可以联网控制充放电的开关
 	 */
 	@ApiField("equip_type")
 	private String equipType;
@@ -79,37 +79,37 @@ public class PrivateChargingEquipment extends AlipayObject {
 	private List<String> modes;
 
 	/**
-	 * 流量开始时间
+	 * 充电桩设备的联网流量生效时间，一般指4G流量卡或者物联网有效的起始时间
 	 */
 	@ApiField("network_data_begin_time")
 	private Date networkDataBeginTime;
 
 	/**
-	 * 流量结束时间
+	 * 充电桩设备的联网流量失效时间，一般指4G流量卡或者物联网的失效时间
 	 */
 	@ApiField("network_data_end_time")
 	private Date networkDataEndTime;
 
 	/**
-	 * 额定电流
+	 * 充电桩的额定电流，单位为安倍（A），请传入转换单位后的数值
 	 */
 	@ApiField("rated_current")
 	private String ratedCurrent;
 
 	/**
-	 * 额定功率，单位KW
+	 * 充电桩的额定功率，单位为千瓦（kW），请传入转换单位后的数值
 	 */
 	@ApiField("rated_power")
 	private String ratedPower;
 
 	/**
-	 * 额定电压
+	 * 充电桩的额定电压，单位为伏特（V），请传入转换单位后的数值
 	 */
 	@ApiField("rated_voltage")
 	private String ratedVoltage;
 
 	/**
-	 * 设备有二级品牌商，需要传二级品牌编号
+	 * 充电桩设备的关联二级品牌商编号，一般指生产商或制造商。若需要关联二级品牌商，则需要传入
 	 */
 	@ApiField("s_brand_code")
 	private String sBrandCode;

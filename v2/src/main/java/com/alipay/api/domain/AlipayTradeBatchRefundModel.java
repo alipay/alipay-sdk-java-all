@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayTradeBatchRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5896295662449149299L;
+	private static final long serialVersionUID = 3512989969883291913L;
 
 	/**
 	 * 每进行一次即时到账批量退款，都需要提供一个批次号，通过该批次号可以查询这一批次的退款交易记录。对于每一个合作伙伴，传递的每一个批次号都必须保证唯一性。

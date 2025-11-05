@@ -1,0 +1,68 @@
+package com.alipay.api.domain;
+
+import com.alipay.api.AlipayObject;
+import com.alipay.api.internal.mapping.ApiField;
+
+/**
+ * 作废医疗会员token接口
+ *
+ * @author auto create
+ * @since 1.0, 2025-11-04 14:22:07
+ */
+public class AlipayCommerceMedicalMemberTokenInvalidModel extends AlipayObject {
+
+	private static final long serialVersionUID = 3479321762292711919L;
+
+	/**
+	 * token值
+	 */
+	@ApiField("access_token")
+	private String accessToken;
+
+	/**
+	 * 用于标记支付宝用户在应用下的唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/**
+	 * 调用方来源
+	 */
+	@ApiField("source")
+	private String source;
+
+	/**
+	 * 支付宝用户的userId。
+	 */
+	@ApiField("user_id")
+	private String userId;
+
+	public String getAccessToken() {
+		return this.accessToken;
+	}
+	public void setAccessToken(String accessToken) {
+		this.accessToken = accessToken;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+
+	public String getSource() {
+		return this.source;
+	}
+	public void setSource(String source) {
+		this.source = source;
+	}
+
+	public String getUserId() {
+		return this.userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+
+}

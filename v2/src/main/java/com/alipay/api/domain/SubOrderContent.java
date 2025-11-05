@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SubOrderContent extends AlipayObject {
 
-	private static final long serialVersionUID = 5575313626456886493L;
+	private static final long serialVersionUID = 3768993847138699788L;
 
 	/**
 	 * 子订单优惠价格，单位：元

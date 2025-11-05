@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ItemStockUpdateByIsvItemIdParam extends AlipayObject {
 
-	private static final long serialVersionUID = 2734716476123184136L;
+	private static final long serialVersionUID = 1162176422235939539L;
 
 	/**
 	 * 库存结束时间, 毫秒精度时间戳

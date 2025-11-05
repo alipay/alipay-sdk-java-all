@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportParkingAssistantQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5819146562288442523L;
+	private static final long serialVersionUID = 4361911849859452223L;
 
 	/**
 	 * 车牌颜色，如果不填，则默认7位为蓝色，8位为绿色；

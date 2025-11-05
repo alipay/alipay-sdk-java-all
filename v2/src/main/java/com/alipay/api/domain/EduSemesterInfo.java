@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EduSemesterInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2138989138729925836L;
+	private static final long serialVersionUID = 6321871818498763685L;
 
 	/**
 	 * 学期结束日期

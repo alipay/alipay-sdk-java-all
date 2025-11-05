@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NDeviceMetricsListForDayResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 2541512449862331521L;
+	private static final long serialVersionUID = 3639522756237936972L;
 
 	/**
 	 * 支付宝金额，单位元

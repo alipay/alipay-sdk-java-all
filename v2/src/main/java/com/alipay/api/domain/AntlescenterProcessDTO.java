@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AntlescenterProcessDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4119182556972645773L;
+	private static final long serialVersionUID = 5394768281184913359L;
 
 	/**
 	 * 审批流其他信息

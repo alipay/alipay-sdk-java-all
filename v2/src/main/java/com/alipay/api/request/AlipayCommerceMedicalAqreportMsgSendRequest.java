@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.aqreport.msg.send request
  * 
  * @author auto create
- * @since 1.0, 2025-10-21 10:37:41
+ * @since 1.0, 2025-11-04 18:12:41
  */
 public class AlipayCommerceMedicalAqreportMsgSendRequest implements AlipayRequest<AlipayCommerceMedicalAqreportMsgSendResponse> {
 

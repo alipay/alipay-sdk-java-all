@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RecommendLayeredItemResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 4768836988539983961L;
+	private static final long serialVersionUID = 1456334636591991799L;
 
 	/**
 	 * 商品分层标签，传递分层分层信息。

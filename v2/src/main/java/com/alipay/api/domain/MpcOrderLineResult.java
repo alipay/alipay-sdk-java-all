@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MpcOrderLineResult extends AlipayObject {
 
-	private static final long serialVersionUID = 1712713873227999778L;
+	private static final long serialVersionUID = 6632226465882857164L;
 
 	/**
 	 * 物流状态

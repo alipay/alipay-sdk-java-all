@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ChannelCodeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3247859931191246259L;
+	private static final long serialVersionUID = 2186198771116798351L;
 
 	/**
 	 * 渠道的code

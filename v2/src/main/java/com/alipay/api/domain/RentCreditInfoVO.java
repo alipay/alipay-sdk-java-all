@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RentCreditInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5193569741147846487L;
+	private static final long serialVersionUID = 5512612185256987192L;
 
 	/**
 	 * 芝麻外部类目

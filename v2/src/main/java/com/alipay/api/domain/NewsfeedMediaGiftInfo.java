@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NewsfeedMediaGiftInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5767766542334126367L;
+	private static final long serialVersionUID = 6727313857275712472L;
 
 	/**
 	 * 地址
