@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiCateringKdsInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5224325762416863183L;
+	private static final long serialVersionUID = 7689189539427442212L;
 
 	/** 
 	 * kds 配置信息列表

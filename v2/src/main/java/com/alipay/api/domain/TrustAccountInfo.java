@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TrustAccountInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6217661719914692916L;
+	private static final long serialVersionUID = 2412147651941511972L;
 
 	/**
 	 * 账户名称

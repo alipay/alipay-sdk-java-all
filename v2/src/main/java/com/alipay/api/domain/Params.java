@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开卡调用参数
  *
  * @author auto create
- * @since 1.0, 2025-10-30 14:07:40
+ * @since 1.0, 2025-11-05 14:27:41
  */
 public class Params extends AlipayObject {
 
-	private static final long serialVersionUID = 6489799146255158774L;
+	private static final long serialVersionUID = 4334414588674136381L;
 
 	/**
 	 * 开卡时商家 CRM 回调模式，枚举值：

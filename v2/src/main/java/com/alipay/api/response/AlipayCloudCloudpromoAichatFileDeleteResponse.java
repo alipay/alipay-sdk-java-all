@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudCloudpromoAichatFileDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5829773736778529162L;
+	private static final long serialVersionUID = 1267632438554927356L;
 
 	
 

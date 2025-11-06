@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportChargerPncQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6118667628838442928L;
+	private static final long serialVersionUID = 8122146898662414223L;
 
 	/**
 	 * 支付宝用户的openId。

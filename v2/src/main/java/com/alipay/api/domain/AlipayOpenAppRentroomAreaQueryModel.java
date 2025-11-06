@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenAppRentroomAreaQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4641641363952482997L;
+	private static final long serialVersionUID = 1653927291883851981L;
 
 	/**
 	 * 小区ID，通过租房小区信息提报接口返参获取

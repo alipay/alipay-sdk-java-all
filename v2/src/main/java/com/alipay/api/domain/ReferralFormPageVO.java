@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ReferralFormPageVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4123238552545437566L;
+	private static final long serialVersionUID = 1456672613158443879L;
 
 	/**
 	 * 转诊人的年龄

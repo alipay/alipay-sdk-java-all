@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CreditPayRepayVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3423585281554246926L;
+	private static final long serialVersionUID = 4112459123899412826L;
 
 	/**
 	 * 首期合并天数，如果距离本月还款日不足首期合并天数，将推迟到下个月还款

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 理赔追偿
  *
  * @author auto create
- * @since 1.0, 2025-10-23 21:15:57
+ * @since 1.0, 2025-11-05 18:09:57
  */
 public class AlipayInsSceneClaimOverdueApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4777888612997352777L;
+	private static final long serialVersionUID = 1172681478288712651L;
 
 	/**
 	 * 追偿业务扩展字段

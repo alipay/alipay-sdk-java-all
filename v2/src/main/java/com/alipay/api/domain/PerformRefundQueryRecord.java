@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PerformRefundQueryRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 4622658114694138147L;
+	private static final long serialVersionUID = 2754954432847249861L;
 
 	/**
 	 * 退款金额

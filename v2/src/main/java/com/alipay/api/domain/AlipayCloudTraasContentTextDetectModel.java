@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCloudTraasContentTextDetectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3573148345363872757L;
+	private static final long serialVersionUID = 7874368713836499658L;
 
 	/**
 	 * 用户发表内容，建议对内容中的格式符号、表情符、HTML标签、UBB标签等做过滤，只传递纯文本，以减少误判。此字段和text_type相关，短文本（short）：短文本发表内容长度范围：[1,200] 长文本（long）：长文本发表内容长度范围：[1,10000]

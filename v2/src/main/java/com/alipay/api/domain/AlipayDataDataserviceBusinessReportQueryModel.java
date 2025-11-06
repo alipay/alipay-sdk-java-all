@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayDataDataserviceBusinessReportQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5661977879665968191L;
+	private static final long serialVersionUID = 6333665653941435735L;
 
 	/**
 	 * 商圈内品牌排行榜的行业筛选条件;

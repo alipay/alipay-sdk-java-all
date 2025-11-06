@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.rent.order.pay.refund request
  * 
  * @author auto create
- * @since 1.0, 2025-11-05 10:27:41
+ * @since 1.0, 2025-11-05 14:37:41
  */
 public class AlipayCommerceRentOrderPayRefundRequest implements AlipayRequest<AlipayCommerceRentOrderPayRefundResponse> {
 
@@ -19,7 +19,11 @@ public class AlipayCommerceRentOrderPayRefundRequest implements AlipayRequest<Al
 	private String apiVersion="1.0";
 
 	/** 
-	* 租赁订单支付退款
+	* 当交易发生之后一段时间内，由于买家或者卖家的原因需要退款时，卖家可以通过退款接口将支付款退还给买家，支付宝将在收到退款请求并且验证成功之后，按照退款规则将支付款按原路退到买家帐号上。
+交易超过约定时间（签约时设置的可退款时间）的订单无法进行退款。
+行业退款支持单笔交易分多次退款，退款时需要提交原支付订单的外部交易号或者支付宝交易号，以及设置不同的退款请求号。一笔退款失败后重新提交，要保证重试时退款请求号不能变更，防止该笔交易重复退款。
+同一笔交易累计提交的退款金额不能超过原始交易总金额。
+多次退，部分退的情况，退款结果查询可以使用租赁行业订单查询alipay.commerce.rent.order.query(租赁订单查询)或者alipay.trade.query(统一收单交易查询)
 	 */
 	private String bizContent;
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GroupMessageVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1149699694135152911L;
+	private static final long serialVersionUID = 5779492679551799148L;
 
 	/**
 	 * 优惠券消息内容模型，当消息类型(msg_type)选 "COUPON" 的时候，这个内容必须得填充

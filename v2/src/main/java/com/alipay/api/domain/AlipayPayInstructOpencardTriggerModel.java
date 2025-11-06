@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小指令触发会员登陆
  *
  * @author auto create
- * @since 1.0, 2025-10-30 14:07:40
+ * @since 1.0, 2025-11-05 14:27:41
  */
 public class AlipayPayInstructOpencardTriggerModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3645344326556751747L;
+	private static final long serialVersionUID = 2627134961196278593L;
 
 	/**
 	 * ABCP请求超时时间，单位毫秒，默认值为2 * 60 * 1000L(2分钟)超时，-1表示永不超时，可以根据业务情况修改

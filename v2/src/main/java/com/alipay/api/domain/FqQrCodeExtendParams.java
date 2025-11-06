@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FqQrCodeExtendParams extends AlipayObject {
 
-	private static final long serialVersionUID = 2143742624253542929L;
+	private static final long serialVersionUID = 6315351169565217358L;
 
 	/**
 	 * 当码类型是clerkQrcode(店员码)的时候需要传递此字段

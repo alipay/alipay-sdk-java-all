@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁账单信息
  *
  * @author auto create
- * @since 1.0, 2025-08-08 18:31:32
+ * @since 1.0, 2025-11-05 13:42:34
  */
 public class RentOrderStatementInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3367266793925446232L;
+	private static final long serialVersionUID = 7199598666447255556L;
 
 	/**
 	 * 用户支付时，实际申领的支付宝平台优惠金额，单位：元,精确到小数点后两位

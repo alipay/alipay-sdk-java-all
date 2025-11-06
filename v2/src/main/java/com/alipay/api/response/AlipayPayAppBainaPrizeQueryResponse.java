@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPayAppBainaPrizeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8767664999139474381L;
+	private static final long serialVersionUID = 7492724176689654252L;
 
 	/** 
 	 * 用户兑奖资格数量

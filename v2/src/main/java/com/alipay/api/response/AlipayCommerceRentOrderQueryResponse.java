@@ -15,6 +15,7 @@ import com.alipay.api.domain.RentPromoInfoVO;
 import com.alipay.api.domain.RentAftersaleOrderVO;
 import com.alipay.api.domain.RentOrderPayInfoVO;
 import com.alipay.api.domain.RentPlanInfoVO;
+import com.alipay.api.domain.RentRefundInfoVO;
 import com.alipay.api.domain.RentSignInfoVO;
 import com.alipay.api.domain.RentOrderStatementInfoVO;
 import com.alipay.api.domain.RentSubMerchantVO;
@@ -26,11 +27,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.rent.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-10-31 09:58:59
+ * @since 1.0, 2025-11-05 20:12:41
  */
 public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7233754273191142782L;
+	private static final long serialVersionUID = 7436996117261346675L;
 
 	/** 
 	 * 订单收货地址
@@ -154,6 +155,13 @@ public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("rent_plan_info")
 	private RentPlanInfoVO rentPlanInfo;
+
+	/** 
+	 * 如果通过行业退款接口发起了退款，并在query_options中传入refund_info后，才会返回退款信息
+	 */
+	@ApiListField("rent_refund_infos")
+	@ApiField("rent_refund_info_v_o")
+	private List<RentRefundInfoVO> rentRefundInfos;
 
 	/** 
 	 * 租赁订单支付产品、信用产品签约信息
@@ -350,6 +358,13 @@ public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 	}
 	public RentPlanInfoVO getRentPlanInfo( ) {
 		return this.rentPlanInfo;
+	}
+
+	public void setRentRefundInfos(List<RentRefundInfoVO> rentRefundInfos) {
+		this.rentRefundInfos = rentRefundInfos;
+	}
+	public List<RentRefundInfoVO> getRentRefundInfos( ) {
+		return this.rentRefundInfos;
 	}
 
 	public void setRentSignInfo(RentSignInfoVO rentSignInfo) {

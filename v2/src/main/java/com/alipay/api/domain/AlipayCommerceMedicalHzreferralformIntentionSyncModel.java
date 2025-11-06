@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalHzreferralformIntentionSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8839877192977927736L;
+	private static final long serialVersionUID = 4696711332549893161L;
 
 	/**
 	 * 备注，解释医生的审核结果，转诊失败时必须传

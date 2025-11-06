@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class UnifiedSettleTradeInstOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4232923334276957181L;
+	private static final long serialVersionUID = 3136318553285881994L;
 
 	/**
 	 * 金额，币种为人民币，单位为元，1.00为一元

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EcEmployeeTitleModifyTaxNoAndTitleId extends AlipayObject {
 
-	private static final long serialVersionUID = 3716526922799143935L;
+	private static final long serialVersionUID = 8764363156176765662L;
 
 	/**
 	 * 税号

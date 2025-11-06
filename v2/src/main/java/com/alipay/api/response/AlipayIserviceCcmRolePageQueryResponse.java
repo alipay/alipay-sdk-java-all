@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayIserviceCcmRolePageQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1879293897493737453L;
+	private static final long serialVersionUID = 2253868134331953597L;
 
 	/** 
 	 * 查询结果的页码

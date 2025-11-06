@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BreakCosts extends AlipayObject {
 
-	private static final long serialVersionUID = 1599951458248495462L;
+	private static final long serialVersionUID = 8796381126412263485L;
 
 	/**
 	 * 收取剩余金额的15%作为违约金

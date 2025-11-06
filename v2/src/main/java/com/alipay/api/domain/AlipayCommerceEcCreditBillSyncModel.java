@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceEcCreditBillSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7654588563247344116L;
+	private static final long serialVersionUID = 8675837828757829839L;
 
 	/**
 	 * 账单月

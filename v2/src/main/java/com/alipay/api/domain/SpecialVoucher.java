@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SpecialVoucher extends AlipayObject {
 
-	private static final long serialVersionUID = 8875131612771233232L;
+	private static final long serialVersionUID = 8597518434549513972L;
 
 	/**
 	 * 门槛金额。说明：该字段可不填，认为无门槛;

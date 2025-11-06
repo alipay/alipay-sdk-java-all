@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AuthIdentityInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3691926925728487491L;
+	private static final long serialVersionUID = 7489431788329458678L;
 
 	/**
 	 * 证件信息，主体类型为企业/个体户/政府机关/事业单位/社会组织时，必填

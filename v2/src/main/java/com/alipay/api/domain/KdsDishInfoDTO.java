@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KdsDishInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5655874177197959762L;
+	private static final long serialVersionUID = 1613249646474863147L;
 
 	/**
 	 * 菜品制作耗时，单位分钟

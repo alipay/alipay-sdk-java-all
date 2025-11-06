@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 默认结算规则
  *
  * @author auto create
- * @since 1.0, 2025-09-22 14:16:37
+ * @since 1.0, 2025-11-05 14:52:59
  */
 public class ZftDefaultSettleRule extends AlipayObject {
 
-	private static final long serialVersionUID = 5561265492627918335L;
+	private static final long serialVersionUID = 5467348561627727894L;
 
 	/**
 	 * 默认结算目标。当默认结算类型为alipayAccount时填写支付宝账号登录号，其值需在进件填写的结算支付宝账号范围内。

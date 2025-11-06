@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class InputFieldModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3183371436936499868L;
+	private static final long serialVersionUID = 2483799516834667587L;
 
 	/**
 	 * 默认提示值，例如歌华宽带的金额为100的倍数

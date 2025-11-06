@@ -5,6 +5,7 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.RentRiskProVO;
 import com.alipay.api.domain.RentRiskInfoVO;
+import com.alipay.api.domain.ShipGoodsRiskVO;
 
 import com.alipay.api.AlipayResponse;
 
@@ -12,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.rent.risk.consult response.
  * 
  * @author auto create
- * @since 1.0, 2025-11-04 14:28:38
+ * @since 1.0, 2025-11-05 16:57:41
  */
 public class AlipayCommerceRentRiskConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2283881911446324695L;
+	private static final long serialVersionUID = 2426768584162424415L;
 
 	/** 
 	 * Tn_Level类型结果，risk_level字段取值范围T1-T10（T1 ~ T4: 低风险；T5 ~ T6: 中风险；T7 ~ T8: 高风险；T9 ~ T10: 极高风险）
@@ -49,6 +50,13 @@ PRO-租安盾专业版，面向签约商户；
 	@ApiListField("risk_infos")
 	@ApiField("rent_risk_info_v_o")
 	private List<RentRiskInfoVO> riskInfos;
+
+	/** 
+	 * null
+	 */
+	@ApiListField("ship_goods_risk_models")
+	@ApiField("ship_goods_risk_v_o")
+	private List<ShipGoodsRiskVO> shipGoodsRiskModels;
 
 	/** 
 	 * 联营商户订单分组
@@ -89,6 +97,13 @@ PRO-租安盾专业版，面向签约商户；
 	}
 	public List<RentRiskInfoVO> getRiskInfos( ) {
 		return this.riskInfos;
+	}
+
+	public void setShipGoodsRiskModels(List<ShipGoodsRiskVO> shipGoodsRiskModels) {
+		this.shipGoodsRiskModels = shipGoodsRiskModels;
+	}
+	public List<ShipGoodsRiskVO> getShipGoodsRiskModels( ) {
+		return this.shipGoodsRiskModels;
 	}
 
 	public void setVamGroup(String vamGroup) {

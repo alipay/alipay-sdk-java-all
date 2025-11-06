@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceRecycleAssessQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1784166494838326699L;
+	private static final long serialVersionUID = 6374799763228761811L;
 
 	/** 
 	 * 估价集合

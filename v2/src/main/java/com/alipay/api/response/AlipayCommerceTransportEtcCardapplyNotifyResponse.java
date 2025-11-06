@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportEtcCardapplyNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7416277152335347134L;
+	private static final long serialVersionUID = 8345537874895115497L;
 
 	/** 
 	 * 通知结果，返回支付宝是否接收成功

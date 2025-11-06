@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaMerchantCreditlifeRiskApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7855533729214454648L;
+	private static final long serialVersionUID = 8148868653338454643L;
 
 	/** 
 	 * 用户在商端的身份标识，如果在接口的入参中存在该参数，芝麻网关会自动转化

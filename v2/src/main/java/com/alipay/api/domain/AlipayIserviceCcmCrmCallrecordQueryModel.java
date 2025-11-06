@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询通话记录详情
  *
  * @author auto create
- * @since 1.0, 2025-10-23 09:55:57
+ * @since 1.0, 2025-11-05 17:08:20
  */
 public class AlipayIserviceCcmCrmCallrecordQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6776561874376183825L;
+	private static final long serialVersionUID = 8779914582758418147L;
 
 	/**
 	 * 当前页码，可选参数，不选默认值为:1

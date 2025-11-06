@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceHousingCommunityBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1348356688168791169L;
+	private static final long serialVersionUID = 6751165696613636817L;
 
 	/** 
 	 * null

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BenefitUseLimitDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2492788239227372758L;
+	private static final long serialVersionUID = 5423877989865467673L;
 
 	/**
 	 * REDUCE_BY  ： 满减; REDUCE_TO ： 减至 (一般用来标识特价商品);GIFT ： 满赠;DISCOUNT ： 折扣

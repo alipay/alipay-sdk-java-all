@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZMGOBasicConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 1321955257559968548L;
+	private static final long serialVersionUID = 8798363958915532249L;
 
 	/**
 	 * 商户在芝麻GO配置的业务身份编码

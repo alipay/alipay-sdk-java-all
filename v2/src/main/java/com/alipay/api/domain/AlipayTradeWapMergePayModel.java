@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayTradeWapMergePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2384913188276734742L;
+	private static final long serialVersionUID = 1178536516617498311L;
 
 	/**
 	 * 预下单号。通过 alipay.trade.merge.precreate(统一收单合并支付预创建接口)返回。

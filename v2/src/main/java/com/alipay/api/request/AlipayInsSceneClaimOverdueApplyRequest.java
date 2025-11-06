@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.claim.overdue.apply request
  * 
  * @author auto create
- * @since 1.0, 2025-10-24 09:57:41
+ * @since 1.0, 2025-11-05 18:12:41
  */
 public class AlipayInsSceneClaimOverdueApplyRequest implements AlipayRequest<AlipayInsSceneClaimOverdueApplyResponse> {
 

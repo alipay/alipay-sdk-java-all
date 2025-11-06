@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RentPathInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1747435276158681516L;
+	private static final long serialVersionUID = 5383831813693577133L;
 
 	/**
 	 * 商家有独立页面用于支持用户发起租赁商品购买时，可传入此字段。用户在芝麻租赁频道发起购买时，将引导用户跳转至该页面完成操作。

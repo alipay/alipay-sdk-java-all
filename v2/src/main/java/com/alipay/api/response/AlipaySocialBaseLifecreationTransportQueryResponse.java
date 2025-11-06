@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySocialBaseLifecreationTransportQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5715577568652174529L;
+	private static final long serialVersionUID = 6211692696284651432L;
 
 	/** 
 	 * 创作搬运信息列表

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayIserviceCcmRobotChatQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2772516488483962625L;
+	private static final long serialVersionUID = 4431437842896934861L;
 
 	/** 
 	 * 机器人问答对话记录

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.rent.risk.consult request
  * 
  * @author auto create
- * @since 1.0, 2025-11-04 14:28:38
+ * @since 1.0, 2025-11-05 16:57:41
  */
 public class AlipayCommerceRentRiskConsultRequest implements AlipayRequest<AlipayCommerceRentRiskConsultResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RentSubMerchant extends AlipayObject {
 
-	private static final long serialVersionUID = 5244852672377416629L;
+	private static final long serialVersionUID = 8294574715952918824L;
 
 	/**
 	 * 支付宝二级商户编号。 间连受理商户的支付宝商户编号，通过间连商户入驻接口后由支付宝生成。 直付通场景下必传

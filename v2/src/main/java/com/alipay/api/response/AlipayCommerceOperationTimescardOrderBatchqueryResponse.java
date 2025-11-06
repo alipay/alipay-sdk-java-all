@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceOperationTimescardOrderBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3848837611364386956L;
+	private static final long serialVersionUID = 3493392271136846128L;
 
 	/** 
 	 * 次卡订单信息

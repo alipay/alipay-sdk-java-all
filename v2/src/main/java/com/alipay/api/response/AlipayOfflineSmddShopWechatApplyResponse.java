@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOfflineSmddShopWechatApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3465912982451318628L;
+	private static final long serialVersionUID = 7296311562184842993L;
 
 	
 

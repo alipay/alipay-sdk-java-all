@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 处方药品信息
+ * null
  *
  * @author auto create
- * @since 1.0, 2025-10-21 21:31:17
+ * @since 1.0, 2025-10-21 21:32:40
  */
 public class GuidanceUseDrugItem extends AlipayObject {
 
-	private static final long serialVersionUID = 6692859176379451334L;
+	private static final long serialVersionUID = 6258873597759431488L;
 
 	/**
 	 * 药品名称

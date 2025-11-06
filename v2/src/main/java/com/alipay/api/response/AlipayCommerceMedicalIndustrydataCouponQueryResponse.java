@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMedicalIndustrydataCouponQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8748796683397948678L;
+	private static final long serialVersionUID = 5486123589924453821L;
 
 	/** 
 	 * 该参数是返回查询得到用户可用营销优惠卷信息，数组为空则表示没有查询到

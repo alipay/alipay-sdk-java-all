@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 通话记录信息对象
  *
  * @author auto create
- * @since 1.0, 2025-10-23 09:55:57
+ * @since 1.0, 2025-11-05 17:08:20
  */
 public class CallRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 2616524885894671322L;
+	private static final long serialVersionUID = 6291253532667438414L;
 
 	/**
 	 * 通话ID
@@ -134,6 +134,12 @@ public class CallRecord extends AlipayObject {
 	 */
 	@ApiField("start_time")
 	private Date startTime;
+
+	/**
+	 * 本通电话的摘要信息
+	 */
+	@ApiField("summary")
+	private String summary;
 
 	/**
 	 * 通话时长，单位秒
@@ -279,6 +285,13 @@ public class CallRecord extends AlipayObject {
 	}
 	public void setStartTime(Date startTime) {
 		this.startTime = startTime;
+	}
+
+	public String getSummary() {
+		return this.summary;
+	}
+	public void setSummary(String summary) {
+		this.summary = summary;
 	}
 
 	public Long getTalkTime() {
