@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 通过bizToken获取用户简历授权登录信息
  *
  * @author auto create
- * @since 1.0, 2025-09-09 15:57:39
+ * @since 1.0, 2025-11-13 14:45:57
  */
 public class AlipayEbppIndustryJobResumeauthlogininfoGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7515435741846253744L;
+	private static final long serialVersionUID = 3729452125723286243L;
 
 	/**
 	 * 业务token

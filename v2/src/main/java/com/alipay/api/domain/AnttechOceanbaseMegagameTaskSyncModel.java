@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechOceanbaseMegagameTaskSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1115437232785836672L;
+	private static final long serialVersionUID = 8337482595716794819L;
 
 	/**
 	 * 提测任务失败时需要错误信息状态码   当task_status=2时，fail_msg=0 或不填 （默认0）, 当task_status=3时，fail_msg必填且为正整数

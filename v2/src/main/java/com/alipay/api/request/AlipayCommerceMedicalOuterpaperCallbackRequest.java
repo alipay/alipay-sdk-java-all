@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.outerpaper.callback request
  * 
  * @author auto create
- * @since 1.0, 2025-11-03 15:37:41
+ * @since 1.0, 2025-11-06 10:37:41
  */
 public class AlipayCommerceMedicalOuterpaperCallbackRequest implements AlipayRequest<AlipayCommerceMedicalOuterpaperCallbackResponse> {
 

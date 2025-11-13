@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundZcardprodUserUnbindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7485438267431717245L;
+	private static final long serialVersionUID = 2559187592517866285L;
 
 	
 

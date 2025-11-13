@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 好大夫问诊小结
  *
  * @author auto create
- * @since 1.0, 2025-10-23 18:22:55
+ * @since 1.0, 2025-11-11 15:59:10
  */
 public class HDFMedicalSummary extends AlipayObject {
 
-	private static final long serialVersionUID = 4442384128353418272L;
+	private static final long serialVersionUID = 4792278963566676613L;
 
 	/**
 	 * diacrisis初步诊断
@@ -20,9 +20,10 @@ public class HDFMedicalSummary extends AlipayObject {
 	private String diacrisis;
 
 	/**
-	 * 处置
+	 * 处置 当前字段已废弃(HDFMedicalSummary字段不需要传执行项)
 	 */
 	@ApiField("idea")
+	@Deprecated
 	private String idea;
 
 	/**

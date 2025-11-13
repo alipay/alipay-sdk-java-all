@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 制度适用范围信息
  *
  * @author auto create
- * @since 1.0, 2024-12-24 20:09:17
+ * @since 1.0, 2025-11-11 14:02:54
  */
 public class InstitutionScopeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7665243661413636356L;
+	private static final long serialVersionUID = 2318324686232855672L;
 
 	/**
 	 * 制度适用范围，支持配置全员、指定员工和指定部门

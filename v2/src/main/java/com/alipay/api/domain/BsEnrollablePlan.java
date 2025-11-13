@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class BsEnrollablePlan extends AlipayObject {
 
-	private static final long serialVersionUID = 7446844276553666154L;
+	private static final long serialVersionUID = 1868129427626756177L;
 
 	/**
 	 * 联营计划信息

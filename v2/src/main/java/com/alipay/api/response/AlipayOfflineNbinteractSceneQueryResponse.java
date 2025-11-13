@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOfflineNbinteractSceneQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2751864467634393195L;
+	private static final long serialVersionUID = 5798175662815736164L;
 
 	/** 
 	 * 设备互动链接绑定状态

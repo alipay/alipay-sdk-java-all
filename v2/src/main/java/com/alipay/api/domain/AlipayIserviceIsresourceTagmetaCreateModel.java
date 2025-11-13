@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建资源库标签
  *
  * @author auto create
- * @since 1.0, 2023-05-17 15:06:43
+ * @since 1.0, 2025-11-10 16:06:25
  */
 public class AlipayIserviceIsresourceTagmetaCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5655163526644958329L;
+	private static final long serialVersionUID = 5326877869474735556L;
 
 	/**
 	 * 标签名称，业务自定义

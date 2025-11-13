@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.member.chat.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-10-29 18:08:50
+ * @since 1.0, 2025-11-06 14:52:41
  */
 public class AlipayCommerceMedicalMemberChatQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8293811272337831913L;
+	private static final long serialVersionUID = 4335582426463565362L;
 
 	/** 
 	 * 头像地址
 	 */
 	@ApiField("avatar")
 	private String avatar;
+
+	/** 
+	 * 医生接诊状态
+	 */
+	@ApiField("doctor_inquiry_status")
+	private String doctorInquiryStatus;
 
 	/** 
 	 * 用户没有查看到的医生消息
@@ -31,6 +37,12 @@ public class AlipayCommerceMedicalMemberChatQueryResponse extends AlipayResponse
 	 */
 	@ApiField("doctor_url")
 	private String doctorUrl;
+
+	/** 
+	 * 意图来源
+	 */
+	@ApiField("intention_source")
+	private String intentionSource;
 
 	/** 
 	 * 健康师的昵称
@@ -63,6 +75,13 @@ public class AlipayCommerceMedicalMemberChatQueryResponse extends AlipayResponse
 		return this.avatar;
 	}
 
+	public void setDoctorInquiryStatus(String doctorInquiryStatus) {
+		this.doctorInquiryStatus = doctorInquiryStatus;
+	}
+	public String getDoctorInquiryStatus( ) {
+		return this.doctorInquiryStatus;
+	}
+
 	public void setDoctorMessage(Long doctorMessage) {
 		this.doctorMessage = doctorMessage;
 	}
@@ -75,6 +94,13 @@ public class AlipayCommerceMedicalMemberChatQueryResponse extends AlipayResponse
 	}
 	public String getDoctorUrl( ) {
 		return this.doctorUrl;
+	}
+
+	public void setIntentionSource(String intentionSource) {
+		this.intentionSource = intentionSource;
+	}
+	public String getIntentionSource( ) {
+		return this.intentionSource;
 	}
 
 	public void setNickName(String nickName) {

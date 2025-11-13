@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 碰一下线圈签名校验
  *
  * @author auto create
- * @since 1.0, 2025-08-04 15:57:20
+ * @since 1.0, 2025-11-13 16:39:09
  */
 public class AlipayOpenSpNfcorderTagsignCheckavailableModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5231991747115181277L;
+	private static final long serialVersionUID = 1815491462281854417L;
 
 	/**
 	 * 通过小程序api获取到的开放物料id

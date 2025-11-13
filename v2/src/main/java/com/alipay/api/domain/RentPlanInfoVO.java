@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RentPlanInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1179999359663641925L;
+	private static final long serialVersionUID = 6465571276141647874L;
 
 	/**
 	 * 租金分期计划

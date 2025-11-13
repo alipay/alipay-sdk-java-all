@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数据处理规则
  *
  * @author auto create
- * @since 1.0, 2025-08-25 10:42:36
+ * @since 1.0, 2025-11-07 17:12:40
  */
 public class DocumentProcessRule extends AlipayObject {
 
-	private static final long serialVersionUID = 3596954961696391554L;
+	private static final long serialVersionUID = 6241533357868118888L;
 
 	/**
 	 * 切分配置

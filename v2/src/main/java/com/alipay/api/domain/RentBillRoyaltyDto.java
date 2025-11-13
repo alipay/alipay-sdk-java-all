@@ -7,11 +7,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资商通对账场景分账计划
  *
  * @author auto create
- * @since 1.0, 2025-08-26 12:27:44
+ * @since 1.0, 2025-11-07 14:04:33
  */
 public class RentBillRoyaltyDto extends AlipayObject {
 
-	private static final long serialVersionUID = 8691742472261884175L;
+	private static final long serialVersionUID = 8639677782495898595L;
+
+	/**
+	 * 实际分账买断金利息，单位元
+	 */
+	@ApiField("actual_royalty_buyout_interest_price")
+	private String actualRoyaltyBuyoutInterestPrice;
+
+	/**
+	 * 实际分账买断金，单位元
+	 */
+	@ApiField("actual_royalty_buyout_price")
+	private String actualRoyaltyBuyoutPrice;
+
+	/**
+	 * 实际分账买断金本金，单位元
+	 */
+	@ApiField("actual_royalty_buyout_principal_price")
+	private String actualRoyaltyBuyoutPrincipalPrice;
 
 	/**
 	 * 分账利息，单位元
@@ -30,6 +48,24 @@ public class RentBillRoyaltyDto extends AlipayObject {
 	 */
 	@ApiField("actual_royalty_principal_price")
 	private String actualRoyaltyPrincipalPrice;
+
+	/**
+	 * 实际分账租金利息，单位元
+	 */
+	@ApiField("actual_royalty_rent_interest_price")
+	private String actualRoyaltyRentInterestPrice;
+
+	/**
+	 * 实际分账租金，单位元
+	 */
+	@ApiField("actual_royalty_rent_price")
+	private String actualRoyaltyRentPrice;
+
+	/**
+	 * 实际分账租金本金，单位元
+	 */
+	@ApiField("actual_royalty_rent_principal_price")
+	private String actualRoyaltyRentPrincipalPrice;
 
 	/**
 	 * 当前期数对应的阶梯买断分账金，单位元
@@ -73,6 +109,27 @@ public class RentBillRoyaltyDto extends AlipayObject {
 	@ApiField("type")
 	private String type;
 
+	public String getActualRoyaltyBuyoutInterestPrice() {
+		return this.actualRoyaltyBuyoutInterestPrice;
+	}
+	public void setActualRoyaltyBuyoutInterestPrice(String actualRoyaltyBuyoutInterestPrice) {
+		this.actualRoyaltyBuyoutInterestPrice = actualRoyaltyBuyoutInterestPrice;
+	}
+
+	public String getActualRoyaltyBuyoutPrice() {
+		return this.actualRoyaltyBuyoutPrice;
+	}
+	public void setActualRoyaltyBuyoutPrice(String actualRoyaltyBuyoutPrice) {
+		this.actualRoyaltyBuyoutPrice = actualRoyaltyBuyoutPrice;
+	}
+
+	public String getActualRoyaltyBuyoutPrincipalPrice() {
+		return this.actualRoyaltyBuyoutPrincipalPrice;
+	}
+	public void setActualRoyaltyBuyoutPrincipalPrice(String actualRoyaltyBuyoutPrincipalPrice) {
+		this.actualRoyaltyBuyoutPrincipalPrice = actualRoyaltyBuyoutPrincipalPrice;
+	}
+
 	public String getActualRoyaltyInterestPrice() {
 		return this.actualRoyaltyInterestPrice;
 	}
@@ -92,6 +149,27 @@ public class RentBillRoyaltyDto extends AlipayObject {
 	}
 	public void setActualRoyaltyPrincipalPrice(String actualRoyaltyPrincipalPrice) {
 		this.actualRoyaltyPrincipalPrice = actualRoyaltyPrincipalPrice;
+	}
+
+	public String getActualRoyaltyRentInterestPrice() {
+		return this.actualRoyaltyRentInterestPrice;
+	}
+	public void setActualRoyaltyRentInterestPrice(String actualRoyaltyRentInterestPrice) {
+		this.actualRoyaltyRentInterestPrice = actualRoyaltyRentInterestPrice;
+	}
+
+	public String getActualRoyaltyRentPrice() {
+		return this.actualRoyaltyRentPrice;
+	}
+	public void setActualRoyaltyRentPrice(String actualRoyaltyRentPrice) {
+		this.actualRoyaltyRentPrice = actualRoyaltyRentPrice;
+	}
+
+	public String getActualRoyaltyRentPrincipalPrice() {
+		return this.actualRoyaltyRentPrincipalPrice;
+	}
+	public void setActualRoyaltyRentPrincipalPrice(String actualRoyaltyRentPrincipalPrice) {
+		this.actualRoyaltyRentPrincipalPrice = actualRoyaltyRentPrincipalPrice;
 	}
 
 	public String getCurrentBuyoutPrice() {

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.job.resumeauthloginurl.get response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-08 18:27:39
+ * @since 1.0, 2025-11-13 14:45:56
  */
 public class AlipayEbppIndustryJobResumeauthloginurlGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4177592579182143286L;
+	private static final long serialVersionUID = 8182324685333945751L;
 
 	/** 
 	 * alipays://xxxxxx?appId=xxx&template_id=xxx&out_user_id=xxx&required_attributes=["xxx","xxx"]&source_app_id="请求来源appId"

@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 患者信息
+ * 好大夫的患者信息
  *
  * @author auto create
- * @since 1.0, 2025-11-03 15:37:41
+ * @since 1.0, 2025-11-06 10:37:41
  */
 public class HDFPatientInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3292282764362674779L;
+	private static final long serialVersionUID = 8562685791343374657L;
 
 	/**
 	 * 生日

@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDigitalmgmtHrcominsuInsuclaimOnlineSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5151652558599765294L;
+	private static final long serialVersionUID = 5277577391252153928L;
 
 	/** 
 	 * report_biz_no_list+不唯一+供应商查询未提交给理赔公司的，理赔状态为进行中的理赔报案数据+枚举值(无)+员工申请理赔+特殊说明(无)

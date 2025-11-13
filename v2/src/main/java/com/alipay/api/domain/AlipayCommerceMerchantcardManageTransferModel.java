@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceMerchantcardManageTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1491727466363137195L;
+	private static final long serialVersionUID = 2615377127325628955L;
 
 	/**
 	 * 待转移的卡id集合，即将这些卡转移到自己名下。当前仅支持安心付标准版卡转移

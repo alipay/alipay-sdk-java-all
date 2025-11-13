@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.item.cateattr.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-10-30 16:52:10
+ * @since 1.0, 2025-11-07 19:12:41
  */
 public class AlipayOpenAppItemCateattrQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8532285517873241186L;
+	private static final long serialVersionUID = 1684317693432753162L;
 
 	/** 
 	 * null

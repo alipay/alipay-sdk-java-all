@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 触发直播间领取权益
  *
  * @author auto create
- * @since 1.0, 2025-04-22 14:14:14
+ * @since 1.0, 2025-11-13 15:43:28
  */
 public class AlipayContentLivePlayRightTriggerModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8281864636229389785L;
+	private static final long serialVersionUID = 7832111387988256633L;
 
 	/**
 	 * 支付宝直播间id

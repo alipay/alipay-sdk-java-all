@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 气象参数
  *
  * @author auto create
- * @since 1.0, 2025-06-12 19:34:27
+ * @since 1.0, 2025-11-13 16:05:17
  */
 public class WeatherVariables extends AlipayObject {
 
-	private static final long serialVersionUID = 7768969625189857117L;
+	private static final long serialVersionUID = 1662761853166511733L;
 
 	/**
 	 * 总云量，单位%
@@ -166,39 +166,39 @@ public class WeatherVariables extends AlipayObject {
 	private String windDirection80m;
 
 	/**
-	 * 地面十米处风速，单位 km/h
+	 * 地面十米处风速，单位 m/s
 	 */
 	@ApiField("wind_speed_10_m")
 	private String windSpeed10M;
 
 	/**
-	 * 地面十米处风速，单位 km/h 当前字段已废弃(网关SDK字段映射不一致)
+	 * 地面十米处风速，单位 m/s 当前字段已废弃(网关SDK字段映射不一致)
 	 */
 	@ApiField("wind_speed_10m")
 	@Deprecated
 	private String windSpeed10m;
 
 	/**
-	 * 地面 120 米处风速，单位km/h
+	 * 地面 120 米处风速，单位m/s
 	 */
 	@ApiField("wind_speed_120_m")
 	private String windSpeed120M;
 
 	/**
-	 * 地面 120 米处风速，单位km/h 当前字段已废弃(网关SDK字段映射不一致)
+	 * 地面 120 米处风速，单位m/s 当前字段已废弃(网关SDK字段映射不一致)
 	 */
 	@ApiField("wind_speed_120m")
 	@Deprecated
 	private String windSpeed120m;
 
 	/**
-	 * 地面80米处风速，单位 km/h
+	 * 地面80米处风速，单位 m/s
 	 */
 	@ApiField("wind_speed_80_m")
 	private String windSpeed80M;
 
 	/**
-	 * 地面80米处风速，单位 km/h 当前字段已废弃(网关SDK字段映射不一致)
+	 * 地面80米处风速，单位 m/s 当前字段已废弃(网关SDK字段映射不一致)
 	 */
 	@ApiField("wind_speed_80m")
 	@Deprecated

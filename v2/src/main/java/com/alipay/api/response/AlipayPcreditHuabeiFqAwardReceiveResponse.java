@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.huabei.fq.award.receive response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-05 11:52:20
+ * @since 1.0, 2025-11-06 10:15:09
  */
 public class AlipayPcreditHuabeiFqAwardReceiveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3788758744997581395L;
+	private static final long serialVersionUID = 1517181268478483248L;
 
 	
 

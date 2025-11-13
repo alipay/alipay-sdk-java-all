@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.content.live.play.security.submit response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-22 14:17:28
+ * @since 1.0, 2025-11-13 15:43:38
  */
 public class AlipayContentLivePlaySecuritySubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5732636114223259936L;
+	private static final long serialVersionUID = 3391749365244328696L;
 
 	/** 
 	 * 外部业务id

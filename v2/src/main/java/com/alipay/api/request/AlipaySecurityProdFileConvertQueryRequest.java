@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.file.convert.query request
  * 
  * @author auto create
- * @since 1.0, 2024-10-28 13:52:21
+ * @since 1.0, 2025-11-11 10:33:12
  */
 public class AlipaySecurityProdFileConvertQueryRequest implements AlipayRequest<AlipaySecurityProdFileConvertQueryResponse> {
 

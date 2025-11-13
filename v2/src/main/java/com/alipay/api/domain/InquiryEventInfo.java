@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 问诊事件详情
  *
  * @author auto create
- * @since 1.0, 2025-11-03 15:42:41
+ * @since 1.0, 2025-11-06 10:37:41
  */
 public class InquiryEventInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7428553346913645513L;
+	private static final long serialVersionUID = 8613571883485413995L;
 
 	/**
 	 * 问诊小结链接URL

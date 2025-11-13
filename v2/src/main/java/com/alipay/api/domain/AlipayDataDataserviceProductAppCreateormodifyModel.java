@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序商品状态变更
  *
  * @author auto create
- * @since 1.0, 2025-10-30 14:21:52
+ * @since 1.0, 2025-11-13 15:58:46
  */
 public class AlipayDataDataserviceProductAppCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6833618113381434885L;
+	private static final long serialVersionUID = 8691365183218412346L;
 
 	/**
 	 * 商品属性列表
@@ -158,7 +158,7 @@ public class AlipayDataDataserviceProductAppCreateormodifyModel extends AlipayOb
 	private String saleStatus;
 
 	/**
-	 * 商品销量信息，realSells为商品真实销量，customerSells为商品用户自填销量，displaySells为商品展示销量
+	 * 商品销量信息，realSells为商品真实销量，customerSells为商品用户自填销量，displaySells为商品展示销量，virtualSellsRange为虚拟销量范围。
 	 */
 	@ApiField("sells_info")
 	private SellsInfo sellsInfo;

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 重新设置绑定商家会员号
  *
  * @author auto create
- * @since 1.0, 2022-11-18 15:54:15
+ * @since 1.0, 2025-11-10 16:11:40
  */
 public class AlipayOpenPublicAccountResetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3819614926828831989L;
+	private static final long serialVersionUID = 3876234185158277958L;
 
 	/**
 	 * 需要重置的协议号，商户会员在支付宝生活号账号中的唯一标识。

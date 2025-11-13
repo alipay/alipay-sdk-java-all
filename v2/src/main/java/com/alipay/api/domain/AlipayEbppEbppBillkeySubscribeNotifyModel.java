@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppEbppBillkeySubscribeNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2863995661511746976L;
+	private static final long serialVersionUID = 2391375469454123142L;
 
 	/**
 	 * 支付宝户号上报流水，户号订阅表的数据库id

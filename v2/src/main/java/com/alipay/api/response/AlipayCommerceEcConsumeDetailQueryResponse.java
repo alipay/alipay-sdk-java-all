@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.consume.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-10-10 15:06:23
+ * @since 1.0, 2025-11-12 13:47:48
  */
 public class AlipayCommerceEcConsumeDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6679491942831559696L;
+	private static final long serialVersionUID = 5512514236689885583L;
 
 	/** 
 	 * 账单信息

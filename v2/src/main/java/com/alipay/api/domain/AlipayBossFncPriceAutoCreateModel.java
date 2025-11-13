@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayBossFncPriceAutoCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6584891923552882466L;
+	private static final long serialVersionUID = 8237613883677377636L;
 
 	/**
 	 * 系统名称/开放平台appId

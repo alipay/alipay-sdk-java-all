@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceLogisticsPkgauthrelationAuthtomeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7677236485926438376L;
+	private static final long serialVersionUID = 7867381447631789152L;
 
 	/** 
 	 * 授权关系列表

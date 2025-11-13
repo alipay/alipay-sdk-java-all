@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EcAreaInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6372917635949343922L;
+	private static final long serialVersionUID = 1387372972677858143L;
 
 	/**
 	 * 行政编码

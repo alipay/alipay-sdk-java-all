@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 直付通c2c进件接口
  *
  * @author auto create
- * @since 1.0, 2025-08-04 16:03:12
+ * @since 1.0, 2025-11-13 16:17:27
  */
 public class AntMerchantExpandIndirectZftforcCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7172825244421544323L;
+	private static final long serialVersionUID = 1282952681496811767L;
 
 	/**
 	 * 支付宝收银台及账单中的商户名称会展示此处设置的别名。如果涉及支付宝APP内的支付，支付结果页也会展示该别名；如果涉及线下当面付场景，请填写线下店铺名称
@@ -47,6 +47,12 @@ public class AntMerchantExpandIndirectZftforcCreateModel extends AlipayObject {
 	private String certType;
 
 	/**
+	 * 个人商户的城市名称
+	 */
+	@ApiField("city_name")
+	private String cityName;
+
+	/**
 	 * 在本业务中，ContactInfo对象中联系人姓名，手机号必填，其他选填
 	 */
 	@ApiListField("contact_infos")
@@ -73,10 +79,22 @@ public class AntMerchantExpandIndirectZftforcCreateModel extends AlipayObject {
 	private String mcc;
 
 	/**
+	 * 用于区分C2C场景下的商户类型，属于个人商户还是个人用户
+	 */
+	@ApiField("merchant_type_forc")
+	private String merchantTypeForc;
+
+	/**
 	 * 用户名称。若传入签约支付宝账号，该字段无效
 	 */
 	@ApiField("name")
 	private String name;
+
+	/**
+	 * 个人商户省份的名称
+	 */
+	@ApiField("province_name")
+	private String provinceName;
 
 	/**
 	 * 商户使用服务, 固定传（jsapi支付、app支付、wap支付、电脑支付、小程序支付）
@@ -139,6 +157,13 @@ public class AntMerchantExpandIndirectZftforcCreateModel extends AlipayObject {
 		this.certType = certType;
 	}
 
+	public String getCityName() {
+		return this.cityName;
+	}
+	public void setCityName(String cityName) {
+		this.cityName = cityName;
+	}
+
 	public List<ContactInfo> getContactInfos() {
 		return this.contactInfos;
 	}
@@ -167,11 +192,25 @@ public class AntMerchantExpandIndirectZftforcCreateModel extends AlipayObject {
 		this.mcc = mcc;
 	}
 
+	public String getMerchantTypeForc() {
+		return this.merchantTypeForc;
+	}
+	public void setMerchantTypeForc(String merchantTypeForc) {
+		this.merchantTypeForc = merchantTypeForc;
+	}
+
 	public String getName() {
 		return this.name;
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getProvinceName() {
+		return this.provinceName;
+	}
+	public void setProvinceName(String provinceName) {
+		this.provinceName = provinceName;
 	}
 
 	public List<String> getService() {

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.job.resumeauthlogininfo.get request
  * 
  * @author auto create
- * @since 1.0, 2025-09-09 15:57:39
+ * @since 1.0, 2025-11-13 14:45:57
  */
 public class AlipayEbppIndustryJobResumeauthlogininfoGetRequest implements AlipayRequest<AlipayEbppIndustryJobResumeauthlogininfoGetResponse> {
 

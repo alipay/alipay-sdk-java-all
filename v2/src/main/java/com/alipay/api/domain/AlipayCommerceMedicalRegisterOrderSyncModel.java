@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 挂号订单回流
  *
  * @author auto create
- * @since 1.0, 2025-08-21 18:21:17
+ * @since 1.0, 2025-11-12 10:00:39
  */
 public class AlipayCommerceMedicalRegisterOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8457148942554615547L;
+	private static final long serialVersionUID = 4877332395391512133L;
 
 	/**
 	 * 操作类型
@@ -224,6 +224,12 @@ SINGLE_HOS_NFYKDZJ 珠江医院（扁鹊单院版）：
 	 */
 	@ApiField("pay_type")
 	private String payType;
+
+	/**
+	 * 取号截止时间
+	 */
+	@ApiField("pickup_end_time")
+	private Date pickupEndTime;
 
 	/**
 	 * 平台编码
@@ -507,6 +513,13 @@ SINGLE_HOS_NFYKDZJ_SCENE  珠江医院（扁鹊单院版小程序）
 	}
 	public void setPayType(String payType) {
 		this.payType = payType;
+	}
+
+	public Date getPickupEndTime() {
+		return this.pickupEndTime;
+	}
+	public void setPickupEndTime(Date pickupEndTime) {
+		this.pickupEndTime = pickupEndTime;
 	}
 
 	public String getPlatformCode() {

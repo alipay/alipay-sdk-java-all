@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.isresource.tagmeta.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 16:41:43
+ * @since 1.0, 2025-11-10 16:06:25
  */
 public class AlipayIserviceIsresourceTagmetaCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2639482666144867689L;
+	private static final long serialVersionUID = 1269379795477946816L;
 
 	
 

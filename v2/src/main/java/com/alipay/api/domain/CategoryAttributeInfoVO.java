@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-10-30 16:52:10
+ * @since 1.0, 2025-11-07 19:12:41
  */
 public class CategoryAttributeInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8669682468774726487L;
+	private static final long serialVersionUID = 2883275698225174746L;
 
 	/**
 	 * 属性code
@@ -70,6 +70,18 @@ public class CategoryAttributeInfoVO extends AlipayObject {
 	 */
 	@ApiField("decided")
 	private String decided;
+
+	/**
+	 * 属性的业务特征信息
+	 */
+	@ApiField("feature_info")
+	private FeatureMapVO featureInfo;
+
+	/**
+	 * 度量衡信息，仅度量衡属性返回
+	 */
+	@ApiField("measure_info")
+	private MeasureInfoVO measureInfo;
 
 	/**
 	 * 提报商品时该属性是否支持多选
@@ -150,6 +162,20 @@ public class CategoryAttributeInfoVO extends AlipayObject {
 	}
 	public void setDecided(String decided) {
 		this.decided = decided;
+	}
+
+	public FeatureMapVO getFeatureInfo() {
+		return this.featureInfo;
+	}
+	public void setFeatureInfo(FeatureMapVO featureInfo) {
+		this.featureInfo = featureInfo;
+	}
+
+	public MeasureInfoVO getMeasureInfo() {
+		return this.measureInfo;
+	}
+	public void setMeasureInfo(MeasureInfoVO measureInfo) {
+		this.measureInfo = measureInfo;
 	}
 
 	public String getMultiSelect() {

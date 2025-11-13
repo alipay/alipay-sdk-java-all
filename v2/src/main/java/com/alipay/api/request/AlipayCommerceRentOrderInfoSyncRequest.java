@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.rent.order.info.sync request
  * 
  * @author auto create
- * @since 1.0, 2025-07-15 02:07:30
+ * @since 1.0, 2025-11-10 10:37:42
  */
 public class AlipayCommerceRentOrderInfoSyncRequest implements AlipayRequest<AlipayCommerceRentOrderInfoSyncResponse> {
 

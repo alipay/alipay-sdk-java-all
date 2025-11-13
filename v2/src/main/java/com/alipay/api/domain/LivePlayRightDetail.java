@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 直播玩法权益详情
  *
  * @author auto create
- * @since 1.0, 2025-04-22 14:14:14
+ * @since 1.0, 2025-11-13 15:58:07
  */
 public class LivePlayRightDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8879697791414737285L;
+	private static final long serialVersionUID = 2269229231237112599L;
 
 	/**
 	 * 跳转链接，用于领取成功之后的跳转

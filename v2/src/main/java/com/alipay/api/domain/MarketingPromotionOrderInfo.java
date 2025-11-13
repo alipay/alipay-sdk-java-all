@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 回收推广订单信息
  *
  * @author auto create
- * @since 1.0, 2025-10-13 20:53:06
+ * @since 1.0, 2025-11-06 10:07:44
  */
 public class MarketingPromotionOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5467965215222392416L;
+	private static final long serialVersionUID = 5741823389498398275L;
 
 	/**
 	 * 预估金额（固定值）单位为元
@@ -136,6 +136,12 @@ public class MarketingPromotionOrderInfo extends AlipayObject {
 	 */
 	@ApiField("promo_id")
 	private String promoId;
+
+	/**
+	 * 推广类型，direct直接推广带来订单，indirect非实时归因带来的订单
+	 */
+	@ApiField("promo_type")
+	private String promoType;
 
 	/**
 	 * 二级推广员工ID
@@ -305,6 +311,13 @@ public class MarketingPromotionOrderInfo extends AlipayObject {
 	}
 	public void setPromoId(String promoId) {
 		this.promoId = promoId;
+	}
+
+	public String getPromoType() {
+		return this.promoType;
+	}
+	public void setPromoType(String promoType) {
+		this.promoType = promoType;
 	}
 
 	public String getSecondLevelEmpId() {

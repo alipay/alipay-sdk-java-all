@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资商通订单对账接口
  *
  * @author auto create
- * @since 1.0, 2025-08-29 22:16:50
+ * @since 1.0, 2025-11-07 14:04:33
  */
 public class AlipayCommerceRentOrderBillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3494952586472379558L;
+	private static final long serialVersionUID = 3542147346173813762L;
 
 	/**
 	 * 交易组件订单号

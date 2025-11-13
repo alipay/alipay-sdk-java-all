@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.file.convert.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-28 13:52:21
+ * @since 1.0, 2025-11-11 10:33:12
  */
 public class AlipaySecurityProdFileConvertQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3259525532666519645L;
+	private static final long serialVersionUID = 3192632616365632796L;
 
 	/** 
 	 * pdf完整文件地址

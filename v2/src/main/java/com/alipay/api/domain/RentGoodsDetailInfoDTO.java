@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品详细信息
  *
  * @author auto create
- * @since 1.0, 2025-09-30 10:47:48
+ * @since 1.0, 2025-11-06 20:09:00
  */
 public class RentGoodsDetailInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5889943453595749464L;
+	private static final long serialVersionUID = 3885616614669126716L;
 
 	/**
 	 * 商品描述信息
@@ -82,6 +82,12 @@ public class RentGoodsDetailInfoDTO extends AlipayObject {
 	 */
 	@ApiField("item_name")
 	private String itemName;
+
+	/**
+	 * 租赁的商品类型
+	 */
+	@ApiField("item_type")
+	private String itemType;
 
 	/**
 	 * 商品总价值，单位：元，精确到小数点后两位。
@@ -194,6 +200,13 @@ public class RentGoodsDetailInfoDTO extends AlipayObject {
 	}
 	public void setItemName(String itemName) {
 		this.itemName = itemName;
+	}
+
+	public String getItemType() {
+		return this.itemType;
+	}
+	public void setItemType(String itemType) {
+		this.itemType = itemType;
 	}
 
 	public String getItemValue() {

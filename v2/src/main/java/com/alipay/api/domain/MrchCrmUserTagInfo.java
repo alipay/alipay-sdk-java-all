@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MrchCrmUserTagInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6188767915348111568L;
+	private static final long serialVersionUID = 8148384299421956724L;
 
 	/**
 	 * 标签code

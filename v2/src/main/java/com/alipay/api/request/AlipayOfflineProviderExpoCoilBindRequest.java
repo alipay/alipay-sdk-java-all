@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.provider.expo.coil.bind request
  * 
  * @author auto create
- * @since 1.0, 2025-11-03 15:02:40
+ * @since 1.0, 2025-11-12 15:37:41
  */
 public class AlipayOfflineProviderExpoCoilBindRequest implements AlipayRequest<AlipayOfflineProviderExpoCoilBindResponse> {
 

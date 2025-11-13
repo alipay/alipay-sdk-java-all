@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租赁订单支付退款
  *
  * @author auto create
- * @since 1.0, 2025-11-05 14:37:41
+ * @since 1.0, 2025-11-06 14:22:41
  */
 public class AlipayCommerceRentOrderPayRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8359679657583364739L;
+	private static final long serialVersionUID = 4164937138779493417L;
 
 	/**
 	 * 交易组件订单号

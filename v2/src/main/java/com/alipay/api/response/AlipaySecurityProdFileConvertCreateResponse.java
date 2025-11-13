@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.file.convert.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-28 13:52:21
+ * @since 1.0, 2025-11-11 10:33:07
  */
 public class AlipaySecurityProdFileConvertCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6373897417127894525L;
+	private static final long serialVersionUID = 7288497288485498798L;
 
 	/** 
 	 * 转换任务id

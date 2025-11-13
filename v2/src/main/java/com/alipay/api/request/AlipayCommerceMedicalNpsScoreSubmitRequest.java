@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.nps.score.submit request
  * 
  * @author auto create
- * @since 1.0, 2025-08-11 13:32:38
+ * @since 1.0, 2025-11-13 17:02:04
  */
 public class AlipayCommerceMedicalNpsScoreSubmitRequest implements AlipayRequest<AlipayCommerceMedicalNpsScoreSubmitResponse> {
 

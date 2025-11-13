@@ -1,0 +1,43 @@
+package com.alipay.api.response;
+
+import com.alipay.api.internal.mapping.ApiField;
+
+import com.alipay.api.AlipayResponse;
+
+/**
+ * ALIPAY API: alipay.commerce.medical.outerorder.create response.
+ * 
+ * @author auto create
+ * @since 1.0, 2025-11-11 17:47:41
+ */
+public class AlipayCommerceMedicalOuterorderCreateResponse extends AlipayResponse {
+
+	private static final long serialVersionUID = 4735789366284134298L;
+
+	/** 
+	 * 履约的URL
+	 */
+	@ApiField("fulfillment_url")
+	private String fulfillmentUrl;
+
+	/** 
+	 * 合作方订单号
+	 */
+	@ApiField("partner_order_id")
+	private String partnerOrderId;
+
+	public void setFulfillmentUrl(String fulfillmentUrl) {
+		this.fulfillmentUrl = fulfillmentUrl;
+	}
+	public String getFulfillmentUrl( ) {
+		return this.fulfillmentUrl;
+	}
+
+	public void setPartnerOrderId(String partnerOrderId) {
+		this.partnerOrderId = partnerOrderId;
+	}
+	public String getPartnerOrderId( ) {
+		return this.partnerOrderId;
+	}
+
+}

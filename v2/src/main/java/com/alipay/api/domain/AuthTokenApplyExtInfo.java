@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 额外参数
  *
  * @author auto create
- * @since 1.0, 2025-08-21 16:37:36
+ * @since 1.0, 2025-11-13 11:17:41
  */
 public class AuthTokenApplyExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8825122263482895587L;
+	private static final long serialVersionUID = 3867325447291265533L;
 
 	/**
 	 * 车牌号

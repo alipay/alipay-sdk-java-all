@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudpromo.document.file.upload response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-25 10:42:36
+ * @since 1.0, 2025-11-07 17:12:40
  */
 public class AlipayCloudCloudpromoDocumentFileUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7147154712285949917L;
+	private static final long serialVersionUID = 4772931658452321137L;
 
 	/** 
 	 * 应用数据ID

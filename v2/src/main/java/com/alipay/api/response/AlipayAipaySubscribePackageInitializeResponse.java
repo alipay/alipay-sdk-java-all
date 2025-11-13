@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.aipay.subscribe.package.initialize response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-04 10:12:38
+ * @since 1.0, 2025-11-11 14:37:43
  */
 public class AlipayAipaySubscribePackageInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1318385776218718187L;
+	private static final long serialVersionUID = 2223915116483212526L;
 
 	/** 
 	 * 订阅初始化返回数据

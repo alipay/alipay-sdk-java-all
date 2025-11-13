@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.job.resumeauthlogininfo.get response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-09 15:57:39
+ * @since 1.0, 2025-11-13 14:45:57
  */
 public class AlipayEbppIndustryJobResumeauthlogininfoGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8656662633875385461L;
+	private static final long serialVersionUID = 1278433319227844841L;
 
 	/** 
 	 * 城市编码

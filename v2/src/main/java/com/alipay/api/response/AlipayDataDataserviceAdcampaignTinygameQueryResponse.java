@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataDataserviceAdcampaignTinygameQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5543481425131715924L;
+	private static final long serialVersionUID = 4291849836768733655L;
 
 	/** 
 	 * 小游戏列表信息，返回商家下面可投的所有小游戏appId。若无小游戏，返回空列表

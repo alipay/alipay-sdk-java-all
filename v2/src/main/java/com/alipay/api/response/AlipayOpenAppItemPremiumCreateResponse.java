@@ -1,0 +1,43 @@
+package com.alipay.api.response;
+
+import com.alipay.api.internal.mapping.ApiField;
+
+import com.alipay.api.AlipayResponse;
+
+/**
+ * ALIPAY API: alipay.open.app.item.premium.create response.
+ * 
+ * @author auto create
+ * @since 1.0, 2025-11-13 15:02:41
+ */
+public class AlipayOpenAppItemPremiumCreateResponse extends AlipayResponse {
+
+	private static final long serialVersionUID = 8599935536871599627L;
+
+	/** 
+	 * 商品id
+	 */
+	@ApiField("item_id")
+	private String itemId;
+
+	/** 
+	 * 提报结果描述
+	 */
+	@ApiField("reason")
+	private String reason;
+
+	public void setItemId(String itemId) {
+		this.itemId = itemId;
+	}
+	public String getItemId( ) {
+		return this.itemId;
+	}
+
+	public void setReason(String reason) {
+		this.reason = reason;
+	}
+	public String getReason( ) {
+		return this.reason;
+	}
+
+}

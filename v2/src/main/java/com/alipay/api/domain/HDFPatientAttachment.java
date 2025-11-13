@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 好大夫的患者附件
  *
  * @author auto create
- * @since 1.0, 2025-10-23 18:22:55
+ * @since 1.0, 2025-11-11 15:59:10
  */
 public class HDFPatientAttachment extends AlipayObject {
 
-	private static final long serialVersionUID = 4416356593726573369L;
+	private static final long serialVersionUID = 1718828786453252998L;
 
 	/**
 	 * 附件的文件类型。如，png、pdf

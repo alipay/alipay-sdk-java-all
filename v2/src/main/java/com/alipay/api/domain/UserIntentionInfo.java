@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 求职意向
  *
  * @author auto create
- * @since 1.0, 2025-09-09 15:57:39
+ * @since 1.0, 2025-11-13 14:45:57
  */
 public class UserIntentionInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8723641381375889477L;
+	private static final long serialVersionUID = 4185826317635655983L;
 
 	/**
 	 * 城市编码

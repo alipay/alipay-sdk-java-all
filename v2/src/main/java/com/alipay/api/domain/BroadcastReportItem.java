@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 返回语音播报数据Item
  *
  * @author auto create
- * @since 1.0, 2025-10-29 14:52:26
+ * @since 1.0, 2025-11-05 20:55:32
  */
 public class BroadcastReportItem extends AlipayObject {
 
-	private static final long serialVersionUID = 8814883848223816734L;
+	private static final long serialVersionUID = 7412599239195333815L;
 
 	/**
 	 * 设备激活时间（查询条件，日期选择组件）
@@ -64,6 +64,24 @@ public class BroadcastReportItem extends AlipayObject {
 	private String lastBindMerchantId;
 
 	/**
+	 * 市名
+	 */
+	@ApiField("merchant_city_name")
+	private String merchantCityName;
+
+	/**
+	 * 地区名
+	 */
+	@ApiField("merchant_district_name")
+	private String merchantDistrictName;
+
+	/**
+	 * 省名
+	 */
+	@ApiField("merchant_province_name")
+	private String merchantProvinceName;
+
+	/**
 	 * 当月营销播报次数
 	 */
 	@ApiField("monthly_marketing_count")
@@ -80,6 +98,24 @@ public class BroadcastReportItem extends AlipayObject {
 	 */
 	@ApiField("monthly_tx_count_above_2")
 	private Long monthlyTxCountAbove2;
+
+	/**
+	 * 支付宝笔数且当月碰笔数是否达标
+	 */
+	@ApiField("pay_count_and_current_month_n_pay_count_standard")
+	private String payCountAndCurrentMonthNPayCountStandard;
+
+	/**
+	 * 支付宝笔数且次月碰笔数是否达标
+	 */
+	@ApiField("pay_count_and_next_month_n_pay_count_standard")
+	private String payCountAndNextMonthNPayCountStandard;
+
+	/**
+	 * 支付宝笔数是否达标
+	 */
+	@ApiField("pay_count_standard")
+	private String payCountStandard;
 
 	/**
 	 * 设备外部补充ID
@@ -155,6 +191,27 @@ public class BroadcastReportItem extends AlipayObject {
 		this.lastBindMerchantId = lastBindMerchantId;
 	}
 
+	public String getMerchantCityName() {
+		return this.merchantCityName;
+	}
+	public void setMerchantCityName(String merchantCityName) {
+		this.merchantCityName = merchantCityName;
+	}
+
+	public String getMerchantDistrictName() {
+		return this.merchantDistrictName;
+	}
+	public void setMerchantDistrictName(String merchantDistrictName) {
+		this.merchantDistrictName = merchantDistrictName;
+	}
+
+	public String getMerchantProvinceName() {
+		return this.merchantProvinceName;
+	}
+	public void setMerchantProvinceName(String merchantProvinceName) {
+		this.merchantProvinceName = merchantProvinceName;
+	}
+
 	public Long getMonthlyMarketingCount() {
 		return this.monthlyMarketingCount;
 	}
@@ -174,6 +231,27 @@ public class BroadcastReportItem extends AlipayObject {
 	}
 	public void setMonthlyTxCountAbove2(Long monthlyTxCountAbove2) {
 		this.monthlyTxCountAbove2 = monthlyTxCountAbove2;
+	}
+
+	public String getPayCountAndCurrentMonthNPayCountStandard() {
+		return this.payCountAndCurrentMonthNPayCountStandard;
+	}
+	public void setPayCountAndCurrentMonthNPayCountStandard(String payCountAndCurrentMonthNPayCountStandard) {
+		this.payCountAndCurrentMonthNPayCountStandard = payCountAndCurrentMonthNPayCountStandard;
+	}
+
+	public String getPayCountAndNextMonthNPayCountStandard() {
+		return this.payCountAndNextMonthNPayCountStandard;
+	}
+	public void setPayCountAndNextMonthNPayCountStandard(String payCountAndNextMonthNPayCountStandard) {
+		this.payCountAndNextMonthNPayCountStandard = payCountAndNextMonthNPayCountStandard;
+	}
+
+	public String getPayCountStandard() {
+		return this.payCountStandard;
+	}
+	public void setPayCountStandard(String payCountStandard) {
+		this.payCountStandard = payCountStandard;
 	}
 
 	public String getSupplierId() {

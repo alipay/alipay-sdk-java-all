@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 直播玩法内容安全审核小蓝车对象
  *
  * @author auto create
- * @since 1.0, 2025-04-22 14:14:13
+ * @since 1.0, 2025-11-13 15:58:17
  */
 public class LivePlaySecurityPocketInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5416559218734139959L;
+	private static final long serialVersionUID = 4367558356492772639L;
 
 	/**
 	 * 商品描述内容

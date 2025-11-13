@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankCreditCreditriskDsddAdmitConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2633332241875986747L;
+	private static final long serialVersionUID = 8421978632432453668L;
 
 	/**
 	 * 支付宝SMID

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VehiclePromoResult extends AlipayObject {
 
-	private static final long serialVersionUID = 3653828218163772199L;
+	private static final long serialVersionUID = 6534919361588381675L;
 
 	/**
 	 * 业务发生时间，格式为yyyy-MM-dd hh:mm:ss

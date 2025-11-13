@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 申请出行行业订单授权Token
  *
  * @author auto create
- * @since 1.0, 2025-08-21 16:37:36
+ * @since 1.0, 2025-11-13 11:17:41
  */
 public class AlipayCommerceTransportOrderauthTokenApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5123615525783747526L;
+	private static final long serialVersionUID = 8419231719896397526L;
 
 	/**
 	 * 16位支付宝小程序应用APPID，默认是当前调用方

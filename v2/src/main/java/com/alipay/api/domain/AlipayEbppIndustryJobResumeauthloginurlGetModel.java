@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生成简历授权登录链接
  *
  * @author auto create
- * @since 1.0, 2025-09-08 18:27:39
+ * @since 1.0, 2025-11-13 14:45:56
  */
 public class AlipayEbppIndustryJobResumeauthloginurlGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8543162324583416868L;
+	private static final long serialVersionUID = 4637942321891639427L;
 
 	/**
 	 * 外部业务单号

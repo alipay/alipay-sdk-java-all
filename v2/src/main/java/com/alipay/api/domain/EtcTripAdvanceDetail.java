@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EtcTripAdvanceDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3618625153174959337L;
+	private static final long serialVersionUID = 1454698529299917939L;
 
 	/**
 	 * 支付宝ETC平台设备协议号

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 使用规则修改信息
  *
  * @author auto create
- * @since 1.0, 2025-06-19 14:13:26
+ * @since 1.0, 2025-11-11 14:02:43
  */
 public class ModifyStandardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3517447824811917226L;
+	private static final long serialVersionUID = 7858813848757917738L;
 
 	/**
 	 * 要添加的条件列表

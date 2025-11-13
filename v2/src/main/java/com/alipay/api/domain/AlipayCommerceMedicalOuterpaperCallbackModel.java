@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 三方履约服务病历回传
  *
  * @author auto create
- * @since 1.0, 2025-11-03 15:37:41
+ * @since 1.0, 2025-11-06 10:37:41
  */
 public class AlipayCommerceMedicalOuterpaperCallbackModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3861473874232383481L;
+	private static final long serialVersionUID = 1865435984641152242L;
 
 	/**
 	 * 医生信息

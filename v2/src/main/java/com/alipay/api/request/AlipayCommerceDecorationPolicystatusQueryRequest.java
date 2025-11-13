@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.decoration.policystatus.query request
  * 
  * @author auto create
- * @since 1.0, 2025-10-24 13:47:40
+ * @since 1.0, 2025-11-12 13:58:19
  */
 public class AlipayCommerceDecorationPolicystatusQueryRequest implements AlipayRequest<AlipayCommerceDecorationPolicystatusQueryResponse> {
 

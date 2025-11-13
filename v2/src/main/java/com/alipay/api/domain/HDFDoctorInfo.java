@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医生信息
  *
  * @author auto create
- * @since 1.0, 2025-11-03 15:37:41
+ * @since 1.0, 2025-11-06 10:37:41
  */
 public class HDFDoctorInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5181743842789776744L;
+	private static final long serialVersionUID = 4747182316981556691L;
 
 	/**
 	 * 医生姓名

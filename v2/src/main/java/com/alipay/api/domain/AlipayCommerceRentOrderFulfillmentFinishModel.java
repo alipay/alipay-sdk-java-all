@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 履约订单完结
  *
  * @author auto create
- * @since 1.0, 2025-08-19 16:48:25
+ * @since 1.0, 2025-11-07 17:21:44
  */
 public class AlipayCommerceRentOrderFulfillmentFinishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6818629596848234871L;
+	private static final long serialVersionUID = 8396926211133317899L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识

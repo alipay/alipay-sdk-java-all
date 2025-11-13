@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 直播间玩法内容送审
  *
  * @author auto create
- * @since 1.0, 2025-04-22 14:14:13
+ * @since 1.0, 2025-11-13 15:43:38
  */
 public class AlipayContentLivePlaySecuritySubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6223277338557749755L;
+	private static final long serialVersionUID = 8553832667176888635L;
 
 	/**
 	 * 支付宝直播id

@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoMycarFuellingShopQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3621958749232951355L;
+	private static final long serialVersionUID = 6688342884594649989L;
 
 	/** 
 	 * 门店地址

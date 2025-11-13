@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMerchantTradeAccountNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1824937462169542233L;
+	private static final long serialVersionUID = 5115599544844442974L;
 
 	/**
 	 * 收银员ID，若收银员需要接收动账通知，需要传该字段。该字段值与商户信息查接口中的收银员ID一致

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 绑定方案配套线圈URL接口
  *
  * @author auto create
- * @since 1.0, 2025-11-03 15:02:40
+ * @since 1.0, 2025-11-12 15:37:41
  */
 public class AlipayOfflineProviderExpoCoilBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2677554167129895178L;
+	private static final long serialVersionUID = 1651549878286511345L;
 
 	/**
 	 * 活动创建接口的返回值中包含活动id

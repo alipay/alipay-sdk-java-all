@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订阅套餐明显
  *
  * @author auto create
- * @since 1.0, 2025-09-03 19:09:54
+ * @since 1.0, 2025-11-11 11:36:06
  */
 public class SubscriptionPackageDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3689791397142255379L;
+	private static final long serialVersionUID = 5629371311859984916L;
 
 	/**
 	 * 套餐金额

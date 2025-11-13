@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * UpdatePartnerRequest
  *
  * @author auto create
- * @since 1.0, 2025-10-16 15:38:25
+ * @since 1.0, 2025-11-07 17:55:12
  */
 public class UpdatePartnerRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 5823384277971453129L;
+	private static final long serialVersionUID = 8315364538244935472L;
 
 	/**
 	 * bd
@@ -120,6 +120,12 @@ public class UpdatePartnerRequest extends AlipayObject {
 	private String partnerChannelType;
 
 	/**
+	 * 2025政策
+	 */
+	@ApiField("partner_policy")
+	private String partnerPolicy;
+
+	/**
 	 * 合作伙伴类型列表
 	 */
 	@ApiListField("partner_type_list")
@@ -131,6 +137,24 @@ public class UpdatePartnerRequest extends AlipayObject {
 	 */
 	@ApiField("pid")
 	private String pid;
+
+	/**
+	 * 结束时间
+	 */
+	@ApiField("policy_end_time")
+	private Date policyEndTime;
+
+	/**
+	 * 政策编号，仅同步政策时传
+	 */
+	@ApiField("policy_no")
+	private String policyNo;
+
+	/**
+	 * 开始时间
+	 */
+	@ApiField("policy_start_time")
+	private Date policyStartTime;
 
 	/**
 	 * 区域
@@ -281,6 +305,13 @@ public class UpdatePartnerRequest extends AlipayObject {
 		this.partnerChannelType = partnerChannelType;
 	}
 
+	public String getPartnerPolicy() {
+		return this.partnerPolicy;
+	}
+	public void setPartnerPolicy(String partnerPolicy) {
+		this.partnerPolicy = partnerPolicy;
+	}
+
 	public List<String> getPartnerTypeList() {
 		return this.partnerTypeList;
 	}
@@ -293,6 +324,27 @@ public class UpdatePartnerRequest extends AlipayObject {
 	}
 	public void setPid(String pid) {
 		this.pid = pid;
+	}
+
+	public Date getPolicyEndTime() {
+		return this.policyEndTime;
+	}
+	public void setPolicyEndTime(Date policyEndTime) {
+		this.policyEndTime = policyEndTime;
+	}
+
+	public String getPolicyNo() {
+		return this.policyNo;
+	}
+	public void setPolicyNo(String policyNo) {
+		this.policyNo = policyNo;
+	}
+
+	public Date getPolicyStartTime() {
+		return this.policyStartTime;
+	}
+	public void setPolicyStartTime(Date policyStartTime) {
+		this.policyStartTime = policyStartTime;
 	}
 
 	public String getRegion() {

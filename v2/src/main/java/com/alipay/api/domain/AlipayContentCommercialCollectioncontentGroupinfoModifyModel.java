@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 编辑优酷合集内容信息
  *
  * @author auto create
- * @since 1.0, 2025-08-28 16:56:13
+ * @since 1.0, 2025-11-06 14:50:41
  */
 public class AlipayContentCommercialCollectioncontentGroupinfoModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1347763613115778266L;
+	private static final long serialVersionUID = 7414662336622698319L;
 
 	/**
 	 * 背景图
@@ -44,7 +44,7 @@ public class AlipayContentCommercialCollectioncontentGroupinfoModifyModel extend
 	private String collectionSecondCategory;
 
 	/**
-	 * 是否已完结； 已完结：1 未完结：2
+	 * 是否已完结； 已完结：1 未完结：0
 	 */
 	@ApiField("completed_status")
 	private String completedStatus;
