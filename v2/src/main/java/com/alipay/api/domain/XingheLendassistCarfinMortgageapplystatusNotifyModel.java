@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 抵押状态通知来报
  *
  * @author auto create
- * @since 1.0, 2025-09-18 11:30:24
+ * @since 1.0, 2025-11-19 10:42:36
  */
 public class XingheLendassistCarfinMortgageapplystatusNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6225423316375387328L;
+	private static final long serialVersionUID = 5816129591443196993L;
+
+	/**
+	 * 交科所的抵押订单序号
+	 */
+	@ApiField("jksxh")
+	private String jksxh;
 
 	/**
 	 * 星河侧唯一抵押订单号
@@ -27,6 +33,12 @@ public class XingheLendassistCarfinMortgageapplystatusNotifyModel extends Alipay
 	 */
 	@ApiField("out_mortgage_no")
 	private String outMortgageNo;
+
+	/**
+	 * 提交抵押预受理需要的信息
+	 */
+	@ApiField("pre_mortgage_info")
+	private CarfinPreMortgageInfo preMortgageInfo;
 
 	/**
 	 * 代理人不合法的文件列表
@@ -61,6 +73,13 @@ public class XingheLendassistCarfinMortgageapplystatusNotifyModel extends Alipay
 	@ApiField("string")
 	private List<String> suppleFileList;
 
+	public String getJksxh() {
+		return this.jksxh;
+	}
+	public void setJksxh(String jksxh) {
+		this.jksxh = jksxh;
+	}
+
 	public String getMortgageNo() {
 		return this.mortgageNo;
 	}
@@ -73,6 +92,13 @@ public class XingheLendassistCarfinMortgageapplystatusNotifyModel extends Alipay
 	}
 	public void setOutMortgageNo(String outMortgageNo) {
 		this.outMortgageNo = outMortgageNo;
+	}
+
+	public CarfinPreMortgageInfo getPreMortgageInfo() {
+		return this.preMortgageInfo;
+	}
+	public void setPreMortgageInfo(CarfinPreMortgageInfo preMortgageInfo) {
+		this.preMortgageInfo = preMortgageInfo;
 	}
 
 	public List<String> getProxyInvalidFileList() {

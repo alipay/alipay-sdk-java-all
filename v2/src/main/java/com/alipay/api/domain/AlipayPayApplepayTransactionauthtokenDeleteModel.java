@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 注销拉取支付结果通知的权限authToken
  *
  * @author auto create
- * @since 1.0, 2023-01-31 17:05:51
+ * @since 1.0, 2025-11-20 11:23:17
  */
 public class AlipayPayApplepayTransactionauthtokenDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2522847458326346347L;
+	private static final long serialVersionUID = 4173464732331445912L;
 
 	/**
 	 * 设备id

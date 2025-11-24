@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.hdfaitransfer.medicationguidance.generate request
  * 
  * @author auto create
- * @since 1.0, 2025-10-21 21:32:40
+ * @since 1.0, 2025-11-19 15:22:37
  */
 public class AlipayCommerceHdfaitransferMedicationguidanceGenerateRequest implements AlipayRequest<AlipayCommerceHdfaitransferMedicationguidanceGenerateResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.auth.isv.query request
  * 
  * @author auto create
- * @since 1.0, 2025-05-26 11:37:26
+ * @since 1.0, 2025-11-17 14:16:04
  */
 public class AlipayOpenAuthIsvQueryRequest implements AlipayRequest<AlipayOpenAuthIsvQueryResponse> {
 

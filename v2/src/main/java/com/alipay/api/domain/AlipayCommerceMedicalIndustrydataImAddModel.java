@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * im群聊加入
  *
  * @author auto create
- * @since 1.0, 2025-01-06 14:56:42
+ * @since 1.0, 2025-11-18 12:01:13
  */
 public class AlipayCommerceMedicalIndustrydataImAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5491685838335348662L;
+	private static final long serialVersionUID = 8897254868779395626L;
 
 	/**
 	 * 问诊订单回流接口出参的order_id
@@ -23,10 +23,22 @@ public class AlipayCommerceMedicalIndustrydataImAddModel extends AlipayObject {
 	private String alipayOrderId;
 
 	/**
+	 * 渠道编码
+	 */
+	@ApiField("channel_code")
+	private String channelCode;
+
+	/**
 	 * 外部自有用户id，无特殊校验
 	 */
 	@ApiField("merchant_user_id")
 	private String merchantUserId;
+
+	/**
+	 * 用于标记支付宝用户在应用下的唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * out_biz_no，唯一，外部商户自有问诊订单号
@@ -41,11 +53,23 @@ public class AlipayCommerceMedicalIndustrydataImAddModel extends AlipayObject {
 	private String outChatId;
 
 	/**
+	 * 场景编码
+	 */
+	@ApiField("scene_code")
+	private String sceneCode;
+
+	/**
 	 * 加人列表
 	 */
 	@ApiListField("service_providers")
 	@ApiField("service_provider")
 	private List<ServiceProvider> serviceProviders;
+
+	/**
+	 * 支付宝用户的userId。
+	 */
+	@ApiField("user_id")
+	private String userId;
 
 	public String getAlipayOrderId() {
 		return this.alipayOrderId;
@@ -54,11 +78,25 @@ public class AlipayCommerceMedicalIndustrydataImAddModel extends AlipayObject {
 		this.alipayOrderId = alipayOrderId;
 	}
 
+	public String getChannelCode() {
+		return this.channelCode;
+	}
+	public void setChannelCode(String channelCode) {
+		this.channelCode = channelCode;
+	}
+
 	public String getMerchantUserId() {
 		return this.merchantUserId;
 	}
 	public void setMerchantUserId(String merchantUserId) {
 		this.merchantUserId = merchantUserId;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getOutBizNo() {
@@ -75,11 +113,25 @@ public class AlipayCommerceMedicalIndustrydataImAddModel extends AlipayObject {
 		this.outChatId = outChatId;
 	}
 
+	public String getSceneCode() {
+		return this.sceneCode;
+	}
+	public void setSceneCode(String sceneCode) {
+		this.sceneCode = sceneCode;
+	}
+
 	public List<ServiceProvider> getServiceProviders() {
 		return this.serviceProviders;
 	}
 	public void setServiceProviders(List<ServiceProvider> serviceProviders) {
 		this.serviceProviders = serviceProviders;
+	}
+
+	public String getUserId() {
+		return this.userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
 
 }

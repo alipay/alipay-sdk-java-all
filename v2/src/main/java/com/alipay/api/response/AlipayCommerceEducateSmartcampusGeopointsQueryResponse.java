@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceEducateSmartcampusGeopointsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8467735345292571124L;
+	private static final long serialVersionUID = 8886619985827574418L;
 
 	/** 
 	 * 运动轨迹压缩信息

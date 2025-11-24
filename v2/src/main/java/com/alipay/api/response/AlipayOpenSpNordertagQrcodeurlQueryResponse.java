@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.nordertag.qrcodeurl.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-10 19:32:29
+ * @since 1.0, 2025-11-14 13:35:57
  */
 public class AlipayOpenSpNordertagQrcodeurlQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4713159645756245538L;
+	private static final long serialVersionUID = 8673245136554568862L;
 
 	/** 
 	 * 物料信息返回值

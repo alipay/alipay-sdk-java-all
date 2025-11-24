@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportEtcApplyorderConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5637671886698688535L;
+	private static final long serialVersionUID = 3577944325299332353L;
 
 	/** 
 	 * 用户有未完成的行程，不能注销，结合consult_result判断

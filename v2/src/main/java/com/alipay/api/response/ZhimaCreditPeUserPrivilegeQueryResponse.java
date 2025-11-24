@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.pe.user.privilege.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-11-12 16:22:41
+ * @since 1.0, 2025-11-21 23:47:41
  */
 public class ZhimaCreditPeUserPrivilegeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4724887219744429969L;
+	private static final long serialVersionUID = 1868336866988487842L;
 
 	
 

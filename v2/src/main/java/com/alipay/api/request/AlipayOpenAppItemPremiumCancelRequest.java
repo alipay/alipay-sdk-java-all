@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.item.premium.cancel request
  * 
  * @author auto create
- * @since 1.0, 2025-11-13 15:02:42
+ * @since 1.0, 2025-11-18 14:47:42
  */
 public class AlipayOpenAppItemPremiumCancelRequest implements AlipayRequest<AlipayOpenAppItemPremiumCancelResponse> {
 
@@ -19,7 +19,7 @@ public class AlipayOpenAppItemPremiumCancelRequest implements AlipayRequest<Alip
 	private String apiVersion="1.0";
 
 	/** 
-	* 该接口用于商家根据商品id退出精品池接口
+	* 该接口可根据支付宝平台侧商品ID将商品退出精选池。
 	 */
 	private String bizContent;
 

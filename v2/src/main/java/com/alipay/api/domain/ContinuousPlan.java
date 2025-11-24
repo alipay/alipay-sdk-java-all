@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ContinuousPlan extends AlipayObject {
 
-	private static final long serialVersionUID = 1874119684481823744L;
+	private static final long serialVersionUID = 2183475496468929224L;
 
 	/**
 	 * 缴费完成时间

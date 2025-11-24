@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 碰一下创建点位信息
  *
  * @author auto create
- * @since 1.0, 2025-06-03 15:09:44
+ * @since 1.0, 2025-11-14 13:36:30
  */
 public class AlipayOpenSpNordertagPositionCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2228815251756356279L;
+	private static final long serialVersionUID = 7229627169278885822L;
 
 	/**
 	 * 详细地址，如果省市区为空，则这里必须带有省市区信息

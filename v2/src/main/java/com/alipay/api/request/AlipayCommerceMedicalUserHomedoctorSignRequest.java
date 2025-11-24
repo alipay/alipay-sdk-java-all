@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.user.homedoctor.sign request
  * 
  * @author auto create
- * @since 1.0, 2025-11-13 18:37:41
+ * @since 1.0, 2025-11-20 16:22:41
  */
 public class AlipayCommerceMedicalUserHomedoctorSignRequest implements AlipayRequest<AlipayCommerceMedicalUserHomedoctorSignResponse> {
 

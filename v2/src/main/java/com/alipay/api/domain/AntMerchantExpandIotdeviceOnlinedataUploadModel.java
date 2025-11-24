@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户合作设备在线时间回传
  *
  * @author auto create
- * @since 1.0, 2021-12-21 11:25:47
+ * @since 1.0, 2025-11-18 15:15:59
  */
 public class AntMerchantExpandIotdeviceOnlinedataUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6446628152516623885L;
+	private static final long serialVersionUID = 4612468373798778596L;
 
 	/**
 	 * 设备有效时长（小于等于86400秒）

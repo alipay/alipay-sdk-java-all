@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SubscribeCountTimeResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 1415662391388939448L;
+	private static final long serialVersionUID = 8129678315397652752L;
 
 	/**
 	 * 计次是否成功

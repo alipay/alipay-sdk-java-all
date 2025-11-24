@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GeneralWithholdInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8389535498839753996L;
+	private static final long serialVersionUID = 7316179872795877191L;
 
 	/**
 	 * 代扣签约串

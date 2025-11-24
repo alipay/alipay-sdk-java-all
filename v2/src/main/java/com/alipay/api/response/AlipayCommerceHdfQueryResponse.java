@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.hdf.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-11-11 14:37:41
+ * @since 1.0, 2025-11-17 14:17:42
  */
 public class AlipayCommerceHdfQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6678946137791447336L;
+	private static final long serialVersionUID = 3833859443725142123L;
 
 	/** 
 	 * 好大夫的用户id

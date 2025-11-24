@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SignatoryStyle extends AlipayObject {
 
-	private static final long serialVersionUID = 2313674362376712332L;
+	private static final long serialVersionUID = 2824826745557353186L;
 
 	/**
 	 * 字体对应，默认且目前仅支持1（宋体）。

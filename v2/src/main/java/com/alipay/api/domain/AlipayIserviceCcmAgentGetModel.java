@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayIserviceCcmAgentGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7641682521441943253L;
+	private static final long serialVersionUID = 6471468164764863355L;
 
 	/**
 	 * 客服账号id，当user_channel=ALIPAY时，此id为支付宝2088id

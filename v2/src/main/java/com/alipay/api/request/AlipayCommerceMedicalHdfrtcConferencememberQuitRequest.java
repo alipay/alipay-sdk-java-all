@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.hdfrtc.conferencemember.quit request
  * 
  * @author auto create
- * @since 1.0, 2025-10-17 14:44:12
+ * @since 1.0, 2025-11-19 16:42:40
  */
 public class AlipayCommerceMedicalHdfrtcConferencememberQuitRequest implements AlipayRequest<AlipayCommerceMedicalHdfrtcConferencememberQuitResponse> {
 

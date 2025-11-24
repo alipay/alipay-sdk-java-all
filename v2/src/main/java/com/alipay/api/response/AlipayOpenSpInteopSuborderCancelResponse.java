@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.inteop.suborder.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2025-10-22 17:07:40
+ * @since 1.0, 2025-11-21 17:07:41
  */
 public class AlipayOpenSpInteopSuborderCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1433533981876183121L;
+	private static final long serialVersionUID = 1263396522337868533L;
 
 	
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.community.deliveryrecentorder.detect request
  * 
  * @author auto create
- * @since 1.0, 2025-08-06 11:17:35
+ * @since 1.0, 2025-11-13 21:32:42
  */
 public class AlipayEbppIndustryCommunityDeliveryrecentorderDetectRequest implements AlipayRequest<AlipayEbppIndustryCommunityDeliveryrecentorderDetectResponse> {
 

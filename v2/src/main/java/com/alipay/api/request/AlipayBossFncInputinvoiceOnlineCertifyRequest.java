@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.fnc.inputinvoice.online.certify request
  * 
  * @author auto create
- * @since 1.0, 2025-08-07 17:57:56
+ * @since 1.0, 2025-11-21 10:28:14
  */
 public class AlipayBossFncInputinvoiceOnlineCertifyRequest implements AlipayRequest<AlipayBossFncInputinvoiceOnlineCertifyResponse> {
 

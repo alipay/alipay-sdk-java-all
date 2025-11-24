@@ -7,15 +7,15 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-11-10 10:38:15
+ * @since 1.0, 2025-11-20 15:32:41
  */
 public class ShipGoodsRiskVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4324899479593544889L;
+	private static final long serialVersionUID = 7825849615122476197L;
 
 	/**
 	 * true-建议发货
-false-不建议发货
+false-建议根据用户其他风险情况进行综合评估
 	 */
 	@ApiField("can_ship_flag")
 	private Boolean canShipFlag;

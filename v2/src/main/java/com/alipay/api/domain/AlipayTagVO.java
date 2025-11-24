@@ -13,7 +13,7 @@ tagValue=图片地址
  */
 public class AlipayTagVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8797265118815855844L;
+	private static final long serialVersionUID = 3461145285515294779L;
 
 	/**
 	 * 标签唯一ID

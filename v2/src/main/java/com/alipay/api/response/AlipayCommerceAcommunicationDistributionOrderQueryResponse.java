@@ -11,17 +11,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.acommunication.distribution.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-10-24 13:45:35
+ * @since 1.0, 2025-11-18 13:57:42
  */
 public class AlipayCommerceAcommunicationDistributionOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1767695728245711313L;
+	private static final long serialVersionUID = 1787627836737566431L;
 
 	/** 
 	 * 支付宝订单号
 	 */
 	@ApiField("alipay_order_id")
 	private String alipayOrderId;
+
+	/** 
+	 * 权益到账的用户id
+	 */
+	@ApiField("alipay_user_id")
+	private String alipayUserId;
 
 	/** 
 	 * 该订单已产生的业务消息
@@ -41,6 +47,12 @@ public class AlipayCommerceAcommunicationDistributionOrderQueryResponse extends 
 	 */
 	@ApiField("inst_order_id")
 	private String instOrderId;
+
+	/** 
+	 * 用于标记支付宝用户在应用下的唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/** 
 	 * 订单状态
@@ -85,6 +97,13 @@ public class AlipayCommerceAcommunicationDistributionOrderQueryResponse extends 
 		return this.alipayOrderId;
 	}
 
+	public void setAlipayUserId(String alipayUserId) {
+		this.alipayUserId = alipayUserId;
+	}
+	public String getAlipayUserId( ) {
+		return this.alipayUserId;
+	}
+
 	public void setBizOrderMessageList(List<BizOrderMessage> bizOrderMessageList) {
 		this.bizOrderMessageList = bizOrderMessageList;
 	}
@@ -104,6 +123,13 @@ public class AlipayCommerceAcommunicationDistributionOrderQueryResponse extends 
 	}
 	public String getInstOrderId( ) {
 		return this.instOrderId;
+	}
+
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+	public String getOpenId( ) {
+		return this.openId;
 	}
 
 	public void setOrderStatus(String orderStatus) {

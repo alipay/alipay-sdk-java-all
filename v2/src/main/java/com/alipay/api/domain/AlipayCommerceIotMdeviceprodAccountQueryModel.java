@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询脱敏支付宝账号信息
  *
  * @author auto create
- * @since 1.0, 2021-12-21 11:26:29
+ * @since 1.0, 2025-11-18 15:02:33
  */
 public class AlipayCommerceIotMdeviceprodAccountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8187215359543246969L;
+	private static final long serialVersionUID = 2429382954849799179L;
 
 	/**
 	 * 登录ID，需要跟登录类别（logon_type，EMAIL:邮箱登陆 MOBILE:手机登录）结合

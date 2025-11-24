@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-11-13 16:59:25
+ * @since 1.0, 2025-11-21 14:22:41
  */
 public class CourseVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7569785144534433317L;
+	private static final long serialVersionUID = 3757974128572392869L;
 
 	/**
 	 * 支付宝商品类目
@@ -25,9 +25,22 @@ public class CourseVO extends AlipayObject {
 	/**
 	 * null
 	 */
+	@ApiListField("category_id_list")
+	@ApiField("number")
+	private List<Long> categoryIdList;
+
+	/**
+	 * null
+	 */
 	@ApiListField("certificate_code_list")
 	@ApiField("string")
 	private List<String> certificateCodeList;
+
+	/**
+	 * 是否认证课程，默认true
+	 */
+	@ApiField("certification_course")
+	private Boolean certificationCourse;
 
 	/**
 	 * null
@@ -38,7 +51,7 @@ public class CourseVO extends AlipayObject {
 
 	/**
 	 * 课程封面视频
-生活号视频id,非URL。获取方式见：<a href="https://adccloud.yuque.com/adccloud/abilitywarehouse/cggokr7us69cxxo8?singleDoc#" target="_blank">链接</a>
+生活号视频id,非URL。
 	 */
 	@ApiField("course_cover_video")
 	private String courseCoverVideo;
@@ -123,6 +136,12 @@ AUDIT_REJECT("审核驳回")
 	private List<String> detailsImageList;
 
 	/**
+	 * 是否试听，默认false
+	 */
+	@ApiField("has_trial")
+	private Boolean hasTrial;
+
+	/**
 	 * null
 	 */
 	@ApiListField("head_image_list")
@@ -173,11 +192,25 @@ AUDIT_REJECT("审核驳回")
 		this.categoryId = categoryId;
 	}
 
+	public List<Long> getCategoryIdList() {
+		return this.categoryIdList;
+	}
+	public void setCategoryIdList(List<Long> categoryIdList) {
+		this.categoryIdList = categoryIdList;
+	}
+
 	public List<String> getCertificateCodeList() {
 		return this.certificateCodeList;
 	}
 	public void setCertificateCodeList(List<String> certificateCodeList) {
 		this.certificateCodeList = certificateCodeList;
+	}
+
+	public Boolean getCertificationCourse() {
+		return this.certificationCourse;
+	}
+	public void setCertificationCourse(Boolean certificationCourse) {
+		this.certificationCourse = certificationCourse;
 	}
 
 	public List<String> getCityCodeList() {
@@ -276,6 +309,13 @@ AUDIT_REJECT("审核驳回")
 	}
 	public void setDetailsImageList(List<String> detailsImageList) {
 		this.detailsImageList = detailsImageList;
+	}
+
+	public Boolean getHasTrial() {
+		return this.hasTrial;
+	}
+	public void setHasTrial(Boolean hasTrial) {
+		this.hasTrial = hasTrial;
 	}
 
 	public List<String> getHeadImageList() {

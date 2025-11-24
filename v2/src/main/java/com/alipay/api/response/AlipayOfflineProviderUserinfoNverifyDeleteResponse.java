@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOfflineProviderUserinfoNverifyDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1338957454248677379L;
+	private static final long serialVersionUID = 8793172367578563325L;
 
 	/** 
 	 * 出库失败的用户订单号，失败原因一般是订单号未入库。可能为空。

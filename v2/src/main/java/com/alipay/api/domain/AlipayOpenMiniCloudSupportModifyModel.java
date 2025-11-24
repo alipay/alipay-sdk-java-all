@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniCloudSupportModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7582763391416735574L;
+	private static final long serialVersionUID = 1359799947729763385L;
 
 	/**
 	 * 要变更云服务状态的小程序应用id

@@ -4,6 +4,7 @@ import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.ActivityPhase;
+import com.alipay.api.domain.CardOpenRewardInfo;
 
 import com.alipay.api.AlipayResponse;
 
@@ -11,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.charger.cobrandcardactivity.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-11-12 13:55:30
+ * @since 1.0, 2025-11-17 17:12:42
  */
 public class AlipayCommerceTransportChargerCobrandcardactivityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8389555293251686157L;
+	private static final long serialVersionUID = 3884939221731589547L;
 
 	/** 
 	 * 活动编号
@@ -29,6 +30,12 @@ public class AlipayCommerceTransportChargerCobrandcardactivityQueryResponse exte
 	@ApiListField("activity_phases")
 	@ApiField("activity_phase")
 	private List<ActivityPhase> activityPhases;
+
+	/** 
+	 * 开卡权益信息
+	 */
+	@ApiField("card_open_reward_info")
+	private CardOpenRewardInfo cardOpenRewardInfo;
 
 	/** 
 	 * 当前查询用户完成的订单笔数
@@ -48,6 +55,13 @@ public class AlipayCommerceTransportChargerCobrandcardactivityQueryResponse exte
 	}
 	public List<ActivityPhase> getActivityPhases( ) {
 		return this.activityPhases;
+	}
+
+	public void setCardOpenRewardInfo(CardOpenRewardInfo cardOpenRewardInfo) {
+		this.cardOpenRewardInfo = cardOpenRewardInfo;
+	}
+	public CardOpenRewardInfo getCardOpenRewardInfo( ) {
+		return this.cardOpenRewardInfo;
 	}
 
 	public void setCurrentCount(Long currentCount) {

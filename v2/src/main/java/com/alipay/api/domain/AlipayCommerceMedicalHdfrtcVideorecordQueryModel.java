@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询视频录像
  *
  * @author auto create
- * @since 1.0, 2025-10-17 14:44:02
+ * @since 1.0, 2025-11-19 15:45:28
  */
 public class AlipayCommerceMedicalHdfrtcVideorecordQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1458551859176672398L;
+	private static final long serialVersionUID = 2828349533781891137L;
 
 	/**
 	 * 角色类型

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AnttechNftAccountOverseaCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8756792536115129467L;
+	private static final long serialVersionUID = 1556927426498537829L;
 
 	/** 
 	 * 鲸探海外账户根据租户映射的开放id

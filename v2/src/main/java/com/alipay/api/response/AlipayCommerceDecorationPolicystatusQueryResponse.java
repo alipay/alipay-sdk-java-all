@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.decoration.policystatus.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-11-12 13:58:19
+ * @since 1.0, 2025-11-20 11:02:40
  */
 public class AlipayCommerceDecorationPolicystatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5586247379289965624L;
+	private static final long serialVersionUID = 5395821345285946519L;
 
 	/** 
 	 * 订单号
@@ -21,10 +21,22 @@ public class AlipayCommerceDecorationPolicystatusQueryResponse extends AlipayRes
 	private String orderNo;
 
 	/** 
+	 * 保单号
+	 */
+	@ApiField("policy_no")
+	private String policyNo;
+
+	/** 
 	 * 核保状态
 	 */
 	@ApiField("policy_status")
 	private String policyStatus;
+
+	/** 
+	 * <a href="https://render.alipay.com/p/h5/inspolicy/www/index.html?policyNo=保单单号">
+	 */
+	@ApiField("policy_url")
+	private String policyUrl;
 
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
@@ -33,11 +45,25 @@ public class AlipayCommerceDecorationPolicystatusQueryResponse extends AlipayRes
 		return this.orderNo;
 	}
 
+	public void setPolicyNo(String policyNo) {
+		this.policyNo = policyNo;
+	}
+	public String getPolicyNo( ) {
+		return this.policyNo;
+	}
+
 	public void setPolicyStatus(String policyStatus) {
 		this.policyStatus = policyStatus;
 	}
 	public String getPolicyStatus( ) {
 		return this.policyStatus;
+	}
+
+	public void setPolicyUrl(String policyUrl) {
+		this.policyUrl = policyUrl;
+	}
+	public String getPolicyUrl( ) {
+		return this.policyUrl;
 	}
 
 }

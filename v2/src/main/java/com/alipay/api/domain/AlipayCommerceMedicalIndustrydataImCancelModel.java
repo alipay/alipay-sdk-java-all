@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * im消息撤回
  *
  * @author auto create
- * @since 1.0, 2025-01-06 14:58:30
+ * @since 1.0, 2025-11-18 13:54:21
  */
 public class AlipayCommerceMedicalIndustrydataImCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2617273813689641517L;
+	private static final long serialVersionUID = 5398131855351188489L;
 
 	/**
 	 * 内部im会话sessionId
@@ -30,6 +30,12 @@ public class AlipayCommerceMedicalIndustrydataImCancelModel extends AlipayObject
 	 */
 	@ApiField("alipay_order_id")
 	private String alipayOrderId;
+
+	/**
+	 * 渠道编码
+	 */
+	@ApiField("channel_code")
+	private String channelCode;
 
 	/**
 	 * 外部自有用户id，无特殊校验
@@ -61,6 +67,12 @@ public class AlipayCommerceMedicalIndustrydataImCancelModel extends AlipayObject
 	@ApiField("recall_reason")
 	private String recallReason;
 
+	/**
+	 * 场景编码
+	 */
+	@ApiField("scene_code")
+	private String sceneCode;
+
 	public String getAlipayChatId() {
 		return this.alipayChatId;
 	}
@@ -80,6 +92,13 @@ public class AlipayCommerceMedicalIndustrydataImCancelModel extends AlipayObject
 	}
 	public void setAlipayOrderId(String alipayOrderId) {
 		this.alipayOrderId = alipayOrderId;
+	}
+
+	public String getChannelCode() {
+		return this.channelCode;
+	}
+	public void setChannelCode(String channelCode) {
+		this.channelCode = channelCode;
 	}
 
 	public String getMerchantUserId() {
@@ -115,6 +134,13 @@ public class AlipayCommerceMedicalIndustrydataImCancelModel extends AlipayObject
 	}
 	public void setRecallReason(String recallReason) {
 		this.recallReason = recallReason;
+	}
+
+	public String getSceneCode() {
+		return this.sceneCode;
+	}
+	public void setSceneCode(String sceneCode) {
+		this.sceneCode = sceneCode;
 	}
 
 }

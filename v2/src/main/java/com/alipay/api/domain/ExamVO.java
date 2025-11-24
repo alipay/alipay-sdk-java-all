@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-11-13 16:59:30
+ * @since 1.0, 2025-11-21 14:22:41
  */
 public class ExamVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8475534964489432695L;
+	private static final long serialVersionUID = 6166444399685647699L;
 
 	/**
 	 * null
@@ -117,13 +117,13 @@ maxPrice和minPrice都填写时, minPrice<=maxPrice
 	private String registrationEndDate;
 
 	/**
-	 * 富文本
+	 * 报考须知
 	 */
 	@ApiField("registration_notes")
 	private String registrationNotes;
 
 	/**
-	 * 报考要求：大json，key/value 机构自己定
+	 * 报考要求
 	 */
 	@ApiField("registration_requirement")
 	private String registrationRequirement;

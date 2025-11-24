@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * AI秤设备激活状态查询
  *
  * @author auto create
- * @since 1.0, 2024-10-15 13:40:15
+ * @since 1.0, 2025-11-19 11:22:52
  */
 public class AlipayMsaasMediarecogAivisionrecgDeviceactivationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4838777236834387448L;
+	private static final long serialVersionUID = 8487576432519767723L;
 
 	/**
 	 * 蚂蚁激活码

@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 回收子单结算确认信息
  *
  * @author auto create
- * @since 1.0, 2025-09-02 11:22:08
+ * @since 1.0, 2025-11-14 16:35:17
  */
 public class RecycleSubOrderSettleConfirmVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8547551496133375149L;
+	private static final long serialVersionUID = 5329529579838271391L;
 
 	/**
 	 * 回收的子单号
 	 */
 	@ApiField("sub_order_id")
 	private String subOrderId;
+
+	/**
+	 * 子单质检金额，币种：人民币，单位：元
+	 */
+	@ApiField("sub_order_inspect_price")
+	private String subOrderInspectPrice;
 
 	/**
 	 * 商家的子单号
@@ -30,6 +36,13 @@ public class RecycleSubOrderSettleConfirmVO extends AlipayObject {
 	}
 	public void setSubOrderId(String subOrderId) {
 		this.subOrderId = subOrderId;
+	}
+
+	public String getSubOrderInspectPrice() {
+		return this.subOrderInspectPrice;
+	}
+	public void setSubOrderInspectPrice(String subOrderInspectPrice) {
+		this.subOrderInspectPrice = subOrderInspectPrice;
 	}
 
 	public String getSubOutOrderId() {

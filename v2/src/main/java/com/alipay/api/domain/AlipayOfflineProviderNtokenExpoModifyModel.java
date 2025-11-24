@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOfflineProviderNtokenExpoModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4595155287349197833L;
+	private static final long serialVersionUID = 3255343719767238233L;
 
 	/**
 	 * 主活动头图

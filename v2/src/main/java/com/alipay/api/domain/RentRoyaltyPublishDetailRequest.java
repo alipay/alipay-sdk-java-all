@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RentRoyaltyPublishDetailRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 8533639224327443616L;
+	private static final long serialVersionUID = 1811462427199554239L;
 
 	/**
 	 * 分账计划明细，具体包含对应的分账金额，期数、类型以及对应期数的买断分账金

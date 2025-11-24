@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserAuthenticationConsistencyCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1315782389651143842L;
+	private static final long serialVersionUID = 2256258232695672958L;
 
 	/**
 	 * 业务逻辑会针对biz_from来决定：账号属于未认证状态时是否透出错误码和错误文案

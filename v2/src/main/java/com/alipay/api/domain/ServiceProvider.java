@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * IM群聊加入列表
  *
  * @author auto create
- * @since 1.0, 2025-01-06 14:56:42
+ * @since 1.0, 2025-11-18 12:01:13
  */
 public class ServiceProvider extends AlipayObject {
 
-	private static final long serialVersionUID = 7384268978158228188L;
+	private static final long serialVersionUID = 5585437498661481744L;
 
 	/**
 	 * 服务提供者:医生/医助头像
@@ -24,6 +24,12 @@ public class ServiceProvider extends AlipayObject {
 	 */
 	@ApiField("out_doctor_id")
 	private String outDoctorId;
+
+	/**
+	 * 提供方ID
+	 */
+	@ApiField("provider_id")
+	private String providerId;
 
 	/**
 	 * 角色类型：医生、医助
@@ -49,6 +55,13 @@ public class ServiceProvider extends AlipayObject {
 	}
 	public void setOutDoctorId(String outDoctorId) {
 		this.outDoctorId = outDoctorId;
+	}
+
+	public String getProviderId() {
+		return this.providerId;
+	}
+	public void setProviderId(String providerId) {
+		this.providerId = providerId;
 	}
 
 	public String getProviderType() {

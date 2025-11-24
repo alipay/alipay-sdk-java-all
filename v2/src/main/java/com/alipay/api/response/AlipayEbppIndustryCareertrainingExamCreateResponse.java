@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.careertraining.exam.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-11-13 16:59:24
+ * @since 1.0, 2025-11-21 14:27:42
  */
 public class AlipayEbppIndustryCareertrainingExamCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4398316747664177911L;
+	private static final long serialVersionUID = 5513562812365588894L;
 
 	/** 
 	 * 考试ID

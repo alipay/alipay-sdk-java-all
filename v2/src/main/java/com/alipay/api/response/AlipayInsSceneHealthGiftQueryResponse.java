@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayInsSceneHealthGiftQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2792929635283449413L;
+	private static final long serialVersionUID = 6622615411852389824L;
 
 	/** 
 	 * 赠险是否已开通，true标识已开通，false标识未开通

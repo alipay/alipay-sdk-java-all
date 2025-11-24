@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.msaas.mediarecog.mmportal.cvgoods.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-10-09 20:21:46
+ * @since 1.0, 2025-11-14 10:21:25
  */
 public class AlipayMsaasMediarecogMmportalCvgoodsSyncRequest implements AlipayRequest<AlipayMsaasMediarecogMmportalCvgoodsSyncResponse> {
 

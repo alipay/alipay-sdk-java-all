@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayBossFncGfaccenterConsolidationAcceptModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5494298433445552139L;
+	private static final long serialVersionUID = 1118573851137849484L;
 
 	/**
 	 * （必填）会计期间（非调整账期yyyyMM，调整账期yyyy-MM），默认为期望并账会计日期前6位

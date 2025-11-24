@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RiskCheckLabel extends AlipayObject {
 
-	private static final long serialVersionUID = 4617856593926854894L;
+	private static final long serialVersionUID = 6678247928376559385L;
 
 	/**
 	 * 子分类信息

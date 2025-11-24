@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceRecycleMerchantassetSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1572797583437778563L;
+	private static final long serialVersionUID = 1848666489622646423L;
 
 	/**
 	 * 资金账号，用于指定安全发记账本的充值账号和提现账号，注意返回的sign_url需要用登陆该账号授权。

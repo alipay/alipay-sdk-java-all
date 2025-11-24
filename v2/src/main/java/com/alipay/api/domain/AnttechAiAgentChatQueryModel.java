@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AnttechAiAgentChatQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3117645382693888186L;
+	private static final long serialVersionUID = 6189322221568926319L;
 
 	/**
 	 * 智能助手标识，由服务提供方发放，用于区别不同服务场景，每个智能助手的服务场景对应不同的配置，如访问的大模型类型、版本、依赖的知识库等等

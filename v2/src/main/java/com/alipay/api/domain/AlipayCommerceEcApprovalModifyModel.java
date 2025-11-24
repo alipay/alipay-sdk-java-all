@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceEcApprovalModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4865413478979748398L;
+	private static final long serialVersionUID = 1235844647529654458L;
 
 	/**
 	 * 申请结束时间
@@ -42,14 +42,14 @@ public class AlipayCommerceEcApprovalModifyModel extends AlipayObject {
 	private String enterpriseId;
 
 	/**
-	 * 审批单关联制度列表，当企业出资方式为企业出资且设置此字段非空时，会查询最优制度并发放额度至该最优制度关联的员工
+	 * 申请单关联制度列表，当企业出资方式为企业出资且设置此字段非空时，会查询最优制度并发放额度至该最优制度关联的员工
 	 */
 	@ApiListField("institution_id_list")
 	@ApiField("string")
 	private List<String> institutionIdList;
 
 	/**
-	 * 外部平台审批单id
+	 * 外部平台申请单id
 	 */
 	@ApiField("platform_approval_id")
 	private String platformApprovalId;

@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订阅初始化返回数据
  *
  * @author auto create
- * @since 1.0, 2025-11-11 11:36:06
+ * @since 1.0, 2025-11-19 16:47:21
  */
 public class SubscribeInitiateApiResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 2685629625454958659L;
+	private static final long serialVersionUID = 6269583356734518772L;
+
+	/**
+	 * 订阅链接对应二维码图片链接
+	 */
+	@ApiField("qr_code_image_url")
+	private String qrCodeImageUrl;
 
 	/**
 	 * 订阅付费凭证
@@ -30,6 +36,13 @@ public class SubscribeInitiateApiResponse extends AlipayObject {
 	 */
 	@ApiField("subscription_packages")
 	private SubscriptionPackageDetailDTO subscriptionPackages;
+
+	public String getQrCodeImageUrl() {
+		return this.qrCodeImageUrl;
+	}
+	public void setQrCodeImageUrl(String qrCodeImageUrl) {
+		this.qrCodeImageUrl = qrCodeImageUrl;
+	}
 
 	public String getSubscribeToken() {
 		return this.subscribeToken;

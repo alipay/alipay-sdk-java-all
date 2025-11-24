@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 多步转账创建并支付
  *
  * @author auto create
- * @since 1.0, 2025-07-29 16:15:20
+ * @since 1.0, 2025-11-17 16:11:19
  */
 public class AlipayFundTransMultistepTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1753224376773293438L;
+	private static final long serialVersionUID = 6697552449782425589L;
 
 	/**
 	 * 场景码
@@ -70,6 +70,20 @@ public class AlipayFundTransMultistepTransferModel extends AlipayObject {
 	 */
 	@ApiField("total_count")
 	private String totalCount;
+
+	/**
+	 * 该笔转账使用的转账场景，商户可前往【<a href="https://b.alipay.com/page/bizfund/transferScene/list">支付宝商家平台-资金管理-转账场景</a>】中查看/申明转账场景。<br>
+目前支持以下枚举值：现金营销、企业退款、佣金报酬、业务结算、二手回收、公益补助、行政补贴和退款、保险理赔
+	 */
+	@ApiField("transfer_scene_name")
+	private String transferSceneName;
+
+	/**
+	 * 转账场景信息，包含转账场景信息类型和转账场景信息描述。需按该笔转账使用的转账场景准确填写
+	 */
+	@ApiListField("transfer_scene_report_infos")
+	@ApiField("transfer_scene_report_info")
+	private List<TransferSceneReportInfo> transferSceneReportInfos;
 
 	public String getBizScene() {
 		return this.bizScene;
@@ -132,6 +146,20 @@ public class AlipayFundTransMultistepTransferModel extends AlipayObject {
 	}
 	public void setTotalCount(String totalCount) {
 		this.totalCount = totalCount;
+	}
+
+	public String getTransferSceneName() {
+		return this.transferSceneName;
+	}
+	public void setTransferSceneName(String transferSceneName) {
+		this.transferSceneName = transferSceneName;
+	}
+
+	public List<TransferSceneReportInfo> getTransferSceneReportInfos() {
+		return this.transferSceneReportInfos;
+	}
+	public void setTransferSceneReportInfos(List<TransferSceneReportInfo> transferSceneReportInfos) {
+		this.transferSceneReportInfos = transferSceneReportInfos;
 	}
 
 }

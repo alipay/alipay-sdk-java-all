@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RentOrderStatementInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8544567191423459689L;
+	private static final long serialVersionUID = 6879166718565491329L;
 
 	/**
 	 * 用户支付时，实际申领的支付宝平台优惠金额，单位：元,精确到小数点后两位

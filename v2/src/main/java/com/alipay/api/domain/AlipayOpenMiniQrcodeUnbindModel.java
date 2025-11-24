@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniQrcodeUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7749925493965397614L;
+	private static final long serialVersionUID = 1325636217372898116L;
 
 	/**
 	 * 路由规则组，用于唯一标记一条路由规则。调用 <a href="https://opendocs.alipay.com/apis/00rkye" target="_blank">关联普通二维码</a> 接口关联普通二维码后的返回值。

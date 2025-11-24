@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HttpsDomainCert extends AlipayObject {
 
-	private static final long serialVersionUID = 5474834495417584451L;
+	private static final long serialVersionUID = 2279895513949714533L;
 
 	/**
 	 * 证书到期时间

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.content.live.play.right.trigger request
  * 
  * @author auto create
- * @since 1.0, 2025-11-13 15:43:28
+ * @since 1.0, 2025-11-17 11:46:52
  */
 public class AlipayContentLivePlayRightTriggerRequest implements AlipayRequest<AlipayContentLivePlayRightTriggerResponse> {
 

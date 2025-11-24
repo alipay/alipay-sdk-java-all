@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用药指导生成接口
  *
  * @author auto create
- * @since 1.0, 2025-10-21 21:32:40
+ * @since 1.0, 2025-11-19 15:22:37
  */
 public class AlipayCommerceHdfaitransferMedicationguidanceGenerateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1499464676275155367L;
+	private static final long serialVersionUID = 4154419489766143839L;
 
 	/**
 	 * 年龄

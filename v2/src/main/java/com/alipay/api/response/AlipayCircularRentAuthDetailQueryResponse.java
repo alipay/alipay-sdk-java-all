@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCircularRentAuthDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3773715611959418284L;
+	private static final long serialVersionUID = 2232872558529881713L;
 
 	/** 
 	 * 该笔资金操作流水operation_id对应的操作金额，单位为：元（人民币）

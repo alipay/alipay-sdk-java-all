@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBossOrderDiagnosisGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8565354675329311957L;
+	private static final long serialVersionUID = 6568927682479914476L;
 
 	/** 
 	 * 诊断模型

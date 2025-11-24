@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.mdeviceprod.whitelist.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-23 21:20:20
+ * @since 1.0, 2025-11-18 15:07:42
  */
 public class AlipayCommerceIotMdeviceprodWhitelistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8238177958741384899L;
+	private static final long serialVersionUID = 4159276136996398515L;
 
 	/** 
 	 * 白名单所属应用的appID

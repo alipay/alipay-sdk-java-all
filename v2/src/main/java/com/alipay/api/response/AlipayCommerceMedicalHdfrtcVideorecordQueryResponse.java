@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.hdfrtc.videorecord.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-10-17 14:44:02
+ * @since 1.0, 2025-11-19 15:47:40
  */
 public class AlipayCommerceMedicalHdfrtcVideorecordQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5238473934618795783L;
+	private static final long serialVersionUID = 2552193663493565328L;
 
 	/** 
 	 * 观看录播提示信息

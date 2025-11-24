@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序商品创建接口
  *
  * @author auto create
- * @since 1.0, 2025-07-24 16:36:25
+ * @since 1.0, 2025-11-14 14:13:19
  */
 public class AlipayOpenAppItemCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8126683428487213431L;
+	private static final long serialVersionUID = 6346233147916762487L;
 
 	/**
 	 * 商品属性
@@ -28,6 +28,12 @@ public class AlipayOpenAppItemCreateModel extends AlipayObject {
 	 */
 	@ApiField("auto_marketing_delivery")
 	private Boolean autoMarketingDelivery;
+
+	/**
+	 * 精品池自动提报标志，默认false，不提报；true表示提报
+	 */
+	@ApiField("auto_premium_pool")
+	private Boolean autoPremiumPool;
 
 	/**
 	 * 条形码
@@ -174,6 +180,13 @@ public class AlipayOpenAppItemCreateModel extends AlipayObject {
 	}
 	public void setAutoMarketingDelivery(Boolean autoMarketingDelivery) {
 		this.autoMarketingDelivery = autoMarketingDelivery;
+	}
+
+	public Boolean getAutoPremiumPool() {
+		return this.autoPremiumPool;
+	}
+	public void setAutoPremiumPool(Boolean autoPremiumPool) {
+		this.autoPremiumPool = autoPremiumPool;
 	}
 
 	public String getBarcode() {

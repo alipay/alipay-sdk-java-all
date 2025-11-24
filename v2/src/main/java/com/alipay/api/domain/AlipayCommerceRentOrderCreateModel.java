@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租赁订单创建
  *
  * @author auto create
- * @since 1.0, 2025-11-06 20:09:00
+ * @since 1.0, 2025-11-19 11:21:36
  */
 public class AlipayCommerceRentOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6545924665691275743L;
+	private static final long serialVersionUID = 8638287681836678714L;
 
 	/**
 	 * 优惠前置咨询组件返回的优惠活动咨询ID
@@ -94,6 +94,12 @@ public class AlipayCommerceRentOrderCreateModel extends AlipayObject {
 	 */
 	@ApiField("out_order_id")
 	private String outOrderId;
+
+	/**
+	 * 端外订单来源
+	 */
+	@ApiField("outer_order_source")
+	private String outerOrderSource;
 
 	/**
 	 * 原始租赁订单号。订单类型为续租、租转售时必传
@@ -256,6 +262,13 @@ public class AlipayCommerceRentOrderCreateModel extends AlipayObject {
 	}
 	public void setOutOrderId(String outOrderId) {
 		this.outOrderId = outOrderId;
+	}
+
+	public String getOuterOrderSource() {
+		return this.outerOrderSource;
+	}
+	public void setOuterOrderSource(String outerOrderSource) {
+		this.outerOrderSource = outerOrderSource;
 	}
 
 	public String getParentOrderId() {

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOfflineMarketShopApplyorderCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1898279649563521111L;
+	private static final long serialVersionUID = 4187652694843614436L;
 
 	/** 
 	 * 申请撤销成功接口同步返回的支付宝申请流水号。

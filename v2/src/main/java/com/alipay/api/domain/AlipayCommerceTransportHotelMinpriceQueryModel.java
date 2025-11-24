@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportHotelMinpriceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5413965194182815518L;
+	private static final long serialVersionUID = 7292993686791465254L;
 
 	/**
 	 * 入住日期，格式为：yyyy-MM-dd

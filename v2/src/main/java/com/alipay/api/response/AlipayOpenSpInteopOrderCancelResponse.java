@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.inteop.order.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2025-10-22 17:07:40
+ * @since 1.0, 2025-11-21 17:07:41
  */
 public class AlipayOpenSpInteopOrderCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1258224315133183591L;
+	private static final long serialVersionUID = 4896814922545252826L;
 
 	/** 
 	 * 一体化作业主单号

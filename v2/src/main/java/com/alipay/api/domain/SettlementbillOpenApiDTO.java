@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SettlementbillOpenApiDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1582487861468942263L;
+	private static final long serialVersionUID = 8135144327418149536L;
 
 	/**
 	 * 外部的业务单据号

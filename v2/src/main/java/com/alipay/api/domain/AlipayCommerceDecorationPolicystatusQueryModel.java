@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 承保状态查询
  *
  * @author auto create
- * @since 1.0, 2025-10-22 14:59:03
+ * @since 1.0, 2025-11-19 15:47:34
  */
 public class AlipayCommerceDecorationPolicystatusQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1324794998862511597L;
+	private static final long serialVersionUID = 4239616199537273429L;
 
 	/**
 	 * 订单号

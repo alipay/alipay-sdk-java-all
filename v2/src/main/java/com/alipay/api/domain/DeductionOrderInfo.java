@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 核销订单信息
  *
  * @author auto create
- * @since 1.0, 2025-07-07 09:47:37
+ * @since 1.0, 2025-11-20 15:05:32
  */
 public class DeductionOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8551719375287372579L;
+	private static final long serialVersionUID = 5457897896245356656L;
 
 	/**
 	 * 费用信息集合
@@ -134,6 +134,12 @@ public class DeductionOrderInfo extends AlipayObject {
 	 */
 	@ApiField("order_id")
 	private String orderId;
+
+	/**
+	 * 对应的原始扣款单
+	 */
+	@ApiField("original_deduction_order_id")
+	private String originalDeductionOrderId;
 
 	/**
 	 * 支付交易流水号
@@ -374,6 +380,13 @@ public class DeductionOrderInfo extends AlipayObject {
 	}
 	public void setOrderId(String orderId) {
 		this.orderId = orderId;
+	}
+
+	public String getOriginalDeductionOrderId() {
+		return this.originalDeductionOrderId;
+	}
+	public void setOriginalDeductionOrderId(String originalDeductionOrderId) {
+		this.originalDeductionOrderId = originalDeductionOrderId;
 	}
 
 	public String getPaymentNo() {

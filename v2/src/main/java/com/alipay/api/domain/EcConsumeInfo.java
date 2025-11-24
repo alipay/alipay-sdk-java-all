@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业码账单开放模型
  *
  * @author auto create
- * @since 1.0, 2025-06-11 14:27:31
+ * @since 1.0, 2025-11-15 10:22:44
  */
 public class EcConsumeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6146633568751271768L;
+	private static final long serialVersionUID = 3827889966588665567L;
 
 	/**
 	 * 共同账户ID
@@ -235,6 +235,12 @@ public class EcConsumeInfo extends AlipayObject {
 	 */
 	@ApiField("peer_pay_amount")
 	private String peerPayAmount;
+
+	/**
+	 * 实际出资人名称
+	 */
+	@ApiField("peer_payer_card_name")
+	private String peerPayerCardName;
 
 	/**
 	 * 实际出资支付宝账号
@@ -550,6 +556,13 @@ OTHER：其他
 	}
 	public void setPeerPayAmount(String peerPayAmount) {
 		this.peerPayAmount = peerPayAmount;
+	}
+
+	public String getPeerPayerCardName() {
+		return this.peerPayerCardName;
+	}
+	public void setPeerPayerCardName(String peerPayerCardName) {
+		this.peerPayerCardName = peerPayerCardName;
 	}
 
 	public String getPeerPayerCardNo() {

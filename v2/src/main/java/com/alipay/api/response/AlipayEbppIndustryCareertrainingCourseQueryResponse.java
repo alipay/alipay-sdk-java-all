@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.careertraining.course.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-11-13 16:59:24
+ * @since 1.0, 2025-11-21 14:22:41
  */
 public class AlipayEbppIndustryCareertrainingCourseQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2289259439551829939L;
+	private static final long serialVersionUID = 8399577734931919582L;
 
 	/** 
 	 * 支付宝商品类目
@@ -28,9 +28,22 @@ public class AlipayEbppIndustryCareertrainingCourseQueryResponse extends AlipayR
 	/** 
 	 * null
 	 */
+	@ApiListField("category_id_list")
+	@ApiField("number")
+	private List<Long> categoryIdList;
+
+	/** 
+	 * null
+	 */
 	@ApiListField("certificate_code_list")
 	@ApiField("string")
 	private List<String> certificateCodeList;
+
+	/** 
+	 * 是否认证课程，默认true
+	 */
+	@ApiField("certification_course")
+	private Boolean certificationCourse;
 
 	/** 
 	 * null
@@ -40,8 +53,7 @@ public class AlipayEbppIndustryCareertrainingCourseQueryResponse extends AlipayR
 	private List<String> cityCodeList;
 
 	/** 
-	 * 课程封面视频
-生活号视频id,非URL。获取方式见：<a href="https://adccloud.yuque.com/adccloud/abilitywarehouse/cggokr7us69cxxo8?singleDoc#" target="_blank">链接</a>
+	 * 课程封面视频 生活号视频id,非URL。
 	 */
 	@ApiField("course_cover_video")
 	private String courseCoverVideo;
@@ -126,6 +138,12 @@ AUDIT_REJECT("审核驳回")
 	private List<String> detailsImageList;
 
 	/** 
+	 * 是否试听，默认false
+	 */
+	@ApiField("has_trial")
+	private Boolean hasTrial;
+
+	/** 
 	 * null
 	 */
 	@ApiListField("head_image_list")
@@ -182,11 +200,25 @@ AUDIT_REJECT("审核驳回")
 		return this.categoryId;
 	}
 
+	public void setCategoryIdList(List<Long> categoryIdList) {
+		this.categoryIdList = categoryIdList;
+	}
+	public List<Long> getCategoryIdList( ) {
+		return this.categoryIdList;
+	}
+
 	public void setCertificateCodeList(List<String> certificateCodeList) {
 		this.certificateCodeList = certificateCodeList;
 	}
 	public List<String> getCertificateCodeList( ) {
 		return this.certificateCodeList;
+	}
+
+	public void setCertificationCourse(Boolean certificationCourse) {
+		this.certificationCourse = certificationCourse;
+	}
+	public Boolean getCertificationCourse( ) {
+		return this.certificationCourse;
 	}
 
 	public void setCityCodeList(List<String> cityCodeList) {
@@ -285,6 +317,13 @@ AUDIT_REJECT("审核驳回")
 	}
 	public List<String> getDetailsImageList( ) {
 		return this.detailsImageList;
+	}
+
+	public void setHasTrial(Boolean hasTrial) {
+		this.hasTrial = hasTrial;
+	}
+	public Boolean getHasTrial( ) {
+		return this.hasTrial;
 	}
 
 	public void setHeadImageList(List<String> headImageList) {

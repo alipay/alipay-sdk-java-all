@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁iot进件退货订单申请
  *
  * @author auto create
- * @since 1.0, 2021-12-21 11:30:48
+ * @since 1.0, 2025-11-18 15:09:28
  */
 public class AlipayCommerceIotDapplyRefundCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5867742167471223658L;
+	private static final long serialVersionUID = 7425961257728878748L;
 
 	/**
 	 * 物料申请单号

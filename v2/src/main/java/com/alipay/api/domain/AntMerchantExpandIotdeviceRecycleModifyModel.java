@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户合作设备解绑
  *
  * @author auto create
- * @since 1.0, 2021-12-21 11:25:25
+ * @since 1.0, 2025-11-18 14:53:46
  */
 public class AntMerchantExpandIotdeviceRecycleModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6637933538763999425L;
+	private static final long serialVersionUID = 6177793328266513186L;
 
 	/**
 	 * 设备SN

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.hdf.query request
  * 
  * @author auto create
- * @since 1.0, 2025-11-11 14:37:41
+ * @since 1.0, 2025-11-17 14:17:42
  */
 public class AlipayCommerceHdfQueryRequest implements AlipayRequest<AlipayCommerceHdfQueryResponse> {
 

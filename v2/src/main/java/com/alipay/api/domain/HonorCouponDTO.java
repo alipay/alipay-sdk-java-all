@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class HonorCouponDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2379534341889219994L;
+	private static final long serialVersionUID = 5621451823395389543L;
 
 	/**
 	 * 优惠券名称

@@ -7,16 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗行业查询会员受益人列表
  *
  * @author auto create
- * @since 1.0, 2025-11-06 14:01:06
+ * @since 1.0, 2025-11-19 10:57:54
  */
 public class AlipayCommerceMedicalCommercialArchiveQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3347867572497867244L;
+	private static final long serialVersionUID = 3141198521119418425L;
 
 	/**
-	 * 会员卡id
+	 * 业务身份
+	 */
+	@ApiField("biz_identity")
+	private String bizIdentity;
+
+	/**
+	 * 会员卡id 当前字段已废弃(会员卡id，参数废弃)
 	 */
 	@ApiField("card_id")
+	@Deprecated
 	private String cardId;
 
 	/**
@@ -30,6 +37,13 @@ public class AlipayCommerceMedicalCommercialArchiveQueryModel extends AlipayObje
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getBizIdentity() {
+		return this.bizIdentity;
+	}
+	public void setBizIdentity(String bizIdentity) {
+		this.bizIdentity = bizIdentity;
+	}
 
 	public String getCardId() {
 		return this.cardId;

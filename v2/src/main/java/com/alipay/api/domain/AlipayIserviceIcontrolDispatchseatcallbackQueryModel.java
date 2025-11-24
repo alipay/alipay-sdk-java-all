@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayIserviceIcontrolDispatchseatcallbackQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4482112962722164542L;
+	private static final long serialVersionUID = 3832339659737445245L;
 
 	/**
 	 * 坐席id

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询职业培训课程详情
  *
  * @author auto create
- * @since 1.0, 2025-11-13 16:59:24
+ * @since 1.0, 2025-11-21 14:22:41
  */
 public class AlipayEbppIndustryCareertrainingCourseQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5624678724674991398L;
+	private static final long serialVersionUID = 3227473365465911126L;
 
 	/**
 	 * 课程ID

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批次下单接口
  *
  * @author auto create
- * @since 1.0, 2025-07-21 11:36:55
+ * @since 1.0, 2025-11-17 15:59:21
  */
 public class AlipayFundBatchCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6814664725481735948L;
+	private static final long serialVersionUID = 1564438488963583187L;
 
 	/**
 	 * 业务场景。不同场景值不同，具体值联系支付宝确认
@@ -88,6 +88,20 @@ public class AlipayFundBatchCreateModel extends AlipayObject {
 	@ApiListField("trans_order_list")
 	@ApiField("trans_order_detail")
 	private List<TransOrderDetail> transOrderList;
+
+	/**
+	 * 该笔转账使用的转账场景，商户可前往【<a href="https://b.alipay.com/page/bizfund/transferScene/list">支付宝商家平台-资金管理-转账场景</a>】中查看/申明转账场景。<br>
+目前支持以下枚举值：现金营销、企业退款、佣金报酬、业务结算、二手回收、公益补助、行政补贴和退款、保险理赔
+	 */
+	@ApiField("transfer_scene_name")
+	private String transferSceneName;
+
+	/**
+	 * 转账场景信息，包含转账场景信息类型和转账场景信息描述。需按该笔转账使用的转账场景准确填写
+	 */
+	@ApiListField("transfer_scene_report_infos")
+	@ApiField("transfer_scene_report_info")
+	private List<TransferSceneReportInfo> transferSceneReportInfos;
 
 	public String getBizScene() {
 		return this.bizScene;
@@ -171,6 +185,20 @@ public class AlipayFundBatchCreateModel extends AlipayObject {
 	}
 	public void setTransOrderList(List<TransOrderDetail> transOrderList) {
 		this.transOrderList = transOrderList;
+	}
+
+	public String getTransferSceneName() {
+		return this.transferSceneName;
+	}
+	public void setTransferSceneName(String transferSceneName) {
+		this.transferSceneName = transferSceneName;
+	}
+
+	public List<TransferSceneReportInfo> getTransferSceneReportInfos() {
+		return this.transferSceneReportInfos;
+	}
+	public void setTransferSceneReportInfos(List<TransferSceneReportInfo> transferSceneReportInfos) {
+		this.transferSceneReportInfos = transferSceneReportInfos;
 	}
 
 }

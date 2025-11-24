@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * null
+ * 权益明细信息
  *
  * @author auto create
- * @since 1.0, 2025-10-28 11:02:41
+ * @since 1.0, 2025-10-28 11:00:41
  */
 public class HmEquityInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5599417189271995752L;
+	private static final long serialVersionUID = 1194156137713471913L;
 
 	/**
 	 * 是否激活

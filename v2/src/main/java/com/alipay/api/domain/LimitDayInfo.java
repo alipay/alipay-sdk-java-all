@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class LimitDayInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8735255262418872913L;
+	private static final long serialVersionUID = 5554512866835471778L;
 
 	/**
 	 * 周一到周日可用列表。设置卡的可用时间段，按周维度设置

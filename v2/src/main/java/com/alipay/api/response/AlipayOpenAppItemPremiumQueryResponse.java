@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.item.premium.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-11-13 15:27:41
+ * @since 1.0, 2025-11-18 14:47:42
  */
 public class AlipayOpenAppItemPremiumQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8685282392255137156L;
+	private static final long serialVersionUID = 2632836123616886742L;
 
 	/** 
 	 * 审核状态，包含：审核中（AUDITING）、审核通过（ENABLED）、审核驳回（REJECTED）、审核撤销（CANCELED）、已暂停（SUSPEND）、已终止（TERMINATED）

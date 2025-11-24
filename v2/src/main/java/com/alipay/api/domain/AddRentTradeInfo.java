@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AddRentTradeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4775177474343331198L;
+	private static final long serialVersionUID = 4839484965182833665L;
 
 	/**
 	 * 支付金额，单位分

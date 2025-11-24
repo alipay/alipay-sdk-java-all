@@ -1,5 +1,6 @@
 package com.alipay.api.response;
 
+import com.alipay.api.internal.mapping.ApiField;
 
 import com.alipay.api.AlipayResponse;
 
@@ -7,14 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.multimedia.test.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-02-17 19:45:11
+ * @since 1.0, 2025-11-14 11:17:40
  */
 public class AlipayMultimediaTestCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8198791945931756748L;
+	private static final long serialVersionUID = 8835373315316933357L;
 
-	
+	/** 
+	 * 基础参数
+	 */
+	@ApiField("tc_case")
+	private String tcCase;
 
-	
+	public void setTcCase(String tcCase) {
+		this.tcCase = tcCase;
+	}
+	public String getTcCase( ) {
+		return this.tcCase;
+	}
 
 }

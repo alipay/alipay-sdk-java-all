@@ -7,11 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开始视频会议
  *
  * @author auto create
- * @since 1.0, 2025-10-17 14:44:07
+ * @since 1.0, 2025-11-19 15:49:43
  */
 public class AlipayCommerceMedicalHdfrtcVideoconferenceRestartModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7639931266819675745L;
+	private static final long serialVersionUID = 6125665844959771186L;
+
+	/**
+	 * 手机型号
+	 */
+	@ApiField("device_model")
+	private String deviceModel;
+
+	/**
+	 * 设备来源
+	 */
+	@ApiField("device_source")
+	private String deviceSource;
 
 	/**
 	 * 角色类型
@@ -42,6 +54,20 @@ public class AlipayCommerceMedicalHdfrtcVideoconferenceRestartModel extends Alip
 	 */
 	@ApiField("video_conference_id")
 	private Long videoConferenceId;
+
+	public String getDeviceModel() {
+		return this.deviceModel;
+	}
+	public void setDeviceModel(String deviceModel) {
+		this.deviceModel = deviceModel;
+	}
+
+	public String getDeviceSource() {
+		return this.deviceSource;
+	}
+	public void setDeviceSource(String deviceSource) {
+		this.deviceSource = deviceSource;
+	}
 
 	public String getRole() {
 		return this.role;

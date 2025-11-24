@@ -9,17 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 核销订单退款明细
  *
  * @author auto create
- * @since 1.0, 2024-10-12 19:28:18
+ * @since 1.0, 2025-11-20 15:05:33
  */
 public class DeductionRefundOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6229421642892312576L;
+	private static final long serialVersionUID = 3197813981899694231L;
 
 	/**
 	 * 业务时间
 	 */
 	@ApiField("biz_time")
 	private Date bizTime;
+
+	/**
+	 * 退款流水号标识一次退款请求。
+	 */
+	@ApiField("out_order_no")
+	private String outOrderNo;
 
 	/**
 	 * 退款面额，单位：分
@@ -50,6 +56,13 @@ public class DeductionRefundOrderInfo extends AlipayObject {
 	}
 	public void setBizTime(Date bizTime) {
 		this.bizTime = bizTime;
+	}
+
+	public String getOutOrderNo() {
+		return this.outOrderNo;
+	}
+	public void setOutOrderNo(String outOrderNo) {
+		this.outOrderNo = outOrderNo;
 	}
 
 	public Long getRefundAmount() {

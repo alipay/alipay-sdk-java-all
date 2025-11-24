@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.flexiblestaffing.authorize.initialize response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-23 15:25:02
+ * @since 1.0, 2025-11-21 15:32:41
  */
 public class AlipayFundFlexiblestaffingAuthorizeInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2736982634869282158L;
+	private static final long serialVersionUID = 7726468695678862718L;
 
 	/** 
 	 * 灵工授权场景码

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * AQ用户医生签约状态同步接口
  *
  * @author auto create
- * @since 1.0, 2025-11-13 18:37:41
+ * @since 1.0, 2025-11-20 16:22:41
  */
 public class AlipayCommerceMedicalUserHomedoctorSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7859743492765691353L;
+	private static final long serialVersionUID = 8625326965784468173L;
 
 	/**
 	 * 医生身份证号
@@ -54,6 +54,12 @@ public class AlipayCommerceMedicalUserHomedoctorSignModel extends AlipayObject {
 	 */
 	@ApiField("doctor_real_name")
 	private String doctorRealName;
+
+	/**
+	 * 医生真实姓名的加密值
+	 */
+	@ApiField("doctor_real_name_encrypt")
+	private String doctorRealNameEncrypt;
 
 	/**
 	 * 加密类型
@@ -127,6 +133,12 @@ public class AlipayCommerceMedicalUserHomedoctorSignModel extends AlipayObject {
 	@ApiField("user_real_name")
 	private String userRealName;
 
+	/**
+	 * 用户真实姓名的加密值
+	 */
+	@ApiField("user_real_name_encrypt")
+	private String userRealNameEncrypt;
+
 	public String getDoctorCertNo() {
 		return this.doctorCertNo;
 	}
@@ -174,6 +186,13 @@ public class AlipayCommerceMedicalUserHomedoctorSignModel extends AlipayObject {
 	}
 	public void setDoctorRealName(String doctorRealName) {
 		this.doctorRealName = doctorRealName;
+	}
+
+	public String getDoctorRealNameEncrypt() {
+		return this.doctorRealNameEncrypt;
+	}
+	public void setDoctorRealNameEncrypt(String doctorRealNameEncrypt) {
+		this.doctorRealNameEncrypt = doctorRealNameEncrypt;
 	}
 
 	public String getEncryptType() {
@@ -258,6 +277,13 @@ public class AlipayCommerceMedicalUserHomedoctorSignModel extends AlipayObject {
 	}
 	public void setUserRealName(String userRealName) {
 		this.userRealName = userRealName;
+	}
+
+	public String getUserRealNameEncrypt() {
+		return this.userRealNameEncrypt;
+	}
+	public void setUserRealNameEncrypt(String userRealNameEncrypt) {
+		this.userRealNameEncrypt = userRealNameEncrypt;
 	}
 
 }

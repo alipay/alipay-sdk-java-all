@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 事件上报服务
  *
  * @author auto create
- * @since 1.0, 2022-03-28 16:00:51
+ * @since 1.0, 2025-11-18 11:33:19
  */
 public class AntfortuneContentCommunityContentEventSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4224925885697739479L;
+	private static final long serialVersionUID = 2363259224962148691L;
 
 	/**
 	 * 事件内容

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.content.live.play.right.trigger response.
  * 
  * @author auto create
- * @since 1.0, 2025-11-13 15:43:28
+ * @since 1.0, 2025-11-17 11:46:52
  */
 public class AlipayContentLivePlayRightTriggerResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3395929116436656847L;
+	private static final long serialVersionUID = 5853613996357799647L;
 
 	/** 
 	 * 外部业务id

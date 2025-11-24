@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.item.premium.create request
  * 
  * @author auto create
- * @since 1.0, 2025-11-13 15:02:41
+ * @since 1.0, 2025-11-18 14:47:42
  */
 public class AlipayOpenAppItemPremiumCreateRequest implements AlipayRequest<AlipayOpenAppItemPremiumCreateResponse> {
 
@@ -19,7 +19,7 @@ public class AlipayOpenAppItemPremiumCreateRequest implements AlipayRequest<Alip
 	private String apiVersion="1.0";
 
 	/** 
-	* 该接口用于根据商品id提报加入精品商品池
+	* 该接口可根据支付宝平台侧商品ID将商品提报至精选池。
 	 */
 	private String bizContent;
 

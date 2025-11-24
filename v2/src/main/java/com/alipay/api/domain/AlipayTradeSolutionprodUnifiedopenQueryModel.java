@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * C2C个人收款方聚合开通进度查询
  *
  * @author auto create
- * @since 1.0, 2025-11-05 17:57:46
+ * @since 1.0, 2025-11-18 20:45:47
  */
 public class AlipayTradeSolutionprodUnifiedopenQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4363433386846413353L;
+	private static final long serialVersionUID = 4192267612879679242L;
 
 	/**
 	 * 外部请求流水号，调用alipay.trade.solutionprod.unifiedopen.apply接口时传入

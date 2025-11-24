@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 进项票发起线上勾选
  *
  * @author auto create
- * @since 1.0, 2025-08-07 17:57:56
+ * @since 1.0, 2025-11-21 10:28:14
  */
 public class AlipayBossFncInputinvoiceOnlineCertifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4831894798284988133L;
+	private static final long serialVersionUID = 6526877185652556991L;
 
 	/**
 	 * 勾选入参

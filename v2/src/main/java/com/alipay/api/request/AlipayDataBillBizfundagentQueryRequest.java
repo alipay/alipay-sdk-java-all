@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.bill.bizfundagent.query request
  * 
  * @author auto create
- * @since 1.0, 2025-11-06 19:52:31
+ * @since 1.0, 2025-11-21 18:07:41
  */
 public class AlipayDataBillBizfundagentQueryRequest implements AlipayRequest<AlipayDataBillBizfundagentQueryResponse> {
 

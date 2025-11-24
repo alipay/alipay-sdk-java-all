@@ -1,5 +1,6 @@
 package com.alipay.api.request;
 
+import com.alipay.api.domain.AlipayMultimediaTestCreateModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
@@ -11,12 +12,24 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.multimedia.test.create request
  * 
  * @author auto create
- * @since 1.0, 2025-02-17 19:45:11
+ * @since 1.0, 2025-11-14 11:17:40
  */
 public class AlipayMultimediaTestCreateRequest implements AlipayRequest<AlipayMultimediaTestCreateResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
+
+	/** 
+	* 测试多场景
+	 */
+	private String bizContent;
+
+	public void setBizContent(String bizContent) {
+		this.bizContent = bizContent;
+	}
+	public String getBizContent() {
+		return this.bizContent;
+	}
 	private String terminalType;
 	private String terminalInfo;	
 	private String prodCode;
@@ -79,6 +92,7 @@ public class AlipayMultimediaTestCreateRequest implements AlipayRequest<AlipayMu
 
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
+		txtParams.put("biz_content", this.bizContent);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}

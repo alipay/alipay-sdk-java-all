@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.charger.cobrandcardactivity.query request
  * 
  * @author auto create
- * @since 1.0, 2025-11-12 13:55:30
+ * @since 1.0, 2025-11-17 17:12:42
  */
 public class AlipayCommerceTransportChargerCobrandcardactivityQueryRequest implements AlipayRequest<AlipayCommerceTransportChargerCobrandcardactivityQueryResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalPromoOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3226321737267542833L;
+	private static final long serialVersionUID = 3238527113517462962L;
 
 	/**
 	 * LM配置商品价格时填的客户业务值（权益id），医疗用来区分代币种类

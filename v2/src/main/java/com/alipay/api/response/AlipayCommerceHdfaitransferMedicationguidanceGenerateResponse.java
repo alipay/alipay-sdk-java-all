@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.hdfaitransfer.medicationguidance.generate response.
  * 
  * @author auto create
- * @since 1.0, 2025-10-21 21:32:40
+ * @since 1.0, 2025-11-19 15:22:37
  */
 public class AlipayCommerceHdfaitransferMedicationguidanceGenerateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6581543251438394892L;
+	private static final long serialVersionUID = 7735156843948942664L;
 
 	/** 
 	 * null

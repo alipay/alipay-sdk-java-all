@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建职业培训课程信息
  *
  * @author auto create
- * @since 1.0, 2025-11-13 16:59:28
+ * @since 1.0, 2025-11-21 14:22:41
  */
 public class AlipayEbppIndustryCareertrainingCourseCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8599538746152134833L;
+	private static final long serialVersionUID = 3859449897393726866L;
 
 	/**
 	 * 支付宝商品类目
@@ -25,9 +25,22 @@ public class AlipayEbppIndustryCareertrainingCourseCreateModel extends AlipayObj
 	/**
 	 * null
 	 */
+	@ApiListField("category_id_list")
+	@ApiField("number")
+	private List<Long> categoryIdList;
+
+	/**
+	 * null
+	 */
 	@ApiListField("certificate_code_list")
 	@ApiField("string")
 	private List<String> certificateCodeList;
+
+	/**
+	 * 是否认证课程，默认true
+	 */
+	@ApiField("certification_course")
+	private Boolean certificationCourse;
 
 	/**
 	 * null
@@ -108,6 +121,12 @@ courseMaxPrice和courseMinPrice都填写时, min<=max
 	private List<String> detailsImageList;
 
 	/**
+	 * 是否试听，默认false
+	 */
+	@ApiField("has_trial")
+	private Boolean hasTrial;
+
+	/**
 	 * null
 	 */
 	@ApiListField("head_image_list")
@@ -158,11 +177,25 @@ courseMaxPrice和courseMinPrice都填写时, min<=max
 		this.categoryId = categoryId;
 	}
 
+	public List<Long> getCategoryIdList() {
+		return this.categoryIdList;
+	}
+	public void setCategoryIdList(List<Long> categoryIdList) {
+		this.categoryIdList = categoryIdList;
+	}
+
 	public List<String> getCertificateCodeList() {
 		return this.certificateCodeList;
 	}
 	public void setCertificateCodeList(List<String> certificateCodeList) {
 		this.certificateCodeList = certificateCodeList;
+	}
+
+	public Boolean getCertificationCourse() {
+		return this.certificationCourse;
+	}
+	public void setCertificationCourse(Boolean certificationCourse) {
+		this.certificationCourse = certificationCourse;
 	}
 
 	public List<String> getCityCodeList() {
@@ -247,6 +280,13 @@ courseMaxPrice和courseMinPrice都填写时, min<=max
 	}
 	public void setDetailsImageList(List<String> detailsImageList) {
 		this.detailsImageList = detailsImageList;
+	}
+
+	public Boolean getHasTrial() {
+		return this.hasTrial;
+	}
+	public void setHasTrial(Boolean hasTrial) {
+		this.hasTrial = hasTrial;
 	}
 
 	public List<String> getHeadImageList() {

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOfflineProviderDvcattrLocateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1219626399759331419L;
+	private static final long serialVersionUID = 1312738625713211942L;
 
 	/**
 	 * 设备点位蓝牙mac地址列表，如果不填则分页查询全量数据

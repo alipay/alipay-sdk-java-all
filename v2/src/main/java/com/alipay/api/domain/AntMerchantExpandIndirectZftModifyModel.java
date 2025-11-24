@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 直付通二级商户修改
  *
  * @author auto create
- * @since 1.0, 2025-07-10 14:14:04
+ * @since 1.0, 2025-11-14 15:18:11
  */
 public class AntMerchantExpandIndirectZftModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6464659316463716992L;
+	private static final long serialVersionUID = 7649937148315781798L;
 
 	/**
 	 * 补充证件图片，与additional_cert_type+additional_cert_image搭配使用。当商户类型为个人时，使用当面付收款有限额，补充这组证件信息可提额。目前仅允许个人类型商户传入。其值为使用ant.merchant.expand.indirect.image.upload上传图片得到的一串oss key
@@ -164,7 +164,7 @@ public class AntMerchantExpandIndirectZftModifyModel extends AlipayObject {
 	private String licenseAuthLetterImage;
 
 	/**
-	 * 商户类别码 mcc，可查看  <a href="https://mdn.alipayobjects.com/huamei_fctrxv/afts/file/A*3TMHRZ8ppa4AAAAAAAAAAAAADs2DAQ/%E8%BF%9B%E4%BB%B6MCC%E4%B8%8E%E8%B5%84%E8%B4%A8%E8%A6%81%E6%B1%82202212.xlsx">进件MCC与资质要求 202212.xlsx</a>，特殊行业要按照MCC说明中的资质一栏上传辅助资质，辅助资质要在 qualifications 中上传，会有人工审核。
+	 * 商户类别码 mcc，可查看 <a href="https://opendocs.alipay.com/common/02khjv#%E5%95%86%E5%AE%B6%E7%BB%8F%E8%90%A5%E7%B1%BB%E7%9B%AE">创建二级商户类目与资质要求说明</a>，特殊行业要按照MCC说明中的资质一栏上传辅助资质，辅助资质要在 qualifications 中上传，会有人工审核。
 	 */
 	@ApiField("mcc")
 	private String mcc;

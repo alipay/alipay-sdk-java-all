@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租赁行业商品库商户上传SPU信息结构体
  *
  * @author auto create
- * @since 1.0, 2025-10-22 10:59:42
+ * @since 1.0, 2025-11-20 19:06:52
  */
 public class MerchantUploadSpuInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4569185197958873178L;
+	private static final long serialVersionUID = 7165829616323846143L;
 
 	/**
 	 * 类目ID

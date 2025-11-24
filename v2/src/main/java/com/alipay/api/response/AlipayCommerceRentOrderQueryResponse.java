@@ -27,11 +27,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.rent.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-11-13 17:29:54
+ * @since 1.0, 2025-11-19 11:57:41
  */
 public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6679647696125394422L;
+	private static final long serialVersionUID = 8342761847377894848L;
 
 	/** 
 	 * 订单收货地址
@@ -117,6 +117,12 @@ public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("out_order_id")
 	private String outOrderId;
+
+	/** 
+	 * 端外订单来源
+	 */
+	@ApiField("outer_order_source")
+	private String outerOrderSource;
 
 	/** 
 	 * 租赁订单页面地址信息
@@ -316,6 +322,13 @@ public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 	}
 	public String getOutOrderId( ) {
 		return this.outOrderId;
+	}
+
+	public void setOuterOrderSource(String outerOrderSource) {
+		this.outerOrderSource = outerOrderSource;
+	}
+	public String getOuterOrderSource( ) {
+		return this.outerOrderSource;
 	}
 
 	public void setPathInfo(RentPathInfoVO pathInfo) {

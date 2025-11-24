@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租赁sku信息
  *
  * @author auto create
- * @since 1.0, 2025-10-22 10:59:42
+ * @since 1.0, 2025-11-20 19:06:52
  */
 public class RentSkuInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3375515226137815518L;
+	private static final long serialVersionUID = 6331235482132951952L;
 
 	/**
 	 * sku属性信息
@@ -28,6 +28,12 @@ public class RentSkuInfo extends AlipayObject {
 	 */
 	@ApiField("out_sku_id")
 	private String outSkuId;
+
+	/**
+	 * sku名称
+	 */
+	@ApiField("sku_name")
+	private String skuName;
 
 	/**
 	 * 平台SPUID
@@ -47,6 +53,13 @@ public class RentSkuInfo extends AlipayObject {
 	}
 	public void setOutSkuId(String outSkuId) {
 		this.outSkuId = outSkuId;
+	}
+
+	public String getSkuName() {
+		return this.skuName;
+	}
+	public void setSkuName(String skuName) {
+		this.skuName = skuName;
 	}
 
 	public String getSpuId() {

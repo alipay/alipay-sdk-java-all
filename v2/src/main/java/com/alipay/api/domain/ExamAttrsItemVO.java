@@ -7,23 +7,36 @@ import com.alipay.api.internal.mapping.ApiField;
  * 职业培训考试属性项
  *
  * @author auto create
- * @since 1.0, 2025-08-18 13:31:09
+ * @since 1.0, 2025-11-21 14:20:28
  */
 public class ExamAttrsItemVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4475827522564715783L;
+	private static final long serialVersionUID = 6657618314981467959L;
 
 	/**
-	 * 属性Key
+	 * 属性desc
+	 */
+	@ApiField("attr_desc")
+	private String attrDesc;
+
+	/**
+	 * 属性key
 	 */
 	@ApiField("attr_key")
 	private String attrKey;
 
 	/**
-	 * 属性值
+	 * 属性value
 	 */
 	@ApiField("attr_value")
 	private String attrValue;
+
+	public String getAttrDesc() {
+		return this.attrDesc;
+	}
+	public void setAttrDesc(String attrDesc) {
+		this.attrDesc = attrDesc;
+	}
 
 	public String getAttrKey() {
 		return this.attrKey;

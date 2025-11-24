@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 查询精品池商品状态
+ * 查询精选池商品状态
  *
  * @author auto create
- * @since 1.0, 2025-11-13 15:27:41
+ * @since 1.0, 2025-11-18 14:47:42
  */
 public class AlipayOpenAppItemPremiumQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7381456188461871183L;
+	private static final long serialVersionUID = 7225818489897457578L;
 
 	/**
 	 * 商品id，由商户提供

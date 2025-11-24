@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝个人协议页面签约接口
  *
  * @author auto create
- * @since 1.0, 2025-09-17 16:20:21
+ * @since 1.0, 2025-11-19 15:00:05
  */
 public class AlipayUserAgreementPageSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2284928895456783893L;
+	private static final long serialVersionUID = 1415473749139835346L;
 
 	/**
 	 * 请按当前接入的方式进行填充，且输入值必须为文档中的参数取值范围。
@@ -146,7 +146,7 @@ public class AlipayUserAgreementPageSignModel extends AlipayObject {
 	private SpecifiedChannelParam specifiedSortChannelParams;
 
 	/**
-	 * 此参数用于传递子商户信息，无特殊需求时不用关注。目前商户代扣、海外代扣、淘旅行信用住产品支持传入该参数（在销售方案中“是否允许自定义子商户信息”需要选是）。
+	 * 此参数用于传递子商户信息，直付通商户二级商户发起签约时必须传入该参数。目前商户代扣、海外代扣、淘旅行信用住产品支持传入该参数（在销售方案中“是否允许自定义子商户信息”需要选是）。
 	 */
 	@ApiField("sub_merchant")
 	private SubMerchantParams subMerchant;

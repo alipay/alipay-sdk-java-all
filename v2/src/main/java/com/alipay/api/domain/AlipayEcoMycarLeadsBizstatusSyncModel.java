@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 线索数据变更
  *
  * @author auto create
- * @since 1.0, 2025-09-09 20:33:07
+ * @since 1.0, 2025-11-17 19:50:18
  */
 public class AlipayEcoMycarLeadsBizstatusSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3428626546324176588L;
+	private static final long serialVersionUID = 2687494651348733544L;
 
 	/**
 	 * 已到店，支付宝方统一分配

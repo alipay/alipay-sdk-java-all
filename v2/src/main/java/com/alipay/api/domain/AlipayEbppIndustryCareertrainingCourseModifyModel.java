@@ -10,11 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改职业培训课程信息
  *
  * @author auto create
- * @since 1.0, 2025-11-13 16:59:24
+ * @since 1.0, 2025-11-21 14:22:41
  */
 public class AlipayEbppIndustryCareertrainingCourseModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4868392148813922264L;
+	private static final long serialVersionUID = 4518648187634247397L;
+
+	/**
+	 * null
+	 */
+	@ApiListField("category_id_list")
+	@ApiField("number")
+	private List<Long> categoryIdList;
 
 	/**
 	 * null
@@ -22,6 +29,12 @@ public class AlipayEbppIndustryCareertrainingCourseModifyModel extends AlipayObj
 	@ApiListField("certificate_code_list")
 	@ApiField("string")
 	private List<String> certificateCodeList;
+
+	/**
+	 * 是否认证课程，默认true
+	 */
+	@ApiField("certification_course")
+	private Boolean certificationCourse;
 
 	/**
 	 * null
@@ -107,6 +120,12 @@ public class AlipayEbppIndustryCareertrainingCourseModifyModel extends AlipayObj
 	private List<String> detailsImageList;
 
 	/**
+	 * 是否试听，默认false
+	 */
+	@ApiField("has_trial")
+	private Boolean hasTrial;
+
+	/**
 	 * null
 	 */
 	@ApiListField("head_image_list")
@@ -138,11 +157,25 @@ public class AlipayEbppIndustryCareertrainingCourseModifyModel extends AlipayObj
 	@ApiField("teacher_v_o")
 	private List<TeacherVO> teacherInfo;
 
+	public List<Long> getCategoryIdList() {
+		return this.categoryIdList;
+	}
+	public void setCategoryIdList(List<Long> categoryIdList) {
+		this.categoryIdList = categoryIdList;
+	}
+
 	public List<String> getCertificateCodeList() {
 		return this.certificateCodeList;
 	}
 	public void setCertificateCodeList(List<String> certificateCodeList) {
 		this.certificateCodeList = certificateCodeList;
+	}
+
+	public Boolean getCertificationCourse() {
+		return this.certificationCourse;
+	}
+	public void setCertificationCourse(Boolean certificationCourse) {
+		this.certificationCourse = certificationCourse;
 	}
 
 	public List<String> getCityCodeList() {
@@ -234,6 +267,13 @@ public class AlipayEbppIndustryCareertrainingCourseModifyModel extends AlipayObj
 	}
 	public void setDetailsImageList(List<String> detailsImageList) {
 		this.detailsImageList = detailsImageList;
+	}
+
+	public Boolean getHasTrial() {
+		return this.hasTrial;
+	}
+	public void setHasTrial(Boolean hasTrial) {
+		this.hasTrial = hasTrial;
 	}
 
 	public List<String> getHeadImageList() {

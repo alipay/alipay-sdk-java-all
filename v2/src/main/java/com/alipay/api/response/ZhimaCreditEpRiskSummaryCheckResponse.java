@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.risk.summary.check response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-25 11:33:27
+ * @since 1.0, 2025-11-19 10:39:05
  */
 public class ZhimaCreditEpRiskSummaryCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7715273984817394181L;
+	private static final long serialVersionUID = 6733916664185918771L;
 
 	/** 
 	 * true：有风险；false：无风险

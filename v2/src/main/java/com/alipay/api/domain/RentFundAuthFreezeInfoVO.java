@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预授权信息
  *
  * @author auto create
- * @since 1.0, 2025-07-16 13:39:50
+ * @since 1.0, 2025-11-19 11:21:13
  */
 public class RentFundAuthFreezeInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4743593166178381534L;
+	private static final long serialVersionUID = 6828575615555757396L;
 
 	/**
 	 * 预授权冻结单号
@@ -26,6 +26,12 @@ public class RentFundAuthFreezeInfoVO extends AlipayObject {
 	 */
 	@ApiField("freeze_notify_url")
 	private String freezeNotifyUrl;
+
+	/**
+	 * 预授权场景
+	 */
+	@ApiField("fund_auth_scene")
+	private String fundAuthScene;
 
 	/**
 	 * 收款账户的支付宝用户号。 以2088开头的16位纯数字
@@ -63,6 +69,13 @@ public class RentFundAuthFreezeInfoVO extends AlipayObject {
 	}
 	public void setFreezeNotifyUrl(String freezeNotifyUrl) {
 		this.freezeNotifyUrl = freezeNotifyUrl;
+	}
+
+	public String getFundAuthScene() {
+		return this.fundAuthScene;
+	}
+	public void setFundAuthScene(String fundAuthScene) {
+		this.fundAuthScene = fundAuthScene;
 	}
 
 	public String getPayeeUserId() {

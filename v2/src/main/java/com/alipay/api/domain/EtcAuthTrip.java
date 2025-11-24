@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 高德授权认证结果查询
  *
  * @author auto create
- * @since 1.0, 2025-06-27 18:13:52
+ * @since 1.0, 2025-11-14 16:25:15
  */
 public class EtcAuthTrip extends AlipayObject {
 
-	private static final long serialVersionUID = 8113793619371734544L;
+	private static final long serialVersionUID = 8343217692693383929L;
 
 	/**
 	 * 出站名称
@@ -68,7 +68,7 @@ public class EtcAuthTrip extends AlipayObject {
 	private String subScene;
 
 	/**
-	 * 高速通行费用总金额，单位:元。
+	 * 高速通行费用总金额，单位:分。
 	 */
 	@ApiField("total_amount")
 	private String totalAmount;

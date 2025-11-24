@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.iotdevice.recycle.modify response.
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 08:34:29
+ * @since 1.0, 2025-11-18 14:57:42
  */
 public class AntMerchantExpandIotdeviceRecycleModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3496351575632336319L;
+	private static final long serialVersionUID = 6688216385947722384L;
 
 	/** 
 	 * 业务处理订单号

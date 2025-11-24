@@ -7,11 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户离开视频会议
  *
  * @author auto create
- * @since 1.0, 2025-10-17 14:44:12
+ * @since 1.0, 2025-11-19 16:41:37
  */
 public class AlipayCommerceMedicalHdfrtcConferencememberQuitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1893157466993294224L;
+	private static final long serialVersionUID = 6539514285125774357L;
+
+	/**
+	 * 手机型号
+	 */
+	@ApiField("device_model")
+	private String deviceModel;
+
+	/**
+	 * 设备来源
+	 */
+	@ApiField("device_source")
+	private String deviceSource;
 
 	/**
 	 * 角色类型
@@ -42,6 +54,20 @@ public class AlipayCommerceMedicalHdfrtcConferencememberQuitModel extends Alipay
 	 */
 	@ApiField("video_conference_id")
 	private Long videoConferenceId;
+
+	public String getDeviceModel() {
+		return this.deviceModel;
+	}
+	public void setDeviceModel(String deviceModel) {
+		this.deviceModel = deviceModel;
+	}
+
+	public String getDeviceSource() {
+		return this.deviceSource;
+	}
+	public void setDeviceSource(String deviceSource) {
+		this.deviceSource = deviceSource;
+	}
 
 	public String getRole() {
 		return this.role;

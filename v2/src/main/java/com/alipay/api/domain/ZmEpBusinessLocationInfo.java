@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZmEpBusinessLocationInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7832773443252882425L;
+	private static final long serialVersionUID = 8311645186172961847L;
 
 	/**
 	 * 详细地址

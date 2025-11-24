@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资金监管冻资支付单取消
  *
  * @author auto create
- * @since 1.0, 2024-06-11 16:36:11
+ * @since 1.0, 2025-11-24 11:11:13
  */
 public class AlipayEbppIndustrySupervisionPayCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5427242747857365679L;
+	private static final long serialVersionUID = 1477765237128656574L;
 
 	/**
 	 * 支付宝用户的userId。

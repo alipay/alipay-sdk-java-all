@@ -7,14 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 聚合开通结果项
  *
  * @author auto create
- * @since 1.0, 2025-11-05 17:57:46
+ * @since 1.0, 2025-11-17 21:36:42
  */
 public class UniOpenResItem extends AlipayObject {
 
-	private static final long serialVersionUID = 6147769674243999834L;
+	private static final long serialVersionUID = 7483895314754442645L;
 
 	/**
 	 * 开通项结果详情
+	 */
+	@ApiField("detail_info")
+	private String detailInfo;
+
+	/**
+	 * 开通项结果详情（废弃）
 	 */
 	@ApiField("detail_infos")
 	private UniOpenResItemDetailInfos detailInfos;
@@ -36,6 +42,13 @@ public class UniOpenResItem extends AlipayObject {
 	 */
 	@ApiField("status")
 	private String status;
+
+	public String getDetailInfo() {
+		return this.detailInfo;
+	}
+	public void setDetailInfo(String detailInfo) {
+		this.detailInfo = detailInfo;
+	}
 
 	public UniOpenResItemDetailInfos getDetailInfos() {
 		return this.detailInfos;

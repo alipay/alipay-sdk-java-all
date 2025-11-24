@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VoucherInventoryInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1694247921915565624L;
+	private static final long serialVersionUID = 4321958116346342555L;
 
 	/**
 	 * 已发放数量。

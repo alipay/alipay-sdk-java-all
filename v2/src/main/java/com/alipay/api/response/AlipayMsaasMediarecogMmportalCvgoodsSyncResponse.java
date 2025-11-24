@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.msaas.mediarecog.mmportal.cvgoods.sync response.
  * 
  * @author auto create
- * @since 1.0, 2023-10-09 20:21:46
+ * @since 1.0, 2025-11-14 10:21:25
  */
 public class AlipayMsaasMediarecogMmportalCvgoodsSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5486897218498238454L;
+	private static final long serialVersionUID = 5559436548931171582L;
 
 	/** 
 	 * 结果字段，可扩展

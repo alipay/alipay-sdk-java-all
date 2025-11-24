@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 邀请企业注册
  *
  * @author auto create
- * @since 1.0, 2025-08-25 14:03:37
+ * @since 1.0, 2025-11-17 20:59:04
  */
 public class AlipayCommerceEcEnterpriseRegisterinviteCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1726574477214651462L;
+	private static final long serialVersionUID = 7349331851589128552L;
 
 	/**
 	 * 企业基本信息，仅用于企业注册页面回显信息，用户可编辑修改，请按需使用

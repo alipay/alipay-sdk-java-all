@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenCertifyMerchantConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 2326988271698397424L;
+	private static final long serialVersionUID = 8747521413893867966L;
 
 	/**
 	 * 用于开放认证授权

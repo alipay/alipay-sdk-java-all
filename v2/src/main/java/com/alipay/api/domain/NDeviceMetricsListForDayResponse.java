@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * N设备日维度明细信息
  *
  * @author auto create
- * @since 1.0, 2025-08-21 13:45:03
+ * @since 1.0, 2025-11-22 11:07:46
  */
 public class NDeviceMetricsListForDayResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 4733831171758821273L;
+	private static final long serialVersionUID = 1167786648362316652L;
 
 	/**
 	 * 支付宝金额，单位元
@@ -64,6 +64,12 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 	private String cityName;
 
 	/**
+	 * 绑定状态
+	 */
+	@ApiField("cur_bind_status")
+	private String curBindStatus;
+
+	/**
 	 * 设备连接电脑系统类型
 	 */
 	@ApiField("device_system")
@@ -74,6 +80,12 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 	 */
 	@ApiField("device_type")
 	private String deviceType;
+
+	/**
+	 * 数字化门店ID
+	 */
+	@ApiField("digital_poi_id")
+	private String digitalPoiId;
 
 	/**
 	 * 区编码
@@ -158,6 +170,12 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 	 */
 	@ApiField("leads_location_address")
 	private String leadsLocationAddress;
+
+	/**
+	 * leads门店ID
+	 */
+	@ApiField("leads_poi_id")
+	private String leadsPoiId;
 
 	/**
 	 * 作业人员uid
@@ -371,6 +389,13 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 		this.cityName = cityName;
 	}
 
+	public String getCurBindStatus() {
+		return this.curBindStatus;
+	}
+	public void setCurBindStatus(String curBindStatus) {
+		this.curBindStatus = curBindStatus;
+	}
+
 	public String getDeviceSystem() {
 		return this.deviceSystem;
 	}
@@ -383,6 +408,13 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 	}
 	public void setDeviceType(String deviceType) {
 		this.deviceType = deviceType;
+	}
+
+	public String getDigitalPoiId() {
+		return this.digitalPoiId;
+	}
+	public void setDigitalPoiId(String digitalPoiId) {
+		this.digitalPoiId = digitalPoiId;
 	}
 
 	public String getDistrictCode() {
@@ -481,6 +513,13 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 	}
 	public void setLeadsLocationAddress(String leadsLocationAddress) {
 		this.leadsLocationAddress = leadsLocationAddress;
+	}
+
+	public String getLeadsPoiId() {
+		return this.leadsPoiId;
+	}
+	public void setLeadsPoiId(String leadsPoiId) {
+		this.leadsPoiId = leadsPoiId;
 	}
 
 	public String getLeadsWorkerId() {

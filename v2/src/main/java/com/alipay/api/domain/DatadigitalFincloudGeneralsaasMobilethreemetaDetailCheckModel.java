@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DatadigitalFincloudGeneralsaasMobilethreemetaDetailCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5866725684289475876L;
+	private static final long serialVersionUID = 4681634231341791977L;
 
 	/**
 	 * 业务产品码

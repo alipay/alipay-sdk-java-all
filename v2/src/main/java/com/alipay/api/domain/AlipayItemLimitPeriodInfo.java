@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayItemLimitPeriodInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4454129181421546173L;
+	private static final long serialVersionUID = 8654783813194894526L;
 
 	/**
 	 * 区间范围枚举，分为：

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.hdfrtc.videoconference.restart request
  * 
  * @author auto create
- * @since 1.0, 2025-10-17 14:44:08
+ * @since 1.0, 2025-11-19 15:52:41
  */
 public class AlipayCommerceMedicalHdfrtcVideoconferenceRestartRequest implements AlipayRequest<AlipayCommerceMedicalHdfrtcVideoconferenceRestartResponse> {
 

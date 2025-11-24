@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SearchScoreInfoBO extends AlipayObject {
 
-	private static final long serialVersionUID = 5759726666814944697L;
+	private static final long serialVersionUID = 7852934298933385737L;
 
 	/**
 	 * 权威分，十分制

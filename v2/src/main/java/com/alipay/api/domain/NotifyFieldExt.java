@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NotifyFieldExt extends AlipayObject {
 
-	private static final long serialVersionUID = 4465794373967893357L;
+	private static final long serialVersionUID = 3817295649747223852L;
 
 	/**
 	 * 是否可接受

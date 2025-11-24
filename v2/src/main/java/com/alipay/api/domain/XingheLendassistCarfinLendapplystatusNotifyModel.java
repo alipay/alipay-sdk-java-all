@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支用状态通知
  *
  * @author auto create
- * @since 1.0, 2025-09-18 16:03:34
+ * @since 1.0, 2025-11-19 16:50:13
  */
 public class XingheLendassistCarfinLendapplystatusNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8317438232843887721L;
+	private static final long serialVersionUID = 6565612733567237235L;
 
 	/**
 	 * 协议文件列表
@@ -43,6 +43,12 @@ public class XingheLendassistCarfinLendapplystatusNotifyModel extends AlipayObje
 	@ApiListField("drawdown_list")
 	@ApiField("lend_drawdown")
 	private List<LendDrawdown> drawdownList;
+
+	/**
+	 * 担保机构信息
+	 */
+	@ApiField("guarantee_inst")
+	private CarfinGuaranteeInst guaranteeInst;
 
 	/**
 	 * 支用申请单号
@@ -146,6 +152,13 @@ public class XingheLendassistCarfinLendapplystatusNotifyModel extends AlipayObje
 	}
 	public void setDrawdownList(List<LendDrawdown> drawdownList) {
 		this.drawdownList = drawdownList;
+	}
+
+	public CarfinGuaranteeInst getGuaranteeInst() {
+		return this.guaranteeInst;
+	}
+	public void setGuaranteeInst(CarfinGuaranteeInst guaranteeInst) {
+		this.guaranteeInst = guaranteeInst;
 	}
 
 	public String getLendApplyNo() {

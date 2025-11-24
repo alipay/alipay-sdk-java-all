@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 好大夫合作方鉴权
  *
  * @author auto create
- * @since 1.0, 2025-11-11 14:37:41
+ * @since 1.0, 2025-11-17 14:17:42
  */
 public class AlipayCommerceHdfQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5542266873666376128L;
+	private static final long serialVersionUID = 5512419441914997716L;
 
 	/**
 	 * 好大夫的authCode
@@ -19,11 +19,24 @@ public class AlipayCommerceHdfQueryModel extends AlipayObject {
 	@ApiField("auth_code")
 	private String authCode;
 
+	/**
+	 * 双方定义
+	 */
+	@ApiField("biz_source")
+	private String bizSource;
+
 	public String getAuthCode() {
 		return this.authCode;
 	}
 	public void setAuthCode(String authCode) {
 		this.authCode = authCode;
+	}
+
+	public String getBizSource() {
+		return this.bizSource;
+	}
+	public void setBizSource(String bizSource) {
+		this.bizSource = bizSource;
 	}
 
 }

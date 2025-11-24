@@ -8,14 +8,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.approval.modify response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-17 14:02:35
+ * @since 1.0, 2025-11-24 11:12:41
  */
 public class AlipayCommerceEcApprovalModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3385342529429191233L;
+	private static final long serialVersionUID = 1315237991542335258L;
 
 	/** 
-	 * 外部平台审批单id
+	 * 外部平台申请单id
 	 */
 	@ApiField("platform_approval_id")
 	private String platformApprovalId;

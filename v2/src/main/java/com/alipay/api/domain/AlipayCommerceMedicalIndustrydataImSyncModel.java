@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * im医生回复消息
  *
  * @author auto create
- * @since 1.0, 2025-09-25 11:25:44
+ * @since 1.0, 2025-11-18 13:54:22
  */
 public class AlipayCommerceMedicalIndustrydataImSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8483789124895865664L;
+	private static final long serialVersionUID = 1859559635857899684L;
 
 	/**
 	 * 内部im会话chatId
@@ -26,6 +26,12 @@ public class AlipayCommerceMedicalIndustrydataImSyncModel extends AlipayObject {
 	private String alipayOrderId;
 
 	/**
+	 * 渠道编码
+	 */
+	@ApiField("channel_code")
+	private String channelCode;
+
+	/**
 	 * 消息内容：文本-内容、图片-url、语音-url、视频-url、定制卡片
 	 */
 	@ApiField("content")
@@ -36,6 +42,12 @@ public class AlipayCommerceMedicalIndustrydataImSyncModel extends AlipayObject {
 	 */
 	@ApiField("merchant_user_id")
 	private String merchantUserId;
+
+	/**
+	 * 消息发送时间戳
+	 */
+	@ApiField("msg_time")
+	private Long msgTime;
 
 	/**
 	 * 消息类型
@@ -74,6 +86,12 @@ public class AlipayCommerceMedicalIndustrydataImSyncModel extends AlipayObject {
 	private String providerType;
 
 	/**
+	 * 场景编码
+	 */
+	@ApiField("scene_code")
+	private String sceneCode;
+
+	/**
 	 * 服务提供者:医生/医助姓名
 	 */
 	@ApiField("service_provider_name")
@@ -93,6 +111,13 @@ public class AlipayCommerceMedicalIndustrydataImSyncModel extends AlipayObject {
 		this.alipayOrderId = alipayOrderId;
 	}
 
+	public String getChannelCode() {
+		return this.channelCode;
+	}
+	public void setChannelCode(String channelCode) {
+		this.channelCode = channelCode;
+	}
+
 	public ContentVo getContent() {
 		return this.content;
 	}
@@ -105,6 +130,13 @@ public class AlipayCommerceMedicalIndustrydataImSyncModel extends AlipayObject {
 	}
 	public void setMerchantUserId(String merchantUserId) {
 		this.merchantUserId = merchantUserId;
+	}
+
+	public Long getMsgTime() {
+		return this.msgTime;
+	}
+	public void setMsgTime(Long msgTime) {
+		this.msgTime = msgTime;
 	}
 
 	public String getMsgType() {
@@ -147,6 +179,13 @@ public class AlipayCommerceMedicalIndustrydataImSyncModel extends AlipayObject {
 	}
 	public void setProviderType(String providerType) {
 		this.providerType = providerType;
+	}
+
+	public String getSceneCode() {
+		return this.sceneCode;
+	}
+	public void setSceneCode(String sceneCode) {
+		this.sceneCode = sceneCode;
 	}
 
 	public String getServiceProviderName() {

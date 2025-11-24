@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.approval.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-06 11:27:35
+ * @since 1.0, 2025-11-24 11:12:41
  */
 public class AlipayCommerceEcApprovalQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2348718914986425447L;
+	private static final long serialVersionUID = 5637769194224436326L;
 
 	/** 
 	 * 申请单的结束时间
@@ -32,7 +32,7 @@ public class AlipayCommerceEcApprovalQueryResponse extends AlipayResponse {
 	private Date applyStartTime;
 
 	/** 
-	 * 审批结果（审批单状态）
+	 * 申请单状态，对应申请单修改接口的：approval_status字段
 	 */
 	@ApiField("approval_result")
 	private String approvalResult;
@@ -70,7 +70,7 @@ public class AlipayCommerceEcApprovalQueryResponse extends AlipayResponse {
 	private String enterpriseId;
 
 	/** 
-	 * 审批单相关的扩展信息，如花呗券ID和金额等
+	 * 申请单相关的扩展信息，如花呗券ID和金额等
 	 */
 	@ApiField("ex_json")
 	private String exJson;
@@ -94,7 +94,7 @@ public class AlipayCommerceEcApprovalQueryResponse extends AlipayResponse {
 	private String paymentType;
 
 	/** 
-	 * 外部平台审批单id
+	 * 外部平台申请单id
 	 */
 	@ApiField("platform_approval_id")
 	private String platformApprovalId;

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.inteop.order.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-10-23 20:37:41
+ * @since 1.0, 2025-11-21 16:32:42
  */
 public class AlipayOpenSpInteopOrderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2869368727485134621L;
+	private static final long serialVersionUID = 5578374798957545463L;
 
 	/** 
 	 * 一体化作业开通主单号

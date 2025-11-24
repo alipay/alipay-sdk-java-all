@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.asset.fund.use request
  * 
  * @author auto create
- * @since 1.0, 2025-10-10 14:49:34
+ * @since 1.0, 2025-11-16 14:22:41
  */
 public class AlipayMarketingAssetFundUseRequest implements AlipayRequest<AlipayMarketingAssetFundUseResponse> {
 
