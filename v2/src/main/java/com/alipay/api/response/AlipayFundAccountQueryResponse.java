@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundAccountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8297969587388185555L;
+	private static final long serialVersionUID = 3149181351157113612L;
 
 	/** 
 	 * 支付宝账户的余额成份明细，仅当查询日终余额明细时返回

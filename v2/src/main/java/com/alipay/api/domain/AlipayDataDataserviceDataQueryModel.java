@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayDataDataserviceDataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3337285342185288114L;
+	private static final long serialVersionUID = 7892866779168624915L;
 
 	/**
 	 * 金额
@@ -59,7 +59,7 @@ public class AlipayDataDataserviceDataQueryModel extends AlipayObject {
 	private String seats;
 
 	/**
-	 * 注意事项
+	 * 注意事项-修改
 	 */
 	@ApiListField("test_g_one")
 	@ApiField("string")

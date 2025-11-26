@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RentSubscribeLeads extends AlipayObject {
 
-	private static final long serialVersionUID = 6367158825917258569L;
+	private static final long serialVersionUID = 7884432621284845186L;
 
 	/**
 	 * 约定看房日期

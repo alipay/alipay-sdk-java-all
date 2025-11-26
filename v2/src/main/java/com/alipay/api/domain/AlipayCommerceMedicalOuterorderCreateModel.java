@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 好大夫合作方履约创建参数透传
  *
  * @author auto create
- * @since 1.0, 2025-11-11 17:47:41
+ * @since 1.0, 2025-11-24 20:27:41
  */
 public class AlipayCommerceMedicalOuterorderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5629424336127592938L;
+	private static final long serialVersionUID = 5128354586541762258L;
 
 	/**
 	 * 业务身份

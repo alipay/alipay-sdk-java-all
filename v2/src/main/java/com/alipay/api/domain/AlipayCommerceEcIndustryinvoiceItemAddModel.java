@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 新增商品
  *
  * @author auto create
- * @since 1.0, 2025-07-07 14:30:01
+ * @since 1.0, 2025-11-25 21:15:09
  */
 public class AlipayCommerceEcIndustryinvoiceItemAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4814179196999983691L;
+	private static final long serialVersionUID = 1225866471825497424L;
 
 	/**
 	 * 优惠政策标识
@@ -32,7 +32,7 @@ public class AlipayCommerceEcIndustryinvoiceItemAddModel extends AlipayObject {
 	private String itemSpec;
 
 	/**
-	 * 商品税率
+	 * 商品税率，小数值，如13%则传值为0.13
 	 */
 	@ApiField("item_tax_rate")
 	private String itemTaxRate;
@@ -42,6 +42,12 @@ public class AlipayCommerceEcIndustryinvoiceItemAddModel extends AlipayObject {
 	 */
 	@ApiField("item_unit")
 	private String itemUnit;
+
+	/**
+	 * 含税单价，总位数30位，最多17位整数，最多13位小数，单位：元
+	 */
+	@ApiField("item_unit_amount_with_tax")
+	private String itemUnitAmountWithTax;
 
 	/**
 	 * 外部商品ID
@@ -94,6 +100,13 @@ public class AlipayCommerceEcIndustryinvoiceItemAddModel extends AlipayObject {
 	}
 	public void setItemUnit(String itemUnit) {
 		this.itemUnit = itemUnit;
+	}
+
+	public String getItemUnitAmountWithTax() {
+		return this.itemUnitAmountWithTax;
+	}
+	public void setItemUnitAmountWithTax(String itemUnitAmountWithTax) {
+		this.itemUnitAmountWithTax = itemUnitAmountWithTax;
 	}
 
 	public String getOutItemId() {

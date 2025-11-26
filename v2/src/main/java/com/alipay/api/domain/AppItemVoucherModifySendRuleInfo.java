@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AppItemVoucherModifySendRuleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1117441722863356956L;
+	private static final long serialVersionUID = 8412913694319981753L;
 
 	/**
 	 * 券发放结束时间， 格式：yyyy-MM-dd HH:mm:ss 匹配格式yyyy-MM-dd HH:mm:ss的date类型

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 表结构配置
  *
  * @author auto create
- * @since 1.0, 2025-11-07 17:12:40
+ * @since 1.0, 2025-11-24 19:50:04
  */
 public class TableSchema extends AlipayObject {
 
-	private static final long serialVersionUID = 4585574297678623226L;
+	private static final long serialVersionUID = 1367654344811756271L;
 
 	/**
 	 * null

@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudpromo.file.upload request
  * 
  * @author auto create
- * @since 1.0, 2025-09-22 21:52:40
+ * @since 1.0, 2025-11-24 14:47:41
  */
 public class AlipayCloudCloudpromoFileUploadRequest implements AlipayUploadRequest<AlipayCloudCloudpromoFileUploadResponse> {
 

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ZmepAnnualReportInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1613298263243669174L;
+	private static final long serialVersionUID = 8113288474637665169L;
 
 	/**
 	 * 企业工商年报基本信息

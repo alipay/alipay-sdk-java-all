@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付可开票开票申请创建
  *
  * @author auto create
- * @since 1.0, 2025-09-10 00:31:43
+ * @since 1.0, 2025-11-25 21:15:38
  */
 public class AlipayCommerceEcIndustryinvoiceInvoiceapplyCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7417254248763913871L;
+	private static final long serialVersionUID = 5811254315199341318L;
 
 	/**
 	 * 购买方地址

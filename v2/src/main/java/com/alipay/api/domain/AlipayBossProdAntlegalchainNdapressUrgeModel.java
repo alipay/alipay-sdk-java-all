@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayBossProdAntlegalchainNdapressUrgeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1346918384154357587L;
+	private static final long serialVersionUID = 2429931912712562525L;
 
 	/**
 	 * 来源系统

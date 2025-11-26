@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class XhExpressPostInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8471767761541696749L;
+	private static final long serialVersionUID = 8143928577474426169L;
 
 	/**
 	 * 详细的邮寄地址

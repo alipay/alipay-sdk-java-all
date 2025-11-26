@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SignInPrizeConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 4138896785279963163L;
+	private static final long serialVersionUID = 8446591367751716742L;
 
 	/**
 	 * 中奖频率限制

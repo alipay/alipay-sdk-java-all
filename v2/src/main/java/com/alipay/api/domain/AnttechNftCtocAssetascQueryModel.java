@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * C2C用户持有藏品升序查询
  *
  * @author auto create
- * @since 1.0, 2025-11-18 21:12:08
+ * @since 1.0, 2025-11-25 14:34:16
  */
 public class AnttechNftCtocAssetascQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6477721375197284519L;
+	private static final long serialVersionUID = 5496344465757426566L;
 
 	/**
 	 * 接入tocken

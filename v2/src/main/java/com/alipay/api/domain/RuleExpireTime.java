@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RuleExpireTime extends AlipayObject {
 
-	private static final long serialVersionUID = 2778656673984546727L;
+	private static final long serialVersionUID = 3363252196284442855L;
 
 	/**
 	 * 规则生效时间，当过期标识选true时必传

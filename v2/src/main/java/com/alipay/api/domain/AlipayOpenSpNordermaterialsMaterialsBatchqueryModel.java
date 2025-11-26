@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenSpNordermaterialsMaterialsBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8296619984187475971L;
+	private static final long serialVersionUID = 2573629967752147416L;
 
 	/**
 	 * 分批查询的页码，必填

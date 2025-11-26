@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayBossProdAlcagmprodAgreementUnsignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3858957269258572192L;
+	private static final long serialVersionUID = 6312811238547743269L;
 
 	/**
 	 * 法务C端协议分配的协议ID，用于唯一标识一个协议或复用协议。支持列表(批量签约)

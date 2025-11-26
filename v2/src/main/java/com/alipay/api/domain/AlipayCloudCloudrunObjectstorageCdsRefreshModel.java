@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCloudCloudrunObjectstorageCdsRefreshModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4691556178846818731L;
+	private static final long serialVersionUID = 4276278721475169719L;
 
 	/**
 	 * 刷新 URL，格式为加速域名或刷新的文件或目录

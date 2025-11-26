@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.nopen.license.initialize response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-14 11:02:30
+ * @since 1.0, 2025-11-25 10:25:15
  */
 public class AlipayOpenSpNopenLicenseInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2652116229623168528L;
+	private static final long serialVersionUID = 7111499336513271436L;
 
 	/** 
 	 * 耗时单位毫秒

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayTradeGiftStatusSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7869511758277166492L;
+	private static final long serialVersionUID = 4175578861416116875L;
 
 	/**
 	 * 状态用于驱动礼物卡片展示的变化(accepted-已收下驱动高亮变灰、overdueNotReceived已过期驱动高亮变灰且提示过期未领取)

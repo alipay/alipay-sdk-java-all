@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DomainNestOther extends AlipayObject {
 
-	private static final long serialVersionUID = 3874774441868971132L;
+	private static final long serialVersionUID = 7613755195167695514L;
 
 	/**
 	 * 1

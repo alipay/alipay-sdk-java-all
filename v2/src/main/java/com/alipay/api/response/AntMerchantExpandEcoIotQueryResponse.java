@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntMerchantExpandEcoIotQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8859667477312657646L;
+	private static final long serialVersionUID = 7557461715828792343L;
 
 	/** 
 	 * 生态供应商音箱订单信息

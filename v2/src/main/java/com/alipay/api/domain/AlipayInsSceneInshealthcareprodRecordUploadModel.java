@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayInsSceneInshealthcareprodRecordUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2484729614617391541L;
+	private static final long serialVersionUID = 5732299646989433825L;
 
 	/**
 	 * 小区号(16 进制字符串)

@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CardApplyTaskInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1632834581933663413L;
+	private static final long serialVersionUID = 3628888241829186469L;
 
 	/**
 	 * 卡操作的类型

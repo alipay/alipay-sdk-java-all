@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发送商家群内群发消息
  *
  * @author auto create
- * @since 1.0, 2025-09-23 14:37:46
+ * @since 1.0, 2025-11-25 14:39:23
  */
 public class AlipayMerchantGroupGroupmsgSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5338754921958718454L;
+	private static final long serialVersionUID = 5781221856457345856L;
 
 	/**
 	 * 是否需要@所有人，不传默认false(不需要@所有人)
@@ -72,6 +72,12 @@ public class AlipayMerchantGroupGroupmsgSendModel extends AlipayObject {
 	 */
 	@ApiField("send_time")
 	private Date sendTime;
+
+	/**
+	 * 消息是否同步群管理员，不传默认false(不需要同步群管理员)
+	 */
+	@ApiField("send_to_admin")
+	private Boolean sendToAdmin;
 
 	/**
 	 * 推送的消息文案标题（参考：好物分享来咯！）
@@ -140,6 +146,13 @@ public class AlipayMerchantGroupGroupmsgSendModel extends AlipayObject {
 	}
 	public void setSendTime(Date sendTime) {
 		this.sendTime = sendTime;
+	}
+
+	public Boolean getSendToAdmin() {
+		return this.sendToAdmin;
+	}
+	public void setSendToAdmin(Boolean sendToAdmin) {
+		this.sendToAdmin = sendToAdmin;
 	}
 
 	public String getTitle() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商家群消息模型
  *
  * @author auto create
- * @since 1.0, 2025-09-11 10:24:34
+ * @since 1.0, 2025-11-25 14:39:22
  */
 public class GroupMessageVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2623786388627636896L;
+	private static final long serialVersionUID = 1793536724773799744L;
 
 	/**
 	 * 优惠券消息内容模型，当消息类型(msg_type)选 "COUPON" 的时候，这个内容必须得填充
@@ -44,10 +44,16 @@ public class GroupMessageVO extends AlipayObject {
 	private LinkMsgVO linkMsgContent;
 
 	/**
-	 * 群消息类型枚举，小程序消息:"APP"，图片消息:"IMAGE"，链接消息:"LINK"，纯文本消息:"TEXT"，优惠券消息:"COUPON"，商品消息:"GOODS"，图文消息:"IMAGE_TEXT"。
+	 * 群消息类型枚举，小程序消息:"APP"，图片消息:"IMAGE"，链接消息:"LINK"，纯文本消息:"TEXT"，优惠券消息:"COUPON"，商品消息:"GOODS"，图文消息:"IMAGE_TEXT"，红包消息："RED_PACKET"。
 	 */
 	@ApiField("msg_type")
 	private String msgType;
+
+	/**
+	 * 红包消息内容模型，当消息类型(msg_type)选 "RED_PACKET" 的时候，这个内容必须得填充
+	 */
+	@ApiField("red_packet_msg_content")
+	private RedPacketMsgVO redPacketMsgContent;
 
 	/**
 	 * 纯文本消息内容模型，当消息类型(msg_type)选 "TEXT" 的时候，这个内容必须得填充
@@ -101,6 +107,13 @@ public class GroupMessageVO extends AlipayObject {
 	}
 	public void setMsgType(String msgType) {
 		this.msgType = msgType;
+	}
+
+	public RedPacketMsgVO getRedPacketMsgContent() {
+		return this.redPacketMsgContent;
+	}
+	public void setRedPacketMsgContent(RedPacketMsgVO redPacketMsgContent) {
+		this.redPacketMsgContent = redPacketMsgContent;
 	}
 
 	public TextMsgVO getTextMsgContent() {

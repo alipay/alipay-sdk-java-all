@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RentRefundTransVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1554882122289971446L;
+	private static final long serialVersionUID = 2287136531193171454L;
 
 	/**
 	 * 退款请求号。 标识一次退款请求，需要保证在交易号下唯一。 注：针对同一次退款请求，如果调用接口失败或异常了，重试时需要保证退款请求号不能变更，防止该笔交易重复退款。支付宝会保证同样的退款请求号多次请求只会退一次。

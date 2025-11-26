@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CustomGoodsVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7534418957711745839L;
+	private static final long serialVersionUID = 1782966159383722671L;
 
 	/**
 	 * 商品的售卖价格，单位：元，精确到小数点后两位数字。

@@ -17,11 +17,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.pay response.
  * 
  * @author auto create
- * @since 1.0, 2025-10-10 11:10:46
+ * @since 1.0, 2025-11-25 10:37:41
  */
 public class AlipayTradePayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4677311865519348989L;
+	private static final long serialVersionUID = 2357347619152859817L;
 
 	/** 
 	 * 先享后付2.0垫资金额,不返回表示没有走垫资，非空表示垫资支付的金额
@@ -241,6 +241,12 @@ bluesea_1：蓝海活动优惠费率标签；
 	 */
 	@ApiField("pre_auth_pay_amount")
 	private String preAuthPayAmount;
+
+	/** 
+	 * 支付宝钱包跨境支付交易的购汇主体，ALIPAYHK-境外香港购汇实体，3008境内购汇实体
+	 */
+	@ApiField("purchase_entity")
+	private String purchaseEntity;
 
 	/** 
 	 * 实收金额
@@ -552,6 +558,13 @@ bluesea_1：蓝海活动优惠费率标签；
 	}
 	public String getPreAuthPayAmount( ) {
 		return this.preAuthPayAmount;
+	}
+
+	public void setPurchaseEntity(String purchaseEntity) {
+		this.purchaseEntity = purchaseEntity;
+	}
+	public String getPurchaseEntity( ) {
+		return this.purchaseEntity;
 	}
 
 	public void setReceiptAmount(String receiptAmount) {

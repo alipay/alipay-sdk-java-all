@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppStressHeartbeatUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8136665945841756895L;
+	private static final long serialVersionUID = 3664577458252141799L;
 
 	/** 
 	 * 下一个状态的状态码

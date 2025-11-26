@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.nft.ctoc.assetasc.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-11-18 21:12:08
+ * @since 1.0, 2025-11-25 14:34:16
  */
 public class AnttechNftCtocAssetascQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7716494822326392234L;
+	private static final long serialVersionUID = 6773132864647373233L;
 
 	/** 
 	 * null

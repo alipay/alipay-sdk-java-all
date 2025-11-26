@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalHdfCommentSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1233421898123844344L;
+	private static final long serialVersionUID = 5643535162157759323L;
 
 	/**
 	 * tab3侧的直播间id（加密后）

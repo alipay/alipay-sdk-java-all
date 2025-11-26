@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 正向场景的商品查询返回结果
  *
  * @author auto create
- * @since 1.0, 2025-07-07 14:30:03
+ * @since 1.0, 2025-11-25 21:15:32
  */
 public class CompanyItem extends AlipayObject {
 
-	private static final long serialVersionUID = 7664885383979814638L;
+	private static final long serialVersionUID = 7686886821174773984L;
 
 	/**
 	 * 企业商品ID
@@ -44,7 +44,7 @@ public class CompanyItem extends AlipayObject {
 	private String itemSpec;
 
 	/**
-	 * 税率
+	 * 税率，小数值，如13%则传值为0.13
 	 */
 	@ApiField("item_tax_rate")
 	private String itemTaxRate;
@@ -54,6 +54,12 @@ public class CompanyItem extends AlipayObject {
 	 */
 	@ApiField("item_unit")
 	private String itemUnit;
+
+	/**
+	 * 含税单价，总位数30位，最多17位整数，最多13位小数，单位：元
+	 */
+	@ApiField("item_unit_amount_with_tax")
+	private String itemUnitAmountWithTax;
 
 	/**
 	 * 外部商品ID
@@ -114,6 +120,13 @@ public class CompanyItem extends AlipayObject {
 	}
 	public void setItemUnit(String itemUnit) {
 		this.itemUnit = itemUnit;
+	}
+
+	public String getItemUnitAmountWithTax() {
+		return this.itemUnitAmountWithTax;
+	}
+	public void setItemUnitAmountWithTax(String itemUnitAmountWithTax) {
+		this.itemUnitAmountWithTax = itemUnitAmountWithTax;
 	}
 
 	public String getOutItemId() {

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MultiDimAuthAmountQuery extends AlipayObject {
 
-	private static final long serialVersionUID = 6266168253612141914L;
+	private static final long serialVersionUID = 1186396399395856878L;
 
 	/**
 	 * 具体的查询的场景信息，如特付查询场景

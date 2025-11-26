@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class DatadigitalAnttechAppcoreUserbizinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5717484359384923419L;
+	private static final long serialVersionUID = 2588887169213353244L;
 
 	/** 
 	 * 用户的供热信息，温度单位为摄氏度

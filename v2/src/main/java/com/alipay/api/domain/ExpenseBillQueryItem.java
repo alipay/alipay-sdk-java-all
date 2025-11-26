@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ExpenseBillQueryItem extends AlipayObject {
 
-	private static final long serialVersionUID = 8256512222333546286L;
+	private static final long serialVersionUID = 4285512359962896436L;
 
 	/**
 	 * 费用明细列表

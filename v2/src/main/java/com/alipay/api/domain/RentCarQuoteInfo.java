@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RentCarQuoteInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3168127884749157691L;
+	private static final long serialVersionUID = 3499169252428852418L;
 
 	/**
 	 * spu下报价排序

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntfortuneMarketingBlackcarduserGradeinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1135546672338284845L;
+	private static final long serialVersionUID = 6494219597793827136L;
 
 	/** 
 	 * 检查结果是否通过：true/false

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFincoreComplianceRcassetscenterMerchantbaseinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7656769854439859255L;
+	private static final long serialVersionUID = 3166334561265114239L;
 
 	/** 
 	 * 商家基础信息响应列表
