@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.nps.score.submit response.
  * 
  * @author auto create
- * @since 1.0, 2025-11-13 17:02:04
+ * @since 1.0, 2025-11-26 17:32:42
  */
 public class AlipayCommerceMedicalNpsScoreSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1615198753577186421L;
+	private static final long serialVersionUID = 6761725763342645545L;
 
 	/** 
 	 * 处理结果

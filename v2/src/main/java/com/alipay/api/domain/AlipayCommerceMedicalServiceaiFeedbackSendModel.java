@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * BadCase反馈接口
  *
  * @author auto create
- * @since 1.0, 2025-11-20 10:12:41
+ * @since 1.0, 2025-11-26 17:12:42
  */
 public class AlipayCommerceMedicalServiceaiFeedbackSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7235967411835374755L;
+	private static final long serialVersionUID = 4837129611766292451L;
 
 	/**
 	 * 智能体ID

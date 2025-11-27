@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingExchangevoucherTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3764618663748725572L;
+	private static final long serialVersionUID = 2286715791818988963L;
 
 	/**
 	 * 品牌名。用于在卡包中展示，长度不能超过12个字符。

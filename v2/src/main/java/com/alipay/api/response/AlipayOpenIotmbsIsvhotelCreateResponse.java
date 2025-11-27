@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenIotmbsIsvhotelCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5731293255713136262L;
+	private static final long serialVersionUID = 1762347774414326847L;
 
 	/** 
 	 * project_id+需要编辑的酒店id

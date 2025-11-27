@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ExamInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2234873597422786668L;
+	private static final long serialVersionUID = 3387841798279782175L;
 
 	/**
 	 * 证书颁发日期

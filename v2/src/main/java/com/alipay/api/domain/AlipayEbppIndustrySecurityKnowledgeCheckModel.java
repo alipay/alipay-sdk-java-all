@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEbppIndustrySecurityKnowledgeCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6718947363139244755L;
+	private static final long serialVersionUID = 5596537481554811297L;
 
 	/**
 	 * 调用方传递的当次安全检测业务id ,当深度检测有风险时会通过SPI 回调，并传递该id

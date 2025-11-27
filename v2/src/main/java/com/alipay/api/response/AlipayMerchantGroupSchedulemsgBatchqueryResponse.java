@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMerchantGroupSchedulemsgBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2185392688154962329L;
+	private static final long serialVersionUID = 3444931329416219337L;
 
 	/** 
 	 * null

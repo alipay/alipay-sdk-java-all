@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MenuBean extends AlipayObject {
 
-	private static final long serialVersionUID = 4278427623598644732L;
+	private static final long serialVersionUID = 2641967976464536876L;
 
 	/**
 	 * 类目ID

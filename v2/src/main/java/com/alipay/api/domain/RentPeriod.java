@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RentPeriod extends AlipayObject {
 
-	private static final long serialVersionUID = 6286772363663458326L;
+	private static final long serialVersionUID = 6224881744944418715L;
 
 	/**
 	 * 期数的步长，单位：天/月/年

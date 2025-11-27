@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 运营商行业信用购预咨询
  *
  * @author auto create
- * @since 1.0, 2025-06-26 19:44:33
+ * @since 1.0, 2025-11-27 09:59:22
  */
 public class AlipayCommerceAcommunicationCreditphoneOrderPreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7761416238129214911L;
+	private static final long serialVersionUID = 4323378384687566577L;
 
 	/**
 	 * 支付宝用户id
@@ -102,6 +102,12 @@ public class AlipayCommerceAcommunicationCreditphoneOrderPreconsultModel extends
 	 */
 	@ApiField("spu_id")
 	private String spuId;
+
+	/**
+	 * 直降金额，单位 元
+	 */
+	@ApiField("total_bonus")
+	private String totalBonus;
 
 	/**
 	 * 用户姓名
@@ -212,6 +218,13 @@ public class AlipayCommerceAcommunicationCreditphoneOrderPreconsultModel extends
 	}
 	public void setSpuId(String spuId) {
 		this.spuId = spuId;
+	}
+
+	public String getTotalBonus() {
+		return this.totalBonus;
+	}
+	public void setTotalBonus(String totalBonus) {
+		this.totalBonus = totalBonus;
 	}
 
 	public String getUserName() {

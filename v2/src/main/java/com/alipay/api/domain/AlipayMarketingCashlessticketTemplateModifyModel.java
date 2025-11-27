@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCashlessticketTemplateModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1333846967591516528L;
+	private static final long serialVersionUID = 5845317999212392374L;
 
 	/**
 	 * 模板修改操作外部业务号，用于修改时的幂等控制，注意这里不是修改创建模板时的业务号

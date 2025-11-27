@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniSafedomainDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1855742528341328134L;
+	private static final long serialVersionUID = 7867274495152938994L;
 
 	/**
 	 * 服务器域名白名单。支付宝小程序在HTTP请求、上传文件等场景只能与域名白名单中的域名进行通讯 。

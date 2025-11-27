@@ -1,5 +1,6 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
 import java.util.List;
 
 import com.alipay.api.AlipayObject;
@@ -10,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租赁订单支付主动同步
  *
  * @author auto create
- * @since 1.0, 2025-10-24 11:08:38
+ * @since 1.0, 2025-11-26 15:17:18
  */
 public class AlipayCommerceRentOrderPaySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8335999999369446942L;
+	private static final long serialVersionUID = 7251275235765239891L;
 
 	/**
 	 * 租赁售后单号
@@ -46,6 +47,12 @@ public class AlipayCommerceRentOrderPaySyncModel extends AlipayObject {
 	@ApiListField("pay_items")
 	@ApiField("rent_pay_item_d_t_o")
 	private List<RentPayItemDTO> payItems;
+
+	/**
+	 * 支付时间，特指主动同步、非支付宝渠道下可以传入用户支付完成的时间
+	 */
+	@ApiField("pay_time")
+	private Date payTime;
 
 	/**
 	 * 对应支付渠道的支付单号，ALIPAY时必传
@@ -86,6 +93,13 @@ public class AlipayCommerceRentOrderPaySyncModel extends AlipayObject {
 	}
 	public void setPayItems(List<RentPayItemDTO> payItems) {
 		this.payItems = payItems;
+	}
+
+	public Date getPayTime() {
+		return this.payTime;
+	}
+	public void setPayTime(Date payTime) {
+		this.payTime = payTime;
 	}
 
 	public String getTradeNo() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class UserSegmentationInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7384613344878828187L;
+	private static final long serialVersionUID = 7552163549487198393L;
 
 	/**
 	 * 商户圈选类型

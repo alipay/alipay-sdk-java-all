@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class UnitedCountInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4339181433177165638L;
+	private static final long serialVersionUID = 5692292258583643922L;
 
 	/**
 	 * 日上限

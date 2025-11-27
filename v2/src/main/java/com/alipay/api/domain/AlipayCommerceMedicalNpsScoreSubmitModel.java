@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * NPS卡片反馈信息保存
  *
  * @author auto create
- * @since 1.0, 2025-08-11 13:27:10
+ * @since 1.0, 2025-11-26 17:29:18
  */
 public class AlipayCommerceMedicalNpsScoreSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7878573632187927263L;
+	private static final long serialVersionUID = 1311761345937332337L;
 
 	/**
 	 * 业务信息
@@ -50,6 +50,12 @@ public class AlipayCommerceMedicalNpsScoreSubmitModel extends AlipayObject {
 	private String orgId;
 
 	/**
+	 * 机构名称
+	 */
+	@ApiField("org_name")
+	private String orgName;
+
+	/**
 	 * 支付宝用户的userId。
 	 */
 	@ApiField("out_user_id")
@@ -74,7 +80,7 @@ public class AlipayCommerceMedicalNpsScoreSubmitModel extends AlipayObject {
 	private String sceneCode;
 
 	/**
-	 * 评分 1 - 10
+	 * 评分
 	 */
 	@ApiField("score")
 	private Long score;
@@ -125,6 +131,13 @@ public class AlipayCommerceMedicalNpsScoreSubmitModel extends AlipayObject {
 	}
 	public void setOrgId(String orgId) {
 		this.orgId = orgId;
+	}
+
+	public String getOrgName() {
+		return this.orgName;
+	}
+	public void setOrgName(String orgName) {
+		this.orgName = orgName;
 	}
 
 	public String getOutUserId() {

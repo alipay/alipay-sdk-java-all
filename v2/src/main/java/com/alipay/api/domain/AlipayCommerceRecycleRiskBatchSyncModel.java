@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceRecycleRiskBatchSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5446462492558186585L;
+	private static final long serialVersionUID = 1789313256826799357L;
 
 	/**
 	 * 黑名单列表

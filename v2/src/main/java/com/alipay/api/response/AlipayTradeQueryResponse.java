@@ -23,11 +23,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-10-10 19:01:29
+ * @since 1.0, 2025-11-27 13:52:50
  */
 public class AlipayTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6717486398577788774L;
+	private static final long serialVersionUID = 1292515571143314151L;
 
 	/** 
 	 * 交易附加状态：
@@ -321,6 +321,12 @@ json格式。
 	 */
 	@ApiField("pre_auth_pay_amount")
 	private String preAuthPayAmount;
+
+	/** 
+	 * 支付宝钱包跨境支付交易的购汇主体，ALIPAYHK-境外香港购汇实体，3008境内购汇实体
+	 */
+	@ApiField("purchase_entity")
+	private String purchaseEntity;
 
 	/** 
 	 * 实收金额，单位为元，两位小数。该金额为本笔交易，商户账户能够实际收到的金额
@@ -754,6 +760,13 @@ json格式。
 	}
 	public String getPreAuthPayAmount( ) {
 		return this.preAuthPayAmount;
+	}
+
+	public void setPurchaseEntity(String purchaseEntity) {
+		this.purchaseEntity = purchaseEntity;
+	}
+	public String getPurchaseEntity( ) {
+		return this.purchaseEntity;
 	}
 
 	public void setReceiptAmount(String receiptAmount) {

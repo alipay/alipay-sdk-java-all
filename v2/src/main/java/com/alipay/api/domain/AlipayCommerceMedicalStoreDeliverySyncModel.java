@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceMedicalStoreDeliverySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3273786144485157158L;
+	private static final long serialVersionUID = 4146226123718898676L;
 
 	/**
 	 * 配送范围集合，仅支持高德坐标系的经纬度集。坐标数上限：200；电子围栏首尾坐标需闭合。

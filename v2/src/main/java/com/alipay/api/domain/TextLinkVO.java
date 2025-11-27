@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TextLinkVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6765731135969426395L;
+	private static final long serialVersionUID = 1854965782484154118L;
 
 	/**
 	 * 请输入http、https或alipays开头的链接

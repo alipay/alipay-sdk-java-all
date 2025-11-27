@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MemberRule extends AlipayObject {
 
-	private static final long serialVersionUID = 6598938788917517187L;
+	private static final long serialVersionUID = 5151165784762919877L;
 
 	/**
 	 * 指定周期模式适用。指定时间到期

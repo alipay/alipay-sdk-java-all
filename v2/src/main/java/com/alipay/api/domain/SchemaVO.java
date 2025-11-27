@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class SchemaVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2463655623938659996L;
+	private static final long serialVersionUID = 1359958692847544347L;
 
 	/**
 	 * 风险日利率

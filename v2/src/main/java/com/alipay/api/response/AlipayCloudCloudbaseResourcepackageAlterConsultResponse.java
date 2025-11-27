@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.resourcepackage.alter.consult response.
  * 
  * @author auto create
- * @since 1.0, 2025-11-25 17:37:13
+ * @since 1.0, 2025-11-26 21:02:41
  */
 public class AlipayCloudCloudbaseResourcepackageAlterConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5655796687765572681L;
+	private static final long serialVersionUID = 4739254413711298649L;
 
 	/** 
 	 * 变配类型
@@ -32,12 +32,30 @@ public class AlipayCloudCloudbaseResourcepackageAlterConsultResponse extends Ali
 	private String currency;
 
 	/** 
+	 * 支付方向 
+- RECEIVABLE(应收)
+- REFUNDABLE(应退)
+- CURR_SPEC_HAS_PAY(当前规格已购)
+- WAIT_DOWN_STARTED(降配待生效)
+- CURR_SPEC_CANT_DOWN(当前规格无法降配,剩余生效周期不足一个月)
+	 */
+	@ApiField("original_payment_direction")
+	private String originalPaymentDirection;
+
+	/** 
+	 * 原价差额(分)
+	 */
+	@ApiField("original_total_amount")
+	private String originalTotalAmount;
+
+	/** 
 	 * 支付方向
  - RECEIVABLE
  - REFUNDABLE
  - CURR_SPEC_HAS_PAY
  - WAIT_DOWN_STARTED
  - CURR_SPEC_CANT_DOWN
+ - INSTANCE_IS_BEING_AMORTIZED
 	 */
 	@ApiField("payment_direction")
 	private String paymentDirection;
@@ -60,6 +78,20 @@ public class AlipayCloudCloudbaseResourcepackageAlterConsultResponse extends Ali
 	}
 	public String getCurrency( ) {
 		return this.currency;
+	}
+
+	public void setOriginalPaymentDirection(String originalPaymentDirection) {
+		this.originalPaymentDirection = originalPaymentDirection;
+	}
+	public String getOriginalPaymentDirection( ) {
+		return this.originalPaymentDirection;
+	}
+
+	public void setOriginalTotalAmount(String originalTotalAmount) {
+		this.originalTotalAmount = originalTotalAmount;
+	}
+	public String getOriginalTotalAmount( ) {
+		return this.originalTotalAmount;
 	}
 
 	public void setPaymentDirection(String paymentDirection) {

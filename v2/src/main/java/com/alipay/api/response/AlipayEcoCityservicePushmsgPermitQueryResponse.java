@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoCityservicePushmsgPermitQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7766165192638461826L;
+	private static final long serialVersionUID = 1769647744647664368L;
 
 	/** 
 	 * 根据查询条件返回匹配用户列表,包含用户id以及消息推送授权状态

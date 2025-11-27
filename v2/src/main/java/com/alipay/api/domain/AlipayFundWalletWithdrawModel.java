@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户发起提现
  *
  * @author auto create
- * @since 1.0, 2025-07-14 11:14:35
+ * @since 1.0, 2025-11-26 11:10:39
  */
 public class AlipayFundWalletWithdrawModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5142491151435675594L;
+	private static final long serialVersionUID = 2651398791279254623L;
 
 	/**
 	 * 提现金额，单位：元（人民币）
@@ -30,6 +30,12 @@ public class AlipayFundWalletWithdrawModel extends AlipayObject {
 	 */
 	@ApiField("extend_strategy")
 	private ExtendStrategy extendStrategy;
+
+	/**
+	 * 商户收费规则
+	 */
+	@ApiField("merchant_charging_rule")
+	private MerchantChargingRule merchantChargingRule;
 
 	/**
 	 * 提现标题
@@ -86,6 +92,13 @@ public class AlipayFundWalletWithdrawModel extends AlipayObject {
 	}
 	public void setExtendStrategy(ExtendStrategy extendStrategy) {
 		this.extendStrategy = extendStrategy;
+	}
+
+	public MerchantChargingRule getMerchantChargingRule() {
+		return this.merchantChargingRule;
+	}
+	public void setMerchantChargingRule(MerchantChargingRule merchantChargingRule) {
+		this.merchantChargingRule = merchantChargingRule;
 	}
 
 	public String getOrderTitle() {

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenAppNotifyRetryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1728732831635433984L;
+	private static final long serialVersionUID = 5336985616686595919L;
 
 	
 

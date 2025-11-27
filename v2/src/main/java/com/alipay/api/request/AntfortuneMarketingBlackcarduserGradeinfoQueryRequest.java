@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: antfortune.marketing.blackcarduser.gradeinfo.query request
  * 
  * @author auto create
- * @since 1.0, 2025-11-24 11:32:41
+ * @since 1.0, 2025-11-26 11:27:42
  */
 public class AntfortuneMarketingBlackcarduserGradeinfoQueryRequest implements AlipayRequest<AntfortuneMarketingBlackcarduserGradeinfoQueryResponse> {
 
@@ -34,7 +34,7 @@ public class AntfortuneMarketingBlackcarduserGradeinfoQueryRequest implements Al
 	private String prodCode;
 	private String notifyUrl;
 	private String returnUrl;
-	private boolean needEncrypt=true;
+	private boolean needEncrypt=false;
 	private AlipayObject bizModel=null;
 
 	public String getNotifyUrl() {

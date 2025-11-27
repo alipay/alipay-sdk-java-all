@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VulList extends AlipayObject {
 
-	private static final long serialVersionUID = 8718727332485379763L;
+	private static final long serialVersionUID = 7273911495925873943L;
 
 	/**
 	 * 漏洞奖励

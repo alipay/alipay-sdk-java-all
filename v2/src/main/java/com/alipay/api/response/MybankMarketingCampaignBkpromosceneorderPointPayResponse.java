@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankMarketingCampaignBkpromosceneorderPointPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6654816136996279484L;
+	private static final long serialVersionUID = 8694637447634213637L;
 
 	
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenOperationOpenbizmockGzoneQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5832648177891231355L;
+	private static final long serialVersionUID = 7284818632139243419L;
 
 	/** 
 	 * 1

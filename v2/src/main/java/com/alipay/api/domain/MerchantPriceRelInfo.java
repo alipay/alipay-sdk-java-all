@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MerchantPriceRelInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5863917926617777244L;
+	private static final long serialVersionUID = 2452667731914512666L;
 
 	/**
 	 * 安心付直联版后台产品code使用商家扣款（I1140100001000001000）、

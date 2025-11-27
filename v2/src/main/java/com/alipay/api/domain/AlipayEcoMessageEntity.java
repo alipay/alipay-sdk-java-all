@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoMessageEntity extends AlipayObject {
 
-	private static final long serialVersionUID = 7219867154977863426L;
+	private static final long serialVersionUID = 3169475761364582676L;
 
 	/**
 	 * (certificate_type/certificate_number/用户名字) 或者 alipay_user_id  必须有一个不为空。两个都不为空则以alipay_user_id为准

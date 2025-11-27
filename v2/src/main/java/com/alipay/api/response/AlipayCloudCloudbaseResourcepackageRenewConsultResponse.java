@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.resourcepackage.renew.consult response.
  * 
  * @author auto create
- * @since 1.0, 2025-11-25 17:37:31
+ * @since 1.0, 2025-11-26 21:02:41
  */
 public class AlipayCloudCloudbaseResourcepackageRenewConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4813268739685996312L;
+	private static final long serialVersionUID = 5416882363946644699L;
 
 	/** 
 	 * 币种
@@ -22,6 +22,12 @@ public class AlipayCloudCloudbaseResourcepackageRenewConsultResponse extends Ali
 	 */
 	@ApiField("currency")
 	private String currency;
+
+	/** 
+	 * 原价差额(分)
+	 */
+	@ApiField("original_total_amount")
+	private String originalTotalAmount;
 
 	/** 
 	 * 折扣后总价(分)
@@ -34,6 +40,13 @@ public class AlipayCloudCloudbaseResourcepackageRenewConsultResponse extends Ali
 	}
 	public String getCurrency( ) {
 		return this.currency;
+	}
+
+	public void setOriginalTotalAmount(String originalTotalAmount) {
+		this.originalTotalAmount = originalTotalAmount;
+	}
+	public String getOriginalTotalAmount( ) {
+		return this.originalTotalAmount;
 	}
 
 	public void setTradeTotalAmount(String tradeTotalAmount) {

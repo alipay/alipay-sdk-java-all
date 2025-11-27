@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RecycleSkuDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4184977559595456654L;
+	private static final long serialVersionUID = 1483565476565677954L;
 
 	/**
 	 * 当前sku的过期时间，如果为空时，不同的场景平台会有默认的过期时间

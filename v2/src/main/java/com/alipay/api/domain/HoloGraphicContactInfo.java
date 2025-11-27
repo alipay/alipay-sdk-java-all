@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HoloGraphicContactInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4115899638215197139L;
+	private static final long serialVersionUID = 8626998263658538224L;
 
 	/**
 	 * 主叫通话频次

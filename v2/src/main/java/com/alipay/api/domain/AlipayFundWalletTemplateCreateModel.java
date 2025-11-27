@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 商户确认创建钱包
  *
  * @author auto create
- * @since 1.0, 2025-09-25 20:01:42
+ * @since 1.0, 2025-11-26 11:10:41
  */
 public class AlipayFundWalletTemplateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1587688949211449873L;
+	private static final long serialVersionUID = 4678517595783771867L;
 
 	/**
 	 * 业务身份
@@ -24,6 +27,13 @@ public class AlipayFundWalletTemplateCreateModel extends AlipayObject {
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
+
+	/**
+	 * 商户收费信息列表
+	 */
+	@ApiListField("charge_info_list")
+	@ApiField("wallet_merchant_charge_info")
+	private List<WalletMerchantChargeInfo> chargeInfoList;
 
 	/**
 	 * 商户确认开通场景钱包能力扩展参数
@@ -48,6 +58,12 @@ public class AlipayFundWalletTemplateCreateModel extends AlipayObject {
 	 */
 	@ApiField("product_code")
 	private String productCode;
+
+	/**
+	 * 是否支持商户收费
+	 */
+	@ApiField("support_merchant_charge")
+	private String supportMerchantCharge;
 
 	/**
 	 * 是否支持钱包核销规则
@@ -81,6 +97,13 @@ public class AlipayFundWalletTemplateCreateModel extends AlipayObject {
 		this.bizScene = bizScene;
 	}
 
+	public List<WalletMerchantChargeInfo> getChargeInfoList() {
+		return this.chargeInfoList;
+	}
+	public void setChargeInfoList(List<WalletMerchantChargeInfo> chargeInfoList) {
+		this.chargeInfoList = chargeInfoList;
+	}
+
 	public ConsumeExtend getConsumeExtend() {
 		return this.consumeExtend;
 	}
@@ -107,6 +130,13 @@ public class AlipayFundWalletTemplateCreateModel extends AlipayObject {
 	}
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
+	}
+
+	public String getSupportMerchantCharge() {
+		return this.supportMerchantCharge;
+	}
+	public void setSupportMerchantCharge(String supportMerchantCharge) {
+		this.supportMerchantCharge = supportMerchantCharge;
 	}
 
 	public String getSupportWalletUseRuleDefine() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserCertifyVerificationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8378395283163712769L;
+	private static final long serialVersionUID = 2263792532252364547L;
 
 	/**
 	 * 算法识别出来的年龄，double类型

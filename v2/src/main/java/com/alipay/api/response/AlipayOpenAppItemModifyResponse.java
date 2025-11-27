@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.item.modify response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-24 16:52:33
+ * @since 1.0, 2025-11-26 19:07:42
  */
 public class AlipayOpenAppItemModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3258937983539448899L;
+	private static final long serialVersionUID = 7136675917495246219L;
 
 	/** 
 	 * 商品业务模式，租赁业务模式包含（短租：0；长租：1；先租后买 ： 2）

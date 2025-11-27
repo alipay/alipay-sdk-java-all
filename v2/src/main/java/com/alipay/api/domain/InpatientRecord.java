@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-10-29 15:52:40
+ * @since 1.0, 2025-11-26 17:22:41
  */
 public class InpatientRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 6241546951461392672L;
+	private static final long serialVersionUID = 3736593523223152752L;
 
 	/**
 	 * 数据唯一标识，用于去重
@@ -34,6 +34,12 @@ public class InpatientRecord extends AlipayObject {
 	private String departmentName;
 
 	/**
+	 * 出院时间
+	 */
+	@ApiField("discharge_date")
+	private String dischargeDate;
+
+	/**
 	 * 就诊医院
 	 */
 	@ApiField("hospital_name")
@@ -46,9 +52,10 @@ public class InpatientRecord extends AlipayObject {
 	private String inDate;
 
 	/**
-	 * 出院时间
+	 * 出院时间 当前字段已废弃(字段类型更改， 最新使用改为使用discharge_date的字段)
 	 */
 	@ApiField("recovery_date")
+	@Deprecated
 	private Date recoveryDate;
 
 	/**
@@ -106,6 +113,13 @@ public class InpatientRecord extends AlipayObject {
 	}
 	public void setDepartmentName(String departmentName) {
 		this.departmentName = departmentName;
+	}
+
+	public String getDischargeDate() {
+		return this.dischargeDate;
+	}
+	public void setDischargeDate(String dischargeDate) {
+		this.dischargeDate = dischargeDate;
 	}
 
 	public String getHospitalName() {

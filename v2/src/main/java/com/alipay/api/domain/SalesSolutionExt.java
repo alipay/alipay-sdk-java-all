@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SalesSolutionExt extends AlipayObject {
 
-	private static final long serialVersionUID = 4661832972263995149L;
+	private static final long serialVersionUID = 3816591215324668379L;
 
 	/**
 	 * 批量签约的数量（该字段只在先卖进后绑定模式下使用）

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.iotgms.token.create request
  * 
  * @author auto create
- * @since 1.0, 2025-01-15 11:56:43
+ * @since 1.0, 2025-11-26 10:48:32
  */
 public class AlipayOpenIotgmsTokenCreateRequest implements AlipayRequest<AlipayOpenIotgmsTokenCreateResponse> {
 

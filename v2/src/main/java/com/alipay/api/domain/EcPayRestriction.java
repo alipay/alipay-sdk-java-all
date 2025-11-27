@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class EcPayRestriction extends AlipayObject {
 
-	private static final long serialVersionUID = 6136746397515135418L;
+	private static final long serialVersionUID = 4281296381734896767L;
 
 	/**
 	 * 账户使用条件类型
