@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: antfortune.marketing.blackcarduser.gradeinfo.query request
  * 
  * @author auto create
- * @since 1.0, 2025-11-26 11:27:42
+ * @since 1.0, 2025-12-01 10:32:41
  */
 public class AntfortuneMarketingBlackcarduserGradeinfoQueryRequest implements AlipayRequest<AntfortuneMarketingBlackcarduserGradeinfoQueryResponse> {
 

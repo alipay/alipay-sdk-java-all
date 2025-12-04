@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceYuntaskRankstatisticsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6598431878598473753L;
+	private static final long serialVersionUID = 2328156461879278882L;
 
 	/** 
 	 * 当前页数

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ConsumerLoanUserAccountCheckData extends AlipayObject {
 
-	private static final long serialVersionUID = 1333522381244572896L;
+	private static final long serialVersionUID = 6329596988582749962L;
 
 	/**
 	 * 消费贷还款用户账户检查返回结果，若没有账单，或用户没有注册等无法查询到对应用户相关信息的情况下可不填写，但若出现手机号/身份证/姓名不匹配则应填写其中不匹配的内容

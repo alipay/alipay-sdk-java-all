@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 内容发布接口
  *
  * @author auto create
- * @since 1.0, 2025-10-22 16:34:46
+ * @since 1.0, 2025-11-28 10:38:54
  */
 public class AlipaySocialBaseContentlibStandardcontentPublishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8815166548758837246L;
+	private static final long serialVersionUID = 2821247211534161929L;
 
 	/**
 	 * 内容分发范围。1 - 所有人可见，2 - 分发范围受限。
@@ -41,10 +41,16 @@ public class AlipaySocialBaseContentlibStandardcontentPublishModel extends Alipa
 	private String sourceAuthor;
 
 	/**
-	 * 内容正文。类型为短图文/视频，正文必须填写，理解为短图文/视频的文本部分，仅支持纯文本
+	 * 内容正文。类型为短图文/视频，正文必须填写，理解为短图文/视频的文本部分，仅支持纯文本。正文长度限制为不超过 1000 个字
 	 */
 	@ApiField("source_content")
 	private String sourceContent;
+
+	/**
+	 * 内容在支付宝平台的首发声明，通过首发审核的内容在视频播放页显示首发标识。取值为：0/1，其中 1 表示声明为首发，仅发布短视频内容时有效
+	 */
+	@ApiField("source_content_debut")
+	private String sourceContentDebut;
 
 	/**
 	 * 来源文章的原始链接地址
@@ -129,6 +135,13 @@ public class AlipaySocialBaseContentlibStandardcontentPublishModel extends Alipa
 	}
 	public void setSourceContent(String sourceContent) {
 		this.sourceContent = sourceContent;
+	}
+
+	public String getSourceContentDebut() {
+		return this.sourceContentDebut;
+	}
+	public void setSourceContentDebut(String sourceContentDebut) {
+		this.sourceContentDebut = sourceContentDebut;
 	}
 
 	public String getSourceLink() {

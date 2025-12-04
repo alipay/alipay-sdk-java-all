@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  *  创意分页返回对象
  *
  * @author auto create
- * @since 1.0, 2025-07-15 15:12:34
+ * @since 1.0, 2025-12-03 10:35:53
  */
 public class CreativePageListRes extends AlipayObject {
 
-	private static final long serialVersionUID = 6532639474129786542L;
+	private static final long serialVersionUID = 4185863652449319939L;
 
 	/**
 	 * 创意id

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenNppdItemmodifySyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4826527235923991835L;
+	private static final long serialVersionUID = 6396218489876656173L;
 
 	/** 
 	 * 请求标识

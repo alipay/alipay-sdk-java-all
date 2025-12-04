@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FinEquityInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6277511898745131937L;
+	private static final long serialVersionUID = 3899464639385658684L;
 
 	/**
 	 * 权益有效期的结束时间，如不传则以约定时间为准

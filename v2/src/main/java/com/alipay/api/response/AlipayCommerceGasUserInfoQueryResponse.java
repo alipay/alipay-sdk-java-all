@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.gas.user.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-01 16:02:29
+ * @since 1.0, 2025-12-03 14:48:32
  */
 public class AlipayCommerceGasUserInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5186935821777362378L;
+	private static final long serialVersionUID = 3816929728714643698L;
 
 	/** 
 	 * 加密后数据，具体数据格式与支付宝小二对接

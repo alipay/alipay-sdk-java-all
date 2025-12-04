@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 医疗事件消息通知
  *
  * @author auto create
- * @since 1.0, 2025-07-16 15:19:06
+ * @since 1.0, 2025-12-02 17:19:30
  */
 public class AlipayCommerceMedicalMedmsgEventmsgNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2679612381181284619L;
+	private static final long serialVersionUID = 4761137977769267745L;
 
 	/**
 	 * 关联业务ID

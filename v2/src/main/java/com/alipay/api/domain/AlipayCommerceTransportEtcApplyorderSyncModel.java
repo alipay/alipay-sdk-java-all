@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC办理申请单信息同步
  *
  * @author auto create
- * @since 1.0, 2025-08-25 16:00:46
+ * @since 1.0, 2025-12-01 16:36:54
  */
 public class AlipayCommerceTransportEtcApplyorderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2398395152853193625L;
+	private static final long serialVersionUID = 2462455967164939132L;
 
 	/**
 	 * 支付宝ETC平台扣款协议号，与order_id参数 二选一。
@@ -54,6 +54,24 @@ public class AlipayCommerceTransportEtcApplyorderSyncModel extends AlipayObject 
 	 */
 	@ApiField("censor_info")
 	private String censorInfo;
+
+	/**
+	 * 充值协议协议code,订单状态为审核通过、激活时回传
+	 */
+	@ApiField("charge_agreement_code")
+	private String chargeAgreementCode;
+
+	/**
+	 * 在储值卡场景下,充值协议id,订单状态为审核通过、激活时回传
+	 */
+	@ApiField("charge_agreement_no")
+	private String chargeAgreementNo;
+
+	/**
+	 * 充值协议签约pid,订单状态为审核通过、激活时回传
+	 */
+	@ApiField("charge_agreement_pid")
+	private String chargeAgreementPid;
 
 	/**
 	 * 企业订单对应支付宝企业id，当order_type为ALIPAY_CORP时必选
@@ -139,6 +157,24 @@ CANCEL：取消；
 	 */
 	@ApiField("plate_no")
 	private String plateNo;
+
+	/**
+	 * 在储值卡场景下,通行费代扣协议场景码,审核通过节点必须回传,仅第一次审核通过接收.
+	 */
+	@ApiField("trip_pay_agreement_code")
+	private String tripPayAgreementCode;
+
+	/**
+	 * 在储值卡场景下,通行费代扣协议id,审核通过时必须回传.
+	 */
+	@ApiField("trip_pay_agreement_no")
+	private String tripPayAgreementNo;
+
+	/**
+	 * 在储值卡场景下,通行费代扣协议签约pid,订单状体为审核通过时必须回传
+	 */
+	@ApiField("trip_pay_agreement_pid")
+	private String tripPayAgreementPid;
 
 	/**
 	 * 蚂蚁统一会员ID，当order_type非ALIPAY_CORP时必选
@@ -267,6 +303,27 @@ CANCEL：取消；
 		this.censorInfo = censorInfo;
 	}
 
+	public String getChargeAgreementCode() {
+		return this.chargeAgreementCode;
+	}
+	public void setChargeAgreementCode(String chargeAgreementCode) {
+		this.chargeAgreementCode = chargeAgreementCode;
+	}
+
+	public String getChargeAgreementNo() {
+		return this.chargeAgreementNo;
+	}
+	public void setChargeAgreementNo(String chargeAgreementNo) {
+		this.chargeAgreementNo = chargeAgreementNo;
+	}
+
+	public String getChargeAgreementPid() {
+		return this.chargeAgreementPid;
+	}
+	public void setChargeAgreementPid(String chargeAgreementPid) {
+		this.chargeAgreementPid = chargeAgreementPid;
+	}
+
 	public String getCorpId() {
 		return this.corpId;
 	}
@@ -356,6 +413,27 @@ CANCEL：取消；
 	}
 	public void setPlateNo(String plateNo) {
 		this.plateNo = plateNo;
+	}
+
+	public String getTripPayAgreementCode() {
+		return this.tripPayAgreementCode;
+	}
+	public void setTripPayAgreementCode(String tripPayAgreementCode) {
+		this.tripPayAgreementCode = tripPayAgreementCode;
+	}
+
+	public String getTripPayAgreementNo() {
+		return this.tripPayAgreementNo;
+	}
+	public void setTripPayAgreementNo(String tripPayAgreementNo) {
+		this.tripPayAgreementNo = tripPayAgreementNo;
+	}
+
+	public String getTripPayAgreementPid() {
+		return this.tripPayAgreementPid;
+	}
+	public void setTripPayAgreementPid(String tripPayAgreementPid) {
+		this.tripPayAgreementPid = tripPayAgreementPid;
 	}
 
 	public String getUserId() {

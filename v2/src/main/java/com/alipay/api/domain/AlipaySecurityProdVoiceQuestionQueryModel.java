@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySecurityProdVoiceQuestionQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8797869266739827279L;
+	private static final long serialVersionUID = 3869517164665886688L;
 
 	/**
 	 * 本轮回答问题,除start阶段外每一轮需要返回用户的回答

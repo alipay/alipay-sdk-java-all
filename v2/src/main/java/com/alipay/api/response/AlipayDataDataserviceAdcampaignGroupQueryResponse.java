@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.adcampaign.group.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-11-24 10:21:49
+ * @since 1.0, 2025-12-03 10:37:42
  */
 public class AlipayDataDataserviceAdcampaignGroupQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7188317456871864449L;
+	private static final long serialVersionUID = 4726569556597826638L;
 
 	/** 
 	 * 年龄
@@ -27,7 +27,7 @@ public class AlipayDataDataserviceAdcampaignGroupQueryResponse extends AlipayRes
 	private List<String> ageList;
 
 	/** 
-	 * 资产类型
+	 * 资产类型（前置转化资产openAPI接口获取）转化类型获取接口：alipay.data.dataservice.adconversion.conversiontype.query
 	 */
 	@ApiField("asset")
 	private String asset;
@@ -127,6 +127,12 @@ public class AlipayDataDataserviceAdcampaignGroupQueryResponse extends AlipayRes
 	private String filterConvertedTimeRange;
 
 	/** 
+	 * 空则表示不限。单位【天】
+	 */
+	@ApiField("filter_taobao_alliance_crowd_time_range")
+	private String filterTaobaoAllianceCrowdTimeRange;
+
+	/** 
 	 * 性别
 	 */
 	@ApiListField("gender_list")
@@ -162,6 +168,15 @@ public class AlipayDataDataserviceAdcampaignGroupQueryResponse extends AlipayRes
 	 */
 	@ApiField("group_inherit")
 	private Long groupInherit;
+
+	/** 
+	 * 单元继承开关。不支持修改。不支持搜索场景 
+1.入参CUSTOMER 时继承单元ID必须填写，
+2.若填写了继承单元ID，单元继承开关只能入参CUSTOMER或空， 没有入参单元继承开关 自动回填为CUSTOMER
+3.入参SYSTEM,OFF时继承单元ID必须为空
+	 */
+	@ApiField("group_inherit_switch")
+	private String groupInheritSwitch;
 
 	/** 
 	 * 单元名称
@@ -415,6 +430,13 @@ public class AlipayDataDataserviceAdcampaignGroupQueryResponse extends AlipayRes
 		return this.filterConvertedTimeRange;
 	}
 
+	public void setFilterTaobaoAllianceCrowdTimeRange(String filterTaobaoAllianceCrowdTimeRange) {
+		this.filterTaobaoAllianceCrowdTimeRange = filterTaobaoAllianceCrowdTimeRange;
+	}
+	public String getFilterTaobaoAllianceCrowdTimeRange( ) {
+		return this.filterTaobaoAllianceCrowdTimeRange;
+	}
+
 	public void setGenderList(List<String> genderList) {
 		this.genderList = genderList;
 	}
@@ -455,6 +477,13 @@ public class AlipayDataDataserviceAdcampaignGroupQueryResponse extends AlipayRes
 	}
 	public Long getGroupInherit( ) {
 		return this.groupInherit;
+	}
+
+	public void setGroupInheritSwitch(String groupInheritSwitch) {
+		this.groupInheritSwitch = groupInheritSwitch;
+	}
+	public String getGroupInheritSwitch( ) {
+		return this.groupInheritSwitch;
 	}
 
 	public void setGroupName(String groupName) {

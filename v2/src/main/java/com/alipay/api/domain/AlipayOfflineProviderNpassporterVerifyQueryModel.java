@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询核身结果
  *
  * @author auto create
- * @since 1.0, 2025-11-13 15:37:42
+ * @since 1.0, 2025-12-01 15:07:41
  */
 public class AlipayOfflineProviderNpassporterVerifyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3753416446516416131L;
+	private static final long serialVersionUID = 5171468582862483511L;
+
+	/**
+	 * mac地址
+	 */
+	@ApiField("mac_address")
+	private String macAddress;
 
 	/**
 	 * 默认10分钟，查询最近10分钟内是否有核身成功记录
@@ -36,6 +42,13 @@ public class AlipayOfflineProviderNpassporterVerifyQueryModel extends AlipayObje
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getMacAddress() {
+		return this.macAddress;
+	}
+	public void setMacAddress(String macAddress) {
+		this.macAddress = macAddress;
+	}
 
 	public Long getMinutesAgo() {
 		return this.minutesAgo;

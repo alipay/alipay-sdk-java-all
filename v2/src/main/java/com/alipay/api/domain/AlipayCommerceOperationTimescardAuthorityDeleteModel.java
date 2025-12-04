@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceOperationTimescardAuthorityDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6893844597297397274L;
+	private static final long serialVersionUID = 4497444776154355324L;
 
 	/**
 	 * 店员支付宝账户

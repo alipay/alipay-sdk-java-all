@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.member.token.invalid request
  * 
  * @author auto create
- * @since 1.0, 2025-11-04 14:22:40
+ * @since 1.0, 2025-12-03 15:04:25
  */
 public class AlipayCommerceMedicalMemberTokenInvalidRequest implements AlipayRequest<AlipayCommerceMedicalMemberTokenInvalidResponse> {
 

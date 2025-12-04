@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenIotContentSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8518342788561744874L;
+	private static final long serialVersionUID = 8674546713384383142L;
 
 	/**
 	 * 同步内容列表，格式取决于同步数据的场景

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DateRangeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6658638377174313618L;
+	private static final long serialVersionUID = 7674227147897725346L;
 
 	/**
 	 * 开始日期  格式：yyyy-MM-dd

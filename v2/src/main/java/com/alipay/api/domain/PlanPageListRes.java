@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 计划分页返回对象
  *
  * @author auto create
- * @since 1.0, 2025-05-12 16:14:53
+ * @since 1.0, 2025-12-03 10:35:15
  */
 public class PlanPageListRes extends AlipayObject {
 
-	private static final long serialVersionUID = 3138874223797353645L;
+	private static final long serialVersionUID = 4714158592414656972L;
 
 	/**
 	 * 计划日预算。单位：元

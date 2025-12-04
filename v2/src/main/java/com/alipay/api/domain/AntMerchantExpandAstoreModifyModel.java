@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntMerchantExpandAstoreModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7747859792882892727L;
+	private static final long serialVersionUID = 4648238338624127366L;
 
 	/**
 	 * 商家在支付宝平台内创建的一种营销业务的载体，可以支持发品、配券以及活动报名的id,它的来源是SAAS服务商来进件的时候,创建团购店铺的时候,生成的。

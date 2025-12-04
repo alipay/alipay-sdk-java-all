@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.agreement.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-29 17:02:19
+ * @since 1.0, 2025-11-27 20:12:41
  */
 public class AlipayUserAgreementQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2113369522973748287L;
+	private static final long serialVersionUID = 8232572865767615741L;
 
 	/** 
 	 * 用户签约成功后的协议号
@@ -124,9 +124,8 @@ public class AlipayUserAgreementQueryResponse extends AlipayResponse {
 
 	/** 
 	 * 协议当前状态
-1. TEMP：暂存，协议未生效过；
-2. NORMAL：正常；
-3. STOP：暂停
+1. TEMP：协议未生效，可以重新签约；
+2. NORMAL：协议生效
 	 */
 	@ApiField("status")
 	private String status;

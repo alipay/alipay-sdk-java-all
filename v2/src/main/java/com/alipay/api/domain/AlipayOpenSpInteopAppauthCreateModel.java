@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务商一体化开通作业添加代调用授权项
  *
  * @author auto create
- * @since 1.0, 2025-11-21 17:07:41
+ * @since 1.0, 2025-12-02 21:16:14
  */
 public class AlipayOpenSpInteopAppauthCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7668352682668349338L;
+	private static final long serialVersionUID = 4589858916928153311L;
 
 	/**
 	 * 业务开通主单号

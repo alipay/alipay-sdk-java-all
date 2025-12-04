@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOfflineProviderCollaborateAuthCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1382675189861575338L;
+	private static final long serialVersionUID = 5196945488411861966L;
 
 	/**
 	 * 将要进行设备绑定的smid，其他人将向<a href="https://opendocs.alipay.com/p/03rq2b?pathHash=f91a1cda">完成smid商户实名认证</a>的法人或联系人申请授权。

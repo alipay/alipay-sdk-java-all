@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 先采后付免密下单
  *
  * @author auto create
- * @since 1.0, 2025-07-07 15:59:02
+ * @since 1.0, 2025-12-03 14:10:44
  */
 public class AlipayTradeCreditPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4521145232726652988L;
+	private static final long serialVersionUID = 3652698177388479956L;
 
 	/**
 	 * 先采协议号

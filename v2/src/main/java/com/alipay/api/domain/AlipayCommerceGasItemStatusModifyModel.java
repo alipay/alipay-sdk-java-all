@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 加油商品状态修改
  *
  * @author auto create
- * @since 1.0, 2025-10-10 11:52:40
+ * @since 1.0, 2025-12-03 14:48:58
  */
 public class AlipayCommerceGasItemStatusModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2713968883367317137L;
+	private static final long serialVersionUID = 4258328365591963556L;
 
 	/**
 	 * 商品id(和external_item_id不能同时为空)

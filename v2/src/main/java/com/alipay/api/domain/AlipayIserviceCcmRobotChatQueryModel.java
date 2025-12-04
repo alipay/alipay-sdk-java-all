@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 机器人会话聊天记录查询
  *
  * @author auto create
- * @since 1.0, 2024-06-06 11:13:53
+ * @since 1.0, 2025-11-27 14:51:37
  */
 public class AlipayIserviceCcmRobotChatQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8371229379674976463L;
+	private static final long serialVersionUID = 1149795373982912489L;
 
 	/**
 	 * 聊天窗Code

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MiniRefundCertificateDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4425375873147726252L;
+	private static final long serialVersionUID = 2222297728599383425L;
 
 	/**
 	 * 本地商品对应的凭证id

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserGamecenterLogSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4746174925858681593L;
+	private static final long serialVersionUID = 4667421228484911396L;
 
 	/**
 	 * 支付宝用户ID

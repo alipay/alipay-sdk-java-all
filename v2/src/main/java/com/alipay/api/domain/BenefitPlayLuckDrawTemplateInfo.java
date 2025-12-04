@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BenefitPlayLuckDrawTemplateInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1831147965165297477L;
+	private static final long serialVersionUID = 5315799555139667611L;
 
 	/**
 	 * 玩法模板编码。非固定值，由业务运营定义

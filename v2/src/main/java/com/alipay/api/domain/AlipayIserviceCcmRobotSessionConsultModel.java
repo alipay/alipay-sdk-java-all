@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayIserviceCcmRobotSessionConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1137592739369287484L;
+	private static final long serialVersionUID = 5295936878228675299L;
 
 	/**
 	 * 会话额外信息保存,json格式 app_id：小程序appid信息

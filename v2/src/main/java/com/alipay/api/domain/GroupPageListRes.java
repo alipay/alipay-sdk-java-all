@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 单元分页返回对象
  *
  * @author auto create
- * @since 1.0, 2025-07-15 19:27:42
+ * @since 1.0, 2025-12-03 10:35:32
  */
 public class GroupPageListRes extends AlipayObject {
 
-	private static final long serialVersionUID = 8825464896518431577L;
+	private static final long serialVersionUID = 8481811691372649382L;
 
 	/**
 	 * 单元出价类型

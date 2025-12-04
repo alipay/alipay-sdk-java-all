@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.member.token.invalid response.
  * 
  * @author auto create
- * @since 1.0, 2025-11-04 14:22:40
+ * @since 1.0, 2025-12-03 15:04:25
  */
 public class AlipayCommerceMedicalMemberTokenInvalidResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3813352514236176166L;
+	private static final long serialVersionUID = 1755847239873582747L;
 
 	/** 
 	 * 来源

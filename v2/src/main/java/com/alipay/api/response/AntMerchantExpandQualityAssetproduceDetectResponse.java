@@ -1,6 +1,7 @@
 package com.alipay.api.response;
 
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.domain.ContentInfo;
 import com.alipay.api.domain.ContentErrorInfo;
 
 import com.alipay.api.AlipayResponse;
@@ -9,11 +10,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.quality.assetproduce.detect response.
  * 
  * @author auto create
- * @since 1.0, 2025-11-21 14:15:24
+ * @since 1.0, 2025-11-27 14:42:41
  */
 public class AntMerchantExpandQualityAssetproduceDetectResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6576895639578933815L;
+	private static final long serialVersionUID = 1527516933466557998L;
+
+	/** 
+	 * 品检内容
+	 */
+	@ApiField("detect_content_info")
+	private ContentInfo detectContentInfo;
 
 	/** 
 	 * 品检错误码信息
@@ -38,6 +45,13 @@ public class AntMerchantExpandQualityAssetproduceDetectResponse extends AlipayRe
 	 */
 	@ApiField("detect_success")
 	private Boolean detectSuccess;
+
+	public void setDetectContentInfo(ContentInfo detectContentInfo) {
+		this.detectContentInfo = detectContentInfo;
+	}
+	public ContentInfo getDetectContentInfo( ) {
+		return this.detectContentInfo;
+	}
 
 	public void setDetectErrorCode(String detectErrorCode) {
 		this.detectErrorCode = detectErrorCode;

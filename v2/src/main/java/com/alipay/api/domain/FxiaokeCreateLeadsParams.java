@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 纷享销客创建商机的参数和返回值
  *
  * @author auto create
- * @since 1.0, 2025-04-18 11:17:10
+ * @since 1.0, 2025-12-01 19:27:01
  */
 public class FxiaokeCreateLeadsParams extends AlipayObject {
 
-	private static final long serialVersionUID = 1266717249744678339L;
+	private static final long serialVersionUID = 8295589759182139761L;
 
 	/**
 	 * 实际主导方
@@ -350,6 +350,12 @@ public class FxiaokeCreateLeadsParams extends AlipayObject {
 	 */
 	@ApiField("sign_probability")
 	private String signProbability;
+
+	/**
+	 * 站点
+	 */
+	@ApiField("site")
+	private String site;
 
 	/**
 	 * 软件订阅时长乘以十，主要为了解决0.5年的问题
@@ -753,6 +759,13 @@ public class FxiaokeCreateLeadsParams extends AlipayObject {
 	}
 	public void setSignProbability(String signProbability) {
 		this.signProbability = signProbability;
+	}
+
+	public String getSite() {
+		return this.site;
+	}
+	public void setSite(String site) {
+		this.site = site;
 	}
 
 	public String getSoftwareSubscriptionYearsExpandTen() {

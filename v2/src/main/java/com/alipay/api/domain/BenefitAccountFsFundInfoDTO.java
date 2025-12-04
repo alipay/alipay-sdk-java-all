@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 权益账户资金明细
  *
  * @author auto create
- * @since 1.0, 2025-08-29 11:05:36
+ * @since 1.0, 2025-11-28 14:44:08
  */
 public class BenefitAccountFsFundInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3111137875239498344L;
+	private static final long serialVersionUID = 1789691989597722711L;
 
 	/**
 	 * 账户查询时为出资金额；提现时为该出资方提现金额；单位：元
@@ -48,6 +48,12 @@ public class BenefitAccountFsFundInfoDTO extends AlipayObject {
 	 */
 	@ApiField("fund_user_id")
 	private String fundUserId;
+
+	/**
+	 * 出资方指定的回收账号信息
+	 */
+	@ApiField("recycle_info")
+	private BenefitAccountRecycleInfoDTO recycleInfo;
 
 	/**
 	 * 还款账号信息
@@ -95,6 +101,13 @@ public class BenefitAccountFsFundInfoDTO extends AlipayObject {
 	}
 	public void setFundUserId(String fundUserId) {
 		this.fundUserId = fundUserId;
+	}
+
+	public BenefitAccountRecycleInfoDTO getRecycleInfo() {
+		return this.recycleInfo;
+	}
+	public void setRecycleInfo(BenefitAccountRecycleInfoDTO recycleInfo) {
+		this.recycleInfo = recycleInfo;
 	}
 
 	public BenefitAccountRepayBankInfoDTO getRepayBankInfo() {

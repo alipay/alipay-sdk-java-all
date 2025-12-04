@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.morse.marketing.rta.send response.
  * 
  * @author auto create
- * @since 1.0, 2025-11-21 16:10:21
+ * @since 1.0, 2025-11-28 08:37:41
  */
 public class AnttechMorseMarketingRtaSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7467827553343922782L;
+	private static final long serialVersionUID = 2626599787952882595L;
 
 	/** 
 	 * 业务唯一标识，标识本次查询的唯一识别号，用于问题定位
@@ -29,6 +29,12 @@ public class AnttechMorseMarketingRtaSendResponse extends AlipayResponse {
 	 */
 	@ApiField("campaign_id")
 	private String campaignId;
+
+	/** 
+	 * 外部交易号
+	 */
+	@ApiField("out_biz_no")
+	private String outBizNo;
 
 	/** 
 	 * 发奖权益结果列表
@@ -73,6 +79,13 @@ public class AnttechMorseMarketingRtaSendResponse extends AlipayResponse {
 	}
 	public String getCampaignId( ) {
 		return this.campaignId;
+	}
+
+	public void setOutBizNo(String outBizNo) {
+		this.outBizNo = outBizNo;
+	}
+	public String getOutBizNo( ) {
+		return this.outBizNo;
 	}
 
 	public void setSendEquityOrderList(List<SendEquityOrderResult> sendEquityOrderList) {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * C2C用户持有藏品升序查询
  *
  * @author auto create
- * @since 1.0, 2025-11-25 14:34:16
+ * @since 1.0, 2025-12-01 21:02:41
  */
 public class AnttechNftCtocAssetascQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2512748888751579938L;
+	private static final long serialVersionUID = 1762456346488244923L;
 
 	/**
 	 * 接入tocken
@@ -36,10 +36,17 @@ OPEN_UID-鲸探openUid
 	private String idType;
 
 	/**
-	 * 上次的最后一条数据游标id	
+	 * 上次的最后一条数据游标id	 当前字段已废弃(namber无法满足现在的业务需求)
 	 */
 	@ApiField("last_index")
+	@Deprecated
 	private Long lastIndex;
+
+	/**
+	 * 上次的最后一条数据游标id的string
+	 */
+	@ApiField("last_index_str")
+	private String lastIndexStr;
 
 	/**
 	 * null
@@ -47,6 +54,13 @@ OPEN_UID-鲸探openUid
 	@ApiListField("sku_id_list")
 	@ApiField("number")
 	private List<Long> skuIdList;
+
+	/**
+	 * null
+	 */
+	@ApiListField("sku_id_list_str")
+	@ApiField("string")
+	private List<String> skuIdListStr;
 
 	public String getAccessToken() {
 		return this.accessToken;
@@ -76,11 +90,25 @@ OPEN_UID-鲸探openUid
 		this.lastIndex = lastIndex;
 	}
 
+	public String getLastIndexStr() {
+		return this.lastIndexStr;
+	}
+	public void setLastIndexStr(String lastIndexStr) {
+		this.lastIndexStr = lastIndexStr;
+	}
+
 	public List<Long> getSkuIdList() {
 		return this.skuIdList;
 	}
 	public void setSkuIdList(List<Long> skuIdList) {
 		this.skuIdList = skuIdList;
+	}
+
+	public List<String> getSkuIdListStr() {
+		return this.skuIdListStr;
+	}
+	public void setSkuIdListStr(List<String> skuIdListStr) {
+		this.skuIdListStr = skuIdListStr;
 	}
 
 }

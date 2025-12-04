@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 权益发放
  *
  * @author auto create
- * @since 1.0, 2024-08-09 16:35:52
+ * @since 1.0, 2025-11-28 09:38:13
  */
 public class AlipayCommerceTransportVehownerbaseBenefitTakeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3327297712798999897L;
+	private static final long serialVersionUID = 2221926983392339826L;
 
 	/**
 	 * 城市编码，用于判断城市过滤规则。例如330310等，非固定值，由业务运营圈定权益参加范围。

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗场景小程序消息发送参数
  *
  * @author auto create
- * @since 1.0, 2025-06-12 11:40:47
+ * @since 1.0, 2025-12-02 17:19:29
  */
 public class MedicalMedmsgArg extends AlipayObject {
 
-	private static final long serialVersionUID = 3241522553621711824L;
+	private static final long serialVersionUID = 1352298519965562919L;
 
 	/**
 	 * 模版字段key

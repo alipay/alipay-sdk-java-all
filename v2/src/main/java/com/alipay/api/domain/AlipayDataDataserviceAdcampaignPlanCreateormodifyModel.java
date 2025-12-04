@@ -7,17 +7,24 @@ import com.alipay.api.internal.mapping.ApiField;
  * 计划新增或修改
  *
  * @author auto create
- * @since 1.0, 2025-07-15 17:18:43
+ * @since 1.0, 2025-12-03 10:35:32
  */
 public class AlipayDataDataserviceAdcampaignPlanCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7419193663149698826L;
+	private static final long serialVersionUID = 6646334951134517784L;
 
 	/**
 	 * 计划日预算，单位元【人民币】
 	 */
 	@ApiField("budget")
 	private String budget;
+
+	/**
+	 * 1.CPM不支持搜索场景
+2.默认CPC
+	 */
+	@ApiField("charge_type")
+	private String chargeType;
 
 	/**
 	 * 计划结束投放日期，格式为yyyy-MM-dd，新增或者编辑时有改动必须大于等于今天；结束日期必须大于等于开始日期
@@ -57,7 +64,7 @@ OFF：开启计划日预算（计划日预算字段必填）
 	private String planUnlimitedBudgetSwitch;
 
 	/**
-	 * 商家标志,唯一值,在广告投放平台商家详情获取
+	 * 灯火广告商家tag标识,在广告投放平台商家详情获取
 	 */
 	@ApiField("principal_tag")
 	private String principalTag;
@@ -86,6 +93,13 @@ OFF：开启计划日预算（计划日预算字段必填）
 	}
 	public void setBudget(String budget) {
 		this.budget = budget;
+	}
+
+	public String getChargeType() {
+		return this.chargeType;
+	}
+	public void setChargeType(String chargeType) {
+		this.chargeType = chargeType;
 	}
 
 	public String getEndDate() {

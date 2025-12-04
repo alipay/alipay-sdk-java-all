@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 权益发奖信息
  *
  * @author auto create
- * @since 1.0, 2024-08-02 10:17:53
+ * @since 1.0, 2025-11-28 09:38:13
  */
 public class BenefitLuckDrawInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5366617757928688346L;
+	private static final long serialVersionUID = 8779789421235124462L;
 
 	/**
 	 * true: 可抽奖

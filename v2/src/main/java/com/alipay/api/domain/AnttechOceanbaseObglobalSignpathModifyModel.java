@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商机同步签约路径开放接口
  *
  * @author auto create
- * @since 1.0, 2025-04-18 11:27:25
+ * @since 1.0, 2025-12-01 19:27:21
  */
 public class AnttechOceanbaseObglobalSignpathModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3433658577797895491L;
+	private static final long serialVersionUID = 5547753336623294764L;
 
 	/**
 	 * 阿里云结算模式
@@ -24,6 +24,12 @@ public class AnttechOceanbaseObglobalSignpathModifyModel extends AlipayObject {
 	 */
 	@ApiField("approval_status")
 	private Long approvalStatus;
+
+	/**
+	 * 是否基于总代协议
+	 */
+	@ApiField("based_on_agency_agreement_flag")
+	private Long basedOnAgencyAgreementFlag;
 
 	/**
 	 * 最终客户签约对方主体ID，客户则为BID，伙伴则为PID
@@ -97,6 +103,13 @@ public class AnttechOceanbaseObglobalSignpathModifyModel extends AlipayObject {
 	}
 	public void setApprovalStatus(Long approvalStatus) {
 		this.approvalStatus = approvalStatus;
+	}
+
+	public Long getBasedOnAgencyAgreementFlag() {
+		return this.basedOnAgencyAgreementFlag;
+	}
+	public void setBasedOnAgencyAgreementFlag(Long basedOnAgencyAgreementFlag) {
+		this.basedOnAgencyAgreementFlag = basedOnAgencyAgreementFlag;
 	}
 
 	public String getFinalCustomerSignOtherPartySubjectId() {

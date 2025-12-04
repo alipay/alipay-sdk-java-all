@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 发奖订单的结果信息，用批量发奖结果返回
  *
  * @author auto create
- * @since 1.0, 2023-12-06 17:35:25
+ * @since 1.0, 2025-11-28 08:36:05
  */
 public class SendEquityOrderResult extends AlipayObject {
 
-	private static final long serialVersionUID = 6164212912418761292L;
+	private static final long serialVersionUID = 1695985574261878785L;
 
 	/**
 	 * 权益唯一id标识，摩斯生成的权益id，用于商户端标识权益信息
@@ -65,6 +65,18 @@ public class SendEquityOrderResult extends AlipayObject {
 	@ApiListField("send_sub_order_result")
 	@ApiField("send_sub_order_result")
 	private List<SendSubOrderResult> sendSubOrderResult;
+
+	/**
+	 * 支付宝券实例id
+	 */
+	@ApiField("voucher_id")
+	private String voucherId;
+
+	/**
+	 * 支付宝券详情页url，唤端打开的h5 url
+	 */
+	@ApiField("voucher_url")
+	private String voucherUrl;
 
 	public String getEquityId() {
 		return this.equityId;
@@ -120,6 +132,20 @@ public class SendEquityOrderResult extends AlipayObject {
 	}
 	public void setSendSubOrderResult(List<SendSubOrderResult> sendSubOrderResult) {
 		this.sendSubOrderResult = sendSubOrderResult;
+	}
+
+	public String getVoucherId() {
+		return this.voucherId;
+	}
+	public void setVoucherId(String voucherId) {
+		this.voucherId = voucherId;
+	}
+
+	public String getVoucherUrl() {
+		return this.voucherUrl;
+	}
+	public void setVoucherUrl(String voucherUrl) {
+		this.voucherUrl = voucherUrl;
 	}
 
 }

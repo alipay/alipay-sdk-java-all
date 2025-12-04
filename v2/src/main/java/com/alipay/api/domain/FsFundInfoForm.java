@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 权益账户出资方信息
  *
  * @author auto create
- * @since 1.0, 2025-08-29 11:05:36
+ * @since 1.0, 2025-11-28 14:44:08
  */
 public class FsFundInfoForm extends AlipayObject {
 
-	private static final long serialVersionUID = 6257176886575198978L;
+	private static final long serialVersionUID = 1582766614246374432L;
 
 	/**
 	 * 退款时为出资方退款金额，单位：元
@@ -42,6 +42,12 @@ public class FsFundInfoForm extends AlipayObject {
 	 */
 	@ApiField("fund_user_id")
 	private String fundUserId;
+
+	/**
+	 * 该出资方指定回收账号的信息,主要用于店铺过户，账号换绑，账号销户
+	 */
+	@ApiField("recycle_info")
+	private RecycleInfoForm recycleInfo;
 
 	/**
 	 * 还款银行信息
@@ -82,6 +88,13 @@ public class FsFundInfoForm extends AlipayObject {
 	}
 	public void setFundUserId(String fundUserId) {
 		this.fundUserId = fundUserId;
+	}
+
+	public RecycleInfoForm getRecycleInfo() {
+		return this.recycleInfo;
+	}
+	public void setRecycleInfo(RecycleInfoForm recycleInfo) {
+		this.recycleInfo = recycleInfo;
 	}
 
 	public RepayBankInfo getRepayBankInfo() {

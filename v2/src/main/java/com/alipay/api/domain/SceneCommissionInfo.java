@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-03-19 14:12:28
+ * @since 1.0, 2025-11-28 16:02:41
  */
 public class SceneCommissionInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1394562234328813819L;
+	private static final long serialVersionUID = 7623669856733932727L;
 
 	/**
 	 * 抽佣结束时间

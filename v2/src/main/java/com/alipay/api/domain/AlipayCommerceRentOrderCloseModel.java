@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁订单关闭
  *
  * @author auto create
- * @since 1.0, 2025-11-24 14:42:42
+ * @since 1.0, 2025-12-03 15:49:19
  */
 public class AlipayCommerceRentOrderCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1898576748889318756L;
+	private static final long serialVersionUID = 5844778526579457164L;
 
 	/**
 	 * 买家支付宝用户id，小程序场景下获取用户ID请参考：用户授权; 其它场景下获取用户ID请参考：网页授权获取用户信息。

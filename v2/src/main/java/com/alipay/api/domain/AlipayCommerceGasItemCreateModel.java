@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 加油商品创建接口
  *
  * @author auto create
- * @since 1.0, 2025-10-10 11:57:39
+ * @since 1.0, 2025-12-03 14:49:15
  */
 public class AlipayCommerceGasItemCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8567413932176979741L;
+	private static final long serialVersionUID = 8622227231739987762L;
 
 	/**
 	 * 详情地址

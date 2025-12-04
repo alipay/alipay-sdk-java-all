@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 单元新增或修改
  *
  * @author auto create
- * @since 1.0, 2025-07-15 19:27:42
+ * @since 1.0, 2025-12-03 10:34:54
  */
 public class AlipayDataDataserviceAdcampaignGroupCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7378828253289373776L;
+	private static final long serialVersionUID = 7548831899817641535L;
 
 	/**
 	 * 年龄定向
@@ -129,6 +129,12 @@ CUSTOMER同pid
 	private String filterConvertedTimeRange;
 
 	/**
+	 * 排除品牌广告人群时间，单位：【天】
+	 */
+	@ApiField("filter_taobao_alliance_crowd_time_range")
+	private String filterTaobaoAllianceCrowdTimeRange;
+
+	/**
 	 * 性别,允许值： GENDER_FEMALE、 GENDER_MALE
 	 */
 	@ApiListField("gender_list")
@@ -160,6 +166,15 @@ CUSTOMER同pid
 	 */
 	@ApiField("group_inherit")
 	private Long groupInherit;
+
+	/**
+	 * 单元继承开关。
+1.入参CUSTOMER 时继承单元ID必须填写，
+2.若填写了继承单元ID，单元继承开关只能入参CUSTOMER或空， 没有入参单元继承开关 自动回填为CUSTOMER
+3.入参SYSTEM,OFF时继承单元ID必须为空
+	 */
+	@ApiField("group_inherit_switch")
+	private String groupInheritSwitch;
 
 	/**
 	 * 单元名称
@@ -368,6 +383,13 @@ alipay.data.dataservice.adcrowd.themecrowd.batchquery
 		this.filterConvertedTimeRange = filterConvertedTimeRange;
 	}
 
+	public String getFilterTaobaoAllianceCrowdTimeRange() {
+		return this.filterTaobaoAllianceCrowdTimeRange;
+	}
+	public void setFilterTaobaoAllianceCrowdTimeRange(String filterTaobaoAllianceCrowdTimeRange) {
+		this.filterTaobaoAllianceCrowdTimeRange = filterTaobaoAllianceCrowdTimeRange;
+	}
+
 	public List<String> getGenderList() {
 		return this.genderList;
 	}
@@ -401,6 +423,13 @@ alipay.data.dataservice.adcrowd.themecrowd.batchquery
 	}
 	public void setGroupInherit(Long groupInherit) {
 		this.groupInherit = groupInherit;
+	}
+
+	public String getGroupInheritSwitch() {
+		return this.groupInheritSwitch;
+	}
+	public void setGroupInheritSwitch(String groupInheritSwitch) {
+		this.groupInheritSwitch = groupInheritSwitch;
 	}
 
 	public String getGroupName() {

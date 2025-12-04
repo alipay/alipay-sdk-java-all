@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceDeductionorderDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5519117537665811637L;
+	private static final long serialVersionUID = 3735997184418916549L;
 
 	/** 
 	 * 卡ID

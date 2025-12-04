@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 权益发奖组件
  *
  * @author auto create
- * @since 1.0, 2024-08-02 10:17:53
+ * @since 1.0, 2025-11-28 09:38:12
  */
 public class BenefitActionComponent extends AlipayObject {
 
-	private static final long serialVersionUID = 7719262884478512121L;
+	private static final long serialVersionUID = 2425642796719958339L;
 
 	/**
 	 * 渠道标识，用于判断渠道过滤规则。非固定值，由业务运营定义
@@ -48,6 +48,12 @@ public class BenefitActionComponent extends AlipayObject {
 	 */
 	@ApiField("out_biz_type")
 	private String outBizType;
+
+	/**
+	 * 指定发放的红包金额大小，单位：分
+	 */
+	@ApiField("send_price")
+	private Long sendPrice;
 
 	/**
 	 * 是否跳过发奖流水中的券信息补充，默认不跳过
@@ -101,6 +107,13 @@ public class BenefitActionComponent extends AlipayObject {
 	}
 	public void setOutBizType(String outBizType) {
 		this.outBizType = outBizType;
+	}
+
+	public Long getSendPrice() {
+		return this.sendPrice;
+	}
+	public void setSendPrice(Long sendPrice) {
+		this.sendPrice = sendPrice;
 	}
 
 	public Boolean getSkipVoucherInfo() {

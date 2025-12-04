@@ -10,11 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 计划列表查询
  *
  * @author auto create
- * @since 1.0, 2025-09-28 20:36:45
+ * @since 1.0, 2025-12-03 10:35:15
  */
 public class AlipayDataDataserviceAdcampaignPlanBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2794772343455771824L;
+	private static final long serialVersionUID = 7633695628235561222L;
+
+	/**
+	 * 计费方式
+	 */
+	@ApiListField("charge_type_list")
+	@ApiField("string")
+	private List<String> chargeTypeList;
 
 	/**
 	 * 当前页（最小为1）
@@ -64,6 +71,13 @@ public class AlipayDataDataserviceAdcampaignPlanBatchqueryModel extends AlipayOb
 	 */
 	@ApiField("search_keywords")
 	private String searchKeywords;
+
+	public List<String> getChargeTypeList() {
+		return this.chargeTypeList;
+	}
+	public void setChargeTypeList(List<String> chargeTypeList) {
+		this.chargeTypeList = chargeTypeList;
+	}
 
 	public Long getCurrent() {
 		return this.current;

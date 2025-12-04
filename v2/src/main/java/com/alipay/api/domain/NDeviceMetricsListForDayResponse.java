@@ -9,11 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * N设备日维度明细信息
  *
  * @author auto create
- * @since 1.0, 2025-11-22 11:07:46
+ * @since 1.0, 2025-11-28 15:49:55
  */
 public class NDeviceMetricsListForDayResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 5124751762596126563L;
+	private static final long serialVersionUID = 8528754579524424472L;
+
+	/**
+	 * 当日小指令是否活跃，示例0-否，1-是，不支持小指令接入
+	 */
+	@ApiField("act_instructions_dvc")
+	private String actInstructionsDvc;
+
+	/**
+	 * 迈进方案，例如:完成任务得设备,收款送设备 ,售卖（全额付）,服务商免投,先采后返,其他,全额付-299.00元等
+	 */
+	@ApiField("advance_plan")
+	private String advancePlan;
 
 	/**
 	 * 支付宝金额，单位元
@@ -22,10 +34,34 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 	private String alipayAmount;
 
 	/**
+	 * 有效支付宝笔数
+	 */
+	@ApiField("alipay_amt_2_restrict_2_order_cnt")
+	private String alipayAmt2Restrict2OrderCnt;
+
+	/**
 	 * 支付宝笔数
 	 */
 	@ApiField("alipay_transaction_count")
 	private Long alipayTransactionCount;
+
+	/**
+	 * 免研小指令是否活跃，true-是，false-否
+	 */
+	@ApiField("be_access_my_tiny_cmd_td")
+	private Boolean beAccessMyTinyCmdTd;
+
+	/**
+	 * 是否维保换机, true-是，false-否
+	 */
+	@ApiField("be_change_device")
+	private Boolean beChangeDevice;
+
+	/**
+	 * 是否高TPV门店,true-是，false-否
+	 */
+	@ApiField("be_high_tpv_shop")
+	private Boolean beHighTpvShop;
 
 	/**
 	 * 点亮标识
@@ -40,16 +76,40 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 	private Boolean beRegister;
 
 	/**
+	 * 是否特殊门店，true-是，false-否
+	 */
+	@ApiField("be_special_shop")
+	private Boolean beSpecialShop;
+
+	/**
 	 * 开机标识
 	 */
 	@ApiField("be_turnon_device")
 	private Boolean beTurnonDevice;
 
 	/**
+	 * 是否统收，true-是，false-否
+	 */
+	@ApiField("be_unified_collect")
+	private Boolean beUnifiedCollect;
+
+	/**
 	 * 门店名称
 	 */
 	@ApiField("binding_location")
 	private String bindingLocation;
+
+	/**
+	 * 换机前SN
+	 */
+	@ApiField("change_device_sn")
+	private String changeDeviceSn;
+
+	/**
+	 * 换机时间，格式为yyyy-MM-dd HH:mm:ss，精确到秒
+	 */
+	@ApiField("change_device_time")
+	private String changeDeviceTime;
 
 	/**
 	 * 市编码
@@ -62,6 +122,12 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 	 */
 	@ApiField("city_name")
 	private String cityName;
+
+	/**
+	 * 最近连续未开机天数
+	 */
+	@ApiField("cont_non_turnon_days_mtd")
+	private String contNonTurnonDaysMtd;
 
 	/**
 	 * 绑定状态
@@ -134,6 +200,12 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 	 */
 	@ApiField("has_nfc_trade_greater_2")
 	private Boolean hasNfcTradeGreater2;
+
+	/**
+	 * 小指令作业时间，格式为yyyy-MM-dd HH:mm:ss.SSS，精确到毫秒
+	 */
+	@ApiField("instructions_work_time")
+	private String instructionsWorkTime;
 
 	/**
 	 * 点亮30天内打卡天数
@@ -220,6 +292,24 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 	private String nfcAmount;
 
 	/**
+	 * 绑定30天内碰动销大于等于2元天数
+	 */
+	@ApiField("nfc_amt_2_days_last_bind_30_d")
+	private String nfcAmt2DaysLastBind30D;
+
+	/**
+	 * 有效碰一下笔数
+	 */
+	@ApiField("nfc_amt_2_restrict_2_order_cnt")
+	private String nfcAmt2Restrict2OrderCnt;
+
+	/**
+	 * 绑定30天内碰交易大于等于2元去重用户数
+	 */
+	@ApiField("nfc_amt_2_user_cnt_last_bind_30_d")
+	private String nfcAmt2UserCntLastBind30D;
+
+	/**
 	 * 设备当日至少有一笔碰一下或扫码交易且交易金额大于等于2元，则为是
 	 */
 	@ApiField("nfc_trade_greater_2")
@@ -236,6 +326,12 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/**
+	 * 门店首次打卡时间
+	 */
+	@ApiField("poi_first_sign_time")
+	private String poiFirstSignTime;
 
 	/**
 	 * 省编码
@@ -286,6 +382,18 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 	private Date shippingTime;
 
 	/**
+	 * 绑定30天内打卡天数
+	 */
+	@ApiField("sign_days_last_bind_30_d")
+	private String signDaysLastBind30D;
+
+	/**
+	 * 绑定7天内打卡天数
+	 */
+	@ApiField("sign_days_last_bind_7_d")
+	private String signDaysLastBind7D;
+
+	/**
 	 * 设备sn
 	 */
 	@ApiField("sn")
@@ -316,6 +424,18 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 	private String trdAmt2NUserCntFromlight30D;
 
 	/**
+	 * 交易大于等于2元用户数
+	 */
+	@ApiField("trd_amt_2_user_cnt")
+	private String trdAmt2UserCnt;
+
+	/**
+	 * 交易大于等于3元用户数
+	 */
+	@ApiField("trd_amt_3_user_cnt")
+	private String trdAmt3UserCnt;
+
+	/**
 	 * 大于等于2元碰一下交易的用户数，单位为人，日维度去重
 	 */
 	@ApiField("trd_greater_2_nfc_device_usercnt")
@@ -333,6 +453,26 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 	@ApiField("update_register_time")
 	private Date updateRegisterTime;
 
+	/**
+	 * 绑定30天内有效开机天数
+	 */
+	@ApiField("valid_open_days_last_bind_30_d")
+	private String validOpenDaysLastBind30D;
+
+	public String getActInstructionsDvc() {
+		return this.actInstructionsDvc;
+	}
+	public void setActInstructionsDvc(String actInstructionsDvc) {
+		this.actInstructionsDvc = actInstructionsDvc;
+	}
+
+	public String getAdvancePlan() {
+		return this.advancePlan;
+	}
+	public void setAdvancePlan(String advancePlan) {
+		this.advancePlan = advancePlan;
+	}
+
 	public String getAlipayAmount() {
 		return this.alipayAmount;
 	}
@@ -340,11 +480,39 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 		this.alipayAmount = alipayAmount;
 	}
 
+	public String getAlipayAmt2Restrict2OrderCnt() {
+		return this.alipayAmt2Restrict2OrderCnt;
+	}
+	public void setAlipayAmt2Restrict2OrderCnt(String alipayAmt2Restrict2OrderCnt) {
+		this.alipayAmt2Restrict2OrderCnt = alipayAmt2Restrict2OrderCnt;
+	}
+
 	public Long getAlipayTransactionCount() {
 		return this.alipayTransactionCount;
 	}
 	public void setAlipayTransactionCount(Long alipayTransactionCount) {
 		this.alipayTransactionCount = alipayTransactionCount;
+	}
+
+	public Boolean getBeAccessMyTinyCmdTd() {
+		return this.beAccessMyTinyCmdTd;
+	}
+	public void setBeAccessMyTinyCmdTd(Boolean beAccessMyTinyCmdTd) {
+		this.beAccessMyTinyCmdTd = beAccessMyTinyCmdTd;
+	}
+
+	public Boolean getBeChangeDevice() {
+		return this.beChangeDevice;
+	}
+	public void setBeChangeDevice(Boolean beChangeDevice) {
+		this.beChangeDevice = beChangeDevice;
+	}
+
+	public Boolean getBeHighTpvShop() {
+		return this.beHighTpvShop;
+	}
+	public void setBeHighTpvShop(Boolean beHighTpvShop) {
+		this.beHighTpvShop = beHighTpvShop;
 	}
 
 	public Boolean getBeLightedUp() {
@@ -361,6 +529,13 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 		this.beRegister = beRegister;
 	}
 
+	public Boolean getBeSpecialShop() {
+		return this.beSpecialShop;
+	}
+	public void setBeSpecialShop(Boolean beSpecialShop) {
+		this.beSpecialShop = beSpecialShop;
+	}
+
 	public Boolean getBeTurnonDevice() {
 		return this.beTurnonDevice;
 	}
@@ -368,11 +543,32 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 		this.beTurnonDevice = beTurnonDevice;
 	}
 
+	public Boolean getBeUnifiedCollect() {
+		return this.beUnifiedCollect;
+	}
+	public void setBeUnifiedCollect(Boolean beUnifiedCollect) {
+		this.beUnifiedCollect = beUnifiedCollect;
+	}
+
 	public String getBindingLocation() {
 		return this.bindingLocation;
 	}
 	public void setBindingLocation(String bindingLocation) {
 		this.bindingLocation = bindingLocation;
+	}
+
+	public String getChangeDeviceSn() {
+		return this.changeDeviceSn;
+	}
+	public void setChangeDeviceSn(String changeDeviceSn) {
+		this.changeDeviceSn = changeDeviceSn;
+	}
+
+	public String getChangeDeviceTime() {
+		return this.changeDeviceTime;
+	}
+	public void setChangeDeviceTime(String changeDeviceTime) {
+		this.changeDeviceTime = changeDeviceTime;
 	}
 
 	public String getCityCode() {
@@ -387,6 +583,13 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 	}
 	public void setCityName(String cityName) {
 		this.cityName = cityName;
+	}
+
+	public String getContNonTurnonDaysMtd() {
+		return this.contNonTurnonDaysMtd;
+	}
+	public void setContNonTurnonDaysMtd(String contNonTurnonDaysMtd) {
+		this.contNonTurnonDaysMtd = contNonTurnonDaysMtd;
 	}
 
 	public String getCurBindStatus() {
@@ -471,6 +674,13 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 	}
 	public void setHasNfcTradeGreater2(Boolean hasNfcTradeGreater2) {
 		this.hasNfcTradeGreater2 = hasNfcTradeGreater2;
+	}
+
+	public String getInstructionsWorkTime() {
+		return this.instructionsWorkTime;
+	}
+	public void setInstructionsWorkTime(String instructionsWorkTime) {
+		this.instructionsWorkTime = instructionsWorkTime;
 	}
 
 	public String getLast30CheckinDays() {
@@ -571,6 +781,27 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 		this.nfcAmount = nfcAmount;
 	}
 
+	public String getNfcAmt2DaysLastBind30D() {
+		return this.nfcAmt2DaysLastBind30D;
+	}
+	public void setNfcAmt2DaysLastBind30D(String nfcAmt2DaysLastBind30D) {
+		this.nfcAmt2DaysLastBind30D = nfcAmt2DaysLastBind30D;
+	}
+
+	public String getNfcAmt2Restrict2OrderCnt() {
+		return this.nfcAmt2Restrict2OrderCnt;
+	}
+	public void setNfcAmt2Restrict2OrderCnt(String nfcAmt2Restrict2OrderCnt) {
+		this.nfcAmt2Restrict2OrderCnt = nfcAmt2Restrict2OrderCnt;
+	}
+
+	public String getNfcAmt2UserCntLastBind30D() {
+		return this.nfcAmt2UserCntLastBind30D;
+	}
+	public void setNfcAmt2UserCntLastBind30D(String nfcAmt2UserCntLastBind30D) {
+		this.nfcAmt2UserCntLastBind30D = nfcAmt2UserCntLastBind30D;
+	}
+
 	public Boolean getNfcTradeGreater2() {
 		return this.nfcTradeGreater2;
 	}
@@ -590,6 +821,13 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public String getPoiFirstSignTime() {
+		return this.poiFirstSignTime;
+	}
+	public void setPoiFirstSignTime(String poiFirstSignTime) {
+		this.poiFirstSignTime = poiFirstSignTime;
 	}
 
 	public String getProvinceCode() {
@@ -648,6 +886,20 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 		this.shippingTime = shippingTime;
 	}
 
+	public String getSignDaysLastBind30D() {
+		return this.signDaysLastBind30D;
+	}
+	public void setSignDaysLastBind30D(String signDaysLastBind30D) {
+		this.signDaysLastBind30D = signDaysLastBind30D;
+	}
+
+	public String getSignDaysLastBind7D() {
+		return this.signDaysLastBind7D;
+	}
+	public void setSignDaysLastBind7D(String signDaysLastBind7D) {
+		this.signDaysLastBind7D = signDaysLastBind7D;
+	}
+
 	public String getSn() {
 		return this.sn;
 	}
@@ -683,6 +935,20 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 		this.trdAmt2NUserCntFromlight30D = trdAmt2NUserCntFromlight30D;
 	}
 
+	public String getTrdAmt2UserCnt() {
+		return this.trdAmt2UserCnt;
+	}
+	public void setTrdAmt2UserCnt(String trdAmt2UserCnt) {
+		this.trdAmt2UserCnt = trdAmt2UserCnt;
+	}
+
+	public String getTrdAmt3UserCnt() {
+		return this.trdAmt3UserCnt;
+	}
+	public void setTrdAmt3UserCnt(String trdAmt3UserCnt) {
+		this.trdAmt3UserCnt = trdAmt3UserCnt;
+	}
+
 	public String getTrdGreater2NfcDeviceUsercnt() {
 		return this.trdGreater2NfcDeviceUsercnt;
 	}
@@ -702,6 +968,13 @@ public class NDeviceMetricsListForDayResponse extends AlipayObject {
 	}
 	public void setUpdateRegisterTime(Date updateRegisterTime) {
 		this.updateRegisterTime = updateRegisterTime;
+	}
+
+	public String getValidOpenDaysLastBind30D() {
+		return this.validOpenDaysLastBind30D;
+	}
+	public void setValidOpenDaysLastBind30D(String validOpenDaysLastBind30D) {
+		this.validOpenDaysLastBind30D = validOpenDaysLastBind30D;
 	}
 
 }

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 供应商品检反馈接口
  *
  * @author auto create
- * @since 1.0, 2025-09-12 17:00:09
+ * @since 1.0, 2025-11-27 14:38:13
  */
 public class AntMerchantExpandQualityAssetproduceDetectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2787316465756223196L;
+	private static final long serialVersionUID = 8615223312112681785L;
 
 	/**
 	 * 供应商传入本次品检的物料数量(单位是个)，系统对数量做正确性校验

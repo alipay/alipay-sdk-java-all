@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 搜索词复杂对象
  *
  * @author auto create
- * @since 1.0, 2025-07-14 20:59:55
+ * @since 1.0, 2025-12-03 10:34:54
  */
 public class SearchWord extends AlipayObject {
 
-	private static final long serialVersionUID = 1182218752824982749L;
+	private static final long serialVersionUID = 8338621844671693296L;
 
 	/**
 	 * 词文本
@@ -26,7 +26,7 @@ public class SearchWord extends AlipayObject {
 	private String matchType;
 
 	/**
-	 * 词出价
+	 * 词出价，单位【元】
 	 */
 	@ApiField("price")
 	private String price;

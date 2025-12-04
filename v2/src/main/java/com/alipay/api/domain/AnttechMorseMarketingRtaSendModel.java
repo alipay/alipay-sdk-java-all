@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 摩卡营销活动发奖接口
  *
  * @author auto create
- * @since 1.0, 2023-12-07 10:15:51
+ * @since 1.0, 2025-11-28 08:36:05
  */
 public class AnttechMorseMarketingRtaSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6351746174623762521L;
+	private static final long serialVersionUID = 3168991839769786957L;
 
 	/**
 	 * 活动id描述具体给用户发奖的活动，预发奖时可以为空

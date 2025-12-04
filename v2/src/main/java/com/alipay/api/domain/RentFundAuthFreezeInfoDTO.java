@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 预授权信息。不传表示当前订单不使用预授权及芝麻免押
  *
  * @author auto create
- * @since 1.0, 2025-11-19 11:21:35
+ * @since 1.0, 2025-11-28 14:16:46
  */
 public class RentFundAuthFreezeInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1851483482858998221L;
+	private static final long serialVersionUID = 8132121839889611424L;
 
 	/**
 	 * 商家外部传入的预授权单号

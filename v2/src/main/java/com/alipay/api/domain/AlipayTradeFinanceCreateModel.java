@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 快收服务下单
  *
  * @author auto create
- * @since 1.0, 2025-09-01 10:32:09
+ * @since 1.0, 2025-12-02 20:55:17
  */
 public class AlipayTradeFinanceCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3238422539531259236L;
+	private static final long serialVersionUID = 5397741313862576741L;
 
 	/**
 	 * 下单金额，单位（元，2位小数点），需要和预下单金额一致

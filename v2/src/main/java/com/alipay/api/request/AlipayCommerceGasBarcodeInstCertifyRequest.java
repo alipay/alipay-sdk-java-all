@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.gas.barcode.inst.certify request
  * 
  * @author auto create
- * @since 1.0, 2024-11-20 11:12:20
+ * @since 1.0, 2025-12-03 14:59:56
  */
 public class AlipayCommerceGasBarcodeInstCertifyRequest implements AlipayRequest<AlipayCommerceGasBarcodeInstCertifyResponse> {
 

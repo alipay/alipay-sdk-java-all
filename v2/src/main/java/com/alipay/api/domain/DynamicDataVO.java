@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class DynamicDataVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1866266479684688413L;
+	private static final long serialVersionUID = 3386113192768234851L;
 
 	/**
 	 * 动态属性列表,列表类型

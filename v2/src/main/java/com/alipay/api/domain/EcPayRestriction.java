@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 账户使用条件
  *
  * @author auto create
- * @since 1.0, 2025-07-30 10:30:43
+ * @since 1.0, 2025-11-28 10:24:41
  */
 public class EcPayRestriction extends AlipayObject {
 
-	private static final long serialVersionUID = 4281296381734896767L;
+	private static final long serialVersionUID = 6512876627866926498L;
 
 	/**
 	 * 账户使用条件类型

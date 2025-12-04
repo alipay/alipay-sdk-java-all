@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportCarbonDataQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1655822523224211626L;
+	private static final long serialVersionUID = 1264993895614363276L;
 
 	/** 
 	 * 返回碳积分记录数量
