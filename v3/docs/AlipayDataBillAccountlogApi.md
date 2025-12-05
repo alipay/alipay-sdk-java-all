@@ -40,8 +40,8 @@ public class Example {
     AlipayDataBillAccountlogApi apiInstance = new AlipayDataBillAccountlogApi(defaultClient);
     String startTime = "2019-01-01 00:00:00"; // String | 账务流水创建时间的起始范围。只能查询一年内的记录。精确查询不需要指定
     String endTime = "2019-01-02 00:00:00"; // String | 账务流水创建时间的结束范围。与起始时间间隔不超过31天。查询结果为起始时间至结束时间的左闭右开区间。精确查询不需要指定
-    String alipayOrderNo = "20190101***"; // String | 支付宝订单号，通过支付宝订单号精确查询相关的流水明细，商户订单号与支付宝订单号互斥
-    String merchantOrderNo = "TX***"; // String | 商户订单号，通过商户订单号精确查询相关的流水明细，商户订单号与支付宝订单号互斥
+    String alipayOrderNo = "20190101***"; // String | 支付宝订单号，通过支付宝订单号精确查询相关的流水明细。支付宝订单号和商户订单号互斥。选择支付宝订单号时，不可选商户订单号。
+    String merchantOrderNo = "TX***"; // String | 商户订单号，通过商户订单号精确查询相关的流水明细。支付宝订单号和商户订单号互斥。选择商户订单号时，不可选支付宝订单号。
     String pageNo = "1"; // String | 分页号，从1开始
     String pageSize = "2000"; // String | 分页大小1000-2000，默认2000
     String transCode = "101101,301101"; // String | 账务的类型代码，特殊场景下使用
@@ -69,8 +69,8 @@ public class Example {
 |------------- | ------------- | ------------- | -------------|
 | **startTime** | **String**| 账务流水创建时间的起始范围。只能查询一年内的记录。精确查询不需要指定 | [optional] |
 | **endTime** | **String**| 账务流水创建时间的结束范围。与起始时间间隔不超过31天。查询结果为起始时间至结束时间的左闭右开区间。精确查询不需要指定 | [optional] |
-| **alipayOrderNo** | **String**| 支付宝订单号，通过支付宝订单号精确查询相关的流水明细，商户订单号与支付宝订单号互斥 | [optional] |
-| **merchantOrderNo** | **String**| 商户订单号，通过商户订单号精确查询相关的流水明细，商户订单号与支付宝订单号互斥 | [optional] |
+| **alipayOrderNo** | **String**| 支付宝订单号，通过支付宝订单号精确查询相关的流水明细。支付宝订单号和商户订单号互斥。选择支付宝订单号时，不可选商户订单号。 | [optional] |
+| **merchantOrderNo** | **String**| 商户订单号，通过商户订单号精确查询相关的流水明细。支付宝订单号和商户订单号互斥。选择商户订单号时，不可选支付宝订单号。 | [optional] |
 | **pageNo** | **String**| 分页号，从1开始 | [optional] |
 | **pageSize** | **String**| 分页大小1000-2000，默认2000 | [optional] |
 | **transCode** | **String**| 账务的类型代码，特殊场景下使用 | [optional] |

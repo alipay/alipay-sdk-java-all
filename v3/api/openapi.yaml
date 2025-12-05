@@ -5,7 +5,7 @@ info:
     url: https://opendocs.alipay.com/open-v3/053sd1
   description: 支付宝开放平台v3协议文档
   title: 支付宝开放平台API
-  version: 2025-08-26
+  version: 2025-12-01
 servers:
 - description: Production server
   url: https://openapi.alipay.com
@@ -2410,6 +2410,15 @@ paths:
           example: FUND_SAFT_SIGN_WITHHOLDING_P
           type: string
         style: form
+      - description: "true表示使用安全链接，即返回的下载链接为https。\t非true值的情况下，统一为false，使用http链接。"
+        explode: true
+        in: query
+        name: secure
+        required: false
+        schema:
+          example: "true"
+          type: string
+        style: form
       responses:
         "200":
           content:
@@ -2450,7 +2459,7 @@ paths:
           example: 2019-01-02 00:00:00
           type: string
         style: form
-      - description: 支付宝订单号，通过支付宝订单号精确查询相关的流水明细，商户订单号与支付宝订单号互斥
+      - description: 支付宝订单号，通过支付宝订单号精确查询相关的流水明细。支付宝订单号和商户订单号互斥。选择支付宝订单号时，不可选商户订单号。
         explode: true
         in: query
         name: alipay_order_no
@@ -2459,7 +2468,7 @@ paths:
           example: 20190101***
           type: string
         style: form
-      - description: 商户订单号，通过商户订单号精确查询相关的流水明细，商户订单号与支付宝订单号互斥
+      - description: 商户订单号，通过商户订单号精确查询相关的流水明细。支付宝订单号和商户订单号互斥。选择商户订单号时，不可选支付宝订单号。
         explode: true
         in: query
         name: merchant_order_no
@@ -3388,16 +3397,17 @@ paths:
           example: trade
           type: string
         style: form
-      - description: "账单时间： \t* 日账单格式为yyyy-MM-dd，最早可下载2016年1月1日开始的日账单。不支持下载当日账单，只能\
-          下载前一日24点前的账单数据（T+1），当日数据一般于次日 9 点前生成，特殊情况可能延迟。 \t* 月账单格式为yyyy-MM，最早可下载2016年\
-          1月开始的月账单。不支持下载当月账单，只能下载上一月账单数据，当月账单一般在次月 3 日生成，特殊情况可能延迟。\t* 当biz_type为settlementMerge时\
-          候，时间为汇总批次结算资金到账的日期，日期格式为yyyy-MM-dd，最早可下载2023年4月17日及以后的账单。"
+      - description: "账单时间：\t<p> * 日账单格式为yyyy-MM-dd，最早可下载近6年的日账单。不支持下载当日账单，只能下载前一日\
+          24点前的账单数据（T+1），当日数据一般于次日 9 点前生成，特殊情况可能延迟。</p>\t<p> * 月账单格式为yyyy-MM，最早可下载\
+          近6年的月账单。不支持下载当月账单，只能下载上一月账单数据，当月账单一般在次月 3 日生成，特殊情况可能延迟。</p>\t<p> * 当biz_type为\
+          settlementMerge时候，时间为汇总批次结算资金到账的日期，日期格式为yyyy-MM-dd，最早可下载<u>2023年4月17日</u>及\
+          以后的账单。</p>\t<p> * 接口调用仅支持下载近6年的账单，更多账单请前往 b.alipay.com 对账中心-账单下载页下载。</p>"
         explode: true
         in: query
         name: bill_date
         required: false
         schema:
-          example: 2016-04-05
+          example: 2025-05-01
           type: string
         style: form
       - description: 二级商户smid，这个参数只在bill_type是trade_zft_merchant时才能使用
@@ -15868,12 +15878,7 @@ paths:
       x-accepts: application/json
   /v3/alipay/open/file/upload:
     post:
-      description: |-
-        支付宝通用文件上传接口，支付宝开发者可以调用此接口上传文件，文件可以提供给其他业务使用，例如：上传素材（视频/图片），素材可以供给到生活号+/小程序等其他开放应用后正式发布。
-        该接口支持使用支付宝SDK和HTTP POST请求，两种方式示例如下：
-        1. 使用支付宝SDK时，可以直接使用FileItem上传，代码片段参考下文
-        2. 使用直接使用http协议时，需要忽略file_content参数，文件放入表单中，其余参数放入URL中，其中将参数（不包括文件和file_content）按<a href="https://opendocs.alipay.com/common/02kf5q#%E8%87%AA%E8%A1%8C%E5%AE%9E%E7%8E%B0%E7%AD%BE%E5%90%8D">自行实现签名</a>文档实现，示例：
-        curl --request POST 'http://openapi.alipay.com/gateway.do?charset=GBK&biz_content=%7B%22biz_code%22%3A%22content_creation%22%2C%22extra_parameters%22%3A%7B%22extern_upload%22%3A%22youku%22%2C%22alipay_user_id%22%3A%22xxxx%22%7D%7D&method=alipay.open.file.upload&format=json&sign=xxx&app_id=2014060600164699&version=1.0&sign_type=RSA2&timestamp=xxx'  --form 'file=@"xx.mp4"'
+      description: '支付宝通用文件上传接口，开发者可调用此接口上传文件，提供给其他业务使用，例如：上传素材（视频/图片），供给到生活号+/小程序等业务使用。 '
       operationId: alipay.open.file.upload
       requestBody:
         content:
@@ -15975,34 +15980,6 @@ paths:
       summary: 协议签署查询api
       tags:
       - alipay.open.instantdelivery.merchantagreement
-      x-accepts: application/json
-  /v3/alipay/open/instantdelivery/merchantagreement/sign:
-    post:
-      description: 即时配送中商家代扣协议签署
-      operationId: alipay.open.instantdelivery.merchantagreement.sign
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/AlipayOpenInstantdeliveryMerchantagreementSignModel'
-        required: false
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/AlipayOpenInstantdeliveryMerchantagreementSignResponseModel'
-          description: common response
-        default:
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/alipay_open_instantdelivery_merchantagreement_sign_default_response'
-          description: 请求失败
-      summary: 即时配送中商家代扣协议签署
-      tags:
-      - alipay.open.instantdelivery.merchantagreement
-      x-content-type: application/json
       x-accepts: application/json
   /v3/alipay/open/instantdelivery/merchantshop/batchquery:
     post:
@@ -18590,34 +18567,6 @@ paths:
       tags:
       - alipay.open.mini.template.usage
       x-accepts: application/json
-  /v3/alipay/open/mini/templatemessage/usertemplate/apply:
-    post:
-      description: 小程序模板消息申请，申请之后可以通过返回的user_template_id来发送模板消息
-      operationId: alipay.open.mini.templatemessage.usertemplate.apply
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/AlipayOpenMiniTemplatemessageUsertemplateApplyModel'
-        required: false
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/AlipayOpenMiniTemplatemessageUsertemplateApplyResponseModel'
-          description: common response
-        default:
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/alipay_open_mini_templatemessage_usertemplate_apply_default_response'
-          description: 请求失败
-      summary: 小程序模板消息申请
-      tags:
-      - alipay.open.mini.templatemessage.usertemplate
-      x-content-type: application/json
-      x-accepts: application/json
   /v3/alipay/open/mini/templatemsg/maketing/batchquery:
     post:
       description: 小程序模板消息营销投放详情分页批量查询
@@ -18644,34 +18593,6 @@ paths:
       summary: 小程序模板消息营销投放详情分页批量查询
       tags:
       - alipay.open.mini.templatemsg.maketing
-      x-content-type: application/json
-      x-accepts: application/json
-  /v3/alipay/open/mini/templatemsg/maketingstatus/modify:
-    post:
-      description: 小程序模板消息营销投放详情状态修改
-      operationId: alipay.open.mini.templatemsg.maketingstatus.modify
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/AlipayOpenMiniTemplatemsgMaketingstatusModifyModel'
-        required: false
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/AlipayOpenMiniTemplatemsgMaketingstatusModifyResponseModel'
-          description: common response
-        default:
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/alipay_open_mini_templatemsg_maketingstatus_modify_default_response'
-          description: 请求失败
-      summary: 小程序模板消息营销投放详情状态修改
-      tags:
-      - alipay.open.mini.templatemsg.maketingstatus
       x-content-type: application/json
       x-accepts: application/json
   /v3/alipay/open/mini/templatemsg/tinypayswitch/confirm:
@@ -18904,10 +18825,10 @@ paths:
               first_special_license_pic:
                 contentType: '*/*'
                 style: form
-              first_screen_shot:
+              second_screen_shot:
                 contentType: '*/*'
                 style: form
-              second_screen_shot:
+              first_screen_shot:
                 contentType: '*/*'
                 style: form
               second_license_pic:
@@ -18916,13 +18837,13 @@ paths:
               app_logo:
                 contentType: '*/*'
                 style: form
-              third_license_pic:
-                contentType: '*/*'
-                style: form
               third_screen_shot:
                 contentType: '*/*'
                 style: form
               fourth_screen_shot:
+                contentType: '*/*'
+                style: form
+              third_license_pic:
                 contentType: '*/*'
                 style: form
               out_door_pic:
@@ -19460,34 +19381,6 @@ paths:
       summary: 查询绑定商户会员号
       tags:
       - alipay.open.public.account
-      x-accepts: application/json
-  /v3/alipay/open/public/account/reset:
-    post:
-      description: 如果商户想要重置已经添加的外部账户，可以通过该接口完成。重置后，原有的外部户将删除，新的外部户添加进去。
-      operationId: alipay.open.public.account.reset
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/AlipayOpenPublicAccountResetModel'
-        required: false
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/AlipayOpenPublicAccountResetResponseModel'
-          description: common response
-        default:
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/alipay_open_public_account_reset_default_response'
-          description: 请求失败
-      summary: 重新设置绑定商家会员号
-      tags:
-      - alipay.open.public.account
-      x-content-type: application/json
       x-accepts: application/json
   /v3/alipay/open/public/advert/batchquery:
     post:
@@ -21658,90 +21551,6 @@ paths:
       - alipay.open.search.boxactivity
       x-content-type: application/json
       x-accepts: application/json
-  /v3/alipay/open/search/boxactivity/batchquery:
-    post:
-      description: 批量查询多个搜索直达banner的活动信息
-      operationId: alipay.open.search.boxactivity.batchquery
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/AlipayOpenSearchBoxactivityBatchqueryModel'
-        required: false
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/AlipayOpenSearchBoxactivityBatchqueryResponseModel'
-          description: common response
-        default:
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/alipay_open_search_boxactivity_batchquery_default_response'
-          description: 请求失败
-      summary: 批量查询搜索直达活动配置
-      tags:
-      - alipay.open.search.boxactivity
-      x-content-type: application/json
-      x-accepts: application/json
-  /v3/alipay/open/search/boxactivity/modify:
-    post:
-      description: 修改搜索直达活动配置
-      operationId: alipay.open.search.boxactivity.modify
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/AlipayOpenSearchBoxactivityModifyModel'
-        required: false
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/AlipayOpenSearchBoxactivityModifyResponseModel'
-          description: common response
-        default:
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/alipay_open_search_boxactivity_modify_default_response'
-          description: 请求失败
-      summary: 修改搜索直达活动配置
-      tags:
-      - alipay.open.search.boxactivity
-      x-content-type: application/json
-      x-accepts: application/json
-  /v3/alipay/open/search/boxactivity/offline:
-    post:
-      description: 需要下架某个banner活动时，可通过此接口来进行下架操作
-      operationId: alipay.open.search.boxactivity.offline
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/AlipayOpenSearchBoxactivityOfflineModel'
-        required: false
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/AlipayOpenSearchBoxactivityOfflineResponseModel'
-          description: common response
-        default:
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/alipay_open_search_boxactivity_offline_default_response'
-          description: 请求失败
-      summary: 下架搜索直达活动
-      tags:
-      - alipay.open.search.boxactivity
-      x-content-type: application/json
-      x-accepts: application/json
   /v3/alipay/open/search/boxactivity/query:
     get:
       description: 查询单个搜索直达banner的活动信息
@@ -22488,111 +22297,6 @@ paths:
       - alipay.open.sp.isv.bill
       x-content-type: application/json
       x-accepts: application/json
-  /v3/alipay/open/sp/isv/operation/sync:
-    post:
-      description: 针对SSB业务中，S1回传S2推广过程中，获得的作业结果数据
-      operationId: alipay.open.sp.isv.operation.sync
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/AlipayOpenSpIsvOperationSyncModel'
-        required: false
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/AlipayOpenSpIsvOperationSyncResponseModel'
-          description: common response
-        default:
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/alipay_open_sp_isv_operation_sync_default_response'
-          description: 请求失败
-      summary: 服务商作业结果数据回传
-      tags:
-      - alipay.open.sp.isv.operation
-      x-content-type: application/json
-      x-accepts: application/json
-  /v3/alipay/open/sp/isv/relation/query:
-    get:
-      description: 用于开发服务商查询已与其达成推广关系的地推服务商信息
-      operationId: alipay.open.sp.isv.relation.query
-      parameters:
-      - description: 服务市场商品Code
-        explode: true
-        in: query
-        name: commodity_id
-        required: false
-        schema:
-          example: SS010301000000001908
-          type: string
-        style: form
-      - description: 每页数量，范围(1-100)。默认：10
-        explode: true
-        in: query
-        name: page_size
-        required: false
-        schema:
-          example: "10"
-          type: string
-        style: form
-      - description: 当前页码，从1开始。默认：1
-        explode: true
-        in: query
-        name: page_num
-        required: false
-        schema:
-          example: "1"
-          type: string
-        style: form
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/AlipayOpenSpIsvRelationQueryResponseModel'
-          description: common response
-        default:
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/alipay_open_sp_isv_relation_query_default_response'
-          description: 请求失败
-      summary: spcenter服务商推广关系查询
-      tags:
-      - alipay.open.sp.isv.relation
-      x-accepts: application/json
-  /v3/alipay/open/sp/isv/sales/sync:
-    post:
-      description: 针对SSB业务中，S2推广之后，推广的产品的销售数据回传
-      operationId: alipay.open.sp.isv.sales.sync
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/AlipayOpenSpIsvSalesSyncModel'
-        required: false
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/AlipayOpenSpIsvSalesSyncResponseModel'
-          description: common response
-        default:
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/alipay_open_sp_isv_sales_sync_default_response'
-          description: 请求失败
-      summary: 商户销售数据回传接口
-      tags:
-      - alipay.open.sp.isv.sales
-      x-content-type: application/json
-      x-accepts: application/json
   /v3/alipay/open/sp/isv/signauth/create:
     post:
       description: 针对签约授权一体化场景，创建签约授权一体化订单绑定签约单（可选）、绑定代运营授权单、应用授权单，跟踪整个签约授权一体化订单的状态
@@ -22942,34 +22646,6 @@ paths:
       summary: 商机作业详情查询
       tags:
       - alipay.open.sp.oppor.detail
-      x-accepts: application/json
-  /v3/alipay/open/sp/oppor/feedback/modify:
-    post:
-      description: 商机拓展完成
-      operationId: alipay.open.sp.oppor.feedback.modify
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/AlipayOpenSpOpporFeedbackModifyModel'
-        required: false
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/AlipayOpenSpOpporFeedbackModifyResponseModel'
-          description: common response
-        default:
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/alipay_open_sp_oppor_feedback_modify_default_response'
-          description: 请求失败
-      summary: 商机拓展完成
-      tags:
-      - alipay.open.sp.oppor.feedback
-      x-content-type: application/json
       x-accepts: application/json
   /v3/alipay/open/sp/oppor/page/query:
     get:
@@ -23332,34 +23008,6 @@ paths:
       - alipay.pcredit.huabei.auth.order
       x-content-type: application/json
       x-accepts: application/json
-  /v3/alipay/pcredit/huabei/auth/refund/apply:
-    put:
-      description: 用于1)芝麻GO会员费扣款逆向退款操作2）周期扣款每期扣款逆向退款操作
-      operationId: alipay.pcredit.huabei.auth.refund.apply
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/AlipayPcreditHuabeiAuthRefundApplyModel'
-        required: false
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/AlipayPcreditHuabeiAuthRefundApplyResponseModel'
-          description: common response
-        default:
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/alipay_pcredit_huabei_auth_refund_apply_default_response'
-          description: 请求失败
-      summary: 花芝结算扣款费用逆向退款申请
-      tags:
-      - alipay.pcredit.huabei.auth.refund
-      x-content-type: application/json
-      x-accepts: application/json
   /v3/alipay/pcredit/huabei/auth/settle/apply:
     put:
       description: 用户已经开通花芝轻会员协议后，商户通过此接口解冻转支付用户冻结金额。传入金额必须小于等于冻结金额
@@ -23386,62 +23034,6 @@ paths:
       summary: 花芝轻会员结算申请
       tags:
       - alipay.pcredit.huabei.auth.settle
-      x-content-type: application/json
-      x-accepts: application/json
-  /v3/alipay/security/data/sss/create/{a}:
-    post:
-      description: 文档回归测试勿动openapi_openid_post多场景
-      operationId: alipay.security.data.sss.create
-      parameters:
-      - description: 有枚举，必须，有openid，有注意事项
-        explode: true
-        in: query
-        name: b
-        required: false
-        schema:
-          example: "12"
-          type: string
-        style: form
-      - description: 有枚举，必须，有openid，有注意事项
-        explode: true
-        in: query
-        name: b_open_id
-        required: false
-        schema:
-          example: 074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5
-          type: string
-        style: form
-      - description: path.数字，无枚举，有注意事项
-        explode: false
-        in: path
-        name: a
-        required: true
-        schema:
-          example: 1
-          type: integer
-        style: simple
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/AlipaySecurityDataSssCreateModel'
-        required: false
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/AlipaySecurityDataSssCreateResponseModel'
-          description: common response
-        default:
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/alipay_security_data_sss_create_default_response'
-          description: 请求失败
-      summary: 文档回归测试勿动openapi_openid_post多场景
-      tags:
-      - alipay.security.data.sss
       x-content-type: application/json
       x-accepts: application/json
   /v3/alipay/security/prod/sss/query/{bbb}:
@@ -26074,6 +25666,39 @@ paths:
           example: 2022Q2
           type: string
         style: form
+      - description: "省份编码。\t蚂蚁店铺请按照<a href=\"https://mdn.alipayobjects.com/huamei_sm7gq8/afts/file/A*blT9RqSR9_gAAAAAAAAAAAAADuKQAQ/2022%E8%9A%82%E8%9A%81%E9%87%91%E6%9C%8D%E5%9C%B0%E5%8C%BA%E7%A0%81.xlsx\"\
+          \ target=\"_blank\">蚂蚁店铺地区码</a> 表格中填写。\t直付通商户请按照<a href=\"https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx\
+          \ \" target=\"_blank\">直付通商户地区码</a> 表格中内容填写。"
+        explode: true
+        in: query
+        name: province_code
+        required: false
+        schema:
+          example: "370000"
+          type: string
+        style: form
+      - description: "城市编码。\t蚂蚁店铺请按照<a href=\"https://mdn.alipayobjects.com/huamei_sm7gq8/afts/file/A*blT9RqSR9_gAAAAAAAAAAAAADuKQAQ/2022%E8%9A%82%E8%9A%81%E9%87%91%E6%9C%8D%E5%9C%B0%E5%8C%BA%E7%A0%81.xlsx\"\
+          \ target=\"_blank\">蚂蚁店铺地区码</a> 表格中填写。\t直付通商户请按照<a href=\"https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx\
+          \ \" target=\"_blank\">直付通商户地区码</a> 表格中内容填写。"
+        explode: true
+        in: query
+        name: city_code
+        required: false
+        schema:
+          example: "371000"
+          type: string
+        style: form
+      - description: "区县编码。\t蚂蚁店铺请按照<a href=\"https://mdn.alipayobjects.com/huamei_sm7gq8/afts/file/A*blT9RqSR9_gAAAAAAAAAAAAADuKQAQ/2022%E8%9A%82%E8%9A%81%E9%87%91%E6%9C%8D%E5%9C%B0%E5%8C%BA%E7%A0%81.xlsx\"\
+          \ target=\"_blank\">蚂蚁店铺地区码</a> 表格中填写。\t直付通商户请按照<a href=\"https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx\
+          \ \" target=\"_blank\">直付通商户地区码</a> 表格中内容填写。"
+        explode: true
+        in: query
+        name: district_code
+        required: false
+        schema:
+          example: "371002"
+          type: string
+        style: form
       responses:
         "200":
           content:
@@ -27806,7 +27431,7 @@ components:
           example: 备注1
           type: string
         type:
-          description: 账务记录的类型，仅供参考
+          description: 账务记录的类型，仅供参考（可能会变化）
           example: 交易
           type: string
       type: object
@@ -29033,7 +28658,8 @@ components:
           type: string
         trade_nos:
           description: 支付宝交易号列表
-          example: "0123456789"
+          example: "[\"2024010122001427050840593857\",\"2023012422001427050396028475\"\
+            ]"
           items:
             type: string
           type: array
@@ -29500,6 +29126,7 @@ components:
         code:
           description: 错误码
           enum:
+          - ACCOUNTING_ENTITY_NOT_EXIST
           - INVALID_PARAMETER
           - SYSTEM_ERROR
           - ENTERPRISE_NOT_EXIST
@@ -29541,6 +29168,7 @@ components:
           - EMPLOYEE_CREATE_ING
           - ENT_LABEL_COUNT_EXCEED_MAX
           - LABEL_NAME_ILLEGAL
+          - EMP_NAME_VERIFY_FAIL
           type: string
         links:
           description: 解决方案链接
@@ -31869,6 +31497,7 @@ components:
           - SYSTEM_ERROR
           - BIZ_FAIL
           - BIZ_UNKNOWN
+          - OPERATION_FREQUENTLY
           type: string
         links:
           description: 解决方案链接
@@ -31979,6 +31608,7 @@ components:
           - BIZ_FAIL
           - BIZ_UNKNOWN
           - SYSTEM_ERROR
+          - OPERATION_FREQUENTLY
           type: string
         links:
           description: 解决方案链接
@@ -32234,6 +31864,7 @@ components:
         code:
           description: 错误码
           enum:
+          - DATA_QUERY_TIMEOUT
           - SYSTEM_ERROR
           - INVALID_PARAMETER
           - SYSTEM_BUSY
@@ -32261,8 +31892,7 @@ components:
           example: key不存在
           type: string
         status:
-          description: "处理状态\t  * INIT - 初始化\t  * PROCESS - 处理中\t  * SUCCESS - 成功\t\
-            \  * FAIL - 失败"
+          description: "处理状态\tINIT - 初始化\tPROCESS - 处理中\tSUCCESS - 成功\tFAIL - 失败"
           example: SUCCESS
           type: string
       type: object
@@ -32278,6 +31908,7 @@ components:
           - USER_AGREEMENT_CHECK_FAIL
           - ISV_BUSINESS_FAILED
           - ILLEGAL_ARGUMENT
+          - SYSTEM_RATE_LIMIT
           type: string
         links:
           description: 解决方案链接
@@ -32398,11 +32029,11 @@ components:
     AlipayDataBillBalancehisQueryResponseModel:
       properties:
         beginning_balance:
-          description: 期初余额
+          description: 期初余额，单位（元）
           example: "10000.00"
           type: string
         ending_balance:
-          description: 期末余额
+          description: 期末余额，单位（元）
           example: "11000.00"
           type: string
       type: object
@@ -32413,6 +32044,7 @@ components:
           enum:
           - SYSTEM_ERROR
           - INVALID_PARAMETER
+          - DATA_QUERY_TIMEOUT
           type: string
         links:
           description: 解决方案链接
@@ -32436,7 +32068,7 @@ components:
           example: "1"
           type: string
         page_size:
-          description: 页面大小，最大2000
+          description: 页面大小，最大2000条
           example: "2000"
           type: string
         total_size:
@@ -32452,6 +32084,8 @@ components:
           - SYSTEM_ERROR
           - INVALID_PARAMETER
           - SYSTEM_BUSY
+          - SYSTEM_RATE_LIMIT
+          - DATA_QUERY_TIMEOUT
           type: string
         links:
           description: 解决方案链接
@@ -32630,6 +32264,7 @@ components:
           - INVALID_PARAMETER
           - SYSTEM_BUSY
           - ISV_BUSINESS_FAILED
+          - SYSTEM_RATE_LIMIT
           type: string
         links:
           description: 解决方案链接
@@ -32669,6 +32304,7 @@ components:
           - SYSTEM_ERROR
           - INVALID_PARAMETER
           - SYSTEM_BUSY
+          - SYSTEM_RATE_LIMIT
           type: string
         links:
           description: 解决方案链接
@@ -32879,6 +32515,7 @@ components:
           - BILL_NOT_EXIST
           - UNKNOWN_ERROR
           - BILL_DATE_BEFORE_REGISTRATION
+          - TYPE_NOT_SUPPORTED
           type: string
         links:
           description: 解决方案链接
@@ -39041,6 +38678,7 @@ components:
           - CALL_TOO_OFFTEN
           - ISV_APP_ID_ILLEGAL
           - SYSTEM_ERROR
+          - OPERATION_FREQUENTLY
           type: string
         links:
           description: 解决方案链接
@@ -39112,8 +38750,9 @@ components:
           example: "PLATE_PAY,ETC_PAY"
           type: string
         agreement_status:
-          description: "该字段已废弃,请使用agreement_scene字段"
-          example: 0：已签约无感代扣 1：未签约
+          deprecated: true
+          description: "该字段已废弃,请使用agreement_scene字段(该字段已废弃,请使用agreement_scene字段)"
+          example: "0"
           type: string
         car_status:
           description: 当前车辆在支付宝侧的信息，是否可以使用无感支付，可选返回项为： NORMAL：正常缴费用户 NON-SENSE-PAY：可无感支付用户
@@ -39139,6 +38778,7 @@ components:
           - CALL_TOO_OFFTEN
           - SERIAL_NO_ENTER_NO_RECORD
           - SERIAL_NO_DOUBLE_ENTER_NO_RECORD
+          - OPERATION_FREQUENTLY
           type: string
         links:
           description: 解决方案链接
@@ -40108,6 +39748,7 @@ components:
           - INVALID_PARAMETER
           - SYSTEM_ERROR
           - RECORD_NOT_FOUND
+          - OPERATION_FREQUENTLY
           type: string
         links:
           description: 解决方案链接
@@ -41273,8 +40914,8 @@ components:
             $ref: '#/components/schemas/PostPayment'
           type: array
         product_code:
-          description: "销售产品码。\t支付宝预授权产品固定为 PRE_AUTH_ONLINE"
-          example: PRE_AUTH_ONLINE
+          description: "销售产品码。\t预授权支付产品固定为 PREAUTH_PAY"
+          example: PREAUTH_PAY
           type: string
         scene_code:
           description: 场景码，用于区分预授权不同业务场景。如：当面预授权通用场景（O2O_AUTH_COMMON_SCENE）、支付宝预授权通用场景（ONLINE_AUTH_COMMON_SCENE）、境外当面预授权通用场景（OVERSEAS_O2O_AUTH_COMMON_SCENE）、境外支付预授权通用场景（OVERSEAS_ONLINE_AUTH_COMMON_SCENE）等
@@ -43363,6 +43004,9 @@ components:
         code:
           description: 错误码
           enum:
+          - EXCEED_LIMIT_MM_MAX_AMOUNT
+          - PERM_PAY_CUSTOMER_DAILY_QUOTA_ORG_BALANCE_LIMIT
+          - PERM_PAY_CUSTOMER_MONTH_QUOTA_ORG_BALANCE_LIMIT
           - PRODUCT_NOT_SIGN
           - NO_PERMISSION_ACCOUNT
           - PAYMENT_TIME_EXPIRE
@@ -43700,6 +43344,11 @@ components:
           - PERM_RECEIVE_CUSTOMER_ALMS_LIMIT
           - PERM_PAY_CUSTOMER_MONTH_QUOTA_ORG_BALANCE_LIMIT
           - OPENAPI_VERSION_TOO_OLD
+          - PERM_PAY_USER_MONTH_QUOTA_ORG_BALANCE_LIMIT
+          - PERM_PAY_USER_DAILY_QUOTA_ORG_BALANCE_LIMIT
+          - PERM_PAY_CUSTOMER_DAILY_QUOTA_ORG_BALANCE_LIMIT
+          - EXCEED_LIMIT_MM_MAX_AMOUNT
+          - EXCEED_LIMIT_INTERNAL_SM_AMOUNT
           type: string
         links:
           description: 解决方案链接
@@ -43776,6 +43425,7 @@ components:
         code:
           description: 错误码
           enum:
+          - CHECK_RECEIVER_CERT_NOT_ALLOW
           - EXPAND_INDIRECT_VERIFY_FAIL
           - INVALID_PARAMETER
           - SYSTEM_ERROR
@@ -43939,6 +43589,10 @@ components:
           - ILLEGAL_STATUS_EXCEPTION
           - PAYER_ACCOUNT_LIMIT
           - PAYER_AND_PAYEE_BOTH_PERSONAL_ACCOUNT_BOOK
+          - TRANSFER_SCENE_NAME_ILLEGAL
+          - TRANSFER_SCENE_REPORT_INFO_ILLEGAL
+          - TRANSFER_SCENE_NAME_BLANK
+          - TRANSFER_SCENE_INFO_ADMIT_FAIL
           type: string
         links:
           description: 解决方案链接
@@ -44000,6 +43654,17 @@ components:
             \tTRANS_ACCOUNT_NO_PWD产品取值范围[0.1,100000000]"
           example: "23.00"
           type: string
+        transfer_scene_name:
+          description: "该笔转账使用的转账场景，商户可前往【<a href=\"https://b.alipay.com/page/bizfund/transferScene/list\"\
+            >支付宝商家平台-资金管理-转账场景</a>】中查看/申明转账场景。<br>\t目前支持以下枚举值：现金营销、企业退款、佣金报酬、业务结算、\
+            二手回收、公益补助、行政补贴和退款、保险理赔"
+          example: 佣金报酬
+          type: string
+        transfer_scene_report_infos:
+          description: 转账场景信息，包含转账场景信息类型和转账场景信息描述。需按该笔转账使用的转账场景准确填写
+          items:
+            $ref: '#/components/schemas/TransferSceneReportInfo'
+          type: array
       type: object
     AlipayFundTransUniTransferResponseModel:
       properties:
@@ -53167,7 +52832,7 @@ components:
         mobile_type:
           description: "移动设备类型，当开通电脑网站支付产品时不需赋值；当开通手机网站支付时，传H5；当开通JSAPI时，传APP；当开通预\
             授权支付产品，且交易场景选择“mobile”(移动设备)时，需要从APP,H5中至少选择一个，可多选，字符串英文逗号分隔。"
-          example: "APP,H5"
+          example: APP
           type: string
         product_code:
           description: isv要代商户签约产品码，产品码是支付宝内部对产品的唯一标识
@@ -53180,7 +52845,8 @@ components:
           example: "0.38"
           type: string
         shop_city_code:
-          description: 门店所在城市
+          description: 门店所在城市。请按照<a href="https://mdn.alipayobjects.com/huamei_sm7gq8/afts/file/A*blT9RqSR9_gAAAAAAAAAAAAADuKQAQ/2022%E8%9A%82%E8%9A%81%E9%87%91%E6%9C%8D%E5%9C%B0%E5%8C%BA%E7%A0%81.xlsx">地区码表格</a>
+            中内容填写。
           example: "370900"
           type: string
         shop_detail_address:
@@ -53188,7 +52854,8 @@ components:
           example: 人民路10号
           type: string
         shop_district_code:
-          description: 门店所在区/县
+          description: 门店所在区/县。请按照<a href="https://mdn.alipayobjects.com/huamei_sm7gq8/afts/file/A*blT9RqSR9_gAAAAAAAAAAAAADuKQAQ/2022%E8%9A%82%E8%9A%81%E9%87%91%E6%9C%8D%E5%9C%B0%E5%8C%BA%E7%A0%81.xlsx">地区码表格</a>
+            中内容填写。
           example: "370902"
           type: string
         shop_name:
@@ -53196,7 +52863,8 @@ components:
           example: xxx门店
           type: string
         shop_province_code:
-          description: 门店所在省份
+          description: 门店所在省份。请按照<a href="https://mdn.alipayobjects.com/huamei_sm7gq8/afts/file/A*blT9RqSR9_gAAAAAAAAAAAAADuKQAQ/2022%E8%9A%82%E8%9A%81%E9%87%91%E6%9C%8D%E5%9C%B0%E5%8C%BA%E7%A0%81.xlsx">地区码表格</a>
+            中内容填写。
           example: "370000"
           type: string
         special_license_type:
@@ -53207,12 +52875,12 @@ components:
           description: "交易场景，当开通产品为电脑网站支付时，传pc；当开通产品为手机网站支付时，传mobile；当开通产品为JSAPI时，\
             传tiny_app；当开通产品为预授权支付时，下面括号中三个至少传一个（tiny_app,mobile,offline_store），可多选\
             ，字符串用英文逗号分隔"
-          example: "tiny_app,mobile"
+          example: tiny_app
           type: string
         web_sites:
           description: 接入网址信息（1 app_name、app_demo；2 web_sites；3 alipay_life_name；4
             wechat_official_account_name。1、2、3、4至少选择一个填写）
-          example: www.web.com
+          example: "[\"www.web.com\"]"
           items:
             type: string
           type: array
@@ -53480,6 +53148,7 @@ components:
           - UNKNOWN_EXCEPTION
           - BIZ_ERROR
           - ISV_IDENTITY_NOT_SATISFY
+          - ADMIT_ORDER_NO_PASS
           type: string
         links:
           description: 解决方案链接
@@ -53956,9 +53625,8 @@ components:
           example: 支付宝账号：2088123451234543或手机号：13811111111或邮箱：123@xxx.com
           type: string
         product_codes:
-          description: "isv要查询商户签约状态的产品码，产品码是支付宝内部对产品的唯一标识。目前支持查询产品及产品码详情参见 https://opendocs.alipay.com/isv/01cv77#%E8%83%BD%E5%8A%9B%E4%BA%A7%E5%93%81%E7%A0%81\
-            \ 。\t"
-          example: I1011000100000000001
+          description: isv要查询商户签约状态的产品码，产品码是支付宝内部对产品的唯一标识。目前支持查询产品及产品码详情参见 <a href="https://opendocs.alipay.com/isv/04eh3g">获取商家产品开通状态</a>。
+          example: "[\"I1011000100000000001\"]"
           items:
             type: string
           type: array
@@ -55156,42 +54824,6 @@ components:
       properties:
         agreement_detail:
           $ref: '#/components/schemas/AgreementDetail'
-      type: object
-    AlipayOpenInstantdeliveryMerchantagreementSignErrorResponseModel:
-      properties:
-        code:
-          description: 错误码
-          enum:
-          - INVALID_PARAMETER
-          - SYSTEM_ERROR
-          type: string
-        links:
-          description: 解决方案链接
-          type: string
-        message:
-          description: 错误描述
-          type: string
-      required:
-      - code
-      - message
-      type: object
-    AlipayOpenInstantdeliveryMerchantagreementSignModel:
-      properties:
-        open_id:
-          description: 蚂蚁统一会员ID
-          example: 074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5
-          type: string
-        user_id:
-          description: 蚂蚁统一会员ID
-          example: "2088000000000000"
-          type: string
-      type: object
-    AlipayOpenInstantdeliveryMerchantagreementSignResponseModel:
-      properties:
-        sign_url:
-          description: "授权二维码的url, 必须用传入的uid进行扫码"
-          example: https://openapi.alipay.com/gateway.do?***
-          type: string
       type: object
     AlipayOpenInstantdeliveryMerchantshopBatchqueryErrorResponseModel:
       properties:
@@ -59252,45 +58884,6 @@ components:
             $ref: '#/components/schemas/TemplateUsageInfo'
           type: array
       type: object
-    AlipayOpenMiniTemplatemessageUsertemplateApplyErrorResponseModel:
-      properties:
-        code:
-          description: 错误码
-          enum:
-          - MESSAGE_LIBRARY_ILLEGAL
-          - MESSAGE_TEMPLATE_KEYWORD_ILLEGAL
-          - KEYWORDS_NUMBER_INVALID
-          - USER_TEMPLATE_OVER_LIMIT
-          type: string
-        links:
-          description: 解决方案链接
-          type: string
-        message:
-          description: 错误描述
-          type: string
-      required:
-      - code
-      - message
-      type: object
-    AlipayOpenMiniTemplatemessageUsertemplateApplyModel:
-      properties:
-        keyword_list:
-          description: "开发者自行组合好的模板关键词列表，关键词之间使用英文的逗号“,”进行分割，关键词顺序可以自由搭配，最多支持10个关键\
-            词组合,这里组织的关键词，在发送模板消息接口中，按照这里的顺序进行占位符替换"
-          example: "1,2,3"
-          type: string
-        template_library_id:
-          description: 模板库id，可登录小程序后台查看获取
-          example: AT0001
-          type: string
-      type: object
-    AlipayOpenMiniTemplatemessageUsertemplateApplyResponseModel:
-      properties:
-        user_template_id:
-          description: 开发者申请的模板id号，使用该模板id号，开发者可以调用alipay.open.app.mini.templatemessage.send接口进行模板消息发送
-          example: MDI4YzIxMDE2M2I5YTQzYjUxNWE4MjA4NmU1MTIyYmM=
-          type: string
-      type: object
     AlipayOpenMiniTemplatemsgMaketingBatchqueryErrorResponseModel:
       properties:
         code:
@@ -59332,42 +58925,6 @@ components:
           description: 投放详情总条数
           example: 100
           type: integer
-      type: object
-    AlipayOpenMiniTemplatemsgMaketingstatusModifyErrorResponseModel:
-      properties:
-        code:
-          description: 错误码
-          enum:
-          - DELIVERY_DETAIL_ID_IS_NULL
-          - DELIVERY_DETAIL_STATUS_NOT_VALID
-          - DELIVERY_APP_AUTH_NOT_VALID
-          - DELETE_STATUS_CANNOT_UPDATE
-          - DELIVERY_STATUS_IS_ONLINE
-          - DELIVERY_STATUS_IS_INIT
-          - SYSTEM_ERROR
-          type: string
-        links:
-          description: 解决方案链接
-          type: string
-        message:
-          description: 错误描述
-          type: string
-      required:
-      - code
-      - message
-      type: object
-    AlipayOpenMiniTemplatemsgMaketingstatusModifyModel:
-      properties:
-        detail_id:
-          description: 营销投放详情id
-          example: MDDadsfeeijdfiedfef32r3jkdeaqee
-          type: string
-        status:
-          description: 投放详情状态值，如：INIT:下线状态，ON_LINE:上线状态，DELETED:删除状态
-          example: DELETED
-          type: string
-      type: object
-    AlipayOpenMiniTemplatemsgMaketingstatusModifyResponseModel:
       type: object
     AlipayOpenMiniTemplatemsgTinypayswitchConfirmErrorResponseModel:
       properties:
@@ -59661,6 +59218,7 @@ components:
         code:
           description: 错误码
           enum:
+          - CAN_NOT_SUBMIT_WITH_PUNISH_ORDER_LIMIT
           - SYSTEM_ERROR
           - APP_NAME_IS_BLANK
           - INVALID_MINI_APP_NAME_LENGTH
@@ -59764,6 +59322,7 @@ components:
           - MINI_APP_VERSION_ITERATION_EXIST
           - MINIAPP_VERSION_NOT_EXSIT
           - MINI_APP_RESTRICTED_AUDIT_CONTROL
+          - CAN_NOT_SUBMIT_WITH_ONLINE_MINI_APP_EXCEED_LIMIT
           type: string
         links:
           description: 解决方案链接
@@ -60698,78 +60257,6 @@ components:
           items:
             $ref: '#/components/schemas/StdPublicBindAccount'
           type: array
-      type: object
-    AlipayOpenPublicAccountResetErrorResponseModel:
-      properties:
-        code:
-          description: 错误码
-          enum:
-          - MENUKEY_NOT_EXIST
-          - OPEN_ID_IS_ILLEGAL
-          - BIND_ACCOUNT_FORMAT_ERROR
-          - APP_INFO_ILLEGAL
-          - AGREEMENT_ID_NULL
-          - FROM_USER_ID_NULL
-          - FORBIT_REMOVE_BIND_ACCOUNT
-          - REMOVE_BIND_ACCOUNT_FAIL
-          - DELETE_THIRD_ACCOUNT_FAIL
-          - FORBIT_REMOVE_OTHER_USER_BIND_AC
-          - SAVE_THIRD_ACCOUNT_FAIL
-          - ADD_BIND_ACCOUNT_FAIL
-          - BIND_ACCOUNT_NO_NULL
-          - DISPLAY_NAME_IS_NULL
-          - DISPLAY_NAME_EXCEED_LENGTH
-          - REAL_NAME_EXCEED_LENGTH
-          - EXCEED_THIRD_ACCOUNT_LIMIT
-          - SYSTEM_ERROR
-          type: string
-        links:
-          description: 解决方案链接
-          type: string
-        message:
-          description: 错误描述
-          type: string
-      required:
-      - code
-      - message
-      type: object
-    AlipayOpenPublicAccountResetModel:
-      properties:
-        agreement_id:
-          description: 需要重置的协议号，商户会员在支付宝生活号账号中的唯一标识。
-          example: "29022222"
-          type: string
-        bind_account_no:
-          description: 绑定帐号，建议在开发者的系统中保持唯一性
-          example: test002
-          type: string
-        display_name:
-          description: "商户期望在生活号首页看到的关于该用户的显示信息，最长10个字符。\t"
-          example: test002
-          type: string
-        from_user_id:
-          description: "要绑定的商户会员对应的支付宝唯一标识，2088开头长度为16位的字符串。\t"
-          example: "2088801234567890"
-          type: string
-        open_id:
-          description: 支付宝用户的唯一标识
-          example: 074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5
-          type: string
-        real_name:
-          description: 要绑定的商户会员的真实姓名，最长10个汉字
-          example: 张三
-          type: string
-        remark:
-          description: 备注信息，开发者可以通过该字段纪录其他的额外信息
-          example: 备注信息
-          type: string
-      type: object
-    AlipayOpenPublicAccountResetResponseModel:
-      properties:
-        agreement_id:
-          description: 重置后的协议号，商户会员在支付宝服务窗账号中的唯一标识
-          example: "29022223"
-          type: string
       type: object
     AlipayOpenPublicAdvertBatchqueryErrorResponseModel:
       properties:
@@ -64193,189 +63680,6 @@ components:
           example: "20211223000000100000"
           type: string
       type: object
-    AlipayOpenSearchBoxactivityBatchqueryErrorResponseModel:
-      properties:
-        code:
-          description: 错误码
-          enum:
-          - INPUT_ARGUMENT_ILLEGAL
-          - INPUT_ARGUMENT_NULL
-          - ISV_NOT_AUTH
-          - NO_PERMISSION
-          - SYSTEM_ERROR
-          type: string
-        links:
-          description: 解决方案链接
-          type: string
-        message:
-          description: 错误描述
-          type: string
-      required:
-      - code
-      - message
-      type: object
-    AlipayOpenSearchBoxactivityBatchqueryModel:
-      properties:
-        box_id:
-          description: 搜索直达id
-          example: "20211130000000100415"
-          type: string
-        merchant_id:
-          description: 商户id，代运营模式下传入。代运营模式，需要服务商已获得商家"运营支付宝小程序"授权。
-          example: 2088xxxxxxxxxxxx
-          type: string
-        page_number:
-          description: "分页查询的当前页号,从1开始"
-          example: 1
-          type: integer
-        page_size:
-          description: 每页查询的数量，默认10，不超过50
-          example: 10
-          type: integer
-      type: object
-    AlipayOpenSearchBoxactivityBatchqueryResponseModel:
-      properties:
-        models:
-          description: 活动明细列表
-          items:
-            $ref: '#/components/schemas/SearchBoxActivity'
-          type: array
-        page_number:
-          description: 当前页码
-          example: "1"
-          type: string
-        page_size:
-          description: 每页记录数
-          example: "10"
-          type: string
-        total_count:
-          description: 总记录数
-          example: 100
-          type: integer
-        total_page_count:
-          description: 总页数
-          example: 5
-          type: integer
-      type: object
-    AlipayOpenSearchBoxactivityModifyErrorResponseModel:
-      properties:
-        code:
-          description: 错误码
-          enum:
-          - INPUT_ARGUMENT_ILLEGAL
-          - OVER_ACT_MAX_LIMIT
-          - INPUT_ARGUMENT_NULL
-          - NO_PERMISSION
-          - STATUS_NOT_ALLOWED_OPERATE
-          - DELIVERY_TIME_OVERLAPPING
-          - SYSTEM_ERROR
-          - ISV_NOT_AUTH
-          type: string
-        links:
-          description: 解决方案链接
-          type: string
-        message:
-          description: 错误描述
-          type: string
-      required:
-      - code
-      - message
-      type: object
-    AlipayOpenSearchBoxactivityModifyModel:
-      properties:
-        action_url:
-          description: 活动链接，必须为关联的小程序的页面链接（链接以 alipays 开头），可参考<a href="https://opendocs.alipay.com/support/01rb18">
-            小程序scheme链接介绍 </a>
-          example: alipays://platformapi/startapp?appId=2021001198637195&pages/kaq_maid/kaq_maid
-          type: string
-        background_word:
-          description: 创建banner活动时，可添加底纹推广词，有机会在首页搜索框内展示，提升banner活动曝光机会
-          example: 搜索底纹推广词
-          type: string
-        box_activity_id:
-          description: 搜索直达活动id
-          example: "20211223000000100000"
-          type: string
-        end_time:
-          description: 活动结束时间，开始时间和结束时间之间不能超过90天
-          example: 2022-09-30 23:59:59
-          type: string
-        material_id:
-          description: 当material_type="IMAGE"时，为图片id；当material_type="VIDEO"时，为视频id。图片id可以通过调用接口alipay.open.file.upload上传图片，获取图片id(bizCode：search_box_banner)。规范详情可查看
-            <a href="https://opendocs.alipay.com/b/03al6f"> 图片规范 </a>。
-          example: 20211206OB020010034807196034
-          type: string
-        material_type:
-          description: IMAGE-图片/VIDEO-视频
-          example: IMAGE
-          type: string
-        merchant_id:
-          description: 商户id，代运营模式下传入。代运营模式，需要服务商已获得商家"运营支付宝小程序"授权。
-          example: 2088xxxxxxxxxxxx
-          type: string
-        oriented_rule:
-          $ref: '#/components/schemas/DeliveryOrientedRuleInfo'
-        start_time:
-          description: 活动开始时间，开始时间和结束时间之间不能超过90天
-          example: 2022-02-10 08:00:00
-          type: string
-        target_appid:
-          description: 跳转应用ID
-          example: "2021001191699651"
-          type: string
-        target_appname:
-          description: 目标小程序名称
-          example: 目标小程序名
-          type: string
-        target_regions:
-          description: 投放目标区域列表
-          items:
-            $ref: '#/components/schemas/DeliveryTargetRegion'
-          type: array
-        title:
-          description: 活动标题
-          example: 活动标题
-          type: string
-        video_info:
-          $ref: '#/components/schemas/SearchBoxActivityVideoInfo'
-      type: object
-    AlipayOpenSearchBoxactivityModifyResponseModel:
-      type: object
-    AlipayOpenSearchBoxactivityOfflineErrorResponseModel:
-      properties:
-        code:
-          description: 错误码
-          enum:
-          - INPUT_ARGUMENT_ILLEGAL
-          - INPUT_ARGUMENT_NULL
-          - NO_PERMISSION
-          - STATUS_NOT_ALLOWED_OPERATE
-          - SYSTEM_ERROR
-          - ISV_NOT_AUTH
-          type: string
-        links:
-          description: 解决方案链接
-          type: string
-        message:
-          description: 错误描述
-          type: string
-      required:
-      - code
-      - message
-      type: object
-    AlipayOpenSearchBoxactivityOfflineModel:
-      properties:
-        box_activity_id:
-          description: 搜索直达活动id
-          example: "20211223000000100000"
-          type: string
-        merchant_id:
-          description: 商户id，代运营模式下传入。代运营模式，需要服务商已获得商家"运营支付宝小程序"授权。
-          example: 2088xxxxxxxxxxxx
-          type: string
-      type: object
-    AlipayOpenSearchBoxactivityOfflineResponseModel:
-      type: object
     AlipayOpenSearchBoxactivityQueryErrorResponseModel:
       properties:
         code:
@@ -65605,185 +64909,6 @@ components:
           example: true
           type: boolean
       type: object
-    AlipayOpenSpIsvOperationSyncErrorResponseModel:
-      properties:
-        code:
-          description: 错误码
-          enum:
-          - PROMOTION_RELATION_NOT_EXIST
-          - ILLEGAL_PARAMS
-          - OPERATION_RESULT_REPEAT
-          - ISV_NOT_IN_WHITELIST
-          - ILLEGAL_ISV_USER
-          - IMPLEMENT_RESULT_ILLEGAL
-          - IMPLEMENT_TIME_ILLEGAL
-          - EXT_INFO_PARSE_FAIL
-          - OPPOR_NOT_EXIST
-          - OPPOR_REPEAT
-          - CUSTOMER_TYPE_ILLEGAL
-          - ORDER_ID_ILLEGAL
-          - ORDER_NOT_EXIT
-          - ORDER_STATUS_ILLEGAL
-          - SHOP_ID_ILLEGAL
-          - DEVICE_NO_ILLEGAL
-          - ACTIVATION_TIME_ILLEGAL
-          - MERCHANT_PID_ILLEGAL
-          - MINI_APP_ID_ILLEGAL
-          type: string
-        links:
-          description: 解决方案链接
-          type: string
-        message:
-          description: 错误描述
-          type: string
-      required:
-      - code
-      - message
-      type: object
-    AlipayOpenSpIsvOperationSyncModel:
-      properties:
-        customer_type:
-          description: 客户类型，PERSONAL表示个人，ALIPAY_RECOMMEND表示支付宝推荐
-          example: PERSONAL
-          type: string
-        ext_info:
-          $ref: '#/components/schemas/OperationResultExtInfo'
-        implement_end_time:
-          description: 实施结束时间
-          example: 2021-10-11 00:00:00
-          type: string
-        implement_object_name:
-          description: 实施对象名称
-          example: 浙江省杭州市西湖区西溪路黄焖鸡米饭
-          type: string
-        implement_place:
-          description: 实施地点
-          example: 浙江省杭州市西湖区蚂蚁A空间
-          type: string
-        implement_result:
-          description: 实施结果，SUCCESS表示实施成功，FAIL表示实施失败
-          example: SUCCESS
-          type: string
-        implement_result_image:
-          description: 实施结果的照片
-          example: https://os.alipayobjects.com/rmsportal/JxAjrvPKriKOpjf.png
-          type: string
-        implement_result_remark:
-          description: 实施结果的备注
-          example: 失败原因：商户取消购买
-          type: string
-        implement_start_time:
-          description: 实施开始时间
-          example: 2021-10-10 00:00:00
-          type: string
-        item_code:
-          description: 服务优选商品编码
-          example: SS010301000000001234
-          type: string
-        item_price:
-          description: 商品价格，这里填写的是整数，单位为分，比如1元，那么输入100
-          example: "100"
-          type: string
-        merchant_pid:
-          description: 商户pid
-          example: "2088301912341234"
-          type: string
-        mini_appid:
-          description: 商品小程序appid，若推广的商品不为小程序，则不传此参数
-          example: "2018082861168647"
-          type: string
-        oppor_id:
-          description: 拓展助手中的商机id
-          example: "2021101809775931"
-          type: string
-        order_id:
-          description: 下单订单号
-          example: "201811190000000000001100"
-          type: string
-        out_biz_no:
-          description: 外部业务号，传isv系统生成的账单号，需要保证唯一
-          example: "2021000000000"
-          type: string
-        promotor_pid:
-          description: 推广服务商(S2)pid
-          example: "2088301912341234"
-          type: string
-        shop_id:
-          description: 店铺id
-          example: "2019081500502000000025130577"
-          type: string
-        sub_promotor_pid:
-          description: 推广服务商(S2)子账号pid
-          example: "2088301912341234"
-          type: string
-      type: object
-    AlipayOpenSpIsvOperationSyncResponseModel:
-      type: object
-    AlipayOpenSpIsvRelationQueryErrorResponseModel:
-      properties:
-        code:
-          description: 错误码
-          enum:
-          - ILLEGAL_PARAMS
-          - NO_PERMIT_FOR_OPERATOR
-          type: string
-        links:
-          description: 解决方案链接
-          type: string
-        message:
-          description: 错误描述
-          type: string
-      required:
-      - code
-      - message
-      type: object
-    AlipayOpenSpIsvRelationQueryResponseModel:
-      properties:
-        current_page:
-          description: 当前页码
-          example: 1
-          type: integer
-        page_size:
-          description: 每页数量
-          example: 10
-          type: integer
-        promotion_relations:
-          description: 推广服务商信息列表
-          items:
-            $ref: '#/components/schemas/PromotionRelationDTO'
-          type: array
-        total_size:
-          description: 总记录数
-          example: 1000
-          type: integer
-      type: object
-    AlipayOpenSpIsvSalesSyncErrorResponseModel:
-      properties:
-        code:
-          description: 错误码
-          enum:
-          - OPERATION_RESULT_RELATED_FAIL
-          type: string
-        links:
-          description: 解决方案链接
-          type: string
-        message:
-          description: 错误描述
-          type: string
-      required:
-      - code
-      - message
-      type: object
-    AlipayOpenSpIsvSalesSyncModel:
-      properties:
-        merchant_sales_detail:
-          description: 商户销售数据回传的参数对象，形式为一个列表，每天回传昨日商户的销售数据。
-          items:
-            $ref: '#/components/schemas/IsvMerchantSalesDetailRequest'
-          type: array
-      type: object
-    AlipayOpenSpIsvSalesSyncResponseModel:
-      type: object
     AlipayOpenSpIsvSignauthCreateErrorResponseModel:
       properties:
         code:
@@ -66303,63 +65428,6 @@ components:
           description: 商机作业状态
           example: EXPAND_FAILED
           type: string
-      type: object
-    AlipayOpenSpOpporFeedbackModifyErrorResponseModel:
-      properties:
-        code:
-          description: 错误码
-          enum:
-          - INVALID_PARAMETER
-          - SYSTEM_ERROR
-          - ISV_NOT_IN_WHITELIST
-          type: string
-        links:
-          description: 解决方案链接
-          type: string
-        message:
-          description: 错误描述
-          type: string
-      required:
-      - code
-      - message
-      type: object
-    AlipayOpenSpOpporFeedbackModifyModel:
-      properties:
-        expand_result:
-          description: 拓展助手商机拓展结果
-          example: EXPANDED/EXPAND_FAILED
-          type: string
-        isv_pid:
-          description: 服务商pid
-          example: "2088501013445414"
-          type: string
-        leads_id:
-          description: 商机id
-          example: "2022032304216502"
-          type: string
-        merchant_pid:
-          description: 拓展助手商机商家pid
-          example: "2088341444815673"
-          type: string
-        oppor_id:
-          description: 商机作业id
-          example: "2022041403518351"
-          type: string
-        sn:
-          description: 拓展设备sn号
-          example: sn
-          type: string
-      type: object
-    AlipayOpenSpOpporFeedbackModifyResponseModel:
-      properties:
-        msg:
-          description: 商机拓展结果反馈结果失败描述
-          example: msg
-          type: string
-        success:
-          description: 商机拓展结果反馈结果是否成功
-          example: true
-          type: boolean
       type: object
     AlipayOpenSpOpporPageQueryErrorResponseModel:
       properties:
@@ -66887,123 +65955,6 @@ components:
           example: "3.00"
           type: string
       type: object
-    AlipayPcreditHuabeiAuthRefundApplyErrorResponseModel:
-      properties:
-        code:
-          description: 错误码
-          enum:
-          - SYSTEM_ERROR
-          - INVALID_PARAMETER
-          - AGREEMENT_NOT_EXIST
-          - REFUND_AMOUNT_CHECK_ERROR
-          - REQUEST_PARAM_ILLEGAL
-          - REQUEST_ACCESS_ILLEGAL
-          - REFUND_PARAM_IS_ERROR
-          - REFUND_AGREEMENT_STATUS_NOT_SUPPORT
-          - AUTH_OPT_ORDER_NOT_EXIST
-          - REFUND_OPT_ORDER_NOT_UNIQUE
-          - REFUND_OPT_ORDER_NOT_EXIST
-          - REFUND_TRADE_NO_NOT_EXIST
-          - REFUND_REQUEST_NO_IDEMPOTENT_FAIL
-          - REFUND_AGREEMENT_AND_USER_NOT_MATCH
-          - REFUND_AMOUNT_IS_ILLEGAL
-          - REFUND_PAY_AMOUNT_IS_EMPTY
-          - REFUND_AMOUNT_IS_ZERO
-          - REFUND_TRADE_NO_AND_AUTH_OPT_NOT_MATCH
-          - REFUND_PARAM_OPT_ORDER_AND_TRADE_NO_ALL_EMPTY
-          - REFUND_AGREEMENT_AND_PARTNER_NOT_MATCH
-          - REFUND_LAST_TIME_SUCCESS
-          - REFUND_LAST_TIME_FAIL
-          - REFUND_LAST_TIME_INIT
-          - REFUND_AGREEMENT_NOT_EXIST
-          - UNITRADEPROD_EXECUTE_ERROR
-          - TRADE_HAS_CLOSE
-          - SELLER_BALANCE_NOT_ENOUGH
-          - REFUND_AMT_NOT_EQUAL_TOTAL
-          - TRADE_NOT_EXIST
-          - TRADE_HAS_FINISHED
-          - REASON_TRADE_REFUND_FEE_ERR
-          - TRADE_NOT_ALLOW_REFUND
-          - REFUND_FEE_ERROR
-          - REASON_TRADE_BEEN_FREEZEN
-          - TRADE_STATUS_ERROR
-          - PARAM_ERROR
-          - REFUND_LAST_TIME_ACCEPT
-          - REFUND_PAY_AMOUNT_IS_ZERO
-          type: string
-        links:
-          description: 解决方案链接
-          type: string
-        message:
-          description: 错误描述
-          type: string
-      required:
-      - code
-      - message
-      type: object
-    AlipayPcreditHuabeiAuthRefundApplyModel:
-      properties:
-        agreement_no:
-          description: 签约花芝的业务协议号，在签约成功、结算成功等通知中回回传给商户。
-          example: "20205105001164318008"
-          type: string
-        alipay_user_id:
-          description: 支付宝用户ID
-          example: "2088302841345600"
-          type: string
-        auth_opt_id:
-          description: "支付宝侧授权操作单据id,在结算扣款成功的通知消息中会回传。在周期扣款场景下，和trade_no必传其中一个值。"
-          example: "2018041721001001230571065758"
-          type: string
-        memo:
-          description: 本次退款说明
-          example: 退款
-          type: string
-        open_id:
-          description: 支付宝用户ID
-          example: 074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5
-          type: string
-        out_request_no:
-          description: 外部请求号
-          example: "99202005050100930053707258"
-          type: string
-        partner_id:
-          description: 商户ID
-          example: "2088302424614288"
-          type: string
-        refund_amount:
-          description: 退款金额，单位为：元（人民币），精确到小数点后两位
-          example: "3.00"
-          type: string
-        refund_type:
-          description: "MEMBER_FEE_REFUND 会员费结算退款\tWITHHOLD_FEE_REFUND 周期扣款金额退款\t默\
-            认为MEMBER_FEE_REFUND"
-          example: MEMBER_FEE_REFUND
-          type: string
-        trade_no:
-          description: "支付宝交易号,在结算扣款成功的通知中会回传。\t在周期扣款场景下，和auth_opt_id必传其中一个值。"
-          example: "2013112011001004330000121536"
-          type: string
-      type: object
-    AlipayPcreditHuabeiAuthRefundApplyResponseModel:
-      properties:
-        auth_opt_id:
-          description: 授权支付单ID
-          example: "2018041721001001230571065758"
-          type: string
-        fail_reason:
-          description: 退款操作错误原因描述
-          example: 退款金额超限
-          type: string
-        out_request_no:
-          description: 外部请求号
-          example: "99202005050100930053707258"
-          type: string
-        retry:
-          description: 是否可重试
-          example: true
-          type: boolean
-      type: object
     AlipayPcreditHuabeiAuthSettleApplyErrorResponseModel:
       properties:
         code:
@@ -67097,44 +66048,6 @@ components:
         out_request_no:
           description: 商户本次操作的请求流水号，用于标示请求流水的唯一性，不能包含除中文、英文、数字以外的字符，需要保证在商户端不重复。
           example: "8077735255938032"
-          type: string
-      type: object
-    AlipaySecurityDataSssCreateErrorResponseModel:
-      properties:
-        code:
-          description: 错误码
-          enum:
-          - SYSTEM_ERROR
-          - MANJIANG_UNIFY_TEST
-          type: string
-        links:
-          description: 解决方案链接
-          type: string
-        message:
-          description: 错误描述
-          type: string
-      required:
-      - code
-      - message
-      type: object
-    AlipaySecurityDataSssCreateModel:
-      properties:
-        area_code:
-          description: "body,可选，无openid，有枚举值，注意事项"
-          example: aaa
-          type: string
-        f:
-          $ref: '#/components/schemas/JinyoutestopenidThree'
-      type: object
-    AlipaySecurityDataSssCreateResponseModel:
-      properties:
-        c:
-          description: 区
-          example: "1"
-          type: string
-        c_open_id:
-          description: 区
-          example: 074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5
           type: string
       type: object
     AlipaySecurityProdSssQueryErrorResponseModel:
@@ -69330,6 +68243,10 @@ components:
           description: 当用户使用芝麻信用先享后付时，会返回该字段，代表整笔交易的原始待履约金额，单位元。
           example: "12.45"
           type: string
+        purchase_entity:
+          description: 支付宝钱包跨境支付交易的购汇主体，ALIPAYHK-境外香港购汇实体，3008境内购汇实体
+          example: "3008"
+          type: string
         receipt_amount:
           description: 实收金额
           example: "88.88"
@@ -69822,6 +68739,10 @@ components:
         pre_auth_pay_amount:
           description: 当用户使用芝麻信用先享后付时，会返回该字段，代表整笔交易的原始待履约金额，单位元。
           example: "12.46"
+          type: string
+        purchase_entity:
+          description: 支付宝钱包跨境支付交易的购汇主体，ALIPAYHK-境外香港购汇实体，3008境内购汇实体
+          example: "3008"
           type: string
         receipt_amount:
           description: 实收金额，单位为元，两位小数。该金额为本笔交易，商户账户能够实际收到的金额
@@ -70825,8 +69746,7 @@ components:
           example: "100.00"
           type: string
         status:
-          description: "协议当前状态\r\t1. TEMP：暂存，协议未生效过；\r\t2. NORMAL：正常；\r\t3. STOP：暂\
-            停"
+          description: "协议当前状态\t1. TEMP：协议未生效，可以重新签约；\t2. NORMAL：协议生效"
           example: NORMAL
           type: string
         third_party_type:
@@ -70929,6 +69849,7 @@ components:
           - USER_AGREEMENT_STATUS_IS_NOT_NORMAL
           - ILLEGAL_PARAMS
           - MERCHANT_STATUS_IS_NOT_NORMAL
+          - ASYNC_UNSIGN_CAN_NOT_REJECT
           type: string
         links:
           description: 解决方案链接
@@ -75533,8 +74454,8 @@ components:
           example: '"2021-06-22 19:47:15"'
           type: string
         instruction_id:
-          description: 2020xxx
-          example: 银行单据号
+          description: 银行单据号
+          example: 2020xxx
           type: string
         memo:
           description: 出借
@@ -78613,6 +77534,9 @@ components:
         peer_pay_amount:
           description: 企业代付金额，单位：元
           type: string
+        peer_payer_card_name:
+          description: 实际出资人名称
+          type: string
         peer_payer_card_no:
           description: 实际出资支付宝账号
           type: string
@@ -79133,6 +78057,9 @@ components:
           type: string
         iot_logic_group_id:
           description: 开放场景（如团餐）的人脸库id
+          type: string
+        out_biz_no:
+          description: 服务商生成的请求唯一流水号/业务幂等号
           type: string
         platform_code:
           description: 外部平台code
@@ -81729,57 +80656,6 @@ components:
           example: EXPANDED
           type: string
       type: object
-    IsvMerchantSalesDetailRequest:
-      properties:
-        coupons_quantity:
-          description: 配券数
-          example: "1"
-          type: string
-        device_detail:
-          description: 设备详情
-          example: 此处为该设备的详细描述
-          type: string
-        merchant_pid:
-          description: 商户pid
-          example: "2088301912341234"
-          type: string
-        mini_appid:
-          description: 小程序appid，若推广的商品不为小程序，则不传此参数
-          example: "2018082861168647"
-          type: string
-        operation_place:
-          description: 作业地
-          example: 浙江省杭州市西湖区蚂蚁A空间
-          type: string
-        out_biz_no:
-          description: 外部业务号，传isv系统生成的账单号，需要保证唯一
-          example: "2021000000000"
-          type: string
-        promotor_pid:
-          description: 推广服务商(S2)pid
-          example: "2088301912341234"
-          type: string
-        sales_amount:
-          description: 销售金额，这里填写的是整数，单位为分，比如1元，那么输入100
-          example: "100"
-          type: string
-        sales_quantity:
-          description: 销售笔数
-          example: "100"
-          type: string
-        sub_promotor_pid:
-          description: 推广服务商(S2)子账号pid
-          example: "2088301912341234"
-          type: string
-        write_off_amount:
-          description: 核销金额，这里填写的是整数，单位为分，比如1元，那么输入100
-          example: "100"
-          type: string
-        write_off_quantity:
-          description: 核销数
-          example: "1"
-          type: string
-      type: object
     IsvSpiDefinition:
       properties:
         biz_code:
@@ -82219,55 +81095,6 @@ components:
         t_3_n:
           description: "1"
           type: string
-      type: object
-    JinyoutestopenidOne:
-      properties:
-        c_1:
-          description: 我晚点
-          example: "4"
-          type: string
-        q:
-          description: "1"
-          example: "1"
-          type: string
-        q_1_open_id:
-          description: "1"
-          example: 074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5
-          type: string
-      type: object
-    JinyoutestopenidThree:
-      properties:
-        a:
-          description: "12"
-          example: a_noopenid无
-          type: string
-        b:
-          description: "有openid,无枚举，有注意事项"
-          example: "21"
-          type: string
-        b_open_id:
-          description: "有openid,无枚举，有注意事项"
-          example: 074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5
-          type: string
-        f:
-          $ref: '#/components/schemas/JinyoutestopenidTwo'
-      type: object
-    JinyoutestopenidTwo:
-      properties:
-        a:
-          description: "无openid,有枚举值，有注意事项"
-          example: hjkhjc
-          type: string
-        b:
-          description: 有openid，无枚举值，无注意事项
-          example: "7878789"
-          type: string
-        b_open_id:
-          description: "有openid，无枚举值，无注意事项,openid有注意事项"
-          example: 074a1CcTG1LelxKe4xQC0zgNdId0nxi95b5lsNpazWYoCo5
-          type: string
-        f:
-          $ref: '#/components/schemas/JinyoutestopenidOne'
       type: object
     JobWorthJobdata:
       properties:
@@ -83868,6 +82695,18 @@ components:
             <a href="https://opendocs.alipay.com/pre-open/07nwcs">接入文档</a>
           example: "{\\\"all\\\":true}"
           type: string
+        invalid_mode:
+          description: 累计类型，默认为0 可选值：0（不可累计）、1（可累计）、2（累计天数）、3（累计到指定日期）
+          example: 0
+          type: integer
+        invalid_mode_value:
+          description: 累计类型值
+          example: "10"
+          type: string
+        issue_amount_value:
+          description: 发放金额（不传则不修改），单位（元）
+          example: "200"
+          type: string
         issue_rule_id:
           description: 发放规则id
           example: '"2024090500152621040000040033"'
@@ -83884,6 +82723,10 @@ components:
           description: 发放规则发放的额度类型
           example: COUPON
           type: string
+        share_mode:
+          description: 是否可转赠（不传则不修改），可选值：0（不可转赠）、1（可转赠），默认为0。该字段决定发放规则发放的资产是否可转赠给同制度下的其他人员
+          example: 0
+          type: integer
       type: object
     ModifyQuotaDetails:
       properties:
@@ -84040,7 +82883,8 @@ components:
     MultiCurrencyMoneyOpenApi:
       properties:
         cent:
-          description: 分
+          description: "表示金额中的分，为该货币的最小单位, 如人民币中的分、美元中的美分, 韩元日元中的元等, 具体换算比例在多币种类MultiCurrencyMoney中\
+            有字段digits"
           type: integer
         currency_value:
           description: 币种类型值
@@ -84450,17 +83294,6 @@ components:
              ]
 
              }
-          type: string
-      type: object
-    OperationResultExtInfo:
-      properties:
-        activation_time:
-          description: 激活时间
-          example: 2021-11-12 00:00:00
-          type: string
-        device_no:
-          description: 设备号
-          example: WW321314
           type: string
       type: object
     Option:
@@ -86043,11 +84876,8 @@ components:
           example: 当面付收单
           type: string
         status:
-          description: "none:未签约，表示还没有签约该产品\r\tvalid:已生效，表示合约已经生效，不需要再签约了\r\trestrictValid:受\
-            限生效，表示合约已经生效，但是资料不全，功能受限\r\taudit:审核中，已经有合约在审核中，请等待审核完成\r\twaitConfirm:待\
-            商户确认协议，合约已经审核通过，需要商户确认后合约才生效\r\tauditReject:审核未通过\r\tinvalid:合约失效，曾经签过\
-            合约，但已经失效了，可以重新发起签约\r\trestrictInvalid:受限失效，受限合约失效了"
-          example: none|valid|restrictValid|audit|waitConfirm|auditReject|invalid|restrictInvalid
+          description: 签约状态
+          example: valid
           type: string
       type: object
     ProjectRuleInfo:
@@ -86269,49 +85099,6 @@ components:
         value:
           description: 留资属性实例值
           example: A27904vbvjlmn
-          type: string
-      type: object
-    PromotionRelationDTO:
-      properties:
-        apply_reason:
-          description: 申请推广时填写的申请理由
-          example: XXX
-          type: string
-        commodity_id:
-          description: 服务商品ID
-          example: SS010101000000003954
-          type: string
-        commodity_name:
-          description: 服务商品名称
-          example: 测试服务
-          type: string
-        create_time:
-          description: 推广关系创建时间
-          example: 2020-10-12 12:10:10
-          type: string
-        promoter_contact_name:
-          description: 推广服务商联系人名称
-          example: 张三
-          type: string
-        promoter_contact_phone:
-          description: 推广服务商联系电话
-          example: 136xxxxxxxx
-          type: string
-        promoter_name:
-          description: 推广服务商的名称
-          example: xx商户
-          type: string
-        promoter_pid:
-          description: 推广服务商的pid
-          example: "2088301324945205"
-          type: string
-        promotion_id:
-          description: 推广任务id
-          example: "2018052401048283"
-          type: string
-        promotion_name:
-          description: 推广任务的名称
-          example: 测试推广任务
           type: string
       type: object
     PromotionTaskRelation:
@@ -87048,6 +85835,14 @@ components:
           description: 企业纳税人识别号，适用于未三证合一的企业
           example: 91310230MA1K051234
           type: string
+        utm_content:
+          description: 具体流量内容区分，如推荐码、推荐人、推荐服务商名称等。由渠道侧自定义
+          example: 杭州测试推广有限公司
+          type: string
+        utm_source:
+          description: 渠道侧流量来源，由渠道侧自定义
+          example: isv
+          type: string
       type: object
     ReplyRecord:
       properties:
@@ -87091,7 +85886,7 @@ components:
           example: 刘*
           type: string
         replier_role:
-          description: "用户：USER \t商家：MERCHANT\t系统：SYSTEM\t审核小二：AUDITOR\t政府单位：GOVERNMENT"
+          description: 回复人角色
           example: USER
           type: string
       type: object
@@ -87707,64 +86502,6 @@ components:
           description: 搜索直达模块类型
           example: BOX_EXCLUSIVE_ACCOUNTS
           type: string
-      type: object
-    SearchBoxActivity:
-      properties:
-        box_activity_id:
-          description: 活动id
-          example: "20211223000000100000"
-          type: string
-        box_id:
-          description: 搜索直达id
-          example: "20211130000000100415"
-          type: string
-        end_time:
-          description: 活动结束时间
-          example: 2022-09-30 23:59:59
-          type: string
-        fail_reason:
-          description: 审核失败原因
-          example: 品牌触发词必须完整包含品牌名称且不得使用泛词，建议调整。
-          type: string
-        material_type:
-          description: IMAGE-图片/VIDEO-视频
-          example: IMAGE
-          type: string
-        material_url:
-          description: 当material_type="IMAGE"时，为图片url；当material_type="VIDEO"时，为视频url
-          example: http://mdn.alipayobjects.com/mrch_spc/afts/img/A*0XA2Qo_omj4AAAAAAAAAAAAADsF1AQ/original
-          type: string
-        run_status:
-          description: 运行状态，INITIAL-初始，ONLINE-已上架，EXPIRE-已失效，OFFLINE-已下架
-          example: ONLINE
-          type: string
-        start_time:
-          description: 活动开始时间
-          example: 2022-02-10 08:00:00
-          type: string
-        status:
-          description: 配置状态，INITIAL-初始/AUDIT-审核中/CANCEL-已取消/ONLINE-已上架/REJECT-驳回/OFFLINE-已下架/EXPIRE-已失效
-          example: ONLINE
-          type: string
-        target_appid:
-          description: 跳转应用ID
-          example: "2021001191699651"
-          type: string
-        target_appname:
-          description: 目标小程序名称
-          example: 目标小程序名称
-          type: string
-        target_regions:
-          description: 投放目标区域
-          items:
-            $ref: '#/components/schemas/DeliveryTargetRegion'
-          type: array
-        title:
-          description: 活动标题
-          example: 活动标题
-          type: string
-        video_info:
-          $ref: '#/components/schemas/SearchBoxActivityVideoInfo'
       type: object
     SearchBoxActivityVideoInfo:
       properties:
@@ -88418,7 +87155,7 @@ components:
           description: "卡类型\r\t借记卡-DC\r\t信用卡-CC"
           type: string
         bank_code:
-          description: 联行号
+          description: 联行号，详细需调用<a href="https://opendocs.alipay.com/apis/0853v1">‘联行号关联分支行查询’</a>API查看查询结果.
           type: string
         usage_type:
           description: "账号使用类型\r\t对公-01\r\t对私-02"
@@ -88827,8 +87564,8 @@ components:
     SignAddressInfo:
       properties:
         city_code:
-          description: 城市编码。请按照<a href="https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx">表格</a>
-            中内容填写。 （参考资料： <a href="http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/">参考资料</a>）
+          description: 城市编码。请按照<a href="https://mdn.alipayobjects.com/huamei_sm7gq8/afts/file/A*blT9RqSR9_gAAAAAAAAAAAAADuKQAQ/2022%E8%9A%82%E8%9A%81%E9%87%91%E6%9C%8D%E5%9C%B0%E5%8C%BA%E7%A0%81.xlsx">地区码表格</a>
+            中内容填写。 （参考资料： <a href="https://www.mca.gov.cn/n156/n186/index.html">参考资料</a>）
           type: string
         country_code:
           description: 国家编码，中国默认：156
@@ -88837,8 +87574,8 @@ components:
           description: 详细地址
           type: string
         district_code:
-          description: 区县编码。请按照<a href="https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx">表格</a>
-            中内容填写。 （参考资料： <a href="http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/">参考资料</a>）
+          description: 区县编码。请按照<a href="https://mdn.alipayobjects.com/huamei_sm7gq8/afts/file/A*blT9RqSR9_gAAAAAAAAAAAAADuKQAQ/2022%E8%9A%82%E8%9A%81%E9%87%91%E6%9C%8D%E5%9C%B0%E5%8C%BA%E7%A0%81.xlsx">地区码表格</a>
+            中内容填写。 （参考资料： <a href="https://www.mca.gov.cn/n156/n186/index.html">参考资料</a>）
           type: string
         latitude:
           description: "纬度，浮点型,小数点后最多保留6位 如需要录入经纬度，请以高德坐标系为准，录入时请确保经纬度参数准确。高德经纬度查询\
@@ -88849,8 +87586,8 @@ components:
             查询：<a href=\"http://lbs.amap.com/console/show/picker\">查询地址</a>"
           type: string
         province_code:
-          description: 省份编码。请按照<a href="https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx">表格</a>
-            中内容填写。 （参考资料： <a href="http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/">参考资料</a>）
+          description: 省份编码。请按照<a href="https://mdn.alipayobjects.com/huamei_sm7gq8/afts/file/A*blT9RqSR9_gAAAAAAAAAAAAADuKQAQ/2022%E8%9A%82%E8%9A%81%E9%87%91%E6%9C%8D%E5%9C%B0%E5%8C%BA%E7%A0%81.xlsx">地区码表格</a>
+            中内容填写。 （参考资料： <a href="https://www.mca.gov.cn/n156/n186/index.html">参考资料</a>）
           type: string
       type: object
     SignData:
@@ -90529,13 +89266,13 @@ components:
           description: 商户订单号，创建支付宝交易时传入的信息。对账使用，不脱敏
           type: string
         net_mdiscount:
-          description: 商家优惠金额
+          description: 商家优惠金额，人民币元
           type: string
         other_account:
           description: 对方账户
           type: string
         refund_amount:
-          description: 订单退款金额
+          description: 订单退款金额，人民币元
           type: string
         service_fee:
           description: 服务费金额，人民币元
@@ -90547,7 +89284,7 @@ components:
           description: 门店编号
           type: string
         total_amount:
-          description: 订单金额
+          description: 订单金额，人民币元
           type: string
         trade_status:
           description: "订单状态(待付款,成功,关闭,待发货,待确认收货,已预付,进行中)"
@@ -90662,7 +89399,7 @@ components:
           example: '*三（招商银行2456）'
           type: string
         amount:
-          description: 金额
+          description: 金额，人民币元
           example: "100.00"
           type: string
         fund_desc:
@@ -90682,7 +89419,7 @@ components:
           example: 20190101***
           type: string
         service_fee:
-          description: 服务费金额
+          description: 服务费金额，人民币元
           example: "1.00"
           type: string
         status:
@@ -90700,6 +89437,21 @@ components:
         type_desc:
           description: 查询类型描述：充值、转账、提现
           example: 充值
+          type: string
+      type: object
+    TransferSceneReportInfo:
+      properties:
+        info_content:
+          description: "转账场景信息描述，即商户所属转账场景下的信息内容。商户可按实际业务场景自定义传参，需严格按照<a href=\"https://opendocs.alipay.com/open/0iaxid\"\
+            >转账场景信息字段说明</a>传参。<br>\t例如：transfer_scene_name为“佣金报酬”且info_type为“佣金报酬说\
+            明”时，该值可传入：8月家政服务报酬"
+          example: 8月家政服务报酬
+          type: string
+        info_type:
+          description: "转账场景信息类型，即商户所属转账场景下的信息类型。此字段内容为固定值，需严格按照<a href=\"https://opendocs.alipay.com/open/0iaxid\"\
+            >转账场景信息字段说明</a>传参。<br>\t例如：transfer_scene_name为“佣金报酬”时，该值必须填写取值：佣金报酬说明\
+            <br>\t注：信息类型不可重复填写，请严格按照示例传入"
+          example: 佣金报酬说明
           type: string
       type: object
     TreeInfo:
@@ -92093,6 +90845,9 @@ components:
         quantity:
           description: 发行券的数量。
           type: integer
+        quantity_day_limit_per_user:
+          description: 每人每日可领取数量限制，填0或者不填表示不限制。
+          type: integer
         quantity_limit_per_user:
           description: 每人领取限制。 默认按照支付宝账号进行领取限制; 不填写或填入0表示没有领取限制.
           type: integer
@@ -92100,6 +90855,12 @@ components:
           description: "周期限领配置,限制每人在固定周期内领取张数(voucher_quantity_limit_per_user),默认\
             LIFE_CYCLE"
           type: string
+        quantity_month_limit_per_user:
+          description: 每人每月可领取数量限制，填0或者不填表示不限制
+          type: integer
+        quantity_week_limit_per_user:
+          description: 每人每周可领取数量限制，填0或者不填表示不限制
+          type: integer
         real_name_limit:
           description: "限制支付宝实名用户才能领取支付券,默认为false表示不限制 枚举值 true\\false"
           type: boolean
@@ -96732,10 +95493,6 @@ components:
       anyOf:
       - $ref: '#/components/schemas/CommonErrorType'
       - $ref: '#/components/schemas/AlipayOpenInstantdeliveryMerchantagreementQueryErrorResponseModel'
-    alipay_open_instantdelivery_merchantagreement_sign_default_response:
-      anyOf:
-      - $ref: '#/components/schemas/CommonErrorType'
-      - $ref: '#/components/schemas/AlipayOpenInstantdeliveryMerchantagreementSignErrorResponseModel'
     alipay_open_instantdelivery_merchantshop_batchquery_default_response:
       anyOf:
       - $ref: '#/components/schemas/CommonErrorType'
@@ -97048,18 +95805,10 @@ components:
       anyOf:
       - $ref: '#/components/schemas/CommonErrorType'
       - $ref: '#/components/schemas/AlipayOpenMiniTemplateUsageQueryErrorResponseModel'
-    alipay_open_mini_templatemessage_usertemplate_apply_default_response:
-      anyOf:
-      - $ref: '#/components/schemas/CommonErrorType'
-      - $ref: '#/components/schemas/AlipayOpenMiniTemplatemessageUsertemplateApplyErrorResponseModel'
     alipay_open_mini_templatemsg_maketing_batchquery_default_response:
       anyOf:
       - $ref: '#/components/schemas/CommonErrorType'
       - $ref: '#/components/schemas/AlipayOpenMiniTemplatemsgMaketingBatchqueryErrorResponseModel'
-    alipay_open_mini_templatemsg_maketingstatus_modify_default_response:
-      anyOf:
-      - $ref: '#/components/schemas/CommonErrorType'
-      - $ref: '#/components/schemas/AlipayOpenMiniTemplatemsgMaketingstatusModifyErrorResponseModel'
     alipay_open_mini_templatemsg_tinypayswitch_confirm_default_response:
       anyOf:
       - $ref: '#/components/schemas/CommonErrorType'
@@ -97201,10 +95950,6 @@ components:
       anyOf:
       - $ref: '#/components/schemas/CommonErrorType'
       - $ref: '#/components/schemas/AlipayOpenPublicAccountQueryErrorResponseModel'
-    alipay_open_public_account_reset_default_response:
-      anyOf:
-      - $ref: '#/components/schemas/CommonErrorType'
-      - $ref: '#/components/schemas/AlipayOpenPublicAccountResetErrorResponseModel'
     alipay_open_public_advert_batchquery_default_response:
       anyOf:
       - $ref: '#/components/schemas/CommonErrorType'
@@ -97513,18 +96258,6 @@ components:
       anyOf:
       - $ref: '#/components/schemas/CommonErrorType'
       - $ref: '#/components/schemas/AlipayOpenSearchBoxactivityApplyErrorResponseModel'
-    alipay_open_search_boxactivity_batchquery_default_response:
-      anyOf:
-      - $ref: '#/components/schemas/CommonErrorType'
-      - $ref: '#/components/schemas/AlipayOpenSearchBoxactivityBatchqueryErrorResponseModel'
-    alipay_open_search_boxactivity_modify_default_response:
-      anyOf:
-      - $ref: '#/components/schemas/CommonErrorType'
-      - $ref: '#/components/schemas/AlipayOpenSearchBoxactivityModifyErrorResponseModel'
-    alipay_open_search_boxactivity_offline_default_response:
-      anyOf:
-      - $ref: '#/components/schemas/CommonErrorType'
-      - $ref: '#/components/schemas/AlipayOpenSearchBoxactivityOfflineErrorResponseModel'
     alipay_open_search_boxactivity_query_default_response:
       anyOf:
       - $ref: '#/components/schemas/CommonErrorType'
@@ -97631,18 +96364,6 @@ components:
       anyOf:
       - $ref: '#/components/schemas/CommonErrorType'
       - $ref: '#/components/schemas/AlipayOpenSpIsvBillSyncErrorResponseModel'
-    alipay_open_sp_isv_operation_sync_default_response:
-      anyOf:
-      - $ref: '#/components/schemas/CommonErrorType'
-      - $ref: '#/components/schemas/AlipayOpenSpIsvOperationSyncErrorResponseModel'
-    alipay_open_sp_isv_relation_query_default_response:
-      anyOf:
-      - $ref: '#/components/schemas/CommonErrorType'
-      - $ref: '#/components/schemas/AlipayOpenSpIsvRelationQueryErrorResponseModel'
-    alipay_open_sp_isv_sales_sync_default_response:
-      anyOf:
-      - $ref: '#/components/schemas/CommonErrorType'
-      - $ref: '#/components/schemas/AlipayOpenSpIsvSalesSyncErrorResponseModel'
     alipay_open_sp_isv_signauth_create_default_response:
       anyOf:
       - $ref: '#/components/schemas/CommonErrorType'
@@ -97675,10 +96396,6 @@ components:
       anyOf:
       - $ref: '#/components/schemas/CommonErrorType'
       - $ref: '#/components/schemas/AlipayOpenSpOpporDetailQueryErrorResponseModel'
-    alipay_open_sp_oppor_feedback_modify_default_response:
-      anyOf:
-      - $ref: '#/components/schemas/CommonErrorType'
-      - $ref: '#/components/schemas/AlipayOpenSpOpporFeedbackModifyErrorResponseModel'
     alipay_open_sp_oppor_page_query_default_response:
       anyOf:
       - $ref: '#/components/schemas/CommonErrorType'
@@ -97711,18 +96428,10 @@ components:
       anyOf:
       - $ref: '#/components/schemas/CommonErrorType'
       - $ref: '#/components/schemas/AlipayPcreditHuabeiAuthOrderUnfreezeErrorResponseModel'
-    alipay_pcredit_huabei_auth_refund_apply_default_response:
-      anyOf:
-      - $ref: '#/components/schemas/CommonErrorType'
-      - $ref: '#/components/schemas/AlipayPcreditHuabeiAuthRefundApplyErrorResponseModel'
     alipay_pcredit_huabei_auth_settle_apply_default_response:
       anyOf:
       - $ref: '#/components/schemas/CommonErrorType'
       - $ref: '#/components/schemas/AlipayPcreditHuabeiAuthSettleApplyErrorResponseModel'
-    alipay_security_data_sss_create_default_response:
-      anyOf:
-      - $ref: '#/components/schemas/CommonErrorType'
-      - $ref: '#/components/schemas/AlipaySecurityDataSssCreateErrorResponseModel'
     alipay_security_prod_sss_query_default_response:
       anyOf:
       - $ref: '#/components/schemas/CommonErrorType'

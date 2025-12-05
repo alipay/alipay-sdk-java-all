@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="query"></a>
 # **query**
-> AntMerchantExpandShopPageQueryResponseModel query(ipRoleId, pageNum, pageSize, addressVersion)
+> AntMerchantExpandShopPageQueryResponseModel query(ipRoleId, pageNum, pageSize, addressVersion, provinceCode, cityCode, districtCode)
 
 店铺分页查询接口
 
@@ -42,8 +42,11 @@ public class Example {
     Integer pageNum = 1; // Integer | 查询页数
     Integer pageSize = 10; // Integer | 每页查询大小，限制100以内
     String addressVersion = "2022Q2"; // String | 行政区划版本，当前可传空值(取默认版本)、2022Q2、UPTODATE(取最新版本)，其中空值默认为：2020Q1版本(address_version=''或null)，想要查看版本是2022年2季度版本则传入:(address_version='2022Q2')，想要获取最新版本则传入:(address_version ='UPTODATE')
+    String provinceCode = "370000"; // String | 省份编码。 蚂蚁店铺请按照<a href=\"https://mdn.alipayobjects.com/huamei_sm7gq8/afts/file/A*blT9RqSR9_gAAAAAAAAAAAAADuKQAQ/2022%E8%9A%82%E8%9A%81%E9%87%91%E6%9C%8D%E5%9C%B0%E5%8C%BA%E7%A0%81.xlsx\" target=\"_blank\">蚂蚁店铺地区码</a> 表格中填写。 直付通商户请按照<a href=\"https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx \" target=\"_blank\">直付通商户地区码</a> 表格中内容填写。
+    String cityCode = "371000"; // String | 城市编码。 蚂蚁店铺请按照<a href=\"https://mdn.alipayobjects.com/huamei_sm7gq8/afts/file/A*blT9RqSR9_gAAAAAAAAAAAAADuKQAQ/2022%E8%9A%82%E8%9A%81%E9%87%91%E6%9C%8D%E5%9C%B0%E5%8C%BA%E7%A0%81.xlsx\" target=\"_blank\">蚂蚁店铺地区码</a> 表格中填写。 直付通商户请按照<a href=\"https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx \" target=\"_blank\">直付通商户地区码</a> 表格中内容填写。
+    String districtCode = "371002"; // String | 区县编码。 蚂蚁店铺请按照<a href=\"https://mdn.alipayobjects.com/huamei_sm7gq8/afts/file/A*blT9RqSR9_gAAAAAAAAAAAAADuKQAQ/2022%E8%9A%82%E8%9A%81%E9%87%91%E6%9C%8D%E5%9C%B0%E5%8C%BA%E7%A0%81.xlsx\" target=\"_blank\">蚂蚁店铺地区码</a> 表格中填写。 直付通商户请按照<a href=\"https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx \" target=\"_blank\">直付通商户地区码</a> 表格中内容填写。
     try {
-      AntMerchantExpandShopPageQueryResponseModel result = apiInstance.query(ipRoleId, pageNum, pageSize, addressVersion);
+      AntMerchantExpandShopPageQueryResponseModel result = apiInstance.query(ipRoleId, pageNum, pageSize, addressVersion, provinceCode, cityCode, districtCode);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AntMerchantExpandShopPageApi#query");
@@ -64,6 +67,9 @@ public class Example {
 | **pageNum** | **Integer**| 查询页数 | [optional] |
 | **pageSize** | **Integer**| 每页查询大小，限制100以内 | [optional] |
 | **addressVersion** | **String**| 行政区划版本，当前可传空值(取默认版本)、2022Q2、UPTODATE(取最新版本)，其中空值默认为：2020Q1版本(address_version&#x3D;&#39;&#39;或null)，想要查看版本是2022年2季度版本则传入:(address_version&#x3D;&#39;2022Q2&#39;)，想要获取最新版本则传入:(address_version &#x3D;&#39;UPTODATE&#39;) | [optional] |
+| **provinceCode** | **String**| 省份编码。 蚂蚁店铺请按照&lt;a href&#x3D;\&quot;https://mdn.alipayobjects.com/huamei_sm7gq8/afts/file/A*blT9RqSR9_gAAAAAAAAAAAAADuKQAQ/2022%E8%9A%82%E8%9A%81%E9%87%91%E6%9C%8D%E5%9C%B0%E5%8C%BA%E7%A0%81.xlsx\&quot; target&#x3D;\&quot;_blank\&quot;&gt;蚂蚁店铺地区码&lt;/a&gt; 表格中填写。 直付通商户请按照&lt;a href&#x3D;\&quot;https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx \&quot; target&#x3D;\&quot;_blank\&quot;&gt;直付通商户地区码&lt;/a&gt; 表格中内容填写。 | [optional] |
+| **cityCode** | **String**| 城市编码。 蚂蚁店铺请按照&lt;a href&#x3D;\&quot;https://mdn.alipayobjects.com/huamei_sm7gq8/afts/file/A*blT9RqSR9_gAAAAAAAAAAAAADuKQAQ/2022%E8%9A%82%E8%9A%81%E9%87%91%E6%9C%8D%E5%9C%B0%E5%8C%BA%E7%A0%81.xlsx\&quot; target&#x3D;\&quot;_blank\&quot;&gt;蚂蚁店铺地区码&lt;/a&gt; 表格中填写。 直付通商户请按照&lt;a href&#x3D;\&quot;https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx \&quot; target&#x3D;\&quot;_blank\&quot;&gt;直付通商户地区码&lt;/a&gt; 表格中内容填写。 | [optional] |
+| **districtCode** | **String**| 区县编码。 蚂蚁店铺请按照&lt;a href&#x3D;\&quot;https://mdn.alipayobjects.com/huamei_sm7gq8/afts/file/A*blT9RqSR9_gAAAAAAAAAAAAADuKQAQ/2022%E8%9A%82%E8%9A%81%E9%87%91%E6%9C%8D%E5%9C%B0%E5%8C%BA%E7%A0%81.xlsx\&quot; target&#x3D;\&quot;_blank\&quot;&gt;蚂蚁店铺地区码&lt;/a&gt; 表格中填写。 直付通商户请按照&lt;a href&#x3D;\&quot;https://gw.alipayobjects.com/os/basement_prod/253c4dcb-b8a4-4a1e-8be2-79e191a9b6db.xlsx \&quot; target&#x3D;\&quot;_blank\&quot;&gt;直付通商户地区码&lt;/a&gt; 表格中内容填写。 | [optional] |
 
 ### Return type
 

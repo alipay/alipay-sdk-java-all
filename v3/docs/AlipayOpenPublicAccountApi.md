@@ -7,7 +7,6 @@ All URIs are relative to *https://openapi.alipay.com*
 | [**create**](AlipayOpenPublicAccountApi.md#create) | **POST** /v3/alipay/open/public/account/create | 添加绑定商户会员号 |
 | [**delete**](AlipayOpenPublicAccountApi.md#delete) | **DELETE** /v3/alipay/open/public/account/delete | 解除绑定商户会员号 |
 | [**query**](AlipayOpenPublicAccountApi.md#query) | **GET** /v3/alipay/open/public/account/query | 查询绑定商户会员号 |
-| [**reset**](AlipayOpenPublicAccountApi.md#reset) | **POST** /v3/alipay/open/public/account/reset | 重新设置绑定商家会员号 |
 
 
 <a name="create"></a>
@@ -223,77 +222,6 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | common response |  -  |
-| **0** | 请求失败 |  -  |
-
-<a name="reset"></a>
-# **reset**
-> AlipayOpenPublicAccountResetResponseModel reset(alipayOpenPublicAccountResetModel)
-
-重新设置绑定商家会员号
-
-如果商户想要重置已经添加的外部账户，可以通过该接口完成。重置后，原有的外部户将删除，新的外部户添加进去。
-
-### Example
-```java
-// Import classes:
-import com.alipay.v3.ApiClient;
-import com.alipay.v3.ApiException;
-import com.alipay.v3.Configuration;
-import com.alipay.v3.util.*;
-import com.alipay.v3.api.models.*;
-import com.alipay.v3.api.AlipayOpenPublicAccountApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://openapi.alipay.com");
-    // 设置alipayConfig参数（全局设置一次）
-    AlipayConfig config = new AlipayConfig();
-    config.setAppId("app_id");
-    config.setPrivateKey("private_key");
-    config.setAlipayPublicKey("alipay_public_key");
-    config.setEncryptKey("encrypt_key");
-    defaultClient.setAlipayConfig(config);
-
-    AlipayOpenPublicAccountApi apiInstance = new AlipayOpenPublicAccountApi(defaultClient);
-    AlipayOpenPublicAccountResetModel alipayOpenPublicAccountResetModel = new AlipayOpenPublicAccountResetModel(); // AlipayOpenPublicAccountResetModel | 
-    try {
-      AlipayOpenPublicAccountResetResponseModel result = apiInstance.reset(alipayOpenPublicAccountResetModel);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling AlipayOpenPublicAccountApi#reset");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **alipayOpenPublicAccountResetModel** | **AlipayOpenPublicAccountResetModel**|  | [optional] |
-
-### Return type
-
-**AlipayOpenPublicAccountResetResponseModel**
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details
