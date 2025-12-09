@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppEbppTaskElectricityCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6569935165626817824L;
+	private static final long serialVersionUID = 1674379333954483765L;
 
 	/**
 	 * 取消原因

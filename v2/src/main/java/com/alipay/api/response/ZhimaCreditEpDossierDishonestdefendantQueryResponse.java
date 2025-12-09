@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.dossier.dishonestdefendant.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-24 14:32:22
+ * @since 1.0, 2025-12-04 19:06:41
  */
 public class ZhimaCreditEpDossierDishonestdefendantQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5326763888183398629L;
+	private static final long serialVersionUID = 3522938996722661999L;
 
 	/** 
 	 * 企业失信被执行人内容

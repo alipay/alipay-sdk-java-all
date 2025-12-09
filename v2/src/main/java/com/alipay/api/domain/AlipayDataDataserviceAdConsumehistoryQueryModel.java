@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 消费明细查询接口
  *
  * @author auto create
- * @since 1.0, 2025-01-07 11:36:55
+ * @since 1.0, 2025-12-05 18:10:43
  */
 public class AlipayDataDataserviceAdConsumehistoryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8859722289776169329L;
+	private static final long serialVersionUID = 7728534348899824876L;
 
 	/**
 	 * 登录用户支付宝统一ID,2088开头字符串。登录校验和可反查出user_id。 【alipay_pid和principal_tag使用方法： 只传alipay_pid：获取的代理商下所有商家或直客的数据合计。 alipay_pid和principal_tag都传：若为代理商会获取代理商下指定委托人数据。若是直客会获取自身的合计数据。】

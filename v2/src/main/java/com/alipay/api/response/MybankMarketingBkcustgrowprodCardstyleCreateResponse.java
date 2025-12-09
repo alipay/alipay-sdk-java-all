@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.marketing.bkcustgrowprod.cardstyle.create response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 00:01:46
+ * @since 1.0, 2025-12-05 13:49:10
  */
 public class MybankMarketingBkcustgrowprodCardstyleCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8866242191196399135L;
+	private static final long serialVersionUID = 6259537222578139419L;
 
 	/** 
 	 * 是否切换成功

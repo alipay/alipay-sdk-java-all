@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SettleCardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8291828522141342822L;
+	private static final long serialVersionUID = 1599821994532367361L;
 
 	/**
 	 * 开户支行名

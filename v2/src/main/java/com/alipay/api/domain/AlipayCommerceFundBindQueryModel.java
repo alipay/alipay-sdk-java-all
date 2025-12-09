@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 基金绑卡进度查询接口
  *
  * @author auto create
- * @since 1.0, 2023-01-03 20:29:50
+ * @since 1.0, 2025-12-04 17:40:03
  */
 public class AlipayCommerceFundBindQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1819959298189844734L;
+	private static final long serialVersionUID = 1235151527954398363L;
 
 	/**
 	 * 绑卡流水号，此处需要绑卡接口指定的out_bind_no

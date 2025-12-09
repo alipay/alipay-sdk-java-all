@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserSportsplayGobillQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6539672582523243222L;
+	private static final long serialVersionUID = 3278855528361786798L;
 
 	/** 
 	 * Go业务时间 时间戳

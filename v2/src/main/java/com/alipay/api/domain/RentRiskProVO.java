@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * Tn_Level类型结果，risk_level字段取值范围T1-T10（T1 ~ T4: 低风险；T5 ~ T6: 中风险；T7 ~ T8: 高风险；T9 ~ T10: 极高风险）
  *
  * @author auto create
- * @since 1.0, 2025-12-02 22:04:02
+ * @since 1.0, 2025-12-08 12:12:49
  */
 public class RentRiskProVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7255164588847612851L;
+	private static final long serialVersionUID = 4254981854885177988L;
 
 	/**
 	 * 描述信息

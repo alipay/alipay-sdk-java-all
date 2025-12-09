@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租赁行业商品库上传接口
  *
  * @author auto create
- * @since 1.0, 2025-10-22 10:59:42
+ * @since 1.0, 2025-12-06 16:20:55
  */
 public class AlipayOpenAppRentindustryItemUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2259751878168341352L;
+	private static final long serialVersionUID = 6125366437515553966L;
 
 	/**
 	 * 商品SKU映射信息

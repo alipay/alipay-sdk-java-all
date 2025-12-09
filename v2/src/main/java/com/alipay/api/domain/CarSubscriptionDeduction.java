@@ -6,14 +6,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 扣款信息
+ * 非标汽车售卖模式扣款信息
  *
  * @author auto create
- * @since 1.0, 2025-11-11 16:17:05
+ * @since 1.0, 2025-11-06 17:56:54
  */
 public class CarSubscriptionDeduction extends AlipayObject {
 
-	private static final long serialVersionUID = 2559265228118734191L;
+	private static final long serialVersionUID = 4229171328796871142L;
 
 	/**
 	 * 车辆押金扣款（元）

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechOceanbaseInvoiceOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5866518144794114628L;
+	private static final long serialVersionUID = 3345669493418745449L;
 
 	/**
 	 * 发票申请后返回的业务单号

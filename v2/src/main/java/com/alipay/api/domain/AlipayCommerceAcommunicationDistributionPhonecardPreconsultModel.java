@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceAcommunicationDistributionPhonecardPreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1558413814438214195L;
+	private static final long serialVersionUID = 8388984218247531637L;
 
 	/**
 	 * 号卡办理人姓名

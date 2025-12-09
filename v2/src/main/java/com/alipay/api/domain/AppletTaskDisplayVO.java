@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AppletTaskDisplayVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3433717971677234416L;
+	private static final long serialVersionUID = 3594363849731264812L;
 
 	/**
 	 * 显示的任务未完成时的按钮文本。

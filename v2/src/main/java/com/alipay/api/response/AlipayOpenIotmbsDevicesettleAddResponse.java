@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenIotmbsDevicesettleAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3764696179412582268L;
+	private static final long serialVersionUID = 8454969269288784699L;
 
 	/** 
 	 * 获取签名后的业务数据

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.member.auth.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-28 13:47:40
+ * @since 1.0, 2025-12-03 17:46:34
  */
 public class AlipayCommerceMedicalMemberAuthQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6552359414296633494L;
+	private static final long serialVersionUID = 4727438865344427224L;
 
 	/** 
 	 * 医疗会员token

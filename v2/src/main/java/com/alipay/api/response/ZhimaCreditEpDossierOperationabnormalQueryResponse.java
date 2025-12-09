@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.dossier.operationabnormal.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-24 14:32:23
+ * @since 1.0, 2025-12-04 19:06:09
  */
 public class ZhimaCreditEpDossierOperationabnormalQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6495773247898985772L;
+	private static final long serialVersionUID = 1696144616979169145L;
 
 	/** 
 	 * 企业经营异常内容

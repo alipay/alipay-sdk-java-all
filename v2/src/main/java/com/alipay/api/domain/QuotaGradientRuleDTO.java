@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class QuotaGradientRuleDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6453835258991643239L;
+	private static final long serialVersionUID = 2419825246127682327L;
 
 	/**
 	 * 必填，芝麻分350-399范围用户免押限额，单位元。例如设置350-399分用户可免押金5000元，则押金大于5000的商品，450分的用户不支持信用免押，需支付押金。

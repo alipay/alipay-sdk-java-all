@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-11-03 14:42:40
+ * @since 1.0, 2025-12-05 11:02:43
  */
 public class TourOrderSyncDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3758937481414595447L;
+	private static final long serialVersionUID = 7167978321335567331L;
 
 	/**
 	 * 可核销总数。凭证可核销数量总和
@@ -23,10 +23,16 @@ public class TourOrderSyncDetail extends AlipayObject {
 	private String bizSourceNum;
 
 	/**
-	 * 下单用户身份证号
+	 * 下单用户证件号。碰入园场景下，身份证和手机号二选一必填。
 	 */
 	@ApiField("cert_no")
 	private String certNo;
+
+	/**
+	 * 证件类型，身份证：IDENTITY_CARD。传入时需要传入证件号，不传默认填充身份证。
+	 */
+	@ApiField("cert_type")
+	private String certType;
 
 	/**
 	 * 下单用户姓名
@@ -68,7 +74,7 @@ USED -- 已核销
 	private String outBizNo;
 
 	/**
-	 * 项目id，由支付宝分配
+	 * 项目id，由支付宝分配。碰入园场景必填（取值由配置线圈的BD获取），一码通场景无需填写。
 	 */
 	@ApiField("project_id")
 	private String projectId;
@@ -80,7 +86,7 @@ USED -- 已核销
 	private String sceneType;
 
 	/**
-	 * 下单用户手机号
+	 * 下单用户手机号。碰入园场景下，身份证和手机号二选一必填。
 	 */
 	@ApiField("tele_no")
 	private String teleNo;
@@ -110,6 +116,13 @@ USED -- 已核销
 	}
 	public void setCertNo(String certNo) {
 		this.certNo = certNo;
+	}
+
+	public String getCertType() {
+		return this.certType;
+	}
+	public void setCertType(String certType) {
+		this.certType = certType;
 	}
 
 	public String getName() {

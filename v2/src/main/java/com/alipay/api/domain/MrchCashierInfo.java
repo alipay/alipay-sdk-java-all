@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MrchCashierInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1324262931456777371L;
+	private static final long serialVersionUID = 2221672257157486935L;
 
 	/**
 	 * 收银员Id

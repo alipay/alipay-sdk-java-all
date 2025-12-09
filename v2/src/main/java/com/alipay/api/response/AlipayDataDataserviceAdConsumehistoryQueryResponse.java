@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.ad.consumehistory.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-08 11:14:17
+ * @since 1.0, 2025-12-08 10:47:42
  */
 public class AlipayDataDataserviceAdConsumehistoryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6329759429694525918L;
+	private static final long serialVersionUID = 6521525162777259691L;
 
 	/** 
 	 * 查询结果数据列表，当无数据时，查询数据为空

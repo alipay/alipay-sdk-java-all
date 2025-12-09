@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.dossier.trademark.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-21 10:37:29
+ * @since 1.0, 2025-12-04 19:07:03
  */
 public class ZhimaCreditEpDossierTrademarkQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6365488574783125176L;
+	private static final long serialVersionUID = 6826811925325932645L;
 
 	/** 
 	 * 企业商标查询内容

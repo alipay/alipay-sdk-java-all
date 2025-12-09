@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceMerchantcardOpenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3169975533423332135L;
+	private static final long serialVersionUID = 4223554414822789178L;
 
 	/**
 	 * 卡类型。其中开通了先享次卡后才能在制卡时使用先享后付的资金模式。

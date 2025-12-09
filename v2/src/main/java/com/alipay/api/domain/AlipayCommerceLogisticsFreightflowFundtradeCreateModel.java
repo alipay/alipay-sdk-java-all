@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 货运企业支付收银台资金支付创单
  *
  * @author auto create
- * @since 1.0, 2025-07-02 19:17:32
+ * @since 1.0, 2025-12-05 14:05:19
  */
 public class AlipayCommerceLogisticsFreightflowFundtradeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1584719692262998882L;
+	private static final long serialVersionUID = 3865677938734114329L;
 
 	/**
 	 * 商户需要保证业务流水号的唯一性，运企付内部通过业务流水号进行幂等处理

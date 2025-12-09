@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 直播玩法权益详情
  *
  * @author auto create
- * @since 1.0, 2025-11-13 15:58:07
+ * @since 1.0, 2025-12-04 13:44:44
  */
 public class LivePlayRightDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1577736197945166143L;
+	private static final long serialVersionUID = 5446281273336494385L;
+
+	/**
+	 * 券可以领取的过期时间
+	 */
+	@ApiField("expire_time")
+	private String expireTime;
 
 	/**
 	 * 跳转链接，用于领取成功之后的跳转
@@ -20,7 +26,7 @@ public class LivePlayRightDetail extends AlipayObject {
 	private String jumpUrl;
 
 	/**
-	 * 权益价值数，非金额，表示展示的权益数字
+	 * 1张。权益价值数，非金额，表示展示的权益数字，比如1张
 	 */
 	@ApiField("right_amount")
 	private String rightAmount;
@@ -48,6 +54,25 @@ public class LivePlayRightDetail extends AlipayObject {
 	 */
 	@ApiField("right_unit")
 	private String rightUnit;
+
+	/**
+	 * 券的价值(单位：元)
+	 */
+	@ApiField("value_amount")
+	private String valueAmount;
+
+	/**
+	 * 券价值的单位
+	 */
+	@ApiField("value_unit")
+	private String valueUnit;
+
+	public String getExpireTime() {
+		return this.expireTime;
+	}
+	public void setExpireTime(String expireTime) {
+		this.expireTime = expireTime;
+	}
 
 	public String getJumpUrl() {
 		return this.jumpUrl;
@@ -89,6 +114,20 @@ public class LivePlayRightDetail extends AlipayObject {
 	}
 	public void setRightUnit(String rightUnit) {
 		this.rightUnit = rightUnit;
+	}
+
+	public String getValueAmount() {
+		return this.valueAmount;
+	}
+	public void setValueAmount(String valueAmount) {
+		this.valueAmount = valueAmount;
+	}
+
+	public String getValueUnit() {
+		return this.valueUnit;
+	}
+	public void setValueUnit(String valueUnit) {
+		this.valueUnit = valueUnit;
 	}
 
 }

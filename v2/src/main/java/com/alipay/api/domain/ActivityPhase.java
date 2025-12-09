@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ActivityPhase extends AlipayObject {
 
-	private static final long serialVersionUID = 1469945819166721581L;
+	private static final long serialVersionUID = 5162782482959757531L;
 
 	/**
 	 * 0:未发放；

@@ -4,6 +4,7 @@ import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.RentRiskProVO;
+import com.alipay.api.domain.RiskBasicInfoVO;
 import com.alipay.api.domain.RentRiskInfoVO;
 import com.alipay.api.domain.ShipGoodsRiskVO;
 
@@ -13,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.rent.risk.consult response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-02 22:04:02
+ * @since 1.0, 2025-12-08 12:12:49
  */
 public class AlipayCommerceRentRiskConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1559245494495211864L;
+	private static final long serialVersionUID = 4586894195148898667L;
 
 	/** 
 	 * Tn_Level类型结果，risk_level字段取值范围T1-T10（T1 ~ T4: 低风险；T5 ~ T6: 中风险；T7 ~ T8: 高风险；T9 ~ T10: 极高风险）
@@ -43,6 +44,12 @@ PRO-租安盾专业版，面向签约商户；
 	 */
 	@ApiField("product_edition")
 	private String productEdition;
+
+	/** 
+	 * 风控基础信息
+	 */
+	@ApiField("risk_basic_info")
+	private RiskBasicInfoVO riskBasicInfo;
 
 	/** 
 	 * null
@@ -90,6 +97,13 @@ PRO-租安盾专业版，面向签约商户；
 	}
 	public String getProductEdition( ) {
 		return this.productEdition;
+	}
+
+	public void setRiskBasicInfo(RiskBasicInfoVO riskBasicInfo) {
+		this.riskBasicInfo = riskBasicInfo;
+	}
+	public RiskBasicInfoVO getRiskBasicInfo( ) {
+		return this.riskBasicInfo;
 	}
 
 	public void setRiskInfos(List<RentRiskInfoVO> riskInfos) {

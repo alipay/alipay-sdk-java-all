@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 订单信息
+ * 非标汽车售卖模式订单信息
  *
  * @author auto create
- * @since 1.0, 2025-11-11 16:17:05
+ * @since 1.0, 2025-11-06 17:56:53
  */
 public class CarSubscriptionOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 1865734727272552296L;
+	private static final long serialVersionUID = 7477449154454385858L;
 
 	/**
 	 * 车辆押金（元）

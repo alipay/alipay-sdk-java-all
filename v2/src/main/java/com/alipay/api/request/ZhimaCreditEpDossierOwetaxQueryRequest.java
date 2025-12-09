@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.ep.dossier.owetax.query request
  * 
  * @author auto create
- * @since 1.0, 2025-01-22 09:57:22
+ * @since 1.0, 2025-12-04 19:07:57
  */
 public class ZhimaCreditEpDossierOwetaxQueryRequest implements AlipayRequest<ZhimaCreditEpDossierOwetaxQueryResponse> {
 

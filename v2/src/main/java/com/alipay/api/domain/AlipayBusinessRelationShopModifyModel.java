@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝代运营商业关系门店修改
  *
  * @author auto create
- * @since 1.0, 2023-11-02 14:02:17
+ * @since 1.0, 2025-12-04 13:43:38
  */
 public class AlipayBusinessRelationShopModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6794256579691362562L;
+	private static final long serialVersionUID = 5466316197816187238L;
 
 	/**
 	 * 经营地址

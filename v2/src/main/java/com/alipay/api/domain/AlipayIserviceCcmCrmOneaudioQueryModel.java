@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayIserviceCcmCrmOneaudioQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7793953382295998926L;
+	private static final long serialVersionUID = 5746952187719316594L;
 
 	/**
 	 * acid，从通话记录获取

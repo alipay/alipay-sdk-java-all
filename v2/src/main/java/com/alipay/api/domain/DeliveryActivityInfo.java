@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 已投放活动信息
  *
  * @author auto create
- * @since 1.0, 2024-03-28 14:05:01
+ * @since 1.0, 2025-12-08 11:05:45
  */
 public class DeliveryActivityInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6688498763129212411L;
+	private static final long serialVersionUID = 2375828352213628226L;
 
 	/**
 	 * 活动Id
@@ -67,6 +67,12 @@ public class DeliveryActivityInfo extends AlipayObject {
 	 */
 	@ApiField("bank_name")
 	private String bankName;
+
+	/**
+	 * 信用卡分期
+	 */
+	@ApiField("delivery_card_type")
+	private String deliveryCardType;
 
 	/**
 	 * USER_VOUCHER
@@ -185,6 +191,13 @@ reduce--立减
 	}
 	public void setBankName(String bankName) {
 		this.bankName = bankName;
+	}
+
+	public String getDeliveryCardType() {
+		return this.deliveryCardType;
+	}
+	public void setDeliveryCardType(String deliveryCardType) {
+		this.deliveryCardType = deliveryCardType;
 	}
 
 	public String getDeliveryPreferType() {

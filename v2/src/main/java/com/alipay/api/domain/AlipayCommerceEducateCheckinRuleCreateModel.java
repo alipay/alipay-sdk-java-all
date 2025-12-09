@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建签到规则
  *
  * @author auto create
- * @since 1.0, 2025-08-29 19:42:17
+ * @since 1.0, 2025-12-04 10:48:30
  */
 public class AlipayCommerceEducateCheckinRuleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6871943285822783662L;
+	private static final long serialVersionUID = 5289316962386648455L;
 
 	/**
 	 * 活动平台id
@@ -27,6 +27,12 @@ public class AlipayCommerceEducateCheckinRuleCreateModel extends AlipayObject {
 	 */
 	@ApiField("authentication_type")
 	private String authenticationType;
+
+	/**
+	 * 作弊软件校验开关
+	 */
+	@ApiField("cheat_check")
+	private Boolean cheatCheck;
 
 	/**
 	 * 课程签到类型相关参数，签退结束分钟
@@ -186,6 +192,13 @@ public class AlipayCommerceEducateCheckinRuleCreateModel extends AlipayObject {
 	}
 	public void setAuthenticationType(String authenticationType) {
 		this.authenticationType = authenticationType;
+	}
+
+	public Boolean getCheatCheck() {
+		return this.cheatCheck;
+	}
+	public void setCheatCheck(Boolean cheatCheck) {
+		this.cheatCheck = cheatCheck;
 	}
 
 	public Long getCheckOutEndMinutes() {

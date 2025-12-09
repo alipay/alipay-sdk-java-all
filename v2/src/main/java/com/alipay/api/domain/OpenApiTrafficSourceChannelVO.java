@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenApiTrafficSourceChannelVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2175482553719748197L;
+	private static final long serialVersionUID = 8359941647943158698L;
 
 	/**
 	 * 一级来源渠道

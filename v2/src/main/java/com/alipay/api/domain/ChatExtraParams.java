@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ChatExtraParams extends AlipayObject {
 
-	private static final long serialVersionUID = 5171656692285545663L;
+	private static final long serialVersionUID = 5894736385626529453L;
 
 	/**
 	 * 用于描述客户端信息，业务自定义信息。对应“支小宝投放”生码的“业务自定义信息”

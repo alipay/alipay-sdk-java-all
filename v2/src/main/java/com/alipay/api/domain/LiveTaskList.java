@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class LiveTaskList extends AlipayObject {
 
-	private static final long serialVersionUID = 7314333691188732954L;
+	private static final long serialVersionUID = 6343857495239884179L;
 
 	/**
 	 * 任务日期（月份）

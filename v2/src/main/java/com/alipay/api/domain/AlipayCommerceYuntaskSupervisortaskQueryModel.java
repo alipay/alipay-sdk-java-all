@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceYuntaskSupervisortaskQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7786225739468231921L;
+	private static final long serialVersionUID = 4232983526934933175L;
 
 	/**
 	 * 导购员id

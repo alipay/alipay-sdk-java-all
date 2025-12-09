@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataBillAccountdailyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5494671335433519683L;
+	private static final long serialVersionUID = 4474921922117716938L;
 
 	/** 
 	 * 当日充值金额

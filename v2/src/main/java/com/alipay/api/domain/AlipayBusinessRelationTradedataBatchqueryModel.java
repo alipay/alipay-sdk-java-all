@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商业关系经营数据分页查询
  *
  * @author auto create
- * @since 1.0, 2022-06-16 20:24:25
+ * @since 1.0, 2025-12-04 13:43:08
  */
 public class AlipayBusinessRelationTradedataBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2212725725451888932L;
+	private static final long serialVersionUID = 2275889512397554695L;
 
 	/**
 	 * 日期类型，DAY:日，MONTH:月

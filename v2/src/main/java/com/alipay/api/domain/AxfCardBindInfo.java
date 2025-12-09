@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AxfCardBindInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7666974812778386979L;
+	private static final long serialVersionUID = 2312127821383986737L;
 
 	/**
 	 * 绑卡状态

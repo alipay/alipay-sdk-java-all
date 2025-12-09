@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaMerchantContractCommonQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5848181498141222525L;
+	private static final long serialVersionUID = 8468288113594974411L;
 
 	/**
 	 * 合约单号

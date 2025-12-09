@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.circular.zft.indirect.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-02 18:20:15
+ * @since 1.0, 2025-12-05 16:47:43
  */
 public class AlipayCircularZftIndirectQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8816112883155661179L;
+	private static final long serialVersionUID = 4366172524521388891L;
 
 	/** 
 	 * 进件记录

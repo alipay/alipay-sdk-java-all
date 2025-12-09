@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 基金开户
  *
  * @author auto create
- * @since 1.0, 2023-01-03 20:39:17
+ * @since 1.0, 2025-12-04 17:42:32
  */
 public class AlipayCommerceFundBindCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6168575696232797522L;
+	private static final long serialVersionUID = 6571219125435864671L;
 
 	/**
 	 * 绑卡用户的证件号，需要和cert_type联合使用

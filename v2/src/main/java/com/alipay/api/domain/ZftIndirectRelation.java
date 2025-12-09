@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 直付通进件关系
  *
  * @author auto create
- * @since 1.0, 2025-09-22 14:16:32
+ * @since 1.0, 2025-12-05 16:46:55
  */
 public class ZftIndirectRelation extends AlipayObject {
 
-	private static final long serialVersionUID = 8672874769288975912L;
+	private static final long serialVersionUID = 4757731783813296774L;
 
 	/**
 	 * 申请单处理失败时，通过此此段返回具体的失败理由
@@ -30,6 +30,12 @@ public class ZftIndirectRelation extends AlipayObject {
 	 */
 	@ApiField("relation_uid")
 	private String relationUid;
+
+	/**
+	 * 签约确认状态
+	 */
+	@ApiField("sign_confirm")
+	private String signConfirm;
 
 	/**
 	 * 进件状态
@@ -62,6 +68,13 @@ public class ZftIndirectRelation extends AlipayObject {
 	}
 	public void setRelationUid(String relationUid) {
 		this.relationUid = relationUid;
+	}
+
+	public String getSignConfirm() {
+		return this.signConfirm;
+	}
+	public void setSignConfirm(String signConfirm) {
+		this.signConfirm = signConfirm;
 	}
 
 	public String getStatus() {

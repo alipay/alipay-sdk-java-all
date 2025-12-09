@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMedicalMisetorderOrdernoBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4789875821767994365L;
+	private static final long serialVersionUID = 1632263874713153863L;
 
 	/** 
 	 * 订单号

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-11-03 14:42:40
+ * @since 1.0, 2025-12-05 11:02:43
  */
 public class TourOrderSyncResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 2364851924245927517L;
+	private static final long serialVersionUID = 2896874436463312717L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识。

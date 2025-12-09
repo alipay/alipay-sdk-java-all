@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPayInstructCloudTriggerModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3175612938867982666L;
+	private static final long serialVersionUID = 5392161119749996297L;
 
 	/**
 	 * 本次收款金额，单位（元）

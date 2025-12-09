@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商业关系产品能力申请
  *
  * @author auto create
- * @since 1.0, 2022-07-13 10:23:08
+ * @since 1.0, 2025-12-04 13:42:53
  */
 public class AlipayBusinessRelationProductApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8812658788741554655L;
+	private static final long serialVersionUID = 2114975719434221569L;
 
 	/**
 	 * 申请目标信息

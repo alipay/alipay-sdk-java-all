@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FsFundInfoForm extends AlipayObject {
 
-	private static final long serialVersionUID = 1582766614246374432L;
+	private static final long serialVersionUID = 8532861397336199281L;
 
 	/**
 	 * 退款时为出资方退款金额，单位：元

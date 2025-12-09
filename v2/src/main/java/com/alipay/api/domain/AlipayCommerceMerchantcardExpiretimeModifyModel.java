@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发起卡过期时间延期修改
  *
  * @author auto create
- * @since 1.0, 2025-11-26 20:47:42
+ * @since 1.0, 2025-12-08 15:00:42
  */
 public class AlipayCommerceMerchantcardExpiretimeModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8394225841457837943L;
+	private static final long serialVersionUID = 4628485726337462127L;
 
 	/**
 	 * 安心付卡id

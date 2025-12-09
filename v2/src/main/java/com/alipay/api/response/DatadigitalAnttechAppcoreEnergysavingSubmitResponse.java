@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class DatadigitalAnttechAppcoreEnergysavingSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1121212775555946123L;
+	private static final long serialVersionUID = 5145233974253931718L;
 
 	/** 
 	 * 节能申请信息，节能申请的相关信息给到用户，如用户的申请后的实际节能信息，不是成功或失败

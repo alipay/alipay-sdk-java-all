@@ -9,6 +9,7 @@ import com.alipay.api.domain.RentOrderDeliveryInfoVO;
 import com.alipay.api.domain.RentOrderExtendInfoVO;
 import com.alipay.api.domain.RentFastAuditInfoVO;
 import com.alipay.api.domain.RentGoodsDetailInfoVO;
+import com.alipay.api.domain.RentOfflineShoppingVO;
 import com.alipay.api.domain.RentPathInfoVO;
 import com.alipay.api.domain.RentOrderPriceInfoVO;
 import com.alipay.api.domain.RentPromoInfoVO;
@@ -27,11 +28,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.rent.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-02 19:44:58
+ * @since 1.0, 2025-12-05 16:32:42
  */
 public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4787298624389757686L;
+	private static final long serialVersionUID = 8335185211448536864L;
 
 	/** 
 	 * 订单收货地址
@@ -93,6 +94,12 @@ public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("memo")
 	private String memo;
+
+	/** 
+	 * 线下租赁信息
+	 */
+	@ApiField("offline_shopping_info")
+	private RentOfflineShoppingVO offlineShoppingInfo;
 
 	/** 
 	 * 订单创建时间
@@ -294,6 +301,13 @@ public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 	}
 	public String getMemo( ) {
 		return this.memo;
+	}
+
+	public void setOfflineShoppingInfo(RentOfflineShoppingVO offlineShoppingInfo) {
+		this.offlineShoppingInfo = offlineShoppingInfo;
+	}
+	public RentOfflineShoppingVO getOfflineShoppingInfo( ) {
+		return this.offlineShoppingInfo;
 	}
 
 	public void setOrderCreateTime(Date orderCreateTime) {

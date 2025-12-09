@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 随身贷支用申请
  *
  * @author auto create
- * @since 1.0, 2025-07-25 14:59:44
+ * @since 1.0, 2025-12-04 11:27:16
  */
 public class AlipayPcreditLoanSideloanlendLendApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2594717798912989221L;
+	private static final long serialVersionUID = 8282563925312753246L;
 
 	/**
 	 * 支付宝用户id
@@ -27,6 +27,13 @@ public class AlipayPcreditLoanSideloanlendLendApplyModel extends AlipayObject {
 	 */
 	@ApiField("bank_card_id")
 	private String bankCardId;
+
+	/**
+	 * 候选授信机构列表
+	 */
+	@ApiListField("candidate_credit_fund_supplier_list")
+	@ApiField("institution_v_o")
+	private List<InstitutionVO> candidateCreditFundSupplierList;
 
 	/**
 	 * 营销卡券Code列表,不能超过100个
@@ -46,6 +53,12 @@ public class AlipayPcreditLoanSideloanlendLendApplyModel extends AlipayObject {
 	 */
 	@ApiField("extension")
 	private String extension;
+
+	/**
+	 * 支用扩展处理(目前有支用拒绝转签TRANSFER_CREDIT)
+	 */
+	@ApiField("loan_additional_process")
+	private String loanAdditionalProcess;
 
 	/**
 	 * 贷款金额（单位：元）保留小数点后两位
@@ -140,6 +153,13 @@ REPAY_OUTRIGHT一次性到期还本付息
 		this.bankCardId = bankCardId;
 	}
 
+	public List<InstitutionVO> getCandidateCreditFundSupplierList() {
+		return this.candidateCreditFundSupplierList;
+	}
+	public void setCandidateCreditFundSupplierList(List<InstitutionVO> candidateCreditFundSupplierList) {
+		this.candidateCreditFundSupplierList = candidateCreditFundSupplierList;
+	}
+
 	public List<String> getCouponCodeList() {
 		return this.couponCodeList;
 	}
@@ -159,6 +179,13 @@ REPAY_OUTRIGHT一次性到期还本付息
 	}
 	public void setExtension(String extension) {
 		this.extension = extension;
+	}
+
+	public String getLoanAdditionalProcess() {
+		return this.loanAdditionalProcess;
+	}
+	public void setLoanAdditionalProcess(String loanAdditionalProcess) {
+		this.loanAdditionalProcess = loanAdditionalProcess;
 	}
 
 	public String getLoanAmount() {

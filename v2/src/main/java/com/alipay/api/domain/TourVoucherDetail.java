@@ -10,22 +10,26 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 文旅凭证信息
  *
  * @author auto create
- * @since 1.0, 2025-11-03 14:41:37
+ * @since 1.0, 2025-12-05 11:01:35
  */
 public class TourVoucherDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7655261666965679139L;
+	private static final long serialVersionUID = 5689627238835574412L;
 
 	/**
-	 * 游客身份证号。必须与手机号选一必填
+	 * 游客证件号码。一码通场景，凭证状态未使用时，证件号与手机号二选一必填。
 	 */
 	@ApiField("cert_no")
 	private String certNo;
 
 	/**
-	 * 码信息。
-一码通场景使用，碰一下场景可空。
-其中seed代表商户码种子；codeToken可从扫码的码协议中获取
+	 * 证件类型，身份证：IDENTITY_CARD。传入时需要传入证件号，不传默认填充身份证。
+	 */
+	@ApiField("cert_type")
+	private String certType;
+
+	/**
+	 * 码信息。 一码通场景必填，碰一下场景可空。 codeToken可从扫码的码协议中获取，且一码通场景该字段必填。
 	 */
 	@ApiField("code_info")
 	private String codeInfo;
@@ -57,13 +61,13 @@ public class TourVoucherDetail extends AlipayObject {
 	private String outVercherId;
 
 	/**
-	 * 凭证号
+	 * 凭证号，请保证凭证号唯一。
 	 */
 	@ApiField("out_voucher_id")
 	private String outVoucherId;
 
 	/**
-	 * 支付宝景点id。如果是多个景区，则以逗号形式分隔id
+	 * 支付宝景点id。一码通场景必填。如果是多个景区，则以逗号形式分隔id
 	 */
 	@ApiField("scenic_id")
 	private String scenicId;
@@ -84,7 +88,7 @@ REFUNDED-已退款
 	private String status;
 
 	/**
-	 * 游客手机号。必须与身份证号选一必填
+	 * 游客手机号。一码通场景，凭证状态未使用时，证件号与手机号二选一必填。
 	 */
 	@ApiField("tele_no")
 	private String teleNo;
@@ -115,6 +119,13 @@ voucherName：凭证名称/票名称，必填
 	}
 	public void setCertNo(String certNo) {
 		this.certNo = certNo;
+	}
+
+	public String getCertType() {
+		return this.certType;
+	}
+	public void setCertType(String certType) {
+		this.certType = certType;
 	}
 
 	public String getCodeInfo() {
