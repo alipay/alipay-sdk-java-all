@@ -5,7 +5,7 @@ info:
     url: https://opendocs.alipay.com/open-v3/053sd1
   description: 支付宝开放平台v3协议文档
   title: 支付宝开放平台API
-  version: 2025-12-01
+  version: 2025-12-15
 servers:
 - description: Production server
   url: https://openapi.alipay.com
