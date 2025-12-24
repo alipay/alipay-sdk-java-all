@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 非标汽车售卖模式订单信息
  *
  * @author auto create
- * @since 1.0, 2025-11-06 17:56:53
+ * @since 1.0, 2025-12-17 11:05:19
  */
 public class CarSubscriptionOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 7477449154454385858L;
+	private static final long serialVersionUID = 4562441575316497665L;
 
 	/**
 	 * 车辆押金（元）
@@ -36,6 +36,30 @@ public class CarSubscriptionOrder extends AlipayObject {
 	 */
 	@ApiField("rental_fee_per_period")
 	private String rentalFeePerPeriod;
+
+	/**
+	 * 单位订阅周期租金的组成部分：基础费（元）
+	 */
+	@ApiField("rental_fee_per_period_of_basic")
+	private String rentalFeePerPeriodOfBasic;
+
+	/**
+	 * 单位订阅周期租金的组成部分：保险费（元）
+	 */
+	@ApiField("rental_fee_per_period_of_insurance")
+	private String rentalFeePerPeriodOfInsurance;
+
+	/**
+	 * 单位订阅周期租金的组成部分：里程费（元）
+	 */
+	@ApiField("rental_fee_per_period_of_mileage")
+	private String rentalFeePerPeriodOfMileage;
+
+	/**
+	 * 单位订阅周期租金的组成部分：指标费（元）
+	 */
+	@ApiField("rental_fee_per_period_of_quota")
+	private String rentalFeePerPeriodOfQuota;
 
 	/**
 	 * 小订金额（元）
@@ -93,6 +117,34 @@ public class CarSubscriptionOrder extends AlipayObject {
 	}
 	public void setRentalFeePerPeriod(String rentalFeePerPeriod) {
 		this.rentalFeePerPeriod = rentalFeePerPeriod;
+	}
+
+	public String getRentalFeePerPeriodOfBasic() {
+		return this.rentalFeePerPeriodOfBasic;
+	}
+	public void setRentalFeePerPeriodOfBasic(String rentalFeePerPeriodOfBasic) {
+		this.rentalFeePerPeriodOfBasic = rentalFeePerPeriodOfBasic;
+	}
+
+	public String getRentalFeePerPeriodOfInsurance() {
+		return this.rentalFeePerPeriodOfInsurance;
+	}
+	public void setRentalFeePerPeriodOfInsurance(String rentalFeePerPeriodOfInsurance) {
+		this.rentalFeePerPeriodOfInsurance = rentalFeePerPeriodOfInsurance;
+	}
+
+	public String getRentalFeePerPeriodOfMileage() {
+		return this.rentalFeePerPeriodOfMileage;
+	}
+	public void setRentalFeePerPeriodOfMileage(String rentalFeePerPeriodOfMileage) {
+		this.rentalFeePerPeriodOfMileage = rentalFeePerPeriodOfMileage;
+	}
+
+	public String getRentalFeePerPeriodOfQuota() {
+		return this.rentalFeePerPeriodOfQuota;
+	}
+	public void setRentalFeePerPeriodOfQuota(String rentalFeePerPeriodOfQuota) {
+		this.rentalFeePerPeriodOfQuota = rentalFeePerPeriodOfQuota;
 	}
 
 	public String getSmallDepositAmount() {

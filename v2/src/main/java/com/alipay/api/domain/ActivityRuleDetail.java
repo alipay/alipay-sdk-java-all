@@ -12,7 +12,7 @@ consume_amount时为：周期(单位默认天)+金额(单位元)+折扣(百分)�
  */
 public class ActivityRuleDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5475424482558147876L;
+	private static final long serialVersionUID = 2348877917458351132L;
 
 	/**
 	 * 活动规则中用户承诺消费的金额，当consume_type为CONSUME_AMOUNT时启用，单位为元

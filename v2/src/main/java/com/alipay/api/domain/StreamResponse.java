@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 结构
  *
  * @author auto create
- * @since 1.0, 2025-11-20 10:12:41
+ * @since 1.0, 2025-12-16 10:42:50
  */
 public class StreamResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 8354597878139761384L;
+	private static final long serialVersionUID = 3275843345739792483L;
 
 	/**
 	 * 智能体id

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 处方单详情列表查询
  *
  * @author auto create
- * @since 1.0, 2025-07-17 15:33:53
+ * @since 1.0, 2025-12-11 11:04:41
  */
 public class AlipayCommerceMedicalPrescriptionListQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8112777335198941289L;
+	private static final long serialVersionUID = 6313758726632862166L;
 
 	/**
 	 * 订单编号

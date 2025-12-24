@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.ep.business.indicator.query request
  * 
  * @author auto create
- * @since 1.0, 2025-11-04 11:02:41
+ * @since 1.0, 2025-12-22 11:22:15
  */
 public class ZhimaCreditEpBusinessIndicatorQueryRequest implements AlipayRequest<ZhimaCreditEpBusinessIndicatorQueryResponse> {
 

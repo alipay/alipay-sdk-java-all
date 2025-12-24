@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.logistics.freightflow.fundtrade.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-05 14:05:19
+ * @since 1.0, 2025-12-15 10:37:42
  */
 public class AlipayCommerceLogisticsFreightflowFundtradeCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2514885587781364324L;
+	private static final long serialVersionUID = 2429655853536912521L;
 
 	/** 
 	 * 业务请求没有失败码返回时必填,同入参中的biz_no
 	 */
 	@ApiField("biz_no")
 	private String bizNo;
+
+	/** 
+	 * 可参照线下提供的文档进行解析
+	 */
+	@ApiField("channel_pay_info")
+	private String channelPayInfo;
 
 	/** 
 	 * 订单支付URL,平台可据此生成二维码(Base64格式，使用前先解码)
@@ -43,6 +49,13 @@ public class AlipayCommerceLogisticsFreightflowFundtradeCreateResponse extends A
 	}
 	public String getBizNo( ) {
 		return this.bizNo;
+	}
+
+	public void setChannelPayInfo(String channelPayInfo) {
+		this.channelPayInfo = channelPayInfo;
+	}
+	public String getChannelPayInfo( ) {
+		return this.channelPayInfo;
 	}
 
 	public void setOrderPayUrl(String orderPayUrl) {

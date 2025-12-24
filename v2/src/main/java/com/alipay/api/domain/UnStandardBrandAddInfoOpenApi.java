@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 非标品牌信息
  *
  * @author auto create
- * @since 1.0, 2025-12-08 10:10:43
+ * @since 1.0, 2025-12-16 14:27:42
  */
 public class UnStandardBrandAddInfoOpenApi extends AlipayObject {
 
-	private static final long serialVersionUID = 8429977586548942516L;
+	private static final long serialVersionUID = 5272974476525754363L;
 
 	/**
 	 * UN_STANDARD_E-COMMERCE：电商非标

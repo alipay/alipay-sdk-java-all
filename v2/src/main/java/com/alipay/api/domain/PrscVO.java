@@ -1,22 +1,24 @@
 package com.alipay.api.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 处方详情
  *
  * @author auto create
- * @since 1.0, 2025-07-17 15:33:53
+ * @since 1.0, 2025-12-11 11:04:41
  */
 public class PrscVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8177576841231683667L;
+	private static final long serialVersionUID = 6269442613496787769L;
 
 	/**
-	 * 订单渠道
+	 * 订单渠道,类型有O2O、B2C
 	 */
 	@ApiField("channel")
 	private String channel;
@@ -28,10 +30,35 @@ public class PrscVO extends AlipayObject {
 	private Date createTime;
 
 	/**
+	 * 耳喉鼻科
+	 */
+	@ApiField("depart_name")
+	private String departName;
+
+	/**
+	 * 诊断
+	 */
+	@ApiField("diagnosis")
+	private String diagnosis;
+
+	/**
+	 * 药品信息
+	 */
+	@ApiListField("drug_info_list")
+	@ApiField("drug_info_v_o")
+	private List<DrugInfoVO> drugInfoList;
+
+	/**
 	 * 用药人性别,1-男 2-女
 	 */
 	@ApiField("gender")
 	private Long gender;
+
+	/**
+	 * 补充说明
+	 */
+	@ApiField("instruction")
+	private String instruction;
 
 	/**
 	 * 用药人年龄,单位  天/月/岁
@@ -137,11 +164,39 @@ public class PrscVO extends AlipayObject {
 		this.createTime = createTime;
 	}
 
+	public String getDepartName() {
+		return this.departName;
+	}
+	public void setDepartName(String departName) {
+		this.departName = departName;
+	}
+
+	public String getDiagnosis() {
+		return this.diagnosis;
+	}
+	public void setDiagnosis(String diagnosis) {
+		this.diagnosis = diagnosis;
+	}
+
+	public List<DrugInfoVO> getDrugInfoList() {
+		return this.drugInfoList;
+	}
+	public void setDrugInfoList(List<DrugInfoVO> drugInfoList) {
+		this.drugInfoList = drugInfoList;
+	}
+
 	public Long getGender() {
 		return this.gender;
 	}
 	public void setGender(Long gender) {
 		this.gender = gender;
+	}
+
+	public String getInstruction() {
+		return this.instruction;
+	}
+	public void setInstruction(String instruction) {
+		this.instruction = instruction;
 	}
 
 	public String getPatientAge() {

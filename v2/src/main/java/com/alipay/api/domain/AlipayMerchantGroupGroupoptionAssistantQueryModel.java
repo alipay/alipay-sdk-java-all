@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantGroupGroupoptionAssistantQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3753238753593625429L;
+	private static final long serialVersionUID = 5735475174146361818L;
 
 	/**
 	 * 需要排除的小助手内容id，创建小助手时返回的数据唯一id。修改的时候，务必传入当前小助手content_id作为excluded_content_id，才能将当前小助手的群组返回，让用户可选。

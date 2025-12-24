@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建活动灰度策略
  *
  * @author auto create
- * @since 1.0, 2025-12-01 20:32:41
+ * @since 1.0, 2025-12-10 15:02:06
  */
 public class AlipayCommerceEcActivityGrayCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5798183791482378553L;
+	private static final long serialVersionUID = 3217454426535815971L;
 
 	/**
 	 * 员工价活动id，用于指定需要修改灰度策略的活动；通过 alipay.commerce.ec.activity.discount.create 创建活动

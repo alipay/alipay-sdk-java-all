@@ -1,5 +1,7 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
@@ -7,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁订单拓展信息
  *
  * @author auto create
- * @since 1.0, 2025-12-05 16:29:41
+ * @since 1.0, 2025-12-09 19:37:57
  */
 public class RentOrderExtendInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2666222527481873475L;
+	private static final long serialVersionUID = 1543927855993153371L;
+
+	/**
+	 * 承诺发货时间
+	 */
+	@ApiField("promised_send_time")
+	private Date promisedSendTime;
 
 	/**
 	 * 定义参考 <a href="https://opendocs.alipay.com/mini/0dfcde" target="_blank">公域场景标识</a>
@@ -24,6 +32,13 @@ public class RentOrderExtendInfoVO extends AlipayObject {
 	 */
 	@ApiField("union_rent_tag")
 	private String unionRentTag;
+
+	public Date getPromisedSendTime() {
+		return this.promisedSendTime;
+	}
+	public void setPromisedSendTime(Date promisedSendTime) {
+		this.promisedSendTime = promisedSendTime;
+	}
 
 	public String getSceneId() {
 		return this.sceneId;

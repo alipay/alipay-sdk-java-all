@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.dossier.taxviolation.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-05 10:01:28
+ * @since 1.0, 2025-12-16 13:52:41
  */
 public class ZhimaCreditEpDossierTaxviolationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3322716737524297294L;
+	private static final long serialVersionUID = 7359135854414163233L;
 
 	/** 
 	 * 数据结果
@@ -21,11 +21,24 @@ public class ZhimaCreditEpDossierTaxviolationQueryResponse extends AlipayRespons
 	@ApiField("data")
 	private ZmepTaxViolationDataInfo data;
 
+	/** 
+	 * 查得标记
+	 */
+	@ApiField("data_found")
+	private Boolean dataFound;
+
 	public void setData(ZmepTaxViolationDataInfo data) {
 		this.data = data;
 	}
 	public ZmepTaxViolationDataInfo getData( ) {
 		return this.data;
+	}
+
+	public void setDataFound(Boolean dataFound) {
+		this.dataFound = dataFound;
+	}
+	public Boolean getDataFound( ) {
+		return this.dataFound;
 	}
 
 }

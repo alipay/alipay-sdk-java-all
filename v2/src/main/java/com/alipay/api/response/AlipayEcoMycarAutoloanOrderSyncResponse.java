@@ -1,0 +1,30 @@
+package com.alipay.api.response;
+
+import com.alipay.api.internal.mapping.ApiField;
+
+import com.alipay.api.AlipayResponse;
+
+/**
+ * ALIPAY API: alipay.eco.mycar.autoloan.order.sync response.
+ * 
+ * @author auto create
+ * @since 1.0, 2025-12-17 11:07:42
+ */
+public class AlipayEcoMycarAutoloanOrderSyncResponse extends AlipayResponse {
+
+	private static final long serialVersionUID = 7617162338126928942L;
+
+	/** 
+	 * 车生活订单号，在首次同步订单时生成并返回
+	 */
+	@ApiField("order_id")
+	private String orderId;
+
+	public void setOrderId(String orderId) {
+		this.orderId = orderId;
+	}
+	public String getOrderId( ) {
+		return this.orderId;
+	}
+
+}

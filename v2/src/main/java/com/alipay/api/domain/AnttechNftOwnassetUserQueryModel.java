@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户持仓信息获取
  *
  * @author auto create
- * @since 1.0, 2025-04-17 17:38:20
+ * @since 1.0, 2025-12-22 14:57:32
  */
 public class AnttechNftOwnassetUserQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6166243451864391892L;
+	private static final long serialVersionUID = 4392363581699839567L;
 
 	/**
 	 * 博域用户的 id

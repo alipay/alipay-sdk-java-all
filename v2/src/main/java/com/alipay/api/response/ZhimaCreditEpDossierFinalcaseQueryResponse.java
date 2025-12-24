@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.dossier.finalcase.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-04 19:07:09
+ * @since 1.0, 2025-12-18 10:07:41
  */
 public class ZhimaCreditEpDossierFinalcaseQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5523177358237793755L;
+	private static final long serialVersionUID = 7822872665975475463L;
 
 	/** 
 	 * 企业终本案件内容
@@ -21,11 +21,24 @@ public class ZhimaCreditEpDossierFinalcaseQueryResponse extends AlipayResponse {
 	@ApiField("data")
 	private EpFinalCaseDataInfo data;
 
+	/** 
+	 * 查得标记
+	 */
+	@ApiField("data_found")
+	private Boolean dataFound;
+
 	public void setData(EpFinalCaseDataInfo data) {
 		this.data = data;
 	}
 	public EpFinalCaseDataInfo getData( ) {
 		return this.data;
+	}
+
+	public void setDataFound(Boolean dataFound) {
+		this.dataFound = dataFound;
+	}
+	public Boolean getDataFound( ) {
+		return this.dataFound;
 	}
 
 }

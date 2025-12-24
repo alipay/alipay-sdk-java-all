@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询品牌信息
  *
  * @author auto create
- * @since 1.0, 2025-12-08 10:12:42
+ * @since 1.0, 2025-12-16 14:27:42
  */
 public class AlipayOpenBrandInfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8863144434938944155L;
+	private static final long serialVersionUID = 5272846733623759921L;
 
 	/**
 	 * 品牌名称

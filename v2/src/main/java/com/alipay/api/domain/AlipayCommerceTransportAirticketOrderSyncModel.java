@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 出行机票订单数据同步
  *
  * @author auto create
- * @since 1.0, 2025-07-01 17:35:43
+ * @since 1.0, 2025-12-10 15:32:28
  */
 public class AlipayCommerceTransportAirticketOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5518358979178383727L;
+	private static final long serialVersionUID = 7173892351847615465L;
 
 	/**
 	 * 订单总金额，币种：人民币，单位：元

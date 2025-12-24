@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceInvoiceOcrIdentifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7882465692284635385L;
+	private static final long serialVersionUID = 5316299291462148816L;
 
 	/** 
 	 * OCR原始解析结果列表

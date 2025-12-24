@@ -1,8 +1,10 @@
 package com.alipay.api.request;
 
+import java.util.HashMap;
 import java.util.Map;
 
-import com.alipay.api.AlipayRequest;
+import com.alipay.api.FileItem;
+import com.alipay.api.AlipayUploadRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
 import com.alipay.api.response.AlipayOfflineProviderNpassporterFaceVerifyResponse;
 import com.alipay.api.AlipayObject;
@@ -11,9 +13,9 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.provider.npassporter.face.verify request
  * 
  * @author auto create
- * @since 1.0, 2025-12-03 15:54:58
+ * @since 1.0, 2025-12-12 11:02:42
  */
-public class AlipayOfflineProviderNpassporterFaceVerifyRequest implements AlipayRequest<AlipayOfflineProviderNpassporterFaceVerifyResponse> {
+public class AlipayOfflineProviderNpassporterFaceVerifyRequest implements AlipayUploadRequest<AlipayOfflineProviderNpassporterFaceVerifyResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
@@ -22,6 +24,11 @@ public class AlipayOfflineProviderNpassporterFaceVerifyRequest implements Alipay
 	* 用户在支付宝uid
 	 */
 	private String alipayId;
+
+	/** 
+	* 文件内容
+	 */
+	private FileItem fileContent;
 
 	/** 
 	* 用户在支付宝uid
@@ -48,6 +55,13 @@ public class AlipayOfflineProviderNpassporterFaceVerifyRequest implements Alipay
 	}
 	public String getAlipayId() {
 		return this.alipayId;
+	}
+
+	public void setFileContent(FileItem fileContent) {
+		this.fileContent = fileContent;
+	}
+	public FileItem getFileContent() {
+		return this.fileContent;
 	}
 
 	public void setOpenId(String openId) {
@@ -78,11 +92,11 @@ public class AlipayOfflineProviderNpassporterFaceVerifyRequest implements Alipay
 		return this.solutionType;
 	}
 	private String terminalType;
-	private String terminalInfo;	
+	private String terminalInfo;
 	private String prodCode;
 	private String notifyUrl;
 	private String returnUrl;
-	private boolean needEncrypt=false;
+    private boolean needEncrypt=false;
 	private AlipayObject bizModel=null;
 
 	public String getNotifyUrl() {
@@ -104,7 +118,6 @@ public class AlipayOfflineProviderNpassporterFaceVerifyRequest implements Alipay
 	public String getApiVersion() {
 		return this.apiVersion;
 	}
-
 	public void setApiVersion(String apiVersion) {
 		this.apiVersion = apiVersion;
 	}
@@ -112,7 +125,7 @@ public class AlipayOfflineProviderNpassporterFaceVerifyRequest implements Alipay
 	public void setTerminalType(String terminalType){
 		this.terminalType=terminalType;
 	}
-
+	
     public String getTerminalType(){
     	return this.terminalType;
     }
@@ -123,16 +136,16 @@ public class AlipayOfflineProviderNpassporterFaceVerifyRequest implements Alipay
 
     public String getTerminalInfo(){
     	return this.terminalInfo;
-    }	
-
-	public void setProdCode(String prodCode) {
-		this.prodCode=prodCode;
-	}
-
+    }
+	
 	public String getProdCode() {
 		return this.prodCode; 
 	}
-
+	
+	public void setProdCode(String prodCode) {
+		this.prodCode=prodCode;
+	}
+    
 	public String getApiMethodName() {
 		return "alipay.offline.provider.npassporter.face.verify";
 	}
@@ -149,7 +162,7 @@ public class AlipayOfflineProviderNpassporterFaceVerifyRequest implements Alipay
 		}
 		return txtParams;
 	}
-
+	
 	public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
@@ -157,12 +170,17 @@ public class AlipayOfflineProviderNpassporterFaceVerifyRequest implements Alipay
 		this.udfParams.put(key, value);
 	}
 
+	public Map<String, FileItem> getFileParams() {
+		Map<String, FileItem> params = new HashMap<String, FileItem>();
+		params.put("file_content", this.fileContent);
+		return params;
+	}
+
 	public Class<AlipayOfflineProviderNpassporterFaceVerifyResponse> getResponseClass() {
 		return AlipayOfflineProviderNpassporterFaceVerifyResponse.class;
 	}
 	
-
-    public boolean isNeedEncrypt() {
+	 public boolean isNeedEncrypt() {
     
       return this.needEncrypt;
     }

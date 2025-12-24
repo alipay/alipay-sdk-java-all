@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppInvoiceIsvtokenReimApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8377711876158556292L;
+	private static final long serialVersionUID = 8671724595722687948L;
 
 	/**
 	 * 报销软件app对应的isv app code，由支付宝进行分配。详情参见 <a href="https://opendocs.alipay.com/open/017fwh">"推"模式发票报销</a>

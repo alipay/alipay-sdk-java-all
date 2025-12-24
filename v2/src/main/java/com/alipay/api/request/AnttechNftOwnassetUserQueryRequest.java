@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.nft.ownasset.user.query request
  * 
  * @author auto create
- * @since 1.0, 2025-04-17 17:42:27
+ * @since 1.0, 2025-12-22 14:57:41
  */
 public class AnttechNftOwnassetUserQueryRequest implements AlipayRequest<AnttechNftOwnassetUserQueryResponse> {
 

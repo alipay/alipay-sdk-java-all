@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用户资质信息
  *
  * @author auto create
- * @since 1.0, 2025-09-02 15:07:17
+ * @since 1.0, 2025-12-15 23:21:53
  */
 public class BizOpenCommonMerchantLicenseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3137273366342117725L;
+	private static final long serialVersionUID = 4557258884458178493L;
 
 	/**
 	 * 经营范围
@@ -41,11 +41,11 @@ public class BizOpenCommonMerchantLicenseInfo extends AlipayObject {
 	private String licenseName;
 
 	/**
-	 * 资质凭证图片链接,通过调用 ant.merchant.expand.indirect.image.upload(图片上传)接口返回的image_id作为参数
+	 * 资质凭证图片,通过调用 ant.merchant.expand.indirect.image.upload(图片上传)接口返回的image_id作为参数
 	 */
-	@ApiListField("license_urls")
+	@ApiListField("license_pics")
 	@ApiField("string")
-	private List<String> licenseUrls;
+	private List<String> licensePics;
 
 	/**
 	 * 注册地址
@@ -87,11 +87,11 @@ public class BizOpenCommonMerchantLicenseInfo extends AlipayObject {
 		this.licenseName = licenseName;
 	}
 
-	public List<String> getLicenseUrls() {
-		return this.licenseUrls;
+	public List<String> getLicensePics() {
+		return this.licensePics;
 	}
-	public void setLicenseUrls(List<String> licenseUrls) {
-		this.licenseUrls = licenseUrls;
+	public void setLicensePics(List<String> licensePics) {
+		this.licensePics = licensePics;
 	}
 
 	public String getRegCapital() {

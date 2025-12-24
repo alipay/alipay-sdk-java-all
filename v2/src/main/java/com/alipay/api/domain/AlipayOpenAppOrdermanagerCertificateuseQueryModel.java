@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 端外应用查询订单核销记录
  *
  * @author auto create
- * @since 1.0, 2025-10-21 19:20:59
+ * @since 1.0, 2025-12-15 16:29:57
  */
 public class AlipayOpenAppOrdermanagerCertificateuseQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2555942171915864173L;
+	private static final long serialVersionUID = 6585572284835818932L;
 
 	/**
 	 * 分页页码

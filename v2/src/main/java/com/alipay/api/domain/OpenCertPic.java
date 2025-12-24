@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenCertPic extends AlipayObject {
 
-	private static final long serialVersionUID = 8781872371553552885L;
+	private static final long serialVersionUID = 1561523297586623147L;
 
 	/**
 	 * 图片的base64字符串，不需要base64头(data:image/jpeg;base64,)

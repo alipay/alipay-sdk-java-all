@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMerchantQipanCrowduserDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4544987989346293896L;
+	private static final long serialVersionUID = 8614481548217321983L;
 
 	/**
 	 * 支付宝人群code

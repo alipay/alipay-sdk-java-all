@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.inteop.settle.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-02 21:16:17
+ * @since 1.0, 2025-12-16 10:17:42
  */
 public class AlipayOpenSpInteopSettleCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8816678452449459599L;
+	private static final long serialVersionUID = 1263154967312169725L;
 
 	/** 
 	 * 一体化作业子项申请单号

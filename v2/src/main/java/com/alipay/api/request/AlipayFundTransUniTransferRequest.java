@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.trans.uni.transfer request
  * 
  * @author auto create
- * @since 1.0, 2025-12-02 04:02:41
+ * @since 1.0, 2025-12-11 11:27:41
  */
 public class AlipayFundTransUniTransferRequest implements AlipayRequest<AlipayFundTransUniTransferResponse> {
 

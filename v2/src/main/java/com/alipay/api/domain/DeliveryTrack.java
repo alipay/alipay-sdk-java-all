@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 健康服务物流轨迹
  *
  * @author auto create
- * @since 1.0, 2025-10-30 11:06:49
+ * @since 1.0, 2025-12-08 20:22:40
  */
 public class DeliveryTrack extends AlipayObject {
 
-	private static final long serialVersionUID = 7182671818472934444L;
+	private static final long serialVersionUID = 6857155939218292832L;
 
 	/**
 	 * 预计送达时间段
@@ -66,6 +66,18 @@ public class DeliveryTrack extends AlipayObject {
 	 */
 	@ApiField("remaining_distance_km")
 	private String remainingDistanceKm;
+
+	/**
+	 * 门店纬度
+	 */
+	@ApiField("shop_latitude")
+	private String shopLatitude;
+
+	/**
+	 * 门店经度
+	 */
+	@ApiField("shop_longitude")
+	private String shopLongitude;
 
 	public HealthServiceTimeslot getArriveTimeslot() {
 		return this.arriveTimeslot;
@@ -128,6 +140,20 @@ public class DeliveryTrack extends AlipayObject {
 	}
 	public void setRemainingDistanceKm(String remainingDistanceKm) {
 		this.remainingDistanceKm = remainingDistanceKm;
+	}
+
+	public String getShopLatitude() {
+		return this.shopLatitude;
+	}
+	public void setShopLatitude(String shopLatitude) {
+		this.shopLatitude = shopLatitude;
+	}
+
+	public String getShopLongitude() {
+		return this.shopLongitude;
+	}
+	public void setShopLongitude(String shopLongitude) {
+		this.shopLongitude = shopLongitude;
 	}
 
 }

@@ -9,22 +9,24 @@ import com.alipay.api.internal.mapping.ApiField;
  * 结算信息列表
  *
  * @author auto create
- * @since 1.0, 2025-06-24 19:18:35
+ * @since 1.0, 2025-12-18 20:04:15
  */
 public class SeltInfoList extends AlipayObject {
 
-	private static final long serialVersionUID = 2471853538314425777L;
+	private static final long serialVersionUID = 4895126285929429648L;
 
 	/**
-	 * 商保码理赔?额
+	 * 商保码理赔金额
 单位：元
-保留俩位?数
+保留俩位小数
 	 */
 	@ApiField("advance_pay")
 	private String advancePay;
 
 	/**
 	 * 报销金额
+单位：元
+保留俩位小数
 	 */
 	@ApiField("claim_amount")
 	private String claimAmount;
@@ -60,9 +62,9 @@ public class SeltInfoList extends AlipayObject {
 	private String fundOpstOrgNm;
 
 	/**
-	 * 个?理赔?额
+	 * 个人理赔金额
 单位：元
-保留俩位?数
+保留俩位小数
 	 */
 	@ApiField("personal_pay")
 	private String personalPay;

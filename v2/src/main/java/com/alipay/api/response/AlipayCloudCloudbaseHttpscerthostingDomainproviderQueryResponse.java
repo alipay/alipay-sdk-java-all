@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudCloudbaseHttpscerthostingDomainproviderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7779148894775894227L;
+	private static final long serialVersionUID = 1368531714398559216L;
 
 	/** 
 	 * DNS服务提供商列表

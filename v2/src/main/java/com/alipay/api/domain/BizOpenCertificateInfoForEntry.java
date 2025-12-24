@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 证件信息
  *
  * @author auto create
- * @since 1.0, 2025-09-02 15:07:17
+ * @since 1.0, 2025-12-15 23:21:53
  */
 public class BizOpenCertificateInfoForEntry extends AlipayObject {
 
-	private static final long serialVersionUID = 8192183162498242432L;
+	private static final long serialVersionUID = 7393382446997873837L;
 
 	/**
 	 * 证件名称
@@ -31,15 +31,15 @@ public class BizOpenCertificateInfoForEntry extends AlipayObject {
 	/**
 	 * 证件图片类型
 	 */
-	@ApiField("cert_pic_url_type")
-	private String certPicUrlType;
+	@ApiField("cert_pic_type")
+	private String certPicType;
 
 	/**
-	 * 证件图片地址
+	 * 证件图片,通过调用 ant.merchant.expand.indirect.image.upload(图片上传)接口返回的image_id作为参数
 	 */
-	@ApiListField("cert_pic_urls")
+	@ApiListField("cert_pics")
 	@ApiField("string")
-	private List<String> certPicUrls;
+	private List<String> certPics;
 
 	/**
 	 * 证件类型
@@ -73,18 +73,18 @@ public class BizOpenCertificateInfoForEntry extends AlipayObject {
 		this.certNo = certNo;
 	}
 
-	public String getCertPicUrlType() {
-		return this.certPicUrlType;
+	public String getCertPicType() {
+		return this.certPicType;
 	}
-	public void setCertPicUrlType(String certPicUrlType) {
-		this.certPicUrlType = certPicUrlType;
+	public void setCertPicType(String certPicType) {
+		this.certPicType = certPicType;
 	}
 
-	public List<String> getCertPicUrls() {
-		return this.certPicUrls;
+	public List<String> getCertPics() {
+		return this.certPics;
 	}
-	public void setCertPicUrls(List<String> certPicUrls) {
-		this.certPicUrls = certPicUrls;
+	public void setCertPics(List<String> certPics) {
+		this.certPics = certPics;
 	}
 
 	public String getCertType() {

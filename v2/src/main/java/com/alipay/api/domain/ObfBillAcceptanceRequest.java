@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 计财账单受理请求模型
  *
  * @author auto create
- * @since 1.0, 2024-03-28 16:35:46
+ * @since 1.0, 2025-12-15 16:55:31
  */
 public class ObfBillAcceptanceRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 3198288839165874769L;
+	private static final long serialVersionUID = 5518615859585289425L;
 
 	/**
 	 * 分摊规则-一次性计收/按时长分摊

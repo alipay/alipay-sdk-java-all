@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询品牌认证信息
  *
  * @author auto create
- * @since 1.0, 2025-12-08 10:12:42
+ * @since 1.0, 2025-12-16 14:27:42
  */
 public class AlipayOpenBrandAuthQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2319719756955587352L;
+	private static final long serialVersionUID = 7765379392385627434L;
 
 	/**
 	 * true:只返回已授权,false:返回已授权+未授权

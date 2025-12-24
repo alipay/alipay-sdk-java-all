@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.inteop.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-02 21:16:13
+ * @since 1.0, 2025-12-16 10:17:42
  */
 public class AlipayOpenSpInteopOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1777434941165715677L;
+	private static final long serialVersionUID = 8432444382497666569L;
 
 	/** 
 	 * 一体化作业主单号
@@ -35,6 +35,12 @@ public class AlipayOpenSpInteopOrderQueryResponse extends AlipayResponse {
 	@ApiListField("inteop_sub_order_infos")
 	@ApiField("inte_op_sub_order_info")
 	private List<InteOpSubOrderInfo> inteopSubOrderInfos;
+
+	/** 
+	 * 商户号
+	 */
+	@ApiField("merchant_oid")
+	private String merchantOid;
 
 	/** 
 	 * 待办二维码跳转链接
@@ -73,6 +79,13 @@ public class AlipayOpenSpInteopOrderQueryResponse extends AlipayResponse {
 	}
 	public List<InteOpSubOrderInfo> getInteopSubOrderInfos( ) {
 		return this.inteopSubOrderInfos;
+	}
+
+	public void setMerchantOid(String merchantOid) {
+		this.merchantOid = merchantOid;
+	}
+	public String getMerchantOid( ) {
+		return this.merchantOid;
 	}
 
 	public void setWpQrCode(String wpQrCode) {

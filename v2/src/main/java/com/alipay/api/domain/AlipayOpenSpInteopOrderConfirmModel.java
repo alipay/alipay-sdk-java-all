@@ -7,17 +7,30 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务商一体化开通作业提交子项开通单
  *
  * @author auto create
- * @since 1.0, 2025-10-23 20:35:18
+ * @since 1.0, 2025-12-15 23:22:04
  */
 public class AlipayOpenSpInteopOrderConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1417548846113496753L;
+	private static final long serialVersionUID = 1895568494916621855L;
+
+	/**
+	 * 选择异步提交，根据alipay.open.sp.inteop.order.query接口查询订单提交结果
+	 */
+	@ApiField("async_submit")
+	private Boolean asyncSubmit;
 
 	/**
 	 * 服务商一体化作业主单号
 	 */
 	@ApiField("inteop_order_no")
 	private String inteopOrderNo;
+
+	public Boolean getAsyncSubmit() {
+		return this.asyncSubmit;
+	}
+	public void setAsyncSubmit(Boolean asyncSubmit) {
+		this.asyncSubmit = asyncSubmit;
+	}
 
 	public String getInteopOrderNo() {
 		return this.inteopOrderNo;

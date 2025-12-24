@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.ep.dossier.taxviolation.query request
  * 
  * @author auto create
- * @since 1.0, 2025-12-05 10:01:28
+ * @since 1.0, 2025-12-16 13:52:41
  */
 public class ZhimaCreditEpDossierTaxviolationQueryRequest implements AlipayRequest<ZhimaCreditEpDossierTaxviolationQueryResponse> {
 

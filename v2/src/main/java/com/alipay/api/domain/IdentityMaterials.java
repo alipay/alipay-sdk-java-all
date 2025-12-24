@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商保码-理赔案件申请-申请材料
  *
  * @author auto create
- * @since 1.0, 2025-10-29 17:38:45
+ * @since 1.0, 2025-12-24 09:34:29
  */
 public class IdentityMaterials extends AlipayObject {
 
-	private static final long serialVersionUID = 5786218133758297548L;
+	private static final long serialVersionUID = 2769831824524566545L;
 
 	/**
 	 * 补充材料话术
@@ -27,6 +27,12 @@ public class IdentityMaterials extends AlipayObject {
 	 */
 	@ApiField("material_content")
 	private String materialContent;
+
+	/**
+	 * 材料名
+	 */
+	@ApiField("material_name")
+	private String materialName;
 
 	/**
 	 * 申请材料类型
@@ -54,6 +60,13 @@ public class IdentityMaterials extends AlipayObject {
 	}
 	public void setMaterialContent(String materialContent) {
 		this.materialContent = materialContent;
+	}
+
+	public String getMaterialName() {
+		return this.materialName;
+	}
+	public void setMaterialName(String materialName) {
+		this.materialName = materialName;
 	}
 
 	public String getMaterialType() {

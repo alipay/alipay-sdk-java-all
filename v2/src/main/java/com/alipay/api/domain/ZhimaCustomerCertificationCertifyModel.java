@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCustomerCertificationCertifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1787168747169767439L;
+	private static final long serialVersionUID = 6579952664736693936L;
 
 	/**
 	 * 一次认证的唯一标识，在完成芝麻认证初始化后可以获取

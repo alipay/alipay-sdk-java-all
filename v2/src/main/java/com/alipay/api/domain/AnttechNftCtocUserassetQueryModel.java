@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 秒转用户资产查询
  *
  * @author auto create
- * @since 1.0, 2025-11-18 21:12:42
+ * @since 1.0, 2025-12-22 14:57:41
  */
 public class AnttechNftCtocUserassetQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7529566496213188119L;
+	private static final long serialVersionUID = 3838497858636932878L;
 
 	/**
 	 * 用户id

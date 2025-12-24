@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.serviceai.streamchat.query request
  * 
  * @author auto create
- * @since 1.0, 2025-11-20 10:12:41
+ * @since 1.0, 2025-12-16 10:42:50
  */
 public class AlipayCommerceMedicalServiceaiStreamchatQueryRequest implements AlipayRequest<AlipayCommerceMedicalServiceaiStreamchatQueryResponse> {
 

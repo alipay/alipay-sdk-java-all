@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.dossier.litigationnotice.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-04 19:06:46
+ * @since 1.0, 2025-12-18 10:17:43
  */
 public class ZhimaCreditEpDossierLitigationnoticeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8471992941766649856L;
+	private static final long serialVersionUID = 8691571582169484255L;
 
 	/** 
 	 * 企业涉诉公告内容
@@ -21,11 +21,24 @@ public class ZhimaCreditEpDossierLitigationnoticeQueryResponse extends AlipayRes
 	@ApiField("data")
 	private EpLitigationNoticeDataInfo data;
 
+	/** 
+	 * 查得标记
+	 */
+	@ApiField("data_found")
+	private Boolean dataFound;
+
 	public void setData(EpLitigationNoticeDataInfo data) {
 		this.data = data;
 	}
 	public EpLitigationNoticeDataInfo getData( ) {
 		return this.data;
+	}
+
+	public void setDataFound(Boolean dataFound) {
+		this.dataFound = dataFound;
+	}
+	public Boolean getDataFound( ) {
+		return this.dataFound;
 	}
 
 }

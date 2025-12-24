@@ -7,17 +7,24 @@ import com.alipay.api.internal.mapping.ApiField;
  * 承保状态查询
  *
  * @author auto create
- * @since 1.0, 2025-11-19 15:47:34
+ * @since 1.0, 2025-12-17 10:59:26
  */
 public class AlipayCommerceDecorationPolicystatusQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8128589777499325972L;
+	private static final long serialVersionUID = 7675392211493559874L;
 
 	/**
-	 * 订单号
+	 * 订单号。out_order_no与order_no二选一
 	 */
 	@ApiField("order_no")
 	private String orderNo;
+
+	/**
+	 * 外部订单号。
+out_order_no与order_no二选一
+	 */
+	@ApiField("out_order_no")
+	private String outOrderNo;
 
 	/**
 	 * 保险产品编码
@@ -30,6 +37,13 @@ public class AlipayCommerceDecorationPolicystatusQueryModel extends AlipayObject
 	}
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
+	}
+
+	public String getOutOrderNo() {
+		return this.outOrderNo;
+	}
+	public void setOutOrderNo(String outOrderNo) {
+		this.outOrderNo = outOrderNo;
 	}
 
 	public String getProductCode() {

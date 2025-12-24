@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.dossier.businesscompetition.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-04 19:07:10
+ * @since 1.0, 2025-12-18 10:07:42
  */
 public class ZhimaCreditEpDossierBusinesscompetitionQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8384634475618729616L;
+	private static final long serialVersionUID = 4549159497229759375L;
 
 	/** 
 	 * 企业业务竞争内容
@@ -21,11 +21,24 @@ public class ZhimaCreditEpDossierBusinesscompetitionQueryResponse extends Alipay
 	@ApiField("data")
 	private EpBusinessCompetitionDataInfo data;
 
+	/** 
+	 * 查得标记
+	 */
+	@ApiField("data_found")
+	private Boolean dataFound;
+
 	public void setData(EpBusinessCompetitionDataInfo data) {
 		this.data = data;
 	}
 	public EpBusinessCompetitionDataInfo getData( ) {
 		return this.data;
+	}
+
+	public void setDataFound(Boolean dataFound) {
+		this.dataFound = dataFound;
+	}
+	public Boolean getDataFound( ) {
+		return this.dataFound;
 	}
 
 }

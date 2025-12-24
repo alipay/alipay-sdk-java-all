@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.multideduct.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-03 14:54:28
+ * @since 1.0, 2025-12-17 10:42:42
  */
 public class AlipayCommerceEducateMultideductQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8857444657988757384L;
+	private static final long serialVersionUID = 1633726889314281275L;
 
 	/** 
 	 * 支付宝协议支付的协议号。OPEN时返回
@@ -31,6 +31,12 @@ public class AlipayCommerceEducateMultideductQueryResponse extends AlipayRespons
 	 */
 	@ApiField("asset")
 	private String asset;
+
+	/** 
+	 * 如果有配置阈值信息，返回小荷包id，和余额是否充足
+	 */
+	@ApiField("asset_info")
+	private String assetInfo;
 
 	/** 
 	 * 用于标记支付宝用户在应用下的唯一标识
@@ -75,6 +81,13 @@ public class AlipayCommerceEducateMultideductQueryResponse extends AlipayRespons
 	}
 	public String getAsset( ) {
 		return this.asset;
+	}
+
+	public void setAssetInfo(String assetInfo) {
+		this.assetInfo = assetInfo;
+	}
+	public String getAssetInfo( ) {
+		return this.assetInfo;
 	}
 
 	public void setOpenId(String openId) {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 处理消费者投诉
  *
  * @author auto create
- * @since 1.0, 2025-11-07 16:23:28
+ * @since 1.0, 2025-12-16 15:20:13
  */
 public class AlipaySecurityRiskComplaintProcessFinishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6758884772283182518L;
+	private static final long serialVersionUID = 2249136853312268516L;
 
 	/**
 	 * 本次进行处理的投诉id列表(主表主键)
@@ -42,6 +42,12 @@ public class AlipaySecurityRiskComplaintProcessFinishModel extends AlipayObject 
 	@ApiField("remark")
 	private String remark;
 
+	/**
+	 * 该功能为在客诉工单完结对客留言，切勿出现带有辱骂词语。
+	 */
+	@ApiField("reply_content")
+	private String replyContent;
+
 	public List<Long> getIdList() {
 		return this.idList;
 	}
@@ -68,6 +74,13 @@ public class AlipaySecurityRiskComplaintProcessFinishModel extends AlipayObject 
 	}
 	public void setRemark(String remark) {
 		this.remark = remark;
+	}
+
+	public String getReplyContent() {
+		return this.replyContent;
+	}
+	public void setReplyContent(String replyContent) {
+		this.replyContent = replyContent;
 	}
 
 }

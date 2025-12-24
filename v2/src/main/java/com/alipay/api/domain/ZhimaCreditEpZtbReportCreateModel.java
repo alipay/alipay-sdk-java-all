@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻企业信用招投标报告创建请求
  *
  * @author auto create
- * @since 1.0, 2025-07-02 16:55:17
+ * @since 1.0, 2025-12-16 10:26:18
  */
 public class ZhimaCreditEpZtbReportCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2385539921629883946L;
+	private static final long serialVersionUID = 7253567871635898665L;
 
 	/**
 	 * 招标类型，属于多种类型的话，用-拼接。例如采购中标-工程中标-服务中标

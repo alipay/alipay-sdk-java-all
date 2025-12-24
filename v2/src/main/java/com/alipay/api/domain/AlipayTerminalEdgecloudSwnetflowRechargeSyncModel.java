@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayTerminalEdgecloudSwnetflowRechargeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1176665669447183748L;
+	private static final long serialVersionUID = 4771249378253816282L;
 
 	/**
 	 * 同步流量卡充值单状态

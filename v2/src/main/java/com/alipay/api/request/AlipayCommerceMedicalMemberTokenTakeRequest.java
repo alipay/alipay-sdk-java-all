@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.member.token.take request
  * 
  * @author auto create
- * @since 1.0, 2025-12-03 14:56:51
+ * @since 1.0, 2025-12-12 16:05:38
  */
 public class AlipayCommerceMedicalMemberTokenTakeRequest implements AlipayRequest<AlipayCommerceMedicalMemberTokenTakeResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业码账单开放模型
  *
  * @author auto create
- * @since 1.0, 2025-11-15 10:22:44
+ * @since 1.0, 2025-12-15 16:07:53
  */
 public class EcConsumeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4657287245149955823L;
+	private static final long serialVersionUID = 1668515934888437696L;
 
 	/**
 	 * 共同账户ID
@@ -118,7 +118,7 @@ public class EcConsumeInfo extends AlipayObject {
 	private String expenseRuleGroupId;
 
 	/**
-	 * 费用场景
+	 * 费用场景/一级场景
 	 */
 	@ApiField("expense_scene_code")
 	private String expenseSceneCode;
@@ -130,7 +130,7 @@ public class EcConsumeInfo extends AlipayObject {
 	private String expenseType;
 
 	/**
-	 * 费用类型子类目
+	 * 费用类型子类目/二级场景
 	 */
 	@ApiField("expense_type_sub_category")
 	private String expenseTypeSubCategory;

@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.decoration.policyunderwriting.consult response.
  * 
  * @author auto create
- * @since 1.0, 2025-11-20 13:32:41
+ * @since 1.0, 2025-12-17 11:02:42
  */
 public class AlipayCommerceDecorationPolicyunderwritingConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2296759531362771965L;
+	private static final long serialVersionUID = 1568246832191766863L;
 
 	/** 
 	 * 消息
@@ -29,6 +29,12 @@ public class AlipayCommerceDecorationPolicyunderwritingConsultResponse extends A
 	 */
 	@ApiField("order_no")
 	private String orderNo;
+
+	/** 
+	 * 外部订单号。不可重复,幂等字段
+	 */
+	@ApiField("out_order_no")
+	private String outOrderNo;
 
 	/** 
 	 * 保障截止日期
@@ -58,6 +64,21 @@ UNDERWRITING_SUCCESS-核保成功 UNDERWRITING_FAILURE-核保失败 POLICY_ISSUE
 	private Long premium;
 
 	/** 
+	 * 保险计划code
+家财: JiaCai
+团意1:TuanYi1
+团意2:TuanYi2
+	 */
+	@ApiField("product_code")
+	private String productCode;
+
+	/** 
+	 * 项目编号或合同编号
+	 */
+	@ApiField("project_id")
+	private String projectId;
+
+	/** 
 	 * 子订单列表
 	 */
 	@ApiListField("sub_order_no_list")
@@ -82,6 +103,13 @@ UNDERWRITING_SUCCESS-核保成功 UNDERWRITING_FAILURE-核保失败 POLICY_ISSUE
 	}
 	public String getOrderNo( ) {
 		return this.orderNo;
+	}
+
+	public void setOutOrderNo(String outOrderNo) {
+		this.outOrderNo = outOrderNo;
+	}
+	public String getOutOrderNo( ) {
+		return this.outOrderNo;
 	}
 
 	public void setPolicyEndDate(Date policyEndDate) {
@@ -110,6 +138,20 @@ UNDERWRITING_SUCCESS-核保成功 UNDERWRITING_FAILURE-核保失败 POLICY_ISSUE
 	}
 	public Long getPremium( ) {
 		return this.premium;
+	}
+
+	public void setProductCode(String productCode) {
+		this.productCode = productCode;
+	}
+	public String getProductCode( ) {
+		return this.productCode;
+	}
+
+	public void setProjectId(String projectId) {
+		this.projectId = projectId;
+	}
+	public String getProjectId( ) {
+		return this.projectId;
 	}
 
 	public void setSubOrderNoList(List<SubOrderVO> subOrderNoList) {

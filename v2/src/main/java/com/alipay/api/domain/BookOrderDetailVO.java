@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单详情
  *
  * @author auto create
- * @since 1.0, 2025-09-19 18:00:49
+ * @since 1.0, 2025-12-22 11:08:47
  */
 public class BookOrderDetailVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2523155965664274143L;
+	private static final long serialVersionUID = 6122161331721258382L;
+
+	/**
+	 * 订单扩展信息
+	 */
+	@ApiField("attr_info")
+	private BooKAttributesDTO attrInfo;
 
 	/**
 	 * 预约信息
@@ -28,6 +34,13 @@ public class BookOrderDetailVO extends AlipayObject {
 	 */
 	@ApiField("book_order")
 	private BookOrderVO bookOrder;
+
+	public BooKAttributesDTO getAttrInfo() {
+		return this.attrInfo;
+	}
+	public void setAttrInfo(BooKAttributesDTO attrInfo) {
+		this.attrInfo = attrInfo;
+	}
 
 	public List<BookInfoVO> getBookInfos() {
 		return this.bookInfos;

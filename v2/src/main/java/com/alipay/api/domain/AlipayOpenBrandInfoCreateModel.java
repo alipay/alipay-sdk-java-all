@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 添加品牌信息
  *
  * @author auto create
- * @since 1.0, 2025-12-08 10:10:43
+ * @since 1.0, 2025-12-16 14:27:42
  */
 public class AlipayOpenBrandInfoCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7324721397364414284L;
+	private static final long serialVersionUID = 3386893731674454774L;
 
 	/**
 	 * 品牌英文名/英文名至少填写一个

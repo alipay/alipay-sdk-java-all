@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建审批单
  *
  * @author auto create
- * @since 1.0, 2025-08-06 11:02:51
+ * @since 1.0, 2025-12-11 14:06:44
  */
 public class AlipayCommerceEcApprovalCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2758354655154985164L;
+	private static final long serialVersionUID = 5553424516532571156L;
 
 	/**
 	 * 申请结束时间
@@ -61,7 +61,7 @@ public class AlipayCommerceEcApprovalCreateModel extends AlipayObject {
 	private List<String> institutionIdList;
 
 	/**
-	 * 用于保存外部扩展信息内容，如差旅预估金额
+	 * 用于保存外部扩展信息内容，如差旅预估金额（元）
 	 */
 	@ApiField("out_ext")
 	private String outExt;

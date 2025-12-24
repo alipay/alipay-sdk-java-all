@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.isportal.enterpriseuser.createormodify request
  * 
  * @author auto create
- * @since 1.0, 2025-08-11 22:07:35
+ * @since 1.0, 2025-12-11 10:47:42
  */
 public class AlipayIserviceIsportalEnterpriseuserCreateormodifyRequest implements AlipayRequest<AlipayIserviceIsportalEnterpriseuserCreateormodifyResponse> {
 

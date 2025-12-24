@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-12-01 17:45:34
+ * @since 1.0, 2025-12-09 11:22:41
  */
 public class OfflineLaborProjectRegistRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 5721939335376393981L;
+	private static final long serialVersionUID = 2846463983491364751L;
 
 	/**
 	 * 用户支付宝账号
@@ -110,6 +110,12 @@ public class OfflineLaborProjectRegistRecord extends AlipayObject {
 	 */
 	@ApiField("register_time")
 	private String registerTime;
+
+	/**
+	 * 描述社会风险信息
+	 */
+	@ApiField("social_risk_desc")
+	private String socialRiskDesc;
 
 	/**
 	 * 社会风险信息
@@ -239,6 +245,13 @@ public class OfflineLaborProjectRegistRecord extends AlipayObject {
 	}
 	public void setRegisterTime(String registerTime) {
 		this.registerTime = registerTime;
+	}
+
+	public String getSocialRiskDesc() {
+		return this.socialRiskDesc;
+	}
+	public void setSocialRiskDesc(String socialRiskDesc) {
+		this.socialRiskDesc = socialRiskDesc;
 	}
 
 	public Boolean getSocialRiskInfo() {

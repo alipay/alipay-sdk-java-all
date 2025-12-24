@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntfortuneFinresearchSessionDetailModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6428139335162892334L;
+	private static final long serialVersionUID = 1687741512559389756L;
 
 	/**
 	 * 本次会话的主体ID

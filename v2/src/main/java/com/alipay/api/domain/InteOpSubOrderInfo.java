@@ -1,23 +1,33 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 一体化作业项订单结构信息
  *
  * @author auto create
- * @since 1.0, 2025-09-02 15:07:52
+ * @since 1.0, 2025-12-15 23:21:38
  */
 public class InteOpSubOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5533929346378391675L;
+	private static final long serialVersionUID = 7493481755437643848L;
 
 	/**
 	 * 备注
 	 */
 	@ApiField("memo")
 	private String memo;
+
+	/**
+	 * 一体化作业商户门店信息
+	 */
+	@ApiListField("shop_infos")
+	@ApiField("inte_op_shop_info_v_o")
+	private List<InteOpShopInfoVO> shopInfos;
 
 	/**
 	 * 一体化作业子项单号
@@ -42,6 +52,13 @@ public class InteOpSubOrderInfo extends AlipayObject {
 	}
 	public void setMemo(String memo) {
 		this.memo = memo;
+	}
+
+	public List<InteOpShopInfoVO> getShopInfos() {
+		return this.shopInfos;
+	}
+	public void setShopInfos(List<InteOpShopInfoVO> shopInfos) {
+		this.shopInfos = shopInfos;
 	}
 
 	public String getSubOrderNo() {

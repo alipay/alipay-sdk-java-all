@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 收结易扩展字段
  *
  * @author auto create
- * @since 1.0, 2025-11-13 10:45:25
+ * @since 1.0, 2025-12-10 14:26:27
  */
 public class UnifiedSettleExtendParams extends AlipayObject {
 
-	private static final long serialVersionUID = 8899863196316413263L;
+	private static final long serialVersionUID = 7328643599548352766L;
 
 	/**
 	 * 提现到银行卡备注
@@ -49,6 +49,12 @@ public class UnifiedSettleExtendParams extends AlipayObject {
 	 */
 	@ApiField("settle_mode")
 	private String settleMode;
+
+	/**
+	 * 支付宝交易号，用于支付宝退款准备入金的相关校验
+	 */
+	@ApiField("trade_no")
+	private String tradeNo;
 
 	/**
 	 * 用于指定收结易订单的附言，可用于对账
@@ -96,6 +102,13 @@ public class UnifiedSettleExtendParams extends AlipayObject {
 	}
 	public void setSettleMode(String settleMode) {
 		this.settleMode = settleMode;
+	}
+
+	public String getTradeNo() {
+		return this.tradeNo;
+	}
+	public void setTradeNo(String tradeNo) {
+		this.tradeNo = tradeNo;
 	}
 
 	public String getTransMemo() {

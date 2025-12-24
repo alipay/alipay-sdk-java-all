@@ -4,6 +4,7 @@ import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.RentRiskProVO;
+import com.alipay.api.domain.ConsultFailReason;
 import com.alipay.api.domain.RiskBasicInfoVO;
 import com.alipay.api.domain.RentRiskInfoVO;
 import com.alipay.api.domain.ShipGoodsRiskVO;
@@ -14,17 +15,24 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.rent.risk.consult response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-08 12:12:49
+ * @since 1.0, 2025-12-09 20:37:41
  */
 public class AlipayCommerceRentRiskConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4586894195148898667L;
+	private static final long serialVersionUID = 1649217596576498973L;
 
 	/** 
 	 * Tn_Level类型结果，risk_level字段取值范围T1-T10（T1 ~ T4: 低风险；T5 ~ T6: 中风险；T7 ~ T8: 高风险；T9 ~ T10: 极高风险）
 	 */
 	@ApiField("comprehensive_risk_models")
 	private RentRiskProVO comprehensiveRiskModels;
+
+	/** 
+	 * null
+	 */
+	@ApiListField("consult_fail_reason")
+	@ApiField("consult_fail_reason")
+	private List<ConsultFailReason> consultFailReason;
 
 	/** 
 	 * Boolean类型结果，true-命中极低风险 false-未命中极低风险
@@ -76,6 +84,13 @@ PRO-租安盾专业版，面向签约商户；
 	}
 	public RentRiskProVO getComprehensiveRiskModels( ) {
 		return this.comprehensiveRiskModels;
+	}
+
+	public void setConsultFailReason(List<ConsultFailReason> consultFailReason) {
+		this.consultFailReason = consultFailReason;
+	}
+	public List<ConsultFailReason> getConsultFailReason( ) {
+		return this.consultFailReason;
 	}
 
 	public void setExtremelyLowRiskModels(RentRiskProVO extremelyLowRiskModels) {

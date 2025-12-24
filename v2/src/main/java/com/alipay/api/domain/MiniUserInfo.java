@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 核销使用人信息
  *
  * @author auto create
- * @since 1.0, 2025-10-21 19:20:59
+ * @since 1.0, 2025-12-15 16:29:57
  */
 public class MiniUserInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5213817633468215299L;
+	private static final long serialVersionUID = 8233163388284894391L;
 
 	/**
 	 * 使用人联系方式，脱敏展示

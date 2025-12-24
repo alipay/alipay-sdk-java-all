@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsuClaimRecordVo extends AlipayObject {
 
-	private static final long serialVersionUID = 2741666952287514317L;
+	private static final long serialVersionUID = 8136238499537684278L;
 
 	/**
 	 * accident_date+不唯一+供应商同步理赔报案进度+枚举值(无)+用户申请理赔时赋值+特殊说明(无)

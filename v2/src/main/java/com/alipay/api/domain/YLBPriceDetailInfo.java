@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class YLBPriceDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6518259631452161424L;
+	private static final long serialVersionUID = 4891564529743722465L;
 
 	/**
 	 * 余利宝行情日期，格式为yyyy-MM-dd HH:mm:ss

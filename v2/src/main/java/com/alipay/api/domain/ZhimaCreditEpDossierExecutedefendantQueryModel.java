@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业被执行人查询
  *
  * @author auto create
- * @since 1.0, 2024-12-24 14:42:19
+ * @since 1.0, 2025-12-16 13:45:03
  */
 public class ZhimaCreditEpDossierExecutedefendantQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3777817845528886448L;
+	private static final long serialVersionUID = 5421473343518274526L;
 
 	/**
 	 * 企业注册号或统一社会信用代码，一般为18位

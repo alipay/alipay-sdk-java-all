@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.dossier.patent.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-04 19:06:41
+ * @since 1.0, 2025-12-18 10:17:42
  */
 public class ZhimaCreditEpDossierPatentQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3749557837696485775L;
+	private static final long serialVersionUID = 5868686237466165744L;
 
 	/** 
 	 * 查询专利内容
@@ -21,11 +21,24 @@ public class ZhimaCreditEpDossierPatentQueryResponse extends AlipayResponse {
 	@ApiField("data")
 	private EpPatentDataInfo data;
 
+	/** 
+	 * 查得标记
+	 */
+	@ApiField("data_found")
+	private Boolean dataFound;
+
 	public void setData(EpPatentDataInfo data) {
 		this.data = data;
 	}
 	public EpPatentDataInfo getData( ) {
 		return this.data;
+	}
+
+	public void setDataFound(Boolean dataFound) {
+		this.dataFound = dataFound;
+	}
+	public Boolean getDataFound( ) {
+		return this.dataFound;
 	}
 
 }

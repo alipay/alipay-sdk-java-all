@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceHdfaitransferPictureocrIdentifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5126366662124842455L;
+	private static final long serialVersionUID = 6632435977892336427L;
 
 	/** 
 	 * ocr识别结果，结果中包含制表符\t和换行符\n

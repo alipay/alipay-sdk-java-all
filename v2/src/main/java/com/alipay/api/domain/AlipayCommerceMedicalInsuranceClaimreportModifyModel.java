@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 更新理赔单状态
  *
  * @author auto create
- * @since 1.0, 2025-10-29 17:38:45
+ * @since 1.0, 2025-12-24 10:49:26
  */
 public class AlipayCommerceMedicalInsuranceClaimreportModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8149915787245219254L;
+	private static final long serialVersionUID = 8129168786685849726L;
+
+	/**
+	 * 账号信息
+	 */
+	@ApiField("account_info")
+	private PolicyAccountInfoModel accountInfo;
 
 	/**
 	 * 保司理赔申请号
@@ -35,6 +41,12 @@ public class AlipayCommerceMedicalInsuranceClaimreportModifyModel extends Alipay
 	private Boolean caseReopened;
 
 	/**
+	 * 理赔撤销状态下，结算数据是否允许重新提交
+	 */
+	@ApiField("case_setl_reapply")
+	private Boolean caseSetlReapply;
+
+	/**
 	 * 证件号
 	 */
 	@ApiField("cert_no")
@@ -47,10 +59,23 @@ public class AlipayCommerceMedicalInsuranceClaimreportModifyModel extends Alipay
 	private String certType;
 
 	/**
+	 * 理赔详情结构化数据字符串，用于支付宝商保码前端用户展示
+	 */
+	@ApiField("claim_detail")
+	private String claimDetail;
+
+	/**
 	 * claim_no 保司报案号
 	 */
 	@ApiField("claim_no")
 	private String claimNo;
+
+	/**
+	 * 理赔关联保单号列表
+	 */
+	@ApiListField("claim_rel_policy_no_list")
+	@ApiField("string")
+	private List<String> claimRelPolicyNoList;
 
 	/**
 	 * 报案号
@@ -90,6 +115,12 @@ public class AlipayCommerceMedicalInsuranceClaimreportModifyModel extends Alipay
 	private String name;
 
 	/**
+	 * 理赔通知书获取类型
+	 */
+	@ApiField("note_type")
+	private String noteType;
+
+	/**
 	 * 理赔通知书
 	 */
 	@ApiField("note_url")
@@ -127,7 +158,7 @@ public class AlipayCommerceMedicalInsuranceClaimreportModifyModel extends Alipay
 	private String source;
 
 	/**
-	 * 理赔总金额
+	 * 理赔总金额，单位：元
 	 */
 	@ApiField("total_claim_amount")
 	private String totalClaimAmount;
@@ -137,6 +168,13 @@ public class AlipayCommerceMedicalInsuranceClaimreportModifyModel extends Alipay
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public PolicyAccountInfoModel getAccountInfo() {
+		return this.accountInfo;
+	}
+	public void setAccountInfo(PolicyAccountInfoModel accountInfo) {
+		this.accountInfo = accountInfo;
+	}
 
 	public String getApplyNo() {
 		return this.applyNo;
@@ -159,6 +197,13 @@ public class AlipayCommerceMedicalInsuranceClaimreportModifyModel extends Alipay
 		this.caseReopened = caseReopened;
 	}
 
+	public Boolean getCaseSetlReapply() {
+		return this.caseSetlReapply;
+	}
+	public void setCaseSetlReapply(Boolean caseSetlReapply) {
+		this.caseSetlReapply = caseSetlReapply;
+	}
+
 	public String getCertNo() {
 		return this.certNo;
 	}
@@ -173,11 +218,25 @@ public class AlipayCommerceMedicalInsuranceClaimreportModifyModel extends Alipay
 		this.certType = certType;
 	}
 
+	public String getClaimDetail() {
+		return this.claimDetail;
+	}
+	public void setClaimDetail(String claimDetail) {
+		this.claimDetail = claimDetail;
+	}
+
 	public String getClaimNo() {
 		return this.claimNo;
 	}
 	public void setClaimNo(String claimNo) {
 		this.claimNo = claimNo;
+	}
+
+	public List<String> getClaimRelPolicyNoList() {
+		return this.claimRelPolicyNoList;
+	}
+	public void setClaimRelPolicyNoList(List<String> claimRelPolicyNoList) {
+		this.claimRelPolicyNoList = claimRelPolicyNoList;
 	}
 
 	public String getClaimReportNo() {
@@ -220,6 +279,13 @@ public class AlipayCommerceMedicalInsuranceClaimreportModifyModel extends Alipay
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getNoteType() {
+		return this.noteType;
+	}
+	public void setNoteType(String noteType) {
+		this.noteType = noteType;
 	}
 
 	public String getNoteUrl() {

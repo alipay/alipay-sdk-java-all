@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.educate.multideduct.query request
  * 
  * @author auto create
- * @since 1.0, 2025-12-03 14:54:28
+ * @since 1.0, 2025-12-17 10:42:42
  */
 public class AlipayCommerceEducateMultideductQueryRequest implements AlipayRequest<AlipayCommerceEducateMultideductQueryResponse> {
 

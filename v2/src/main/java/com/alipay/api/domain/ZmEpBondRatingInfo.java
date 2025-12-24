@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZmEpBondRatingInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5463193296816259155L;
+	private static final long serialVersionUID = 1242431286246865262L;
 
 	/**
 	 * 发行人名称

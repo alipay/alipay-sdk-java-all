@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PointCard extends AlipayObject {
 
-	private static final long serialVersionUID = 8316835352392118368L;
+	private static final long serialVersionUID = 6344614915236147312L;
 
 	/**
 	 * 工具的描述

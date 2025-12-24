@@ -17,6 +17,7 @@ import com.alipay.api.domain.RentInfoVO;
 import com.alipay.api.domain.MiniOrderAddressInfoDTO;
 import com.alipay.api.domain.ShopInfoDTO;
 import com.alipay.api.domain.StagePayPlanVO;
+import com.alipay.api.domain.BizUnitInfoVO;
 
 import com.alipay.api.AlipayResponse;
 
@@ -24,11 +25,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-18 19:07:40
+ * @since 1.0, 2025-12-16 16:42:42
  */
 public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6411421342712152173L;
+	private static final long serialVersionUID = 8862477241571741428L;
 
 	/** 
 	 * 订单受理信息，租赁类型订单且通过快捷下单场景特有
@@ -174,6 +175,12 @@ public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("status")
 	private String status;
+
+	/** 
+	 * 店铺信息
+	 */
+	@ApiField("store_info")
+	private BizUnitInfoVO storeInfo;
 
 	/** 
 	 * 支付单号，支付成功后会该字段会有值
@@ -353,6 +360,13 @@ public class AlipayOpenMiniOrderQueryResponse extends AlipayResponse {
 	}
 	public String getStatus( ) {
 		return this.status;
+	}
+
+	public void setStoreInfo(BizUnitInfoVO storeInfo) {
+		this.storeInfo = storeInfo;
+	}
+	public BizUnitInfoVO getStoreInfo( ) {
+		return this.storeInfo;
 	}
 
 	public void setTradeNo(String tradeNo) {

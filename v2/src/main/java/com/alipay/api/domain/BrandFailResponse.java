@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-12-08 10:10:43
+ * @since 1.0, 2025-12-16 14:27:42
  */
 public class BrandFailResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 5377744354348912712L;
+	private static final long serialVersionUID = 3754611256998463992L;
 
 	/**
 	 * 错误描述

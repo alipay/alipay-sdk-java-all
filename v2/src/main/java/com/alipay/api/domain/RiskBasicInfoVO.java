@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 风控基础信息
  *
  * @author auto create
- * @since 1.0, 2025-12-08 12:12:49
+ * @since 1.0, 2025-12-09 20:37:41
  */
 public class RiskBasicInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6182336163622866944L;
+	private static final long serialVersionUID = 5772676868855983351L;
 
 	/**
 	 * 风控策略

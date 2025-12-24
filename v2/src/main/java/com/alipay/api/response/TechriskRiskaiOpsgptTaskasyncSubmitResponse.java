@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class TechriskRiskaiOpsgptTaskasyncSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1874989786579651477L;
+	private static final long serialVersionUID = 3761753522981992628L;
 
 	/** 
 	 * 返回任务提交的结果，主要是任务id，用于后续用户使用该id情况

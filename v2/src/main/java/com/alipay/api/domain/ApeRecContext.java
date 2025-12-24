@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ApeRecContext extends AlipayObject {
 
-	private static final long serialVersionUID = 7388485939489957594L;
+	private static final long serialVersionUID = 6159596979819734417L;
 
 	/**
 	 * 黑名单的索引列表，用于将推荐列表中包含该索引值的商品进行过滤

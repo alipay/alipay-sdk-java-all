@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.industryinvoice.invoiceapply.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-10-28 11:12:41
+ * @since 1.0, 2025-12-09 10:47:41
  */
 public class AlipayCommerceEcIndustryinvoiceInvoiceapplyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7383143554986517153L;
+	private static final long serialVersionUID = 6448569434166994274L;
 
 	/** 
 	 * 购买方地址
@@ -75,7 +75,7 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyQueryResponse extends Al
 	private String invoiceAmount;
 
 	/** 
-	 * 发票不含税金额
+	 * 发票不含税金额（单位：元）
 	 */
 	@ApiField("invoice_amount_without_tax")
 	private String invoiceAmountWithoutTax;
@@ -136,7 +136,7 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyQueryResponse extends Al
 	private String invoiceStatus;
 
 	/** 
-	 * 发票税额
+	 * 发票税额（单位：元）
 	 */
 	@ApiField("invoice_tax_amount")
 	private String invoiceTaxAmount;

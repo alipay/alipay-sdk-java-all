@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CreditRiskDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4834187919784132458L;
+	private static final long serialVersionUID = 7267679658133446568L;
 
 	/**
 	 * 查询失败的情况下，是否可以通过重试解决。true 表示可以适当重试一定次数；false 表示有明确的失败原因，无需重试

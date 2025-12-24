@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.marketing.blackcarduser.gradeinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-08 14:22:42
+ * @since 1.0, 2025-12-17 15:37:41
  */
 public class AntfortuneMarketingBlackcarduserGradeinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1182699464426946543L;
+	private static final long serialVersionUID = 2795256869717699753L;
 
 	/** 
 	 * 检查结果是否通过：true/false

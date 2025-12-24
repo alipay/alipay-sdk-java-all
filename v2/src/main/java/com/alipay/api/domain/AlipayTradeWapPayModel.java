@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 手机网站支付接口2.0
  *
  * @author auto create
- * @since 1.0, 2024-10-10 16:20:18
+ * @since 1.0, 2025-12-16 20:02:35
  */
 public class AlipayTradeWapPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2593412955343388154L;
+	private static final long serialVersionUID = 3275699852622295787L;
 
 	/**
 	 * 针对用户授权接口，获取用户相关数据时，用于标识用户授权关系
@@ -97,9 +97,7 @@ public class AlipayTradeWapPayModel extends AlipayObject {
 	private String outTradeNo;
 
 	/**
-	 * 公用回传参数。
-如果请求时传递了该参数，支付宝会在异步通知时将该参数原样返回。
-本参数必须进行UrlEncode之后才可以发送给支付宝。
+	 * 公用回传参数。如果请求时传递了该参数，则会在支付结果异步通知中将该参数原样返回。本参数必须进行UrlEncode之后才可以发送给支付宝。
 	 */
 	@ApiField("passback_params")
 	private String passbackParams;

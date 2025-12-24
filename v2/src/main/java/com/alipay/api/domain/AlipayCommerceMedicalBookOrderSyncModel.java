@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单信息同步
  *
  * @author auto create
- * @since 1.0, 2025-09-19 18:00:49
+ * @since 1.0, 2025-12-22 11:08:47
  */
 public class AlipayCommerceMedicalBookOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7168855575175575194L;
+	private static final long serialVersionUID = 3724138158171249831L;
 
 	/**
 	 * 订单详情

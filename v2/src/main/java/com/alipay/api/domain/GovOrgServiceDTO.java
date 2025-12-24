@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GovOrgServiceDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1876928952325695741L;
+	private static final long serialVersionUID = 6153154159938348467L;
 
 	/**
 	 * 服务的展示渠道

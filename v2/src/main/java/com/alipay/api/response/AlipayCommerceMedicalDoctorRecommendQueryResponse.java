@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.doctor.recommend.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-10-22 22:02:40
+ * @since 1.0, 2025-12-10 20:25:55
  */
 public class AlipayCommerceMedicalDoctorRecommendQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1737744815779258313L;
+	private static final long serialVersionUID = 7246153751191617911L;
 
 	/** 
 	 * 搜索推荐医生信息

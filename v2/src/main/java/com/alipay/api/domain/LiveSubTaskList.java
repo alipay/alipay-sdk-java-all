@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LiveSubTaskList extends AlipayObject {
 
-	private static final long serialVersionUID = 2189494332311863421L;
+	private static final long serialVersionUID = 5289751111149294989L;
 
 	/**
 	 * 子任务状态，状态: COMPLETED（已完成）、UNCOMPLETED（未完成）、IN_PROGRESS（进行中）

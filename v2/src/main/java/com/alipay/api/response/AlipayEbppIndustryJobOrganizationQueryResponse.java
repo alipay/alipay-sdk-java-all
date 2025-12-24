@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.job.organization.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-11-14 14:57:41
+ * @since 1.0, 2025-12-10 20:47:42
  */
 public class AlipayEbppIndustryJobOrganizationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4148396287447617853L;
+	private static final long serialVersionUID = 2721459624418912124L;
 
 	/** 
 	 * null

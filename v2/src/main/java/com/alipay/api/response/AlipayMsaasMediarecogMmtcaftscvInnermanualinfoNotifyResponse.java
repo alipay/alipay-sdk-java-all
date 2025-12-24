@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMsaasMediarecogMmtcaftscvInnermanualinfoNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4892135844259916612L;
+	private static final long serialVersionUID = 1472581225135888952L;
 
 	
 

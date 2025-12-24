@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户黑卡身份查询接口
  *
  * @author auto create
- * @since 1.0, 2025-12-08 14:22:42
+ * @since 1.0, 2025-12-17 15:37:41
  */
 public class AntfortuneMarketingBlackcarduserGradeinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3297495712219693723L;
+	private static final long serialVersionUID = 2643832847816183679L;
 
 	/**
 	 * 用户证件号，AES加密

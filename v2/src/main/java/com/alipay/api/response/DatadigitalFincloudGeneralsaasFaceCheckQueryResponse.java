@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class DatadigitalFincloudGeneralsaasFaceCheckQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3224927294481147471L;
+	private static final long serialVersionUID = 7534951732388682817L;
 
 	/** 
 	 * 如果设置了need_alive_photo的值不为N，则该字段返回人脸照片的base64编码字符串。

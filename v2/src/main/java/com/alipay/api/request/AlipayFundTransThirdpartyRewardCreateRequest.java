@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.trans.thirdparty.reward.create request
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 17:32:00
+ * @since 1.0, 2025-12-23 10:52:42
  */
 public class AlipayFundTransThirdpartyRewardCreateRequest implements AlipayRequest<AlipayFundTransThirdpartyRewardCreateResponse> {
 

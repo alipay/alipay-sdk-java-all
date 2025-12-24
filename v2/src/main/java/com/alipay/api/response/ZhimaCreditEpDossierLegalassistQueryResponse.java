@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.dossier.legalassist.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-04 19:06:34
+ * @since 1.0, 2025-12-18 10:17:42
  */
 public class ZhimaCreditEpDossierLegalassistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4481184586751837831L;
+	private static final long serialVersionUID = 1437194249224893974L;
 
 	/** 
 	 * 企业司法协助内容
@@ -21,11 +21,24 @@ public class ZhimaCreditEpDossierLegalassistQueryResponse extends AlipayResponse
 	@ApiField("data")
 	private EpLegalAssistDataInfo data;
 
+	/** 
+	 * 查得标记
+	 */
+	@ApiField("data_found")
+	private Boolean dataFound;
+
 	public void setData(EpLegalAssistDataInfo data) {
 		this.data = data;
 	}
 	public EpLegalAssistDataInfo getData( ) {
 		return this.data;
+	}
+
+	public void setDataFound(Boolean dataFound) {
+		this.dataFound = dataFound;
+	}
+	public Boolean getDataFound( ) {
+		return this.dataFound;
 	}
 
 }

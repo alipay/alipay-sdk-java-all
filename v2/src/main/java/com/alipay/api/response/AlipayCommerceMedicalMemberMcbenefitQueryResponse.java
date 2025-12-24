@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.member.mcbenefit.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-11-06 10:02:41
+ * @since 1.0, 2025-12-22 16:23:07
  */
 public class AlipayCommerceMedicalMemberMcbenefitQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6471484819595792451L;
+	private static final long serialVersionUID = 7621638881486739138L;
 
 	/** 
 	 * 权益详情

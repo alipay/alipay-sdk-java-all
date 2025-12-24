@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCloudCloudpromoFaceCheckCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2453785379556788693L;
+	private static final long serialVersionUID = 7221653136678864977L;
 
 	/**
 	 * 业务号

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.dossier.certificate.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-05 10:02:40
+ * @since 1.0, 2025-12-16 13:42:42
  */
 public class ZhimaCreditEpDossierCertificateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5179148483932415652L;
+	private static final long serialVersionUID = 6818856798983636179L;
 
 	/** 
 	 * 数据结果
@@ -21,11 +21,24 @@ public class ZhimaCreditEpDossierCertificateQueryResponse extends AlipayResponse
 	@ApiField("data")
 	private ZmepCertificateDataInfo data;
 
+	/** 
+	 * 查得标记
+	 */
+	@ApiField("data_found")
+	private Boolean dataFound;
+
 	public void setData(ZmepCertificateDataInfo data) {
 		this.data = data;
 	}
 	public ZmepCertificateDataInfo getData( ) {
 		return this.data;
+	}
+
+	public void setDataFound(Boolean dataFound) {
+		this.dataFound = dataFound;
+	}
+	public Boolean getDataFound( ) {
+		return this.dataFound;
 	}
 
 }

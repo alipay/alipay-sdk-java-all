@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalMsgTextSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8844892861324195175L;
+	private static final long serialVersionUID = 4421587866813647781L;
 
 	/**
 	 * 支付宝uid 2088开头的16位纯数字，小程序场景下获取用户ID请参考：用户授权; 其它场景下获取用户ID请参考：网页授权获取用户信息;

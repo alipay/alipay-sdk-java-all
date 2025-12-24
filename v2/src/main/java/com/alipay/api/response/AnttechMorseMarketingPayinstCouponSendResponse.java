@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.morse.marketing.payinst.coupon.send response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-01 10:22:42
+ * @since 1.0, 2025-12-19 12:02:42
  */
 public class AnttechMorseMarketingPayinstCouponSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1835672656684923481L;
+	private static final long serialVersionUID = 8131115399339392242L;
 
 	/** 
 	 * 同入参的活动id

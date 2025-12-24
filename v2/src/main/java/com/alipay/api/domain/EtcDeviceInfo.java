@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class EtcDeviceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6441482447299318431L;
+	private static final long serialVersionUID = 3825138781835713146L;
 
 	/**
 	 * ETC设备激活状态

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.brand.auth.create request
  * 
  * @author auto create
- * @since 1.0, 2025-12-08 10:12:42
+ * @since 1.0, 2025-12-16 14:42:43
  */
 public class AlipayOpenBrandAuthCreateRequest implements AlipayRequest<AlipayOpenBrandAuthCreateResponse> {
 

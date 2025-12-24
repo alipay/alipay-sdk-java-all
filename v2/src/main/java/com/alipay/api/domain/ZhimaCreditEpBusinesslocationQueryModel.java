@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户位置查询专用版接口
  *
  * @author auto create
- * @since 1.0, 2025-06-27 14:17:09
+ * @since 1.0, 2025-12-16 10:25:52
  */
 public class ZhimaCreditEpBusinesslocationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7618769171952275145L;
+	private static final long serialVersionUID = 4147356539968421221L;
 
 	/**
 	 * 客户场景下授权码

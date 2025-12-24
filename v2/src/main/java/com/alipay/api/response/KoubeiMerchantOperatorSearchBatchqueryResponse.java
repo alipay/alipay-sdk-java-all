@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiMerchantOperatorSearchBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4459365714972591877L;
+	private static final long serialVersionUID = 3656335284979745828L;
 
 	/** 
 	 * 当前页码

@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.credit.loantrade.payee.receivable.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:34:55
+ * @since 1.0, 2025-12-10 11:29:35
  */
 public class MybankCreditLoantradePayeeReceivableBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4879561763763427948L;
+	private static final long serialVersionUID = 3394838663984679264L;
 
 	/** 
 	 * 应收列表

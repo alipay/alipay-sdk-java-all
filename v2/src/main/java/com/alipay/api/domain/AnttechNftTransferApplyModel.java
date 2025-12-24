@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 藏品发放接口
  *
  * @author auto create
- * @since 1.0, 2025-04-17 17:39:23
+ * @since 1.0, 2025-12-22 14:56:55
  */
 public class AnttechNftTransferApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4563342745216191262L;
+	private static final long serialVersionUID = 3132123836937248629L;
 
 	/**
 	 * 调用方渠道租户，传租户id即可

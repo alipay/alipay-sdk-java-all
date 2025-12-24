@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.serviceai.feedback.send request
  * 
  * @author auto create
- * @since 1.0, 2025-11-26 17:12:42
+ * @since 1.0, 2025-12-19 15:42:41
  */
 public class AlipayCommerceMedicalServiceaiFeedbackSendRequest implements AlipayRequest<AlipayCommerceMedicalServiceaiFeedbackSendResponse> {
 

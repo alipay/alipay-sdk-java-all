@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 子订单明细
  *
  * @author auto create
- * @since 1.0, 2024-05-21 21:53:16
+ * @since 1.0, 2025-12-16 16:56:24
  */
 public class OrderDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 4394454273718725427L;
+	private static final long serialVersionUID = 4288868486976459819L;
 
 	/**
 	 * 订单明细的应用唯一标识（16位纯数字），指商家的app_id。

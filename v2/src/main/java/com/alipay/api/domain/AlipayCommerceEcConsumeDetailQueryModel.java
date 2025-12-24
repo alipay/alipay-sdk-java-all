@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询企业付账单详情
  *
  * @author auto create
- * @since 1.0, 2025-11-15 10:22:44
+ * @since 1.0, 2025-12-15 16:07:53
  */
 public class AlipayCommerceEcConsumeDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7652617656526191466L;
+	private static final long serialVersionUID = 4412538581878573281L;
 
 	/**
 	 * 共同账户ID 当前字段已废弃(该字段将废弃，不建议使用，可用enterprise_id字段替换)
@@ -29,6 +29,12 @@ public class AlipayCommerceEcConsumeDetailQueryModel extends AlipayObject {
 	@ApiField("agreement_no")
 	@Deprecated
 	private String agreementNo;
+
+	/**
+	 * 蚂蚁门店ID，不可单独用于查询条件，需要配合企业ID和交易号使用
+	 */
+	@ApiField("ant_shop_id")
+	private String antShopId;
 
 	/**
 	 * 企业ID
@@ -61,6 +67,13 @@ public class AlipayCommerceEcConsumeDetailQueryModel extends AlipayObject {
 	}
 	public void setAgreementNo(String agreementNo) {
 		this.agreementNo = agreementNo;
+	}
+
+	public String getAntShopId() {
+		return this.antShopId;
+	}
+	public void setAntShopId(String antShopId) {
+		this.antShopId = antShopId;
 	}
 
 	public String getEnterpriseId() {

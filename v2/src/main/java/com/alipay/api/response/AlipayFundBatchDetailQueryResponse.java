@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.batch.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-11-24 17:41:39
+ * @since 1.0, 2025-12-17 15:42:42
  */
 public class AlipayFundBatchDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1138789693428851621L;
+	private static final long serialVersionUID = 5877379664596559999L;
 
 	/** 
 	 * 1）当批次状态为INIT状态时，明细信息还未落地，返回明细信息为空
@@ -170,6 +170,12 @@ MESSAGE_SATF_BATCH_PAY：专户批量代发的报文代发
 	 */
 	@ApiField("payment_currency")
 	private String paymentCurrency;
+
+	/** 
+	 * 批量转账付款资金单id
+	 */
+	@ApiField("prepare_fund_order_id")
+	private String prepareFundOrderId;
 
 	/** 
 	 * 业务产品码。不同产品值不同，具体值联系支付宝确认。
@@ -351,6 +357,13 @@ MESSAGE_SATF_BATCH_PAY：专户批量代发的报文代发
 	}
 	public String getPaymentCurrency( ) {
 		return this.paymentCurrency;
+	}
+
+	public void setPrepareFundOrderId(String prepareFundOrderId) {
+		this.prepareFundOrderId = prepareFundOrderId;
+	}
+	public String getPrepareFundOrderId( ) {
+		return this.prepareFundOrderId;
 	}
 
 	public void setProductCode(String productCode) {

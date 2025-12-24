@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntLinkeDevopsMobiledeviceReturnModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5647135411639315323L;
+	private static final long serialVersionUID = 2736992468567183656L;
 
 	/**
 	 * device_id+唯一+设备释放对象+antdevops.mobiledevice.get接口返回参数+必须先占用才能释放

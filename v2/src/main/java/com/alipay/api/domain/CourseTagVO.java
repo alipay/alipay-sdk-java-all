@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 职业培训课程修改
  *
  * @author auto create
- * @since 1.0, 2025-11-21 14:19:58
+ * @since 1.0, 2025-12-16 15:03:40
  */
 public class CourseTagVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6512129242267971851L;
+	private static final long serialVersionUID = 4631475344495423283L;
 
 	/**
 	 * 描述
@@ -24,6 +24,12 @@ public class CourseTagVO extends AlipayObject {
 	 */
 	@ApiField("tag_key")
 	private String tagKey;
+
+	/**
+	 * 链接
+	 */
+	@ApiField("tag_url")
+	private String tagUrl;
 
 	/**
 	 * 内容
@@ -43,6 +49,13 @@ public class CourseTagVO extends AlipayObject {
 	}
 	public void setTagKey(String tagKey) {
 		this.tagKey = tagKey;
+	}
+
+	public String getTagUrl() {
+		return this.tagUrl;
+	}
+	public void setTagUrl(String tagUrl) {
+		this.tagUrl = tagUrl;
 	}
 
 	public String getTagValue() {

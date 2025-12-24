@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 卡
  *
  * @author auto create
- * @since 1.0, 2025-11-18 13:44:47
+ * @since 1.0, 2025-12-18 17:26:24
  */
 public class MerchantCardTemplate extends AlipayObject {
 
-	private static final long serialVersionUID = 5881958129938667424L;
+	private static final long serialVersionUID = 8347595814893764913L;
 
 	/**
 	 * 违约金信息
@@ -129,10 +129,17 @@ public class MerchantCardTemplate extends AlipayObject {
 	private Boolean needOrderAgreement;
 
 	/**
-	 * 线上售卖表示。01标识已开启线上售卖。02标识未开启线上售卖.
+	 * 线上售卖标识。
+01表示已开启线上售卖；02表示未开启线上售卖。
 	 */
 	@ApiField("online_sale_switch")
 	private String onlineSaleSwitch;
+
+	/**
+	 * 该字段作用于阵地页线上商城展示
+	 */
+	@ApiField("online_show_switch")
+	private String onlineShowSwitch;
 
 	/**
 	 * 外部卡ID
@@ -301,6 +308,13 @@ public class MerchantCardTemplate extends AlipayObject {
 	}
 	public void setOnlineSaleSwitch(String onlineSaleSwitch) {
 		this.onlineSaleSwitch = onlineSaleSwitch;
+	}
+
+	public String getOnlineShowSwitch() {
+		return this.onlineShowSwitch;
+	}
+	public void setOnlineShowSwitch(String onlineShowSwitch) {
+		this.onlineShowSwitch = onlineShowSwitch;
 	}
 
 	public String getOutCardId() {

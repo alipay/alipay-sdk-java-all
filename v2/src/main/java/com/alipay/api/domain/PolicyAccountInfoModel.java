@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保单账号信息
  *
  * @author auto create
- * @since 1.0, 2025-10-28 14:27:28
+ * @since 1.0, 2025-12-18 19:39:46
  */
 public class PolicyAccountInfoModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8149172873224498638L;
+	private static final long serialVersionUID = 5573396963997195291L;
 
 	/**
 	 * 账户类型（alipay/bankcard）
@@ -26,10 +26,34 @@ public class PolicyAccountInfoModel extends AlipayObject {
 	private String alipayAccount;
 
 	/**
+	 * 开户行所在市
+	 */
+	@ApiField("bank_account_city")
+	private String bankAccountCity;
+
+	/**
+	 * 开户行所在市编码
+	 */
+	@ApiField("bank_account_city_id")
+	private String bankAccountCityId;
+
+	/**
 	 * 银行卡账户名
 	 */
 	@ApiField("bank_account_name")
 	private String bankAccountName;
+
+	/**
+	 * 开户行所在省
+	 */
+	@ApiField("bank_account_province")
+	private String bankAccountProvince;
+
+	/**
+	 * 开户行所在省编码
+	 */
+	@ApiField("bank_account_province_id")
+	private String bankAccountProvinceId;
 
 	/**
 	 * 账户类型是bankcard时，取此字段。所属银行
@@ -42,6 +66,18 @@ public class PolicyAccountInfoModel extends AlipayObject {
 	 */
 	@ApiField("bank_card_account")
 	private String bankCardAccount;
+
+	/**
+	 * 开户银行对应机构编码
+	 */
+	@ApiField("bank_inst_code")
+	private String bankInstCode;
+
+	/**
+	 * 开户银行
+	 */
+	@ApiField("bank_name")
+	private String bankName;
 
 	public String getAccountType() {
 		return this.accountType;
@@ -57,11 +93,39 @@ public class PolicyAccountInfoModel extends AlipayObject {
 		this.alipayAccount = alipayAccount;
 	}
 
+	public String getBankAccountCity() {
+		return this.bankAccountCity;
+	}
+	public void setBankAccountCity(String bankAccountCity) {
+		this.bankAccountCity = bankAccountCity;
+	}
+
+	public String getBankAccountCityId() {
+		return this.bankAccountCityId;
+	}
+	public void setBankAccountCityId(String bankAccountCityId) {
+		this.bankAccountCityId = bankAccountCityId;
+	}
+
 	public String getBankAccountName() {
 		return this.bankAccountName;
 	}
 	public void setBankAccountName(String bankAccountName) {
 		this.bankAccountName = bankAccountName;
+	}
+
+	public String getBankAccountProvince() {
+		return this.bankAccountProvince;
+	}
+	public void setBankAccountProvince(String bankAccountProvince) {
+		this.bankAccountProvince = bankAccountProvince;
+	}
+
+	public String getBankAccountProvinceId() {
+		return this.bankAccountProvinceId;
+	}
+	public void setBankAccountProvinceId(String bankAccountProvinceId) {
+		this.bankAccountProvinceId = bankAccountProvinceId;
 	}
 
 	public String getBankBranchName() {
@@ -76,6 +140,20 @@ public class PolicyAccountInfoModel extends AlipayObject {
 	}
 	public void setBankCardAccount(String bankCardAccount) {
 		this.bankCardAccount = bankCardAccount;
+	}
+
+	public String getBankInstCode() {
+		return this.bankInstCode;
+	}
+	public void setBankInstCode(String bankInstCode) {
+		this.bankInstCode = bankInstCode;
+	}
+
+	public String getBankName() {
+		return this.bankName;
+	}
+	public void setBankName(String bankName) {
+		this.bankName = bankName;
 	}
 
 }

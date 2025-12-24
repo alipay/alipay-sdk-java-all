@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.dossier.branch.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-04 19:04:41
+ * @since 1.0, 2025-12-18 10:17:42
  */
 public class ZhimaCreditEpDossierBranchQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4275925696516251439L;
+	private static final long serialVersionUID = 8343129625269241664L;
 
 	/** 
 	 * 企业分支机构返回内容
@@ -21,11 +21,24 @@ public class ZhimaCreditEpDossierBranchQueryResponse extends AlipayResponse {
 	@ApiField("data")
 	private EpBranchDataInfo data;
 
+	/** 
+	 * 查得标记
+	 */
+	@ApiField("data_found")
+	private Boolean dataFound;
+
 	public void setData(EpBranchDataInfo data) {
 		this.data = data;
 	}
 	public EpBranchDataInfo getData( ) {
 		return this.data;
+	}
+
+	public void setDataFound(Boolean dataFound) {
+		this.dataFound = dataFound;
+	}
+	public Boolean getDataFound( ) {
+		return this.dataFound;
 	}
 
 }

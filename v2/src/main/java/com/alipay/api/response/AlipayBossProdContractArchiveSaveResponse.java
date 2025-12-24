@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBossProdContractArchiveSaveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2578166822166717341L;
+	private static final long serialVersionUID = 3153771688328618322L;
 
 	/** 
 	 * 请求code 200 成功 别的失败 ；失败ErrorCode编码请联系对接技术

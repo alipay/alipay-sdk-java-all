@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户通过该接口进行交易的创建下单
  *
  * @author auto create
- * @since 1.0, 2025-06-16 16:34:28
+ * @since 1.0, 2025-12-16 15:19:32
  */
 public class AlipayTradeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4625484529488845972L;
+	private static final long serialVersionUID = 5458145723654396641L;
 
 	/**
 	 * 签约参数。如果希望使用支付并签约，需要在这里传入签约信息。
@@ -152,8 +152,7 @@ public class AlipayTradeCreateModel extends AlipayObject {
 	private String outTradeNo;
 
 	/**
-	 * 公用回传参数。
-如果请求时传递了该参数，支付宝会在异步通知时将该参数原样返回。
+	 * 公用回传参数。如果请求时传递了该参数，则会在支付结果异步通知中将该参数原样返回。本参数必须进行UrlEncode之后才可以发送给支付宝。
 	 */
 	@ApiField("passback_params")
 	private String passbackParams;

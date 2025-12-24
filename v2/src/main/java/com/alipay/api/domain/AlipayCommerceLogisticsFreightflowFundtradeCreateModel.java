@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 货运企业支付收银台资金支付创单
  *
  * @author auto create
- * @since 1.0, 2025-12-05 14:05:19
+ * @since 1.0, 2025-12-15 10:37:42
  */
 public class AlipayCommerceLogisticsFreightflowFundtradeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3865677938734114329L;
+	private static final long serialVersionUID = 8814537713875964286L;
 
 	/**
 	 * 商户需要保证业务流水号的唯一性，运企付内部通过业务流水号进行幂等处理
@@ -56,6 +56,18 @@ public class AlipayCommerceLogisticsFreightflowFundtradeCreateModel extends Alip
 	private String mybankAppId;
 
 	/**
+	 * 外部平台创建交易单的来源，微信小程序场景必填：WX_MINI_PRO
+	 */
+	@ApiField("order_source_channel")
+	private String orderSourceChannel;
+
+	/**
+	 * 订单数据大字段，用于安全防控
+	 */
+	@ApiField("order_sup_info")
+	private FreightFlowOrderSupInfo orderSupInfo;
+
+	/**
 	 * 网商银行分配的合作方机构号
 	 */
 	@ApiField("partner_id")
@@ -78,6 +90,12 @@ public class AlipayCommerceLogisticsFreightflowFundtradeCreateModel extends Alip
 	 */
 	@ApiField("payee_id")
 	private String payeeId;
+
+	/**
+	 * 示例内的三个参数必填：appid 和 callbackFn 会跳回到上一个小程序页面。appid 和 path 会跳回到指定地址。
+	 */
+	@ApiField("result_callback_url")
+	private String resultCallbackUrl;
 
 	/**
 	 * 订单总金额,单位:分
@@ -134,6 +152,20 @@ public class AlipayCommerceLogisticsFreightflowFundtradeCreateModel extends Alip
 		this.mybankAppId = mybankAppId;
 	}
 
+	public String getOrderSourceChannel() {
+		return this.orderSourceChannel;
+	}
+	public void setOrderSourceChannel(String orderSourceChannel) {
+		this.orderSourceChannel = orderSourceChannel;
+	}
+
+	public FreightFlowOrderSupInfo getOrderSupInfo() {
+		return this.orderSupInfo;
+	}
+	public void setOrderSupInfo(FreightFlowOrderSupInfo orderSupInfo) {
+		this.orderSupInfo = orderSupInfo;
+	}
+
 	public String getPartnerId() {
 		return this.partnerId;
 	}
@@ -160,6 +192,13 @@ public class AlipayCommerceLogisticsFreightflowFundtradeCreateModel extends Alip
 	}
 	public void setPayeeId(String payeeId) {
 		this.payeeId = payeeId;
+	}
+
+	public String getResultCallbackUrl() {
+		return this.resultCallbackUrl;
+	}
+	public void setResultCallbackUrl(String resultCallbackUrl) {
+		this.resultCallbackUrl = resultCallbackUrl;
 	}
 
 	public String getTotalAmount() {

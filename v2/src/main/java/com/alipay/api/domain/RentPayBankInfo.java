@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RentPayBankInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1193434553168877869L;
+	private static final long serialVersionUID = 7617431926667619821L;
 
 	/**
 	 * 收款账户开户人名称

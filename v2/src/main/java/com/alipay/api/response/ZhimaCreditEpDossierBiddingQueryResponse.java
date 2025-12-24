@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.dossier.bidding.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-04 19:07:43
+ * @since 1.0, 2025-12-16 13:52:41
  */
 public class ZhimaCreditEpDossierBiddingQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7872945242263347773L;
+	private static final long serialVersionUID = 7183663356716673545L;
 
 	/** 
 	 * 数据结果
@@ -21,11 +21,24 @@ public class ZhimaCreditEpDossierBiddingQueryResponse extends AlipayResponse {
 	@ApiField("data")
 	private ZmepBiddingDataInfo data;
 
+	/** 
+	 * 查得标记
+	 */
+	@ApiField("data_found")
+	private Boolean dataFound;
+
 	public void setData(ZmepBiddingDataInfo data) {
 		this.data = data;
 	}
 	public ZmepBiddingDataInfo getData( ) {
 		return this.data;
+	}
+
+	public void setDataFound(Boolean dataFound) {
+		this.dataFound = dataFound;
+	}
+	public Boolean getDataFound( ) {
+		return this.dataFound;
 	}
 
 }

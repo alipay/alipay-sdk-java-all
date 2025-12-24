@@ -9,14 +9,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 收结易订单同步
  *
  * @author auto create
- * @since 1.0, 2025-09-22 10:55:08
+ * @since 1.0, 2025-12-10 14:26:27
  */
 public class AlipayTradeUnifiedsettleSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7421758725814559679L;
+	private static final long serialVersionUID = 8694321511544432632L;
 
 	/**
-	 * 收单模式，目前仅支持PLATFORM_BUSINESS
+	 * 收单模式，譬如 PLATFORM_BUSINESS/DANBAO
 	 */
 	@ApiField("acquire_mode")
 	private String acquireMode;
@@ -28,7 +28,7 @@ public class AlipayTradeUnifiedsettleSyncModel extends AlipayObject {
 	private String amount;
 
 	/**
-	 * 用于标识收结易的业务模式，不传为默认模式
+	 * 用于标识收结易的业务模式，不传为默认模式，可选RECHARGE_SINGLE、REFUND_SINGLE 等
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;

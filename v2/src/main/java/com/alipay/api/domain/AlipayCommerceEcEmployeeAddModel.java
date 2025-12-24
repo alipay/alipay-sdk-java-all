@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 添加员工
  *
  * @author auto create
- * @since 1.0, 2025-10-23 10:04:34
+ * @since 1.0, 2025-12-17 20:00:33
  */
 public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4839877775263281124L;
+	private static final long serialVersionUID = 4511541198951438232L;
 
 	/**
 	 * 员工所属核算主体，核算主体可用于管控不同员工的出资方式，建议和不同出资账户关联
@@ -104,7 +104,7 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	private String identity;
 
 	/**
-	 * 当身份类型为支付宝会员ID(identity_type=ALIPAY_USER_ID)时，传入user_id对应的open_id
+	 * 当身份类型为支付宝用户ID(identity_type=ALIPAY_USER_ID)时，传入user_id对应的open_id
 	 */
 	@ApiField("identity_open_id")
 	private String identityOpenId;

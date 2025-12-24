@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询抽佣规则
  *
  * @author auto create
- * @since 1.0, 2025-12-01 20:27:25
+ * @since 1.0, 2025-12-22 14:37:46
  */
 public class AlipayCommerceCommissionRuleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2325912961585442964L;
+	private static final long serialVersionUID = 4154458445651621759L;
 
 	/**
 	 * 蚂蚁门店id，用于水平权限鉴权。可通过ant.merchant.expand.shop.create创建蚂蚁门店获取

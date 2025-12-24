@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ImageTextMsgVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6158886756554998818L;
+	private static final long serialVersionUID = 2237783112614722174L;
 
 	/**
 	 * 对推送商品的简单介绍（参考：美妆好物应有尽有，快戳进来看看呀）

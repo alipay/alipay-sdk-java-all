@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 权益明细信息
  *
  * @author auto create
- * @since 1.0, 2025-10-28 11:00:41
+ * @since 1.0, 2025-12-18 14:16:03
  */
 public class HmEquityInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6311253841828362382L;
+	private static final long serialVersionUID = 1585829956791184652L;
 
 	/**
 	 * 是否激活
@@ -30,6 +30,12 @@ public class HmEquityInfo extends AlipayObject {
 	 */
 	@ApiField("equity_name")
 	private String equityName;
+
+	/**
+	 * 权益包编码
+	 */
+	@ApiField("equity_package_code")
+	private String equityPackageCode;
 
 	/**
 	 * 权益的计费类型
@@ -55,6 +61,18 @@ public class HmEquityInfo extends AlipayObject {
 	@ApiField("valid_date")
 	private String validDate;
 
+	/**
+	 * 用于标记支付宝用户在应用下的唯一标识
+	 */
+	@ApiField("valid_date_end")
+	private String validDateEnd;
+
+	/**
+	 * 有效期开始时间（yyyy-MM-dd HH:mm:ss）
+	 */
+	@ApiField("valid_date_start")
+	private String validDateStart;
+
 	public Boolean getActivated() {
 		return this.activated;
 	}
@@ -74,6 +92,13 @@ public class HmEquityInfo extends AlipayObject {
 	}
 	public void setEquityName(String equityName) {
 		this.equityName = equityName;
+	}
+
+	public String getEquityPackageCode() {
+		return this.equityPackageCode;
+	}
+	public void setEquityPackageCode(String equityPackageCode) {
+		this.equityPackageCode = equityPackageCode;
 	}
 
 	public String getEquityType() {
@@ -102,6 +127,20 @@ public class HmEquityInfo extends AlipayObject {
 	}
 	public void setValidDate(String validDate) {
 		this.validDate = validDate;
+	}
+
+	public String getValidDateEnd() {
+		return this.validDateEnd;
+	}
+	public void setValidDateEnd(String validDateEnd) {
+		this.validDateEnd = validDateEnd;
+	}
+
+	public String getValidDateStart() {
+		return this.validDateStart;
+	}
+	public void setValidDateStart(String validDateStart) {
+		this.validDateStart = validDateStart;
 	}
 
 }

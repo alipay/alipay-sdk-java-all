@@ -11,11 +11,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单租赁计划信息追加
  *
  * @author auto create
- * @since 1.0, 2025-08-06 15:28:53
+ * @since 1.0, 2025-12-17 14:21:15
  */
 public class AlipayCommerceRentOrderRentplaninfoAppendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7523791268683629927L;
+	private static final long serialVersionUID = 3249957317813642593L;
+
+	/**
+	 * 取消续租信息
+	 */
+	@ApiField("cancel_info")
+	private RentPlanCancelInfo cancelInfo;
 
 	/**
 	 * 租金分期计划
@@ -49,10 +55,23 @@ public class AlipayCommerceRentOrderRentplaninfoAppendModel extends AlipayObject
 	private Date rentEndTime;
 
 	/**
+	 * 用于区分追加或者取消追加租赁计划的能力
+	 */
+	@ApiField("type")
+	private String type;
+
+	/**
 	 * 支付宝用户的userId。
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public RentPlanCancelInfo getCancelInfo() {
+		return this.cancelInfo;
+	}
+	public void setCancelInfo(RentPlanCancelInfo cancelInfo) {
+		this.cancelInfo = cancelInfo;
+	}
 
 	public List<RentInstallmentInfo> getInstallments() {
 		return this.installments;
@@ -87,6 +106,13 @@ public class AlipayCommerceRentOrderRentplaninfoAppendModel extends AlipayObject
 	}
 	public void setRentEndTime(Date rentEndTime) {
 		this.rentEndTime = rentEndTime;
+	}
+
+	public String getType() {
+		return this.type;
+	}
+	public void setType(String type) {
+		this.type = type;
 	}
 
 	public String getUserId() {

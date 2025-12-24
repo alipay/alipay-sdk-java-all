@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 当前入参needEditVersion 为true, 且审核被驳回时, 此处显示驳回信息
  *
  * @author auto create
- * @since 1.0, 2025-12-04 15:10:31
+ * @since 1.0, 2025-12-22 15:46:25
  */
 public class CourseItemRiskVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1289774671537264974L;
+	private static final long serialVersionUID = 8855938366657986759L;
 
 	/**
 	 * 最近一次审核完结时间

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.businesslocation.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-27 14:22:29
+ * @since 1.0, 2025-12-16 10:25:52
  */
 public class ZhimaCreditEpBusinesslocationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4337917495493413921L;
+	private static final long serialVersionUID = 3164577976258927157L;
 
 	/** 
 	 * 商户地理位置信息列表

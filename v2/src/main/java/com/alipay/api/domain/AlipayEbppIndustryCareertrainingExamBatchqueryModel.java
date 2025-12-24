@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页查询职业培训考试信息
  *
  * @author auto create
- * @since 1.0, 2025-11-21 14:22:41
+ * @since 1.0, 2025-12-22 15:46:39
  */
 public class AlipayEbppIndustryCareertrainingExamBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6691372273511339983L;
+	private static final long serialVersionUID = 4525776851466485988L;
 
 	/**
 	 * ● 湖南省全省:  430000  

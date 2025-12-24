@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 充电订单支付提交
  *
  * @author auto create
- * @since 1.0, 2025-04-10 12:01:01
+ * @since 1.0, 2025-12-19 14:17:18
  */
 public class AlipayCommerceTransportChargerPayCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3469457279983144339L;
+	private static final long serialVersionUID = 7232584741678445686L;
 
 	/**
 	 * 商户优惠的订单金额。 单位为元，精确到小数点后两位
@@ -76,7 +76,7 @@ public class AlipayCommerceTransportChargerPayCreateModel extends AlipayObject {
 	private String serviceMoney;
 
 	/**
-	 * 电池剩余电量，两位小数；当订单类型为即插即充时，必传
+	 * 电池剩余电量，两位小数，单位为%；当订单类型为即插即充时，必传
 	 */
 	@ApiField("soc")
 	private String soc;

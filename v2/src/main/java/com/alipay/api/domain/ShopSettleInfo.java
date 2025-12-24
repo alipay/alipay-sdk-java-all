@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 门店结算信息
  *
  * @author auto create
- * @since 1.0, 2025-10-23 10:08:56
+ * @since 1.0, 2025-12-11 22:07:34
  */
 public class ShopSettleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4521894914167865956L;
+	private static final long serialVersionUID = 3387637178592824924L;
 
 	/**
 	 * 结算到户的账号
 	 */
 	@ApiField("account")
 	private String account;
+
+	/**
+	 * 门店结算银行卡信息（特殊可选），结算到卡时必填
+	 */
+	@ApiField("bank_cards")
+	private ShopBankCard bankCards;
 
 	/**
 	 * 结算类型
@@ -30,6 +36,13 @@ public class ShopSettleInfo extends AlipayObject {
 	}
 	public void setAccount(String account) {
 		this.account = account;
+	}
+
+	public ShopBankCard getBankCards() {
+		return this.bankCards;
+	}
+	public void setBankCards(ShopBankCard bankCards) {
+		this.bankCards = bankCards;
 	}
 
 	public String getType() {

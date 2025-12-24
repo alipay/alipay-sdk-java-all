@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 非标汽车售卖模式扣款信息
  *
  * @author auto create
- * @since 1.0, 2025-11-06 17:56:54
+ * @since 1.0, 2025-12-17 11:05:19
  */
 public class CarSubscriptionDeduction extends AlipayObject {
 
-	private static final long serialVersionUID = 4229171328796871142L;
+	private static final long serialVersionUID = 7431789479597699463L;
 
 	/**
 	 * 车辆押金扣款（元）
@@ -32,6 +32,30 @@ public class CarSubscriptionDeduction extends AlipayObject {
 	 */
 	@ApiField("rental_fee_deduct_amount")
 	private String rentalFeeDeductAmount;
+
+	/**
+	 * 实际扣款金额的组成部分：基础费（元）
+	 */
+	@ApiField("rental_fee_deduct_amount_of_basic")
+	private String rentalFeeDeductAmountOfBasic;
+
+	/**
+	 * 实际扣款金额的组成部分：保险费（元）
+	 */
+	@ApiField("rental_fee_deduct_amount_of_insurance")
+	private String rentalFeeDeductAmountOfInsurance;
+
+	/**
+	 * 实际扣款金额的组成部分：里程费（元）
+	 */
+	@ApiField("rental_fee_deduct_amount_of_mileage")
+	private String rentalFeeDeductAmountOfMileage;
+
+	/**
+	 * 实际扣款金额的组成部分：指标费（元）
+	 */
+	@ApiField("rental_fee_deduct_amount_of_quota")
+	private String rentalFeeDeductAmountOfQuota;
 
 	/**
 	 * 扣款期数
@@ -76,6 +100,34 @@ public class CarSubscriptionDeduction extends AlipayObject {
 	}
 	public void setRentalFeeDeductAmount(String rentalFeeDeductAmount) {
 		this.rentalFeeDeductAmount = rentalFeeDeductAmount;
+	}
+
+	public String getRentalFeeDeductAmountOfBasic() {
+		return this.rentalFeeDeductAmountOfBasic;
+	}
+	public void setRentalFeeDeductAmountOfBasic(String rentalFeeDeductAmountOfBasic) {
+		this.rentalFeeDeductAmountOfBasic = rentalFeeDeductAmountOfBasic;
+	}
+
+	public String getRentalFeeDeductAmountOfInsurance() {
+		return this.rentalFeeDeductAmountOfInsurance;
+	}
+	public void setRentalFeeDeductAmountOfInsurance(String rentalFeeDeductAmountOfInsurance) {
+		this.rentalFeeDeductAmountOfInsurance = rentalFeeDeductAmountOfInsurance;
+	}
+
+	public String getRentalFeeDeductAmountOfMileage() {
+		return this.rentalFeeDeductAmountOfMileage;
+	}
+	public void setRentalFeeDeductAmountOfMileage(String rentalFeeDeductAmountOfMileage) {
+		this.rentalFeeDeductAmountOfMileage = rentalFeeDeductAmountOfMileage;
+	}
+
+	public String getRentalFeeDeductAmountOfQuota() {
+		return this.rentalFeeDeductAmountOfQuota;
+	}
+	public void setRentalFeeDeductAmountOfQuota(String rentalFeeDeductAmountOfQuota) {
+		this.rentalFeeDeductAmountOfQuota = rentalFeeDeductAmountOfQuota;
 	}
 
 	public Long getRentalFeeDeductRound() {

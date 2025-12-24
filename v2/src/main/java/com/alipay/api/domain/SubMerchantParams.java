@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SubMerchantParams extends AlipayObject {
 
-	private static final long serialVersionUID = 5172233129332383213L;
+	private static final long serialVersionUID = 2779863714489766193L;
 
 	/**
 	 * 子商户的商户id

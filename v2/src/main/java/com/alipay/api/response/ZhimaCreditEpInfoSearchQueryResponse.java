@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.info.search.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-11-19 10:39:04
+ * @since 1.0, 2025-12-18 10:22:42
  */
 public class ZhimaCreditEpInfoSearchQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6597981886857312748L;
+	private static final long serialVersionUID = 1726699187375851911L;
 
 	/** 
 	 * 模糊搜索命中的企业列表
@@ -23,6 +23,12 @@ public class ZhimaCreditEpInfoSearchQueryResponse extends AlipayResponse {
 	@ApiListField("basic_info_models")
 	@ApiField("ep_search_basic_info")
 	private List<EpSearchBasicInfo> basicInfoModels;
+
+	/** 
+	 * 查得标记
+	 */
+	@ApiField("data_found")
+	private Boolean dataFound;
 
 	/** 
 	 * 分页中是否有下一页
@@ -53,6 +59,13 @@ public class ZhimaCreditEpInfoSearchQueryResponse extends AlipayResponse {
 	}
 	public List<EpSearchBasicInfo> getBasicInfoModels( ) {
 		return this.basicInfoModels;
+	}
+
+	public void setDataFound(Boolean dataFound) {
+		this.dataFound = dataFound;
+	}
+	public Boolean getDataFound( ) {
+		return this.dataFound;
 	}
 
 	public void setHasNext(Boolean hasNext) {

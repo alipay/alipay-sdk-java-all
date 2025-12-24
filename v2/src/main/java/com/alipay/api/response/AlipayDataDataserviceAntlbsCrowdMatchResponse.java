@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataDataserviceAntlbsCrowdMatchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6788232369325472769L;
+	private static final long serialVersionUID = 8577556994571824967L;
 
 	/** 
 	 * 匹配结果，入参中每个客群码都会返回是否匹配，即使该客群不存在

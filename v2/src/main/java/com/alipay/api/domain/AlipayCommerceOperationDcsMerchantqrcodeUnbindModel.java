@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceOperationDcsMerchantqrcodeUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6764739524845399612L;
+	private static final long serialVersionUID = 5113964135212891939L;
 
 	/**
 	 * 商户标识

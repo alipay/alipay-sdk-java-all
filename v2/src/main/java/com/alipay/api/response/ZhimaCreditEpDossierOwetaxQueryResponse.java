@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.dossier.owetax.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-04 19:07:57
+ * @since 1.0, 2025-12-16 13:52:42
  */
 public class ZhimaCreditEpDossierOwetaxQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1191193189725656675L;
+	private static final long serialVersionUID = 6212559127199665236L;
 
 	/** 
 	 * 查询数据结果
@@ -21,11 +21,24 @@ public class ZhimaCreditEpDossierOwetaxQueryResponse extends AlipayResponse {
 	@ApiField("data")
 	private EpOweTaxDataInfo data;
 
+	/** 
+	 * 查得标记
+	 */
+	@ApiField("data_found")
+	private Boolean dataFound;
+
 	public void setData(EpOweTaxDataInfo data) {
 		this.data = data;
 	}
 	public EpOweTaxDataInfo getData( ) {
 		return this.data;
+	}
+
+	public void setDataFound(Boolean dataFound) {
+		this.dataFound = dataFound;
+	}
+	public Boolean getDataFound( ) {
+		return this.dataFound;
 	}
 
 }

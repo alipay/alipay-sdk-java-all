@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝就业机构岗位查询
  *
  * @author auto create
- * @since 1.0, 2025-11-14 14:57:41
+ * @since 1.0, 2025-12-10 20:47:42
  */
 public class AlipayEbppIndustryJobOrganizationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1461136565743419364L;
+	private static final long serialVersionUID = 2144333313486787167L;
 
 	/**
 	 * 学历要求

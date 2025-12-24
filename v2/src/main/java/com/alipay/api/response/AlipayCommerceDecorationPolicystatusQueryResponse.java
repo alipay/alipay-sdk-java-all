@@ -8,17 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.decoration.policystatus.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-11-20 11:02:40
+ * @since 1.0, 2025-12-22 14:30:49
  */
 public class AlipayCommerceDecorationPolicystatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3761781551727767832L;
+	private static final long serialVersionUID = 2497891914249385757L;
 
 	/** 
 	 * 订单号
 	 */
 	@ApiField("order_no")
 	private String orderNo;
+
+	/** 
+	 * 外部订单号
+	 */
+	@ApiField("out_order_no")
+	private String outOrderNo;
 
 	/** 
 	 * 保单号
@@ -43,6 +49,13 @@ public class AlipayCommerceDecorationPolicystatusQueryResponse extends AlipayRes
 	}
 	public String getOrderNo( ) {
 		return this.orderNo;
+	}
+
+	public void setOutOrderNo(String outOrderNo) {
+		this.outOrderNo = outOrderNo;
+	}
+	public String getOutOrderNo( ) {
+		return this.outOrderNo;
 	}
 
 	public void setPolicyNo(String policyNo) {

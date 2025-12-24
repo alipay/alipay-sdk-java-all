@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁订单签约
  *
  * @author auto create
- * @since 1.0, 2025-11-21 16:35:23
+ * @since 1.0, 2025-12-15 11:30:21
  */
 public class AlipayCommerceRentOrderSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8145968691529771963L;
+	private static final long serialVersionUID = 3836275552983885949L;
 
 	/**
 	 * 芝麻信用拓展信息

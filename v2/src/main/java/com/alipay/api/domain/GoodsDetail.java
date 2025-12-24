@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品列表信息
  *
  * @author auto create
- * @since 1.0, 2024-11-25 11:14:20
+ * @since 1.0, 2025-12-17 20:17:25
  */
 public class GoodsDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1689542452286792216L;
+	private static final long serialVersionUID = 2527598794366428744L;
 
 	/**
 	 * 支付宝定义的统一商品编号
@@ -36,6 +36,12 @@ public class GoodsDetail extends AlipayObject {
 	 */
 	@ApiField("goods_category")
 	private String goodsCategory;
+
+	/**
+	 * 商品69条码
+	 */
+	@ApiField("goods_ean_id")
+	private String goodsEanId;
 
 	/**
 	 * 商品的编号，该参数传入支付券上绑定商品goods_id,
@@ -106,6 +112,13 @@ public class GoodsDetail extends AlipayObject {
 	}
 	public void setGoodsCategory(String goodsCategory) {
 		this.goodsCategory = goodsCategory;
+	}
+
+	public String getGoodsEanId() {
+		return this.goodsEanId;
+	}
+	public void setGoodsEanId(String goodsEanId) {
+		this.goodsEanId = goodsEanId;
 	}
 
 	public String getGoodsId() {

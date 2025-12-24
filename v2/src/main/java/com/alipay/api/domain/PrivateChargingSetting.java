@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PrivateChargingSetting extends AlipayObject {
 
-	private static final long serialVersionUID = 8622917158283111465L;
+	private static final long serialVersionUID = 1717566685141474591L;
 
 	/**
 	 * 充电桩预约模式的循环方式。当充电桩处于预约模式时，该参数必传。
