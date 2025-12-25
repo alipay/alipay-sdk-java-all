@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudCloudrunStaticsiteDirDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8255485772748848444L;
+	private static final long serialVersionUID = 8493697534414931649L;
 
 	
 

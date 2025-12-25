@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserCertdocUrlQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7587125119753816761L;
+	private static final long serialVersionUID = 4414671487343531968L;
 
 	/**
 	 * 业务类型。向支付宝证件夹PD申请。

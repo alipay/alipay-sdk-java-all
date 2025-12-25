@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenIotvspOrguserDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4252824967428312172L;
+	private static final long serialVersionUID = 5381318946767419348L;
 
 	/** 
 	 * 错误码

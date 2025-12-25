@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OdAnalysisLineInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1237988387871852232L;
+	private static final long serialVersionUID = 4427464444912489231L;
 
 	/**
 	 * 线路方向（UP-上行，DOWN-下行）

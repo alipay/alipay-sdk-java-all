@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GFAOpenAPIReverseBillAcceptance extends AlipayObject {
 
-	private static final long serialVersionUID = 5771945729419588615L;
+	private static final long serialVersionUID = 3867152275696352975L;
 
 	/**
 	 * 摊销扩展信息

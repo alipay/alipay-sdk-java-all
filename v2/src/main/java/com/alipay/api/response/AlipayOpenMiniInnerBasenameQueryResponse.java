@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenMiniInnerBasenameQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3788997265126491419L;
+	private static final long serialVersionUID = 2557494217438729628L;
 
 	/** 
 	 * 该接口是提供给雨燕 只支持内部小程序调用的 查询app_name的接口

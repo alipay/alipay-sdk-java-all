@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPayInstructOpencardTriggerModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2324569311479597549L;
+	private static final long serialVersionUID = 2773186168364838397L;
 
 	/**
 	 * ABCP请求超时时间，单位毫秒，默认值为2 * 60 * 1000L(2分钟)超时，-1表示永不超时，可以根据业务情况修改

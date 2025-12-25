@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFinanceQuotationQuotetradeMetadataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5161599936495928699L;
+	private static final long serialVersionUID = 7895154246461125581L;
 
 	/**
 	 * 业务查询条件（JSON格式），与业务类型对应。当biz_type为STOCK_SYMBOL_BATCH时，入参为symbol（格式code.market）列表，如

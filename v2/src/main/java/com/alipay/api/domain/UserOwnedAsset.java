@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class UserOwnedAsset extends AlipayObject {
 
-	private static final long serialVersionUID = 7288313829714711198L;
+	private static final long serialVersionUID = 1767316319864813944L;
 
 	/**
 	 * 用户持有该sku资产的数据

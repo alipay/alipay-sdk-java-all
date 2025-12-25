@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.info.share response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-17 13:37:51
+ * @since 1.0, 2025-12-24 16:02:42
  */
 public class AlipayMerchantInfoShareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6354786128152162177L;
+	private static final long serialVersionUID = 8341729954282682412L;
 
 	/** 
 	 * 证件地址-具体地址
@@ -25,6 +25,12 @@ public class AlipayMerchantInfoShareResponse extends AlipayResponse {
 	 */
 	@ApiField("area")
 	private String area;
+
+	/** 
+	 * 营业执照链接
+	 */
+	@ApiField("business_license_url")
+	private String businessLicenseUrl;
 
 	/** 
 	 * 经营范围，partner_type非个人时存在
@@ -67,6 +73,24 @@ public class AlipayMerchantInfoShareResponse extends AlipayResponse {
 	 */
 	@ApiField("is_certified")
 	private Boolean isCertified;
+
+	/** 
+	 * 法人身份证件号码，和 legal_person_cert_type 组合使用
+	 */
+	@ApiField("legal_person_cert_no")
+	private String legalPersonCertNo;
+
+	/** 
+	 * 法人身份证件类型
+	 */
+	@ApiField("legal_person_cert_type")
+	private String legalPersonCertType;
+
+	/** 
+	 * yyyyMMdd或者"长期"
+	 */
+	@ApiField("legal_person_expire_date")
+	private String legalPersonExpireDate;
 
 	/** 
 	 * 个人无，单位为证件上登记的法定代表人/负责人姓名
@@ -118,6 +142,13 @@ public class AlipayMerchantInfoShareResponse extends AlipayResponse {
 		return this.area;
 	}
 
+	public void setBusinessLicenseUrl(String businessLicenseUrl) {
+		this.businessLicenseUrl = businessLicenseUrl;
+	}
+	public String getBusinessLicenseUrl( ) {
+		return this.businessLicenseUrl;
+	}
+
 	public void setBusinessScope(String businessScope) {
 		this.businessScope = businessScope;
 	}
@@ -165,6 +196,27 @@ public class AlipayMerchantInfoShareResponse extends AlipayResponse {
 	}
 	public Boolean getIsCertified( ) {
 		return this.isCertified;
+	}
+
+	public void setLegalPersonCertNo(String legalPersonCertNo) {
+		this.legalPersonCertNo = legalPersonCertNo;
+	}
+	public String getLegalPersonCertNo( ) {
+		return this.legalPersonCertNo;
+	}
+
+	public void setLegalPersonCertType(String legalPersonCertType) {
+		this.legalPersonCertType = legalPersonCertType;
+	}
+	public String getLegalPersonCertType( ) {
+		return this.legalPersonCertType;
+	}
+
+	public void setLegalPersonExpireDate(String legalPersonExpireDate) {
+		this.legalPersonExpireDate = legalPersonExpireDate;
+	}
+	public String getLegalPersonExpireDate( ) {
+		return this.legalPersonExpireDate;
 	}
 
 	public void setLegalPersonRealName(String legalPersonRealName) {

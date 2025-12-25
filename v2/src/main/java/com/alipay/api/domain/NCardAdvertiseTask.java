@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NCardAdvertiseTask extends AlipayObject {
 
-	private static final long serialVersionUID = 8575624187897243692L;
+	private static final long serialVersionUID = 8429119951688934767L;
 
 	/**
 	 * 广告媒体类型

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PunishStatusResult extends AlipayObject {
 
-	private static final long serialVersionUID = 4324126783446973429L;
+	private static final long serialVersionUID = 4861317335947112444L;
 
 	/**
 	 * 需求code

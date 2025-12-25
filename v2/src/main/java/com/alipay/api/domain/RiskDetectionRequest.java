@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 风险咨询服务请求
  *
  * @author auto create
- * @since 1.0, 2025-05-15 17:04:25
+ * @since 1.0, 2025-12-24 15:52:41
  */
 public class RiskDetectionRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 8142237539499722111L;
+	private static final long serialVersionUID = 8775959362519588747L;
 
 	/**
 	 * 检测金额
@@ -59,6 +59,13 @@ public class RiskDetectionRequest extends AlipayObject {
 	@ApiListField("risk_detection_parameters")
 	@ApiField("risk_detection_map")
 	private List<RiskDetectionMap> riskDetectionParameters;
+
+	/**
+	 * 允许指定风险点进行检测，可支持输入多个，不输入的情况下默认检测该阶段下所有的风险点
+	 */
+	@ApiListField("risk_point_codes")
+	@ApiField("string")
+	private List<String> riskPointCodes;
 
 	/**
 	 * 二级业务环节枚举
@@ -124,6 +131,13 @@ PAYMENT_SUBMIT-VPC新付款单提交
 	}
 	public void setRiskDetectionParameters(List<RiskDetectionMap> riskDetectionParameters) {
 		this.riskDetectionParameters = riskDetectionParameters;
+	}
+
+	public List<String> getRiskPointCodes() {
+		return this.riskPointCodes;
+	}
+	public void setRiskPointCodes(List<String> riskPointCodes) {
+		this.riskPointCodes = riskPointCodes;
 	}
 
 	public String getSecondLevelBusinessLink() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CreditPayGuaranteeAssetVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6872359339766357976L;
+	private static final long serialVersionUID = 2178819446871598748L;
 
 	/**
 	 * 信用支付基础视图

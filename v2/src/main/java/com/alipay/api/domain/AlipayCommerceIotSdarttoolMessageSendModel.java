@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceIotSdarttoolMessageSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4674669213398231763L;
+	private static final long serialVersionUID = 3324397264796892694L;
 
 	/**
 	 * 消息是否必达(immediate_msg为false时此字段设置有效)，消息过期时间顺延3*24h. 建议使用expire_time设置消息过期时间

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ShopReportProgressInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2885891577256828931L;
+	private static final long serialVersionUID = 1682457782369573548L;
 
 	/**
 	 * 当前上报进度阶段

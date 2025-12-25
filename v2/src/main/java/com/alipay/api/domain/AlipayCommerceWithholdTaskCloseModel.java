@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceWithholdTaskCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5666862283141935753L;
+	private static final long serialVersionUID = 8763518826289372656L;
 
 	/**
 	 * 外部业务单号

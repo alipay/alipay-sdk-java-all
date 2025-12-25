@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BaseCrossborderMerchantInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4637841195579588667L;
+	private static final long serialVersionUID = 8359177543515865136L;
 
 	/**
 	 * 扩展信息

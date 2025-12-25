@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业务特征查询数据产品
  *
  * @author auto create
- * @since 1.0, 2025-12-22 11:22:15
+ * @since 1.0, 2025-12-24 15:12:41
  */
 public class ZhimaCreditEpBusinessIndicatorQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8425338783913294846L;
+	private static final long serialVersionUID = 3814613217748997737L;
 
 	/**
 	 * 授权编号
@@ -24,6 +24,18 @@ public class ZhimaCreditEpBusinessIndicatorQueryModel extends AlipayObject {
 	 */
 	@ApiField("business_key")
 	private String businessKey;
+
+	/**
+	 * 手机号，可密文
+	 */
+	@ApiField("cell")
+	private String cell;
+
+	/**
+	 * 姓名，可密文
+	 */
+	@ApiField("name")
+	private String name;
 
 	/**
 	 * 产品码
@@ -43,6 +55,20 @@ public class ZhimaCreditEpBusinessIndicatorQueryModel extends AlipayObject {
 	}
 	public void setBusinessKey(String businessKey) {
 		this.businessKey = businessKey;
+	}
+
+	public String getCell() {
+		return this.cell;
+	}
+	public void setCell(String cell) {
+		this.cell = cell;
+	}
+
+	public String getName() {
+		return this.name;
+	}
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public String getProductCode() {

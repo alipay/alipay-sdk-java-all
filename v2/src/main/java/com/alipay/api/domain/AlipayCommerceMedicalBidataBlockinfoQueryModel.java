@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalBidataBlockinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7176335719659533845L;
+	private static final long serialVersionUID = 8677378354127239592L;
 
 	/**
 	 * 驾驶舱上不同区域的类型:可选类型如下：

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayContentLiveAnchorResourceAuditModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5275576332239122334L;
+	private static final long serialVersionUID = 5586143786878638882L;
 
 	/**
 	 * 鉴权token

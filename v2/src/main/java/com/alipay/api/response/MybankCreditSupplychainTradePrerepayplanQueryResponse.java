@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankCreditSupplychainTradePrerepayplanQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6116865898858136439L;
+	private static final long serialVersionUID = 3681875476152321135L;
 
 	/** 
 	 * 账单分期列表

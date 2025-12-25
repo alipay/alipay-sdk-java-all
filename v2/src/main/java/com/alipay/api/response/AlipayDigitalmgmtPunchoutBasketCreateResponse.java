@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDigitalmgmtPunchoutBasketCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5129284677543746488L;
+	private static final long serialVersionUID = 7114554555643465983L;
 
 	/** 
 	 * 合并成功后跳转链接

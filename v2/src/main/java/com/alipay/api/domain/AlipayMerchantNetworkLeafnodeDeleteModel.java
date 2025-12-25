@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantNetworkLeafnodeDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5667792178941594861L;
+	private static final long serialVersionUID = 7175966731912849459L;
 
 	/**
 	 * 商家的网络叶子节点ID，叶子节点ID一般为最后一个层级节点，在预付卡商家网络中对应的值为商户在直付通进件后的SMID账号

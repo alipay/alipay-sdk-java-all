@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FreightFlowSubAccountOwnerInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1598848918776646458L;
+	private static final long serialVersionUID = 8319127592649157685L;
 
 	/**
 	 * 证件号码

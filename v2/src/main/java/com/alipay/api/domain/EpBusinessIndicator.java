@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-12-22 11:22:15
+ * @since 1.0, 2025-12-24 15:12:41
  */
 public class EpBusinessIndicator extends AlipayObject {
 
-	private static final long serialVersionUID = 7641172577332894313L;
+	private static final long serialVersionUID = 5117452339619221424L;
 
 	/**
 	 * 指标码值

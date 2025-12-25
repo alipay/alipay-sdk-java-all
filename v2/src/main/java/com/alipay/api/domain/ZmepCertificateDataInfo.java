@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ZmepCertificateDataInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2292112227359179978L;
+	private static final long serialVersionUID = 3674211842788786265L;
 
 	/**
 	 * 命中数据结果

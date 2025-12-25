@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PaymentFactor extends AlipayObject {
 
-	private static final long serialVersionUID = 5555399815654156442L;
+	private static final long serialVersionUID = 4637242642683949749L;
 
 	/**
 	 * 如果将此参数的值指定为true，则在支付过程中向用户显示收银页面;

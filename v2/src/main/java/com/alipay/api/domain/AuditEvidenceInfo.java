@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AuditEvidenceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1738657911193186463L;
+	private static final long serialVersionUID = 2479281834983849993L;
 
 	/**
 	 * 文件类型。包括.jpg .png .jpeg .pdf等
