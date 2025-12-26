@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntfortuneStockMiniappMetaCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2578486458463775155L;
+	private static final long serialVersionUID = 5647684886321418524L;
 
 	/**
 	 * 蚂蚁展业平台生成的应用id

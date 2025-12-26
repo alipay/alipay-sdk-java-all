@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZXBBotChatResult extends AlipayObject {
 
-	private static final long serialVersionUID = 3245747468633798432L;
+	private static final long serialVersionUID = 1489996272334382372L;
 
 	/**
 	 * 支小宝回复模板列表

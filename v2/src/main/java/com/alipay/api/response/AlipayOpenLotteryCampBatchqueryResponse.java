@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenLotteryCampBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1748729135595383699L;
+	private static final long serialVersionUID = 1197971641375613278L;
 
 	/** 
 	 * 抽奖活动搜索列表

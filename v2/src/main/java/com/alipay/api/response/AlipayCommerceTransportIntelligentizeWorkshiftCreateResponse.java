@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportIntelligentizeWorkshiftCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6696595496416462744L;
+	private static final long serialVersionUID = 2415582844981596892L;
 
 	/** 
 	 * 扩展信息，json格式，由双方约定取值

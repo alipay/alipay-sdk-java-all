@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.rent.order.serviceticket.confirm request
  * 
  * @author auto create
- * @since 1.0, 2025-12-24 14:32:41
+ * @since 1.0, 2025-12-25 10:57:41
  */
 public class AlipayCommerceRentOrderServiceticketConfirmRequest implements AlipayRequest<AlipayCommerceRentOrderServiceticketConfirmResponse> {
 

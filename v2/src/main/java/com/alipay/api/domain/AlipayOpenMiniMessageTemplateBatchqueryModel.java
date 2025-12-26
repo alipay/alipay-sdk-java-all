@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 消息子板批量查询接口
  *
  * @author auto create
- * @since 1.0, 2025-03-06 11:44:28
+ * @since 1.0, 2025-12-26 11:50:11
  */
 public class AlipayOpenMiniMessageTemplateBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7274911919314395797L;
+	private static final long serialVersionUID = 5767656919995751964L;
 
 	/**
 	 * 消息类型

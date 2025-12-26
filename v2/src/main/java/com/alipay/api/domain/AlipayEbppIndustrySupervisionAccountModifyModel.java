@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppIndustrySupervisionAccountModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1275941523679125399L;
+	private static final long serialVersionUID = 4378686862174631472L;
 
 	/**
 	 * 待修改属性的子户账户户号。对应「政务监管账户创建」接口返回的 「子户账户户号 merchant_account_no 」

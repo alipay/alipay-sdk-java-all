@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayInsRightsorderPreQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5336728225989229976L;
+	private static final long serialVersionUID = 1229521219352176915L;
 
 	/** 
 	 * 当前订单是否有效，true表示有效，可继续执行下单

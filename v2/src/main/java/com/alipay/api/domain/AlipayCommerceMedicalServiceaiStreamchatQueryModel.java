@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗服务AI场景流式会话
  *
  * @author auto create
- * @since 1.0, 2025-12-16 10:42:50
+ * @since 1.0, 2025-12-26 15:22:42
  */
 public class AlipayCommerceMedicalServiceaiStreamchatQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8552899434579716515L;
+	private static final long serialVersionUID = 4738698661732261539L;
 
 	/**
 	 * 智能体id
@@ -62,7 +62,7 @@ public class AlipayCommerceMedicalServiceaiStreamchatQueryModel extends AlipayOb
 	private String queryType;
 
 	/**
-	 * 区分当前对话场景意图 待分配后传入固定值
+	 * 区分当前对话场景意图
 	 */
 	@ApiField("scene_code")
 	private String sceneCode;

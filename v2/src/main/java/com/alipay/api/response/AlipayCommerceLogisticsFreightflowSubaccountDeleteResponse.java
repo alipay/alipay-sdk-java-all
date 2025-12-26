@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceLogisticsFreightflowSubaccountDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5345675116237548153L;
+	private static final long serialVersionUID = 7426827986951469323L;
 
 	/** 
 	 * 销户是否完成

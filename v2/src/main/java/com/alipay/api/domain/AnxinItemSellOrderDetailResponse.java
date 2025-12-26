@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnxinItemSellOrderDetailResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 5685933948742123151L;
+	private static final long serialVersionUID = 4634957411513363516L;
 
 	/**
 	 * 买家openid

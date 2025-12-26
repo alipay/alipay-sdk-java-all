@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOverseasOpenSchoolQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6521299994292633885L;
+	private static final long serialVersionUID = 7293511557369924877L;
 
 	/** 
 	 * 留学汇款对isv返回结果

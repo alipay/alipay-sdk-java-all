@@ -4,7 +4,7 @@
     <groupId>com.alipay.sdk</groupId>
     <artifactId>alipay-sdk-java</artifactId>
     <packaging>jar</packaging>
-    <version>4.40.604.ALL</version>
+    <version>4.40.607.ALL</version>
     <name>alipay-sdk-java</name>
 
     <url>https://open.alipay.com</url>
@@ -96,8 +96,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>2.3.2</version>
                 <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
@@ -175,6 +175,7 @@
                     <minmemory>3072m</minmemory>
                     <maxmemory>3072m</maxmemory>
                     <excludePackageNames>com.alipay.api.request,com.alipay.api.response,com.alipay.api.domain</excludePackageNames>
+                    <javadocExecutable>/Users/liyunze/Library/Java/JavaVirtualMachines/azul-1.8.0_462/Contents/Home/bin/javadoc</javadocExecutable>
                 </configuration>
                 <executions>
                     <execution>

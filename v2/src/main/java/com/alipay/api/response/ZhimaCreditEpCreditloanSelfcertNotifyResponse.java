@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaCreditEpCreditloanSelfcertNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5196634333982368683L;
+	private static final long serialVersionUID = 7183213438381835411L;
 
 	/** 
 	 * 返回结果。结构视financial_code的不同而定

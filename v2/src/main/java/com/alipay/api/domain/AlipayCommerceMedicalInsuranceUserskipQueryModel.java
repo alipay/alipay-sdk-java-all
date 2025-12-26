@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据用户三要素获取跳转商保码链接
  *
  * @author auto create
- * @since 1.0, 2025-10-29 17:33:20
+ * @since 1.0, 2025-12-25 14:22:24
  */
 public class AlipayCommerceMedicalInsuranceUserskipQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6661617957638548531L;
+	private static final long serialVersionUID = 4693586773187742268L;
 
 	/**
 	 * 证件编号
@@ -60,6 +60,12 @@ public class AlipayCommerceMedicalInsuranceUserskipQueryModel extends AlipayObje
 	 */
 	@ApiField("product_id")
 	private String productId;
+
+	/**
+	 * TPA编号
+	 */
+	@ApiField("tpa_id")
+	private String tpaId;
 
 	/**
 	 * 支付宝用户的userId。
@@ -121,6 +127,13 @@ public class AlipayCommerceMedicalInsuranceUserskipQueryModel extends AlipayObje
 	}
 	public void setProductId(String productId) {
 		this.productId = productId;
+	}
+
+	public String getTpaId() {
+		return this.tpaId;
+	}
+	public void setTpaId(String tpaId) {
+		this.tpaId = tpaId;
 	}
 
 	public String getUserId() {

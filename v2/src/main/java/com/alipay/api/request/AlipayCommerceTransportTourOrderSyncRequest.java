@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.tour.order.sync request
  * 
  * @author auto create
- * @since 1.0, 2025-12-05 11:02:43
+ * @since 1.0, 2025-12-26 14:42:42
  */
 public class AlipayCommerceTransportTourOrderSyncRequest implements AlipayRequest<AlipayCommerceTransportTourOrderSyncResponse> {
 
@@ -19,7 +19,8 @@ public class AlipayCommerceTransportTourOrderSyncRequest implements AlipayReques
 	private String apiVersion="1.0";
 
 	/** 
-	* 文旅订单同步接口
+	* 文旅订单同步接口。
+调用要求：接口具备幂等能力，接入方必须具备调用异常的重试能力。
 	 */
 	private String bizContent;
 

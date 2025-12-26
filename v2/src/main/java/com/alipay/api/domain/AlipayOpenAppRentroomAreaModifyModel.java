@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenAppRentroomAreaModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5561254536241663991L;
+	private static final long serialVersionUID = 3318236547157156989L;
 
 	/**
 	 * 修改的公寓信息

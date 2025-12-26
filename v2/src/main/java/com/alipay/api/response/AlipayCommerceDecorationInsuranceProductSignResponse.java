@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.decoration.insurance.product.sign response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-17 10:37:42
+ * @since 1.0, 2025-12-24 19:27:42
  */
 public class AlipayCommerceDecorationInsuranceProductSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7659673596883496835L;
+	private static final long serialVersionUID = 2265121757914444784L;
 
 	/** 
 	 * null

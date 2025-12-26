@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenMiniOrderInstallmentCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2478398543917929818L;
+	private static final long serialVersionUID = 2433199354144223179L;
 
 	/**
 	 * 续租场景分期数，当分期类型为RELET时，该字段必填，单位：期。

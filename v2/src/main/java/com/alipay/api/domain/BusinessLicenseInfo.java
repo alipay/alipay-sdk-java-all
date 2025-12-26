@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户营业执照信息
  *
  * @author auto create
- * @since 1.0, 2025-12-23 23:01:27
+ * @since 1.0, 2025-12-25 10:27:42
  */
 public class BusinessLicenseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5736382492859988394L;
+	private static final long serialVersionUID = 1673752835396864715L;
 
 	/**
 	 * 上传非经营者本人（签约账号）的营业执照时必填，填写营业执照法人支付宝账号对应的手机号。

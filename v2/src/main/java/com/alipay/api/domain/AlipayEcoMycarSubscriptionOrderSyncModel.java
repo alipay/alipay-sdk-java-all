@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 非标汽车售卖模式订单信息回传
  *
  * @author auto create
- * @since 1.0, 2025-11-11 16:17:05
+ * @since 1.0, 2025-12-26 09:57:42
  */
 public class AlipayEcoMycarSubscriptionOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8598821137439191813L;
+	private static final long serialVersionUID = 6565639184179423586L;
 
 	/**
 	 * 业务状态

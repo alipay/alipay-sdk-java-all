@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppOrderItemCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4769134823297286659L;
+	private static final long serialVersionUID = 8788732188224689954L;
 
 	/**
 	 * 机构订单子项id

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserAccountTaobaoBindQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5354269866219767719L;
+	private static final long serialVersionUID = 1856412132291468753L;
 
 	/** 
 	 * 支付宝用户设置的头像

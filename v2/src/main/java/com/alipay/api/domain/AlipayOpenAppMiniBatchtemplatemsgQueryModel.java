@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 模板消息批量发送记录查询请求
  *
  * @author auto create
- * @since 1.0, 2025-03-06 11:45:16
+ * @since 1.0, 2025-12-26 11:48:56
  */
 public class AlipayOpenAppMiniBatchtemplatemsgQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1236322745363442371L;
+	private static final long serialVersionUID = 1527215168449756626L;
 
 	/**
 	 * 批量发送记录ID，唯一标识一次消息模板批量查询

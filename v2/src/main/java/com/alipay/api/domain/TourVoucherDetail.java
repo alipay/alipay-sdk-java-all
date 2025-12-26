@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class TourVoucherDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 2425411969157786861L;
+	private static final long serialVersionUID = 4841637884757456894L;
 
 	/**
 	 * 游客证件号码。一码通场景，凭证状态未使用时，证件号与手机号二选一必填。

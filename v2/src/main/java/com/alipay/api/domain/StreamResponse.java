@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 结构
  *
  * @author auto create
- * @since 1.0, 2025-12-16 10:42:50
+ * @since 1.0, 2025-12-26 15:22:42
  */
 public class StreamResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 8721496336285871349L;
+	private static final long serialVersionUID = 6817586233346272353L;
 
 	/**
 	 * 智能体id
@@ -52,6 +52,12 @@ public class StreamResponse extends AlipayObject {
 	 */
 	@ApiField("session_id")
 	private String sessionId;
+
+	/**
+	 * 可以直接使用的前端协议内容
+	 */
+	@ApiField("show_contents")
+	private String showContents;
 
 	/**
 	 * 推送轮次
@@ -99,6 +105,13 @@ public class StreamResponse extends AlipayObject {
 	}
 	public void setSessionId(String sessionId) {
 		this.sessionId = sessionId;
+	}
+
+	public String getShowContents() {
+		return this.showContents;
+	}
+	public void setShowContents(String showContents) {
+		this.showContents = showContents;
 	}
 
 	public Long getTurn() {

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.decoration.insurance.product.sign request
  * 
  * @author auto create
- * @since 1.0, 2025-12-17 10:37:42
+ * @since 1.0, 2025-12-24 19:27:42
  */
 public class AlipayCommerceDecorationInsuranceProductSignRequest implements AlipayRequest<AlipayCommerceDecorationInsuranceProductSignResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaCustomerZmcardInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8522415388389966169L;
+	private static final long serialVersionUID = 7452123724151699728L;
 
 	/** 
 	 * 被查看人的信用等级，范围[信用极好，信用优秀，信用良好，信用中等，信用较差]。用户已授权且接入方是二方商户才返回。

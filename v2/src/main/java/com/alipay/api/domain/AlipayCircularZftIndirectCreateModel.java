@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCircularZftIndirectCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6649978255446945266L;
+	private static final long serialVersionUID = 5691486838475251146L;
 
 	/**
 	 * 签约支付宝账户

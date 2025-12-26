@@ -19,6 +19,7 @@ import com.alipay.api.domain.RentPlanInfoVO;
 import com.alipay.api.domain.RentRefundInfoVO;
 import com.alipay.api.domain.RentSignInfoVO;
 import com.alipay.api.domain.RentOrderStatementInfoVO;
+import com.alipay.api.domain.RentServiceTicketInfo;
 import com.alipay.api.domain.RentSubMerchantVO;
 import com.alipay.api.domain.RentFulfillmentDeliveryInfoVO;
 
@@ -28,11 +29,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.rent.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-18 16:55:22
+ * @since 1.0, 2025-12-25 10:57:42
  */
 public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6821256482861287178L;
+	private static final long serialVersionUID = 3839693455479748572L;
 
 	/** 
 	 * 订单收货地址
@@ -188,6 +189,13 @@ public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 	@ApiListField("rent_statement_infos")
 	@ApiField("rent_order_statement_info_v_o")
 	private List<RentOrderStatementInfoVO> rentStatementInfos;
+
+	/** 
+	 * 服务单列表
+	 */
+	@ApiListField("service_ticket_infos")
+	@ApiField("rent_service_ticket_info")
+	private List<RentServiceTicketInfo> serviceTicketInfos;
 
 	/** 
 	 * 结算方式
@@ -406,6 +414,13 @@ public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 	}
 	public List<RentOrderStatementInfoVO> getRentStatementInfos( ) {
 		return this.rentStatementInfos;
+	}
+
+	public void setServiceTicketInfos(List<RentServiceTicketInfo> serviceTicketInfos) {
+		this.serviceTicketInfos = serviceTicketInfos;
+	}
+	public List<RentServiceTicketInfo> getServiceTicketInfos( ) {
+		return this.serviceTicketInfos;
 	}
 
 	public void setSettleType(String settleType) {

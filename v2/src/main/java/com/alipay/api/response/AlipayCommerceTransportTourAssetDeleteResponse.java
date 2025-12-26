@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportTourAssetDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1823781857634192865L;
+	private static final long serialVersionUID = 5197122678393442712L;
 
 	/** 
 	 * 出库失败的订单号列表。

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceRentOrderInvestConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8167228118678478826L;
+	private static final long serialVersionUID = 2666215619248979831L;
 
 	/**
 	 * 2088开头的16位纯数字，小程序场景下获取用户ID请参考：用户授权; 其它场景下获取用户ID请参考：网页授权获取用户信息; 其中buyer_id与buyer_open_id不能同时为空

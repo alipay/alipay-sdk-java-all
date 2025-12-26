@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 开通家装保险产品接口
  *
  * @author auto create
- * @since 1.0, 2025-12-17 10:37:42
+ * @since 1.0, 2025-12-24 19:27:42
  */
 public class AlipayCommerceDecorationInsuranceProductSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4157623413329411833L;
+	private static final long serialVersionUID = 7842659721234972677L;
 
 	/**
 	 * 联系方式

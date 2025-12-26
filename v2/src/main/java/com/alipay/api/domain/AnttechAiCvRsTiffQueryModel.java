@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechAiCvRsTiffQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1299956491123738531L;
+	private static final long serialVersionUID = 2745289394925551795L;
 
 	/**
 	 * tiff文件路径

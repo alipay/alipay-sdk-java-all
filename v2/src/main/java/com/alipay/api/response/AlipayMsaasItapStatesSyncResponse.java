@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMsaasItapStatesSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3829415742227668262L;
+	private static final long serialVersionUID = 8545596696359683313L;
 
 	/** 
 	 * Itap统一放回结果模型

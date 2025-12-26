@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenAppOpenidOpenidtounionidBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6237583711523815877L;
+	private static final long serialVersionUID = 6459326298753531346L;
 
 	/** 
 	 * 不合法的openid列表

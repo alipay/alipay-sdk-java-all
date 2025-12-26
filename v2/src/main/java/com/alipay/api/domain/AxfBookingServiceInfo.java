@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AxfBookingServiceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3616339738955194623L;
+	private static final long serialVersionUID = 4724591634472198413L;
 
 	/**
 	 * 是否购卡后才能预约

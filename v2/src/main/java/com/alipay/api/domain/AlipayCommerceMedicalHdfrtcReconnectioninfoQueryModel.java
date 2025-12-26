@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalHdfrtcReconnectioninfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2481446723947516248L;
+	private static final long serialVersionUID = 5552432381674547497L;
 
 	/**
 	 * 角色类型 Space:医生 Patient:患者

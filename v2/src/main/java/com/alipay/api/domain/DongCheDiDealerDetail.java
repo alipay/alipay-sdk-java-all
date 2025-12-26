@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DongCheDiDealerDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1425124653696568161L;
+	private static final long serialVersionUID = 4844946294521594758L;
 
 	/**
 	 * 地址

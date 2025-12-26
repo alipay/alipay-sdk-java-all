@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 快收服务下单
  *
  * @author auto create
- * @since 1.0, 2025-12-02 20:55:17
+ * @since 1.0, 2025-12-26 13:07:27
  */
 public class AlipayTradeFinanceCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6338353239397665911L;
+	private static final long serialVersionUID = 3416787571182941612L;
 
 	/**
 	 * 下单金额，单位（元，2位小数点），需要和预下单金额一致
@@ -26,6 +26,12 @@ public class AlipayTradeFinanceCreateModel extends AlipayObject {
 	 */
 	@ApiField("biz_date")
 	private Date bizDate;
+
+	/**
+	 * 用于传递特殊业务信息的拓展信息
+	 */
+	@ApiField("business_params")
+	private String businessParams;
 
 	/**
 	 * 外部订单号, 外部的业务单据号，例如xx平台交易订单id
@@ -57,6 +63,13 @@ public class AlipayTradeFinanceCreateModel extends AlipayObject {
 	}
 	public void setBizDate(Date bizDate) {
 		this.bizDate = bizDate;
+	}
+
+	public String getBusinessParams() {
+		return this.businessParams;
+	}
+	public void setBusinessParams(String businessParams) {
+		this.businessParams = businessParams;
 	}
 
 	public String getOutOrderNo() {

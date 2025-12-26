@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.templatemsg.tinypayswitch.confirm request
  * 
  * @author auto create
- * @since 1.0, 2024-08-08 22:06:54
+ * @since 1.0, 2025-12-26 11:52:42
  */
 public class AlipayOpenMiniTemplatemsgTinypayswitchConfirmRequest implements AlipayRequest<AlipayOpenMiniTemplatemsgTinypayswitchConfirmResponse> {
 

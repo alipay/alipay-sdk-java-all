@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AssetEcoIotOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7664964642841922842L;
+	private static final long serialVersionUID = 3889545553539182522L;
 
 	/**
 	 * 申请日期

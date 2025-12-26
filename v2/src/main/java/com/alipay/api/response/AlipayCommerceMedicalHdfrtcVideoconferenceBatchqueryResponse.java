@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMedicalHdfrtcVideoconferenceBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4534414288531383537L;
+	private static final long serialVersionUID = 2117778185782892754L;
 
 	/** 
 	 * 用户进入信息

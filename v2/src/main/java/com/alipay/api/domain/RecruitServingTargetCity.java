@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RecruitServingTargetCity extends AlipayObject {
 
-	private static final long serialVersionUID = 3481161129677112517L;
+	private static final long serialVersionUID = 5823514367125813417L;
 
 	/**
 	 * 是否全国。

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IsvItemIdItemStockFailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1751984713681191534L;
+	private static final long serialVersionUID = 1733224853353274166L;
 
 	/**
 	 * 记录本条疫苗操作失败原因

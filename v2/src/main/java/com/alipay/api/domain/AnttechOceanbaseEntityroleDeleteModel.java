@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechOceanbaseEntityroleDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3378735686536367581L;
+	private static final long serialVersionUID = 4489433149221634365L;
 
 	/**
 	 * OceanBase Cloud的用户Id，可从个人中心获取

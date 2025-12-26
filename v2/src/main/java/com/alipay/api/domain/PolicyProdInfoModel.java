@@ -1,17 +1,27 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 保险产品信息
  *
  * @author auto create
- * @since 1.0, 2025-09-29 10:24:07
+ * @since 1.0, 2025-12-25 14:16:46
  */
 public class PolicyProdInfoModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2557858663395521969L;
+	private static final long serialVersionUID = 3823684663345456741L;
+
+	/**
+	 * 责任剩余保额列表
+	 */
+	@ApiListField("duty_residue_amount_list")
+	@ApiField("duty_residue_amount")
+	private List<DutyResidueAmount> dutyResidueAmountList;
 
 	/**
 	 * 产品名称
@@ -24,6 +34,13 @@ public class PolicyProdInfoModel extends AlipayObject {
 	 */
 	@ApiField("prod_no")
 	private String prodNo;
+
+	public List<DutyResidueAmount> getDutyResidueAmountList() {
+		return this.dutyResidueAmountList;
+	}
+	public void setDutyResidueAmountList(List<DutyResidueAmount> dutyResidueAmountList) {
+		this.dutyResidueAmountList = dutyResidueAmountList;
+	}
 
 	public String getProdName() {
 		return this.prodName;

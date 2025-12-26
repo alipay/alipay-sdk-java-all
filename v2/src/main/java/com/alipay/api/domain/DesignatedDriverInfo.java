@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 司机信息
  *
  * @author auto create
- * @since 1.0, 2025-12-12 10:21:14
+ * @since 1.0, 2025-12-25 19:56:54
  */
 public class DesignatedDriverInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2662556789592472684L;
+	private static final long serialVersionUID = 2136849114217724928L;
+
+	/**
+	 * 某个服务商传参异常，此字段用于兜底。正确的需要使用contact_phone字段
+	 */
+	@ApiField("concat_phone")
+	private String concatPhone;
 
 	/**
 	 * 司机电话
@@ -81,6 +87,13 @@ public class DesignatedDriverInfo extends AlipayObject {
 	 */
 	@ApiField("star_lever")
 	private String starLever;
+
+	public String getConcatPhone() {
+		return this.concatPhone;
+	}
+	public void setConcatPhone(String concatPhone) {
+		this.concatPhone = concatPhone;
+	}
 
 	public String getContactPhone() {
 		return this.contactPhone;

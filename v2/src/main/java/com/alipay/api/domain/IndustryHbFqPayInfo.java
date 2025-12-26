@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IndustryHbFqPayInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6276217818437711362L;
+	private static final long serialVersionUID = 4278146626933525683L;
 
 	/**
 	 * 用户使用花呗分期支付的金额数

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenMiniUserportraitQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8397414614616749322L;
+	private static final long serialVersionUID = 2775757831166782459L;
 
 	/**
 	 * 用户画像的时间范围。RECENT_7_DAY代表近7日，RECENT_30_DAY代表近30日
