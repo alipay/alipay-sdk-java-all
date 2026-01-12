@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.user.homedoctor.sync request
  * 
  * @author auto create
- * @since 1.0, 2025-11-28 16:17:42
+ * @since 1.0, 2026-01-05 10:12:42
  */
 public class AlipayCommerceMedicalUserHomedoctorSyncRequest implements AlipayRequest<AlipayCommerceMedicalUserHomedoctorSyncResponse> {
 
@@ -19,7 +19,7 @@ public class AlipayCommerceMedicalUserHomedoctorSyncRequest implements AlipayReq
 	private String apiVersion="1.0";
 
 	/** 
-	* AQ用户医生签约状态数据同步
+	* 蚂蚁健康用户医生签约状态数据同步
 	 */
 	private String bizContent;
 

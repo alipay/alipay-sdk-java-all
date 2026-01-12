@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品列表信息模型
  *
  * @author auto create
- * @since 1.0, 2025-08-26 10:51:43
+ * @since 1.0, 2026-01-05 10:29:44
  */
 public class MiniGoodsDetailInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2173997377188283367L;
+	private static final long serialVersionUID = 8342748653727298932L;
 
 	/**
 	 * 活动信息
@@ -194,6 +194,12 @@ item_discount使用场景：同时购买多件商品时存在优惠，传入优�
 	 */
 	@ApiField("show_url")
 	private String showUrl;
+
+	/**
+	 * 购物车下单页商品维度回调信息，传入一个json化的mp
+	 */
+	@ApiField("submit_order_callback_item_ext_str")
+	private String submitOrderCallbackItemExtStr;
 
 	/**
 	 * 演出票务信息
@@ -395,6 +401,13 @@ item_discount使用场景：同时购买多件商品时存在优惠，传入优�
 	}
 	public void setShowUrl(String showUrl) {
 		this.showUrl = showUrl;
+	}
+
+	public String getSubmitOrderCallbackItemExtStr() {
+		return this.submitOrderCallbackItemExtStr;
+	}
+	public void setSubmitOrderCallbackItemExtStr(String submitOrderCallbackItemExtStr) {
+		this.submitOrderCallbackItemExtStr = submitOrderCallbackItemExtStr;
 	}
 
 	public TicketInfoDTO getTicketInfo() {

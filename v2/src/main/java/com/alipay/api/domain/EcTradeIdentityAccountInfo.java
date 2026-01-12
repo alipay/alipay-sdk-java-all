@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业码门店收单身份信息（包含账号信息）
  *
  * @author auto create
- * @since 1.0, 2025-11-07 11:54:16
+ * @since 1.0, 2025-12-29 17:13:13
  */
 public class EcTradeIdentityAccountInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4862619828716255745L;
+	private static final long serialVersionUID = 2162646926568214437L;
+
+	/**
+	 * 门店间连收单账号认证绑定的UID
+	 */
+	@ApiField("bind_uid")
+	private String bindUid;
 
 	/**
 	 * 门店收单在企业码业务场景不可用原因
@@ -54,6 +60,13 @@ public class EcTradeIdentityAccountInfo extends AlipayObject {
 	 */
 	@ApiField("type")
 	private String type;
+
+	public String getBindUid() {
+		return this.bindUid;
+	}
+	public void setBindUid(String bindUid) {
+		this.bindUid = bindUid;
+	}
 
 	public String getInvalidReason() {
 		return this.invalidReason;

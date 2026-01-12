@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HDFPatientCourseTime extends AlipayObject {
 
-	private static final long serialVersionUID = 8625388233194238299L;
+	private static final long serialVersionUID = 3362455188663174782L;
 
 	/**
 	 * 患病时间

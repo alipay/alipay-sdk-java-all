@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * AQ用户医生签约状态同步接口
+ * 蚂蚁健康用户医生签约状态同步接口
  *
  * @author auto create
- * @since 1.0, 2025-11-20 16:22:41
+ * @since 1.0, 2026-01-05 10:12:42
  */
 public class AlipayCommerceMedicalUserHomedoctorSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6334982636873181163L;
+	private static final long serialVersionUID = 8838852422597537369L;
 
 	/**
 	 * 医生身份证号

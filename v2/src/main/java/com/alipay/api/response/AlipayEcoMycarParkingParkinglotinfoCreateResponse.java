@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.eco.mycar.parking.parkinglotinfo.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-27 15:12:27
+ * @since 1.0, 2025-12-30 10:06:16
  */
 public class AlipayEcoMycarParkingParkinglotinfoCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4295395298346243618L;
+	private static final long serialVersionUID = 3527528435249154596L;
 
 	/** 
 	 * 具体错误码 参数异常：INVALID_PARAMETER 没有权限操作：NO_PERMISSION_ERROR 请求受理结果未知：BIZ_UNKNOWN 请求受理失败：BIZ_FAIL 系统繁忙：SYSTEM_ERROR

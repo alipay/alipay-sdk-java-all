@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.content.commercial.storeitem.batchcreate response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-17 14:41:54
+ * @since 1.0, 2026-01-06 10:20:31
  */
 public class AlipayContentCommercialStoreitemBatchcreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7424666262338784226L;
+	private static final long serialVersionUID = 6768999955352395393L;
 
 	/** 
 	 * 带货车商品相关信息结果

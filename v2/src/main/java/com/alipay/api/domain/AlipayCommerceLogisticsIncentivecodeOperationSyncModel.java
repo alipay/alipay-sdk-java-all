@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 寄件激励码动销反馈信息同步
  *
  * @author auto create
- * @since 1.0, 2025-09-16 13:51:27
+ * @since 1.0, 2026-01-07 10:11:53
  */
 public class AlipayCommerceLogisticsIncentivecodeOperationSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1375388326558261755L;
+	private static final long serialVersionUID = 2793158995297584522L;
 
 	/**
 	 * 支付宝交易号 当前字段已废弃(支付成功相关参数，迁移到alipay.commerce.logistics.trade.event.sync接口)
@@ -36,6 +36,12 @@ public class AlipayCommerceLogisticsIncentivecodeOperationSyncModel extends Alip
 	private String incentiveCode;
 
 	/**
+	 * json字符串格式扩展字段，用于扩展业务字段场景 {"key1":"value1","key2":"value2","key3":value3}
+	 */
+	@ApiField("log_ext_info")
+	private String logExtInfo;
+
+	/**
 	 * 商户标识（接口调用方的渠道编码，由支付宝分配）
 	 */
 	@ApiField("logistics_code")
@@ -51,6 +57,7 @@ public class AlipayCommerceLogisticsIncentivecodeOperationSyncModel extends Alip
 	 * SCAN(用户扫码)
 SEND_ORDER(用户寄件下单)
 RECEIVE_SUCCESS（揽收成功）
+EXPRESS_DELIVERY(快递装车)
 	 */
 	@ApiField("operation_dynamic_sales_type")
 	private String operationDynamicSalesType;
@@ -114,10 +121,9 @@ OTHER 其他渠道
 	private String payUrl;
 
 	/**
-	 * 运单号 当前字段已废弃(支付成功相关参数，迁移到alipay.commerce.logistics.trade.event.sync接口)
+	 * 运单号
 	 */
 	@ApiField("waybill_no")
-	@Deprecated
 	private String waybillNo;
 
 	public String getAlipayTradeNo() {
@@ -139,6 +145,13 @@ OTHER 其他渠道
 	}
 	public void setIncentiveCode(String incentiveCode) {
 		this.incentiveCode = incentiveCode;
+	}
+
+	public String getLogExtInfo() {
+		return this.logExtInfo;
+	}
+	public void setLogExtInfo(String logExtInfo) {
+		this.logExtInfo = logExtInfo;
 	}
 
 	public String getLogisticsCode() {

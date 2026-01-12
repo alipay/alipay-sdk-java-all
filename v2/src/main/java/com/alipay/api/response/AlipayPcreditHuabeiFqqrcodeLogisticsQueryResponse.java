@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.huabei.fqqrcode.logistics.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-09-04 01:01:43
+ * @since 1.0, 2026-01-04 11:47:33
  */
 public class AlipayPcreditHuabeiFqqrcodeLogisticsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2279414186164727583L;
+	private static final long serialVersionUID = 4275294455659883679L;
 
 	/** 
 	 * 承接物料运输订单的快递公司名称

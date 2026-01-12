@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业财逆向账单受理
  *
  * @author auto create
- * @since 1.0, 2020-08-27 20:00:08
+ * @since 1.0, 2025-12-29 10:59:58
  */
 public class GFAOpenAPIReverseBillAcceptance extends AlipayObject {
 
-	private static final long serialVersionUID = 3681887333855419962L;
+	private static final long serialVersionUID = 2394245374645535986L;
 
 	/**
 	 * 摊销扩展信息
@@ -100,6 +100,12 @@ public class GFAOpenAPIReverseBillAcceptance extends AlipayObject {
 	private String nonpaymentAmount;
 
 	/**
+	 * 结算外部业务账单号
+	 */
+	@ApiField("out_bill_no")
+	private String outBillNo;
+
+	/**
 	 * 业务逆向流水号（受理幂等字段之一）
 	 */
 	@ApiField("out_business_no")
@@ -142,6 +148,12 @@ public class GFAOpenAPIReverseBillAcceptance extends AlipayObject {
 	private String realAmount;
 
 	/**
+	 * 关联外部账单号，如果是单独的退款/退费账单，则传其对应的正向交易/收费账单号
+	 */
+	@ApiField("rel_out_bill_no")
+	private String relOutBillNo;
+
+	/**
 	 * 逆向关联的正向流水号
 	 */
 	@ApiField("rel_out_business_no")
@@ -158,6 +170,12 @@ public class GFAOpenAPIReverseBillAcceptance extends AlipayObject {
 	 */
 	@ApiField("service_amount")
 	private Long serviceAmount;
+
+	/**
+	 * 业务发生金额
+	 */
+	@ApiField("service_amount_new")
+	private String serviceAmountNew;
 
 	/**
 	 * 业务唯一标识（受理幂等字段之一）
@@ -293,6 +311,13 @@ public class GFAOpenAPIReverseBillAcceptance extends AlipayObject {
 		this.nonpaymentAmount = nonpaymentAmount;
 	}
 
+	public String getOutBillNo() {
+		return this.outBillNo;
+	}
+	public void setOutBillNo(String outBillNo) {
+		this.outBillNo = outBillNo;
+	}
+
 	public String getOutBusinessNo() {
 		return this.outBusinessNo;
 	}
@@ -342,6 +367,13 @@ public class GFAOpenAPIReverseBillAcceptance extends AlipayObject {
 		this.realAmount = realAmount;
 	}
 
+	public String getRelOutBillNo() {
+		return this.relOutBillNo;
+	}
+	public void setRelOutBillNo(String relOutBillNo) {
+		this.relOutBillNo = relOutBillNo;
+	}
+
 	public String getRelOutBusinessNo() {
 		return this.relOutBusinessNo;
 	}
@@ -361,6 +393,13 @@ public class GFAOpenAPIReverseBillAcceptance extends AlipayObject {
 	}
 	public void setServiceAmount(Long serviceAmount) {
 		this.serviceAmount = serviceAmount;
+	}
+
+	public String getServiceAmountNew() {
+		return this.serviceAmountNew;
+	}
+	public void setServiceAmountNew(String serviceAmountNew) {
+		this.serviceAmountNew = serviceAmountNew;
 	}
 
 	public String getServiceType() {

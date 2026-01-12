@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 科室医生排班列表推荐接口
  *
  * @author auto create
- * @since 1.0, 2025-08-25 14:59:38
+ * @since 1.0, 2026-01-06 17:28:36
  */
 public class AlipayCommerceMedicalLargermodelDepartmentscheduleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7197738891354397639L;
+	private static final long serialVersionUID = 3462119617674425628L;
 
 	/**
 	 * 来源渠道
@@ -95,6 +95,13 @@ false: 不使用兜底召回策略
 	private List<String> hosUniqCodeList;
 
 	/**
+	 * 原始科室名称
+	 */
+	@ApiListField("hospital_depart_name_list")
+	@ApiField("string")
+	private List<String> hospitalDepartNameList;
+
+	/**
 	 * LBS纬度
 	 */
 	@ApiField("latitude")
@@ -111,6 +118,12 @@ false: 不使用兜底召回策略
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/**
+	 * 挂号订单属性
+	 */
+	@ApiField("order_prop")
+	private String orderProp;
 
 	/**
 	 * 分页key
@@ -271,6 +284,13 @@ CHANNEL_SEARCH
 		this.hosUniqCodeList = hosUniqCodeList;
 	}
 
+	public List<String> getHospitalDepartNameList() {
+		return this.hospitalDepartNameList;
+	}
+	public void setHospitalDepartNameList(List<String> hospitalDepartNameList) {
+		this.hospitalDepartNameList = hospitalDepartNameList;
+	}
+
 	public String getLatitude() {
 		return this.latitude;
 	}
@@ -290,6 +310,13 @@ CHANNEL_SEARCH
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public String getOrderProp() {
+		return this.orderProp;
+	}
+	public void setOrderProp(String orderProp) {
+		this.orderProp = orderProp;
 	}
 
 	public String getPageKey() {

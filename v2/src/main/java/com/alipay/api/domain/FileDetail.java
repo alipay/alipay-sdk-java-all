@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 文件信息
  *
  * @author auto create
- * @since 1.0, 2024-09-12 09:51:02
+ * @since 1.0, 2026-01-08 11:03:08
  */
 public class FileDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7258813723517297786L;
+	private static final long serialVersionUID = 1544727611648494189L;
 
 	/**
 	 * 需要通过alipay.open.file.upload(支付宝文件上传接口)上传文件，获取对应的file_id

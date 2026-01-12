@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 景区数据
  *
  * @author auto create
- * @since 1.0, 2025-12-03 10:12:42
+ * @since 1.0, 2026-01-09 13:57:44
  */
 public class LocationData extends AlipayObject {
 
-	private static final long serialVersionUID = 5654498953227758898L;
+	private static final long serialVersionUID = 4524489123116237943L;
 
 	/**
 	 * 0-宽松，1-较拥挤，2-非常拥挤，3-不宜进入

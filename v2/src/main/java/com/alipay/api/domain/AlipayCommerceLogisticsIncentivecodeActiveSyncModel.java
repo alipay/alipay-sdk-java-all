@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 寄件激励码绑码激活信息同步
  *
  * @author auto create
- * @since 1.0, 2025-09-05 14:35:25
+ * @since 1.0, 2026-01-07 10:14:16
  */
 public class AlipayCommerceLogisticsIncentivecodeActiveSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2156835145723376578L;
+	private static final long serialVersionUID = 5489191866419287641L;
 
 	/**
 	 * 码值绑定时位置的区
@@ -90,6 +90,7 @@ public class AlipayCommerceLogisticsIncentivecodeActiveSyncModel extends AlipayO
 	/**
 	 * EXPRESSMAN 代表快递员
 STATION 代表驿站
+THIRD_MERCHANT 代表三方商户
 	 */
 	@ApiField("active_type")
 	private String activeType;
@@ -99,6 +100,12 @@ STATION 代表驿站
 	 */
 	@ApiField("incentive_code")
 	private String incentiveCode;
+
+	/**
+	 * json字符串格式扩展字段，用于扩展业务字段场景 {"key1":"value1","key2":"value2","key3":value3}
+	 */
+	@ApiField("log_ext_info")
+	private String logExtInfo;
 
 	/**
 	 * 商户标识（接口调用方的渠道编码，由支付宝分配）
@@ -208,6 +215,13 @@ STATION 代表驿站
 	}
 	public void setIncentiveCode(String incentiveCode) {
 		this.incentiveCode = incentiveCode;
+	}
+
+	public String getLogExtInfo() {
+		return this.logExtInfo;
+	}
+	public void setLogExtInfo(String logExtInfo) {
+		this.logExtInfo = logExtInfo;
 	}
 
 	public String getLogisticsCode() {

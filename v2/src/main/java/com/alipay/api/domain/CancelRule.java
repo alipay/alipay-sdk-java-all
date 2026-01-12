@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CancelRule extends AlipayObject {
 
-	private static final long serialVersionUID = 1861361118331483656L;
+	private static final long serialVersionUID = 5813147722699514298L;
 
 	/**
 	 * 当罚金类型penalty_type为固定罚金类型FIXED时，该字段必填。限制同一币种只能传1条固定罚金，当前仅支持CNY。

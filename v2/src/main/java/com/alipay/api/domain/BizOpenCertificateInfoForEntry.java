@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 证件信息
  *
  * @author auto create
- * @since 1.0, 2025-12-15 23:21:53
+ * @since 1.0, 2026-01-04 14:12:37
  */
 public class BizOpenCertificateInfoForEntry extends AlipayObject {
 
-	private static final long serialVersionUID = 4185925442818149645L;
+	private static final long serialVersionUID = 7552635131371531539L;
 
 	/**
 	 * 证件名称
@@ -35,7 +35,7 @@ public class BizOpenCertificateInfoForEntry extends AlipayObject {
 	private String certPicType;
 
 	/**
-	 * 证件图片,通过调用 ant.merchant.expand.indirect.image.upload(图片上传)接口返回的image_id作为参数
+	 * 证件图片,通过调用 <a href="https://isp-fe-tern.alipay.com/legacy/my/openApiDetailAndApply?apiId=24075&operateType=detail">ant.merchant.expand.indirect.image.upload</a>(图片上传)接口返回的image_id作为参数
 	 */
 	@ApiListField("cert_pics")
 	@ApiField("string")

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.edas.ecodata.sync request
  * 
  * @author auto create
- * @since 1.0, 2025-12-03 10:12:42
+ * @since 1.0, 2026-01-09 13:57:44
  */
 public class AlipayCommerceEdasEcodataSyncRequest implements AlipayRequest<AlipayCommerceEdasEcodataSyncResponse> {
 

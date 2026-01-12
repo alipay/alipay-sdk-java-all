@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.commission.rule.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-22 14:37:46
+ * @since 1.0, 2026-01-05 14:37:41
  */
 public class AlipayCommerceCommissionRuleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3295715127124872137L;
+	private static final long serialVersionUID = 6836613967487989869L;
 
 	/** 
 	 * 生效中的抽佣规则

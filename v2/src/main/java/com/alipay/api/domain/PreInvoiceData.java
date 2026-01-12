@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PreInvoiceData extends AlipayObject {
 
-	private static final long serialVersionUID = 8611636273793982521L;
+	private static final long serialVersionUID = 1512953125674955475L;
 
 	/**
 	 * 购买方地址

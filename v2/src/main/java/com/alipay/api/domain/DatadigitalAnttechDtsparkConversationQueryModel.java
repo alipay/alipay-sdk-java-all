@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数字科技AI智库查询会话消息
  *
  * @author auto create
- * @since 1.0, 2024-12-26 10:20:36
+ * @since 1.0, 2026-01-04 11:18:09
  */
 public class DatadigitalAnttechDtsparkConversationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1123623896246864511L;
+	private static final long serialVersionUID = 2515223826241419685L;
 
 	/**
 	 * AI智库配置的智能会话助手唯一id

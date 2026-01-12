@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TransportTrip extends AlipayObject {
 
-	private static final long serialVersionUID = 6417192484172256496L;
+	private static final long serialVersionUID = 4889611256859429969L;
 
 	/**
 	 * 运营方向，与线路表方向相同

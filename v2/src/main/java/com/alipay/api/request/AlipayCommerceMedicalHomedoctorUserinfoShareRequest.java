@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.homedoctor.userinfo.share request
  * 
  * @author auto create
- * @since 1.0, 2025-12-01 18:12:42
+ * @since 1.0, 2025-12-30 14:07:41
  */
 public class AlipayCommerceMedicalHomedoctorUserinfoShareRequest implements AlipayRequest<AlipayCommerceMedicalHomedoctorUserinfoShareResponse> {
 
@@ -19,7 +19,7 @@ public class AlipayCommerceMedicalHomedoctorUserinfoShareRequest implements Alip
 	private String apiVersion="1.0";
 
 	/** 
-	* AQ家庭医生签约获取用户信息
+	* 蚂蚁健康家庭医生签约获取用户信息
 	 */
 	private String bizContent;
 

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 合同中心风险扫描
  *
  * @author auto create
- * @since 1.0, 2021-10-09 10:06:58
+ * @since 1.0, 2026-01-09 15:21:14
  */
 public class AlipayBossProdContractRiskCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7288963248689841784L;
+	private static final long serialVersionUID = 6483573818672282327L;
 
 	/**
 	 * 待扫描的附件【前置已经写入法务oss】

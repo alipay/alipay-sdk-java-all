@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数字科技AI智库会话反馈
  *
  * @author auto create
- * @since 1.0, 2024-12-26 10:20:29
+ * @since 1.0, 2026-01-04 11:18:31
  */
 public class DatadigitalAnttechDtsparkFeedbackSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3695296131818477985L;
+	private static final long serialVersionUID = 1318161884793999539L;
 
 	/**
 	 * 反馈状态,0表示未反馈,1表示点赞,2表示踩

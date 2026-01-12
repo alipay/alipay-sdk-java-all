@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalEbbenefitMemberGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8388212478684717567L;
+	private static final long serialVersionUID = 4266646951812727637L;
 
 	/**
 	 * 会员id

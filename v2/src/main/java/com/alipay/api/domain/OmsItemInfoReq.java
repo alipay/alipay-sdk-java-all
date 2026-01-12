@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class OmsItemInfoReq extends AlipayObject {
 
-	private static final long serialVersionUID = 2876222953711663441L;
+	private static final long serialVersionUID = 8897863435664456594L;
 
 	/**
 	 * 修改人

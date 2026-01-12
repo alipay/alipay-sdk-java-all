@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行驶证信息
  *
  * @author auto create
- * @since 1.0, 2025-09-18 15:56:07
+ * @since 1.0, 2026-01-08 11:03:08
  */
 public class DrivingLicenseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7454568316265444642L;
+	private static final long serialVersionUID = 5713145986474884481L;
+
+	/**
+	 * 行驶证上的地址
+	 */
+	@ApiField("address")
+	private String address;
 
 	/**
 	 * 发动机编号
@@ -102,6 +108,13 @@ public class DrivingLicenseInfo extends AlipayObject {
 	 */
 	@ApiField("vin_number")
 	private String vinNumber;
+
+	public String getAddress() {
+		return this.address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
 
 	public String getEngineNumber() {
 		return this.engineNumber;

@@ -4,23 +4,23 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * AQ授权获取用户实名信息
+ * 蚂蚁健康授权获取用户实名信息
  *
  * @author auto create
- * @since 1.0, 2025-12-01 18:12:42
+ * @since 1.0, 2025-12-30 14:07:41
  */
 public class AlipayCommerceMedicalHomedoctorUserinfoShareModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3231737134778443596L;
+	private static final long serialVersionUID = 2352625576544678218L;
 
 	/**
-	 * AQ访问令牌。通过该令牌调用需要授权类接口
+	 * 蚂蚁健康访问令牌。通过该令牌调用需要授权接口
 	 */
 	@ApiField("aq_access_token")
 	private String aqAccessToken;
 
 	/**
-	 * 用户对外开放openid
+	 * 蚂蚁健康用户对外开放OPEN_ID
 	 */
 	@ApiField("aq_open_id")
 	private String aqOpenId;

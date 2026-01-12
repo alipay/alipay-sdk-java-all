@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.anttech.dtspark.feedback.submit response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-09 16:33:33
+ * @since 1.0, 2026-01-04 11:18:31
  */
 public class DatadigitalAnttechDtsparkFeedbackSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6375648323626791724L;
+	private static final long serialVersionUID = 6157998783619377254L;
 
 	/** 
 	 * 单次会话反馈结果

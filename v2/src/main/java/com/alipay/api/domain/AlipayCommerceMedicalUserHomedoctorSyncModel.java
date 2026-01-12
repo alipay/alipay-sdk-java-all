@@ -6,17 +6,17 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * AQ用户医生签约状态数据同步
+ * 蚂蚁健康用户医生签约状态数据同步
  *
  * @author auto create
- * @since 1.0, 2025-11-28 16:17:42
+ * @since 1.0, 2026-01-05 10:12:42
  */
 public class AlipayCommerceMedicalUserHomedoctorSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3835829377519429693L;
+	private static final long serialVersionUID = 5799926696167477928L;
 
 	/**
-	 * AQ用户的openId
+	 * 蚂蚁健康用户的openId
 	 */
 	@ApiField("aq_open_id")
 	private String aqOpenId;

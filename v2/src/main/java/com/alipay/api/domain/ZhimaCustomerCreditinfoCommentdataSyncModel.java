@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 客户评价数据回传
  *
  * @author auto create
- * @since 1.0, 2025-09-02 21:41:24
+ * @since 1.0, 2026-01-08 10:43:28
  */
 public class ZhimaCustomerCreditinfoCommentdataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8452223369432417632L;
+	private static final long serialVersionUID = 2361928158679338792L;
+
+	/**
+	 * 针对评价字数、评价图片数据、评价视频时长的质量描述
+	 */
+	@ApiField("comment_desc")
+	private String commentDesc;
 
 	/**
 	 * 高德侧传入的本次评价单号
@@ -23,10 +29,22 @@ public class ZhimaCustomerCreditinfoCommentdataSyncModel extends AlipayObject {
 	private String commentNo;
 
 	/**
+	 * 评价来源信息，业务接入分配
+	 */
+	@ApiField("comment_source")
+	private String commentSource;
+
+	/**
 	 * 评价的状态标签值
 	 */
 	@ApiField("comment_tag")
 	private String commentTag;
+
+	/**
+	 * true代表包含真实标签，false标签不包含真实标签
+	 */
+	@ApiField("has_real_label")
+	private Boolean hasRealLabel;
 
 	/**
 	 * 商户外部单号
@@ -47,6 +65,13 @@ public class ZhimaCustomerCreditinfoCommentdataSyncModel extends AlipayObject {
 	@ApiField("user_score")
 	private String userScore;
 
+	public String getCommentDesc() {
+		return this.commentDesc;
+	}
+	public void setCommentDesc(String commentDesc) {
+		this.commentDesc = commentDesc;
+	}
+
 	public String getCommentNo() {
 		return this.commentNo;
 	}
@@ -54,11 +79,25 @@ public class ZhimaCustomerCreditinfoCommentdataSyncModel extends AlipayObject {
 		this.commentNo = commentNo;
 	}
 
+	public String getCommentSource() {
+		return this.commentSource;
+	}
+	public void setCommentSource(String commentSource) {
+		this.commentSource = commentSource;
+	}
+
 	public String getCommentTag() {
 		return this.commentTag;
 	}
 	public void setCommentTag(String commentTag) {
 		this.commentTag = commentTag;
+	}
+
+	public Boolean getHasRealLabel() {
+		return this.hasRealLabel;
+	}
+	public void setHasRealLabel(Boolean hasRealLabel) {
+		this.hasRealLabel = hasRealLabel;
 	}
 
 	public String getOutAgreementNo() {

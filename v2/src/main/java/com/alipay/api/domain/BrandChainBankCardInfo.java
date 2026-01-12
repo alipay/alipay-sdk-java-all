@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 银行卡信息
  *
  * @author auto create
- * @since 1.0, 2025-12-15 14:02:43
+ * @since 1.0, 2026-01-06 09:42:42
  */
 public class BrandChainBankCardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6872859686589869721L;
+	private static final long serialVersionUID = 3659467993431497972L;
 
 	/**
 	 * 开户支行

@@ -1,0 +1,42 @@
+package com.alipay.api.domain;
+
+import com.alipay.api.AlipayObject;
+import com.alipay.api.internal.mapping.ApiField;
+
+/**
+ * N核身异常提示查询
+ *
+ * @author auto create
+ * @since 1.0, 2025-12-31 17:50:54
+ */
+public class AlipayOfflineProviderNpassporterVerifyresultinfoQueryModel extends AlipayObject {
+
+	private static final long serialVersionUID = 5842583863471613486L;
+
+	/**
+	 * 活动code
+	 */
+	@ApiField("activity_code")
+	private String activityCode;
+
+	/**
+	 * 解决方案code
+	 */
+	@ApiField("solution_code")
+	private String solutionCode;
+
+	public String getActivityCode() {
+		return this.activityCode;
+	}
+	public void setActivityCode(String activityCode) {
+		this.activityCode = activityCode;
+	}
+
+	public String getSolutionCode() {
+		return this.solutionCode;
+	}
+	public void setSolutionCode(String solutionCode) {
+		this.solutionCode = solutionCode;
+	}
+
+}

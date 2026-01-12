@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.customer.creditinfo.commentdata.sync request
  * 
  * @author auto create
- * @since 1.0, 2025-09-02 21:42:37
+ * @since 1.0, 2026-01-08 10:47:42
  */
 public class ZhimaCustomerCreditinfoCommentdataSyncRequest implements AlipayRequest<ZhimaCustomerCreditinfoCommentdataSyncResponse> {
 

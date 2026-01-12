@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-10-24 14:27:41
+ * @since 1.0, 2026-01-05 14:32:42
  */
 public class BarLinkInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5454494395513199732L;
+	private static final long serialVersionUID = 1772782192182299349L;
 
 	/**
 	 * LOCKER_SUCCESS - 开锁成功，LOCKER_FAIL-开锁失败；

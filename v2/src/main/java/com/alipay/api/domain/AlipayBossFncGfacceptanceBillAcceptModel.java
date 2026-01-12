@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业财账单受理接口
  *
  * @author auto create
- * @since 1.0, 2024-03-22 11:38:15
+ * @since 1.0, 2025-12-29 11:00:08
  */
 public class AlipayBossFncGfacceptanceBillAcceptModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8576997656358398269L;
+	private static final long serialVersionUID = 2545713156386911726L;
 
 	/**
 	 * 业财账单受理模型
 	 */
 	@ApiField("bill_acceptance")
 	private GFAOpenAPIBillAcceptance billAcceptance;
+
+	/**
+	 * 用于标记支付宝用户在应用下的唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 16位。支付宝UID或者2088000000000XX0，倒数2、3位数字用来决策LDC ZoneUid和分库位
@@ -30,6 +36,13 @@ public class AlipayBossFncGfacceptanceBillAcceptModel extends AlipayObject {
 	}
 	public void setBillAcceptance(GFAOpenAPIBillAcceptance billAcceptance) {
 		this.billAcceptance = billAcceptance;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getPrincipalId() {

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.hotel.locker.org.sync request
  * 
  * @author auto create
- * @since 1.0, 2025-09-12 09:57:39
+ * @since 1.0, 2026-01-05 14:42:43
  */
 public class AlipayCommerceHotelLockerOrgSyncRequest implements AlipayRequest<AlipayCommerceHotelLockerOrgSyncResponse> {
 

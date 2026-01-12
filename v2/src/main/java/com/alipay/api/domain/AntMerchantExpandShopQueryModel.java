@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 店铺查询接口
  *
  * @author auto create
- * @since 1.0, 2025-12-25 16:01:11
+ * @since 1.0, 2026-01-04 20:00:49
  */
 public class AntMerchantExpandShopQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7529434522864317567L;
+	private static final long serialVersionUID = 5295388342415827683L;
 
 	/**
 	 * 行政区划版本，当前可传空值(取默认版本)、2022Q2、UPTODATE(取最新版本)，其中空值默认为：2020Q1版本（ address_version=''或null），想要查看版本是2022年2季度版本则传入:(address_version='2022Q2')，想要获取最新版本则传入:(address_version ='UPTODATE')
 	 */
 	@ApiField("address_version")
 	private String addressVersion;
+
+	/**
+	 * 团购门店业务类型来源
+	 */
+	@ApiField("biz_source")
+	private String bizSource;
 
 	/**
 	 * 商户角色id，表示将要开的店属于哪个商户角色。对于直连开店场景，填写商户pid；对于间连开店场景（线上、线下、直付通），填写商户smid
@@ -50,6 +56,12 @@ public class AntMerchantExpandShopQueryModel extends AlipayObject {
 	private String shopId;
 
 	/**
+	 * 团购门店的业务类型
+	 */
+	@ApiField("shop_type")
+	private String shopType;
+
+	/**
 	 * 门店编号，表示该门店在该商户角色id(直连pid，间连smid)下，由商户自己定义的外部门店编号
 	 */
 	@ApiField("store_id")
@@ -60,6 +72,13 @@ public class AntMerchantExpandShopQueryModel extends AlipayObject {
 	}
 	public void setAddressVersion(String addressVersion) {
 		this.addressVersion = addressVersion;
+	}
+
+	public String getBizSource() {
+		return this.bizSource;
+	}
+	public void setBizSource(String bizSource) {
+		this.bizSource = bizSource;
 	}
 
 	public String getIpRoleId() {
@@ -95,6 +114,13 @@ public class AntMerchantExpandShopQueryModel extends AlipayObject {
 	}
 	public void setShopId(String shopId) {
 		this.shopId = shopId;
+	}
+
+	public String getShopType() {
+		return this.shopType;
+	}
+	public void setShopType(String shopType) {
+		this.shopType = shopType;
 	}
 
 	public String getStoreId() {

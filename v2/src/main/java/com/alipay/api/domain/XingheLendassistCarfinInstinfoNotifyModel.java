@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 信息回传接口
  *
  * @author auto create
- * @since 1.0, 2025-10-22 15:48:03
+ * @since 1.0, 2026-01-08 11:03:08
  */
 public class XingheLendassistCarfinInstinfoNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3515342641413552424L;
+	private static final long serialVersionUID = 8448641616461842513L;
 
 	/**
 	 * 星河侧唯一业务编号
@@ -35,6 +35,12 @@ public class XingheLendassistCarfinInstinfoNotifyModel extends AlipayObject {
 	private DMVLocation dmvLocation;
 
 	/**
+	 * 行驶证信息
+	 */
+	@ApiField("driving_license_info")
+	private DrivingLicenseInfo drivingLicenseInfo;
+
+	/**
 	 * 文件列表
 	 */
 	@ApiListField("file_list")
@@ -53,6 +59,18 @@ public class XingheLendassistCarfinInstinfoNotifyModel extends AlipayObject {
 	@ApiListField("postback_list")
 	@ApiField("string")
 	private List<String> postbackList;
+
+	/**
+	 * 回传场景，默认为空
+	 */
+	@ApiField("postback_scene")
+	private String postbackScene;
+
+	/**
+	 * 登记证信息
+	 */
+	@ApiField("registration_info")
+	private CarfinRegistrationInfo registrationInfo;
 
 	/**
 	 * 车辆估值信息，详情见下面ValuationInfo参数
@@ -81,6 +99,13 @@ public class XingheLendassistCarfinInstinfoNotifyModel extends AlipayObject {
 		this.dmvLocation = dmvLocation;
 	}
 
+	public DrivingLicenseInfo getDrivingLicenseInfo() {
+		return this.drivingLicenseInfo;
+	}
+	public void setDrivingLicenseInfo(DrivingLicenseInfo drivingLicenseInfo) {
+		this.drivingLicenseInfo = drivingLicenseInfo;
+	}
+
 	public List<FileDetail> getFileList() {
 		return this.fileList;
 	}
@@ -100,6 +125,20 @@ public class XingheLendassistCarfinInstinfoNotifyModel extends AlipayObject {
 	}
 	public void setPostbackList(List<String> postbackList) {
 		this.postbackList = postbackList;
+	}
+
+	public String getPostbackScene() {
+		return this.postbackScene;
+	}
+	public void setPostbackScene(String postbackScene) {
+		this.postbackScene = postbackScene;
+	}
+
+	public CarfinRegistrationInfo getRegistrationInfo() {
+		return this.registrationInfo;
+	}
+	public void setRegistrationInfo(CarfinRegistrationInfo registrationInfo) {
+		this.registrationInfo = registrationInfo;
 	}
 
 	public ValuationInfo getValuationInfo() {

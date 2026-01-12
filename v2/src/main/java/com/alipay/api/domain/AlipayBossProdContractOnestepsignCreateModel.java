@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 一步完成签约
  *
  * @author auto create
- * @since 1.0, 2021-11-12 14:33:20
+ * @since 1.0, 2026-01-09 15:21:54
  */
 public class AlipayBossProdContractOnestepsignCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3117529666118135548L;
+	private static final long serialVersionUID = 5167698132945334277L;
 
 	/**
 	 * 合同金额

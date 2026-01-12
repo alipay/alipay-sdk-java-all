@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceYuntaskWhitehistoryBatchcreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6561977144478471381L;
+	private static final long serialVersionUID = 7113653657321692646L;
 
 	/**
 	 * 操作人openid

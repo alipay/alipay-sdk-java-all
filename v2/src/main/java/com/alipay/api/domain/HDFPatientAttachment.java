@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HDFPatientAttachment extends AlipayObject {
 
-	private static final long serialVersionUID = 5234642591229233686L;
+	private static final long serialVersionUID = 3156852698177664642L;
 
 	/**
 	 * 附件的文件类型。如，png、pdf

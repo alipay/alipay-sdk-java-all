@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 激励交易回传
  *
  * @author auto create
- * @since 1.0, 2025-10-14 16:55:05
+ * @since 1.0, 2026-01-07 10:55:23
  */
 public class AlipayCommerceLogisticsTradeEventSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3244189242182537398L;
+	private static final long serialVersionUID = 4294232867177367179L;
 
 	/**
 	 * 支付宝交易号
@@ -36,6 +36,15 @@ public class AlipayCommerceLogisticsTradeEventSyncModel extends AlipayObject {
 	 */
 	@ApiField("incentive_code")
 	private String incentiveCode;
+
+	/**
+	 * json字符串格式扩展字段，用于扩展业务字段场景
+{"key1":"value1","key2":"value2","key3":value3}
+key：expressman_role_type(快递员角色类型)
+value：EXPRESSMAN(快递员)/THIRD_MERCHANT(三方商户)
+	 */
+	@ApiField("log_ext_info")
+	private String logExtInfo;
 
 	/**
 	 * 商户标识（接口调用方的渠道编码，由支付宝分配）
@@ -115,6 +124,13 @@ OTHER 其他渠道
 	}
 	public void setIncentiveCode(String incentiveCode) {
 		this.incentiveCode = incentiveCode;
+	}
+
+	public String getLogExtInfo() {
+		return this.logExtInfo;
+	}
+	public void setLogExtInfo(String logExtInfo) {
+		this.logExtInfo = logExtInfo;
 	}
 
 	public String getLogisticsCode() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序创建隐私协议
  *
  * @author auto create
- * @since 1.0, 2022-03-04 10:11:44
+ * @since 1.0, 2026-01-05 11:36:16
  */
 public class AlipayOpenMiniPrivacyAuditCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8521548524981593464L;
+	private static final long serialVersionUID = 1555546576214652716L;
 
 	/**
 	 * 联系人邮箱。邮箱和联系电话不可都为空

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlarmHistoryDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 2179642668199665695L;
+	private static final long serialVersionUID = 8258212128365136724L;
 
 	/**
 	 * 报警内容

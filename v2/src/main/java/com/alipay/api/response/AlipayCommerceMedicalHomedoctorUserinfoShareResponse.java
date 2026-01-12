@@ -8,14 +8,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.homedoctor.userinfo.share response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-01 18:12:42
+ * @since 1.0, 2025-12-30 14:07:41
  */
 public class AlipayCommerceMedicalHomedoctorUserinfoShareResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6362444861794721759L;
+	private static final long serialVersionUID = 6671792611652973835L;
 
 	/** 
-	 * 用户对外开放openid
+	 * 蚂蚁健康用户对外开放OPEN_ID
 	 */
 	@ApiField("aq_open_id")
 	private String aqOpenId;

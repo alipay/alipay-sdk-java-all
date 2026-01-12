@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AppItemRelativePeriodInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2527371578499797958L;
+	private static final long serialVersionUID = 7161465289374238617L;
 
 	/**
 	 * 券生效后N天内可以使用。 可以配合wait_days_after_receive字段使用。 比如：wait_days_after_receive=1，valid_days_after_receive=2，今天时1号0点0分0秒，那么2号0点0分0秒券生效可以开始使用，4号23点59分59秒，有效期到期不可用

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业财账单受理模型
  *
  * @author auto create
- * @since 1.0, 2023-07-09 19:30:10
+ * @since 1.0, 2025-12-29 11:00:02
  */
 public class GFAOpenAPIBillAcceptance extends AlipayObject {
 
-	private static final long serialVersionUID = 6481892324671233643L;
+	private static final long serialVersionUID = 8367683188554546895L;
 
 	/**
 	 * 受理幂等字段，唯一标识一笔报帐单据。当收到两笔相同的acceptUniqueNo时，第二笔会被当作是重复报送不作处理。因此对于同一笔交易在不同阶段（比如订单创建、确认收货、退款等）触发的不同财务事件，也应该采用不同的acceptUniqueNo
@@ -106,6 +106,12 @@ public class GFAOpenAPIBillAcceptance extends AlipayObject {
 	private String nonpaymentAmount;
 
 	/**
+	 * 结算外部业务账单号
+	 */
+	@ApiField("out_bill_no")
+	private String outBillNo;
+
+	/**
 	 * 业务流水号（受理幂等字段之一）
 	 */
 	@ApiField("out_business_no")
@@ -154,6 +160,12 @@ public class GFAOpenAPIBillAcceptance extends AlipayObject {
 	private String realAmount;
 
 	/**
+	 * 关联外部账单号，如果是单独的退款/退费账单，则传其对应的正向交易/收费账单号
+	 */
+	@ApiField("rel_out_bill_no")
+	private String relOutBillNo;
+
+	/**
 	 * 外部业务关联单据号
 	 */
 	@ApiField("rel_out_business_no")
@@ -164,6 +176,12 @@ public class GFAOpenAPIBillAcceptance extends AlipayObject {
 	 */
 	@ApiField("service_amount")
 	private Long serviceAmount;
+
+	/**
+	 * 业务发生金额
+	 */
+	@ApiField("service_amount_new")
+	private String serviceAmountNew;
 
 	/**
 	 * 业务唯一标识（受理幂等字段之一）
@@ -312,6 +330,13 @@ public class GFAOpenAPIBillAcceptance extends AlipayObject {
 		this.nonpaymentAmount = nonpaymentAmount;
 	}
 
+	public String getOutBillNo() {
+		return this.outBillNo;
+	}
+	public void setOutBillNo(String outBillNo) {
+		this.outBillNo = outBillNo;
+	}
+
 	public String getOutBusinessNo() {
 		return this.outBusinessNo;
 	}
@@ -368,6 +393,13 @@ public class GFAOpenAPIBillAcceptance extends AlipayObject {
 		this.realAmount = realAmount;
 	}
 
+	public String getRelOutBillNo() {
+		return this.relOutBillNo;
+	}
+	public void setRelOutBillNo(String relOutBillNo) {
+		this.relOutBillNo = relOutBillNo;
+	}
+
 	public String getRelOutBusinessNo() {
 		return this.relOutBusinessNo;
 	}
@@ -380,6 +412,13 @@ public class GFAOpenAPIBillAcceptance extends AlipayObject {
 	}
 	public void setServiceAmount(Long serviceAmount) {
 		this.serviceAmount = serviceAmount;
+	}
+
+	public String getServiceAmountNew() {
+		return this.serviceAmountNew;
+	}
+	public void setServiceAmountNew(String serviceAmountNew) {
+		this.serviceAmountNew = serviceAmountNew;
 	}
 
 	public String getServiceType() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AppItemSPUPrice extends AlipayObject {
 
-	private static final long serialVersionUID = 2583784596261695357L;
+	private static final long serialVersionUID = 3139489149758646547L;
 
 	/**
 	 * 标识该SPU商品是否含有价格

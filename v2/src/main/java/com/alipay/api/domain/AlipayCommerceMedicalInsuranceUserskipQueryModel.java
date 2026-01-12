@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据用户三要素获取跳转商保码链接
  *
  * @author auto create
- * @since 1.0, 2025-12-25 14:22:24
+ * @since 1.0, 2025-12-30 16:41:10
  */
 public class AlipayCommerceMedicalInsuranceUserskipQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4693586773187742268L;
+	private static final long serialVersionUID = 8444877172393934286L;
 
 	/**
 	 * 证件编号

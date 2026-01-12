@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AnttechNftOssPresignedurlGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1322137316923788113L;
+	private static final long serialVersionUID = 1843394634358649885L;
 
 	/** 
 	 * oss回调头，包含回调方法体

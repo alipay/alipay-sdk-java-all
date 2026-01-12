@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.hotel.locker.org.sync response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-12 09:57:39
+ * @since 1.0, 2026-01-05 14:42:43
  */
 public class AlipayCommerceHotelLockerOrgSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8782214882833564666L;
+	private static final long serialVersionUID = 4897898687262785974L;
 
 	/** 
 	 * 支付宝机构唯一ID

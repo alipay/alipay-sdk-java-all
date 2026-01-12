@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 活动修改
  *
  * @author auto create
- * @since 1.0, 2025-04-25 16:17:08
+ * @since 1.0, 2026-01-08 11:34:07
  */
 public class AlipayUserDtbankActivityModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1591355563783631776L;
+	private static final long serialVersionUID = 8121146823399659928L;
 
 	/**
-	 * 数字分行活动唯一id
+	 * 数字分行活动唯一id，支持天天减和智银管家
 	 */
 	@ApiField("activity_id")
 	private String activityId;
@@ -32,7 +32,7 @@ public class AlipayUserDtbankActivityModifyModel extends AlipayObject {
 	private String modifyType;
 
 	/**
-	 * 追加金额：单位分； 活动结束时间：精确到秒，格式为2020-01-01 00:00:00
+	 * 追加金额：单位分，解决方案最低追加0.1元，其他活动类型最低追加0.01元；活动结束时间：精确到秒，格式为2020-01-01 00:00:00
 	 */
 	@ApiField("modify_value")
 	private String modifyValue;

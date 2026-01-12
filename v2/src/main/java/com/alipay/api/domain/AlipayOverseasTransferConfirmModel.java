@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发起汇款
  *
  * @author auto create
- * @since 1.0, 2020-03-19 20:48:14
+ * @since 1.0, 2025-12-30 14:40:37
  */
 public class AlipayOverseasTransferConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2663583189687462835L;
+	private static final long serialVersionUID = 2122889596675797762L;
 
 	/**
 	 * 汇款相关的信息
@@ -60,6 +60,12 @@ public class AlipayOverseasTransferConfirmModel extends AlipayObject {
 	 */
 	@ApiField("payer_payment_method")
 	private String payerPaymentMethod;
+
+	/**
+	 * 收款人收款渠道，后续汇款接入以code进行区分
+	 */
+	@ApiField("receipt_channel_code")
+	private String receiptChannelCode;
 
 	/**
 	 * 汇款用户汇款的金额
@@ -145,6 +151,13 @@ public class AlipayOverseasTransferConfirmModel extends AlipayObject {
 	}
 	public void setPayerPaymentMethod(String payerPaymentMethod) {
 		this.payerPaymentMethod = payerPaymentMethod;
+	}
+
+	public String getReceiptChannelCode() {
+		return this.receiptChannelCode;
+	}
+	public void setReceiptChannelCode(String receiptChannelCode) {
+		this.receiptChannelCode = receiptChannelCode;
 	}
 
 	public Money getTransferFromAmount() {

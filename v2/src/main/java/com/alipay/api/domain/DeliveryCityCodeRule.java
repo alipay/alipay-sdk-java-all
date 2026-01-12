@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class DeliveryCityCodeRule extends AlipayObject {
 
-	private static final long serialVersionUID = 5594128531125426649L;
+	private static final long serialVersionUID = 3874841673643713475L;
 
 	/**
 	 * 是否全国。只允许填true，否则不填。

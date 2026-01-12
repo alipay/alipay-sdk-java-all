@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenSpNcardadvertiseTaskQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2164131478626158571L;
+	private static final long serialVersionUID = 7837541879657215398L;
 
 	/**
 	 * c端碰一碰线圈后，是用支付宝服务可以获取到的线圈业务id

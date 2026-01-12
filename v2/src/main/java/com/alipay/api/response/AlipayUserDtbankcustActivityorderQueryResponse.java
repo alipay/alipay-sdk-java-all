@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.dtbankcust.activityorder.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-17 16:12:10
+ * @since 1.0, 2025-12-29 16:17:43
  */
 public class AlipayUserDtbankcustActivityorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4583819132451148316L;
+	private static final long serialVersionUID = 2545715372483824893L;
 
 	/** 
 	 * 数字分行活动唯一id
@@ -37,6 +37,12 @@ public class AlipayUserDtbankcustActivityorderQueryResponse extends AlipayRespon
 	 */
 	@ApiField("status")
 	private String status;
+
+	/** 
+	 * 券平台唯一id
+	 */
+	@ApiField("voucher_id")
+	private String voucherId;
 
 	public void setActivityId(String activityId) {
 		this.activityId = activityId;
@@ -64,6 +70,13 @@ public class AlipayUserDtbankcustActivityorderQueryResponse extends AlipayRespon
 	}
 	public String getStatus( ) {
 		return this.status;
+	}
+
+	public void setVoucherId(String voucherId) {
+		this.voucherId = voucherId;
+	}
+	public String getVoucherId( ) {
+		return this.voucherId;
 	}
 
 }

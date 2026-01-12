@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class DatadigitalAnttechQqqCccQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7339887372317279523L;
+	private static final long serialVersionUID = 2415872779839483189L;
 
 	/** 
 	 * 证件号

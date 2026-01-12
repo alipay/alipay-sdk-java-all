@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMerchantcardExpireperiodModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7778785869351857271L;
+	private static final long serialVersionUID = 7898688157788492254L;
 
 	/**
 	 * 将售卖订单的有效期延期到入参的时间点{appoint_date}，时间格式是yyyy-MM-dd HH:mm:ss

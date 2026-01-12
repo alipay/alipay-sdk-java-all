@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.inteop.brandchain.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-15 14:02:43
+ * @since 1.0, 2026-01-06 09:42:42
  */
 public class AlipayOpenSpInteopBrandchainCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2328269961873972385L;
+	private static final long serialVersionUID = 5159267792561457362L;
 
 	/** 
 	 * null

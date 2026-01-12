@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.prod.contract.risk.create request
  * 
  * @author auto create
- * @since 1.0, 2025-08-18 15:07:35
+ * @since 1.0, 2026-01-09 15:21:14
  */
 public class AlipayBossProdContractRiskCreateRequest implements AlipayRequest<AlipayBossProdContractRiskCreateResponse> {
 

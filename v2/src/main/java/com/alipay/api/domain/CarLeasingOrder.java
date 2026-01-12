@@ -7,32 +7,32 @@ import com.alipay.api.internal.mapping.ApiField;
  * 融租订单信息
  *
  * @author auto create
- * @since 1.0, 2025-12-17 11:05:19
+ * @since 1.0, 2026-01-04 15:36:07
  */
 public class CarLeasingOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 8469316287547735114L;
+	private static final long serialVersionUID = 8523923854183787899L;
 
 	/**
-	 * 身份证号
+	 * 身份证号（支持AES加密）
 	 */
 	@ApiField("cert_no")
 	private String certNo;
 
 	/**
-	 * 车辆合格证（Vehicle Certificate of Conformity）文件链接
+	 * 车辆合格证（Vehicle Certificate of Conformity）文件链接（支持AES加密）
 	 */
 	@ApiField("coc_file")
 	private String cocFile;
 
 	/**
-	 * 企业名称
+	 * 企业名称（支持AES加密）
 	 */
 	@ApiField("company_name")
 	private String companyName;
 
 	/**
-	 * 经销商企业名称
+	 * 经销商企业名称（支持AES加密）
 	 */
 	@ApiField("dealer_company_name")
 	private String dealerCompanyName;
@@ -50,25 +50,25 @@ public class CarLeasingOrder extends AlipayObject {
 	private Long installmentPeriods;
 
 	/**
-	 * 保险保单文件链接
+	 * 保险保单文件链接（支持AES加密）
 	 */
 	@ApiField("insurance_policy_file")
 	private String insurancePolicyFile;
 
 	/**
-	 * 发票文件链接
+	 * 发票文件链接（支持AES加密）
 	 */
 	@ApiField("invoice_file")
 	private String invoiceFile;
 
 	/**
-	 * 法人代表身份证号
+	 * 法人代表身份证号（支持AES加密）
 	 */
 	@ApiField("legal_representative_cert_no")
 	private String legalRepresentativeCertNo;
 
 	/**
-	 * 法人代表姓名
+	 * 法人代表姓名（支持AES加密）
 	 */
 	@ApiField("legal_representative_name")
 	private String legalRepresentativeName;
@@ -80,13 +80,13 @@ public class CarLeasingOrder extends AlipayObject {
 	private String loanAmount;
 
 	/**
-	 * 手机号
+	 * 手机号（支持AES加密）
 	 */
 	@ApiField("mobile")
 	private String mobile;
 
 	/**
-	 * 姓名
+	 * 姓名（支持AES加密）
 	 */
 	@ApiField("name")
 	private String name;
@@ -98,7 +98,7 @@ public class CarLeasingOrder extends AlipayObject {
 	private String remark;
 
 	/**
-	 * 购销合同影像文件链接
+	 * 购销合同影像文件链接（支持AES加密）
 	 */
 	@ApiField("sales_contract_file")
 	private String salesContractFile;
@@ -110,7 +110,7 @@ public class CarLeasingOrder extends AlipayObject {
 	private String salesContractId;
 
 	/**
-	 * 统一社会信用代码（Unified Social Credit Code）
+	 * 统一社会信用代码（Unified Social Credit Code）（支持AES加密）
 	 */
 	@ApiField("uscc")
 	private String uscc;
@@ -128,7 +128,7 @@ public class CarLeasingOrder extends AlipayObject {
 	private String vehPrice;
 
 	/**
-	 * VIN码
+	 * VIN码（支持AES加密）
 	 */
 	@ApiField("vin")
 	private String vin;

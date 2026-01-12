@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.solutionprod.unifiedopen.apply response.
  * 
  * @author auto create
- * @since 1.0, 2025-11-05 18:42:41
+ * @since 1.0, 2026-01-05 19:11:43
  */
 public class AlipayTradeSolutionprodUnifiedopenApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4511682142169153887L;
+	private static final long serialVersionUID = 6283483632178442166L;
 
 	/** 
 	 * 用于直接跳转至用户聚合开通页面

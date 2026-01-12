@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * B2C订单快递运单配送同步接口的商品信息
  *
  * @author auto create
- * @since 1.0, 2025-03-20 17:21:54
+ * @since 1.0, 2025-12-30 14:11:17
  */
 public class WaybillItemVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8397814717486262385L;
+	private static final long serialVersionUID = 8713837292578829733L;
 
 	/**
 	 * APP方商品编码，对应商品接口的sku_code｜商品编码

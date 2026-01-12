@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商机同步签约路径开放接口
  *
  * @author auto create
- * @since 1.0, 2025-12-01 19:27:21
+ * @since 1.0, 2026-01-07 18:34:48
  */
 public class AnttechOceanbaseObglobalSignpathModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7563495724195833946L;
+	private static final long serialVersionUID = 3662275859587765544L;
 
 	/**
 	 * 阿里云结算模式
@@ -84,6 +84,12 @@ public class AnttechOceanbaseObglobalSignpathModifyModel extends AlipayObject {
 	 */
 	@ApiField("ob_sign_other_party_subject_name")
 	private String obSignOtherPartySubjectName;
+
+	/**
+	 * 我方签约主体
+	 */
+	@ApiField("our_sign_subject")
+	private String ourSignSubject;
 
 	/**
 	 * 签约路径枚举
@@ -173,6 +179,13 @@ public class AnttechOceanbaseObglobalSignpathModifyModel extends AlipayObject {
 	}
 	public void setObSignOtherPartySubjectName(String obSignOtherPartySubjectName) {
 		this.obSignOtherPartySubjectName = obSignOtherPartySubjectName;
+	}
+
+	public String getOurSignSubject() {
+		return this.ourSignSubject;
+	}
+	public void setOurSignSubject(String ourSignSubject) {
+		this.ourSignSubject = ourSignSubject;
 	}
 
 	public String getSignPath() {

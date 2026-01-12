@@ -7,17 +7,31 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户申请单查询
  *
  * @author auto create
- * @since 1.0, 2025-04-27 14:28:56
+ * @since 1.0, 2026-01-04 11:22:40
  */
 public class AntMerchantExpandOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3235487446254569326L;
+	private static final long serialVersionUID = 7864631352532853862L;
+
+	/**
+	 * 业务来源
+团购门店：APLUS_SHOP
+	 */
+	@ApiField("biz_source")
+	private String bizSource;
 
 	/**
 	 * 申请单 id。 1.蚂蚁门店管理场景：通过 <a href="https://opendocs.alipay.com/open/05afbc4a_ant.merchant.expand.shop.create?scene=common&pathHash=bf443b73"> ant.merchant.expand.shop.create</a>(蚂蚁店铺创建)接口进件时返回的order_id。 2.直付通二级商户进件场景：通过<a href="https://opendocs.alipay.com/open/028xr0?pathHash=c9ca6d68">ant.merchant.expand.indirect.zft.create</a>(直付通二级商户创建)接口进件时返回的order_id。 
 	 */
 	@ApiField("order_id")
 	private String orderId;
+
+	public String getBizSource() {
+		return this.bizSource;
+	}
+	public void setBizSource(String bizSource) {
+		this.bizSource = bizSource;
+	}
 
 	public String getOrderId() {
 		return this.orderId;

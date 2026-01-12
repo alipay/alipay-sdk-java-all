@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花呗金权益发放
  *
  * @author auto create
- * @since 1.0, 2023-02-06 14:05:15
+ * @since 1.0, 2026-01-05 17:03:51
  */
 public class AlipayPcreditHuabeiSceneprodBenefitSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7327713112351548545L;
+	private static final long serialVersionUID = 8747224851152674131L;
 
 	/**
 	 * 权益渠道，用于控制投放场景 帮还会场入会 member_huabei 店铺页面入会 member_tmall 帮还会场直播 live_huabei

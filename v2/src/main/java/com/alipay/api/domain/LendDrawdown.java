@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支用放款信息
  *
  * @author auto create
- * @since 1.0, 2025-09-18 16:03:33
+ * @since 1.0, 2026-01-08 11:02:57
  */
 public class LendDrawdown extends AlipayObject {
 
-	private static final long serialVersionUID = 8647452564529764986L;
+	private static final long serialVersionUID = 8796651219789732345L;
 
 	/**
 	 * 机构侧支用号
@@ -99,6 +99,12 @@ public class LendDrawdown extends AlipayObject {
 	 */
 	@ApiField("service_fee_rate")
 	private String serviceFeeRate;
+
+	/**
+	 * 服务类型信息
+	 */
+	@ApiField("service_info")
+	private CarfinLendServiceInfo serviceInfo;
 
 	/**
 	 * 车辆估值，单位分
@@ -202,6 +208,13 @@ public class LendDrawdown extends AlipayObject {
 	}
 	public void setServiceFeeRate(String serviceFeeRate) {
 		this.serviceFeeRate = serviceFeeRate;
+	}
+
+	public CarfinLendServiceInfo getServiceInfo() {
+		return this.serviceInfo;
+	}
+	public void setServiceInfo(CarfinLendServiceInfo serviceInfo) {
+		this.serviceInfo = serviceInfo;
 	}
 
 	public Long getValuatePrice() {

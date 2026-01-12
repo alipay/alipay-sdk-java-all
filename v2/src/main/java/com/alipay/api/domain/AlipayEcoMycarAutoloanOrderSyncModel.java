@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 非标汽车售卖订单同步
  *
  * @author auto create
- * @since 1.0, 2025-12-17 11:05:19
+ * @since 1.0, 2026-01-04 16:54:57
  */
 public class AlipayEcoMycarAutoloanOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1557946387961997944L;
+	private static final long serialVersionUID = 6753995922324852111L;
 
 	/**
 	 * 业务状态

@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 服务商一体化作业品牌连锁saas解决方案开通作业子项
+ * 服务商代开通”连锁品牌“解决方案
  *
  * @author auto create
- * @since 1.0, 2025-12-15 14:02:43
+ * @since 1.0, 2026-01-06 09:42:42
  */
 public class AlipayOpenSpInteopBrandchainCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1614734133574564893L;
+	private static final long serialVersionUID = 2121584199999182529L;
 
 	/**
 	 * 银行卡信息

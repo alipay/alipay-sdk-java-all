@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ScenePayParticipantInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1629983993798836931L;
+	private static final long serialVersionUID = 3346589662449527969L;
 
 	/**
 	 * 参与方mcc

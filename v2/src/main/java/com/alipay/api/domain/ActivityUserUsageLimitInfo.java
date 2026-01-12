@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ActivityUserUsageLimitInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6732952758769782556L;
+	private static final long serialVersionUID = 2259367248615516299L;
 
 	/**
 	 * 限制活动的可用次数

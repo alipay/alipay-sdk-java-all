@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业财摊销扩展信息
  *
  * @author auto create
- * @since 1.0, 2022-11-09 14:40:22
+ * @since 1.0, 2025-12-29 10:59:57
  */
 public class GFAOpenAPIAmortizeExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6274539344818244792L;
+	private static final long serialVersionUID = 8319558183284251355L;
 
 	/**
 	 * 待摊销金额。（单位：各币种的“元”单位，精确到小数点后两位）
@@ -56,6 +56,12 @@ public class GFAOpenAPIAmortizeExtInfo extends AlipayObject {
 	 */
 	@ApiField("gmt_valid")
 	private Date gmtValid;
+
+	/**
+	 * 退摊销金额
+	 */
+	@ApiField("refund_amortize_amount")
+	private String refundAmortizeAmount;
 
 	/**
 	 * 同 out_business_no 下业财已受理的总摊销金额（单位：各币种的“元”单位，精确到小数点后两位）
@@ -110,6 +116,13 @@ public class GFAOpenAPIAmortizeExtInfo extends AlipayObject {
 	}
 	public void setGmtValid(Date gmtValid) {
 		this.gmtValid = gmtValid;
+	}
+
+	public String getRefundAmortizeAmount() {
+		return this.refundAmortizeAmount;
+	}
+	public void setRefundAmortizeAmount(String refundAmortizeAmount) {
+		this.refundAmortizeAmount = refundAmortizeAmount;
 	}
 
 	public String getTotalAmortizeAmount() {

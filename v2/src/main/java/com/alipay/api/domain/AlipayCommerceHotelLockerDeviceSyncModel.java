@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 酒店智慧住设备信息同步
  *
  * @author auto create
- * @since 1.0, 2025-12-26 14:40:19
+ * @since 1.0, 2026-01-05 14:42:43
  */
 public class AlipayCommerceHotelLockerDeviceSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1873834286461165341L;
+	private static final long serialVersionUID = 5134729177956321122L;
 
 	/**
 	 * 所属支付宝侧机构ID
@@ -50,6 +50,12 @@ public class AlipayCommerceHotelLockerDeviceSyncModel extends AlipayObject {
 	private String deviceIsvCode;
 
 	/**
+	 * 蓝牙mac地址
+	 */
+	@ApiField("device_mac")
+	private String deviceMac;
+
+	/**
 	 * 设备名称
 	 */
 	@ApiField("device_name")
@@ -81,7 +87,7 @@ LIFT-梯控
 	private Boolean effective;
 
 	/**
-	 * 房间楼层
+	 * 房间楼层，例如1楼，-1楼
 	 */
 	@ApiField("floor")
 	private String floor;
@@ -172,6 +178,13 @@ LIFT-梯控
 	}
 	public void setDeviceIsvCode(String deviceIsvCode) {
 		this.deviceIsvCode = deviceIsvCode;
+	}
+
+	public String getDeviceMac() {
+		return this.deviceMac;
+	}
+	public void setDeviceMac(String deviceMac) {
+		this.deviceMac = deviceMac;
 	}
 
 	public String getDeviceName() {

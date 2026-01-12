@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.familyinfo.plugin.get request
  * 
  * @author auto create
- * @since 1.0, 2025-12-02 11:27:42
+ * @since 1.0, 2026-01-04 16:47:42
  */
 public class AlipayCommerceMedicalFamilyinfoPluginGetRequest implements AlipayRequest<AlipayCommerceMedicalFamilyinfoPluginGetResponse> {
 

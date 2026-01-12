@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品视频信息详情
  *
  * @author auto create
- * @since 1.0, 2025-04-02 15:27:56
+ * @since 1.0, 2026-01-06 20:10:17
  */
 public class VideoInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8122352311221919979L;
+	private static final long serialVersionUID = 1384774355371374921L;
 
 	/**
 	 * 视频时长，单位为秒
 	 */
 	@ApiField("duration")
 	private Long duration;
+
+	/**
+	 * 商品视频首帧图片链接
+	 */
+	@ApiField("first_frame_url")
+	private String firstFrameUrl;
 
 	/**
 	 * 视频高度
@@ -72,6 +78,13 @@ public class VideoInfo extends AlipayObject {
 	}
 	public void setDuration(Long duration) {
 		this.duration = duration;
+	}
+
+	public String getFirstFrameUrl() {
+		return this.firstFrameUrl;
+	}
+	public void setFirstFrameUrl(String firstFrameUrl) {
+		this.firstFrameUrl = firstFrameUrl;
 	}
 
 	public Long getHeight() {

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.prod.contract.onestepsign.create request
  * 
  * @author auto create
- * @since 1.0, 2023-05-29 20:23:23
+ * @since 1.0, 2026-01-09 15:22:42
  */
 public class AlipayBossProdContractOnestepsignCreateRequest implements AlipayRequest<AlipayBossProdContractOnestepsignCreateResponse> {
 

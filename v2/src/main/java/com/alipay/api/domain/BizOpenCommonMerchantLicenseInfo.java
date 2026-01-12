@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用户资质信息
  *
  * @author auto create
- * @since 1.0, 2025-12-15 23:21:53
+ * @since 1.0, 2026-01-04 14:12:37
  */
 public class BizOpenCommonMerchantLicenseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4627398952677979654L;
+	private static final long serialVersionUID = 6359857744888349559L;
 
 	/**
 	 * 经营范围
@@ -41,7 +41,7 @@ public class BizOpenCommonMerchantLicenseInfo extends AlipayObject {
 	private String licenseName;
 
 	/**
-	 * 资质凭证图片,通过调用 ant.merchant.expand.indirect.image.upload(图片上传)接口返回的image_id作为参数
+	 * 资质凭证图片,通过调用<a href="https://isp-fe-tern.alipay.com/legacy/my/openApiDetailAndApply?apiId=24075&operateType=detail">ant.merchant.expand.indirect.image.upload</a> (图片上传)接口返回的image_id作为参数
 	 */
 	@ApiListField("license_pics")
 	@ApiField("string")

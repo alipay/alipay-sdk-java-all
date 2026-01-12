@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.familyinfo.plugin.get response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-02 11:27:42
+ * @since 1.0, 2026-01-04 16:47:42
  */
 public class AlipayCommerceMedicalFamilyinfoPluginGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5825715731737324195L;
+	private static final long serialVersionUID = 6398581283777643199L;
 
 	/** 
 	 * 访问令牌，与url中accessToken的值一致

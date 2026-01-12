@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechAiAgentSessionfeedbackSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8651538581512548925L;
+	private static final long serialVersionUID = 7194485961911862142L;
 
 	/**
 	 * 反馈评价参数

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 对私卡bin信息查询
  *
  * @author auto create
- * @since 1.0, 2022-11-03 14:35:06
+ * @since 1.0, 2026-01-06 15:10:54
  */
 public class AlipayFinancialnetAuthCardbinPrivateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8184445418267281176L;
+	private static final long serialVersionUID = 4636791675276891687L;
 
 	/**
 	 * 卡号

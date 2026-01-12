@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.overseas.transfer.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-24 21:27:41
+ * @since 1.0, 2025-12-30 14:42:42
  */
 public class AlipayOverseasTransferQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6843173744339416955L;
+	private static final long serialVersionUID = 6669922578349297256L;
 
 	/** 
 	 * 收款人附属信息
@@ -58,10 +58,22 @@ public class AlipayOverseasTransferQueryResponse extends AlipayResponse {
 	private String transferId;
 
 	/** 
+	 * 用于透传汇款支付单号
+	 */
+	@ApiField("transfer_payment_order_id")
+	private String transferPaymentOrderId;
+
+	/** 
 	 * 报价信息json对象
 	 */
 	@ApiField("transfer_quote")
 	private String transferQuote;
+
+	/** 
+	 * 汇款退款单号
+	 */
+	@ApiField("transfer_refund_order_id")
+	private String transferRefundOrderId;
 
 	/** 
 	 * transferResult的json对象
@@ -130,11 +142,25 @@ public class AlipayOverseasTransferQueryResponse extends AlipayResponse {
 		return this.transferId;
 	}
 
+	public void setTransferPaymentOrderId(String transferPaymentOrderId) {
+		this.transferPaymentOrderId = transferPaymentOrderId;
+	}
+	public String getTransferPaymentOrderId( ) {
+		return this.transferPaymentOrderId;
+	}
+
 	public void setTransferQuote(String transferQuote) {
 		this.transferQuote = transferQuote;
 	}
 	public String getTransferQuote( ) {
 		return this.transferQuote;
+	}
+
+	public void setTransferRefundOrderId(String transferRefundOrderId) {
+		this.transferRefundOrderId = transferRefundOrderId;
+	}
+	public String getTransferRefundOrderId( ) {
+		return this.transferRefundOrderId;
 	}
 
 	public void setTransferResult(String transferResult) {

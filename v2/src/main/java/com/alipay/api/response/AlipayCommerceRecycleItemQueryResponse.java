@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceRecycleItemQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5163194828438293941L;
+	private static final long serialVersionUID = 8296694511112869746L;
 
 	/** 
 	 * 回收商品，包含回收商品的款式、价格、状态等信息

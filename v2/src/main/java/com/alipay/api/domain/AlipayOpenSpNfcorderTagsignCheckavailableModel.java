@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenSpNfcorderTagsignCheckavailableModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3589991981994452378L;
+	private static final long serialVersionUID = 8535485277312712737L;
 
 	/**
 	 * 通过小程序api获取到的开放物料id

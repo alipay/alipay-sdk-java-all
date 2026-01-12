@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生态客户数据导入服务
  *
  * @author auto create
- * @since 1.0, 2025-12-03 10:12:42
+ * @since 1.0, 2026-01-09 13:57:44
  */
 public class AlipayCommerceEdasEcodataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3234224914456631377L;
+	private static final long serialVersionUID = 8424855121447998289L;
 
 	/**
 	 * 数据场景代码

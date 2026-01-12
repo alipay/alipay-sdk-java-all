@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.ec.activity.gray.modify request
  * 
  * @author auto create
- * @since 1.0, 2025-12-26 15:02:42
+ * @since 1.0, 2026-01-05 14:52:42
  */
 public class AlipayCommerceEcActivityGrayModifyRequest implements AlipayRequest<AlipayCommerceEcActivityGrayModifyResponse> {
 

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class GroupMsgSendRecordVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1479574892441716257L;
+	private static final long serialVersionUID = 3517198687924185296L;
 
 	/**
 	 * 群组id，表里唯一键，创建群组自动生成

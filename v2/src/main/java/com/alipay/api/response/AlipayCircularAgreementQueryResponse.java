@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.circular.agreement.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-22 14:22:41
+ * @since 1.0, 2026-01-08 16:49:56
  */
 public class AlipayCircularAgreementQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6128178198244916595L;
+	private static final long serialVersionUID = 7795126152428653127L;
 
 	/** 
 	 * 扣款账户绑定关系

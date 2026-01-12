@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * B2C订单配送状态同步
  *
  * @author auto create
- * @since 1.0, 2025-03-20 17:21:54
+ * @since 1.0, 2025-12-30 14:11:17
  */
 public class AlipayCommerceMedicalOrderWaybillSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8457446935987347692L;
+	private static final long serialVersionUID = 3198671883224239964L;
 
 	/**
 	 * 第三方配送商物流单号

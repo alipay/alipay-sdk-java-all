@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改蚂蚁店铺
  *
  * @author auto create
- * @since 1.0, 2025-05-20 20:21:29
+ * @since 1.0, 2026-01-04 20:00:56
  */
 public class AntMerchantExpandShopModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2869439248817377837L;
+	private static final long serialVersionUID = 4724671763162152262L;
 
 	/**
 	 * "门店结算卡信息。本业务当前只允许传入一张结算卡。 说明：本参数仅直付通业务使用，其余业务无需关注。"
@@ -92,6 +92,7 @@ public class AntMerchantExpandShopModifyModel extends AlipayObject {
 
 	/**
 	 * 扩展信息列表。key值需要向对应行业的bd进行申请。传入本项时，按key进行更新或补充
+如果是针对团购门店的操作，该值必传。
 	 */
 	@ApiListField("ext_infos")
 	@ApiField("shop_ext_info")

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 蚂蚁店铺创建
  *
  * @author auto create
- * @since 1.0, 2025-05-20 20:21:30
+ * @since 1.0, 2026-01-04 20:00:39
  */
 public class AntMerchantExpandShopCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7198546559418621761L;
+	private static final long serialVersionUID = 2245694692949374556L;
 
 	/**
 	 * 门店结算卡信息。本业务当前只允许传入一张结算卡。 说明：本参数仅直付通业务使用，其余业务无需关注。
@@ -61,6 +61,12 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	private String certNo;
 
 	/**
+	 * 营业执照的开始时间
+	 */
+	@ApiField("cert_start_expire_time")
+	private String certStartExpireTime;
+
+	/**
 	 * 证件类型
 	 */
 	@ApiField("cert_type")
@@ -92,11 +98,55 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	private String cover;
 
 	/**
+	 * 营业执照过期时间
+	 */
+	@ApiField("expire_time")
+	private String expireTime;
+
+	/**
 	 * 扩展信息列表。key值需要向对应行业的bd进行申请。
+如果是针对团购门店的操作，该值必传。
 	 */
 	@ApiListField("ext_infos")
 	@ApiField("shop_ext_info")
 	private List<ShopExtInfo> extInfos;
+
+	/**
+	 * 需传入<a href="https://opendocs.alipay.com/apis/api_1*ant.merchant.expand.indirect.image.upload">ant.merchant.expand.indirect.image.upload</a> 接口上传图片后得到的 image_id。
+	 */
+	@ApiListField("fund_proofs")
+	@ApiField("string")
+	private List<String> fundProofs;
+
+	/**
+	 * 资金关系说明
+	 */
+	@ApiField("fund_type")
+	private String fundType;
+
+	/**
+	 * 需传入<a href="https://opendocs.alipay.com/apis/api_1*ant.merchant.expand.indirect.image.upload">ant.merchant.expand.indirect.image.upload</a> 接口上传图片后得到的 image_id。
+	 */
+	@ApiField("identity_back_url")
+	private String identityBackUrl;
+
+	/**
+	 * 身份证有效结束时间,国徽面信息
+	 */
+	@ApiField("identity_end_time")
+	private String identityEndTime;
+
+	/**
+	 * 需传入<a href="https://opendocs.alipay.com/apis/api_1*ant.merchant.expand.indirect.image.upload">ant.merchant.expand.indirect.image.upload</a> 接口上传图片后得到的 image_id。
+	 */
+	@ApiField("identity_front_url")
+	private String identityFrontUrl;
+
+	/**
+	 * 身份证的有效开始时间，国徽面信息
+	 */
+	@ApiField("identity_start_time")
+	private String identityStartTime;
 
 	/**
 	 * 行业信息，例如所属集团、特殊标签
@@ -257,6 +307,13 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 		this.certNo = certNo;
 	}
 
+	public String getCertStartExpireTime() {
+		return this.certStartExpireTime;
+	}
+	public void setCertStartExpireTime(String certStartExpireTime) {
+		this.certStartExpireTime = certStartExpireTime;
+	}
+
 	public String getCertType() {
 		return this.certType;
 	}
@@ -292,11 +349,60 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 		this.cover = cover;
 	}
 
+	public String getExpireTime() {
+		return this.expireTime;
+	}
+	public void setExpireTime(String expireTime) {
+		this.expireTime = expireTime;
+	}
+
 	public List<ShopExtInfo> getExtInfos() {
 		return this.extInfos;
 	}
 	public void setExtInfos(List<ShopExtInfo> extInfos) {
 		this.extInfos = extInfos;
+	}
+
+	public List<String> getFundProofs() {
+		return this.fundProofs;
+	}
+	public void setFundProofs(List<String> fundProofs) {
+		this.fundProofs = fundProofs;
+	}
+
+	public String getFundType() {
+		return this.fundType;
+	}
+	public void setFundType(String fundType) {
+		this.fundType = fundType;
+	}
+
+	public String getIdentityBackUrl() {
+		return this.identityBackUrl;
+	}
+	public void setIdentityBackUrl(String identityBackUrl) {
+		this.identityBackUrl = identityBackUrl;
+	}
+
+	public String getIdentityEndTime() {
+		return this.identityEndTime;
+	}
+	public void setIdentityEndTime(String identityEndTime) {
+		this.identityEndTime = identityEndTime;
+	}
+
+	public String getIdentityFrontUrl() {
+		return this.identityFrontUrl;
+	}
+	public void setIdentityFrontUrl(String identityFrontUrl) {
+		this.identityFrontUrl = identityFrontUrl;
+	}
+
+	public String getIdentityStartTime() {
+		return this.identityStartTime;
+	}
+	public void setIdentityStartTime(String identityStartTime) {
+		this.identityStartTime = identityStartTime;
 	}
 
 	public List<MerchantShopIndustryInfo> getIndustryInfo() {

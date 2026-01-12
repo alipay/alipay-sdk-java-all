@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 车金融订单状态通知接口
  *
  * @author auto create
- * @since 1.0, 2025-10-22 15:55:26
+ * @since 1.0, 2026-01-08 11:03:06
  */
 public class XingheLendassistCarfinApplystatusNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5642184238318995292L;
+	private static final long serialVersionUID = 6882467373839135495L;
 
 	/**
 	 * 星河侧唯一业务编号
@@ -169,6 +169,12 @@ Y、M、D分别代表年月日
 	 */
 	@ApiField("service_fee_rate")
 	private String serviceFeeRate;
+
+	/**
+	 * 服务类型
+	 */
+	@ApiField("service_info")
+	private CarfinLendServiceInfo serviceInfo;
 
 	/**
 	 * CANCEL_FAIL: 取消失败（适用于客户挽回成功的场景，经联系后客户愿意继续办理）
@@ -387,6 +393,13 @@ CANCEL_SUC: 取消成功（适用于客户确定放弃的场景，机构侧后�
 	}
 	public void setServiceFeeRate(String serviceFeeRate) {
 		this.serviceFeeRate = serviceFeeRate;
+	}
+
+	public CarfinLendServiceInfo getServiceInfo() {
+		return this.serviceInfo;
+	}
+	public void setServiceInfo(CarfinLendServiceInfo serviceInfo) {
+		this.serviceInfo = serviceInfo;
 	}
 
 	public String getStatus() {

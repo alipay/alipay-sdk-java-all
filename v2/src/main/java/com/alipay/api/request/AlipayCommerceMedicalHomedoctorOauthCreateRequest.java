@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.homedoctor.oauth.create request
  * 
  * @author auto create
- * @since 1.0, 2025-11-28 16:27:41
+ * @since 1.0, 2025-12-30 14:07:41
  */
 public class AlipayCommerceMedicalHomedoctorOauthCreateRequest implements AlipayRequest<AlipayCommerceMedicalHomedoctorOauthCreateResponse> {
 
@@ -19,7 +19,7 @@ public class AlipayCommerceMedicalHomedoctorOauthCreateRequest implements Alipay
 	private String apiVersion="1.0";
 
 	/** 
-	* 用于AQ用户换取授权访问令牌和openID
+	* 用于蚂蚁健康用户换取授权访问令牌和OPEN_ID
 	 */
 	private String bizContent;
 

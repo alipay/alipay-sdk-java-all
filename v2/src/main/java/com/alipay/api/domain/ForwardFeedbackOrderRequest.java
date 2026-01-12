@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ForwardFeedbackOrderRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 2371112413824539522L;
+	private static final long serialVersionUID = 1677153881492556657L;
 
 	/**
 	 * 反馈说明

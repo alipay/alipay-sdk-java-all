@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询核身结果
  *
  * @author auto create
- * @since 1.0, 2025-12-01 15:07:41
+ * @since 1.0, 2025-12-29 15:17:43
  */
 public class AlipayOfflineProviderNpassporterVerifyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7879986863548943695L;
+	private static final long serialVersionUID = 7524817661637243256L;
 
 	/**
 	 * mac地址
@@ -30,6 +30,12 @@ public class AlipayOfflineProviderNpassporterVerifyQueryModel extends AlipayObje
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/**
+	 * 手机号
+	 */
+	@ApiField("phone_number")
+	private String phoneNumber;
 
 	/**
 	 * 活动单号
@@ -62,6 +68,13 @@ public class AlipayOfflineProviderNpassporterVerifyQueryModel extends AlipayObje
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public String getPhoneNumber() {
+		return this.phoneNumber;
+	}
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
 	}
 
 	public String getProjectId() {

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 财资TMS对外付款受理
  *
  * @author auto create
- * @since 1.0, 2025-11-04 11:22:40
+ * @since 1.0, 2026-01-09 18:31:04
  */
 public class AlipayDigitalmgmtTreasuryPaymentAcceptModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2187676778471414913L;
+	private static final long serialVersionUID = 1432313399273316949L;
 
 	/**
 	 * 主动/被动；ACTIVE/PASSIVE

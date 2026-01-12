@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMerchantImageUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1414273884826922962L;
+	private static final long serialVersionUID = 1123859834515773746L;
 
 	/** 
 	 * 图片在文件存储平台的标识

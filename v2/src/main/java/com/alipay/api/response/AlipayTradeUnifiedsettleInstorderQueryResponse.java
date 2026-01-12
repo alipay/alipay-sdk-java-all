@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayTradeUnifiedsettleInstorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4369726861568865459L;
+	private static final long serialVersionUID = 5389438862161142229L;
 
 	/** 
 	 * 返回true表示可以调整时间范围继续搜索更多数据

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenIotmbsVerificationeventSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7288999787563616347L;
+	private static final long serialVersionUID = 5114735435472665856L;
 
 	/**
 	 * 业务事件，唯一标识一个具体的业务事件。由对接业务的支付宝产品负责人提供。

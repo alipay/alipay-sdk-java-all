@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序商品状态变更
  *
  * @author auto create
- * @since 1.0, 2025-11-13 15:58:46
+ * @since 1.0, 2026-01-06 20:10:17
  */
 public class AlipayDataDataserviceProductAppCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7526361566599967986L;
+	private static final long serialVersionUID = 6537362717876262829L;
 
 	/**
 	 * 商品属性列表
@@ -181,6 +181,13 @@ public class AlipayDataDataserviceProductAppCreateormodifyModel extends AlipayOb
 	 */
 	@ApiField("title")
 	private String title;
+
+	/**
+	 * 商品素材视频物料信息
+	 */
+	@ApiListField("video_list")
+	@ApiField("video_info")
+	private List<VideoInfo> videoList;
 
 	public List<ItemAttrDto> getAttrs() {
 		return this.attrs;
@@ -369,6 +376,13 @@ public class AlipayDataDataserviceProductAppCreateormodifyModel extends AlipayOb
 	}
 	public void setTitle(String title) {
 		this.title = title;
+	}
+
+	public List<VideoInfo> getVideoList() {
+		return this.videoList;
+	}
+	public void setVideoList(List<VideoInfo> videoList) {
+		this.videoList = videoList;
 	}
 
 }

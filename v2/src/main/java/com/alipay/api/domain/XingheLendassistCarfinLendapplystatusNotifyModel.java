@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支用状态通知
  *
  * @author auto create
- * @since 1.0, 2025-11-19 16:50:13
+ * @since 1.0, 2026-01-08 11:02:57
  */
 public class XingheLendassistCarfinLendapplystatusNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2617314536948652383L;
+	private static final long serialVersionUID = 5357675697167815698L;
 
 	/**
 	 * 协议文件列表

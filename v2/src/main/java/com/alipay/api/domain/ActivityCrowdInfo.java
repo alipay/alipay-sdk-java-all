@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 活动可用人群信息，如人群类型、规则值等
  *
  * @author auto create
- * @since 1.0, 2025-12-01 20:27:41
+ * @since 1.0, 2026-01-04 10:21:01
  */
 public class ActivityCrowdInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5858319525778626967L;
+	private static final long serialVersionUID = 7292849321823354232L;
 
 	/**
 	 * 人群规则名称

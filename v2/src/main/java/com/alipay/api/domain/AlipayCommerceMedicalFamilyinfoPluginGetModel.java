@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取医疗健康账户家人信息插件
  *
  * @author auto create
- * @since 1.0, 2025-12-02 11:24:06
+ * @since 1.0, 2026-01-04 16:47:15
  */
 public class AlipayCommerceMedicalFamilyinfoPluginGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7471964238693567612L;
+	private static final long serialVersionUID = 3861619991969546997L;
 
 	/**
 	 * 用户在支付宝插件中操作完成后的回跳地址

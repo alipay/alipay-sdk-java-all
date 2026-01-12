@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntMerchantExpandEcoQrcodeApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6593584912752225853L;
+	private static final long serialVersionUID = 1661813444491625483L;
 
 	/** 
 	 * 用于生态发的空码，码信息详情

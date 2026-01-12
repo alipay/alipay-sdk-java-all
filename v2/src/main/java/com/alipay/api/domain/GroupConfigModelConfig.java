@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 配置模式
  *
  * @author auto create
- * @since 1.0, 2025-10-24 14:27:41
+ * @since 1.0, 2026-01-05 14:32:42
  */
 public class GroupConfigModelConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 5529544126232778182L;
+	private static final long serialVersionUID = 8817878392323528741L;
 
 	/**
 	 * null
@@ -32,7 +32,7 @@ public class GroupConfigModelConfig extends AlipayObject {
 	/**
 	 * 默认手机号-MOBILE
 会员id-MEMBER_ID
-支付宝openid-OPEN_ID
+支付宝openid-OPEN_ID，支付宝userid-USER_ID
 	 */
 	@ApiField("user_relate_type")
 	private String userRelateType;

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DTAgentChatContent extends AlipayObject {
 
-	private static final long serialVersionUID = 5351334563129159567L;
+	private static final long serialVersionUID = 5566124525364426728L;
 
 	/**
 	 * 具体会话内容

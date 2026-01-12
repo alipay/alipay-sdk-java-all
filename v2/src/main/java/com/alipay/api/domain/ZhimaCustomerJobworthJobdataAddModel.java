@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ZhimaCustomerJobworthJobdataAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1441179818613964851L;
+	private static final long serialVersionUID = 4463842323647234149L;
 
 	/**
 	 * 身份证证件号

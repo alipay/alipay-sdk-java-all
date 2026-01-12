@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOverseasOpenIndrreferralCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5648786984894457475L;
+	private static final long serialVersionUID = 4193335993692675646L;
 
 	/**
 	 * 该字段填入本次推荐码生成请求的指定参数（例如指定跳转商户等）

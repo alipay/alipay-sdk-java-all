@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * AQ授权令牌获取
+ * 蚂蚁健康用户授权令牌获取
  *
  * @author auto create
- * @since 1.0, 2025-11-28 16:27:41
+ * @since 1.0, 2025-12-30 14:07:41
  */
 public class AlipayCommerceMedicalHomedoctorOauthCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6337232393412313813L;
+	private static final long serialVersionUID = 1592613355765762777L;
 
 	/**
 	 * 授权码，用户对应用授权后得到

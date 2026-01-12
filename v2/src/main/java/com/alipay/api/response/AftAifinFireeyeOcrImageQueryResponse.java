@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AftAifinFireeyeOcrImageQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6523444311738811557L;
+	private static final long serialVersionUID = 7417619424433668374L;
 
 	/** 
 	 * 识别结果字段，这个是一个JSON字符串

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 员工价活动优惠信息，包括优惠的类型、优惠金额、优惠的限制信息等
  *
  * @author auto create
- * @since 1.0, 2025-12-01 20:27:41
+ * @since 1.0, 2026-01-04 10:21:01
  */
 public class ActivityPromotionInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4614881853932442163L;
+	private static final long serialVersionUID = 5552275926196888483L;
 
 	/**
 	 * 优惠时间限制信息，可限制周和天的使用时间段

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenIotmbsImageModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2529367824456562765L;
+	private static final long serialVersionUID = 3388265764332811144L;
 
 	
 

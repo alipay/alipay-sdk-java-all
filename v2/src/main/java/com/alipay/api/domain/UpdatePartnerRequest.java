@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * UpdatePartnerRequest
  *
  * @author auto create
- * @since 1.0, 2025-11-07 17:55:12
+ * @since 1.0, 2026-01-07 18:34:47
  */
 public class UpdatePartnerRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 8427383927634788419L;
+	private static final long serialVersionUID = 2472134551784636719L;
 
 	/**
 	 * bd
@@ -100,6 +100,12 @@ public class UpdatePartnerRequest extends AlipayObject {
 	 */
 	@ApiField("industry_category")
 	private String industryCategory;
+
+	/**
+	 * 伙伴政策生效状态，控制政策同步是增加还是删除
+	 */
+	@ApiField("is_effective")
+	private String isEffective;
 
 	/**
 	 * 所属地区
@@ -282,6 +288,13 @@ public class UpdatePartnerRequest extends AlipayObject {
 	}
 	public void setIndustryCategory(String industryCategory) {
 		this.industryCategory = industryCategory;
+	}
+
+	public String getIsEffective() {
+		return this.isEffective;
+	}
+	public void setIsEffective(String isEffective) {
+		this.isEffective = isEffective;
 	}
 
 	public String getLocation() {
