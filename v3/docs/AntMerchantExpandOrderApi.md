@@ -9,7 +9,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 <a name="query"></a>
 # **query**
-> AntMerchantExpandOrderQueryResponseModel query(orderId)
+> AntMerchantExpandOrderQueryResponseModel query(orderId, bizSource)
 
 商户申请单查询
 
@@ -39,8 +39,9 @@ public class Example {
 
     AntMerchantExpandOrderApi apiInstance = new AntMerchantExpandOrderApi(defaultClient);
     String orderId = "2017112200502000000004754299"; // String | 申请单 id。 1.蚂蚁门店管理场景：通过 <a href=\"https://opendocs.alipay.com/open/05afbc4a_ant.merchant.expand.shop.create?scene=common&pathHash=bf443b73\"> ant.merchant.expand.shop.create</a>(蚂蚁店铺创建)接口进件时返回的order_id。 2.直付通二级商户进件场景：通过<a href=\"https://opendocs.alipay.com/open/028xr0?pathHash=c9ca6d68\">ant.merchant.expand.indirect.zft.create</a>(直付通二级商户创建)接口进件时返回的order_id。 
+    String bizSource = "APLUS_SHOP"; // String | 业务来源 团购门店：APLUS_SHOP
     try {
-      AntMerchantExpandOrderQueryResponseModel result = apiInstance.query(orderId);
+      AntMerchantExpandOrderQueryResponseModel result = apiInstance.query(orderId, bizSource);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AntMerchantExpandOrderApi#query");
@@ -58,6 +59,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **orderId** | **String**| 申请单 id。 1.蚂蚁门店管理场景：通过 &lt;a href&#x3D;\&quot;https://opendocs.alipay.com/open/05afbc4a_ant.merchant.expand.shop.create?scene&#x3D;common&amp;pathHash&#x3D;bf443b73\&quot;&gt; ant.merchant.expand.shop.create&lt;/a&gt;(蚂蚁店铺创建)接口进件时返回的order_id。 2.直付通二级商户进件场景：通过&lt;a href&#x3D;\&quot;https://opendocs.alipay.com/open/028xr0?pathHash&#x3D;c9ca6d68\&quot;&gt;ant.merchant.expand.indirect.zft.create&lt;/a&gt;(直付通二级商户创建)接口进件时返回的order_id。  | |
+| **bizSource** | **String**| 业务来源 团购门店：APLUS_SHOP | [optional] |
 
 ### Return type
 

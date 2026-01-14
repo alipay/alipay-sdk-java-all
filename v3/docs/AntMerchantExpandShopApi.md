@@ -4,20 +4,20 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**close**](AntMerchantExpandShopApi.md#close) | **PATCH** /v3/ant/merchant/shop/close | 蚂蚁店铺关闭 |
+| [**close**](AntMerchantExpandShopApi.md#close) | **PATCH** /v3/ant/merchant/shop/close | 蚂蚁门店关闭 |
 | [**consult**](AntMerchantExpandShopApi.md#consult) | **POST** /v3/ant/merchant/expand/shop/consult | 蚂蚁店铺创建咨询 |
-| [**create**](AntMerchantExpandShopApi.md#create) | **POST** /v3/ant/merchant/shop | 蚂蚁店铺创建 |
-| [**modify**](AntMerchantExpandShopApi.md#modify) | **PATCH** /v3/ant/merchant/shop | 修改蚂蚁店铺 |
-| [**query**](AntMerchantExpandShopApi.md#query) | **GET** /v3/ant/merchant/shop | 店铺查询接口 |
+| [**create**](AntMerchantExpandShopApi.md#create) | **POST** /v3/ant/merchant/shop | 蚂蚁门店创建 |
+| [**modify**](AntMerchantExpandShopApi.md#modify) | **PATCH** /v3/ant/merchant/shop | 修改蚂蚁门店 |
+| [**query**](AntMerchantExpandShopApi.md#query) | **GET** /v3/ant/merchant/shop | 门店查询接口 |
 
 
 <a name="close"></a>
 # **close**
 > Object close(antMerchantExpandShopCloseModel)
 
-蚂蚁店铺关闭
+蚂蚁门店关闭
 
-通过shop_id，关闭蚂蚁店铺。
+通过shop_id，关闭蚂蚁门店。
 
 ### Example
 ```java
@@ -157,9 +157,9 @@ No authorization required
 # **create**
 > AntMerchantExpandShopCreateResponseModel create(antMerchantExpandShopCreateModel)
 
-蚂蚁店铺创建
+蚂蚁门店创建
 
-创建蚂蚁店铺
+创建蚂蚁门店
 
 ### Example
 ```java
@@ -228,9 +228,9 @@ No authorization required
 # **modify**
 > AntMerchantExpandShopModifyResponseModel modify(antMerchantExpandShopModifyModel)
 
-修改蚂蚁店铺
+修改蚂蚁门店
 
-修改蚂蚁店铺，按信息项修改。若无特殊说明，如果某项存在但是没填写，则不会覆盖掉原来的值
+修改蚂蚁门店，按信息项修改。若无特殊说明，如果某项存在但是没填写，则不会覆盖掉原来的值
 
 ### Example
 ```java
@@ -297,11 +297,11 @@ No authorization required
 
 <a name="query"></a>
 # **query**
-> AntMerchantExpandShopQueryResponseModel query(shopId, storeId, ipRoleId, addressVersion, needRecommend, needIndustryInfo, needIndustryLicense)
+> AntMerchantExpandShopQueryResponseModel query(shopId, storeId, ipRoleId, addressVersion, needRecommend, needIndustryInfo, needIndustryLicense, shopType, bizSource)
 
-店铺查询接口
+门店查询接口
 
-用于服务商或商户查询其自己的店铺信息
+用于服务商或商户查询其自己的门店信息
 
 ### Example
 ```java
@@ -333,8 +333,10 @@ public class Example {
     String needRecommend = "0"; // String | 门店不置信时，是否需要返回shop_recommend_info
     String needIndustryInfo = "1"; // String | need_industry_info=0时不返回行业信息；need_industry_info=1时返回不需要审核的行业信息、审核通过的行业信息
     String needIndustryLicense = "1"; // String | need_industry_license=0时不返回行业资质；need_industry_license=1时返回审核通过的行业资质
+    String shopType = "GROUP_BUY"; // String | 团购门店的业务类型
+    String bizSource = "APLUS_SHOP"; // String | 团购门店业务类型来源
     try {
-      AntMerchantExpandShopQueryResponseModel result = apiInstance.query(shopId, storeId, ipRoleId, addressVersion, needRecommend, needIndustryInfo, needIndustryLicense);
+      AntMerchantExpandShopQueryResponseModel result = apiInstance.query(shopId, storeId, ipRoleId, addressVersion, needRecommend, needIndustryInfo, needIndustryLicense, shopType, bizSource);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AntMerchantExpandShopApi#query");
@@ -358,6 +360,8 @@ public class Example {
 | **needRecommend** | **String**| 门店不置信时，是否需要返回shop_recommend_info | [optional] |
 | **needIndustryInfo** | **String**| need_industry_info&#x3D;0时不返回行业信息；need_industry_info&#x3D;1时返回不需要审核的行业信息、审核通过的行业信息 | [optional] |
 | **needIndustryLicense** | **String**| need_industry_license&#x3D;0时不返回行业资质；need_industry_license&#x3D;1时返回审核通过的行业资质 | [optional] |
+| **shopType** | **String**| 团购门店的业务类型 | [optional] |
+| **bizSource** | **String**| 团购门店业务类型来源 | [optional] |
 
 ### Return type
 

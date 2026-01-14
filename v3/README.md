@@ -1,7 +1,7 @@
 # alipay-sdk-java-v3
 
 支付宝开放平台API
-- API version: 2025-12-15
+- API version: 2026-01-14
 
 支付宝开放平台v3协议文档
 
@@ -55,7 +55,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>com.alipay.sdk</groupId>
   <artifactId>alipay-sdk-java-v3</artifactId>
-  <version>3.1.65.ALL</version>
+  <version>3.1.70.ALL</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -71,7 +71,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "com.alipay.sdk:alipay-sdk-java-v3:3.1.65.ALL"
+     implementation "com.alipay.sdk:alipay-sdk-java-v3:3.1.70.ALL"
   }
 ```
 
@@ -85,7 +85,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/alipay-sdk-java-v3-3.1.65.ALL.jar`
+* `target/alipay-sdk-java-v3-3.1.70.ALL.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
@@ -189,7 +189,7 @@ Class | Method | HTTP request | Description
 *AlipayCommerceEcEmployeeTitleApi* | [**create**](docs/AlipayCommerceEcEmployeeTitleApi.md#create) | **POST** /v3/alipay/commerce/ec/employee/title | 员工抬头：新增员工抬头关系
 *AlipayCommerceEcEmployeeTitleApi* | [**delete**](docs/AlipayCommerceEcEmployeeTitleApi.md#delete) | **POST** /v3/alipay/commerce/ec/employee/title/delete | 员工抬头：失效员工抬头关系
 *AlipayCommerceEcEmployeeTitleApi* | [**modify**](docs/AlipayCommerceEcEmployeeTitleApi.md#modify) | **PUT** /v3/alipay/commerce/ec/employee/title | 修改员工抬头信息
-*AlipayCommerceEcEnterpriseApi* | [**create**](docs/AlipayCommerceEcEnterpriseApi.md#create) | **POST** /v3/alipay/commerce/ec/enterprise/create | 企业签约注册
+*AlipayCommerceEcEnterpriseApi* | [**create**](docs/AlipayCommerceEcEnterpriseApi.md#create) | **POST** /v3/alipay/commerce/ec/enterprise/create | 企业签约注册-接口已过时
 *AlipayCommerceEcEnterpriseApi* | [**delete**](docs/AlipayCommerceEcEnterpriseApi.md#delete) | **POST** /v3/alipay/commerce/ec/enterprise/delete | 企业注销
 *AlipayCommerceEcEnterpriseApi* | [**unsign**](docs/AlipayCommerceEcEnterpriseApi.md#unsign) | **GET** /v3/alipay/commerce/ec/enterprise/unsignurl | 企业解约
 *AlipayCommerceEcEnterpriseAddressApi* | [**add**](docs/AlipayCommerceEcEnterpriseAddressApi.md#add) | **POST** /v3/alipay/commerce/ec/enterprise/address | 企业地址添加
@@ -757,7 +757,6 @@ Class | Method | HTTP request | Description
 *AlipayOpenSearchSubservicekeywordApi* | [**delete**](docs/AlipayOpenSearchSubservicekeywordApi.md#delete) | **POST** /v3/alipay/open/search/subservicekeyword/delete | 删除服务关键词
 *AlipayOpenSearchSubservicekeywordApi* | [**querystatus**](docs/AlipayOpenSearchSubservicekeywordApi.md#querystatus) | **GET** /v3/alipay/open/search/subservicekeyword/querystatus | 查询小程序服务关键词的审核工单的状态
 *AlipayOpenServicemarketCommodityShopApi* | [**offline**](docs/AlipayOpenServicemarketCommodityShopApi.md#offline) | **POST** /v3/alipay/open/servicemarket/commodity/shop/offline | 门店插件下架操作
-*AlipayOpenServicemarketCommodityShopApi* | [**online**](docs/AlipayOpenServicemarketCommodityShopApi.md#online) | **POST** /v3/alipay/open/servicemarket/commodity/shop/online | 门店插件上架操作
 *AlipayOpenServicemarketOrderApi* | [**accept**](docs/AlipayOpenServicemarketOrderApi.md#accept) | **POST** /v3/alipay/open/servicemarket/order/accept | 服务商接单操作
 *AlipayOpenServicemarketOrderApi* | [**create**](docs/AlipayOpenServicemarketOrderApi.md#create) | **POST** /v3/alipay/open/servicemarket/order/create | 服务市场代订购小程序
 *AlipayOpenServicemarketOrderApi* | [**notify**](docs/AlipayOpenServicemarketOrderApi.md#notify) | **POST** /v3/alipay/open/servicemarket/order/notify | 服务市场商户确认订购通知
@@ -802,7 +801,6 @@ Class | Method | HTTP request | Description
 *AlipayTradeApi* | [**query**](docs/AlipayTradeApi.md#query) | **POST** /v3/alipay/trade/query | 统一收单交易查询
 *AlipayTradeApi* | [**refund**](docs/AlipayTradeApi.md#refund) | **POST** /v3/alipay/trade/refund | 统一收单交易退款接口
 *AlipayTradeAdvanceApi* | [**consult**](docs/AlipayTradeAdvanceApi.md#consult) | **GET** /v3/alipay/trade/advance/consult | 订单咨询服务
-*AlipayTradeApplepayAuthenticationApi* | [**submit**](docs/AlipayTradeApplepayAuthenticationApi.md#submit) | **POST** /v3/alipay/trade/applepay/authentication/submit | ApplePay支付鉴权提交
 *AlipayTradeBatchApi* | [**settle**](docs/AlipayTradeBatchApi.md#settle) | **POST** /v3/alipay/trade/batch/settle | 批量结算
 *AlipayTradeBatchApi* | [**transfer**](docs/AlipayTradeBatchApi.md#transfer) | **POST** /v3/alipay/trade/batch/transfer | 请款分账
 *AlipayTradeBatchSettleApi* | [**query**](docs/AlipayTradeBatchSettleApi.md#query) | **POST** /v3/alipay/trade/batch/settle/query | 批量结算查询
@@ -858,11 +856,11 @@ Class | Method | HTTP request | Description
 *AntMerchantExpandItemStatusApi* | [**modify**](docs/AntMerchantExpandItemStatusApi.md#modify) | **POST** /v3/ant/merchant/expand/item/status/modify | 商品状态修改接口
 *AntMerchantExpandMccApi* | [**query**](docs/AntMerchantExpandMccApi.md#query) | **GET** /v3/ant/merchant/mcc/query | 商户mcc信息查询
 *AntMerchantExpandOrderApi* | [**query**](docs/AntMerchantExpandOrderApi.md#query) | **GET** /v3/ant/merchant/order/{order_id} | 商户申请单查询
-*AntMerchantExpandShopApi* | [**close**](docs/AntMerchantExpandShopApi.md#close) | **PATCH** /v3/ant/merchant/shop/close | 蚂蚁店铺关闭
+*AntMerchantExpandShopApi* | [**close**](docs/AntMerchantExpandShopApi.md#close) | **PATCH** /v3/ant/merchant/shop/close | 蚂蚁门店关闭
 *AntMerchantExpandShopApi* | [**consult**](docs/AntMerchantExpandShopApi.md#consult) | **POST** /v3/ant/merchant/expand/shop/consult | 蚂蚁店铺创建咨询
-*AntMerchantExpandShopApi* | [**create**](docs/AntMerchantExpandShopApi.md#create) | **POST** /v3/ant/merchant/shop | 蚂蚁店铺创建
-*AntMerchantExpandShopApi* | [**modify**](docs/AntMerchantExpandShopApi.md#modify) | **PATCH** /v3/ant/merchant/shop | 修改蚂蚁店铺
-*AntMerchantExpandShopApi* | [**query**](docs/AntMerchantExpandShopApi.md#query) | **GET** /v3/ant/merchant/shop | 店铺查询接口
+*AntMerchantExpandShopApi* | [**create**](docs/AntMerchantExpandShopApi.md#create) | **POST** /v3/ant/merchant/shop | 蚂蚁门店创建
+*AntMerchantExpandShopApi* | [**modify**](docs/AntMerchantExpandShopApi.md#modify) | **PATCH** /v3/ant/merchant/shop | 修改蚂蚁门店
+*AntMerchantExpandShopApi* | [**query**](docs/AntMerchantExpandShopApi.md#query) | **GET** /v3/ant/merchant/shop | 门店查询接口
 *AntMerchantExpandShopPageApi* | [**query**](docs/AntMerchantExpandShopPageApi.md#query) | **GET** /v3/ant/merchant/shop/pagequery | 店铺分页查询接口
 *AntMerchantExpandShopReceiptaccountApi* | [**save**](docs/AntMerchantExpandShopReceiptaccountApi.md#save) | **POST** /v3/ant/merchant/expand/shop/receiptaccount/save | 店铺增加收单账号
 *DatadigitalFincloudGeneralsaasFaceCertifyApi* | [**initialize**](docs/DatadigitalFincloudGeneralsaasFaceCertifyApi.md#initialize) | **POST** /v3/datadigital/fincloud/generalsaas/face/certify/initialize | 跳转支付宝人脸核身初始化

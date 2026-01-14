@@ -4,7 +4,7 @@ All URIs are relative to *https://openapi.alipay.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**create**](AlipayCommerceEcEnterpriseApi.md#create) | **POST** /v3/alipay/commerce/ec/enterprise/create | 企业签约注册 |
+| [**create**](AlipayCommerceEcEnterpriseApi.md#create) | **POST** /v3/alipay/commerce/ec/enterprise/create | 企业签约注册-接口已过时 |
 | [**delete**](AlipayCommerceEcEnterpriseApi.md#delete) | **POST** /v3/alipay/commerce/ec/enterprise/delete | 企业注销 |
 | [**unsign**](AlipayCommerceEcEnterpriseApi.md#unsign) | **GET** /v3/alipay/commerce/ec/enterprise/unsignurl | 企业解约 |
 
@@ -13,9 +13,9 @@ All URIs are relative to *https://openapi.alipay.com*
 # **create**
 > AlipayCommerceEcEnterpriseCreateResponseModel create(alipayCommerceEcEnterpriseCreateModel)
 
-企业签约注册
+企业签约注册-接口已过时
 
-企业注册企业码，并返回因公付签约链接，通过该链接，企业可操作完成出资账户绑定
+注册企业并返回因公付签约老页面链接，企业访问此链接可签约因公付、设置出资账户。 此接口已过时，仅适用于存量企业与出资场景，增量业务请勿使用！
 
 ### Example
 ```java
