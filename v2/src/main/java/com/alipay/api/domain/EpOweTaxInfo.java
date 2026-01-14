@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EpOweTaxInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2749494112411635667L;
+	private static final long serialVersionUID = 4421595681573291834L;
 
 	/**
 	 * 识别号

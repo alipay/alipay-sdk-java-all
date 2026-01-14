@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-12-22 15:46:27
+ * @since 1.0, 2026-01-14 10:57:43
  */
 public class CourseVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3566795545672665465L;
+	private static final long serialVersionUID = 6259313476429818299L;
+
+	/**
+	 * 行业审核状态
+	 */
+	@ApiField("audit_status")
+	private String auditStatus;
 
 	/**
 	 * 支付宝商品类目
@@ -149,6 +155,12 @@ AUDIT_REJECT("审核驳回")
 	private List<String> headImageList;
 
 	/**
+	 * 行业展示状态
+	 */
+	@ApiField("industry_show_status")
+	private String industryShowStatus;
+
+	/**
 	 * 课程提交机构编码
 	 */
 	@ApiField("org_code")
@@ -184,6 +196,13 @@ AUDIT_REJECT("审核驳回")
 	@ApiListField("teacher_info")
 	@ApiField("teacher_v_o")
 	private List<TeacherVO> teacherInfo;
+
+	public String getAuditStatus() {
+		return this.auditStatus;
+	}
+	public void setAuditStatus(String auditStatus) {
+		this.auditStatus = auditStatus;
+	}
 
 	public String getCategoryId() {
 		return this.categoryId;
@@ -323,6 +342,13 @@ AUDIT_REJECT("审核驳回")
 	}
 	public void setHeadImageList(List<String> headImageList) {
 		this.headImageList = headImageList;
+	}
+
+	public String getIndustryShowStatus() {
+		return this.industryShowStatus;
+	}
+	public void setIndustryShowStatus(String industryShowStatus) {
+		this.industryShowStatus = industryShowStatus;
 	}
 
 	public String getOrgCode() {

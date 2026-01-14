@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.merchantcard.bookingservice.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-03 10:27:42
+ * @since 1.0, 2026-01-12 15:05:26
  */
 public class AlipayCommerceMerchantcardBookingserviceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6535911382888979481L;
+	private static final long serialVersionUID = 1439152994788923144L;
 
 	/** 
 	 * 当前页码

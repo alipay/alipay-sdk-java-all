@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 预约门店同步
  *
  * @author auto create
- * @since 1.0, 2025-12-03 10:27:42
+ * @since 1.0, 2026-01-12 14:59:20
  */
 public class AlipayCommerceMerchantcardBookingshopSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5893676196798733764L;
+	private static final long serialVersionUID = 8521641941352582167L;
 
 	/**
 	 * 预约时间间隔【stockFetchType=sync时必填】

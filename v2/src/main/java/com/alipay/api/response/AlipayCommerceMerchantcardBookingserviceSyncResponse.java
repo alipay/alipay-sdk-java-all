@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.merchantcard.bookingservice.sync response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-03 10:27:42
+ * @since 1.0, 2026-01-12 15:05:26
  */
 public class AlipayCommerceMerchantcardBookingserviceSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4413495997934648393L;
+	private static final long serialVersionUID = 5325756724263338996L;
 
 	/** 
 	 * 服务id

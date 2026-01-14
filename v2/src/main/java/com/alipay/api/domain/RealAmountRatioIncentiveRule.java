@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RealAmountRatioIncentiveRule extends AlipayObject {
 
-	private static final long serialVersionUID = 1454231112271545699L;
+	private static final long serialVersionUID = 8854696479964375728L;
 
 	/**
 	 * 允许发放激励的交易最小金额限制，单位元

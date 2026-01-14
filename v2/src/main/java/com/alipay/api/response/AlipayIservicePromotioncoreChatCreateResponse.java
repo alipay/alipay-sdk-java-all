@@ -8,17 +8,30 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.promotioncore.chat.create response.
  * 
  * @author auto create
- * @since 1.0, 2026-01-12 11:22:43
+ * @since 1.0, 2026-01-14 15:02:41
  */
 public class AlipayIservicePromotioncoreChatCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4723994999323242599L;
+	private static final long serialVersionUID = 7623236912536685363L;
+
+	/** 
+	 * 消息内容
+	 */
+	@ApiField("message_content")
+	private String messageContent;
 
 	/** 
 	 * 消息id，用于幂等
 	 */
 	@ApiField("message_id")
 	private String messageId;
+
+	public void setMessageContent(String messageContent) {
+		this.messageContent = messageContent;
+	}
+	public String getMessageContent( ) {
+		return this.messageContent;
+	}
 
 	public void setMessageId(String messageId) {
 		this.messageId = messageId;

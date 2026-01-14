@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改划拨单金额
  *
  * @author auto create
- * @since 1.0, 2025-11-24 10:57:41
+ * @since 1.0, 2026-01-12 20:42:42
  */
 public class AlipayEbppIndustrySupervisionOrderfundtransferModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7882816943639611392L;
+	private static final long serialVersionUID = 1828153747688499978L;
 
 	/**
 	 * 用户支付宝uid

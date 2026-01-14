@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayInsSceneEmploymentGroupendorseCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3612229322137544813L;
+	private static final long serialVersionUID = 5178162114643774359L;
 
 	/** 
 	 * 外部业务号

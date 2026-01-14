@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.promotioncore.chat.create request
  * 
  * @author auto create
- * @since 1.0, 2026-01-12 11:22:43
+ * @since 1.0, 2026-01-14 15:02:41
  */
 public class AlipayIservicePromotioncoreChatCreateRequest implements AlipayRequest<AlipayIservicePromotioncoreChatCreateResponse> {
 

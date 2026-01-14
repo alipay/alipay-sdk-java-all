@@ -1,26 +1,25 @@
 package com.alipay.api.request;
 
-import com.alipay.api.domain.ZhimaCreditEpSiriusTaskCallbackModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
-import com.alipay.api.response.ZhimaCreditEpSiriusTaskCallbackResponse;
+import com.alipay.api.response.AlipayIservicePromdatafactoryDataUploadResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: zhima.credit.ep.sirius.task.callback request
+ * ALIPAY API: alipay.iservice.promdatafactory.data.upload request
  * 
  * @author auto create
- * @since 1.0, 2025-03-11 10:34:04
+ * @since 1.0, 2026-01-13 14:37:42
  */
-public class ZhimaCreditEpSiriusTaskCallbackRequest implements AlipayRequest<ZhimaCreditEpSiriusTaskCallbackResponse> {
+public class AlipayIservicePromdatafactoryDataUploadRequest implements AlipayRequest<AlipayIservicePromdatafactoryDataUploadResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
 
 	/** 
-	* 芝麻信用-天狼星任务回调
+	* 营销数据上传
 	 */
 	private String bizContent;
 
@@ -87,7 +86,7 @@ public class ZhimaCreditEpSiriusTaskCallbackRequest implements AlipayRequest<Zhi
 	}
 
 	public String getApiMethodName() {
-		return "zhima.credit.ep.sirius.task.callback";
+		return "alipay.iservice.promdatafactory.data.upload";
 	}
 
 	public Map<String, String> getTextParams() {		
@@ -106,8 +105,8 @@ public class ZhimaCreditEpSiriusTaskCallbackRequest implements AlipayRequest<Zhi
 		this.udfParams.put(key, value);
 	}
 
-	public Class<ZhimaCreditEpSiriusTaskCallbackResponse> getResponseClass() {
-		return ZhimaCreditEpSiriusTaskCallbackResponse.class;
+	public Class<AlipayIservicePromdatafactoryDataUploadResponse> getResponseClass() {
+		return AlipayIservicePromdatafactoryDataUploadResponse.class;
 	}
 	
 

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOfflineProviderUserinfoNpassporterCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4174928922377155881L;
+	private static final long serialVersionUID = 4419266734548178712L;
 
 	/**
 	 * 身份证号。可以传明文，也可以传身份证号的32位大写MD5值。尽量使用MD5值

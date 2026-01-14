@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.parking.fee.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-21 10:22:36
+ * @since 1.0, 2026-01-13 16:47:42
  */
 public class AlipayCommerceTransportParkingFeeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1589425767426974762L;
+	private static final long serialVersionUID = 7513424458565826929L;
 
 	/** 
 	 * 停车场收费规则图片
@@ -58,6 +58,12 @@ public class AlipayCommerceTransportParkingFeeQueryResponse extends AlipayRespon
 	private Date inPlaceTime;
 
 	/** 
+	 * 车牌号
+	 */
+	@ApiField("license_plate_no")
+	private String licensePlateNo;
+
+	/** 
 	 * 停车时长，单位会自动转换成x小时x分钟
 	 */
 	@ApiField("park_duration_time")
@@ -82,7 +88,7 @@ public class AlipayCommerceTransportParkingFeeQueryResponse extends AlipayRespon
 	private String payUrl;
 
 	/** 
-	 * 停车费金额
+	 * 停车费金额，人民币
 	 */
 	@ApiField("total_amount")
 	private String totalAmount;
@@ -134,6 +140,13 @@ public class AlipayCommerceTransportParkingFeeQueryResponse extends AlipayRespon
 	}
 	public Date getInPlaceTime( ) {
 		return this.inPlaceTime;
+	}
+
+	public void setLicensePlateNo(String licensePlateNo) {
+		this.licensePlateNo = licensePlateNo;
+	}
+	public String getLicensePlateNo( ) {
+		return this.licensePlateNo;
 	}
 
 	public void setParkDurationTime(String parkDurationTime) {

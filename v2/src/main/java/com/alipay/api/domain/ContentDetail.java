@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ContentDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1498949181569156242L;
+	private static final long serialVersionUID = 6145873474691944437L;
 
 	/**
 	 * 蚂蚁服务端计算静置时间差（写入时的服务器时间-当前服务器时间）

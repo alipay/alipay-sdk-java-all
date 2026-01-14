@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ItemEnrollFreezeContent extends AlipayObject {
 
-	private static final long serialVersionUID = 7377317151561158983L;
+	private static final long serialVersionUID = 2249848129786215898L;
 
 	/**
 	 * 是否参与直播秒杀

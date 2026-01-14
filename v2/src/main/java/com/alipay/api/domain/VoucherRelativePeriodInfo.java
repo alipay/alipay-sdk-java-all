@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 券相对核销时间
  *
  * @author auto create
- * @since 1.0, 2025-06-17 16:18:31
+ * @since 1.0, 2026-01-13 16:12:31
  */
 public class VoucherRelativePeriodInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5757324152976517458L;
+	private static final long serialVersionUID = 8881343867589179993L;
 
 	/**
 	 * 核销时间限制
@@ -24,6 +24,12 @@ public class VoucherRelativePeriodInfo extends AlipayObject {
 	 */
 	@ApiField("valid_days_after_receive")
 	private Long validDaysAfterReceive;
+
+	/**
+	 * 优惠券有效期取整类型，向前取整则是领券后第N天晚上23点59分59秒时效。配合valid_days_after_receive字段使用，比如：valid_days_relative_type=ROUND_FORWARD，valid_days_after_receive =1，领券时间是1号12点0分0秒，那么1号23点59分59秒优惠券过期不可用；valid_days_relative_type=ROUND_FORWARD，valid_days_after_receive =2，领券时是1号12点0分0秒，那么2号23点59分59秒优惠券过期不可用；
+	 */
+	@ApiField("valid_days_relative_type")
+	private String validDaysRelativeType;
 
 	/**
 	 * 用户领券后需要等待 N 天，券才可以生效。 
@@ -44,6 +50,13 @@ public class VoucherRelativePeriodInfo extends AlipayObject {
 	}
 	public void setValidDaysAfterReceive(Long validDaysAfterReceive) {
 		this.validDaysAfterReceive = validDaysAfterReceive;
+	}
+
+	public String getValidDaysRelativeType() {
+		return this.validDaysRelativeType;
+	}
+	public void setValidDaysRelativeType(String validDaysRelativeType) {
+		this.validDaysRelativeType = validDaysRelativeType;
 	}
 
 	public Long getWaitDaysAfterReceive() {

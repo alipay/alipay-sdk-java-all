@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOfflineProviderBroadcastQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7662283196786459746L;
+	private static final long serialVersionUID = 2858869871891135935L;
 
 	/** 
 	 * 语音播报数据集合

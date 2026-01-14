@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenIotmbsRoomstateSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6484389882179167794L;
+	private static final long serialVersionUID = 7884794461295531357L;
 
 	/**
 	 * 设备激活序号

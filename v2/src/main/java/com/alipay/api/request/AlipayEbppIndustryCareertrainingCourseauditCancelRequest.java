@@ -1,26 +1,26 @@
 package com.alipay.api.request;
 
-import com.alipay.api.domain.MybankCreditLoanapplyFinleaseTokenQueryModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
-import com.alipay.api.response.MybankCreditLoanapplyFinleaseTokenQueryResponse;
+import com.alipay.api.response.AlipayEbppIndustryCareertrainingCourseauditCancelResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: mybank.credit.loanapply.finlease.token.query request
+ * ALIPAY API: alipay.ebpp.industry.careertraining.courseaudit.cancel request
  * 
  * @author auto create
- * @since 1.0, 2025-08-08 10:07:21
+ * @since 1.0, 2026-01-14 10:45:57
  */
-public class MybankCreditLoanapplyFinleaseTokenQueryRequest implements AlipayRequest<MybankCreditLoanapplyFinleaseTokenQueryResponse> {
+public class AlipayEbppIndustryCareertrainingCourseauditCancelRequest implements AlipayRequest<AlipayEbppIndustryCareertrainingCourseauditCancelResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
 
 	/** 
-	* 3C租赁网商受托代扣URL地址获取
+	* 职业培训课程取消审核
+
 	 */
 	private String bizContent;
 
@@ -87,7 +87,7 @@ public class MybankCreditLoanapplyFinleaseTokenQueryRequest implements AlipayReq
 	}
 
 	public String getApiMethodName() {
-		return "mybank.credit.loanapply.finlease.token.query";
+		return "alipay.ebpp.industry.careertraining.courseaudit.cancel";
 	}
 
 	public Map<String, String> getTextParams() {		
@@ -106,8 +106,8 @@ public class MybankCreditLoanapplyFinleaseTokenQueryRequest implements AlipayReq
 		this.udfParams.put(key, value);
 	}
 
-	public Class<MybankCreditLoanapplyFinleaseTokenQueryResponse> getResponseClass() {
-		return MybankCreditLoanapplyFinleaseTokenQueryResponse.class;
+	public Class<AlipayEbppIndustryCareertrainingCourseauditCancelResponse> getResponseClass() {
+		return AlipayEbppIndustryCareertrainingCourseauditCancelResponse.class;
 	}
 	
 

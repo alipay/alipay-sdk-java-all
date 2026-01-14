@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.merchantcard.bookingshop.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-03 10:27:42
+ * @since 1.0, 2026-01-12 14:57:00
  */
 public class AlipayCommerceMerchantcardBookingshopQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1574187759798163715L;
+	private static final long serialVersionUID = 1167879717589116296L;
 
 	/** 
 	 * 预约时间间隔【stockFetchType=sync时必填】

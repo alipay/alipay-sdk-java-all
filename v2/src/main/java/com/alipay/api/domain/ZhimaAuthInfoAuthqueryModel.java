@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaAuthInfoAuthqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6511942875752554939L;
+	private static final long serialVersionUID = 7766521123788637395L;
 
 	/**
 	 * 当前授权查询的类型，分为企业信用产品授权查询和个人信用产品授权查询；默认为个人信用授权查询即为C2B。枚举如下：

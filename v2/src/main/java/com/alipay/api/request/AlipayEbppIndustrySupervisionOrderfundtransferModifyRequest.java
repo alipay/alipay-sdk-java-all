@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.supervision.orderfundtransfer.modify request
  * 
  * @author auto create
- * @since 1.0, 2025-11-24 10:57:41
+ * @since 1.0, 2026-01-12 20:42:42
  */
 public class AlipayEbppIndustrySupervisionOrderfundtransferModifyRequest implements AlipayRequest<AlipayEbppIndustrySupervisionOrderfundtransferModifyResponse> {
 
@@ -19,7 +19,7 @@ public class AlipayEbppIndustrySupervisionOrderfundtransferModifyRequest impleme
 	private String apiVersion="1.0";
 
 	/** 
-	* 用户未确前、提供可修改划拨单金额的能力
+	* 用户未确认前、提供可修改划拨单金额的能力
 	 */
 	private String bizContent;
 

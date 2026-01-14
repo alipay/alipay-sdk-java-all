@@ -1,26 +1,26 @@
 package com.alipay.api.request;
 
-import com.alipay.api.domain.AlipayMarketingXuanyitestTransferModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
-import com.alipay.api.response.AlipayMarketingXuanyitestTransferResponse;
+import com.alipay.api.response.AlipayEbppIndustryCareertrainingExamauditCancelResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: alipay.marketing.xuanyitest.transfer request
+ * ALIPAY API: alipay.ebpp.industry.careertraining.examaudit.cancel request
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 17:41:17
+ * @since 1.0, 2026-01-14 10:45:57
  */
-public class AlipayMarketingXuanyitestTransferRequest implements AlipayRequest<AlipayMarketingXuanyitestTransferResponse> {
+public class AlipayEbppIndustryCareertrainingExamauditCancelRequest implements AlipayRequest<AlipayEbppIndustryCareertrainingExamauditCancelResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
 
 	/** 
-	* 资源化测试4.0
+	* 评价取消审核
+
 	 */
 	private String bizContent;
 
@@ -87,7 +87,7 @@ public class AlipayMarketingXuanyitestTransferRequest implements AlipayRequest<A
 	}
 
 	public String getApiMethodName() {
-		return "alipay.marketing.xuanyitest.transfer";
+		return "alipay.ebpp.industry.careertraining.examaudit.cancel";
 	}
 
 	public Map<String, String> getTextParams() {		
@@ -106,8 +106,8 @@ public class AlipayMarketingXuanyitestTransferRequest implements AlipayRequest<A
 		this.udfParams.put(key, value);
 	}
 
-	public Class<AlipayMarketingXuanyitestTransferResponse> getResponseClass() {
-		return AlipayMarketingXuanyitestTransferResponse.class;
+	public Class<AlipayEbppIndustryCareertrainingExamauditCancelResponse> getResponseClass() {
+		return AlipayEbppIndustryCareertrainingExamauditCancelResponse.class;
 	}
 	
 

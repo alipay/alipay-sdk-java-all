@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceTransportAirticketOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5197137529563263596L;
+	private static final long serialVersionUID = 3421193525312186133L;
 
 	/**
 	 * 订单总金额，币种：人民币，单位：元

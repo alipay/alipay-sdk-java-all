@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class FengdieTemplateDetailModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3753545881274631872L;
+	private static final long serialVersionUID = 7629973624773334274L;
 
 	/**
 	 * 模板 id

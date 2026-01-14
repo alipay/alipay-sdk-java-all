@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MsgSceneDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4178652759746384974L;
+	private static final long serialVersionUID = 8624797282212246256L;
 
 	/**
 	 * 1.当biz_scene=INVITE_EMP_SIGN时，need_push、template_type和send_time为必填项

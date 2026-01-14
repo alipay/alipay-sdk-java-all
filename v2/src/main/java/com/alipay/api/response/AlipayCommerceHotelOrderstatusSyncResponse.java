@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceHotelOrderstatusSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5271874439334355343L;
+	private static final long serialVersionUID = 1175152177822495697L;
 
 	
 

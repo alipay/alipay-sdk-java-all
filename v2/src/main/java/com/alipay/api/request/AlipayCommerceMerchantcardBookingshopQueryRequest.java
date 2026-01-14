@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.merchantcard.bookingshop.query request
  * 
  * @author auto create
- * @since 1.0, 2025-12-03 10:27:42
+ * @since 1.0, 2026-01-12 14:57:00
  */
 public class AlipayCommerceMerchantcardBookingshopQueryRequest implements AlipayRequest<AlipayCommerceMerchantcardBookingshopQueryResponse> {
 

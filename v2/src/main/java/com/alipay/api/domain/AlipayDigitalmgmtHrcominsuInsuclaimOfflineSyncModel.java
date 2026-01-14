@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayDigitalmgmtHrcominsuInsuclaimOfflineSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6151248444461919393L;
+	private static final long serialVersionUID = 6384963373677288971L;
 
 	/**
 	 * data_key+不唯一+供应商查询未提交给理赔公司的，理赔状态为进行中的理赔报案数据+枚举值(无)+员工申请理赔+特殊说明(无)

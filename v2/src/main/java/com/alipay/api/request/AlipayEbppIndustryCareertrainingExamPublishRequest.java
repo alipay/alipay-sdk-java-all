@@ -1,26 +1,25 @@
 package com.alipay.api.request;
 
-import com.alipay.api.domain.AlipayOpenIotvspOrguserDeleteModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
-import com.alipay.api.response.AlipayOpenIotvspOrguserDeleteResponse;
+import com.alipay.api.response.AlipayEbppIndustryCareertrainingExamPublishResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: alipay.open.iotvsp.orguser.delete request
+ * ALIPAY API: alipay.ebpp.industry.careertraining.exam.publish request
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 17:41:19
+ * @since 1.0, 2026-01-14 10:47:43
  */
-public class AlipayOpenIotvspOrguserDeleteRequest implements AlipayRequest<AlipayOpenIotvspOrguserDeleteResponse> {
+public class AlipayEbppIndustryCareertrainingExamPublishRequest implements AlipayRequest<AlipayEbppIndustryCareertrainingExamPublishResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
 
 	/** 
-	* iot核身聚合平台的机构人员删除接口
+	* 考试投放与撤销投放行业阵地
 	 */
 	private String bizContent;
 
@@ -87,7 +86,7 @@ public class AlipayOpenIotvspOrguserDeleteRequest implements AlipayRequest<Alipa
 	}
 
 	public String getApiMethodName() {
-		return "alipay.open.iotvsp.orguser.delete";
+		return "alipay.ebpp.industry.careertraining.exam.publish";
 	}
 
 	public Map<String, String> getTextParams() {		
@@ -106,8 +105,8 @@ public class AlipayOpenIotvspOrguserDeleteRequest implements AlipayRequest<Alipa
 		this.udfParams.put(key, value);
 	}
 
-	public Class<AlipayOpenIotvspOrguserDeleteResponse> getResponseClass() {
-		return AlipayOpenIotvspOrguserDeleteResponse.class;
+	public Class<AlipayEbppIndustryCareertrainingExamPublishResponse> getResponseClass() {
+		return AlipayEbppIndustryCareertrainingExamPublishResponse.class;
 	}
 	
 

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoCityserviceExtOrdertocNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4687971328872345163L;
+	private static final long serialVersionUID = 3864165919285734614L;
 
 	/**
 	 * 光华平台服务编码

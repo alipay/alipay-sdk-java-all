@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportParkingGoodsModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1756223595676258339L;
+	private static final long serialVersionUID = 3773981984785985694L;
 
 	/**
 	 * 1^2^3（表示周一、周二、周三）,此时间与商品履约开始、结束时间取交集，如2019-01-01到2019-03-01期间的周一、周二、周三

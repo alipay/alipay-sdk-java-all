@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 预约服务查询
  *
  * @author auto create
- * @since 1.0, 2025-12-03 10:27:42
+ * @since 1.0, 2026-01-12 15:05:26
  */
 public class AlipayCommerceMerchantcardBookingserviceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1212734984884865794L;
+	private static final long serialVersionUID = 3221525392719349286L;
 
 	/**
 	 * 页码

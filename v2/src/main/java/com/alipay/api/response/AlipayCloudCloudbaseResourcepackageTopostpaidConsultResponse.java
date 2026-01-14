@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.resourcepackage.topostpaid.consult response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-12 16:07:28
+ * @since 1.0, 2026-01-12 19:03:31
  */
 public class AlipayCloudCloudbaseResourcepackageTopostpaidConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6137273228829554728L;
+	private static final long serialVersionUID = 5231133772163941898L;
 
 	/** 
 	 * 待退款金额（分）

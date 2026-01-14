@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BenefitAccountRecycleInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1196248963721889579L;
+	private static final long serialVersionUID = 4477999386458131711L;
 
 	/**
 	 * 回收账号设置，一旦设定，后续逆向退款的资金流向该账号

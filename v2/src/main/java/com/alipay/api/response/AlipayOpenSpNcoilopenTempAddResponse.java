@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.ncoilopen.temp.add response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-30 16:01:34
+ * @since 1.0, 2026-01-12 17:12:43
  */
 public class AlipayOpenSpNcoilopenTempAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5255133469647118193L;
+	private static final long serialVersionUID = 8625351534467219255L;
 
 	/** 
 	 * 业务id，与申请单id唯一对应

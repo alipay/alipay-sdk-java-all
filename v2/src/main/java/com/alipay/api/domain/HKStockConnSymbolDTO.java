@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HKStockConnSymbolDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2758128975641355994L;
+	private static final long serialVersionUID = 8655238544512514795L;
 
 	/**
 	 * 股票代码

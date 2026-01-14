@@ -10,11 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 落地页信息
  *
  * @author auto create
- * @since 1.0, 2025-10-09 12:34:53
+ * @since 1.0, 2026-01-13 14:23:15
  */
 public class LandingTypeDto extends AlipayObject {
 
-	private static final long serialVersionUID = 7797916854889443517L;
+	private static final long serialVersionUID = 2768819698791168245L;
+
+	/**
+	 * 聚合落地页中的图片地址，landing_type值为3的时候必填，至少一张图片地址
+	 */
+	@ApiListField("aggregated_info_list")
+	@ApiField("string")
+	private List<String> aggregatedInfoList;
 
 	/**
 	 * 活动列表
@@ -66,6 +73,13 @@ public class LandingTypeDto extends AlipayObject {
 	@ApiListField("product_videos")
 	@ApiField("video_info")
 	private List<VideoInfo> productVideos;
+
+	public List<String> getAggregatedInfoList() {
+		return this.aggregatedInfoList;
+	}
+	public void setAggregatedInfoList(List<String> aggregatedInfoList) {
+		this.aggregatedInfoList = aggregatedInfoList;
+	}
 
 	public List<LandingActDto> getLandingAct() {
 		return this.landingAct;

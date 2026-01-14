@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOfflineProviderCoilWorkreporturlQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2889396371532353122L;
+	private static final long serialVersionUID = 1214146558871642873L;
 
 	/** 
 	 * 报表文件对应的日期，值同请求传参中的report_date字段

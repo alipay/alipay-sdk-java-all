@@ -1,26 +1,25 @@
 package com.alipay.api.request;
 
-import com.alipay.api.domain.AlipaySocialBaseChatSendModel;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
-import com.alipay.api.response.AlipaySocialBaseChatSendResponse;
+import com.alipay.api.response.AlipayEbppIndustryCareertrainingCoursePublishResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: alipay.social.base.chat.send request
+ * ALIPAY API: alipay.ebpp.industry.careertraining.course.publish request
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 19:33:10
+ * @since 1.0, 2026-01-14 10:47:43
  */
-public class AlipaySocialBaseChatSendRequest implements AlipayRequest<AlipaySocialBaseChatSendResponse> {
+public class AlipayEbppIndustryCareertrainingCoursePublishRequest implements AlipayRequest<AlipayEbppIndustryCareertrainingCoursePublishResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
 
 	/** 
-	* 发送分享消息
+	* 课程在行业征地投放与撤销投放
 	 */
 	private String bizContent;
 
@@ -87,7 +86,7 @@ public class AlipaySocialBaseChatSendRequest implements AlipayRequest<AlipaySoci
 	}
 
 	public String getApiMethodName() {
-		return "alipay.social.base.chat.send";
+		return "alipay.ebpp.industry.careertraining.course.publish";
 	}
 
 	public Map<String, String> getTextParams() {		
@@ -106,8 +105,8 @@ public class AlipaySocialBaseChatSendRequest implements AlipayRequest<AlipaySoci
 		this.udfParams.put(key, value);
 	}
 
-	public Class<AlipaySocialBaseChatSendResponse> getResponseClass() {
-		return AlipaySocialBaseChatSendResponse.class;
+	public Class<AlipayEbppIndustryCareertrainingCoursePublishResponse> getResponseClass() {
+		return AlipayEbppIndustryCareertrainingCoursePublishResponse.class;
 	}
 	
 

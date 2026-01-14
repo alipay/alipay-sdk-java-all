@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenSearchboxDowngradeSaveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3349299851924986269L;
+	private static final long serialVersionUID = 1467834316866742149L;
 
 	
 

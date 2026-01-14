@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营销对话
  *
  * @author auto create
- * @since 1.0, 2026-01-12 11:22:43
+ * @since 1.0, 2026-01-14 15:02:41
  */
 public class AlipayIservicePromotioncoreChatCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7729478169165723256L;
+	private static final long serialVersionUID = 1485127642186119347L;
 
 	/**
 	 * 渠道
@@ -36,6 +36,12 @@ public class AlipayIservicePromotioncoreChatCreateModel extends AlipayObject {
 	 */
 	@ApiField("message_info")
 	private String messageInfo;
+
+	/**
+	 * 返回类型
+	 */
+	@ApiField("return_type")
+	private String returnType;
 
 	/**
 	 * 场景
@@ -82,6 +88,13 @@ public class AlipayIservicePromotioncoreChatCreateModel extends AlipayObject {
 	}
 	public void setMessageInfo(String messageInfo) {
 		this.messageInfo = messageInfo;
+	}
+
+	public String getReturnType() {
+		return this.returnType;
+	}
+	public void setReturnType(String returnType) {
+		this.returnType = returnType;
 	}
 
 	public String getScene() {

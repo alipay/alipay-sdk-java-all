@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiServindustryReservationPayshopIdentifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8195793286353751466L;
+	private static final long serialVersionUID = 7687979667961816956L;
 
 	/**
 	 * 店铺id

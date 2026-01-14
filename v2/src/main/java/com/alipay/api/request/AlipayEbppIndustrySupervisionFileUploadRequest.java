@@ -1,41 +1,66 @@
 package com.alipay.api.request;
 
-import com.alipay.api.domain.MybankCreditLoanapplyFinleaseSignQueryModel;
+import java.util.HashMap;
 import java.util.Map;
 
-import com.alipay.api.AlipayRequest;
+import com.alipay.api.FileItem;
+import com.alipay.api.AlipayUploadRequest;
 import com.alipay.api.internal.util.AlipayHashMap;
-import com.alipay.api.response.MybankCreditLoanapplyFinleaseSignQueryResponse;
+import com.alipay.api.response.AlipayEbppIndustrySupervisionFileUploadResponse;
 import com.alipay.api.AlipayObject;
 
 /**
- * ALIPAY API: mybank.credit.loanapply.finlease.sign.query request
+ * ALIPAY API: alipay.ebpp.industry.supervision.file.upload request
  * 
  * @author auto create
- * @since 1.0, 2025-08-08 10:07:37
+ * @since 1.0, 2026-01-12 20:27:42
  */
-public class MybankCreditLoanapplyFinleaseSignQueryRequest implements AlipayRequest<MybankCreditLoanapplyFinleaseSignQueryResponse> {
+public class AlipayEbppIndustrySupervisionFileUploadRequest implements AlipayUploadRequest<AlipayEbppIndustrySupervisionFileUploadResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
 
 	/** 
-	* 3c租赁网商委托代扣签约结果查询
+	* 业务场景
 	 */
-	private String bizContent;
+	private String bizScene;
 
-	public void setBizContent(String bizContent) {
-		this.bizContent = bizContent;
+	/** 
+	* 上传文件二进制流
+	 */
+	private FileItem fileContent;
+
+	/** 
+	* 关联的业务ID，本次取 out_flow_id 划拨外部流水号
+	 */
+	private String outBizId;
+
+	public void setBizScene(String bizScene) {
+		this.bizScene = bizScene;
 	}
-	public String getBizContent() {
-		return this.bizContent;
+	public String getBizScene() {
+		return this.bizScene;
+	}
+
+	public void setFileContent(FileItem fileContent) {
+		this.fileContent = fileContent;
+	}
+	public FileItem getFileContent() {
+		return this.fileContent;
+	}
+
+	public void setOutBizId(String outBizId) {
+		this.outBizId = outBizId;
+	}
+	public String getOutBizId() {
+		return this.outBizId;
 	}
 	private String terminalType;
-	private String terminalInfo;	
+	private String terminalInfo;
 	private String prodCode;
 	private String notifyUrl;
 	private String returnUrl;
-	private boolean needEncrypt=false;
+    private boolean needEncrypt=false;
 	private AlipayObject bizModel=null;
 
 	public String getNotifyUrl() {
@@ -57,7 +82,6 @@ public class MybankCreditLoanapplyFinleaseSignQueryRequest implements AlipayRequ
 	public String getApiVersion() {
 		return this.apiVersion;
 	}
-
 	public void setApiVersion(String apiVersion) {
 		this.apiVersion = apiVersion;
 	}
@@ -65,7 +89,7 @@ public class MybankCreditLoanapplyFinleaseSignQueryRequest implements AlipayRequ
 	public void setTerminalType(String terminalType){
 		this.terminalType=terminalType;
 	}
-
+	
     public String getTerminalType(){
     	return this.terminalType;
     }
@@ -76,29 +100,30 @@ public class MybankCreditLoanapplyFinleaseSignQueryRequest implements AlipayRequ
 
     public String getTerminalInfo(){
     	return this.terminalInfo;
-    }	
-
-	public void setProdCode(String prodCode) {
-		this.prodCode=prodCode;
-	}
-
+    }
+	
 	public String getProdCode() {
 		return this.prodCode; 
 	}
-
+	
+	public void setProdCode(String prodCode) {
+		this.prodCode=prodCode;
+	}
+    
 	public String getApiMethodName() {
-		return "mybank.credit.loanapply.finlease.sign.query";
+		return "alipay.ebpp.industry.supervision.file.upload";
 	}
 
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
-		txtParams.put("biz_content", this.bizContent);
+		txtParams.put("biz_scene", this.bizScene);
+		txtParams.put("out_biz_id", this.outBizId);
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}
 		return txtParams;
 	}
-
+	
 	public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
@@ -106,12 +131,17 @@ public class MybankCreditLoanapplyFinleaseSignQueryRequest implements AlipayRequ
 		this.udfParams.put(key, value);
 	}
 
-	public Class<MybankCreditLoanapplyFinleaseSignQueryResponse> getResponseClass() {
-		return MybankCreditLoanapplyFinleaseSignQueryResponse.class;
+	public Map<String, FileItem> getFileParams() {
+		Map<String, FileItem> params = new HashMap<String, FileItem>();
+		params.put("file_content", this.fileContent);
+		return params;
+	}
+
+	public Class<AlipayEbppIndustrySupervisionFileUploadResponse> getResponseClass() {
+		return AlipayEbppIndustrySupervisionFileUploadResponse.class;
 	}
 	
-
-    public boolean isNeedEncrypt() {
+	 public boolean isNeedEncrypt() {
     
       return this.needEncrypt;
     }

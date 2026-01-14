@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-12-22 15:46:39
+ * @since 1.0, 2026-01-14 10:57:43
  */
 public class ExamVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4248184749472663234L;
+	private static final long serialVersionUID = 7853566388417593145L;
+
+	/**
+	 * 行业审核状态
+	 */
+	@ApiField("audit_status")
+	private String auditStatus;
 
 	/**
 	 * null
@@ -81,6 +87,12 @@ AVAILABLE("可售卖")
 	@ApiListField("head_image_list")
 	@ApiField("string")
 	private List<String> headImageList;
+
+	/**
+	 * 行业展示状态
+	 */
+	@ApiField("industry_show_status")
+	private String industryShowStatus;
 
 	/**
 	 * 考试定价最大值,单位:分
@@ -152,6 +164,13 @@ maxPrice和minPrice都填写时, minPrice<=maxPrice
 	@ApiField("service_url")
 	private String serviceUrl;
 
+	public String getAuditStatus() {
+		return this.auditStatus;
+	}
+	public void setAuditStatus(String auditStatus) {
+		this.auditStatus = auditStatus;
+	}
+
 	public List<String> getCertificateCodeList() {
 		return this.certificateCodeList;
 	}
@@ -220,6 +239,13 @@ maxPrice和minPrice都填写时, minPrice<=maxPrice
 	}
 	public void setHeadImageList(List<String> headImageList) {
 		this.headImageList = headImageList;
+	}
+
+	public String getIndustryShowStatus() {
+		return this.industryShowStatus;
+	}
+	public void setIndustryShowStatus(String industryShowStatus) {
+		this.industryShowStatus = industryShowStatus;
 	}
 
 	public Long getMaxPrice() {

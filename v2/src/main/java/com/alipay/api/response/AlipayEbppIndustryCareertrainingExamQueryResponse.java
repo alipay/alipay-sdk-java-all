@@ -11,11 +11,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.careertraining.exam.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-22 15:34:24
+ * @since 1.0, 2026-01-14 10:57:43
  */
 public class AlipayEbppIndustryCareertrainingExamQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3433359458555391238L;
+	private static final long serialVersionUID = 6783339537643942538L;
+
+	/** 
+	 * 行业审核状态
+	 */
+	@ApiField("audit_status")
+	private String auditStatus;
 
 	/** 
 	 * null
@@ -80,6 +86,12 @@ public class AlipayEbppIndustryCareertrainingExamQueryResponse extends AlipayRes
 	@ApiListField("head_image_list")
 	@ApiField("string")
 	private List<String> headImageList;
+
+	/** 
+	 * 行业展示状态
+	 */
+	@ApiField("industry_show_status")
+	private String industryShowStatus;
 
 	/** 
 	 * 考试定价(最大值)，单位分
@@ -150,6 +162,13 @@ maxPrice和minPrice都填写时, minPrice<=maxPrice
 	@ApiField("service_url")
 	private String serviceUrl;
 
+	public void setAuditStatus(String auditStatus) {
+		this.auditStatus = auditStatus;
+	}
+	public String getAuditStatus( ) {
+		return this.auditStatus;
+	}
+
 	public void setCertificateCodeList(List<String> certificateCodeList) {
 		this.certificateCodeList = certificateCodeList;
 	}
@@ -218,6 +237,13 @@ maxPrice和minPrice都填写时, minPrice<=maxPrice
 	}
 	public List<String> getHeadImageList( ) {
 		return this.headImageList;
+	}
+
+	public void setIndustryShowStatus(String industryShowStatus) {
+		this.industryShowStatus = industryShowStatus;
+	}
+	public String getIndustryShowStatus( ) {
+		return this.industryShowStatus;
 	}
 
 	public void setMaxPrice(Long maxPrice) {

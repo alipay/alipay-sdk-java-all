@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.careertraining.course.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2025-12-22 15:46:27
+ * @since 1.0, 2026-01-14 10:57:43
  */
 public class AlipayEbppIndustryCareertrainingCourseBatchqueryRequest implements AlipayRequest<AlipayEbppIndustryCareertrainingCourseBatchqueryResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOfflineMaterialImageUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4329253454591722759L;
+	private static final long serialVersionUID = 3574545757543754162L;
 
 	/** 
 	 * 图片/视频在商家中心的唯一标识

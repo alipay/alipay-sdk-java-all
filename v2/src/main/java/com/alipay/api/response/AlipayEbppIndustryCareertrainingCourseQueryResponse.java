@@ -13,11 +13,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.careertraining.course.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-22 15:46:25
+ * @since 1.0, 2026-01-14 10:57:43
  */
 public class AlipayEbppIndustryCareertrainingCourseQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2525548119638295466L;
+	private static final long serialVersionUID = 5683231935772431491L;
+
+	/** 
+	 * 行业审核状态
+	 */
+	@ApiField("audit_status")
+	private String auditStatus;
 
 	/** 
 	 * 支付宝商品类目
@@ -151,6 +157,12 @@ AUDIT_REJECT("审核驳回")
 	private List<String> headImageList;
 
 	/** 
+	 * 行业展示状态
+	 */
+	@ApiField("industry_show_status")
+	private String industryShowStatus;
+
+	/** 
 	 * 课程提交机构编码
 	 */
 	@ApiField("org_code")
@@ -192,6 +204,13 @@ AUDIT_REJECT("审核驳回")
 	@ApiListField("teacher_info")
 	@ApiField("teacher_v_o")
 	private List<TeacherVO> teacherInfo;
+
+	public void setAuditStatus(String auditStatus) {
+		this.auditStatus = auditStatus;
+	}
+	public String getAuditStatus( ) {
+		return this.auditStatus;
+	}
 
 	public void setCategoryId(String categoryId) {
 		this.categoryId = categoryId;
@@ -331,6 +350,13 @@ AUDIT_REJECT("审核驳回")
 	}
 	public List<String> getHeadImageList( ) {
 		return this.headImageList;
+	}
+
+	public void setIndustryShowStatus(String industryShowStatus) {
+		this.industryShowStatus = industryShowStatus;
+	}
+	public String getIndustryShowStatus( ) {
+		return this.industryShowStatus;
 	}
 
 	public void setOrgCode(String orgCode) {

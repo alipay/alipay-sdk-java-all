@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外跳服务商接口埋点通知
  *
  * @author auto create
- * @since 1.0, 2025-10-16 16:42:43
+ * @since 1.0, 2026-01-14 14:40:42
  */
 public class AlipayCommerceMedicalRegisterBurrypointNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8756422463517773546L;
+	private static final long serialVersionUID = 2873468781828917317L;
 
 	/**
 	 * 支付宝用户ID

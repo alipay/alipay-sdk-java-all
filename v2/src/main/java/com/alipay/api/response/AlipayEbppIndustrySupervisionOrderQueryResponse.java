@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.supervision.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-26 11:59:15
+ * @since 1.0, 2026-01-12 20:42:42
  */
 public class AlipayEbppIndustrySupervisionOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7431691197556822719L;
+	private static final long serialVersionUID = 8182383853621398878L;
 
 	/** 
 	 * 冻资单地址
@@ -82,6 +82,12 @@ public class AlipayEbppIndustrySupervisionOrderQueryResponse extends AlipayRespo
 	 */
 	@ApiField("transfer_out_amount")
 	private String transferOutAmount;
+
+	/** 
+	 * 订单解冻金额（整数,单位：分）
+	 */
+	@ApiField("un_frozen_amount")
+	private String unFrozenAmount;
 
 	/** 
 	 * 待缴金额（整数，单位：分）
@@ -164,6 +170,13 @@ public class AlipayEbppIndustrySupervisionOrderQueryResponse extends AlipayRespo
 	}
 	public String getTransferOutAmount( ) {
 		return this.transferOutAmount;
+	}
+
+	public void setUnFrozenAmount(String unFrozenAmount) {
+		this.unFrozenAmount = unFrozenAmount;
+	}
+	public String getUnFrozenAmount( ) {
+		return this.unFrozenAmount;
 	}
 
 	public void setUnpaidAmount(String unpaidAmount) {

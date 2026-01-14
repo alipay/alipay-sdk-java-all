@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 单条添加线圈数据
  *
  * @author auto create
- * @since 1.0, 2025-09-26 11:03:42
+ * @since 1.0, 2026-01-12 17:11:23
  */
 public class AlipayOpenSpNcoilopenTempAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7585319421829655646L;
+	private static final long serialVersionUID = 1573533695348633785L;
 
 	/**
 	 * 地址信息
@@ -76,6 +76,12 @@ public class AlipayOpenSpNcoilopenTempAddModel extends AlipayObject {
 	 */
 	@ApiField("reference_id")
 	private String referenceId;
+
+	/**
+	 * 业务自定义扩展信息
+	 */
+	@ApiField("temp_business_ext_info")
+	private TempBusinessExtInfo tempBusinessExtInfo;
 
 	public NcoilopenAddressInfo getAddressInfoMap() {
 		return this.addressInfoMap;
@@ -145,6 +151,13 @@ public class AlipayOpenSpNcoilopenTempAddModel extends AlipayObject {
 	}
 	public void setReferenceId(String referenceId) {
 		this.referenceId = referenceId;
+	}
+
+	public TempBusinessExtInfo getTempBusinessExtInfo() {
+		return this.tempBusinessExtInfo;
+	}
+	public void setTempBusinessExtInfo(TempBusinessExtInfo tempBusinessExtInfo) {
+		this.tempBusinessExtInfo = tempBusinessExtInfo;
 	}
 
 }
