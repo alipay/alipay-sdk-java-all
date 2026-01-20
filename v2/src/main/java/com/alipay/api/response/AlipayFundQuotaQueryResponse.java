@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundQuotaQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7458738782868514972L;
+	private static final long serialVersionUID = 2653724955819845689L;
 
 	/** 
 	 * 商转新额度单日剩余额度，单位为元，精确到小数点后两位；当product_code为SINGLE_TRANSFER_NO_PWD,biz_scene为MER_TRANS_TO_ACC 或 biz_scene为MER_TRANS_TO_CARD，该值返回

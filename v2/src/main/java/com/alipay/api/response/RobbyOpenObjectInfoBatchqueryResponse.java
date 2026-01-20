@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class RobbyOpenObjectInfoBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7143369978589513237L;
+	private static final long serialVersionUID = 1134912916567485186L;
 
 	/** 
 	 * null

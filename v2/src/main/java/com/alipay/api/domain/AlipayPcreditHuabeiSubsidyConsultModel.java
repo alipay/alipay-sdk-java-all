@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 通用分期贴息咨询
  *
  * @author auto create
- * @since 1.0, 2025-12-25 10:19:59
+ * @since 1.0, 2026-01-19 14:14:20
  */
 public class AlipayPcreditHuabeiSubsidyConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5524859362385989226L;
+	private static final long serialVersionUID = 3495495779451529866L;
 
 	/**
 	 * 贴息咨询请求参数

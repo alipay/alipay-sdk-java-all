@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VoucherInfoDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5695536427389591586L;
+	private static final long serialVersionUID = 6827589199374642448L;
 
 	/**
 	 * ISTORE拿铁满50减10券

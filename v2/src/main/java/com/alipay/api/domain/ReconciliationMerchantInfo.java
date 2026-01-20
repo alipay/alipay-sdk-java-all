@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 一键和解项目中，杭州市监局按照“统一社会信用代码”为商家开通一键和解能力，统一社会信用代码可能关联多个商家账号信息（pid、类型等）
  *
  * @author auto create
- * @since 1.0, 2025-10-29 11:22:47
+ * @since 1.0, 2026-01-15 15:09:37
  */
 public class ReconciliationMerchantInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1646762478969554864L;
+	private static final long serialVersionUID = 6372324347268539872L;
 
 	/**
 	 * 统一社会信用代码

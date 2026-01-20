@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class StudentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1537656342156467716L;
+	private static final long serialVersionUID = 8233319173161217292L;
 
 	/**
 	 * 学校所在行政区域编码

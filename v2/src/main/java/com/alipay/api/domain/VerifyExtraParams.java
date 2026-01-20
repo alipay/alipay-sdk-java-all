@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VerifyExtraParams extends AlipayObject {
 
-	private static final long serialVersionUID = 7338284663366688837L;
+	private static final long serialVersionUID = 2451793545595762364L;
 
 	/**
 	 * IdentifierForVendor，在iOS系统中常被用来唯一标识设备

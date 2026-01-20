@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class DatadigitalFincloudFinsaasDesignPageGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8247285439784528221L;
+	private static final long serialVersionUID = 8263173772633228616L;
 
 	/** 
 	 * 页面code

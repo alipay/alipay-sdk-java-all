@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TourOrderSyncFailureDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1292836121114361636L;
+	private static final long serialVersionUID = 8183589497291549828L;
 
 	/**
 	 * 该参数含义为描述订单同步失败的原因。当发生某些参数异常时或者系统异常时，会返回该错误信息提示。

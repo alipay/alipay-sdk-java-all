@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.provider.npassporter.material.create request
  * 
  * @author auto create
- * @since 1.0, 2025-12-31 17:50:56
+ * @since 1.0, 2026-01-15 15:37:42
  */
 public class AlipayOfflineProviderNpassporterMaterialCreateRequest implements AlipayRequest<AlipayOfflineProviderNpassporterMaterialCreateResponse> {
 

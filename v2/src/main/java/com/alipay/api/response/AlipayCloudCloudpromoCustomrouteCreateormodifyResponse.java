@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudCloudpromoCustomrouteCreateormodifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8439742288797321788L;
+	private static final long serialVersionUID = 1376863462728844312L;
 
 	/** 
 	 * 伴游卡片唯一id

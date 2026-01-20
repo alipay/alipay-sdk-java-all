@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * N核身异常提示配置
  *
  * @author auto create
- * @since 1.0, 2025-12-31 17:50:53
+ * @since 1.0, 2026-01-19 16:42:43
  */
 public class AlipayOfflineProviderNpassporterVerifyresultinfoCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5823211247914673633L;
+	private static final long serialVersionUID = 2431772828721827713L;
 
 	/**
 	 * 活动code

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用户与商家之间的协商记录
  *
  * @author auto create
- * @since 1.0, 2025-10-24 10:35:52
+ * @since 1.0, 2026-01-15 15:08:47
  */
 public class ReplyRecordResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 2522573788895379889L;
+	private static final long serialVersionUID = 8537697974244612495L;
 
 	/**
 	 * 回复内容

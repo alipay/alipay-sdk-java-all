@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RcDoctorLicenseRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 8841191893344653842L;
+	private static final long serialVersionUID = 5146943948714368289L;
 
 	/**
 	 * 医生唯一id，关联到传入方医生信息

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InvoiceRevAmountDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5725393396454881297L;
+	private static final long serialVersionUID = 6458298929865886178L;
 
 	/**
 	 * 账单号

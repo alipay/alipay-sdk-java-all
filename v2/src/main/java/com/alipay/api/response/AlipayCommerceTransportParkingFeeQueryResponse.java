@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.parking.fee.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-01-13 16:47:42
+ * @since 1.0, 2026-01-15 10:07:43
  */
 public class AlipayCommerceTransportParkingFeeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7513424458565826929L;
+	private static final long serialVersionUID = 5167831574253429485L;
 
 	/** 
 	 * 停车场收费规则图片

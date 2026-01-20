@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceLogisticsTradeEventSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8362188998491247545L;
+	private static final long serialVersionUID = 5392786452291737839L;
 
 	/**
 	 * 支付宝交易号

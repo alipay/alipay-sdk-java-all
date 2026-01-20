@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EtravelHotelSupplyRecipient extends AlipayObject {
 
-	private static final long serialVersionUID = 5353534926113422937L;
+	private static final long serialVersionUID = 6319552666496864197L;
 
 	/**
 	 * 城市，按照国家邮政规范填写即可。电子发票无需填写。

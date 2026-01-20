@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.fnc.gfcreditcontrol.riskdetectionservice.query request
  * 
  * @author auto create
- * @since 1.0, 2025-12-24 15:52:42
+ * @since 1.0, 2026-01-15 13:52:41
  */
 public class AlipayBossFncGfcreditcontrolRiskdetectionserviceQueryRequest implements AlipayRequest<AlipayBossFncGfcreditcontrolRiskdetectionserviceQueryResponse> {
 

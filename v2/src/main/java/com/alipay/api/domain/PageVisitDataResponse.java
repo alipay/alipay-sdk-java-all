@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PageVisitDataResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 2795895329162631156L;
+	private static final long serialVersionUID = 1681624332973137131L;
 
 	/**
 	 * 页面的访问次数

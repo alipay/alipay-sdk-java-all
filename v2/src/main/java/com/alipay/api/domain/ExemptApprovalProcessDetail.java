@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ExemptApprovalProcessDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 2137143394512291283L;
+	private static final long serialVersionUID = 5476472637226229943L;
 
 	/**
 	 * 豁免申请流程状态

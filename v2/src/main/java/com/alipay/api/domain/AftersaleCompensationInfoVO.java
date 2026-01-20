@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AftersaleCompensationInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6798684976773333266L;
+	private static final long serialVersionUID = 4519163976376989758L;
 
 	/**
 	 * 赔付支付外部请求号，由商家自定义，64个字符以内，仅支持字母、数字、下划线且需保证在商户端不重复。

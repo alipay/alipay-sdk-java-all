@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayBossFncGfsettleprodCollectreceiptRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4637822693544686664L;
+	private static final long serialVersionUID = 4187261358499161125L;
 
 	/**
 	 * 收款单退款申请请求

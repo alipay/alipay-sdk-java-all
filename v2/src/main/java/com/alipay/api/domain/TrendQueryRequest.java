@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TrendQueryRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 5664431199845157883L;
+	private static final long serialVersionUID = 4312341128895123248L;
 
 	/**
 	 * 时间维度的聚合会对用户去重。

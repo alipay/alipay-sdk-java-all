@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingEncodeShortlinkCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7227535843395593797L;
+	private static final long serialVersionUID = 5759935481358423962L;
 
 	/** 
 	 * 将长连接改写成短连接，改写成功后的短连接地址

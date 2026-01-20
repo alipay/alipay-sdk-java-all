@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MiniCertificateUseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1673566738736743221L;
+	private static final long serialVersionUID = 4886766718524637924L;
 
 	/**
 	 * 核销金额（元）

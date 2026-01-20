@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserJobcardApplySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5228613311783855914L;
+	private static final long serialVersionUID = 5463874562159339377L;
 
 	/**
 	 * 待同步状态的申请状态

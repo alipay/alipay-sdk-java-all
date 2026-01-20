@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁商家扣款解约
  *
  * @author auto create
- * @since 1.0, 2025-09-22 14:16:34
+ * @since 1.0, 2026-01-19 17:17:07
  */
 public class AlipayCircularAgreementUnsignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7134929984636569197L;
+	private static final long serialVersionUID = 1411191535695682798L;
 
 	/**
 	 * 绑定的收款钱包信息Id
@@ -24,6 +24,12 @@ public class AlipayCircularAgreementUnsignModel extends AlipayObject {
 	 */
 	@ApiField("bind_wallet_type")
 	private String bindWalletType;
+
+	/**
+	 * 扣款支付宝账户
+	 */
+	@ApiField("binding_alipay_logon_id")
+	private String bindingAlipayLogonId;
 
 	/**
 	 * 扣款账户所属openid
@@ -55,6 +61,13 @@ public class AlipayCircularAgreementUnsignModel extends AlipayObject {
 	}
 	public void setBindWalletType(String bindWalletType) {
 		this.bindWalletType = bindWalletType;
+	}
+
+	public String getBindingAlipayLogonId() {
+		return this.bindingAlipayLogonId;
+	}
+	public void setBindingAlipayLogonId(String bindingAlipayLogonId) {
+		this.bindingAlipayLogonId = bindingAlipayLogonId;
 	}
 
 	public String getRelationOpenid() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPcreditHuabeiFqqrcodeHbfqCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4295626472931969861L;
+	private static final long serialVersionUID = 2453116275894784924L;
 
 	/**
 	 * 用于物流派送的收件详细地址.

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 核验方案配置
  *
  * @author auto create
- * @since 1.0, 2025-12-31 17:50:56
+ * @since 1.0, 2026-01-19 16:47:43
  */
 public class VerifyConfigSolutionConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 7149162986583549493L;
+	private static final long serialVersionUID = 1242428441756174921L;
 
 	/**
 	 * 是否允许传输参数

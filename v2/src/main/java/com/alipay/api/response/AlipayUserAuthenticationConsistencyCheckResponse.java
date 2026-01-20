@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.authentication.consistency.check response.
  * 
  * @author auto create
- * @since 1.0, 2026-01-14 10:11:34
+ * @since 1.0, 2026-01-16 11:12:42
  */
 public class AlipayUserAuthenticationConsistencyCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5244241996438976274L;
+	private static final long serialVersionUID = 6275235259953623583L;
 
 	/** 
 	 * 未认证时的引导跳转链接
@@ -31,6 +31,18 @@ public class AlipayUserAuthenticationConsistencyCheckResponse extends AlipayResp
 	 */
 	@ApiField("not_certify_msg")
 	private String notCertifyMsg;
+
+	/** 
+	 * 1688场景核验不一致的错误码
+	 */
+	@ApiField("not_match_code")
+	private String notMatchCode;
+
+	/** 
+	 * 1688场景核验不一致的错误原因
+	 */
+	@ApiField("not_match_msg")
+	private String notMatchMsg;
 
 	public void setCertifyUrl(String certifyUrl) {
 		this.certifyUrl = certifyUrl;
@@ -51,6 +63,20 @@ public class AlipayUserAuthenticationConsistencyCheckResponse extends AlipayResp
 	}
 	public String getNotCertifyMsg( ) {
 		return this.notCertifyMsg;
+	}
+
+	public void setNotMatchCode(String notMatchCode) {
+		this.notMatchCode = notMatchCode;
+	}
+	public String getNotMatchCode( ) {
+		return this.notMatchCode;
+	}
+
+	public void setNotMatchMsg(String notMatchMsg) {
+		this.notMatchMsg = notMatchMsg;
+	}
+	public String getNotMatchMsg( ) {
+		return this.notMatchMsg;
 	}
 
 }

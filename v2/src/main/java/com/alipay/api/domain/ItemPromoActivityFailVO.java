@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ItemPromoActivityFailVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5674977574545613911L;
+	private static final long serialVersionUID = 7462895774291699291L;
 
 	/**
 	 * 失败原因

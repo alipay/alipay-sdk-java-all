@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BrandFailResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 4248775751416874342L;
+	private static final long serialVersionUID = 6247566611628678696L;
 
 	/**
 	 * 错误描述

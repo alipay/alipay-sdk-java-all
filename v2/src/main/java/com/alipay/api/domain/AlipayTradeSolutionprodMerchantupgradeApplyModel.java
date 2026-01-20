@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 个人用户升级申请接口
  *
  * @author auto create
- * @since 1.0, 2025-11-17 21:41:05
+ * @since 1.0, 2026-01-15 11:33:31
  */
 public class AlipayTradeSolutionprodMerchantupgradeApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3277298584747768677L;
+	private static final long serialVersionUID = 3343973164277252951L;
 
 	/**
 	 * 结果页点击完成后的跳转地址 1、跳转类型为ALIPAY_URL，back_url就做支付宝端内跳转 2、跳转类型为MERCHANT_URL，back_url就跳转到端外

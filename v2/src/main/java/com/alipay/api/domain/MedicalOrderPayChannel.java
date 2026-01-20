@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MedicalOrderPayChannel extends AlipayObject {
 
-	private static final long serialVersionUID = 7393973115884185555L;
+	private static final long serialVersionUID = 4858953752572737944L;
 
 	/**
 	 * 通过该资产支付的金额；币种：人民币；单位：元

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 售卖订单信息
  *
  * @author auto create
- * @since 1.0, 2025-10-17 17:27:44
+ * @since 1.0, 2026-01-16 11:21:55
  */
 public class CardOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8163151176566347243L;
+	private static final long serialVersionUID = 5726566853277368372L;
 
 	/**
 	 * 卡关联的最新一笔售后单编号
@@ -143,6 +143,12 @@ public class CardOrderInfo extends AlipayObject {
 	 */
 	@ApiField("gmt_expired")
 	private Date gmtExpired;
+
+	/**
+	 * 最近一次延期的延期单
+	 */
+	@ApiField("latest_expand_order_info")
+	private CardExpandOrderInfo latestExpandOrderInfo;
 
 	/**
 	 * merchant_pid
@@ -452,6 +458,13 @@ public class CardOrderInfo extends AlipayObject {
 	}
 	public void setGmtExpired(Date gmtExpired) {
 		this.gmtExpired = gmtExpired;
+	}
+
+	public CardExpandOrderInfo getLatestExpandOrderInfo() {
+		return this.latestExpandOrderInfo;
+	}
+	public void setLatestExpandOrderInfo(CardExpandOrderInfo latestExpandOrderInfo) {
+		this.latestExpandOrderInfo = latestExpandOrderInfo;
 	}
 
 	public String getMerchantPid() {

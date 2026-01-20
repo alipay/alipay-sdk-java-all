@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * N核身异常提示查询
  *
  * @author auto create
- * @since 1.0, 2025-12-31 17:50:54
+ * @since 1.0, 2026-01-19 16:42:43
  */
 public class AlipayOfflineProviderNpassporterVerifyresultinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6875675143392331523L;
+	private static final long serialVersionUID = 5556987868154256666L;
 
 	/**
 	 * 活动code

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RecycleRoyaltyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8863141333384858291L;
+	private static final long serialVersionUID = 1398897467294189729L;
 
 	/**
 	 * 金额单位元，支持小数点后2位，必须大于0

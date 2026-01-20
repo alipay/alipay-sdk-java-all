@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.promotioncore.chat.create response.
  * 
  * @author auto create
- * @since 1.0, 2026-01-14 15:02:41
+ * @since 1.0, 2026-01-19 12:02:42
  */
 public class AlipayIservicePromotioncoreChatCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7623236912536685363L;
+	private static final long serialVersionUID = 3412311213253258849L;
 
 	/** 
 	 * 消息内容

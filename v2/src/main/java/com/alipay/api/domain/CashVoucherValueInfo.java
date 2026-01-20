@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CashVoucherValueInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4157487496482228756L;
+	private static final long serialVersionUID = 7455147812191339794L;
 
 	/**
 	 * 代金券使用门槛金额。 比如满25元减5元代金券，门槛金额指的就是25元。

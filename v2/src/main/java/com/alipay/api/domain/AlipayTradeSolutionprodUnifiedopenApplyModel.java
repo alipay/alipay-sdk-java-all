@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * C2C个人收款方聚合开通订单创建接口
  *
  * @author auto create
- * @since 1.0, 2025-11-05 17:00:06
+ * @since 1.0, 2026-01-15 10:41:53
  */
 public class AlipayTradeSolutionprodUnifiedopenApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2133393431826529587L;
+	private static final long serialVersionUID = 8314614259744575637L;
 
 	/**
 	 * 结果页点击完成后的跳转地址
@@ -70,6 +70,27 @@ public class AlipayTradeSolutionprodUnifiedopenApplyModel extends AlipayObject {
 	@ApiField("solution_code")
 	private String solutionCode;
 
+	/**
+	 * 指定开通用户支付宝登录号
+需要指定开通用户时，与target_user_id、target_user_open_id三选一
+	 */
+	@ApiField("target_logon_id")
+	private String targetLogonId;
+
+	/**
+	 * 指定开通用户支付宝唯一用户号
+需要指定开通用户时，与target_logon_id、target_user_open_id三选一
+	 */
+	@ApiField("target_user_id")
+	private String targetUserId;
+
+	/**
+	 * 指定开通用户支付宝openId。为了标记支付宝用户在应用下的唯一标识
+需要指定开通用户时，与target_user_id、target_logon_id三选一
+	 */
+	@ApiField("target_user_open_id")
+	private String targetUserOpenId;
+
 	public String getBackUrl() {
 		return this.backUrl;
 	}
@@ -124,6 +145,27 @@ public class AlipayTradeSolutionprodUnifiedopenApplyModel extends AlipayObject {
 	}
 	public void setSolutionCode(String solutionCode) {
 		this.solutionCode = solutionCode;
+	}
+
+	public String getTargetLogonId() {
+		return this.targetLogonId;
+	}
+	public void setTargetLogonId(String targetLogonId) {
+		this.targetLogonId = targetLogonId;
+	}
+
+	public String getTargetUserId() {
+		return this.targetUserId;
+	}
+	public void setTargetUserId(String targetUserId) {
+		this.targetUserId = targetUserId;
+	}
+
+	public String getTargetUserOpenId() {
+		return this.targetUserOpenId;
+	}
+	public void setTargetUserOpenId(String targetUserOpenId) {
+		this.targetUserOpenId = targetUserOpenId;
 	}
 
 }

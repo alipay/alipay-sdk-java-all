@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.huabei.subsidy.consult response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-25 10:22:42
+ * @since 1.0, 2026-01-19 14:17:42
  */
 public class AlipayPcreditHuabeiSubsidyConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6883488295276471985L;
+	private static final long serialVersionUID = 2187665825132835229L;
 
 	/** 
 	 * 贴息咨询响应结果

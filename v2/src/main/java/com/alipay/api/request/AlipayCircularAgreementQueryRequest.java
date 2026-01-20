@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.circular.agreement.query request
  * 
  * @author auto create
- * @since 1.0, 2026-01-08 16:49:56
+ * @since 1.0, 2026-01-19 17:22:43
  */
 public class AlipayCircularAgreementQueryRequest implements AlipayRequest<AlipayCircularAgreementQueryResponse> {
 

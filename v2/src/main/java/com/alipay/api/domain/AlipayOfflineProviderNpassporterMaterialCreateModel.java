@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * N核身物料绑定
  *
  * @author auto create
- * @since 1.0, 2025-12-31 17:50:56
+ * @since 1.0, 2026-01-15 15:37:42
  */
 public class AlipayOfflineProviderNpassporterMaterialCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8318473132128383362L;
+	private static final long serialVersionUID = 7219541469489537912L;
 
 	/**
 	 * 活动code
