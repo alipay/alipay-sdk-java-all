@@ -4,6 +4,7 @@
 package com.alipay.api.msg;
 
 import com.alipay.api.AlipayApiException;
+import com.alipay.api.AlipayConfig;
 import com.alipay.api.AlipayConstants;
 import com.alipay.api.AlipayRequest;
 import com.alipay.api.internal.util.AlipayLogger;
@@ -361,6 +362,33 @@ public class AlipayMsgClient {
         this.signType = signType;
         this.appPrivateKey = appPrivateKey;
         this.alipayPublicKey = alipayPublicKey;
+    }
+    
+    public void setSecurityConfig(AlipayConfig alipayConfig){
+        this.signType = alipayConfig.getSignType();
+        this.charset = alipayConfig.getCharset();
+        this.appPrivateKey = alipayConfig.getPrivateKey();
+        if(!StringUtils.isEmpty(alipayConfig.getAppCertPath())){
+            this.appCertSN = AntCertificationUtil.getCertSN(AntCertificationUtil.getCertFromPath(alipayConfig.getAppCertPath()));
+        }else if(!StringUtils.isEmpty(alipayConfig.getAppCertContent())){
+            this.appCertSN = AntCertificationUtil.getCertSN(AntCertificationUtil.getCertFromContent(alipayConfig.getAppCertContent()));
+        }     
+        if(!StringUtils.isEmpty(alipayConfig.getAlipayPublicCertPath())){
+            this.alipayPublicKey = AntCertificationUtil.getAlipayPublicKey(alipayConfig.getAlipayPublicCertPath());
+            this.alipayCertSN = AntCertificationUtil.getCertSN(AntCertificationUtil.getCertFromPath(alipayConfig.getAlipayPublicCertPath()));
+        }else if(!StringUtils.isEmpty(alipayConfig.getAlipayPublicCertContent())){
+            this.alipayPublicKey = alipayConfig.getAlipayPublicCertContent();
+            this.alipayCertSN = AntCertificationUtil.getCertSN(AntCertificationUtil.getCertFromContent(alipayConfig.getAlipayPublicCertContent()));
+        }else{
+            this.alipayPublicKey = alipayConfig.getAlipayPublicKey();
+        }
+        if (!StringUtils.isEmpty(alipayConfig.getRootCertContent())){
+            this.rootCertContent = alipayConfig.getRootCertContent();
+            this.alipayRootCertSN = AntCertificationUtil.getRootCertSN(this.rootCertContent, signType);
+        }else if(!StringUtils.isEmpty(alipayConfig.getRootCertPath())){
+            this.rootCertContent = readFileToString(alipayConfig.getRootCertPath());
+            this.alipayRootCertSN = AntCertificationUtil.getRootCertSN(this.rootCertContent, signType);
+        }
     }
 
     //设置证书参数
