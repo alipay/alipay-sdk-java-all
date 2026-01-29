@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EduDepartmentNode extends AlipayObject {
 
-	private static final long serialVersionUID = 1442471541531371542L;
+	private static final long serialVersionUID = 8413639582332118552L;
 
 	/**
 	 * 人员所属的部门、学院或班级等组织节点外部唯一标识

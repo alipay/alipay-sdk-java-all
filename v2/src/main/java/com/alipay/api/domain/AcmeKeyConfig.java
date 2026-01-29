@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AcmeKeyConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 6174878961975637912L;
+	private static final long serialVersionUID = 5878664527984439948L;
 
 	/**
 	 * key详情

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户申请单查询
  *
  * @author auto create
- * @since 1.0, 2026-01-04 11:22:40
+ * @since 1.0, 2026-01-23 14:48:05
  */
 public class AntMerchantExpandOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3499196388273264833L;
+	private static final long serialVersionUID = 4333994753137329716L;
 
 	/**
 	 * 业务来源
@@ -21,7 +21,7 @@ public class AntMerchantExpandOrderQueryModel extends AlipayObject {
 	private String bizSource;
 
 	/**
-	 * 申请单 id。 1.蚂蚁门店管理场景：通过 <a href="https://opendocs.alipay.com/open/05afbc4a_ant.merchant.expand.shop.create?scene=common&pathHash=bf443b73"> ant.merchant.expand.shop.create</a>(蚂蚁店铺创建)接口进件时返回的order_id。 2.直付通二级商户进件场景：通过<a href="https://opendocs.alipay.com/open/028xr0?pathHash=c9ca6d68">ant.merchant.expand.indirect.zft.create</a>(直付通二级商户创建)接口进件时返回的order_id。 
+	 * 申请单 id。 1.蚂蚁门店管理场景：通过 <a href="https://opendocs.alipay.com/open/05afbc4a_ant.merchant.expand.shop.create?scene=common&pathHash=bf443b73"> ant.merchant.expand.shop.create</a>(蚂蚁门店创建)接口进件时返回的order_id。 2.直付通二级商户进件场景：通过<a href="https://opendocs.alipay.com/open/028xr0?pathHash=c9ca6d68">ant.merchant.expand.indirect.zft.create</a>(直付通二级商户创建)接口进件时返回的order_id。
 	 */
 	@ApiField("order_id")
 	private String orderId;

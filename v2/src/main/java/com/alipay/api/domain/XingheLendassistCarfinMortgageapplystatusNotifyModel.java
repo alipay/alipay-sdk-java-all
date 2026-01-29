@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 抵押状态通知来报
  *
  * @author auto create
- * @since 1.0, 2025-11-19 10:42:36
+ * @since 1.0, 2026-01-26 11:14:25
  */
 public class XingheLendassistCarfinMortgageapplystatusNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7266717625636457983L;
+	private static final long serialVersionUID = 2286724718967685445L;
 
 	/**
 	 * 交科所的抵押订单序号
@@ -46,6 +46,12 @@ public class XingheLendassistCarfinMortgageapplystatusNotifyModel extends Alipay
 	@ApiListField("proxy_invalid_file_list")
 	@ApiField("string")
 	private List<String> proxyInvalidFileList;
+
+	/**
+	 * 绿本收件人地址
+	 */
+	@ApiField("receiver_info")
+	private XhExpressPostInfo receiverInfo;
 
 	/**
 	 * 拒绝原因
@@ -106,6 +112,13 @@ public class XingheLendassistCarfinMortgageapplystatusNotifyModel extends Alipay
 	}
 	public void setProxyInvalidFileList(List<String> proxyInvalidFileList) {
 		this.proxyInvalidFileList = proxyInvalidFileList;
+	}
+
+	public XhExpressPostInfo getReceiverInfo() {
+		return this.receiverInfo;
+	}
+	public void setReceiverInfo(XhExpressPostInfo receiverInfo) {
+		this.receiverInfo = receiverInfo;
 	}
 
 	public String getRefuseMsg() {

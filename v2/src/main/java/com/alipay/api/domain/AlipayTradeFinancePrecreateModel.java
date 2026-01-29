@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 快收服务预下单
  *
  * @author auto create
- * @since 1.0, 2025-12-02 20:55:43
+ * @since 1.0, 2026-01-28 11:06:33
  */
 public class AlipayTradeFinancePrecreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5154833578913563135L;
+	private static final long serialVersionUID = 1447431497638482546L;
 
 	/**
 	 * 卖家账户，本次需要和拓展中卖家信息里面的内容一致
@@ -27,6 +27,7 @@ alipayAccountType为loginName时，传递支付宝登录号，如邮箱地址；
 	 * 卖家账户类型
 支付宝账号对应的支付宝唯一用户号: userId
 支付宝登录号: loginName
+（当投保道具安全险时必传）
 	 */
 	@ApiField("alipay_account_type")
 	private String alipayAccountType;

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AuthorizeLifeApp extends AlipayObject {
 
-	private static final long serialVersionUID = 1877739466253185377L;
+	private static final long serialVersionUID = 7894568329345843544L;
 
 	/**
 	 * 在支付宝平台注册的生活号应用对应的应用id

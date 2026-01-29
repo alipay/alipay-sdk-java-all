@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 渠道商家直接开通会员
  *
  * @author auto create
- * @since 1.0, 2025-11-04 09:50:44
+ * @since 1.0, 2026-01-22 16:18:47
  */
 public class AlipayCommerceMedicalExchangeRedirectVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4692421392239589912L;
+	private static final long serialVersionUID = 8319248951363253837L;
 
 	/**
 	 * 会员卡权益ID
@@ -24,6 +24,12 @@ public class AlipayCommerceMedicalExchangeRedirectVerifyModel extends AlipayObje
 	 */
 	@ApiField("biz_no")
 	private String bizNo;
+
+	/**
+	 * 荣耀
+	 */
+	@ApiField("channel")
+	private String channel;
 
 	/**
 	 * 兑换码
@@ -79,6 +85,13 @@ public class AlipayCommerceMedicalExchangeRedirectVerifyModel extends AlipayObje
 	}
 	public void setBizNo(String bizNo) {
 		this.bizNo = bizNo;
+	}
+
+	public String getChannel() {
+		return this.channel;
+	}
+	public void setChannel(String channel) {
+		this.channel = channel;
 	}
 
 	public String getExchangeCode() {

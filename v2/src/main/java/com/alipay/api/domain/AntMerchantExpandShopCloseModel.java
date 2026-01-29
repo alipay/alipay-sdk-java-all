@@ -10,15 +10,15 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 蚂蚁店铺关闭
  *
  * @author auto create
- * @since 1.0, 2026-01-04 20:00:41
+ * @since 1.0, 2026-01-23 14:47:56
  */
 public class AntMerchantExpandShopCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3172616867242829497L;
+	private static final long serialVersionUID = 8479599289358783316L;
 
 	/**
 	 * 扩展信息列表。key值需要向对应行业的bd进行申请。
-如果是针对团购门店的操作，该值必传。
+如果是针对神券团购门店的操作，该值必传，且无需向bd申请。
 	 */
 	@ApiListField("ext_infos")
 	@ApiField("shop_ext_info")
@@ -31,7 +31,7 @@ public class AntMerchantExpandShopCloseModel extends AlipayObject {
 	private String ipRoleId;
 
 	/**
-	 * 支付宝侧蚂蚁店铺 id。传入本参数后可不填 store_id 及 ip_role_id。
+	 * 支付宝侧蚂蚁门店 id。传入本参数后可不填 store_id 及 ip_role_id。
 	 */
 	@ApiField("shop_id")
 	private String shopId;

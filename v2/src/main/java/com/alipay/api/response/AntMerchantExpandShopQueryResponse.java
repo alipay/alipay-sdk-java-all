@@ -19,11 +19,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.shop.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-01-04 20:02:42
+ * @since 1.0, 2026-01-23 14:52:42
  */
 public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8432877799962891168L;
+	private static final long serialVersionUID = 2729221389756719956L;
 
 	/** 
 	 * 门店地址库 ID，按照一定的平台规则识别出的线下真实存在、真实经营的蚂蚁门店地址库 ID，将作用于服务商的返佣激励、商品/券等权益的公域分发。如平台未返回alipay_poiid，请在确认门店信息真实有效后，稍后再进行查询。
@@ -44,7 +44,7 @@ public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 	private AddressInfo businessAddress;
 
 	/** 
-	 * 店铺经营时间。
+	 * 门店经营时间。
 	 */
 	@ApiListField("business_time")
 	@ApiField("shop_business_time")
@@ -88,13 +88,13 @@ public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 	private List<ContactInfo> contactInfos;
 
 	/** 
-	 * 店铺联系手机
+	 * 门店联系手机
 	 */
 	@ApiField("contact_mobile")
 	private String contactMobile;
 
 	/** 
-	 * 店铺的联系固话
+	 * 门店的联系固话
 	 */
 	@ApiField("contact_phone")
 	private String contactPhone;
@@ -190,13 +190,13 @@ public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 	private String settleAlipayLogonId;
 
 	/** 
-	 * 店铺类目，取值参见文件中的三级门店类目<a herf="https://mif-pub.alipayobjects.com/ShopCategory.xlsx"></a>
+	 * 门店类目，取值参见文件中的三级门店类目<a herf="https://mif-pub.alipayobjects.com/ShopCategory.xlsx"></a>
 	 */
 	@ApiField("shop_category")
 	private String shopCategory;
 
 	/** 
-	 * 支付宝侧蚂蚁店铺 id
+	 * 支付宝侧蚂蚁门店 id
 	 */
 	@ApiField("shop_id")
 	private String shopId;
@@ -209,15 +209,16 @@ public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 
 	/** 
 	 * 主要针对医疗行业门店主体类型进件使用，不同门店认证主体需要相应的主体资质证书。 
-企业营业执照: ENTERPRISE; 
-事业单位法人证书: INST_RGST_CTF; 
-民办非企业单位登记证书 PRIVATE_NON_ENTERPRISE
+企业营业执照：ENTERPRISE; 
+事业单位法人证书：INST_RGST_CTF; 
+民办非企业单位登记证书：PRIVATE_NON_ENTERPRISE;
+企业（澳门）：AOMEN_ENTERPRISE
 	 */
 	@ApiField("shop_main_type")
 	private String shopMainType;
 
 	/** 
-	 * 店铺名称。
+	 * 门店名称。
 	 */
 	@ApiField("shop_name")
 	private String shopName;
@@ -229,7 +230,7 @@ public class AntMerchantExpandShopQueryResponse extends AlipayResponse {
 	private ShopRecommendInfo shopRecommendInfo;
 
 	/** 
-	 * 店铺经营类型
+	 * 门店经营类型
 	 */
 	@ApiField("shop_type")
 	private String shopType;

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 酒店智慧住权限信息同步
  *
  * @author auto create
- * @since 1.0, 2025-11-01 10:17:40
+ * @since 1.0, 2026-01-23 14:47:43
  */
 public class AlipayCommerceHotelLockerAuthSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7778447173977545951L;
+	private static final long serialVersionUID = 8581739452442828395L;
 
 	/**
 	 * 服务商auhtId，一次授权保证唯一，如果一次授权多个设备权限，需要在auth_id内部拼接
@@ -22,19 +22,21 @@ public class AlipayCommerceHotelLockerAuthSyncModel extends AlipayObject {
 	private String authId;
 
 	/**
-	 * 设备ID
+	 * 设备ID，设备进件接口同步过来表示系统中设备唯一的逻辑ID
 	 */
 	@ApiField("device_id")
 	private String deviceId;
 
 	/**
-	 * 设备服务商code
+	 * 设备服务商code,在方案接入时分配的表示设备服务商身份的code
 	 */
 	@ApiField("device_isv_code")
 	private String deviceIsvCode;
 
 	/**
-	 * 设备SN
+	 * NFC设备编号
+无源NFC：线圈ID
+有源NFC：mac地址去冒号（来自线圈链接中的内容）
 	 */
 	@ApiField("device_sn")
 	private String deviceSn;
@@ -52,13 +54,13 @@ public class AlipayCommerceHotelLockerAuthSyncModel extends AlipayObject {
 	private Date endTime;
 
 	/**
-	 * 权限同步服务商Code
+	 * 权限同步服务商Code，在方案接入时配置表明服务商身份的code
 	 */
 	@ApiField("operators_code")
 	private String operatorsCode;
 
 	/**
-	 * 所属集团code
+	 * 所属集团code，集团信息进件接口同步对应的code
 	 */
 	@ApiField("org_group_code")
 	private String orgGroupCode;
@@ -76,7 +78,7 @@ public class AlipayCommerceHotelLockerAuthSyncModel extends AlipayObject {
 	private String userRelateId;
 
 	/**
-	 * MOBILE,MEMBER_ID，OPEN_ID三选一
+	 * MOBILE,MEMBER_ID，OPEN_ID，USER_ID四选一
 	 */
 	@ApiField("user_relate_type")
 	private String userRelateType;

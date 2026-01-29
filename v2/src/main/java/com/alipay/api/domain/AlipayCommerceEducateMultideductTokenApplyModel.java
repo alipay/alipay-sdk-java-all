@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取校园支付token
  *
  * @author auto create
- * @since 1.0, 2025-06-16 16:27:19
+ * @since 1.0, 2026-01-22 10:32:04
  */
 public class AlipayCommerceEducateMultideductTokenApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1248558726163644211L;
+	private static final long serialVersionUID = 2378167219952463699L;
 
 	/**
 	 * 业务码。可选的字段枚举说明：{SCHOOL_MULTI_DEDUCT:校园支付;SCHOOL_PAYMENT:刷脸支付}
@@ -56,7 +56,7 @@ public class AlipayCommerceEducateMultideductTokenApplyModel extends AlipayObjec
 	private String userCertNo;
 
 	/**
-	 * 学生或教职工的证件类型。可选的字段枚举说明：{1:居民身份证; RP_HK_MC:港澳居民居住证; RP_TAIWAN:台湾居民居住证}。OPEN_SMALL_POUCH时可选，其他情况必填
+	 * 学生或教职工的证件类型。可选的字段枚举说明：{1:居民身份证; RP_HK_MC:港澳居民居住证; RP_TAIWAN:台湾居民居住证；A:护照；X:学工号}。OPEN_SMALL_POUCH时可选，其他情况必填
 	 */
 	@ApiField("user_cert_type")
 	private String userCertType;

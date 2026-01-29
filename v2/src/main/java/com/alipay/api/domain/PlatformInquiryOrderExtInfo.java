@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 问诊订单扩展信息
+ * source增加HK来源
  *
  * @author auto create
- * @since 1.0, 2025-07-30 11:03:19
+ * @since 1.0, 2026-01-23 15:32:19
  */
 public class PlatformInquiryOrderExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5818583323339528816L;
+	private static final long serialVersionUID = 7248437572586641839L;
 
 	/**
 	 * 支付宝渠道订单标识
@@ -143,6 +143,7 @@ pc端:PC
 支付宝AQ:ALIPAY_AQ
 AQ-APP:AQ_APP
 AQ-小程序:AQ_MINI_APP
+香港支付宝app:ALIPAY_HK
 	 */
 	@ApiField("source")
 	private String source;

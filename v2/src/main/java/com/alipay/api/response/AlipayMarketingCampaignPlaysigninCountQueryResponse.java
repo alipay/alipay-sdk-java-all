@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingCampaignPlaysigninCountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2283265525165933478L;
+	private static final long serialVersionUID = 2893778151989688192L;
 
 	/** 
 	 * 连续签到次数

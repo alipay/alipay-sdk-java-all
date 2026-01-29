@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenSpNcoilopenTaskQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8392518171918721452L;
+	private static final long serialVersionUID = 5647498464134621322L;
 
 	/**
 	 * 流水id，通过调用alipay.open.sp.ncoilopen.reference.create接口返回值中获取reference_id

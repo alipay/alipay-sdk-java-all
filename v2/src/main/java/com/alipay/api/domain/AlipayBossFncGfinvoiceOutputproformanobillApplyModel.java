@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 国际无账单openapi开票接口
  *
  * @author auto create
- * @since 1.0, 2025-11-12 16:35:56
+ * @since 1.0, 2026-01-21 11:26:15
  */
 public class AlipayBossFncGfinvoiceOutputproformanobillApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4563642414393756553L;
+	private static final long serialVersionUID = 5868223755795232687L;
 
 	/**
 	 * 国际新增发票OpenApiOrder

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudCloudpromoTravelPartnerQuitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7678234589791612954L;
+	private static final long serialVersionUID = 1257788254311914267L;
 
 	/** 
 	 * 伴游状态

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceEdasEcodataSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7148273451441533441L;
+	private static final long serialVersionUID = 3724914427112331837L;
 
 	/** 
 	 * 创建的数据内容ID

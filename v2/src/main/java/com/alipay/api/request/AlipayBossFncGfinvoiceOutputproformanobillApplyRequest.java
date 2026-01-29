@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.fnc.gfinvoice.outputproformanobill.apply request
  * 
  * @author auto create
- * @since 1.0, 2025-12-24 13:46:07
+ * @since 1.0, 2026-01-21 13:47:43
  */
 public class AlipayBossFncGfinvoiceOutputproformanobillApplyRequest implements AlipayRequest<AlipayBossFncGfinvoiceOutputproformanobillApplyResponse> {
 

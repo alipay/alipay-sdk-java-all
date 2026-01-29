@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 财务域多币种金额OpenApi
  *
  * @author auto create
- * @since 1.0, 2025-11-12 16:35:55
+ * @since 1.0, 2026-01-21 11:26:15
  */
 public class MultiCurrencyMoneyOpenApi extends AlipayObject {
 
-	private static final long serialVersionUID = 4485892433812916783L;
+	private static final long serialVersionUID = 3821548772771776142L;
 
 	/**
 	 * 表示金额中的分，为该货币的最小单位, 如人民币中的分、美元中的美分, 韩元日元中的元等, 具体换算比例在多币种类MultiCurrencyMoney中有字段digits

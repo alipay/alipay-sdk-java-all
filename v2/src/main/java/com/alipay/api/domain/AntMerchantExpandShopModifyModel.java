@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改蚂蚁店铺
  *
  * @author auto create
- * @since 1.0, 2026-01-04 20:00:56
+ * @since 1.0, 2026-01-23 14:48:02
  */
 public class AntMerchantExpandShopModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3651488275835124771L;
+	private static final long serialVersionUID = 5324481381756286169L;
 
 	/**
 	 * "门店结算卡信息。本业务当前只允许传入一张结算卡。 说明：本参数仅直付通业务使用，其余业务无需关注。"
@@ -36,7 +36,7 @@ public class AntMerchantExpandShopModifyModel extends AlipayObject {
 	private AddressInfo businessAddress;
 
 	/**
-	 * 店铺经营时间。若无需更新本信息项，可以不填写
+	 * 门店经营时间。若无需更新本信息项，可以不填写
 	 */
 	@ApiListField("business_time")
 	@ApiField("shop_business_time")
@@ -55,7 +55,7 @@ public class AntMerchantExpandShopModifyModel extends AlipayObject {
 	private String certName;
 
 	/**
-	 * 证件号码。请填写店铺营业执照号。
+	 * 证件号码。请填写门店营业执照号。
 	 */
 	@ApiField("cert_no")
 	private String certNo;
@@ -73,13 +73,13 @@ public class AntMerchantExpandShopModifyModel extends AlipayObject {
 	private ContactInfo contactInfos;
 
 	/**
-	 * 店铺联系手机
+	 * 门店联系手机
 	 */
 	@ApiField("contact_mobile")
 	private String contactMobile;
 
 	/**
-	 * 店铺的联系固话
+	 * 门店的联系固话
 	 */
 	@ApiField("contact_phone")
 	private String contactPhone;
@@ -91,8 +91,8 @@ public class AntMerchantExpandShopModifyModel extends AlipayObject {
 	private String cover;
 
 	/**
-	 * 扩展信息列表。key值需要向对应行业的bd进行申请。传入本项时，按key进行更新或补充
-如果是针对团购门店的操作，该值必传。
+	 * 扩展信息列表。key值需要向对应行业的bd进行申请。传入本项时，按key进行更新或补充。
+如果是针对神券团购门店的操作，该值必传，且无需向bd申请。
 	 */
 	@ApiListField("ext_infos")
 	@ApiField("shop_ext_info")
@@ -113,7 +113,7 @@ public class AntMerchantExpandShopModifyModel extends AlipayObject {
 	private List<ShopIndustryLicense> industryLicense;
 
 	/**
-	 * 商户角色id，表示将要修改的店属于哪个商户角色，和store_id一起定位待修改的门店。对于直连场景，填写商户pid；对于间连场景（线上、线下、直付通），填写商户smid。本信息项不可修改
+	 * 商户角色id，表示将要修改的门店属于哪个商户角色，和store_id一起定位待修改的门店。对于直连场景，填写商户pid；对于间连场景（线上、线下、直付通），填写商户smid。本信息项不可修改
 	 */
 	@ApiField("ip_role_id")
 	private String ipRoleId;
@@ -182,22 +182,23 @@ public class AntMerchantExpandShopModifyModel extends AlipayObject {
 	private String shopCategory;
 
 	/**
-	 * 蚂蚁店铺id，用于查出待修改的门店。填写本参数的话，store_id和ip_role_id可以不填。本信息项不可修改
+	 * 蚂蚁门店id，用于查出待修改的门店。填写本参数的话，store_id和ip_role_id可以不填。本信息项不可修改
 	 */
 	@ApiField("shop_id")
 	private String shopId;
 
 	/**
 	 * 主要针对医疗行业门店主体类型进件使用，不同门店认证主体需要相应的主体资质证书。 
-企业营业执照: ENTERPRISE; 
-事业单位法人证书: INST_RGST_CTF; 
-民办非企业单位登记证书 PRIVATE_NON_ENTERPRISE
+企业营业执照：ENTERPRISE; 
+事业单位法人证书：INST_RGST_CTF; 
+民办非企业单位登记证书：PRIVATE_NON_ENTERPRISE;
+企业（澳门）：AOMEN_ENTERPRISE
 	 */
 	@ApiField("shop_main_type")
 	private String shopMainType;
 
 	/**
-	 * 店铺名称。直连开店要保证全局店铺名称+地址唯一，间连开店要保证服务商pid下店铺名称+地址唯一。若无需更新本信息项，可以不填写
+	 * 门店名称。直连开店要保证全局门店名称+地址唯一，间连开店要保证服务商pid下门店名称+地址唯一。若无需更新本信息项，可以不填写
 	 */
 	@ApiField("shop_name")
 	private String shopName;

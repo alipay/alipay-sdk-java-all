@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.wallet.destroy request
  * 
  * @author auto create
- * @since 1.0, 2024-07-31 10:18:57
+ * @since 1.0, 2026-01-23 15:02:43
  */
 public class AlipayFundWalletDestroyRequest implements AlipayRequest<AlipayFundWalletDestroyResponse> {
 

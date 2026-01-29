@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 回收推广商品信息
  *
  * @author auto create
- * @since 1.0, 2025-09-11 19:55:50
+ * @since 1.0, 2026-01-26 09:52:26
  */
 public class MarketingProductInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4648823415449314147L;
+	private static final long serialVersionUID = 8896218569638339233L;
 
 	/**
 	 * 预估金额（固定值）单位为元
@@ -66,6 +66,12 @@ public class MarketingProductInfo extends AlipayObject {
 	 */
 	@ApiField("inspect_quantity")
 	private String inspectQuantity;
+
+	/**
+	 * 产品类目编码
+	 */
+	@ApiField("product_category_code")
+	private String productCategoryCode;
 
 	/**
 	 * 回收商品单位
@@ -134,6 +140,13 @@ public class MarketingProductInfo extends AlipayObject {
 	}
 	public void setInspectQuantity(String inspectQuantity) {
 		this.inspectQuantity = inspectQuantity;
+	}
+
+	public String getProductCategoryCode() {
+		return this.productCategoryCode;
+	}
+	public void setProductCategoryCode(String productCategoryCode) {
+		this.productCategoryCode = productCategoryCode;
 	}
 
 	public String getUnitType() {

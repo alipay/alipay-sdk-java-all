@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.adcampaign.creative.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-14 21:02:34
+ * @since 1.0, 2026-01-27 16:34:05
  */
 public class AlipayDataDataserviceAdcampaignCreativeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5624712824715747734L;
+	private static final long serialVersionUID = 3655292885562144228L;
 
 	/** 
 	 * 交互动作属性集合

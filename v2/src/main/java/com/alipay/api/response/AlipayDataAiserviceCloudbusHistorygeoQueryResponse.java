@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataAiserviceCloudbusHistorygeoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3826743935695849719L;
+	private static final long serialVersionUID = 5411843747811755262L;
 
 	/** 
 	 * 地图问题geo hash码

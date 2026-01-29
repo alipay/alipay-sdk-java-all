@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DailyCarRentalFee extends AlipayObject {
 
-	private static final long serialVersionUID = 3446587655494434912L;
+	private static final long serialVersionUID = 5512198785945277414L;
 
 	/**
 	 * 当日租金的金额，单位为分，注意金额是优惠前的

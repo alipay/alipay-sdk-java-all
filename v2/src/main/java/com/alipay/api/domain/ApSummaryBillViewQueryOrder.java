@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * AP融合账单查询请求
  *
  * @author auto create
- * @since 1.0, 2021-09-28 14:29:01
+ * @since 1.0, 2026-01-26 11:17:34
  */
 public class ApSummaryBillViewQueryOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 4183757949138342684L;
+	private static final long serialVersionUID = 2198988716885998135L;
 
 	/**
 	 * 合约号
@@ -62,37 +62,37 @@ public class ApSummaryBillViewQueryOrder extends AlipayObject {
 	private String businessDimension1;
 
 	/**
-	 * 见分析维度1描述
+	 * 智科业务是：外部合约号outContractId，前端给到参数“outContractId=XXXX”
 	 */
 	@ApiField("business_dimension_2")
 	private String businessDimension2;
 
 	/**
-	 * 见分析维度1描述
+	 * 智科业务是：外部合约号outContractId，前端给到参数“outContractId=XXXX”
 	 */
 	@ApiField("business_dimension_3")
 	private String businessDimension3;
 
 	/**
-	 * 见分析维度1描述
+	 * 智科业务是：外部合约号outContractId，前端给到参数“outContractId=XXXX”
 	 */
 	@ApiField("business_dimension_4")
 	private String businessDimension4;
 
 	/**
-	 * 见分析维度1描述
+	 * 智科业务是：外部合约号outContractId，前端给到参数“outContractId=XXXX”
 	 */
 	@ApiField("business_dimension_5")
 	private String businessDimension5;
 
 	/**
-	 * 见分析维度1描述
+	 * 智科业务是：外部合约号outContractId，前端给到参数“outContractId=XXXX”
 	 */
 	@ApiField("business_dimension_6")
 	private String businessDimension6;
 
 	/**
-	 * 见分析维度1描述
+	 * 智科业务是：外部合约号outContractId，前端给到参数“outContractId=XXXX”
 	 */
 	@ApiField("business_dimension_7")
 	private String businessDimension7;

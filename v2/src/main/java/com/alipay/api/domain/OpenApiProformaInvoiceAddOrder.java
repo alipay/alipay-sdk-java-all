@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 国际新增发票OpenApiOrder
  *
  * @author auto create
- * @since 1.0, 2025-11-12 16:35:55
+ * @since 1.0, 2026-01-21 11:26:15
  */
 public class OpenApiProformaInvoiceAddOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 1132596156547262211L;
+	private static final long serialVersionUID = 1317252783322725225L;
 
 	/**
 	 * 调用方身份识别标记, 一般为系统名, 与业务单据号联合唯一
@@ -53,6 +53,13 @@ public class OpenApiProformaInvoiceAddOrder extends AlipayObject {
 	private String buyerInstId;
 
 	/**
+	 * 收款币种, 非必填
+查询销方银行账户信息时使用, 不传则默认使用priceCcy
+	 */
+	@ApiField("collect_ccy")
+	private String collectCcy;
+
+	/**
 	 * 可选, 是否免税 默认N
 TaxInvoice+0税率+免税 = debitNote, 即票面不展示税额行
 TaxInvoice+0税率+不免税, 票面会展示0税额行
@@ -61,21 +68,24 @@ TaxInvoice+0税率+不免税, 票面会展示0税额行
 	private String dutyFree;
 
 	/**
-	 * 费用结束日期  格式(yyyyMMdd)
+	 * 费用结束日期  格式(yyyyMMdd), 若传入则与费用开始日期必须同时存在, 
+优先级比外部的格式化费用期间feeIntervalFormatStr低
+三者都不传则默认取当月
 	 */
 	@ApiField("fee_end_dt")
 	private String feeEndDt;
 
 	/**
 	 * 外部单据传入的用于票面显示的费用期间, 多区间格式化字符串, 使用空格连接
-与费用开始结束时间二选一
+优先级比 费用开始与结束时间高, 都不传则默认当月
 	 */
 	@ApiField("fee_interval_format_str")
 	private String feeIntervalFormatStr;
 
 	/**
-	 * 费用开始日期  格式(yyyyMMdd), 若传入则与费用结束日期必须同时存在
-与外部的格式化费用期间二选一
+	 * 费用开始日期  格式(yyyyMMdd), 若传入则与费用结束日期必须同时存在, 
+优先级比外部的格式化费用期间feeIntervalFormatStr低
+三者都不传则默认取当月
 	 */
 	@ApiField("fee_start_dt")
 	private String feeStartDt;
@@ -99,7 +109,8 @@ TaxInvoice+0税率+不免税, 票面会展示0税额行
 	private String invoiceType;
 
 	/**
-	 * 当地本地, 计价币种与当地币种不一致的时候, 需要进行汇率换算, 符合条件的OU会展示税金折算在票面上
+	 * 本地币种, 非必填, 不传时由发票根据ou进行查询
+计价币种与当地币种不一致的时候, 需要进行汇率换算, 符合条件的OU会展示税金折算在票面上
 	 */
 	@ApiField("local_ccy")
 	private String localCcy;
@@ -216,6 +227,13 @@ TaxInvoice+0税率+不免税, 票面会展示0税额行
 	}
 	public void setBuyerInstId(String buyerInstId) {
 		this.buyerInstId = buyerInstId;
+	}
+
+	public String getCollectCcy() {
+		return this.collectCcy;
+	}
+	public void setCollectCcy(String collectCcy) {
+		this.collectCcy = collectCcy;
 	}
 
 	public String getDutyFree() {

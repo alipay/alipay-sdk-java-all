@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.overdraft.returnmoney response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-13 14:52:42
+ * @since 1.0, 2026-01-20 20:17:28
  */
 public class AlipayTradeOverdraftReturnmoneyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3246121116858935613L;
+	private static final long serialVersionUID = 1612915133788818262L;
 
 	/** 
 	 * 汇率（仅跨境追款执行成功后返回）

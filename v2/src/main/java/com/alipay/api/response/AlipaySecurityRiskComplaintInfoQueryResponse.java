@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.complaint.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-11-07 20:27:41
+ * @since 1.0, 2026-01-21 14:41:08
  */
 public class AlipaySecurityRiskComplaintInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7681226844164376761L;
+	private static final long serialVersionUID = 8713488354311798496L;
 
 	/** 
 	 * 投诉凭证图片信息，afts可访问url形式

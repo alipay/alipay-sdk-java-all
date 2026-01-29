@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SceneRuleParams extends AlipayObject {
 
-	private static final long serialVersionUID = 8546627785237969235L;
+	private static final long serialVersionUID = 1266987764171842472L;
 
 	/**
 	 * 在周期扣场景化模板中配置优惠类型为优惠期玩法时需要该参数，表示后续有多少期扣款可享受优惠，值为自然数代表周期

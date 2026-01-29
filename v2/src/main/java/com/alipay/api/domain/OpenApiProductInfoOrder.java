@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品信息OpenApiOrder
  *
  * @author auto create
- * @since 1.0, 2025-11-12 16:35:55
+ * @since 1.0, 2026-01-21 11:26:15
  */
 public class OpenApiProductInfoOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 6143693478217757917L;
+	private static final long serialVersionUID = 7711695659814165517L;
 
 	/**
 	 * 含税金额, 等于 不含税金额 * ( 1 + 税率 )

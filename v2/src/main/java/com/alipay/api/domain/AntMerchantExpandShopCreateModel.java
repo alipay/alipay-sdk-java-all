@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 蚂蚁店铺创建
  *
  * @author auto create
- * @since 1.0, 2026-01-04 20:00:39
+ * @since 1.0, 2026-01-23 14:48:19
  */
 public class AntMerchantExpandShopCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8829264978852236131L;
+	private static final long serialVersionUID = 4221567463465149175L;
 
 	/**
 	 * 门店结算卡信息。本业务当前只允许传入一张结算卡。 说明：本参数仅直付通业务使用，其余业务无需关注。
@@ -36,7 +36,7 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	private AddressInfo businessAddress;
 
 	/**
-	 * 店铺经营时间。
+	 * 门店经营时间。
 	 */
 	@ApiListField("business_time")
 	@ApiField("shop_business_time")
@@ -55,7 +55,7 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	private String certName;
 
 	/**
-	 * 证件号码，请填写店铺营业执照号。
+	 * 证件号码，请填写门店营业执照号。
 	 */
 	@ApiField("cert_no")
 	private String certNo;
@@ -80,13 +80,13 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	private List<ContactInfo> contactInfos;
 
 	/**
-	 * 店铺联系手机号
+	 * 门店联系手机号
 	 */
 	@ApiField("contact_mobile")
 	private String contactMobile;
 
 	/**
-	 * 店铺的联系固定电话
+	 * 门店的联系固定电话
 	 */
 	@ApiField("contact_phone")
 	private String contactPhone;
@@ -105,7 +105,7 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 
 	/**
 	 * 扩展信息列表。key值需要向对应行业的bd进行申请。
-如果是针对团购门店的操作，该值必传。
+如果是针对神券团购门店的操作，该值必传，且无需向bd申请。
 	 */
 	@ApiListField("ext_infos")
 	@ApiField("shop_ext_info")
@@ -163,7 +163,7 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 	private List<ShopIndustryLicense> industryLicense;
 
 	/**
-	 * 当前门店归属的商户角色 ID，表示当前进件的店铺的归属商户。对于直连开店场景，填写商户 PID。对于间连开店场景（线上、线下、直付通），商户SMID
+	 * 当前门店归属的商户角色 ID，表示当前进件的门店的归属商户。对于直连开店场景，填写商户 PID。对于间连开店场景（线上、线下、直付通），商户SMID
 	 */
 	@ApiField("ip_role_id")
 	private String ipRoleId;
@@ -233,21 +233,22 @@ public class AntMerchantExpandShopCreateModel extends AlipayObject {
 
 	/**
 	 * 主要针对医疗行业门店主体类型进件使用，不同门店认证主体需要相应的主体资质证书。 
-企业营业执照: ENTERPRISE; 
-事业单位法人证书: INST_RGST_CTF; 
-民办非企业单位登记证书 PRIVATE_NON_ENTERPRISE
+企业营业执照：ENTERPRISE; 
+事业单位法人证书：INST_RGST_CTF; 
+民办非企业单位登记证书：PRIVATE_NON_ENTERPRISE;
+企业（澳门）：AOMEN_ENTERPRISE
 	 */
 	@ApiField("shop_main_type")
 	private String shopMainType;
 
 	/**
-	 * 店铺名称, 由商户定义在支付宝内的店铺名称
+	 * 门店名称, 由商户定义在支付宝内的门店名称
 	 */
 	@ApiField("shop_name")
 	private String shopName;
 
 	/**
-	 * 店铺经营类型，01表示直营，02表示加盟
+	 * 门店经营类型，01表示直营，02表示加盟
 	 */
 	@ApiField("shop_type")
 	private String shopType;

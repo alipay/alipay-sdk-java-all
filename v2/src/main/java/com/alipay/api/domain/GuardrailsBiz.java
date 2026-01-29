@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GuardrailsBiz extends AlipayObject {
 
-	private static final long serialVersionUID = 8161979885998238661L;
+	private static final long serialVersionUID = 2187887888113384361L;
 
 	/**
 	 * 护栏业务编码

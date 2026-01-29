@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.unifiedsettle.instorder.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-13 15:42:37
+ * @since 1.0, 2026-01-20 20:17:28
  */
 public class AlipayTradeUnifiedsettleInstorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1661777187289596443L;
+	private static final long serialVersionUID = 2742332327656689233L;
 
 	/** 
 	 * 返回true表示可以调整时间范围继续搜索更多数据

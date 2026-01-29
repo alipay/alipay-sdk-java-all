@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.wallet.scene.sign response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-31 10:33:32
+ * @since 1.0, 2026-01-23 15:02:43
  */
 public class AlipayFundWalletSceneSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8349661386548466745L;
+	private static final long serialVersionUID = 2512996526916899831L;
 
 	/** 
 	 * 资产id
@@ -31,6 +31,12 @@ public class AlipayFundWalletSceneSignResponse extends AlipayResponse {
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
+
+	/** 
+	 * 钱包外部账户ID
+	 */
+	@ApiField("external_account_no")
+	private String externalAccountNo;
 
 	/** 
 	 * 外部业务号
@@ -69,6 +75,13 @@ public class AlipayFundWalletSceneSignResponse extends AlipayResponse {
 	}
 	public String getBizScene( ) {
 		return this.bizScene;
+	}
+
+	public void setExternalAccountNo(String externalAccountNo) {
+		this.externalAccountNo = externalAccountNo;
+	}
+	public String getExternalAccountNo( ) {
+		return this.externalAccountNo;
 	}
 
 	public void setOutBizNo(String outBizNo) {

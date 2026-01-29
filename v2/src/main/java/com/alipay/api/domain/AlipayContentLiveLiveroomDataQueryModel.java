@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayContentLiveLiveroomDataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8132739692728942918L;
+	private static final long serialVersionUID = 8583329881977776838L;
 
 	/**
 	 * 加密后的直播间id

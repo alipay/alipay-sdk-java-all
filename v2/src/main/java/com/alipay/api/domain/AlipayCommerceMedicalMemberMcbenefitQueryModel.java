@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询权益详情
  *
  * @author auto create
- * @since 1.0, 2025-11-06 09:57:31
+ * @since 1.0, 2026-01-22 16:19:21
  */
 public class AlipayCommerceMedicalMemberMcbenefitQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8268752132543513483L;
+	private static final long serialVersionUID = 3268779197339287483L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识

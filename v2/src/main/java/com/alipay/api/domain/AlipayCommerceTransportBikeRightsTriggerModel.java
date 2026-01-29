@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportBikeRightsTriggerModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3185493591635968195L;
+	private static final long serialVersionUID = 4161639222173821977L;
 
 	/**
 	 * 活动id

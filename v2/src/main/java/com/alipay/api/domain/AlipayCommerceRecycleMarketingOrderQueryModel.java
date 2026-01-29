@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 回收推广订单查询
  *
  * @author auto create
- * @since 1.0, 2025-11-06 19:13:12
+ * @since 1.0, 2026-01-26 10:15:53
  */
 public class AlipayCommerceRecycleMarketingOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8729724229152127666L;
+	private static final long serialVersionUID = 3287524485841498316L;
 
 	/**
 	 * 订单推广记录id

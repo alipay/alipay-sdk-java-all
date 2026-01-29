@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 应付账单
  *
  * @author auto create
- * @since 1.0, 2021-09-28 14:28:46
+ * @since 1.0, 2026-01-26 11:17:34
  */
 public class ApSummaryBillPageDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1226714217856635956L;
+	private static final long serialVersionUID = 4175277765224923447L;
 
 	/**
 	 * 当前数据页码

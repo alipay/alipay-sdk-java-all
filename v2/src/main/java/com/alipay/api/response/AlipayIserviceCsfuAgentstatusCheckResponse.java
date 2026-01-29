@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayIserviceCsfuAgentstatusCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7465734634962763211L;
+	private static final long serialVersionUID = 1296754815465589944L;
 
 	/** 
 	 * true：坐席空闲

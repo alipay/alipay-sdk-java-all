@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BeikeAccountResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 8562515354733172522L;
+	private static final long serialVersionUID = 2111451711863846479L;
 
 	/**
 	 * 当前操作变化值

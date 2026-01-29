@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 金融科技业务价格自动创建接口
  *
  * @author auto create
- * @since 1.0, 2020-01-08 20:10:33
+ * @since 1.0, 2026-01-23 15:27:05
  */
 public class AlipayBossFncPriceAutoCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2796278277395775715L;
+	private static final long serialVersionUID = 1882746199953255637L;
 
 	/**
 	 * 系统名称/开放平台appId

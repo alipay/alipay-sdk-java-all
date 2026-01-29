@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询芝麻企业信用企业主授权数据
  *
  * @author auto create
- * @since 1.0, 2025-08-20 09:50:30
+ * @since 1.0, 2026-01-28 11:13:34
  */
 public class ZhimaCreditEpAuthQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7593335935796778266L;
+	private static final long serialVersionUID = 2598527749649417136L;
 
 	/**
 	 * 企业信用赋予的唯一业务标识id，在企信小程序跳转到对方承接页时会带有bizNo，对方通过该方式获取该唯一id

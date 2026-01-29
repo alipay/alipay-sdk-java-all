@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AuthorizeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5659456181455187765L;
+	private static final long serialVersionUID = 1381385664673475528L;
 
 	/**
 	 * 授权方身份证明(当前只支持图片类型，请调用alipay.open.mini.miniapp.brand.upload接口上传图片,可以上传多个授权方身份证明)

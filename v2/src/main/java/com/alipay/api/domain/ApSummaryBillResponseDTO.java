@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * AP账单查询结果DTO
  *
  * @author auto create
- * @since 1.0, 2021-09-28 14:28:46
+ * @since 1.0, 2026-01-26 11:17:34
  */
 public class ApSummaryBillResponseDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3893113595173243432L;
+	private static final long serialVersionUID = 5355178742222544454L;
 
 	/**
 	 * 调账金额
@@ -128,7 +128,7 @@ public class ApSummaryBillResponseDTO extends AlipayObject {
 	private String checkDate;
 
 	/**
-	 * 计费服务量
+	 * 计费服务量,单位：次
 	 */
 	@ApiField("clcn_basic_amount")
 	private String clcnBasicAmount;
@@ -404,37 +404,37 @@ public class ApSummaryBillResponseDTO extends AlipayObject {
 	private String summaryDmsn1;
 
 	/**
-	 * 1
+	 * 分析维度2
 	 */
 	@ApiField("summary_dmsn_2")
 	private String summaryDmsn2;
 
 	/**
-	 * 3
+	 * 分析维度3
 	 */
 	@ApiField("summary_dmsn_3")
 	private String summaryDmsn3;
 
 	/**
-	 * 1
+	 * 分析维度4
 	 */
 	@ApiField("summary_dmsn_4")
 	private String summaryDmsn4;
 
 	/**
-	 * 1
+	 * 分析维度5
 	 */
 	@ApiField("summary_dmsn_5")
 	private String summaryDmsn5;
 
 	/**
-	 * 1
+	 * 分析维度6
 	 */
 	@ApiField("summary_dmsn_6")
 	private String summaryDmsn6;
 
 	/**
-	 * 1
+	 * 分析维度7
 	 */
 	@ApiField("summary_dmsn_7")
 	private String summaryDmsn7;
@@ -452,7 +452,7 @@ public class ApSummaryBillResponseDTO extends AlipayObject {
 	private MultiCurrencyMoneyOpenApi taxAmount;
 
 	/**
-	 * 税率
+	 * 税率,小数, 0.1表示10%
 	 */
 	@ApiField("tax_rate")
 	private String taxRate;

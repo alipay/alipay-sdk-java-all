@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudCloudpromoAichatAnswerStopResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6812148232364313593L;
+	private static final long serialVersionUID = 5589334565657374459L;
 
 	
 

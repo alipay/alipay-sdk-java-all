@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceEcOrderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5778296955441877791L;
+	private static final long serialVersionUID = 1145619123866482297L;
 
 	/**
 	 * 商家侧订单实际金额，金额单位为元

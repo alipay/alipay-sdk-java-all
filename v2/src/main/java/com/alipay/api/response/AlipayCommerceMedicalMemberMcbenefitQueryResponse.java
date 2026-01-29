@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.member.mcbenefit.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-22 16:23:07
+ * @since 1.0, 2026-01-22 16:27:43
  */
 public class AlipayCommerceMedicalMemberMcbenefitQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5785132119697479785L;
+	private static final long serialVersionUID = 7885591249111265761L;
 
 	/** 
 	 * 权益详情
@@ -51,6 +51,12 @@ public class AlipayCommerceMedicalMemberMcbenefitQueryResponse extends AlipayRes
 	 */
 	@ApiField("open_time")
 	private Date openTime;
+
+	/** 
+	 * 跳转链接
+	 */
+	@ApiField("redirect_url")
+	private String redirectUrl;
 
 	public void setBenefitInfo(McBenefitInfo benefitInfo) {
 		this.benefitInfo = benefitInfo;
@@ -92,6 +98,13 @@ public class AlipayCommerceMedicalMemberMcbenefitQueryResponse extends AlipayRes
 	}
 	public Date getOpenTime( ) {
 		return this.openTime;
+	}
+
+	public void setRedirectUrl(String redirectUrl) {
+		this.redirectUrl = redirectUrl;
+	}
+	public String getRedirectUrl( ) {
+		return this.redirectUrl;
 	}
 
 }

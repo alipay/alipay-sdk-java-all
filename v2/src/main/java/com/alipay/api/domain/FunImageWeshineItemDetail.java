@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FunImageWeshineItemDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7436359131558214381L;
+	private static final long serialVersionUID = 5369863431998232524L;
 
 	/**
 	 * 闪萌表情包查询接口返回的表情包gif图片地址

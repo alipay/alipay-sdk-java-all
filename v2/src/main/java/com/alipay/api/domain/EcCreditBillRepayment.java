@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EcCreditBillRepayment extends AlipayObject {
 
-	private static final long serialVersionUID = 8762577177382133457L;
+	private static final long serialVersionUID = 5746495671148618622L;
 
 	/**
 	 * 银行借据单号

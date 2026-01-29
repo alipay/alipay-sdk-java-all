@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易创单
  *
  * @author auto create
- * @since 1.0, 2026-01-20 10:37:43
+ * @since 1.0, 2026-01-26 17:52:42
  */
 public class AlipayCommerceTransportTradeOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1171951197253631622L;
+	private static final long serialVersionUID = 3117817116391427674L;
 
 	/**
 	 * 订单描述信息
@@ -66,6 +66,12 @@ public class AlipayCommerceTransportTradeOrderCreateModel extends AlipayObject {
 	 */
 	@ApiField("partner_unique_code")
 	private String partnerUniqueCode;
+
+	/**
+	 * 业务参数
+	 */
+	@ApiField("portable")
+	private String portable;
 
 	/**
 	 * 商品价格，单位元
@@ -200,6 +206,13 @@ public class AlipayCommerceTransportTradeOrderCreateModel extends AlipayObject {
 	}
 	public void setPartnerUniqueCode(String partnerUniqueCode) {
 		this.partnerUniqueCode = partnerUniqueCode;
+	}
+
+	public String getPortable() {
+		return this.portable;
+	}
+	public void setPortable(String portable) {
+		this.portable = portable;
 	}
 
 	public String getPrice() {
