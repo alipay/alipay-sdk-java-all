@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MinRate extends AlipayObject {
 
-	private static final long serialVersionUID = 5884142653723188613L;
+	private static final long serialVersionUID = 7658594898415234568L;
 
 	/**
 	 * 支付宝酒店原始价，有效正数，单位为元，默认为人名币

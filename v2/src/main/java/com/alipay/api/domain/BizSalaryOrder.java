@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BizSalaryOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 6561548468781785679L;
+	private static final long serialVersionUID = 3662586964645663365L;
 
 	/**
 	 * 发薪申请关联的业务单据对应的单据号，请求方自行制定。

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceMallWalletruleSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4789119513627359242L;
+	private static final long serialVersionUID = 1593285327995516981L;
 
 	/**
 	 * 此商圈钱包模板下，需设置的核销数字化门店列表；当操作类型type为query时，可不填；建议单次小于100，数量过大可能存在超时

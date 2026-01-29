@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceEcEmployeeTitleDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4833491973972963161L;
+	private static final long serialVersionUID = 8133469491269215631L;
 
 	/**
 	 * 员工抬头列表

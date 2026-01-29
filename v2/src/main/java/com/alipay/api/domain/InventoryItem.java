@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InventoryItem extends AlipayObject {
 
-	private static final long serialVersionUID = 8475492629342753178L;
+	private static final long serialVersionUID = 6384468182692365496L;
 
 	/**
 	 * 可用库存

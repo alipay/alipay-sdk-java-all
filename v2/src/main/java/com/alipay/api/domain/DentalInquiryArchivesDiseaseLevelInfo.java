@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DentalInquiryArchivesDiseaseLevelInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4326814233463177337L;
+	private static final long serialVersionUID = 3779672136643114519L;
 
 	/**
 	 * 描述病症严重程度的数字化表达

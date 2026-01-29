@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AnttechOceanbasePassportBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3849263576498149419L;
+	private static final long serialVersionUID = 4763672178154552314L;
 
 	/**
 	 * 通行证id列表

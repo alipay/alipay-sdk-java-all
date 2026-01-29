@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataDataserviceBillDownloadurlQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6617543726586737571L;
+	private static final long serialVersionUID = 4795189284677377441L;
 
 	/** 
 	 * 当账单可获取时，返回账单下载地址链接，获取链接后30秒后未下载，链接地址失效。

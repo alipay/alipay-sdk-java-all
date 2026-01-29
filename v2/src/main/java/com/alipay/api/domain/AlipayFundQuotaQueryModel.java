@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundQuotaQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4821312938345928144L;
+	private static final long serialVersionUID = 1345494892658813594L;
 
 	/**
 	 * 描述特定的业务场景，与实际转账场景一致，可传的参数如下： DIRECT_TRANSFER：单笔无密转账到支付宝，单笔无密转账到银行卡，现金红包; DEFAULT：使用alipay.fund.trans.toaccount.transfer转账到户场景

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TrafficAirticketOrderDiscountInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5137414583796352156L;
+	private static final long serialVersionUID = 6551631932397349348L;
 
 	/**
 	 * 优惠项目价格，币种：人民币，单位：元

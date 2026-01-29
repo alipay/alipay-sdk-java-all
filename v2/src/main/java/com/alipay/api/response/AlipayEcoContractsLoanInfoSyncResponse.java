@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoContractsLoanInfoSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1181344367319879687L;
+	private static final long serialVersionUID = 1473199359787925689L;
 
 	/** 
 	 * true代表同步成功,false代表同步失败

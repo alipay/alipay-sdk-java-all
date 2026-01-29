@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMedicalGuessaskQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3764315438753927783L;
+	private static final long serialVersionUID = 4675889661513438119L;
 
 	/** 
 	 * null

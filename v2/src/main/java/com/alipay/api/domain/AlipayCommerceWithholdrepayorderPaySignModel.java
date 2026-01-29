@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceWithholdrepayorderPaySignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2358838232965468479L;
+	private static final long serialVersionUID = 5523124569849666821L;
 
 	/**
 	 * 签约参数。如果希望在sdk中支付并签约，需要在这里传入签约信息。 周期扣款场景 product_code 为 CYCLE_PAY_AUTH 时必填。

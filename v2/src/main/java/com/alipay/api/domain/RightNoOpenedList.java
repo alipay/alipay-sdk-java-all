@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RightNoOpenedList extends AlipayObject {
 
-	private static final long serialVersionUID = 3321264485647496987L;
+	private static final long serialVersionUID = 7821941813719394523L;
 
 	/**
 	 * 赠险标志

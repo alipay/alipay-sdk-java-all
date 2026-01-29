@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class SubSceneCardModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8881648914365469636L;
+	private static final long serialVersionUID = 3774354372186531339L;
 
 	/**
 	 * 子场景卡列表

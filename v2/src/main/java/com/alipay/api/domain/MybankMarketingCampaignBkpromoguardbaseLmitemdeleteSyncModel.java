@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankMarketingCampaignBkpromoguardbaseLmitemdeleteSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5671931523131174819L;
+	private static final long serialVersionUID = 2484476734489883921L;
 
 	/**
 	 * biz_id + 非唯一 + LinkedMall商品删除同步场景 + 找接口提供方确认

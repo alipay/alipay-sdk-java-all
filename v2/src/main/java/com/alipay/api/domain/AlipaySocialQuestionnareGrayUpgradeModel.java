@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySocialQuestionnareGrayUpgradeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5178583549146327111L;
+	private static final long serialVersionUID = 7245745828699962199L;
 
 	/**
 	 * 业务扩展字段

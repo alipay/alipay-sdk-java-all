@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HouseholdRegistrationDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3215295998388686466L;
+	private static final long serialVersionUID = 7249284977573363735L;
 
 	/**
 	 * 现户籍登记住址

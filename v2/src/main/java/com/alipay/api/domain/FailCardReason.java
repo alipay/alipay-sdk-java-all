@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FailCardReason extends AlipayObject {
 
-	private static final long serialVersionUID = 1533415777594844638L;
+	private static final long serialVersionUID = 1276921659728669977L;
 
 	/**
 	 * 卡id

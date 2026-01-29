@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommercePropertyNfctagDownloadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7171947233197576746L;
+	private static final long serialVersionUID = 8733261324254873747L;
 
 	/** 
 	 * 下载地址

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppInvoiceMerchantEnterstatusQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5813635738682382971L;
+	private static final long serialVersionUID = 2673584174351365396L;
 
 	/**
 	 * 商户品牌简称，只能由大写字母、下划线、数字组成，且必须以大写字母开头。

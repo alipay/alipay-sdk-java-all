@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechNftOssPresignedurlGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2449367619997846665L;
+	private static final long serialVersionUID = 4629785621332381969L;
 
 	/**
 	 * 上传文件数据的业务日期

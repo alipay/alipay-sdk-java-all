@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SupvFundTransferDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3371153297284528614L;
+	private static final long serialVersionUID = 2414565395218883948L;
 
 	/**
 	 * 金额

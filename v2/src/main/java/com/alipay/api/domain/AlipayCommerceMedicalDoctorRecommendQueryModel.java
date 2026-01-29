@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 医生推荐
  *
  * @author auto create
- * @since 1.0, 2025-10-15 14:40:02
+ * @since 1.0, 2026-01-28 18:57:56
  */
 public class AlipayCommerceMedicalDoctorRecommendQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6378675898748828275L;
+	private static final long serialVersionUID = 3178765537324283975L;
 
 	/**
 	 * 渠道编码
@@ -73,10 +73,40 @@ public class AlipayCommerceMedicalDoctorRecommendQueryModel extends AlipayObject
 	private Long limit;
 
 	/**
+	 * 是否补充病例信息
+	 */
+	@ApiField("need_case")
+	private Boolean needCase;
+
+	/**
 	 * 用于标记支付宝用户在应用下的唯一标识
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/**
+	 * 是否接受手术治疗
+	 */
+	@ApiField("operation")
+	private Boolean operation;
+
+	/**
+	 * 患者年龄，单位为天，如10岁，可以传3650。
+	 */
+	@ApiField("patient_age")
+	private Long patientAge;
+
+	/**
+	 * 患者性别
+	 */
+	@ApiField("patient_sex")
+	private String patientSex;
+
+	/**
+	 * 患者是否怀孕
+	 */
+	@ApiField("pregnant_receive")
+	private Boolean pregnantReceive;
 
 	/**
 	 * 价格范围单位元
@@ -172,11 +202,46 @@ public class AlipayCommerceMedicalDoctorRecommendQueryModel extends AlipayObject
 		this.limit = limit;
 	}
 
+	public Boolean getNeedCase() {
+		return this.needCase;
+	}
+	public void setNeedCase(Boolean needCase) {
+		this.needCase = needCase;
+	}
+
 	public String getOpenId() {
 		return this.openId;
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public Boolean getOperation() {
+		return this.operation;
+	}
+	public void setOperation(Boolean operation) {
+		this.operation = operation;
+	}
+
+	public Long getPatientAge() {
+		return this.patientAge;
+	}
+	public void setPatientAge(Long patientAge) {
+		this.patientAge = patientAge;
+	}
+
+	public String getPatientSex() {
+		return this.patientSex;
+	}
+	public void setPatientSex(String patientSex) {
+		this.patientSex = patientSex;
+	}
+
+	public Boolean getPregnantReceive() {
+		return this.pregnantReceive;
+	}
+	public void setPregnantReceive(Boolean pregnantReceive) {
+		this.pregnantReceive = pregnantReceive;
 	}
 
 	public String getPrice() {

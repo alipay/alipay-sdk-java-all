@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ErrorLog extends AlipayObject {
 
-	private static final long serialVersionUID = 2123262348568957385L;
+	private static final long serialVersionUID = 1659215515791364633L;
 
 	/**
 	 * 错误发生时间

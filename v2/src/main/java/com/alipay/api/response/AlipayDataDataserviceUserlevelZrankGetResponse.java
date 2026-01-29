@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataDataserviceUserlevelZrankGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7798175453753984529L;
+	private static final long serialVersionUID = 1475597547643786473L;
 
 	/** 
 	 * 活跃高价值用户返回

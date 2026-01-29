@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AddressInfoRecmixer extends AlipayObject {
 
-	private static final long serialVersionUID = 2634424849894281483L;
+	private static final long serialVersionUID = 7172819822524156513L;
 
 	/**
 	 * 城市code

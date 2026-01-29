@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CarfinSignInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8472294522392335293L;
+	private static final long serialVersionUID = 4162599672399215622L;
 
 	/**
 	 * 数字签名签名位置

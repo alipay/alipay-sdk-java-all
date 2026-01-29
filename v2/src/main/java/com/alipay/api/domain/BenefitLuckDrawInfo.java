@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BenefitLuckDrawInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4791217523681338372L;
+	private static final long serialVersionUID = 1814573553383912169L;
 
 	/**
 	 * true: 可抽奖

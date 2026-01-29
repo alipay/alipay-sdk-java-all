@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipaySocialBaseLifecreationShortplayUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1746945461151513362L;
+	private static final long serialVersionUID = 5412244745538597921L;
 
 	/**
 	 * 生活号+号ID。如果发送类型=自研/三方发送，不要传入；发送类型=mcn发送，请传入public_id【mcn机构绑定达人号ID】

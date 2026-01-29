@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundAgreementQuotaModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7494959573243711933L;
+	private static final long serialVersionUID = 3528444293715543519L;
 
 	/** 
 	 * 额度变更结果集合

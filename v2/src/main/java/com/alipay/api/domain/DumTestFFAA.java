@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DumTestFFAA extends AlipayObject {
 
-	private static final long serialVersionUID = 3622858825864818984L;
+	private static final long serialVersionUID = 5374835758769226797L;
 
 	/**
 	 * 商家侧小程序商品ID，指商家提报给小程序商品库的商品。当前接口的extend_params.trade_component_order_id字段不为空时该字段必填，且与交易组件订单参数保持一致。了解小程序商品请参考：<a 

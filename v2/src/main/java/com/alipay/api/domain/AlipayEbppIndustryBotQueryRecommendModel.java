@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppIndustryBotQueryRecommendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8829834696415867488L;
+	private static final long serialVersionUID = 4173435798657351645L;
 
 	/**
 	 * 在获取不到用户定位时，传递的兜底城市编码

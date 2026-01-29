@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AllergyHistory extends AlipayObject {
 
-	private static final long serialVersionUID = 4469574142758739486L;
+	private static final long serialVersionUID = 5815729258119919638L;
 
 	/**
 	 * 名称

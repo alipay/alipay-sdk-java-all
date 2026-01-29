@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceLogisticsFreightflowPayerwhitelistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6311466488698285332L;
+	private static final long serialVersionUID = 6553159169733355184L;
 
 	/** 
 	 * null

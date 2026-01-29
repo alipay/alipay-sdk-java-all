@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceOperationBenefitStatusCallbackModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7116189978357122712L;
+	private static final long serialVersionUID = 6634415127193562445L;
 
 	/**
 	 * 权益id

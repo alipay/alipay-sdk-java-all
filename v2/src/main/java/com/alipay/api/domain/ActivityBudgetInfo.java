@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ActivityBudgetInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1621278923215647179L;
+	private static final long serialVersionUID = 8781287661532943926L;
 
 	/**
 	 * 活动的预算金额，单位元；当优惠类型为折扣或者满立减时，预算金额需要大于最高优惠金额的5倍

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车辆信息
  *
  * @author auto create
- * @since 1.0, 2025-12-03 11:43:05
+ * @since 1.0, 2026-01-28 17:58:39
  */
 public class VehicleDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7376425769819392495L;
+	private static final long serialVersionUID = 1768692372351244218L;
 
 	/**
 	 * 车辆编码
@@ -43,6 +43,12 @@ public class VehicleDetailInfo extends AlipayObject {
 	 */
 	@ApiField("car_model_id")
 	private String carModelId;
+
+	/**
+	 * 车辆标签
+	 */
+	@ApiField("lable")
+	private String lable;
 
 	/**
 	 * 车级名称
@@ -101,6 +107,13 @@ public class VehicleDetailInfo extends AlipayObject {
 	}
 	public void setCarModelId(String carModelId) {
 		this.carModelId = carModelId;
+	}
+
+	public String getLable() {
+		return this.lable;
+	}
+	public void setLable(String lable) {
+		this.lable = lable;
 	}
 
 	public String getName() {

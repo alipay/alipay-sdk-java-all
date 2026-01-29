@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ToBDiscountCustomerServiceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4453924452177722359L;
+	private static final long serialVersionUID = 2149615444637968725L;
 
 	/**
 	 * 当前订单对应的客服链接

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiSalesKbassetStuffProduceqrcodeBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2718496988318695465L;
+	private static final long serialVersionUID = 7457698667911286734L;
 
 	/** 
 	 * 当前是否还有生产指令可以拉取；注意如果该值为false，也只有提示当前没有更多生产指令了，不代表后面没有生产指令，商户自己需要制定策略定时去拉取

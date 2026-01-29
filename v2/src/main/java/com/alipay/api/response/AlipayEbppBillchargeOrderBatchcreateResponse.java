@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppBillchargeOrderBatchcreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4734697616865395315L;
+	private static final long serialVersionUID = 8751752231951182856L;
 
 	/** 
 	 * 行业收单流水,50新链路单笔订单创建的时候返回。对应原本的子订单号中的参数
