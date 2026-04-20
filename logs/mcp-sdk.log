@@ -1,0 +1,301 @@
+2026-04-20 14:25:32.904 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 连接打开 - 状态码：200
+2026-04-20 14:25:34.524 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 事件 - type: endpoint,  /api/v1/open/mcps/aidata-convenience-life5/message?sessionId=decc400b-62fd-4022-bbc1-357c0773c639
+2026-04-20 14:25:54.320 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - method: initialize, requestId: 018b2f76-cef9-4bfd-9143-8a583ac5b468
+2026-04-20 14:25:54.322 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - body: {"jsonrpc":"2.0","id":"018b2f76-cef9-4bfd-9143-8a583ac5b468","method":"initialize","params":{"capabilities":{},"clientInfo":{"name":"mcp-java-sdk","version":"1.0.0"},"protocolVersion":"2024-11-05"}}
+2026-04-20 14:25:54.354 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - fullUrl: https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/message?sessionId=decc400b-62fd-4022-bbc1-357c0773c639
+2026-04-20 14:26:11.605 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 事件 - type: message,  {"jsonrpc":"2.0","method":"notifications/message"}
+2026-04-20 14:26:11.611 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg: com.alipay.mcp.protocol.JsonRpcMessage@14fd0814
+2026-04-20 14:26:11.612 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg.getId(): null
+2026-04-20 14:26:11.613 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - pendingRequests keys: [018b2f76-cef9-4bfd-9143-8a583ac5b468]
+2026-04-20 14:26:11.614 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - 未匹配到请求，作为通知处理
+2026-04-20 14:26:11.729 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 事件 - type: message,  {"jsonrpc":"2.0","id":"018b2f76-cef9-4bfd-9143-8a583ac5b468","result":{"protocolVersion":"2024-11-05","capabilities":{"completions":{},"tools":{"listChanged":false}},"serverInfo":{"name":"AlipayOpenMcpServer","version":"1.0.0"},"instructions":"支付宝开放平台MCP Server"}}
+2026-04-20 14:26:11.729 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - status: 200
+2026-04-20 14:26:11.731 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - body: 
+2026-04-20 14:26:11.732 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg: com.alipay.mcp.protocol.JsonRpcMessage@3eadc7d2
+2026-04-20 14:26:11.732 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg.getId(): 018b2f76-cef9-4bfd-9143-8a583ac5b468
+2026-04-20 14:26:11.732 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - pendingRequests keys: [018b2f76-cef9-4bfd-9143-8a583ac5b468]
+2026-04-20 14:26:11.732 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - 匹配到请求，准备返回响应
+2026-04-20 14:26:18.353 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendNotification - method: notifications/initialized, fullUrl: https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/message?sessionId=decc400b-62fd-4022-bbc1-357c0773c639
+2026-04-20 14:31:22.702 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 事件 - type: message,  {"jsonrpc":"2.0","method":"notifications/message"}
+2026-04-20 14:31:22.702 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg: com.alipay.mcp.protocol.JsonRpcMessage@21370170
+2026-04-20 14:31:22.702 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg.getId(): null
+2026-04-20 14:31:22.703 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - pendingRequests keys: []
+2026-04-20 14:31:22.703 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - 未匹配到请求，作为通知处理
+2026-04-20 14:31:22.705 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 事件 - type: message,  {"jsonrpc":"2.0","method":"notifications/message"}
+2026-04-20 14:31:22.705 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg: com.alipay.mcp.protocol.JsonRpcMessage@20d6c274
+2026-04-20 14:31:22.705 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg.getId(): null
+2026-04-20 14:31:22.705 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - pendingRequests keys: []
+2026-04-20 14:31:22.705 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - 未匹配到请求，作为通知处理
+2026-04-20 14:31:22.706 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 事件 - type: message,  {"jsonrpc":"2.0","method":"notifications/message"}
+2026-04-20 14:31:22.706 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg: com.alipay.mcp.protocol.JsonRpcMessage@30ef3d33
+2026-04-20 14:31:22.706 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg.getId(): null
+2026-04-20 14:31:22.706 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - pendingRequests keys: []
+2026-04-20 14:31:22.707 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - 未匹配到请求，作为通知处理
+2026-04-20 14:31:22.707 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 事件 - type: message,  {"jsonrpc":"2.0","method":"notifications/message"}
+2026-04-20 14:31:22.707 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg: com.alipay.mcp.protocol.JsonRpcMessage@602cffab
+2026-04-20 14:31:22.707 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg.getId(): null
+2026-04-20 14:31:22.708 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - pendingRequests keys: []
+2026-04-20 14:31:22.708 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - 未匹配到请求，作为通知处理
+2026-04-20 14:31:22.708 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 事件 - type: message,  {"jsonrpc":"2.0","method":"notifications/message"}
+2026-04-20 14:31:22.708 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg: com.alipay.mcp.protocol.JsonRpcMessage@79094e5f
+2026-04-20 14:31:22.708 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg.getId(): null
+2026-04-20 14:31:22.708 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - pendingRequests keys: []
+2026-04-20 14:31:22.709 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - 未匹配到请求，作为通知处理
+2026-04-20 14:31:22.714 [main] INFO  com.alipay.mcp.McpClient - MCP 初始化完成
+2026-04-20 14:31:22.715 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - method: tools/list, requestId: 029a13ae-c316-44f2-a533-6174c88ec5e8
+2026-04-20 14:31:22.715 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - body: {"jsonrpc":"2.0","id":"029a13ae-c316-44f2-a533-6174c88ec5e8","method":"tools/list"}
+2026-04-20 14:31:22.715 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - fullUrl: https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/message?sessionId=decc400b-62fd-4022-bbc1-357c0773c639
+2026-04-20 14:31:30.950 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 连接打开 - 状态码：200
+2026-04-20 14:31:30.953 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 事件 - type: endpoint,  /api/v1/open/mcps/aidata-convenience-life5/message?sessionId=f2d2b921-a8d1-4810-b51b-dd06518664b9
+2026-04-20 14:31:30.956 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - method: initialize, requestId: 2335e175-8d2e-42c7-b6c2-18f3654521da
+2026-04-20 14:31:30.957 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - body: {"jsonrpc":"2.0","id":"2335e175-8d2e-42c7-b6c2-18f3654521da","method":"initialize","params":{"capabilities":{},"clientInfo":{"name":"mcp-java-sdk","version":"1.0.0"},"protocolVersion":"2024-11-05"}}
+2026-04-20 14:31:30.960 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - fullUrl: https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/message?sessionId=f2d2b921-a8d1-4810-b51b-dd06518664b9
+2026-04-20 14:31:31.090 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 事件 - type: message,  {"jsonrpc":"2.0","id":"2335e175-8d2e-42c7-b6c2-18f3654521da","result":{"protocolVersion":"2024-11-05","capabilities":{"completions":{},"tools":{"listChanged":false}},"serverInfo":{"name":"AlipayOpenMcpServer","version":"1.0.0"},"instructions":"支付宝开放平台MCP Server"}}
+2026-04-20 14:31:31.090 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - status: 200
+2026-04-20 14:31:31.091 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - body: 
+2026-04-20 14:31:31.092 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg: com.alipay.mcp.protocol.JsonRpcMessage@703eff21
+2026-04-20 14:31:31.093 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg.getId(): 2335e175-8d2e-42c7-b6c2-18f3654521da
+2026-04-20 14:31:31.093 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - pendingRequests keys: [2335e175-8d2e-42c7-b6c2-18f3654521da]
+2026-04-20 14:31:31.093 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - 匹配到请求，准备返回响应
+2026-04-20 14:31:31.093 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendNotification - method: notifications/initialized, fullUrl: https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/message?sessionId=f2d2b921-a8d1-4810-b51b-dd06518664b9
+2026-04-20 14:31:31.098 [main] INFO  com.alipay.mcp.McpClient - MCP 初始化完成
+2026-04-20 14:31:31.098 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - method: tools/list, requestId: ef2f9455-75b8-4c1d-9202-9b36fa09649b
+2026-04-20 14:31:31.098 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - body: {"jsonrpc":"2.0","id":"ef2f9455-75b8-4c1d-9202-9b36fa09649b","method":"tools/list"}
+2026-04-20 14:31:31.098 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - fullUrl: https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/message?sessionId=f2d2b921-a8d1-4810-b51b-dd06518664b9
+2026-04-20 14:31:31.138 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - sendNotification response: 404
+2026-04-20 14:32:01.101 [pool-3-thread-1] WARN  com.alipay.mcp.transport.SseConnection - sendRequest - 请求超时或失败: 请求超时
+2026-04-20 14:32:01.104 [OkHttp https://opengw.alipay.com/...] ERROR com.alipay.mcp.transport.SseConnection - SSE 连接失败
+okhttp3.internal.http2.StreamResetException: stream was reset: CANCEL
+	at okhttp3.internal.http2.Http2Stream$FramingSource.read(Http2Stream.kt:355) ~[okhttp-4.9.3.jar:?]
+	at okhttp3.internal.connection.Exchange$ResponseBodySource.read(Exchange.kt:276) ~[okhttp-4.9.3.jar:?]
+	at okio.RealBufferedSource.select(RealBufferedSource.kt:229) ~[okio-2.8.0.jar:?]
+	at okhttp3.internal.sse.ServerSentEventReader.processNextEvent(ServerSentEventReader.kt:50) ~[okhttp-sse-4.9.3.jar:?]
+	at okhttp3.internal.sse.RealEventSource.processResponse(RealEventSource.kt:75) [okhttp-sse-4.9.3.jar:?]
+	at okhttp3.internal.sse.RealEventSource.onResponse(RealEventSource.kt:46) [okhttp-sse-4.9.3.jar:?]
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519) [okhttp-4.9.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_482]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_482]
+	at java.lang.Thread.run(Thread.java:750) [?:1.8.0_482]
+2026-04-20 14:32:01.113 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - 连接已手动关闭，不进行重连
+2026-04-20 14:32:01.197 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - status: 500
+2026-04-20 14:32:01.198 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - body: {"jsonrpc":"2.0","error":{"code":-32603,"message":"系统繁忙"}}
+2026-04-20 14:32:01.411 [OkHttp https://opengw-pre.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 连接打开 - 状态码：200
+2026-04-20 14:32:01.411 [OkHttp https://opengw-pre.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 事件 - type: endpoint,  /api/v1/open/mcps/aidata-convenience-life5/message?sessionId=10af6921-6a9a-41f6-888a-221c6f5ad68f
+2026-04-20 14:32:01.411 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - method: initialize, requestId: 9e1b6ec8-78b0-4510-966e-0074b06d26d0
+2026-04-20 14:32:01.411 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - body: {"jsonrpc":"2.0","id":"9e1b6ec8-78b0-4510-966e-0074b06d26d0","method":"initialize","params":{"capabilities":{},"clientInfo":{"name":"mcp-java-sdk","version":"1.0.0"},"protocolVersion":"2024-11-05"}}
+2026-04-20 14:32:01.412 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - fullUrl: https://opengw-pre.alipay.com/api/v1/open/mcps/aidata-convenience-life5/message?sessionId=10af6921-6a9a-41f6-888a-221c6f5ad68f
+2026-04-20 14:32:01.571 [OkHttp https://opengw-pre.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 事件 - type: message,  {"jsonrpc":"2.0","id":"9e1b6ec8-78b0-4510-966e-0074b06d26d0","result":{"protocolVersion":"2024-11-05","capabilities":{"completions":{},"tools":{"listChanged":false}},"serverInfo":{"name":"AlipayOpenMcpServer","version":"1.0.0"},"instructions":"支付宝开放平台MCP Server"}}
+2026-04-20 14:32:01.571 [OkHttp https://opengw-pre.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg: com.alipay.mcp.protocol.JsonRpcMessage@43003f61
+2026-04-20 14:32:01.571 [OkHttp https://opengw-pre.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg.getId(): 9e1b6ec8-78b0-4510-966e-0074b06d26d0
+2026-04-20 14:32:01.571 [OkHttp https://opengw-pre.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - pendingRequests keys: [9e1b6ec8-78b0-4510-966e-0074b06d26d0]
+2026-04-20 14:32:01.571 [OkHttp https://opengw-pre.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - 匹配到请求，准备返回响应
+2026-04-20 14:32:01.571 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendNotification - method: notifications/initialized, fullUrl: https://opengw-pre.alipay.com/api/v1/open/mcps/aidata-convenience-life5/message?sessionId=10af6921-6a9a-41f6-888a-221c6f5ad68f
+2026-04-20 14:32:01.573 [OkHttp https://opengw-pre.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - status: 200
+2026-04-20 14:32:01.573 [main] INFO  com.alipay.mcp.McpClient - MCP 初始化完成
+2026-04-20 14:32:01.573 [OkHttp https://opengw-pre.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - body: 
+2026-04-20 14:32:01.573 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - method: tools/list, requestId: 54b52d7f-0ba4-4c95-b12a-2e8e41e0dab8
+2026-04-20 14:32:01.573 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - body: {"jsonrpc":"2.0","id":"54b52d7f-0ba4-4c95-b12a-2e8e41e0dab8","method":"tools/list"}
+2026-04-20 14:32:01.573 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - fullUrl: https://opengw-pre.alipay.com/api/v1/open/mcps/aidata-convenience-life5/message?sessionId=10af6921-6a9a-41f6-888a-221c6f5ad68f
+2026-04-20 14:32:01.607 [OkHttp https://opengw-pre.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - sendNotification response: 200
+2026-04-20 14:32:01.618 [OkHttp https://opengw-pre.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 事件 - type: message,  {"jsonrpc":"2.0","id":"54b52d7f-0ba4-4c95-b12a-2e8e41e0dab8","result":{"tools":[{"name":"testOpenApi","title":"","description":"测试API","inputSchema":{"type":"object","properties":{"toolParams":{"type":"object","required":["date","type"],"properties":{"date":{"description":"类型 1：yyyy-mm-dd；类型 2：yyyy-mm；类型 3：yyyy","type":"string"},"type":{"description":"类型1：返回天数据；类型2：返回月数据；类型3：返回年数据","type":"string"}}}}}}]}}
+2026-04-20 14:32:01.618 [OkHttp https://opengw-pre.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg: com.alipay.mcp.protocol.JsonRpcMessage@1a37cb52
+2026-04-20 14:32:01.618 [OkHttp https://opengw-pre.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg.getId(): 54b52d7f-0ba4-4c95-b12a-2e8e41e0dab8
+2026-04-20 14:32:01.618 [OkHttp https://opengw-pre.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - pendingRequests keys: [54b52d7f-0ba4-4c95-b12a-2e8e41e0dab8]
+2026-04-20 14:32:01.618 [OkHttp https://opengw-pre.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - 匹配到请求，准备返回响应
+2026-04-20 14:32:01.618 [OkHttp https://opengw-pre.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - status: 200
+2026-04-20 14:32:01.618 [OkHttp https://opengw-pre.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - body: 
+2026-04-20 14:32:01.623 [OkHttp https://opengw-pre.alipay.com/...] ERROR com.alipay.mcp.transport.SseConnection - SSE 连接失败
+okhttp3.internal.http2.StreamResetException: stream was reset: CANCEL
+	at okhttp3.internal.http2.Http2Stream$FramingSource.read(Http2Stream.kt:355) ~[okhttp-4.9.3.jar:?]
+	at okhttp3.internal.connection.Exchange$ResponseBodySource.read(Exchange.kt:276) ~[okhttp-4.9.3.jar:?]
+	at okio.RealBufferedSource.select(RealBufferedSource.kt:229) ~[okio-2.8.0.jar:?]
+	at okhttp3.internal.sse.ServerSentEventReader.processNextEvent(ServerSentEventReader.kt:50) ~[okhttp-sse-4.9.3.jar:?]
+	at okhttp3.internal.sse.RealEventSource.processResponse(RealEventSource.kt:75) [okhttp-sse-4.9.3.jar:?]
+	at okhttp3.internal.sse.RealEventSource.onResponse(RealEventSource.kt:46) [okhttp-sse-4.9.3.jar:?]
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519) [okhttp-4.9.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_482]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_482]
+	at java.lang.Thread.run(Thread.java:750) [?:1.8.0_482]
+2026-04-20 14:32:01.623 [OkHttp https://opengw-pre.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - 连接已手动关闭，不进行重连
+2026-04-20 14:32:01.773 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 连接打开 - 状态码：200
+2026-04-20 14:32:01.774 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 事件 - type: endpoint,  /api/v1/open/mcps/aidata-convenience-life5/message?sessionId=9eb19121-6ed6-4043-bc22-58bc03276f27
+2026-04-20 14:32:01.774 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - method: initialize, requestId: c11182fa-7676-4c48-92a1-27aee7ebe6d6
+2026-04-20 14:32:01.774 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - body: {"jsonrpc":"2.0","id":"c11182fa-7676-4c48-92a1-27aee7ebe6d6","method":"initialize","params":{"capabilities":{},"clientInfo":{"name":"mcp-java-sdk","version":"1.0.0"},"protocolVersion":"2024-11-05"}}
+2026-04-20 14:32:01.774 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - fullUrl: https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/message?sessionId=9eb19121-6ed6-4043-bc22-58bc03276f27
+2026-04-20 14:32:01.868 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 事件 - type: message,  {"jsonrpc":"2.0","id":"c11182fa-7676-4c48-92a1-27aee7ebe6d6","result":{"protocolVersion":"2024-11-05","capabilities":{"completions":{},"tools":{"listChanged":false}},"serverInfo":{"name":"AlipayOpenMcpServer","version":"1.0.0"},"instructions":"支付宝开放平台MCP Server"}}
+2026-04-20 14:32:01.868 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg: com.alipay.mcp.protocol.JsonRpcMessage@68ef9d30
+2026-04-20 14:32:01.868 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg.getId(): c11182fa-7676-4c48-92a1-27aee7ebe6d6
+2026-04-20 14:32:01.868 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - pendingRequests keys: [c11182fa-7676-4c48-92a1-27aee7ebe6d6]
+2026-04-20 14:32:01.868 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - 匹配到请求，准备返回响应
+2026-04-20 14:32:01.868 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendNotification - method: notifications/initialized, fullUrl: https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/message?sessionId=9eb19121-6ed6-4043-bc22-58bc03276f27
+2026-04-20 14:32:01.869 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - status: 200
+2026-04-20 14:32:01.869 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - body: 
+2026-04-20 14:32:01.870 [main] INFO  com.alipay.mcp.McpClient - MCP 初始化完成
+2026-04-20 14:32:01.871 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - method: tools/list, requestId: e9a9db55-012e-4df9-be1e-7027600d0a22
+2026-04-20 14:32:01.871 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - body: {"jsonrpc":"2.0","id":"e9a9db55-012e-4df9-be1e-7027600d0a22","method":"tools/list"}
+2026-04-20 14:32:01.871 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - fullUrl: https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/message?sessionId=9eb19121-6ed6-4043-bc22-58bc03276f27
+2026-04-20 14:32:01.942 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - sendNotification response: 200
+2026-04-20 14:32:01.987 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 事件 - type: message,  {"jsonrpc":"2.0","id":"e9a9db55-012e-4df9-be1e-7027600d0a22","result":{"tools":[{"name":"testOpenApi","title":"","description":"测试API","inputSchema":{"type":"object","properties":{"toolParams":{"type":"object","required":["date","type"],"properties":{"date":{"description":"类型 1：yyyy-mm-dd；类型 2：yyyy-mm；类型 3：yyyy","type":"string"},"type":{"description":"类型1：返回天数据；类型2：返回月数据；类型3：返回年数据","type":"string"}}}}}}]}}
+2026-04-20 14:32:01.987 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg: com.alipay.mcp.protocol.JsonRpcMessage@5dfbd6c4
+2026-04-20 14:32:01.987 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg.getId(): e9a9db55-012e-4df9-be1e-7027600d0a22
+2026-04-20 14:32:01.987 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - status: 200
+2026-04-20 14:32:01.987 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - pendingRequests keys: [e9a9db55-012e-4df9-be1e-7027600d0a22]
+2026-04-20 14:32:01.987 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - 匹配到请求，准备返回响应
+2026-04-20 14:32:01.987 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - body: 
+2026-04-20 14:32:01.988 [OkHttp https://opengw.alipay.com/...] ERROR com.alipay.mcp.transport.SseConnection - SSE 连接失败
+okhttp3.internal.http2.StreamResetException: stream was reset: CANCEL
+	at okhttp3.internal.http2.Http2Stream$FramingSource.read(Http2Stream.kt:355) ~[okhttp-4.9.3.jar:?]
+	at okhttp3.internal.connection.Exchange$ResponseBodySource.read(Exchange.kt:276) ~[okhttp-4.9.3.jar:?]
+	at okio.RealBufferedSource.select(RealBufferedSource.kt:229) ~[okio-2.8.0.jar:?]
+	at okhttp3.internal.sse.ServerSentEventReader.processNextEvent(ServerSentEventReader.kt:50) ~[okhttp-sse-4.9.3.jar:?]
+	at okhttp3.internal.sse.RealEventSource.processResponse(RealEventSource.kt:75) [okhttp-sse-4.9.3.jar:?]
+	at okhttp3.internal.sse.RealEventSource.onResponse(RealEventSource.kt:46) [okhttp-sse-4.9.3.jar:?]
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519) [okhttp-4.9.3.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_482]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_482]
+	at java.lang.Thread.run(Thread.java:750) [?:1.8.0_482]
+2026-04-20 14:32:01.989 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - 连接已手动关闭，不进行重连
+2026-04-20 14:44:24.185 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 连接打开 - 状态码：200
+2026-04-20 14:44:24.189 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 事件 - type: endpoint,  /api/v1/open/mcps/aidata-convenience-life5/message?sessionId=80663721-0cd1-4110-8a1b-c0944a2ee9db
+2026-04-20 14:44:24.196 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - method: initialize, requestId: a30a3622-fc7f-4549-9e02-2d8d651d5073
+2026-04-20 14:44:24.196 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - body: {"jsonrpc":"2.0","id":"a30a3622-fc7f-4549-9e02-2d8d651d5073","method":"initialize","params":{"capabilities":{},"clientInfo":{"name":"mcp-java-sdk","version":"1.0.0"},"protocolVersion":"2024-11-05"}}
+2026-04-20 14:44:24.210 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - fullUrl: https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/message?sessionId=80663721-0cd1-4110-8a1b-c0944a2ee9db
+2026-04-20 14:44:24.343 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 事件 - type: message,  {"jsonrpc":"2.0","id":"a30a3622-fc7f-4549-9e02-2d8d651d5073","result":{"protocolVersion":"2024-11-05","capabilities":{"completions":{},"tools":{"listChanged":false}},"serverInfo":{"name":"AlipayOpenMcpServer","version":"1.0.0"},"instructions":"支付宝开放平台MCP Server"}}
+2026-04-20 14:44:24.345 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - status: 200
+2026-04-20 14:44:24.346 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - body: 
+2026-04-20 14:44:24.348 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg: com.alipay.mcp.protocol.JsonRpcMessage@4be2985d
+2026-04-20 14:44:24.348 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg.getId(): a30a3622-fc7f-4549-9e02-2d8d651d5073
+2026-04-20 14:44:24.349 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - pendingRequests keys: [a30a3622-fc7f-4549-9e02-2d8d651d5073]
+2026-04-20 14:44:24.350 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - 匹配到请求，准备返回响应
+2026-04-20 14:44:24.350 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendNotification - method: notifications/initialized, fullUrl: https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/message?sessionId=80663721-0cd1-4110-8a1b-c0944a2ee9db
+2026-04-20 14:44:24.355 [main] INFO  com.alipay.mcp.McpClient - MCP 初始化完成
+2026-04-20 14:44:27.787 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - sendNotification response: 200
+2026-04-20 14:44:27.786 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - method: tools/list, requestId: d3d8f172-0db8-4b76-95be-4b6a8d449c70
+2026-04-20 14:44:27.787 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - body: {"jsonrpc":"2.0","id":"d3d8f172-0db8-4b76-95be-4b6a8d449c70","method":"tools/list"}
+2026-04-20 14:44:27.788 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - fullUrl: https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/message?sessionId=80663721-0cd1-4110-8a1b-c0944a2ee9db
+2026-04-20 14:44:32.295 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 事件 - type: message,  {"jsonrpc":"2.0","id":"d3d8f172-0db8-4b76-95be-4b6a8d449c70","result":{"tools":[{"name":"testOpenApi","title":"","description":"测试API","inputSchema":{"type":"object","properties":{"toolParams":{"type":"object","required":["date","type"],"properties":{"date":{"description":"类型 1：yyyy-mm-dd；类型 2：yyyy-mm；类型 3：yyyy","type":"string"},"type":{"description":"类型1：返回天数据；类型2：返回月数据；类型3：返回年数据","type":"string"}}}}}}]}}
+2026-04-20 14:44:32.296 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - status: 200
+2026-04-20 14:44:32.298 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - body: 
+2026-04-20 14:44:32.298 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg: com.alipay.mcp.protocol.JsonRpcMessage@38e6362f
+2026-04-20 14:44:32.299 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg.getId(): d3d8f172-0db8-4b76-95be-4b6a8d449c70
+2026-04-20 14:44:32.300 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - pendingRequests keys: [d3d8f172-0db8-4b76-95be-4b6a8d449c70]
+2026-04-20 14:44:32.300 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - 匹配到请求，准备返回响应
+2026-04-20 14:45:07.436 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 事件 - type: message,  {"jsonrpc":"2.0","method":"notifications/message"}
+2026-04-20 14:45:10.302 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg: com.alipay.mcp.protocol.JsonRpcMessage@98746f5
+2026-04-20 14:45:10.303 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg.getId(): null
+2026-04-20 14:45:10.304 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - pendingRequests keys: []
+2026-04-20 14:45:10.305 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - 未匹配到请求，作为通知处理
+2026-04-20 14:45:39.796 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - method: tools/call, requestId: a918feed-1bf2-4ad1-9bb0-67b8a2b45fab
+2026-04-20 14:45:39.797 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - body: {"jsonrpc":"2.0","id":"a918feed-1bf2-4ad1-9bb0-67b8a2b45fab","method":"tools/call","params":{"name":"testOpenApi","arguments":{"toolParams":{"date":"2024-01-01","type":"1"}}}}
+2026-04-20 14:45:39.798 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - fullUrl: https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/message?sessionId=80663721-0cd1-4110-8a1b-c0944a2ee9db
+2026-04-20 14:45:41.193 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - status: 404
+2026-04-20 14:45:41.194 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - body: {"timestamp":"2026-04-20T06:45:41.205+00:00","status":404,"error":"Not Found","path":"/api/v1/open/mcps/aidata-convenience-life5/message"}
+2026-04-20 14:45:41.195 [OkHttp https://opengw.alipay.com/...] WARN  com.alipay.mcp.transport.SseConnection - sendRequest - 请求超时或失败: HTTP 错误：404, body: {"timestamp":"2026-04-20T06:45:41.205+00:00","status":404,"error":"Not Found","path":"/api/v1/open/mcps/aidata-convenience-life5/message"}
+2026-04-20 14:46:12.251 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 事件 - type: message,  {"jsonrpc":"2.0","method":"notifications/message"}
+2026-04-20 14:46:12.252 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg: com.alipay.mcp.protocol.JsonRpcMessage@572f502b
+2026-04-20 14:46:12.252 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg.getId(): null
+2026-04-20 14:46:12.253 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - pendingRequests keys: []
+2026-04-20 14:46:12.253 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - 未匹配到请求，作为通知处理
+2026-04-20 14:46:12.256 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 连接已关闭
+2026-04-20 14:46:12.257 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - 连接已手动关闭，不进行重连
+2026-04-20 14:46:13.281 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 连接打开 - 状态码：200
+2026-04-20 14:46:13.282 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 事件 - type: endpoint,  /api/v1/open/mcps/aidata-convenience-life5/message?sessionId=0725aa21-a393-4a39-92f5-4ba67194e1a6
+2026-04-20 14:46:13.283 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - method: initialize, requestId: 0e3bb4c5-ffbd-45ff-8a1e-285ae7ad9507
+2026-04-20 14:46:13.283 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - body: {"jsonrpc":"2.0","id":"0e3bb4c5-ffbd-45ff-8a1e-285ae7ad9507","method":"initialize","params":{"capabilities":{},"clientInfo":{"name":"mcp-java-sdk","version":"1.0.0"},"protocolVersion":"2024-11-05"}}
+2026-04-20 14:46:13.283 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - fullUrl: https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/message?sessionId=0725aa21-a393-4a39-92f5-4ba67194e1a6
+2026-04-20 14:46:13.355 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 事件 - type: message,  {"jsonrpc":"2.0","id":"0e3bb4c5-ffbd-45ff-8a1e-285ae7ad9507","result":{"protocolVersion":"2024-11-05","capabilities":{"completions":{},"tools":{"listChanged":false}},"serverInfo":{"name":"AlipayOpenMcpServer","version":"1.0.0"},"instructions":"支付宝开放平台MCP Server"}}
+2026-04-20 14:46:13.355 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg: com.alipay.mcp.protocol.JsonRpcMessage@5be31405
+2026-04-20 14:46:13.355 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg.getId(): 0e3bb4c5-ffbd-45ff-8a1e-285ae7ad9507
+2026-04-20 14:46:13.355 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - pendingRequests keys: [0e3bb4c5-ffbd-45ff-8a1e-285ae7ad9507]
+2026-04-20 14:46:13.356 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - 匹配到请求，准备返回响应
+2026-04-20 14:46:13.356 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - status: 200
+2026-04-20 14:46:13.356 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendNotification - method: notifications/initialized, fullUrl: https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/message?sessionId=0725aa21-a393-4a39-92f5-4ba67194e1a6
+2026-04-20 14:46:13.356 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - body: 
+2026-04-20 14:46:13.359 [main] INFO  com.alipay.mcp.McpClient - MCP 初始化完成
+2026-04-20 14:46:15.251 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - method: tools/list, requestId: aec905a0-e036-4f1e-a9d0-c73df82c900e
+2026-04-20 14:46:15.252 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - body: {"jsonrpc":"2.0","id":"aec905a0-e036-4f1e-a9d0-c73df82c900e","method":"tools/list"}
+2026-04-20 14:46:15.252 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - fullUrl: https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/message?sessionId=0725aa21-a393-4a39-92f5-4ba67194e1a6
+2026-04-20 14:46:15.252 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - sendNotification response: 200
+2026-04-20 14:46:15.612 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 事件 - type: message,  {"jsonrpc":"2.0","id":"aec905a0-e036-4f1e-a9d0-c73df82c900e","result":{"tools":[{"name":"testOpenApi","title":"","description":"测试API","inputSchema":{"type":"object","properties":{"toolParams":{"type":"object","required":["date","type"],"properties":{"date":{"description":"类型 1：yyyy-mm-dd；类型 2：yyyy-mm；类型 3：yyyy","type":"string"},"type":{"description":"类型1：返回天数据；类型2：返回月数据；类型3：返回年数据","type":"string"}}}}}}]}}
+2026-04-20 14:46:15.614 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg: com.alipay.mcp.protocol.JsonRpcMessage@8fed89d
+2026-04-20 14:46:15.615 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - status: 200
+2026-04-20 14:46:15.615 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg.getId(): aec905a0-e036-4f1e-a9d0-c73df82c900e
+2026-04-20 14:46:15.616 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - body: 
+2026-04-20 14:46:15.617 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - pendingRequests keys: [aec905a0-e036-4f1e-a9d0-c73df82c900e]
+2026-04-20 14:46:15.620 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - 匹配到请求，准备返回响应
+2026-04-20 14:46:16.451 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - method: tools/list, requestId: 7250f5fc-b654-4b6a-994d-87afd2f38e5f
+2026-04-20 14:46:16.451 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - body: {"jsonrpc":"2.0","id":"7250f5fc-b654-4b6a-994d-87afd2f38e5f","method":"tools/list"}
+2026-04-20 14:46:16.451 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - fullUrl: https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/message?sessionId=0725aa21-a393-4a39-92f5-4ba67194e1a6
+2026-04-20 14:46:16.604 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 事件 - type: message,  {"jsonrpc":"2.0","id":"7250f5fc-b654-4b6a-994d-87afd2f38e5f","result":{"tools":[{"name":"testOpenApi","title":"","description":"测试API","inputSchema":{"type":"object","properties":{"toolParams":{"type":"object","required":["date","type"],"properties":{"date":{"description":"类型 1：yyyy-mm-dd；类型 2：yyyy-mm；类型 3：yyyy","type":"string"},"type":{"description":"类型1：返回天数据；类型2：返回月数据；类型3：返回年数据","type":"string"}}}}}}]}}
+2026-04-20 14:46:16.607 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - status: 200
+2026-04-20 14:46:16.608 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg: com.alipay.mcp.protocol.JsonRpcMessage@60eb3fff
+2026-04-20 14:46:16.608 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg.getId(): 7250f5fc-b654-4b6a-994d-87afd2f38e5f
+2026-04-20 14:46:16.608 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - body: 
+2026-04-20 14:46:16.609 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - pendingRequests keys: [7250f5fc-b654-4b6a-994d-87afd2f38e5f]
+2026-04-20 14:46:16.609 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - 匹配到请求，准备返回响应
+2026-04-20 14:46:16.611 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 连接已关闭
+2026-04-20 14:46:16.612 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - 连接已手动关闭，不进行重连
+2026-04-20 14:46:18.184 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 连接打开 - 状态码：200
+2026-04-20 14:46:18.184 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 事件 - type: endpoint,  /api/v1/open/mcps/aidata-convenience-life5/message?sessionId=43f66621-95b0-4528-973f-5ac0d6ccdac0
+2026-04-20 14:46:18.185 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - method: initialize, requestId: 712451cf-554b-4a04-90a2-5e2f826de081
+2026-04-20 14:46:18.185 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - body: {"jsonrpc":"2.0","id":"712451cf-554b-4a04-90a2-5e2f826de081","method":"initialize","params":{"capabilities":{},"clientInfo":{"name":"mcp-java-sdk","version":"1.0.0"},"protocolVersion":"2024-11-05"}}
+2026-04-20 14:46:18.185 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - fullUrl: https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/message?sessionId=43f66621-95b0-4528-973f-5ac0d6ccdac0
+2026-04-20 14:46:18.237 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 事件 - type: message,  {"jsonrpc":"2.0","id":"712451cf-554b-4a04-90a2-5e2f826de081","result":{"protocolVersion":"2024-11-05","capabilities":{"completions":{},"tools":{"listChanged":false}},"serverInfo":{"name":"AlipayOpenMcpServer","version":"1.0.0"},"instructions":"支付宝开放平台MCP Server"}}
+2026-04-20 14:46:18.238 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg: com.alipay.mcp.protocol.JsonRpcMessage@e8ff488
+2026-04-20 14:46:18.238 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg.getId(): 712451cf-554b-4a04-90a2-5e2f826de081
+2026-04-20 14:46:18.238 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - pendingRequests keys: [712451cf-554b-4a04-90a2-5e2f826de081]
+2026-04-20 14:46:18.238 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - 匹配到请求，准备返回响应
+2026-04-20 14:46:18.238 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendNotification - method: notifications/initialized, fullUrl: https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/message?sessionId=43f66621-95b0-4528-973f-5ac0d6ccdac0
+2026-04-20 14:46:18.239 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - status: 200
+2026-04-20 14:46:18.239 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - body: 
+2026-04-20 14:46:18.243 [main] INFO  com.alipay.mcp.McpClient - MCP 初始化完成
+2026-04-20 14:46:19.869 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - method: tools/list, requestId: 00db2adb-0936-4bdd-a5aa-a520ddbae8e7
+2026-04-20 14:46:19.870 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - body: {"jsonrpc":"2.0","id":"00db2adb-0936-4bdd-a5aa-a520ddbae8e7","method":"tools/list"}
+2026-04-20 14:46:19.870 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - sendNotification response: 200
+2026-04-20 14:46:19.870 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - fullUrl: https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/message?sessionId=43f66621-95b0-4528-973f-5ac0d6ccdac0
+2026-04-20 14:46:19.923 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 事件 - type: message,  {"jsonrpc":"2.0","id":"00db2adb-0936-4bdd-a5aa-a520ddbae8e7","result":{"tools":[{"name":"testOpenApi","title":"","description":"测试API","inputSchema":{"type":"object","properties":{"toolParams":{"type":"object","required":["date","type"],"properties":{"date":{"description":"类型 1：yyyy-mm-dd；类型 2：yyyy-mm；类型 3：yyyy","type":"string"},"type":{"description":"类型1：返回天数据；类型2：返回月数据；类型3：返回年数据","type":"string"}}}}}}]}}
+2026-04-20 14:46:19.924 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg: com.alipay.mcp.protocol.JsonRpcMessage@46c36912
+2026-04-20 14:46:19.924 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg.getId(): 00db2adb-0936-4bdd-a5aa-a520ddbae8e7
+2026-04-20 14:46:19.924 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - pendingRequests keys: [00db2adb-0936-4bdd-a5aa-a520ddbae8e7]
+2026-04-20 14:46:19.924 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - 匹配到请求，准备返回响应
+2026-04-20 14:46:19.924 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - status: 200
+2026-04-20 14:46:19.924 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - body: 
+2026-04-20 14:46:19.926 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 连接已关闭
+2026-04-20 14:46:19.926 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - 连接已手动关闭，不进行重连
+2026-04-20 14:47:12.570 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 连接打开 - 状态码：200
+2026-04-20 14:47:12.573 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 事件 - type: endpoint,  /api/v1/open/mcps/aidata-convenience-life5/message?sessionId=401ef021-5ed6-4a43-9e22-99e150f3a01c
+2026-04-20 14:47:12.576 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - method: initialize, requestId: 25b1ebf5-a152-418d-bc07-0a633610135b
+2026-04-20 14:47:12.577 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - body: {"jsonrpc":"2.0","id":"25b1ebf5-a152-418d-bc07-0a633610135b","method":"initialize","params":{"capabilities":{},"clientInfo":{"name":"mcp-java-sdk","version":"1.0.0"},"protocolVersion":"2024-11-05"}}
+2026-04-20 14:47:12.583 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - fullUrl: https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/message?sessionId=401ef021-5ed6-4a43-9e22-99e150f3a01c
+2026-04-20 14:47:12.645 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 事件 - type: message,  {"jsonrpc":"2.0","id":"25b1ebf5-a152-418d-bc07-0a633610135b","result":{"protocolVersion":"2024-11-05","capabilities":{"completions":{},"tools":{"listChanged":false}},"serverInfo":{"name":"AlipayOpenMcpServer","version":"1.0.0"},"instructions":"支付宝开放平台MCP Server"}}
+2026-04-20 14:47:12.647 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg: com.alipay.mcp.protocol.JsonRpcMessage@499bc9bf
+2026-04-20 14:47:12.647 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg.getId(): 25b1ebf5-a152-418d-bc07-0a633610135b
+2026-04-20 14:47:12.647 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - pendingRequests keys: [25b1ebf5-a152-418d-bc07-0a633610135b]
+2026-04-20 14:47:12.648 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - 匹配到请求，准备返回响应
+2026-04-20 14:47:12.648 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendNotification - method: notifications/initialized, fullUrl: https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/message?sessionId=401ef021-5ed6-4a43-9e22-99e150f3a01c
+2026-04-20 14:47:12.649 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - status: 200
+2026-04-20 14:47:12.650 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - body: 
+2026-04-20 14:47:12.652 [main] INFO  com.alipay.mcp.McpClient - MCP 初始化完成
+2026-04-20 14:47:12.652 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - method: tools/list, requestId: 7f1e03e6-9ace-4ec0-8eb7-8da1dc5aff10
+2026-04-20 14:47:12.652 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - body: {"jsonrpc":"2.0","id":"7f1e03e6-9ace-4ec0-8eb7-8da1dc5aff10","method":"tools/list"}
+2026-04-20 14:47:12.652 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - fullUrl: https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/message?sessionId=401ef021-5ed6-4a43-9e22-99e150f3a01c
+2026-04-20 14:47:12.702 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - sendNotification response: 200
+2026-04-20 14:47:12.716 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 事件 - type: message,  {"jsonrpc":"2.0","id":"7f1e03e6-9ace-4ec0-8eb7-8da1dc5aff10","result":{"tools":[{"name":"testOpenApi","title":"","description":"测试API","inputSchema":{"type":"object","properties":{"toolParams":{"type":"object","required":["date","type"],"properties":{"date":{"description":"类型 1：yyyy-mm-dd；类型 2：yyyy-mm；类型 3：yyyy","type":"string"},"type":{"description":"类型1：返回天数据；类型2：返回月数据；类型3：返回年数据","type":"string"}}}}}}]}}
+2026-04-20 14:47:12.716 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg: com.alipay.mcp.protocol.JsonRpcMessage@a0802d8
+2026-04-20 14:47:12.716 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg.getId(): 7f1e03e6-9ace-4ec0-8eb7-8da1dc5aff10
+2026-04-20 14:47:12.716 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - pendingRequests keys: [7f1e03e6-9ace-4ec0-8eb7-8da1dc5aff10]
+2026-04-20 14:47:12.716 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - 匹配到请求，准备返回响应
+2026-04-20 14:47:12.717 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - status: 200
+2026-04-20 14:47:12.718 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - body: 
+2026-04-20 14:47:20.580 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - method: tools/call, requestId: cda1a544-0826-4cab-97d4-59b3ff4ed022
+2026-04-20 14:47:20.581 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - body: {"jsonrpc":"2.0","id":"cda1a544-0826-4cab-97d4-59b3ff4ed022","method":"tools/call","params":{"name":"testOpenApi","arguments":{"toolParams":{"date":"2024-01-01","type":"1"}}}}
+2026-04-20 14:47:20.581 [main] DEBUG com.alipay.mcp.transport.SseConnection - sendRequest - fullUrl: https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/message?sessionId=401ef021-5ed6-4a43-9e22-99e150f3a01c
+2026-04-20 14:47:21.747 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 事件 - type: message,  {"jsonrpc":"2.0","id":"cda1a544-0826-4cab-97d4-59b3ff4ed022","error":{"code":-32603,"message":"请求异常, insufficient-isv-permissions: ISV权限不足, null"}}
+2026-04-20 14:47:21.748 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - status: 200
+2026-04-20 14:47:21.748 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg: com.alipay.mcp.protocol.JsonRpcMessage@67cdaace
+2026-04-20 14:47:21.748 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - msg.getId(): cda1a544-0826-4cab-97d4-59b3ff4ed022
+2026-04-20 14:47:21.748 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - HTTP onResponse - body: 
+2026-04-20 14:47:21.748 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - pendingRequests keys: [cda1a544-0826-4cab-97d4-59b3ff4ed022]
+2026-04-20 14:47:21.749 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - handleMessage - 匹配到请求，准备返回响应
+2026-04-20 14:47:33.231 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - SSE 连接已关闭
+2026-04-20 14:47:33.231 [OkHttp https://opengw.alipay.com/...] DEBUG com.alipay.mcp.transport.SseConnection - 连接已手动关闭，不进行重连

@@ -202,16 +202,43 @@ public class AlipayEbppInvoiceApplystatusApi {
      </table>
      */
     public ApiResponse<AlipayEbppInvoiceApplystatusQueryResponseModel> queryWithHttpInfo(AlipayEbppInvoiceApplystatusQueryModel alipayEbppInvoiceApplystatusQueryModel, CustomizedParams customizedParams) throws ApiException {
+        System.out.println("========== AlipayEbppInvoiceApplyStatusApi.queryWithHttpInfo START ==========");
+        System.out.println("[REQUEST] URL: /v3/alipay/ebpp/invoice/applystatus/query");
+        System.out.println("[REQUEST] Method: POST");
+        System.out.println("[REQUEST] Content-Type: application/json");
+        System.out.println("[REQUEST] customizedParams: " + (customizedParams != null ? customizedParams.toString() : "null"));
+        System.out.println("[REQUEST] QueryModel: " + (alipayEbppInvoiceApplystatusQueryModel != null ? alipayEbppInvoiceApplystatusQueryModel.toString() : "null"));
+        if (customizedParams != null) {
+            System.out.println("[REQUEST] AppAuthToken: " + customizedParams.getAppAuthToken());
+            System.out.println("[REQUEST] BodyContent: " + customizedParams.getBodyContent());
+            System.out.println("[REQUEST] QueryParams: " + customizedParams.getQueryParams());
+            System.out.println("[REQUEST] HeaderParams: " + customizedParams.getHeaderParams());
+        }
         okhttp3.Call localVarCall = queryValidateBeforeCall(alipayEbppInvoiceApplystatusQueryModel, null, customizedParams);
+        System.out.println("[CALL] Request created: " + localVarCall.request());
+        System.out.println("[CALL] Request headers: " + localVarCall.request().headers());
+        System.out.println("[CALL] Request body: " + localVarCall.request().body());
         try {
             Type localVarReturnType = new TypeToken<AlipayEbppInvoiceApplystatusQueryResponseModel>(){}.getType();
-            return localVarApiClient.execute(localVarCall, localVarReturnType);
+            ApiResponse<AlipayEbppInvoiceApplystatusQueryResponseModel> response = localVarApiClient.execute(localVarCall, localVarReturnType);
+            System.out.println("[RESPONSE] StatusCode: " + response.getStatusCode());
+            System.out.println("[RESPONSE] Headers: " + response.getHeaders());
+            System.out.println("[RESPONSE] Data: " + (response.getData() != null ? response.getData().toString() : "null"));
+            System.out.println("========== AlipayEbppInvoiceApplyStatusApi.queryWithHttpInfo END ==========");
+            return response;
         } catch (ApiException e) {
+            System.out.println("[ERROR] ApiException: " + e.getMessage());
+            System.out.println("[ERROR] StatusCode: " + e.getCode());
+            System.out.println("[ERROR] ResponseBody: " + e.getResponseBody());
+            System.out.println("[ERROR] Headers: " + e.getResponseHeaders());
             try {
                 e.setErrorObject(localVarApiClient.getJSON().getGson().fromJson(e.getResponseBody(), new TypeToken<AlipayEbppInvoiceApplystatusQueryDefaultResponse>(){}.getType()));
             } catch (Exception ex) {
-                AlipayLogger.logBizWarn(ex);
+                System.out.println("[ERROR] Parse error response failed: " + ex.getMessage());
+                ex.printStackTrace();
             }
+            e.printStackTrace();
+            System.out.println("========== AlipayEbppInvoiceApplyStatusApi.queryWithHttpInfo END ==========");
             throw e;
         }
     }
