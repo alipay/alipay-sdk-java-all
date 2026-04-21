@@ -60,8 +60,8 @@ class PrivateKeyLoaderTest {
     void testLoadFromStringWithWhitespace() {
         System.out.println("=== 测试带换行和空格的私钥加载 ===");
 
-        // 添加额外的空白字符
-        String keyWithWhitespace = TEST_PRIVATE_KEY.replaceAll(" ", "\\n");
+        // 添加额外的空白字符（模拟真实 PEM 格式）
+        String keyWithWhitespace = TEST_PRIVATE_KEY.replace(" ", "\n");
 
         PrivateKey loadedKey = PrivateKeyLoader.loadFromString(keyWithWhitespace);
 

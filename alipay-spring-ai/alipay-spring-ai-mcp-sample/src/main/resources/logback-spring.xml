@@ -10,7 +10,7 @@
     <!-- MCP 传输专用日志文件 -->
     <appender name="MCP_TRANSPORT_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>logs/mcp-transport.log</file>
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
             <fileNamePattern>logs/mcp-transport.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
             <maxHistory>30</maxHistory>
             <maxFileSize>100MB</maxFileSize>
@@ -23,7 +23,7 @@
     <!-- HTTP 请求/响应日志 -->
     <appender name="MCP_HTTP_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>logs/mcp-http.log</file>
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
             <fileNamePattern>logs/mcp-http.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
             <maxHistory>7</maxHistory>
             <maxFileSize>100MB</maxFileSize>

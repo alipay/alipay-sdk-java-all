@@ -1,15 +1,12 @@
 package com.alipay.mcp.springai.integration;
 
 import com.alipay.mcp.springai.client.AlipayMcpClient;
-import com.alipay.mcp.springai.util.PrivateKeyLoader;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.EnabledIfEnvironmentVariable;
 import reactor.core.publisher.Flux;
 import reactor.test.StepVerifier;
 
-import java.security.PrivateKey;
-import java.time.Duration;
 import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -30,6 +27,7 @@ class AlipayMcpClientIntegrationTest {
     private static final String APP_ID = System.getenv("ALIPAY_APP_ID");
     private static final String PRIVATE_KEY = System.getenv("ALIPAY_PRIVATE_KEY");
     private static final String SSE_ENDPOINT = System.getenv("ALIPAY_SSE_ENDPOINT");
+    private static final String DEFAULT_SSE_ENDPOINT = "https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/sse";
 
     private AlipayMcpClient client;
 
@@ -37,12 +35,12 @@ class AlipayMcpClientIntegrationTest {
     void setUp() {
         assumeEnvironmentConfigured();
 
-        PrivateKey privateKey = PrivateKeyLoader.loadFromString(PRIVATE_KEY);
-        client = new AlipayMcpClient(APP_ID, privateKey, SSE_ENDPOINT);
+        String endpoint = (SSE_ENDPOINT != null && !SSE_ENDPOINT.isEmpty()) ? SSE_ENDPOINT : DEFAULT_SSE_ENDPOINT;
+        client = new AlipayMcpClient(APP_ID, PRIVATE_KEY, endpoint);
 
         System.out.println("=== 初始化 AlipayMcpClient ===");
         System.out.println("App ID: " + APP_ID);
-        System.out.println("SSE Endpoint: " + SSE_ENDPOINT);
+        System.out.println("SSE Endpoint: " + endpoint);
     }
 
     @Test
@@ -151,10 +149,6 @@ class AlipayMcpClientIntegrationTest {
         }
         if (PRIVATE_KEY == null || PRIVATE_KEY.isEmpty()) {
             System.out.println("跳过测试：未设置环境变量 ALIPAY_PRIVATE_KEY");
-            org.junit.jupiter.api.Assumptions.assumeTrue(false);
-        }
-        if (SSE_ENDPOINT == null || SSE_ENDPOINT.isEmpty()) {
-            System.out.println("跳过测试：未设置环境变量 ALIPAY_SSE_ENDPOINT");
             org.junit.jupiter.api.Assumptions.assumeTrue(false);
         }
     }

@@ -2,12 +2,12 @@ package com.alipay.mcp.sample.controller;
 
 import com.alipay.mcp.springai.client.AlipayMcpClient;
 import io.modelcontextprotocol.spec.McpSchema;
-import org.springframework.ai.chat.client.ChatClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
+import reactor.core.scheduler.Schedulers;
 
 import java.util.List;
 import java.util.Map;
@@ -32,7 +32,8 @@ public class PaymentAgentController {
      */
     @GetMapping("/tools")
     public Mono<List<McpSchema.Tool>> listTools() {
-        return Mono.fromCallable(mcpClient::listTools);
+        return Mono.fromCallable(mcpClient::listTools)
+            .subscribeOn(Schedulers.boundedElastic());
     }
 
     /**
@@ -51,7 +52,8 @@ public class PaymentAgentController {
             @PathVariable String toolName,
             @RequestBody Map<String, Object> args) {
         log.info("Calling tool: {} with args: {}", toolName, args);
-        return Mono.fromCallable(() -> mcpClient.callTool(toolName, args));
+        return Mono.fromCallable(() -> mcpClient.callTool(toolName, args))
+            .subscribeOn(Schedulers.boundedElastic());
     }
 
     /**
@@ -77,6 +79,6 @@ public class PaymentAgentController {
                 "toolCount", tools.size(),
                 "clientInfo", mcpClient.getClientInfo()
             );
-        });
+        }).subscribeOn(Schedulers.boundedElastic());
     }
 }

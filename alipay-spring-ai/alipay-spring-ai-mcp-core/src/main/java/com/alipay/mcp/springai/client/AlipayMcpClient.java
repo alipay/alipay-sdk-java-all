@@ -1,10 +1,11 @@
 package com.alipay.mcp.springai.client;
 
-import com.alipay.mcp.springai.transport.AlipayAuthInterceptor;
 import com.alipay.mcp.springai.transport.AlipayMcpException;
 import com.alipay.mcp.springai.transport.AlipaySseMcpTransport;
+import io.modelcontextprotocol.client.McpAsyncClient;
 import io.modelcontextprotocol.client.McpClient;
 import io.modelcontextprotocol.client.McpSyncClient;
+import io.modelcontextprotocol.spec.McpClientTransport;
 import io.modelcontextprotocol.spec.McpSchema;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,36 +21,123 @@ import java.util.stream.Collectors;
 
 /**
  * 支付宝 MCP Client
- * 封装 Spring AI MCP 客户端，提供流式工具调用
+ * 封装 MCP Java SDK，提供同步和流式工具调用
  */
 public class AlipayMcpClient implements AutoCloseable {
 
     private static final Logger log = LoggerFactory.getLogger(AlipayMcpClient.class);
 
     private final McpSyncClient syncClient;
-    private final McpClient asyncClient;
+    private final McpAsyncClient asyncClient;
     private final String appId;
-    private final AlipaySseMcpTransport transport;
+    private final McpClientTransport transport;
 
-    public AlipayMcpClient(String appId, PrivateKey privateKey, String sseEndpoint) {
+    /**
+     * 创建 AlipayMcpClient（完整 SSE 端点）
+     *
+     * @param appId      应用 ID
+     * @param privateKey 私钥字符串（PKCS8 格式，可带 PEM 标记）
+     * @param sseEndpoint 完整 SSE 端点 URL（如 https://opengw.alipay.com/api/v1/open/mcps/xxx/sse）
+     */
+    public AlipayMcpClient(String appId, String privateKey, String sseEndpoint) {
         this.appId = appId;
 
-        // 构建自定义 Transport
-        this.transport = AlipaySseMcpTransport.builder()
-            .sseEndpoint(sseEndpoint)
-            .addInterceptor(new AlipayAuthInterceptor(appId, privateKey, null))
+        // 解析 baseUri 和 sseEndpoint
+        String baseUri = extractBaseUri(sseEndpoint);
+        String endpointPath = extractEndpointPath(sseEndpoint, baseUri);
+
+        log.info("初始化 AlipayMcpClient: baseUri={}, endpointPath={}", baseUri, endpointPath);
+
+        // 创建带支付宝签名的 Transport
+        this.transport = AlipaySseMcpTransport.builder(baseUri)
+            .sseEndpoint(endpointPath)
+            .appId(appId)
+            .privateKey(privateKey)
+            .connectTimeout(Duration.ofSeconds(10))
             .build();
 
-        // 创建 Spring AI MCP Client
-        this.asyncClient = McpClient.async(transport)
-            .requestTimeout(Duration.ofSeconds(30))
-            .build();
-
+        // 创建 MCP Client
         this.syncClient = McpClient.sync(transport)
             .requestTimeout(Duration.ofSeconds(30))
             .build();
 
-        log.info("AlipayMcpClient initialized for appId: {}", appId);
+        this.asyncClient = McpClient.async(transport)
+            .requestTimeout(Duration.ofSeconds(30))
+            .build();
+
+        // 初始化客户端（MCP 握手）
+        log.info("开始 MCP 初始化...");
+        this.syncClient.initialize();
+        log.info("AlipayMcpClient 初始化完成，appId: {}", appId);
+    }
+
+    /**
+     * 创建 AlipayMcpClient（使用 baseUri 和 mcpName）
+     *
+     * @param appId      应用 ID
+     * @param privateKey 私钥字符串（PKCS8 格式，可带 PEM 标记）
+     * @param baseUri    基础 URI（如 https://opengw.alipay.com）
+     * @param mcpName    MCP 名称
+     */
+    public AlipayMcpClient(String appId, String privateKey, String baseUri, String mcpName) {
+        this(appId, privateKey, baseUri + "/api/v1/open/mcps/" + mcpName + "/sse");
+    }
+
+    /**
+     * 创建 AlipayMcpClient（PrivateKey 对象版本，兼容旧 API）
+     *
+     * @deprecated 请使用 {@link #AlipayMcpClient(String, String, String)}
+     */
+    @Deprecated
+    public AlipayMcpClient(String appId, PrivateKey privateKey, String sseEndpoint) {
+        this(appId, privateKeyToString(privateKey), sseEndpoint);
+    }
+
+    /**
+     * 创建 AlipayMcpClient（PrivateKey 对象版本，兼容旧 API）
+     *
+     * @deprecated 请使用 {@link #AlipayMcpClient(String, String, String, String)}
+     */
+    @Deprecated
+    public AlipayMcpClient(String appId, PrivateKey privateKey, String baseUri, String mcpName) {
+        this(appId, privateKeyToString(privateKey), baseUri, mcpName);
+    }
+
+    /**
+     * PrivateKey 转字符串（PEM 格式）
+     */
+    private static String privateKeyToString(PrivateKey privateKey) {
+        String encoded = java.util.Base64.getEncoder().encodeToString(privateKey.getEncoded());
+        return "-----BEGIN PRIVATE KEY-----\n" +
+            encoded.replaceAll("(.{64})", "$1\n") +
+            "\n-----END PRIVATE KEY-----";
+    }
+
+    /**
+     * 从完整 URL 中提取 baseUri
+     */
+    private String extractBaseUri(String sseEndpoint) {
+        try {
+            java.net.URI uri = java.net.URI.create(sseEndpoint);
+            return uri.getScheme() + "://" + uri.getAuthority();
+        } catch (Exception e) {
+            // 如果解析失败，尝试按 /api 分割
+            int idx = sseEndpoint.indexOf("/api/");
+            if (idx > 0) {
+                return sseEndpoint.substring(0, idx);
+            }
+            return sseEndpoint;
+        }
+    }
+
+    /**
+     * 从完整 URL 中提取 endpoint path
+     */
+    private String extractEndpointPath(String sseEndpoint, String baseUri) {
+        if (sseEndpoint.startsWith(baseUri)) {
+            return sseEndpoint.substring(baseUri.length());
+        }
+        return "/sse";
     }
 
     /**
@@ -64,7 +152,7 @@ public class AlipayMcpClient implements AutoCloseable {
      * 流式获取工具列表
      */
     public Flux<McpSchema.Tool> listToolsStream() {
-        return Mono.fromFuture(asyncClient.listTools())
+        return asyncClient.listTools()
             .flatMapMany(result -> Flux.fromIterable(result.tools()));
     }
 
@@ -72,9 +160,13 @@ public class AlipayMcpClient implements AutoCloseable {
      * 同步调用工具
      */
     public ToolCallResult callTool(String toolName, Map<String, Object> args) {
-        log.debug("Calling tool: {} with args: {}", toolName, args);
+        log.debug("调用工具: {} 参数: {}", toolName, args);
 
-        McpSchema.CallToolRequest request = new McpSchema.CallToolRequest(toolName, args);
+        McpSchema.CallToolRequest request = McpSchema.CallToolRequest.builder()
+            .name(toolName)
+            .arguments(args)
+            .build();
+
         McpSchema.CallToolResult result = syncClient.callTool(request);
 
         // 聚合结果
@@ -96,11 +188,14 @@ public class AlipayMcpClient implements AutoCloseable {
      * 流式调用工具
      */
     public Flux<ToolCallResult> callToolStream(String toolName, Map<String, Object> args) {
-        log.debug("Streaming call to tool: {} with args: {}", toolName, args);
+        log.debug("流式调用工具: {} 参数: {}", toolName, args);
 
-        McpSchema.CallToolRequest request = new McpSchema.CallToolRequest(toolName, args);
+        McpSchema.CallToolRequest request = McpSchema.CallToolRequest.builder()
+            .name(toolName)
+            .arguments(args)
+            .build();
 
-        return Mono.fromFuture(asyncClient.callTool(request))
+        return asyncClient.callTool(request)
             .flatMapMany(result -> {
                 if (result.content() != null) {
                     return Flux.fromIterable(result.content())
@@ -114,7 +209,7 @@ public class AlipayMcpClient implements AutoCloseable {
                 return Flux.empty();
             })
             .onErrorResume(e -> {
-                log.error("Error calling tool: {}", toolName, e);
+                log.error("调用工具失败: {}", toolName, e);
                 return Flux.error(new AlipayMcpException("TOOL_CALL_ERROR",
                     "调用工具失败: " + e.getMessage(), e));
             });
@@ -136,12 +231,24 @@ public class AlipayMcpClient implements AutoCloseable {
         return new McpSchema.Implementation("alipay-mcp-client", "1.0.0");
     }
 
+    /**
+     * 获取同步 MCP Client（用于 Spring AI 集成）
+     */
+    public McpSyncClient getSyncClient() {
+        return syncClient;
+    }
+
+    /**
+     * 获取异步 MCP Client
+     */
+    public McpAsyncClient getAsyncClient() {
+        return asyncClient;
+    }
+
     @Override
     public void close() {
-        log.info("Closing AlipayMcpClient for appId: {}", appId);
+        log.info("关闭 AlipayMcpClient, appId: {}", appId);
         syncClient.close();
-        asyncClient.close();
-        transport.closeGracefully().block(Duration.ofSeconds(5));
     }
 
     // ============ 记录类 ============

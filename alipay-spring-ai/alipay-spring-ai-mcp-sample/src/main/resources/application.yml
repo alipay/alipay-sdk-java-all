@@ -13,17 +13,13 @@ spring:
 alipay:
   mcp:
     enabled: true
-    app-id: ${ALIPAY_APP_ID:your-app-id}
-    private-key: ${ALIPAY_PRIVATE_KEY:-----BEGIN PRIVATE KEY-----\nYOUR_PRIVATE_KEY_HERE\n-----END PRIVATE KEY-----}
-    sse-endpoint: ${ALIPAY_SSE_ENDPOINT:https://opengw.alipay.com/api/v1/open/mcps/your-mcp-name/sse}
-    connect-timeout: 10s
-    read-timeout: 60s
-    request-timeout: 30s
+    app-id: 2021006141677002
+    private-key: ${ALIPAY_PRIVATE_KEY}
+    sse-endpoint: https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/sse
 
 # 日志配置
 logging:
   level:
     com.alipay.mcp.springai: DEBUG
-    com.alipay.mcp.sample: DEBUG
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"

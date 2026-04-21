@@ -21,6 +21,19 @@
             <artifactId>mcp</artifactId>
         </dependency>
 
+        <!-- 支付宝 SDK v3 (用于签名) -->
+        <dependency>
+            <groupId>com.alipay.sdk</groupId>
+            <artifactId>alipay-sdk-java-v3</artifactId>
+            <version>3.1.70.ALL</version>
+        </dependency>
+
+        <!-- Spring Boot -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
         <!-- Spring WebFlux (用于响应式流) -->
         <dependency>
             <groupId>org.springframework</groupId>
@@ -43,6 +56,20 @@
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
+        </dependency>
+
+        <!-- Log4j2 (测试用) -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j2-impl</artifactId>
+            <version>2.20.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.20.0</version>
+            <scope>test</scope>
         </dependency>
 
         <!-- JSON 处理 -->

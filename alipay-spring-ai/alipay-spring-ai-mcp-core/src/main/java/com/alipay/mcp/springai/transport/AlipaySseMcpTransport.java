@@ -1,256 +1,126 @@
 package com.alipay.mcp.springai.transport;
 
 import com.alipay.mcp.springai.logging.McpTransportLogger;
+import com.alipay.mcp.springai.util.PrivateKeyLoader;
+import com.alipay.v3.ApiException;
+import com.alipay.v3.util.AlipaySignature;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import io.modelcontextprotocol.client.transport.McpTransport;
+import io.modelcontextprotocol.client.transport.AsyncHttpRequestCustomizer;
+import io.modelcontextprotocol.client.transport.HttpClientSseClientTransport;
+import io.modelcontextprotocol.spec.McpClientTransport;
 import io.modelcontextprotocol.spec.McpSchema;
+import org.reactivestreams.Publisher;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.http.HttpStatusCode;
-import org.springframework.http.MediaType;
-import org.springframework.http.client.BufferingClientHttpRequestFactory;
-import org.springframework.http.client.ClientHttpRequestFactory;
-import org.springframework.http.client.ClientHttpRequestInterceptor;
-import org.springframework.http.client.ClientHttpResponse;
-import org.springframework.http.client.SimpleClientHttpRequestFactory;
-import org.springframework.web.client.RestClient;
-import org.springframework.web.reactive.function.client.WebClient;
-import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-import reactor.core.publisher.Sinks;
-import reactor.core.scheduler.Schedulers;
 
-import java.io.IOException;
+import java.net.URI;
+import java.net.http.HttpRequest;
+import java.security.PrivateKey;
 import java.time.Duration;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.concurrent.atomic.AtomicReference;
-import java.util.function.Function;
 
 /**
- * 支付宝 SSE MCP Transport（完整实现）
+ * 支付宝 SSE MCP Transport 工厂
+ * 基于 HttpClientSseClientTransport，通过 AsyncHttpRequestCustomizer 添加支付宝签名
  */
-public class AlipaySseMcpTransport implements McpTransport {
+public class AlipaySseMcpTransport {
 
     private static final Logger log = LoggerFactory.getLogger(AlipaySseMcpTransport.class);
 
-    private final RestClient restClient;
-    private final WebClient webClient;
-    private final String sseEndpoint;
-    private final AtomicBoolean connected = new AtomicBoolean(false);
-    private final AtomicReference<String> sessionId = new AtomicReference<>();
-    private final ObjectMapper objectMapper;
-
-    private volatile String messageEndpoint;
-    private Sinks.Many<McpSchema.JSONRPCMessage> inboundSink;
-
-    public AlipaySseMcpTransport(Builder builder) {
-        this.sseEndpoint = builder.sseEndpoint;
-        this.objectMapper = new ObjectMapper();
-
-        // 创建带日志的拦截器链
-        List<ClientHttpRequestInterceptor> interceptors = new ArrayList<>(builder.interceptors);
-        interceptors.add(new LoggingInterceptor());
-
-        this.restClient = createRestClient(builder, interceptors);
-        this.webClient = createWebClient(builder, interceptors);
-
-        this.inboundSink = Sinks.many().multicast().onBackpressureBuffer();
+    /**
+     * 创建带支付宝签名的 MCP Transport
+     *
+     * @param appId      应用 ID
+     * @param privateKey 私钥字符串（PKCS8 格式，可带 PEM 标记）
+     * @param baseUri    基础 URI（如 https://opengw.alipay.com）
+     * @param sseEndpoint SSE 端点路径（如 /api/v1/open/mcps/xxx/sse）
+     * @return McpClientTransport 实例
+     */
+    public static McpClientTransport create(String appId, String privateKey, String baseUri, String sseEndpoint) {
+        return create(appId, privateKey, baseUri, sseEndpoint, Duration.ofSeconds(10), new ObjectMapper());
     }
 
-    private RestClient createRestClient(Builder builder,
-            List<ClientHttpRequestInterceptor> interceptors) {
-        RestClient.Builder clientBuilder = RestClient.builder()
-            .baseUrl(sseEndpoint)
-            .defaultHeaders(headers -> {
-                headers.set("Accept", MediaType.APPLICATION_JSON_VALUE);
-                headers.set("Cache-Control", "no-cache");
-            });
+    /**
+     * 创建带支付宝签名的 MCP Transport（完整配置）
+     *
+     * @param appId           应用 ID
+     * @param privateKey      私钥字符串（PKCS8 格式，可带 PEM 标记）
+     * @param baseUri         基础 URI
+     * @param sseEndpoint     SSE 端点路径
+     * @param connectTimeout  连接超时
+     * @param objectMapper    ObjectMapper
+     * @return McpClientTransport 实例
+     */
+    public static McpClientTransport create(String appId, String privateKey, String baseUri,
+                                             String sseEndpoint, Duration connectTimeout, ObjectMapper objectMapper) {
 
-        interceptors.forEach(clientBuilder::requestInterceptor);
+        // 创建支付宝签名拦截器
+        AlipayAuthRequestCustomizer authCustomizer = new AlipayAuthRequestCustomizer(appId, privateKey);
 
-        return clientBuilder.build();
-    }
-
-    private WebClient createWebClient(Builder builder,
-            List<ClientHttpRequestInterceptor> interceptors) {
-        // WebClient 使用不同的方式添加拦截器
-        return WebClient.builder()
-            .baseUrl(sseEndpoint)
-            .defaultHeaders(headers -> {
-                headers.set("Accept", MediaType.TEXT_EVENT_STREAM_VALUE);
-                headers.set("Cache-Control", "no-cache");
-            })
+        // 构建 HttpClientSseClientTransport
+        return HttpClientSseClientTransport.builder(baseUri)
+            .sseEndpoint(sseEndpoint)
+            .connectTimeout(connectTimeout)
+            .objectMapper(objectMapper)
+            .asyncHttpRequestCustomizer(authCustomizer)
             .build();
     }
 
-    @Override
-    public Mono<Void> connect(Function<McpSchema.JSONRPCMessage, Mono<Void>> handler) {
-        if (!connected.compareAndSet(false, true)) {
-            return Mono.error(new IllegalStateException("Transport already connected"));
-        }
-
-        McpTransportLogger.logSseConnect(sseEndpoint);
-
-        // 1. 建立 SSE 连接获取端点
-        return establishSseConnection()
-            .flatMap(endpoint -> {
-                this.messageEndpoint = endpoint;
-                McpTransportLogger.logSseConnected(endpoint);
-
-                // 2. 启动消息监听循环
-                return startMessageLoop(handler);
-            })
-            .doOnError(e -> {
-                McpTransportLogger.logSseError(e);
-                connected.set(false);
-            })
-            .subscribeOn(Schedulers.boundedElastic());
+    /**
+     * 创建带支付宝签名的 MCP Transport（PrivateKey 对象版本，兼容旧 API）
+     *
+     * @deprecated 请使用 {@link #create(String, String, String, String)}
+     */
+    @Deprecated
+    public static McpClientTransport create(String appId, PrivateKey privateKey, String baseUri, String sseEndpoint) {
+        // 兼容旧 API，将 PrivateKey 转换回字符串格式（需要调用方自行处理）
+        throw new UnsupportedOperationException("请使用 String 格式的私钥调用此方法");
     }
 
     /**
-     * 建立 SSE 连接，获取消息端点
+     * 创建 Transport 的 Builder 模式
      */
-    private Mono<String> establishSseConnection() {
-        return webClient.get()
-            .accept(MediaType.TEXT_EVENT_STREAM)
-            .retrieve()
-            .bodyToFlux(String.class)
-            .doOnNext(line -> log.trace("[SSE RAW] {}", line))
-            .filter(line -> line.startsWith("event: endpoint"))
-            .next()
-            .timeout(Duration.ofSeconds(30))
-            .map(line -> {
-                // 解析 endpoint 事件
-                // event: endpoint
-                //  /message?sessionId=xxx
-                String data = line.substring(line.indexOf(" ") + 6).trim();
-                sessionId.set(extractSessionId(data));
-                return data;
-            });
+    public static Builder builder(String baseUri) {
+        return new Builder(baseUri);
     }
 
     /**
-     * 启动消息监听循环
+     * Transport Builder
      */
-    private Mono<Void> startMessageLoop(Function<McpSchema.JSONRPCMessage, Mono<Void>> handler) {
-        return webClient.get()
-            .accept(MediaType.TEXT_EVENT_STREAM)
-            .retrieve()
-            .bodyToFlux(String.class)
-            .filter(line -> !line.isEmpty())
-            .bufferUntil(line -> line.startsWith("event:"))
-            .flatMap(events -> processEventBatch(events, handler))
-            .onErrorContinue((err, obj) -> {
-                log.error("[SSE] Error processing event", err);
-            })
-            .then();
-    }
-
-    /**
-     * 处理一批 SSE 事件
-     */
-    private Mono<Void> processEventBatch(List<String> events,
-            Function<McpSchema.JSONRPCMessage, Mono<Void>> handler) {
-
-        String eventType = null;
-        String eventData = null;
-
-        for (String line : events) {
-            if (line.startsWith("event: ")) {
-                eventType = line.substring(7).trim();
-            } else if (line.startsWith(" ")) {
-                eventData = line.substring(6).trim();
-            }
-        }
-
-        if ("message".equals(eventType) && eventData != null) {
-            try {
-                McpSchema.JSONRPCMessage message = parseMessage(eventData);
-                log.debug("[SSE] Received message: {}", message);
-                return handler.apply(message);
-            } catch (Exception e) {
-                log.error("[SSE] Failed to parse message: {}", eventData, e);
-                return Mono.error(e);
-            }
-        }
-
-        return Mono.empty();
-    }
-
-    /**
-     * 发送消息（流式）
-     */
-    @Override
-    public Flux<McpSchema.JSONRPCMessage> sendMessage(McpSchema.JSONRPCMessage message) {
-        if (!connected.get()) {
-            return Flux.error(new IllegalStateException("Transport not connected"));
-        }
-
-        String json = serializeMessage(message);
-        log.debug("[HTTP] Sending message to {}: {}", messageEndpoint, json);
-
-        return webClient.post()
-            .uri(messageEndpoint)
-            .contentType(MediaType.APPLICATION_JSON)
-            .bodyValue(json)
-            .retrieve()
-            .onStatus(HttpStatusCode::isError, response ->
-                response.bodyToMono(String.class)
-                    .map(errorBody -> new AlipayMcpException(
-                        "HTTP " + response.statusCode() + ": " + errorBody))
-            )
-            .bodyToFlux(McpSchema.JSONRPCMessage.class)
-            .doOnNext(resp -> log.debug("[HTTP] Received response: {}", resp));
-    }
-
-    /**
-     * 发送消息（异步）
-     */
-    @Override
-    public CompletableFuture<McpSchema.JSONRPCMessage> sendMessageAsync(
-            McpSchema.JSONRPCMessage message) {
-        return sendMessage(message)
-            .next()
-            .toFuture();
-    }
-
-    @Override
-    public Mono<Void> close() {
-        return closeGracefully();
-    }
-
-    @Override
-    public Mono<Void> closeGracefully() {
-        if (connected.compareAndSet(true, false)) {
-            McpTransportLogger.logSseDisconnected(sseEndpoint, "graceful shutdown");
-            inboundSink.tryEmitComplete();
-        }
-        return Mono.empty();
-    }
-
-    // ============ Builder ============
-
-    public static Builder builder() {
-        return new Builder();
-    }
-
     public static class Builder {
-        private String sseEndpoint;
-        private final List<ClientHttpRequestInterceptor> interceptors = new ArrayList<>();
+        private String baseUri;
+        private String sseEndpoint = "/sse";
+        private String appId;
+        private String privateKey;
         private Duration connectTimeout = Duration.ofSeconds(10);
-        private Duration readTimeout = Duration.ofSeconds(60);
+        private ObjectMapper objectMapper = new ObjectMapper();
 
-        public Builder sseEndpoint(String endpoint) {
-            this.sseEndpoint = endpoint;
+        public Builder(String baseUri) {
+            this.baseUri = baseUri;
+        }
+
+        public Builder sseEndpoint(String sseEndpoint) {
+            this.sseEndpoint = sseEndpoint;
             return this;
         }
 
-        public Builder addInterceptor(ClientHttpRequestInterceptor interceptor) {
-            this.interceptors.add(interceptor);
+        public Builder appId(String appId) {
+            this.appId = appId;
             return this;
+        }
+
+        public Builder privateKey(String privateKey) {
+            this.privateKey = privateKey;
+            return this;
+        }
+
+        /**
+         * @deprecated 请使用 {@link #privateKey(String)}
+         */
+        @Deprecated
+        public Builder privateKey(PrivateKey privateKey) {
+            throw new UnsupportedOperationException("请使用 String 格式的私钥");
         }
 
         public Builder connectTimeout(Duration timeout) {
@@ -258,66 +128,89 @@ public class AlipaySseMcpTransport implements McpTransport {
             return this;
         }
 
-        public Builder readTimeout(Duration timeout) {
-            this.readTimeout = timeout;
+        public Builder objectMapper(ObjectMapper objectMapper) {
+            this.objectMapper = objectMapper;
             return this;
         }
 
-        public AlipaySseMcpTransport build() {
-            if (sseEndpoint == null || sseEndpoint.isEmpty()) {
-                throw new IllegalArgumentException("SSE endpoint is required");
+        public McpClientTransport build() {
+            if (appId == null || appId.isEmpty()) {
+                throw new IllegalArgumentException("appId is required");
             }
-            return new AlipaySseMcpTransport(this);
+            if (privateKey == null || privateKey.isEmpty()) {
+                throw new IllegalArgumentException("privateKey is required");
+            }
+            return create(appId, privateKey, baseUri, sseEndpoint, connectTimeout, objectMapper);
         }
     }
 
-    // ============ 工具方法 ============
+    /**
+     * 支付宝认证请求定制器
+     * 通过 AsyncHttpRequestCustomizer 接口在请求发送前添加支付宝签名
+     */
+    static class AlipayAuthRequestCustomizer implements AsyncHttpRequestCustomizer {
 
-    private String extractSessionId(String endpoint) {
-        // 从 /message?sessionId=xxx 中提取
-        if (endpoint.contains("sessionId=")) {
-            return endpoint.substring(endpoint.indexOf("sessionId=") + 10);
+        private final String appId;
+        private final String privateKey;
+
+        public AlipayAuthRequestCustomizer(String appId, String privateKey) {
+            this.appId = appId;
+            this.privateKey = privateKey;
         }
-        return null;
-    }
-
-    private McpSchema.JSONRPCMessage parseMessage(String json) {
-        try {
-            return objectMapper.readValue(json, McpSchema.JSONRPCMessage.class);
-        } catch (Exception e) {
-            throw new AlipayMcpException("PARSE_ERROR", "Failed to parse message: " + e.getMessage(), e);
-        }
-    }
-
-    private String serializeMessage(McpSchema.JSONRPCMessage message) {
-        try {
-            return objectMapper.writeValueAsString(message);
-        } catch (Exception e) {
-            throw new AlipayMcpException("SERIALIZE_ERROR", "Failed to serialize message: " + e.getMessage(), e);
-        }
-    }
-
-    // ============ HTTP 日志拦截器 ============
-
-    private static class LoggingInterceptor implements ClientHttpRequestInterceptor {
 
         @Override
-        public ClientHttpResponse intercept(org.springframework.http.HttpRequest request,
-                byte[] body, ClientHttpRequestExecution execution) throws IOException {
+        public Publisher<HttpRequest.Builder> customize(HttpRequest.Builder requestBuilder,
+                                                         String method, URI uri, String body) {
+            try {
+                // 构建签名（只使用路径部分，不包含域名）
+                String uriPath = uri.getPath();
+                if (uri.getQuery() != null) {
+                    uriPath = uriPath + "?" + uri.getQuery();
+                }
+                String authorization = buildAuthorization(method, uriPath, body);
 
-            String method = request.getMethod().name();
-            String url = request.getURI().toString();
-            String bodyStr = body.length > 0 ? new String(body) : "";
+                // 添加请求头
+                requestBuilder.header("Authorization", authorization);
+                requestBuilder.header("Content-Type", "application/json; charset=UTF-8");
 
-            McpTransportLogger.logHttpRequest(method, url, bodyStr);
+                McpTransportLogger.logSigning("Authorization: " + maskSensitive(authorization));
 
-            long start = System.currentTimeMillis();
-            ClientHttpResponse response = execution.execute(request, body);
-            long duration = System.currentTimeMillis() - start;
+                return Mono.just(requestBuilder);
+            } catch (Exception e) {
+                return Mono.error(new AlipayMcpException("SIGN_ERROR",
+                    "构建签名失败：" + e.getMessage(), e));
+            }
+        }
 
-            log.trace("[HTTP] Response in {}ms: {}", duration, response.getStatusCode());
+        /**
+         * 构建支付宝 Authorization 头
+         * 签名格式与 alipay-mcp-sdk 保持一致
+         */
+        private String buildAuthorization(String method, String uri, String body) throws ApiException {
+            // 1. 生成时间戳（毫秒，与 alipay-mcp-sdk 一致）
+            String timestamp = String.valueOf(System.currentTimeMillis());
+            String nonce = java.util.UUID.randomUUID().toString();
 
-            return response;
+            // 2. 构建认证字符串（顺序：app_id, timestamp, nonce）
+            String authString = "app_id=" + appId + ",timestamp=" + timestamp + ",nonce=" + nonce;
+
+            // 3. 构建签名内容（末尾带换行符）
+            StringBuilder signContent = new StringBuilder();
+            signContent.append(authString).append("\n")
+                       .append(method).append("\n")
+                       .append(uri).append("\n")
+                       .append(body != null ? body : "").append("\n");
+
+            // 4. 使用 AlipaySignature 签名（RSA2）
+            String sign = AlipaySignature.sign(signContent.toString(), privateKey, "utf-8", "RSA2");
+
+            // 5. 构建 Authorization 头
+            return "ALIPAY-SHA256withRSA " + authString + ",sign=" + sign;
+        }
+
+        private String maskSensitive(String input) {
+            if (input == null) return "";
+            return input.replaceAll("sign=[^,]+", "sign=***");
         }
     }
 }

@@ -35,16 +35,6 @@ public class AlipayMcpProperties {
      */
     private Duration connectTimeout = Duration.ofSeconds(10);
 
-    /**
-     * 读取超时
-     */
-    private Duration readTimeout = Duration.ofSeconds(60);
-
-    /**
-     * 请求超时
-     */
-    private Duration requestTimeout = Duration.ofSeconds(30);
-
     // Getters and Setters
 
     public boolean isEnabled() {
@@ -85,22 +75,6 @@ public class AlipayMcpProperties {
 
     public void setConnectTimeout(Duration connectTimeout) {
         this.connectTimeout = connectTimeout;
-    }
-
-    public Duration getReadTimeout() {
-        return readTimeout;
-    }
-
-    public void setReadTimeout(Duration readTimeout) {
-        this.readTimeout = readTimeout;
-    }
-
-    public Duration getRequestTimeout() {
-        return requestTimeout;
-    }
-
-    public void setRequestTimeout(Duration requestTimeout) {
-        this.requestTimeout = requestTimeout;
     }
 
     /**
