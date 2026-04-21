@@ -6,7 +6,7 @@
 
     <groupId>com.alipay.sdk</groupId>
     <artifactId>alipay-mcp-sdk</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>Alipay MCP SDK</name>
