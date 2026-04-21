@@ -30,9 +30,9 @@ import com.google.gson.reflect.TypeToken;
 import java.io.IOException;
 
 
-import com.alipay.v3.model.AlipayEbppInvoiceApplystatusQueryDefaultResponse;
-import com.alipay.v3.model.AlipayEbppInvoiceApplystatusQueryModel;
-import com.alipay.v3.model.AlipayEbppInvoiceApplystatusQueryResponseModel;
+import com.alipay.v3.model.AlipayEbppInvoiceApplyStatusNotifyDefaultResponse;
+import com.alipay.v3.model.AlipayEbppInvoiceApplyStatusNotifyModel;
+import com.alipay.v3.model.AlipayEbppInvoiceApplyStatusNotifyResponseModel;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -41,16 +41,16 @@ import java.util.List;
 import java.util.Map;
 import javax.ws.rs.core.GenericType;
 
-public class AlipayEbppInvoiceApplystatusApi {
+public class AlipayEbppInvoiceApplyStatusApi {
     private ApiClient localVarApiClient;
     private int localHostIndex;
     private String localCustomBaseUrl;
 
-    public AlipayEbppInvoiceApplystatusApi() {
+    public AlipayEbppInvoiceApplyStatusApi() {
         this(Configuration.getDefaultApiClient());
     }
 
-    public AlipayEbppInvoiceApplystatusApi(ApiClient apiClient) {
+    public AlipayEbppInvoiceApplyStatusApi(ApiClient apiClient) {
         this.localVarApiClient = apiClient;
     }
 
@@ -79,8 +79,8 @@ public class AlipayEbppInvoiceApplystatusApi {
     }
 
     /**
-     * Build call for query
-     * @param alipayEbppInvoiceApplystatusQueryModel  (optional)
+     * Build call for notify
+     * @param alipayEbppInvoiceApplyStatusNotifyModel  (optional)
      * @param _callback Callback for upload/download progress
      * @param customizedParams
      * @return Call to execute
@@ -92,7 +92,7 @@ public class AlipayEbppInvoiceApplystatusApi {
         <tr><td> 0 </td><td> 请求失败 </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call queryCall(AlipayEbppInvoiceApplystatusQueryModel alipayEbppInvoiceApplystatusQueryModel, final ApiCallback _callback, CustomizedParams customizedParams) throws ApiException {
+    public okhttp3.Call notifyCall(AlipayEbppInvoiceApplyStatusNotifyModel alipayEbppInvoiceApplyStatusNotifyModel, final ApiCallback _callback, CustomizedParams customizedParams) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -107,10 +107,10 @@ public class AlipayEbppInvoiceApplystatusApi {
         }
 
         Object localVarPostBody = (customizedParams != null && !Strings.isNullOrEmpty(customizedParams.getBodyContent()))
-                ? customizedParams.getBodyContent() : alipayEbppInvoiceApplystatusQueryModel;
+                ? customizedParams.getBodyContent() : alipayEbppInvoiceApplyStatusNotifyModel;
 
         // create path and map variables
-        String localVarPath = "/v3/alipay/ebpp/invoice/applystatus/query";
+        String localVarPath = "/v3/alipay/ebpp/invoice/apply/status/notify";
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
@@ -153,23 +153,23 @@ public class AlipayEbppInvoiceApplystatusApi {
         }
 
         String[] localVarAuthNames = new String[] {  };
-        return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+        return localVarApiClient.buildCall(basePath, localVarPath, "PUT", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call queryValidateBeforeCall(AlipayEbppInvoiceApplystatusQueryModel alipayEbppInvoiceApplystatusQueryModel, final ApiCallback _callback, CustomizedParams customizedParams) throws ApiException {
+    private okhttp3.Call notifyValidateBeforeCall(AlipayEbppInvoiceApplyStatusNotifyModel alipayEbppInvoiceApplyStatusNotifyModel, final ApiCallback _callback, CustomizedParams customizedParams) throws ApiException {
         
 
-        okhttp3.Call localVarCall = queryCall(alipayEbppInvoiceApplystatusQueryModel, _callback, customizedParams);
+        okhttp3.Call localVarCall = notifyCall(alipayEbppInvoiceApplyStatusNotifyModel, _callback, customizedParams);
         return localVarCall;
 
     }
 
     /**
-     * 根据外部订单号查询开票状态
-     * 根据外部订单号查询开票状态，仅有申请状态无完整票据信息
-     * @param alipayEbppInvoiceApplystatusQueryModel  (optional)
-     * @return AlipayEbppInvoiceApplystatusQueryResponseModel
+     * 发票申请状态变更
+     * 发票申请状态变更通知
+     * @param alipayEbppInvoiceApplyStatusNotifyModel  (optional)
+     * @return AlipayEbppInvoiceApplyStatusNotifyResponseModel
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -178,21 +178,21 @@ public class AlipayEbppInvoiceApplystatusApi {
         <tr><td> 0 </td><td> 请求失败 </td><td>  -  </td></tr>
      </table>
      */
-    public AlipayEbppInvoiceApplystatusQueryResponseModel query(AlipayEbppInvoiceApplystatusQueryModel alipayEbppInvoiceApplystatusQueryModel) throws ApiException {
-        ApiResponse<AlipayEbppInvoiceApplystatusQueryResponseModel> localVarResp = queryWithHttpInfo(alipayEbppInvoiceApplystatusQueryModel, null);
+    public AlipayEbppInvoiceApplyStatusNotifyResponseModel notify(AlipayEbppInvoiceApplyStatusNotifyModel alipayEbppInvoiceApplyStatusNotifyModel) throws ApiException {
+        ApiResponse<AlipayEbppInvoiceApplyStatusNotifyResponseModel> localVarResp = notifyWithHttpInfo(alipayEbppInvoiceApplyStatusNotifyModel, null);
         return localVarResp.getData();
     }
 
-    public AlipayEbppInvoiceApplystatusQueryResponseModel query(AlipayEbppInvoiceApplystatusQueryModel alipayEbppInvoiceApplystatusQueryModel, CustomizedParams customizedParams) throws ApiException {
-        ApiResponse<AlipayEbppInvoiceApplystatusQueryResponseModel> localVarResp = queryWithHttpInfo(alipayEbppInvoiceApplystatusQueryModel, customizedParams);
+    public AlipayEbppInvoiceApplyStatusNotifyResponseModel notify(AlipayEbppInvoiceApplyStatusNotifyModel alipayEbppInvoiceApplyStatusNotifyModel, CustomizedParams customizedParams) throws ApiException {
+        ApiResponse<AlipayEbppInvoiceApplyStatusNotifyResponseModel> localVarResp = notifyWithHttpInfo(alipayEbppInvoiceApplyStatusNotifyModel, customizedParams);
         return localVarResp.getData();
     }
 
     /**
-     * 根据外部订单号查询开票状态
-     * 根据外部订单号查询开票状态，仅有申请状态无完整票据信息
-     * @param alipayEbppInvoiceApplystatusQueryModel  (optional)
-     * @return ApiResponse&lt;AlipayEbppInvoiceApplystatusQueryResponseModel&gt;
+     * 发票申请状态变更
+     * 发票申请状态变更通知
+     * @param alipayEbppInvoiceApplyStatusNotifyModel  (optional)
+     * @return ApiResponse&lt;AlipayEbppInvoiceApplyStatusNotifyResponseModel&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -201,52 +201,25 @@ public class AlipayEbppInvoiceApplystatusApi {
         <tr><td> 0 </td><td> 请求失败 </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<AlipayEbppInvoiceApplystatusQueryResponseModel> queryWithHttpInfo(AlipayEbppInvoiceApplystatusQueryModel alipayEbppInvoiceApplystatusQueryModel, CustomizedParams customizedParams) throws ApiException {
-        System.out.println("========== AlipayEbppInvoiceApplyStatusApi.queryWithHttpInfo START ==========");
-        System.out.println("[REQUEST] URL: /v3/alipay/ebpp/invoice/applystatus/query");
-        System.out.println("[REQUEST] Method: POST");
-        System.out.println("[REQUEST] Content-Type: application/json");
-        System.out.println("[REQUEST] customizedParams: " + (customizedParams != null ? customizedParams.toString() : "null"));
-        System.out.println("[REQUEST] QueryModel: " + (alipayEbppInvoiceApplystatusQueryModel != null ? alipayEbppInvoiceApplystatusQueryModel.toString() : "null"));
-        if (customizedParams != null) {
-            System.out.println("[REQUEST] AppAuthToken: " + customizedParams.getAppAuthToken());
-            System.out.println("[REQUEST] BodyContent: " + customizedParams.getBodyContent());
-            System.out.println("[REQUEST] QueryParams: " + customizedParams.getQueryParams());
-            System.out.println("[REQUEST] HeaderParams: " + customizedParams.getHeaderParams());
-        }
-        okhttp3.Call localVarCall = queryValidateBeforeCall(alipayEbppInvoiceApplystatusQueryModel, null, customizedParams);
-        System.out.println("[CALL] Request created: " + localVarCall.request());
-        System.out.println("[CALL] Request headers: " + localVarCall.request().headers());
-        System.out.println("[CALL] Request body: " + localVarCall.request().body());
+    public ApiResponse<AlipayEbppInvoiceApplyStatusNotifyResponseModel> notifyWithHttpInfo(AlipayEbppInvoiceApplyStatusNotifyModel alipayEbppInvoiceApplyStatusNotifyModel, CustomizedParams customizedParams) throws ApiException {
+        okhttp3.Call localVarCall = notifyValidateBeforeCall(alipayEbppInvoiceApplyStatusNotifyModel, null, customizedParams);
         try {
-            Type localVarReturnType = new TypeToken<AlipayEbppInvoiceApplystatusQueryResponseModel>(){}.getType();
-            ApiResponse<AlipayEbppInvoiceApplystatusQueryResponseModel> response = localVarApiClient.execute(localVarCall, localVarReturnType);
-            System.out.println("[RESPONSE] StatusCode: " + response.getStatusCode());
-            System.out.println("[RESPONSE] Headers: " + response.getHeaders());
-            System.out.println("[RESPONSE] Data: " + (response.getData() != null ? response.getData().toString() : "null"));
-            System.out.println("========== AlipayEbppInvoiceApplyStatusApi.queryWithHttpInfo END ==========");
-            return response;
+            Type localVarReturnType = new TypeToken<AlipayEbppInvoiceApplyStatusNotifyResponseModel>(){}.getType();
+            return localVarApiClient.execute(localVarCall, localVarReturnType);
         } catch (ApiException e) {
-            System.out.println("[ERROR] ApiException: " + e.getMessage());
-            System.out.println("[ERROR] StatusCode: " + e.getCode());
-            System.out.println("[ERROR] ResponseBody: " + e.getResponseBody());
-            System.out.println("[ERROR] Headers: " + e.getResponseHeaders());
             try {
-                e.setErrorObject(localVarApiClient.getJSON().getGson().fromJson(e.getResponseBody(), new TypeToken<AlipayEbppInvoiceApplystatusQueryDefaultResponse>(){}.getType()));
+                e.setErrorObject(localVarApiClient.getJSON().getGson().fromJson(e.getResponseBody(), new TypeToken<AlipayEbppInvoiceApplyStatusNotifyDefaultResponse>(){}.getType()));
             } catch (Exception ex) {
-                System.out.println("[ERROR] Parse error response failed: " + ex.getMessage());
-                ex.printStackTrace();
+                AlipayLogger.logBizWarn(ex);
             }
-            e.printStackTrace();
-            System.out.println("========== AlipayEbppInvoiceApplyStatusApi.queryWithHttpInfo END ==========");
             throw e;
         }
     }
 
     /**
-     * 根据外部订单号查询开票状态 (asynchronously)
-     * 根据外部订单号查询开票状态，仅有申请状态无完整票据信息
-     * @param alipayEbppInvoiceApplystatusQueryModel  (optional)
+     * 发票申请状态变更 (asynchronously)
+     * 发票申请状态变更通知
+     * @param alipayEbppInvoiceApplyStatusNotifyModel  (optional)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -259,19 +232,19 @@ public class AlipayEbppInvoiceApplystatusApi {
      * @deprecated
      */
     @Deprecated
-    public okhttp3.Call queryAsync(AlipayEbppInvoiceApplystatusQueryModel alipayEbppInvoiceApplystatusQueryModel, final ApiCallback<AlipayEbppInvoiceApplystatusQueryResponseModel> _callback) throws ApiException {
+    public okhttp3.Call notifyAsync(AlipayEbppInvoiceApplyStatusNotifyModel alipayEbppInvoiceApplyStatusNotifyModel, final ApiCallback<AlipayEbppInvoiceApplyStatusNotifyResponseModel> _callback) throws ApiException {
 
-        okhttp3.Call localVarCall = queryValidateBeforeCall(alipayEbppInvoiceApplystatusQueryModel, _callback, null);
-        Type localVarReturnType = new TypeToken<AlipayEbppInvoiceApplystatusQueryResponseModel>(){}.getType();
+        okhttp3.Call localVarCall = notifyValidateBeforeCall(alipayEbppInvoiceApplyStatusNotifyModel, _callback, null);
+        Type localVarReturnType = new TypeToken<AlipayEbppInvoiceApplyStatusNotifyResponseModel>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
 
     @Deprecated
-    public okhttp3.Call queryAsync(AlipayEbppInvoiceApplystatusQueryModel alipayEbppInvoiceApplystatusQueryModel, final ApiCallback<AlipayEbppInvoiceApplystatusQueryResponseModel> _callback, CustomizedParams customizedParams) throws ApiException {
+    public okhttp3.Call notifyAsync(AlipayEbppInvoiceApplyStatusNotifyModel alipayEbppInvoiceApplyStatusNotifyModel, final ApiCallback<AlipayEbppInvoiceApplyStatusNotifyResponseModel> _callback, CustomizedParams customizedParams) throws ApiException {
 
-        okhttp3.Call localVarCall = queryValidateBeforeCall(alipayEbppInvoiceApplystatusQueryModel, _callback, customizedParams);
-        Type localVarReturnType = new TypeToken<AlipayEbppInvoiceApplystatusQueryResponseModel>(){}.getType();
+        okhttp3.Call localVarCall = notifyValidateBeforeCall(alipayEbppInvoiceApplyStatusNotifyModel, _callback, customizedParams);
+        Type localVarReturnType = new TypeToken<AlipayEbppInvoiceApplyStatusNotifyResponseModel>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
