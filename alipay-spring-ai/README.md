@@ -6,6 +6,7 @@
 
 - ✅ 基于 Spring AI 和 MCP 协议
 - ✅ 支持 SSE (Server-Sent Events) 流式通信
+- ✅ 支持 Streamable HTTP 传输（MCP 2025-03-26 协议）
 - ✅ HTTP 请求自动添加 RSA2 签名
 - ✅ 响应式编程（Reactor Flux/Mono）
 - ✅ Spring Boot 自动配置
@@ -43,13 +44,41 @@ alipay-spring-ai/
 
 ### 2. 配置 application.yml
 
+**SSE 模式（默认）：**
+
 ```yaml
 alipay:
   mcp:
     enabled: true
     app-id: your-app-id
     private-key: ${ALIPAY_PRIVATE_KEY}
+    transport-mode: sse  # 默认值，可省略
     sse-endpoint: https://opengw.alipay.com/api/v1/open/mcps/your-mcp-name/sse
+```
+
+**Streamable HTTP 模式（推荐）：**
+
+```yaml
+alipay:
+  mcp:
+    enabled: true
+    app-id: your-app-id
+    private-key: ${ALIPAY_PRIVATE_KEY}
+    transport-mode: streamable
+    streamable-endpoint: https://opengw.alipay.com/api/v1/open/mcps/your-mcp-name/mcp
+```
+
+**简化配置（自动构建端点）：**
+
+```yaml
+alipay:
+  mcp:
+    enabled: true
+    app-id: your-app-id
+    private-key: ${ALIPAY_PRIVATE_KEY}
+    transport-mode: streamable  # 或 sse
+    base-uri: https://opengw.alipay.com
+    mcp-name: your-mcp-name     # 自动构建为 /api/v1/open/mcps/{mcp-name}/{mcp|sse}
 ```
 
 **配置说明：**
@@ -59,7 +88,11 @@ alipay:
 | `alipay.mcp.enabled` | 是否启用 | 否 | `true` |
 | `alipay.mcp.app-id` | 支付宝应用 ID | 是 | `2021006141677002` |
 | `alipay.mcp.private-key` | 应用私钥（PKCS8） | 是 | 环境变量 `${ALIPAY_PRIVATE_KEY}` |
-| `alipay.mcp.sse-endpoint` | MCP Server SSE 端点 | 是 | `https://opengw.alipay.com/api/v1/open/mcps/xxx/sse` |
+| `alipay.mcp.transport-mode` | 传输模式 | 否 | `sse` 或 `streamable` |
+| `alipay.mcp.sse-endpoint` | SSE 端点 | 条件 | SSE 模式下的完整端点 URL |
+| `alipay.mcp.streamable-endpoint` | Streamable 端点 | 条件 | Streamable 模式下的完整端点 URL |
+| `alipay.mcp.base-uri` | 基础 URI | 条件 | 与 `mcp-name` 一起使用时可省略端点配置 |
+| `alipay.mcp.mcp-name` | MCP 名称 | 条件 | 与 `base-uri` 一起使用时可省略端点配置 |
 
 ### 3. 设置环境变量
 
@@ -124,10 +157,18 @@ public class MyController {
 | `listToolsStream()` | 流式获取工具列表 |
 | `callTool(name, args)` | 同步调用工具 |
 | `callToolStream(name, args)` | 流式调用工具 |
+| `callToolAsync(name, args)` | 异步调用工具 |
 | `getClientInfo()` | 获取客户端信息 |
 | `getSyncClient()` | 获取 Spring AI 原生 McpSyncClient |
 | `getAsyncClient()` | 获取 Spring AI 原生 McpAsyncClient |
 | `close()` | 关闭客户端 |
+
+### TransportMode 枚举
+
+| 模式 | 说明 | 端点路径 |
+|------|------|----------|
+| `SSE` | HTTP with SSE（旧版协议） | `/sse` |
+| `STREAMABLE` | Streamable HTTP（新版协议，2025-03-26） | `/mcp` |
 
 ### ToolCallResult
 
@@ -167,6 +208,31 @@ curl http://localhost:8080/api/test/mcp/tools
 curl -X POST http://localhost:8080/api/test/mcp/call/Holidays \
   -H "Content-Type: application/json" \
   -d '{"toolParams": {"from": "2025-01-01", "to": "2025-12-31"}}'
+```
+
+### Streamable HTTP 模式测试
+
+如果配置了 `transport-mode: streamable`，可以使用以下接口：
+
+```bash
+# 获取工具列表
+curl http://localhost:8080/api/streamable/tools
+
+# 流式获取工具列表（SSE 输出）
+curl http://localhost:8080/api/streamable/tools/stream
+
+# 同步调用工具
+curl -X POST http://localhost:8080/api/streamable/tool/Holidays \
+  -H "Content-Type: application/json" \
+  -d '{"from": "2025-01-01", "to": "2025-12-31"}'
+
+# 流式调用工具（SSE 输出）
+curl -X POST http://localhost:8080/api/streamable/tool/Holidays/stream \
+  -H "Content-Type: application/json" \
+  -d '{"from": "2025-01-01", "to": "2025-12-31"}'
+
+# 健康检查
+curl http://localhost:8080/api/streamable/health
 ```
 
 ## 签名机制
