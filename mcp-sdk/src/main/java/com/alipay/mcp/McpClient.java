@@ -5,6 +5,7 @@ import com.alipay.mcp.interceptor.Interceptor;
 import com.alipay.mcp.protocol.*;
 import com.alipay.mcp.transport.McpEventListener;
 import com.alipay.mcp.transport.SseConnection;
+import com.alipay.mcp.transport.StreamableHttpConnection;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,6 +26,7 @@ public class McpClient implements AutoCloseable {
     private final McpClientConfig config;
     private final List<Interceptor> interceptors;
     private SseConnection sseConnection;
+    private StreamableHttpConnection streamableConnection;
 
     /**
      * 构造函数
@@ -44,8 +46,13 @@ public class McpClient implements AutoCloseable {
      * @throws McpException 连接失败时抛出
      */
     public void connect(McpEventListener listener) throws McpException {
-        sseConnection = new SseConnection(config, interceptors);
-        sseConnection.connect(listener);
+        if ("streamable".equalsIgnoreCase(config.getTransportMode())) {
+            streamableConnection = new StreamableHttpConnection(config, interceptors);
+            streamableConnection.connect(listener);
+        } else {
+            sseConnection = new SseConnection(config, interceptors);
+            sseConnection.connect(listener);
+        }
     }
 
     /**
@@ -56,12 +63,21 @@ public class McpClient implements AutoCloseable {
      */
     public void connectAndInitialize(McpEventListener listener) throws McpException {
         connect(listener);
-        sseConnection.sendInitialize(
-                config.getClientName(),
-                config.getClientVersion(),
-                config.getProtocolVersion(),
-                config.getCapabilities()
-        );
+        if ("streamable".equalsIgnoreCase(config.getTransportMode())) {
+            streamableConnection.sendInitialize(
+                    config.getClientName(),
+                    config.getClientVersion(),
+                    config.getProtocolVersion(),
+                    config.getCapabilities()
+            );
+        } else {
+            sseConnection.sendInitialize(
+                    config.getClientName(),
+                    config.getClientVersion(),
+                    config.getProtocolVersion(),
+                    config.getCapabilities()
+            );
+        }
         log.info("MCP 初始化完成");
     }
 
@@ -94,8 +110,12 @@ public class McpClient implements AutoCloseable {
      */
     public List<Tool> listTools() throws McpException {
         try {
-            CompletableFuture<JsonRpcMessage> future =
-                    sseConnection.sendRequest("tools/list", null);
+            CompletableFuture<JsonRpcMessage> future;
+            if ("streamable".equalsIgnoreCase(config.getTransportMode())) {
+                future = (CompletableFuture<JsonRpcMessage>) (CompletableFuture<?>) streamableConnection.sendRequest("tools/list", null);
+            } else {
+                future = sseConnection.sendRequest("tools/list", null);
+            }
             JsonRpcMessage response = future.get(getRequestTimeout(), TimeUnit.MILLISECONDS);
 
             if (response.getError() != null) {
@@ -114,7 +134,12 @@ public class McpClient implements AutoCloseable {
      */
     public CompletableFuture<List<Tool>> listToolsAsync() {
         try {
-            CompletableFuture<JsonRpcMessage> future = sseConnection.sendRequest("tools/list", null);
+            CompletableFuture<JsonRpcMessage> future;
+            if ("streamable".equalsIgnoreCase(config.getTransportMode())) {
+                future = (CompletableFuture<JsonRpcMessage>) (CompletableFuture<?>) streamableConnection.sendRequest("tools/list", null);
+            } else {
+                future = sseConnection.sendRequest("tools/list", null);
+            }
 
             return future.handle((response, ex) -> {
                 if (ex != null) {
@@ -146,8 +171,12 @@ public class McpClient implements AutoCloseable {
             params.setName(toolName);
             params.setArguments(args);
 
-            CompletableFuture<JsonRpcMessage> future =
-                    sseConnection.sendRequest("tools/call", params);
+            CompletableFuture<JsonRpcMessage> future;
+            if ("streamable".equalsIgnoreCase(config.getTransportMode())) {
+                future = (CompletableFuture<JsonRpcMessage>) (CompletableFuture<?>) streamableConnection.sendRequest("tools/call", params);
+            } else {
+                future = sseConnection.sendRequest("tools/call", params);
+            }
             JsonRpcMessage response = future.get(getCallToolTimeout(), TimeUnit.MILLISECONDS);
 
             if (response.getError() != null) {
@@ -172,7 +201,12 @@ public class McpClient implements AutoCloseable {
             params.setName(toolName);
             params.setArguments(args);
 
-            CompletableFuture<JsonRpcMessage> future = sseConnection.sendRequest("tools/call", params);
+            CompletableFuture<JsonRpcMessage> future;
+            if ("streamable".equalsIgnoreCase(config.getTransportMode())) {
+                future = (CompletableFuture<JsonRpcMessage>) (CompletableFuture<?>) streamableConnection.sendRequest("tools/call", params);
+            } else {
+                future = sseConnection.sendRequest("tools/call", params);
+            }
 
             return future.handle((response, ex) -> {
                 if (ex != null) {
@@ -227,7 +261,11 @@ public class McpClient implements AutoCloseable {
      * @throws McpException 发送失败时抛出
      */
     public void sendNotification(String method, Object params) throws McpException {
-        sseConnection.sendNotification(method, params);
+        if ("streamable".equalsIgnoreCase(config.getTransportMode())) {
+            streamableConnection.sendNotification(method, params);
+        } else {
+            sseConnection.sendNotification(method, params);
+        }
     }
 
     private List<Tool> parseTools(Object result) {
@@ -250,6 +288,9 @@ public class McpClient implements AutoCloseable {
     public void close() {
         if (sseConnection != null) {
             sseConnection.close();
+        }
+        if (streamableConnection != null) {
+            streamableConnection.close();
         }
     }
 

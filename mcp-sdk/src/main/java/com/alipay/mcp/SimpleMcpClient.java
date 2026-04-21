@@ -308,6 +308,8 @@ public class SimpleMcpClient implements AutoCloseable {
         private String privateKey;
         private String mcpName;
         private String sseEndpoint;
+        private String streamableEndpoint;
+        private String transportMode = "streamable";
         private String serverUrl;
         private int connectTimeout = 10000;
         private int readTimeout = 60000;
@@ -342,6 +344,24 @@ public class SimpleMcpClient implements AutoCloseable {
          */
         public SimpleMcpClientBuilder sseEndpoint(String sseEndpoint) {
             this.sseEndpoint = sseEndpoint;
+            return this;
+        }
+
+        /**
+         * 设置 Streamable HTTP 端点完整 URL（优先于 mcpName）
+         * 示例：https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/mcp
+         */
+        public SimpleMcpClientBuilder streamableEndpoint(String streamableEndpoint) {
+            this.streamableEndpoint = streamableEndpoint;
+            return this;
+        }
+
+        /**
+         * 设置传输模式（默认：sse）
+         * @param transportMode "sse" 或 "streamable"
+         */
+        public SimpleMcpClientBuilder transportMode(String transportMode) {
+            this.transportMode = transportMode;
             return this;
         }
 
@@ -442,6 +462,12 @@ public class SimpleMcpClient implements AutoCloseable {
             if (sseEndpoint != null) {
                 config.setSseEndpoint(sseEndpoint);
             }
+            if (streamableEndpoint != null) {
+                config.setStreamableEndpoint(streamableEndpoint);
+            }
+            if (transportMode != null) {
+                config.setTransportMode(transportMode);
+            }
             if (serverUrl != null) {
                 config.setServerUrl(serverUrl);
             }
@@ -451,7 +477,12 @@ public class SimpleMcpClient implements AutoCloseable {
             // MCP 协议配置
             config.setClientName(clientName);
             config.setClientVersion(clientVersion);
-            config.setProtocolVersion(protocolVersion);
+            // 根据传输模式设置默认协议版本
+            if ("streamable".equalsIgnoreCase(transportMode)) {
+                config.setProtocolVersion(protocolVersion != null ? protocolVersion : "2025-03-26");
+            } else {
+                config.setProtocolVersion(protocolVersion != null ? protocolVersion : "2024-11-05");
+            }
             if (capabilities != null) {
                 config.setCapabilities(capabilities);
             }

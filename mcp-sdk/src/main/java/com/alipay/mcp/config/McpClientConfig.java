@@ -66,6 +66,17 @@ public class McpClientConfig {
      */
     private String sseEndpoint;
 
+    /**
+     * Streamable HTTP 端点完整 URL（可选，优先于 mcpName）
+     * 示例：https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/mcp
+     */
+    private String streamableEndpoint;
+
+    /**
+     * 传输模式：sse 或 streamable（默认：streamable）
+     */
+    private String transportMode = "streamable";
+
     // ==================== 可选参数 ====================
 
     /**
@@ -172,6 +183,22 @@ public class McpClientConfig {
 
     public void setSseEndpoint(String sseEndpoint) {
         this.sseEndpoint = sseEndpoint;
+    }
+
+    public String getStreamableEndpoint() {
+        return streamableEndpoint;
+    }
+
+    public void setStreamableEndpoint(String streamableEndpoint) {
+        this.streamableEndpoint = streamableEndpoint;
+    }
+
+    public String getTransportMode() {
+        return transportMode;
+    }
+
+    public void setTransportMode(String transportMode) {
+        this.transportMode = transportMode;
     }
 
     public String getServerUrl() {
@@ -296,11 +323,21 @@ public class McpClientConfig {
         if (privateKey == null || privateKey.isEmpty()) {
             throw new IllegalArgumentException("privateKey 不能为空");
         }
-        // sseEndpoint 和 mcpName 二选一
-        boolean hasEndpoint = sseEndpoint != null && !sseEndpoint.isEmpty();
-        boolean hasMcpName = mcpName != null && !mcpName.isEmpty();
-        if (!hasEndpoint && !hasMcpName) {
-            throw new IllegalArgumentException("sseEndpoint 或 mcpName 必须指定其中一个");
+
+        // 根据传输模式校验端点配置
+        if ("streamable".equalsIgnoreCase(transportMode)) {
+            boolean hasEndpoint = streamableEndpoint != null && !streamableEndpoint.isEmpty();
+            boolean hasMcpName = mcpName != null && !mcpName.isEmpty();
+            if (!hasEndpoint && !hasMcpName) {
+                throw new IllegalArgumentException("streamable 模式下，streamableEndpoint 或 mcpName 必须指定其中一个");
+            }
+        } else {
+            // sse 模式（默认）
+            boolean hasEndpoint = sseEndpoint != null && !sseEndpoint.isEmpty();
+            boolean hasMcpName = mcpName != null && !mcpName.isEmpty();
+            if (!hasEndpoint && !hasMcpName) {
+                throw new IllegalArgumentException("sse 模式下，sseEndpoint 或 mcpName 必须指定其中一个");
+            }
         }
     }
 }

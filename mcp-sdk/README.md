@@ -5,10 +5,12 @@
 ## 特性
 
 - ✅ 基于标准 MCP 协议
-- ✅ 支持 SSE (Server-Sent Events) 流式通信
+- ✅ 支持 SSE (Server-Sent Events) 流式通信（协议版本：2024-11-05）
+- ✅ 支持 Streamable HTTP 传输（协议版本：2025-03-26）
 - ✅ 支持 JSON-RPC 2.0 消息协议
 - ✅ 复用支付宝 SDK 签名能力
 - ✅ 极简配置（仅需 appId、privateKey、mcpName）
+- ✅ 支持 Session-ID 会话保持（Streamable 模式）
 
 ## 环境要求
 
@@ -31,20 +33,35 @@
 
 ### 1. 创建配置
 
+**Streamable HTTP 模式（默认，推荐）：**
+
 ```java
-// 方式一：使用 mcpName（自动拼接 SSE URL）
+// 方式一：使用 mcpName（自动拼接 Streamable URL）
 McpConfig config = new McpConfig(
     "2021006141677002",     // appId
     "-----BEGIN PRIVATE KEY----- ...",  // 私钥 (PKCS8 格式)
     "aidata-convenience-life5"  // mcpName
 );
+// 默认 transportMode = "streamable"，协议版本自动设置为 2025-03-26
 
-// 方式二：使用完整 SSE 端点 URL（推荐）
+// 方式二：使用完整 Streamable 端点 URL
 McpConfig config = new McpConfig(
     "2021006141677002",     // appId
     "-----BEGIN PRIVATE KEY----- ...",  // 私钥 (PKCS8 格式)
-    null  // mcpName 可为 null
+    null
 );
+config.setStreamableEndpoint("https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/mcp");
+```
+
+**SSE 模式（旧版协议，如需兼容）：**
+
+```java
+McpConfig config = new McpConfig(
+    "2021006141677002",     // appId
+    "-----BEGIN PRIVATE KEY----- ...",  // 私钥 (PKCS8 格式)
+    "aidata-convenience-life5"  // mcpName
+);
+config.setTransportMode("sse");  // 显式设置为 SSE 模式
 config.setSseEndpoint("https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/sse");
 ```
 
@@ -80,7 +97,7 @@ try (McpClient client = new McpClient(config)) {
 ### 3. 使用 Builder 模式（推荐）
 
 ```java
-// 方式一：使用 mcpName
+// 方式一：使用 mcpName（SSE 模式）
 try (McpClient client = new McpClientBuilder()
         .appId("2021006141677002")
         .privateKey("...")
@@ -99,15 +116,31 @@ try (McpClient client = new McpClientBuilder()
     client.connectAndInitialize(listener);
     // ...
 }
+
+// 方式三：使用 Streamable HTTP 模式（默认，无需显式设置）
+try (McpClient client = new McpClientBuilder()
+        .appId("2021006141677002")
+        .privateKey("...")
+        .mcpName("aidata-convenience-life5")
+        // .transportMode("streamable")  // 默认值，可省略
+        .build()) {
+    client.connectAndInitialize(listener);
+    // ...
+}
 ```
 
 ### 4. 使用 SimpleMcpClient（最简洁）
 
+**Streamable HTTP 模式（默认，推荐）：**
+
 ```java
+// 方式一：使用 mcpName（默认就是 streamable 模式）
 try (SimpleMcpClient client = SimpleMcpClient.create()
         .appId("2021006141677002")
         .privateKey("...")
-        .sseEndpoint("https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/sse")
+        .mcpName("aidata-convenience-life5")
+        // .transportMode("streamable")  // 默认值，可省略
+        .serverUrl("https://opengw.alipay.com")
         .build()) {
     
     client.connect();  // 自动初始化
@@ -117,12 +150,23 @@ try (SimpleMcpClient client = SimpleMcpClient.create()
     
     // 异步调用
     CompletableFuture<ToolCallResult> future = client.callToolAsync("tool1", params);
+}
+```
+
+**SSE 模式（旧版协议，如需兼容）：**
+
+```java
+try (SimpleMcpClient client = SimpleMcpClient.create()
+        .appId("2021006141677002")
+        .privateKey("...")
+        .sseEndpoint("https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/sse")
+        .transportMode("sse")  // 显式设置为 SSE 模式
+        .build()) {
     
-    // Builder 模式调用
-    ToolCallResult result = client.callTool("testOpenApi")
-            .nestedParam("toolParams", "date", "2024-01-01")
-            .nestedParam("toolParams", "type", "1")
-            .execute();
+    client.connect();  // 自动初始化
+    
+    // 同步调用
+    List<Tool> tools = client.listTools();
 }
 ```
 
@@ -216,6 +260,7 @@ mcp-sdk/
 │   ├── McpConfig.java              # 配置类
 │   ├── McpException.java           # 异常类
 │   ├── McpClient.java              # 主客户端
+│   ├── SimpleMcpClient.java        # 简化客户端
 │   ├── auth/
 │   │   └── McpAuthBuilder.java     # 认证头构建器
 │   ├── protocol/
@@ -228,8 +273,12 @@ mcp-sdk/
 │   │   ├── Resource.java           # 资源引用
 │   │   ├── JsonSchema.java         # JSON Schema
 │   │   └── JsonSchemaProperty.java # JSON Schema 属性
+│   ├── config/
+│   │   └── McpClientConfig.java    # 客户端配置
 │   └── transport/
 │       ├── SseConnection.java      # SSE 连接管理
+│       ├── StreamableHttpConnection.java  # Streamable HTTP 连接管理
+│       ├── TransportLayer.java     # 传输层接口
 │       ├── McpEventListener.java   # 事件监听器
 │       ├── EndpointResponse.java   # Endpoint 事件
 │       ├── ProgressUpdate.java     # 进度更新
