@@ -50,6 +50,15 @@ public class McpClientBuilder {
     }
 
     /**
+     * 设置传输模式（默认：streamable）
+     * @param transportMode "sse" 或 "streamable"
+     */
+    public McpClientBuilder transportMode(String transportMode) {
+        config.setTransportMode(transportMode);
+        return this;
+    }
+
+    /**
      * 设置 SSE 端点完整 URL（优先于 mcpName）
      * 示例：https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/sse
      */

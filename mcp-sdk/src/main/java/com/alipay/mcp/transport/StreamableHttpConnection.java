@@ -398,23 +398,14 @@ public class StreamableHttpConnection implements TransportLayer {
 
     /**
      * 执行实际 HTTP 请求（拦截器链末端调用）
+     * 注意：此方法由拦截器链调用，认证头已由拦截器添加，不需要再添加
      */
     private Response executeHttpRequest(Request request) throws IOException {
         okhttp3.Request.Builder okRequestBuilder = new okhttp3.Request.Builder()
                 .url(request.getUrl())
                 .post(RequestBody.create(request.getBody(), MediaType.parse("application/json")));
 
-        // 添加认证头
-        try {
-            Headers authHeaders = buildHeaders("POST", request.getUrl(), request.getBody());
-            for (String name : authHeaders.names()) {
-                okRequestBuilder.addHeader(name, authHeaders.get(name));
-            }
-        } catch (ApiException e) {
-            throw new IOException("构建认证头失败", e);
-        }
-
-        // 添加自定义请求头
+        // 添加自定义请求头（包含拦截器添加的认证头）
         for (Map.Entry<String, String> header : request.getHeaders().entrySet()) {
             okRequestBuilder.addHeader(header.getKey(), header.getValue());
         }
