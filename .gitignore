@@ -12,3 +12,8 @@
 target
 .gradle
 build
+
+# logs
+*.log
+logs/
+**/logs/
