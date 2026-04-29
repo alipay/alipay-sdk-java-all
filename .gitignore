@@ -17,3 +17,10 @@ build
 *.log
 logs/
 **/logs/
+
+# JVM attach files
+.attach_pid*
+
+# Temporary files
+tmp/
+com/
