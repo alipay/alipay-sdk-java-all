@@ -8,7 +8,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.3.0</version>
+        <version>3.4.5</version>
         <relativePath/>
     </parent>
 
@@ -27,14 +27,6 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
-        <repository>
-            <id>spring-snapshots</id>
-            <name>Spring Snapshots</name>
-            <url>https://repo.spring.io/snapshot</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-        </repository>
     </repositories>
 
     <properties>
@@ -42,10 +34,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!-- Spring AI 版本 -->
-        <spring-ai.version>1.0.0-M4</spring-ai.version>
+        <spring-ai.version>1.1.4</spring-ai.version>
 
         <!-- MCP 版本 -->
-        <mcp.version>0.11.3</mcp.version>
+        <mcp.version>0.17.0</mcp.version>
     </properties>
 
     <dependencyManagement>
@@ -69,10 +61,12 @@
     </dependencyManagement>
 
     <dependencies>
-        <!-- MCP SDK -->
+        <!-- MCP SDK - 改为 provided，由使用方项目统一管理版本 -->
         <dependency>
             <groupId>io.modelcontextprotocol.sdk</groupId>
             <artifactId>mcp</artifactId>
+            <version>${mcp.version}</version>
+            <scope>provided</scope>
         </dependency>
 
         <!-- 支付宝 SDK v3 (用于签名) -->
@@ -163,38 +157,37 @@
 
     <build>
         <plugins>
+            <!-- 默认排除集成测试，需要通过 -Dtest=AlipayMcpClientIntegrationTest 或 -Pintegration-test 手动触发 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-shade-plugin</artifactId>
-                <version>3.5.1</version>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>shade</goal>
-                        </goals>
-                        <configuration>
-                            <createDependencyReducedPom>false</createDependencyReducedPom>
-                            <artifactSet>
-                                <includes>
-                                    <include>io.modelcontextprotocol.sdk:*</include>
-                                    <include>com.alipay.sdk:alipay-sdk-java-v3</include>
-                                </includes>
-                            </artifactSet>
-                            <filters>
-                                <filter>
-                                    <artifact>*:*</artifact>
-                                    <excludes>
-                                        <exclude>META-INF/*.SF</exclude>
-                                        <exclude>META-INF/*.DSA</exclude>
-                                        <exclude>META-INF/*.RSA</exclude>
-                                    </excludes>
-                                </filter>
-                            </filters>
-                        </configuration>
-                    </execution>
-                </executions>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <excludes>
+                        <exclude>**/integration/**</exclude>
+                    </excludes>
+                </configuration>
             </plugin>
         </plugins>
     </build>
+
+    <profiles>
+        <profile>
+            <id>integration-test</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <configuration>
+                            <excludes combine.self="override"/>
+                            <includes>
+                                <include>**/integration/**</include>
+                            </includes>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
 </project>

@@ -34,13 +34,45 @@ alipay-spring-ai/
 
 ### 1. 引入依赖
 
+> **⚠️ 依赖变更说明（v1.0.0-SNAPSHOT）：** 从此版本开始，`alipay-spring-ai-mcp-starter` 不再内嵌 MCP SDK（`io.modelcontextprotocol.sdk:mcp`），改为 `provided` 依赖。使用者**必须**在项目中引入 MCP SDK 依赖，通常通过 `spring-ai-starter-mcp-server-webmvc` 间接传递即可。
+
+**推荐方式（通过 Spring AI BOM 管理版本）：**
+
 ```xml
-<dependency>
-    <groupId>com.alipay.sdk</groupId>
-    <artifactId>alipay-spring-ai-mcp-starter</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
-</dependency>
+<dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-bom</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
+
+<dependencies>
+    <!-- alipay mcp starter（不再内嵌 mcp SDK） -->
+    <dependency>
+        <groupId>com.alipay.sdk</groupId>
+        <artifactId>alipay-spring-ai-mcp-starter</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </dependency>
+
+    <!-- spring-ai mcp server（自动传递 mcp SDK 依赖，无需额外声明） -->
+    <dependency>
+        <groupId>org.springframework.ai</groupId>
+        <artifactId>spring-ai-starter-mcp-server-webmvc</artifactId>
+    </dependency>
+</dependencies>
 ```
+
+**版本兼容性对照：**
+
+| Spring AI BOM 版本 | 对应的 MCP SDK 版本 |
+|---|---|
+| 1.0.0-M4 | 0.11.3 |
+| 1.0.0-SNAPSHOT | 0.10.0 |
 
 ### 2. 配置 application.yml
 

@@ -21,10 +21,7 @@
     <description>Alipay MCP SDK for Spring AI</description>
 
     <modules>
-        <module>alipay-spring-ai-mcp-core</module>
-        <module>alipay-spring-ai-mcp-autoconfigure</module>
         <module>alipay-spring-ai-mcp-starter</module>
-        <module>alipay-spring-ai-mcp-sample</module>
     </modules>
 
     <repositories>
@@ -90,18 +87,7 @@
                 <version>${mcp.version}</version>
             </dependency>
 
-            <!-- 内部模块 -->
-            <dependency>
-                <groupId>com.alipay.sdk</groupId>
-                <artifactId>alipay-spring-ai-mcp-core</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.alipay.sdk</groupId>
-                <artifactId>alipay-spring-ai-mcp-autoconfigure</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-        </dependencies>
+                    </dependencies>
     </dependencyManagement>
 
     <build>
