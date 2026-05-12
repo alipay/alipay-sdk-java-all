@@ -10,20 +10,20 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 手艺人同步
  *
  * @author auto create
- * @since 1.0, 2026-03-12 13:42:44
+ * @since 1.0, 2026-05-08 14:42:45
  */
 public class AlipayCommerceLifeserviceTechnicianSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6697323312323217884L;
+	private static final long serialVersionUID = 8561526216983246934L;
 
 	/**
-	 * 手艺人头像文件id 来源于alipay.open.file.upload支付宝文件上传接口
+	 * 手艺人头像文件id，【首次同步必填】，来源于alipay.open.file.upload支付宝文件上传接口
 	 */
 	@ApiField("avatar_file_id")
 	private String avatarFileId;
 
 	/**
-	 * 手艺人从业开始月份 格式 yyyy-MM
+	 * 手艺人从业开始月份，选填 格式 yyyy-MM
 	 */
 	@ApiField("career_start_month")
 	private String careerStartMonth;
@@ -41,7 +41,7 @@ public class AlipayCommerceLifeserviceTechnicianSyncModel extends AlipayObject {
 	private String outTechnicianId;
 
 	/**
-	 * 手艺人手机号【首次同步手艺人信息时必填】
+	 * 手艺人手机号，选填
 	 */
 	@ApiField("phone")
 	private String phone;
@@ -79,7 +79,7 @@ public class AlipayCommerceLifeserviceTechnicianSyncModel extends AlipayObject {
 	private String technicianId;
 
 	/**
-	 * 手艺人岗位头衔
+	 * 手艺人岗位头衔【首次同步必填】
 	 */
 	@ApiField("title")
 	private String title;

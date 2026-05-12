@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundCouponQrcodeMerchantBatchcreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6556155447311739725L;
+	private static final long serialVersionUID = 5649283541426138537L;
 
 	/**
 	 * 生成的码关联的产品，喜气红包场景填CROWD_CELEBRATE_CASH

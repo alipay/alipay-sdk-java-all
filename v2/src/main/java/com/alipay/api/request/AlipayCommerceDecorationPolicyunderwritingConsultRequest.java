@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.decoration.policyunderwriting.consult request
  * 
  * @author auto create
- * @since 1.0, 2026-04-14 16:37:45
+ * @since 1.0, 2026-05-08 14:07:45
  */
 public class AlipayCommerceDecorationPolicyunderwritingConsultRequest implements AlipayRequest<AlipayCommerceDecorationPolicyunderwritingConsultResponse> {
 

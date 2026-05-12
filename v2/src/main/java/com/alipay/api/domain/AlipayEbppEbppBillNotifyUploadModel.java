@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 水电燃账单提醒上传
  *
  * @author auto create
- * @since 1.0, 2024-11-19 11:11:30
+ * @since 1.0, 2026-04-29 15:52:36
  */
 public class AlipayEbppEbppBillNotifyUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3355774413887545512L;
+	private static final long serialVersionUID = 3777236264492593122L;
 
 	/**
 	 * 账单提醒用户信息

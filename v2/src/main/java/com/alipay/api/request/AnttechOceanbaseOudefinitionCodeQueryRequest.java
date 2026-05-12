@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.oceanbase.oudefinition.code.query request
  * 
  * @author auto create
- * @since 1.0, 2025-07-22 14:57:33
+ * @since 1.0, 2026-05-07 15:57:28
  */
 public class AnttechOceanbaseOudefinitionCodeQueryRequest implements AlipayRequest<AnttechOceanbaseOudefinitionCodeQueryResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AxfItemCategoryQualificationReq extends AlipayObject {
 
-	private static final long serialVersionUID = 3625645978527529184L;
+	private static final long serialVersionUID = 1324378494958562862L;
 
 	/**
 	 * 资质内容。参考类目模版响应接口所需资质参数描述。如果需要图片先走图片上传接口获取图片id

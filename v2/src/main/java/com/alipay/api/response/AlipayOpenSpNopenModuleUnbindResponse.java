@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.nopen.module.unbind response.
  * 
  * @author auto create
- * @since 1.0, 2026-04-07 10:37:44
+ * @since 1.0, 2026-04-29 19:32:48
  */
 public class AlipayOpenSpNopenModuleUnbindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7369956326834313722L;
+	private static final long serialVersionUID = 5252594136164554771L;
 
 	/** 
 	 * traceId信息

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TransferCredential extends AlipayObject {
 
-	private static final long serialVersionUID = 4632858324496667927L;
+	private static final long serialVersionUID = 4276156141775125648L;
 
 	/**
 	 * 证件号码

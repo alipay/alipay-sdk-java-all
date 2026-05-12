@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiMerchantOperatorFreezeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6638123118814415575L;
+	private static final long serialVersionUID = 2363857649843468372L;
 
 	/** 
 	 * 操作结果 true:success, false: failed

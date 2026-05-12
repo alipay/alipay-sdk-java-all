@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.expandindirect.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-10-24 14:20:20
+ * @since 1.0, 2026-05-08 19:27:49
  */
 public class AlipayFundExpandindirectCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6819811312783669376L;
+	private static final long serialVersionUID = 8869383296328633566L;
 
 	/** 
 	 * 进件单创建时间，格式：yyyy-MM-dd HH:mm:ss

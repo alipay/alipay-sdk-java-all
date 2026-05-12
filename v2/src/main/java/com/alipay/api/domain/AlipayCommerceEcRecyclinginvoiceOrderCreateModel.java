@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 反向订单创建
  *
  * @author auto create
- * @since 1.0, 2026-03-17 14:47:38
+ * @since 1.0, 2026-04-29 16:00:24
  */
 public class AlipayCommerceEcRecyclinginvoiceOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2789663587744554236L;
+	private static final long serialVersionUID = 8235185332259326184L;
 
 	/**
 	 * 企业（商户）营业员ID，传值为已维护的企业（商户）营业员编号，可调用反向企业营业员查询接口查询
@@ -58,6 +58,12 @@ public class AlipayCommerceEcRecyclinginvoiceOrderCreateModel extends AlipayObje
 	 */
 	@ApiField("product_id")
 	private String productId;
+
+	/**
+	 * 代卖人证件号码（身份证号码）
+	 */
+	@ApiField("proxy_seller_cert_no")
+	private String proxySellerCertNo;
 
 	/**
 	 * 企业（商户）税号
@@ -112,6 +118,13 @@ public class AlipayCommerceEcRecyclinginvoiceOrderCreateModel extends AlipayObje
 	}
 	public void setProductId(String productId) {
 		this.productId = productId;
+	}
+
+	public String getProxySellerCertNo() {
+		return this.proxySellerCertNo;
+	}
+	public void setProxySellerCertNo(String proxySellerCertNo) {
+		this.proxySellerCertNo = proxySellerCertNo;
 	}
 
 	public String getTaxNo() {

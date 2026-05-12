@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntfortuneEquityShopCustrelationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2198265322796831545L;
+	private static final long serialVersionUID = 8176585926625266153L;
 
 	/** 
 	 * 用户关注商户pid对应的财富号的时间

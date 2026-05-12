@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 货运企业支付单笔交易凭证下载申请
  *
  * @author auto create
- * @since 1.0, 2026-02-26 14:16:32
+ * @since 1.0, 2026-05-12 10:05:22
  */
 public class AlipayCommerceLogisticsFreightflowTradereceiptApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1755159877327563657L;
+	private static final long serialVersionUID = 5187291363362324792L;
 
 	/**
 	 * 账户编号
@@ -93,6 +93,7 @@ STANDARD_TRADE_RECEIPT
 转账:TRANSFER
 充值收款/退款/退汇:SETTLE_ACCOUNT_RECEIPT
 收银支付:CASHIER_PAY
+调拨：ALLOCATE
 
 当mode为SPDB时：
 05-入金单笔回单

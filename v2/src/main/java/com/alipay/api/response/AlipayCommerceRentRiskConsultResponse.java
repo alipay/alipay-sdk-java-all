@@ -20,7 +20,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceRentRiskConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1359881222181912726L;
+	private static final long serialVersionUID = 1199786879932727151L;
 
 	/** 
 	 * 长租/汽车订阅：Tn_Level类型结果，risk_level字段取值范围T1-T10（T1 ~ T4: 低风险；T5 ~ T6: 中风险；T7 ~ T8: 高风险；T9 ~ T10: 极高风险）

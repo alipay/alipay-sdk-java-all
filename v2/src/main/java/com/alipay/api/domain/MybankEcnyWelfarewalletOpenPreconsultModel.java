@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankEcnyWelfarewalletOpenPreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4838726462981534122L;
+	private static final long serialVersionUID = 1423226149879945568L;
 
 	/**
 	 * 客户姓名

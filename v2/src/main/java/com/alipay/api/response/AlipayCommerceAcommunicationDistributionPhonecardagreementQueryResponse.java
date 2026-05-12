@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.acommunication.distribution.phonecardagreement.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-10 10:33:59
+ * @since 1.0, 2026-04-30 10:44:44
  */
 public class AlipayCommerceAcommunicationDistributionPhonecardagreementQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8285818441258732392L;
+	private static final long serialVersionUID = 4318113941265197989L;
 
 	/** 
 	 * 号卡协议列表

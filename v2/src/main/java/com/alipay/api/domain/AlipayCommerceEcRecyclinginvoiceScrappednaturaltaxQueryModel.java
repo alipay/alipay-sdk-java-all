@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 供应商税务信息查询
  *
  * @author auto create
- * @since 1.0, 2026-02-02 10:36:08
+ * @since 1.0, 2026-04-27 18:00:53
  */
 public class AlipayCommerceEcRecyclinginvoiceScrappednaturaltaxQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4584176735533152266L;
+	private static final long serialVersionUID = 7676773277245498153L;
 
 	/**
 	 * 新增成功的供应商ID

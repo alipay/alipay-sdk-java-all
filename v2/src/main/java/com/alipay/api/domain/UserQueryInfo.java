@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 结果数据
  *
  * @author auto create
- * @since 1.0, 2026-04-10 17:37:44
+ * @since 1.0, 2026-05-08 16:24:31
  */
 public class UserQueryInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6188891127156675491L;
+	private static final long serialVersionUID = 3795693377184241487L;
 
 	/**
 	 * 支付宝登录账户的手机号,非患者手机号

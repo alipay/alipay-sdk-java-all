@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceLogisticsInvoiceIstdwaybillQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5729466728897874688L;
+	private static final long serialVersionUID = 3118428296762127519L;
 
 	/** 
 	 * 整体的运单开票状态，0：处理中 1：开票成功 2：开票失败

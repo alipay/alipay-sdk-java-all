@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 单元新增或修改
  *
  * @author auto create
- * @since 1.0, 2026-03-11 11:22:53
+ * @since 1.0, 2026-04-30 10:01:21
  */
 public class AlipayDataDataserviceAdcampaignGroupCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8835581143555518985L;
+	private static final long serialVersionUID = 8133671956993476141L;
 
 	/**
 	 * 年龄定向
@@ -203,6 +203,12 @@ alipay.data.dataservice.adcrowd.interestcategory.batchquery
 	@ApiListField("lbs_list")
 	@ApiField("open_lbs_entry")
 	private List<OpenLbsEntry> lbsList;
+
+	/**
+	 * 做为target_roi的拓展字段，含义与target_roi一样，支持4为小数。优先级高于target_roi
+	 */
+	@ApiField("new_target_roi")
+	private String newTargetRoi;
 
 	/**
 	 * 仅出价方式bidType=OCPX时才可开启一键起量
@@ -464,6 +470,13 @@ alipay.data.dataservice.adcrowd.themecrowd.batchquery
 	}
 	public void setLbsList(List<OpenLbsEntry> lbsList) {
 		this.lbsList = lbsList;
+	}
+
+	public String getNewTargetRoi() {
+		return this.newTargetRoi;
+	}
+	public void setNewTargetRoi(String newTargetRoi) {
+		this.newTargetRoi = newTargetRoi;
 	}
 
 	public String getOneBoostStatus() {

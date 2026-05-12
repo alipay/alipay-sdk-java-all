@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceYuntaskWhitehistoryBatchcreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2847766394522871621L;
+	private static final long serialVersionUID = 2816847319748914977L;
 
 	
 

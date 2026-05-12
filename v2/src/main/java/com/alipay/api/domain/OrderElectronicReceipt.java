@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OrderElectronicReceipt extends AlipayObject {
 
-	private static final long serialVersionUID = 2677334364632159275L;
+	private static final long serialVersionUID = 2598746937883573847L;
 
 	/**
 	 * 下载链接。status为SUCCESS时返回。用户可以使用此http链接下载文件内容，电子回单文件为pdf格式。

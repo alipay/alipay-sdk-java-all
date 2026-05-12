@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMerchantcardDeductionorderSetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1125631746444537419L;
+	private static final long serialVersionUID = 8158769634291488876L;
 
 	/** 
 	 * (1) 当 card_type=AXF_MONEY_TIME_CARD && operation_type=REFUND 时，该字段代表退款单id

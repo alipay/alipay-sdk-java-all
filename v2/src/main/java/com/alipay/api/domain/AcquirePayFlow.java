@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 数据集
  *
  * @author auto create
- * @since 1.0, 2026-04-23 10:12:45
+ * @since 1.0, 2026-05-06 10:07:48
  */
 public class AcquirePayFlow extends AlipayObject {
 
-	private static final long serialVersionUID = 5848544829589298198L;
+	private static final long serialVersionUID = 2141847243654959288L;
 
 	/**
 	 * null

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 碰一下打卡远程打卡接口
  *
  * @author auto create
- * @since 1.0, 2026-04-14 16:22:45
+ * @since 1.0, 2026-04-29 14:37:48
  */
 public class AlipayOfflineProviderExpoNfccheckinSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8815574267348884935L;
+	private static final long serialVersionUID = 5298613673662866785L;
 
 	/**
 	 * 活动code值
@@ -42,6 +42,12 @@ public class AlipayOfflineProviderExpoNfccheckinSubmitModel extends AlipayObject
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/**
+	 * 请求来源（请求方）
+	 */
+	@ApiField("request_src")
+	private String requestSrc;
 
 	/**
 	 * 方案配置code
@@ -94,6 +100,13 @@ public class AlipayOfflineProviderExpoNfccheckinSubmitModel extends AlipayObject
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public String getRequestSrc() {
+		return this.requestSrc;
+	}
+	public void setRequestSrc(String requestSrc) {
+		this.requestSrc = requestSrc;
 	}
 
 	public String getSolutionConfigCode() {

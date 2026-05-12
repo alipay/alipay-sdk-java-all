@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 补充类别信息
  *
  * @author auto create
- * @since 1.0, 2026-03-13 09:56:43
+ * @since 1.0, 2026-05-06 10:54:15
  */
 public class SupplementCategoryInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1579682933465772362L;
+	private static final long serialVersionUID = 6248559819566549258L;
 
 	/**
 	 * 需要补充信息的类别
@@ -35,6 +35,12 @@ public class SupplementCategoryInfo extends AlipayObject {
 	@ApiField("supplement_payment_amt")
 	private Long supplementPaymentAmt;
 
+	/**
+	 * 给坐席看的回退原因
+	 */
+	@ApiField("supplement_reason_for_customer_service")
+	private String supplementReasonForCustomerService;
+
 	public String getSupplementCategory() {
 		return this.supplementCategory;
 	}
@@ -54,6 +60,13 @@ public class SupplementCategoryInfo extends AlipayObject {
 	}
 	public void setSupplementPaymentAmt(Long supplementPaymentAmt) {
 		this.supplementPaymentAmt = supplementPaymentAmt;
+	}
+
+	public String getSupplementReasonForCustomerService() {
+		return this.supplementReasonForCustomerService;
+	}
+	public void setSupplementReasonForCustomerService(String supplementReasonForCustomerService) {
+		this.supplementReasonForCustomerService = supplementReasonForCustomerService;
 	}
 
 }

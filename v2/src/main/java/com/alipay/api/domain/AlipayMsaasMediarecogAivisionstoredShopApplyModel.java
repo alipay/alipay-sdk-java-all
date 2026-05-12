@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * AI门店准入申请
  *
  * @author auto create
- * @since 1.0, 2026-02-10 17:27:43
+ * @since 1.0, 2026-05-06 20:27:49
  */
 public class AlipayMsaasMediarecogAivisionstoredShopApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3267968955463771211L;
+	private static final long serialVersionUID = 4412566793462858578L;
 
 	/**
 	 * null

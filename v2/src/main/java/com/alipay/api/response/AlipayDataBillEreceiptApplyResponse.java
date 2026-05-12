@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.bill.ereceipt.apply response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-12 11:21:46
+ * @since 1.0, 2026-04-28 20:17:48
  */
 public class AlipayDataBillEreceiptApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3751651139512682248L;
+	private static final long serialVersionUID = 7139666331695659881L;
 
 	/** 
 	 * 文件申请号file_id信息。

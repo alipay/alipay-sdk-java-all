@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 苹果查询链接接口
  *
  * @author auto create
- * @since 1.0, 2026-04-18 12:20:47
+ * @since 1.0, 2026-04-29 13:15:24
  */
 public class AlipayCommerceEducateVerifyConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2752697511548877591L;
+	private static final long serialVersionUID = 6716433232734965567L;
 
 	/**
 	 * 用于传递此次验证的基本信息

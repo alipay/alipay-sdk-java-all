@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 投保接口
  *
  * @author auto create
- * @since 1.0, 2026-04-14 14:56:59
+ * @since 1.0, 2026-05-08 11:16:10
  */
 public class AlipayCommerceDecorationPolicyunderwritingConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8411179594858857787L;
+	private static final long serialVersionUID = 2564858557887548799L;
 
 	/**
 	 * 投保申请时间,格式：yyyy-MM-dd HH24:mm:ss,一般是系统当前时间,不传默认系统当前时间
@@ -35,6 +35,12 @@ public class AlipayCommerceDecorationPolicyunderwritingConsultModel extends Alip
 	@ApiListField("insured_list")
 	@ApiField("insured_v_o")
 	private List<InsuredVO> insuredList;
+
+	/**
+	 * 部分产品需校验冻资金额，需传入开通家装宝pid
+	 */
+	@ApiField("open_jzb_pid")
+	private String openJzbPid;
 
 	/**
 	 * 订单金额,分为单位
@@ -76,6 +82,12 @@ public class AlipayCommerceDecorationPolicyunderwritingConsultModel extends Alip
 	private String productCode;
 
 	/**
+	 * 取值为文件上传接口对应DECORATION_CONTRACT场景的bizFileId
+	 */
+	@ApiField("project_file_id")
+	private String projectFileId;
+
+	/**
 	 * 项目编号或合同编号
 	 */
 	@ApiField("project_id")
@@ -107,6 +119,13 @@ public class AlipayCommerceDecorationPolicyunderwritingConsultModel extends Alip
 	}
 	public void setInsuredList(List<InsuredVO> insuredList) {
 		this.insuredList = insuredList;
+	}
+
+	public String getOpenJzbPid() {
+		return this.openJzbPid;
+	}
+	public void setOpenJzbPid(String openJzbPid) {
+		this.openJzbPid = openJzbPid;
 	}
 
 	public Long getOrderAmount() {
@@ -149,6 +168,13 @@ public class AlipayCommerceDecorationPolicyunderwritingConsultModel extends Alip
 	}
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
+	}
+
+	public String getProjectFileId() {
+		return this.projectFileId;
+	}
+	public void setProjectFileId(String projectFileId) {
+		this.projectFileId = projectFileId;
 	}
 
 	public String getProjectId() {

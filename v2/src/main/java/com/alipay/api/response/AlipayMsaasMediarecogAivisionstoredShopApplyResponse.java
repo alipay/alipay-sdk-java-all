@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.msaas.mediarecog.aivisionstored.shop.apply response.
  * 
  * @author auto create
- * @since 1.0, 2026-02-10 17:27:43
+ * @since 1.0, 2026-05-06 20:27:49
  */
 public class AlipayMsaasMediarecogAivisionstoredShopApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8248959265616855526L;
+	private static final long serialVersionUID = 1831495499464434345L;
 
 	
 

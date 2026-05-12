@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.authentication.token.create request
  * 
  * @author auto create
- * @since 1.0, 2026-04-20 17:07:45
+ * @since 1.0, 2026-04-28 15:27:48
  */
 public class AlipayCommerceMedicalAuthenticationTokenCreateRequest implements AlipayRequest<AlipayCommerceMedicalAuthenticationTokenCreateResponse> {
 

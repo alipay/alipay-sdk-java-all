@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pay.app.marketing.consult response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-19 14:52:42
+ * @since 1.0, 2026-04-30 00:06:47
  */
 public class AlipayPayAppMarketingConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3828499469932476439L;
+	private static final long serialVersionUID = 5356872388641237814L;
 
 	/** 
 	 * 反作弊等级值；仅当请求入参need_query_anti_rank为true时才会返回

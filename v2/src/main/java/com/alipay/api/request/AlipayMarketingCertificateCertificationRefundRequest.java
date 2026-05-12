@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.certificate.certification.refund request
  * 
  * @author auto create
- * @since 1.0, 2024-04-23 21:51:00
+ * @since 1.0, 2026-05-11 15:54:38
  */
 public class AlipayMarketingCertificateCertificationRefundRequest implements AlipayRequest<AlipayMarketingCertificateCertificationRefundResponse> {
 

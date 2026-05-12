@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 反向企业产品配置变更
  *
  * @author auto create
- * @since 1.0, 2025-09-10 00:28:15
+ * @since 1.0, 2026-04-27 18:01:45
  */
 public class AlipayCommerceEcRecyclinginvoiceCompanyproductModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8237938357528375599L;
+	private static final long serialVersionUID = 1337266954554196932L;
 
 	/**
 	 * 企业（商户）产品配置

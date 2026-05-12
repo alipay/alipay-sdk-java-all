@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceRecycleInstshopQrcodeConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2463333245217431436L;
+	private static final long serialVersionUID = 7634456517317889628L;
 
 	/** 
 	 * 支付宝线下门店扫码创单承接页URL

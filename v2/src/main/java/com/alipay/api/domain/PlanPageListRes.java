@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PlanPageListRes extends AlipayObject {
 
-	private static final long serialVersionUID = 3764651169665227886L;
+	private static final long serialVersionUID = 1885346885415324117L;
 
 	/**
 	 * 计划日预算。单位：元

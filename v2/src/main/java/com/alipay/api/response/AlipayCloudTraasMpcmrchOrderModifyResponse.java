@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudTraasMpcmrchOrderModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7499372366629566422L;
+	private static final long serialVersionUID = 3371578677269339724L;
 
 	
 

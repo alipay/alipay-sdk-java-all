@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品
  *
  * @author auto create
- * @since 1.0, 2026-03-31 15:02:14
+ * @since 1.0, 2026-04-27 17:15:58
  */
 public class MerchantCardTemplate extends AlipayObject {
 
-	private static final long serialVersionUID = 4741875546765163322L;
+	private static final long serialVersionUID = 7453245596712414149L;
 
 	/**
 	 * 不传时默认卡商品类型
@@ -84,6 +84,12 @@ public class MerchantCardTemplate extends AlipayObject {
 	private String categoryId;
 
 	/**
+	 * 履约类型，默认到店服务
+	 */
+	@ApiField("fulfillment_type")
+	private String fulfillmentType;
+
+	/**
 	 * 资金模式，预付或先享，新增时不传默认先享，编辑时不传默认不改变原值
 	 */
 	@ApiListField("funding_model")
@@ -140,6 +146,13 @@ public class MerchantCardTemplate extends AlipayObject {
 	 */
 	@ApiField("item_category_code")
 	private String itemCategoryCode;
+
+	/**
+	 * 商品自定义属性。可分组传入，如果不需要分组，group_name设空即可
+	 */
+	@ApiListField("item_custom_attrs")
+	@ApiField("ls_item_custom_attr")
+	private List<LsItemCustomAttr> itemCustomAttrs;
 
 	/**
 	 * 金额卡的必要参数。其他卡类型无需传入
@@ -292,6 +305,13 @@ public class MerchantCardTemplate extends AlipayObject {
 		this.categoryId = categoryId;
 	}
 
+	public String getFulfillmentType() {
+		return this.fulfillmentType;
+	}
+	public void setFulfillmentType(String fulfillmentType) {
+		this.fulfillmentType = fulfillmentType;
+	}
+
 	public List<String> getFundingModel() {
 		return this.fundingModel;
 	}
@@ -346,6 +366,13 @@ public class MerchantCardTemplate extends AlipayObject {
 	}
 	public void setItemCategoryCode(String itemCategoryCode) {
 		this.itemCategoryCode = itemCategoryCode;
+	}
+
+	public List<LsItemCustomAttr> getItemCustomAttrs() {
+		return this.itemCustomAttrs;
+	}
+	public void setItemCustomAttrs(List<LsItemCustomAttr> itemCustomAttrs) {
+		this.itemCustomAttrs = itemCustomAttrs;
 	}
 
 	public MoneyCardInfo getMoneyCardInfo() {

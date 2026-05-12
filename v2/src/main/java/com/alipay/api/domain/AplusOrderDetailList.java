@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单列表
  *
  * @author auto create
- * @since 1.0, 2026-04-24 21:12:48
+ * @since 1.0, 2026-05-09 15:02:46
  */
 public class AplusOrderDetailList extends AlipayObject {
 
-	private static final long serialVersionUID = 3824882466395591457L;
+	private static final long serialVersionUID = 1895473824625895165L;
 
 	/**
 	 * 订单购买的总凭证数量

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 二手售卖订单创建
  *
  * @author auto create
- * @since 1.0, 2026-04-27 14:27:30
+ * @since 1.0, 2026-04-27 17:22:45
  */
 public class AlipayCommerceResaleOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1765995235983321129L;
+	private static final long serialVersionUID = 4669665349773764462L;
 
 	/**
 	 * 收货地址信息，邮寄方式需要输入
@@ -64,6 +64,13 @@ public class AlipayCommerceResaleOrderCreateModel extends AlipayObject {
 	 */
 	@ApiField("out_order_id")
 	private String outOrderId;
+
+	/**
+	 * 3C：DIGITAL
+卡券：VOUCHER
+	 */
+	@ApiField("service_category")
+	private String serviceCategory;
 
 	/**
 	 * 小程序使用checkBeforeOrder()获取
@@ -131,6 +138,13 @@ public class AlipayCommerceResaleOrderCreateModel extends AlipayObject {
 	}
 	public void setOutOrderId(String outOrderId) {
 		this.outOrderId = outOrderId;
+	}
+
+	public String getServiceCategory() {
+		return this.serviceCategory;
+	}
+	public void setServiceCategory(String serviceCategory) {
+		this.serviceCategory = serviceCategory;
 	}
 
 	public String getSourceId() {

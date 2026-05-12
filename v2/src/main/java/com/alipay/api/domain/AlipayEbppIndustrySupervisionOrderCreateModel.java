@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 资金监管订单下单接口
  *
  * @author auto create
- * @since 1.0, 2025-10-14 19:09:08
+ * @since 1.0, 2026-05-07 16:22:14
  */
 public class AlipayEbppIndustrySupervisionOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7317996357511918947L;
+	private static final long serialVersionUID = 7639241378894777181L;
 
 	/**
 	 * 支付宝2088
@@ -64,6 +64,18 @@ public class AlipayEbppIndustrySupervisionOrderCreateModel extends AlipayObject 
 	 */
 	@ApiField("order_title")
 	private String orderTitle;
+
+	/**
+	 * 外部合同号
+	 */
+	@ApiField("out_contract_no")
+	private String outContractNo;
+
+	/**
+	 * 外部合同类型
+	 */
+	@ApiField("out_contract_type")
+	private String outContractType;
 
 	/**
 	 * 外部商户订单
@@ -125,6 +137,20 @@ public class AlipayEbppIndustrySupervisionOrderCreateModel extends AlipayObject 
 	}
 	public void setOrderTitle(String orderTitle) {
 		this.orderTitle = orderTitle;
+	}
+
+	public String getOutContractNo() {
+		return this.outContractNo;
+	}
+	public void setOutContractNo(String outContractNo) {
+		this.outContractNo = outContractNo;
+	}
+
+	public String getOutContractType() {
+		return this.outContractType;
+	}
+	public void setOutContractType(String outContractType) {
+		this.outContractType = outContractType;
 	}
 
 	public String getOutOrderNo() {

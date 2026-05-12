@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝个人协议页面签约接口
  *
  * @author auto create
- * @since 1.0, 2025-11-27 19:21:27
+ * @since 1.0, 2026-05-11 20:31:48
  */
 public class AlipayUserAgreementPageSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8415672391882514111L;
+	private static final long serialVersionUID = 8834752384878112225L;
 
 	/**
 	 * 请按当前接入的方式进行填充，且输入值必须为文档中的参数取值范围。
@@ -138,6 +138,12 @@ public class AlipayUserAgreementPageSignModel extends AlipayObject {
 	 */
 	@ApiField("specified_asset")
 	private SpecifiedAsset specifiedAsset;
+
+	/**
+	 * 商户签约指定代扣规则信息，自动续购场景使用
+	 */
+	@ApiField("specified_deduct_rule_params")
+	private SpecifiedDeductRuleParams specifiedDeductRuleParams;
 
 	/**
 	 * 商户指定优先扣款渠道
@@ -301,6 +307,13 @@ public class AlipayUserAgreementPageSignModel extends AlipayObject {
 	}
 	public void setSpecifiedAsset(SpecifiedAsset specifiedAsset) {
 		this.specifiedAsset = specifiedAsset;
+	}
+
+	public SpecifiedDeductRuleParams getSpecifiedDeductRuleParams() {
+		return this.specifiedDeductRuleParams;
+	}
+	public void setSpecifiedDeductRuleParams(SpecifiedDeductRuleParams specifiedDeductRuleParams) {
+		this.specifiedDeductRuleParams = specifiedDeductRuleParams;
 	}
 
 	public SpecifiedChannelParam getSpecifiedSortChannelParams() {

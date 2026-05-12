@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营销活动报名记录查询
  *
  * @author auto create
- * @since 1.0, 2026-02-27 13:58:23
+ * @since 1.0, 2026-05-08 21:57:45
  */
 public class AlipayCommerceOperationPromoRecordQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4723981637332767584L;
+	private static final long serialVersionUID = 6655246559322841652L;
 
 	/**
-	 * 活动编码
+	 * 活动编码，固定值
 	 */
 	@ApiField("activity_code")
 	private String activityCode;
@@ -38,13 +38,13 @@ public class AlipayCommerceOperationPromoRecordQueryModel extends AlipayObject {
 	private String queryData;
 
 	/**
-	 * 主体ID
+	 * 主体ID，支持按照报名接口返回的ID传值，也可以传对应的支付宝账号
 	 */
 	@ApiField("subject_id")
 	private String subjectId;
 
 	/**
-	 * 主体类型
+	 * 主体类型，支持按照报名接口返回的类型，也可以传对应的支付宝账号类型
 	 */
 	@ApiField("subject_type")
 	private String subjectType;

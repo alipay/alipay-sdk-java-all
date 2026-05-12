@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 税收分类编码查询
  *
  * @author auto create
- * @since 1.0, 2025-07-07 14:29:56
+ * @since 1.0, 2026-04-27 17:56:52
  */
 public class AlipayCommerceEcInvoiceTaxcategoryBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5823631876543737176L;
+	private static final long serialVersionUID = 4629957615833888844L;
 
 	/**
 	 * 企业税号

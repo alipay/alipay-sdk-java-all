@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.authentication.token.verify response.
  * 
  * @author auto create
- * @since 1.0, 2026-04-20 17:07:45
+ * @since 1.0, 2026-04-28 15:27:49
  */
 public class AlipayCommerceMedicalAuthenticationTokenVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2676524235364356986L;
+	private static final long serialVersionUID = 2455755411385436262L;
 
 	/** 
 	 * 响应结果数据

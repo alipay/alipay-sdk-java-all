@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.recyclinginvoice.companysupplier.create response.
  * 
  * @author auto create
- * @since 1.0, 2026-04-23 02:37:45
+ * @since 1.0, 2026-04-29 15:42:48
  */
 public class AlipayCommerceEcRecyclinginvoiceCompanysupplierCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1254486741928517663L;
+	private static final long serialVersionUID = 8561458993394563162L;
 
 	/** 
 	 * 端内通知打开反向开票供应商关系确认页面的url

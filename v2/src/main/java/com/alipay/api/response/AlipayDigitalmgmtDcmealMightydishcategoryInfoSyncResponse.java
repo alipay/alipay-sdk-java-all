@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDigitalmgmtDcmealMightydishcategoryInfoSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4355694679468687625L;
+	private static final long serialVersionUID = 1762173365832573523L;
 
 	
 

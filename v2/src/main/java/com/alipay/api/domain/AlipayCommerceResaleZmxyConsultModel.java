@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 二手售卖先享预咨询
  *
  * @author auto create
- * @since 1.0, 2026-04-27 14:28:03
+ * @since 1.0, 2026-04-27 17:22:45
  */
 public class AlipayCommerceResaleZmxyConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5814666716413937619L;
+	private static final long serialVersionUID = 4865864823852812176L;
 
 	/**
 	 * 商品信息
@@ -30,6 +30,13 @@ public class AlipayCommerceResaleZmxyConsultModel extends AlipayObject {
 	 */
 	@ApiField("order_amount")
 	private String orderAmount;
+
+	/**
+	 * 3C数码：DIGITAL
+卡券：VOUCHER
+	 */
+	@ApiField("service_category")
+	private String serviceCategory;
 
 	/**
 	 * 通过checkBeforeOrder获取
@@ -62,6 +69,13 @@ public class AlipayCommerceResaleZmxyConsultModel extends AlipayObject {
 	}
 	public void setOrderAmount(String orderAmount) {
 		this.orderAmount = orderAmount;
+	}
+
+	public String getServiceCategory() {
+		return this.serviceCategory;
+	}
+	public void setServiceCategory(String serviceCategory) {
+		this.serviceCategory = serviceCategory;
 	}
 
 	public String getSourceId() {

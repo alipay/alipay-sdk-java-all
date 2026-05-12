@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * N点餐物料物流信息上报
  *
  * @author auto create
- * @since 1.0, 2025-04-18 15:32:26
+ * @since 1.0, 2026-05-11 11:00:34
  */
 public class AlipayOpenSpNordermaterialsDeliveryUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8575886819952349152L;
+	private static final long serialVersionUID = 6313382976974622652L;
 
 	/**
 	 * 门店物料收货地址

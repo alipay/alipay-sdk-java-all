@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayContentLiveCommentDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2425976288536867767L;
+	private static final long serialVersionUID = 1574773815243863276L;
 
 	/**
 	 * tab3评论id

@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 二手售卖订单商品模型
+ * null
  *
  * @author auto create
- * @since 1.0, 2026-04-24 09:48:17
+ * @since 1.0, 2026-04-27 17:22:45
  */
 public class ResaleOrderItemVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6662468296985484591L;
+	private static final long serialVersionUID = 4526626497384484479L;
 
 	/**
 	 * 小程序商品库的itemId

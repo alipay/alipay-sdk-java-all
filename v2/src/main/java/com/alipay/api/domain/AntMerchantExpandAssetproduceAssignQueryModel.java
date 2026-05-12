@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取生产指令接口
  *
  * @author auto create
- * @since 1.0, 2026-04-01 14:03:32
+ * @since 1.0, 2026-05-07 17:04:23
  */
 public class AntMerchantExpandAssetproduceAssignQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3488979111212815373L;
+	private static final long serialVersionUID = 1448757594268933126L;
 
 	/**
 	 * 每次拉取最大记录数量，可选值为[1,200] ;

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.acommunication.point.rollback response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-28 12:02:22
+ * @since 1.0, 2026-04-30 10:44:44
  */
 public class AlipayCommerceAcommunicationPointRollbackResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4719274198441332426L;
+	private static final long serialVersionUID = 4653467472559291539L;
 
 	/** 
 	 * 新积分id

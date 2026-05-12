@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-04-14 20:02:46
+ * @since 1.0, 2026-05-08 15:27:45
  */
 public class RecycleQcReportCheckItems extends AlipayObject {
 
-	private static final long serialVersionUID = 5131444731268534325L;
+	private static final long serialVersionUID = 3631518661294314346L;
 
 	/**
 	 * 质检项目名
@@ -40,6 +40,12 @@ public class RecycleQcReportCheckItems extends AlipayObject {
 	 */
 	@ApiField("question_type")
 	private String questionType;
+
+	/**
+	 * 质检模版的类型
+	 */
+	@ApiField("template_type")
+	private String templateType;
 
 	public String getAttrName() {
 		return this.attrName;
@@ -67,6 +73,13 @@ public class RecycleQcReportCheckItems extends AlipayObject {
 	}
 	public void setQuestionType(String questionType) {
 		this.questionType = questionType;
+	}
+
+	public String getTemplateType() {
+		return this.templateType;
+	}
+	public void setTemplateType(String templateType) {
+		this.templateType = templateType;
 	}
 
 }

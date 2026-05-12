@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EnvironmentalDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4761226529888979799L;
+	private static final long serialVersionUID = 6293679684666937942L;
 
 	/**
 	 * 一个环保行为实际发放的数量

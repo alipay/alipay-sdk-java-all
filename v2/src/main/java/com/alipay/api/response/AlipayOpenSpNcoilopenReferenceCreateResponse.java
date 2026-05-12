@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.ncoilopen.reference.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-26 11:03:28
+ * @since 1.0, 2026-05-07 14:43:55
  */
 public class AlipayOpenSpNcoilopenReferenceCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1693653129827951132L;
+	private static final long serialVersionUID = 5138373355281896647L;
 
 	/** 
 	 * 流水id，整个订单处理过程中串联整个链路的id

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 二手售卖订单关闭
  *
  * @author auto create
- * @since 1.0, 2026-04-20 17:40:32
+ * @since 1.0, 2026-04-30 14:07:46
  */
 public class AlipayCommerceResaleOrderCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5131476327621718658L;
+	private static final long serialVersionUID = 6588517447988817592L;
 
 	/**
 	 * 用户2088
@@ -24,6 +24,12 @@ public class AlipayCommerceResaleOrderCloseModel extends AlipayObject {
 	 */
 	@ApiField("out_order_id")
 	private String outOrderId;
+
+	/**
+	 * 关闭原因
+	 */
+	@ApiField("reason_code")
+	private String reasonCode;
 
 	/**
 	 * 用户2088
@@ -43,6 +49,13 @@ public class AlipayCommerceResaleOrderCloseModel extends AlipayObject {
 	}
 	public void setOutOrderId(String outOrderId) {
 		this.outOrderId = outOrderId;
+	}
+
+	public String getReasonCode() {
+		return this.reasonCode;
+	}
+	public void setReasonCode(String reasonCode) {
+		this.reasonCode = reasonCode;
 	}
 
 	public String getUserId() {

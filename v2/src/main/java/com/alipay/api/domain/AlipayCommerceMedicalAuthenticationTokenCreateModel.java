@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ISVH5页面鉴权token生成
  *
  * @author auto create
- * @since 1.0, 2026-04-20 17:07:45
+ * @since 1.0, 2026-04-28 15:27:48
  */
 public class AlipayCommerceMedicalAuthenticationTokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8869985887956374136L;
+	private static final long serialVersionUID = 7616616695961557147L;
 
 	/**
 	 * 跳转链接

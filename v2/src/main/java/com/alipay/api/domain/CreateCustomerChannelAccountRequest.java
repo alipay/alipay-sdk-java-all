@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CreateCustomerChannelAccountRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 6328677916274266854L;
+	private static final long serialVersionUID = 2353814142227275543L;
 
 	/**
 	 * 渠道类型

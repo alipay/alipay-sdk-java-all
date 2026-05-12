@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据ouCode查询ou定义
  *
  * @author auto create
- * @since 1.0, 2025-07-22 14:53:19
+ * @since 1.0, 2026-05-07 15:57:28
  */
 public class AnttechOceanbaseOudefinitionCodeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7188187716357837546L;
+	private static final long serialVersionUID = 6175157296759421175L;
 
 	/**
 	 * ouCode查询请求体

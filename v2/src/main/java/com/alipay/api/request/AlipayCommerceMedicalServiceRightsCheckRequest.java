@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.service.rights.check request
  * 
  * @author auto create
- * @since 1.0, 2026-04-10 16:42:45
+ * @since 1.0, 2026-04-28 15:27:49
  */
 public class AlipayCommerceMedicalServiceRightsCheckRequest implements AlipayRequest<AlipayCommerceMedicalServiceRightsCheckResponse> {
 

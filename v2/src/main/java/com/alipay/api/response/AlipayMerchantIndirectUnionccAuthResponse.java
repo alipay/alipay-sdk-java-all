@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.indirect.unioncc.auth response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-11 11:29:14
+ * @since 1.0, 2026-05-12 10:51:10
  */
 public class AlipayMerchantIndirectUnionccAuthResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6871249626977761419L;
+	private static final long serialVersionUID = 6276814546611327852L;
 
 	/** 
 	 * 报备状态，当前仅返回SUCCESS

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 单个处方药师审核结果同步
  *
  * @author auto create
- * @since 1.0, 2025-05-14 18:32:37
+ * @since 1.0, 2026-05-09 18:46:37
  */
 public class AlipayCommerceMedicalPrescriptionReviewSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8579446965519752376L;
+	private static final long serialVersionUID = 7855155115665328558L;
 
 	/**
 	 * 如果该处方单由合作方自有药师审核，则将合作方的药师编码传入

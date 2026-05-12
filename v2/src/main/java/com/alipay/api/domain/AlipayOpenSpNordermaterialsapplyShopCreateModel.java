@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 碰一下点餐物料申请门店信息同步
  *
  * @author auto create
- * @since 1.0, 2025-06-17 15:06:47
+ * @since 1.0, 2026-05-11 10:59:39
  */
 public class AlipayOpenSpNordermaterialsapplyShopCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1357865955992371217L;
+	private static final long serialVersionUID = 7575573229945561713L;
 
 	/**
 	 * 创建申请单时，返回的申请单ID

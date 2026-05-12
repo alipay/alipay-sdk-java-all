@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceEdasMemoryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4488632993681524394L;
+	private static final long serialVersionUID = 5212275292921493334L;
 
 	/**
 	 * 数据场景code，该字段为数据场景编码（Code），对应数据平台的场景标识。

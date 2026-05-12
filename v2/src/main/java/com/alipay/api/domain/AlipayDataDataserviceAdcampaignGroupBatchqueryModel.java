@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询单元列表
  *
  * @author auto create
- * @since 1.0, 2025-12-03 10:35:32
+ * @since 1.0, 2026-04-30 10:01:27
  */
 public class AlipayDataDataserviceAdcampaignGroupBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1425282374747817622L;
+	private static final long serialVersionUID = 7272765958439388977L;
 
 	/**
 	 * 出价方式类型
 	 */
 	@ApiField("bid_type")
 	private String bidType;
+
+	/**
+	 * 作用于和bid_type组合查询，精准查询出单元的出价方式。
+	 */
+	@ApiField("charge_type")
+	private String chargeType;
 
 	/**
 	 * 当前页（最小为1）
@@ -82,6 +88,13 @@ public class AlipayDataDataserviceAdcampaignGroupBatchqueryModel extends AlipayO
 	}
 	public void setBidType(String bidType) {
 		this.bidType = bidType;
+	}
+
+	public String getChargeType() {
+		return this.chargeType;
+	}
+	public void setChargeType(String chargeType) {
+		this.chargeType = chargeType;
 	}
 
 	public Long getCurrent() {

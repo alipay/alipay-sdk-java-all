@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.promo.record.query request
  * 
  * @author auto create
- * @since 1.0, 2026-02-27 13:58:23
+ * @since 1.0, 2026-05-08 21:57:45
  */
 public class AlipayCommerceOperationPromoRecordQueryRequest implements AlipayRequest<AlipayCommerceOperationPromoRecordQueryResponse> {
 

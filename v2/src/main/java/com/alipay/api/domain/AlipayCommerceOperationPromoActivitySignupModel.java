@@ -7,38 +7,38 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营销活动报名
  *
  * @author auto create
- * @since 1.0, 2026-04-13 21:12:45
+ * @since 1.0, 2026-05-08 21:57:45
  */
 public class AlipayCommerceOperationPromoActivitySignupModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2246123697893182678L;
+	private static final long serialVersionUID = 4736368523662816795L;
 
 	/**
-	 * 活动唯一编码
+	 * 活动唯一编码，固定值
 	 */
 	@ApiField("activity_code")
 	private String activityCode;
 
 	/**
-	 * 场景编码
+	 * 场景编码，固定值
 	 */
 	@ApiField("scene_code")
 	private String sceneCode;
 
 	/**
-	 * 报名信息
+	 * 报名信息，需传入JSON转义后的字符串
 	 */
 	@ApiField("sign_up_info")
 	private String signUpInfo;
 
 	/**
-	 * 主体ID
+	 * 客户报名使用的支付宝账号
 	 */
 	@ApiField("subject_id")
 	private String subjectId;
 
 	/**
-	 * 报名主体类型
+	 * 客户报名使用的支付宝账号类型
 	 */
 	@ApiField("subject_type")
 	private String subjectType;

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.dtbankcust.dailydiscountuser.signup request
  * 
  * @author auto create
- * @since 1.0, 2026-04-17 16:17:45
+ * @since 1.0, 2026-05-11 11:36:03
  */
 public class AlipayUserDtbankcustDailydiscountuserSignupRequest implements AlipayRequest<AlipayUserDtbankcustDailydiscountuserSignupResponse> {
 

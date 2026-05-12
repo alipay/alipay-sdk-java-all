@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SellerSyncRentPayInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2249619411165271143L;
+	private static final long serialVersionUID = 2748681463392166132L;
 
 	/**
 	 * 实际支付金额，单位元

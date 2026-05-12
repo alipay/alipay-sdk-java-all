@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务项权益校验
  *
  * @author auto create
- * @since 1.0, 2026-04-10 16:42:45
+ * @since 1.0, 2026-04-28 15:27:49
  */
 public class AlipayCommerceMedicalServiceRightsCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7745726226163441116L;
+	private static final long serialVersionUID = 1139545542999188567L;
 
 	/**
 	 * SAAS履约单ID

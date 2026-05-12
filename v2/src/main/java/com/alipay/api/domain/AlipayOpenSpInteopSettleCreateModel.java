@@ -1,23 +1,40 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 服务商一体化开通作业添加入驻开通项
  *
  * @author auto create
- * @since 1.0, 2026-03-18 19:55:15
+ * @since 1.0, 2026-05-06 15:16:17
  */
 public class AlipayOpenSpInteopSettleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3641128386395179712L;
+	private static final long serialVersionUID = 6117753448778821516L;
+
+	/**
+	 * 银行账户信息。个体工商户、普通企业必填。
+个体工商户支持对公账户、个人储蓄卡。 普通企业，只支持对公账户。
+	 */
+	@ApiField("bank_card_info")
+	private SettleBankCardInfo bankCardInfo;
 
 	/**
 	 * 受益人证照
 	 */
 	@ApiField("benefit_info")
 	private BizOpenCertificateInfoForEntry benefitInfo;
+
+	/**
+	 * 多受益人证照信息
+	 */
+	@ApiListField("benefit_infos")
+	@ApiField("biz_open_certificate_info_for_entry")
+	private List<BizOpenCertificateInfoForEntry> benefitInfos;
 
 	/**
 	 * 业务开通主单号，用于一体化作业过程的申请单串联
@@ -49,11 +66,25 @@ public class AlipayOpenSpInteopSettleCreateModel extends AlipayObject {
 	@ApiField("operator_login_id")
 	private String operatorLoginId;
 
+	public SettleBankCardInfo getBankCardInfo() {
+		return this.bankCardInfo;
+	}
+	public void setBankCardInfo(SettleBankCardInfo bankCardInfo) {
+		this.bankCardInfo = bankCardInfo;
+	}
+
 	public BizOpenCertificateInfoForEntry getBenefitInfo() {
 		return this.benefitInfo;
 	}
 	public void setBenefitInfo(BizOpenCertificateInfoForEntry benefitInfo) {
 		this.benefitInfo = benefitInfo;
+	}
+
+	public List<BizOpenCertificateInfoForEntry> getBenefitInfos() {
+		return this.benefitInfos;
+	}
+	public void setBenefitInfos(List<BizOpenCertificateInfoForEntry> benefitInfos) {
+		this.benefitInfos = benefitInfos;
 	}
 
 	public String getInteopOrderNo() {

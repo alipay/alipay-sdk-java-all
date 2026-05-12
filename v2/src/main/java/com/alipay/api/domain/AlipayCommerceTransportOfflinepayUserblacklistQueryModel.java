@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 脱机交易黑名单列表
  *
  * @author auto create
- * @since 1.0, 2024-12-09 16:06:10
+ * @since 1.0, 2026-04-28 17:07:12
  */
 public class AlipayCommerceTransportOfflinepayUserblacklistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3898456565686257788L;
+	private static final long serialVersionUID = 1897944826493472352L;
 
 	/**
 	 * 用户黑名单分页ID，1开始

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportTrafficcardsCardQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4172272943772224553L;
+	private static final long serialVersionUID = 3355759273997734232L;
 
 	/**
 	 * 需要查询乘车码的城市编码，参考中华人民共和国行政区划编码，仅支持市级维度

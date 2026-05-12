@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.acommunication.point.rollback request
  * 
  * @author auto create
- * @since 1.0, 2024-11-28 12:02:22
+ * @since 1.0, 2026-04-30 10:44:44
  */
 public class AlipayCommerceAcommunicationPointRollbackRequest implements AlipayRequest<AlipayCommerceAcommunicationPointRollbackResponse> {
 

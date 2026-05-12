@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 反向订单操作_审核
  *
  * @author auto create
- * @since 1.0, 2026-03-06 10:25:35
+ * @since 1.0, 2026-04-27 18:00:12
  */
 public class AlipayCommerceEcRecyclinginvoiceOrderAuditModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1374135368661759678L;
+	private static final long serialVersionUID = 6593799833763835332L;
 
 	/**
 	 * 订单的备注字段,用于发票的备注显示

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-04-25 10:24:54
+ * @since 1.0, 2026-05-12 01:12:47
  */
 public class Subscription extends AlipayObject {
 
-	private static final long serialVersionUID = 2792999318743114394L;
+	private static final long serialVersionUID = 2751136588962429294L;
 
 	/**
 	 * true - 周期结束状态生效
@@ -67,6 +67,13 @@ false - 周期结束依旧生效
 	private String metadata;
 
 	/**
+	 * null
+	 */
+	@ApiListField("pending_items")
+	@ApiField("subscription_query_pending_item")
+	private List<SubscriptionQueryPendingItem> pendingItems;
+
+	/**
 	 * 订阅开始日期
 	 */
 	@ApiField("start_date")
@@ -89,6 +96,18 @@ false - 周期结束依旧生效
 	 */
 	@ApiField("subscription_status")
 	private String subscriptionStatus;
+
+	/**
+	 * 试用期结束时间
+	 */
+	@ApiField("trial_end")
+	private String trialEnd;
+
+	/**
+	 * 试用期开始时间
+	 */
+	@ApiField("trial_start")
+	private String trialStart;
 
 	public Boolean getCancelAtPeriodEnd() {
 		return this.cancelAtPeriodEnd;
@@ -146,6 +165,13 @@ false - 周期结束依旧生效
 		this.metadata = metadata;
 	}
 
+	public List<SubscriptionQueryPendingItem> getPendingItems() {
+		return this.pendingItems;
+	}
+	public void setPendingItems(List<SubscriptionQueryPendingItem> pendingItems) {
+		this.pendingItems = pendingItems;
+	}
+
 	public String getStartDate() {
 		return this.startDate;
 	}
@@ -172,6 +198,20 @@ false - 周期结束依旧生效
 	}
 	public void setSubscriptionStatus(String subscriptionStatus) {
 		this.subscriptionStatus = subscriptionStatus;
+	}
+
+	public String getTrialEnd() {
+		return this.trialEnd;
+	}
+	public void setTrialEnd(String trialEnd) {
+		this.trialEnd = trialEnd;
+	}
+
+	public String getTrialStart() {
+		return this.trialStart;
+	}
+	public void setTrialStart(String trialStart) {
+		this.trialStart = trialStart;
 	}
 
 }

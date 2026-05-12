@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务包问诊类医生动作回调
  *
  * @author auto create
- * @since 1.0, 2026-04-20 16:57:45
+ * @since 1.0, 2026-04-30 18:32:45
  */
 public class AlipayCommerceMedicalServicepackageOrderstatusModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7352149652519513147L;
+	private static final long serialVersionUID = 1112414814355476967L;
 
 	/**
 	 * 1接单

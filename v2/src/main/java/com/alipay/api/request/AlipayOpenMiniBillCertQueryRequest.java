@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.bill.cert.query request
  * 
  * @author auto create
- * @since 1.0, 2026-04-27 15:43:20
+ * @since 1.0, 2026-05-12 14:53:17
  */
 public class AlipayOpenMiniBillCertQueryRequest implements AlipayRequest<AlipayOpenMiniBillCertQueryResponse> {
 

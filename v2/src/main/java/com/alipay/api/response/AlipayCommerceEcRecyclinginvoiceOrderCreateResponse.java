@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.recyclinginvoice.order.create response.
  * 
  * @author auto create
- * @since 1.0, 2026-04-27 17:04:28
+ * @since 1.0, 2026-05-09 13:52:49
  */
 public class AlipayCommerceEcRecyclinginvoiceOrderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4333961411358865419L;
+	private static final long serialVersionUID = 2581825444713118429L;
 
 	/** 
 	 * 收款即开票页面支付宝URL（自然人端）
@@ -71,6 +71,23 @@ public class AlipayCommerceEcRecyclinginvoiceOrderCreateResponse extends AlipayR
 	 */
 	@ApiField("payment_invoice_qr_code_url")
 	private String paymentInvoiceQrCodeUrl;
+
+	/** 
+	 * 收款即开票（代卖人）页面支付宝URL
+在支付宝里打开的自然人缴税并收款页面，可从企业（商户）/服务商自有APP/小程序页面打开 
+订单为代卖人订单返回 
+未安装支付宝或使用受限目标容器时可能无法打开
+	 */
+	@ApiField("proxy_seller_invoice_page_alipay_url")
+	private String proxySellerInvoicePageAlipayUrl;
+
+	/** 
+	 * 收款即开票页面URL（代卖人端）
+在支付宝里打开的代卖人收款页面，可从企业（商户）/服务商自有APP/小程序页面打开
+订单为代卖人订单返回
+	 */
+	@ApiField("proxy_seller_invoice_page_url")
+	private String proxySellerInvoicePageUrl;
 
 	/** 
 	 * 税务机关监管提醒
@@ -132,6 +149,20 @@ public class AlipayCommerceEcRecyclinginvoiceOrderCreateResponse extends AlipayR
 	}
 	public String getPaymentInvoiceQrCodeUrl( ) {
 		return this.paymentInvoiceQrCodeUrl;
+	}
+
+	public void setProxySellerInvoicePageAlipayUrl(String proxySellerInvoicePageAlipayUrl) {
+		this.proxySellerInvoicePageAlipayUrl = proxySellerInvoicePageAlipayUrl;
+	}
+	public String getProxySellerInvoicePageAlipayUrl( ) {
+		return this.proxySellerInvoicePageAlipayUrl;
+	}
+
+	public void setProxySellerInvoicePageUrl(String proxySellerInvoicePageUrl) {
+		this.proxySellerInvoicePageUrl = proxySellerInvoicePageUrl;
+	}
+	public String getProxySellerInvoicePageUrl( ) {
+		return this.proxySellerInvoicePageUrl;
 	}
 
 	public void setTaxAuthorityRemind(String taxAuthorityRemind) {

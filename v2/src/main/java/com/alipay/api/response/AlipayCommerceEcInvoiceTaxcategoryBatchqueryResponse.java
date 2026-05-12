@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.invoice.taxcategory.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2025-10-09 18:02:40
+ * @since 1.0, 2026-04-27 17:56:52
  */
 public class AlipayCommerceEcInvoiceTaxcategoryBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7338316431444539155L;
+	private static final long serialVersionUID = 7215485154679788522L;
 
 	/** 
 	 * 税收分类编码列表

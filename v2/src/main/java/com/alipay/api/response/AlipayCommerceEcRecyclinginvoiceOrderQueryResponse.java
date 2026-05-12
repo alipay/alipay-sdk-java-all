@@ -16,11 +16,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.recyclinginvoice.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-04-16 16:27:44
+ * @since 1.0, 2026-05-11 14:57:49
  */
 public class AlipayCommerceEcRecyclinginvoiceOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1739365791997291559L;
+	private static final long serialVersionUID = 2112235128829197161L;
 
 	/** 
 	 * 收款即开票页面支付宝URL（自然人端） 在支付宝里打开的自然人缴税并收款页面，可从企业（商户）/服务商自有APP/小程序页面打开 供应商ID存在值时返回 未安装支付宝或使用受限目标容器时可能无法打开
@@ -143,6 +143,23 @@ public class AlipayCommerceEcRecyclinginvoiceOrderQueryResponse extends AlipayRe
 	 */
 	@ApiField("product_id")
 	private String productId;
+
+	/** 
+	 * 收款即开票（代卖人）页面支付宝URL
+在支付宝里打开的自然人缴税并收款页面，可从企业（商户）/服务商自有APP/小程序页面打开 
+订单为代卖人订单返回 
+未安装支付宝或使用受限目标容器时可能无法打开
+	 */
+	@ApiField("proxy_seller_invoice_page_alipay_url")
+	private String proxySellerInvoicePageAlipayUrl;
+
+	/** 
+	 * 收款即开票页面URL（代卖人端）
+在支付宝里打开的代卖人收款页面，可从企业（商户）/服务商自有APP/小程序页面打开
+订单为代卖人订单返回
+	 */
+	@ApiField("proxy_seller_invoice_page_url")
+	private String proxySellerInvoicePageUrl;
 
 	/** 
 	 * 卖家名称
@@ -311,6 +328,20 @@ public class AlipayCommerceEcRecyclinginvoiceOrderQueryResponse extends AlipayRe
 	}
 	public String getProductId( ) {
 		return this.productId;
+	}
+
+	public void setProxySellerInvoicePageAlipayUrl(String proxySellerInvoicePageAlipayUrl) {
+		this.proxySellerInvoicePageAlipayUrl = proxySellerInvoicePageAlipayUrl;
+	}
+	public String getProxySellerInvoicePageAlipayUrl( ) {
+		return this.proxySellerInvoicePageAlipayUrl;
+	}
+
+	public void setProxySellerInvoicePageUrl(String proxySellerInvoicePageUrl) {
+		this.proxySellerInvoicePageUrl = proxySellerInvoicePageUrl;
+	}
+	public String getProxySellerInvoicePageUrl( ) {
+		return this.proxySellerInvoicePageUrl;
 	}
 
 	public void setSellerName(String sellerName) {

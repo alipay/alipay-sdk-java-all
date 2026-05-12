@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 店铺装修信息同步
  *
  * @author auto create
- * @since 1.0, 2026-02-05 16:47:44
+ * @since 1.0, 2026-05-11 15:17:48
  */
 public class AlipayCommerceLifeserviceShopdecorationSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3426255954124373397L;
+	private static final long serialVersionUID = 7748335363144226629L;
 
 	/**
 	 * null

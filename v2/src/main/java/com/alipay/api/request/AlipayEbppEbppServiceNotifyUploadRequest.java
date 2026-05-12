@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.ebpp.service.notify.upload request
  * 
  * @author auto create
- * @since 1.0, 2024-11-19 11:17:17
+ * @since 1.0, 2026-04-29 15:27:45
  */
 public class AlipayEbppEbppServiceNotifyUploadRequest implements AlipayRequest<AlipayEbppEbppServiceNotifyUploadResponse> {
 

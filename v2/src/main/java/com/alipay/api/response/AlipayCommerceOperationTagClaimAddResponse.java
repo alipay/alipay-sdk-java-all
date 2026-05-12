@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.tag.claim.add response.
  * 
  * @author auto create
- * @since 1.0, 2026-02-27 13:58:23
+ * @since 1.0, 2026-05-06 15:17:49
  */
 public class AlipayCommerceOperationTagClaimAddResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8594477266284974485L;
+	private static final long serialVersionUID = 8292569993621416569L;
 
 	/** 
 	 * 实际添加的点餐线圈成功数量，如果为0表示无可添加的线圈

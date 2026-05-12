@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.ec.recyclinginvoice.item.modify request
  * 
  * @author auto create
- * @since 1.0, 2025-04-22 16:27:30
+ * @since 1.0, 2026-04-27 18:03:28
  */
 public class AlipayCommerceEcRecyclinginvoiceItemModifyRequest implements AlipayRequest<AlipayCommerceEcRecyclinginvoiceItemModifyResponse> {
 

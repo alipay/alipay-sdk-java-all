@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceRecycleMerchantassetWithdrawModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4526465814474134485L;
+	private static final long serialVersionUID = 3762399475938168478L;
 
 	/**
 	 * 订单标题

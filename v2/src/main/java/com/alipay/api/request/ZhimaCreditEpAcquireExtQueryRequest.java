@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.ep.acquire.ext.query request
  * 
  * @author auto create
- * @since 1.0, 2026-04-23 10:12:45
+ * @since 1.0, 2026-05-06 10:07:48
  */
 public class ZhimaCreditEpAcquireExtQueryRequest implements AlipayRequest<ZhimaCreditEpAcquireExtQueryResponse> {
 

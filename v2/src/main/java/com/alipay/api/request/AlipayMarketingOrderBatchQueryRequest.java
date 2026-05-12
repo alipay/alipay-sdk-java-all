@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.order.batch.query request
  * 
  * @author auto create
- * @since 1.0, 2026-04-24 21:12:48
+ * @since 1.0, 2026-05-09 15:02:46
  */
 public class AlipayMarketingOrderBatchQueryRequest implements AlipayRequest<AlipayMarketingOrderBatchQueryResponse> {
 

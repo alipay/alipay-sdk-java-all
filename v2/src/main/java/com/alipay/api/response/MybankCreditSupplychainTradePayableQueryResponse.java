@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankCreditSupplychainTradePayableQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6265388535433357387L;
+	private static final long serialVersionUID = 6692755462718292263L;
 
 	/** 
 	 * 待付金额，电票预付票据未到期=应付总金额-已付金额，票据到期兑付后=0

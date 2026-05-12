@@ -1,6 +1,7 @@
 package com.alipay.api.response;
 
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.domain.BankAuthUserInfo;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,17 +9,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.authorize.uni.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-04-21 13:49:48
+ * @since 1.0, 2026-04-28 14:22:49
  */
 public class AlipayFundAuthorizeUniQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3471846186613562142L;
+	private static final long serialVersionUID = 8788272338169111167L;
 
 	/** 
 	 * 授权协议号
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
+
+	/** 
+	 * 用户授权信息：用户完成授权后，会将授权信息通过此字段以供外部查询
+	 */
+	@ApiField("auth_user_info")
+	private BankAuthUserInfo authUserInfo;
 
 	/** 
 	 * true（已授权电子回单）
@@ -73,6 +80,13 @@ public class AlipayFundAuthorizeUniQueryResponse extends AlipayResponse {
 	}
 	public String getAgreementNo( ) {
 		return this.agreementNo;
+	}
+
+	public void setAuthUserInfo(BankAuthUserInfo authUserInfo) {
+		this.authUserInfo = authUserInfo;
+	}
+	public BankAuthUserInfo getAuthUserInfo( ) {
+		return this.authUserInfo;
 	}
 
 	public void setAuthorizeElectronicReceipt(Boolean authorizeElectronicReceipt) {

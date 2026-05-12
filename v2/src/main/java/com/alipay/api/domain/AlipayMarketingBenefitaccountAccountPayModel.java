@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingBenefitaccountAccountPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2388616919813576684L;
+	private static final long serialVersionUID = 5197627731965979919L;
 
 	/**
 	 * 充值金额，单位元

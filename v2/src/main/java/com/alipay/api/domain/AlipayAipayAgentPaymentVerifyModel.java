@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * A2A商户支付凭证验证
  *
  * @author auto create
- * @since 1.0, 2026-04-09 19:12:45
+ * @since 1.0, 2026-04-29 11:52:45
  */
 public class AlipayAipayAgentPaymentVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8179764888995427764L;
+	private static final long serialVersionUID = 3893263163213512792L;
+
+	/**
+	 * 客户端会话标识，用于校验买家安全性、真实性
+	 */
+	@ApiField("client_session")
+	private String clientSession;
 
 	/**
 	 * 支付凭证
@@ -24,6 +30,13 @@ public class AlipayAipayAgentPaymentVerifyModel extends AlipayObject {
 	 */
 	@ApiField("trade_no")
 	private String tradeNo;
+
+	public String getClientSession() {
+		return this.clientSession;
+	}
+	public void setClientSession(String clientSession) {
+		this.clientSession = clientSession;
+	}
 
 	public String getPaymentProof() {
 		return this.paymentProof;

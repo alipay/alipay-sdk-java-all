@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业开票员编辑
  *
  * @author auto create
- * @since 1.0, 2026-02-27 19:38:37
+ * @since 1.0, 2026-04-27 17:50:40
  */
 public class AlipayCommerceEcIndustryinvoiceClerkModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5597222555289958857L;
+	private static final long serialVersionUID = 1242255288585896567L;
 
 	/**
 	 * 开票员身份标识

@@ -10,14 +10,14 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订阅创建
  *
  * @author auto create
- * @since 1.0, 2026-04-20 18:46:05
+ * @since 1.0, 2026-05-12 01:17:48
  */
 public class AlipayTradeSubscriptionCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7668849522676787576L;
+	private static final long serialVersionUID = 7313849835316311159L;
 
 	/**
-	 * 支付宝客户id
+	 * 客户id，客户创建接口（alipay.trade.customer.create）返回的客户id
 	 */
 	@ApiField("customer_id")
 	private String customerId;
@@ -30,7 +30,7 @@ public class AlipayTradeSubscriptionCreateModel extends AlipayObject {
 	private List<SubscriptionItem> items;
 
 	/**
-	 * 保存在订阅里的元数据
+	 * 商户可通过此字段进行订阅信息的自定义传参，订阅生效后不可修改，将在全链路通知或查询中返回
 	 */
 	@ApiField("metadata")
 	private String metadata;
@@ -43,10 +43,22 @@ public class AlipayTradeSubscriptionCreateModel extends AlipayObject {
 	private Long payAmount;
 
 	/**
-	 * 订单标题
+	 * 用于自定义展示购买时的标题，若不传，默认使用商品名称作为标题
 	 */
 	@ApiField("subscribe_title")
 	private String subscribeTitle;
+
+	/**
+	 * 用于签约页展示，不传时系统拼装，格式："{金额}元试用{天数}天"，0元替换为"免费"
+	 */
+	@ApiField("trial_desc")
+	private String trialDesc;
+
+	/**
+	 * 试用期天数，正整数，最大 365
+	 */
+	@ApiField("trial_period_days")
+	private Long trialPeriodDays;
 
 	public String getCustomerId() {
 		return this.customerId;
@@ -81,6 +93,20 @@ public class AlipayTradeSubscriptionCreateModel extends AlipayObject {
 	}
 	public void setSubscribeTitle(String subscribeTitle) {
 		this.subscribeTitle = subscribeTitle;
+	}
+
+	public String getTrialDesc() {
+		return this.trialDesc;
+	}
+	public void setTrialDesc(String trialDesc) {
+		this.trialDesc = trialDesc;
+	}
+
+	public Long getTrialPeriodDays() {
+		return this.trialPeriodDays;
+	}
+	public void setTrialPeriodDays(Long trialPeriodDays) {
+		this.trialPeriodDays = trialPeriodDays;
 	}
 
 }

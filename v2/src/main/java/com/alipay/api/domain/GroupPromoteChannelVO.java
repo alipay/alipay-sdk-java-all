@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GroupPromoteChannelVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3245598193262243434L;
+	private static final long serialVersionUID = 5558969876828749854L;
 
 	/**
 	 * true表达可以删除，false表达不可以删除，正常是官方定义的渠道不能删除，自定义渠道可以删除

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.resale.zmxy.consult request
  * 
  * @author auto create
- * @since 1.0, 2026-04-27 14:28:03
+ * @since 1.0, 2026-04-27 17:22:45
  */
 public class AlipayCommerceResaleZmxyConsultRequest implements AlipayRequest<AlipayCommerceResaleZmxyConsultResponse> {
 

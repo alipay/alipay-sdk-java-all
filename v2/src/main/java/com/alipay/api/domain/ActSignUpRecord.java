@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-02-27 13:58:23
+ * @since 1.0, 2026-05-08 21:57:45
  */
 public class ActSignUpRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 4533756594725751934L;
+	private static final long serialVersionUID = 7438442749244584885L;
 
 	/**
 	 * 活动唯一编码

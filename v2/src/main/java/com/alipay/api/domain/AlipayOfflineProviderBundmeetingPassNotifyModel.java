@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOfflineProviderBundmeetingPassNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5613141842382736139L;
+	private static final long serialVersionUID = 1166982331698376267L;
 
 	/**
 	 * 1、签入

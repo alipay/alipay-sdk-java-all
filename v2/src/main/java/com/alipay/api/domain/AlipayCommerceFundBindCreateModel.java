@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 基金开户
  *
  * @author auto create
- * @since 1.0, 2025-12-04 17:42:32
+ * @since 1.0, 2026-05-09 14:15:37
  */
 public class AlipayCommerceFundBindCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5237336281686911496L;
+	private static final long serialVersionUID = 5426785125332814123L;
+
+	/**
+	 * 用于指定绑定某一张银行卡进行绑定
+	 */
+	@ApiField("bank_card_no")
+	private String bankCardNo;
 
 	/**
 	 * 绑卡用户的证件号，需要和cert_type联合使用
@@ -50,6 +56,13 @@ public class AlipayCommerceFundBindCreateModel extends AlipayObject {
 	 */
 	@ApiField("redirect_url")
 	private String redirectUrl;
+
+	public String getBankCardNo() {
+		return this.bankCardNo;
+	}
+	public void setBankCardNo(String bankCardNo) {
+		this.bankCardNo = bankCardNo;
+	}
 
 	public String getCertNo() {
 		return this.certNo;

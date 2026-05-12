@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 地铁购票订单批量查询
  *
  * @author auto create
- * @since 1.0, 2025-11-19 11:23:04
+ * @since 1.0, 2026-04-28 16:54:39
  */
 public class AlipayCommerceCityfacilitatorVoucherBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8264876449299249512L;
+	private static final long serialVersionUID = 2843829441539211391L;
 
 	/**
 	 * 城市编码请参考查询 <a href="http://www.mca.gov.cn/article/sj/xzqh/">中华人民共和国行政区划代码</a>。

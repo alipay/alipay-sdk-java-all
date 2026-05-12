@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 票务消息通知接口
  *
  * @author auto create
- * @since 1.0, 2023-03-17 11:06:30
+ * @since 1.0, 2026-05-08 10:37:15
  */
 public class AlipayCommerceTransportMessageSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8365242979561759764L;
+	private static final long serialVersionUID = 7871136244258443344L;
 
 	/**
 	 * 卡类型

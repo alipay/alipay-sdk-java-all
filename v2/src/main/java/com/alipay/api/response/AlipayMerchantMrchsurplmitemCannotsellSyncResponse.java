@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMerchantMrchsurplmitemCannotsellSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6828877435585326211L;
+	private static final long serialVersionUID = 5662252664176618535L;
 
 	/** 
 	 * 将请求中的ID直接返回

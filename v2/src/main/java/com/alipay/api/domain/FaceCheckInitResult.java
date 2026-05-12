@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FaceCheckInitResult extends AlipayObject {
 
-	private static final long serialVersionUID = 8613621946217258677L;
+	private static final long serialVersionUID = 8484757316456922873L;
 
 	/**
 	 * 校验单据号

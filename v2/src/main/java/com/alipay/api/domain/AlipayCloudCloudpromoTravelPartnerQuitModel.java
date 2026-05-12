@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCloudCloudpromoTravelPartnerQuitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2572349616881385473L;
+	private static final long serialVersionUID = 1363336211977372887L;
 
 	/**
 	 * 当前坐标经纬度，逗号分隔

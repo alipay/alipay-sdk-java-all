@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 收单交易第三方代理下单
  *
  * @author auto create
- * @since 1.0, 2024-09-26 16:12:05
+ * @since 1.0, 2026-04-28 14:16:03
  */
 public class AlipayTradeOrderAgentCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1241269432421982549L;
+	private static final long serialVersionUID = 6262287775267441617L;
 
 	/**
 	 * 支付宝会员UID

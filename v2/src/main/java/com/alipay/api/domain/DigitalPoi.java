@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数字化门店信息
  *
  * @author auto create
- * @since 1.0, 2026-03-26 19:37:44
+ * @since 1.0, 2026-05-09 00:05:21
  */
 public class DigitalPoi extends AlipayObject {
 
-	private static final long serialVersionUID = 4539655554418694614L;
+	private static final long serialVersionUID = 1749374353628456814L;
 
 	/**
 	 * 门店地址

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品库新增商品信息
  *
  * @author auto create
- * @since 1.0, 2025-09-18 14:18:01
+ * @since 1.0, 2026-04-27 18:01:03
  */
 public class AlipayCommerceEcRecyclinginvoiceItemCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1233488591639954365L;
+	private static final long serialVersionUID = 7823472817487193855L;
 
 	/**
 	 * 商品名称

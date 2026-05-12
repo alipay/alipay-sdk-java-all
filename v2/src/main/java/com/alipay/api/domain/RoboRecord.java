@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RoboRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 1669477665952686517L;
+	private static final long serialVersionUID = 1841415886697166983L;
 
 	/**
 	 * 行程结束时间

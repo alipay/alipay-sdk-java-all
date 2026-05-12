@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.open.kaifang.kaifang.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 19:39:14
+ * @since 1.0, 2026-05-11 10:47:59
  */
 public class ZhimaOpenKaifangKaifangQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1273283768759527568L;
+	private static final long serialVersionUID = 6572928727553311871L;
 
 	/** 
 	 * 555

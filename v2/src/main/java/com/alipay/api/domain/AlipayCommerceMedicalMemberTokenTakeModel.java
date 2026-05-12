@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalMemberTokenTakeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4254855237989274321L;
+	private static final long serialVersionUID = 6313252258982272212L;
 
 	/**
 	 * 周期 有效期 多少天

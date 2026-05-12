@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 问诊类消息列表
  *
  * @author auto create
- * @since 1.0, 2026-04-10 17:42:44
+ * @since 1.0, 2026-04-28 15:27:48
  */
 public class MsgDataParam extends AlipayObject {
 
-	private static final long serialVersionUID = 8666263788778373656L;
+	private static final long serialVersionUID = 1554646734457179138L;
 
 	/**
 	 * 问诊订单ID

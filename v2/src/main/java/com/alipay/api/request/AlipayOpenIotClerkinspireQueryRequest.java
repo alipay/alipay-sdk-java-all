@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.iot.clerkinspire.query request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 03:22:40
+ * @since 1.0, 2026-05-01 00:12:45
  */
 public class AlipayOpenIotClerkinspireQueryRequest implements AlipayRequest<AlipayOpenIotClerkinspireQueryResponse> {
 

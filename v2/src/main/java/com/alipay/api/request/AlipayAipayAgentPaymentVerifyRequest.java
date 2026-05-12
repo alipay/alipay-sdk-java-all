@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.aipay.agent.payment.verify request
  * 
  * @author auto create
- * @since 1.0, 2026-04-09 19:12:45
+ * @since 1.0, 2026-04-29 11:52:45
  */
 public class AlipayAipayAgentPaymentVerifyRequest implements AlipayRequest<AlipayAipayAgentPaymentVerifyResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.trade.refund request
  * 
  * @author auto create
- * @since 1.0, 2026-04-27 11:15:17
+ * @since 1.0, 2026-05-11 11:46:23
  */
 public class AlipayCommerceMedicalTradeRefundRequest implements AlipayRequest<AlipayCommerceMedicalTradeRefundResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.ec.recyclinginvoice.order.cancel request
  * 
  * @author auto create
- * @since 1.0, 2025-05-16 10:07:27
+ * @since 1.0, 2026-04-27 18:03:10
  */
 public class AlipayCommerceEcRecyclinginvoiceOrderCancelRequest implements AlipayRequest<AlipayCommerceEcRecyclinginvoiceOrderCancelResponse> {
 

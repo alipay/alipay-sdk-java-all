@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.hotel.basicinfo.set request
  * 
  * @author auto create
- * @since 1.0, 2026-04-21 15:29:31
+ * @since 1.0, 2026-04-29 14:57:48
  */
 public class AlipayCommerceHotelBasicinfoSetRequest implements AlipayRequest<AlipayCommerceHotelBasicinfoSetResponse> {
 

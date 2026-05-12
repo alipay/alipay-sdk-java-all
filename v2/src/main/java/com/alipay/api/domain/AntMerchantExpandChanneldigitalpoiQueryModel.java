@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 渠道进件数字化门店进度查询
  *
  * @author auto create
- * @since 1.0, 2026-03-26 19:37:44
+ * @since 1.0, 2026-05-09 00:05:21
  */
 public class AntMerchantExpandChanneldigitalpoiQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3556961341554498863L;
+	private static final long serialVersionUID = 6296324233468718723L;
 
 	/**
 	 * 请求渠道，由后端技术分配

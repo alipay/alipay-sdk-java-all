@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.provider.expo.nfccheckin.submit request
  * 
  * @author auto create
- * @since 1.0, 2026-04-14 16:22:45
+ * @since 1.0, 2026-04-29 14:37:48
  */
 public class AlipayOfflineProviderExpoNfccheckinSubmitRequest implements AlipayRequest<AlipayOfflineProviderExpoNfccheckinSubmitResponse> {
 

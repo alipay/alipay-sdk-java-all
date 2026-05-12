@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.servicepackage.orderstatus.modify request
  * 
  * @author auto create
- * @since 1.0, 2026-04-20 16:57:45
+ * @since 1.0, 2026-04-30 18:32:45
  */
 public class AlipayCommerceMedicalServicepackageOrderstatusModifyRequest implements AlipayRequest<AlipayCommerceMedicalServicepackageOrderstatusModifyResponse> {
 

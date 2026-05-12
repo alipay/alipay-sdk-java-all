@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class XingheLendassistSrcfgestagelendOutordermappingSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8265433182956126226L;
+	private static final long serialVersionUID = 8585147898938613413L;
 
 	
 

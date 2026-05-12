@@ -10,17 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订阅修改
  *
  * @author auto create
- * @since 1.0, 2026-04-20 18:46:20
+ * @since 1.0, 2026-05-12 01:17:48
  */
 public class AlipayTradeSubscriptionModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5373293411374126612L;
+	private static final long serialVersionUID = 8582653285764513791L;
 
 	/**
-	 * 周期结束失效标识，用于取消/取消后恢复订阅，升级等场景不用填
+	 * 周期结束失效标识，仅用于取消/取消后恢复订阅，其他场景无需使用。
 true：当前周期结束后
 取消
-false：取消后恢复
+false：取消后恢复，具体使用方式详见接入指南。
 	 */
 	@ApiField("cancel_at_period_end")
 	private Boolean cancelAtPeriodEnd;
@@ -41,14 +41,14 @@ false：取消后恢复
 	/**
 	 * UPGRADE：升级，DOWNGRADE：降级，
 取消：CANCEL，
-取消后恢复：REVERT_CANCEL，如若不传则视为UPGRADE
+取消后恢复：REVERT_CANCEL，INCREASE_QUANTITY-商品数量扩容，DECREASE_QUANTITY-商品数量缩容，如若不传则视为UPGRADE，具体使用方式详见接入指南。
 
 	 */
 	@ApiField("modify_type")
 	private String modifyType;
 
 	/**
-	 * 支付金额，单位分； 仅用于商户自定义金额，若传了该值，用户实际支付金额会以该值为准
+	 * 支付金额，单位分； 仅用于商户自定义金额，若传了该值，用户实际支付金额会以该值为准，目前仅用于普通订阅升级场景，具体使用方式详见接入指南。
 	 */
 	@ApiField("pay_amount")
 	private Long payAmount;
@@ -56,7 +56,7 @@ false：取消后恢复
 	/**
 	 * 是否保持计费周期不变，当前仅用于升级场景
 true：周期不变
-false：重置周期
+false：重置周期，具体使用方式详见接入指南。
 	 */
 	@ApiField("preserve_billing_cycle")
 	private Boolean preserveBillingCycle;

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RoboFeeDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1299385822755114737L;
+	private static final long serialVersionUID = 4653732152558234482L;
 
 	/**
 	 * 费用金额 单位 分

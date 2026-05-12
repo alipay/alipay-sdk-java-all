@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取授权访问令牌
  *
  * @author auto create
- * @since 1.0, 2026-04-10 17:42:45
+ * @since 1.0, 2026-04-28 15:27:49
  */
 public class AlipayCommerceMedicalAuthTokenGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5638216548928374694L;
+	private static final long serialVersionUID = 7277553391755447717L;
 
 	/**
 	 * 授权码

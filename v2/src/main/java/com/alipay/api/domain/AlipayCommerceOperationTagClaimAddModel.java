@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 餐饮商户添加认证的点餐线圈
  *
  * @author auto create
- * @since 1.0, 2026-02-27 13:58:23
+ * @since 1.0, 2026-05-06 15:17:49
  */
 public class AlipayCommerceOperationTagClaimAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2422762914373977782L;
+	private static final long serialVersionUID = 4399282267974296712L;
 
 	/**
 	 * 商户支付宝账号，一般是手机号或邮箱

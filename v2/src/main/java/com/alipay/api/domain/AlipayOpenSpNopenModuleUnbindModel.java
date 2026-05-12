@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * N模组返厂解绑
  *
  * @author auto create
- * @since 1.0, 2026-04-07 10:37:44
+ * @since 1.0, 2026-04-29 19:32:48
  */
 public class AlipayOpenSpNopenModuleUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5382375291486356265L;
+	private static final long serialVersionUID = 5678343168337289183L;
 
 	/**
 	 * 上位机 itemId 必传
@@ -36,6 +36,12 @@ public class AlipayOpenSpNopenModuleUnbindModel extends AlipayObject {
 	 */
 	@ApiField("mcu_id")
 	private String mcuId;
+
+	/**
+	 * 是否删除已生成的N链接，请求Y表示删除，请求N或不传表示不删除
+	 */
+	@ApiField("regenerate_link")
+	private String regenerateLink;
 
 	/**
 	 * 模组有 se_uuid 必传
@@ -87,6 +93,13 @@ public class AlipayOpenSpNopenModuleUnbindModel extends AlipayObject {
 	}
 	public void setMcuId(String mcuId) {
 		this.mcuId = mcuId;
+	}
+
+	public String getRegenerateLink() {
+		return this.regenerateLink;
+	}
+	public void setRegenerateLink(String regenerateLink) {
+		this.regenerateLink = regenerateLink;
 	}
 
 	public String getSeUuid() {

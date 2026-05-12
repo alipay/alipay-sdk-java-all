@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.certificate.user.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2026-04-24 14:47:48
+ * @since 1.0, 2026-05-07 15:06:42
  */
 public class AlipayMarketingCertificateUserBatchqueryRequest implements AlipayRequest<AlipayMarketingCertificateUserBatchqueryResponse> {
 

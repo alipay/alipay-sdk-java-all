@@ -7,17 +7,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订阅查询场景下项目列表
  *
  * @author auto create
- * @since 1.0, 2026-03-29 14:48:37
+ * @since 1.0, 2026-05-12 01:07:52
  */
 public class SubscriptionQueryItem extends AlipayObject {
 
-	private static final long serialVersionUID = 2387596982592826443L;
+	private static final long serialVersionUID = 4622362689126273794L;
+
+	/**
+	 * 优惠编码
+	 */
+	@ApiField("coupon_id")
+	private String couponId;
 
 	/**
 	 * 创建时间
 	 */
 	@ApiField("created")
 	private String created;
+
+	/**
+	 * 折扣优惠金额,单位分
+	 */
+	@ApiField("discount_amount")
+	private String discountAmount;
 
 	/**
 	 * 订阅id
@@ -37,11 +49,25 @@ public class SubscriptionQueryItem extends AlipayObject {
 	@ApiField("quantity")
 	private Long quantity;
 
+	public String getCouponId() {
+		return this.couponId;
+	}
+	public void setCouponId(String couponId) {
+		this.couponId = couponId;
+	}
+
 	public String getCreated() {
 		return this.created;
 	}
 	public void setCreated(String created) {
 		this.created = created;
+	}
+
+	public String getDiscountAmount() {
+		return this.discountAmount;
+	}
+	public void setDiscountAmount(String discountAmount) {
+		this.discountAmount = discountAmount;
 	}
 
 	public String getItemId() {

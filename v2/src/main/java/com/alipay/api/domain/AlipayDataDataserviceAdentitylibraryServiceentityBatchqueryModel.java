@@ -7,17 +7,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页查询广告投放实体
  *
  * @author auto create
- * @since 1.0, 2025-12-02 17:36:23
+ * @since 1.0, 2026-04-30 13:11:34
  */
 public class AlipayDataDataserviceAdentitylibraryServiceentityBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8721534231691184565L;
+	private static final long serialVersionUID = 5184878142358677995L;
 
 	/**
 	 * 当前页的页码
 	 */
 	@ApiField("current")
 	private Long current;
+
+	/**
+	 * 对应灯火侧B端页面的商品查询逻辑
+	 */
+	@ApiField("goods_id")
+	private String goodsId;
+
+	/**
+	 * 对应灯火侧B端页面的商品查询逻辑
+	 */
+	@ApiField("goods_name")
+	private String goodsName;
 
 	/**
 	 * 灯火定义的营销目标对应的code值
@@ -66,6 +78,20 @@ public class AlipayDataDataserviceAdentitylibraryServiceentityBatchqueryModel ex
 	}
 	public void setCurrent(Long current) {
 		this.current = current;
+	}
+
+	public String getGoodsId() {
+		return this.goodsId;
+	}
+	public void setGoodsId(String goodsId) {
+		this.goodsId = goodsId;
+	}
+
+	public String getGoodsName() {
+		return this.goodsName;
+	}
+	public void setGoodsName(String goodsName) {
+		this.goodsName = goodsName;
 	}
 
 	public String getMarketTargetCode() {

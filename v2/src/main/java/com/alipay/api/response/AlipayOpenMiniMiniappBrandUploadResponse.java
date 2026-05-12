@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenMiniMiniappBrandUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2641967665896734255L;
+	private static final long serialVersionUID = 4382218426391864227L;
 
 	/** 
 	 * 图片上传成功后的图片存储键(可用于填写调用alipay.open.mini.miniapp.brand.submit时需要的图片类型的字段)

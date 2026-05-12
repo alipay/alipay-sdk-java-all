@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.adcampaign.group.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-04-13 15:59:27
+ * @since 1.0, 2026-05-06 15:02:23
  */
 public class AlipayDataDataserviceAdcampaignGroupQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2879379163839861982L;
+	private static final long serialVersionUID = 7146415939842769174L;
 
 	/** 
 	 * 年龄
@@ -68,6 +68,12 @@ public class AlipayDataDataserviceAdcampaignGroupQueryResponse extends AlipayRes
 	 */
 	@ApiField("boost_start_date")
 	private Date boostStartDate;
+
+	/** 
+	 * 计划的计费方式
+	 */
+	@ApiField("charge_type")
+	private String chargeType;
 
 	/** 
 	 * 地理位置-城市等级
@@ -230,6 +236,12 @@ public class AlipayDataDataserviceAdcampaignGroupQueryResponse extends AlipayRes
 	private String marketTargetName;
 
 	/** 
+	 * 做为target_roi的拓展字段，含义与target_roi一样，支持4位小数。优先级高于target_roi
+	 */
+	@ApiField("new_target_roi")
+	private String newTargetRoi;
+
+	/** 
 	 * 起量状态
 	 */
 	@ApiField("one_boost_status")
@@ -365,6 +377,13 @@ public class AlipayDataDataserviceAdcampaignGroupQueryResponse extends AlipayRes
 	}
 	public Date getBoostStartDate( ) {
 		return this.boostStartDate;
+	}
+
+	public void setChargeType(String chargeType) {
+		this.chargeType = chargeType;
+	}
+	public String getChargeType( ) {
+		return this.chargeType;
 	}
 
 	public void setCityLevelList(List<String> cityLevelList) {
@@ -540,6 +559,13 @@ public class AlipayDataDataserviceAdcampaignGroupQueryResponse extends AlipayRes
 	}
 	public String getMarketTargetName( ) {
 		return this.marketTargetName;
+	}
+
+	public void setNewTargetRoi(String newTargetRoi) {
+		this.newTargetRoi = newTargetRoi;
+	}
+	public String getNewTargetRoi( ) {
+		return this.newTargetRoi;
 	}
 
 	public void setOneBoostStatus(String oneBoostStatus) {

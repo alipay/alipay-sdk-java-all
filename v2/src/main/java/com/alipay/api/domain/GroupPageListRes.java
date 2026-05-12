@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 单元分页返回对象
  *
  * @author auto create
- * @since 1.0, 2025-12-03 10:35:32
+ * @since 1.0, 2026-04-30 10:01:27
  */
 public class GroupPageListRes extends AlipayObject {
 
-	private static final long serialVersionUID = 6398685148968528999L;
+	private static final long serialVersionUID = 4173165148616249347L;
 
 	/**
 	 * 单元出价类型
@@ -44,6 +44,12 @@ public class GroupPageListRes extends AlipayObject {
 	 */
 	@ApiField("boost_start_date")
 	private Date boostStartDate;
+
+	/**
+	 * 计划的计费方式
+	 */
+	@ApiField("charge_type")
+	private String chargeType;
 
 	/**
 	 * 修改时间
@@ -92,6 +98,12 @@ public class GroupPageListRes extends AlipayObject {
 	 */
 	@ApiField("market_target_name")
 	private String marketTargetName;
+
+	/**
+	 * 做为target_roi的拓展字段，含义与target_roi一样，支持4为小数。优先级高于target_roi
+	 */
+	@ApiField("new_target_roi")
+	private String newTargetRoi;
 
 	/**
 	 * 起量状态
@@ -170,6 +182,13 @@ public class GroupPageListRes extends AlipayObject {
 		this.boostStartDate = boostStartDate;
 	}
 
+	public String getChargeType() {
+		return this.chargeType;
+	}
+	public void setChargeType(String chargeType) {
+		this.chargeType = chargeType;
+	}
+
 	public Date getGmtModified() {
 		return this.gmtModified;
 	}
@@ -224,6 +243,13 @@ public class GroupPageListRes extends AlipayObject {
 	}
 	public void setMarketTargetName(String marketTargetName) {
 		this.marketTargetName = marketTargetName;
+	}
+
+	public String getNewTargetRoi() {
+		return this.newTargetRoi;
+	}
+	public void setNewTargetRoi(String newTargetRoi) {
+		this.newTargetRoi = newTargetRoi;
 	}
 
 	public String getOneBoostStatus() {

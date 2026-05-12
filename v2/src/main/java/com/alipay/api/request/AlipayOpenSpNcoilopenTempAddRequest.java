@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.sp.ncoilopen.temp.add request
  * 
  * @author auto create
- * @since 1.0, 2026-01-12 17:12:43
+ * @since 1.0, 2026-05-11 10:58:54
  */
 public class AlipayOpenSpNcoilopenTempAddRequest implements AlipayRequest<AlipayOpenSpNcoilopenTempAddResponse> {
 

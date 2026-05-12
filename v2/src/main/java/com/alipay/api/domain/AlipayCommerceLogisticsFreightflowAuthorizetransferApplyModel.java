@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 货运企业支付授权模式下转账申请
  *
  * @author auto create
- * @since 1.0, 2025-07-02 19:14:49
+ * @since 1.0, 2026-04-28 11:24:13
  */
 public class AlipayCommerceLogisticsFreightflowAuthorizetransferApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8438376393159684413L;
+	private static final long serialVersionUID = 8279827474151574443L;
 
 	/**
 	 * 委托授权合约号
@@ -92,6 +92,15 @@ ANT_MYBANK(网商银行模式)
 	 */
 	@ApiField("request_time")
 	private String requestTime;
+
+	/**
+	 * 子功能，默认是代付，涉及到同人账户的资金划拨/资金释放等操作需要选择划拨
+●代付：
+ENTRUST_AUTH_PAY
+●划拨：ENTRUST_ALLOCATE
+	 */
+	@ApiField("sub_function")
+	private String subFunction;
 
 	public String getAgreementNo() {
 		return this.agreementNo;
@@ -182,6 +191,13 @@ ANT_MYBANK(网商银行模式)
 	}
 	public void setRequestTime(String requestTime) {
 		this.requestTime = requestTime;
+	}
+
+	public String getSubFunction() {
+		return this.subFunction;
+	}
+	public void setSubFunction(String subFunction) {
+		this.subFunction = subFunction;
 	}
 
 }

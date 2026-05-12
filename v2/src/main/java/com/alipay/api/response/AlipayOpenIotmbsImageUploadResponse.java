@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.iotmbs.image.upload response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-23 10:51:52
+ * @since 1.0, 2026-05-01 00:11:02
  */
 public class AlipayOpenIotmbsImageUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5578544651248168369L;
+	private static final long serialVersionUID = 7669834843697411427L;
 
 	/** 
 	 * 图片审核状态

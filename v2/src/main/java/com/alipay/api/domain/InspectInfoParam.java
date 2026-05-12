@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InspectInfoParam extends AlipayObject {
 
-	private static final long serialVersionUID = 8248213971754758284L;
+	private static final long serialVersionUID = 8675442687537374635L;
 
 	/**
 	 * 耗材费用，单位元。币种 ：人民币。

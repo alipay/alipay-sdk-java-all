@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-03-26 19:37:44
+ * @since 1.0, 2026-05-09 00:05:21
  */
 public class ChannelShop extends AlipayObject {
 
-	private static final long serialVersionUID = 8396991972324737536L;
+	private static final long serialVersionUID = 4166995251346596688L;
 
 	/**
 	 * 蚂蚁门店进件所属阶段

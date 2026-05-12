@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 单条添加线圈数据
  *
  * @author auto create
- * @since 1.0, 2026-01-12 17:11:23
+ * @since 1.0, 2026-05-11 10:58:54
  */
 public class AlipayOpenSpNcoilopenTempAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8418157392482385879L;
+	private static final long serialVersionUID = 2422952935797825677L;
 
 	/**
 	 * 地址信息

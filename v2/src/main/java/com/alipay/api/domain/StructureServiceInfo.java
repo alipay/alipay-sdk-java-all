@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class StructureServiceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5233637859913772284L;
+	private static final long serialVersionUID = 6279438685274444571L;
 
 	/**
 	 * 是否提供酒精饮料
