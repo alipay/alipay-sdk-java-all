@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * saleforce创建客户接口
  *
  * @author auto create
- * @since 1.0, 2026-04-16 19:17:44
+ * @since 1.0, 2026-05-13 15:42:45
  */
 public class AnttechOceanbaseObglobalSfcustomerCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4263168675973321443L;
+	private static final long serialVersionUID = 2672165892175432691L;
 
 	/**
 	 * 客户BD工号

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.merchant.expand.channelpoiurl.modify request
  * 
  * @author auto create
- * @since 1.0, 2026-05-09 00:05:21
+ * @since 1.0, 2026-05-12 16:07:50
  */
 public class AntMerchantExpandChannelpoiurlModifyRequest implements AlipayRequest<AntMerchantExpandChannelpoiurlModifyResponse> {
 

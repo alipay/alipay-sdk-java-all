@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商保码-保单数据回流接口
  *
  * @author auto create
- * @since 1.0, 2025-08-01 23:16:03
+ * @since 1.0, 2026-05-14 11:49:35
  */
 public class AlipayCommerceMedicalInsurancePolicyinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5314131561628617825L;
+	private static final long serialVersionUID = 6675324251568517865L;
 
 	/**
 	 * 保司类型
@@ -147,6 +147,12 @@ YYYY-MM-DD HH:MM:SS
 	@ApiListField("person_list")
 	@ApiField("related_person")
 	private List<RelatedPerson> personList;
+
+	/**
+	 * 保单主体类型
+	 */
+	@ApiField("policy_entity_type")
+	private String policyEntityType;
 
 	/**
 	 * 保单号【用户ID-保司类型-保单号】保持唯一，修改场景此类字段必传
@@ -379,6 +385,13 @@ YYYY-MM-DD HH:MM:SS
 	}
 	public void setPersonList(List<RelatedPerson> personList) {
 		this.personList = personList;
+	}
+
+	public String getPolicyEntityType() {
+		return this.policyEntityType;
+	}
+	public void setPolicyEntityType(String policyEntityType) {
+		this.policyEntityType = policyEntityType;
 	}
 
 	public String getPolicyNo() {

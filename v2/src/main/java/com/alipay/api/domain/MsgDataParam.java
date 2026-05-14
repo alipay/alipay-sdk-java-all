@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 问诊类消息列表
  *
  * @author auto create
- * @since 1.0, 2026-04-28 15:27:48
+ * @since 1.0, 2026-05-14 15:02:45
  */
 public class MsgDataParam extends AlipayObject {
 
-	private static final long serialVersionUID = 1554646734457179138L;
+	private static final long serialVersionUID = 5514213112374798322L;
 
 	/**
 	 * 问诊订单ID
@@ -78,6 +81,13 @@ public class MsgDataParam extends AlipayObject {
 	 */
 	@ApiField("redirect_url")
 	private String redirectUrl;
+
+	/**
+	 * null
+	 */
+	@ApiListField("redirect_urls")
+	@ApiField("string")
+	private List<String> redirectUrls;
 
 	public String getConsultationOrderId() {
 		return this.consultationOrderId;
@@ -154,6 +164,13 @@ public class MsgDataParam extends AlipayObject {
 	}
 	public void setRedirectUrl(String redirectUrl) {
 		this.redirectUrl = redirectUrl;
+	}
+
+	public List<String> getRedirectUrls() {
+		return this.redirectUrls;
+	}
+	public void setRedirectUrls(List<String> redirectUrls) {
+		this.redirectUrls = redirectUrls;
 	}
 
 }

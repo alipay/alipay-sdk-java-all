@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceOperationCarservicesaastldcAuthenticationQuerystatusModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8644414529425885631L;
+	private static final long serialVersionUID = 8611716261949724346L;
 
 	/**
 	 * query请求返回的身份认证编号

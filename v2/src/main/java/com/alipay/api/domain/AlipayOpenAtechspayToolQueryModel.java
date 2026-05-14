@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付问题诊断
  *
  * @author auto create
- * @since 1.0, 2026-05-08 14:42:45
+ * @since 1.0, 2026-05-14 16:16:28
  */
 public class AlipayOpenAtechspayToolQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6524873299514187555L;
+	private static final long serialVersionUID = 3826591579396385345L;
 
 	/**
 	 * 查询结束时间，格式 yyyy-MM-dd HH:mm:ss。不传时默认取当前时间

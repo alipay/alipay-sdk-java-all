@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZolozIdentificationCustomerIdcardCertifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8897822224422289228L;
+	private static final long serialVersionUID = 3449641964434541133L;
 
 	/** 
 	 * 证件宝审核结果

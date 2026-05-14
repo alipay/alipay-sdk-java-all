@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 医生推荐
  *
  * @author auto create
- * @since 1.0, 2026-01-28 18:57:56
+ * @since 1.0, 2026-05-14 15:32:27
  */
 public class AlipayCommerceMedicalDoctorRecommendQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4627748457832541268L;
+	private static final long serialVersionUID = 4762748469457158268L;
 
 	/**
 	 * 渠道编码

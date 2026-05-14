@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantOrderSnssmsaccessQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8385174257281582614L;
+	private static final long serialVersionUID = 2485264344247476935L;
 
 	/**
 	 * 接口提供给服务商调用，相关接口调用时会通知服务商方调用活动编码，会服务商咨询活动配置人员。且活动编码属于动态变化，不能用枚举列举。

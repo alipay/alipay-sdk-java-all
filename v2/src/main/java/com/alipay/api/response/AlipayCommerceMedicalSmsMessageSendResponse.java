@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.sms.message.send response.
  * 
  * @author auto create
- * @since 1.0, 2026-04-27 10:52:49
+ * @since 1.0, 2026-05-13 19:54:33
  */
 public class AlipayCommerceMedicalSmsMessageSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2311616572835479575L;
+	private static final long serialVersionUID = 8447659465426238134L;
 
 	/** 
 	 * 短信回执id，用于后续查询短信发送状态

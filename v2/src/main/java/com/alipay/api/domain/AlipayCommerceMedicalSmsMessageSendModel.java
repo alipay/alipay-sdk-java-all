@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 阿福开放平台短信发送
  *
  * @author auto create
- * @since 1.0, 2026-04-27 10:52:49
+ * @since 1.0, 2026-05-13 19:54:33
  */
 public class AlipayCommerceMedicalSmsMessageSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5262268332825962161L;
+	private static final long serialVersionUID = 6779979145583452543L;
 
 	/**
 	 * 智能体id

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 碰一下点餐物料申请
  *
  * @author auto create
- * @since 1.0, 2026-05-11 11:24:15
+ * @since 1.0, 2026-05-13 17:02:19
  */
 public class AlipayOpenSpNordermaterialsapplyOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2895347816721447954L;
+	private static final long serialVersionUID = 2732155656184231865L;
 
 	/**
 	 * 用于区分不同渠道openapi申请单，不传时默认 CATERING_SAAS 餐饮saas，具体使用渠道请接入时和产品确认

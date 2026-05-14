@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RoomDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3171525824481881559L;
+	private static final long serialVersionUID = 4534669527523594127L;
 
 	/**
 	 * 房间面积，单位为平方米

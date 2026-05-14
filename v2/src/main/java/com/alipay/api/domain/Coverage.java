@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 险别内容
  *
  * @author auto create
- * @since 1.0, 2025-06-05 11:14:56
+ * @since 1.0, 2026-05-14 11:49:35
  */
 public class Coverage extends AlipayObject {
 
-	private static final long serialVersionUID = 2851294886862495697L;
+	private static final long serialVersionUID = 5132981898741776554L;
 
 	/**
 	 * 责任列表

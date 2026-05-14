@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间联商户smid查询
  *
  * @author auto create
- * @since 1.0, 2025-12-19 15:05:24
+ * @since 1.0, 2026-05-13 09:59:40
  */
 public class AlipayOfflineProviderIndirectSmidQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4171768576336796938L;
+	private static final long serialVersionUID = 8219762998774923827L;
 
 	/**
 	 * 码值

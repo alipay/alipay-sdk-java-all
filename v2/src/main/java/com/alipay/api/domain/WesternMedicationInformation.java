@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class WesternMedicationInformation extends AlipayObject {
 
-	private static final long serialVersionUID = 1488886718462256722L;
+	private static final long serialVersionUID = 4746422653444191732L;
 
 	/**
 	 * 药品用量  eg：每次0.5g（2粒），每日3次

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 责任列表
  *
  * @author auto create
- * @since 1.0, 2025-06-05 11:14:56
+ * @since 1.0, 2026-05-14 11:49:35
  */
 public class CoverageLiability extends AlipayObject {
 
-	private static final long serialVersionUID = 8718189859625474988L;
+	private static final long serialVersionUID = 4866515755853916453L;
 
 	/**
 	 * 赔付次数
@@ -52,6 +52,12 @@ public class CoverageLiability extends AlipayObject {
 	 */
 	@ApiField("sum_insured")
 	private String sumInsured;
+
+	/**
+	 * 等待期天数
+	 */
+	@ApiField("wait_period_day")
+	private String waitPeriodDay;
 
 	/**
 	 * 等待期结束时间
@@ -100,6 +106,13 @@ YYYY-MM-DD HH:MM:SS
 	}
 	public void setSumInsured(String sumInsured) {
 		this.sumInsured = sumInsured;
+	}
+
+	public String getWaitPeriodDay() {
+		return this.waitPeriodDay;
+	}
+	public void setWaitPeriodDay(String waitPeriodDay) {
+		this.waitPeriodDay = waitPeriodDay;
 	}
 
 	public Date getWaitPeriodEnd() {

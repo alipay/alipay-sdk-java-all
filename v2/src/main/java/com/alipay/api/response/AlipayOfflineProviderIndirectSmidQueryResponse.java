@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.provider.indirect.smid.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-19 15:07:42
+ * @since 1.0, 2026-05-13 09:59:40
  */
 public class AlipayOfflineProviderIndirectSmidQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8439146471981776941L;
+	private static final long serialVersionUID = 4215842372174266482L;
 
 	/** 
 	 * 商户smid

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 报告内容发送
  *
  * @author auto create
- * @since 1.0, 2026-05-09 10:40:57
+ * @since 1.0, 2026-05-14 17:37:49
  */
 public class AlipayCommerceMedicalReportContentSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6714776124923943617L;
+	private static final long serialVersionUID = 3779843958855826966L;
 
 	/**
 	 * 报告内容。
@@ -24,6 +24,12 @@ public class AlipayCommerceMedicalReportContentSendModel extends AlipayObject {
 	 */
 	@ApiField("content_type")
 	private String contentType;
+
+	/**
+	 * 可选值 none(默认），time_bound_aes
+	 */
+	@ApiField("encrypt_type")
+	private String encryptType;
 
 	/**
 	 * 扩展参数
@@ -67,6 +73,13 @@ public class AlipayCommerceMedicalReportContentSendModel extends AlipayObject {
 	}
 	public void setContentType(String contentType) {
 		this.contentType = contentType;
+	}
+
+	public String getEncryptType() {
+		return this.encryptType;
+	}
+	public void setEncryptType(String encryptType) {
+		this.encryptType = encryptType;
 	}
 
 	public String getExtParams() {

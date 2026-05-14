@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HDFIllnessHistory extends AlipayObject {
 
-	private static final long serialVersionUID = 3413286422237396241L;
+	private static final long serialVersionUID = 8342956926792529162L;
 
 	/**
 	 * 既往病史描述

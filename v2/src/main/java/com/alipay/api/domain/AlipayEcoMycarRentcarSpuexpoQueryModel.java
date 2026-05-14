@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoMycarRentcarSpuexpoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7864577458653479513L;
+	private static final long serialVersionUID = 1823277266694783384L;
 
 	/**
 	 * 查询某日的曝光数据，最多支持近七天

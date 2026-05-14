@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayIserviceCognitiveBillInferenceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3175349258813185236L;
+	private static final long serialVersionUID = 1749234323993419877L;
 
 	/**
 	 * 图片大小

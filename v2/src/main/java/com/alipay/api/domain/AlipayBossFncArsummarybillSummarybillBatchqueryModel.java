@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayBossFncArsummarybillSummarybillBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6369195266739465247L;
+	private static final long serialVersionUID = 3411832693993161456L;
 
 	/**
 	 * 账单查询请求

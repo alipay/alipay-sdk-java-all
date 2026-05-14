@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MallGoodsPrice extends AlipayObject {
 
-	private static final long serialVersionUID = 6258749958939596161L;
+	private static final long serialVersionUID = 5557757551838334555L;
 
 	/**
 	 * 商品报价对应sku的属性属性值信息

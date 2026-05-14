@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TagSnInfoListRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 4211278141533192657L;
+	private static final long serialVersionUID = 6745392328452441642L;
 
 	/**
 	 * 线圈生成的id

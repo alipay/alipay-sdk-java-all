@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * AQ双通道消息发送
  *
  * @author auto create
- * @since 1.0, 2026-02-03 17:10:35
+ * @since 1.0, 2026-05-13 15:32:49
  */
 public class AlipayCommerceMedicalAqdualchannelMsgSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6387433992139921238L;
+	private static final long serialVersionUID = 4686755143746378163L;
 
 	/**
 	 * 支付宝uid，2088开头的16位纯数字，小程序场景下获取用户ID请参考：用户授权; 其它场景下获取用户ID请参考：网页授权获取用户信息;

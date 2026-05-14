@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ExaminationBookInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2698561252978833567L;
+	private static final long serialVersionUID = 1465752222225915449L;
 
 	/**
 	 * 预约结束时间

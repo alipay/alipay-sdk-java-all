@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayIserviceIsresourceGrpquerybyclvgrpidsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6345854735519345141L;
+	private static final long serialVersionUID = 8673452468424418618L;
 
 	/** 
 	 * 相关技能组信息

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.provider.indirect.smid.query request
  * 
  * @author auto create
- * @since 1.0, 2025-12-19 15:07:42
+ * @since 1.0, 2026-05-13 09:59:40
  */
 public class AlipayOfflineProviderIndirectSmidQueryRequest implements AlipayRequest<AlipayOfflineProviderIndirectSmidQueryResponse> {
 

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayDataDataserviceAdDataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8421628899751417746L;
+	private static final long serialVersionUID = 2737683142246371781L;
 
 	/**
 	 * 汇总数据广告层级类型。枚举值如下：

@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayInsDataAutoFraudQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4515599286823851221L;
+	private static final long serialVersionUID = 3361293347928874359L;
 
 	/**
 	 * 出险城市，六位国标码

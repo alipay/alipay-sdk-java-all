@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CommonDescInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8723161681956699187L;
+	private static final long serialVersionUID = 7194979457723657966L;
 
 	/**
 	 * 图片URL地址，最大不超过60K，必须使用https

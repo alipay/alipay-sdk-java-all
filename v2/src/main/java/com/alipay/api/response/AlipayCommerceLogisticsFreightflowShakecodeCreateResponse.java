@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceLogisticsFreightflowShakecodeCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6513487861882143721L;
+	private static final long serialVersionUID = 4425615922984558128L;
 
 	/** 
 	 * 生成的吱口令完整文案

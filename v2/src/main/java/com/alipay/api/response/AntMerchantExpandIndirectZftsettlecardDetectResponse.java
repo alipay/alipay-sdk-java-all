@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.indirect.zftsettlecard.detect response.
  * 
  * @author auto create
- * @since 1.0, 2026-01-22 17:07:42
+ * @since 1.0, 2026-05-13 16:53:42
  */
 public class AntMerchantExpandIndirectZftsettlecardDetectResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2385961383424347418L;
+	private static final long serialVersionUID = 7739742899664874711L;
 
 	/** 
 	 * 是否一致，一致："true", 不一致："false"

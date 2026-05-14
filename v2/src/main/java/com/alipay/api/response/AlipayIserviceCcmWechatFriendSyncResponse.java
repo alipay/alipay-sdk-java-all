@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayIserviceCcmWechatFriendSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5734426989836729156L;
+	private static final long serialVersionUID = 7382876238798584695L;
 
 	
 

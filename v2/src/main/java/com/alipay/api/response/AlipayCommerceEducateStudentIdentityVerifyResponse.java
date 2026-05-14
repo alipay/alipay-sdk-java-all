@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.student.identity.verify response.
  * 
  * @author auto create
- * @since 1.0, 2026-04-28 18:12:49
+ * @since 1.0, 2026-05-12 20:42:46
  */
 public class AlipayCommerceEducateStudentIdentityVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3413463336134769775L;
+	private static final long serialVersionUID = 2465356168676925467L;
 
 	/** 
 	 * 签名
@@ -61,6 +61,12 @@ public class AlipayCommerceEducateStudentIdentityVerifyResponse extends AlipayRe
 	 */
 	@ApiField("school_name")
 	private String schoolName;
+
+	/** 
+	 * 非学生0/待入学新生1/在校大学生2
+	 */
+	@ApiField("student_status")
+	private String studentStatus;
 
 	/** 
 	 * 时间戳
@@ -128,6 +134,13 @@ public class AlipayCommerceEducateStudentIdentityVerifyResponse extends AlipayRe
 	}
 	public String getSchoolName( ) {
 		return this.schoolName;
+	}
+
+	public void setStudentStatus(String studentStatus) {
+		this.studentStatus = studentStatus;
+	}
+	public String getStudentStatus( ) {
+		return this.studentStatus;
 	}
 
 	public void setTimeStamp(String timeStamp) {

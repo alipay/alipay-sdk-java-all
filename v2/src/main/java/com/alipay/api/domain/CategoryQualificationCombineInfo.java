@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CategoryQualificationCombineInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1469568434668991463L;
+	private static final long serialVersionUID = 1517696657351474441L;
 
 	/**
 	 * 资质列表

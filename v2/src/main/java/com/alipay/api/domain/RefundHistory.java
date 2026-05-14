@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RefundHistory extends AlipayObject {
 
-	private static final long serialVersionUID = 5131189431882524983L;
+	private static final long serialVersionUID = 4396134292787814837L;
 
 	/**
 	 * 提现金额(分)

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class DtbankActivityAlertConfigInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7232471243747311318L;
+	private static final long serialVersionUID = 1386723351558163276L;
 
 	/**
 	 * 总剩余预算预警值，单位：分

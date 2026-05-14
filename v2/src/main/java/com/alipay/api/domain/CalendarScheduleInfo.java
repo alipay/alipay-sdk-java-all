@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CalendarScheduleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5779268114353656771L;
+	private static final long serialVersionUID = 4389513871197212816L;
 
 	/**
 	 * 时间分段时长，字段unit为单位，如duration=30，unit=MIN，则表示二进制的时间表表示将一天分为30分钟一小段的时间片段，用来表示服务者的时间是否可用

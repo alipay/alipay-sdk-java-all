@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 履约数据
  *
  * @author auto create
- * @since 1.0, 2026-04-28 15:27:49
+ * @since 1.0, 2026-05-14 15:07:44
  */
 public class FulfillmentDataInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7315892847243153413L;
+	private static final long serialVersionUID = 1446778949234476118L;
 
 	/**
 	 * 问诊类数据
@@ -25,6 +25,18 @@ public class FulfillmentDataInfo extends AlipayObject {
 	@ApiField("examination")
 	private ExaminationParam examination;
 
+	/**
+	 * 陪护数据
+	 */
+	@ApiField("inpatient_nursing_fulfillment_detail_data")
+	private InpatientNursingFulfillmentDetailData inpatientNursingFulfillmentDetailData;
+
+	/**
+	 * 陪诊数据
+	 */
+	@ApiField("offline_escort_fulfillment_detail_data")
+	private OfflineEscortFulfillmentDetailData offlineEscortFulfillmentDetailData;
+
 	public ConsultationParam getConsultation() {
 		return this.consultation;
 	}
@@ -37,6 +49,20 @@ public class FulfillmentDataInfo extends AlipayObject {
 	}
 	public void setExamination(ExaminationParam examination) {
 		this.examination = examination;
+	}
+
+	public InpatientNursingFulfillmentDetailData getInpatientNursingFulfillmentDetailData() {
+		return this.inpatientNursingFulfillmentDetailData;
+	}
+	public void setInpatientNursingFulfillmentDetailData(InpatientNursingFulfillmentDetailData inpatientNursingFulfillmentDetailData) {
+		this.inpatientNursingFulfillmentDetailData = inpatientNursingFulfillmentDetailData;
+	}
+
+	public OfflineEscortFulfillmentDetailData getOfflineEscortFulfillmentDetailData() {
+		return this.offlineEscortFulfillmentDetailData;
+	}
+	public void setOfflineEscortFulfillmentDetailData(OfflineEscortFulfillmentDetailData offlineEscortFulfillmentDetailData) {
+		this.offlineEscortFulfillmentDetailData = offlineEscortFulfillmentDetailData;
 	}
 
 }

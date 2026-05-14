@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportOnlinerideOrderFreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6126185577614193296L;
+	private static final long serialVersionUID = 7345825369126719971L;
 
 	/**
 	 * 0:代表不绕圈 1:代表绕圈

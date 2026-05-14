@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOfflineSmddTradeSuccessNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3411167612388577265L;
+	private static final long serialVersionUID = 1513859486968816354L;
 
 	
 

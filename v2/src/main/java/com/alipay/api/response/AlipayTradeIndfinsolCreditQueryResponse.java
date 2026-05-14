@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.indfinsol.credit.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-04-14 16:31:37
+ * @since 1.0, 2026-05-14 16:04:18
  */
 public class AlipayTradeIndfinsolCreditQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2759244786245465636L;
+	private static final long serialVersionUID = 1694858125376843448L;
 
 	/** 
 	 * 银行卡账户
