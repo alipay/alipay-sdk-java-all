@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GroupmealOpenAuthCancelResult extends AlipayObject {
 
-	private static final long serialVersionUID = 3629899146488753861L;
+	private static final long serialVersionUID = 2867348221867439156L;
 
 	/**
 	 * 团餐碰一下批量解约授权结果,true-解约成功；false-解约失败。

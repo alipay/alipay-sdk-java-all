@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCloudCloudrunObjectstorageDirectoryBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1479589362947945161L;
+	private static final long serialVersionUID = 1411248564788583949L;
 
 	/**
 	 * 内部使用 uiam角色扮演token

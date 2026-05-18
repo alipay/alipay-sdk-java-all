@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayTradeCrowdConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6247558372168853341L;
+	private static final long serialVersionUID = 3253922378726218731L;
 
 	/** 
 	 * 淘宝的活动id列表

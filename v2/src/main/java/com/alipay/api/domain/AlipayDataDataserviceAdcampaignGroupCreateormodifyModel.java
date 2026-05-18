@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 单元新增或修改
  *
  * @author auto create
- * @since 1.0, 2026-04-30 10:01:21
+ * @since 1.0, 2026-05-14 19:33:22
  */
 public class AlipayDataDataserviceAdcampaignGroupCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3527296364485316224L;
+	private static final long serialVersionUID = 3462648649178146321L;
 
 	/**
 	 * 年龄定向
@@ -196,6 +196,12 @@ alipay.data.dataservice.adcrowd.interestcategory.batchquery
 	@ApiListField("interest_list")
 	@ApiField("string")
 	private List<String> interestList;
+
+	/**
+	 * ROI出价周期，归因时间窗口。
+	 */
+	@ApiField("join_window_code")
+	private String joinWindowCode;
 
 	/**
 	 * 地理点位设置
@@ -463,6 +469,13 @@ alipay.data.dataservice.adcrowd.themecrowd.batchquery
 	}
 	public void setInterestList(List<String> interestList) {
 		this.interestList = interestList;
+	}
+
+	public String getJoinWindowCode() {
+		return this.joinWindowCode;
+	}
+	public void setJoinWindowCode(String joinWindowCode) {
+		this.joinWindowCode = joinWindowCode;
 	}
 
 	public List<OpenLbsEntry> getLbsList() {

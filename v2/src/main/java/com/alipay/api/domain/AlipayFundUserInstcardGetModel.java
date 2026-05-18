@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundUserInstcardGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1595898211676187739L;
+	private static final long serialVersionUID = 6322777853529849544L;
 
 	/**
 	 * 根据实际业务，转账场景传以下8大场景其中之一：

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PhoneItemInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6797244352532641751L;
+	private static final long serialVersionUID = 5515827484762861144L;
 
 	/**
 	 * 话费面额，这里单位是元。

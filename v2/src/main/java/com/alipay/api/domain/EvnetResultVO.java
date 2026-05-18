@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EvnetResultVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2131428639114485967L;
+	private static final long serialVersionUID = 6711427391841694722L;
 
 	/**
 	 * 事件回溯,按照回溯内容事件升序排序

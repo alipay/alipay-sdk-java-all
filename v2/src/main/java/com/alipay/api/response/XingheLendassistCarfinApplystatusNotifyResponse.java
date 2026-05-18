@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: xinghe.lendassist.carfin.applystatus.notify response.
  * 
  * @author auto create
- * @since 1.0, 2026-01-08 11:07:43
+ * @since 1.0, 2026-05-15 17:17:45
  */
 public class XingheLendassistCarfinApplystatusNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2885445921585285627L;
+	private static final long serialVersionUID = 4573123614784116784L;
 
 	
 

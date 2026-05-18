@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayDigitalmgmtDcmealMightydisharrangeInfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2522579783667618972L;
+	private static final long serialVersionUID = 8817282733573337129L;
 
 	/**
 	 * 排菜数据数组

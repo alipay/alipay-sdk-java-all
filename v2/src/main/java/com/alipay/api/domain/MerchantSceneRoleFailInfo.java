@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MerchantSceneRoleFailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6165624618519448871L;
+	private static final long serialVersionUID = 6296127553152595967L;
 
 	/**
 	 * 失败原因码

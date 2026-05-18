@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayAcquireQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8336417562887338152L;
+	private static final long serialVersionUID = 2396253195943267485L;
 
 	/** 
 	 * 买家支付宝账号，可以是Email或手机号码。

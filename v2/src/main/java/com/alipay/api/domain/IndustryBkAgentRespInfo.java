@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IndustryBkAgentRespInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6417577136271111923L;
+	private static final long serialVersionUID = 4815629964898891993L;
 
 	/**
 	 * 枚举值，01 银联；02 网联；03 连通等

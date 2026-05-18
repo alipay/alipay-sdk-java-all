@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AssistantLicenseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6194965288589124479L;
+	private static final long serialVersionUID = 2839894386473164559L;
 
 	/**
 	 * 许可证开始生效时间，为一个时间字段，在这个时间点后（包含当前时间点）可使用

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.commercial.order.create response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-13 16:51:48
+ * @since 1.0, 2026-05-18 10:04:31
  */
 public class AlipayTradeCommercialOrderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7432988727855331589L;
+	private static final long serialVersionUID = 8476814115996142372L;
 
 	/** 
 	 * 本次支付的收银台地址，可用于302跳转
@@ -25,6 +25,12 @@ public class AlipayTradeCommercialOrderCreateResponse extends AlipayResponse {
 	 */
 	@ApiField("order_no")
 	private String orderNo;
+
+	/** 
+	 * 本次支付的二维码链接，有效期2小时
+	 */
+	@ApiField("qr_code")
+	private String qrCode;
 
 	/** 
 	 * 本次订单的状态
@@ -44,6 +50,13 @@ public class AlipayTradeCommercialOrderCreateResponse extends AlipayResponse {
 	}
 	public String getOrderNo( ) {
 		return this.orderNo;
+	}
+
+	public void setQrCode(String qrCode) {
+		this.qrCode = qrCode;
+	}
+	public String getQrCode( ) {
+		return this.qrCode;
 	}
 
 	public void setStatus(String status) {

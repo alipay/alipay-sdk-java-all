@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.sp.inteop.brandchain.create request
  * 
  * @author auto create
- * @since 1.0, 2026-03-20 10:32:44
+ * @since 1.0, 2026-05-15 16:40:08
  */
 public class AlipayOpenSpInteopBrandchainCreateRequest implements AlipayRequest<AlipayOpenSpInteopBrandchainCreateResponse> {
 

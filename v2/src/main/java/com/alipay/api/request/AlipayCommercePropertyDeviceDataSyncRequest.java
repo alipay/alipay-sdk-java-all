@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.property.device.data.sync request
  * 
  * @author auto create
- * @since 1.0, 2025-11-15 08:52:41
+ * @since 1.0, 2026-05-15 11:30:15
  */
 public class AlipayCommercePropertyDeviceDataSyncRequest implements AlipayRequest<AlipayCommercePropertyDeviceDataSyncResponse> {
 

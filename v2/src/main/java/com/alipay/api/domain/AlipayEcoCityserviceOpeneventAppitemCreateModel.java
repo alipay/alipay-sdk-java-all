@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoCityserviceOpeneventAppitemCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8193818713195282488L;
+	private static final long serialVersionUID = 1699314891487737737L;
 
 	/**
 	 * 行业编码，表示商品提报时，需要提报的行业。一般有支付宝侧分配

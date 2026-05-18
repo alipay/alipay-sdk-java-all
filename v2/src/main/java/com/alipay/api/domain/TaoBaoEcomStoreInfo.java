@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class TaoBaoEcomStoreInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1485862445293277694L;
+	private static final long serialVersionUID = 8513392333445975341L;
 
 	/**
 	 * 关联主播明细：SHA256加密

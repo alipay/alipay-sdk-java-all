@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MedicalMedmsgArg extends AlipayObject {
 
-	private static final long serialVersionUID = 1786341934274955641L;
+	private static final long serialVersionUID = 3664515729665594447L;
 
 	/**
 	 * 模版字段key

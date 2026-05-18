@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserDtbankcustDailydiscountuserSignupResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2563853732832116112L;
+	private static final long serialVersionUID = 8169587764546561729L;
 
 	/** 
 	 * 天天减报名结果

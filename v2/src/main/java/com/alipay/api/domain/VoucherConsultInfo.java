@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 优惠券咨询结果
  *
  * @author auto create
- * @since 1.0, 2025-06-18 11:27:56
+ * @since 1.0, 2026-05-15 20:02:48
  */
 public class VoucherConsultInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8529111318815772394L;
+	private static final long serialVersionUID = 5298228488347452287L;
 
 	/**
 	 * 开始时间，立减为活动开始时间，券为券生效时间
@@ -58,6 +58,12 @@ public class VoucherConsultInfo extends AlipayObject {
 	 */
 	@ApiField("optimal")
 	private Boolean optimal;
+
+	/**
+	 * 预咨询ID
+	 */
+	@ApiField("pre_consult_id")
+	private String preConsultId;
 
 	/**
 	 * 优惠总金额，单位为元
@@ -107,6 +113,12 @@ public class VoucherConsultInfo extends AlipayObject {
 	 */
 	@ApiField("threshold_amount")
 	private String thresholdAmount;
+
+	/**
+	 * 券详情信息
+	 */
+	@ApiField("voucher_detail")
+	private VoucherDetailModel voucherDetail;
 
 	/**
 	 * 券id
@@ -175,6 +187,13 @@ public class VoucherConsultInfo extends AlipayObject {
 		this.optimal = optimal;
 	}
 
+	public String getPreConsultId() {
+		return this.preConsultId;
+	}
+	public void setPreConsultId(String preConsultId) {
+		this.preConsultId = preConsultId;
+	}
+
 	public String getPromoAmount() {
 		return this.promoAmount;
 	}
@@ -229,6 +248,13 @@ public class VoucherConsultInfo extends AlipayObject {
 	}
 	public void setThresholdAmount(String thresholdAmount) {
 		this.thresholdAmount = thresholdAmount;
+	}
+
+	public VoucherDetailModel getVoucherDetail() {
+		return this.voucherDetail;
+	}
+	public void setVoucherDetail(VoucherDetailModel voucherDetail) {
+		this.voucherDetail = voucherDetail;
 	}
 
 	public String getVoucherId() {

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.msaas.mediarecog.aivisionstored.airetailevent.sync request
  * 
  * @author auto create
- * @since 1.0, 2026-03-31 15:02:45
+ * @since 1.0, 2026-05-15 14:07:49
  */
 public class AlipayMsaasMediarecogAivisionstoredAiretaileventSyncRequest implements AlipayRequest<AlipayMsaasMediarecogAivisionstoredAiretaileventSyncResponse> {
 

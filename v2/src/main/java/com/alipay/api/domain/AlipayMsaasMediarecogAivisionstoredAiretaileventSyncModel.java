@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 云值守门店事件同步
  *
  * @author auto create
- * @since 1.0, 2026-03-31 15:02:45
+ * @since 1.0, 2026-05-15 14:07:49
  */
 public class AlipayMsaasMediarecogAivisionstoredAiretaileventSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7875223817443989216L;
+	private static final long serialVersionUID = 2161847978636695771L;
 
 	/**
 	 * isv事件报备内容

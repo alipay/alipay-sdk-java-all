@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 店铺信息
  *
  * @author auto create
- * @since 1.0, 2026-03-20 10:32:44
+ * @since 1.0, 2026-05-15 16:40:08
  */
 public class BrandChainShopInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3328875266265511218L;
+	private static final long serialVersionUID = 2671854435121789717L;
 
 	/**
 	 * null

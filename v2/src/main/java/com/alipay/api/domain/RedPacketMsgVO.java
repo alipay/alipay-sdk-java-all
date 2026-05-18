@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RedPacketMsgVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7369574661739199419L;
+	private static final long serialVersionUID = 8855746755491968445L;
 
 	/**
 	 * 红包ID

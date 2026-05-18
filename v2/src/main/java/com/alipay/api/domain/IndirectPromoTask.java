@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IndirectPromoTask extends AlipayObject {
 
-	private static final long serialVersionUID = 4545731923684562495L;
+	private static final long serialVersionUID = 6488215126856942719L;
 
 	/**
 	 * 任务当前完成进度值

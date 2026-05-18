@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租赁订单的简单信息
  *
  * @author auto create
- * @since 1.0, 2025-10-28 17:57:48
+ * @since 1.0, 2026-05-18 10:21:24
  */
 public class SimpleRentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8234248571567922216L;
+	private static final long serialVersionUID = 2828979281278954788L;
 
 	/**
 	 * 交易组件的订单Id
@@ -100,6 +100,12 @@ public class SimpleRentInfo extends AlipayObject {
 	 */
 	@ApiField("merchant_uscc")
 	private String merchantUscc;
+
+	/**
+	 * 订单资商通类型
+	 */
+	@ApiField("order_zst_type")
+	private String orderZstType;
 
 	/**
 	 * 商户订单号
@@ -260,6 +266,13 @@ public class SimpleRentInfo extends AlipayObject {
 	}
 	public void setMerchantUscc(String merchantUscc) {
 		this.merchantUscc = merchantUscc;
+	}
+
+	public String getOrderZstType() {
+		return this.orderZstType;
+	}
+	public void setOrderZstType(String orderZstType) {
+		this.orderZstType = orderZstType;
 	}
 
 	public String getOutOrderId() {

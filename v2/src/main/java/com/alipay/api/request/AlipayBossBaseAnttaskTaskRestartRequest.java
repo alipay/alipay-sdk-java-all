@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.base.anttask.task.restart request
  * 
  * @author auto create
- * @since 1.0, 2026-04-09 16:49:17
+ * @since 1.0, 2026-05-16 00:04:56
  */
 public class AlipayBossBaseAnttaskTaskRestartRequest implements AlipayRequest<AlipayBossBaseAnttaskTaskRestartResponse> {
 

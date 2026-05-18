@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AuthorizedFamilyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8123883718479682188L;
+	private static final long serialVersionUID = 7565288236739184272L;
 
 	/**
 	 * 已授权家人证件号

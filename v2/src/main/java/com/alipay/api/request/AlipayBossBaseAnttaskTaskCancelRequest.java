@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.boss.base.anttask.task.cancel request
  * 
  * @author auto create
- * @since 1.0, 2026-04-09 16:48:34
+ * @since 1.0, 2026-05-16 00:04:55
  */
 public class AlipayBossBaseAnttaskTaskCancelRequest implements AlipayRequest<AlipayBossBaseAnttaskTaskCancelResponse> {
 

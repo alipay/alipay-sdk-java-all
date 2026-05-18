@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NppQrCodeDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8266248827659796683L;
+	private static final long serialVersionUID = 3338727946619467137L;
 
 	/**
 	 * 可用于标注特殊票种

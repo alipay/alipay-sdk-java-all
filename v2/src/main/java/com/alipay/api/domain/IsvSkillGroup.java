@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IsvSkillGroup extends AlipayObject {
 
-	private static final long serialVersionUID = 3135671937971793839L;
+	private static final long serialVersionUID = 4861893771473767645L;
 
 	/**
 	 * isv定义的热线技能组id

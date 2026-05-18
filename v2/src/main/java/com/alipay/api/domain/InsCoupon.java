@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsCoupon extends AlipayObject {
 
-	private static final long serialVersionUID = 2585555578325538815L;
+	private static final long serialVersionUID = 5469646193959593921L;
 
 	/**
 	 * 实际使用的权益值，可选不唯一，可能是金额（分），也可能是业务约定的其他描述

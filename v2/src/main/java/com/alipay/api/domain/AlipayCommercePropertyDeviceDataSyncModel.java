@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 门禁设备数据同步
  *
  * @author auto create
- * @since 1.0, 2025-11-15 08:52:41
+ * @since 1.0, 2026-05-15 11:30:15
  */
 public class AlipayCommercePropertyDeviceDataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3543949587134679855L;
+	private static final long serialVersionUID = 6769736674283846471L;
 
 	/**
 	 * null

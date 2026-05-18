@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AxfBookingStockInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1629793349644223381L;
+	private static final long serialVersionUID = 4318197245361153379L;
 
 	/**
 	 * 剩余可约数量，active时，这个数量应该大于0

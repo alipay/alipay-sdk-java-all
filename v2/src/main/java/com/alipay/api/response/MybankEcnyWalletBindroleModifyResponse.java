@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankEcnyWalletBindroleModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3497717471367273893L;
+	private static final long serialVersionUID = 3574352611419514128L;
 
 	
 

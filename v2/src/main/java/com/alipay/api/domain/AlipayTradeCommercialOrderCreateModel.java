@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商业订单创建接口
  *
  * @author auto create
- * @since 1.0, 2026-05-13 16:51:48
+ * @since 1.0, 2026-05-18 10:04:31
  */
 public class AlipayTradeCommercialOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6169191833815987145L;
+	private static final long serialVersionUID = 2195846271189783169L;
 
 	/**
 	 * 本次支付关联的客户ID
@@ -36,6 +36,12 @@ public class AlipayTradeCommercialOrderCreateModel extends AlipayObject {
 	 */
 	@ApiField("redirect_url")
 	private String redirectUrl;
+
+	/**
+	 * 用户支付的收银台UI模式
+	 */
+	@ApiField("ui_mode")
+	private String uiMode;
 
 	public String getCustomerId() {
 		return this.customerId;
@@ -63,6 +69,13 @@ public class AlipayTradeCommercialOrderCreateModel extends AlipayObject {
 	}
 	public void setRedirectUrl(String redirectUrl) {
 		this.redirectUrl = redirectUrl;
+	}
+
+	public String getUiMode() {
+		return this.uiMode;
+	}
+	public void setUiMode(String uiMode) {
+		this.uiMode = uiMode;
 	}
 
 }

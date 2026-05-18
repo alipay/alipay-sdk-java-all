@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MPromoConstraint extends AlipayObject {
 
-	private static final long serialVersionUID = 5329652386588368684L;
+	private static final long serialVersionUID = 1219244875782237996L;
 
 	/**
 	 * 人群类型，仅当need_crowd_flag=true时生效，支持枚举取值: 商户门店会员：MERCHANT_SHOP_MEMBER

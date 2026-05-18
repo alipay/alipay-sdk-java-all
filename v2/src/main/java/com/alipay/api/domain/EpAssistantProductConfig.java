@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EpAssistantProductConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 6222674899962549578L;
+	private static final long serialVersionUID = 5752753328547661226L;
 
 	/**
 	 * 时长购买数量，是以duration_unit的值作为单位，例如3个 HALF_YEAR表示一年半

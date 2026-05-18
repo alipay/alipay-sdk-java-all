@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.isresourceapi.agent.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-14 16:54:56
+ * @since 1.0, 2026-05-15 14:52:12
  */
 public class AlipayIserviceIsresourceapiAgentQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4549777794365253967L;
+	private static final long serialVersionUID = 6552363894547962364L;
 
 	/** 
 	 * 根据号码得出在指定数据内

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceRentOrderBillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8589898113776697645L;
+	private static final long serialVersionUID = 4611439136382688684L;
 
 	/**
 	 * 交易组件订单号

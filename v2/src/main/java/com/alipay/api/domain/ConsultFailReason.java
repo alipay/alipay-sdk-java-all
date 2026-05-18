@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ConsultFailReason extends AlipayObject {
 
-	private static final long serialVersionUID = 4255487997552822719L;
+	private static final long serialVersionUID = 7758915224386642831L;
 
 	/**
 	 * 咨询失败原因枚举编码

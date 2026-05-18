@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支用状态通知
  *
  * @author auto create
- * @since 1.0, 2026-05-06 10:54:15
+ * @since 1.0, 2026-05-15 17:14:56
  */
 public class XingheLendassistCarfinLendapplystatusNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2476472162435523455L;
+	private static final long serialVersionUID = 7275792111763669516L;
 
 	/**
 	 * 协议文件列表
@@ -82,6 +82,12 @@ public class XingheLendassistCarfinLendapplystatusNotifyModel extends AlipayObje
 	 */
 	@ApiField("need_urgent_processing")
 	private Boolean needUrgentProcessing;
+
+	/**
+	 * 其他信息
+	 */
+	@ApiField("other")
+	private CarfinLendApplyStatusNotifyOther other;
 
 	/**
 	 * 机构侧唯一业务编号
@@ -201,6 +207,13 @@ public class XingheLendassistCarfinLendapplystatusNotifyModel extends AlipayObje
 	}
 	public void setNeedUrgentProcessing(Boolean needUrgentProcessing) {
 		this.needUrgentProcessing = needUrgentProcessing;
+	}
+
+	public CarfinLendApplyStatusNotifyOther getOther() {
+		return this.other;
+	}
+	public void setOther(CarfinLendApplyStatusNotifyOther other) {
+		this.other = other;
 	}
 
 	public String getOutApplyNo() {

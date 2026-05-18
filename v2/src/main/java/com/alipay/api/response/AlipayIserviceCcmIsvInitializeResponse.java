@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayIserviceCcmIsvInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5687327359662393884L;
+	private static final long serialVersionUID = 3751721781762413969L;
 
 	/** 
 	 * Base64编码CCM公钥：CCM公私钥对由CCM自动生成，用于Iframe spi接口安全认证

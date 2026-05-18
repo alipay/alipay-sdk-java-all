@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.adcampaign.group.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-06 15:02:23
+ * @since 1.0, 2026-05-14 19:37:48
  */
 public class AlipayDataDataserviceAdcampaignGroupQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4524141991217528987L;
+	private static final long serialVersionUID = 2312866219369828223L;
 
 	/** 
 	 * 年龄
@@ -215,6 +215,12 @@ public class AlipayDataDataserviceAdcampaignGroupQueryResponse extends AlipayRes
 	@ApiListField("interest_list")
 	@ApiField("string")
 	private List<String> interestList;
+
+	/** 
+	 * ROI出价周期，归因时间窗口。
+	 */
+	@ApiField("join_window_code")
+	private String joinWindowCode;
 
 	/** 
 	 * 地理点位
@@ -538,6 +544,13 @@ public class AlipayDataDataserviceAdcampaignGroupQueryResponse extends AlipayRes
 	}
 	public List<String> getInterestList( ) {
 		return this.interestList;
+	}
+
+	public void setJoinWindowCode(String joinWindowCode) {
+		this.joinWindowCode = joinWindowCode;
+	}
+	public String getJoinWindowCode( ) {
+		return this.joinWindowCode;
 	}
 
 	public void setLbsList(List<OpenLbsEntry> lbsList) {

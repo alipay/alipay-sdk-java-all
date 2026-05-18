@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceLogisticsFreightflowShakecodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6257775453837352343L;
+	private static final long serialVersionUID = 1796142832238852127L;
 
 	/**
 	 * 业务场景

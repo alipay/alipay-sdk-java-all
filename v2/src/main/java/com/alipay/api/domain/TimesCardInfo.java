@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class TimesCardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1842478678371812125L;
+	private static final long serialVersionUID = 3148737168978642368L;
 
 	/**
 	 * 违约金信息 当前字段已废弃(违约金信息作为通用能力进行支持，请使用最外层的break_costs_info参数)

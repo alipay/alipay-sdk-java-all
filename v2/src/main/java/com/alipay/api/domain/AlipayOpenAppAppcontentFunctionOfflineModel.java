@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenAppAppcontentFunctionOfflineModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4797523129399884242L;
+	private static final long serialVersionUID = 8573148434696591761L;
 
 	/**
 	 * 服务编码，通过 <a href="https://opendocs.alipay.com/apis/011agl">alipay.open.app.appcontent.function.create</a>(小程序服务创建)接口创建服务后获取。

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalCommercialPerformanceVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3657721967763741952L;
+	private static final long serialVersionUID = 8187524625725364495L;
 
 	/**
 	 * 商品订单id，支付宝侧用户对商户某一商品的唯一订单子单id。该订单记录了用户的核销次数与总次数，以及订单状态

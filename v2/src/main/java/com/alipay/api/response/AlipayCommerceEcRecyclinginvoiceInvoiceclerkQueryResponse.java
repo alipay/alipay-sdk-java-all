@@ -1,6 +1,8 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.ClerkInfo;
 
 import com.alipay.api.AlipayResponse;
@@ -9,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.recyclinginvoice.invoiceclerk.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-13 11:03:03
+ * @since 1.0, 2026-05-18 10:22:45
  */
 public class AlipayCommerceEcRecyclinginvoiceInvoiceclerkQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4788124713545828885L;
+	private static final long serialVersionUID = 2411746125527166348L;
 
 	/** 
 	 * 员工信息列表
@@ -21,11 +23,25 @@ public class AlipayCommerceEcRecyclinginvoiceInvoiceclerkQueryResponse extends A
 	@ApiField("clerk_info_list")
 	private ClerkInfo clerkInfoList;
 
+	/** 
+	 * 员工信息列表
+	 */
+	@ApiListField("clerk_list")
+	@ApiField("clerk_info")
+	private List<ClerkInfo> clerkList;
+
 	public void setClerkInfoList(ClerkInfo clerkInfoList) {
 		this.clerkInfoList = clerkInfoList;
 	}
 	public ClerkInfo getClerkInfoList( ) {
 		return this.clerkInfoList;
+	}
+
+	public void setClerkList(List<ClerkInfo> clerkList) {
+		this.clerkList = clerkList;
+	}
+	public List<ClerkInfo> getClerkList( ) {
+		return this.clerkList;
 	}
 
 }

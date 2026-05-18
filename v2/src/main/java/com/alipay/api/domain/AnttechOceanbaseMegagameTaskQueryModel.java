@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechOceanbaseMegagameTaskQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1393146725483338817L;
+	private static final long serialVersionUID = 5169899594821158444L;
 
 	/**
 	 * 获取任务时先获取超时任务，这里传入的是超时的分钟数。默认30分钟。

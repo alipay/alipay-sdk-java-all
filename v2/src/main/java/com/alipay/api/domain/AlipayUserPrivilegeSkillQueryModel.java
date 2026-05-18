@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserPrivilegeSkillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5827235337566322838L;
+	private static final long serialVersionUID = 2527616662825559991L;
 
 	/**
 	 * 支付宝用户的地理位置信息

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VcpCalcRule extends AlipayObject {
 
-	private static final long serialVersionUID = 1771176772896243178L;
+	private static final long serialVersionUID = 2518318368711379492L;
 
 	/**
 	 * 计算条件

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBossProdAntlegalchainNotaryUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7824851528476676532L;
+	private static final long serialVersionUID = 5155256638779137999L;
 
 	/** 
 	 * 文件上传返回的fileId，上传失败则无值

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 陪诊人员信息
  *
  * @author auto create
- * @since 1.0, 2026-05-14 15:01:05
+ * @since 1.0, 2026-05-15 14:52:45
  */
 public class FulfillmentStaffInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7169543458763767213L;
+	private static final long serialVersionUID = 4583319246468117915L;
 
 	/**
 	 * 所属部门
@@ -54,6 +54,12 @@ public class FulfillmentStaffInfo extends AlipayObject {
 	 */
 	@ApiField("work_years")
 	private Long workYears;
+
+	/**
+	 * 工作年限
+	 */
+	@ApiField("work_years_text")
+	private String workYearsText;
 
 	public String getDepartment() {
 		return this.department;
@@ -102,6 +108,13 @@ public class FulfillmentStaffInfo extends AlipayObject {
 	}
 	public void setWorkYears(Long workYears) {
 		this.workYears = workYears;
+	}
+
+	public String getWorkYearsText() {
+		return this.workYearsText;
+	}
+	public void setWorkYearsText(String workYearsText) {
+		this.workYearsText = workYearsText;
 	}
 
 }
