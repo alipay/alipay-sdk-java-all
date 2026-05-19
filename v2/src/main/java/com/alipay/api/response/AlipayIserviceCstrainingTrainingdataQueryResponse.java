@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.cstraining.trainingdata.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-19 21:37:35
+ * @since 1.0, 2026-05-18 14:21:39
  */
 public class AlipayIserviceCstrainingTrainingdataQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7329798867741218631L;
+	private static final long serialVersionUID = 8441666937284237826L;
 
 	/** 
 	 * 页码

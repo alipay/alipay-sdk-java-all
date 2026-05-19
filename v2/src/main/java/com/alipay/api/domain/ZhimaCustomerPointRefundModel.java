@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCustomerPointRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4761436998144894139L;
+	private static final long serialVersionUID = 7557594749826833196L;
 
 	/**
 	 * 业务类型，由芝麻方面分配

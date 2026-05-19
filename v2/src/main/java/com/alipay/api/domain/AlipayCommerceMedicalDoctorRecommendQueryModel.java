@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 医生推荐
  *
  * @author auto create
- * @since 1.0, 2026-05-14 15:32:27
+ * @since 1.0, 2026-05-19 14:48:08
  */
 public class AlipayCommerceMedicalDoctorRecommendQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6876876268136375597L;
+	private static final long serialVersionUID = 2833981785331872966L;
 
 	/**
 	 * 渠道编码
@@ -58,6 +58,12 @@ public class AlipayCommerceMedicalDoctorRecommendQueryModel extends AlipayObject
 	 */
 	@ApiField("hdf_disease_name")
 	private String hdfDiseaseName;
+
+	/**
+	 * 好大夫id
+	 */
+	@ApiField("hdf_id")
+	private String hdfId;
 
 	/**
 	 * 好大夫医生标签id列表
@@ -186,6 +192,13 @@ public class AlipayCommerceMedicalDoctorRecommendQueryModel extends AlipayObject
 	}
 	public void setHdfDiseaseName(String hdfDiseaseName) {
 		this.hdfDiseaseName = hdfDiseaseName;
+	}
+
+	public String getHdfId() {
+		return this.hdfId;
+	}
+	public void setHdfId(String hdfId) {
+		this.hdfId = hdfId;
 	}
 
 	public List<String> getHdfTagCode() {

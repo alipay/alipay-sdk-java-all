@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁订单拓展信息
  *
  * @author auto create
- * @since 1.0, 2026-04-24 10:46:59
+ * @since 1.0, 2026-05-18 14:11:17
  */
 public class RentOrderExtendInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4532933324581564585L;
+	private static final long serialVersionUID = 5613831756638912885L;
+
+	/**
+	 * 当前订单用户是否授权静默签署电子合同
+	 */
+	@ApiField("ec_sign_user_authorized")
+	private String ecSignUserAuthorized;
 
 	/**
 	 * 承诺发货时间
@@ -38,6 +44,13 @@ public class RentOrderExtendInfoVO extends AlipayObject {
 	 */
 	@ApiField("union_rent_tag")
 	private String unionRentTag;
+
+	public String getEcSignUserAuthorized() {
+		return this.ecSignUserAuthorized;
+	}
+	public void setEcSignUserAuthorized(String ecSignUserAuthorized) {
+		this.ecSignUserAuthorized = ecSignUserAuthorized;
+	}
 
 	public Date getPromisedSendTime() {
 		return this.promisedSendTime;

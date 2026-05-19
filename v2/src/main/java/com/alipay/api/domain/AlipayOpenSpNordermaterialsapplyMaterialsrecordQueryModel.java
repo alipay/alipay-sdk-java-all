@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 碰点餐物料铺设回传查询
  *
  * @author auto create
- * @since 1.0, 2026-05-06 14:27:45
+ * @since 1.0, 2026-05-19 10:46:45
  */
 public class AlipayOpenSpNordermaterialsapplyMaterialsrecordQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5651561388746254633L;
+	private static final long serialVersionUID = 7387888292753794669L;
 
 	/**
 	 * 铺设记录ID

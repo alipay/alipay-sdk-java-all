@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenIotmbsDeviceTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3123374699347977997L;
+	private static final long serialVersionUID = 1351794745785335332L;
 
 	/**
 	 * 设备要转入的isv的pid

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CaSystemMainBody extends AlipayObject {
 
-	private static final long serialVersionUID = 8842877612845944752L;
+	private static final long serialVersionUID = 3155629233652887612L;
 
 	/**
 	 * 只有自动签署时支持加盖日期组件

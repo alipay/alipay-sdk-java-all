@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ShiftStockVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5744281967173335297L;
+	private static final long serialVersionUID = 5216959394181953346L;
 
 	/**
 	 * 时间段结束毫秒时间戳

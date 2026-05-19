@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDigitalmgmtDcmealMightydishdataInfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4888593238481188266L;
+	private static final long serialVersionUID = 5546484446344353824L;
 
 	/**
 	 * allergy_risk

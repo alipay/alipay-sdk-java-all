@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalHealthArchiveDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8277237248186567446L;
+	private static final long serialVersionUID = 2827244115698621235L;
 
 	/**
 	 * 会话ID

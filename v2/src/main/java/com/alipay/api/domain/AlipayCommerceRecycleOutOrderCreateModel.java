@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceRecycleOutOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6783259185352986821L;
+	private static final long serialVersionUID = 8296428935978652737L;
 
 	/**
 	 * 地址信息

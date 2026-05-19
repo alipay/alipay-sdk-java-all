@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CardNumberVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8856142487462771148L;
+	private static final long serialVersionUID = 4699777351249196433L;
 
 	/**
 	 * 福卡模板ID，即福卡类型

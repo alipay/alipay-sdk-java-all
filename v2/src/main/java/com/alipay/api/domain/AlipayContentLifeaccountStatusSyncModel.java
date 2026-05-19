@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayContentLifeaccountStatusSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7349483589316266194L;
+	private static final long serialVersionUID = 3452586375683358168L;
 
 	/**
 	 * 账号最新状态，当前仅支持注销

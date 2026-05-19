@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCreditEpAeprepayOrderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2587253129341242828L;
+	private static final long serialVersionUID = 5452865646652922775L;
 
 	/**
 	 * 退款垫付金额。币种最小单位，如人民币：分

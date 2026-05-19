@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 报名对象，用于入参
  *
  * @author auto create
- * @since 1.0, 2026-01-22 20:52:12
+ * @since 1.0, 2026-05-19 10:42:41
  */
 public class BsEnrollNewParticipant extends AlipayObject {
 
-	private static final long serialVersionUID = 8243318187969762588L;
+	private static final long serialVersionUID = 3579753654443625332L;
 
 	/**
 	 * 报名拓展信息
@@ -26,7 +26,7 @@ public class BsEnrollNewParticipant extends AlipayObject {
 	private String outMerchantNo;
 
 	/**
-	 * 参与类型，参与类型，支持PARTNER_ID 、LOGON_ID等
+	 * 参与类型，参与类型，支持PARTNER_ID 、LOGON_ID、SHOP_ID等
 	 */
 	@ApiField("type")
 	private String type;

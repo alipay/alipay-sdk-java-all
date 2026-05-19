@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CardExtensionInfoData extends AlipayObject {
 
-	private static final long serialVersionUID = 4841588319723183956L;
+	private static final long serialVersionUID = 2664337394176451296L;
 
 	/**
 	 * 业务唯一标识符，定义本次响应请求唯一业务数据

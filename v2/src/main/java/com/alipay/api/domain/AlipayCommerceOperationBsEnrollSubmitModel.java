@@ -10,18 +10,26 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 联营-计划报名
  *
  * @author auto create
- * @since 1.0, 2026-01-22 20:52:13
+ * @since 1.0, 2026-05-19 10:42:41
  */
 public class AlipayCommerceOperationBsEnrollSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2151889273138637263L;
+	private static final long serialVersionUID = 5526314429331553774L;
 
 	/**
 	 * 外部商户活动id，请确保在自己域内唯一。
-plan_id为空时，该参数必传
+plan_id为空时，该参数或者out_activity_ids两者有一个必传 当前字段已废弃(已支持多个外部商户活动id传递，建议使用out_activity_ids)
 	 */
 	@ApiField("out_activity_id")
+	@Deprecated
 	private String outActivityId;
+
+	/**
+	 * 外部商户活动id列表，支持多个活动id，活动id请确保在自己域内唯一。plan_id为空时，该参数或者out_activity_id两者有一个必传
+	 */
+	@ApiListField("out_activity_ids")
+	@ApiField("string")
+	private List<String> outActivityIds;
 
 	/**
 	 * 报名参与者，支持批量传参，最大10 当前字段已废弃(新接入场景请使用participants_new)
@@ -55,6 +63,13 @@ plan_id为空时，该参数必传
 	}
 	public void setOutActivityId(String outActivityId) {
 		this.outActivityId = outActivityId;
+	}
+
+	public List<String> getOutActivityIds() {
+		return this.outActivityIds;
+	}
+	public void setOutActivityIds(List<String> outActivityIds) {
+		this.outActivityIds = outActivityIds;
 	}
 
 	public List<BsEnrollParticipant> getParticipants() {

@@ -1,0 +1,56 @@
+package com.alipay.api.response;
+
+import com.alipay.api.internal.mapping.ApiField;
+
+import com.alipay.api.AlipayResponse;
+
+/**
+ * ALIPAY API: alipay.commerce.transport.expressway.sign.querystatus response.
+ * 
+ * @author auto create
+ * @since 1.0, 2026-05-18 14:42:45
+ */
+public class AlipayCommerceTransportExpresswaySignQuerystatusResponse extends AlipayResponse {
+
+	private static final long serialVersionUID = 7584713878865297337L;
+
+	/** 
+	 * 支付宝车牌付代扣协议号，该协议号是经过车牌付业务域包装过的，只有该业务域能解析。
+	 */
+	@ApiField("biz_agreement_no")
+	private String bizAgreementNo;
+
+	/** 
+	 * 签约状态的描述
+	 */
+	@ApiField("sign_status")
+	private String signStatus;
+
+	/** 
+	 * 签约状态的枚举Code
+	 */
+	@ApiField("sign_status_code")
+	private String signStatusCode;
+
+	public void setBizAgreementNo(String bizAgreementNo) {
+		this.bizAgreementNo = bizAgreementNo;
+	}
+	public String getBizAgreementNo( ) {
+		return this.bizAgreementNo;
+	}
+
+	public void setSignStatus(String signStatus) {
+		this.signStatus = signStatus;
+	}
+	public String getSignStatus( ) {
+		return this.signStatus;
+	}
+
+	public void setSignStatusCode(String signStatusCode) {
+		this.signStatusCode = signStatusCode;
+	}
+	public String getSignStatusCode( ) {
+		return this.signStatusCode;
+	}
+
+}

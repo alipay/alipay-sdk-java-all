@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 单个报名对象的报名结果
  *
  * @author auto create
- * @since 1.0, 2026-01-22 20:52:12
+ * @since 1.0, 2026-05-19 10:42:41
  */
 public class BsEnrollParticipantResult extends AlipayObject {
 
-	private static final long serialVersionUID = 7627844937965424193L;
+	private static final long serialVersionUID = 4114373391617957362L;
 
 	/**
 	 * 报名是否成功。如果失败会有reason和code返回
@@ -36,6 +36,12 @@ public class BsEnrollParticipantResult extends AlipayObject {
 	 */
 	@ApiField("fail_reason")
 	private String failReason;
+
+	/**
+	 * 如果参数传递了 out_activity_id，报名失败时会设置传入的out_activity_id，方便查看
+	 */
+	@ApiField("out_activity_id")
+	private String outActivityId;
 
 	/**
 	 * 类型对应值，传入报名对象的返回值
@@ -69,6 +75,13 @@ public class BsEnrollParticipantResult extends AlipayObject {
 	}
 	public void setFailReason(String failReason) {
 		this.failReason = failReason;
+	}
+
+	public String getOutActivityId() {
+		return this.outActivityId;
+	}
+	public void setOutActivityId(String outActivityId) {
+		this.outActivityId = outActivityId;
 	}
 
 	public String getValue() {

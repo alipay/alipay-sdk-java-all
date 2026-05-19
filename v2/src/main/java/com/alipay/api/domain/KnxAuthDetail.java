@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KnxAuthDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1665227872368931247L;
+	private static final long serialVersionUID = 5582695369269942967L;
 
 	/**
 	 * 用户授权内容

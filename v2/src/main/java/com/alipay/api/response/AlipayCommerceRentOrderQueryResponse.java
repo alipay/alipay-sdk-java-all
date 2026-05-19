@@ -6,12 +6,14 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.RentOrderReceiverAddressInfoVO;
 import com.alipay.api.domain.RentOrderDeliveryInfoVO;
+import com.alipay.api.domain.RentEcSignApplyInfoVO;
 import com.alipay.api.domain.RentOrderExtendInfoVO;
 import com.alipay.api.domain.RentFastAuditInfoVO;
 import com.alipay.api.domain.RentGoodsDetailInfoVO;
 import com.alipay.api.domain.RentOfflineShoppingVO;
 import com.alipay.api.domain.RentPathInfoVO;
 import com.alipay.api.domain.RentOrderPriceInfoVO;
+import com.alipay.api.domain.RentProcurementInfoVO;
 import com.alipay.api.domain.RentPromoInfoVO;
 import com.alipay.api.domain.RentAftersaleOrderVO;
 import com.alipay.api.domain.RentOrderPayInfoVO;
@@ -29,11 +31,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.rent.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-09 10:58:55
+ * @since 1.0, 2026-05-18 14:12:49
  */
 public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8621531995532913449L;
+	private static final long serialVersionUID = 8643566488813147449L;
 
 	/** 
 	 * 订单收货地址
@@ -64,6 +66,13 @@ public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("delivery_info")
 	private RentOrderDeliveryInfoVO deliveryInfo;
+
+	/** 
+	 * 租赁电子合同信息
+	 */
+	@ApiListField("ec_sign_apply_infos")
+	@ApiField("rent_ec_sign_apply_info_v_o")
+	private List<RentEcSignApplyInfoVO> ecSignApplyInfos;
 
 	/** 
 	 * 租赁订单拓展信息
@@ -143,6 +152,12 @@ public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("price_info")
 	private RentOrderPriceInfoVO priceInfo;
+
+	/** 
+	 * 租赁采购信息
+	 */
+	@ApiField("procurement_info")
+	private RentProcurementInfoVO procurementInfo;
 
 	/** 
 	 * 优惠信息，包含分期优惠
@@ -276,6 +291,13 @@ public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 		return this.deliveryInfo;
 	}
 
+	public void setEcSignApplyInfos(List<RentEcSignApplyInfoVO> ecSignApplyInfos) {
+		this.ecSignApplyInfos = ecSignApplyInfos;
+	}
+	public List<RentEcSignApplyInfoVO> getEcSignApplyInfos( ) {
+		return this.ecSignApplyInfos;
+	}
+
 	public void setExtendInfo(RentOrderExtendInfoVO extendInfo) {
 		this.extendInfo = extendInfo;
 	}
@@ -365,6 +387,13 @@ public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 	}
 	public RentOrderPriceInfoVO getPriceInfo( ) {
 		return this.priceInfo;
+	}
+
+	public void setProcurementInfo(RentProcurementInfoVO procurementInfo) {
+		this.procurementInfo = procurementInfo;
+	}
+	public RentProcurementInfoVO getProcurementInfo( ) {
+		return this.procurementInfo;
 	}
 
 	public void setPromoInfo(RentPromoInfoVO promoInfo) {

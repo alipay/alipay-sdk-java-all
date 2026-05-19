@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class TargetPoint extends AlipayObject {
 
-	private static final long serialVersionUID = 3624116531341959166L;
+	private static final long serialVersionUID = 5318214166926711284L;
 
 	/**
 	 * 目标点编号，如图层类型编号

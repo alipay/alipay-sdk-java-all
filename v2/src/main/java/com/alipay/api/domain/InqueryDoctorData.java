@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 在线问诊医生基础信息
  *
  * @author auto create
- * @since 1.0, 2024-08-01 17:07:50
+ * @since 1.0, 2026-05-19 13:51:10
  */
 public class InqueryDoctorData extends AlipayObject {
 
-	private static final long serialVersionUID = 8125793352534155365L;
+	private static final long serialVersionUID = 1179914319291754575L;
 
 	/**
 	 * 医生是否认证 1 已认证 0 未认证
@@ -102,10 +102,22 @@ public class InqueryDoctorData extends AlipayObject {
 	private String idNo;
 
 	/**
+	 * 官方医院名称
+	 */
+	@ApiField("official_hos_name")
+	private String officialHosName;
+
+	/**
 	 * 执医年限，单位年
 	 */
 	@ApiField("practice_year")
 	private String practiceYear;
+
+	/**
+	 * 医生执业证书上对应的科室名称
+	 */
+	@ApiField("practicing_department_name")
+	private String practicingDepartmentName;
 
 	/**
 	 * 医生执医许可证编号（医生执医许可证编号和身份证号至少填一项）
@@ -236,11 +248,25 @@ public class InqueryDoctorData extends AlipayObject {
 		this.idNo = idNo;
 	}
 
+	public String getOfficialHosName() {
+		return this.officialHosName;
+	}
+	public void setOfficialHosName(String officialHosName) {
+		this.officialHosName = officialHosName;
+	}
+
 	public String getPracticeYear() {
 		return this.practiceYear;
 	}
 	public void setPracticeYear(String practiceYear) {
 		this.practiceYear = practiceYear;
+	}
+
+	public String getPracticingDepartmentName() {
+		return this.practicingDepartmentName;
+	}
+	public void setPracticingDepartmentName(String practicingDepartmentName) {
+		this.practicingDepartmentName = practicingDepartmentName;
 	}
 
 	public String getPracticingDoctorCertificateNo() {

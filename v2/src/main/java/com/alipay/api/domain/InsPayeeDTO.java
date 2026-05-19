@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsPayeeDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7265919788999366544L;
+	private static final long serialVersionUID = 5738768662787852775L;
 
 	/**
 	 * 支付宝账号id：资金账号类型为支付宝时，必传

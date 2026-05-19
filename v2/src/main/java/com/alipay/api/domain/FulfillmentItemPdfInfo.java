@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class FulfillmentItemPdfInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1533521622226847678L;
+	private static final long serialVersionUID = 5641214146296747747L;
 
 	/**
 	 * 商品ID集合

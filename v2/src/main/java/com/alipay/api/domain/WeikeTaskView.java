@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class WeikeTaskView extends AlipayObject {
 
-	private static final long serialVersionUID = 3693877878135639824L;
+	private static final long serialVersionUID = 4162698268868186229L;
 
 	/**
 	 * 任务视图描述

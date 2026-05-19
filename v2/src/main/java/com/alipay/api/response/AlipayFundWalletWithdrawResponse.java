@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.wallet.withdraw response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-08 14:56:36
+ * @since 1.0, 2026-05-18 20:02:48
  */
 public class AlipayFundWalletWithdrawResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7619841194798368384L;
+	private static final long serialVersionUID = 6675896453929651579L;
 
 	/** 
 	 * 提现单据
@@ -31,6 +31,12 @@ public class AlipayFundWalletWithdrawResponse extends AlipayResponse {
 	 */
 	@ApiField("user_wallet_id")
 	private String userWalletId;
+
+	/** 
+	 * 钱包订单id
+	 */
+	@ApiField("wallet_order_id")
+	private String walletOrderId;
 
 	public void setBillNo(String billNo) {
 		this.billNo = billNo;
@@ -51,6 +57,13 @@ public class AlipayFundWalletWithdrawResponse extends AlipayResponse {
 	}
 	public String getUserWalletId( ) {
 		return this.userWalletId;
+	}
+
+	public void setWalletOrderId(String walletOrderId) {
+		this.walletOrderId = walletOrderId;
+	}
+	public String getWalletOrderId( ) {
+		return this.walletOrderId;
 	}
 
 }

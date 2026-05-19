@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 安心付核销接口
  *
  * @author auto create
- * @since 1.0, 2026-03-09 11:01:31
+ * @since 1.0, 2026-05-18 17:08:53
  */
 public class AlipayCommerceMerchantcardDeductionorderUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6743975151874693944L;
+	private static final long serialVersionUID = 3452489194754179559L;
 
 	/**
 	 * 幂等号（平台侧交易单号），预约场景下填写预约单号
@@ -43,6 +43,18 @@ public class AlipayCommerceMerchantcardDeductionorderUseModel extends AlipayObje
 	 */
 	@ApiField("out_biz_id")
 	private String outBizId;
+
+	/**
+	 * 兑换码，兑换品必填。当填了兑换码，可以不用传card_id和user_id / open_id
+	 */
+	@ApiField("redemption_code")
+	private String redemptionCode;
+
+	/**
+	 * 兑换说明链接，用户兑换完成后，进行跳转到商家小程序订单页或使用说明页
+	 */
+	@ApiField("redemption_guide_url")
+	private String redemptionGuideUrl;
 
 	/**
 	 * 门店id
@@ -95,6 +107,20 @@ public class AlipayCommerceMerchantcardDeductionorderUseModel extends AlipayObje
 	}
 	public void setOutBizId(String outBizId) {
 		this.outBizId = outBizId;
+	}
+
+	public String getRedemptionCode() {
+		return this.redemptionCode;
+	}
+	public void setRedemptionCode(String redemptionCode) {
+		this.redemptionCode = redemptionCode;
+	}
+
+	public String getRedemptionGuideUrl() {
+		return this.redemptionGuideUrl;
+	}
+	public void setRedemptionGuideUrl(String redemptionGuideUrl) {
+		this.redemptionGuideUrl = redemptionGuideUrl;
 	}
 
 	public String getShopId() {

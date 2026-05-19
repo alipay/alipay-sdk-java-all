@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LivePlaySecurityPocketInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5538399132536343255L;
+	private static final long serialVersionUID = 8278663562479436244L;
 
 	/**
 	 * 商品描述内容

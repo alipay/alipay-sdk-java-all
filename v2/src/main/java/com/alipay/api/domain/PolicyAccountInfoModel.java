@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保单账号信息
  *
  * @author auto create
- * @since 1.0, 2025-12-18 19:39:46
+ * @since 1.0, 2026-05-18 21:09:59
  */
 public class PolicyAccountInfoModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7369154643371545432L;
+	private static final long serialVersionUID = 8647187637711736826L;
 
 	/**
 	 * 账户类型（alipay/bankcard）

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class UniOpenResItemDetailInfos extends AlipayObject {
 
-	private static final long serialVersionUID = 6735333663223127665L;
+	private static final long serialVersionUID = 8293183549891896588L;
 
 	/**
 	 * 当default_settle_type为alipayWallet时，default_settle_target为钱包id；当default_settle_type为alipayAccount时，default_settle_target为支付宝登录号（脱敏）

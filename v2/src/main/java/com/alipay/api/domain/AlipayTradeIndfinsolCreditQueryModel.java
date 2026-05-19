@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 助贷双发能力选卡查询接口
  *
  * @author auto create
- * @since 1.0, 2026-05-14 16:04:18
+ * @since 1.0, 2026-05-18 16:32:50
  */
 public class AlipayTradeIndfinsolCreditQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1528967117135679635L;
+	private static final long serialVersionUID = 7474617594659558364L;
 
 	/**
 	 * 银行卡唯一标识

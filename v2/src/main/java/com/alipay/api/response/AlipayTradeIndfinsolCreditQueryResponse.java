@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.indfinsol.credit.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-14 16:04:18
+ * @since 1.0, 2026-05-18 16:32:50
  */
 public class AlipayTradeIndfinsolCreditQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7166971645387982981L;
+	private static final long serialVersionUID = 4549963274733943488L;
 
 	/** 
 	 * 银行卡账户
@@ -26,6 +26,12 @@ public class AlipayTradeIndfinsolCreditQueryResponse extends AlipayResponse {
 	@ApiField("inst_id")
 	private String instId;
 
+	/** 
+	 * 银行预留手机号
+	 */
+	@ApiField("mobile")
+	private String mobile;
+
 	public void setBankCardNumber(String bankCardNumber) {
 		this.bankCardNumber = bankCardNumber;
 	}
@@ -38,6 +44,13 @@ public class AlipayTradeIndfinsolCreditQueryResponse extends AlipayResponse {
 	}
 	public String getInstId( ) {
 		return this.instId;
+	}
+
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
+	}
+	public String getMobile( ) {
+		return this.mobile;
 	}
 
 }

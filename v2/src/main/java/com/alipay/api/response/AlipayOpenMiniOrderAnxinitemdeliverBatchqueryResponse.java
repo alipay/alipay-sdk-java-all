@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenMiniOrderAnxinitemdeliverBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5116956213932447435L;
+	private static final long serialVersionUID = 2873528714616842686L;
 
 	/** 
 	 * 安心卡使用明细列表

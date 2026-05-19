@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 学历认证结果
  *
  * @author auto create
- * @since 1.0, 2026-05-13 20:52:48
+ * @since 1.0, 2026-05-18 10:47:49
  */
 public class EduOcrResult extends AlipayObject {
 
-	private static final long serialVersionUID = 8253722256299849441L;
+	private static final long serialVersionUID = 8428893985488655722L;
 
 	/**
 	 * 教育层次

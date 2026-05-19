@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 检查检验类预约信息
  *
  * @author auto create
- * @since 1.0, 2026-04-10 16:25:12
+ * @since 1.0, 2026-05-18 16:34:21
  */
 public class ExaminationBookInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1435484433417927716L;
+	private static final long serialVersionUID = 5195349117869678458L;
 
 	/**
 	 * 预约结束时间
@@ -24,6 +24,18 @@ public class ExaminationBookInfo extends AlipayObject {
 	 */
 	@ApiField("book_start_time")
 	private String bookStartTime;
+
+	/**
+	 * 市
+	 */
+	@ApiField("city")
+	private String city;
+
+	/**
+	 * 区县
+	 */
+	@ApiField("district")
+	private String district;
 
 	/**
 	 * 患者性别
@@ -44,6 +56,12 @@ public class ExaminationBookInfo extends AlipayObject {
 	private String idType;
 
 	/**
+	 * 详细地址
+	 */
+	@ApiField("location")
+	private String location;
+
+	/**
 	 * 患者姓名
 	 */
 	@ApiField("name")
@@ -54,6 +72,12 @@ public class ExaminationBookInfo extends AlipayObject {
 	 */
 	@ApiField("phone")
 	private String phone;
+
+	/**
+	 * 省
+	 */
+	@ApiField("province")
+	private String province;
 
 	/**
 	 * 预约门店地址
@@ -87,6 +111,20 @@ public class ExaminationBookInfo extends AlipayObject {
 		this.bookStartTime = bookStartTime;
 	}
 
+	public String getCity() {
+		return this.city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public String getDistrict() {
+		return this.district;
+	}
+	public void setDistrict(String district) {
+		this.district = district;
+	}
+
 	public String getGender() {
 		return this.gender;
 	}
@@ -108,6 +146,13 @@ public class ExaminationBookInfo extends AlipayObject {
 		this.idType = idType;
 	}
 
+	public String getLocation() {
+		return this.location;
+	}
+	public void setLocation(String location) {
+		this.location = location;
+	}
+
 	public String getName() {
 		return this.name;
 	}
@@ -120,6 +165,13 @@ public class ExaminationBookInfo extends AlipayObject {
 	}
 	public void setPhone(String phone) {
 		this.phone = phone;
+	}
+
+	public String getProvince() {
+		return this.province;
+	}
+	public void setProvince(String province) {
+		this.province = province;
 	}
 
 	public String getStoreAddress() {

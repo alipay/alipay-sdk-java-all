@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class VoyagerOrderRebookInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8572822787716971529L;
+	private static final long serialVersionUID = 7671868183671894333L;
 
 	/**
 	 * 改签后人航段信息集合

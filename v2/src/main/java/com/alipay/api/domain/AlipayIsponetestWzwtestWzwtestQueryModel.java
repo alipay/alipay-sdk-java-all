@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 字段隐藏与废弃openapi接口
  *
  * @author auto create
- * @since 1.0, 2024-07-04 10:43:50
+ * @since 1.0, 2026-05-18 14:21:26
  */
 public class AlipayIsponetestWzwtestWzwtestQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4851495157923131534L;
+	private static final long serialVersionUID = 2768568551867957685L;
 
 	/**
 	 * test

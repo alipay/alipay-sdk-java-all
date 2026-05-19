@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayAccountFinriskMarkriskDatafactorQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8529298415925284449L;
+	private static final long serialVersionUID = 3477611595899774297L;
 
 	/**
 	 * Json格式表示市场风险损益计算入参

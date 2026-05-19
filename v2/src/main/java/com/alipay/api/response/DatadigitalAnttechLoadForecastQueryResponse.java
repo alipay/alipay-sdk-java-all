@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class DatadigitalAnttechLoadForecastQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5387941885551739146L;
+	private static final long serialVersionUID = 5751841412114799353L;
 
 	/** 
 	 * 负荷预测数据信息

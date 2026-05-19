@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.ccm.crm.clue.sync request
  * 
  * @author auto create
- * @since 1.0, 2026-01-29 14:36:33
+ * @since 1.0, 2026-05-18 14:58:50
  */
 public class AlipayIserviceCcmCrmClueSyncRequest implements AlipayRequest<AlipayIserviceCcmCrmClueSyncResponse> {
 

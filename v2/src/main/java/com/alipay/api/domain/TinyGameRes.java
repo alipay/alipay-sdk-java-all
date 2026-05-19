@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TinyGameRes extends AlipayObject {
 
-	private static final long serialVersionUID = 5859438467666655564L;
+	private static final long serialVersionUID = 2384246116579477687L;
 
 	/**
 	 * 小游戏appId，用于创建计划时使用

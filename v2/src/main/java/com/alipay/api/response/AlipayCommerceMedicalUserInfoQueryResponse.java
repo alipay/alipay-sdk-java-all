@@ -9,14 +9,14 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.user.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-08 16:24:31
+ * @since 1.0, 2026-05-19 15:02:49
  */
 public class AlipayCommerceMedicalUserInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1378353659453892245L;
+	private static final long serialVersionUID = 3483859753325711923L;
 
 	/** 
-	 * 结果数据
+	 * 用户信息
 	 */
 	@ApiField("user_query_info")
 	private UserQueryInfo userQueryInfo;

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class DatadigitalAnttechWeatherFutureQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2411413725627668678L;
+	private static final long serialVersionUID = 3811166488712495288L;
 
 	/** 
 	 * 消耗的token数量。

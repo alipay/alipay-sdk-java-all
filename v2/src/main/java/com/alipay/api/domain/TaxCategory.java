@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TaxCategory extends AlipayObject {
 
-	private static final long serialVersionUID = 1732745353279276474L;
+	private static final long serialVersionUID = 3153866318521527968L;
 
 	/**
 	 * 对于该商品或服务的说明

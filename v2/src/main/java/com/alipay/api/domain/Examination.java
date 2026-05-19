@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 履约检查检验数据
  *
  * @author auto create
- * @since 1.0, 2026-04-10 16:25:12
+ * @since 1.0, 2026-05-18 20:22:39
  */
 public class Examination extends AlipayObject {
 
-	private static final long serialVersionUID = 1539551746258774699L;
+	private static final long serialVersionUID = 1239728228396638546L;
 
 	/**
 	 * 应用id
@@ -27,6 +27,22 @@ public class Examination extends AlipayObject {
 	 */
 	@ApiField("book_info")
 	private ExaminationBookInfo bookInfo;
+
+	/**
+	 * 1	用户主动取消订单
+2	未支付自动取消
+3	商家超时未接单自动取消
+4	用户补方超时自动取消
+5	医生拒方取消订单
+6	医生开方超时自动取消（处方侧）
+7	医生开方超时自动取消（订单侧）
+8	药店审方驳回取消订单
+9	药店审方超时自动取消订单（处方侧）
+10	药店审方超时自动取消订单（订单侧）
+11	处方已作废
+	 */
+	@ApiField("cancel_type")
+	private Long cancelType;
 
 	/**
 	 * 检测信息
@@ -119,6 +135,13 @@ public class Examination extends AlipayObject {
 	}
 	public void setBookInfo(ExaminationBookInfo bookInfo) {
 		this.bookInfo = bookInfo;
+	}
+
+	public Long getCancelType() {
+		return this.cancelType;
+	}
+	public void setCancelType(Long cancelType) {
+		this.cancelType = cancelType;
 	}
 
 	public ExaminationCheckInfo getCheckInfo() {

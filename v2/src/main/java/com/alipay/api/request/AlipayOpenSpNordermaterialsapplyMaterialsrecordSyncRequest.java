@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.sp.nordermaterialsapply.materialsrecord.sync request
  * 
  * @author auto create
- * @since 1.0, 2026-04-22 11:02:45
+ * @since 1.0, 2026-05-19 10:46:49
  */
 public class AlipayOpenSpNordermaterialsapplyMaterialsrecordSyncRequest implements AlipayRequest<AlipayOpenSpNordermaterialsapplyMaterialsrecordSyncResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBossFncInvoicereceiptCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6422434281794756973L;
+	private static final long serialVersionUID = 6544863644335169378L;
 
 	
 

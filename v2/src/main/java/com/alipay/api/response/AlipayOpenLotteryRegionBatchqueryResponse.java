@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenLotteryRegionBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2551516632924232174L;
+	private static final long serialVersionUID = 8258555635241333288L;
 
 	/** 
 	 * 商家入驻专区列表

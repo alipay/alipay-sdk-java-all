@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.raas.meter.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-25 09:36:57
+ * @since 1.0, 2026-05-18 10:53:59
  */
 public class AlipaySecurityProdRaasMeterQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1687738216563874319L;
+	private static final long serialVersionUID = 6362118265115399556L;
 
 	/** 
 	 * 返回的数据集

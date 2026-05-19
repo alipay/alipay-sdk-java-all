@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VenueConfigModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8353327614111141728L;
+	private static final long serialVersionUID = 2329446186553869158L;
 
 	/**
 	 * 最多可容纳签到的人数

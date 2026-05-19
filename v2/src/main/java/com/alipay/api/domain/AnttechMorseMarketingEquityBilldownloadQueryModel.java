@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechMorseMarketingEquityBilldownloadQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7275737332986215513L;
+	private static final long serialVersionUID = 5824849856835868863L;
 
 	/**
 	 * 发券活动的活动id，对应要发放的权益红包活动

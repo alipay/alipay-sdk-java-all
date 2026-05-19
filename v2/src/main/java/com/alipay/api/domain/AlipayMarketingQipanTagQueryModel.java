@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingQipanTagQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7595158329846811672L;
+	private static final long serialVersionUID = 7498354724641967394L;
 
 	/**
 	 * 圈选标签编码

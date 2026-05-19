@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 线索同步
  *
  * @author auto create
- * @since 1.0, 2026-01-29 14:36:33
+ * @since 1.0, 2026-05-18 14:58:50
  */
 public class AlipayIserviceCcmCrmClueSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3584326238396286897L;
+	private static final long serialVersionUID = 4455915178943911423L;
 
 	/**
 	 * 线索的客户名称，区分为个人线索和企业线索，个人线索传名称，企业线索传公司名称

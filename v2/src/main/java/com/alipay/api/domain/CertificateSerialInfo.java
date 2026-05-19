@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 次卡次序号信息
  *
  * @author auto create
- * @since 1.0, 2024-11-08 14:49:19
+ * @since 1.0, 2026-05-18 19:11:53
  */
 public class CertificateSerialInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4385512619873631679L;
+	private static final long serialVersionUID = 7158516999132726771L;
 
 	/**
 	 * 次序号的金额信息
@@ -24,6 +24,12 @@ public class CertificateSerialInfo extends AlipayObject {
 	 */
 	@ApiField("serial_no")
 	private String serialNo;
+
+	/**
+	 * 次序号核销的门店id，次序号已核销后才会返回该值
+	 */
+	@ApiField("shop_id")
+	private String shopId;
 
 	/**
 	 * 次序号状态
@@ -43,6 +49,13 @@ public class CertificateSerialInfo extends AlipayObject {
 	}
 	public void setSerialNo(String serialNo) {
 		this.serialNo = serialNo;
+	}
+
+	public String getShopId() {
+		return this.shopId;
+	}
+	public void setShopId(String shopId) {
+		this.shopId = shopId;
 	}
 
 	public String getStatus() {

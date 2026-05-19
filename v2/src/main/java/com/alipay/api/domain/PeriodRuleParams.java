@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PeriodRuleParams extends AlipayObject {
 
-	private static final long serialVersionUID = 3511125839927439245L;
+	private static final long serialVersionUID = 2456963935565646687L;
 
 	/**
 	 * 首次执行时间execute_time是周期扣款产品必填，即商户发起首次扣款的时间。精确到日，格式为yyyy-MM-dd

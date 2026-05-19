@@ -11,17 +11,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 撤销凭证核销状态
  *
  * @author auto create
- * @since 1.0, 2024-01-16 13:13:28
+ * @since 1.0, 2026-05-18 19:12:00
  */
 public class AlipayMarketingCertificateCertificationRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5511172278145525438L;
+	private static final long serialVersionUID = 3445481159876765929L;
 
 	/**
 	 * 撤销核销时间。格式为：yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("biz_dt")
 	private Date bizDt;
+
+	/**
+	 * 撤销核销明细
+	 */
+	@ApiField("certificate_reverse_info_list")
+	private CertificateReverseInfo certificateReverseInfoList;
 
 	/**
 	 * 已核销待冲正的三方码。取值为支付宝调用三方凭证发放spi时商户返回的三方码 当前字段已废弃(指定凭证id做单次核销撤回)
@@ -50,10 +56,11 @@ public class AlipayMarketingCertificateCertificationRefundModel extends AlipayOb
 	private String outBizNo;
 
 	/**
-	 * 核销接口返回的核销操作单号，撤销orderNo对应的核销操作
+	 * 核销接口返回的核销操作单号，撤销orderNo对应的核销操作 当前字段已废弃(升级为certificate_reverse_info_list)
 	 */
 	@ApiListField("use_order_no_list")
 	@ApiField("string")
+	@Deprecated
 	private List<String> useOrderNoList;
 
 	/**
@@ -67,6 +74,13 @@ public class AlipayMarketingCertificateCertificationRefundModel extends AlipayOb
 	}
 	public void setBizDt(Date bizDt) {
 		this.bizDt = bizDt;
+	}
+
+	public CertificateReverseInfo getCertificateReverseInfoList() {
+		return this.certificateReverseInfoList;
+	}
+	public void setCertificateReverseInfoList(CertificateReverseInfo certificateReverseInfoList) {
+		this.certificateReverseInfoList = certificateReverseInfoList;
 	}
 
 	public String getCode() {

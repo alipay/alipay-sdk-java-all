@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取学历认证业务票据
  *
  * @author auto create
- * @since 1.0, 2026-05-13 20:48:43
+ * @since 1.0, 2026-05-18 10:52:45
  */
 public class AlipayEbppIndustryEducertifyTokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1885251376578921566L;
+	private static final long serialVersionUID = 2649419353232826516L;
 
 	/**
 	 * 业务ID,一般为UUID字符串

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayFinancialnetAuthEcsignUserwhitelistSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6213959655559543981L;
+	private static final long serialVersionUID = 2788465382428716875L;
 
 	/**
 	 * 回跳页面类型

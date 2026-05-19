@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.wallet.depositorder.create response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-08 14:56:10
+ * @since 1.0, 2026-05-18 20:02:49
  */
 public class AlipayFundWalletDepositorderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4135391692917911918L;
+	private static final long serialVersionUID = 8567279185472216247L;
 
 	/** 
 	 * 内部单据
@@ -31,6 +31,12 @@ public class AlipayFundWalletDepositorderCreateResponse extends AlipayResponse {
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
+
+	/** 
+	 * 钱包订单id
+	 */
+	@ApiField("wallet_order_id")
+	private String walletOrderId;
 
 	public void setBillNo(String billNo) {
 		this.billNo = billNo;
@@ -51,6 +57,13 @@ public class AlipayFundWalletDepositorderCreateResponse extends AlipayResponse {
 	}
 	public String getOutBizNo( ) {
 		return this.outBizNo;
+	}
+
+	public void setWalletOrderId(String walletOrderId) {
+		this.walletOrderId = walletOrderId;
+	}
+	public String getWalletOrderId( ) {
+		return this.walletOrderId;
 	}
 
 }

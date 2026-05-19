@@ -1,0 +1,107 @@
+package com.alipay.api.domain;
+
+import com.alipay.api.AlipayObject;
+import com.alipay.api.internal.mapping.ApiField;
+
+/**
+ * 用户黑卡身份查询接口
+ *
+ * @author auto create
+ * @since 1.0, 2026-05-19 10:57:45
+ */
+public class AntfortuneMarketingBlackcarduserUserinfoQueryModel extends AlipayObject {
+
+	private static final long serialVersionUID = 1796596797135598478L;
+
+	/**
+	 * 用户证件号，AES加密
+	 */
+	@ApiField("cert_no")
+	private String certNo;
+
+	/**
+	 * 查询权益类型
+	 */
+	@ApiField("equity_code")
+	private String equityCode;
+
+	/**
+	 * 用户id
+	 */
+	@ApiField("open_id")
+	private String openId;
+
+	/**
+	 * 查询场景类型
+	 */
+	@ApiField("scene_code")
+	private String sceneCode;
+
+	/**
+	 * 请求来源
+	 */
+	@ApiField("source")
+	private String source;
+
+	/**
+	 * 用户id
+	 */
+	@ApiField("user_id")
+	private String userId;
+
+	/**
+	 * 用户名，AES加密
+	 */
+	@ApiField("user_name")
+	private String userName;
+
+	public String getCertNo() {
+		return this.certNo;
+	}
+	public void setCertNo(String certNo) {
+		this.certNo = certNo;
+	}
+
+	public String getEquityCode() {
+		return this.equityCode;
+	}
+	public void setEquityCode(String equityCode) {
+		this.equityCode = equityCode;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
+	}
+
+	public String getSceneCode() {
+		return this.sceneCode;
+	}
+	public void setSceneCode(String sceneCode) {
+		this.sceneCode = sceneCode;
+	}
+
+	public String getSource() {
+		return this.source;
+	}
+	public void setSource(String source) {
+		this.source = source;
+	}
+
+	public String getUserId() {
+		return this.userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+
+	public String getUserName() {
+		return this.userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+}

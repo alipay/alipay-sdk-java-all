@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceLifeserviceBankaccountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7225572379434413955L;
+	private static final long serialVersionUID = 6314313899127698732L;
 
 	/** 
 	 * 开设账户的银行名称

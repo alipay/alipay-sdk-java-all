@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayIserviceIsportalLogindigestQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3773326746463524599L;
+	private static final long serialVersionUID = 8271585954225497333L;
 
 	/**
 	 * 星云对应的用户平台的ID
