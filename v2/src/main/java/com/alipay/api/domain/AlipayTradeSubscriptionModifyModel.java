@@ -10,17 +10,16 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订阅修改
  *
  * @author auto create
- * @since 1.0, 2026-05-18 14:10:21
+ * @since 1.0, 2026-05-23 15:17:48
  */
 public class AlipayTradeSubscriptionModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3611752312946467184L;
+	private static final long serialVersionUID = 5333888378361935742L;
 
 	/**
-	 * 周期结束失效标识，仅用于取消/取消后恢复订阅，其他场景无需使用。
-true：当前周期结束后
-取消
-false：取消后恢复，具体使用方式详见接入指南。
+	 * 是否在周期结束时取消订阅，仅用于取消/取消后恢复订阅，其他场景无需使用。
+true：在当前计费周期结束时取消订阅；
+false：立即取消并发起退款；null: CANCEL场景必须传true或false；具体使用方式详见接入指南。
 	 */
 	@ApiField("cancel_at_period_end")
 	private Boolean cancelAtPeriodEnd;
@@ -30,6 +29,12 @@ false：取消后恢复，具体使用方式详见接入指南。
 	 */
 	@ApiField("description")
 	private String description;
+
+	/**
+	 * 通用扩展参数
+	 */
+	@ApiField("extend_params")
+	private String extendParams;
 
 	/**
 	 * null
@@ -62,6 +67,13 @@ false：重置周期，具体使用方式详见接入指南。
 	private Boolean preserveBillingCycle;
 
 	/**
+	 * null: 系统计算残值作为退款金额;
+>=0: 按商家指定的金额退款，0表示直接取消不退款;
+	 */
+	@ApiField("refund_amount")
+	private Long refundAmount;
+
+	/**
 	 * 订单标题
 	 */
 	@ApiField("subscribe_title")
@@ -85,6 +97,13 @@ false：重置周期，具体使用方式详见接入指南。
 	}
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	public String getExtendParams() {
+		return this.extendParams;
+	}
+	public void setExtendParams(String extendParams) {
+		this.extendParams = extendParams;
 	}
 
 	public List<SubscriptionItem> getItems() {
@@ -113,6 +132,13 @@ false：重置周期，具体使用方式详见接入指南。
 	}
 	public void setPreserveBillingCycle(Boolean preserveBillingCycle) {
 		this.preserveBillingCycle = preserveBillingCycle;
+	}
+
+	public Long getRefundAmount() {
+		return this.refundAmount;
+	}
+	public void setRefundAmount(Long refundAmount) {
+		this.refundAmount = refundAmount;
 	}
 
 	public String getSubscribeTitle() {

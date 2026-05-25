@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.voucher.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-11-27 10:28:39
+ * @since 1.0, 2026-05-21 14:42:45
  */
 public class AlipayMarketingVoucherDeleteRequest implements AlipayRequest<AlipayMarketingVoucherDeleteResponse> {
 

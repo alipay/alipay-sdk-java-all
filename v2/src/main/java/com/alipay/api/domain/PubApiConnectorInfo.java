@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PubApiConnectorInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1776221833727362594L;
+	private static final long serialVersionUID = 2266449527825738931L;
 
 	/**
 	 * 充电枪id

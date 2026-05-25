@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.examination.bundlelist.query request
  * 
  * @author auto create
- * @since 1.0, 2026-04-23 16:12:45
+ * @since 1.0, 2026-05-20 21:02:50
  */
 public class AlipayCommerceMedicalExaminationBundlelistQueryRequest implements AlipayRequest<AlipayCommerceMedicalExaminationBundlelistQueryResponse> {
 

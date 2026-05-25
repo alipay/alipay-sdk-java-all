@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InternetbarDeviceActivityData extends AlipayObject {
 
-	private static final long serialVersionUID = 3357736995382342885L;
+	private static final long serialVersionUID = 8163168618342777214L;
 
 	/**
 	 * 该线圈历史上是否曾唤起过支付宝端

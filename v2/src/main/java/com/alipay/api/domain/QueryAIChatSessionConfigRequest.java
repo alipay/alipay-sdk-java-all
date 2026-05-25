@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class QueryAIChatSessionConfigRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 4237141634437928649L;
+	private static final long serialVersionUID = 8313425166236567854L;
 
 	/**
 	 * 是否需要返回智能体内容

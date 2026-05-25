@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMsaasMediarecogMmportalTransweightinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4822193748751721264L;
+	private static final long serialVersionUID = 2351654991494445254L;
 
 	/** 
 	 * 是否成功

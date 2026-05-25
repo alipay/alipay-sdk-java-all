@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁采购单查询
  *
  * @author auto create
- * @since 1.0, 2026-05-18 10:15:56
+ * @since 1.0, 2026-05-22 14:17:48
  */
 public class AlipayCommerceRentProcurementOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2547429491892473346L;
+	private static final long serialVersionUID = 4716759196679665577L;
 
 	/**
 	 * 商户外部采购单号（与procurement_order_id二选一）

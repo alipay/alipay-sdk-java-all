@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-04-14 14:26:47
+ * @since 1.0, 2026-05-22 17:17:45
  */
 public class CustomerQueryResponseDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1248533541554967258L;
+	private static final long serialVersionUID = 2486573524935751249L;
 
 	/**
 	 * 客户bid
 	 */
 	@ApiField("bid")
 	private String bid;
+
+	/**
+	 * 海图客户编码
+	 */
+	@ApiField("cid")
+	private String cid;
 
 	/**
 	 * 海图客户社会统一信用代码
@@ -48,6 +54,13 @@ public class CustomerQueryResponseDTO extends AlipayObject {
 	}
 	public void setBid(String bid) {
 		this.bid = bid;
+	}
+
+	public String getCid() {
+		return this.cid;
+	}
+	public void setCid(String cid) {
+		this.cid = cid;
 	}
 
 	public String getEpCertNo() {

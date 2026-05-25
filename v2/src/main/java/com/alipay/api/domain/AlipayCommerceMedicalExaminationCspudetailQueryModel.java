@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询检查检验标品详情接口
  *
  * @author auto create
- * @since 1.0, 2026-04-23 16:12:45
+ * @since 1.0, 2026-05-20 21:02:50
  */
 public class AlipayCommerceMedicalExaminationCspudetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5669737516647626747L;
+	private static final long serialVersionUID = 2168648297847294749L;
 
 	/**
 	 * null

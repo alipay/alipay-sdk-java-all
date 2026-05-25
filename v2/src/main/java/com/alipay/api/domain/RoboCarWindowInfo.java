@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RoboCarWindowInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1139531157466919111L;
+	private static final long serialVersionUID = 1753918143129662989L;
 
 	/**
 	 * 车窗开启状态：1关闭，2开启

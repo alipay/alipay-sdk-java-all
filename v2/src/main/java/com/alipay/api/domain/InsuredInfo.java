@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * null
  *
  * @author auto create
- * @since 1.0, 2026-05-12 21:20:02
+ * @since 1.0, 2026-05-22 14:02:50
  */
 public class InsuredInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1863821721574122735L;
+	private static final long serialVersionUID = 6521546894456664495L;
 
 	/**
 	 * 被保人扩展信息
@@ -50,6 +53,13 @@ public class InsuredInfo extends AlipayObject {
 	 */
 	@ApiField("insured_status")
 	private String insuredStatus;
+
+	/**
+	 * null
+	 */
+	@ApiListField("policy_info_list")
+	@ApiField("policy_mode_info")
+	private List<PolicyModeInfo> policyInfoList;
 
 	public String getExtInfo() {
 		return this.extInfo;
@@ -91,6 +101,13 @@ public class InsuredInfo extends AlipayObject {
 	}
 	public void setInsuredStatus(String insuredStatus) {
 		this.insuredStatus = insuredStatus;
+	}
+
+	public List<PolicyModeInfo> getPolicyInfoList() {
+		return this.policyInfoList;
+	}
+	public void setPolicyInfoList(List<PolicyModeInfo> policyInfoList) {
+		this.policyInfoList = policyInfoList;
 	}
 
 }

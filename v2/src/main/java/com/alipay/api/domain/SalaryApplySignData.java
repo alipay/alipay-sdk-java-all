@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SalaryApplySignData extends AlipayObject {
 
-	private static final long serialVersionUID = 2457749323984728252L;
+	private static final long serialVersionUID = 4592617591315173938L;
 
 	/**
 	 * 授权平台的appId

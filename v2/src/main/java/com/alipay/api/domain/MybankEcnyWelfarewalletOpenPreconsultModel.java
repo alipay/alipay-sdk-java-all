@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 四川商通员工福利钱包余额查询
  *
  * @author auto create
- * @since 1.0, 2026-04-23 11:24:00
+ * @since 1.0, 2026-05-25 14:01:58
  */
 public class MybankEcnyWelfarewalletOpenPreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7418581742813124925L;
+	private static final long serialVersionUID = 4814735961935634445L;
 
 	/**
 	 * 客户姓名
@@ -54,6 +54,12 @@ public class MybankEcnyWelfarewalletOpenPreconsultModel extends AlipayObject {
 	 */
 	@ApiField("phone_no")
 	private String phoneNo;
+
+	/**
+	 * 透传给钱包开立/注销的消息通知里，用于外部关联使用
+	 */
+	@ApiField("relation_id")
+	private String relationId;
 
 	/**
 	 * 用户的2088编码
@@ -108,6 +114,13 @@ public class MybankEcnyWelfarewalletOpenPreconsultModel extends AlipayObject {
 	}
 	public void setPhoneNo(String phoneNo) {
 		this.phoneNo = phoneNo;
+	}
+
+	public String getRelationId() {
+		return this.relationId;
+	}
+	public void setRelationId(String relationId) {
+		this.relationId = relationId;
 	}
 
 	public String getUid() {

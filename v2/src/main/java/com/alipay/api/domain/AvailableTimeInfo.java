@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AvailableTimeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5574485766315983627L;
+	private static final long serialVersionUID = 3591294334369243649L;
 
 	/**
 	 * limit_period_unit为WEEK_DAY，周范围内日单位[1,7]，limit_period_unit 为DAY，月范围内日单位[1,31]

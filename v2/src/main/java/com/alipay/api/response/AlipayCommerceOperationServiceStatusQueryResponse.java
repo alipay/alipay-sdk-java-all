@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.service.status.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-06 10:27:49
+ * @since 1.0, 2026-05-20 11:17:45
  */
 public class AlipayCommerceOperationServiceStatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8165356665956627296L;
+	private static final long serialVersionUID = 2628184156745452792L;
 
 	/** 
 	 * 服务在线信息查询结果，是序列化字符串，如门店列表信息、商户信息、报名信息等等

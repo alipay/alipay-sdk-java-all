@@ -1,5 +1,7 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
@@ -7,17 +9,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * 校园小荷包返回给商户的信息，包含出入金额度是否到达临界值，是否为代签约等信息
  *
  * @author auto create
- * @since 1.0, 2025-09-07 11:01:14
+ * @since 1.0, 2026-05-19 20:46:36
  */
 public class JASchoolEntityInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6295542439633155336L;
+	private static final long serialVersionUID = 1551715427454582886L;
 
 	/**
 	 * 小荷包ID
 	 */
 	@ApiField("entity_id")
 	private String entityId;
+
+	/**
+	 * 小荷包创建时间
+	 */
+	@ApiField("gmt_create")
+	private Date gmtCreate;
+
+	/**
+	 * 是否有成员
+	 */
+	@ApiField("has_member")
+	private Boolean hasMember;
 
 	/**
 	 * 校内额度是否将要到达临界值
@@ -37,11 +51,31 @@ public class JASchoolEntityInfo extends AlipayObject {
 	@ApiField("sign_withhold")
 	private Boolean signWithhold;
 
+	/**
+	 * 多人群升级时间
+	 */
+	@ApiField("upgrade_time")
+	private Date upgradeTime;
+
 	public String getEntityId() {
 		return this.entityId;
 	}
 	public void setEntityId(String entityId) {
 		this.entityId = entityId;
+	}
+
+	public Date getGmtCreate() {
+		return this.gmtCreate;
+	}
+	public void setGmtCreate(Date gmtCreate) {
+		this.gmtCreate = gmtCreate;
+	}
+
+	public Boolean getHasMember() {
+		return this.hasMember;
+	}
+	public void setHasMember(Boolean hasMember) {
+		this.hasMember = hasMember;
 	}
 
 	public Boolean getInSchoolAlert() {
@@ -63,6 +97,13 @@ public class JASchoolEntityInfo extends AlipayObject {
 	}
 	public void setSignWithhold(Boolean signWithhold) {
 		this.signWithhold = signWithhold;
+	}
+
+	public Date getUpgradeTime() {
+		return this.upgradeTime;
+	}
+	public void setUpgradeTime(Date upgradeTime) {
+		this.upgradeTime = upgradeTime;
 	}
 
 }

@@ -10,17 +10,29 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.price.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-15 17:41:29
+ * @since 1.0, 2026-05-19 16:27:45
  */
 public class AlipayTradePriceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8137683866668823468L;
+	private static final long serialVersionUID = 3693447682282719696L;
 
 	/** 
 	 * 该价格实例是否可用
 	 */
 	@ApiField("active")
 	private Boolean active;
+
+	/** 
+	 * 满足了eligibility_type的身份购买后，失效的时间。如3d = 3天， 3m = 3月
+	 */
+	@ApiField("eligibility_expire_time")
+	private String eligibilityExpireTime;
+
+	/** 
+	 * 只有满足该类型的身份才可以购买。具体的枚举值待支付宝侧分配
+	 */
+	@ApiField("eligibility_type")
+	private String eligibilityType;
 
 	/** 
 	 * 创建时间
@@ -75,6 +87,20 @@ public class AlipayTradePriceQueryResponse extends AlipayResponse {
 	}
 	public Boolean getActive( ) {
 		return this.active;
+	}
+
+	public void setEligibilityExpireTime(String eligibilityExpireTime) {
+		this.eligibilityExpireTime = eligibilityExpireTime;
+	}
+	public String getEligibilityExpireTime( ) {
+		return this.eligibilityExpireTime;
+	}
+
+	public void setEligibilityType(String eligibilityType) {
+		this.eligibilityType = eligibilityType;
+	}
+	public String getEligibilityType( ) {
+		return this.eligibilityType;
 	}
 
 	public void setGmtCreate(String gmtCreate) {

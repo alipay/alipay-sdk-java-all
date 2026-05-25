@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TemplateStyleDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5388678542232341149L;
+	private static final long serialVersionUID = 5233491142489995899L;
 
 	/**
 	 * 卡券整体背颜色，用RGB值以rgb(X,X,X)形式表示。支持以 $动态参数$ 形式的自定义动态参数传值。

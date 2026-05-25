@@ -7,11 +7,24 @@ import com.alipay.api.internal.mapping.ApiField;
  * 价格创建
  *
  * @author auto create
- * @since 1.0, 2026-05-15 17:41:39
+ * @since 1.0, 2026-05-19 16:27:45
  */
 public class AlipayTradePriceCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7883245185177922953L;
+	private static final long serialVersionUID = 3313719238244511384L;
+
+	/**
+	 * 满足了eligibility_type的身份购买后，失效的时间。如3d = 3天，
+3m = 3月
+	 */
+	@ApiField("eligibility_expire_time")
+	private String eligibilityExpireTime;
+
+	/**
+	 * 只有满足该类型的身份才可以购买。具体的枚举值待支付宝侧分配
+	 */
+	@ApiField("eligibility_type")
+	private String eligibilityType;
 
 	/**
 	 * 商户需要保存在价格模型中的元数据
@@ -42,6 +55,20 @@ public class AlipayTradePriceCreateModel extends AlipayObject {
 	 */
 	@ApiField("unit_amount")
 	private Long unitAmount;
+
+	public String getEligibilityExpireTime() {
+		return this.eligibilityExpireTime;
+	}
+	public void setEligibilityExpireTime(String eligibilityExpireTime) {
+		this.eligibilityExpireTime = eligibilityExpireTime;
+	}
+
+	public String getEligibilityType() {
+		return this.eligibilityType;
+	}
+	public void setEligibilityType(String eligibilityType) {
+		this.eligibilityType = eligibilityType;
+	}
 
 	public String getMetadata() {
 		return this.metadata;

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.ecny.welfarewallet.open.preconsult response.
  * 
  * @author auto create
- * @since 1.0, 2026-04-23 11:27:46
+ * @since 1.0, 2026-05-25 14:02:45
  */
 public class MybankEcnyWelfarewalletOpenPreconsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7569167753925368394L;
+	private static final long serialVersionUID = 7631895913315616286L;
 
 	/** 
 	 * 预咨询通过返回true，反之false
@@ -37,6 +37,12 @@ public class MybankEcnyWelfarewalletOpenPreconsultResponse extends AlipayRespons
 	 */
 	@ApiField("refuse_reason")
 	private String refuseReason;
+
+	/** 
+	 * 福利钱包id
+	 */
+	@ApiField("wallet_id")
+	private String walletId;
 
 	public void setAllowShow(Boolean allowShow) {
 		this.allowShow = allowShow;
@@ -64,6 +70,13 @@ public class MybankEcnyWelfarewalletOpenPreconsultResponse extends AlipayRespons
 	}
 	public String getRefuseReason( ) {
 		return this.refuseReason;
+	}
+
+	public void setWalletId(String walletId) {
+		this.walletId = walletId;
+	}
+	public String getWalletId( ) {
+		return this.walletId;
 	}
 
 }

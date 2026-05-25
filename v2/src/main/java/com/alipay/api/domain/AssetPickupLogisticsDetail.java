@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 上门取件物流信息查询
  *
  * @author auto create
- * @since 1.0, 2025-04-29 10:47:57
+ * @since 1.0, 2026-05-19 15:58:42
  */
 public class AssetPickupLogisticsDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5267229279588465176L;
+	private static final long serialVersionUID = 6313781996459645578L;
 
 	/**
 	 * 逆向入库指令
@@ -24,6 +24,12 @@ public class AssetPickupLogisticsDetail extends AlipayObject {
 	 */
 	@ApiField("batch_no")
 	private String batchNo;
+
+	/**
+	 * 上门取件失败
+	 */
+	@ApiField("fail_reason")
+	private String failReason;
 
 	/**
 	 * 物流信息
@@ -49,6 +55,13 @@ public class AssetPickupLogisticsDetail extends AlipayObject {
 	}
 	public void setBatchNo(String batchNo) {
 		this.batchNo = batchNo;
+	}
+
+	public String getFailReason() {
+		return this.failReason;
+	}
+	public void setFailReason(String failReason) {
+		this.failReason = failReason;
 	}
 
 	public LogisticsInfo getLogisticsInfos() {

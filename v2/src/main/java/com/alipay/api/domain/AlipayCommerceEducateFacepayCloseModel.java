@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceEducateFacepayCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3796228139768246111L;
+	private static final long serialVersionUID = 2291186984361638194L;
 
 	/**
 	 * 刷脸用户openId

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.charger.pnc.certify request
  * 
  * @author auto create
- * @since 1.0, 2025-04-14 11:12:28
+ * @since 1.0, 2026-05-20 14:37:45
  */
 public class AlipayCommerceTransportChargerPncCertifyRequest implements AlipayRequest<AlipayCommerceTransportChargerPncCertifyResponse> {
 

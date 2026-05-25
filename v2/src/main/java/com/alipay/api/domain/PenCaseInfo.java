@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PenCaseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3815591515794412453L;
+	private static final long serialVersionUID = 8564922375321966628L;
 
 	/**
 	 * 社会统一信用代码

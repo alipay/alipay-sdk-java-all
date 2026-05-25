@@ -7,17 +7,24 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电话客服（坐席）信息
  *
  * @author auto create
- * @since 1.0, 2025-05-20 17:26:08
+ * @since 1.0, 2026-05-22 13:38:14
  */
 public class CustomerServiceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6598515185827673868L;
+	private static final long serialVersionUID = 1418839624981946931L;
 
 	/**
 	 * 客服工号
 	 */
 	@ApiField("employee_no")
 	private String employeeNo;
+
+	/**
+	 * 男：10
+女：20
+	 */
+	@ApiField("gender")
+	private String gender;
 
 	/**
 	 * 客服工作手机号
@@ -36,6 +43,13 @@ public class CustomerServiceInfo extends AlipayObject {
 	}
 	public void setEmployeeNo(String employeeNo) {
 		this.employeeNo = employeeNo;
+	}
+
+	public String getGender() {
+		return this.gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
 	}
 
 	public String getMobile() {

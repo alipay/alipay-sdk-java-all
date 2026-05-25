@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CombinePrizeResult extends AlipayObject {
 
-	private static final long serialVersionUID = 3511532648937116469L;
+	private static final long serialVersionUID = 3492539958584271195L;
 
 	/**
 	 * 活动ID

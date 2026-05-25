@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量代发转账接口
  *
  * @author auto create
- * @since 1.0, 2025-11-17 16:28:35
+ * @since 1.0, 2026-05-22 14:56:03
  */
 public class AlipayFundBatchUniTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6813283395121687514L;
+	private static final long serialVersionUID = 5699423794594825724L;
 
 	/**
 	 * 业务场景。不同场景值不同，具体值联系支付宝确认。
@@ -93,8 +93,9 @@ public class AlipayFundBatchUniTransferModel extends AlipayObject {
 	/**
 	 * 转账场景信息，包含转账场景信息类型和转账场景信息描述。需按该笔转账使用的转账场景准确填写
 	 */
-	@ApiField("transfer_scene_report_infos")
-	private TransferSceneReportInfo transferSceneReportInfos;
+	@ApiListField("transfer_scene_report_infos")
+	@ApiField("transfer_scene_report_info")
+	private List<TransferSceneReportInfo> transferSceneReportInfos;
 
 	public String getBizScene() {
 		return this.bizScene;
@@ -180,10 +181,10 @@ public class AlipayFundBatchUniTransferModel extends AlipayObject {
 		this.transferSceneName = transferSceneName;
 	}
 
-	public TransferSceneReportInfo getTransferSceneReportInfos() {
+	public List<TransferSceneReportInfo> getTransferSceneReportInfos() {
 		return this.transferSceneReportInfos;
 	}
-	public void setTransferSceneReportInfos(TransferSceneReportInfo transferSceneReportInfos) {
+	public void setTransferSceneReportInfos(List<TransferSceneReportInfo> transferSceneReportInfos) {
 		this.transferSceneReportInfos = transferSceneReportInfos;
 	}
 

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 跟进状态变更通知
  *
  * @author auto create
- * @since 1.0, 2026-03-16 14:44:30
+ * @since 1.0, 2026-05-22 13:38:14
  */
 public class XingheLendassistCarfinFollowupstatuschangeNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5764995516413561213L;
+	private static final long serialVersionUID = 4548846124916881749L;
 
 	/**
 	 * 星河侧唯一申请单号

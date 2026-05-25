@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechOceanbaseObglobalEmployeeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2643939378296975143L;
+	private static final long serialVersionUID = 6814468694668493727L;
 
 	/**
 	 * 员工身份

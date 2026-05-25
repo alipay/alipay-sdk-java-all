@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DateTabs extends AlipayObject {
 
-	private static final long serialVersionUID = 3425458891252471628L;
+	private static final long serialVersionUID = 4587817444922346119L;
 
 	/**
 	 * x坐标，单位点（point）

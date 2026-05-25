@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMerchantWeikeInvoiceNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4275767651128131353L;
+	private static final long serialVersionUID = 6268867852753125356L;
 
 	/**
 	 * 申请ID

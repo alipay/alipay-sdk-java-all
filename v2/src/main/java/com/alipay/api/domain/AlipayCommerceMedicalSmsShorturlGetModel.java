@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 生成短信的投放短链
  *
  * @author auto create
- * @since 1.0, 2026-04-27 10:36:22
+ * @since 1.0, 2026-05-22 16:30:12
  */
 public class AlipayCommerceMedicalSmsShorturlGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8639144592972526996L;
+	private static final long serialVersionUID = 3338488972448516475L;
+
+	/**
+	 * 如果身份类型是IDENTITY_CARD，这个必填
+	 */
+	@ApiField("agent_id")
+	private String agentId;
 
 	/**
 	 * 手机号
@@ -24,6 +30,18 @@ public class AlipayCommerceMedicalSmsShorturlGetModel extends AlipayObject {
 	 */
 	@ApiField("identity_type")
 	private String identityType;
+
+	/**
+	 * 传入的手机号，如果有以这个手机号为主，如果用户没有绑定这个手机号还是取登陆时间最近的手机号
+	 */
+	@ApiField("input_phone")
+	private String inputPhone;
+
+	/**
+	 * 真实姓名，如果身份类型是IDENTITY_CARD，这个必填
+	 */
+	@ApiField("name")
+	private String name;
 
 	/**
 	 * 链接拼接参数，具体可以参考系分文档
@@ -44,10 +62,23 @@ public class AlipayCommerceMedicalSmsShorturlGetModel extends AlipayObject {
 	private String scene;
 
 	/**
+	 * 渠道
+	 */
+	@ApiField("source")
+	private String source;
+
+	/**
 	 * 门诊报告
 	 */
 	@ApiField("sub_scene")
 	private String subScene;
+
+	public String getAgentId() {
+		return this.agentId;
+	}
+	public void setAgentId(String agentId) {
+		this.agentId = agentId;
+	}
 
 	public String getIdentityId() {
 		return this.identityId;
@@ -61,6 +92,20 @@ public class AlipayCommerceMedicalSmsShorturlGetModel extends AlipayObject {
 	}
 	public void setIdentityType(String identityType) {
 		this.identityType = identityType;
+	}
+
+	public String getInputPhone() {
+		return this.inputPhone;
+	}
+	public void setInputPhone(String inputPhone) {
+		this.inputPhone = inputPhone;
+	}
+
+	public String getName() {
+		return this.name;
+	}
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public String getParamInfo() {
@@ -82,6 +127,13 @@ public class AlipayCommerceMedicalSmsShorturlGetModel extends AlipayObject {
 	}
 	public void setScene(String scene) {
 		this.scene = scene;
+	}
+
+	public String getSource() {
+		return this.source;
+	}
+	public void setSource(String source) {
+		this.source = source;
 	}
 
 	public String getSubScene() {

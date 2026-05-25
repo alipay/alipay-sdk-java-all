@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TechriskRiskaiOpsgptTaskasyncSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8412812966181357362L;
+	private static final long serialVersionUID = 1621213437888653119L;
 
 	/**
 	 * 业务需求请求的具体智能体id，不同的智能体可以完成不同的工作，id 由服务提供方分配。

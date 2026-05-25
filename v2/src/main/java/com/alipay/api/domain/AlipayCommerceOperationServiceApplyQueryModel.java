@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数字化解决方案服务报名进度查询接口
  *
  * @author auto create
- * @since 1.0, 2026-05-06 10:27:49
+ * @since 1.0, 2026-05-20 11:12:44
  */
 public class AlipayCommerceOperationServiceApplyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1452919167386863196L;
+	private static final long serialVersionUID = 6251384489748581885L;
 
 	/**
 	 * 报名记录id

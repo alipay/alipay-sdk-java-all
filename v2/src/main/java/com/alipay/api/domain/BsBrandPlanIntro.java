@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BsBrandPlanIntro extends AlipayObject {
 
-	private static final long serialVersionUID = 3275735947458588928L;
+	private static final long serialVersionUID = 7559263912995815639L;
 
 	/**
 	 * 联营-计划-计划描述

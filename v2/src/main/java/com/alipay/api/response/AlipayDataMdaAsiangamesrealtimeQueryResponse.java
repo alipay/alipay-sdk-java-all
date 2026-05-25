@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataMdaAsiangamesrealtimeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4119979644397748697L;
+	private static final long serialVersionUID = 1258231278375834278L;
 
 	/** 
 	 * 今日亚运路线完成人数

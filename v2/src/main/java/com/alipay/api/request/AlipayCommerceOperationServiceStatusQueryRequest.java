@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.service.status.query request
  * 
  * @author auto create
- * @since 1.0, 2026-05-06 10:27:49
+ * @since 1.0, 2026-05-20 11:17:45
  */
 public class AlipayCommerceOperationServiceStatusQueryRequest implements AlipayRequest<AlipayCommerceOperationServiceStatusQueryResponse> {
 

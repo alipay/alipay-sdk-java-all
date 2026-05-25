@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IndrISVPaymentInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6494749575524553323L;
+	private static final long serialVersionUID = 5716715469152769393L;
 
 	/**
 	 * 缴费金额,对应币种的最小单位

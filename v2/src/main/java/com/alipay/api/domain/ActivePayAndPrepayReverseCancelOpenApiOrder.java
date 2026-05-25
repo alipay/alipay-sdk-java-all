@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ActivePayAndPrepayReverseCancelOpenApiOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 7259513174222155861L;
+	private static final long serialVersionUID = 4778869627572525939L;
 
 	/**
 	 * 撤销金额 一元=100分

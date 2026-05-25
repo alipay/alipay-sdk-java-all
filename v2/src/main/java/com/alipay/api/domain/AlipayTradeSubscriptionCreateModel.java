@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订阅创建
  *
  * @author auto create
- * @since 1.0, 2026-05-12 01:17:48
+ * @since 1.0, 2026-05-23 15:17:49
  */
 public class AlipayTradeSubscriptionCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4837478942276992858L;
+	private static final long serialVersionUID = 5341571387957349246L;
 
 	/**
 	 * 客户id，客户创建接口（alipay.trade.customer.create）返回的客户id
 	 */
 	@ApiField("customer_id")
 	private String customerId;
+
+	/**
+	 * 扩展参数
+	 */
+	@ApiField("extend_params")
+	private String extendParams;
 
 	/**
 	 * null
@@ -65,6 +71,13 @@ public class AlipayTradeSubscriptionCreateModel extends AlipayObject {
 	}
 	public void setCustomerId(String customerId) {
 		this.customerId = customerId;
+	}
+
+	public String getExtendParams() {
+		return this.extendParams;
+	}
+	public void setExtendParams(String extendParams) {
+		this.extendParams = extendParams;
 	}
 
 	public List<SubscriptionItem> getItems() {

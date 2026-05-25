@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 校园小荷包账号咨询接口
  *
  * @author auto create
- * @since 1.0, 2025-09-07 11:01:14
+ * @since 1.0, 2026-05-19 20:46:36
  */
 public class AlipayFundJointaccountSchoolAccountConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5174926389819691338L;
+	private static final long serialVersionUID = 8113692788933462479L;
 
 	/**
 	 * 业务场景
 	 */
 	@ApiField("biz_scene")
 	private String bizScene;
+
+	/**
+	 * 小荷包id
+	 */
+	@ApiField("entity_id")
+	private String entityId;
 
 	/**
 	 * 签约校园刷脸时的faceId
@@ -36,6 +42,12 @@ public class AlipayFundJointaccountSchoolAccountConsultModel extends AlipayObjec
 	 */
 	@ApiField("master_user_id")
 	private String masterUserId;
+
+	/**
+	 * 仅需要实体信息
+	 */
+	@ApiField("only_need_entity_info")
+	private Boolean onlyNeedEntityInfo;
 
 	/**
 	 * 产品码
@@ -74,6 +86,13 @@ public class AlipayFundJointaccountSchoolAccountConsultModel extends AlipayObjec
 		this.bizScene = bizScene;
 	}
 
+	public String getEntityId() {
+		return this.entityId;
+	}
+	public void setEntityId(String entityId) {
+		this.entityId = entityId;
+	}
+
 	public String getFaceId() {
 		return this.faceId;
 	}
@@ -93,6 +112,13 @@ public class AlipayFundJointaccountSchoolAccountConsultModel extends AlipayObjec
 	}
 	public void setMasterUserId(String masterUserId) {
 		this.masterUserId = masterUserId;
+	}
+
+	public Boolean getOnlyNeedEntityInfo() {
+		return this.onlyNeedEntityInfo;
+	}
+	public void setOnlyNeedEntityInfo(Boolean onlyNeedEntityInfo) {
+		this.onlyNeedEntityInfo = onlyNeedEntityInfo;
 	}
 
 	public String getProductCode() {

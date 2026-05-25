@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 即插即充预下单同步
  *
  * @author auto create
- * @since 1.0, 2025-12-19 14:17:13
+ * @since 1.0, 2026-05-20 14:32:31
  */
 public class AlipayCommerceTransportChargerPayPrecreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7711758385381714652L;
+	private static final long serialVersionUID = 5692297259212387719L;
 
 	/**
 	 * 互联互通充电枪（设备）ID，用于关联用户充电使用的充电站

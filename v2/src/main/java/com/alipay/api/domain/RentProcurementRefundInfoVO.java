@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 退款信息
  *
  * @author auto create
- * @since 1.0, 2026-05-18 10:15:56
+ * @since 1.0, 2026-05-22 14:17:48
  */
 public class RentProcurementRefundInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2821683548333241683L;
+	private static final long serialVersionUID = 2784769982397191994L;
 
 	/**
 	 * null

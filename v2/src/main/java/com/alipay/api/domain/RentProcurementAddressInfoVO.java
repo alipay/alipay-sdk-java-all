@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 收货信息
  *
  * @author auto create
- * @since 1.0, 2026-05-18 10:15:56
+ * @since 1.0, 2026-05-22 14:17:48
  */
 public class RentProcurementAddressInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3515839495234282179L;
+	private static final long serialVersionUID = 5525981782742285558L;
 
 	/**
 	 * 收货地址信息

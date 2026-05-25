@@ -4,6 +4,7 @@ import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.RentBillOrderDetailDto;
+import com.alipay.api.domain.RepaymentDetailDto;
 import com.alipay.api.domain.RentBillRoyaltyDetailDto;
 
 import com.alipay.api.AlipayResponse;
@@ -12,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.rent.order.bill.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-04-29 15:02:00
+ * @since 1.0, 2026-05-25 16:12:45
  */
 public class AlipayCommerceRentOrderBillQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8222294671836258562L;
+	private static final long serialVersionUID = 4892846553859485579L;
 
 	/** 
 	 * 交易组件订单号
@@ -30,6 +31,13 @@ public class AlipayCommerceRentOrderBillQueryResponse extends AlipayResponse {
 	@ApiListField("order_detail_list")
 	@ApiField("rent_bill_order_detail_dto")
 	private List<RentBillOrderDetailDto> orderDetailList;
+
+	/** 
+	 * 还款明细数据
+	 */
+	@ApiListField("repayment_detail_list")
+	@ApiField("repayment_detail_dto")
+	private List<RepaymentDetailDto> repaymentDetailList;
 
 	/** 
 	 * 订单关联分账明细列表
@@ -62,6 +70,13 @@ public class AlipayCommerceRentOrderBillQueryResponse extends AlipayResponse {
 	}
 	public List<RentBillOrderDetailDto> getOrderDetailList( ) {
 		return this.orderDetailList;
+	}
+
+	public void setRepaymentDetailList(List<RepaymentDetailDto> repaymentDetailList) {
+		this.repaymentDetailList = repaymentDetailList;
+	}
+	public List<RepaymentDetailDto> getRepaymentDetailList( ) {
+		return this.repaymentDetailList;
 	}
 
 	public void setRoyaltyDetailList(List<RentBillRoyaltyDetailDto> royaltyDetailList) {

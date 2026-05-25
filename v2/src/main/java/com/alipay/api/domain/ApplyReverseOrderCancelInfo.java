@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ApplyReverseOrderCancelInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6719254284769974343L;
+	private static final long serialVersionUID = 1325592855221934466L;
 
 	/**
 	 * 指令id列表

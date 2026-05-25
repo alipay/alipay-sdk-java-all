@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RentPayQueryBillInfoResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 6856175453562358371L;
+	private static final long serialVersionUID = 3452556181648846963L;
 
 	/**
 	 * 公积金支付返回

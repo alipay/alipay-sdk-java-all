@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询即插即充开通状态
  *
  * @author auto create
- * @since 1.0, 2025-04-10 12:00:50
+ * @since 1.0, 2026-05-20 14:32:46
  */
 public class AlipayCommerceTransportChargerPncCertifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3288412949169472946L;
+	private static final long serialVersionUID = 8446238561282644837L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识

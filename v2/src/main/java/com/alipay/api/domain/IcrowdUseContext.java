@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IcrowdUseContext extends AlipayObject {
 
-	private static final long serialVersionUID = 8426979395848392639L;
+	private static final long serialVersionUID = 4521689675481796192L;
 
 	/**
 	 * 是否开启debug模式

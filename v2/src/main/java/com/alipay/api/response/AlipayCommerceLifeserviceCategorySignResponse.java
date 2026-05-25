@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.lifeservice.category.sign response.
  * 
  * @author auto create
- * @since 1.0, 2026-04-07 19:42:44
+ * @since 1.0, 2026-05-25 16:01:51
  */
 public class AlipayCommerceLifeserviceCategorySignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3123562476756871714L;
+	private static final long serialVersionUID = 8196922266216241787L;
 
 	
 

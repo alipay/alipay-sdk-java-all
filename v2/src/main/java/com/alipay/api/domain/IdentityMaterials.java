@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商保码-理赔案件申请-申请材料
  *
  * @author auto create
- * @since 1.0, 2026-03-16 19:41:39
+ * @since 1.0, 2026-05-21 10:29:40
  */
 public class IdentityMaterials extends AlipayObject {
 
-	private static final long serialVersionUID = 1822233564592486834L;
+	private static final long serialVersionUID = 4312177657972923924L;
 
 	/**
 	 * 材料补充类型

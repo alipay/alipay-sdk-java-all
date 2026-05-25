@@ -8,20 +8,21 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.subscription.modify response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-18 14:10:21
+ * @since 1.0, 2026-05-23 15:17:48
  */
 public class AlipayTradeSubscriptionModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2191886434621847393L;
+	private static final long serialVersionUID = 3841112583266511868L;
 
 	/** 
-	 * 长链，适用于跳转拉起支付宝端
+	 * 长链，适用于跳转拉起支付宝端，升级/降级/取消后撤销场景会返回
 	 */
 	@ApiField("alipay_jump_schema")
 	private String alipayJumpSchema;
 
 	/** 
 	 * 短链，适用于生成二维码
+长链，升级/降级/取消后撤销场景会返回
 	 */
 	@ApiField("alipay_schema")
 	private String alipaySchema;
@@ -43,6 +44,18 @@ public class AlipayTradeSubscriptionModifyResponse extends AlipayResponse {
 	 */
 	@ApiField("promotion_info")
 	private String promotionInfo;
+
+	/** 
+	 * 退款金额，单位分
+	 */
+	@ApiField("refund_amount")
+	private Long refundAmount;
+
+	/** 
+	 * 退款业务单号
+	 */
+	@ApiField("refund_order_id")
+	private String refundOrderId;
 
 	/** 
 	 * 订阅id
@@ -83,6 +96,20 @@ public class AlipayTradeSubscriptionModifyResponse extends AlipayResponse {
 	}
 	public String getPromotionInfo( ) {
 		return this.promotionInfo;
+	}
+
+	public void setRefundAmount(Long refundAmount) {
+		this.refundAmount = refundAmount;
+	}
+	public Long getRefundAmount( ) {
+		return this.refundAmount;
+	}
+
+	public void setRefundOrderId(String refundOrderId) {
+		this.refundOrderId = refundOrderId;
+	}
+	public String getRefundOrderId( ) {
+		return this.refundOrderId;
 	}
 
 	public void setSubscriptionId(String subscriptionId) {

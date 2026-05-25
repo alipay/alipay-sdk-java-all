@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 上门取件物流信息回传接口
  *
  * @author auto create
- * @since 1.0, 2025-04-29 10:47:57
+ * @since 1.0, 2026-05-19 15:58:43
  */
 public class AntMerchantExpandLogisticUploadSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7461868638676374744L;
+	private static final long serialVersionUID = 5548588175348176594L;
 
 	/**
 	 * 回收场景上门取件后回传上门取件状态以及上门取件物流信息

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数字化解决方案服务状态查询接口
  *
  * @author auto create
- * @since 1.0, 2026-05-06 10:27:49
+ * @since 1.0, 2026-05-20 11:17:45
  */
 public class AlipayCommerceOperationServiceStatusQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3583781129755498422L;
+	private static final long serialVersionUID = 1732524384896226934L;
 
 	/**
 	 * 业务信息，是序列化字符串，如门店列表信息、商户信息、报名信息等等

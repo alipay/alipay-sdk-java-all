@@ -10,7 +10,7 @@ import com.alipay.api.AlipayObject;
  */
 public class AlipayOpenWanxinQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6549634545629898381L;
+	private static final long serialVersionUID = 1779219963546898425L;
 
 	
 

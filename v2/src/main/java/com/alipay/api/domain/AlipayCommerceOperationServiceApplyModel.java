@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数字化解决方案服务报名接口
  *
  * @author auto create
- * @since 1.0, 2026-05-11 15:42:48
+ * @since 1.0, 2026-05-20 11:12:45
  */
 public class AlipayCommerceOperationServiceApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1341185993837329555L;
+	private static final long serialVersionUID = 1729284683182567419L;
 
 	/**
 	 * 序列化后的业务信息,如门店列表信息、商户信息、报名信息等等

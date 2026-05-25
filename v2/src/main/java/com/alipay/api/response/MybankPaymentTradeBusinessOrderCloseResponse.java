@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankPaymentTradeBusinessOrderCloseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6657296161535579162L;
+	private static final long serialVersionUID = 5485528789728693677L;
 
 	/** 
 	 * 网商订单号

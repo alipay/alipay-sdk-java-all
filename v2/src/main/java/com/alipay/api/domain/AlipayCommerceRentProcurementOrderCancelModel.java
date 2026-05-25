@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁采购取消
  *
  * @author auto create
- * @since 1.0, 2026-05-18 10:16:45
+ * @since 1.0, 2026-05-22 16:22:48
  */
 public class AlipayCommerceRentProcurementOrderCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1145218849958688899L;
+	private static final long serialVersionUID = 7863133416528154568L;
 
 	/**
 	 * 取消原因码

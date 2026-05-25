@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.jointaccount.school.account.consult response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-12 10:24:50
+ * @since 1.0, 2026-05-19 20:47:44
  */
 public class AlipayFundJointaccountSchoolAccountConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6837443278433519496L;
+	private static final long serialVersionUID = 8352295454789453637L;
 
 	/** 
 	 * 返回学生是否加小荷包，若学生的证件号、姓名等信息不匹配则返回false

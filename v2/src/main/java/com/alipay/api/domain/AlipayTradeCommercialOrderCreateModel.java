@@ -7,17 +7,29 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商业订单创建接口
  *
  * @author auto create
- * @since 1.0, 2026-05-18 10:04:31
+ * @since 1.0, 2026-05-23 15:17:49
  */
 public class AlipayTradeCommercialOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6667776945676318167L;
+	private static final long serialVersionUID = 6177686537894777228L;
+
+	/**
+	 * agent类型，当intiator_type=AGENT时必传
+	 */
+	@ApiField("agent_type")
+	private String agentType;
 
 	/**
 	 * 本次支付关联的客户ID
 	 */
 	@ApiField("customer_id")
 	private String customerId;
+
+	/**
+	 * 支付发起方
+	 */
+	@ApiField("initiator_type")
+	private String initiatorType;
 
 	/**
 	 * 商品列表页code，在后台配置获取
@@ -43,11 +55,25 @@ public class AlipayTradeCommercialOrderCreateModel extends AlipayObject {
 	@ApiField("ui_mode")
 	private String uiMode;
 
+	public String getAgentType() {
+		return this.agentType;
+	}
+	public void setAgentType(String agentType) {
+		this.agentType = agentType;
+	}
+
 	public String getCustomerId() {
 		return this.customerId;
 	}
 	public void setCustomerId(String customerId) {
 		this.customerId = customerId;
+	}
+
+	public String getInitiatorType() {
+		return this.initiatorType;
+	}
+	public void setInitiatorType(String initiatorType) {
+		this.initiatorType = initiatorType;
 	}
 
 	public String getPageCode() {

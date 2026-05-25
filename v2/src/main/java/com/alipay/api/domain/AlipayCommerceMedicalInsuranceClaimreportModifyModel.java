@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 更新理赔单状态
  *
  * @author auto create
- * @since 1.0, 2026-03-18 09:43:32
+ * @since 1.0, 2026-05-21 10:29:40
  */
 public class AlipayCommerceMedicalInsuranceClaimreportModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7498888768116124466L;
+	private static final long serialVersionUID = 7128474636385713561L;
 
 	/**
 	 * 账号信息

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.privilegerecord.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-02-03 19:42:43
+ * @since 1.0, 2026-05-22 10:33:20
  */
 public class AlipayUserPrivilegerecordQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6377446226329671284L;
+	private static final long serialVersionUID = 7378115526619588874L;
 
 	/** 
 	 * 特权使用状态

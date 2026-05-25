@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询组合品标品列表接口
  *
  * @author auto create
- * @since 1.0, 2026-04-23 16:12:45
+ * @since 1.0, 2026-05-20 21:02:50
  */
 public class AlipayCommerceMedicalExaminationBundlelistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5164816782964668237L;
+	private static final long serialVersionUID = 7798141594637392636L;
 
 	/**
 	 * 标签编码(对应是检查类型或者检验类型)
