@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.subscription.modify response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-23 15:17:48
+ * @since 1.0, 2026-05-25 22:12:45
  */
 public class AlipayTradeSubscriptionModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3841112583266511868L;
+	private static final long serialVersionUID = 6281161426266979289L;
 
 	/** 
 	 * 长链，适用于跳转拉起支付宝端，升级/降级/取消后撤销场景会返回
@@ -22,13 +22,13 @@ public class AlipayTradeSubscriptionModifyResponse extends AlipayResponse {
 
 	/** 
 	 * 短链，适用于生成二维码
-长链，升级/降级/取消后撤销场景会返回
+升级/降级/取消后撤销场景会返回
 	 */
 	@ApiField("alipay_schema")
 	private String alipaySchema;
 
 	/** 
-	 * 订阅支付单ID
+	 * 升级订阅时生成的支付请求单号
 	 */
 	@ApiField("order_no")
 	private String orderNo;
@@ -40,25 +40,25 @@ public class AlipayTradeSubscriptionModifyResponse extends AlipayResponse {
 	private Long payAmount;
 
 	/** 
-	 * 优惠券信息
+	 * 订阅修改时若传入优惠，生成的优惠信息
 	 */
 	@ApiField("promotion_info")
 	private String promotionInfo;
 
 	/** 
-	 * 退款金额，单位分
+	 * 退款金额，单位分，取消并退款场景下生成
 	 */
 	@ApiField("refund_amount")
 	private Long refundAmount;
 
 	/** 
-	 * 退款业务单号
+	 * 退款业务单号，取消并退款场景下生成
 	 */
 	@ApiField("refund_order_id")
 	private String refundOrderId;
 
 	/** 
-	 * 订阅id
+	 * 订阅id，订阅唯一标识
 	 */
 	@ApiField("subscription_id")
 	private String subscriptionId;

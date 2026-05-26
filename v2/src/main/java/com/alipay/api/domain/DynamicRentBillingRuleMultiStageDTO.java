@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class DynamicRentBillingRuleMultiStageDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6671491147198733271L;
+	private static final long serialVersionUID = 3112539134478164517L;
 
 	/**
 	 * 计费上限(单位元),最多2位小数

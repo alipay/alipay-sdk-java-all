@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HonorBankCardDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4369968545886888926L;
+	private static final long serialVersionUID = 6369242799985593514L;
 
 	/**
 	 * 支付宝绑卡唯一id

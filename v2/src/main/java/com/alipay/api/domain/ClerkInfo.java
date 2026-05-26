@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ClerkInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2151195181549243531L;
+	private static final long serialVersionUID = 5518297196997981296L;
 
 	/**
 	 * 开票人姓名

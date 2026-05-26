@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-05-25 09:46:45
+ * @since 1.0, 2026-05-25 19:42:46
  */
 public class SolutionVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8846659257122136491L;
+	private static final long serialVersionUID = 4487751276312948382L;
 
 	/**
 	 * 解决方案实例
 	 */
 	@ApiField("solution_code")
 	private String solutionCode;
+
+	/**
+	 * 方案配置code
+	 */
+	@ApiField("solution_config_code")
+	private String solutionConfigCode;
 
 	/**
 	 * 解决方案名称
@@ -30,6 +36,13 @@ public class SolutionVO extends AlipayObject {
 	}
 	public void setSolutionCode(String solutionCode) {
 		this.solutionCode = solutionCode;
+	}
+
+	public String getSolutionConfigCode() {
+		return this.solutionConfigCode;
+	}
+	public void setSolutionConfigCode(String solutionConfigCode) {
+		this.solutionConfigCode = solutionConfigCode;
 	}
 
 	public String getSolutionName() {

@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建售后
  *
  * @author auto create
- * @since 1.0, 2026-04-17 21:07:08
+ * @since 1.0, 2026-05-25 20:45:54
  */
 public class AlipayOpenMiniOrderAftersaleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4511536639982283625L;
+	private static final long serialVersionUID = 3757746347683598347L;
 
 	/**
 	 * 售后原因code。
 	 */
 	@ApiField("aftersale_reason_code")
 	private String aftersaleReasonCode;
+
+	/**
+	 * 店铺ID
+	 */
+	@ApiField("astore_id")
+	private String astoreId;
 
 	/**
 	 * 需要退款的凭证信息
@@ -102,6 +108,13 @@ order_id、out_order_id，二选一
 	}
 	public void setAftersaleReasonCode(String aftersaleReasonCode) {
 		this.aftersaleReasonCode = aftersaleReasonCode;
+	}
+
+	public String getAstoreId() {
+		return this.astoreId;
+	}
+	public void setAstoreId(String astoreId) {
+		this.astoreId = astoreId;
 	}
 
 	public List<CertificateInfoDTO> getCertificateInfos() {

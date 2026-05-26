@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EcTradeIdentityAccountInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2497684975246843378L;
+	private static final long serialVersionUID = 1259312454422492121L;
 
 	/**
 	 * 门店间连收单账号认证绑定的UID

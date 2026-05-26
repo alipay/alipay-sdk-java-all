@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPayAggrepayOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5325581754282182268L;
+	private static final long serialVersionUID = 8742456245264327891L;
 
 	/**
 	 * 微信用户openid

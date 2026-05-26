@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.subscription.create response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-23 15:17:49
+ * @since 1.0, 2026-05-25 22:12:45
  */
 public class AlipayTradeSubscriptionCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2785653894699362282L;
+	private static final long serialVersionUID = 6749422245873965377L;
 
 	/** 
 	 * 长链，适用于跳转拉起支付宝端
@@ -27,7 +27,7 @@ public class AlipayTradeSubscriptionCreateResponse extends AlipayResponse {
 	private String alipaySchema;
 
 	/** 
-	 * 订阅支付单ID
+	 * 创建订阅时生成的支付请求单号
 	 */
 	@ApiField("order_no")
 	private String orderNo;
@@ -39,25 +39,25 @@ public class AlipayTradeSubscriptionCreateResponse extends AlipayResponse {
 	private Long payAmount;
 
 	/** 
-	 * 订阅优惠信息
+	 * 订阅创建生成的优惠信息
 	 */
 	@ApiField("promotion_info")
 	private String promotionInfo;
 
 	/** 
-	 * 订阅id
+	 * 订阅id，本次订阅操作生成的唯一标识
 	 */
 	@ApiField("subscription_id")
 	private String subscriptionId;
 
 	/** 
-	 * 格式 yyyy-MM-dd HH:mm:ss
+	 * 试用期结束时间，格式 yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("trial_end")
 	private String trialEnd;
 
 	/** 
-	 * 格式 yyyy-MM-dd HH:mm:ss
+	 * 试用期开始时间，格式 yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("trial_start")
 	private String trialStart;

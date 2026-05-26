@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EcoApplySchedule extends AlipayObject {
 
-	private static final long serialVersionUID = 1815482161718417877L;
+	private static final long serialVersionUID = 4662387984737394253L;
 
 	/**
 	 * 批语

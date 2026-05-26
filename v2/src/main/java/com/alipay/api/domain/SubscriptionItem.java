@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-05-23 15:17:48
+ * @since 1.0, 2026-05-25 22:12:45
  */
 public class SubscriptionItem extends AlipayObject {
 
-	private static final long serialVersionUID = 5328323916351659526L;
+	private static final long serialVersionUID = 2423484221755216927L;
 
 	/**
-	 * 优惠券ID
+	 * 营销创建接口（alipay.trade.promotion.coupon.create）返回的优惠id，使用方式详见具体场景接入指南
 	 */
 	@ApiField("coupon_id")
 	private String couponId;
@@ -32,19 +32,19 @@ public class SubscriptionItem extends AlipayObject {
 	private String priceId;
 
 	/**
-	 * 购买的商品数量，目前仅在订阅创建（alipay.trade.subscription.create）场景按需传入该参数，使用方式详见具体场景接入指南。
+	 * 购买的商品数量，目前仅在席位商品的订阅创建（alipay.trade.subscription.create）场景按需传入该参数，使用方式详见具体场景接入指南。
 	 */
 	@ApiField("quantity")
 	private String quantity;
 
 	/**
-	 * 目前仅用于订阅修改（alipay.trade.subscription.modify）场景下指定当前已生效的订阅项中商品的数量，使用方式详见具体场景接入指南。
+	 * 目前仅用于席位商品的订阅修改（alipay.trade.subscription.modify）场景下指定当前已生效的订阅项中商品的数量，使用方式详见具体场景接入指南。
 	 */
 	@ApiField("source_quantity")
 	private String sourceQuantity;
 
 	/**
-	 * 目前仅用于订阅修改（alipay.trade.subscription.modify）场景下指定订阅项的目标商品数量，使用方式详见具体场景接入指南。
+	 * 目前仅用于席位商品的订阅修改（alipay.trade.subscription.modify）场景下指定订阅项的目标商品数量，使用方式详见具体场景接入指南。
 	 */
 	@ApiField("target_quantity")
 	private String targetQuantity;

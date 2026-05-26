@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.acommunication.distribution.flowsmscode.send request
  * 
  * @author auto create
- * @since 1.0, 2026-05-18 18:03:43
+ * @since 1.0, 2026-05-25 17:51:09
  */
 public class AlipayCommerceAcommunicationDistributionFlowsmscodeSendRequest implements AlipayRequest<AlipayCommerceAcommunicationDistributionFlowsmscodeSendResponse> {
 

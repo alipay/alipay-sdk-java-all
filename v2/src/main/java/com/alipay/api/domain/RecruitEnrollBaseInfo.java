@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RecruitEnrollBaseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7543945397224184734L;
+	private static final long serialVersionUID = 4663153217834536339L;
 
 	/**
 	 * 报名时间。

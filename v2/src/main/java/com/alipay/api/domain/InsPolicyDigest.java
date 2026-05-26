@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InsPolicyDigest extends AlipayObject {
 
-	private static final long serialVersionUID = 5784662532885341262L;
+	private static final long serialVersionUID = 2714115481825876548L;
 
 	/**
 	 * 保单失效时间

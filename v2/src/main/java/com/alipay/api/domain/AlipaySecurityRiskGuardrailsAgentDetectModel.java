@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipaySecurityRiskGuardrailsAgentDetectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4553776968836843313L;
+	private static final long serialVersionUID = 8619845439198157751L;
 
 	/**
 	 * agent标识

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMerchantcardTailpaymentCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1155554276358866873L;
+	private static final long serialVersionUID = 5367771539418796168L;
 
 	/**
 	 * 取消原因

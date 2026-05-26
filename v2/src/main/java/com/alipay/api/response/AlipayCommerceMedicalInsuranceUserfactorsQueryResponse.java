@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.insurance.userfactors.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-14 11:22:51
+ * @since 1.0, 2026-05-26 18:27:48
  */
 public class AlipayCommerceMedicalInsuranceUserfactorsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7846461358653488676L;
+	private static final long serialVersionUID = 8554997532149353918L;
 
 	/** 
 	 * 证件号，例如：身份证证件号
@@ -25,6 +25,12 @@ public class AlipayCommerceMedicalInsuranceUserfactorsQueryResponse extends Alip
 	 */
 	@ApiField("cert_type")
 	private String certType;
+
+	/** 
+	 * 扩展信息
+	 */
+	@ApiField("ext_info")
+	private String extInfo;
 
 	/** 
 	 * 手机号
@@ -62,6 +68,13 @@ public class AlipayCommerceMedicalInsuranceUserfactorsQueryResponse extends Alip
 	}
 	public String getCertType( ) {
 		return this.certType;
+	}
+
+	public void setExtInfo(String extInfo) {
+		this.extInfo = extInfo;
+	}
+	public String getExtInfo( ) {
+		return this.extInfo;
 	}
 
 	public void setMobile(String mobile) {

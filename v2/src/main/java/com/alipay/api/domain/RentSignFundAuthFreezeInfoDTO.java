@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RentSignFundAuthFreezeInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5122987836154199594L;
+	private static final long serialVersionUID = 7854358731252712963L;
 
 	/**
 	 * 免押风控评估金额，即租押分离能力的押金评估金额。单位：元，精确到小数点后两位

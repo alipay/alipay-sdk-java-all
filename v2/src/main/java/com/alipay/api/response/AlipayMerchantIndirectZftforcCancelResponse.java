@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMerchantIndirectZftforcCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1727799513632629199L;
+	private static final long serialVersionUID = 6287637772155285596L;
 
 	/** 
 	 * 撤销状态

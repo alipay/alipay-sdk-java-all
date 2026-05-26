@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenAppOpenidApplyorderCheckavailableModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8138662311383388317L;
+	private static final long serialVersionUID = 8427584272822996654L;
 
 	/**
 	 * 指定查询的工单，不填则查询最近的10条工单

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询原始订单关联的尾款单列表
  *
  * @author auto create
- * @since 1.0, 2026-05-15 16:27:45
+ * @since 1.0, 2026-05-26 14:07:45
  */
 public class AlipayCommerceMerchantcardTailpaymentQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1613719587698854586L;
+	private static final long serialVersionUID = 5474216438383616745L;
 
 	/**
 	 * 预约品必填； 非预约品，不用填

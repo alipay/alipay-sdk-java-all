@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-04-24 10:32:45
+ * @since 1.0, 2026-05-26 18:22:48
  */
 public class InsuranceMaterialInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7181697223843567431L;
+	private static final long serialVersionUID = 4148486176717749516L;
+
+	/**
+	 * 材料扩展数据
+	 */
+	@ApiField("ext_data")
+	private String extData;
 
 	/**
 	 * 材料内容
@@ -30,6 +36,19 @@ public class InsuranceMaterialInfo extends AlipayObject {
 	 */
 	@ApiField("material_type")
 	private String materialType;
+
+	/**
+	 * 材料链接
+	 */
+	@ApiField("material_url")
+	private String materialUrl;
+
+	public String getExtData() {
+		return this.extData;
+	}
+	public void setExtData(String extData) {
+		this.extData = extData;
+	}
 
 	public String getMaterialContent() {
 		return this.materialContent;
@@ -50,6 +69,13 @@ public class InsuranceMaterialInfo extends AlipayObject {
 	}
 	public void setMaterialType(String materialType) {
 		this.materialType = materialType;
+	}
+
+	public String getMaterialUrl() {
+		return this.materialUrl;
+	}
+	public void setMaterialUrl(String materialUrl) {
+		this.materialUrl = materialUrl;
 	}
 
 }

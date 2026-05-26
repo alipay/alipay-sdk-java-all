@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 所需资质信息
  *
  * @author auto create
- * @since 1.0, 2026-01-28 15:22:42
+ * @since 1.0, 2026-05-26 17:43:05
  */
 public class AxfItemCategoryQualificationVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5148711346265168181L;
+	private static final long serialVersionUID = 1281755466413937698L;
 
 	/**
 	 * 资质参数描述

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PBCScanParam extends AlipayObject {
 
-	private static final long serialVersionUID = 8253594913815867991L;
+	private static final long serialVersionUID = 6293516221371931192L;
 
 	/**
 	 * 证件信息

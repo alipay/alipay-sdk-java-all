@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * TPA渠道就诊预约状态同步
  *
  * @author auto create
- * @since 1.0, 2025-12-26 19:22:44
+ * @since 1.0, 2026-05-26 18:27:48
  */
 public class AlipayCommerceMedicalInsuranceTpaappointmentstatusNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4483345572239232339L;
+	private static final long serialVersionUID = 3645892835986711511L;
 
 	/**
 	 * 预约单号
@@ -32,6 +32,12 @@ public class AlipayCommerceMedicalInsuranceTpaappointmentstatusNotifyModel exten
 	private String appointmentStatusMsg;
 
 	/**
+	 * 扩展信息
+	 */
+	@ApiField("ext_info")
+	private String extInfo;
+
+	/**
 	 * 失败原因
 	 */
 	@ApiField("fail_reason")
@@ -42,6 +48,12 @@ public class AlipayCommerceMedicalInsuranceTpaappointmentstatusNotifyModel exten
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/**
+	 * 垫资方ID
+	 */
+	@ApiField("tpa_id")
+	private String tpaId;
 
 	/**
 	 * 支付宝用户的唯一ID
@@ -106,6 +118,13 @@ public class AlipayCommerceMedicalInsuranceTpaappointmentstatusNotifyModel exten
 		this.appointmentStatusMsg = appointmentStatusMsg;
 	}
 
+	public String getExtInfo() {
+		return this.extInfo;
+	}
+	public void setExtInfo(String extInfo) {
+		this.extInfo = extInfo;
+	}
+
 	public String getFailReason() {
 		return this.failReason;
 	}
@@ -118,6 +137,13 @@ public class AlipayCommerceMedicalInsuranceTpaappointmentstatusNotifyModel exten
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public String getTpaId() {
+		return this.tpaId;
+	}
+	public void setTpaId(String tpaId) {
+		this.tpaId = tpaId;
 	}
 
 	public String getUserId() {

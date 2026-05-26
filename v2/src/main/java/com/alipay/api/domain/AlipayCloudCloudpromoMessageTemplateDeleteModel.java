@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCloudCloudpromoMessageTemplateDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4447959525336381897L;
+	private static final long serialVersionUID = 7763286631735963562L;
 
 	/**
 	 * 短信模板Code

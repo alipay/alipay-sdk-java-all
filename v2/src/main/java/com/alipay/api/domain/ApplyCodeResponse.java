@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ApplyCodeResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 7589392128487997517L;
+	private static final long serialVersionUID = 5127843359624823254L;
 
 	/**
 	 * apply_code_results，申请S码的结果中的批量发码结果

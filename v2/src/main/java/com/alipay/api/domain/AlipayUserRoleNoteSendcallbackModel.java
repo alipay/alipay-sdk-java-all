@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 采集小红书笔记回传
+ * 颜选数据采购
  *
  * @author auto create
- * @since 1.0, 2026-05-22 10:47:48
+ * @since 1.0, 2026-05-26 14:22:46
  */
 public class AlipayUserRoleNoteSendcallbackModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6489882398943266436L;
+	private static final long serialVersionUID = 4352627352348854264L;
 
 	/**
 	 * 笔记类型

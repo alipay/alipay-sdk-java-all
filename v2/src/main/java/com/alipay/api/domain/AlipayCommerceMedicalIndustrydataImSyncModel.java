@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalIndustrydataImSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7253544943576228443L;
+	private static final long serialVersionUID = 1848636341337242463L;
 
 	/**
 	 * 内部im会话chatId

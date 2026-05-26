@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取头像昵称
  *
  * @author auto create
- * @since 1.0, 2025-09-28 17:27:16
+ * @since 1.0, 2026-05-26 11:39:13
  */
 public class AnttechNftOauthuserinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4574413667353524134L;
+	private static final long serialVersionUID = 7764222769791874237L;
 
 	/**
 	 * accessToken请求

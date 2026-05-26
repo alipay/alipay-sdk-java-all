@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 三方门店信息
  *
  * @author auto create
- * @since 1.0, 2026-04-15 09:37:45
+ * @since 1.0, 2026-05-26 14:34:27
  */
 public class ShopThirdPartyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1591979771989977777L;
+	private static final long serialVersionUID = 6423292573487977453L;
 
 	/**
 	 * 门店ID

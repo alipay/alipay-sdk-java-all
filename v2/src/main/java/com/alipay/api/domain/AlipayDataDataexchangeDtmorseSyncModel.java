@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataDataexchangeDtmorseSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2619985623481457573L;
+	private static final long serialVersionUID = 8728754664937464244L;
 
 	/**
 	 * 外部商户发送给域内系统的信息

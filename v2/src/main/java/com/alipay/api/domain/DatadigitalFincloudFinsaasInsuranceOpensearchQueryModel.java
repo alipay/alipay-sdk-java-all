@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 全网通搜
  *
  * @author auto create
- * @since 1.0, 2025-09-23 16:47:53
+ * @since 1.0, 2026-05-26 14:10:32
  */
 public class DatadigitalFincloudFinsaasInsuranceOpensearchQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3127555495737282936L;
+	private static final long serialVersionUID = 4196753622665641524L;
+
+	/**
+	 * 类型目前仅包括llmWholeImage和不传，传则代表文搜图，不传则默认搜索网页
+	 */
+	@ApiField("content_type")
+	private String contentType;
 
 	/**
 	 * 搜索的领域值，默认为all 全网搜索
@@ -48,6 +54,13 @@ public class DatadigitalFincloudFinsaasInsuranceOpensearchQueryModel extends Ali
 	 */
 	@ApiField("search_mode")
 	private String searchMode;
+
+	public String getContentType() {
+		return this.contentType;
+	}
+	public void setContentType(String contentType) {
+		this.contentType = contentType;
+	}
 
 	public String getDomain() {
 		return this.domain;

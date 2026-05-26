@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingCardFormtemplateSetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2838557763312417895L;
+	private static final long serialVersionUID = 5257453623849184328L;
 
 	
 

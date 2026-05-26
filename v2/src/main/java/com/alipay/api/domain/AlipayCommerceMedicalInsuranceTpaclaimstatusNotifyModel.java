@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * TPA渠道理赔状态回传
  *
  * @author auto create
- * @since 1.0, 2026-04-24 10:32:45
+ * @since 1.0, 2026-05-26 18:22:48
  */
 public class AlipayCommerceMedicalInsuranceTpaclaimstatusNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8317614814452773931L;
+	private static final long serialVersionUID = 8192798479429722627L;
 
 	/**
 	 * 申请时间
@@ -103,6 +103,13 @@ public class AlipayCommerceMedicalInsuranceTpaclaimstatusNotifyModel extends Ali
 	 */
 	@ApiField("dplan_name")
 	private String dplanName;
+
+	/**
+	 * tpa_claim_type：REIMBURSEMENT标识 事后理赔 
+tpa_claim_type：DIRECT_PAYMENT(直付理赔
+	 */
+	@ApiField("ext_info")
+	private String extInfo;
 
 	/**
 	 * 被保人证件号
@@ -274,6 +281,13 @@ public class AlipayCommerceMedicalInsuranceTpaclaimstatusNotifyModel extends Ali
 	}
 	public void setDplanName(String dplanName) {
 		this.dplanName = dplanName;
+	}
+
+	public String getExtInfo() {
+		return this.extInfo;
+	}
+	public void setExtInfo(String extInfo) {
+		this.extInfo = extInfo;
 	}
 
 	public String getInsuredCertNo() {

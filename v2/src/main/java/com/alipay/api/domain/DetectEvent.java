@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class DetectEvent extends AlipayObject {
 
-	private static final long serialVersionUID = 6312355871126955369L;
+	private static final long serialVersionUID = 2382953791317185458L;
 
 	/**
 	 * null

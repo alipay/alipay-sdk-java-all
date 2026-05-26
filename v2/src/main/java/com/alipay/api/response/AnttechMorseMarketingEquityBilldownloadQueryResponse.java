@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AnttechMorseMarketingEquityBilldownloadQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4247529159546939928L;
+	private static final long serialVersionUID = 4348769389369798576L;
 
 	/** 
 	 * 下载时直接请求该链接，当前链接有30s失效，若链接失效，再次请求活动账单查询接口获取新链接请求即可

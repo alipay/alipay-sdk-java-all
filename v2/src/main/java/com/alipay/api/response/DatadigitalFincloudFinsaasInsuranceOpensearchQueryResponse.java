@@ -4,6 +4,7 @@ import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.OpenSearchDocBO;
+import com.alipay.api.domain.OpenSearchImageBO;
 
 import com.alipay.api.AlipayResponse;
 
@@ -11,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.fincloud.finsaas.insurance.opensearch.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-23 16:52:40
+ * @since 1.0, 2026-05-26 14:12:45
  */
 public class DatadigitalFincloudFinsaasInsuranceOpensearchQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6129689625224755184L;
+	private static final long serialVersionUID = 6897692725494645531L;
 
 	/** 
 	 * 调试信息
@@ -30,6 +31,13 @@ public class DatadigitalFincloudFinsaasInsuranceOpensearchQueryResponse extends 
 	@ApiField("open_search_doc_b_o")
 	private List<OpenSearchDocBO> searchDocs;
 
+	/** 
+	 * 当参数contentType=llmWholeImage时，search_images字段返回
+	 */
+	@ApiListField("search_images")
+	@ApiField("open_search_image_b_o")
+	private List<OpenSearchImageBO> searchImages;
+
 	public void setDebugInfo(String debugInfo) {
 		this.debugInfo = debugInfo;
 	}
@@ -42,6 +50,13 @@ public class DatadigitalFincloudFinsaasInsuranceOpensearchQueryResponse extends 
 	}
 	public List<OpenSearchDocBO> getSearchDocs( ) {
 		return this.searchDocs;
+	}
+
+	public void setSearchImages(List<OpenSearchImageBO> searchImages) {
+		this.searchImages = searchImages;
+	}
+	public List<OpenSearchImageBO> getSearchImages( ) {
+		return this.searchImages;
 	}
 
 }

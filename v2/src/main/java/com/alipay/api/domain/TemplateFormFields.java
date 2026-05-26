@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class TemplateFormFields extends AlipayObject {
 
-	private static final long serialVersionUID = 8329238661767687652L;
+	private static final long serialVersionUID = 1869634963241818565L;
 
 	/**
 	 * 开卡表单可填字段，可选字段选项不能与必填字段required重复

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CustomActivityContentVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4685446728933737688L;
+	private static final long serialVersionUID = 7356783111287456675L;
 
 	/**
 	 * 活动跳转行动点

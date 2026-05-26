@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class RobbyOpenDeviceStatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6585858341241396859L;
+	private static final long serialVersionUID = 3636329357741496751L;
 
 	/** 
 	 * null

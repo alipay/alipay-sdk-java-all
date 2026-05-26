@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenApiEventReportItemVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1476811971692494943L;
+	private static final long serialVersionUID = 1749721669525519978L;
 
 	/**
 	 * 业务日期

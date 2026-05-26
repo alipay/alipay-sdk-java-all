@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 创建课程班次
  *
  * @author auto create
- * @since 1.0, 2026-04-30 11:31:44
+ * @since 1.0, 2026-05-26 17:57:47
  */
 public class AlipayEbppIndustryCareertrainingCoursecyclicalCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7149958867387979649L;
+	private static final long serialVersionUID = 5726613527545998231L;
 
 	/**
 	 * 课程ID
@@ -36,6 +39,13 @@ public class AlipayEbppIndustryCareertrainingCoursecyclicalCreateModel extends A
 	 */
 	@ApiField("shop_id")
 	private String shopId;
+
+	/**
+	 * null
+	 */
+	@ApiListField("shop_ids")
+	@ApiField("string")
+	private List<String> shopIds;
 
 	/**
 	 * 开班日期
@@ -69,6 +79,13 @@ public class AlipayEbppIndustryCareertrainingCoursecyclicalCreateModel extends A
 	}
 	public void setShopId(String shopId) {
 		this.shopId = shopId;
+	}
+
+	public List<String> getShopIds() {
+		return this.shopIds;
+	}
+	public void setShopIds(List<String> shopIds) {
+		this.shopIds = shopIds;
 	}
 
 	public String getStartDate() {

@@ -7,11 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * TPA渠道预授权状态同步
  *
  * @author auto create
- * @since 1.0, 2025-12-26 19:17:44
+ * @since 1.0, 2026-05-26 18:27:48
  */
 public class AlipayCommerceMedicalInsuranceTpapreauthstatusNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1233917253831234463L;
+	private static final long serialVersionUID = 3657549244136651198L;
+
+	/**
+	 * 押金额度,单位,元,人民币
+	 */
+	@ApiField("deposit_amount")
+	private String depositAmount;
+
+	/**
+	 * 扩展信息
+	 */
+	@ApiField("ext_info")
+	private String extInfo;
 
 	/**
 	 * 支付宝用户的唯一ID
@@ -44,10 +56,30 @@ public class AlipayCommerceMedicalInsuranceTpapreauthstatusNotifyModel extends A
 	private String preAuthQuota;
 
 	/**
+	 * 垫资方
+	 */
+	@ApiField("tpa_id")
+	private String tpaId;
+
+	/**
 	 * 支付宝用户的唯一ID
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getDepositAmount() {
+		return this.depositAmount;
+	}
+	public void setDepositAmount(String depositAmount) {
+		this.depositAmount = depositAmount;
+	}
+
+	public String getExtInfo() {
+		return this.extInfo;
+	}
+	public void setExtInfo(String extInfo) {
+		this.extInfo = extInfo;
+	}
 
 	public String getOpenId() {
 		return this.openId;
@@ -82,6 +114,13 @@ public class AlipayCommerceMedicalInsuranceTpapreauthstatusNotifyModel extends A
 	}
 	public void setPreAuthQuota(String preAuthQuota) {
 		this.preAuthQuota = preAuthQuota;
+	}
+
+	public String getTpaId() {
+		return this.tpaId;
+	}
+	public void setTpaId(String tpaId) {
+		this.tpaId = tpaId;
 	}
 
 	public String getUserId() {

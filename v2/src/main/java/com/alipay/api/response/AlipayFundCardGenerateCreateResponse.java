@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundCardGenerateCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1529997757927212519L;
+	private static final long serialVersionUID = 3741731741832889524L;
 
 	/** 
 	 * 接收制卡请求落地之后的返回的支付宝制卡单号

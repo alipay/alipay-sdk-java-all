@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMedicalPromoPointPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2894548139542912715L;
+	private static final long serialVersionUID = 2836822772261993736L;
 
 	/** 
 	 * 业务处理码

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PetMarkIdDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5488944396821757664L;
+	private static final long serialVersionUID = 8554598872839749977L;
 
 	/**
 	 * encryptionMarkId md5 后的微信端唯一标识

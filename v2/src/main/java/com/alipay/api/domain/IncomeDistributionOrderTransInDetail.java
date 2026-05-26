@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IncomeDistributionOrderTransInDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5325413294181225661L;
+	private static final long serialVersionUID = 1553821987482558439L;
 
 	/**
 	 * 收款金额,单元元

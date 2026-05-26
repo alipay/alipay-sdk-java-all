@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订阅创建
  *
  * @author auto create
- * @since 1.0, 2026-05-23 15:17:49
+ * @since 1.0, 2026-05-25 22:12:45
  */
 public class AlipayTradeSubscriptionCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5341571387957349246L;
+	private static final long serialVersionUID = 2575995181627669563L;
 
 	/**
 	 * 客户id，客户创建接口（alipay.trade.customer.create）返回的客户id
@@ -23,7 +23,7 @@ public class AlipayTradeSubscriptionCreateModel extends AlipayObject {
 	private String customerId;
 
 	/**
-	 * 扩展参数
+	 * 扩展参数，用于订阅特殊能力的传参，使用方式详见具体场景接入指南
 	 */
 	@ApiField("extend_params")
 	private String extendParams;
@@ -49,19 +49,20 @@ public class AlipayTradeSubscriptionCreateModel extends AlipayObject {
 	private Long payAmount;
 
 	/**
-	 * 用于自定义展示购买时的标题，若不传，默认使用商品名称作为标题
+	 * 订单标题，若无特殊需求，无需使用该字段，默认使用商品名称
 	 */
 	@ApiField("subscribe_title")
 	private String subscribeTitle;
 
 	/**
-	 * 用于签约页展示，不传时系统拼装，格式："{金额}元试用{天数}天"，0元替换为"免费"
+	 * 用于签约页展示，若不传该字段，则展示默认文案。
+低价试用场景文案："{pay_amount}元试用{trial_period_days}天"；免费试用场景文案："免费试用{trial_period_days}天
 	 */
 	@ApiField("trial_desc")
 	private String trialDesc;
 
 	/**
-	 * 试用期天数，正整数，最大 365
+	 * 试用期天数：试用期天数设置为正整数，通常建议试用期天数3-7天
 	 */
 	@ApiField("trial_period_days")
 	private Long trialPeriodDays;

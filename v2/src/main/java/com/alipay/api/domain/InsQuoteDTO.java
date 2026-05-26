@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 电商场景开放平台报价信息模型
  *
  * @author auto create
- * @since 1.0, 2024-09-10 14:43:16
+ * @since 1.0, 2026-05-25 20:07:19
  */
 public class InsQuoteDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7177234844171365157L;
+	private static final long serialVersionUID = 7619673311782284769L;
+
+	/**
+	 * 基础保障额度，单位：分
+	 */
+	@ApiField("basic_sum_insured")
+	private Long basicSumInsured;
 
 	/**
 	 * 折扣率
@@ -96,6 +102,19 @@ public class InsQuoteDTO extends AlipayObject {
 	 */
 	@ApiField("sum_insured")
 	private Long sumInsured;
+
+	/**
+	 * 保障比例
+	 */
+	@ApiField("sum_insured_rate")
+	private String sumInsuredRate;
+
+	public Long getBasicSumInsured() {
+		return this.basicSumInsured;
+	}
+	public void setBasicSumInsured(Long basicSumInsured) {
+		this.basicSumInsured = basicSumInsured;
+	}
 
 	public String getDiscountRate() {
 		return this.discountRate;
@@ -193,6 +212,13 @@ public class InsQuoteDTO extends AlipayObject {
 	}
 	public void setSumInsured(Long sumInsured) {
 		this.sumInsured = sumInsured;
+	}
+
+	public String getSumInsuredRate() {
+		return this.sumInsuredRate;
+	}
+	public void setSumInsuredRate(String sumInsuredRate) {
+		this.sumInsuredRate = sumInsuredRate;
 	}
 
 }

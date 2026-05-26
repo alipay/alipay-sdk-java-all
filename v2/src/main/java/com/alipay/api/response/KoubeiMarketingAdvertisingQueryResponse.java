@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiMarketingAdvertisingQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8713218768589364358L;
+	private static final long serialVersionUID = 2871199226912736316L;
 
 	/** 
 	 * 用户点击广告后，跳转URL地址, 协议必须为HTTPS。广告类型为PIC时，需要设置该值。对于类型为URL不生效

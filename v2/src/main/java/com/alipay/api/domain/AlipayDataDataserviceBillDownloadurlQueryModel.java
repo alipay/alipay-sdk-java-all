@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 无授权模式的查询对账单下载地址
  *
  * @author auto create
- * @since 1.0, 2026-01-16 16:52:40
+ * @since 1.0, 2026-05-26 16:26:07
  */
 public class AlipayDataDataserviceBillDownloadurlQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8438535541785559711L;
+	private static final long serialVersionUID = 4379483923338768499L;
 
 	/**
 	 * 账单时间：
@@ -28,6 +28,12 @@ public class AlipayDataDataserviceBillDownloadurlQueryModel extends AlipayObject
 	 */
 	@ApiField("bill_type")
 	private String billType;
+
+	/**
+	 * true表示使用安全链接，即返回的下载链接为https。 非true值的情况下，统一为false，使用http链接。
+	 */
+	@ApiField("secure")
+	private String secure;
 
 	/**
 	 * 二级商户smid，这个参数只在bill_type是trade_zft_merchant时才能使用
@@ -47,6 +53,13 @@ public class AlipayDataDataserviceBillDownloadurlQueryModel extends AlipayObject
 	}
 	public void setBillType(String billType) {
 		this.billType = billType;
+	}
+
+	public String getSecure() {
+		return this.secure;
+	}
+	public void setSecure(String secure) {
+		this.secure = secure;
 	}
 
 	public String getSmid() {

@@ -10,28 +10,28 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订阅修改
  *
  * @author auto create
- * @since 1.0, 2026-05-23 15:17:48
+ * @since 1.0, 2026-05-25 22:12:45
  */
 public class AlipayTradeSubscriptionModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5333888378361935742L;
+	private static final long serialVersionUID = 4177852571365431534L;
 
 	/**
-	 * 是否在周期结束时取消订阅，仅用于取消/取消后恢复订阅，其他场景无需使用。
-true：在当前计费周期结束时取消订阅；
-false：立即取消并发起退款；null: CANCEL场景必须传true或false；具体使用方式详见接入指南。
+	 * 是否在周期结束时取消，仅用于取消/取消后恢复订阅，其他场景无需使用。
+true：CANCEL场景下传true表示在当前计费周期结束后取消订阅；
+false：CANCEL场景传false表示立即取消并发起退款，REVERT_CANCEL场景下需传false；具体使用方式详见接入指南。
 	 */
 	@ApiField("cancel_at_period_end")
 	private Boolean cancelAtPeriodEnd;
 
 	/**
-	 * 更新描述
+	 * 更新描述，若无特殊需求，无需使用该字段
 	 */
 	@ApiField("description")
 	private String description;
 
 	/**
-	 * 通用扩展参数
+	 * 扩展参数，用于订阅特殊能力的传参，使用方式详见具体场景接入指南
 	 */
 	@ApiField("extend_params")
 	private String extendParams;
@@ -46,7 +46,7 @@ false：立即取消并发起退款；null: CANCEL场景必须传true或false；
 	/**
 	 * UPGRADE：升级，DOWNGRADE：降级，
 取消：CANCEL，
-取消后恢复：REVERT_CANCEL，INCREASE_QUANTITY-商品数量扩容，DECREASE_QUANTITY-商品数量缩容，如若不传则视为UPGRADE，具体使用方式详见接入指南。
+取消后恢复：REVERT_CANCEL，INCREASE_QUANTITY-席位商品数量扩容，DECREASE_QUANTITY-席位商品数量缩容，如若不传则视为UPGRADE，具体使用方式详见接入指南。
 
 	 */
 	@ApiField("modify_type")
@@ -67,20 +67,21 @@ false：重置周期，具体使用方式详见接入指南。
 	private Boolean preserveBillingCycle;
 
 	/**
-	 * null: 系统计算残值作为退款金额;
->=0: 按商家指定的金额退款，0表示直接取消不退款;
+	 * 取消并退款场景下使用：
+不传: 系统按照时间规则计算残值作为退款金额;
+自定义传入: 按商家指定的金额退款，0表示直接取消不退款;
 	 */
 	@ApiField("refund_amount")
 	private Long refundAmount;
 
 	/**
-	 * 订单标题
+	 * 订单标题，若无特殊需求，无需使用该字段，默认使用商品名称
 	 */
 	@ApiField("subscribe_title")
 	private String subscribeTitle;
 
 	/**
-	 * 订阅id
+	 * 订阅id，订阅唯一标识
 	 */
 	@ApiField("subscription_id")
 	private String subscriptionId;
