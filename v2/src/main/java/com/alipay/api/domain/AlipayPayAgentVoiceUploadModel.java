@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPayAgentVoiceUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2766627725887797932L;
+	private static final long serialVersionUID = 7532486161897183139L;
 
 	/**
 	 * 首次调用后返回，关联一次会话（存在多次语音上传交互时，后续带上该字段可以关联本次语音上传的会话上下文）

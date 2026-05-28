@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 退卡受理请求
  *
  * @author auto create
- * @since 1.0, 2026-05-19 10:57:45
+ * @since 1.0, 2026-05-27 16:49:28
  */
 public class AlipayCommerceTransportIndustryCardRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6176276382883433417L;
+	private static final long serialVersionUID = 4228414357564728885L;
 
 	/**
 	 * 卡号

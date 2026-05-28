@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayBossBaseAnttaskTaskCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6882764892581756873L;
+	private static final long serialVersionUID = 5833229315356922959L;
 
 	/**
 	 * 接入时的systemType

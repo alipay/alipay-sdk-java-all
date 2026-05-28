@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayIserviceItaskServiceventChangeNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5573725348553297451L;
+	private static final long serialVersionUID = 2365969468692877717L;
 
 	/**
 	 * 用户的标识数据，可以是手机号码、身份证号等

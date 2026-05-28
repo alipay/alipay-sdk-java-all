@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 两轮充电桩详情
  *
  * @author auto create
- * @since 1.0, 2026-05-19 10:52:49
+ * @since 1.0, 2026-05-27 15:24:06
  */
 public class EbikeChargeStation extends AlipayObject {
 
-	private static final long serialVersionUID = 8723742361643828556L;
+	private static final long serialVersionUID = 7428814872387881924L;
 
 	/**
 	 * 充电桩设备详细地址

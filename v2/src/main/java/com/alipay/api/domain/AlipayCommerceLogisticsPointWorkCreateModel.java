@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceLogisticsPointWorkCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7492463696422687913L;
+	private static final long serialVersionUID = 4629743877746529445L;
 
 	/**
 	 * 生成连接的有效期，允许为空。默认有效期1D。

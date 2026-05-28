@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.industry.promo.consult response.
  * 
  * @author auto create
- * @since 1.0, 2026-04-27 14:47:48
+ * @since 1.0, 2026-05-27 16:54:56
  */
 public class AlipayCommerceTransportIndustryPromoConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2314873813287253663L;
+	private static final long serialVersionUID = 6498172114246161338L;
 
 	/** 
 	 * null

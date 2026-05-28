@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DsbImageInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3638234352116147522L;
+	private static final long serialVersionUID = 5842597162721929781L;
 
 	/**
 	 * 定损图片的afts id

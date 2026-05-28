@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.payment.trade.business.order.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 01:45:54
+ * @since 1.0, 2026-05-27 00:07:46
  */
 public class MybankPaymentTradeBusinessOrderConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2614843285472839587L;
+	private static final long serialVersionUID = 1368377922139786245L;
 
 	/** 
 	 * 网商受理确认操作返回的流水号

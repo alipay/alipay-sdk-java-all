@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenPromoBudget extends AlipayObject {
 
-	private static final long serialVersionUID = 8122378619741319778L;
+	private static final long serialVersionUID = 2122553618897111125L;
 
 	/**
 	 * 预算数量，支持1～999999999之间。默认为999999999

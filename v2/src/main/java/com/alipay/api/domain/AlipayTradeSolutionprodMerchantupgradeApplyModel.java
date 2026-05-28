@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayTradeSolutionprodMerchantupgradeApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8899445866442328699L;
+	private static final long serialVersionUID = 7468942251174243611L;
 
 	/**
 	 * 结果页点击完成后的跳转地址 1、跳转类型为ALIPAY_URL，back_url就做支付宝端内跳转 2、跳转类型为MERCHANT_URL，back_url就跳转到端外

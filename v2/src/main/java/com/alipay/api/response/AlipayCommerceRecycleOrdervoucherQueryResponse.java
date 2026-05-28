@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.recycle.ordervoucher.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-21 17:52:49
+ * @since 1.0, 2026-05-27 13:37:49
  */
 public class AlipayCommerceRecycleOrdervoucherQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4545781478636121973L;
+	private static final long serialVersionUID = 4337928897849796836L;
 
 	/** 
 	 * 券列表

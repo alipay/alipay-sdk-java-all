@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySocialGiftOrderConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6477892378454871275L;
+	private static final long serialVersionUID = 4754966425332885176L;
 
 	/** 
 	 * 本次操作的订单id，与该接口入参order_id一致

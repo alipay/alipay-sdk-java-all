@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayPayAppPocketmoneyRedpacketBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6613619796456246283L;
+	private static final long serialVersionUID = 8191882698974173954L;
 
 	/**
 	 * 待查询红包外部单号， 由业务方自定义 ，在支付宝完成红包发送后厂商可根据外部单号查询红包详细信息，数据类型为数组

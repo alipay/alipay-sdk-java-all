@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付可开票开票申请创建
  *
  * @author auto create
- * @since 1.0, 2026-04-27 17:50:51
+ * @since 1.0, 2026-05-27 13:50:33
  */
 public class AlipayCommerceEcIndustryinvoiceInvoiceapplyCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6346562912977735727L;
+	private static final long serialVersionUID = 7344783854641972126L;
 
 	/**
 	 * 购买方地址
@@ -147,6 +147,13 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyCreateModel extends Alip
 	 */
 	@ApiField("outer_apply_id")
 	private String outerApplyId;
+
+	/**
+	 * 旅客运输信息列表，包含乘车人信息、行程信息等
+	 */
+	@ApiListField("passenger_transport_list")
+	@ApiField("industry_invoice_passenger_transport")
+	private List<IndustryInvoicePassengerTransport> passengerTransportList;
 
 	/**
 	 * 收款人
@@ -368,6 +375,13 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyCreateModel extends Alip
 	}
 	public void setOuterApplyId(String outerApplyId) {
 		this.outerApplyId = outerApplyId;
+	}
+
+	public List<IndustryInvoicePassengerTransport> getPassengerTransportList() {
+		return this.passengerTransportList;
+	}
+	public void setPassengerTransportList(List<IndustryInvoicePassengerTransport> passengerTransportList) {
+		this.passengerTransportList = passengerTransportList;
 	}
 
 	public String getPayee() {

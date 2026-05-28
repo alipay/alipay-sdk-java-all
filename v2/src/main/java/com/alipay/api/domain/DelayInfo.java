@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DelayInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5827487654495767593L;
+	private static final long serialVersionUID = 6257948784278418513L;
 
 	/**
 	 * 延迟类型，目前支持以下类型

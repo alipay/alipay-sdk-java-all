@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingCardMessageNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5171865137466938836L;
+	private static final long serialVersionUID = 6533723619597392866L;
 
 	/**
 	 * 消息通知详情，包含消息通知需要的信息，map 格式存储。

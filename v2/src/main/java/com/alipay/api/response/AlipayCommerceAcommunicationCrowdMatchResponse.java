@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.acommunication.crowd.match response.
  * 
  * @author auto create
- * @since 1.0, 2024-04-30 14:22:01
+ * @since 1.0, 2026-05-27 14:37:13
  */
 public class AlipayCommerceAcommunicationCrowdMatchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4288161941626423397L;
+	private static final long serialVersionUID = 5869469255283162569L;
 
 	/** 
 	 * 匹配成功的人群标签列表

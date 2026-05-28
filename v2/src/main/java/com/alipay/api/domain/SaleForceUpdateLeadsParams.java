@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class SaleForceUpdateLeadsParams extends AlipayObject {
 
-	private static final long serialVersionUID = 7536936165161358981L;
+	private static final long serialVersionUID = 5257198541545599691L;
 
 	/**
 	 * 实际主导方

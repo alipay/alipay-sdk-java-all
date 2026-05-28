@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OfflineInviteNewerDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8491344989713838866L;
+	private static final long serialVersionUID = 3577941677794889188L;
 
 	/**
 	 * 城市

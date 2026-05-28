@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车牌付行程代扣支付
  *
  * @author auto create
- * @since 1.0, 2026-05-18 15:41:30
+ * @since 1.0, 2026-05-27 10:43:48
  */
 public class AlipayCommerceTransportExpresswayTripCreateandpayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7838128195118593265L;
+	private static final long serialVersionUID = 8797161977732423639L;
 
 	/**
 	 * 支付宝侧车牌付代扣协议号
@@ -26,6 +26,12 @@ public class AlipayCommerceTransportExpresswayTripCreateandpayModel extends Alip
 	 */
 	@ApiField("end_station_name")
 	private String endStationName;
+
+	/**
+	 * 收费站出口名称编码
+	 */
+	@ApiField("end_station_name_code")
+	private String endStationNameCode;
 
 	/**
 	 * 1、该字段为高速出口的时间 2、其他对应路网规范中的chargeTime字段
@@ -88,6 +94,12 @@ public class AlipayCommerceTransportExpresswayTripCreateandpayModel extends Alip
 	private String startStationName;
 
 	/**
+	 * 收费站入口名称编码
+	 */
+	@ApiField("start_station_name_code")
+	private String startStationNameCode;
+
+	/**
 	 * 进站时间
 	 */
 	@ApiField("start_time")
@@ -123,6 +135,13 @@ public class AlipayCommerceTransportExpresswayTripCreateandpayModel extends Alip
 	}
 	public void setEndStationName(String endStationName) {
 		this.endStationName = endStationName;
+	}
+
+	public String getEndStationNameCode() {
+		return this.endStationNameCode;
+	}
+	public void setEndStationNameCode(String endStationNameCode) {
+		this.endStationNameCode = endStationNameCode;
 	}
 
 	public Date getEndTime() {
@@ -193,6 +212,13 @@ public class AlipayCommerceTransportExpresswayTripCreateandpayModel extends Alip
 	}
 	public void setStartStationName(String startStationName) {
 		this.startStationName = startStationName;
+	}
+
+	public String getStartStationNameCode() {
+		return this.startStationNameCode;
+	}
+	public void setStartStationNameCode(String startStationNameCode) {
+		this.startStationNameCode = startStationNameCode;
 	}
 
 	public Date getStartTime() {

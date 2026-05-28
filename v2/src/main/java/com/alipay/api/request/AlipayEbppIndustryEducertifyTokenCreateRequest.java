@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.educertify.token.create request
  * 
  * @author auto create
- * @since 1.0, 2026-05-18 10:52:45
+ * @since 1.0, 2026-05-28 10:07:49
  */
 public class AlipayEbppIndustryEducertifyTokenCreateRequest implements AlipayRequest<AlipayEbppIndustryEducertifyTokenCreateResponse> {
 

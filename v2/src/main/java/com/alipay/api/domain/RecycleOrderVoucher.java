@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 回收订单可用券
  *
  * @author auto create
- * @since 1.0, 2026-05-21 17:48:31
+ * @since 1.0, 2026-05-27 13:33:57
  */
 public class RecycleOrderVoucher extends AlipayObject {
 
-	private static final long serialVersionUID = 4685491872689349182L;
+	private static final long serialVersionUID = 4499214166766575461L;
+
+	/**
+	 * 比例券会返回加价的比例，如5则代表加价5%，最高封顶金额为voucher_ceiling_amount
+	 */
+	@ApiField("percentage")
+	private String percentage;
 
 	/**
 	 * 券封顶金额
@@ -48,6 +54,13 @@ public class RecycleOrderVoucher extends AlipayObject {
 	 */
 	@ApiField("voucher_type")
 	private String voucherType;
+
+	public String getPercentage() {
+		return this.percentage;
+	}
+	public void setPercentage(String percentage) {
+		this.percentage = percentage;
+	}
 
 	public String getVoucherCeilingAmount() {
 		return this.voucherCeilingAmount;

@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayIserviceMindvJobsbyuserQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1863864155899811667L;
+	private static final long serialVersionUID = 8192589729348223888L;
 
 	/** 
 	 * 用户填写的任务id列表

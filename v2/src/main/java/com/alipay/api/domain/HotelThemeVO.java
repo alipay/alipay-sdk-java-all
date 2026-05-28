@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HotelThemeVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8286988712737349172L;
+	private static final long serialVersionUID = 2268623894131445615L;
 
 	/**
 	 * 背景颜色

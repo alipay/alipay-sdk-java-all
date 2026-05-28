@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 同步凭证核销状态
  *
  * @author auto create
- * @since 1.0, 2026-04-24 13:49:13
+ * @since 1.0, 2026-05-28 11:30:23
  */
 public class AlipayMarketingCertificateCertificationUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5856366827631636132L;
+	private static final long serialVersionUID = 3327518492871482752L;
 
 	/**
 	 * 核销时间。格式为：yyyy-MM-dd HH:mm:ss

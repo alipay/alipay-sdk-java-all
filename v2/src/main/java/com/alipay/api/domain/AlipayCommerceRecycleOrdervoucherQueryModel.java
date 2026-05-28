@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 回收订单可用券列表查询
  *
  * @author auto create
- * @since 1.0, 2026-05-21 17:48:31
+ * @since 1.0, 2026-05-27 13:33:57
  */
 public class AlipayCommerceRecycleOrdervoucherQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5562466816623159194L;
+	private static final long serialVersionUID = 4654844682116234261L;
 
 	/**
 	 * 交易组件订单号

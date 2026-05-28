@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayContentCommercialInteractivecoreGamestopSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3887591161984676382L;
+	private static final long serialVersionUID = 3358667594318734524L;
 
 	
 

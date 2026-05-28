@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.industry.card.receive request
  * 
  * @author auto create
- * @since 1.0, 2026-05-19 11:02:50
+ * @since 1.0, 2026-05-27 16:42:27
  */
 public class AlipayCommerceTransportIndustryCardReceiveRequest implements AlipayRequest<AlipayCommerceTransportIndustryCardReceiveResponse> {
 

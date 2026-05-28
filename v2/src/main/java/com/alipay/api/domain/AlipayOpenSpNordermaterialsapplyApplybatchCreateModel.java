@@ -10,7 +10,7 @@ import com.alipay.api.AlipayObject;
  */
 public class AlipayOpenSpNordermaterialsapplyApplybatchCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3499874516535937146L;
+	private static final long serialVersionUID = 7188828548986827583L;
 
 	
 

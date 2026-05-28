@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.serviceai.ocrservice.upload response.
  * 
  * @author auto create
- * @since 1.0, 2026-01-06 17:17:42
+ * @since 1.0, 2026-05-27 14:24:30
  */
 public class AlipayCommerceMedicalServiceaiOcrserviceUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5874438382834458384L;
+	private static final long serialVersionUID = 4872866854415132253L;
 
 	/** 
 	 * 域内系统图像afts id

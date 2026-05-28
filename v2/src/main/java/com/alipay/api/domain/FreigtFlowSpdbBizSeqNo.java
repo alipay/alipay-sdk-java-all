@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FreigtFlowSpdbBizSeqNo extends AlipayObject {
 
-	private static final long serialVersionUID = 7587419683386738793L;
+	private static final long serialVersionUID = 3826521219467322984L;
 
 	/**
 	 * 渠道流水号，与交易流水号2选1填入即可

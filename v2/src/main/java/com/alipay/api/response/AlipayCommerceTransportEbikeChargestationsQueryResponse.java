@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.ebike.chargestations.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-19 10:52:49
+ * @since 1.0, 2026-05-27 15:24:06
  */
 public class AlipayCommerceTransportEbikeChargestationsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3469659698967242342L;
+	private static final long serialVersionUID = 7249661941974771924L;
 
 	/** 
 	 * 所有品牌桩查看链接

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PaymentVoucherAvailableGoodsModify extends AlipayObject {
 
-	private static final long serialVersionUID = 3113131522428544121L;
+	private static final long serialVersionUID = 3253278382867288491L;
 
 	/**
 	 * 可优惠商品编码，商家自定义商品编码。当用户支付时，交易中的商品编码和支付券配置的商品编码有任一匹配时，可以使用优惠券。

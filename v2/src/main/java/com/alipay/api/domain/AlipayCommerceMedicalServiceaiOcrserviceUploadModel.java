@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医疗服务OCR服务处理
  *
  * @author auto create
- * @since 1.0, 2026-01-06 17:17:42
+ * @since 1.0, 2026-05-27 14:24:30
  */
 public class AlipayCommerceMedicalServiceaiOcrserviceUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3457145955717314728L;
+	private static final long serialVersionUID = 2574311772484686337L;
 
 	/**
 	 * 域内系统图像afts id

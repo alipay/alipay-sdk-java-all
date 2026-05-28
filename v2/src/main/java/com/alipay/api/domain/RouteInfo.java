@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RouteInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1128283435768317951L;
+	private static final long serialVersionUID = 4756598177636338185L;
 
 	/**
 	 * 伴游路线景点个数

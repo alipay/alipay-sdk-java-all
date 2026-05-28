@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.provider.npassporter.face.verify request
  * 
  * @author auto create
- * @since 1.0, 2026-05-26 14:53:19
+ * @since 1.0, 2026-05-27 10:52:49
  */
 public class AlipayOfflineProviderNpassporterFaceVerifyRequest implements AlipayUploadRequest<AlipayOfflineProviderNpassporterFaceVerifyResponse> {
 
@@ -39,6 +39,11 @@ public class AlipayOfflineProviderNpassporterFaceVerifyRequest implements Alipay
 	* 照片URL
 	 */
 	private String photoUrl;
+
+	/** 
+	* true: photoUrl字段为RSA加密后Base64编码的密文，false或不传: photoUrl字段为明文URL（向后兼容）
+	 */
+	private Boolean photoUrlEncrypted;
 
 	/** 
 	* 项目ID
@@ -81,6 +86,13 @@ public class AlipayOfflineProviderNpassporterFaceVerifyRequest implements Alipay
 	}
 	public String getPhotoUrl() {
 		return this.photoUrl;
+	}
+
+	public void setPhotoUrlEncrypted(Boolean photoUrlEncrypted) {
+		this.photoUrlEncrypted = photoUrlEncrypted;
+	}
+	public Boolean getPhotoUrlEncrypted() {
+		return this.photoUrlEncrypted;
 	}
 
 	public void setProjectId(String projectId) {
@@ -167,6 +179,7 @@ public class AlipayOfflineProviderNpassporterFaceVerifyRequest implements Alipay
 		txtParams.put("alipay_id", this.alipayId);
 		txtParams.put("open_id", this.openId);
 		txtParams.put("photo_url", this.photoUrl);
+		txtParams.put("photo_url_encrypted", this.photoUrlEncrypted);
 		txtParams.put("project_id", this.projectId);
 		txtParams.put("solution_type", this.solutionType);
 		txtParams.put("sub_project_id", this.subProjectId);

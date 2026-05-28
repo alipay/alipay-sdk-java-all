@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class Product extends AlipayObject {
 
-	private static final long serialVersionUID = 4753893619839446462L;
+	private static final long serialVersionUID = 7439672868924295534L;
 
 	/**
 	 * 油品编号。（可设置的油品编号名称：89#，92#，95#，98#，101#，10#，5#，0#，-10#，-20#，-35#，-50#）。

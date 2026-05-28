@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SiteChargerOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3528361745456587176L;
+	private static final long serialVersionUID = 7483987174852793344L;
 
 	/**
 	 * 互联互通充电枪（设备）编号

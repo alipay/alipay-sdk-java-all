@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: datadigital.anttech.weather.future.query request
  * 
  * @author auto create
- * @since 1.0, 2026-05-26 15:53:21
+ * @since 1.0, 2026-05-27 16:52:20
  */
 public class DatadigitalAnttechWeatherFutureQueryRequest implements AlipayRequest<DatadigitalAnttechWeatherFutureQueryResponse> {
 

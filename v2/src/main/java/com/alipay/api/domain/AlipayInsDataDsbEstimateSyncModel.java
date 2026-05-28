@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayInsDataDsbEstimateSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5712671879471683884L;
+	private static final long serialVersionUID = 3211167512135212796L;
 
 	/**
 	 * 业务类型：assessment（定损），evaluation（核损）

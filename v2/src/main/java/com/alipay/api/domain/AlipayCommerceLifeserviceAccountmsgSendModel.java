@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 子户开户消息发送
  *
  * @author auto create
- * @since 1.0, 2026-05-25 14:42:45
+ * @since 1.0, 2026-05-28 14:37:58
  */
 public class AlipayCommerceLifeserviceAccountmsgSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7451954877563975649L;
+	private static final long serialVersionUID = 1196271615951725166L;
 
 	/**
 	 * null

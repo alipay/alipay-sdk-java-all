@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MaitainShopProduct extends AlipayObject {
 
-	private static final long serialVersionUID = 2256337938918992422L;
+	private static final long serialVersionUID = 6139425665734941633L;
 
 	/**
 	 * 销售价格（元），服务售卖价格，展示给用户。无优惠时的下单支付金额。

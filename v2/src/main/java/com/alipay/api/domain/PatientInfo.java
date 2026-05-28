@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 就诊人信息
  *
  * @author auto create
- * @since 1.0, 2025-09-04 10:07:45
+ * @since 1.0, 2026-05-27 18:59:21
  */
 public class PatientInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5516285675724989236L;
+	private static final long serialVersionUID = 2135622188682799148L;
 
 	/**
 	 * 过敏史
@@ -89,10 +89,22 @@ public class PatientInfo extends AlipayObject {
 	private String patientId;
 
 	/**
+	 * 用户身份证号
+	 */
+	@ApiField("patient_id_no")
+	private String patientIdNo;
+
+	/**
 	 * 患者姓名
 	 */
 	@ApiField("patient_name")
 	private String patientName;
+
+	/**
+	 * 就诊人手机号
+	 */
+	@ApiField("patient_phone_num")
+	private String patientPhoneNum;
 
 	/**
 	 * 妊娠 1-是 2-否
@@ -196,11 +208,25 @@ public class PatientInfo extends AlipayObject {
 		this.patientId = patientId;
 	}
 
+	public String getPatientIdNo() {
+		return this.patientIdNo;
+	}
+	public void setPatientIdNo(String patientIdNo) {
+		this.patientIdNo = patientIdNo;
+	}
+
 	public String getPatientName() {
 		return this.patientName;
 	}
 	public void setPatientName(String patientName) {
 		this.patientName = patientName;
+	}
+
+	public String getPatientPhoneNum() {
+		return this.patientPhoneNum;
+	}
+	public void setPatientPhoneNum(String patientPhoneNum) {
+		this.patientPhoneNum = patientPhoneNum;
 	}
 
 	public String getPregnancyStatus() {

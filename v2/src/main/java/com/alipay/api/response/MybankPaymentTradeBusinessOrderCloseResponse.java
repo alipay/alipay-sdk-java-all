@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.payment.trade.business.order.close response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-23 21:40:50
+ * @since 1.0, 2026-05-27 00:07:47
  */
 public class MybankPaymentTradeBusinessOrderCloseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2456514598741484376L;
+	private static final long serialVersionUID = 4465316112349188469L;
 
 	/** 
 	 * 网商订单号

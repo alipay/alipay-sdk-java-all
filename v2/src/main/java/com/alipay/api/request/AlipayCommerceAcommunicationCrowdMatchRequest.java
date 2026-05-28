@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.acommunication.crowd.match request
  * 
  * @author auto create
- * @since 1.0, 2024-04-30 14:22:01
+ * @since 1.0, 2026-05-27 14:37:13
  */
 public class AlipayCommerceAcommunicationCrowdMatchRequest implements AlipayRequest<AlipayCommerceAcommunicationCrowdMatchResponse> {
 

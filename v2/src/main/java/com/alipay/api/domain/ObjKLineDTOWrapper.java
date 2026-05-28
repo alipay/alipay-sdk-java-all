@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ObjKLineDTOWrapper extends AlipayObject {
 
-	private static final long serialVersionUID = 7623831441586964327L;
+	private static final long serialVersionUID = 8599914442832422291L;
 
 	/**
 	 * 业务数据，类型为ObjKLineDTOWrapper

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataDataserviceAdcrowdDmpcrowdBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2653374168791736479L;
+	private static final long serialVersionUID = 7766495869114388442L;
 
 	/**
 	 * 该参数可支持模糊搜索dmp自定义人群包名称

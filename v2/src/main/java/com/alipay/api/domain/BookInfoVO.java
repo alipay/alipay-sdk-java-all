@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BookInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1732473751617629289L;
+	private static final long serialVersionUID = 5229322221921443489L;
 
 	/**
 	 * 疫苗预约接种时间

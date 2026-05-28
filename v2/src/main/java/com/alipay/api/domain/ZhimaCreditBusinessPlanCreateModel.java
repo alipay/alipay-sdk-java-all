@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCreditBusinessPlanCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3825979468225278374L;
+	private static final long serialVersionUID = 3222753835736694828L;
 
 	/**
 	 * 商户订单号。 商家自定义需保证在商户端不重复。仅支持字母、数字、下划线。

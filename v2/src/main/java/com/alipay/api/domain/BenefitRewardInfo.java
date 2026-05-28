@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class BenefitRewardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7146956497237523316L;
+	private static final long serialVersionUID = 7734688783451345364L;
 
 	/**
 	 * 奖品编号

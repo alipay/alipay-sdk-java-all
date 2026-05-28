@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class OcpCloudSqlDumpTaskRes extends AlipayObject {
 
-	private static final long serialVersionUID = 2432882446123491645L;
+	private static final long serialVersionUID = 6542986919828121195L;
 
 	/**
 	 * 实例arn
