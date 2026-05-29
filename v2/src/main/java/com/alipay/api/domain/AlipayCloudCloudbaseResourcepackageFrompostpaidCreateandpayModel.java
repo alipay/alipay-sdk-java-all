@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 按量转套餐开通下单并支付
  *
  * @author auto create
- * @since 1.0, 2024-10-24 16:04:53
+ * @since 1.0, 2026-05-28 15:42:58
  */
 public class AlipayCloudCloudbaseResourcepackageFrompostpaidCreateandpayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5274489616351194921L;
+	private static final long serialVersionUID = 1244841729676177516L;
 
 	/**
 	 * 套餐包是否自动续费

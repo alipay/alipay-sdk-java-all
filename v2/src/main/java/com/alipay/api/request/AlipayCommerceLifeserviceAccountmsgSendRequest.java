@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.lifeservice.accountmsg.send request
  * 
  * @author auto create
- * @since 1.0, 2026-05-28 14:37:58
+ * @since 1.0, 2026-05-28 14:42:50
  */
 public class AlipayCommerceLifeserviceAccountmsgSendRequest implements AlipayRequest<AlipayCommerceLifeserviceAccountmsgSendResponse> {
 

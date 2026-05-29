@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class YunTaskRecruitEnrolledInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7697459512172423867L;
+	private static final long serialVersionUID = 5364489476523248363L;
 
 	/**
 	 * 出资方LOGO

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MEquityWorthInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4714716375147725994L;
+	private static final long serialVersionUID = 4526199186882246191L;
 
 	/**
 	 * 权益价值信息计算方式，取值枚举：固定计算：FIXED、动态计算：DYNAMIC

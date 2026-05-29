@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SubscriptionItem extends AlipayObject {
 
-	private static final long serialVersionUID = 2716383391351876154L;
+	private static final long serialVersionUID = 7227445527337629127L;
 
 	/**
 	 * 营销创建接口（alipay.trade.promotion.coupon.create）返回的优惠id，使用方式详见具体场景接入指南

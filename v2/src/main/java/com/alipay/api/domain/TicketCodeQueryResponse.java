@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class TicketCodeQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 4767334928923171299L;
+	private static final long serialVersionUID = 5457616125616237142L;
 
 	/**
 	 * 当前可用份数

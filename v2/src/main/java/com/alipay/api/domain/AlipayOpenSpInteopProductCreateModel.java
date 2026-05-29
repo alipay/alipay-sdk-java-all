@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 服务商一体化开通作业添加产品开通项
  *
  * @author auto create
- * @since 1.0, 2026-03-19 15:04:20
+ * @since 1.0, 2026-05-28 14:55:39
  */
 public class AlipayOpenSpInteopProductCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2138694335624719886L;
+	private static final long serialVersionUID = 2632483149669561426L;
 
 	/**
 	 * app信息

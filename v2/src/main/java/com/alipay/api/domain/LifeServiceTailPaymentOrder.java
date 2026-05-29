@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * 尾款单内容
+ * null
  *
  * @author auto create
- * @since 1.0, 2026-05-28 14:22:50
+ * @since 1.0, 2026-05-28 17:32:52
  */
 public class LifeServiceTailPaymentOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 3229341426542145672L;
+	private static final long serialVersionUID = 8278859365518886326L;
 
 	/**
 	 * 取消原因

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.cloud.cloudbase.resourcepackage.open.createandpay request
  * 
  * @author auto create
- * @since 1.0, 2026-05-21 17:53:53
+ * @since 1.0, 2026-05-28 15:47:51
  */
 public class AlipayCloudCloudbaseResourcepackageOpenCreateandpayRequest implements AlipayRequest<AlipayCloudCloudbaseResourcepackageOpenCreateandpayResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AnttechNftSkuCampaignCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8529794192349171132L;
+	private static final long serialVersionUID = 3663674279499111588L;
 
 	/** 
 	 * 活动Id

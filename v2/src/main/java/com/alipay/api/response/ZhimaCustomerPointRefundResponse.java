@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaCustomerPointRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4831841935643286721L;
+	private static final long serialVersionUID = 2748516633128694381L;
 
 	/** 
 	 * 芝麻粒是否返还完成

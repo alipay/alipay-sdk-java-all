@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AiPicture extends AlipayObject {
 
-	private static final long serialVersionUID = 7341467825755976756L;
+	private static final long serialVersionUID = 7515616372628118222L;
 
 	/**
 	 * 支付宝AIGC生成的订单ID

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundBatchCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1772181643933478873L;
+	private static final long serialVersionUID = 5448157443233616973L;
 
 	/**
 	 * 支付宝内部的批次ID： 本参数和商户的批次号两者不能同时为空。 当本参数和商户的批次号两者同时提供时，将优先用商户的批次号进行查询。

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RecycleBlackList extends AlipayObject {
 
-	private static final long serialVersionUID = 4435754289528578299L;
+	private static final long serialVersionUID = 3733317142667574914L;
 
 	/**
 	 * 地址黑名单

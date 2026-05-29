@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceEcCreditIsvcapitalUnfreezeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6216912615282322521L;
+	private static final long serialVersionUID = 7637227514124441382L;
 
 	
 

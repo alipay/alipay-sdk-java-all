@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 设置全局环境变量
  *
  * @author auto create
- * @since 1.0, 2023-08-08 22:41:54
+ * @since 1.0, 2026-05-28 15:43:54
  */
 public class AlipayCloudCloudbaseEnvEnvvarsSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2517294633985346867L;
+	private static final long serialVersionUID = 3576955649957265341L;
 
 	/**
 	 * 小程序id

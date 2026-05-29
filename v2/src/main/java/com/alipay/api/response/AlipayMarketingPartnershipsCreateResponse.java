@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingPartnershipsCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6595654489553378863L;
+	private static final long serialVersionUID = 1442277146619935234L;
 
 	/** 
 	 * 建立合作关系的时间。格式为：yyyy-MM-dd HH:mm:ss

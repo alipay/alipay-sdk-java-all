@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalInsuranceUserfactorsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6444343582558748253L;
+	private static final long serialVersionUID = 4239179961326335877L;
 
 	/**
 	 * 用户TOKEN值，保单、权限等查询等页面跳转之后前端会带过去和用户信息关联的user_token字段，用于外部查询用户三要素。

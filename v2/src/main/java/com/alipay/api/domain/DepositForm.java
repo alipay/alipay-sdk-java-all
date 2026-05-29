@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DepositForm extends AlipayObject {
 
-	private static final long serialVersionUID = 8493764327296279146L;
+	private static final long serialVersionUID = 3477469145424295974L;
 
 	/**
 	 * 充值金额（单位为元，必须大于0且最多小数点后两位）

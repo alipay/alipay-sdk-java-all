@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CareInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7132638799954369456L;
+	private static final long serialVersionUID = 3331375945159332681L;
 
 	/**
 	 * 床头卡照片URL

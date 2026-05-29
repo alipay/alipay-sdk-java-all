@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceLogisticsExpressmanCertifyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3749923397293456412L;
+	private static final long serialVersionUID = 2118977771679489489L;
 
 	/** 
 	 * true 开通快递员之家

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ItemBatchDeleteSuccessInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3716477949621646991L;
+	private static final long serialVersionUID = 6421428826338752495L;
 
 	/**
 	 * OMS厂商商品编码, 厂商自行维护

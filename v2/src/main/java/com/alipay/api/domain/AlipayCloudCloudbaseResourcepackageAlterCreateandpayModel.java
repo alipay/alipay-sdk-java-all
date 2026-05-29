@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 变配下单并支付(退款)
  *
  * @author auto create
- * @since 1.0, 2024-05-20 14:18:51
+ * @since 1.0, 2026-05-28 15:43:45
  */
 public class AlipayCloudCloudbaseResourcepackageAlterCreateandpayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1826394792114132652L;
+	private static final long serialVersionUID = 2215235788568294972L;
 
 	/**
 	 * 待变配的资源包规格编码

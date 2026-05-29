@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class HonorRepayPlanDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1124611878934961696L;
+	private static final long serialVersionUID = 3595446733272832837L;
 
 	/**
 	 * 荣耀侧借款申请订单号

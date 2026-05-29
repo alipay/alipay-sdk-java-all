@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.lifeservice.accountmsg.send response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-28 14:37:58
+ * @since 1.0, 2026-05-28 14:42:50
  */
 public class AlipayCommerceLifeserviceAccountmsgSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3278228914781669823L;
+	private static final long serialVersionUID = 6382235752177583524L;
 
 	/** 
 	 * null

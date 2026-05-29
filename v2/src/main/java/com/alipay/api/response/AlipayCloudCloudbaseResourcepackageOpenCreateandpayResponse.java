@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.cloudbase.resourcepackage.open.createandpay response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-21 17:53:53
+ * @since 1.0, 2026-05-28 15:47:51
  */
 public class AlipayCloudCloudbaseResourcepackageOpenCreateandpayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6179313162266357955L;
+	private static final long serialVersionUID = 2743222337318679421L;
 
 	/** 
 	 * 外部环境id
@@ -20,11 +20,24 @@ public class AlipayCloudCloudbaseResourcepackageOpenCreateandpayResponse extends
 	@ApiField("env_id")
 	private String envId;
 
+	/** 
+	 * 订单号
+	 */
+	@ApiField("order_no")
+	private String orderNo;
+
 	public void setEnvId(String envId) {
 		this.envId = envId;
 	}
 	public String getEnvId( ) {
 		return this.envId;
+	}
+
+	public void setOrderNo(String orderNo) {
+		this.orderNo = orderNo;
+	}
+	public String getOrderNo( ) {
+		return this.orderNo;
 	}
 
 }

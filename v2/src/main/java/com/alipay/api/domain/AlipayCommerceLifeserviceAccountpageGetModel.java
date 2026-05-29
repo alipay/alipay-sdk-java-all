@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账户页面支付链接获取
  *
  * @author auto create
- * @since 1.0, 2026-05-28 10:47:49
+ * @since 1.0, 2026-05-28 14:42:50
  */
 public class AlipayCommerceLifeserviceAccountpageGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8444219274374997684L;
+	private static final long serialVersionUID = 8269433472422968325L;
 
 	/**
 	 * 核销单id

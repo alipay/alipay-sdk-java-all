@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MoneyCardUseRecordDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6284238581371467734L;
+	private static final long serialVersionUID = 8312923359684411359L;
 
 	/**
 	 * 金额，对应金额卡实际核销金额，单位：分

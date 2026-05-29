@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ValidationRule extends AlipayObject {
 
-	private static final long serialVersionUID = 3525931998252799315L;
+	private static final long serialVersionUID = 8731288938442832666L;
 
 	/**
 	 * 0-不支持费控，1-支持费控

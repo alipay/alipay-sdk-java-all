@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AnttechAiCvRsTiffQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1137841392596426628L;
+	private static final long serialVersionUID = 2581223172674872411L;
 
 	/** 
 	 * tiff瓦片图像的base64结果

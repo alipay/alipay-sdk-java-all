@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改路由绑定
  *
  * @author auto create
- * @since 1.0, 2023-10-18 14:53:23
+ * @since 1.0, 2026-05-28 15:43:53
  */
 public class AlipayCloudCloudbaseHttpaccessBindModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7732682948865765493L;
+	private static final long serialVersionUID = 8246453162764434796L;
 
 	/**
 	 * 路由绑定ID

@@ -1,6 +1,8 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.LifeServiceTailPaymentOrder;
 
 import com.alipay.api.AlipayResponse;
@@ -9,17 +11,18 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.merchantcard.tailpayment.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-28 14:22:50
+ * @since 1.0, 2026-05-28 17:32:52
  */
 public class AlipayCommerceMerchantcardTailpaymentQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6743714364878811627L;
+	private static final long serialVersionUID = 4871755379668353621L;
 
 	/** 
-	 * 尾款单内容
+	 * null
 	 */
-	@ApiField("content")
-	private LifeServiceTailPaymentOrder content;
+	@ApiListField("content")
+	@ApiField("life_service_tail_payment_order")
+	private List<LifeServiceTailPaymentOrder> content;
 
 	/** 
 	 * 分页页码
@@ -45,10 +48,10 @@ public class AlipayCommerceMerchantcardTailpaymentQueryResponse extends AlipayRe
 	@ApiField("total_page")
 	private Long totalPage;
 
-	public void setContent(LifeServiceTailPaymentOrder content) {
+	public void setContent(List<LifeServiceTailPaymentOrder> content) {
 		this.content = content;
 	}
-	public LifeServiceTailPaymentOrder getContent( ) {
+	public List<LifeServiceTailPaymentOrder> getContent( ) {
 		return this.content;
 	}
 

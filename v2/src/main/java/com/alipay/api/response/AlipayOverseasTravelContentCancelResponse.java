@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOverseasTravelContentCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6295514224471673279L;
+	private static final long serialVersionUID = 5139536531464954372L;
 
 	/** 
 	 * 结果描述，仅当撤回已处于撤回状态的内容，且请求中的modified_date等于已落地内容的modified_date，认为幂等成功，返回Success

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFinancialnetAuthSpaccountConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2851231867862647718L;
+	private static final long serialVersionUID = 1781575238961377339L;
 
 	/**
 	 * 业务标识ID

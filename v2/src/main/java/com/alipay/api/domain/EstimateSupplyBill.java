@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class EstimateSupplyBill extends AlipayObject {
 
-	private static final long serialVersionUID = 1817688992698343395L;
+	private static final long serialVersionUID = 5629153335443969451L;
 
 	/**
 	 * 优惠金额，单位分

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceEcBalancePeriodModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3448152672512593681L;
+	private static final long serialVersionUID = 5791811816766131243L;
 
 	/**
 	 * 共同账户id - 适用于在企业码小程序创建的共同账户，和agreement_no搭配使用

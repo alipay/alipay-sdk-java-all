@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询天明细账单出帐状态
  *
  * @author auto create
- * @since 1.0, 2025-08-04 11:08:37
+ * @since 1.0, 2026-05-28 15:43:05
  */
 public class AlipayCloudCloudbaseWalletBillstatusQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7388447494445322386L;
+	private static final long serialVersionUID = 2765289894676396416L;
 
 	/**
 	 * 出账日期

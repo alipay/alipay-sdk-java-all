@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 续费下单并支付
  *
  * @author auto create
- * @since 1.0, 2025-08-04 11:11:33
+ * @since 1.0, 2026-05-28 15:43:25
  */
 public class AlipayCloudCloudbaseResourcepackageRenewCreateandpayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8771677355794866513L;
+	private static final long serialVersionUID = 2152531715252461442L;
 
 	/**
 	 * 小程序id

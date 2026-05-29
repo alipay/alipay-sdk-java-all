@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppConfigChargeinstSearchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6467295325649451851L;
+	private static final long serialVersionUID = 3863758274584662684L;
 
 	/** 
 	 * 接口输出参数列表 ChargeInstResult{ List<ChargeInstMode>}对象
