@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AssetFundDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7295769886722546798L;
+	private static final long serialVersionUID = 4761383144644752586L;
 
 	/**
 	 * 资产数额，单位元

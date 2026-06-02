@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayTradePriceCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1581768687689429998L;
+	private static final long serialVersionUID = 8454625242523665283L;
 
 	/**
 	 * 满足了eligibility_type的身份购买后，失效的时间。如3d = 3天，

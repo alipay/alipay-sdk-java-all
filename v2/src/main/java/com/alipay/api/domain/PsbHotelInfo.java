@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PsbHotelInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4542489449213179622L;
+	private static final long serialVersionUID = 2864375637398221137L;
 
 	/**
 	 * PSB中台将酒店授权给PSB服务商待调用的授权码

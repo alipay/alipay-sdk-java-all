@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.charger.pubapipay.notify request
  * 
  * @author auto create
- * @since 1.0, 2026-05-06 14:32:45
+ * @since 1.0, 2026-05-29 15:42:50
  */
 public class AlipayCommerceTransportChargerPubapipayNotifyRequest implements AlipayRequest<AlipayCommerceTransportChargerPubapipayNotifyResponse> {
 

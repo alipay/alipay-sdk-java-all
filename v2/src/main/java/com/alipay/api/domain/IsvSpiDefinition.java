@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IsvSpiDefinition extends AlipayObject {
 
-	private static final long serialVersionUID = 4232746315927384376L;
+	private static final long serialVersionUID = 7883531738651632165L;
 
 	/**
 	 * ISV自定义的标识功能的业务代码，不可重复

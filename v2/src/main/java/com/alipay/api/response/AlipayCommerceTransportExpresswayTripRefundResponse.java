@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.expressway.trip.refund response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-18 14:42:44
+ * @since 1.0, 2026-05-28 22:02:47
  */
 public class AlipayCommerceTransportExpresswayTripRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5856872316319331172L;
+	private static final long serialVersionUID = 2888779942548618212L;
 
 	/** 
 	 * 标识一次退款请求，同一笔交易多次退款需要保证唯一

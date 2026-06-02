@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySocialAntforestAccountTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4798613737499943653L;
+	private static final long serialVersionUID = 1348881376552846159L;
 
 	/**
 	 * 用户在森林里的账户id，转移能量的源头账户（可以是user_id相同）

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.nordermaterialsapply.materialsrecord.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-19 10:46:45
+ * @since 1.0, 2026-05-29 10:42:47
  */
 public class AlipayOpenSpNordermaterialsapplyMaterialsrecordQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1873656192888763287L;
+	private static final long serialVersionUID = 7219992836878329843L;
 
 	/** 
 	 * 铺设记录ID
@@ -31,6 +31,12 @@ public class AlipayOpenSpNordermaterialsapplyMaterialsrecordQueryResponse extend
 	 */
 	@ApiField("remain_retry_count")
 	private Long remainRetryCount;
+
+	/** 
+	 * 门店业务ID
+	 */
+	@ApiField("shop_biz_id")
+	private String shopBizId;
 
 	/** 
 	 * 审核状态
@@ -57,6 +63,13 @@ public class AlipayOpenSpNordermaterialsapplyMaterialsrecordQueryResponse extend
 	}
 	public Long getRemainRetryCount( ) {
 		return this.remainRetryCount;
+	}
+
+	public void setShopBizId(String shopBizId) {
+		this.shopBizId = shopBizId;
+	}
+	public String getShopBizId( ) {
+		return this.shopBizId;
 	}
 
 	public void setStatus(String status) {

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.solutionprod.merchantupgrade.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-11-17 21:42:42
+ * @since 1.0, 2026-05-29 00:06:20
  */
 public class AlipayTradeSolutionprodMerchantupgradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5449899766559171129L;
+	private static final long serialVersionUID = 5184342854416522843L;
 
 	/** 
 	 * 升级操作时的支付宝登录号（脱敏）

@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 所需资质信息
+ * null
  *
  * @author auto create
- * @since 1.0, 2026-05-26 17:43:05
+ * @since 1.0, 2026-05-29 14:27:50
  */
 public class AxfItemCategoryQualificationVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4328845839614881716L;
+	private static final long serialVersionUID = 5233887699224861616L;
 
 	/**
 	 * 资质参数描述
@@ -30,6 +30,12 @@ public class AxfItemCategoryQualificationVO extends AlipayObject {
 	 */
 	@ApiField("qualification_type")
 	private String qualificationType;
+
+	/**
+	 * 是否必填
+	 */
+	@ApiField("required")
+	private Boolean required;
 
 	public String getParamDescription() {
 		return this.paramDescription;
@@ -50,6 +56,13 @@ public class AxfItemCategoryQualificationVO extends AlipayObject {
 	}
 	public void setQualificationType(String qualificationType) {
 		this.qualificationType = qualificationType;
+	}
+
+	public Boolean getRequired() {
+		return this.required;
+	}
+	public void setRequired(Boolean required) {
+		this.required = required;
 	}
 
 }

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车牌付代扣签约申请
  *
  * @author auto create
- * @since 1.0, 2026-05-18 15:41:22
+ * @since 1.0, 2026-05-28 20:51:26
  */
 public class AlipayCommerceTransportExpresswayTripSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3428466364191616871L;
+	private static final long serialVersionUID = 3125626156887324224L;
 
 	/**
 	 * 车辆类型

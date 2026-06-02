@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.rent.order.aftersale.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2026-04-26 21:07:45
+ * @since 1.0, 2026-06-01 00:08:12
  */
 public class AlipayCommerceRentOrderAftersaleConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1765756214823484616L;
+	private static final long serialVersionUID = 3741321979585379928L;
 
 	/** 
 	 * 费用项明细列表

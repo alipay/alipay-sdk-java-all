@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车牌付行程代扣支付
  *
  * @author auto create
- * @since 1.0, 2026-05-27 10:43:48
+ * @since 1.0, 2026-05-28 20:51:39
  */
 public class AlipayCommerceTransportExpresswayTripCreateandpayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2347981662254989244L;
+	private static final long serialVersionUID = 4573218331625553441L;
 
 	/**
 	 * 支付宝侧车牌付代扣协议号

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoBasicRouterSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5278338946562583919L;
+	private static final long serialVersionUID = 2849877731748698219L;
 
 	/**
 	 * 路由数据

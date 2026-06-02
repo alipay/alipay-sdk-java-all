@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁派单处理接口
  *
  * @author auto create
- * @since 1.0, 2026-04-24 13:27:46
+ * @since 1.0, 2026-06-01 00:08:12
  */
 public class AlipayCommerceRentOrderDispatchConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1249924586481311752L;
+	private static final long serialVersionUID = 4783398163756894427L;
 
 	/**
 	 * 买家支付宝用户id

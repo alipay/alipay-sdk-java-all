@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOverseasTravelIntlShoplabelSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1898242433843927282L;
+	private static final long serialVersionUID = 2558388184692578423L;
 
 	/**
 	 * 标签名称

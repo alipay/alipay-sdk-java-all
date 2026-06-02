@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayPcreditHuabeiMerchantGoodsSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4614532652545884834L;
+	private static final long serialVersionUID = 7176121596728962139L;
 
 	/**
 	 * 同步的宝贝信息列表

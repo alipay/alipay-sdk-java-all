@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AuthBizParam extends AlipayObject {
 
-	private static final long serialVersionUID = 5275975137582556418L;
+	private static final long serialVersionUID = 2589919997135299439L;
 
 	/**
 	 * 出资限制模型列表

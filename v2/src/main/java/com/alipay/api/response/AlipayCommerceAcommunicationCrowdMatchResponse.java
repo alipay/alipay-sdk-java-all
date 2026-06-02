@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceAcommunicationCrowdMatchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1258422847934298791L;
+	private static final long serialVersionUID = 8868986969339992896L;
 
 	/** 
 	 * 匹配成功的人群标签列表

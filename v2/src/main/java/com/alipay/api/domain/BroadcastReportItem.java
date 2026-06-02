@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BroadcastReportItem extends AlipayObject {
 
-	private static final long serialVersionUID = 3825372654976586341L;
+	private static final long serialVersionUID = 5447267853112164559L;
 
 	/**
 	 * 设备激活时间（查询条件，日期选择组件）

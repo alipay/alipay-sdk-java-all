@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.idtypetestall.openidbizmock.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2024-10-23 10:29:10
+ * @since 1.0, 2026-05-29 00:06:14
  */
 public class AlipayOpenAppIdtypetestallOpenidbizmockBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1317298743763658365L;
+	private static final long serialVersionUID = 6872477765413551663L;
 
 	/** 
 	 * uid列表

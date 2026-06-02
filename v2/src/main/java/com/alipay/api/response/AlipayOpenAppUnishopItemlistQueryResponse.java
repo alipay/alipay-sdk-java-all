@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.unishop.itemlist.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-28 13:37:48
+ * @since 1.0, 2026-06-01 11:57:53
  */
 public class AlipayOpenAppUnishopItemlistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2616526347281895569L;
+	private static final long serialVersionUID = 5758451827389857748L;
 
 	/** 
 	 * 团购门店id

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.content.community.alivemsg.notify response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 19:33:08
+ * @since 1.0, 2026-05-28 20:07:50
  */
 public class AntfortuneContentCommunityAlivemsgNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2398251341114919219L;
+	private static final long serialVersionUID = 4331788416312898791L;
 
 	
 

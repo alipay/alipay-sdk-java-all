@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁订单拓展信息
  *
  * @author auto create
- * @since 1.0, 2026-05-18 14:11:17
+ * @since 1.0, 2026-05-29 13:39:06
  */
 public class RentOrderExtendInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6425519646117366444L;
+	private static final long serialVersionUID = 4874248867855691678L;
 
 	/**
 	 * 当前订单用户是否授权静默签署电子合同
@@ -26,6 +26,12 @@ public class RentOrderExtendInfoVO extends AlipayObject {
 	 */
 	@ApiField("promised_send_time")
 	private Date promisedSendTime;
+
+	/**
+	 * 回收订单ID
+	 */
+	@ApiField("recycle_order_id")
+	private String recycleOrderId;
 
 	/**
 	 * 租赁派单ID，唯一标识一次派单请求
@@ -57,6 +63,13 @@ public class RentOrderExtendInfoVO extends AlipayObject {
 	}
 	public void setPromisedSendTime(Date promisedSendTime) {
 		this.promisedSendTime = promisedSendTime;
+	}
+
+	public String getRecycleOrderId() {
+		return this.recycleOrderId;
+	}
+	public void setRecycleOrderId(String recycleOrderId) {
+		this.recycleOrderId = recycleOrderId;
 	}
 
 	public String getRentDispatchId() {

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.idtypetestall.openidbizmock.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2024-10-23 10:29:10
+ * @since 1.0, 2026-05-29 00:06:14
  */
 public class AlipayOpenAppIdtypetestallOpenidbizmockBatchqueryRequest implements AlipayRequest<AlipayOpenAppIdtypetestallOpenidbizmockBatchqueryResponse> {
 

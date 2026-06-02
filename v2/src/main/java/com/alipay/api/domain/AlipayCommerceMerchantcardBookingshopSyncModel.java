@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceMerchantcardBookingshopSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6168254518673616723L;
+	private static final long serialVersionUID = 3477339681824431211L;
 
 	/**
 	 * 预约时间间隔【stockFetchType=sync时必填】

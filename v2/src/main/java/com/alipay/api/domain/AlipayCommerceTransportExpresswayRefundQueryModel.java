@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车牌付行程代扣退款查询
  *
  * @author auto create
- * @since 1.0, 2026-05-18 14:40:40
+ * @since 1.0, 2026-05-28 20:51:25
  */
 public class AlipayCommerceTransportExpresswayRefundQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8834872642494341316L;
+	private static final long serialVersionUID = 8893636338629468256L;
 
 	/**
 	 * 支付宝车牌付代扣协议号

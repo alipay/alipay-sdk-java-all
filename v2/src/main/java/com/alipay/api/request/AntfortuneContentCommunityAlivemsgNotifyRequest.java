@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: antfortune.content.community.alivemsg.notify request
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 19:33:08
+ * @since 1.0, 2026-05-28 20:07:50
  */
 public class AntfortuneContentCommunityAlivemsgNotifyRequest implements AlipayRequest<AntfortuneContentCommunityAlivemsgNotifyResponse> {
 

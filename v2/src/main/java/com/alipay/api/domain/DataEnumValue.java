@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class DataEnumValue extends AlipayObject {
 
-	private static final long serialVersionUID = 5368444768576675872L;
+	private static final long serialVersionUID = 5726991896948113242L;
 
 	/**
 	 * 过滤条件

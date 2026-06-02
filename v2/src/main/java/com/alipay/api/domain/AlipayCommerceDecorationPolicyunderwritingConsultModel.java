@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceDecorationPolicyunderwritingConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8742161422861447718L;
+	private static final long serialVersionUID = 4563166131821594264L;
 
 	/**
 	 * 投保申请时间,格式：yyyy-MM-dd HH24:mm:ss,一般是系统当前时间,不传默认系统当前时间

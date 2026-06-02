@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserDtbankBanktradeinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7663196837112737628L;
+	private static final long serialVersionUID = 6538786218122531577L;
 
 	/**
 	 * ICBC：工行，

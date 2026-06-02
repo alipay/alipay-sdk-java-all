@@ -10,32 +10,32 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 碰点餐物料铺设回传送审
  *
  * @author auto create
- * @since 1.0, 2026-05-19 10:46:49
+ * @since 1.0, 2026-05-29 10:42:47
  */
 public class AlipayOpenSpNordermaterialsapplyMaterialsrecordSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1512363996861234979L;
+	private static final long serialVersionUID = 4638651154572544621L;
 
 	/**
-	 * 申请单ID
+	 * 门店提报/一次性场景必填
 	 */
 	@ApiField("apply_id")
 	private String applyId;
 
 	/**
-	 * 铺设门店所在区县
+	 * 门店信息二选一：地址5要素之一
 	 */
 	@ApiField("area")
 	private String area;
 
 	/**
-	 * 铺设门店所在城市
+	 * 门店信息二选一：地址5要素之一
 	 */
 	@ApiField("city")
 	private String city;
 
 	/**
-	 * 门店铺设所在详细地址
+	 * 门店信息二选一：地址5要素之一
 	 */
 	@ApiField("detail_address")
 	private String detailAddress;
@@ -67,7 +67,7 @@ public class AlipayOpenSpNordermaterialsapplyMaterialsrecordSyncModel extends Al
 	private String orderAppId;
 
 	/**
-	 * 铺设门店所属省份
+	 * 门店信息二选一：地址5要素之一
 	 */
 	@ApiField("province")
 	private String province;
@@ -79,19 +79,25 @@ public class AlipayOpenSpNordermaterialsapplyMaterialsrecordSyncModel extends Al
 	private String rebatePid;
 
 	/**
-	 * 蚂蚁体系的门店ID
+	 * 视频送审场景必填（阶段一/一次性出参返回），唯一标识一个门店
+	 */
+	@ApiField("shop_biz_id")
+	private String shopBizId;
+
+	/**
+	 * 门店信息二选一：传shop_id 或 传地址5要素（省+市+区+详细地址+门店名称）
 	 */
 	@ApiField("shop_id")
 	private String shopId;
 
 	/**
-	 * 铺设门店名称
+	 * 门店信息二选一：地址5要素之一
 	 */
 	@ApiField("shop_name")
 	private String shopName;
 
 	/**
-	 * 门店单标识
+	 * saas_ka场景必填
 	 */
 	@ApiField("shop_order_no")
 	private String shopOrderNo;
@@ -164,6 +170,13 @@ public class AlipayOpenSpNordermaterialsapplyMaterialsrecordSyncModel extends Al
 	}
 	public void setRebatePid(String rebatePid) {
 		this.rebatePid = rebatePid;
+	}
+
+	public String getShopBizId() {
+		return this.shopBizId;
+	}
+	public void setShopBizId(String shopBizId) {
+		this.shopBizId = shopBizId;
 	}
 
 	public String getShopId() {

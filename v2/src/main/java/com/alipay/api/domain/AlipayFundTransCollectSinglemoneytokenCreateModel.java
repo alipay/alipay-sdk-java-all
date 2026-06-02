@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundTransCollectSinglemoneytokenCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1687941761675754551L;
+	private static final long serialVersionUID = 6329357315887241956L;
 
 	/**
 	 * 业务回调通知参数,由业务方定义,用于支付成功后mnotify回调通知透传

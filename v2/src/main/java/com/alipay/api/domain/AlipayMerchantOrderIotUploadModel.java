@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMerchantOrderIotUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8663392158393561941L;
+	private static final long serialVersionUID = 5316122946794617547L;
 
 	/**
 	 * 客户端接入结果页组件的abcp应用ID。另外要求该业务abcp_app_id需要和当前接口接入的appid归属为一个开发者pid

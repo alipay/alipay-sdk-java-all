@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 两轮充电桩详情查询
  *
  * @author auto create
- * @since 1.0, 2026-05-27 15:23:50
+ * @since 1.0, 2026-05-29 11:47:49
  */
 public class AlipayCommerceTransportEbikeChargestationdetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8515582154659247422L;
+	private static final long serialVersionUID = 3576338883157513685L;
 
 	/**
 	 * 品牌编码

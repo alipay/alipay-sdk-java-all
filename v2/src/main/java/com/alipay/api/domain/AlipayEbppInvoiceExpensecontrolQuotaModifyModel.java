@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改额度
  *
  * @author auto create
- * @since 1.0, 2025-02-10 14:23:18
+ * @since 1.0, 2026-05-29 10:43:49
  */
 public class AlipayEbppInvoiceExpensecontrolQuotaModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3764619794336556273L;
+	private static final long serialVersionUID = 4727817645315959382L;
 
 	/**
 	 * 企业共同账户ID（该字段将废弃，不建议使用，可用enterprise_id字段替换） 当前字段已废弃(该字段将废弃，不建议使用，可用enterprise_id字段替换)
@@ -32,6 +32,12 @@ public class AlipayEbppInvoiceExpensecontrolQuotaModifyModel extends AlipayObjec
 	@ApiField("agreement_no")
 	@Deprecated
 	private String agreementNo;
+
+	/**
+	 * 修改余额对应的额度时是否允许修改为负数，true表示允许，false表示不允许。默认允许
+	 */
+	@ApiField("allow_negative")
+	private Boolean allowNegative;
 
 	/**
 	 * 变更的金额/余额，日元或者韩元以（元）为单位，其他币种以（分）为单位，当变更的资产类型为次卡时，单位为次
@@ -89,6 +95,13 @@ public class AlipayEbppInvoiceExpensecontrolQuotaModifyModel extends AlipayObjec
 	}
 	public void setAgreementNo(String agreementNo) {
 		this.agreementNo = agreementNo;
+	}
+
+	public Boolean getAllowNegative() {
+		return this.allowNegative;
+	}
+	public void setAllowNegative(Boolean allowNegative) {
+		this.allowNegative = allowNegative;
 	}
 
 	public String getAmount() {

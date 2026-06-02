@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 新能源公共充电退款信息通知
  *
  * @author auto create
- * @since 1.0, 2026-05-06 10:42:45
+ * @since 1.0, 2026-05-29 15:42:50
  */
 public class AlipayCommerceTransportChargerPubapirefundNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2195243359927137177L;
+	private static final long serialVersionUID = 6267824198185442525L;
 
 	/**
 	 * 用户openid

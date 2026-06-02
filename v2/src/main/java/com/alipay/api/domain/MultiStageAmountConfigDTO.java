@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MultiStageAmountConfigDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2574445554466238117L;
+	private static final long serialVersionUID = 3125814135833852855L;
 
 	/**
 	 * 每期租金(单位元),最多2位小数

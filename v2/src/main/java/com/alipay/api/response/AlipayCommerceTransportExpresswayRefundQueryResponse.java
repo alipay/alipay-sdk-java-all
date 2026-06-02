@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.expressway.refund.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-18 14:42:44
+ * @since 1.0, 2026-05-28 20:52:48
  */
 public class AlipayCommerceTransportExpresswayRefundQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4249674836654895234L;
+	private static final long serialVersionUID = 4761438779636849955L;
 
 	/** 
 	 * 外部退款流水号

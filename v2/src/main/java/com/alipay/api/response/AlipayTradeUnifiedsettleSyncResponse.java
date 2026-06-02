@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.unifiedsettle.sync response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-22 13:07:41
+ * @since 1.0, 2026-05-29 00:06:21
  */
 public class AlipayTradeUnifiedsettleSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2126843731971312581L;
+	private static final long serialVersionUID = 8859575946837845846L;
 
 	/** 
 	 * 订单同步受理单号

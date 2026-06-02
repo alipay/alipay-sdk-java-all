@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.expressway.trip.close request
  * 
  * @author auto create
- * @since 1.0, 2026-05-21 14:32:45
+ * @since 1.0, 2026-05-28 22:02:47
  */
 public class AlipayCommerceTransportExpresswayTripCloseRequest implements AlipayRequest<AlipayCommerceTransportExpresswayTripCloseResponse> {
 

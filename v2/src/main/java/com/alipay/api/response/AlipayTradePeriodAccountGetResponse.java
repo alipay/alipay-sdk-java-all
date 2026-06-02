@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.period.account.get response.
  * 
  * @author auto create
- * @since 1.0, 2026-01-21 17:57:42
+ * @since 1.0, 2026-05-29 00:06:20
  */
 public class AlipayTradePeriodAccountGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8165338194799885899L;
+	private static final long serialVersionUID = 3586479596432722124L;
 
 	/** 
 	 * 表示境内商家结算的卡编号

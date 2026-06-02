@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalInsuranceUserskipQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1737486647774599852L;
+	private static final long serialVersionUID = 6431815437614493223L;
 
 	/**
 	 * 证件编号

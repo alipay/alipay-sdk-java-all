@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlbumSoundInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8187579598456114465L;
+	private static final long serialVersionUID = 6632153293881434165L;
 
 	/**
 	 * 该声音完整播放时长，单位秒

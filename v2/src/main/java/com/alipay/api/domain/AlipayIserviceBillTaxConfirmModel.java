@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayIserviceBillTaxConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5613256627238484498L;
+	private static final long serialVersionUID = 7193865515276632718L;
 
 	/**
 	 * 账单结束时间，格式：yyyyMMdd

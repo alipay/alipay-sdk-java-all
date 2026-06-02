@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class NOrderTagBindResp extends AlipayObject {
 
-	private static final long serialVersionUID = 8476971664645941273L;
+	private static final long serialVersionUID = 7255497559116517985L;
 
 	/**
 	 * 服务商调用接口绑定点位和物料关系时的现场作业图片

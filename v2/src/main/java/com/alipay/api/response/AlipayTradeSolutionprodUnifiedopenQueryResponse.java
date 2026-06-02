@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.solutionprod.unifiedopen.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-11-19 11:22:42
+ * @since 1.0, 2026-05-29 00:06:20
  */
 public class AlipayTradeSolutionprodUnifiedopenQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4374552551683456191L;
+	private static final long serialVersionUID = 2321463577518136441L;
 
 	/** 
 	 * 开通绑定的支付宝登录号（脱敏）

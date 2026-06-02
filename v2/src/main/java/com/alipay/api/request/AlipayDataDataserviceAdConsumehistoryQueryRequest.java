@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.dataservice.ad.consumehistory.query request
  * 
  * @author auto create
- * @since 1.0, 2025-12-08 10:47:42
+ * @since 1.0, 2026-05-29 15:14:43
  */
 public class AlipayDataDataserviceAdConsumehistoryQueryRequest implements AlipayRequest<AlipayDataDataserviceAdConsumehistoryQueryResponse> {
 

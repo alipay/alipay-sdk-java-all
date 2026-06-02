@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class DtBankActivityTimeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6234943921187628196L;
+	private static final long serialVersionUID = 8237193168562193412L;
 
 	/**
 	 * 活动开始时间

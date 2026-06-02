@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 气象参数查询标记
  *
  * @author auto create
- * @since 1.0, 2026-03-05 11:13:22
+ * @since 1.0, 2026-05-30 14:52:08
  */
 public class WeatherVariablesMark extends AlipayObject {
 
-	private static final long serialVersionUID = 8312249454333666133L;
+	private static final long serialVersionUID = 1794642634326955748L;
 
 	/**
 	 * 体感温度
@@ -114,6 +114,12 @@ public class WeatherVariablesMark extends AlipayObject {
 	 */
 	@ApiField("relative_humidity_2m")
 	private Boolean relativeHumidity2m;
+
+	/**
+	 * 分钟级降水量（临近预报）,支持未来2小时的降雨预报数据。
+	 */
+	@ApiField("short_term_rain")
+	private Boolean shortTermRain;
 
 	/**
 	 * 短波辐照的标记，true表示查询，默认false
@@ -316,6 +322,13 @@ public class WeatherVariablesMark extends AlipayObject {
 	}
 	public void setRelativeHumidity2m(Boolean relativeHumidity2m) {
 		this.relativeHumidity2m = relativeHumidity2m;
+	}
+
+	public Boolean getShortTermRain() {
+		return this.shortTermRain;
+	}
+	public void setShortTermRain(Boolean shortTermRain) {
+		this.shortTermRain = shortTermRain;
 	}
 
 	public Boolean getShortwaveRadiation() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DepositRuleBizParam extends AlipayObject {
 
-	private static final long serialVersionUID = 1854242417264981683L;
+	private static final long serialVersionUID = 4576518692857352713L;
 
 	/**
 	 * 是否发内部消息

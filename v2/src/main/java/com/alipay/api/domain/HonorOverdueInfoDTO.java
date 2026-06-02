@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HonorOverdueInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7397379488317374917L;
+	private static final long serialVersionUID = 4561687667973768342L;
 
 	/**
 	 * 逾期总额，单位：分

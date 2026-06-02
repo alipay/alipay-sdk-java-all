@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FuelItemExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5841229154437365568L;
+	private static final long serialVersionUID = 3428651299273935586L;
 
 	/**
 	 * MY_KEY

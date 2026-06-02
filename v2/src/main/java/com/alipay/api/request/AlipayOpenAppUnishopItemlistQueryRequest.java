@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.unishop.itemlist.query request
  * 
  * @author auto create
- * @since 1.0, 2026-05-28 13:37:48
+ * @since 1.0, 2026-06-01 11:57:53
  */
 public class AlipayOpenAppUnishopItemlistQueryRequest implements AlipayRequest<AlipayOpenAppUnishopItemlistQueryResponse> {
 

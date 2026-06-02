@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 两轮充电桩详情
  *
  * @author auto create
- * @since 1.0, 2026-05-27 15:24:06
+ * @since 1.0, 2026-05-29 14:17:49
  */
 public class EbikeChargeStation extends AlipayObject {
 
-	private static final long serialVersionUID = 8447655743446192248L;
+	private static final long serialVersionUID = 6247662378361144465L;
 
 	/**
 	 * 充电桩设备详细地址
@@ -90,6 +90,18 @@ public class EbikeChargeStation extends AlipayObject {
 	 */
 	@ApiField("maximum_power")
 	private String maximumPower;
+
+	/**
+	 * 充电桩名称
+	 */
+	@ApiField("station_name")
+	private String stationName;
+
+	/**
+	 * 充电桩编号
+	 */
+	@ApiField("station_no")
+	private String stationNo;
 
 	/**
 	 * 插口总数
@@ -186,6 +198,20 @@ public class EbikeChargeStation extends AlipayObject {
 	}
 	public void setMaximumPower(String maximumPower) {
 		this.maximumPower = maximumPower;
+	}
+
+	public String getStationName() {
+		return this.stationName;
+	}
+	public void setStationName(String stationName) {
+		this.stationName = stationName;
+	}
+
+	public String getStationNo() {
+		return this.stationNo;
+	}
+	public void setStationNo(String stationNo) {
+		this.stationNo = stationNo;
 	}
 
 	public Long getTotalPlugCount() {

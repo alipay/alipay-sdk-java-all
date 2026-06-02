@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntMerchantExpandAddresssearchQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5152139329859414491L;
+	private static final long serialVersionUID = 4436976483249714984L;
 
 	/**
 	 * 城市编码。

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.expressway.trip.querystatus response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-18 14:42:45
+ * @since 1.0, 2026-05-28 20:52:48
  */
 public class AlipayCommerceTransportExpresswayTripQuerystatusResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7219744383684952633L;
+	private static final long serialVersionUID = 7782472974271254724L;
 
 	/** 
 	 * 路网侧扣款行程单号： 1、需要与真实的扣款行程对应 2、路网侧全国车牌付场景下唯一

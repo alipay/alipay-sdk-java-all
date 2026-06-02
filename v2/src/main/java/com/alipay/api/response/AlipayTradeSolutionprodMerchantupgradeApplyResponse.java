@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.solutionprod.merchantupgrade.apply response.
  * 
  * @author auto create
- * @since 1.0, 2026-01-15 11:37:41
+ * @since 1.0, 2026-05-29 00:06:20
  */
 public class AlipayTradeSolutionprodMerchantupgradeApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1844794298922668369L;
+	private static final long serialVersionUID = 2279256643923219896L;
 
 	/** 
 	 * 用于直接跳转至用户升级确认页面

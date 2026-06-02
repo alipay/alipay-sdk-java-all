@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * leads信息查询接口
  *
  * @author auto create
- * @since 1.0, 2025-07-21 10:44:17
+ * @since 1.0, 2026-05-29 10:45:55
  */
 public class AntMerchantExpandLeadsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2635615139167659385L;
+	private static final long serialVersionUID = 2189896447479339131L;
 
 	/**
 	 * leads信息查询主键

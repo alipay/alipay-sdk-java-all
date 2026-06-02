@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.aq.usercertify.query request
  * 
  * @author auto create
- * @since 1.0, 2026-03-04 10:57:43
+ * @since 1.0, 2026-05-29 10:17:40
  */
 public class AlipayCommerceMedicalAqUsercertifyQueryRequest implements AlipayRequest<AlipayCommerceMedicalAqUsercertifyQueryResponse> {
 

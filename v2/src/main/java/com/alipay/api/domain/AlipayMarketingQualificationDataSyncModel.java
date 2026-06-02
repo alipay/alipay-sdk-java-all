@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingQualificationDataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2498768535936746748L;
+	private static final long serialVersionUID = 4888878468721822615L;
 
 	/**
 	 * 本次同步的资格相关业务信息

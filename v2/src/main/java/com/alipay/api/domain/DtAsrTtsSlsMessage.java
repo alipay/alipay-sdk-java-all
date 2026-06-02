@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DtAsrTtsSlsMessage extends AlipayObject {
 
-	private static final long serialVersionUID = 2445219571516228869L;
+	private static final long serialVersionUID = 8378964461865788599L;
 
 	/**
 	 * 会话id

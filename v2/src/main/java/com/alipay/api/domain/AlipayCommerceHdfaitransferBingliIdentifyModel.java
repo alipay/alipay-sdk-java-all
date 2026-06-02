@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceHdfaitransferBingliIdentifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8477371948738423426L;
+	private static final long serialVersionUID = 5246647556181672779L;
 
 	/**
 	 * OCR文本内容

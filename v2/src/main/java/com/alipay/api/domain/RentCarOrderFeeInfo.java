@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RentCarOrderFeeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6523534987986646796L;
+	private static final long serialVersionUID = 7437845177195286638L;
 
 	/**
 	 * 基础保障服务费，车生活向商户查询报价时不需要传此此字段；车生活请求商户下单时会传此字段

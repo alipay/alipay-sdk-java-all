@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.trade.unifiedsettle.sync request
  * 
  * @author auto create
- * @since 1.0, 2025-12-22 13:07:41
+ * @since 1.0, 2026-05-29 00:06:21
  */
 public class AlipayTradeUnifiedsettleSyncRequest implements AlipayRequest<AlipayTradeUnifiedsettleSyncResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 车牌付行程代扣关闭
  *
  * @author auto create
- * @since 1.0, 2026-05-18 14:41:03
+ * @since 1.0, 2026-05-28 21:59:20
  */
 public class AlipayCommerceTransportExpresswayTripCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3617261123644363529L;
+	private static final long serialVersionUID = 5278163211276864379L;
 
 	/**
 	 * 支付宝车牌付代扣协议号

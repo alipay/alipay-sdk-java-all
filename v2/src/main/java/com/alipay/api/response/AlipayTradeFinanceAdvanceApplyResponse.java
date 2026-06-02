@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.finance.advance.apply response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-23 09:52:41
+ * @since 1.0, 2026-05-29 00:06:19
  */
 public class AlipayTradeFinanceAdvanceApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2718325833157414433L;
+	private static final long serialVersionUID = 7621893389975868746L;
 
 	/** 
 	 * 扩展字段用于返回资金机构（例如保司等）的单号

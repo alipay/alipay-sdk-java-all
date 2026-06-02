@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 历史气象查询服务
  *
  * @author auto create
- * @since 1.0, 2026-02-05 09:52:39
+ * @since 1.0, 2026-05-30 14:52:53
  */
 public class DatadigitalAnttechWeatherFutureQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8693885597132398231L;
+	private static final long serialVersionUID = 1139759468917832621L;
 
 	/**
 	 * 蚂蚁数科气象服务产品码，找蚂蚁数科运营同学获取
@@ -20,7 +20,7 @@ public class DatadigitalAnttechWeatherFutureQueryModel extends AlipayObject {
 	private String agreementCode;
 
 	/**
-	 * 需要预测的天数,为 0 到 14 之间的整数
+	 * 以今天为起点的需要预测天数,范围为 1 到 15 之间的整数，输入1则表示仅查询今天预测数据
 	 */
 	@ApiField("forecast_days")
 	private Long forecastDays;

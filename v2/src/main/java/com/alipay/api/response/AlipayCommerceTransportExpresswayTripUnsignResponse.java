@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.expressway.trip.unsign response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-21 14:32:47
+ * @since 1.0, 2026-05-28 20:52:48
  */
 public class AlipayCommerceTransportExpresswayTripUnsignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2698488127298465858L;
+	private static final long serialVersionUID = 1867255752363538526L;
 
 	/** 
 	 * 支付宝车牌付代扣协议号

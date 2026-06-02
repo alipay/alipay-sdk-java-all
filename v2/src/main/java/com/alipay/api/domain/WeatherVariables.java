@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 气象参数
  *
  * @author auto create
- * @since 1.0, 2026-03-05 11:13:28
+ * @since 1.0, 2026-05-30 14:52:08
  */
 public class WeatherVariables extends AlipayObject {
 
-	private static final long serialVersionUID = 3399434314169561179L;
+	private static final long serialVersionUID = 1396171385852158883L;
 
 	/**
 	 * 体感温度	°C
@@ -95,6 +95,12 @@ public class WeatherVariables extends AlipayObject {
 	private String directRadiationInstant;
 
 	/**
+	 * 该条数据的预测批次时间
+	 */
+	@ApiField("forecast_batch_time")
+	private Date forecastBatchTime;
+
+	/**
 	 * 降水量（包含所有形式）	mm
 	 */
 	@ApiField("precipitation")
@@ -130,6 +136,12 @@ public class WeatherVariables extends AlipayObject {
 	@ApiField("relative_humidity_2m")
 	@Deprecated
 	private String relativeHumidity2m;
+
+	/**
+	 * 分钟级降水（临近预报），支持未来2小时降雨预报数据，单位：毫米。
+	 */
+	@ApiField("short_term_rain")
+	private String shortTermRain;
 
 	/**
 	 * 短波辐照，单位 W/m^2
@@ -361,6 +373,13 @@ public class WeatherVariables extends AlipayObject {
 		this.directRadiationInstant = directRadiationInstant;
 	}
 
+	public Date getForecastBatchTime() {
+		return this.forecastBatchTime;
+	}
+	public void setForecastBatchTime(Date forecastBatchTime) {
+		this.forecastBatchTime = forecastBatchTime;
+	}
+
 	public String getPrecipitation() {
 		return this.precipitation;
 	}
@@ -401,6 +420,13 @@ public class WeatherVariables extends AlipayObject {
 	}
 	public void setRelativeHumidity2m(String relativeHumidity2m) {
 		this.relativeHumidity2m = relativeHumidity2m;
+	}
+
+	public String getShortTermRain() {
+		return this.shortTermRain;
+	}
+	public void setShortTermRain(String shortTermRain) {
+		this.shortTermRain = shortTermRain;
 	}
 
 	public String getShortwaveRadiation() {

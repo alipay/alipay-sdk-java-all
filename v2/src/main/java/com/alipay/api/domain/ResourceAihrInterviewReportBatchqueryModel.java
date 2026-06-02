@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ResourceAihrInterviewReportBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4681324328493434631L;
+	private static final long serialVersionUID = 1346652143977844314L;
 
 	/**
 	 * null

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IsvItemIdItemStatusFailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5576774524759229265L;
+	private static final long serialVersionUID = 3844439193979452791L;
 
 	/**
 	 * 记录本条商品操作失败详情
