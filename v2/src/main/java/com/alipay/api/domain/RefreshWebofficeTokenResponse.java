@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RefreshWebofficeTokenResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 2335268846567549458L;
+	private static final long serialVersionUID = 5139927529832885166L;
 
 	/**
 	 * ak

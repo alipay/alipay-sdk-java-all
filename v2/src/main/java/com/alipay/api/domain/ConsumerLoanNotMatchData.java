@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ConsumerLoanNotMatchData extends AlipayObject {
 
-	private static final long serialVersionUID = 5745722739463464914L;
+	private static final long serialVersionUID = 2255996516299256848L;
 
 	/**
 	 * 未能匹配上的用户姓名

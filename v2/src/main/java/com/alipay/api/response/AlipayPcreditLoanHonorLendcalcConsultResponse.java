@@ -17,7 +17,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPcreditLoanHonorLendcalcConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6159628897984263666L;
+	private static final long serialVersionUID = 6196315351444159848L;
 
 	/** 
 	 * 综合年利率, 示例12.95【即12.95%】 (优惠后)

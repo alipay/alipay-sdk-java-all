@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySecurityProdAfsrcWhitehatinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8623871294684487757L;
+	private static final long serialVersionUID = 3425357763359118612L;
 
 	/**
 	 * HavanaId(淘宝uid)

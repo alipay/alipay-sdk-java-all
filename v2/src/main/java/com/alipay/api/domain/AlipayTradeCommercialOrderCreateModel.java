@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商业订单创建接口
  *
  * @author auto create
- * @since 1.0, 2026-05-27 19:55:06
+ * @since 1.0, 2026-06-03 14:26:25
  */
 public class AlipayTradeCommercialOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4667178836169574826L;
+	private static final long serialVersionUID = 5785628856323715258L;
 
 	/**
 	 * agent类型，当intiator_type=AGENT时必传
@@ -26,10 +26,22 @@ public class AlipayTradeCommercialOrderCreateModel extends AlipayObject {
 	private String customerId;
 
 	/**
+	 * 扩展参数，JSON 格式字符串，包含企业支付等扩展信息
+	 */
+	@ApiField("extend_params")
+	private String extendParams;
+
+	/**
 	 * 支付发起方
 	 */
 	@ApiField("initiator_type")
 	private String initiatorType;
+
+	/**
+	 * 订单金额（单位：分），灵活定价模式下必填
+	 */
+	@ApiField("order_amount")
+	private Long orderAmount;
 
 	/**
 	 * 商品列表页code，在后台配置获取
@@ -69,11 +81,25 @@ public class AlipayTradeCommercialOrderCreateModel extends AlipayObject {
 		this.customerId = customerId;
 	}
 
+	public String getExtendParams() {
+		return this.extendParams;
+	}
+	public void setExtendParams(String extendParams) {
+		this.extendParams = extendParams;
+	}
+
 	public String getInitiatorType() {
 		return this.initiatorType;
 	}
 	public void setInitiatorType(String initiatorType) {
 		this.initiatorType = initiatorType;
+	}
+
+	public Long getOrderAmount() {
+		return this.orderAmount;
+	}
+	public void setOrderAmount(Long orderAmount) {
+		this.orderAmount = orderAmount;
 	}
 
 	public String getPageCode() {

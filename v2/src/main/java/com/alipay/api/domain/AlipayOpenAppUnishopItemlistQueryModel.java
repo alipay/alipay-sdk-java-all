@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 获取门店下商品列表
  *
  * @author auto create
- * @since 1.0, 2026-06-01 11:57:53
+ * @since 1.0, 2026-06-02 11:47:51
  */
 public class AlipayOpenAppUnishopItemlistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3258946769342242895L;
+	private static final long serialVersionUID = 2267684852941778543L;
 
 	/**
 	 * 团购门店id

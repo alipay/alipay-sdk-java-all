@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CrossBorderEcomShopDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5459277248651168366L;
+	private static final long serialVersionUID = 5496148575676486534L;
 
 	/**
 	 * 主营类目

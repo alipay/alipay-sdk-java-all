@@ -9,38 +9,38 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营销活动激励信息查询
  *
  * @author auto create
- * @since 1.0, 2026-04-15 11:42:45
+ * @since 1.0, 2026-06-01 15:37:49
  */
 public class AlipayCommerceOperationPromoAwardQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4321762688225919646L;
+	private static final long serialVersionUID = 1319351694319834775L;
 
 	/**
-	 * 活动编码
+	 * 活动编码，点餐B侧激励活动，编码固定
 	 */
 	@ApiField("activity_code")
 	private String activityCode;
 
 	/**
-	 * 查询截止时间
+	 * 查询截止时间（时间跨度90天以内）
 	 */
 	@ApiField("end_time")
 	private Date endTime;
 
 	/**
-	 * 查询起始时间
+	 * 查询起始时间（时间跨度90天以内）
 	 */
 	@ApiField("start_time")
 	private Date startTime;
 
 	/**
-	 * 主体ID
+	 * 主体ID，参考报名接口返回的subject_id
 	 */
 	@ApiField("subject_id")
 	private String subjectId;
 
 	/**
-	 * 主体类型，枚举值：ALPAY_USER（商户）、SMID（二级商户）、POIMID（门店）、LEADS_ID（leadsId）、BIZ_TID、TAG_ID、SN、EMAIL、PHONE、APP
+	 * 主体类型，参考报名接口返回的subject_type
 	 */
 	@ApiField("subject_type")
 	private String subjectType;

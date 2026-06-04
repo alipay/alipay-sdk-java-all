@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AccountCloseBusinessParams extends AlipayObject {
 
-	private static final long serialVersionUID = 4532363572523479173L;
+	private static final long serialVersionUID = 2519686245465878593L;
 
 	/**
 	 * 当前访问的记账本关联的授权协议ID，访问授权记账本时必须提供

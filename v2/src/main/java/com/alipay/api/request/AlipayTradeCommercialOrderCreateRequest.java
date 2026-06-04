@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.trade.commercial.order.create request
  * 
  * @author auto create
- * @since 1.0, 2026-05-27 19:55:06
+ * @since 1.0, 2026-06-03 14:26:25
  */
 public class AlipayTradeCommercialOrderCreateRequest implements AlipayRequest<AlipayTradeCommercialOrderCreateResponse> {
 

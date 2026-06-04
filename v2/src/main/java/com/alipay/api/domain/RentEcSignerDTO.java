@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RentEcSignerDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4159321373664694622L;
+	private static final long serialVersionUID = 3498438111312722598L;
 
 	/**
 	 * 用户身份证号或者统一社会信用代码

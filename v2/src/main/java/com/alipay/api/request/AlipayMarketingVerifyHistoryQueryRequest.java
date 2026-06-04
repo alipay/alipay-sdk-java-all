@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.verify.history.query request
  * 
  * @author auto create
- * @since 1.0, 2026-04-11 10:07:44
+ * @since 1.0, 2026-06-02 19:42:50
  */
 public class AlipayMarketingVerifyHistoryQueryRequest implements AlipayRequest<AlipayMarketingVerifyHistoryQueryResponse> {
 

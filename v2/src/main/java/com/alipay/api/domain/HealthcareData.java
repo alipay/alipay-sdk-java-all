@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 用户资料
  *
  * @author auto create
- * @since 1.0, 2026-04-02 17:22:45
+ * @since 1.0, 2026-06-03 15:51:52
  */
 public class HealthcareData extends AlipayObject {
 
-	private static final long serialVersionUID = 4415537887746153128L;
+	private static final long serialVersionUID = 5795388788511382832L;
 
 	/**
 	 * null

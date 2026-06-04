@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 中医
  *
  * @author auto create
- * @since 1.0, 2026-04-02 17:22:45
+ * @since 1.0, 2026-06-03 15:51:52
  */
 public class TraditionalChineseMedicine extends AlipayObject {
 
-	private static final long serialVersionUID = 6857548389117746618L;
+	private static final long serialVersionUID = 7287288128454359262L;
 
 	/**
 	 * null

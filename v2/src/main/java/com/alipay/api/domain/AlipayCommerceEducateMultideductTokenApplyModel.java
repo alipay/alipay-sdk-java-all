@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceEducateMultideductTokenApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7256284381848973147L;
+	private static final long serialVersionUID = 2588975773626793825L;
 
 	/**
 	 * 业务码。可选的字段枚举说明：{SCHOOL_MULTI_DEDUCT:校园支付;SCHOOL_PAYMENT:刷脸支付}

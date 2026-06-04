@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DcChargePileRunTimeData extends AlipayObject {
 
-	private static final long serialVersionUID = 5768812225327861554L;
+	private static final long serialVersionUID = 6741135826657767413L;
 
 	/**
 	 * 可下调容量，单位KW

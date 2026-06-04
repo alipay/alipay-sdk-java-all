@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.trade.commercial.batchrefund.query request
  * 
  * @author auto create
- * @since 1.0, 2026-05-27 12:12:50
+ * @since 1.0, 2026-06-03 14:27:32
  */
 public class AlipayTradeCommercialBatchrefundQueryRequest implements AlipayRequest<AlipayTradeCommercialBatchrefundQueryResponse> {
 

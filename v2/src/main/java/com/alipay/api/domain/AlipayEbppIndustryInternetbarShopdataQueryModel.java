@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppIndustryInternetbarShopdataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7175327625456272728L;
+	private static final long serialVersionUID = 1878819268492351584L;
 
 	/**
 	 * 日期格式为yyyy-MM-dd，返回结果中包含该日期的数据。结束日期可以等于开始日期，但不能早于开始日期。最大日期跨度180天。

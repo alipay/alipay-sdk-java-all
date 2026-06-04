@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 核销明细列表
  *
  * @author auto create
- * @since 1.0, 2026-04-11 10:07:44
+ * @since 1.0, 2026-06-02 19:42:50
  */
 public class AplusVerifyDetailList extends AlipayObject {
 
-	private static final long serialVersionUID = 2393727592147874554L;
+	private static final long serialVersionUID = 8895614626213721689L;
 
 	/**
 	 * 业务发生时间
@@ -72,6 +72,12 @@ public class AplusVerifyDetailList extends AlipayObject {
 	 */
 	@ApiField("merchant_fund_amount")
 	private String merchantFundAmount;
+
+	/**
+	 * 商家减收优惠金额，单位：元
+	 */
+	@ApiField("merchant_no_fund_amount")
+	private String merchantNoFundAmount;
 
 	/**
 	 * 商家实收金额，单位：元
@@ -225,6 +231,13 @@ public class AplusVerifyDetailList extends AlipayObject {
 	}
 	public void setMerchantFundAmount(String merchantFundAmount) {
 		this.merchantFundAmount = merchantFundAmount;
+	}
+
+	public String getMerchantNoFundAmount() {
+		return this.merchantNoFundAmount;
+	}
+	public void setMerchantNoFundAmount(String merchantNoFundAmount) {
+		this.merchantNoFundAmount = merchantNoFundAmount;
 	}
 
 	public String getMerchantRealReceiptAmount() {

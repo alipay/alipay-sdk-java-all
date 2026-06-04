@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.provider.ntoken.expo.modify request
  * 
  * @author auto create
- * @since 1.0, 2025-09-04 14:17:38
+ * @since 1.0, 2026-06-03 10:19:36
  */
 public class AlipayOfflineProviderNtokenExpoModifyRequest implements AlipayRequest<AlipayOfflineProviderNtokenExpoModifyResponse> {
 

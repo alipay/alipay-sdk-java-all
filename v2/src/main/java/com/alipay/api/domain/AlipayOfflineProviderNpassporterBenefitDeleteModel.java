@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 权益出库
  *
  * @author auto create
- * @since 1.0, 2025-11-20 10:17:41
+ * @since 1.0, 2026-06-03 10:19:15
  */
 public class AlipayOfflineProviderNpassporterBenefitDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3783682125476344298L;
+	private static final long serialVersionUID = 8174694782632671413L;
 
 	/**
 	 * null

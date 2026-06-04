@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 运营商行业人群匹配
  *
  * @author auto create
- * @since 1.0, 2024-04-30 14:19:38
+ * @since 1.0, 2026-06-03 13:58:29
  */
 public class AlipayCommerceAcommunicationCrowdMatchModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5658286978682773497L;
+	private static final long serialVersionUID = 4568589262371955553L;
 
 	/**
 	 * 运营商行业定义的人群ID，运营商行业给出
@@ -22,6 +22,18 @@ public class AlipayCommerceAcommunicationCrowdMatchModel extends AlipayObject {
 	@ApiListField("crowd_id")
 	@ApiField("string")
 	private List<String> crowdId;
+
+	/**
+	 * 手机号
+	 */
+	@ApiField("mobile")
+	private String mobile;
+
+	/**
+	 * 用于标记支付宝用户在应用下的唯一标识
+	 */
+	@ApiField("open_id")
+	private String openId;
 
 	/**
 	 * 支付宝用户的userId。
@@ -34,6 +46,20 @@ public class AlipayCommerceAcommunicationCrowdMatchModel extends AlipayObject {
 	}
 	public void setCrowdId(List<String> crowdId) {
 		this.crowdId = crowdId;
+	}
+
+	public String getMobile() {
+		return this.mobile;
+	}
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
+	}
+
+	public String getOpenId() {
+		return this.openId;
+	}
+	public void setOpenId(String openId) {
+		this.openId = openId;
 	}
 
 	public String getUserId() {

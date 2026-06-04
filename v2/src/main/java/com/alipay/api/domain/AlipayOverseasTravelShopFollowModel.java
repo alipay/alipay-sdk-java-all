@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOverseasTravelShopFollowModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4647928824745118285L;
+	private static final long serialVersionUID = 1638164753545726265L;
 
 	/**
 	 * 取值说明：CONFIRM确认收藏/CANCEL取消收藏

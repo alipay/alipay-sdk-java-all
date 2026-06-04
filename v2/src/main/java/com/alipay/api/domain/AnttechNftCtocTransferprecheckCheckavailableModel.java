@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechNftCtocTransferprecheckCheckavailableModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4335874594667755839L;
+	private static final long serialVersionUID = 4444745163969198334L;
 
 	/**
 	 * 藏品上架时间

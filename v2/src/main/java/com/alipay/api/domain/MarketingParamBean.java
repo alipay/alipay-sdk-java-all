@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MarketingParamBean extends AlipayObject {
 
-	private static final long serialVersionUID = 3832852133661154625L;
+	private static final long serialVersionUID = 1548978861491193698L;
 
 	/**
 	 * 商品优惠sku

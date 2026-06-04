@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.logistics.point.tag.offline request
  * 
  * @author auto create
- * @since 1.0, 2026-03-21 14:17:43
+ * @since 1.0, 2026-06-03 16:12:53
  */
 public class AlipayCommerceLogisticsPointTagOfflineRequest implements AlipayRequest<AlipayCommerceLogisticsPointTagOfflineResponse> {
 

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class InterceptedCorpusResult extends AlipayObject {
 
-	private static final long serialVersionUID = 6654955827135762418L;
+	private static final long serialVersionUID = 2448195639634569193L;
 
 	/**
 	 * 拦截的描述

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankEcnyWelfarewalletOpenPreconsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8312545183752419166L;
+	private static final long serialVersionUID = 5678612442667739693L;
 
 	/** 
 	 * 预咨询通过返回true，反之false

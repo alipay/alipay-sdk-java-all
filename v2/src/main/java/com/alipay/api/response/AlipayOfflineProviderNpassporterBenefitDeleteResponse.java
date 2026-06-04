@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.provider.npassporter.benefit.delete response.
  * 
  * @author auto create
- * @since 1.0, 2025-11-20 10:17:41
+ * @since 1.0, 2026-06-03 10:19:15
  */
 public class AlipayOfflineProviderNpassporterBenefitDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4299957364175388879L;
+	private static final long serialVersionUID = 1369228663965956539L;
 
 	/** 
 	 * null

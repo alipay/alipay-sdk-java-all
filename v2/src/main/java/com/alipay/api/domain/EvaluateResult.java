@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class EvaluateResult extends AlipayObject {
 
-	private static final long serialVersionUID = 1749711742424887175L;
+	private static final long serialVersionUID = 1284322117524117148L;
 
 	/**
 	 * 有效调节电量，单位：kWh

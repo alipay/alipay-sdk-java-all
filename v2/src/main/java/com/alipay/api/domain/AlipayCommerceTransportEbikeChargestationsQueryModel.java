@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportEbikeChargestationsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7775385887726371618L;
+	private static final long serialVersionUID = 8151659813247696311L;
 
 	/**
 	 * 城市编码,高德标准

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZftIndirectRelation extends AlipayObject {
 
-	private static final long serialVersionUID = 6847728829674114565L;
+	private static final long serialVersionUID = 8326524215519917568L;
 
 	/**
 	 * 申请单处理失败时，通过此此段返回具体的失败理由

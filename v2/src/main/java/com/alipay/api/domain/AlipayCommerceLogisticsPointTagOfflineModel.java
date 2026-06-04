@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 物流碰一下设备下线接口处理器
  *
  * @author auto create
- * @since 1.0, 2026-03-21 14:17:43
+ * @since 1.0, 2026-06-03 16:12:53
  */
 public class AlipayCommerceLogisticsPointTagOfflineModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5247278152721684861L;
+	private static final long serialVersionUID = 2397882695315623553L;
 
 	/**
 	 * 物流行业线圈ID

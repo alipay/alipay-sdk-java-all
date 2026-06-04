@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RoboCarControlInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3113266944519262613L;
+	private static final long serialVersionUID = 6793341576353781314L;
 
 	/**
 	 * 空调信息

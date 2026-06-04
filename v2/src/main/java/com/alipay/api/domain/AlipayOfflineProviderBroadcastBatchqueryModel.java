@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOfflineProviderBroadcastBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8489679487652936544L;
+	private static final long serialVersionUID = 7465268719315649629L;
 
 	/**
 	 * 设备绑定开始时间与设备绑定结束时间间隔不得超过6个月，并且要么同时为空或者同时不为空

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-06-01 11:57:53
+ * @since 1.0, 2026-06-02 11:47:51
  */
 public class AShopItemVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4867492454877488856L;
+	private static final long serialVersionUID = 7738522926343826252L;
 
 	/**
 	 * 平台侧编码itemId
@@ -20,9 +20,7 @@ public class AShopItemVO extends AlipayObject {
 	private String itemId;
 
 	/**
-	 * GROUPON_NEW=团购
-COUPON=代金券
-TIMES_CARD=代金券
+	 * 商品子类型
 	 */
 	@ApiField("item_sub_type")
 	private String itemSubType;

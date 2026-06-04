@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-04-02 17:22:45
+ * @since 1.0, 2026-06-03 15:51:52
  */
 public class ReportResultInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2736865792919586169L;
+	private static final long serialVersionUID = 8255277436536859462L;
 
 	/**
 	 * 结果提示

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 店铺装修信息同步
  *
  * @author auto create
- * @since 1.0, 2026-05-11 15:17:48
+ * @since 1.0, 2026-06-02 16:07:48
  */
 public class AlipayCommerceLifeserviceShopdecorationSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7146182372232998939L;
+	private static final long serialVersionUID = 2797988528122378799L;
 
 	/**
 	 * null
@@ -22,6 +22,13 @@ public class AlipayCommerceLifeserviceShopdecorationSyncModel extends AlipayObje
 	@ApiListField("shop_business_time")
 	@ApiField("life_service_shop_business_time")
 	private List<LifeServiceShopBusinessTime> shopBusinessTime;
+
+	/**
+	 * null
+	 */
+	@ApiListField("shop_category_images")
+	@ApiField("shop_category_image")
+	private List<ShopCategoryImage> shopCategoryImages;
 
 	/**
 	 * null
@@ -44,7 +51,8 @@ public class AlipayCommerceLifeserviceShopdecorationSyncModel extends AlipayObje
 	private String shopId;
 
 	/**
-	 * 门店logo头像文件id 来源于alipay.open.file.upload支付宝文件上传接口
+	 * 门店logo头像，尺寸要求750px*750px，大小800k以内
+文件id 来源于alipay.open.file.upload支付宝文件上传接口
 	 */
 	@ApiField("shop_logo")
 	private String shopLogo;
@@ -61,6 +69,13 @@ public class AlipayCommerceLifeserviceShopdecorationSyncModel extends AlipayObje
 	}
 	public void setShopBusinessTime(List<LifeServiceShopBusinessTime> shopBusinessTime) {
 		this.shopBusinessTime = shopBusinessTime;
+	}
+
+	public List<ShopCategoryImage> getShopCategoryImages() {
+		return this.shopCategoryImages;
+	}
+	public void setShopCategoryImages(List<ShopCategoryImage> shopCategoryImages) {
+		this.shopCategoryImages = shopCategoryImages;
 	}
 
 	public List<String> getShopCommercialTags() {

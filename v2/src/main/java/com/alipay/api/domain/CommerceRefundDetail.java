@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-05-27 12:12:50
+ * @since 1.0, 2026-06-03 14:27:32
  */
 public class CommerceRefundDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5459389566937224261L;
+	private static final long serialVersionUID = 1298516964896986827L;
 
 	/**
 	 * 原支付流水号

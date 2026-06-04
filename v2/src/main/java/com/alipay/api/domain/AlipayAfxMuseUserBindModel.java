@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayAfxMuseUserBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6167553231289122776L;
+	private static final long serialVersionUID = 4434638836345881619L;
 
 	/**
 	 * 用户uid，仅做路由，不实际消费

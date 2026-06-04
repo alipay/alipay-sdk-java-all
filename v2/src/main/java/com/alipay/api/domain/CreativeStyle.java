@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CreativeStyle extends AlipayObject {
 
-	private static final long serialVersionUID = 1669699638148877254L;
+	private static final long serialVersionUID = 5223769869979742896L;
 
 	/**
 	 * 查询出的风格id

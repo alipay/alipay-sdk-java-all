@@ -1,0 +1,20 @@
+package com.alipay.api.response;
+
+
+import com.alipay.api.AlipayResponse;
+
+/**
+ * ALIPAY API: alipay.trade.subscription.apply.close response.
+ * 
+ * @author auto create
+ * @since 1.0, 2026-06-02 15:07:50
+ */
+public class AlipayTradeSubscriptionApplyCloseResponse extends AlipayResponse {
+
+	private static final long serialVersionUID = 4193449114365188428L;
+
+	
+
+	
+
+}

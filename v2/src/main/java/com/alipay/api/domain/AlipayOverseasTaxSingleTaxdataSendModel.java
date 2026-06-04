@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOverseasTaxSingleTaxdataSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5113255259328583489L;
+	private static final long serialVersionUID = 1642742966239189679L;
 
 	/**
 	 * The Alipay user ID confirmed by the user and sent to the tax refund company in advance.

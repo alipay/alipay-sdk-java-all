@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-05-06 20:27:49
+ * @since 1.0, 2026-06-01 19:12:50
  */
 public class CameraInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8359765537229963714L;
+	private static final long serialVersionUID = 5591998916311773493L;
 
 	/**
 	 * 验证码,用于兜底

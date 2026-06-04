@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.subscription.create response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-27 19:20:48
+ * @since 1.0, 2026-06-03 14:47:50
  */
 public class AlipayTradeSubscriptionCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8761485441994546114L;
+	private static final long serialVersionUID = 4361244734994455123L;
 
 	/** 
 	 * 长链，适用于跳转拉起支付宝端
@@ -43,6 +43,12 @@ public class AlipayTradeSubscriptionCreateResponse extends AlipayResponse {
 	 */
 	@ApiField("promotion_info")
 	private String promotionInfo;
+
+	/** 
+	 * 签约链接有效期截止时间，格式 yyyy-MM-dd HH:mm:ss
+	 */
+	@ApiField("schema_effective_end")
+	private String schemaEffectiveEnd;
 
 	/** 
 	 * 订阅id，本次订阅操作生成的唯一标识
@@ -95,6 +101,13 @@ public class AlipayTradeSubscriptionCreateResponse extends AlipayResponse {
 	}
 	public String getPromotionInfo( ) {
 		return this.promotionInfo;
+	}
+
+	public void setSchemaEffectiveEnd(String schemaEffectiveEnd) {
+		this.schemaEffectiveEnd = schemaEffectiveEnd;
+	}
+	public String getSchemaEffectiveEnd( ) {
+		return this.schemaEffectiveEnd;
 	}
 
 	public void setSubscriptionId(String subscriptionId) {

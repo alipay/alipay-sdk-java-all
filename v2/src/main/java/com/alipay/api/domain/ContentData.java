@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 以Map形式返回具体内容
  *
  * @author auto create
- * @since 1.0, 2026-04-02 17:22:45
+ * @since 1.0, 2026-06-03 15:51:52
  */
 public class ContentData extends AlipayObject {
 
-	private static final long serialVersionUID = 6876873865872243812L;
+	private static final long serialVersionUID = 4797834944411676542L;
 
 	/**
 	 * 健康史

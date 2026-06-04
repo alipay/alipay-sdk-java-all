@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMedicalEbbenefitMemberGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1422825891898583828L;
+	private static final long serialVersionUID = 4412946314682699537L;
 
 	/** 
 	 * 家庭成员地址

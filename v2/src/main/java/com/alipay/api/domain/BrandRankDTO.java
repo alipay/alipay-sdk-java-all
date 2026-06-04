@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BrandRankDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7362737661481163122L;
+	private static final long serialVersionUID = 8176992833428979278L;
 
 	/**
 	 * 品牌名称

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GrantBankCard extends AlipayObject {
 
-	private static final long serialVersionUID = 8836116145377143812L;
+	private static final long serialVersionUID = 6339341129876229594L;
 
 	/**
 	 * 支付宝绑卡唯一ID

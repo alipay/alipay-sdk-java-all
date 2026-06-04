@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 凭证核销历史查询接口
  *
  * @author auto create
- * @since 1.0, 2026-04-11 10:07:44
+ * @since 1.0, 2026-06-02 19:42:50
  */
 public class AlipayMarketingVerifyHistoryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4353934115966938619L;
+	private static final long serialVersionUID = 8188177754248812472L;
 
 	/**
 	 * 业务发生时间结束，格式：yyyyMMdd

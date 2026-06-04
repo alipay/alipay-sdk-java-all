@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 餐饮商户修改认证信息
  *
  * @author auto create
- * @since 1.0, 2026-02-27 14:02:43
+ * @since 1.0, 2026-06-01 15:37:49
  */
 public class AlipayCommerceOperationTagClaimModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5355265729512294282L;
+	private static final long serialVersionUID = 6112116362955997296L;
 
 	/**
 	 * 商户新支付宝账号，一般是手机号或邮箱
@@ -26,13 +26,13 @@ public class AlipayCommerceOperationTagClaimModifyModel extends AlipayObject {
 	private String oldAlipayAccount;
 
 	/**
-	 * 商户在支付宝认证的门店ID
+	 * 商户在支付宝认证的门店ID，参考报名接口返回的subject_id
 	 */
 	@ApiField("store_id")
 	private String storeId;
 
 	/**
-	 * 商户在支付宝认证的门店ID的类型
+	 * 商户在支付宝认证的门店ID的类型，参考报名接口返回的subject_type
 	 */
 	@ApiField("store_id_type")
 	private String storeIdType;

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建藏品
  *
  * @author auto create
- * @since 1.0, 2025-09-04 14:16:21
+ * @since 1.0, 2026-06-03 10:19:26
  */
 public class AlipayOfflineProviderNtokenExpoCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8477962952815565729L;
+	private static final long serialVersionUID = 5513898886977376566L;
 
 	/**
 	 * 主活动头图

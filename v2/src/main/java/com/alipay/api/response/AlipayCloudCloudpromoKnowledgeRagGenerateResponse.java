@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudCloudpromoKnowledgeRagGenerateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5759838843438995538L;
+	private static final long serialVersionUID = 7111215448329776797L;
 
 	/** 
 	 * null

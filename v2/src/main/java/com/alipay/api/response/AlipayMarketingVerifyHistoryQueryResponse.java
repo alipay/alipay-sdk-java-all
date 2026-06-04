@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.verify.history.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-04-11 10:07:44
+ * @since 1.0, 2026-06-02 19:42:50
  */
 public class AlipayMarketingVerifyHistoryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4784564382136374941L;
+	private static final long serialVersionUID = 6616355392557598914L;
 
 	/** 
 	 * 当前页码

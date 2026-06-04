@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * N项目leads创建
  *
  * @author auto create
- * @since 1.0, 2026-05-29 10:57:17
+ * @since 1.0, 2026-06-03 19:45:46
  */
 public class AntMerchantExpandLeadsCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2254654254336235633L;
+	private static final long serialVersionUID = 8298149338569435563L;
 
 	/**
 	 * leads详细地址信息
@@ -32,7 +32,7 @@ public class AntMerchantExpandLeadsCreateModel extends AlipayObject {
 	private String businessLicenseKey;
 
 	/**
-	 * 城市编码。 请按照蚂蚁店铺地区码 表格中填写表格中内容填写。
+	 * 城市编码。 请按照<a href="https://mdn.alipayobjects.com/huamei_sm7gq8/afts/file/A*blT9RqSR9_gAAAAAAAAAAAAADuKQAQ/2022%E8%9A%82%E8%9A%81%E9%87%91%E6%9C%8D%E5%9C%B0%E5%8C%BA%E7%A0%81.xlsx">蚂蚁店铺地区码</a>表格中填写表格中内容填写。
 	 */
 	@ApiField("city_code")
 	private String cityCode;
@@ -62,7 +62,7 @@ public class AntMerchantExpandLeadsCreateModel extends AlipayObject {
 	private String deviceType;
 
 	/**
-	 * 区县编码。 请按照蚂蚁店铺地区码 表格中填写。
+	 * 区县编码。 请按照<a href="https://mdn.alipayobjects.com/huamei_sm7gq8/afts/file/A*blT9RqSR9_gAAAAAAAAAAAAADuKQAQ/2022%E8%9A%82%E8%9A%81%E9%87%91%E6%9C%8D%E5%9C%B0%E5%8C%BA%E7%A0%81.xlsx">蚂蚁店铺地区码</a>表格中填写表格中内容填写。
 	 */
 	@ApiField("district_code")
 	private String districtCode;
@@ -128,7 +128,13 @@ public class AntMerchantExpandLeadsCreateModel extends AlipayObject {
 	private String outDoorPicOssKey;
 
 	/**
-	 * 省份编码。 请按照蚂蚁店铺地区码 表格中填写。
+	 * leads的所属责任BD工号
+	 */
+	@ApiField("owner_id")
+	private String ownerId;
+
+	/**
+	 * 省份编码。 请按照<a href="https://mdn.alipayobjects.com/huamei_sm7gq8/afts/file/A*blT9RqSR9_gAAAAAAAAAAAAADuKQAQ/2022%E8%9A%82%E8%9A%81%E9%87%91%E6%9C%8D%E5%9C%B0%E5%8C%BA%E7%A0%81.xlsx">蚂蚁店铺地区码</a>表格中填写表格中内容填写。
 	 */
 	@ApiField("province_code")
 	private String provinceCode;
@@ -288,6 +294,13 @@ public class AntMerchantExpandLeadsCreateModel extends AlipayObject {
 	}
 	public void setOutDoorPicOssKey(String outDoorPicOssKey) {
 		this.outDoorPicOssKey = outDoorPicOssKey;
+	}
+
+	public String getOwnerId() {
+		return this.ownerId;
+	}
+	public void setOwnerId(String ownerId) {
+		this.ownerId = ownerId;
 	}
 
 	public String getProvinceCode() {

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.logistics.point.tag.offline response.
  * 
  * @author auto create
- * @since 1.0, 2026-03-21 14:17:43
+ * @since 1.0, 2026-06-03 16:12:53
  */
 public class AlipayCommerceLogisticsPointTagOfflineResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8695271837227182961L;
+	private static final long serialVersionUID = 1865548315422293758L;
 
 	
 

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class Shift extends AlipayObject {
 
-	private static final long serialVersionUID = 5854798619815515194L;
+	private static final long serialVersionUID = 4651813931962683584L;
 
 	/**
 	 * 选班时段结束时间

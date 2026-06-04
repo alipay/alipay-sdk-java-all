@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单批量查询接口
  *
  * @author auto create
- * @since 1.0, 2026-05-09 15:02:46
+ * @since 1.0, 2026-06-02 19:42:50
  */
 public class AlipayMarketingOrderBatchQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8436427245653829551L;
+	private static final long serialVersionUID = 7581972453275458711L;
 
 	/**
 	 * 创建订单的结束时间，格式：yyyyMMdd

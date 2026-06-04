@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TimeMarkupRuleDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5782471522568929863L;
+	private static final long serialVersionUID = 2769714675169288114L;
 
 	/**
 	 * 时段加价规则的结束时间，格式为HH:MM

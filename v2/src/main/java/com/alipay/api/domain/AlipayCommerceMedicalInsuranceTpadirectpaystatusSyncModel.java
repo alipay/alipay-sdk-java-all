@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceMedicalInsuranceTpadirectpaystatusSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7667885281989934625L;
+	private static final long serialVersionUID = 8331718634184977664L;
 
 	/**
 	 * 订单信息回传必传 

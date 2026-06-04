@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订阅创建
  *
  * @author auto create
- * @since 1.0, 2026-05-27 19:20:48
+ * @since 1.0, 2026-06-03 14:47:50
  */
 public class AlipayTradeSubscriptionCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7151478398571596143L;
+	private static final long serialVersionUID = 4264139334811847669L;
 
 	/**
 	 * 客户id，客户创建接口（alipay.trade.customer.create）返回的客户id
 	 */
 	@ApiField("customer_id")
 	private String customerId;
+
+	/**
+	 * 有限枚举，托管扣款类型，默认为SUBSCRIBE_DEDUCT。1.SUBSCRIBE_DEDUCT：托管模式（支付宝自动扣款，默认）；2.MERCHANT_DEDUCT：非托管模式（商户自助扣款）
+	 */
+	@ApiField("deduct_type")
+	private String deductType;
 
 	/**
 	 * 扩展参数，用于订阅特殊能力的传参，使用方式详见具体场景接入指南
@@ -72,6 +78,13 @@ public class AlipayTradeSubscriptionCreateModel extends AlipayObject {
 	}
 	public void setCustomerId(String customerId) {
 		this.customerId = customerId;
+	}
+
+	public String getDeductType() {
+		return this.deductType;
+	}
+	public void setDeductType(String deductType) {
+		this.deductType = deductType;
 	}
 
 	public String getExtendParams() {

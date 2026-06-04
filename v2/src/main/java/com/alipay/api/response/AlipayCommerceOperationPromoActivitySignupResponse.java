@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.promo.activity.signup response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-08 21:57:45
+ * @since 1.0, 2026-06-01 15:37:49
  */
 public class AlipayCommerceOperationPromoActivitySignupResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3784522748819467972L;
+	private static final long serialVersionUID = 6572578332998919463L;
 
 	/** 
 	 * 报名结果信息

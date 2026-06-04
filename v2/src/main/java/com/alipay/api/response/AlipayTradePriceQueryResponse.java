@@ -1,6 +1,7 @@
 package com.alipay.api.response;
 
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.domain.CustomUnitAmount;
 import com.alipay.api.domain.NexusPayProduct;
 import com.alipay.api.domain.RecurringConfig;
 
@@ -10,17 +11,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.price.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-27 19:55:47
+ * @since 1.0, 2026-06-03 14:27:23
  */
 public class AlipayTradePriceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1269352446777652484L;
+	private static final long serialVersionUID = 8359431992357459329L;
 
 	/** 
 	 * 该价格实例是否可用
 	 */
 	@ApiField("active")
 	private Boolean active;
+
+	/** 
+	 * 自定义单价，当 unit_amount 为空时必选
+	 */
+	@ApiField("custom_unit_amount")
+	private CustomUnitAmount customUnitAmount;
 
 	/** 
 	 * 满足了eligibility_type的身份购买后，失效的时间。如3d = 3天， 3m = 3月
@@ -77,7 +84,7 @@ public class AlipayTradePriceQueryResponse extends AlipayResponse {
 	private String type;
 
 	/** 
-	 * 单位金额，单位：分
+	 * 单位金额，单位：分，当 custom_unit_amount 为空时必选
 	 */
 	@ApiField("unit_amount")
 	private Long unitAmount;
@@ -87,6 +94,13 @@ public class AlipayTradePriceQueryResponse extends AlipayResponse {
 	}
 	public Boolean getActive( ) {
 		return this.active;
+	}
+
+	public void setCustomUnitAmount(CustomUnitAmount customUnitAmount) {
+		this.customUnitAmount = customUnitAmount;
+	}
+	public CustomUnitAmount getCustomUnitAmount( ) {
+		return this.customUnitAmount;
 	}
 
 	public void setEligibilityExpireTime(String eligibilityExpireTime) {

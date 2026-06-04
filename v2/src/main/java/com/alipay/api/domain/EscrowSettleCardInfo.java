@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EscrowSettleCardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5676916863231611115L;
+	private static final long serialVersionUID = 2884937854739598322L;
 
 	/**
 	 * 账户名

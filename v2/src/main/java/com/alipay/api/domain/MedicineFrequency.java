@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用药频率
  *
  * @author auto create
- * @since 1.0, 2026-04-02 17:22:45
+ * @since 1.0, 2026-06-03 15:51:52
  */
 public class MedicineFrequency extends AlipayObject {
 
-	private static final long serialVersionUID = 5534591776692758295L;
+	private static final long serialVersionUID = 8657894892663925132L;
 
 	/**
 	 * 单次剂量数值（克）

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOfflineNbinteractSceneBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7822875126361526518L;
+	private static final long serialVersionUID = 8385923927821265133L;
 
 	/**
 	 * 跳转支付宝小程序的链接

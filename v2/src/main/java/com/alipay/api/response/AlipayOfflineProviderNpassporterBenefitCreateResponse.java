@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.provider.npassporter.benefit.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-11-20 21:22:42
+ * @since 1.0, 2026-06-03 10:19:07
  */
 public class AlipayOfflineProviderNpassporterBenefitCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1391446755133513366L;
+	private static final long serialVersionUID = 6571293715584181911L;
 
 	/** 
 	 * null

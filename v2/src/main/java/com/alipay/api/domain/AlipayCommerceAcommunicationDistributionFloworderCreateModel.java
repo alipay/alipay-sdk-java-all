@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 流量分销创单接口
  *
  * @author auto create
- * @since 1.0, 2025-11-18 13:55:03
+ * @since 1.0, 2026-06-02 10:10:52
  */
 public class AlipayCommerceAcommunicationDistributionFloworderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7746918199977388955L;
+	private static final long serialVersionUID = 7564588366849648748L;
+
+	/**
+	 * 触达渠道
+	 */
+	@ApiField("access_channel")
+	private String accessChannel;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识
@@ -20,10 +26,22 @@ public class AlipayCommerceAcommunicationDistributionFloworderCreateModel extend
 	private String alipayUserId;
 
 	/**
+	 * 客户端ip
+	 */
+	@ApiField("client_ip")
+	private String clientIp;
+
+	/**
 	 * 加密后手机号
 	 */
 	@ApiField("encrypted_mobile")
 	private String encryptedMobile;
+
+	/**
+	 * 一级投流平台
+	 */
+	@ApiField("first_channel")
+	private String firstChannel;
 
 	/**
 	 * 机构订单id
@@ -50,6 +68,18 @@ public class AlipayCommerceAcommunicationDistributionFloworderCreateModel extend
 	private String openId;
 
 	/**
+	 * APP名称
+	 */
+	@ApiField("package_name")
+	private String packageName;
+
+	/**
+	 * 应用包名（bundleId）
+	 */
+	@ApiField("package_route")
+	private String packageRoute;
+
+	/**
 	 * 支付类型
 	 */
 	@ApiField("pay_type")
@@ -68,6 +98,24 @@ public class AlipayCommerceAcommunicationDistributionFloworderCreateModel extend
 	private String protocolSequenceId;
 
 	/**
+	 * 订购页URL
+	 */
+	@ApiField("proxy_order_url")
+	private String proxyOrderUrl;
+
+	/**
+	 * sdk凭证
+	 */
+	@ApiField("sdk_voucher")
+	private String sdkVoucher;
+
+	/**
+	 * 二级投流平台
+	 */
+	@ApiField("second_channel")
+	private String secondChannel;
+
+	/**
 	 * 短信验证码
 	 */
 	@ApiField("sms_code")
@@ -79,6 +127,19 @@ public class AlipayCommerceAcommunicationDistributionFloworderCreateModel extend
 	@ApiField("target_account")
 	private String targetAccount;
 
+	/**
+	 * 浏览器用户标识
+	 */
+	@ApiField("user_agent")
+	private String userAgent;
+
+	public String getAccessChannel() {
+		return this.accessChannel;
+	}
+	public void setAccessChannel(String accessChannel) {
+		this.accessChannel = accessChannel;
+	}
+
 	public String getAlipayUserId() {
 		return this.alipayUserId;
 	}
@@ -86,11 +147,25 @@ public class AlipayCommerceAcommunicationDistributionFloworderCreateModel extend
 		this.alipayUserId = alipayUserId;
 	}
 
+	public String getClientIp() {
+		return this.clientIp;
+	}
+	public void setClientIp(String clientIp) {
+		this.clientIp = clientIp;
+	}
+
 	public String getEncryptedMobile() {
 		return this.encryptedMobile;
 	}
 	public void setEncryptedMobile(String encryptedMobile) {
 		this.encryptedMobile = encryptedMobile;
+	}
+
+	public String getFirstChannel() {
+		return this.firstChannel;
+	}
+	public void setFirstChannel(String firstChannel) {
+		this.firstChannel = firstChannel;
 	}
 
 	public String getInstOrderId() {
@@ -121,6 +196,20 @@ public class AlipayCommerceAcommunicationDistributionFloworderCreateModel extend
 		this.openId = openId;
 	}
 
+	public String getPackageName() {
+		return this.packageName;
+	}
+	public void setPackageName(String packageName) {
+		this.packageName = packageName;
+	}
+
+	public String getPackageRoute() {
+		return this.packageRoute;
+	}
+	public void setPackageRoute(String packageRoute) {
+		this.packageRoute = packageRoute;
+	}
+
 	public String getPayType() {
 		return this.payType;
 	}
@@ -142,6 +231,27 @@ public class AlipayCommerceAcommunicationDistributionFloworderCreateModel extend
 		this.protocolSequenceId = protocolSequenceId;
 	}
 
+	public String getProxyOrderUrl() {
+		return this.proxyOrderUrl;
+	}
+	public void setProxyOrderUrl(String proxyOrderUrl) {
+		this.proxyOrderUrl = proxyOrderUrl;
+	}
+
+	public String getSdkVoucher() {
+		return this.sdkVoucher;
+	}
+	public void setSdkVoucher(String sdkVoucher) {
+		this.sdkVoucher = sdkVoucher;
+	}
+
+	public String getSecondChannel() {
+		return this.secondChannel;
+	}
+	public void setSecondChannel(String secondChannel) {
+		this.secondChannel = secondChannel;
+	}
+
 	public String getSmsCode() {
 		return this.smsCode;
 	}
@@ -154,6 +264,13 @@ public class AlipayCommerceAcommunicationDistributionFloworderCreateModel extend
 	}
 	public void setTargetAccount(String targetAccount) {
 		this.targetAccount = targetAccount;
+	}
+
+	public String getUserAgent() {
+		return this.userAgent;
+	}
+	public void setUserAgent(String userAgent) {
+		this.userAgent = userAgent;
 	}
 
 }

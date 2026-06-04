@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.lifeservice.shopdecoration.sync response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-11 15:17:48
+ * @since 1.0, 2026-06-02 16:07:48
  */
 public class AlipayCommerceLifeserviceShopdecorationSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1315435322424921319L;
+	private static final long serialVersionUID = 8693831573948316991L;
 
 	/** 
 	 * 蚂蚁门店id

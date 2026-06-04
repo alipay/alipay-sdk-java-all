@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RiskDetectionResultOnRuleDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5276128693151787934L;
+	private static final long serialVersionUID = 2158521731739979811L;
 
 	/**
 	 * 检测模型

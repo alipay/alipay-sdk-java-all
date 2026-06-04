@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceWithholdrepayorderAgreementUnsignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1822643813527333294L;
+	private static final long serialVersionUID = 4834531337697396413L;
 
 	
 

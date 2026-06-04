@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BsExtraCredentials extends AlipayObject {
 
-	private static final long serialVersionUID = 8339797288719722114L;
+	private static final long serialVersionUID = 4436659999967488218L;
 
 	/**
 	 * 饿了么品牌pid

@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 简易价格模型
  *
  * @author auto create
- * @since 1.0, 2026-03-29 14:48:37
+ * @since 1.0, 2026-06-02 20:58:48
  */
 public class NexusSimplePrice extends AlipayObject {
 
-	private static final long serialVersionUID = 1189235151371991494L;
+	private static final long serialVersionUID = 8319292784264312368L;
 
 	/**
 	 * 是否可用
 	 */
 	@ApiField("active")
 	private Boolean active;
+
+	/**
+	 * 自定义单价，当 unit_amount 为空时必选
+	 */
+	@ApiField("custom_unit_amount")
+	private CustomUnitAmount customUnitAmount;
 
 	/**
 	 * 价格id
@@ -54,6 +60,13 @@ public class NexusSimplePrice extends AlipayObject {
 	}
 	public void setActive(Boolean active) {
 		this.active = active;
+	}
+
+	public CustomUnitAmount getCustomUnitAmount() {
+		return this.customUnitAmount;
+	}
+	public void setCustomUnitAmount(CustomUnitAmount customUnitAmount) {
+		this.customUnitAmount = customUnitAmount;
 	}
 
 	public String getId() {

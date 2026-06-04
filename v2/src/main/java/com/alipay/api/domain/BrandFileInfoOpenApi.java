@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BrandFileInfoOpenApi extends AlipayObject {
 
-	private static final long serialVersionUID = 6687138362581254696L;
+	private static final long serialVersionUID = 4565148811253525566L;
 
 	/**
 	 * 需传入ant.merchant.expand.indirect.image.upload 接口上传图片后得到的 image_id。

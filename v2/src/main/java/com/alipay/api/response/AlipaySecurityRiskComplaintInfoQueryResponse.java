@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.complaint.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-02-02 10:07:43
+ * @since 1.0, 2026-06-03 21:47:51
  */
 public class AlipaySecurityRiskComplaintInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1756389951931341329L;
+	private static final long serialVersionUID = 7477537575217983668L;
 
 	/** 
 	 * 投诉凭证图片信息，afts可访问url形式
@@ -97,6 +97,13 @@ public class AlipaySecurityRiskComplaintInfoQueryResponse extends AlipayResponse
 	 */
 	@ApiField("id")
 	private Long id;
+
+	/** 
+	 * 投诉记录的生效标签名称列表
+	 */
+	@ApiListField("label_tag_list")
+	@ApiField("string")
+	private List<String> labelTagList;
 
 	/** 
 	 * 投诉单中被投诉方的名称
@@ -254,6 +261,13 @@ public class AlipaySecurityRiskComplaintInfoQueryResponse extends AlipayResponse
 	}
 	public Long getId( ) {
 		return this.id;
+	}
+
+	public void setLabelTagList(List<String> labelTagList) {
+		this.labelTagList = labelTagList;
+	}
+	public List<String> getLabelTagList( ) {
+		return this.labelTagList;
 	}
 
 	public void setOppositeName(String oppositeName) {

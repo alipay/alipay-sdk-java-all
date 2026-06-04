@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceIcommunityTopicCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3666113842666347433L;
+	private static final long serialVersionUID = 8666839621469335356L;
 
 	/**
 	 * 当前话题创建外部请求的唯一标识

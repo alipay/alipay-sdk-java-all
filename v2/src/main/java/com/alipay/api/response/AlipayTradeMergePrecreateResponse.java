@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayTradeMergePrecreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1623258485752419922L;
+	private static final long serialVersionUID = 2873556789956556996L;
 
 	/** 
 	 * 合并子订单中所有订单的预创建结果

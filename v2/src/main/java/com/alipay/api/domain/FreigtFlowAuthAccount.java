@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FreigtFlowAuthAccount extends AlipayObject {
 
-	private static final long serialVersionUID = 2166345393984731943L;
+	private static final long serialVersionUID = 8146694245816615931L;
 
 	/**
 	 * 授权方账户名
