@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询消费者投诉列表
  *
  * @author auto create
- * @since 1.0, 2026-01-30 17:31:12
+ * @since 1.0, 2026-06-04 11:13:13
  */
 public class AlipaySecurityRiskComplaintInfoBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8759449197728588446L;
+	private static final long serialVersionUID = 2321652688866749265L;
 
 	/**
 	 * 分页查询页码，不传则默认为1
@@ -46,6 +46,12 @@ public class AlipaySecurityRiskComplaintInfoBatchqueryModel extends AlipayObject
 	 */
 	@ApiField("gmt_process_start")
 	private Date gmtProcessStart;
+
+	/**
+	 * 查询条件：筛选高风险标签工单
+	 */
+	@ApiField("high_risk_tag")
+	private Boolean highRiskTag;
 
 	/**
 	 * 分页查询每次查询的数据量，不传则默认为10，取值单位为条
@@ -118,6 +124,13 @@ public class AlipaySecurityRiskComplaintInfoBatchqueryModel extends AlipayObject
 	}
 	public void setGmtProcessStart(Date gmtProcessStart) {
 		this.gmtProcessStart = gmtProcessStart;
+	}
+
+	public Boolean getHighRiskTag() {
+		return this.highRiskTag;
+	}
+	public void setHighRiskTag(Boolean highRiskTag) {
+		this.highRiskTag = highRiskTag;
 	}
 
 	public Long getPageSize() {

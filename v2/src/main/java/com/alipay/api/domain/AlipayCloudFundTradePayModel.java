@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCloudFundTradePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4369752816894239395L;
+	private static final long serialVersionUID = 7378789782597417982L;
 
 	/**
 	 * 代扣协议号, 对应于签约时，支付宝返回的协议号

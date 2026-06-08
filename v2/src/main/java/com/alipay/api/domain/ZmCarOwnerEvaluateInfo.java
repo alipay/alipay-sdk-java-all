@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZmCarOwnerEvaluateInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5377172965252342778L;
+	private static final long serialVersionUID = 2585476133663149258L;
 
 	/**
 	 * 芝麻车主名片顺风车主的投诉率，用小数表示，原则上精确到小数点后四位

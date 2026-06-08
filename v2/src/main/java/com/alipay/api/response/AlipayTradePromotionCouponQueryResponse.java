@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.promotion.coupon.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-11 20:32:49
+ * @since 1.0, 2026-06-05 21:52:54
  */
 public class AlipayTradePromotionCouponQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8111171258314739173L;
+	private static final long serialVersionUID = 6335563872778836939L;
 
 	/** 
 	 * null

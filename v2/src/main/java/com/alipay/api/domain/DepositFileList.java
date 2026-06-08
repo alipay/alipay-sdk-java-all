@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DepositFileList extends AlipayObject {
 
-	private static final long serialVersionUID = 1561526968866318913L;
+	private static final long serialVersionUID = 8719891632531535318L;
 
 	/**
 	 * 文件存证成功后给出的证明文件

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.trade.promotion.coupon.create request
  * 
  * @author auto create
- * @since 1.0, 2026-05-26 10:07:49
+ * @since 1.0, 2026-06-05 21:52:54
  */
 public class AlipayTradePromotionCouponCreateRequest implements AlipayRequest<AlipayTradePromotionCouponCreateResponse> {
 
@@ -19,7 +19,7 @@ public class AlipayTradePromotionCouponCreateRequest implements AlipayRequest<Al
 	private String apiVersion="1.0";
 
 	/** 
-	* 订阅营销券创建
+	* 订阅营销优惠创建
 	 */
 	private String bizContent;
 

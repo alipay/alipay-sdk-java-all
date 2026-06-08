@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: antfortune.finresearch.model.consult request
  * 
  * @author auto create
- * @since 1.0, 2024-08-21 10:52:08
+ * @since 1.0, 2026-06-06 00:06:33
  */
 public class AntfortuneFinresearchModelConsultRequest implements AlipayRequest<AntfortuneFinresearchModelConsultResponse> {
 

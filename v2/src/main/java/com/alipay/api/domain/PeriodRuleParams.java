@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 周期扣款规则参数。使用周期扣款产品时需要传入，限定了发起扣款的周期、金额等。
  *
  * @author auto create
- * @since 1.0, 2024-11-18 15:48:33
+ * @since 1.0, 2026-06-04 16:19:20
  */
 public class PeriodRuleParams extends AlipayObject {
 
-	private static final long serialVersionUID = 2389117941261134575L;
+	private static final long serialVersionUID = 5113384197995573853L;
 
 	/**
 	 * 首次执行时间execute_time是周期扣款产品必填，即商户发起首次扣款的时间。精确到日，格式为yyyy-MM-dd
@@ -19,6 +19,12 @@ public class PeriodRuleParams extends AlipayObject {
 	 */
 	@ApiField("execute_time")
 	private String executeTime;
+
+	/**
+	 * 若签约中传该参数，且值为 Y ，则表示本次签约有试用期。若传值为 N 或不传该参数，则表示本次签约无试用期。
+	 */
+	@ApiField("is_trial_mode")
+	private String isTrialMode;
 
 	/**
 	 * 周期数period是周期扣款产品必填。与另一参数period_type组合使用确定扣款周期，例如period_type为DAY，period=90，则扣款周期为90天。
@@ -64,6 +70,13 @@ DAY即扣款周期按天计，MONTH代表扣款周期按自然月。
 	}
 	public void setExecuteTime(String executeTime) {
 		this.executeTime = executeTime;
+	}
+
+	public String getIsTrialMode() {
+		return this.isTrialMode;
+	}
+	public void setIsTrialMode(String isTrialMode) {
+		this.isTrialMode = isTrialMode;
 	}
 
 	public Long getPeriod() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-05-22 17:17:45
+ * @since 1.0, 2026-06-05 10:27:53
  */
 public class CustomerQueryResponseDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2855392167875388415L;
+	private static final long serialVersionUID = 4212947144581218314L;
 
 	/**
 	 * 客户bid
@@ -24,6 +24,12 @@ public class CustomerQueryResponseDTO extends AlipayObject {
 	 */
 	@ApiField("cid")
 	private String cid;
+
+	/**
+	 * 客户一二级行业
+	 */
+	@ApiField("customer_industry")
+	private String customerIndustry;
 
 	/**
 	 * 海图客户社会统一信用代码
@@ -61,6 +67,13 @@ public class CustomerQueryResponseDTO extends AlipayObject {
 	}
 	public void setCid(String cid) {
 		this.cid = cid;
+	}
+
+	public String getCustomerIndustry() {
+		return this.customerIndustry;
+	}
+	public void setCustomerIndustry(String customerIndustry) {
+		this.customerIndustry = customerIndustry;
 	}
 
 	public String getEpCertNo() {

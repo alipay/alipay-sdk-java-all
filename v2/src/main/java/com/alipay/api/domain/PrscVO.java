@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PrscVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7718526355835318569L;
+	private static final long serialVersionUID = 6162194215934228796L;
 
 	/**
 	 * 订单渠道,类型有O2O、B2C

@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.claim.attachment.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2026-04-24 15:02:45
+ * @since 1.0, 2026-06-05 13:31:03
  */
 public class AlipayInsSceneClaimAttachmentConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6223615861962797718L;
+	private static final long serialVersionUID = 5111453871837329841L;
 
 	/** 
 	 * 差异的文件清单列表

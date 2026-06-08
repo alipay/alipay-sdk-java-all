@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class BillInferenceResult extends AlipayObject {
 
-	private static final long serialVersionUID = 2636217312786166821L;
+	private static final long serialVersionUID = 3755177662542432933L;
 
 	/**
 	 * 角度

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class YpzOfflineQrCodeCardOne extends AlipayObject {
 
-	private static final long serialVersionUID = 6169794947141975278L;
+	private static final long serialVersionUID = 3326677974936477745L;
 
 	/**
 	 * 图片URL

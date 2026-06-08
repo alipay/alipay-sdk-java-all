@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppInvoiceExpensecontrolQuotaDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4782625176467131616L;
+	private static final long serialVersionUID = 2789373123292135946L;
 
 	/**
 	 * 企业id

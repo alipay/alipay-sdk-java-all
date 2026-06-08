@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.finresearch.agentframework.warrenq.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-03-10 15:28:52
+ * @since 1.0, 2026-06-06 00:06:33
  */
 public class AntfortuneFinresearchAgentframeworkWarrenqQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7292364148244191766L;
+	private static final long serialVersionUID = 1123931565166437725L;
 
 	/** 
 	 * 请求的唯一ID

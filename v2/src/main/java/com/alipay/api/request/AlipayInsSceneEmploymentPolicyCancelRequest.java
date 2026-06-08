@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.employment.policy.cancel request
  * 
  * @author auto create
- * @since 1.0, 2025-08-13 16:12:41
+ * @since 1.0, 2026-06-05 13:31:06
  */
 public class AlipayInsSceneEmploymentPolicyCancelRequest implements AlipayRequest<AlipayInsSceneEmploymentPolicyCancelResponse> {
 

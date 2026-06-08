@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AntfortuneQuotationResearchdataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7376353733362737539L;
+	private static final long serialVersionUID = 8597649332981888176L;
 
 	/**
 	 * 需要获取数据的结束时间

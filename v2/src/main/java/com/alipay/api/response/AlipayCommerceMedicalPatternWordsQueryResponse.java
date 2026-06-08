@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMedicalPatternWordsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5196657347356923666L;
+	private static final long serialVersionUID = 1743481498711454618L;
 
 	/** 
 	 * 底纹词数据列表

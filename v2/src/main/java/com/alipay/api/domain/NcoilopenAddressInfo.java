@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NcoilopenAddressInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2641772739442597782L;
+	private static final long serialVersionUID = 7594744327341848548L;
 
 	/**
 	 * 城市编码，通用2025款行政区划编码，依据GB/T 2260标准

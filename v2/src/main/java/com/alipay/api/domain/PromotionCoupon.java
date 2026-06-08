@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 优惠券信息
+ * 优惠信息
  *
  * @author auto create
- * @since 1.0, 2026-05-11 20:32:49
+ * @since 1.0, 2026-06-05 21:52:54
  */
 public class PromotionCoupon extends AlipayObject {
 
-	private static final long serialVersionUID = 4235928247322792182L;
+	private static final long serialVersionUID = 8192725889135151226L;
 
 	/**
 	 * 折扣10元金额 单位分
@@ -20,7 +20,7 @@ public class PromotionCoupon extends AlipayObject {
 	private Long amountOff;
 
 	/**
-	 * 优惠券编码
+	 * 优惠编码
 	 */
 	@ApiField("coupon_id")
 	private String couponId;
@@ -33,13 +33,13 @@ public class PromotionCoupon extends AlipayObject {
 	private String duration;
 
 	/**
-	 * 在接下来的3个计费周期可重复使用该优惠券
+	 * 在接下来的3个计费周期可重复使用该优惠
 	 */
 	@ApiField("duration_in_iterations")
 	private String durationInIterations;
 
 	/**
-	 * 优惠券名称
+	 * 优惠名称
 	 */
 	@ApiField("name")
 	private String name;
@@ -51,7 +51,7 @@ public class PromotionCoupon extends AlipayObject {
 	private Long percentOff;
 
 	/**
-	 * 优惠券到期时间
+	 * 优惠到期时间
 	 */
 	@ApiField("redeem_by")
 	private String redeemBy;

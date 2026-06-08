@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-05-28 17:32:52
+ * @since 1.0, 2026-06-05 17:32:56
  */
 public class LifeServiceTailPaymentOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 6348584874317287298L;
+	private static final long serialVersionUID = 2684762193694449469L;
 
 	/**
 	 * 取消原因
@@ -58,6 +58,12 @@ public class LifeServiceTailPaymentOrder extends AlipayObject {
 	@ApiListField("service_programs")
 	@ApiField("life_service_tail_payment_service_program")
 	private List<LifeServiceTailPaymentServiceProgram> servicePrograms;
+
+	/**
+	 * 尾款id
+	 */
+	@ApiField("tail_payment_id")
+	private String tailPaymentId;
 
 	/**
 	 * 尾款单id
@@ -124,6 +130,13 @@ public class LifeServiceTailPaymentOrder extends AlipayObject {
 	}
 	public void setServicePrograms(List<LifeServiceTailPaymentServiceProgram> servicePrograms) {
 		this.servicePrograms = servicePrograms;
+	}
+
+	public String getTailPaymentId() {
+		return this.tailPaymentId;
+	}
+	public void setTailPaymentId(String tailPaymentId) {
+		this.tailPaymentId = tailPaymentId;
 	}
 
 	public String getTailPaymentOrderId() {

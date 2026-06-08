@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: antfortune.finresearch.agentframework.warrenq.query request
  * 
  * @author auto create
- * @since 1.0, 2026-03-10 15:28:52
+ * @since 1.0, 2026-06-06 00:06:33
  */
 public class AntfortuneFinresearchAgentframeworkWarrenqQueryRequest implements AlipayRequest<AntfortuneFinresearchAgentframeworkWarrenqQueryResponse> {
 

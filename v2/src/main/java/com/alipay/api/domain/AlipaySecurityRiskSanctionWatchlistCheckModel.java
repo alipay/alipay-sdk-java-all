@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipaySecurityRiskSanctionWatchlistCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3531767368746136685L;
+	private static final long serialVersionUID = 4348779888987873464L;
 
 	/**
 	 * null

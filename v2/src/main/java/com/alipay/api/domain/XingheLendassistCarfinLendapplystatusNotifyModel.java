@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支用状态通知
  *
  * @author auto create
- * @since 1.0, 2026-05-15 17:14:56
+ * @since 1.0, 2026-06-05 13:51:11
  */
 public class XingheLendassistCarfinLendapplystatusNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1333969994441444564L;
+	private static final long serialVersionUID = 1692119156924255335L;
 
 	/**
 	 * 协议文件列表
@@ -76,6 +76,12 @@ public class XingheLendassistCarfinLendapplystatusNotifyModel extends AlipayObje
 	 */
 	@ApiField("need_change_bind_card")
 	private Boolean needChangeBindCard;
+
+	/**
+	 * 是否需要重签协议
+	 */
+	@ApiField("need_resign_agreement")
+	private Boolean needResignAgreement;
 
 	/**
 	 * 是否需要加急办理
@@ -200,6 +206,13 @@ public class XingheLendassistCarfinLendapplystatusNotifyModel extends AlipayObje
 	}
 	public void setNeedChangeBindCard(Boolean needChangeBindCard) {
 		this.needChangeBindCard = needChangeBindCard;
+	}
+
+	public Boolean getNeedResignAgreement() {
+		return this.needResignAgreement;
+	}
+	public void setNeedResignAgreement(Boolean needResignAgreement) {
+		this.needResignAgreement = needResignAgreement;
 	}
 
 	public Boolean getNeedUrgentProcessing() {

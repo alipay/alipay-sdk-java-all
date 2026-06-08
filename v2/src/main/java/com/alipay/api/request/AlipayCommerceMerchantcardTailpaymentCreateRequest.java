@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.merchantcard.tailpayment.create request
  * 
  * @author auto create
- * @since 1.0, 2026-05-26 14:07:45
+ * @since 1.0, 2026-06-05 17:32:56
  */
 public class AlipayCommerceMerchantcardTailpaymentCreateRequest implements AlipayRequest<AlipayCommerceMerchantcardTailpaymentCreateResponse> {
 
@@ -19,7 +19,7 @@ public class AlipayCommerceMerchantcardTailpaymentCreateRequest implements Alipa
 	private String apiVersion="1.0";
 
 	/** 
-	* 创建尾款单
+	* 创建尾款
 	 */
 	private String bizContent;
 

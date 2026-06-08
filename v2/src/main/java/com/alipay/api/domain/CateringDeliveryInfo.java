@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CateringDeliveryInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3484316476347489569L;
+	private static final long serialVersionUID = 4741174395154245117L;
 
 	/**
 	 * 骑手位置，单位是米。

@@ -4,17 +4,17 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 订阅营销券创建
+ * 订阅营销优惠创建
  *
  * @author auto create
- * @since 1.0, 2026-05-26 10:07:49
+ * @since 1.0, 2026-06-05 21:52:54
  */
 public class AlipayTradePromotionCouponCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7154173473822878298L;
+	private static final long serialVersionUID = 3148546389139927362L;
 
 	/**
-	 * 优惠券信息
+	 * 优惠信息
 	 */
 	@ApiField("request_info")
 	private PromotionCoupon requestInfo;

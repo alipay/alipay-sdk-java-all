@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingQipanTagbaseBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4722955637757448381L;
+	private static final long serialVersionUID = 4461986755564124294L;
 
 	/** 
 	 * 返回全部可用的圈选标签基本信息。

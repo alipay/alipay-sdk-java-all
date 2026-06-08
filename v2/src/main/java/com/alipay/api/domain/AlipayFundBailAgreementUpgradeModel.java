@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundBailAgreementUpgradeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6275495364675825177L;
+	private static final long serialVersionUID = 6488596895242359776L;
 
 	/**
 	 * 待升级保证金协议号

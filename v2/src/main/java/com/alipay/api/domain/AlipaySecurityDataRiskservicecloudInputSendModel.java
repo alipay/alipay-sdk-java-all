@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipaySecurityDataRiskservicecloudInputSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3562586274652919327L;
+	private static final long serialVersionUID = 3752167537415182822L;
 
 	/**
 	 * 标识本次协商的数据输入的唯一编码，由蚂蚁定义

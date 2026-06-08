@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportEtcCommandSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6627347313226917931L;
+	private static final long serialVersionUID = 3111362939524827323L;
 
 	/**
 	 * 业务发生时间；对应etc_switch_status的不同状态，当etc_switch_status=OPEN，为设备开启时间，etc_switch_status=CLOSE为设备关闭时间

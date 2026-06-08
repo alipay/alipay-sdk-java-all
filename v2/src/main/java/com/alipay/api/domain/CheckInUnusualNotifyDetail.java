@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CheckInUnusualNotifyDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3512587763785667266L;
+	private static final long serialVersionUID = 5881237766295399378L;
 
 	/**
 	 * 已打卡人数。

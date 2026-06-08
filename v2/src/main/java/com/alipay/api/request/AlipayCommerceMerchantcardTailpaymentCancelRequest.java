@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.merchantcard.tailpayment.cancel request
  * 
  * @author auto create
- * @since 1.0, 2026-05-15 16:27:45
+ * @since 1.0, 2026-06-05 17:32:56
  */
 public class AlipayCommerceMerchantcardTailpaymentCancelRequest implements AlipayRequest<AlipayCommerceMerchantcardTailpaymentCancelResponse> {
 
@@ -19,7 +19,7 @@ public class AlipayCommerceMerchantcardTailpaymentCancelRequest implements Alipa
 	private String apiVersion="1.0";
 
 	/** 
-	* 取消未支付的尾款单
+	* 取消未支付的尾款
 	 */
 	private String bizContent;
 

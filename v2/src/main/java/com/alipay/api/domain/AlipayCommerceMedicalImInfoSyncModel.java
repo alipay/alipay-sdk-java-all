@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ISV消息同步
  *
  * @author auto create
- * @since 1.0, 2026-05-14 15:02:45
+ * @since 1.0, 2026-06-05 17:57:54
  */
 public class AlipayCommerceMedicalImInfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8368197987483263649L;
+	private static final long serialVersionUID = 4776986965432539218L;
 
 	/**
 	 * SAAS履约单ID

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.commercial.order.create response.
  * 
  * @author auto create
- * @since 1.0, 2026-06-03 14:26:25
+ * @since 1.0, 2026-06-04 21:51:20
  */
 public class AlipayTradeCommercialOrderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1793849786178651935L;
+	private static final long serialVersionUID = 1331943453794257531L;
 
 	/** 
 	 * 本次支付的收银台地址，可用于302跳转

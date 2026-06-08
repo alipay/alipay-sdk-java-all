@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FlowProtocol extends AlipayObject {
 
-	private static final long serialVersionUID = 1467398653336612314L;
+	private static final long serialVersionUID = 5586645347297485963L;
 
 	/**
 	 * 用户协议

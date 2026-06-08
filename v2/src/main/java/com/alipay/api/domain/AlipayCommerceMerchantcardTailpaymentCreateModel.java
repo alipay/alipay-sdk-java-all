@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * 创建尾款单
+ * 创建尾款
  *
  * @author auto create
- * @since 1.0, 2026-05-26 14:07:45
+ * @since 1.0, 2026-06-05 17:32:56
  */
 public class AlipayCommerceMerchantcardTailpaymentCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4441329792423132849L;
+	private static final long serialVersionUID = 3346183267647693587L;
 
 	/**
 	 * 预约品必填；

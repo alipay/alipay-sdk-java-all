@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayTerminalEdgecloudHeyagentCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7231965846122924143L;
+	private static final long serialVersionUID = 6662428582678696775L;
 
 	/**
 	 * 是否是acr

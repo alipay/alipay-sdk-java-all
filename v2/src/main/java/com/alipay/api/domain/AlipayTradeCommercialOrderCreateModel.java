@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商业订单创建接口
  *
  * @author auto create
- * @since 1.0, 2026-06-03 14:26:25
+ * @since 1.0, 2026-06-04 21:51:20
  */
 public class AlipayTradeCommercialOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5785628856323715258L;
+	private static final long serialVersionUID = 4186475472985499854L;
 
 	/**
 	 * agent类型，当intiator_type=AGENT时必传

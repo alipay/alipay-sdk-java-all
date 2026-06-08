@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RoboRoutingPoint extends AlipayObject {
 
-	private static final long serialVersionUID = 2636467149668163774L;
+	private static final long serialVersionUID = 2199886886496743766L;
 
 	/**
 	 * 点位信息

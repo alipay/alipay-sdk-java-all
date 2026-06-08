@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RentServiceProtocolVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7894436319283324915L;
+	private static final long serialVersionUID = 8353911238713889856L;
 
 	/**
 	 * 租赁协议名称

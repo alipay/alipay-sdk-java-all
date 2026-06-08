@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.underwrite.user.policy.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-04-24 15:02:45
+ * @since 1.0, 2026-06-05 13:31:15
  */
 public class AlipayInsUnderwriteUserPolicyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4498174678229242431L;
+	private static final long serialVersionUID = 5749258793247456492L;
 
 	/** 
 	 * 查询到的用户拥有的保单列表，含所有查询状态对应的保单，排序规则按照，保险保障开始时间倒序

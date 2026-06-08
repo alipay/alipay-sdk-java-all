@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaCreditEpOrgfourelementsMatchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5635235942419317899L;
+	private static final long serialVersionUID = 1556474145464445669L;
 
 	/** 
 	 * 四要素匹配结果码

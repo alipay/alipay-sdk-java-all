@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: antfortune.finresearch.model.consult response.
  * 
  * @author auto create
- * @since 1.0, 2024-08-21 10:52:08
+ * @since 1.0, 2026-06-06 00:06:33
  */
 public class AntfortuneFinresearchModelConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6489611822439734817L;
+	private static final long serialVersionUID = 4668169742934824215L;
 
 	/** 
 	 * 模型的返回结果

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 渠道扩展信息
  *
  * @author auto create
- * @since 1.0, 2025-09-18 21:24:23
+ * @since 1.0, 2026-06-04 19:14:33
  */
 public class ChannelDetailParams extends AlipayObject {
 
-	private static final long serialVersionUID = 6463952614839755875L;
+	private static final long serialVersionUID = 2567773573961147311L;
 
 	/**
 	 * 预付卡分组名称
@@ -48,6 +48,12 @@ public class ChannelDetailParams extends AlipayObject {
 	 */
 	@ApiField("refuse_code")
 	private String refuseCode;
+
+	/**
+	 * 芝麻对外部商户用户是否有意愿开通芝麻免密下单的意愿分级，1为高意愿用户，0为低意向用户
+	 */
+	@ApiField("use_agreement_pay_willingness")
+	private String useAgreementPayWillingness;
 
 	/**
 	 * 用户是否已签约
@@ -95,6 +101,13 @@ public class ChannelDetailParams extends AlipayObject {
 	}
 	public void setRefuseCode(String refuseCode) {
 		this.refuseCode = refuseCode;
+	}
+
+	public String getUseAgreementPayWillingness() {
+		return this.useAgreementPayWillingness;
+	}
+	public void setUseAgreementPayWillingness(String useAgreementPayWillingness) {
+		this.useAgreementPayWillingness = useAgreementPayWillingness;
 	}
 
 	public String getUserHasSign() {

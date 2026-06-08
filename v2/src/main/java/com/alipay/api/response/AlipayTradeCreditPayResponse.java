@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.credit.pay response.
  * 
  * @author auto create
- * @since 1.0, 2026-04-18 00:07:38
+ * @since 1.0, 2026-06-04 21:48:03
  */
 public class AlipayTradeCreditPayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8116938859839172126L;
+	private static final long serialVersionUID = 4639994477887825859L;
 
 	/** 
 	 * 在未生成真实交易时，不返回，需要商户调用交易查询接口或接入支付通知，获取最终的用户信息

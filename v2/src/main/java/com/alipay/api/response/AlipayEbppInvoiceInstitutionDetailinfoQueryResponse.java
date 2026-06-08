@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.invoice.institution.detailinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-25 17:56:48
+ * @since 1.0, 2026-06-05 11:22:55
  */
 public class AlipayEbppInvoiceInstitutionDetailinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7245789569187953124L;
+	private static final long serialVersionUID = 7379424943249513953L;
 
 	/** 
 	 * 若适用范围为EMPLOYEE_ALL，则表示制度对企业下全员生效，owner_id_list不返回；若适配范围为EMPLOYEE_SELECT，owner_id_list返回员工对应的id信息，返回的id类型通过owner_type区分；若适配范围为EMPLOYEE_DEPARTMENT，则表示对指定的部门生效，返回owner_id_list为部门id列表
@@ -117,6 +117,12 @@ public class AlipayEbppInvoiceInstitutionDetailinfoQueryResponse extends AlipayR
 	 */
 	@ApiField("owner_type")
 	private String ownerType;
+
+	/** 
+	 * 费控制度出资类型
+	 */
+	@ApiField("payment_mode")
+	private String paymentMode;
 
 	/** 
 	 * 因公场景
@@ -247,6 +253,13 @@ public class AlipayEbppInvoiceInstitutionDetailinfoQueryResponse extends AlipayR
 	}
 	public String getOwnerType( ) {
 		return this.ownerType;
+	}
+
+	public void setPaymentMode(String paymentMode) {
+		this.paymentMode = paymentMode;
+	}
+	public String getPaymentMode( ) {
+		return this.paymentMode;
 	}
 
 	public void setSceneType(String sceneType) {

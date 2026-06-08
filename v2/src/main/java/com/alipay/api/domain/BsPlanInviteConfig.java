@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BsPlanInviteConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 2755243165462999863L;
+	private static final long serialVersionUID = 8576264468294338529L;
 
 	/**
 	 * 计划报名、邀约结束时间

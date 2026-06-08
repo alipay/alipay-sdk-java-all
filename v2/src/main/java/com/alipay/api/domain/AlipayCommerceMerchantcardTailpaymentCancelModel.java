@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 取消未支付的尾款单
+ * 取消未支付的尾款
  *
  * @author auto create
- * @since 1.0, 2026-05-15 16:27:45
+ * @since 1.0, 2026-06-05 17:32:56
  */
 public class AlipayCommerceMerchantcardTailpaymentCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7268554776678927922L;
+	private static final long serialVersionUID = 8261538776346484239L;
 
 	/**
 	 * 取消原因
@@ -20,10 +20,10 @@ public class AlipayCommerceMerchantcardTailpaymentCancelModel extends AlipayObje
 	private String cancelReason;
 
 	/**
-	 * 尾款单id
+	 * 尾款id
 	 */
-	@ApiField("tail_payment_order_id")
-	private String tailPaymentOrderId;
+	@ApiField("tail_payment_id")
+	private String tailPaymentId;
 
 	public String getCancelReason() {
 		return this.cancelReason;
@@ -32,11 +32,11 @@ public class AlipayCommerceMerchantcardTailpaymentCancelModel extends AlipayObje
 		this.cancelReason = cancelReason;
 	}
 
-	public String getTailPaymentOrderId() {
-		return this.tailPaymentOrderId;
+	public String getTailPaymentId() {
+		return this.tailPaymentId;
 	}
-	public void setTailPaymentOrderId(String tailPaymentOrderId) {
-		this.tailPaymentOrderId = tailPaymentOrderId;
+	public void setTailPaymentId(String tailPaymentId) {
+		this.tailPaymentId = tailPaymentId;
 	}
 
 }

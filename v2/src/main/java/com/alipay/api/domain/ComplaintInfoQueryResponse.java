@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 投诉详情查询结果
  *
  * @author auto create
- * @since 1.0, 2024-07-12 14:25:51
+ * @since 1.0, 2026-06-04 11:13:13
  */
 public class ComplaintInfoQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 2899964292777429274L;
+	private static final long serialVersionUID = 4653778185197969353L;
 
 	/**
 	 * 投诉单涉及交易总金额（单位：人民币元）
@@ -67,10 +67,29 @@ public class ComplaintInfoQueryResponse extends AlipayObject {
 	private Date gmtRiskFinishTime;
 
 	/**
+	 * 升级投诉时间
+	 */
+	@ApiField("gmt_upgrade")
+	private Date gmtUpgrade;
+
+	/**
+	 * 升级投诉推送时间
+	 */
+	@ApiField("gmt_upgrade_risk_finish_time")
+	private Date gmtUpgradeRiskFinishTime;
+
+	/**
 	 * 投诉主表的主键id，查询详情时使用本id进行查询
 	 */
 	@ApiField("id")
 	private Long id;
+
+	/**
+	 * 投诉记录的生效标签名称列表
+	 */
+	@ApiListField("label_tag_list")
+	@ApiField("string")
+	private List<String> labelTagList;
 
 	/**
 	 * 投诉单中被投诉方的名称
@@ -133,6 +152,12 @@ public class ComplaintInfoQueryResponse extends AlipayObject {
 	@ApiField("trade_no")
 	private String tradeNo;
 
+	/**
+	 * 用户升级投诉内容
+	 */
+	@ApiField("upgrade_content")
+	private String upgradeContent;
+
 	public String getComplainAmount() {
 		return this.complainAmount;
 	}
@@ -189,11 +214,32 @@ public class ComplaintInfoQueryResponse extends AlipayObject {
 		this.gmtRiskFinishTime = gmtRiskFinishTime;
 	}
 
+	public Date getGmtUpgrade() {
+		return this.gmtUpgrade;
+	}
+	public void setGmtUpgrade(Date gmtUpgrade) {
+		this.gmtUpgrade = gmtUpgrade;
+	}
+
+	public Date getGmtUpgradeRiskFinishTime() {
+		return this.gmtUpgradeRiskFinishTime;
+	}
+	public void setGmtUpgradeRiskFinishTime(Date gmtUpgradeRiskFinishTime) {
+		this.gmtUpgradeRiskFinishTime = gmtUpgradeRiskFinishTime;
+	}
+
 	public Long getId() {
 		return this.id;
 	}
 	public void setId(Long id) {
 		this.id = id;
+	}
+
+	public List<String> getLabelTagList() {
+		return this.labelTagList;
+	}
+	public void setLabelTagList(List<String> labelTagList) {
+		this.labelTagList = labelTagList;
 	}
 
 	public String getOppositeName() {
@@ -264,6 +310,13 @@ public class ComplaintInfoQueryResponse extends AlipayObject {
 	}
 	public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
+	}
+
+	public String getUpgradeContent() {
+		return this.upgradeContent;
+	}
+	public void setUpgradeContent(String upgradeContent) {
+		this.upgradeContent = upgradeContent;
 	}
 
 }

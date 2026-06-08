@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AxfItemCategoryQualificationReq extends AlipayObject {
 
-	private static final long serialVersionUID = 8316519239982952684L;
+	private static final long serialVersionUID = 2523897193717232899L;
 
 	/**
 	 * null

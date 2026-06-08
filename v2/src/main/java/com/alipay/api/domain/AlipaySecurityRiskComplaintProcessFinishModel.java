@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 处理消费者投诉
  *
  * @author auto create
- * @since 1.0, 2025-12-16 15:20:13
+ * @since 1.0, 2026-06-04 11:13:06
  */
 public class AlipaySecurityRiskComplaintProcessFinishModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6355398477114651439L;
+	private static final long serialVersionUID = 1176599535976569197L;
 
 	/**
 	 * 本次进行处理的投诉id列表(主表主键)
@@ -43,7 +43,7 @@ public class AlipaySecurityRiskComplaintProcessFinishModel extends AlipayObject 
 	private String remark;
 
 	/**
-	 * 该功能为在客诉工单完结对客留言，切勿出现带有辱骂词语。
+	 * 该功能为在客诉工单完结时对客留言，切勿出现带有辱骂词语。
 	 */
 	@ApiField("reply_content")
 	private String replyContent;

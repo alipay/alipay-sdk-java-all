@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 制度新增
  *
  * @author auto create
- * @since 1.0, 2025-06-19 14:12:55
+ * @since 1.0, 2026-06-05 11:18:34
  */
 public class AlipayEbppInvoiceInstitutionCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2739821822356768433L;
+	private static final long serialVersionUID = 4655784495368358239L;
 
 	/**
 	 * 企业共同账户id（该字段将废弃，不建议使用，可用enterprise_id字段替换） 当前字段已废弃(该字段将废弃，不建议使用，可用enterprise_id字段替换)
@@ -133,6 +133,12 @@ public class AlipayEbppInvoiceInstitutionCreateModel extends AlipayObject {
 	@ApiField("owner_type")
 	@Deprecated
 	private String ownerType;
+
+	/**
+	 * 费控制度的出资类型
+	 */
+	@ApiField("payment_mode")
+	private String paymentMode;
 
 	/**
 	 * 因公场景 当前字段已废弃(该字段将废弃，不建议使用)
@@ -272,6 +278,13 @@ public class AlipayEbppInvoiceInstitutionCreateModel extends AlipayObject {
 	}
 	public void setOwnerType(String ownerType) {
 		this.ownerType = ownerType;
+	}
+
+	public String getPaymentMode() {
+		return this.paymentMode;
+	}
+	public void setPaymentMode(String paymentMode) {
+		this.paymentMode = paymentMode;
 	}
 
 	public String getSceneType() {

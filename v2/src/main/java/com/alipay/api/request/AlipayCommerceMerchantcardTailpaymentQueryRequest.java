@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.merchantcard.tailpayment.query request
  * 
  * @author auto create
- * @since 1.0, 2026-05-28 17:32:52
+ * @since 1.0, 2026-06-05 17:32:56
  */
 public class AlipayCommerceMerchantcardTailpaymentQueryRequest implements AlipayRequest<AlipayCommerceMerchantcardTailpaymentQueryResponse> {
 

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.merchantcard.tailpayment.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-28 17:32:52
+ * @since 1.0, 2026-06-05 17:32:56
  */
 public class AlipayCommerceMerchantcardTailpaymentQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8721318883274996765L;
+	private static final long serialVersionUID = 7739721911177477927L;
 
 	/** 
 	 * null

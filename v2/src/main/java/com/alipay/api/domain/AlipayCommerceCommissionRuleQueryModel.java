@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceCommissionRuleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7536313731264268534L;
+	private static final long serialVersionUID = 8558469942557266317L;
 
 	/**
 	 * 蚂蚁门店id，用于水平权限鉴权。可通过ant.merchant.expand.shop.create创建蚂蚁门店获取

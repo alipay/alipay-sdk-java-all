@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZmepTaxViolationInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6174813749368136664L;
+	private static final long serialVersionUID = 6361777725344579276L;
 
 	/**
 	 * 案件性质

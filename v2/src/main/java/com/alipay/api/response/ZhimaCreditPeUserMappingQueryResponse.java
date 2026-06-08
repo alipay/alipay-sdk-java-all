@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaCreditPeUserMappingQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5563749782166969677L;
+	private static final long serialVersionUID = 6635963952895626779L;
 
 	/** 
 	 * 芝麻分映射到白鹭分的结果，例如映射后的白鹭分：710

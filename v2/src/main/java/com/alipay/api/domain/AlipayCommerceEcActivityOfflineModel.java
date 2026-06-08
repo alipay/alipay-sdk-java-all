@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceEcActivityOfflineModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5129857575848246378L;
+	private static final long serialVersionUID = 5386467435336719314L;
 
 	/**
 	 * 员工价活动id，用于指定需要下线的活动；通过 alipay.commerce.ec.activity.discount.create 创建活动

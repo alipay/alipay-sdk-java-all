@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.ecommerce.tradeevent.sync request
  * 
  * @author auto create
- * @since 1.0, 2025-06-04 10:02:28
+ * @since 1.0, 2026-06-05 13:31:07
  */
 public class AlipayInsSceneEcommerceTradeeventSyncRequest implements AlipayRequest<AlipayInsSceneEcommerceTradeeventSyncResponse> {
 

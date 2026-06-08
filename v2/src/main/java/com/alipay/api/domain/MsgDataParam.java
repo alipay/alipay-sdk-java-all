@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 问诊类消息列表
  *
  * @author auto create
- * @since 1.0, 2026-05-14 15:02:45
+ * @since 1.0, 2026-06-05 17:57:54
  */
 public class MsgDataParam extends AlipayObject {
 
-	private static final long serialVersionUID = 6472241376261874876L;
+	private static final long serialVersionUID = 7355761796238979423L;
 
 	/**
 	 * 问诊订单ID
@@ -81,6 +81,13 @@ public class MsgDataParam extends AlipayObject {
 	 */
 	@ApiField("redirect_url")
 	private String redirectUrl;
+
+	/**
+	 * null
+	 */
+	@ApiListField("redirect_url_params")
+	@ApiField("redirect_url_param")
+	private List<RedirectUrlParam> redirectUrlParams;
 
 	/**
 	 * null
@@ -164,6 +171,13 @@ public class MsgDataParam extends AlipayObject {
 	}
 	public void setRedirectUrl(String redirectUrl) {
 		this.redirectUrl = redirectUrl;
+	}
+
+	public List<RedirectUrlParam> getRedirectUrlParams() {
+		return this.redirectUrlParams;
+	}
+	public void setRedirectUrlParams(List<RedirectUrlParam> redirectUrlParams) {
+		this.redirectUrlParams = redirectUrlParams;
 	}
 
 	public List<String> getRedirectUrls() {

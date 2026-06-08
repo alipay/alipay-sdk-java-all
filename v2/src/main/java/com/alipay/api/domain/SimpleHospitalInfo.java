@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 医院信息
  *
  * @author auto create
- * @since 1.0, 2026-04-16 17:47:45
+ * @since 1.0, 2026-06-04 14:21:55
  */
 public class SimpleHospitalInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1557927384558182297L;
+	private static final long serialVersionUID = 2537598587913253784L;
 
 	/**
 	 * String	好大夫医院id

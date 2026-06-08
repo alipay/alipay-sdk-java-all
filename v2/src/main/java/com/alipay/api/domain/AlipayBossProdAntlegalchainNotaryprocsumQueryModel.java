@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayBossProdAntlegalchainNotaryprocsumQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3825525714733328672L;
+	private static final long serialVersionUID = 6745416898923625112L;
 
 	/**
 	 * 法链签约业务ID，发起签约会返回对应的ID值

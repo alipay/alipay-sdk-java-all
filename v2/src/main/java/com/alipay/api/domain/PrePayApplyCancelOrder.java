@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PrePayApplyCancelOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 8247772277179554829L;
+	private static final long serialVersionUID = 5515799789514874247L;
 
 	/**
 	 * 预付取消金额 cent为分 1元=100分

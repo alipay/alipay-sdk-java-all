@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ConsultItem extends AlipayObject {
 
-	private static final long serialVersionUID = 8843219866673656734L;
+	private static final long serialVersionUID = 6361329228965451561L;
 
 	/**
 	 * 咨询属性字段，如license_no(医生执业证号)

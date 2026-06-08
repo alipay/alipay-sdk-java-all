@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.provider.collaborate.task.sync request
  * 
  * @author auto create
- * @since 1.0, 2026-03-26 16:32:44
+ * @since 1.0, 2026-06-05 10:37:40
  */
 public class AlipayOfflineProviderCollaborateTaskSyncRequest implements AlipayRequest<AlipayOfflineProviderCollaborateTaskSyncResponse> {
 
