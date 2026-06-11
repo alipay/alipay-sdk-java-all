@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.pe.user.change.sync response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-25 19:52:46
+ * @since 1.0, 2026-06-10 14:27:54
  */
 public class ZhimaCreditPeUserChangeSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8711728257562364791L;
+	private static final long serialVersionUID = 5512732994425614414L;
 
 	/** 
 	 * 用于标记支付宝用户在应用下的唯一标识

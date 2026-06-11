@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 供给跳链查询
  *
  * @author auto create
- * @since 1.0, 2026-06-01 15:03:27
+ * @since 1.0, 2026-06-09 20:59:00
  */
 public class AlipayCommerceEcSupplierUrlQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5625623225758952115L;
+	private static final long serialVersionUID = 1555783714193878496L;
 
 	/**
 	 * 员工id
@@ -40,10 +40,22 @@ public class AlipayCommerceEcSupplierUrlQueryModel extends AlipayObject {
 	private Boolean needSignUrl;
 
 	/**
+	 * 需要跳转订单详情页的企业码订单ID，可以从订单详情接口获得
+	 */
+	@ApiField("order_id")
+	private String orderId;
+
+	/**
 	 * 供给id
 	 */
 	@ApiField("service_id")
 	private String serviceId;
+
+	/**
+	 * 跳转URL类型
+	 */
+	@ApiField("url_type")
+	private String urlType;
 
 	public String getEmployeeId() {
 		return this.employeeId;
@@ -73,11 +85,25 @@ public class AlipayCommerceEcSupplierUrlQueryModel extends AlipayObject {
 		this.needSignUrl = needSignUrl;
 	}
 
+	public String getOrderId() {
+		return this.orderId;
+	}
+	public void setOrderId(String orderId) {
+		this.orderId = orderId;
+	}
+
 	public String getServiceId() {
 		return this.serviceId;
 	}
 	public void setServiceId(String serviceId) {
 		this.serviceId = serviceId;
+	}
+
+	public String getUrlType() {
+		return this.urlType;
+	}
+	public void setUrlType(String urlType) {
+		this.urlType = urlType;
 	}
 
 }

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOfflineProviderNpassporterVerifyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8818949628921985547L;
+	private static final long serialVersionUID = 1522488952694279137L;
 
 	/** 
 	 * 用户手机号

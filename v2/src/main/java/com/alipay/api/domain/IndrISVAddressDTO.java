@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业缴费ISV地址DTO
  *
  * @author auto create
- * @since 1.0, 2023-05-06 14:29:29
+ * @since 1.0, 2026-06-11 14:43:05
  */
 public class IndrISVAddressDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7665866459716978833L;
+	private static final long serialVersionUID = 4357326953185236211L;
 
 	/**
 	 * 长度100，如果为中文，支付宝侧会做英文翻译，翻译后的地址也需要长度小于100，不能包含特殊字符

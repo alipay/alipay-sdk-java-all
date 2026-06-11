@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MyxiaojinFinanceAtsbudgetBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5542873476186428858L;
+	private static final long serialVersionUID = 3557933966375861129L;
 
 	/** 
 	 * 页码数

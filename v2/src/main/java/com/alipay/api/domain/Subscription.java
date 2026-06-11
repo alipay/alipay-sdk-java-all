@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-05-27 19:12:26
+ * @since 1.0, 2026-06-08 21:57:53
  */
 public class Subscription extends AlipayObject {
 
-	private static final long serialVersionUID = 5233165592285756883L;
+	private static final long serialVersionUID = 2877274178726641782L;
 
 	/**
 	 * true - 周期结束状态生效
@@ -52,6 +52,12 @@ false - 周期结束依旧生效
 	 */
 	@ApiField("customer_id")
 	private String customerId;
+
+	/**
+	 * 有限枚举，托管扣款类型。1.SUBSCRIBE_DEDUCT：托管模式（支付宝自动扣款，默认）；2.MERCHANT_DEDUCT：非托管模式（商户自助扣款）
+	 */
+	@ApiField("deduct_type")
+	private String deductType;
 
 	/**
 	 * null
@@ -149,6 +155,13 @@ false - 周期结束依旧生效
 	}
 	public void setCustomerId(String customerId) {
 		this.customerId = customerId;
+	}
+
+	public String getDeductType() {
+		return this.deductType;
+	}
+	public void setDeductType(String deductType) {
+		this.deductType = deductType;
 	}
 
 	public List<SubscriptionQueryItem> getItems() {

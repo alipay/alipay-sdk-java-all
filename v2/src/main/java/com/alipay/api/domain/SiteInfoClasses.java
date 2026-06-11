@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 企业站点信息
  *
  * @author auto create
- * @since 1.0, 2026-04-27 09:57:34
+ * @since 1.0, 2026-06-10 15:38:01
  */
 public class SiteInfoClasses extends AlipayObject {
 
-	private static final long serialVersionUID = 2141899413756618761L;
+	private static final long serialVersionUID = 2519614665445917566L;
 
 	/**
 	 * 地址
@@ -236,7 +236,7 @@ public class SiteInfoClasses extends AlipayObject {
 
 	/**
 	 * 企业简称
-多个使用,隔开
+多个使用;隔开
 	 */
 	@ApiField("site_info_abbreviation")
 	private String siteInfoAbbreviation;
@@ -246,6 +246,12 @@ public class SiteInfoClasses extends AlipayObject {
 	 */
 	@ApiField("site_info_business_location")
 	private String siteInfoBusinessLocation;
+
+	/**
+	 * 联系方式
+	 */
+	@ApiField("site_info_contact_information")
+	private String siteInfoContactInformation;
 
 	/**
 	 * 企业实力证明文件
@@ -566,6 +572,13 @@ public class SiteInfoClasses extends AlipayObject {
 	}
 	public void setSiteInfoBusinessLocation(String siteInfoBusinessLocation) {
 		this.siteInfoBusinessLocation = siteInfoBusinessLocation;
+	}
+
+	public String getSiteInfoContactInformation() {
+		return this.siteInfoContactInformation;
+	}
+	public void setSiteInfoContactInformation(String siteInfoContactInformation) {
+		this.siteInfoContactInformation = siteInfoContactInformation;
 	}
 
 	public List<FileInfoClasses> getSiteInfoEnterpriseCertFileList() {

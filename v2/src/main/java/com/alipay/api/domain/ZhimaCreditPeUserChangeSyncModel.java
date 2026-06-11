@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用城市同步用户信息
  *
  * @author auto create
- * @since 1.0, 2026-05-25 18:24:50
+ * @since 1.0, 2026-06-10 10:20:18
  */
 public class ZhimaCreditPeUserChangeSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8212199913853772465L;
+	private static final long serialVersionUID = 3386563522513367217L;
 
 	/**
 	 * 开通/授权协议号
@@ -48,7 +48,7 @@ N：非新开通
 	private String outRequestNo;
 
 	/**
-	 * 白鹭分等级（极好/优秀/良好/中等/较差）
+	 * 白鹭分等级（极好/优秀/良好/中等/待提升）
 	 */
 	@ApiField("score_level")
 	private String scoreLevel;

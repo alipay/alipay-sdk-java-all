@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPcreditHuabeiPcreditbenefitFuncardbenefitSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5512823596933588626L;
+	private static final long serialVersionUID = 5568821844532525424L;
 
 	/**
 	 * 支付宝用户的userId。
@@ -20,7 +20,7 @@ public class AlipayPcreditHuabeiPcreditbenefitFuncardbenefitSendModel extends Al
 	private String alipayUserId;
 
 	/**
-	 * 发放的花呗金数量，花呗金单位 个，1个花呗金等价于1分
+	 * 直发花呗金场景：发放的花呗金数量，花呗金单位 个，1个花呗金等价于1分，飞猪场景可以传飞猪履约金额用于发奖定价
 	 */
 	@ApiField("amount")
 	private Long amount;
@@ -38,7 +38,7 @@ public class AlipayPcreditHuabeiPcreditbenefitFuncardbenefitSendModel extends Al
 	private String openId;
 
 	/**
-	 * 业务场景
+	 * 业务场景，飞猪可以填入履约场景，枚举可以飞猪给出后续进行扩展
 	 */
 	@ApiField("scene")
 	private String scene;

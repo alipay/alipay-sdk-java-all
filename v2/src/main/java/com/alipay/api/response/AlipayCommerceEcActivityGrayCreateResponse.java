@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.activity.gray.create response.
  * 
  * @author auto create
- * @since 1.0, 2026-01-05 14:37:41
+ * @since 1.0, 2026-06-11 17:04:13
  */
 public class AlipayCommerceEcActivityGrayCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6515912184888381291L;
+	private static final long serialVersionUID = 7659284892526165659L;
 
 	/** 
 	 * 用户扫码加入指定的营销活动测试企业，用于活动灰度测试。

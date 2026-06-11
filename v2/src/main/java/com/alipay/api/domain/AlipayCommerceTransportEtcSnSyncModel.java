@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 端外渠道ETC设备信息同步
  *
  * @author auto create
- * @since 1.0, 2026-05-09 10:48:33
+ * @since 1.0, 2026-06-08 17:10:20
  */
 public class AlipayCommerceTransportEtcSnSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5558678738797638144L;
+	private static final long serialVersionUID = 7773888114963863224L;
 
 	/**
 	 * etc卡号

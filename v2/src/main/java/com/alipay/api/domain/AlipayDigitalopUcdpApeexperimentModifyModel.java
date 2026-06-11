@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDigitalopUcdpApeexperimentModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5684167522869348276L;
+	private static final long serialVersionUID = 3328786953433449524L;
 
 	/**
 	 * 主要有四种操作类型createExperiment（创建新实验），adjustFlow(调整流量），offlineExperiment（下线当前实验），launchExperiment(推全算法版本),closeExperiment(关闭推荐)

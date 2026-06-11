@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DelegationParams extends AlipayObject {
 
-	private static final long serialVersionUID = 8255943584826636151L;
+	private static final long serialVersionUID = 4466746349198998621L;
 
 	/**
 	 * 对AI付代买委托意图做描述

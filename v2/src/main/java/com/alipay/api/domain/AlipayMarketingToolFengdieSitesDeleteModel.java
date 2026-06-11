@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingToolFengdieSitesDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4858975275944776233L;
+	private static final long serialVersionUID = 2153618441244834629L;
 
 	/**
 	 * 待删除的站点 ID

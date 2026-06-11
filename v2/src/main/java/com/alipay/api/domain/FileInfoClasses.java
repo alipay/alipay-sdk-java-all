@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 产品介绍的文件
  *
  * @author auto create
- * @since 1.0, 2026-04-27 09:57:34
+ * @since 1.0, 2026-06-10 15:38:01
  */
 public class FileInfoClasses extends AlipayObject {
 
-	private static final long serialVersionUID = 4318767922532439337L;
+	private static final long serialVersionUID = 8141378287472762747L;
+
+	/**
+	 * orc识别文件内容markdown格式
+	 */
+	@ApiField("agent_recognized_content")
+	private String agentRecognizedContent;
 
 	/**
 	 * 文件产品描述
@@ -36,6 +42,13 @@ public class FileInfoClasses extends AlipayObject {
 	 */
 	@ApiField("url")
 	private String url;
+
+	public String getAgentRecognizedContent() {
+		return this.agentRecognizedContent;
+	}
+	public void setAgentRecognizedContent(String agentRecognizedContent) {
+		this.agentRecognizedContent = agentRecognizedContent;
+	}
 
 	public String getDescription() {
 		return this.description;

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MallLadderPriceDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2468728565124335321L;
+	private static final long serialVersionUID = 1178217538736669278L;
 
 	/**
 	 * 阶梯价格关联的商品报价Id值

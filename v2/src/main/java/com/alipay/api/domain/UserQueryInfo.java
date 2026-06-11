@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户信息
  *
  * @author auto create
- * @since 1.0, 2026-05-25 15:42:30
+ * @since 1.0, 2026-06-09 10:47:57
  */
 public class UserQueryInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6479132675998177629L;
+	private static final long serialVersionUID = 2264233622819359949L;
+
+	/**
+	 * saas系统账号
+	 */
+	@ApiField("account")
+	private String account;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识
@@ -36,6 +42,13 @@ public class UserQueryInfo extends AlipayObject {
 	 */
 	@ApiField("virtual_uid")
 	private String virtualUid;
+
+	public String getAccount() {
+		return this.account;
+	}
+	public void setAccount(String account) {
+		this.account = account;
+	}
 
 	public String getOpenId() {
 		return this.openId;

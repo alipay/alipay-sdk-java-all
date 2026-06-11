@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class LtBidAskLevelDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6853233845322766887L;
+	private static final long serialVersionUID = 7698677852825364659L;
 
 	/**
 	 * 大单占比，百分比

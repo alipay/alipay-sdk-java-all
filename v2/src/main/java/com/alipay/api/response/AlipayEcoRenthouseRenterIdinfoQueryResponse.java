@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoRenthouseRenterIdinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6471132583459776318L;
+	private static final long serialVersionUID = 3592268625274881352L;
 
 	/** 
 	 * 状态值（已授权、未授权、未知）

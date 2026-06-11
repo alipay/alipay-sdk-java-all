@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RentCarLocation extends AlipayObject {
 
-	private static final long serialVersionUID = 6257411974728166464L;
+	private static final long serialVersionUID = 1488718876467112215L;
 
 	/**
 	 * 城市代码，以民政部2020Q1全国行政区划代码为标准，查询地址 https://www.mca.gov.cn/n156/n186/c110747/content.html

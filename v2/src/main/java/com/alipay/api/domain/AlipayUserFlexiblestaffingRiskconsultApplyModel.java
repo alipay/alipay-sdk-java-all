@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 灵工风控预咨询
  *
  * @author auto create
- * @since 1.0, 2025-11-21 15:33:42
+ * @since 1.0, 2026-06-11 15:20:39
  */
 public class AlipayUserFlexiblestaffingRiskconsultApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4281953626189669611L;
+	private static final long serialVersionUID = 3395231514464765315L;
 
 	/**
 	 * 场景码
@@ -58,6 +61,13 @@ Account Limit Risk：限权风险咨询
 	 */
 	@ApiField("risk_scene")
 	private String riskScene;
+
+	/**
+	 * 限额子场景，仅Account Limit Risk 限权风险咨询场景可选传参，其他场景无需传参
+	 */
+	@ApiListField("special_check_items")
+	@ApiField("string")
+	private List<String> specialCheckItems;
 
 	public String getBizScene() {
 		return this.bizScene;
@@ -106,6 +116,13 @@ Account Limit Risk：限权风险咨询
 	}
 	public void setRiskScene(String riskScene) {
 		this.riskScene = riskScene;
+	}
+
+	public List<String> getSpecialCheckItems() {
+		return this.specialCheckItems;
+	}
+	public void setSpecialCheckItems(List<String> specialCheckItems) {
+		this.specialCheckItems = specialCheckItems;
 	}
 
 }

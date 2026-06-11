@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 下线员工价活动
  *
  * @author auto create
- * @since 1.0, 2025-12-10 15:02:31
+ * @since 1.0, 2026-06-11 17:02:12
  */
 public class AlipayCommerceEcActivityOfflineModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5386467435336719314L;
+	private static final long serialVersionUID = 2151428625919961356L;
 
 	/**
 	 * 员工价活动id，用于指定需要下线的活动；通过 alipay.commerce.ec.activity.discount.create 创建活动

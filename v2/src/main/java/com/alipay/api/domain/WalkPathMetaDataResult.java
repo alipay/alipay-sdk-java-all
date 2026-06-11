@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class WalkPathMetaDataResult extends AlipayObject {
 
-	private static final long serialVersionUID = 8765423392428819445L;
+	private static final long serialVersionUID = 5821397473434574874L;
 
 	/**
 	 * 路线元数据列表

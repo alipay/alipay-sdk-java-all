@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingShowwindowContentQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2322514459886232977L;
+	private static final long serialVersionUID = 6783251538348725762L;
 
 	/** 
 	 * 每个设备的节目投放状态

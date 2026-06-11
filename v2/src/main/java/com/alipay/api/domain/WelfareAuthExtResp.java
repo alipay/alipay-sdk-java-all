@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class WelfareAuthExtResp extends AlipayObject {
 
-	private static final long serialVersionUID = 1383196215166642548L;
+	private static final long serialVersionUID = 1836156979466175965L;
 
 	/**
 	 * 该参数用来标识用户来源，是供应商不同的场景传入对应的来源，蚂蚁EAP会根据此来判断员工是否在权益范围内

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntMerchantExpandAddresssearchQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3436829459159552899L;
+	private static final long serialVersionUID = 3479484344698193195L;
 
 	/** 
 	 * 经纬度,名称和地址以及省市区信息,是一个集合List

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SortDeskParam extends AlipayObject {
 
-	private static final long serialVersionUID = 6164898446963522299L;
+	private static final long serialVersionUID = 6377214371561277153L;
 
 	/**
 	 * 区域ID

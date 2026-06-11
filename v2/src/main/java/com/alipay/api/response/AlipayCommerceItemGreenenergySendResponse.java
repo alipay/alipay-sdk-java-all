@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceItemGreenenergySendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4838242333645688241L;
+	private static final long serialVersionUID = 8739823538385837439L;
 
 	/** 
 	 * 能量数量,单位g

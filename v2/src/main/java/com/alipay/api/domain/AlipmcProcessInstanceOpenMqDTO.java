@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipmcProcessInstanceOpenMqDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5784856939929929116L;
+	private static final long serialVersionUID = 1214931943955835921L;
 
 	/**
 	 * appKey

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.aigc.aipicture.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-17 13:53:23
+ * @since 1.0, 2026-06-10 15:15:18
  */
 public class AlipayUserAigcAipictureQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1353379221696675418L;
+	private static final long serialVersionUID = 4758761773948786334L;
 
 	/** 
 	 * 高清图图片ID

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RightsResult extends AlipayObject {
 
-	private static final long serialVersionUID = 3538715766859469184L;
+	private static final long serialVersionUID = 2147846196417422319L;
 
 	/**
 	 * 是否有权益

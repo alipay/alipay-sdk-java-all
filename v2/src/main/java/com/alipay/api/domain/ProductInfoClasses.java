@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 产品信息
  *
  * @author auto create
- * @since 1.0, 2026-04-27 09:57:34
+ * @since 1.0, 2026-06-10 15:38:01
  */
 public class ProductInfoClasses extends AlipayObject {
 
-	private static final long serialVersionUID = 2299389865861259875L;
+	private static final long serialVersionUID = 6429256854238926169L;
+
+	/**
+	 * 经营品类
+	 */
+	@ApiField("business_category")
+	private String businessCategory;
 
 	/**
 	 * 产品介绍文件集合
@@ -48,6 +54,13 @@ public class ProductInfoClasses extends AlipayObject {
 	@ApiListField("service_url")
 	@ApiField("string")
 	private List<String> serviceUrl;
+
+	public String getBusinessCategory() {
+		return this.businessCategory;
+	}
+	public void setBusinessCategory(String businessCategory) {
+		this.businessCategory = businessCategory;
+	}
 
 	public List<FileInfoClasses> getFileList() {
 		return this.fileList;

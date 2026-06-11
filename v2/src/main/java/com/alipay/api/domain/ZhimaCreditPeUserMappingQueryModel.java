@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 芝麻用户映射白鹭分信息查询
  *
  * @author auto create
- * @since 1.0, 2026-05-26 14:55:33
+ * @since 1.0, 2026-06-10 10:21:23
  */
 public class ZhimaCreditPeUserMappingQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7543496364899989527L;
+	private static final long serialVersionUID = 5392757521695121244L;
 
 	/**
 	 * 开通/授权成功后生成的协议号，用于标记本次开通/授权的唯一标识

@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceHousingHouseSaleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2755915698852748849L;
+	private static final long serialVersionUID = 1531238176679524933L;
 
 	/** 
 	 * 卫生间数量，单位：个

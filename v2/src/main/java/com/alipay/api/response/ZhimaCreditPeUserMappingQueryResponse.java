@@ -9,11 +9,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.pe.user.mapping.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-26 15:02:49
+ * @since 1.0, 2026-06-10 14:57:56
  */
 public class ZhimaCreditPeUserMappingQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6635963952895626779L;
+	private static final long serialVersionUID = 5777535399424658263L;
+
+	/** 
+	 * 开通/授权成功后生成的协议号，用于标记本次开通/授权的唯一标识
+	 */
+	@ApiField("credit_agreement_id")
+	private String creditAgreementId;
 
 	/** 
 	 * 芝麻分映射到白鹭分的结果，例如映射后的白鹭分：710
@@ -50,6 +56,13 @@ public class ZhimaCreditPeUserMappingQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("user_phone")
 	private ZmUserDetailModel userPhone;
+
+	public void setCreditAgreementId(String creditAgreementId) {
+		this.creditAgreementId = creditAgreementId;
+	}
+	public String getCreditAgreementId( ) {
+		return this.creditAgreementId;
+	}
 
 	public void setMappedScore(String mappedScore) {
 		this.mappedScore = mappedScore;

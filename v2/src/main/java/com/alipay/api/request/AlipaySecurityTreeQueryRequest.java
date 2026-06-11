@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.tree.query request
  * 
  * @author auto create
- * @since 1.0, 2026-06-04 18:37:55
+ * @since 1.0, 2026-06-08 17:37:56
  */
 public class AlipaySecurityTreeQueryRequest implements AlipayRequest<AlipaySecurityTreeQueryResponse> {
 

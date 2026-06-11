@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOfflineProviderExpoCoilBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2441621847822316654L;
+	private static final long serialVersionUID = 3868221969295574338L;
 
 	/**
 	 * 活动创建接口的返回值中包含活动id

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RentEnterpriseCertification extends AlipayObject {
 
-	private static final long serialVersionUID = 5163581211544522649L;
+	private static final long serialVersionUID = 3241252992648556773L;
 
 	/**
 	 * 代理人手机号

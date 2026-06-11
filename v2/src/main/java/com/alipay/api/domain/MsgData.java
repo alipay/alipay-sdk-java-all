@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 消息列表
  *
  * @author auto create
- * @since 1.0, 2026-04-10 16:25:17
+ * @since 1.0, 2026-06-09 13:49:35
  */
 public class MsgData extends AlipayObject {
 
-	private static final long serialVersionUID = 8496887476251679952L;
+	private static final long serialVersionUID = 6259452172342869678L;
 
 	/**
 	 * 问诊订单ID
@@ -102,6 +102,12 @@ public class MsgData extends AlipayObject {
 	 */
 	@ApiField("redirect_url")
 	private String redirectUrl;
+
+	/**
+	 * 跳转URL对象列表
+	 */
+	@ApiField("redirect_url_params")
+	private RedirectUrlParam redirectUrlParams;
 
 	/**
 	 * 服务包过期时间，格式：yyyy-MM-dd HH:mm:ss
@@ -230,6 +236,13 @@ public class MsgData extends AlipayObject {
 	}
 	public void setRedirectUrl(String redirectUrl) {
 		this.redirectUrl = redirectUrl;
+	}
+
+	public RedirectUrlParam getRedirectUrlParams() {
+		return this.redirectUrlParams;
+	}
+	public void setRedirectUrlParams(RedirectUrlParam redirectUrlParams) {
+		this.redirectUrlParams = redirectUrlParams;
 	}
 
 	public String getServiceEndTime() {

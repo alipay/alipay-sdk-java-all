@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AnttechNftPoapDistributeSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3243424553946634888L;
+	private static final long serialVersionUID = 8231872829995474319L;
 
 	/** 
 	 * 勋章ID

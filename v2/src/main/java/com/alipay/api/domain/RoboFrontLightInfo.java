@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RoboFrontLightInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5347637848378948924L;
+	private static final long serialVersionUID = 6145966887286983222L;
 
 	/**
 	 * 当前车前灯的类型，枚举1-6，为0则是没开启

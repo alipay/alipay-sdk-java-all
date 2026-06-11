@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOverseasTravelMessagesSendNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4686551572158144883L;
+	private static final long serialVersionUID = 8188438655416793825L;
 
 	/**
 	 * 消息参数，钱包服务端使用该字段值去组装对应的模板参数

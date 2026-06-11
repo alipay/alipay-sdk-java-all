@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LeadsDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8614682552336859271L;
+	private static final long serialVersionUID = 5468922533783451257L;
 
 	/**
 	 * BD团队名称

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayIserviceIssalaryPayQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1577428889834387392L;
+	private static final long serialVersionUID = 6725171389254931641L;
 
 	/** 
 	 * 小二发薪结果列表

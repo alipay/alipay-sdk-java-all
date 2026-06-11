@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.supplier.url.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-06-04 21:23:34
+ * @since 1.0, 2026-06-10 16:42:56
  */
 public class AlipayCommerceEcSupplierUrlQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4732537154349272852L;
+	private static final long serialVersionUID = 8115374675173951523L;
 
 	/** 
 	 * 供给跳链或者签约跳链，由url_type决定

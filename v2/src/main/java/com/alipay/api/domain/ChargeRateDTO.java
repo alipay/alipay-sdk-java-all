@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ChargeRateDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6463751111154343162L;
+	private static final long serialVersionUID = 3688836648118963283L;
 
 	/**
 	 * 业务类型

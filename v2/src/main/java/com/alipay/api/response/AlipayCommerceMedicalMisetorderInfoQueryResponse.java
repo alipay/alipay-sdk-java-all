@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMedicalMisetorderInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6246821916186817644L;
+	private static final long serialVersionUID = 3877249299317365432L;
 
 	/** 
 	 * 人员证书编号，用于唯一标识证书。

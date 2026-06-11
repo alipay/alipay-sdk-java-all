@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ScanDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6627171231683945217L;
+	private static final long serialVersionUID = 8358174199767497117L;
 
 	/**
 	 * 扫描报告

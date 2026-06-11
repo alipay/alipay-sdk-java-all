@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OrderBuyResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 8132274547238846981L;
+	private static final long serialVersionUID = 8281125847571736695L;
 
 	/**
 	 * 交易组件订单号。可以把获取到的order_id作为alipay.trade.create（统一收单交易创建接口）extend_params.trade_component_order_id的入参进行关联。

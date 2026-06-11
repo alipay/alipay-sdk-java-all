@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CircularAgreementRelation extends AlipayObject {
 
-	private static final long serialVersionUID = 7783491135195648392L;
+	private static final long serialVersionUID = 8797179388858984624L;
 
 	/**
 	 * 绑定的收款钱包信息Id

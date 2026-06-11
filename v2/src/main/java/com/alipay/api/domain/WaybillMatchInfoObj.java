@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class WaybillMatchInfoObj extends AlipayObject {
 
-	private static final long serialVersionUID = 8158342242147262764L;
+	private static final long serialVersionUID = 2616125884135469161L;
 
 	/**
 	 * 物流公司编码

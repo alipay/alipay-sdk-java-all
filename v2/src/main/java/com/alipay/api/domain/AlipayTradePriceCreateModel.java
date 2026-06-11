@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 价格创建
  *
  * @author auto create
- * @since 1.0, 2026-06-04 21:51:41
+ * @since 1.0, 2026-06-08 19:47:57
  */
 public class AlipayTradePriceCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6313183623973366844L;
+	private static final long serialVersionUID = 2286451244747451975L;
 
 	/**
 	 * 自定义单价，当 unit_amount 为空时必选

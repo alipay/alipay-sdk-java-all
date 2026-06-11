@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AnttechNftFileUrlQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2387595344764238612L;
+	private static final long serialVersionUID = 3366197333346774852L;
 
 	/** 
 	 * 私有URL的token

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechOceanbaseObglobalSfleadsmemberDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5699318641881124869L;
+	private static final long serialVersionUID = 6789913876359383546L;
 
 	/**
 	 * 提供给SalesForce删除项目组成员入参

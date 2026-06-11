@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiMallScanpurchasePreorderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1591466393784485787L;
+	private static final long serialVersionUID = 4542343727331525544L;
 
 	/** 
 	 * 预订单编号

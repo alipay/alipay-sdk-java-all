@@ -1,6 +1,8 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.VoucherInfoResponse;
 
 import com.alipay.api.AlipayResponse;
@@ -9,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.employee.voucher.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-23 16:44:29
+ * @since 1.0, 2026-06-10 16:17:55
  */
 public class AlipayCommerceEcEmployeeVoucherQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6481514133666498487L;
+	private static final long serialVersionUID = 4235389193577546882L;
 
 	/** 
 	 * 页码
@@ -38,6 +40,13 @@ public class AlipayCommerceEcEmployeeVoucherQueryResponse extends AlipayResponse
 	 */
 	@ApiField("voucher_info_list")
 	private VoucherInfoResponse voucherInfoList;
+
+	/** 
+	 * 券列表
+	 */
+	@ApiListField("voucher_info_response_list")
+	@ApiField("voucher_info_response")
+	private List<VoucherInfoResponse> voucherInfoResponseList;
 
 	public void setPageNum(Long pageNum) {
 		this.pageNum = pageNum;
@@ -65,6 +74,13 @@ public class AlipayCommerceEcEmployeeVoucherQueryResponse extends AlipayResponse
 	}
 	public VoucherInfoResponse getVoucherInfoList( ) {
 		return this.voucherInfoList;
+	}
+
+	public void setVoucherInfoResponseList(List<VoucherInfoResponse> voucherInfoResponseList) {
+		this.voucherInfoResponseList = voucherInfoResponseList;
+	}
+	public List<VoucherInfoResponse> getVoucherInfoResponseList( ) {
+		return this.voucherInfoResponseList;
 	}
 
 }

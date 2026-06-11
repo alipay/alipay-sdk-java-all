@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.msaas.mediarecog.aivisionstored.airetailevent.sync response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-15 14:07:49
+ * @since 1.0, 2026-06-09 17:27:56
  */
 public class AlipayMsaasMediarecogAivisionstoredAiretaileventSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2521359258552497865L;
+	private static final long serialVersionUID = 7258579516672617236L;
 
 	/** 
 	 * 返回数据信息

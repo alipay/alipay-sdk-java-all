@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DeliveryFullSendConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 8565754612844612477L;
+	private static final long serialVersionUID = 5312143297565577122L;
 
 	/**
 	 * 投放展位的投放内容。

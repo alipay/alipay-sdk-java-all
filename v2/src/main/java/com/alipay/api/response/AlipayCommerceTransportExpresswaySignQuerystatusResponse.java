@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.expressway.sign.querystatus response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-18 14:42:45
+ * @since 1.0, 2026-06-08 15:02:56
  */
 public class AlipayCommerceTransportExpresswaySignQuerystatusResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1763157131766959296L;
+	private static final long serialVersionUID = 3766115532491169326L;
 
 	/** 
 	 * 支付宝车牌付代扣协议号，该协议号是经过车牌付业务域包装过的，只有该业务域能解析。

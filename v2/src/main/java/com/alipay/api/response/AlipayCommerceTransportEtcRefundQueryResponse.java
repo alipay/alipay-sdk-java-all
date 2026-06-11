@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportEtcRefundQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3642953276822685981L;
+	private static final long serialVersionUID = 7781968573341957965L;
 
 	/** 
 	 * 商户侧唯一的行程号

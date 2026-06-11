@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 结果
  *
  * @author auto create
- * @since 1.0, 2023-06-29 14:51:09
+ * @since 1.0, 2026-06-11 14:43:05
  */
 public class TuitionISVResult extends AlipayObject {
 
-	private static final long serialVersionUID = 2548622353883335361L;
+	private static final long serialVersionUID = 8892492725171716293L;
 
 	/**
 	 * 结果码

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝个人协议页面签约接口
  *
  * @author auto create
- * @since 1.0, 2026-05-11 20:31:48
+ * @since 1.0, 2026-06-09 22:29:54
  */
 public class AlipayUserAgreementPageSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1898536819759541134L;
+	private static final long serialVersionUID = 8431183141563485985L;
 
 	/**
 	 * 请按当前接入的方式进行填充，且输入值必须为文档中的参数取值范围。
@@ -74,6 +74,12 @@ public class AlipayUserAgreementPageSignModel extends AlipayObject {
 	private String merchantProcessUrl;
 
 	/**
+	 * 原协议号，适用于自动续购等签约完成时需要解约原协议号的场景，需要与sign_sub_operate_type等字段联合使用
+	 */
+	@ApiField("ori_agreement_no")
+	private String oriAgreementNo;
+
+	/**
 	 * 商户可通过支付产品接口回传订单或外部账户相关数据（敏感数据可加密后回传），结合支付宝内部已有的数据，可以有效提升对风险交易的识别及对可信交易的保护。支付宝针对风险交易的管控包括但不限于：交易提醒、交易拦截等；针对可信账户、可信渠道、可信交易等将重点保障支付体验。
 	 */
 	@ApiField("out_risk_info")
@@ -121,6 +127,12 @@ public class AlipayUserAgreementPageSignModel extends AlipayObject {
 	 */
 	@ApiField("sign_scene")
 	private String signScene;
+
+	/**
+	 * 签约子操作类型，通用签约能力能力扩展字段
+	 */
+	@ApiField("sign_sub_operate_type")
+	private String signSubOperateType;
 
 	/**
 	 * 当前用户签约请求的协议有效周期。
@@ -239,6 +251,13 @@ public class AlipayUserAgreementPageSignModel extends AlipayObject {
 		this.merchantProcessUrl = merchantProcessUrl;
 	}
 
+	public String getOriAgreementNo() {
+		return this.oriAgreementNo;
+	}
+	public void setOriAgreementNo(String oriAgreementNo) {
+		this.oriAgreementNo = oriAgreementNo;
+	}
+
 	public String getOutRiskInfo() {
 		return this.outRiskInfo;
 	}
@@ -293,6 +312,13 @@ public class AlipayUserAgreementPageSignModel extends AlipayObject {
 	}
 	public void setSignScene(String signScene) {
 		this.signScene = signScene;
+	}
+
+	public String getSignSubOperateType() {
+		return this.signSubOperateType;
+	}
+	public void setSignSubOperateType(String signSubOperateType) {
+		this.signSubOperateType = signSubOperateType;
 	}
 
 	public String getSignValidityPeriod() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalMisetorderOrdernoBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7738425299931375442L;
+	private static final long serialVersionUID = 5553455652744235321L;
 
 	/**
 	 * 默认值为1

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DeductionDataSyncRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 4357621273311676946L;
+	private static final long serialVersionUID = 7278371844397799533L;
 
 	/**
 	 * 业务id，唯一键标识
