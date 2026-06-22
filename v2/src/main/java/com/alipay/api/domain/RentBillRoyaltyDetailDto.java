@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 资商通分账明细模型
  *
  * @author auto create
- * @since 1.0, 2025-08-29 22:16:50
+ * @since 1.0, 2026-06-17 17:10:34
  */
 public class RentBillRoyaltyDetailDto extends AlipayObject {
 
-	private static final long serialVersionUID = 6769698971974524144L;
+	private static final long serialVersionUID = 7179198834627272563L;
 
 	/**
 	 * 实际分账金额，单位元
@@ -28,6 +28,12 @@ public class RentBillRoyaltyDetailDto extends AlipayObject {
 	 */
 	@ApiField("biz_order_id")
 	private String bizOrderId;
+
+	/**
+	 * 代偿触发的场景下，balance_account 余额户代偿、compensation_account 安全发代偿，正常支付分账则不会有这个值
+	 */
+	@ApiField("compensation_fund_channel")
+	private String compensationFundChannel;
 
 	/**
 	 * 分账资方pid
@@ -126,6 +132,13 @@ public class RentBillRoyaltyDetailDto extends AlipayObject {
 	}
 	public void setBizOrderId(String bizOrderId) {
 		this.bizOrderId = bizOrderId;
+	}
+
+	public String getCompensationFundChannel() {
+		return this.compensationFundChannel;
+	}
+	public void setCompensationFundChannel(String compensationFundChannel) {
+		this.compensationFundChannel = compensationFundChannel;
 	}
 
 	public String getInvestId() {

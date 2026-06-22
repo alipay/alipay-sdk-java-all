@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.recyclinginvoice.farmer.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-06-10 11:04:23
+ * @since 1.0, 2026-06-16 17:27:57
  */
 public class AlipayCommerceEcRecyclinginvoiceFarmerQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7456984654895556617L;
+	private static final long serialVersionUID = 6652499138382646718L;
 
 	/** 
 	 * 支付宝账号
@@ -30,6 +30,18 @@ public class AlipayCommerceEcRecyclinginvoiceFarmerQueryResponse extends AlipayR
 	private String accountType;
 
 	/** 
+	 * 归属承包主身份证号
+	 */
+	@ApiField("belong_contractor_cert_no")
+	private String belongContractorCertNo;
+
+	/** 
+	 * 归属家庭主身份证号
+	 */
+	@ApiField("belong_family_head_cert_no")
+	private String belongFamilyHeadCertNo;
+
+	/** 
 	 * 农户身份证件号
 	 */
 	@ApiField("cert_no")
@@ -42,7 +54,7 @@ public class AlipayCommerceEcRecyclinginvoiceFarmerQueryResponse extends AlipayR
 	private String confirmStatus;
 
 	/** 
-	 * 农户授权链接
+	 * 农户代卖人授权链接
 	 */
 	@ApiField("farmer_auth_url")
 	private String farmerAuthUrl;
@@ -74,6 +86,12 @@ public class AlipayCommerceEcRecyclinginvoiceFarmerQueryResponse extends AlipayR
 	private List<String> farmerTypeList;
 
 	/** 
+	 * 是否承包主（1=是，0=否）
+	 */
+	@ApiField("is_contractor")
+	private String isContractor;
+
+	/** 
 	 * 是否为家庭主人/家庭主导者
 	 */
 	@ApiField("is_family_master")
@@ -103,6 +121,20 @@ public class AlipayCommerceEcRecyclinginvoiceFarmerQueryResponse extends AlipayR
 	}
 	public String getAccountType( ) {
 		return this.accountType;
+	}
+
+	public void setBelongContractorCertNo(String belongContractorCertNo) {
+		this.belongContractorCertNo = belongContractorCertNo;
+	}
+	public String getBelongContractorCertNo( ) {
+		return this.belongContractorCertNo;
+	}
+
+	public void setBelongFamilyHeadCertNo(String belongFamilyHeadCertNo) {
+		this.belongFamilyHeadCertNo = belongFamilyHeadCertNo;
+	}
+	public String getBelongFamilyHeadCertNo( ) {
+		return this.belongFamilyHeadCertNo;
 	}
 
 	public void setCertNo(String certNo) {
@@ -152,6 +184,13 @@ public class AlipayCommerceEcRecyclinginvoiceFarmerQueryResponse extends AlipayR
 	}
 	public List<String> getFarmerTypeList( ) {
 		return this.farmerTypeList;
+	}
+
+	public void setIsContractor(String isContractor) {
+		this.isContractor = isContractor;
+	}
+	public String getIsContractor( ) {
+		return this.isContractor;
 	}
 
 	public void setIsFamilyMaster(String isFamilyMaster) {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部指定买家
  *
  * @author auto create
- * @since 1.0, 2024-04-17 14:26:37
+ * @since 1.0, 2026-06-16 11:13:33
  */
 public class ExtUserInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6225136167938592235L;
+	private static final long serialVersionUID = 7122819465531914144L;
 
 	/**
 	 * 买家证件号。
@@ -28,7 +28,8 @@ PASSPORT：护照；
 OFFICER_CARD：军官证；
 SOLDIER_CARD：士兵证；
 HOKOU：户口本；
-PERMANENT_RESIDENCE_FOREIGNER：外国人永久居留身份证。
+PERMANENT_RESIDENCE_FOREIGNER：外国人永久居留身份证；
+BUSINESS_LICENSE：营业执照。
 如有其它类型需要支持，请与蚂蚁金服工作人员联系。
 注： need_check_info=T或fix_buyer=T时该参数才有效，支付宝会比较买家在支付宝留存的证件类型与该参数传入的值是否匹配。
 	 */
@@ -57,6 +58,7 @@ PERMANENT_RESIDENCE_FOREIGNER：外国人永久居留身份证。
 注：
 1. need_check_info=T时该参数才有效
 2. min_age为整数，必须大于等于0
+3. 仅支持cert_type=IDENTITY_CARD(身份证)时传入
 	 */
 	@ApiField("min_age")
 	private String minAge;

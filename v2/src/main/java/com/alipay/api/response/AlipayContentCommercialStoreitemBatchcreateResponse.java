@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayContentCommercialStoreitemBatchcreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2676817855336599229L;
+	private static final long serialVersionUID = 2219928472831278772L;
 
 	/** 
 	 * 带货车商品相关信息结果

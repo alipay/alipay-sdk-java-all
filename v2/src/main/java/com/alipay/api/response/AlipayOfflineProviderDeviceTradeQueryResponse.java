@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.provider.device.trade.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-04-02 14:07:44
+ * @since 1.0, 2026-06-16 14:27:55
  */
 public class AlipayOfflineProviderDeviceTradeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7466184967844365216L;
+	private static final long serialVersionUID = 8628774783129137644L;
 
 	/** 
 	 * 累计有效交易笔数

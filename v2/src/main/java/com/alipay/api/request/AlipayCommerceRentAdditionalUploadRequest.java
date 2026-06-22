@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.rent.additional.upload request
  * 
  * @author auto create
- * @since 1.0, 2026-04-24 17:02:48
+ * @since 1.0, 2026-06-15 13:57:56
  */
 public class AlipayCommerceRentAdditionalUploadRequest implements AlipayRequest<AlipayCommerceRentAdditionalUploadResponse> {
 

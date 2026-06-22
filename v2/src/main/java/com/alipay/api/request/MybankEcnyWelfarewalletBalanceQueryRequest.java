@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.ecny.welfarewallet.balance.query request
  * 
  * @author auto create
- * @since 1.0, 2026-04-22 16:42:46
+ * @since 1.0, 2026-06-16 17:32:56
  */
 public class MybankEcnyWelfarewalletBalanceQueryRequest implements AlipayRequest<MybankEcnyWelfarewalletBalanceQueryResponse> {
 

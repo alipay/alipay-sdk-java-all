@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建抽佣规则
  *
  * @author auto create
- * @since 1.0, 2026-06-11 15:10:44
+ * @since 1.0, 2026-06-17 10:42:55
  */
 public class AlipayCommerceCommissionRuleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4523353593197211666L;
+	private static final long serialVersionUID = 4822533189229886796L;
 
 	/**
 	 * 蚂蚁门店id，用于水平权限鉴权。可通过ant.merchant.expand.shop.create创建蚂蚁门店获取

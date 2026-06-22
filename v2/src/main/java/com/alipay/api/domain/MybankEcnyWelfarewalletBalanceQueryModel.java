@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数字人民币福利钱包余额查询
  *
  * @author auto create
- * @since 1.0, 2026-04-22 16:41:18
+ * @since 1.0, 2026-06-16 17:31:08
  */
 public class MybankEcnyWelfarewalletBalanceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7365786571559795935L;
+	private static final long serialVersionUID = 2122363899368224579L;
 
 	/**
 	 * 固定为STKJ，商通科技简称

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RoboTimeSlot extends AlipayObject {
 
-	private static final long serialVersionUID = 3815653578582887864L;
+	private static final long serialVersionUID = 1518471979562267516L;
 
 	/**
 	 * 结束时间

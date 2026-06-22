@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DeviceSettleApplicantResult extends AlipayObject {
 
-	private static final long serialVersionUID = 4639721913145161545L;
+	private static final long serialVersionUID = 7823168582954685852L;
 
 	/**
 	 * 是需要设备厂商录入的sn号

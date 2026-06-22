@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.commission.rule.query request
  * 
  * @author auto create
- * @since 1.0, 2026-06-11 17:04:09
+ * @since 1.0, 2026-06-17 10:52:56
  */
 public class AlipayCommerceCommissionRuleQueryRequest implements AlipayRequest<AlipayCommerceCommissionRuleQueryResponse> {
 

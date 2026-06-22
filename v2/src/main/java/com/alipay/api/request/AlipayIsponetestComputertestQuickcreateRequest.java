@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.isponetest.computertest.quickcreate request
  * 
  * @author auto create
- * @since 1.0, 2025-09-08 10:13:31
+ * @since 1.0, 2026-06-17 10:52:17
  */
 public class AlipayIsponetestComputertestQuickcreateRequest implements AlipayRequest<AlipayIsponetestComputertestQuickcreateResponse> {
 

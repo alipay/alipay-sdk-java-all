@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntfortuneContentCommunityTopicListQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5396384581923273232L;
+	private static final long serialVersionUID = 5461782227218942285L;
 
 	/** 
 	 * 话题VO列表

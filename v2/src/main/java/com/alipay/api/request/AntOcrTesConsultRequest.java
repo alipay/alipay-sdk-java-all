@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: ant.ocr.tes.consult request
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:28:52
+ * @since 1.0, 2026-06-17 10:57:58
  */
 public class AntOcrTesConsultRequest implements AlipayRequest<AntOcrTesConsultResponse> {
 

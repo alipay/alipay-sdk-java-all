@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 四川商通员工福利钱包余额查询
  *
  * @author auto create
- * @since 1.0, 2026-05-25 14:01:58
+ * @since 1.0, 2026-06-16 17:33:42
  */
 public class MybankEcnyWelfarewalletOpenPreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5181545629149922692L;
+	private static final long serialVersionUID = 5857113513169126468L;
 
 	/**
 	 * 客户姓名

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用于返回用户信息（姓名、证件号码、证件类型、手机号）
  *
  * @author auto create
- * @since 1.0, 2025-11-17 16:02:47
+ * @since 1.0, 2026-06-17 13:35:58
  */
 public class BianQueUserAuthDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5694964447436676193L;
+	private static final long serialVersionUID = 8271798614985488443L;
 
 	/**
 	 * 用户证件号码

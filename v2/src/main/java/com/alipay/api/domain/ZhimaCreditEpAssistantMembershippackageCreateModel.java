@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企信助手会员包创建
  *
  * @author auto create
- * @since 1.0, 2026-04-13 22:17:45
+ * @since 1.0, 2026-06-16 14:48:30
  */
 public class ZhimaCreditEpAssistantMembershippackageCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8326255868742252666L;
+	private static final long serialVersionUID = 2665446119442185755L;
 
 	/**
 	 * 统一社会信用代码。如果无法获取统一社会信用代码，也可以传递伙伴侧的企业标识，需要可以唯一标识一家企业

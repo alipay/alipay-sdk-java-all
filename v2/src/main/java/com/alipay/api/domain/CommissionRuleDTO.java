@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 待生效的抽佣规则
  *
  * @author auto create
- * @since 1.0, 2026-06-11 17:04:09
+ * @since 1.0, 2026-06-17 10:52:56
  */
 public class CommissionRuleDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5326342743598794941L;
+	private static final long serialVersionUID = 5695768489943828838L;
 
 	/**
 	 * 被抽佣支付宝登录号

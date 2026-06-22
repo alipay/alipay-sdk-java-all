@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.bq.login.certify response.
  * 
  * @author auto create
- * @since 1.0, 2025-11-17 16:02:47
+ * @since 1.0, 2026-06-17 13:35:58
  */
 public class AlipayCommerceMedicalBqLoginCertifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5788475964553494545L;
+	private static final long serialVersionUID = 2147782164924323591L;
 
 	/** 
 	 * 用于返回用户信息（姓名、证件号码、证件类型、手机号）

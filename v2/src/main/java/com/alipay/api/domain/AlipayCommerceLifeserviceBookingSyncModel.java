@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 生活服务预约信息回传
  *
  * @author auto create
- * @since 1.0, 2026-02-26 17:52:44
+ * @since 1.0, 2026-06-18 14:57:57
  */
 public class AlipayCommerceLifeserviceBookingSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2341649966782112858L;
+	private static final long serialVersionUID = 4529474783827171551L;
 
 	/**
 	 * 操作动作
@@ -34,6 +34,12 @@ public class AlipayCommerceLifeserviceBookingSyncModel extends AlipayObject {
 	 */
 	@ApiField("booking_id")
 	private String bookingId;
+
+	/**
+	 * 拒绝理由
+	 */
+	@ApiField("reject_reason")
+	private String rejectReason;
 
 	/**
 	 * 蚂蚁门店id
@@ -60,6 +66,13 @@ public class AlipayCommerceLifeserviceBookingSyncModel extends AlipayObject {
 	}
 	public void setBookingId(String bookingId) {
 		this.bookingId = bookingId;
+	}
+
+	public String getRejectReason() {
+		return this.rejectReason;
+	}
+	public void setRejectReason(String rejectReason) {
+		this.rejectReason = rejectReason;
 	}
 
 	public String getShopId() {

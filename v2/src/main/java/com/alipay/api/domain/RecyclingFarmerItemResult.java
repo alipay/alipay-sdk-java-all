@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询农户产粮响应信息
  *
  * @author auto create
- * @since 1.0, 2026-04-29 14:58:44
+ * @since 1.0, 2026-06-16 16:50:43
  */
 public class RecyclingFarmerItemResult extends AlipayObject {
 
-	private static final long serialVersionUID = 4711729253498335416L;
+	private static final long serialVersionUID = 6473565924816952867L;
+
+	/**
+	 * 产粮记录ID
+	 */
+	@ApiField("farmer_item_id")
+	private String farmerItemId;
 
 	/**
 	 * 数量
@@ -44,6 +50,13 @@ public class RecyclingFarmerItemResult extends AlipayObject {
 	 */
 	@ApiField("tax_code")
 	private String taxCode;
+
+	public String getFarmerItemId() {
+		return this.farmerItemId;
+	}
+	public void setFarmerItemId(String farmerItemId) {
+		this.farmerItemId = farmerItemId;
+	}
 
 	public String getItemNum() {
 		return this.itemNum;

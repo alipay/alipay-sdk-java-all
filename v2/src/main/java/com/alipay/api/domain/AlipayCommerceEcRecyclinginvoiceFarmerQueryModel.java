@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 反向农户信息查询
  *
  * @author auto create
- * @since 1.0, 2026-04-29 14:58:45
+ * @since 1.0, 2026-06-16 17:23:01
  */
 public class AlipayCommerceEcRecyclinginvoiceFarmerQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3555278673958815179L;
+	private static final long serialVersionUID = 5316326286391716292L;
 
 	/**
 	 * 农户身份证件号

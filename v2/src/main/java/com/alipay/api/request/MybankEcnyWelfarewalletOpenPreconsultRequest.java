@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: mybank.ecny.welfarewallet.open.preconsult request
  * 
  * @author auto create
- * @since 1.0, 2026-05-25 14:02:45
+ * @since 1.0, 2026-06-16 17:37:55
  */
 public class MybankEcnyWelfarewalletOpenPreconsultRequest implements AlipayRequest<MybankEcnyWelfarewalletOpenPreconsultResponse> {
 

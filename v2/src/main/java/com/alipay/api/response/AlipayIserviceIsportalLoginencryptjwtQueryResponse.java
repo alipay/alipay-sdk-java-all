@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayIserviceIsportalLoginencryptjwtQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5871598693584678581L;
+	private static final long serialVersionUID = 6155435845812358381L;
 
 	/** 
 	 * 加密的登录态jwt信息

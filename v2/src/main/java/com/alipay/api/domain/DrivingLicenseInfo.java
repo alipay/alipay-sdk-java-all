@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DrivingLicenseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4114951785611116337L;
+	private static final long serialVersionUID = 4412124455391467842L;
 
 	/**
 	 * 行驶证上的地址

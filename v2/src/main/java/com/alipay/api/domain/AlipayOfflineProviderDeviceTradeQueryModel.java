@@ -9,14 +9,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 音响设备交易信息查询
  *
  * @author auto create
- * @since 1.0, 2026-04-02 14:02:17
+ * @since 1.0, 2026-06-16 14:14:42
  */
 public class AlipayOfflineProviderDeviceTradeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6224746717698867611L;
+	private static final long serialVersionUID = 5139387777961486595L;
 
 	/**
-	 * 设备sn
+	 * 设备sn，传多个sn时用逗号进行分隔
 	 */
 	@ApiField("device_sn")
 	private String deviceSn;

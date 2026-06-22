@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.activity.discount.create response.
  * 
  * @author auto create
- * @since 1.0, 2026-06-11 17:03:20
+ * @since 1.0, 2026-06-17 10:52:56
  */
 public class AlipayCommerceEcActivityDiscountCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2864214853213115317L;
+	private static final long serialVersionUID = 8564319644759311113L;
 
 	/** 
 	 * 企业码立减活动ID

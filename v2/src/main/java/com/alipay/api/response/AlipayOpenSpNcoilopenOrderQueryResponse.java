@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenSpNcoilopenOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4544426874861535588L;
+	private static final long serialVersionUID = 7672151571259747426L;
 
 	/** 
 	 * 实际发货时间

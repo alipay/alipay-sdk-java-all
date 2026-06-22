@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.ecny.welfarewallet.open.preconsult response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-25 14:02:45
+ * @since 1.0, 2026-06-16 17:37:55
  */
 public class MybankEcnyWelfarewalletOpenPreconsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1889697769334548868L;
+	private static final long serialVersionUID = 8194997356823988339L;
 
 	/** 
 	 * 预咨询通过返回true，反之false

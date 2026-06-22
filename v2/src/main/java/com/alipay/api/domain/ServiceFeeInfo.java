@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务费信息列表
  *
  * @author auto create
- * @since 1.0, 2024-06-24 21:24:15
+ * @since 1.0, 2026-06-17 14:10:37
  */
 public class ServiceFeeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4536743288172948472L;
+	private static final long serialVersionUID = 1635944717135766233L;
 
 	/**
 	 * 服务费金额
@@ -58,6 +58,12 @@ public class ServiceFeeInfo extends AlipayObject {
 	 */
 	@ApiField("related_bill_no")
 	private String relatedBillNo;
+
+	/**
+	 * 抽佣结算成功
+	 */
+	@ApiField("status")
+	private String status;
 
 	/**
 	 * 收款方OpenId
@@ -142,6 +148,13 @@ public class ServiceFeeInfo extends AlipayObject {
 	}
 	public void setRelatedBillNo(String relatedBillNo) {
 		this.relatedBillNo = relatedBillNo;
+	}
+
+	public String getStatus() {
+		return this.status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
 	}
 
 	public String getTransInOpenId() {

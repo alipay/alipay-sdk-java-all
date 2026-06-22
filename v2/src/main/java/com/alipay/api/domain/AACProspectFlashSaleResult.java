@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AACProspectFlashSaleResult extends AlipayObject {
 
-	private static final long serialVersionUID = 5282249325872419989L;
+	private static final long serialVersionUID = 1824779145557545434L;
 
 	/**
 	 * 发奖金额，单位：分

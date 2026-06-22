@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资商通资金对账接口
  *
  * @author auto create
- * @since 1.0, 2025-11-26 13:49:11
+ * @since 1.0, 2026-06-17 17:11:20
  */
 public class AlipayCommerceRentTradeBillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4779477795812573868L;
+	private static final long serialVersionUID = 1453642256459967484L;
 
 	/**
 	 * 该笔交易的还款方（租赁商）pid

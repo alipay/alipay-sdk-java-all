@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RentMobileLeads extends AlipayObject {
 
-	private static final long serialVersionUID = 3166293766874853822L;
+	private static final long serialVersionUID = 5582945845325759343L;
 
 	/**
 	 * 通话的时间长度

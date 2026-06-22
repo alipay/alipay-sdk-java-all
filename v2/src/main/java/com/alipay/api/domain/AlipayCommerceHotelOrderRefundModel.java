@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceHotelOrderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4139687314713555965L;
+	private static final long serialVersionUID = 8599651151364613247L;
 
 	/**
 	 * 出行酒店订单id

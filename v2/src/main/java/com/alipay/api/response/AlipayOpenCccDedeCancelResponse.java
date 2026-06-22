@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.ccc.dede.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-19 10:38:52
+ * @since 1.0, 2026-06-17 10:53:46
  */
 public class AlipayOpenCccDedeCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8495318445135476797L;
+	private static final long serialVersionUID = 8765937278644748943L;
 
 	
 

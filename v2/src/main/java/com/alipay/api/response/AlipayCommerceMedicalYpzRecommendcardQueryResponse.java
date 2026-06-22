@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.ypz.recommendcard.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-18 17:42:49
+ * @since 1.0, 2026-06-15 11:25:17
  */
 public class AlipayCommerceMedicalYpzRecommendcardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8893155169259349972L;
+	private static final long serialVersionUID = 5874952412258846977L;
 
 	/** 
 	 * 阿福带下载卡

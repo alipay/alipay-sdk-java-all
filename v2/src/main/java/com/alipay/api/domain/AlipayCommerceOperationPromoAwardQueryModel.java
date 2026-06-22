@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营销活动激励信息查询
  *
  * @author auto create
- * @since 1.0, 2026-06-01 15:37:49
+ * @since 1.0, 2026-06-17 14:45:51
  */
 public class AlipayCommerceOperationPromoAwardQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4313336118138737387L;
+	private static final long serialVersionUID = 6141789195741469269L;
 
 	/**
 	 * 活动编码，点餐B侧激励活动，编码固定

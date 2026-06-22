@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-06-08 17:17:54
+ * @since 1.0, 2026-06-12 16:22:54
  */
 public class ShipGoodsRiskVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1357226331195461411L;
+	private static final long serialVersionUID = 1224286566138352256L;
 
 	/**
 	 * true-建议发货

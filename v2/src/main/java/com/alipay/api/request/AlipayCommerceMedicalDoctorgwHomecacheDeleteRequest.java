@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.doctorgw.homecache.delete request
  * 
  * @author auto create
- * @since 1.0, 2026-06-02 17:02:48
+ * @since 1.0, 2026-06-15 16:47:56
  */
 public class AlipayCommerceMedicalDoctorgwHomecacheDeleteRequest implements AlipayRequest<AlipayCommerceMedicalDoctorgwHomecacheDeleteResponse> {
 

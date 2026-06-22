@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 手机网站支付接口2.0
  *
  * @author auto create
- * @since 1.0, 2026-04-16 10:31:56
+ * @since 1.0, 2026-06-16 11:13:38
  */
 public class AlipayTradeWapPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3312347925334347639L;
+	private static final long serialVersionUID = 3316865878263596591L;
 
 	/**
 	 * 针对用户授权接口，获取用户相关数据时，用于标识用户授权关系
@@ -179,7 +179,7 @@ json格式，详见结算参数说明，以下两种场景必传：
 
 	/**
 	 * 订单标题。
-注意：不可使用特殊字符，如 /，=，& 等。
+注意：256个字符以内，不可使用特殊字符，如 /，=，& 等。
 	 */
 	@ApiField("subject")
 	private String subject;

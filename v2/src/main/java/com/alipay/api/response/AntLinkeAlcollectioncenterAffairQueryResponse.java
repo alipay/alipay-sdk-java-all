@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntLinkeAlcollectioncenterAffairQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8496839947848863146L;
+	private static final long serialVersionUID = 1314573274182821879L;
 
 	/** 
 	 * 案件id

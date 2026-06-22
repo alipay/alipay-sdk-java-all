@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租赁订单的简单信息
  *
  * @author auto create
- * @since 1.0, 2026-05-18 10:21:24
+ * @since 1.0, 2026-06-17 10:48:52
  */
 public class SimpleRentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8214799923172892683L;
+	private static final long serialVersionUID = 2322828357725672131L;
 
 	/**
 	 * 交易组件的订单Id

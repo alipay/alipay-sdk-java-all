@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NbPagination extends AlipayObject {
 
-	private static final long serialVersionUID = 8581692829444221327L;
+	private static final long serialVersionUID = 8568655511768121133L;
 
 	/**
 	 * 每页数量

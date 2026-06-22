@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 扁鹊服务端登录验证接口
  *
  * @author auto create
- * @since 1.0, 2025-11-17 16:02:47
+ * @since 1.0, 2026-06-17 13:35:58
  */
 public class AlipayCommerceMedicalBqLoginCertifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3294298524378893368L;
+	private static final long serialVersionUID = 4774446643145498698L;
 
 	/**
 	 * 原始authCode使用Base64编码后的结果

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 抽佣关系信息
  *
  * @author auto create
- * @since 1.0, 2025-12-01 20:27:25
+ * @since 1.0, 2026-06-17 10:49:06
  */
 public class CommissionRelationDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1331532126536919957L;
+	private static final long serialVersionUID = 2335169576239891472L;
 
 	/**
 	 * 授权结果信息

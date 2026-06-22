@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.creditrisk.jhjtest.prod.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 19:33:35
+ * @since 1.0, 2026-06-17 10:54:03
  */
 public class AlipayPcreditCreditriskJhjtestProdCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8377697631912438495L;
+	private static final long serialVersionUID = 1378936787915959342L;
 
 	/** 
 	 * 1111

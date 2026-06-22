@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 履约数据
  *
  * @author auto create
- * @since 1.0, 2026-05-26 16:22:45
+ * @since 1.0, 2026-06-20 11:02:56
  */
 public class FulfillmentDataInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2283987998623228288L;
+	private static final long serialVersionUID = 6396243656738166146L;
 
 	/**
 	 * 顾问数据
@@ -30,6 +30,12 @@ public class FulfillmentDataInfo extends AlipayObject {
 	 */
 	@ApiField("examination")
 	private ExaminationParam examination;
+
+	/**
+	 * 高端医疗
+	 */
+	@ApiField("highend_medical_fulfillment_detail_data")
+	private HighEndMedicalFulfillmentDetailData highendMedicalFulfillmentDetailData;
 
 	/**
 	 * 陪护数据
@@ -62,6 +68,13 @@ public class FulfillmentDataInfo extends AlipayObject {
 	}
 	public void setExamination(ExaminationParam examination) {
 		this.examination = examination;
+	}
+
+	public HighEndMedicalFulfillmentDetailData getHighendMedicalFulfillmentDetailData() {
+		return this.highendMedicalFulfillmentDetailData;
+	}
+	public void setHighendMedicalFulfillmentDetailData(HighEndMedicalFulfillmentDetailData highendMedicalFulfillmentDetailData) {
+		this.highendMedicalFulfillmentDetailData = highendMedicalFulfillmentDetailData;
 	}
 
 	public InpatientNursingFulfillmentDetailData getInpatientNursingFulfillmentDetailData() {

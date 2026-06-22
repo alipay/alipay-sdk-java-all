@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TrafficCardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3257718163273289989L;
+	private static final long serialVersionUID = 3578931338118816997L;
 
 	/**
 	 * 乘车卡标题

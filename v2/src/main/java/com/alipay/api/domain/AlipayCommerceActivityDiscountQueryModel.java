@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询员工价立减活动
  *
  * @author auto create
- * @since 1.0, 2026-06-11 17:03:49
+ * @since 1.0, 2026-06-17 10:52:56
  */
 public class AlipayCommerceActivityDiscountQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8569239436896414674L;
+	private static final long serialVersionUID = 5183514845975212197L;
 
 	/**
 	 * 活动ID，用于查询指定的活动。创建活动接口获取

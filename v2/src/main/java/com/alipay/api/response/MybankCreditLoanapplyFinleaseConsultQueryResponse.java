@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankCreditLoanapplyFinleaseConsultQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1543481224544523514L;
+	private static final long serialVersionUID = 4651291172484837343L;
 
 	/** 
 	 * 是否准入，true表示准则，false表示不准入

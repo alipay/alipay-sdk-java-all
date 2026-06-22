@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlarmTrigger extends AlipayObject {
 
-	private static final long serialVersionUID = 7788489681447498718L;
+	private static final long serialVersionUID = 7673549684312368971L;
 
 	/**
 	 * 数据聚合方式

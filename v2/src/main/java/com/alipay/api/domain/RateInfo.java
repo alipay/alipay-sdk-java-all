@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RateInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6378934755878555473L;
+	private static final long serialVersionUID = 6349241243914154136L;
 
 	/**
 	 * 税率描述

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.jhjtest.post.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 17:31:49
+ * @since 1.0, 2026-06-17 10:49:22
  */
 public class AlipayDataJhjtestPostBatchqueryRequest implements AlipayRequest<AlipayDataJhjtestPostBatchqueryResponse> {
 

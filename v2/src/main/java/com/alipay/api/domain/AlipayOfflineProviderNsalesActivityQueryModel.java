@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 卖进订单活动任务查询
  *
  * @author auto create
- * @since 1.0, 2025-02-27 14:31:21
+ * @since 1.0, 2026-06-16 15:04:46
  */
 public class AlipayOfflineProviderNsalesActivityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1366863586519613188L;
+	private static final long serialVersionUID = 7228291289729653319L;
 
 	/**
 	 * 卖进订单活动id

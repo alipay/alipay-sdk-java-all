@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ShippingTimeLimitVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4254666645878115475L;
+	private static final long serialVersionUID = 5714886597424112174L;
 
 	/**
 	 * 物流发货时效

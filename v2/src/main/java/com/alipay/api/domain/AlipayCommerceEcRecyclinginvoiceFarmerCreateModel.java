@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 反向农户信息创建
  *
  * @author auto create
- * @since 1.0, 2026-04-29 14:58:44
+ * @since 1.0, 2026-06-16 17:23:01
  */
 public class AlipayCommerceEcRecyclinginvoiceFarmerCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5435955916518228176L;
+	private static final long serialVersionUID = 5184578856281634796L;
 
 	/**
 	 * 支付宝账号
@@ -27,6 +27,18 @@ public class AlipayCommerceEcRecyclinginvoiceFarmerCreateModel extends AlipayObj
 	 */
 	@ApiField("account_type")
 	private String accountType;
+
+	/**
+	 * 归属承包主身份证号，须为已存在承包主
+	 */
+	@ApiField("belong_contractor_cert_no")
+	private String belongContractorCertNo;
+
+	/**
+	 * 归属家庭主身份证号，须为已存在家庭主
+	 */
+	@ApiField("belong_family_head_cert_no")
+	private String belongFamilyHeadCertNo;
 
 	/**
 	 * 农户身份证件号
@@ -55,7 +67,13 @@ public class AlipayCommerceEcRecyclinginvoiceFarmerCreateModel extends AlipayObj
 	private List<String> farmerTypeList;
 
 	/**
-	 * 是否为家庭主人/家庭主导者
+	 * 是否承包主（1=是，0=否）
+	 */
+	@ApiField("is_contractor")
+	private String isContractor;
+
+	/**
+	 * 是否为家庭主/家庭主导者
 	 */
 	@ApiField("is_family_master")
 	private String isFamilyMaster;
@@ -78,6 +96,20 @@ public class AlipayCommerceEcRecyclinginvoiceFarmerCreateModel extends AlipayObj
 	}
 	public void setAccountType(String accountType) {
 		this.accountType = accountType;
+	}
+
+	public String getBelongContractorCertNo() {
+		return this.belongContractorCertNo;
+	}
+	public void setBelongContractorCertNo(String belongContractorCertNo) {
+		this.belongContractorCertNo = belongContractorCertNo;
+	}
+
+	public String getBelongFamilyHeadCertNo() {
+		return this.belongFamilyHeadCertNo;
+	}
+	public void setBelongFamilyHeadCertNo(String belongFamilyHeadCertNo) {
+		this.belongFamilyHeadCertNo = belongFamilyHeadCertNo;
 	}
 
 	public String getCertNo() {
@@ -106,6 +138,13 @@ public class AlipayCommerceEcRecyclinginvoiceFarmerCreateModel extends AlipayObj
 	}
 	public void setFarmerTypeList(List<String> farmerTypeList) {
 		this.farmerTypeList = farmerTypeList;
+	}
+
+	public String getIsContractor() {
+		return this.isContractor;
+	}
+	public void setIsContractor(String isContractor) {
+		this.isContractor = isContractor;
 	}
 
 	public String getIsFamilyMaster() {

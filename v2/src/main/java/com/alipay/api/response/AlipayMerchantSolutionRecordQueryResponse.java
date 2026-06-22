@@ -11,11 +11,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.solution.record.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-06-09 19:53:10
+ * @since 1.0, 2026-06-15 10:37:55
  */
 public class AlipayMerchantSolutionRecordQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5635265999323592523L;
+	private static final long serialVersionUID = 8711697211563543978L;
+
+	/** 
+	 * smid不准入原因描述
+	 */
+	@ApiField("fail_reason_desc")
+	private String failReasonDesc;
 
 	/** 
 	 * 入参中的查询数据
@@ -41,6 +47,13 @@ public class AlipayMerchantSolutionRecordQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("solution_code")
 	private String solutionCode;
+
+	public void setFailReasonDesc(String failReasonDesc) {
+		this.failReasonDesc = failReasonDesc;
+	}
+	public String getFailReasonDesc( ) {
+		return this.failReasonDesc;
+	}
 
 	public void setRecordData(List<AlipaySolutionRecord> recordData) {
 		this.recordData = recordData;

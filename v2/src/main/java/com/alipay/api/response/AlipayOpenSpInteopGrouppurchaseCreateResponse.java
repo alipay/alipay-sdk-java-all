@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.inteop.grouppurchase.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-10-23 19:47:40
+ * @since 1.0, 2026-06-12 11:02:23
  */
 public class AlipayOpenSpInteopGrouppurchaseCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3546181315658523176L;
+	private static final long serialVersionUID = 1741567274821278253L;
 
 	/** 
 	 * 团购开通失败原因说明

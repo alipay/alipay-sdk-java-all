@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询服务费信息
  *
  * @author auto create
- * @since 1.0, 2024-06-24 21:24:15
+ * @since 1.0, 2026-06-17 14:10:37
  */
 public class AlipayCommerceEcChargeBillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5631447491484613537L;
+	private static final long serialVersionUID = 6322527321178254427L;
+
+	/**
+	 * 蚂蚁门店id，用于水平权限鉴权。可通过ant.merchant.expand.shop.create创建蚂蚁门店获取
+	 */
+	@ApiField("ant_shop_id")
+	private String antShopId;
 
 	/**
 	 * 企业码服务费单号
@@ -26,10 +32,17 @@ public class AlipayCommerceEcChargeBillQueryModel extends AlipayObject {
 	private String enterpriseId;
 
 	/**
-	 * 支付宝交易号
+	 * 被抽佣的支付宝交易号
 	 */
 	@ApiField("pay_no")
 	private String payNo;
+
+	public String getAntShopId() {
+		return this.antShopId;
+	}
+	public void setAntShopId(String antShopId) {
+		this.antShopId = antShopId;
+	}
 
 	public String getBillNo() {
 		return this.billNo;

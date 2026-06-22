@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.servicepackage.grantbyphoneno.create request
  * 
  * @author auto create
- * @since 1.0, 2026-05-08 11:42:45
+ * @since 1.0, 2026-06-20 10:15:04
  */
 public class AlipayCommerceMedicalServicepackageGrantbyphonenoCreateRequest implements AlipayRequest<AlipayCommerceMedicalServicepackageGrantbyphonenoCreateResponse> {
 

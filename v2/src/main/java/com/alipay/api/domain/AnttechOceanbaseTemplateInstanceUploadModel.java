@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 通过动态模版渲染后上传文件到oss
  *
  * @author auto create
- * @since 1.0, 2026-04-09 21:12:44
+ * @since 1.0, 2026-06-18 10:34:06
  */
 public class AnttechOceanbaseTemplateInstanceUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5168145112216123654L;
+	private static final long serialVersionUID = 7643729649185763257L;
 
 	/**
 	 * 业务主键，唯一约束，多次重复提交时做幂等

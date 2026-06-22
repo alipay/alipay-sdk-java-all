@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalInsuranceTpadirectpayquotaQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7121934762689397245L;
+	private static final long serialVersionUID = 8761656194935182514L;
 
 	/**
 	 * 用户证件号

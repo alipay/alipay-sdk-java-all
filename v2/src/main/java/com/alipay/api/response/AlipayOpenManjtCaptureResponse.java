@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.manjt.capture response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-25 18:22:27
+ * @since 1.0, 2026-06-17 10:53:38
  */
 public class AlipayOpenManjtCaptureResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4834137956117518878L;
+	private static final long serialVersionUID = 5651324915111946792L;
 
 	/** 
 	 * 1

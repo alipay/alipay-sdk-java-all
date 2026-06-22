@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 报告内容发送
  *
  * @author auto create
- * @since 1.0, 2026-05-14 17:37:49
+ * @since 1.0, 2026-06-17 13:35:58
  */
 public class AlipayCommerceMedicalReportContentSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3336615773923937623L;
+	private static final long serialVersionUID = 2379587672949397152L;
 
 	/**
 	 * 报告内容。

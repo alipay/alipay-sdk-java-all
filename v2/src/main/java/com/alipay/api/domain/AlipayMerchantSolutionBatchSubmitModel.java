@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 间连解决方案批次数据提报
  *
  * @author auto create
- * @since 1.0, 2024-06-14 11:01:15
+ * @since 1.0, 2026-06-15 11:18:24
  */
 public class AlipayMerchantSolutionBatchSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8355174571349196934L;
+	private static final long serialVersionUID = 7495162471889624258L;
 
 	/**
 	 * 解决方案数据提报中，提报的文件信息
@@ -22,6 +22,12 @@ public class AlipayMerchantSolutionBatchSubmitModel extends AlipayObject {
 	@ApiListField("file_info")
 	@ApiField("alipay_solution_file")
 	private List<AlipaySolutionFile> fileInfo;
+
+	/**
+	 * 商户类型,可选值：NORMAL（普通商家）/ MINI（小微商家）。不传时默认为NORMAL，走普通商家准入链路。
+	 */
+	@ApiField("mrch_type")
+	private String mrchType;
 
 	/**
 	 * 外部批次号，在外部系统中唯一标识一个提报批次
@@ -46,6 +52,13 @@ public class AlipayMerchantSolutionBatchSubmitModel extends AlipayObject {
 	}
 	public void setFileInfo(List<AlipaySolutionFile> fileInfo) {
 		this.fileInfo = fileInfo;
+	}
+
+	public String getMrchType() {
+		return this.mrchType;
+	}
+	public void setMrchType(String mrchType) {
+		this.mrchType = mrchType;
 	}
 
 	public String getOutBatchNo() {

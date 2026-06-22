@@ -9,14 +9,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租金分期信息
  *
  * @author auto create
- * @since 1.0, 2026-04-24 10:11:44
+ * @since 1.0, 2026-06-17 14:56:51
  */
 public class RentInstallmentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3348855832884624588L;
+	private static final long serialVersionUID = 3223693714323972553L;
 
 	/**
-	 * 当期购买金额。当期购买金=当期购买价-截止到当期已支付租金
+	 * 残值：指租赁期满后，租赁物的预估剩余价值。平台以这个价格 对买断，赔偿等行为进行巡检。
 	 */
 	@ApiField("buyout_price")
 	private String buyoutPrice;

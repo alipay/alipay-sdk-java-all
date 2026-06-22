@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 分账和分期详情信息
  *
  * @author auto create
- * @since 1.0, 2026-05-21 13:58:46
+ * @since 1.0, 2026-06-17 14:37:20
  */
 public class RentRoyaltyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8696251217668551522L;
+	private static final long serialVersionUID = 1659996971936534724L;
 
 	/**
 	 * 2088开头的16位纯数字，小程序场景下获取用户ID请参考：用户授权; 其它场景下获取用户ID请参考：网页授权获取用户信息; 其中buyer_id与buyer_open_id不能同时为空

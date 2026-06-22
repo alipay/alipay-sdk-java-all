@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.cloud.env.delete request
  * 
  * @author auto create
- * @since 1.0, 2023-09-03 23:36:45
+ * @since 1.0, 2026-06-17 10:53:49
  */
 public class AlipayOpenCloudEnvDeleteRequest implements AlipayRequest<AlipayOpenCloudEnvDeleteResponse> {
 

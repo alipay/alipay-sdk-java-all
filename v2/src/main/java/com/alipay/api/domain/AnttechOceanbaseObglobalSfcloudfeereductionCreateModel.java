@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * saleforce券申请提交
  *
  * @author auto create
- * @since 1.0, 2026-04-15 17:37:45
+ * @since 1.0, 2026-06-15 19:12:55
  */
 public class AnttechOceanbaseObglobalSfcloudfeereductionCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8522798972923371639L;
+	private static final long serialVersionUID = 3833861243558466925L;
 
 	/**
 	 * 申请理由

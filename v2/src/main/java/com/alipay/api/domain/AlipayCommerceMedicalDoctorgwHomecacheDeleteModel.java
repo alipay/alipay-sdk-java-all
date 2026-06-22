@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 删除医生端首页缓存
  *
  * @author auto create
- * @since 1.0, 2026-06-02 17:02:48
+ * @since 1.0, 2026-06-15 16:47:56
  */
 public class AlipayCommerceMedicalDoctorgwHomecacheDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2381155876216843579L;
+	private static final long serialVersionUID = 1347555921392917853L;
 
 	/**
 	 * 是否删除全部模块缓存

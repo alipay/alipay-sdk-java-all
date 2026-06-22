@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 行业缴费代缴单信息查询接口
  *
  * @author auto create
- * @since 1.0, 2024-11-04 15:05:34
+ * @since 1.0, 2026-06-12 11:57:46
  */
 public class AlipayOverseasOpenPoboQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5779461241342128541L;
+	private static final long serialVersionUID = 7237597169453246414L;
 
 	/**
 	 * 代缴单ID

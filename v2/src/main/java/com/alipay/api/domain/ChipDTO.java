@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ChipDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8147355616856631853L;
+	private static final long serialVersionUID = 7612624125488278489L;
 
 	/**
 	 * 筹码数量，单位个

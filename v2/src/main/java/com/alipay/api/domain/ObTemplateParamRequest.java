@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-04-09 21:12:44
+ * @since 1.0, 2026-06-18 10:34:06
  */
 public class ObTemplateParamRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 7695763136276671763L;
+	private static final long serialVersionUID = 4221213416931774161L;
 
 	/**
 	 * 描述字段类型的关键字

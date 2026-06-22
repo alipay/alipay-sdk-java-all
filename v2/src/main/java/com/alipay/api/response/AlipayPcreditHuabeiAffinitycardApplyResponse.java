@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.huabei.affinitycard.apply response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-11 16:52:30
+ * @since 1.0, 2026-06-15 19:50:48
  */
 public class AlipayPcreditHuabeiAffinitycardApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7427498655715458113L;
+	private static final long serialVersionUID = 3888967997823927116L;
 
 	/** 
 	 * 可用额度，单位：元，精确到小数点后2位

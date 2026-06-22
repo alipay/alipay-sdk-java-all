@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class EcomCompanyFeatureInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5611179889568115999L;
+	private static final long serialVersionUID = 4752325252866992535L;
 
 	/**
 	 * 近1年内活跃月数（单位：个月）

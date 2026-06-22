@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 统一收单下单并支付页面接口
  *
  * @author auto create
- * @since 1.0, 2026-04-16 10:37:00
+ * @since 1.0, 2026-06-16 11:13:33
  */
 public class AlipayTradePagePayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3575147731223895837L;
+	private static final long serialVersionUID = 3726469551991651816L;
 
 	/**
 	 * 签约参数，支付后签约场景使用
@@ -195,7 +195,7 @@ PCWEB：PC端访问
 
 	/**
 	 * 订单标题。
-注意：不可使用特殊字符，如 /，=，& 等。
+注意：256个字符以内，不可使用特殊字符，如 /，=，& 等。
 	 */
 	@ApiField("subject")
 	private String subject;

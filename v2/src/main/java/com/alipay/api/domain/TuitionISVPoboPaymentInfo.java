@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 留学缴费VCC代付单payment信息
  *
  * @author auto create
- * @since 1.0, 2026-03-27 14:46:24
+ * @since 1.0, 2026-06-12 11:51:35
  */
 public class TuitionISVPoboPaymentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4259352499911825971L;
+	private static final long serialVersionUID = 3466483132574336927L;
 
 	/**
 	 * 其他缴费信息，目前包含了academic_year（学年）以及payment_category（缴费类目）两个key，后续会根据业务扩展key
@@ -24,6 +24,24 @@ public class TuitionISVPoboPaymentInfo extends AlipayObject {
 	 */
 	@ApiField("amount")
 	private TuitionMoneyDTO amount;
+
+	/**
+	 * 银行地址
+	 */
+	@ApiField("bank_address")
+	private String bankAddress;
+
+	/**
+	 * 银行名称
+	 */
+	@ApiField("bank_name")
+	private String bankName;
+
+	/**
+	 * 银行所在地，国家代码
+	 */
+	@ApiField("bank_region")
+	private String bankRegion;
 
 	/**
 	 * 卡品牌+留学VCC场景
@@ -85,6 +103,18 @@ public class TuitionISVPoboPaymentInfo extends AlipayObject {
 	@ApiField("quote_price")
 	private String quotePrice;
 
+	/**
+	 * 一个由9位数字组成的代码，用于识别特定的金融机构。
+	 */
+	@ApiField("routing_number")
+	private String routingNumber;
+
+	/**
+	 * eCheck支付方式下的虚拟银行账号
+	 */
+	@ApiField("virtual_account_number")
+	private String virtualAccountNumber;
+
 	public String getAdditionalPaymentInfo() {
 		return this.additionalPaymentInfo;
 	}
@@ -97,6 +127,27 @@ public class TuitionISVPoboPaymentInfo extends AlipayObject {
 	}
 	public void setAmount(TuitionMoneyDTO amount) {
 		this.amount = amount;
+	}
+
+	public String getBankAddress() {
+		return this.bankAddress;
+	}
+	public void setBankAddress(String bankAddress) {
+		this.bankAddress = bankAddress;
+	}
+
+	public String getBankName() {
+		return this.bankName;
+	}
+	public void setBankName(String bankName) {
+		this.bankName = bankName;
+	}
+
+	public String getBankRegion() {
+		return this.bankRegion;
+	}
+	public void setBankRegion(String bankRegion) {
+		this.bankRegion = bankRegion;
 	}
 
 	public String getCardBrand() {
@@ -167,6 +218,20 @@ public class TuitionISVPoboPaymentInfo extends AlipayObject {
 	}
 	public void setQuotePrice(String quotePrice) {
 		this.quotePrice = quotePrice;
+	}
+
+	public String getRoutingNumber() {
+		return this.routingNumber;
+	}
+	public void setRoutingNumber(String routingNumber) {
+		this.routingNumber = routingNumber;
+	}
+
+	public String getVirtualAccountNumber() {
+		return this.virtualAccountNumber;
+	}
+	public void setVirtualAccountNumber(String virtualAccountNumber) {
+		this.virtualAccountNumber = virtualAccountNumber;
 	}
 
 }

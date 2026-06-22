@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
 修改路由策略到R
  *
  * @author auto create
- * @since 1.0, 2026-04-16 10:32:09
+ * @since 1.0, 2026-06-16 11:13:49
  */
 public class AlipayTradePrecreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6476257198853422529L;
+	private static final long serialVersionUID = 7349636613757567182L;
 
 	/**
 	 * 支付宝店铺编号。
@@ -195,7 +195,7 @@ agent_pay：智能体SDK支付方式；
 
 	/**
 	 * 订单标题。
-注意：不可使用特殊字符，如 /，=，& 等。
+注意：256个字符以内，不可使用特殊字符，如 /，=，& 等。
 	 */
 	@ApiField("subject")
 	private String subject;

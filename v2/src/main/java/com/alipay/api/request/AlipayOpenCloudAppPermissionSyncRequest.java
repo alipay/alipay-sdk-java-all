@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.cloud.app.permission.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-08-20 16:41:44
+ * @since 1.0, 2026-06-17 10:53:49
  */
 public class AlipayOpenCloudAppPermissionSyncRequest implements AlipayRequest<AlipayOpenCloudAppPermissionSyncResponse> {
 

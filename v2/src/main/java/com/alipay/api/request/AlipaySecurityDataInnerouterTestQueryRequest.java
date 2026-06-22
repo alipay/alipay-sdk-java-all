@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.data.innerouter.test.query request
  * 
  * @author auto create
- * @since 1.0, 2024-08-30 11:25:26
+ * @since 1.0, 2026-06-17 10:54:14
  */
 public class AlipaySecurityDataInnerouterTestQueryRequest implements AlipayRequest<AlipaySecurityDataInnerouterTestQueryResponse> {
 

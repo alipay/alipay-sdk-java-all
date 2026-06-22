@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.doctorgw.homecache.delete response.
  * 
  * @author auto create
- * @since 1.0, 2026-06-02 17:02:48
+ * @since 1.0, 2026-06-15 16:47:56
  */
 public class AlipayCommerceMedicalDoctorgwHomecacheDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4137885551344919333L;
+	private static final long serialVersionUID = 8771822773111159963L;
 
 	
 

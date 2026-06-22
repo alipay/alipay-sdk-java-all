@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.oceanbase.template.instance.upload request
  * 
  * @author auto create
- * @since 1.0, 2026-04-09 21:12:44
+ * @since 1.0, 2026-06-18 10:34:06
  */
 public class AnttechOceanbaseTemplateInstanceUploadRequest implements AlipayRequest<AnttechOceanbaseTemplateInstanceUploadResponse> {
 

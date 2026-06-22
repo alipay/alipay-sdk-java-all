@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MemberCardRefundDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 4791776538475494829L;
+	private static final long serialVersionUID = 1673426564585537361L;
 
 	/**
 	 * 充值余额

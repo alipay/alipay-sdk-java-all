@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ETC办理申请单创建或修改
  *
  * @author auto create
- * @since 1.0, 2025-12-01 16:37:08
+ * @since 1.0, 2026-06-11 19:11:52
  */
 public class AlipayCommerceTransportEtcApplyorderCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4358994883475214624L;
+	private static final long serialVersionUID = 4847247498471555433L;
 
 	/**
 	 * 支付宝订单号，提供则认为是更新
@@ -45,6 +45,12 @@ MOTO: 摩托车
 	 */
 	@ApiField("car_type")
 	private String carType;
+
+	/**
+	 * 合作渠道方对应订单号
+	 */
+	@ApiField("channel_order_id")
+	private String channelOrderId;
 
 	/**
 	 * 办理人所在地城市编码
@@ -261,6 +267,13 @@ LIMEGREEN: 黄绿色。
 	}
 	public void setCarType(String carType) {
 		this.carType = carType;
+	}
+
+	public String getChannelOrderId() {
+		return this.channelOrderId;
+	}
+	public void setChannelOrderId(String channelOrderId) {
+		this.channelOrderId = channelOrderId;
 	}
 
 	public String getCityCode() {

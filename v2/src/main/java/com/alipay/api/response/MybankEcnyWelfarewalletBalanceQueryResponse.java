@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: mybank.ecny.welfarewallet.balance.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-04-22 16:42:46
+ * @since 1.0, 2026-06-16 17:32:56
  */
 public class MybankEcnyWelfarewalletBalanceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6735197151592187776L;
+	private static final long serialVersionUID = 2737623432887218876L;
 
 	/** 
 	 * 福利子钱包资产余额列表
