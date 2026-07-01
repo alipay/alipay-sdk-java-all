@@ -9,6 +9,8 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 
+import java.time.Duration;
+
 /**
  * 支付宝 MCP Spring AI 自动配置
  *
@@ -26,34 +28,51 @@ public class AlipayMcpAutoConfiguration {
 
     /**
      * AlipayMcpClient（自带加签逻辑）
+     * <p>MCP 握手采用延迟初始化，首次使用时自动执行，不会阻塞 Spring 启动。</p>
      */
     @Bean
     @ConditionalOnMissingBean(AlipayMcpClient.class)
     public AlipayMcpClient alipayMcpClient(AlipayMcpProperties properties) {
         if (!properties.isValid()) {
             throw new IllegalStateException(
-                "Alipay MCP 配置不完整，请检查 alipay.mcp.app-id、alipay.mcp.private-key 和端点配置");
+                "Alipay MCP 配置不完整，请检查认证配置和端点配置");
         }
 
         // 构建端点
         String endpoint = buildEndpoint(properties);
 
         // 确定传输模式
-        AlipayMcpClient.TransportMode mode = "streamable".equalsIgnoreCase(properties.getTransportMode())
+        boolean isStreamable = "streamable".equalsIgnoreCase(properties.getTransportMode());
+        AlipayMcpClient.TransportMode mode = isStreamable
             ? AlipayMcpClient.TransportMode.STREAMABLE
             : AlipayMcpClient.TransportMode.SSE;
 
-        log.info("初始化 AlipayMcpClient, appId: {}, mode: {}", properties.getAppId(), mode);
+        AlipayMcpClient client;
 
-        AlipayMcpClient client = new AlipayMcpClient(
-            properties.getAppId(),
-            properties.getPrivateKey(),
-            endpoint,
-            mode
-        );
+        // 根据认证类型选择创建客户端的方式
+        Duration connectTimeout = properties.getConnectTimeout() != null ? properties.getConnectTimeout() : Duration.ofSeconds(10);
 
-        // 初始化 MCP 客户端（执行握手）
-        client.initialize();
+        if ("api_key".equalsIgnoreCase(properties.getAuthType())) {
+            log.info("初始化 AlipayMcpClient (API Key 模式), mode: {}, connectTimeout: {}", mode, connectTimeout);
+            client = AlipayMcpClient.withApiKey(
+                properties.getApiKey(),
+                endpoint,
+                mode,
+                connectTimeout
+            );
+        } else {
+            log.info("初始化 AlipayMcpClient (签名模式), appId: {}, mode: {}, connectTimeout: {}", properties.getAppId(), mode, connectTimeout);
+            client = new AlipayMcpClient(
+                properties.getAppId(),
+                properties.getPrivateKey(),
+                endpoint,
+                mode,
+                connectTimeout
+            );
+        }
+
+        // 延迟初始化：不在 Bean 创建时执行握手，避免 MCP 服务端不可达时阻塞 Spring 启动
+        log.info("AlipayMcpClient 已创建，MCP 握手将在首次调用时自动执行");
 
         return client;
     }
@@ -62,8 +81,10 @@ public class AlipayMcpAutoConfiguration {
      * 根据配置构建端点 URL
      */
     private String buildEndpoint(AlipayMcpProperties properties) {
+        boolean isStreamable = "streamable".equalsIgnoreCase(properties.getTransportMode());
+
         // 1. 优先使用直接配置的端点
-        if ("streamable".equalsIgnoreCase(properties.getTransportMode())) {
+        if (isStreamable) {
             if (properties.getStreamableEndpoint() != null && !properties.getStreamableEndpoint().isEmpty()) {
                 return properties.getStreamableEndpoint();
             }
@@ -78,12 +99,13 @@ public class AlipayMcpAutoConfiguration {
         String mcpName = properties.getMcpName();
 
         if (baseUri != null && !baseUri.isEmpty() && mcpName != null && !mcpName.isEmpty()) {
-            String suffix = "streamable".equalsIgnoreCase(properties.getTransportMode()) ? "/mcp" : "/sse";
+            String suffix = isStreamable ? "/mcp" : "/sse";
             return baseUri + "/api/v1/open/mcps/" + mcpName + suffix;
         }
 
-        // 3. 回退到旧的 sseEndpoint（兼容旧配置）
-        if (properties.getSseEndpoint() != null && !properties.getSseEndpoint().isEmpty()) {
+        // 3. SSE 模式回退到旧的 sseEndpoint（兼容旧配置）
+        // streamable 模式不可回退到 sseEndpoint，避免协议不匹配
+        if (!isStreamable && properties.getSseEndpoint() != null && !properties.getSseEndpoint().isEmpty()) {
             return properties.getSseEndpoint();
         }
 

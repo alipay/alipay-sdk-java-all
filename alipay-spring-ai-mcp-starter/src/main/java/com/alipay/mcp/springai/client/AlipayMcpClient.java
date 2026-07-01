@@ -11,7 +11,6 @@ import io.modelcontextprotocol.spec.McpSchema;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
 
 import java.security.PrivateKey;
 import java.time.Duration;
@@ -23,14 +22,18 @@ import java.util.stream.Collectors;
 /**
  * 支付宝 MCP Client
  * 封装 MCP Java SDK，提供同步和流式工具调用
+ * 支持两种认证模式：RSA 签名（默认）和 API Key
  */
 public class AlipayMcpClient implements AutoCloseable {
 
     private static final Logger log = LoggerFactory.getLogger(AlipayMcpClient.class);
+    private static final Duration DEFAULT_REQUEST_TIMEOUT = Duration.ofSeconds(30);
+    private static final Duration DEFAULT_CONNECT_TIMEOUT = Duration.ofSeconds(10);
 
     private final McpSyncClient syncClient;
     private final McpAsyncClient asyncClient;
     private final String appId;
+    private final String privateKey;
     private final McpClientTransport transport;
     private final TransportMode transportMode;
 
@@ -42,11 +45,13 @@ public class AlipayMcpClient implements AutoCloseable {
         STREAMABLE  // Streamable HTTP (新版协议，2025-03-26)
     }
 
+    // ============ 签名模式构造函数 ============
+
     /**
      * 创建 AlipayMcpClient（完整 SSE 端点，默认 SSE 模式）
      *
-     * @param appId      应用 ID
-     * @param privateKey 私钥字符串（PKCS8 格式，可带 PEM 标记）
+     * @param appId       应用 ID
+     * @param privateKey  私钥字符串（PKCS8 格式，可带 PEM 标记）
      * @param sseEndpoint 完整 SSE 端点 URL（如 https://opengw.alipay.com/api/v1/open/mcps/xxx/sse）
      */
     public AlipayMcpClient(String appId, String privateKey, String sseEndpoint) {
@@ -62,40 +67,26 @@ public class AlipayMcpClient implements AutoCloseable {
      * @param mode       传输模式（SSE 或 STREAMABLE）
      */
     public AlipayMcpClient(String appId, String privateKey, String endpoint, TransportMode mode) {
+        this(appId, privateKey, endpoint, mode, DEFAULT_CONNECT_TIMEOUT);
+    }
+
+    /**
+     * 创建 AlipayMcpClient（支持传输模式和连接超时配置）
+     *
+     * @param appId          应用 ID
+     * @param privateKey     私钥字符串（PKCS8 格式，可带 PEM 标记）
+     * @param endpoint       端点 URL（SSE 或 Streamable）
+     * @param mode           传输模式（SSE 或 STREAMABLE）
+     * @param connectTimeout 连接超时
+     */
+    public AlipayMcpClient(String appId, String privateKey, String endpoint, TransportMode mode, Duration connectTimeout) {
         this.appId = appId;
+        this.privateKey = privateKey;
         this.transportMode = mode;
-
-        // 解析 baseUri 和 endpointPath
-        String baseUri = extractBaseUri(endpoint);
-        String endpointPath = extractEndpointPath(endpoint, baseUri, mode);
-
-        log.info("初始化 AlipayMcpClient: mode={}, baseUri={}, endpointPath={}", mode, baseUri, endpointPath);
-
-        // 根据模式创建 Transport
-        if (mode == TransportMode.STREAMABLE) {
-            this.transport = AlipayStreamableMcpTransport.builder(baseUri)
-                .mcpEndpoint(endpointPath)
-                .appId(appId)
-                .privateKey(privateKey)
-                .connectTimeout(Duration.ofSeconds(10))
-                .build();
-        } else {
-            this.transport = AlipaySseMcpTransport.builder(baseUri)
-                .sseEndpoint(endpointPath)
-                .appId(appId)
-                .privateKey(privateKey)
-                .connectTimeout(Duration.ofSeconds(10))
-                .build();
-        }
-
-        // 创建 MCP Client
-        this.syncClient = McpClient.sync(transport)
-            .requestTimeout(Duration.ofSeconds(30))
-            .build();
-
-        this.asyncClient = McpClient.async(transport)
-            .requestTimeout(Duration.ofSeconds(30))
-            .build();
+        this.transport = buildTransport(endpoint, mode, appId, privateKey, null, "sign", connectTimeout);
+        this.syncClient = McpClient.sync(transport).requestTimeout(DEFAULT_REQUEST_TIMEOUT).build();
+        this.asyncClient = McpClient.async(transport).requestTimeout(DEFAULT_REQUEST_TIMEOUT).build();
+        log.info("初始化 AlipayMcpClient (签名模式): appId={}, mode={}, connectTimeout={}", appId, mode, connectTimeout);
     }
 
     /**
@@ -123,6 +114,48 @@ public class AlipayMcpClient implements AutoCloseable {
         this(appId, privateKey, baseUri + "/api/v1/open/mcps/" + mcpName + (mode == TransportMode.STREAMABLE ? "/mcp" : "/sse"), mode);
     }
 
+    // ============ API Key 模式工厂方法 ============
+
+    /**
+     * 使用 API Key 创建 AlipayMcpClient（完整端点 URL）
+     *
+     * @param apiKey   API Key
+     * @param endpoint 端点 URL（SSE 或 Streamable）
+     * @param mode     传输模式（SSE 或 STREAMABLE）
+     * @return AlipayMcpClient 实例
+     */
+    public static AlipayMcpClient withApiKey(String apiKey, String endpoint, TransportMode mode) {
+        return new AlipayMcpClient(apiKey, endpoint, mode, DEFAULT_CONNECT_TIMEOUT);
+    }
+
+    /**
+     * 使用 API Key 创建 AlipayMcpClient（完整端点 URL，支持连接超时配置）
+     *
+     * @param apiKey         API Key
+     * @param endpoint       端点 URL（SSE 或 Streamable）
+     * @param mode           传输模式（SSE 或 STREAMABLE）
+     * @param connectTimeout 连接超时
+     * @return AlipayMcpClient 实例
+     */
+    public static AlipayMcpClient withApiKey(String apiKey, String endpoint, TransportMode mode, Duration connectTimeout) {
+        return new AlipayMcpClient(apiKey, endpoint, mode, connectTimeout);
+    }
+
+    /**
+     * 使用 API Key 创建 AlipayMcpClient（baseUri + mcpName 方式）
+     *
+     * @param apiKey   API Key
+     * @param baseUri  基础 URI（如 https://opengw.alipay.com）
+     * @param mcpName  MCP 名称
+     * @param mode     传输模式（SSE 或 STREAMABLE）
+     * @return AlipayMcpClient 实例
+     */
+    public static AlipayMcpClient withApiKey(String apiKey, String baseUri, String mcpName, TransportMode mode) {
+        return withApiKey(apiKey, baseUri + "/api/v1/open/mcps/" + mcpName + (mode == TransportMode.STREAMABLE ? "/mcp" : "/sse"), mode);
+    }
+
+    // ============ 兼容旧 API ============
+
     /**
      * 创建 AlipayMcpClient（PrivateKey 对象版本，兼容旧 API）
      *
@@ -143,9 +176,52 @@ public class AlipayMcpClient implements AutoCloseable {
         this(appId, privateKeyToString(privateKey), baseUri, mcpName);
     }
 
-    /**
-     * PrivateKey 转字符串（PEM 格式）
-     */
+    // ============ 内部：API Key 私有构造函数 ============
+
+    private AlipayMcpClient(String apiKey, String endpoint, TransportMode mode, Duration connectTimeout) {
+        this.appId = null;
+        this.privateKey = null;
+        this.transportMode = mode;
+        this.transport = buildTransport(endpoint, mode, null, null, apiKey, "api_key", connectTimeout);
+        this.syncClient = McpClient.sync(transport).requestTimeout(DEFAULT_REQUEST_TIMEOUT).build();
+        this.asyncClient = McpClient.async(transport).requestTimeout(DEFAULT_REQUEST_TIMEOUT).build();
+        log.info("初始化 AlipayMcpClient (API Key 模式): mode={}, connectTimeout={}", mode, connectTimeout);
+    }
+
+    // ============ 内部工具方法 ============
+
+    private static McpClientTransport buildTransport(String endpoint, TransportMode mode,
+                                                      String appId, String privateKey,
+                                                      String apiKey, String authType,
+                                                      Duration connectTimeout) {
+        String baseUri = extractBaseUri(endpoint);
+        String endpointPath = extractEndpointPath(endpoint, baseUri, mode);
+
+        if (mode == TransportMode.STREAMABLE) {
+            AlipayStreamableMcpTransport.Builder builder = AlipayStreamableMcpTransport.builder(baseUri)
+                .mcpEndpoint(endpointPath)
+                .authType(authType)
+                .connectTimeout(connectTimeout);
+            if ("sign".equals(authType)) {
+                builder.appId(appId).privateKey(privateKey);
+            } else {
+                builder.apiKey(apiKey);
+            }
+            return builder.build();
+        } else {
+            AlipaySseMcpTransport.Builder builder = AlipaySseMcpTransport.builder(baseUri)
+                .sseEndpoint(endpointPath)
+                .authType(authType)
+                .connectTimeout(connectTimeout);
+            if ("sign".equals(authType)) {
+                builder.appId(appId).privateKey(privateKey);
+            } else {
+                builder.apiKey(apiKey);
+            }
+            return builder.build();
+        }
+    }
+
     private static String privateKeyToString(PrivateKey privateKey) {
         String encoded = java.util.Base64.getEncoder().encodeToString(privateKey.getEncoded());
         return "-----BEGIN PRIVATE KEY-----\n" +
@@ -153,15 +229,11 @@ public class AlipayMcpClient implements AutoCloseable {
             "\n-----END PRIVATE KEY-----";
     }
 
-    /**
-     * 从完整 URL 中提取 baseUri
-     */
-    private String extractBaseUri(String endpoint) {
+    private static String extractBaseUri(String endpoint) {
         try {
             java.net.URI uri = java.net.URI.create(endpoint);
             return uri.getScheme() + "://" + uri.getAuthority();
         } catch (Exception e) {
-            // 如果解析失败，尝试按 /api 分割
             int idx = endpoint.indexOf("/api/");
             if (idx > 0) {
                 return endpoint.substring(0, idx);
@@ -170,23 +242,14 @@ public class AlipayMcpClient implements AutoCloseable {
         }
     }
 
-    /**
-     * 从完整 URL 中提取 endpoint path
-     */
-    private String extractEndpointPath(String endpoint, String baseUri, TransportMode mode) {
+    private static String extractEndpointPath(String endpoint, String baseUri, TransportMode mode) {
         if (endpoint.startsWith(baseUri)) {
             return endpoint.substring(baseUri.length());
         }
-        // 根据模式返回默认端点
         return mode == TransportMode.STREAMABLE ? "/mcp" : "/sse";
     }
 
-    /**
-     * 从完整 URL 中提取 endpoint path（默认 SSE 模式，用于向后兼容）
-     */
-    private String extractEndpointPath(String sseEndpoint, String baseUri) {
-        return extractEndpointPath(sseEndpoint, baseUri, TransportMode.SSE);
-    }
+    // ============ 公共 API ============
 
     /**
      * 初始化 MCP 客户端（执行 MCP 握手）
@@ -227,7 +290,6 @@ public class AlipayMcpClient implements AutoCloseable {
 
         McpSchema.CallToolResult result = syncClient.callTool(request);
 
-        // 聚合结果
         String text = result.content().stream()
             .map(content -> {
                 if (content instanceof McpSchema.TextContent textContent) {
@@ -304,6 +366,7 @@ public class AlipayMcpClient implements AutoCloseable {
     public void close() {
         log.info("关闭 AlipayMcpClient, appId: {}", appId);
         syncClient.close();
+        asyncClient.close();
     }
 
     // ============ 记录类 ============

@@ -2,34 +2,84 @@ package com.alipay.mcp.springai.transport;
 
 import com.alipay.v3.ApiException;
 import com.alipay.v3.util.AlipaySignature;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.net.URI;
 import java.util.UUID;
 
 /**
- * 支付宝签名工具
- * 为 HTTP 请求构建支付宝 RSA2 签名 Authorization 头
+ * 支付宝认证工具
+ * 支持两种认证模式：RSA 签名（默认）和 API Key
  */
 public class AlipayAuthRequestCustomizer {
 
+    private static final Logger log = LoggerFactory.getLogger(AlipayAuthRequestCustomizer.class);
+
     private final String appId;
     private final String privateKey;
+    private final String apiKey;
+    private final boolean useApiKey;
 
+    /**
+     * 签名模式构造函数
+     */
     public AlipayAuthRequestCustomizer(String appId, String privateKey) {
-        this.appId = appId;
-        this.privateKey = privateKey;
+        this(appId, privateKey, null);
     }
 
     /**
-     * 构建支付宝 Authorization 头
-     * 签名格式：ALIPAY-SHA256withRSA app_id=xxx,timestamp=xxx,nonce=xxx,sign=xxx
+     * 通用构造函数（支持签名和 API Key 模式）
+     * @param appId 应用 ID（签名模式必填）
+     * @param privateKey 私钥（签名模式必填）
+     * @param apiKey API Key（API Key 模式必填，签名模式传 null）
+     */
+    public AlipayAuthRequestCustomizer(String appId, String privateKey, String apiKey) {
+        this.appId = appId;
+        this.privateKey = privateKey;
+        this.useApiKey = apiKey != null && !apiKey.trim().isEmpty();
+        this.apiKey = this.useApiKey ? apiKey : null;
+        if (this.useApiKey) {
+            if (appId != null || privateKey != null) {
+                log.warn("API Key 模式下 appId/privateKey 将被忽略");
+            }
+        } else {
+            if (appId == null || appId.trim().isEmpty()) {
+                throw new IllegalArgumentException("签名模式下 appId 不能为空");
+            }
+            if (privateKey == null || privateKey.trim().isEmpty()) {
+                throw new IllegalArgumentException("签名模式下 privateKey 不能为空");
+            }
+        }
+    }
+
+    /**
+     * 构建 Authorization 头（根据配置自动选择模式）
      *
      * @param method HTTP 方法
      * @param uri    请求 URI（仅路径部分，不含域名）
      * @param body   请求体
      * @return Authorization 头的值
      */
-    public String buildAuthorization(String method, String uri, String body) throws ApiException {
+    public String buildAuthorization(String method, String uri, String body) {
+        if (useApiKey) {
+            // API Key 模式
+            return "Bearer " + apiKey;
+        }
+
+        // 签名模式
+        try {
+            return buildSignAuthorization(method, uri, body);
+        } catch (ApiException e) {
+            throw new RuntimeException("构建支付宝签名失败: " + e.getMessage(), e);
+        }
+    }
+
+    /**
+     * 构建支付宝 RSA 签名 Authorization 头
+     * 签名格式：ALIPAY-SHA256withRSA app_id=xxx,timestamp=xxx,nonce=xxx,sign=xxx
+     */
+    private String buildSignAuthorization(String method, String uri, String body) throws ApiException {
         // 1. 生成时间戳（毫秒）
         String timestamp = String.valueOf(System.currentTimeMillis());
         String nonce = UUID.randomUUID().toString();
@@ -60,5 +110,12 @@ public class AlipayAuthRequestCustomizer {
             path = path + "?" + uri.getQuery();
         }
         return path;
+    }
+
+    /**
+     * 判断是否使用 API Key 模式
+     */
+    public boolean isUseApiKey() {
+        return useApiKey;
     }
 }

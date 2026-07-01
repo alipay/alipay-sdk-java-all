@@ -26,6 +26,16 @@ public class AlipayMcpProperties {
     private String privateKey;
 
     /**
+     * 认证类型：sign（RSA签名，默认）或 api_key
+     */
+    private String authType = "sign";
+
+    /**
+     * API Key（API Key 认证模式必填）
+     */
+    private String apiKey;
+
+    /**
      * 传输模式：sse 或 streamable
      */
     private String transportMode = "sse";
@@ -82,6 +92,22 @@ public class AlipayMcpProperties {
         this.privateKey = privateKey;
     }
 
+    public String getAuthType() {
+        return authType;
+    }
+
+    public void setAuthType(String authType) {
+        this.authType = authType;
+    }
+
+    public String getApiKey() {
+        return apiKey;
+    }
+
+    public void setApiKey(String apiKey) {
+        this.apiKey = apiKey;
+    }
+
     public String getSseEndpoint() {
         return sseEndpoint;
     }
@@ -134,13 +160,26 @@ public class AlipayMcpProperties {
      * 验证配置是否完整
      */
     public boolean isValid() {
-        if (appId == null || appId.isEmpty()) {
-            return false;
-        }
-        if (privateKey == null || privateKey.isEmpty()) {
-            return false;
-        }
         // 检查端点配置
+        if (!hasEndpoint()) {
+            return false;
+        }
+
+        // 根据认证类型校验
+        if ("api_key".equalsIgnoreCase(authType)) {
+            // API Key 模式需要 apiKey
+            return apiKey != null && !apiKey.isEmpty();
+        } else {
+            // 签名模式（默认）需要 appId 和 privateKey
+            return appId != null && !appId.isEmpty()
+                    && privateKey != null && !privateKey.isEmpty();
+        }
+    }
+
+    /**
+     * 检查是否配置了端点
+     */
+    private boolean hasEndpoint() {
         if ("streamable".equalsIgnoreCase(transportMode)) {
             return streamableEndpoint != null || (baseUri != null && mcpName != null);
         } else {

@@ -71,6 +71,8 @@ public class AlipaySseMcpTransport {
         private String sseEndpoint = "/sse";
         private String appId;
         private String privateKey;
+        private String apiKey;
+        private String authType = "sign";
         private Duration connectTimeout = Duration.ofSeconds(10);
 
         public Builder(String baseUri) {
@@ -100,20 +102,59 @@ public class AlipaySseMcpTransport {
             throw new UnsupportedOperationException("请使用 String 格式的私钥");
         }
 
+        public Builder apiKey(String apiKey) {
+            this.apiKey = apiKey;
+            return this;
+        }
+
+        public Builder authType(String authType) {
+            this.authType = authType;
+            return this;
+        }
+
         public Builder connectTimeout(Duration timeout) {
             this.connectTimeout = timeout;
             return this;
         }
 
         public McpClientTransport build() {
-            if (appId == null || appId.isEmpty()) {
-                throw new IllegalArgumentException("appId is required");
+            // 根据认证类型校验参数
+            if ("api_key".equalsIgnoreCase(authType)) {
+                if (apiKey == null || apiKey.isEmpty()) {
+                    throw new IllegalArgumentException("apiKey is required when authType is api_key");
+                }
+                return createWithApiKey(apiKey, baseUri, sseEndpoint, connectTimeout);
+            } else {
+                // 签名模式
+                if (appId == null || appId.isEmpty()) {
+                    throw new IllegalArgumentException("appId is required when authType is sign");
+                }
+                if (privateKey == null || privateKey.isEmpty()) {
+                    throw new IllegalArgumentException("privateKey is required when authType is sign");
+                }
+                return create(appId, privateKey, baseUri, sseEndpoint, connectTimeout);
             }
-            if (privateKey == null || privateKey.isEmpty()) {
-                throw new IllegalArgumentException("privateKey is required");
-            }
-            return create(appId, privateKey, baseUri, sseEndpoint, connectTimeout);
         }
+    }
+
+    /**
+     * 使用 API Key 创建 Transport
+     */
+    private static McpClientTransport createWithApiKey(String apiKey, String baseUri,
+                                                        String sseEndpoint, Duration connectTimeout) {
+        AlipayAuthRequestCustomizer authCustomizer = new AlipayAuthRequestCustomizer(null, null, apiKey);
+
+        // 构建认证 customizer
+        McpSyncHttpClientRequestCustomizer authReqCustomizer = createSigningCustomizer(authCustomizer);
+
+        return HttpClientSseClientTransport.builder(baseUri)
+            .sseEndpoint(sseEndpoint)
+            .clientBuilder(HttpClient.newBuilder()
+                .connectTimeout(connectTimeout)
+                .version(HttpClient.Version.HTTP_1_1))
+            .httpRequestCustomizer(authReqCustomizer)
+            .connectTimeout(connectTimeout)
+            .build();
     }
 
     /**

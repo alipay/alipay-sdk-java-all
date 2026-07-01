@@ -2,6 +2,7 @@ package com.alipay.mcp.builder;
 
 import com.alipay.mcp.McpClient;
 import com.alipay.mcp.config.McpClientConfig;
+import com.alipay.mcp.config.McpClientConfig.AuthType;
 import com.alipay.mcp.interceptor.Interceptor;
 
 import java.util.ArrayList;
@@ -38,6 +39,35 @@ public class McpClientBuilder {
             throw new IllegalArgumentException("privateKey 不能为空");
         }
         config.setPrivateKey(privateKey);
+        return this;
+    }
+
+    /**
+     * 设置 API Key（使用 API Key 认证模式）
+     * 设置后自动切换为 API_KEY 认证模式
+     */
+    public McpClientBuilder apiKey(String apiKey) {
+        if (apiKey == null || apiKey.isEmpty()) {
+            throw new IllegalArgumentException("apiKey 不能为空");
+        }
+        config.setAuthType(AuthType.API_KEY);
+        config.setApiKey(apiKey);
+        return this;
+    }
+
+    /**
+     * 设置认证类型（默认：SIGN，即 RSA 签名）
+     * @param authType "sign" 或 "api_key"
+     */
+    public McpClientBuilder authType(String authType) {
+        if (authType == null || authType.isEmpty()) {
+            throw new IllegalArgumentException("authType 不能为空");
+        }
+        if ("api_key".equalsIgnoreCase(authType)) {
+            config.setAuthType(AuthType.API_KEY);
+        } else {
+            config.setAuthType(AuthType.SIGN);
+        }
         return this;
     }
 

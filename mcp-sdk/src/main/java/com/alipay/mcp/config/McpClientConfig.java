@@ -9,6 +9,20 @@ import java.util.Map;
 public class McpClientConfig {
 
     /**
+     * 认证类型
+     */
+    public enum AuthType {
+        /**
+         * RSA 签名认证（默认）
+         */
+        SIGN,
+        /**
+         * API Key 认证
+         */
+        API_KEY
+    }
+
+    /**
      * 默认网关地址
      */
     private static final String DEFAULT_SERVER_URL = "https://opengw.alipay.com";
@@ -54,6 +68,16 @@ public class McpClientConfig {
      * 私钥（PKCS8格式）
      */
     private String privateKey;
+
+    /**
+     * 认证类型：SIGN（RSA签名，默认）或 API_KEY
+     */
+    private AuthType authType = AuthType.SIGN;
+
+    /**
+     * API Key（使用 API_KEY 认证时填写）
+     */
+    private String apiKey;
 
     /**
      * MCP 服务名称
@@ -167,6 +191,22 @@ public class McpClientConfig {
 
     public void setPrivateKey(String privateKey) {
         this.privateKey = privateKey;
+    }
+
+    public AuthType getAuthType() {
+        return authType;
+    }
+
+    public void setAuthType(AuthType authType) {
+        this.authType = authType;
+    }
+
+    public String getApiKey() {
+        return apiKey;
+    }
+
+    public void setApiKey(String apiKey) {
+        this.apiKey = apiKey;
     }
 
     public String getMcpName() {
@@ -317,11 +357,20 @@ public class McpClientConfig {
      * 校验必需参数
      */
     public void validate() {
-        if (appId == null || appId.isEmpty()) {
-            throw new IllegalArgumentException("appId 不能为空");
-        }
-        if (privateKey == null || privateKey.isEmpty()) {
-            throw new IllegalArgumentException("privateKey 不能为空");
+        // 根据认证类型校验参数
+        if (authType == AuthType.SIGN) {
+            // 签名模式需要 appId 和 privateKey
+            if (appId == null || appId.isEmpty()) {
+                throw new IllegalArgumentException("签名模式下 appId 不能为空");
+            }
+            if (privateKey == null || privateKey.isEmpty()) {
+                throw new IllegalArgumentException("签名模式下 privateKey 不能为空");
+            }
+        } else if (authType == AuthType.API_KEY) {
+            // API Key 模式需要 apiKey
+            if (apiKey == null || apiKey.isEmpty()) {
+                throw new IllegalArgumentException("API Key 模式下 apiKey 不能为空");
+            }
         }
 
         // 根据传输模式校验端点配置
