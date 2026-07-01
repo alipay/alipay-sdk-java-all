@@ -1,16 +1,16 @@
 # Alipay MCP SDK for Java
 
-支付宝 MCP 网关 SDK for Java，基于标准 MCP (Model Context Protocol) 协议实现。
+支付宝 MCP 网关 SDK for Java，基于标准 MCP (Model Context Protocol) 协议实现，帮助开发者快速接入支付宝 MCP 网关服务。
 
 ## 特性
 
-- ✅ 基于标准 MCP 协议
-- ✅ 支持 SSE (Server-Sent Events) 流式通信（协议版本：2024-11-05）
-- ✅ 支持 Streamable HTTP 传输（协议版本：2025-03-26）
-- ✅ 支持 JSON-RPC 2.0 消息协议
-- ✅ 复用支付宝 SDK 签名能力
-- ✅ 极简配置（仅需 appId、privateKey、mcpName）
-- ✅ 支持 Session-ID 会话保持（Streamable 模式）
+- 基于标准 MCP 协议，支持 JSON-RPC 2.0 消息格式
+- 支持 SSE (Server-Sent Events) 传输（协议版本：2024-11-05）
+- 支持 Streamable HTTP 传输（协议版本：2025-03-26），推荐使用
+- 复用支付宝 SDK 签名能力，自动完成请求认证
+- 支持自定义拦截器链，可扩展日志、监控等能力
+- 支持 Session-ID 会话保持（Streamable 模式）
+- 提供简化客户端 `SimpleMcpClient`，开箱即用
 
 ## 环境要求
 
@@ -31,272 +31,370 @@
 
 ## 快速开始
 
-### 1. 创建配置
+SDK 提供两种客户端：
 
-**Streamable HTTP 模式（默认，推荐）：**
+| 客户端 | 适用场景 | 特点 |
+|--------|---------|------|
+| `SimpleMcpClient` | 快速开发、大多数场景 | API 简洁，自动连接和初始化，支持 Builder 链式调用工具参数 |
+| `McpClient` | 需要完整协议控制 | 完整的 MCP 协议支持，支持自定义拦截器 |
+
+### 1. SimpleMcpClient（推荐）
+
+`SimpleMcpClient` 是简化版客户端，自动完成连接与初始化握手，API 更加简洁。
+
+#### Streamable HTTP 模式（默认，推荐）
 
 ```java
-// 方式一：使用 mcpName（自动拼接 Streamable URL）
-McpConfig config = new McpConfig(
-    "2021006141677002",     // appId
-    "-----BEGIN PRIVATE KEY----- ...",  // 私钥 (PKCS8 格式)
-    "aidata-convenience-life5"  // mcpName
-);
-// 默认 transportMode = "streamable"，协议版本自动设置为 2025-03-26
+try (SimpleMcpClient client = SimpleMcpClient.create()
+        .appId("2021006141677002")
+        .privateKey("-----BEGIN PRIVATE KEY----- ...")
+        .mcpName("aidata-convenience-life5")
+        .serverUrl("https://opengw.alipay.com")
+        .build()) {
 
-// 方式二：使用完整 Streamable 端点 URL
-McpConfig config = new McpConfig(
-    "2021006141677002",     // appId
-    "-----BEGIN PRIVATE KEY----- ...",  // 私钥 (PKCS8 格式)
-    null
-);
-config.setStreamableEndpoint("https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/mcp");
+    // 连接并自动完成初始化
+    client.connect();
+
+    // 获取工具列表
+    List<Tool> tools = client.listTools();
+
+    // 调用工具（Map 参数）
+    Map<String, Object> args = new HashMap<>();
+    args.put("from", "2024-01-01");
+    args.put("to", "2024-12-31");
+    ToolCallResult result = client.callTool("Holidays", args);
+
+    // 读取结果
+    result.getContent().forEach(c -> System.out.println(c.getText()));
+}
 ```
 
-**SSE 模式（旧版协议，如需兼容）：**
+#### SSE 模式（兼容旧版协议）
 
 ```java
-McpConfig config = new McpConfig(
-    "2021006141677002",     // appId
-    "-----BEGIN PRIVATE KEY----- ...",  // 私钥 (PKCS8 格式)
-    "aidata-convenience-life5"  // mcpName
-);
-config.setTransportMode("sse");  // 显式设置为 SSE 模式
-config.setSseEndpoint("https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/sse");
+try (SimpleMcpClient client = SimpleMcpClient.create()
+        .appId("2021006141677002")
+        .privateKey("-----BEGIN PRIVATE KEY----- ...")
+        .mcpName("aidata-convenience-life5")
+        .transportMode("sse")  // 显式设置为 SSE 模式
+        .serverUrl("https://opengw.alipay.com")
+        .build()) {
+
+    client.connect();
+    List<Tool> tools = client.listTools();
+}
 ```
 
-### 2. 创建客户端并连接
+#### Builder 链式调用工具参数
+
+`SimpleMcpClient` 提供了链式 Builder 风格来构建工具调用参数，支持嵌套参数：
 
 ```java
-try (McpClient client = new McpClient(config)) {
-    // 连接并初始化
+ToolCallResult result = client.callTool("myTool")
+        .param("query", "test")
+        .nestedParam("toolParams", "date", "2024-01-01")
+        .nestedParam("toolParams", "type", "1")
+        .execute();
+```
+
+#### 异步调用
+
+```java
+// 异步获取工具列表
+CompletableFuture<List<Tool>> toolsFuture = client.listToolsAsync();
+
+// 异步调用工具
+CompletableFuture<ToolCallResult> resultFuture = client.callToolAsync("Holidays", args);
+
+// 异步 Builder 风格
+CompletableFuture<ToolCallResult> future = client.callTool("Holidays")
+        .param("from", "2024-01-01")
+        .param("to", "2024-12-31")
+        .executeAsync();
+```
+
+#### 辅助方法
+
+```java
+// 检查工具是否存在
+boolean exists = client.hasTool("Holidays");
+
+// 获取工具详情
+Tool tool = client.getTool("Holidays");
+System.out.println(tool.getName() + ": " + tool.getDescription());
+```
+
+### 2. McpClient（完整协议控制）
+
+`McpClient` 通过 `McpClientBuilder` 构建，适合需要自定义拦截器或精细控制 MCP 协议的场景。
+
+#### Streamable HTTP 模式（推荐）
+
+```java
+try (McpClient client = new McpClientBuilder()
+        .appId("2021006141677002")
+        .privateKey("-----BEGIN PRIVATE KEY----- ...")
+        .mcpName("aidata-convenience-life5")
+        .transportMode("streamable")
+        .serverUrl("https://opengw.alipay.com")
+        .build()) {
+
+    // 建立连接并完成初始化握手
     client.connectAndInitialize(new McpEventListener() {
         @Override
-        public void onEndpointReady(String endpoint) {
-            System.out.println("Endpoint: " + endpoint);
+        public void onConnected() {
+            System.out.println("连接已建立");
         }
-        
+
         @Override
         public void onError(McpException e) {
             System.err.println("错误：" + e.getMessage());
         }
     });
-    
+
     // 获取工具列表
     List<Tool> tools = client.listTools();
-    tools.forEach(t -> System.out.println(t.getName()));
-    
+
     // 调用工具
     Map<String, Object> args = new HashMap<>();
-    args.put("query", "test");
-    ToolCallResult result = client.callTool("my-tool", args);
-    result.getContent().forEach(c -> System.out.println(c.getText()));
+    args.put("from", "2024-01-01");
+    args.put("to", "2024-12-31");
+    ToolCallResult result = client.callTool("Holidays", args);
 }
 ```
 
-### 3. 使用 Builder 模式（推荐）
+#### SSE 模式
 
 ```java
-// 方式一：使用 mcpName（SSE 模式）
 try (McpClient client = new McpClientBuilder()
         .appId("2021006141677002")
-        .privateKey("...")
+        .privateKey("-----BEGIN PRIVATE KEY----- ...")
         .mcpName("aidata-convenience-life5")
-        .build()) {
-    client.connectAndInitialize(listener);
-    // ...
-}
-
-// 方式二：使用完整 SSE 端点 URL
-try (McpClient client = new McpClientBuilder()
-        .appId("2021006141677002")
-        .privateKey("...")
-        .sseEndpoint("https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/sse")
-        .build()) {
-    client.connectAndInitialize(listener);
-    // ...
-}
-
-// 方式三：使用 Streamable HTTP 模式（默认，无需显式设置）
-try (McpClient client = new McpClientBuilder()
-        .appId("2021006141677002")
-        .privateKey("...")
-        .mcpName("aidata-convenience-life5")
-        // .transportMode("streamable")  // 默认值，可省略
-        .build()) {
-    client.connectAndInitialize(listener);
-    // ...
-}
-```
-
-### 4. 使用 SimpleMcpClient（最简洁）
-
-**Streamable HTTP 模式（默认，推荐）：**
-
-```java
-// 方式一：使用 mcpName（默认就是 streamable 模式）
-try (SimpleMcpClient client = SimpleMcpClient.create()
-        .appId("2021006141677002")
-        .privateKey("...")
-        .mcpName("aidata-convenience-life5")
-        // .transportMode("streamable")  // 默认值，可省略
+        .transportMode("sse")
         .serverUrl("https://opengw.alipay.com")
         .build()) {
-    
-    client.connect();  // 自动初始化
-    
-    // 同步调用
+
+    client.connectAndInitialize(listener);
     List<Tool> tools = client.listTools();
-    
-    // 异步调用
-    CompletableFuture<ToolCallResult> future = client.callToolAsync("tool1", params);
 }
 ```
 
-**SSE 模式（旧版协议，如需兼容）：**
+#### 使用完整端点 URL
+
+除了通过 `mcpName` 自动拼接端点 URL 外，也可以直接指定完整的端点地址：
 
 ```java
-try (SimpleMcpClient client = SimpleMcpClient.create()
+// Streamable HTTP 端点
+try (McpClient client = new McpClientBuilder()
         .appId("2021006141677002")
-        .privateKey("...")
-        .sseEndpoint("https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/sse")
-        .transportMode("sse")  // 显式设置为 SSE 模式
+        .privateKey("-----BEGIN PRIVATE KEY----- ...")
+        .transportMode("streamable")
+        .streamableEndpoint("https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/mcp")
         .build()) {
-    
-    client.connect();  // 自动初始化
-    
-    // 同步调用
-    List<Tool> tools = client.listTools();
+    // ...
+}
+
+// SSE 端点
+try (McpClient client = new McpClientBuilder()
+        .appId("2021006141677002")
+        .privateKey("-----BEGIN PRIVATE KEY----- ...")
+        .transportMode("sse")
+        .sseEndpoint("https://opengw.alipay.com/api/v1/open/mcps/aidata-convenience-life5/sse")
+        .build()) {
+    // ...
 }
 ```
+
+### 3. 自定义拦截器
+
+SDK 支持自定义拦截器，可以在请求发送前后添加自定义逻辑（如日志、监控、认证增强等）。`McpClientBuilder` 会自动添加 `AlipayAuthInterceptor` 进行签名认证，无需手动添加。
+
+```java
+// 创建日志拦截器
+Interceptor loggingInterceptor = new Interceptor() {
+    @Override
+    public Response intercept(Chain chain) throws IOException {
+        Request request = chain.request();
+        long start = System.currentTimeMillis();
+        System.out.println("[Logger] >>> " + request.getMethod() + " " + request.getUrl());
+
+        Response response = chain.proceed(request);
+
+        long cost = System.currentTimeMillis() - start;
+        System.out.println("[Logger] <<< " + response.getCode() + " (" + cost + "ms)");
+        return response;
+    }
+};
+
+try (McpClient client = new McpClientBuilder()
+        .appId("2021006141677002")
+        .privateKey("-----BEGIN PRIVATE KEY----- ...")
+        .mcpName("aidata-convenience-life5")
+        .addInterceptor(loggingInterceptor)
+        .build()) {
+    // ...
+}
+```
+
+## 配置说明
+
+### SimpleMcpClient 配置项
+
+| 方法 | 必填 | 默认值 | 说明 |
+|------|------|--------|------|
+| `appId(String)` | 是 | - | 应用 ID |
+| `privateKey(String)` | 是 | - | 应用私钥（PKCS8 格式） |
+| `mcpName(String)` | 与 endpoint 二选一 | - | MCP 服务名称，用于自动拼接端点 URL |
+| `sseEndpoint(String)` | 与 mcpName 二选一 | - | SSE 端点完整 URL |
+| `streamableEndpoint(String)` | 与 mcpName 二选一 | - | Streamable HTTP 端点完整 URL |
+| `transportMode(String)` | 否 | `"streamable"` | 传输模式：`"streamable"` 或 `"sse"` |
+| `serverUrl(String)` | 否 | `https://opengw.alipay.com` | 网关地址 |
+| `connectTimeout(int)` | 否 | `10000` | 连接超时（毫秒） |
+| `readTimeout(int)` | 否 | `60000` | 读取超时（毫秒） |
+| `clientName(String)` | 否 | `"mcp-java-sdk"` | 客户端名称 |
+| `clientVersion(String)` | 否 | `"1.0.0"` | 客户端版本 |
+| `protocolVersion(String)` | 否 | 自动根据模式选择 | MCP 协议版本 |
+| `onProgress(Consumer)` | 否 | - | 进度回调 |
+| `onLog(Consumer)` | 否 | - | 日志回调 |
+| `onError(Consumer)` | 否 | - | 错误回调 |
+
+### McpClientBuilder 额外配置项
+
+在 SimpleMcpClient 基础上，`McpClientBuilder` 还支持：
+
+| 方法 | 默认值 | 说明 |
+|------|--------|------|
+| `sseConnectTimeout(int)` | `30000` | SSE 连接超时（毫秒） |
+| `endpointReadyTimeout(int)` | `10000` | Endpoint 就绪超时（毫秒） |
+| `requestTimeout(int)` | `30000` | 请求超时（毫秒） |
+| `callToolTimeout(int)` | `60000` | 工具调用超时（毫秒） |
+| `customHeader(String, String)` | - | 自定义请求头 |
+| `alipayPublicKey(String)` | - | 支付宝公钥（用于验签） |
+| `appAuthToken(String)` | - | 应用授权令牌 |
+| `capability(String, Object)` | - | 客户端能力声明 |
+| `addInterceptor(Interceptor)` | - | 添加自定义拦截器 |
 
 ## 核心 API
 
-### 建立连接
+### McpClient
 
-```java
-client.connect(new McpEventListener() {
-    @Override
-    public void onConnected() {
-        System.out.println("连接已建立");
-    }
-    
-    @Override
-    public void onEndpointReady(String endpoint) {
-        System.out.println("Endpoint 就绪：" + endpoint);
-    }
-    
-    @Override
-    public void onProgress(ProgressUpdate progress) {
-        System.out.printf("进度：%d/%d%n", progress.getProgress(), progress.getTotal());
-    }
-    
-    @Override
-    public void onLog(LogMessage log) {
-        System.out.printf("[%s] %s\n", log.getLevel(), log.getMessage());
-    }
-    
-    @Override
-    public void onError(McpException e) {
-        System.err.println("错误：" + e.getMessage());
-    }
-});
-```
+| 方法 | 说明 |
+|------|------|
+| `connect(McpEventListener)` | 建立连接 |
+| `connectAndInitialize(McpEventListener)` | 建立连接并自动完成初始化握手 |
+| `listTools()` | 同步获取工具列表 |
+| `listToolsAsync()` | 异步获取工具列表 |
+| `callTool(String, Map)` | 同步调用工具 |
+| `callToolAsync(String, Map)` | 异步调用工具 |
+| `initialize(ClientCapabilities, ClientInfo)` | 手动初始化（可选） |
+| `sendNotification(String, Object)` | 发送通知（不等待响应） |
+| `close()` | 关闭连接 |
 
-### 获取工具列表
+### SimpleMcpClient
 
-```java
-List<Tool> tools = client.listTools();
-```
+| 方法 | 说明 |
+|------|------|
+| `connect()` | 连接并自动初始化（幂等） |
+| `listTools()` | 同步获取工具列表 |
+| `listToolsAsync()` | 异步获取工具列表 |
+| `callTool(String, Map)` | 同步调用工具 |
+| `callToolAsync(String, Map)` | 异步调用工具 |
+| `callTool(String)` | 返回 Builder，支持链式参数构建 |
+| `getTool(String)` | 获取指定工具详情 |
+| `hasTool(String)` | 检查工具是否存在 |
+| `callToolsParallel(List)` | 并发调用多个工具 |
+| `close()` | 关闭连接 |
 
-### 调用工具
+### McpEventListener
 
-```java
-Map<String, Object> args = new HashMap<>();
-args.put("param1", "value1");
-ToolCallResult result = client.callTool("tool-name", args);
-```
-
-### 初始化（可选）
-
-```java
-ClientCapabilities capabilities = new ClientCapabilities();
-ClientInfo clientInfo = new ClientInfo();
-clientInfo.setName("my-client");
-clientInfo.setVersion("1.0.0");
-
-InitializeResult initResult = client.initialize(capabilities, clientInfo);
-System.out.println("协议版本：" + initResult.getProtocolVersion());
-```
+| 回调方法 | 说明 |
+|----------|------|
+| `onConnected()` | 连接建立 |
+| `onEndpointReady(String)` | 消息端点就绪 |
+| `onMessage(JsonRpcMessage)` | 接收到 JSON-RPC 消息 |
+| `onNotification(JsonRpcMessage)` | 接收到通知消息 |
+| `onProgress(ProgressUpdate)` | 进度更新 |
+| `onLog(LogMessage)` | 日志输出 |
+| `onDisconnected()` | 连接断开 |
+| `onError(McpException)` | 发生错误 |
 
 ## 签名机制
 
-SDK 复用支付宝 v3 SDK 的签名能力，签名规则如下：
+SDK 内置 `AlipayAuthInterceptor`，自动为每个请求生成签名。签名过程复用支付宝 v3 SDK 的 `AlipaySignature` 能力，无需手动处理。
 
 **签名原文格式：**
+
 ```
 {authString}
 {method}
-{url}
+{uri}
 {body}
 [{appAuthToken}]
 ```
 
-**authString 格式：**
+**Authorization Header：**
+
 ```
-app_id={appId},timestamp={timestamp},nonce={nonce}
+ALIPAY-SHA256withRSA app_id={appId},timestamp={timestamp},nonce={nonce},sign={sign}
 ```
 
-**Authorization Header：**
-```
-ALIPAY-SHA256withRSA {authString},sign={sign}
-```
+## 传输模式对比
+
+| 特性 | Streamable HTTP（推荐） | SSE |
+|------|------------------------|-----|
+| 协议版本 | 2025-03-26 | 2024-11-05 |
+| 连接方式 | HTTP 请求/响应 | SSE 长连接 |
+| Session-ID | 支持 | 不支持 |
+| 适用场景 | 新项目，推荐使用 | 兼容旧版 |
 
 ## 项目结构
 
 ```
-mcp-sdk/
-├── src/main/java/com/alipay/mcp/
-│   ├── McpConfig.java              # 配置类
-│   ├── McpException.java           # 异常类
-│   ├── McpClient.java              # 主客户端
-│   ├── SimpleMcpClient.java        # 简化客户端
-│   ├── auth/
-│   │   └── McpAuthBuilder.java     # 认证头构建器
-│   ├── protocol/
-│   │   ├── JsonRpcMessage.java     # JSON-RPC 消息
-│   │   ├── JsonRpcError.java       # JSON-RPC 错误
-│   │   ├── Tool.java               # Tool 定义
-│   │   ├── ToolCall.java           # Tool 调用参数
-│   │   ├── ToolCallResult.java     # Tool 调用结果
-│   │   ├── Content.java            # 内容项
-│   │   ├── Resource.java           # 资源引用
-│   │   ├── JsonSchema.java         # JSON Schema
-│   │   └── JsonSchemaProperty.java # JSON Schema 属性
-│   ├── config/
-│   │   └── McpClientConfig.java    # 客户端配置
-│   └── transport/
-│       ├── SseConnection.java      # SSE 连接管理
-│       ├── StreamableHttpConnection.java  # Streamable HTTP 连接管理
-│       ├── TransportLayer.java     # 传输层接口
-│       ├── McpEventListener.java   # 事件监听器
-│       ├── EndpointResponse.java   # Endpoint 事件
-│       ├── ProgressUpdate.java     # 进度更新
-│       └── LogMessage.java         # 日志消息
-├── src/test/java/
-│   └── com/alipay/mcp/
-│       └── McpClientDemo.java      # 使用示例
-├── pom.xml
-└── README.md
+mcp-sdk/src/main/java/com/alipay/mcp/
+├── McpClient.java                    # 主客户端（完整协议控制）
+├── SimpleMcpClient.java              # 简化客户端（推荐）
+├── McpException.java                 # 异常类
+├── auth/
+│   └── McpAuthBuilder.java           # 认证头构建器
+├── builder/
+│   └── McpClientBuilder.java         # McpClient 构建器
+├── config/
+│   └── McpClientConfig.java          # 客户端配置
+├── interceptor/
+│   ├── Interceptor.java              # 拦截器接口
+│   ├── InterceptorChain.java         # 拦截器链
+│   ├── AlipayAuthInterceptor.java    # 支付宝认证拦截器（签名）
+│   ├── Request.java                  # 请求对象
+│   └── Response.java                 # 响应对象
+├── protocol/
+│   ├── Tool.java                     # Tool 定义
+│   ├── ToolCallParams.java           # Tool 调用参数
+│   ├── ToolCallResult.java           # Tool 调用结果
+│   ├── Content.java                  # 内容项（text/image/resource）
+│   ├── Resource.java                 # 资源引用
+│   ├── JsonRpcMessage.java           # JSON-RPC 消息
+│   ├── JsonRpcError.java             # JSON-RPC 错误
+│   ├── JsonSchema.java               # JSON Schema
+│   └── JsonSchemaProperty.java       # JSON Schema 属性
+└── transport/
+    ├── TransportLayer.java           # 传输层接口
+    ├── SseConnection.java            # SSE 连接管理
+    ├── StreamableHttpConnection.java # Streamable HTTP 连接管理
+    ├── McpEventListener.java         # 事件监听器
+    ├── ReconnectConfig.java          # 重连配置
+    ├── EndpointResponse.java         # Endpoint 响应
+    ├── ProgressUpdate.java           # 进度更新
+    └── LogMessage.java               # 日志消息
 ```
 
 ## 依赖说明
 
-| 依赖 | 说明 |
-|------|------|
-| alipay-sdk-java-v3 | 支付宝 v3 SDK（用于签名） |
-| okhttp-sse | OkHttp SSE 支持 |
-| gson | JSON 序列化/反序列化 |
+| 依赖 | 版本 | 说明 |
+|------|------|------|
+| alipay-sdk-java-v3 | 3.1.70.ALL | 支付宝 v3 SDK（用于签名） |
+| okhttp-sse | 4.9.3 | OkHttp SSE 支持 |
+| gson | 2.9.0 | JSON 序列化/反序列化 |
+| slf4j-api | 1.7.36 | 日志门面 |
 
 ## 许可证
 

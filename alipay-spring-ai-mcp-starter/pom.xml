@@ -61,12 +61,11 @@
     </dependencyManagement>
 
     <dependencies>
-        <!-- MCP SDK - 改为 provided，由使用方项目统一管理版本 -->
+        <!-- MCP SDK -->
         <dependency>
             <groupId>io.modelcontextprotocol.sdk</groupId>
             <artifactId>mcp</artifactId>
             <version>${mcp.version}</version>
-            <scope>provided</scope>
         </dependency>
 
         <!-- 支付宝 SDK v3 (用于签名) -->
