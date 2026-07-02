@@ -306,6 +306,7 @@ public class SimpleMcpClient implements AutoCloseable {
     public static class SimpleMcpClientBuilder {
         private String appId;
         private String privateKey;
+        private String apiKey;
         private String mcpName;
         private String sseEndpoint;
         private String streamableEndpoint;
@@ -330,6 +331,11 @@ public class SimpleMcpClient implements AutoCloseable {
 
         public SimpleMcpClientBuilder privateKey(String privateKey) {
             this.privateKey = privateKey;
+            return this;
+        }
+
+        public SimpleMcpClientBuilder apiKey(String apiKey) {
+            this.apiKey = apiKey;
             return this;
         }
 
@@ -458,6 +464,15 @@ public class SimpleMcpClient implements AutoCloseable {
             McpClientConfig config = new McpClientConfig();
             config.setAppId(appId);
             config.setPrivateKey(privateKey);
+
+            // 根据是否设置了 apiKey 自动判断认证类型
+            if (apiKey != null && !apiKey.isEmpty()) {
+                config.setAuthType(McpClientConfig.AuthType.API_KEY);
+                config.setApiKey(apiKey);
+            } else {
+                config.setAuthType(McpClientConfig.AuthType.SIGN);
+            }
+
             config.setMcpName(mcpName);
             if (sseEndpoint != null) {
                 config.setSseEndpoint(sseEndpoint);

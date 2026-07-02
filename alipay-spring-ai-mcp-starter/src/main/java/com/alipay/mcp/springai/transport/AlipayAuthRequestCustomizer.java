@@ -36,7 +36,11 @@ public class AlipayAuthRequestCustomizer {
      */
     public AlipayAuthRequestCustomizer(String appId, String privateKey, String apiKey) {
         this.appId = appId;
-        this.privateKey = privateKey;
+        // 去除 PEM 格式标记和空白，只保留 Base64 部分
+        this.privateKey = privateKey != null ? privateKey
+                .replace("-----BEGIN PRIVATE KEY-----", "")
+                .replace("-----END PRIVATE KEY-----", "")
+                .replaceAll("\\s+", "") : null;
         this.useApiKey = apiKey != null && !apiKey.trim().isEmpty();
         this.apiKey = this.useApiKey ? apiKey : null;
         if (this.useApiKey) {

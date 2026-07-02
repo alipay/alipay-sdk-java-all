@@ -76,7 +76,12 @@ public class SseConnection {
         } else {
             this.sseUrl = this.baseUrl + "/api/v1/open/mcps/" + config.getMcpName() + "/sse";
         }
-        this.authBuilder = new McpAuthBuilder(config.getAppId(), config.getPrivateKey());
+        // 根据认证类型初始化 authBuilder
+        if (config.getAuthType() == com.alipay.mcp.config.McpClientConfig.AuthType.API_KEY) {
+            this.authBuilder = null;
+        } else {
+            this.authBuilder = new McpAuthBuilder(config.getAppId(), config.getPrivateKey());
+        }
 
         this.httpClient = new OkHttpClient.Builder()
                 .connectTimeout(config.getConnectTimeout(), TimeUnit.MILLISECONDS)
@@ -444,9 +449,18 @@ public class SseConnection {
     }
 
     private Headers buildHeaders(String method, String url, String body) throws ApiException {
-        Map<String, String> headers = authBuilder.buildHeaders(method, parseUri(url), body);
         Headers.Builder builder = new Headers.Builder();
-        headers.forEach(builder::add);
+
+        // 根据认证类型添加请求头
+        if (config.getAuthType() == com.alipay.mcp.config.McpClientConfig.AuthType.API_KEY) {
+            // API Key 模式
+            builder.add("Authorization", "Bearer " + config.getApiKey());
+        } else {
+            // 签名模式
+            Map<String, String> headers = authBuilder.buildHeaders(method, parseUri(url), body);
+            headers.forEach(builder::add);
+        }
+
         return builder.build();
     }
 

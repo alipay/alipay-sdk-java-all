@@ -75,7 +75,12 @@ public class StreamableHttpConnection implements TransportLayer {
             this.mcpUrl = config.getSseEndpoint();
         }
 
-        this.authBuilder = new McpAuthBuilder(config.getAppId(), config.getPrivateKey());
+        // 根据认证类型初始化 authBuilder
+        if (config.getAuthType() == com.alipay.mcp.config.McpClientConfig.AuthType.API_KEY) {
+            this.authBuilder = null;
+        } else {
+            this.authBuilder = new McpAuthBuilder(config.getAppId(), config.getPrivateKey());
+        }
 
         this.httpClient = new OkHttpClient.Builder()
                 .connectTimeout(config.getConnectTimeout(), TimeUnit.MILLISECONDS)
@@ -427,9 +432,13 @@ public class StreamableHttpConnection implements TransportLayer {
     }
 
     private Headers buildHeaders(String method, String url, String body) throws ApiException {
-        Map<String, String> headers = authBuilder.buildHeaders(method, parseUri(url), body);
         Headers.Builder builder = new Headers.Builder();
-        headers.forEach(builder::add);
+        if (config.getAuthType() == com.alipay.mcp.config.McpClientConfig.AuthType.API_KEY) {
+            builder.add("Authorization", "Bearer " + config.getApiKey());
+        } else {
+            Map<String, String> headers = authBuilder.buildHeaders(method, parseUri(url), body);
+            headers.forEach(builder::add);
+        }
         return builder.build();
     }
 
