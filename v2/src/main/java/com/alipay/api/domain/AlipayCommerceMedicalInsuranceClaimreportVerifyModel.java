@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 理赔报案核对
  *
  * @author auto create
- * @since 1.0, 2026-05-26 19:52:48
+ * @since 1.0, 2026-07-02 16:32:56
  */
 public class AlipayCommerceMedicalInsuranceClaimreportVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6541976772193299754L;
+	private static final long serialVersionUID = 5637521998916475277L;
+
+	/**
+	 * 核对场景字段。
+	 */
+	@ApiField("check_scene")
+	private String checkScene;
 
 	/**
 	 * 密钥，加密时使用
@@ -28,6 +34,13 @@ public class AlipayCommerceMedicalInsuranceClaimreportVerifyModel extends Alipay
 	@ApiListField("verify_param_list")
 	@ApiField("verify_param_list")
 	private List<VerifyParamList> verifyParamList;
+
+	public String getCheckScene() {
+		return this.checkScene;
+	}
+	public void setCheckScene(String checkScene) {
+		this.checkScene = checkScene;
+	}
 
 	public String getSecretKey() {
 		return this.secretKey;

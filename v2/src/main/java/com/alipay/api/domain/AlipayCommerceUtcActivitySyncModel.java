@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * utc活动信息同步
  *
  * @author auto create
- * @since 1.0, 2026-06-08 16:28:29
+ * @since 1.0, 2026-07-02 16:05:57
  */
 public class AlipayCommerceUtcActivitySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7436961414989417885L;
+	private static final long serialVersionUID = 5722322591492932374L;
 
 	/**
 	 * 业务ID，需回传同步接口的业务ID

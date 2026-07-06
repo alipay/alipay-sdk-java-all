@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建员工价立减活动
  *
  * @author auto create
- * @since 1.0, 2026-06-17 10:52:56
+ * @since 1.0, 2026-06-22 15:02:58
  */
 public class AlipayCommerceEcActivityDiscountCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6797716475298191613L;
+	private static final long serialVersionUID = 2616721363974867553L;
 
 	/**
 	 * 活动预算信息

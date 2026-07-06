@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 直付通c2c进件撤销
  *
  * @author auto create
- * @since 1.0, 2026-01-23 11:42:43
+ * @since 1.0, 2026-06-23 10:38:55
  */
 public class AlipayMerchantIndirectZftforcCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6226744856165522451L;
+	private static final long serialVersionUID = 5286176787556545241L;
 
 	/**
 	 * 直付通c2c申请单

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiMerchantDeviceHeartbeatUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5576752322757172686L;
+	private static final long serialVersionUID = 7224534684115449665L;
 
 	/**
 	 * 前台/后台app信息，name传递应用名称，version传递应用版本信息，status传递应用状态，枚举：active----运行，background----后台运行

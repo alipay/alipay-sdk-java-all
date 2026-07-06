@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 快递状态通知接口
  *
  * @author auto create
- * @since 1.0, 2025-09-18 11:30:49
+ * @since 1.0, 2026-06-26 10:00:37
  */
 public class XingheLendassistCarfinExpressstatusNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7435373551443337975L;
+	private static final long serialVersionUID = 8831638421168524135L;
 
 	/**
 	 * 快递异常原因
 	 */
 	@ApiField("alert_reason")
 	private String alertReason;
+
+	/**
+	 * 取消原因
+	 */
+	@ApiField("cancel_reason")
+	private String cancelReason;
 
 	/**
 	 * 快递员信息
@@ -60,6 +66,12 @@ public class XingheLendassistCarfinExpressstatusNotifyModel extends AlipayObject
 	private String outExpressNo;
 
 	/**
+	 * 是否超时自动揽收
+	 */
+	@ApiField("overdue_auto_pickup")
+	private Boolean overdueAutoPickup;
+
+	/**
 	 * 快递状态
 	 */
 	@ApiField("status")
@@ -70,6 +82,13 @@ public class XingheLendassistCarfinExpressstatusNotifyModel extends AlipayObject
 	}
 	public void setAlertReason(String alertReason) {
 		this.alertReason = alertReason;
+	}
+
+	public String getCancelReason() {
+		return this.cancelReason;
+	}
+	public void setCancelReason(String cancelReason) {
+		this.cancelReason = cancelReason;
 	}
 
 	public CarfinCourier getCourierInfo() {
@@ -112,6 +131,13 @@ public class XingheLendassistCarfinExpressstatusNotifyModel extends AlipayObject
 	}
 	public void setOutExpressNo(String outExpressNo) {
 		this.outExpressNo = outExpressNo;
+	}
+
+	public Boolean getOverdueAutoPickup() {
+		return this.overdueAutoPickup;
+	}
+	public void setOverdueAutoPickup(Boolean overdueAutoPickup) {
+		this.overdueAutoPickup = overdueAutoPickup;
 	}
 
 	public String getStatus() {

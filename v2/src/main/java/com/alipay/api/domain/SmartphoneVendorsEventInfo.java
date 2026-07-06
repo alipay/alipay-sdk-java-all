@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 厂商触发事件信息
  *
  * @author auto create
- * @since 1.0, 2026-05-26 13:47:45
+ * @since 1.0, 2026-07-06 17:31:59
  */
 public class SmartphoneVendorsEventInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1265834546287653262L;
+	private static final long serialVersionUID = 7824154849368266628L;
 
 	/**
 	 * 事件码

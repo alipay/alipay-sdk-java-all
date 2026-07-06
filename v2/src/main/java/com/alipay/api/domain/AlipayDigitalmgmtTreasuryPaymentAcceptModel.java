@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 财资TMS对外付款受理
  *
  * @author auto create
- * @since 1.0, 2026-03-25 13:52:43
+ * @since 1.0, 2026-07-03 15:52:55
  */
 public class AlipayDigitalmgmtTreasuryPaymentAcceptModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5539888659235532548L;
+	private static final long serialVersionUID = 8581716694329778393L;
 
 	/**
 	 * 主动/被动；ACTIVE/PASSIVE
@@ -64,7 +64,7 @@ public class AlipayDigitalmgmtTreasuryPaymentAcceptModel extends AlipayObject {
 	private String creditorAccountName;
 
 	/**
-	 * 非空，付款方账号
+	 * 收款方账号
 	 */
 	@ApiField("creditor_account_no")
 	private String creditorAccountNo;
@@ -136,7 +136,7 @@ public class AlipayDigitalmgmtTreasuryPaymentAcceptModel extends AlipayObject {
 	private String creditorInstCity;
 
 	/**
-	 * 收款银行两位国家代码；收款渠道为银行必填
+	 * 收款银行两位国家代码
 	 */
 	@ApiField("creditor_inst_country_code")
 	private String creditorInstCountryCode;
@@ -188,6 +188,12 @@ public class AlipayDigitalmgmtTreasuryPaymentAcceptModel extends AlipayObject {
 	 */
 	@ApiField("expect_payment_date")
 	private Date expectPaymentDate;
+
+	/**
+	 * 中间业务单据号，如：付款通知单- PN
+	 */
+	@ApiField("middle_biz_ref_no")
+	private String middleBizRefNo;
 
 	/**
 	 * 银行渠道中国资金出境需要填写的 国际收支平衡表
@@ -462,6 +468,13 @@ public class AlipayDigitalmgmtTreasuryPaymentAcceptModel extends AlipayObject {
 	}
 	public void setExpectPaymentDate(Date expectPaymentDate) {
 		this.expectPaymentDate = expectPaymentDate;
+	}
+
+	public String getMiddleBizRefNo() {
+		return this.middleBizRefNo;
+	}
+	public void setMiddleBizRefNo(String middleBizRefNo) {
+		this.middleBizRefNo = middleBizRefNo;
 	}
 
 	public String getOpenApiBopTransactionCode() {

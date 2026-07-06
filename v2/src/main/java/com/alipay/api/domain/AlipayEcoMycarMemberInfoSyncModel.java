@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员信息同步
  *
  * @author auto create
- * @since 1.0, 2025-04-05 14:58:55
+ * @since 1.0, 2026-07-01 16:06:08
  */
 public class AlipayEcoMycarMemberInfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7738915956289473297L;
+	private static final long serialVersionUID = 3434121677678453356L;
 
 	/**
 	 * 会员ID
@@ -33,6 +33,14 @@ public class AlipayEcoMycarMemberInfoSyncModel extends AlipayObject {
 	 */
 	@ApiField("issuance_date")
 	private Date issuanceDate;
+
+	/**
+	 * ALIPAY：支付宝渠道会员
+WECHAT：微信渠道会员
+OTHER：其他渠道
+	 */
+	@ApiField("member_channel")
+	private String memberChannel;
 
 	/**
 	 * 业务发生时间，即同步会员信息的时间
@@ -103,6 +111,13 @@ public class AlipayEcoMycarMemberInfoSyncModel extends AlipayObject {
 	}
 	public void setIssuanceDate(Date issuanceDate) {
 		this.issuanceDate = issuanceDate;
+	}
+
+	public String getMemberChannel() {
+		return this.memberChannel;
+	}
+	public void setMemberChannel(String memberChannel) {
+		this.memberChannel = memberChannel;
 	}
 
 	public Date getOccurTime() {

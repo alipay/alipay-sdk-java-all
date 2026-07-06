@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 花呗饿了么fun卡权益发放接口
  *
  * @author auto create
- * @since 1.0, 2024-12-25 10:43:26
+ * @since 1.0, 2026-06-29 14:32:43
  */
 public class AlipayPcreditHuabeiPcreditbenefitFuncardbenefitSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2484137261829839745L;
+	private static final long serialVersionUID = 4562391417923852572L;
 
 	/**
 	 * 支付宝用户的userId。

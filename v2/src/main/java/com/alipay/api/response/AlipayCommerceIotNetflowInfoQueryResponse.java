@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceIotNetflowInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6697656737387889563L;
+	private static final long serialVersionUID = 5296731716815219297L;
 
 	/** 
 	 * 流量充值记录信息

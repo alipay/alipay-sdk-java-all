@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BooKAttributesDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5519574515958567226L;
+	private static final long serialVersionUID = 7347682878259322147L;
 
 	/**
 	 * 投放渠道

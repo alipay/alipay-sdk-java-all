@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.risk.complaint.process.finish request
  * 
  * @author auto create
- * @since 1.0, 2026-06-05 16:42:56
+ * @since 1.0, 2026-06-22 21:52:56
  */
 public class AlipaySecurityRiskComplaintProcessFinishRequest implements AlipayRequest<AlipaySecurityRiskComplaintProcessFinishResponse> {
 

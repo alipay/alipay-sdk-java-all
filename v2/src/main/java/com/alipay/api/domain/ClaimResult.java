@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-05-26 19:52:48
+ * @since 1.0, 2026-07-02 16:32:56
  */
 public class ClaimResult extends AlipayObject {
 
-	private static final long serialVersionUID = 5194698489198493219L;
+	private static final long serialVersionUID = 4648669277593774561L;
 
 	/**
 	 * 理赔申请号（保司)
@@ -56,7 +56,7 @@ public class ClaimResult extends AlipayObject {
 	private ClaimResultPolicyInfo policyInfo;
 
 	/**
-	 * 报案状态(true，false)
+	 * 报案状态字段。非枚举类型
 	 */
 	@ApiField("report_status")
 	private String reportStatus;

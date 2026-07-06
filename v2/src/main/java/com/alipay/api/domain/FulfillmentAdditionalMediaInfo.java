@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 补充凭证
  *
  * @author auto create
- * @since 1.0, 2026-04-10 15:01:50
+ * @since 1.0, 2026-06-24 16:45:31
  */
 public class FulfillmentAdditionalMediaInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4733972958675698584L;
+	private static final long serialVersionUID = 2593534584678956692L;
 
 	/**
-	 * 补充凭证类型
+	 * 补充凭证类型。FACE_SIGN_PDF 面签、FACE_ACTIVE_JPG_LIST 激活、ELECTRONIC_SIGNATURE 签收底单、FACE_DOCUMENT 面单、ROUTE_TRACKING 路由轨迹、ELECTRONIC_STUB 电子存根、RENT_CONTRACT 租赁合同
 	 */
 	@ApiField("type")
 	private String type;

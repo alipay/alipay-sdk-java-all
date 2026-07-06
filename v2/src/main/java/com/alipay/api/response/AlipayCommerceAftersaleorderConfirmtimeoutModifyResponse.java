@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceAftersaleorderConfirmtimeoutModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5557571142184978912L;
+	private static final long serialVersionUID = 2837347612743273562L;
 
 	/** 
 	 * 售后单id

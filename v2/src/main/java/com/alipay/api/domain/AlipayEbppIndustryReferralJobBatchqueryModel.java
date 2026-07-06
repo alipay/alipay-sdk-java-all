@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 推荐官岗位批量查询
  *
  * @author auto create
- * @since 1.0, 2026-06-12 10:07:55
+ * @since 1.0, 2026-06-26 16:09:45
  */
 public class AlipayEbppIndustryReferralJobBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2122887337655556898L;
+	private static final long serialVersionUID = 4437151483325772798L;
 
 	/**
 	 * 城市区县编码，六位精确匹配

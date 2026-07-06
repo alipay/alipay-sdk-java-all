@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营销活动激励信息查询
  *
  * @author auto create
- * @since 1.0, 2026-06-17 14:45:51
+ * @since 1.0, 2026-06-29 18:07:55
  */
 public class AlipayCommerceOperationPromoAwardQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6141789195741469269L;
+	private static final long serialVersionUID = 6852398721223358778L;
 
 	/**
 	 * 活动编码，点餐B侧激励活动，编码固定
@@ -22,13 +22,25 @@ public class AlipayCommerceOperationPromoAwardQueryModel extends AlipayObject {
 	private String activityCode;
 
 	/**
-	 * 查询截止时间（时间跨度90天以内）
+	 * 查询截止时间（时间跨度31天以内）
 	 */
 	@ApiField("end_time")
 	private Date endTime;
 
 	/**
-	 * 查询起始时间（时间跨度90天以内）
+	 * 当前页
+	 */
+	@ApiField("page_num")
+	private Long pageNum;
+
+	/**
+	 * 分页大小，默认值20，最大值100
+	 */
+	@ApiField("page_size")
+	private Long pageSize;
+
+	/**
+	 * 查询起始时间（时间跨度31天以内）
 	 */
 	@ApiField("start_time")
 	private Date startTime;
@@ -57,6 +69,20 @@ public class AlipayCommerceOperationPromoAwardQueryModel extends AlipayObject {
 	}
 	public void setEndTime(Date endTime) {
 		this.endTime = endTime;
+	}
+
+	public Long getPageNum() {
+		return this.pageNum;
+	}
+	public void setPageNum(Long pageNum) {
+		this.pageNum = pageNum;
+	}
+
+	public Long getPageSize() {
+		return this.pageSize;
+	}
+	public void setPageSize(Long pageSize) {
+		this.pageSize = pageSize;
 	}
 
 	public Date getStartTime() {

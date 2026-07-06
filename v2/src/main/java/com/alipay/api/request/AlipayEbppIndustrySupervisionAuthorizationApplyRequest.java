@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.supervision.authorization.apply request
  * 
  * @author auto create
- * @since 1.0, 2025-08-18 15:42:35
+ * @since 1.0, 2026-06-25 15:02:58
  */
 public class AlipayEbppIndustrySupervisionAuthorizationApplyRequest implements AlipayRequest<AlipayEbppIndustrySupervisionAuthorizationApplyResponse> {
 

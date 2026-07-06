@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁健康用户医生签约状态数据同步
  *
  * @author auto create
- * @since 1.0, 2026-05-12 22:22:44
+ * @since 1.0, 2026-06-24 14:25:09
  */
 public class AlipayCommerceMedicalUserHomedoctorSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8355137142948195784L;
+	private static final long serialVersionUID = 8139265925227869929L;
 
 	/**
 	 * 蚂蚁健康用户的openId

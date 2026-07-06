@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalHdfFollowupimgCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8525517323863831544L;
+	private static final long serialVersionUID = 3277696139874515645L;
 
 	/**
 	 * 医生科室

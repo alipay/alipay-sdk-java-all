@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MultiCurrencyMoneyPromo extends AlipayObject {
 
-	private static final long serialVersionUID = 7356279696564563351L;
+	private static final long serialVersionUID = 4117697961193845323L;
 
 	/**
 	 * 钱，分为单位

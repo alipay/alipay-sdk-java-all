@@ -1,7 +1,10 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.LandingTypeDto;
+import com.alipay.api.domain.VideoInfo;
 
 import com.alipay.api.AlipayResponse;
 
@@ -9,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.product.landinginfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-04-07 17:32:46
+ * @since 1.0, 2026-06-25 17:02:55
  */
 public class AlipayDataDataserviceProductLandinginfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1745368418371185765L;
+	private static final long serialVersionUID = 5484739679243973746L;
 
 	/** 
 	 * 请求成功时返回该字段；支付宝平台侧商品ID，是支付宝平台侧商品的唯一标识，后续与平台交互，需要使用该 ID。
@@ -32,6 +35,13 @@ public class AlipayDataDataserviceProductLandinginfoQueryResponse extends Alipay
 	 */
 	@ApiField("out_item_id")
 	private String outItemId;
+
+	/** 
+	 * 商品视频信息
+	 */
+	@ApiListField("video_info_list")
+	@ApiField("video_info")
+	private List<VideoInfo> videoInfoList;
 
 	public void setItemId(String itemId) {
 		this.itemId = itemId;
@@ -52,6 +62,13 @@ public class AlipayDataDataserviceProductLandinginfoQueryResponse extends Alipay
 	}
 	public String getOutItemId( ) {
 		return this.outItemId;
+	}
+
+	public void setVideoInfoList(List<VideoInfo> videoInfoList) {
+		this.videoInfoList = videoInfoList;
+	}
+	public List<VideoInfo> getVideoInfoList( ) {
+		return this.videoInfoList;
 	}
 
 }

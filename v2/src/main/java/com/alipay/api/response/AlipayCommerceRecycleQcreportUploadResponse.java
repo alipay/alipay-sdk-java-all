@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.recycle.qcreport.upload response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-08 15:27:45
+ * @since 1.0, 2026-07-06 14:42:56
  */
 public class AlipayCommerceRecycleQcreportUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4229181863141824192L;
+	private static final long serialVersionUID = 8496251667483923969L;
 
 	
 

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.insurance.claimreport.verify response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-26 19:52:48
+ * @since 1.0, 2026-07-02 16:32:56
  */
 public class AlipayCommerceMedicalInsuranceClaimreportVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1856367532327351243L;
+	private static final long serialVersionUID = 6882446978253891763L;
 
 	/** 
 	 * null

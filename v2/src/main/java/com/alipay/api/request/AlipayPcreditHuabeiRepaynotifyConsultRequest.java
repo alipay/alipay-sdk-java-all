@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.huabei.repaynotify.consult request
  * 
  * @author auto create
- * @since 1.0, 2026-03-10 19:17:44
+ * @since 1.0, 2026-07-06 11:01:13
  */
 public class AlipayPcreditHuabeiRepaynotifyConsultRequest implements AlipayRequest<AlipayPcreditHuabeiRepaynotifyConsultResponse> {
 

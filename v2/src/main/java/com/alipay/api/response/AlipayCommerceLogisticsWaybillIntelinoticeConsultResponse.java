@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.logistics.waybill.intelinotice.consult response.
  * 
  * @author auto create
- * @since 1.0, 2026-04-29 15:02:49
+ * @since 1.0, 2026-07-01 20:17:55
  */
 public class AlipayCommerceLogisticsWaybillIntelinoticeConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2716329799554372921L;
+	private static final long serialVersionUID = 4325777578545388153L;
 
 	/** 
 	 * 是否能支持智能通知
@@ -20,11 +20,24 @@ public class AlipayCommerceLogisticsWaybillIntelinoticeConsultResponse extends A
 	@ApiField("can_intelinotice")
 	private Boolean canIntelinotice;
 
+	/** 
+	 * 发送短信手机号后四位
+	 */
+	@ApiField("sms_number")
+	private String smsNumber;
+
 	public void setCanIntelinotice(Boolean canIntelinotice) {
 		this.canIntelinotice = canIntelinotice;
 	}
 	public Boolean getCanIntelinotice( ) {
 		return this.canIntelinotice;
+	}
+
+	public void setSmsNumber(String smsNumber) {
+		this.smsNumber = smsNumber;
+	}
+	public String getSmsNumber( ) {
+		return this.smsNumber;
 	}
 
 }

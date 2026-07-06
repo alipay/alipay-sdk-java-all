@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 修改店铺结算信息
  *
  * @author auto create
- * @since 1.0, 2025-10-27 17:10:15
+ * @since 1.0, 2026-06-26 21:15:54
  */
 public class AntMerchantExpandAstoreModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8485343472269515269L;
+	private static final long serialVersionUID = 8376868542118169892L;
 
 	/**
 	 * 商家在支付宝平台内创建的一种营销业务的载体，可以支持发品、配券以及活动报名的id,它的来源是SAAS服务商来进件的时候,创建团购店铺的时候,生成的。
@@ -24,6 +24,12 @@ public class AntMerchantExpandAstoreModifyModel extends AlipayObject {
 	 */
 	@ApiField("mobile")
 	private String mobile;
+
+	/**
+	 * 异名结算的证明材料
+	 */
+	@ApiField("proof_info")
+	private ProofInfo proofInfo;
 
 	/**
 	 * 结算信息
@@ -43,6 +49,13 @@ public class AntMerchantExpandAstoreModifyModel extends AlipayObject {
 	}
 	public void setMobile(String mobile) {
 		this.mobile = mobile;
+	}
+
+	public ProofInfo getProofInfo() {
+		return this.proofInfo;
+	}
+	public void setProofInfo(ProofInfo proofInfo) {
+		this.proofInfo = proofInfo;
 	}
 
 	public SettleInfoModel getSettleInfos() {

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 授权签约类申请接口
  *
  * @author auto create
- * @since 1.0, 2025-08-18 15:40:06
+ * @since 1.0, 2026-06-25 14:59:45
  */
 public class AlipayEbppIndustrySupervisionAuthorizationApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2855993926317441624L;
+	private static final long serialVersionUID = 7138589193251449488L;
 
 	/**
 	 * 需要在尾部添加时间戳，格式为yyyyMMdd

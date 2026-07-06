@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 循环计价配置，用于订阅等场景
  *
  * @author auto create
- * @since 1.0, 2026-06-08 20:37:55
+ * @since 1.0, 2026-06-30 22:32:55
  */
 public class RecurringConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 3848888141233665137L;
+	private static final long serialVersionUID = 7291962711612629218L;
 
 	/**
 	 * 计价周期单位，和interval_count组合使用

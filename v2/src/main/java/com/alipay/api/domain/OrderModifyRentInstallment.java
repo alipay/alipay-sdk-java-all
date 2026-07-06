@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租金分期信息
  *
  * @author auto create
- * @since 1.0, 2025-08-05 22:04:54
+ * @since 1.0, 2026-07-02 14:42:17
  */
 public class OrderModifyRentInstallment extends AlipayObject {
 
-	private static final long serialVersionUID = 4795131767432365868L;
+	private static final long serialVersionUID = 4246964181589789248L;
 
 	/**
 	 * 租期。标识第几期，起始值为1，需保证编号递增

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 饮酒频率
  *
  * @author auto create
- * @since 1.0, 2026-06-03 15:51:52
+ * @since 1.0, 2026-06-30 10:15:39
  */
 public class DrinkFrequency extends AlipayObject {
 
-	private static final long serialVersionUID = 4838334853586978344L;
+	private static final long serialVersionUID = 2314975237651227624L;
 
 	/**
 	 * 次

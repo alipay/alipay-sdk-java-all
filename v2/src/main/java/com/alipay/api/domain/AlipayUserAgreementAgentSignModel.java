@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝个人AI协议签约接口
  *
  * @author auto create
- * @since 1.0, 2026-03-27 16:02:54
+ * @since 1.0, 2026-06-26 10:39:54
  */
 public class AlipayUserAgreementAgentSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3184852231243125864L;
+	private static final long serialVersionUID = 2425267972965432258L;
 
 	/**
 	 * 【描述】请按当前接入的方式进行填充，且输入值必须为文档中的参数取值范围。

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * AI值守订单风控信息查询
  *
  * @author auto create
- * @since 1.0, 2026-03-31 15:07:45
+ * @since 1.0, 2026-07-03 21:27:55
  */
 public class AlipayMsaasMediarecogAivisionstoredAiretailriskQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4128123938268837653L;
+	private static final long serialVersionUID = 1199658848159235196L;
 
 	/**
 	 * isv pid值

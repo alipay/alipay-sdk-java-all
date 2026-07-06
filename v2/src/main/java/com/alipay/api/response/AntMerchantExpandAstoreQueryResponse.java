@@ -3,6 +3,7 @@ package com.alipay.api.response;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.domain.BrandInfoModel;
 import com.alipay.api.domain.CategoryInfoModel;
+import com.alipay.api.domain.EsStoreAuditOpenResult;
 import com.alipay.api.domain.SettleInfoModel;
 
 import com.alipay.api.AlipayResponse;
@@ -11,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.astore.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-06-12 15:46:34
+ * @since 1.0, 2026-06-29 09:57:55
  */
 public class AntMerchantExpandAstoreQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6228586335882328739L;
+	private static final long serialVersionUID = 2763868218989984299L;
 
 	/** 
 	 * 店铺id
@@ -24,10 +25,25 @@ public class AntMerchantExpandAstoreQueryResponse extends AlipayResponse {
 	private String aStoreId;
 
 	/** 
+	 * 店铺LOGO 地址
+	 */
+	@ApiField("a_store_logo")
+	private String aStoreLogo;
+
+	/** 
 	 * 店铺名称
 	 */
 	@ApiField("a_store_name")
 	private String aStoreName;
+
+	/** 
+	 * 申请业务类型： INDIVIDUAL 独立门店
+BRAND 品牌连锁门店
+SINGLE_MALL  单体mall
+HEAD_MALL 总部mall
+	 */
+	@ApiField("biz_type")
+	private String bizType;
 
 	/** 
 	 * 品牌信息
@@ -40,6 +56,24 @@ public class AntMerchantExpandAstoreQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("category_info")
 	private CategoryInfoModel categoryInfo;
+
+	/** 
+	 * 最新的直付通入驻订单审核结果
+	 */
+	@ApiField("es_store_audit_result")
+	private EsStoreAuditOpenResult esStoreAuditResult;
+
+	/** 
+	 * 联系手机号(示例值是示范,正常返回不需要掩码)
+	 */
+	@ApiField("mobile")
+	private String mobile;
+
+	/** 
+	 * 商户OID
+	 */
+	@ApiField("oid")
+	private String oid;
 
 	/** 
 	 * 外部业务编号
@@ -66,11 +100,25 @@ public class AntMerchantExpandAstoreQueryResponse extends AlipayResponse {
 		return this.aStoreId;
 	}
 
+	public void setaStoreLogo(String aStoreLogo) {
+		this.aStoreLogo = aStoreLogo;
+	}
+	public String getaStoreLogo( ) {
+		return this.aStoreLogo;
+	}
+
 	public void setaStoreName(String aStoreName) {
 		this.aStoreName = aStoreName;
 	}
 	public String getaStoreName( ) {
 		return this.aStoreName;
+	}
+
+	public void setBizType(String bizType) {
+		this.bizType = bizType;
+	}
+	public String getBizType( ) {
+		return this.bizType;
 	}
 
 	public void setBrandInfo(BrandInfoModel brandInfo) {
@@ -85,6 +133,27 @@ public class AntMerchantExpandAstoreQueryResponse extends AlipayResponse {
 	}
 	public CategoryInfoModel getCategoryInfo( ) {
 		return this.categoryInfo;
+	}
+
+	public void setEsStoreAuditResult(EsStoreAuditOpenResult esStoreAuditResult) {
+		this.esStoreAuditResult = esStoreAuditResult;
+	}
+	public EsStoreAuditOpenResult getEsStoreAuditResult( ) {
+		return this.esStoreAuditResult;
+	}
+
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
+	}
+	public String getMobile( ) {
+		return this.mobile;
+	}
+
+	public void setOid(String oid) {
+		this.oid = oid;
+	}
+	public String getOid( ) {
+		return this.oid;
 	}
 
 	public void setOutBizNo(String outBizNo) {

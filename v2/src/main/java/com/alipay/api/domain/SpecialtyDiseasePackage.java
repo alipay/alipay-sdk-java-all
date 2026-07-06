@@ -1,23 +1,33 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * null
  *
  * @author auto create
- * @since 1.0, 2026-04-30 14:12:45
+ * @since 1.0, 2026-06-23 14:02:56
  */
 public class SpecialtyDiseasePackage extends AlipayObject {
 
-	private static final long serialVersionUID = 5765142587636564333L;
+	private static final long serialVersionUID = 1229969579365338215L;
 
 	/**
 	 * 履约有效天数
 	 */
 	@ApiField("fulfillment_valid_days")
 	private Long fulfillmentValidDays;
+
+	/**
+	 * null
+	 */
+	@ApiListField("items")
+	@ApiField("right_info")
+	private List<RightInfo> items;
 
 	/**
 	 * 服务包描述
@@ -48,6 +58,13 @@ public class SpecialtyDiseasePackage extends AlipayObject {
 	}
 	public void setFulfillmentValidDays(Long fulfillmentValidDays) {
 		this.fulfillmentValidDays = fulfillmentValidDays;
+	}
+
+	public List<RightInfo> getItems() {
+		return this.items;
+	}
+	public void setItems(List<RightInfo> items) {
+		this.items = items;
 	}
 
 	public String getServicePackageDesc() {

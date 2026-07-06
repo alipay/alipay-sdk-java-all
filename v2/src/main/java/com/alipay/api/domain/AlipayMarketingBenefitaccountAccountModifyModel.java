@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 权益账户修改
  *
  * @author auto create
- * @since 1.0, 2026-01-12 14:24:13
+ * @since 1.0, 2026-06-24 17:23:22
  */
 public class AlipayMarketingBenefitaccountAccountModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5136183574711284494L;
+	private static final long serialVersionUID = 6867776967592693492L;
 
 	/**
 	 * 权益账户账号

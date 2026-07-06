@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-05-19 10:07:48
+ * @since 1.0, 2026-07-03 18:02:55
  */
 public class FulfillmentInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2465994744576786691L;
+	private static final long serialVersionUID = 7136797848711253918L;
 
 	/**
 	 * 履约数据
@@ -30,6 +30,12 @@ public class FulfillmentInfoVO extends AlipayObject {
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/**
+	 * 服务包订单号
+	 */
+	@ApiField("service_package_order_no")
+	private String servicePackageOrderNo;
 
 	/**
 	 * SAAS订单ID
@@ -68,6 +74,13 @@ public class FulfillmentInfoVO extends AlipayObject {
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public String getServicePackageOrderNo() {
+		return this.servicePackageOrderNo;
+	}
+	public void setServicePackageOrderNo(String servicePackageOrderNo) {
+		this.servicePackageOrderNo = servicePackageOrderNo;
 	}
 
 	public String getTradeOrderId() {

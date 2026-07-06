@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.ebike.chargestation.sync response.
  * 
  * @author auto create
- * @since 1.0, 2024-06-26 23:22:04
+ * @since 1.0, 2026-06-30 17:19:38
  */
 public class AlipayCommerceTransportEbikeChargestationSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7178386318684487783L;
+	private static final long serialVersionUID = 7514735572157361736L;
 
 	
 

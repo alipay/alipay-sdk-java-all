@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询店铺信息
  *
  * @author auto create
- * @since 1.0, 2025-10-27 17:17:26
+ * @since 1.0, 2026-06-26 21:16:16
  */
 public class AntMerchantExpandAstoreQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7634498231445855343L;
+	private static final long serialVersionUID = 4534528343335893912L;
 
 	/**
 	 * 商家在支付宝平台内创建的一种营销业务的载体，可以支持发品、配券以及活动报名的id,它的来源是SAAS服务商来进件的时候,创建团购店铺的时候,生成的。
@@ -20,9 +20,10 @@ public class AntMerchantExpandAstoreQueryModel extends AlipayObject {
 	private String aStoreId;
 
 	/**
-	 * 外部业务单号,与店铺对应,本期暂时不支持
+	 * 外部业务单号,与店铺对应,本期暂时不支持 当前字段已废弃(经确认查询时不再使用此字段查询(唯一性))
 	 */
 	@ApiField("out_biz_no")
+	@Deprecated
 	private String outBizNo;
 
 	public String getaStoreId() {

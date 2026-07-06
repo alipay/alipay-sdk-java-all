@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务商一体化作业团购解决方案业务开通单
  *
  * @author auto create
- * @since 1.0, 2025-10-23 19:42:30
+ * @since 1.0, 2026-07-01 19:41:54
  */
 public class AlipayOpenSpInteopGrouppurchaseCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7794281748615445746L;
+	private static final long serialVersionUID = 2885749223724486784L;
 
 	/**
 	 * 商家联系方式

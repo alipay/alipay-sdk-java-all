@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部商户查询花呗场景额度
  *
  * @author auto create
- * @since 1.0, 2025-07-11 16:54:29
+ * @since 1.0, 2026-07-02 15:41:47
  */
 public class AlipayPcreditHuabeiAffinitycardQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8123574991121523486L;
+	private static final long serialVersionUID = 1223438257251457791L;
 
 	/**
 	 * 支付宝用户的userId
@@ -30,6 +30,12 @@ public class AlipayPcreditHuabeiAffinitycardQueryModel extends AlipayObject {
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/**
+	 * 申请联名卡时获取，如果传入，会查询指定花呗联名卡账户信息，否则，查询最新申请的花呗联名卡账户信息
+	 */
+	@ApiField("user_prod_account_no")
+	private String userProdAccountNo;
 
 	public String getAlipayUserId() {
 		return this.alipayUserId;
@@ -50,6 +56,13 @@ public class AlipayPcreditHuabeiAffinitycardQueryModel extends AlipayObject {
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public String getUserProdAccountNo() {
+		return this.userProdAccountNo;
+	}
+	public void setUserProdAccountNo(String userProdAccountNo) {
+		this.userProdAccountNo = userProdAccountNo;
 	}
 
 }

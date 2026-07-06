@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订阅扣款
  *
  * @author auto create
- * @since 1.0, 2026-06-18 21:02:56
+ * @since 1.0, 2026-06-30 16:22:57
  */
 public class AlipayTradeSubscriptionPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7225153131459874458L;
+	private static final long serialVersionUID = 4176921379475762463L;
+
+	/**
+	 * 发起扣款的交易单据超时自动关单时间，支持m（分钟）和h（小时），默认为空时命中兜底的10m
+	 */
+	@ApiField("expire_time")
+	private String expireTime;
 
 	/**
 	 * 扩展参数，用于订阅特殊能力的传参，使用方式详见具体场景接入指南
@@ -36,6 +42,13 @@ public class AlipayTradeSubscriptionPayModel extends AlipayObject {
 	 */
 	@ApiField("subscription_id")
 	private String subscriptionId;
+
+	public String getExpireTime() {
+		return this.expireTime;
+	}
+	public void setExpireTime(String expireTime) {
+		this.expireTime = expireTime;
+	}
 
 	public String getExtendParams() {
 		return this.extendParams;

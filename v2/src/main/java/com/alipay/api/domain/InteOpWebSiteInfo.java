@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InteOpWebSiteInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5374838127413433984L;
+	private static final long serialVersionUID = 1452614296611159795L;
 
 	/**
 	 * 网站首页截图，最小5KB，最大5M，图片格式必须为：png、bmp、gif、jpg、jpeg。传入alipay.open.file.upload接口上传图片获取的file_id。

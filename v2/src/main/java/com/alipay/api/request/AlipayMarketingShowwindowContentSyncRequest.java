@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.showwindow.content.sync request
  * 
  * @author auto create
- * @since 1.0, 2023-05-31 06:51:33
+ * @since 1.0, 2026-07-01 00:17:55
  */
 public class AlipayMarketingShowwindowContentSyncRequest implements AlipayRequest<AlipayMarketingShowwindowContentSyncResponse> {
 

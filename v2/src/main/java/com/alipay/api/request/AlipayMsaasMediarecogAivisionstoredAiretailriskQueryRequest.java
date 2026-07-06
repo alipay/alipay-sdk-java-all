@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.msaas.mediarecog.aivisionstored.airetailrisk.query request
  * 
  * @author auto create
- * @since 1.0, 2026-03-31 15:07:45
+ * @since 1.0, 2026-07-03 21:27:55
  */
 public class AlipayMsaasMediarecogAivisionstoredAiretailriskQueryRequest implements AlipayRequest<AlipayMsaasMediarecogAivisionstoredAiretailriskQueryResponse> {
 

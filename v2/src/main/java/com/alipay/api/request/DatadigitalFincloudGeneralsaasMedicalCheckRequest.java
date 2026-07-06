@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: datadigital.fincloud.generalsaas.medical.check request
  * 
  * @author auto create
- * @since 1.0, 2026-04-29 14:27:44
+ * @since 1.0, 2026-06-24 10:17:55
  */
 public class DatadigitalFincloudGeneralsaasMedicalCheckRequest implements AlipayUploadRequest<DatadigitalFincloudGeneralsaasMedicalCheckResponse> {
 

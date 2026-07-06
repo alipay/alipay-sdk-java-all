@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 孕产史
  *
  * @author auto create
- * @since 1.0, 2026-06-03 15:51:52
+ * @since 1.0, 2026-06-30 10:15:39
  */
 public class PregnancyHistory extends AlipayObject {
 
-	private static final long serialVersionUID = 2384174346197974786L;
+	private static final long serialVersionUID = 1875713913886128638L;
 
 	/**
 	 * 末次月经时间

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 国际结果信息
  *
  * @author auto create
- * @since 1.0, 2022-11-14 15:54:01
+ * @since 1.0, 2026-06-25 11:09:49
  */
 public class ResultInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8748815238157276554L;
+	private static final long serialVersionUID = 4358127363691531354L;
 
 	/**
 	 * 结果码

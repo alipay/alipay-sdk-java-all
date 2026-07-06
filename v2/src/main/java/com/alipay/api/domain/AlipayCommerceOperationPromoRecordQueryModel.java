@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营销活动报名记录查询
  *
  * @author auto create
- * @since 1.0, 2026-06-17 14:46:26
+ * @since 1.0, 2026-06-29 18:07:55
  */
 public class AlipayCommerceOperationPromoRecordQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3812324439791156223L;
+	private static final long serialVersionUID = 6652378363551365468L;
 
 	/**
 	 * 活动编码，固定值
@@ -32,10 +32,22 @@ public class AlipayCommerceOperationPromoRecordQueryModel extends AlipayObject {
 	private Long pageSize;
 
 	/**
-	 * 查询数据
+	 * 特殊场景使用，无需求可不传
 	 */
 	@ApiField("query_data")
 	private String queryData;
+
+	/**
+	 * 在餐饮场景下，支付宝用户的报名记录为主报名记录，名下的门店报名记录为子报名记录。配合subject_type/subject_id参数，可用于查询某个支付宝账号名下报名的门店；
+	 */
+	@ApiField("query_sub_record")
+	private Boolean querySubRecord;
+
+	/**
+	 * 活动期次ID
+	 */
+	@ApiField("round_id")
+	private String roundId;
 
 	/**
 	 * 主体ID，支持按照报名接口返回的ID传值，也可以传对应的支付宝账号
@@ -75,6 +87,20 @@ public class AlipayCommerceOperationPromoRecordQueryModel extends AlipayObject {
 	}
 	public void setQueryData(String queryData) {
 		this.queryData = queryData;
+	}
+
+	public Boolean getQuerySubRecord() {
+		return this.querySubRecord;
+	}
+	public void setQuerySubRecord(Boolean querySubRecord) {
+		this.querySubRecord = querySubRecord;
+	}
+
+	public String getRoundId() {
+		return this.roundId;
+	}
+	public void setRoundId(String roundId) {
+		this.roundId = roundId;
 	}
 
 	public String getSubjectId() {

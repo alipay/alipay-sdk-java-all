@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class LifeserviceItemWeekPrice extends AlipayObject {
 
-	private static final long serialVersionUID = 5425769471468241131L;
+	private static final long serialVersionUID = 3871434824993199627L;
 
 	/**
 	 * 周一到周日列表 分别对应"1"、"2"..."7" 可用时间范围 必填该字段

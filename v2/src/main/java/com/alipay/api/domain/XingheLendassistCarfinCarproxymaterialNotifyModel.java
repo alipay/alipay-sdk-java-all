@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 车务材料回传
  *
  * @author auto create
- * @since 1.0, 2025-09-18 11:29:40
+ * @since 1.0, 2026-06-26 10:10:55
  */
 public class XingheLendassistCarfinCarproxymaterialNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8882988117534935746L;
+	private static final long serialVersionUID = 2499483369644534264L;
 
 	/**
 	 * 文件信息列表
@@ -40,6 +40,12 @@ public class XingheLendassistCarfinCarproxymaterialNotifyModel extends AlipayObj
 	 */
 	@ApiField("out_proxy_no")
 	private String outProxyNo;
+
+	/**
+	 * 快递信息
+	 */
+	@ApiField("return_express_info")
+	private CarfinExpressInfo returnExpressInfo;
 
 	public List<CarfinMortgageReceivedFile> getFileList() {
 		return this.fileList;
@@ -67,6 +73,13 @@ public class XingheLendassistCarfinCarproxymaterialNotifyModel extends AlipayObj
 	}
 	public void setOutProxyNo(String outProxyNo) {
 		this.outProxyNo = outProxyNo;
+	}
+
+	public CarfinExpressInfo getReturnExpressInfo() {
+		return this.returnExpressInfo;
+	}
+	public void setReturnExpressInfo(CarfinExpressInfo returnExpressInfo) {
+		this.returnExpressInfo = returnExpressInfo;
 	}
 
 }

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 大模型围栏(风险防控)提问检测接口
  *
  * @author auto create
- * @since 1.0, 2025-11-03 14:28:44
+ * @since 1.0, 2026-06-30 11:40:21
  */
 public class AlipaySecurityRiskGuardrailsAskDetectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2387667171895463248L;
+	private static final long serialVersionUID = 3834569528483881886L;
 
 	/**
 	 * 扩展属性Map，key限定为：aigcType、serviceScene、triggerSource、bizOwner，对应的value取值为：
@@ -45,7 +45,7 @@ triggerSource:
 	private String modelCode;
 
 	/**
-	 * 当前提问内容，最大长度10000个字符。
+	 * 默认限制10000字符；特殊场景到20000字符
 	 */
 	@ApiField("question")
 	private String question;

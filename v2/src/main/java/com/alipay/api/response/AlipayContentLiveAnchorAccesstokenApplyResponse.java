@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.content.live.anchor.accesstoken.apply response.
  * 
  * @author auto create
- * @since 1.0, 2025-11-06 15:27:41
+ * @since 1.0, 2026-06-23 14:49:22
  */
 public class AlipayContentLiveAnchorAccesstokenApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5238588483983839819L;
+	private static final long serialVersionUID = 2779866677255764115L;
 
 	/** 
 	 * 鉴权token

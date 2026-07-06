@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.content.live.anchor.resource.audit response.
  * 
  * @author auto create
- * @since 1.0, 2025-11-13 14:32:41
+ * @since 1.0, 2026-06-23 14:49:23
  */
 public class AlipayContentLiveAnchorResourceAuditResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4395894696453353663L;
+	private static final long serialVersionUID = 7163157227835978164L;
 
 	/** 
 	 * 用于全链路排查问题的追踪标识

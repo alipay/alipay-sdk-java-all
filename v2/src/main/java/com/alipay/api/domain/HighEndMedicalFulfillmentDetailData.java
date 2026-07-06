@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 高端医疗对象
  *
  * @author auto create
- * @since 1.0, 2026-06-20 10:17:43
+ * @since 1.0, 2026-07-03 17:56:03
  */
 public class HighEndMedicalFulfillmentDetailData extends AlipayObject {
 
-	private static final long serialVersionUID = 4639123117956749122L;
+	private static final long serialVersionUID = 7479638871766638593L;
 
 	/**
 	 * 预约备选时间
@@ -30,6 +30,12 @@ public class HighEndMedicalFulfillmentDetailData extends AlipayObject {
 	 */
 	@ApiField("bill_amount")
 	private String billAmount;
+
+	/**
+	 * 出生日期（格式: 1999-02-01）
+	 */
+	@ApiField("birth_day")
+	private String birthDay;
 
 	/**
 	 * 确认时间（预约成功时必填）
@@ -78,6 +84,12 @@ public class HighEndMedicalFulfillmentDetailData extends AlipayObject {
 	 */
 	@ApiField("patient_cert_type")
 	private String patientCertType;
+
+	/**
+	 * 就诊人性别(0 女 1 男)
+	 */
+	@ApiField("patient_gender")
+	private String patientGender;
 
 	/**
 	 * 就诊人姓名（预约中时必填）
@@ -148,6 +160,13 @@ public class HighEndMedicalFulfillmentDetailData extends AlipayObject {
 		this.billAmount = billAmount;
 	}
 
+	public String getBirthDay() {
+		return this.birthDay;
+	}
+	public void setBirthDay(String birthDay) {
+		this.birthDay = birthDay;
+	}
+
 	public String getConfirmTime() {
 		return this.confirmTime;
 	}
@@ -202,6 +221,13 @@ public class HighEndMedicalFulfillmentDetailData extends AlipayObject {
 	}
 	public void setPatientCertType(String patientCertType) {
 		this.patientCertType = patientCertType;
+	}
+
+	public String getPatientGender() {
+		return this.patientGender;
+	}
+	public void setPatientGender(String patientGender) {
+		this.patientGender = patientGender;
 	}
 
 	public String getPatientName() {

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 反向订单查询
  *
  * @author auto create
- * @since 1.0, 2026-05-11 14:53:39
+ * @since 1.0, 2026-06-25 17:22:50
  */
 public class AlipayCommerceEcRecyclinginvoiceOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5764393223886327153L;
+	private static final long serialVersionUID = 1467613558263715446L;
 
 	/**
 	 * 订单号，调用反向订单创建接口时返回
@@ -30,6 +30,12 @@ public class AlipayCommerceEcRecyclinginvoiceOrderQueryModel extends AlipayObjec
 	 */
 	@ApiField("product_id")
 	private String productId;
+
+	/**
+	 * 查询选项。多个选项以逗号分隔，如 "BIZ_TRANSFER"；传 "BIZ_TRANSFER" 时返回业务转账信息
+	 */
+	@ApiField("query_options")
+	private String queryOptions;
 
 	/**
 	 * 企业（商户）税号
@@ -56,6 +62,13 @@ public class AlipayCommerceEcRecyclinginvoiceOrderQueryModel extends AlipayObjec
 	}
 	public void setProductId(String productId) {
 		this.productId = productId;
+	}
+
+	public String getQueryOptions() {
+		return this.queryOptions;
+	}
+	public void setQueryOptions(String queryOptions) {
+		this.queryOptions = queryOptions;
 	}
 
 	public String getTaxNo() {

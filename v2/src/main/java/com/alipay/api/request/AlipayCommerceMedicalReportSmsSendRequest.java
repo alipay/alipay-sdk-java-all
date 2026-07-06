@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.report.sms.send request
  * 
  * @author auto create
- * @since 1.0, 2026-06-17 13:35:57
+ * @since 1.0, 2026-06-29 14:42:55
  */
 public class AlipayCommerceMedicalReportSmsSendRequest implements AlipayRequest<AlipayCommerceMedicalReportSmsSendResponse> {
 

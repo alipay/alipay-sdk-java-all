@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * oceanbase官网考试相关信息
  *
  * @author auto create
- * @since 1.0, 2024-12-26 15:53:31
+ * @since 1.0, 2026-06-30 14:35:03
  */
 public class ExamInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3498451634944295162L;
+	private static final long serialVersionUID = 6452786982233927446L;
+
+	/**
+	 * 官网注册账号为手机号时返回；消费方仅对非空数据生成 CRM 线索。
+	 */
+	@ApiField("account_mobile")
+	private String accountMobile;
 
 	/**
 	 * 证书颁发日期
@@ -40,6 +46,12 @@ public class ExamInfoDTO extends AlipayObject {
 	private String collegeExamEnrollmentId;
 
 	/**
+	 * 当前取考试记录中的 examinee_department。
+	 */
+	@ApiField("company_name")
+	private String companyName;
+
+	/**
 	 * 考试结束时间
 	 */
 	@ApiField("exam_end_time")
@@ -52,16 +64,41 @@ public class ExamInfoDTO extends AlipayObject {
 	private Date examStartTime;
 
 	/**
+	 * 取 college_exam_enrollment.gmt_modified，表示官网侧从 ATAC 取回成绩并更新考试记录的时间；不是 ATAC 报名时间。
+	 */
+	@ApiField("lead_time")
+	private Date leadTime;
+
+	/**
 	 * 用户Id
 	 */
 	@ApiField("passport_id")
 	private String passportId;
 
 	/**
+	 * 当前取考生类型名称；消费方会过滤学生/在校/student。
+	 */
+	@ApiField("position")
+	private String position;
+
+	/**
+	 * 考试记录中的考生姓名。
+	 */
+	@ApiField("real_name")
+	private String realName;
+
+	/**
 	 * 用户的出生年份
 	 */
 	@ApiField("year_of_birth")
 	private String yearOfBirth;
+
+	public String getAccountMobile() {
+		return this.accountMobile;
+	}
+	public void setAccountMobile(String accountMobile) {
+		this.accountMobile = accountMobile;
+	}
 
 	public Date getCertificateIssueDate() {
 		return this.certificateIssueDate;
@@ -91,6 +128,13 @@ public class ExamInfoDTO extends AlipayObject {
 		this.collegeExamEnrollmentId = collegeExamEnrollmentId;
 	}
 
+	public String getCompanyName() {
+		return this.companyName;
+	}
+	public void setCompanyName(String companyName) {
+		this.companyName = companyName;
+	}
+
 	public Date getExamEndTime() {
 		return this.examEndTime;
 	}
@@ -105,11 +149,32 @@ public class ExamInfoDTO extends AlipayObject {
 		this.examStartTime = examStartTime;
 	}
 
+	public Date getLeadTime() {
+		return this.leadTime;
+	}
+	public void setLeadTime(Date leadTime) {
+		this.leadTime = leadTime;
+	}
+
 	public String getPassportId() {
 		return this.passportId;
 	}
 	public void setPassportId(String passportId) {
 		this.passportId = passportId;
+	}
+
+	public String getPosition() {
+		return this.position;
+	}
+	public void setPosition(String position) {
+		this.position = position;
+	}
+
+	public String getRealName() {
+		return this.realName;
+	}
+	public void setRealName(String realName) {
+		this.realName = realName;
 	}
 
 	public String getYearOfBirth() {

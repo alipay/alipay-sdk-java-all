@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 凭证核销准备
  *
  * @author auto create
- * @since 1.0, 2026-06-02 10:46:14
+ * @since 1.0, 2026-07-02 14:10:33
  */
 public class AlipayMarketingCertificateCertificationPrepareuseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2528182995159671966L;
+	private static final long serialVersionUID = 3279895173524417138L;
 
 	/**
 	 * 用户出示的核销二维码下方的12位券码

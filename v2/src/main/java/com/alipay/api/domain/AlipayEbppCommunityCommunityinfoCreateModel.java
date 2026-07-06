@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小区创建
  *
  * @author auto create
- * @since 1.0, 2024-06-26 16:16:34
+ * @since 1.0, 2026-07-02 19:03:59
  */
 public class AlipayEbppCommunityCommunityinfoCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5895762394891715775L;
+	private static final long serialVersionUID = 3663267663516497999L;
 
 	/**
 	 * 别名
@@ -120,8 +120,10 @@ public class AlipayEbppCommunityCommunityinfoCreateModel extends AlipayObject {
 内部底座模式	SAAS
 自运营账单-楼房号 EXTERNAL_BILL_ROOM
 自运营账单-仅户号 EXTERNAL_BILL_BILLKEY
+内部小程序外部账单模式	 REMOTE_EXTERNAL_BILL
 备注：1、中心账单楼房号模式会进行用户隐私校验
 	   2、不确定使用哪种方式时请联系对应BD或开发
+           3、内部小程序外部账单模式通过SPI调用外部户号校验、账单查询等
 	 */
 	@ApiField("support_type")
 	private String supportType;
@@ -131,6 +133,7 @@ public class AlipayEbppCommunityCommunityinfoCreateModel extends AlipayObject {
 业主手机验证        MOBILE_VERIFY
 房间户号验证        ROOM_VERIFY(不传 则默认)
 业主姓名+手机      NAME_MOBILE_VERIFY
+业主手机号外部验证  REMOTE_MOBILE_VERIFY
 	 */
 	@ApiField("verify_type")
 	private String verifyType;

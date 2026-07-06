@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.terminal.edgecloud.simcard.netflowmonitor.sync response.
  * 
  * @author auto create
- * @since 1.0, 2026-04-28 19:37:48
+ * @since 1.0, 2026-06-24 11:02:55
  */
 public class AlipayTerminalEdgecloudSimcardNetflowmonitorSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4551145199746619476L;
+	private static final long serialVersionUID = 8294118537354574994L;
 
 	/** 
 	 * 同步文件所属日期。yyyymmdd或yyyymm

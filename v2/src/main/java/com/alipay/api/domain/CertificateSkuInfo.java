@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品的Sku信息
  *
  * @author auto create
- * @since 1.0, 2026-05-28 10:33:45
+ * @since 1.0, 2026-07-02 14:09:02
  */
 public class CertificateSkuInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5529195122475383621L;
+	private static final long serialVersionUID = 7145246867683776737L;
 
 	/**
 	 * 商品套餐
@@ -40,6 +40,12 @@ public class CertificateSkuInfo extends AlipayObject {
 	 */
 	@ApiField("out_item_id")
 	private String outItemId;
+
+	/**
+	 * 外部商品编码
+	 */
+	@ApiField("out_product_id")
+	private String outProductId;
 
 	/**
 	 * 商家侧sku ID，APPID 下全局唯一。
@@ -85,6 +91,13 @@ public class CertificateSkuInfo extends AlipayObject {
 	}
 	public void setOutItemId(String outItemId) {
 		this.outItemId = outItemId;
+	}
+
+	public String getOutProductId() {
+		return this.outProductId;
+	}
+	public void setOutProductId(String outProductId) {
+		this.outProductId = outProductId;
 	}
 
 	public String getOutSkuId() {

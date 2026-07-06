@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 渠道扩展信息
  *
  * @author auto create
- * @since 1.0, 2026-06-04 19:14:33
+ * @since 1.0, 2026-06-25 20:05:03
  */
 public class ChannelDetailParams extends AlipayObject {
 
-	private static final long serialVersionUID = 5888821337547666535L;
+	private static final long serialVersionUID = 2763286789673316188L;
 
 	/**
 	 * 预付卡分组名称
@@ -60,6 +60,13 @@ public class ChannelDetailParams extends AlipayObject {
 	 */
 	@ApiField("user_has_sign")
 	private String userHasSign;
+
+	/**
+	 * "true"：芝麻分大于等于800分
+"false":  芝麻分小于800分
+	 */
+	@ApiField("zm_score_gte_800")
+	private String zmScoreGte800;
 
 	public String getCardGroupName() {
 		return this.cardGroupName;
@@ -115,6 +122,13 @@ public class ChannelDetailParams extends AlipayObject {
 	}
 	public void setUserHasSign(String userHasSign) {
 		this.userHasSign = userHasSign;
+	}
+
+	public String getZmScoreGte800() {
+		return this.zmScoreGte800;
+	}
+	public void setZmScoreGte800(String zmScoreGte800) {
+		this.zmScoreGte800 = zmScoreGte800;
 	}
 
 }

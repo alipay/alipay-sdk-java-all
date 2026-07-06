@@ -7,26 +7,32 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企信助手会员包创建
  *
  * @author auto create
- * @since 1.0, 2026-06-16 14:48:30
+ * @since 1.0, 2026-06-23 09:57:56
  */
 public class ZhimaCreditEpAssistantMembershippackageCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2665446119442185755L;
+	private static final long serialVersionUID = 8426839668653455792L;
 
 	/**
-	 * 统一社会信用代码。如果无法获取统一社会信用代码，也可以传递伙伴侧的企业标识，需要可以唯一标识一家企业
+	 * 权益包指定生效时间非必填，默认不要填写，只有需要权益包不立即生效，在后续指定时间点生效的场景下需要传入。如果传入时间早于当前时间，则以当前时间进行生效。且指定的生效时间不得晚于当前时间一个月。
+	 */
+	@ApiField("begin_effect_time")
+	private String beginEffectTime;
+
+	/**
+	 * 合作伙伴侧购买使用当前的会员包的企业编号，传递对应的corpid即可，建议传递corpid，但是如果没有有统一社会信用代码，也可以传递统一社会信用代码或者可以唯一标识一家企业的标识.
 	 */
 	@ApiField("company_id")
 	private String companyId;
 
 	/**
-	 * 购买当前会员包的公司名称
+	 * 合作伙伴侧购买使用当前的会员包的企业全称
 	 */
 	@ApiField("company_name")
 	private String companyName;
 
 	/**
-	 * 订单编号，是指伙伴的正式向企信提交订单后，拿到的一个唯一的不重复订单号，届时伙伴的财务打款时需要附上该订单号，方便做资金流和订单的匹配
+	 * 订单编号，是客户在合作伙伴侧下单时的ID，在付费、续费、增购等一个客户可以有多个付费ID，一个ID描述一次购买行为。
 	 */
 	@ApiField("order_no")
 	private String orderNo;
@@ -54,6 +60,13 @@ public class ZhimaCreditEpAssistantMembershippackageCreateModel extends AlipayOb
 	 */
 	@ApiField("product_sku")
 	private String productSku;
+
+	public String getBeginEffectTime() {
+		return this.beginEffectTime;
+	}
+	public void setBeginEffectTime(String beginEffectTime) {
+		this.beginEffectTime = beginEffectTime;
+	}
 
 	public String getCompanyId() {
 		return this.companyId;

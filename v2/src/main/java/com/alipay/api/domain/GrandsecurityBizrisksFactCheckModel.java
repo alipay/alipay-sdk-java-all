@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GrandsecurityBizrisksFactCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7138259346957523762L;
+	private static final long serialVersionUID = 1474473441762276991L;
 
 	/**
 	 * 用户输入的谣言/疑问文本，必填，最大 5000 字符

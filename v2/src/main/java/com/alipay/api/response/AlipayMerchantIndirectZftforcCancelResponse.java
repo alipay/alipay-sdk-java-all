@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.indirect.zftforc.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2026-01-23 11:42:43
+ * @since 1.0, 2026-06-23 10:38:55
  */
 public class AlipayMerchantIndirectZftforcCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1141297467114783313L;
+	private static final long serialVersionUID = 4887492188641445899L;
 
 	/** 
 	 * 撤销状态

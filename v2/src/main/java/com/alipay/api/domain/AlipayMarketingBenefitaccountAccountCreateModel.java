@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 权益账户开户
  *
  * @author auto create
- * @since 1.0, 2025-08-29 11:05:55
+ * @since 1.0, 2026-06-24 17:23:16
  */
 public class AlipayMarketingBenefitaccountAccountCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2394774876988568963L;
+	private static final long serialVersionUID = 4889579292148977468L;
 
 	/**
 	 * 授权信息

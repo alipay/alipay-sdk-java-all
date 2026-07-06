@@ -1,20 +1,17 @@
 package com.alipay.api.domain;
 
-import java.util.List;
-
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
-import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * null
  *
  * @author auto create
- * @since 1.0, 2026-06-11 16:49:08
+ * @since 1.0, 2026-06-23 15:07:56
  */
 public class AxfItemCategoryVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4792333684879437876L;
+	private static final long serialVersionUID = 4269958485957762656L;
 
 	/**
 	 * 类目编码
@@ -35,17 +32,22 @@ public class AxfItemCategoryVO extends AlipayObject {
 	private String categoryStatus;
 
 	/**
+	 * 类目级别。如3代表三级类目
+	 */
+	@ApiField("level")
+	private Long level;
+
+	/**
 	 * 父类目编码
 	 */
 	@ApiField("parent_category_code")
 	private String parentCategoryCode;
 
 	/**
-	 * null
+	 * 所需资质信息
 	 */
-	@ApiListField("required_qualifications")
-	@ApiField("axf_item_category_qualification_v_o")
-	private List<AxfItemCategoryQualificationVO> requiredQualifications;
+	@ApiField("required_qualifications")
+	private AxfItemCategoryQualificationVO requiredQualifications;
 
 	public String getCategoryCode() {
 		return this.categoryCode;
@@ -68,6 +70,13 @@ public class AxfItemCategoryVO extends AlipayObject {
 		this.categoryStatus = categoryStatus;
 	}
 
+	public Long getLevel() {
+		return this.level;
+	}
+	public void setLevel(Long level) {
+		this.level = level;
+	}
+
 	public String getParentCategoryCode() {
 		return this.parentCategoryCode;
 	}
@@ -75,10 +84,10 @@ public class AxfItemCategoryVO extends AlipayObject {
 		this.parentCategoryCode = parentCategoryCode;
 	}
 
-	public List<AxfItemCategoryQualificationVO> getRequiredQualifications() {
+	public AxfItemCategoryQualificationVO getRequiredQualifications() {
 		return this.requiredQualifications;
 	}
-	public void setRequiredQualifications(List<AxfItemCategoryQualificationVO> requiredQualifications) {
+	public void setRequiredQualifications(AxfItemCategoryQualificationVO requiredQualifications) {
 		this.requiredQualifications = requiredQualifications;
 	}
 

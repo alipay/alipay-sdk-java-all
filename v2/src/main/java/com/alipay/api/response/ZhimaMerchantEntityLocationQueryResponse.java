@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaMerchantEntityLocationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5485996434998426382L;
+	private static final long serialVersionUID = 4572317781867834986L;
 
 	/** 
 	 * 充电宝位置

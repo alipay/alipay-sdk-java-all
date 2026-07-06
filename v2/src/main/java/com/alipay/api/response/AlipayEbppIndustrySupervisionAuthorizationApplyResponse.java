@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.supervision.authorization.apply response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-18 15:42:35
+ * @since 1.0, 2026-06-25 15:02:58
  */
 public class AlipayEbppIndustrySupervisionAuthorizationApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1378933495767714713L;
+	private static final long serialVersionUID = 7748438813122926355L;
 
 	/** 
 	 * 外部申请请求流水号，外部请求的唯一标识

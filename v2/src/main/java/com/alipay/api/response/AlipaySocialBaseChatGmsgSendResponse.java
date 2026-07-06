@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.base.chat.gmsg.send response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 19:33:21
+ * @since 1.0, 2026-06-30 10:37:07
  */
 public class AlipaySocialBaseChatGmsgSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7849798562454843828L;
+	private static final long serialVersionUID = 5331187585679247329L;
 
 	/** 
 	 * 消息索引号 会话ID_消息ID

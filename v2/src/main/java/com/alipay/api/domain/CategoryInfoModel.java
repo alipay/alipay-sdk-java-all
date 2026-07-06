@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商户经营类目信息
  *
  * @author auto create
- * @since 1.0, 2025-10-23 19:26:52
+ * @since 1.0, 2026-06-26 21:16:16
  */
 public class CategoryInfoModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1613454727144745966L;
+	private static final long serialVersionUID = 3176178643226259363L;
+
+	/**
+	 * 主营类目编码信息，代表店铺主类目信息
+	 */
+	@ApiField("category_code")
+	private String categoryCode;
 
 	/**
 	 * 商家主营类目
@@ -23,11 +29,19 @@ public class CategoryInfoModel extends AlipayObject {
 	private String mainName;
 
 	/**
-	 * 商家经营子类目名称列表
+	 * 商家经营子类目名称列表 当前字段已废弃(业务调整，该参数不在使用)
 	 */
 	@ApiListField("name_list")
 	@ApiField("string")
+	@Deprecated
 	private List<String> nameList;
+
+	public String getCategoryCode() {
+		return this.categoryCode;
+	}
+	public void setCategoryCode(String categoryCode) {
+		this.categoryCode = categoryCode;
+	}
 
 	public String getMainName() {
 		return this.mainName;

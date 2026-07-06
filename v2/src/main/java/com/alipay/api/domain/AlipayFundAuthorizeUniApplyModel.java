@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundAuthorizeUniApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2785719819165661779L;
+	private static final long serialVersionUID = 2379655661676263971L;
 
 	/**
 	 * 超时时间，过期跳转链接失效，格式为yyyy-MM-dd HH:mm。不传，有效期默认7天

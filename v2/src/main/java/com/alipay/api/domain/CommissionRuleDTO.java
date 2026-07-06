@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 待生效的抽佣规则
  *
  * @author auto create
- * @since 1.0, 2026-06-17 10:52:56
+ * @since 1.0, 2026-06-30 11:12:57
  */
 public class CommissionRuleDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5695768489943828838L;
+	private static final long serialVersionUID = 3287582584972984347L;
 
 	/**
 	 * 被抽佣支付宝登录号
@@ -28,6 +28,12 @@ public class CommissionRuleDTO extends AlipayObject {
 	 */
 	@ApiField("charged_account_name")
 	private String chargedAccountName;
+
+	/**
+	 * 指定被抽佣的基准金额
+	 */
+	@ApiField("commission_amount_type")
+	private String commissionAmountType;
 
 	/**
 	 * 抽佣比例，格式如0.01
@@ -85,6 +91,13 @@ public class CommissionRuleDTO extends AlipayObject {
 	}
 	public void setChargedAccountName(String chargedAccountName) {
 		this.chargedAccountName = chargedAccountName;
+	}
+
+	public String getCommissionAmountType() {
+		return this.commissionAmountType;
+	}
+	public void setCommissionAmountType(String commissionAmountType) {
+		this.commissionAmountType = commissionAmountType;
 	}
 
 	public String getCommissionRatio() {

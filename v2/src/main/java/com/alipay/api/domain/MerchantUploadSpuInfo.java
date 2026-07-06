@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MerchantUploadSpuInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8527447271885449915L;
+	private static final long serialVersionUID = 5428996226999481491L;
 
 	/**
 	 * 类目ID

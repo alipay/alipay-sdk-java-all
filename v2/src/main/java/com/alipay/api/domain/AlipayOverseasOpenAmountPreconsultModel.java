@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 金额试算
  *
  * @author auto create
- * @since 1.0, 2022-07-13 12:15:31
+ * @since 1.0, 2026-07-03 14:17:25
  */
 public class AlipayOverseasOpenAmountPreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6656927383689267191L;
+	private static final long serialVersionUID = 1524211496314477365L;
+
+	/**
+	 * 学校账户ID，通过alipay.overseas.open.account.consult获取
+	 */
+	@ApiField("account_id")
+	private String accountId;
 
 	/**
 	 * 机构信息
@@ -30,6 +36,13 @@ public class AlipayOverseasOpenAmountPreconsultModel extends AlipayObject {
 	 */
 	@ApiField("reference_id")
 	private String referenceId;
+
+	public String getAccountId() {
+		return this.accountId;
+	}
+	public void setAccountId(String accountId) {
+		this.accountId = accountId;
+	}
 
 	public TuitionISVAgentInfoDTO getAgentInfo() {
 		return this.agentInfo;

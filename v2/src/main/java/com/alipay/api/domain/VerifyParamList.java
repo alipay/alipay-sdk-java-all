@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-05-26 19:52:48
+ * @since 1.0, 2026-07-02 16:32:56
  */
 public class VerifyParamList extends AlipayObject {
 
-	private static final long serialVersionUID = 3736239181269189752L;
+	private static final long serialVersionUID = 8617377183141885465L;
 
 	/**
 	 * 证件编号

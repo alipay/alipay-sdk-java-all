@@ -7,20 +7,20 @@ import com.alipay.api.internal.mapping.ApiField;
  * 家庭医生宣教内容推送
  *
  * @author auto create
- * @since 1.0, 2026-06-01 16:42:01
+ * @since 1.0, 2026-06-25 15:32:57
  */
 public class AlipayCommerceMedicalHomedoctorMessageCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4638478149693561314L;
+	private static final long serialVersionUID = 4435545792631437313L;
 
 	/**
-	 * 消息发送批次
+	 * 消息发送批次，当消息业务类型为AI语音随访时（message_biz_type='AI_FOLLOW_UP'）请传入创建AI随访任务的biz_id
 	 */
 	@ApiField("message_batch_no")
 	private String messageBatchNo;
 
 	/**
-	 * [{"name":"宣教","value":"EDUCATION"},{"name":"体检通知","value":"HEALTH_CHECK"},{"name":"女性早筛","value":"FEMALE_EARLY_SCREENING"},{"name":"孕产妇通知","value":"PREGNANT_CARE"},{"name":"新生儿检查","value":"NEWBORN_CHECK"},{"name":"问卷","value":"QUESTIONNAIRE"}]
+	 * [{"name":"宣教","value":"EDUCATION"},{"name":"体检通知","value":"HEALTH_CHECK"},{"name":"女性早筛","value":"FEMALE_EARLY_SCREENING"},{"name":"孕产妇通知","value":"PREGNANT_CARE"},{"name":"新生儿检查","value":"NEWBORN_CHECK"},{"name":"问卷","value":"QUESTIONNAIRE"},{"name":"AI语音随访","value":"AI_FOLLOW_UP"}]
 	 */
 	@ApiField("message_biz_type")
 	private String messageBizType;

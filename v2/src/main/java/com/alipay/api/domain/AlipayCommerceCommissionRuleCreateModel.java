@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建抽佣规则
  *
  * @author auto create
- * @since 1.0, 2026-06-17 10:42:55
+ * @since 1.0, 2026-06-30 10:37:59
  */
 public class AlipayCommerceCommissionRuleCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4822533189229886796L;
+	private static final long serialVersionUID = 7871638613188664789L;
 
 	/**
 	 * 蚂蚁门店id，用于水平权限鉴权。可通过ant.merchant.expand.shop.create创建蚂蚁门店获取
@@ -32,6 +32,12 @@ public class AlipayCommerceCommissionRuleCreateModel extends AlipayObject {
 	 */
 	@ApiField("charged_account_name")
 	private String chargedAccountName;
+
+	/**
+	 * 用户实付金额
+	 */
+	@ApiField("commission_amount_type")
+	private String commissionAmountType;
 
 	/**
 	 * 抽佣比例，格式为小数如0.1
@@ -70,6 +76,13 @@ public class AlipayCommerceCommissionRuleCreateModel extends AlipayObject {
 	}
 	public void setChargedAccountName(String chargedAccountName) {
 		this.chargedAccountName = chargedAccountName;
+	}
+
+	public String getCommissionAmountType() {
+		return this.commissionAmountType;
+	}
+	public void setCommissionAmountType(String commissionAmountType) {
+		this.commissionAmountType = commissionAmountType;
 	}
 
 	public String getCommissionRatio() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenCccDedeCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5684137426584863712L;
+	private static final long serialVersionUID = 1749138693257822498L;
 
 	/**
 	 * 测试

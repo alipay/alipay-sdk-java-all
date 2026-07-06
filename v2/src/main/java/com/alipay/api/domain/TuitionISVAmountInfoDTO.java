@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 留学缴费-金额信息
  *
  * @author auto create
- * @since 1.0, 2024-04-22 10:39:14
+ * @since 1.0, 2026-07-03 14:17:25
  */
 public class TuitionISVAmountInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2522958943129188764L;
+	private static final long serialVersionUID = 5173753997448836251L;
+
+	/**
+	 * 境外手续费结构体
+	 */
+	@ApiField("bank_charge_detail")
+	private BankChargeDTO bankChargeDetail;
 
 	/**
 	 * 费用明细
@@ -46,6 +52,13 @@ public class TuitionISVAmountInfoDTO extends AlipayObject {
 	 */
 	@ApiField("total_amount")
 	private TuitionMoneyDTO totalAmount;
+
+	public BankChargeDTO getBankChargeDetail() {
+		return this.bankChargeDetail;
+	}
+	public void setBankChargeDetail(BankChargeDTO bankChargeDetail) {
+		this.bankChargeDetail = bankChargeDetail;
+	}
 
 	public List<TuitionISVChargeDetailDTO> getChargeDetails() {
 		return this.chargeDetails;

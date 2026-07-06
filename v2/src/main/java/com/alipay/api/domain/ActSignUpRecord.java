@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-06-17 14:46:26
+ * @since 1.0, 2026-06-29 18:07:55
  */
 public class ActSignUpRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 5664576673572726332L;
+	private static final long serialVersionUID = 1828772594239357816L;
 
 	/**
 	 * 活动唯一编码
@@ -44,6 +44,12 @@ public class ActSignUpRecord extends AlipayObject {
 	 */
 	@ApiField("activity_user_start_time")
 	private Date activityUserStartTime;
+
+	/**
+	 * PENDING-未生效，ACTIVE-生效中，EXPIRED-已过期
+	 */
+	@ApiField("effective_status")
+	private String effectiveStatus;
 
 	/**
 	 * 创建时间
@@ -120,6 +126,13 @@ public class ActSignUpRecord extends AlipayObject {
 	}
 	public void setActivityUserStartTime(Date activityUserStartTime) {
 		this.activityUserStartTime = activityUserStartTime;
+	}
+
+	public String getEffectiveStatus() {
+		return this.effectiveStatus;
+	}
+	public void setEffectiveStatus(String effectiveStatus) {
+		this.effectiveStatus = effectiveStatus;
 	}
 
 	public Date getGmtCreate() {

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 提供给saleforce更新商机接口的入参
  *
  * @author auto create
- * @since 1.0, 2026-04-14 14:25:42
+ * @since 1.0, 2026-07-02 15:47:54
  */
 public class SaleForceUpdateLeadsParams extends AlipayObject {
 
-	private static final long serialVersionUID = 4758511884695465161L;
+	private static final long serialVersionUID = 1162327158768671728L;
 
 	/**
 	 * 实际主导方
@@ -239,6 +239,12 @@ public class SaleForceUpdateLeadsParams extends AlipayObject {
 	 */
 	@ApiField("partner_name")
 	private String partnerName;
+
+	/**
+	 * 平台账号id
+	 */
+	@ApiField("platform_uid_id")
+	private String platformUidId;
 
 	/**
 	 * 产品家族
@@ -584,6 +590,13 @@ public class SaleForceUpdateLeadsParams extends AlipayObject {
 	}
 	public void setPartnerName(String partnerName) {
 		this.partnerName = partnerName;
+	}
+
+	public String getPlatformUidId() {
+		return this.platformUidId;
+	}
+	public void setPlatformUidId(String platformUidId) {
+		this.platformUidId = platformUidId;
 	}
 
 	public String getProductFamily() {

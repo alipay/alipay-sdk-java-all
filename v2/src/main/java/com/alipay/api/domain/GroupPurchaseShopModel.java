@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 门店模型
  *
  * @author auto create
- * @since 1.0, 2025-10-23 19:42:30
+ * @since 1.0, 2026-07-01 19:41:54
  */
 public class GroupPurchaseShopModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2544576351724918167L;
+	private static final long serialVersionUID = 5199879644132595249L;
 
 	/**
 	 * 门店详细地址
@@ -23,10 +23,11 @@ public class GroupPurchaseShopModel extends AlipayObject {
 	private String address;
 
 	/**
-	 * 门店结算银行卡信息
+	 * 门店结算银行卡信息 当前字段已废弃(业务变更，参数结构不再使用)
 	 */
 	@ApiListField("bank_cards")
 	@ApiField("group_purchase_bank_card")
+	@Deprecated
 	private List<GroupPurchaseBankCard> bankCards;
 
 	/**
@@ -113,11 +114,19 @@ public class GroupPurchaseShopModel extends AlipayObject {
 	private GroupPurchaseProofInfo proofInfo;
 
 	/**
-	 * 门店结算信息
+	 * 门店结算信息 当前字段已废弃(业务变更，参数结构变更)
 	 */
 	@ApiListField("settle_infos")
 	@ApiField("group_purchase_settle_info")
+	@Deprecated
 	private List<GroupPurchaseSettleInfo> settleInfos;
+
+	/**
+	 * 门店结算信息
+	 */
+	@ApiListField("shop_settle_infos")
+	@ApiField("group_purchase_shop_settle_info")
+	private List<GroupPurchaseShopSettleInfo> shopSettleInfos;
 
 	public String getAddress() {
 		return this.address;
@@ -229,6 +238,13 @@ public class GroupPurchaseShopModel extends AlipayObject {
 	}
 	public void setSettleInfos(List<GroupPurchaseSettleInfo> settleInfos) {
 		this.settleInfos = settleInfos;
+	}
+
+	public List<GroupPurchaseShopSettleInfo> getShopSettleInfos() {
+		return this.shopSettleInfos;
+	}
+	public void setShopSettleInfos(List<GroupPurchaseShopSettleInfo> shopSettleInfos) {
+		this.shopSettleInfos = shopSettleInfos;
 	}
 
 }

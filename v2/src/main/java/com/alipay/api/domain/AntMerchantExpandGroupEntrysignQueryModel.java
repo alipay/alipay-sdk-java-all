@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 集团商户入驻签约状态查询
  *
  * @author auto create
- * @since 1.0, 2026-06-12 13:59:34
+ * @since 1.0, 2026-06-23 10:45:44
  */
 public class AntMerchantExpandGroupEntrysignQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7724376967321582933L;
+	private static final long serialVersionUID = 7771989466534622787L;
 
 	/**
 	 * openid 是支付宝用户在应用维度下的唯一标识。

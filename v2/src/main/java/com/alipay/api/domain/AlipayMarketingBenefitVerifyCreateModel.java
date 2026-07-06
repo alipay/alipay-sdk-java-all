@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 权益中心统一核身
  *
  * @author auto create
- * @since 1.0, 2025-09-26 19:45:54
+ * @since 1.0, 2026-06-24 17:23:47
  */
 public class AlipayMarketingBenefitVerifyCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2766852612964697591L;
+	private static final long serialVersionUID = 5682751257311486925L;
 
 	/**
 	 * 本次动作核身的业务单号，用于后续操作的业务幂等号

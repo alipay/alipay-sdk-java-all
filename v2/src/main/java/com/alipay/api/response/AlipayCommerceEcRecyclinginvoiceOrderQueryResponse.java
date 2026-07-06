@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.RecyclingInvoiceBizTransfer;
 import com.alipay.api.domain.OrderElectronicReceipt;
 import com.alipay.api.domain.OrderInvoice;
 import com.alipay.api.domain.RecyclinginvoiceOrderItem;
@@ -16,11 +17,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.recyclinginvoice.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-11 14:57:49
+ * @since 1.0, 2026-06-26 11:07:56
  */
 public class AlipayCommerceEcRecyclinginvoiceOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5251268688139487371L;
+	private static final long serialVersionUID = 8873916258867961838L;
+
+	/** 
+	 * []
+	 */
+	@ApiField("biz_transfer_list")
+	private RecyclingInvoiceBizTransfer bizTransferList;
 
 	/** 
 	 * 收款即开票页面支付宝URL（自然人端） 在支付宝里打开的自然人缴税并收款页面，可从企业（商户）/服务商自有APP/小程序页面打开 供应商ID存在值时返回 未安装支付宝或使用受限目标容器时可能无法打开
@@ -196,6 +203,13 @@ public class AlipayCommerceEcRecyclinginvoiceOrderQueryResponse extends AlipayRe
 	 */
 	@ApiField("tax_total_amount")
 	private String taxTotalAmount;
+
+	public void setBizTransferList(RecyclingInvoiceBizTransfer bizTransferList) {
+		this.bizTransferList = bizTransferList;
+	}
+	public RecyclingInvoiceBizTransfer getBizTransferList( ) {
+		return this.bizTransferList;
+	}
 
 	public void setCollectionInvoicePageAlipayUrl(String collectionInvoicePageAlipayUrl) {
 		this.collectionInvoicePageAlipayUrl = collectionInvoicePageAlipayUrl;

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.lifeservice.categorytemplate.query request
  * 
  * @author auto create
- * @since 1.0, 2026-02-25 13:52:44
+ * @since 1.0, 2026-06-25 11:17:57
  */
 public class AlipayCommerceLifeserviceCategorytemplateQueryRequest implements AlipayRequest<AlipayCommerceLifeserviceCategorytemplateQueryResponse> {
 

@@ -3,6 +3,7 @@ package com.alipay.api.response;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.LatestVerifyError;
 import com.alipay.api.domain.UniOpenResItem;
 
 import com.alipay.api.AlipayResponse;
@@ -11,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.solutionprod.unifiedopen.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-29 00:06:20
+ * @since 1.0, 2026-07-06 11:32:58
  */
 public class AlipayTradeSolutionprodUnifiedopenQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5291689857343634349L;
+	private static final long serialVersionUID = 4774996515566926552L;
 
 	/** 
 	 * 开通绑定的支付宝登录号（脱敏）
@@ -28,6 +29,13 @@ public class AlipayTradeSolutionprodUnifiedopenQueryResponse extends AlipayRespo
 	 */
 	@ApiField("fail_reason")
 	private String failReason;
+
+	/** 
+	 * 最近一次用户校验异常信息
+	 */
+	@ApiListField("latest_verify_error")
+	@ApiField("latest_verify_error")
+	private List<LatestVerifyError> latestVerifyError;
 
 	/** 
 	 * 开通项结果列表
@@ -66,6 +74,13 @@ public class AlipayTradeSolutionprodUnifiedopenQueryResponse extends AlipayRespo
 	}
 	public String getFailReason( ) {
 		return this.failReason;
+	}
+
+	public void setLatestVerifyError(List<LatestVerifyError> latestVerifyError) {
+		this.latestVerifyError = latestVerifyError;
+	}
+	public List<LatestVerifyError> getLatestVerifyError( ) {
+		return this.latestVerifyError;
 	}
 
 	public void setOpenItemResultList(List<UniOpenResItem> openItemResultList) {

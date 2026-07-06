@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询公益林列表
  *
  * @author auto create
- * @since 1.0, 2025-02-08 16:28:09
+ * @since 1.0, 2026-06-29 14:53:37
  */
 public class AlipaySocialAntforestWelfareforestBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1394188545526311631L;
+	private static final long serialVersionUID = 1777553995229392868L;
 
 	/**
 	 * 传入公益林业务项目的编码

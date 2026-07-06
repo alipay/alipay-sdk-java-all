@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.content.live.platform.gift.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-11-06 17:47:41
+ * @since 1.0, 2026-06-23 14:49:23
  */
 public class AlipayContentLivePlatformGiftQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1266162677233421112L;
+	private static final long serialVersionUID = 8898635785753131664L;
 
 	/** 
 	 * 追踪trace_id

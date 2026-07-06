@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.oceanbase.examinfo.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-26 15:57:22
+ * @since 1.0, 2026-06-30 14:37:57
  */
 public class AnttechOceanbaseExaminfoBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2437983348747626491L;
+	private static final long serialVersionUID = 1312195618675881249L;
 
 	/** 
 	 * 用户认证考试信息List

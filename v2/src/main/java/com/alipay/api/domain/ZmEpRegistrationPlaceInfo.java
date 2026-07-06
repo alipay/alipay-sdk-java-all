@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZmEpRegistrationPlaceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4277323816385532413L;
+	private static final long serialVersionUID = 3354291443424964656L;
 
 	/**
 	 * 城市

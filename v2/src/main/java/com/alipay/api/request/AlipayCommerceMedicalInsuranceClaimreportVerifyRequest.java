@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.insurance.claimreport.verify request
  * 
  * @author auto create
- * @since 1.0, 2026-05-26 19:52:48
+ * @since 1.0, 2026-07-02 16:32:56
  */
 public class AlipayCommerceMedicalInsuranceClaimreportVerifyRequest implements AlipayRequest<AlipayCommerceMedicalInsuranceClaimreportVerifyResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营销活动报名
  *
  * @author auto create
- * @since 1.0, 2026-06-17 14:46:12
+ * @since 1.0, 2026-06-30 10:37:59
  */
 public class AlipayCommerceOperationPromoActivitySignupModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2853811757328277913L;
+	private static final long serialVersionUID = 4395759831673944575L;
 
 	/**
 	 * 活动唯一编码，固定值
@@ -20,13 +20,19 @@ public class AlipayCommerceOperationPromoActivitySignupModel extends AlipayObjec
 	private String activityCode;
 
 	/**
+	 * 指定期次报名场景必传
+	 */
+	@ApiField("round_id")
+	private String roundId;
+
+	/**
 	 * 场景编码，固定值
 	 */
 	@ApiField("scene_code")
 	private String sceneCode;
 
 	/**
-	 * 报名信息，需传入JSON转义后的字符串
+	 * 报名信息，需传入JSON转义后的字符串；点餐激励场景必填！
 	 */
 	@ApiField("sign_up_info")
 	private String signUpInfo;
@@ -48,6 +54,13 @@ public class AlipayCommerceOperationPromoActivitySignupModel extends AlipayObjec
 	}
 	public void setActivityCode(String activityCode) {
 		this.activityCode = activityCode;
+	}
+
+	public String getRoundId() {
+		return this.roundId;
+	}
+	public void setRoundId(String roundId) {
+		this.roundId = roundId;
 	}
 
 	public String getSceneCode() {

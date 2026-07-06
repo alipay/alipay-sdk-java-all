@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付宝实名信息一致性校验接口
  *
  * @author auto create
- * @since 1.0, 2026-03-02 17:03:06
+ * @since 1.0, 2026-06-23 14:21:32
  */
 public class AlipayUserAuthenticationConsistencyCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7697949747113376874L;
+	private static final long serialVersionUID = 2748185182176684325L;
 
 	/**
 	 * 业务逻辑会针对biz_from来决定：账号属于未认证状态时是否透出错误码和错误文案
@@ -53,10 +53,29 @@ F: 传F或者不传，则不支持通过营业执照来核验个人账号；
 	private String entName;
 
 	/**
+	 * true代表是新注册商户，
+false代表不是新注册商户
+	 */
+	@ApiField("new_reg_merchant")
+	private Boolean newRegMerchant;
+
+	/**
 	 * 用于标记支付宝用户在应用下的唯一标识
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/**
+	 * 身份证号码
+	 */
+	@ApiField("operator_id_no")
+	private String operatorIdNo;
+
+	/**
+	 * 经营者姓名
+	 */
+	@ApiField("operator_name")
+	private String operatorName;
 
 	/**
 	 * 蚂蚁统一会员ID
@@ -112,11 +131,32 @@ F: 传F或者不传，则不支持通过营业执照来核验个人账号；
 		this.entName = entName;
 	}
 
+	public Boolean getNewRegMerchant() {
+		return this.newRegMerchant;
+	}
+	public void setNewRegMerchant(Boolean newRegMerchant) {
+		this.newRegMerchant = newRegMerchant;
+	}
+
 	public String getOpenId() {
 		return this.openId;
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public String getOperatorIdNo() {
+		return this.operatorIdNo;
+	}
+	public void setOperatorIdNo(String operatorIdNo) {
+		this.operatorIdNo = operatorIdNo;
+	}
+
+	public String getOperatorName() {
+		return this.operatorName;
+	}
+	public void setOperatorName(String operatorName) {
+		this.operatorName = operatorName;
 	}
 
 	public String getUserId() {

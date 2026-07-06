@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.benefitaccount.account.refund response.
  * 
  * @author auto create
- * @since 1.0, 2025-09-26 19:52:40
+ * @since 1.0, 2026-06-24 17:32:58
  */
 public class AlipayMarketingBenefitaccountAccountRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7178141497313319731L;
+	private static final long serialVersionUID = 6715452183686773615L;
 
 	/** 
 	 * 总退款金额，单位：元

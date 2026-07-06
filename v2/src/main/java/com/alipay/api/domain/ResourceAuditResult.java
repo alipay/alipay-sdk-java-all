@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2025-11-13 14:32:41
+ * @since 1.0, 2026-06-23 14:49:23
  */
 public class ResourceAuditResult extends AlipayObject {
 
-	private static final long serialVersionUID = 3219179223878237555L;
+	private static final long serialVersionUID = 4877721148414569431L;
 
 	/**
 	 * 要审核的资源value值，文字为文案，图片为图片url，视频为视频url

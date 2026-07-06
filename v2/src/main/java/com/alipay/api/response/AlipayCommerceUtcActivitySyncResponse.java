@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.utc.activity.sync response.
  * 
  * @author auto create
- * @since 1.0, 2026-06-08 16:32:56
+ * @since 1.0, 2026-07-02 16:07:55
  */
 public class AlipayCommerceUtcActivitySyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4436815897477611621L;
+	private static final long serialVersionUID = 8286663798414987371L;
 
 	
 

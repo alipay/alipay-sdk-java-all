@@ -1,6 +1,9 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.TradeAwardDetail;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.promo.award.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-06-17 14:45:51
+ * @since 1.0, 2026-06-29 18:07:55
  */
 public class AlipayCommerceOperationPromoAwardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4172147381228195441L;
+	private static final long serialVersionUID = 3613229732949828165L;
 
 	/** 
 	 * 激励金额，单位：分
@@ -21,13 +24,38 @@ public class AlipayCommerceOperationPromoAwardQueryResponse extends AlipayRespon
 	private Long awardAmount;
 
 	/** 
-	 * 报名记录id
+	 * 当前页
+	 */
+	@ApiField("page_num")
+	private Long pageNum;
+
+	/** 
+	 * 分页大小
+	 */
+	@ApiField("page_size")
+	private Long pageSize;
+
+	/** 
+	 * 报名记录ID（已废弃，请勿依赖）
 	 */
 	@ApiField("sign_up_id")
 	private String signUpId;
 
 	/** 
-	 * 交易笔数
+	 * 总页数
+	 */
+	@ApiField("total_page")
+	private Long totalPage;
+
+	/** 
+	 * null
+	 */
+	@ApiListField("trade_award_details")
+	@ApiField("trade_award_detail")
+	private List<TradeAwardDetail> tradeAwardDetails;
+
+	/** 
+	 * 总笔数
 	 */
 	@ApiField("trade_count")
 	private Long tradeCount;
@@ -39,11 +67,39 @@ public class AlipayCommerceOperationPromoAwardQueryResponse extends AlipayRespon
 		return this.awardAmount;
 	}
 
+	public void setPageNum(Long pageNum) {
+		this.pageNum = pageNum;
+	}
+	public Long getPageNum( ) {
+		return this.pageNum;
+	}
+
+	public void setPageSize(Long pageSize) {
+		this.pageSize = pageSize;
+	}
+	public Long getPageSize( ) {
+		return this.pageSize;
+	}
+
 	public void setSignUpId(String signUpId) {
 		this.signUpId = signUpId;
 	}
 	public String getSignUpId( ) {
 		return this.signUpId;
+	}
+
+	public void setTotalPage(Long totalPage) {
+		this.totalPage = totalPage;
+	}
+	public Long getTotalPage( ) {
+		return this.totalPage;
+	}
+
+	public void setTradeAwardDetails(List<TradeAwardDetail> tradeAwardDetails) {
+		this.tradeAwardDetails = tradeAwardDetails;
+	}
+	public List<TradeAwardDetail> getTradeAwardDetails( ) {
+		return this.tradeAwardDetails;
 	}
 
 	public void setTradeCount(Long tradeCount) {

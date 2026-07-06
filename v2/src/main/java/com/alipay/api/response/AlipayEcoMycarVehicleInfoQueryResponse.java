@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoMycarVehicleInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5793653262395114399L;
+	private static final long serialVersionUID = 4898249426488573238L;
 
 	/** 
 	 * 车辆信息列表

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 医生服务包列表查询
  *
  * @author auto create
- * @since 1.0, 2026-04-30 14:12:45
+ * @since 1.0, 2026-06-23 14:02:56
  */
 public class AlipayCommerceMedicalServicepackageListQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4869364746535498576L;
+	private static final long serialVersionUID = 5318467631458471459L;
 
 	/**
 	 * 是否是买后

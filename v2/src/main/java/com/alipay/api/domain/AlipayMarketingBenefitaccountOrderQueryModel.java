@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 权益账户订单查询
  *
  * @author auto create
- * @since 1.0, 2025-09-05 11:27:14
+ * @since 1.0, 2026-06-24 17:23:21
  */
 public class AlipayMarketingBenefitaccountOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1331233523489798338L;
+	private static final long serialVersionUID = 8747978963626346978L;
 
 	/**
 	 * 权益账户id

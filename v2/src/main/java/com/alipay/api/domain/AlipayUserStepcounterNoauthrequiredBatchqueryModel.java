@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserStepcounterNoauthrequiredBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4885659749724768627L;
+	private static final long serialVersionUID = 7275737568127153633L;
 
 	/**
 	 * 步数数据查询的结束日期。此日期不能小于步数查询的开始日期
@@ -26,7 +26,7 @@ public class AlipayUserStepcounterNoauthrequiredBatchqueryModel extends AlipayOb
 	private String openId;
 
 	/**
-	 * 请求方唯一标识。每一个外部商户都会分配一个业务方标识
+	 * 请求方唯一标识。每一个外部商户都会分配一个业务方标识，请联系接口负责人获取
 	 */
 	@ApiField("partner_id")
 	private String partnerId;
@@ -38,7 +38,7 @@ public class AlipayUserStepcounterNoauthrequiredBatchqueryModel extends AlipayOb
 	private String startDate;
 
 	/**
-	 * 用户的计步时区。若此参数为空，则返回所有时区的步数信息。
+	 * 用户的计步时区。若不为空，返回指定时区的运动步数，若此参数为空，则返回所有时区的步数信息。
 	 */
 	@ApiField("time_zone")
 	private String timeZone;

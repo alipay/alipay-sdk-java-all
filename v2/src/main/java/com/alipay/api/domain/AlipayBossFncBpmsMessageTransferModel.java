@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayBossFncBpmsMessageTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6114189834673639585L;
+	private static final long serialVersionUID = 7866535317759541147L;
 
 	/**
 	 * bpms消息内容

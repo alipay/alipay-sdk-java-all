@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.wallet.externalaccount.consult response.
  * 
  * @author auto create
- * @since 1.0, 2026-01-22 15:10:43
+ * @since 1.0, 2026-06-25 11:42:55
  */
 public class AlipayFundWalletExternalaccountConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6389197684479714938L;
+	private static final long serialVersionUID = 3776844711374937783L;
 
 	/** 
 	 * 当前页

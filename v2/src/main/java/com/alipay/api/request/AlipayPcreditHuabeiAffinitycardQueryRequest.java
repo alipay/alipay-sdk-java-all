@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.huabei.affinitycard.query request
  * 
  * @author auto create
- * @since 1.0, 2026-06-15 19:52:26
+ * @since 1.0, 2026-07-02 15:42:55
  */
 public class AlipayPcreditHuabeiAffinitycardQueryRequest implements AlipayRequest<AlipayPcreditHuabeiAffinitycardQueryResponse> {
 

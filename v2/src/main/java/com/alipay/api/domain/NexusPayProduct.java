@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品模型
  *
  * @author auto create
- * @since 1.0, 2026-03-29 14:48:37
+ * @since 1.0, 2026-06-30 22:29:50
  */
 public class NexusPayProduct extends AlipayObject {
 
-	private static final long serialVersionUID = 3112779739482746198L;
+	private static final long serialVersionUID = 2876415152433469537L;
 
 	/**
 	 * 是否可用
@@ -60,6 +60,12 @@ public class NexusPayProduct extends AlipayObject {
 	 */
 	@ApiField("name")
 	private String name;
+
+	/**
+	 * 单位名称
+	 */
+	@ApiField("unit_label")
+	private String unitLabel;
 
 	public Boolean getActive() {
 		return this.active;
@@ -115,6 +121,13 @@ public class NexusPayProduct extends AlipayObject {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getUnitLabel() {
+		return this.unitLabel;
+	}
+	public void setUnitLabel(String unitLabel) {
+		this.unitLabel = unitLabel;
 	}
 
 }

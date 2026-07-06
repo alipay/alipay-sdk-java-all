@@ -10,17 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 团购业务店铺信息
  *
  * @author auto create
- * @since 1.0, 2025-10-23 19:42:30
+ * @since 1.0, 2026-07-01 19:41:54
  */
 public class GroupPurchaseShopInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7266697365789324585L;
+	private static final long serialVersionUID = 2464289615877764482L;
 
 	/**
-	 * 店铺银行卡信息
+	 * 店铺银行卡信息 当前字段已废弃(业务变更，参数结构发生变更)
 	 */
 	@ApiListField("bank_cards")
 	@ApiField("group_purchase_bank_card")
+	@Deprecated
 	private List<GroupPurchaseBankCard> bankCards;
 
 	/**

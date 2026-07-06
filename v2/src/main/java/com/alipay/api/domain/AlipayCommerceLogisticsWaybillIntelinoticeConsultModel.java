@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝物流智能取件通知预咨询
  *
  * @author auto create
- * @since 1.0, 2026-04-29 15:02:49
+ * @since 1.0, 2026-07-01 20:17:55
  */
 public class AlipayCommerceLogisticsWaybillIntelinoticeConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1893587888117644599L;
+	private static final long serialVersionUID = 4172225916599973296L;
 
 	/**
 	 * 接口调用方的渠道编码

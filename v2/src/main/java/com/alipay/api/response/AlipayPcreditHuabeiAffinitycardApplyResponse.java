@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.huabei.affinitycard.apply response.
  * 
  * @author auto create
- * @since 1.0, 2026-06-15 19:50:48
+ * @since 1.0, 2026-07-02 15:42:55
  */
 public class AlipayPcreditHuabeiAffinitycardApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3888967997823927116L;
+	private static final long serialVersionUID = 7172227818873575253L;
 
 	/** 
 	 * 可用额度，单位：元，精确到小数点后2位
@@ -21,8 +21,7 @@ public class AlipayPcreditHuabeiAffinitycardApplyResponse extends AlipayResponse
 	private String availableAmount;
 
 	/** 
-	 * 08-每月8号
-10-每月10号
+	 * 还款日，08表示每月8号，10表示每月10号
 	 */
 	@ApiField("repay_date")
 	private String repayDate;
@@ -32,6 +31,12 @@ public class AlipayPcreditHuabeiAffinitycardApplyResponse extends AlipayResponse
 	 */
 	@ApiField("total_amount")
 	private String totalAmount;
+
+	/** 
+	 * 花呗联名卡产品账户，后续可以基于该参数查询和关闭联名卡
+	 */
+	@ApiField("user_prod_account_no")
+	private String userProdAccountNo;
 
 	public void setAvailableAmount(String availableAmount) {
 		this.availableAmount = availableAmount;
@@ -52,6 +57,13 @@ public class AlipayPcreditHuabeiAffinitycardApplyResponse extends AlipayResponse
 	}
 	public String getTotalAmount( ) {
 		return this.totalAmount;
+	}
+
+	public void setUserProdAccountNo(String userProdAccountNo) {
+		this.userProdAccountNo = userProdAccountNo;
+	}
+	public String getUserProdAccountNo( ) {
+		return this.userProdAccountNo;
 	}
 
 }

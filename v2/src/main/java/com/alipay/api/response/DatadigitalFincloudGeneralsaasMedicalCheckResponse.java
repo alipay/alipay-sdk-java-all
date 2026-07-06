@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.fincloud.generalsaas.medical.check response.
  * 
  * @author auto create
- * @since 1.0, 2026-04-29 14:27:44
+ * @since 1.0, 2026-06-24 10:17:55
  */
 public class DatadigitalFincloudGeneralsaasMedicalCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5166498188499914571L;
+	private static final long serialVersionUID = 2446841851548462916L;
 
 	/** 
 	 * OCR识别单据号，计费依据，请保留以便排查问题。

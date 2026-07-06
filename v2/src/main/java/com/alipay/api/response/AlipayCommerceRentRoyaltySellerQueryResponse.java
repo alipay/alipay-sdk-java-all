@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.rent.royalty.seller.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-06-17 14:47:56
+ * @since 1.0, 2026-07-03 14:22:56
  */
 public class AlipayCommerceRentRoyaltySellerQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6772546354274312457L;
+	private static final long serialVersionUID = 7684317733316745587L;
 
 	/** 
 	 * 分账详情信息

@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.base.chat.ginfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 19:33:21
+ * @since 1.0, 2026-06-30 10:37:06
  */
 public class AlipaySocialBaseChatGinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8558225375486745245L;
+	private static final long serialVersionUID = 3378457643124387411L;
 
 	/** 
 	 * 群信息

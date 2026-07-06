@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 主播鉴权token获取
  *
  * @author auto create
- * @since 1.0, 2025-11-06 15:27:41
+ * @since 1.0, 2026-06-23 14:49:22
  */
 public class AlipayContentLiveAnchorAccesstokenApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1524221593217789741L;
+	private static final long serialVersionUID = 2142248643683851634L;
 
 	/**
 	 * 当action=REFRESH时，必须传入原access_token

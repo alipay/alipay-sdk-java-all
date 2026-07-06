@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.fincloud.generalsaas.cert.check response.
  * 
  * @author auto create
- * @since 1.0, 2026-06-18 10:58:03
+ * @since 1.0, 2026-06-24 10:17:55
  */
 public class DatadigitalFincloudGeneralsaasCertCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2156364486258442443L;
+	private static final long serialVersionUID = 1895122319376259444L;
 
 	/** 
 	 * OCR识别单据号，计费依据，请保留以便排查问题。

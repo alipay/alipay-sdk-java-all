@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 直播间资源审核
  *
  * @author auto create
- * @since 1.0, 2025-11-13 14:32:41
+ * @since 1.0, 2026-06-23 14:49:23
  */
 public class AlipayContentLiveAnchorResourceAuditModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4529962499218336675L;
+	private static final long serialVersionUID = 3619492619319819314L;
 
 	/**
 	 * 鉴权token

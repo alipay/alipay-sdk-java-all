@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务商代开通”连锁品牌“解决方案
  *
  * @author auto create
- * @since 1.0, 2026-05-15 16:40:08
+ * @since 1.0, 2026-07-01 19:52:56
  */
 public class AlipayOpenSpInteopBrandchainCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7855374678877139185L;
+	private static final long serialVersionUID = 3496665353896788547L;
 
 	/**
 	 * 银行卡信息

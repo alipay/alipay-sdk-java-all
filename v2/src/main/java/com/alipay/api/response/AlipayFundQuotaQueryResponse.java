@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundQuotaQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5475276933433922319L;
+	private static final long serialVersionUID = 6787274135358967326L;
 
 	/** 
 	 * 当active_new_quota_daily_remain_limited返回true时会有值，代表收到了限制，如果是安全限制需申请解限会返回SECURITY_PUNISHED，如果账户额度限制需先提升账户额度会返回ACCOUNT_QUOTA_LIMITED

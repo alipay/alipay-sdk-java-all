@@ -11,17 +11,35 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 根据手机号发放服务包
  *
  * @author auto create
- * @since 1.0, 2026-06-20 10:15:04
+ * @since 1.0, 2026-06-22 10:57:55
  */
 public class AlipayCommerceMedicalServicepackageGrantbyphonenoCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1244483269392169955L;
+	private static final long serialVersionUID = 6577371439167729669L;
+
+	/**
+	 * 证件号
+	 */
+	@ApiField("cert_no")
+	private String certNo;
+
+	/**
+	 * 证件类型
+	 */
+	@ApiField("cert_type")
+	private String certType;
 
 	/**
 	 * 服务生效天数
 	 */
 	@ApiField("effect_days")
 	private Long effectDays;
+
+	/**
+	 * 姓名
+	 */
+	@ApiField("name")
+	private String name;
 
 	/**
 	 * 是否开通主订单，不传不开通
@@ -72,11 +90,32 @@ public class AlipayCommerceMedicalServicepackageGrantbyphonenoCreateModel extend
 	@ApiField("user_start_time")
 	private Date userStartTime;
 
+	public String getCertNo() {
+		return this.certNo;
+	}
+	public void setCertNo(String certNo) {
+		this.certNo = certNo;
+	}
+
+	public String getCertType() {
+		return this.certType;
+	}
+	public void setCertType(String certType) {
+		this.certType = certType;
+	}
+
 	public Long getEffectDays() {
 		return this.effectDays;
 	}
 	public void setEffectDays(Long effectDays) {
 		this.effectDays = effectDays;
+	}
+
+	public String getName() {
+		return this.name;
+	}
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public Boolean getOpenMain() {

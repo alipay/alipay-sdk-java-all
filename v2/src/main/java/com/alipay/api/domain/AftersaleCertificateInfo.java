@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AftersaleCertificateInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5627425882482314785L;
+	private static final long serialVersionUID = 7628847161918229786L;
 
 	/**
 	 * 售后次序号列表

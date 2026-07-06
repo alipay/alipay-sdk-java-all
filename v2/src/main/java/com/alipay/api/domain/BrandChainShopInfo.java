@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 店铺信息
  *
  * @author auto create
- * @since 1.0, 2026-05-15 16:40:08
+ * @since 1.0, 2026-07-01 19:52:56
  */
 public class BrandChainShopInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3395977634821359279L;
+	private static final long serialVersionUID = 3347167134749174362L;
 
 	/**
 	 * null
@@ -52,6 +52,12 @@ public class BrandChainShopInfo extends AlipayObject {
 	 */
 	@ApiField("district_code")
 	private String districtCode;
+
+	/**
+	 * 店铺内景照图片，最小5KB，最大5M（暂不限制图片宽高），图片格式必须为：png、bmp、gif、jpg、jpeg。 传入使用 alipay.open.file.upload接口上传图片获取的file_id。
+	 */
+	@ApiField("interior_image")
+	private String interiorImage;
 
 	/**
 	 * 店铺门头照图片，最小5KB，最大5M（暂不限制图片宽高），图片格式必须为：png、bmp、gif、jpg、jpeg。
@@ -124,6 +130,13 @@ public class BrandChainShopInfo extends AlipayObject {
 	}
 	public void setDistrictCode(String districtCode) {
 		this.districtCode = districtCode;
+	}
+
+	public String getInteriorImage() {
+		return this.interiorImage;
+	}
+	public void setInteriorImage(String interiorImage) {
+		this.interiorImage = interiorImage;
 	}
 
 	public String getOutDoorImages() {

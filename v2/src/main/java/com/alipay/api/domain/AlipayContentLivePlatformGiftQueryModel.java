@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 平台礼物列表获取
  *
  * @author auto create
- * @since 1.0, 2025-11-06 17:47:41
+ * @since 1.0, 2026-06-23 14:49:23
  */
 public class AlipayContentLivePlatformGiftQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7786876683585743123L;
+	private static final long serialVersionUID = 6752963826389257869L;
 
 	/**
 	 * 鉴权token

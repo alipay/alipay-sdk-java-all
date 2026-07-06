@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPcreditLoanSideloanrepayPlanQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7579532168888988531L;
+	private static final long serialVersionUID = 4842118644789745786L;
 
 	/** 
 	 * 所有到期分期汇总合并信息

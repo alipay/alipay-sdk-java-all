@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMsaasMediarecogMmtcaftscvMachinegoodsAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6745755527371651549L;
+	private static final long serialVersionUID = 4446897776515128333L;
 
 	/**
 	 * 当前请求选取商品算法Id

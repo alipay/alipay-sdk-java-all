@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEcoCityserviceMessageOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2649536675493488853L;
+	private static final long serialVersionUID = 8385412354785924254L;
 
 	/**
 	 * 提供预约/取号功能服务路径页面地址，具体请联系支付宝业务经理

@@ -1,25 +1,34 @@
 package com.alipay.api.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 租赁订单拓展信息
  *
  * @author auto create
- * @since 1.0, 2026-05-29 13:39:06
+ * @since 1.0, 2026-07-03 16:28:44
  */
 public class RentOrderExtendInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8818796686263159439L;
+	private static final long serialVersionUID = 5261417866328166793L;
 
 	/**
 	 * 当前订单用户是否授权静默签署电子合同
 	 */
 	@ApiField("ec_sign_user_authorized")
 	private String ecSignUserAuthorized;
+
+	/**
+	 * 已上传电子合同
+	 */
+	@ApiListField("merchant_upload_contracts")
+	@ApiField("rent_merchant_upload_contract_v_o")
+	private List<RentMerchantUploadContractVO> merchantUploadContracts;
 
 	/**
 	 * 承诺发货时间
@@ -56,6 +65,13 @@ public class RentOrderExtendInfoVO extends AlipayObject {
 	}
 	public void setEcSignUserAuthorized(String ecSignUserAuthorized) {
 		this.ecSignUserAuthorized = ecSignUserAuthorized;
+	}
+
+	public List<RentMerchantUploadContractVO> getMerchantUploadContracts() {
+		return this.merchantUploadContracts;
+	}
+	public void setMerchantUploadContracts(List<RentMerchantUploadContractVO> merchantUploadContracts) {
+		this.merchantUploadContracts = merchantUploadContracts;
 	}
 
 	public Date getPromisedSendTime() {

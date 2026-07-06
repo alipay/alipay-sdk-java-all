@@ -1,23 +1,32 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 车辆登记证信息
  *
  * @author auto create
- * @since 1.0, 2026-01-08 11:03:08
+ * @since 1.0, 2026-06-25 21:29:38
  */
 public class CarfinRegistrationInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1336538873225746646L;
+	private static final long serialVersionUID = 8893944185776851714L;
 
 	/**
 	 * 获得方式
 	 */
 	@ApiField("acquisition_method")
 	private String acquisitionMethod;
+
+	/**
+	 * 历史是否出现申请借款人
+	 */
+	@ApiField("applicant_in_transfer_history")
+	private Boolean applicantInTransferHistory;
 
 	/**
 	 * 条形编码
@@ -68,6 +77,13 @@ public class CarfinRegistrationInfo extends AlipayObject {
 	private String manufactureDate;
 
 	/**
+	 * 登记证抵押登记记录
+	 */
+	@ApiListField("mortgage_info_list")
+	@ApiField("carfin_registration_mortgage_info")
+	private List<CarfinRegistrationMortgageInfo> mortgageInfoList;
+
+	/**
 	 * 解除抵押时间
 	 */
 	@ApiField("mortgage_release_date")
@@ -80,6 +96,12 @@ public class CarfinRegistrationInfo extends AlipayObject {
 	private String mortgageStatus;
 
 	/**
+	 * 抵押对象是否出现典当或个人
+	 */
+	@ApiField("mortgagee_has_pawn_or_individual")
+	private Boolean mortgageeHasPawnOrIndividual;
+
+	/**
 	 * 机动车所有人
 	 */
 	@ApiField("owner")
@@ -90,6 +112,18 @@ public class CarfinRegistrationInfo extends AlipayObject {
 	 */
 	@ApiField("owner_identification_number")
 	private String ownerIdentificationNumber;
+
+	/**
+	 * 核定载客
+	 */
+	@ApiField("passenger_capacity")
+	private String passengerCapacity;
+
+	/**
+	 * 个人名下抵押次数
+	 */
+	@ApiField("personal_mortgage_count")
+	private String personalMortgageCount;
 
 	/**
 	 * 登记机关
@@ -108,6 +142,13 @@ public class CarfinRegistrationInfo extends AlipayObject {
 	 */
 	@ApiField("transfer_count")
 	private String transferCount;
+
+	/**
+	 * 登记证转移登记记录
+	 */
+	@ApiListField("transfer_info_list")
+	@ApiField("carfin_registration_transfer_info")
+	private List<CarfinRegistrationTransferInfo> transferInfoList;
 
 	/**
 	 * 使用性质
@@ -156,6 +197,13 @@ public class CarfinRegistrationInfo extends AlipayObject {
 	}
 	public void setAcquisitionMethod(String acquisitionMethod) {
 		this.acquisitionMethod = acquisitionMethod;
+	}
+
+	public Boolean getApplicantInTransferHistory() {
+		return this.applicantInTransferHistory;
+	}
+	public void setApplicantInTransferHistory(Boolean applicantInTransferHistory) {
+		this.applicantInTransferHistory = applicantInTransferHistory;
 	}
 
 	public String getBarcode() {
@@ -214,6 +262,13 @@ public class CarfinRegistrationInfo extends AlipayObject {
 		this.manufactureDate = manufactureDate;
 	}
 
+	public List<CarfinRegistrationMortgageInfo> getMortgageInfoList() {
+		return this.mortgageInfoList;
+	}
+	public void setMortgageInfoList(List<CarfinRegistrationMortgageInfo> mortgageInfoList) {
+		this.mortgageInfoList = mortgageInfoList;
+	}
+
 	public String getMortgageReleaseDate() {
 		return this.mortgageReleaseDate;
 	}
@@ -228,6 +283,13 @@ public class CarfinRegistrationInfo extends AlipayObject {
 		this.mortgageStatus = mortgageStatus;
 	}
 
+	public Boolean getMortgageeHasPawnOrIndividual() {
+		return this.mortgageeHasPawnOrIndividual;
+	}
+	public void setMortgageeHasPawnOrIndividual(Boolean mortgageeHasPawnOrIndividual) {
+		this.mortgageeHasPawnOrIndividual = mortgageeHasPawnOrIndividual;
+	}
+
 	public String getOwner() {
 		return this.owner;
 	}
@@ -240,6 +302,20 @@ public class CarfinRegistrationInfo extends AlipayObject {
 	}
 	public void setOwnerIdentificationNumber(String ownerIdentificationNumber) {
 		this.ownerIdentificationNumber = ownerIdentificationNumber;
+	}
+
+	public String getPassengerCapacity() {
+		return this.passengerCapacity;
+	}
+	public void setPassengerCapacity(String passengerCapacity) {
+		this.passengerCapacity = passengerCapacity;
+	}
+
+	public String getPersonalMortgageCount() {
+		return this.personalMortgageCount;
+	}
+	public void setPersonalMortgageCount(String personalMortgageCount) {
+		this.personalMortgageCount = personalMortgageCount;
 	}
 
 	public String getRegistrationAuthority() {
@@ -261,6 +337,13 @@ public class CarfinRegistrationInfo extends AlipayObject {
 	}
 	public void setTransferCount(String transferCount) {
 		this.transferCount = transferCount;
+	}
+
+	public List<CarfinRegistrationTransferInfo> getTransferInfoList() {
+		return this.transferInfoList;
+	}
+	public void setTransferInfoList(List<CarfinRegistrationTransferInfo> transferInfoList) {
+		this.transferInfoList = transferInfoList;
 	}
 
 	public String getUseType() {

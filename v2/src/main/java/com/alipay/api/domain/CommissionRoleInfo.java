@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CommissionRoleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2373667234734383543L;
+	private static final long serialVersionUID = 2583823319855425628L;
 
 	/**
 	 * 合作伙伴支付宝账号名称

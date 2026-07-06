@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 手艺人分页查询
  *
  * @author auto create
- * @since 1.0, 2026-03-12 13:42:44
+ * @since 1.0, 2026-07-03 10:32:58
  */
 public class AlipayCommerceLifeserviceTechnicianQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6785939719515842293L;
+	private static final long serialVersionUID = 6272151221436362995L;
 
 	/**
 	 * null

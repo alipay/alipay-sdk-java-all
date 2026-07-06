@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.AIRetailRiskKeyEvent;
 
 import com.alipay.api.AlipayResponse;
 
@@ -11,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.msaas.mediarecog.aivisionstored.airetailrisk.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-03-31 15:07:45
+ * @since 1.0, 2026-07-03 21:27:55
  */
 public class AlipayMsaasMediarecogAivisionstoredAiretailriskQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4265471962687838933L;
+	private static final long serialVersionUID = 7132432896165187286L;
 
 	/** 
 	 * 风险说明
@@ -28,6 +29,13 @@ public class AlipayMsaasMediarecogAivisionstoredAiretailriskQueryResponse extend
 	 */
 	@ApiField("has_risk")
 	private Boolean hasRisk;
+
+	/** 
+	 * null
+	 */
+	@ApiListField("key_actions")
+	@ApiField("a_i_retail_risk_key_event")
+	private List<AIRetailRiskKeyEvent> keyActions;
 
 	/** 
 	 * null
@@ -60,6 +68,13 @@ public class AlipayMsaasMediarecogAivisionstoredAiretailriskQueryResponse extend
 	}
 	public Boolean getHasRisk( ) {
 		return this.hasRisk;
+	}
+
+	public void setKeyActions(List<AIRetailRiskKeyEvent> keyActions) {
+		this.keyActions = keyActions;
+	}
+	public List<AIRetailRiskKeyEvent> getKeyActions( ) {
+		return this.keyActions;
 	}
 
 	public void setPics(List<String> pics) {

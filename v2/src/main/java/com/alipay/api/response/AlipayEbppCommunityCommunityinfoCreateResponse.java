@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.community.communityinfo.create response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 17:31:51
+ * @since 1.0, 2026-07-02 19:07:57
  */
 public class AlipayEbppCommunityCommunityinfoCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1614326258647974436L;
+	private static final long serialVersionUID = 7477538121266673252L;
 
 	/** 
 	 * 小区名字拼音首字母大写+YYYYMMDD+防重位

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 分账和分期详情信息
  *
  * @author auto create
- * @since 1.0, 2026-06-17 14:37:20
+ * @since 1.0, 2026-07-03 14:21:54
  */
 public class RentRoyaltyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1659996971936534724L;
+	private static final long serialVersionUID = 3419599223837683812L;
 
 	/**
 	 * 2088开头的16位纯数字，小程序场景下获取用户ID请参考：用户授权; 其它场景下获取用户ID请参考：网页授权获取用户信息; 其中buyer_id与buyer_open_id不能同时为空
@@ -76,6 +76,12 @@ public class RentRoyaltyInfo extends AlipayObject {
 	@ApiListField("plan_list")
 	@ApiField("rent_plan")
 	private List<RentPlan> planList;
+
+	/**
+	 * 租赁单状态
+	 */
+	@ApiField("rent_status")
+	private String rentStatus;
 
 	/**
 	 * 分账信息列表，每一期的分账详情
@@ -158,6 +164,13 @@ public class RentRoyaltyInfo extends AlipayObject {
 	}
 	public void setPlanList(List<RentPlan> planList) {
 		this.planList = planList;
+	}
+
+	public String getRentStatus() {
+		return this.rentStatus;
+	}
+	public void setRentStatus(String rentStatus) {
+		this.rentStatus = rentStatus;
 	}
 
 	public List<RentRoyalty> getRoyaltyList() {

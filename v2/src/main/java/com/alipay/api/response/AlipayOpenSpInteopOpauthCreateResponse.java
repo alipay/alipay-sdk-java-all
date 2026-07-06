@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenSpInteopOpauthCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3743913788515948422L;
+	private static final long serialVersionUID = 7261997747366489711L;
 
 	/** 
 	 * 代运营授权信息，记录创建代运营授权子单以及对应的产品信息。

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-04-15 19:27:45
+ * @since 1.0, 2026-07-03 10:32:57
  */
 public class LifeServiceRoom extends AlipayObject {
 
-	private static final long serialVersionUID = 1154883618193389498L;
+	private static final long serialVersionUID = 7247467945517762691L;
 
 	/**
 	 * 三方场地id

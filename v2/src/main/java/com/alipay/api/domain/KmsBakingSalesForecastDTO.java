@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KmsBakingSalesForecastDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2351356544642789184L;
+	private static final long serialVersionUID = 6634468168645772826L;
 
 	/**
 	 * 预测日期

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenSpNorderdevicePositionBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4563664928277892174L;
+	private static final long serialVersionUID = 7573949953148515158L;
 
 	/** 
 	 * 绑定结果

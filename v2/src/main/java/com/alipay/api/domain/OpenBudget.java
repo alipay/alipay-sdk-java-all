@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class OpenBudget extends AlipayObject {
 
-	private static final long serialVersionUID = 8263565629129211569L;
+	private static final long serialVersionUID = 8862581429624764489L;
 
 	/**
 	 * 警告接收人

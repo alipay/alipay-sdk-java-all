@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 权益账户资金明细
  *
  * @author auto create
- * @since 1.0, 2025-11-28 14:44:08
+ * @since 1.0, 2026-06-24 17:23:08
  */
 public class BenefitAccountFsFundInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7342516581615496382L;
+	private static final long serialVersionUID = 2786943155761167796L;
 
 	/**
 	 * 账户查询时为出资金额；提现时为该出资方提现金额；单位：元

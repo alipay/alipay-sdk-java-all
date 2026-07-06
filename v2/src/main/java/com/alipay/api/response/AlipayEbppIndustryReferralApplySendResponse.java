@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.referral.apply.send response.
  * 
  * @author auto create
- * @since 1.0, 2026-06-12 10:02:56
+ * @since 1.0, 2026-06-26 16:09:37
  */
 public class AlipayEbppIndustryReferralApplySendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2128686834781587112L;
+	private static final long serialVersionUID = 5629661255386329319L;
 
 	/** 
 	 * 推荐结果是否已被受理并进入候选人录入及短信确认流程

@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: datadigital.fincloud.generalsaas.deepfake.detect request
  * 
  * @author auto create
- * @since 1.0, 2026-06-18 11:02:05
+ * @since 1.0, 2026-06-24 10:17:56
  */
 public class DatadigitalFincloudGeneralsaasDeepfakeDetectRequest implements AlipayUploadRequest<DatadigitalFincloudGeneralsaasDeepfakeDetectResponse> {
 

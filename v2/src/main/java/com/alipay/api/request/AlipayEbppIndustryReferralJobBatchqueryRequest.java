@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.referral.job.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2026-06-12 10:07:55
+ * @since 1.0, 2026-06-26 16:09:45
  */
 public class AlipayEbppIndustryReferralJobBatchqueryRequest implements AlipayRequest<AlipayEbppIndustryReferralJobBatchqueryResponse> {
 

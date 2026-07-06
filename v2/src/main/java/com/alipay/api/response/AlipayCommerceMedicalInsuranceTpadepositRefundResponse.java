@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMedicalInsuranceTpadepositRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8329716787311137753L;
+	private static final long serialVersionUID = 3841474139663875368L;
 
 	
 

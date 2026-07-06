@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.complaint.process.finish response.
  * 
  * @author auto create
- * @since 1.0, 2026-06-05 16:42:56
+ * @since 1.0, 2026-06-22 21:52:56
  */
 public class AlipaySecurityRiskComplaintProcessFinishResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3846118256361892779L;
+	private static final long serialVersionUID = 7559919494248129374L;
 
 	/** 
 	 * 本次投诉处理是否成功，表示系统后台是否成功收到本次请求并完成处理流程

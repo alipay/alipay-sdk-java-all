@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RedirectUrlParam extends AlipayObject {
 
-	private static final long serialVersionUID = 2625854921345989628L;
+	private static final long serialVersionUID = 5275227981577489682L;
 
 	/**
 	 * 端

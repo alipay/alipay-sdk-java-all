@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SubCheckLabel extends AlipayObject {
 
-	private static final long serialVersionUID = 5214732861665733311L;
+	private static final long serialVersionUID = 2749798852451768795L;
 
 	/**
 	 * 机器审核内容的类型：0:图片内容,1:图片上的文字

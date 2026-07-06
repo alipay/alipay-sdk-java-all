@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class InteligentClauseTerm extends AlipayObject {
 
-	private static final long serialVersionUID = 8514813386713483641L;
+	private static final long serialVersionUID = 6198934864562614957L;
 
 	/**
 	 * 说明描述内容

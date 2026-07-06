@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.ebike.chargestation.sync request
  * 
  * @author auto create
- * @since 1.0, 2024-06-26 23:22:04
+ * @since 1.0, 2026-06-30 17:19:38
  */
 public class AlipayCommerceTransportEbikeChargestationSyncRequest implements AlipayRequest<AlipayCommerceTransportEbikeChargestationSyncResponse> {
 

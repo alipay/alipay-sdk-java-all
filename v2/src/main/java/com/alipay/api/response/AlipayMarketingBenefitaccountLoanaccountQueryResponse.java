@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.benefitaccount.loanaccount.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-29 10:32:38
+ * @since 1.0, 2026-06-24 17:32:58
  */
 public class AlipayMarketingBenefitaccountLoanaccountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5288935853396178328L;
+	private static final long serialVersionUID = 8528494674447563326L;
 
 	/** 
 	 * 流水列表

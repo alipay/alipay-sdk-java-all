@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.gift.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 19:33:06
+ * @since 1.0, 2026-06-30 10:37:59
  */
 public class AlipaySocialGiftOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2116173855748514361L;
+	private static final long serialVersionUID = 6547915466116175883L;
 
 	/** 
 	 * 礼物单状态：

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pcredit.huabei.affinitycard.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-06-15 19:52:26
+ * @since 1.0, 2026-07-02 15:42:55
  */
 public class AlipayPcreditHuabeiAffinitycardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8121566123723892213L;
+	private static final long serialVersionUID = 2723999259577123828L;
 
 	/** 
 	 * 可用额度，单位：元，精确到小数点后2位
@@ -21,13 +21,25 @@ public class AlipayPcreditHuabeiAffinitycardQueryResponse extends AlipayResponse
 	private String availableAmount;
 
 	/** 
+	 * 用户联名卡关闭原因
+	 */
+	@ApiField("close_reason")
+	private String closeReason;
+
+	/** 
+	 * 用户联名卡关闭类型，用于区分主动关闭还是被动关闭
+	 */
+	@ApiField("close_type")
+	private String closeType;
+
+	/** 
 	 * 用户是否开通花呗联名卡，true：表示当前用户已开通花呗联名卡，返回相关额度信息，false：表示用户未开通花呗联名卡，不返回相关额度信息。
 	 */
 	@ApiField("opened")
 	private Boolean opened;
 
 	/** 
-	 * 还款日，08-每月8号，10-每月10号。
+	 * 还款日，08表示每月8号，10表示每月10号
 	 */
 	@ApiField("repay_date")
 	private String repayDate;
@@ -38,11 +50,31 @@ public class AlipayPcreditHuabeiAffinitycardQueryResponse extends AlipayResponse
 	@ApiField("total_amount")
 	private String totalAmount;
 
+	/** 
+	 * 如果入参中传入产品账户号或者用户已开通花呗联名卡，返回联名卡产品账户号
+	 */
+	@ApiField("user_prod_account_no")
+	private String userProdAccountNo;
+
 	public void setAvailableAmount(String availableAmount) {
 		this.availableAmount = availableAmount;
 	}
 	public String getAvailableAmount( ) {
 		return this.availableAmount;
+	}
+
+	public void setCloseReason(String closeReason) {
+		this.closeReason = closeReason;
+	}
+	public String getCloseReason( ) {
+		return this.closeReason;
+	}
+
+	public void setCloseType(String closeType) {
+		this.closeType = closeType;
+	}
+	public String getCloseType( ) {
+		return this.closeType;
 	}
 
 	public void setOpened(Boolean opened) {
@@ -64,6 +96,13 @@ public class AlipayPcreditHuabeiAffinitycardQueryResponse extends AlipayResponse
 	}
 	public String getTotalAmount( ) {
 		return this.totalAmount;
+	}
+
+	public void setUserProdAccountNo(String userProdAccountNo) {
+		this.userProdAccountNo = userProdAccountNo;
+	}
+	public String getUserProdAccountNo( ) {
+		return this.userProdAccountNo;
 	}
 
 }

@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceRentOrderPaySyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5482741493274567265L;
+	private static final long serialVersionUID = 1147547576475146247L;
 
 	/**
 	 * 租赁售后单号

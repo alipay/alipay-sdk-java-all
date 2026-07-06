@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 外部商户申请花呗额度劵
  *
  * @author auto create
- * @since 1.0, 2025-07-11 16:51:50
+ * @since 1.0, 2026-07-02 15:40:45
  */
 public class AlipayPcreditHuabeiAffinitycardApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3347644947926678523L;
+	private static final long serialVersionUID = 7895964642966262327L;
 
 	/**
 	 * 支付宝用户的userId
