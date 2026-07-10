@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 端外绑卡资格咨询接口
  *
  * @author auto create
- * @since 1.0, 2026-06-17 18:01:01
+ * @since 1.0, 2026-07-06 19:36:26
  */
 public class AlipayCommerceTransportEtccardBindConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7144815847138619175L;
+	private static final long serialVersionUID = 4186926943731832376L;
 
 	/**
 	 * 停车服务商id

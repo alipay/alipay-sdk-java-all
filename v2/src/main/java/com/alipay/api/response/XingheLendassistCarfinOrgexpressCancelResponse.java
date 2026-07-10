@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class XingheLendassistCarfinOrgexpressCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7364217165917617729L;
+	private static final long serialVersionUID = 8829367997756764259L;
 
 	/** 
 	 * 取消失败原因

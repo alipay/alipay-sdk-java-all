@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayIserviceIsresourceGrpquerybyclvgrpidsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6857161295989852125L;
+	private static final long serialVersionUID = 3339468174748365496L;
 
 	/**
 	 * 根据clv技能组id查询技能组信息

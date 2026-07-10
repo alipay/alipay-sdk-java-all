@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceLogisticsFreightflowTraderesultQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5137924127758899348L;
+	private static final long serialVersionUID = 6883115787269746934L;
 
 	/** 
 	 * 银行操作单号(查询时需要使用)

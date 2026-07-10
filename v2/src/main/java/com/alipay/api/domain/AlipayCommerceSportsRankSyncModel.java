@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceSportsRankSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6378192695115459799L;
+	private static final long serialVersionUID = 5519968323888897725L;
 
 	/**
 	 * 外部排行榜Id，用于区分不同场景下的排行榜信息

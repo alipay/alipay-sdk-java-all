@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 履约数据
  *
  * @author auto create
- * @since 1.0, 2026-07-03 17:57:56
+ * @since 1.0, 2026-07-10 11:37:55
  */
 public class FulfillmentDataInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3698917146481419876L;
+	private static final long serialVersionUID = 5698773851844245483L;
 
 	/**
 	 * 顾问数据
@@ -48,6 +48,12 @@ public class FulfillmentDataInfo extends AlipayObject {
 	 */
 	@ApiField("offline_escort_fulfillment_detail_data")
 	private OfflineEscortFulfillmentDetailData offlineEscortFulfillmentDetailData;
+
+	/**
+	 * 心理权益
+	 */
+	@ApiField("psychological_fulfillment_detail_data")
+	private PsychologicalFulfillmentDetailData psychologicalFulfillmentDetailData;
 
 	public AdvisorParam getAdvisor() {
 		return this.advisor;
@@ -89,6 +95,13 @@ public class FulfillmentDataInfo extends AlipayObject {
 	}
 	public void setOfflineEscortFulfillmentDetailData(OfflineEscortFulfillmentDetailData offlineEscortFulfillmentDetailData) {
 		this.offlineEscortFulfillmentDetailData = offlineEscortFulfillmentDetailData;
+	}
+
+	public PsychologicalFulfillmentDetailData getPsychologicalFulfillmentDetailData() {
+		return this.psychologicalFulfillmentDetailData;
+	}
+	public void setPsychologicalFulfillmentDetailData(PsychologicalFulfillmentDetailData psychologicalFulfillmentDetailData) {
+		this.psychologicalFulfillmentDetailData = psychologicalFulfillmentDetailData;
 	}
 
 }

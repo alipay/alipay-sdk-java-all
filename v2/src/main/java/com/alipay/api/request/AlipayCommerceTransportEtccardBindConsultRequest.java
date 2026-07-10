@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.etccard.bind.consult request
  * 
  * @author auto create
- * @since 1.0, 2026-06-17 18:02:55
+ * @since 1.0, 2026-07-06 19:37:57
  */
 public class AlipayCommerceTransportEtccardBindConsultRequest implements AlipayRequest<AlipayCommerceTransportEtccardBindConsultResponse> {
 

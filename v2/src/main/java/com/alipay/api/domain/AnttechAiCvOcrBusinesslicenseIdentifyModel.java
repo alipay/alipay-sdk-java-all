@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechAiCvOcrBusinesslicenseIdentifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8546388969262852491L;
+	private static final long serialVersionUID = 2235259852881214625L;
 
 	/**
 	 * 文件二进制内容 + base64

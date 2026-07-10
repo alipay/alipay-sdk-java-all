@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 健康健管平台文件流OSS上传
  *
  * @author auto create
- * @since 1.0, 2026-04-20 16:57:45
+ * @since 1.0, 2026-07-09 11:12:56
  */
 public class AlipayCommerceMedicalFileSteamUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2851116763121665136L;
+	private static final long serialVersionUID = 5139139628713362551L;
 
 	/**
 	 * 业务流水号，对应支付宝SAAS订单ID

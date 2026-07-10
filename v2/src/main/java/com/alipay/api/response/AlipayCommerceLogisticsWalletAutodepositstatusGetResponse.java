@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceLogisticsWalletAutodepositstatusGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1779721447549785936L;
+	private static final long serialVersionUID = 5869778967475427654L;
 
 	/** 
 	 * 钱包自动充值开通状态	

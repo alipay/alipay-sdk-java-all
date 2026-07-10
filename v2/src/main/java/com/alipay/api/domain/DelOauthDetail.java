@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DelOauthDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1228747654639571275L;
+	private static final long serialVersionUID = 7728644329515184833L;
 
 	/**
 	 * 数据入库的时间

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.file.steam.upload request
  * 
  * @author auto create
- * @since 1.0, 2026-04-20 16:57:45
+ * @since 1.0, 2026-07-09 11:12:56
  */
 public class AlipayCommerceMedicalFileSteamUploadRequest implements AlipayRequest<AlipayCommerceMedicalFileSteamUploadResponse> {
 

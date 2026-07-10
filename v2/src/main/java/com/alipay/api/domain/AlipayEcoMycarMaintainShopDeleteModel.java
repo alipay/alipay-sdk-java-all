@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoMycarMaintainShopDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1636774573192542293L;
+	private static final long serialVersionUID = 8539477476655652271L;
 
 	/**
 	 * 外部门店编号（与shop_id二选一，不能都为空）

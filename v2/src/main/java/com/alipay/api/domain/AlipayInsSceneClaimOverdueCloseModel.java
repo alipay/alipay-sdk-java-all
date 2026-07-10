@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayInsSceneClaimOverdueCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1126687743932976671L;
+	private static final long serialVersionUID = 6599654719355569618L;
 
 	/**
 	 * 赔案单号

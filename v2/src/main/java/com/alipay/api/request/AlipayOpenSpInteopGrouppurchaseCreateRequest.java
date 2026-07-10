@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.sp.inteop.grouppurchase.create request
  * 
  * @author auto create
- * @since 1.0, 2026-07-01 19:52:56
+ * @since 1.0, 2026-07-07 16:52:55
  */
 public class AlipayOpenSpInteopGrouppurchaseCreateRequest implements AlipayRequest<AlipayOpenSpInteopGrouppurchaseCreateResponse> {
 

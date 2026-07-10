@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RentCarVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2525457142434213741L;
+	private static final long serialVersionUID = 7639672283241251419L;
 
 	/**
 	 * 租车券的金额，单位分

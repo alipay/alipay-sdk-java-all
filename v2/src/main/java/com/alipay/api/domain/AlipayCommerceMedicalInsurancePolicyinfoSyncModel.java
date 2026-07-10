@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商保码-保单数据回流接口
  *
  * @author auto create
- * @since 1.0, 2026-05-14 11:49:35
+ * @since 1.0, 2026-07-07 14:32:41
  */
 public class AlipayCommerceMedicalInsurancePolicyinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7886273755929766956L;
+	private static final long serialVersionUID = 4791488988778391972L;
 
 	/**
 	 * 保司类型
@@ -126,6 +126,12 @@ YYYY-MM-DD HH:MM:SS
 	private String openId;
 
 	/**
+	 * 机构代码
+	 */
+	@ApiField("organization_code")
+	private String organizationCode;
+
+	/**
 	 * 支付时间 
 YYYY-MM-DD HH:MM:SS
 （新增必填）
@@ -193,6 +199,12 @@ YYYY-MM-DD HH:MM:SS
 	 */
 	@ApiField("product_scheme_code")
 	private String productSchemeCode;
+
+	/**
+	 * 销售方式
+	 */
+	@ApiField("sales_method")
+	private String salesMethod;
 
 	/**
 	 * 加油包场景会有主子保单
@@ -366,6 +378,13 @@ YYYY-MM-DD HH:MM:SS
 		this.openId = openId;
 	}
 
+	public String getOrganizationCode() {
+		return this.organizationCode;
+	}
+	public void setOrganizationCode(String organizationCode) {
+		this.organizationCode = organizationCode;
+	}
+
 	public Date getPayTime() {
 		return this.payTime;
 	}
@@ -434,6 +453,13 @@ YYYY-MM-DD HH:MM:SS
 	}
 	public void setProductSchemeCode(String productSchemeCode) {
 		this.productSchemeCode = productSchemeCode;
+	}
+
+	public String getSalesMethod() {
+		return this.salesMethod;
+	}
+	public void setSalesMethod(String salesMethod) {
+		this.salesMethod = salesMethod;
 	}
 
 	public String getSourcePolicyNo() {

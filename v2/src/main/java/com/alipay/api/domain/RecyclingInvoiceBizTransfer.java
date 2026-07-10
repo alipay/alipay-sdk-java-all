@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RecyclingInvoiceBizTransfer extends AlipayObject {
 
-	private static final long serialVersionUID = 2428577135861998735L;
+	private static final long serialVersionUID = 5661769648328645116L;
 
 	/**
 	 * 支付宝侧的支付流水号，转账成功后返回

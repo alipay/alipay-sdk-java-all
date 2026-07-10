@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MedicineHistory extends AlipayObject {
 
-	private static final long serialVersionUID = 4471841554154447158L;
+	private static final long serialVersionUID = 1418566293791674695L;
 
 	/**
 	 * 用药结束时间

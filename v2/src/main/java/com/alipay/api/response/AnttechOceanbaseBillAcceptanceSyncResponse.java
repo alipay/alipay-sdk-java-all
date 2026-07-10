@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.oceanbase.bill.acceptance.sync response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-07 15:56:48
+ * @since 1.0, 2026-07-07 15:12:50
  */
 public class AnttechOceanbaseBillAcceptanceSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4884965518658265871L;
+	private static final long serialVersionUID = 7762977679174541796L;
 
 	/** 
 	 * success字段写入失败为false时，需要通过errorMsg返回失败原因

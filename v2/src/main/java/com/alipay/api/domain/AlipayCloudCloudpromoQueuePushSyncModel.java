@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCloudCloudpromoQueuePushSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5796576524148315554L;
+	private static final long serialVersionUID = 8781964895445191233L;
 
 	/**
 	 * 该字段为客户spi要求，传入内容为加密后的文本。

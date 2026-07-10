@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.acommunication.mobile.tag.sync request
  * 
  * @author auto create
- * @since 1.0, 2026-02-04 09:32:42
+ * @since 1.0, 2026-07-09 15:22:53
  */
 public class AlipayCommerceAcommunicationMobileTagSyncRequest implements AlipayRequest<AlipayCommerceAcommunicationMobileTagSyncResponse> {
 

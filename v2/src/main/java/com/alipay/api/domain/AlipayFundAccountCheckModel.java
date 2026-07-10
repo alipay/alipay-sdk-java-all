@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundAccountCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2834293645421887486L;
+	private static final long serialVersionUID = 5859489724247465154L;
 
 	/**
 	 * 支付宝会员的登陆外标，仅支持邮箱或手机号

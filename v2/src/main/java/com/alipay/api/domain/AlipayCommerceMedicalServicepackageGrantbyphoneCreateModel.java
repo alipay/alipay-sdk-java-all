@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 通过手机号发放服务包
  *
  * @author auto create
- * @since 1.0, 2026-05-01 14:38:52
+ * @since 1.0, 2026-07-10 12:47:52
  */
 public class AlipayCommerceMedicalServicepackageGrantbyphoneCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5241644875772816175L;
+	private static final long serialVersionUID = 6486314852329536938L;
 
 	/**
 	 * 服务生效期限，单位天

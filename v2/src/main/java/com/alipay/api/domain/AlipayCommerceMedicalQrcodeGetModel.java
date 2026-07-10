@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalQrcodeGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5262111822918666663L;
+	private static final long serialVersionUID = 4215126245824562555L;
 
 	/**
 	 * 就诊人证件号

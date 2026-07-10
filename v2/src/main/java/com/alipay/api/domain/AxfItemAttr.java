@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 安心生活商品属性
  *
  * @author auto create
- * @since 1.0, 2026-02-25 13:45:55
+ * @since 1.0, 2026-07-10 13:44:57
  */
 public class AxfItemAttr extends AlipayObject {
 
-	private static final long serialVersionUID = 5284556958613114891L;
+	private static final long serialVersionUID = 2741482372775538154L;
 
 	/**
 	 * 商品属性key
@@ -36,6 +36,12 @@ public class AxfItemAttr extends AlipayObject {
 	 */
 	@ApiField("show_text")
 	private String showText;
+
+	/**
+	 * 用于说明属性单位。结合attr_value使用，如1月，1天，1年
+	 */
+	@ApiField("unit")
+	private String unit;
 
 	public String getAttrKey() {
 		return this.attrKey;
@@ -63,6 +69,13 @@ public class AxfItemAttr extends AlipayObject {
 	}
 	public void setShowText(String showText) {
 		this.showText = showText;
+	}
+
+	public String getUnit() {
+		return this.unit;
+	}
+	public void setUnit(String unit) {
+		this.unit = unit;
 	}
 
 }

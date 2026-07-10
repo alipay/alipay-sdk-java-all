@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class DatadigitalAicsDevinCallrecordQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3351651735993592124L;
+	private static final long serialVersionUID = 6675892791123749719L;
 
 	/** 
 	 * null

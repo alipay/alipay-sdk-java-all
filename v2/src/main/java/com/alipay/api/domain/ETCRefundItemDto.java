@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ETCRefundItemDto extends AlipayObject {
 
-	private static final long serialVersionUID = 3774594552624518646L;
+	private static final long serialVersionUID = 8251246886199793419L;
 
 	/**
 	 * 退款类目

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InpatientRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 6695275672621455734L;
+	private static final long serialVersionUID = 1462851341631382567L;
 
 	/**
 	 * 数据唯一标识，用于去重

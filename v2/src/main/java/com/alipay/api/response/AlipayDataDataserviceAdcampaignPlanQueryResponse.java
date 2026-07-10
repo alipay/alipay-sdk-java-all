@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.adcampaign.plan.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-04-10 14:12:45
+ * @since 1.0, 2026-07-07 11:54:22
  */
 public class AlipayDataDataserviceAdcampaignPlanQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5833527481579761668L;
+	private static final long serialVersionUID = 5467859983812125399L;
 
 	/** 
 	 * 计划日预算。单位：元【人民币】不限日预算时此值为空

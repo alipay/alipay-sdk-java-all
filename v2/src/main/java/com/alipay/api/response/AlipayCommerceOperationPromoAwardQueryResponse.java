@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.promo.award.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-06-29 18:07:55
+ * @since 1.0, 2026-07-08 17:39:48
  */
 public class AlipayCommerceOperationPromoAwardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3613229732949828165L;
+	private static final long serialVersionUID = 7141835578247897422L;
 
 	/** 
 	 * 激励金额，单位：分

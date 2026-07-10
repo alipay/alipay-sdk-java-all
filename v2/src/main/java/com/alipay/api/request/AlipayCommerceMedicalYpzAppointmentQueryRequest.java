@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.ypz.appointment.query request
  * 
  * @author auto create
- * @since 1.0, 2026-06-23 11:42:58
+ * @since 1.0, 2026-07-09 15:47:55
  */
 public class AlipayCommerceMedicalYpzAppointmentQueryRequest implements AlipayRequest<AlipayCommerceMedicalYpzAppointmentQueryResponse> {
 

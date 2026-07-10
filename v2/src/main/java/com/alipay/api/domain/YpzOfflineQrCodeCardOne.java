@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 线下物料卡
  *
  * @author auto create
- * @since 1.0, 2026-06-15 11:25:17
+ * @since 1.0, 2026-07-07 14:32:58
  */
 public class YpzOfflineQrCodeCardOne extends AlipayObject {
 
-	private static final long serialVersionUID = 3627478672894323271L;
+	private static final long serialVersionUID = 3212633539681666886L;
 
 	/**
 	 * 图片URL

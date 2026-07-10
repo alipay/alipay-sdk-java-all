@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.overseas.open.preorder.query request
  * 
  * @author auto create
- * @since 1.0, 2026-07-03 17:16:43
+ * @since 1.0, 2026-07-08 14:42:55
  */
 public class AlipayOverseasOpenPreorderQueryRequest implements AlipayRequest<AlipayOverseasOpenPreorderQueryResponse> {
 

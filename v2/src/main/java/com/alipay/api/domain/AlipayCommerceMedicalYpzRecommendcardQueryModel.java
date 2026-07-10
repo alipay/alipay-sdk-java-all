@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 云陪诊统一查询推荐卡片接口
  *
  * @author auto create
- * @since 1.0, 2026-06-15 11:25:17
+ * @since 1.0, 2026-07-07 14:32:58
  */
 public class AlipayCommerceMedicalYpzRecommendcardQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5412138194383769185L;
+	private static final long serialVersionUID = 5377562684298274134L;
 
 	/**
 	 * 就医数据唯一ID
@@ -24,6 +24,12 @@ public class AlipayCommerceMedicalYpzRecommendcardQueryModel extends AlipayObjec
 	 */
 	@ApiField("card_code")
 	private String cardCode;
+
+	/**
+	 * 查看病例详情url
+	 */
+	@ApiField("case_details_url")
+	private String caseDetailsUrl;
 
 	/**
 	 * 渠道信息
@@ -56,10 +62,28 @@ public class AlipayCommerceMedicalYpzRecommendcardQueryModel extends AlipayObjec
 	private String doctorName;
 
 	/**
+	 * 院区代码
+	 */
+	@ApiField("hos_code")
+	private String hosCode;
+
+	/**
 	 * 医院名称
 	 */
 	@ApiField("hospital_name")
 	private String hospitalName;
+
+	/**
+	 * 服务商编码
+	 */
+	@ApiField("isv_code")
+	private String isvCode;
+
+	/**
+	 * 小程序ID
+	 */
+	@ApiField("mini_app_id")
+	private String miniAppId;
 
 	/**
 	 * 平台openid
@@ -78,6 +102,12 @@ public class AlipayCommerceMedicalYpzRecommendcardQueryModel extends AlipayObjec
 	 */
 	@ApiField("org_name")
 	private String orgName;
+
+	/**
+	 * 就诊人id
+	 */
+	@ApiField("patient_id")
+	private String patientId;
 
 	/**
 	 * 投放渠道
@@ -129,6 +159,13 @@ public class AlipayCommerceMedicalYpzRecommendcardQueryModel extends AlipayObjec
 		this.cardCode = cardCode;
 	}
 
+	public String getCaseDetailsUrl() {
+		return this.caseDetailsUrl;
+	}
+	public void setCaseDetailsUrl(String caseDetailsUrl) {
+		this.caseDetailsUrl = caseDetailsUrl;
+	}
+
 	public String getChInfo() {
 		return this.chInfo;
 	}
@@ -164,11 +201,32 @@ public class AlipayCommerceMedicalYpzRecommendcardQueryModel extends AlipayObjec
 		this.doctorName = doctorName;
 	}
 
+	public String getHosCode() {
+		return this.hosCode;
+	}
+	public void setHosCode(String hosCode) {
+		this.hosCode = hosCode;
+	}
+
 	public String getHospitalName() {
 		return this.hospitalName;
 	}
 	public void setHospitalName(String hospitalName) {
 		this.hospitalName = hospitalName;
+	}
+
+	public String getIsvCode() {
+		return this.isvCode;
+	}
+	public void setIsvCode(String isvCode) {
+		this.isvCode = isvCode;
+	}
+
+	public String getMiniAppId() {
+		return this.miniAppId;
+	}
+	public void setMiniAppId(String miniAppId) {
+		this.miniAppId = miniAppId;
 	}
 
 	public String getOpenId() {
@@ -190,6 +248,13 @@ public class AlipayCommerceMedicalYpzRecommendcardQueryModel extends AlipayObjec
 	}
 	public void setOrgName(String orgName) {
 		this.orgName = orgName;
+	}
+
+	public String getPatientId() {
+		return this.patientId;
+	}
+	public void setPatientId(String patientId) {
+		this.patientId = patientId;
 	}
 
 	public String getSceneCode() {

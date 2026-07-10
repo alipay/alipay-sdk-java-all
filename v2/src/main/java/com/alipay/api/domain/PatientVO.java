@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PatientVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2549757563833863554L;
+	private static final long serialVersionUID = 4156751442519525922L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识

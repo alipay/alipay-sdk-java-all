@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class DspAppDownload extends AlipayObject {
 
-	private static final long serialVersionUID = 5678694295289436237L;
+	private static final long serialVersionUID = 1616673694515168684L;
 
 	/**
 	 * 应用下载扩展

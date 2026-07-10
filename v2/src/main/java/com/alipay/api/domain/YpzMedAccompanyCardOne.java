@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 线下陪诊卡
  *
  * @author auto create
- * @since 1.0, 2026-06-15 11:25:17
+ * @since 1.0, 2026-07-07 14:32:58
  */
 public class YpzMedAccompanyCardOne extends AlipayObject {
 
-	private static final long serialVersionUID = 3155538176827443411L;
+	private static final long serialVersionUID = 8174656868659289733L;
 
 	/**
 	 * 陪诊师名字

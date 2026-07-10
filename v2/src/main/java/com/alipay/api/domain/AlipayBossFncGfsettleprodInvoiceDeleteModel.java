@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayBossFncGfsettleprodInvoiceDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2865212764489554869L;
+	private static final long serialVersionUID = 4799595126629626198L;
 
 	/**
 	 * 发票操作对象

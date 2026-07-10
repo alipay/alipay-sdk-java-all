@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenPublicMatchuserLabelDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8885791682321523554L;
+	private static final long serialVersionUID = 3737196226358576893L;
 
 	/** 
 	 * 用户打标失败数量

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * Saas履约单查询返回数据结果字段
  *
  * @author auto create
- * @since 1.0, 2026-06-26 10:16:55
+ * @since 1.0, 2026-07-10 11:10:21
  */
 public class FulfillmentBizInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5822641885372179659L;
+	private static final long serialVersionUID = 5564416834661553256L;
 
 	/**
 	 * 顾问类数据
@@ -48,6 +48,12 @@ public class FulfillmentBizInfo extends AlipayObject {
 	 */
 	@ApiField("nursing")
 	private NursingVO nursing;
+
+	/**
+	 * 心理权益
+	 */
+	@ApiField("psychological")
+	private PsychologicalVO psychological;
 
 	public Advisory getAdvisory() {
 		return this.advisory;
@@ -89,6 +95,13 @@ public class FulfillmentBizInfo extends AlipayObject {
 	}
 	public void setNursing(NursingVO nursing) {
 		this.nursing = nursing;
+	}
+
+	public PsychologicalVO getPsychological() {
+		return this.psychological;
+	}
+	public void setPsychological(PsychologicalVO psychological) {
+		this.psychological = psychological;
 	}
 
 }

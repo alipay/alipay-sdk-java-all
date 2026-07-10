@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceHdfServicerightCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7414711986998811679L;
+	private static final long serialVersionUID = 5461383147943812436L;
 
 	/** 
 	 * 业务身份

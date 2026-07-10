@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFincoreComplianceRcservcenterRcsmartConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4199772634546199549L;
+	private static final long serialVersionUID = 3523542638478619843L;
 
 	/** 
 	 * 工单维度打标返回值

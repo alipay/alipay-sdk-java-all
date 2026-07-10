@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开发当面付付款码解码
  *
  * @author auto create
- * @since 1.0, 2024-05-17 14:36:26
+ * @since 1.0, 2026-07-06 22:01:18
  */
 public class AlipayMarketingFacetofaceDecodeUseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7582233412686285367L;
+	private static final long serialVersionUID = 8693814852615599534L;
 
 	/**
 	 * 付款码码值

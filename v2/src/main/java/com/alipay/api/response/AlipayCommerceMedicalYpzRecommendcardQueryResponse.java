@@ -1,7 +1,11 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.YpzAfuDownloadCardOne;
+import com.alipay.api.domain.YpzCloudDispenseMedicineCardOne;
+import com.alipay.api.domain.YpzCloudDispenseMedicineHomeCardOne;
 import com.alipay.api.domain.YpzDoctorAgentCardOne;
 import com.alipay.api.domain.YpzMedAccompanyCardOne;
 import com.alipay.api.domain.YpzNpsCardOne;
@@ -14,17 +18,30 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.ypz.recommendcard.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-06-15 11:25:17
+ * @since 1.0, 2026-07-07 14:32:58
  */
 public class AlipayCommerceMedicalYpzRecommendcardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7617979958281612876L;
+	private static final long serialVersionUID = 4291874474182657829L;
 
 	/** 
 	 * 阿福带下载卡
 	 */
 	@ApiField("afu_download_card")
 	private YpzAfuDownloadCardOne afuDownloadCard;
+
+	/** 
+	 * 云陪诊云配药卡
+	 */
+	@ApiField("cloud_dispense_medicine_card")
+	private YpzCloudDispenseMedicineCardOne cloudDispenseMedicineCard;
+
+	/** 
+	 * null
+	 */
+	@ApiListField("cloud_dispense_medicine_home_card")
+	@ApiField("ypz_cloud_dispense_medicine_home_card_one")
+	private List<YpzCloudDispenseMedicineHomeCardOne> cloudDispenseMedicineHomeCard;
 
 	/** 
 	 * 投放类型
@@ -67,6 +84,20 @@ public class AlipayCommerceMedicalYpzRecommendcardQueryResponse extends AlipayRe
 	}
 	public YpzAfuDownloadCardOne getAfuDownloadCard( ) {
 		return this.afuDownloadCard;
+	}
+
+	public void setCloudDispenseMedicineCard(YpzCloudDispenseMedicineCardOne cloudDispenseMedicineCard) {
+		this.cloudDispenseMedicineCard = cloudDispenseMedicineCard;
+	}
+	public YpzCloudDispenseMedicineCardOne getCloudDispenseMedicineCard( ) {
+		return this.cloudDispenseMedicineCard;
+	}
+
+	public void setCloudDispenseMedicineHomeCard(List<YpzCloudDispenseMedicineHomeCardOne> cloudDispenseMedicineHomeCard) {
+		this.cloudDispenseMedicineHomeCard = cloudDispenseMedicineHomeCard;
+	}
+	public List<YpzCloudDispenseMedicineHomeCardOne> getCloudDispenseMedicineHomeCard( ) {
+		return this.cloudDispenseMedicineHomeCard;
 	}
 
 	public void setDeliveryType(String deliveryType) {

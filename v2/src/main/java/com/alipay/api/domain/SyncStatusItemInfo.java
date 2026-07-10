@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SyncStatusItemInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7171341742652399425L;
+	private static final long serialVersionUID = 7854556386834672597L;
 
 	/**
 	 * 预约截止时间

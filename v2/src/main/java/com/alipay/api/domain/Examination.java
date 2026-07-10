@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 履约检查检验数据
  *
  * @author auto create
- * @since 1.0, 2026-05-18 20:22:39
+ * @since 1.0, 2026-07-09 10:44:42
  */
 public class Examination extends AlipayObject {
 
-	private static final long serialVersionUID = 8637893624747585345L;
+	private static final long serialVersionUID = 3764783113695432914L;
 
 	/**
 	 * 应用id
@@ -70,10 +70,23 @@ public class Examination extends AlipayObject {
 	private List<ExaminationItemVO> items;
 
 	/**
+	 * 订单金额信息
+	 */
+	@ApiField("order_amount_info")
+	private OrderAmountInfo orderAmountInfo;
+
+	/**
 	 * SAAS的订单号
 	 */
 	@ApiField("order_no")
 	private String orderNo;
+
+	/**
+	 * 就诊人信息
+	 */
+	@ApiListField("patient_infos")
+	@ApiField("patient_info_for_fulfillment_list")
+	private List<PatientInfoForFulfillmentList> patientInfos;
 
 	/**
 	 * 支付信息
@@ -172,11 +185,25 @@ public class Examination extends AlipayObject {
 		this.items = items;
 	}
 
+	public OrderAmountInfo getOrderAmountInfo() {
+		return this.orderAmountInfo;
+	}
+	public void setOrderAmountInfo(OrderAmountInfo orderAmountInfo) {
+		this.orderAmountInfo = orderAmountInfo;
+	}
+
 	public String getOrderNo() {
 		return this.orderNo;
 	}
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
+	}
+
+	public List<PatientInfoForFulfillmentList> getPatientInfos() {
+		return this.patientInfos;
+	}
+	public void setPatientInfos(List<PatientInfoForFulfillmentList> patientInfos) {
+		this.patientInfos = patientInfos;
 	}
 
 	public ExaminationPayInfo getPayInfo() {

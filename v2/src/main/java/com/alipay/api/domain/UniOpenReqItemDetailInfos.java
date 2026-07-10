@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class UniOpenReqItemDetailInfos extends AlipayObject {
 
-	private static final long serialVersionUID = 6559584135587561557L;
+	private static final long serialVersionUID = 8792668395995478418L;
 
 	/**
 	 * default_settle_type为空，默认为alipayAccount，结算账号默认为支付宝余额户；

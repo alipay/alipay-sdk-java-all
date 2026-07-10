@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DtAudioInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4838739412173714974L;
+	private static final long serialVersionUID = 4253839737954471677L;
 
 	/**
 	 * 录音结束时间

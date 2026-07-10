@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-06-25 11:17:57
+ * @since 1.0, 2026-07-10 14:12:53
  */
 public class AxfItemAttrTemplate extends AlipayObject {
 
-	private static final long serialVersionUID = 2236833153323565759L;
+	private static final long serialVersionUID = 6711763136951145132L;
 
 	/**
 	 * 属性说明
@@ -76,6 +76,13 @@ public class AxfItemAttrTemplate extends AlipayObject {
 	 */
 	@ApiField("required")
 	private Boolean required;
+
+	/**
+	 * null
+	 */
+	@ApiListField("unit")
+	@ApiField("string")
+	private List<String> unit;
 
 	public String getAttrDesc() {
 		return this.attrDesc;
@@ -145,6 +152,13 @@ public class AxfItemAttrTemplate extends AlipayObject {
 	}
 	public void setRequired(Boolean required) {
 		this.required = required;
+	}
+
+	public List<String> getUnit() {
+		return this.unit;
+	}
+	public void setUnit(List<String> unit) {
+		this.unit = unit;
 	}
 
 }

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class OpenApiEventReportCommRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 5822643653958216572L;
+	private static final long serialVersionUID = 1451985175537756163L;
 
 	/**
 	 * 由于自定义报表分析接口数据查询较大，如果查询的入参时间跨度较大，接口返回容易超时，故会返回此字段，用于带入下一次的同接口查询。

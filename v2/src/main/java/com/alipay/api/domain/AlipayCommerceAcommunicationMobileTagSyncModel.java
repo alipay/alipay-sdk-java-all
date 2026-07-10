@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 运营商行业手机号标签同步
  *
  * @author auto create
- * @since 1.0, 2026-02-04 09:32:42
+ * @since 1.0, 2026-07-09 15:22:53
  */
 public class AlipayCommerceAcommunicationMobileTagSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6669845324293519878L;
+	private static final long serialVersionUID = 8755766178961477887L;
 
 	/**
 	 * 是否绑定了AI

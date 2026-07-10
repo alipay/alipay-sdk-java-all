@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.aipay.agent.fulfillment.confirm response.
  * 
  * @author auto create
- * @since 1.0, 2026-04-09 19:12:45
+ * @since 1.0, 2026-07-07 12:22:56
  */
 public class AlipayAipayAgentFulfillmentConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2877353765622543113L;
+	private static final long serialVersionUID = 2877716317184435192L;
 
 	/** 
 	 * 支付宝交易号

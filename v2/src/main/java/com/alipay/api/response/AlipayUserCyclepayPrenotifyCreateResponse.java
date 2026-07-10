@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.cyclepay.prenotify.create response.
  * 
  * @author auto create
- * @since 1.0, 2026-04-20 20:52:45
+ * @since 1.0, 2026-07-08 17:27:55
  */
 public class AlipayUserCyclepayPrenotifyCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7173119126129142953L;
+	private static final long serialVersionUID = 3491816354853266738L;
 
 	/** 
 	 * 商户代扣扣款许可生效结束时间

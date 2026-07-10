@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * A2A商家履约回执确认
  *
  * @author auto create
- * @since 1.0, 2026-04-09 19:12:45
+ * @since 1.0, 2026-07-07 12:22:56
  */
 public class AlipayAipayAgentFulfillmentConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7524458681216581514L;
+	private static final long serialVersionUID = 7277155953421464991L;
 
 	/**
 	 * 支付宝交易号

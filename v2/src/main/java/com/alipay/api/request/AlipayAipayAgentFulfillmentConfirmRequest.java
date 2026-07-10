@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.aipay.agent.fulfillment.confirm request
  * 
  * @author auto create
- * @since 1.0, 2026-04-09 19:12:45
+ * @since 1.0, 2026-07-07 12:22:56
  */
 public class AlipayAipayAgentFulfillmentConfirmRequest implements AlipayRequest<AlipayAipayAgentFulfillmentConfirmResponse> {
 

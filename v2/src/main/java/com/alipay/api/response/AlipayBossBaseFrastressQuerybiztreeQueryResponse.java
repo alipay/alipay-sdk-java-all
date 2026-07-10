@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBossBaseFrastressQuerybiztreeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6564935282449818799L;
+	private static final long serialVersionUID = 5717178867555875973L;
 
 	/** 
 	 * BizTreeNode

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class SaleForceCompetitorDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6171452662628775363L;
+	private static final long serialVersionUID = 5558511714512227828L;
 
 	/**
 	 * null

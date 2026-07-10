@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 蚂蚁健康用户医生签约状态数据同步
  *
  * @author auto create
- * @since 1.0, 2026-06-24 14:25:09
+ * @since 1.0, 2026-07-09 14:47:53
  */
 public class AlipayCommerceMedicalUserHomedoctorSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8139265925227869929L;
+	private static final long serialVersionUID = 2544993571163497778L;
 
 	/**
 	 * 蚂蚁健康用户的openId
@@ -26,6 +26,12 @@ public class AlipayCommerceMedicalUserHomedoctorSyncModel extends AlipayObject {
 	 */
 	@ApiField("district_code")
 	private String districtCode;
+
+	/**
+	 * 医生的蚂蚁健康openId
+	 */
+	@ApiField("doctor_aq_open_id")
+	private String doctorAqOpenId;
 
 	/**
 	 * 签约医生的身份证号(签约状态为居民已完成、医生签署中、医生已完成的必填)
@@ -166,6 +172,13 @@ public class AlipayCommerceMedicalUserHomedoctorSyncModel extends AlipayObject {
 	}
 	public void setDistrictCode(String districtCode) {
 		this.districtCode = districtCode;
+	}
+
+	public String getDoctorAqOpenId() {
+		return this.doctorAqOpenId;
+	}
+	public void setDoctorAqOpenId(String doctorAqOpenId) {
+		this.doctorAqOpenId = doctorAqOpenId;
 	}
 
 	public String getDoctorCertNo() {

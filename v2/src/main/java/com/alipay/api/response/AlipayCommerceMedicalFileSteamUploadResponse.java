@@ -8,17 +8,30 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.file.steam.upload response.
  * 
  * @author auto create
- * @since 1.0, 2026-04-20 16:57:45
+ * @since 1.0, 2026-07-09 11:12:56
  */
 public class AlipayCommerceMedicalFileSteamUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5491637148144888652L;
+	private static final long serialVersionUID = 3785838978416222843L;
+
+	/** 
+	 * 文件id
+	 */
+	@ApiField("file_id")
+	private String fileId;
 
 	/** 
 	 * 文件访问url
 	 */
 	@ApiField("file_url")
 	private String fileUrl;
+
+	public void setFileId(String fileId) {
+		this.fileId = fileId;
+	}
+	public String getFileId( ) {
+		return this.fileId;
+	}
 
 	public void setFileUrl(String fileUrl) {
 		this.fileUrl = fileUrl;

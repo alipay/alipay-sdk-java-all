@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceHotelVerifyNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8591449749815413983L;
+	private static final long serialVersionUID = 1816172391597988187L;
 
 	/**
 	 * 设备唯一id

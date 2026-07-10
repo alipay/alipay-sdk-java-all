@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-06-23 11:40:24
+ * @since 1.0, 2026-07-09 15:50:46
  */
 public class YpzSdkEventProblemDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6861143742585987933L;
+	private static final long serialVersionUID = 5193387128748413682L;
 
 	/**
 	 * 预约编号
@@ -48,6 +48,12 @@ public class YpzSdkEventProblemDTO extends AlipayObject {
 	 */
 	@ApiField("event_code")
 	private String eventCode;
+
+	/**
+	 * 事件标识
+	 */
+	@ApiField("event_identifier")
+	private String eventIdentifier;
 
 	/**
 	 * 事件名称
@@ -149,6 +155,13 @@ public class YpzSdkEventProblemDTO extends AlipayObject {
 	}
 	public void setEventCode(String eventCode) {
 		this.eventCode = eventCode;
+	}
+
+	public String getEventIdentifier() {
+		return this.eventIdentifier;
+	}
+	public void setEventIdentifier(String eventIdentifier) {
+		this.eventIdentifier = eventIdentifier;
 	}
 
 	public String getEventName() {

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 机构智能体SDK质控看板挂号记录问题清单查询
  *
  * @author auto create
- * @since 1.0, 2026-06-23 11:40:24
+ * @since 1.0, 2026-07-09 15:50:46
  */
 public class AlipayCommerceMedicalYpzRegistrationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7259159679764421223L;
+	private static final long serialVersionUID = 3123792464684261834L;
 
 	/**
 	 * 结束时间

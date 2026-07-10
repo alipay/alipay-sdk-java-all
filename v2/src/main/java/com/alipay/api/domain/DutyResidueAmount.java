@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DutyResidueAmount extends AlipayObject {
 
-	private static final long serialVersionUID = 3146817748223735766L;
+	private static final long serialVersionUID = 7662883186381136392L;
 
 	/**
 	 * 保障详情

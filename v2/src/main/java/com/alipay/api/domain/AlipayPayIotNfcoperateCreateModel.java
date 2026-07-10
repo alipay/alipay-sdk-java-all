@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayPayIotNfcoperateCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7211615374389474751L;
+	private static final long serialVersionUID = 3436136421725855755L;
 
 	/**
 	 * 设备id集合

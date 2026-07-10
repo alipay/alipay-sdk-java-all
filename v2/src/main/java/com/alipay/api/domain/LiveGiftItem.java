@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LiveGiftItem extends AlipayObject {
 
-	private static final long serialVersionUID = 6379577337484699427L;
+	private static final long serialVersionUID = 3778142878281843483L;
 
 	/**
 	 * 礼物图标
