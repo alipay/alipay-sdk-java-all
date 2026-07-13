@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SettlementStrategyDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2854553665747121575L;
+	private static final long serialVersionUID = 7347445833343712267L;
 
 	/**
 	 * 结算币种

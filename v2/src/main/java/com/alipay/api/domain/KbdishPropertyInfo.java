@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class KbdishPropertyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3389642389111533323L;
+	private static final long serialVersionUID = 2866548621659135682L;
 
 	/**
 	 * “属性最多可选数”，默认为1，与“属性最少可选数”同时为空或同时非空，不能为0，数值不能大于销售属性值的数量，即property_value_info_list的长度

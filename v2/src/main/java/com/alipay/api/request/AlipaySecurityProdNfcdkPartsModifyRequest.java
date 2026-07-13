@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.prod.nfcdk.parts.modify request
  * 
  * @author auto create
- * @since 1.0, 2025-10-28 10:02:41
+ * @since 1.0, 2026-07-13 10:26:11
  */
 public class AlipaySecurityProdNfcdkPartsModifyRequest implements AlipayRequest<AlipaySecurityProdNfcdkPartsModifyResponse> {
 

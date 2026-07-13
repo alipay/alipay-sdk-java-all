@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DatadigitalAicsDevinOneaudioQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7782431731834654364L;
+	private static final long serialVersionUID = 4517311212183966166L;
 
 	/**
 	 * acid，从通话记录获取

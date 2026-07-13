@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OrderTimestampInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4411325622424245253L;
+	private static final long serialVersionUID = 5155716982988163821L;
 
 	/**
 	 * 订单取消时间

@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * null
  *
  * @author auto create
- * @since 1.0, 2026-06-23 15:07:56
+ * @since 1.0, 2026-07-13 10:32:53
  */
 public class AxfItemCategoryVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2211165183169364853L;
+	private static final long serialVersionUID = 3299486427758182423L;
 
 	/**
 	 * 类目编码
@@ -44,10 +47,11 @@ public class AxfItemCategoryVO extends AlipayObject {
 	private String parentCategoryCode;
 
 	/**
-	 * 所需资质信息
+	 * null
 	 */
-	@ApiField("required_qualifications")
-	private AxfItemCategoryQualificationVO requiredQualifications;
+	@ApiListField("required_qualifications")
+	@ApiField("axf_item_category_qualification_v_o")
+	private List<AxfItemCategoryQualificationVO> requiredQualifications;
 
 	public String getCategoryCode() {
 		return this.categoryCode;
@@ -84,10 +88,10 @@ public class AxfItemCategoryVO extends AlipayObject {
 		this.parentCategoryCode = parentCategoryCode;
 	}
 
-	public AxfItemCategoryQualificationVO getRequiredQualifications() {
+	public List<AxfItemCategoryQualificationVO> getRequiredQualifications() {
 		return this.requiredQualifications;
 	}
-	public void setRequiredQualifications(AxfItemCategoryQualificationVO requiredQualifications) {
+	public void setRequiredQualifications(List<AxfItemCategoryQualificationVO> requiredQualifications) {
 		this.requiredQualifications = requiredQualifications;
 	}
 

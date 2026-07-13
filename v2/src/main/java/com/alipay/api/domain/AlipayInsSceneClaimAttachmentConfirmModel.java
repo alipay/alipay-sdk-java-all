@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayInsSceneClaimAttachmentConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7644872162928511393L;
+	private static final long serialVersionUID = 3322785713451632433L;
 
 	/**
 	 * 理赔申请报案号，通过理赔申请【alipay.ins.scene.claim.apply】接口的返回字段claim_report_no获取

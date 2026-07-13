@@ -18,7 +18,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingBenefitaccountAccountQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2547972188575917346L;
+	private static final long serialVersionUID = 7773698584767914725L;
 
 	/** 
 	 * 权益账户号

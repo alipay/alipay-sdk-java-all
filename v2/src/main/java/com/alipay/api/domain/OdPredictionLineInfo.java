@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class OdPredictionLineInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5138925215293981453L;
+	private static final long serialVersionUID = 4824146384711335824L;
 
 	/**
 	 * 客流预测任务对当前线路的操作类型,CREATE/UPDATE/DELETE

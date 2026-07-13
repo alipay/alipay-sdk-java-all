@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PayInfoBean extends AlipayObject {
 
-	private static final long serialVersionUID = 5425968497446136497L;
+	private static final long serialVersionUID = 8696117855241564593L;
 
 	/**
 	 * 支付完成时间,格式yyyyMMddHHMMSS，如2009年12月25日9点10分10秒

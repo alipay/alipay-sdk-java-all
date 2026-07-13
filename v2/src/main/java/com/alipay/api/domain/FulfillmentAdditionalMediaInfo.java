@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FulfillmentAdditionalMediaInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1751714693648273823L;
+	private static final long serialVersionUID = 3223476529483945647L;
 
 	/**
 	 * 补充凭证类型。FACE_SIGN_PDF 面签、FACE_ACTIVE_JPG_LIST 激活、ELECTRONIC_SIGNATURE 签收底单、FACE_DOCUMENT 面单、ROUTE_TRACKING 路由轨迹、ELECTRONIC_STUB 电子存根、RENT_CONTRACT 租赁合同

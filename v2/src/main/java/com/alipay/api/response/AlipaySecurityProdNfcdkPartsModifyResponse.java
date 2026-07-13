@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.prod.nfcdk.parts.modify response.
  * 
  * @author auto create
- * @since 1.0, 2025-10-28 10:02:41
+ * @since 1.0, 2026-07-13 10:26:11
  */
 public class AlipaySecurityProdNfcdkPartsModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6397992449737735927L;
+	private static final long serialVersionUID = 2633554435267875222L;
 
 	
 

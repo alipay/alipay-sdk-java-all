@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayVoyagerUserInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4141496231619949842L;
+	private static final long serialVersionUID = 4696895536319329313L;
 
 	/** 
 	 * Voyager基础用户信息

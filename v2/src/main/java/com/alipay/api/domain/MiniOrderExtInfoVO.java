@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MiniOrderExtInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4589888239249294749L;
+	private static final long serialVersionUID = 2452661549492812545L;
 
 	/**
 	 * 买家备注

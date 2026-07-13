@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudTraasCloudriskRentriskQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4183482241263533713L;
+	private static final long serialVersionUID = 5158887849284539298L;
 
 	/** 
 	 * 风险咨询事件ID

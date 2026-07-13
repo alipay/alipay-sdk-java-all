@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EtcInoviceTradeList extends AlipayObject {
 
-	private static final long serialVersionUID = 2864964394622839225L;
+	private static final long serialVersionUID = 8488214784375328289L;
 
 	/**
 	 * 税额（可抵扣金额）单位：分

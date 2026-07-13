@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.lifeservice.category.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2026-06-23 15:07:56
+ * @since 1.0, 2026-07-13 10:32:53
  */
 public class AlipayCommerceLifeserviceCategoryBatchqueryRequest implements AlipayRequest<AlipayCommerceLifeserviceCategoryBatchqueryResponse> {
 

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KoubeiCateringSmartstoreDataSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2253353171738763634L;
+	private static final long serialVersionUID = 4492765547362931413L;
 
 	/**
 	 * 烘焙商品操作模型，如果是传输烘焙商品操作数据，此模型需要赋值，其他业务无需关心此字段

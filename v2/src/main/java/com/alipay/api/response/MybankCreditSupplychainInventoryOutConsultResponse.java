@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankCreditSupplychainInventoryOutConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8294346279648994799L;
+	private static final long serialVersionUID = 6678477553843361777L;
 
 	/** 
 	 * 警戒额度

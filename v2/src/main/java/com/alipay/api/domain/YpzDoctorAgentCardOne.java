@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class YpzDoctorAgentCardOne extends AlipayObject {
 
-	private static final long serialVersionUID = 1372916413295431546L;
+	private static final long serialVersionUID = 4777318874114649392L;
 
 	/**
 	 * 智能助手功能描述

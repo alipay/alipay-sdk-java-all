@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BizCard extends AlipayObject {
 
-	private static final long serialVersionUID = 7261951687658453677L;
+	private static final long serialVersionUID = 6343423923475919896L;
 
 	/**
 	 * 卡生效日期

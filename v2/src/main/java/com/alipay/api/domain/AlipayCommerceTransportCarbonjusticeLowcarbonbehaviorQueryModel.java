@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportCarbonjusticeLowcarbonbehaviorQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2894172121734426467L;
+	private static final long serialVersionUID = 5678163987452915926L;
 
 	/**
 	 * 城市编码，与城市名二选一必须有一个。比cityName更标准，在接入前确认传参。

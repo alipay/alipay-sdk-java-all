@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalInsuranceTpadepositRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8487924939759418736L;
+	private static final long serialVersionUID = 2849671886732169799L;
 
 	/**
 	 * 用户ID

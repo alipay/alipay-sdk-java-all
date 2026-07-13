@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantIsvhelpEntryCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7169192776664166295L;
+	private static final long serialVersionUID = 6237924383851914163L;
 
 	/**
 	 * 受益人是否是法人。如果是，则受益人信息可以不用填写

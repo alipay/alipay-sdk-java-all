@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CarfinFundingInst extends AlipayObject {
 
-	private static final long serialVersionUID = 1786519332582115634L;
+	private static final long serialVersionUID = 6589187184293698694L;
 
 	/**
 	 * 出资机构名称

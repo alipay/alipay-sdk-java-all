@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenSpNordermaterialsapplyMaterialsCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7183611279894227392L;
+	private static final long serialVersionUID = 7486925273114839668L;
 
 	/** 
 	 * 成立成功的二维码链接，与入参对应

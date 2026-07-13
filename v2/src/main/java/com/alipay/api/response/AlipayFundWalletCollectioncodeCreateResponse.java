@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundWalletCollectioncodeCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5189747518775943742L;
+	private static final long serialVersionUID = 1748938184287634112L;
 
 	/** 
 	 * 获取的收款二维码跳转地址

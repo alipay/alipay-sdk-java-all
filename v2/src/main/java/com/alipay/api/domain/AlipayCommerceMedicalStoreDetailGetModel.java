@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceMedicalStoreDetailGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7867233659837176695L;
+	private static final long serialVersionUID = 2481751469494393381L;
 
 	/**
 	 * 支持传多个门店批量查询，一次调用可上传100个门店id，可通过接口alipay.commerce.medical.store.codelist.get获取商家入驻成功的所有门店编码

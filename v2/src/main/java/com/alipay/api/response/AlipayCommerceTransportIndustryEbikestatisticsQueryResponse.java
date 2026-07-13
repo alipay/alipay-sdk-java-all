@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportIndustryEbikestatisticsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1425957595698129349L;
+	private static final long serialVersionUID = 3489117335811356359L;
 
 	/** 
 	 * query_type=month，date_str格式为yyyyMM； query_type=day，date_str格式为yyyyMMdd

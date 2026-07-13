@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceLogisticsFreightflowPayerwhitelistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3291996344838251751L;
+	private static final long serialVersionUID = 7355429568378969669L;
 
 	/**
 	 * 白名单中的单个元素类型不填时，则把owner_account_no下面所有的白名单列表返回，如填写则按照此类型过滤

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOfflineProviderVerifyphotoNpassporterQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3692352598584748486L;
+	private static final long serialVersionUID = 6338352418659747167L;
 
 	/**
 	 * 字符串

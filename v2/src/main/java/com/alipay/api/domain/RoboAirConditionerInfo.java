@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RoboAirConditionerInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6382272823138277428L;
+	private static final long serialVersionUID = 1429999145545643581L;
 
 	/**
 	 * 是否有空调能力，1无，2有

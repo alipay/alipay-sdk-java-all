@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PushChannelDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3771333769982685184L;
+	private static final long serialVersionUID = 4292363846773142795L;
 
 	/**
 	 * 本次请求的业务id，业务方提供

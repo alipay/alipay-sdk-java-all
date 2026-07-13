@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserSafeboxConditionQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4126719643683814476L;
+	private static final long serialVersionUID = 2543839523986749662L;
 
 	/** 
 	 * 产品是否紧急下线状态。true：紧急下线，false：未紧急下线。

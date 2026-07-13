@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommercePropertyVideocallRoomCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4259557243619733882L;
+	private static final long serialVersionUID = 1441642165289319199L;
 
 	/**
 	 * 如果typeList有天猫精灵，则deviceId必传

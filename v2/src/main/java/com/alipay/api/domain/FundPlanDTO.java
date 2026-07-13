@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FundPlanDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7668973498673634782L;
+	private static final long serialVersionUID = 8281121523124451992L;
 
 	/**
 	 * 合花群ID（与当前请求参数中传入值保持一致）

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMedicalAuthTokenCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5492269214911592512L;
+	private static final long serialVersionUID = 6871366688944571478L;
 
 	/** 
 	 * 蚂蚁阿福访问令牌。通过该令牌调用需要授权接口

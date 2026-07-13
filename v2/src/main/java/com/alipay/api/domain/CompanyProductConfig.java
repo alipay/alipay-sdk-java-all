@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CompanyProductConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 2876972589148762535L;
+	private static final long serialVersionUID = 6393432917713112152L;
 
 	/**
 	 * 字段为Y时，扫码关联的订单在自然人确认后，会邀约自然人成为供应商，前提自然人非当前企业的供应商 字段默认为N
