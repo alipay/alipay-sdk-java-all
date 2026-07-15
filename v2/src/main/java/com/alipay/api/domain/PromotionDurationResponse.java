@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PromotionDurationResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 1758914795196911733L;
+	private static final long serialVersionUID = 5896347127129466219L;
 
 	/**
 	 * 时段列表，如：01:00:00-02:00:00，代表1点到2点

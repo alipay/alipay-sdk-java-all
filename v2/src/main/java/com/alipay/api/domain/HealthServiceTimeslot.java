@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HealthServiceTimeslot extends AlipayObject {
 
-	private static final long serialVersionUID = 5675581951344272482L;
+	private static final long serialVersionUID = 8234154536631476987L;
 
 	/**
 	 * 时间段结束时间

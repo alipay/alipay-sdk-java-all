@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LogisticsSnVerifyFailDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 6567148779149736877L;
+	private static final long serialVersionUID = 7341411775172161983L;
 
 	/**
 	 * 失败原因

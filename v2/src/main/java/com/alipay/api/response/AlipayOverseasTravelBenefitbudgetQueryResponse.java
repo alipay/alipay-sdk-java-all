@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOverseasTravelBenefitbudgetQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6746954284739935828L;
+	private static final long serialVersionUID = 3635995766455944486L;
 
 	/** 
 	 * 预算详情列表

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ClaimStrategy extends AlipayObject {
 
-	private static final long serialVersionUID = 6328474361981189766L;
+	private static final long serialVersionUID = 5486664286976886183L;
 
 	/**
 	 * 事故类型事故类型:

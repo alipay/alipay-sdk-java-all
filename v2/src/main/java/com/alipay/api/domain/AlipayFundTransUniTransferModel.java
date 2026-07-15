@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝转账支付接口
  *
  * @author auto create
- * @since 1.0, 2026-06-24 17:19:06
+ * @since 1.0, 2026-07-13 19:30:16
  */
 public class AlipayFundTransUniTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5371151792841447599L;
+	private static final long serialVersionUID = 5549961568288516964L;
 
 	/**
 	 * 描述特定的业务场景，可传的参数如下：

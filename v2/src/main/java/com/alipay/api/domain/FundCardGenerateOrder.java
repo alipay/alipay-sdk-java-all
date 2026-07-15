@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FundCardGenerateOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 8169741168169886978L;
+	private static final long serialVersionUID = 4811527558652282455L;
 
 	/**
 	 * 卡面额，单位：元

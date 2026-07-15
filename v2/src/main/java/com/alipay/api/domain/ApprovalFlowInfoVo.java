@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ApprovalFlowInfoVo extends AlipayObject {
 
-	private static final long serialVersionUID = 5214517337353232995L;
+	private static final long serialVersionUID = 3677933722594632753L;
 
 	/**
 	 * 审批结果

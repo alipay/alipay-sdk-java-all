@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayAipayDelegationPcApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2354519181245668361L;
+	private static final long serialVersionUID = 3366281539983532845L;
 
 	/**
 	 * 【描述】请按当前接入的方式进行填充，且输入值必须为文档中的参数取值范围。

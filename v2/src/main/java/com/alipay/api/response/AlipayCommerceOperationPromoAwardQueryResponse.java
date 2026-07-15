@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.promo.award.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-07-08 17:39:48
+ * @since 1.0, 2026-07-13 16:52:51
  */
 public class AlipayCommerceOperationPromoAwardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6842788166966286964L;
+	private static final long serialVersionUID = 7687644695785973232L;
 
 	/** 
 	 * 激励金额，单位：分
@@ -40,6 +40,12 @@ public class AlipayCommerceOperationPromoAwardQueryResponse extends AlipayRespon
 	 */
 	@ApiField("sign_up_id")
 	private String signUpId;
+
+	/** 
+	 * 活动期间累计已发放激励（单位：分），与入参时间范围无关
+	 */
+	@ApiField("total_awarded_amount")
+	private Long totalAwardedAmount;
 
 	/** 
 	 * 总页数
@@ -86,6 +92,13 @@ public class AlipayCommerceOperationPromoAwardQueryResponse extends AlipayRespon
 	}
 	public String getSignUpId( ) {
 		return this.signUpId;
+	}
+
+	public void setTotalAwardedAmount(Long totalAwardedAmount) {
+		this.totalAwardedAmount = totalAwardedAmount;
+	}
+	public Long getTotalAwardedAmount( ) {
+		return this.totalAwardedAmount;
 	}
 
 	public void setTotalPage(Long totalPage) {

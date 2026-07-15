@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayTradeCommercialOrderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3589319913752223597L;
+	private static final long serialVersionUID = 7347459549761376743L;
 
 	/** 
 	 * 本次支付的收银台地址，可用于302跳转

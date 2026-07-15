@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-06-24 17:58:50
+ * @since 1.0, 2026-07-14 14:14:39
  */
 public class QuestionInfoOpenapiResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 3365583749121664584L;
+	private static final long serialVersionUID = 5373151235316467895L;
 
 	/**
 	 * 答案输入类型

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class UnitTraffic extends AlipayObject {
 
-	private static final long serialVersionUID = 4881527425985422257L;
+	private static final long serialVersionUID = 2555348936924217685L;
 
 	/**
 	 * 灰度人群id，对应人群平台的id

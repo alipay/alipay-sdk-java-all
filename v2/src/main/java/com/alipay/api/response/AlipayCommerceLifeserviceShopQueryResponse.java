@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.lifeservice.shop.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-06-25 15:09:08
+ * @since 1.0, 2026-07-14 11:27:52
  */
 public class AlipayCommerceLifeserviceShopQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1756732158819329531L;
+	private static final long serialVersionUID = 7486995414426739818L;
 
 	/** 
 	 * 预约时间间隔【stockFetchType=sync时必填】 单位分钟，只能是15的倍数，最小15（15分钟），最大 15 * 24（6小时）
@@ -66,6 +66,12 @@ public class AlipayCommerceLifeserviceShopQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("shop_type")
 	private String shopType;
+
+	/** 
+	 * 是否展示到店分配，默认为show，仅当预约资源为手艺人时生效
+	 */
+	@ApiField("show_shop_assign")
+	private String showShopAssign;
 
 	/** 
 	 * 门店可预约状态
@@ -146,6 +152,13 @@ public class AlipayCommerceLifeserviceShopQueryResponse extends AlipayResponse {
 	}
 	public String getShopType( ) {
 		return this.shopType;
+	}
+
+	public void setShowShopAssign(String showShopAssign) {
+		this.showShopAssign = showShopAssign;
+	}
+	public String getShowShopAssign( ) {
+		return this.showShopAssign;
 	}
 
 	public void setStatus(String status) {

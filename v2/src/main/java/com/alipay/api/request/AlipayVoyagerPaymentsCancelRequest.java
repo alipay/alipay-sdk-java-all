@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.voyager.payments.cancel request
  * 
  * @author auto create
- * @since 1.0, 2026-06-25 11:09:58
+ * @since 1.0, 2026-07-14 11:02:21
  */
 public class AlipayVoyagerPaymentsCancelRequest implements AlipayRequest<AlipayVoyagerPaymentsCancelResponse> {
 

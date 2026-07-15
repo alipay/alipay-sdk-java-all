@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EcgReportDatail extends AlipayObject {
 
-	private static final long serialVersionUID = 4346569978798626666L;
+	private static final long serialVersionUID = 5491574771557538535L;
 
 	/**
 	 * 年龄

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SaleForceAmountConvertResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 2143227664225594989L;
+	private static final long serialVersionUID = 7839591934744659769L;
 
 	/**
 	 * 最小货币单位整数

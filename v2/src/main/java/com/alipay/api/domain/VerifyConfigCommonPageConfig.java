@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VerifyConfigCommonPageConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 8185268339775415695L;
+	private static final long serialVersionUID = 3351835362271229862L;
 
 	/**
 	 * 背景图片

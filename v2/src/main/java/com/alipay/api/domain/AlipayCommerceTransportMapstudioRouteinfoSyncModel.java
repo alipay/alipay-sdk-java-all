@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceTransportMapstudioRouteinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5314615613863974369L;
+	private static final long serialVersionUID = 1549832155731472796L;
 
 	/**
 	 * 城市区域编码，例如：南京320100

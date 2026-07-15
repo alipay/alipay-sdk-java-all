@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ReduceByInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6492633535863718651L;
+	private static final long serialVersionUID = 2784957139499643373L;
 
 	/**
 	 * 权益的价值

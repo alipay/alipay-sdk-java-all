@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntfortuneFinresearchAgentframeworkWarrenqGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2216927743894486961L;
+	private static final long serialVersionUID = 6256263728778994742L;
 
 	/**
 	 * 查询结果需要的requst_id

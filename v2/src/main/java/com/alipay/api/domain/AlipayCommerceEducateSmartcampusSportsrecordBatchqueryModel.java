@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceEducateSmartcampusSportsrecordBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3689286115254497273L;
+	private static final long serialVersionUID = 5327191931213553825L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识

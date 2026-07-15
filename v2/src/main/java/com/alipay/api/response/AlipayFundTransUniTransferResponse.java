@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.uni.transfer response.
  * 
  * @author auto create
- * @since 1.0, 2026-07-10 17:36:11
+ * @since 1.0, 2026-07-13 19:57:50
  */
 public class AlipayFundTransUniTransferResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1451697368312781488L;
+	private static final long serialVersionUID = 3864561743667879635L;
 
 	/** 
 	 * 转账金额，单位为元，默认为空，特殊场景提供。
@@ -64,6 +64,12 @@ REFUND：退票（转账到支付宝账户不涉及）；
 	 */
 	@ApiField("status")
 	private String status;
+
+	/** 
+	 * 支付宝支付子单资金流水号，当二阶段主子单场景时需要使用该单号去下载电子回单
+	 */
+	@ApiField("sub_pay_fund_order_id")
+	private String subPayFundOrderId;
 
 	/** 
 	 * 转账单据子状态。 SUCCESS（二阶段转账到支付宝账户领取成功）： REFUNDED：退款（二阶段转账到支付宝账户退款）；
@@ -124,6 +130,13 @@ REFUND：退票（转账到支付宝账户不涉及）；
 	}
 	public String getStatus( ) {
 		return this.status;
+	}
+
+	public void setSubPayFundOrderId(String subPayFundOrderId) {
+		this.subPayFundOrderId = subPayFundOrderId;
+	}
+	public String getSubPayFundOrderId( ) {
+		return this.subPayFundOrderId;
 	}
 
 	public void setSubStatus(String subStatus) {

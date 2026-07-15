@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RentProcurementPriceInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2874437221899741331L;
+	private static final long serialVersionUID = 1882963343746937465L;
 
 	/**
 	 * 订单金额，单位：元，精确到小数点后两位

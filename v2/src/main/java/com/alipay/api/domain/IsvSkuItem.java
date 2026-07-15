@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IsvSkuItem extends AlipayObject {
 
-	private static final long serialVersionUID = 5573298192523765541L;
+	private static final long serialVersionUID = 1244834581126927159L;
 
 	/**
 	 * 报价过期时间

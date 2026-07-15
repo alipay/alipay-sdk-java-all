@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundCouponWufuCostassetsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5187575958131348611L;
+	private static final long serialVersionUID = 8149416897323541783L;
 
 	/**
 	 * 需要消耗的福卡数量

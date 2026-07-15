@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AcquirePayFlowTransDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6474545748189623665L;
+	private static final long serialVersionUID = 6263961268298136776L;
 
 	/**
 	 * 支付宝交易金额（按月汇总，单位：元）

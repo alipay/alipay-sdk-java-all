@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoMycarLeadsDataCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2357114678231795445L;
+	private static final long serialVersionUID = 4416333796652681793L;
 
 	/** 
 	 * 支付宝线索id

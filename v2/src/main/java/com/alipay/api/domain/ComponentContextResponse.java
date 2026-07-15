@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ComponentContextResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 4198758852654964658L;
+	private static final long serialVersionUID = 8519486699575283118L;
 
 	/**
 	 * 查找的目标组件的code，方舟颁发给插件的唯一code

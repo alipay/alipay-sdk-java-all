@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建AI随访任务
  *
  * @author auto create
- * @since 1.0, 2026-06-24 17:58:45
+ * @since 1.0, 2026-07-14 14:14:03
  */
 public class AlipayCommerceMedicalHomedoctorFollowuptaskCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3769328383212526688L;
+	private static final long serialVersionUID = 1718819762455827334L;
 
 	/**
 	 * 智能体ID,可不传入

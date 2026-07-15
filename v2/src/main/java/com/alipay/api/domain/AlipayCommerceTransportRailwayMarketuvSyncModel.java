@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 铁路优惠活动实时标签介入
  *
  * @author auto create
- * @since 1.0, 2026-07-06 17:57:58
+ * @since 1.0, 2026-07-14 11:02:55
  */
 public class AlipayCommerceTransportRailwayMarketuvSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5748311611236724397L;
+	private static final long serialVersionUID = 6314136778997355611L;
 
 	/**
 	 * 支付宝活动 ID

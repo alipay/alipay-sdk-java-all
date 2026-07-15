@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportNdeviceEventSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4279588424219391953L;
+	private static final long serialVersionUID = 8174176813695448257L;
 
 	/**
 	 * type为driverManualSign传入司机id

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalHdfrtcVideoconferenceModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8234612981193316362L;
+	private static final long serialVersionUID = 4831793864428989399L;
 
 	/**
 	 * 视频结束时间

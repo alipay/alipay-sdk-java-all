@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOfflineProviderSmidCoilpaydescriptionQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6889793266123192168L;
+	private static final long serialVersionUID = 2566657378986489917L;
 
 	/**
 	 * 支付宝间连商家smid

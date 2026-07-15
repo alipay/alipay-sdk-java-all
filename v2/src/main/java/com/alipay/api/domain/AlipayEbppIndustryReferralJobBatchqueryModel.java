@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppIndustryReferralJobBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1198775334445158377L;
+	private static final long serialVersionUID = 1776836457469113997L;
 
 	/**
 	 * 城市区县编码，六位精确匹配

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 退款订单
  *
  * @author auto create
- * @since 1.0, 2026-06-25 11:09:57
+ * @since 1.0, 2026-07-14 10:50:53
  */
 public class StandardRefundOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4269276439977753228L;
+	private static final long serialVersionUID = 2725751369383826929L;
 
 	/**
 	 * 完成时间

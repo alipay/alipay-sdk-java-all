@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NOrderTagDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1573316757115595563L;
+	private static final long serialVersionUID = 5386637828221891654L;
 
 	/**
 	 * 线圈编号，线圈的唯一外标

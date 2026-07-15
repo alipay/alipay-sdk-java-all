@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySecurityProdTemplateCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2817219377442778153L;
+	private static final long serialVersionUID = 1542988568962719482L;
 
 	/** 
 	 * 创建完成后返回模板编码

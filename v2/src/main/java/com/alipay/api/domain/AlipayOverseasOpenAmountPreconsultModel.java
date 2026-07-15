@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOverseasOpenAmountPreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7448415388722283772L;
+	private static final long serialVersionUID = 7412461254788564369L;
 
 	/**
 	 * 学校账户ID，通过alipay.overseas.open.account.consult获取

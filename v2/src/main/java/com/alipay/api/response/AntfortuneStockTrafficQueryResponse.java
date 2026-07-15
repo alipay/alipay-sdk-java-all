@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntfortuneStockTrafficQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1742697128525222179L;
+	private static final long serialVersionUID = 8631322852553947347L;
 
 	/** 
 	 * 流量模式，当为空时表示是全量人群模式

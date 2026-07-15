@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceSportsVenueSimpleModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8113214191418224324L;
+	private static final long serialVersionUID = 3113471921294699891L;
 
 	/** 
 	 * 具体地址

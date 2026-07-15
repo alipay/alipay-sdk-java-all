@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * voyager退款查询接口
  *
  * @author auto create
- * @since 1.0, 2026-06-25 11:09:57
+ * @since 1.0, 2026-07-14 10:50:53
  */
 public class AlipayVoyagerPaymentsRefundQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6824863358742942632L;
+	private static final long serialVersionUID = 1816649754914926786L;
 
 	/**
 	 * open_id

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 渠道扩展信息
  *
  * @author auto create
- * @since 1.0, 2026-06-25 20:05:03
+ * @since 1.0, 2026-07-13 21:09:11
  */
 public class ChannelDetailParams extends AlipayObject {
 
-	private static final long serialVersionUID = 1415798979561473349L;
+	private static final long serialVersionUID = 3412358516157616376L;
 
 	/**
 	 * 预付卡分组名称
@@ -24,6 +24,12 @@ public class ChannelDetailParams extends AlipayObject {
 	 */
 	@ApiField("credit_risk_info")
 	private String creditRiskInfo;
+
+	/**
+	 * 是否先采后付垫资版,用于先采后付前置咨询
+	 */
+	@ApiField("fund_loan_sign")
+	private String fundLoanSign;
 
 	/**
 	 * 国家贴息
@@ -80,6 +86,13 @@ public class ChannelDetailParams extends AlipayObject {
 	}
 	public void setCreditRiskInfo(String creditRiskInfo) {
 		this.creditRiskInfo = creditRiskInfo;
+	}
+
+	public String getFundLoanSign() {
+		return this.fundLoanSign;
+	}
+	public void setFundLoanSign(String fundLoanSign) {
+		this.fundLoanSign = fundLoanSign;
 	}
 
 	public String getGovSubsidy() {

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CycleAvgDiscountAmountConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 7321363286615868984L;
+	private static final long serialVersionUID = 4424953264521243473L;
 
 	/**
 	 * 当前周期均价，单位：分

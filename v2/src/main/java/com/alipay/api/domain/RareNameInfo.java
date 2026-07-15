@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RareNameInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3672827943533493119L;
+	private static final long serialVersionUID = 5112169948829511727L;
 
 	/**
 	 * 姓名

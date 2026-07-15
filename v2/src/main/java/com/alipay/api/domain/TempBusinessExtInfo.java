@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TempBusinessExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5116517481382335531L;
+	private static final long serialVersionUID = 7475723944617311288L;
 
 	/**
 	 * 服务商调用接口为商家添加申请物料信息时，可以指定商家的uid信息

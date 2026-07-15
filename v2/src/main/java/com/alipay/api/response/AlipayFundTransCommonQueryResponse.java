@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.trans.common.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-07-10 17:36:14
+ * @since 1.0, 2026-07-13 19:52:52
  */
 public class AlipayFundTransCommonQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1274513372823497254L;
+	private static final long serialVersionUID = 5427134282243997412L;
 
 	/** 
 	 * 预计到账时间，转账到银行卡专用，格式为yyyy-MM-dd HH:mm:ss，转账受理失败不返回。
@@ -146,6 +146,12 @@ d）“6位控制位”由金融机构通过平台获取
 	 */
 	@ApiField("sub_order_status")
 	private String subOrderStatus;
+
+	/** 
+	 * 支付宝支付子单资金流水号，当二阶段主子单场景时需要使用该单号去下载电子回单
+	 */
+	@ApiField("sub_pay_fund_order_id")
+	private String subPayFundOrderId;
 
 	/** 
 	 * 转账单据子状态，SUCCESS：二阶段转账领取成功；REFUNDED：二阶段转账退款
@@ -310,6 +316,13 @@ d）“6位控制位”由金融机构通过平台获取
 	}
 	public String getSubOrderStatus( ) {
 		return this.subOrderStatus;
+	}
+
+	public void setSubPayFundOrderId(String subPayFundOrderId) {
+		this.subPayFundOrderId = subPayFundOrderId;
+	}
+	public String getSubPayFundOrderId( ) {
+		return this.subPayFundOrderId;
 	}
 
 	public void setSubStatus(String subStatus) {

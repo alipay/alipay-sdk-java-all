@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceEdasMemoryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5659679755418731124L;
+	private static final long serialVersionUID = 5797814526226464427L;
 
 	/** 
 	 * null
