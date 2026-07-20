@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.insurance.claimreport.modify response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-22 09:37:44
+ * @since 1.0, 2026-07-16 19:22:38
  */
 public class AlipayCommerceMedicalInsuranceClaimreportModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4416298934171664735L;
+	private static final long serialVersionUID = 4892563454869146947L;
 
 	/** 
 	 * 回传成功标识

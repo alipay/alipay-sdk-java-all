@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询随访任务状态
  *
  * @author auto create
- * @since 1.0, 2026-06-24 17:58:47
+ * @since 1.0, 2026-07-14 14:22:52
  */
 public class AlipayCommerceMedicalHomedoctorFollowuptaskQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7673679229185688996L;
+	private static final long serialVersionUID = 3497973216851428141L;
 
 	/**
 	 * 阿福用户openid

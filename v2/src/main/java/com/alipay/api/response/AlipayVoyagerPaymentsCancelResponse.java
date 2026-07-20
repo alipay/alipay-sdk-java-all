@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.voyager.payments.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2026-07-14 11:02:21
+ * @since 1.0, 2026-07-14 14:57:52
  */
 public class AlipayVoyagerPaymentsCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7682851284269138562L;
+	private static final long serialVersionUID = 4283341584374386314L;
 
 	/** 
 	 * 必填

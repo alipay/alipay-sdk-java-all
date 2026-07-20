@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.ep.assistant.membershippackage.create response.
  * 
  * @author auto create
- * @since 1.0, 2026-06-23 09:57:56
+ * @since 1.0, 2026-07-17 09:59:43
  */
 public class ZhimaCreditEpAssistantMembershippackageCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1454989918729192266L;
+	private static final long serialVersionUID = 7472296592123978295L;
 
 	/** 
 	 * 会员包生效时间

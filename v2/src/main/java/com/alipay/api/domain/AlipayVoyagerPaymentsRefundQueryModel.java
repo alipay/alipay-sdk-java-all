@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * voyager退款查询接口
  *
  * @author auto create
- * @since 1.0, 2026-07-14 10:50:53
+ * @since 1.0, 2026-07-14 14:57:53
  */
 public class AlipayVoyagerPaymentsRefundQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1816649754914926786L;
+	private static final long serialVersionUID = 8335554415332129712L;
 
 	/**
-	 * open_id
+	 * open_i
 	 */
 	@ApiField("open_id")
 	private String openId;
@@ -30,6 +30,12 @@ public class AlipayVoyagerPaymentsRefundQueryModel extends AlipayObject {
 	 */
 	@ApiField("refund_request_id")
 	private String refundRequestId;
+
+	/**
+	 * userId，用户userId，用于接受openId转换
+	 */
+	@ApiField("user_id")
+	private String userId;
 
 	public String getOpenId() {
 		return this.openId;
@@ -50,6 +56,13 @@ public class AlipayVoyagerPaymentsRefundQueryModel extends AlipayObject {
 	}
 	public void setRefundRequestId(String refundRequestId) {
 		this.refundRequestId = refundRequestId;
+	}
+
+	public String getUserId() {
+		return this.userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
 
 }

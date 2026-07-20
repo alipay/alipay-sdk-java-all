@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.balance.threshold.set response.
  * 
  * @author auto create
- * @since 1.0, 2026-04-08 14:27:44
+ * @since 1.0, 2026-07-17 13:57:53
  */
 public class AlipayCommerceEcBalanceThresholdSetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6192727292424588289L;
+	private static final long serialVersionUID = 6793455655729411111L;
 
 	
 

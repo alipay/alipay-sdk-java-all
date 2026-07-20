@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenMiniMembersHuobanCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8566461451827335272L;
+	private static final long serialVersionUID = 7511192378615791847L;
 
 	
 

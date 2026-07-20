@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企信助手会员包创建
  *
  * @author auto create
- * @since 1.0, 2026-06-23 09:57:56
+ * @since 1.0, 2026-07-17 09:59:43
  */
 public class ZhimaCreditEpAssistantMembershippackageCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8624352546466565618L;
+	private static final long serialVersionUID = 2479164366852284659L;
 
 	/**
 	 * 权益包指定生效时间非必填，默认不要填写，只有需要权益包不立即生效，在后续指定时间点生效的场景下需要传入。如果传入时间早于当前时间，则以当前时间进行生效。且指定的生效时间不得晚于当前时间一个月。

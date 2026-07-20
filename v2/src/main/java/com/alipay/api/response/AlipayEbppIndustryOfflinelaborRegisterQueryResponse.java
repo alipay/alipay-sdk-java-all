@@ -1,8 +1,6 @@
 package com.alipay.api.response;
 
-import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
-import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.OfflineLaborProjectRegistRecord;
 
 import com.alipay.api.AlipayResponse;
@@ -11,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.offlinelabor.register.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-07-08 14:17:54
+ * @since 1.0, 2026-07-17 14:32:50
  */
 public class AlipayEbppIndustryOfflinelaborRegisterQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6785128641995849895L;
+	private static final long serialVersionUID = 5273668865185682435L;
 
 	/** 
 	 * 页码（从 1 开始）
@@ -30,11 +28,10 @@ public class AlipayEbppIndustryOfflinelaborRegisterQueryResponse extends AlipayR
 	private Long pageSize;
 
 	/** 
-	 * null
+	 * 项目登记记录
 	 */
-	@ApiListField("record_list")
-	@ApiField("offline_labor_project_regist_record")
-	private List<OfflineLaborProjectRegistRecord> recordList;
+	@ApiField("record_list")
+	private OfflineLaborProjectRegistRecord recordList;
 
 	/** 
 	 * 匹配总记录数
@@ -62,10 +59,10 @@ public class AlipayEbppIndustryOfflinelaborRegisterQueryResponse extends AlipayR
 		return this.pageSize;
 	}
 
-	public void setRecordList(List<OfflineLaborProjectRegistRecord> recordList) {
+	public void setRecordList(OfflineLaborProjectRegistRecord recordList) {
 		this.recordList = recordList;
 	}
-	public List<OfflineLaborProjectRegistRecord> getRecordList( ) {
+	public OfflineLaborProjectRegistRecord getRecordList( ) {
 		return this.recordList;
 	}
 

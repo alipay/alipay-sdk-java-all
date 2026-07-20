@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分页查询收单身份组列表
  *
  * @author auto create
- * @since 1.0, 2026-06-11 16:17:55
+ * @since 1.0, 2026-07-17 13:57:53
  */
 public class AlipayCommerceEcReceiptidentitygroupPageinfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4591957517776127733L;
+	private static final long serialVersionUID = 1396888782165431189L;
 
 	/**
 	 * 企业id

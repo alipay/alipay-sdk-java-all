@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.eco.nfc.check response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-06 18:02:25
+ * @since 1.0, 2026-07-14 15:41:33
  */
 public class AntMerchantExpandEcoNfcCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2392844676877642296L;
+	private static final long serialVersionUID = 8256246851818179617L;
 
 	/** 
 	 * ture 可以绑定  false 不可以绑定

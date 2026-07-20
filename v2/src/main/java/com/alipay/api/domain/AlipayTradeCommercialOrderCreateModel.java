@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商业订单创建接口
  *
  * @author auto create
- * @since 1.0, 2026-06-08 19:47:56
+ * @since 1.0, 2026-07-15 17:17:56
  */
 public class AlipayTradeCommercialOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4144324592214665974L;
+	private static final long serialVersionUID = 7637571853626376993L;
 
 	/**
 	 * agent类型，当intiator_type=AGENT时必传
@@ -36,6 +36,12 @@ public class AlipayTradeCommercialOrderCreateModel extends AlipayObject {
 	 */
 	@ApiField("initiator_type")
 	private String initiatorType;
+
+	/**
+	 * 商户可通过此字段进行信息的自定义传参，生效后不可修改，将在全链路通知或查询中返回
+	 */
+	@ApiField("metadata")
+	private String metadata;
 
 	/**
 	 * 订单金额（单位：分），灵活定价模式下必填
@@ -93,6 +99,13 @@ public class AlipayTradeCommercialOrderCreateModel extends AlipayObject {
 	}
 	public void setInitiatorType(String initiatorType) {
 		this.initiatorType = initiatorType;
+	}
+
+	public String getMetadata() {
+		return this.metadata;
+	}
+	public void setMetadata(String metadata) {
+		this.metadata = metadata;
 	}
 
 	public Long getOrderAmount() {

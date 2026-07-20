@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 吸烟史
  *
  * @author auto create
- * @since 1.0, 2026-07-13 16:10:47
+ * @since 1.0, 2026-07-17 16:32:52
  */
 public class SmokingHistory extends AlipayObject {
 
-	private static final long serialVersionUID = 6353545498225874992L;
+	private static final long serialVersionUID = 2479659543282696336L;
 
 	/**
 	 * 日吸烟量（支）

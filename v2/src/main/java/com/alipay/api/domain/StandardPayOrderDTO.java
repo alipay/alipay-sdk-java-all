@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 支付订单
  *
  * @author auto create
- * @since 1.0, 2026-07-14 11:03:42
+ * @since 1.0, 2026-07-14 14:57:52
  */
 public class StandardPayOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8252364769284164667L;
+	private static final long serialVersionUID = 3324835167681948973L;
 
 	/**
 	 * 创建时间
@@ -56,6 +56,12 @@ public class StandardPayOrderDTO extends AlipayObject {
 	 */
 	@ApiField("payment_request_id")
 	private String paymentRequestId;
+
+	/**
+	 * 支付宝用户的userId。
+	 */
+	@ApiField("user_id")
+	private String userId;
 
 	public Date getCreateTime() {
 		return this.createTime;
@@ -104,6 +110,13 @@ public class StandardPayOrderDTO extends AlipayObject {
 	}
 	public void setPaymentRequestId(String paymentRequestId) {
 		this.paymentRequestId = paymentRequestId;
+	}
+
+	public String getUserId() {
+		return this.userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
 
 }

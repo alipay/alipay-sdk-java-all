@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantIndirectRefundSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8784481289632861885L;
+	private static final long serialVersionUID = 1562362146741438562L;
 
 	/**
 	 * 支付宝子商户号，一般是2088开头的数字，该子商户号由服务商进件而来。

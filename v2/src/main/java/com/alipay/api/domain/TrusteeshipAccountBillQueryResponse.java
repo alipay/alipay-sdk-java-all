@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TrusteeshipAccountBillQueryResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 3834282158844521278L;
+	private static final long serialVersionUID = 7119227945425234712L;
 
 	/**
 	 * 账单日

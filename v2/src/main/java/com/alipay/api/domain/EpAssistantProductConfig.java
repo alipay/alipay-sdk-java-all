@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企信会员产品包定制化配置.仅对product_sku为QX-ZTB-ASSISTANT-STANDARD和QX-TK-ASSISTANT-STANDARD 是生效
  *
  * @author auto create
- * @since 1.0, 2026-06-23 09:57:56
+ * @since 1.0, 2026-07-17 09:59:43
  */
 public class EpAssistantProductConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 7631924849272198844L;
+	private static final long serialVersionUID = 7456413681921921226L;
 
 	/**
 	 * 时长购买数量，是以duration_unit的值作为单位，例如3个 HALF_YEAR表示一年半

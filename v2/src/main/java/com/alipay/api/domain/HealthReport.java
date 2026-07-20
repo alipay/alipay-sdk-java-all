@@ -10,17 +10,24 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-07-13 16:10:47
+ * @since 1.0, 2026-07-17 16:32:52
  */
 public class HealthReport extends AlipayObject {
 
-	private static final long serialVersionUID = 5276828123924734116L;
+	private static final long serialVersionUID = 3453671995438235134L;
 
 	/**
 	 * 年龄
 	 */
 	@ApiField("age")
 	private String age;
+
+	/**
+	 * null
+	 */
+	@ApiListField("basic_physical_examination_report_list")
+	@ApiField("basic_examination_report")
+	private List<BasicExaminationReport> basicPhysicalExaminationReportList;
 
 	/**
 	 * 唯一id
@@ -97,11 +104,24 @@ PDF/PIC
 	@ApiField("report_time")
 	private String reportTime;
 
+	/**
+	 * 体检类型（如"体检报告"/"入职体检"）
+	 */
+	@ApiField("report_type")
+	private String reportType;
+
 	public String getAge() {
 		return this.age;
 	}
 	public void setAge(String age) {
 		this.age = age;
+	}
+
+	public List<BasicExaminationReport> getBasicPhysicalExaminationReportList() {
+		return this.basicPhysicalExaminationReportList;
+	}
+	public void setBasicPhysicalExaminationReportList(List<BasicExaminationReport> basicPhysicalExaminationReportList) {
+		this.basicPhysicalExaminationReportList = basicPhysicalExaminationReportList;
 	}
 
 	public String getDataId() {
@@ -186,6 +206,13 @@ PDF/PIC
 	}
 	public void setReportTime(String reportTime) {
 		this.reportTime = reportTime;
+	}
+
+	public String getReportType() {
+		return this.reportType;
+	}
+	public void setReportType(String reportType) {
+		this.reportType = reportType;
 	}
 
 }

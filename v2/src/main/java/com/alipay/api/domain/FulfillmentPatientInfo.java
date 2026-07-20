@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 陪诊患者信息
  *
  * @author auto create
- * @since 1.0, 2026-05-14 15:01:05
+ * @since 1.0, 2026-07-17 10:54:21
  */
 public class FulfillmentPatientInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7227477295581531874L;
+	private static final long serialVersionUID = 8192475794268158927L;
 
 	/**
 	 * 年龄
@@ -24,6 +24,12 @@ public class FulfillmentPatientInfo extends AlipayObject {
 	 */
 	@ApiField("disease_desc")
 	private String diseaseDesc;
+
+	/**
+	 * 所患疾病
+	 */
+	@ApiField("disease_name")
+	private String diseaseName;
 
 	/**
 	 * 0-男，1-女
@@ -79,6 +85,13 @@ public class FulfillmentPatientInfo extends AlipayObject {
 	}
 	public void setDiseaseDesc(String diseaseDesc) {
 		this.diseaseDesc = diseaseDesc;
+	}
+
+	public String getDiseaseName() {
+		return this.diseaseName;
+	}
+	public void setDiseaseName(String diseaseName) {
+		this.diseaseName = diseaseName;
 	}
 
 	public Long getGender() {

@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * voyager支付查询接口
  *
  * @author auto create
- * @since 1.0, 2026-07-14 11:03:42
+ * @since 1.0, 2026-07-14 14:57:52
  */
 public class AlipayVoyagerPaymentsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4458434154244145653L;
+	private static final long serialVersionUID = 4718418134682848623L;
 
 	/**
-	 * 用户授权id
+	 * 用户授权Id
 	 */
 	@ApiField("open_id")
 	private String openId;
@@ -30,6 +30,12 @@ public class AlipayVoyagerPaymentsQueryModel extends AlipayObject {
 	 */
 	@ApiField("payment_request_id")
 	private String paymentRequestId;
+
+	/**
+	 * 用户Id
+	 */
+	@ApiField("user_id")
+	private String userId;
 
 	public String getOpenId() {
 		return this.openId;
@@ -50,6 +56,13 @@ public class AlipayVoyagerPaymentsQueryModel extends AlipayObject {
 	}
 	public void setPaymentRequestId(String paymentRequestId) {
 		this.paymentRequestId = paymentRequestId;
+	}
+
+	public String getUserId() {
+		return this.userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
 
 }

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOfflineMarketingTicketstubPurchaseSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3692663146291854673L;
+	private static final long serialVersionUID = 5719672225698281963L;
 
 	/**
 	 * 用户购票的操作信息

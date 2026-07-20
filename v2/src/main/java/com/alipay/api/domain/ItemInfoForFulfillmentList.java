@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品信息
  *
  * @author auto create
- * @since 1.0, 2026-07-09 10:44:42
+ * @since 1.0, 2026-07-20 11:34:34
  */
 public class ItemInfoForFulfillmentList extends AlipayObject {
 
-	private static final long serialVersionUID = 4759465129657383497L;
+	private static final long serialVersionUID = 3136135251252632957L;
+
+	/**
+	 * 是否已删除，0：正常 1：删除
+	 */
+	@ApiField("is_deleted")
+	private Long isDeleted;
 
 	/**
 	 * saas关联的标品id（好大夫侧使用）
@@ -36,6 +42,13 @@ public class ItemInfoForFulfillmentList extends AlipayObject {
 	 */
 	@ApiField("spu_id")
 	private String spuId;
+
+	public Long getIsDeleted() {
+		return this.isDeleted;
+	}
+	public void setIsDeleted(Long isDeleted) {
+		this.isDeleted = isDeleted;
+	}
 
 	public String getRelationSpuId() {
 		return this.relationSpuId;

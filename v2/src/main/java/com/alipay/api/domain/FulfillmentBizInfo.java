@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * Saas履约单查询返回数据结果字段
  *
  * @author auto create
- * @since 1.0, 2026-07-10 11:10:21
+ * @since 1.0, 2026-07-17 11:22:51
  */
 public class FulfillmentBizInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5868592825452125466L;
+	private static final long serialVersionUID = 1778685528829624589L;
 
 	/**
 	 * 顾问类数据
@@ -38,10 +38,22 @@ public class FulfillmentBizInfo extends AlipayObject {
 	private Examination examination;
 
 	/**
+	 * 检查加急
+	 */
+	@ApiField("examination_urgent")
+	private FulfillmentBizVO examinationUrgent;
+
+	/**
 	 * 高端医疗
 	 */
 	@ApiField("highend_medical")
 	private HighEndMedicalFulfillmentDetailData highendMedical;
+
+	/**
+	 * 住院协助
+	 */
+	@ApiField("inpatient_assist")
+	private FulfillmentBizVO inpatientAssist;
 
 	/**
 	 * 陪护类型
@@ -50,10 +62,22 @@ public class FulfillmentBizInfo extends AlipayObject {
 	private NursingVO nursing;
 
 	/**
+	 * 体检服务
+	 */
+	@ApiField("physical_examination")
+	private FulfillmentBizVO physicalExamination;
+
+	/**
 	 * 心理权益
 	 */
 	@ApiField("psychological")
 	private PsychologicalVO psychological;
+
+	/**
+	 * 挂号绿通
+	 */
+	@ApiField("registration_green_channel")
+	private FulfillmentBizVO registrationGreenChannel;
 
 	public Advisory getAdvisory() {
 		return this.advisory;
@@ -83,11 +107,25 @@ public class FulfillmentBizInfo extends AlipayObject {
 		this.examination = examination;
 	}
 
+	public FulfillmentBizVO getExaminationUrgent() {
+		return this.examinationUrgent;
+	}
+	public void setExaminationUrgent(FulfillmentBizVO examinationUrgent) {
+		this.examinationUrgent = examinationUrgent;
+	}
+
 	public HighEndMedicalFulfillmentDetailData getHighendMedical() {
 		return this.highendMedical;
 	}
 	public void setHighendMedical(HighEndMedicalFulfillmentDetailData highendMedical) {
 		this.highendMedical = highendMedical;
+	}
+
+	public FulfillmentBizVO getInpatientAssist() {
+		return this.inpatientAssist;
+	}
+	public void setInpatientAssist(FulfillmentBizVO inpatientAssist) {
+		this.inpatientAssist = inpatientAssist;
 	}
 
 	public NursingVO getNursing() {
@@ -97,11 +135,25 @@ public class FulfillmentBizInfo extends AlipayObject {
 		this.nursing = nursing;
 	}
 
+	public FulfillmentBizVO getPhysicalExamination() {
+		return this.physicalExamination;
+	}
+	public void setPhysicalExamination(FulfillmentBizVO physicalExamination) {
+		this.physicalExamination = physicalExamination;
+	}
+
 	public PsychologicalVO getPsychological() {
 		return this.psychological;
 	}
 	public void setPsychological(PsychologicalVO psychological) {
 		this.psychological = psychological;
+	}
+
+	public FulfillmentBizVO getRegistrationGreenChannel() {
+		return this.registrationGreenChannel;
+	}
+	public void setRegistrationGreenChannel(FulfillmentBizVO registrationGreenChannel) {
+		this.registrationGreenChannel = registrationGreenChannel;
 	}
 
 }

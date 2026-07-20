@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 直付通信息检测
  *
  * @author auto create
- * @since 1.0, 2026-05-13 16:53:42
+ * @since 1.0, 2026-07-20 16:43:11
  */
 public class AntMerchantExpandIndirectZftsettlecardDetectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1898951359156436416L;
+	private static final long serialVersionUID = 3489725529351215597L;
 
 	/**
 	 * 卡户名

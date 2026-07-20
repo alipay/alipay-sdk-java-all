@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租赁行业风险咨询
  *
  * @author auto create
- * @since 1.0, 2026-07-06 14:24:41
+ * @since 1.0, 2026-07-15 19:12:52
  */
 public class AlipayCommerceRentRiskConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3339894261912584233L;
+	private static final long serialVersionUID = 5682952861547291678L;
 
 	/**
 	 * 支付宝openid
@@ -46,6 +46,12 @@ public class AlipayCommerceRentRiskConsultModel extends AlipayObject {
 	 */
 	@ApiField("risk_biz_scene")
 	private String riskBizScene;
+
+	/**
+	 * 发货评估方案
+	 */
+	@ApiField("ship_assessment_result")
+	private ShipAssessmentRes shipAssessmentResult;
 
 	public String getAlipayOpenId() {
 		return this.alipayOpenId;
@@ -80,6 +86,13 @@ public class AlipayCommerceRentRiskConsultModel extends AlipayObject {
 	}
 	public void setRiskBizScene(String riskBizScene) {
 		this.riskBizScene = riskBizScene;
+	}
+
+	public ShipAssessmentRes getShipAssessmentResult() {
+		return this.shipAssessmentResult;
+	}
+	public void setShipAssessmentResult(ShipAssessmentRes shipAssessmentResult) {
+		this.shipAssessmentResult = shipAssessmentResult;
 	}
 
 }

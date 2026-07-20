@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 计划新增或修改
  *
  * @author auto create
- * @since 1.0, 2026-01-16 15:23:57
+ * @since 1.0, 2026-07-14 16:37:14
  */
 public class AlipayDataDataserviceAdcampaignPlanCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2411125989331673291L;
+	private static final long serialVersionUID = 7791413494415441885L;
 
 	/**
 	 * 计划日预算，单位元【人民币】
@@ -25,6 +25,12 @@ public class AlipayDataDataserviceAdcampaignPlanCreateormodifyModel extends Alip
 	 */
 	@ApiField("charge_type")
 	private String chargeType;
+
+	/**
+	 * 投放模式，手动投放/自动投放
+	 */
+	@ApiField("delivery_mode")
+	private String deliveryMode;
 
 	/**
 	 * 计划结束投放日期，格式为yyyy-MM-dd，新增或者编辑时有改动必须大于等于今天；结束日期必须大于等于开始日期
@@ -100,6 +106,13 @@ OFF：开启计划日预算（计划日预算字段必填）
 	}
 	public void setChargeType(String chargeType) {
 		this.chargeType = chargeType;
+	}
+
+	public String getDeliveryMode() {
+		return this.deliveryMode;
+	}
+	public void setDeliveryMode(String deliveryMode) {
+		this.deliveryMode = deliveryMode;
 	}
 
 	public String getEndDate() {

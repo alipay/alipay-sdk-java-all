@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportTradeOrderCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4751333434291672583L;
+	private static final long serialVersionUID = 4231276821817687328L;
 
 	/**
 	 * 恒星平台订单号（代扣发起时返回），推荐使用 bill_no 定位订单。bill_no、trade_no、out_biz_no 三者至少传一个

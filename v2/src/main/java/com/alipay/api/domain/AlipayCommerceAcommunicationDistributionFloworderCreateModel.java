@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 流量分销创单接口
  *
  * @author auto create
- * @since 1.0, 2026-06-02 10:10:52
+ * @since 1.0, 2026-07-15 17:14:10
  */
 public class AlipayCommerceAcommunicationDistributionFloworderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4352116535899517962L;
+	private static final long serialVersionUID = 4255246968649268639L;
 
 	/**
 	 * 触达渠道

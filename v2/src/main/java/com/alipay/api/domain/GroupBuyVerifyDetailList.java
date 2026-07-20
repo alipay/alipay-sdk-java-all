@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GroupBuyVerifyDetailList extends AlipayObject {
 
-	private static final long serialVersionUID = 4794292689681998541L;
+	private static final long serialVersionUID = 5665224459677215872L;
 
 	/**
 	 * 业务发生时间

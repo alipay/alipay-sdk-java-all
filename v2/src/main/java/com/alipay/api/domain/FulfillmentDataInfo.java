@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 履约数据
  *
  * @author auto create
- * @since 1.0, 2026-07-10 11:37:55
+ * @since 1.0, 2026-07-17 11:07:49
  */
 public class FulfillmentDataInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6553685187415891291L;
+	private static final long serialVersionUID = 1577191815364982844L;
 
 	/**
 	 * 顾问数据
@@ -32,10 +32,22 @@ public class FulfillmentDataInfo extends AlipayObject {
 	private ExaminationParam examination;
 
 	/**
+	 * 检查加急
+	 */
+	@ApiField("examination_urgent_fulfillment_detail_data")
+	private ExaminationUrgentFulfillmentDetailData examinationUrgentFulfillmentDetailData;
+
+	/**
 	 * 高端医疗
 	 */
 	@ApiField("highend_medical_fulfillment_detail_data")
 	private HighEndMedicalFulfillmentDetailData highendMedicalFulfillmentDetailData;
+
+	/**
+	 * 住院协助
+	 */
+	@ApiField("inpatient_assist_fulfillment_detail_data")
+	private InpatientAssistFulfillmentDetailData inpatientAssistFulfillmentDetailData;
 
 	/**
 	 * 陪护数据
@@ -50,10 +62,22 @@ public class FulfillmentDataInfo extends AlipayObject {
 	private OfflineEscortFulfillmentDetailData offlineEscortFulfillmentDetailData;
 
 	/**
+	 * 体检服务
+	 */
+	@ApiField("physical_examination_fulfillment_detail_data")
+	private PhysicalExaminationFulfillmentDetailData physicalExaminationFulfillmentDetailData;
+
+	/**
 	 * 心理权益
 	 */
 	@ApiField("psychological_fulfillment_detail_data")
 	private PsychologicalFulfillmentDetailData psychologicalFulfillmentDetailData;
+
+	/**
+	 * 挂号绿通
+	 */
+	@ApiField("registration_green_channel_fulfillment_detail_data")
+	private RegistrationGreenChannelFulfillmentDetailData registrationGreenChannelFulfillmentDetailData;
 
 	public AdvisorParam getAdvisor() {
 		return this.advisor;
@@ -76,11 +100,25 @@ public class FulfillmentDataInfo extends AlipayObject {
 		this.examination = examination;
 	}
 
+	public ExaminationUrgentFulfillmentDetailData getExaminationUrgentFulfillmentDetailData() {
+		return this.examinationUrgentFulfillmentDetailData;
+	}
+	public void setExaminationUrgentFulfillmentDetailData(ExaminationUrgentFulfillmentDetailData examinationUrgentFulfillmentDetailData) {
+		this.examinationUrgentFulfillmentDetailData = examinationUrgentFulfillmentDetailData;
+	}
+
 	public HighEndMedicalFulfillmentDetailData getHighendMedicalFulfillmentDetailData() {
 		return this.highendMedicalFulfillmentDetailData;
 	}
 	public void setHighendMedicalFulfillmentDetailData(HighEndMedicalFulfillmentDetailData highendMedicalFulfillmentDetailData) {
 		this.highendMedicalFulfillmentDetailData = highendMedicalFulfillmentDetailData;
+	}
+
+	public InpatientAssistFulfillmentDetailData getInpatientAssistFulfillmentDetailData() {
+		return this.inpatientAssistFulfillmentDetailData;
+	}
+	public void setInpatientAssistFulfillmentDetailData(InpatientAssistFulfillmentDetailData inpatientAssistFulfillmentDetailData) {
+		this.inpatientAssistFulfillmentDetailData = inpatientAssistFulfillmentDetailData;
 	}
 
 	public InpatientNursingFulfillmentDetailData getInpatientNursingFulfillmentDetailData() {
@@ -97,11 +135,25 @@ public class FulfillmentDataInfo extends AlipayObject {
 		this.offlineEscortFulfillmentDetailData = offlineEscortFulfillmentDetailData;
 	}
 
+	public PhysicalExaminationFulfillmentDetailData getPhysicalExaminationFulfillmentDetailData() {
+		return this.physicalExaminationFulfillmentDetailData;
+	}
+	public void setPhysicalExaminationFulfillmentDetailData(PhysicalExaminationFulfillmentDetailData physicalExaminationFulfillmentDetailData) {
+		this.physicalExaminationFulfillmentDetailData = physicalExaminationFulfillmentDetailData;
+	}
+
 	public PsychologicalFulfillmentDetailData getPsychologicalFulfillmentDetailData() {
 		return this.psychologicalFulfillmentDetailData;
 	}
 	public void setPsychologicalFulfillmentDetailData(PsychologicalFulfillmentDetailData psychologicalFulfillmentDetailData) {
 		this.psychologicalFulfillmentDetailData = psychologicalFulfillmentDetailData;
+	}
+
+	public RegistrationGreenChannelFulfillmentDetailData getRegistrationGreenChannelFulfillmentDetailData() {
+		return this.registrationGreenChannelFulfillmentDetailData;
+	}
+	public void setRegistrationGreenChannelFulfillmentDetailData(RegistrationGreenChannelFulfillmentDetailData registrationGreenChannelFulfillmentDetailData) {
+		this.registrationGreenChannelFulfillmentDetailData = registrationGreenChannelFulfillmentDetailData;
 	}
 
 }

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankPaymentTradeBankBranchQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6673186787799831236L;
+	private static final long serialVersionUID = 7261467483336665561L;
 
 	/** 
 	 * Institution列表

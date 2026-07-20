@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-07-13 16:10:47
+ * @since 1.0, 2026-07-17 16:32:52
  */
 public class WesternMedicationInformation extends AlipayObject {
 
-	private static final long serialVersionUID = 2252137697186625183L;
+	private static final long serialVersionUID = 1769721612749161697L;
 
 	/**
 	 * 药品用量  eg：每次0.5g（2粒），每日3次
@@ -24,6 +24,12 @@ public class WesternMedicationInformation extends AlipayObject {
 	 */
 	@ApiField("medical_name")
 	private String medicalName;
+
+	/**
+	 * 开药数量
+	 */
+	@ApiField("quantity")
+	private String quantity;
 
 	/**
 	 * 备注 eg： 饭后服用，连用7天
@@ -55,6 +61,13 @@ public class WesternMedicationInformation extends AlipayObject {
 	}
 	public void setMedicalName(String medicalName) {
 		this.medicalName = medicalName;
+	}
+
+	public String getQuantity() {
+		return this.quantity;
+	}
+	public void setQuantity(String quantity) {
+		this.quantity = quantity;
 	}
 
 	public String getRemark() {

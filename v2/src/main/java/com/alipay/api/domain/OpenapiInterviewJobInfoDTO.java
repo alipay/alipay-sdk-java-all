@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenapiInterviewJobInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4111231435462826912L;
+	private static final long serialVersionUID = 4193311856116265884L;
 
 	/**
 	 * 岗位描述

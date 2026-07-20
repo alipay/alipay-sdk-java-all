@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ContentVo extends AlipayObject {
 
-	private static final long serialVersionUID = 6333157774581125291L;
+	private static final long serialVersionUID = 6676781522278836499L;
 
 	/**
 	 * 消息类型为卡片时必传，卡片内容

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 小程序创建隐私协议
  *
  * @author auto create
- * @since 1.0, 2026-01-05 11:36:16
+ * @since 1.0, 2026-07-20 10:07:06
  */
 public class AlipayOpenMiniPrivacyAuditCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4595471387993144158L;
+	private static final long serialVersionUID = 2849833158929458113L;
 
 	/**
 	 * 联系人邮箱。邮箱和联系电话不可都为空
@@ -29,9 +29,17 @@ public class AlipayOpenMiniPrivacyAuditCreateModel extends AlipayObject {
 	private String contactPhone;
 
 	/**
-	 * 隐私协议对用户公开类型,可选公开(PUBLIC)和不公开(HIDE)
+	 * 第三方插件信息
+	 */
+	@ApiListField("plugin_privacy_fields")
+	@ApiField("plugin_privacy_fields")
+	private List<PluginPrivacyFields> pluginPrivacyFields;
+
+	/**
+	 * 隐私协议对用户公开类型,可选公开(PUBLIC)和不公开(HIDE) 当前字段已废弃(该字段值固定位PUBLIC，无需传入。)
 	 */
 	@ApiField("public_type")
+	@Deprecated
 	private String publicType;
 
 	/**
@@ -41,17 +49,37 @@ public class AlipayOpenMiniPrivacyAuditCreateModel extends AlipayObject {
 	private String replyCycle;
 
 	/**
+	 * 第三方SDK信息
+	 */
+	@ApiListField("sdk_privacy_fields")
+	@ApiField("sdk_privacy_fields")
+	private List<SdkPrivacyFields> sdkPrivacyFields;
+
+	/**
 	 * 数据存储地,境内：inside，境外：outside
 	 */
 	@ApiField("storage_location")
 	private String storageLocation;
 
 	/**
-	 * 系统定义的隐私字段
+	 * 端权限隐私字段
+	 */
+	@ApiListField("system_permission_privacy_fields")
+	@ApiField("system_permission_privacy_fields")
+	private List<SystemPermissionPrivacyFields> systemPermissionPrivacyFields;
+
+	/**
+	 * 用户信息隐私字段
 	 */
 	@ApiListField("system_privacy_fields")
 	@ApiField("system_privacy_field")
 	private List<SystemPrivacyField> systemPrivacyFields;
+
+	/**
+	 * 如果需要上传自定义文档，可通过alipay.open.mini.privacy.customfile.upload接口上传文件，并将该接口的返回中，user_custom_file字段的值填入这里。
+	 */
+	@ApiField("user_custom_file")
+	private String userCustomFile;
 
 	/**
 	 * 用户自定义隐私字段。最多支持20个
@@ -74,6 +102,13 @@ public class AlipayOpenMiniPrivacyAuditCreateModel extends AlipayObject {
 		this.contactPhone = contactPhone;
 	}
 
+	public List<PluginPrivacyFields> getPluginPrivacyFields() {
+		return this.pluginPrivacyFields;
+	}
+	public void setPluginPrivacyFields(List<PluginPrivacyFields> pluginPrivacyFields) {
+		this.pluginPrivacyFields = pluginPrivacyFields;
+	}
+
 	public String getPublicType() {
 		return this.publicType;
 	}
@@ -88,6 +123,13 @@ public class AlipayOpenMiniPrivacyAuditCreateModel extends AlipayObject {
 		this.replyCycle = replyCycle;
 	}
 
+	public List<SdkPrivacyFields> getSdkPrivacyFields() {
+		return this.sdkPrivacyFields;
+	}
+	public void setSdkPrivacyFields(List<SdkPrivacyFields> sdkPrivacyFields) {
+		this.sdkPrivacyFields = sdkPrivacyFields;
+	}
+
 	public String getStorageLocation() {
 		return this.storageLocation;
 	}
@@ -95,11 +137,25 @@ public class AlipayOpenMiniPrivacyAuditCreateModel extends AlipayObject {
 		this.storageLocation = storageLocation;
 	}
 
+	public List<SystemPermissionPrivacyFields> getSystemPermissionPrivacyFields() {
+		return this.systemPermissionPrivacyFields;
+	}
+	public void setSystemPermissionPrivacyFields(List<SystemPermissionPrivacyFields> systemPermissionPrivacyFields) {
+		this.systemPermissionPrivacyFields = systemPermissionPrivacyFields;
+	}
+
 	public List<SystemPrivacyField> getSystemPrivacyFields() {
 		return this.systemPrivacyFields;
 	}
 	public void setSystemPrivacyFields(List<SystemPrivacyField> systemPrivacyFields) {
 		this.systemPrivacyFields = systemPrivacyFields;
+	}
+
+	public String getUserCustomFile() {
+		return this.userCustomFile;
+	}
+	public void setUserCustomFile(String userCustomFile) {
+		this.userCustomFile = userCustomFile;
 	}
 
 	public List<UserDefinePrivacyPolicyField> getUserDefinePrivacyFields() {

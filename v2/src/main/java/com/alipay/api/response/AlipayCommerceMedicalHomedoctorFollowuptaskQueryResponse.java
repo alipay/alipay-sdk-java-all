@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.homedoctor.followuptask.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-06-24 17:58:47
+ * @since 1.0, 2026-07-14 14:22:52
  */
 public class AlipayCommerceMedicalHomedoctorFollowuptaskQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6288849987462672484L;
+	private static final long serialVersionUID = 4134855422966466632L;
 
 	/** 
 	 * 外部业务流水号

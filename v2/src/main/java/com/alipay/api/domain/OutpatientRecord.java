@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-07-13 16:10:47
+ * @since 1.0, 2026-07-17 16:32:52
  */
 public class OutpatientRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 1812955785744126619L;
+	private static final long serialVersionUID = 3122848537372578241L;
 
 	/**
 	 * 病人主诉
@@ -60,6 +60,18 @@ public class OutpatientRecord extends AlipayObject {
 	 */
 	@ApiField("result")
 	private String result;
+
+	/**
+	 * 中医诊断结果（type=TCM时有效）
+	 */
+	@ApiField("tcm_diagnosis_result")
+	private String tcmDiagnosisResult;
+
+	/**
+	 * 中医四诊（type=TCM时有效）
+	 */
+	@ApiField("tcm_four_diagnosis")
+	private String tcmFourDiagnosis;
 
 	/**
 	 * 处理及意见
@@ -127,6 +139,20 @@ public class OutpatientRecord extends AlipayObject {
 	}
 	public void setResult(String result) {
 		this.result = result;
+	}
+
+	public String getTcmDiagnosisResult() {
+		return this.tcmDiagnosisResult;
+	}
+	public void setTcmDiagnosisResult(String tcmDiagnosisResult) {
+		this.tcmDiagnosisResult = tcmDiagnosisResult;
+	}
+
+	public String getTcmFourDiagnosis() {
+		return this.tcmFourDiagnosis;
+	}
+	public void setTcmFourDiagnosis(String tcmFourDiagnosis) {
+		this.tcmFourDiagnosis = tcmFourDiagnosis;
 	}
 
 	public String getTreatmentAdvice() {

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class PoiTagInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8415553699656881828L;
+	private static final long serialVersionUID = 8866543736137613593L;
 
 	/**
 	 * 景点列表

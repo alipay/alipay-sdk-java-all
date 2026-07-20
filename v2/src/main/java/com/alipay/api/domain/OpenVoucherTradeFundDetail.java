@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class OpenVoucherTradeFundDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3242863421586941575L;
+	private static final long serialVersionUID = 7545736367933829217L;
 
 	/**
 	 * 金额，单位分

@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * AI付代买委托信息
  *
  * @author auto create
- * @since 1.0, 2026-03-26 17:26:13
+ * @since 1.0, 2026-07-16 17:02:54
  */
 public class DelegationParams extends AlipayObject {
 
-	private static final long serialVersionUID = 6583797366888946689L;
+	private static final long serialVersionUID = 5477948379158789695L;
 
 	/**
 	 * 对AI付代买委托意图做描述
 	 */
 	@ApiField("delegation_desc")
 	private String delegationDesc;
+
+	/**
+	 * 委托业务场景
+	 */
+	@ApiField("delegation_scene")
+	private String delegationScene;
 
 	/**
 	 * 描述代买委托
@@ -32,10 +38,34 @@ public class DelegationParams extends AlipayObject {
 	private String externalDelegationId;
 
 	/**
+	 * 外部交易号列表
+	 */
+	@ApiField("external_tradeno_list")
+	private String externalTradenoList;
+
+	/**
+	 * 首次扣款时间
+	 */
+	@ApiField("first_deduct_time")
+	private String firstDeductTime;
+
+	/**
+	 * 商品 SKU 信息
+	 */
+	@ApiField("goods_sku_info")
+	private String goodsSkuInfo;
+
+	/**
 	 * AI付代买委托总限额，币种为人民币，单位为元
 	 */
 	@ApiField("max_total_amount")
 	private String maxTotalAmount;
+
+	/**
+	 * AI委托授权单次限额，币种为人民币，金额为元
+	 */
+	@ApiField("quota_amount")
+	private String quotaAmount;
 
 	/**
 	 * AI付代买委托总次数
@@ -69,6 +99,13 @@ public class DelegationParams extends AlipayObject {
 		this.delegationDesc = delegationDesc;
 	}
 
+	public String getDelegationScene() {
+		return this.delegationScene;
+	}
+	public void setDelegationScene(String delegationScene) {
+		this.delegationScene = delegationScene;
+	}
+
 	public String getDelegationTag() {
 		return this.delegationTag;
 	}
@@ -83,11 +120,39 @@ public class DelegationParams extends AlipayObject {
 		this.externalDelegationId = externalDelegationId;
 	}
 
+	public String getExternalTradenoList() {
+		return this.externalTradenoList;
+	}
+	public void setExternalTradenoList(String externalTradenoList) {
+		this.externalTradenoList = externalTradenoList;
+	}
+
+	public String getFirstDeductTime() {
+		return this.firstDeductTime;
+	}
+	public void setFirstDeductTime(String firstDeductTime) {
+		this.firstDeductTime = firstDeductTime;
+	}
+
+	public String getGoodsSkuInfo() {
+		return this.goodsSkuInfo;
+	}
+	public void setGoodsSkuInfo(String goodsSkuInfo) {
+		this.goodsSkuInfo = goodsSkuInfo;
+	}
+
 	public String getMaxTotalAmount() {
 		return this.maxTotalAmount;
 	}
 	public void setMaxTotalAmount(String maxTotalAmount) {
 		this.maxTotalAmount = maxTotalAmount;
+	}
+
+	public String getQuotaAmount() {
+		return this.quotaAmount;
+	}
+	public void setQuotaAmount(String quotaAmount) {
+		this.quotaAmount = quotaAmount;
 	}
 
 	public String getTimesLimit() {

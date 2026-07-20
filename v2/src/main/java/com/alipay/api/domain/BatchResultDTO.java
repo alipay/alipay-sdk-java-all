@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class BatchResultDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3519343768916155768L;
+	private static final long serialVersionUID = 1453771597824247368L;
 
 	/**
 	 * 是否全部成功

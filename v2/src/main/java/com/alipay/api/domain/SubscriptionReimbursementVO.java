@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SubscriptionReimbursementVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8615592522843368271L;
+	private static final long serialVersionUID = 2859313723799677188L;
 
 	/**
 	 * 报销原因说明

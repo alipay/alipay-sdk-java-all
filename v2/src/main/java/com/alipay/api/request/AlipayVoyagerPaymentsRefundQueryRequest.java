@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.voyager.payments.refund.query request
  * 
  * @author auto create
- * @since 1.0, 2026-07-14 10:50:53
+ * @since 1.0, 2026-07-14 14:57:53
  */
 public class AlipayVoyagerPaymentsRefundQueryRequest implements AlipayRequest<AlipayVoyagerPaymentsRefundQueryResponse> {
 

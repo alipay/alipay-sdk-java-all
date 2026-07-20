@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 中医
  *
  * @author auto create
- * @since 1.0, 2026-07-13 16:10:47
+ * @since 1.0, 2026-07-17 16:32:52
  */
 public class TraditionalChineseMedicine extends AlipayObject {
 
-	private static final long serialVersionUID = 7275724293718815227L;
+	private static final long serialVersionUID = 2262931136742953912L;
 
 	/**
 	 * null
@@ -22,6 +22,12 @@ public class TraditionalChineseMedicine extends AlipayObject {
 	@ApiListField("medication_information_list")
 	@ApiField("medication_information")
 	private List<MedicationInformation> medicationInformationList;
+
+	/**
+	 * 用药医嘱
+	 */
+	@ApiField("medication_order")
+	private String medicationOrder;
 
 	/**
 	 * 药品用法  eg：5剂 每日一剂 水煎 400ml
@@ -34,6 +40,13 @@ public class TraditionalChineseMedicine extends AlipayObject {
 	}
 	public void setMedicationInformationList(List<MedicationInformation> medicationInformationList) {
 		this.medicationInformationList = medicationInformationList;
+	}
+
+	public String getMedicationOrder() {
+		return this.medicationOrder;
+	}
+	public void setMedicationOrder(String medicationOrder) {
+		this.medicationOrder = medicationOrder;
 	}
 
 	public String getUsage() {

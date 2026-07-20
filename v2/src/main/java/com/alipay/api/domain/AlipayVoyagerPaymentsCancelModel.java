@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * voyager支付撤销接口
  *
  * @author auto create
- * @since 1.0, 2026-07-14 11:02:21
+ * @since 1.0, 2026-07-14 14:57:52
  */
 public class AlipayVoyagerPaymentsCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6218189183439212244L;
+	private static final long serialVersionUID = 6357338849214881324L;
 
 	/**
 	 * voyager授权返回的openId
@@ -30,6 +30,12 @@ public class AlipayVoyagerPaymentsCancelModel extends AlipayObject {
 	 */
 	@ApiField("payment_request_id")
 	private String paymentRequestId;
+
+	/**
+	 * 用户Id
+	 */
+	@ApiField("user_id")
+	private String userId;
 
 	public String getOpenId() {
 		return this.openId;
@@ -50,6 +56,13 @@ public class AlipayVoyagerPaymentsCancelModel extends AlipayObject {
 	}
 	public void setPaymentRequestId(String paymentRequestId) {
 		this.paymentRequestId = paymentRequestId;
+	}
+
+	public String getUserId() {
+		return this.userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
 
 }

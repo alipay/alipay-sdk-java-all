@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LogisticsWorkPlace extends AlipayObject {
 
-	private static final long serialVersionUID = 1421817643971451535L;
+	private static final long serialVersionUID = 8593618864561576967L;
 
 	/**
 	 * 对于铺设点的进一步描述，该值目前不会在作业小程序上展示，仅用作内部标识

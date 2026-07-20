@@ -22,7 +22,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMedicalYpzRecommendcardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2125233653871142312L;
+	private static final long serialVersionUID = 2272547318771979416L;
 
 	/** 
 	 * 阿福带下载卡

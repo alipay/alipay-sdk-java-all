@@ -7,11 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * ISV同步护士信息给SAAS
  *
  * @author auto create
- * @since 1.0, 2026-07-13 11:07:54
+ * @since 1.0, 2026-07-17 16:42:49
  */
 public class AlipayCommerceMedicalFulfillmentNurseSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8198821124989567327L;
+	private static final long serialVersionUID = 7525458826766639569L;
+
+	/**
+	 * 预计出报告结束时间，示例：2026-06-25 12:30
+	 */
+	@ApiField("expected_report_end_time")
+	private String expectedReportEndTime;
+
+	/**
+	 * 预计出报告开始时间，示例：2026-06-25 12:00
+	 */
+	@ApiField("expected_report_start_time")
+	private String expectedReportStartTime;
 
 	/**
 	 * 履约单ID
@@ -72,6 +84,26 @@ public class AlipayCommerceMedicalFulfillmentNurseSyncModel extends AlipayObject
 	 */
 	@ApiField("type")
 	private String type;
+
+	/**
+	 * 预约码，示例：5566
+	 */
+	@ApiField("verify_code")
+	private String verifyCode;
+
+	public String getExpectedReportEndTime() {
+		return this.expectedReportEndTime;
+	}
+	public void setExpectedReportEndTime(String expectedReportEndTime) {
+		this.expectedReportEndTime = expectedReportEndTime;
+	}
+
+	public String getExpectedReportStartTime() {
+		return this.expectedReportStartTime;
+	}
+	public void setExpectedReportStartTime(String expectedReportStartTime) {
+		this.expectedReportStartTime = expectedReportStartTime;
+	}
 
 	public String getFulfillmentId() {
 		return this.fulfillmentId;
@@ -141,6 +173,13 @@ public class AlipayCommerceMedicalFulfillmentNurseSyncModel extends AlipayObject
 	}
 	public void setType(String type) {
 		this.type = type;
+	}
+
+	public String getVerifyCode() {
+		return this.verifyCode;
+	}
+	public void setVerifyCode(String verifyCode) {
+		this.verifyCode = verifyCode;
 	}
 
 }

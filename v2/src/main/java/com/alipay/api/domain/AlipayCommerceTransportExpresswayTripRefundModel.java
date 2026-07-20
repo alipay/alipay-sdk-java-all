@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportExpresswayTripRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6378176933185838473L;
+	private static final long serialVersionUID = 2693531632912125468L;
 
 	/**
 	 * 支付宝侧车牌付代扣协议号，该协议号是经过车牌付业务域包装过的，只有该业务域能解析。

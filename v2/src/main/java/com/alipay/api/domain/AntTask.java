@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AntTask extends AlipayObject {
 
-	private static final long serialVersionUID = 1634328522684522688L;
+	private static final long serialVersionUID = 6187961879796164522L;
 
 	/**
 	 * 节点ID

@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-07-13 16:10:47
+ * @since 1.0, 2026-07-17 16:32:52
  */
 public class InpatientRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 1379138338248518667L;
+	private static final long serialVersionUID = 5222541155771135491L;
+
+	/**
+	 * 入院情况信息列表
+	 */
+	@ApiField("admission_info")
+	private AdmissionInfo admissionInfo;
 
 	/**
 	 * 数据唯一标识，用于去重
@@ -38,6 +44,12 @@ public class InpatientRecord extends AlipayObject {
 	 */
 	@ApiField("discharge_date")
 	private String dischargeDate;
+
+	/**
+	 * 出院小结
+	 */
+	@ApiField("discharge_info")
+	private DischargeInfo dischargeInfo;
 
 	/**
 	 * 就诊医院
@@ -83,6 +95,12 @@ public class InpatientRecord extends AlipayObject {
 	private String traditionalChineseMedicineDiagnosis;
 
 	/**
+	 * 门诊类型 中医（CM）/西医（WM）
+	 */
+	@ApiField("type")
+	private String type;
+
+	/**
 	 * 入院途径、入院诊断名称
 	 */
 	@ApiField("way")
@@ -93,6 +111,13 @@ public class InpatientRecord extends AlipayObject {
 	 */
 	@ApiField("western_medicine_diagnosis")
 	private String westernMedicineDiagnosis;
+
+	public AdmissionInfo getAdmissionInfo() {
+		return this.admissionInfo;
+	}
+	public void setAdmissionInfo(AdmissionInfo admissionInfo) {
+		this.admissionInfo = admissionInfo;
+	}
 
 	public String getDataId() {
 		return this.dataId;
@@ -120,6 +145,13 @@ public class InpatientRecord extends AlipayObject {
 	}
 	public void setDischargeDate(String dischargeDate) {
 		this.dischargeDate = dischargeDate;
+	}
+
+	public DischargeInfo getDischargeInfo() {
+		return this.dischargeInfo;
+	}
+	public void setDischargeInfo(DischargeInfo dischargeInfo) {
+		this.dischargeInfo = dischargeInfo;
 	}
 
 	public String getHospitalName() {
@@ -169,6 +201,13 @@ public class InpatientRecord extends AlipayObject {
 	}
 	public void setTraditionalChineseMedicineDiagnosis(String traditionalChineseMedicineDiagnosis) {
 		this.traditionalChineseMedicineDiagnosis = traditionalChineseMedicineDiagnosis;
+	}
+
+	public String getType() {
+		return this.type;
+	}
+	public void setType(String type) {
+		this.type = type;
 	}
 
 	public String getWay() {

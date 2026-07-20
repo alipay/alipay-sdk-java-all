@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 保险域内企业员工模型
  *
  * @author auto create
- * @since 1.0, 2022-06-28 15:42:41
+ * @since 1.0, 2026-07-17 10:30:27
  */
 public class InsEmployee extends AlipayObject {
 
-	private static final long serialVersionUID = 8813952484753811876L;
+	private static final long serialVersionUID = 2254954799326276219L;
 
 	/**
 	 * 证件名称
@@ -42,6 +42,12 @@ public class InsEmployee extends AlipayObject {
 	 */
 	@ApiField("job_level")
 	private String jobLevel;
+
+	/**
+	 * 业务幂等单号
+	 */
+	@ApiField("out_employee_biz_no")
+	private String outEmployeeBizNo;
 
 	/**
 	 * 外部员工id
@@ -88,6 +94,13 @@ public class InsEmployee extends AlipayObject {
 	}
 	public void setJobLevel(String jobLevel) {
 		this.jobLevel = jobLevel;
+	}
+
+	public String getOutEmployeeBizNo() {
+		return this.outEmployeeBizNo;
+	}
+	public void setOutEmployeeBizNo(String outEmployeeBizNo) {
+		this.outEmployeeBizNo = outEmployeeBizNo;
 	}
 
 	public String getOutEmployeeId() {

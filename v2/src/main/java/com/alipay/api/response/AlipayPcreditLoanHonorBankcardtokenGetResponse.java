@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPcreditLoanHonorBankcardtokenGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6845672941676633898L;
+	private static final long serialVersionUID = 6795465614117297692L;
 
 	/** 
 	 * 查询银行卡列表token

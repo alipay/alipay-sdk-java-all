@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RcMedConsultResult extends AlipayObject {
 
-	private static final long serialVersionUID = 5151254391671997374L;
+	private static final long serialVersionUID = 6221137468364812687L;
 
 	/**
 	 * 素问医疗信息咨询结果

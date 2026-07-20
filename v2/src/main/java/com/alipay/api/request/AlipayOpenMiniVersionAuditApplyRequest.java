@@ -15,7 +15,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.mini.version.audit.apply request
  * 
  * @author auto create
- * @since 1.0, 2025-10-30 10:47:40
+ * @since 1.0, 2026-07-16 11:22:53
  */
 public class AlipayOpenMiniVersionAuditApplyRequest implements AlipayUploadRequest<AlipayOpenMiniVersionAuditApplyResponse> {
 
@@ -76,6 +76,12 @@ com.alipay.iot.xpaas：支付宝IoT端。
 	private String bundleId;
 
 	/** 
+	* 第八张特殊资质图片文件，不能超过4MB，最大宽度 2160px，最大高度3840px。图片格式仅支持 png,jpg格式。
+参照<a href="https://opendocs.alipay.com/mini/operation/material ">https://opendocs.alipay.com/mini/operation/material</a>要求填写营业执照信息。
+	 */
+	private FileItem eighthSpecialLicensePic;
+
+	/** 
 	* 第五张营业执照照片，不能超过 4MB，最大宽度 2160 px，最大高度 3840 px。图片格式仅支持 png,jpg格式。
 参照<a href="https://opendocs.alipay.com/mini/operation/material ">https://opendocs.alipay.com/mini/operation/material</a>要求填写营业执照信息。
 	 */
@@ -86,6 +92,12 @@ com.alipay.iot.xpaas：支付宝IoT端。
 截图大小不能超过 4MB，最大宽度 2160px，最大高度3840px。图片格式仅支持 png,jpg格式。
 	 */
 	private FileItem fifthScreenShot;
+
+	/** 
+	* 第五张特殊资质图片文件，不能超过4MB，最大宽度 2160px，最大高度3840px。图片格式仅支持 png,jpg格式。
+参照<a href="https://opendocs.alipay.com/mini/operation/material ">https://opendocs.alipay.com/mini/operation/material</a>要求填写营业执照信息。
+	 */
+	private FileItem fifthSpecialLicensePic;
 
 	/** 
 	* 第一张营业执照照片，不能超过 4MB，最大宽度 2160 px，最大高度 3840 px。图片格式仅支持 png,jpg格式。
@@ -118,6 +130,12 @@ com.alipay.iot.xpaas：支付宝IoT端。
 	private FileItem fourthScreenShot;
 
 	/** 
+	* 第四张特殊资质图片文件，不能超过4MB，最大宽度 2160px，最大高度3840px。图片格式仅支持 png,jpg格式。
+参照<a href="https://opendocs.alipay.com/mini/operation/material ">https://opendocs.alipay.com/mini/operation/material</a>要求填写营业执照信息。
+	 */
+	private FileItem fourthSpecialLicensePic;
+
+	/** 
 	* 营业执照名称，参照<a href="https://opendocs.alipay.com/mini/operation/material">https://opendocs.alipay.com/mini/operation/material</a>,要求填写营业执照信息。
 	 */
 	private String licenseName;
@@ -142,6 +160,12 @@ com.alipay.iot.xpaas：支付宝IoT端。
 接口查询mini_category_list。
 	 */
 	private String miniCategoryIds;
+
+	/** 
+	* 第九张特殊资质图片文件，不能超过4MB，最大宽度 2160px，最大高度3840px。图片格式仅支持 png,jpg格式。
+参照<a href="https://opendocs.alipay.com/mini/operation/material ">https://opendocs.alipay.com/mini/operation/material</a>要求填写营业执照信息。
+	 */
+	private FileItem ninthSpecialLicensePic;
 
 	/** 
 	* 门头照，不能超过 4MB，最大宽度 2160 px，最大高度 3840 px。图片格式仅支持 png,jpg格式。
@@ -188,11 +212,29 @@ com.alipay.iot.xpaas：支付宝IoT端。
 	private List<RegionInfo> serviceRegionInfo;
 
 	/** 
+	* 第七张特殊资质图片文件，不能超过4MB，最大宽度 2160px，最大高度3840px。图片格式仅支持 png,jpg格式。
+参照<a href="https://opendocs.alipay.com/mini/operation/material ">https://opendocs.alipay.com/mini/operation/material</a>要求填写营业执照信息。
+	 */
+	private FileItem seventhSpecialLicensePic;
+
+	/** 
+	* 第六张特殊资质图片文件，不能超过4MB，最大宽度 2160px，最大高度3840px。图片格式仅支持 png,jpg格式。
+参照<a href="https://opendocs.alipay.com/mini/operation/material ">https://opendocs.alipay.com/mini/operation/material</a>要求填写营业执照信息。
+	 */
+	private FileItem sixthSpecialLicensePic;
+
+	/** 
 	* 如果有审核加急权益，是否使用审核加急权益加速审核：
 加速（默认）：true
 不加速：false
 	 */
 	private String speedUp;
+
+	/** 
+	* 第十张特殊资质图片文件，不能超过4MB，最大宽度 2160px，最大高度3840px。图片格式仅支持 png,jpg格式。
+参照<a href="https://opendocs.alipay.com/mini/operation/material ">https://opendocs.alipay.com/mini/operation/material</a>要求填写营业执照信息。
+	 */
+	private FileItem tenthSpecialLicensePic;
 
 	/** 
 	* 测试账号，是否需要填写请参见<a href="https://opendocs.alipay.com/mini/operation/standard/case/akxg6r#3.%20%E6%B5%8B%E8%AF%95%E5%86%85%E5%AE%B9%E6%8F%90%E4%BA%A4%E4%B8%8D%E5%AE%8C%E6%95%B4">https://opendocs.alipay.com/mini/operation/standard/case/akxg6r#3.%20%E6%B5%8B%E8%AF%95%E5%86%85%E5%AE%B9%E6%8F%90%E4%BA%A4%E4%B8%8D%E5%AE%8C%E6%95%B4</a>
@@ -302,6 +344,13 @@ com.alipay.iot.xpaas：支付宝IoT端。
 		return this.bundleId;
 	}
 
+	public void setEighthSpecialLicensePic(FileItem eighthSpecialLicensePic) {
+		this.eighthSpecialLicensePic = eighthSpecialLicensePic;
+	}
+	public FileItem getEighthSpecialLicensePic() {
+		return this.eighthSpecialLicensePic;
+	}
+
 	public void setFifthLicensePic(FileItem fifthLicensePic) {
 		this.fifthLicensePic = fifthLicensePic;
 	}
@@ -314,6 +363,13 @@ com.alipay.iot.xpaas：支付宝IoT端。
 	}
 	public FileItem getFifthScreenShot() {
 		return this.fifthScreenShot;
+	}
+
+	public void setFifthSpecialLicensePic(FileItem fifthSpecialLicensePic) {
+		this.fifthSpecialLicensePic = fifthSpecialLicensePic;
+	}
+	public FileItem getFifthSpecialLicensePic() {
+		return this.fifthSpecialLicensePic;
 	}
 
 	public void setFirstLicensePic(FileItem firstLicensePic) {
@@ -351,6 +407,13 @@ com.alipay.iot.xpaas：支付宝IoT端。
 		return this.fourthScreenShot;
 	}
 
+	public void setFourthSpecialLicensePic(FileItem fourthSpecialLicensePic) {
+		this.fourthSpecialLicensePic = fourthSpecialLicensePic;
+	}
+	public FileItem getFourthSpecialLicensePic() {
+		return this.fourthSpecialLicensePic;
+	}
+
 	public void setLicenseName(String licenseName) {
 		this.licenseName = licenseName;
 	}
@@ -384,6 +447,13 @@ com.alipay.iot.xpaas：支付宝IoT端。
 	}
 	public String getMiniCategoryIds() {
 		return this.miniCategoryIds;
+	}
+
+	public void setNinthSpecialLicensePic(FileItem ninthSpecialLicensePic) {
+		this.ninthSpecialLicensePic = ninthSpecialLicensePic;
+	}
+	public FileItem getNinthSpecialLicensePic() {
+		return this.ninthSpecialLicensePic;
 	}
 
 	public void setOutDoorPic(FileItem outDoorPic) {
@@ -442,11 +512,32 @@ com.alipay.iot.xpaas：支付宝IoT端。
 		return this.serviceRegionInfo;
 	}
 
+	public void setSeventhSpecialLicensePic(FileItem seventhSpecialLicensePic) {
+		this.seventhSpecialLicensePic = seventhSpecialLicensePic;
+	}
+	public FileItem getSeventhSpecialLicensePic() {
+		return this.seventhSpecialLicensePic;
+	}
+
+	public void setSixthSpecialLicensePic(FileItem sixthSpecialLicensePic) {
+		this.sixthSpecialLicensePic = sixthSpecialLicensePic;
+	}
+	public FileItem getSixthSpecialLicensePic() {
+		return this.sixthSpecialLicensePic;
+	}
+
 	public void setSpeedUp(String speedUp) {
 		this.speedUp = speedUp;
 	}
 	public String getSpeedUp() {
 		return this.speedUp;
+	}
+
+	public void setTenthSpecialLicensePic(FileItem tenthSpecialLicensePic) {
+		this.tenthSpecialLicensePic = tenthSpecialLicensePic;
+	}
+	public FileItem getTenthSpecialLicensePic() {
+		return this.tenthSpecialLicensePic;
 	}
 
 	public void setTestAccout(String testAccout) {
@@ -596,17 +687,24 @@ com.alipay.iot.xpaas：支付宝IoT端。
 	public Map<String, FileItem> getFileParams() {
 		Map<String, FileItem> params = new HashMap<String, FileItem>();
 		params.put("app_logo", this.appLogo);
+		params.put("eighth_special_license_pic", this.eighthSpecialLicensePic);
 		params.put("fifth_license_pic", this.fifthLicensePic);
 		params.put("fifth_screen_shot", this.fifthScreenShot);
+		params.put("fifth_special_license_pic", this.fifthSpecialLicensePic);
 		params.put("first_license_pic", this.firstLicensePic);
 		params.put("first_screen_shot", this.firstScreenShot);
 		params.put("first_special_license_pic", this.firstSpecialLicensePic);
 		params.put("fourth_license_pic", this.fourthLicensePic);
 		params.put("fourth_screen_shot", this.fourthScreenShot);
+		params.put("fourth_special_license_pic", this.fourthSpecialLicensePic);
+		params.put("ninth_special_license_pic", this.ninthSpecialLicensePic);
 		params.put("out_door_pic", this.outDoorPic);
 		params.put("second_license_pic", this.secondLicensePic);
 		params.put("second_screen_shot", this.secondScreenShot);
 		params.put("second_special_license_pic", this.secondSpecialLicensePic);
+		params.put("seventh_special_license_pic", this.seventhSpecialLicensePic);
+		params.put("sixth_special_license_pic", this.sixthSpecialLicensePic);
+		params.put("tenth_special_license_pic", this.tenthSpecialLicensePic);
 		params.put("test_file_name", this.testFileName);
 		params.put("third_license_pic", this.thirdLicensePic);
 		params.put("third_screen_shot", this.thirdScreenShot);

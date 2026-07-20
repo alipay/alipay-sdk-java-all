@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CommunityPicInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7512151152154657961L;
+	private static final long serialVersionUID = 4161885981625116925L;
 
 	/**
 	 * 小区的活动娱乐设施图片

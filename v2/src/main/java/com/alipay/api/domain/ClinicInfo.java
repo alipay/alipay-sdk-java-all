@@ -10,11 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 就诊信息
  *
  * @author auto create
- * @since 1.0, 2026-05-14 15:01:05
+ * @since 1.0, 2026-07-17 10:54:21
  */
 public class ClinicInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7567673422415518946L;
+	private static final long serialVersionUID = 8727939777623137832L;
+
+	/**
+	 * 期望就诊结束时间
+	 */
+	@ApiField("appointment_end_time")
+	private String appointmentEndTime;
+
+	/**
+	 * 期望就诊开始时间
+	 */
+	@ApiField("appointment_start_time")
+	private String appointmentStartTime;
 
 	/**
 	 * 格式：yyyy-MM-dd HH:mm:ss
@@ -41,6 +53,12 @@ public class ClinicInfo extends AlipayObject {
 	private String clinicCategory;
 
 	/**
+	 * 当前所在城市
+	 */
+	@ApiField("current_city")
+	private String currentCity;
+
+	/**
 	 * 就诊科室
 	 */
 	@ApiField("department")
@@ -57,6 +75,12 @@ public class ClinicInfo extends AlipayObject {
 	 */
 	@ApiField("district_name")
 	private String districtName;
+
+	/**
+	 * 期望就诊专家
+	 */
+	@ApiField("expert")
+	private String expert;
 
 	/**
 	 * 医院详细地址
@@ -89,6 +113,20 @@ public class ClinicInfo extends AlipayObject {
 	@ApiField("province_name")
 	private String provinceName;
 
+	public String getAppointmentEndTime() {
+		return this.appointmentEndTime;
+	}
+	public void setAppointmentEndTime(String appointmentEndTime) {
+		this.appointmentEndTime = appointmentEndTime;
+	}
+
+	public String getAppointmentStartTime() {
+		return this.appointmentStartTime;
+	}
+	public void setAppointmentStartTime(String appointmentStartTime) {
+		this.appointmentStartTime = appointmentStartTime;
+	}
+
 	public String getAppointmentTime() {
 		return this.appointmentTime;
 	}
@@ -117,6 +155,13 @@ public class ClinicInfo extends AlipayObject {
 		this.clinicCategory = clinicCategory;
 	}
 
+	public String getCurrentCity() {
+		return this.currentCity;
+	}
+	public void setCurrentCity(String currentCity) {
+		this.currentCity = currentCity;
+	}
+
 	public String getDepartment() {
 		return this.department;
 	}
@@ -136,6 +181,13 @@ public class ClinicInfo extends AlipayObject {
 	}
 	public void setDistrictName(String districtName) {
 		this.districtName = districtName;
+	}
+
+	public String getExpert() {
+		return this.expert;
+	}
+	public void setExpert(String expert) {
+		this.expert = expert;
 	}
 
 	public String getHospitalAddress() {

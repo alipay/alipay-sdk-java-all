@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ActivityPromotionInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7762592541673776722L;
+	private static final long serialVersionUID = 8476117327518298919L;
 
 	/**
 	 * 优惠时间限制信息，可限制周和天的使用时间段

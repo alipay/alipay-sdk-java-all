@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEngineeringInfrastructureStockKlineQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3154681562676834189L;
+	private static final long serialVersionUID = 3548277174389246279L;
 
 	/** 
 	 * 业务数据，类型为ObjKLineDTOWrapper

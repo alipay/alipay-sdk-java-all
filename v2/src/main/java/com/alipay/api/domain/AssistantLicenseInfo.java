@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-04-02 11:48:34
+ * @since 1.0, 2026-07-17 10:00:15
  */
 public class AssistantLicenseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2235857398868851717L;
+	private static final long serialVersionUID = 1641522283634963737L;
 
 	/**
 	 * 许可证开始生效时间，为一个时间字段，在这个时间点后（包含当前时间点）可使用

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantIndirectZftforcCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1196648793152363349L;
+	private static final long serialVersionUID = 3352881677653116659L;
 
 	/**
 	 * 直付通c2c申请单

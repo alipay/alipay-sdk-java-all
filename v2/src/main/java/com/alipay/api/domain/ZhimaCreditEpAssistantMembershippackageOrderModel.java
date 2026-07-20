@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 企信助手会员包提前续约
  *
  * @author auto create
- * @since 1.0, 2026-04-02 11:48:34
+ * @since 1.0, 2026-07-17 10:00:15
  */
 public class ZhimaCreditEpAssistantMembershippackageOrderModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5573653915529463497L;
+	private static final long serialVersionUID = 4698278548845422387L;
 
 	/**
 	 * 续约时长数量，其单位依赖于duration_unit表示的单位类型，如 duration_unit=HALF_YEAR，duration_quantity=3 则表示一年半

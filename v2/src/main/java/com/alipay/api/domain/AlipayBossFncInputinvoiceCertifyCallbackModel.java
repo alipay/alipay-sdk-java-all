@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayBossFncInputinvoiceCertifyCallbackModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6415471194119185665L;
+	private static final long serialVersionUID = 4416742154467626129L;
 
 	/**
 	 * 回调入参

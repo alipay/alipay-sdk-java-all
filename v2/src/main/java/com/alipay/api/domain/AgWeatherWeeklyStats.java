@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AgWeatherWeeklyStats extends AlipayObject {
 
-	private static final long serialVersionUID = 7515827588379946365L;
+	private static final long serialVersionUID = 5248633182616645644L;
 
 	/**
 	 * 累计降水，单位mm*天

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.homedoctor.followuptask.create response.
  * 
  * @author auto create
- * @since 1.0, 2026-07-14 14:14:03
+ * @since 1.0, 2026-07-14 14:17:49
  */
 public class AlipayCommerceMedicalHomedoctorFollowuptaskCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6261287487179554665L;
+	private static final long serialVersionUID = 7171483239767259988L;
 
 	/** 
 	 * null

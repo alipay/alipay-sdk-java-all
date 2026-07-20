@@ -8,11 +8,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.commercial.order.create response.
  * 
  * @author auto create
- * @since 1.0, 2026-06-08 19:47:56
+ * @since 1.0, 2026-07-15 17:17:56
  */
 public class AlipayTradeCommercialOrderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7347459549761376743L;
+	private static final long serialVersionUID = 7634773299561422551L;
+
+	/** 
+	 * 长链，适用于跳转拉起支付宝端；ui_mode= app_schema时返回
+	 */
+	@ApiField("alipay_jump_schema")
+	private String alipayJumpSchema;
+
+	/** 
+	 * 短链，适用于生成二维码 ；ui_mode= app_schema时返回
+	 */
+	@ApiField("alipay_schema")
+	private String alipaySchema;
 
 	/** 
 	 * 本次支付的收银台地址，可用于302跳转
@@ -37,6 +49,20 @@ public class AlipayTradeCommercialOrderCreateResponse extends AlipayResponse {
 	 */
 	@ApiField("status")
 	private String status;
+
+	public void setAlipayJumpSchema(String alipayJumpSchema) {
+		this.alipayJumpSchema = alipayJumpSchema;
+	}
+	public String getAlipayJumpSchema( ) {
+		return this.alipayJumpSchema;
+	}
+
+	public void setAlipaySchema(String alipaySchema) {
+		this.alipaySchema = alipaySchema;
+	}
+	public String getAlipaySchema( ) {
+		return this.alipaySchema;
+	}
 
 	public void setCheckoutUrl(String checkoutUrl) {
 		this.checkoutUrl = checkoutUrl;

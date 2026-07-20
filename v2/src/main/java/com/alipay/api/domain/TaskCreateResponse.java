@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-07-14 14:14:03
+ * @since 1.0, 2026-07-14 14:17:49
  */
 public class TaskCreateResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 7789954151482974439L;
+	private static final long serialVersionUID = 8691846918832311677L;
 
 	/**
 	 * 蚂蚁健康 Open ID

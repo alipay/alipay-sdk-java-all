@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业账户余额阀值设置
  *
  * @author auto create
- * @since 1.0, 2026-04-08 14:27:44
+ * @since 1.0, 2026-07-17 13:57:53
  */
 public class AlipayCommerceEcBalanceThresholdSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8632624476697291441L;
+	private static final long serialVersionUID = 8167356387787113776L;
 
 	/**
 	 * 企业码企业ID

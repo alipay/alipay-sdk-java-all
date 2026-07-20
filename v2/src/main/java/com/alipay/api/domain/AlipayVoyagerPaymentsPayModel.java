@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * voyager单笔支付接口
  *
  * @author auto create
- * @since 1.0, 2026-07-14 11:02:02
+ * @since 1.0, 2026-07-14 14:57:53
  */
 public class AlipayVoyagerPaymentsPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2796442133625477623L;
+	private static final long serialVersionUID = 3665497924957668859L;
 
 	/**
 	 * 环境信息
@@ -32,7 +32,7 @@ public class AlipayVoyagerPaymentsPayModel extends AlipayObject {
 	private String industry;
 
 	/**
-	 * 飞猪分配的openId
+	 * 主站网关的openId
 	 */
 	@ApiField("open_id")
 	private String openId;
@@ -78,6 +78,12 @@ public class AlipayVoyagerPaymentsPayModel extends AlipayObject {
 	 */
 	@ApiField("settlement_strategy")
 	private SettlementStrategyDTO settlementStrategy;
+
+	/**
+	 * 用户id，用来接受openId的转换
+	 */
+	@ApiField("user_id")
+	private String userId;
 
 	public VoyagerEnvInfo getEnv() {
 		return this.env;
@@ -154,6 +160,13 @@ public class AlipayVoyagerPaymentsPayModel extends AlipayObject {
 	}
 	public void setSettlementStrategy(SettlementStrategyDTO settlementStrategy) {
 		this.settlementStrategy = settlementStrategy;
+	}
+
+	public String getUserId() {
+		return this.userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
 
 }

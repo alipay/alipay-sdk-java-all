@@ -7,17 +7,30 @@ import com.alipay.api.internal.mapping.ApiField;
  * 智能体委托支付接口
  *
  * @author auto create
- * @since 1.0, 2026-07-06 20:21:23
+ * @since 1.0, 2026-07-14 15:31:25
  */
 public class AlipayTradeAgentDelegationPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4428599535922543332L;
+	private static final long serialVersionUID = 5668271238578652625L;
+
+	/**
+	 * 智能体id
+	 */
+	@ApiField("agent_id")
+	private String agentId;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号（用户签约成功后的协议号 ）
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
+
+	/**
+	 * 业务单号列表，单笔支付场景塞一个业务单号值。
+合并支付场景塞多笔订单，英文逗号分割。
+	 */
+	@ApiField("biz_order_no")
+	private String bizOrderNo;
 
 	/**
 	 * 代买委托id
@@ -31,11 +44,25 @@ public class AlipayTradeAgentDelegationPayModel extends AlipayObject {
 	@ApiField("prepay_id")
 	private String prepayId;
 
+	public String getAgentId() {
+		return this.agentId;
+	}
+	public void setAgentId(String agentId) {
+		this.agentId = agentId;
+	}
+
 	public String getAgreementNo() {
 		return this.agreementNo;
 	}
 	public void setAgreementNo(String agreementNo) {
 		this.agreementNo = agreementNo;
+	}
+
+	public String getBizOrderNo() {
+		return this.bizOrderNo;
+	}
+	public void setBizOrderNo(String bizOrderNo) {
+		this.bizOrderNo = bizOrderNo;
 	}
 
 	public String getDelegationId() {

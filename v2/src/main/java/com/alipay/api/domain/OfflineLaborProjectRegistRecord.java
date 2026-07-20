@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * null
+ * 项目登记记录
  *
  * @author auto create
- * @since 1.0, 2026-07-08 14:17:54
+ * @since 1.0, 2026-07-17 14:32:50
  */
 public class OfflineLaborProjectRegistRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 4591377812244541253L;
+	private static final long serialVersionUID = 4879865249443261654L;
 
 	/**
 	 * 用户支付宝账号
@@ -36,6 +36,12 @@ public class OfflineLaborProjectRegistRecord extends AlipayObject {
 	 */
 	@ApiField("certified")
 	private Boolean certified;
+
+	/**
+	 * 准驾车型+初次领证日期+有效期;没有有效的驾驶证信息返回：暂无数据
+	 */
+	@ApiField("driving_license")
+	private String drivingLicense;
 
 	/**
 	 * 人脸核验状态
@@ -135,6 +141,12 @@ public class OfflineLaborProjectRegistRecord extends AlipayObject {
 	@ApiField("user_name")
 	private String userName;
 
+	/**
+	 * 行驶证最多显示三条数据；没有有效的行驶证信息返回：暂无数据
+	 */
+	@ApiField("vehicle_registration_certificate")
+	private String vehicleRegistrationCertificate;
+
 	public String getAlipayAccount() {
 		return this.alipayAccount;
 	}
@@ -161,6 +173,13 @@ public class OfflineLaborProjectRegistRecord extends AlipayObject {
 	}
 	public void setCertified(Boolean certified) {
 		this.certified = certified;
+	}
+
+	public String getDrivingLicense() {
+		return this.drivingLicense;
+	}
+	public void setDrivingLicense(String drivingLicense) {
+		this.drivingLicense = drivingLicense;
 	}
 
 	public Boolean getFaceAuthStatus() {
@@ -273,6 +292,13 @@ public class OfflineLaborProjectRegistRecord extends AlipayObject {
 	}
 	public void setUserName(String userName) {
 		this.userName = userName;
+	}
+
+	public String getVehicleRegistrationCertificate() {
+		return this.vehicleRegistrationCertificate;
+	}
+	public void setVehicleRegistrationCertificate(String vehicleRegistrationCertificate) {
+		this.vehicleRegistrationCertificate = vehicleRegistrationCertificate;
 	}
 
 }

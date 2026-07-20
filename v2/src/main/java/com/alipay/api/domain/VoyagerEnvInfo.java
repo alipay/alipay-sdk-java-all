@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 环境信息
  *
  * @author auto create
- * @since 1.0, 2026-07-14 11:02:02
+ * @since 1.0, 2026-07-14 14:57:53
  */
 public class VoyagerEnvInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5656126647951588324L;
+	private static final long serialVersionUID = 3676235685271696265L;
 
 	/**
 	 * 客户端ip

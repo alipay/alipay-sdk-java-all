@@ -7,6 +7,7 @@ import com.alipay.api.domain.RentRiskProVO;
 import com.alipay.api.domain.ConsultFailReason;
 import com.alipay.api.domain.RiskBasicInfoVO;
 import com.alipay.api.domain.RentRiskInfoVO;
+import com.alipay.api.domain.ShipAssessmentResultVO;
 import com.alipay.api.domain.ShipGoodsRiskVO;
 import com.alipay.api.domain.TailoredRiskModelsVO;
 import com.alipay.api.domain.VerticalRiskVO;
@@ -17,11 +18,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.rent.risk.consult response.
  * 
  * @author auto create
- * @since 1.0, 2026-07-06 14:24:41
+ * @since 1.0, 2026-07-15 19:12:52
  */
 public class AlipayCommerceRentRiskConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6444854471348319425L;
+	private static final long serialVersionUID = 7752491434188132243L;
 
 	/** 
 	 * 长租/汽车订阅：Tn_Level类型结果，risk_level字段取值范围T1-T10（T1 ~ T4: 低风险；T5 ~ T6: 中风险；T7 ~ T8: 高风险；T9 ~ T10: 极高风险）
@@ -68,6 +69,12 @@ PRO-租安盾专业版，面向签约商户；
 	@ApiListField("risk_infos")
 	@ApiField("rent_risk_info_v_o")
 	private List<RentRiskInfoVO> riskInfos;
+
+	/** 
+	 * 发货评估结果
+	 */
+	@ApiField("ship_assessment_results")
+	private ShipAssessmentResultVO shipAssessmentResults;
 
 	/** 
 	 * null
@@ -148,6 +155,13 @@ PRO-租安盾专业版，面向签约商户；
 	}
 	public List<RentRiskInfoVO> getRiskInfos( ) {
 		return this.riskInfos;
+	}
+
+	public void setShipAssessmentResults(ShipAssessmentResultVO shipAssessmentResults) {
+		this.shipAssessmentResults = shipAssessmentResults;
+	}
+	public ShipAssessmentResultVO getShipAssessmentResults( ) {
+		return this.shipAssessmentResults;
 	}
 
 	public void setShipGoodsRiskModels(List<ShipGoodsRiskVO> shipGoodsRiskModels) {

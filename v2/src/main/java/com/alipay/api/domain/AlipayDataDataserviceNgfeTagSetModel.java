@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayDataDataserviceNgfeTagSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8625737451885195943L;
+	private static final long serialVersionUID = 1125689226341732545L;
 
 	/**
 	 * 标签写入应用，用于鉴权, 业务方按实际填写

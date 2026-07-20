@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.terminal.edgecloud.workorder.changemachine.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-24 10:05:37
+ * @since 1.0, 2026-07-17 11:16:45
  */
 public class AlipayTerminalEdgecloudWorkorderChangemachineQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1626412761197268613L;
+	private static final long serialVersionUID = 1634533556473629344L;
 
 	/** 
 	 * 维保换机工单列表，包含维保换机工单信息

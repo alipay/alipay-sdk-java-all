@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 新增收单身份组
  *
  * @author auto create
- * @since 1.0, 2026-06-11 16:17:55
+ * @since 1.0, 2026-07-17 13:52:53
  */
 public class AlipayCommerceEcReceiptidentitygroupCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6565262277747471326L;
+	private static final long serialVersionUID = 6696787817398956814L;
 
 	/**
 	 * 企业id

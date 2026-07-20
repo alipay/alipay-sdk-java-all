@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.ec.receiptidentitygroup.create request
  * 
  * @author auto create
- * @since 1.0, 2026-06-11 16:17:55
+ * @since 1.0, 2026-07-17 13:52:53
  */
 public class AlipayCommerceEcReceiptidentitygroupCreateRequest implements AlipayRequest<AlipayCommerceEcReceiptidentitygroupCreateResponse> {
 

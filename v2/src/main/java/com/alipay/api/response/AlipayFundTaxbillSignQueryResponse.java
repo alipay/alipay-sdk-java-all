@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundTaxbillSignQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3775777783394373122L;
+	private static final long serialVersionUID = 4779545489947244527L;
 
 	/** 
 	 * 场景码

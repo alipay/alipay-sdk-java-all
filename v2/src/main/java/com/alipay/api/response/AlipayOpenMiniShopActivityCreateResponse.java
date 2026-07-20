@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.shop.activity.create response.
  * 
  * @author auto create
- * @since 1.0, 2019-01-07 20:51:15
+ * @since 1.0, 2026-07-15 00:05:02
  */
 public class AlipayOpenMiniShopActivityCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6835636663822514964L;
+	private static final long serialVersionUID = 2716273116674166332L;
 
 	/** 
 	 * 业务处理流水号，唯一，可以根据该流水号进行活动取消

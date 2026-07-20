@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MutipleCurrencyDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8584634498573861663L;
+	private static final long serialVersionUID = 4237297592165661296L;
 
 	/**
 	 * 扩展字段

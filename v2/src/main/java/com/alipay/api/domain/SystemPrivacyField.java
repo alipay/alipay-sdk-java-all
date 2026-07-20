@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 系统定义的隐私字段
  *
  * @author auto create
- * @since 1.0, 2022-01-18 14:02:46
+ * @since 1.0, 2026-07-20 09:58:53
  */
 public class SystemPrivacyField extends AlipayObject {
 
-	private static final long serialVersionUID = 5198614337376412316L;
+	private static final long serialVersionUID = 5599627159672267897L;
 
 	/**
 	 * 字段的code

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class TimeRestrictInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6143477916591433445L;
+	private static final long serialVersionUID = 7471538357771823774L;
 
 	/**
 	 * 不可用时间段

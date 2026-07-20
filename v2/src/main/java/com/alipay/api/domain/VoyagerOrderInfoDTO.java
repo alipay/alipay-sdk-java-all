@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单信息
  *
  * @author auto create
- * @since 1.0, 2026-07-14 11:02:02
+ * @since 1.0, 2026-07-14 14:57:53
  */
 public class VoyagerOrderInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3614281491482494661L;
+	private static final long serialVersionUID = 4428622349338117983L;
 
 	/**
 	 * null

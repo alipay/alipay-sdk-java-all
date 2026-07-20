@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 蚂蚁店铺关闭
  *
  * @author auto create
- * @since 1.0, 2026-03-18 15:54:30
+ * @since 1.0, 2026-07-20 11:11:41
  */
 public class AntMerchantExpandShopCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5543642131744646657L;
+	private static final long serialVersionUID = 3454233624781911692L;
 
 	/**
 	 * 扩展信息列表。key值需要向对应行业的bd进行申请。

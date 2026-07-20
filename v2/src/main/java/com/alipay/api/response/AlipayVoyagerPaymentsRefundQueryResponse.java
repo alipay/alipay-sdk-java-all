@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.voyager.payments.refund.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-07-14 10:50:53
+ * @since 1.0, 2026-07-14 14:57:53
  */
 public class AlipayVoyagerPaymentsRefundQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3792918497618694173L;
+	private static final long serialVersionUID = 2861193918656618144L;
 
 	/** 
 	 * 退款订单

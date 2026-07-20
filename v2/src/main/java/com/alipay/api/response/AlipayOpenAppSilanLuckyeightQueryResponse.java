@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenAppSilanLuckyeightQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3265625943172143448L;
+	private static final long serialVersionUID = 8175885177852593886L;
 
 	
 
