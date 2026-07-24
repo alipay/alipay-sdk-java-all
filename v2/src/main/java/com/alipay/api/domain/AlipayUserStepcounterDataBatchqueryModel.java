@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserStepcounterDataBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5242588263594864713L;
+	private static final long serialVersionUID = 8689623195883849289L;
 
 	/**
 	 * 步数数据查询的结束日期。此日期不能小于步数查询的开始日期

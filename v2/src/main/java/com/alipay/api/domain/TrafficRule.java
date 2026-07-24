@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TrafficRule extends AlipayObject {
 
-	private static final long serialVersionUID = 4274446313838652887L;
+	private static final long serialVersionUID = 8724466915173656332L;
 
 	/**
 	 * 流量占比

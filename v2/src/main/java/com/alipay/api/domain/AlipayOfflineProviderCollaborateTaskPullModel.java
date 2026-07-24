@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOfflineProviderCollaborateTaskPullModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5845117549118263394L;
+	private static final long serialVersionUID = 7257765131435896976L;
 
 	/**
 	 * 单次拉取查询的任务数量，默认 100。

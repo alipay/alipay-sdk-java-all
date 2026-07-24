@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 信用购运营商批量预鉴权提交接口
  *
  * @author auto create
- * @since 1.0, 2026-07-20 16:30:24
+ * @since 1.0, 2026-07-21 17:02:51
  */
 public class AlipayCommerceAcommunicationCreditphonePreconsultSubmitModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4294843726675929321L;
+	private static final long serialVersionUID = 5629423892936475388L;
 
 	/**
 	 * 支付宝用户ID

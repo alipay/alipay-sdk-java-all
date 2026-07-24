@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * AI付代买委托信息
  *
  * @author auto create
- * @since 1.0, 2026-06-24 20:07:56
+ * @since 1.0, 2026-07-23 11:20:55
  */
 public class PcDelegationParams extends AlipayObject {
 
-	private static final long serialVersionUID = 2339432343211983154L;
+	private static final long serialVersionUID = 5593861154481915384L;
 
 	/**
 	 * 对AI付代买委托意图做描述

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalHdfSmsSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7652588217456164391L;
+	private static final long serialVersionUID = 2597133572868467568L;
 
 	/**
 	 * 短信平台的appid

@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceEducatePlaceInfoCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4556149185878333851L;
+	private static final long serialVersionUID = 6872747825735384236L;
 
 	/** 
 	 * 不在花名册中的学工号列表

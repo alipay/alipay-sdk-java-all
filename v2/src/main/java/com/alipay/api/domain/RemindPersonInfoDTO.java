@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RemindPersonInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3839254926379552538L;
+	private static final long serialVersionUID = 1159573524776314616L;
 
 	/**
 	 * 通知渠道，包括邮件，短信，站内信，开放消息；开放消息不能与其他类型同处一个余额提醒中

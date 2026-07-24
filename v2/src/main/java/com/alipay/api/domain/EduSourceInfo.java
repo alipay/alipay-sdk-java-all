@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EduSourceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8383557893768515245L;
+	private static final long serialVersionUID = 2725536884957849397L;
 
 	/**
 	 * 供应商的LOGO

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportVehicleownerBizruleMatchModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1795783132761172371L;
+	private static final long serialVersionUID = 4435649757468961955L;
 
 	/**
 	 * 请求规则匹配的业务实体

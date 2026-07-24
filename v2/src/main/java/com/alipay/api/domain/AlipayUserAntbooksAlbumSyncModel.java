@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayUserAntbooksAlbumSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5467291137698821648L;
+	private static final long serialVersionUID = 3378384876726662496L;
 
 	/**
 	 * 专辑整体时长，单位秒

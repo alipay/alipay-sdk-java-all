@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改蚂蚁店铺
  *
  * @author auto create
- * @since 1.0, 2026-04-16 10:22:32
+ * @since 1.0, 2026-07-22 19:37:24
  */
 public class AntMerchantExpandShopModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6534995938359652553L;
+	private static final long serialVersionUID = 8842927327872926761L;
 
 	/**
 	 * "门店结算卡信息。本业务当前只允许传入一张结算卡。 说明：本参数仅直付通业务使用，其余业务无需关注。"
@@ -89,6 +89,12 @@ public class AntMerchantExpandShopModifyModel extends AlipayObject {
 	 */
 	@ApiField("cover")
 	private String cover;
+
+	/**
+	 * 证件过期时间,当是神券团购门店（ext_infos传了biz_source=APLUS_SHOP）并且license_type=3118或者A521时，必填
+	 */
+	@ApiField("expire_time")
+	private String expireTime;
 
 	/**
 	 * 扩展信息列表。key值需要向对应行业的bd进行申请。传入本项时，按key进行更新或补充。
@@ -291,6 +297,13 @@ public class AntMerchantExpandShopModifyModel extends AlipayObject {
 	}
 	public void setCover(String cover) {
 		this.cover = cover;
+	}
+
+	public String getExpireTime() {
+		return this.expireTime;
+	}
+	public void setExpireTime(String expireTime) {
+		this.expireTime = expireTime;
 	}
 
 	public List<ShopExtInfo> getExtInfos() {

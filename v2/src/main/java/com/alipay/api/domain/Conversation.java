@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-03-26 17:26:07
+ * @since 1.0, 2026-07-16 17:02:54
  */
 public class Conversation extends AlipayObject {
 
-	private static final long serialVersionUID = 7348432121318518736L;
+	private static final long serialVersionUID = 1771619646485423826L;
 
 	/**
 	 * 对话内容

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 好大夫app综合搜索
  *
  * @author auto create
- * @since 1.0, 2026-06-04 14:21:55
+ * @since 1.0, 2026-07-23 15:21:43
  */
 public class AlipayCommerceMedicalSearchResultQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8319576612392659792L;
+	private static final long serialVersionUID = 1578431847243323627L;
 
 	/**
 	 * 账号

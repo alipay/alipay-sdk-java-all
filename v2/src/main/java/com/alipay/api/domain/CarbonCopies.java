@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CarbonCopies extends AlipayObject {
 
-	private static final long serialVersionUID = 1598573568877448814L;
+	private static final long serialVersionUID = 5322377275949814275L;
 
 	/**
 	 * 签署邮件抄送邮箱

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BenefitAccountFundPreAuthInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2686452776781219648L;
+	private static final long serialVersionUID = 3872881989596954279L;
 
 	/**
 	 * 权益账户可采买金额，单位：元

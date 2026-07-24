@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayTradeSubscriptionPaymentQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5777463269847794527L;
+	private static final long serialVersionUID = 4866268159914771832L;
 
 	/**
 	 * 筛选支付成功的截止时间（筛选时不包含该时刻），按照返回结果的gmt_occur为筛选目标；不传默认为当天截止时间不传默认为当天截止时间，如2026-06-30 23:59:59。开始时间和截止时间不能超过31天。

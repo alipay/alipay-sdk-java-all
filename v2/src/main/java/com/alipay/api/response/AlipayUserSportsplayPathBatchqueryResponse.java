@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserSportsplayPathBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3127542971989177721L;
+	private static final long serialVersionUID = 8532125356346719442L;
 
 	/** 
 	 * 路线列表

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SideloanInstitution extends AlipayObject {
 
-	private static final long serialVersionUID = 1756469986616563355L;
+	private static final long serialVersionUID = 4618823885128675275L;
 
 	/**
 	 * 机构编码

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OutletInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3262214625235776531L;
+	private static final long serialVersionUID = 2474738945555259395L;
 
 	/**
 	 * 是否支持商保直付

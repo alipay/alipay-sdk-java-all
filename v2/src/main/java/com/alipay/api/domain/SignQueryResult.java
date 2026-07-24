@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签约绑定查询明细
  *
  * @author auto create
- * @since 1.0, 2026-07-20 16:32:51
+ * @since 1.0, 2026-07-21 17:02:51
  */
 public class SignQueryResult extends AlipayObject {
 
-	private static final long serialVersionUID = 8383212574893579595L;
+	private static final long serialVersionUID = 3774661116151545376L;
 
 	/**
 	 * 支付宝用户的userId。

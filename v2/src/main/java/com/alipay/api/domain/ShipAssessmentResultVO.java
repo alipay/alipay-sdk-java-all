@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ShipAssessmentResultVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1526427137431371646L;
+	private static final long serialVersionUID = 2327465675922753639L;
 
 	/**
 	 * 错误原因，当发货评估结果为null时返回

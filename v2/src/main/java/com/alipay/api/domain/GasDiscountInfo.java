@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GasDiscountInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3816236377787372368L;
+	private static final long serialVersionUID = 5442771984783112867L;
 
 	/**
 	 * 优惠金额 （单位：元）

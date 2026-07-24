@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-06-22 10:29:33
+ * @since 1.0, 2026-06-22 10:32:55
  */
 public class SolShopWifiInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8191877818387122616L;
+	private static final long serialVersionUID = 7317761836745343289L;
 
 	/**
 	 * 门店ID

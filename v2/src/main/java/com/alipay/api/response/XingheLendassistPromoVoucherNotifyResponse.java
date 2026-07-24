@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class XingheLendassistPromoVoucherNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8251699561587944686L;
+	private static final long serialVersionUID = 4871167114224883855L;
 
 	/** 
 	 * 机构券ID（星河侧用于幂等使用）

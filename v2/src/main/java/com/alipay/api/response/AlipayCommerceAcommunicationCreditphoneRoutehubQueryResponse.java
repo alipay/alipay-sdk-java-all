@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.acommunication.creditphone.routehub.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-07-20 16:32:51
+ * @since 1.0, 2026-07-21 17:02:51
  */
 public class AlipayCommerceAcommunicationCreditphoneRoutehubQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4565764214772817418L;
+	private static final long serialVersionUID = 7352488397479385723L;
 
 	/** 
 	 * 支付宝订单号

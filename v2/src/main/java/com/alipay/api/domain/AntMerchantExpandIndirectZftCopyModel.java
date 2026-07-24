@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 直付通二级商户迁移
  *
  * @author auto create
- * @since 1.0, 2026-05-13 16:52:49
+ * @since 1.0, 2026-07-20 16:44:03
  */
 public class AntMerchantExpandIndirectZftCopyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1189957537797927638L;
+	private static final long serialVersionUID = 5895557642656461997L;
 
 	/**
 	 * 直付通二级商户迁移后所属服务商PID

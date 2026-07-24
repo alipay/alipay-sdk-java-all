@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoCityserviceExtCommentBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8564682157614799183L;
+	private static final long serialVersionUID = 1892226745561468184L;
 
 	/**
 	 * 当传递该字段时候、查询指定日期天所在的订单评价数据、若不传递该字段则默认查询调用接口所在时刻的前一天的订单评价数据

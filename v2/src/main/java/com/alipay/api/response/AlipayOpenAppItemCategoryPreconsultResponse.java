@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenAppItemCategoryPreconsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1179672152826994673L;
+	private static final long serialVersionUID = 8387882944367855279L;
 
 	/** 
 	 * 商品类目预测预咨询是否提交成功

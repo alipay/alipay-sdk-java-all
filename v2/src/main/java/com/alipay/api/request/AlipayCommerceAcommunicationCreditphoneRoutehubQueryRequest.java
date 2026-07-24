@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.acommunication.creditphone.routehub.query request
  * 
  * @author auto create
- * @since 1.0, 2026-07-20 16:32:51
+ * @since 1.0, 2026-07-21 17:02:51
  */
 public class AlipayCommerceAcommunicationCreditphoneRoutehubQueryRequest implements AlipayRequest<AlipayCommerceAcommunicationCreditphoneRoutehubQueryResponse> {
 

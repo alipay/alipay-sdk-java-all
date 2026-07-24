@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class HDFMedicalContent extends AlipayObject {
 
-	private static final long serialVersionUID = 3734441973181564961L;
+	private static final long serialVersionUID = 3513913342893856535L;
 
 	/**
 	 * 慢性病

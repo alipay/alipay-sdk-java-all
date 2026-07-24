@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommercePropertyDeviceEventSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5721131237588471557L;
+	private static final long serialVersionUID = 5226546355341651264L;
 
 	/**
 	 * 设备SN，唯一标识触发事件的门禁设备。

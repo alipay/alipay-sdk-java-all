@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMerchantNpromoIndirectQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3625324253117247859L;
+	private static final long serialVersionUID = 2498129857327739545L;
 
 	/**
 	 * 当前登录用户对应的服务商商户号，可能有多个

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 两轮电动车充电桩数据同步接口
  *
  * @author auto create
- * @since 1.0, 2024-06-26 23:19:28
+ * @since 1.0, 2026-07-21 16:11:06
  */
 public class AlipayCommerceTransportEbikeChargestationSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5115464452479789483L;
+	private static final long serialVersionUID = 6622992141536814262L;
 
 	/**
 	 * 充电桩设备详细地址
@@ -130,6 +130,12 @@ public class AlipayCommerceTransportEbikeChargestationSyncModel extends AlipayOb
 	private Long maximumPower;
 
 	/**
+	 * 碰一下线圈id
+	 */
+	@ApiField("nfc_tagid")
+	private String nfcTagid;
+
+	/**
 	 * 支付方式
 	 */
 	@ApiField("pay_type")
@@ -146,6 +152,12 @@ public class AlipayCommerceTransportEbikeChargestationSyncModel extends AlipayOb
 	 */
 	@ApiField("province")
 	private String province;
+
+	/**
+	 * 设备sn号
+	 */
+	@ApiField("sn_id")
+	private String snId;
 
 	/**
 	 * 站点名称
@@ -295,6 +307,13 @@ DELETE: 解绑设备或者不维护该设备则需要调用DELETE删除
 		this.maximumPower = maximumPower;
 	}
 
+	public String getNfcTagid() {
+		return this.nfcTagid;
+	}
+	public void setNfcTagid(String nfcTagid) {
+		this.nfcTagid = nfcTagid;
+	}
+
 	public String getPayType() {
 		return this.payType;
 	}
@@ -314,6 +333,13 @@ DELETE: 解绑设备或者不维护该设备则需要调用DELETE删除
 	}
 	public void setProvince(String province) {
 		this.province = province;
+	}
+
+	public String getSnId() {
+		return this.snId;
+	}
+	public void setSnId(String snId) {
+		this.snId = snId;
 	}
 
 	public String getStationName() {

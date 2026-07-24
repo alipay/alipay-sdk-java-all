@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OuCodeQueryRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 8326852617635285221L;
+	private static final long serialVersionUID = 1265713742361279435L;
 
 	/**
 	 * ou编码

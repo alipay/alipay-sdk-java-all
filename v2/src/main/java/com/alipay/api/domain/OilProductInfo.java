@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OilProductInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1444287751826959716L;
+	private static final long serialVersionUID = 5298986235257795453L;
 
 	/**
 	 * 如果门店有营销活动，则返回门店油品的优惠价格，单位元，精度小数点两位

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.bill.cert.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-26 09:27:44
+ * @since 1.0, 2026-07-22 19:21:31
  */
 public class AlipayOpenMiniBillCertQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4622238535383188451L;
+	private static final long serialVersionUID = 2482491786242498675L;
 
 	/** 
 	 * 查询返回的账单

@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * null
  *
  * @author auto create
- * @since 1.0, 2026-07-14 14:17:49
+ * @since 1.0, 2026-07-22 11:42:54
  */
 public class QuestionInfoOpenapiResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 7862266476235866723L;
+	private static final long serialVersionUID = 5186982985459294667L;
 
 	/**
 	 * 答案输入类型
@@ -20,10 +23,11 @@ public class QuestionInfoOpenapiResponse extends AlipayObject {
 	private String inputType;
 
 	/**
-	 * 问题可选项列表
+	 * null
 	 */
-	@ApiField("options")
-	private OptionItemResponse options;
+	@ApiListField("options")
+	@ApiField("option_item_response")
+	private List<OptionItemResponse> options;
 
 	/**
 	 * 问题ID
@@ -68,10 +72,10 @@ public class QuestionInfoOpenapiResponse extends AlipayObject {
 		this.inputType = inputType;
 	}
 
-	public OptionItemResponse getOptions() {
+	public List<OptionItemResponse> getOptions() {
 		return this.options;
 	}
-	public void setOptions(OptionItemResponse options) {
+	public void setOptions(List<OptionItemResponse> options) {
 		this.options = options;
 	}
 

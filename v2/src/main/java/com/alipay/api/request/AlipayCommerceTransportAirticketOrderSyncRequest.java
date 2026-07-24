@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.airticket.order.sync request
  * 
  * @author auto create
- * @since 1.0, 2026-01-05 17:42:42
+ * @since 1.0, 2026-07-22 13:48:40
  */
 public class AlipayCommerceTransportAirticketOrderSyncRequest implements AlipayRequest<AlipayCommerceTransportAirticketOrderSyncResponse> {
 

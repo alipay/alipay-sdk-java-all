@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPayAppBainaPrizePreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7327415132369924431L;
+	private static final long serialVersionUID = 8573615422156681114L;
 
 	/**
 	 * 从下单url的扩展extJson中获取，key=activityId，此接口带回

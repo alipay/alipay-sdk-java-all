@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 信用购运营商侧统一查询接口
  *
  * @author auto create
- * @since 1.0, 2026-07-20 16:32:51
+ * @since 1.0, 2026-07-21 17:02:51
  */
 public class AlipayCommerceAcommunicationCreditphoneRoutehubQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4338663874954753262L;
+	private static final long serialVersionUID = 6251578417887599852L;
 
 	/**
 	 * 机构PID

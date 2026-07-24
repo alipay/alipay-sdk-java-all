@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OrderAmountInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6232687558324869663L;
+	private static final long serialVersionUID = 8131936771166536236L;
 
 	/**
 	 * 优惠后总金额（支付金额）=订单总金额 - 优惠后总金额 =ItemVO 中优惠总计金额

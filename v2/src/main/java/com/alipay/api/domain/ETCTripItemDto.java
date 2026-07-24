@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ETCTripItemDto extends AlipayObject {
 
-	private static final long serialVersionUID = 5282176541723185751L;
+	private static final long serialVersionUID = 3886379782219476452L;
 
 	/**
 	 * 高速收费站出口

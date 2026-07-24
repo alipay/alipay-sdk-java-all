@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EffectBusRouteObject extends AlipayObject {
 
-	private static final long serialVersionUID = 6678588877885583799L;
+	private static final long serialVersionUID = 4243351843787217159L;
 
 	/**
 	 * 变化比例

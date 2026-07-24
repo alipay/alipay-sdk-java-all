@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankPaymentTradeQrcodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3616743767565296895L;
+	private static final long serialVersionUID = 3524488673239487421L;
 
 	/**
 	 * 账户分类

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMarketingActivityOrdervoucherDisassociateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3495736634723191934L;
+	private static final long serialVersionUID = 6111189587978348787L;
 
 	/**
 	 * 活动id

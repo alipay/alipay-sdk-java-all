@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SpecifiedDeductRuleParams extends AlipayObject {
 
-	private static final long serialVersionUID = 2526168195111146525L;
+	private static final long serialVersionUID = 5222697963927546113L;
 
 	/**
 	 * 签约时指定代扣金额，单位元，传入后后续代扣环节的金额必须等于该金额

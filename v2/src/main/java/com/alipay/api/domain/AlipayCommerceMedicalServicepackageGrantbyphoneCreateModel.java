@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalServicepackageGrantbyphoneCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3694691682642375788L;
+	private static final long serialVersionUID = 7554979374296442248L;
 
 	/**
 	 * 服务生效期限，单位天

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class FullReductionDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3421159625312176736L;
+	private static final long serialVersionUID = 1275339856327556997L;
 
 	/**
 	 * 是否仅满减商品（Y/N）

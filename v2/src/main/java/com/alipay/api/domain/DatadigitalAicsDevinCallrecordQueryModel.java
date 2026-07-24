@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DatadigitalAicsDevinCallrecordQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4177676616261367422L;
+	private static final long serialVersionUID = 6725325763928153894L;
 
 	/**
 	 * 当前页码，可选参数，不选默认值为:1

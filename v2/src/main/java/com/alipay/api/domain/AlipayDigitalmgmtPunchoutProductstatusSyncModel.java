@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDigitalmgmtPunchoutProductstatusSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5424471752188844291L;
+	private static final long serialVersionUID = 1785447865939138197L;
 
 	/**
 	 * 消息描述

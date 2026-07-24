@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 优惠信息
+ * null
  *
  * @author auto create
- * @since 1.0, 2026-06-08 20:27:54
+ * @since 1.0, 2026-06-08 20:37:55
  */
 public class PromotionCoupon extends AlipayObject {
 
-	private static final long serialVersionUID = 6782137444153675188L;
+	private static final long serialVersionUID = 1462863146931255535L;
 
 	/**
 	 * 折扣10元金额 单位分

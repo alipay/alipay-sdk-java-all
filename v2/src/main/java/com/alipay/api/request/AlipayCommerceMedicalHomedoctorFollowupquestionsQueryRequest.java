@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.homedoctor.followupquestions.query request
  * 
  * @author auto create
- * @since 1.0, 2026-07-14 14:17:49
+ * @since 1.0, 2026-07-22 11:42:54
  */
 public class AlipayCommerceMedicalHomedoctorFollowupquestionsQueryRequest implements AlipayRequest<AlipayCommerceMedicalHomedoctorFollowupquestionsQueryResponse> {
 

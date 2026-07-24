@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class DtBankInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3811121967813255659L;
+	private static final long serialVersionUID = 3534866164187331568L;
 
 	/**
 	 * 活动支持的银行机构列表

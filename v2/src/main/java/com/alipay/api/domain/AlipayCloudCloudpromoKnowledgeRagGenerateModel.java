@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCloudCloudpromoKnowledgeRagGenerateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5894976942753394312L;
+	private static final long serialVersionUID = 3485797345329637955L;
 
 	/**
 	 * 接口API-Key

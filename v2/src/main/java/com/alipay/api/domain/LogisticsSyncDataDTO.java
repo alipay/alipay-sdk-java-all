@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LogisticsSyncDataDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7448575443483933272L;
+	private static final long serialVersionUID = 7854689799297555529L;
 
 	/**
 	 * 路由发生地址

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundBatchCloseResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5876963868374513862L;
+	private static final long serialVersionUID = 2338278934751269887L;
 
 	/** 
 	 * 支付宝内部的批次ID

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class EtcCorpInvoiceTrade extends AlipayObject {
 
-	private static final long serialVersionUID = 6527571711519552281L;
+	private static final long serialVersionUID = 2714437939127584887L;
 
 	/**
 	 * 虚拟运单编码

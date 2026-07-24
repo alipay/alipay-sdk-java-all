@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 心理权益
  *
  * @author auto create
- * @since 1.0, 2026-07-10 11:10:21
+ * @since 1.0, 2026-07-23 10:42:21
  */
 public class PsychologicalVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3138377637365484691L;
+	private static final long serialVersionUID = 4131188988768921549L;
 
 	/**
 	 * 履约单号
@@ -36,6 +36,12 @@ public class PsychologicalVO extends AlipayObject {
 	 */
 	@ApiField("fulfillment_type")
 	private String fulfillmentType;
+
+	/**
+	 * 患者性别1-男，0-女
+	 */
+	@ApiField("gender")
+	private String gender;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识
@@ -87,6 +93,13 @@ public class PsychologicalVO extends AlipayObject {
 	}
 	public void setFulfillmentType(String fulfillmentType) {
 		this.fulfillmentType = fulfillmentType;
+	}
+
+	public String getGender() {
+		return this.gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
 	}
 
 	public String getOpenId() {

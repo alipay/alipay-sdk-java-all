@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceRecycleOrderSettleConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7435594125146733486L;
+	private static final long serialVersionUID = 8726579866931454839L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识

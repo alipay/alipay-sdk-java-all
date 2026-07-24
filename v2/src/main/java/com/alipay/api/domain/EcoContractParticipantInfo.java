@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class EcoContractParticipantInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3149694585127383531L;
+	private static final long serialVersionUID = 8131938564521821492L;
 
 	/**
 	 * 如果该参与人删除了合同，则为1，如果未删除该合同，为0

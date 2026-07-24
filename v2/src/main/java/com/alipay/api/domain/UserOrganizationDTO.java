@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * UserOrganizationDTO
  *
  * @author auto create
- * @since 1.0, 2023-09-14 14:47:43
+ * @since 1.0, 2026-07-23 10:17:13
  */
 public class UserOrganizationDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5571655964147142474L;
+	private static final long serialVersionUID = 3423476826926126176L;
+
+	/**
+	 * 申请人id
+	 */
+	@ApiField("applicant_passport_id")
+	private String applicantPassportId;
 
 	/**
 	 * 实体id
@@ -71,6 +77,13 @@ public class UserOrganizationDTO extends AlipayObject {
 	 */
 	@ApiField("work_order_permission")
 	private Boolean workOrderPermission;
+
+	public String getApplicantPassportId() {
+		return this.applicantPassportId;
+	}
+	public void setApplicantPassportId(String applicantPassportId) {
+		this.applicantPassportId = applicantPassportId;
+	}
 
 	public String getEntityId() {
 		return this.entityId;

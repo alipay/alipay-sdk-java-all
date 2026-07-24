@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayTradeSubscriptionPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2177127534672269343L;
+	private static final long serialVersionUID = 2263659354679667157L;
 
 	/**
 	 * 发起扣款的交易单据超时自动关单时间，支持m（分钟）和h（小时），默认为空时命中兜底的10m

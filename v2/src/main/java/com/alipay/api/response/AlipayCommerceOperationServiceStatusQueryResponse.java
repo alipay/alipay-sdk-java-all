@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceOperationServiceStatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6646559715458948365L;
+	private static final long serialVersionUID = 1148794941181413687L;
 
 	/** 
 	 * 服务在线信息查询结果，是序列化字符串，如门店列表信息、商户信息、报名信息等等

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户信息和组织信息查询接口
  *
  * @author auto create
- * @since 1.0, 2024-06-19 17:06:53
+ * @since 1.0, 2026-07-23 10:17:13
  */
 public class AnttechOceanbaseUserorginfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2136118175782258626L;
+	private static final long serialVersionUID = 6234719572116964176L;
 
 	/**
 	 * 邮箱或者手机号

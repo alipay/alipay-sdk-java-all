@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 【重要提示】申请特殊费率时，请务必提供营业执照以提升审核通过率。
+ * 商户营业执照信息
  *
  * @author auto create
- * @since 1.0, 2026-04-07 11:07:45
+ * @since 1.0, 2026-07-01 19:52:56
  */
 public class BusinessLicenseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1845792721467257615L;
+	private static final long serialVersionUID = 4219848444434814287L;
 
 	/**
 	 * 上传非经营者本人（签约账号）的营业执照时必填，填写营业执照法人的手机号

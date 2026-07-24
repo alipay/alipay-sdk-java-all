@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询公司基本信息列表
  *
  * @author auto create
- * @since 1.0, 2024-06-07 15:31:11
+ * @since 1.0, 2026-07-21 14:04:08
  */
 public class AlipayBossProdCompanyauthQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3899873924141134651L;
+	private static final long serialVersionUID = 4874456389422869521L;
 
 	/**
 	 * 对应云凤蝶表单中填写的appCode

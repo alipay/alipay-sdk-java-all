@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class SpiDetectionDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 7776719536668986611L;
+	private static final long serialVersionUID = 8788435874745651882L;
 
 	/**
 	 * 检测结果码

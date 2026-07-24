@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-06-04 14:21:55
+ * @since 1.0, 2026-07-23 15:21:43
  */
 public class KeyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3447563965555672162L;
+	private static final long serialVersionUID = 7176138244992358292L;
 
 	/**
 	 * 条件是否变更
