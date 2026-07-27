@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.operation.iotnsphg.userinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-02-26 11:37:24
+ * @since 1.0, 2026-07-27 13:58:48
  */
 public class AlipayCommerceOperationIotnsphgUserinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8393725372774792212L;
+	private static final long serialVersionUID = 3232321214367795623L;
 
 	/** 
 	 * 支付宝用户绑定的手机号 。

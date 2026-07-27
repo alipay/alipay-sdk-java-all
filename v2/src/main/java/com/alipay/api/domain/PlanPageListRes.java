@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 计划分页返回对象
  *
  * @author auto create
- * @since 1.0, 2026-04-10 14:08:29
+ * @since 1.0, 2026-07-24 15:52:35
  */
 public class PlanPageListRes extends AlipayObject {
 
-	private static final long serialVersionUID = 6879791219688777531L;
+	private static final long serialVersionUID = 6695512752942125386L;
 
 	/**
 	 * 计划日预算。单位：元
@@ -26,6 +26,12 @@ public class PlanPageListRes extends AlipayObject {
 	 */
 	@ApiField("charge_type")
 	private String chargeType;
+
+	/**
+	 * 投放模式，手动投放/自动投放
+	 */
+	@ApiField("delivery_mode")
+	private String deliveryMode;
 
 	/**
 	 * 投放结束日期,日期格式为yyyy-MM-dd
@@ -129,6 +135,13 @@ public class PlanPageListRes extends AlipayObject {
 	}
 	public void setChargeType(String chargeType) {
 		this.chargeType = chargeType;
+	}
+
+	public String getDeliveryMode() {
+		return this.deliveryMode;
+	}
+	public void setDeliveryMode(String deliveryMode) {
+		this.deliveryMode = deliveryMode;
 	}
 
 	public String getEndDate() {

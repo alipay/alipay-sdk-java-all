@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 企信助手会员包提前续约
  *
  * @author auto create
- * @since 1.0, 2026-07-17 10:00:15
+ * @since 1.0, 2026-07-27 14:12:53
  */
 public class ZhimaCreditEpAssistantMembershippackageOrderModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1615765876476165468L;
+	private static final long serialVersionUID = 1762434376213656133L;
 
 	/**
 	 * 续约时长数量，其单位依赖于duration_unit表示的单位类型，如 duration_unit=HALF_YEAR，duration_quantity=3 则表示一年半
@@ -34,6 +34,12 @@ public class ZhimaCreditEpAssistantMembershippackageOrderModel extends AlipayObj
 	@ApiListField("exclude_license_list")
 	@ApiField("string")
 	private List<String> excludeLicenseList;
+
+	/**
+	 * 企信侧默认开启营销活动，如购买权益时长满一年送90天，不参与活动要显式设置为false
+	 */
+	@ApiField("has_activity")
+	private Boolean hasActivity;
 
 	/**
 	 * 需要小于或者等于当前权益包的license数量，例如现在有15个license，有3个不需要续约，则需要传入12，同时在exclude_license_list指定不续约的license
@@ -78,6 +84,13 @@ public class ZhimaCreditEpAssistantMembershippackageOrderModel extends AlipayObj
 	}
 	public void setExcludeLicenseList(List<String> excludeLicenseList) {
 		this.excludeLicenseList = excludeLicenseList;
+	}
+
+	public Boolean getHasActivity() {
+		return this.hasActivity;
+	}
+	public void setHasActivity(Boolean hasActivity) {
+		this.hasActivity = hasActivity;
 	}
 
 	public Long getLicenseNum() {

@@ -10,36 +10,34 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单批量查询接口
  *
  * @author auto create
- * @since 1.0, 2026-06-02 19:42:50
+ * @since 1.0, 2026-07-27 13:47:51
  */
 public class AlipayMarketingOrderBatchQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6186635528535287137L;
+	private static final long serialVersionUID = 1512548642945784762L;
 
 	/**
-	 * 创建订单的结束时间，格式：yyyyMMdd
+	 * 创建订单的结束时间，格式：yyyyMMdd或yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("create_time_end")
 	private String createTimeEnd;
 
 	/**
-	 * 创建订单的开始时间，格式：yyyyMMdd
+	 * 创建订单的开始时间，格式：yyyyMMdd或yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("create_time_start")
 	private String createTimeStart;
 
 	/**
-	 * 订单最近一次更新结束时间，格式：yyyyMMdd 当前字段已废弃(不支持更新时间查询，废弃)
+	 * 订单最近一次更新结束时间，格式：yyyyMMdd或yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("modify_time_end")
-	@Deprecated
 	private String modifyTimeEnd;
 
 	/**
-	 * 订单最近一次更新开始时间，格式：yyyyMMdd 当前字段已废弃(不支持更新时间查询，废弃)
+	 * 订单最近一次更新开始时间，格式：yyyyMMdd或yyyy-MM-dd HH:mm:ss
 	 */
 	@ApiField("modify_time_start")
-	@Deprecated
 	private String modifyTimeStart;
 
 	/**

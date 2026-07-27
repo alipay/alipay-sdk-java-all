@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  *  创意分页返回对象
  *
  * @author auto create
- * @since 1.0, 2025-12-03 10:35:53
+ * @since 1.0, 2026-07-24 15:52:50
  */
 public class CreativePageListRes extends AlipayObject {
 
-	private static final long serialVersionUID = 1621434323666655864L;
+	private static final long serialVersionUID = 6534763978115732132L;
 
 	/**
 	 * 创意id
@@ -44,6 +44,12 @@ public class CreativePageListRes extends AlipayObject {
 	 */
 	@ApiField("creative_type")
 	private String creativeType;
+
+	/**
+	 * 投放模式，手动投放/自动投放
+	 */
+	@ApiField("delivery_mode")
+	private String deliveryMode;
 
 	/**
 	 * 修改时间
@@ -162,6 +168,13 @@ public class CreativePageListRes extends AlipayObject {
 	}
 	public void setCreativeType(String creativeType) {
 		this.creativeType = creativeType;
+	}
+
+	public String getDeliveryMode() {
+		return this.deliveryMode;
+	}
+	public void setDeliveryMode(String deliveryMode) {
+		this.deliveryMode = deliveryMode;
 	}
 
 	public Date getGmtModified() {

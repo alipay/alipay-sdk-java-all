@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.aipay.subscribe.portal.session.create request
  * 
  * @author auto create
- * @since 1.0, 2026-07-20 19:32:53
+ * @since 1.0, 2026-07-27 11:22:55
  */
 public class AlipayAipaySubscribePortalSessionCreateRequest implements AlipayRequest<AlipayAipaySubscribePortalSessionCreateResponse> {
 

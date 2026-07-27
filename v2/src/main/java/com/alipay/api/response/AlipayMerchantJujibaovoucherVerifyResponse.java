@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.jujibaovoucher.verify response.
  * 
  * @author auto create
- * @since 1.0, 2024-12-03 17:50:05
+ * @since 1.0, 2026-07-27 14:00:38
  */
 public class AlipayMerchantJujibaovoucherVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6818646263587852152L;
+	private static final long serialVersionUID = 1568469172913742443L;
 
 	/** 
 	 * 移动核销结果出参

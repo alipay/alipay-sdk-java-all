@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMedicalServiceuserFacecertifyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8517721683365882511L;
+	private static final long serialVersionUID = 6351944238923978858L;
 
 	/** 
 	 * 人脸核身查询结果

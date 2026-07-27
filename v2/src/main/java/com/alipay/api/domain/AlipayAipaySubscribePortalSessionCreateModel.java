@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订阅门户链接生成
  *
  * @author auto create
- * @since 1.0, 2026-07-20 19:32:53
+ * @since 1.0, 2026-07-27 11:22:55
  */
 public class AlipayAipaySubscribePortalSessionCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7668274846811918171L;
+	private static final long serialVersionUID = 6442959712857542826L;
 
 	/**
 	 * 客户id

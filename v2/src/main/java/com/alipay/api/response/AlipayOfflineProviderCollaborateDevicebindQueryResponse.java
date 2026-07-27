@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.provider.collaborate.devicebind.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-02-05 11:31:48
+ * @since 1.0, 2026-07-27 13:58:50
  */
 public class AlipayOfflineProviderCollaborateDevicebindQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7153721469955863663L;
+	private static final long serialVersionUID = 7756724746115447357L;
 
 	/** 
 	 * 设备绑定申请单列表

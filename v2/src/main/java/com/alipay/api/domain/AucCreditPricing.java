@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AucCreditPricing extends AlipayObject {
 
-	private static final long serialVersionUID = 7736648676315444231L;
+	private static final long serialVersionUID = 7558749263999697229L;
 
 	/**
 	 * 资金利率，如为12.3%，则为0.123

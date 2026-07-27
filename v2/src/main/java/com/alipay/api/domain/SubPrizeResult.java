@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SubPrizeResult extends AlipayObject {
 
-	private static final long serialVersionUID = 6121679644165656952L;
+	private static final long serialVersionUID = 8228128699827683433L;
 
 	/**
 	 * 以分为单位，比如599，代表5.99元的面额

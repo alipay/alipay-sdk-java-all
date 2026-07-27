@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.paysaas.tradeevent.send response.
  * 
  * @author auto create
- * @since 1.0, 2025-03-26 17:17:27
+ * @since 1.0, 2026-07-27 13:58:47
  */
 public class AlipayOpenPaysaasTradeeventSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6535749971173195847L;
+	private static final long serialVersionUID = 5519838131929267324L;
 
 	
 

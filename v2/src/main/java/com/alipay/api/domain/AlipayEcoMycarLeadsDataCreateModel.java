@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 线索数据同步
  *
  * @author auto create
- * @since 1.0, 2026-06-30 17:49:13
+ * @since 1.0, 2026-07-24 16:59:33
  */
 public class AlipayEcoMycarLeadsDataCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6581677787739947947L;
+	private static final long serialVersionUID = 8416667323349827498L;
 
 	/**
 	 * 支付宝帐户
@@ -64,6 +64,12 @@ public class AlipayEcoMycarLeadsDataCreateModel extends AlipayObject {
 	 */
 	@ApiField("out_leads_id")
 	private String outLeadsId;
+
+	/**
+	 * 备注
+	 */
+	@ApiField("remark")
+	private String remark;
 
 	/**
 	 * 支付宝用户的userId。
@@ -131,6 +137,13 @@ public class AlipayEcoMycarLeadsDataCreateModel extends AlipayObject {
 	}
 	public void setOutLeadsId(String outLeadsId) {
 		this.outLeadsId = outLeadsId;
+	}
+
+	public String getRemark() {
+		return this.remark;
+	}
+	public void setRemark(String remark) {
+		this.remark = remark;
 	}
 
 	public String getUserId() {

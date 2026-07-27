@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.gamecenter.incrementgameaction.submit response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-08 11:32:41
+ * @since 1.0, 2026-07-27 10:32:52
  */
 public class AlipayUserGamecenterIncrementgameactionSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6337596416854173361L;
+	private static final long serialVersionUID = 8322152526478936527L;
 
 	
 

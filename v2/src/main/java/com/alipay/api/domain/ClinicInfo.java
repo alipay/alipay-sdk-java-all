@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ClinicInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5248229251912679495L;
+	private static final long serialVersionUID = 2557865179579338442L;
 
 	/**
 	 * 期望就诊结束时间

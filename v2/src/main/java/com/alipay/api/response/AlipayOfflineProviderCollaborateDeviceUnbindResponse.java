@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.provider.collaborate.device.unbind response.
  * 
  * @author auto create
- * @since 1.0, 2026-02-05 11:30:55
+ * @since 1.0, 2026-07-27 14:00:38
  */
 public class AlipayOfflineProviderCollaborateDeviceUnbindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5879481625495815772L;
+	private static final long serialVersionUID = 2347619744751341897L;
 
 	/** 
 	 * 设备SN

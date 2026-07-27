@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCloudCloudbaseWalletRechargeVerifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2836566451897575847L;
+	private static final long serialVersionUID = 7651296891989795311L;
 
 	/** 
 	 * 欠费冲正后核销操作返回

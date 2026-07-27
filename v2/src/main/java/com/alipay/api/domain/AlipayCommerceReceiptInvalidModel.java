@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceReceiptInvalidModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3861692758856991711L;
+	private static final long serialVersionUID = 7692667619738454967L;
 
 	/**
 	 * 支付宝用户openid

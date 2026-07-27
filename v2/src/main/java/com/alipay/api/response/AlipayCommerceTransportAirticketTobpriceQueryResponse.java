@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportAirticketTobpriceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2164611763726722672L;
+	private static final long serialVersionUID = 5152592773339884962L;
 
 	/** 
 	 * 机票价格信息

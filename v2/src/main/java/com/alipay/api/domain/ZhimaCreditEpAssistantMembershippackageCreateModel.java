@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企信助手会员包创建
  *
  * @author auto create
- * @since 1.0, 2026-07-17 09:59:43
+ * @since 1.0, 2026-07-27 14:27:51
  */
 public class ZhimaCreditEpAssistantMembershippackageCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3311423911739721944L;
+	private static final long serialVersionUID = 8724997461649476356L;
 
 	/**
 	 * 权益包指定生效时间非必填，默认不要填写，只有需要权益包不立即生效，在后续指定时间点生效的场景下需要传入。如果传入时间早于当前时间，则以当前时间进行生效。且指定的生效时间不得晚于当前时间一个月。
@@ -30,6 +30,12 @@ public class ZhimaCreditEpAssistantMembershippackageCreateModel extends AlipayOb
 	 */
 	@ApiField("company_name")
 	private String companyName;
+
+	/**
+	 * 企信侧默认开启营销活动，如购买权益时长满一年送90天，不参与活动要显式设置为false
+	 */
+	@ApiField("has_activity")
+	private Boolean hasActivity;
 
 	/**
 	 * 订单编号，是客户在合作伙伴侧下单时的ID，在付费、续费、增购等一个客户可以有多个付费ID，一个ID描述一次购买行为。
@@ -80,6 +86,13 @@ public class ZhimaCreditEpAssistantMembershippackageCreateModel extends AlipayOb
 	}
 	public void setCompanyName(String companyName) {
 		this.companyName = companyName;
+	}
+
+	public Boolean getHasActivity() {
+		return this.hasActivity;
+	}
+	public void setHasActivity(Boolean hasActivity) {
+		this.hasActivity = hasActivity;
 	}
 
 	public String getOrderNo() {

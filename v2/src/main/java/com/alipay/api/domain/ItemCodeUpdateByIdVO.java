@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ItemCodeUpdateByIdVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7283461144943665647L;
+	private static final long serialVersionUID = 8533549893418437513L;
 
 	/**
 	 * 要修改的商品的id

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.iotnsphg.userinfo.query request
  * 
  * @author auto create
- * @since 1.0, 2025-02-26 11:37:24
+ * @since 1.0, 2026-07-27 13:58:48
  */
 public class AlipayCommerceOperationIotnsphgUserinfoQueryRequest implements AlipayRequest<AlipayCommerceOperationIotnsphgUserinfoQueryResponse> {
 

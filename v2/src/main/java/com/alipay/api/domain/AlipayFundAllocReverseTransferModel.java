@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundAllocReverseTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8156397132386937113L;
+	private static final long serialVersionUID = 5158898666529189844L;
 
 	/**
 	 * 正向分佣时使用的协议号

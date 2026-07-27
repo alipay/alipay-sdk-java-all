@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小游戏付费礼包交易订单查询
  *
  * @author auto create
- * @since 1.0, 2026-07-22 18:12:51
+ * @since 1.0, 2026-07-24 13:52:51
  */
 public class AlipayUserGamepaidgiftOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3584541367582312563L;
+	private static final long serialVersionUID = 1363844851532476858L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识

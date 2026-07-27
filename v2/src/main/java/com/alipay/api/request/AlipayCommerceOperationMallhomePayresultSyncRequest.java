@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.mallhome.payresult.sync request
  * 
  * @author auto create
- * @since 1.0, 2025-07-31 23:47:33
+ * @since 1.0, 2026-07-27 13:58:47
  */
 public class AlipayCommerceOperationMallhomePayresultSyncRequest implements AlipayRequest<AlipayCommerceOperationMallhomePayresultSyncResponse> {
 

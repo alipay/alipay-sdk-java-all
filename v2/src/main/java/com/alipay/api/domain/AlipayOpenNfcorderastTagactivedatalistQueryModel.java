@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenNfcorderastTagactivedatalistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4767556567926535813L;
+	private static final long serialVersionUID = 7818861245282947916L;
 
 	/**
 	 * 查询此日期的数据，格式为：yyyyMMdd

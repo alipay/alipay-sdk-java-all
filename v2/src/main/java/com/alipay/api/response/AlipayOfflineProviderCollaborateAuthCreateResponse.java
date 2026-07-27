@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.provider.collaborate.auth.create response.
  * 
  * @author auto create
- * @since 1.0, 2026-01-30 16:32:10
+ * @since 1.0, 2026-07-27 14:00:38
  */
 public class AlipayOfflineProviderCollaborateAuthCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1247775732571176239L;
+	private static final long serialVersionUID = 7165364922652246871L;
 
 	/** 
 	 * 申请授权的二维码链接，需要将该链接生成二维码引导被授权人（即签约卖进方案的用户）进行扫码，扫码后将会引导向smid的法人或联系人申请设备绑定授权。

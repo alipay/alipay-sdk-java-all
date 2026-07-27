@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportVirtualcardRightsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2798699361556346487L;
+	private static final long serialVersionUID = 1749411297285783285L;
 
 	/** 
 	 * 卡号

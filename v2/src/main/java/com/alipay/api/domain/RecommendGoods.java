@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RecommendGoods extends AlipayObject {
 
-	private static final long serialVersionUID = 4753347744684983214L;
+	private static final long serialVersionUID = 7426911133749826819L;
 
 	/**
 	 * 商品barcode

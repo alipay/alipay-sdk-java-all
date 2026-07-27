@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LoanRepayPlanTerm extends AlipayObject {
 
-	private static final long serialVersionUID = 8226415115578513335L;
+	private static final long serialVersionUID = 5281266987726798133L;
 
 	/**
 	 * 是否当前期

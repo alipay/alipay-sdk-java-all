@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.adcampaign.plan.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-07-07 11:54:22
+ * @since 1.0, 2026-07-24 16:07:49
  */
 public class AlipayDataDataserviceAdcampaignPlanQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4646656999895259347L;
+	private static final long serialVersionUID = 5123952678987974357L;
 
 	/** 
 	 * 计划日预算。单位：元【人民币】不限日预算时此值为空
@@ -27,6 +27,12 @@ public class AlipayDataDataserviceAdcampaignPlanQueryResponse extends AlipayResp
 	 */
 	@ApiField("charge_type")
 	private String chargeType;
+
+	/** 
+	 * 投放模式，手动投放/自动投放
+	 */
+	@ApiField("delivery_mode")
+	private String deliveryMode;
 
 	/** 
 	 * 计划投放结束日期
@@ -188,6 +194,13 @@ public class AlipayDataDataserviceAdcampaignPlanQueryResponse extends AlipayResp
 	}
 	public String getChargeType( ) {
 		return this.chargeType;
+	}
+
+	public void setDeliveryMode(String deliveryMode) {
+		this.deliveryMode = deliveryMode;
+	}
+	public String getDeliveryMode( ) {
+		return this.deliveryMode;
 	}
 
 	public void setEndDate(String endDate) {

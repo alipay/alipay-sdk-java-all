@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 加密出参
  *
  * @author auto create
- * @since 1.0, 2026-03-17 16:57:44
+ * @since 1.0, 2026-07-24 15:37:55
  */
 public class EncryptRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 8179352662117862958L;
+	private static final long serialVersionUID = 2527812499384374735L;
 
 	/**
 	 * 加密参数

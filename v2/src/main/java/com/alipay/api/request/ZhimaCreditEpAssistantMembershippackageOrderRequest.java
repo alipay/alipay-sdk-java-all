@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.ep.assistant.membershippackage.order request
  * 
  * @author auto create
- * @since 1.0, 2026-07-17 10:00:15
+ * @since 1.0, 2026-07-27 14:12:53
  */
 public class ZhimaCreditEpAssistantMembershippackageOrderRequest implements AlipayRequest<ZhimaCreditEpAssistantMembershippackageOrderResponse> {
 

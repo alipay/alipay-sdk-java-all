@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceIotDapplyOrdersimpleinfoBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5752584855728865853L;
+	private static final long serialVersionUID = 1143785911692782219L;
 
 	/** 
 	 * 批量下单后系统会根据批量文件每行生成一个设备申请单，该单号对应这个申请单的业务订单号(业务主键)。

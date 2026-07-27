@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class SaveDataItemDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7163739926155261497L;
+	private static final long serialVersionUID = 5781886674554849753L;
 
 	/**
 	 * 注册授权配置时分配的办事保险箱数据属性key

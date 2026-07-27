@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataAiserviceSgxGatewayQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7395169437942184131L;
+	private static final long serialVersionUID = 6662711223115173762L;
 
 	/**
 	 * biz_handler: 具体的业务方法名称，该值必须填写。业务方请联系此openapi接口负责人获取业务方法名称。

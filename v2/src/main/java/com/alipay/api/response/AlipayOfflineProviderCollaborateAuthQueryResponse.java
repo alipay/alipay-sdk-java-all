@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.provider.collaborate.auth.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-01-30 16:32:15
+ * @since 1.0, 2026-07-27 14:00:38
  */
 public class AlipayOfflineProviderCollaborateAuthQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6773724118116777415L;
+	private static final long serialVersionUID = 8726835711563328365L;
 
 	/** 
 	 * 授权申请单状态，如有多个授权申请单，返回其中一个申请单的状态

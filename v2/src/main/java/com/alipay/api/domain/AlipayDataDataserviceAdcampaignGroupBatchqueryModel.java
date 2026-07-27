@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 查询单元列表
  *
  * @author auto create
- * @since 1.0, 2026-04-30 10:01:27
+ * @since 1.0, 2026-07-24 15:52:26
  */
 public class AlipayDataDataserviceAdcampaignGroupBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7482852776154142285L;
+	private static final long serialVersionUID = 2271516758398266769L;
 
 	/**
 	 * 出价方式类型
@@ -33,6 +33,12 @@ public class AlipayDataDataserviceAdcampaignGroupBatchqueryModel extends AlipayO
 	 */
 	@ApiField("current")
 	private Long current;
+
+	/**
+	 * 按投放模式筛选：手动模式/自动模式，不传查全部
+	 */
+	@ApiField("delivery_mode")
+	private String deliveryMode;
 
 	/**
 	 * 一级营销目标code（如要查询当前场景下所有数据，入参为‘ALL’字段）
@@ -102,6 +108,13 @@ public class AlipayDataDataserviceAdcampaignGroupBatchqueryModel extends AlipayO
 	}
 	public void setCurrent(Long current) {
 		this.current = current;
+	}
+
+	public String getDeliveryMode() {
+		return this.deliveryMode;
+	}
+	public void setDeliveryMode(String deliveryMode) {
+		this.deliveryMode = deliveryMode;
 	}
 
 	public String getFirstMarketTargetCode() {

@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.adcampaign.creative.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-07-07 11:53:58
+ * @since 1.0, 2026-07-24 16:07:49
  */
 public class AlipayDataDataserviceAdcampaignCreativeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6467972342424311384L;
+	private static final long serialVersionUID = 3272338284975171495L;
 
 	/** 
 	 * 交互动作属性集合
@@ -61,6 +61,12 @@ public class AlipayDataDataserviceAdcampaignCreativeQueryResponse extends Alipay
 	 */
 	@ApiField("creative_biz_status")
 	private String creativeBizStatus;
+
+	/** 
+	 * 投放模式，手动投放/自动投放
+	 */
+	@ApiField("delivery_mode")
+	private String deliveryMode;
 
 	/** 
 	 * 修改时间
@@ -230,6 +236,13 @@ public class AlipayDataDataserviceAdcampaignCreativeQueryResponse extends Alipay
 	}
 	public String getCreativeBizStatus( ) {
 		return this.creativeBizStatus;
+	}
+
+	public void setDeliveryMode(String deliveryMode) {
+		this.deliveryMode = deliveryMode;
+	}
+	public String getDeliveryMode( ) {
+		return this.deliveryMode;
 	}
 
 	public void setGmtModified(String gmtModified) {

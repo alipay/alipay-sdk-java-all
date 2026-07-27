@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceWithholdrepayorderTradeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2779238596857813937L;
+	private static final long serialVersionUID = 5662712274791914586L;
 
 	/**
 	 * 银行间联模式下有用，其它场景请不要使用； 双联通过该参数指定需要查询的交易所属收单机构的pid;

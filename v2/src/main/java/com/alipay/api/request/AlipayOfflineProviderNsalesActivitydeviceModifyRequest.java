@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.provider.nsales.activitydevice.modify request
  * 
  * @author auto create
- * @since 1.0, 2025-01-27 22:52:21
+ * @since 1.0, 2026-07-27 13:58:48
  */
 public class AlipayOfflineProviderNsalesActivitydeviceModifyRequest implements AlipayRequest<AlipayOfflineProviderNsalesActivitydeviceModifyResponse> {
 

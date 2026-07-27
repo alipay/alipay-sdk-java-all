@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMsaasMediarecogAivisionrecgDeviceactivationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3477817446854473284L;
+	private static final long serialVersionUID = 2264366591386734825L;
 
 	/** 
 	 * 激活状态结果

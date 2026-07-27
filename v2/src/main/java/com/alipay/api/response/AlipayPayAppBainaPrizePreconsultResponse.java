@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPayAppBainaPrizePreconsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7591749161393665586L;
+	private static final long serialVersionUID = 4359615479115714848L;
 
 	/** 
 	 * 该字段表示用户是否可下单，true=可以下单，false=不能下单

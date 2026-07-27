@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantOrderHahaNobizcontentCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8113321649831145713L;
+	private static final long serialVersionUID = 1146759376235216666L;
 
 	/**
 	 * delete

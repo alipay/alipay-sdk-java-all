@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CarInsuranceRenewalOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7624727536121684766L;
+	private static final long serialVersionUID = 7889732734999888696L;
 
 	/**
 	 * 地级市的城市码

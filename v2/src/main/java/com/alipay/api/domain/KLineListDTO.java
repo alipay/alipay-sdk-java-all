@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class KLineListDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2216764747894264838L;
+	private static final long serialVersionUID = 4847714282866396142L;
 
 	/**
 	 * 数据项，类型为KLineDTO

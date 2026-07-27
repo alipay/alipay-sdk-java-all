@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ReduceToInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4597393438326957291L;
+	private static final long serialVersionUID = 1658286891718322211L;
 
 	/**
 	 * 消费最低金额限制

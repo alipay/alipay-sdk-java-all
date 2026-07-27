@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCloudTraasRiskgoBaddebtQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8445363758264819449L;
+	private static final long serialVersionUID = 5625261693594634543L;
 
 	/**
 	 * 可填入活动id唯一值，或其他活动信息

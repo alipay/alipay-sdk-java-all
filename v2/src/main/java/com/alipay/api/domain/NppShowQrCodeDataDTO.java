@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class NppShowQrCodeDataDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1254149123393324381L;
+	private static final long serialVersionUID = 4657573256218534839L;
 
 	/**
 	 * 地址描述

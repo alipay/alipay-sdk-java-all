@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FxiaokeCreatePartnerResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 4819882982617243362L;
+	private static final long serialVersionUID = 3827539223914653222L;
 
 	/**
 	 * bid

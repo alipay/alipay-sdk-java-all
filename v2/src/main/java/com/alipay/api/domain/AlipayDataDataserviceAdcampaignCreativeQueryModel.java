@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询创意详情
  *
  * @author auto create
- * @since 1.0, 2026-02-28 13:50:41
+ * @since 1.0, 2026-07-24 15:54:19
  */
 public class AlipayDataDataserviceAdcampaignCreativeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1637522999815482279L;
+	private static final long serialVersionUID = 3185881641631834939L;
 
 	/**
 	 * 创意ID

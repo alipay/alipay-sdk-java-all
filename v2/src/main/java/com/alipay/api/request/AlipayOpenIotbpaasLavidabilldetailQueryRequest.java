@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.iotbpaas.lavidabilldetail.query request
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 01:19:53
+ * @since 1.0, 2026-07-27 14:02:51
  */
 public class AlipayOpenIotbpaasLavidabilldetailQueryRequest implements AlipayRequest<AlipayOpenIotbpaasLavidabilldetailQueryResponse> {
 

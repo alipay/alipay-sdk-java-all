@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceFundBindCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8734896484955117271L;
+	private static final long serialVersionUID = 2394399432296294311L;
 
 	/**
 	 * 用于指定绑定某一张银行卡进行绑定

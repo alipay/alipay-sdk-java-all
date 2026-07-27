@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.gamepaidgift.order.query request
  * 
  * @author auto create
- * @since 1.0, 2026-07-22 18:12:51
+ * @since 1.0, 2026-07-24 13:52:51
  */
 public class AlipayUserGamepaidgiftOrderQueryRequest implements AlipayRequest<AlipayUserGamepaidgiftOrderQueryResponse> {
 

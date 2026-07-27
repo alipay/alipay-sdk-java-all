@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 单元分页返回对象
  *
  * @author auto create
- * @since 1.0, 2026-04-30 10:01:27
+ * @since 1.0, 2026-07-24 15:52:26
  */
 public class GroupPageListRes extends AlipayObject {
 
-	private static final long serialVersionUID = 5326139362162612658L;
+	private static final long serialVersionUID = 5824493251317863321L;
 
 	/**
 	 * 单元出价类型
@@ -50,6 +50,12 @@ public class GroupPageListRes extends AlipayObject {
 	 */
 	@ApiField("charge_type")
 	private String chargeType;
+
+	/**
+	 * 投放模式，手动投放/自动投放
+	 */
+	@ApiField("delivery_mode")
+	private String deliveryMode;
 
 	/**
 	 * 修改时间
@@ -187,6 +193,13 @@ public class GroupPageListRes extends AlipayObject {
 	}
 	public void setChargeType(String chargeType) {
 		this.chargeType = chargeType;
+	}
+
+	public String getDeliveryMode() {
+		return this.deliveryMode;
+	}
+	public void setDeliveryMode(String deliveryMode) {
+		this.deliveryMode = deliveryMode;
 	}
 
 	public Date getGmtModified() {

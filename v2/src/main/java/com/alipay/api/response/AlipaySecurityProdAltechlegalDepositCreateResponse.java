@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySecurityProdAltechlegalDepositCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7298558613969997261L;
+	private static final long serialVersionUID = 8746522485344319176L;
 
 	/** 
 	 * 存证发起成功时返回

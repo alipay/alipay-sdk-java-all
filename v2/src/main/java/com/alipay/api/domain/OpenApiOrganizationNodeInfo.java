@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenApiOrganizationNodeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4246256828438541876L;
+	private static final long serialVersionUID = 8368462419384678729L;
 
 	/**
 	 * 组织节点名称

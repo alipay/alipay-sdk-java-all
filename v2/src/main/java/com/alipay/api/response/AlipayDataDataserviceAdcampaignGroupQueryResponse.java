@@ -13,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.adcampaign.group.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-07-07 11:54:08
+ * @since 1.0, 2026-07-24 16:07:49
  */
 public class AlipayDataDataserviceAdcampaignGroupQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2712176441128165954L;
+	private static final long serialVersionUID = 7355993845471184947L;
 
 	/** 
 	 * 年龄
@@ -99,6 +99,12 @@ public class AlipayDataDataserviceAdcampaignGroupQueryResponse extends AlipayRes
 	 */
 	@ApiField("converted_id")
 	private String convertedId;
+
+	/** 
+	 * 投放模式，手动投放/自动投放
+	 */
+	@ApiField("delivery_mode")
+	private String deliveryMode;
 
 	/** 
 	 * 地理位置类型
@@ -418,6 +424,13 @@ public class AlipayDataDataserviceAdcampaignGroupQueryResponse extends AlipayRes
 	}
 	public String getConvertedId( ) {
 		return this.convertedId;
+	}
+
+	public void setDeliveryMode(String deliveryMode) {
+		this.deliveryMode = deliveryMode;
+	}
+	public String getDeliveryMode( ) {
+		return this.deliveryMode;
 	}
 
 	public void setDistrict(String district) {

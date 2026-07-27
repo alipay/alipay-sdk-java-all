@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEcoMedicalcareCommonTpcardNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2335298687736996458L;
+	private static final long serialVersionUID = 4752586923735231952L;
 
 	/**
 	 * 模板样式信息中的底部动作

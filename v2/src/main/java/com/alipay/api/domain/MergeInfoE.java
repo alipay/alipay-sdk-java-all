@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 合并信息
  *
  * @author auto create
- * @since 1.0, 2026-07-08 11:52:56
+ * @since 1.0, 2026-07-26 15:24:37
  */
 public class MergeInfoE extends AlipayObject {
 
-	private static final long serialVersionUID = 5489762586713164352L;
+	private static final long serialVersionUID = 2297895895256187173L;
 
 	/**
 	 * 合并优惠金额，单位：元

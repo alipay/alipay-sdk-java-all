@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.acommunication.distribution.flowsmscode.send response.
  * 
  * @author auto create
- * @since 1.0, 2026-07-15 17:17:56
+ * @since 1.0, 2026-07-24 13:50:33
  */
 public class AlipayCommerceAcommunicationDistributionFlowsmscodeSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7231519746612283538L;
+	private static final long serialVersionUID = 2814615986218489544L;
 
 	
 
