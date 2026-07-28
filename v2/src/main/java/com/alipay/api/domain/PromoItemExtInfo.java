@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PromoItemExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6491378946165493622L;
+	private static final long serialVersionUID = 1463315551585534471L;
 
 	/**
 	 * 商品补贴金额（单位 元）：淘宝、1688 针对单品的支付宝渠道补贴金额

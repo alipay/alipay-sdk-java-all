@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OfflineLaborRecomInsuranceResource extends AlipayObject {
 
-	private static final long serialVersionUID = 3623424434355522183L;
+	private static final long serialVersionUID = 4397773752721345818L;
 
 	/**
 	 * 投保须知

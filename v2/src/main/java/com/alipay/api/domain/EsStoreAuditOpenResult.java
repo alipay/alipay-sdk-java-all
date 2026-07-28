@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EsStoreAuditOpenResult extends AlipayObject {
 
-	private static final long serialVersionUID = 7561213648675678942L;
+	private static final long serialVersionUID = 3798764619267455258L;
 
 	/**
 	 * 直付通申请单ID(标准进件返回)

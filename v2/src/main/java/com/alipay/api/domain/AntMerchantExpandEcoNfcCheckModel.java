@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 线圈绑定前置校验接口
  *
  * @author auto create
- * @since 1.0, 2025-03-06 17:58:33
+ * @since 1.0, 2026-07-27 21:29:44
  */
 public class AntMerchantExpandEcoNfcCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3756558371486431676L;
+	private static final long serialVersionUID = 6545537311199439834L;
 
 	/**
 	 * nfc线圈的码值token

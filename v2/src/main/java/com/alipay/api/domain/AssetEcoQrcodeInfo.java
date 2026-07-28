@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AssetEcoQrcodeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3516558137547662751L;
+	private static final long serialVersionUID = 1489187315456487668L;
 
 	/**
 	 * 该参数是支付宝物料通码平台的码类型，由业务提供

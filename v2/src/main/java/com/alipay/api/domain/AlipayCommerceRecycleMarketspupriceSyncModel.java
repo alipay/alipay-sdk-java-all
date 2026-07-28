@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceRecycleMarketspupriceSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7642479983416659489L;
+	private static final long serialVersionUID = 5133458662151823777L;
 
 	/**
 	 * C2B:回收价：用户将旧机给回收商，回收商提供给C的回收价。

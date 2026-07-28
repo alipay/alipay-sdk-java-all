@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class JobWorthCourseChapter extends AlipayObject {
 
-	private static final long serialVersionUID = 6651717236313249866L;
+	private static final long serialVersionUID = 5421481613385967396L;
 
 	/**
 	 * 课程序号，在同层级内用作章节排序，序号小的靠后

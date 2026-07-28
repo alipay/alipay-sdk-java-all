@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.eco.nfc.check response.
  * 
  * @author auto create
- * @since 1.0, 2026-07-14 15:41:33
+ * @since 1.0, 2026-07-27 21:32:51
  */
 public class AntMerchantExpandEcoNfcCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3716317155116973179L;
+	private static final long serialVersionUID = 4275942283791595594L;
 
 	/** 
 	 * ture 可以绑定  false 不可以绑定
@@ -29,6 +29,18 @@ UNKNOW 其它未知原因
 	@ApiField("forbid_bind_reason")
 	private String forbidBindReason;
 
+	/** 
+	 * 线圈对应的物料ID
+	 */
+	@ApiField("item_id")
+	private String itemId;
+
+	/** 
+	 * 物料类型标识，财神空码: cai_shen_empty_code，不需要传qrcodeTokens
+	 */
+	@ApiField("material_type")
+	private String materialType;
+
 	public void setAllowBind(Boolean allowBind) {
 		this.allowBind = allowBind;
 	}
@@ -41,6 +53,20 @@ UNKNOW 其它未知原因
 	}
 	public String getForbidBindReason( ) {
 		return this.forbidBindReason;
+	}
+
+	public void setItemId(String itemId) {
+		this.itemId = itemId;
+	}
+	public String getItemId( ) {
+		return this.itemId;
+	}
+
+	public void setMaterialType(String materialType) {
+		this.materialType = materialType;
+	}
+	public String getMaterialType( ) {
+		return this.materialType;
 	}
 
 }

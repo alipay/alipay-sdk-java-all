@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankEcnyBizflowBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4856225238887239588L;
+	private static final long serialVersionUID = 7334535333484751639L;
 
 	/** 
 	 * null

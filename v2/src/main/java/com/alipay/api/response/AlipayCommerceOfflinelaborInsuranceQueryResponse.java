@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.offlinelabor.insurance.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-07-24 14:14:15
+ * @since 1.0, 2026-07-28 15:42:50
  */
 public class AlipayCommerceOfflinelaborInsuranceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8588271244112273828L;
+	private static final long serialVersionUID = 7195733518961934623L;
 
 	/** 
 	 * 当前页码

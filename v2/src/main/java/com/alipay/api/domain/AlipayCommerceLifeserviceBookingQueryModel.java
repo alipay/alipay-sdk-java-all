@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceLifeserviceBookingQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1752332148672552781L;
+	private static final long serialVersionUID = 5264239133982168175L;
 
 	/**
 	 * 查询预约结束日期

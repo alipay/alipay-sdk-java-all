@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LoanAccountQueryDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1224598575428637394L;
+	private static final long serialVersionUID = 5245214387657582431L;
 
 	/**
 	 * 本次操作金额,单位:元

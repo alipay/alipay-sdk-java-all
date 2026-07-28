@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceEcBalanceAlertCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1758879771744742584L;
+	private static final long serialVersionUID = 1725162779158976728L;
 
 	/**
 	 * 企业码企业ID

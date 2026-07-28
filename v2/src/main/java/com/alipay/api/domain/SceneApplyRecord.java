@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SceneApplyRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 1592129685292152614L;
+	private static final long serialVersionUID = 6653712443577937378L;
 
 	/**
 	 * 生效时间 格式 yyyy-MM-dd HH:mm:ss

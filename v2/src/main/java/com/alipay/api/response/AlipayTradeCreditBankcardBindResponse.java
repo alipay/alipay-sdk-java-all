@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayTradeCreditBankcardBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6147333313736546941L;
+	private static final long serialVersionUID = 1523972424112942155L;
 
 	/** 
 	 * 商户可根据该回跳地址进行拉端唤起支付宝并跳转到选卡页面

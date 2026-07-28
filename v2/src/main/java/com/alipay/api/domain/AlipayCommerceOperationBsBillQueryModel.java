@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceOperationBsBillQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3854853575693195297L;
+	private static final long serialVersionUID = 5487934358571558721L;
 
 	/**
 	 * 上次响应返回的 `next_cursor`。在非第一次调用时，相同查询入参（`plan_id`、`start_time`、`end_time`和`page_size`）需要回传该值，用于查询表示下一页

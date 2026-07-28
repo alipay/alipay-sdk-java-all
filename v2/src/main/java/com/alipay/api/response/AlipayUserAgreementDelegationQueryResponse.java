@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.agreement.delegation.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-07-16 15:38:28
+ * @since 1.0, 2026-07-27 21:32:51
  */
 public class AlipayUserAgreementDelegationQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2351478426732388726L;
+	private static final long serialVersionUID = 5315551532736932169L;
 
 	/** 
 	 * AI支付协议号
@@ -25,6 +25,12 @@ public class AlipayUserAgreementDelegationQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("delegation_id")
 	private String delegationId;
+
+	/** 
+	 * 委托场景
+	 */
+	@ApiField("delegation_scene")
+	private String delegationScene;
 
 	/** 
 	 * 代买委托场景，与传入值相同
@@ -43,6 +49,12 @@ public class AlipayUserAgreementDelegationQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("max_total_amount")
 	private String maxTotalAmount;
+
+	/** 
+	 * 单次支付限额，币种人民币，单位为元
+	 */
+	@ApiField("quota_amount")
+	private String quotaAmount;
 
 	/** 
 	 * 剩余可用金额，单位元，币种人民币
@@ -94,6 +106,13 @@ public class AlipayUserAgreementDelegationQueryResponse extends AlipayResponse {
 		return this.delegationId;
 	}
 
+	public void setDelegationScene(String delegationScene) {
+		this.delegationScene = delegationScene;
+	}
+	public String getDelegationScene( ) {
+		return this.delegationScene;
+	}
+
 	public void setDelegationTag(String delegationTag) {
 		this.delegationTag = delegationTag;
 	}
@@ -113,6 +132,13 @@ public class AlipayUserAgreementDelegationQueryResponse extends AlipayResponse {
 	}
 	public String getMaxTotalAmount( ) {
 		return this.maxTotalAmount;
+	}
+
+	public void setQuotaAmount(String quotaAmount) {
+		this.quotaAmount = quotaAmount;
+	}
+	public String getQuotaAmount( ) {
+		return this.quotaAmount;
 	}
 
 	public void setRemainingAmount(String remainingAmount) {

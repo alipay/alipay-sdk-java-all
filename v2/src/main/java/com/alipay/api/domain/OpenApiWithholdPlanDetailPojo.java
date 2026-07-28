@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenApiWithholdPlanDetailPojo extends AlipayObject {
 
-	private static final long serialVersionUID = 5694387965516942873L;
+	private static final long serialVersionUID = 3895683113544328583L;
 
 	/**
 	 * 还款期数，1表示第一期

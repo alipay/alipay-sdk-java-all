@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LatestVerifyError extends AlipayObject {
 
-	private static final long serialVersionUID = 6859669656719146653L;
+	private static final long serialVersionUID = 1881354295646543135L;
 
 	/**
 	 * 支付宝账号未实名认证

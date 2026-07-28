@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenSpNordertagPositionBindResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5154675966987572719L;
+	private static final long serialVersionUID = 8417497456375271113L;
 
 	/** 
 	 * 绑定操作结果

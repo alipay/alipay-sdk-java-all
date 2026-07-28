@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenPublicLifeMsgRecallResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4446159243344535221L;
+	private static final long serialVersionUID = 1684779914515815118L;
 
 	
 

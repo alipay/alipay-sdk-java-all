@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.offlinelabor.insurance.query request
  * 
  * @author auto create
- * @since 1.0, 2026-07-24 14:14:15
+ * @since 1.0, 2026-07-28 15:42:50
  */
 public class AlipayCommerceOfflinelaborInsuranceQueryRequest implements AlipayRequest<AlipayCommerceOfflinelaborInsuranceQueryResponse> {
 

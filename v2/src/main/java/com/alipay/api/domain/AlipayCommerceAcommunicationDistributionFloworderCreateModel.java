@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 流量分销创单接口
  *
  * @author auto create
- * @since 1.0, 2026-07-15 17:14:10
+ * @since 1.0, 2026-07-27 19:48:22
  */
 public class AlipayCommerceAcommunicationDistributionFloworderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4464659383138121739L;
+	private static final long serialVersionUID = 3553628694624476286L;
 
 	/**
 	 * 触达渠道
@@ -78,6 +78,12 @@ public class AlipayCommerceAcommunicationDistributionFloworderCreateModel extend
 	 */
 	@ApiField("package_route")
 	private String packageRoute;
+
+	/**
+	 * 页面标识
+	 */
+	@ApiField("page_id")
+	private String pageId;
 
 	/**
 	 * 支付类型
@@ -208,6 +214,13 @@ public class AlipayCommerceAcommunicationDistributionFloworderCreateModel extend
 	}
 	public void setPackageRoute(String packageRoute) {
 		this.packageRoute = packageRoute;
+	}
+
+	public String getPageId() {
+		return this.pageId;
+	}
+	public void setPageId(String pageId) {
+		this.pageId = pageId;
 	}
 
 	public String getPayType() {

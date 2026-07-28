@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class OrderVoucherAvailableCityCode extends AlipayObject {
 
-	private static final long serialVersionUID = 5559371462366822271L;
+	private static final long serialVersionUID = 5525562999472772432L;
 
 	/**
 	 * 是否全国。选择全国后，无须填写city_codes字段。系统默认填充全国全部城市信息。

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NTaskSceneDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1594398989452192137L;
+	private static final long serialVersionUID = 6448351627444758345L;
 
 	/**
 	 * 点位绑定资产id，线圈作业场景为tagId，设备作业场景为sn

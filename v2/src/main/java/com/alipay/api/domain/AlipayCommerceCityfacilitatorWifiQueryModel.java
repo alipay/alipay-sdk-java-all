@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceCityfacilitatorWifiQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3828747144113756154L;
+	private static final long serialVersionUID = 8186638223914614311L;
 
 	/**
 	 * 当前页

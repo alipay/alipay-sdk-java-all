@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ChinaMobileVerificationSyncData extends AlipayObject {
 
-	private static final long serialVersionUID = 6471883354764244294L;
+	private static final long serialVersionUID = 7792759535769358554L;
 
 	/**
 	 * 核销来源为收银台商家券时必填

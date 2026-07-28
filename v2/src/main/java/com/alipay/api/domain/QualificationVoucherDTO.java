@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class QualificationVoucherDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6372186314734745993L;
+	private static final long serialVersionUID = 5629144835251473571L;
 
 	/**
 	 * 可用金额，单位元

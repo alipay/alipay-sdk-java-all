@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.offlinelabor.insurance.sign request
  * 
  * @author auto create
- * @since 1.0, 2026-07-24 14:14:18
+ * @since 1.0, 2026-07-28 15:42:50
  */
 public class AlipayCommerceOfflinelaborInsuranceSignRequest implements AlipayRequest<AlipayCommerceOfflinelaborInsuranceSignResponse> {
 

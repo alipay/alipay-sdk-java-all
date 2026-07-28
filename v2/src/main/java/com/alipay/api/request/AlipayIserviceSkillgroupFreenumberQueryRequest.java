@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.skillgroup.freenumber.query request
  * 
  * @author auto create
- * @since 1.0, 2023-08-03 21:01:53
+ * @since 1.0, 2026-07-28 17:17:45
  */
 public class AlipayIserviceSkillgroupFreenumberQueryRequest implements AlipayRequest<AlipayIserviceSkillgroupFreenumberQueryResponse> {
 

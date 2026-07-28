@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPayPosterBatchCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3142425644818286377L;
+	private static final long serialVersionUID = 5378154889979863462L;
 
 	/** 
 	 * 生成的主键

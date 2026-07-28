@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RentKolDailyReportVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1132993885441441426L;
+	private static final long serialVersionUID = 5697519848729529339L;
 
 	/**
 	 * 机构名称

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalHomedoctorMessageCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6476947874217242516L;
+	private static final long serialVersionUID = 2549868178937625648L;
 
 	/**
 	 * 消息发送批次，当消息业务类型为AI语音随访时（message_biz_type='AI_FOLLOW_UP'）请传入创建AI随访任务的biz_id

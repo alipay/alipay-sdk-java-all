@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.skillgroup.freenumber.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-08-03 21:01:53
+ * @since 1.0, 2026-07-28 17:17:45
  */
 public class AlipayIserviceSkillgroupFreenumberQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1574788574434447259L;
+	private static final long serialVersionUID = 5289748676728969774L;
 
 	/** 
 	 * 返回体

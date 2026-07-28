@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RoboPoint extends AlipayObject {
 
-	private static final long serialVersionUID = 4443254276729778885L;
+	private static final long serialVersionUID = 5733772786221545944L;
 
 	/**
 	 * 纬度

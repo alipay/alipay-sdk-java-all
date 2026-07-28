@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 安心登记卡保单列表查询
  *
  * @author auto create
- * @since 1.0, 2026-07-24 14:14:15
+ * @since 1.0, 2026-07-28 15:42:50
  */
 public class AlipayCommerceOfflinelaborInsuranceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5579417949724424273L;
+	private static final long serialVersionUID = 8165913475545654365L;
 
 	/**
 	 * 支付宝账号，与channel_user_source

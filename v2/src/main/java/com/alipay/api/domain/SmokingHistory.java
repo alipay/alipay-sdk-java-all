@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SmokingHistory extends AlipayObject {
 
-	private static final long serialVersionUID = 4516454187638764372L;
+	private static final long serialVersionUID = 8579225868127119528L;
 
 	/**
 	 * 日吸烟量（支）

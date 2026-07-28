@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 安心登记卡企业退保
  *
  * @author auto create
- * @since 1.0, 2026-07-24 14:14:17
+ * @since 1.0, 2026-07-28 15:42:50
  */
 public class AlipayCommerceOfflinelaborInsuranceUnsignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6682722985858572658L;
+	private static final long serialVersionUID = 2891172285184674479L;
 
 	/**
 	 * 保险模式

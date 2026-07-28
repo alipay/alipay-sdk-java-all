@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceMedicalCommercialMemberFreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2499663343785261774L;
+	private static final long serialVersionUID = 3361271397428743348L;
 
 	/**
 	 * 需要操作的权益资产列表

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MiniPriceInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2735839389765324436L;
+	private static final long serialVersionUID = 8374126322288269687L;
 
 	/**
 	 * 分摊到凭证次序号维度的商家侧优惠，单位：元

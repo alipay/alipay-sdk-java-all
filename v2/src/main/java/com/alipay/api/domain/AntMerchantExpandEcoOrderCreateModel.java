@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ISV订单信息创建
  *
  * @author auto create
- * @since 1.0, 2025-09-09 19:10:21
+ * @since 1.0, 2026-07-27 22:05:16
  */
 public class AntMerchantExpandEcoOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7742692422349445623L;
+	private static final long serialVersionUID = 1731297747564245918L;
 
 	/**
 	 * 交易平台
@@ -34,6 +34,13 @@ public class AntMerchantExpandEcoOrderCreateModel extends AlipayObject {
 	 */
 	@ApiField("express_no")
 	private String expressNo;
+
+	/**
+	 * 物料ID列表
+	 */
+	@ApiListField("item_ids")
+	@ApiField("string")
+	private List<String> itemIds;
 
 	/**
 	 * 订单状态
@@ -130,6 +137,13 @@ public class AntMerchantExpandEcoOrderCreateModel extends AlipayObject {
 	}
 	public void setExpressNo(String expressNo) {
 		this.expressNo = expressNo;
+	}
+
+	public List<String> getItemIds() {
+		return this.itemIds;
+	}
+	public void setItemIds(List<String> itemIds) {
+		this.itemIds = itemIds;
 	}
 
 	public String getOrderStatus() {
