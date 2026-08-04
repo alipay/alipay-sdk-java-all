@@ -7,17 +7,35 @@ import com.alipay.api.internal.mapping.ApiField;
  * 供应商新增
  *
  * @author auto create
- * @since 1.0, 2026-04-29 15:39:48
+ * @since 1.0, 2026-07-31 15:27:22
  */
 public class AlipayCommerceEcRecyclinginvoiceCompanysupplierCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3181542775659794514L;
+	private static final long serialVersionUID = 1695915137913577258L;
 
 	/**
 	 * 手机
 	 */
 	@ApiField("account_type")
 	private String accountType;
+
+	/**
+	 * 供应商收款银行卡号
+	 */
+	@ApiField("bank_card_no")
+	private String bankCardNo;
+
+	/**
+	 * 供应商收款银行编码
+	 */
+	@ApiField("bank_code")
+	private String bankCode;
+
+	/**
+	 * 是否维护供应商收款银行卡：YES/NO。缺省按 NO 处理。
+	 */
+	@ApiField("has_bank_card")
+	private String hasBankCard;
 
 	/**
 	 * 请求方传入的外部供应商ID
@@ -54,6 +72,27 @@ public class AlipayCommerceEcRecyclinginvoiceCompanysupplierCreateModel extends 
 	}
 	public void setAccountType(String accountType) {
 		this.accountType = accountType;
+	}
+
+	public String getBankCardNo() {
+		return this.bankCardNo;
+	}
+	public void setBankCardNo(String bankCardNo) {
+		this.bankCardNo = bankCardNo;
+	}
+
+	public String getBankCode() {
+		return this.bankCode;
+	}
+	public void setBankCode(String bankCode) {
+		this.bankCode = bankCode;
+	}
+
+	public String getHasBankCard() {
+		return this.hasBankCard;
+	}
+	public void setHasBankCard(String hasBankCard) {
+		this.hasBankCard = hasBankCard;
 	}
 
 	public String getOuterSupplierId() {

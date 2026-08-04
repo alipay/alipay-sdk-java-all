@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.security.risk.complaint.info.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2026-06-04 11:37:51
+ * @since 1.0, 2026-07-30 18:22:50
  */
 public class AlipaySecurityRiskComplaintInfoBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8287196979742922781L;
+	private static final long serialVersionUID = 8468164492268989592L;
 
 	/** 
 	 * 投诉详情信息列表

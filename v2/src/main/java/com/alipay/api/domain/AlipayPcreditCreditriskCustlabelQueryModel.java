@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPcreditCreditriskCustlabelQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7273734383329112868L;
+	private static final long serialVersionUID = 6276231177549281785L;
 
 	/**
 	 * 支付宝2088id

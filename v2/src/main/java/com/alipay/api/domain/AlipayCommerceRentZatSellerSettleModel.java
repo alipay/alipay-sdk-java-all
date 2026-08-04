@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租安托分账结算接口
  *
  * @author auto create
- * @since 1.0, 2026-07-10 17:47:54
+ * @since 1.0, 2026-07-31 10:57:54
  */
 public class AlipayCommerceRentZatSellerSettleModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6665665163959598722L;
+	private static final long serialVersionUID = 3458529985661241864L;
 
 	/**
 	 * 交易组件订单号
@@ -38,7 +38,7 @@ public class AlipayCommerceRentZatSellerSettleModel extends AlipayObject {
 	private String outRequestNo;
 
 	/**
-	 * 分账模式，目前有两种分账同步执行sync，分账异步执行async，不传默认同步执行
+	 * 分账模式，目前只支持同步执行sync，不传默认同步执行
 	 */
 	@ApiField("royalty_mode")
 	private String royaltyMode;

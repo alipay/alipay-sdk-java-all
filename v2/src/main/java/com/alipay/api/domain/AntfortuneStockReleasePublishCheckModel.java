@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntfortuneStockReleasePublishCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5191458961577437234L;
+	private static final long serialVersionUID = 1125263959131684981L;
 
 	/**
 	 * 当前发布环境

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntMerchantExpandCorematerialListQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8426821213263895163L;
+	private static final long serialVersionUID = 6593294662323852584L;
 
 	/** 
 	 * 核心原材料详细信息

@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.industryinvoice.invoiceapply.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-07-09 16:47:50
+ * @since 1.0, 2026-08-03 14:07:51
  */
 public class AlipayCommerceEcIndustryinvoiceInvoiceapplyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8198669132769881125L;
+	private static final long serialVersionUID = 7352177894469668714L;
 
 	/** 
 	 * 购买方地址
@@ -173,10 +173,28 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyQueryResponse extends Al
 	private List<IndustryInvoiceRealPropertyBusiness> realPropertyBusinessList;
 
 	/** 
+	 * 红字确认单号
+	 */
+	@ApiField("red_confirmation_no")
+	private String redConfirmationNo;
+
+	/** 
+	 * 红字确认单UUID
+	 */
+	@ApiField("red_confirmation_uuid")
+	private String redConfirmationUuid;
+
+	/** 
 	 * 关联蓝票发票号码
 	 */
 	@ApiField("related_blue_invoice_no")
 	private String relatedBlueInvoiceNo;
+
+	/** 
+	 * 发票备注
+	 */
+	@ApiField("remark")
+	private String remark;
 
 	/** 
 	 * 销售方名称
@@ -378,11 +396,32 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyQueryResponse extends Al
 		return this.realPropertyBusinessList;
 	}
 
+	public void setRedConfirmationNo(String redConfirmationNo) {
+		this.redConfirmationNo = redConfirmationNo;
+	}
+	public String getRedConfirmationNo( ) {
+		return this.redConfirmationNo;
+	}
+
+	public void setRedConfirmationUuid(String redConfirmationUuid) {
+		this.redConfirmationUuid = redConfirmationUuid;
+	}
+	public String getRedConfirmationUuid( ) {
+		return this.redConfirmationUuid;
+	}
+
 	public void setRelatedBlueInvoiceNo(String relatedBlueInvoiceNo) {
 		this.relatedBlueInvoiceNo = relatedBlueInvoiceNo;
 	}
 	public String getRelatedBlueInvoiceNo( ) {
 		return this.relatedBlueInvoiceNo;
+	}
+
+	public void setRemark(String remark) {
+		this.remark = remark;
+	}
+	public String getRemark( ) {
+		return this.remark;
 	}
 
 	public void setSellerName(String sellerName) {

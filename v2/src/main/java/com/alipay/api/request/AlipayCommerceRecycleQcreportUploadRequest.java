@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.recycle.qcreport.upload request
  * 
  * @author auto create
- * @since 1.0, 2026-07-06 14:42:56
+ * @since 1.0, 2026-07-31 14:12:49
  */
 public class AlipayCommerceRecycleQcreportUploadRequest implements AlipayRequest<AlipayCommerceRecycleQcreportUploadResponse> {
 

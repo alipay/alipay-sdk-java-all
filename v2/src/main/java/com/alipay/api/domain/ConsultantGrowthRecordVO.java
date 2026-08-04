@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-07-21 19:27:52
+ * @since 1.0, 2026-07-29 15:52:53
  */
 public class ConsultantGrowthRecordVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1649581531728719849L;
+	private static final long serialVersionUID = 8588714996674675626L;
 
 	/**
 	 * 月龄（由出生日期与recordDate计算）

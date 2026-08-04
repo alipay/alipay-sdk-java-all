@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.sp.ncoilopen.deliverylogistics.query request
  * 
  * @author auto create
- * @since 1.0, 2026-03-13 19:42:42
+ * @since 1.0, 2026-08-03 14:19:08
  */
 public class AlipayOpenSpNcoilopenDeliverylogisticsQueryRequest implements AlipayRequest<AlipayOpenSpNcoilopenDeliverylogisticsQueryResponse> {
 

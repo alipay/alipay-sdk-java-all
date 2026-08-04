@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付可开票开票申请创建
  *
  * @author auto create
- * @since 1.0, 2026-05-27 13:50:33
+ * @since 1.0, 2026-08-03 14:07:19
  */
 public class AlipayCommerceEcIndustryinvoiceInvoiceapplyCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3691124291898754995L;
+	private static final long serialVersionUID = 1264437261643533625L;
 
 	/**
 	 * 购买方地址
 	 */
 	@ApiField("buyer_address")
 	private String buyerAddress;
+
+	/**
+	 * 购方支付宝登录id
+	 */
+	@ApiField("buyer_alipay_login_id")
+	private String buyerAlipayLoginId;
 
 	/**
 	 * 购买方银行账号
@@ -57,6 +63,12 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyCreateModel extends Alip
 	 */
 	@ApiField("buyer_tel")
 	private String buyerTel;
+
+	/**
+	 * 渠道场景相关信息
+	 */
+	@ApiField("channel_info")
+	private IndustryInvoiceChannelInfo channelInfo;
 
 	/**
 	 * 复核人
@@ -162,6 +174,12 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyCreateModel extends Alip
 	private String payee;
 
 	/**
+	 * 发票产品码，与productId二选一
+	 */
+	@ApiField("product_code")
+	private String productCode;
+
+	/**
 	 * 发票产品ID
 	 */
 	@ApiField("product_id")
@@ -244,6 +262,13 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyCreateModel extends Alip
 		this.buyerAddress = buyerAddress;
 	}
 
+	public String getBuyerAlipayLoginId() {
+		return this.buyerAlipayLoginId;
+	}
+	public void setBuyerAlipayLoginId(String buyerAlipayLoginId) {
+		this.buyerAlipayLoginId = buyerAlipayLoginId;
+	}
+
 	public String getBuyerBankAccount() {
 		return this.buyerBankAccount;
 	}
@@ -284,6 +309,13 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyCreateModel extends Alip
 	}
 	public void setBuyerTel(String buyerTel) {
 		this.buyerTel = buyerTel;
+	}
+
+	public IndustryInvoiceChannelInfo getChannelInfo() {
+		return this.channelInfo;
+	}
+	public void setChannelInfo(IndustryInvoiceChannelInfo channelInfo) {
+		this.channelInfo = channelInfo;
 	}
 
 	public String getChecker() {
@@ -389,6 +421,13 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyCreateModel extends Alip
 	}
 	public void setPayee(String payee) {
 		this.payee = payee;
+	}
+
+	public String getProductCode() {
+		return this.productCode;
+	}
+	public void setProductCode(String productCode) {
+		this.productCode = productCode;
 	}
 
 	public String getProductId() {

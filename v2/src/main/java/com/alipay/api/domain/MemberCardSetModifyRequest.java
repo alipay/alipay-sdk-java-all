@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MemberCardSetModifyRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 6827628247454418217L;
+	private static final long serialVersionUID = 5492219557977949782L;
 
 	/**
 	 * 期望修改成的卡面信息

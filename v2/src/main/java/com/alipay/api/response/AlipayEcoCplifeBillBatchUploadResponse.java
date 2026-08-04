@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEcoCplifeBillBatchUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6546858695638147391L;
+	private static final long serialVersionUID = 2529388627248719321L;
 
 	/** 
 	 * 成功导入所有条目集合中的条目，则回传请求中的批次号

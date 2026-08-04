@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MedicareVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3662991734387962255L;
+	private static final long serialVersionUID = 2242651197422441378L;
 
 	/**
 	 * 医保个账退款金额

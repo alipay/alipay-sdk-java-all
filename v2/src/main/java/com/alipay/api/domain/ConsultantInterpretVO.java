@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 最新 AI 解读（无有效解读时为 null）
  *
  * @author auto create
- * @since 1.0, 2026-07-21 19:27:52
+ * @since 1.0, 2026-07-29 15:52:53
  */
 public class ConsultantInterpretVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4756725322352168132L;
+	private static final long serialVersionUID = 2368976878287895653L;
 
 	/**
 	 * 解读正文 Markdown

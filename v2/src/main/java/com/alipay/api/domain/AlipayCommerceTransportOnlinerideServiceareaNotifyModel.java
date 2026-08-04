@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 运营变化通知
  *
  * @author auto create
- * @since 1.0, 2025-12-27 10:57:42
+ * @since 1.0, 2026-08-03 12:56:58
  */
 public class AlipayCommerceTransportOnlinerideServiceareaNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2889983246324461778L;
+	private static final long serialVersionUID = 3832112777615276694L;
 
 	/**
 	 * 变更动作，1:启用 2:停运

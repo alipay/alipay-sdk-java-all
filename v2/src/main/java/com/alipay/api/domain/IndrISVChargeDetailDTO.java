@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IndrISVChargeDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1863253774935215495L;
+	private static final long serialVersionUID = 8548386333698862475L;
 
 	/**
 	 * 费用金额

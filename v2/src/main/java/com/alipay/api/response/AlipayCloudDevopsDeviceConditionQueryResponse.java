@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.cloud.devops.device.condition.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-01-09 13:56:57
+ * @since 1.0, 2026-07-29 19:52:20
  */
 public class AlipayCloudDevopsDeviceConditionQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6576975231983559249L;
+	private static final long serialVersionUID = 2757189951947953318L;
 
 	/** 
 	 * 设备架构

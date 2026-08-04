@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ScenicAllBaseDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1369762925392535175L;
+	private static final long serialVersionUID = 8246325616141671957L;
 
 	/**
 	 * 头像图片

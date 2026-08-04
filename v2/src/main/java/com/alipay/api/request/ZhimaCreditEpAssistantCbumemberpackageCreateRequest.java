@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: zhima.credit.ep.assistant.cbumemberpackage.create request
  * 
  * @author auto create
- * @since 1.0, 2026-07-27 10:17:52
+ * @since 1.0, 2026-07-29 11:27:48
  */
 public class ZhimaCreditEpAssistantCbumemberpackageCreateRequest implements AlipayRequest<ZhimaCreditEpAssistantCbumemberpackageCreateResponse> {
 

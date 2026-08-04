@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMarketingSharetokenCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8249785293812175777L;
+	private static final long serialVersionUID = 7778118642367284391L;
 
 	/** 
 	 * 吱口令失效时间，若为空则表示永久有效

@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class HDFPrescription extends AlipayObject {
 
-	private static final long serialVersionUID = 1432553545218262782L;
+	private static final long serialVersionUID = 2824588257725575915L;
 
 	/**
 	 * 审核时间

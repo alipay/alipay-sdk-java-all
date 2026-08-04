@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建租赁采购单
  *
  * @author auto create
- * @since 1.0, 2026-07-16 20:07:52
+ * @since 1.0, 2026-07-30 11:12:56
  */
 public class AlipayCommerceRentProcurementOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7587855115486739459L;
+	private static final long serialVersionUID = 8585799634382119732L;
+
+	/**
+	 * 当面激活策略（FORCE_INACTIVE / ACTIVE / NONE），不传以商品配置为准
+	 */
+	@ApiField("face_activation_strategy")
+	private String faceActivationStrategy;
 
 	/**
 	 * null
@@ -40,6 +46,13 @@ public class AlipayCommerceRentProcurementOrderCreateModel extends AlipayObject 
 	 */
 	@ApiField("relate_rent_order_id")
 	private String relateRentOrderId;
+
+	public String getFaceActivationStrategy() {
+		return this.faceActivationStrategy;
+	}
+	public void setFaceActivationStrategy(String faceActivationStrategy) {
+		this.faceActivationStrategy = faceActivationStrategy;
+	}
 
 	public List<RentProcurementItemInfoDTO> getItemInfos() {
 		return this.itemInfos;

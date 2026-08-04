@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.onlineride.servicearea.notify request
  * 
  * @author auto create
- * @since 1.0, 2025-12-27 10:57:42
+ * @since 1.0, 2026-08-03 12:56:58
  */
 public class AlipayCommerceTransportOnlinerideServiceareaNotifyRequest implements AlipayRequest<AlipayCommerceTransportOnlinerideServiceareaNotifyResponse> {
 

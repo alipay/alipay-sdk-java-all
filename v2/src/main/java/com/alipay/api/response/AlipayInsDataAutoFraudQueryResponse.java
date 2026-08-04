@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayInsDataAutoFraudQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1766495353198582994L;
+	private static final long serialVersionUID = 5812186911633844671L;
 
 	/** 
 	 * 案件欺诈名单类型：

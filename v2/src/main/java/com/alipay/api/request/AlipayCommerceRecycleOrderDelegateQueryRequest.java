@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.recycle.order.delegate.query request
  * 
  * @author auto create
- * @since 1.0, 2026-07-23 14:47:06
+ * @since 1.0, 2026-07-31 10:42:53
  */
 public class AlipayCommerceRecycleOrderDelegateQueryRequest implements AlipayRequest<AlipayCommerceRecycleOrderDelegateQueryResponse> {
 

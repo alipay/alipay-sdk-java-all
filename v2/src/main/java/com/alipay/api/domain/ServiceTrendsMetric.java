@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ServiceTrendsMetric extends AlipayObject {
 
-	private static final long serialVersionUID = 1328736718597241699L;
+	private static final long serialVersionUID = 2839192416778993988L;
 
 	/**
 	 * 趋势类型

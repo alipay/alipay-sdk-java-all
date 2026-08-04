@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 分账明细信息。单独调用分账完结时，可以不传此参数。其他场景必传。 注意：商家分账场景下分账收入方 trans_in 只支持支付宝账户，不支持使用 cardAliasNo 卡编号。
  *
  * @author auto create
- * @since 1.0, 2026-07-10 17:47:54
+ * @since 1.0, 2026-07-31 10:57:54
  */
 public class RoyaltyDetailInfoPojo extends AlipayObject {
 
-	private static final long serialVersionUID = 7179163275965535496L;
+	private static final long serialVersionUID = 1777549331512843491L;
 
 	/**
 	 * 分账的金额，单位为元

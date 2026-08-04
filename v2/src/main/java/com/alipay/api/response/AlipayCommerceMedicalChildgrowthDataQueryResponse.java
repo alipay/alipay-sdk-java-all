@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.childgrowth.data.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-07-21 19:27:52
+ * @since 1.0, 2026-07-29 15:52:53
  */
 public class AlipayCommerceMedicalChildgrowthDataQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5344117443525967389L;
+	private static final long serialVersionUID = 6146643533594265625L;
 
 	/** 
 	 * ConsultantChildInfoVO	儿童基本信息（档案为空时为 null）

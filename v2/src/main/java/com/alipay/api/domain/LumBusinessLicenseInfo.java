@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营业执照信息，可选重传，不传则保留原值
  *
  * @author auto create
- * @since 1.0, 2026-07-16 10:17:56
+ * @since 1.0, 2026-08-03 14:45:34
  */
 public class LumBusinessLicenseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4557384218184985939L;
+	private static final long serialVersionUID = 1535726116691452979L;
 
 	/**
 	 * 营业执照图片OSS Key，调用ant.merchant.expand.indirect.image.upload获取

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class OpenXlightCrowdChildLevelTwo extends AlipayObject {
 
-	private static final long serialVersionUID = 2111192983678661138L;
+	private static final long serialVersionUID = 6741919311411625299L;
 
 	/**
 	 * 人群类目第三层级子类目

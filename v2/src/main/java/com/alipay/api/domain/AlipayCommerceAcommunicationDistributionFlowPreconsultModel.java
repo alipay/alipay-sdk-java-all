@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 流量订单预校验
  *
  * @author auto create
- * @since 1.0, 2025-12-08 13:54:06
+ * @since 1.0, 2026-07-30 10:29:42
  */
 public class AlipayCommerceAcommunicationDistributionFlowPreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6193659557198672257L;
+	private static final long serialVersionUID = 6439328648471685264L;
 
 	/**
 	 * 支付宝的userId
@@ -24,6 +24,12 @@ public class AlipayCommerceAcommunicationDistributionFlowPreconsultModel extends
 	 */
 	@ApiField("encrypted_mobile")
 	private String encryptedMobile;
+
+	/**
+	 * 固定点位
+	 */
+	@ApiField("fixed_position_code")
+	private String fixedPositionCode;
 
 	/**
 	 * 商品id
@@ -42,6 +48,12 @@ public class AlipayCommerceAcommunicationDistributionFlowPreconsultModel extends
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/**
+	 * 报备素材编号
+	 */
+	@ApiField("report_materials_no")
+	private String reportMaterialsNo;
 
 	/**
 	 * 请求号
@@ -69,6 +81,13 @@ public class AlipayCommerceAcommunicationDistributionFlowPreconsultModel extends
 		this.encryptedMobile = encryptedMobile;
 	}
 
+	public String getFixedPositionCode() {
+		return this.fixedPositionCode;
+	}
+	public void setFixedPositionCode(String fixedPositionCode) {
+		this.fixedPositionCode = fixedPositionCode;
+	}
+
 	public String getItemId() {
 		return this.itemId;
 	}
@@ -88,6 +107,13 @@ public class AlipayCommerceAcommunicationDistributionFlowPreconsultModel extends
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public String getReportMaterialsNo() {
+		return this.reportMaterialsNo;
+	}
+	public void setReportMaterialsNo(String reportMaterialsNo) {
+		this.reportMaterialsNo = reportMaterialsNo;
 	}
 
 	public String getRequestId() {

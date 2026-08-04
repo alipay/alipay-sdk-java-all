@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPcreditHuabeiSubsidyConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3341493815992365425L;
+	private static final long serialVersionUID = 6329587734649648732L;
 
 	/** 
 	 * 贴息咨询响应结果

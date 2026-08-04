@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalIndustrydataOrderdeleteSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5123221569453535514L;
+	private static final long serialVersionUID = 8171572945223223693L;
 
 	/**
 	 * 支付宝用户openId

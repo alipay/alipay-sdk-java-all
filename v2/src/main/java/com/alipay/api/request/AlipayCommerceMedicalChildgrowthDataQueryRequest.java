@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.childgrowth.data.query request
  * 
  * @author auto create
- * @since 1.0, 2026-07-21 19:27:52
+ * @since 1.0, 2026-07-29 15:52:53
  */
 public class AlipayCommerceMedicalChildgrowthDataQueryRequest implements AlipayRequest<AlipayCommerceMedicalChildgrowthDataQueryResponse> {
 

@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayGongyiUserInfoTest extends AlipayObject {
 
-	private static final long serialVersionUID = 2552655635841135295L;
+	private static final long serialVersionUID = 6684594786359626718L;
 
 	/**
 	 * 地址信息

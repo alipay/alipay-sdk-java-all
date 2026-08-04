@@ -13,12 +13,17 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: datadigital.fincloud.generalsaas.face.source.certify request
  * 
  * @author auto create
- * @since 1.0, 2024-05-07 14:37:03
+ * @since 1.0, 2026-07-30 20:32:51
  */
 public class DatadigitalFincloudGeneralsaasFaceSourceCertifyRequest implements AlipayUploadRequest<DatadigitalFincloudGeneralsaasFaceSourceCertifyResponse> {
 
 	private AlipayHashMap udfParams; // add user-defined text parameters
 	private String apiVersion="1.0";
+
+	/** 
+	* 业务产品码
+	 */
+	private String bizCode;
 
 	/** 
 	* 用户姓名，与身份证上的姓名相匹配
@@ -72,6 +77,13 @@ CHECK：正常活体检测。
 	* ON：开启安全拦截。OFF：关闭安全拦截。默认取值为ON。
 	 */
 	private String securityStrategy;
+
+	public void setBizCode(String bizCode) {
+		this.bizCode = bizCode;
+	}
+	public String getBizCode() {
+		return this.bizCode;
+	}
 
 	public void setCertName(String certName) {
 		this.certName = certName;
@@ -203,6 +215,7 @@ CHECK：正常活体检测。
 
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
+		txtParams.put("biz_code", this.bizCode);
 		txtParams.put("cert_name", this.certName);
 		txtParams.put("cert_no", this.certNo);
 		txtParams.put("cert_type", this.certType);

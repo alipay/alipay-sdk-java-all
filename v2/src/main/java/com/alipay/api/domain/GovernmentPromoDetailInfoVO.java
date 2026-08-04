@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GovernmentPromoDetailInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3453472582284431378L;
+	private static final long serialVersionUID = 1898889713725531777L;
 
 	/**
 	 * 政府满减优惠金额

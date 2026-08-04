@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 国标曲线数据：百分位（P3/P25/P50/P75/P90，0-18岁按月龄合并）+ BMI 特殊界值（7-18岁消瘦/肥胖）+ BMI 界值（THRESHOLD）
  *
  * @author auto create
- * @since 1.0, 2026-07-21 19:27:52
+ * @since 1.0, 2026-07-29 15:52:53
  */
 public class ConsultantStandardDataVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2277353139847866942L;
+	private static final long serialVersionUID = 3594955715253335998L;
 
 	/**
 	 * null

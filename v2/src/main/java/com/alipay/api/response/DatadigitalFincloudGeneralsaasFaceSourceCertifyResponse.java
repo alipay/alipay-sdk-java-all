@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: datadigital.fincloud.generalsaas.face.source.certify response.
  * 
  * @author auto create
- * @since 1.0, 2024-05-07 14:37:03
+ * @since 1.0, 2026-07-30 20:32:51
  */
 public class DatadigitalFincloudGeneralsaasFaceSourceCertifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1643866434682544713L;
+	private static final long serialVersionUID = 1159797763693731935L;
 
 	/** 
 	 * 人脸认证单据号，用于认证问题排查
@@ -33,13 +33,13 @@ public class DatadigitalFincloudGeneralsaasFaceSourceCertifyResponse extends Ali
 	private String passed;
 
 	/** 
-	 * double值，人脸图片质量分
+	 * double值，人脸图片质量分，0-100的百分制分数
 	 */
 	@ApiField("quality")
 	private String quality;
 
 	/** 
-	 * double值，活体检测结果分数
+	 * double值，活体检测结果分数，0-100的百分制分数
 	 */
 	@ApiField("score")
 	private String score;

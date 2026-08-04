@@ -10,11 +10,29 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 二手售卖支付接口
  *
  * @author auto create
- * @since 1.0, 2026-07-06 10:46:12
+ * @since 1.0, 2026-07-29 16:32:51
  */
 public class AlipayCommerceResaleOrderPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7275898817739461599L;
+	private static final long serialVersionUID = 2327887966741461932L;
+
+	/**
+	 * 分期渠道
+	 */
+	@ApiField("fq_channels")
+	private String fqChannels;
+
+	/**
+	 * 分期数
+	 */
+	@ApiField("fq_num")
+	private String fqNum;
+
+	/**
+	 * 卖家分期手续费比例
+	 */
+	@ApiField("fq_seller_percent")
+	private String fqSellerPercent;
 
 	/**
 	 * 用户id
@@ -77,6 +95,27 @@ PARTIAL_PAY,部分支付
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getFqChannels() {
+		return this.fqChannels;
+	}
+	public void setFqChannels(String fqChannels) {
+		this.fqChannels = fqChannels;
+	}
+
+	public String getFqNum() {
+		return this.fqNum;
+	}
+	public void setFqNum(String fqNum) {
+		this.fqNum = fqNum;
+	}
+
+	public String getFqSellerPercent() {
+		return this.fqSellerPercent;
+	}
+	public void setFqSellerPercent(String fqSellerPercent) {
+		this.fqSellerPercent = fqSellerPercent;
+	}
 
 	public String getOpenId() {
 		return this.openId;

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class SsdataDataserviceRpcQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6356285155544131669L;
+	private static final long serialVersionUID = 8784592486984536188L;
 
 	/**
 	 * 年龄

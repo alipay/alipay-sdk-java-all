@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DatadigitalAicsDevinTtsmessageQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5433177934591968848L;
+	private static final long serialVersionUID = 6764691114946246253L;
 
 	/**
 	 * 通话ID，从通话记录中获取

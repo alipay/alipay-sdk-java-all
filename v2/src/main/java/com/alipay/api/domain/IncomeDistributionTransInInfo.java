@@ -12,7 +12,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IncomeDistributionTransInInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8518846731362197335L;
+	private static final long serialVersionUID = 5841751784264954852L;
 
 	/**
 	 * 收益分配的百分比数值，支持2位小数

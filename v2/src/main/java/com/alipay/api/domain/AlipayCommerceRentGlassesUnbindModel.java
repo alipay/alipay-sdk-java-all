@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceRentGlassesUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3674649235455668358L;
+	private static final long serialVersionUID = 7378742571347681999L;
 
 	/**
 	 * 设备SN，眼镜厂商唯一设备号

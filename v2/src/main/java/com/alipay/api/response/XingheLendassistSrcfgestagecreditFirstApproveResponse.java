@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class XingheLendassistSrcfgestagecreditFirstApproveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6139428868382961376L;
+	private static final long serialVersionUID = 2587567448415354966L;
 
 	/** 
 	 * 政企员工团购分期授信初审返回的唯一申请单号

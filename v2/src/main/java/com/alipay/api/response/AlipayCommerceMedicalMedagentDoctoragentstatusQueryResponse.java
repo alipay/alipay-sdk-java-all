@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.medagent.doctoragentstatus.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-07-28 14:06:35
+ * @since 1.0, 2026-07-31 11:19:35
  */
 public class AlipayCommerceMedicalMedagentDoctoragentstatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4724838833912714589L;
+	private static final long serialVersionUID = 2729197163544843442L;
 
 	/** 
 	 * ai医生智能体状态信息数据

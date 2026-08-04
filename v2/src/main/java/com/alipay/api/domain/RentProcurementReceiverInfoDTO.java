@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 收货人信息
  *
  * @author auto create
- * @since 1.0, 2026-07-16 20:07:52
+ * @since 1.0, 2026-07-30 11:12:56
  */
 public class RentProcurementReceiverInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2846536868373269125L;
+	private static final long serialVersionUID = 4692363536563519945L;
 
 	/**
 	 * 收货人身份证号（用于顺丰签收面单）

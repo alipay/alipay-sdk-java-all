@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RefuseVo extends AlipayObject {
 
-	private static final long serialVersionUID = 2374551815554321368L;
+	private static final long serialVersionUID = 5218898938259938156L;
 
 	/**
 	 * 拒绝码

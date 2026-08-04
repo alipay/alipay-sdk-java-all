@@ -10,16 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 卡使用信息
  *
  * @author auto create
- * @since 1.0, 2026-03-31 15:02:10
+ * @since 1.0, 2026-07-31 14:24:07
  */
 public class CardTemplateUse extends AlipayObject {
 
-	private static final long serialVersionUID = 6149345215266533786L;
+	private static final long serialVersionUID = 2431531829556385474L;
 
 	/**
-	 * 日历价格
+	 * 日历价格 当前字段已废弃(动态定价请使用：alipay.commerce.merchantcard.templateprice.set)
 	 */
 	@ApiField("calendar_price")
+	@Deprecated
 	private LifeserviceItemCalendarPrice calendarPrice;
 
 	/**
@@ -41,6 +42,18 @@ public class CardTemplateUse extends AlipayObject {
 	private Long expirePeriod;
 
 	/**
+	 * 一口价的新客价，单位分。仅单次商品生效，多次商品使用period_price_list里的新客价字段。新客价需是所有价格中最低的价格。
+	 */
+	@ApiField("new_customer_price")
+	private Long newCustomerPrice;
+
+	/**
+	 * 一口价原价，如果设置动态定价则为兜底原价。仅单次商品生效，多次商品使用period_price_list字段
+	 */
+	@ApiField("original_price")
+	private Long originalPrice;
+
+	/**
 	 * 每期价格
 	 */
 	@ApiListField("period_price_list")
@@ -48,9 +61,10 @@ public class CardTemplateUse extends AlipayObject {
 	private List<CardPeriodPrice> periodPriceList;
 
 	/**
-	 * 价格模式。默认阶梯价格
+	 * 价格模式。默认阶梯价格 当前字段已废弃(不限制单一定价模式，动态定价请使用：alipay.commerce.merchantcard.templateprice.set)
 	 */
 	@ApiField("price_mode")
+	@Deprecated
 	private String priceMode;
 
 	/**
@@ -64,6 +78,12 @@ public class CardTemplateUse extends AlipayObject {
 	 */
 	@ApiField("reservation_url")
 	private String reservationUrl;
+
+	/**
+	 * 一口价，如果设置动态定价则为兜底售价。仅单次商品生效，多次商品使用period_price_list字段
+	 */
+	@ApiField("sale_price")
+	private Long salePrice;
 
 	/**
 	 * 是否全部门店
@@ -132,6 +152,20 @@ public class CardTemplateUse extends AlipayObject {
 		this.expirePeriod = expirePeriod;
 	}
 
+	public Long getNewCustomerPrice() {
+		return this.newCustomerPrice;
+	}
+	public void setNewCustomerPrice(Long newCustomerPrice) {
+		this.newCustomerPrice = newCustomerPrice;
+	}
+
+	public Long getOriginalPrice() {
+		return this.originalPrice;
+	}
+	public void setOriginalPrice(Long originalPrice) {
+		this.originalPrice = originalPrice;
+	}
+
 	public List<CardPeriodPrice> getPeriodPriceList() {
 		return this.periodPriceList;
 	}
@@ -158,6 +192,13 @@ public class CardTemplateUse extends AlipayObject {
 	}
 	public void setReservationUrl(String reservationUrl) {
 		this.reservationUrl = reservationUrl;
+	}
+
+	public Long getSalePrice() {
+		return this.salePrice;
+	}
+	public void setSalePrice(Long salePrice) {
+		this.salePrice = salePrice;
 	}
 
 	public String getShowShop() {

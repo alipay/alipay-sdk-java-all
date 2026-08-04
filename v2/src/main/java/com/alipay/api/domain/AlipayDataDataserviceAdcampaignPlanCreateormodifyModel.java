@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 计划新增或修改
  *
  * @author auto create
- * @since 1.0, 2026-07-14 16:37:14
+ * @since 1.0, 2026-07-29 11:15:28
  */
 public class AlipayDataDataserviceAdcampaignPlanCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6778777669312547134L;
+	private static final long serialVersionUID = 4789634986957729568L;
 
 	/**
 	 * 计划日预算，单位元【人民币】

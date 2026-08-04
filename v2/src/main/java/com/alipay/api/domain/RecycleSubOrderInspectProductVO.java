@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RecycleSubOrderInspectProductVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8671714876882449522L;
+	private static final long serialVersionUID = 6478812225482512262L;
 
 	/**
 	 * 商品的质检金额,币种：人民币，单位：元

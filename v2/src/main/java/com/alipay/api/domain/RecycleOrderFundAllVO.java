@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 资金信息全集
  *
  * @author auto create
- * @since 1.0, 2026-06-11 16:31:37
+ * @since 1.0, 2026-07-30 14:06:55
  */
 public class RecycleOrderFundAllVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6528331139469868782L;
+	private static final long serialVersionUID = 4888999345636783219L;
+
+	/**
+	 * 信用预付资金信息
+	 */
+	@ApiField("credit_withdraw_info")
+	private RecycleOrderPayInfoVO creditWithdrawInfo;
 
 	/**
 	 * 支付信息
@@ -34,6 +40,13 @@ public class RecycleOrderFundAllVO extends AlipayObject {
 	@ApiListField("royalty_infos")
 	@ApiField("recycle_order_royalty_info_v_o")
 	private List<RecycleOrderRoyaltyInfoVO> royaltyInfos;
+
+	public RecycleOrderPayInfoVO getCreditWithdrawInfo() {
+		return this.creditWithdrawInfo;
+	}
+	public void setCreditWithdrawInfo(RecycleOrderPayInfoVO creditWithdrawInfo) {
+		this.creditWithdrawInfo = creditWithdrawInfo;
+	}
 
 	public RecycleOrderPayInfoVO getOrderPayInfo() {
 		return this.orderPayInfo;

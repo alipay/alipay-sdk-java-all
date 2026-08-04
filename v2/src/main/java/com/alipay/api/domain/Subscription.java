@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-07-27 19:57:52
+ * @since 1.0, 2026-07-29 14:22:56
  */
 public class Subscription extends AlipayObject {
 
-	private static final long serialVersionUID = 5575387617294739217L;
+	private static final long serialVersionUID = 2229581399282893413L;
 
 	/**
 	 * true - 周期结束状态生效
@@ -58,6 +58,12 @@ false - 周期结束依旧生效
 	 */
 	@ApiField("deduct_type")
 	private String deductType;
+
+	/**
+	 * 枚举值：IMMEDIATE_EFFECTIVE（默认）。传入 SCHEDULED_EFFECTIVE 时表示「订阅预约生效模式」
+	 */
+	@ApiField("effective_type")
+	private String effectiveType;
 
 	/**
 	 * null
@@ -162,6 +168,13 @@ false - 周期结束依旧生效
 	}
 	public void setDeductType(String deductType) {
 		this.deductType = deductType;
+	}
+
+	public String getEffectiveType() {
+		return this.effectiveType;
+	}
+	public void setEffectiveType(String effectiveType) {
+		this.effectiveType = effectiveType;
 	}
 
 	public List<SubscriptionQueryItem> getItems() {

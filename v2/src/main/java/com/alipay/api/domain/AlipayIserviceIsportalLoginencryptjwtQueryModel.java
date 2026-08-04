@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayIserviceIsportalLoginencryptjwtQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5884222445726258299L;
+	private static final long serialVersionUID = 1563964934421586939L;
 
 	/**
 	 * 过期秒数

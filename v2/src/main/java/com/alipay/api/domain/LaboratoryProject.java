@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LaboratoryProject extends AlipayObject {
 
-	private static final long serialVersionUID = 8588274422437838464L;
+	private static final long serialVersionUID = 5482966197667188613L;
 
 	/**
 	 * 异常类型：正常、偏高、偏低、上升、下降等

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceLogisticsFreightflowCloudfundrefundQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2151273842135735275L;
+	private static final long serialVersionUID = 4115461969753597178L;
 
 	/**
 	 * 与运企付约定的物流公司编码

@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 流量分销创单接口
  *
  * @author auto create
- * @since 1.0, 2026-07-27 19:48:22
+ * @since 1.0, 2026-07-30 10:29:21
  */
 public class AlipayCommerceAcommunicationDistributionFloworderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3553628694624476286L;
+	private static final long serialVersionUID = 7838276841953323736L;
 
 	/**
 	 * 触达渠道
 	 */
 	@ApiField("access_channel")
 	private String accessChannel;
+
+	/**
+	 * 引流页截图≤500K
+	 */
+	@ApiField("advertorial_img")
+	private String advertorialImg;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识
@@ -42,6 +48,12 @@ public class AlipayCommerceAcommunicationDistributionFloworderCreateModel extend
 	 */
 	@ApiField("first_channel")
 	private String firstChannel;
+
+	/**
+	 * 固定点位
+	 */
+	@ApiField("fixed_position_code")
+	private String fixedPositionCode;
 
 	/**
 	 * 机构订单id
@@ -110,6 +122,18 @@ public class AlipayCommerceAcommunicationDistributionFloworderCreateModel extend
 	private String proxyOrderUrl;
 
 	/**
+	 * 报备素材编号
+	 */
+	@ApiField("report_materials_no")
+	private String reportMaterialsNo;
+
+	/**
+	 * 营销图片≤500K
+	 */
+	@ApiField("sales_img")
+	private String salesImg;
+
+	/**
 	 * sdk凭证
 	 */
 	@ApiField("sdk_voucher")
@@ -139,11 +163,24 @@ public class AlipayCommerceAcommunicationDistributionFloworderCreateModel extend
 	@ApiField("user_agent")
 	private String userAgent;
 
+	/**
+	 * 二确页图片≤500K
+	 */
+	@ApiField("verify_again_img")
+	private String verifyAgainImg;
+
 	public String getAccessChannel() {
 		return this.accessChannel;
 	}
 	public void setAccessChannel(String accessChannel) {
 		this.accessChannel = accessChannel;
+	}
+
+	public String getAdvertorialImg() {
+		return this.advertorialImg;
+	}
+	public void setAdvertorialImg(String advertorialImg) {
+		this.advertorialImg = advertorialImg;
 	}
 
 	public String getAlipayUserId() {
@@ -172,6 +209,13 @@ public class AlipayCommerceAcommunicationDistributionFloworderCreateModel extend
 	}
 	public void setFirstChannel(String firstChannel) {
 		this.firstChannel = firstChannel;
+	}
+
+	public String getFixedPositionCode() {
+		return this.fixedPositionCode;
+	}
+	public void setFixedPositionCode(String fixedPositionCode) {
+		this.fixedPositionCode = fixedPositionCode;
 	}
 
 	public String getInstOrderId() {
@@ -251,6 +295,20 @@ public class AlipayCommerceAcommunicationDistributionFloworderCreateModel extend
 		this.proxyOrderUrl = proxyOrderUrl;
 	}
 
+	public String getReportMaterialsNo() {
+		return this.reportMaterialsNo;
+	}
+	public void setReportMaterialsNo(String reportMaterialsNo) {
+		this.reportMaterialsNo = reportMaterialsNo;
+	}
+
+	public String getSalesImg() {
+		return this.salesImg;
+	}
+	public void setSalesImg(String salesImg) {
+		this.salesImg = salesImg;
+	}
+
 	public String getSdkVoucher() {
 		return this.sdkVoucher;
 	}
@@ -284,6 +342,13 @@ public class AlipayCommerceAcommunicationDistributionFloworderCreateModel extend
 	}
 	public void setUserAgent(String userAgent) {
 		this.userAgent = userAgent;
+	}
+
+	public String getVerifyAgainImg() {
+		return this.verifyAgainImg;
+	}
+	public void setVerifyAgainImg(String verifyAgainImg) {
+		this.verifyAgainImg = verifyAgainImg;
 	}
 
 }

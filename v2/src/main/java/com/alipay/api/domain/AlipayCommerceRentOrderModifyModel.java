@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 订单信息修改
  *
  * @author auto create
- * @since 1.0, 2026-07-02 14:42:17
+ * @since 1.0, 2026-08-03 10:48:43
  */
 public class AlipayCommerceRentOrderModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7852345536435317549L;
+	private static final long serialVersionUID = 7159245325735333719L;
 
 	/**
 	 * 订单收货地址
@@ -42,6 +45,13 @@ public class AlipayCommerceRentOrderModifyModel extends AlipayObject {
 	 */
 	@ApiField("order_id")
 	private String orderId;
+
+	/**
+	 * 订单协商支付时间
+	 */
+	@ApiListField("order_negotiated_payment_time")
+	@ApiField("order_negotiated_payment_time")
+	private List<OrderNegotiatedPaymentTime> orderNegotiatedPaymentTime;
 
 	/**
 	 * 商户订单号
@@ -100,6 +110,13 @@ public class AlipayCommerceRentOrderModifyModel extends AlipayObject {
 	}
 	public void setOrderId(String orderId) {
 		this.orderId = orderId;
+	}
+
+	public List<OrderNegotiatedPaymentTime> getOrderNegotiatedPaymentTime() {
+		return this.orderNegotiatedPaymentTime;
+	}
+	public void setOrderNegotiatedPaymentTime(List<OrderNegotiatedPaymentTime> orderNegotiatedPaymentTime) {
+		this.orderNegotiatedPaymentTime = orderNegotiatedPaymentTime;
 	}
 
 	public String getOutOrderId() {

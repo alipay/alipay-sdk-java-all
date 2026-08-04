@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 转入划账接口
  *
  * @author auto create
- * @since 1.0, 2026-07-07 15:12:53
+ * @since 1.0, 2026-07-31 11:05:36
  */
 public class AlipayDataDataserviceAdBudgetassignTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4834918495819944833L;
+	private static final long serialVersionUID = 4568929927611334919L;
 
 	/**
 	 * 转出总金额（元）,支持两位小数

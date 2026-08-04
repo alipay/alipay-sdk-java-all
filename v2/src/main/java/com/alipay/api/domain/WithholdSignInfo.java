@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class WithholdSignInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3569668361696471539L;
+	private static final long serialVersionUID = 6192649593728445964L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号

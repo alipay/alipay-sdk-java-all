@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 流量分销发送验证码
  *
  * @author auto create
- * @since 1.0, 2026-07-27 20:11:07
+ * @since 1.0, 2026-07-30 10:29:25
  */
 public class AlipayCommerceAcommunicationDistributionFlowsmscodeSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1872293315622293437L;
+	private static final long serialVersionUID = 8198629335291872589L;
 
 	/**
 	 * 触达渠道
@@ -30,6 +30,12 @@ public class AlipayCommerceAcommunicationDistributionFlowsmscodeSendModel extend
 	 */
 	@ApiField("first_channel")
 	private String firstChannel;
+
+	/**
+	 * 固定点位
+	 */
+	@ApiField("fixed_position_code")
+	private String fixedPositionCode;
 
 	/**
 	 * 分销商订单号
@@ -66,6 +72,12 @@ public class AlipayCommerceAcommunicationDistributionFlowsmscodeSendModel extend
 	 */
 	@ApiField("proxy_order_url")
 	private String proxyOrderUrl;
+
+	/**
+	 * 报备素材编号
+	 */
+	@ApiField("report_materials_no")
+	private String reportMaterialsNo;
 
 	/**
 	 * 请求id
@@ -112,6 +124,13 @@ public class AlipayCommerceAcommunicationDistributionFlowsmscodeSendModel extend
 		this.firstChannel = firstChannel;
 	}
 
+	public String getFixedPositionCode() {
+		return this.fixedPositionCode;
+	}
+	public void setFixedPositionCode(String fixedPositionCode) {
+		this.fixedPositionCode = fixedPositionCode;
+	}
+
 	public String getInstOrderId() {
 		return this.instOrderId;
 	}
@@ -152,6 +171,13 @@ public class AlipayCommerceAcommunicationDistributionFlowsmscodeSendModel extend
 	}
 	public void setProxyOrderUrl(String proxyOrderUrl) {
 		this.proxyOrderUrl = proxyOrderUrl;
+	}
+
+	public String getReportMaterialsNo() {
+		return this.reportMaterialsNo;
+	}
+	public void setReportMaterialsNo(String reportMaterialsNo) {
+		this.reportMaterialsNo = reportMaterialsNo;
 	}
 
 	public String getRequestId() {

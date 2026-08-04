@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * App维度短剧合集列表
  *
  * @author auto create
- * @since 1.0, 2026-07-28 19:09:17
+ * @since 1.0, 2026-07-28 19:27:50
  */
 public class AlipayDataDataserviceAdcampaignSeriesappcompilationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1588215397367511586L;
+	private static final long serialVersionUID = 1171167391472392347L;
 
 	/**
 	 * 营销目标编码;缺失透传 null(Service 内按默认 status=0 处理)

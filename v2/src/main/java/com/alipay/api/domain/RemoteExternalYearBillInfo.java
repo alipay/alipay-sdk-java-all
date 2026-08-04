@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RemoteExternalYearBillInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6899338556178658273L;
+	private static final long serialVersionUID = 5181539319534976561L;
 
 	/**
 	 * 账单明细

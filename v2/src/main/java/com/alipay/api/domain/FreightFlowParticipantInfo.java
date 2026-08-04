@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FreightFlowParticipantInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6333348785727857721L;
+	private static final long serialVersionUID = 4259335199536621799L;
 
 	/**
 	 * 银行名

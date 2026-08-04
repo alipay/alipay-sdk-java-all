@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租房过程信息同步
  *
  * @author auto create
- * @since 1.0, 2026-07-26 15:24:37
+ * @since 1.0, 2026-07-29 09:57:51
  */
 public class AlipayCommerceRentHouseProcessSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5268656695833567674L;
+	private static final long serialVersionUID = 3586341918983818276L;
 
 	/**
 	 * 用户id
@@ -22,7 +22,7 @@ public class AlipayCommerceRentHouseProcessSyncModel extends AlipayObject {
 	private String alipayOpenId;
 
 	/**
-	 * 大订单ID，可关联多个小二订单
+	 * 大订单系统ID，可关联多个小二订单
 	 */
 	@ApiField("biz_order_id")
 	private String bizOrderId;
@@ -50,6 +50,12 @@ public class AlipayCommerceRentHouseProcessSyncModel extends AlipayObject {
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;
+
+	/**
+	 * 外部业务单标题
+	 */
+	@ApiField("out_biz_title")
+	private String outBizTitle;
 
 	/**
 	 * 前序过程记录ID，首次提报时为null
@@ -133,6 +139,13 @@ public class AlipayCommerceRentHouseProcessSyncModel extends AlipayObject {
 	}
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
+	}
+
+	public String getOutBizTitle() {
+		return this.outBizTitle;
+	}
+	public void setOutBizTitle(String outBizTitle) {
+		this.outBizTitle = outBizTitle;
 	}
 
 	public String getPrevProcessId() {

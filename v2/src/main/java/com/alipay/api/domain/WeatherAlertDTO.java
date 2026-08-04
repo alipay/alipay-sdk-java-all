@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class WeatherAlertDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1347252734738523876L;
+	private static final long serialVersionUID = 4467173573188698642L;
 
 	/**
 	 * 平台极端天气预警 code，与外部数据源 eventType.code 一对一映射，用于标识预警事件类型。

@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
  * 代用户查询回收订单详情
  *
  * @author auto create
- * @since 1.0, 2026-06-11 16:31:37
+ * @since 1.0, 2026-07-30 14:06:55
  */
 public class AlipayCommerceRecycleOrderDelegateQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5793542468584338744L;
+	private static final long serialVersionUID = 3776525885465687811L;
 
 	/**
-	 * 淘宝品牌店铺：BRAND, 租赁服务商：RENT_PROVIDER
+	 * 淘宝品牌店铺：BRAND, 租赁服务商：RENT_PROVIDER,回收服务商：RECYCLE_MERCHANT
 	 */
 	@ApiField("delegate_type")
 	private String delegateType;

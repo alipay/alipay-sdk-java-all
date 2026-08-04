@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntfortuneStockOpenPromoConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7487338322345688598L;
+	private static final long serialVersionUID = 7671495932517356756L;
 
 	/**
 	 * 指定金额发奖时必填，单位分

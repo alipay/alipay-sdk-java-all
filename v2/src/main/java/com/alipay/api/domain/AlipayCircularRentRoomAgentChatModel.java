@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCircularRentRoomAgentChatModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5686227392692326662L;
+	private static final long serialVersionUID = 1855396915132652665L;
 
 	/**
 	 * null

@@ -9,17 +9,35 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开票规则记录
  *
  * @author auto create
- * @since 1.0, 2024-01-30 14:28:38
+ * @since 1.0, 2026-07-31 14:57:33
  */
 public class EnterpriseOpenRuleRecordInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6175111221935467274L;
+	private static final long serialVersionUID = 2186378351661491443L;
 
 	/**
 	 * 开票规则账单日
 	 */
 	@ApiField("bill_month_day")
 	private Long billMonthDay;
+
+	/**
+	 * 开票账单范围
+	 */
+	@ApiField("bill_scope")
+	private String billScope;
+
+	/**
+	 * 组合支付模式
+	 */
+	@ApiField("combined_pay_mode")
+	private String combinedPayMode;
+
+	/**
+	 * 默认开票类型
+	 */
+	@ApiField("default_invoice_kind")
+	private String defaultInvoiceKind;
 
 	/**
 	 * 开票规则生效日期
@@ -98,6 +116,27 @@ public class EnterpriseOpenRuleRecordInfo extends AlipayObject {
 	}
 	public void setBillMonthDay(Long billMonthDay) {
 		this.billMonthDay = billMonthDay;
+	}
+
+	public String getBillScope() {
+		return this.billScope;
+	}
+	public void setBillScope(String billScope) {
+		this.billScope = billScope;
+	}
+
+	public String getCombinedPayMode() {
+		return this.combinedPayMode;
+	}
+	public void setCombinedPayMode(String combinedPayMode) {
+		this.combinedPayMode = combinedPayMode;
+	}
+
+	public String getDefaultInvoiceKind() {
+		return this.defaultInvoiceKind;
+	}
+	public void setDefaultInvoiceKind(String defaultInvoiceKind) {
+		this.defaultInvoiceKind = defaultInvoiceKind;
 	}
 
 	public Date getEffectiveStart() {

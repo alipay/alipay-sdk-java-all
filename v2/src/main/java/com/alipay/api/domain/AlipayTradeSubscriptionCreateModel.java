@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订阅创建
  *
  * @author auto create
- * @since 1.0, 2026-07-27 11:18:52
+ * @since 1.0, 2026-07-29 14:22:49
  */
 public class AlipayTradeSubscriptionCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4669531878999965499L;
+	private static final long serialVersionUID = 1691772757748391497L;
 
 	/**
 	 * 客户id，客户创建接口（alipay.trade.customer.create）返回的客户id
@@ -27,6 +27,12 @@ public class AlipayTradeSubscriptionCreateModel extends AlipayObject {
 	 */
 	@ApiField("deduct_type")
 	private String deductType;
+
+	/**
+	 * 订阅生效的类型，枚举值：IMMEDIATE_EFFECTIVE（默认）。传入 SCHEDULED_EFFECTIVE 时表示「订阅预约生效模式」
+	 */
+	@ApiField("effective_type")
+	private String effectiveType;
 
 	/**
 	 * 扩展参数，用于订阅特殊能力的传参，使用方式详见具体场景接入指南
@@ -53,6 +59,13 @@ public class AlipayTradeSubscriptionCreateModel extends AlipayObject {
 	 */
 	@ApiField("pay_amount")
 	private Long payAmount;
+
+	/**
+	 * 若为「单笔升级连续订阅」，必填。周期订阅正式生效的时间，格式 yyyy-MM-dd。
+月维度下，订阅到期时间，统一按照23:59:59进行默认处理。
+	 */
+	@ApiField("scheduled_effective_time")
+	private String scheduledEffectiveTime;
 
 	/**
 	 * 订单标题，若无特殊需求，无需使用该字段，默认使用商品名称
@@ -87,6 +100,13 @@ public class AlipayTradeSubscriptionCreateModel extends AlipayObject {
 		this.deductType = deductType;
 	}
 
+	public String getEffectiveType() {
+		return this.effectiveType;
+	}
+	public void setEffectiveType(String effectiveType) {
+		this.effectiveType = effectiveType;
+	}
+
 	public String getExtendParams() {
 		return this.extendParams;
 	}
@@ -113,6 +133,13 @@ public class AlipayTradeSubscriptionCreateModel extends AlipayObject {
 	}
 	public void setPayAmount(Long payAmount) {
 		this.payAmount = payAmount;
+	}
+
+	public String getScheduledEffectiveTime() {
+		return this.scheduledEffectiveTime;
+	}
+	public void setScheduledEffectiveTime(String scheduledEffectiveTime) {
+		this.scheduledEffectiveTime = scheduledEffectiveTime;
 	}
 
 	public String getSubscribeTitle() {

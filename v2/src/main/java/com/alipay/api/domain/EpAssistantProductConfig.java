@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 企信会员产品包定制化配置.仅对product_sku为QX-ZTB-ASSISTANT-STANDARD和QX-TK-ASSISTANT-STANDARD 时生效
+ * 企信会员产品包定制化配置.仅对product_sku为QX-ZTB-ASSISTANT-STANDARD和QX-TK-ASSISTANT-STANDARD 是生效
  *
  * @author auto create
- * @since 1.0, 2026-07-27 14:27:51
+ * @since 1.0, 2026-07-29 11:27:48
  */
 public class EpAssistantProductConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 3437313662684723579L;
+	private static final long serialVersionUID = 4285624963933444487L;
 
 	/**
 	 * 时长购买数量，是以duration_unit的值作为单位，例如3个 HALF_YEAR表示一年半
@@ -20,7 +20,7 @@ public class EpAssistantProductConfig extends AlipayObject {
 	private Long durationQuantity;
 
 	/**
-	 * 购买会员包的时长单位(目前支持HALF_YEAR和YEAR两个选项)，生效与本结构的购买数量(duration_quantity)结合使用，如购买3个HALF_YEAR表示一年半。
+	 * 购买会员包的时长单位(目前支持QUARTER、HALF_YEAR和YEAR三个选项，其中QUARTER只针对部分渠道开放)，生效与本结构的购买数量(duration_quantity)结合使用，如购买3个HALF_YEAR表示一年半。
 	 */
 	@ApiField("duration_unit")
 	private String durationUnit;

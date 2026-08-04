@@ -7,17 +7,35 @@ import com.alipay.api.internal.mapping.ApiField;
  * 挂号绿通
  *
  * @author auto create
- * @since 1.0, 2026-07-17 10:54:22
+ * @since 1.0, 2026-07-29 16:03:22
  */
 public class RegistrationGreenChannelFulfillmentDetailData extends AlipayObject {
 
-	private static final long serialVersionUID = 3524285798998668113L;
+	private static final long serialVersionUID = 3624225692134129148L;
 
 	/**
 	 * 就医信息
 	 */
 	@ApiField("actual_visit_info")
 	private ActualVisitInfo actualVisitInfo;
+
+	/**
+	 * 取消原因
+	 */
+	@ApiField("cancel_reason")
+	private String cancelReason;
+
+	/**
+	 * 取消备注
+	 */
+	@ApiField("cancel_remark")
+	private String cancelRemark;
+
+	/**
+	 * 取消时间
+	 */
+	@ApiField("cancel_time")
+	private String cancelTime;
 
 	/**
 	 * 就诊信息
@@ -78,6 +96,27 @@ public class RegistrationGreenChannelFulfillmentDetailData extends AlipayObject 
 	}
 	public void setActualVisitInfo(ActualVisitInfo actualVisitInfo) {
 		this.actualVisitInfo = actualVisitInfo;
+	}
+
+	public String getCancelReason() {
+		return this.cancelReason;
+	}
+	public void setCancelReason(String cancelReason) {
+		this.cancelReason = cancelReason;
+	}
+
+	public String getCancelRemark() {
+		return this.cancelRemark;
+	}
+	public void setCancelRemark(String cancelRemark) {
+		this.cancelRemark = cancelRemark;
+	}
+
+	public String getCancelTime() {
+		return this.cancelTime;
+	}
+	public void setCancelTime(String cancelTime) {
+		this.cancelTime = cancelTime;
 	}
 
 	public ClinicInfo getClinicInfo() {

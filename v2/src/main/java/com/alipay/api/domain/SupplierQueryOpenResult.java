@@ -7,17 +7,41 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用于查询供应商信息
  *
  * @author auto create
- * @since 1.0, 2026-03-06 10:44:48
+ * @since 1.0, 2026-07-31 15:27:17
  */
 public class SupplierQueryOpenResult extends AlipayObject {
 
-	private static final long serialVersionUID = 7131535665594887784L;
+	private static final long serialVersionUID = 8151279346354863197L;
 
 	/**
 	 * 支付宝账号类型
 	 */
 	@ApiField("account_type")
 	private String accountType;
+
+	/**
+	 * 收款银行卡号（已脱敏）
+	 */
+	@ApiField("bank_card_no_masked")
+	private String bankCardNoMasked;
+
+	/**
+	 * 供应商收款银行编码
+	 */
+	@ApiField("bank_code")
+	private String bankCode;
+
+	/**
+	 * 供应商收款银行
+	 */
+	@ApiField("bank_name")
+	private String bankName;
+
+	/**
+	 * 是否维护供应商收款银行卡
+	 */
+	@ApiField("has_bank_card")
+	private String hasBankCard;
 
 	/**
 	 * 供应商支付宝账号
@@ -54,6 +78,34 @@ public class SupplierQueryOpenResult extends AlipayObject {
 	}
 	public void setAccountType(String accountType) {
 		this.accountType = accountType;
+	}
+
+	public String getBankCardNoMasked() {
+		return this.bankCardNoMasked;
+	}
+	public void setBankCardNoMasked(String bankCardNoMasked) {
+		this.bankCardNoMasked = bankCardNoMasked;
+	}
+
+	public String getBankCode() {
+		return this.bankCode;
+	}
+	public void setBankCode(String bankCode) {
+		this.bankCode = bankCode;
+	}
+
+	public String getBankName() {
+		return this.bankName;
+	}
+	public void setBankName(String bankName) {
+		this.bankName = bankName;
+	}
+
+	public String getHasBankCard() {
+		return this.hasBankCard;
+	}
+	public void setHasBankCard(String hasBankCard) {
+		this.hasBankCard = hasBankCard;
 	}
 
 	public String getSupplierAccountNo() {

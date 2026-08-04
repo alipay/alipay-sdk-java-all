@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.lifeservice.unifiedshop.modify request
  * 
  * @author auto create
- * @since 1.0, 2026-07-16 10:17:56
+ * @since 1.0, 2026-08-03 14:45:34
  */
 public class AlipayCommerceLifeserviceUnifiedshopModifyRequest implements AlipayRequest<AlipayCommerceLifeserviceUnifiedshopModifyResponse> {
 

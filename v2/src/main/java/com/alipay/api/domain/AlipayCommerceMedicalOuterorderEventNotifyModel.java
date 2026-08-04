@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalOuterorderEventNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2624744464249182378L;
+	private static final long serialVersionUID = 7748933662642254916L;
 
 	/**
 	 * 业务场景

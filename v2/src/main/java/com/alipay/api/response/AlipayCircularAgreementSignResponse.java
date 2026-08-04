@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCircularAgreementSignResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8748882172496844844L;
+	private static final long serialVersionUID = 2365337476738455494L;
 
 	/** 
 	 * 绑定的收款钱包信息Id

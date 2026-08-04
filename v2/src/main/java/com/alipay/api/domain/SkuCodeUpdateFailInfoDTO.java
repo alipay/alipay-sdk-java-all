@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SkuCodeUpdateFailInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4627596367795759193L;
+	private static final long serialVersionUID = 7644651711437467398L;
 
 	/**
 	 * 提示信息

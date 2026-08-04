@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * ConsultantChildInfoVO	儿童基本信息（档案为空时为 null）
  *
  * @author auto create
- * @since 1.0, 2026-07-21 19:27:52
+ * @since 1.0, 2026-07-29 15:52:53
  */
 public class ConsultantChildInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1754361962268487565L;
+	private static final long serialVersionUID = 7625444365235288487L;
 
 	/**
 	 * 出生日期，格式：yyyy-MM-dd

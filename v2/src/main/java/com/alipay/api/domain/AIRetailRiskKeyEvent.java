@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AIRetailRiskKeyEvent extends AlipayObject {
 
-	private static final long serialVersionUID = 1277322871598614955L;
+	private static final long serialVersionUID = 3739399144882661838L;
 
 	/**
 	 * null

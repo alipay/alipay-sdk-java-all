@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 交易补充信息
  *
  * @author auto create
- * @since 1.0, 2026-07-26 15:24:37
+ * @since 1.0, 2026-07-29 09:57:51
  */
 public class TradeDetailE extends AlipayObject {
 
-	private static final long serialVersionUID = 7657258973846395796L;
+	private static final long serialVersionUID = 3466663611115746421L;
 
 	/**
 	 * 扣款信息
 	 */
 	@ApiField("deduction_info")
 	private DeductionInfoE deductionInfo;
+
+	/**
+	 * 灵活租期交易信息
+	 */
+	@ApiField("flexible_rent_info")
+	private FlexibleRentInfo flexibleRentInfo;
 
 	/**
 	 * 合并信息
@@ -36,6 +42,13 @@ public class TradeDetailE extends AlipayObject {
 	}
 	public void setDeductionInfo(DeductionInfoE deductionInfo) {
 		this.deductionInfo = deductionInfo;
+	}
+
+	public FlexibleRentInfo getFlexibleRentInfo() {
+		return this.flexibleRentInfo;
+	}
+	public void setFlexibleRentInfo(FlexibleRentInfo flexibleRentInfo) {
+		this.flexibleRentInfo = flexibleRentInfo;
 	}
 
 	public MergeInfoE getMergeInfo() {

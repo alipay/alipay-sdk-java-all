@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.acommunication.distribution.flow.preconsult response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-08 13:57:41
+ * @since 1.0, 2026-07-30 10:32:55
  */
 public class AlipayCommerceAcommunicationDistributionFlowPreconsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6687593317281741288L;
+	private static final long serialVersionUID = 3238756325449187547L;
 
 	/** 
 	 * 手机号对应多用户标志

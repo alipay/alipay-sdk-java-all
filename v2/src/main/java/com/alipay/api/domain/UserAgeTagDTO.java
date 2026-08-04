@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class UserAgeTagDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4188655641332485716L;
+	private static final long serialVersionUID = 7173221225316214392L;
 
 	/**
 	 * 用户年龄段占比

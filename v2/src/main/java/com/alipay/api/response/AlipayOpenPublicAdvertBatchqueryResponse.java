@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenPublicAdvertBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6697887891895714722L;
+	private static final long serialVersionUID = 7262752281828643238L;
 
 	/** 
 	 * 广告位列表 。目前只有一个广告位。

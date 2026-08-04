@@ -17,11 +17,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.recyclinginvoice.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-06-26 11:07:56
+ * @since 1.0, 2026-07-31 15:27:50
  */
 public class AlipayCommerceEcRecyclinginvoiceOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5831741731686462182L;
+	private static final long serialVersionUID = 8744558263793745816L;
 
 	/** 
 	 * []
@@ -167,6 +167,12 @@ public class AlipayCommerceEcRecyclinginvoiceOrderQueryResponse extends AlipayRe
 	 */
 	@ApiField("proxy_seller_invoice_page_url")
 	private String proxySellerInvoicePageUrl;
+
+	/** 
+	 * 收款方式
+	 */
+	@ApiField("received_method")
+	private String receivedMethod;
 
 	/** 
 	 * 卖家名称
@@ -356,6 +362,13 @@ public class AlipayCommerceEcRecyclinginvoiceOrderQueryResponse extends AlipayRe
 	}
 	public String getProxySellerInvoicePageUrl( ) {
 		return this.proxySellerInvoicePageUrl;
+	}
+
+	public void setReceivedMethod(String receivedMethod) {
+		this.receivedMethod = receivedMethod;
+	}
+	public String getReceivedMethod( ) {
+		return this.receivedMethod;
 	}
 
 	public void setSellerName(String sellerName) {

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EduSmActivityDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4111628436389892767L;
+	private static final long serialVersionUID = 7561231116945451261L;
 
 	/**
 	 * 活动码

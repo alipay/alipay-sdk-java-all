@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TicketPassager extends AlipayObject {
 
-	private static final long serialVersionUID = 4141358258267377638L;
+	private static final long serialVersionUID = 2159299751653524132L;
 
 	/**
 	 * 证件号

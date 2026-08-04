@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开票规则修改
  *
  * @author auto create
- * @since 1.0, 2024-02-21 14:32:49
+ * @since 1.0, 2026-07-31 14:58:41
  */
 public class AlipayEbppInvoiceEnterpriseconsumeEnterpriseopenruleModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1892793425452967297L;
+	private static final long serialVersionUID = 1242192938331887765L;
 
 	/**
 	 * 企业共同账户ID
@@ -24,6 +24,24 @@ public class AlipayEbppInvoiceEnterpriseconsumeEnterpriseopenruleModifyModel ext
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
+
+	/**
+	 * 开票账单范围
+	 */
+	@ApiField("bill_scope")
+	private String billScope;
+
+	/**
+	 * 组合支付模式
+	 */
+	@ApiField("combined_pay_mode")
+	private String combinedPayMode;
+
+	/**
+	 * 默认开票类型
+	 */
+	@ApiField("default_invoice_kind")
+	private String defaultInvoiceKind;
 
 	/**
 	 * 企业ID
@@ -85,6 +103,27 @@ public class AlipayEbppInvoiceEnterpriseconsumeEnterpriseopenruleModifyModel ext
 	}
 	public void setAgreementNo(String agreementNo) {
 		this.agreementNo = agreementNo;
+	}
+
+	public String getBillScope() {
+		return this.billScope;
+	}
+	public void setBillScope(String billScope) {
+		this.billScope = billScope;
+	}
+
+	public String getCombinedPayMode() {
+		return this.combinedPayMode;
+	}
+	public void setCombinedPayMode(String combinedPayMode) {
+		this.combinedPayMode = combinedPayMode;
+	}
+
+	public String getDefaultInvoiceKind() {
+		return this.defaultInvoiceKind;
+	}
+	public void setDefaultInvoiceKind(String defaultInvoiceKind) {
+		this.defaultInvoiceKind = defaultInvoiceKind;
 	}
 
 	public String getEnterpriseId() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HDFDrugAllergy extends AlipayObject {
 
-	private static final long serialVersionUID = 2233447184645975351L;
+	private static final long serialVersionUID = 8241699714219225727L;
 
 	/**
 	 * 过敏描述

@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * 订单详情
  *
  * @author auto create
- * @since 1.0, 2026-07-06 17:41:30
+ * @since 1.0, 2026-07-29 16:27:55
  */
 public class ResaleOrderDetailVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5279678849693615791L;
+	private static final long serialVersionUID = 1361616337735837346L;
 
 	/**
 	 * 履约信息
@@ -78,6 +81,13 @@ public class ResaleOrderDetailVO extends AlipayObject {
 	 */
 	@ApiField("ppi_order_id")
 	private String ppiOrderId;
+
+	/**
+	 * null
+	 */
+	@ApiListField("trade_info_list")
+	@ApiField("resale_fund_info_v_o")
+	private List<ResaleFundInfoVO> tradeInfoList;
 
 	/**
 	 * 支付宝用户的userId。
@@ -160,6 +170,13 @@ public class ResaleOrderDetailVO extends AlipayObject {
 	}
 	public void setPpiOrderId(String ppiOrderId) {
 		this.ppiOrderId = ppiOrderId;
+	}
+
+	public List<ResaleFundInfoVO> getTradeInfoList() {
+		return this.tradeInfoList;
+	}
+	public void setTradeInfoList(List<ResaleFundInfoVO> tradeInfoList) {
+		this.tradeInfoList = tradeInfoList;
 	}
 
 	public String getUserId() {

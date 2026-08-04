@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RoboAnimation extends AlipayObject {
 
-	private static final long serialVersionUID = 2646741469755933257L;
+	private static final long serialVersionUID = 7537688379445245397L;
 
 	/**
 	 * 动画id

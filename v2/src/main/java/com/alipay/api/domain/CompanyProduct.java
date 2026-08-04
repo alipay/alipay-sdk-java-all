@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业（商户）已开通产品
  *
  * @author auto create
- * @since 1.0, 2025-06-12 14:48:45
+ * @since 1.0, 2026-07-31 15:27:01
  */
 public class CompanyProduct extends AlipayObject {
 
-	private static final long serialVersionUID = 4572566112846273691L;
+	private static final long serialVersionUID = 1249831233332962836L;
 
 	/**
 	 * 企业信息查询会将校验失败的异常信息返回,无校验异常则返回空数组

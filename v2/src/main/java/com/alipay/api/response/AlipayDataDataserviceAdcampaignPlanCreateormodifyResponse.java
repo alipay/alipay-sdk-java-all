@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.data.dataservice.adcampaign.plan.createormodify response.
  * 
  * @author auto create
- * @since 1.0, 2026-07-14 16:42:53
+ * @since 1.0, 2026-07-29 11:37:52
  */
 public class AlipayDataDataserviceAdcampaignPlanCreateormodifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1848234948227224373L;
+	private static final long serialVersionUID = 6384594363862299532L;
 
 	/** 
 	 * 计划ID，唯一键
