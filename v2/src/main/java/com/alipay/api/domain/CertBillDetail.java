@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 凭证账单详情
  *
  * @author auto create
- * @since 1.0, 2026-05-25 19:59:12
+ * @since 1.0, 2026-08-03 15:12:26
  */
 public class CertBillDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 4681778631324281792L;
+	private static final long serialVersionUID = 5265594868583953141L;
 
 	/**
 	 * 平台接收商家核销请求后的核销处理时间
@@ -38,6 +38,12 @@ public class CertBillDetail extends AlipayObject {
 	 */
 	@ApiField("et_settle_time")
 	private String etSettleTime;
+
+	/**
+	 * 表示政府出资补贴金额。单位：元
+	 */
+	@ApiField("gov_consumption_subsidy")
+	private String govConsumptionSubsidy;
 
 	/**
 	 * 商品ID
@@ -249,6 +255,13 @@ settle_type为“REFUND”：代表“退款时间” 当前字段已废弃(字�
 	}
 	public void setEtSettleTime(String etSettleTime) {
 		this.etSettleTime = etSettleTime;
+	}
+
+	public String getGovConsumptionSubsidy() {
+		return this.govConsumptionSubsidy;
+	}
+	public void setGovConsumptionSubsidy(String govConsumptionSubsidy) {
+		this.govConsumptionSubsidy = govConsumptionSubsidy;
 	}
 
 	public String getItemId() {

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ExaminationDiscount extends AlipayObject {
 
-	private static final long serialVersionUID = 3163242924944133935L;
+	private static final long serialVersionUID = 4796284355867119392L;
 
 	/**
 	 * 优惠金额，单位：元。币种：人民币

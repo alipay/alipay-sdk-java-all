@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 业务对象信息创建更新
  *
  * @author auto create
- * @since 1.0, 2026-01-05 17:47:43
+ * @since 1.0, 2026-08-04 14:01:24
  */
 public class RobbyOpenObjectInfoCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2555431453127517436L;
+	private static final long serialVersionUID = 8891864665213433456L;
 
 	/**
 	 * null

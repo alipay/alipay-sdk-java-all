@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ComplaintTradeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3191172761674724253L;
+	private static final long serialVersionUID = 1837987662783385598L;
 
 	/**
 	 * 交易单金额（单位：人民币元）

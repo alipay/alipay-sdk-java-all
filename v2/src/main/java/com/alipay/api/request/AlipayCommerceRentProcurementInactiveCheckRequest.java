@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.rent.procurement.inactive.check request
  * 
  * @author auto create
- * @since 1.0, 2026-07-30 20:10:00
+ * @since 1.0, 2026-08-03 16:12:48
  */
 public class AlipayCommerceRentProcurementInactiveCheckRequest implements AlipayRequest<AlipayCommerceRentProcurementInactiveCheckResponse> {
 

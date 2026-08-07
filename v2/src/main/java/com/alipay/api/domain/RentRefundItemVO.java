@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RentRefundItemVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8825826545726124393L;
+	private static final long serialVersionUID = 5716562482324477599L;
 
 	/**
 	 * 第几期租金，从1开始

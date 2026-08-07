@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 反向企业员工查询结果
  *
  * @author auto create
- * @since 1.0, 2026-03-24 10:23:09
+ * @since 1.0, 2026-08-04 11:19:22
  */
 public class CompanyClerkQueryOpenResult extends AlipayObject {
 
-	private static final long serialVersionUID = 6162114335915572312L;
+	private static final long serialVersionUID = 7888642891337128249L;
+
+	/**
+	 * 营业员确认链接
+	 */
+	@ApiField("clerk_auth_url")
+	private String clerkAuthUrl;
 
 	/**
 	 * 员工名称
@@ -48,6 +54,13 @@ public class CompanyClerkQueryOpenResult extends AlipayObject {
 	 */
 	@ApiField("out_clerk_id")
 	private String outClerkId;
+
+	public String getClerkAuthUrl() {
+		return this.clerkAuthUrl;
+	}
+	public void setClerkAuthUrl(String clerkAuthUrl) {
+		this.clerkAuthUrl = clerkAuthUrl;
+	}
 
 	public String getClerkName() {
 		return this.clerkName;

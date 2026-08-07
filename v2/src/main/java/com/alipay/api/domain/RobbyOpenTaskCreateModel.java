@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 机器人任务创建
  *
  * @author auto create
- * @since 1.0, 2026-04-21 14:52:46
+ * @since 1.0, 2026-08-04 14:01:24
  */
 public class RobbyOpenTaskCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6896229821864341419L;
+	private static final long serialVersionUID = 6477963552941673121L;
 
 	/**
 	 * null

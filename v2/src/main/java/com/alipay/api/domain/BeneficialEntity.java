@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BeneficialEntity extends AlipayObject {
 
-	private static final long serialVersionUID = 4413225928397546339L;
+	private static final long serialVersionUID = 5776186846883999618L;
 
 	/**
 	 * 证件有效期开始日,格式（yyyy-MM-dd）

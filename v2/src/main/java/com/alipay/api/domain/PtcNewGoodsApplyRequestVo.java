@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PtcNewGoodsApplyRequestVo extends AlipayObject {
 
-	private static final long serialVersionUID = 5337258349637271726L;
+	private static final long serialVersionUID = 3885688481576582474L;
 
 	/**
 	 * 算法ID，该字段值来源于行业云，由行业云同步该值到支付宝

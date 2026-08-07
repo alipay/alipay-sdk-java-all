@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportAdPlanOfflineResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7622342396686953292L;
+	private static final long serialVersionUID = 1755279811444873859L;
 
 	/** 
 	 * 广告计划下线结果 + 根据广告计划id操作计划下线，下线成功返回true，否则返回false

@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: robby.open.task.status.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-02-10 14:22:44
+ * @since 1.0, 2026-08-04 14:01:24
  */
 public class RobbyOpenTaskStatusQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8834817912841723778L;
+	private static final long serialVersionUID = 7663929917849619897L;
 
 	/** 
 	 * 业务编号

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业务名单信息保存接口
  *
  * @author auto create
- * @since 1.0, 2026-05-25 10:42:49
+ * @since 1.0, 2026-08-04 19:29:03
  */
 public class AlipayCommerceRetailBusinesslistSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5841741692985338674L;
+	private static final long serialVersionUID = 2795351185567165284L;
 
 	/**
 	 * 业务id，比如创意素材id

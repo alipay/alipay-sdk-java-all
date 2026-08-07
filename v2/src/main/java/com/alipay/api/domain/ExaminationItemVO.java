@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 检查检验类商品对象字段
  *
  * @author auto create
- * @since 1.0, 2026-04-10 16:25:12
+ * @since 1.0, 2026-08-05 17:07:55
  */
 public class ExaminationItemVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2264345662445766541L;
+	private static final long serialVersionUID = 8779298333449594922L;
 
 	/**
 	 * 折扣后的金额(实际支付金额)，单位：元。币种：人民币
@@ -24,6 +24,12 @@ public class ExaminationItemVO extends AlipayObject {
 	 */
 	@ApiField("amount_item")
 	private String amountItem;
+
+	/**
+	 * 组合商品标记，0：常规 1：组合
+	 */
+	@ApiField("combine_item")
+	private Long combineItem;
 
 	/**
 	 * 耗材价格，单位：元。币种：人民币
@@ -44,10 +50,22 @@ public class ExaminationItemVO extends AlipayObject {
 	private String drugAmount;
 
 	/**
+	 * 子订单ID
+	 */
+	@ApiField("id")
+	private Long id;
+
+	/**
 	 * 商家的商品店内码，对应商品接口中的sku_code
 	 */
 	@ApiField("item_code")
 	private String itemCode;
+
+	/**
+	 * 父单ID
+	 */
+	@ApiField("parent_id")
+	private Long parentId;
 
 	/**
 	 * 商品单价，单位：元。币种：人民币
@@ -81,6 +99,13 @@ public class ExaminationItemVO extends AlipayObject {
 		this.amountItem = amountItem;
 	}
 
+	public Long getCombineItem() {
+		return this.combineItem;
+	}
+	public void setCombineItem(Long combineItem) {
+		this.combineItem = combineItem;
+	}
+
 	public String getConsumableAmount() {
 		return this.consumableAmount;
 	}
@@ -102,11 +127,25 @@ public class ExaminationItemVO extends AlipayObject {
 		this.drugAmount = drugAmount;
 	}
 
+	public Long getId() {
+		return this.id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+
 	public String getItemCode() {
 		return this.itemCode;
 	}
 	public void setItemCode(String itemCode) {
 		this.itemCode = itemCode;
+	}
+
+	public Long getParentId() {
+		return this.parentId;
+	}
+	public void setParentId(Long parentId) {
+		this.parentId = parentId;
 	}
 
 	public String getPriceSale() {

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.digitalmgmt.treasury.payment.cancel request
  * 
  * @author auto create
- * @since 1.0, 2026-03-16 11:12:44
+ * @since 1.0, 2026-08-03 16:57:49
  */
 public class AlipayDigitalmgmtTreasuryPaymentCancelRequest implements AlipayRequest<AlipayDigitalmgmtTreasuryPaymentCancelResponse> {
 

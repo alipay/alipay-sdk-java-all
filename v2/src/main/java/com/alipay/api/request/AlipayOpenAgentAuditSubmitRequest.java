@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.agent.audit.submit request
  * 
  * @author auto create
- * @since 1.0, 2026-07-28 19:52:54
+ * @since 1.0, 2026-08-05 20:48:59
  */
 public class AlipayOpenAgentAuditSubmitRequest implements AlipayRequest<AlipayOpenAgentAuditSubmitResponse> {
 

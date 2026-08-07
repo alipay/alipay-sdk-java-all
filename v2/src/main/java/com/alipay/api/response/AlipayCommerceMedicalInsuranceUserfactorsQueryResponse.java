@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.insurance.userfactors.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-07-23 17:19:48
+ * @since 1.0, 2026-08-04 12:02:49
  */
 public class AlipayCommerceMedicalInsuranceUserfactorsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7652177534971858281L;
+	private static final long serialVersionUID = 1359342214799296279L;
 
 	/** 
 	 * 证件号，例如：身份证证件号
@@ -31,6 +31,24 @@ public class AlipayCommerceMedicalInsuranceUserfactorsQueryResponse extends Alip
 	 */
 	@ApiField("ext_info")
 	private String extInfo;
+
+	/** 
+	 * 被保人证件编号
+	 */
+	@ApiField("insured_cert_no")
+	private String insuredCertNo;
+
+	/** 
+	 * 被保人证件类型
+	 */
+	@ApiField("insured_cert_type")
+	private String insuredCertType;
+
+	/** 
+	 * 被保人用户姓名
+	 */
+	@ApiField("insured_name")
+	private String insuredName;
 
 	/** 
 	 * 手机号
@@ -75,6 +93,27 @@ public class AlipayCommerceMedicalInsuranceUserfactorsQueryResponse extends Alip
 	}
 	public String getExtInfo( ) {
 		return this.extInfo;
+	}
+
+	public void setInsuredCertNo(String insuredCertNo) {
+		this.insuredCertNo = insuredCertNo;
+	}
+	public String getInsuredCertNo( ) {
+		return this.insuredCertNo;
+	}
+
+	public void setInsuredCertType(String insuredCertType) {
+		this.insuredCertType = insuredCertType;
+	}
+	public String getInsuredCertType( ) {
+		return this.insuredCertType;
+	}
+
+	public void setInsuredName(String insuredName) {
+		this.insuredName = insuredName;
+	}
+	public String getInsuredName( ) {
+		return this.insuredName;
 	}
 
 	public void setMobile(String mobile) {

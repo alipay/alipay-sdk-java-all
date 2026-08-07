@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class QipanGreyBlackCrowdUser extends AlipayObject {
 
-	private static final long serialVersionUID = 8469372257493135794L;
+	private static final long serialVersionUID = 2489375494681823389L;
 
 	/**
 	 * 用户的支付宝账号通过加密类型加密后的结果

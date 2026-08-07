@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OssPostUploadFormData extends AlipayObject {
 
-	private static final long serialVersionUID = 5187513498991422848L;
+	private static final long serialVersionUID = 1799878944676951869L;
 
 	/**
 	 * POST Form上传表单的参数名

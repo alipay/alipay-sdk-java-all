@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 数字分行天天减报名资格发放接口
  *
  * @author auto create
- * @since 1.0, 2026-05-18 17:28:03
+ * @since 1.0, 2026-08-06 14:25:08
  */
 public class AlipayUserDtbankcustDailydiscountuserSignupModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5832641539542431945L;
+	private static final long serialVersionUID = 6398895342515259695L;
 
 	/**
 	 * 用户在支付宝实名认证过的支付宝账号
@@ -24,6 +24,18 @@ public class AlipayUserDtbankcustDailydiscountuserSignupModel extends AlipayObje
 	 */
 	@ApiField("activity_id")
 	private String activityId;
+
+	/**
+	 * 定主体appId
+	 */
+	@ApiField("daily_discount_app_id_specify")
+	private String dailyDiscountAppIdSpecify;
+
+	/**
+	 * 用户在指定主体appId对应的openId
+	 */
+	@ApiField("daily_discount_open_id_specify")
+	private String dailyDiscountOpenIdSpecify;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识
@@ -49,6 +61,20 @@ public class AlipayUserDtbankcustDailydiscountuserSignupModel extends AlipayObje
 	}
 	public void setActivityId(String activityId) {
 		this.activityId = activityId;
+	}
+
+	public String getDailyDiscountAppIdSpecify() {
+		return this.dailyDiscountAppIdSpecify;
+	}
+	public void setDailyDiscountAppIdSpecify(String dailyDiscountAppIdSpecify) {
+		this.dailyDiscountAppIdSpecify = dailyDiscountAppIdSpecify;
+	}
+
+	public String getDailyDiscountOpenIdSpecify() {
+		return this.dailyDiscountOpenIdSpecify;
+	}
+	public void setDailyDiscountOpenIdSpecify(String dailyDiscountOpenIdSpecify) {
+		this.dailyDiscountOpenIdSpecify = dailyDiscountOpenIdSpecify;
 	}
 
 	public String getOpenId() {

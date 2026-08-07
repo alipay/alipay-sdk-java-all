@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.educertify.result.get response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-18 10:47:49
+ * @since 1.0, 2026-08-06 09:42:49
  */
 public class AlipayEbppIndustryEducertifyResultGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5648768593898857995L;
+	private static final long serialVersionUID = 2494687329947591762L;
 
 	/** 
 	 * 学历认证票据

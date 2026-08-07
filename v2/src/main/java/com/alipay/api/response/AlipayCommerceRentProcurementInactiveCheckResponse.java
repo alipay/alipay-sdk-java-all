@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.rent.procurement.inactive.check response.
  * 
  * @author auto create
- * @since 1.0, 2026-07-30 20:10:00
+ * @since 1.0, 2026-08-03 16:12:48
  */
 public class AlipayCommerceRentProcurementInactiveCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2757838928696439899L;
+	private static final long serialVersionUID = 6117346298717877943L;
 
 	/** 
 	 * 是否需要当面激活标签

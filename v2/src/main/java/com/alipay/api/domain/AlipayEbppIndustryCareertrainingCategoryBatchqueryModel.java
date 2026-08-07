@@ -10,7 +10,7 @@ import com.alipay.api.AlipayObject;
  */
 public class AlipayEbppIndustryCareertrainingCategoryBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8344252597316362259L;
+	private static final long serialVersionUID = 2841651484642334773L;
 
 	
 

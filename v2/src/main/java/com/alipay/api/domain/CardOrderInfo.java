@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 售卖订单信息
  *
  * @author auto create
- * @since 1.0, 2026-01-16 11:21:55
+ * @since 1.0, 2026-08-04 19:07:06
  */
 public class CardOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1729521916425521862L;
+	private static final long serialVersionUID = 3124469537996389437L;
 
 	/**
 	 * 卡关联的最新一笔售后单编号
@@ -259,6 +259,12 @@ public class CardOrderInfo extends AlipayObject {
 	private Boolean signedOrderAgreement;
 
 	/**
+	 * 资金卡子户号
+	 */
+	@ApiField("sub_account_id")
+	private String subAccountId;
+
+	/**
 	 * 总期数(次数)
 	 */
 	@ApiField("total_count")
@@ -312,6 +318,13 @@ public class CardOrderInfo extends AlipayObject {
 	 */
 	@ApiField("user_phone")
 	private String userPhone;
+
+	/**
+	 * 金额卡制卡时使用的直付通二级商户号列表
+	 */
+	@ApiListField("zft_smid_list")
+	@ApiField("string")
+	private List<String> zftSmidList;
 
 	public String getAftersalesId() {
 		return this.aftersalesId;
@@ -593,6 +606,13 @@ public class CardOrderInfo extends AlipayObject {
 		this.signedOrderAgreement = signedOrderAgreement;
 	}
 
+	public String getSubAccountId() {
+		return this.subAccountId;
+	}
+	public void setSubAccountId(String subAccountId) {
+		this.subAccountId = subAccountId;
+	}
+
 	public Long getTotalCount() {
 		return this.totalCount;
 	}
@@ -654,6 +674,13 @@ public class CardOrderInfo extends AlipayObject {
 	}
 	public void setUserPhone(String userPhone) {
 		this.userPhone = userPhone;
+	}
+
+	public List<String> getZftSmidList() {
+		return this.zftSmidList;
+	}
+	public void setZftSmidList(List<String> zftSmidList) {
+		this.zftSmidList = zftSmidList;
 	}
 
 }

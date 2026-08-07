@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: robby.open.object.info.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2026-02-26 16:47:43
+ * @since 1.0, 2026-08-04 14:01:24
  */
 public class RobbyOpenObjectInfoBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4819815314113553696L;
+	private static final long serialVersionUID = 8877945989581489586L;
 
 	/** 
 	 * null

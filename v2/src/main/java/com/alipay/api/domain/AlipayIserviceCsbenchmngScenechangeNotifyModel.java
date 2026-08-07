@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayIserviceCsbenchmngScenechangeNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8327483487378629141L;
+	private static final long serialVersionUID = 3637221846996384312L;
 
 	/**
 	 * ServiceSceneBasicVO

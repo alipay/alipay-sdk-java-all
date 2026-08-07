@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LumStoreAddressInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5669952153762118236L;
+	private static final long serialVersionUID = 8629512128838156552L;
 
 	/**
 	 * 城市编码

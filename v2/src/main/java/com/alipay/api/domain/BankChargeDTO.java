@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BankChargeDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8518578154187119298L;
+	private static final long serialVersionUID = 4546484427769291569L;
 
 	/**
 	 * 境外手续费金额（外币计价）

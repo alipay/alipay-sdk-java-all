@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 一键认证ETC订单创建
  *
  * @author auto create
- * @since 1.0, 2026-03-30 16:14:21
+ * @since 1.0, 2026-08-03 17:13:06
  */
 public class AlipayCommerceTransportEtcCertifyorderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2778735819573699315L;
+	private static final long serialVersionUID = 3742484446628285654L;
 
 	/**
 	 * 车辆类型
@@ -26,8 +26,8 @@ public class AlipayCommerceTransportEtcCertifyorderCreateModel extends AlipayObj
 	private String cityCode;
 
 	/**
-	 * false:不需要用户上传行驶证图片
-true:需要用户上传行驶证图片
+	 * false:不需要用户上传行驶证和身份证图片
+true:需要用户上传行驶证和身份证图片
 	 */
 	@ApiField("license_img_required_flag")
 	private Boolean licenseImgRequiredFlag;

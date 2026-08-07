@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DtBankActivityTypeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5485792891845956413L;
+	private static final long serialVersionUID = 7315874184869436781L;
 
 	/**
 	 * 活动类型

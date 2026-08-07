@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenMiniItemPageQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4391954587428598274L;
+	private static final long serialVersionUID = 6227196473452263917L;
 
 	/**
 	 * 商家侧商品 id 列表，最多可传入 20 个。导入商品信息时传入的商户自定义商品 id（item_id），传入后仅分页查询出对应商品信息。

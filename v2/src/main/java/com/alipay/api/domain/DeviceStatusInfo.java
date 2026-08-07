@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-02-26 16:37:42
+ * @since 1.0, 2026-08-04 14:01:23
  */
 public class DeviceStatusInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3382665875176185444L;
+	private static final long serialVersionUID = 6527281349859976471L;
 
 	/**
 	 * 电量百分比（0-100）

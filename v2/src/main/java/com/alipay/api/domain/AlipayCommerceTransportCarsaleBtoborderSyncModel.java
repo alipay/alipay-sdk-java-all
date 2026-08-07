@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportCarsaleBtoborderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5877986314382287185L;
+	private static final long serialVersionUID = 3685333942939123525L;
 
 	/**
 	 * 城市编码，买家城市编码

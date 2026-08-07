@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: robby.open.device.status.query request
  * 
  * @author auto create
- * @since 1.0, 2026-02-26 16:37:42
+ * @since 1.0, 2026-08-04 14:01:23
  */
 public class RobbyOpenDeviceStatusQueryRequest implements AlipayRequest<RobbyOpenDeviceStatusQueryResponse> {
 

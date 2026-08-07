@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 广告权益修改接口
  *
  * @author auto create
- * @since 1.0, 2026-03-24 22:57:43
+ * @since 1.0, 2026-08-04 19:29:17
  */
 public class AlipayCommerceRetailBenefitSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7138265371799353745L;
+	private static final long serialVersionUID = 3295267256216981675L;
 
 	/**
 	 * 活动id

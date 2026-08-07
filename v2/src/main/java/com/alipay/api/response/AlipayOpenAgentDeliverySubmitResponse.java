@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.agent.delivery.submit response.
  * 
  * @author auto create
- * @since 1.0, 2026-07-28 19:52:54
+ * @since 1.0, 2026-08-05 20:49:12
  */
 public class AlipayOpenAgentDeliverySubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2671163349314697451L;
+	private static final long serialVersionUID = 3237313665166838145L;
 
 	/** 
 	 * 投放记录唯一标识,用于查询该次投放状态

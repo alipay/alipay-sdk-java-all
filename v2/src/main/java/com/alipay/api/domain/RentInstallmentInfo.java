@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RentInstallmentInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7196584134358294647L;
+	private static final long serialVersionUID = 2724174581965557465L;
 
 	/**
 	 * 残值：指租赁期满后，租赁物的预估剩余价值。平台以这个价格 对买断，赔偿等行为进行巡检。

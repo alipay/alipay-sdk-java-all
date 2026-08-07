@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝转账支付接口
  *
  * @author auto create
- * @since 1.0, 2026-07-14 14:31:52
+ * @since 1.0, 2026-08-03 21:26:23
  */
 public class AlipayFundTransUniTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5315571939631831287L;
+	private static final long serialVersionUID = 1348219923841837277L;
 
 	/**
 	 * 描述特定的业务场景，可传的参数如下：
@@ -104,13 +104,15 @@ TRANS_ACCOUNT_NO_PWD产品取值范围[0.1,100000000]
 
 	/**
 	 * 该笔转账使用的转账场景，商户可前往【<a href="https://b.alipay.com/page/bizfund/transferScene/list">支付宝商家平台-资金管理-转账场景</a>】中查看/申明转账场景。<br>
-目前支持以下枚举值：现金营销、企业退款、佣金报酬、业务结算、二手回收、公益补助、行政补贴和退款、保险理赔
+目前支持以下枚举值：现金营销、企业退款、佣金报酬、业务结算、二手回收、公益补助、行政补贴和退款、保险理赔<br>
+<b>注意：</b>26年及以后新接入商户<b>必须</b>传入该字段。
 	 */
 	@ApiField("transfer_scene_name")
 	private String transferSceneName;
 
 	/**
-	 * 转账场景信息，包含转账场景信息类型和转账场景信息描述。需按该笔转账使用的转账场景准确填写
+	 * 转账场景信息，包含转账场景信息类型和转账场景信息描述。需按该笔转账使用的转账场景准确填写<br>
+<b>注意：</b>26年及以后新接入商户<b>必须</b>传入该字段。
 	 */
 	@ApiListField("transfer_scene_report_infos")
 	@ApiField("transfer_scene_report_info")

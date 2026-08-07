@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 好大夫医带患就诊人同步AQ
  *
  * @author auto create
- * @since 1.0, 2025-12-19 19:02:42
+ * @since 1.0, 2026-08-05 00:05:16
  */
 public class AlipayCommerceMedicalMedagentHdfpatientSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5192442163567664875L;
+	private static final long serialVersionUID = 3138882997181321714L;
 
 	/**
 	 * AQ用户ID

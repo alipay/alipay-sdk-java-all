@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 缴费计划
  *
  * @author auto create
- * @since 1.0, 2025-07-15 17:45:02
+ * @since 1.0, 2026-08-05 22:45:05
  */
 public class ContinuousPlan extends AlipayObject {
 
-	private static final long serialVersionUID = 2583868249585381297L;
+	private static final long serialVersionUID = 6484967615943126665L;
 
 	/**
 	 * 缴费完成时间

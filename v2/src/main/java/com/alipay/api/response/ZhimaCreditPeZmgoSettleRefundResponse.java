@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaCreditPeZmgoSettleRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8639656253395756259L;
+	private static final long serialVersionUID = 1271181821916144144L;
 
 	/** 
 	 * 退款操作错误原因描述

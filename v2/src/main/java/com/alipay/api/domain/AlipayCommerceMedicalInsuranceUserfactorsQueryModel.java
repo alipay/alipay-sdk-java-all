@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商保码-用户三要素查询
  *
  * @author auto create
- * @since 1.0, 2026-05-26 18:23:08
+ * @since 1.0, 2026-08-04 11:58:47
  */
 public class AlipayCommerceMedicalInsuranceUserfactorsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4255491667115193437L;
+	private static final long serialVersionUID = 5877553699813992669L;
 
 	/**
 	 * 用户TOKEN值，保单、权限等查询等页面跳转之后前端会带过去和用户信息关联的user_token字段，用于外部查询用户三要素。

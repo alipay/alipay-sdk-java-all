@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-07-17 16:32:52
+ * @since 1.0, 2026-08-04 11:28:52
  */
 public class InpatientRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 4795635786318231215L;
+	private static final long serialVersionUID = 4325656367145165148L;
 
 	/**
 	 * 入院情况信息列表

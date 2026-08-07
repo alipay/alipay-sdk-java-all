@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: ant.merchant.expand.shop.fengniao.sync response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-04 19:33:18
+ * @since 1.0, 2026-08-03 15:58:25
  */
 public class AntMerchantExpandShopFengniaoSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4418461782581916665L;
+	private static final long serialVersionUID = 8245378456848384488L;
 
 	
 

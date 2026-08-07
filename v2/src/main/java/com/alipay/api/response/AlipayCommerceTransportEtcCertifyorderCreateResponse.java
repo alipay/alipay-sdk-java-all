@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.etc.certifyorder.create response.
  * 
  * @author auto create
- * @since 1.0, 2026-03-30 16:17:44
+ * @since 1.0, 2026-08-03 17:17:50
  */
 public class AlipayCommerceTransportEtcCertifyorderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1449944765194296167L;
+	private static final long serialVersionUID = 8612182489848511612L;
 
 	/** 
 	 * 支付宝ETC申请单号,使用相同out_biz_no重复创建订单,返回相同订单号

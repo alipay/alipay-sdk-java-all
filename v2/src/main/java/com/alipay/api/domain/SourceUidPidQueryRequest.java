@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SourceUidPidQueryRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 5366288553553654469L;
+	private static final long serialVersionUID = 3345698322699514966L;
 
 	/**
 	 * 主体编码 , 该参数可选，它的作用是：当为ZN7 时，若该source_uid的pid不存在需要去注册pid，注册后会同时也注册财资子户。

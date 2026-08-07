@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.ncoilopen.deliverylogistics.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-08-03 14:19:08
+ * @since 1.0, 2026-08-04 19:42:51
  */
 public class AlipayOpenSpNcoilopenDeliverylogisticsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3799736128575187229L;
+	private static final long serialVersionUID = 1467638366451977138L;
 
 	/** 
 	 * null

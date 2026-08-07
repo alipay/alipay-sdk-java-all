@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁采购订单是否可以不当面激活校验
  *
  * @author auto create
- * @since 1.0, 2026-07-30 20:10:00
+ * @since 1.0, 2026-08-03 16:12:48
  */
 public class AlipayCommerceRentProcurementInactiveCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1671353753117791169L;
+	private static final long serialVersionUID = 8183247646637423271L;
 
 	/**
 	 * 买家ID

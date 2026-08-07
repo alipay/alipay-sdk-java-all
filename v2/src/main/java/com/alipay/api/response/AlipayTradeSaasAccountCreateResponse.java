@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayTradeSaasAccountCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8467888294829883718L;
+	private static final long serialVersionUID = 2898635664931481643L;
 
 	/** 
 	 * SaaS客户ID。后续账户查询和交易请求可使用该字段标识客户。

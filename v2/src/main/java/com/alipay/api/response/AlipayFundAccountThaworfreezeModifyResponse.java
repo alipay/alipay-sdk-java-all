@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundAccountThaworfreezeModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8766428584898596369L;
+	private static final long serialVersionUID = 6869719824379677775L;
 
 	/** 
 	 * 淘宝uid

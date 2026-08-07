@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RecycleInfoForm extends AlipayObject {
 
-	private static final long serialVersionUID = 5355661456273883614L;
+	private static final long serialVersionUID = 6524837689132687463L;
 
 	/**
 	 * 回收账号设置，一旦设定，后续逆向退款的资金流向该账号

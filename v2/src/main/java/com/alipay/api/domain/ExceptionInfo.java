@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-02-10 14:22:44
+ * @since 1.0, 2026-08-04 14:01:24
  */
 public class ExceptionInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2876195288187252137L;
+	private static final long serialVersionUID = 3323636472718922394L;
 
 	/**
 	 * 任务执行过程中设备出现的异常

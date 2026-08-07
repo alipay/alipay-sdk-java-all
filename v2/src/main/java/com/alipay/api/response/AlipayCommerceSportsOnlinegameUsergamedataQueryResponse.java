@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.sports.onlinegame.usergamedata.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-07-09 14:17:05
+ * @since 1.0, 2026-08-04 15:57:51
  */
 public class AlipayCommerceSportsOnlinegameUsergamedataQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7817592387556651647L;
+	private static final long serialVersionUID = 1144132477695777789L;
 
 	/** 
 	 * 分页接口，是否有更多数据，还有数据返回true，否则返回false

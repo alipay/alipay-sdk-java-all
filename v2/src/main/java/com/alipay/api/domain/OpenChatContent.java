@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenChatContent extends AlipayObject {
 
-	private static final long serialVersionUID = 2567883936657665285L;
+	private static final long serialVersionUID = 5449899868793195396L;
 
 	/**
 	 * 响应包的次序号

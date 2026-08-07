@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-01-05 17:47:43
+ * @since 1.0, 2026-08-04 14:01:24
  */
 public class ObjectFieldInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7314343398881571183L;
+	private static final long serialVersionUID = 6348527695564588921L;
 
 	/**
 	 * 属性key，如是否医保等，必须在对象库字段表里存在

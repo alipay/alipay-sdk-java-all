@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MerchantCardTemplatePriceWeekRuleVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5786847832351489512L;
+	private static final long serialVersionUID = 8876532359669837786L;
 
 	/**
 	 * null

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ActSignUpRecord extends AlipayObject {
 
-	private static final long serialVersionUID = 5512875639113226988L;
+	private static final long serialVersionUID = 6287336873219999341L;
 
 	/**
 	 * 活动唯一编码

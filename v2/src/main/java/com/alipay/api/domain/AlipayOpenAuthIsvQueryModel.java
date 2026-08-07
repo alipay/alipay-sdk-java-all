@@ -6,11 +6,11 @@ import com.alipay.api.AlipayObject;
  * 服务商查询授权商户信息
  *
  * @author auto create
- * @since 1.0, 2025-11-17 14:16:04
+ * @since 1.0, 2026-08-04 19:58:18
  */
 public class AlipayOpenAuthIsvQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8851297814464666367L;
+	private static final long serialVersionUID = 5865912537528712723L;
 
 	
 

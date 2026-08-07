@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceBusinessorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5551945221959712634L;
+	private static final long serialVersionUID = 7175486559641968855L;
 
 	/** 
 	 * 分页查询的办事记录详情列表，没条记录包含isvAppId(isv的appid)、subject(一条办事记录的摘要),status(一条办事记录的状态),recordTime(一条办事记录创建的时间)

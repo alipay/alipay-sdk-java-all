@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CarfinKeyWord extends AlipayObject {
 
-	private static final long serialVersionUID = 1187324458648545941L;
+	private static final long serialVersionUID = 8896915723327737158L;
 
 	/**
 	 * 用于在PDF中检索签名位置使用的关键字

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntfortuneMarketingCrowdWshopMatchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7876855692419278795L;
+	private static final long serialVersionUID = 6193655912755249552L;
 
 	/** 
 	 * 用户是否匹配人群，枚举值：true/false

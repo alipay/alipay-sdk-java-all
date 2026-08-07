@@ -11,11 +11,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商保码-保单数据回流接口
  *
  * @author auto create
- * @since 1.0, 2026-07-07 14:32:41
+ * @since 1.0, 2026-08-06 11:02:23
  */
 public class AlipayCommerceMedicalInsurancePolicyinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4497765386953281152L;
+	private static final long serialVersionUID = 6573123274957352985L;
+
+	/**
+	 * 蚂蚁保单号
+	 */
+	@ApiField("ant_policy_no")
+	private String antPolicyNo;
 
 	/**
 	 * 保司类型
@@ -272,6 +278,13 @@ YYYY-MM-DD HH:MM:SS
 	 */
 	@ApiField("user_id")
 	private String userId;
+
+	public String getAntPolicyNo() {
+		return this.antPolicyNo;
+	}
+	public void setAntPolicyNo(String antPolicyNo) {
+		this.antPolicyNo = antPolicyNo;
+	}
 
 	public String getCompanyType() {
 		return this.companyType;

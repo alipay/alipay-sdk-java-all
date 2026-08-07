@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataKbmallKbmallQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3744328955672317598L;
+	private static final long serialVersionUID = 7741418378681119431L;
 
 	
 

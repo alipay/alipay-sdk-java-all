@@ -10,11 +10,17 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: zhima.credit.pe.visa.report.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-07-21 19:28:04
+ * @since 1.0, 2026-08-06 16:37:54
  */
 public class ZhimaCreditPeVisaReportQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1887435791975932273L;
+	private static final long serialVersionUID = 7217879222378696832L;
+
+	/** 
+	 * 签证报告生效时间
+	 */
+	@ApiField("effect_time")
+	private String effectTime;
 
 	/** 
 	 * 签证报告中对应的姓名拼音
@@ -55,6 +61,13 @@ public class ZhimaCreditPeVisaReportQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("valid_time")
 	private String validTime;
+
+	public void setEffectTime(String effectTime) {
+		this.effectTime = effectTime;
+	}
+	public String getEffectTime( ) {
+		return this.effectTime;
+	}
 
 	public void setNameSpell(String nameSpell) {
 		this.nameSpell = nameSpell;

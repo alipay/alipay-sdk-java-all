@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ChatHotspot extends AlipayObject {
 
-	private static final long serialVersionUID = 7399889612319928941L;
+	private static final long serialVersionUID = 5538497944643645296L;
 
 	/**
 	 * 热点资讯的详细介绍

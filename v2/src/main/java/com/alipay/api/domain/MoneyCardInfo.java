@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 金额卡独有信息
  *
  * @author auto create
- * @since 1.0, 2025-09-23 14:20:34
+ * @since 1.0, 2026-08-04 19:06:51
  */
 public class MoneyCardInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3638338545583736275L;
+	private static final long serialVersionUID = 1522848296633312578L;
 
 	/**
 	 * 可使用天数，单位天(购卡后立即生效，生效后x天失效）
@@ -97,6 +97,13 @@ public class MoneyCardInfo extends AlipayObject {
 	 */
 	@ApiField("use_type")
 	private String useType;
+
+	/**
+	 * 直付通可核销smid范围
+	 */
+	@ApiListField("zft_smid_list")
+	@ApiField("string")
+	private List<String> zftSmidList;
 
 	public Long getEffectiveDuration() {
 		return this.effectiveDuration;
@@ -187,6 +194,13 @@ public class MoneyCardInfo extends AlipayObject {
 	}
 	public void setUseType(String useType) {
 		this.useType = useType;
+	}
+
+	public List<String> getZftSmidList() {
+		return this.zftSmidList;
+	}
+	public void setZftSmidList(List<String> zftSmidList) {
+		this.zftSmidList = zftSmidList;
 	}
 
 }

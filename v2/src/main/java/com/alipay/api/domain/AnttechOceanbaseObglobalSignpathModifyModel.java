@@ -1,5 +1,7 @@
 package com.alipay.api.domain;
 
+import java.util.Date;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
@@ -7,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商机同步签约路径开放接口
  *
  * @author auto create
- * @since 1.0, 2026-04-14 15:55:07
+ * @since 1.0, 2026-08-04 10:51:16
  */
 public class AnttechOceanbaseObglobalSignpathModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3615968786259286599L;
+	private static final long serialVersionUID = 5518828919323157114L;
 
 	/**
 	 * 阿里云结算模式
@@ -108,6 +110,12 @@ public class AnttechOceanbaseObglobalSignpathModifyModel extends AlipayObject {
 	 */
 	@ApiField("sign_path")
 	private String signPath;
+
+	/**
+	 * 签约路径审批通过时间
+	 */
+	@ApiField("sign_path_approval_pass_time")
+	private Date signPathApprovalPassTime;
 
 	public String getAlicloudSettlementMode() {
 		return this.alicloudSettlementMode;
@@ -219,6 +227,13 @@ public class AnttechOceanbaseObglobalSignpathModifyModel extends AlipayObject {
 	}
 	public void setSignPath(String signPath) {
 		this.signPath = signPath;
+	}
+
+	public Date getSignPathApprovalPassTime() {
+		return this.signPathApprovalPassTime;
+	}
+	public void setSignPathApprovalPassTime(Date signPathApprovalPassTime) {
+		this.signPathApprovalPassTime = signPathApprovalPassTime;
 	}
 
 }

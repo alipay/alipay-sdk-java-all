@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ServiceItemRestrictRule extends AlipayObject {
 
-	private static final long serialVersionUID = 4896668858965179188L;
+	private static final long serialVersionUID = 7781713635235356744L;
 
 	/**
 	 * 限制类型，手机号、证件类型、证件号

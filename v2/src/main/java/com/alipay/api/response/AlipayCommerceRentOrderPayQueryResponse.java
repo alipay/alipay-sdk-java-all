@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceRentOrderPayQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5356976498696117631L;
+	private static final long serialVersionUID = 6695561662484344871L;
 
 	/** 
 	 * 交易附加状态： SELLER_NOT_RECEIVED（买家已付款，卖家未收款）

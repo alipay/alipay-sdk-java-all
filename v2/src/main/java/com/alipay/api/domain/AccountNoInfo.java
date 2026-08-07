@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AccountNoInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6197353167417647745L;
+	private static final long serialVersionUID = 7279983192653312446L;
 
 	/**
 	 * ● 若传入logon_id，则查询用户名下所有已实名的、作为登录账号的支付宝账号

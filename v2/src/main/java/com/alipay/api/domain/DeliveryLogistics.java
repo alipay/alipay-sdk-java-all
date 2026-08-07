@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-08-03 14:19:08
+ * @since 1.0, 2026-08-04 19:42:51
  */
 public class DeliveryLogistics extends AlipayObject {
 
-	private static final long serialVersionUID = 5686763963535414932L;
+	private static final long serialVersionUID = 2216676464392872364L;
 
 	/**
 	 * WAIT_DELIVER:待发货，DELIVERED:已发货
@@ -36,6 +36,12 @@ public class DeliveryLogistics extends AlipayObject {
 	 */
 	@ApiField("express_no")
 	private String expressNo;
+
+	/**
+	 * 物流轨迹查看页面的跳转地址
+	 */
+	@ApiField("jump_url")
+	private String jumpUrl;
 
 	public String getDeliveryStatus() {
 		return this.deliveryStatus;
@@ -63,6 +69,13 @@ public class DeliveryLogistics extends AlipayObject {
 	}
 	public void setExpressNo(String expressNo) {
 		this.expressNo = expressNo;
+	}
+
+	public String getJumpUrl() {
+		return this.jumpUrl;
+	}
+	public void setJumpUrl(String jumpUrl) {
+		this.jumpUrl = jumpUrl;
 	}
 
 }

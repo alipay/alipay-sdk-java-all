@@ -1,0 +1,136 @@
+package com.alipay.api.request;
+
+import java.util.Map;
+
+import com.alipay.api.AlipayRequest;
+import com.alipay.api.internal.util.AlipayHashMap;
+import com.alipay.api.response.AlipayCommerceMedicalReportEnhancedsametypeGetResponse;
+import com.alipay.api.AlipayObject;
+
+/**
+ * ALIPAY API: alipay.commerce.medical.report.enhancedsametype.get request
+ * 
+ * @author auto create
+ * @since 1.0, 2026-08-06 11:57:52
+ */
+public class AlipayCommerceMedicalReportEnhancedsametypeGetRequest implements AlipayRequest<AlipayCommerceMedicalReportEnhancedsametypeGetResponse> {
+
+	private AlipayHashMap udfParams; // add user-defined text parameters
+	private String apiVersion="1.0";
+
+	/** 
+	* 根据客户端上传的报告信息获取同类型报告，相比于V1版本，调整了返回同类报告的数量以及评分限制，业务要求和V1版本共存
+	 */
+	private String bizContent;
+
+	public void setBizContent(String bizContent) {
+		this.bizContent = bizContent;
+	}
+	public String getBizContent() {
+		return this.bizContent;
+	}
+	private String terminalType;
+	private String terminalInfo;	
+	private String prodCode;
+	private String notifyUrl;
+	private String returnUrl;
+	private boolean needEncrypt=false;
+	private AlipayObject bizModel=null;
+
+	public String getNotifyUrl() {
+		return this.notifyUrl;
+	}
+
+	public void setNotifyUrl(String notifyUrl) {
+		this.notifyUrl = notifyUrl;
+	}
+
+	public String getReturnUrl() {
+		return this.returnUrl;
+	}
+
+	public void setReturnUrl(String returnUrl) {
+		this.returnUrl = returnUrl;
+	}
+
+	public String getApiVersion() {
+		return this.apiVersion;
+	}
+
+	public void setApiVersion(String apiVersion) {
+		this.apiVersion = apiVersion;
+	}
+
+	public void setTerminalType(String terminalType){
+		this.terminalType=terminalType;
+	}
+
+    public String getTerminalType(){
+    	return this.terminalType;
+    }
+
+    public void setTerminalInfo(String terminalInfo){
+    	this.terminalInfo=terminalInfo;
+    }
+
+    public String getTerminalInfo(){
+    	return this.terminalInfo;
+    }	
+
+	public void setProdCode(String prodCode) {
+		this.prodCode=prodCode;
+	}
+
+	public String getProdCode() {
+		return this.prodCode; 
+	}
+
+	public String getApiMethodName() {
+		return "alipay.commerce.medical.report.enhancedsametype.get";
+	}
+
+	public Map<String, String> getTextParams() {		
+		AlipayHashMap txtParams = new AlipayHashMap();
+		txtParams.put("biz_content", this.bizContent);
+		if(udfParams != null) {
+			txtParams.putAll(this.udfParams);
+		}
+		return txtParams;
+	}
+
+	public void putOtherTextParam(String key, String value) {
+		if(this.udfParams == null) {
+			this.udfParams = new AlipayHashMap();
+		}
+		this.udfParams.put(key, value);
+	}
+
+	public Class<AlipayCommerceMedicalReportEnhancedsametypeGetResponse> getResponseClass() {
+		return AlipayCommerceMedicalReportEnhancedsametypeGetResponse.class;
+	}
+	
+
+    public boolean isNeedEncrypt() {
+    
+      return this.needEncrypt;
+    }
+
+
+    public void setNeedEncrypt(boolean needEncrypt) {
+    
+         this.needEncrypt=needEncrypt;
+    }
+    
+    public AlipayObject getBizModel() {
+    
+      return this.bizModel;
+    }
+
+
+    public void setBizModel(AlipayObject bizModel) {
+    
+         this.bizModel=bizModel;
+    }
+	
+	
+}

@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: robby.open.task.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2026-03-10 14:47:44
+ * @since 1.0, 2026-08-04 14:01:23
  */
 public class RobbyOpenTaskCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8685447379277587131L;
+	private static final long serialVersionUID = 1381911222987843131L;
 
 	
 

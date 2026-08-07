@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.digitalmgmt.treasury.payment.cancel response.
  * 
  * @author auto create
- * @since 1.0, 2026-03-16 11:12:44
+ * @since 1.0, 2026-08-03 16:57:49
  */
 public class AlipayDigitalmgmtTreasuryPaymentCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8394461417431876965L;
+	private static final long serialVersionUID = 8381895115795146991L;
 
 	/** 
 	 * 付款撤销是否成功 true=成功 false=失败

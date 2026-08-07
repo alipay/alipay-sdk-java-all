@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 财资TMS对外付款撤销
  *
  * @author auto create
- * @since 1.0, 2026-03-16 11:12:44
+ * @since 1.0, 2026-08-03 16:57:49
  */
 public class AlipayDigitalmgmtTreasuryPaymentCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2173915884824932633L;
+	private static final long serialVersionUID = 5894598396166482188L;
 
 	/**
 	 * 操作人员，取消主动付款需要传
@@ -36,6 +36,12 @@ public class AlipayDigitalmgmtTreasuryPaymentCancelModel extends AlipayObject {
 	 */
 	@ApiField("tnt_inst_id")
 	private String tntInstId;
+
+	/**
+	 * 交易本方OU，付款为付款方OU，收款为收款OU
+	 */
+	@ApiField("trans_inst_id")
+	private String transInstId;
 
 	public String getOperator() {
 		return this.operator;
@@ -63,6 +69,13 @@ public class AlipayDigitalmgmtTreasuryPaymentCancelModel extends AlipayObject {
 	}
 	public void setTntInstId(String tntInstId) {
 		this.tntInstId = tntInstId;
+	}
+
+	public String getTransInstId() {
+		return this.transInstId;
+	}
+	public void setTransInstId(String transInstId) {
+		this.transInstId = transInstId;
 	}
 
 }

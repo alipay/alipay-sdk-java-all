@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 主报告
  *
  * @author auto create
- * @since 1.0, 2025-12-03 14:07:42
+ * @since 1.0, 2026-08-06 11:57:52
  */
 public class ReportInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5794172735514478922L;
+	private static final long serialVersionUID = 1542971953749779571L;
 
 	/**
 	 * 医院名

@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.bizbill.billfile.download response.
  * 
  * @author auto create
- * @since 1.0, 2026-06-08 10:17:55
+ * @since 1.0, 2026-08-03 16:45:38
  */
 public class AlipayOpenAppBizbillBillfileDownloadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1178917348549923124L;
+	private static final long serialVersionUID = 4333942525592963835L;
 
 	/** 
 	 * 查询的账单日期，格式yyyy-MM-dd
