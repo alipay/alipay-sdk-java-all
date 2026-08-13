@@ -1,5 +1,7 @@
 package com.alipay.api.request;
 
+import java.util.List;
+import com.alipay.api.domain.SpecifiedSortChannelParam;
 import java.util.Map;
 
 import com.alipay.api.AlipayRequest;
@@ -11,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.pdeduct.sign.add request
  * 
  * @author auto create
- * @since 1.0, 2026-07-23 15:26:21
+ * @since 1.0, 2026-08-11 13:47:52
  */
 public class AlipayEbppPdeductSignAddRequest implements AlipayRequest<AlipayEbppPdeductSignAddResponse> {
 
@@ -116,6 +118,11 @@ min_age: 允许的最小买家年龄,min_age为整数，必须大于等于0.
 	* 签约到期时间。空表示无限期，一期固定传空。
 	 */
 	private String signExpireDate;
+
+	/** 
+	* 用户设置的优先扣款渠道
+	 */
+	private List<SpecifiedSortChannelParam> specifiedSortChannels;
 
 	/** 
 	* 业务子类型。业务子类型是业务类型的下一级概念。枚举支持：
@@ -262,6 +269,13 @@ min_age: 允许的最小买家年龄,min_age为整数，必须大于等于0.
 		return this.signExpireDate;
 	}
 
+	public void setSpecifiedSortChannels(List<SpecifiedSortChannelParam> specifiedSortChannels) {
+		this.specifiedSortChannels = specifiedSortChannels;
+	}
+	public List<SpecifiedSortChannelParam> getSpecifiedSortChannels() {
+		return this.specifiedSortChannels;
+	}
+
 	public void setSubBizType(String subBizType) {
 		this.subBizType = subBizType;
 	}
@@ -354,6 +368,7 @@ min_age: 允许的最小买家年龄,min_age为整数，必须大于等于0.
 		txtParams.put("pay_password_token", this.payPasswordToken);
 		txtParams.put("pid", this.pid);
 		txtParams.put("sign_expire_date", this.signExpireDate);
+		txtParams.put("specified_sort_channels", this.specifiedSortChannels == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.specifiedSortChannels, true));
 		txtParams.put("sub_biz_type", this.subBizType);
 		txtParams.put("user_id", this.userId);
 		if(udfParams != null) {

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 凭证账单详情
  *
  * @author auto create
- * @since 1.0, 2026-08-03 15:12:26
+ * @since 1.0, 2026-08-13 14:15:09
  */
 public class CertBillDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5265594868583953141L;
+	private static final long serialVersionUID = 3213766359446887192L;
 
 	/**
 	 * 平台接收商家核销请求后的核销处理时间

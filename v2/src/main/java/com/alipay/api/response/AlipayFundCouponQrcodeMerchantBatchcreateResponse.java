@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundCouponQrcodeMerchantBatchcreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3869992341997768922L;
+	private static final long serialVersionUID = 4726365637637664517L;
 
 	
 

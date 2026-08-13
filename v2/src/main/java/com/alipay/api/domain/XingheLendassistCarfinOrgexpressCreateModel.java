@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class XingheLendassistCarfinOrgexpressCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2273664773615748524L;
+	private static final long serialVersionUID = 1248187153541967457L;
 
 	/**
 	 * 预约上门时间

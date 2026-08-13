@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 出行机票订单数据同步-机票信息
  *
  * @author auto create
- * @since 1.0, 2025-12-10 15:32:28
+ * @since 1.0, 2026-08-07 13:52:36
  */
 public class TrafficAirticketOrderTicketInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1138977274226432345L;
+	private static final long serialVersionUID = 7835649959792322526L;
 
 	/**
 	 * 到达机场三字码
@@ -125,6 +125,18 @@ public class TrafficAirticketOrderTicketInfo extends AlipayObject {
 	private String statusDesc;
 
 	/**
+	 * 机票燃油费用，币种：人民币，单位：元
+	 */
+	@ApiField("ticket_fuel_cost")
+	private String ticketFuelCost;
+
+	/**
+	 * 机票机建费用，币种：人民币，单位：元
+	 */
+	@ApiField("ticket_infrastructure_cost")
+	private String ticketInfrastructureCost;
+
+	/**
 	 * 机票号
 	 */
 	@ApiField("ticket_no")
@@ -135,6 +147,12 @@ public class TrafficAirticketOrderTicketInfo extends AlipayObject {
 	 */
 	@ApiField("ticket_order")
 	private Long ticketOrder;
+
+	/**
+	 * 机票的裸票价格，币种：人民币，单位：元
+	 */
+	@ApiField("ticket_raw_price")
+	private String ticketRawPrice;
 
 	/**
 	 * 机票类型
@@ -267,6 +285,20 @@ public class TrafficAirticketOrderTicketInfo extends AlipayObject {
 		this.statusDesc = statusDesc;
 	}
 
+	public String getTicketFuelCost() {
+		return this.ticketFuelCost;
+	}
+	public void setTicketFuelCost(String ticketFuelCost) {
+		this.ticketFuelCost = ticketFuelCost;
+	}
+
+	public String getTicketInfrastructureCost() {
+		return this.ticketInfrastructureCost;
+	}
+	public void setTicketInfrastructureCost(String ticketInfrastructureCost) {
+		this.ticketInfrastructureCost = ticketInfrastructureCost;
+	}
+
 	public String getTicketNo() {
 		return this.ticketNo;
 	}
@@ -279,6 +311,13 @@ public class TrafficAirticketOrderTicketInfo extends AlipayObject {
 	}
 	public void setTicketOrder(Long ticketOrder) {
 		this.ticketOrder = ticketOrder;
+	}
+
+	public String getTicketRawPrice() {
+		return this.ticketRawPrice;
+	}
+	public void setTicketRawPrice(String ticketRawPrice) {
+		this.ticketRawPrice = ticketRawPrice;
 	}
 
 	public String getTicketType() {

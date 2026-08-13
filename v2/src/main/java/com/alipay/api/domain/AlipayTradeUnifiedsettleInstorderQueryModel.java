@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 收结易来账单明细列表查询
  *
  * @author auto create
- * @since 1.0, 2025-08-12 23:42:33
+ * @since 1.0, 2026-08-06 19:59:56
  */
 public class AlipayTradeUnifiedsettleInstorderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7516345951313122573L;
+	private static final long serialVersionUID = 1633594642327552828L;
 
 	/**
 	 * 金额筛选上限，币种为人民币

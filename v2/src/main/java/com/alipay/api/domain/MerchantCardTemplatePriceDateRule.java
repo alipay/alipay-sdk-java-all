@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MerchantCardTemplatePriceDateRule extends AlipayObject {
 
-	private static final long serialVersionUID = 2299541314622248961L;
+	private static final long serialVersionUID = 3235735894687727945L;
 
 	/**
 	 * 日期价格规则结束日期，格式为yyyy-MM-dd，不能早于开始日期。

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceCityfacilitatorNlinkUrlsecurityVerifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3532399736146126591L;
+	private static final long serialVersionUID = 1115359312942299885L;
 
 	/**
 	 * 设备生成的签名

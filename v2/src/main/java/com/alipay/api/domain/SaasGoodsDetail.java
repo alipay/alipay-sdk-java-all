@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品明细列表。用于描述本次收款关联的商品或服务明细。
  *
  * @author auto create
- * @since 1.0, 2026-08-03 11:52:51
+ * @since 1.0, 2026-08-13 14:47:50
  */
 public class SaasGoodsDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3468197866651686484L;
+	private static final long serialVersionUID = 6843653137418629228L;
 
 	/**
 	 * 支付宝定义的统一商品编号
@@ -54,6 +54,12 @@ public class SaasGoodsDetail extends AlipayObject {
 	 */
 	@ApiField("goods_name")
 	private String goodsName;
+
+	/**
+	 * 商品规格。银行转账场景传入商品明细时必须提供。
+	 */
+	@ApiField("goods_specifications")
+	private String goodsSpecifications;
 
 	/**
 	 * 商家侧小程序商品ID，指商家提报给小程序商品库的商品。当前接口的extend_params.trade_component_order_id字段不为空时该字段必填，且与交易组件订单参数保持一致。了解小程序商品请参考：<a href="https://opendocs.alipay.com/mini/06uila?pathHash=63b6fba7">https://opendocs.alipay.com/mini/06uila?pathHash=63b6fba7</a>
@@ -132,6 +138,13 @@ public class SaasGoodsDetail extends AlipayObject {
 	}
 	public void setGoodsName(String goodsName) {
 		this.goodsName = goodsName;
+	}
+
+	public String getGoodsSpecifications() {
+		return this.goodsSpecifications;
+	}
+	public void setGoodsSpecifications(String goodsSpecifications) {
+		this.goodsSpecifications = goodsSpecifications;
 	}
 
 	public String getOutItemId() {

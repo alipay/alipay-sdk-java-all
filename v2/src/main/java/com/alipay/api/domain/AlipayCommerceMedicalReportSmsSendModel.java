@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 报告出具消息发送
  *
  * @author auto create
- * @since 1.0, 2026-07-23 20:22:50
+ * @since 1.0, 2026-08-11 15:52:23
  */
 public class AlipayCommerceMedicalReportSmsSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5335852958894479469L;
+	private static final long serialVersionUID = 7829733145788581673L;
 
 	/**
 	 * 证件号码,若短信模板签名为支付宝,则此项必填
@@ -42,6 +42,12 @@ public class AlipayCommerceMedicalReportSmsSendModel extends AlipayObject {
 	 */
 	@ApiField("name")
 	private String name;
+
+	/**
+	 * 分发统一业务号。未传时自动生成。
+	 */
+	@ApiField("out_order_no")
+	private String outOrderNo;
 
 	/**
 	 * 手机号码,仅支持中国手机号,若短信模板签名非支付宝,则此项必填
@@ -124,6 +130,13 @@ public class AlipayCommerceMedicalReportSmsSendModel extends AlipayObject {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getOutOrderNo() {
+		return this.outOrderNo;
+	}
+	public void setOutOrderNo(String outOrderNo) {
+		this.outOrderNo = outOrderNo;
 	}
 
 	public String getPhoneNumber() {

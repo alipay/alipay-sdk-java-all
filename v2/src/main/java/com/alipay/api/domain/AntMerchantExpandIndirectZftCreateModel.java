@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 直付通二级商户创建
  *
  * @author auto create
- * @since 1.0, 2025-11-14 15:24:13
+ * @since 1.0, 2026-08-07 13:38:31
  */
 public class AntMerchantExpandIndirectZftCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3337336827418198782L;
+	private static final long serialVersionUID = 3822761548292373947L;
 
 	/**
 	 * 商户别名。支付宝账单中的商户名称会展示此处设置的别名，如果涉及支付宝APP内的支付，支付结果页也会展示该别名。如果涉及当面付场景，请填写线下店铺名称

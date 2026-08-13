@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PlatformPrescriptionDrugInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3141242468115182816L;
+	private static final long serialVersionUID = 3583646187739569423L;
 
 	/**
 	 * 备注

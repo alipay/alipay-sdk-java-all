@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 删除群授权记录
  *
  * @author auto create
- * @since 1.0, 2024-09-11 15:36:24
+ * @since 1.0, 2026-08-13 10:16:34
  */
 public class AlipayMerchantGroupAuthorizeDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4839447395581633432L;
+	private static final long serialVersionUID = 8684154542586857848L;
 
 	/**
 	 * 授权记录id

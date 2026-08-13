@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class LinkedMallEditableProduct extends AlipayObject {
 
-	private static final long serialVersionUID = 6161172232181118313L;
+	private static final long serialVersionUID = 1426143598817749973L;
 
 	/**
 	 * 商品描述图

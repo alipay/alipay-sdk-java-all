@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 家庭医生授权
  *
  * @author auto create
- * @since 1.0, 2026-07-09 14:12:55
+ * @since 1.0, 2026-08-12 14:57:53
  */
 public class AlipayCommerceMedicalHomedoctorDoctorBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7735855243911152212L;
+	private static final long serialVersionUID = 8383941397185355786L;
 
 	/**
 	 * 智能体ID，由支付宝提供，如果一个服务商仅有一个agent_id时可为空

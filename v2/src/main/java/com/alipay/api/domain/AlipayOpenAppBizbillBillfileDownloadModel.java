@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 账单文件查询接口
  *
  * @author auto create
- * @since 1.0, 2026-08-03 16:45:38
+ * @since 1.0, 2026-08-13 16:42:48
  */
 public class AlipayOpenAppBizbillBillfileDownloadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3794681537428718939L;
+	private static final long serialVersionUID = 7238494411332356651L;
 
 	/**
 	 * 账单日期，格式yyyy-MM-dd，仅支持T-1及之前的日期，最多支持近60天

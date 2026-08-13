@@ -4,20 +4,26 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 本次银行转账实际使用的SaaS账户信息。仅在显式单选银行转账且同步创单成功时返回。
+ * null
  *
  * @author auto create
- * @since 1.0, 2026-08-03 11:57:50
+ * @since 1.0, 2026-08-13 14:47:50
  */
 public class SaasAccountInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4663356273179739441L;
+	private static final long serialVersionUID = 1596386783653376544L;
 
 	/**
 	 * SaaS客户ID
 	 */
 	@ApiField("customer_id")
 	private String customerId;
+
+	/**
+	 * 账户当前企业主体的企业登记号，用于标识企业主体。境内企业通常填写统一社会信用代码。
+	 */
+	@ApiField("enterprise_registration_no")
+	private String enterpriseRegistrationNo;
 
 	/**
 	 * 机构账户名称
@@ -42,6 +48,13 @@ public class SaasAccountInfo extends AlipayObject {
 	}
 	public void setCustomerId(String customerId) {
 		this.customerId = customerId;
+	}
+
+	public String getEnterpriseRegistrationNo() {
+		return this.enterpriseRegistrationNo;
+	}
+	public void setEnterpriseRegistrationNo(String enterpriseRegistrationNo) {
+		this.enterpriseRegistrationNo = enterpriseRegistrationNo;
 	}
 
 	public String getInstAccountName() {

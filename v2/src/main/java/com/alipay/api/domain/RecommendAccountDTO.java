@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RecommendAccountDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2424779759559379664L;
+	private static final long serialVersionUID = 7891478691482661548L;
 
 	/**
 	 * 推荐商家支付宝登录账号，邮箱或手机号码，脱敏处理

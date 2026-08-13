@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RoutingThresholdDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3418569494199187259L;
+	private static final long serialVersionUID = 1566173162666972511L;
 
 	/**
 	 * 境外切境内阈值

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.homedoctor.doctor.bind request
  * 
  * @author auto create
- * @since 1.0, 2026-07-09 14:12:55
+ * @since 1.0, 2026-08-12 14:57:53
  */
 public class AlipayCommerceMedicalHomedoctorDoctorBindRequest implements AlipayRequest<AlipayCommerceMedicalHomedoctorDoctorBindResponse> {
 

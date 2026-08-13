@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 个人用户升级查询接口
  *
  * @author auto create
- * @since 1.0, 2025-11-17 21:39:30
+ * @since 1.0, 2026-08-06 19:58:12
  */
 public class AlipayTradeSolutionprodMerchantupgradeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2637552326641758676L;
+	private static final long serialVersionUID = 6484165282277381864L;
 
 	/**
 	 * 调用alipay.trade.solutionprod.merchantupgrade.apply返回的个人用户升级申请单号

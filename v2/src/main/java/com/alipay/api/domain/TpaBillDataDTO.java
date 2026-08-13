@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TpaBillDataDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6297241859152634114L;
+	private static final long serialVersionUID = 8768423211284744375L;
 
 	/**
 	 * 账单理赔状态 CREATED 创建 CANCLE 取消

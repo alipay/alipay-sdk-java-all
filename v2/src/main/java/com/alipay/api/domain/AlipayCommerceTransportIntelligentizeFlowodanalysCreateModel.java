@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportIntelligentizeFlowodanalysCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2485627914216592837L;
+	private static final long serialVersionUID = 2227887641122234475L;
 
 	/**
 	 * 【特殊可选】围栏所在城市，当taskType为FlowOdAnalysisTaskTypeEnum.CROSS_CITY时必传

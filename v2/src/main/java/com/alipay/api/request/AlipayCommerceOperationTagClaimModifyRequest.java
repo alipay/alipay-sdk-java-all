@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.tag.claim.modify request
  * 
  * @author auto create
- * @since 1.0, 2026-06-01 15:37:49
+ * @since 1.0, 2026-08-12 15:03:41
  */
 public class AlipayCommerceOperationTagClaimModifyRequest implements AlipayRequest<AlipayCommerceOperationTagClaimModifyResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 买家信息。pay_channels显式单选BANK_TRANSFER时条件必填。
  *
  * @author auto create
- * @since 1.0, 2026-08-03 11:52:51
+ * @since 1.0, 2026-08-13 14:47:50
  */
 public class SaasBuyerInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7636283958658662448L;
+	private static final long serialVersionUID = 8687197214641671534L;
 
 	/**
 	 * 买家标识。buyer_id_type=customer_id时为SaaS 客户 ID
@@ -24,6 +24,12 @@ public class SaasBuyerInfo extends AlipayObject {
 	 */
 	@ApiField("buyer_id_type")
 	private String buyerIdType;
+
+	/**
+	 * 企业登记注册号。首次创建银行转账账户时必须提供；中国大陆企业填写统一社会信用代码。
+	 */
+	@ApiField("enterprise_registration_no")
+	private String enterpriseRegistrationNo;
 
 	/**
 	 * 商户名称，默认可选，如下单时需同步开户则必须提供
@@ -49,6 +55,13 @@ public class SaasBuyerInfo extends AlipayObject {
 	}
 	public void setBuyerIdType(String buyerIdType) {
 		this.buyerIdType = buyerIdType;
+	}
+
+	public String getEnterpriseRegistrationNo() {
+		return this.enterpriseRegistrationNo;
+	}
+	public void setEnterpriseRegistrationNo(String enterpriseRegistrationNo) {
+		this.enterpriseRegistrationNo = enterpriseRegistrationNo;
 	}
 
 	public String getOutMerchantName() {

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.group.promotechannel.create request
  * 
  * @author auto create
- * @since 1.0, 2025-04-28 16:12:26
+ * @since 1.0, 2026-08-13 10:12:31
  */
 public class AlipayMerchantGroupPromotechannelCreateRequest implements AlipayRequest<AlipayMerchantGroupPromotechannelCreateResponse> {
 

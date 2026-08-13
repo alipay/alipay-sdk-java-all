@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.iot.dapply.order.batchcreate response.
  * 
  * @author auto create
- * @since 1.0, 2026-07-03 15:30:18
+ * @since 1.0, 2026-08-11 14:31:17
  */
 public class AlipayCommerceIotDapplyOrderBatchcreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8745712357394481129L;
+	private static final long serialVersionUID = 5295893521966452171L;
 
 	/** 
 	 * 下单成功后返回批次订单号可以利用批订单号查询子单信息

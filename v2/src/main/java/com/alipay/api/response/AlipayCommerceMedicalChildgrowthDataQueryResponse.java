@@ -18,7 +18,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMedicalChildgrowthDataQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5234626986662584263L;
+	private static final long serialVersionUID = 8531136171894775991L;
 
 	/** 
 	 * ConsultantChildInfoVO	儿童基本信息（档案为空时为 null）

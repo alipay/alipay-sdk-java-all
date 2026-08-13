@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EffectBusStationObject extends AlipayObject {
 
-	private static final long serialVersionUID = 8229546583347655712L;
+	private static final long serialVersionUID = 7876867432943475837L;
 
 	/**
 	 * 影响类型: 吸引量(rise)或流失量(fail)

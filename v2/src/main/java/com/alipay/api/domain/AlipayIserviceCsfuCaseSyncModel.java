@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayIserviceCsfuCaseSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5586318674522158878L;
+	private static final long serialVersionUID = 4877683172331658225L;
 
 	/**
 	 * 案件编号，租户内全局唯一

@@ -17,11 +17,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.pay response.
  * 
  * @author auto create
- * @since 1.0, 2026-06-22 13:53:45
+ * @since 1.0, 2026-08-11 15:47:54
  */
 public class AlipayTradePayResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6897637524685787992L;
+	private static final long serialVersionUID = 2724365614823427385L;
 
 	/** 
 	 * 先享后付2.0垫资金额,不返回表示没有走垫资，非空表示垫资支付的金额
@@ -148,6 +148,12 @@ bluesea_1：蓝海活动优惠费率标签；
 	 */
 	@ApiField("credit_biz_order_id")
 	private String creditBizOrderId;
+
+	/** 
+	 * 先享免密下单之后，芝麻信用侧的业务单状态。
+	 */
+	@ApiField("credit_biz_order_status")
+	private String creditBizOrderStatus;
 
 	/** 
 	 * 信用支付模式。表示订单是采用信用支付方式（支付时买家没有出资，需要后续履约）。"creditAdvanceV2"表示芝麻先用后付模式，用户后续需要履约扣款。 此字段只有信用支付场景才有值，商户需要根据字段值单独处理。此字段以后可能扩展其他值，建议商户使用白名单方式识别，对于未识别的值做失败处理，并联系支付宝技术支持人员。
@@ -453,6 +459,13 @@ bluesea_1：蓝海活动优惠费率标签；
 	}
 	public String getCreditBizOrderId( ) {
 		return this.creditBizOrderId;
+	}
+
+	public void setCreditBizOrderStatus(String creditBizOrderStatus) {
+		this.creditBizOrderStatus = creditBizOrderStatus;
+	}
+	public String getCreditBizOrderStatus( ) {
+		return this.creditBizOrderStatus;
 	}
 
 	public void setCreditPayMode(String creditPayMode) {

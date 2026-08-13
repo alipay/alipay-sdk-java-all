@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayAipaySubscribeTimesSaveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3462649117761189455L;
+	private static final long serialVersionUID = 5426234635751238123L;
 
 	/**
 	 * 计次时的渠道

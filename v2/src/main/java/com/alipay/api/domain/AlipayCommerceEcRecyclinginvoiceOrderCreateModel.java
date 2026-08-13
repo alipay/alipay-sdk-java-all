@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 反向订单创建
  *
  * @author auto create
- * @since 1.0, 2026-07-31 15:27:35
+ * @since 1.0, 2026-08-06 19:32:17
  */
 public class AlipayCommerceEcRecyclinginvoiceOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5416993621443786188L;
+	private static final long serialVersionUID = 2388354158178629791L;
 
 	/**
 	 * 企业（商户）营业员ID，传值为已维护的企业（商户）营业员编号，可调用反向企业营业员查询接口查询
@@ -29,7 +29,7 @@ public class AlipayCommerceEcRecyclinginvoiceOrderCreateModel extends AlipayObje
 	private String companySupplierId;
 
 	/**
-	 * 订单的备注字段,用于发票的备注显示
+	 * 订单的备注字段,用于发票的备注显示；超过 200 字节,转账单凭证信息将自动裁剪
 	 */
 	@ApiField("memo")
 	private String memo;

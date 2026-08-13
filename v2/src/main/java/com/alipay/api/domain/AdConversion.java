@@ -9,11 +9,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 转化信息
  *
  * @author auto create
- * @since 1.0, 2026-07-23 17:18:53
+ * @since 1.0, 2026-08-11 11:12:52
  */
 public class AdConversion extends AlipayObject {
 
-	private static final long serialVersionUID = 2896387219266463649L;
+	private static final long serialVersionUID = 4157629184533962355L;
+
+	/**
+	 * 资产类型代码(asset)。标识广告投放在哪个端/载体
+	 */
+	@ApiField("asset_type_code")
+	private String assetTypeCode;
 
 	/**
 	 * 资产类型名称
@@ -40,6 +46,12 @@ public class AdConversion extends AlipayObject {
 	private String conversionRawDataTypeName;
 
 	/**
+	 * 转化类型代码(converted_event)。标识一次具体转化行为的业务类型（如表单提交、下单、加购)
+	 */
+	@ApiField("conversion_type_code")
+	private String conversionTypeCode;
+
+	/**
 	 * 转化事件名称
 	 */
 	@ApiField("conversion_type_name")
@@ -56,6 +68,13 @@ public class AdConversion extends AlipayObject {
 	 */
 	@ApiField("join_window_name")
 	private AdConversionJoinWindow joinWindowName;
+
+	public String getAssetTypeCode() {
+		return this.assetTypeCode;
+	}
+	public void setAssetTypeCode(String assetTypeCode) {
+		this.assetTypeCode = assetTypeCode;
+	}
 
 	public String getAssetTypeName() {
 		return this.assetTypeName;
@@ -83,6 +102,13 @@ public class AdConversion extends AlipayObject {
 	}
 	public void setConversionRawDataTypeName(String conversionRawDataTypeName) {
 		this.conversionRawDataTypeName = conversionRawDataTypeName;
+	}
+
+	public String getConversionTypeCode() {
+		return this.conversionTypeCode;
+	}
+	public void setConversionTypeCode(String conversionTypeCode) {
+		this.conversionTypeCode = conversionTypeCode;
 	}
 
 	public String getConversionTypeName() {

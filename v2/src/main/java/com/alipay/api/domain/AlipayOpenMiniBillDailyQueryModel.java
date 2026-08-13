@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 每日结算明细账单查询
  *
  * @author auto create
- * @since 1.0, 2026-08-03 15:12:26
+ * @since 1.0, 2026-08-13 14:15:09
  */
 public class AlipayOpenMiniBillDailyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1246529164545294941L;
+	private static final long serialVersionUID = 8216424497292562111L;
 
 	/**
 	 * 分页页码，从1开始

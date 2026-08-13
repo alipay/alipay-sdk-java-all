@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-07-16 10:27:53
+ * @since 1.0, 2026-08-06 18:41:29
  */
 public class LubUnifiedShopListQueryItem extends AlipayObject {
 
-	private static final long serialVersionUID = 3583856127257586738L;
+	private static final long serialVersionUID = 3892594347724218991L;
 
 	/**
 	 * 营业执照信息

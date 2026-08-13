@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.saas.order.create response.
  * 
  * @author auto create
- * @since 1.0, 2026-08-03 11:52:51
+ * @since 1.0, 2026-08-13 14:47:50
  */
 public class AlipayTradeSaasOrderCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1117197252469255991L;
+	private static final long serialVersionUID = 6298284815632361431L;
 
 	/** 
 	 * 聚合收银台短链访问地址。商户将用户跳转到该地址后，浏览器会重定向到带收银台访问凭证的完整地址。
@@ -46,7 +46,7 @@ public class AlipayTradeSaasOrderCreateResponse extends AlipayResponse {
 	private String tradeNo;
 
 	/** 
-	 * 银行转账交易状态。同步创单成功后返回WAIT_BUYER_PAY。
+	 * 银行转账交易状态。同步创单成功后返回 WAIT_BUYER_PAY；重复创建命中终态时可能返回 TRADE_SUCCESS 或 TRADE_CLOSED。
 	 */
 	@ApiField("trade_status")
 	private String tradeStatus;

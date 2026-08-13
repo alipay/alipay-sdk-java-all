@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MTimeControlInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7599737961213912675L;
+	private static final long serialVersionUID = 1747394225541924292L;
 
 	/**
 	 * 权益时间段限制周期类型，枚举值：按天：DAY、自然周：WEEK

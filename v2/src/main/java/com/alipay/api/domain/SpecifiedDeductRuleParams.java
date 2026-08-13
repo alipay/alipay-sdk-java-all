@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 签约环节指定代扣规则，自动续购场景引入
  *
  * @author auto create
- * @since 1.0, 2026-05-11 20:31:48
+ * @since 1.0, 2026-08-06 21:26:35
  */
 public class SpecifiedDeductRuleParams extends AlipayObject {
 
-	private static final long serialVersionUID = 7781511174233885375L;
+	private static final long serialVersionUID = 3894927737792424881L;
+
+	/**
+	 * 用户自定义单月扣款额度，单位元，用于自动充场景下单月最大累计充值金额管控，商户侧传入
+	 */
+	@ApiField("specified_month_limit_amount")
+	private String specifiedMonthLimitAmount;
 
 	/**
 	 * 签约时指定代扣金额，单位元，传入后后续代扣环节的金额必须等于该金额
@@ -30,6 +36,13 @@ public class SpecifiedDeductRuleParams extends AlipayObject {
 	 */
 	@ApiField("specified_pay_trigger_unit")
 	private String specifiedPayTriggerUnit;
+
+	public String getSpecifiedMonthLimitAmount() {
+		return this.specifiedMonthLimitAmount;
+	}
+	public void setSpecifiedMonthLimitAmount(String specifiedMonthLimitAmount) {
+		this.specifiedMonthLimitAmount = specifiedMonthLimitAmount;
+	}
 
 	public String getSpecifiedPayAmount() {
 		return this.specifiedPayAmount;

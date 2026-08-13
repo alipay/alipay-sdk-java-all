@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceEducateSemesterInfoBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8229866928732895743L;
+	private static final long serialVersionUID = 8449431929238157142L;
 
 	/** 
 	 * 学期信息列表

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 退款优惠明细打标接口
  *
  * @author auto create
- * @since 1.0, 2026-06-02 13:38:53
+ * @since 1.0, 2026-08-12 15:03:03
  */
 public class AlipayMerchantIndirectRefundSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6566775555756723355L;
+	private static final long serialVersionUID = 3271379954172862439L;
 
 	/**
 	 * 支付宝子商户号，一般是2088开头的数字，该子商户号由服务商进件而来。

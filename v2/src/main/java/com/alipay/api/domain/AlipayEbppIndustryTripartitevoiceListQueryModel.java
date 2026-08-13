@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppIndustryTripartitevoiceListQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8175873444931375672L;
+	private static final long serialVersionUID = 8562216744248733331L;
 
 	/**
 	 * 格式 yyyy-MM-dd，只能查 1 天的数据，不允许跨天

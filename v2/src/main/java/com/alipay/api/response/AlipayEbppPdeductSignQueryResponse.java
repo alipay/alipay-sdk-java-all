@@ -1,6 +1,9 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.SpecifiedSortChannelParam;
 
 import com.alipay.api.AlipayResponse;
 
@@ -8,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.pdeduct.sign.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-14 11:42:37
+ * @since 1.0, 2026-08-12 16:42:54
  */
 public class AlipayEbppPdeductSignQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2168868153151972916L;
+	private static final long serialVersionUID = 1326621761538858324L;
 
 	/** 
 	 * 协议ID
@@ -43,6 +46,19 @@ public class AlipayEbppPdeductSignQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("sign_date")
 	private String signDate;
+
+	/** 
+	 * 协议过期时间
+	 */
+	@ApiField("sign_expire_date")
+	private String signExpireDate;
+
+	/** 
+	 * 用户代扣协议设置的优先扣款渠道
+	 */
+	@ApiListField("specified_sort_channels")
+	@ApiField("specified_sort_channel_param")
+	private List<SpecifiedSortChannelParam> specifiedSortChannels;
 
 	/** 
 	 * 用户ID
@@ -83,6 +99,20 @@ public class AlipayEbppPdeductSignQueryResponse extends AlipayResponse {
 	}
 	public String getSignDate( ) {
 		return this.signDate;
+	}
+
+	public void setSignExpireDate(String signExpireDate) {
+		this.signExpireDate = signExpireDate;
+	}
+	public String getSignExpireDate( ) {
+		return this.signExpireDate;
+	}
+
+	public void setSpecifiedSortChannels(List<SpecifiedSortChannelParam> specifiedSortChannels) {
+		this.specifiedSortChannels = specifiedSortChannels;
+	}
+	public List<SpecifiedSortChannelParam> getSpecifiedSortChannels( ) {
+		return this.specifiedSortChannels;
 	}
 
 	public void setUserId(String userId) {

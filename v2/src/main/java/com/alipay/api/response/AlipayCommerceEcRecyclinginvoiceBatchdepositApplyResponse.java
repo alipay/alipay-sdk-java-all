@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceEcRecyclinginvoiceBatchdepositApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7691449359855777251L;
+	private static final long serialVersionUID = 5585622896658728859L;
 
 	/** 
 	 * 批次请款单ID

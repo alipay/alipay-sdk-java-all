@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * C2C个人收款方聚合开通订单创建接口
  *
  * @author auto create
- * @since 1.0, 2026-01-15 10:41:53
+ * @since 1.0, 2026-08-06 19:57:09
  */
 public class AlipayTradeSolutionprodUnifiedopenApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3433677854263544412L;
+	private static final long serialVersionUID = 4614629419344933612L;
 
 	/**
 	 * 结果页点击完成后的跳转地址

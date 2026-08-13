@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IndustryInvoiceChannelOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6699752765227967579L;
+	private static final long serialVersionUID = 1521593996696396684L;
 
 	/**
 	 * 渠道订单金额，总位数20位，最多16位整数，最多2位小数，单位：元

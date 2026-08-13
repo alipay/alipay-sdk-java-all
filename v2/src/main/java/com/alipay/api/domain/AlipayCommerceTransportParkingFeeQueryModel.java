@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 停车费查询
  *
  * @author auto create
- * @since 1.0, 2026-01-15 10:07:43
+ * @since 1.0, 2026-08-06 18:41:41
  */
 public class AlipayCommerceTransportParkingFeeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5658646133368538278L;
+	private static final long serialVersionUID = 1289596626912438139L;
 
 	/**
 	 * 用户唯一身份ID

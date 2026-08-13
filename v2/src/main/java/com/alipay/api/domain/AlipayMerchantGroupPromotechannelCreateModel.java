@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商家群群组推广渠道创建
  *
  * @author auto create
- * @since 1.0, 2025-04-28 11:39:55
+ * @since 1.0, 2026-08-13 10:12:31
  */
 public class AlipayMerchantGroupPromotechannelCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5734862365658125364L;
+	private static final long serialVersionUID = 4159834467674583578L;
 
 	/**
 	 * 渠道描述

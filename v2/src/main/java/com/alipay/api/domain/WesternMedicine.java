@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 西医
  *
  * @author auto create
- * @since 1.0, 2026-08-04 11:28:52
+ * @since 1.0, 2026-08-07 13:34:21
  */
 public class WesternMedicine extends AlipayObject {
 
-	private static final long serialVersionUID = 5683166183286597325L;
+	private static final long serialVersionUID = 8845159581961474762L;
 
 	/**
 	 * null

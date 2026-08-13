@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AntLinkeCheckreimburseQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5799493929834164325L;
+	private static final long serialVersionUID = 1728387297755491827L;
 
 	/**
 	 * null

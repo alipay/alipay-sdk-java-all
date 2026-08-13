@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceEcCreditIsvcapitalUnfreezeModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5597866127629665973L;
+	private static final long serialVersionUID = 3664214893527143876L;
 
 	/**
 	 * 企业码内部自动生成企业唯一标识

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class XingheLendassistCarfinRepayplanchangeNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2726127851428483545L;
+	private static final long serialVersionUID = 4869544572571949639L;
 
 	/** 
 	 * 还款计划更新信息

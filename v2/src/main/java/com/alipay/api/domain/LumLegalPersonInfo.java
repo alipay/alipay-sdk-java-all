@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LumLegalPersonInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2621875914571244785L;
+	private static final long serialVersionUID = 6112676457555283562L;
 
 	/**
 	 * 法人身份证反面图片URL

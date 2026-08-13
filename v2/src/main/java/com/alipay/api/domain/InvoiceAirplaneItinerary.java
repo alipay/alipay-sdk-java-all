@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InvoiceAirplaneItinerary extends AlipayObject {
 
-	private static final long serialVersionUID = 1275748413916762623L;
+	private static final long serialVersionUID = 2775195998269927161L;
 
 	/**
 	 * 免费行李

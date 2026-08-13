@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 法人身份证信息
  *
  * @author auto create
- * @since 1.0, 2026-07-16 10:27:53
+ * @since 1.0, 2026-08-06 18:41:29
  */
 public class LubLegalPersonInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2177379778984132236L;
+	private static final long serialVersionUID = 3742897664236664618L;
 
 	/**
 	 * 法人身份证反面图片URL

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RoboSeatHeatingInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3753844656782342841L;
+	private static final long serialVersionUID = 2798359996333554229L;
 
 	/**
 	 * 座椅加热档位信息

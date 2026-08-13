@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPcreditLoanLoanUnclearQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7312598547249848182L;
+	private static final long serialVersionUID = 2418491463799191874L;
 
 	/** 
 	 * 贷款申请预算信息列表

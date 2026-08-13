@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IsvVehownerBenefitVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5833492243686463876L;
+	private static final long serialVersionUID = 7346198712637362826L;
 
 	/**
 	 * 副标题

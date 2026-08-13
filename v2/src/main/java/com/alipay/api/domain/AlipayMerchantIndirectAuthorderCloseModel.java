@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 间连商户意愿确认申请单撤销
  *
  * @author auto create
- * @since 1.0, 2025-01-02 14:58:21
+ * @since 1.0, 2026-08-12 15:05:18
  */
 public class AlipayMerchantIndirectAuthorderCloseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4545881579255444297L;
+	private static final long serialVersionUID = 3786937868183323975L;
 
 	/**
 	 * 意愿申请单号，参数二选一

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 出行机票订单数据同步-优惠项目信息
  *
  * @author auto create
- * @since 1.0, 2024-09-26 20:34:18
+ * @since 1.0, 2026-08-07 13:52:36
  */
 public class TrafficAirticketOrderDiscountInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1428818494535223529L;
+	private static final long serialVersionUID = 7593798443786191817L;
 
 	/**
 	 * 优惠项目价格，币种：人民币，单位：元
@@ -36,6 +36,12 @@ public class TrafficAirticketOrderDiscountInfo extends AlipayObject {
 	 */
 	@ApiField("item_name")
 	private String itemName;
+
+	/**
+	 * 优惠项目来源，用于区分是 商家优惠 和 支付宝优惠
+	 */
+	@ApiField("item_source")
+	private String itemSource;
 
 	public String getDiscountPrice() {
 		return this.discountPrice;
@@ -63,6 +69,13 @@ public class TrafficAirticketOrderDiscountInfo extends AlipayObject {
 	}
 	public void setItemName(String itemName) {
 		this.itemName = itemName;
+	}
+
+	public String getItemSource() {
+		return this.itemSource;
+	}
+	public void setItemSource(String itemSource) {
+		this.itemSource = itemSource;
 	}
 
 }

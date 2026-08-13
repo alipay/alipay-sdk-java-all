@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * saas支付创单
  *
  * @author auto create
- * @since 1.0, 2026-08-03 11:52:51
+ * @since 1.0, 2026-08-13 14:47:50
  */
 public class AlipayTradeSaasOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8691346546324813245L;
+	private static final long serialVersionUID = 7683378119852773964L;
 
 	/**
 	 * 商户业务参数。用于透传业务扩展信息。
@@ -36,6 +36,12 @@ public class AlipayTradeSaasOrderCreateModel extends AlipayObject {
 	 */
 	@ApiField("goods_detail")
 	private SaasGoodsDetail goodsDetail;
+
+	/**
+	 * 商户订单备注，用于账单展示。
+	 */
+	@ApiField("memo")
+	private String memo;
 
 	/**
 	 * 商户订单号。由商家自定义，64个字符以内，仅支持字母、数字、下划线且需保证在商户端不重复。
@@ -72,6 +78,12 @@ public class AlipayTradeSaasOrderCreateModel extends AlipayObject {
 	 */
 	@ApiField("redirect_url")
 	private String redirectUrl;
+
+	/**
+	 * 安全扩展参数。用于辅助评估交易安全水位，动态调整额度管控策略。
+	 */
+	@ApiField("security_params")
+	private String securityParams;
 
 	/**
 	 * 订单标题。用于展示给买家和交易记录识别。
@@ -125,6 +137,13 @@ public class AlipayTradeSaasOrderCreateModel extends AlipayObject {
 		this.goodsDetail = goodsDetail;
 	}
 
+	public String getMemo() {
+		return this.memo;
+	}
+	public void setMemo(String memo) {
+		this.memo = memo;
+	}
+
 	public String getOutTradeNo() {
 		return this.outTradeNo;
 	}
@@ -165,6 +184,13 @@ public class AlipayTradeSaasOrderCreateModel extends AlipayObject {
 	}
 	public void setRedirectUrl(String redirectUrl) {
 		this.redirectUrl = redirectUrl;
+	}
+
+	public String getSecurityParams() {
+		return this.securityParams;
+	}
+	public void setSecurityParams(String securityParams) {
+		this.securityParams = securityParams;
 	}
 
 	public String getSubject() {

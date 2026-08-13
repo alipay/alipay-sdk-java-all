@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class WaitRepaymentOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7849757498163115428L;
+	private static final long serialVersionUID = 8412484731672682638L;
 
 	/**
 	 * 垫资单id

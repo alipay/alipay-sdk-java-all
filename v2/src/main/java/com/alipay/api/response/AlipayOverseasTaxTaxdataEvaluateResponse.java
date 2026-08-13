@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOverseasTaxTaxdataEvaluateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8323366527587824892L;
+	private static final long serialVersionUID = 8357929567764336613L;
 
 	/** 
 	 * 收款人对象

@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 门店基础信息
  *
  * @author auto create
- * @since 1.0, 2025-03-19 16:22:36
+ * @since 1.0, 2026-08-12 14:25:44
  */
 public class StoreInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7575126585222675739L;
+	private static final long serialVersionUID = 7752893987279565217L;
 
 	/**
 	 * 门店地址
@@ -119,6 +119,12 @@ public class StoreInfoVO extends AlipayObject {
 	 */
 	@ApiField("store_code")
 	private String storeCode;
+
+	/**
+	 * 门店ID
+	 */
+	@ApiField("store_id")
+	private Long storeId;
 
 	/**
 	 * 门店LOGOURL
@@ -249,6 +255,13 @@ public class StoreInfoVO extends AlipayObject {
 	}
 	public void setStoreCode(String storeCode) {
 		this.storeCode = storeCode;
+	}
+
+	public Long getStoreId() {
+		return this.storeId;
+	}
+	public void setStoreId(Long storeId) {
+		this.storeId = storeId;
 	}
 
 	public String getStoreLogo() {

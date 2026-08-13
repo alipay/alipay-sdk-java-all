@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LiveStoreItemInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8252273593322354248L;
+	private static final long serialVersionUID = 8785162245541835128L;
 
 	/**
 	 * 控货结果

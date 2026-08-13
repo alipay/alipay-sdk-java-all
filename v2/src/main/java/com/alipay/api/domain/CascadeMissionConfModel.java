@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CascadeMissionConfModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7689187942526428896L;
+	private static final long serialVersionUID = 8854863115189762353L;
 
 	/**
 	 * 分佣条款列表

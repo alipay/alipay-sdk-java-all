@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CampVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8331362983572887922L;
+	private static final long serialVersionUID = 5328666177123442598L;
 
 	/**
 	 * 活动id

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class StagePromoDetailInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7837519458997242447L;
+	private static final long serialVersionUID = 7476531923272781227L;
 
 	/**
 	 * 分期计划详情

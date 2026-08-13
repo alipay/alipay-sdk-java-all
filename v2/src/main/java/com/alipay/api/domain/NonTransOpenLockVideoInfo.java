@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class NonTransOpenLockVideoInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1573333288421282293L;
+	private static final long serialVersionUID = 5327252754535895489L;
 
 	/**
 	 * 失败原因

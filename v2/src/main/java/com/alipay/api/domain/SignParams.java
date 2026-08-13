@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 签约参数。用于sdk支付并签约中传入签约信息。
  *
  * @author auto create
- * @since 1.0, 2024-09-04 20:08:37
+ * @since 1.0, 2026-08-06 21:49:21
  */
 public class SignParams extends AlipayObject {
 
-	private static final long serialVersionUID = 1372518343229296864L;
+	private static final long serialVersionUID = 1172911667614111514L;
 
 	/**
 	 * 请按当前接入的方式进行填充，且输入值必须为文档中的参数取值范围。
@@ -82,6 +82,12 @@ public class SignParams extends AlipayObject {
 	 */
 	@ApiField("sign_scene")
 	private String signScene;
+
+	/**
+	 * 商户签约指定代扣规则信息，自动续购场景使用
+	 */
+	@ApiField("specified_deduct_rule_params")
+	private SpecifiedDeductRuleParams specifiedDeductRuleParams;
 
 	/**
 	 * 此参数用于传递子商户信息，无特殊需求时不用关注。目前商户代扣、海外代扣、淘旅行信用住产品支持传入该参数（在销售方案中“是否允许自定义子商户信息”需要选是）。
@@ -164,6 +170,13 @@ public class SignParams extends AlipayObject {
 	}
 	public void setSignScene(String signScene) {
 		this.signScene = signScene;
+	}
+
+	public SpecifiedDeductRuleParams getSpecifiedDeductRuleParams() {
+		return this.specifiedDeductRuleParams;
+	}
+	public void setSpecifiedDeductRuleParams(SpecifiedDeductRuleParams specifiedDeductRuleParams) {
+		this.specifiedDeductRuleParams = specifiedDeductRuleParams;
 	}
 
 	public SignMerchantParams getSubMerchant() {

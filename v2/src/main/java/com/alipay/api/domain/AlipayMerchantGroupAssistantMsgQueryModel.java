@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 小助手定向消息详情查询
  *
  * @author auto create
- * @since 1.0, 2025-10-22 09:34:46
+ * @since 1.0, 2026-08-13 10:15:23
  */
 public class AlipayMerchantGroupAssistantMsgQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3258685413445369312L;
+	private static final long serialVersionUID = 7424671367575759727L;
 
 	/**
 	 * 小助手内容id，创建定向消息时返回的数据唯一id

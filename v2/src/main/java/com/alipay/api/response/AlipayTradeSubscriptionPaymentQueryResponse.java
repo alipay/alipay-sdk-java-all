@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayTradeSubscriptionPaymentQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4284697856246376326L;
+	private static final long serialVersionUID = 1299476725963616996L;
 
 	/** 
 	 * 筛选支付流水的截止时间

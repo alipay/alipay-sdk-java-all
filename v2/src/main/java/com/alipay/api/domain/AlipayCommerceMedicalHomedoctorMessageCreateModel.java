@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 家庭医生宣教内容推送
  *
  * @author auto create
- * @since 1.0, 2026-06-25 15:32:57
+ * @since 1.0, 2026-08-12 14:57:53
  */
 public class AlipayCommerceMedicalHomedoctorMessageCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2534259686186113347L;
+	private static final long serialVersionUID = 2776848968666835228L;
 
 	/**
 	 * 消息发送批次，当消息业务类型为AI语音随访时（message_biz_type='AI_FOLLOW_UP'）请传入创建AI随访任务的biz_id

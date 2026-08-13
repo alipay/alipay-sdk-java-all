@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AftersaleFundsDetailItem extends AlipayObject {
 
-	private static final long serialVersionUID = 3712757566642686534L;
+	private static final long serialVersionUID = 4162747142414117899L;
 
 	/**
 	 * 当前售后单上退款资金中的资产项

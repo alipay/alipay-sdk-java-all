@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.dtbankcust.dailydiscountuser.signup response.
  * 
  * @author auto create
- * @since 1.0, 2026-08-06 14:27:50
+ * @since 1.0, 2026-08-07 13:57:48
  */
 public class AlipayUserDtbankcustDailydiscountuserSignupResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2568123258947917485L;
+	private static final long serialVersionUID = 8649518286841191387L;
 
 	/** 
 	 * 天天减报名结果

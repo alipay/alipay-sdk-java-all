@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MedicalShopMarketingActivityRule extends AlipayObject {
 
-	private static final long serialVersionUID = 8828973622698228688L;
+	private static final long serialVersionUID = 8388113699251614747L;
 
 	/**
 	 * 活动满减金额，减多少。单位：分

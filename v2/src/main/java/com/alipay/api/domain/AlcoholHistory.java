@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 饮酒史
  *
  * @author auto create
- * @since 1.0, 2026-08-04 11:28:52
+ * @since 1.0, 2026-08-07 13:34:21
  */
 public class AlcoholHistory extends AlipayObject {
 
-	private static final long serialVersionUID = 6459887368153432422L;
+	private static final long serialVersionUID = 4362615177215892746L;
 
 	/**
 	 * 是否戒酒（Y/N）

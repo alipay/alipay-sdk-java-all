@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量获取门店详细信息
  *
  * @author auto create
- * @since 1.0, 2025-03-19 16:22:36
+ * @since 1.0, 2026-08-12 14:25:44
  */
 public class AlipayCommerceMedicalStoreDetailGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8659694682471832234L;
+	private static final long serialVersionUID = 8693492584745332267L;
 
 	/**
 	 * 支持传多个门店批量查询，一次调用可上传100个门店id，可通过接口alipay.commerce.medical.store.codelist.get获取商家入驻成功的所有门店编码

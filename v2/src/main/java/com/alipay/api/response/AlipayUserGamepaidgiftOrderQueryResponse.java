@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.gamepaidgift.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-07-24 13:52:51
+ * @since 1.0, 2026-08-12 10:37:50
  */
 public class AlipayUserGamepaidgiftOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1889469943445784384L;
+	private static final long serialVersionUID = 7691287919918277234L;
 
 	/** 
 	 * 该笔订单用户的订单金额 单位：分

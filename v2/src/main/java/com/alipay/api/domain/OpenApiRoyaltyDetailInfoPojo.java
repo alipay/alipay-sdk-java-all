@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资产类型信息变更
  *
  * @author auto create
- * @since 1.0, 2025-07-24 21:07:37
+ * @since 1.0, 2026-08-07 16:00:26
  */
 public class OpenApiRoyaltyDetailInfoPojo extends AlipayObject {
 
-	private static final long serialVersionUID = 4542933928831213425L;
+	private static final long serialVersionUID = 6514892448471797959L;
 
 	/**
 	 * 分账的金额，单位为元
@@ -44,10 +44,16 @@ public class OpenApiRoyaltyDetailInfoPojo extends AlipayObject {
 	private String royaltyType;
 
 	/**
-	 * 收入方账户。如果收入方账户类型为userId，本参数为收入方的支付宝账号对应的支付宝唯一用户号，以2088开头的纯16位数字；如果收入方类型为cardAliasNo，本参数为收入方在支付宝绑定的卡编号；如果收入方类型为loginName，本参数为收入方的支付宝登录号；如果收入方类型为openId，本参数为收入方的支付宝openId信息
+	 * 收入方账户。如果收入方账户类型为userId，本参数为收入方的支付宝账号对应的支付宝唯一用户号，以2088开头的纯16位数字；如果收入方类型为cardAliasNo，本参数为收入方在支付宝绑定的卡编号；如果收入方类型为loginName，本参数为收入方的支付宝登录号；如果收入方类型为loginName，本参数为收入方的支付宝登录号；如果收入方类型为openId，本参数为收入方的支付宝openId信息；如果收入方类型为alipayWallet，本参数为收入方在支付宝绑定的场景钱包id
 	 */
 	@ApiField("trans_in")
 	private String transIn;
+
+	/**
+	 * 分账转入方的支付宝userId
+	 */
+	@ApiField("trans_in_id")
+	private String transInId;
 
 	/**
 	 * 分账收款方姓名，上送则进行姓名与支付宝账号的一致性校验，校验不一致则分账失败。不上送则不进行姓名校验
@@ -113,6 +119,13 @@ public class OpenApiRoyaltyDetailInfoPojo extends AlipayObject {
 	}
 	public void setTransIn(String transIn) {
 		this.transIn = transIn;
+	}
+
+	public String getTransInId() {
+		return this.transInId;
+	}
+	public void setTransInId(String transInId) {
+		this.transInId = transInId;
 	}
 
 	public String getTransInName() {

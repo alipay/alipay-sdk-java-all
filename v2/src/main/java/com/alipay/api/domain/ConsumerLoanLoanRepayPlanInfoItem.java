@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ConsumerLoanLoanRepayPlanInfoItem extends AlipayObject {
 
-	private static final long serialVersionUID = 7166158159288472746L;
+	private static final long serialVersionUID = 3764265454566235785L;
 
 	/**
 	 * 担保费或保险费，单位为分，1000代表10.00元，若无该项费用可填0

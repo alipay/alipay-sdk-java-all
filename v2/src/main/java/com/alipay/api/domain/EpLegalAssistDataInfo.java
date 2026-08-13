@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class EpLegalAssistDataInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1395113298615672258L;
+	private static final long serialVersionUID = 2397679387243261613L;
 
 	/**
 	 * 查询内容明细列表

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class SsdataDataserviceRiskAudioQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8784371478891381232L;
+	private static final long serialVersionUID = 3297475563184955921L;
 
 	/**
 	 * 调用识别服务的用户id，与使用ssdata.dataservice.risk.audio.set的creator一致

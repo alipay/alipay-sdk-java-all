@@ -3,6 +3,7 @@ package com.alipay.api.response;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.VcpBizInfo;
 import com.alipay.api.domain.VcpFundInfo;
 
 import com.alipay.api.AlipayResponse;
@@ -11,17 +12,29 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.asset.voucher.template.info.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-08-03 14:19:06
+ * @since 1.0, 2026-08-11 14:42:51
  */
 public class AlipayAssetVoucherTemplateInfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5266758169487796234L;
+	private static final long serialVersionUID = 2479929911877565336L;
 
 	/** 
 	 * 券模版资产编码
 	 */
 	@ApiField("asset_code")
 	private String assetCode;
+
+	/** 
+	 * 券模板业务编码，用于确定模板业务使用范围
+	 */
+	@ApiField("biz_code")
+	private String bizCode;
+
+	/** 
+	 * 业务信息,
+	 */
+	@ApiField("biz_info")
+	private VcpBizInfo bizInfo;
 
 	/** 
 	 * 资金信息列表，其中fundType=FUND_SCHEME时fundAccount对应资金池id，其余情况对应出资账号
@@ -71,6 +84,20 @@ public class AlipayAssetVoucherTemplateInfoQueryResponse extends AlipayResponse 
 	}
 	public String getAssetCode( ) {
 		return this.assetCode;
+	}
+
+	public void setBizCode(String bizCode) {
+		this.bizCode = bizCode;
+	}
+	public String getBizCode( ) {
+		return this.bizCode;
+	}
+
+	public void setBizInfo(VcpBizInfo bizInfo) {
+		this.bizInfo = bizInfo;
+	}
+	public VcpBizInfo getBizInfo( ) {
+		return this.bizInfo;
 	}
 
 	public void setFundInfos(List<VcpFundInfo> fundInfos) {

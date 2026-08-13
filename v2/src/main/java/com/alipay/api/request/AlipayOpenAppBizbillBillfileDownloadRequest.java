@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.bizbill.billfile.download request
  * 
  * @author auto create
- * @since 1.0, 2026-08-03 16:45:38
+ * @since 1.0, 2026-08-13 16:42:48
  */
 public class AlipayOpenAppBizbillBillfileDownloadRequest implements AlipayRequest<AlipayOpenAppBizbillBillfileDownloadResponse> {
 

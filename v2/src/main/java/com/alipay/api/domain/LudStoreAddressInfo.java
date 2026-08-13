@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 门店地址信息
  *
  * @author auto create
- * @since 1.0, 2026-07-16 10:22:54
+ * @since 1.0, 2026-08-06 18:40:59
  */
 public class LudStoreAddressInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8842994816731274344L;
+	private static final long serialVersionUID = 6174835169394242453L;
 
 	/**
 	 * 城市编码

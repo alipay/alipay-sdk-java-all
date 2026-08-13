@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量修改商品库存
  *
  * @author auto create
- * @since 1.0, 2024-09-29 16:06:54
+ * @since 1.0, 2026-08-10 17:42:43
  */
 public class AlipayCommerceMedicalItemStockModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6547284335971263912L;
+	private static final long serialVersionUID = 8173358441649784338L;
 
 	/**
 	 * 商品库存

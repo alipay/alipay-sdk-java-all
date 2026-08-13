@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.retail.focusbenefitdata.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-03-11 10:07:43
+ * @since 1.0, 2026-08-12 16:03:42
  */
 public class AlipayCommerceRetailFocusbenefitdataQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8471456212575931294L;
+	private static final long serialVersionUID = 5395467529391417762L;
 
 	/** 
 	 * 返回数据信息

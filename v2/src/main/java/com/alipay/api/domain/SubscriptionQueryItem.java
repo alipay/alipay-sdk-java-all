@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SubscriptionQueryItem extends AlipayObject {
 
-	private static final long serialVersionUID = 7765592768884758249L;
+	private static final long serialVersionUID = 8115519365423948232L;
 
 	/**
 	 * 优惠编码

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 收结易单据明细查询
  *
  * @author auto create
- * @since 1.0, 2025-09-18 10:25:11
+ * @since 1.0, 2026-08-06 19:59:28
  */
 public class AlipayTradeUnifiedsettleQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4476684425969399647L;
+	private static final long serialVersionUID = 8244453223693638389L;
 
 	/**
 	 * 收结易订单的单号，一般和外部商户订单号一一对应，可能对应多笔请求号、请求流水号

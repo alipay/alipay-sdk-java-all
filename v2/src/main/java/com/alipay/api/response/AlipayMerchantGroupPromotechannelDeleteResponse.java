@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.merchant.group.promotechannel.delete response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-28 16:12:26
+ * @since 1.0, 2026-08-13 10:19:45
  */
 public class AlipayMerchantGroupPromotechannelDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3371112733564797684L;
+	private static final long serialVersionUID = 2189718267182443258L;
 
 	
 

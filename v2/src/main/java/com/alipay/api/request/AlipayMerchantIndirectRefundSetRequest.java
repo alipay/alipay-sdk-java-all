@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.merchant.indirect.refund.set request
  * 
  * @author auto create
- * @since 1.0, 2026-06-02 13:42:49
+ * @since 1.0, 2026-08-12 15:03:03
  */
 public class AlipayMerchantIndirectRefundSetRequest implements AlipayRequest<AlipayMerchantIndirectRefundSetResponse> {
 

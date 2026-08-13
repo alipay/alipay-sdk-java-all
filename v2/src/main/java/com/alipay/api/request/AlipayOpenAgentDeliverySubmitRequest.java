@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.agent.delivery.submit request
  * 
  * @author auto create
- * @since 1.0, 2026-08-05 20:49:12
+ * @since 1.0, 2026-08-06 19:27:50
  */
 public class AlipayOpenAgentDeliverySubmitRequest implements AlipayRequest<AlipayOpenAgentDeliverySubmitResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CashSummaryDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4849474438452774327L;
+	private static final long serialVersionUID = 1377258882984451561L;
 
 	/**
 	 * 业务身份
