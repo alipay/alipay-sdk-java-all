@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HonorUnifygwCommonResult extends AlipayObject {
 
-	private static final long serialVersionUID = 1488475747974172263L;
+	private static final long serialVersionUID = 3587332649273821267L;
 
 	/**
 	 * 失败原因码

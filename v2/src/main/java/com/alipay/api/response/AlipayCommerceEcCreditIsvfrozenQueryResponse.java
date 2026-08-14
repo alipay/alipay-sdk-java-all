@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceEcCreditIsvfrozenQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4786247216861834881L;
+	private static final long serialVersionUID = 6846865699426648929L;
 
 	/** 
 	 * 已冻结金额，单位元，精确到分

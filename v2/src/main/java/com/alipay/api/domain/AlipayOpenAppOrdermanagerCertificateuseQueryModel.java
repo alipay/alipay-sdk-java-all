@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 端外应用查询订单核销记录
  *
  * @author auto create
- * @since 1.0, 2026-04-17 10:19:13
+ * @since 1.0, 2026-08-13 19:57:23
  */
 public class AlipayOpenAppOrdermanagerCertificateuseQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7277778555842268134L;
+	private static final long serialVersionUID = 8435846249811473661L;
 
 	/**
 	 * 商家在支付宝平台内创建的一种营销业务的载体，可以支持发品、配券以及活动报名的id,它的来源是SAAS服务商来进件的时候,创建团购店铺的时候,生成的。

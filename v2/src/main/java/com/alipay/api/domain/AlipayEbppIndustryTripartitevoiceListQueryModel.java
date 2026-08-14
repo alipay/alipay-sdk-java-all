@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 一网通办客诉分页查询
  *
  * @author auto create
- * @since 1.0, 2026-05-29 10:47:50
+ * @since 1.0, 2026-08-14 15:18:29
  */
 public class AlipayEbppIndustryTripartitevoiceListQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8562216744248733331L;
+	private static final long serialVersionUID = 5555161679969531958L;
 
 	/**
 	 * 格式 yyyy-MM-dd，只能查 1 天的数据，不允许跨天

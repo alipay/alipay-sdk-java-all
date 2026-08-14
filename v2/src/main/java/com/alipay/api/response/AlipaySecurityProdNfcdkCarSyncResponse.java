@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySecurityProdNfcdkCarSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7562144342975298744L;
+	private static final long serialVersionUID = 2562592718784297857L;
 
 	
 

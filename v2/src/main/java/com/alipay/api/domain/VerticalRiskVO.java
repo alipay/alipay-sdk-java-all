@@ -17,7 +17,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VerticalRiskVO extends AlipayObject {
 
-	private static final long serialVersionUID = 6157736597831225553L;
+	private static final long serialVersionUID = 5517111552587269486L;
 
 	/**
 	 * 预测用户在未来租赁周期内的履约能力，从0到5履约能力变高，风险更低

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HotelGuests extends AlipayObject {
 
-	private static final long serialVersionUID = 4248692327665711847L;
+	private static final long serialVersionUID = 2198228649495777567L;
 
 	/**
 	 * 入住人姓名

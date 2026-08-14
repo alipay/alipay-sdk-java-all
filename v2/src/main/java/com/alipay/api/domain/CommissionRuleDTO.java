@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CommissionRuleDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7275861586247845788L;
+	private static final long serialVersionUID = 2285763331822479356L;
 
 	/**
 	 * 被抽佣支付宝登录号

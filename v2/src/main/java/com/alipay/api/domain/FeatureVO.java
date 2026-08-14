@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FeatureVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8712955438893915929L;
+	private static final long serialVersionUID = 8781268893272172799L;
 
 	/**
 	 * 是否支持拥挤度。枚举：Y=支持，N=不支持。

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceEducateSportsWhiteDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4893829344661135273L;
+	private static final long serialVersionUID = 8162945692498144991L;
 
 	/** 
 	 * 白名单code

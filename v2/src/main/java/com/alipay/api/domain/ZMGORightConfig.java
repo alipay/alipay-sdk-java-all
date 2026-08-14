@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZMGORightConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 3632164626628589824L;
+	private static final long serialVersionUID = 3132864891951621955L;
 
 	/**
 	 * 芝麻GO管理页已享优惠进度的重定向链接

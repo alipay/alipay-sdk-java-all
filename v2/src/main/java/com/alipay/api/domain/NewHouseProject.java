@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NewHouseProject extends AlipayObject {
 
-	private static final long serialVersionUID = 8394837237612256663L;
+	private static final long serialVersionUID = 1425482548197255921L;
 
 	/**
 	 * 楼盘地址

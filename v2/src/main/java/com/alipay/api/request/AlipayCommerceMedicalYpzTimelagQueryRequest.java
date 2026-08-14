@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.ypz.timelag.query request
  * 
  * @author auto create
- * @since 1.0, 2026-08-13 17:10:54
+ * @since 1.0, 2026-08-13 17:17:53
  */
 public class AlipayCommerceMedicalYpzTimelagQueryRequest implements AlipayRequest<AlipayCommerceMedicalYpzTimelagQueryResponse> {
 

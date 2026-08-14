@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PsychologicalVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1796364781342641888L;
+	private static final long serialVersionUID = 5412484171179388339L;
 
 	/**
 	 * 履约单号

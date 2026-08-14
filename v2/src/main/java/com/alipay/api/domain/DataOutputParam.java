@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DataOutputParam extends AlipayObject {
 
-	private static final long serialVersionUID = 6452757178617731529L;
+	private static final long serialVersionUID = 5685248297376835777L;
 
 	/**
 	 * 不同的枚举对应的值不一样，如果是风险标签类是Y或N，用户的异常状态、url网址等信息

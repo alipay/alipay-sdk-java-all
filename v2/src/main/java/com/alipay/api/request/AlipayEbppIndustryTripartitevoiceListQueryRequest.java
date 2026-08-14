@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ebpp.industry.tripartitevoice.list.query request
  * 
  * @author auto create
- * @since 1.0, 2026-05-29 10:47:50
+ * @since 1.0, 2026-08-14 15:18:29
  */
 public class AlipayEbppIndustryTripartitevoiceListQueryRequest implements AlipayRequest<AlipayEbppIndustryTripartitevoiceListQueryResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlcoholHistory extends AlipayObject {
 
-	private static final long serialVersionUID = 4362615177215892746L;
+	private static final long serialVersionUID = 1444168489145797891L;
 
 	/**
 	 * 是否戒酒（Y/N）

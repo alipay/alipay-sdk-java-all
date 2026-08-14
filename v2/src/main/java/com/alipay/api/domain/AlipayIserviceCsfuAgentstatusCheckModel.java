@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayIserviceCsfuAgentstatusCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3154637875869255651L;
+	private static final long serialVersionUID = 2372958829617323542L;
 
 	/**
 	 * 坐席code标识

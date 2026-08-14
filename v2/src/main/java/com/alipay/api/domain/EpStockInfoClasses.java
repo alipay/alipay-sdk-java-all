@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EpStockInfoClasses extends AlipayObject {
 
-	private static final long serialVersionUID = 2412687275654935116L;
+	private static final long serialVersionUID = 5845126943348678654L;
 
 	/**
 	 * 股票所属板块

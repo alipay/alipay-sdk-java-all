@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ShipAssessmentRes extends AlipayObject {
 
-	private static final long serialVersionUID = 4659423818861758222L;
+	private static final long serialVersionUID = 2511943864758535849L;
 
 	/**
 	 * D是商家在租安盾后台创建并获取

@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBossFncGfcenterBanklogtransferCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7433641454538431829L;
+	private static final long serialVersionUID = 8297494113384945742L;
 
 	/** 
 	 * 银行流水认领返回结果

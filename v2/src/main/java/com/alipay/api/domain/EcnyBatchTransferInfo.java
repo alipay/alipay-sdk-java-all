@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EcnyBatchTransferInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2757933966629757225L;
+	private static final long serialVersionUID = 8517954723853445412L;
 
 	/**
 	 * 金额，单位：元，精确到小数点后两位

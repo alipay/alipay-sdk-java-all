@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayIserviceCcmRobotHotquestionQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7515811129764496141L;
+	private static final long serialVersionUID = 2474377188579565776L;
 
 	/**
 	 * 聊天窗code

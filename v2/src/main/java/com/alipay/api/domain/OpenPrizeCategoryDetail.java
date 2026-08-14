@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenPrizeCategoryDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 2525259978292695737L;
+	private static final long serialVersionUID = 7745133312242329713L;
 
 	/**
 	 * 剩余可领取次数

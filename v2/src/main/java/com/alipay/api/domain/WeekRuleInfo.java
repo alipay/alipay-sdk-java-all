@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class WeekRuleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3682518815481953171L;
+	private static final long serialVersionUID = 8449929712182635471L;
 
 	/**
 	 * 时间段

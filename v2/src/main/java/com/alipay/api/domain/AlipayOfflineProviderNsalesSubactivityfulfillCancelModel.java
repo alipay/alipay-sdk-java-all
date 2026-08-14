@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOfflineProviderNsalesSubactivityfulfillCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8543177319559534953L;
+	private static final long serialVersionUID = 7345922153374246686L;
 
 	/**
 	 * 卖进订单子活动id

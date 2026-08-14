@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OrgRoleQuery extends AlipayObject {
 
-	private static final long serialVersionUID = 4815341877447394412L;
+	private static final long serialVersionUID = 7347927273387531399L;
 
 	/**
 	 * 组织树节点code

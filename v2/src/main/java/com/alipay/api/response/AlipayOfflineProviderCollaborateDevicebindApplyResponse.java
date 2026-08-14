@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOfflineProviderCollaborateDevicebindApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1766943987727926321L;
+	private static final long serialVersionUID = 3694221296365491122L;
 
 	/** 
 	 * 商户签约链接，需要将该链接生成二维码让商户扫码签约，非白名单情况一定有

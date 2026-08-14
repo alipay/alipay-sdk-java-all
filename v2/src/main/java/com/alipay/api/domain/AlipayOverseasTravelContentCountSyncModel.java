@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOverseasTravelContentCountSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6395914536862482555L;
+	private static final long serialVersionUID = 2596912768173792115L;
 
 	/**
 	 * 计数信息列表

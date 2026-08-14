@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-05-29 10:47:50
+ * @since 1.0, 2026-08-14 15:18:29
  */
 public class TripartiteVoice extends AlipayObject {
 
-	private static final long serialVersionUID = 8222661217695881798L;
+	private static final long serialVersionUID = 8357644897436943738L;
 
 	/**
 	 * anteye一级意图

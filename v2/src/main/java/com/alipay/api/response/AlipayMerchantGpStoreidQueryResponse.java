@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMerchantGpStoreidQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1178288148185228683L;
+	private static final long serialVersionUID = 3454141827171616364L;
 
 	/** 
 	 * 商家店铺id，用于调用神券的业务接口

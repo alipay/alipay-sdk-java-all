@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class TechriskInnovateMpcpromoDataDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1459782973974329785L;
+	private static final long serialVersionUID = 1177512723711299415L;
 
 	/**
 	 * 商品列表ids

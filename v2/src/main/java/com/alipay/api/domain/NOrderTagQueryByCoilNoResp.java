@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NOrderTagQueryByCoilNoResp extends AlipayObject {
 
-	private static final long serialVersionUID = 2567267433577273811L;
+	private static final long serialVersionUID = 4764411774611658896L;
 
 	/**
 	 * 线圈绑定状态

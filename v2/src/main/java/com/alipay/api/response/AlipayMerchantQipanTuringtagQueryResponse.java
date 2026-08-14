@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMerchantQipanTuringtagQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5813811871572186645L;
+	private static final long serialVersionUID = 4773428149435341983L;
 
 	/** 
 	 * 节点列表

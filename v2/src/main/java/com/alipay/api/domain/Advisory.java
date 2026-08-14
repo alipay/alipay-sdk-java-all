@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class Advisory extends AlipayObject {
 
-	private static final long serialVersionUID = 8139972867243383857L;
+	private static final long serialVersionUID = 4376546793378827314L;
 
 	/**
 	 * 医生ID

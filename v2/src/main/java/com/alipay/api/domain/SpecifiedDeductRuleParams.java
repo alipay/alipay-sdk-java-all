@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SpecifiedDeductRuleParams extends AlipayObject {
 
-	private static final long serialVersionUID = 3894927737792424881L;
+	private static final long serialVersionUID = 4212736468621715454L;
 
 	/**
 	 * 用户自定义单月扣款额度，单位元，用于自动充场景下单月最大累计充值金额管控，商户侧传入

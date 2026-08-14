@@ -1,0 +1,20 @@
+package com.alipay.api.response;
+
+
+import com.alipay.api.AlipayResponse;
+
+/**
+ * ALIPAY API: alipay.eco.mycar.rentcar.jvordertrade.sync response.
+ * 
+ * @author auto create
+ * @since 1.0, 2026-08-14 14:47:50
+ */
+public class AlipayEcoMycarRentcarJvordertradeSyncResponse extends AlipayResponse {
+
+	private static final long serialVersionUID = 6716879627125572699L;
+
+	
+
+	
+
+}

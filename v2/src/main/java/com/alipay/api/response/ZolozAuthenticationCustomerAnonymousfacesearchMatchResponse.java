@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZolozAuthenticationCustomerAnonymousfacesearchMatchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1114391825756292322L;
+	private static final long serialVersionUID = 8457684788695729619L;
 
 	/** 
 	 * 搜索到的人脸候选集

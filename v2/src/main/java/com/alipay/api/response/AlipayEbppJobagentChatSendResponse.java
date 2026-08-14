@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppJobagentChatSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4371639347339948458L;
+	private static final long serialVersionUID = 6738986338466463579L;
 
 	/** 
 	 * 大模型流式输出内容

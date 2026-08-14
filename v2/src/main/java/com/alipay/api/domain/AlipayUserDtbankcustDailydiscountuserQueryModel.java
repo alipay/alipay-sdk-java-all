@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserDtbankcustDailydiscountuserQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2344269679472545511L;
+	private static final long serialVersionUID = 1751391747849175638L;
 
 	/**
 	 * 用户在支付宝实名认证过的支付宝账号

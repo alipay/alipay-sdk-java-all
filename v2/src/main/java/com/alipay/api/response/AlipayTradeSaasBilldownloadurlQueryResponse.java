@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayTradeSaasBilldownloadurlQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7814474777616175597L;
+	private static final long serialVersionUID = 6535713238451828255L;
 
 	/** 
 	 * 请求对应的账单日期，格式为 yyyy-MM-dd。

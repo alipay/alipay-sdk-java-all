@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询时差数据明细
  *
  * @author auto create
- * @since 1.0, 2026-08-13 17:10:54
+ * @since 1.0, 2026-08-13 17:17:53
  */
 public class AlipayCommerceMedicalYpzTimelagQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4136558914777896759L;
+	private static final long serialVersionUID = 6624588482664522536L;
 
 	/**
 	 * 查询结束时间（事件发生时间）

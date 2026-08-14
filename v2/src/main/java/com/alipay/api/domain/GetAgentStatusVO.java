@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * AI医生智能体状态信息
  *
  * @author auto create
- * @since 1.0, 2025-07-25 14:49:26
+ * @since 1.0, 2026-08-13 17:57:16
  */
 public class GetAgentStatusVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5443917459424477359L;
+	private static final long serialVersionUID = 1427426132948425536L;
+
+	/**
+	 * 智能体id，开启了ai医生时必填
+	 */
+	@ApiField("agent_id")
+	private String agentId;
 
 	/**
 	 * 该医生开通或者升级了ai医生：true,没有开通或者升级：false
@@ -36,6 +42,13 @@ public class GetAgentStatusVO extends AlipayObject {
 	 */
 	@ApiField("redirect_url")
 	private String redirectUrl;
+
+	public String getAgentId() {
+		return this.agentId;
+	}
+	public void setAgentId(String agentId) {
+		this.agentId = agentId;
+	}
 
 	public Boolean getAiAssistantOpenedStatus() {
 		return this.aiAssistantOpenedStatus;

@@ -7,6 +7,7 @@ import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.AftersaleAddressInfoVO;
 import com.alipay.api.domain.AftersaleItemInfo;
 import com.alipay.api.domain.OrderMediaInfo;
+import com.alipay.api.domain.CertificateRefundDetailVO;
 import com.alipay.api.domain.AftersaleFundsDetailItem;
 import com.alipay.api.domain.LogisticsWaybill;
 import com.alipay.api.domain.AftersaleServiceTag;
@@ -17,11 +18,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.mini.order.aftersale.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-07-28 16:44:09
+ * @since 1.0, 2026-08-14 14:09:03
  */
 public class AlipayOpenMiniOrderAftersaleQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3795251116759896772L;
+	private static final long serialVersionUID = 1474117525454637668L;
 
 	/** 
 	 * 售后单触发类型
@@ -72,6 +73,13 @@ public class AlipayOpenMiniOrderAftersaleQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("apply_refund_amount")
 	private String applyRefundAmount;
+
+	/** 
+	 * 描述当前售后单上每笔凭证对应退款进度。仅当前订单为本地生活类业务场景并且成功发起退款才会存在
+	 */
+	@ApiListField("certificate_refund_detail_list")
+	@ApiField("certificate_refund_detail_v_o")
+	private List<CertificateRefundDetailVO> certificateRefundDetailList;
 
 	/** 
 	 * 创建时间，yyyy-MM-dd HH:mm:ss
@@ -201,6 +209,13 @@ public class AlipayOpenMiniOrderAftersaleQueryResponse extends AlipayResponse {
 	}
 	public String getApplyRefundAmount( ) {
 		return this.applyRefundAmount;
+	}
+
+	public void setCertificateRefundDetailList(List<CertificateRefundDetailVO> certificateRefundDetailList) {
+		this.certificateRefundDetailList = certificateRefundDetailList;
+	}
+	public List<CertificateRefundDetailVO> getCertificateRefundDetailList( ) {
+		return this.certificateRefundDetailList;
 	}
 
 	public void setCreateTime(Date createTime) {
