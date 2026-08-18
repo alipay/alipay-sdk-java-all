@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VoucherBalanceRechargeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1484826665948289374L;
+	private static final long serialVersionUID = 2371639168835818823L;
 
 	/**
 	 * 支付宝余额充值金额

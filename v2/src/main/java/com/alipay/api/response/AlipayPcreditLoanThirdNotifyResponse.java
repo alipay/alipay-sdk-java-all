@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayPcreditLoanThirdNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6279912961189449833L;
+	private static final long serialVersionUID = 4737813315365582723L;
 
 	
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 广告权益状态推进到终止接口
  *
  * @author auto create
- * @since 1.0, 2026-04-10 17:00:01
+ * @since 1.0, 2026-08-17 19:23:42
  */
 public class AlipayCommerceRetailBenefitofflineSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1637683581357326286L;
+	private static final long serialVersionUID = 2873576622829353646L;
 
 	/**
 	 * 活动id

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HonorLoanInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2611256841125246258L;
+	private static final long serialVersionUID = 1287966717692668323L;
 
 	/**
 	 * 年利率, 0.18 (年化)

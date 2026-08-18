@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayAccountExrateConfigQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5467758476898545962L;
+	private static final long serialVersionUID = 8623466658133635971L;
 
 	/**
 	 * 国际同步到主站的scheduler配置的编码信息,唯一表示一条scheduler配置

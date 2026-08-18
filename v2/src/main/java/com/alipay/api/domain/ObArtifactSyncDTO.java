@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * ob制品同步入参
  *
  * @author auto create
- * @since 1.0, 2026-04-13 18:23:18
+ * @since 1.0, 2026-08-17 17:44:10
  */
 public class ObArtifactSyncDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7754931348629373755L;
+	private static final long serialVersionUID = 7469599889351393525L;
 
 	/**
 	 * 制品全称
@@ -127,6 +127,12 @@ public class ObArtifactSyncDTO extends AlipayObject {
 	@ApiListField("scan_details")
 	@ApiField("scan_detail")
 	private List<ScanDetail> scanDetails;
+
+	/**
+	 * 制品文件SHA256指纹
+	 */
+	@ApiField("sha_256")
+	private String sha256;
 
 	/**
 	 * 制品大小
@@ -276,6 +282,13 @@ public class ObArtifactSyncDTO extends AlipayObject {
 	}
 	public void setScanDetails(List<ScanDetail> scanDetails) {
 		this.scanDetails = scanDetails;
+	}
+
+	public String getSha256() {
+		return this.sha256;
+	}
+	public void setSha256(String sha256) {
+		this.sha256 = sha256;
 	}
 
 	public String getSize() {

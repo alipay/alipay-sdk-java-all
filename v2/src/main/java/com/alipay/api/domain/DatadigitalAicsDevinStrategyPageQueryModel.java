@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class DatadigitalAicsDevinStrategyPageQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2537955665469527517L;
+	private static final long serialVersionUID = 5332523864552535421L;
 
 	/**
 	 * 条件连接类型枚举，可选（控制 search_fields 之间的逻辑关系）。注意：当前底层 buildQueryRequest 未消费该字段，已预留。可选值：must(且关系)、must_not(且与非关系)、should(或关系)

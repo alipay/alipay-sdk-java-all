@@ -13,7 +13,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.morse.marketing.idcard.quality.check request
  * 
  * @author auto create
- * @since 1.0, 2026-08-12 22:47:53
+ * @since 1.0, 2026-08-17 09:17:49
  */
 public class AnttechMorseMarketingIdcardQualityCheckRequest implements AlipayUploadRequest<AnttechMorseMarketingIdcardQualityCheckResponse> {
 

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RefundConfirmCommitActivityInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6837245665897663724L;
+	private static final long serialVersionUID = 6262681695597852896L;
 
 	/**
 	 * 活动id

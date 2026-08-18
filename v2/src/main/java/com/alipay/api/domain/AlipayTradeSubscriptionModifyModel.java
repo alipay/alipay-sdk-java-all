@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayTradeSubscriptionModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5236832461526293211L;
+	private static final long serialVersionUID = 5154212632517212985L;
 
 	/**
 	 * 是否在周期结束时取消，仅用于取消/取消后恢复订阅，其他场景无需使用。

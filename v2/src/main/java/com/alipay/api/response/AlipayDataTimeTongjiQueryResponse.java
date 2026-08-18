@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataTimeTongjiQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5518457947917567999L;
+	private static final long serialVersionUID = 1421226354292747144L;
 
 	
 

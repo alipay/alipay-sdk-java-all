@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCircularRentRoomAgentChatResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5888633883545978183L;
+	private static final long serialVersionUID = 2711961781558329231L;
 
 	
 

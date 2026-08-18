@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.retail.benefitpublish.set response.
  * 
  * @author auto create
- * @since 1.0, 2026-03-24 22:57:43
+ * @since 1.0, 2026-08-17 19:13:59
  */
 public class AlipayCommerceRetailBenefitpublishSetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1546333842982689143L;
+	private static final long serialVersionUID = 4876577454119738196L;
 
 	/** 
 	 * 如果有表示是副本修改成功，没有则是正本修改chen

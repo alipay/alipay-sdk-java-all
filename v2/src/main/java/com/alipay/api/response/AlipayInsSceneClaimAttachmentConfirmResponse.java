@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayInsSceneClaimAttachmentConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3217898241868483749L;
+	private static final long serialVersionUID = 5445733252326531629L;
 
 	/** 
 	 * 差异的文件清单列表

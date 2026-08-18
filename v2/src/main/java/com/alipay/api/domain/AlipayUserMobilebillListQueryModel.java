@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserMobilebillListQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3242749275275467829L;
+	private static final long serialVersionUID = 8376216588486612576L;
 
 	/**
 	 * 查询范围-结束时间，开始和结束时间间隔不能大于31天

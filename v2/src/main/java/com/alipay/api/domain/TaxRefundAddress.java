@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TaxRefundAddress extends AlipayObject {
 
-	private static final long serialVersionUID = 7181781957977345218L;
+	private static final long serialVersionUID = 5162352166411331169L;
 
 	/**
 	 * 地址1

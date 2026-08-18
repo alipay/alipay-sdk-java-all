@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ScenicAudioCardDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7414649159784516659L;
+	private static final long serialVersionUID = 6636924141912225871L;
 
 	/**
 	 * 语音讲解url

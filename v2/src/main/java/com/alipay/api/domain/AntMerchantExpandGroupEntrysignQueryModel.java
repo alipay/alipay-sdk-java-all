@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntMerchantExpandGroupEntrysignQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5586794895853199983L;
+	private static final long serialVersionUID = 6378748428414751223L;
 
 	/**
 	 * openid 是支付宝用户在应用维度下的唯一标识。

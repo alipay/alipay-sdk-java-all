@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.morse.marketing.idcard.quality.check response.
  * 
  * @author auto create
- * @since 1.0, 2026-08-12 22:47:53
+ * @since 1.0, 2026-08-17 09:17:49
  */
 public class AnttechMorseMarketingIdcardQualityCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2552889959426636486L;
+	private static final long serialVersionUID = 6498797587445855375L;
 
 	/** 
 	 * 业务流水号

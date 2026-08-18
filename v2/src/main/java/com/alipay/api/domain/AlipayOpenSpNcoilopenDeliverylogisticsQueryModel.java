@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 根据收件人信息查询物流信息
  *
  * @author auto create
- * @since 1.0, 2026-08-12 11:51:14
+ * @since 1.0, 2026-08-18 10:17:47
  */
 public class AlipayOpenSpNcoilopenDeliverylogisticsQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2173699766424222382L;
+	private static final long serialVersionUID = 8422979497239322283L;
 
 	/**
 	 * 订单流水号
 	 */
 	@ApiField("biz_id")
 	private String bizId;
+
+	/**
+	 * 订单id
+	 */
+	@ApiField("order_sale_id")
+	private String orderSaleId;
 
 	/**
 	 * 收件人姓名
@@ -36,6 +42,13 @@ public class AlipayOpenSpNcoilopenDeliverylogisticsQueryModel extends AlipayObje
 	}
 	public void setBizId(String bizId) {
 		this.bizId = bizId;
+	}
+
+	public String getOrderSaleId() {
+		return this.orderSaleId;
+	}
+	public void setOrderSaleId(String orderSaleId) {
+		this.orderSaleId = orderSaleId;
 	}
 
 	public String getReceiverName() {

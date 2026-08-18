@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LifeserviceItemDatePrice extends AlipayObject {
 
-	private static final long serialVersionUID = 8556952436156281551L;
+	private static final long serialVersionUID = 8113962225625195228L;
 
 	/**
 	 * 结束日期。格式：yyyy-MM-dd

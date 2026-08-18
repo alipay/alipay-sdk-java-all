@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CommunityBasicInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8668853222375534958L;
+	private static final long serialVersionUID = 7362723865847265385L;
 
 	/**
 	 * 小区的建筑类型

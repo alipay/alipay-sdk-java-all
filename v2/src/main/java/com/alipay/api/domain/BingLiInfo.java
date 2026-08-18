@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BingLiInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4281683126423148557L;
+	private static final long serialVersionUID = 6242863754628178568L;
 
 	/**
 	 * 病历中患者年龄，如23岁、2个月、23天等

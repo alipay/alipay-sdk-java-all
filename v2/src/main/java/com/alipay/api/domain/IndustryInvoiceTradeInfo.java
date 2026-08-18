@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单交易信息
  *
  * @author auto create
- * @since 1.0, 2025-12-09 10:16:38
+ * @since 1.0, 2026-08-17 14:08:27
  */
 public class IndustryInvoiceTradeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5283456164238223796L;
+	private static final long serialVersionUID = 4534815383448829159L;
 
 	/**
 	 * 交易渠道
@@ -25,6 +25,12 @@ public class IndustryInvoiceTradeInfo extends AlipayObject {
 	@ApiField("trade_no")
 	private String tradeNo;
 
+	/**
+	 * 交易产品
+	 */
+	@ApiField("trade_product")
+	private String tradeProduct;
+
 	public String getChannelType() {
 		return this.channelType;
 	}
@@ -37,6 +43,13 @@ public class IndustryInvoiceTradeInfo extends AlipayObject {
 	}
 	public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
+	}
+
+	public String getTradeProduct() {
+		return this.tradeProduct;
+	}
+	public void setTradeProduct(String tradeProduct) {
+		this.tradeProduct = tradeProduct;
 	}
 
 }

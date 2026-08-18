@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 场景钱包创单接口
  *
  * @author auto create
- * @since 1.0, 2024-07-15 18:14:19
+ * @since 1.0, 2026-08-17 15:12:06
  */
 public class AlipayCloudFundWalletDepositorderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5632122673289234572L;
+	private static final long serialVersionUID = 6777668687323212487L;
 
 	/**
 	 * 充值金额，单位元

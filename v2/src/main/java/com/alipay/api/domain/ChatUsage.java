@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ChatUsage extends AlipayObject {
 
-	private static final long serialVersionUID = 4158789622428256859L;
+	private static final long serialVersionUID = 7353388797991362711L;
 
 	/**
 	 * input 部分消耗的 Token 总数。

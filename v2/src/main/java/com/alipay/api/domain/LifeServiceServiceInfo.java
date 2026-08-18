@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class LifeServiceServiceInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6523947248926327695L;
+	private static final long serialVersionUID = 2662282659492225868L;
 
 	/**
 	 * 预约时是否需要指定手艺人

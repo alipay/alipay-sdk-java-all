@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEbppIndustryEarthquakeCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2627781913461891622L;
+	private static final long serialVersionUID = 5567355728399985366L;
 
 	/**
 	 * null

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LucBusinessLicenseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7377731741335948992L;
+	private static final long serialVersionUID = 7457464353658444634L;
 
 	/**
 	 * 营业执照图片OSS Key，调用openapi【ant.merchant.expand.indirect.image.upload】获取

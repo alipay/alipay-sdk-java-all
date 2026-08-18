@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayEbppEbppInstnoticeCreateormodifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5122934219882437353L;
+	private static final long serialVersionUID = 4597184271598375439L;
 
 	/**
 	 * 城市编码可选例如 320100：南京

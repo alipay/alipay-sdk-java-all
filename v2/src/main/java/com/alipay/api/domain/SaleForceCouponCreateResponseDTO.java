@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 结果对象
  *
  * @author auto create
- * @since 1.0, 2026-06-15 19:12:55
+ * @since 1.0, 2026-08-17 21:07:49
  */
 public class SaleForceCouponCreateResponseDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8589531746531458758L;
+	private static final long serialVersionUID = 2712818972462123512L;
 
 	/**
 	 * 海图费用减免记录id

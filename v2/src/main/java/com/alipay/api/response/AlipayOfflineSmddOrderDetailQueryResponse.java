@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOfflineSmddOrderDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3185794276266381374L;
+	private static final long serialVersionUID = 2354454545444579618L;
 
 	/** 
 	 * 取餐号

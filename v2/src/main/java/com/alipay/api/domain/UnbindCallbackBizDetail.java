@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class UnbindCallbackBizDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 2687786637524536695L;
+	private static final long serialVersionUID = 3367121661571534541L;
 
 	/**
 	 * 支付宝订单号

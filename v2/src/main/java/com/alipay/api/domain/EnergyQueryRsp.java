@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EnergyQueryRsp extends AlipayObject {
 
-	private static final long serialVersionUID = 7888964863146993721L;
+	private static final long serialVersionUID = 6346253839813925259L;
 
 	/**
 	 * 失败描述信息

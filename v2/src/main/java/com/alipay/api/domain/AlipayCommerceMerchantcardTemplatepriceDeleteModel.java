@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceMerchantcardTemplatepriceDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6745126324234744424L;
+	private static final long serialVersionUID = 2776674958938958942L;
 
 	/**
 	 * 需要删除动态价格的商品模板ID。

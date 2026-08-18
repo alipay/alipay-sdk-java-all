@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppIndustryJobHealthcertQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5655475216956913392L;
+	private static final long serialVersionUID = 1631381772663617438L;
 
 	/** 
 	 * 是否有证，有证返回true，无证返回false

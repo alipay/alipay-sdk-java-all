@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEcoEduKtParentQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6266482938779279826L;
+	private static final long serialVersionUID = 1899895537997645939L;
 
 	/**
 	 * 孩子或学生姓名

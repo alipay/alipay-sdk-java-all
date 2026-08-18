@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 广告权益推进到白名单接口
  *
  * @author auto create
- * @since 1.0, 2025-12-16 15:47:42
+ * @since 1.0, 2026-08-17 19:14:51
  */
 public class AlipayCommerceRetailBenefitwhiteSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4416643172772642161L;
+	private static final long serialVersionUID = 1285798798215612564L;
 
 	/**
 	 * 活动id

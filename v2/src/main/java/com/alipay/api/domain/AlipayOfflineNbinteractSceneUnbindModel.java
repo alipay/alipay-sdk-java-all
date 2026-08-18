@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOfflineNbinteractSceneUnbindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3739532736625366931L;
+	private static final long serialVersionUID = 2756476779256126784L;
 
 	/**
 	 * 碰一下互动跳转链接所属类型,从枚举中选择

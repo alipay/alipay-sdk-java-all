@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntLinkeCheckreimburseQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2134324254381477585L;
+	private static final long serialVersionUID = 3158692179256243763L;
 
 	/** 
 	 * null

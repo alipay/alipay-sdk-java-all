@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceMedicalDoctorgwHomecacheDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4469877174259942743L;
+	private static final long serialVersionUID = 3144271954421367397L;
 
 	/**
 	 * 是否删除全部模块缓存

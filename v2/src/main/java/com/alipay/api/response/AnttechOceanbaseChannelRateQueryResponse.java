@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AnttechOceanbaseChannelRateQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6776313595357375263L;
+	private static final long serialVersionUID = 2283991532185573717L;
 
 	/** 
 	 * 抽佣比例，单位：%

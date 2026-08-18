@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MerchantUpcImgRequestVo extends AlipayObject {
 
-	private static final long serialVersionUID = 1579521828159229786L;
+	private static final long serialVersionUID = 1879393919289653358L;
 
 	/**
 	 * 官方商品code

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-06-15 19:12:55
+ * @since 1.0, 2026-08-17 21:07:49
  */
 public class SaleForceCompetitorDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2832173739521822914L;
+	private static final long serialVersionUID = 2484423782831575864L;
 
 	/**
 	 * null

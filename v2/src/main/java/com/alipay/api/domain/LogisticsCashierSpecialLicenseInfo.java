@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LogisticsCashierSpecialLicenseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4555533953623683755L;
+	private static final long serialVersionUID = 7688591539992894199L;
 
 	/**
 	 * 【描述】企业特殊资质图片，可参考 商家经营类目 中的“需要的特殊资质证书”。

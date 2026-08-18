@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HbMerchantInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8724525161187453778L;
+	private static final long serialVersionUID = 8289664292143554246L;
 
 	/**
 	 * 描述收单模式，目前取值有 直联/间联/境外

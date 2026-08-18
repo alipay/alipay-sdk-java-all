@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.retail.benefitpause.set request
  * 
  * @author auto create
- * @since 1.0, 2026-03-24 22:57:43
+ * @since 1.0, 2026-08-17 19:15:03
  */
 public class AlipayCommerceRetailBenefitpauseSetRequest implements AlipayRequest<AlipayCommerceRetailBenefitpauseSetResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AllocSignBizParam extends AlipayObject {
 
-	private static final long serialVersionUID = 2639725638228448681L;
+	private static final long serialVersionUID = 8769898592144515522L;
 
 	/**
 	 * 是否屏蔽签约页抽佣比例设置

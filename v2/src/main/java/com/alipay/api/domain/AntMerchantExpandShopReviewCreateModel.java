@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntMerchantExpandShopReviewCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5484822422985132784L;
+	private static final long serialVersionUID = 4598593687441656469L;
 
 	/**
 	 * 评价内容id，最长128，需要保证传入的每个评价内容id具备唯一性，有幂等校验

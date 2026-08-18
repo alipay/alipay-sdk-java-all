@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class StandardVoucherMultipleConditionQueryRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 3665857874531932837L;
+	private static final long serialVersionUID = 1871947938748764232L;
 
 	/**
 	 * 本方账户别名:支付宝为email或手机号，企业账户基本无手机号注册情况

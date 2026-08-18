@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SubPromoInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 5582695797263976442L;
+	private static final long serialVersionUID = 2698752628376773914L;
 
 	/**
 	 * 订单消耗的子代币数量

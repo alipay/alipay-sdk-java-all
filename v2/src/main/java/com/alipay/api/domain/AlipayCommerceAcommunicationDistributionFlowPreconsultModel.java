@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 流量订单预校验
  *
  * @author auto create
- * @since 1.0, 2026-08-04 10:07:58
+ * @since 1.0, 2026-08-18 09:40:17
  */
 public class AlipayCommerceAcommunicationDistributionFlowPreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5366697521641762914L;
+	private static final long serialVersionUID = 8649897261658213714L;
+
+	/**
+	 * 触达渠道
+	 */
+	@ApiField("access_channel")
+	private String accessChannel;
 
 	/**
 	 * 支付宝的userId
@@ -24,6 +30,12 @@ public class AlipayCommerceAcommunicationDistributionFlowPreconsultModel extends
 	 */
 	@ApiField("encrypted_mobile")
 	private String encryptedMobile;
+
+	/**
+	 * 一级投流平台
+	 */
+	@ApiField("first_channel")
+	private String firstChannel;
 
 	/**
 	 * 固定点位
@@ -50,6 +62,12 @@ public class AlipayCommerceAcommunicationDistributionFlowPreconsultModel extends
 	private String openId;
 
 	/**
+	 * 订购页URL
+	 */
+	@ApiField("proxy_order_url")
+	private String proxyOrderUrl;
+
+	/**
 	 * 报备素材编号
 	 */
 	@ApiField("report_materials_no")
@@ -62,10 +80,23 @@ public class AlipayCommerceAcommunicationDistributionFlowPreconsultModel extends
 	private String requestId;
 
 	/**
+	 * 二级投流平台
+	 */
+	@ApiField("second_channel")
+	private String secondChannel;
+
+	/**
 	 * 目标账号
 	 */
 	@ApiField("target_account")
 	private String targetAccount;
+
+	public String getAccessChannel() {
+		return this.accessChannel;
+	}
+	public void setAccessChannel(String accessChannel) {
+		this.accessChannel = accessChannel;
+	}
 
 	public String getAlipayUserId() {
 		return this.alipayUserId;
@@ -79,6 +110,13 @@ public class AlipayCommerceAcommunicationDistributionFlowPreconsultModel extends
 	}
 	public void setEncryptedMobile(String encryptedMobile) {
 		this.encryptedMobile = encryptedMobile;
+	}
+
+	public String getFirstChannel() {
+		return this.firstChannel;
+	}
+	public void setFirstChannel(String firstChannel) {
+		this.firstChannel = firstChannel;
 	}
 
 	public String getFixedPositionCode() {
@@ -109,6 +147,13 @@ public class AlipayCommerceAcommunicationDistributionFlowPreconsultModel extends
 		this.openId = openId;
 	}
 
+	public String getProxyOrderUrl() {
+		return this.proxyOrderUrl;
+	}
+	public void setProxyOrderUrl(String proxyOrderUrl) {
+		this.proxyOrderUrl = proxyOrderUrl;
+	}
+
 	public String getReportMaterialsNo() {
 		return this.reportMaterialsNo;
 	}
@@ -121,6 +166,13 @@ public class AlipayCommerceAcommunicationDistributionFlowPreconsultModel extends
 	}
 	public void setRequestId(String requestId) {
 		this.requestId = requestId;
+	}
+
+	public String getSecondChannel() {
+		return this.secondChannel;
+	}
+	public void setSecondChannel(String secondChannel) {
+		this.secondChannel = secondChannel;
 	}
 
 	public String getTargetAccount() {

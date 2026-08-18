@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.retail.benefitoffline.set response.
  * 
  * @author auto create
- * @since 1.0, 2026-04-10 17:00:01
+ * @since 1.0, 2026-08-17 19:23:42
  */
 public class AlipayCommerceRetailBenefitofflineSetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8573426169893927487L;
+	private static final long serialVersionUID = 4494166431322274847L;
 
 	/** 
 	 * 副本修改id

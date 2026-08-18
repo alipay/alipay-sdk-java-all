@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EduOcrResult extends AlipayObject {
 
-	private static final long serialVersionUID = 4724823124769828335L;
+	private static final long serialVersionUID = 7865319354365584839L;
 
 	/**
 	 * 出生年月日

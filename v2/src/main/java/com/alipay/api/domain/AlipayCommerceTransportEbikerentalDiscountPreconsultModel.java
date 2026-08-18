@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportEbikerentalDiscountPreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2216299541529371493L;
+	private static final long serialVersionUID = 7198849858129724759L;
 
 	/**
 	 * 业务请求时间

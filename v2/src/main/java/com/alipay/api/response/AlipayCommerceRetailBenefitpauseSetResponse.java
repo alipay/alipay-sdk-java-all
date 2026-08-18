@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.retail.benefitpause.set response.
  * 
  * @author auto create
- * @since 1.0, 2026-03-24 22:57:43
+ * @since 1.0, 2026-08-17 19:15:03
  */
 public class AlipayCommerceRetailBenefitpauseSetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4828791665175762459L;
+	private static final long serialVersionUID = 4854171383594875464L;
 
 	/** 
 	 * 如果有副本审核id表示副本修改成功

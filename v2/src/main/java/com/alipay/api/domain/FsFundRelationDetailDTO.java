@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FsFundRelationDetailDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5573333651935889549L;
+	private static final long serialVersionUID = 2785245824525849763L;
 
 	/**
 	 * 出资金额是否允许上浮
