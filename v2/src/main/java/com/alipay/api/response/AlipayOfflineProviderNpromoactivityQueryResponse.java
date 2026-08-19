@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.provider.npromoactivity.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-11-29 15:47:19
+ * @since 1.0, 2026-08-18 14:10:41
  */
 public class AlipayOfflineProviderNpromoactivityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1675664613864167141L;
+	private static final long serialVersionUID = 4612135536715227951L;
 
 	/** 
 	 * 用户活动

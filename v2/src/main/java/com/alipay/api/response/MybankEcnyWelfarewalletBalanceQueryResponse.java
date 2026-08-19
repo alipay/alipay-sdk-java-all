@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankEcnyWelfarewalletBalanceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7495235674711415817L;
+	private static final long serialVersionUID = 8511882449849191529L;
 
 	/** 
 	 * 福利子钱包资产余额列表

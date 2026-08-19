@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CreditPayDiscountVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3533388821998113767L;
+	private static final long serialVersionUID = 3377979728223573978L;
 
 	/**
 	 * 折扣描述

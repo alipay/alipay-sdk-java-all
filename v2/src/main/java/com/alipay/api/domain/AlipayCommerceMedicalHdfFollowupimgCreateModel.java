@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 随访二维码创建
  *
  * @author auto create
- * @since 1.0, 2026-06-17 19:12:56
+ * @since 1.0, 2026-08-18 17:07:55
  */
 public class AlipayCommerceMedicalHdfFollowupimgCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1388527223486972797L;
+	private static final long serialVersionUID = 8356632958828428476L;
 
 	/**
 	 * 医生科室

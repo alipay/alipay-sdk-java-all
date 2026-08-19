@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.offline.provider.npromoactivity.withholdvoucher.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-07 12:32:37
+ * @since 1.0, 2026-08-18 14:21:52
  */
 public class AlipayOfflineProviderNpromoactivityWithholdvoucherCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4331819268765967497L;
+	private static final long serialVersionUID = 3745921824132697445L;
 
 	/** 
 	 * 代扣协议号

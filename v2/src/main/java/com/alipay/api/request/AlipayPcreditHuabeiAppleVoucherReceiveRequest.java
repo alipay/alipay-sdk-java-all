@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pcredit.huabei.apple.voucher.receive request
  * 
  * @author auto create
- * @since 1.0, 2026-08-13 11:37:49
+ * @since 1.0, 2026-08-18 17:42:49
  */
 public class AlipayPcreditHuabeiAppleVoucherReceiveRequest implements AlipayRequest<AlipayPcreditHuabeiAppleVoucherReceiveResponse> {
 

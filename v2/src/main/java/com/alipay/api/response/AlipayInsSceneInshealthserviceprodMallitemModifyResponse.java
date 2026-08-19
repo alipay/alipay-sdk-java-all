@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.inshealthserviceprod.mallitem.modify response.
  * 
  * @author auto create
- * @since 1.0, 2026-08-10 11:27:48
+ * @since 1.0, 2026-08-18 22:07:51
  */
 public class AlipayInsSceneInshealthserviceprodMallitemModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1483694663117254142L;
+	private static final long serialVersionUID = 8569541881574326252L;
 
 	/** 
 	 * 商品信息

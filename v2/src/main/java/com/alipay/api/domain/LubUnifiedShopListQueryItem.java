@@ -10,11 +10,17 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-08-06 18:41:29
+ * @since 1.0, 2026-08-18 17:07:55
  */
 public class LubUnifiedShopListQueryItem extends AlipayObject {
 
-	private static final long serialVersionUID = 8589157217214196653L;
+	private static final long serialVersionUID = 3138276288791229687L;
+
+	/**
+	 * 品牌ID
+	 */
+	@ApiField("brand_id")
+	private String brandId;
 
 	/**
 	 * 营业执照信息
@@ -118,6 +124,13 @@ public class LubUnifiedShopListQueryItem extends AlipayObject {
 	 */
 	@ApiField("store_id")
 	private String storeId;
+
+	public String getBrandId() {
+		return this.brandId;
+	}
+	public void setBrandId(String brandId) {
+		this.brandId = brandId;
+	}
 
 	public LubBusinessLicenseInfo getBusinessLicenseInfo() {
 		return this.businessLicenseInfo;

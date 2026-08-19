@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 调整任务周期时间
  *
  * @author auto create
- * @since 1.0, 2026-01-30 10:57:58
+ * @since 1.0, 2026-08-18 14:14:29
  */
 public class AlipayOfflineProviderNsalesActivityperiodModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2833499869318585267L;
+	private static final long serialVersionUID = 3293914268714326812L;
 
 	/**
 	 * UA开头的主任务号

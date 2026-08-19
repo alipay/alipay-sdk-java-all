@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AuthorizeCheckRule extends AlipayObject {
 
-	private static final long serialVersionUID = 2866753453978713663L;
+	private static final long serialVersionUID = 5476698549126371421L;
 
 	/**
 	 * 企业统一信用编号，传值则会校验授权方与被授权方信用编号是否一致

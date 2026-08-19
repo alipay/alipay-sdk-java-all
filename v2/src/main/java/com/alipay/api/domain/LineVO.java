@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class LineVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8536457964229368619L;
+	private static final long serialVersionUID = 8563797694618349472L;
 
 	/**
 	 * 线路主题色色值（十六进制色码）。

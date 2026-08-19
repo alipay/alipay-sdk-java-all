@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportMapstudioMetroinfoSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1312557851965943891L;
+	private static final long serialVersionUID = 2294283152594774467L;
 
 	
 

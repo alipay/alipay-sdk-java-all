@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询OB制品信息结果DTO
  *
  * @author auto create
- * @since 1.0, 2026-04-13 18:37:18
+ * @since 1.0, 2026-08-18 19:37:16
  */
 public class QueryObArtifactListDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4862467767747843816L;
+	private static final long serialVersionUID = 6143165325873498129L;
 
 	/**
 	 * 制品版本
@@ -50,7 +50,13 @@ public class QueryObArtifactListDTO extends AlipayObject {
 	private String projectName;
 
 	/**
-	 * 制品大小
+	 * 制品文件SHA256指纹
+	 */
+	@ApiField("sha_256")
+	private String sha256;
+
+	/**
+	 * 制品大小，默认单位为Byte
 	 */
 	@ApiField("size")
 	private String size;
@@ -113,6 +119,13 @@ public class QueryObArtifactListDTO extends AlipayObject {
 	}
 	public void setProjectName(String projectName) {
 		this.projectName = projectName;
+	}
+
+	public String getSha256() {
+		return this.sha256;
+	}
+	public void setSha256(String sha256) {
+		this.sha256 = sha256;
 	}
 
 	public String getSize() {

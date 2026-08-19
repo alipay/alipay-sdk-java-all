@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCreditEpAssistantMembershippackageReverseModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3712746669685844479L;
+	private static final long serialVersionUID = 1496977312746131567L;
 
 	/**
 	 * 渠道创建权益包时关联的原始订单号，退权益仅支持已整个订单维度操作

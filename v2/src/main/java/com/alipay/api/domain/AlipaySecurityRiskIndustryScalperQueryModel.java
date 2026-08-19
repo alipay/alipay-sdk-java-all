@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipaySecurityRiskIndustryScalperQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4873638966562629869L;
+	private static final long serialVersionUID = 2115296212993136427L;
 
 	/**
 	 * 银行卡号，如无法提供，可填写为空值（null）

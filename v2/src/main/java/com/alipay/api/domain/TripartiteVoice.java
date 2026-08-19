@@ -1,17 +1,20 @@
 package com.alipay.api.domain;
 
+import java.util.List;
+
 import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 
 /**
  * null
  *
  * @author auto create
- * @since 1.0, 2026-08-14 15:18:29
+ * @since 1.0, 2026-08-18 19:12:51
  */
 public class TripartiteVoice extends AlipayObject {
 
-	private static final long serialVersionUID = 2623969524325322661L;
+	private static final long serialVersionUID = 5658431389217399797L;
 
 	/**
 	 * anteye一级意图
@@ -108,6 +111,13 @@ public class TripartiteVoice extends AlipayObject {
 	 */
 	@ApiField("reason")
 	private String reason;
+
+	/**
+	 * null
+	 */
+	@ApiListField("source_url")
+	@ApiField("string")
+	private List<String> sourceUrl;
 
 	/**
 	 * 客诉标题
@@ -243,6 +253,13 @@ public class TripartiteVoice extends AlipayObject {
 	}
 	public void setReason(String reason) {
 		this.reason = reason;
+	}
+
+	public List<String> getSourceUrl() {
+		return this.sourceUrl;
+	}
+	public void setSourceUrl(List<String> sourceUrl) {
+		this.sourceUrl = sourceUrl;
 	}
 
 	public String getTitle() {

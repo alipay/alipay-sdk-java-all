@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingVerifyHistoryQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5745916312783492321L;
+	private static final long serialVersionUID = 3743276348111737881L;
 
 	/**
 	 * 业务发生时间结束，格式：yyyyMMdd

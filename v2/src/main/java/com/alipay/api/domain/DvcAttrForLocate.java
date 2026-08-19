@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DvcAttrForLocate extends AlipayObject {
 
-	private static final long serialVersionUID = 7297222468436718592L;
+	private static final long serialVersionUID = 6641584131687457657L;
 
 	/**
 	 * 设备点位蓝牙mac地址

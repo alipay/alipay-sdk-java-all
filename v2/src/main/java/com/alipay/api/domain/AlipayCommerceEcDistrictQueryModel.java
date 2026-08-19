@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceEcDistrictQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2594839339819627231L;
+	private static final long serialVersionUID = 8883811853147187445L;
 
 	/**
 	 * 行政区划等级

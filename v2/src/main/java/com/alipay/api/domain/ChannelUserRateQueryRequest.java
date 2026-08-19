@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ChannelUserRateQueryRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 4582588752326761884L;
+	private static final long serialVersionUID = 8738236145644219935L;
 
 	/**
 	 * 账期，格式yyyy-MM

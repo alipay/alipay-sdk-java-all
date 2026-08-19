@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询OB制品信息列表
  *
  * @author auto create
- * @since 1.0, 2026-04-13 18:37:18
+ * @since 1.0, 2026-08-18 19:37:17
  */
 public class AnttechOceanbaseObglobalArtifactlistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1514623138386377399L;
+	private static final long serialVersionUID = 6297292374779761346L;
 
 	/**
 	 * ob制品查询条件

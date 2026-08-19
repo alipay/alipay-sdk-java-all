@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 门店地址信息（线下门店修改时必填）<a href="https://mdn.alipayobjects.com/moneycard_bizfmcg/afts/file/O4-hR75f0RQAAAAAR_AAAAgADe7SAQBr">获取省、市、区编码</a>
  *
  * @author auto create
- * @since 1.0, 2026-08-03 14:45:34
+ * @since 1.0, 2026-08-18 17:07:56
  */
 public class LumStoreAddressInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7156676282554677325L;
+	private static final long serialVersionUID = 3297353983491979836L;
 
 	/**
 	 * 城市编码

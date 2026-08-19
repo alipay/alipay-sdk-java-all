@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SaasAccountInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2624356911883799891L;
+	private static final long serialVersionUID = 2794786533643979438L;
 
 	/**
 	 * SaaS客户ID

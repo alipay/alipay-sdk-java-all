@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 卖进订单子活动履约撤销
  *
  * @author auto create
- * @since 1.0, 2025-02-27 14:31:53
+ * @since 1.0, 2026-08-18 14:11:11
  */
 public class AlipayOfflineProviderNsalesSubactivityfulfillCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8875577135322467281L;
+	private static final long serialVersionUID = 3164474252874199473L;
 
 	/**
 	 * 卖进订单子活动id

@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBossFncSubaccountBalanceFreezeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4458649448987632461L;
+	private static final long serialVersionUID = 6322587522482626778L;
 
 	/** 
 	 * 子户余额冻结结果open api数据传输对象

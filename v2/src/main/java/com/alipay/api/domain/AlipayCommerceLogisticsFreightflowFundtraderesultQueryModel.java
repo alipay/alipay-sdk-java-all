@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceLogisticsFreightflowFundtraderesultQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2736694156842694245L;
+	private static final long serialVersionUID = 4864536655837727579L;
 
 	/**
 	 * 创单时的biz_no

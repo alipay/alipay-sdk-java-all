@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建子活动代扣单
  *
  * @author auto create
- * @since 1.0, 2024-11-29 15:43:49
+ * @since 1.0, 2026-08-18 14:21:52
  */
 public class AlipayOfflineProviderNpromoactivityWithholdvoucherCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3216698644839823584L;
+	private static final long serialVersionUID = 8773164972463423861L;
 
 	/**
 	 * 创建代扣单业务时间

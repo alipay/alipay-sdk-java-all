@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.ec.channelinvoice.merchantopen.get request
  * 
  * @author auto create
- * @since 1.0, 2026-08-03 10:57:48
+ * @since 1.0, 2026-08-18 15:47:49
  */
 public class AlipayCommerceEcChannelinvoiceMerchantopenGetRequest implements AlipayRequest<AlipayCommerceEcChannelinvoiceMerchantopenGetResponse> {
 

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 智能体委托支付接口
  *
  * @author auto create
- * @since 1.0, 2026-07-14 15:31:25
+ * @since 1.0, 2026-08-18 19:39:00
  */
 public class AlipayTradeAgentDelegationPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4414565921639137463L;
+	private static final long serialVersionUID = 6543292773498216226L;
 
 	/**
 	 * 智能体id
@@ -37,6 +37,14 @@ public class AlipayTradeAgentDelegationPayModel extends AlipayObject {
 	 */
 	@ApiField("delegation_id")
 	private String delegationId;
+
+	/**
+	 * 传阶段号out_relation_id的值。
+
+如果不传，则用交易号作为本次请求号，意味着是整笔订单支付。
+	 */
+	@ApiField("out_request_no")
+	private String outRequestNo;
 
 	/**
 	 * 预下单ID，通过请求alipay.trade.order.prepay接口获取预下单ID
@@ -70,6 +78,13 @@ public class AlipayTradeAgentDelegationPayModel extends AlipayObject {
 	}
 	public void setDelegationId(String delegationId) {
 		this.delegationId = delegationId;
+	}
+
+	public String getOutRequestNo() {
+		return this.outRequestNo;
+	}
+	public void setOutRequestNo(String outRequestNo) {
+		this.outRequestNo = outRequestNo;
 	}
 
 	public String getPrepayId() {

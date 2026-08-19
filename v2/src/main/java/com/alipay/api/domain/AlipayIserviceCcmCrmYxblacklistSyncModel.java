@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayIserviceCcmCrmYxblacklistSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5771153629255561299L;
+	private static final long serialVersionUID = 8885179939794179252L;
 
 	/**
 	 * 黑名单的备注信息

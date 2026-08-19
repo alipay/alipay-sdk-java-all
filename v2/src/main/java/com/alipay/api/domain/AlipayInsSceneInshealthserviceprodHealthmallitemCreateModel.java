@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品录入
  *
  * @author auto create
- * @since 1.0, 2026-08-10 11:24:09
+ * @since 1.0, 2026-08-18 22:03:51
  */
 public class AlipayInsSceneInshealthserviceprodHealthmallitemCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4234588417456756538L;
+	private static final long serialVersionUID = 8598994146795957989L;
 
 	/**
 	 * 商品录入请求

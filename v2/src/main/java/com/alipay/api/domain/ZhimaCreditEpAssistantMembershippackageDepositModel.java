@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaCreditEpAssistantMembershippackageDepositModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2684236195243734864L;
+	private static final long serialVersionUID = 5386468431117885326L;
 
 	/**
 	 * 充值的权益sku编码，一个sku可以包含不同权益项和权益数，假设本次权益包含3000次拓客解锁数，购买一个sku相当于购买了3000次拓客解锁数

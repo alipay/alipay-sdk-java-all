@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 安心生活门店更新
  *
  * @author auto create
- * @since 1.0, 2026-08-03 14:45:34
+ * @since 1.0, 2026-08-18 17:07:56
  */
 public class AlipayCommerceLifeserviceUnifiedshopModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3556784257773244724L;
+	private static final long serialVersionUID = 2217959367126758458L;
 
 	/**
 	 * 授权委托书图片osskey
 	 */
 	@ApiField("authorization_letter")
 	private String authorizationLetter;
+
+	/**
+	 * 品牌ID
+	 */
+	@ApiField("brand_id")
+	private String brandId;
 
 	/**
 	 * 营业执照信息，可选重传，不传则保留原值
@@ -124,6 +130,13 @@ public class AlipayCommerceLifeserviceUnifiedshopModifyModel extends AlipayObjec
 	}
 	public void setAuthorizationLetter(String authorizationLetter) {
 		this.authorizationLetter = authorizationLetter;
+	}
+
+	public String getBrandId() {
+		return this.brandId;
+	}
+	public void setBrandId(String brandId) {
+		this.brandId = brandId;
 	}
 
 	public LumBusinessLicenseInfo getBusinessLicenseInfo() {

@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ebpp.industry.tripartitevoice.list.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-08-14 15:18:29
+ * @since 1.0, 2026-08-18 19:12:51
  */
 public class AlipayEbppIndustryTripartitevoiceListQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8675846441898651874L;
+	private static final long serialVersionUID = 1828372911124683861L;
 
 	/** 
 	 * 总条数

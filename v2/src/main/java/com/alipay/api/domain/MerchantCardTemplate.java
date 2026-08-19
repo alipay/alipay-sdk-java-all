@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品
  *
  * @author auto create
- * @since 1.0, 2026-06-23 15:00:00
+ * @since 1.0, 2026-08-18 13:29:53
  */
 public class MerchantCardTemplate extends AlipayObject {
 
-	private static final long serialVersionUID = 8466611293742732332L;
+	private static final long serialVersionUID = 2481871344255395161L;
 
 	/**
 	 * 不传时默认卡商品类型
@@ -33,6 +33,13 @@ public class MerchantCardTemplate extends AlipayObject {
 	 */
 	@ApiField("booking_mode")
 	private String bookingMode;
+
+	/**
+	 * 商品关联的品牌ID。取自商户已认证的品牌，
+<a href="https://b.alipay.com/page/brandManage/home">获取品牌ID</a>
+	 */
+	@ApiField("brand_id")
+	private String brandId;
 
 	/**
 	 * 违约金信息
@@ -247,6 +254,13 @@ public class MerchantCardTemplate extends AlipayObject {
 	}
 	public void setBookingMode(String bookingMode) {
 		this.bookingMode = bookingMode;
+	}
+
+	public String getBrandId() {
+		return this.brandId;
+	}
+	public void setBrandId(String brandId) {
+		this.brandId = brandId;
 	}
 
 	public BreakCostsInfo getBreakCostsInfo() {

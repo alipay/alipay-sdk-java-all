@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 安心生活门店创建
  *
  * @author auto create
- * @since 1.0, 2026-08-03 14:55:03
+ * @since 1.0, 2026-08-18 17:07:56
  */
 public class AlipayCommerceLifeserviceShopCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7869576731456785168L;
+	private static final long serialVersionUID = 5882489691835732289L;
 
 	/**
 	 * 授权委托书图片osskey
 	 */
 	@ApiField("authorization_letter")
 	private String authorizationLetter;
+
+	/**
+	 * 品牌ID，填写品牌ID可免传法人身份证信息
+	 */
+	@ApiField("brand_id")
+	private String brandId;
 
 	/**
 	 * 营业执照信息
@@ -114,6 +120,13 @@ public class AlipayCommerceLifeserviceShopCreateModel extends AlipayObject {
 	}
 	public void setAuthorizationLetter(String authorizationLetter) {
 		this.authorizationLetter = authorizationLetter;
+	}
+
+	public String getBrandId() {
+		return this.brandId;
+	}
+	public void setBrandId(String brandId) {
+		this.brandId = brandId;
 	}
 
 	public LucBusinessLicenseInfo getBusinessLicenseInfo() {

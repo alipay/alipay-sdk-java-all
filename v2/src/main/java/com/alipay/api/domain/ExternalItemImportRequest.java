@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品录入请求
  *
  * @author auto create
- * @since 1.0, 2026-08-10 11:24:09
+ * @since 1.0, 2026-08-18 22:03:32
  */
 public class ExternalItemImportRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 6797554215456765554L;
+	private static final long serialVersionUID = 1861363163699789571L;
 
 	/**
 	 * 类目ID
@@ -88,6 +88,12 @@ public class ExternalItemImportRequest extends AlipayObject {
 	 */
 	@ApiField("source_product_id")
 	private String sourceProductId;
+
+	/**
+	 * 供应状态
+	 */
+	@ApiField("status")
+	private String status;
 
 	public String getCateId() {
 		return this.cateId;
@@ -164,6 +170,13 @@ public class ExternalItemImportRequest extends AlipayObject {
 	}
 	public void setSourceProductId(String sourceProductId) {
 		this.sourceProductId = sourceProductId;
+	}
+
+	public String getStatus() {
+		return this.status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
 	}
 
 }

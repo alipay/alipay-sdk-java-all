@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-08-06 18:41:14
+ * @since 1.0, 2026-08-18 17:07:55
  */
 public class LubCopyContactWayInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7744312839411578855L;
+	private static final long serialVersionUID = 5229592756176598465L;
 
 	/**
 	 * 联系方式类型

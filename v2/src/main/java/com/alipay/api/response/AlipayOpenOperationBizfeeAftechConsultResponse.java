@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenOperationBizfeeAftechConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7598258543344679941L;
+	private static final long serialVersionUID = 2387679831655812481L;
 
 	/** 
 	 * 收费项计价结果列表（List<POJO>的JSON对象）

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户活动生效
  *
  * @author auto create
- * @since 1.0, 2024-11-29 15:43:51
+ * @since 1.0, 2026-08-18 14:21:35
  */
 public class AlipayOfflineProviderNpromoactivityEffectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3797971536778127332L;
+	private static final long serialVersionUID = 6366121371744158489L;
 
 	/**
 	 * 用户在支付侧参加设备活动的id，服务商在拉取 leads 时获得。

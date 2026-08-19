@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 停车支付信息同步接口
  *
  * @author auto create
- * @since 1.0, 2025-04-22 19:21:18
+ * @since 1.0, 2026-08-18 21:08:21
  */
 public class AlipayCommerceTransportParkingPaymentinfoSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4549474784987269521L;
+	private static final long serialVersionUID = 1646134492212936365L;
 
 	/**
 	 * 支付宝交易号；
@@ -153,7 +153,7 @@ FREE: 免费
 	/**
 	 * 停车服务页面地址。
 1、服务商停车服务页面地址必须是支付宝小程序URL（无需转换https），详见： <a href="https://opendocs.alipay.com/support/01rb18#URL%20%E6%A0%BC%E5%BC%8F "> https://opendocs.alipay.com/support/01rb18#URL%20%E6%A0%BC%E5%BC%8F  </a>
-2、若服务商没有服务链接，可传输支付宝停车官方小程序的服务链接：alipays://platformapi/startapp?appId=2021001102642986&page=pages%2Fparking-fee%2Findex 
+2、若服务链接可沿用入场时提供的服务链接，可以留空。
 3、若此次对接的是无感支付，则服务链接传输为：alipays://platformapi/startapp?appId=2021001102642986&page=%2Fpages%2Fparking-bill%2Findex
 	 */
 	@ApiField("service_url")

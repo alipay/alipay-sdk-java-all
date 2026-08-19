@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 卖进订单创建
  *
  * @author auto create
- * @since 1.0, 2025-09-08 10:45:37
+ * @since 1.0, 2026-08-18 14:17:03
  */
 public class AlipayOfflineProviderNsalesOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4764964595986563135L;
+	private static final long serialVersionUID = 8557825571916435663L;
 
 	/**
 	 * 卖进后设备绑定需要的账号信息列表

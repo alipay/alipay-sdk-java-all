@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMedicalFmBindlistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2789895267183849594L;
+	private static final long serialVersionUID = 3386524493499697799L;
 
 	/** 
 	 * 主账户绑定的亲情账户列表

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class LifeserviceItemCalendarPrice extends AlipayObject {
 
-	private static final long serialVersionUID = 4548115951496997287L;
+	private static final long serialVersionUID = 2467479717996744164L;
 
 	/**
 	 * 按日期定价。如果和星期定价冲突，以日期定价为准。

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalMemberHealthdataQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1843216698928157777L;
+	private static final long serialVersionUID = 1526432865319529759L;
 
 	/**
 	 * {"fieldDesc":"HEALTH_CARD(\"C\", \"默认toC渠道卡\", \"健康卡\"),\n    OPPO(\"OPPO\", \"OPPO渠道卡\", \"OPPO\"),\n    AQ(\"AQ\", \"AQ渠道卡\", \"阿福\"),\n    XIAOMI(\"XIAOMI\", \"小米渠道卡\", \"小米\"),\n    ANT(\"ANT\", \"员福渠道卡\", \"员福\"),\n    MEISHI(\"MEI_SHI\",\"美世渠道卡\", \"美世\"),\n    HONOR(\"HONOR\", \"荣耀渠道卡\", \"荣耀\"),\n    ANT_COMMERCIAL(\"ANT_COMMERCIAL\", \"员福商业化渠道卡\", \"员福商业化渠道\"),","fieldName":"channel","fieldZhName":"会员渠道"}

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.channelinvoice.merchantopen.get response.
  * 
  * @author auto create
- * @since 1.0, 2026-08-03 10:57:48
+ * @since 1.0, 2026-08-18 15:47:49
  */
 public class AlipayCommerceEcChannelinvoiceMerchantopenGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3616731213198927293L;
+	private static final long serialVersionUID = 2587943939392941467L;
 
 	/** 
 	 * 企业名称

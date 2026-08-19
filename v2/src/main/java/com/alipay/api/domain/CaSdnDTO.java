@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CaSdnDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2549751939498889849L;
+	private static final long serialVersionUID = 8271956144686111389L;
 
 	/**
 	 * 所在国家 (Country) 简称：C 字段，只能是国家字母缩写，如中国：CN。由于简称方式不定，不可枚举

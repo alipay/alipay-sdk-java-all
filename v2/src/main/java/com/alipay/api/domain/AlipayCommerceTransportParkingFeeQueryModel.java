@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 停车费查询
  *
  * @author auto create
- * @since 1.0, 2026-08-06 18:41:41
+ * @since 1.0, 2026-08-18 21:47:57
  */
 public class AlipayCommerceTransportParkingFeeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6136535627644123485L;
+	private static final long serialVersionUID = 1527318736312261153L;
 
 	/**
 	 * 用户唯一身份ID
@@ -26,7 +26,7 @@ public class AlipayCommerceTransportParkingFeeQueryModel extends AlipayObject {
 	private String identityType;
 
 	/**
-	 * 查询的车牌号
+	 * 车牌号，与停车事件唯一编码二选一必填
 	 */
 	@ApiField("license_plate_no")
 	private String licensePlateNo;
@@ -36,6 +36,12 @@ public class AlipayCommerceTransportParkingFeeQueryModel extends AlipayObject {
 	 */
 	@ApiField("request_channel")
 	private String requestChannel;
+
+	/**
+	 * 停车事件唯一编码，与车牌号二选一必填
+	 */
+	@ApiField("serial_no")
+	private String serialNo;
 
 	public String getIdentityId() {
 		return this.identityId;
@@ -63,6 +69,13 @@ public class AlipayCommerceTransportParkingFeeQueryModel extends AlipayObject {
 	}
 	public void setRequestChannel(String requestChannel) {
 		this.requestChannel = requestChannel;
+	}
+
+	public String getSerialNo() {
+		return this.serialNo;
+	}
+	public void setSerialNo(String serialNo) {
+		this.serialNo = serialNo;
 	}
 
 }

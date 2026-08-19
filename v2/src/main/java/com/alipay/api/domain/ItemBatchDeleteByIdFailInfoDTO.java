@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ItemBatchDeleteByIdFailInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5167952125798985592L;
+	private static final long serialVersionUID = 5265836952829623625L;
 
 	/**
 	 * 提示信息

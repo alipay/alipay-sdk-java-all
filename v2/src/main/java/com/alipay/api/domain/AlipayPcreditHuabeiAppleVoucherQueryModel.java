@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 苹果NPI会场分期专享额度券查询
  *
  * @author auto create
- * @since 1.0, 2026-08-13 16:29:30
+ * @since 1.0, 2026-08-18 17:40:43
  */
 public class AlipayPcreditHuabeiAppleVoucherQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3439124636686558794L;
+	private static final long serialVersionUID = 1471948391357625119L;
 
 	/**
 	 * 不同活动传不同活动id，本系统根据活动id过滤苹果活动券

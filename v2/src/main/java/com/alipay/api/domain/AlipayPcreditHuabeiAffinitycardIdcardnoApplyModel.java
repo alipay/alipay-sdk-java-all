@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPcreditHuabeiAffinitycardIdcardnoApplyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5567372218357559855L;
+	private static final long serialVersionUID = 1113473912569897714L;
 
 	/**
 	 * 业务场景，hellobike_hb_card-哈罗花呗联名卡

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayTradeCreditBankcardBindModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5223928979653286655L;
+	private static final long serialVersionUID = 4825744219384612783L;
 
 	/**
 	 * 已签约协议号，当redirection_data为空时，此项必填

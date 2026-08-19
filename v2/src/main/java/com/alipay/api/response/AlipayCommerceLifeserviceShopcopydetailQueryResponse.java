@@ -14,11 +14,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.lifeservice.shopcopydetail.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-08-06 18:40:45
+ * @since 1.0, 2026-08-18 17:07:56
  */
 public class AlipayCommerceLifeserviceShopcopydetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4252151678772744547L;
+	private static final long serialVersionUID = 3292461692711244361L;
 
 	/** 
 	 * 授权委托书图片osskey
@@ -31,6 +31,12 @@ public class AlipayCommerceLifeserviceShopcopydetailQueryResponse extends Alipay
 	 */
 	@ApiField("authorization_letter_url")
 	private String authorizationLetterUrl;
+
+	/** 
+	 * 品牌ID
+	 */
+	@ApiField("brand_id")
+	private String brandId;
 
 	/** 
 	 * 营业执照信息
@@ -177,6 +183,13 @@ public class AlipayCommerceLifeserviceShopcopydetailQueryResponse extends Alipay
 	}
 	public String getAuthorizationLetterUrl( ) {
 		return this.authorizationLetterUrl;
+	}
+
+	public void setBrandId(String brandId) {
+		this.brandId = brandId;
+	}
+	public String getBrandId( ) {
+		return this.brandId;
 	}
 
 	public void setBusinessLicenseInfo(LsqBusinessLicenseInfo businessLicenseInfo) {

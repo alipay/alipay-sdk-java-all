@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 营业执照信息
  *
  * @author auto create
- * @since 1.0, 2026-08-06 18:40:45
+ * @since 1.0, 2026-08-18 17:07:56
  */
 public class LsqBusinessLicenseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3232141922993236344L;
+	private static final long serialVersionUID = 3211955556749222577L;
 
 	/**
 	 * 营业执照图片OSS Key

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户子活动状态同步
  *
  * @author auto create
- * @since 1.0, 2024-11-29 15:43:53
+ * @since 1.0, 2026-08-18 14:22:09
  */
 public class AlipayOfflineProviderNpromoactivityStatusSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2413724871921518812L;
+	private static final long serialVersionUID = 4175477375211378843L;
 
 	/**
 	 * 子活动推进业务时间

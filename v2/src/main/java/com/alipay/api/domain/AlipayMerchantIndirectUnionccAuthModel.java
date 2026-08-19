@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayMerchantIndirectUnionccAuthModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2252148578644669314L;
+	private static final long serialVersionUID = 6835887657589529665L;
 
 	/**
 	 * 收单机构在支付宝签约的商户名称，和PID对应。

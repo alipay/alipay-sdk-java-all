@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量商品录入
  *
  * @author auto create
- * @since 1.0, 2026-08-10 11:25:02
+ * @since 1.0, 2026-08-18 22:03:32
  */
 public class AlipayInsSceneInshealthserviceprodMallitembatchCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4758978766117437238L;
+	private static final long serialVersionUID = 4677125727979723362L;
 
 	/**
 	 * 商品批量录入请求

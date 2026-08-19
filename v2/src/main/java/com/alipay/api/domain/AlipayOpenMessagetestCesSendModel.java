@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOpenMessagetestCesSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7484583279782577619L;
+	private static final long serialVersionUID = 4895814389976185759L;
 
 	/**
 	 * 测试

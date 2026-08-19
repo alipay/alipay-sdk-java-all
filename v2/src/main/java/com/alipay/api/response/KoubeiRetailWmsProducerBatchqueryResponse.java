@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class KoubeiRetailWmsProducerBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5818855265367828429L;
+	private static final long serialVersionUID = 7398684363272492869L;
 
 	/** 
 	 * 生产厂商信息

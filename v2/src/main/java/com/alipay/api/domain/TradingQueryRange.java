@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TradingQueryRange extends AlipayObject {
 
-	private static final long serialVersionUID = 6176566896132142317L;
+	private static final long serialVersionUID = 8733313686961731298L;
 
 	/**
 	 * 结束时间的时间戳，单位为毫秒

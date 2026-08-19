@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 卖进订单活动任务激活
  *
  * @author auto create
- * @since 1.0, 2025-01-27 22:47:34
+ * @since 1.0, 2026-08-18 14:12:00
  */
 public class AlipayOfflineProviderNsalesActivityEffectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8751726281487348735L;
+	private static final long serialVersionUID = 8814214355985832233L;
 
 	/**
 	 * 活动设备编号

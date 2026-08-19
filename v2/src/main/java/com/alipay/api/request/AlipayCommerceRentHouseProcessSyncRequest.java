@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.rent.house.process.sync request
  * 
  * @author auto create
- * @since 1.0, 2026-08-17 15:12:49
+ * @since 1.0, 2026-08-18 14:07:51
  */
 public class AlipayCommerceRentHouseProcessSyncRequest implements AlipayRequest<AlipayCommerceRentHouseProcessSyncResponse> {
 

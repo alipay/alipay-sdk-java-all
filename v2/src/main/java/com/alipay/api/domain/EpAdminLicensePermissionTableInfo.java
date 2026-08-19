@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EpAdminLicensePermissionTableInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2416886413219413554L;
+	private static final long serialVersionUID = 1824244386733536979L;
 
 	/**
 	 * 审批类别

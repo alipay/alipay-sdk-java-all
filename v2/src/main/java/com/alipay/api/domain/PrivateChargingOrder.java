@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 充电私桩订单信息
+ * 家庭充电场景，个人桩订单履约单据信息
  *
  * @author auto create
- * @since 1.0, 2025-02-28 11:09:23
+ * @since 1.0, 2026-08-18 16:17:54
  */
 public class PrivateChargingOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 1399383878912396953L;
+	private static final long serialVersionUID = 4856275546232734998L;
 
 	/**
 	 * A相电流，单位A。含直流（输出）。
@@ -32,7 +32,7 @@ public class PrivateChargingOrder extends AlipayObject {
 	private String currentC;
 
 	/**
-	 * 累计电费
+	 * 累计充电电费，单位：元，两位小数
 	 */
 	@ApiField("elec_money")
 	private String elecMoney;
@@ -74,7 +74,7 @@ public class PrivateChargingOrder extends AlipayObject {
 	private String sampleTime;
 
 	/**
-	 * 电池剩余电量
+	 * 车辆电池剩余电量，单位：%
 	 */
 	@ApiField("soc")
 	private String soc;

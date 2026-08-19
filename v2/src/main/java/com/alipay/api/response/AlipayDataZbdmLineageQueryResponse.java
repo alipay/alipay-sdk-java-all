@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataZbdmLineageQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4314384581622378999L;
+	private static final long serialVersionUID = 7655455632233833976L;
 
 	/** 
 	 * 参数名：返回血缘探索的边集合

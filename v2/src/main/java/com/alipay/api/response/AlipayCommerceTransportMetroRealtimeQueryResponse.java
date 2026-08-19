@@ -16,7 +16,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportMetroRealtimeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2621382737876532991L;
+	private static final long serialVersionUID = 6734885688959928797L;
 
 	/** 
 	 * 经纬度信息
