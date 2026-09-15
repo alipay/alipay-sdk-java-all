@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订阅修改
  *
  * @author auto create
- * @since 1.0, 2026-08-27 11:40:33
+ * @since 1.0, 2026-09-11 13:42:54
  */
 public class AlipayTradeSubscriptionModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8812458359195682984L;
+	private static final long serialVersionUID = 8192576714183564191L;
 
 	/**
 	 * 是否在周期结束时取消，仅用于取消/取消后恢复订阅，其他场景无需使用。
@@ -37,6 +37,12 @@ false：CANCEL场景传false表示立即取消并发起退款，REVERT_CANCEL场
 	private String extendParams;
 
 	/**
+	 * 宽限期天数
+	 */
+	@ApiField("grace_period_days")
+	private Long gracePeriodDays;
+
+	/**
 	 * null
 	 */
 	@ApiListField("items")
@@ -46,8 +52,7 @@ false：CANCEL场景传false表示立即取消并发起退款，REVERT_CANCEL场
 	/**
 	 * UPGRADE：升级，DOWNGRADE：降级，
 取消：CANCEL，
-取消后恢复：REVERT_CANCEL，INCREASE_QUANTITY-席位商品数量扩容，DECREASE_QUANTITY-席位商品数量缩容，如若不传则视为UPGRADE，具体使用方式详见接入指南。
-
+取消后恢复：REVERT_CANCEL，INCREASE_QUANTITY-席位商品数量扩容，DECREASE_QUANTITY-席位商品数量缩容，UPDATE_GRACE_PERIOD-修改宽限期天数，如若不传则视为UPGRADE，具体使用方式详见接入指南。
 	 */
 	@ApiField("modify_type")
 	private String modifyType;
@@ -105,6 +110,13 @@ false：重置周期，具体使用方式详见接入指南。
 	}
 	public void setExtendParams(String extendParams) {
 		this.extendParams = extendParams;
+	}
+
+	public Long getGracePeriodDays() {
+		return this.gracePeriodDays;
+	}
+	public void setGracePeriodDays(Long gracePeriodDays) {
+		this.gracePeriodDays = gracePeriodDays;
 	}
 
 	public List<SubscriptionItem> getItems() {

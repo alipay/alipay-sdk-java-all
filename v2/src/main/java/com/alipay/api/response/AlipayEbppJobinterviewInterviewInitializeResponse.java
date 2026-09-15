@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppJobinterviewInterviewInitializeResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2314958981816935271L;
+	private static final long serialVersionUID = 3163423328341164595L;
 
 	/** 
 	 * 候选人本次面试唯一标识,后续接口均需透传

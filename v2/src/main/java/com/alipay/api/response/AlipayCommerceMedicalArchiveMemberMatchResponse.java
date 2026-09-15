@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMedicalArchiveMemberMatchResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6189327314262194276L;
+	private static final long serialVersionUID = 3564587318773529626L;
 
 	/** 
 	 * true-匹配到的档案成员为本人；

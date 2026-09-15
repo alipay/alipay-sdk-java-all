@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBossFncGfcreditcontrolRiskdetectionserviceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1175663616519944357L;
+	private static final long serialVersionUID = 6191387644754849316L;
 
 	/** 
 	 * 风险检测结果

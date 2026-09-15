@@ -7,17 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * 消息配置
+ * 报告出具短信配置
  *
  * @author auto create
- * @since 1.0, 2026-08-26 19:23:14
+ * @since 1.0, 2026-08-21 09:57:07
  */
 public class MessageConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 1885923129657595188L;
+	private static final long serialVersionUID = 6177657916656336821L;
 
 	/**
-	 * null
+	 * 消息分发渠道
 	 */
 	@ApiListField("channels")
 	@ApiField("channels")

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SplitInfoE extends AlipayObject {
 
-	private static final long serialVersionUID = 6428751736551882247L;
+	private static final long serialVersionUID = 7329299497259843641L;
 
 	/**
 	 * 原始期数/月

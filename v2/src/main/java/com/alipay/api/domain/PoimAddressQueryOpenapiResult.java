@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PoimAddressQueryOpenapiResult extends AlipayObject {
 
-	private static final long serialVersionUID = 3651262588319121799L;
+	private static final long serialVersionUID = 3241236757875496412L;
 
 	/**
 	 * 地址数据

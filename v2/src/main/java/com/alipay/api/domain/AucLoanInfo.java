@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AucLoanInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1621717925331538544L;
+	private static final long serialVersionUID = 4239439949615526547L;
 
 	/**
 	 * 资金利率

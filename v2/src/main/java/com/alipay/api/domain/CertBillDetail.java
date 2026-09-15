@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CertBillDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 5657991741329466681L;
+	private static final long serialVersionUID = 8755189988381139436L;
 
 	/**
 	 * 平台接收商家核销请求后的核销处理时间

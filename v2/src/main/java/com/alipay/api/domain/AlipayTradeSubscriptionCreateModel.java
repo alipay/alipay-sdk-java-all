@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订阅创建
  *
  * @author auto create
- * @since 1.0, 2026-08-27 11:41:35
+ * @since 1.0, 2026-09-11 13:42:55
  */
 public class AlipayTradeSubscriptionCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1229998587391969262L;
+	private static final long serialVersionUID = 4224223687175252449L;
 
 	/**
 	 * 客户id，客户创建接口（alipay.trade.customer.create）返回的客户id
@@ -39,6 +39,12 @@ public class AlipayTradeSubscriptionCreateModel extends AlipayObject {
 	 */
 	@ApiField("extend_params")
 	private String extendParams;
+
+	/**
+	 * 宽限期天数：试用期天数设置为非负整数
+	 */
+	@ApiField("grace_period_days")
+	private Long gracePeriodDays;
 
 	/**
 	 * null
@@ -112,6 +118,13 @@ public class AlipayTradeSubscriptionCreateModel extends AlipayObject {
 	}
 	public void setExtendParams(String extendParams) {
 		this.extendParams = extendParams;
+	}
+
+	public Long getGracePeriodDays() {
+		return this.gracePeriodDays;
+	}
+	public void setGracePeriodDays(Long gracePeriodDays) {
+		this.gracePeriodDays = gracePeriodDays;
 	}
 
 	public List<SubscriptionItem> getItems() {

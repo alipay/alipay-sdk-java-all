@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LubLegalCopyPersonInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1175868374221748537L;
+	private static final long serialVersionUID = 3398621728216738832L;
 
 	/**
 	 * 法人身份证反面图片URL

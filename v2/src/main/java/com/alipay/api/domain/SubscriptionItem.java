@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-08-27 11:41:35
+ * @since 1.0, 2026-09-11 13:42:55
  */
 public class SubscriptionItem extends AlipayObject {
 
-	private static final long serialVersionUID = 1126117335533326853L;
+	private static final long serialVersionUID = 3716692329134178587L;
 
 	/**
 	 * 营销创建接口（alipay.trade.promotion.coupon.create）返回的优惠id，使用方式详见具体场景接入指南

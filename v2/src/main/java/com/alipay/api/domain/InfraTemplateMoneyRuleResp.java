@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InfraTemplateMoneyRuleResp extends AlipayObject {
 
-	private static final long serialVersionUID = 7273722577688399493L;
+	private static final long serialVersionUID = 6299661685239247872L;
 
 	/**
 	 * 金额精度，即小数点后保留几位小数

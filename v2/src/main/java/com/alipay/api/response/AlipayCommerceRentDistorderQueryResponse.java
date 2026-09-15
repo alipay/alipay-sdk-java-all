@@ -15,11 +15,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.rent.distorder.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-09-07 16:55:40
+ * @since 1.0, 2026-09-11 10:43:06
  */
 public class AlipayCommerceRentDistorderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6739316951489212752L;
+	private static final long serialVersionUID = 8389697385751754935L;
 
 	/** 
 	 * 是否租三免一订单

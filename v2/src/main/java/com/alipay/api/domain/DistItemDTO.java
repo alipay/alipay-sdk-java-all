@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-09-07 16:55:40
+ * @since 1.0, 2026-09-11 10:43:06
  */
 public class DistItemDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8882149681449333499L;
+	private static final long serialVersionUID = 3882222438819531626L;
 
 	/**
 	 * 渠道商品ID

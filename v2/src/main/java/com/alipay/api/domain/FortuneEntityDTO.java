@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FortuneEntityDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1326456254853366712L;
+	private static final long serialVersionUID = 8125887739622217288L;
 
 	/**
 	 * 详细信息内容

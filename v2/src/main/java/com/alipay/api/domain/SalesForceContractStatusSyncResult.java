@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SalesForceContractStatusSyncResult extends AlipayObject {
 
-	private static final long serialVersionUID = 3364482655792426654L;
+	private static final long serialVersionUID = 5652193894266832267L;
 
 	/**
 	 * 本次接收的合同状态

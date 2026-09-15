@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 批量服务包订单查询
  *
  * @author auto create
- * @since 1.0, 2026-09-09 20:42:52
+ * @since 1.0, 2026-09-11 10:02:54
  */
 public class AlipayCommerceMedicalServicepackageOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3294754733291642527L;
+	private static final long serialVersionUID = 2248982378252623772L;
 
 	/**
 	 * 支付宝uid

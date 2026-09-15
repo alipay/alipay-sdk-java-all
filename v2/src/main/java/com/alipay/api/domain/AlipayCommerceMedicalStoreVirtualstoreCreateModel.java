@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建虚拟门店
  *
  * @author auto create
- * @since 1.0, 2026-04-24 18:02:46
+ * @since 1.0, 2026-09-10 19:10:05
  */
 public class AlipayCommerceMedicalStoreVirtualstoreCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3386769231258276668L;
+	private static final long serialVersionUID = 2319367115593136459L;
 
 	/**
 	 * 渠道

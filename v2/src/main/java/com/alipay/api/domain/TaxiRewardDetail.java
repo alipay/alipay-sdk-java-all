@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TaxiRewardDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3223545275435233183L;
+	private static final long serialVersionUID = 5627189628615952556L;
 
 	/**
 	 * 发奖金额 单位：元

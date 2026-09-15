@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenSpInteopGrouppurchaseCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1597322395975334435L;
+	private static final long serialVersionUID = 6646397495423633845L;
 
 	/** 
 	 * 团购开通失败原因说明

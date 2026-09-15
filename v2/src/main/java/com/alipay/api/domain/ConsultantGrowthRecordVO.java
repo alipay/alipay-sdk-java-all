@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ConsultantGrowthRecordVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3211442972615549432L;
+	private static final long serialVersionUID = 2685464341648161638L;
 
 	/**
 	 * 月龄（由出生日期与recordDate计算）

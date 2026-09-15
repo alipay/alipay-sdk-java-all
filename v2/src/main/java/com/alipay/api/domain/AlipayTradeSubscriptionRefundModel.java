@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 对订阅下指定的已支付交易发起独立退款
+ * 订阅交易独立退款接口
  *
  * @author auto create
- * @since 1.0, 2026-09-07 19:57:53
+ * @since 1.0, 2026-09-11 14:07:53
  */
 public class AlipayTradeSubscriptionRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7169773187837171877L;
+	private static final long serialVersionUID = 8526528324612679296L;
 
 	/**
 	 * 商户退款请求号，用于退款请求幂等。同一笔退款重试时必须保持不变；同一交易发起多次部分退款时，每次须使用不同的请求号

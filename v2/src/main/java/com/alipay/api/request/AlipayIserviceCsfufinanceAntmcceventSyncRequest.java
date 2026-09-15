@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.iservice.csfufinance.antmccevent.sync request
  * 
  * @author auto create
- * @since 1.0, 2025-12-04 10:47:43
+ * @since 1.0, 2026-09-11 10:51:23
  */
 public class AlipayIserviceCsfufinanceAntmcceventSyncRequest implements AlipayRequest<AlipayIserviceCsfufinanceAntmcceventSyncResponse> {
 

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BindApplyResult extends AlipayObject {
 
-	private static final long serialVersionUID = 7667937278115413624L;
+	private static final long serialVersionUID = 1696929893922577819L;
 
 	/**
 	 * 设备申请绑定的当前状态（白名单不带卖进方案）

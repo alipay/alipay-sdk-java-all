@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FreightFlowSpdbSpecParams extends AlipayObject {
 
-	private static final long serialVersionUID = 3759627658468682872L;
+	private static final long serialVersionUID = 2849882142991318113L;
 
 	/**
 	 * 交易地区代码

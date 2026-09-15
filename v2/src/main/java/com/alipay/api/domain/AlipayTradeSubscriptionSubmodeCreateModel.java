@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 创建订阅子模式
  *
  * @author auto create
- * @since 1.0, 2026-08-27 11:41:30
+ * @since 1.0, 2026-09-11 13:47:55
  */
 public class AlipayTradeSubscriptionSubmodeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6377449375346112862L;
+	private static final long serialVersionUID = 8568161663135717689L;
 
 	/**
 	 * 客户创建接口返回的客户唯一标识
@@ -27,6 +27,12 @@ public class AlipayTradeSubscriptionSubmodeCreateModel extends AlipayObject {
 	 */
 	@ApiField("deduct_type")
 	private String deductType;
+
+	/**
+	 * 宽限期天数
+	 */
+	@ApiField("grace_period_days")
+	private Long gracePeriodDays;
 
 	/**
 	 * null
@@ -71,6 +77,13 @@ public class AlipayTradeSubscriptionSubmodeCreateModel extends AlipayObject {
 	}
 	public void setDeductType(String deductType) {
 		this.deductType = deductType;
+	}
+
+	public Long getGracePeriodDays() {
+		return this.gracePeriodDays;
+	}
+	public void setGracePeriodDays(Long gracePeriodDays) {
+		this.gracePeriodDays = gracePeriodDays;
 	}
 
 	public List<SubscriptionSubmodeItem> getItems() {

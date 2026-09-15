@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ThirdPartyRefundExceptionOrderList extends AlipayObject {
 
-	private static final long serialVersionUID = 5213919486842283138L;
+	private static final long serialVersionUID = 1655829423365983455L;
 
 	/**
 	 * null

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CarfinLendApplyStatusNotifyOther extends AlipayObject {
 
-	private static final long serialVersionUID = 2333663227165353319L;
+	private static final long serialVersionUID = 1465715688953359891L;
 
 	/**
 	 * 是否安装GPS

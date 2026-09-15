@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TailoredRiskModelsVO extends AlipayObject {
 
-	private static final long serialVersionUID = 1337174951474191596L;
+	private static final long serialVersionUID = 5712436659181642253L;
 
 	/**
 	 * 长租定制综合风险等级 (D1-D10)

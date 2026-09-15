@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BatchModifyResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 6269882999997993616L;
+	private static final long serialVersionUID = 1168926454659712317L;
 
 	/**
 	 * 数据

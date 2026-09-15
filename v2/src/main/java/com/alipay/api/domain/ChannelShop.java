@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ChannelShop extends AlipayObject {
 
-	private static final long serialVersionUID = 3584549211111564725L;
+	private static final long serialVersionUID = 3273578596611747621L;
 
 	/**
 	 * 蚂蚁门店进件所属阶段

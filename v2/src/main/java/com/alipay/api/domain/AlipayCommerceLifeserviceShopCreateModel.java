@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 安心生活门店创建
  *
  * @author auto create
- * @since 1.0, 2026-08-18 17:07:56
+ * @since 1.0, 2026-09-11 15:32:57
  */
 public class AlipayCommerceLifeserviceShopCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8347579144441479672L;
+	private static final long serialVersionUID = 4371249911112147319L;
 
 	/**
 	 * 授权委托书图片osskey

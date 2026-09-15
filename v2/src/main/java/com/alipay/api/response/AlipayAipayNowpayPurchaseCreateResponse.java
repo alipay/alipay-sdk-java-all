@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayAipayNowpayPurchaseCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7636934958149182276L;
+	private static final long serialVersionUID = 2535345328644765588L;
 
 	/** 
 	 * null

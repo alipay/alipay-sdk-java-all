@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RecycleInspectAnswerVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8111836293167275215L;
+	private static final long serialVersionUID = 5641289712952372818L;
 
 	/**
 	 * 答案的类型

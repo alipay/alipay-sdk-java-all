@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AdConversion extends AlipayObject {
 
-	private static final long serialVersionUID = 4429816759186566453L;
+	private static final long serialVersionUID = 8875945698356243217L;
 
 	/**
 	 * 资产类型代码(asset)。标识广告投放在哪个端/载体

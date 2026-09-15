@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RentTradeFundBillVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3349985647923741422L;
+	private static final long serialVersionUID = 3492587978418244978L;
 
 	/**
 	 * 该支付工具类型所使用的金额

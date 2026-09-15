@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.industry.promo.consult request
  * 
  * @author auto create
- * @since 1.0, 2026-05-27 16:54:56
+ * @since 1.0, 2026-09-11 10:21:05
  */
 public class AlipayCommerceTransportIndustryPromoConsultRequest implements AlipayRequest<AlipayCommerceTransportIndustryPromoConsultResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LsqBusinessLicenseInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7688358471348762453L;
+	private static final long serialVersionUID = 7367879715123483488L;
 
 	/**
 	 * 营业执照图片OSS Key

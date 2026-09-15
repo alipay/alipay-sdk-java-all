@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayEbppInstserviceCpaNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2296998281612231483L;
+	private static final long serialVersionUID = 4317427656223567111L;
 
 	/**
 	 * 该值是CPA任务投放全链路进行唯一归因的标记。

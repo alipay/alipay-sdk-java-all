@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenPublicContactFollowBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7484762567498757493L;
+	private static final long serialVersionUID = 1168442466787284542L;
 
 	/** 
 	 * 联系人关注者列表

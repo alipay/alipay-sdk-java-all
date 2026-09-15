@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IndrISVAddressDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6132573347692281714L;
+	private static final long serialVersionUID = 7411911792652486976L;
 
 	/**
 	 * 长度100，如果为中文，支付宝侧会做英文翻译，翻译后的地址也需要长度小于100，不能包含特殊字符

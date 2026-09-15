@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayBossProdAntlescenterDocusignmultiCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4276446718368872149L;
+	private static final long serialVersionUID = 5593991343769463555L;
 
 	/**
 	 * 业务单据号

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayCommerceEducateWhiteuserDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4879868831454754554L;
+	private static final long serialVersionUID = 7348526152777153322L;
 
 	/**
 	 * 机构内标

@@ -17,7 +17,7 @@ type	类型描述	扩展属性
  */
 public class RoboExtendInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4723682915429633555L;
+	private static final long serialVersionUID = 1128539498429294238L;
 
 	/**
 	 * 补充属性key

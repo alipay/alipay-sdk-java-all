@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayMarketingCampaignPrizepoolPrizeCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8619531865185945485L;
+	private static final long serialVersionUID = 8876617421664119114L;
 
 	/**
 	 * 当预算类型是数量时，该值表示个数

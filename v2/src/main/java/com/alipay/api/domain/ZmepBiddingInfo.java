@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ZmepBiddingInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6738114716878352715L;
+	private static final long serialVersionUID = 5364443329857378515L;
 
 	/**
 	 * 代理机构

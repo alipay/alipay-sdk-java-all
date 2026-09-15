@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.csfu.servicehall.sync response.
  * 
  * @author auto create
- * @since 1.0, 2025-10-16 18:02:40
+ * @since 1.0, 2026-09-11 10:51:25
  */
 public class AlipayIserviceCsfuServicehallSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7418799955645967862L;
+	private static final long serialVersionUID = 3185395134895376642L;
 
 	/** 
 	 * 对话动作 VobotReActionEnum

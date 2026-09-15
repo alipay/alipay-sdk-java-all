@@ -7,17 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * null
+ * 星期固定价规则
  *
  * @author auto create
- * @since 1.0, 2026-09-09 11:12:53
+ * @since 1.0, 2026-09-08 19:08:47
  */
 public class MerchantCardTemplatePriceWeek extends AlipayObject {
 
-	private static final long serialVersionUID = 4632649771248189841L;
+	private static final long serialVersionUID = 4496616113465681635L;
 
 	/**
-	 * null
+	 * 适用的星期列表，1至7分别表示周一至周日。
 	 */
 	@ApiListField("days_of_week")
 	@ApiField("string")

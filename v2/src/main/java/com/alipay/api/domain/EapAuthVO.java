@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EapAuthVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2741377939536389589L;
+	private static final long serialVersionUID = 1323175176356856531L;
 
 	/**
 	 * 该参数用来标识团餐所属组织，是根据用户corp按照组织归属转换得来，供应商会依据此参数合计账单。

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AntfortuneYebAssetOrderQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3643134492838743816L;
+	private static final long serialVersionUID = 2377273542976715416L;
 
 	/**
 	 * 用户UserId在应用AppId下的唯一用户标识

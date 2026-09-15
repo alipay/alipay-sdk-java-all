@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayDataDataserviceAdcampaignAppeaseBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8453828184891579623L;
+	private static final long serialVersionUID = 5154686471759182392L;
 
 	/**
 	 * 选择的创意交互动作类型需从接口获取，该字段类型从前置模版配置接口获取当前创意可提交的落地页类型 alipay.data.dataservice.adcampaign.actionandtemplate.query

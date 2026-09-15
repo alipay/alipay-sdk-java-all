@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AutohomeDealStatusModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7873327634434394528L;
+	private static final long serialVersionUID = 8767461476526469886L;
 
 	/**
 	 * 留资选择品牌

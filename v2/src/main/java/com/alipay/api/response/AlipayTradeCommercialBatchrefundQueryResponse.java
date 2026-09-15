@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.trade.commercial.batchrefund.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-06-03 14:27:32
+ * @since 1.0, 2026-09-11 13:12:55
  */
 public class AlipayTradeCommercialBatchrefundQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5571977477446696915L;
+	private static final long serialVersionUID = 5258331212597547168L;
 
 	/** 
 	 * 实际退款金额，已成功明细的退款金额之和，单位：元

@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceLogisticsPointTagOfflineModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7441133892114776797L;
+	private static final long serialVersionUID = 8851952747525668245L;
 
 	/**
 	 * 物流行业线圈ID

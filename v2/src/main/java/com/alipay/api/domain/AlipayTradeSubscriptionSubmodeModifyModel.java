@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 修改订阅子模式
  *
  * @author auto create
- * @since 1.0, 2026-08-28 12:30:48
+ * @since 1.0, 2026-09-11 13:42:55
  */
 public class AlipayTradeSubscriptionSubmodeModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7143145237678266119L;
+	private static final long serialVersionUID = 3594632372644788718L;
 
 	/**
 	 * 是否在周期结束时取消，仅用于取消/取消后恢复订阅：CANCEL传true表示周期末取消，传false表示立即取消并发起退款；REVERT_CANCEL需传false
@@ -41,6 +41,12 @@ public class AlipayTradeSubscriptionSubmodeModifyModel extends AlipayObject {
 	private String extendParams;
 
 	/**
+	 * 宽限期天数
+	 */
+	@ApiField("grace_period_days")
+	private Long gracePeriodDays;
+
+	/**
 	 * null
 	 */
 	@ApiListField("items")
@@ -48,7 +54,7 @@ public class AlipayTradeSubscriptionSubmodeModifyModel extends AlipayObject {
 	private List<SubscriptionSubmodeItem> items;
 
 	/**
-	 * UPGRADE-升级，DOWNGRADE-降级，CANCEL-取消，REVERT_CANCEL-取消后恢复；不传视为UPGRADE。Submode不支持INCREASE_QUANTITY/DECREASE_QUANTITY，容量变化请提交完整价格商品对象并使用UPGRADE/DOWNGRADE
+	 * UPGRADE-升级，DOWNGRADE-降级，CANCEL-取消，REVERT_CANCEL-取消后恢复，UPDATE_GRACE_PERIOD-修改宽限期天数；不传视为UPGRADE。Submode不支持INCREASE_QUANTITY/DECREASE_QUANTITY，容量变化请提交完整价格商品对象并使用UPGRADE/DOWNGRADE
 	 */
 	@ApiField("modify_type")
 	private String modifyType;
@@ -109,6 +115,13 @@ public class AlipayTradeSubscriptionSubmodeModifyModel extends AlipayObject {
 	}
 	public void setExtendParams(String extendParams) {
 		this.extendParams = extendParams;
+	}
+
+	public Long getGracePeriodDays() {
+		return this.gracePeriodDays;
+	}
+	public void setGracePeriodDays(Long gracePeriodDays) {
+		this.gracePeriodDays = gracePeriodDays;
 	}
 
 	public List<SubscriptionSubmodeItem> getItems() {

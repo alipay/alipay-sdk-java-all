@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ResourceAihrInterviewRoomCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4213896157849764532L;
+	private static final long serialVersionUID = 5338622771461688494L;
 
 	/** 
 	 * 面试间ID

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class RobbyOpenTaskCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4528949681168749969L;
+	private static final long serialVersionUID = 2232781187431132298L;
 
 	
 

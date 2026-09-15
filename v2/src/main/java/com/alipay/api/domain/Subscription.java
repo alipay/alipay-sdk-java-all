@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-08-27 11:41:18
+ * @since 1.0, 2026-09-11 13:42:55
  */
 public class Subscription extends AlipayObject {
 
-	private static final long serialVersionUID = 5261561716896276951L;
+	private static final long serialVersionUID = 3879931693655285661L;
 
 	/**
 	 * true - 周期结束状态生效
@@ -64,6 +64,18 @@ false - 周期结束依旧生效
 	 */
 	@ApiField("effective_type")
 	private String effectiveType;
+
+	/**
+	 * 宽限期天数
+	 */
+	@ApiField("grace_period_days")
+	private Long gracePeriodDays;
+
+	/**
+	 * 宽限期结束时间
+	 */
+	@ApiField("grace_period_end")
+	private String gracePeriodEnd;
 
 	/**
 	 * null
@@ -175,6 +187,20 @@ false - 周期结束依旧生效
 	}
 	public void setEffectiveType(String effectiveType) {
 		this.effectiveType = effectiveType;
+	}
+
+	public Long getGracePeriodDays() {
+		return this.gracePeriodDays;
+	}
+	public void setGracePeriodDays(Long gracePeriodDays) {
+		this.gracePeriodDays = gracePeriodDays;
+	}
+
+	public String getGracePeriodEnd() {
+		return this.gracePeriodEnd;
+	}
+	public void setGracePeriodEnd(String gracePeriodEnd) {
+		this.gracePeriodEnd = gracePeriodEnd;
 	}
 
 	public List<SubscriptionQueryItem> getItems() {
