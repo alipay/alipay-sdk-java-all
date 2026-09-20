@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.thirdparty.order.refund response.
  * 
  * @author auto create
- * @since 1.0, 2026-09-10 15:57:54
+ * @since 1.0, 2026-09-15 10:47:56
  */
 public class AlipayMarketingThirdpartyOrderRefundResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2391618891124358293L;
+	private static final long serialVersionUID = 8569317988761867785L;
 
 	/** 
 	 * 退款处理失败订单数

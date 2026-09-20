@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CardTemplateUse extends AlipayObject {
 
-	private static final long serialVersionUID = 1346643426187445941L;
+	private static final long serialVersionUID = 4564484983244122297L;
 
 	/**
 	 * 日历价格 当前字段已废弃(动态定价请使用：alipay.commerce.merchantcard.templateprice.set)

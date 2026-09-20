@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CreditPayOrderInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8832576541612142676L;
+	private static final long serialVersionUID = 1737349462845495481L;
 
 	/**
 	 * 外部平台订单号，如果传给支付宝收单时带着前缀，此处也需要

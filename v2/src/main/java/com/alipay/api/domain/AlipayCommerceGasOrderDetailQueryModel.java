@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 加油订单信息查询
  *
  * @author auto create
- * @since 1.0, 2025-12-03 14:54:56
+ * @since 1.0, 2026-09-18 12:16:05
  */
 public class AlipayCommerceGasOrderDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7283549548685519194L;
+	private static final long serialVersionUID = 2831135698736538548L;
 
 	/**
 	 * 支付宝订单号

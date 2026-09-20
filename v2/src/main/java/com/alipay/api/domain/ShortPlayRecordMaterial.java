@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 短剧备案材料信息。
  *
  * @author auto create
- * @since 1.0, 2026-09-04 10:58:40
+ * @since 1.0, 2026-09-16 16:43:03
  */
 public class ShortPlayRecordMaterial extends AlipayObject {
 
-	private static final long serialVersionUID = 6519564837714888623L;
+	private static final long serialVersionUID = 2466144923423648225L;
 
 	/**
 	 * 演员列表。
@@ -49,7 +49,7 @@ public class ShortPlayRecordMaterial extends AlipayObject {
 	private Long avgDuration;
 
 	/**
-	 * 特殊声明。null 或不传：无；0：该剧内容由 AI 生成；1：该剧有未成年出演
+	 * 特殊声明。无：0；该剧内容由 AI 生成：1；该剧有未成年出演：2
 	 */
 	@ApiField("content_declared")
 	private String contentDeclared;
@@ -111,7 +111,7 @@ public class ShortPlayRecordMaterial extends AlipayObject {
 	private Long seqsCount;
 
 	/**
-	 * 短剧简介，最少 300 个字
+	 * 短剧简介，最少 200 个字
 	 */
 	@ApiField("summary")
 	private String summary;

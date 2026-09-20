@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.thirdparty.refund.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-09-10 15:57:54
+ * @since 1.0, 2026-09-15 10:47:56
  */
 public class AlipayMarketingThirdpartyRefundQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3632316885634512437L;
+	private static final long serialVersionUID = 3463739232337624569L;
 
 	/** 
 	 * 当前页码

@@ -11,6 +11,7 @@ import com.alipay.api.domain.YpzMedAccompanyCardOne;
 import com.alipay.api.domain.YpzNpsCardOne;
 import com.alipay.api.domain.YpzOfflineQrCodeCardOne;
 import com.alipay.api.domain.YpzQaCardOne;
+import com.alipay.api.domain.YpzServiceDetailCard;
 
 import com.alipay.api.AlipayResponse;
 
@@ -18,17 +19,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.ypz.recommendcard.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-09-08 21:14:39
+ * @since 1.0, 2026-09-17 14:27:55
  */
 public class AlipayCommerceMedicalYpzRecommendcardQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2765314965918573699L;
+	private static final long serialVersionUID = 2234317634683515343L;
 
 	/** 
 	 * 阿福带下载卡
 	 */
 	@ApiField("afu_download_card")
 	private YpzAfuDownloadCardOne afuDownloadCard;
+
+	/** 
+	 * 卡使用的页面
+	 */
+	@ApiField("card_page")
+	private String cardPage;
 
 	/** 
 	 * 云陪诊云配药卡
@@ -79,11 +86,25 @@ public class AlipayCommerceMedicalYpzRecommendcardQueryResponse extends AlipayRe
 	@ApiField("qa_card")
 	private YpzQaCardOne qaCard;
 
+	/** 
+	 * null
+	 */
+	@ApiListField("service_card_list")
+	@ApiField("ypz_service_detail_card")
+	private List<YpzServiceDetailCard> serviceCardList;
+
 	public void setAfuDownloadCard(YpzAfuDownloadCardOne afuDownloadCard) {
 		this.afuDownloadCard = afuDownloadCard;
 	}
 	public YpzAfuDownloadCardOne getAfuDownloadCard( ) {
 		return this.afuDownloadCard;
+	}
+
+	public void setCardPage(String cardPage) {
+		this.cardPage = cardPage;
+	}
+	public String getCardPage( ) {
+		return this.cardPage;
 	}
 
 	public void setCloudDispenseMedicineCard(YpzCloudDispenseMedicineCardOne cloudDispenseMedicineCard) {
@@ -140,6 +161,13 @@ public class AlipayCommerceMedicalYpzRecommendcardQueryResponse extends AlipayRe
 	}
 	public YpzQaCardOne getQaCard( ) {
 		return this.qaCard;
+	}
+
+	public void setServiceCardList(List<YpzServiceDetailCard> serviceCardList) {
+		this.serviceCardList = serviceCardList;
+	}
+	public List<YpzServiceDetailCard> getServiceCardList( ) {
+		return this.serviceCardList;
 	}
 
 }

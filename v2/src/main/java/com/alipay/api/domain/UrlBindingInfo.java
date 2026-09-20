@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class UrlBindingInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1293592887876714167L;
+	private static final long serialVersionUID = 3739523563825556163L;
 
 	/**
 	 * 是否已申请线圈

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.transport.airticket.tobprice.query request
  * 
  * @author auto create
- * @since 1.0, 2025-10-21 17:24:47
+ * @since 1.0, 2026-09-17 18:12:53
  */
 public class AlipayCommerceTransportAirticketTobpriceQueryRequest implements AlipayRequest<AlipayCommerceTransportAirticketTobpriceQueryResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RiskNotifyExtInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1335633756367737469L;
+	private static final long serialVersionUID = 5882761481731484883L;
 
 	/**
 	 * 同步的消息ID

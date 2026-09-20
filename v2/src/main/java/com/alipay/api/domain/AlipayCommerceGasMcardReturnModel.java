@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 会员卡退卡接口
  *
  * @author auto create
- * @since 1.0, 2025-12-30 16:12:43
+ * @since 1.0, 2026-09-18 13:31:37
  */
 public class AlipayCommerceGasMcardReturnModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8533625632398353535L;
+	private static final long serialVersionUID = 6139886287373186353L;
 
 	/**
 	 * 小程序id

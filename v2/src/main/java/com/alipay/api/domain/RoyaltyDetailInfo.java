@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class RoyaltyDetailInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8334752477999743236L;
+	private static final long serialVersionUID = 5189711376325179747L;
 
 	/**
 	 * 分账金额，单位为元

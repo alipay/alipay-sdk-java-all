@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 银行代发开立外标卡接口
  *
  * @author auto create
- * @since 1.0, 2026-04-15 20:57:45
+ * @since 1.0, 2026-09-18 00:05:22
  */
 public class AlipayFundUserInstcardGetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1232337112712286894L;
+	private static final long serialVersionUID = 2416963786382314294L;
 
 	/**
 	 * 根据实际业务，转账场景传以下8大场景其中之一：

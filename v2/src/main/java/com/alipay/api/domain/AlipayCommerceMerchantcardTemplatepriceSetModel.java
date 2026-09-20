@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品动态价格设置
  *
  * @author auto create
- * @since 1.0, 2026-09-11 10:47:06
+ * @since 1.0, 2026-09-15 10:55:39
  */
 public class AlipayCommerceMerchantcardTemplatepriceSetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4289343747357325146L;
+	private static final long serialVersionUID = 3387736787344781334L;
 
 	/**
 	 * 普通日历价配置，至少包含一条星期固定价或日期固定价。

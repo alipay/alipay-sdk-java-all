@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.security.risk.hide.deviceid.query request
  * 
  * @author auto create
- * @since 1.0, 2025-08-13 14:57:40
+ * @since 1.0, 2026-09-15 14:54:55
  */
 public class AlipaySecurityRiskHideDeviceidQueryRequest implements AlipayRequest<AlipaySecurityRiskHideDeviceidQueryResponse> {
 

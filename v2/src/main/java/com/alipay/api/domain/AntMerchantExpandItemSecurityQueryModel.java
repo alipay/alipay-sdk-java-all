@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品查询
  *
  * @author auto create
- * @since 1.0, 2024-10-10 14:21:05
+ * @since 1.0, 2026-09-11 18:25:12
  */
 public class AntMerchantExpandItemSecurityQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6535118148749327917L;
+	private static final long serialVersionUID = 8771337724379837292L;
 
 	/**
 	 * 前台类目ID

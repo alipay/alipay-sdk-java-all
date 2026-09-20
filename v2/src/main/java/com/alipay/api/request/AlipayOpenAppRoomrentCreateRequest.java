@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.roomrent.create request
  * 
  * @author auto create
- * @since 1.0, 2025-06-13 10:18:14
+ * @since 1.0, 2026-09-11 18:09:51
  */
 public class AlipayOpenAppRoomrentCreateRequest implements AlipayRequest<AlipayOpenAppRoomrentCreateResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NursingVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3538123575674354919L;
+	private static final long serialVersionUID = 5655425548597762969L;
 
 	/**
 	 * 履约单号

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发货物流信息
  *
  * @author auto create
- * @since 1.0, 2026-09-11 10:43:06
+ * @since 1.0, 2026-09-11 23:27:50
  */
 public class DistLogisticsInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2385154945354498537L;
+	private static final long serialVersionUID = 7479733798371217623L;
 
 	/**
 	 * 快递公司名称

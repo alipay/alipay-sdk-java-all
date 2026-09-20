@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订阅修改
  *
  * @author auto create
- * @since 1.0, 2026-09-11 13:42:54
+ * @since 1.0, 2026-09-18 17:32:54
  */
 public class AlipayTradeSubscriptionModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8192576714183564191L;
+	private static final long serialVersionUID = 2518671362685879721L;
 
 	/**
 	 * 是否在周期结束时取消，仅用于取消/取消后恢复订阅，其他场景无需使用。
@@ -52,10 +52,16 @@ false：CANCEL场景传false表示立即取消并发起退款，REVERT_CANCEL场
 	/**
 	 * UPGRADE：升级，DOWNGRADE：降级，
 取消：CANCEL，
-取消后恢复：REVERT_CANCEL，INCREASE_QUANTITY-席位商品数量扩容，DECREASE_QUANTITY-席位商品数量缩容，UPDATE_GRACE_PERIOD-修改宽限期天数，如若不传则视为UPGRADE，具体使用方式详见接入指南。
+取消后恢复：REVERT_CANCEL，INCREASE_QUANTITY-席位商品数量扩容，DECREASE_QUANTITY-席位商品数量缩容，UPDATE_GRACE_PERIOD-修改宽限期天数，ADJUST_BILLING-修改下一期金额，如若不传则视为UPGRADE，具体使用方式详见接入指南。
 	 */
 	@ApiField("modify_type")
 	private String modifyType;
+
+	/**
+	 * 自定义下一期扣款金额（单位：分）。必须不高于商品原价，传0表示下期免费。modify_type为ADJUST_BILLING时，与 coupon_id 至少传一项，若同时传，则下期扣款金额以next_billing_amount为准，coupon_id仅影响后续周期（除下一期）的扣款金额
+	 */
+	@ApiField("next_billing_amount")
+	private Long nextBillingAmount;
 
 	/**
 	 * 支付金额，单位分； 仅用于商户自定义金额，若传了该值，用户实际支付金额会以该值为准，目前仅用于普通订阅升级场景，具体使用方式详见接入指南。
@@ -131,6 +137,13 @@ false：重置周期，具体使用方式详见接入指南。
 	}
 	public void setModifyType(String modifyType) {
 		this.modifyType = modifyType;
+	}
+
+	public Long getNextBillingAmount() {
+		return this.nextBillingAmount;
+	}
+	public void setNextBillingAmount(Long nextBillingAmount) {
+		this.nextBillingAmount = nextBillingAmount;
 	}
 
 	public Long getPayAmount() {

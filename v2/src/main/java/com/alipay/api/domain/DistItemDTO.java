@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-09-11 10:43:06
+ * @since 1.0, 2026-09-11 23:27:50
  */
 public class DistItemDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 3882222438819531626L;
+	private static final long serialVersionUID = 4294198172669865666L;
 
 	/**
 	 * 渠道商品ID
@@ -42,6 +42,12 @@ public class DistItemDTO extends AlipayObject {
 	 */
 	@ApiField("item_cnt")
 	private Long itemCnt;
+
+	/**
+	 * 原始商品押金，单位元
+	 */
+	@ApiField("item_deposit_price")
+	private String itemDepositPrice;
 
 	/**
 	 * 商品库itemId
@@ -100,6 +106,13 @@ public class DistItemDTO extends AlipayObject {
 	}
 	public void setItemCnt(Long itemCnt) {
 		this.itemCnt = itemCnt;
+	}
+
+	public String getItemDepositPrice() {
+		return this.itemDepositPrice;
+	}
+	public void setItemDepositPrice(String itemDepositPrice) {
+		this.itemDepositPrice = itemDepositPrice;
 	}
 
 	public String getItemId() {

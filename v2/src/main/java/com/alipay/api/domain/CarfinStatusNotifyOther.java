@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CarfinStatusNotifyOther extends AlipayObject {
 
-	private static final long serialVersionUID = 1424284612762585821L;
+	private static final long serialVersionUID = 8631345781391652491L;
 
 	/**
 	 * 是否事故车

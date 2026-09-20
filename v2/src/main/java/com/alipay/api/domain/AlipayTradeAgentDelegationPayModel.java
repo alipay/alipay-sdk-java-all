@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 智能体委托支付接口
  *
  * @author auto create
- * @since 1.0, 2026-08-18 19:39:00
+ * @since 1.0, 2026-09-14 14:44:39
  */
 public class AlipayTradeAgentDelegationPayModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8768655546526471966L;
+	private static final long serialVersionUID = 1589955114492116242L;
 
 	/**
 	 * 智能体id

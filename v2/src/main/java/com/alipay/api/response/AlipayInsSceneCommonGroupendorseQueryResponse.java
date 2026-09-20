@@ -11,17 +11,23 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.common.groupendorse.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-09-03 17:57:07
+ * @since 1.0, 2026-09-17 19:12:53
  */
 public class AlipayInsSceneCommonGroupendorseQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3899671371498591131L;
+	private static final long serialVersionUID = 2799373387326394445L;
 
 	/** 
 	 * 子批单的实付保费;单位分
 	 */
 	@ApiField("endorse_fee")
 	private Long endorseFee;
+
+	/** 
+	 * 未返回保司批单回执则表示当前批单处于在途状态
+	 */
+	@ApiField("instinfo_serial_no")
+	private String instinfoSerialNo;
 
 	/** 
 	 * 外部业务号
@@ -65,6 +71,13 @@ public class AlipayInsSceneCommonGroupendorseQueryResponse extends AlipayRespons
 	}
 	public Long getEndorseFee( ) {
 		return this.endorseFee;
+	}
+
+	public void setInstinfoSerialNo(String instinfoSerialNo) {
+		this.instinfoSerialNo = instinfoSerialNo;
+	}
+	public String getInstinfoSerialNo( ) {
+		return this.instinfoSerialNo;
 	}
 
 	public void setOutBizNo(String outBizNo) {

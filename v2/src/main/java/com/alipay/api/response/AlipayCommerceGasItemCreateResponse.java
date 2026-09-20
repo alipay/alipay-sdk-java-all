@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.gas.item.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-03 14:49:15
+ * @since 1.0, 2026-09-18 12:18:20
  */
 public class AlipayCommerceGasItemCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3688741851277431734L;
+	private static final long serialVersionUID = 2343584522182789984L;
 
 	/** 
 	 * 支付宝加油系统商品id

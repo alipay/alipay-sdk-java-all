@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 外部商品库存信息同步接口
  *
  * @author auto create
- * @since 1.0, 2018-11-28 22:08:44
+ * @since 1.0, 2026-09-11 18:22:34
  */
 public class AlipayBusinessItemInventoryExternalSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1615665371457487277L;
+	private static final long serialVersionUID = 2347863781429935396L;
 
 	/**
 	 * 商品库存信息列表

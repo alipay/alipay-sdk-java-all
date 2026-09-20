@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TrafficAirticketOrderCommodityInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2587826318665668237L;
+	private static final long serialVersionUID = 1695839565559832751L;
 
 	/**
 	 * 商品唯一编号，建议按照如下规则：

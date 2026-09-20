@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.gas.mcard.return response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-30 16:12:43
+ * @since 1.0, 2026-09-18 13:31:37
  */
 public class AlipayCommerceGasMcardReturnResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5768493283432198443L;
+	private static final long serialVersionUID = 8816591917365188252L;
 
 	
 

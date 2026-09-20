@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.marketing.imagedirectory.create response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-16 14:17:54
+ * @since 1.0, 2026-09-11 18:17:24
  */
 public class AlipayMarketingImagedirectoryCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8276281165299549789L;
+	private static final long serialVersionUID = 1485815697461714571L;
 
 	/** 
 	 * 创建后的目录id。

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.gas.item.modify response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-10 17:12:42
+ * @since 1.0, 2026-09-18 12:15:01
  */
 public class AlipayCommerceGasItemModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2385171236264591181L;
+	private static final long serialVersionUID = 2658829327419829498L;
 
 	/** 
 	 * 商品id

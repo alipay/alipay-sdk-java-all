@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class OpenCrowdOperationNodeRequest extends AlipayObject {
 
-	private static final long serialVersionUID = 1159999688544448784L;
+	private static final long serialVersionUID = 2688694951294859964L;
 
 	/**
 	 * 如果计算节点类型是「tag 标签」，则传入「标签编码」，如果计算节点类型是「crowd 人群」，则传入「人群编码」

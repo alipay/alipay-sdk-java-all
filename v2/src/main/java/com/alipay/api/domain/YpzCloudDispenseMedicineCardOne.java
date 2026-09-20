@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 云陪诊云配药卡
  *
  * @author auto create
- * @since 1.0, 2026-09-08 21:14:39
+ * @since 1.0, 2026-09-17 14:27:55
  */
 public class YpzCloudDispenseMedicineCardOne extends AlipayObject {
 
-	private static final long serialVersionUID = 4536152245638279345L;
+	private static final long serialVersionUID = 8789986826751223121L;
 
 	/**
 	 * 主按钮跳转地址

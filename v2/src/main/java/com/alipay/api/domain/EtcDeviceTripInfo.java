@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EtcDeviceTripInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1281255774285911439L;
+	private static final long serialVersionUID = 8489448914148959483L;
 
 	/**
 	 * 行程记录唯一流水号

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.gas.barcode.inst.certify response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-03 14:59:56
+ * @since 1.0, 2026-09-18 13:32:06
  */
 public class AlipayCommerceGasBarcodeInstCertifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6554462152678994727L;
+	private static final long serialVersionUID = 2582874688531554822L;
 
 	/** 
 	 * 机构支付验证动态码

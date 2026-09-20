@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 履约检查检验数据
  *
  * @author auto create
- * @since 1.0, 2026-07-09 10:44:42
+ * @since 1.0, 2026-09-15 12:29:08
  */
 public class Examination extends AlipayObject {
 
-	private static final long serialVersionUID = 4363567767121587899L;
+	private static final long serialVersionUID = 3236711686182211775L;
 
 	/**
 	 * 应用id
@@ -49,6 +49,12 @@ public class Examination extends AlipayObject {
 	 */
 	@ApiField("check_info")
 	private ExaminationCheckInfo checkInfo;
+
+	/**
+	 * 履约单关闭类型：1-用户主动取消订单(未支付)、2-未支付超时自动取消(未支付)、3-结算失败（支付后）、4-用户主动退款（支付后）医嘱状态不动
+	 */
+	@ApiField("close_type")
+	private Long closeType;
 
 	/**
 	 * 收货信息
@@ -162,6 +168,13 @@ public class Examination extends AlipayObject {
 	}
 	public void setCheckInfo(ExaminationCheckInfo checkInfo) {
 		this.checkInfo = checkInfo;
+	}
+
+	public Long getCloseType() {
+		return this.closeType;
+	}
+	public void setCloseType(Long closeType) {
+		this.closeType = closeType;
 	}
 
 	public ExaminationDeliverInfo getDeliverInfo() {

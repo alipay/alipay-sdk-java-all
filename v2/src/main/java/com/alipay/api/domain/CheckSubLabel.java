@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CheckSubLabel extends AlipayObject {
 
-	private static final long serialVersionUID = 1311236617489712935L;
+	private static final long serialVersionUID = 1221238478133479551L;
 
 	/**
 	 * 置信度分数：0-100之间取值，100为置信度最高，0为置信度最低

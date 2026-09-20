@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DepositQueryOpenResult extends AlipayObject {
 
-	private static final long serialVersionUID = 7798889651135664258L;
+	private static final long serialVersionUID = 5211697415849424448L;
 
 	/**
 	 * 出资账户名称

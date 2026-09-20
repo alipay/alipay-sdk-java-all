@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租赁订单创建
  *
  * @author auto create
- * @since 1.0, 2026-09-02 14:23:21
+ * @since 1.0, 2026-09-16 19:51:40
  */
 public class AlipayCommerceRentOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3828811288361796587L;
+	private static final long serialVersionUID = 7416191696936545684L;
 
 	/**
 	 * 优惠前置咨询组件返回的优惠活动咨询ID
@@ -71,6 +71,12 @@ public class AlipayCommerceRentOrderCreateModel extends AlipayObject {
 	private RentOrderDeliveryInfoDTO deliveryInfo;
 
 	/**
+	 * 租赁企业信息
+	 */
+	@ApiField("enterprise_info")
+	private OrderModifyEnterpriseInfoOpenApiVO enterpriseInfo;
+
+	/**
 	 * 外部场景商户信息
 	 */
 	@ApiField("external_scenarios_merchant")
@@ -94,6 +100,12 @@ public class AlipayCommerceRentOrderCreateModel extends AlipayObject {
 	 */
 	@ApiField("offline_shopping_info")
 	private RentOfflineShoppingDTO offlineShoppingInfo;
+
+	/**
+	 * 订单发货地址
+	 */
+	@ApiField("order_shipping_address")
+	private RentOrderShipperAddressInfoDTO orderShippingAddress;
 
 	/**
 	 * 订单类型
@@ -254,6 +266,13 @@ public class AlipayCommerceRentOrderCreateModel extends AlipayObject {
 		this.deliveryInfo = deliveryInfo;
 	}
 
+	public OrderModifyEnterpriseInfoOpenApiVO getEnterpriseInfo() {
+		return this.enterpriseInfo;
+	}
+	public void setEnterpriseInfo(OrderModifyEnterpriseInfoOpenApiVO enterpriseInfo) {
+		this.enterpriseInfo = enterpriseInfo;
+	}
+
 	public ExternalScenariosMerchantDTO getExternalScenariosMerchant() {
 		return this.externalScenariosMerchant;
 	}
@@ -280,6 +299,13 @@ public class AlipayCommerceRentOrderCreateModel extends AlipayObject {
 	}
 	public void setOfflineShoppingInfo(RentOfflineShoppingDTO offlineShoppingInfo) {
 		this.offlineShoppingInfo = offlineShoppingInfo;
+	}
+
+	public RentOrderShipperAddressInfoDTO getOrderShippingAddress() {
+		return this.orderShippingAddress;
+	}
+	public void setOrderShippingAddress(RentOrderShipperAddressInfoDTO orderShippingAddress) {
+		this.orderShippingAddress = orderShippingAddress;
 	}
 
 	public String getOrderType() {

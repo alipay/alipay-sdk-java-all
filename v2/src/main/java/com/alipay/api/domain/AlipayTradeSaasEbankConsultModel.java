@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayTradeSaasEbankConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6522498825342982267L;
+	private static final long serialVersionUID = 1539288553915767483L;
 
 	/**
 	 * 统一买家身份信息。已有Customer时传入buyer_id_type和buyer_id；未提供已有Customer时必须提供out_merchant_no。

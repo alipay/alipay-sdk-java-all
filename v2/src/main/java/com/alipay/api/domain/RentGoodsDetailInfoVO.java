@@ -7,11 +7,17 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品详细信息
  *
  * @author auto create
- * @since 1.0, 2025-08-22 20:57:18
+ * @since 1.0, 2026-09-16 19:51:30
  */
 public class RentGoodsDetailInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4228171833812749167L;
+	private static final long serialVersionUID = 2474648722447473648L;
+
+	/**
+	 * 单日封顶租金，单位：元，精确到小数点后两位
+	 */
+	@ApiField("daily_rent_cap_price")
+	private String dailyRentCapPrice;
 
 	/**
 	 * 商品图片，用于小程序订单中心展示
@@ -68,6 +74,12 @@ public class RentGoodsDetailInfoVO extends AlipayObject {
 	private String itemValue;
 
 	/**
+	 * 商品租金原价，单位：元，精确到小数点后两位
+	 */
+	@ApiField("original_rent_price")
+	private String originalRentPrice;
+
+	/**
 	 * 商户侧商品id
 	 */
 	@ApiField("out_item_id")
@@ -96,6 +108,13 @@ public class RentGoodsDetailInfoVO extends AlipayObject {
 	 */
 	@ApiField("supervised")
 	private Boolean supervised;
+
+	public String getDailyRentCapPrice() {
+		return this.dailyRentCapPrice;
+	}
+	public void setDailyRentCapPrice(String dailyRentCapPrice) {
+		this.dailyRentCapPrice = dailyRentCapPrice;
+	}
 
 	public String getImageMaterialId() {
 		return this.imageMaterialId;
@@ -158,6 +177,13 @@ public class RentGoodsDetailInfoVO extends AlipayObject {
 	}
 	public void setItemValue(String itemValue) {
 		this.itemValue = itemValue;
+	}
+
+	public String getOriginalRentPrice() {
+		return this.originalRentPrice;
+	}
+	public void setOriginalRentPrice(String originalRentPrice) {
+		this.originalRentPrice = originalRentPrice;
 	}
 
 	public String getOutItemId() {

@@ -11,6 +11,7 @@ import com.alipay.api.domain.RentOrderExtendInfoVO;
 import com.alipay.api.domain.RentFastAuditInfoVO;
 import com.alipay.api.domain.RentGoodsDetailInfoVO;
 import com.alipay.api.domain.RentOfflineShoppingVO;
+import com.alipay.api.domain.RentOrderShipperAddressInfoVO;
 import com.alipay.api.domain.RentPathInfoVO;
 import com.alipay.api.domain.RentOrderPriceInfoVO;
 import com.alipay.api.domain.RentProcurementInfoVO;
@@ -31,11 +32,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.rent.order.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-09-07 16:38:30
+ * @since 1.0, 2026-09-17 11:07:59
  */
 public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3331925543459395563L;
+	private static final long serialVersionUID = 1238759654356325368L;
 
 	/** 
 	 * 订单收货地址
@@ -122,6 +123,12 @@ public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 	 */
 	@ApiField("order_id")
 	private String orderId;
+
+	/** 
+	 * 订单发货地址
+	 */
+	@ApiField("order_shipping_address")
+	private RentOrderShipperAddressInfoVO orderShippingAddress;
 
 	/** 
 	 * 订单类型
@@ -352,6 +359,13 @@ public class AlipayCommerceRentOrderQueryResponse extends AlipayResponse {
 	}
 	public String getOrderId( ) {
 		return this.orderId;
+	}
+
+	public void setOrderShippingAddress(RentOrderShipperAddressInfoVO orderShippingAddress) {
+		this.orderShippingAddress = orderShippingAddress;
+	}
+	public RentOrderShipperAddressInfoVO getOrderShippingAddress( ) {
+		return this.orderShippingAddress;
 	}
 
 	public void setOrderType(String orderType) {

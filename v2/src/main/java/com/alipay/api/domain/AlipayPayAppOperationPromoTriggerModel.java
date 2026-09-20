@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 支付增长运营营销发奖
+ * 支付券联合营销发奖接口
  *
  * @author auto create
- * @since 1.0, 2026-09-11 16:42:57
+ * @since 1.0, 2026-09-17 18:47:57
  */
 public class AlipayPayAppOperationPromoTriggerModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2567272355388229661L;
+	private static final long serialVersionUID = 4842768616884275756L;
 
 	/**
 	 * 手机号MD5加密结果

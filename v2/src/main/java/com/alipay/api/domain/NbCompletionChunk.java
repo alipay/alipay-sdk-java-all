@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class NbCompletionChunk extends AlipayObject {
 
-	private static final long serialVersionUID = 6223911218984759389L;
+	private static final long serialVersionUID = 2695832647748683457L;
 
 	/**
 	 * 载荷的具体内容结构，JSON。具体内容参考文档：<a href="https://opendocs.alipay.com/pre-open/0cbosj?pathHash=65a79d8d">链接文本</a>

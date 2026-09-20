@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.ins.scene.insure.link.auth response.
  * 
  * @author auto create
- * @since 1.0, 2025-11-17 15:37:41
+ * @since 1.0, 2026-09-16 10:34:00
  */
 public class AlipayInsSceneInsureLinkAuthResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6533676938512177199L;
+	private static final long serialVersionUID = 4582577128614911419L;
 
 	/** 
 	 * authed_token

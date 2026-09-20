@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DatadigitalAicsDevinDistributeruleModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4619771439161593412L;
+	private static final long serialVersionUID = 7664578185745296466L;
 
 	/**
 	 * 待更新字段键值，必填，仅传需变更字段；具体字段由表单定义（JSON字符串格式，例如 {"name":"策略A","status":"1"}）

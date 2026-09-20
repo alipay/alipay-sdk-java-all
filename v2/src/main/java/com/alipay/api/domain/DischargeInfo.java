@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DischargeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3561966471154325719L;
+	private static final long serialVersionUID = 1245997353314937488L;
 
 	/**
 	 * 病人主诉

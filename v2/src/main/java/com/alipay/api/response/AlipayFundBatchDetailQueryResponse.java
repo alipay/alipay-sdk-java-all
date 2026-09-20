@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.batch.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-17 15:42:42
+ * @since 1.0, 2026-09-18 00:05:21
  */
 public class AlipayFundBatchDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4773154376542553213L;
+	private static final long serialVersionUID = 5458335195538343669L;
 
 	/** 
 	 * 1）当批次状态为INIT状态时，明细信息还未落地，返回明细信息为空

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 退款订单明细
  *
  * @author auto create
- * @since 1.0, 2026-09-10 15:57:54
+ * @since 1.0, 2026-09-15 10:47:56
  */
 public class ThirdPartyRefundResultList extends AlipayObject {
 
-	private static final long serialVersionUID = 6431524592145612654L;
+	private static final long serialVersionUID = 2395945628998191471L;
 
 	/**
 	 * 退款失败的原因,退款成功时为空

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AdConversionJoinWindow extends AlipayObject {
 
-	private static final long serialVersionUID = 4873791291445259918L;
+	private static final long serialVersionUID = 6544727679719186268L;
 
 	/**
 	 * ONE_DAY("1d", "1天"),

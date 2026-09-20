@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.pay.app.operation.promo.trigger request
  * 
  * @author auto create
- * @since 1.0, 2026-09-11 16:42:57
+ * @since 1.0, 2026-09-17 18:47:57
  */
 public class AlipayPayAppOperationPromoTriggerRequest implements AlipayRequest<AlipayPayAppOperationPromoTriggerResponse> {
 

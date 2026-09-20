@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class HitDialogue extends AlipayObject {
 
-	private static final long serialVersionUID = 5898147425238664494L;
+	private static final long serialVersionUID = 1265685783167638878L;
 
 	/**
 	 * 命中结果高亮

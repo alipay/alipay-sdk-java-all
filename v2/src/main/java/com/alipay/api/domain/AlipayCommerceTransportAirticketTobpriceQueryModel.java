@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 出行机票低价查询接口
  *
  * @author auto create
- * @since 1.0, 2025-02-14 10:42:10
+ * @since 1.0, 2026-09-17 17:21:56
  */
 public class AlipayCommerceTransportAirticketTobpriceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7742119693693287869L;
+	private static final long serialVersionUID = 6265433867339153463L;
 
 	/**
 	 * 到达城市三字码

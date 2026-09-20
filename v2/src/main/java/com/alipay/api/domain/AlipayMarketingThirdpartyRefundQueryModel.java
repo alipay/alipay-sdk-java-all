@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 三方码退款异常订单查询
  *
  * @author auto create
- * @since 1.0, 2026-09-10 15:57:54
+ * @since 1.0, 2026-09-15 10:47:56
  */
 public class AlipayMarketingThirdpartyRefundQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1248249553523654997L;
+	private static final long serialVersionUID = 4146625333248781815L;
 
 	/**
 	 * 退款异常订单的结束时间，可选，格式 yyyy-MM-dd HH:mm:ss

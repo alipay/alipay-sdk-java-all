@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.afusignin.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-09-01 14:48:31
+ * @since 1.0, 2026-09-17 10:32:58
  */
 public class AlipayCommerceMedicalAfusigninQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4233293779411417744L;
+	private static final long serialVersionUID = 4337561842887385912L;
 
 	/** 
 	 * 智能体头像链接
@@ -25,6 +25,18 @@ public class AlipayCommerceMedicalAfusigninQueryResponse extends AlipayResponse 
 	 */
 	@ApiField("doctor_id")
 	private String doctorId;
+
+	/** 
+	 * 智能体状态
+	 */
+	@ApiField("open_agent_flag")
+	private String openAgentFlag;
+
+	/** 
+	 * 来源类型
+	 */
+	@ApiField("source_type")
+	private String sourceType;
 
 	/** 
 	 * 阿福报道开通状态
@@ -50,6 +62,20 @@ public class AlipayCommerceMedicalAfusigninQueryResponse extends AlipayResponse 
 	}
 	public String getDoctorId( ) {
 		return this.doctorId;
+	}
+
+	public void setOpenAgentFlag(String openAgentFlag) {
+		this.openAgentFlag = openAgentFlag;
+	}
+	public String getOpenAgentFlag( ) {
+		return this.openAgentFlag;
+	}
+
+	public void setSourceType(String sourceType) {
+		this.sourceType = sourceType;
+	}
+	public String getSourceType( ) {
+		return this.sourceType;
 	}
 
 	public void setStatus(Long status) {

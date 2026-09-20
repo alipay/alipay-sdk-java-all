@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class MybankEcnyBizflowBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8426436114985344475L;
+	private static final long serialVersionUID = 3316376888423631735L;
 
 	/**
 	 * 按不同场景约定传入对应账户号

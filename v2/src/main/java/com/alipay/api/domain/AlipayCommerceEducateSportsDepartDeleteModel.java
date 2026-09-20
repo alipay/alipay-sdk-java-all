@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceEducateSportsDepartDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2411456853855485374L;
+	private static final long serialVersionUID = 6616857273911511898L;
 
 	/**
 	 * 部门主键code，用于定位被删除的部门

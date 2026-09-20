@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 提供给saleforce更新商机接口的入参
  *
  * @author auto create
- * @since 1.0, 2026-07-02 15:47:54
+ * @since 1.0, 2026-09-16 14:22:54
  */
 public class SaleForceUpdateLeadsParams extends AlipayObject {
 
-	private static final long serialVersionUID = 7355151794413588784L;
+	private static final long serialVersionUID = 2753218833241722337L;
 
 	/**
 	 * 实际主导方

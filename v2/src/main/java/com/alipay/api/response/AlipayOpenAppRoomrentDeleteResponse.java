@@ -10,11 +10,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.roomrent.delete response.
  * 
  * @author auto create
- * @since 1.0, 2025-06-13 10:18:51
+ * @since 1.0, 2026-09-11 18:07:42
  */
 public class AlipayOpenAppRoomrentDeleteResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7369153991423311189L;
+	private static final long serialVersionUID = 5685939154481466836L;
 
 	/** 
 	 * 支付宝平台侧商品ID列表，最多20个。

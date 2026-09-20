@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.pay.app.operation.promo.trigger response.
  * 
  * @author auto create
- * @since 1.0, 2026-09-11 16:42:57
+ * @since 1.0, 2026-09-17 18:47:57
  */
 public class AlipayPayAppOperationPromoTriggerResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1775181347885859584L;
+	private static final long serialVersionUID = 1676136657788158815L;
 
 	/** 
 	 * null

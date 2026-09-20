@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 转出划账接口
  *
  * @author auto create
- * @since 1.0, 2026-07-31 11:05:07
+ * @since 1.0, 2026-09-17 11:32:58
  */
 public class AlipayDataDataserviceAdBudgetcutTransferModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8499524918187134142L;
+	private static final long serialVersionUID = 5416361826296224939L;
 
 	/**
 	 * 转入总金额（元）,支持两位小数
 	 */
 	@ApiField("amount_total")
 	private String amountTotal;
+
+	/**
+	 * 随机字符串，建议uuid()创建
+	 */
+	@ApiField("apply_no")
+	private String applyNo;
 
 	/**
 	 * 分配模式：
@@ -71,6 +77,13 @@ public class AlipayDataDataserviceAdBudgetcutTransferModel extends AlipayObject 
 	}
 	public void setAmountTotal(String amountTotal) {
 		this.amountTotal = amountTotal;
+	}
+
+	public String getApplyNo() {
+		return this.applyNo;
+	}
+	public void setApplyNo(String applyNo) {
+		this.applyNo = applyNo;
 	}
 
 	public String getAssignMod() {

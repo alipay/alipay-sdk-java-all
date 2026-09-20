@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceLogisticsFreightflowSubaccountDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8468829532513619919L;
+	private static final long serialVersionUID = 6452991945343622461L;
 
 	/**
 	 * 物流公司编码

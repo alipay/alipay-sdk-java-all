@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.operation.partner.identity.query request
  * 
  * @author auto create
- * @since 1.0, 2026-08-27 00:05:21
+ * @since 1.0, 2026-09-15 19:52:36
  */
 public class AlipayOpenOperationPartnerIdentityQueryRequest implements AlipayRequest<AlipayOpenOperationPartnerIdentityQueryResponse> {
 

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.nft.sku.benefit.notify request
  * 
  * @author auto create
- * @since 1.0, 2026-04-03 17:02:44
+ * @since 1.0, 2026-09-17 20:07:52
  */
 public class AnttechNftSkuBenefitNotifyRequest implements AlipayRequest<AnttechNftSkuBenefitNotifyResponse> {
 

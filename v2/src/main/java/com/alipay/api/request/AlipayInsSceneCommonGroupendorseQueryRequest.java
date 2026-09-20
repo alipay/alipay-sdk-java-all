@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.ins.scene.common.groupendorse.query request
  * 
  * @author auto create
- * @since 1.0, 2026-09-03 17:57:07
+ * @since 1.0, 2026-09-17 19:12:53
  */
 public class AlipayInsSceneCommonGroupendorseQueryRequest implements AlipayRequest<AlipayInsSceneCommonGroupendorseQueryResponse> {
 

@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceGasItemQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4662766575292898676L;
+	private static final long serialVersionUID = 2579497696851859295L;
 
 	/** 
 	 * null

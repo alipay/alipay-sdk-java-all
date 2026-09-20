@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 开票申请明细
  *
  * @author auto create
- * @since 1.0, 2023-08-01 15:21:33
+ * @since 1.0, 2026-09-18 17:33:06
  */
 public class InvoiceApplyDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3559418126434547224L;
+	private static final long serialVersionUID = 6531794845832582112L;
 
 	/**
 	 * 账单号
@@ -24,6 +24,12 @@ public class InvoiceApplyDetail extends AlipayObject {
 	 */
 	@ApiField("biz_fund_type")
 	private String bizFundType;
+
+	/**
+	 * 外部商户交易号，来源于申请明细
+	 */
+	@ApiField("external_merchant_trade_no")
+	private String externalMerchantTradeNo;
 
 	/**
 	 * 开票金额
@@ -43,6 +49,13 @@ public class InvoiceApplyDetail extends AlipayObject {
 	}
 	public void setBizFundType(String bizFundType) {
 		this.bizFundType = bizFundType;
+	}
+
+	public String getExternalMerchantTradeNo() {
+		return this.externalMerchantTradeNo;
+	}
+	public void setExternalMerchantTradeNo(String externalMerchantTradeNo) {
+		this.externalMerchantTradeNo = externalMerchantTradeNo;
 	}
 
 	public String getInvoiceAmount() {

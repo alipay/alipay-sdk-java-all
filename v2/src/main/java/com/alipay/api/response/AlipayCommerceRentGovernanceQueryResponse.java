@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.rent.governance.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-09-03 18:42:51
+ * @since 1.0, 2026-09-18 14:17:36
  */
 public class AlipayCommerceRentGovernanceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5476552434761411673L;
+	private static final long serialVersionUID = 3533286515476428275L;
 
 	/** 
 	 * null

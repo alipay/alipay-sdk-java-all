@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AlipayOfflineProviderIndflowPrizeRecommendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5726446192263628782L;
+	private static final long serialVersionUID = 1531356125925898616L;
 
 	/**
 	 * null

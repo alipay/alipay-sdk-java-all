@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务商代商户MCP接口详情查询
  *
  * @author auto create
- * @since 1.0, 2026-08-31 09:42:54
+ * @since 1.0, 2026-09-16 15:06:24
  */
 public class AlipayOpenSpMcpDetailQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6598679978347537298L;
+	private static final long serialVersionUID = 6576988325297335174L;
 
 	/**
 	 * MCP能力编码code

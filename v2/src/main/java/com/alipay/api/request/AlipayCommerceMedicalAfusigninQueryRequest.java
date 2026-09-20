@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.afusignin.query request
  * 
  * @author auto create
- * @since 1.0, 2026-09-01 14:48:31
+ * @since 1.0, 2026-09-17 10:32:58
  */
 public class AlipayCommerceMedicalAfusigninQueryRequest implements AlipayRequest<AlipayCommerceMedicalAfusigninQueryResponse> {
 

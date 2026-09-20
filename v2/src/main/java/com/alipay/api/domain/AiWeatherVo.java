@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AiWeatherVo extends AlipayObject {
 
-	private static final long serialVersionUID = 5375419558211769754L;
+	private static final long serialVersionUID = 2227264952513526271L;
 
 	/**
 	 * 空气质量情况

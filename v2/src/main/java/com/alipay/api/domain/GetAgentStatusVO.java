@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class GetAgentStatusVO extends AlipayObject {
 
-	private static final long serialVersionUID = 8373782317698979942L;
+	private static final long serialVersionUID = 4252638442252619647L;
 
 	/**
 	 * 智能体id，开启了ai医生时必填

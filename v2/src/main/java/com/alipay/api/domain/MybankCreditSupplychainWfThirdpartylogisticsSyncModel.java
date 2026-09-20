@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class MybankCreditSupplychainWfThirdpartylogisticsSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7638989869895969989L;
+	private static final long serialVersionUID = 3625376136226682966L;
 
 	/**
 	 * WF站点的ipay user id，我们用做siteUserId

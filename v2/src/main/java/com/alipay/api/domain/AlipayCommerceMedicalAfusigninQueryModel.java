@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 好大夫医生开通阿福报道信息查询
  *
  * @author auto create
- * @since 1.0, 2026-09-01 14:48:31
+ * @since 1.0, 2026-09-17 10:32:58
  */
 public class AlipayCommerceMedicalAfusigninQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3167235391194551428L;
+	private static final long serialVersionUID = 2591718968638179977L;
 
 	/**
 	 * 医生id

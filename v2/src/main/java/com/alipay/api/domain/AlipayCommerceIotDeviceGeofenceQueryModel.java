@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceIotDeviceGeofenceQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2832831669957873576L;
+	private static final long serialVersionUID = 3229288924988532323L;
 
 	/**
 	 * 一组地理围栏的唯一标识, 通常一条公交线路.

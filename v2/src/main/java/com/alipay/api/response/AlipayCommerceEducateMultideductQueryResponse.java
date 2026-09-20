@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.educate.multideduct.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-17 10:42:42
+ * @since 1.0, 2026-09-15 11:27:53
  */
 public class AlipayCommerceEducateMultideductQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2766481932623483595L;
+	private static final long serialVersionUID = 3241326844533119485L;
 
 	/** 
 	 * 支付宝协议支付的协议号。OPEN时返回
@@ -43,6 +43,24 @@ public class AlipayCommerceEducateMultideductQueryResponse extends AlipayRespons
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/** 
+	 * 家长支付宝账户的脱敏信息（特例：特殊标识"ALREADY_RELEASED"，须通过技术支持反馈来关闭开通记录）
+	 */
+	@ApiField("parent_logon_id")
+	private String parentLogonId;
+
+	/** 
+	 * 如果是父母为孩子开通，则为父母支付宝openid；如果是用户为本人开通，则为本人支付宝openid。
+	 */
+	@ApiField("parent_open_id")
+	private String parentOpenId;
+
+	/** 
+	 * 如果是父母为孩子开通，则为父母支付宝uid；如果是用户为本人开通，则为本人支付宝uid。
+	 */
+	@ApiField("parent_user_id")
+	private String parentUserId;
 
 	/** 
 	 * 学校或教育机构内标
@@ -95,6 +113,27 @@ public class AlipayCommerceEducateMultideductQueryResponse extends AlipayRespons
 	}
 	public String getOpenId( ) {
 		return this.openId;
+	}
+
+	public void setParentLogonId(String parentLogonId) {
+		this.parentLogonId = parentLogonId;
+	}
+	public String getParentLogonId( ) {
+		return this.parentLogonId;
+	}
+
+	public void setParentOpenId(String parentOpenId) {
+		this.parentOpenId = parentOpenId;
+	}
+	public String getParentOpenId( ) {
+		return this.parentOpenId;
+	}
+
+	public void setParentUserId(String parentUserId) {
+		this.parentUserId = parentUserId;
+	}
+	public String getParentUserId( ) {
+		return this.parentUserId;
 	}
 
 	public void setSchoolCode(String schoolCode) {

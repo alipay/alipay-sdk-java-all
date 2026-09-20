@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayTradeSaasAccountModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2842752896669488281L;
+	private static final long serialVersionUID = 5732323898823952418L;
 
 	/** 
 	 * 完成企业主体信息变更的SaaS客户ID。

@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.data.dataservice.ad.budgetassign.transfer request
  * 
  * @author auto create
- * @since 1.0, 2026-07-31 11:05:36
+ * @since 1.0, 2026-09-17 11:32:59
  */
 public class AlipayDataDataserviceAdBudgetassignTransferRequest implements AlipayRequest<AlipayDataDataserviceAdBudgetassignTransferResponse> {
 

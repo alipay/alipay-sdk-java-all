@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.gas.order.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-12-03 14:54:56
+ * @since 1.0, 2026-09-18 12:16:05
  */
 public class AlipayCommerceGasOrderDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2727731274643618529L;
+	private static final long serialVersionUID = 7459891781555867399L;
 
 	/** 
 	 * 订单使用的支付宝券信息

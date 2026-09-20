@@ -10,17 +10,23 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 商品详细信息
  *
  * @author auto create
- * @since 1.0, 2026-03-17 19:45:27
+ * @since 1.0, 2026-09-16 19:51:38
  */
 public class RentGoodsDetailInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5852984319797482174L;
+	private static final long serialVersionUID = 5646787471258212775L;
 
 	/**
 	 * 商品描述信息
 	 */
 	@ApiField("body")
 	private String body;
+
+	/**
+	 * 单日封顶租金，元，精确到小数点后两位
+	 */
+	@ApiField("daily_rent_cap_price")
+	private String dailyRentCapPrice;
 
 	/**
 	 * 商品图，线下租赁场景使用
@@ -96,6 +102,12 @@ public class RentGoodsDetailInfoDTO extends AlipayObject {
 	private String itemValue;
 
 	/**
+	 * 商品租金原价，元，精确到小数点后两位
+	 */
+	@ApiField("original_rent_price")
+	private String originalRentPrice;
+
+	/**
 	 * 商户侧商品id
 	 */
 	@ApiField("out_item_id")
@@ -130,6 +142,13 @@ public class RentGoodsDetailInfoDTO extends AlipayObject {
 	}
 	public void setBody(String body) {
 		this.body = body;
+	}
+
+	public String getDailyRentCapPrice() {
+		return this.dailyRentCapPrice;
+	}
+	public void setDailyRentCapPrice(String dailyRentCapPrice) {
+		this.dailyRentCapPrice = dailyRentCapPrice;
 	}
 
 	public List<String> getGoodsPictureIds() {
@@ -214,6 +233,13 @@ public class RentGoodsDetailInfoDTO extends AlipayObject {
 	}
 	public void setItemValue(String itemValue) {
 		this.itemValue = itemValue;
+	}
+
+	public String getOriginalRentPrice() {
+		return this.originalRentPrice;
+	}
+	public void setOriginalRentPrice(String originalRentPrice) {
+		this.originalRentPrice = originalRentPrice;
 	}
 
 	public String getOutItemId() {

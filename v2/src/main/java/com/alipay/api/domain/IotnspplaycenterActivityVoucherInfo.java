@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IotnspplaycenterActivityVoucherInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4188885991634341771L;
+	private static final long serialVersionUID = 4396998256588594927L;
 
 	/**
 	 * 商品LOGO地址。

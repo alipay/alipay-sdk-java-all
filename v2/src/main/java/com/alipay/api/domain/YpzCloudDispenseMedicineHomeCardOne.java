@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-09-08 21:14:39
+ * @since 1.0, 2026-09-17 14:27:55
  */
 public class YpzCloudDispenseMedicineHomeCardOne extends AlipayObject {
 
-	private static final long serialVersionUID = 4752255711639936955L;
+	private static final long serialVersionUID = 7461669476429995643L;
 
 	/**
 	 * 按钮文案
@@ -23,10 +23,22 @@ public class YpzCloudDispenseMedicineHomeCardOne extends AlipayObject {
 	private String buttonText;
 
 	/**
+	 * 卡类型
+	 */
+	@ApiField("card_type")
+	private String cardType;
+
+	/**
 	 * 描述
 	 */
 	@ApiField("description")
 	private String description;
+
+	/**
+	 * 主标题
+	 */
+	@ApiField("main_title")
+	private String mainTitle;
 
 	/**
 	 * null
@@ -47,6 +59,12 @@ public class YpzCloudDispenseMedicineHomeCardOne extends AlipayObject {
 	@ApiField("title")
 	private String title;
 
+	/**
+	 * 唯一id
+	 */
+	@ApiField("unique_id")
+	private String uniqueId;
+
 	public String getButtonText() {
 		return this.buttonText;
 	}
@@ -54,11 +72,25 @@ public class YpzCloudDispenseMedicineHomeCardOne extends AlipayObject {
 		this.buttonText = buttonText;
 	}
 
+	public String getCardType() {
+		return this.cardType;
+	}
+	public void setCardType(String cardType) {
+		this.cardType = cardType;
+	}
+
 	public String getDescription() {
 		return this.description;
 	}
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	public String getMainTitle() {
+		return this.mainTitle;
+	}
+	public void setMainTitle(String mainTitle) {
+		this.mainTitle = mainTitle;
 	}
 
 	public List<YpzCloudDispenseMedicineCardNode> getNodeList() {
@@ -80,6 +112,13 @@ public class YpzCloudDispenseMedicineHomeCardOne extends AlipayObject {
 	}
 	public void setTitle(String title) {
 		this.title = title;
+	}
+
+	public String getUniqueId() {
+		return this.uniqueId;
+	}
+	public void setUniqueId(String uniqueId) {
+		this.uniqueId = uniqueId;
 	}
 
 }

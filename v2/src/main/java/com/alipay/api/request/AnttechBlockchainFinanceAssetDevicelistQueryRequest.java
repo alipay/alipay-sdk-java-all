@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: anttech.blockchain.finance.asset.devicelist.query request
  * 
  * @author auto create
- * @since 1.0, 2023-08-21 01:43:23
+ * @since 1.0, 2026-09-16 11:47:56
  */
 public class AnttechBlockchainFinanceAssetDevicelistQueryRequest implements AlipayRequest<AnttechBlockchainFinanceAssetDevicelistQueryResponse> {
 

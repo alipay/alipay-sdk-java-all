@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 问诊订单变更同步域内互联网医院平台
  *
  * @author auto create
- * @since 1.0, 2026-09-01 20:42:50
+ * @since 1.0, 2026-09-16 11:21:54
  */
 public class AlipayCommerceMedicalHyInquiryorderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1739887235428566981L;
+	private static final long serialVersionUID = 7185671195174628452L;
 
 	/**
 	 * 医生接诊时间

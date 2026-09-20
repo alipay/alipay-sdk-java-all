@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.quota.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-02-28 14:57:43
+ * @since 1.0, 2026-09-18 00:05:21
  */
 public class AlipayFundQuotaQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8432964725376647928L;
+	private static final long serialVersionUID = 3841142761365579579L;
 
 	/** 
 	 * 当active_new_quota_daily_remain_limited返回true时会有值，代表收到了限制，如果是安全限制需申请解限会返回SECURITY_PUNISHED，如果账户额度限制需先提升账户额度会返回ACCOUNT_QUOTA_LIMITED

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 反向订单创建
  *
  * @author auto create
- * @since 1.0, 2026-08-28 11:29:59
+ * @since 1.0, 2026-09-15 20:08:29
  */
 public class AlipayCommerceEcRecyclinginvoiceOrderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4358967984768324936L;
+	private static final long serialVersionUID = 5648432149114178378L;
 
 	/**
 	 * 企业（商户）营业员ID，传值为已维护的企业（商户）营业员编号，可调用反向企业营业员查询接口查询
@@ -27,6 +27,13 @@ public class AlipayCommerceEcRecyclinginvoiceOrderCreateModel extends AlipayObje
 	 */
 	@ApiField("company_supplier_id")
 	private String companySupplierId;
+
+	/**
+	 * 创建订单时提供的佐证材料列表
+	 */
+	@ApiListField("corroboration_material_list")
+	@ApiField("corroboration_materials")
+	private List<CorroborationMaterials> corroborationMaterialList;
 
 	/**
 	 * 指定发票开具时的票种
@@ -72,6 +79,12 @@ public class AlipayCommerceEcRecyclinginvoiceOrderCreateModel extends AlipayObje
 	private String productOriginCode;
 
 	/**
+	 * 代卖人收购单 ID
+	 */
+	@ApiField("proxy_order_id")
+	private String proxyOrderId;
+
+	/**
 	 * 代卖人证件号码（身份证号码）
 	 */
 	@ApiField("proxy_seller_cert_no")
@@ -107,6 +120,13 @@ public class AlipayCommerceEcRecyclinginvoiceOrderCreateModel extends AlipayObje
 	}
 	public void setCompanySupplierId(String companySupplierId) {
 		this.companySupplierId = companySupplierId;
+	}
+
+	public List<CorroborationMaterials> getCorroborationMaterialList() {
+		return this.corroborationMaterialList;
+	}
+	public void setCorroborationMaterialList(List<CorroborationMaterials> corroborationMaterialList) {
+		this.corroborationMaterialList = corroborationMaterialList;
 	}
 
 	public String getInvoiceKind() {
@@ -156,6 +176,13 @@ public class AlipayCommerceEcRecyclinginvoiceOrderCreateModel extends AlipayObje
 	}
 	public void setProductOriginCode(String productOriginCode) {
 		this.productOriginCode = productOriginCode;
+	}
+
+	public String getProxyOrderId() {
+		return this.proxyOrderId;
+	}
+	public void setProxyOrderId(String proxyOrderId) {
+		this.proxyOrderId = proxyOrderId;
 	}
 
 	public String getProxySellerCertNo() {

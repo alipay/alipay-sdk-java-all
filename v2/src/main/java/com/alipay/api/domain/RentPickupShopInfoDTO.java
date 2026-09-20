@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁订单自提门店信息
  *
  * @author auto create
- * @since 1.0, 2025-06-10 11:42:10
+ * @since 1.0, 2026-09-16 19:51:38
  */
 public class RentPickupShopInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 2621893785933961591L;
+	private static final long serialVersionUID = 4669849849446327151L;
 
 	/**
 	 * 门店地址
@@ -24,6 +24,12 @@ public class RentPickupShopInfoDTO extends AlipayObject {
 	 */
 	@ApiField("alipay_shop_id")
 	private String alipayShopId;
+
+	/**
+	 * 门店免费时长字段，单位为分钟，整数
+	 */
+	@ApiField("free_duration_minutes")
+	private Long freeDurationMinutes;
 
 	/**
 	 * 商家侧门店ID
@@ -55,6 +61,13 @@ public class RentPickupShopInfoDTO extends AlipayObject {
 	}
 	public void setAlipayShopId(String alipayShopId) {
 		this.alipayShopId = alipayShopId;
+	}
+
+	public Long getFreeDurationMinutes() {
+		return this.freeDurationMinutes;
+	}
+	public void setFreeDurationMinutes(Long freeDurationMinutes) {
+		this.freeDurationMinutes = freeDurationMinutes;
 	}
 
 	public String getMerchantShopId() {

@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.fund.accountbook.extcard.create response.
  * 
  * @author auto create
- * @since 1.0, 2026-07-09 19:52:53
+ * @since 1.0, 2026-09-18 00:05:21
  */
 public class AlipayFundAccountbookExtcardCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1596494243183373219L;
+	private static final long serialVersionUID = 8189238665271336652L;
 
 	/** 
 	 * 场景码

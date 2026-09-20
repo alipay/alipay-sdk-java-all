@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订单信息修改
  *
  * @author auto create
- * @since 1.0, 2026-08-03 10:48:43
+ * @since 1.0, 2026-09-16 19:51:53
  */
 public class AlipayCommerceRentOrderModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3789219475414374974L;
+	private static final long serialVersionUID = 8535169497629637338L;
 
 	/**
 	 * 订单收货地址
@@ -35,6 +35,12 @@ public class AlipayCommerceRentOrderModifyModel extends AlipayObject {
 	private RentOrderDeliveryInfoDTO deliveryInfo;
 
 	/**
+	 * 企业信息
+	 */
+	@ApiField("enterprise_info")
+	private OrderModifyEnterpriseInfoOpenApiVO enterpriseInfo;
+
+	/**
 	 * 用于标记支付宝用户在应用下的唯一标识
 	 */
 	@ApiField("open_id")
@@ -52,6 +58,12 @@ public class AlipayCommerceRentOrderModifyModel extends AlipayObject {
 	@ApiListField("order_negotiated_payment_time")
 	@ApiField("order_negotiated_payment_time")
 	private List<OrderNegotiatedPaymentTime> orderNegotiatedPaymentTime;
+
+	/**
+	 * 订单发货地址
+	 */
+	@ApiField("order_shipping_address")
+	private RentOrderShipperAddressInfoDTO orderShippingAddress;
 
 	/**
 	 * 商户订单号
@@ -98,6 +110,13 @@ public class AlipayCommerceRentOrderModifyModel extends AlipayObject {
 		this.deliveryInfo = deliveryInfo;
 	}
 
+	public OrderModifyEnterpriseInfoOpenApiVO getEnterpriseInfo() {
+		return this.enterpriseInfo;
+	}
+	public void setEnterpriseInfo(OrderModifyEnterpriseInfoOpenApiVO enterpriseInfo) {
+		this.enterpriseInfo = enterpriseInfo;
+	}
+
 	public String getOpenId() {
 		return this.openId;
 	}
@@ -117,6 +136,13 @@ public class AlipayCommerceRentOrderModifyModel extends AlipayObject {
 	}
 	public void setOrderNegotiatedPaymentTime(List<OrderNegotiatedPaymentTime> orderNegotiatedPaymentTime) {
 		this.orderNegotiatedPaymentTime = orderNegotiatedPaymentTime;
+	}
+
+	public RentOrderShipperAddressInfoDTO getOrderShippingAddress() {
+		return this.orderShippingAddress;
+	}
+	public void setOrderShippingAddress(RentOrderShipperAddressInfoDTO orderShippingAddress) {
+		this.orderShippingAddress = orderShippingAddress;
 	}
 
 	public String getOutOrderId() {

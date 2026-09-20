@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户业务参数。用于透传业务扩展信息。
  *
  * @author auto create
- * @since 1.0, 2026-09-09 16:37:54
+ * @since 1.0, 2026-09-17 22:54:46
  */
 public class SaasBusinessParams extends AlipayObject {
 
-	private static final long serialVersionUID = 3645425886481439714L;
+	private static final long serialVersionUID = 6316648414617296418L;
 
 	/**
 	 * 校园卡编号

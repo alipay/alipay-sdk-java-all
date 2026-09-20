@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ShopSettleInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5443696816618476431L;
+	private static final long serialVersionUID = 1673563624347763549L;
 
 	/**
 	 * 结算到户的账号

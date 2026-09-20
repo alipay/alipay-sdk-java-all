@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SignRecordLogVO extends AlipayObject {
 
-	private static final long serialVersionUID = 7124866843156854829L;
+	private static final long serialVersionUID = 5545431339287114968L;
 
 	/**
 	 * 签约的协议版本

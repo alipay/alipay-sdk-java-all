@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 三方码异常订单退款
  *
  * @author auto create
- * @since 1.0, 2026-09-10 15:57:54
+ * @since 1.0, 2026-09-15 10:47:56
  */
 public class AlipayMarketingThirdpartyOrderRefundModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5351125973865675216L;
+	private static final long serialVersionUID = 8654933255631615472L;
 
 	/**
 	 * null

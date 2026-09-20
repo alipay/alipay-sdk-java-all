@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.app.localitem.spu.save response.
  * 
  * @author auto create
- * @since 1.0, 2025-05-20 19:30:26
+ * @since 1.0, 2026-09-11 18:10:08
  */
 public class AlipayOpenAppLocalitemSpuSaveResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3652895337452145922L;
+	private static final long serialVersionUID = 6628798894312291187L;
 
 	/** 
 	 * 标品id

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataAntsycmCrowserviceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8586934119994344562L;
+	private static final long serialVersionUID = 4247963561529477162L;
 
 	/** 
 	 * is_exist_in_crowd:查询用户是否存在于人群中 

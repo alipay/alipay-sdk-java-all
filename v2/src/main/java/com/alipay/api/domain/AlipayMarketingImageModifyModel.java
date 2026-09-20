@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 图片更新接口
  *
  * @author auto create
- * @since 1.0, 2025-05-21 15:40:51
+ * @since 1.0, 2026-09-11 18:18:10
  */
 public class AlipayMarketingImageModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6118798964837513857L;
+	private static final long serialVersionUID = 7646124821182936327L;
 
 	/**
 	 * 修改后图片新文件名。仅在需要修改文件名时传入，如果不修改则此字段不传。

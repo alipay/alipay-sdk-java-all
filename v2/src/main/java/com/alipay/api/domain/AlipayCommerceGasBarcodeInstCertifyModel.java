@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 机构动态码认证
  *
  * @author auto create
- * @since 1.0, 2025-12-03 14:59:56
+ * @since 1.0, 2026-09-18 13:32:06
  */
 public class AlipayCommerceGasBarcodeInstCertifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2596521638291976574L;
+	private static final long serialVersionUID = 3879855882347587981L;
 
 	/**
 	 * 机构的会员编号

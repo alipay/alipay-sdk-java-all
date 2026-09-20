@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TrustFundOrder extends AlipayObject {
 
-	private static final long serialVersionUID = 5444724237663634664L;
+	private static final long serialVersionUID = 3372632298415133914L;
 
 	/**
 	 * 划拨金额，单位元

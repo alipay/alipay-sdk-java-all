@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechMorseMarketingEquityCustbilldownloadtaskCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8799874621123359666L;
+	private static final long serialVersionUID = 7714393775394173474L;
 
 	/**
 	 * 账单交易开始结束时间yyyyMMdd 的格式

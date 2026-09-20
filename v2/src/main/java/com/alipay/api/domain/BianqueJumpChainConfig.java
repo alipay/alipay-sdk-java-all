@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BianqueJumpChainConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 2579687264215369852L;
+	private static final long serialVersionUID = 6556455492328621671L;
 
 	/**
 	 * 应用key

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发票明细开放模型
  *
  * @author auto create
- * @since 1.0, 2024-03-13 14:08:36
+ * @since 1.0, 2026-09-17 13:38:06
  */
 public class InvoiceItemOpenModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4747135556746913766L;
+	private static final long serialVersionUID = 6236116553359316635L;
 
 	/**
 	 * 明细行不含税金额，单位元，保留两位小数

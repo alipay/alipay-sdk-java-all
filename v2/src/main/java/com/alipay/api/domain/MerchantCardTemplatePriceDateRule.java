@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-09-11 10:47:06
+ * @since 1.0, 2026-09-15 10:55:39
  */
 public class MerchantCardTemplatePriceDateRule extends AlipayObject {
 
-	private static final long serialVersionUID = 3614235633136363894L;
+	private static final long serialVersionUID = 6859199541598466782L;
 
 	/**
 	 * 日期价格规则结束日期，格式为yyyy-MM-dd，不能早于开始日期。

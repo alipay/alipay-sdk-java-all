@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 短剧创建接口
  *
  * @author auto create
- * @since 1.0, 2026-09-04 10:59:14
+ * @since 1.0, 2026-09-16 15:49:29
  */
 public class AlipaySocialBaseLifecreationShortplayCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7664873431243892172L;
+	private static final long serialVersionUID = 6899351998539581568L;
 
 	/**
 	 * 广电备案号。

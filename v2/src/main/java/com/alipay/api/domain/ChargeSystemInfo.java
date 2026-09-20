@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ChargeSystemInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3862536228492968993L;
+	private static final long serialVersionUID = 4775696134726428572L;
 
 	/**
 	 * 交流充电桩数量

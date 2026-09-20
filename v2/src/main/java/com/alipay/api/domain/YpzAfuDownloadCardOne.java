@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 阿福带下载卡
  *
  * @author auto create
- * @since 1.0, 2026-09-08 21:14:39
+ * @since 1.0, 2026-09-17 14:27:55
  */
 public class YpzAfuDownloadCardOne extends AlipayObject {
 
-	private static final long serialVersionUID = 5677739464138595748L;
+	private static final long serialVersionUID = 1873685368933696693L;
 
 	/**
 	 * 图片URL

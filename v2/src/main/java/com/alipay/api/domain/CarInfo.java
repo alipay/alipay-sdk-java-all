@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CarInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8653182293169129927L;
+	private static final long serialVersionUID = 4691188799537598826L;
 
 	/**
 	 * 地址

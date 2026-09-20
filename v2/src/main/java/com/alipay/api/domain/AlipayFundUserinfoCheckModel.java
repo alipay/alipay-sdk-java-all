@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 校验用户信息的合法性和一致性
  *
  * @author auto create
- * @since 1.0, 2026-04-15 20:52:45
+ * @since 1.0, 2026-09-18 00:05:23
  */
 public class AlipayFundUserinfoCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4255547535745926692L;
+	private static final long serialVersionUID = 1138296314847628888L;
 
 	/**
 	 * 业务场景码，固定值：USER_INFO_CHECK

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 碰一下用户信息查询
  *
  * @author auto create
- * @since 1.0, 2025-12-03 14:48:32
+ * @since 1.0, 2026-09-18 13:32:31
  */
 public class AlipayCommerceGasUserInfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2642825785286381326L;
+	private static final long serialVersionUID = 1269279791434535117L;
 
 	/**
 	 * 支付宝openId

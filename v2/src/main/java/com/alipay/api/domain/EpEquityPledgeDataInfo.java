@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class EpEquityPledgeDataInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 6241712731211487586L;
+	private static final long serialVersionUID = 1365145113325985728L;
 
 	/**
 	 * 企业股权出质明细查询列表

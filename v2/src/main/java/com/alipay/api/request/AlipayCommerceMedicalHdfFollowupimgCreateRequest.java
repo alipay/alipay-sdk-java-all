@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.hdf.followupimg.create request
  * 
  * @author auto create
- * @since 1.0, 2026-09-01 14:31:37
+ * @since 1.0, 2026-09-17 10:37:54
  */
 public class AlipayCommerceMedicalHdfFollowupimgCreateRequest implements AlipayRequest<AlipayCommerceMedicalHdfFollowupimgCreateResponse> {
 

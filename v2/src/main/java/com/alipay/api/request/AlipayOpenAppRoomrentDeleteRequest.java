@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.app.roomrent.delete request
  * 
  * @author auto create
- * @since 1.0, 2025-06-13 10:18:51
+ * @since 1.0, 2026-09-11 18:07:42
  */
 public class AlipayOpenAppRoomrentDeleteRequest implements AlipayRequest<AlipayOpenAppRoomrentDeleteResponse> {
 

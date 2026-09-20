@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 资产设备信息查询
  *
  * @author auto create
- * @since 1.0, 2020-12-28 12:05:34
+ * @since 1.0, 2026-09-16 11:46:14
  */
 public class AnttechBlockchainFinanceAssetDevicelistQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8767573498282216882L;
+	private static final long serialVersionUID = 8797159246477576133L;
 
 	/**
 	 * 资产所有人标示

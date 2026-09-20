@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.marketing.thirdparty.order.refund request
  * 
  * @author auto create
- * @since 1.0, 2026-09-10 15:57:54
+ * @since 1.0, 2026-09-15 10:47:56
  */
 public class AlipayMarketingThirdpartyOrderRefundRequest implements AlipayRequest<AlipayMarketingThirdpartyOrderRefundResponse> {
 

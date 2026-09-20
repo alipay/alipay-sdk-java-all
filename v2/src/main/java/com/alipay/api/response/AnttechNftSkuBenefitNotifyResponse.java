@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.nft.sku.benefit.notify response.
  * 
  * @author auto create
- * @since 1.0, 2026-04-03 17:02:44
+ * @since 1.0, 2026-09-17 20:07:52
  */
 public class AnttechNftSkuBenefitNotifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8262349246552116447L;
+	private static final long serialVersionUID = 6221387567111428892L;
 
 	/** 
 	 * 已处理

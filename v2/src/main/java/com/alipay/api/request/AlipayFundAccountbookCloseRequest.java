@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.fund.accountbook.close request
  * 
  * @author auto create
- * @since 1.0, 2025-10-24 14:20:04
+ * @since 1.0, 2026-09-18 00:05:20
  */
 public class AlipayFundAccountbookCloseRequest implements AlipayRequest<AlipayFundAccountbookCloseResponse> {
 

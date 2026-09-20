@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * null
+ * Header参数列表
  *
  * @author auto create
- * @since 1.0, 2026-08-31 09:42:54
+ * @since 1.0, 2026-09-16 15:06:25
  */
 public class HeaderParam extends AlipayObject {
 
-	private static final long serialVersionUID = 3435977185487612877L;
+	private static final long serialVersionUID = 5352374564258968756L;
 
 	/**
 	 * 参数名

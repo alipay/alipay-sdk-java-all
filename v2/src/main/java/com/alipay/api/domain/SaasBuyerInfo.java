@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 统一买家身份信息。已有Customer时传入buyer_id_type和buyer_id；未提供已有Customer时必须提供out_merchant_no。
  *
  * @author auto create
- * @since 1.0, 2026-09-09 16:37:54
+ * @since 1.0, 2026-09-17 22:54:46
  */
 public class SaasBuyerInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 2422765994879475475L;
+	private static final long serialVersionUID = 7146573341771253538L;
 
 	/**
 	 * 买家标识。buyer_id_type=customer_id时为SaaS 客户 ID

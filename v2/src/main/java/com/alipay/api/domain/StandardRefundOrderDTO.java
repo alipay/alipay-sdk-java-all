@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class StandardRefundOrderDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6413991967443359428L;
+	private static final long serialVersionUID = 7514893368674632262L;
 
 	/**
 	 * 完成时间

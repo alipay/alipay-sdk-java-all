@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 目录修改接口
  *
  * @author auto create
- * @since 1.0, 2025-05-21 15:41:10
+ * @since 1.0, 2026-09-11 18:17:46
  */
 public class AlipayMarketingImagedirectoryModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7753671139628588244L;
+	private static final long serialVersionUID = 3527474191377531297L;
 
 	/**
 	 * 需修改的目录id。

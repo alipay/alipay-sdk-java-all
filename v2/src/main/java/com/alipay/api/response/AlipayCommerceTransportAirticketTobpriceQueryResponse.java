@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.airticket.tobprice.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-10-21 17:24:47
+ * @since 1.0, 2026-09-17 18:12:53
  */
 public class AlipayCommerceTransportAirticketTobpriceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3592367673426339561L;
+	private static final long serialVersionUID = 1657329693628442412L;
 
 	/** 
 	 * 机票价格信息

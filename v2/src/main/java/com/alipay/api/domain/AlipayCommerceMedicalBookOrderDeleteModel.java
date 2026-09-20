@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalBookOrderDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4573253178429668867L;
+	private static final long serialVersionUID = 5425476359314618388L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识

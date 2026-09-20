@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租房商品移除接口
  *
  * @author auto create
- * @since 1.0, 2025-06-13 10:18:51
+ * @since 1.0, 2026-09-11 18:07:42
  */
 public class AlipayOpenAppRoomrentDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8764894323272744967L;
+	private static final long serialVersionUID = 6582579547314281642L;
 
 	/**
 	 * 支付宝平台侧商品id 列表，最多20个。

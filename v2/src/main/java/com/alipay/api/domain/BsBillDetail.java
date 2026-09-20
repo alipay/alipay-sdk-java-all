@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BsBillDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 1676615195979898267L;
+	private static final long serialVersionUID = 8423161491136297235L;
 
 	/**
 	 * 西溪路569号
