@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class DatadigitalAicsDevinWorkGetResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7556335642879153576L;
+	private static final long serialVersionUID = 8232542599963194113L;
 
 	/** 
 	 * 数字员工详情，variables 为该数字人话术中引用的模板变量Code列表

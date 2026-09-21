@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayUserCertDocPassport extends AlipayObject {
 
-	private static final long serialVersionUID = 3744886984551997762L;
+	private static final long serialVersionUID = 5868674737379326157L;
 
 	/**
 	 * base64编码后的主页照片

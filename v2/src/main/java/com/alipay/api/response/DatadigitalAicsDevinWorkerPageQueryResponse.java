@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class DatadigitalAicsDevinWorkerPageQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6323121859726213861L;
+	private static final long serialVersionUID = 2359487154299353948L;
 
 	/** 
 	 * 当前页码

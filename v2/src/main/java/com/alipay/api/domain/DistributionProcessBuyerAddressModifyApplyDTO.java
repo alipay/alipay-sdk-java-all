@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 买家地址修改申请
  *
  * @author auto create
- * @since 1.0, 2026-09-04 17:07:50
+ * @since 1.0, 2026-09-21 14:47:55
  */
 public class DistributionProcessBuyerAddressModifyApplyDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8354372186173324422L;
+	private static final long serialVersionUID = 8745316357641939825L;
 
 	/**
 	 * 是否同意；true：表示同意，false：表示不同意

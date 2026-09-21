@@ -12,11 +12,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.mcp.detail.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-09-16 15:06:24
+ * @since 1.0, 2026-09-18 22:32:56
  */
 public class AlipayOpenSpMcpDetailQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2413184724854942272L;
+	private static final long serialVersionUID = 2444281878686111561L;
 
 	/** 
 	 * MCP能力编码状态
@@ -37,10 +37,11 @@ public class AlipayOpenSpMcpDetailQueryResponse extends AlipayResponse {
 	private String encryptAppId;
 
 	/** 
-	 * Header参数列表
+	 * null
 	 */
-	@ApiField("header_list")
-	private HeaderParam headerList;
+	@ApiListField("header_list")
+	@ApiField("header_param")
+	private List<HeaderParam> headerList;
 
 	/** 
 	 * MCP图标文件链接
@@ -78,6 +79,13 @@ public class AlipayOpenSpMcpDetailQueryResponse extends AlipayResponse {
 	@ApiListField("mcp_tool_list")
 	@ApiField("mcp_tool_list")
 	private List<McpToolList> mcpToolList;
+
+	/** 
+	 * null
+	 */
+	@ApiListField("query_list")
+	@ApiField("header_param")
+	private List<HeaderParam> queryList;
 
 	/** 
 	 * 请求超时时间(ms)
@@ -126,10 +134,10 @@ public class AlipayOpenSpMcpDetailQueryResponse extends AlipayResponse {
 		return this.encryptAppId;
 	}
 
-	public void setHeaderList(HeaderParam headerList) {
+	public void setHeaderList(List<HeaderParam> headerList) {
 		this.headerList = headerList;
 	}
-	public HeaderParam getHeaderList( ) {
+	public List<HeaderParam> getHeaderList( ) {
 		return this.headerList;
 	}
 
@@ -173,6 +181,13 @@ public class AlipayOpenSpMcpDetailQueryResponse extends AlipayResponse {
 	}
 	public List<McpToolList> getMcpToolList( ) {
 		return this.mcpToolList;
+	}
+
+	public void setQueryList(List<HeaderParam> queryList) {
+		this.queryList = queryList;
+	}
+	public List<HeaderParam> getQueryList( ) {
+		return this.queryList;
 	}
 
 	public void setRequestTimeout(Long requestTimeout) {

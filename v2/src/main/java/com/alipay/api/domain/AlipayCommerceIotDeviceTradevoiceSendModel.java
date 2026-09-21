@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 到账播报
  *
  * @author auto create
- * @since 1.0, 2026-03-25 21:16:27
+ * @since 1.0, 2026-09-20 11:11:24
  */
 public class AlipayCommerceIotDeviceTradevoiceSendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5369317811424339416L;
+	private static final long serialVersionUID = 3528573341129284542L;
 
 	/**
 	 * 播报的金额，单位元 必须大于0
@@ -36,6 +36,24 @@ public class AlipayCommerceIotDeviceTradevoiceSendModel extends AlipayObject {
 	 */
 	@ApiField("out_order_no")
 	private String outOrderNo;
+
+	/**
+	 * 配合promo_msg_id模板使用的营销语料的金额，单位元
+	 */
+	@ApiField("promo_coupon_money")
+	private String promoCouponMoney;
+
+	/**
+	 * 用于与promo_msg_id配合来使用的动参优惠券数量，单位笔
+	 */
+	@ApiField("promo_coupon_num")
+	private String promoCouponNum;
+
+	/**
+	 * 主要作用是在到账播报后播放营销预料，需要服务商提前联系业务运营申请并取得 promo_msg_id
+	 */
+	@ApiField("promo_msg_id")
+	private String promoMsgId;
 
 	/**
 	 * 间连商户id
@@ -84,6 +102,27 @@ public class AlipayCommerceIotDeviceTradevoiceSendModel extends AlipayObject {
 	}
 	public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
+	}
+
+	public String getPromoCouponMoney() {
+		return this.promoCouponMoney;
+	}
+	public void setPromoCouponMoney(String promoCouponMoney) {
+		this.promoCouponMoney = promoCouponMoney;
+	}
+
+	public String getPromoCouponNum() {
+		return this.promoCouponNum;
+	}
+	public void setPromoCouponNum(String promoCouponNum) {
+		this.promoCouponNum = promoCouponNum;
+	}
+
+	public String getPromoMsgId() {
+		return this.promoMsgId;
+	}
+	public void setPromoMsgId(String promoMsgId) {
+		this.promoMsgId = promoMsgId;
 	}
 
 	public String getSmid() {

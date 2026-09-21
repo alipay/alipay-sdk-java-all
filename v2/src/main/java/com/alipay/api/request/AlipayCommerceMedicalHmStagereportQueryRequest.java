@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.hm.stagereport.query request
  * 
  * @author auto create
- * @since 1.0, 2026-07-28 19:10:19
+ * @since 1.0, 2026-09-21 11:17:53
  */
 public class AlipayCommerceMedicalHmStagereportQueryRequest implements AlipayRequest<AlipayCommerceMedicalHmStagereportQueryResponse> {
 

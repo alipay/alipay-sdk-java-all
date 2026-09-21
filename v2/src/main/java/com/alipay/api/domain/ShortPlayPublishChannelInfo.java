@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ShortPlayPublishChannelInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1184547128524285299L;
+	private static final long serialVersionUID = 6156237565864183216L;
 
 	/**
 	 * CCID，该渠道的短剧标识

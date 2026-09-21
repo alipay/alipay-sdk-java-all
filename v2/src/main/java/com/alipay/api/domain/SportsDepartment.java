@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class SportsDepartment extends AlipayObject {
 
-	private static final long serialVersionUID = 4125326668956821575L;
+	private static final long serialVersionUID = 8481769261257269112L;
 
 	/**
 	 * 部门主键编码

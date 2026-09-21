@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class PhoneNumberItem extends AlipayObject {
 
-	private static final long serialVersionUID = 8651272233198659423L;
+	private static final long serialVersionUID = 1235915248713679927L;
 
 	/**
 	 * 电话号码（下拉选中值，对应任务outboundCaller）

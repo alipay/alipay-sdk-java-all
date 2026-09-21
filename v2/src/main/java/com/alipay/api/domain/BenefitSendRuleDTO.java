@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class BenefitSendRuleDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8897558153649251726L;
+	private static final long serialVersionUID = 2673581267656813674L;
 
 	/**
 	 * 预算

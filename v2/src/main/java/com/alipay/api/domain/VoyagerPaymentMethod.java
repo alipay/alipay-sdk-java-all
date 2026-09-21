@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VoyagerPaymentMethod extends AlipayObject {
 
-	private static final long serialVersionUID = 5476292421616979263L;
+	private static final long serialVersionUID = 7241244187664444426L;
 
 	/**
 	 * 具体支付方式名称，字段类型与请求参数保持一致

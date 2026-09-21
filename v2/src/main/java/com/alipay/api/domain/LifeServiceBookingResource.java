@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LifeServiceBookingResource extends AlipayObject {
 
-	private static final long serialVersionUID = 2678923316514812184L;
+	private static final long serialVersionUID = 8547949828723396935L;
 
 	/**
 	 * 资源服务截止时间，格式：yyyy-MM-dd HH:mm:ss

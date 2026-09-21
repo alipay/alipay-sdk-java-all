@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceMedicalSearchCityQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5388856392242349633L;
+	private static final long serialVersionUID = 8838114942794264711L;
 
 	/** 
 	 * 省份数据列表

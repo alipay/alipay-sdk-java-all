@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RentFastAuditInfoVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2486124874674525918L;
+	private static final long serialVersionUID = 6457361133553623713L;
 
 	/**
 	 * 极速审核任务信息

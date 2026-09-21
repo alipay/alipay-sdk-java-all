@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.operation.service.apply request
  * 
  * @author auto create
- * @since 1.0, 2026-09-03 16:26:06
+ * @since 1.0, 2026-09-20 17:17:53
  */
 public class AlipayCommerceOperationServiceApplyRequest implements AlipayRequest<AlipayCommerceOperationServiceApplyResponse> {
 

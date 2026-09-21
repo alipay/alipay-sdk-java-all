@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class EduAssessmentScore extends AlipayObject {
 
-	private static final long serialVersionUID = 6552223639187996787L;
+	private static final long serialVersionUID = 4368547743919359421L;
 
 	/**
 	 * 评分维度

@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 价格和租期修改信息
  *
  * @author auto create
- * @since 1.0, 2026-09-04 17:07:50
+ * @since 1.0, 2026-09-21 14:47:55
  */
 public class DistributionOrderPriceAndPeriodDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 1511571836641523453L;
+	private static final long serialVersionUID = 6522659758936544925L;
 
 	/**
 	 * 押金，单位为元

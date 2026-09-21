@@ -7,11 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 互联网医院医生基础数据同步
  *
  * @author auto create
- * @since 1.0, 2026-09-16 14:19:12
+ * @since 1.0, 2026-09-20 19:47:52
  */
 public class AlipayCommerceMedicalInquiryDoctorUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5567722654167881269L;
+	private static final long serialVersionUID = 3461765415179743483L;
+
+	/**
+	 * 认证状态
+	 */
+	@ApiField("auth_status")
+	private String authStatus;
+
+	/**
+	 * 变更类型
+	 */
+	@ApiField("change_type")
+	private String changeType;
 
 	/**
 	 * 城市编码
@@ -32,7 +44,13 @@ public class AlipayCommerceMedicalInquiryDoctorUploadModel extends AlipayObject 
 	private String departmentId;
 
 	/**
-	 * 医生问诊类别（图文问诊，电话问诊）
+	 * 外部标准疾病列表
+	 */
+	@ApiField("disease_id_list")
+	private String diseaseIdList;
+
+	/**
+	 * 医生问诊类别
 	 */
 	@ApiField("doctor_category")
 	private String doctorCategory;
@@ -80,6 +98,12 @@ public class AlipayCommerceMedicalInquiryDoctorUploadModel extends AlipayObject 
 	private String doctorTitle;
 
 	/**
+	 * 教育职称
+	 */
+	@ApiField("educate_grade")
+	private String educateGrade;
+
+	/**
 	 * 医生性别
 	 */
 	@ApiField("gender")
@@ -116,10 +140,36 @@ public class AlipayCommerceMedicalInquiryDoctorUploadModel extends AlipayObject 
 	private String isvCode;
 
 	/**
+	 * 官方医院名称
+	 */
+	@ApiField("official_hos_name")
+	private String officialHosName;
+
+	/**
 	 * 来源平台 code
 	 */
 	@ApiField("platform_code")
 	private String platformCode;
+
+	/**
+	 * 医生擅长疾病（多个擅长疾病时用英文逗号分隔）
+	 */
+	@ApiField("skilled_disease")
+	private String skilledDisease;
+
+	public String getAuthStatus() {
+		return this.authStatus;
+	}
+	public void setAuthStatus(String authStatus) {
+		this.authStatus = authStatus;
+	}
+
+	public String getChangeType() {
+		return this.changeType;
+	}
+	public void setChangeType(String changeType) {
+		this.changeType = changeType;
+	}
 
 	public String getCityCode() {
 		return this.cityCode;
@@ -140,6 +190,13 @@ public class AlipayCommerceMedicalInquiryDoctorUploadModel extends AlipayObject 
 	}
 	public void setDepartmentId(String departmentId) {
 		this.departmentId = departmentId;
+	}
+
+	public String getDiseaseIdList() {
+		return this.diseaseIdList;
+	}
+	public void setDiseaseIdList(String diseaseIdList) {
+		this.diseaseIdList = diseaseIdList;
 	}
 
 	public String getDoctorCategory() {
@@ -198,6 +255,13 @@ public class AlipayCommerceMedicalInquiryDoctorUploadModel extends AlipayObject 
 		this.doctorTitle = doctorTitle;
 	}
 
+	public String getEducateGrade() {
+		return this.educateGrade;
+	}
+	public void setEducateGrade(String educateGrade) {
+		this.educateGrade = educateGrade;
+	}
+
 	public String getGender() {
 		return this.gender;
 	}
@@ -240,11 +304,25 @@ public class AlipayCommerceMedicalInquiryDoctorUploadModel extends AlipayObject 
 		this.isvCode = isvCode;
 	}
 
+	public String getOfficialHosName() {
+		return this.officialHosName;
+	}
+	public void setOfficialHosName(String officialHosName) {
+		this.officialHosName = officialHosName;
+	}
+
 	public String getPlatformCode() {
 		return this.platformCode;
 	}
 	public void setPlatformCode(String platformCode) {
 		this.platformCode = platformCode;
+	}
+
+	public String getSkilledDisease() {
+		return this.skilledDisease;
+	}
+	public void setSkilledDisease(String skilledDisease) {
+		this.skilledDisease = skilledDisease;
 	}
 
 }

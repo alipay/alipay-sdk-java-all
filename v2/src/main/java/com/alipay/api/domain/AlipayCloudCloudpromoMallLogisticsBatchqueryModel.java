@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCloudCloudpromoMallLogisticsBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5699627587537277576L;
+	private static final long serialVersionUID = 4262418329467827311L;
 
 	/**
 	 * 订单号

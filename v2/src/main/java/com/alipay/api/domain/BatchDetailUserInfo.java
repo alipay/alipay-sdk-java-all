@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BatchDetailUserInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1483851153774673322L;
+	private static final long serialVersionUID = 7681383353136651975L;
 
 	/**
 	 * 转入方主体业务类型,待结算:unsettled,已结算:settled

@@ -17,7 +17,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class ZhimaCustomerZmcardCarownerQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2124399781383828336L;
+	private static final long serialVersionUID = 4764985635457822288L;
 
 	/** 
 	 * 车主名片驾驶证信息

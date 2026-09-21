@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 互联网医院医生服务数据同步
  *
  * @author auto create
- * @since 1.0, 2026-08-24 20:57:47
+ * @since 1.0, 2026-09-20 19:47:52
  */
 public class AlipayCommerceMedicalInquiryServiceSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4114128623368788643L;
+	private static final long serialVersionUID = 8259913666422154875L;
 
 	/**
 	 * 平均接诊时间，单位：分钟

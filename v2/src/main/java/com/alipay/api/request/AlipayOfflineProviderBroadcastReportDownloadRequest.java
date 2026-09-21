@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.offline.provider.broadcast.report.download request
  * 
  * @author auto create
- * @since 1.0, 2026-09-17 19:47:53
+ * @since 1.0, 2026-09-21 16:17:53
  */
 public class AlipayOfflineProviderBroadcastReportDownloadRequest implements AlipayRequest<AlipayOfflineProviderBroadcastReportDownloadResponse> {
 

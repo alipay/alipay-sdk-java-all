@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-07-02 14:17:56
+ * @since 1.0, 2026-09-20 15:31:31
  */
 public class ItemCardOpenapi extends AlipayObject {
 
-	private static final long serialVersionUID = 5746215158136181127L;
+	private static final long serialVersionUID = 2362144999124998441L;
 
 	/**
 	 * 支测商品id

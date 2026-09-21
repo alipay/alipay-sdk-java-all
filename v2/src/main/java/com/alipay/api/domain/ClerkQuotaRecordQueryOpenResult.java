@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ClerkQuotaRecordQueryOpenResult extends AlipayObject {
 
-	private static final long serialVersionUID = 2866145586668686875L;
+	private static final long serialVersionUID = 1862569344536881892L;
 
 	/**
 	 * 变更金额（元，正数，支持两位小数）

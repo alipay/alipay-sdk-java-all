@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.sp.mcp.tool.add request
  * 
  * @author auto create
- * @since 1.0, 2026-08-05 16:32:53
+ * @since 1.0, 2026-09-18 22:32:55
  */
 public class AlipayOpenSpMcpToolAddRequest implements AlipayRequest<AlipayOpenSpMcpToolAddResponse> {
 

@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ApUserInvoiceInfoOpenApiResponse extends AlipayObject {
 
-	private static final long serialVersionUID = 4425883716832819684L;
+	private static final long serialVersionUID = 1755652537386482621L;
 
 	/**
 	 * (AR开票使用)是否接受电子票 true:是，false:否

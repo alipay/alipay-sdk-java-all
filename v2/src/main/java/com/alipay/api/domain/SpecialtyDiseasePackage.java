@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-09-18 14:17:53
+ * @since 1.0, 2026-09-21 16:27:53
  */
 public class SpecialtyDiseasePackage extends AlipayObject {
 
-	private static final long serialVersionUID = 2286837496389595516L;
+	private static final long serialVersionUID = 7543581669192667689L;
 
 	/**
 	 * 履约有效天数
@@ -28,6 +28,12 @@ public class SpecialtyDiseasePackage extends AlipayObject {
 	@ApiListField("items")
 	@ApiField("right_info")
 	private List<RightInfo> items;
+
+	/**
+	 * 领衔医生Id
+	 */
+	@ApiField("lead_doctor_id")
+	private String leadDoctorId;
 
 	/**
 	 * 服务包订单状态
@@ -71,6 +77,13 @@ public class SpecialtyDiseasePackage extends AlipayObject {
 	}
 	public void setItems(List<RightInfo> items) {
 		this.items = items;
+	}
+
+	public String getLeadDoctorId() {
+		return this.leadDoctorId;
+	}
+	public void setLeadDoctorId(String leadDoctorId) {
+		this.leadDoctorId = leadDoctorId;
 	}
 
 	public Long getOrderStatus() {

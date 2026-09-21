@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayFundTransAppMergeConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7563332513585228725L;
+	private static final long serialVersionUID = 8881796988653477472L;
 
 	/** 
 	 * 合并付款单据号

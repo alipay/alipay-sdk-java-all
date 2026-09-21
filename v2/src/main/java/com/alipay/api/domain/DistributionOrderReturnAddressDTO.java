@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 订单归还地址
  *
  * @author auto create
- * @since 1.0, 2026-09-04 17:07:50
+ * @since 1.0, 2026-09-21 14:47:55
  */
 public class DistributionOrderReturnAddressDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8659179146552413642L;
+	private static final long serialVersionUID = 4356638994333879198L;
 
 	/**
 	 * 地址ID，通过地址管理接口维护和获取

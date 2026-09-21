@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 分销订单归还验货
  *
  * @author auto create
- * @since 1.0, 2026-09-04 17:07:56
+ * @since 1.0, 2026-09-21 14:57:51
  */
 public class AlipayCommerceRentDistorderInspectModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3515675477746714892L;
+	private static final long serialVersionUID = 8112776296788781248L;
 
 	/**
 	 * 分销订单号

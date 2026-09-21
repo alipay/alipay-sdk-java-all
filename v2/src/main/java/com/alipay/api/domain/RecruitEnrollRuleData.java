@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class RecruitEnrollRuleData extends AlipayObject {
 
-	private static final long serialVersionUID = 5835944517657246858L;
+	private static final long serialVersionUID = 6318461375487412884L;
 
 	/**
 	 * 招商方案可提报的券的规则列表，不同的券有不同的规则。

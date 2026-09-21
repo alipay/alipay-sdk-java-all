@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class UseDuration extends AlipayObject {
 
-	private static final long serialVersionUID = 1353495337434924285L;
+	private static final long serialVersionUID = 1838678688735148169L;
 
 	/**
 	 * 金额卡的不可用时间范围

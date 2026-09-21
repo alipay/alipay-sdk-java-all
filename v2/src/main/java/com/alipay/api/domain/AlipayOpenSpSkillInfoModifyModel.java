@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 服务商代商户SKILL信息修改
  *
  * @author auto create
- * @since 1.0, 2026-08-05 16:32:54
+ * @since 1.0, 2026-09-20 11:07:24
  */
 public class AlipayOpenSpSkillInfoModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7447616562998892211L;
+	private static final long serialVersionUID = 8338321879443877442L;
 
 	/**
 	 * SKILL能力编码code

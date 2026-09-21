@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 服务商代商户创建MCP
  *
  * @author auto create
- * @since 1.0, 2026-09-16 15:06:25
+ * @since 1.0, 2026-09-18 22:32:55
  */
 public class AlipayOpenSpMcpCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4513985834524189299L;
+	private static final long serialVersionUID = 1394233945196514658L;
 
 	/**
 	 * 商户支付宝账号
@@ -94,6 +94,13 @@ public class AlipayOpenSpMcpCreateModel extends AlipayObject {
 	 */
 	@ApiField("parameter_name")
 	private String parameterName;
+
+	/**
+	 * null
+	 */
+	@ApiListField("query_list")
+	@ApiField("header_param")
+	private List<HeaderParam> queryList;
 
 	/**
 	 * 请求超时时间(ms)
@@ -209,6 +216,13 @@ public class AlipayOpenSpMcpCreateModel extends AlipayObject {
 	}
 	public void setParameterName(String parameterName) {
 		this.parameterName = parameterName;
+	}
+
+	public List<HeaderParam> getQueryList() {
+		return this.queryList;
+	}
+	public void setQueryList(List<HeaderParam> queryList) {
+		this.queryList = queryList;
 	}
 
 	public Long getRequestTimeout() {

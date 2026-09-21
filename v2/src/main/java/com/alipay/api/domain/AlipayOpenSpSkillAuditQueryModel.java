@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 服务商代商户SKILL审核结果查询
  *
  * @author auto create
- * @since 1.0, 2026-08-05 16:32:53
+ * @since 1.0, 2026-09-20 10:03:36
  */
 public class AlipayOpenSpSkillAuditQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5558338887838547318L;
+	private static final long serialVersionUID = 6438866646313437326L;
 
 	/**
 	 * SKILL能力编码code

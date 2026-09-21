@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 医生服务包列表查询
  *
  * @author auto create
- * @since 1.0, 2026-09-18 14:17:53
+ * @since 1.0, 2026-09-21 16:27:53
  */
 public class AlipayCommerceMedicalServicepackageListQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4456444243316667272L;
+	private static final long serialVersionUID = 6363118616467855249L;
 
 	/**
 	 * 是否过滤标识
@@ -33,6 +33,13 @@ public class AlipayCommerceMedicalServicepackageListQueryModel extends AlipayObj
 	 */
 	@ApiField("lead_doctor_id")
 	private String leadDoctorId;
+
+	/**
+	 * null
+	 */
+	@ApiListField("lead_doctor_ids")
+	@ApiField("string")
+	private List<String> leadDoctorIds;
 
 	/**
 	 * null
@@ -66,6 +73,13 @@ public class AlipayCommerceMedicalServicepackageListQueryModel extends AlipayObj
 	}
 	public void setLeadDoctorId(String leadDoctorId) {
 		this.leadDoctorId = leadDoctorId;
+	}
+
+	public List<String> getLeadDoctorIds() {
+		return this.leadDoctorIds;
+	}
+	public void setLeadDoctorIds(List<String> leadDoctorIds) {
+		this.leadDoctorIds = leadDoctorIds;
 	}
 
 	public List<String> getPackageIdList() {

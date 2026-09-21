@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.mcp.create response.
  * 
  * @author auto create
- * @since 1.0, 2026-09-16 15:06:25
+ * @since 1.0, 2026-09-18 22:32:55
  */
 public class AlipayOpenSpMcpCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6219692168167121226L;
+	private static final long serialVersionUID = 8337323935131313495L;
 
 	/** 
 	 * 申请单号

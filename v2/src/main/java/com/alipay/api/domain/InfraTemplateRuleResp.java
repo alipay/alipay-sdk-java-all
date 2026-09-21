@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class InfraTemplateRuleResp extends AlipayObject {
 
-	private static final long serialVersionUID = 4213368448242459371L;
+	private static final long serialVersionUID = 8271794539874461563L;
 
 	/**
 	 * 素材必传校验规则,如果值为MUST则代表必填,如果值为OPTIONAL则代表非必填

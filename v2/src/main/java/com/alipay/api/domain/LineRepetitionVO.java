@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class LineRepetitionVO extends AlipayObject {
 
-	private static final long serialVersionUID = 2275746722589275567L;
+	private static final long serialVersionUID = 8785313179152135816L;
 
 	/**
 	 * 城市编码

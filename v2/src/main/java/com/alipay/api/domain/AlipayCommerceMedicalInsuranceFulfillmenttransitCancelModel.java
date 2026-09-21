@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalInsuranceFulfillmenttransitCancelModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4632198845461847743L;
+	private static final long serialVersionUID = 1316224315386394754L;
 
 	/**
 	 * 渠道

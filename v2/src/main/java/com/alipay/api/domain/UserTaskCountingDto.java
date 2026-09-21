@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class UserTaskCountingDto extends AlipayObject {
 
-	private static final long serialVersionUID = 7866791997211948471L;
+	private static final long serialVersionUID = 2229379669693436293L;
 
 	/**
 	 * 周期之内的最大累计计数

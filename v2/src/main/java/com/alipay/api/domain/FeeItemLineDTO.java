@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class FeeItemLineDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4541998722478649129L;
+	private static final long serialVersionUID = 2281162616883416134L;
 
 	/**
 	 * 金额总量 = price * quantity，单位：分，188898表示1888.98元

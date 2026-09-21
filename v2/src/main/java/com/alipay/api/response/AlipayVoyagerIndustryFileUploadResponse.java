@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.voyager.industry.file.upload response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-13 11:00:33
+ * @since 1.0, 2026-09-21 12:31:31
  */
 public class AlipayVoyagerIndustryFileUploadResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6232614499344484885L;
+	private static final long serialVersionUID = 4411265434436414323L;
 
 	/** 
 	 * 文件上传成功后的链接

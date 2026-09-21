@@ -1,6 +1,8 @@
 package com.alipay.api.request;
 
 import java.util.Date;
+import java.util.List;
+import com.alipay.api.domain.InvoiceTravelInfo;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -14,7 +16,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.ec.tcn.invoiceapply.upload request
  * 
  * @author auto create
- * @since 1.0, 2026-08-25 16:51:06
+ * @since 1.0, 2026-09-18 19:17:52
  */
 public class AlipayCommerceEcTcnInvoiceapplyUploadRequest implements AlipayUploadRequest<AlipayCommerceEcTcnInvoiceapplyUploadResponse> {
 
@@ -160,6 +162,11 @@ public class AlipayCommerceEcTcnInvoiceapplyUploadRequest implements AlipayUploa
 	* 销方电话
 	 */
 	private String sellerTel;
+
+	/** 
+	* 旅客运输行程列表
+	 */
+	private List<InvoiceTravelInfo> travelInfoList;
 
 	public void setApplyId(String applyId) {
 		this.applyId = applyId;
@@ -356,6 +363,13 @@ public class AlipayCommerceEcTcnInvoiceapplyUploadRequest implements AlipayUploa
 	public String getSellerTel() {
 		return this.sellerTel;
 	}
+
+	public void setTravelInfoList(List<InvoiceTravelInfo> travelInfoList) {
+		this.travelInfoList = travelInfoList;
+	}
+	public List<InvoiceTravelInfo> getTravelInfoList() {
+		return this.travelInfoList;
+	}
 	private String terminalType;
 	private String terminalInfo;
 	private String prodCode;
@@ -444,6 +458,7 @@ public class AlipayCommerceEcTcnInvoiceapplyUploadRequest implements AlipayUploa
 		txtParams.put("seller_name", this.sellerName);
 		txtParams.put("seller_tax_no", this.sellerTaxNo);
 		txtParams.put("seller_tel", this.sellerTel);
+		txtParams.put("travel_info_list", this.travelInfoList == null? null : new com.alipay.api.internal.util.json.JSONWriter().write(this.travelInfoList, true));
 		if(udfParams != null) {
 			txtParams.putAll(this.udfParams);
 		}

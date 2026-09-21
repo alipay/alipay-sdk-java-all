@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DelegationTaskParams extends AlipayObject {
 
-	private static final long serialVersionUID = 3264265986141286614L;
+	private static final long serialVersionUID = 7131644133888779597L;
 
 	/**
 	 * 如15天周期内可执行3次，这里是15次，周期单元前的数据

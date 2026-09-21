@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class HDFConditiondesc extends AlipayObject {
 
-	private static final long serialVersionUID = 5678681111528524739L;
+	private static final long serialVersionUID = 5545416481479593827L;
 
 	/**
 	 * 病情描述

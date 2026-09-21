@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class WhiteTypeItem extends AlipayObject {
 
-	private static final long serialVersionUID = 6343659154881646192L;
+	private static final long serialVersionUID = 1271759156792181371L;
 
 	/**
 	 * 白名单类型名称

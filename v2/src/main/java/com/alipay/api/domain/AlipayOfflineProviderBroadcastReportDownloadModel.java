@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 音响数据明细文件下载
  *
  * @author auto create
- * @since 1.0, 2026-09-17 19:44:12
+ * @since 1.0, 2026-09-21 16:03:18
  */
 public class AlipayOfflineProviderBroadcastReportDownloadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5284221776113563625L;
+	private static final long serialVersionUID = 7841371779776229285L;
 
 	/**
 	 * 音响设备SN，输入后将仅导出对应音响设备的数据，同时输入smid和device_sn会取AND逻辑

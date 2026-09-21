@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class MybankFinanceYulibaoPriceQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3622931791742674766L;
+	private static final long serialVersionUID = 1388575476269415553L;
 
 	/** 
 	 * 余利宝行情信息列表

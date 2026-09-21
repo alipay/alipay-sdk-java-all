@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 收单扩展参数。具体字段按SaasExtendParams结构传入。
  *
  * @author auto create
- * @since 1.0, 2026-09-17 22:54:46
+ * @since 1.0, 2026-09-18 19:57:53
  */
 public class SaasExtendParams extends AlipayObject {
 
-	private static final long serialVersionUID = 8182157293558991614L;
+	private static final long serialVersionUID = 4779977156264177631L;
 
 	/**
 	 * 卡类型
@@ -24,6 +24,12 @@ public class SaasExtendParams extends AlipayObject {
 	 */
 	@ApiField("credit_ext_info")
 	private String creditExtInfo;
+
+	/**
+	 * 定制化通知的notify_url
+	 */
+	@ApiField("custom_notify_url")
+	private String customNotifyUrl;
 
 	/**
 	 * 使用花呗分期要进行的分期数
@@ -85,6 +91,13 @@ public class SaasExtendParams extends AlipayObject {
 	}
 	public void setCreditExtInfo(String creditExtInfo) {
 		this.creditExtInfo = creditExtInfo;
+	}
+
+	public String getCustomNotifyUrl() {
+		return this.customNotifyUrl;
+	}
+	public void setCustomNotifyUrl(String customNotifyUrl) {
+		this.customNotifyUrl = customNotifyUrl;
 	}
 
 	public String getHbFqNum() {

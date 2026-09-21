@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class SyllabusStructuredQueryVO extends AlipayObject {
 
-	private static final long serialVersionUID = 3859619163239899672L;
+	private static final long serialVersionUID = 4114328758983867115L;
 
 	/**
 	 * 章节

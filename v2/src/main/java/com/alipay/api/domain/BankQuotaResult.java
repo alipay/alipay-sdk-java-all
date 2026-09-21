@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class BankQuotaResult extends AlipayObject {
 
-	private static final long serialVersionUID = 4396791596594828735L;
+	private static final long serialVersionUID = 6521458413732274388L;
 
 	/**
 	 * 月度额度（单位：元）

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业务扩展参数
  *
  * @author auto create
- * @since 1.0, 2024-10-28 16:11:53
+ * @since 1.0, 2026-09-21 15:38:41
  */
 public class ExtendParams extends AlipayObject {
 
-	private static final long serialVersionUID = 2745738647682376925L;
+	private static final long serialVersionUID = 1351977388828673277L;
 
 	/**
 	 * 卡类型
@@ -24,6 +24,24 @@ public class ExtendParams extends AlipayObject {
 	 */
 	@ApiField("credit_ext_info")
 	private String creditExtInfo;
+
+	/**
+	 * 分期渠道
+	 */
+	@ApiField("fq_channels")
+	private String fqChannels;
+
+	/**
+	 * 使用花呗分期的期数
+	 */
+	@ApiField("fq_num")
+	private String fqNum;
+
+	/**
+	 * 花呗分期卖家承担收费比例
+	 */
+	@ApiField("fq_seller_percent")
+	private String fqSellerPercent;
 
 	/**
 	 * 使用花呗分期要进行的分期数
@@ -86,6 +104,27 @@ public class ExtendParams extends AlipayObject {
 	}
 	public void setCreditExtInfo(String creditExtInfo) {
 		this.creditExtInfo = creditExtInfo;
+	}
+
+	public String getFqChannels() {
+		return this.fqChannels;
+	}
+	public void setFqChannels(String fqChannels) {
+		this.fqChannels = fqChannels;
+	}
+
+	public String getFqNum() {
+		return this.fqNum;
+	}
+	public void setFqNum(String fqNum) {
+		this.fqNum = fqNum;
+	}
+
+	public String getFqSellerPercent() {
+		return this.fqSellerPercent;
+	}
+	public void setFqSellerPercent(String fqSellerPercent) {
+		this.fqSellerPercent = fqSellerPercent;
 	}
 
 	public String getHbFqNum() {

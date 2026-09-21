@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayDataDataserviceAdMateriallibraryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7768181214273191145L;
+	private static final long serialVersionUID = 6142448789559332794L;
 
 	/** 
 	 * 素材列表值

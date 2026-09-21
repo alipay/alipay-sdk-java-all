@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.rent.distorder.close request
  * 
  * @author auto create
- * @since 1.0, 2026-09-04 17:07:50
+ * @since 1.0, 2026-09-21 14:57:51
  */
 public class AlipayCommerceRentDistorderCloseRequest implements AlipayRequest<AlipayCommerceRentDistorderCloseResponse> {
 

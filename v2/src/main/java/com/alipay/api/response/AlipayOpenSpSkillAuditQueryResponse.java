@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.skill.audit.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-08-05 16:32:53
+ * @since 1.0, 2026-09-20 10:03:36
  */
 public class AlipayOpenSpSkillAuditQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1899937466576227273L;
+	private static final long serialVersionUID = 4494693745679579924L;
 
 	/** 
 	 * 审核结果：true-通过, false-未通过

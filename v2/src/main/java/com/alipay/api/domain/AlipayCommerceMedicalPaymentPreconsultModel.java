@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceMedicalPaymentPreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3899994625342358683L;
+	private static final long serialVersionUID = 3422561121473335412L;
 
 	/**
 	 * 支付金额,单位：元，精确到分。商保支付场景必选

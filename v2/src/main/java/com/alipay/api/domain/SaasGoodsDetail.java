@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商品明细列表。用于描述本次收款关联的商品或服务明细。
  *
  * @author auto create
- * @since 1.0, 2026-09-17 22:54:46
+ * @since 1.0, 2026-09-18 19:57:53
  */
 public class SaasGoodsDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 8827785774196964728L;
+	private static final long serialVersionUID = 5694223293584322154L;
 
 	/**
 	 * 支付宝定义的统一商品编号

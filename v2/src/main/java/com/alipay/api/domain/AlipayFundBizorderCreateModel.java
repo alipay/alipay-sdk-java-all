@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayFundBizorderCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4383179887919717226L;
+	private static final long serialVersionUID = 5455493147912763968L;
 
 	/**
 	 * 转账请求的扩展参数，具体请与支付宝工程师联系

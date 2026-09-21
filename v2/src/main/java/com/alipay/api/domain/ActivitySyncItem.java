@@ -15,7 +15,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ActivitySyncItem extends AlipayObject {
 
-	private static final long serialVersionUID = 8579259552145995511L;
+	private static final long serialVersionUID = 8428925271242485176L;
 
 	/**
 	 * 单次同步活动商品只能维护20种，超过20种需要上传完整活动商品，则需要分批上传，用于描述所属具体活动id的批次

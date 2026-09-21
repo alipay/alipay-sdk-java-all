@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 互联网医院医院数据同步
  *
  * @author auto create
- * @since 1.0, 2026-08-24 20:57:47
+ * @since 1.0, 2026-09-20 19:47:52
  */
 public class AlipayCommerceMedicalInquiryHospitalSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4641977491568451827L;
+	private static final long serialVersionUID = 3338934433627683925L;
 
 	/**
 	 * 院区类型
@@ -116,13 +116,13 @@ public class AlipayCommerceMedicalInquiryHospitalSyncModel extends AlipayObject 
 	private String isvCode;
 
 	/**
-	 * 医院纬度
+	 * 医院纬度，单位：度
 	 */
 	@ApiField("latitude")
 	private String latitude;
 
 	/**
-	 * 医院经度
+	 * 医院经度，单位：度
 	 */
 	@ApiField("longitude")
 	private String longitude;

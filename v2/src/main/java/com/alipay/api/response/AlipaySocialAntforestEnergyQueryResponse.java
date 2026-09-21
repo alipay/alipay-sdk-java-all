@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.social.antforest.energy.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-04-21 15:34:01
+ * @since 1.0, 2026-09-21 11:29:55
  */
 public class AlipaySocialAntforestEnergyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8771325299359372929L;
+	private static final long serialVersionUID = 7271673344853692568L;
 
 	/** 
 	 * 当前用户可用能量值（单位是g)

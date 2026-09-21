@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ServicepackagePatientInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 1321375178918981912L;
+	private static final long serialVersionUID = 2215413422884161941L;
 
 	/**
 	 * 年龄

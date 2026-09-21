@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.charger.zhima.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-09-15 14:57:54
+ * @since 1.0, 2026-09-21 11:07:57
  */
 public class AlipayCommerceTransportChargerZhimaQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5691626491531753136L;
+	private static final long serialVersionUID = 6372286268838229547L;
 
 	/** 
 	 * 开通/授权状态，VALID: 有效，INVALID: 无效

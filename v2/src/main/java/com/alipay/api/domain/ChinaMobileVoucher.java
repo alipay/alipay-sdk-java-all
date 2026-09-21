@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ChinaMobileVoucher extends AlipayObject {
 
-	private static final long serialVersionUID = 1355293199932596712L;
+	private static final long serialVersionUID = 1585646411375532674L;
 
 	/**
 	 * 支付宝券操作消息中的操作时间

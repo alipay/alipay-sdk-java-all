@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.sp.skill.audit.query request
  * 
  * @author auto create
- * @since 1.0, 2026-08-05 16:32:53
+ * @since 1.0, 2026-09-20 10:03:36
  */
 public class AlipayOpenSpSkillAuditQueryRequest implements AlipayRequest<AlipayOpenSpSkillAuditQueryResponse> {
 

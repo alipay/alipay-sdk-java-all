@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.open.sp.skill.info.modify response.
  * 
  * @author auto create
- * @since 1.0, 2026-08-05 16:32:54
+ * @since 1.0, 2026-09-20 11:07:24
  */
 public class AlipayOpenSpSkillInfoModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5884334772322357841L;
+	private static final long serialVersionUID = 3369192999938625329L;
 
 	/** 
 	 * SKILL能力编码code

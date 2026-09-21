@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TourStockInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7535476479225236814L;
+	private static final long serialVersionUID = 4234929992793631853L;
 
 	/**
 	 * 库存日期，格式为YYYY-MM-DD

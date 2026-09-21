@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.open.sp.mcp.debug.submit request
  * 
  * @author auto create
- * @since 1.0, 2026-09-15 11:55:49
+ * @since 1.0, 2026-09-18 22:32:55
  */
 public class AlipayOpenSpMcpDebugSubmitRequest implements AlipayRequest<AlipayOpenSpMcpDebugSubmitResponse> {
 

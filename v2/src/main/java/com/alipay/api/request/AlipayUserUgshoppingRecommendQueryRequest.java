@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.ugshopping.recommend.query request
  * 
  * @author auto create
- * @since 1.0, 2026-07-02 14:17:56
+ * @since 1.0, 2026-09-20 15:31:31
  */
 public class AlipayUserUgshoppingRecommendQueryRequest implements AlipayRequest<AlipayUserUgshoppingRecommendQueryResponse> {
 

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ZhimaCreditEpAssistantMembershippackageOrderModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4827876656898469493L;
+	private static final long serialVersionUID = 5493989417783362441L;
 
 	/**
 	 * 续约时长数量，其单位依赖于duration_unit表示的单位类型，如 duration_unit=HALF_YEAR，duration_quantity=3 则表示一年半

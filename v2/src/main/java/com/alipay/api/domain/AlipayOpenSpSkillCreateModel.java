@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 服务商代商户创建SKILL
  *
  * @author auto create
- * @since 1.0, 2026-08-05 16:32:54
+ * @since 1.0, 2026-09-20 10:03:58
  */
 public class AlipayOpenSpSkillCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4493731822892165933L;
+	private static final long serialVersionUID = 6155678654588733661L;
 
 	/**
 	 * 商户支付宝账号

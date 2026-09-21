@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CompanyProductConfig extends AlipayObject {
 
-	private static final long serialVersionUID = 5678134938245234976L;
+	private static final long serialVersionUID = 3459868428697881749L;
 
 	/**
 	 * 银行卡收款月度额度（最近两个月）

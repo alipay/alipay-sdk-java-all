@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 订阅修改
  *
  * @author auto create
- * @since 1.0, 2026-09-18 17:32:54
+ * @since 1.0, 2026-09-21 12:20:51
  */
 public class AlipayTradeSubscriptionModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2518671362685879721L;
+	private static final long serialVersionUID = 3864978682656393985L;
 
 	/**
 	 * 是否在周期结束时取消，仅用于取消/取消后恢复订阅，其他场景无需使用。

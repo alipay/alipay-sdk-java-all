@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ApprovalTripDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 6588283671652667628L;
+	private static final long serialVersionUID = 3261493551347744418L;
 
 	/**
 	 * 行程对应到达日期
