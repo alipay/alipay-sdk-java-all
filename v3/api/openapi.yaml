@@ -5,7 +5,7 @@ info:
     url: https://opendocs.alipay.com/open-v3/053sd1
   description: 支付宝开放平台v3协议文档
   title: 支付宝开放平台API
-  version: 2026-08-26
+  version: 2026-09-23
 servers:
 - description: Production server
   url: https://openapi.alipay.com
@@ -29365,7 +29365,7 @@ components:
           example: true
           type: boolean
         withholding_sign_str:
-          description: 代扣签约字符串，员工需签约开通代扣时必传，否则无需传值
+          description: 代扣签约字符串，员工需签约开通代扣时必传，否则无需传值；另外，如需参与企业码针对代扣的营销活动的服务商，必须要将该字段上传
           example: app_id%3D2015052600090779%26biz_content%3D%257B%2522access_params%2522%253A%257B%2522channel%2522%253A%2522ALIPAYAPP%2522%257D%252C%2522external_agreement_no%2522%253A%25222019_06_0910%2522%252C%2522personal_product_code%2522%253A%2522...
           type: string
       type: object
@@ -30018,6 +30018,7 @@ components:
         code:
           description: 错误码
           enum:
+          - SERVICE_NOT_SUPPORT
           - INVALID_PARAMETER
           - SYSTEM_ERROR
           - ENTERPRISE_NO_AUTH
@@ -36149,6 +36150,10 @@ components:
           description: 支付策略
           example: COMBINATION
           type: string
+        payment_time_mode:
+          description: 支付时间模式，用于控制支付时的时间。该字段缺省时采用“支付时间或预计送达时间”，两个时间只要有一个命中即可使用因公付
+          example: PAYMENT_TIME
+          type: string
         personal_qrcode_mode:
           description: 个人收款码转账是否支持因公付，默认为0。可选值：0（不支持）、1（支持）
           example: 0
@@ -36293,6 +36298,10 @@ components:
         payment_policy:
           description: 当笔消费金额大于规则可用余额时，用于控制支付策略
           example: COMBINATION
+          type: string
+        payment_time_mode:
+          description: 支付时间模式，用于控制支付时的时间。该字段缺省时采用“支付时间或预计送达时间”，两个时间只要有一个命中即可使用因公付
+          example: PAYMENT_TIME
           type: string
         personal_qrcode_mode:
           description: 个人收款码转账是否支持因公付，默认为0。可选值：0（不支持）、1（支持）
@@ -43582,6 +43591,14 @@ components:
         code:
           description: 错误码
           enum:
+          - SHARING_TRANSFER_REMARK_OVER_LIMIT
+          - SHARING_ACCOUNT_SAME_AS_RECEIVER
+          - SHARING_COUNT_OVER_LIMIT
+          - SHARING_AMOUNT_SUM_NOT_EQUAL
+          - SHARING_INFO_ERROR
+          - SHARING_AMOUNT_INVALID
+          - SHARING_ACCOUNT_NOT_EXIST
+          - SHARING_ACCOUNT_STATUS_ERROR
           - PAYEE_NOT_EXIST
           - ENTERPRISE_IDENTITY_INFO_NEED_UPDATE
           - CHECK_RECEIVER_CERT_NOT_ALLOW
@@ -78986,6 +79003,15 @@ components:
         credit_ext_info:
           description: 信用参数，可选，如有需要请与芝麻约定后传入，信用服务说明见
           type: string
+        fq_channels:
+          description: 分期渠道
+          type: string
+        fq_num:
+          description: 使用花呗分期的期数
+          type: string
+        fq_seller_percent:
+          description: 花呗分期卖家承担收费比例
+          type: string
         hb_fq_num:
           description: 使用花呗分期要进行的分期数
           type: string
@@ -83076,6 +83102,10 @@ components:
         payment_policy:
           description: 支付策略 当笔消费金额大于规则可用余额时，用于控制支付策略。COMBINATION表示支持因公资产和个人资产组合支付，PERSONAL表示整单个人支付。
           example: COMBINATION
+          type: string
+        payment_time_mode:
+          description: 支付时间模式，用于控制支付时的时间。该字段缺省时采用“支付时间或预计送达时间”，两个时间只要有一个命中即可使用因公付
+          example: PAYMENT_TIME
           type: string
         personal_qrcode_mode:
           description: 个人收款码转账是否支持因公付。可选值：0（不支持）、1（支持）
@@ -88449,6 +88479,9 @@ components:
         payment_policy:
           description: 支付策略 当笔消费金额大于规则可用余额时，用于控制支付策略，该字段缺省时采取因公账户和个人账户组合支付策略
           type: string
+        payment_time_mode:
+          description: 支付时间模式，用于控制支付时的时间。该字段缺省时采用“支付时间或预计送达时间”，两个时间只要有一个命中即可使用因公付
+          type: string
         personal_qrcode_mode:
           description: 个人收款码转账是否支持因公付，默认为0。可选值：0（不支持）、1（支持）
           type: integer
@@ -92787,6 +92820,10 @@ components:
         identity_result_skip_url:
           description: 身份认证查询结果页面的小程序链接，有芝麻提供，用户在端内可直接访问
           example: alipays://platformapi/startapp?appId
+          type: string
+        merchant_identity_id:
+          description: 表示在商户下已经发起过验证的用户唯一标志，如果用户已经发起过验证，那么这个标志会相同返回
+          example: V1_4dc286a6e91c9d51104e1172813b34c5
           type: string
         open_id:
           description: 蚂蚁统一会员ID
