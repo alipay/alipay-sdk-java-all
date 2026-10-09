@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * 晓叶AI定向邀约批量发送
+ * 定向邀约-批量发送
  *
  * @author auto create
- * @since 1.0, 2026-09-24 13:57:54
+ * @since 1.0, 2026-10-08 09:47:54
  */
 public class AlipayCommerceCareerOpenbaseInvitationBatchsendModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1399528626895719721L;
+	private static final long serialVersionUID = 5299767537434275513L;
 
 	/**
 	 * null
@@ -24,7 +24,7 @@ public class AlipayCommerceCareerOpenbaseInvitationBatchsendModel extends Alipay
 	private List<CareerOpenBaseInvitationDetail> batchDetails;
 
 	/**
-	 * 外部批次号
+	 * 外部批次号，需要保证全局唯一，相同 out_batch_no 重复提交批次会被拒绝。
 	 */
 	@ApiField("out_batch_no")
 	private String outBatchNo;

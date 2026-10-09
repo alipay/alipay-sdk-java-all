@@ -4,8 +4,10 @@ import java.util.Date;
 import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
+import com.alipay.api.domain.IndustryInvoiceAdditionalElementInfo;
 import com.alipay.api.domain.IndustryInvoiceItemInfoQueryRes;
 import com.alipay.api.domain.IndustryInvoiceRealPropertyBusiness;
+import com.alipay.api.domain.IndustryInvoiceRefinedOilGasStation;
 import com.alipay.api.domain.IndustryInvoiceTradeInfo;
 
 import com.alipay.api.AlipayResponse;
@@ -14,11 +16,18 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.industryinvoice.invoiceapply.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-09-24 13:54:00
+ * @since 1.0, 2026-09-30 16:12:53
  */
 public class AlipayCommerceEcIndustryinvoiceInvoiceapplyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3359418561594324618L;
+	private static final long serialVersionUID = 1178499612663556623L;
+
+	/** 
+	 * 附加要素列表
+	 */
+	@ApiListField("additional_element_list")
+	@ApiField("industry_invoice_additional_element_info")
+	private List<IndustryInvoiceAdditionalElementInfo> additionalElementList;
 
 	/** 
 	 * 购买方地址
@@ -148,6 +157,12 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyQueryResponse extends Al
 	private String invoiceType;
 
 	/** 
+	 * 乐企开票模式代码
+	 */
+	@ApiField("leqi_invoice_mode")
+	private String leqiInvoiceMode;
+
+	/** 
 	 * 外部开票申请ID
 	 */
 	@ApiField("outer_apply_id")
@@ -185,6 +200,12 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyQueryResponse extends Al
 	private String redConfirmationUuid;
 
 	/** 
+	 * 加油站开票参数（含开票环节/加油卡发票号码列表/加油站特定要素明细）
+	 */
+	@ApiField("refined_oil_gas_station")
+	private IndustryInvoiceRefinedOilGasStation refinedOilGasStation;
+
+	/** 
 	 * 关联蓝票发票号码
 	 */
 	@ApiField("related_blue_invoice_no")
@@ -195,6 +216,12 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyQueryResponse extends Al
 	 */
 	@ApiField("remark")
 	private String remark;
+
+	/** 
+	 * 换开发票号码
+	 */
+	@ApiField("replace_invoice_no")
+	private String replaceInvoiceNo;
 
 	/** 
 	 * 销售方名称
@@ -220,6 +247,19 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyQueryResponse extends Al
 	@ApiListField("trade_list")
 	@ApiField("industry_invoice_trade_info")
 	private List<IndustryInvoiceTradeInfo> tradeList;
+
+	/** 
+	 * 交易信息来源渠道
+	 */
+	@ApiField("trade_source")
+	private String tradeSource;
+
+	public void setAdditionalElementList(List<IndustryInvoiceAdditionalElementInfo> additionalElementList) {
+		this.additionalElementList = additionalElementList;
+	}
+	public List<IndustryInvoiceAdditionalElementInfo> getAdditionalElementList( ) {
+		return this.additionalElementList;
+	}
 
 	public void setBuyerAddress(String buyerAddress) {
 		this.buyerAddress = buyerAddress;
@@ -368,6 +408,13 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyQueryResponse extends Al
 		return this.invoiceType;
 	}
 
+	public void setLeqiInvoiceMode(String leqiInvoiceMode) {
+		this.leqiInvoiceMode = leqiInvoiceMode;
+	}
+	public String getLeqiInvoiceMode( ) {
+		return this.leqiInvoiceMode;
+	}
+
 	public void setOuterApplyId(String outerApplyId) {
 		this.outerApplyId = outerApplyId;
 	}
@@ -410,6 +457,13 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyQueryResponse extends Al
 		return this.redConfirmationUuid;
 	}
 
+	public void setRefinedOilGasStation(IndustryInvoiceRefinedOilGasStation refinedOilGasStation) {
+		this.refinedOilGasStation = refinedOilGasStation;
+	}
+	public IndustryInvoiceRefinedOilGasStation getRefinedOilGasStation( ) {
+		return this.refinedOilGasStation;
+	}
+
 	public void setRelatedBlueInvoiceNo(String relatedBlueInvoiceNo) {
 		this.relatedBlueInvoiceNo = relatedBlueInvoiceNo;
 	}
@@ -422,6 +476,13 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyQueryResponse extends Al
 	}
 	public String getRemark( ) {
 		return this.remark;
+	}
+
+	public void setReplaceInvoiceNo(String replaceInvoiceNo) {
+		this.replaceInvoiceNo = replaceInvoiceNo;
+	}
+	public String getReplaceInvoiceNo( ) {
+		return this.replaceInvoiceNo;
 	}
 
 	public void setSellerName(String sellerName) {
@@ -450,6 +511,13 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyQueryResponse extends Al
 	}
 	public List<IndustryInvoiceTradeInfo> getTradeList( ) {
 		return this.tradeList;
+	}
+
+	public void setTradeSource(String tradeSource) {
+		this.tradeSource = tradeSource;
+	}
+	public String getTradeSource( ) {
+		return this.tradeSource;
 	}
 
 }

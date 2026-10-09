@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.digitalmgmt.dcguard.cardofuserinfo.query response.
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:47:50
+ * @since 1.0, 2026-10-09 14:58:34
  */
 public class AlipayDigitalmgmtDcguardCardofuserinfoQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8686694286945981549L;
+	private static final long serialVersionUID = 1264899554896934472L;
 
 	/** 
 	 * 工卡查询人员结果

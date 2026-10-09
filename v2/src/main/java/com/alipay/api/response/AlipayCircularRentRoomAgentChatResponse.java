@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.circular.rent.room.agent.chat response.
  * 
  * @author auto create
- * @since 1.0, 2026-05-22 14:17:48
+ * @since 1.0, 2026-10-08 11:19:41
  */
 public class AlipayCircularRentRoomAgentChatResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5297313315157699817L;
+	private static final long serialVersionUID = 2183916525848931878L;
 
 	
 

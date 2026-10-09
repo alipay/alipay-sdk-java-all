@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DatadigitalAicsDevinTaskDeleteModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4481311827395657471L;
+	private static final long serialVersionUID = 8851175227597449393L;
 
 	/**
 	 * 任务code

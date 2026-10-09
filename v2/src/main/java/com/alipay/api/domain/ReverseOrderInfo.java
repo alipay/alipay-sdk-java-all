@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ReverseOrderInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5725531761935991888L;
+	private static final long serialVersionUID = 5189419178879771286L;
 
 	/**
 	 * 渠道逆向订单ID

@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayUserGamepaidgiftOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2832949484873825238L;
+	private static final long serialVersionUID = 3836188436767779449L;
 
 	/** 
 	 * 该笔订单用户的订单金额 单位：分

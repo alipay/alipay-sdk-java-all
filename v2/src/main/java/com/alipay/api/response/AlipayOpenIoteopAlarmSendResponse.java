@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayOpenIoteopAlarmSendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8855192258139275864L;
+	private static final long serialVersionUID = 8397916762362795426L;
 
 	
 

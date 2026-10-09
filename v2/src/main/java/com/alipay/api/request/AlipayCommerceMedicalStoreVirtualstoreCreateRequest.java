@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.store.virtualstore.create request
  * 
  * @author auto create
- * @since 1.0, 2026-09-10 19:10:05
+ * @since 1.0, 2026-10-08 19:52:56
  */
 public class AlipayCommerceMedicalStoreVirtualstoreCreateRequest implements AlipayRequest<AlipayCommerceMedicalStoreVirtualstoreCreateResponse> {
 

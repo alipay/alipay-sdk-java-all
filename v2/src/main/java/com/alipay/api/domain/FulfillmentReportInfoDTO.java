@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class FulfillmentReportInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8495457813829953365L;
+	private static final long serialVersionUID = 2531312644827884485L;
 
 	/**
 	 * 文件流OSS上传接口返回的fileId

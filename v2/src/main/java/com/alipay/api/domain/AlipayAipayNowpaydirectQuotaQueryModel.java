@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 直连模式查询次数或积分余额
  *
  * @author auto create
- * @since 1.0, 2026-09-25 14:47:53
+ * @since 1.0, 2026-09-29 11:12:56
  */
 public class AlipayAipayNowpaydirectQuotaQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6268998788312819453L;
+	private static final long serialVersionUID = 5196477446529449548L;
 
 	/**
 	 * 外部会员id

@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: grandsecurity.bizrisks.fact.check response.
  * 
  * @author auto create
- * @since 1.0, 2026-07-11 10:49:59
+ * @since 1.0, 2026-10-08 11:24:36
  */
 public class GrandsecurityBizrisksFactCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6548355582375685134L;
+	private static final long serialVersionUID = 2793252916276591257L;
 
 	/** 
 	 * 流式数据返回

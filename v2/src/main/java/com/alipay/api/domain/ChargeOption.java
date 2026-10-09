@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 可售档位
+ * null
  *
  * @author auto create
- * @since 1.0, 2026-09-25 14:47:53
+ * @since 1.0, 2026-09-29 13:37:54
  */
 public class ChargeOption extends AlipayObject {
 
-	private static final long serialVersionUID = 4571211318179123682L;
+	private static final long serialVersionUID = 6596812832578367472L;
 
 	/**
 	 * 档位名称

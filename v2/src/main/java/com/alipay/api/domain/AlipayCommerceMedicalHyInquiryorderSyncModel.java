@@ -9,17 +9,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 问诊订单变更同步域内互联网医院平台
  *
  * @author auto create
- * @since 1.0, 2026-09-23 18:24:09
+ * @since 1.0, 2026-09-28 18:27:54
  */
 public class AlipayCommerceMedicalHyInquiryorderSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4532395646231116587L;
+	private static final long serialVersionUID = 4217567882134636587L;
 
 	/**
 	 * 医生语音总结（音频文件链接）
 	 */
 	@ApiField("doctor_audio_summary")
 	private String doctorAudioSummary;
+
+	/**
+	 * 医生文字总结（纯文本）
+	 */
+	@ApiField("doctor_text_summary")
+	private String doctorTextSummary;
 
 	/**
 	 * 医生接诊时间
@@ -92,6 +98,13 @@ public class AlipayCommerceMedicalHyInquiryorderSyncModel extends AlipayObject {
 	}
 	public void setDoctorAudioSummary(String doctorAudioSummary) {
 		this.doctorAudioSummary = doctorAudioSummary;
+	}
+
+	public String getDoctorTextSummary() {
+		return this.doctorTextSummary;
+	}
+	public void setDoctorTextSummary(String doctorTextSummary) {
+		this.doctorTextSummary = doctorTextSummary;
 	}
 
 	public Date getGmtAdoption() {

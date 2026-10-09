@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租房业务主体特性同步接口
  *
  * @author auto create
- * @since 1.0, 2026-07-16 10:17:56
+ * @since 1.0, 2026-10-08 11:08:15
  */
 public class AlipayCommerceRentHouseBizentitySetModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6727662777275518245L;
+	private static final long serialVersionUID = 5834962993818919138L;
 
 	/**
 	 * 房源item/小区community/商家merchant等

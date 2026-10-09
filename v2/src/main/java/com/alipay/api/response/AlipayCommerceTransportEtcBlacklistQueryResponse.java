@@ -13,7 +13,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportEtcBlacklistQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8422112352723527439L;
+	private static final long serialVersionUID = 1698924614217954396L;
 
 	/** 
 	 * ETC_ADVANCE_OVERTIME

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class AllocAmountInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5273323178867294148L;
+	private static final long serialVersionUID = 7224766198383915375L;
 
 	/**
 	 * 买断分账计划

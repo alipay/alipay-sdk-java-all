@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.career.openbase.invitation.batchsend response.
  * 
  * @author auto create
- * @since 1.0, 2026-09-24 13:57:54
+ * @since 1.0, 2026-10-08 09:47:54
  */
 public class AlipayCommerceCareerOpenbaseInvitationBatchsendResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2889768846352642854L;
+	private static final long serialVersionUID = 6559887881799794282L;
 
 	/** 
 	 * 平台批次号

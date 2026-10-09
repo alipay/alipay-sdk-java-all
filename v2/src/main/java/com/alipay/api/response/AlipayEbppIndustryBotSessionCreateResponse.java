@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayEbppIndustryBotSessionCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5675454829775597782L;
+	private static final long serialVersionUID = 7649694896589633537L;
 
 	/** 
 	 * 会话id。创建会话接口后返回的会话id，有效期10分钟。若10分钟内用户没有对话请求，会话id自动失效。

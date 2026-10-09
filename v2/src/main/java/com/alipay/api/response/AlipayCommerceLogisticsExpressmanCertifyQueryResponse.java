@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.logistics.expressman.certify.query response.
  * 
  * @author auto create
- * @since 1.0, 2025-07-14 16:37:33
+ * @since 1.0, 2026-10-08 14:22:54
  */
 public class AlipayCommerceLogisticsExpressmanCertifyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3493684972923629892L;
+	private static final long serialVersionUID = 3877517786766646283L;
 
 	/** 
 	 * true 开通快递员之家

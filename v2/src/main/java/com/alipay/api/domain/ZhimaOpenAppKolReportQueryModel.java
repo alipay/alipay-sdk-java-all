@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ZhimaOpenAppKolReportQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8848797862484546558L;
+	private static final long serialVersionUID = 4225814482871293292L;
 
 	/**
 	 * 领取口令词对应达人机构名

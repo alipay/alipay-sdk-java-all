@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 共享出行行业查询用户芝麻先享签约状态
  *
  * @author auto create
- * @since 1.0, 2026-09-28 11:27:54
+ * @since 1.0, 2026-10-09 10:17:57
  */
 public class AlipayCommerceTransportTrafficshareZhimaQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6161996937611556473L;
+	private static final long serialVersionUID = 1749472915254197663L;
 
 	/**
 	 * 用户设备ID

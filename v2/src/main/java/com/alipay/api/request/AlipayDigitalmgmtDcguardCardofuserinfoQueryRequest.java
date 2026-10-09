@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.digitalmgmt.dcguard.cardofuserinfo.query request
  * 
  * @author auto create
- * @since 1.0, 2024-03-01 16:47:50
+ * @since 1.0, 2026-10-09 14:58:34
  */
 public class AlipayDigitalmgmtDcguardCardofuserinfoQueryRequest implements AlipayRequest<AlipayDigitalmgmtDcguardCardofuserinfoQueryResponse> {
 

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ItemCardOpenapi extends AlipayObject {
 
-	private static final long serialVersionUID = 4792732987643534927L;
+	private static final long serialVersionUID = 2351792568668988626L;
 
 	/**
 	 * 支测商品id

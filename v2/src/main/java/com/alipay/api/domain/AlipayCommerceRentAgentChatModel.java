@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 租赁智能体问答
  *
  * @author auto create
- * @since 1.0, 2026-05-26 21:27:47
+ * @since 1.0, 2026-10-08 11:15:29
  */
 public class AlipayCommerceRentAgentChatModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2823286281545629884L;
+	private static final long serialVersionUID = 6297847592819859282L;
 
 	/**
 	 * null

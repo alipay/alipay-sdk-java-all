@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-05-22 14:17:48
+ * @since 1.0, 2026-10-08 11:19:41
  */
 public class BizEntityId extends AlipayObject {
 
-	private static final long serialVersionUID = 1872673386487318799L;
+	private static final long serialVersionUID = 8637159746795683315L;
 
 	/**
 	 * 实体id，通过查询房源信息得到房源ID，订单信息得到订单ID

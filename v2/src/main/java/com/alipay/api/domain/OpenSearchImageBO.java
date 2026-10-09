@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class OpenSearchImageBO extends AlipayObject {
 
-	private static final long serialVersionUID = 1828761248279659396L;
+	private static final long serialVersionUID = 8738531678562883611L;
 
 	/**
 	 * 图片资源的唯一ID，用于资源有问题的时候，快速定位资源

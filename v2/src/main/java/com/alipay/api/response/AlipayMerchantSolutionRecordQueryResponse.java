@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMerchantSolutionRecordQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5488469248437853796L;
+	private static final long serialVersionUID = 5135954175615667994L;
 
 	/** 
 	 * smid不准入原因描述

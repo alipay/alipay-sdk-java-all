@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayIserviceIcontrolSeateventUploadModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5513439286376234533L;
+	private static final long serialVersionUID = 3535761342752774247L;
 
 	/**
 	 * 坐席类型，有呼入和呼出

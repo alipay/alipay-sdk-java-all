@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 直连模式查询收费能力和档位
  *
  * @author auto create
- * @since 1.0, 2026-09-25 14:47:53
+ * @since 1.0, 2026-09-29 13:37:54
  */
 public class AlipayAipayNowpaydirectChargeQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7332559825127592619L;
+	private static final long serialVersionUID = 2853523596148167366L;
 
 	/**
 	 * 外部商品id，从管理小程序商品详情页获取

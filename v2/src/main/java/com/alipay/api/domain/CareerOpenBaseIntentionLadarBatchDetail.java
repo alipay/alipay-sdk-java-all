@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-09-24 10:52:52
+ * @since 1.0, 2026-10-08 19:12:57
  */
 public class CareerOpenBaseIntentionLadarBatchDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 2344743756737832561L;
+	private static final long serialVersionUID = 1117498822659492317L;
 
 	/**
 	 * 使用SM4算法加密后的身份证号密文
@@ -44,7 +44,7 @@ public class CareerOpenBaseIntentionLadarBatchDetail extends AlipayObject {
 	private String oaid;
 
 	/**
-	 * 调用方提供的外部业务号，长度为1至64位，仅支持英文字母和数字。
+	 * 调用方提供的外部业务号，长度为1至64位，仅支持英文字母和数字；需要保持业务号的唯一性，相同 out_biz_no 重复提交会被拒绝，整批申请不予受理
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;

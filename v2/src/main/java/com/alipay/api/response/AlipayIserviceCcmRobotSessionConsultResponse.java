@@ -9,11 +9,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.ccm.robot.session.consult response.
  * 
  * @author auto create
- * @since 1.0, 2023-12-11 10:26:10
+ * @since 1.0, 2026-09-30 15:10:46
  */
 public class AlipayIserviceCcmRobotSessionConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8293411534425258461L;
+	private static final long serialVersionUID = 3743575378623269429L;
 
 	/** 
 	 * 机器人答案

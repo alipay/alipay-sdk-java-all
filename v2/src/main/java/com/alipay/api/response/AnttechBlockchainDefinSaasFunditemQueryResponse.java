@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: anttech.blockchain.defin.saas.funditem.query response.
  * 
  * @author auto create
- * @since 1.0, 2023-11-22 14:53:18
+ * @since 1.0, 2026-09-30 14:12:54
  */
 public class AnttechBlockchainDefinSaasFunditemQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1869436752188868589L;
+	private static final long serialVersionUID = 4255394138724161364L;
 
 	/** 
 	 * 资金操作类型。CAPTURE(请款);CANCEL(撤销/退款);

@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 员工信息
  *
  * @author auto create
- * @since 1.0, 2025-06-04 17:12:07
+ * @since 1.0, 2026-10-08 19:20:12
  */
 public class EmployeeInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 5147524435141432851L;
+	private static final long serialVersionUID = 6849458629683874868L;
 
 	/**
 	 * 员工所属核算主体列表
@@ -144,6 +144,13 @@ public class EmployeeInfoDTO extends AlipayObject {
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/**
+	 * 当前调用服务商名下的员工因公付代扣授权明细，每条记录对应一个收单商户 PID。
+	 */
+	@ApiListField("pay_auth_list")
+	@ApiField("pay_auth_info_d_t_o")
+	private List<PayAuthInfoDTO> payAuthList;
 
 	/**
 	 * 个性化信息 <a href='https://opendocs.alipay.com/pre-open/0ceh47?pathHash=14fac87c'>详见文档</a>
@@ -315,6 +322,13 @@ public class EmployeeInfoDTO extends AlipayObject {
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public List<PayAuthInfoDTO> getPayAuthList() {
+		return this.payAuthList;
+	}
+	public void setPayAuthList(List<PayAuthInfoDTO> payAuthList) {
+		this.payAuthList = payAuthList;
 	}
 
 	public String getProfiles() {

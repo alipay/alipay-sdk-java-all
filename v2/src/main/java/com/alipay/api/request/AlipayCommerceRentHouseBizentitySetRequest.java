@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.rent.house.bizentity.set request
  * 
  * @author auto create
- * @since 1.0, 2026-07-16 10:17:56
+ * @since 1.0, 2026-10-08 11:08:15
  */
 public class AlipayCommerceRentHouseBizentitySetRequest implements AlipayRequest<AlipayCommerceRentHouseBizentitySetResponse> {
 

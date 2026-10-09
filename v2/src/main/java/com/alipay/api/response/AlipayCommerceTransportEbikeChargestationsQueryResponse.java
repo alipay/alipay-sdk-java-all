@@ -15,7 +15,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceTransportEbikeChargestationsQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6563238184728962628L;
+	private static final long serialVersionUID = 5276473379828856226L;
 
 	/** 
 	 * 所有品牌桩查看链接

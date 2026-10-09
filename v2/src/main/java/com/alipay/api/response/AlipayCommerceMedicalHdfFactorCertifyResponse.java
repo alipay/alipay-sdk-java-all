@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.hdf.factor.certify response.
  * 
  * @author auto create
- * @since 1.0, 2026-09-28 14:37:53
+ * @since 1.0, 2026-09-29 15:27:52
  */
 public class AlipayCommerceMedicalHdfFactorCertifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3737991935488857574L;
+	private static final long serialVersionUID = 5336446564371929948L;
 
 	/** 
 	 * 结果

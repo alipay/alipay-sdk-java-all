@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceSportsFacepayskinReceiveModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4224219986251919556L;
+	private static final long serialVersionUID = 7378194694556533851L;
 
 	/**
 	 * 支付宝客户端版本号

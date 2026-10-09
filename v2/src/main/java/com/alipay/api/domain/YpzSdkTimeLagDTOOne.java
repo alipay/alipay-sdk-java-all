@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class YpzSdkTimeLagDTOOne extends AlipayObject {
 
-	private static final long serialVersionUID = 7612857677484776771L;
+	private static final long serialVersionUID = 6444661686176212999L;
 
 	/**
 	 * 事件标识

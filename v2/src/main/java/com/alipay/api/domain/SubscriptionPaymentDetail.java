@@ -11,11 +11,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-09-18 13:47:53
+ * @since 1.0, 2026-10-09 11:50:21
  */
 public class SubscriptionPaymentDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3659121985565934338L;
+	private static final long serialVersionUID = 3445382893573635721L;
 
 	/**
 	 * 事件发生时间，针对subscription_create、subscription_upgrade、subscription_cycle为支付成功时间；subscription_refund为立即取消的请求时间（退款为异步退款），实际退款时间可以参考refund_details退款明细中的refund_time

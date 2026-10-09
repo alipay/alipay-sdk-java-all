@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayPcreditHuabeiAffinitycardPreconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1617367659198318317L;
+	private static final long serialVersionUID = 6462862455467941292L;
 
 	/**
 	 * 账号类型

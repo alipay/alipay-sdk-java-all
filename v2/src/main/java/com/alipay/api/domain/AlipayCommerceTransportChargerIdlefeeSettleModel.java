@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayCommerceTransportChargerIdlefeeSettleModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2489697298283375819L;
+	private static final long serialVersionUID = 8662121381636219176L;
 
 	/**
 	 * 占位费结束时间

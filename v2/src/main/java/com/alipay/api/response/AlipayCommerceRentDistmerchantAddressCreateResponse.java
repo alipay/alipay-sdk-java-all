@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.rent.distmerchant.address.create response.
  * 
  * @author auto create
- * @since 1.0, 2026-09-04 17:07:50
+ * @since 1.0, 2026-10-09 10:17:57
  */
 public class AlipayCommerceRentDistmerchantAddressCreateResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4572553571138437892L;
+	private static final long serialVersionUID = 1412418744354617319L;
 
 	/** 
 	 * 地址id

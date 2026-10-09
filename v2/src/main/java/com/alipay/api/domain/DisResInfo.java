@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 执行结果，action 为 REJECT 或 FAIL 时必填
  *
  * @author auto create
- * @since 1.0, 2026-06-22 10:17:56
+ * @since 1.0, 2026-10-08 11:14:50
  */
 public class DisResInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7499574723182184724L;
+	private static final long serialVersionUID = 5633713649246919252L;
 
 	/**
 	 * 业务自定义结构化数据，不同 action 可携带不同业务数据

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 快递员身份认证查询
  *
  * @author auto create
- * @since 1.0, 2025-07-14 16:37:06
+ * @since 1.0, 2026-10-08 14:19:16
  */
 public class AlipayCommerceLogisticsExpressmanCertifyQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5699457851261618353L;
+	private static final long serialVersionUID = 8398323753295828216L;
 
 	/**
 	 * 用于标记支付宝用户在应用下的唯一标识
@@ -26,9 +26,10 @@ public class AlipayCommerceLogisticsExpressmanCertifyQueryModel extends AlipayOb
 	private String expressmanUserId;
 
 	/**
-	 * 1、startApp（商户是支付宝内小程序，打开小程序）
+	 * 1、已废弃，新商户请使用navigateToMiniProgram
 2、backApp（商户是支付宝内小程序，返回小程序）
 3、startThirdApp（商户是其他应用，返回其他应用）
+4、navigateToMiniProgram（商户是支付宝内小程序，打开小程序）
 	 */
 	@ApiField("jump_type")
 	private String jumpType;

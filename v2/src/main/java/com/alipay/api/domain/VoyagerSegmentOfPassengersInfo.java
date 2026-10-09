@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class VoyagerSegmentOfPassengersInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 7434274245946111332L;
+	private static final long serialVersionUID = 7715924242138978659L;
 
 	/**
 	 * 三字码，例如：PEK

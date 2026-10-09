@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ExtAttributeInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8339323559537764436L;
+	private static final long serialVersionUID = 4324456298491288338L;
 
 	/**
 	 * 属性code，提前和BD确定字段名称，按需填写，具体值从ntouch平台获取，跟每个子解决方案配置的code 要一致

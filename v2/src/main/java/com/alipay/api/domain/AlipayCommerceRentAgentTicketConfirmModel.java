@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 租赁agent派单确认接口
  *
  * @author auto create
- * @since 1.0, 2026-06-22 10:17:56
+ * @since 1.0, 2026-10-08 11:14:50
  */
 public class AlipayCommerceRentAgentTicketConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 6299182448322671237L;
+	private static final long serialVersionUID = 1171585641414474751L;
 
 	/**
 	 * 操作类型

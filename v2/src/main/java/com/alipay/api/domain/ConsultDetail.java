@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 用户咨询详情，由智能体在咨询过程中提取的结构化数据，各行业按 sub_biz_type 约定内部结构
  *
  * @author auto create
- * @since 1.0, 2026-06-22 10:17:56
+ * @since 1.0, 2026-10-08 11:14:50
  */
 public class ConsultDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3556543173892772596L;
+	private static final long serialVersionUID = 4554697118613146773L;
 
 	/**
 	 * 区域偏好

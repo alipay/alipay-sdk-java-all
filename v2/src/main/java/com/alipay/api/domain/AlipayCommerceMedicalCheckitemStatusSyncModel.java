@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 检查项维度状态同步
  *
  * @author auto create
- * @since 1.0, 2026-09-28 09:47:54
+ * @since 1.0, 2026-10-08 11:22:53
  */
 public class AlipayCommerceMedicalCheckitemStatusSyncModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2843272989685875572L;
+	private static final long serialVersionUID = 8145129422333913387L;
 
 	/**
 	 * null

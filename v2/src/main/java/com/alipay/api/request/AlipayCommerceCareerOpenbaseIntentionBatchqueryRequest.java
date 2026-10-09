@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.career.openbase.intention.batchquery request
  * 
  * @author auto create
- * @since 1.0, 2026-09-24 13:57:53
+ * @since 1.0, 2026-10-08 17:17:54
  */
 public class AlipayCommerceCareerOpenbaseIntentionBatchqueryRequest implements AlipayRequest<AlipayCommerceCareerOpenbaseIntentionBatchqueryResponse> {
 

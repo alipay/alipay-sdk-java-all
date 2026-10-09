@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.dtbank.activity.modify request
  * 
  * @author auto create
- * @since 1.0, 2026-08-28 19:27:49
+ * @since 1.0, 2026-09-29 14:35:04
  */
 public class AlipayUserDtbankActivityModifyRequest implements AlipayRequest<AlipayUserDtbankActivityModifyResponse> {
 

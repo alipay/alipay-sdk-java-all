@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AnttechNftSkuBenefitNotifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7142198774973125626L;
+	private static final long serialVersionUID = 1798453269415713344L;
 
 	/**
 	 * NFT_ID / QR_STRING（为空时默认NFT_ID）

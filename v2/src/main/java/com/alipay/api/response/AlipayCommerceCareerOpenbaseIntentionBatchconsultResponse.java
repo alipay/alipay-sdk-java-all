@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.career.openbase.intention.batchconsult response.
  * 
  * @author auto create
- * @since 1.0, 2026-09-24 10:52:52
+ * @since 1.0, 2026-10-08 19:12:57
  */
 public class AlipayCommerceCareerOpenbaseIntentionBatchconsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6625311275726284735L;
+	private static final long serialVersionUID = 1626595492175314281L;
 
 	/** 
 	 * 意向雷达平台生成的批次号

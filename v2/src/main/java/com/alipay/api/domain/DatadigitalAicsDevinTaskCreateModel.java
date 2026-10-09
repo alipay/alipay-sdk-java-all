@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DatadigitalAicsDevinTaskCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8857877794537158351L;
+	private static final long serialVersionUID = 5336187821924715647L;
 
 	/**
 	 * 扩展信息(JSON字符串) 最大并发机器数=CC_MAX_LIMIT；振铃未接挂断时长（单位：秒）= outCallRingingTimeLimit；发起调用时的超时时间= LAUNCH_CALL_TIMEOUT

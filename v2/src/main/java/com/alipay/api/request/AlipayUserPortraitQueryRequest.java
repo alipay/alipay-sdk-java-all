@@ -12,7 +12,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.portrait.query request
  * 
  * @author auto create
- * @since 1.0, 2025-08-13 16:37:41
+ * @since 1.0, 2026-09-29 14:31:53
  */
 public class AlipayUserPortraitQueryRequest implements AlipayRequest<AlipayUserPortraitQueryResponse> {
 

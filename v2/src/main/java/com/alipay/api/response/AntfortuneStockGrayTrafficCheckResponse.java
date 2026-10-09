@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AntfortuneStockGrayTrafficCheckResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8491391999915841965L;
+	private static final long serialVersionUID = 4175347648395343427L;
 
 	/** 
 	 * 是否通过校验（发布前未配灰度流量=true）

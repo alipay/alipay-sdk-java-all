@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.aipay.nowpaydirect.quota.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-09-25 14:47:53
+ * @since 1.0, 2026-09-29 11:12:56
  */
 public class AlipayAipayNowpaydirectQuotaQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 4152186259123532381L;
+	private static final long serialVersionUID = 6495838746458338164L;
 
 	/** 
 	 * 余额计算时间

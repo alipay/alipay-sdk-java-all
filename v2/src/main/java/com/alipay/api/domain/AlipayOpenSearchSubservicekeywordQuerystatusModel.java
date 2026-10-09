@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOpenSearchSubservicekeywordQuerystatusModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8787259149571785321L;
+	private static final long serialVersionUID = 3745371611434555763L;
 
 	/**
 	 * 审核工单id，提报接口的返回值

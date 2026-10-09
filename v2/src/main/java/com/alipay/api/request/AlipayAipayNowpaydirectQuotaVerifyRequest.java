@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.aipay.nowpaydirect.quota.verify request
  * 
  * @author auto create
- * @since 1.0, 2026-09-27 11:27:51
+ * @since 1.0, 2026-09-29 11:17:55
  */
 public class AlipayAipayNowpaydirectQuotaVerifyRequest implements AlipayRequest<AlipayAipayNowpaydirectQuotaVerifyResponse> {
 

@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayTradeSaasFundConfirmResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7467166822848373564L;
+	private static final long serialVersionUID = 5861332645493211412L;
 
 	/** 
 	 * Fundds已受理的超额部分自动退款金额，单位为元；等额认款时为0.00。

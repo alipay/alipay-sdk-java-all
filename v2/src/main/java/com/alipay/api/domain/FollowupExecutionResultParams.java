@@ -1,0 +1,29 @@
+package com.alipay.api.domain;
+
+import com.alipay.api.AlipayObject;
+import com.alipay.api.internal.mapping.ApiField;
+
+/**
+ * 本次通话的结果结构；没有结果时返回空对象。
+ *
+ * @author auto create
+ * @since 1.0, 2026-10-09 10:17:57
+ */
+public class FollowupExecutionResultParams extends AlipayObject {
+
+	private static final long serialVersionUID = 4135667393332631419L;
+
+	/**
+	 * 具体见产品线下定义的字段
+	 */
+	@ApiField("params_data")
+	private String paramsData;
+
+	public String getParamsData() {
+		return this.paramsData;
+	}
+	public void setParamsData(String paramsData) {
+		this.paramsData = paramsData;
+	}
+
+}

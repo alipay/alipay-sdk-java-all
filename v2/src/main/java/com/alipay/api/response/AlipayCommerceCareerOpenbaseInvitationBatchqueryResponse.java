@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.career.openbase.invitation.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2026-09-24 13:54:03
+ * @since 1.0, 2026-10-08 09:47:54
  */
 public class AlipayCommerceCareerOpenbaseInvitationBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6517721789195425931L;
+	private static final long serialVersionUID = 4788438772835243873L;
 
 	/** 
 	 * null
@@ -37,7 +37,7 @@ public class AlipayCommerceCareerOpenbaseInvitationBatchqueryResponse extends Al
 	private String batchStatus;
 
 	/** 
-	 * 外部批次号
+	 * 外部批次号，需要保证全局唯一，相同 out_batch_no 重复提交批次会被拒绝。
 	 */
 	@ApiField("out_batch_no")
 	private String outBatchNo;

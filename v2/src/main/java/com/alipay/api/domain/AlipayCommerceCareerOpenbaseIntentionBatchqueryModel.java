@@ -4,14 +4,14 @@ import com.alipay.api.AlipayObject;
 import com.alipay.api.internal.mapping.ApiField;
 
 /**
- * 晓叶AI意向雷达明细信息批量查询
+ * 意向雷达-明细信息批量查询
  *
  * @author auto create
- * @since 1.0, 2026-09-24 13:57:53
+ * @since 1.0, 2026-10-08 17:17:54
  */
 public class AlipayCommerceCareerOpenbaseIntentionBatchqueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1663981253293141421L;
+	private static final long serialVersionUID = 4432314256754969347L;
 
 	/**
 	 * 平台批次号

@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class SubVenueModifyInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5312191576718127655L;
+	private static final long serialVersionUID = 3849841518684419576L;
 
 	/**
 	 * 入场要求

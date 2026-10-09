@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipaySecurityRiskEmployeeCreditlimitCheckModel extends AlipayObject {
 
-	private static final long serialVersionUID = 8181472495392437853L;
+	private static final long serialVersionUID = 6537877563363414826L;
 
 	/**
 	 * 雇员身份证号码

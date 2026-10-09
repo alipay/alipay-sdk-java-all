@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 查询员工详情
  *
  * @author auto create
- * @since 1.0, 2025-06-04 17:12:07
+ * @since 1.0, 2026-10-09 15:00:10
  */
 public class AlipayCommerceEcEmployeeInfoQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7829485192612428345L;
+	private static final long serialVersionUID = 6364388268649534332L;
 
 	/**
 	 * 支付宝登录号（手机号或邮箱）
@@ -60,6 +60,12 @@ public class AlipayCommerceEcEmployeeInfoQueryModel extends AlipayObject {
 	 */
 	@ApiField("open_id")
 	private String openId;
+
+	/**
+	 * 是否查询因公付代扣授权明细
+	 */
+	@ApiField("query_pay_auth")
+	private Boolean queryPayAuth;
 
 	/**
 	 * 支付宝用户ID
@@ -121,6 +127,13 @@ public class AlipayCommerceEcEmployeeInfoQueryModel extends AlipayObject {
 	}
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public Boolean getQueryPayAuth() {
+		return this.queryPayAuth;
+	}
+	public void setQueryPayAuth(Boolean queryPayAuth) {
+		this.queryPayAuth = queryPayAuth;
 	}
 
 	public String getUserId() {

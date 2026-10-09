@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class CloudbusUserInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 8481717776621217338L;
+	private static final long serialVersionUID = 3355424972945957463L;
 
 	/**
 	 * 小孩

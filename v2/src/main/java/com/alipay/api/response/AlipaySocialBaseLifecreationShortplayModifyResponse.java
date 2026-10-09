@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySocialBaseLifecreationShortplayModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7118428598637442596L;
+	private static final long serialVersionUID = 8434391138832251958L;
 
 	/** 
 	 * 短剧唯一标识（剧库ID）

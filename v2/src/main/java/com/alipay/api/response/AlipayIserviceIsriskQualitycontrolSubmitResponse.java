@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.iservice.isrisk.qualitycontrol.submit response.
  * 
  * @author auto create
- * @since 1.0, 2025-08-12 11:27:36
+ * @since 1.0, 2026-10-09 11:12:55
  */
 public class AlipayIserviceIsriskQualitycontrolSubmitResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3732139797893915781L;
+	private static final long serialVersionUID = 2413719267921523449L;
 
 	/** 
 	 * 唯一的结果id，用于查询结果

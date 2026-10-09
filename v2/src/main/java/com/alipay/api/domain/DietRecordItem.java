@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class DietRecordItem extends AlipayObject {
 
-	private static final long serialVersionUID = 3748169167893277845L;
+	private static final long serialVersionUID = 2735815815874745946L;
 
 	/**
 	 * AI 热量估算 kcal

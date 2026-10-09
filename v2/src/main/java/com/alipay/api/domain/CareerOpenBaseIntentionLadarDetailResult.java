@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * null
  *
  * @author auto create
- * @since 1.0, 2026-09-24 13:57:53
+ * @since 1.0, 2026-10-08 17:17:54
  */
 public class CareerOpenBaseIntentionLadarDetailResult extends AlipayObject {
 
-	private static final long serialVersionUID = 1495269644628948539L;
+	private static final long serialVersionUID = 5369473758438214445L;
 
 	/**
 	 * 业务描述信息
@@ -56,7 +56,7 @@ public class CareerOpenBaseIntentionLadarDetailResult extends AlipayObject {
 	private String oaid;
 
 	/**
-	 * 调用方提供的外部业务号，长度为1至64位，仅支持英文字母和数字。
+	 * 调用方提供的外部业务号，长度为1至64位，仅支持英文字母和数字；需要保持业务号的唯一性，相同 out_biz_no 重复提交会被拒绝，整批申请不予受理
 	 */
 	@ApiField("out_biz_no")
 	private String outBizNo;

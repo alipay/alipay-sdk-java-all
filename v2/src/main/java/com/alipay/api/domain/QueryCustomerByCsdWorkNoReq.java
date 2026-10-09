@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class QueryCustomerByCsdWorkNoReq extends AlipayObject {
 
-	private static final long serialVersionUID = 4785927724181297681L;
+	private static final long serialVersionUID = 5262424568459745665L;
 
 	/**
 	 * csd工号

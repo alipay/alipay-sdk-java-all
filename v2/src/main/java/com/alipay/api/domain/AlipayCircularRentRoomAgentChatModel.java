@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 房源问询agent
  *
  * @author auto create
- * @since 1.0, 2026-05-22 14:17:48
+ * @since 1.0, 2026-10-08 11:19:41
  */
 public class AlipayCircularRentRoomAgentChatModel extends AlipayObject {
 
-	private static final long serialVersionUID = 3235798629217953375L;
+	private static final long serialVersionUID = 5867162385745876942L;
 
 	/**
 	 * null

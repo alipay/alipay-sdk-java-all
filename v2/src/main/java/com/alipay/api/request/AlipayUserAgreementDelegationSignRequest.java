@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.user.agreement.delegation.sign request
  * 
  * @author auto create
- * @since 1.0, 2026-03-26 17:26:07
+ * @since 1.0, 2026-10-08 16:07:54
  */
 public class AlipayUserAgreementDelegationSignRequest implements AlipayRequest<AlipayUserAgreementDelegationSignResponse> {
 

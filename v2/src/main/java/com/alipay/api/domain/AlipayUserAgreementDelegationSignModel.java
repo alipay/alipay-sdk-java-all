@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付宝个人委托代买任务系统签约接口
  *
  * @author auto create
- * @since 1.0, 2026-03-26 17:26:07
+ * @since 1.0, 2026-10-08 16:07:54
  */
 public class AlipayUserAgreementDelegationSignModel extends AlipayObject {
 
-	private static final long serialVersionUID = 7112654369582131187L;
+	private static final long serialVersionUID = 5777919613226853768L;
 
 	/**
 	 * AI支付协议号

@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class IntlEstimatedFee extends AlipayObject {
 
-	private static final long serialVersionUID = 5461831921772595963L;
+	private static final long serialVersionUID = 6569824162833353141L;
 
 	/**
 	 * 运费(含报关费)，单位分。支付方：寄件人

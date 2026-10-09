@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ToppingInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 4834639455522172269L;
+	private static final long serialVersionUID = 4219785344975548822L;
 
 	/**
 	 * 加料数量，单位为份

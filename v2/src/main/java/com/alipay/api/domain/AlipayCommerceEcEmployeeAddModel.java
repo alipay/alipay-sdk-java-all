@@ -10,11 +10,11 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 添加员工
  *
  * @author auto create
- * @since 1.0, 2026-08-26 19:22:18
+ * @since 1.0, 2026-10-08 19:19:42
  */
 public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1313675621136954742L;
+	private static final long serialVersionUID = 4826945698327914369L;
 
 	/**
 	 * 员工所属核算主体，核算主体可用于管控不同员工的出资方式，建议和不同出资账户关联
@@ -150,7 +150,7 @@ public class AlipayCommerceEcEmployeeAddModel extends AlipayObject {
 	private List<String> roleList;
 
 	/**
-	 * 员工签约后回跳地址；支持 alipay scheme 协议地址，不传默认跳转企业码小程序首页
+	 * 签约或授权完成后回跳地址；支持 alipay scheme 协议地址，不传默认跳转企业码小程序首页
 	 */
 	@ApiField("sign_return_url")
 	private String signReturnUrl;

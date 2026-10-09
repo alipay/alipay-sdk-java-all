@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ToolDatas extends AlipayObject {
 
-	private static final long serialVersionUID = 6218387656457519813L;
+	private static final long serialVersionUID = 7239577527445195245L;
 
 	/**
 	 * 诊断关键词

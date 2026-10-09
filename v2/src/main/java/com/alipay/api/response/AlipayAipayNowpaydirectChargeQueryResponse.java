@@ -1,6 +1,8 @@
 package com.alipay.api.response;
 
+import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
+import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.ChargeOption;
 
 import com.alipay.api.AlipayResponse;
@@ -9,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.aipay.nowpaydirect.charge.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-09-25 14:47:53
+ * @since 1.0, 2026-09-29 13:37:54
  */
 public class AlipayAipayNowpaydirectChargeQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3563863573972536873L;
+	private static final long serialVersionUID = 4841648663662956155L;
 
 	/** 
 	 * 最终收费模式
@@ -28,10 +30,11 @@ public class AlipayAipayNowpaydirectChargeQueryResponse extends AlipayResponse {
 	private String capabilityStatus;
 
 	/** 
-	 * 可售档位
+	 * null
 	 */
-	@ApiField("charging_options")
-	private ChargeOption chargingOptions;
+	@ApiListField("charging_options")
+	@ApiField("charge_option")
+	private List<ChargeOption> chargingOptions;
 
 	/** 
 	 * 使用该地址进入商品管理
@@ -71,10 +74,10 @@ public class AlipayAipayNowpaydirectChargeQueryResponse extends AlipayResponse {
 		return this.capabilityStatus;
 	}
 
-	public void setChargingOptions(ChargeOption chargingOptions) {
+	public void setChargingOptions(List<ChargeOption> chargingOptions) {
 		this.chargingOptions = chargingOptions;
 	}
-	public ChargeOption getChargingOptions( ) {
+	public List<ChargeOption> getChargingOptions( ) {
 		return this.chargingOptions;
 	}
 

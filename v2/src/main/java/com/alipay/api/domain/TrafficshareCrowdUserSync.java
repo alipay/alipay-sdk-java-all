@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class TrafficshareCrowdUserSync extends AlipayObject {
 
-	private static final long serialVersionUID = 5825429173768839866L;
+	private static final long serialVersionUID = 5367128545939263416L;
 
 	/**
 	 * 用于标识"增加"操作类型时，该数据是否是增量数据。true:增量数据；false:存量数据

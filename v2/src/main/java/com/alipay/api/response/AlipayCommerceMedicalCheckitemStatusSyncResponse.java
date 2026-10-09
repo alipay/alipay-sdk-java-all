@@ -7,11 +7,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.medical.checkitem.status.sync response.
  * 
  * @author auto create
- * @since 1.0, 2026-09-28 09:47:54
+ * @since 1.0, 2026-10-08 11:22:53
  */
 public class AlipayCommerceMedicalCheckitemStatusSyncResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2388495489694431259L;
+	private static final long serialVersionUID = 5875365132311971857L;
 
 	
 

@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 企业委托代理支付结果查询
  *
  * @author auto create
- * @since 1.0, 2026-09-22 20:26:46
+ * @since 1.0, 2026-09-28 23:32:53
  */
 public class AlipayTradeEnterpriseDelegationQueryModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1356563781685195576L;
+	private static final long serialVersionUID = 4836863429912314485L;
 
 	/**
 	 * 支付宝系统中用以唯一标识用户签约记录的编号（用户签约成功后的协议号 ）
 	 */
 	@ApiField("agreement_no")
 	private String agreementNo;
+
+	/**
+	 * 新模式商户外部订单号
+	 */
+	@ApiField("external_order_no")
+	private String externalOrderNo;
 
 	/**
 	 * 预下单ID，如果是预下单场景传预下单ID,如果是创单场景可以直接传递交易号
@@ -30,6 +36,13 @@ public class AlipayTradeEnterpriseDelegationQueryModel extends AlipayObject {
 	}
 	public void setAgreementNo(String agreementNo) {
 		this.agreementNo = agreementNo;
+	}
+
+	public String getExternalOrderNo() {
+		return this.externalOrderNo;
+	}
+	public void setExternalOrderNo(String externalOrderNo) {
+		this.externalOrderNo = externalOrderNo;
 	}
 
 	public String getPrepayId() {

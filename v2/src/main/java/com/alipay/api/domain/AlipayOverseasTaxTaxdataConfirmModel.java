@@ -13,7 +13,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class AlipayOverseasTaxTaxdataConfirmModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2226782637352862581L;
+	private static final long serialVersionUID = 2873261454446924682L;
 
 	/**
 	 * CN的用户id

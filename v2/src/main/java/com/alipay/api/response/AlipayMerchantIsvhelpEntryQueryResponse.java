@@ -14,7 +14,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayMerchantIsvhelpEntryQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 3628565876221458564L;
+	private static final long serialVersionUID = 6867924976175474525L;
 
 	/** 
 	 * 支付宝账号

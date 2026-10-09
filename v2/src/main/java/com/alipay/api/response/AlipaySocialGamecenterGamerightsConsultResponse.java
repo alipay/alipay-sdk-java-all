@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipaySocialGamecenterGamerightsConsultResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6875445311364812487L;
+	private static final long serialVersionUID = 6451754443988691761L;
 
 	/** 
 	 * 不可触发权益原因

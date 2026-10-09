@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayCommerceLogisticsFreightflowTradereceiptApplyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8471946455961912127L;
+	private static final long serialVersionUID = 5419436268358361623L;
 
 	/** 
 	 * Base64加密

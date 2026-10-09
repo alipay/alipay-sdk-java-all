@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 好大夫二要素认证
  *
  * @author auto create
- * @since 1.0, 2026-09-28 14:37:53
+ * @since 1.0, 2026-09-29 15:27:52
  */
 public class AlipayCommerceMedicalHdfFactorCertifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4792232972167383835L;
+	private static final long serialVersionUID = 8257727712653928183L;
 
 	/**
 	 * 192不带人像验证194带人像验证

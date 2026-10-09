@@ -7,14 +7,14 @@ import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 
 /**
- * 晓叶AI意向雷达批量咨询
+ * 意向雷达-批量咨询
  *
  * @author auto create
- * @since 1.0, 2026-09-24 10:52:52
+ * @since 1.0, 2026-10-08 19:12:57
  */
 public class AlipayCommerceCareerOpenbaseIntentionBatchconsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1259824356755367226L;
+	private static final long serialVersionUID = 7299736765278784965L;
 
 	/**
 	 * null
@@ -24,7 +24,7 @@ public class AlipayCommerceCareerOpenbaseIntentionBatchconsultModel extends Alip
 	private List<CareerOpenBaseIntentionLadarBatchDetail> batchDetails;
 
 	/**
-	 * 外部批次号
+	 * 外部批次号，需要保证全局唯一，相同 out_batch_no 重复提交批次会被拒绝。
 	 */
 	@ApiField("out_batch_no")
 	private String outBatchNo;

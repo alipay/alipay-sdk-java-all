@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 商户小区信息修改
  *
  * @author auto create
- * @since 1.0, 2025-07-14 11:04:55
+ * @since 1.0, 2026-10-08 11:05:53
  */
 public class AlipayOpenAppRentroomAreaModifyModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5273132183453343974L;
+	private static final long serialVersionUID = 8191664377442332548L;
 
 	/**
 	 * 修改的公寓信息

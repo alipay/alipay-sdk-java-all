@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DistributionOrderRefundStatusInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 8444922326577955345L;
+	private static final long serialVersionUID = 5196652259392255125L;
 
 	/**
 	 * 退款单状态

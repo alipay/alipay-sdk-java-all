@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class ComprehensiveEvaluation extends AlipayObject {
 
-	private static final long serialVersionUID = 8286862299933854642L;
+	private static final long serialVersionUID = 7729698567182723835L;
 
 	/**
 	 * null

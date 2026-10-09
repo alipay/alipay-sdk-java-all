@@ -4,6 +4,7 @@ import java.util.List;
 import com.alipay.api.internal.mapping.ApiField;
 import com.alipay.api.internal.mapping.ApiListField;
 import com.alipay.api.domain.CompanyProductInfo;
+import com.alipay.api.domain.IndustryNatureInfo;
 import com.alipay.api.domain.CompanyInvoiceClerk;
 
 import com.alipay.api.AlipayResponse;
@@ -12,11 +13,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.ec.industryinvoice.company.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-09-24 13:59:10
+ * @since 1.0, 2026-09-30 16:12:53
  */
 public class AlipayCommerceEcIndustryinvoiceCompanyQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 6583951615562899142L;
+	private static final long serialVersionUID = 4138225814463766747L;
 
 	/** 
 	 * 企业名称
@@ -30,6 +31,13 @@ public class AlipayCommerceEcIndustryinvoiceCompanyQueryResponse extends AlipayR
 	@ApiListField("company_product_info_list")
 	@ApiField("company_product_info")
 	private List<CompanyProductInfo> companyProductInfoList;
+
+	/** 
+	 * 企业行业性质列表
+	 */
+	@ApiListField("industry_nature_list")
+	@ApiField("industry_nature_info")
+	private List<IndustryNatureInfo> industryNatureList;
 
 	/** 
 	 * 企业开票员信息
@@ -55,6 +63,13 @@ public class AlipayCommerceEcIndustryinvoiceCompanyQueryResponse extends AlipayR
 	}
 	public List<CompanyProductInfo> getCompanyProductInfoList( ) {
 		return this.companyProductInfoList;
+	}
+
+	public void setIndustryNatureList(List<IndustryNatureInfo> industryNatureList) {
+		this.industryNatureList = industryNatureList;
+	}
+	public List<IndustryNatureInfo> getIndustryNatureList( ) {
+		return this.industryNatureList;
 	}
 
 	public void setInvoiceClerk(CompanyInvoiceClerk invoiceClerk) {

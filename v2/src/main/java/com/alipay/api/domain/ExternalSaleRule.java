@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class ExternalSaleRule extends AlipayObject {
 
-	private static final long serialVersionUID = 5877314327151156661L;
+	private static final long serialVersionUID = 5247815265652238515L;
 
 	/**
 	 * 最大单次购买数量PER_ORDER_MAX_BUY_COUNT      购买人年龄限制BUYER_AGE_LIMIT      购买人性别限制BUYER_GENDER_LIMIT

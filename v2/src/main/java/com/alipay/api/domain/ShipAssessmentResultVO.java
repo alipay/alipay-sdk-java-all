@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 发货评估结果
  *
  * @author auto create
- * @since 1.0, 2026-07-15 19:12:52
+ * @since 1.0, 2026-10-09 11:17:52
  */
 public class ShipAssessmentResultVO extends AlipayObject {
 
-	private static final long serialVersionUID = 4422892861893468124L;
+	private static final long serialVersionUID = 8729268415349317963L;
 
 	/**
 	 * 错误原因，当发货评估结果为null时返回

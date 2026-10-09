@@ -11,11 +11,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.career.openbase.intention.batchquery response.
  * 
  * @author auto create
- * @since 1.0, 2026-09-24 13:57:53
+ * @since 1.0, 2026-10-08 17:17:54
  */
 public class AlipayCommerceCareerOpenbaseIntentionBatchqueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 7395618217385819679L;
+	private static final long serialVersionUID = 2464275196865141957L;
 
 	/** 
 	 * null

@@ -7,17 +7,23 @@ import com.alipay.api.internal.mapping.ApiField;
  * 创建虚拟门店
  *
  * @author auto create
- * @since 1.0, 2026-09-10 19:10:05
+ * @since 1.0, 2026-10-08 19:52:56
  */
 public class AlipayCommerceMedicalStoreVirtualstoreCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 4445283765556369859L;
+	private static final long serialVersionUID = 7211897289249749962L;
 
 	/**
 	 * 渠道
 	 */
 	@ApiField("channel")
 	private String channel;
+
+	/**
+	 * 好大夫主医院ID
+	 */
+	@ApiField("hdf_primary_hospital_id")
+	private String hdfPrimaryHospitalId;
 
 	/**
 	 * 好大夫医生doctorId
@@ -84,6 +90,13 @@ public class AlipayCommerceMedicalStoreVirtualstoreCreateModel extends AlipayObj
 	}
 	public void setChannel(String channel) {
 		this.channel = channel;
+	}
+
+	public String getHdfPrimaryHospitalId() {
+		return this.hdfPrimaryHospitalId;
+	}
+	public void setHdfPrimaryHospitalId(String hdfPrimaryHospitalId) {
+		this.hdfPrimaryHospitalId = hdfPrimaryHospitalId;
 	}
 
 	public String getHdfSpaceCode() {

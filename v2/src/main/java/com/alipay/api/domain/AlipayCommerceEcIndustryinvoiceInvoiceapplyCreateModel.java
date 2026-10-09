@@ -10,11 +10,18 @@ import com.alipay.api.internal.mapping.ApiListField;
  * 支付可开票开票申请创建
  *
  * @author auto create
- * @since 1.0, 2026-09-15 19:23:44
+ * @since 1.0, 2026-09-30 13:49:43
  */
 public class AlipayCommerceEcIndustryinvoiceInvoiceapplyCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 2226813538884122239L;
+	private static final long serialVersionUID = 1224214292296149239L;
+
+	/**
+	 * 附加要素列表
+	 */
+	@ApiListField("additional_element_list")
+	@ApiField("industry_invoice_additional_element_info")
+	private List<IndustryInvoiceAdditionalElementInfo> additionalElementList;
 
 	/**
 	 * 购买方地址
@@ -121,6 +128,13 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyCreateModel extends Alip
 	private String invoiceType;
 
 	/**
+	 * 乐企开票模式代码：PAYMENT_INVOICE=乐企联用支付即开票（支付完成后开票，以支付单/账单为关联依据）、TRANSACTION_INVOICE=乐企联用交易即开票（交易发生时同步开票，以交易流水为关联依据，时效更高）
+10月20日后要求必填，如需使用“联用交易即开票”请联系支付宝客户经理开通。
+	 */
+	@ApiField("leqi_invoice_mode")
+	private String leqiInvoiceMode;
+
+	/**
 	 * 购买方自然人证件号码
 	 */
 	@ApiField("nature_person_cert_no")
@@ -193,6 +207,12 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyCreateModel extends Alip
 	private List<IndustryInvoiceRealPropertyBusiness> realPropertyBusinessList;
 
 	/**
+	 * 加油站开票参数（含开票环节/加油卡发票号码列表/加油站特定要素明细）
+	 */
+	@ApiField("refined_oil_gas_station")
+	private IndustryInvoiceRefinedOilGasStation refinedOilGasStation;
+
+	/**
 	 * 关联蓝票发票号码，开票类型为红票时必传，暂时仅支持全额红冲
 	 */
 	@ApiField("related_blue_invoice_no")
@@ -203,6 +223,12 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyCreateModel extends Alip
 	 */
 	@ApiField("remark")
 	private String remark;
+
+	/**
+	 * 换开发票号码，仅加油站开票且开蓝票时传入，换开的蓝字发票填写换开前的蓝字发票号码
+	 */
+	@ApiField("replace_invoice_no")
+	private String replaceInvoiceNo;
 
 	/**
 	 * 销售方地址
@@ -254,6 +280,19 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyCreateModel extends Alip
 	@ApiListField("trade_list")
 	@ApiField("industry_invoice_trade_info")
 	private List<IndustryInvoiceTradeInfo> tradeList;
+
+	/**
+	 * 交易信息来源渠道：ONLINE_TRADING_PLATFORM=线上交易平台（如1688、淘宝闪购）、ENTERPRISE_OWN_SYSTEM=企业自有业务系统（企业自有商城、ERP、门店收银等自有系统产生的交易）、ONLINE_PAYMENT_PLATFORM=线上支付平台（如支付宝）。
+	 */
+	@ApiField("trade_source")
+	private String tradeSource;
+
+	public List<IndustryInvoiceAdditionalElementInfo> getAdditionalElementList() {
+		return this.additionalElementList;
+	}
+	public void setAdditionalElementList(List<IndustryInvoiceAdditionalElementInfo> additionalElementList) {
+		this.additionalElementList = additionalElementList;
+	}
 
 	public String getBuyerAddress() {
 		return this.buyerAddress;
@@ -374,6 +413,13 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyCreateModel extends Alip
 		this.invoiceType = invoiceType;
 	}
 
+	public String getLeqiInvoiceMode() {
+		return this.leqiInvoiceMode;
+	}
+	public void setLeqiInvoiceMode(String leqiInvoiceMode) {
+		this.leqiInvoiceMode = leqiInvoiceMode;
+	}
+
 	public String getNaturePersonCertNo() {
 		return this.naturePersonCertNo;
 	}
@@ -444,6 +490,13 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyCreateModel extends Alip
 		this.realPropertyBusinessList = realPropertyBusinessList;
 	}
 
+	public IndustryInvoiceRefinedOilGasStation getRefinedOilGasStation() {
+		return this.refinedOilGasStation;
+	}
+	public void setRefinedOilGasStation(IndustryInvoiceRefinedOilGasStation refinedOilGasStation) {
+		this.refinedOilGasStation = refinedOilGasStation;
+	}
+
 	public String getRelatedBlueInvoiceNo() {
 		return this.relatedBlueInvoiceNo;
 	}
@@ -456,6 +509,13 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyCreateModel extends Alip
 	}
 	public void setRemark(String remark) {
 		this.remark = remark;
+	}
+
+	public String getReplaceInvoiceNo() {
+		return this.replaceInvoiceNo;
+	}
+	public void setReplaceInvoiceNo(String replaceInvoiceNo) {
+		this.replaceInvoiceNo = replaceInvoiceNo;
 	}
 
 	public String getSellerAddress() {
@@ -512,6 +572,13 @@ public class AlipayCommerceEcIndustryinvoiceInvoiceapplyCreateModel extends Alip
 	}
 	public void setTradeList(List<IndustryInvoiceTradeInfo> tradeList) {
 		this.tradeList = tradeList;
+	}
+
+	public String getTradeSource() {
+		return this.tradeSource;
+	}
+	public void setTradeSource(String tradeSource) {
+		this.tradeSource = tradeSource;
 	}
 
 }

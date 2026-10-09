@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class CheckNoInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 5268285431712348361L;
+	private static final long serialVersionUID = 7897786813937369224L;
 
 	/**
 	 * 检查检验项目列表

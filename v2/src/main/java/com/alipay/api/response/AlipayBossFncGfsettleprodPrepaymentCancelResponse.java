@@ -11,7 +11,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayBossFncGfsettleprodPrepaymentCancelResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 2855784258116977429L;
+	private static final long serialVersionUID = 1855279523368151716L;
 
 	
 

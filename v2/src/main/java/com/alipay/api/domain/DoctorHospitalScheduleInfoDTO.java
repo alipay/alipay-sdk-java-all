@@ -14,7 +14,7 @@ import com.alipay.api.internal.mapping.ApiListField;
  */
 public class DoctorHospitalScheduleInfoDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 4134444569796916737L;
+	private static final long serialVersionUID = 1157798219324237543L;
 
 	/**
 	 * 医院原始名称

@@ -7,11 +7,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 直连模式查询买断或时长访问决策
  *
  * @author auto create
- * @since 1.0, 2026-09-25 14:47:53
+ * @since 1.0, 2026-09-29 13:37:54
  */
 public class AlipayAipayNowpaydirectPurchaseConsultModel extends AlipayObject {
 
-	private static final long serialVersionUID = 5446598816984518738L;
+	private static final long serialVersionUID = 1484265871436661278L;
 
 	/**
 	 * 购买完成返回地址

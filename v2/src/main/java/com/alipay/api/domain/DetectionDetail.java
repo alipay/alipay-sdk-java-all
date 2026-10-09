@@ -11,7 +11,7 @@ import com.alipay.api.internal.mapping.ApiField;
  */
 public class DetectionDetail extends AlipayObject {
 
-	private static final long serialVersionUID = 3331762534322238536L;
+	private static final long serialVersionUID = 2492696182861955167L;
 
 	/**
 	 * AI 面试监考检测的业务结论，仅命中时返回、未命中为空（取值见枚举表，属报告内容数据）

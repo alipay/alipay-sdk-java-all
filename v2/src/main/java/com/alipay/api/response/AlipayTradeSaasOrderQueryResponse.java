@@ -12,7 +12,7 @@ import com.alipay.api.AlipayResponse;
  */
 public class AlipayTradeSaasOrderQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 5259746957362965172L;
+	private static final long serialVersionUID = 8687822436113759753L;
 
 	/** 
 	 * 银行转账实际付款账号。仅在银行转账支付成功且渠道返回该信息时返回。

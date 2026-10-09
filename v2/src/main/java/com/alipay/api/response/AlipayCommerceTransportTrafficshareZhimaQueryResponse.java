@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.commerce.transport.trafficshare.zhima.query response.
  * 
  * @author auto create
- * @since 1.0, 2026-09-28 11:27:54
+ * @since 1.0, 2026-10-09 10:17:57
  */
 public class AlipayCommerceTransportTrafficshareZhimaQueryResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 1366831666242418318L;
+	private static final long serialVersionUID = 2542386948615463695L;
 
 	/** 
 	 * 开通/授权状态，VALID: 有效，INVALID: 无效
@@ -31,6 +31,12 @@ public class AlipayCommerceTransportTrafficshareZhimaQueryResponse extends Alipa
 	 */
 	@ApiField("credit_agreement_id")
 	private String creditAgreementId;
+
+	/** 
+	 * 代扣服务协议号。间连下单时，可能需要使用该字段
+	 */
+	@ApiField("deduct_agreement_id")
+	private String deductAgreementId;
 
 	/** 
 	 * 用户ID
@@ -75,6 +81,13 @@ public class AlipayCommerceTransportTrafficshareZhimaQueryResponse extends Alipa
 	}
 	public String getCreditAgreementId( ) {
 		return this.creditAgreementId;
+	}
+
+	public void setDeductAgreementId(String deductAgreementId) {
+		this.deductAgreementId = deductAgreementId;
+	}
+	public String getDeductAgreementId( ) {
+		return this.deductAgreementId;
 	}
 
 	public void setOpenId(String openId) {

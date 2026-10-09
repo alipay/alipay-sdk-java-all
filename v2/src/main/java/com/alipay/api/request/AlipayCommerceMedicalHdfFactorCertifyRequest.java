@@ -11,7 +11,7 @@ import com.alipay.api.AlipayObject;
  * ALIPAY API: alipay.commerce.medical.hdf.factor.certify request
  * 
  * @author auto create
- * @since 1.0, 2026-09-28 14:37:53
+ * @since 1.0, 2026-09-29 15:27:52
  */
 public class AlipayCommerceMedicalHdfFactorCertifyRequest implements AlipayRequest<AlipayCommerceMedicalHdfFactorCertifyResponse> {
 

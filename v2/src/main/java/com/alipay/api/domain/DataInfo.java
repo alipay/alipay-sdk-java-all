@@ -9,11 +9,11 @@ import com.alipay.api.internal.mapping.ApiField;
  * 业务自定义结构化数据，不同 action 可携带不同业务数据
  *
  * @author auto create
- * @since 1.0, 2026-06-22 10:17:56
+ * @since 1.0, 2026-10-08 11:14:50
  */
 public class DataInfo extends AlipayObject {
 
-	private static final long serialVersionUID = 3697879545126994539L;
+	private static final long serialVersionUID = 7114172137735527468L;
 
 	/**
 	 * 后续安排说明

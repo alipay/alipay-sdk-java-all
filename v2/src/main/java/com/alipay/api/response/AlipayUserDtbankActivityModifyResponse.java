@@ -8,11 +8,11 @@ import com.alipay.api.AlipayResponse;
  * ALIPAY API: alipay.user.dtbank.activity.modify response.
  * 
  * @author auto create
- * @since 1.0, 2026-08-28 19:27:49
+ * @since 1.0, 2026-09-29 14:35:04
  */
 public class AlipayUserDtbankActivityModifyResponse extends AlipayResponse {
 
-	private static final long serialVersionUID = 8793649867763565992L;
+	private static final long serialVersionUID = 7532379638396523954L;
 
 	/** 
 	 * 活动修改的结果，INIT表示处理中，SUCCESS表示成功，FAILED表示失败
